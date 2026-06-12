@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0d1a12">
+<title>BioSerra</title>
+<style>
+  :root {
+    --bg: #0d1a12;
+    --bg2: #112018;
+    --bg3: #1a2e1f;
+    --card: #162b1a;
+    --card2: #1e3525;
+    --border: #2a4a30;
+    --green: #4caf50;
+    --green2: #81c784;
+    --green3: #2e7d32;
+    --blue: #1e88e5;
+    --blue2: #64b5f6;
+    --orange: #f57c00;
+    --orange2: #ffb74d;
+    --red: #e53935;
+    --yellow: #fdd835;
+    --text: #e8f5e9;
+    --text2: #a5d6a7;
+    --text3: #6a9b6e;
+    --radius: 12px;
+    --radius2: 8px;
+    --shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; overflow: hidden; }
+  
+  /* HEADER */
+  .header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--bg2); border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 16px; height: 56px;
+  }
+  .header-logo { display: flex; align-items: center; gap: 8px; }
+  .header-logo span:first-child { font-size: 20px; }
+  .header-logo .app-name { font-size: 18px; font-weight: 700; color: var(--green2); letter-spacing: 0.5px; }
+  .header-actions { display: flex; gap: 8px; }
+  .header-btn {
+    background: var(--bg3); border: 1px solid var(--border); color: var(--text2);
+    border-radius: 20px; padding: 6px 12px; font-size: 13px; cursor: pointer;
+    display: flex; align-items: center; gap: 4px;
+  }
+
+  /* MAIN SCROLL AREA */
+  .main { position: fixed; top: 56px; bottom: 64px; left: 0; right: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  
+  /* SECTIONS */
+  .section { display: none; padding: 16px; padding-bottom: 24px; animation: fadeIn 0.2s ease; }
+  .section.active { display: block; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+  
+  /* BOTTOM NAV */
+  .bottom-nav {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
+    background: var(--bg2); border-top: 1px solid var(--border);
+    display: flex; height: 64px; overflow-x: auto; scrollbar-width: none;
+  }
+  .bottom-nav::-webkit-scrollbar { display: none; }
+  .nav-item {
+    flex: 0 0 auto; min-width: 64px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 2px; padding: 8px 6px;
+    cursor: pointer; color: var(--text3); font-size: 10px; transition: color 0.15s;
+    border: none; background: none;
+  }
+  .nav-item .nav-icon { font-size: 18px; }
+  .nav-item.active { color: var(--green2); }
+  .nav-item.active .nav-icon { filter: drop-shadow(0 0 4px rgba(129,199,132,0.5)); }
+
+  /* CARDS */
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 16px; margin-bottom: 12px;
+    box-shadow: var(--shadow);
+  }
+  .card-title { font-size: 11px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+  .section-header { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+  .section-sub { font-size: 13px; color: var(--text3); margin-bottom: 16px; }
+
+  /* BADGES */
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 3px 8px; border-radius: 12px; font-size: 11px; font-weight: 600;
+  }
+  .badge-green { background: rgba(76,175,80,0.2); color: var(--green2); border: 1px solid rgba(76,175,80,0.3); }
+  .badge-blue { background: rgba(30,136,229,0.2); color: var(--blue2); border: 1px solid rgba(30,136,229,0.3); }
+  .badge-orange { background: rgba(245,124,0,0.2); color: var(--orange2); border: 1px solid rgba(245,124,0,0.3); }
+  .badge-red { background: rgba(229,57,53,0.2); color: #ef9a9a; border: 1px solid rgba(229,57,53,0.3); }
+
+  /* ======================== PIANTE ======================== */
+  .stats-row { display: flex; gap: 8px; margin-bottom: 12px; }
+  .stat-box {
+    flex: 1; background: var(--card2); border: 1px solid var(--border);
+    border-radius: var(--radius2); padding: 12px 8px; text-align: center;
+  }
+  .stat-num { font-size: 24px; font-weight: 800; color: var(--green2); }
+  .stat-label { font-size: 10px; color: var(--text3); margin-top: 2px; }
+
+  .plant-group-title { font-size: 12px; font-weight: 700; color: var(--text3); text-transform: uppercase; letter-spacing: 0.8px; margin: 16px 0 8px; }
+  .plant-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 12px 14px; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between;
+  }
+  .plant-info { flex: 1; }
+  .plant-name { font-size: 14px; font-weight: 600; color: var(--text); }
+  .plant-detail { font-size: 11px; color: var(--text3); margin-top: 2px; }
+  .plant-emoji { font-size: 22px; margin-right: 12px; }
+
+  /* ======================== METEO ======================== */
+  .weather-main {
+    background: linear-gradient(135deg, var(--card2) 0%, #0d2a3a 100%);
+    border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 20px; margin-bottom: 12px; text-align: center; position: relative;
+  }
+  .weather-location { font-size: 12px; color: var(--text3); margin-bottom: 4px; display: flex; align-items: center; justify-content: center; gap: 4px; }
+  .weather-temp-main { font-size: 64px; font-weight: 200; color: var(--text); line-height: 1; }
+  .weather-temp-unit { font-size: 28px; font-weight: 300; color: var(--text2); }
+  .weather-desc { font-size: 15px; color: var(--text2); margin: 4px 0 12px; }
+  .weather-minmax { font-size: 13px; color: var(--text3); display: flex; justify-content: center; gap: 16px; }
+  .weather-minmax span { display: flex; align-items: center; gap: 3px; }
+  .weather-last-update { font-size: 10px; color: var(--text3); margin-top: 8px; opacity: 0.7; }
+
+  .weather-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+  .weather-item {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius2);
+    padding: 12px; display: flex; flex-direction: column; gap: 4px;
+  }
+  .weather-item-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.8px; }
+  .weather-item-val { font-size: 20px; font-weight: 700; color: var(--text); }
+  .weather-item-unit { font-size: 11px; color: var(--text2); }
+
+  /* UV bar */
+  .uv-bar { height: 6px; border-radius: 3px; margin-top: 4px; background: linear-gradient(to right, #4caf50, #fdd835, #f57c00, #e53935); overflow: hidden; position: relative; }
+  .uv-indicator { position: absolute; top: -2px; width: 10px; height: 10px; border-radius: 50%; background: white; border: 2px solid var(--bg); box-shadow: 0 0 4px rgba(0,0,0,0.5); transform: translateX(-50%); transition: left 0.5s ease; }
+
+  /* 7-day forecast */
+  .forecast-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; margin-bottom: 12px; }
+  .forecast-title { font-size: 11px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+  .forecast-row {
+    display: flex; align-items: center; padding: 8px 0;
+    border-bottom: 1px solid rgba(42,74,48,0.4);
+  }
+  .forecast-row:last-child { border-bottom: none; }
+  .forecast-day { font-size: 13px; font-weight: 600; color: var(--text); width: 36px; }
+  .forecast-icon { font-size: 18px; width: 28px; text-align: center; margin: 0 6px; }
+  .forecast-desc { font-size: 11px; color: var(--text3); flex: 1; }
+  .forecast-rain { font-size: 11px; color: var(--blue2); width: 36px; text-align: right; }
+  .forecast-temps { display: flex; gap: 6px; align-items: center; margin-left: 6px; }
+  .forecast-max { font-size: 14px; font-weight: 700; color: var(--text); }
+  .forecast-min { font-size: 12px; color: var(--text3); }
+
+  /* Serra sensors */
+  .sensor-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; }
+  .sensor-row { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid rgba(42,74,48,0.3); }
+  .sensor-row:last-child { border-bottom: none; }
+  .sensor-label { font-size: 13px; color: var(--text2); display: flex; align-items: center; gap: 6px; }
+  .sensor-val { font-size: 13px; color: var(--text3); font-style: italic; }
+
+  /* loading */
+  .weather-loading {
+    display: flex; flex-direction: column; align-items: center; gap: 12px;
+    padding: 40px 20px; color: var(--text3); font-size: 14px;
+  }
+  .spinner {
+    width: 32px; height: 32px; border: 3px solid var(--border);
+    border-top-color: var(--green); border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .weather-error {
+    background: rgba(229,57,53,0.1); border: 1px solid rgba(229,57,53,0.3);
+    border-radius: var(--radius); padding: 16px; text-align: center;
+    color: #ef9a9a; font-size: 13px; margin-bottom: 12px;
+  }
+  .retry-btn {
+    margin-top: 10px; background: var(--card2); border: 1px solid var(--border);
+    color: var(--green2); border-radius: 20px; padding: 8px 20px; font-size: 13px;
+    cursor: pointer; display: inline-block;
+  }
+
+  /* ======================== LUNA ======================== */
+  .moon-phase-display { text-align: center; padding: 20px 0; }
+  .moon-emoji-big { font-size: 72px; line-height: 1; }
+  .moon-phase-name { font-size: 18px; font-weight: 700; color: var(--text); margin-top: 8px; }
+  .moon-illumination { font-size: 14px; color: var(--text3); margin-top: 4px; }
+  .moon-info-row { display: flex; gap: 8px; margin-top: 16px; }
+  .moon-info-box { flex: 1; background: var(--card2); border-radius: var(--radius2); padding: 10px; text-align: center; border: 1px solid var(--border); }
+  .moon-info-val { font-size: 18px; font-weight: 700; color: var(--blue2); }
+  .moon-info-label { font-size: 10px; color: var(--text3); margin-top: 2px; }
+  .moon-activities { margin-top: 8px; }
+  .activity-item { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid rgba(42,74,48,0.3); font-size: 13px; color: var(--text2); }
+  .activity-item:last-child { border-bottom: none; }
+
+  /* ======================== BIODINAMICA ======================== */
+  .bio-calendar { }
+  .bio-legend { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .bio-legend-item { display: flex; align-items: center; gap: 4px; font-size: 11px; color: var(--text2); }
+  .bio-dot { width: 8px; height: 8px; border-radius: 50%; }
+  .dot-fruit { background: var(--orange); }
+  .dot-flower { background: #e91e63; }
+  .dot-root { background: #795548; }
+  .dot-leaf { background: var(--green); }
+  .bio-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; }
+  .bio-cal-header { font-size: 9px; color: var(--text3); text-align: center; padding: 4px 0; font-weight: 600; }
+  .bio-cal-cell {
+    aspect-ratio: 1; display: flex; flex-direction: column; align-items: center;
+    justify-content: center; border-radius: 4px; font-size: 10px; font-weight: 600; cursor: pointer;
+    transition: transform 0.1s;
+  }
+  .bio-cal-cell:active { transform: scale(0.95); }
+  .bio-cal-cell.fruit { background: rgba(245,124,0,0.2); color: var(--orange2); border: 1px solid rgba(245,124,0,0.3); }
+  .bio-cal-cell.flower { background: rgba(233,30,99,0.2); color: #f48fb1; border: 1px solid rgba(233,30,99,0.3); }
+  .bio-cal-cell.root { background: rgba(121,85,72,0.3); color: #bcaaa4; border: 1px solid rgba(121,85,72,0.4); }
+  .bio-cal-cell.leaf { background: rgba(76,175,80,0.2); color: var(--green2); border: 1px solid rgba(76,175,80,0.3); }
+  .bio-cal-cell.empty { background: transparent; border: 1px solid transparent; }
+  .bio-cal-cell.today { ring: 2px solid white; box-shadow: 0 0 0 2px var(--text); }
+  .bio-cal-cell .day-num { font-size: 11px; font-weight: 700; }
+  .bio-cal-cell .day-type { font-size: 7px; margin-top: 1px; }
+  .bio-today-info { margin-top: 12px; background: var(--card2); border-radius: var(--radius2); padding: 14px; border: 1px solid var(--border); }
+  .bio-today-label { font-size: 11px; color: var(--text3); margin-bottom: 6px; }
+  .bio-today-type { font-size: 16px; font-weight: 700; color: var(--text); }
+  .bio-today-advice { font-size: 12px; color: var(--text2); margin-top: 4px; }
+
+  /* ======================== ELETTROCULTURA ======================== */
+  .exp-status-row { display: flex; gap: 8px; margin-bottom: 12px; }
+  .exp-stat { flex: 1; background: var(--card2); border-radius: var(--radius2); padding: 10px; text-align: center; border: 1px solid var(--border); }
+  .exp-stat-num { font-size: 22px; font-weight: 800; }
+  .exp-stat-label { font-size: 10px; color: var(--text3); margin-top: 2px; }
+  .exp-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; margin-bottom: 10px; }
+  .exp-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 8px; gap: 8px; }
+  .exp-title { font-size: 14px; font-weight: 700; color: var(--text); }
+  .exp-desc { font-size: 12px; color: var(--text2); line-height: 1.5; }
+  .exp-counter { margin-top: 10px; }
+  .exp-counter-label { font-size: 11px; color: var(--text3); margin-bottom: 4px; }
+  .exp-bar { height: 4px; background: var(--bg3); border-radius: 2px; overflow: hidden; }
+  .exp-bar-fill { height: 100%; background: var(--green); border-radius: 2px; transition: width 0.3s; }
+  .exp-controls { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+  .exp-btn { background: var(--card2); border: 1px solid var(--border); color: var(--text); border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; }
+  .exp-num { font-size: 18px; font-weight: 700; color: var(--green2); min-width: 32px; text-align: center; }
+  .log-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; margin-top: 8px; }
+  .log-empty { font-size: 13px; color: var(--text3); text-align: center; padding: 16px 0; }
+  .log-entry { font-size: 12px; color: var(--text2); padding: 6px 0; border-bottom: 1px solid rgba(42,74,48,0.3); }
+  .log-entry:last-child { border-bottom: none; }
+  .log-date { font-size: 10px; color: var(--text3); }
+  .log-input-row { display: flex; gap: 8px; margin-top: 10px; }
+  .log-input {
+    flex: 1; background: var(--bg3); border: 1px solid var(--border); color: var(--text);
+    border-radius: 20px; padding: 8px 14px; font-size: 13px; outline: none;
+  }
+  .log-input:focus { border-color: var(--green); }
+  .log-add-btn { background: var(--green3); border: none; color: white; border-radius: 20px; padding: 8px 16px; font-size: 13px; cursor: pointer; }
+
+  /* ======================== MANUALI ======================== */
+  .manual-item {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 14px 16px; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between;
+    cursor: pointer; transition: background 0.15s;
+  }
+  .manual-item:active { background: var(--card2); }
+  .manual-icon { font-size: 24px; margin-right: 12px; }
+  .manual-info { flex: 1; }
+  .manual-title { font-size: 14px; font-weight: 600; color: var(--text); }
+  .manual-sub { font-size: 11px; color: var(--text3); margin-top: 2px; }
+  .manual-arrow { color: var(--text3); font-size: 18px; }
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 200; display: flex; flex-direction: column; }
+  .modal-overlay.hidden { display: none; }
+  .modal-header { background: var(--bg2); padding: 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); }
+  .modal-title { font-size: 16px; font-weight: 700; color: var(--text); }
+  .modal-close { font-size: 24px; color: var(--text3); cursor: pointer; background: none; border: none; padding: 0 4px; }
+  .modal-body { flex: 1; overflow-y: auto; padding: 16px; background: var(--bg); -webkit-overflow-scrolling: touch; }
+  .modal-section { margin-bottom: 20px; }
+  .modal-section h3 { font-size: 14px; font-weight: 700; color: var(--green2); margin-bottom: 8px; }
+  .modal-section p, .modal-section li { font-size: 13px; color: var(--text2); line-height: 1.6; margin-bottom: 4px; }
+  .modal-section ul { padding-left: 16px; }
+  .modal-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .modal-table th { background: var(--card2); color: var(--text3); padding: 8px; text-align: left; border: 1px solid var(--border); font-size: 11px; }
+  .modal-table td { padding: 8px; border: 1px solid var(--border); color: var(--text2); vertical-align: top; }
+  .modal-table tr:nth-child(even) td { background: rgba(26,46,31,0.3); }
+  .modal-note { background: rgba(76,175,80,0.1); border: 1px solid rgba(76,175,80,0.3); border-radius: 8px; padding: 10px 12px; margin: 8px 0; font-size: 12px; color: var(--green2); }
+  .modal-warn { background: rgba(245,124,0,0.1); border: 1px solid rgba(245,124,0,0.3); border-radius: 8px; padding: 10px 12px; margin: 8px 0; font-size: 12px; color: var(--orange2); }
+
+  /* ======================== AI ======================== */
+  .ai-intro { text-align: center; padding: 20px 0 10px; }
+  .ai-avatar { font-size: 48px; margin-bottom: 8px; }
+  .ai-intro-title { font-size: 16px; font-weight: 700; color: var(--text); }
+  .ai-intro-sub { font-size: 13px; color: var(--text3); margin-top: 4px; }
+  .ai-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+  .ai-chip {
+    background: var(--card2); border: 1px solid var(--border); color: var(--text2);
+    border-radius: 16px; padding: 6px 12px; font-size: 12px; cursor: pointer; transition: background 0.15s;
+  }
+  .ai-chip:active { background: var(--green3); color: white; }
+  .chat-messages { min-height: 120px; max-height: 400px; overflow-y: auto; margin-bottom: 12px; }
+  .chat-msg { margin-bottom: 10px; }
+  .chat-msg.user { text-align: right; }
+  .chat-msg.user .msg-bubble { background: var(--green3); color: white; border-radius: 14px 14px 4px 14px; display: inline-block; padding: 8px 12px; font-size: 13px; max-width: 80%; }
+  .chat-msg.bot .msg-bubble { background: var(--card2); color: var(--text); border-radius: 14px 14px 14px 4px; display: inline-block; padding: 8px 12px; font-size: 13px; max-width: 85%; border: 1px solid var(--border); }
+  .chat-input-row { display: flex; gap: 8px; }
+  .chat-input {
+    flex: 1; background: var(--bg3); border: 1px solid var(--border); color: var(--text);
+    border-radius: 20px; padding: 10px 14px; font-size: 13px; outline: none; resize: none; height: 40px;
+  }
+  .chat-input:focus { border-color: var(--green); }
+  .chat-send { background: var(--green3); border: none; color: white; border-radius: 50%; width: 40px; height: 40px; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .chat-send:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  /* ======================== IMPOSTAZIONI ======================== */
+  .settings-group { margin-bottom: 20px; }
+  .settings-group-title { font-size: 11px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .settings-item {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 14px; margin-bottom: 4px; display: flex; align-items: center; justify-content: space-between;
+    cursor: pointer;
+  }
+  .settings-left { display: flex; align-items: center; gap: 10px; }
+  .settings-icon { font-size: 20px; }
+  .settings-label { font-size: 14px; color: var(--text); }
+  .settings-val { font-size: 12px; color: var(--text3); margin-top: 2px; }
+  .settings-right { font-size: 12px; color: var(--text3); display: flex; align-items: center; gap: 6px; }
+
+  /* ======================== LUNA AVANZATA ======================== */
+  .moon-hero { display:flex; align-items:center; gap:16px; padding:8px 0 16px; }
+  .moon-symbol { font-size:64px; line-height:1; flex-shrink:0; }
+  .moon-main-info { flex:1; }
+  .moon-phase-name { font-size:18px; font-weight:700; color:var(--text); margin-bottom:4px; }
+  .moon-illumination { font-size:13px; color:var(--text2); margin-bottom:8px; }
+  .moon-progress-bar { height:6px; background:var(--bg3); border-radius:3px; overflow:hidden; }
+  .moon-progress-fill { height:100%; background:linear-gradient(90deg,var(--blue),var(--green2)); border-radius:3px; transition:width 0.5s ease; }
+  .moon-countdown-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:12px; }
+  .moon-countdown-item { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:14px; text-align:center; }
+  .moon-countdown-days { font-size:28px; font-weight:800; line-height:1; margin-bottom:4px; }
+  .moon-countdown-days.full { color:var(--orange2); }
+  .moon-countdown-days.new  { color:var(--blue2); }
+  .moon-countdown-label { font-size:12px; color:var(--text2); margin-bottom:2px; }
+  .moon-countdown-date  { font-size:11px; color:var(--text3); }
+  .agri-advice { background:linear-gradient(135deg,rgba(76,175,80,0.08),rgba(30,136,229,0.06)); border:1px solid rgba(76,175,80,0.2); border-radius:var(--radius); padding:16px; margin-bottom:12px; }
+  .agri-advice-title { font-size:11px; font-weight:700; color:var(--text3); text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; }
+  .agri-advice-main { font-size:15px; font-weight:700; color:var(--text); margin-bottom:6px; }
+  .agri-advice-detail { font-size:13px; color:var(--text2); line-height:1.6; margin-bottom:10px; }
+  .agri-advice-tags { display:flex; flex-wrap:wrap; gap:6px; }
+  .moon-strip { display:flex; gap:6px; overflow-x:auto; padding-bottom:4px; scrollbar-width:none; }
+  .moon-strip::-webkit-scrollbar { display:none; }
+  .moon-strip-item { flex:0 0 auto; background:var(--card2); border:1px solid var(--border); border-radius:var(--radius2); padding:8px 6px; text-align:center; min-width:52px; }
+  .moon-strip-item.today { border-color:var(--green2); background:rgba(76,175,80,0.1); }
+  .moon-strip-symbol { font-size:22px; line-height:1; margin-bottom:3px; }
+  .moon-strip-day { font-size:9px; color:var(--text3); }
+  .moon-strip-pct { font-size:11px; font-weight:600; color:var(--text2); margin-top:2px; }
+  .phases-table { width:100%; border-collapse:collapse; font-size:13px; }
+  .phases-table td { padding:8px 6px; border-bottom:1px solid rgba(42,74,48,0.3); color:var(--text2); }
+  .phases-table tr:last-child td { border-bottom:none; }
+  .phases-table tr.current-phase td { color:var(--green2); font-weight:600; background:rgba(76,175,80,0.06); }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-logo">
+    <span>🌱</span>
+    <span class="app-name">BioSerra</span>
+  </div>
+  <div class="header-actions">
+    <button class="header-btn" onclick="showNotifications()">🔔</button>
+    <button class="header-btn" onclick="refreshData()">🔄</button>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- ======= PIANTE ======= -->
+  <section id="sec-piante" class="section active">
+    <div class="section-header">Piante 🌿</div>
+    <div class="section-sub">10 piante attive · Ciclo in corso</div>
+    <div class="stats-row">
+      <div class="stat-box"><div class="stat-num">10</div><div class="stat-label">Totale</div></div>
+      <div class="stat-box"><div class="stat-num">5</div><div class="stat-label">Auto</div></div>
+      <div class="stat-box"><div class="stat-num">5</div><div class="stat-label">Femm.</div></div>
+    </div>
+    <div class="plant-group-title">Autofiorenti</div>
+    <div class="plant-card">
+      <span class="plant-emoji">🌸</span>
+      <div class="plant-info">
+        <div class="plant-name">Epsilon F1 ×7</div>
+        <div class="plant-detail">50–70 cm · Raccolta: 60 gg dalla germ.</div>
+      </div>
+      <span class="badge badge-green">Attiva</span>
+    </div>
+    <div class="plant-card">
+      <span class="plant-emoji">🌙</span>
+      <div class="plant-info">
+        <div class="plant-name">Milky Way F1 ×1</div>
+        <div class="plant-detail">55–75 cm · Raccolta: 70–75 gg</div>
+      </div>
+      <span class="badge badge-green">Attiva</span>
+    </div>
+    <div class="plant-card">
+      <span class="plant-emoji">⚡</span>
+      <div class="plant-info">
+        <div class="plant-name">Titan F1 ×2</div>
+        <div class="plant-detail">55–75 cm · Raccolta: 70–75 gg</div>
+      </div>
+      <span class="badge badge-green">Attiva</span>
+    </div>
+    <div class="plant-card">
+      <span class="plant-emoji">🪼</span>
+      <div class="plant-info">
+        <div class="plant-name">Medusa F1 ×3</div>
+        <div class="plant-detail">60–90 cm · Raccolta: 70–75 gg</div>
+      </div>
+      <span class="badge badge-green">Attiva</span>
+    </div>
+    <div class="plant-card">
+      <span class="plant-emoji">🌍</span>
+      <div class="plant-info">
+        <div class="plant-name">Gaia F1 ×8</div>
+        <div class="plant-detail">50–70 cm · Raccolta: 65–70 gg</div>
+      </div>
+      <span class="badge badge-green">Attiva</span>
+    </div>
+    <div class="plant-group-title">Femminizzati</div>
+    <div class="plant-card">
+      <span class="plant-emoji">🍋</span>
+      <div class="plant-info">
+        <div class="plant-name">Astro Lemonade F1 ×4</div>
+        <div class="plant-detail">100–130 cm · Fioritura: inizio ottobre</div>
+      </div>
+      <span class="badge badge-blue">Veg.</span>
+    </div>
+    <div class="plant-card">
+      <span class="plant-emoji">🧀</span>
+      <div class="plant-info">
+        <div class="plant-name">Cosmic Cheddar F1 ×11</div>
+        <div class="plant-detail">80–120 cm · Fioritura: inizio ottobre</div>
+      </div>
+      <span class="badge badge-blue">Veg.</span>
+    </div>
+    <div class="plant-card">
+      <span class="plant-emoji">🍌</span>
+      <div class="plant-info">
+        <div class="plant-name">Orbital Banana F1 ×6</div>
+        <div class="plant-detail">100–130 cm · Fioritura: inizio ottobre</div>
+      </div>
+      <span class="badge badge-blue">Veg.</span>
+    </div>
+    <div class="plant-card">
+      <span class="plant-emoji">🦍</span>
+      <div class="plant-info">
+        <div class="plant-name">Royal Gorilla ×10</div>
+        <div class="plant-detail">130–170 cm · Fioritura: metà ottobre</div>
+      </div>
+      <span class="badge badge-blue">Veg.</span>
+    </div>
+    <div class="plant-card">
+      <span class="plant-emoji">🌮</span>
+      <div class="plant-info">
+        <div class="plant-name">Mexican Rush ×9</div>
+        <div class="plant-detail">150–200 cm · Fioritura: metà ottobre</div>
+      </div>
+      <span class="badge badge-blue">Veg.</span>
+    </div>
+  </section>
+
+  <!-- ======= METEO ======= -->
+  <section id="sec-meteo" class="section">
+    <div class="section-header">Meteo ⛅</div>
+    <div class="section-sub">Caserta CE — Open-Meteo API</div>
+
+    <div id="weather-loading" class="weather-loading">
+      <div class="spinner"></div>
+      <span>Caricamento dati meteo…</span>
+    </div>
+
+    <div id="weather-error" class="weather-error" style="display:none">
+      ⚠️ Impossibile caricare i dati meteo.<br>Controlla la connessione.
+      <br><button class="retry-btn" onclick="loadWeather()">Riprova</button>
+    </div>
+
+    <div id="weather-content" style="display:none">
+      <!-- MAIN TEMP CARD -->
+      <div class="weather-main">
+        <div class="weather-location">📍 Caserta, CE · Italia</div>
+        <div style="margin: 12px 0;">
+          <span id="w-icon" style="font-size:48px;">☀️</span>
+        </div>
+        <div class="weather-temp-main"><span id="w-temp">—</span><span class="weather-temp-unit">°C</span></div>
+        <div class="weather-desc" id="w-desc">—</div>
+        <div class="weather-minmax">
+          <span>🔼 <span id="w-max">—</span>°C</span>
+          <span>🔽 <span id="w-min">—</span>°C</span>
+        </div>
+        <div class="weather-last-update" id="w-update">Aggiornato: —</div>
+      </div>
+
+      <!-- GRID DATI -->
+      <div class="weather-grid">
+        <div class="weather-item">
+          <div class="weather-item-label">💧 Umidità</div>
+          <div class="weather-item-val"><span id="w-humidity">—</span><span class="weather-item-unit">%</span></div>
+        </div>
+        <div class="weather-item">
+          <div class="weather-item-label">🌬️ Vento</div>
+          <div class="weather-item-val"><span id="w-wind">—</span><span class="weather-item-unit">km/h</span></div>
+        </div>
+        <div class="weather-item">
+          <div class="weather-item-label">🔆 Indice UV</div>
+          <div class="weather-item-val"><span id="w-uv">—</span></div>
+          <div class="uv-bar"><div class="uv-indicator" id="w-uv-indicator" style="left:0%"></div></div>
+          <div id="w-uv-label" style="font-size:10px;color:var(--text3);margin-top:2px;"></div>
+        </div>
+        <div class="weather-item">
+          <div class="weather-item-label">📊 Pressione</div>
+          <div class="weather-item-val"><span id="w-pressure">—</span><span class="weather-item-unit">hPa</span></div>
+        </div>
+        <div class="weather-item">
+          <div class="weather-item-label">🌧️ Precipitaz.</div>
+          <div class="weather-item-val"><span id="w-precip">—</span><span class="weather-item-unit">mm</span></div>
+        </div>
+        <div class="weather-item">
+          <div class="weather-item-label">🌡️ Percepita</div>
+          <div class="weather-item-val"><span id="w-feels">—</span><span class="weather-item-unit">°C</span></div>
+        </div>
+      </div>
+
+      <!-- PREVISIONI 7 GIORNI -->
+      <div class="forecast-card">
+        <div class="forecast-title">📅 Previsioni 7 giorni</div>
+        <div id="forecast-rows"></div>
+      </div>
+
+      <!-- CONDIZIONI SERRA -->
+      <div class="sensor-card">
+        <div class="card-title" style="margin-bottom:8px">🌿 Serra — Condizioni consigliate</div>
+        <div class="sensor-row"><span class="sensor-label">🌡️ Temp. ideale in serra</span><span style="font-size:13px;color:var(--green2)">20–30°C</span></div>
+        <div class="sensor-row"><span class="sensor-label">💧 Umidità ideale (veg.)</span><span style="font-size:13px;color:var(--green2)">60–70%</span></div>
+        <div class="sensor-row"><span class="sensor-label">💧 Umidità ideale (fior.)</span><span style="font-size:13px;color:var(--green2)">40–50%</span></div>
+        <div class="sensor-row"><span class="sensor-label">📡 Sensori interni</span><span class="sensor-val">Nessun sensore</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= LUNA ======= -->
+  <section id="sec-luna" class="section">
+    <div class="section-header">Luna 🌙</div>
+    <div class="section-sub">Calendario lunare agricolo</div>
+
+    <div class="card">
+      <div class="moon-hero">
+        <div class="moon-symbol" id="moonSymbol">🌕</div>
+        <div class="moon-main-info">
+          <div class="moon-phase-name" id="moonPhaseName">Calcolo in corso…</div>
+          <div class="moon-illumination">
+            <strong id="moonIllumPct">—%</strong> illuminazione lunare
+          </div>
+          <div class="moon-progress-bar">
+            <div class="moon-progress-fill" id="moonProgressBar" style="width:0%"></div>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:4px;">
+        <div style="font-size:12px;color:var(--text3);">🗓️ <span id="moonDateToday"></span></div>
+        <div style="font-size:12px;color:var(--text3);">Età luna: <span id="moonAge" style="color:var(--orange2);font-weight:600;"></span> giorni</div>
+      </div>
+    </div>
+
+    <div class="moon-countdown-grid">
+      <div class="moon-countdown-item">
+        <div class="moon-countdown-days full" id="daysToFull">—</div>
+        <div class="moon-countdown-label">🌕 Luna Piena</div>
+        <div class="moon-countdown-date" id="dateFullMoon">—</div>
+      </div>
+      <div class="moon-countdown-item">
+        <div class="moon-countdown-days new" id="daysToNew">—</div>
+        <div class="moon-countdown-label">🌑 Luna Nuova</div>
+        <div class="moon-countdown-date" id="dateNewMoon">—</div>
+      </div>
+    </div>
+
+    <div class="agri-advice" id="agriAdviceBox">
+      <div class="agri-advice-title">🌾 Consiglio Agricolo di oggi</div>
+      <div class="agri-advice-main" id="agriAdviceMain">Caricamento…</div>
+      <div class="agri-advice-detail" id="agriAdviceDetail"></div>
+      <div class="agri-advice-tags" id="agriAdviceTags"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Prossimi 7 giorni</div>
+      <div class="moon-strip" id="moonStrip"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Le 8 fasi lunari</div>
+      <table class="phases-table" id="phasesTable"><tbody></tbody></table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ciclo corrente</div>
+      <div id="moonCycleInfo" style="font-size:13px;color:var(--text2);line-height:1.8;"></div>
+    </div>
+  </section>
+
+  <!-- ======= BIODINAMICA ======= -->
+  <section id="sec-bio" class="section">
+    <div class="section-header">Biodinamica 🌱</div>
+    <div class="section-sub">Giorni Frutto · Fiore · Radice · Foglia</div>
+    <div class="card">
+      <div class="bio-legend">
+        <div class="bio-legend-item"><div class="bio-dot dot-fruit"></div>Frutto</div>
+        <div class="bio-legend-item"><div class="bio-dot dot-flower"></div>Fiore</div>
+        <div class="bio-legend-item"><div class="bio-dot dot-root"></div>Radice</div>
+        <div class="bio-legend-item"><div class="bio-dot dot-leaf"></div>Foglia</div>
+      </div>
+      <div class="bio-cal-grid" id="bio-cal-grid">
+        <div class="bio-cal-header">L</div><div class="bio-cal-header">M</div>
+        <div class="bio-cal-header">M</div><div class="bio-cal-header">G</div>
+        <div class="bio-cal-header">V</div><div class="bio-cal-header">S</div>
+        <div class="bio-cal-header">D</div>
+      </div>
+      <div class="bio-today-info">
+        <div class="bio-today-label">Oggi</div>
+        <div class="bio-today-type" id="bio-today-type">—</div>
+        <div class="bio-today-advice" id="bio-today-advice">—</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= ELETTROCULTURA ======= -->
+  <section id="sec-elettro" class="section">
+    <div class="section-header">Elettrocultura ⚡</div>
+    <div class="section-sub">Esperimenti in corso · Living Soil</div>
+    <div class="exp-status-row">
+      <div class="exp-stat"><div class="exp-stat-num" style="color:var(--green2)">3</div><div class="exp-stat-label">Attivi</div></div>
+      <div class="exp-stat"><div class="exp-stat-num" style="color:var(--blue2)" id="exp-obs-count">0</div><div class="exp-stat-label">Osservazioni</div></div>
+      <div class="exp-stat"><div class="exp-stat-num" style="color:var(--orange2)">!</div><div class="exp-stat-label">Verifica</div></div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div>
+          <div class="exp-title">🔁 Circuito di Lakhovsky</div>
+          <span class="badge badge-orange">SPERIMENTALE</span>
+        </div>
+      </div>
+      <div class="exp-desc">Anello di rame aperto alla base di ogni pianta. Funziona come antenna di risonanza. Le estremità si sovrappongono per 2-3 cm con 1 cm di spazio.</div>
+      <div class="exp-counter">
+        <div class="exp-counter-label">Piante con cerchio — <span id="lak-count">0</span> / 10</div>
+        <div class="exp-bar"><div class="exp-bar-fill" id="lak-bar" style="width:0%"></div></div>
+        <div class="exp-controls">
+          <button class="exp-btn" onclick="changeExp('lak',-1)">−</button>
+          <span class="exp-num" id="lak-num">0</span>
+          <button class="exp-btn" onclick="changeExp('lak',1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div>
+          <div class="exp-title">⚗️ Pila Galvanica Ferro-Rame</div>
+          <span class="badge badge-orange">SPERIMENTALE</span>
+        </div>
+      </div>
+      <div class="exp-desc">Micro-corrente ~0.5-0.7V generata da chiodo di ferro + filo di rame in terreno umido. Ionizza i nutrienti per miglior assorbimento radicale.</div>
+      <div class="exp-counter">
+        <div class="exp-counter-label">Pile attive — <span id="gal-count">0</span> / 10</div>
+        <div class="exp-bar"><div class="exp-bar-fill" id="gal-bar" style="width:0%"></div></div>
+        <div class="exp-controls">
+          <button class="exp-btn" onclick="changeExp('gal',-1)">−</button>
+          <span class="exp-num" id="gal-num">0</span>
+          <button class="exp-btn" onclick="changeExp('gal',1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div>
+          <div class="exp-title">🌐 Sistema Pantacle di Rame</div>
+          <span class="badge badge-orange">SPERIMENTALE</span>
+        </div>
+      </div>
+      <div class="exp-desc">Archi di rame nudo collegano il terreno di tutti i vasi in serie. Distribuzione uniforme delle cariche elettriche tra le 10 piante.</div>
+      <div class="exp-counter">
+        <div class="exp-counter-label">Archi collegati — <span id="pan-count">0</span></div>
+        <div class="exp-bar"><div class="exp-bar-fill" id="pan-bar" style="width:0%"></div></div>
+        <div class="exp-controls">
+          <button class="exp-btn" onclick="changeExp('pan',-1)">−</button>
+          <span class="exp-num" id="pan-num">0</span>
+          <button class="exp-btn" onclick="changeExp('pan',1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div>
+          <div class="exp-title">🧲 Acqua Magnetizzata</div>
+          <span class="badge badge-blue">Setup</span>
+        </div>
+      </div>
+      <div class="exp-desc">Magnete principale avvolto attorno al tubo principale. Geomag fissato su ogni gocciolatoio con nastro di plastica.</div>
+      <div style="margin-top:8px; font-size:12px; color:var(--text2)">🧲 Magnete principale: <span class="badge badge-green" style="font-size:10px">Installato</span></div>
+      <div style="margin-top:6px; font-size:12px; color:var(--text2)">Geomag per gocciolatoio — <span id="geo-count">0</span> / 10</div>
+      <div class="exp-controls" style="margin-top:6px">
+        <button class="exp-btn" onclick="changeExp('geo',-1)">−</button>
+        <span class="exp-num" id="geo-num">0</span>
+        <button class="exp-btn" onclick="changeExp('geo',1)">+</button>
+      </div>
+    </div>
+
+    <div class="log-card">
+      <div class="card-title">📊 Log osservazioni</div>
+      <div id="exp-log-list"><div class="log-empty">Nessuna osservazione ancora.<br>Aggiungi note per confrontare i risultati.</div></div>
+      <div class="log-input-row">
+        <input class="log-input" id="log-input" placeholder="Aggiungi osservazione…" type="text">
+        <button class="log-add-btn" onclick="addLog()">+</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MANUALI ======= -->
+  <section id="sec-manuali" class="section">
+    <div class="section-header">Manuali 📚</div>
+    <div class="section-sub">Documenti e guide operative</div>
+    <div class="manual-item" onclick="openManual('sistema')">
+      <span class="manual-icon">🌱</span>
+      <div class="manual-info"><div class="manual-title">Manuale Mini-Serra v2</div><div class="manual-sub">Living Soil · Aggiornato marzo 2026</div></div>
+      <span class="manual-arrow">›</span>
+    </div>
+    <div class="manual-item" onclick="openManual('calendario')">
+      <span class="manual-icon">📋</span>
+      <div class="manual-info"><div class="manual-title">Calendario Colture</div><div class="manual-sub">10 varietà · 8 mesi ciclo</div></div>
+      <span class="manual-arrow">›</span>
+    </div>
+    <div class="manual-item" onclick="openManual('elettro')">
+      <span class="manual-icon">⚡</span>
+      <div class="manual-info"><div class="manual-title">Guida Elettrocultura</div><div class="manual-sub">Lakhovsky · Galvanica · Pantacle</div></div>
+      <span class="manual-arrow">›</span>
+    </div>
+    <div class="manual-item" onclick="openManual('serbatoio')">
+      <span class="manual-icon">💧</span>
+      <div class="manual-info"><div class="manual-title">Gestione Serbatoio</div><div class="manual-sub">Irrigazione · Melassa · Humus</div></div>
+      <span class="manual-arrow">›</span>
+    </div>
+    <div class="manual-item" onclick="openManual('additivi')">
+      <span class="manual-icon">🧪</span>
+      <div class="manual-info"><div class="manual-title">Additivi Biologici</div><div class="manual-sub">Ortiche · Miscela · Banana · Etilene</div></div>
+      <span class="manual-arrow">›</span>
+    </div>
+    <div class="manual-item" onclick="openManual('rapida')">
+      <span class="manual-icon">📅</span>
+      <div class="manual-info"><div class="manual-title">Scheda Rapida Additivi</div><div class="manual-sub">Dosi · Cadenze · Metodi</div></div>
+      <span class="manual-arrow">›</span>
+    </div>
+  </section>
+
+  <!-- ======= AI ======= -->
+  <section id="sec-ai" class="section">
+    <div class="section-header">AI 🤖</div>
+    <div class="section-sub">Assistente Serra · Powered by Claude</div>
+    <div class="ai-intro">
+      <div class="ai-avatar">🌿</div>
+      <div class="ai-intro-title">Ciao! Sono il tuo assistente BioSerra</div>
+      <div class="ai-intro-sub">Chiedimi qualsiasi cosa sulla tua coltivazione</div>
+    </div>
+    <div class="ai-chips">
+      <span class="ai-chip" onclick="aiChip('Quando annaffiare?')">Quando annaffiare?</span>
+      <span class="ai-chip" onclick="aiChip('Dosi melassa')">Dosi melassa</span>
+      <span class="ai-chip" onclick="aiChip('Fase lunare oggi')">Fase lunare</span>
+      <span class="ai-chip" onclick="aiChip('Diagnosi foglie gialle')">Diagnosi foglie</span>
+      <span class="ai-chip" onclick="aiChip('Prossima azione da fare')">Prossima azione</span>
+      <span class="ai-chip" onclick="aiChip('Raccolta prevista')">Raccolta prevista</span>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-msg bot"><div class="msg-bubble">👋 Carica i tuoi manuali e configura le piante per ricevere consigli personalizzati sulla tua mini-serra Living Soil!</div></div>
+    </div>
+    <div class="chat-input-row">
+      <input class="chat-input" id="chat-input" placeholder="Scrivi un messaggio…" onkeydown="if(event.key==='Enter')sendChat()">
+      <button class="chat-send" id="chat-send-btn" onclick="sendChat()">➤</button>
+    </div>
+  </section>
+
+  <!-- ======= IMPOSTAZIONI ======= -->
+  <section id="sec-impostazioni" class="section">
+    <div class="section-header">Impostazioni ⚙️</div>
+    <div class="section-sub">Configurazione BioSerra</div>
+
+    <div class="settings-group">
+      <div class="settings-group-title">Serra</div>
+      <div class="settings-item">
+        <div class="settings-left"><span class="settings-icon">🌱</span><div><div class="settings-label">Nome Serra</div><div class="settings-val">BioSerra #1</div></div></div>
+        <span class="settings-right">›</span>
+      </div>
+      <div class="settings-item">
+        <div class="settings-left"><span class="settings-icon">📍</span><div><div class="settings-label">Posizione</div><div class="settings-val">Caserta CE, Italia</div></div></div>
+        <span class="settings-right"><span class="badge badge-green" style="font-size:10px">Attiva</span></span>
+      </div>
+      <div class="settings-item">
+        <div class="settings-left"><span class="settings-icon">🗓️</span><div><div class="settings-label">Inizio ciclo</div><div class="settings-val">21 aprile 2026</div></div></div>
+        <span class="settings-right">›</span>
+      </div>
+    </div>
+
+    <div class="settings-group">
+      <div class="settings-group-title">Notifiche</div>
+      <div class="settings-item">
+        <div class="settings-left"><span class="settings-icon">💧</span><div><div class="settings-label">Promemoria irrigazione</div><div class="settings-val">Ogni 3-4 giorni</div></div></div>
+        <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+      </div>
+      <div class="settings-item">
+        <div class="settings-left"><span class="settings-icon">🌙</span><div><div class="settings-label">Avvisi luna</div><div class="settings-val">Giorni favorevoli</div></div></div>
+        <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+      </div>
+      <div class="settings-item">
+        <div class="settings-left"><span class="settings-icon">🧪</span><div><div class="settings-label">Additivi biologici</div><div class="settings-val">Melassa · Ortiche · Humus</div></div></div>
+        <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+      </div>
+      <div class="settings-item">
+        <div class="settings-left"><span class="settings-icon">⚡</span><div><div class="settings-label">Controllo esperimenti</div><div class="settings-val">Verifica settimanale</div></div></div>
+        <div class="toggle" onclick="this.classList.toggle('on')"></div>
+      </div>
+    </div>
+
+    <div class="settings-group">
+      <div class="settings-group-title">Dati e Integrazioni</div>
+      <div class="settings-item">
+        <div class="settings-left"><span class="settings-icon">🌦️</span><div><div class="settings-label">API Meteo</div><div class="settings-val">Open-Meteo · Caserta CE</div></div></div>
+        <span class="settings-right"><span class="badge badge-green" style="font-size:10px">Attiva</span></span>
+      </div>
+      <div class="settings-item">
+        <div class="settings-left"><span class="settings-icon">📡</span><div><div class="settings-label">Sensori IoT</div><div class="settings-val">Nessun sensore</div></div></div>
+        <span class="settings-right">›</span>
+      </div>
+      <div class="settings-item">
+        <div class="settings-left"><span class="settings-icon">☁️</span><div><div class="settings-label">Backup cloud</div><div class="settings-val">Disattivato</div></div></div>
+        <div class="toggle" onclick="this.classList.toggle('on')"></div>
+      </div>
+    </div>
+
+    <div class="settings-group">
+      <div class="settings-group-title">App</div>
+      <div class="settings-item">
+        <div class="settings-left"><span class="settings-icon">🎨</span><div><div class="settings-label">Tema</div><div class="settings-val">Scuro — Verde Foresta</div></div></div>
+        <span class="settings-right">›</span>
+      </div>
+      <div class="settings-item">
+        <div class="settings-left"><span class="settings-icon">ℹ️</span><div><div class="settings-label">Versione</div><div class="settings-val">BioSerra 0.2.0 · Beta</div></div></div>
+        <span class="settings-right"></span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <button class="nav-item active" onclick="showSection('piante',this)"><span class="nav-icon">🌿</span>Piante</button>
+  <button class="nav-item" onclick="showSection('meteo',this)"><span class="nav-icon">⛅</span>Meteo</button>
+  <button class="nav-item" onclick="showSection('luna',this)"><span class="nav-icon">🌙</span>Luna</button>
+  <button class="nav-item" onclick="showSection('bio',this)"><span class="nav-icon">🌱</span>Bio</button>
+  <button class="nav-item" onclick="showSection('elettro',this)"><span class="nav-icon">⚡</span>Elettro</button>
+  <button class="nav-item" onclick="showSection('manuali',this)"><span class="nav-icon">📚</span>Manuali</button>
+  <button class="nav-item" onclick="showSection('ai',this)"><span class="nav-icon">🤖</span>AI</button>
+  <button class="nav-item" onclick="showSection('impostazioni',this)"><span class="nav-icon">⚙️</span>Config</button>
+</nav>
+
+<!-- MODAL MANUALI -->
+<div class="modal-overlay hidden" id="manual-modal">
+  <div class="modal-header">
+    <span class="modal-title" id="modal-title">Manuale</span>
+    <button class="modal-close" onclick="closeManual()">✕</button>
+  </div>
+  <div class="modal-body" id="modal-body"></div>
+</div>
+
+<script>
+// ===================== NAV =====================
+function showSection(id, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
+  document.getElementById('sec-' + id).classList.add('active');
+  btn.classList.add('active');
+  if (id === 'meteo') loadWeather();
+  if (id === 'luna') setTimeout(renderLunarSection, 50);
+  if (id === 'bio') renderBio();
+}
+
+function refreshData() {
+  loadWeather();
+  calcMoon();
+}
+
+function showNotifications() {
+  alert('🔔 Nessuna notifica nuova');
+}
+
+// ===================== METEO — OPEN-METEO =====================
+// Coordinate Caserta CE
+const CASERTA_LAT = 41.0761;
+const CASERTA_LON = 14.3328;
+
+const WMO_CODES = {
+  0:  { desc: 'Sereno', icon: '☀️' },
+  1:  { desc: 'Prevalentemente sereno', icon: '🌤️' },
+  2:  { desc: 'Parzialmente nuvoloso', icon: '⛅' },
+  3:  { desc: 'Nuvoloso', icon: '☁️' },
+  45: { desc: 'Nebbia', icon: '🌫️' },
+  48: { desc: 'Nebbia gelata', icon: '🌫️' },
+  51: { desc: 'Pioggerella leggera', icon: '🌦️' },
+  53: { desc: 'Pioggerella moderata', icon: '🌦️' },
+  55: { desc: 'Pioggerella intensa', icon: '🌧️' },
+  61: { desc: 'Pioggia leggera', icon: '🌧️' },
+  63: { desc: 'Pioggia moderata', icon: '🌧️' },
+  65: { desc: 'Pioggia intensa', icon: '🌧️' },
+  71: { desc: 'Neve leggera', icon: '🌨️' },
+  73: { desc: 'Neve moderata', icon: '❄️' },
+  75: { desc: 'Neve intensa', icon: '❄️' },
+  80: { desc: 'Rovesci leggeri', icon: '🌦️' },
+  81: { desc: 'Rovesci moderati', icon: '🌧️' },
+  82: { desc: 'Rovesci violenti', icon: '⛈️' },
+  95: { desc: 'Temporale', icon: '⛈️' },
+  96: { desc: 'Temporale con grandine', icon: '⛈️' },
+  99: { desc: 'Temporale forte con grandine', icon: '⛈️' }
+};
+
+function getWMO(code) {
+  return WMO_CODES[code] || { desc: 'Variabile', icon: '🌤️' };
+}
+
+function uvLabel(uv) {
+  if (uv <= 2) return 'Basso';
+  if (uv <= 5) return 'Moderato';
+  if (uv <= 7) return 'Alto';
+  if (uv <= 10) return 'Molto alto';
+  return 'Estremo';
+}
+
+function formatTime(iso) {
+  const d = new Date(iso);
+  return d.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
+}
+
+const DAYS_IT = ['Dom','Lun','Mar','Mer','Gio','Ven','Sab'];
+const DAYS_IT_FULL = ['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'];
+
+let weatherLoaded = false;
+
+async function loadWeather() {
+  if (weatherLoaded) return;
+
+  const loading = document.getElementById('weather-loading');
+  const error = document.getElementById('weather-error');
+  const content = document.getElementById('weather-content');
+
+  loading.style.display = 'flex';
+  error.style.display = 'none';
+  content.style.display = 'none';
+
+  try {
+    const url = `https://api.open-meteo.com/v1/forecast?` +
+      `latitude=${CASERTA_LAT}&longitude=${CASERTA_LON}` +
+      `&current=temperature_2m,relative_humidity_2m,apparent_temperature,` +
+      `precipitation,weather_code,surface_pressure,wind_speed_10m,uv_index` +
+      `&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum,uv_index_max` +
+      `&timezone=Europe%2FRome&forecast_days=7`;
+
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+
+    const cur = data.current;
+    const daily = data.daily;
+
+    // Temp principale
+    const wmo = getWMO(cur.weather_code);
+    document.getElementById('w-icon').textContent = wmo.icon;
+    document.getElementById('w-temp').textContent = Math.round(cur.temperature_2m);
+    document.getElementById('w-desc').textContent = wmo.desc;
+    document.getElementById('w-max').textContent = Math.round(daily.temperature_2m_max[0]);
+    document.getElementById('w-min').textContent = Math.round(daily.temperature_2m_min[0]);
+    document.getElementById('w-update').textContent = 'Aggiornato: ' + formatTime(cur.time);
+
+    // Grid
+    document.getElementById('w-humidity').textContent = cur.relative_humidity_2m;
+    document.getElementById('w-wind').textContent = Math.round(cur.wind_speed_10m);
+    document.getElementById('w-pressure').textContent = Math.round(cur.surface_pressure);
+    document.getElementById('w-precip').textContent = cur.precipitation.toFixed(1);
+    document.getElementById('w-feels').textContent = Math.round(cur.apparent_temperature);
+
+    // UV
+    const uv = Math.round(cur.uv_index * 10) / 10;
+    document.getElementById('w-uv').textContent = uv;
+    document.getElementById('w-uv-label').textContent = uvLabel(uv);
+    const uvPct = Math.min(100, (uv / 12) * 100);
+    document.getElementById('w-uv-indicator').style.left = uvPct + '%';
+
+    // 7-day forecast
+    const forecastEl = document.getElementById('forecast-rows');
+    forecastEl.innerHTML = '';
+    const today = new Date();
+    for (let i = 0; i < 7; i++) {
+      const d = new Date(daily.time[i]);
+      const dayName = i === 0 ? 'Oggi' : i === 1 ? 'Dom.' : DAYS_IT[d.getDay()];
+      const fw = getWMO(daily.weather_code[i]);
+      const rain = daily.precipitation_sum[i];
+      const row = document.createElement('div');
+      row.className = 'forecast-row';
+      row.innerHTML = `
+        <span class="forecast-day">${dayName}</span>
+        <span class="forecast-icon">${fw.icon}</span>
+        <span class="forecast-desc">${fw.desc}</span>
+        ${rain > 0 ? `<span class="forecast-rain">💧${rain.toFixed(1)}</span>` : '<span class="forecast-rain"></span>'}
+        <div class="forecast-temps">
+          <span class="forecast-max">${Math.round(daily.temperature_2m_max[i])}°</span>
+          <span class="forecast-min">${Math.round(daily.temperature_2m_min[i])}°</span>
+        </div>`;
+      forecastEl.appendChild(row);
+    }
+
+    loading.style.display = 'none';
+    content.style.display = 'block';
+    weatherLoaded = true;
+
+  } catch (e) {
+    console.error('Weather error:', e);
+    loading.style.display = 'none';
+    error.style.display = 'block';
+  }
+}
+
+// ===================== LUNA AVANZATA =====================
+const LUNAR_CYCLE = 29.53058867;
+const KNOWN_NEW_MOON_JD = 2451549.5;
+
+function dateToJD(date) {
+  let y = date.getUTCFullYear(), m = date.getUTCMonth()+1;
+  let d = date.getUTCDate() + date.getUTCHours()/24 + date.getUTCMinutes()/1440 + date.getUTCSeconds()/86400;
+  if (m<=2){y-=1;m+=12;}
+  const A=Math.floor(y/100), B=2-A+Math.floor(A/4);
+  return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+d+B-1524.5;
+}
+function jdToDate(jd) {
+  const z=Math.floor(jd+0.5),f=jd+0.5-z;
+  let a=z<2299161?z:z+1+Math.floor((z-1867216.25)/36524.25)-Math.floor(Math.floor((z-1867216.25)/36524.25)/4);
+  const b=a+1524,c=Math.floor((b-122.1)/365.25),d=Math.floor(365.25*c),e=Math.floor((b-d)/30.6001);
+  const day=b-d-Math.floor(30.6001*e),month=(e<14)?e-1:e-13,year=(month>2)?c-4716:c-4715;
+  return new Date(Date.UTC(year,month-1,day));
+}
+function getMoonAge(date) {
+  const jd=dateToJD(date),days=jd-KNOWN_NEW_MOON_JD;
+  let age=days%LUNAR_CYCLE; if(age<0)age+=LUNAR_CYCLE; return age;
+}
+function getMoonIllumination(age) {
+  return Math.round(((1-Math.cos((age/LUNAR_CYCLE)*2*Math.PI))/2)*100);
+}
+function getMoonPhaseData(age) {
+  const p=age/LUNAR_CYCLE;
+  if(p<0.034)  return{name:'Luna Nuova',emoji:'🌑',code:'new'};
+  if(p<0.25)   return{name:'Luna Crescente',emoji:'🌒',code:'waxing_crescent'};
+  if(p<0.30)   return{name:'Primo Quarto',emoji:'🌓',code:'first_quarter'};
+  if(p<0.50)   return{name:'Gibbosa Crescente',emoji:'🌔',code:'waxing_gibbous'};
+  if(p<0.534)  return{name:'Luna Piena',emoji:'🌕',code:'full'};
+  if(p<0.75)   return{name:'Gibbosa Calante',emoji:'🌖',code:'waning_gibbous'};
+  if(p<0.80)   return{name:'Ultimo Quarto',emoji:'🌗',code:'last_quarter'};
+  return{name:'Luna Calante',emoji:'🌘',code:'waning_crescent'};
+}
+function getAgriAdvice(code) {
+  const a={
+    new:{main:'Giorno di pausa e programmazione',detail:'Pianifica, prepara substrati e riorganizza il sistema di irrigazione. Ottimo per infuso di humus.',tags:['⚙️ Manutenzione','📋 Pianificazione']},
+    waxing_crescent:{main:'Fase crescente — Stimola la crescita',detail:'La linfa sale verso foglie e fusti. Somministra ortiche e melassa. Ottimo assorbimento nutrienti.',tags:['🌿 Crescita','🧪 Ortiche+Melassa']},
+    first_quarter:{main:'Primo Quarto — Massima energia',detail:'Intenso sviluppo vegetativo. Ideale per trapianti e miscela organica (uovo+banana+caffè).',tags:['🌱 Trapianto','🧪 Miscela organica']},
+    waxing_gibbous:{main:'Gibbosa Crescente — Pre-fioritura',detail:'Prepara la fioritura: tè di banana e cenere per potassio. Osserva colore e salute delle foglie.',tags:['🍌 Tè banana','🌸 Pre-fioritura']},
+    full:{main:'Luna Piena — Massima vitalità',detail:'Massima energia. Documenta esperimenti, osserva fiori e resine. Controlla tutti gli esperimenti.',tags:['📊 Documenta','⚡ Verifica esperimenti']},
+    waning_gibbous:{main:'Gibbosa Calante — Rinforza radici',detail:'La linfa scende verso le radici. Somministra humus e verifica pila galvanica.',tags:['🌿 Radici','🧫 Humus']},
+    last_quarter:{main:'Ultimo Quarto — Rinnovamento',detail:'Sciacqua serbatoio, rimuovi foglie malate, rinnova infuso di humus. Prepara prossimo ciclo.',tags:['🗑️ Pulizia','💧 Rinnovo serbatoio']},
+    waning_crescent:{main:'Luna Calante — Riposo',detail:'Fase di minima energia. Osserva, fotografia il diario. Prepara prossimo infuso di ortiche.',tags:['📸 Diario','📋 Osservazione']}
+  };
+  return a[code]||a.new;
+}
+function daysToNextPhase(age,targetFraction) {
+  const cur=age/LUNAR_CYCLE; let diff=targetFraction-cur;
+  if(diff<=0.034)diff+=1; return Math.round(diff*LUNAR_CYCLE);
+}
+function getNextMoonDate(today,fraction) {
+  const jd=dateToJD(today),age=getMoonAge(today);
+  let d=daysToNextPhase(age,fraction); if(d===0)d=Math.round(LUNAR_CYCLE);
+  return jdToDate(jd+d);
+}
+function formatDateIT(date) {
+  const days=['Dom','Lun','Mar','Mer','Gio','Ven','Sab'];
+  const months=['gen','feb','mar','apr','mag','giu','lug','ago','set','ott','nov','dic'];
+  return `${days[date.getDay()]} ${date.getDate()} ${months[date.getMonth()]}`;
+}
+function formatDateFull(date) {
+  const months=['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];
+  return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+}
+
+function renderLunarSection() {
+  const today=new Date();
+  const moonAge=getMoonAge(today);
+  const illum=getMoonIllumination(moonAge);
+  const phase=getMoonPhaseData(moonAge);
+  const advice=getAgriAdvice(phase.code);
+
+  document.getElementById('moonSymbol').textContent=phase.emoji;
+  document.getElementById('moonPhaseName').textContent=phase.name;
+  document.getElementById('moonIllumPct').textContent=illum+'%';
+  document.getElementById('moonProgressBar').style.width=illum+'%';
+  document.getElementById('moonDateToday').textContent=formatDateFull(today);
+  document.getElementById('moonAge').textContent=Math.round(moonAge);
+
+  const fullDate=getNextMoonDate(today,0.5);
+  const newDate=getNextMoonDate(today,0);
+  const dFull=Math.round((fullDate-today)/86400000);
+  const dNew=Math.round((newDate-today)/86400000);
+  document.getElementById('daysToFull').textContent=dFull===0?'Oggi':dFull+' gg';
+  document.getElementById('daysToNew').textContent=dNew===0?'Oggi':dNew+' gg';
+  document.getElementById('dateFullMoon').textContent=formatDateIT(fullDate);
+  document.getElementById('dateNewMoon').textContent=formatDateIT(newDate);
+
+  document.getElementById('agriAdviceMain').textContent=advice.main;
+  document.getElementById('agriAdviceDetail').textContent=advice.detail;
+  document.getElementById('agriAdviceTags').innerHTML=advice.tags.map(t=>`<span class="badge badge-green">${t}</span>`).join('');
+
+  const strip=document.getElementById('moonStrip');
+  strip.innerHTML='';
+  const dayNames=['Dom','Lun','Mar','Mer','Gio','Ven','Sab'];
+  for(let i=0;i<7;i++){
+    const d=new Date(today); d.setDate(d.getDate()+i);
+    const a=getMoonAge(d),il=getMoonIllumination(a),sy=getMoonPhaseData(a).emoji;
+    strip.innerHTML+=`<div class="moon-strip-item ${i===0?'today':''}">
+      <div class="moon-strip-symbol">${sy}</div>
+      <div class="moon-strip-day">${i===0?'Oggi':dayNames[d.getDay()]}</div>
+      <div class="moon-strip-day">${d.getDate()}/${d.getMonth()+1}</div>
+      <div class="moon-strip-pct">${il}%</div></div>`;
+  }
+
+  const phases=[
+    {code:'new',emoji:'🌑',name:'Luna Nuova',range:'0%'},
+    {code:'waxing_crescent',emoji:'🌒',name:'Crescente',range:'1–49%'},
+    {code:'first_quarter',emoji:'🌓',name:'Primo Quarto',range:'~50%'},
+    {code:'waxing_gibbous',emoji:'🌔',name:'Gibbosa Crescente',range:'51–99%'},
+    {code:'full',emoji:'🌕',name:'Luna Piena',range:'100%'},
+    {code:'waning_gibbous',emoji:'🌖',name:'Gibbosa Calante',range:'99–51%'},
+    {code:'last_quarter',emoji:'🌗',name:'Ultimo Quarto',range:'~50%'},
+    {code:'waning_crescent',emoji:'🌘',name:'Calante',range:'49–1%'}
+  ];
+  document.querySelector('#phasesTable tbody').innerHTML=phases.map(p=>`
+    <tr class="${p.code===phase.code?'current-phase':''}">
+      <td>${p.emoji}</td><td>${p.name}${p.code===phase.code?' ← oggi':''}</td><td>${p.range}</td>
+    </tr>`).join('');
+
+  document.getElementById('moonCycleInfo').innerHTML=`
+    🌑 Inizio ciclo: <strong>${formatDateIT(new Date(today.getTime()-moonAge*86400000))}</strong><br>
+    🌕 Luna Piena: <strong>${formatDateIT(fullDate)}</strong> (tra ${dFull} gg)<br>
+    🌑 Prossima Luna Nuova: <strong>${formatDateIT(newDate)}</strong> (tra ${dNew} gg)<br>
+    ⭕ Età luna: <strong>${Math.round(moonAge)} giorni</strong> su ${Math.round(LUNAR_CYCLE)}<br>
+    💡 Illuminazione: <strong>${illum}%</strong>`;
+}
+
+// Avvio luna quando si clicca nav
+// renderLunarSection viene chiamata anche da showSection
+if(document.getElementById('sec-luna').classList.contains('active')) renderLunarSection();
+
+// ===================== BIODINAMICA =====================
+// Schema semplificato basato su calendario biodinamico Steiner
+// Ciclo lunare → posizione in costellazioni zodiacali
+// Approssimazione: rotazione 13°/giorno attraverso 12 segni
+function getBioDayType(date) {
+  // La luna percorre lo zodiaco in ~27.3 giorni (mese siderale)
+  // Associazione costellazioni → elementi:
+  // Ariete,Leone,Sagittario → Frutto/Fuoco
+  // Toro,Vergine,Capricorno → Radice/Terra
+  // Gemelli,Bilancia,Acquario → Fiore/Aria
+  // Cancro,Scorpione,Pesci → Foglia/Acqua
+  const refSidereal = new Date('2000-01-01T00:00:00Z');
+  const siderealPeriod = 27.32166;
+  const diffDays = (date - refSidereal) / (1000*60*60*24);
+  const moonPos = ((diffDays % siderealPeriod) + siderealPeriod) % siderealPeriod;
+  const segLen = siderealPeriod / 12;
+  const seg = Math.floor(moonPos / segLen) % 12;
+  // 0=Ariete,1=Toro,2=Gemelli,3=Cancro,4=Leone,5=Vergine,
+  // 6=Bilancia,7=Scorpione,8=Sagittario,9=Capricorno,10=Acquario,11=Pesci
+  const types = ['fruit','root','flower','leaf','fruit','root','flower','leaf','fruit','root','flower','leaf'];
+  return types[seg];
+}
+
+function renderBio() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = now.getMonth();
+  const today = now.getDate();
+
+  const firstDay = new Date(year, month, 1).getDay(); // 0=Dom
+  // Converti a lunedì-first: 0=Lun..6=Dom
+  const startOffset = (firstDay + 6) % 7;
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+  const grid = document.getElementById('bio-cal-grid');
+  // Remove old cells (keep headers)
+  while (grid.children.length > 7) grid.removeChild(grid.lastChild);
+
+  // Empty cells before
+  for (let i = 0; i < startOffset; i++) {
+    const cell = document.createElement('div');
+    cell.className = 'bio-cal-cell empty';
+    grid.appendChild(cell);
+  }
+
+  const typeLabels = { fruit: 'Fr', flower: 'Fi', root: 'R', leaf: 'F' };
+  const typeNames = { fruit: 'Frutto', flower: 'Fiore', root: 'Radice', leaf: 'Foglia' };
+
+  for (let d = 1; d <= daysInMonth; d++) {
+    const date = new Date(year, month, d);
+    const type = getBioDayType(date);
+    const cell = document.createElement('div');
+    cell.className = `bio-cal-cell ${type}${d === today ? ' today' : ''}`;
+    cell.innerHTML = `<span class="day-num">${d}</span><span class="day-type">${typeLabels[type]}</span>`;
+    grid.appendChild(cell);
+  }
+
+  // Today info
+  const todayType = getBioDayType(now);
+  const typeAdvice = {
+    fruit: 'Ideale per raccolta, fioritura e trattamenti di stelo e frutti. 🍊',
+    flower: 'Ottimo per lavorare i fiori e applicare trattamenti fogliari. 🌸',
+    root: 'Favorevole per lavori a terra, rinvaso e trattamenti radicali. 🌿',
+    leaf: 'Buono per irrigazione, concimazione organica e crescita fogliare. 🍃'
+  };
+  document.getElementById('bio-today-type').textContent = `Giorno ${typeNames[todayType]} ${typeLabels[todayType] === 'Fr' ? '🍊' : typeLabels[todayType] === 'Fi' ? '🌸' : typeLabels[todayType] === 'R' ? '🌱' : '🍃'}`;
+  document.getElementById('bio-today-advice').textContent = typeAdvice[todayType];
+}
+
+// ===================== ELETTROCULTURA =====================
+const expState = {
+  lak: parseInt(localStorage.getItem('exp-lak') || '0'),
+  gal: parseInt(localStorage.getItem('exp-gal') || '0'),
+  pan: parseInt(localStorage.getItem('exp-pan') || '0'),
+  geo: parseInt(localStorage.getItem('exp-geo') || '0')
+};
+const expMax = { lak: 10, gal: 10, pan: 9, geo: 10 };
+const expLogs = JSON.parse(localStorage.getItem('exp-logs') || '[]');
+
+function changeExp(key, delta) {
+  expState[key] = Math.max(0, Math.min(expMax[key], expState[key] + delta));
+  localStorage.setItem('exp-' + key, expState[key]);
+  updateExpUI();
+}
+
+function updateExpUI() {
+  ['lak','gal','pan','geo'].forEach(k => {
+    const v = expState[k];
+    const max = expMax[k];
+    const pct = (v / max) * 100;
+    if (document.getElementById(k+'-count')) document.getElementById(k+'-count').textContent = v;
+    if (document.getElementById(k+'-num')) document.getElementById(k+'-num').textContent = v;
+    if (document.getElementById(k+'-bar')) document.getElementById(k+'-bar').style.width = pct + '%';
+  });
+}
+
+function addLog() {
+  const input = document.getElementById('log-input');
+  const text = input.value.trim();
+  if (!text) return;
+  const now = new Date();
+  expLogs.unshift({ text, date: now.toLocaleDateString('it-IT') + ' ' + now.toLocaleTimeString('it-IT', {hour:'2-digit',minute:'2-digit'}) });
+  if (expLogs.length > 20) expLogs.pop();
+  localStorage.setItem('exp-logs', JSON.stringify(expLogs));
+  input.value = '';
+  renderLogs();
+}
+
+function renderLogs() {
+  const el = document.getElementById('exp-log-list');
+  const count = document.getElementById('exp-obs-count');
+  if (expLogs.length === 0) {
+    el.innerHTML = '<div class="log-empty">Nessuna osservazione ancora.<br>Aggiungi note per confrontare i risultati.</div>';
+    if (count) count.textContent = '0';
+    return;
+  }
+  if (count) count.textContent = expLogs.length;
+  el.innerHTML = expLogs.map(l => `<div class="log-entry"><div class="log-date">${l.date}</div>${l.text}</div>`).join('');
+}
+
+// ===================== MANUALI =====================
+const MANUALS = {
+  sistema: {
+    title: '🌱 Manuale Mini-Serra v2',
+    content: `
+      <div class="modal-section">
+        <h3>1. Struttura Generale</h3>
+        <p>Sistema Living Soil semi-autonomo con 10 vasi in tessuto traspirante da 10L (⌀25cm), irrigazione solare automatica e serbatoio da 50L.</p>
+        <div class="modal-note">💧 Sistema Water-Only: grazie al Super Soil il terreno è già fertilizzato per 8 mesi. Non servono fertilizzanti liquidi.</div>
+      </div>
+      <div class="modal-section">
+        <h3>2. Composizione Substrato</h3>
+        <table class="modal-table">
+          <tr><th>Componente</th><th>Quantità</th><th>Funzione</th></tr>
+          <tr><td>BioBizz Light-Mix</td><td>100 L</td><td>Terriccio base</td></tr>
+          <tr><td>Fibra di cocco</td><td>10 L</td><td>Drenaggio e aerazione</td></tr>
+          <tr><td>Super Soil</td><td>dose/100L</td><td>Fertilizzazione lenta</td></tr>
+          <tr><td>BioBizz Worm Humus</td><td>~3 kg</td><td>Microbi benefici</td></tr>
+          <tr><td>Micorrize</td><td>0.5-1g/pianta</td><td>Sviluppo radicale</td></tr>
+        </table>
+      </div>
+      <div class="modal-section">
+        <h3>3. Sistema di Irrigazione</h3>
+        <p>Pompa sommergibile con pannello solare 5-10W. Timer digitale 12V. 1 gocciolatore regolabile per pianta.</p>
+        <div class="modal-warn">⚠️ I bordi dei vasi si seccano facilmente. Bagnare manualmente i bordi ogni 7-10 giorni per evitare zone idrofobiche.</div>
+      </div>
+      <div class="modal-section">
+        <h3>4. Gestione Serbatoio</h3>
+        <ul>
+          <li>Oscurare con sacco nero per bloccare la luce</li>
+          <li>Agitare 10-15 secondi ogni settimana</li>
+          <li>Pietra/rametto per colonizzazione microbica</li>
+          <li>Infuso humus: 5L acqua + 100-150g humus (separato)</li>
+        </ul>
+      </div>`
+  },
+  calendario: {
+    title: '📋 Calendario Colture',
+    content: `
+      <div class="modal-section">
+        <h3>Autofiorenti</h3>
+        <table class="modal-table">
+          <tr><th>Varietà</th><th>Germinaz.</th><th>Fine Fioritura</th><th>Raccolto</th></tr>
+          <tr><td>Epsilon F1 ×7</td><td>21/04/26</td><td>20/06/26</td><td>60 gg dalla germ.</td></tr>
+          <tr><td>Milky Way F1 ×1</td><td>23/04/26</td><td>02/07/26</td><td>70-75 gg</td></tr>
+          <tr><td>Titan F1 ×2</td><td>22/04/26</td><td>01/07/26</td><td>70-75 gg</td></tr>
+          <tr><td>Medusa F1 ×3</td><td>21/04/26</td><td>30/06/26</td><td>70-75 gg</td></tr>
+          <tr><td>Gaia F1 ×8</td><td>21/04/26</td><td>25/06/26</td><td>65-70 gg</td></tr>
+        </table>
+      </div>
+      <div class="modal-section">
+        <h3>Femminizzati</h3>
+        <table class="modal-table">
+          <tr><th>Varietà</th><th>Germinaz.</th><th>Inizio Fior.</th><th>Raccolto</th></tr>
+          <tr><td>Astro Lemonade F1 ×4</td><td>21/04/26</td><td>01/10/26</td><td>Inizio ottobre</td></tr>
+          <tr><td>Cosmic Cheddar F1 ×11</td><td>02/05/26</td><td>01/10/26</td><td>Inizio ottobre</td></tr>
+          <tr><td>Orbital Banana F1 ×6</td><td>30/04/26</td><td>01/10/26</td><td>Inizio ottobre</td></tr>
+          <tr><td>Royal Gorilla ×10</td><td>22/04/26</td><td>15/10/26</td><td>Metà ottobre</td></tr>
+          <tr><td>Mexican Rush ×9</td><td>21/04/26</td><td>15/10/26</td><td>Metà ottobre</td></tr>
+        </table>
+      </div>`
+  },
+  elettro: {
+    title: '⚡ Guida Elettrocultura',
+    content: `
+      <div class="modal-section">
+        <h3>Elettrocultura (Esperimento)</h3>
+        <p>Bastoncino ~40cm (vaso 23cm, uscita min. 10cm sopra la cima) + filo di rame a spirale + punta in rame sopra. Teoria: captare cariche atmosferiche per stimolare la crescita.</p>
+        <div class="modal-warn">⚡ Tecnica storica (XIX sec.) con alcuni studi positivi ma non validata dalla scienza mainstream. Trattare come esperimento osservabile.</div>
+      </div>
+      <div class="modal-section">
+        <h3>Circuito di Lakhovsky</h3>
+        <p>Anello di filo di rame (~50cm) aperto alla base della pianta. Le estremità si sovrappongono per 2-3cm con 1cm di spazio, isolate con tubicino o nastro.</p>
+        <div class="modal-note">🔁 L'apertura è essenziale: il cerchio NON deve essere chiuso. Funziona come antenna di risonanza cellulare.</div>
+      </div>
+      <div class="modal-section">
+        <h3>Pila Galvanica Ferro-Rame</h3>
+        <p>Genera micro-corrente ~0.5-0.7V. Chiodo di ferro vecchio (arrugginito) + filo di rame collegati. Il terreno umido funge da elettrolita.</p>
+        <ul>
+          <li>Chiodo: 5-10cm dal fusto, in profondità</li>
+          <li>Orientamento: chiodo verso Nord, rame verso Sud</li>
+          <li>Attivatore mensile: acqua con melassa sul chiodo</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h3>Sistema Pantacle di Rame</h3>
+        <p>Archi di filo di rame nudo che collegano il terreno di tutti i vasi in serie. Distribuzione uniforme delle cariche tra le 10 piante.</p>
+      </div>`
+  },
+  serbatoio: {
+    title: '💧 Gestione Serbatoio',
+    content: `
+      <div class="modal-section">
+        <h3>Preparazione Serbatoio</h3>
+        <table class="modal-table">
+          <tr><th>Elemento</th><th>Dettaglio</th></tr>
+          <tr><td>Infuso humus</td><td>5L acqua + 100-150g BioBizz Humus (preparare separatamente)</td></tr>
+          <tr><td>Pietra/rametto</td><td>Superficie per colonizzazione microbica</td></tr>
+          <tr><td>Oscuramento</td><td>Sacco nero intorno — blocca luce, meno alghe</td></tr>
+          <tr><td>Ossigenazione</td><td>Agitare 10-15 sec ogni settimana</td></tr>
+          <tr><td>Rinnovo infuso</td><td>1x al mese con infuso ortiche e miscela organica</td></tr>
+        </table>
+      </div>
+      <div class="modal-section">
+        <h3>Acqua Magnetizzata (Esperimento)</h3>
+        <p>Sistema a due componenti:</p>
+        <ul>
+          <li>Magnete principale avvolto attorno al tubo vicino all'inizio linea</li>
+          <li>1 Geomag (~5cm) per ogni gocciolatoio, fissato direttamente</li>
+        </ul>
+        <div class="modal-warn">🧲 POLARITÀ: assicurarsi che l'acqua scorra attraverso il polo Nord del magnete. Non scientificamente dimostrato.</div>
+      </div>`
+  },
+  additivi: {
+    title: '🧪 Additivi Biologici',
+    content: `
+      <div class="modal-section">
+        <h3>Melassa (ogni 15 gg)</h3>
+        <p>Dogma Organics Morganix Molasses — 1ml/L in bottiglia separata. NON nel serbatoio principale. Nutrimento per microbi del suolo.</p>
+      </div>
+      <div class="modal-section">
+        <h3>Miscela Organica (1x al mese)</h3>
+        <p>Gusci d'uovo + Bucce di banana + Fondi di caffè. Tutto essiccato e triturato finemente. 1 cucchiaio grande per vaso sopra il terreno.</p>
+        <div class="modal-note">🍄 Mescolare con un po' di humus prima di spargere per prevenire muffe superficiali.</div>
+      </div>
+      <div class="modal-section">
+        <h3>Infuso di Ortiche (1x al mese)</h3>
+        <ul>
+          <li>100-150g foglie fresche per 1L acqua</li>
+          <li>Macerare 3-7 giorni, mescolare ogni giorno</li>
+          <li>Filtrare, diluire 1:10, somministrare 1-2L/vaso</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h3>Tè di Banana e Cenere (M5-M8, ogni 2 sett.)</h3>
+        <p>3-4 bucce in 1L acqua bollire 15min. Filtrare, aggiungere 1 cucchiaino cenere di legna. Diluire 1:5. Potassio biodisponibile per fioritura.</p>
+      </div>
+      <div class="modal-section">
+        <h3>Generatore di Etilene (M7-M8)</h3>
+        <p>1 mela rossa matura o banana annerita nella serra. Sostituire ogni 3-4 giorni. Scientificamente documentato — sincronizza maturazione.</p>
+      </div>`
+  },
+  rapida: {
+    title: '📅 Scheda Rapida Additivi',
+    content: `
+      <div class="modal-section">
+        <table class="modal-table">
+          <tr><th>Additivo</th><th>Dose</th><th>Cadenza</th><th>Metodo</th></tr>
+          <tr><td>Melassa (Morganix)</td><td>1 ml/L</td><td>1x ogni 15 gg</td><td>Bottiglia separata</td></tr>
+          <tr><td>Miscela organica</td><td>1 cucch. grande/vaso</td><td>1x al mese</td><td>Sopra terreno + irrigare</td></tr>
+          <tr><td>Infuso ortiche</td><td>1-2 L/vaso (dil. 1:10)</td><td>1x al mese</td><td>Filtrare + diluire</td></tr>
+          <tr><td>Tè banana + cenere</td><td>dil. 1:5</td><td>Ogni 2 sett. M5-M8</td><td>Bollire, filtrare, cenere</td></tr>
+          <tr><td>Generatore etilene</td><td>1 frutto maturo</td><td>M7-M8, ogni 3-4 gg</td><td>Nella serra</td></tr>
+          <tr><td>Humus top dressing</td><td>1 cucch./vaso</td><td>Mese 4 (una volta)</td><td>Sulla superficie</td></tr>
+          <tr><td>Rinnovo infuso humus</td><td>5L + 100-150g</td><td>1x al mese</td><td>Infuso separato → tanica</td></tr>
+        </table>
+        <div class="modal-note">💧 La "Giornata Biologica" mensile = ortiche + miscela organica + rinnovo humus, tutto insieme.</div>
+      </div>`
+  }
+};
+
+function openManual(key) {
+  const m = MANUALS[key];
+  document.getElementById('modal-title').textContent = m.title;
+  document.getElementById('modal-body').innerHTML = m.content;
+  document.getElementById('manual-modal').classList.remove('hidden');
+}
+
+function closeManual() {
+  document.getElementById('manual-modal').classList.add('hidden');
+}
+
+// ===================== AI =====================
+const SYSTEM_PROMPT = `Sei BioSerra AI, assistente esperto di mini-serre Living Soil. 
+Stai assistendo un coltivatore che ha:
+- 10 piante: 5 autofiorenti (Epsilon F1 ×7, Milky Way ×1, Titan ×2, Medusa ×3, Gaia ×8) e 5 femminizzate (Astro Lemonade ×4, Cosmic Cheddar ×11, Orbital Banana ×6, Royal Gorilla ×10, Mexican Rush ×9)
+- Ciclo iniziato: 21 aprile 2026
+- Sistema Water-Only con Super Soil, BioBizz Light-Mix, fibra cocco, micorrize
+- Irrigazione automatica solare, serbatoio 50L
+- Esperimenti: elettrocultura, circuito Lakhovsky, pila galvanica, pantacle rame, acqua magnetizzata
+- Additivi: melassa ogni 15gg, miscela organica mensile, infuso ortiche, tè banana+cenere M5-M8
+- Posizione: Caserta CE, Italia
+Rispondi sempre in italiano, in modo conciso e pratico. Dai consigli specifici basati sui dati della serra.`;
+
+let chatHistory = [];
+
+async function sendChat() {
+  const input = document.getElementById('chat-input');
+  const msg = input.value.trim();
+  if (!msg) return;
+  
+  addChatMsg('user', msg);
+  input.value = '';
+  chatHistory.push({ role: 'user', content: msg });
+  
+  const sendBtn = document.getElementById('chat-send-btn');
+  sendBtn.disabled = true;
+  addChatMsg('bot', '⏳ Pensando…', 'thinking');
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 1000,
+        system: SYSTEM_PROMPT,
+        messages: chatHistory.slice(-10)
+      })
+    });
+    const data = await res.json();
+    const reply = data.content?.[0]?.text || 'Errore nella risposta.';
+    
+    // Remove thinking bubble
+    const thinking = document.querySelector('#chat-messages .thinking');
+    if (thinking) thinking.parentElement.remove();
+    
+    chatHistory.push({ role: 'assistant', content: reply });
+    addChatMsg('bot', reply);
+  } catch(e) {
+    const thinking = document.querySelector('#chat-messages .thinking');
+    if (thinking) thinking.parentElement.remove();
+    addChatMsg('bot', '❌ Errore di connessione. Controlla la rete.');
+  }
+  
+  sendBtn.disabled = false;
+}
+
+function addChatMsg(role, text, cls) {
+  const messages = document.getElementById('chat-messages');
+  const div = document.createElement('div');
+  div.className = 'chat-msg ' + role;
+  div.innerHTML = `<div class="msg-bubble ${cls||''}">${text}</div>`;
+  messages.appendChild(div);
+  messages.scrollTop = messages.scrollHeight;
+}
+
+function aiChip(text) {
+  document.getElementById('chat-input').value = text;
+  sendChat();
+}
+
+// ===================== INIT =====================
+updateExpUI();
+renderLogs();
+renderLunarSection();
+renderBio();
+
+// Carica meteo subito
+loadWeather();
+</script>
+</body>
+</html>
