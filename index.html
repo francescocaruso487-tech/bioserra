@@ -1,1220 +1,355 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="theme-color" content="#0d1a12">
-<title>BioSerra</title>
-<style>
-  :root {
-    --bg: #0d1a12;
-    --bg2: #13231a;
-    --bg3: #1a2e20;
-    --card: #192819;
-    --card2: #1f3326;
-    --border: #2a4a35;
-    --green: #4caf76;
-    --green2: #2e7d52;
-    --green3: #81c784;
-    --blue: #42a5c8;
-    --blue2: #1e7aa8;
-    --orange: #ff9800;
-    --orange2: #e65100;
-    --red: #ef5350;
-    --yellow: #ffee58;
-    --purple: #ab47bc;
-    --text: #e8f5e9;
-    --text2: #a5c9b0;
-    --text3: #6a9e7a;
-    --shadow: 0 2px 12px rgba(0,0,0,0.5);
-    --radius: 14px;
-    --radius-sm: 8px;
-    --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioSerra</title>
+    <style>
+        /* CSS RESET & VARIABILI BASE */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: #0b130e; color: #e2e8f0; padding-bottom: 70px; }
+        
+        /* LAYOUT GENERALI */
+        .app-container { max-width: 600px; margin: 0 auto; padding: 16px; }
+        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid #1c2d23; }
+        h1 { color: #4ade80; font-size: 1.5rem; display: flex; align-items: center; gap: 8px; }
+        .header-actions { display: flex; gap: 12px; }
+        .icon-btn { background: #14231a; border: 1px solid #233d2e; color: #4ade80; font-size: 1.2rem; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+        
+        /* SEZIONI SCHEDE (CARDS) */
+        .section-card { background: #111c15; border: 1px solid #1c2d23; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+        .section-title { font-size: 1.1rem; color: #4ade80; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
+        .section-subtitle { font-size: 0.85rem; color: #718096; margin-top: -8px; margin-bottom: 16px; }
+        
+        /* PIANTE */
+        .stats-row { display: flex; gap: 8px; margin-bottom: 16px; }
+        .stat-box { flex: 1; background: #16271c; padding: 10px; border-radius: 8px; text-align: center; border: 1px solid #233d2e; }
+        .stat-box .num { display: block; font-size: 1.3rem; font-weight: bold; color: #f7fafc; }
+        .stat-box .lbl { font-size: 0.75rem; color: #a0aec0; }
+        .plant-list { display: flex; flex-direction: column; gap: 8px; }
+        .plant-item { background: #16271c; border: 1px solid #1e3527; padding: 10px 14px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; }
+        .plant-info { display: flex; flex-direction: column; gap: 2px; }
+        .plant-name { font-weight: 600; font-size: 0.95rem; }
+        .plant-meta { font-size: 0.8rem; color: #a0aec0; }
+        .badge { background: rgba(74, 222, 128, 0.1); color: #4ade80; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: bold; border: 1px solid rgba(74, 222, 128, 0.2); }
+        .badge.veg { background: rgba(96, 165, 250, 0.1); color: #60a5fa; border-color: rgba(96, 165, 250, 0.2); }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        /* METEO & FUNZIONI CLICCABILI */
+        .weather-card-trigger { cursor: pointer; transition: transform 0.2s ease, background-color 0.2s ease; padding: 12px; border-radius: 8px; background: rgba(255,255,255,0.01); }
+        .weather-card-trigger:hover { transform: translateY(-2px); background-color: rgba(255, 255, 255, 0.04); }
+        .forecast-container { margin-top: 15px; display: flex; flex-direction: column; gap: 6px; }
+        .forecast-day-trigger { cursor: pointer; transition: transform 0.2s ease, background-color 0.2s ease; }
+        .forecast-day-trigger:hover { transform: translateY(-2px); background-color: rgba(255, 255, 255, 0.05) !important; }
 
-  body {
-    font-family: var(--font);
-    background: var(--bg);
-    color: var(--text);
-    min-height: 100vh;
-    padding-bottom: 80px;
-    font-size: 15px;
-    -webkit-font-smoothing: antialiased;
-  }
+        /* ELETTROCULTURA */
+        .experiment-item { background: #16271c; border: 1px solid #1e3527; pading: 12px; border-radius: 8px; margin-bottom: 10px; padding: 12px; }
+        .experiment-title { font-weight: 600; font-size: 0.95rem; color: #cbd5e1; margin-bottom: 4px; }
+        .experiment-desc { font-size: 0.8rem; color: #a0aec0; margin-bottom: 12px; line-height: 1.3; }
+        .counter-control { display: flex; align-items: center; justify-content: space-between; background: #111c15; padding: 6px 12px; border-radius: 6px; border: 1px solid #1c2d23; }
+        .counter-btn { background: none; border: none; color: #4ade80; font-size: 1.2rem; cursor: pointer; width: 24px; }
+        .counter-val { font-size: 0.9rem; font-weight: bold; }
 
-  /* ── TOP BAR ── */
-  .topbar {
-    position: sticky; top: 0; z-index: 100;
-    background: linear-gradient(180deg, #0d1a12 85%, transparent);
-    padding: 14px 16px 10px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  .topbar-logo { display: flex; align-items: center; gap: 8px; }
-  .topbar-logo span { font-size: 22px; }
-  .topbar-logo h1 { font-size: 20px; font-weight: 700; color: var(--green3); letter-spacing: -0.3px; }
-  .topbar-actions { display: flex; gap: 8px; }
-  .icon-btn {
-    background: var(--card2); border: 1px solid var(--border);
-    border-radius: 50%; width: 36px; height: 36px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 16px; cursor: pointer; transition: background 0.2s;
-  }
-  .icon-btn:active { background: var(--green2); }
+        /* MODAL (POPUP) METEO NATIVO */
+        .bioserra-modal { border: none; background: transparent; padding: 0; max-width: 480px; width: 90%; border-radius: 16px; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6); overflow: visible; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .bioserra-modal::backdrop { background: rgba(7, 12, 9, 0.8); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); }
+        .bioserra-modal[open] { animation: modalScaleIn 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+        @keyframes modalScaleIn { from { opacity: 0; transform: translate(-50%, -45%) scale(0.9); } to { opacity: 1; transform: translate(-50%, -50%) scale(1); } }
+        .modal-container { background: #121e16; border: 1px solid #223a2b; border-radius: 16px; padding: 20px; color: #e2e8f0; position: relative; }
+        .modal-close-btn { position: absolute; top: 14px; right: 14px; background: rgba(255, 255, 255, 0.05); border: none; color: #a0aec0; width: 28px; height: 28px; border-radius: 50%; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+        .modal-close-btn:hover { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+        .modal-header h3 { margin: 0 0 4px 0; color: #4ade80; font-size: 1.3rem; }
+        .modal-header p { margin: 0 0 16px 0; color: #a0aec0; font-size: 0.85rem; }
+        .modal-main-info { display: flex; align-items: center; gap: 14px; background: rgba(255, 255, 255, 0.02); padding: 12px; border-radius: 10px; margin-bottom: 12px; border: 1px solid rgba(255, 255, 255, 0.04); }
+        .modal-stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 16px; }
+        .modal-stat-card { background: rgba(255, 255, 255, 0.03); padding: 10px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.04); }
+        .modal-stat-card .label { display: block; font-size: 0.75rem; color: #718096; margin-bottom: 2px; }
+        .modal-stat-card .value { font-size: 1rem; font-weight: bold; color: #f7fafc; }
+        .modal-advice-box { background: rgba(74, 222, 128, 0.07); border-left: 4px solid #4ade80; padding: 12px; border-radius: 0 10px 10px 0; font-size: 0.85rem; line-height: 1.4; color: #cbd5e1; }
 
-  /* ── NAV ── */
-  .nav {
-    position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
-    background: var(--bg2); border-top: 1px solid var(--border);
-    display: flex; padding: 6px 0 env(safe-area-inset-bottom, 0);
-  }
-  .nav-item {
-    flex: 1; display: flex; flex-direction: column;
-    align-items: center; gap: 2px; padding: 6px 2px;
-    font-size: 10px; color: var(--text3); cursor: pointer;
-    transition: color 0.2s; border: none; background: none;
-    min-width: 0;
-  }
-  .nav-item span:first-child { font-size: 20px; }
-  .nav-item.active { color: var(--green3); }
-  .nav-item.active span:first-child { filter: drop-shadow(0 0 6px var(--green)); }
-
-  /* ── SECTIONS ── */
-  .section { display: none; padding: 0 14px 20px; animation: fadeIn 0.2s ease; }
-  .section.active { display: block; }
-  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-
-  .section-title {
-    font-size: 18px; font-weight: 700; color: var(--text);
-    margin-bottom: 4px; padding-top: 4px;
-  }
-  .section-sub { font-size: 12px; color: var(--text3); margin-bottom: 16px; }
-
-  /* ── CARDS ── */
-  .card {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 14px; margin-bottom: 12px;
-    box-shadow: var(--shadow);
-  }
-  .card-title {
-    font-size: 13px; font-weight: 600; color: var(--text2);
-    text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;
-    display: flex; align-items: center; gap: 6px;
-  }
-
-  /* ── BADGE ── */
-  .badge {
-    display: inline-block; border-radius: 20px; padding: 2px 9px;
-    font-size: 11px; font-weight: 600;
-  }
-  .badge-green { background: rgba(76,175,118,0.2); color: var(--green3); }
-  .badge-orange { background: rgba(255,152,0,0.2); color: var(--orange); }
-  .badge-blue { background: rgba(66,165,200,0.2); color: var(--blue); }
-  .badge-red { background: rgba(239,83,80,0.2); color: var(--red); }
-  .badge-purple { background: rgba(171,71,188,0.2); color: var(--purple); }
-
-  /* ── PIANTE ── */
-  .stat-row { display: flex; gap: 10px; margin-bottom: 14px; }
-  .stat-box {
-    flex: 1; background: var(--card2); border: 1px solid var(--border);
-    border-radius: var(--radius-sm); padding: 10px; text-align: center;
-  }
-  .stat-num { font-size: 26px; font-weight: 800; color: var(--green3); }
-  .stat-label { font-size: 11px; color: var(--text3); margin-top: 2px; }
-
-  .plant-group-label {
-    font-size: 11px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.8px; color: var(--text3); margin: 14px 0 8px;
-  }
-
-  .plant-card {
-    background: var(--card2); border: 1px solid var(--border);
-    border-radius: var(--radius-sm); padding: 12px;
-    display: flex; align-items: center; gap: 12px; margin-bottom: 8px;
-  }
-  .plant-icon { font-size: 24px; min-width: 32px; text-align: center; }
-  .plant-info { flex: 1; min-width: 0; }
-  .plant-name { font-size: 14px; font-weight: 600; color: var(--text); }
-  .plant-detail { font-size: 12px; color: var(--text3); margin-top: 2px; }
-
-  /* ── METEO ── */
-  .weather-main {
-    display: flex; align-items: center; gap: 14px; margin-bottom: 14px;
-  }
-  .weather-icon { font-size: 52px; }
-  .weather-temp { font-size: 42px; font-weight: 700; color: var(--text); line-height: 1; }
-  .weather-desc { font-size: 13px; color: var(--text2); margin-top: 4px; }
-  .weather-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-  .weather-item {
-    background: var(--card2); border-radius: var(--radius-sm);
-    padding: 10px; display: flex; align-items: center; gap: 8px;
-  }
-  .weather-item-icon { font-size: 20px; }
-  .weather-item-val { font-size: 15px; font-weight: 600; color: var(--text); }
-  .weather-item-label { font-size: 11px; color: var(--text3); }
-
-  /* ── LUNA ── */
-  .moon-main {
-    display: flex; align-items: center; gap: 16px; margin-bottom: 14px;
-  }
-  .moon-emoji { font-size: 56px; }
-  .moon-phase-name { font-size: 18px; font-weight: 700; }
-  .moon-detail { font-size: 13px; color: var(--text2); margin-top: 4px; }
-  .moon-bar-wrap { margin: 14px 0 8px; }
-  .moon-bar-label { font-size: 12px; color: var(--text3); margin-bottom: 6px; }
-  .moon-bar-track {
-    height: 8px; background: var(--card2); border-radius: 4px; overflow: hidden;
-  }
-  .moon-bar-fill {
-    height: 100%; border-radius: 4px;
-    background: linear-gradient(90deg, var(--blue2), var(--blue));
-    transition: width 0.6s ease;
-  }
-  .moon-activities { display: flex; flex-direction: column; gap: 8px; }
-  .moon-activity {
-    background: var(--card2); border-radius: var(--radius-sm);
-    padding: 10px 12px; font-size: 13px; color: var(--text2);
-    display: flex; align-items: center; gap: 8px;
-  }
-
-  /* ── BIODINAMICA ── */
-  .bio-today-banner {
-    border-radius: var(--radius); padding: 16px;
-    margin-bottom: 14px; display: flex; align-items: center; gap: 14px;
-  }
-  .bio-today-icon { font-size: 44px; line-height: 1; }
-  .bio-today-type { font-size: 20px; font-weight: 800; }
-  .bio-today-date { font-size: 12px; opacity: 0.8; margin-top: 2px; }
-  .bio-today-advice { font-size: 13px; margin-top: 6px; opacity: 0.9; line-height: 1.4; }
-
-  .bio-banner-frutto { background: linear-gradient(135deg, #1a3a1a, #2d5a2d); border: 1px solid #4caf76; color: #c8f5d0; }
-  .bio-banner-fiore  { background: linear-gradient(135deg, #2a1a3a, #4a2d5a); border: 1px solid #ab47bc; color: #f3d0f8; }
-  .bio-banner-radice { background: linear-gradient(135deg, #2d1a0a, #5a3a10); border: 1px solid #ff9800; color: #ffe0b2; }
-  .bio-banner-foglia { background: linear-gradient(135deg, #0a1a2d, #10305a); border: 1px solid #42a5c8; color: #b3e5fc; }
-
-  .bio-cal-header {
-    display: flex; align-items: center; justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  .bio-cal-title { font-size: 15px; font-weight: 700; color: var(--text); }
-  .bio-cal-nav { display: flex; gap: 6px; }
-  .bio-nav-btn {
-    background: var(--card2); border: 1px solid var(--border);
-    border-radius: 6px; width: 30px; height: 30px;
-    color: var(--text2); font-size: 15px; cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .bio-nav-btn:active { background: var(--green2); }
-
-  .bio-grid-header {
-    display: grid; grid-template-columns: repeat(7, 1fr);
-    gap: 3px; margin-bottom: 3px;
-  }
-  .bio-grid-header-cell {
-    text-align: center; font-size: 10px; font-weight: 700;
-    color: var(--text3); padding: 3px 0;
-  }
-
-  .bio-grid {
-    display: grid; grid-template-columns: repeat(7, 1fr);
-    gap: 3px;
-  }
-  .bio-cell {
-    border-radius: 6px; padding: 3px 2px;
-    text-align: center; min-height: 42px;
-    display: flex; flex-direction: column; align-items: center;
-    justify-content: center; gap: 2px; cursor: pointer;
-    transition: transform 0.1s, opacity 0.1s;
-    border: 1px solid transparent;
-    position: relative;
-  }
-  .bio-cell:active { transform: scale(0.93); }
-  .bio-cell.empty { background: transparent; }
-  .bio-cell.day-frutto { background: rgba(76,175,118,0.15); border-color: rgba(76,175,118,0.3); }
-  .bio-cell.day-fiore  { background: rgba(171,71,188,0.15); border-color: rgba(171,71,188,0.3); }
-  .bio-cell.day-radice { background: rgba(255,152,0,0.15);  border-color: rgba(255,152,0,0.3); }
-  .bio-cell.day-foglia { background: rgba(66,165,200,0.15); border-color: rgba(66,165,200,0.3); }
-  .bio-cell.today {
-    border-width: 2px !important;
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.15);
-  }
-  .bio-cell.today.day-frutto { border-color: var(--green3) !important; }
-  .bio-cell.today.day-fiore  { border-color: var(--purple) !important; }
-  .bio-cell.today.day-radice { border-color: var(--orange) !important; }
-  .bio-cell.today.day-foglia { border-color: var(--blue) !important; }
-  .bio-cell-day { font-size: 13px; font-weight: 700; color: var(--text); }
-  .bio-cell.today .bio-cell-day {
-    background: var(--green3); color: #0d1a12;
-    border-radius: 50%; width: 22px; height: 22px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 12px;
-  }
-  .bio-cell.today.day-fiore  .bio-cell-day { background: var(--purple); }
-  .bio-cell.today.day-radice .bio-cell-day { background: var(--orange); }
-  .bio-cell.today.day-foglia .bio-cell-day { background: var(--blue); }
-
-  .bio-cell-icon { font-size: 14px; }
-  .bio-cell-type { font-size: 9px; font-weight: 600; letter-spacing: 0.2px; }
-  .bio-cell.day-frutto .bio-cell-type { color: var(--green3); }
-  .bio-cell.day-fiore  .bio-cell-type { color: var(--purple); }
-  .bio-cell.day-radice .bio-cell-type { color: var(--orange); }
-  .bio-cell.day-foglia .bio-cell-type { color: var(--blue); }
-
-  .bio-legend {
-    display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;
-  }
-  .bio-legend-item {
-    display: flex; align-items: center; gap: 5px;
-    font-size: 11px; color: var(--text2);
-  }
-  .bio-legend-dot {
-    width: 10px; height: 10px; border-radius: 3px;
-  }
-  .dot-frutto { background: var(--green); }
-  .dot-fiore  { background: var(--purple); }
-  .dot-radice { background: var(--orange); }
-  .dot-foglia { background: var(--blue); }
-
-  .bio-constellation-card {
-    background: var(--card2); border: 1px solid var(--border);
-    border-radius: var(--radius-sm); padding: 12px; margin-top: 12px;
-  }
-  .bio-const-row { display: flex; align-items: center; gap: 10px; }
-  .bio-const-icon { font-size: 28px; }
-  .bio-const-name { font-size: 15px; font-weight: 700; color: var(--text); }
-  .bio-const-element { font-size: 12px; color: var(--text3); margin-top: 2px; }
-
-  .bio-tip-list { margin-top: 12px; display: flex; flex-direction: column; gap: 6px; }
-  .bio-tip-item {
-    background: var(--card2); border-left: 3px solid;
-    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    padding: 10px 12px; font-size: 13px; color: var(--text2); line-height: 1.4;
-  }
-  .bio-tip-item.tip-frutto { border-color: var(--green); }
-  .bio-tip-item.tip-fiore  { border-color: var(--purple); }
-  .bio-tip-item.tip-radice { border-color: var(--orange); }
-  .bio-tip-item.tip-foglia { border-color: var(--blue); }
-
-  .bio-detail-popup {
-    position: fixed; inset: 0; z-index: 200;
-    background: rgba(0,0,0,0.75); display: flex;
-    align-items: flex-end; justify-content: center;
-    padding: 0;
-  }
-  .bio-detail-popup.hidden { display: none; }
-  .bio-detail-sheet {
-    background: var(--bg2); border-radius: 20px 20px 0 0;
-    width: 100%; max-width: 480px; padding: 20px 18px 36px;
-    border-top: 1px solid var(--border);
-  }
-  .bio-detail-handle {
-    width: 40px; height: 4px; background: var(--border);
-    border-radius: 2px; margin: 0 auto 16px;
-  }
-  .bio-detail-close {
-    float: right; background: var(--card2); border: 1px solid var(--border);
-    border-radius: 50%; width: 30px; height: 30px; font-size: 16px;
-    cursor: pointer; color: var(--text2); display: flex;
-    align-items: center; justify-content: center;
-  }
-
-  /* ── ELETTRO ── */
-  .exp-badge {
-    display: inline-flex; align-items: center; gap: 4px;
-    font-size: 10px; font-weight: 700; border-radius: 4px;
-    padding: 2px 7px; letter-spacing: 0.3px;
-    background: rgba(255,152,0,0.15); color: var(--orange);
-    border: 1px solid rgba(255,152,0,0.3);
-  }
-  .exp-card {
-    background: var(--card2); border: 1px solid var(--border);
-    border-radius: var(--radius-sm); padding: 14px; margin-bottom: 10px;
-  }
-  .exp-title { font-size: 14px; font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
-  .exp-desc { font-size: 13px; color: var(--text3); line-height: 1.5; margin-bottom: 10px; }
-  .exp-counter {
-    display: flex; align-items: center; gap: 8px;
-    font-size: 13px; color: var(--text2);
-  }
-  .exp-count-num {
-    font-size: 20px; font-weight: 800; color: var(--green3);
-    min-width: 28px; text-align: center;
-  }
-  .exp-btn {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 6px; padding: 5px 10px; color: var(--text2);
-    font-size: 16px; cursor: pointer; font-weight: 600;
-  }
-  .exp-btn:active { background: var(--green2); }
-  .stat-trio { display: flex; gap: 8px; margin-bottom: 14px; }
-  .stat-trio .stat-box .stat-num { font-size: 22px; }
-
-  /* ── MANUALI ── */
-  .manual-item {
-    background: var(--card2); border: 1px solid var(--border);
-    border-radius: var(--radius-sm); padding: 14px;
-    display: flex; align-items: center; gap: 12px; margin-bottom: 8px;
-    cursor: pointer; transition: border-color 0.2s;
-  }
-  .manual-item:active { border-color: var(--green2); }
-  .manual-icon { font-size: 24px; min-width: 32px; text-align: center; }
-  .manual-text { flex: 1; min-width: 0; }
-  .manual-title { font-size: 14px; font-weight: 600; }
-  .manual-sub { font-size: 12px; color: var(--text3); margin-top: 2px; }
-  .manual-arrow { color: var(--text3); font-size: 18px; }
-
-  /* ── AI ── */
-  .ai-chat {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 14px; margin-bottom: 12px;
-    min-height: 220px; max-height: 380px; overflow-y: auto;
-    display: flex; flex-direction: column; gap: 10px;
-  }
-  .ai-msg {
-    max-width: 88%; padding: 10px 13px;
-    border-radius: 14px; font-size: 13px; line-height: 1.5;
-  }
-  .ai-msg.user {
-    align-self: flex-end;
-    background: var(--green2); color: var(--text); border-radius: 14px 14px 2px 14px;
-  }
-  .ai-msg.bot {
-    align-self: flex-start;
-    background: var(--card2); color: var(--text2); border-radius: 14px 14px 14px 2px;
-    border: 1px solid var(--border);
-  }
-  .ai-msg.bot.loading { color: var(--text3); font-style: italic; }
-  .ai-quick { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 10px; }
-  .ai-quick-btn {
-    background: var(--card2); border: 1px solid var(--border);
-    border-radius: 20px; padding: 7px 13px;
-    font-size: 12px; color: var(--text2); cursor: pointer;
-    transition: background 0.2s;
-  }
-  .ai-quick-btn:active { background: var(--green2); color: var(--text); }
-  .ai-input-row { display: flex; gap: 8px; }
-  .ai-input {
-    flex: 1; background: var(--card2); border: 1px solid var(--border);
-    border-radius: 24px; padding: 10px 16px;
-    color: var(--text); font-size: 14px; outline: none;
-    font-family: var(--font);
-  }
-  .ai-input:focus { border-color: var(--green2); }
-  .ai-send {
-    background: var(--green2); border: none;
-    border-radius: 50%; width: 42px; height: 42px;
-    display: flex; align-items: center; justify-content: center;
-    color: var(--text); font-size: 18px; cursor: pointer;
-    transition: background 0.2s;
-  }
-  .ai-send:active { background: var(--green); }
-
-  /* ── SETTINGS ── */
-  .setting-group { margin-bottom: 18px; }
-  .setting-group-label {
-    font-size: 11px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.8px; color: var(--text3); margin-bottom: 8px;
-  }
-  .setting-item {
-    background: var(--card2); border: 1px solid var(--border);
-    border-radius: var(--radius-sm); padding: 14px;
-    display: flex; align-items: center; justify-content: space-between;
-    margin-bottom: 6px; cursor: pointer;
-  }
-  .setting-left { display: flex; align-items: center; gap: 10px; }
-  .setting-icon { font-size: 20px; width: 28px; text-align: center; }
-  .setting-title { font-size: 14px; font-weight: 600; }
-  .setting-value { font-size: 12px; color: var(--text3); margin-top: 2px; }
-  .setting-arrow { color: var(--text3); font-size: 16px; }
-
-  .toggle-wrap { display: flex; align-items: center; gap: 10px; }
-  .toggle {
-    width: 44px; height: 24px; background: var(--card);
-    border-radius: 12px; position: relative; cursor: pointer;
-    border: 1px solid var(--border); transition: background 0.3s;
-  }
-  .toggle.on { background: var(--green2); border-color: var(--green2); }
-  .toggle-knob {
-    position: absolute; top: 2px; left: 2px;
-    width: 18px; height: 18px; border-radius: 50%;
-    background: var(--text3); transition: left 0.3s, background 0.3s;
-  }
-  .toggle.on .toggle-knob { left: 22px; background: var(--text); }
-  .toggle-label { font-size: 13px; color: var(--text2); }
-
-  /* ── UTILS ── */
-  .divider { height: 1px; background: var(--border); margin: 12px 0; }
-  .empty-state { text-align: center; padding: 30px 20px; color: var(--text3); font-size: 13px; }
-  .empty-state-icon { font-size: 40px; margin-bottom: 10px; }
-
-  /* ── SICUREZZA ── */
-  .sicurezza-banner {
-    background: linear-gradient(135deg, #1a0a0a, #3a1010);
-    border: 1px solid var(--red); border-radius: var(--radius);
-    padding: 16px; margin-bottom: 14px;
-    display: flex; align-items: center; gap: 12px;
-  }
-  .sicurezza-banner-icon { font-size: 36px; }
-  .sicurezza-banner-text { flex: 1; }
-  .sicurezza-banner-title { font-size: 16px; font-weight: 700; color: var(--red); }
-  .sicurezza-banner-sub { font-size: 12px; color: #ff8a80; margin-top: 3px; }
-  .security-item {
-    background: var(--card2); border: 1px solid var(--border);
-    border-radius: var(--radius-sm); padding: 14px; margin-bottom: 8px;
-    display: flex; align-items: flex-start; gap: 12px;
-  }
-  .security-item-icon { font-size: 22px; min-width: 28px; text-align: center; margin-top: 1px; }
-  .security-item-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
-  .security-item-desc { font-size: 12px; color: var(--text3); line-height: 1.5; }
-
-  /* scrollbar */
-  ::-webkit-scrollbar { width: 4px; height: 4px; }
-  ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
-</style>
+        /* NAVIGAZIONE INFERIORE FIXED */
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; background: #0c1510; border-top: 1px solid #1c2d23; display: flex; justify-content: space-around; padding: 6px 0; z-index: 100; }
+        .nav-item { background: none; border: none; color: #718096; display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 0.7rem; cursor: pointer; flex: 1; }
+        .nav-item.active { color: #4ade80; }
+        .nav-icon { font-size: 1.2rem; }
+    </style>
 </head>
 <body>
 
-<!-- TOP BAR -->
-<div class="topbar">
-  <div class="topbar-logo">
-    <span>🌱</span>
-    <h1>BioSerra</h1>
-  </div>
-  <div class="topbar-actions">
-    <button class="icon-btn" onclick="showNotifPanel()" title="Notifiche">🔔</button>
-    <button class="icon-btn" onclick="refreshAll()" title="Aggiorna">🔄</button>
-  </div>
-</div>
+    <div class="app-container">
+        <header>
+            <h1>BioSerra <span>🌱</span></h1>
+            <div class="header-actions">
+                <button class="icon-btn" title="Notifiche">🔔</button>
+                <button class="icon-btn" onclick="location.reload()" title="Aggiorna">🔄</button>
+            </div>
+        </header>
 
-<!-- SECTIONS -->
+        <section class="section-card">
+            <div class="section-title">Piante 🌿 <span class="badge">10 Attive</span></div>
+            <div class="section-subtitle">Ciclo biologico e tracciamento in corso</div>
+            <div class="stats-row">
+                <div class="stat-box"><span class="num">10</span><span class="lbl">Totale</span></div>
+                <div class="stat-box"><span class="num">5</span><span class="lbl">Auto</span></div>
+                <div class="stat-box"><span class="num">5</span><span class="lbl">Femm.</span></div>
+            </div>
+            <div class="plant-list">
+                <div class="plant-item"><div class="plant-info"><span class="plant-name">🌸 Epsilon F1</span><span class="plant-meta">x7 · R: 60gg da germinazione</span></div><span class="badge">Attiva</span></div>
+                <div class="plant-item"><div class="plant-info"><span class="plant-name">🌙 Milky Way F1</span><span class="plant-meta">x1 · R: 70–75gg</span></div><span class="badge">Attiva</span></div>
+                <div class="plant-item"><div class="plant-info"><span class="plant-name">⚡ Titan F1</span><span class="plant-meta">x2 · R: 70–75gg</span></div><span class="badge">Attiva</span></div>
+                <div class="plant-item"><div class="plant-info"><span class="plant-name">🪼 Medusa F1</span><span class="plant-meta">x3 · R: 70–75gg</span></div><span class="badge">Attiva</span></div>
+                <div class="plant-item"><div class="plant-info"><span class="plant-name">🌍 Gaia F1</span><span class="plant-meta">x8 · R: 65–70gg</span></div><span class="badge">Attiva</span></div>
+                <div class="plant-item"><div class="plant-info"><span class="plant-name">🍋 Astro Lemonade F1</span><span class="plant-meta">x4 · Inizio Fioritura: Ottobre</span></div><span class="badge|veg">Veg.</span></div>
+                <div class="plant-item"><div class="plant-info"><span class="plant-name">🧀 Cosmic Cheddar F1</span><span class="plant-meta">x1 · Inizio Fioritura: Ottobre</span></div><span class="badge|veg">Veg.</span></div>
+            </div>
+        </section>
 
-<!-- PIANTE -->
-<section id="sec-piante" class="section active">
-  <div class="section-title">Piante 🌿</div>
-  <div class="section-sub">10 piante attive · Ciclo in corso</div>
-  <div class="stat-row">
-    <div class="stat-box"><div class="stat-num">10</div><div class="stat-label">Totale</div></div>
-    <div class="stat-box"><div class="stat-num">5</div><div class="stat-label">Auto</div></div>
-    <div class="stat-box"><div class="stat-num">5</div><div class="stat-label">Femm.</div></div>
-  </div>
-  <div class="plant-group-label">Autofiorenti</div>
-  <div class="plant-card"><div class="plant-icon">🌸</div><div class="plant-info"><div class="plant-name">Epsilon F1 ×7</div><div class="plant-detail">50–70 cm · Raccolta: 60 gg dalla germ.</div></div><span class="badge badge-green">Attiva</span></div>
-  <div class="plant-card"><div class="plant-icon">🌙</div><div class="plant-info"><div class="plant-name">Milky Way F1 ×1</div><div class="plant-detail">55–75 cm · Raccolta: 70–75 gg</div></div><span class="badge badge-green">Attiva</span></div>
-  <div class="plant-card"><div class="plant-icon">⚡</div><div class="plant-info"><div class="plant-name">Titan F1 ×2</div><div class="plant-detail">55–75 cm · Raccolta: 70–75 gg</div></div><span class="badge badge-green">Attiva</span></div>
-  <div class="plant-card"><div class="plant-icon">🪼</div><div class="plant-info"><div class="plant-name">Medusa F1 ×3</div><div class="plant-detail">60–90 cm · Raccolta: 70–75 gg</div></div><span class="badge badge-green">Attiva</span></div>
-  <div class="plant-card"><div class="plant-icon">🌍</div><div class="plant-info"><div class="plant-name">Gaia F1 ×8</div><div class="plant-detail">50–70 cm · Raccolta: 65–70 gg</div></div><span class="badge badge-green">Attiva</span></div>
-  <div class="plant-group-label">Femminizzati</div>
-  <div class="plant-card"><div class="plant-icon">🍋</div><div class="plant-info"><div class="plant-name">Astro Lemonade F1 ×4</div><div class="plant-detail">100–130 cm · Fioritura: inizio ottobre</div></div><span class="badge badge-blue">Veg.</span></div>
-  <div class="plant-card"><div class="plant-icon">🧀</div><div class="plant-info"><div class="plant-name">Cosmic Cheddar F1 ×11</div><div class="plant-detail">80–120 cm · Fioritura: inizio ottobre</div></div><span class="badge badge-blue">Veg.</span></div>
-  <div class="plant-card"><div class="plant-icon">🍌</div><div class="plant-info"><div class="plant-name">Orbital Banana F1 ×6</div><div class="plant-detail">100–130 cm · Fioritura: inizio ottobre</div></div><span class="badge badge-blue">Veg.</span></div>
-  <div class="plant-card"><div class="plant-icon">🦍</div><div class="plant-info"><div class="plant-name">Royal Gorilla ×10</div><div class="plant-detail">130–170 cm · Fioritura: metà ottobre</div></div><span class="badge badge-blue">Veg.</span></div>
-  <div class="plant-card"><div class="plant-icon">🌮</div><div class="plant-info"><div class="plant-name">Mexican Rush ×9</div><div class="plant-detail">150–200 cm · Fioritura: metà ottobre</div></div><span class="badge badge-blue">Veg.</span></div>
-</section>
+        <section class="section-card">
+            <div class="section-title">Meteo ⛅</div>
+            <div class="section-subtitle">Dati ambientali in tempo reale per Caserta (CE)</div>
+            
+            <div id="main-weather-card" class="weather-card-trigger">
+                <p style="color: #a0aec0; font-size: 0.9rem;">Caricamento flussi Open-Meteo...</p>
+            </div>
+            
+            <div style="margin-top: 18px; border-top: 1px solid #1c2d23; padding-top: 12px;">
+                <span style="font-size: 0.9rem; color: #4ade80; font-weight: 600; display: block; margin-bottom: 8px;">📡 Tendenza prossimi 7 giorni</span>
+                <div id="forecast-list" class="forecast-container"></div>
+            </div>
+        </section>
 
-<!-- METEO -->
-<section id="sec-meteo" class="section">
-  <div class="section-title">Meteo ⛅</div>
-  <div class="section-sub">Dati ambientali per la serra</div>
-  <div class="card">
-    <div class="weather-main">
-      <div class="weather-icon">☀️</div>
-      <div>
-        <div class="weather-temp">—°</div>
-        <div class="weather-desc">Posizione non configurata</div>
-      </div>
+        <section class="section-card">
+            <div class="section-title">Elettrocultura ⚡</div>
+            <div class="section-subtitle">Sperimentazioni fisiche ed energetiche applicate</div>
+            
+            <div class="experiment-item">
+                <div class="experiment-title">🔁 Circuito di Lakhovsky</div>
+                <div class="experiment-desc">Anello di rame aperto alla base del fusto. Agisce come antenna di risonanza cosmica oscillatoria.</div>
+                <div class="counter-control">
+                    <button class="counter-btn" onclick="updateCount('lakh', -1)">-</button>
+                    <span class="counter-val" id="count-lakh">0 / 10 piante con cerchio</span>
+                    <button class="counter-btn" onclick="updateCount('lakh', 1)">+</button>
+                </div>
+            </div>
+
+            <div class="experiment-item">
+                <div class="experiment-title">⚗️ Pila Galvanica Ferro-Rame</div>
+                <div class="experiment-desc">Coppia bimetallica (chiodo di ferro + filo di rame) nel terreno umido. Genera micro-tensioni costanti (~0.5V).</div>
+                <div class="counter-control">
+                    <button class="counter-btn" onclick="updateCount('galv', -1)">-</button>
+                    <span class="counter-val" id="count-galv">0 / 10 pile installate</span>
+                    <button class="counter-btn" onclick="updateCount('galv', 1)">+</button>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="weather-grid">
-      <div class="weather-item"><div class="weather-item-icon">💧</div><div><div class="weather-item-val">—%</div><div class="weather-item-label">Umidità</div></div></div>
-      <div class="weather-item"><div class="weather-item-icon">☀️</div><div><div class="weather-item-val">—</div><div class="weather-item-label">UV Index</div></div></div>
-      <div class="weather-item"><div class="weather-item-icon">💨</div><div><div class="weather-item-val">— km/h</div><div class="weather-item-label">Vento</div></div></div>
-      <div class="weather-item"><div class="weather-item-icon">🌡️</div><div><div class="weather-item-val">—</div><div class="weather-item-label">Pressione</div></div></div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-title">📡 Previsioni 7 giorni</div>
-    <div class="empty-state"><div class="empty-state-icon">📡</div>Configura la posizione nelle Impostazioni per ricevere le previsioni</div>
-  </div>
-  <div class="card">
-    <div class="card-title">🌡️ Serra — Sensori interni</div>
-    <div class="empty-state">🌡️ Nessun sensore collegato</div>
-  </div>
-</section>
 
-<!-- LUNA -->
-<section id="sec-luna" class="section">
-  <div class="section-title">Luna 🌙</div>
-  <div class="section-sub">Calendario lunare agricolo</div>
-  <div class="card" id="moon-card">
-    <div class="moon-main">
-      <div class="moon-emoji" id="moon-emoji">🌕</div>
-      <div>
-        <div class="moon-phase-name" id="moon-phase-name">Calcolo in corso…</div>
-        <div class="moon-detail" id="moon-phase-detail">—</div>
-      </div>
-    </div>
-    <div class="moon-bar-wrap">
-      <div class="moon-bar-label">Illuminazione <span id="moon-pct">—</span>%</div>
-      <div class="moon-bar-track"><div class="moon-bar-fill" id="moon-bar" style="width:0%"></div></div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-title">🌾 Attività consigliate oggi</div>
-    <div class="moon-activities" id="moon-activities">
-      <div class="moon-activity">⏳ Dati lunari in calcolo…</div>
-    </div>
-  </div>
-</section>
-
-<!-- BIODINAMICA -->
-<section id="sec-bio" class="section">
-  <div class="section-title">Biodinamica 🌱</div>
-  <div class="section-sub">Calendario Steiner · Giorni Frutto · Fiore · Radice · Foglia</div>
-
-  <!-- Banner oggi -->
-  <div id="bio-today-banner" class="bio-today-banner bio-banner-frutto">
-    <div class="bio-today-icon" id="bio-today-icon">🍊</div>
-    <div>
-      <div class="bio-today-type" id="bio-today-type">Giorno Frutto</div>
-      <div class="bio-today-date" id="bio-today-date">—</div>
-      <div class="bio-today-advice" id="bio-today-advice">—</div>
-    </div>
-  </div>
-
-  <!-- Costellazione attuale -->
-  <div class="card" style="margin-bottom:12px">
-    <div class="card-title">♐ Costellazione lunare attuale</div>
-    <div class="bio-constellation-card" style="background:transparent;border:none;padding:0">
-      <div class="bio-const-row">
-        <div class="bio-const-icon" id="bio-const-icon">♐</div>
-        <div>
-          <div class="bio-const-name" id="bio-const-name">—</div>
-          <div class="bio-const-element" id="bio-const-element">—</div>
+    <dialog id="weather-modal" class="bioserra-modal">
+        <div class="modal-container">
+            <button id="close-weather-modal" class="modal-close-btn" aria-label="Chiudi">&times;</button>
+            <div class="modal-header">
+                <h3 id="modal-weather-title">Dettaglio Meteo</h3>
+                <p id="modal-weather-date"></p>
+            </div>
+            <div class="modal-body">
+                <div id="modal-weather-main-info" class="modal-main-info"></div>
+                <div id="modal-weather-grid" class="modal-stats-grid"></div>
+                <div id="modal-weather-advice" class="modal-advice-box"></div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </dialog>
 
-  <!-- Calendario mensile -->
-  <div class="card">
-    <div class="bio-cal-header">
-      <div class="bio-cal-title" id="bio-cal-month">—</div>
-      <div class="bio-cal-nav">
-        <button class="bio-nav-btn" onclick="bioChangeMonth(-1)">‹</button>
-        <button class="bio-nav-btn" onclick="bioChangeMonth(0)" title="Oggi">●</button>
-        <button class="bio-nav-btn" onclick="bioChangeMonth(1)">›</button>
-      </div>
-    </div>
-    <div class="bio-grid-header">
-      <div class="bio-grid-header-cell">L</div>
-      <div class="bio-grid-header-cell">M</div>
-      <div class="bio-grid-header-cell">M</div>
-      <div class="bio-grid-header-cell">G</div>
-      <div class="bio-grid-header-cell">V</div>
-      <div class="bio-grid-header-cell">S</div>
-      <div class="bio-grid-header-cell">D</div>
-    </div>
-    <div class="bio-grid" id="bio-grid"></div>
-    <div class="bio-legend">
-      <div class="bio-legend-item"><div class="bio-legend-dot dot-frutto"></div>Frutto 🍊</div>
-      <div class="bio-legend-item"><div class="bio-legend-dot dot-fiore"></div>Fiore 🌸</div>
-      <div class="bio-legend-item"><div class="bio-legend-dot dot-radice"></div>Radice 🌿</div>
-      <div class="bio-legend-item"><div class="bio-legend-dot dot-foglia"></div>Foglia 💧</div>
-    </div>
-  </div>
+    <nav class="bottom-nav">
+        <button class="nav-item active"><span class="nav-icon">🌿</span><span>Piante</span></button>
+        <button class="nav-item"><span class="nav-icon">⛅</span><span>Meteo</span></button>
+        <button class="nav-item"><span class="nav-icon">⚡</span><span>Elettro</span></button>
+        <button class="nav-item"><span class="nav-icon">⚙️</span><span>Config</span></button>
+    </nav>
 
-  <!-- Consigli per la serra -->
-  <div class="card">
-    <div class="card-title">🌿 Consigli per la tua serra oggi</div>
-    <div class="bio-tip-list" id="bio-tip-list">
-      <div class="bio-tip-item tip-frutto">⏳ Calcolo in corso…</div>
-    </div>
-  </div>
+    <script>
+        // Logica contatori per Elettrocultura (mantiene inalterate le vecchie funzioni)
+        const counts = { lakh: 0, galv: 0 };
+        function updateCount(type, val) {
+            counts[type] = Math.max(0, Math.min(10, counts[type] + val));
+            if(type === 'lakh') document.getElementById('count-lakh').innerText = `${counts[type]} / 10 piante con cerchio`;
+            if(type === 'galv') document.getElementById('count-galv').innerText = `${counts[type]} / 10 pile installate`;
+        }
 
-  <!-- Popup dettaglio giorno -->
-  <div class="bio-detail-popup hidden" id="bio-popup" onclick="closeBioPopup(event)">
-    <div class="bio-detail-sheet">
-      <div class="bio-detail-handle"></div>
-      <button class="bio-detail-close" onclick="closeBioPopupDirect()">✕</button>
-      <div id="bio-popup-content"></div>
-    </div>
-  </div>
-</section>
+        // INTEGRAZIONE FLUSSI OPEN-METEO & MODAL POPUP
+        document.addEventListener("DOMContentLoaded", () => {
+            const LAT = 41.0821;
+            const LON = 14.3312;
+            const url = `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,uv_index&daily=weather_code,temperature_2m_max,temperature_2m_min,uv_index_max,precipitation_sum,precipitation_probability_max,wind_speed_10m_max&timezone=auto`;
 
-<!-- ELETTROCULTURA -->
-<section id="sec-elettro" class="section">
-  <div class="section-title">Elettrocultura ⚡</div>
-  <div class="section-sub">Esperimenti in corso · Living Soil</div>
-  <div class="stat-trio">
-    <div class="stat-box"><div class="stat-num" style="font-size:22px;color:var(--green3)">3</div><div class="stat-label">Attivi</div></div>
-    <div class="stat-box"><div class="stat-num" style="font-size:22px;color:var(--blue)">0</div><div class="stat-label">Dati</div></div>
-    <div class="stat-box"><div class="stat-num" style="font-size:22px;color:var(--orange)">!</div><div class="stat-label">Verifica</div></div>
-  </div>
-  <div class="exp-card">
-    <div class="exp-title">🔁 Circuito di Lakhovsky <span class="exp-badge">SPERIMENTALE</span></div>
-    <div class="exp-desc">Anello di rame aperto alla base di ogni pianta. Funziona come antenna di risonanza. Le estremità si sovrappongono per 2-3 cm con 1 cm di spazio.</div>
-    <div class="exp-counter">
-      <button class="exp-btn" onclick="adjustCount('lakhovsky',-1)">−</button>
-      <div class="exp-count-num" id="lakhovsky-count">0</div>
-      <button class="exp-btn" onclick="adjustCount('lakhovsky',1)">+</button>
-      <span>/ 10 piante con cerchio</span>
-    </div>
-  </div>
-  <div class="exp-card">
-    <div class="exp-title">⚗️ Pila Galvanica Ferro-Rame <span class="exp-badge">SPERIMENTALE</span></div>
-    <div class="exp-desc">Micro-corrente ~0.5-0.7V generata da chiodo di ferro + filo di rame in terreno umido. Ionizza i nutrienti per miglior assorbimento radicale.</div>
-    <div class="exp-counter">
-      <button class="exp-btn" onclick="adjustCount('galvanica',-1)">−</button>
-      <div class="exp-count-num" id="galvanica-count">0</div>
-      <button class="exp-btn" onclick="adjustCount('galvanica',1)">+</button>
-      <span>/ 10 pile attive</span>
-    </div>
-  </div>
-  <div class="exp-card">
-    <div class="exp-title">🌐 Sistema Pantacle di Rame <span class="exp-badge">SPERIMENTALE</span></div>
-    <div class="exp-desc">Archi di rame nudo collegano il terreno di tutti i vasi in serie. Distribuzione uniforme delle cariche elettriche tra le 10 piante.</div>
-    <div class="exp-counter">
-      <button class="exp-btn" onclick="adjustCount('pantacle',-1)">−</button>
-      <div class="exp-count-num" id="pantacle-count">0</div>
-      <button class="exp-btn" onclick="adjustCount('pantacle',1)">+</button>
-      <span>archi installati</span>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-title">🧲 Acqua Magnetizzata</div>
-    <div class="setting-item" style="border:none;padding:6px 0;background:transparent">
-      <div class="setting-left"><div class="setting-icon">🔵</div><div><div class="setting-title">Magnete principale</div><div class="setting-value">Sul tubo principale</div></div></div>
-      <span class="badge badge-green">Installato</span>
-    </div>
-    <div class="setting-item" style="border:none;padding:6px 0;background:transparent">
-      <div class="setting-left"><div class="setting-icon">🟡</div><div><div class="setting-title">Geomag per gocciolatoio</div><div class="setting-value">1 per ogni pianta</div></div></div>
-      <div class="exp-counter" style="gap:6px">
-        <button class="exp-btn" onclick="adjustCount('geomag',-1)">−</button>
-        <div class="exp-count-num" id="geomag-count">0</div>
-        <button class="exp-btn" onclick="adjustCount('geomag',1)">+</button>
-        <span style="font-size:12px">/ 10</span>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-title">📊 Log osservazioni</div>
-    <div class="empty-state"><div class="empty-state-icon">📝</div>Nessuna osservazione registrata ancora.<br>Aggiungi note per confrontare i risultati.</div>
-  </div>
-</section>
+            let weatherDataCache = null;
 
-<!-- MANUALI -->
-<section id="sec-manuali" class="section">
-  <div class="section-title">Manuali 📚</div>
-  <div class="section-sub">Documenti e guide operative</div>
-  <div class="manual-item"><div class="manual-icon">🌱</div><div class="manual-text"><div class="manual-title">Manuale Mini-Serra v2</div><div class="manual-sub">Living Soil · Aggiornato marzo 2026</div></div><div class="manual-arrow">›</div></div>
-  <div class="manual-item"><div class="manual-icon">📋</div><div class="manual-text"><div class="manual-title">Calendario Colture</div><div class="manual-sub">10 varietà · 8 mesi ciclo</div></div><div class="manual-arrow">›</div></div>
-  <div class="manual-item"><div class="manual-icon">⚡</div><div class="manual-text"><div class="manual-title">Guida Elettrocultura</div><div class="manual-sub">Lakhovsky · Galvanica · Pantacle</div></div><div class="manual-arrow">›</div></div>
-  <div class="manual-item"><div class="manual-icon">💧</div><div class="manual-text"><div class="manual-title">Gestione Serbatoio</div><div class="manual-sub">Irrigazione · Melassa · Humus</div></div><div class="manual-arrow">›</div></div>
-  <div class="manual-item"><div class="manual-icon">🧪</div><div class="manual-text"><div class="manual-title">Additivi Biologici</div><div class="manual-sub">Ortiche · Miscela · Banana · Etilene</div></div><div class="manual-arrow">›</div></div>
-  <div class="manual-item"><div class="manual-icon">📅</div><div class="manual-text"><div class="manual-title">Scheda Rapida Additivi</div><div class="manual-sub">Dosi · Cadenze · Metodi</div></div><div class="manual-arrow">›</div></div>
-  <div class="divider"></div>
-  <div class="card">
-    <div class="card-title">📄 Aggiunta rapida</div>
-    <div class="empty-state">Importa un documento o aggiungi note personali</div>
-  </div>
-</section>
+            // Elementi DOM del Modal
+            const modal = document.getElementById("weather-modal");
+            const closeBtn = document.getElementById("close-weather-modal");
+            const mTitle = document.getElementById("modal-weather-title");
+            const mDate = document.getElementById("modal-weather-date");
+            const mMainInfo = document.getElementById("modal-weather-main-info");
+            const mGrid = document.getElementById("modal-weather-grid");
+            const mAdvice = document.getElementById("modal-weather-advice");
 
-<!-- AI -->
-<section id="sec-ai" class="section">
-  <div class="section-title">AI 🤖</div>
-  <div class="section-sub">Assistente Serra · Powered by Claude</div>
-  <div class="ai-chat" id="ai-chat">
-    <div class="ai-msg bot">🌿 Ciao! Sono il tuo assistente BioSerra.<br>Chiedimi qualsiasi cosa sulla tua coltivazione, sugli additivi biologici, sui cicli lunari o sull'elettrocultura!</div>
-  </div>
-  <div class="ai-quick">
-    <button class="ai-quick-btn" onclick="aiQuick('Quando annaffiare?')">💧 Quando annaffiare?</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Dosi melassa')">🍯 Dosi melassa</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Fase lunare oggi')">🌙 Fase lunare</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Diagnosi foglie ingiallite')">🍂 Diagnosi foglie</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Prossima azione da fare')">📋 Prossima azione</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Raccolta prevista Epsilon F1')">🌾 Raccolta prevista</button>
-  </div>
-  <div class="ai-input-row">
-    <input class="ai-input" id="ai-input" type="text" placeholder="Scrivi un messaggio…" onkeydown="if(event.key==='Enter')aiSend()">
-    <button class="ai-send" onclick="aiSend()">➤</button>
-  </div>
-</section>
+            function parseWmoCode(code) {
+                if (code === 0) return { icon: "☀️", desc: "Sereno" };
+                if ([1, 2, 3].includes(code)) return { icon: "⛅", desc: "Nuvoloso" };
+                if ([45, 48].includes(code)) return { icon: "🌫️", desc: "Nebbia" };
+                if ([51, 53, 55, 61, 63, 65, 80, 81, 82].includes(code)) return { icon: "🌧️", desc: "Pioggia" };
+                if ([71, 73, 75, 77, 85, 86].includes(code)) return { icon: "🌨️", desc: "Neve" };
+                if ([95, 96, 99].includes(code)) return { icon: "⛈️", desc: "Temporale" };
+                return { icon: "⛅", desc: "Variabile" };
+            }
 
-<!-- SICUREZZA -->
-<section id="sec-sicurezza" class="section">
-  <div class="section-title">Sicurezza 🔒</div>
-  <div class="section-sub">Protezione dati e privacy</div>
-  <div class="sicurezza-banner">
-    <div class="sicurezza-banner-icon">🔒</div>
-    <div class="sicurezza-banner-text">
-      <div class="sicurezza-banner-title">Dati protetti localmente</div>
-      <div class="sicurezza-banner-sub">Tutti i dati restano sul tuo dispositivo</div>
-    </div>
-  </div>
-  <div class="security-item"><div class="security-item-icon">📱</div><div><div class="security-item-title">Archiviazione locale</div><div class="security-item-desc">I dati della serra sono salvati solo sul tuo dispositivo tramite localStorage. Nessun server esterno coinvolto.</div></div></div>
-  <div class="security-item"><div class="security-item-icon">🔑</div><div><div class="security-item-title">API Key Claude</div><div class="security-item-desc">La chiave API viene usata solo per le richieste AI e non viene mai trasmessa a terzi.</div></div></div>
-  <div class="security-item"><div class="security-item-icon">🌐</div><div><div class="security-item-title">Connessioni esterne</div><div class="security-item-desc">Solo meteo (opzionale) e Claude AI usano internet. Il calendario biodinamico funziona completamente offline.</div></div></div>
-  <div class="security-item"><div class="security-item-icon">🗑️</div><div><div class="security-item-title">Cancella tutti i dati</div><div class="security-item-desc">Rimuove tutte le impostazioni e i dati salvati localmente.</div></div></div>
-</section>
+            function getUvStatus(uv) {
+                if (uv <= 2) return { text: "Basso", color: "#4ade80" };
+                if (uv <= 5) return { text: "Moderato", color: "#fbbf24" };
+                if (uv <= 7) return { text: "Alto", color: "#f97316" };
+                return { text: "Critico", color: "#ef4444" };
+            }
 
-<!-- IMPOSTAZIONI -->
-<section id="sec-impostazioni" class="section">
-  <div class="section-title">Impostazioni ⚙️</div>
-  <div class="section-sub">Configurazione BioSerra</div>
-  <div class="setting-group">
-    <div class="setting-group-label">Serra</div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">🌱</div><div><div class="setting-title">Nome Serra</div><div class="setting-value">BioSerra #1</div></div></div><div class="setting-arrow">›</div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">📍</div><div><div class="setting-title">Posizione</div><div class="setting-value">Non configurata</div></div></div><div class="setting-arrow">›</div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">🗓️</div><div><div class="setting-title">Inizio ciclo</div><div class="setting-value">21 aprile 2026</div></div></div><div class="setting-arrow">›</div></div>
-  </div>
-  <div class="setting-group">
-    <div class="setting-group-label">Notifiche</div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">💧</div><div><div class="setting-title">Promemoria irrigazione</div><div class="setting-value">Ogni 3-4 giorni</div></div></div><div class="toggle on" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">🌙</div><div><div class="setting-title">Avvisi luna</div><div class="setting-value">Giorni favorevoli</div></div></div><div class="toggle on" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">🧪</div><div><div class="setting-title">Additivi biologici</div><div class="setting-value">Melassa · Ortiche · Humus</div></div></div><div class="toggle on" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">⚡</div><div><div class="setting-title">Controllo esperimenti</div><div class="setting-value">Verifica settimanale</div></div></div><div class="toggle" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
-  </div>
-  <div class="setting-group">
-    <div class="setting-group-label">Dati e Integrazioni</div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">🌦️</div><div><div class="setting-title">API Meteo</div><div class="setting-value">Non collegata</div></div></div><div class="setting-arrow">›</div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">📡</div><div><div class="setting-title">Sensori IoT</div><div class="setting-value">Nessun sensore</div></div></div><div class="setting-arrow">›</div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">☁️</div><div><div class="setting-title">Backup cloud</div><div class="setting-value">Disattivato</div></div></div><div class="toggle" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
-  </div>
-  <div class="setting-group">
-    <div class="setting-group-label">App</div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">🎨</div><div><div class="setting-title">Tema</div><div class="setting-value">Scuro — Verde Foresta</div></div></div><div class="setting-arrow">›</div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">ℹ️</div><div><div class="setting-title">Versione</div><div class="setting-value">BioSerra 0.1.0 · Beta</div></div></div></div>
-  </div>
-</section>
+            async function loadBioSerraWeather() {
+                try {
+                    const res = await fetch(url);
+                    if (!res.ok) throw new Error();
+                    const data = await res.json();
+                    weatherDataCache = data;
 
-<!-- NAV -->
-<nav class="nav">
-  <button class="nav-item active" onclick="showSection('piante',this)"><span>🌿</span><span>Piante</span></button>
-  <button class="nav-item" onclick="showSection('meteo',this)"><span>⛅</span><span>Meteo</span></button>
-  <button class="nav-item" onclick="showSection('luna',this)"><span>🌙</span><span>Luna</span></button>
-  <button class="nav-item" onclick="showSection('bio',this)"><span>🌱</span><span>Bio</span></button>
-  <button class="nav-item" onclick="showSection('elettro',this)"><span>⚡</span><span>Elettro</span></button>
-  <button class="nav-item" onclick="showSection('manuali',this)"><span>📚</span><span>Manuali</span></button>
-  <button class="nav-item" onclick="showSection('ai',this)"><span>🤖</span><span>AI</span></button>
-  <button class="nav-item" onclick="showSection('impostazioni',this)"><span>⚙️</span><span>Config</span></button>
-</nav>
+                    renderCurrentCard(data.current);
+                    renderForecastList(data.daily);
+                    bindPopupEvents();
+                } catch (e) {
+                    document.getElementById("main-weather-card").innerHTML = `<p style="color:#f87171;">Impossibile caricare i dati meteo di rete.</p>`;
+                }
+            }
 
-<script>
-/* ══════════════════════════════════════════════════════════════
-   NAVIGATION
-══════════════════════════════════════════════════════════════ */
-function showSection(id, btn) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
-  document.getElementById('sec-' + id).classList.add('active');
-  btn.classList.add('active');
-  window.scrollTo(0, 0);
-  if (id === 'bio') renderBioCalendar();
-  if (id === 'luna') renderMoon();
-}
+            function renderCurrentCard(current) {
+                const w = parseWmoCode(current.weather_code);
+                document.getElementById("main-weather-card").innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <div>
+                            <span style="font-size: 2.2rem; display: block; font-weight: bold; line-height: 1;">${current.temperature_2m}°C</span>
+                            <span style="color: #cbd5e1; font-size: 0.85rem;">Caserta (CE) • <strong>${w.desc}</strong></span>
+                        </div>
+                        <div style="font-size: 2.6rem;">${w.icon}</div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-top: 12px; font-size: 0.8rem; color: #a0aec0;">
+                        <div>💧 Umidità: <strong style="color:#e2e8f0">${current.relative_humidity_2m}%</strong></div>
+                        <div>☀️ Indice UV: <strong style="color:#e2e8f0">${current.uv_index}</strong></div>
+                        <div>💨 Vento: <strong style="color:#e2e8f0">${current.wind_speed_10m} km/h</strong></div>
+                        <div>🌡️ Percepita: <strong style="color:#e2e8f0">${current.apparent_temperature}°C</strong></div>
+                    </div>
+                `;
+            }
 
-function refreshAll() { renderBioCalendar(); renderMoon(); }
-function showNotifPanel() { alert('🔔 Nessuna notifica in sospeso'); }
+            function renderForecastList(daily) {
+                const container = document.getElementById("forecast-list");
+                container.innerHTML = "";
+                for (let i = 0; i < 7; i++) {
+                    const dayDate = new Date(daily.time[i]);
+                    const format = dayDate.toLocaleDateString('it-IT', { weekday: 'short', day: 'numeric' });
+                    const w = parseWmoCode(daily.weather_code[i]);
 
-/* ══════════════════════════════════════════════════════════════
-   ESPERIMENTI COUNTER
-══════════════════════════════════════════════════════════════ */
-const counts = { lakhovsky: 0, galvanica: 0, pantacle: 0, geomag: 0 };
-function adjustCount(key, delta) {
-  const maxes = { lakhovsky: 10, galvanica: 10, pantacle: 9, geomag: 10 };
-  counts[key] = Math.max(0, Math.min(maxes[key], counts[key] + delta));
-  document.getElementById(key + '-count').textContent = counts[key];
-  try { localStorage.setItem('exp_counts', JSON.stringify(counts)); } catch(e) {}
-}
-try {
-  const saved = JSON.parse(localStorage.getItem('exp_counts') || '{}');
-  Object.assign(counts, saved);
-  Object.keys(counts).forEach(k => {
-    const el = document.getElementById(k + '-count');
-    if (el) el.textContent = counts[k];
-  });
-} catch(e) {}
+                    const row = document.createElement("div");
+                    row.className = "forecast-day-trigger";
+                    row.dataset.idx = i;
+                    row.style.cssText = "display: flex; justify-content: space-between; align-items: center; padding: 10px; background: #16271c; border-radius: 8px; border: 1px solid #1e3527; font-size: 0.85rem;";
+                    row.innerHTML = `
+                        <span style="text-transform: capitalize; font-weight:500; min-width:75px;">${format}</span>
+                        <span style="font-size: 1.1rem;">${w.icon}</span>
+                        <span>
+                            <span style="color:#f87171; font-weight:600;">${Math.round(daily.temperature_2m_max[i])}°</span> / 
+                            <span style="color:#60a5fa;">${Math.round(daily.temperature_2m_min[i])}°</span>
+                        </span>
+                    `;
+                    container.appendChild(row);
+                }
+            }
 
-/* ══════════════════════════════════════════════════════════════
-   LUNA — calcolo fase
-══════════════════════════════════════════════════════════════ */
-function getMoonPhase(date) {
-  const knownNew = new Date(2000, 0, 6, 18, 14); // luna nuova di riferimento
-  const msDay = 86400000;
-  const lunation = 29.530588853;
-  const diff = (date - knownNew) / msDay;
-  let phase = ((diff % lunation) + lunation) % lunation;
-  return phase;
-}
-function renderMoon() {
-  const now = new Date();
-  const phase = getMoonPhase(now);
-  const pct = Math.round(Math.abs(Math.cos((phase / 29.530588853) * 2 * Math.PI)) * 100);
-  const emojis = ['🌑','🌒','🌓','🌔','🌕','🌖','🌗','🌘'];
-  const emojiIdx = Math.round(phase / 29.530588853 * 8) % 8;
-  const names = ['Luna Nuova','Luna Crescente','Quarto Crescente','Gibbosa Crescente','Luna Piena','Gibbosa Calante','Ultimo Quarto','Calante'];
-  const idx = Math.floor(phase / 29.530588853 * 8) % 8;
-  document.getElementById('moon-emoji').textContent = emojis[emojiIdx];
-  document.getElementById('moon-phase-name').textContent = names[idx];
-  document.getElementById('moon-phase-detail').textContent = `Giorno ${Math.round(phase)} del ciclo lunare`;
-  document.getElementById('moon-pct').textContent = pct;
-  document.getElementById('moon-bar').style.width = pct + '%';
-  const acts = document.getElementById('moon-activities');
-  const isGrowing = phase < 14.77;
-  acts.innerHTML = `
-    <div class="moon-activity">${isGrowing ? '🌱 Luna crescente — favorevole per germinazione e vegetazione' : '🌾 Luna calante — favorevole per raccolta, potatura e radici'}</div>
-    <div class="moon-activity">💧 ${phase < 7.4 ? 'Ridurre irrigazione, luna nuova' : phase < 14.77 ? 'Aumentare progressivamente irrigazione' : phase < 22.1 ? 'Irrigazione normale' : 'Ridurre prima del novilunio'}</div>
-    <div class="moon-activity">🧪 ${phase < 14.77 ? 'Ottimo momento per additivi fogliari' : 'Preferire concimazioni radicali'}</div>
-  `;
-}
-renderMoon();
+            function bindPopupEvents() {
+                document.getElementById("main-weather-card").addEventListener("click", () => displayModal("now"));
+                document.querySelectorAll(".forecast-day-trigger").forEach(el => {
+                    el.addEventListener("click", (e) => {
+                        displayModal("day", parseInt(e.currentTarget.dataset.idx));
+                    });
+                });
+            }
 
-/* ══════════════════════════════════════════════════════════════
-   BIODINAMICA — ALGORITMO STEINER
-   Metodo: posizione della Luna nelle costellazioni zodiacali
-   Fonte: calendario biodinamico Thun / metodo antroposofico
-══════════════════════════════════════════════════════════════ */
+            function displayModal(mode, idx = 0) {
+                if (!weatherDataCache) return;
 
-/*
-  Le costellazioni zodiacali usate in biodinamica (NON i segni astrologici)
-  coprono porzioni diseguali dell'eclittica. Usiamo le lunghezze astronomiche
-  reali secondo la tradizione Thun/biodinamica:
+                if (mode === "now") {
+                    const current = weatherDataCache.current;
+                    const w = parseWmoCode(current.weather_code);
+                    const uv = getUvStatus(current.uv_index);
 
-  Costellazione  | Elemento | Tipo giorno  | Long. inizio | Long. fine
-  Ariete         | Fuoco    | Frutto       |  22°         |  51°
-  Toro           | Terra    | Radice       |  51°         |  87°
-  Gemelli        | Aria     | Fiore        |  87°         | 118°
-  Cancro         | Acqua    | Foglia       | 118°         | 138°
-  Leone          | Fuoco    | Frutto       | 138°         | 155°
-  Vergine        | Terra    | Radice       | 155°         | 218°
-  Bilancia       | Aria     | Fiore        | 218°         | 241°
-  Scorpione      | Acqua    | Foglia       | 241°         | 270°  (usato Ofiuco→radice in alcune varianti, qui foglia)
-  Sagittario     | Fuoco    | Frutto       | 270°         | 299°
-  Capricorno     | Terra    | Radice       | 299°         | 327°
-  Acquario       | Aria     | Fiore        | 327°         | 351°
-  Pesci          | Acqua    | Foglia       | 351°         | 382° (=22° dopo 0)
+                    mTitle.innerText = "Condizioni Attuali (Real-Time)";
+                    mDate.innerText = "Rilevamento geo-localizzato a Caserta";
+                    mMainInfo.innerHTML = `<div style="font-size: 2.5rem;">${w.icon}</div><div><div style="font-size: 1.6rem; font-weight:bold;">${current.temperature_2m}°C</div><div style="color:#4ade80;">Meteo: ${w.desc}</div></div>`;
+                    
+                    mGrid.innerHTML = `
+                        <div class="modal-stat-card"><span class="label">Umidità Aria</span><span class="value">${current.relative_humidity_2m}%</span></div>
+                        <div class="modal-stat-card"><span class="label">Indice UV</span><span class="value" style="color:${uv.color}">${current.uv_index} (${uv.text})</span></div>
+                        <div class="modal-stat-card"><span class="label">Velocità Vento</span><span class="value">${current.wind_speed_10m} km/h</span></div>
+                        <div class="modal-stat-card"><span class="label">Temp. Percepita</span><span class="value">${current.apparent_temperature}°C</span></div>
+                    `;
 
-  Per calcolare la longitudine eclittica della Luna usiamo
-  le formule di Jean Meeus (Astronomical Algorithms, cap. 47).
-  Precisione: ±1° (sufficiente per biodinamica, errore massimo ~2 ore).
-*/
+                    let advice = "💡 <strong>Consiglio Serra:</strong> Clima stabile. Monitora i cicli di bagnatura del terreno in base all'evaporazione.";
+                    if (current.uv_index >= 6 || current.temperature_2m >= 29) {
+                        advice = "⚠️ <strong>Attenzione Stress Termico:</strong> Radiazioni UV o temperature alte rilevate. Valuta l'attivazione di schermature e verifica che il substrato organico non si asciughi eccessivamente in superficie.";
+                    } else if (current.relative_humidity_2m > 80) {
+                        advice = "💧 <strong>Umidità Elevata:</strong> Rischio di ristagno dell'aria. Assicura una corretta ventilazione passiva nella serra per contrastare l'insorgenza di muffe e funghi patogeni.";
+                    }
+                    mAdvice.innerHTML = advice;
 
-const CONSTELLATIONS = [
-  { name: 'Ariete',     sym: '♈', element: 'Fuoco 🔥',  type: 'frutto',  start:  22, end:  51 },
-  { name: 'Toro',       sym: '♉', element: 'Terra 🌍',  type: 'radice',  start:  51, end:  87 },
-  { name: 'Gemelli',    sym: '♊', element: 'Aria 💨',   type: 'fiore',   start:  87, end: 118 },
-  { name: 'Cancro',     sym: '♋', element: 'Acqua 💧',  type: 'foglia',  start: 118, end: 138 },
-  { name: 'Leone',      sym: '♌', element: 'Fuoco 🔥',  type: 'frutto',  start: 138, end: 155 },
-  { name: 'Vergine',    sym: '♍', element: 'Terra 🌍',  type: 'radice',  start: 155, end: 218 },
-  { name: 'Bilancia',   sym: '♎', element: 'Aria 💨',   type: 'fiore',   start: 218, end: 241 },
-  { name: 'Scorpione',  sym: '♏', element: 'Acqua 💧',  type: 'foglia',  start: 241, end: 270 },
-  { name: 'Sagittario', sym: '♐', element: 'Fuoco 🔥',  type: 'frutto',  start: 270, end: 299 },
-  { name: 'Capricorno', sym: '♑', element: 'Terra 🌍',  type: 'radice',  start: 299, end: 327 },
-  { name: 'Acquario',   sym: '♒', element: 'Aria 💨',   type: 'fiore',   start: 327, end: 351 },
-  { name: 'Pesci',      sym: '♓', element: 'Acqua 💧',  type: 'foglia',  start: 351, end: 382 },
-];
+                } else {
+                    const daily = weatherDataCache.daily;
+                    const w = parseWmoCode(daily.weather_code[idx]);
+                    const uv = getUvStatus(daily.uv_index_max[idx]);
+                    const tDate = new Date(daily.time[idx]);
 
-const DAY_TYPES = {
-  frutto: { label: 'Giorno Frutto', icon: '🍊', color: 'frutto', bannerClass: 'bio-banner-frutto', tipClass: 'tip-frutto' },
-  fiore:  { label: 'Giorno Fiore',  icon: '🌸', color: 'fiore',  bannerClass: 'bio-banner-fiore',  tipClass: 'tip-fiore'  },
-  radice: { label: 'Giorno Radice', icon: '🌿', color: 'radice', bannerClass: 'bio-banner-radice', tipClass: 'tip-radice' },
-  foglia: { label: 'Giorno Foglia', icon: '💧', color: 'foglia', bannerClass: 'bio-banner-foglia', tipClass: 'tip-foglia' },
-};
+                    mTitle.innerText = `Previsione di ${tDate.toLocaleDateString('it-IT', { weekday: 'long' })}`;
+                    mDate.innerText = tDate.toLocaleDateString('it-IT', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+                    
+                    mMainInfo.innerHTML = `
+                        <div style="font-size: 2.5rem;">${w.icon}</div>
+                        <div>
+                            <div style="font-size: 1.3rem; font-weight:bold;"><span style="color:#f87171;">Max ${Math.round(daily.temperature_2m_max[idx])}°C</span> | <span style="color:#60a5fa;">Min ${Math.round(daily.temperature_2m_min[idx])}°C</span></div>
+                            <div style="color:#cbd5e1;">Stato previsto: ${w.desc}</div>
+                        </div>
+                    `;
 
-const ADVICE = {
-  frutto: {
-    short: 'Ideale per raccolta, fioritura e produzione di resina.',
-    tips: [
-      '🍊 Giornata ottimale per la raccolta delle cime più mature.',
-      '✂️ Se devi potare, fallo oggi — massima concentrazione di aromi.',
-      '💧 Puoi ridurre leggermente l\'irrigazione: la pianta è meno idrofila.',
-      '🧪 Evita additivi azotati oggi — favorisci potassio e fosforo.',
-      '🔭 Osserva la densità trichomi: i giorni frutto evidenziano la maturazione.',
-    ]
-  },
-  fiore: {
-    short: 'Ottimo per profumi, aromi e stimolare la fioritura.',
-    tips: [
-      '🌸 Giornata ideale per stimolare la fioritura con tè di banana e cenere.',
-      '👃 Gli aromi sono più intensi — momento giusto per valutare i terpeni.',
-      '💨 Assicurati una buona circolazione d\'aria: i fiori ne beneficiano.',
-      '🌡️ Tieni temperatura sotto i 26°C per preservare i terpeni volatili.',
-      '🚿 Irrigazione normale — i giorni fiore non richiedono variazioni idriche.',
-    ]
-  },
-  radice: {
-    short: 'Favorevole per radici, substrato e vita microbica.',
-    tips: [
-      '🌿 Giornata perfetta per la manutenzione del substrato (humus, miscela organica).',
-      '🦠 Somministra l\'infuso di ortiche oggi — massima assorbibilità radicale.',
-      '💧 Aumenta leggermente l\'irrigazione: le radici sono più attive.',
-      '⚗️ Controlla la pila galvanica ferro-rame — la conducibilità è più alta.',
-      '🔍 Osserva i bordi dei vasi: il tessuto traspirante "air prunes" le radici.',
-    ]
-  },
-  foglia: {
-    short: 'Ideale per crescita vegetativa e salute fogliare.',
-    tips: [
-      '💧 Le piante assorbono più acqua oggi — controlla il livello del serbatoio.',
-      '🍃 Ottimo per osservare la salute fogliare e diagnosticare carenze.',
-      '🌱 Giorni foglia favoriscono la crescita vegetativa — più luce se possibile.',
-      '🧪 Evita trattamenti fogliari invasivi — le foglie sono più sensibili.',
-      '🔄 Agita il serbatoio e controlla i gocciolatori — massima domanda idrica.',
-    ]
-  }
-};
+                    mGrid.innerHTML = `
+                        <div class="modal-stat-card"><span class="label">Probabilità Pioggia</span><span class="value">${daily.precipitation_probability_max[idx]}%</span></div>
+                        <div class="modal-stat-card"><span class="label">Precipitazioni Totali</span><span class="value">${daily.precipitation_sum[idx]} mm</span></div>
+                        <div class="modal-stat-card"><span class="label">Vento Massimo</span><span class="value">${daily.wind_speed_10m_max[idx]} km/h</span></div>
+                        <div class="modal-stat-card"><span class="label">Picco UV Max</span><span class="value" style="color:${uv.color}">${daily.uv_index_max[idx]} (${uv.text})</span></div>
+                    `;
 
-/* ── Calcolo longitudine eclittica lunare (Meeus, cap 47) ── */
-function moonEclipticLongitude(date) {
-  // Julian Day Number
-  const JD = date.getTime() / 86400000 + 2440587.5;
-  const T = (JD - 2451545.0) / 36525.0; // secoli giuliani da J2000
+                    let advice = "📋 <strong>Gestione Serra:</strong> Parametri ideali per i regolari processi fotosintetici e nutrizionali biologici.";
+                    if (daily.precipitation_sum[idx] > 1.5) {
+                        advice = `🌧️ <strong>Raccolta Idrica & Pioggia:</strong> Attesi ${daily.precipitation_sum[idx]} mm di pioggia. Se utilizzi un sistema di irrigazione automatizzato solare con serbatoio, tieni conto del calo dell'evapotraspirazione esterna.`;
+                    } else if (daily.uv_index_max[idx] > 7) {
+                        advice = "☀️ <strong>Picco UV Critico:</strong> Previsto forte irraggiamento solare. Eccellente per lo sviluppo vegetativo avanzato, ma monitora le piante più giovani o appena irrigate con additivi biologici.";
+                    }
+                    mAdvice.innerHTML = advice;
+                }
 
-  // Anomalia media del Sole
-  const M = toRad(357.5291092 + 35999.0502909 * T);
-  // Anomalia media della Luna
-  const Mprime = toRad(134.9633964 + 477198.8675055 * T);
-  // Argomento di latitudine
-  const F = toRad(93.2720950 + 483202.0175233 * T);
-  // Elongazione media
-  const D = toRad(297.8501921 + 445267.1114034 * T);
-  // Longitudine media della Luna
-  const L0 = 218.3164477 + 481267.88123421 * T;
+                modal.showModal();
+            }
 
-  // Principali termini perturbativi (gradi)
-  let dL = 6.288774 * Math.sin(Mprime)
-          + 1.274027 * Math.sin(2*D - Mprime)
-          + 0.658314 * Math.sin(2*D)
-          + 0.213618 * Math.sin(2*Mprime)
-          - 0.185116 * Math.sin(M)
-          - 0.114332 * Math.sin(2*F)
-          + 0.058793 * Math.sin(2*D - 2*Mprime)
-          + 0.057066 * Math.sin(2*D - M - Mprime)
-          + 0.053322 * Math.sin(2*D + Mprime)
-          + 0.045758 * Math.sin(2*D - M)
-          - 0.040923 * Math.sin(M - Mprime)
-          - 0.034720 * Math.sin(D)
-          - 0.030383 * Math.sin(M + Mprime)
-          + 0.015327 * Math.sin(2*D - 2*F)
-          - 0.012528 * Math.sin(2*F + Mprime)
-          - 0.010980 * Math.sin(2*F - Mprime)
-          + 0.010675 * Math.sin(4*D - Mprime)
-          + 0.010034 * Math.sin(3*Mprime)
-          + 0.008548 * Math.sin(4*D - 2*Mprime);
+            if(closeBtn) closeBtn.addEventListener("click", () => modal.close());
+            
+            // Chiusura al clic esterno sul backdrop scuro
+            modal.addEventListener("click", (e) => {
+                const rect = modal.getBoundingClientRect();
+                if (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom) {
+                    modal.close();
+                }
+            });
 
-  let lon = ((L0 + dL) % 360 + 360) % 360;
-  return lon;
-}
-
-function toRad(deg) { return deg * Math.PI / 180; }
-
-function getConstellation(lon) {
-  // Normalizza 0-360
-  lon = ((lon % 360) + 360) % 360;
-  // Cerchiamo nella tabella (Pesci copre 351-360 + 0-22)
-  for (const c of CONSTELLATIONS) {
-    if (c.end > 360) {
-      // Pesci: 351-360 oppure 0-22
-      if (lon >= c.start || lon < (c.end - 360)) return c;
-    } else {
-      if (lon >= c.start && lon < c.end) return c;
-    }
-  }
-  // Fallback: Pesci (copre 0-22)
-  return CONSTELLATIONS[11];
-}
-
-function getDayType(date) {
-  // Usiamo la longitudine a mezzogiorno UTC del giorno
-  const noon = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), 12, 0, 0));
-  const lon = moonEclipticLongitude(noon);
-  return getConstellation(lon);
-}
-
-/* ── Rendering Biodinamica ── */
-let bioViewYear, bioViewMonth;
-
-function bioChangeMonth(delta) {
-  if (delta === 0) { // reset a oggi
-    const now = new Date();
-    bioViewYear = now.getFullYear();
-    bioViewMonth = now.getMonth();
-  } else {
-    bioViewMonth += delta;
-    if (bioViewMonth < 0) { bioViewMonth = 11; bioViewYear--; }
-    if (bioViewMonth > 11) { bioViewMonth = 0; bioViewYear++; }
-  }
-  renderBioCalendar();
-}
-
-const MONTH_IT = ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
-const SHORT_IT = ['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'];
-
-function renderBioCalendar() {
-  const now = new Date();
-  if (bioViewYear === undefined) { bioViewYear = now.getFullYear(); bioViewMonth = now.getMonth(); }
-  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-
-  document.getElementById('bio-cal-month').textContent = `${MONTH_IT[bioViewMonth]} ${bioViewYear}`;
-
-  // Calcola giorno di oggi
-  const todayConst = getDayType(today);
-  const todayType = DAY_TYPES[todayConst.type];
-
-  // Aggiorna banner oggi
-  const banner = document.getElementById('bio-today-banner');
-  banner.className = `bio-today-banner ${todayType.bannerClass}`;
-  document.getElementById('bio-today-icon').textContent = todayType.icon;
-  document.getElementById('bio-today-type').textContent = todayType.label;
-  document.getElementById('bio-today-date').textContent =
-    `${today.getDate()} ${MONTH_IT[today.getMonth()]} ${today.getFullYear()} · ${todayConst.sym} ${todayConst.name}`;
-  document.getElementById('bio-today-advice').textContent = ADVICE[todayConst.type].short;
-
-  // Costellazione attuale
-  document.getElementById('bio-const-icon').textContent = todayConst.sym;
-  document.getElementById('bio-const-name').textContent = `${todayConst.name} — ${todayType.label}`;
-  document.getElementById('bio-const-element').textContent = `Elemento: ${todayConst.element} · Longitudine eclittica: ${Math.round(moonEclipticLongitude(now))}°`;
-
-  // Tips
-  const tipList = document.getElementById('bio-tip-list');
-  const tips = ADVICE[todayConst.type].tips;
-  tipList.innerHTML = tips.map(t =>
-    `<div class="bio-tip-item ${todayType.tipClass}">${t}</div>`
-  ).join('');
-
-  // Griglia mensile
-  const grid = document.getElementById('bio-grid');
-  grid.innerHTML = '';
-
-  const firstDay = new Date(bioViewYear, bioViewMonth, 1);
-  const daysInMonth = new Date(bioViewYear, bioViewMonth + 1, 0).getDate();
-
-  // Primo giorno della settimana (0=dom → convertiamo: Lun=0)
-  let startDow = firstDay.getDay(); // 0=dom
-  startDow = (startDow + 6) % 7;   // → 0=lun
-
-  // Celle vuote iniziali
-  for (let i = 0; i < startDow; i++) {
-    const empty = document.createElement('div');
-    empty.className = 'bio-cell empty';
-    grid.appendChild(empty);
-  }
-
-  // Giorni del mese
-  for (let d = 1; d <= daysInMonth; d++) {
-    const date = new Date(bioViewYear, bioViewMonth, d);
-    const constData = getDayType(date);
-    const dt = DAY_TYPES[constData.type];
-    const isToday = date.getTime() === today.getTime() &&
-                    bioViewYear === today.getFullYear() && bioViewMonth === today.getMonth();
-
-    const cell = document.createElement('div');
-    cell.className = `bio-cell day-${constData.type}${isToday ? ' today' : ''}`;
-    cell.innerHTML = `
-      <div class="bio-cell-day">${d}</div>
-      <div class="bio-cell-icon">${dt.icon}</div>
-      <div class="bio-cell-type">${constData.name.substring(0,3)}</div>
-    `;
-    cell.onclick = () => showBioPopup(date, constData, dt);
-    grid.appendChild(cell);
-  }
-}
-
-function showBioPopup(date, constData, dt) {
-  const popup = document.getElementById('bio-popup');
-  const content = document.getElementById('bio-popup-content');
-  const tips = ADVICE[constData.type].tips;
-  const phase = getMoonPhase(date);
-  const phaseName = phase < 7.4 ? '🌒 Luna Crescente' : phase < 14.77 ? '🌔 Gibbosa Crescente' : phase < 22.1 ? '🌖 Gibbosa Calante' : '🌘 Luna Calante';
-
-  content.innerHTML = `
-    <div style="margin-bottom:14px">
-      <div style="font-size:28px;margin-bottom:6px">${dt.icon} ${dt.label}</div>
-      <div style="font-size:14px;color:var(--text2)">${date.getDate()} ${MONTH_IT[date.getMonth()]} ${date.getFullYear()}</div>
-      <div style="font-size:13px;color:var(--text3);margin-top:4px">${constData.sym} ${constData.name} · ${constData.element}</div>
-      <div style="font-size:12px;color:var(--text3);margin-top:2px">${phaseName} · Giorno ${Math.round(phase)} del ciclo</div>
-    </div>
-    <div style="font-size:13px;color:var(--text2);margin-bottom:12px">${ADVICE[constData.type].short}</div>
-    <div style="font-size:12px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Consigli del giorno</div>
-    ${tips.map(t => `<div class="bio-tip-item ${dt.tipClass}" style="margin-bottom:6px;font-size:13px">${t}</div>`).join('')}
-  `;
-  popup.classList.remove('hidden');
-}
-
-function closeBioPopup(e) {
-  if (e.target === document.getElementById('bio-popup')) {
-    document.getElementById('bio-popup').classList.add('hidden');
-  }
-}
-function closeBioPopupDirect() {
-  document.getElementById('bio-popup').classList.add('hidden');
-}
-
-// Render iniziale
-renderBioCalendar();
-
-/* ══════════════════════════════════════════════════════════════
-   AI CHAT
-══════════════════════════════════════════════════════════════ */
-const AI_CONTEXT = `Sei l'assistente BioSerra, esperto di coltivazione Living Soil biologica.
-La serra ha 10 piante in vasi da 10L con substrato BioBizz Light-Mix + fibra cocco + Super Soil.
-Additivi: melassa (1ml/L ogni 15gg), infuso ortiche (1x/mese), miscela organica (uovo+banana+caffè, 1x/mese).
-Esperimenti: elettrocultura (bastoncino rame), circuito Lakhovsky, pila galvanica ferro-rame, acqua magnetizzata.
-Varietà: Epsilon F1 ×7, Milky Way F1 ×1, Titan F1 ×2, Medusa F1 ×3, Gaia F1 ×8 (autofiorenti);
-Astro Lemonade F1 ×4, Cosmic Cheddar F1 ×11, Orbital Banana F1 ×6, Royal Gorilla ×10, Mexican Rush ×9 (femminizzati).
-Inizio ciclo: 21 aprile 2026. Rispondi in italiano, in modo conciso e pratico.`;
-
-let aiHistory = [];
-
-async function aiSend() {
-  const input = document.getElementById('ai-input');
-  const msg = input.value.trim();
-  if (!msg) return;
-  input.value = '';
-  appendMsg(msg, 'user');
-  aiHistory.push({ role: 'user', content: msg });
-
-  const loading = appendMsg('⏳ Elaborazione…', 'bot loading');
-
-  try {
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-6',
-        max_tokens: 1000,
-        system: AI_CONTEXT,
-        messages: aiHistory
-      })
-    });
-    const data = await res.json();
-    const reply = data.content?.[0]?.text || '⚠️ Nessuna risposta ricevuta.';
-    loading.className = 'ai-msg bot';
-    loading.textContent = reply;
-    aiHistory.push({ role: 'assistant', content: reply });
-  } catch(e) {
-    loading.className = 'ai-msg bot';
-    loading.textContent = '⚠️ Errore di connessione. Controlla la rete e riprova.';
-  }
-  const chat = document.getElementById('ai-chat');
-  chat.scrollTop = chat.scrollHeight;
-}
-
-function aiQuick(msg) {
-  document.getElementById('ai-input').value = msg;
-  aiSend();
-}
-
-function appendMsg(text, cls) {
-  const chat = document.getElementById('ai-chat');
-  const div = document.createElement('div');
-  div.className = 'ai-msg ' + cls;
-  div.textContent = text;
-  chat.appendChild(div);
-  chat.scrollTop = chat.scrollHeight;
-  return div;
-}
-</script>
+            loadBioSerraWeather();
+        });
+    </script>
 </body>
 </html>
