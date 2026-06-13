@@ -527,20 +527,51 @@
     <button onclick="loadWeather()" style="margin-top:12px;padding:8px 20px;background:var(--green);border:none;border-radius:8px;color:#fff;cursor:pointer;font-size:13px;">Riprova</button>
   </div>
   <div id="weather-content" style="display:none;">
+    <!-- Alert serra -->
+    <div id="w-serra-alert" style="display:none;border-radius:12px;padding:12px 14px;margin-bottom:12px;background:linear-gradient(135deg,rgba(239,83,80,0.15),rgba(229,57,53,0.08));border:1px solid rgba(239,83,80,0.4);color:#ef9a9a;font-size:13px;line-height:1.5;">
+      <span id="w-serra-alert-text"></span>
+    </div>
     <div class="card">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+        <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;">📍 Caserta CE · Ora locale</div>
+        <div style="font-size:11px;color:var(--text3);" id="w-lastupdate">—</div>
+      </div>
       <div class="weather-main">
         <div class="weather-icon" id="w-icon">☀️</div>
         <div>
           <div class="weather-temp" id="w-temp">—°</div>
           <div class="weather-desc" id="w-desc">—</div>
+          <div style="font-size:12px;color:var(--text3);margin-top:2px;">Percepita <span id="w-feels">—</span>°</div>
         </div>
       </div>
       <div class="weather-grid">
         <div class="weather-item"><div class="weather-item-icon">💧</div><div><div class="weather-item-val" id="w-humidity">—%</div><div class="weather-item-label">Umidità</div></div></div>
-        <div class="weather-item"><div class="weather-item-icon">☀️</div><div><div class="weather-item-val" id="w-uv">—</div><div class="weather-item-label">UV Index</div></div></div>
+        <div class="weather-item"><div class="weather-item-icon">🔆</div><div><div class="weather-item-val" id="w-uv">—</div><div class="weather-item-label">UV Index</div></div></div>
         <div class="weather-item"><div class="weather-item-icon">💨</div><div><div class="weather-item-val" id="w-wind">—</div><div class="weather-item-label">Vento km/h</div></div></div>
-        <div class="weather-item"><div class="weather-item-icon">🌡️</div><div><div class="weather-item-val" id="w-pressure">—</div><div class="weather-item-label">Pressione</div></div></div>
+        <div class="weather-item"><div class="weather-item-icon">🌡️</div><div><div class="weather-item-val" id="w-pressure">—</div><div class="weather-item-label">Pressione hPa</div></div></div>
+        <div class="weather-item"><div class="weather-item-icon">🌧️</div><div><div class="weather-item-val" id="w-rain">—</div><div class="weather-item-label">Pioggia oggi mm</div></div></div>
+        <div class="weather-item"><div class="weather-item-icon">💦</div><div><div class="weather-item-val" id="w-et">—</div><div class="weather-item-label">ETo mm/gg</div></div></div>
       </div>
+      <div style="display:flex;gap:10px;margin-top:10px;">
+        <div style="flex:1;background:var(--card2);border-radius:8px;padding:8px 10px;display:flex;align-items:center;gap:8px;">
+          <span style="font-size:18px;">🌅</span>
+          <div><div style="font-size:14px;font-weight:600;" id="w-sunrise">—</div><div style="font-size:11px;color:var(--text3);">Alba</div></div>
+        </div>
+        <div style="flex:1;background:var(--card2);border-radius:8px;padding:8px 10px;display:flex;align-items:center;gap:8px;">
+          <span style="font-size:18px;">🌇</span>
+          <div><div style="font-size:14px;font-weight:600;" id="w-sunset">—</div><div style="font-size:11px;color:var(--text3);">Tramonto</div></div>
+        </div>
+        <div style="flex:1;background:var(--card2);border-radius:8px;padding:8px 10px;display:flex;align-items:center;gap:8px;">
+          <span style="font-size:18px;">⏱️</span>
+          <div><div style="font-size:14px;font-weight:600;" id="w-daylen">—h</div><div style="font-size:11px;color:var(--text3);">Fotoperiodo</div></div>
+        </div>
+      </div>
+    </div>
+    <!-- Consiglio irrigazione -->
+    <div id="w-irrig-card" class="card" style="background:linear-gradient(135deg,rgba(66,165,200,0.08),rgba(30,122,168,0.05));border-color:rgba(66,165,200,0.25);">
+      <div class="card-title" style="color:var(--blue);">💧 Consiglio Irrigazione Serra</div>
+      <div style="font-size:14px;font-weight:600;margin-bottom:4px;" id="w-irrig-main">Calcolo…</div>
+      <div style="font-size:13px;color:var(--text2);line-height:1.5;" id="w-irrig-detail"></div>
     </div>
     <div class="card">
       <div class="card-title">📡 Previsioni 7 giorni</div>
@@ -591,6 +622,10 @@
     <div style="font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:10px;" id="agriAdviceDetail"></div>
     <div style="display:flex;flex-wrap:wrap;gap:6px;" id="agriAdviceTags"></div>
   </div>
+  <div style="background:linear-gradient(135deg,rgba(76,175,118,0.06),rgba(46,125,82,0.04));border:1px solid rgba(76,175,118,0.2);border-radius:12px;padding:14px;margin-bottom:12px;">
+    <div style="font-size:11px;font-weight:700;color:var(--green3);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">🌱 La tua serra — azioni consigliate</div>
+    <div style="font-size:13px;color:var(--text2);line-height:1.6;" id="agriAdviceSerra">—</div>
+  </div>
   <div class="card">
     <div class="card-title">Prossimi 7 giorni</div>
     <div id="moonStrip" style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;"></div>
@@ -631,6 +666,9 @@
           <div class="bio-const-element" id="bio-const-element">—</div>
         </div>
       </div>
+    </div>
+    <div style="margin-top:10px;padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:6px;border-left:3px solid rgba(76,175,118,0.4);">
+      <div style="font-size:11px;color:var(--text3);line-height:1.5;">⚙️ <strong>Algoritmo:</strong> Posizione della Luna calcolata con formule di Jean Meeus (Astronomical Algorithms). Costellazioni secondo la tradizione Thun/Steiner — precisione ±1°, sufficiente per la biodinamica.</div>
     </div>
   </div>
 
@@ -889,24 +927,74 @@ async function loadWeather() {
   const content = document.getElementById('weather-content');
   loading.style.display = 'block'; error.style.display = 'none'; content.style.display = 'none';
   try {
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${CASERTA.lat}&longitude=${CASERTA.lon}&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m,surface_pressure,uv_index&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Europe%2FRome&forecast_days=7`;
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${CASERTA.lat}&longitude=${CASERTA.lon}`
+      + `&current=temperature_2m,apparent_temperature,relative_humidity_2m,weather_code,wind_speed_10m,surface_pressure,uv_index,rain`
+      + `&daily=weather_code,temperature_2m_max,temperature_2m_min,rain_sum,et0_fao_evapotranspiration,sunrise,sunset`
+      + `&timezone=Europe%2FRome&forecast_days=7`;
     const res = await fetch(url);
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const d = await res.json();
     const c = d.current;
+    const now = new Date();
+    document.getElementById('w-lastupdate').textContent = now.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
     document.getElementById('w-temp').textContent = Math.round(c.temperature_2m) + '°';
-    document.getElementById('w-desc').textContent = (WMO[c.weather_code] || 'Caserta CE');
+    document.getElementById('w-feels').textContent = Math.round(c.apparent_temperature);
+    document.getElementById('w-desc').textContent = WMO[c.weather_code] || '—';
     document.getElementById('w-icon').textContent = WMO_ICONS[c.weather_code] || '🌡️';
     document.getElementById('w-humidity').textContent = c.relative_humidity_2m + '%';
     document.getElementById('w-uv').textContent = (c.uv_index ?? '—');
     document.getElementById('w-wind').textContent = Math.round(c.wind_speed_10m) + ' km/h';
     document.getElementById('w-pressure').textContent = Math.round(c.surface_pressure) + ' hPa';
+    document.getElementById('w-rain').textContent = (d.daily.rain_sum[0] ?? 0).toFixed(1) + ' mm';
+    const et = d.daily.et0_fao_evapotranspiration[0];
+    document.getElementById('w-et').textContent = et != null ? et.toFixed(1) + ' mm' : '—';
+    // Alba / tramonto / fotoperiodo
+    const srStr = d.daily.sunrise[0]; const ssStr = d.daily.sunset[0];
+    const sr = new Date(srStr); const ss = new Date(ssStr);
+    document.getElementById('w-sunrise').textContent = sr.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+    document.getElementById('w-sunset').textContent = ss.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+    const dayMinutes = Math.round((ss-sr)/60000);
+    document.getElementById('w-daylen').textContent = Math.floor(dayMinutes/60)+'h'+(dayMinutes%60>0?String(dayMinutes%60).padStart(2,'0'):'');
+    // Consiglio irrigazione basato su ETo e pioggia
+    const rain = d.daily.rain_sum[0] || 0;
+    const etVal = et || 0;
+    const netNeed = Math.max(0, etVal - rain);
+    let irrigMain, irrigDetail;
+    if (rain > 5) {
+      irrigMain = '🌧️ Sospendi irrigazione automatica';
+      irrigDetail = `Pioggia prevista ${rain.toFixed(1)} mm > ETo ${etVal.toFixed(1)} mm. Disattiva il timer della pompa solare per oggi per evitare eccesso idrico nei vasi in tessuto.`;
+    } else if (netNeed < 2) {
+      irrigMain = '✅ Irrigazione normale — condizioni ideali';
+      irrigDetail = `Fabbisogno idrico netto: ${netNeed.toFixed(1)} mm. Mantieni la frequenza impostata. Verifica che i bordi dei vasi siano umidi.`;
+    } else if (netNeed < 4) {
+      irrigMain = '💧 Leggero aumento consigliato';
+      irrigDetail = `ETo ${etVal.toFixed(1)} mm, pioggia ${rain.toFixed(1)} mm → fabbisogno netto ${netNeed.toFixed(1)} mm. Valuta 1 irrigazione extra oggi o aumenta la durata del ciclo.`;
+    } else {
+      irrigMain = '⚠️ Caldo secco — aumenta irrigazione';
+      irrigDetail = `Alta evapotraspirazione: ${etVal.toFixed(1)} mm, pioggia ${rain.toFixed(1)} mm → fabbisogno netto ${netNeed.toFixed(1)} mm. Bagna manualmente i bordi dei vasi e aggiungi 1 ciclo extra di pompa.`;
+    }
+    document.getElementById('w-irrig-main').textContent = irrigMain;
+    document.getElementById('w-irrig-detail').textContent = irrigDetail;
+    // Alert serra
+    const alert = document.getElementById('w-serra-alert');
+    const alertText = document.getElementById('w-serra-alert-text');
+    const temp = c.temperature_2m; const hum = c.relative_humidity_2m; const uv = c.uv_index;
+    const alerts = [];
+    if (temp > 35) alerts.push('🌡️ Temperatura critica (' + Math.round(temp) + '°C) — ombreggia la serra e aumenta l\'irrigazione');
+    if (hum > 80) alerts.push('💧 Umidità alta (' + hum + '%) — rischio muffe. Ventila la mini-serra');
+    if (hum < 30) alerts.push('🌵 Umidità bassa (' + hum + '%) — stress idrico. Bagna i bordi dei vasi');
+    if (uv != null && uv > 8) alerts.push('☀️ UV molto alto (' + uv + ') — considera un pannello ombreggiante sulle piante delicate');
+    if (alerts.length > 0) { alertText.innerHTML = '⚠️ <strong>Alert Serra:</strong><br>' + alerts.join('<br>'); alert.style.display='block'; }
+    else alert.style.display = 'none';
+    // Previsioni 7 giorni
     const fc = document.getElementById('w-forecast');
     fc.innerHTML = d.daily.time.map((t,i) => {
-      const dt = new Date(t); const icon = WMO_ICONS[d.daily.weather_code[i]] || '🌡️';
+      const dt = new Date(t+'T12:00'); const icon = WMO_ICONS[d.daily.weather_code[i]] || '🌡️';
+      const r = (d.daily.rain_sum[i]||0).toFixed(1);
       return `<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <span style="font-size:13px;color:var(--text2);width:36px;">${i===0?'Oggi':DAYS_IT[dt.getDay()]}</span>
+        <span style="font-size:13px;color:var(--text2);min-width:32px;">${i===0?'Oggi':DAYS_IT[dt.getDay()]}</span>
         <span style="font-size:20px;">${icon}</span>
+        <span style="font-size:11px;color:#4fc3f7;">${r>0?'💧'+r+'mm':''}</span>
         <span style="font-size:13px;color:var(--text2);">${Math.round(d.daily.temperature_2m_min[i])}°</span>
         <span style="font-size:13px;font-weight:600;">${Math.round(d.daily.temperature_2m_max[i])}°</span>
       </div>`;
@@ -920,7 +1008,7 @@ async function loadWeather() {
 }
 
 /* ══════════════════════════════════════════════════════════════
-   LUNA — algoritmo Meeus preciso
+   LUNA — algoritmo Meeus preciso con countdown ore/minuti
 ══════════════════════════════════════════════════════════════ */
 const LUNAR_CYCLE = 29.53058867;
 const KNOWN_NEW_MOON_JD = 2451549.5;
@@ -937,11 +1025,41 @@ function getMoonPhase(age){const p=age/LUNAR_CYCLE;
   if(p<0.75)return{name:'Gibbosa Calante',emoji:'🌖',code:'waning_gibbous'};
   if(p<0.80)return{name:'Ultimo Quarto',emoji:'🌗',code:'last_quarter'};
   return{name:'Luna Calante',emoji:'🌘',code:'waning_crescent'};}
-function getAdvice(code){const a={new:{main:'Giorno di pausa e programmazione',detail:'Pianifica, prepara substrati e riorganizza l\'irrigazione. Ottimo per infuso di humus.',tags:['⚙️ Manutenzione','📋 Pianificazione']},waxing_crescent:{main:'Crescente — Stimola la crescita',detail:'La linfa sale verso foglie e fusti. Somministra ortiche e melassa. Ottimo assorbimento.',tags:['🌿 Crescita','🧪 Ortiche+Melassa']},first_quarter:{main:'Primo Quarto — Massima energia',detail:'Intenso sviluppo vegetativo. Ideale per trapianti e miscela organica.',tags:['🌱 Trapianto','🧪 Miscela organica']},waxing_gibbous:{main:'Gibbosa Crescente — Pre-fioritura',detail:'Prepara la fioritura: tè di banana e cenere per potassio.',tags:['🍌 Tè banana','🌸 Pre-fioritura']},full:{main:'Luna Piena — Massima vitalità',detail:'Massima energia. Documenta esperimenti e osserva fiori e resine.',tags:['📊 Documenta','⚡ Verifica esperimenti']},waning_gibbous:{main:'Gibbosa Calante — Radici',detail:'La linfa scende verso le radici. Somministra humus e verifica pila galvanica.',tags:['🌿 Radici','🧫 Humus']},last_quarter:{main:'Ultimo Quarto — Rinnovamento',detail:'Sciacqua serbatoio, rimuovi foglie malate, rinnova infuso di humus.',tags:['🗑️ Pulizia','💧 Rinnovo serbatoio']},waning_crescent:{main:'Luna Calante — Riposo',detail:'Fase di minima energia. Osserva, fotografa il diario di coltivazione.',tags:['📸 Diario','📋 Osservazione']}};return a[code]||a.new;}
+
+function getAdvice(code){const a={
+  new:{main:'⚙️ Pausa attiva — prepara substrati',detail:'Pianifica la settimana. Ideale per preparare l\'infuso di ortiche, sciacquare il serbatoio e rinnovare l\'humus. Evita trapianti o operazioni invasive.',tags:['🧫 Rinnova humus','📋 Pianifica','💧 Svuota serbatoio'],
+    serra:'🌿 Per Epsilon F1, Gaia F1 (autofiorenti): controlla il timer della pompa e regola la frequenza. Per i femminizzati in veg: giorno neutro, nessuna operazione urgente.'},
+  waxing_crescent:{main:'🌿 Crescente — massima crescita vegetativa',detail:'La linfa sale verso foglie e fusti. Somministra infuso di ortiche diluito 1:10 (1-2L/vaso) e melassa (1ml/L). Le piante assorbono meglio in fase crescente.',tags:['🌿 Ortiche+Melassa','🌱 Crescita attiva','⬆️ Linfa in salita'],
+    serra:'🔬 Autofiorenti in fioritura (Epsilon, Gaia, Medusa): applica tè di banana e cenere. Femminizzati in veg (Astro Lemonade, Cosmic Cheddar, Orbital Banana): ottimo per somministrare miscela organica.'},
+  first_quarter:{main:'🌱 Primo Quarto — picco energetico',detail:'Massimo sviluppo vegetativo. Ideale per trapianti, rinvasi e applicazione della miscela organica (gusci+banana+caffè, 1 cucchiaio/vaso).',tags:['🌱 Trapianto OK','🧪 Miscela organica','💪 Massima energia'],
+    serra:'⚡ Attiva o controlla la pila galvanica ferro-rame. Verifica i circuiti di Lakhovsky. Ottimo momento per osservare e fotografare la crescita di tutte le 10 varietà.'},
+  waxing_gibbous:{main:'🌸 Gibbosa Crescente — prepara la fioritura',detail:'La pianta prepara la fioritura. Somministra tè di banana con cenere di legna (1:5) per potassio extra. Controlla i gocciolatori e la posizione dei Geomag.',tags:['🍌 Tè banana+cenere','🌸 Pre-fioritura','🧲 Geomag OK'],
+    serra:'🍊 Per le autofiorenti in piena fioritura: aumenta potassio con tè banana ogni 2 settimane. Royal Gorilla e Mexican Rush (fioritura ottobre): mantieni veg ottimale con miscela organica.'},
+  full:{main:'🌕 Luna Piena — massima vitalità',detail:'Picco di energia. Documenta visivamente gli esperimenti (elettrocultura, pila galvanica, cerchi di Lakhovsky). Osserva le resine sulle piante in fioritura.',tags:['📊 Documenta esperimenti','⚡ Verifica circuiti','🔍 Osserva resine'],
+    serra:'📸 Fotografa tutte e 10 le piante e registra le osservazioni. Controlla il Pantacle di rame e la pila galvanica. Ottimo per confrontare piante con/senza esperimenti.'},
+  waning_gibbous:{main:'🌿 Gibbosa Calante — nutrimento delle radici',detail:'La linfa scende verso le radici. Ideale per somministrare humus e infuso di ortiche. La pila galvanica ferro-rame è più efficace in questa fase.',tags:['🌿 Humus radici','🧫 Infuso ortiche','⚗️ Pila galvanica'],
+    serra:'🌱 Versa infuso di humus nella tanica (5L + 100-150g BioBizz Worm Humus). Per le autofiorenti in maturazione (mesi 7-8): posiziona mela o banana matura nella serra per etilene.'},
+  last_quarter:{main:'♻️ Ultimo Quarto — rinnovamento e pulizia',detail:'Fase di reset. Sciacqua il serbatoio da 50L, rimuovi foglie morte o malate, controlla i tubi per eventuali ostruzioni.',tags:['🗑️ Pulizia serbatoio','💧 Rinnovo irrigazione','🔧 Manutenzione'],
+    serra:'🔧 Controlla l\'integrità di: gocciolatori (10 pz), tubo principale, fissaggio Geomag, archi Pantacle tra i vasi. Agita la tanica 15 secondi. Bagna manualmente i bordi di tutti i vasi.'},
+  waning_crescent:{main:'📸 Luna Calante — riposo e osservazione',detail:'Fase di minima energia. Osserva, fotografa, annota il diario di coltivazione. Preparare il prossimo infuso di ortiche lasciandolo macerare.',tags:['📸 Diario coltivazione','📋 Prepara ortiche','🌙 Riposo delle piante'],
+    serra:'🌙 Prepara in anticipo la miscela organica (essicca e tritando gusci d\'uovo, bucce banana e fondi caffè). Pianifica le operazioni del mese successivo. Giorno ideale per riordinare la mini-serra.'}
+};return a[code]||a.new;}
+
 function fmtIT(d){const m=['gen','feb','mar','apr','mag','giu','lug','ago','set','ott','nov','dic'],dn=['Dom','Lun','Mar','Mer','Gio','Ven','Sab'];return`${dn[d.getDay()]} ${d.getDate()} ${m[d.getMonth()]}`;}
 function fmtFull(d){const m=['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];return`${d.getDate()} ${m[d.getMonth()]} ${d.getFullYear()}`;}
-function daysToPhase(age,frac){let diff=frac-age/LUNAR_CYCLE;if(diff<=0.034)diff+=1;return Math.round(diff*LUNAR_CYCLE);}
-function nextMoonDate(today,frac){const jd=dateToJD(today),age=getMoonAge(today);let d=daysToPhase(age,frac);if(d===0)d=Math.round(LUNAR_CYCLE);return jdToDate(jd+d);}
+
+// Countdown preciso a prossima fase (restituisce {days, hours} con JD preciso)
+function nextPhaseCountdown(today, targetFrac) {
+  const age = getMoonAge(today);
+  const currentFrac = age / LUNAR_CYCLE;
+  let diff = targetFrac - currentFrac;
+  if (diff <= 0.001) diff += 1;
+  const daysExact = diff * LUNAR_CYCLE;
+  const days = Math.floor(daysExact);
+  const hours = Math.round((daysExact - days) * 24);
+  const targetDate = new Date(today.getTime() + daysExact * 86400000);
+  return { days, hours, date: targetDate };
+}
 
 function renderLunarSection(){
   const today=new Date(),age=getMoonAge(today),illum=getMoonIllum(age),phase=getMoonPhase(age),advice=getAdvice(phase.code);
@@ -951,15 +1069,25 @@ function renderLunarSection(){
   document.getElementById('moonProgressBar').style.width=illum+'%';
   document.getElementById('moonDateToday').textContent=fmtFull(today);
   document.getElementById('moonAge').textContent=Math.round(age);
-  const fullDate=nextMoonDate(today,0.5),newDate=nextMoonDate(today,0);
-  const dFull=Math.round((fullDate-today)/86400000),dNew=Math.round((newDate-today)/86400000);
-  document.getElementById('daysToFull').textContent=dFull===0?'Oggi':dFull+' gg';
-  document.getElementById('daysToNew').textContent=dNew===0?'Oggi':dNew+' gg';
-  document.getElementById('dateFullMoon').textContent=fmtIT(fullDate);
-  document.getElementById('dateNewMoon').textContent=fmtIT(newDate);
+
+  // Countdown preciso luna piena e nuova
+  const fullInfo = nextPhaseCountdown(today, 0.5);
+  const newInfo = nextPhaseCountdown(today, 0);
+  const fullLabel = fullInfo.days === 0 ? (fullInfo.hours === 0 ? 'Oggi!' : fullInfo.hours+'h') : (fullInfo.days === 1 ? '1 giorno' : fullInfo.days+' gg');
+  const newLabel  = newInfo.days === 0  ? (newInfo.hours === 0  ? 'Oggi!' : newInfo.hours+'h')  : (newInfo.days === 1  ? '1 giorno' : newInfo.days+' gg');
+  document.getElementById('daysToFull').textContent = fullLabel;
+  document.getElementById('daysToNew').textContent  = newLabel;
+  document.getElementById('dateFullMoon').textContent = fmtIT(fullInfo.date) + (fullInfo.days < 2 ? ' ~'+fullInfo.hours+'h' : '');
+  document.getElementById('dateNewMoon').textContent  = fmtIT(newInfo.date)  + (newInfo.days  < 2 ? ' ~'+newInfo.hours+'h'  : '');
+
   document.getElementById('agriAdviceMain').textContent=advice.main;
   document.getElementById('agriAdviceDetail').textContent=advice.detail;
   document.getElementById('agriAdviceTags').innerHTML=advice.tags.map(t=>`<span class="badge badge-green">${t}</span>`).join('');
+
+  // Box consiglio specifico per la serra
+  const serraBox = document.getElementById('agriAdviceSerra');
+  if(serraBox) serraBox.textContent = advice.serra || '';
+
   const strip=document.getElementById('moonStrip');
   strip.innerHTML='';
   const dn=['Dom','Lun','Mar','Mer','Gio','Ven','Sab'];
@@ -968,11 +1096,11 @@ function renderLunarSection(){
       <div style="font-size:22px;">${sy}</div><div style="font-size:9px;color:var(--text3);">${i===0?'Oggi':dn[d.getDay()]}</div>
       <div style="font-size:9px;color:var(--text3);">${d.getDate()}/${d.getMonth()+1}</div>
       <div style="font-size:11px;font-weight:600;color:var(--text2);">${il}%</div></div>`;}
+
   const phases=[{code:'new',e:'🌑',n:'Luna Nuova',r:'0%'},{code:'waxing_crescent',e:'🌒',n:'Crescente',r:'1–49%'},{code:'first_quarter',e:'🌓',n:'Primo Quarto',r:'~50%'},{code:'waxing_gibbous',e:'🌔',n:'Gibbosa Crescente',r:'51–99%'},{code:'full',e:'🌕',n:'Luna Piena',r:'100%'},{code:'waning_gibbous',e:'🌖',n:'Gibbosa Calante',r:'99–51%'},{code:'last_quarter',e:'🌗',n:'Ultimo Quarto',r:'~50%'},{code:'waning_crescent',e:'🌘',n:'Calante',r:'49–1%'}];
   document.querySelector('#phasesTable tbody').innerHTML=phases.map(p=>`<tr style="${p.code===phase.code?'color:#4aaf5e;font-weight:600;background:rgba(74,175,94,0.06);':'color:var(--text2);'}"><td style="padding:8px 4px;border-bottom:1px solid rgba(255,255,255,0.05);">${p.e}</td><td style="padding:8px 4px;border-bottom:1px solid rgba(255,255,255,0.05);">${p.n}${p.code===phase.code?' ← oggi':''}</td><td style="padding:8px 4px;border-bottom:1px solid rgba(255,255,255,0.05);">${p.r}</td></tr>`).join('');
-  document.getElementById('moonCycleInfo').innerHTML=`🌕 Luna Piena: <strong>${fmtIT(fullDate)}</strong> (tra ${dFull} gg)<br>🌑 Luna Nuova: <strong>${fmtIT(newDate)}</strong> (tra ${dNew} gg)<br>⭕ Età luna: <strong>${Math.round(age)} giorni</strong> su ${Math.round(LUNAR_CYCLE)}<br>💡 Illuminazione: <strong>${illum}%</strong>`;
+  document.getElementById('moonCycleInfo').innerHTML=`🌕 Luna Piena: <strong>${fmtIT(fullInfo.date)}</strong> (tra ${fullLabel})<br>🌑 Luna Nuova: <strong>${fmtIT(newInfo.date)}</strong> (tra ${newLabel})<br>⭕ Età luna: <strong>${Math.round(age)} giorni</strong> su ${Math.round(LUNAR_CYCLE)}<br>💡 Illuminazione: <strong>${illum}%</strong>`;
 }
-renderMoon();
 
 /* ══════════════════════════════════════════════════════════════
    BIODINAMICA — ALGORITMO STEINER
@@ -1028,43 +1156,44 @@ const DAY_TYPES = {
 
 const ADVICE = {
   frutto: {
-    short: 'Ideale per raccolta, fioritura e produzione di resina.',
+    short: 'Giorno Frutto — Raccolta, resina, aromi. Ottimale per le cime mature.',
     tips: [
-      '🍊 Giornata ottimale per la raccolta delle cime più mature.',
-      '✂️ Se devi potare, fallo oggi — massima concentrazione di aromi.',
-      '💧 Puoi ridurre leggermente l\'irrigazione: la pianta è meno idrofila.',
-      '🧪 Evita additivi azotati oggi — favorisci potassio e fosforo.',
-      '🔭 Osserva la densità trichomi: i giorni frutto evidenziano la maturazione.',
+      '🍊 Raccolta: se le autofiorenti (Epsilon F1, Gaia F1, Medusa F1) mostrano trichomi ambrati ≥30%, oggi è il giorno migliore per tagliare.',
+      '✂️ Potatura e lollipopping: massima concentrazione di terpeni — la linfa è al picco nei frutti. Rimuovi fan leaves basse per migliorare la ventilazione.',
+      '💧 Riduci leggermente l\'irrigazione oggi del 10-15%: i giorni Frutto riducono la domanda idrica nelle foglie.',
+      '🧪 Evita azoto (fondi di caffè). Favorisci potassio: tè di banana con cenere per Titan F1, Orbital Banana F1 in fioritura.',
+      '🔭 Osserva con lente i trichomi delle autofiorenti in maturazione — i giorni Frutto ne evidenziano la massima densità e maturità.',
+      '🌡️ Controlla la temperatura della serra: tienila sotto i 24°C per massimizzare la produzione di resina.',
     ]
   },
   fiore: {
-    short: 'Ottimo per profumi, aromi e stimolare la fioritura.',
+    short: 'Giorno Fiore — Aromi, terpeni, fioritura attiva. Stimola con potassio.',
     tips: [
-      '🌸 Giornata ideale per stimolare la fioritura con tè di banana e cenere.',
-      '👃 Gli aromi sono più intensi — momento giusto per valutare i terpeni.',
-      '💨 Assicurati una buona circolazione d\'aria: i fiori ne beneficiano.',
-      '🌡️ Tieni temperatura sotto i 26°C per preservare i terpeni volatili.',
-      '🚿 Irrigazione normale — i giorni fiore non richiedono variazioni idriche.',
+      '🌸 Tè di banana e cenere (ogni 2 settimane, mesi 5-8): bolli 3-4 bucce in 1L per 15 min, filtra, aggiungi 1 cucchiaino cenere, diluisci 1:5. Somministra oggi.',
+      '👃 Astro Lemonade F1, Orbital Banana F1 e Cosmic Cheddar F1: i giorni Fiore esaltano i profili terpenici — ottimo per valutare aroma e sviluppo.',
+      '💨 Ventilazione: i giorni Fiore favoriscono la produzione di terpeni volatili — assicura buona circolazione d\'aria nella mini-serra.',
+      '🌡️ Temperatura ideale: 22-26°C. Sotto i 20°C i terpeni si conservano meglio ma la crescita rallenta.',
+      '🚫 Evita spruzzi fogliari e acqua sulle cime: i giorni Fiore aumentano la sensibilità a muffe su gemme umide.',
     ]
   },
   radice: {
-    short: 'Favorevole per radici, substrato e vita microbica.',
+    short: 'Giorno Radice — Substrato, microbi, nutrimento radicale. Ottimale per humus.',
     tips: [
-      '🌿 Giornata perfetta per la manutenzione del substrato (humus, miscela organica).',
-      '🦠 Somministra l\'infuso di ortiche oggi — massima assorbibilità radicale.',
-      '💧 Aumenta leggermente l\'irrigazione: le radici sono più attive.',
-      '⚗️ Controlla la pila galvanica ferro-rame — la conducibilità è più alta.',
-      '🔍 Osserva i bordi dei vasi: il tessuto traspirante "air prunes" le radici.',
+      '🌿 Giornata perfetta per la Giornata Biologica mensile: infuso ortiche (1-2L/vaso diluito 1:10) + miscela organica (1 cucchiaio grande/vaso) + rinnovo humus in tanica (5L + 100-150g BioBizz Worm Humus).',
+      '🦠 I microbi del suolo sono più attivi oggi — la melassa (1ml/L) somministrata in giorni Radice ha effetto potenziato.',
+      '⚗️ Verifica la pila galvanica ferro-rame: il terreno umido in giorni Radice massimizza la conduzione galvanica. Versa acqua con melassa sopra il chiodo.',
+      '💧 Bagna i bordi di tutti e 10 i vasi in tessuto manualmente — le radici perimetrali sono particolarmente attive nei giorni Radice.',
+      '🔍 Controlla i vasi sollevando: se il peso è molto ridotto, aumenta la durata del ciclo di irrigazione automatica.',
     ]
   },
   foglia: {
-    short: 'Ideale per crescita vegetativa e salute fogliare.',
+    short: 'Giorno Foglia — Crescita vegetativa, stomi, assorbimento idrico massimo.',
     tips: [
-      '💧 Le piante assorbono più acqua oggi — controlla il livello del serbatoio.',
-      '🍃 Ottimo per osservare la salute fogliare e diagnosticare carenze.',
-      '🌱 Giorni foglia favoriscono la crescita vegetativa — più luce se possibile.',
-      '🧪 Evita trattamenti fogliari invasivi — le foglie sono più sensibili.',
-      '🔄 Agita il serbatoio e controlla i gocciolatori — massima domanda idrica.',
+      '💧 I giorni Foglia aumentano la domanda idrica — controlla il livello della tanica da 50L e verifica che tutti i 10 gocciolatori funzionino.',
+      '🍃 Diagnosi fogliare: osserva ingiallimenti (carenza azoto o ferro), macchie (Botrite, Septoria), o deformazioni. I femminizzati in veg (Royal Gorilla, Mexican Rush) sono nella fase di massima crescita fogliare.',
+      '🌱 Escavatori di luce (dischi Mylar): verifica che i dischi siano in posizione e riflettano la luce sulle foglie inferiori — gli stomi ventrali assorbono meglio nei giorni Foglia.',
+      '🧲 Controlla la polarità dei Geomag sui gocciolatori — l\'acqua strutturata in giorni Foglia dovrebbe aumentare la turgidità fogliare.',
+      '🔄 Agita il serbatoio per 15 secondi — l\'ossigenazione dell\'acqua è particolarmente utile in giorni Foglia per il metabolismo idrico delle piante.',
     ]
   }
 };
@@ -1327,3 +1456,4 @@ loadWeather();
 </script>
 </body>
 </html>
+
