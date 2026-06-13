@@ -138,6 +138,53 @@
   .plant-name { font-size: 14px; font-weight: 600; color: var(--text); }
   .plant-detail { font-size: 12px; color: var(--text3); margin-top: 2px; }
 
+  /* ── PIANTE — Timeline & Germinazione ── */
+  .plant-card-full {
+    background: var(--card2); border: 1px solid var(--border);
+    border-radius: var(--radius-sm); padding: 12px;
+    margin-bottom: 10px;
+  }
+  .plant-card-header {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 10px;
+  }
+  .germ-row {
+    display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap;
+  }
+  .germ-label { font-size: 12px; color: var(--text3); white-space: nowrap; }
+  .germ-input {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; color: var(--text); font-size: 13px;
+    padding: 5px 10px; cursor: pointer; flex: 1; min-width: 140px; max-width: 200px;
+  }
+  .germ-input:focus { border-color: var(--green2); outline: none; }
+  .timeline-box { margin-top: 6px; }
+  .tl-empty { font-size: 12px; color: var(--text3); font-style: italic; padding: 4px 0; }
+  .tl-step { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 4px; }
+  .tl-dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 3px; flex-shrink: 0; }
+  .tl-dot-germ  { background: var(--green3); }
+  .tl-dot-veg   { background: var(--blue); }
+  .tl-dot-fior  { background: var(--purple); }
+  .tl-dot-rec   { background: var(--orange); }
+  .tl-dot-ess   { background: var(--yellow); }
+  .tl-content { flex: 1; min-width: 0; }
+  .tl-phase { font-size: 12px; font-weight: 700; color: var(--text2); }
+  .tl-date  { font-size: 11px; color: var(--text3); margin-top: 1px; }
+  .tl-days  { font-size: 11px; color: var(--green3); }
+  .tl-today-tag {
+    display:inline-block; background:var(--green2); color:var(--text);
+    border-radius:4px; padding:1px 5px; font-size:10px; font-weight:700;
+    margin-left:6px; vertical-align:middle;
+  }
+  .tl-past { opacity: 0.5; }
+  .tl-progress-wrap { margin: 8px 0 4px; }
+  .tl-progress-label { font-size:11px;color:var(--text3);margin-bottom:4px; }
+  .tl-progress-track { height:6px;background:var(--card);border-radius:3px;overflow:hidden; }
+  .tl-progress-fill {
+    height:100%;border-radius:3px;
+    background:linear-gradient(90deg,var(--green2),var(--green3));
+    transition:width 0.4s;
+  }
+
   /* ── METEO ── */
   .weather-main {
     display: flex; align-items: center; gap: 14px; margin-bottom: 14px;
@@ -523,18 +570,214 @@
     <div class="stat-box"><div class="stat-num">5</div><div class="stat-label">Auto</div></div>
     <div class="stat-box"><div class="stat-num">5</div><div class="stat-label">Femm.</div></div>
   </div>
+
+  <!-- MOLTIPLICATORE ORE DI LUCE -->
+  <div class="card" style="margin-bottom:14px;">
+    <div class="card-title">☀️ Moltiplicatore Ore di Luce</div>
+    <div style="font-size:12px;color:var(--text3);margin-bottom:10px;">Imposta le ore di luce attuali — tutte le timeline si ricalcolano in automatico</div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+      <span style="font-size:13px;color:var(--text2);">Ore attuali:</span>
+      <div style="display:flex;align-items:center;gap:8px;flex:1;">
+        <input type="range" id="light-hours-slider" min="1" max="24" step="0.5" value="16"
+          oninput="updateLightHours(this.value)"
+          style="flex:1;accent-color:var(--green);height:6px;cursor:pointer;">
+        <div style="display:flex;align-items:center;gap:4px;">
+          <input type="number" id="light-hours-input" min="1" max="24" step="0.5" value="16"
+            oninput="updateLightHours(this.value)"
+            style="width:54px;background:var(--card2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:15px;font-weight:700;text-align:center;padding:4px 6px;">
+          <span style="font-size:13px;color:var(--text3);">h</span>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <button onclick="updateLightHours(12)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">12h</button>
+      <button onclick="updateLightHours(14)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">14h</button>
+      <button onclick="updateLightHours(16)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">16h</button>
+      <button onclick="updateLightHours(18)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">18h</button>
+      <button onclick="updateLightHours(20)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">20h</button>
+    </div>
+    <div style="margin-top:10px;padding:8px 12px;background:var(--bg3);border-radius:8px;font-size:12px;color:var(--text3);">
+      Formula: <span style="color:var(--green3);">giorni reali = giorni produttore × (ore ideali ÷ ore tue)</span><br>
+      Auto: ore ideali 18h · Femm.: ore ideali 12h
+    </div>
+  </div>
+
+  <!-- AUTOFIORENTI -->
   <div class="plant-group-label">Autofiorenti</div>
-  <div class="plant-card"><div class="plant-icon">🌸</div><div class="plant-info"><div class="plant-name">Epsilon F1 ×7</div><div class="plant-detail">50–70 cm · Raccolta: 60 gg dalla germ.</div></div><span class="badge badge-green">Attiva</span></div>
-  <div class="plant-card"><div class="plant-icon">🌙</div><div class="plant-info"><div class="plant-name">Milky Way F1 ×1</div><div class="plant-detail">55–75 cm · Raccolta: 70–75 gg</div></div><span class="badge badge-green">Attiva</span></div>
-  <div class="plant-card"><div class="plant-icon">⚡</div><div class="plant-info"><div class="plant-name">Titan F1 ×2</div><div class="plant-detail">55–75 cm · Raccolta: 70–75 gg</div></div><span class="badge badge-green">Attiva</span></div>
-  <div class="plant-card"><div class="plant-icon">🪼</div><div class="plant-info"><div class="plant-name">Medusa F1 ×3</div><div class="plant-detail">60–90 cm · Raccolta: 70–75 gg</div></div><span class="badge badge-green">Attiva</span></div>
-  <div class="plant-card"><div class="plant-icon">🌍</div><div class="plant-info"><div class="plant-name">Gaia F1 ×8</div><div class="plant-detail">50–70 cm · Raccolta: 65–70 gg</div></div><span class="badge badge-green">Attiva</span></div>
+
+  <!-- Epsilon F1 -->
+  <div class="plant-card-full" id="plant-7">
+    <div class="plant-card-header">
+      <div class="plant-icon">🌸</div>
+      <div class="plant-info">
+        <div class="plant-name">Epsilon F1 ×7</div>
+        <div class="plant-detail">50–70 cm · Autofiorente · Raccolta produttore: 60 gg</div>
+      </div>
+      <span class="badge badge-green">Attiva</span>
+    </div>
+    <div class="germ-row">
+      <label class="germ-label">🌱 Data germinazione:</label>
+      <input type="date" class="germ-input" data-id="7" onchange="saveGermDate(7,this.value)" />
+    </div>
+    <div class="timeline-box" id="tl-7"></div>
+  </div>
+
+  <!-- Milky Way F1 -->
+  <div class="plant-card-full" id="plant-1">
+    <div class="plant-card-header">
+      <div class="plant-icon">🌙</div>
+      <div class="plant-info">
+        <div class="plant-name">Milky Way F1 ×1</div>
+        <div class="plant-detail">55–75 cm · Autofiorente · Raccolta produttore: 70–75 gg</div>
+      </div>
+      <span class="badge badge-green">Attiva</span>
+    </div>
+    <div class="germ-row">
+      <label class="germ-label">🌱 Data germinazione:</label>
+      <input type="date" class="germ-input" data-id="1" onchange="saveGermDate(1,this.value)" />
+    </div>
+    <div class="timeline-box" id="tl-1"></div>
+  </div>
+
+  <!-- Titan F1 -->
+  <div class="plant-card-full" id="plant-2">
+    <div class="plant-card-header">
+      <div class="plant-icon">⚡</div>
+      <div class="plant-info">
+        <div class="plant-name">Titan F1 ×2</div>
+        <div class="plant-detail">55–75 cm · Autofiorente · Raccolta produttore: 70–75 gg</div>
+      </div>
+      <span class="badge badge-green">Attiva</span>
+    </div>
+    <div class="germ-row">
+      <label class="germ-label">🌱 Data germinazione:</label>
+      <input type="date" class="germ-input" data-id="2" onchange="saveGermDate(2,this.value)" />
+    </div>
+    <div class="timeline-box" id="tl-2"></div>
+  </div>
+
+  <!-- Medusa F1 -->
+  <div class="plant-card-full" id="plant-3">
+    <div class="plant-card-header">
+      <div class="plant-icon">🪼</div>
+      <div class="plant-info">
+        <div class="plant-name">Medusa F1 ×3</div>
+        <div class="plant-detail">60–90 cm · Autofiorente · Raccolta produttore: 70–75 gg</div>
+      </div>
+      <span class="badge badge-green">Attiva</span>
+    </div>
+    <div class="germ-row">
+      <label class="germ-label">🌱 Data germinazione:</label>
+      <input type="date" class="germ-input" data-id="3" onchange="saveGermDate(3,this.value)" />
+    </div>
+    <div class="timeline-box" id="tl-3"></div>
+  </div>
+
+  <!-- Gaia F1 -->
+  <div class="plant-card-full" id="plant-8">
+    <div class="plant-card-header">
+      <div class="plant-icon">🌍</div>
+      <div class="plant-info">
+        <div class="plant-name">Gaia F1 ×8</div>
+        <div class="plant-detail">50–70 cm · Autofiorente · Raccolta produttore: 65–70 gg</div>
+      </div>
+      <span class="badge badge-green">Attiva</span>
+    </div>
+    <div class="germ-row">
+      <label class="germ-label">🌱 Data germinazione:</label>
+      <input type="date" class="germ-input" data-id="8" onchange="saveGermDate(8,this.value)" />
+    </div>
+    <div class="timeline-box" id="tl-8"></div>
+  </div>
+
+  <!-- FEMMINIZZATI -->
   <div class="plant-group-label">Femminizzati</div>
-  <div class="plant-card"><div class="plant-icon">🍋</div><div class="plant-info"><div class="plant-name">Astro Lemonade F1 ×4</div><div class="plant-detail">100–130 cm · Fioritura: inizio ottobre</div></div><span class="badge badge-blue">Veg.</span></div>
-  <div class="plant-card"><div class="plant-icon">🧀</div><div class="plant-info"><div class="plant-name">Cosmic Cheddar F1 ×11</div><div class="plant-detail">80–120 cm · Fioritura: inizio ottobre</div></div><span class="badge badge-blue">Veg.</span></div>
-  <div class="plant-card"><div class="plant-icon">🍌</div><div class="plant-info"><div class="plant-name">Orbital Banana F1 ×6</div><div class="plant-detail">100–130 cm · Fioritura: inizio ottobre</div></div><span class="badge badge-blue">Veg.</span></div>
-  <div class="plant-card"><div class="plant-icon">🦍</div><div class="plant-info"><div class="plant-name">Royal Gorilla ×10</div><div class="plant-detail">130–170 cm · Fioritura: metà ottobre</div></div><span class="badge badge-blue">Veg.</span></div>
-  <div class="plant-card"><div class="plant-icon">🌮</div><div class="plant-info"><div class="plant-name">Mexican Rush ×9</div><div class="plant-detail">150–200 cm · Fioritura: metà ottobre</div></div><span class="badge badge-blue">Veg.</span></div>
+
+  <!-- Astro Lemonade F1 -->
+  <div class="plant-card-full" id="plant-4">
+    <div class="plant-card-header">
+      <div class="plant-icon">🍋</div>
+      <div class="plant-info">
+        <div class="plant-name">Astro Lemonade F1 ×4</div>
+        <div class="plant-detail">100–130 cm · Femminizzata · Fioritura: inizio ottobre · Raccolta: 50–60 gg fioritura</div>
+      </div>
+      <span class="badge badge-blue">Veg.</span>
+    </div>
+    <div class="germ-row">
+      <label class="germ-label">🌱 Data germinazione:</label>
+      <input type="date" class="germ-input" data-id="4" onchange="saveGermDate(4,this.value)" />
+    </div>
+    <div class="timeline-box" id="tl-4"></div>
+  </div>
+
+  <!-- Cosmic Cheddar F1 -->
+  <div class="plant-card-full" id="plant-11">
+    <div class="plant-card-header">
+      <div class="plant-icon">🧀</div>
+      <div class="plant-info">
+        <div class="plant-name">Cosmic Cheddar F1 ×11</div>
+        <div class="plant-detail">80–120 cm · Femminizzata · Fioritura: inizio ottobre · Raccolta: 50–60 gg fioritura</div>
+      </div>
+      <span class="badge badge-blue">Veg.</span>
+    </div>
+    <div class="germ-row">
+      <label class="germ-label">🌱 Data germinazione:</label>
+      <input type="date" class="germ-input" data-id="11" onchange="saveGermDate(11,this.value)" />
+    </div>
+    <div class="timeline-box" id="tl-11"></div>
+  </div>
+
+  <!-- Orbital Banana F1 -->
+  <div class="plant-card-full" id="plant-6">
+    <div class="plant-card-header">
+      <div class="plant-icon">🍌</div>
+      <div class="plant-info">
+        <div class="plant-name">Orbital Banana F1 ×6</div>
+        <div class="plant-detail">100–130 cm · Femminizzata · Fioritura: inizio ottobre · Raccolta: 55–65 gg fioritura</div>
+      </div>
+      <span class="badge badge-blue">Veg.</span>
+    </div>
+    <div class="germ-row">
+      <label class="germ-label">🌱 Data germinazione:</label>
+      <input type="date" class="germ-input" data-id="6" onchange="saveGermDate(6,this.value)" />
+    </div>
+    <div class="timeline-box" id="tl-6"></div>
+  </div>
+
+  <!-- Royal Gorilla -->
+  <div class="plant-card-full" id="plant-10">
+    <div class="plant-card-header">
+      <div class="plant-icon">🦍</div>
+      <div class="plant-info">
+        <div class="plant-name">Royal Gorilla ×10</div>
+        <div class="plant-detail">130–170 cm · Femminizzata · Fioritura: metà ottobre · Raccolta: 55–65 gg fioritura</div>
+      </div>
+      <span class="badge badge-blue">Veg.</span>
+    </div>
+    <div class="germ-row">
+      <label class="germ-label">🌱 Data germinazione:</label>
+      <input type="date" class="germ-input" data-id="10" onchange="saveGermDate(10,this.value)" />
+    </div>
+    <div class="timeline-box" id="tl-10"></div>
+  </div>
+
+  <!-- Mexican Rush -->
+  <div class="plant-card-full" id="plant-9">
+    <div class="plant-card-header">
+      <div class="plant-icon">🌮</div>
+      <div class="plant-info">
+        <div class="plant-name">Mexican Rush ×9</div>
+        <div class="plant-detail">150–200 cm · Femminizzata · Fioritura: metà ottobre · Raccolta: 60–70 gg fioritura</div>
+      </div>
+      <span class="badge badge-blue">Veg.</span>
+    </div>
+    <div class="germ-row">
+      <label class="germ-label">🌱 Data germinazione:</label>
+      <input type="date" class="germ-input" data-id="9" onchange="saveGermDate(9,this.value)" />
+    </div>
+    <div class="timeline-box" id="tl-9"></div>
+  </div>
+
 </section>
 
 <!-- METEO -->
@@ -1455,6 +1698,186 @@ function closeBioPopupDirect() {
 renderBioCalendar();
 
 /* ══════════════════════════════════════════════════════════════
+   PIANTE — Germinazione, Moltiplicatore Luce, Timeline
+══════════════════════════════════════════════════════════════ */
+
+const PLANT_DATA = {
+  7:  { name:'Epsilon F1',    type:'auto', harvestMin:60,  harvestMax:60  },
+  1:  { name:'Milky Way F1',  type:'auto', harvestMin:70,  harvestMax:75  },
+  2:  { name:'Titan F1',      type:'auto', harvestMin:70,  harvestMax:75  },
+  3:  { name:'Medusa F1',     type:'auto', harvestMin:70,  harvestMax:75  },
+  8:  { name:'Gaia F1',       type:'auto', harvestMin:65,  harvestMax:70  },
+  4:  { name:'Astro Lemonade F1', type:'femm', harvestMin:50, harvestMax:60, florStart:'2026-10-01' },
+  11: { name:'Cosmic Cheddar F1', type:'femm', harvestMin:50, harvestMax:60, florStart:'2026-10-01' },
+  6:  { name:'Orbital Banana F1', type:'femm', harvestMin:55, harvestMax:65, florStart:'2026-10-01' },
+  10: { name:'Royal Gorilla',     type:'femm', harvestMin:55, harvestMax:65, florStart:'2026-10-15' },
+  9:  { name:'Mexican Rush',      type:'femm', harvestMin:60, harvestMax:70, florStart:'2026-10-15' }
+};
+
+let currentLightHours = parseFloat(localStorage.getItem('bioserra_light_hours') || '16');
+
+function updateLightHours(val) {
+  val = Math.min(24, Math.max(1, parseFloat(val) || 16));
+  currentLightHours = val;
+  localStorage.setItem('bioserra_light_hours', val);
+  document.getElementById('light-hours-slider').value = val;
+  document.getElementById('light-hours-input').value = val;
+  renderAllTimelines();
+}
+
+function saveGermDate(id, val) {
+  if (!val) { localStorage.removeItem('bioserra_germ_' + id); }
+  else { localStorage.setItem('bioserra_germ_' + id, val); }
+  renderTimeline(id);
+}
+
+function addDays(date, days) {
+  const d = new Date(date);
+  d.setDate(d.getDate() + Math.round(days));
+  return d;
+}
+
+function fmtDate(d) {
+  return d.toLocaleDateString('it-IT', { day:'2-digit', month:'short', year:'numeric' });
+}
+
+function daysDiff(a, b) {
+  return Math.round((b - a) / 86400000);
+}
+
+function renderTimeline(id) {
+  const box = document.getElementById('tl-' + id);
+  if (!box) return;
+  const p = PLANT_DATA[id];
+  const germStr = localStorage.getItem('bioserra_germ_' + id);
+  if (!germStr) {
+    box.innerHTML = '<div class="tl-empty">⬆️ Inserisci la data di germinazione per vedere la timeline</div>';
+    return;
+  }
+
+  const germ = new Date(germStr);
+  const today = new Date();
+  today.setHours(0,0,0,0);
+
+  let steps = [];
+
+  if (p.type === 'auto') {
+    const idealH = 18;
+    const mult = idealH / currentLightHours;
+    // Per autofiorenti: metà ciclo = vegetazione, poi fioritura, poi raccolta
+    const totalMin = Math.round(p.harvestMin * mult);
+    const totalMax = Math.round(p.harvestMax * mult);
+    const vegDays  = Math.round(totalMin * 0.35); // ~35% veg
+    const florDays = Math.round(totalMin * 0.45); // ~45% fioritura
+    const essDays  = 15;
+
+    const endVeg  = addDays(germ, vegDays);
+    const endFlor = addDays(germ, vegDays + florDays);
+    const harvest = addDays(germ, totalMin);
+    const harvestMax = addDays(germ, totalMax);
+    const essEnd  = addDays(harvest, essDays);
+
+    steps = [
+      { dot:'germ',  label:'🌱 Germinazione',       date: germ,     extra:'Giorno 0 · Inizio ciclo' },
+      { dot:'veg',   label:'🌿 Fine Vegetazione',    date: endVeg,   extra:`+${vegDays} gg reali (${p.harvestMin} gg produttore × ${(mult).toFixed(2)})` },
+      { dot:'fior',  label:'🌸 Inizio Fioritura',    date: endFlor,  extra:`+${vegDays+florDays} gg totali dalla germ.` },
+      { dot:'rec',   label:'✂️ Raccolta prevista',   date: harvest,  extra: totalMin !== totalMax ? `${fmtDate(harvest)} → ${fmtDate(harvestMax)}` : '', daysFromGerm: totalMin },
+      { dot:'ess',   label:'🌬️ Fine Essiccazione',  date: essEnd,   extra:'+15 gg essiccazione' }
+    ];
+
+    // Progress bar
+    const totalCycle = totalMin;
+    const elapsed = daysDiff(germ, today);
+    const pct = Math.min(100, Math.max(0, Math.round((elapsed / totalCycle) * 100)));
+    const progressHTML = `
+      <div class="tl-progress-wrap">
+        <div class="tl-progress-label">Avanzamento ciclo: ${elapsed > 0 ? elapsed : 0} gg / ${totalCycle} gg previsti (${pct}%)</div>
+        <div class="tl-progress-track"><div class="tl-progress-fill" style="width:${pct}%"></div></div>
+      </div>`;
+
+    box.innerHTML = progressHTML + renderSteps(steps, today);
+
+  } else {
+    // Femminizzate — fioritura fissa da calendario, raccolta dipende da quella
+    const idealH = 12;
+    const mult = idealH / currentLightHours;
+    const florStartDate = new Date(p.florStart);
+    const florDaysMin = Math.round(p.harvestMin * mult);
+    const florDaysMax = Math.round(p.harvestMax * mult);
+    const harvestMin = addDays(florStartDate, florDaysMin);
+    const harvestMax = addDays(florStartDate, florDaysMax);
+    const essEnd = addDays(harvestMin, 15);
+
+    // Stima fine veg = inizio fioritura
+    const vegDays = daysDiff(germ, florStartDate);
+
+    steps = [
+      { dot:'germ', label:'🌱 Germinazione',        date: germ,         extra:'Giorno 0 · Inizio ciclo' },
+      { dot:'veg',  label:'🌿 Vegetazione',          date: florStartDate, extra:`${vegDays} gg di vegetazione` },
+      { dot:'fior', label:'🌸 Inizio Fioritura',     date: florStartDate, extra:`Cambio fotoperiodo · ${fmtDate(florStartDate)}` },
+      { dot:'rec',  label:'✂️ Raccolta prevista',    date: harvestMin,   extra:`${fmtDate(harvestMin)} → ${fmtDate(harvestMax)} · (${florDaysMin}–${florDaysMax} gg fioritura × mult. ${mult.toFixed(2)})` },
+      { dot:'ess',  label:'🌬️ Fine Essiccazione',   date: essEnd,       extra:'+15 gg essiccazione' }
+    ];
+
+    const totalCycle = daysDiff(germ, harvestMin);
+    const elapsed = daysDiff(germ, today);
+    const pct = Math.min(100, Math.max(0, Math.round((elapsed / totalCycle) * 100)));
+    const progressHTML = `
+      <div class="tl-progress-wrap">
+        <div class="tl-progress-label">Avanzamento ciclo: ${elapsed > 0 ? elapsed : 0} gg / ~${totalCycle} gg previsti (${pct}%)</div>
+        <div class="tl-progress-track"><div class="tl-progress-fill" style="width:${pct}%"></div></div>
+      </div>`;
+
+    box.innerHTML = progressHTML + renderSteps(steps, today);
+  }
+}
+
+function renderSteps(steps, today) {
+  let html = '';
+  for (let i = 0; i < steps.length; i++) {
+    const s = steps[i];
+    const isPast = s.date < today;
+    const isToday = daysDiff(s.date, today) === 0;
+    const pastCls = isPast && !isToday ? ' tl-past' : '';
+    const todayTag = isToday ? '<span class="tl-today-tag">OGGI</span>' : '';
+    const connector = i < steps.length - 1
+      ? `<div style="display:flex;gap:8px;"><div style="width:10px;flex-shrink:0;"></div><div style="width:1px;height:10px;background:var(--border);margin:0 0 0 0;"></div></div>`
+      : '';
+    html += `
+      <div class="tl-step${pastCls}">
+        <div class="tl-dot tl-dot-${s.dot}"></div>
+        <div class="tl-content">
+          <div class="tl-phase">${s.label}${todayTag}</div>
+          <div class="tl-date">${fmtDate(s.date)}${s.extra ? ' · <span style="color:var(--text3)">' + s.extra + '</span>' : ''}</div>
+        </div>
+      </div>`;
+  }
+  return html;
+}
+
+function renderAllTimelines() {
+  Object.keys(PLANT_DATA).forEach(id => renderTimeline(parseInt(id)));
+}
+
+// Init: carica valori salvati e renderizza
+(function initPiante() {
+  // Ripristina ore luce
+  const slider = document.getElementById('light-hours-slider');
+  const input  = document.getElementById('light-hours-input');
+  if (slider) slider.value = currentLightHours;
+  if (input)  input.value  = currentLightHours;
+
+  // Ripristina date germinazione negli input
+  document.querySelectorAll('.germ-input').forEach(el => {
+    const id = parseInt(el.dataset.id);
+    const saved = localStorage.getItem('bioserra_germ_' + id);
+    if (saved) el.value = saved;
+  });
+
+  renderAllTimelines();
+})();
+
+/* ══════════════════════════════════════════════════════════════
    AI CHAT — Pollinations GET + Groq fallback
 ══════════════════════════════════════════════════════════════ */
 
@@ -1610,6 +2033,7 @@ loadWeather();
 </script>
 </body>
 </html>
+
 
 
 
