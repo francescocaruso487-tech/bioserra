@@ -1066,33 +1066,36 @@
 <!-- AI -->
 <section id="sec-ai" class="section">
   <div class="section-title">AI 🤖</div>
-  <div class="section-sub">Assistente Serra</div>
+  <div class="section-sub">Assistente Serra · Gemini Flash</div>
 
-  <div class="ai-selector">
-    <button class="ai-sel-btn active" id="ai-btn-gemini" onclick="selectAI('gemini',this)">
-      ✨ Gemini Flash<span class="ai-sel-soon">Key gratuita · aistudio.google.com</span>
+  <!-- SETUP KEY (visibile solo se non configurata) -->
+  <div id="ai-setup-box" style="display:none;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px;">
+    <div style="font-size:15px;font-weight:700;margin-bottom:6px;">🔑 Configura Gemini (gratis)</div>
+    <div style="font-size:13px;color:var(--text2);margin-bottom:12px;line-height:1.6;">
+      1. Apri <a href="https://aistudio.google.com/apikey" target="_blank" style="color:var(--green2);font-weight:600;">aistudio.google.com/apikey</a><br>
+      2. Accedi con Google (zero carta di credito)<br>
+      3. Clic su <strong>"Create API key"</strong><br>
+      4. Copia la chiave e incollala qui sotto
+    </div>
+    <input id="ai-key-setup-input" type="text" placeholder="Incolla qui la chiave AIzaSy..."
+      style="width:100%;box-sizing:border-box;background:var(--card2);border:1px solid var(--green2);border-radius:10px;padding:11px 14px;color:var(--text);font-size:14px;outline:none;font-family:var(--font);margin-bottom:10px;">
+    <button onclick="aiSaveKeyInline()"
+      style="width:100%;background:var(--green2);border:none;border-radius:10px;padding:12px;color:var(--text);font-size:15px;font-weight:700;cursor:pointer;">
+      ✅ Salva e inizia a chattare
     </button>
-    <button class="ai-sel-btn" id="ai-btn-groq" onclick="selectAI('groq',this)">
-      ⚡ Groq Llama3<span class="ai-sel-soon">Key gratuita · console.groq.com</span>
-    </button>
   </div>
 
-  <div class="ai-sources-badge">
-    ✅ Entrambi gratuiti · Nessuna carta · Solo registrazione email
+  <!-- BADGE modello attivo -->
+  <div id="ai-model-badge" style="display:none;margin-bottom:10px;">
+    <div class="ai-sources-badge" style="justify-content:space-between;">
+      <span>✨ Gemini Flash · Gratis · <span id="ai-key-short"></span></span>
+      <button onclick="aiChangeKey()" style="background:none;border:none;color:var(--green2);font-size:12px;cursor:pointer;padding:0;">Cambia chiave</button>
+    </div>
   </div>
 
-  <div class="ai-chat" id="ai-chat">
-    <div class="ai-msg bot">🌿 Ciao! Sono BioSerra AI.
+  <div class="ai-chat" id="ai-chat"></div>
 
-🔑 Per iniziare inserisci una chiave gratuita in ⚙️ Config → AI Keys:
-
-✨ Gemini: aistudio.google.com (accedi con Google, zero carta)
-⚡ Groq: console.groq.com (email, zero carta)
-
-Entrambe si ottengono in meno di 2 minuti!</div>
-  </div>
-
-  <div class="ai-quick">
+  <div class="ai-quick" id="ai-quick-btns" style="display:none;">
     <button class="ai-quick-btn" onclick="aiQuick('Quando annaffiare?')">💧 Annaffiare?</button>
     <button class="ai-quick-btn" onclick="aiQuick('Dosi melassa oggi')">🍯 Melassa</button>
     <button class="ai-quick-btn" onclick="aiQuick('Fase lunare oggi')">🌙 Luna</button>
@@ -1103,7 +1106,7 @@ Entrambe si ottengono in meno di 2 minuti!</div>
     <button class="ai-quick-btn" onclick="aiQuick('Elettrocultura: come funziona?')">⚡ Elettrocoltura</button>
   </div>
 
-  <div class="ai-input-row">
+  <div id="ai-input-row" class="ai-input-row" style="display:none;">
     <input class="ai-input" id="ai-input" type="text" placeholder="Scrivi un messaggio…" onkeydown="if(event.key==='Enter')aiSend()">
     <button class="ai-send" onclick="aiSend()">➤</button>
   </div>
@@ -1149,47 +1152,20 @@ Entrambe si ottengono in meno di 2 minuti!</div>
     <div class="setting-item"><div class="setting-left"><div class="setting-icon">📡</div><div><div class="setting-title">Sensori IoT</div><div class="setting-value">Nessun sensore</div></div></div><div class="setting-arrow">›</div></div>
     <div class="setting-item"><div class="setting-left"><div class="setting-icon">☁️</div><div><div class="setting-title">Backup cloud</div><div class="setting-value">Disattivato</div></div></div><div class="toggle" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
   </div>
-  <div class="setting-group">
-    <div class="setting-group-label">🔑 AI Keys (entrambe gratuite)</div>
-
-    <div class="setting-item" style="flex-direction:column;align-items:flex-start;gap:10px;padding:14px 0;">
-      <div style="display:flex;align-items:center;gap:10px;width:100%;">
-        <span style="font-size:20px;">✨</span>
+    <div class="setting-group">
+    <div class="setting-group-label">🔑 AI Key</div>
+    <div class="setting-item">
+      <div class="setting-left">
+        <div class="setting-icon">✨</div>
         <div>
-          <div class="setting-title">Gemini API Key</div>
-          <div class="setting-value" id="gemini-key-status">Non configurata</div>
+          <div class="setting-title">Gemini Flash</div>
+          <div class="setting-value" id="cfg-gemini-status">Non configurata</div>
         </div>
       </div>
-      <input id="gemini-key-input" type="password" placeholder="AIzaSy..." autocomplete="off"
-        style="width:100%;box-sizing:border-box;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 14px;color:var(--text);font-size:14px;outline:none;font-family:var(--font);">
-      <button onclick="saveGeminiKey()"
-        style="width:100%;background:var(--green2);border:none;border-radius:10px;padding:11px;color:var(--text);font-size:14px;font-weight:700;cursor:pointer;letter-spacing:0.3px;">
-        💾 Salva chiave Gemini
+      <button onclick="showSection('ai', document.querySelector('[onclick*=\'ai\']'))" 
+        style="background:var(--green2);border:none;border-radius:8px;padding:6px 12px;color:var(--text);font-size:12px;cursor:pointer;font-weight:600;">
+        Configura
       </button>
-      <a href="https://aistudio.google.com" target="_blank"
-        style="font-size:12px;color:var(--green2);text-decoration:none;">
-        → Ottieni gratis su aistudio.google.com
-      </a>
-    </div>
-
-    <div class="setting-item" style="flex-direction:column;align-items:flex-start;gap:10px;padding:14px 0;border-top:1px solid var(--border);">
-      <div style="display:flex;align-items:center;gap:10px;width:100%;">
-        <span style="font-size:20px;">⚡</span>
-        <div>
-          <div class="setting-title">Groq API Key</div>
-          <div class="setting-value" id="groq-key-status">Non configurata</div>
-        </div>
-      </div>
-      <input id="groq-key-input" type="password" placeholder="gsk_..." autocomplete="off"
-        style="width:100%;box-sizing:border-box;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 14px;color:var(--text);font-size:14px;outline:none;font-family:var(--font);">
-      <button onclick="saveGroqKey()"
-        style="width:100%;background:var(--green2);border:none;border-radius:10px;padding:11px;color:var(--text);font-size:14px;font-weight:700;cursor:pointer;letter-spacing:0.3px;">
-        💾 Salva chiave Groq
-      </button>
-      <a href="https://console.groq.com" target="_blank"
-        style="font-size:12px;color:var(--green2);text-decoration:none;">
-        → Ottieni gratis su console.groq.com
-      </a>
     </div>
   </div>
   <div class="setting-group">
@@ -1224,6 +1200,7 @@ function showSection(id, btn) {
   if (id === 'meteo') loadWeather();
   if (id === 'luna') setTimeout(renderLunarSection, 50);
   if (id === 'bio') renderBioCalendar();
+  if (id === 'ai') setTimeout(aiInitUI, 50);
 }
 
 function refreshAll() { renderBioCalendar(); renderLunarSection(); loadWeather(); }
@@ -1903,29 +1880,79 @@ function renderAllTimelines() {
 })();
 
 /* ══════════════════════════════════════════════════════════════
-   AI CHAT — Gemini Flash FREE + Groq opzionale
+   AI CHAT — Gemini 1.5 Flash (gratis, no CORS)
 ══════════════════════════════════════════════════════════════ */
 
-const PIANTE_CTX = `Autofiorenti: Epsilon F1(ID:7,germ 21/04,taglio 20/06), Milky Way(ID:1,germ 23/04,taglio 22/07), Titan(ID:2,germ 22/04,taglio 21/07), Medusa(ID:3,germ 21/04,taglio 20/07), Gaia(ID:8,germ 21/04,taglio 15/07). Femminizzate: Astro Lemonade(ID:4,taglio 30/10), Cosmic Cheddar(ID:11,taglio 30/10), Orbital Banana(ID:6,taglio 30/10), Royal Gorilla(ID:10,taglio 09/11), Mexican Rush(ID:9,taglio 09/11).`;
-const MANUALE_CTX = `Serra Living Soil: 10 vasi 10L, substrato BioBizz+cocco+SuperSoil+Humus+micorrize. Additivi: Melassa 1ml/L ogni 15gg; Miscela organica 1 cucchiaio/vaso/mese; Infuso ortiche 1:10, 1-2L/vaso/mese; Te banana+cenere ogni 2 sett da mese 5; Etilene mesi 7-8. Esperimenti: elettrocultura, Lakhovsky, pila galvanica Fe-Cu, acqua magnetizzata, Pantacle rame. Mese 4: rimozione 5 piante brevi.`;
+const PIANTE_CTX = 'Autofiorenti: Epsilon F1(ID:7,germ 21/04,taglio 20/06), Milky Way(ID:1,germ 23/04,taglio 22/07), Titan(ID:2,germ 22/04,taglio 21/07), Medusa(ID:3,germ 21/04,taglio 20/07), Gaia(ID:8,germ 21/04,taglio 15/07). Femminizzate: Astro Lemonade(ID:4,taglio 30/10), Cosmic Cheddar(ID:11,taglio 30/10), Orbital Banana(ID:6,taglio 30/10), Royal Gorilla(ID:10,taglio 09/11), Mexican Rush(ID:9,taglio 09/11).';
+const MANUALE_CTX = 'Serra Living Soil: 10 vasi 10L, substrato BioBizz+cocco+SuperSoil+Humus+micorrize. Additivi: Melassa 1ml/L ogni 15gg; Miscela organica 1 cucchiaio/vaso/mese; Infuso ortiche 1:10 ogni mese; Te banana+cenere ogni 2 sett da mese 5; Etilene mesi 7-8. Esperimenti: elettrocultura, Lakhovsky, pila galvanica Fe-Cu, acqua magnetizzata, Pantacle rame.';
 
 let aiHistory = [];
-let currentAI = 'gemini';
 
 function buildSystem() {
   return 'Sei BioSerra AI, assistente esperto di coltivazione Living Soil biologica. Oggi: ' +
-    new Date().toLocaleDateString('it-IT') + '. Piante: ' + PIANTE_CTX +
-    ' Manuale: ' + MANUALE_CTX +
-    ' Rispondi SEMPRE in italiano, in modo conciso e pratico.';
+    new Date().toLocaleDateString('it-IT') +
+    '. Piante: ' + PIANTE_CTX +
+    '. Manuale: ' + MANUALE_CTX +
+    '. Rispondi SEMPRE in italiano, in modo conciso e pratico.';
 }
 
-/* ─── Gemini 1.5 Flash — 1500 req/giorno FREE, key gratuita su aistudio.google.com ─── */
-async function sendGemini(userMsg) {
-  const key = (localStorage.getItem('bioserra_gemini_key') || '').trim();
+/* ── Gestione chiave e UI ── */
+function aiGetKey() {
+  return (localStorage.getItem('bioserra_gemini_key') || '').trim();
+}
+
+function aiInitUI() {
+  const key = aiGetKey();
+  const setup = document.getElementById('ai-setup-box');
+  const badge = document.getElementById('ai-model-badge');
+  const quick = document.getElementById('ai-quick-btns');
+  const inputRow = document.getElementById('ai-input-row');
+  const chat = document.getElementById('ai-chat');
+
   if (!key) {
-    return '🔑 Inserisci la tua chiave Gemini gratuita:\n\n1. Vai su aistudio.google.com\n2. Accedi con Google (nessuna carta di credito)\n3. Clicca "Get API key" → "Create API key"\n4. Copia la chiave (inizia con AIza...)\n5. Vai in ⚙️ Config → AI Keys e incollala\n\n✅ 1.500 richieste/giorno gratis · Modello: Gemini 1.5 Flash';
+    setup.style.display = 'block';
+    badge.style.display = 'none';
+    quick.style.display = 'none';
+    inputRow.style.display = 'none';
+    chat.innerHTML = '';
+    appendMsg('🌿 Inserisci la tua chiave Gemini gratuita qui sopra per iniziare!', 'bot');
+  } else {
+    setup.style.display = 'none';
+    badge.style.display = 'block';
+    quick.style.display = 'flex';
+    inputRow.style.display = 'flex';
+    const short = key.substring(0, 8) + '…';
+    document.getElementById('ai-key-short').textContent = short;
+    if (chat.children.length === 0) {
+      appendMsg('🌿 Ciao! Sono BioSerra AI. Chiedimi qualsiasi cosa sulle tue piante!', 'bot');
+    }
   }
-  const history = aiHistory.slice(0,-1).map(m => ({
+}
+
+function aiSaveKeyInline() {
+  const input = document.getElementById('ai-key-setup-input');
+  const val = (input.value || '').trim();
+  if (!val || val.length < 20) {
+    input.style.borderColor = '#ef5350';
+    input.placeholder = '⚠️ Chiave non valida — deve iniziare con AIzaSy...';
+    return;
+  }
+  localStorage.setItem('bioserra_gemini_key', val);
+  input.value = '';
+  aiHistory = [];
+  aiInitUI();
+}
+
+function aiChangeKey() {
+  localStorage.removeItem('bioserra_gemini_key');
+  aiHistory = [];
+  aiInitUI();
+}
+
+/* ── Chiamata Gemini ── */
+async function sendGemini(userMsg) {
+  const key = aiGetKey();
+  const history = aiHistory.slice(0, -1).map(m => ({
     role: m.role === 'assistant' ? 'model' : 'user',
     parts: [{ text: m.content }]
   }));
@@ -1939,62 +1966,43 @@ async function sendGemini(userMsg) {
     { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
   );
   const data = await res.json();
-  if (data.error) throw new Error(data.error.message);
+  if (data.error) {
+    const msg = data.error.message || '';
+    if (msg.includes('API_KEY_INVALID') || msg.includes('API key not valid')) {
+      localStorage.removeItem('bioserra_gemini_key');
+      aiInitUI();
+      throw new Error('Chiave API non valida. Inseriscine una nuova.');
+    }
+    throw new Error(msg);
+  }
   return data.candidates?.[0]?.content?.parts?.[0]?.text || 'Nessuna risposta.';
 }
 
-/* ─── Groq — 14.400 req/giorno FREE, key gratuita su console.groq.com ─── */
-async function sendGroq(userMsg) {
-  const key = (localStorage.getItem('bioserra_groq_key') || '').trim();
-  if (!key) {
-    return '🔑 Inserisci la tua chiave Groq gratuita:\n\n1. Vai su console.groq.com\n2. Registrati con email (no carta)\n3. API Keys → Create API Key\n4. Copia la chiave (inizia con gsk_...)\n5. Vai in ⚙️ Config → AI Keys e incollala\n\n✅ 14.400 req/giorno · Llama3 70B · Velocissimo';
-  }
-  const messages = [
-    { role: 'system', content: buildSystem() },
-    ...aiHistory.slice(0,-1),
-    { role: 'user', content: userMsg }
-  ];
-  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + key },
-    body: JSON.stringify({ model: 'llama3-70b-8192', messages, max_tokens: 800 })
-  });
-  const data = await res.json();
-  if (data.error) throw new Error(data.error.message);
-  return data.choices?.[0]?.message?.content || 'Nessuna risposta.';
-}
-
-function selectAI(model, btn) {
-  currentAI = model;
-  document.querySelectorAll('.ai-sel-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  aiHistory = [];
-  const labels = { gemini:'✨ Gemini', groq:'⚡ Groq' };
-  appendMsg((labels[model]||model) + ' pronto · Come posso aiutarti?', 'bot');
-}
-
 async function aiSend() {
+  const key = aiGetKey();
+  if (!key) { aiInitUI(); return; }
   const input = document.getElementById('ai-input');
-  const msg = input.value.trim();
+  const msg = (input.value || '').trim();
   if (!msg) return;
   input.value = '';
   appendMsg(msg, 'user');
   aiHistory.push({ role: 'user', content: msg });
-  const labels = { gemini:'✨ Gemini', groq:'⚡ Groq' };
-  const loading = appendMsg('⏳ ' + (labels[currentAI]||currentAI) + ' elabora…', 'bot loading');
+  const loading = appendMsg('⏳ Gemini elabora…', 'bot loading');
   try {
-    const reply = currentAI === 'groq' ? await sendGroq(msg) : await sendGemini(msg);
+    const reply = await sendGemini(msg);
     loading.className = 'ai-msg bot';
     loading.textContent = reply;
     aiHistory.push({ role: 'assistant', content: reply });
   } catch(e) {
     loading.className = 'ai-msg bot';
-    loading.textContent = '⚠️ Errore: ' + (e.message || 'Connessione fallita.') + '\n\nControlla la chiave API in ⚙️ Config → AI Keys.';
+    loading.textContent = '⚠️ ' + (e.message || 'Errore di connessione. Riprova.');
   }
   document.getElementById('ai-chat').scrollTop = 99999;
 }
 
 function aiQuick(msg) {
+  const key = aiGetKey();
+  if (!key) { aiInitUI(); return; }
   document.getElementById('ai-input').value = msg;
   aiSend();
 }
@@ -2011,35 +2019,15 @@ function appendMsg(text, cls) {
 
 // ── INIT ──────────────────────────────────────
 
-function saveGeminiKey() {
-  const val = document.getElementById('gemini-key-input').value.trim();
-  if (!val) { alert('Inserisci una chiave valida (inizia con AIza...)'); return; }
-  localStorage.setItem('bioserra_gemini_key', val);
-  document.getElementById('gemini-key-status').textContent = '✓ Configurata — Gemini attivo';
-  document.getElementById('gemini-key-input').value = '';
-}
-
-function saveGroqKey() {
-  const val = document.getElementById('groq-key-input').value.trim();
-  if (!val) { alert('Inserisci una chiave valida (inizia con gsk_...)'); return; }
-  localStorage.setItem('bioserra_groq_key', val);
-  document.getElementById('groq-key-status').textContent = '✓ Configurata — Groq attivo';
-  document.getElementById('groq-key-input').value = '';
-}
-
-function initAIKeyStatus() {
-  const gk = localStorage.getItem('bioserra_gemini_key');
-  const rk = localStorage.getItem('bioserra_groq_key');
-  const gs = document.getElementById('gemini-key-status');
-  const rs = document.getElementById('groq-key-status');
-  if (gk && gs) gs.textContent = '✓ Configurata — Gemini attivo';
-  if (rk && rs) rs.textContent = '✓ Configurata — Groq attivo';
+function updateCfgKeyStatus() {
+  const el = document.getElementById('cfg-gemini-status');
+  if (el) el.textContent = localStorage.getItem('bioserra_gemini_key') ? '✓ Configurata' : 'Non configurata';
 }
 
 renderBioCalendar();
 renderLunarSection();
 loadWeather();
-initAIKeyStatus();
+updateCfgKeyStatus();
 </script>
 </body>
 </html>
