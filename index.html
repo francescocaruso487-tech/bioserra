@@ -516,29 +516,40 @@
 <!-- METEO -->
 <section id="sec-meteo" class="section">
   <div class="section-title">Meteo ⛅</div>
-  <div class="section-sub">Dati ambientali per la serra</div>
-  <div class="card">
-    <div class="weather-main">
-      <div class="weather-icon">☀️</div>
-      <div>
-        <div class="weather-temp">—°</div>
-        <div class="weather-desc">Posizione non configurata</div>
+  <div class="section-sub">Caserta CE · Dati in tempo reale</div>
+  <div id="weather-loading" class="card" style="text-align:center;padding:32px 16px;">
+    <div style="font-size:36px;margin-bottom:10px;">🌤️</div>
+    <div style="color:var(--text2);font-size:14px;">Caricamento dati meteo…</div>
+  </div>
+  <div id="weather-error" class="card" style="display:none;text-align:center;padding:24px 16px;">
+    <div style="font-size:32px;margin-bottom:8px;">⚠️</div>
+    <div style="color:var(--text2);font-size:14px;" id="weather-error-msg">Errore caricamento meteo</div>
+    <button onclick="loadWeather()" style="margin-top:12px;padding:8px 20px;background:var(--green);border:none;border-radius:8px;color:#fff;cursor:pointer;font-size:13px;">Riprova</button>
+  </div>
+  <div id="weather-content" style="display:none;">
+    <div class="card">
+      <div class="weather-main">
+        <div class="weather-icon" id="w-icon">☀️</div>
+        <div>
+          <div class="weather-temp" id="w-temp">—°</div>
+          <div class="weather-desc" id="w-desc">—</div>
+        </div>
+      </div>
+      <div class="weather-grid">
+        <div class="weather-item"><div class="weather-item-icon">💧</div><div><div class="weather-item-val" id="w-humidity">—%</div><div class="weather-item-label">Umidità</div></div></div>
+        <div class="weather-item"><div class="weather-item-icon">☀️</div><div><div class="weather-item-val" id="w-uv">—</div><div class="weather-item-label">UV Index</div></div></div>
+        <div class="weather-item"><div class="weather-item-icon">💨</div><div><div class="weather-item-val" id="w-wind">—</div><div class="weather-item-label">Vento km/h</div></div></div>
+        <div class="weather-item"><div class="weather-item-icon">🌡️</div><div><div class="weather-item-val" id="w-pressure">—</div><div class="weather-item-label">Pressione</div></div></div>
       </div>
     </div>
-    <div class="weather-grid">
-      <div class="weather-item"><div class="weather-item-icon">💧</div><div><div class="weather-item-val">—%</div><div class="weather-item-label">Umidità</div></div></div>
-      <div class="weather-item"><div class="weather-item-icon">☀️</div><div><div class="weather-item-val">—</div><div class="weather-item-label">UV Index</div></div></div>
-      <div class="weather-item"><div class="weather-item-icon">💨</div><div><div class="weather-item-val">— km/h</div><div class="weather-item-label">Vento</div></div></div>
-      <div class="weather-item"><div class="weather-item-icon">🌡️</div><div><div class="weather-item-val">—</div><div class="weather-item-label">Pressione</div></div></div>
+    <div class="card">
+      <div class="card-title">📡 Previsioni 7 giorni</div>
+      <div id="w-forecast"></div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-title">📡 Previsioni 7 giorni</div>
-    <div class="empty-state"><div class="empty-state-icon">📡</div>Configura la posizione nelle Impostazioni per ricevere le previsioni</div>
-  </div>
-  <div class="card">
-    <div class="card-title">🌡️ Serra — Sensori interni</div>
-    <div class="empty-state">🌡️ Nessun sensore collegato</div>
+    <div class="card">
+      <div class="card-title">🌡️ Serra — Sensori interni</div>
+      <div class="empty-state">🌡️ Nessun sensore collegato</div>
+    </div>
   </div>
 </section>
 
@@ -546,24 +557,51 @@
 <section id="sec-luna" class="section">
   <div class="section-title">Luna 🌙</div>
   <div class="section-sub">Calendario lunare agricolo</div>
-  <div class="card" id="moon-card">
-    <div class="moon-main">
-      <div class="moon-emoji" id="moon-emoji">🌕</div>
-      <div>
-        <div class="moon-phase-name" id="moon-phase-name">Calcolo in corso…</div>
-        <div class="moon-detail" id="moon-phase-detail">—</div>
+  <div class="card">
+    <div style="display:flex;align-items:center;gap:16px;padding:8px 0 16px;">
+      <div style="font-size:64px;line-height:1;flex-shrink:0;" id="moonSymbol">🌕</div>
+      <div style="flex:1;">
+        <div style="font-size:18px;font-weight:700;margin-bottom:4px;" id="moonPhaseName">Calcolo…</div>
+        <div style="font-size:13px;color:var(--text2);margin-bottom:8px;"><strong id="moonIllumPct">—%</strong> illuminazione lunare</div>
+        <div style="height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;">
+          <div id="moonProgressBar" style="height:100%;background:linear-gradient(90deg,#3a9fd8,#4aaf5e);border-radius:3px;width:0%;transition:width 0.5s;"></div>
+        </div>
       </div>
     </div>
-    <div class="moon-bar-wrap">
-      <div class="moon-bar-label">Illuminazione <span id="moon-pct">—</span>%</div>
-      <div class="moon-bar-track"><div class="moon-bar-fill" id="moon-bar" style="width:0%"></div></div>
+    <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text3);">
+      <span>🗓️ <span id="moonDateToday"></span></span>
+      <span>Età: <span id="moonAge" style="color:#f0843c;font-weight:600;"></span> giorni</span>
     </div>
   </div>
-  <div class="card">
-    <div class="card-title">🌾 Attività consigliate oggi</div>
-    <div class="moon-activities" id="moon-activities">
-      <div class="moon-activity">⏳ Dati lunari in calcolo…</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;">
+    <div class="card" style="text-align:center;padding:14px;">
+      <div style="font-size:28px;font-weight:800;color:#f0843c;" id="daysToFull">—</div>
+      <div style="font-size:12px;color:var(--text2);margin:2px 0;">🌕 Luna Piena</div>
+      <div style="font-size:11px;color:var(--text3);" id="dateFullMoon">—</div>
     </div>
+    <div class="card" style="text-align:center;padding:14px;">
+      <div style="font-size:28px;font-weight:800;color:#3a9fd8;" id="daysToNew">—</div>
+      <div style="font-size:12px;color:var(--text2);margin:2px 0;">🌑 Luna Nuova</div>
+      <div style="font-size:11px;color:var(--text3);" id="dateNewMoon">—</div>
+    </div>
+  </div>
+  <div style="background:linear-gradient(135deg,rgba(74,175,94,0.08),rgba(58,159,216,0.06));border:1px solid rgba(74,175,94,0.2);border-radius:12px;padding:16px;margin-bottom:12px;">
+    <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">🌾 Consiglio Agricolo di oggi</div>
+    <div style="font-size:15px;font-weight:700;margin-bottom:6px;" id="agriAdviceMain">Caricamento…</div>
+    <div style="font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:10px;" id="agriAdviceDetail"></div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;" id="agriAdviceTags"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Prossimi 7 giorni</div>
+    <div id="moonStrip" style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Le 8 fasi lunari</div>
+    <table style="width:100%;border-collapse:collapse;font-size:13px;" id="phasesTable"><tbody></tbody></table>
+  </div>
+  <div class="card">
+    <div class="card-title">Ciclo corrente</div>
+    <div id="moonCycleInfo" style="font-size:13px;color:var(--text2);line-height:1.8;"></div>
   </div>
 </section>
 
@@ -810,11 +848,12 @@ function showSection(id, btn) {
   document.getElementById('sec-' + id).classList.add('active');
   btn.classList.add('active');
   window.scrollTo(0, 0);
+  if (id === 'meteo') loadWeather();
+  if (id === 'luna') setTimeout(renderLunarSection, 50);
   if (id === 'bio') renderBioCalendar();
-  if (id === 'luna') renderMoon();
 }
 
-function refreshAll() { renderBioCalendar(); renderMoon(); }
+function refreshAll() { renderBioCalendar(); renderLunarSection(); loadWeather(); }
 function showNotifPanel() { alert('🔔 Nessuna notifica in sospeso'); }
 
 /* ══════════════════════════════════════════════════════════════
@@ -837,36 +876,101 @@ try {
 } catch(e) {}
 
 /* ══════════════════════════════════════════════════════════════
-   LUNA — calcolo fase
+   METEO — Open-Meteo · Caserta fissa
 ══════════════════════════════════════════════════════════════ */
-function getMoonPhase(date) {
-  const knownNew = new Date(2000, 0, 6, 18, 14); // luna nuova di riferimento
-  const msDay = 86400000;
-  const lunation = 29.530588853;
-  const diff = (date - knownNew) / msDay;
-  let phase = ((diff % lunation) + lunation) % lunation;
-  return phase;
+const CASERTA = { lat: 41.0761, lon: 14.3328 };
+const WMO = {0:'Sereno ☀️',1:'Prevalentemente sereno 🌤️',2:'Parzialmente nuvoloso ⛅',3:'Nuvoloso ☁️',45:'Nebbia 🌫️',48:'Nebbia gelata 🌫️',51:'Pioggerella 🌦️',53:'Pioggerella moderata 🌦️',55:'Pioggerella intensa 🌧️',61:'Pioggia leggera 🌧️',63:'Pioggia moderata 🌧️',65:'Pioggia intensa 🌧️',71:'Neve leggera ❄️',73:'Neve moderata ❄️',75:'Neve intensa ❄️',80:'Rovesci leggeri 🌦️',81:'Rovesci moderati 🌧️',82:'Rovesci violenti ⛈️',95:'Temporale ⛈️',96:'Temporale con grandine ⛈️',99:'Temporale forte ⛈️'};
+const WMO_ICONS = {0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌦️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',71:'❄️',73:'❄️',75:'❄️',80:'🌦️',81:'🌧️',82:'⛈️',95:'⛈️',96:'⛈️',99:'⛈️'};
+const DAYS_IT = ['Dom','Lun','Mar','Mer','Gio','Ven','Sab'];
+
+async function loadWeather() {
+  const loading = document.getElementById('weather-loading');
+  const error = document.getElementById('weather-error');
+  const content = document.getElementById('weather-content');
+  loading.style.display = 'block'; error.style.display = 'none'; content.style.display = 'none';
+  try {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${CASERTA.lat}&longitude=${CASERTA.lon}&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m,surface_pressure,uv_index&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Europe%2FRome&forecast_days=7`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const d = await res.json();
+    const c = d.current;
+    document.getElementById('w-temp').textContent = Math.round(c.temperature_2m) + '°';
+    document.getElementById('w-desc').textContent = (WMO[c.weather_code] || 'Caserta CE');
+    document.getElementById('w-icon').textContent = WMO_ICONS[c.weather_code] || '🌡️';
+    document.getElementById('w-humidity').textContent = c.relative_humidity_2m + '%';
+    document.getElementById('w-uv').textContent = (c.uv_index ?? '—');
+    document.getElementById('w-wind').textContent = Math.round(c.wind_speed_10m) + ' km/h';
+    document.getElementById('w-pressure').textContent = Math.round(c.surface_pressure) + ' hPa';
+    const fc = document.getElementById('w-forecast');
+    fc.innerHTML = d.daily.time.map((t,i) => {
+      const dt = new Date(t); const icon = WMO_ICONS[d.daily.weather_code[i]] || '🌡️';
+      return `<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <span style="font-size:13px;color:var(--text2);width:36px;">${i===0?'Oggi':DAYS_IT[dt.getDay()]}</span>
+        <span style="font-size:20px;">${icon}</span>
+        <span style="font-size:13px;color:var(--text2);">${Math.round(d.daily.temperature_2m_min[i])}°</span>
+        <span style="font-size:13px;font-weight:600;">${Math.round(d.daily.temperature_2m_max[i])}°</span>
+      </div>`;
+    }).join('');
+    loading.style.display = 'none'; content.style.display = 'block';
+  } catch(e) {
+    loading.style.display = 'none';
+    document.getElementById('weather-error-msg').textContent = 'Errore: ' + e.message;
+    error.style.display = 'block';
+  }
 }
-function renderMoon() {
-  const now = new Date();
-  const phase = getMoonPhase(now);
-  const pct = Math.round(Math.abs(Math.cos((phase / 29.530588853) * 2 * Math.PI)) * 100);
-  const emojis = ['🌑','🌒','🌓','🌔','🌕','🌖','🌗','🌘'];
-  const emojiIdx = Math.round(phase / 29.530588853 * 8) % 8;
-  const names = ['Luna Nuova','Luna Crescente','Quarto Crescente','Gibbosa Crescente','Luna Piena','Gibbosa Calante','Ultimo Quarto','Calante'];
-  const idx = Math.floor(phase / 29.530588853 * 8) % 8;
-  document.getElementById('moon-emoji').textContent = emojis[emojiIdx];
-  document.getElementById('moon-phase-name').textContent = names[idx];
-  document.getElementById('moon-phase-detail').textContent = `Giorno ${Math.round(phase)} del ciclo lunare`;
-  document.getElementById('moon-pct').textContent = pct;
-  document.getElementById('moon-bar').style.width = pct + '%';
-  const acts = document.getElementById('moon-activities');
-  const isGrowing = phase < 14.77;
-  acts.innerHTML = `
-    <div class="moon-activity">${isGrowing ? '🌱 Luna crescente — favorevole per germinazione e vegetazione' : '🌾 Luna calante — favorevole per raccolta, potatura e radici'}</div>
-    <div class="moon-activity">💧 ${phase < 7.4 ? 'Ridurre irrigazione, luna nuova' : phase < 14.77 ? 'Aumentare progressivamente irrigazione' : phase < 22.1 ? 'Irrigazione normale' : 'Ridurre prima del novilunio'}</div>
-    <div class="moon-activity">🧪 ${phase < 14.77 ? 'Ottimo momento per additivi fogliari' : 'Preferire concimazioni radicali'}</div>
-  `;
+
+/* ══════════════════════════════════════════════════════════════
+   LUNA — algoritmo Meeus preciso
+══════════════════════════════════════════════════════════════ */
+const LUNAR_CYCLE = 29.53058867;
+const KNOWN_NEW_MOON_JD = 2451549.5;
+function dateToJD(d){let y=d.getUTCFullYear(),m=d.getUTCMonth()+1,dd=d.getUTCDate()+d.getUTCHours()/24+d.getUTCMinutes()/1440;if(m<=2){y--;m+=12;}const A=Math.floor(y/100),B=2-A+Math.floor(A/4);return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+dd+B-1524.5;}
+function jdToDate(jd){const z=Math.floor(jd+0.5);let a=z<2299161?z:z+1+Math.floor((z-1867216.25)/36524.25)-Math.floor(Math.floor((z-1867216.25)/36524.25)/4);const b=a+1524,c=Math.floor((b-122.1)/365.25),dd=Math.floor(365.25*c),e=Math.floor((b-dd)/30.6001),day=b-dd-Math.floor(30.6001*e),month=(e<14)?e-1:e-13,year=(month>2)?c-4716:c-4715;return new Date(Date.UTC(year,month-1,day));}
+function getMoonAge(d){const jd=dateToJD(d),days=jd-KNOWN_NEW_MOON_JD;let age=days%LUNAR_CYCLE;if(age<0)age+=LUNAR_CYCLE;return age;}
+function getMoonIllum(age){return Math.round(((1-Math.cos((age/LUNAR_CYCLE)*2*Math.PI))/2)*100);}
+function getMoonPhase(age){const p=age/LUNAR_CYCLE;
+  if(p<0.034)return{name:'Luna Nuova',emoji:'🌑',code:'new'};
+  if(p<0.25)return{name:'Luna Crescente',emoji:'🌒',code:'waxing_crescent'};
+  if(p<0.30)return{name:'Primo Quarto',emoji:'🌓',code:'first_quarter'};
+  if(p<0.50)return{name:'Gibbosa Crescente',emoji:'🌔',code:'waxing_gibbous'};
+  if(p<0.534)return{name:'Luna Piena',emoji:'🌕',code:'full'};
+  if(p<0.75)return{name:'Gibbosa Calante',emoji:'🌖',code:'waning_gibbous'};
+  if(p<0.80)return{name:'Ultimo Quarto',emoji:'🌗',code:'last_quarter'};
+  return{name:'Luna Calante',emoji:'🌘',code:'waning_crescent'};}
+function getAdvice(code){const a={new:{main:'Giorno di pausa e programmazione',detail:'Pianifica, prepara substrati e riorganizza l\'irrigazione. Ottimo per infuso di humus.',tags:['⚙️ Manutenzione','📋 Pianificazione']},waxing_crescent:{main:'Crescente — Stimola la crescita',detail:'La linfa sale verso foglie e fusti. Somministra ortiche e melassa. Ottimo assorbimento.',tags:['🌿 Crescita','🧪 Ortiche+Melassa']},first_quarter:{main:'Primo Quarto — Massima energia',detail:'Intenso sviluppo vegetativo. Ideale per trapianti e miscela organica.',tags:['🌱 Trapianto','🧪 Miscela organica']},waxing_gibbous:{main:'Gibbosa Crescente — Pre-fioritura',detail:'Prepara la fioritura: tè di banana e cenere per potassio.',tags:['🍌 Tè banana','🌸 Pre-fioritura']},full:{main:'Luna Piena — Massima vitalità',detail:'Massima energia. Documenta esperimenti e osserva fiori e resine.',tags:['📊 Documenta','⚡ Verifica esperimenti']},waning_gibbous:{main:'Gibbosa Calante — Radici',detail:'La linfa scende verso le radici. Somministra humus e verifica pila galvanica.',tags:['🌿 Radici','🧫 Humus']},last_quarter:{main:'Ultimo Quarto — Rinnovamento',detail:'Sciacqua serbatoio, rimuovi foglie malate, rinnova infuso di humus.',tags:['🗑️ Pulizia','💧 Rinnovo serbatoio']},waning_crescent:{main:'Luna Calante — Riposo',detail:'Fase di minima energia. Osserva, fotografa il diario di coltivazione.',tags:['📸 Diario','📋 Osservazione']}};return a[code]||a.new;}
+function fmtIT(d){const m=['gen','feb','mar','apr','mag','giu','lug','ago','set','ott','nov','dic'],dn=['Dom','Lun','Mar','Mer','Gio','Ven','Sab'];return`${dn[d.getDay()]} ${d.getDate()} ${m[d.getMonth()]}`;}
+function fmtFull(d){const m=['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];return`${d.getDate()} ${m[d.getMonth()]} ${d.getFullYear()}`;}
+function daysToPhase(age,frac){let diff=frac-age/LUNAR_CYCLE;if(diff<=0.034)diff+=1;return Math.round(diff*LUNAR_CYCLE);}
+function nextMoonDate(today,frac){const jd=dateToJD(today),age=getMoonAge(today);let d=daysToPhase(age,frac);if(d===0)d=Math.round(LUNAR_CYCLE);return jdToDate(jd+d);}
+
+function renderLunarSection(){
+  const today=new Date(),age=getMoonAge(today),illum=getMoonIllum(age),phase=getMoonPhase(age),advice=getAdvice(phase.code);
+  document.getElementById('moonSymbol').textContent=phase.emoji;
+  document.getElementById('moonPhaseName').textContent=phase.name;
+  document.getElementById('moonIllumPct').textContent=illum+'%';
+  document.getElementById('moonProgressBar').style.width=illum+'%';
+  document.getElementById('moonDateToday').textContent=fmtFull(today);
+  document.getElementById('moonAge').textContent=Math.round(age);
+  const fullDate=nextMoonDate(today,0.5),newDate=nextMoonDate(today,0);
+  const dFull=Math.round((fullDate-today)/86400000),dNew=Math.round((newDate-today)/86400000);
+  document.getElementById('daysToFull').textContent=dFull===0?'Oggi':dFull+' gg';
+  document.getElementById('daysToNew').textContent=dNew===0?'Oggi':dNew+' gg';
+  document.getElementById('dateFullMoon').textContent=fmtIT(fullDate);
+  document.getElementById('dateNewMoon').textContent=fmtIT(newDate);
+  document.getElementById('agriAdviceMain').textContent=advice.main;
+  document.getElementById('agriAdviceDetail').textContent=advice.detail;
+  document.getElementById('agriAdviceTags').innerHTML=advice.tags.map(t=>`<span class="badge badge-green">${t}</span>`).join('');
+  const strip=document.getElementById('moonStrip');
+  strip.innerHTML='';
+  const dn=['Dom','Lun','Mar','Mer','Gio','Ven','Sab'];
+  for(let i=0;i<7;i++){const d=new Date(today);d.setDate(d.getDate()+i);const a=getMoonAge(d),il=getMoonIllum(a),sy=getMoonPhase(a).emoji;
+    strip.innerHTML+=`<div style="flex:0 0 auto;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:8px 6px;text-align:center;min-width:52px;${i===0?'border-color:#4aaf5e;background:rgba(74,175,94,0.1);':''}">
+      <div style="font-size:22px;">${sy}</div><div style="font-size:9px;color:var(--text3);">${i===0?'Oggi':dn[d.getDay()]}</div>
+      <div style="font-size:9px;color:var(--text3);">${d.getDate()}/${d.getMonth()+1}</div>
+      <div style="font-size:11px;font-weight:600;color:var(--text2);">${il}%</div></div>`;}
+  const phases=[{code:'new',e:'🌑',n:'Luna Nuova',r:'0%'},{code:'waxing_crescent',e:'🌒',n:'Crescente',r:'1–49%'},{code:'first_quarter',e:'🌓',n:'Primo Quarto',r:'~50%'},{code:'waxing_gibbous',e:'🌔',n:'Gibbosa Crescente',r:'51–99%'},{code:'full',e:'🌕',n:'Luna Piena',r:'100%'},{code:'waning_gibbous',e:'🌖',n:'Gibbosa Calante',r:'99–51%'},{code:'last_quarter',e:'🌗',n:'Ultimo Quarto',r:'~50%'},{code:'waning_crescent',e:'🌘',n:'Calante',r:'49–1%'}];
+  document.querySelector('#phasesTable tbody').innerHTML=phases.map(p=>`<tr style="${p.code===phase.code?'color:#4aaf5e;font-weight:600;background:rgba(74,175,94,0.06);':'color:var(--text2);'}"><td style="padding:8px 4px;border-bottom:1px solid rgba(255,255,255,0.05);">${p.e}</td><td style="padding:8px 4px;border-bottom:1px solid rgba(255,255,255,0.05);">${p.n}${p.code===phase.code?' ← oggi':''}</td><td style="padding:8px 4px;border-bottom:1px solid rgba(255,255,255,0.05);">${p.r}</td></tr>`).join('');
+  document.getElementById('moonCycleInfo').innerHTML=`🌕 Luna Piena: <strong>${fmtIT(fullDate)}</strong> (tra ${dFull} gg)<br>🌑 Luna Nuova: <strong>${fmtIT(newDate)}</strong> (tra ${dNew} gg)<br>⭕ Età luna: <strong>${Math.round(age)} giorni</strong> su ${Math.round(LUNAR_CYCLE)}<br>💡 Illuminazione: <strong>${illum}%</strong>`;
 }
 renderMoon();
 
@@ -1215,6 +1319,11 @@ function appendMsg(text, cls) {
   chat.scrollTop = chat.scrollHeight;
   return div;
 }
+
+// ── INIT ──────────────────────────────────────
+renderBioCalendar();
+renderLunarSection();
+loadWeather();
 </script>
 </body>
 </html>
