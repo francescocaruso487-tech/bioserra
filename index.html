@@ -871,7 +871,6 @@
     <button class="btn-secondary" onclick="closeArchiveModal()">Annulla</button>
   </div>
 </div>
-</section>
 
 <!-- METEO -->
 <section id="sec-meteo" class="section">
@@ -2370,17 +2369,46 @@ async function loadAIJSON() {
   try {
     const data = await fetchGHJson('ai_consigli.json');
     if (!data) { renderPending(el, meta); return; }
-    meta.textContent = 'Aggiornato: ' + fmtJsonDate(data.aggiornato || data.updated_at || data.data);
-    const items = data.consigli || data.items || data.suggerimenti || [];
-    if (!items.length) { el.innerHTML = '<div class="json-pending">Nessun consiglio disponibile</div>'; return; }
-    el.innerHTML = items.map(item => {
-      if (typeof item === 'string') return `<div class="json-item">${item}</div>`;
+
+    // Data può essere una stringa di testo o un array di oggetti
+    const rawData = data.data || data.consigli || data.items || data.suggerimenti;
+    const aggiornato = data.lastUpdate || data.aggiornato || data.updated_at || '';
+    const fonte = data.fonte ? ' · Fonte: ' + data.fonte : '';
+    meta.textContent = 'Aggiornato: ' + fmtJsonDate(aggiornato) + fonte;
+
+    if (!rawData) { el.innerHTML = '<div class="json-pending">Nessun consiglio disponibile</div>'; return; }
+
+    // Caso 1: rawData è una stringa di testo → la mostro come testo pre-formattato
+    if (typeof rawData === 'string') {
+      // Divido per righe doppie per creare paragrafi leggibili
+      const paragrafi = rawData.split(/\n\n+/).filter(p => p.trim());
+      el.innerHTML = paragrafi.map(p => {
+        const riga = p.trim();
+        // Righe che iniziano con numero = titolo sezione
+        if (/^\d+\)/.test(riga)) {
+          const [prima, ...resto] = riga.split('\n');
+          return '<div class="json-item info-item">' +
+            '<div class="json-item-title">' + prima.trim() + '</div>' +
+            (resto.length ? '<div class="json-item-body">' + resto.join('\n').trim() + '</div>' : '') +
+            '</div>';
+        }
+        return '<div class="json-item">' + riga.replace(/\n/g, '<br>') + '</div>';
+      }).join('');
+      return;
+    }
+
+    // Caso 2: rawData è un array
+    if (!Array.isArray(rawData) || !rawData.length) {
+      el.innerHTML = '<div class="json-pending">Nessun consiglio disponibile</div>'; return;
+    }
+    el.innerHTML = rawData.map(item => {
+      if (typeof item === 'string') return '<div class="json-item">' + item + '</div>';
       const cls = item.tipo === 'alert' ? 'alert-item' : (item.tipo === 'info' ? 'info-item' : '');
-      return `<div class="json-item ${cls}">
-        ${item.titolo ? `<div class="json-item-title">${item.titolo}</div>` : ''}
-        <div class="json-item-body">${item.testo || item.body || item.messaggio || ''}</div>
-        ${(item.tag||[]).map(t=>`<span class="json-tag">${t}</span>`).join('')}
-      </div>`;
+      return '<div class="json-item ' + cls + '">' +
+        (item.titolo ? '<div class="json-item-title">' + item.titolo + '</div>' : '') +
+        '<div class="json-item-body">' + (item.testo || item.body || item.messaggio || '') + '</div>' +
+        (item.tag||[]).map(t => '<span class="json-tag">' + t + '</span>').join('') +
+        '</div>';
     }).join('');
   } catch(e) { renderJsonError(el, meta, e); }
 }
