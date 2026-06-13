@@ -823,35 +823,31 @@
 <!-- AI -->
 <section id="sec-ai" class="section">
   <div class="section-title">AI 🤖</div>
-  <div class="section-sub">Assistente Serra · Multi-AI</div>
+  <div class="section-sub">Assistente Serra · 100% Gratuito</div>
 
   <!-- SELETTORE AI -->
   <div class="ai-selector">
-    <button class="ai-sel-btn active" id="ai-btn-claude" onclick="selectAI('claude',this)">
-      🤖 Claude
+    <button class="ai-sel-btn active" id="ai-btn-pollinations" onclick="selectAI('pollinations',this)">
+      🆓 Llama 3<span class="ai-sel-soon">Gratis · No key</span>
     </button>
-    <button class="ai-sel-btn" id="ai-btn-gemini" onclick="selectAI('gemini',this)">
-      ✨ Gemini
+    <button class="ai-sel-btn" id="ai-btn-mistral" onclick="selectAI('mistral',this)">
+      🧠 Mistral<span class="ai-sel-soon">Gratis · No key</span>
     </button>
-    <button class="ai-sel-btn disabled" id="ai-btn-grok" onclick="return false">
-      ⚡ Grok<span class="ai-sel-soon">Prossimamente</span>
+    <button class="ai-sel-btn" id="ai-btn-deepseek" onclick="selectAI('deepseek',this)">
+      🔍 DeepSeek<span class="ai-sel-soon">Gratis · No key</span>
     </button>
-    <button class="ai-sel-btn disabled" id="ai-btn-chatgpt" onclick="return false">
-      💬 ChatGPT<span class="ai-sel-soon">Prossimamente</span>
+    <button class="ai-sel-btn" id="ai-btn-openai" onclick="selectAI('openai',this)">
+      💬 GPT-4o<span class="ai-sel-soon">Gratis · No key</span>
     </button>
   </div>
 
-  <!-- FONTI -->
+  <!-- INFO -->
   <div class="ai-sources-badge">
-    📚 Fonti:
-    <span>Manuale BioSerra</span> ·
-    <span>RoyalQueenSeeds</span> ·
-    <span>Zamnesia</span> ·
-    <span>Drive PDF</span>
+    ✅ Nessuna registrazione · Nessuna chiave · Funziona subito
   </div>
 
   <div class="ai-chat" id="ai-chat">
-    <div class="ai-msg bot" id="ai-welcome-msg">🌿 Ciao! Sono il tuo assistente BioSerra.<br><br>🔑 Per usare Claude o Gemini vai in <strong>Config → Chiavi AI</strong> e inserisci la tua API key.<br><br>Poi torna qui e chiedimi qualsiasi cosa sulle tue 10 piante!</div>
+    <div class="ai-msg bot">🌿 Ciao! Sono il tuo assistente BioSerra.<br>Seleziona un modello AI in alto e scrivi la tua domanda. Tutti i modelli sono gratuiti e funzionano subito, senza registrazione!</div>
   </div>
 
   <div class="ai-quick">
@@ -910,25 +906,6 @@
     <div class="setting-item"><div class="setting-left"><div class="setting-icon">🌦️</div><div><div class="setting-title">API Meteo</div><div class="setting-value">Non collegata</div></div></div><div class="setting-arrow">›</div></div>
     <div class="setting-item"><div class="setting-left"><div class="setting-icon">📡</div><div><div class="setting-title">Sensori IoT</div><div class="setting-value">Nessun sensore</div></div></div><div class="setting-arrow">›</div></div>
     <div class="setting-item"><div class="setting-left"><div class="setting-icon">☁️</div><div><div class="setting-title">Backup cloud</div><div class="setting-value">Disattivato</div></div></div><div class="toggle" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
-  </div>
-  <div class="setting-group">
-    <div class="setting-group-label">Chiavi AI</div>
-    <div class="setting-item" style="flex-direction:column;align-items:flex-start;gap:8px;">
-      <div class="setting-left"><div class="setting-icon">🤖</div><div><div class="setting-title">Claude API Key</div><div class="setting-value" id="claude-key-status">Non configurata</div></div></div>
-      <div style="display:flex;gap:8px;width:100%;">
-        <input id="claude-key-input" type="password" placeholder="sk-ant-..." style="flex:1;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;color:var(--text);font-size:13px;outline:none;font-family:var(--font);">
-        <button onclick="saveClaudeKey()" style="background:var(--green2);border:none;border-radius:10px;padding:8px 14px;color:var(--text);font-size:13px;cursor:pointer;font-weight:600;">Salva</button>
-      </div>
-      <div style="font-size:11px;color:var(--text3);">Ottieni la chiave su console.anthropic.com</div>
-    </div>
-    <div class="setting-item" style="flex-direction:column;align-items:flex-start;gap:8px;margin-top:8px;">
-      <div class="setting-left"><div class="setting-icon">✨</div><div><div class="setting-title">Gemini API Key</div><div class="setting-value" id="gemini-key-status">Non configurata</div></div></div>
-      <div style="display:flex;gap:8px;width:100%;">
-        <input id="gemini-key-input" type="password" placeholder="AIzaSy..." style="flex:1;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;color:var(--text);font-size:13px;outline:none;font-family:var(--font);">
-        <button onclick="saveGeminiKey()" style="background:var(--green2);border:none;border-radius:10px;padding:8px 14px;color:var(--text);font-size:13px;cursor:pointer;font-weight:600;">Salva</button>
-      </div>
-      <div style="font-size:11px;color:var(--text3);">Gratis su aistudio.google.com</div>
-    </div>
   </div>
   <div class="setting-group">
     <div class="setting-group-label">App</div>
@@ -1461,156 +1438,108 @@ function closeBioPopupDirect() {
 renderBioCalendar();
 
 /* ══════════════════════════════════════════════════════════════
-   AI CHAT — Multi-AI + Fonti Multiple
+   AI CHAT — Pollinations AI (100% gratuito, zero key)
 ══════════════════════════════════════════════════════════════ */
 
-/* ── Contesto piante (ID = identifica la pianta, non la quantità) ── */
+/* ── Contesto piante ── */
 const PIANTE_CONTEXT = `
-PIANTE AUTOFIORENTI:
-- Epsilon F1 (ID:7) · 50-70cm · Raccolta: 60gg dalla germinazione (21/04/2026) · Fioritura 30-40gg · Inizio fioritura: 21/05/2026 · Taglio: 20/06/2026 · Fine essicaz: 09/08/2026
-- Milky Way F1 (ID:1) · 55-75cm · Raccolta: 70-75gg · Germ: 23/04/2026 · Inizio fior: 04/06/2026 · Taglio: 22/07/2026 · Fine essicaz: 26/08/2026
-- Titan F1 (ID:2) · 55-75cm · Raccolta: 70-75gg · Germ: 22/04/2026 · Inizio fior: 01/06/2026 · Taglio: 21/07/2026 · Fine essicaz: 25/08/2026
-- Medusa F1 (ID:3) · 60-90cm · Raccolta: 70-75gg · Germ: 21/04/2026 · Inizio fior: 31/05/2026 · Taglio: 20/07/2026 · Fine essicaz: 24/08/2026
-- Gaia F1 (ID:8) · 50-70cm · Raccolta: 65-70gg · Germ: 21/04/2026 · Inizio fior: 31/05/2026 · Taglio: 15/07/2026 · Fine essicaz: 19/08/2026
+PIANTE AUTOFIORENTI (ID identifica la pianta, non la quantità):
+- Epsilon F1 (ID:7) · 50-70cm · Germ: 21/04/2026 · Inizio fior: 21/05/2026 · Taglio: 20/06/2026 · Fine essicaz: 09/08/2026 · Fioritura: 30-40gg
+- Milky Way F1 (ID:1) · 55-75cm · Germ: 23/04/2026 · Inizio fior: 04/06/2026 · Taglio: 22/07/2026 · Fine essicaz: 26/08/2026 · Fioritura: 42-45gg
+- Titan F1 (ID:2) · 55-75cm · Germ: 22/04/2026 · Inizio fior: 01/06/2026 · Taglio: 21/07/2026 · Fine essicaz: 25/08/2026 · Fioritura: 40-45gg
+- Medusa F1 (ID:3) · 60-90cm · Germ: 21/04/2026 · Inizio fior: 31/05/2026 · Taglio: 20/07/2026 · Fine essicaz: 24/08/2026 · Fioritura: 40-45gg
+- Gaia F1 (ID:8) · 50-70cm · Germ: 21/04/2026 · Inizio fior: 31/05/2026 · Taglio: 15/07/2026 · Fine essicaz: 19/08/2026 · Fioritura: 40-45gg
 
 PIANTE FEMMINIZZATE (fotoperiodiche):
-- Astro Lemonade F1 (ID:4) · 100-130cm · Fioritura: 50-60gg · Raccolto: inizio ottobre · Germ: 21/04/2026 · Taglio: 30/10/2026 · Fine essicaz: 04/12/2026
-- Cosmic Cheddar F1 (ID:11) · 80-120cm · Fioritura: 50-60gg · Raccolto: inizio ottobre · Germ: 02/05/2026 · Taglio: 30/10/2026 · Fine essicaz: 04/12/2026
-- Orbital Banana F1 (ID:6) · 100-130cm · Fioritura: 55-65gg · Raccolto: inizio ottobre · Germ: 30/04/2026 · Taglio: 30/10/2026 · Fine essicaz: 04/12/2026
-- Royal Gorilla (ID:10) · 130-170cm · Fioritura: 55-65gg · Raccolto: metà ottobre · Germ: 22/04/2026 · Taglio: 09/11/2026 · Fine essicaz: 14/12/2026
-- Mexican Rush (ID:9) · 150-200cm · Fioritura: 60-70gg · Raccolto: metà ottobre · Germ: 21/04/2026 · Taglio: 09/11/2026 · Fine essicaz: 14/12/2026
+- Astro Lemonade F1 (ID:4) · 100-130cm · Germ: 21/04/2026 · Taglio: 30/10/2026 · Fine essicaz: 04/12/2026 · Raccolto: inizio ottobre
+- Cosmic Cheddar F1 (ID:11) · 80-120cm · Germ: 02/05/2026 · Taglio: 30/10/2026 · Fine essicaz: 04/12/2026 · Raccolto: inizio ottobre
+- Orbital Banana F1 (ID:6) · 100-130cm · Germ: 30/04/2026 · Taglio: 30/10/2026 · Fine essicaz: 04/12/2026 · Raccolto: inizio ottobre
+- Royal Gorilla (ID:10) · 130-170cm · Germ: 22/04/2026 · Taglio: 09/11/2026 · Fine essicaz: 14/12/2026 · Raccolto: metà ottobre
+- Mexican Rush (ID:9) · 150-200cm · Germ: 21/04/2026 · Taglio: 09/11/2026 · Fine essicaz: 14/12/2026 · Raccolto: metà ottobre
 `;
 
 const MANUALE_CONTEXT = `
-SISTEMA: Mini-serra Living Soil semi-autonomo. 10 vasi tessuto traspirante 10L ⌀25cm.
-Substrato: 100L BioBizz Light-Mix + 10L fibra cocco + Super Soil (dose x 100L) + 3kg Worm Humus + micorrize.
+SISTEMA: Mini-serra Living Soil semi-autonomo. 10 vasi tessuto traspirante 10L diametro 25cm.
+Substrato: 100L BioBizz Light-Mix + 10L fibra cocco + Super Soil + 3kg Worm Humus + micorrize.
 Sistema water-only: no fertilizzanti liquidi per 8 mesi.
 Irrigazione: pompa solare + gocciolatori (1/pianta). Serbatoio 50L oscurato.
 
 ADDITIVI E CADENZE:
 - Melassa Morganix: 1ml/L ogni 15gg (bottiglia separata)
-- Miscela organica (gusci uovo+banana+caffè essiccati): 1 cucchiaio grande/vaso, 1x/mese
+- Miscela organica (gusci uovo+banana+caffe essiccati): 1 cucchiaio grande/vaso, 1x/mese
 - Infuso ortiche (100-150g/L, macera 3-7gg, diluire 1:10): 1-2L/vaso, 1x/mese
-- Tè banana+cenere (bolli 3-4 bucce in 1L x 15min, 1 cucchiaino cenere, dil.1:5): ogni 2 sett dal mese 5
+- Te banana+cenere: ogni 2 sett dal mese 5
 - Humus serbatoio (5L+100-150g): rinnovo 1x/mese
 - Generatore etilene (mela o banana annerita): mesi 7-8, sostituire ogni 3-4gg
 
-ESPERIMENTI: elettrocultura (bastoncino rame 40cm+spirale+punta rame), circuito Lakhovsky (anello rame aperto, estremità sovrapposte 2-3cm con 1cm spazio, isolate), pila galvanica ferro-rame (chiodo ferro arrugginito + filo rame, micro-corrente ionizza nutrienti), acqua magnetizzata (magnete sul tubo principale + Geomag su ogni gocciolatoio), Pantacle rame (archi filo nudo tra vasi).
+ESPERIMENTI: elettrocultura (bastoncino rame 40cm+spirale+punta rame), circuito Lakhovsky (anello rame aperto), pila galvanica ferro-rame (chiodo ferro arrugginito + filo rame), acqua magnetizzata (magnete sul tubo + Geomag sui gocciolatori), Pantacle rame (archi filo nudo tra vasi).
 
 MESE 4: rimozione 5 piante brevi, top dressing humus, 2 gocciolatori per le 5 piante lunghe.
-ROUTINE: controllo ogni 3-4gg; agita serbatoio+bordi vasi 1x/settimana; evitare zone idrofobiche bordi.
+ROUTINE: controllo ogni 3-4gg; agita serbatoio+bordi vasi 1x/settimana.
 `;
-
-const SITI_WEB = [
-  'https://www.royalqueenseeds.it/guida-alla-coltivazione-della-cannabis',
-  'https://www.zamnesia.io/it/guida-coltivare-cannabis'
-];
-
-const DRIVE_FOLDERS = [
-  'https://drive.google.com/drive/folders/11WAKNC8UeAPuiCjictXWbB-xmT9B3P95',
-  'https://drive.google.com/drive/folders/1JvlnGZZkeExD-0UFo5TbwOwvbpk1bzIt',
-  'https://drive.google.com/drive/folders/1AxklxW4x3r4sVPBktOd_4ECgDhcnZgQW',
-  'https://drive.google.com/drive/folders/1jsfuStnrXnDGfjhf_0EJceiJy3UQcYJQ'
-];
 
 /* ── Stato AI ── */
 let aiHistory = [];
-let currentAI = 'claude'; // 'claude' | 'gemini'
+let currentAI = 'pollinations';
+
+/* Mappa modello → nome Pollinations */
+const AI_MODELS = {
+  pollinations: { label: '🆓 Llama 3',   model: 'llama',      via: 'Pollinations AI' },
+  mistral:      { label: '🧠 Mistral',    model: 'mistral',    via: 'Pollinations AI' },
+  deepseek:     { label: '🔍 DeepSeek',   model: 'deepseek',   via: 'Pollinations AI' },
+  openai:       { label: '💬 GPT-4o',     model: 'openai',     via: 'Pollinations AI' }
+};
 
 function selectAI(model, btn) {
   currentAI = model;
   document.querySelectorAll('.ai-sel-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  aiHistory = []; // reset conversazione al cambio AI
-  const chat = document.getElementById('ai-chat');
-  const greet = document.createElement('div');
-  greet.className = 'ai-msg bot';
-  const labels = { claude: '🤖 Claude attivo', gemini: '✨ Gemini attivo' };
-  greet.textContent = (labels[model] || model) + ' · Conversazione resettata. Come posso aiutarti?';
-  chat.appendChild(greet);
-  chat.scrollTop = chat.scrollHeight;
+  aiHistory = [];
+  const info = AI_MODELS[model];
+  const greet = appendMsg(info.label + ' attivo · Conversazione resettata. Come posso aiutarti?', 'bot');
 }
 
 function buildSystemPrompt() {
   const today = new Date().toLocaleDateString('it-IT', {weekday:'long', year:'numeric', month:'long', day:'numeric'});
-  return `Sei l'assistente BioSerra, esperto di coltivazione Living Soil biologica.
-Data di oggi: ${today}
-
-${PIANTE_CONTEXT}
-${MANUALE_CONTEXT}
-
-ISTRUZIONI FONTI:
-Quando rispondi, indica sempre da quale fonte proviene la risposta usando questo formato alla fine del messaggio:
-📌 Fonte: [Manuale BioSerra] oppure [RoyalQueenSeeds + Manuale] oppure [Zamnesia] ecc.
-
-PRIORITÀ FONTI: 1) Manuale BioSerra e dati piante sopra, 2) Siti web coltivazione (royalqueenseeds.it, zamnesia.io), 3) Conoscenza agronomica generale.
-Incrocia sempre le informazioni tra le fonti quando pertinente.
-
-Rispondi SEMPRE in italiano. Sii conciso, pratico e diretto. Per domande su una pianta specifica usa i dati del calendario (date esatte). Per consigli generali sulla coltivazione cannabis biologica, attingere alle migliori pratiche del settore.`;
+  return 'Sei BioSerra AI, assistente esperto di coltivazione Living Soil biologica. ' +
+    'Data oggi: ' + today + '. ' +
+    'Rispondi SEMPRE in italiano, in modo conciso e pratico. ' +
+    'Alla fine di ogni risposta scrivi: Fonte: [Manuale BioSerra] o [Esperienza agronomica]. ' +
+    'DATI PIANTE: ' + PIANTE_CONTEXT + ' ' +
+    'MANUALE: ' + MANUALE_CONTEXT;
 }
 
-/* ── Claude ── */
-async function sendClaude(userMsg) {
-  const apiKey = localStorage.getItem('bioserra_claude_key') || '';
-  if (!apiKey) {
-    return '⚠️ Chiave API Claude non configurata.\nVai in Impostazioni → AI e inserisci la tua API key Anthropic.';
-  }
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
+/* ── Pollinations AI (zero key, zero registrazione) ── */
+async function sendPollinations(userMsg, modelKey) {
+  const modelName = AI_MODELS[modelKey].model;
+  const systemPrompt = buildSystemPrompt();
+
+  // Costruisci messaggi con system come primo user message
+  const messages = [
+    { role: 'system', content: systemPrompt },
+    ...aiHistory.slice(0, -1),
+    { role: 'user', content: userMsg }
+  ];
+
+  const res = await fetch('https://text.pollinations.ai/openai', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': apiKey,
-      'anthropic-version': '2023-06-01',
-      'anthropic-dangerous-direct-browser-access': 'true'
-    },
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      model: 'claude-sonnet-4-6',
-      max_tokens: 1000,
-      system: buildSystemPrompt(),
-      messages: aiHistory
+      model: modelName,
+      messages: messages,
+      max_tokens: 800,
+      temperature: 0.7,
+      seed: 42
     })
   });
-  const data = await res.json();
-  if (data.error) throw new Error(data.error.message);
-  let reply = '';
-  if (Array.isArray(data.content)) {
-    for (const block of data.content) {
-      if (block.type === 'text') reply += block.text;
-    }
-  }
-  return reply || '⚠️ Nessuna risposta ricevuta.';
-}
 
-/* ── Gemini ── */
-async function sendGemini(userMsg) {
-  const GEMINI_KEY = localStorage.getItem('bioserra_gemini_key') || '';
-  if (!GEMINI_KEY) {
-    return '⚠️ Chiave API Gemini non configurata.\nVai in Impostazioni → AI e inserisci la tua API key Google AI Studio (gratuita su aistudio.google.com).';
+  if (!res.ok) {
+    const errText = await res.text();
+    throw new Error('Errore ' + res.status + ': ' + errText.slice(0, 100));
   }
-  const systemText = buildSystemPrompt();
-  const historyGemini = aiHistory.slice(0, -1).map(m => ({
-    role: m.role === 'assistant' ? 'model' : 'user',
-    parts: [{ text: m.content }]
-  }));
-  const contents = [
-    ...historyGemini,
-    { role: 'user', parts: [{ text: userMsg }] }
-  ];
-  const res = await fetch(
-    'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + GEMINI_KEY,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        system_instruction: { parts: [{ text: systemText }] },
-        contents: contents,
-        generationConfig: { maxOutputTokens: 1000, temperature: 0.7 }
-      })
-    }
-  );
+
   const data = await res.json();
-  if (data.error) throw new Error(data.error.message || 'Errore Gemini');
-  return data.candidates?.[0]?.content?.parts?.[0]?.text || '⚠️ Nessuna risposta da Gemini.';
+  return data.choices?.[0]?.message?.content || 'Nessuna risposta ricevuta.';
 }
 
 async function aiSend() {
@@ -1621,22 +1550,17 @@ async function aiSend() {
   appendMsg(msg, 'user');
   aiHistory.push({ role: 'user', content: msg });
 
-  const aiLabel = currentAI === 'gemini' ? '✨ Gemini' : '🤖 Claude';
-  const loading = appendMsg('⏳ ' + aiLabel + ' elabora…', 'bot loading');
+  const info = AI_MODELS[currentAI] || AI_MODELS.pollinations;
+  const loading = appendMsg('⏳ ' + info.label + ' elabora…', 'bot loading');
 
   try {
-    let reply = '';
-    if (currentAI === 'gemini') {
-      reply = await sendGemini(msg);
-    } else {
-      reply = await sendClaude(msg);
-    }
+    const reply = await sendPollinations(msg, currentAI);
     loading.className = 'ai-msg bot';
     loading.textContent = reply;
     aiHistory.push({ role: 'assistant', content: reply });
   } catch(e) {
     loading.className = 'ai-msg bot';
-    loading.textContent = '⚠️ Errore: ' + (e.message || 'Connessione fallita. Riprova.');
+    loading.textContent = '⚠️ Errore: ' + (e.message || 'Connessione fallita. Riprova tra un momento.');
   }
   const chat = document.getElementById('ai-chat');
   chat.scrollTop = chat.scrollHeight;
@@ -1659,42 +1583,13 @@ function appendMsg(text, cls) {
 
 // ── INIT ──────────────────────────────────────
 
-function saveClaudeKey() {
-  const val = document.getElementById('claude-key-input').value.trim();
-  if (!val) { alert('Inserisci una chiave valida'); return; }
-  localStorage.setItem('bioserra_claude_key', val);
-  document.getElementById('claude-key-status').textContent = 'Configurata ✓';
-  document.getElementById('claude-key-input').value = '';
-  alert('✅ Chiave Claude salvata!');
-}
-
-function saveGeminiKey() {
-  const val = document.getElementById('gemini-key-input').value.trim();
-  if (!val) { alert('Inserisci una chiave valida'); return; }
-  localStorage.setItem('bioserra_gemini_key', val);
-  document.getElementById('gemini-key-status').textContent = 'Configurata ✓';
-  document.getElementById('gemini-key-input').value = '';
-  alert('✅ Chiave Gemini salvata!');
-}
-
-function initKeyStatus() {
-  if (localStorage.getItem('bioserra_claude_key')) {
-    const el = document.getElementById('claude-key-status');
-    if (el) el.textContent = 'Configurata ✓';
-  }
-  if (localStorage.getItem('bioserra_gemini_key')) {
-    const el = document.getElementById('gemini-key-status');
-    if (el) el.textContent = 'Configurata ✓';
-  }
-}
-
 renderBioCalendar();
 renderLunarSection();
 loadWeather();
-initKeyStatus();
 </script>
 </body>
 </html>
+
 
 
 
