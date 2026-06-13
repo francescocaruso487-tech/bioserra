@@ -544,6 +544,48 @@
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
+  /* ── JSON DATA PANELS ── */
+  .json-panel {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 14px; margin-bottom: 12px;
+  }
+  .json-panel-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .json-panel-title {
+    font-size: 13px; font-weight: 700; color: var(--text2);
+    display: flex; align-items: center; gap: 6px;
+  }
+  .json-panel-meta {
+    font-size: 11px; color: var(--text3); margin-bottom: 10px;
+  }
+  .json-reload-btn {
+    background: var(--card2); border: 1px solid var(--border);
+    border-radius: 20px; padding: 4px 10px; font-size: 11px;
+    color: var(--text3); cursor: pointer; display: flex; align-items: center; gap: 4px;
+    transition: background 0.2s;
+  }
+  .json-reload-btn:active { background: var(--green2); color: var(--text); }
+  .json-loading { font-size: 13px; color: var(--text3); font-style: italic; padding: 8px 0; }
+  .json-error { font-size: 13px; color: var(--orange); padding: 8px 0; }
+  .json-pending { font-size: 13px; color: var(--text3); padding: 8px 0; text-align: center; }
+  .json-item {
+    background: var(--card2); border-left: 3px solid var(--green2);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 10px 12px; margin-bottom: 8px; font-size: 13px;
+    color: var(--text2); line-height: 1.5;
+  }
+  .json-item.alert-item { border-color: var(--orange); }
+  .json-item.info-item  { border-color: var(--blue); }
+  .json-item-title { font-weight: 700; color: var(--text); margin-bottom: 3px; font-size: 13px; }
+  .json-item-body  { font-size: 12px; color: var(--text3); line-height: 1.5; margin-top: 3px; }
+  .json-tag {
+    display: inline-block; padding: 2px 8px; border-radius: 20px;
+    font-size: 11px; font-weight: 600; margin: 2px;
+    background: rgba(76,175,118,0.15); color: var(--green3);
+  }
+
   /* ── GESTIONE DINAMICA PIANTE ── */
   .piante-tab-bar {
     display: flex; gap: 6px; margin-bottom: 14px;
@@ -723,6 +765,16 @@
 
     <!-- LISTA PIANTE ATTIVE (generata da JS) -->
     <div id="lista-piante-attive"></div>
+
+    <!-- STATO PIANTE DA JSON -->
+    <div class="json-panel" id="piante-json-panel" style="margin-top:4px;">
+      <div class="json-panel-header">
+        <div class="json-panel-title">📡 Stato & Alert Piante</div>
+        <button class="json-reload-btn" onclick="loadPianteJSON()">🔄 Aggiorna</button>
+      </div>
+      <div class="json-panel-meta" id="piante-json-meta">In caricamento…</div>
+      <div id="piante-json-content"><div class="json-loading">⏳ Caricamento stato…</div></div>
+    </div>
 
   </div><!-- /panel-attive -->
 
@@ -946,6 +998,16 @@
     <div class="card-title">Ciclo corrente</div>
     <div id="moonCycleInfo" style="font-size:13px;color:var(--text2);line-height:1.8;"></div>
   </div>
+
+  <!-- CONSIGLI LUNARI DA JSON -->
+  <div class="json-panel" id="luna-json-panel">
+    <div class="json-panel-header">
+      <div class="json-panel-title">🤖 Consigli Lunari AI</div>
+      <button class="json-reload-btn" onclick="loadLunaJSON()">🔄 Aggiorna</button>
+    </div>
+    <div class="json-panel-meta" id="luna-json-meta">In caricamento…</div>
+    <div id="luna-json-content"><div class="json-loading">⏳ Caricamento dati…</div></div>
+  </div>
 </section>
 
 <!-- BIODINAMICA -->
@@ -1102,12 +1164,32 @@
     <div class="card-title">📄 Aggiunta rapida</div>
     <div class="empty-state">Importa un documento o aggiungi note personali</div>
   </div>
+
+  <!-- ANALISI AI PDF DA JSON -->
+  <div class="json-panel" id="manuali-json-panel">
+    <div class="json-panel-header">
+      <div class="json-panel-title">🤖 Analisi AI dei PDF</div>
+      <button class="json-reload-btn" onclick="loadManualiJSON()">🔄 Aggiorna</button>
+    </div>
+    <div class="json-panel-meta" id="manuali-json-meta">In caricamento…</div>
+    <div id="manuali-json-content"><div class="json-loading">⏳ Caricamento analisi…</div></div>
+  </div>
 </section>
 
 <!-- AI -->
 <section id="sec-ai" class="section">
   <div class="section-title">AI 🤖</div>
   <div class="section-sub">Assistente Serra · Gemini Flash</div>
+
+  <!-- CONSIGLI AI GIORNALIERI DA JSON -->
+  <div class="json-panel" id="ai-json-panel">
+    <div class="json-panel-header">
+      <div class="json-panel-title">📋 Consigli del Giorno</div>
+      <button class="json-reload-btn" onclick="loadAIJSON()">🔄 Aggiorna</button>
+    </div>
+    <div class="json-panel-meta" id="ai-json-meta">In caricamento…</div>
+    <div id="ai-json-content"><div class="json-loading">⏳ Caricamento consigli…</div></div>
+  </div>
 
   <!-- SETUP KEY (visibile solo se non configurata) -->
   <div id="ai-setup-box" style="display:none;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px;">
@@ -2247,13 +2329,174 @@ function updateCfgKeyStatus() {
   if (el) el.textContent = localStorage.getItem('bioserra_gemini_key') ? '✓ Configurata' : 'Non configurata';
 }
 
+/* ══════════════════════════════════════════════════════════════
+   JSON DATA LOADER — Legge file JSON dalla repository GitHub
+══════════════════════════════════════════════════════════════ */
+
+const GH_BASE = 'https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/';
+
+function fmtJsonDate(iso) {
+  if (!iso) return '—';
+  try {
+    const d = new Date(iso);
+    return d.toLocaleDateString('it-IT',{day:'2-digit',month:'2-digit',year:'numeric'}) +
+           ' ' + d.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+  } catch(e) { return iso; }
+}
+
+async function fetchGHJson(filename) {
+  const url = GH_BASE + filename + '?t=' + Date.now();
+  const res = await fetch(url);
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  return await res.json();
+}
+
+function renderPending(contentEl, metaEl) {
+  metaEl.textContent = '—';
+  contentEl.innerHTML = '<div class="json-pending">⏳ Dati in elaborazione, torna più tardi</div>';
+}
+function renderJsonError(contentEl, metaEl, err) {
+  metaEl.textContent = 'Errore caricamento';
+  contentEl.innerHTML = '<div class="json-error">⚠️ ' + (err.message || 'Errore di rete') + '</div>';
+}
+
+/* ── Consigli AI del giorno ── */
+async function loadAIJSON() {
+  const el = document.getElementById('ai-json-content');
+  const meta = document.getElementById('ai-json-meta');
+  if (!el) return;
+  el.innerHTML = '<div class="json-loading">⏳ Caricamento…</div>';
+  try {
+    const data = await fetchGHJson('ai_consigli.json');
+    if (!data) { renderPending(el, meta); return; }
+    meta.textContent = 'Aggiornato: ' + fmtJsonDate(data.aggiornato || data.updated_at || data.data);
+    const items = data.consigli || data.items || data.suggerimenti || [];
+    if (!items.length) { el.innerHTML = '<div class="json-pending">Nessun consiglio disponibile</div>'; return; }
+    el.innerHTML = items.map(item => {
+      if (typeof item === 'string') return `<div class="json-item">${item}</div>`;
+      const cls = item.tipo === 'alert' ? 'alert-item' : (item.tipo === 'info' ? 'info-item' : '');
+      return `<div class="json-item ${cls}">
+        ${item.titolo ? `<div class="json-item-title">${item.titolo}</div>` : ''}
+        <div class="json-item-body">${item.testo || item.body || item.messaggio || ''}</div>
+        ${(item.tag||[]).map(t=>`<span class="json-tag">${t}</span>`).join('')}
+      </div>`;
+    }).join('');
+  } catch(e) { renderJsonError(el, meta, e); }
+}
+
+/* ── Consigli Lunari ── */
+async function loadLunaJSON() {
+  const el = document.getElementById('luna-json-content');
+  const meta = document.getElementById('luna-json-meta');
+  if (!el) return;
+  el.innerHTML = '<div class="json-loading">⏳ Caricamento…</div>';
+  try {
+    const data = await fetchGHJson('luna_consigli.json');
+    if (!data) { renderPending(el, meta); return; }
+    meta.textContent = 'Aggiornato: ' + fmtJsonDate(data.aggiornato || data.updated_at || data.data);
+    const items = data.consigli || data.items || data.consigli_lunari || [];
+    if (!items.length) { el.innerHTML = '<div class="json-pending">Nessun consiglio lunare disponibile</div>'; return; }
+    el.innerHTML = items.map(item => {
+      if (typeof item === 'string') return `<div class="json-item info-item">${item}</div>`;
+      return `<div class="json-item info-item">
+        ${item.titolo ? `<div class="json-item-title">${item.titolo}</div>` : ''}
+        <div class="json-item-body">${item.testo || item.body || item.messaggio || ''}</div>
+        ${(item.tag||[]).map(t=>`<span class="json-tag">${t}</span>`).join('')}
+      </div>`;
+    }).join('');
+  } catch(e) { renderJsonError(el, meta, e); }
+}
+
+/* ── Stato Piante ── */
+async function loadPianteJSON() {
+  const el = document.getElementById('piante-json-content');
+  const meta = document.getElementById('piante-json-meta');
+  if (!el) return;
+  el.innerHTML = '<div class="json-loading">⏳ Caricamento…</div>';
+  try {
+    const data = await fetchGHJson('piante_stato.json');
+    if (!data) { renderPending(el, meta); return; }
+    meta.textContent = 'Aggiornato: ' + fmtJsonDate(data.aggiornato || data.updated_at || data.data);
+    const alerts = data.alert || data.alerts || [];
+    const piante = data.piante || data.stato || [];
+    let html = '';
+    if (alerts.length) {
+      html += alerts.map(a => {
+        if (typeof a === 'string') return `<div class="json-item alert-item">⚠️ ${a}</div>`;
+        return `<div class="json-item alert-item">
+          ${a.titolo ? `<div class="json-item-title">⚠️ ${a.titolo}</div>` : ''}
+          <div class="json-item-body">${a.testo || a.messaggio || ''}</div>
+        </div>`;
+      }).join('');
+    }
+    if (piante.length) {
+      html += piante.map(p => {
+        if (typeof p === 'string') return `<div class="json-item">${p}</div>`;
+        return `<div class="json-item">
+          <div class="json-item-title">${p.nome || p.name || ''} ${p.id ? '(ID:'+p.id+')' : ''}</div>
+          <div class="json-item-body">${p.stato || p.status || p.testo || ''}</div>
+          ${(p.tag||[]).map(t=>`<span class="json-tag">${t}</span>`).join('')}
+        </div>`;
+      }).join('');
+    }
+    if (!html) { el.innerHTML = '<div class="json-pending">Nessun dato disponibile</div>'; return; }
+    el.innerHTML = html;
+  } catch(e) { renderJsonError(el, meta, e); }
+}
+
+/* ── Analisi PDF ── */
+async function loadManualiJSON() {
+  const el = document.getElementById('manuali-json-content');
+  const meta = document.getElementById('manuali-json-meta');
+  if (!el) return;
+  el.innerHTML = '<div class="json-loading">⏳ Caricamento…</div>';
+  try {
+    const data = await fetchGHJson('pdf_knowledge.json');
+    if (!data) { renderPending(el, meta); return; }
+    meta.textContent = 'Aggiornato: ' + fmtJsonDate(data.aggiornato || data.updated_at || data.data);
+    const items = data.analisi || data.items || data.documenti || [];
+    if (!items.length) { el.innerHTML = '<div class="json-pending">Nessuna analisi disponibile</div>'; return; }
+    el.innerHTML = items.map(item => {
+      if (typeof item === 'string') return `<div class="json-item info-item">${item}</div>`;
+      return `<div class="json-item info-item">
+        ${item.titolo || item.documento ? `<div class="json-item-title">📄 ${item.titolo || item.documento}</div>` : ''}
+        <div class="json-item-body">${item.sommario || item.analisi || item.testo || item.body || ''}</div>
+        ${(item.tag||[]).map(t=>`<span class="json-tag">${t}</span>`).join('')}
+      </div>`;
+    }).join('');
+  } catch(e) { renderJsonError(el, meta, e); }
+}
+
+/* ── Auto-load al cambio sezione ── */
+const _origNavTo = typeof navigateTo === 'function' ? navigateTo : null;
+function navigateTo(sectionId) {
+  if (_origNavTo) _origNavTo(sectionId);
+  else {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    const sec = document.getElementById('sec-' + sectionId);
+    if (sec) sec.classList.add('active');
+  }
+  if (sectionId === 'ai')      loadAIJSON();
+  if (sectionId === 'luna')    loadLunaJSON();
+  if (sectionId === 'piante')  loadPianteJSON();
+  if (sectionId === 'manuali') loadManualiJSON();
+}
+
+/* ── Carica i JSON delle sezioni attive all'avvio ── */
+(function initJsonLoaders() {
+  loadAIJSON();
+  loadLunaJSON();
+  loadPianteJSON();
+  loadManualiJSON();
+})();
+
 renderBioCalendar();
-renderLunarSection();
-loadWeather();
-updateCfgKeyStatus();
 </script>
 </body>
 </html>
+
 
 
 
