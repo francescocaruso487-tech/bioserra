@@ -578,6 +578,33 @@
   }
   .json-item.alert-item { border-color: var(--orange); }
   .json-item.info-item  { border-color: var(--blue); }
+
+  /* ── Card Alert Oggi ── */
+  #alerts-oggi-card {
+    display: none;
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    background: linear-gradient(135deg, rgba(239,83,80,0.10), rgba(30,30,40,0.05));
+    border: 1px solid rgba(239,83,80,0.35);
+  }
+  #alerts-oggi-card .aoc-title {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.04em;
+    color: var(--text3); text-transform: uppercase; margin-bottom: 8px;
+  }
+  .aoc-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 8px 10px; border-radius: 10px; margin-bottom: 6px;
+    font-size: 13px; line-height: 1.4;
+  }
+  .aoc-item:last-child { margin-bottom: 0; }
+  .aoc-item .aoc-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+  .aoc-item .aoc-body { flex: 1; }
+  .aoc-item .aoc-pianta { font-weight: 700; font-size: 13px; }
+  .aoc-item .aoc-msg   { font-size: 12px; margin-top: 1px; opacity: 0.85; }
+  .aoc-item.tipo-raccolta  { background: rgba(239,83,80,0.13);  color: #ef9a9a; }
+  .aoc-item.tipo-fioritura { background: rgba(171,71,188,0.13); color: #ce93d8; }
+  .aoc-item.tipo-essiccazione { background: rgba(255,160,0,0.13); color: #ffcc80; }
   .json-item-title { font-weight: 700; color: var(--text); margin-bottom: 3px; font-size: 13px; }
   .json-item-body  { font-size: 12px; color: var(--text3); line-height: 1.5; margin-top: 3px; }
   .json-tag {
@@ -711,6 +738,13 @@
 <section id="sec-piante" class="section active">
   <div class="section-title">Piante 🌿</div>
   <div class="section-sub" id="piante-sub">Caricamento…</div>
+
+  <!-- ALERT OGGI -->
+  <div id="alerts-oggi-card">
+    <div class="aoc-title">🔔 Alert Oggi</div>
+    <div id="alerts-oggi-list"></div>
+  </div>
+
   <div class="stat-row">
     <div class="stat-box"><div class="stat-num" id="stat-totale">—</div><div class="stat-label">Attive</div></div>
     <div class="stat-box"><div class="stat-num" id="stat-auto">—</div><div class="stat-label">Auto</div></div>
@@ -2446,8 +2480,10 @@ async function loadPianteJSON() {
     const data = await fetchGHJson('piante_stato.json');
     if (!data) { renderPending(el, meta); return; }
     meta.textContent = 'Aggiornato: ' + fmtJsonDate(data.aggiornato || data.updated_at || data.data);
+    // Render alerts-oggi card (usa data.data.alerts_oggi)
+    renderAlertsOggi((data.data && data.data.alerts_oggi) ? data.data.alerts_oggi : []);
     const alerts = data.alert || data.alerts || [];
-    const piante = data.piante || data.stato || [];
+    const piante = data.piante || data.stato || (data.data && data.data.stato_piante) || [];
     let html = '';
     if (alerts.length) {
       html += alerts.map(a => {
@@ -2463,7 +2499,7 @@ async function loadPianteJSON() {
         if (typeof p === 'string') return `<div class="json-item">${p}</div>`;
         return `<div class="json-item">
           <div class="json-item-title">${p.nome || p.name || ''} ${p.id ? '(ID:'+p.id+')' : ''}</div>
-          <div class="json-item-body">${p.stato || p.status || p.testo || ''}</div>
+          <div class="json-item-body">${p.stato || p.status || p.fase || p.testo || ''}</div>
           ${(p.tag||[]).map(t=>`<span class="json-tag">${t}</span>`).join('')}
         </div>`;
       }).join('');
@@ -2471,6 +2507,30 @@ async function loadPianteJSON() {
     if (!html) { el.innerHTML = '<div class="json-pending">Nessun dato disponibile</div>'; return; }
     el.innerHTML = html;
   } catch(e) { renderJsonError(el, meta, e); }
+}
+
+function renderAlertsOggi(alerts) {
+  const card = document.getElementById('alerts-oggi-card');
+  const list = document.getElementById('alerts-oggi-list');
+  if (!card || !list) return;
+  if (!alerts || !alerts.length) { card.style.display = 'none'; return; }
+  const iconMap = { RACCOLTA: '🌾', FIORITURA: '🌸', ESSICCAZIONE: '🍂' };
+  const cssMap  = { RACCOLTA: 'tipo-raccolta', FIORITURA: 'tipo-fioritura', ESSICCAZIONE: 'tipo-essiccazione' };
+  list.innerHTML = alerts.map(a => {
+    const tipo   = (a.tipo || '').toUpperCase();
+    const icon   = iconMap[tipo] || '🔔';
+    const cls    = cssMap[tipo]  || 'tipo-raccolta';
+    const pianta = a.pianta || a.nome || '';
+    const msg    = a.msg || a.messaggio || '';
+    return `<div class="aoc-item ${cls}">
+      <div class="aoc-icon">${icon}</div>
+      <div class="aoc-body">
+        <div class="aoc-pianta">${pianta}${a.id ? ' <small style="opacity:.6">ID:'+a.id+'</small>' : ''}</div>
+        <div class="aoc-msg">${msg}</div>
+      </div>
+    </div>`;
+  }).join('');
+  card.style.display = 'block';
 }
 
 /* ── Analisi PDF ── */
@@ -2524,6 +2584,7 @@ renderBioCalendar();
 </script>
 </body>
 </html>
+
 
 
 
