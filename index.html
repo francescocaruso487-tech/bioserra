@@ -828,7 +828,7 @@
   <!-- SELETTORE AI -->
   <div class="ai-selector">
     <button class="ai-sel-btn active" id="ai-btn-pollinations" onclick="selectAI('pollinations',this)">
-      🆓 Llama 3<span class="ai-sel-soon">Gratis · No key</span>
+      🌐 Llama 3<span class="ai-sel-soon">Gratis · No key</span>
     </button>
     <button class="ai-sel-btn" id="ai-btn-mistral" onclick="selectAI('mistral',this)">
       🧠 Mistral<span class="ai-sel-soon">Gratis · No key</span>
@@ -836,18 +836,24 @@
     <button class="ai-sel-btn" id="ai-btn-deepseek" onclick="selectAI('deepseek',this)">
       🔍 DeepSeek<span class="ai-sel-soon">Gratis · No key</span>
     </button>
-    <button class="ai-sel-btn" id="ai-btn-openai" onclick="selectAI('openai',this)">
-      💬 GPT-4o<span class="ai-sel-soon">Gratis · No key</span>
+    <button class="ai-sel-btn" id="ai-btn-groq" onclick="selectAI('groq',this)">
+      ⚡ Groq<span class="ai-sel-soon">Gratis · Key opzionale</span>
     </button>
   </div>
 
   <!-- INFO -->
   <div class="ai-sources-badge">
-    ✅ Nessuna registrazione · Nessuna chiave · Funziona subito
+    ✅ 3 modelli senza key · ⚡ Groq: key gratuita su console.groq.com
   </div>
 
   <div class="ai-chat" id="ai-chat">
-    <div class="ai-msg bot">🌿 Ciao! Sono il tuo assistente BioSerra.<br>Seleziona un modello AI in alto e scrivi la tua domanda. Tutti i modelli sono gratuiti e funzionano subito, senza registrazione!</div>
+    <div class="ai-msg bot">🌿 Ciao! Sono il tuo assistente BioSerra.
+
+🌐 Llama 3, Mistral e DeepSeek funzionano subito senza nessuna registrazione.
+
+⚡ Groq è il più veloce — chiave gratuita in 1 minuto su console.groq.com (solo email, no carta).
+
+Scrivi la tua domanda!</div>
   </div>
 
   <div class="ai-quick">
@@ -906,6 +912,17 @@
     <div class="setting-item"><div class="setting-left"><div class="setting-icon">🌦️</div><div><div class="setting-title">API Meteo</div><div class="setting-value">Non collegata</div></div></div><div class="setting-arrow">›</div></div>
     <div class="setting-item"><div class="setting-left"><div class="setting-icon">📡</div><div><div class="setting-title">Sensori IoT</div><div class="setting-value">Nessun sensore</div></div></div><div class="setting-arrow">›</div></div>
     <div class="setting-item"><div class="setting-left"><div class="setting-icon">☁️</div><div><div class="setting-title">Backup cloud</div><div class="setting-value">Disattivato</div></div></div><div class="toggle" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
+  </div>
+  <div class="setting-group">
+    <div class="setting-group-label">AI Key Groq (opzionale)</div>
+    <div class="setting-item" style="flex-direction:column;align-items:flex-start;gap:8px;">
+      <div class="setting-left"><div class="setting-icon">⚡</div><div><div class="setting-title">Groq API Key</div><div class="setting-value" id="groq-key-status">Non configurata — usa Llama/Mistral/DeepSeek</div></div></div>
+      <div style="display:flex;gap:8px;width:100%;">
+        <input id="groq-key-input" type="password" placeholder="gsk_..." style="flex:1;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;color:var(--text);font-size:13px;outline:none;font-family:var(--font);">
+        <button onclick="saveGroqKey()" style="background:var(--green2);border:none;border-radius:10px;padding:8px 14px;color:var(--text);font-size:13px;cursor:pointer;font-weight:600;">Salva</button>
+      </div>
+      <div style="font-size:11px;color:var(--text3);">Gratis su console.groq.com · Solo email · No carta · Llama3 70B a 600 tok/sec</div>
+    </div>
   </div>
   <div class="setting-group">
     <div class="setting-group-label">App</div>
@@ -1438,57 +1455,29 @@ function closeBioPopupDirect() {
 renderBioCalendar();
 
 /* ══════════════════════════════════════════════════════════════
-   AI CHAT — Pollinations AI (100% gratuito, zero key)
+   AI CHAT — Pollinations GET + Groq fallback
 ══════════════════════════════════════════════════════════════ */
 
-/* ── Contesto piante ── */
-const PIANTE_CONTEXT = `
-PIANTE AUTOFIORENTI (ID identifica la pianta, non la quantità):
-- Epsilon F1 (ID:7) · 50-70cm · Germ: 21/04/2026 · Inizio fior: 21/05/2026 · Taglio: 20/06/2026 · Fine essicaz: 09/08/2026 · Fioritura: 30-40gg
-- Milky Way F1 (ID:1) · 55-75cm · Germ: 23/04/2026 · Inizio fior: 04/06/2026 · Taglio: 22/07/2026 · Fine essicaz: 26/08/2026 · Fioritura: 42-45gg
-- Titan F1 (ID:2) · 55-75cm · Germ: 22/04/2026 · Inizio fior: 01/06/2026 · Taglio: 21/07/2026 · Fine essicaz: 25/08/2026 · Fioritura: 40-45gg
-- Medusa F1 (ID:3) · 60-90cm · Germ: 21/04/2026 · Inizio fior: 31/05/2026 · Taglio: 20/07/2026 · Fine essicaz: 24/08/2026 · Fioritura: 40-45gg
-- Gaia F1 (ID:8) · 50-70cm · Germ: 21/04/2026 · Inizio fior: 31/05/2026 · Taglio: 15/07/2026 · Fine essicaz: 19/08/2026 · Fioritura: 40-45gg
+const PIANTE_CONTEXT = `Autofiorenti: Epsilon F1(ID:7,germ 21/04,taglio 20/06), Milky Way(ID:1,germ 23/04,taglio 22/07), Titan(ID:2,germ 22/04,taglio 21/07), Medusa(ID:3,germ 21/04,taglio 20/07), Gaia(ID:8,germ 21/04,taglio 15/07). Femminizzate: Astro Lemonade(ID:4,taglio 30/10), Cosmic Cheddar(ID:11,taglio 30/10), Orbital Banana(ID:6,taglio 30/10), Royal Gorilla(ID:10,taglio 09/11), Mexican Rush(ID:9,taglio 09/11).`;
 
-PIANTE FEMMINIZZATE (fotoperiodiche):
-- Astro Lemonade F1 (ID:4) · 100-130cm · Germ: 21/04/2026 · Taglio: 30/10/2026 · Fine essicaz: 04/12/2026 · Raccolto: inizio ottobre
-- Cosmic Cheddar F1 (ID:11) · 80-120cm · Germ: 02/05/2026 · Taglio: 30/10/2026 · Fine essicaz: 04/12/2026 · Raccolto: inizio ottobre
-- Orbital Banana F1 (ID:6) · 100-130cm · Germ: 30/04/2026 · Taglio: 30/10/2026 · Fine essicaz: 04/12/2026 · Raccolto: inizio ottobre
-- Royal Gorilla (ID:10) · 130-170cm · Germ: 22/04/2026 · Taglio: 09/11/2026 · Fine essicaz: 14/12/2026 · Raccolto: metà ottobre
-- Mexican Rush (ID:9) · 150-200cm · Germ: 21/04/2026 · Taglio: 09/11/2026 · Fine essicaz: 14/12/2026 · Raccolto: metà ottobre
-`;
+const MANUALE_CONTEXT = `Serra Living Soil: 10 vasi 10L. Substrato: BioBizz Light-Mix+fibra cocco+Super Soil+Worm Humus+micorrize. Additivi: Melassa 1ml/L ogni 15gg; Miscela organica (uovo+banana+caffe) 1 cucchiaio/vaso/mese; Infuso ortiche diluito 1:10, 1-2L/vaso/mese; Te banana+cenere ogni 2 sett da mese 5; Etilene mesi 7-8. Esperimenti: elettrocultura, Lakhovsky, pila galvanica ferro-rame, acqua magnetizzata, Pantacle rame. Mese 4: rimozione 5 piante brevi, 2 gocciolatori per le restanti.`;
 
-const MANUALE_CONTEXT = `
-SISTEMA: Mini-serra Living Soil semi-autonomo. 10 vasi tessuto traspirante 10L diametro 25cm.
-Substrato: 100L BioBizz Light-Mix + 10L fibra cocco + Super Soil + 3kg Worm Humus + micorrize.
-Sistema water-only: no fertilizzanti liquidi per 8 mesi.
-Irrigazione: pompa solare + gocciolatori (1/pianta). Serbatoio 50L oscurato.
-
-ADDITIVI E CADENZE:
-- Melassa Morganix: 1ml/L ogni 15gg (bottiglia separata)
-- Miscela organica (gusci uovo+banana+caffe essiccati): 1 cucchiaio grande/vaso, 1x/mese
-- Infuso ortiche (100-150g/L, macera 3-7gg, diluire 1:10): 1-2L/vaso, 1x/mese
-- Te banana+cenere: ogni 2 sett dal mese 5
-- Humus serbatoio (5L+100-150g): rinnovo 1x/mese
-- Generatore etilene (mela o banana annerita): mesi 7-8, sostituire ogni 3-4gg
-
-ESPERIMENTI: elettrocultura (bastoncino rame 40cm+spirale+punta rame), circuito Lakhovsky (anello rame aperto), pila galvanica ferro-rame (chiodo ferro arrugginito + filo rame), acqua magnetizzata (magnete sul tubo + Geomag sui gocciolatori), Pantacle rame (archi filo nudo tra vasi).
-
-MESE 4: rimozione 5 piante brevi, top dressing humus, 2 gocciolatori per le 5 piante lunghe.
-ROUTINE: controllo ogni 3-4gg; agita serbatoio+bordi vasi 1x/settimana.
-`;
-
-/* ── Stato AI ── */
 let aiHistory = [];
 let currentAI = 'pollinations';
 
-/* Mappa modello → nome Pollinations */
 const AI_MODELS = {
-  pollinations: { label: '🆓 Llama 3',   model: 'llama',      via: 'Pollinations AI' },
-  mistral:      { label: '🧠 Mistral',    model: 'mistral',    via: 'Pollinations AI' },
-  deepseek:     { label: '🔍 DeepSeek',   model: 'deepseek',   via: 'Pollinations AI' },
-  openai:       { label: '💬 GPT-4o',     model: 'openai',     via: 'Pollinations AI' }
+  pollinations: { label: '🌐 Llama 3',  tag: 'Gratis · No key' },
+  mistral:      { label: '🧠 Mistral',  tag: 'Gratis · No key' },
+  deepseek:     { label: '🔍 DeepSeek', tag: 'Gratis · No key' },
+  groq:         { label: '⚡ Groq',     tag: 'Gratis · Key opzionale' }
 };
+
+function buildSystemShort() {
+  const today = new Date().toLocaleDateString('it-IT',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
+  return 'Sei BioSerra AI, assistente coltivazione Living Soil biologica. Oggi: '+today+'. '+
+    'Piante: '+PIANTE_CONTEXT+' Manuale: '+MANUALE_CONTEXT+
+    ' Rispondi in italiano, conciso e pratico. Fine risposta scrivi sempre: [Fonte: Manuale BioSerra]';
+}
 
 function selectAI(model, btn) {
   currentAI = model;
@@ -1496,50 +1485,49 @@ function selectAI(model, btn) {
   btn.classList.add('active');
   aiHistory = [];
   const info = AI_MODELS[model];
-  const greet = appendMsg(info.label + ' attivo · Conversazione resettata. Come posso aiutarti?', 'bot');
+  appendMsg(info.label + ' pronto · Come posso aiutarti?', 'bot');
 }
 
-function buildSystemPrompt() {
-  const today = new Date().toLocaleDateString('it-IT', {weekday:'long', year:'numeric', month:'long', day:'numeric'});
-  return 'Sei BioSerra AI, assistente esperto di coltivazione Living Soil biologica. ' +
-    'Data oggi: ' + today + '. ' +
-    'Rispondi SEMPRE in italiano, in modo conciso e pratico. ' +
-    'Alla fine di ogni risposta scrivi: Fonte: [Manuale BioSerra] o [Esperienza agronomica]. ' +
-    'DATI PIANTE: ' + PIANTE_CONTEXT + ' ' +
-    'MANUALE: ' + MANUALE_CONTEXT;
+/* ── Pollinations via GET (no queue, no CORS) ── */
+async function sendPollinations(userMsg, modelName) {
+  const system = buildSystemShort();
+  // Costruisce storico come testo per il prompt GET
+  let historyText = '';
+  const hist = aiHistory.slice(0, -1);
+  if (hist.length > 0) {
+    historyText = hist.map(m => (m.role==='user'?'Utente: ':'Assistente: ') + m.content).join('\n') + '\n';
+  }
+  const fullPrompt = system + '\n\n' + historyText + 'Utente: ' + userMsg;
+  const encoded = encodeURIComponent(fullPrompt);
+  const seed = Math.floor(Math.random() * 9999);
+  const url = `https://text.pollinations.ai/${encoded}?model=${modelName}&seed=${seed}&json=false`;
+
+  const res = await fetch(url, { method: 'GET' });
+  if (!res.ok) throw new Error('Errore ' + res.status);
+  const text = await res.text();
+  if (!text || text.trim().length === 0) throw new Error('Risposta vuota');
+  return text.trim();
 }
 
-/* ── Pollinations AI (zero key, zero registrazione) ── */
-async function sendPollinations(userMsg, modelKey) {
-  const modelName = AI_MODELS[modelKey].model;
-  const systemPrompt = buildSystemPrompt();
-
-  // Costruisci messaggi con system come primo user message
+/* ── Groq (key opzionale — gratuita su console.groq.com) ── */
+async function sendGroq(userMsg) {
+  const key = localStorage.getItem('bioserra_groq_key') || '';
+  if (!key) {
+    return '⚡ Groq richiede una chiave API gratuita.\n\n1. Vai su console.groq.com\n2. Registrati con email (no carta di credito)\n3. Copia la chiave e incollala in Config → AI Key Groq\n\nGroq è il modello più veloce: Llama3 70B a 600 token/sec!';
+  }
   const messages = [
-    { role: 'system', content: systemPrompt },
+    { role: 'system', content: buildSystemShort() },
     ...aiHistory.slice(0, -1),
     { role: 'user', content: userMsg }
   ];
-
-  const res = await fetch('https://text.pollinations.ai/openai', {
+  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      model: modelName,
-      messages: messages,
-      max_tokens: 800,
-      temperature: 0.7,
-      seed: 42
-    })
+    headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + key },
+    body: JSON.stringify({ model: 'llama3-70b-8192', messages, max_tokens: 800 })
   });
-
-  if (!res.ok) {
-    const errText = await res.text();
-    throw new Error('Errore ' + res.status + ': ' + errText.slice(0, 100));
-  }
-
   const data = await res.json();
-  return data.choices?.[0]?.message?.content || 'Nessuna risposta ricevuta.';
+  if (data.error) throw new Error(data.error.message);
+  return data.choices?.[0]?.message?.content || 'Nessuna risposta.';
 }
 
 async function aiSend() {
@@ -1554,16 +1542,33 @@ async function aiSend() {
   const loading = appendMsg('⏳ ' + info.label + ' elabora…', 'bot loading');
 
   try {
-    const reply = await sendPollinations(msg, currentAI);
+    let reply = '';
+    if (currentAI === 'groq') {
+      reply = await sendGroq(msg);
+    } else {
+      const modelMap = { pollinations: 'llama', mistral: 'mistral', deepseek: 'deepseek' };
+      const modelName = modelMap[currentAI] || 'llama';
+      reply = await sendPollinations(msg, modelName);
+    }
     loading.className = 'ai-msg bot';
     loading.textContent = reply;
     aiHistory.push({ role: 'assistant', content: reply });
   } catch(e) {
+    // Retry automatico con llama se fallisce il modello scelto
+    if (currentAI !== 'pollinations') {
+      try {
+        loading.textContent = '⏳ Riprovo con Llama…';
+        const reply2 = await sendPollinations(msg, 'llama');
+        loading.className = 'ai-msg bot';
+        loading.textContent = reply2 + '\n\n[Risposto da Llama - fallback automatico]';
+        aiHistory.push({ role: 'assistant', content: reply2 });
+        return;
+      } catch(e2) {}
+    }
     loading.className = 'ai-msg bot';
-    loading.textContent = '⚠️ Errore: ' + (e.message || 'Connessione fallita. Riprova tra un momento.');
+    loading.textContent = '⚠️ ' + (e.message || 'Connessione fallita') + '\n\nRiprova tra qualche secondo o cambia modello.';
   }
-  const chat = document.getElementById('ai-chat');
-  chat.scrollTop = chat.scrollHeight;
+  document.getElementById('ai-chat').scrollTop = 99999;
 }
 
 function aiQuick(msg) {
@@ -1577,11 +1582,27 @@ function appendMsg(text, cls) {
   div.className = 'ai-msg ' + cls;
   div.textContent = text;
   chat.appendChild(div);
-  chat.scrollTop = chat.scrollHeight;
+  chat.scrollTop = 99999;
   return div;
 }
 
 // ── INIT ──────────────────────────────────────
+
+function saveGroqKey() {
+  const val = document.getElementById('groq-key-input').value.trim();
+  if (!val) { alert('Inserisci una chiave valida (inizia con gsk_)'); return; }
+  localStorage.setItem('bioserra_groq_key', val);
+  document.getElementById('groq-key-status').textContent = 'Configurata ✓ — Groq attivo';
+  document.getElementById('groq-key-input').value = '';
+  alert('✅ Chiave Groq salvata! Ora puoi usare Llama3 70B velocissimo.');
+}
+
+(function initGroqStatus() {
+  if (localStorage.getItem('bioserra_groq_key')) {
+    const el = document.getElementById('groq-key-status');
+    if (el) el.textContent = 'Configurata ✓ — Groq attivo';
+  }
+})();
 
 renderBioCalendar();
 renderLunarSection();
@@ -1589,6 +1610,7 @@ loadWeather();
 </script>
 </body>
 </html>
+
 
 
 
