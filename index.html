@@ -851,7 +851,7 @@
   </div>
 
   <div class="ai-chat" id="ai-chat">
-    <div class="ai-msg bot">🌿 Ciao! Sono il tuo assistente BioSerra.<br>Chiedimi qualsiasi cosa sulla tua coltivazione. Incroco le informazioni dal manuale, dai tuoi PDF su Drive e dai migliori siti di coltivazione. Dimmi anche quale pianta (es. "Epsilon F1 ID:7") per risposte mirate!</div>
+    <div class="ai-msg bot" id="ai-welcome-msg">🌿 Ciao! Sono il tuo assistente BioSerra.<br><br>🔑 Per usare Claude o Gemini vai in <strong>Config → Chiavi AI</strong> e inserisci la tua API key.<br><br>Poi torna qui e chiedimi qualsiasi cosa sulle tue 10 piante!</div>
   </div>
 
   <div class="ai-quick">
@@ -910,6 +910,25 @@
     <div class="setting-item"><div class="setting-left"><div class="setting-icon">🌦️</div><div><div class="setting-title">API Meteo</div><div class="setting-value">Non collegata</div></div></div><div class="setting-arrow">›</div></div>
     <div class="setting-item"><div class="setting-left"><div class="setting-icon">📡</div><div><div class="setting-title">Sensori IoT</div><div class="setting-value">Nessun sensore</div></div></div><div class="setting-arrow">›</div></div>
     <div class="setting-item"><div class="setting-left"><div class="setting-icon">☁️</div><div><div class="setting-title">Backup cloud</div><div class="setting-value">Disattivato</div></div></div><div class="toggle" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
+  </div>
+  <div class="setting-group">
+    <div class="setting-group-label">Chiavi AI</div>
+    <div class="setting-item" style="flex-direction:column;align-items:flex-start;gap:8px;">
+      <div class="setting-left"><div class="setting-icon">🤖</div><div><div class="setting-title">Claude API Key</div><div class="setting-value" id="claude-key-status">Non configurata</div></div></div>
+      <div style="display:flex;gap:8px;width:100%;">
+        <input id="claude-key-input" type="password" placeholder="sk-ant-..." style="flex:1;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;color:var(--text);font-size:13px;outline:none;font-family:var(--font);">
+        <button onclick="saveClaudeKey()" style="background:var(--green2);border:none;border-radius:10px;padding:8px 14px;color:var(--text);font-size:13px;cursor:pointer;font-weight:600;">Salva</button>
+      </div>
+      <div style="font-size:11px;color:var(--text3);">Ottieni la chiave su console.anthropic.com</div>
+    </div>
+    <div class="setting-item" style="flex-direction:column;align-items:flex-start;gap:8px;margin-top:8px;">
+      <div class="setting-left"><div class="setting-icon">✨</div><div><div class="setting-title">Gemini API Key</div><div class="setting-value" id="gemini-key-status">Non configurata</div></div></div>
+      <div style="display:flex;gap:8px;width:100%;">
+        <input id="gemini-key-input" type="password" placeholder="AIzaSy..." style="flex:1;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;color:var(--text);font-size:13px;outline:none;font-family:var(--font);">
+        <button onclick="saveGeminiKey()" style="background:var(--green2);border:none;border-radius:10px;padding:8px 14px;color:var(--text);font-size:13px;cursor:pointer;font-weight:600;">Salva</button>
+      </div>
+      <div style="font-size:11px;color:var(--text3);">Gratis su aistudio.google.com</div>
+    </div>
   </div>
   <div class="setting-group">
     <div class="setting-group-label">App</div>
@@ -1532,20 +1551,27 @@ Rispondi SEMPRE in italiano. Sii conciso, pratico e diretto. Per domande su una 
 
 /* ── Claude ── */
 async function sendClaude(userMsg) {
+  const apiKey = localStorage.getItem('bioserra_claude_key') || '';
+  if (!apiKey) {
+    return '⚠️ Chiave API Claude non configurata.\nVai in Impostazioni → AI e inserisci la tua API key Anthropic.';
+  }
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': apiKey,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true'
+    },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
       max_tokens: 1000,
       system: buildSystemPrompt(),
-      tools: [{ type: 'web_search_20250305', name: 'web_search' }],
       messages: aiHistory
     })
   });
   const data = await res.json();
   if (data.error) throw new Error(data.error.message);
-  // Estrai testo da content blocks (possibile mix text + tool_use)
   let reply = '';
   if (Array.isArray(data.content)) {
     for (const block of data.content) {
@@ -1557,27 +1583,27 @@ async function sendClaude(userMsg) {
 
 /* ── Gemini ── */
 async function sendGemini(userMsg) {
-  const GEMINI_KEY = 'AIzaSyD-placeholder'; // chiave pubblica Gemini Flash gratuita
+  const GEMINI_KEY = localStorage.getItem('bioserra_gemini_key') || '';
+  if (!GEMINI_KEY) {
+    return '⚠️ Chiave API Gemini non configurata.\nVai in Impostazioni → AI e inserisci la tua API key Google AI Studio (gratuita su aistudio.google.com).';
+  }
   const systemText = buildSystemPrompt();
-  const parts = aiHistory.map(m => ({
+  const historyGemini = aiHistory.slice(0, -1).map(m => ({
     role: m.role === 'assistant' ? 'model' : 'user',
     parts: [{ text: m.content }]
   }));
-  // Aggiungi contesto sistema come primo messaggio user se non c'è storia
-  const contents = parts.length === 0
-    ? [{ role: 'user', parts: [{ text: systemText + '
-
-' + userMsg }] }]
-    : parts;
-
+  const contents = [
+    ...historyGemini,
+    { role: 'user', parts: [{ text: userMsg }] }
+  ];
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_KEY}`,
+    'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + GEMINI_KEY,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         system_instruction: { parts: [{ text: systemText }] },
-        contents: aiHistory.length > 0 ? parts : [{ role: 'user', parts: [{ text: userMsg }] }],
+        contents: contents,
         generationConfig: { maxOutputTokens: 1000, temperature: 0.7 }
       })
     }
@@ -1632,11 +1658,43 @@ function appendMsg(text, cls) {
 }
 
 // ── INIT ──────────────────────────────────────
+
+function saveClaudeKey() {
+  const val = document.getElementById('claude-key-input').value.trim();
+  if (!val) { alert('Inserisci una chiave valida'); return; }
+  localStorage.setItem('bioserra_claude_key', val);
+  document.getElementById('claude-key-status').textContent = 'Configurata ✓';
+  document.getElementById('claude-key-input').value = '';
+  alert('✅ Chiave Claude salvata!');
+}
+
+function saveGeminiKey() {
+  const val = document.getElementById('gemini-key-input').value.trim();
+  if (!val) { alert('Inserisci una chiave valida'); return; }
+  localStorage.setItem('bioserra_gemini_key', val);
+  document.getElementById('gemini-key-status').textContent = 'Configurata ✓';
+  document.getElementById('gemini-key-input').value = '';
+  alert('✅ Chiave Gemini salvata!');
+}
+
+function initKeyStatus() {
+  if (localStorage.getItem('bioserra_claude_key')) {
+    const el = document.getElementById('claude-key-status');
+    if (el) el.textContent = 'Configurata ✓';
+  }
+  if (localStorage.getItem('bioserra_gemini_key')) {
+    const el = document.getElementById('gemini-key-status');
+    if (el) el.textContent = 'Configurata ✓';
+  }
+}
+
 renderBioCalendar();
 renderLunarSection();
 loadWeather();
+initKeyStatus();
 </script>
 </body>
 </html>
+
 
 
