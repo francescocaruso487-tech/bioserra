@@ -1066,37 +1066,30 @@
 <!-- AI -->
 <section id="sec-ai" class="section">
   <div class="section-title">AI 🤖</div>
-  <div class="section-sub">Assistente Serra · 100% Gratuito</div>
+  <div class="section-sub">Assistente Serra</div>
 
-  <!-- SELETTORE AI -->
   <div class="ai-selector">
-    <button class="ai-sel-btn active" id="ai-btn-pollinations" onclick="selectAI('pollinations',this)">
-      🌐 Llama 3<span class="ai-sel-soon">Gratis · No key</span>
-    </button>
-    <button class="ai-sel-btn" id="ai-btn-mistral" onclick="selectAI('mistral',this)">
-      🧠 Mistral<span class="ai-sel-soon">Gratis · No key</span>
-    </button>
-    <button class="ai-sel-btn" id="ai-btn-deepseek" onclick="selectAI('deepseek',this)">
-      🔍 DeepSeek<span class="ai-sel-soon">Gratis · No key</span>
+    <button class="ai-sel-btn active" id="ai-btn-gemini" onclick="selectAI('gemini',this)">
+      ✨ Gemini Flash<span class="ai-sel-soon">Key gratuita · aistudio.google.com</span>
     </button>
     <button class="ai-sel-btn" id="ai-btn-groq" onclick="selectAI('groq',this)">
-      ⚡ Groq<span class="ai-sel-soon">Gratis · Key opzionale</span>
+      ⚡ Groq Llama3<span class="ai-sel-soon">Key gratuita · console.groq.com</span>
     </button>
   </div>
 
-  <!-- INFO -->
   <div class="ai-sources-badge">
-    ✅ 3 modelli senza key · ⚡ Groq: key gratuita su console.groq.com
+    ✅ Entrambi gratuiti · Nessuna carta · Solo registrazione email
   </div>
 
   <div class="ai-chat" id="ai-chat">
-    <div class="ai-msg bot">🌿 Ciao! Sono il tuo assistente BioSerra.
+    <div class="ai-msg bot">🌿 Ciao! Sono BioSerra AI.
 
-🌐 Llama 3, Mistral e DeepSeek funzionano subito senza nessuna registrazione.
+🔑 Per iniziare inserisci una chiave gratuita in ⚙️ Config → AI Keys:
 
-⚡ Groq è il più veloce — chiave gratuita in 1 minuto su console.groq.com (solo email, no carta).
+✨ Gemini: aistudio.google.com (accedi con Google, zero carta)
+⚡ Groq: console.groq.com (email, zero carta)
 
-Scrivi la tua domanda!</div>
+Entrambe si ottengono in meno di 2 minuti!</div>
   </div>
 
   <div class="ai-quick">
@@ -1157,14 +1150,46 @@ Scrivi la tua domanda!</div>
     <div class="setting-item"><div class="setting-left"><div class="setting-icon">☁️</div><div><div class="setting-title">Backup cloud</div><div class="setting-value">Disattivato</div></div></div><div class="toggle" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
   </div>
   <div class="setting-group">
-    <div class="setting-group-label">AI Key Groq (opzionale)</div>
-    <div class="setting-item" style="flex-direction:column;align-items:flex-start;gap:8px;">
-      <div class="setting-left"><div class="setting-icon">⚡</div><div><div class="setting-title">Groq API Key</div><div class="setting-value" id="groq-key-status">Non configurata — usa Llama/Mistral/DeepSeek</div></div></div>
-      <div style="display:flex;gap:8px;width:100%;">
-        <input id="groq-key-input" type="password" placeholder="gsk_..." style="flex:1;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;color:var(--text);font-size:13px;outline:none;font-family:var(--font);">
-        <button onclick="saveGroqKey()" style="background:var(--green2);border:none;border-radius:10px;padding:8px 14px;color:var(--text);font-size:13px;cursor:pointer;font-weight:600;">Salva</button>
+    <div class="setting-group-label">🔑 AI Keys (entrambe gratuite)</div>
+
+    <div class="setting-item" style="flex-direction:column;align-items:flex-start;gap:10px;padding:14px 0;">
+      <div style="display:flex;align-items:center;gap:10px;width:100%;">
+        <span style="font-size:20px;">✨</span>
+        <div>
+          <div class="setting-title">Gemini API Key</div>
+          <div class="setting-value" id="gemini-key-status">Non configurata</div>
+        </div>
       </div>
-      <div style="font-size:11px;color:var(--text3);">Gratis su console.groq.com · Solo email · No carta · Llama3 70B a 600 tok/sec</div>
+      <input id="gemini-key-input" type="password" placeholder="AIzaSy..." autocomplete="off"
+        style="width:100%;box-sizing:border-box;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 14px;color:var(--text);font-size:14px;outline:none;font-family:var(--font);">
+      <button onclick="saveGeminiKey()"
+        style="width:100%;background:var(--green2);border:none;border-radius:10px;padding:11px;color:var(--text);font-size:14px;font-weight:700;cursor:pointer;letter-spacing:0.3px;">
+        💾 Salva chiave Gemini
+      </button>
+      <a href="https://aistudio.google.com" target="_blank"
+        style="font-size:12px;color:var(--green2);text-decoration:none;">
+        → Ottieni gratis su aistudio.google.com
+      </a>
+    </div>
+
+    <div class="setting-item" style="flex-direction:column;align-items:flex-start;gap:10px;padding:14px 0;border-top:1px solid var(--border);">
+      <div style="display:flex;align-items:center;gap:10px;width:100%;">
+        <span style="font-size:20px;">⚡</span>
+        <div>
+          <div class="setting-title">Groq API Key</div>
+          <div class="setting-value" id="groq-key-status">Non configurata</div>
+        </div>
+      </div>
+      <input id="groq-key-input" type="password" placeholder="gsk_..." autocomplete="off"
+        style="width:100%;box-sizing:border-box;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 14px;color:var(--text);font-size:14px;outline:none;font-family:var(--font);">
+      <button onclick="saveGroqKey()"
+        style="width:100%;background:var(--green2);border:none;border-radius:10px;padding:11px;color:var(--text);font-size:14px;font-weight:700;cursor:pointer;letter-spacing:0.3px;">
+        💾 Salva chiave Groq
+      </button>
+      <a href="https://console.groq.com" target="_blank"
+        style="font-size:12px;color:var(--green2);text-decoration:none;">
+        → Ottieni gratis su console.groq.com
+      </a>
     </div>
   </div>
   <div class="setting-group">
@@ -1878,69 +1903,55 @@ function renderAllTimelines() {
 })();
 
 /* ══════════════════════════════════════════════════════════════
-   AI CHAT — Pollinations GET + Groq fallback
+   AI CHAT — Gemini Flash FREE + Groq opzionale
 ══════════════════════════════════════════════════════════════ */
 
-const PIANTE_CONTEXT = `Autofiorenti: Epsilon F1(ID:7,germ 21/04,taglio 20/06), Milky Way(ID:1,germ 23/04,taglio 22/07), Titan(ID:2,germ 22/04,taglio 21/07), Medusa(ID:3,germ 21/04,taglio 20/07), Gaia(ID:8,germ 21/04,taglio 15/07). Femminizzate: Astro Lemonade(ID:4,taglio 30/10), Cosmic Cheddar(ID:11,taglio 30/10), Orbital Banana(ID:6,taglio 30/10), Royal Gorilla(ID:10,taglio 09/11), Mexican Rush(ID:9,taglio 09/11).`;
-
-const MANUALE_CONTEXT = `Serra Living Soil: 10 vasi 10L. Substrato: BioBizz Light-Mix+fibra cocco+Super Soil+Worm Humus+micorrize. Additivi: Melassa 1ml/L ogni 15gg; Miscela organica (uovo+banana+caffe) 1 cucchiaio/vaso/mese; Infuso ortiche diluito 1:10, 1-2L/vaso/mese; Te banana+cenere ogni 2 sett da mese 5; Etilene mesi 7-8. Esperimenti: elettrocultura, Lakhovsky, pila galvanica ferro-rame, acqua magnetizzata, Pantacle rame. Mese 4: rimozione 5 piante brevi, 2 gocciolatori per le restanti.`;
+const PIANTE_CTX = `Autofiorenti: Epsilon F1(ID:7,germ 21/04,taglio 20/06), Milky Way(ID:1,germ 23/04,taglio 22/07), Titan(ID:2,germ 22/04,taglio 21/07), Medusa(ID:3,germ 21/04,taglio 20/07), Gaia(ID:8,germ 21/04,taglio 15/07). Femminizzate: Astro Lemonade(ID:4,taglio 30/10), Cosmic Cheddar(ID:11,taglio 30/10), Orbital Banana(ID:6,taglio 30/10), Royal Gorilla(ID:10,taglio 09/11), Mexican Rush(ID:9,taglio 09/11).`;
+const MANUALE_CTX = `Serra Living Soil: 10 vasi 10L, substrato BioBizz+cocco+SuperSoil+Humus+micorrize. Additivi: Melassa 1ml/L ogni 15gg; Miscela organica 1 cucchiaio/vaso/mese; Infuso ortiche 1:10, 1-2L/vaso/mese; Te banana+cenere ogni 2 sett da mese 5; Etilene mesi 7-8. Esperimenti: elettrocultura, Lakhovsky, pila galvanica Fe-Cu, acqua magnetizzata, Pantacle rame. Mese 4: rimozione 5 piante brevi.`;
 
 let aiHistory = [];
-let currentAI = 'pollinations';
+let currentAI = 'gemini';
 
-const AI_MODELS = {
-  pollinations: { label: '🌐 Llama 3',  tag: 'Gratis · No key' },
-  mistral:      { label: '🧠 Mistral',  tag: 'Gratis · No key' },
-  deepseek:     { label: '🔍 DeepSeek', tag: 'Gratis · No key' },
-  groq:         { label: '⚡ Groq',     tag: 'Gratis · Key opzionale' }
-};
-
-function buildSystemShort() {
-  const today = new Date().toLocaleDateString('it-IT',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
-  return 'Sei BioSerra AI, assistente coltivazione Living Soil biologica. Oggi: '+today+'. '+
-    'Piante: '+PIANTE_CONTEXT+' Manuale: '+MANUALE_CONTEXT+
-    ' Rispondi in italiano, conciso e pratico. Fine risposta scrivi sempre: [Fonte: Manuale BioSerra]';
+function buildSystem() {
+  return 'Sei BioSerra AI, assistente esperto di coltivazione Living Soil biologica. Oggi: ' +
+    new Date().toLocaleDateString('it-IT') + '. Piante: ' + PIANTE_CTX +
+    ' Manuale: ' + MANUALE_CTX +
+    ' Rispondi SEMPRE in italiano, in modo conciso e pratico.';
 }
 
-function selectAI(model, btn) {
-  currentAI = model;
-  document.querySelectorAll('.ai-sel-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  aiHistory = [];
-  const info = AI_MODELS[model];
-  appendMsg(info.label + ' pronto · Come posso aiutarti?', 'bot');
-}
-
-/* ── Pollinations via GET (no queue, no CORS) ── */
-async function sendPollinations(userMsg, modelName) {
-  const system = buildSystemShort();
-  // Costruisce storico come testo per il prompt GET
-  let historyText = '';
-  const hist = aiHistory.slice(0, -1);
-  if (hist.length > 0) {
-    historyText = hist.map(m => (m.role==='user'?'Utente: ':'Assistente: ') + m.content).join('\n') + '\n';
-  }
-  const fullPrompt = system + '\n\n' + historyText + 'Utente: ' + userMsg;
-  const encoded = encodeURIComponent(fullPrompt);
-  const seed = Math.floor(Math.random() * 9999);
-  const url = `https://text.pollinations.ai/${encoded}?model=${modelName}&seed=${seed}&json=false`;
-
-  const res = await fetch(url, { method: 'GET' });
-  if (!res.ok) throw new Error('Errore ' + res.status);
-  const text = await res.text();
-  if (!text || text.trim().length === 0) throw new Error('Risposta vuota');
-  return text.trim();
-}
-
-/* ── Groq (key opzionale — gratuita su console.groq.com) ── */
-async function sendGroq(userMsg) {
-  const key = localStorage.getItem('bioserra_groq_key') || '';
+/* ─── Gemini 1.5 Flash — 1500 req/giorno FREE, key gratuita su aistudio.google.com ─── */
+async function sendGemini(userMsg) {
+  const key = (localStorage.getItem('bioserra_gemini_key') || '').trim();
   if (!key) {
-    return '⚡ Groq richiede una chiave API gratuita.\n\n1. Vai su console.groq.com\n2. Registrati con email (no carta di credito)\n3. Copia la chiave e incollala in Config → AI Key Groq\n\nGroq è il modello più veloce: Llama3 70B a 600 token/sec!';
+    return '🔑 Inserisci la tua chiave Gemini gratuita:\n\n1. Vai su aistudio.google.com\n2. Accedi con Google (nessuna carta di credito)\n3. Clicca "Get API key" → "Create API key"\n4. Copia la chiave (inizia con AIza...)\n5. Vai in ⚙️ Config → AI Keys e incollala\n\n✅ 1.500 richieste/giorno gratis · Modello: Gemini 1.5 Flash';
+  }
+  const history = aiHistory.slice(0,-1).map(m => ({
+    role: m.role === 'assistant' ? 'model' : 'user',
+    parts: [{ text: m.content }]
+  }));
+  const body = {
+    system_instruction: { parts: [{ text: buildSystem() }] },
+    contents: [...history, { role: 'user', parts: [{ text: userMsg }] }],
+    generationConfig: { maxOutputTokens: 800, temperature: 0.7 }
+  };
+  const res = await fetch(
+    'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + key,
+    { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
+  );
+  const data = await res.json();
+  if (data.error) throw new Error(data.error.message);
+  return data.candidates?.[0]?.content?.parts?.[0]?.text || 'Nessuna risposta.';
+}
+
+/* ─── Groq — 14.400 req/giorno FREE, key gratuita su console.groq.com ─── */
+async function sendGroq(userMsg) {
+  const key = (localStorage.getItem('bioserra_groq_key') || '').trim();
+  if (!key) {
+    return '🔑 Inserisci la tua chiave Groq gratuita:\n\n1. Vai su console.groq.com\n2. Registrati con email (no carta)\n3. API Keys → Create API Key\n4. Copia la chiave (inizia con gsk_...)\n5. Vai in ⚙️ Config → AI Keys e incollala\n\n✅ 14.400 req/giorno · Llama3 70B · Velocissimo';
   }
   const messages = [
-    { role: 'system', content: buildSystemShort() },
-    ...aiHistory.slice(0, -1),
+    { role: 'system', content: buildSystem() },
+    ...aiHistory.slice(0,-1),
     { role: 'user', content: userMsg }
   ];
   const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -1953,6 +1964,15 @@ async function sendGroq(userMsg) {
   return data.choices?.[0]?.message?.content || 'Nessuna risposta.';
 }
 
+function selectAI(model, btn) {
+  currentAI = model;
+  document.querySelectorAll('.ai-sel-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  aiHistory = [];
+  const labels = { gemini:'✨ Gemini', groq:'⚡ Groq' };
+  appendMsg((labels[model]||model) + ' pronto · Come posso aiutarti?', 'bot');
+}
+
 async function aiSend() {
   const input = document.getElementById('ai-input');
   const msg = input.value.trim();
@@ -1960,36 +1980,16 @@ async function aiSend() {
   input.value = '';
   appendMsg(msg, 'user');
   aiHistory.push({ role: 'user', content: msg });
-
-  const info = AI_MODELS[currentAI] || AI_MODELS.pollinations;
-  const loading = appendMsg('⏳ ' + info.label + ' elabora…', 'bot loading');
-
+  const labels = { gemini:'✨ Gemini', groq:'⚡ Groq' };
+  const loading = appendMsg('⏳ ' + (labels[currentAI]||currentAI) + ' elabora…', 'bot loading');
   try {
-    let reply = '';
-    if (currentAI === 'groq') {
-      reply = await sendGroq(msg);
-    } else {
-      const modelMap = { pollinations: 'llama', mistral: 'mistral', deepseek: 'deepseek' };
-      const modelName = modelMap[currentAI] || 'llama';
-      reply = await sendPollinations(msg, modelName);
-    }
+    const reply = currentAI === 'groq' ? await sendGroq(msg) : await sendGemini(msg);
     loading.className = 'ai-msg bot';
     loading.textContent = reply;
     aiHistory.push({ role: 'assistant', content: reply });
   } catch(e) {
-    // Retry automatico con llama se fallisce il modello scelto
-    if (currentAI !== 'pollinations') {
-      try {
-        loading.textContent = '⏳ Riprovo con Llama…';
-        const reply2 = await sendPollinations(msg, 'llama');
-        loading.className = 'ai-msg bot';
-        loading.textContent = reply2 + '\n\n[Risposto da Llama - fallback automatico]';
-        aiHistory.push({ role: 'assistant', content: reply2 });
-        return;
-      } catch(e2) {}
-    }
     loading.className = 'ai-msg bot';
-    loading.textContent = '⚠️ ' + (e.message || 'Connessione fallita') + '\n\nRiprova tra qualche secondo o cambia modello.';
+    loading.textContent = '⚠️ Errore: ' + (e.message || 'Connessione fallita.') + '\n\nControlla la chiave API in ⚙️ Config → AI Keys.';
   }
   document.getElementById('ai-chat').scrollTop = 99999;
 }
@@ -2011,28 +2011,39 @@ function appendMsg(text, cls) {
 
 // ── INIT ──────────────────────────────────────
 
-function saveGroqKey() {
-  const val = document.getElementById('groq-key-input').value.trim();
-  if (!val) { alert('Inserisci una chiave valida (inizia con gsk_)'); return; }
-  localStorage.setItem('bioserra_groq_key', val);
-  document.getElementById('groq-key-status').textContent = 'Configurata ✓ — Groq attivo';
-  document.getElementById('groq-key-input').value = '';
-  alert('✅ Chiave Groq salvata! Ora puoi usare Llama3 70B velocissimo.');
+function saveGeminiKey() {
+  const val = document.getElementById('gemini-key-input').value.trim();
+  if (!val) { alert('Inserisci una chiave valida (inizia con AIza...)'); return; }
+  localStorage.setItem('bioserra_gemini_key', val);
+  document.getElementById('gemini-key-status').textContent = '✓ Configurata — Gemini attivo';
+  document.getElementById('gemini-key-input').value = '';
 }
 
-(function initGroqStatus() {
-  if (localStorage.getItem('bioserra_groq_key')) {
-    const el = document.getElementById('groq-key-status');
-    if (el) el.textContent = 'Configurata ✓ — Groq attivo';
-  }
-})();
+function saveGroqKey() {
+  const val = document.getElementById('groq-key-input').value.trim();
+  if (!val) { alert('Inserisci una chiave valida (inizia con gsk_...)'); return; }
+  localStorage.setItem('bioserra_groq_key', val);
+  document.getElementById('groq-key-status').textContent = '✓ Configurata — Groq attivo';
+  document.getElementById('groq-key-input').value = '';
+}
+
+function initAIKeyStatus() {
+  const gk = localStorage.getItem('bioserra_gemini_key');
+  const rk = localStorage.getItem('bioserra_groq_key');
+  const gs = document.getElementById('gemini-key-status');
+  const rs = document.getElementById('groq-key-status');
+  if (gk && gs) gs.textContent = '✓ Configurata — Gemini attivo';
+  if (rk && rs) rs.textContent = '✓ Configurata — Groq attivo';
+}
 
 renderBioCalendar();
 renderLunarSection();
 loadWeather();
+initAIKeyStatus();
 </script>
 </body>
 </html>
+
 
 
 
