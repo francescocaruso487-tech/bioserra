@@ -1396,8 +1396,8 @@ const EL_TECNICHE_BASE = [
     id: 'lakhovsky',
     nome: '🔁 Circuito di Lakhovsky',
     badge: 'SPERIMENTALE',
-    desc: 'Anello di rame aperto alla base di ogni pianta. Le estremità si sovrappongono per 2-3 cm con 1 cm di spazio — funziona come antenna di risonanza cosmica che stimola la crescita cellulare.',
-    istruzioni: 'Piega ~50 cm di filo di rame a cerchio attorno alla base. Le 2 estremità devono sovrapporsi di 2-3 cm con 1 cm d'aria tra loro. Isola le estremità con tubicino o nastro.',
+    desc: 'Anello di rame aperto alla base di ogni pianta. Le estremità si sovrappongono per 2-3 cm con 1 cm di spazio — funziona come antenna di risonanza cosmica.',
+    istruzioni: 'Piega ~50 cm di filo di rame a cerchio attorno alla base. Le 2 estremità devono sovrapporsi di 2-3 cm con 1 cm d\'aria tra loro. Isola le estremità con tubicino o nastro.',
     lunaConsigl: ['crescente','piena'],
     max: 10,
     unita: 'piante con cerchio'
@@ -1406,7 +1406,7 @@ const EL_TECNICHE_BASE = [
     id: 'galvanica',
     nome: '⚗️ Pila Galvanica Ferro-Rame',
     badge: 'SPERIMENTALE',
-    desc: 'Micro-corrente ~0.5-0.7V da chiodo di ferro arrugginito + filo di rame in terreno umido. Ionizza i nutrienti rendendoli immediatamente assorbibili dalle radici. Il ferro rilascia ioni lentamente.',
+    desc: 'Micro-corrente ~0.5-0.7V da chiodo di ferro arrugginito + filo di rame in terreno umido. Ionizza i nutrienti rendendoli immediatamente assorbibili dalle radici.',
     istruzioni: '1 chiodo di ferro vecchio (arrugginito) a 5-10 cm dal fusto. Collegalo con filo al rame già presente. Il terreno deve essere umido. Orientamento consigliato: ferro a Nord, rame a Sud.',
     lunaConsigl: ['nuova','crescente'],
     max: 10,
@@ -1417,7 +1417,7 @@ const EL_TECNICHE_BASE = [
     nome: '🌐 Pantacle di Rame',
     badge: 'SPERIMENTALE',
     desc: 'Archi di rame nudo collegano il terreno di tutti i vasi in serie. Le cariche elettriche si distribuiscono uniformemente — i 10 vasi diventano un unico organismo collettivo.',
-    istruzioni: 'Inserisci un capo del filo rame nel terreno di un vaso e l'altro nel vaso adiacente. Forma un arco morbido tra i vasi. Collega tutti i vasi in serie.',
+    istruzioni: 'Inserisci un capo del filo rame nel terreno di un vaso e l\'altro nel vaso adiacente. Forma un arco morbido tra i vasi. Collega tutti i vasi in serie.',
     lunaConsigl: ['piena'],
     max: 9,
     unita: 'archi installati'
@@ -1426,8 +1426,8 @@ const EL_TECNICHE_BASE = [
     id: 'geomag',
     nome: '🧲 Acqua Magnetizzata',
     badge: 'ESPERIMENTO',
-    desc: 'Sistema a 2 componenti: (1) magnete principale avvolto attorno al tubo principale vicino all'inizio; (2) 1 Geomag (~5 cm) per ogni gocciolatoio, fissato sul gocciolatoio con nastro. L'acqua scorre attraverso il campo magnetico al polo Nord.',
-    istruzioni: 'Magnete principale: avvolgi con nastro attorno al tubo principale. Geomag: fissa 1 magnete direttamente su ogni gocciolatoio — deve stare esattamente dove esce l'acqua. Polarità: polo Nord verso l'acqua.',
+    desc: 'Sistema a 2 componenti: (1) magnete principale avvolto attorno al tubo principale; (2) 1 Geomag per ogni gocciolatoio fissato con nastro. Polo Nord verso l\'acqua.',
+    istruzioni: 'Magnete principale: avvolgi con nastro attorno al tubo principale. Geomag: fissa 1 magnete direttamente su ogni gocciolatoio — deve stare esattamente dove esce l\'acqua.',
     lunaConsigl: ['piena','crescente'],
     max: 10,
     unita: 'gocciolatori con Geomag'
@@ -1436,8 +1436,8 @@ const EL_TECNICHE_BASE = [
     id: 'spirale',
     nome: '🌀 Spirale di Rame Cosmica',
     badge: 'SPERIMENTALE',
-    desc: 'Spirale di filo di rame avvolta in senso orario attorno al fusto della pianta. La spirale segue la geometria sacra naturale della pianta potenziando il flusso di energia elettromagnetica.',
-    istruzioni: 'Avvolgi ~40 cm di filo di rame in senso orario attorno al fusto, partendo dalla base. Lascia 2-3 cm di distanza dal fusto. La punta del filo deve sporgere verso l'alto.',
+    desc: 'Spirale di filo di rame avvolta in senso orario attorno al fusto della pianta. Segue la geometria sacra naturale potenziando il flusso elettromagnetico.',
+    istruzioni: 'Avvolgi ~40 cm di filo di rame in senso orario attorno al fusto, partendo dalla base. Lascia 2-3 cm di distanza dal fusto. La punta del filo deve sporgere verso l\'alto.',
     lunaConsigl: ['crescente'],
     max: 10,
     unita: 'piante con spirale'
@@ -1446,7 +1446,7 @@ const EL_TECNICHE_BASE = [
     id: 'antenna',
     nome: '📡 Antenna Terrestre',
     badge: 'SPERIMENTALE',
-    desc: 'Filo di rame interrato collegato a un palo metallico esterno o a picchetto di messa a terra. Cattura le cariche telluriche dal suolo e le distribuisce alle radici.',
+    desc: 'Filo di rame interrato collegato a un palo metallico esterno. Cattura le cariche telluriche dal suolo e le distribuisce alle radici.',
     istruzioni: 'Inserisci un picchetto metallico nel terreno esterno alla serra. Collegalo con filo di rame al terreno di uno o più vasi. Il filo deve essere sepolto o protetto.',
     lunaConsigl: ['nuova','calante'],
     max: 1,
@@ -1456,11 +1456,10 @@ const EL_TECNICHE_BASE = [
 
 /* ── State elettrocultura ── */
 let elCounts = {};
-let elTracker = {}; // { plantId: { techId: true/false } }
+let elTracker = {};
 let elLogs = [];
-let elTecnicheExtra = []; // caricate da JSON
+let elTecnicheExtra = [];
 
-/* ── Init / load da localStorage ── */
 function elLoadState() {
   try { elCounts  = JSON.parse(localStorage.getItem('el_counts')  || '{}'); } catch(e) { elCounts = {}; }
   try { elTracker = JSON.parse(localStorage.getItem('el_tracker') || '{}'); } catch(e) { elTracker = {}; }
@@ -1475,148 +1474,139 @@ elLoadState();
 
 /* ── Legacy compat ── */
 function adjustCount(key, delta) {
-  const maxes = { lakhovsky:10, galvanica:10, pantacle:9, geomag:10 };
+  var maxes = { lakhovsky:10, galvanica:10, pantacle:9, geomag:10, spirale:10, antenna:1 };
   elCounts[key] = Math.max(0, Math.min(maxes[key]||10, (elCounts[key]||0) + delta));
   elSaveState();
   renderElettroTecniche();
   elUpdateStats();
 }
 
-/* ── Tutte le tecniche (base + extra) ── */
 function elAllTecniche() {
-  return [...EL_TECNICHE_BASE, ...elTecnicheExtra];
+  return EL_TECNICHE_BASE.concat(elTecnicheExtra);
 }
 
 /* ── Tab switch ── */
 function switchElettroTab(tab) {
-  document.querySelectorAll('[id^="etab-"]').forEach(b => b.classList.remove('active'));
-  document.querySelectorAll('[id^="epanel-"]').forEach(p => p.classList.remove('active'));
-  const btn = document.getElementById('etab-' + tab);
-  const pan = document.getElementById('epanel-' + tab);
+  document.querySelectorAll('[id^="etab-"]').forEach(function(b){ b.classList.remove('active'); });
+  document.querySelectorAll('[id^="epanel-"]').forEach(function(p){ p.classList.remove('active'); });
+  var btn = document.getElementById('etab-' + tab);
+  var pan = document.getElementById('epanel-' + tab);
   if (btn) btn.classList.add('active');
   if (pan) pan.classList.add('active');
   if (tab === 'tecniche') { renderElettroTecniche(); elLunarTip(); }
-  if (tab === 'tracker')  renderElTracker();
-  if (tab === 'log')      renderElLog();
-  if (tab === 'stats')    renderElStats();
+  if (tab === 'tracker')  { renderElTracker(); }
+  if (tab === 'log')      { renderElLog(); }
+  if (tab === 'stats')    { renderElStats(); }
 }
 
 /* ── Consiglio Lunare ── */
 function elLunarTip() {
-  const el = document.getElementById('el-lunar-text');
+  var el = document.getElementById('el-lunar-text');
   if (!el) return;
-  // Legge fase lunare dal modulo luna già presente
-  const lunaEl = document.getElementById('luna-phase-name');
-  let fase = lunaEl ? lunaEl.textContent.toLowerCase() : '';
-  let key = 'crescente';
-  if (fase.includes('piena'))    key = 'piena';
-  else if (fase.includes('nuova') || fase.includes('buio')) key = 'nuova';
-  else if (fase.includes('calante') || fase.includes('ultimo')) key = 'calante';
-  else if (fase.includes('crescente') || fase.includes('primo')) key = 'crescente';
-
-  const consigli = {
-    nuova:     { testo: '🌑 Luna Nuova — Energia radicale', sug: 'Ideale per <strong>Pila Galvanica</strong> e <strong>Antenna Terrestre</strong>. L'energia è nel sottosuolo — potenzia l'assorbimento radicale.' },
+  var lunaEl = document.getElementById('luna-phase-name');
+  var fase = lunaEl ? lunaEl.textContent.toLowerCase() : '';
+  var key = 'crescente';
+  if (fase.indexOf('piena') >= 0) key = 'piena';
+  else if (fase.indexOf('nuova') >= 0 || fase.indexOf('buio') >= 0) key = 'nuova';
+  else if (fase.indexOf('calante') >= 0 || fase.indexOf('ultimo') >= 0) key = 'calante';
+  var consigli = {
+    nuova:     { testo: '🌑 Luna Nuova — Energia radicale', sug: 'Ideale per <strong>Pila Galvanica</strong> e <strong>Antenna Terrestre</strong>. L\'energia è nel sottosuolo — potenzia l\'assorbimento radicale.' },
     crescente: { testo: '🌒 Luna Crescente — Energia in salita', sug: 'Momento perfetto per <strong>Circuito di Lakhovsky</strong> e <strong>Spirale di Rame</strong>. La linfa sale — massimizza la fotosintesi.' },
     piena:     { testo: '🌕 Luna Piena — Picco di vitalità', sug: 'Attiva tutte le tecniche! Potenzia soprattutto <strong>Pantacle di Rame</strong> e <strong>Acqua Magnetizzata</strong>. Documenta e fotografa.' },
     calante:   { testo: '🌘 Luna Calante — Consolidamento', sug: 'Ottimo per <strong>Antenna Terrestre</strong>. Verifica e manutenzione dei circuiti esistenti. Osserva e registra nel log.' }
   };
-  const c = consigli[key] || consigli.crescente;
+  var c = consigli[key] || consigli.crescente;
   el.innerHTML = '<strong style="color:#d4b8ff">' + c.testo + '</strong><br>' + c.sug;
+}
+
+function lunaIcona(fase) {
+  var m = { nuova:'🌑', crescente:'🌒', piena:'🌕', calante:'🌘' };
+  return m[fase] || '🌙';
 }
 
 /* ── Render TECNICHE ── */
 function renderElettroTecniche() {
-  const lista = document.getElementById('el-tecniche-lista');
+  var lista = document.getElementById('el-tecniche-lista');
   if (!lista) return;
-  const tecniche = EL_TECNICHE_BASE;
-  lista.innerHTML = tecniche.map(t => {
-    const cnt = elCounts[t.id] || 0;
-    return \`
-    <div class="exp-card" style="margin-bottom:10px">
-      <div class="exp-title">\${t.nome} <span class="exp-badge">\${t.badge}</span></div>
-      <div class="exp-desc" style="margin-bottom:10px">\${t.desc}</div>
-      <details style="margin-bottom:10px">
-        <summary style="font-size:12px;color:var(--green2);cursor:pointer;font-weight:600">📋 Istruzioni installazione</summary>
-        <div style="font-size:12px;color:var(--text2);margin-top:8px;line-height:1.7;padding:8px;background:var(--card2);border-radius:8px">\${t.istruzioni}</div>
-      </details>
-      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
-        <div class="exp-counter">
-          <button class="exp-btn" onclick="adjustCount('\${t.id}',-1)">−</button>
-          <div class="exp-count-num" id="\${t.id}-count">\${cnt}</div>
-          <button class="exp-btn" onclick="adjustCount('\${t.id}',1)">+</button>
-          <span style="font-size:12px;color:var(--text2)">\${cnt}/\${t.max} \${t.unita}</span>
-        </div>
-        <div style="display:flex;gap:4px;flex-wrap:wrap">
-          \${t.lunaConsigl.map(l => '<span style="font-size:11px;background:rgba(100,80,200,0.2);color:#a8b8ff;border-radius:6px;padding:2px 7px">' + lunaIcona(l) + ' ' + l + '</span>').join('')}
-        </div>
-      </div>
-    </div>\`;
-  }).join('');
+  var html = '';
+  EL_TECNICHE_BASE.forEach(function(t) {
+    var cnt = elCounts[t.id] || 0;
+    var lunaHtml = t.lunaConsigl.map(function(l){ return '<span style="font-size:11px;background:rgba(100,80,200,0.2);color:#a8b8ff;border-radius:6px;padding:2px 7px">' + lunaIcona(l) + ' ' + l + '</span>'; }).join('');
+    html += '<div class="exp-card" style="margin-bottom:10px">';
+    html += '<div class="exp-title">' + t.nome + ' <span class="exp-badge">' + t.badge + '</span></div>';
+    html += '<div class="exp-desc" style="margin-bottom:10px">' + t.desc + '</div>';
+    html += '<details style="margin-bottom:10px"><summary style="font-size:12px;color:var(--green2);cursor:pointer;font-weight:600">📋 Istruzioni installazione</summary>';
+    html += '<div style="font-size:12px;color:var(--text2);margin-top:8px;line-height:1.7;padding:8px;background:var(--card2);border-radius:8px">' + t.istruzioni + '</div></details>';
+    html += '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">';
+    html += '<div class="exp-counter">';
+    html += '<button class="exp-btn" onclick="adjustCount(\'' + t.id + '\',-1)">−</button>';
+    html += '<div class="exp-count-num" id="' + t.id + '-count">' + cnt + '</div>';
+    html += '<button class="exp-btn" onclick="adjustCount(\'' + t.id + '\',1)">+</button>';
+    html += '<span style="font-size:12px;color:var(--text2)">' + cnt + '/' + t.max + ' ' + t.unita + '</span></div>';
+    html += '<div style="display:flex;gap:4px;flex-wrap:wrap">' + lunaHtml + '</div>';
+    html += '</div></div>';
+  });
+  lista.innerHTML = html;
   elUpdateStats();
 }
 
-function lunaIcona(fase) {
-  return { nuova:'🌑', crescente:'🌒', piena:'🌕', calante:'🌘' }[fase] || '🌙';
-}
-
-/* ── Render TECNICHE EXTRA da JSON ── */
 function renderElTecnicheExtra() {
-  const el = document.getElementById('el-tecniche-json');
+  var el = document.getElementById('el-tecniche-json');
   if (!el) return;
-  if (elTecnicheExtra.length === 0) {
-    el.innerHTML = '';
-    return;
-  }
-  el.innerHTML = '<div style="font-size:12px;font-weight:700;color:var(--green2);margin:12px 0 8px;display:flex;align-items:center;gap:6px"><span>🤖</span> Tecniche scoperte dall'AI nei PDF</div>' +
-    elTecnicheExtra.map(t => \`
-    <div class="exp-card" style="margin-bottom:10px;border-color:rgba(100,200,255,0.2)">
-      <div class="exp-title">\${t.nome||t.id} <span class="exp-badge" style="background:rgba(0,150,255,0.2);color:#60b0ff">AI</span></div>
-      <div class="exp-desc">\${t.desc||''}</div>
-      \${t.istruzioni ? '<details style="margin-top:8px"><summary style="font-size:12px;color:var(--green2);cursor:pointer;font-weight:600">📋 Istruzioni</summary><div style="font-size:12px;color:var(--text2);margin-top:6px;line-height:1.7;padding:8px;background:var(--card2);border-radius:8px">' + t.istruzioni + '</div></details>' : ''}
-    </div>\`).join('');
+  if (elTecnicheExtra.length === 0) { el.innerHTML = ''; return; }
+  var html = '<div style="font-size:12px;font-weight:700;color:var(--green2);margin:12px 0 8px;display:flex;align-items:center;gap:6px"><span>🤖</span> Tecniche scoperte dall\'AI nei PDF</div>';
+  elTecnicheExtra.forEach(function(t) {
+    html += '<div class="exp-card" style="margin-bottom:10px;border-color:rgba(100,200,255,0.2)">';
+    html += '<div class="exp-title">' + (t.nome||t.id) + ' <span class="exp-badge" style="background:rgba(0,150,255,0.2);color:#60b0ff">AI</span></div>';
+    html += '<div class="exp-desc">' + (t.desc||'') + '</div>';
+    if (t.istruzioni) {
+      html += '<details style="margin-top:8px"><summary style="font-size:12px;color:var(--green2);cursor:pointer;font-weight:600">📋 Istruzioni</summary>';
+      html += '<div style="font-size:12px;color:var(--text2);margin-top:6px;line-height:1.7;padding:8px;background:var(--card2);border-radius:8px">' + t.istruzioni + '</div></details>';
+    }
+    html += '</div>';
+  });
+  el.innerHTML = html;
 }
 
-/* ── Carica tecniche da GitHub JSON ── */
 async function elLoadTecnicheJSON() {
   try {
-    const res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/electro_tecniche.json?v=' + Date.now());
+    var res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/electro_tecniche.json?v=' + Date.now());
     if (!res.ok) throw new Error('not found');
-    const data = await res.json();
+    var data = await res.json();
     elTecnicheExtra = Array.isArray(data.tecniche) ? data.tecniche : [];
     renderElTecnicheExtra();
   } catch(e) {
-    const el = document.getElementById('el-tecniche-json');
+    var el = document.getElementById('el-tecniche-json');
     if (el) el.innerHTML = '';
   }
 }
 
 /* ── Render TRACKER ── */
 function renderElTracker() {
-  const lista = document.getElementById('el-tracker-lista');
+  var lista = document.getElementById('el-tracker-lista');
   if (!lista) return;
-  const plants = loadActivePlants();
-  const tecniche = elAllTecniche();
-  lista.innerHTML = plants.map(p => {
+  var plants = loadActivePlants();
+  var tecniche = elAllTecniche();
+  var html = '';
+  plants.forEach(function(p) {
     if (!elTracker[p.id]) elTracker[p.id] = {};
-    const tecItems = tecniche.map(t => {
-      const attiva = elTracker[p.id][t.id] || false;
-      return \`<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">
-        <div style="font-size:13px;color:var(--text)">\${t.nome.replace(/^[^\w]*/, '')}</div>
-        <label class="toggle-sw" style="flex-shrink:0">
-          <input type="checkbox" \${attiva ? 'checked' : ''} onchange="elToggleTech(\${p.id},'\${t.id}',this.checked)">
-          <span class="toggle-slider"></span>
-        </label>
-      </div>\`;
-    }).join('');
-    const activeCount = Object.values(elTracker[p.id]).filter(Boolean).length;
-    return \`<div class="card" style="margin-bottom:10px">
-      <div class="card-title" style="display:flex;justify-content:space-between;align-items:center">
-        <span>\${p.icon||'🌱'} \${p.name}</span>
-        <span style="font-size:12px;color:var(--green2);font-weight:600">\${activeCount}/\${tecniche.length} attive</span>
-      </div>
-      <div style="margin-top:8px">\${tecItems}</div>
-    </div>\`;
-  }).join('');
+    var tecItems = '';
+    tecniche.forEach(function(t) {
+      var attiva = elTracker[p.id][t.id] || false;
+      var chk = attiva ? 'checked' : '';
+      tecItems += '<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">';
+      tecItems += '<div style="font-size:13px;color:var(--text)">' + t.nome + '</div>';
+      tecItems += '<label class="toggle-sw" style="flex-shrink:0"><input type="checkbox" ' + chk + ' onchange="elToggleTech(' + p.id + ',\'' + t.id + '\',this.checked)"><span class="toggle-slider"></span></label>';
+      tecItems += '</div>';
+    });
+    var activeCount = Object.values(elTracker[p.id]).filter(Boolean).length;
+    html += '<div class="card" style="margin-bottom:10px">';
+    html += '<div class="card-title" style="display:flex;justify-content:space-between;align-items:center">';
+    html += '<span>' + (p.icon||'🌱') + ' ' + p.name + '</span>';
+    html += '<span style="font-size:12px;color:var(--green2);font-weight:600">' + activeCount + '/' + tecniche.length + ' attive</span></div>';
+    html += '<div style="margin-top:8px">' + tecItems + '</div></div>';
+  });
+  lista.innerHTML = html;
 }
 
 function elToggleTech(plantId, techId, val) {
@@ -1628,43 +1618,46 @@ function elToggleTech(plantId, techId, val) {
 
 /* ── Render LOG ── */
 function elPopulateSelects() {
-  const ps = document.getElementById('el-log-pianta');
-  const ts = document.getElementById('el-log-tecnica');
+  var ps = document.getElementById('el-log-pianta');
+  var ts = document.getElementById('el-log-tecnica');
   if (!ps || !ts) return;
-  const plants = loadActivePlants();
-  ps.innerHTML = '<option value="">— Seleziona pianta —</option>' +
-    plants.map(p => \`<option value="\${p.id}">\${p.icon||'🌱'} \${p.name}</option>\`).join('');
-  ts.innerHTML = '<option value="">— Seleziona tecnica —</option>' +
-    elAllTecniche().map(t => \`<option value="\${t.id}">\${t.nome}</option>\`).join('');
+  var plants = loadActivePlants();
+  var opts = '<option value="">— Seleziona pianta —</option>';
+  plants.forEach(function(p){ opts += '<option value="' + p.id + '">' + (p.icon||'🌱') + ' ' + p.name + '</option>'; });
+  ps.innerHTML = opts;
+  var topts = '<option value="">— Seleziona tecnica —</option>';
+  elAllTecniche().forEach(function(t){ topts += '<option value="' + t.id + '">' + t.nome + '</option>'; });
+  ts.innerHTML = topts;
 }
 
 function elAddLog() {
-  const pianta  = document.getElementById('el-log-pianta')?.value;
-  const tecnica = document.getElementById('el-log-tecnica')?.value;
-  const nota    = document.getElementById('el-log-nota')?.value.trim();
-  if (!nota) { alert('Inserisci un'osservazione'); return; }
-  const plants = loadActivePlants();
-  const plant  = plants.find(p => p.id == pianta);
-  const techs  = elAllTecniche();
-  const tech   = techs.find(t => t.id === tecnica);
-  const entry = {
+  var pianta  = document.getElementById('el-log-pianta') ? document.getElementById('el-log-pianta').value : '';
+  var tecnica = document.getElementById('el-log-tecnica') ? document.getElementById('el-log-tecnica').value : '';
+  var notaEl  = document.getElementById('el-log-nota');
+  var nota    = notaEl ? notaEl.value.trim() : '';
+  if (!nota) { alert('Inserisci un\'osservazione'); return; }
+  var plants = loadActivePlants();
+  var plant  = plants.find(function(p){ return p.id == pianta; });
+  var techs  = elAllTecniche();
+  var tech   = techs.find(function(t){ return t.id === tecnica; });
+  var entry = {
     id: Date.now(),
     data: new Date().toLocaleDateString('it-IT'),
     ora: new Date().toLocaleTimeString('it-IT', {hour:'2-digit',minute:'2-digit'}),
     pianta: plant ? plant.name : (pianta || 'Tutte'),
     pianta_icon: plant ? (plant.icon||'🌱') : '🌿',
     tecnica: tech ? tech.nome : (tecnica || 'Generale'),
-    nota
+    nota: nota
   };
   elLogs.unshift(entry);
   elSaveState();
-  if (document.getElementById('el-log-nota')) document.getElementById('el-log-nota').value = '';
+  if (notaEl) notaEl.value = '';
   renderElLog();
   elUpdateStats();
 }
 
 function elDeleteLog(id) {
-  elLogs = elLogs.filter(l => l.id !== id);
+  elLogs = elLogs.filter(function(l){ return l.id !== id; });
   elSaveState();
   renderElLog();
   elUpdateStats();
@@ -1672,93 +1665,89 @@ function elDeleteLog(id) {
 
 function renderElLog() {
   elPopulateSelects();
-  const lista = document.getElementById('el-log-lista');
+  var lista = document.getElementById('el-log-lista');
   if (!lista) return;
   if (elLogs.length === 0) {
     lista.innerHTML = '<div class="empty-state"><div class="empty-state-icon">📝</div>Nessuna osservazione ancora.<br>Aggiungi note per confrontare i risultati!</div>';
     return;
   }
-  lista.innerHTML = elLogs.map(l => \`
-    <div class="card" style="margin-bottom:8px;padding:12px 14px">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
-        <div>
-          <span style="font-size:13px;font-weight:700">\${l.pianta_icon} \${l.pianta}</span>
-          <span style="font-size:11px;color:var(--text3);margin-left:8px">\${l.tecnica}</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:8px">
-          <span style="font-size:11px;color:var(--text3)">\${l.data} \${l.ora}</span>
-          <button onclick="elDeleteLog(\${l.id})" style="background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;padding:0;line-height:1">×</button>
-        </div>
-      </div>
-      <div style="font-size:13px;color:var(--text2);line-height:1.6">\${l.nota}</div>
-    </div>\`).join('');
+  var html = '';
+  elLogs.forEach(function(l) {
+    html += '<div class="card" style="margin-bottom:8px;padding:12px 14px">';
+    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">';
+    html += '<div><span style="font-size:13px;font-weight:700">' + l.pianta_icon + ' ' + l.pianta + '</span>';
+    html += '<span style="font-size:11px;color:var(--text3);margin-left:8px">' + l.tecnica + '</span></div>';
+    html += '<div style="display:flex;align-items:center;gap:8px"><span style="font-size:11px;color:var(--text3)">' + l.data + ' ' + l.ora + '</span>';
+    html += '<button onclick="elDeleteLog(' + l.id + ')" style="background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;padding:0;line-height:1">×</button></div></div>';
+    html += '<div style="font-size:13px;color:var(--text2);line-height:1.6">' + l.nota + '</div></div>';
+  });
+  lista.innerHTML = html;
 }
 
 /* ── Render STATS ── */
 function renderElStats() {
-  const plants = loadActivePlants();
-  const tecniche = elAllTecniche();
-
-  // Chart: piante con e senza tecniche
-  const chartEl = document.getElementById('el-stats-chart');
+  var plants = loadActivePlants();
+  var tecniche = elAllTecniche();
+  var chartEl = document.getElementById('el-stats-chart');
   if (chartEl) {
-    const rows = plants.map(p => {
-      const tracker = elTracker[p.id] || {};
-      const cnt = Object.values(tracker).filter(Boolean).length;
-      const pct = tecniche.length > 0 ? Math.round(cnt / tecniche.length * 100) : 0;
-      return { p, cnt, pct };
+    var html = '';
+    plants.forEach(function(p) {
+      var tracker = elTracker[p.id] || {};
+      var cnt = Object.values(tracker).filter(Boolean).length;
+      var pct = tecniche.length > 0 ? Math.round(cnt / tecniche.length * 100) : 0;
+      html += '<div style="margin-bottom:10px">';
+      html += '<div style="display:flex;justify-content:space-between;margin-bottom:3px">';
+      html += '<span style="font-size:13px">' + (p.icon||'🌱') + ' ' + p.name + '</span>';
+      html += '<span style="font-size:12px;color:var(--green2);font-weight:600">' + cnt + '/' + tecniche.length + ' (' + pct + '%)</span></div>';
+      html += '<div style="height:8px;background:var(--card2);border-radius:4px;overflow:hidden">';
+      html += '<div style="height:100%;width:' + pct + '%;background:linear-gradient(90deg,var(--green2),var(--green3));border-radius:4px;transition:.3s"></div></div></div>';
     });
-    chartEl.innerHTML = rows.map(r => \`
-      <div style="margin-bottom:10px">
-        <div style="display:flex;justify-content:space-between;margin-bottom:3px">
-          <span style="font-size:13px">\${r.p.icon||'🌱'} \${r.p.name}</span>
-          <span style="font-size:12px;color:var(--green2);font-weight:600">\${r.cnt}/\${tecniche.length} (\${r.pct}%)</span>
-        </div>
-        <div style="height:8px;background:var(--card2);border-radius:4px;overflow:hidden">
-          <div style="height:100%;width:\${r.pct}%;background:linear-gradient(90deg,var(--green2),var(--green3));border-radius:4px;transition:.3s"></div>
-        </div>
-      </div>\`).join('');
+    chartEl.innerHTML = html;
   }
-
-  // Top tecniche
-  const techEl = document.getElementById('el-stats-tecniche');
+  var techEl = document.getElementById('el-stats-tecniche');
   if (techEl) {
-    const techCounts = {};
-    tecniche.forEach(t => {
-      techCounts[t.id] = { nome: t.nome, cnt: 0 };
-    });
-    Object.values(elTracker).forEach(plantData => {
-      Object.entries(plantData).forEach(([tid, val]) => {
-        if (val && techCounts[tid]) techCounts[tid].cnt++;
+    var techCounts = {};
+    tecniche.forEach(function(t){ techCounts[t.id] = { nome: t.nome, cnt: 0 }; });
+    Object.values(elTracker).forEach(function(plantData) {
+      Object.keys(plantData).forEach(function(tid) {
+        if (plantData[tid] && techCounts[tid]) techCounts[tid].cnt++;
       });
     });
-    const sorted = Object.values(techCounts).sort((a,b) => b.cnt - a.cnt);
-    techEl.innerHTML = sorted.length === 0 ?
-      '<div style="text-align:center;color:var(--text3);font-size:13px;padding:12px">Nessun dato ancora</div>' :
-      sorted.map(t => \`
-        <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border)">
-          <span style="font-size:13px">\${t.nome}</span>
-          <span style="font-size:13px;font-weight:700;color:var(--green2)">\${t.cnt} piante</span>
-        </div>\`).join('');
+    var sorted = Object.values(techCounts).sort(function(a,b){ return b.cnt - a.cnt; });
+    if (sorted.length === 0) {
+      techEl.innerHTML = '<div style="text-align:center;color:var(--text3);font-size:13px;padding:12px">Nessun dato ancora</div>';
+    } else {
+      var th = '';
+      sorted.forEach(function(t) {
+        th += '<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border)">';
+        th += '<span style="font-size:13px">' + t.nome + '</span>';
+        th += '<span style="font-size:13px;font-weight:700;color:var(--green2)">' + t.cnt + ' piante</span></div>';
+      });
+      techEl.innerHTML = th;
+    }
   }
 }
 
 /* ── Update statistiche header ── */
 function elUpdateStats() {
-  // Attive = quante tecniche hanno count > 0
-  const attive = EL_TECNICHE_BASE.filter(t => (elCounts[t.id]||0) > 0).length + elTecnicheExtra.length;
-  const el1 = document.getElementById('el-stat-attive');
+  var attive = EL_TECNICHE_BASE.filter(function(t){ return (elCounts[t.id]||0) > 0; }).length + elTecnicheExtra.length;
+  var el1 = document.getElementById('el-stat-attive');
   if (el1) el1.textContent = attive;
-
-  // Log count
-  const el2 = document.getElementById('el-stat-log');
+  var el2 = document.getElementById('el-stat-log');
   if (el2) el2.textContent = elLogs.length;
-
-  // Piante con almeno 1 tecnica
-  const piante = Object.entries(elTracker).filter(([,v]) => Object.values(v).some(Boolean)).length;
-  const el3 = document.getElementById('el-stat-piante');
+  var piante = Object.entries(elTracker).filter(function(e){ return Object.values(e[1]).some(Boolean); }).length;
+  var el3 = document.getElementById('el-stat-piante');
   if (el3) el3.textContent = piante;
 }
+
+/* ── Toggle switch CSS ── */
+(function() {
+  if (document.getElementById('el-toggle-style')) return;
+  var s = document.createElement('style');
+  s.id = 'el-toggle-style';
+  s.textContent = '.toggle-sw{position:relative;display:inline-block;width:44px;height:24px}.toggle-sw input{opacity:0;width:0;height:0}.toggle-slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:var(--card2);border-radius:12px;transition:.3s;border:1px solid var(--border)}.toggle-sw input:checked+.toggle-slider{background:var(--green2)}.toggle-slider:before{content:"";position:absolute;height:18px;width:18px;left:2px;bottom:2px;background:white;border-radius:50%;transition:.3s}.toggle-sw input:checked+.toggle-slider:before{transform:translateX(20px)}';
+  document.head.appendChild(s);
+})();
 
 /* ── Init Elettrocultura ── */
 function initElettrocultura() {
@@ -1767,20 +1756,8 @@ function initElettrocultura() {
   elLoadTecnicheJSON();
   elUpdateStats();
 }
-
-// Init al caricamento
 document.addEventListener('DOMContentLoaded', initElettrocultura);
-// Fallback se DOM già pronto
-if (document.readyState !== 'loading') initElettrocultura();
-
-/* ── Stili toggle switch ── */
-(function addToggleStyle() {
-  if (document.getElementById('el-toggle-style')) return;
-  const s = document.createElement('style');
-  s.id = 'el-toggle-style';
-  s.textContent = \`.toggle-sw{position:relative;display:inline-block;width:44px;height:24px}.toggle-sw input{opacity:0;width:0;height:0}.toggle-slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:var(--card2);border-radius:12px;transition:.3s;border:1px solid var(--border)}.toggle-sw input:checked+.toggle-slider{background:var(--green2)}.toggle-slider:before{content:"";position:absolute;height:18px;width:18px;left:2px;bottom:2px;background:white;border-radius:50%;transition:.3s}.toggle-sw input:checked+.toggle-slider:before{transform:translateX(20px)}\`;
-  document.head.appendChild(s);
-})();
+if (document.readyState !== 'loading') { setTimeout(initElettrocultura, 50); }
 
 /* ══════════════════════════════════════════════════════════════
    METEO — Open-Meteo · Caserta fissa
