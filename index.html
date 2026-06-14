@@ -4,15 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="theme-color" content="#0d1a12">
-<title>BioSerra</title>
-<link rel="manifest" href="manifest.json">
+<meta name="description" content="Serra biotecnologica Living Soil">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="BioSerra">
 <meta name="application-name" content="BioSerra">
 <meta name="msapplication-TileColor" content="#0d1a12">
-<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='30' fill='%230d1a12'/%3E%3Ctext x='90' y='125' font-size='100' text-anchor='middle'%3E%F0%9F%8C%B1%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAEQ0lEQVR42u3dwY0UMRAFUCfAhSMxEQ9pkRYEwJ0DZxDanXX/X/WkH8DI9VQ9M3aXz6cvn0XenGMJBCABSAASgEQAEoAEIAFIBCABSAASgEQAEoAEoKJ8/f7NIgD0VxyvCkDEfOMJoCfR7MR0uCEJoGg3syUdbkhaDaiUzhhGBx2M1gEaRqea0UEHoxWAltCpY3TQwWgyoOV68g0ddDAaCAiXFkMHHYzmAIKjztChh6EJgIAoNXToYagYEAHtjA49DFUCUvIZhg49DJUBUuZJhg49DAEkOwAp7f/kx6+fRYYOPWl6/qTF0KEnjc6rAN0xdOgJ1FNk6NATSKfIEEC5eiq+DB16YulUNKFDT7KefEMApesJf5AdesLphDehQ0++nmRDABXQSX6QHXpa9GQ2IYA66MQ2oUNPkZ5AQwCV6XmJoVBA6Fygk9aEAOrTE9WEDj11dKIMAdSqZxSgnYclHqSTY2ggoDuVSNDzfkMRgCY9Sur0PN6EJgC6WZIoOglNqBvQ5ZJk6nmnoYcBbfvDl6EhgB6sCkDdgB4vzLwm9Bigtf/5MlQJKKoqAJUBCizMJEMPAFqlZ8ODDCBN6F2GxgIKr4oOFA0ovzDLv0cfeiYZur+xCtCcbbJHDkrnAur6ctpOB6C9hp6dDxwKKFnPP2pWreceoOXtJ+TEWciQ8qP9NALKmXIP0OvrV0pnDqDqR1j4aI4tgNq3uxvpDARUvdPUqGcgoOrNpjo9MwH1vsvXRWc4oNI9yy49wwGVblu20NkCKPN8dNTNGABNG8xTQecSIMOd3lbsCj1vMFTcgeo2wOfpmQDoPqMXfsjAlVwKqOUcRbie1YDuMHrJJ0xewO2A2k9TAOSuE4CmjIQGCKCm+ZsAjR1KDxBAKYYAWgroVYwAWg2o9JDXNEAD7uYBaMV0jgF3sgA0+XYwgAC6zQgggLqPnA4BNPKOy+WAJo/5vWno35IAAuhdrQgggADKADTY0EJAW657AggggABa8FtsFaCll+4CBBBA6wFt+0uaHoAAAgigSYBWbc7TAxBAeYD2HDGjByCAIgFNMrQB0KuKDhBAMYA2vK1BD0AABQMa/84hPQABlA1o9pvz9AAEUDygwSNg6LkEaOocKnoAAqgEUK+heYA+rsQfC2jeRE56AFqXbkAMDdZzCRBDU/XcA8TQSD1XATE0T89tQAwN0wMQQG2AGJqk5xlADI3R8xgghmboeRIQQwP0PAyIoXY9zwPCqJdOECCGSvUEAWKoUU8WIIbq9MQBYqhLTyIgjFroRANiqEJPNCCMwul0AGIovDoFgNYyqqhLDaBVjIoqUgZoPKO6WlQCGsmotArFgMYwql7/ekDVjAas/BBAXZImLfg0QMmSRq7zWEA5kmYv73xAj2Das6S7AH2cp7VruBrQfyKzCAAJQAKQACQCkAAkAAlAApAlEIAEIAFIABIBSACSlvwGtwmICimJ+cwAAAAASUVORK5CYII=">
+<title>BioSerra</title>
 <style>
   :root {
     --bg: #0d1a12;
@@ -4309,16 +4310,131 @@ function updateBioElettroPreview() {
 
 </script>
 
-<!-- ══ PWA: Service Worker ══ -->
+<!-- ══ BioSerra PWA — Service Worker + Install Banner ══ -->
 <script>
+/* ── Registrazione Service Worker ── */
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./service-worker.js')
-      .then(reg => console.log('[BioSerra SW] Registrato:', reg.scope))
+    navigator.serviceWorker.register('/sw.js', { scope: '/' })
+      .then(reg => {
+        console.log('[BioSerra SW] Attivo:', reg.scope);
+        /* Aggiornamento automatico quando c'è connessione */
+        reg.addEventListener('updatefound', () => {
+          const newSW = reg.installing;
+          newSW.addEventListener('statechange', () => {
+            if (newSW.state === 'installed' && navigator.serviceWorker.controller) {
+              newSW.postMessage('skipWaiting');
+            }
+          });
+        });
+      })
       .catch(err => console.warn('[BioSerra SW] Errore:', err));
   });
 }
+
+/* ── Banner installazione PWA (appare dopo 3 sec se non già installata) ── */
+(function initPWABanner() {
+  /* Non mostrare in modalità standalone (già installata) */
+  if (window.matchMedia('(display-mode: standalone)').matches) return;
+  if (window.navigator.standalone === true) return;
+
+  /* Non mostrare se l'utente l'ha rifiutato di recente (7 giorni) */
+  const dismissed = localStorage.getItem('pwa-dismissed');
+  if (dismissed && Date.now() - parseInt(dismissed) < 7 * 86400000) return;
+
+  let deferredPrompt = null;
+
+  window.addEventListener('beforeinstallprompt', e => {
+    e.preventDefault();
+    deferredPrompt = e;
+
+    setTimeout(() => {
+      const banner = document.getElementById('pwa-install-banner');
+      if (banner) banner.style.display = 'flex';
+    }, 3000);
+  });
+
+  window.addEventListener('appinstalled', () => {
+    const banner = document.getElementById('pwa-install-banner');
+    if (banner) banner.style.display = 'none';
+    deferredPrompt = null;
+  });
+
+  window._pwaTriggerInstall = async function() {
+    if (!deferredPrompt) return;
+    const banner = document.getElementById('pwa-install-banner');
+    if (banner) banner.style.display = 'none';
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    console.log('[BioSerra PWA] Scelta:', outcome);
+    deferredPrompt = null;
+  };
+
+  window._pwaDismissBanner = function() {
+    const banner = document.getElementById('pwa-install-banner');
+    if (banner) banner.style.display = 'none';
+    localStorage.setItem('pwa-dismissed', Date.now().toString());
+  };
+})();
 </script>
+
+<!-- Banner installazione PWA -->
+<div id="pwa-install-banner" style="
+  display:none;
+  position:fixed;
+  bottom:88px;
+  left:10px;
+  right:10px;
+  z-index:99999;
+  background:linear-gradient(135deg,#1a2e20 0%,#13231a 100%);
+  border:1.5px solid #4caf76;
+  border-radius:18px;
+  padding:14px 16px 12px;
+  box-shadow:0 8px 32px rgba(0,0,0,0.75);
+  flex-direction:column;
+  gap:10px;
+  animation:pwaBannerUp 0.35s cubic-bezier(.22,.68,0,1.2) both;
+">
+<style>
+@keyframes pwaBannerUp {
+  from { transform:translateY(60px); opacity:0; }
+  to   { transform:translateY(0);   opacity:1; }
+}
+.pwa-banner-row { display:flex; align-items:center; gap:12px; }
+.pwa-banner-icon {
+  width:48px; height:48px; border-radius:12px;
+  background:#0d1a12; display:flex; align-items:center;
+  justify-content:center; font-size:28px; flex-shrink:0;
+  border:1px solid #2a4a35;
+}
+.pwa-banner-info { flex:1; }
+.pwa-banner-title { color:#81c784; font-size:15px; font-weight:700; margin-bottom:2px; }
+.pwa-banner-sub   { color:#a5c9b0; font-size:12px; line-height:1.4; }
+.pwa-banner-btns  { display:flex; gap:8px; }
+.pwa-btn-install  {
+  flex:1; background:#4caf76; color:#0d1a12;
+  border:none; border-radius:10px; padding:10px 0;
+  font-weight:700; font-size:14px; cursor:pointer;
+  letter-spacing:0.2px;
+}
+.pwa-btn-dismiss  {
+  background:transparent; color:#6a9e7a;
+  border:1.5px solid #2a4a35; border-radius:10px;
+  padding:10px 14px; font-size:13px; cursor:pointer;
+}
+</style>
+<div class="pwa-banner-row">
+  <div class="pwa-banner-icon">🌱</div>
+  <div class="pwa-banner-info">
+    <div class="pwa-banner-title">Installa BioSerra</div>
+    <div class="pwa-banner-sub">Usa l'app offline, come nativa, dalla schermata home.</div>
+  </div>
+</div>
+<div class="pwa-banner-btns">
+  <button class="pwa-btn-install" onclick="window._pwaTriggerInstall()">📲 Installa App</button>
+  <button class="pwa-btn-dismiss" onclick="window._pwaDismissBanner()">Non ora</button>
+</div>
+</div>
 </body>
 </html>
 
