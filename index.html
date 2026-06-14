@@ -545,77 +545,6 @@
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
-  /* ══ SCHERMATA DI BLOCCO PIN ══ */
-  #lockscreen {
-    position: fixed; inset: 0; z-index: 99999;
-    background: var(--bg);
-    flex-direction: column;
-    align-items: center; justify-content: center;
-    padding: 24px 20px;
-    /* NASCOSTO di default — tripla sicurezza per mobile */
-    display: none !important;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  #lockscreen.visible {
-    display: flex !important;
-    visibility: visible;
-    pointer-events: all;
-  }
-  .lock-logo { font-size: 52px; margin-bottom: 8px; }
-  .lock-title { font-size: 26px; font-weight: 800; color: var(--green3); letter-spacing: -0.5px; margin-bottom: 4px; }
-  .lock-sub { font-size: 13px; color: var(--text3); margin-bottom: 36px; }
-  .lock-dots { display: flex; gap: 14px; margin-bottom: 28px; }
-  .lock-dot {
-    width: 16px; height: 16px; border-radius: 50%;
-    background: var(--card2); border: 2px solid var(--border);
-    transition: background 0.15s, transform 0.15s;
-  }
-  .lock-dot.filled { background: var(--green3); border-color: var(--green3); transform: scale(1.15); }
-  .lock-dot.error  { background: var(--red); border-color: var(--red); }
-  .lock-msg { font-size: 13px; min-height: 20px; margin-bottom: 20px; color: var(--red); font-weight: 600; text-align: center; }
-  .lock-keypad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%; max-width: 280px; margin-bottom: 16px; }
-  .lock-key {
-    background: var(--card2); border: 1px solid var(--border);
-    border-radius: 14px; height: 68px;
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    font-size: 24px; font-weight: 700; color: var(--text);
-    cursor: pointer; user-select: none; -webkit-tap-highlight-color: transparent;
-  }
-  .lock-key:active { background: var(--green2); }
-  .lock-key.key-del { font-size: 20px; color: var(--text3); }
-  .lock-key.key-empty { background: transparent; border: none; cursor: default; }
-  .lock-key-letters { font-size: 9px; color: var(--text3); margin-top: 1px; }
-  @keyframes lockShake {
-    0%,100% { transform: translateX(0); }
-    20%,60% { transform: translateX(-9px); }
-    40%,80% { transform: translateX(9px); }
-  }
-  .lock-shake { animation: lockShake 0.4s ease; }
-  .lock-bio-btn {
-    display: flex; align-items: center; gap: 8px;
-    background: var(--card2); border: 1px solid var(--border);
-    border-radius: 24px; padding: 10px 20px;
-    font-size: 13px; color: var(--text2); cursor: pointer; margin-top: 4px;
-  }
-  .lock-bio-btn:active { background: var(--green2); color: var(--text); }
-
-  /* ══ IMPOSTAZIONI — Voce Sicurezza PIN ══ */
-  .pin-setup-card {
-    background: var(--card2); border: 1px solid var(--border);
-    border-radius: var(--radius-sm); padding: 14px; margin-bottom: 8px;
-  }
-  .pin-row {
-    display: flex; gap: 8px; margin-bottom: 10px;
-  }
-  .pin-digit-input {
-    width: 52px; height: 52px; text-align: center;
-    font-size: 22px; font-weight: 700;
-    background: var(--card); border: 2px solid var(--border);
-    border-radius: 10px; color: var(--text); outline: none;
-    -webkit-appearance: none; -moz-appearance: textfield;
-  }
-  .pin-digit-input:focus { border-color: var(--green2); }
 
   /* ── JSON DATA PANELS ── */
   .json-panel {
@@ -829,52 +758,6 @@
 </style>
 </head>
 <body>
-
-<!-- ══ LOCKSCREEN PIN ══ -->
-<div id="lockscreen">
-  <div class="lock-logo">🌱</div>
-  <div class="lock-title">BioSerra</div>
-  <div class="lock-sub" id="lock-sub">Inserisci il PIN</div>
-
-  <!-- Indicatori cifre -->
-  <div class="lock-dots" id="lock-dots">
-    <div class="lock-dot" id="ld0"></div>
-    <div class="lock-dot" id="ld1"></div>
-    <div class="lock-dot" id="ld2"></div>
-    <div class="lock-dot" id="ld3"></div>
-  </div>
-
-  <!-- Messaggio errori / blocco -->
-  <div class="lock-msg" id="lock-msg"></div>
-
-  <!-- Tastierino numerico -->
-  <div class="lock-keypad" id="lock-keypad">
-    <div class="lock-key" onclick="lockKey('1')">1<span class="lock-key-letters"></span></div>
-    <div class="lock-key" onclick="lockKey('2')">2<span class="lock-key-letters">ABC</span></div>
-    <div class="lock-key" onclick="lockKey('3')">3<span class="lock-key-letters">DEF</span></div>
-    <div class="lock-key" onclick="lockKey('4')">4<span class="lock-key-letters">GHI</span></div>
-    <div class="lock-key" onclick="lockKey('5')">5<span class="lock-key-letters">JKL</span></div>
-    <div class="lock-key" onclick="lockKey('6')">6<span class="lock-key-letters">MNO</span></div>
-    <div class="lock-key" onclick="lockKey('7')">7<span class="lock-key-letters">PQRS</span></div>
-    <div class="lock-key" onclick="lockKey('8')">8<span class="lock-key-letters">TUV</span></div>
-    <div class="lock-key" onclick="lockKey('9')">9<span class="lock-key-letters">WXYZ</span></div>
-    <div class="lock-key key-empty"></div>
-    <div class="lock-key" onclick="lockKey('0')">0</div>
-    <div class="lock-key key-del" onclick="lockDel()">⌫</div>
-  </div>
-
-  <!-- Pulsante biometria (appare solo se supportata) -->
-  <button class="lock-bio-btn" id="lock-bio-btn" style="display:none;" onclick="lockBio()">
-    <span style="font-size:22px;">👆</span> Usa impronta digitale
-  </button>
-
-  <!-- Link reset emergenza -->
-  <div style="margin-top:24px;font-size:11px;color:var(--text3);text-align:center;">
-    <span onclick="lockEmergencyReset()" style="cursor:pointer;text-decoration:underline;opacity:0.6;">
-      PIN dimenticato? Resetta tutto
-    </span>
-  </div>
-</div>
 
 <!-- TOP BAR -->
 <div class="topbar">
@@ -1575,73 +1458,6 @@
   <div class="section-sub">Configurazione BioSerra</div>
 
   <!-- 1) SICUREZZA -->
-  <div class="setting-group">
-    <div class="setting-group-label">🔐 Sicurezza</div>
-
-    <!-- Attiva/Disattiva PIN -->
-    <div class="setting-item" style="margin-bottom:6px;">
-      <div class="setting-left">
-        <div class="setting-icon">🔑</div>
-        <div>
-          <div class="setting-title">Blocco con PIN</div>
-          <div class="setting-value" id="pin-status-label">PIN: 1234 (default)</div>
-        </div>
-      </div>
-      <div class="toggle" id="pin-toggle" onclick="pinToggleEnable()"><div class="toggle-knob"></div></div>
-    </div>
-
-    <!-- Cambia PIN -->
-    <div id="pin-change-section" style="display:none;">
-      <div class="pin-setup-card">
-        <div style="font-size:12px;font-weight:700;color:var(--text2);margin-bottom:10px;">🔄 Cambia PIN</div>
-
-        <div style="font-size:11px;color:var(--text3);margin-bottom:6px;">PIN attuale</div>
-        <div class="pin-row" id="pin-old-row">
-          <input class="pin-digit-input" type="password" inputmode="numeric" maxlength="1" id="pin-old-0" oninput="pinDigitInput(this,'old',0)">
-          <input class="pin-digit-input" type="password" inputmode="numeric" maxlength="1" id="pin-old-1" oninput="pinDigitInput(this,'old',1)">
-          <input class="pin-digit-input" type="password" inputmode="numeric" maxlength="1" id="pin-old-2" oninput="pinDigitInput(this,'old',2)">
-          <input class="pin-digit-input" type="password" inputmode="numeric" maxlength="1" id="pin-old-3" oninput="pinDigitInput(this,'old',3)">
-        </div>
-
-        <div style="font-size:11px;color:var(--text3);margin-bottom:6px;margin-top:10px;">Nuovo PIN</div>
-        <div class="pin-row">
-          <input class="pin-digit-input" type="password" inputmode="numeric" maxlength="1" id="pin-new-0" oninput="pinDigitInput(this,'new',0)">
-          <input class="pin-digit-input" type="password" inputmode="numeric" maxlength="1" id="pin-new-1" oninput="pinDigitInput(this,'new',1)">
-          <input class="pin-digit-input" type="password" inputmode="numeric" maxlength="1" id="pin-new-2" oninput="pinDigitInput(this,'new',2)">
-          <input class="pin-digit-input" type="password" inputmode="numeric" maxlength="1" id="pin-new-3" oninput="pinDigitInput(this,'new',3)">
-        </div>
-
-        <div style="font-size:11px;color:var(--text3);margin-bottom:6px;margin-top:10px;">Conferma nuovo PIN</div>
-        <div class="pin-row">
-          <input class="pin-digit-input" type="password" inputmode="numeric" maxlength="1" id="pin-conf-0" oninput="pinDigitInput(this,'conf',0)">
-          <input class="pin-digit-input" type="password" inputmode="numeric" maxlength="1" id="pin-conf-1" oninput="pinDigitInput(this,'conf',1)">
-          <input class="pin-digit-input" type="password" inputmode="numeric" maxlength="1" id="pin-conf-2" oninput="pinDigitInput(this,'conf',2)">
-          <input class="pin-digit-input" type="password" inputmode="numeric" maxlength="1" id="pin-conf-3" oninput="pinDigitInput(this,'conf',3)">
-        </div>
-
-        <div id="pin-change-msg" style="font-size:12px;min-height:18px;margin:8px 0;color:var(--red);"></div>
-        <button onclick="pinChangeSave()" class="btn-primary" style="margin-top:4px;">💾 Salva nuovo PIN</button>
-      </div>
-    </div>
-
-    <!-- Info biometria -->
-    <div class="setting-item" id="pin-bio-item" style="display:none;">
-      <div class="setting-left">
-        <div class="setting-icon">👆</div>
-        <div>
-          <div class="setting-title">Impronta digitale</div>
-          <div class="setting-value">Supportata su questo dispositivo</div>
-        </div>
-      </div>
-      <span style="color:var(--green3);font-size:13px;font-weight:600;">✓ Attiva</span>
-    </div>
-
-    <!-- Info sessione -->
-    <div style="margin-top:8px;padding:8px 12px;background:var(--bg3);border-radius:8px;font-size:11px;color:var(--text3);line-height:1.6;">
-      🔐 Sessione attiva <strong style="color:var(--green3);">24 ore</strong> dopo sblocco · PIN di default: <strong style="color:var(--text2);">1234</strong>
-    </div>
-  </div>
-
   <!-- 2) SERRA (era 1) -->
     <div class="setting-group-label">🌱 Serra</div>
     <div class="setting-item">
@@ -3629,8 +3445,6 @@ function initImpostazioni() {
   const ai = localStorage.getItem('bioserra_ai_attiva') || 'gemini';
   cfgApplyAIUI(ai);
   cfgUpdateAIKeyBox(ai);
-  // Sicurezza — aggiorna UI PIN
-  if (typeof window.pinUpdateSettingsUI === 'function') window.pinUpdateSettingsUI();
 }
 
 /* Applica i panel delle notifiche all'avvio dell'app (non solo quando si apre Impostazioni) */
@@ -3944,7 +3758,7 @@ function cfgToast(msg) {
 // renderBioCalendar viene chiamata da initApp()
 
 /* ══════════════════════════════════════════════════════════════
-   INIT APP — Eseguita dopo sblocco PIN (o subito se PIN disabilitato)
+   INIT APP
 ══════════════════════════════════════════════════════════════ */
 window._appInitialized = false;
 window.initApp = function() {
@@ -3963,253 +3777,6 @@ window.initApp = function() {
   if (typeof applyNotificheAtBoot === 'function') setTimeout(applyNotificheAtBoot, 100);
 };
 
-/* ══════════════════════════════════════════════════════════════
-   SISTEMA DI SICUREZZA — PIN · SESSIONE 24h · BIOMETRIA
-══════════════════════════════════════════════════════════════ */
-(function() {
-  var PIN_KEY     = 'bioserra_pin';
-  var PIN_ON_KEY  = 'bioserra_pin_enabled';
-  var SESSION_KEY = 'bioserra_session_ts';
-  var FAIL_KEY    = 'bioserra_pin_fails';
-  var BLOCK_KEY   = 'bioserra_pin_block_until';
-  var SESSION_MS  = 24 * 60 * 60 * 1000;
-  var BLOCK_SEC   = 30;
-  var MAX_FAILS   = 3;
-  var DEFAULT_PIN = '1234';
-  var lockBuffer  = '';
-  var blockTimer  = null;
-
-  function lsGet(k, def) { try { var v = localStorage.getItem(k); return v !== null ? v : def; } catch(e) { return def; } }
-  function lsSet(k, v)   { try { localStorage.setItem(k, v); } catch(e) {} }
-  function lsRem(k)      { try { localStorage.removeItem(k); } catch(e) {} }
-
-  function getPin()        { return lsGet(PIN_KEY, DEFAULT_PIN); }
-  function isPinEnabled()  { return lsGet(PIN_ON_KEY, 'false') === 'true'; } // default OFF
-  function getFailCnt()    { return parseInt(lsGet(FAIL_KEY, '0')) || 0; }
-  function setFailCnt(n)   { lsSet(FAIL_KEY, String(n)); }
-  function getBlockUntil() { return parseInt(lsGet(BLOCK_KEY, '0')) || 0; }
-  function setBlockUntil(ts) { lsSet(BLOCK_KEY, String(ts)); }
-
-  function isSessionValid() {
-    var ts = parseInt(lsGet(SESSION_KEY, '0')) || 0;
-    return ts > 0 && (Date.now() - ts) < SESSION_MS;
-  }
-  function startSession() { lsSet(SESSION_KEY, String(Date.now())); }
-
-  /* ── Mostra / nascondi ── */
-  function showLock() {
-    var ls = document.getElementById('lockscreen');
-    if (!ls) return;
-    ls.classList.add('visible');
-    ls.style.display = 'flex';
-    ls.style.visibility = 'visible';
-    ls.style.pointerEvents = 'all';
-    lockBuffer = '';
-    updateDots();
-    setLockMsg('');
-  }
-  function hideLock() {
-    var ls = document.getElementById('lockscreen');
-    if (!ls) return;
-    ls.classList.remove('visible');
-    ls.style.display = 'none';
-    ls.style.visibility = 'hidden';
-    ls.style.pointerEvents = 'none';
-    // Inizializza l'app dopo lo sblocco (o se PIN non attivo)
-    if (typeof window.initApp === 'function' && !window._appInitialized) {
-      window._appInitialized = true;
-      window.initApp();
-    }
-  }
-
-  /* ── Dots ── */
-  function updateDots() {
-    for (var i = 0; i < 4; i++) {
-      var d = document.getElementById('ld' + i);
-      if (!d) continue;
-      d.classList.remove('filled', 'error');
-      if (i < lockBuffer.length) d.classList.add('filled');
-    }
-  }
-  function dotsError() {
-    for (var i = 0; i < 4; i++) {
-      var d = document.getElementById('ld' + i);
-      if (d) { d.classList.remove('filled'); d.classList.add('error'); }
-    }
-  }
-
-  /* ── Input tasti ── */
-  window.lockKey = function(digit) {
-    if (getBlockUntil() > Date.now()) return;
-    if (lockBuffer.length >= 4) return;
-    lockBuffer += digit;
-    updateDots();
-    if (lockBuffer.length === 4) setTimeout(checkPin, 150);
-  };
-  window.lockDel = function() {
-    if (lockBuffer.length > 0) { lockBuffer = lockBuffer.slice(0, -1); updateDots(); setLockMsg(''); }
-  };
-
-  /* ── Verifica PIN ── */
-  function checkPin() {
-    var entered = lockBuffer;
-    lockBuffer = '';
-    if (entered === getPin()) {
-      setFailCnt(0); lsRem(BLOCK_KEY);
-      startSession(); hideLock(); setLockMsg('');
-    } else {
-      dotsError();
-      var fails = getFailCnt() + 1;
-      setFailCnt(fails);
-      if (fails >= MAX_FAILS) {
-        var until = Date.now() + BLOCK_SEC * 1000;
-        setBlockUntil(until); setFailCnt(0);
-        startBlockCountdown(until);
-      } else {
-        setLockMsg('PIN errato — tentativo ' + fails + '/' + MAX_FAILS);
-        shakeKeypad();
-        setTimeout(function() { lockBuffer = ''; updateDots(); }, 600);
-      }
-    }
-  }
-
-  function shakeKeypad() {
-    var kp = document.getElementById('lock-keypad');
-    var dd = document.getElementById('lock-dots');
-    [kp, dd].forEach(function(el) {
-      if (!el) return;
-      el.classList.remove('lock-shake');
-      void el.offsetWidth;
-      el.classList.add('lock-shake');
-      setTimeout(function() { el.classList.remove('lock-shake'); }, 450);
-    });
-  }
-
-  function startBlockCountdown(until) {
-    if (blockTimer) clearInterval(blockTimer);
-    var kp = document.getElementById('lock-keypad');
-    function tick() {
-      var rem = Math.ceil((until - Date.now()) / 1000);
-      if (rem <= 0) {
-        clearInterval(blockTimer); blockTimer = null;
-        setBlockUntil(0); setLockMsg('');
-        if (kp) kp.style.opacity = '1';
-        lockBuffer = ''; updateDots();
-        for (var i = 0; i < 4; i++) { var d = document.getElementById('ld'+i); if(d) d.classList.remove('error'); }
-      } else {
-        setLockMsg('⛔ Troppi errori — riprova tra ' + rem + 's');
-        if (kp) kp.style.opacity = '0.35';
-      }
-    }
-    tick();
-    blockTimer = setInterval(tick, 500);
-  }
-
-  function setLockMsg(txt) {
-    var el = document.getElementById('lock-msg');
-    if (el) el.textContent = txt;
-  }
-
-  /* ── Biometria ── */
-  window.lockBio = async function() {
-    try {
-      await navigator.credentials.get({ publicKey: { challenge: crypto.getRandomValues(new Uint8Array(32)), timeout: 30000, userVerification: 'required', allowCredentials: [] } });
-      startSession(); hideLock();
-    } catch(e) {
-      setLockMsg('Biometria non riuscita — usa il PIN');
-      setTimeout(function() { setLockMsg(''); }, 2000);
-    }
-  };
-
-  function checkBioSupport() {
-    if (!window.PublicKeyCredential) return;
-    PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable().then(function(ok) {
-      var btn = document.getElementById('lock-bio-btn');
-      var bio = document.getElementById('pin-bio-item');
-      if (ok && btn) btn.style.display = 'flex';
-      if (ok && bio) bio.style.display = 'flex';
-    }).catch(function(){});
-  }
-
-  /* ── Reset emergenza ── */
-  window.lockEmergencyReset = function() {
-    if (!confirm('⚠️ Questa azione cancella TUTTI i dati di BioSerra.
-Confermi il reset completo?')) return;
-    if (!confirm('Sei sicuro? Non è reversibile.')) return;
-    localStorage.clear(); location.reload();
-  };
-
-  /* ── Init ── */
-  function initLock() {
-    // PIN disabilitato o sessione valida → sblocca subito e avvia l'app
-    if (!isPinEnabled() || isSessionValid()) {
-      hideLock(); // hideLock chiama initApp() internamente
-      pinUpdateSettingsUI();
-      return;
-    }
-    // PIN attivo e sessione scaduta → mostra lockscreen
-    // initApp() viene chiamata da hideLock() dopo l'inserimento del PIN corretto
-    var bu = getBlockUntil();
-    if (bu > Date.now()) startBlockCountdown(bu);
-    showLock();
-    checkBioSupport();
-    pinUpdateSettingsUI();
-  }
-
-  // Esponi initLock globalmente per chiamata diretta a fine script
-  window._initLock = initLock;
-
-  /* ══ Impostazioni ══ */
-  window.pinToggleEnable = function() {
-    var cur = isPinEnabled();
-    lsSet(PIN_ON_KEY, cur ? 'false' : 'true');
-    if (!cur) { startSession(); } // attivando, sessione già aperta
-    pinUpdateSettingsUI();
-    cfgToast(cur ? '🔓 PIN disattivato' : '🔐 PIN attivato');
-  };
-
-  function pinUpdateSettingsUI() {
-    var tog = document.getElementById('pin-toggle');
-    var lbl = document.getElementById('pin-status-label');
-    var sec = document.getElementById('pin-change-section');
-    var on  = isPinEnabled();
-    if (tog) { if (on) tog.classList.add('on'); else tog.classList.remove('on'); }
-    if (lbl) lbl.textContent = on ? '🔐 PIN attivo' : '🔓 PIN disattivato (default)';
-    if (sec) sec.style.display = on ? 'block' : 'none';
-    checkBioSupport();
-  }
-  window.pinUpdateSettingsUI = pinUpdateSettingsUI;
-
-  window.pinDigitInput = function(el, group, idx) {
-    var val = el.value.replace(/\D/g, '').slice(-1);
-    el.value = val;
-    if (val && idx < 3) { var n = document.getElementById('pin-'+group+'-'+(idx+1)); if(n) n.focus(); }
-  };
-
-  function getPinFromFields(g) {
-    var p = '';
-    for (var i = 0; i < 4; i++) { var el = document.getElementById('pin-'+g+'-'+i); p += el ? el.value : ''; }
-    return p;
-  }
-
-  window.pinChangeSave = function() {
-    var msgEl = document.getElementById('pin-change-msg');
-    function err(t) { if(msgEl){ msgEl.style.color='var(--red)'; msgEl.textContent=t; } }
-    var oldP = getPinFromFields('old'), newP = getPinFromFields('new'), confP = getPinFromFields('conf');
-    if (oldP.length < 4)   return err('⚠️ PIN attuale incompleto');
-    if (oldP !== getPin()) return err('❌ PIN attuale errato');
-    if (newP.length < 4)   return err('⚠️ Nuovo PIN incompleto');
-    if (newP !== confP)    return err('❌ I PIN non coincidono');
-    lsSet(PIN_KEY, newP); startSession();
-    if(msgEl){ msgEl.style.color='var(--green3)'; msgEl.textContent='✅ PIN aggiornato!'; }
-    setTimeout(function() {
-      ['old','new','conf'].forEach(function(g){ for(var i=0;i<4;i++){ var e=document.getElementById('pin-'+g+'-'+i); if(e) e.value=''; } });
-      if(msgEl){ msgEl.textContent=''; msgEl.style.color='var(--red)'; }
-    }, 1500);
-    cfgToast('🔐 PIN aggiornato');
-  };
-
-})(); // fine IIFE sicurezza
 
 /* ══════════════════════════════════════════════════════════════
    AMBIENTE — SISTEMA UNIFICATO Meteo + Luna + Bio + AI Serra
@@ -5098,18 +4665,11 @@ function renderBioCalendar() {
   setTimeout(updateBioElettroPreview, 100);
 }
 
-/* ══ AVVIO APP — chiamata diretta, funziona sempre (no race con load event) ══ */
+/* ══ AVVIO APP ══ */
 (function avvioApp() {
-  // Tutte le funzioni sono definite qui sotto, il DOM è già pronto
-  // Chiamiamo initLock che gestisce PIN → hideLock → initApp
-  if (typeof window._initLock === 'function') {
-    window._initLock();
-  } else {
-    // Fallback: se qualcosa è andato storto, avvia app direttamente
-    if (typeof window.initApp === 'function' && !window._appInitialized) {
-      window._appInitialized = true;
-      window.initApp();
-    }
+  if (typeof window.initApp === 'function' && !window._appInitialized) {
+    window._appInitialized = true;
+    window.initApp();
   }
 })();
 
