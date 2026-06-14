@@ -1241,51 +1241,58 @@
   <div class="section-title">AI 🤖</div>
   <div id="ai-subtitle" class="section-sub">Assistente Serra</div>
 
-  <!-- CONSIGLI AI GIORNALIERI DA JSON -->
-  <div class="json-panel" id="ai-json-panel">
-    <div class="json-panel-header">
-      <div class="json-panel-title">📋 Consigli del Giorno</div>
-      <button class="json-reload-btn" onclick="loadAIJSON()">🔄 Aggiorna</button>
-    </div>
-    <div class="json-panel-meta" id="ai-json-meta">In caricamento…</div>
-    <div id="ai-json-content"><div class="json-loading">⏳ Caricamento consigli…</div></div>
-  </div>
+  <!-- SELETTORE MOTORE -->
+  <div id="ai-engine-row" style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;"></div>
 
   <!-- SETUP KEY -->
-  <div id="ai-setup-box" style="display:none;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px;">
+  <div id="ai-setup-box" style="display:none;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px;">
     <div style="font-size:15px;font-weight:700;margin-bottom:4px;">🔑 Configura <span id="ai-setup-name">AI</span></div>
-    <div id="ai-setup-instructions" style="font-size:12px;color:var(--text3);margin-bottom:12px;line-height:1.6;"></div>
-    <input id="ai-key-setup-input" type="text" placeholder="Incolla qui la chiave API…"
-      style="width:100%;box-sizing:border-box;background:var(--card2);border:1px solid var(--green2);border-radius:10px;padding:11px 14px;color:var(--text);font-size:14px;outline:none;font-family:var(--font);margin-bottom:10px;">
+    <div id="ai-setup-instructions" style="font-size:12px;color:var(--text3);margin-bottom:12px;line-height:1.7;"></div>
+    <input id="ai-key-setup-input" type="text" placeholder="Incolla chiave API…"
+      style="width:100%;box-sizing:border-box;background:var(--card2);border:1.5px solid var(--green2);border-radius:10px;padding:11px 14px;color:var(--text);font-size:14px;outline:none;font-family:var(--font);margin-bottom:10px;"
+      onkeydown="if(event.key==='Enter')aiSaveKeyInline()">
     <button onclick="aiSaveKeyInline()"
       style="width:100%;background:var(--green2);border:none;border-radius:10px;padding:12px;color:var(--text);font-size:15px;font-weight:700;cursor:pointer;">
-      ✅ Salva chiave e inizia
+      ✅ Salva e inizia
     </button>
   </div>
 
-  <!-- BADGE modello attivo -->
+  <!-- BADGE motore attivo -->
   <div id="ai-model-badge" style="display:none;margin-bottom:10px;">
-    <div class="ai-sources-badge" style="justify-content:space-between;flex-wrap:wrap;gap:6px;">
-      <span id="ai-badge-label">🤖 AI attiva</span>
-      <button onclick="aiChangeKey()" style="background:none;border:none;color:var(--green2);font-size:12px;cursor:pointer;padding:0;">Cambia chiave</button>
+    <div style="display:flex;justify-content:space-between;align-items:center;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;font-size:12px;">
+      <span id="ai-badge-label" style="color:var(--green2);font-weight:600;"></span>
+      <button onclick="aiChangeKey()" style="background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;padding:0;">Cambia chiave</button>
     </div>
   </div>
 
-  <div class="ai-chat" id="ai-chat"></div>
-
-  <div class="ai-quick" id="ai-quick-btns" style="display:none;">
-    <button class="ai-quick-btn" onclick="aiQuick('Quando annaffiare?')">💧 Annaffiare?</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Dosi melassa oggi')">🍯 Melassa</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Fase lunare oggi')">🌙 Luna</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Diagnosi foglie ingiallite')">🍂 Foglie</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Prossima azione da fare')">📋 Azione</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Raccolta prevista Epsilon F1 ID:7')">🌾 Raccolta</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Stato piante femminizzate')">🌸 Femminizzate</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Elettrocultura: come funziona?')">⚡ Elettrocoltura</button>
+  <!-- CONSIGLI GIORNALIERI AI (generati dinamicamente) -->
+  <div id="ai-daily-box" style="display:none;margin-bottom:12px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+      <div style="font-size:13px;font-weight:700;color:var(--text);">📋 Analisi del giorno</div>
+      <button id="ai-daily-refresh" onclick="aiGenerateDaily()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:4px 10px;color:var(--green2);font-size:11px;font-weight:600;cursor:pointer;">🔄 Aggiorna</button>
+    </div>
+    <div id="ai-daily-content" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;font-size:13px;color:var(--text2);line-height:1.7;min-height:60px;white-space:pre-wrap;"></div>
+    <div id="ai-daily-meta" style="font-size:10px;color:var(--text3);margin-top:4px;text-align:right;"></div>
   </div>
 
+  <!-- AZIONI RAPIDE (bottoni cliccabili che mandano nella chat) -->
+  <div id="ai-quick-btns" style="display:none;flex-wrap:wrap;gap:7px;margin-bottom:10px;">
+    <button class="ai-quick-btn" onclick="aiQuick('Cosa devo fare oggi in serra?')">📋 Cosa fare oggi</button>
+    <button class="ai-quick-btn" onclick="aiQuick('Quando annaffiare?')">💧 Annaffiare?</button>
+    <button class="ai-quick-btn" onclick="aiQuick('Dosi melassa — quando tocca?')">🍯 Melassa</button>
+    <button class="ai-quick-btn" onclick="aiQuick('Diagnosi foglie ingiallite: cause e soluzione')">🍂 Foglie gialle</button>
+    <button class="ai-quick-btn" onclick="aiQuick('Quale pianta è più vicina alla raccolta?')">🌾 Raccolta</button>
+    <button class="ai-quick-btn" onclick="aiQuick('Stato e prossima azione per le femminizzate')">🌸 Femminizzate</button>
+    <button class="ai-quick-btn" onclick="aiQuick('Infuso ortiche: quando toccherà farlo?')">🌿 Ortiche</button>
+    <button class="ai-quick-btn" onclick="aiQuick('Spiega il circuito di Lakhovsky')">⚡ Lakhovsky</button>
+  </div>
+
+  <!-- CHAT -->
+  <div class="ai-chat" id="ai-chat"></div>
+
   <div id="ai-input-row" class="ai-input-row" style="display:none;">
-    <input class="ai-input" id="ai-input" type="text" placeholder="Scrivi un messaggio…" onkeydown="if(event.key='Enter')aiSend()">
+    <input class="ai-input" id="ai-input" type="text" placeholder="Scrivi un messaggio…"
+      onkeydown="if(event.key==='Enter'){event.preventDefault();aiSend();}">
     <button class="ai-send" onclick="aiSend()">➤</button>
   </div>
 </section>
@@ -2824,66 +2831,78 @@ function confirmArchive() {
 
 
 /* ══════════════════════════════════════════════════════════════
-   AI CHAT — Gemini 1.5 Flash (gratis, no CORS)
+   AI CHAT — Multi-motore + Consigli Dinamici
 ══════════════════════════════════════════════════════════════ */
 
 const PIANTE_CTX = 'Autofiorenti: Epsilon F1(ID:7,germ 21/04,taglio 20/06), Milky Way(ID:1,germ 23/04,taglio 22/07), Titan(ID:2,germ 22/04,taglio 21/07), Medusa(ID:3,germ 21/04,taglio 20/07), Gaia(ID:8,germ 21/04,taglio 15/07). Femminizzate: Astro Lemonade(ID:4,taglio 30/10), Cosmic Cheddar(ID:11,taglio 30/10), Orbital Banana(ID:6,taglio 30/10), Royal Gorilla(ID:10,taglio 09/11), Mexican Rush(ID:9,taglio 09/11).';
 const MANUALE_CTX = 'Serra Living Soil: 10 vasi 10L, substrato BioBizz+cocco+SuperSoil+Humus+micorrize. Additivi: Melassa 1ml/L ogni 15gg; Miscela organica 1 cucchiaio/vaso/mese; Infuso ortiche 1:10 ogni mese; Te banana+cenere ogni 2 sett da mese 5; Etilene mesi 7-8. Esperimenti: elettrocultura, Lakhovsky, pila galvanica Fe-Cu, acqua magnetizzata, Pantacle rame.';
 
-let aiHistory = [];
-
-/* ══════════════════════════════════════════════════════════════
-   AI MULTI-MOTORE — Claude / Gemini / Grok / ChatGPT
-══════════════════════════════════════════════════════════════ */
-
 const AI_ENGINES = {
-  claude:  {
-    nome: 'Claude (Anthropic)',
-    emoji: '✨',
-    keyLabel: 'AIzaSy… (chiave Anthropic)',
-    placeholder: 'sk-ant-…',
-    istruzioni: '1. Vai su <a href="https://console.anthropic.com" target="_blank" style="color:var(--green3)">console.anthropic.com</a><br>2. API Keys → Create Key<br>3. Copia e incolla qui sotto'
-  },
-  gemini: {
-    nome: 'Gemini Flash (Google)',
-    emoji: '💎',
-    keyLabel: 'AIzaSy…',
-    placeholder: 'AIzaSy…',
-    istruzioni: '1. Vai su <a href="https://aistudio.google.com/apikey" target="_blank" style="color:var(--green3)">aistudio.google.com/apikey</a><br>2. Create API key (gratis, zero carta)<br>3. Copia e incolla qui sotto'
-  },
-  grok: {
-    nome: 'Grok (xAI)',
-    emoji: '⚡',
-    keyLabel: 'gsk_…',
-    placeholder: 'gsk_…',
-    istruzioni: '1. Vai su <a href="https://console.x.ai" target="_blank" style="color:var(--green3)">console.x.ai</a><br>2. API Keys → Create<br>3. Copia e incolla qui sotto'
-  },
-  chatgpt: {
-    nome: 'ChatGPT (OpenAI)',
-    emoji: '🧠',
-    keyLabel: 'sk-proj-…',
-    placeholder: 'sk-proj-…',
-    istruzioni: '1. Vai su <a href="https://platform.openai.com/api-keys" target="_blank" style="color:var(--green3)">platform.openai.com/api-keys</a><br>2. Create new secret key<br>3. Copia e incolla qui sotto'
-  }
+  gemini:  { nome:'Gemini Flash', emoji:'💎', ph:'AIzaSy…',
+    url:'<a href="https://aistudio.google.com/apikey" target="_blank" style="color:var(--green2)">aistudio.google.com/apikey</a>',
+    istr:'1. Apri il link qui sotto<br>2. Accedi con Google (zero carta)<br>3. Clic "Create API key"<br>4. Copia e incolla la chiave' },
+  grok:    { nome:'Grok (xAI)',   emoji:'⚡', ph:'gsk_… oppure xai-…',
+    url:'<a href="https://console.x.ai" target="_blank" style="color:var(--green2)">console.x.ai</a>',
+    istr:'1. Apri il link qui sotto<br>2. Registrati con email<br>3. API Keys → Create<br>4. Copia e incolla la chiave' },
+  claude:  { nome:'Claude',       emoji:'✨', ph:'sk-ant-…',
+    url:'<a href="https://console.anthropic.com" target="_blank" style="color:var(--green2)">console.anthropic.com</a>',
+    istr:'1. Apri il link qui sotto<br>2. API Keys → Create Key<br>3. Copia e incolla la chiave' },
+  chatgpt: { nome:'ChatGPT',      emoji:'🧠', ph:'sk-proj-…',
+    url:'<a href="https://platform.openai.com/api-keys" target="_blank" style="color:var(--green2)">platform.openai.com/api-keys</a>',
+    istr:'1. Apri il link qui sotto<br>2. Create new secret key<br>3. Copia e incolla la chiave' }
 };
 
-function aiGetEngine() {
-  return localStorage.getItem('bioserra_ai_attiva') || 'gemini';
-}
+let aiHistory = [];
+let aiDailyCache = { date: '', text: '' };
 
-function aiGetKey() {
-  const eng = aiGetEngine();
-  return (localStorage.getItem('bioserra_ai_key_' + eng) || '').trim();
-}
+function aiGetEngine() { return localStorage.getItem('bioserra_ai_attiva') || 'gemini'; }
+function aiGetKey(eng) { return (localStorage.getItem('bioserra_ai_key_' + (eng||aiGetEngine())) || '').trim(); }
 
 function buildSystem() {
-  return 'Sei BioSerra AI, assistente esperto di coltivazione Living Soil biologica. Oggi: ' +
-    new Date().toLocaleDateString('it-IT') +
-    '. Piante: ' + PIANTE_CTX +
-    '. Manuale: ' + MANUALE_CTX +
-    '. Rispondi SEMPRE in italiano, in modo conciso e pratico.';
+  const oggi = new Date().toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  return 'Sei BioSerra AI, assistente esperto di coltivazione Living Soil biologica.' +
+    ' Oggi: ' + oggi + '.' +
+    ' Piante: ' + PIANTE_CTX +
+    ' Manuale: ' + MANUALE_CTX +
+    ' Rispondi SEMPRE in italiano, in modo conciso e pratico.';
 }
 
+/* ─── Render selettore motori ─── */
+function aiRenderEngineRow() {
+  const row = document.getElementById('ai-engine-row');
+  if (!row) return;
+  const cur = aiGetEngine();
+  row.innerHTML = Object.entries(AI_ENGINES).map(([id,cfg]) => {
+    const hasKey = !!aiGetKey(id);
+    const active = id === cur ? 'style="background:var(--green2);color:#fff;border-color:var(--green2);"' : '';
+    const dot = hasKey ? '<span style="color:#4CAF50;font-size:9px;"> ●</span>' : '';
+    return '<button onclick="aiSelectEngine(\'' + id + '\')" ' +
+      'style="flex:1;min-width:60px;padding:8px 4px;border-radius:10px;border:1px solid var(--border);' +
+      'background:var(--card2);color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;' +
+      'text-align:center;line-height:1.3;transition:all 0.2s;"' + (active ? ' data-active="1"' : '') + '>' +
+      cfg.emoji + '<br>' + cfg.nome + dot + '</button>';
+  }).join('');
+  // Applica stile active
+  row.querySelectorAll('button').forEach((b,i) => {
+    const id = Object.keys(AI_ENGINES)[i];
+    if (id === cur) {
+      b.style.background = 'var(--green2)';
+      b.style.color = '#fff';
+      b.style.borderColor = 'var(--green2)';
+    }
+  });
+}
+
+function aiSelectEngine(id) {
+  localStorage.setItem('bioserra_ai_attiva', id);
+  aiHistory = [];
+  const chat = document.getElementById('ai-chat');
+  if (chat) chat.innerHTML = '';
+  aiRenderEngineRow();
+  aiInitUI();
+}
+
+/* ─── Init UI principale ─── */
 function aiInitUI() {
   const eng = aiGetEngine();
   const cfg = AI_ENGINES[eng] || AI_ENGINES.gemini;
@@ -2892,10 +2911,11 @@ function aiInitUI() {
   const badge    = document.getElementById('ai-model-badge');
   const quick    = document.getElementById('ai-quick-btns');
   const inputRow = document.getElementById('ai-input-row');
+  const daily    = document.getElementById('ai-daily-box');
   const chat     = document.getElementById('ai-chat');
+  const sub      = document.getElementById('ai-subtitle');
 
-  // Aggiorna titoli sezione
-  const sub = document.getElementById('ai-subtitle');
+  aiRenderEngineRow();
   if (sub) sub.textContent = 'Assistente Serra · ' + cfg.nome;
 
   if (!key) {
@@ -2903,26 +2923,33 @@ function aiInitUI() {
     badge.style.display = 'none';
     quick.style.display = 'none';
     inputRow.style.display = 'none';
+    daily.style.display = 'none';
     chat.innerHTML = '';
-
-    // Aggiorna istruzioni setup
     const sn = document.getElementById('ai-setup-name');
     if (sn) sn.textContent = cfg.nome;
     const si = document.getElementById('ai-setup-instructions');
-    if (si) si.innerHTML = cfg.istruzioni;
+    if (si) si.innerHTML = cfg.istr + '<br><br>🔗 Ottieni la chiave su: ' + cfg.url;
     const inp = document.getElementById('ai-key-setup-input');
-    if (inp) inp.placeholder = 'Incolla qui ' + cfg.placeholder;
-
-    appendMsg('🌿 Inserisci la chiave ' + cfg.nome + ' per iniziare!', 'bot');
+    if (inp) inp.placeholder = 'Incolla qui la chiave (' + cfg.ph + ')';
+    appendMsg('🔑 Configura ' + cfg.emoji + ' ' + cfg.nome + ' per iniziare. Segui le istruzioni qui sopra!', 'bot');
   } else {
     setup.style.display = 'none';
     badge.style.display = 'block';
     quick.style.display = 'flex';
     inputRow.style.display = 'flex';
+    daily.style.display = 'block';
     const badgeLabel = document.getElementById('ai-badge-label');
-    if (badgeLabel) badgeLabel.textContent = cfg.emoji + ' ' + cfg.nome + ' · ' + key.substring(0,10) + '…';
+    if (badgeLabel) badgeLabel.textContent = cfg.emoji + ' ' + cfg.nome + ' · ' + key.substring(0,12) + '…';
     if (chat.children.length === 0) {
-      appendMsg('🌿 Ciao! Sono BioSerra AI (' + cfg.nome + '). Chiedimi qualsiasi cosa sulle tue piante!', 'bot');
+      appendMsg('🌿 Ciao! Sono BioSerra AI con ' + cfg.nome + '.\nChiedimi qualsiasi cosa, oppure premi "Cosa fare oggi" per un piano di lavoro!', 'bot');
+    }
+    // Genera consigli del giorno se non già generati oggi
+    const today = new Date().toISOString().slice(0,10);
+    if (aiDailyCache.date !== today) {
+      aiGenerateDaily();
+    } else {
+      const dc = document.getElementById('ai-daily-content');
+      if (dc && aiDailyCache.text) dc.textContent = aiDailyCache.text;
     }
   }
 }
@@ -2933,7 +2960,7 @@ function aiSaveKeyInline() {
   const val = (input.value || '').trim();
   if (!val || val.length < 10) {
     input.style.borderColor = '#ef5350';
-    input.placeholder = '⚠️ Chiave troppo corta o non valida';
+    input.placeholder = '⚠️ Chiave troppo corta — riprova';
     return;
   }
   localStorage.setItem('bioserra_ai_key_' + eng, val);
@@ -2947,20 +2974,50 @@ function aiChangeKey() {
   const eng = aiGetEngine();
   localStorage.removeItem('bioserra_ai_key_' + eng);
   aiHistory = [];
+  document.getElementById('ai-chat').innerHTML = '';
   aiInitUI();
 }
 
-/* ── Chiamate API per motore ── */
-async function callAI(userMsg) {
+/* ─── Consigli giornalieri generati dall'AI ─── */
+async function aiGenerateDaily() {
+  const dc = document.getElementById('ai-daily-content');
+  const dm = document.getElementById('ai-daily-meta');
+  const btn = document.getElementById('ai-daily-refresh');
+  if (!dc) return;
+  if (btn) btn.textContent = '⏳';
+  dc.textContent = 'Generazione in corso…';
+
+  const oggi = new Date().toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  const prompt = 'Analizza la mia serra oggi (' + oggi + ') e dimmi:\n' +
+    '1) Le 2-3 azioni più urgenti da fare OGGI\n' +
+    '2) Cosa controllare questa settimana\n' +
+    '3) Una pianta a cui prestare attenzione speciale\n' +
+    'Sii breve e diretto. Usa emoji. Max 150 parole.';
+
+  try {
+    const reply = await callAI(prompt, true);
+    dc.textContent = reply;
+    const today = new Date().toISOString().slice(0,10);
+    aiDailyCache = { date: today, text: reply };
+    if (dm) dm.textContent = 'Generato alle ' + new Date().toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+    if (btn) btn.textContent = '🔄 Aggiorna';
+  } catch(e) {
+    dc.textContent = '⚠️ ' + (e.message || 'Errore generazione');
+    if (btn) btn.textContent = '🔄 Riprova';
+  }
+}
+
+/* ─── Chiamata AI unificata ─── */
+async function callAI(userMsg, noHistory) {
   const eng = aiGetEngine();
   const key = aiGetKey();
+  const sys = buildSystem();
+  const hist = noHistory ? [] : aiHistory.slice(0,-1);
 
   if (eng === 'gemini') {
-    const history = aiHistory.slice(0,-1).map(m=>({
-      role: m.role==='assistant'?'model':'user', parts:[{text:m.content}]
-    }));
+    const history = hist.map(m=>({role:m.role==='assistant'?'model':'user',parts:[{text:m.content}]}));
     const body = {
-      system_instruction:{parts:[{text:buildSystem()}]},
+      system_instruction:{parts:[{text:sys}]},
       contents:[...history,{role:'user',parts:[{text:userMsg}]}],
       generationConfig:{maxOutputTokens:800,temperature:0.7}
     };
@@ -2970,33 +3027,20 @@ async function callAI(userMsg) {
     );
     const data = await res.json();
     if (data.error) {
-      if ((data.error.message||'').includes('API_KEY_INVALID')||
-          (data.error.message||'').includes('API key not valid')) {
+      const msg = data.error.message || '';
+      if (msg.includes('API_KEY_INVALID') || msg.includes('API key not valid')) {
         localStorage.removeItem('bioserra_ai_key_gemini');
         aiInitUI();
-        throw new Error('Chiave Gemini non valida. Inseriscine una nuova.');
+        throw new Error('Chiave Gemini non valida — inseriscine una nuova.');
       }
-      throw new Error(data.error.message || 'Errore Gemini');
+      throw new Error(msg || 'Errore Gemini');
     }
     return data.candidates?.[0]?.content?.parts?.[0]?.text || 'Nessuna risposta.';
   }
 
-  if (eng === 'claude') {
-    const msgs = aiHistory.slice(0,-1).map(m=>({role:m.role==='assistant'?'assistant':'user',content:m.content}));
-    msgs.push({role:'user',content:userMsg});
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
-      method:'POST',
-      headers:{'Content-Type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01'},
-      body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:800,system:buildSystem(),messages:msgs})
-    });
-    const data = await res.json();
-    if (data.error) throw new Error(data.error.message || 'Errore Claude');
-    return data.content?.[0]?.text || 'Nessuna risposta.';
-  }
-
   if (eng === 'grok') {
-    const msgs = [{role:'system',content:buildSystem()},...aiHistory.slice(0,-1).map(m=>({role:m.role==='assistant'?'assistant':'user',content:m.content})),{role:'user',content:userMsg}];
-    const res = await fetch('https://api.x.ai/v1/chat/completions', {
+    const msgs = [{role:'system',content:sys},...hist.map(m=>({role:m.role==='assistant'?'assistant':'user',content:m.content})),{role:'user',content:userMsg}];
+    const res = await fetch('https://api.x.ai/v1/chat/completions',{
       method:'POST',
       headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},
       body:JSON.stringify({model:'grok-3-mini',max_tokens:800,messages:msgs})
@@ -3006,9 +3050,21 @@ async function callAI(userMsg) {
     return data.choices?.[0]?.message?.content || 'Nessuna risposta.';
   }
 
+  if (eng === 'claude') {
+    const msgs = [...hist.map(m=>({role:m.role==='assistant'?'assistant':'user',content:m.content})),{role:'user',content:userMsg}];
+    const res = await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:800,system:sys,messages:msgs})
+    });
+    const data = await res.json();
+    if (data.error) throw new Error(data.error.message || 'Errore Claude');
+    return data.content?.[0]?.text || 'Nessuna risposta.';
+  }
+
   if (eng === 'chatgpt') {
-    const msgs = [{role:'system',content:buildSystem()},...aiHistory.slice(0,-1).map(m=>({role:m.role==='assistant'?'assistant':'user',content:m.content})),{role:'user',content:userMsg}];
-    const res = await fetch('https://api.openai.com/v1/chat/completions', {
+    const msgs = [{role:'system',content:sys},...hist.map(m=>({role:m.role==='assistant'?'assistant':'user',content:m.content})),{role:'user',content:userMsg}];
+    const res = await fetch('https://api.openai.com/v1/chat/completions',{
       method:'POST',
       headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},
       body:JSON.stringify({model:'gpt-4o-mini',max_tokens:800,messages:msgs})
@@ -3018,35 +3074,35 @@ async function callAI(userMsg) {
     return data.choices?.[0]?.message?.content || 'Nessuna risposta.';
   }
 
-  throw new Error('Motore AI non supportato: ' + eng);
+  throw new Error('Motore non supportato: ' + eng);
 }
 
 async function aiSend() {
   if (!aiGetKey()) { aiInitUI(); return; }
   const input = document.getElementById('ai-input');
-  const msg = (input.value||'').trim();
+  const msg = (input.value || '').trim();
   if (!msg) return;
   input.value = '';
-  appendMsg(msg,'user');
-  aiHistory.push({role:'user',content:msg});
-  const eng = aiGetEngine();
-  const cfg = AI_ENGINES[eng]||AI_ENGINES.gemini;
-  const loading = appendMsg('⏳ ' + cfg.nome + ' elabora…','bot loading');
+  appendMsg(msg, 'user');
+  aiHistory.push({ role: 'user', content: msg });
+  const cfg = AI_ENGINES[aiGetEngine()] || AI_ENGINES.gemini;
+  const loading = appendMsg('⏳ ' + cfg.emoji + ' ' + cfg.nome + ' elabora…', 'bot loading');
   try {
     const reply = await callAI(msg);
     loading.className = 'ai-msg bot';
     loading.textContent = reply;
-    aiHistory.push({role:'assistant',content:reply});
+    aiHistory.push({ role: 'assistant', content: reply });
   } catch(e) {
     loading.className = 'ai-msg bot';
-    loading.textContent = '⚠️ ' + (e.message||'Errore di connessione. Riprova.');
+    loading.textContent = '⚠️ ' + (e.message || 'Errore. Riprova.');
   }
   document.getElementById('ai-chat').scrollTop = 99999;
 }
 
 function aiQuick(msg) {
   if (!aiGetKey()) { aiInitUI(); return; }
-  document.getElementById('ai-input').value = msg;
+  const input = document.getElementById('ai-input');
+  input.value = msg;
   aiSend();
 }
 
