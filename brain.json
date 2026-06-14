@@ -1,0 +1,101 @@
+{
+  "lastUpdate": "2026-06-14T23:44:39.842Z",
+  "versione": "1.0",
+  "cervello": {
+    "data_analisi": "2026-06-15T01:42:57.342+02:00",
+    "consigli_giorno": [
+      "consiglio1",
+      "consiglio2",
+      "consiglio3"
+    ],
+    "tecniche_nuove": [
+      {
+        "nome": "nome",
+        "descrizione": "desc",
+        "materiali": [
+          "mat1"
+        ],
+        "difficolta": "facile",
+        "fonte": "fonte",
+        "priorita": "alta"
+      }
+    ],
+    "scoperte": [
+      "scoperta1"
+    ],
+    "avvisi": [
+      "avviso1"
+    ],
+    "esperimenti_suggeriti": [
+      {
+        "nome": "nome",
+        "descrizione": "desc",
+        "durata_giorni": 7
+      }
+    ]
+  },
+  "agenti": {
+    "piante": {
+      "stato_generale": "buono - autos in late/mid fioritura (Epsilon molto vicino al raccolto), femminizzate in vegetativa",
+      "azioni_oggi": [
+        "Controllo tricomi su Epsilon F1 con lente 30-60x: valutare percentuale ambra per decidere raccolta entro pochi giorni.",
+        "Misurare pH e EC del terreno e del drenaggio su tutte le piante; correggere se fuori range.",
+        "Ridurre leggermente volumi d'irrigazione per le auto in late-flower e iniziare a diminuire nutrienti per Epsilon se tricomi maturi.",
+        "Controllo visivo per muffa/bud-rot (specialmente su cime dense) e ispezione parassiti sotto le foglie.",
+        "Mettere supporti/tiranti sui rami con infiorescenze pesanti; rimuovere foglie morte o molto ingiallite vicino ai boccioli."
+      ],
+      "irrigazione": "Irrigare quando il primo cm-2 di substrato è asciutto e il vaso risulta più leggero al sollevamento. Frequenza indicativa: 2-4 giorni (dipende da temperatura e substrato). Per autos in late-flower ridurre il volume di acqua del 10-20% e lasciare asciugare più a fondo tra le irrigazioni per favorire maturazione. Evitare irrigazioni superficiali frequenti. pH soluzione 6.0-6.5 (su suolo); verificare sempre pH drenaggio.",
+      "nutrizione": "Autos (fioritura): ridurre N, aumentare P/K moderatamente. Target EC indicativi: Epsilon (ultimi giorni) 1.2-1.6 mS/cm; Milky/Titan/Medusa 1.6-2.0 mS/cm; Gaia 1.5-1.8 mS/cm. Dosaggi indicativi se usi fertilizzanti liquidi concentrati comuni: concime bloom 1.5-2.0 ml/L + PK booster 0.5-1.0 ml/L 2-3 volte/settimana; microelementi 0.2-0.5 ml/L. Iniziare flush per Epsilon negli ultimi 7-14 giorni con sola acqua a EC molto bassa. Femminizzate (vegetativa): mantenere N più alto, EC 0.8-1.2 mS/cm; concime vegetativo 1.0-1.5 ml/L 2-3 volte/settimana + micro 0.2-0.5 ml/L. Adeguare dosi al tipo di substrato e ai valori di EC/drenaggio rilevati.",
+      "attenzione": "Verificare quotidianamente: 1) stato tricomi su Epsilon per decidere raccolta; 2) sintomi di sovraccarico nutritivo (bruciature punte) o carenze progressive; 3) umidità e ventilazione per prevenire muffe (mantenere 40-50% in late flower); 4) parassiti (ispezione foglie inferiori e internodi); 5) pH ed EC del drenaggio dopo irrigazioni con nutrienti; 6) stabilità del fotoperiodo per le femminizzate (18/6 in vegetativa) e variazioni termiche giornaliere notturne- diurne entro 4-7°C per qualità aromatica."
+    },
+    "ambiente": {},
+    "elettro": {
+      "verifica_oggi": [
+        "controllo connessioni e polarità di pila galvanica, antenna terrestre e spirale cosmica per tutte le 10 piante",
+        "ispezione integrità elettrodi rame (pantacle) e controllo stato acqua magnetizzata (pH, temperatura, odore)"
+      ],
+      "ottimizzazione": "Ottimizza in base alla luna: aumentare leggermente l'intensità degli stimoli (≈+10%) e attivare Lakhovsky e pila galvanica nelle prime 48 ore della luna crescente per favorire dinamiche di crescita; calibrare riduzione dell'attività nella luna piena e intensità minima in luna calante per favorire riposo/accumulo. Rivedere parametri ogni fase lunare (crescente, piena, calante, nuova).",
+      "manutenzione": "Manutenzione necessaria: pulizia elettrodi rame ogni 7 giorni, controllo e sostituzione anodi corrotti della pila galvanica, verifica isolamento e serraggio connessioni, rigenerazione/ricambio acqua magnetizzata ogni 48–72 ore, controllare posizionamento antenna terrestre e riallineamento spirale cosmica se spostata.",
+      "nuovo_esperimento": {
+        "proposta": true,
+        "nome": "Sinergia Lakhovsky–PilaGalvanica (7 giorni)",
+        "descrizione": "Obiettivo: valutare sinergia tra Lakhovsky, pila galvanica e acqua magnetizzata su tutte le 10 piante. Protocollo sintetico: giorno 0 installazione Lakhovsky centrale e antenne secondarie; applicare pila galvanica a bassa corrente per ogni pianta (0.1–0.5 mA) con pantacle rame come elettrodo di riferimento; somministrare acqua magnetizzata due volte nei primi 3 giorni; mantenere spirale cosmica e antenna terrestre attive per tutta la durata. Registrare parametri giornalieri: crescita fogliare, turgore, EC e pH substrato, tensione/corrente pilas, condizione elettrodi. Interrompere immediatamente se compaiono segni di stress marcato (necrosi, avvizzimento rapido).",
+        "durata": "7 giorni"
+      },
+      "osservazioni": [
+        "incremento lunghezza foglie (mm/giorno) e numero di nuove foglie",
+        "turgore e colore fogliare (clorosi, bronzature, necrosi)",
+        "EC e pH del substrato prima e dopo trattamento",
+        "tensione e corrente registrate dalla pila galvanica (V, mA) quotidiane",
+        "stato fisico degli elettrodi (ossidazione, incrostazioni) e funzionalità antenne",
+        "presenza di patogeni o insetti e reazioni locali",
+        "risposte differenziali tra piante (variabilità individuale) e segnalare eventuali outlier"
+      ]
+    }
+  },
+  "tecniche_nuove": [
+    {
+      "nome": "nome",
+      "descrizione": "desc",
+      "materiali": [
+        "mat1"
+      ],
+      "difficolta": "facile",
+      "fonte": "fonte",
+      "priorita": "alta"
+    }
+  ],
+  "esperimenti_suggeriti": [
+    {
+      "nome": "nome",
+      "descrizione": "desc",
+      "durata_giorni": 7
+    }
+  ],
+  "scoperte": [
+    "scoperta1"
+  ],
+  "avvisi": [
+    "avviso1"
+  ]
+}
