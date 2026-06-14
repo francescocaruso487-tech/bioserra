@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-06-14T23:47:53.875Z",
+  "lastUpdate": "2026-06-14T23:53:45.326Z",
   "versione": "1.0",
   "cervello": {
-    "data_analisi": "2026-06-15T01:46:14.474+02:00",
+    "data_analisi": "2026-06-15T01:52:05.770+02:00",
     "consigli_giorno": [
       "consiglio1",
       "consiglio2",
@@ -36,39 +36,64 @@
   },
   "agenti": {
     "piante": {
-      "stato_generale": "buono — 5 autofiorenti in fioritura (Epsilon prossima al raccolto), 5 femminizzate in vegetativa con crescita regolare.",
+      "stato_generale": "buono, piante in buona salute generale; alcune autofiorenti (Epsilon F1) prossime al termine ciclo, altre a metà/fine fioritura; le femminizzate sono ancora in vegetativa (fioritura programmata per ottobre).",
       "azioni_oggi": [
-        "Ispezione trichomi Epsilon F1 (lente 30–60×) e pianificazione raccolto: rimangono ~6 giorni teorici",
-        "Continuare regime fioritura per Milky Way/Titan/Medusa (rimangono ~18 giorni) e Gaia (rimangono ~13 giorni); aumentare PK gradualmente nelle prossime 1–2 settimane",
-        "Supportare rami con tutori per piante con gemme pesanti; rimuovere foglie morte o molto ingiallite",
-        "Per femminizzate (fotoperiodiche): formazione e training (LST/SCROG), rinvaso se vaso troppo piccolo, mantenere ciclo luce vegetativo fino a ottobre",
-        "Controllo generale per parassiti e muffe (ispezione foglie e interna chiome), verificare pH/EC prima dell’irrigazione"
+        "Controllare umidità substrato e peso dei vasi; irrigare solo se i primi 2–3 cm sono asciutti.",
+        "Ispezionare foglie e cime per parassiti, muffe e segni di carenza o eccesso (puntinature, ingiallimenti, punte bruciate).",
+        "Verificare pH del deflusso (6.0–6.8) ed EC; correggere se fuori range.",
+        "Valutare Epsilon F1 per inizio riduzione concimi/controllo tricomi (se segni di maturazione).",
+        "Per le femminizzate: mantenere fotoperiodo vegetativo (es. 18/6) e applicare training leggero solo se non stressa le piante."
       ],
-      "irrigazione": "Irrigare quando il substrato è asciutto nei primi 2–3 cm o quando il peso del vaso è sensibilmente diminuito. Indicazioni generali: autofiorenti in fioritura: mediamente ogni 2–3 giorni (piccoli vasi 200–500 ml, medi 500–1000 ml, grandi 1–2 L per annaffiatura); femminizzate in vegetativa: ogni 3–5 giorni. pH soluzione: 6.0–6.5 (su terra). EC target: vegetativa 0.8–1.2 mS/cm; fioritura 1.4–1.8 mS/cm (autos evitare picchi >2.0). Controllare drenaggio e non lasciare ristagni.",
-      "nutrizione": "Autofiorenti (fase fioritura avanzata): usare fertilizzante bloom bilanciato e basso N, dosaggi progressivi per raggiungere EC indicata: Base bloom (soluzione concentrata) portare a EC 1.2→1.6 mS/cm nelle prossime 1–2 settimane; PK booster moderato 0.5–1 ml/L nelle 2 settimane centrali/alte di fioritura; CalMag 1–3 ml/L se necessario; silica 0.5–1 ml/L per solidità fusto; enzimi 1 ml/L settimanale. Epsilon (ultimi 6 giorni): ridurre gradualmente concime e iniziare flush leggero 3–5 giorni prima del raccolto se obiettivo clean taste. Milky Way/Titan/Medusa/Gaia: aumentare PK verso metà/fine fioritura come sopra. Femminizzate (vegetativa): fertilizzante vegetativo N-dominante EC 0.8–1.2 mS/cm; CalMag 1–3 ml/L; microbi/ micorrize al rinvaso e ogni 2–4 settimane. Usare dosi conservatrici rispetto alle tabelle del produttore: iniziare al 50–75% e aumentare se piante rispondono bene.",
-      "attenzione": "Controllare trichomi per il timing del raccolto (Epsilon), presenza di muffa/bud-rot nelle gemme dense (ispezione interna chioma), ingiallimenti e punte bruciate (sovradosaggio nutrienti o pH fuori range), umidità relativa in fioritura 40–50% per ridurre rischio muffe, temperatura ideale 20–26°C giorno / >18°C notte, tensione meccanica dei rami (tutori), segnali di stress idrico (appassimento rapido) e stato dei vasi per evitare rootbound sulle femminizzate."
+      "irrigazione": "Irrigare quando i primi 2–3 cm di substrato sono asciutti. Metodo consigliato: controllo a mano + peso vaso (se il vaso è significativamente più leggero, irrigare). Frequenza indicativa: vasi piccoli 2–4 giorni, vasi grandi 4–7 giorni a seconda temperatura/umidità. Dare acqua fino ad ottenere circa 10–20% di deflusso per evitare sali in eccesso. Evitare annaffiature eccessive su autofiorenti vicine a raccolto.",
+      "nutrizione": "Stadio vegetativo (femminizzate): fertilizzante bilanciato con N più alto; EC 0.8–1.2 mS/cm (o 600–800 ppm), dosi indicativa 1.0–1.5 mL/L del fertilizzante commerciale base. Stadio fioritura (autofiorenti in piena fioritura): aumentare P/K; EC 1.2–1.8 mS/cm (800–1200 ppm), dosi 1.5–2.5 mL/L per booster fiore; aggiungere PK bloom booster nelle settimane centrali della fioritura secondo istruzioni produttore (es. 1–2 mL/L). Cal‑Mag: 0.5–1 mL/L se necessario. Microrganismi/rhizo: 0.5–1 mL/L settimanale. Per autofiorenti vicine al raccolto (Epsilon F1): iniziare riduzione concimi 7–14 giorni prima del raccolto e flush con sola acqua pH corretta. Regolare dosi in base ad EC/risposta piante e seguire sempre le istruzioni del produttore dei prodotti usati.",
+      "attenzione": "Controllare tricomi su autofiorenti prossime alla raccolta (milky/amber per decidere timing). Sorvegliare umidità e ventilazione per prevenire botrite nelle infiorescenze dense. Verificare pH e EC nel deflusso ogni 7–10 giorni. Monitorare segni di carenza o accumulo di sali (punte bruciate, ingiallimento). Evitare training aggressivo su autofiorenti maturazione avanzata. Per le femminizzate, controllare fotoperiodo e pianificare potature/training in vegetativa per non compromettere crescita futura."
     },
-    "ambiente": {},
-    "elettro": {
-      "verifica_oggi": [
-        "controllo continuità e messa a terra di antenna terrestre e spirale cosmica",
-        "controllo integrità e corrosione elettrodi pila galvanica e pantacle rame; verifica pH e conducibilità post irrigazione con acqua magnetizzata"
-      ],
-      "ottimizzazione": "ottimizza in base alla luna",
-      "manutenzione": "manutenzione necessaria",
-      "nuovo_esperimento": {
-        "proposta": true,
-        "nome": "Sincronia Lunare Elettroculturale",
-        "descrizione": "Protocollo 7 giorni: sincronizzare esposizione Lakhovsky + spirale cosmica e antenna terrestre con fase lunare favorevole; irrigazioni con acqua magnetizzata ogni 48 h; applicare pila galvanica a bassa intensità e pantacle rame a rotazione sulle 10 piante per stimolare differenziazione radicolare; monitoraggio giornaliero parametri elettrici e fisiologici.",
-        "durata": "7 giorni"
+    "ambiente": {
+      "luna": {
+        "fase": "Piena",
+        "emoji": "🌕",
+        "illuminazione_pct": 100,
+        "consiglio": "Evita trapianti e lavorazioni profonde; favorevole alla raccolta di fiori e frutti e all’applicazione di trattamenti fogliari leggeri. Monitorare umidità del suolo per Living Soil."
       },
-      "osservazioni": [
-        "vigor fogliare e crescita nuova vegetazione",
-        "variazione traspirazione e turgore fogliare",
-        "conduttività elettrica e pH del substrato",
-        "eventuali segni di corrosione su contatti in rame",
-        "variazione potenziale elettrico di superficie e risposta al Lakhovsky"
-      ]
+      "biodinamica": {
+        "tipo_giorno": "Fiore",
+        "qualita": "Ottimo",
+        "consiglio": "Giornata favorevole per raccolta e trattamenti fogliari, applicazione di inoculi e biostimolanti in copertura; evitare interventi radicali e trapianti profondi."
+      },
+      "correlazione": "La Luna piena (🌕, 100%) cade mentre la Luna è in segno opposto al Sole: condizione che valorizza attività epigee. Il giorno biodinamico 'Fiore' conferma favore per lavori sulle parti aeree (raccolta, trattamenti fogliari, semina di fiori/semi), sconsiglia lavori radicali in serra Living Soil.",
+      "momento_migliore": "06:00-10:00 CEST — raccogliere fiori e frutti, applicare trattamenti fogliari e biostimolanti leggeri; evitare lavorazioni radice-intensive nelle ore centrali della giornata."
+    },
+    "elettro": {
+      "tecniche_note_verifica": [
+        "Lakhovsky: verificare integrità meccanica delle bobine/cerchi, continuità elettrica e isolamento, misurare tensione a vuoto e in esercizio, controllare connessioni a terra e distanza dalle piante; osservare risposta fogliare e nuova emissione dopo accensione (24-72 h).",
+        "Pantacle di Rame: controllare ossidazione e corrosione delle superfici in rame, continuità tra i vari elementi, ancoraggio e distanze rispetto al fogliame, eventuale contatto con terreno umido; verificare assenza di sintomi di fitotossicità dovuti a sali di rame.",
+        "Acqua Magnetizzata: verificare procedura di magnetizzazione (forza magneti, tempo di esposizione, volume trattato), pH e conducibilità dell'acqua prima e dopo trattamento, conservazione in contenitori non ferrosi e registrare data/ora preparazione."
+      ],
+      "tecniche_nuove_trovate": [],
+      "ottimizzazione_luna": {
+        "nota_preliminare": "Non potendo accedere automaticamente alle guide indicate, fornisco qui regole pratiche per adattare le tecniche elettroculturali alla fase lunare. Applica sempre tutte le tecniche simultaneamente alle 10 piante, come richiesto.",
+        "Luna_nuova": "Periodo di rinnovamento energetico: favorire trattamenti di stimolazione leggera e pulizia/sanificazione dei dispositivi; evitare interventi drastici sulle piante. Eseguire verifiche elettriche e tarature.",
+        "Luna_crescente (primo quarto -> fino a piena)": "Favorire stimoli elettrici e magnetici che promuovono crescita vegetativa (aumenti di potenza/modulazione graduale). Programmare sessioni di stimolazione più frequenti e monitorare turgore e emissione di foglie nuove.",
+        "Luna_piena": "Forza massima ambientale: ridurre picchi e shock elettrici intensi; privilegiare sessioni di mantenimento a bassa intensità e osservazione; evitare cambiamenti radicali di configurazione durante la notte di piena per limitare stress.",
+        "Luna_calante (dall'ultimo quarto -> verso nuova)": "Fase favorevole a interventi di radicazione e consolidamento: abbassare frequenze e intensità, favorire stimoli mirati al suolo/allo sviluppo radicale (es. applicazioni al terreno), potare o rimuovere vegetazione in eccesso se necessario."
+      },
+      "osservazioni_richieste": [
+        "Per tutte le piante, osservare e registrare oggi: turgore fogliare, colore foglie (clorosi/necrosi), emissione di nuove gemme/rami, crescita visibile (cm/giorno), eventuali sintomi di stress o fitotossicità.",
+        "Misurazioni tecniche da eseguire su tutti i dispositivi attivi: tensione e corrente ai terminali, resistenza di messa a terra, temperatura delle bobine/elementi metallici, presenza di scintille o surriscaldamento.",
+        "Controllare terreno: umidità (%) o sensazione al tatto, pH e conducibilità elettrica (EC), presenza di accumuli di sali intorno a elementi metallici.",
+        "Ispezionare elementi metallici per corrosione/ossidazione, contatti allentati, isolamento degradato e contatti involontari che possano creare celle galvaniche non previste.",
+        "Annotare condizioni ambientali: temperatura, umidità relativa, vento, precipitazioni recenti, e qualsiasi attività elettrica esterna (lavori, fulmini recenti) che possa influenzare i risultati."
+      ],
+      "manutenzione_settimanale": [
+        "Pulizia e controllo serraggio di tutti i contatti elettrici e giunzioni; rimuovere ossidazioni superficiali con metodo meccanico delicato e proteggere con vernice isolante dove opportuno.",
+        "Misura settimanale di tensione/corrente alle apparecchiature attive; verificare che i valori siano nei range di progetto e registrare trend.",
+        "Controllo della messa a terra: misurare resistenza di terra e assicurarsi che non aumenti per corrosione o essiccazione del terreno; irrigare localmente se necessario per mantenere bassa resistenza.",
+        "Ispezione magneti e sorgenti: verifica integrità magneti, posizionamento e fissaggi; per elementi galvanici controllare usura/anodi e sostituire se necessario.",
+        "Verifica qualità dell'acqua usata nelle applicazioni (pH, EC) e preparare nuova acqua trattata secondo protocollo; etichettare data/ora di preparazione.",
+        "Verifica dispositivi di sicurezza: interruttori, protezioni contro sovraccarichi, isolamento e segnali visivi; testare dispositivi di spegnimento rapido almeno una volta a settimana.",
+        "Registro operazioni: aggiornare il registro settimanale con tutte le misure, interventi e osservazioni fenologiche per le 10 piante."
+      ],
+      "note": "Non ho potuto accedere direttamente ai contenuti di Royal Queen Seeds, Zamnesia o ai PDF presenti sul tuo Google Drive. Per identificare TUTTE le tecniche menzionate nei testi e compilare 'tecniche_nuove_trovate' occorre che tu carichi i PDF qui o incolli i testi/URL accessibili. Una volta forniti i materiali, eseguo l'analisi completa e ritorno un array dettagliato con ogni tecnica trovata (nome, descrizione pratica, materiali, applicazione collettiva alle 10 piante, fonte, difficoltà e priorità)."
     }
   },
   "tecniche_nuove": [
