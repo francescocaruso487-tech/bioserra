@@ -1124,62 +1124,86 @@
 <!-- ELETTROCULTURA -->
 <section id="sec-elettro" class="section">
   <div class="section-title">Elettrocultura ⚡</div>
-  <div class="section-sub">Esperimenti in corso · Living Soil</div>
+  <div class="section-sub">Esperimenti attivi · Living Soil</div>
+
+  <!-- STATS DINAMICHE -->
   <div class="stat-trio">
-    <div class="stat-box"><div class="stat-num" style="font-size:22px;color:var(--green3)">3</div><div class="stat-label">Attivi</div></div>
-    <div class="stat-box"><div class="stat-num" style="font-size:22px;color:var(--blue)">0</div><div class="stat-label">Dati</div></div>
-    <div class="stat-box"><div class="stat-num" style="font-size:22px;color:var(--orange)">!</div><div class="stat-label">Verifica</div></div>
+    <div class="stat-box"><div class="stat-num" style="font-size:22px;color:var(--green3)" id="el-stat-attive">0</div><div class="stat-label">Tecniche attive</div></div>
+    <div class="stat-box"><div class="stat-num" style="font-size:22px;color:var(--blue)" id="el-stat-log">0</div><div class="stat-label">Osservazioni</div></div>
+    <div class="stat-box"><div class="stat-num" style="font-size:22px;color:var(--orange)" id="el-stat-piante">0</div><div class="stat-label">Piante tracciate</div></div>
   </div>
-  <div class="exp-card">
-    <div class="exp-title">🔁 Circuito di Lakhovsky <span class="exp-badge">SPERIMENTALE</span></div>
-    <div class="exp-desc">Anello di rame aperto alla base di ogni pianta. Funziona come antenna di risonanza. Le estremità si sovrappongono per 2-3 cm con 1 cm di spazio.</div>
-    <div class="exp-counter">
-      <button class="exp-btn" onclick="adjustCount('lakhovsky',-1)">−</button>
-      <div class="exp-count-num" id="lakhovsky-count">0</div>
-      <button class="exp-btn" onclick="adjustCount('lakhovsky',1)">+</button>
-      <span>/ 10 piante con cerchio</span>
-    </div>
+
+  <!-- TAB BAR -->
+  <div class="piante-tab-bar" style="margin-bottom:14px">
+    <button class="piante-tab active" id="etab-tecniche" onclick="switchElettroTab('tecniche')">⚡ Tecniche</button>
+    <button class="piante-tab" id="etab-tracker" onclick="switchElettroTab('tracker')">🌱 Tracker</button>
+    <button class="piante-tab" id="etab-log" onclick="switchElettroTab('log')">📝 Log</button>
+    <button class="piante-tab" id="etab-stats" onclick="switchElettroTab('stats')">📊 Statistiche</button>
   </div>
-  <div class="exp-card">
-    <div class="exp-title">⚗️ Pila Galvanica Ferro-Rame <span class="exp-badge">SPERIMENTALE</span></div>
-    <div class="exp-desc">Micro-corrente ~0.5-0.7V generata da chiodo di ferro + filo di rame in terreno umido. Ionizza i nutrienti per miglior assorbimento radicale.</div>
-    <div class="exp-counter">
-      <button class="exp-btn" onclick="adjustCount('galvanica',-1)">−</button>
-      <div class="exp-count-num" id="galvanica-count">0</div>
-      <button class="exp-btn" onclick="adjustCount('galvanica',1)">+</button>
-      <span>/ 10 pile attive</span>
+
+  <!-- PANNELLO: TECNICHE -->
+  <div id="epanel-tecniche" class="piante-panel active">
+
+    <!-- CONSIGLIO LUNARE -->
+    <div class="card" id="el-lunar-tip" style="background:linear-gradient(135deg,#1a1a2e,#16213e);border:1px solid #3a3a6e;margin-bottom:12px">
+      <div class="card-title" style="color:#a8b8ff">🌙 Consiglio Lunare</div>
+      <div id="el-lunar-text" style="font-size:13px;color:var(--text2);line-height:1.6">Calcolo in corso…</div>
     </div>
+
+    <!-- TECNICHE BASE -->
+    <div id="el-tecniche-lista"></div>
+
+    <!-- TECNICHE DA JSON (AI) -->
+    <div id="el-tecniche-json">
+      <div style="text-align:center;font-size:12px;color:var(--text3);padding:8px 0">⏳ Caricamento tecniche AI…</div>
+    </div>
+
   </div>
-  <div class="exp-card">
-    <div class="exp-title">🌐 Sistema Pantacle di Rame <span class="exp-badge">SPERIMENTALE</span></div>
-    <div class="exp-desc">Archi di rame nudo collegano il terreno di tutti i vasi in serie. Distribuzione uniforme delle cariche elettriche tra le 10 piante.</div>
-    <div class="exp-counter">
-      <button class="exp-btn" onclick="adjustCount('pantacle',-1)">−</button>
-      <div class="exp-count-num" id="pantacle-count">0</div>
-      <button class="exp-btn" onclick="adjustCount('pantacle',1)">+</button>
-      <span>archi installati</span>
+
+  <!-- PANNELLO: TRACKER PER PIANTA -->
+  <div id="epanel-tracker" class="piante-panel">
+    <div style="font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.6">
+      Attiva/disattiva le tecniche per ogni pianta. I dati vengono salvati automaticamente.
     </div>
+    <div id="el-tracker-lista"></div>
   </div>
-  <div class="card">
-    <div class="card-title">🧲 Acqua Magnetizzata</div>
-    <div class="setting-item" style="border:none;padding:6px 0;background:transparent">
-      <div class="setting-left"><div class="setting-icon">🔵</div><div><div class="setting-title">Magnete principale</div><div class="setting-value">Sul tubo principale</div></div></div>
-      <span class="badge badge-green">Installato</span>
-    </div>
-    <div class="setting-item" style="border:none;padding:6px 0;background:transparent">
-      <div class="setting-left"><div class="setting-icon">🟡</div><div><div class="setting-title">Geomag per gocciolatoio</div><div class="setting-value">1 per ogni pianta</div></div></div>
-      <div class="exp-counter" style="gap:6px">
-        <button class="exp-btn" onclick="adjustCount('geomag',-1)">−</button>
-        <div class="exp-count-num" id="geomag-count">0</div>
-        <button class="exp-btn" onclick="adjustCount('geomag',1)">+</button>
-        <span style="font-size:12px">/ 10</span>
+
+  <!-- PANNELLO: LOG OSSERVAZIONI -->
+  <div id="epanel-log" class="piante-panel">
+    <!-- Form aggiunta -->
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-title">➕ Nuova Osservazione</div>
+      <div style="display:grid;gap:8px;margin-top:10px">
+        <select id="el-log-pianta" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-size:13px;font-family:var(--font)">
+          <option value="">— Seleziona pianta —</option>
+        </select>
+        <select id="el-log-tecnica" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-size:13px;font-family:var(--font)">
+          <option value="">— Seleziona tecnica —</option>
+        </select>
+        <textarea id="el-log-nota" placeholder="Descrivi l'osservazione…" rows="3"
+          style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-size:13px;font-family:var(--font);resize:vertical;outline:none"></textarea>
+        <button onclick="elAddLog()" style="background:var(--green2);border:none;border-radius:10px;padding:12px;color:var(--text);font-size:14px;font-weight:700;cursor:pointer">
+          💾 Salva Osservazione
+        </button>
       </div>
     </div>
+    <!-- Lista log -->
+    <div id="el-log-lista"></div>
   </div>
-  <div class="card">
-    <div class="card-title">📊 Log osservazioni</div>
-    <div class="empty-state"><div class="empty-state-icon">📝</div>Nessuna osservazione registrata ancora.<br>Aggiungi note per confrontare i risultati.</div>
+
+  <!-- PANNELLO: STATISTICHE -->
+  <div id="epanel-stats" class="piante-panel">
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-title">📊 Confronto Piante</div>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:12px">Piante con vs senza tecniche attive</div>
+      <div id="el-stats-chart"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">⚡ Tecniche più usate</div>
+      <div id="el-stats-tecniche"></div>
+    </div>
   </div>
+
 </section>
 
 <!-- MANUALI -->
@@ -1363,23 +1387,400 @@ function refreshAll() { renderBioCalendar(); renderLunarSection(); loadWeather()
 function showNotifPanel() { alert('🔔 Nessuna notifica in sospeso'); }
 
 /* ══════════════════════════════════════════════════════════════
-   ESPERIMENTI COUNTER
+   ELETTROCULTURA — SISTEMA COMPLETO
 ══════════════════════════════════════════════════════════════ */
-const counts = { lakhovsky: 0, galvanica: 0, pantacle: 0, geomag: 0 };
-function adjustCount(key, delta) {
-  const maxes = { lakhovsky: 10, galvanica: 10, pantacle: 9, geomag: 10 };
-  counts[key] = Math.max(0, Math.min(maxes[key], counts[key] + delta));
-  document.getElementById(key + '-count').textContent = counts[key];
-  try { localStorage.setItem('exp_counts', JSON.stringify(counts)); } catch(e) {}
+
+/* ── Tecniche base (sempre presenti) ── */
+const EL_TECNICHE_BASE = [
+  {
+    id: 'lakhovsky',
+    nome: '🔁 Circuito di Lakhovsky',
+    badge: 'SPERIMENTALE',
+    desc: 'Anello di rame aperto alla base di ogni pianta. Le estremità si sovrappongono per 2-3 cm con 1 cm di spazio — funziona come antenna di risonanza cosmica che stimola la crescita cellulare.',
+    istruzioni: 'Piega ~50 cm di filo di rame a cerchio attorno alla base. Le 2 estremità devono sovrapporsi di 2-3 cm con 1 cm d'aria tra loro. Isola le estremità con tubicino o nastro.',
+    lunaConsigl: ['crescente','piena'],
+    max: 10,
+    unita: 'piante con cerchio'
+  },
+  {
+    id: 'galvanica',
+    nome: '⚗️ Pila Galvanica Ferro-Rame',
+    badge: 'SPERIMENTALE',
+    desc: 'Micro-corrente ~0.5-0.7V da chiodo di ferro arrugginito + filo di rame in terreno umido. Ionizza i nutrienti rendendoli immediatamente assorbibili dalle radici. Il ferro rilascia ioni lentamente.',
+    istruzioni: '1 chiodo di ferro vecchio (arrugginito) a 5-10 cm dal fusto. Collegalo con filo al rame già presente. Il terreno deve essere umido. Orientamento consigliato: ferro a Nord, rame a Sud.',
+    lunaConsigl: ['nuova','crescente'],
+    max: 10,
+    unita: 'pile attive'
+  },
+  {
+    id: 'pantacle',
+    nome: '🌐 Pantacle di Rame',
+    badge: 'SPERIMENTALE',
+    desc: 'Archi di rame nudo collegano il terreno di tutti i vasi in serie. Le cariche elettriche si distribuiscono uniformemente — i 10 vasi diventano un unico organismo collettivo.',
+    istruzioni: 'Inserisci un capo del filo rame nel terreno di un vaso e l'altro nel vaso adiacente. Forma un arco morbido tra i vasi. Collega tutti i vasi in serie.',
+    lunaConsigl: ['piena'],
+    max: 9,
+    unita: 'archi installati'
+  },
+  {
+    id: 'geomag',
+    nome: '🧲 Acqua Magnetizzata',
+    badge: 'ESPERIMENTO',
+    desc: 'Sistema a 2 componenti: (1) magnete principale avvolto attorno al tubo principale vicino all'inizio; (2) 1 Geomag (~5 cm) per ogni gocciolatoio, fissato sul gocciolatoio con nastro. L'acqua scorre attraverso il campo magnetico al polo Nord.',
+    istruzioni: 'Magnete principale: avvolgi con nastro attorno al tubo principale. Geomag: fissa 1 magnete direttamente su ogni gocciolatoio — deve stare esattamente dove esce l'acqua. Polarità: polo Nord verso l'acqua.',
+    lunaConsigl: ['piena','crescente'],
+    max: 10,
+    unita: 'gocciolatori con Geomag'
+  },
+  {
+    id: 'spirale',
+    nome: '🌀 Spirale di Rame Cosmica',
+    badge: 'SPERIMENTALE',
+    desc: 'Spirale di filo di rame avvolta in senso orario attorno al fusto della pianta. La spirale segue la geometria sacra naturale della pianta potenziando il flusso di energia elettromagnetica.',
+    istruzioni: 'Avvolgi ~40 cm di filo di rame in senso orario attorno al fusto, partendo dalla base. Lascia 2-3 cm di distanza dal fusto. La punta del filo deve sporgere verso l'alto.',
+    lunaConsigl: ['crescente'],
+    max: 10,
+    unita: 'piante con spirale'
+  },
+  {
+    id: 'antenna',
+    nome: '📡 Antenna Terrestre',
+    badge: 'SPERIMENTALE',
+    desc: 'Filo di rame interrato collegato a un palo metallico esterno o a picchetto di messa a terra. Cattura le cariche telluriche dal suolo e le distribuisce alle radici.',
+    istruzioni: 'Inserisci un picchetto metallico nel terreno esterno alla serra. Collegalo con filo di rame al terreno di uno o più vasi. Il filo deve essere sepolto o protetto.',
+    lunaConsigl: ['nuova','calante'],
+    max: 1,
+    unita: 'antenna attiva'
+  }
+];
+
+/* ── State elettrocultura ── */
+let elCounts = {};
+let elTracker = {}; // { plantId: { techId: true/false } }
+let elLogs = [];
+let elTecnicheExtra = []; // caricate da JSON
+
+/* ── Init / load da localStorage ── */
+function elLoadState() {
+  try { elCounts  = JSON.parse(localStorage.getItem('el_counts')  || '{}'); } catch(e) { elCounts = {}; }
+  try { elTracker = JSON.parse(localStorage.getItem('el_tracker') || '{}'); } catch(e) { elTracker = {}; }
+  try { elLogs    = JSON.parse(localStorage.getItem('el_logs')    || '[]'); } catch(e) { elLogs = []; }
 }
-try {
-  const saved = JSON.parse(localStorage.getItem('exp_counts') || '{}');
-  Object.assign(counts, saved);
-  Object.keys(counts).forEach(k => {
-    const el = document.getElementById(k + '-count');
-    if (el) el.textContent = counts[k];
-  });
-} catch(e) {}
+function elSaveState() {
+  try { localStorage.setItem('el_counts',  JSON.stringify(elCounts));  } catch(e) {}
+  try { localStorage.setItem('el_tracker', JSON.stringify(elTracker)); } catch(e) {}
+  try { localStorage.setItem('el_logs',    JSON.stringify(elLogs));    } catch(e) {}
+}
+elLoadState();
+
+/* ── Legacy compat ── */
+function adjustCount(key, delta) {
+  const maxes = { lakhovsky:10, galvanica:10, pantacle:9, geomag:10 };
+  elCounts[key] = Math.max(0, Math.min(maxes[key]||10, (elCounts[key]||0) + delta));
+  elSaveState();
+  renderElettroTecniche();
+  elUpdateStats();
+}
+
+/* ── Tutte le tecniche (base + extra) ── */
+function elAllTecniche() {
+  return [...EL_TECNICHE_BASE, ...elTecnicheExtra];
+}
+
+/* ── Tab switch ── */
+function switchElettroTab(tab) {
+  document.querySelectorAll('[id^="etab-"]').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('[id^="epanel-"]').forEach(p => p.classList.remove('active'));
+  const btn = document.getElementById('etab-' + tab);
+  const pan = document.getElementById('epanel-' + tab);
+  if (btn) btn.classList.add('active');
+  if (pan) pan.classList.add('active');
+  if (tab === 'tecniche') { renderElettroTecniche(); elLunarTip(); }
+  if (tab === 'tracker')  renderElTracker();
+  if (tab === 'log')      renderElLog();
+  if (tab === 'stats')    renderElStats();
+}
+
+/* ── Consiglio Lunare ── */
+function elLunarTip() {
+  const el = document.getElementById('el-lunar-text');
+  if (!el) return;
+  // Legge fase lunare dal modulo luna già presente
+  const lunaEl = document.getElementById('luna-phase-name');
+  let fase = lunaEl ? lunaEl.textContent.toLowerCase() : '';
+  let key = 'crescente';
+  if (fase.includes('piena'))    key = 'piena';
+  else if (fase.includes('nuova') || fase.includes('buio')) key = 'nuova';
+  else if (fase.includes('calante') || fase.includes('ultimo')) key = 'calante';
+  else if (fase.includes('crescente') || fase.includes('primo')) key = 'crescente';
+
+  const consigli = {
+    nuova:     { testo: '🌑 Luna Nuova — Energia radicale', sug: 'Ideale per <strong>Pila Galvanica</strong> e <strong>Antenna Terrestre</strong>. L'energia è nel sottosuolo — potenzia l'assorbimento radicale.' },
+    crescente: { testo: '🌒 Luna Crescente — Energia in salita', sug: 'Momento perfetto per <strong>Circuito di Lakhovsky</strong> e <strong>Spirale di Rame</strong>. La linfa sale — massimizza la fotosintesi.' },
+    piena:     { testo: '🌕 Luna Piena — Picco di vitalità', sug: 'Attiva tutte le tecniche! Potenzia soprattutto <strong>Pantacle di Rame</strong> e <strong>Acqua Magnetizzata</strong>. Documenta e fotografa.' },
+    calante:   { testo: '🌘 Luna Calante — Consolidamento', sug: 'Ottimo per <strong>Antenna Terrestre</strong>. Verifica e manutenzione dei circuiti esistenti. Osserva e registra nel log.' }
+  };
+  const c = consigli[key] || consigli.crescente;
+  el.innerHTML = '<strong style="color:#d4b8ff">' + c.testo + '</strong><br>' + c.sug;
+}
+
+/* ── Render TECNICHE ── */
+function renderElettroTecniche() {
+  const lista = document.getElementById('el-tecniche-lista');
+  if (!lista) return;
+  const tecniche = EL_TECNICHE_BASE;
+  lista.innerHTML = tecniche.map(t => {
+    const cnt = elCounts[t.id] || 0;
+    return \`
+    <div class="exp-card" style="margin-bottom:10px">
+      <div class="exp-title">\${t.nome} <span class="exp-badge">\${t.badge}</span></div>
+      <div class="exp-desc" style="margin-bottom:10px">\${t.desc}</div>
+      <details style="margin-bottom:10px">
+        <summary style="font-size:12px;color:var(--green2);cursor:pointer;font-weight:600">📋 Istruzioni installazione</summary>
+        <div style="font-size:12px;color:var(--text2);margin-top:8px;line-height:1.7;padding:8px;background:var(--card2);border-radius:8px">\${t.istruzioni}</div>
+      </details>
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+        <div class="exp-counter">
+          <button class="exp-btn" onclick="adjustCount('\${t.id}',-1)">−</button>
+          <div class="exp-count-num" id="\${t.id}-count">\${cnt}</div>
+          <button class="exp-btn" onclick="adjustCount('\${t.id}',1)">+</button>
+          <span style="font-size:12px;color:var(--text2)">\${cnt}/\${t.max} \${t.unita}</span>
+        </div>
+        <div style="display:flex;gap:4px;flex-wrap:wrap">
+          \${t.lunaConsigl.map(l => '<span style="font-size:11px;background:rgba(100,80,200,0.2);color:#a8b8ff;border-radius:6px;padding:2px 7px">' + lunaIcona(l) + ' ' + l + '</span>').join('')}
+        </div>
+      </div>
+    </div>\`;
+  }).join('');
+  elUpdateStats();
+}
+
+function lunaIcona(fase) {
+  return { nuova:'🌑', crescente:'🌒', piena:'🌕', calante:'🌘' }[fase] || '🌙';
+}
+
+/* ── Render TECNICHE EXTRA da JSON ── */
+function renderElTecnicheExtra() {
+  const el = document.getElementById('el-tecniche-json');
+  if (!el) return;
+  if (elTecnicheExtra.length === 0) {
+    el.innerHTML = '';
+    return;
+  }
+  el.innerHTML = '<div style="font-size:12px;font-weight:700;color:var(--green2);margin:12px 0 8px;display:flex;align-items:center;gap:6px"><span>🤖</span> Tecniche scoperte dall'AI nei PDF</div>' +
+    elTecnicheExtra.map(t => \`
+    <div class="exp-card" style="margin-bottom:10px;border-color:rgba(100,200,255,0.2)">
+      <div class="exp-title">\${t.nome||t.id} <span class="exp-badge" style="background:rgba(0,150,255,0.2);color:#60b0ff">AI</span></div>
+      <div class="exp-desc">\${t.desc||''}</div>
+      \${t.istruzioni ? '<details style="margin-top:8px"><summary style="font-size:12px;color:var(--green2);cursor:pointer;font-weight:600">📋 Istruzioni</summary><div style="font-size:12px;color:var(--text2);margin-top:6px;line-height:1.7;padding:8px;background:var(--card2);border-radius:8px">' + t.istruzioni + '</div></details>' : ''}
+    </div>\`).join('');
+}
+
+/* ── Carica tecniche da GitHub JSON ── */
+async function elLoadTecnicheJSON() {
+  try {
+    const res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/electro_tecniche.json?v=' + Date.now());
+    if (!res.ok) throw new Error('not found');
+    const data = await res.json();
+    elTecnicheExtra = Array.isArray(data.tecniche) ? data.tecniche : [];
+    renderElTecnicheExtra();
+  } catch(e) {
+    const el = document.getElementById('el-tecniche-json');
+    if (el) el.innerHTML = '';
+  }
+}
+
+/* ── Render TRACKER ── */
+function renderElTracker() {
+  const lista = document.getElementById('el-tracker-lista');
+  if (!lista) return;
+  const plants = loadActivePlants();
+  const tecniche = elAllTecniche();
+  lista.innerHTML = plants.map(p => {
+    if (!elTracker[p.id]) elTracker[p.id] = {};
+    const tecItems = tecniche.map(t => {
+      const attiva = elTracker[p.id][t.id] || false;
+      return \`<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">
+        <div style="font-size:13px;color:var(--text)">\${t.nome.replace(/^[^\w]*/, '')}</div>
+        <label class="toggle-sw" style="flex-shrink:0">
+          <input type="checkbox" \${attiva ? 'checked' : ''} onchange="elToggleTech(\${p.id},'\${t.id}',this.checked)">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>\`;
+    }).join('');
+    const activeCount = Object.values(elTracker[p.id]).filter(Boolean).length;
+    return \`<div class="card" style="margin-bottom:10px">
+      <div class="card-title" style="display:flex;justify-content:space-between;align-items:center">
+        <span>\${p.icon||'🌱'} \${p.name}</span>
+        <span style="font-size:12px;color:var(--green2);font-weight:600">\${activeCount}/\${tecniche.length} attive</span>
+      </div>
+      <div style="margin-top:8px">\${tecItems}</div>
+    </div>\`;
+  }).join('');
+}
+
+function elToggleTech(plantId, techId, val) {
+  if (!elTracker[plantId]) elTracker[plantId] = {};
+  elTracker[plantId][techId] = val;
+  elSaveState();
+  elUpdateStats();
+}
+
+/* ── Render LOG ── */
+function elPopulateSelects() {
+  const ps = document.getElementById('el-log-pianta');
+  const ts = document.getElementById('el-log-tecnica');
+  if (!ps || !ts) return;
+  const plants = loadActivePlants();
+  ps.innerHTML = '<option value="">— Seleziona pianta —</option>' +
+    plants.map(p => \`<option value="\${p.id}">\${p.icon||'🌱'} \${p.name}</option>\`).join('');
+  ts.innerHTML = '<option value="">— Seleziona tecnica —</option>' +
+    elAllTecniche().map(t => \`<option value="\${t.id}">\${t.nome}</option>\`).join('');
+}
+
+function elAddLog() {
+  const pianta  = document.getElementById('el-log-pianta')?.value;
+  const tecnica = document.getElementById('el-log-tecnica')?.value;
+  const nota    = document.getElementById('el-log-nota')?.value.trim();
+  if (!nota) { alert('Inserisci un'osservazione'); return; }
+  const plants = loadActivePlants();
+  const plant  = plants.find(p => p.id == pianta);
+  const techs  = elAllTecniche();
+  const tech   = techs.find(t => t.id === tecnica);
+  const entry = {
+    id: Date.now(),
+    data: new Date().toLocaleDateString('it-IT'),
+    ora: new Date().toLocaleTimeString('it-IT', {hour:'2-digit',minute:'2-digit'}),
+    pianta: plant ? plant.name : (pianta || 'Tutte'),
+    pianta_icon: plant ? (plant.icon||'🌱') : '🌿',
+    tecnica: tech ? tech.nome : (tecnica || 'Generale'),
+    nota
+  };
+  elLogs.unshift(entry);
+  elSaveState();
+  if (document.getElementById('el-log-nota')) document.getElementById('el-log-nota').value = '';
+  renderElLog();
+  elUpdateStats();
+}
+
+function elDeleteLog(id) {
+  elLogs = elLogs.filter(l => l.id !== id);
+  elSaveState();
+  renderElLog();
+  elUpdateStats();
+}
+
+function renderElLog() {
+  elPopulateSelects();
+  const lista = document.getElementById('el-log-lista');
+  if (!lista) return;
+  if (elLogs.length === 0) {
+    lista.innerHTML = '<div class="empty-state"><div class="empty-state-icon">📝</div>Nessuna osservazione ancora.<br>Aggiungi note per confrontare i risultati!</div>';
+    return;
+  }
+  lista.innerHTML = elLogs.map(l => \`
+    <div class="card" style="margin-bottom:8px;padding:12px 14px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+        <div>
+          <span style="font-size:13px;font-weight:700">\${l.pianta_icon} \${l.pianta}</span>
+          <span style="font-size:11px;color:var(--text3);margin-left:8px">\${l.tecnica}</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:11px;color:var(--text3)">\${l.data} \${l.ora}</span>
+          <button onclick="elDeleteLog(\${l.id})" style="background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;padding:0;line-height:1">×</button>
+        </div>
+      </div>
+      <div style="font-size:13px;color:var(--text2);line-height:1.6">\${l.nota}</div>
+    </div>\`).join('');
+}
+
+/* ── Render STATS ── */
+function renderElStats() {
+  const plants = loadActivePlants();
+  const tecniche = elAllTecniche();
+
+  // Chart: piante con e senza tecniche
+  const chartEl = document.getElementById('el-stats-chart');
+  if (chartEl) {
+    const rows = plants.map(p => {
+      const tracker = elTracker[p.id] || {};
+      const cnt = Object.values(tracker).filter(Boolean).length;
+      const pct = tecniche.length > 0 ? Math.round(cnt / tecniche.length * 100) : 0;
+      return { p, cnt, pct };
+    });
+    chartEl.innerHTML = rows.map(r => \`
+      <div style="margin-bottom:10px">
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px">
+          <span style="font-size:13px">\${r.p.icon||'🌱'} \${r.p.name}</span>
+          <span style="font-size:12px;color:var(--green2);font-weight:600">\${r.cnt}/\${tecniche.length} (\${r.pct}%)</span>
+        </div>
+        <div style="height:8px;background:var(--card2);border-radius:4px;overflow:hidden">
+          <div style="height:100%;width:\${r.pct}%;background:linear-gradient(90deg,var(--green2),var(--green3));border-radius:4px;transition:.3s"></div>
+        </div>
+      </div>\`).join('');
+  }
+
+  // Top tecniche
+  const techEl = document.getElementById('el-stats-tecniche');
+  if (techEl) {
+    const techCounts = {};
+    tecniche.forEach(t => {
+      techCounts[t.id] = { nome: t.nome, cnt: 0 };
+    });
+    Object.values(elTracker).forEach(plantData => {
+      Object.entries(plantData).forEach(([tid, val]) => {
+        if (val && techCounts[tid]) techCounts[tid].cnt++;
+      });
+    });
+    const sorted = Object.values(techCounts).sort((a,b) => b.cnt - a.cnt);
+    techEl.innerHTML = sorted.length === 0 ?
+      '<div style="text-align:center;color:var(--text3);font-size:13px;padding:12px">Nessun dato ancora</div>' :
+      sorted.map(t => \`
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border)">
+          <span style="font-size:13px">\${t.nome}</span>
+          <span style="font-size:13px;font-weight:700;color:var(--green2)">\${t.cnt} piante</span>
+        </div>\`).join('');
+  }
+}
+
+/* ── Update statistiche header ── */
+function elUpdateStats() {
+  // Attive = quante tecniche hanno count > 0
+  const attive = EL_TECNICHE_BASE.filter(t => (elCounts[t.id]||0) > 0).length + elTecnicheExtra.length;
+  const el1 = document.getElementById('el-stat-attive');
+  if (el1) el1.textContent = attive;
+
+  // Log count
+  const el2 = document.getElementById('el-stat-log');
+  if (el2) el2.textContent = elLogs.length;
+
+  // Piante con almeno 1 tecnica
+  const piante = Object.entries(elTracker).filter(([,v]) => Object.values(v).some(Boolean)).length;
+  const el3 = document.getElementById('el-stat-piante');
+  if (el3) el3.textContent = piante;
+}
+
+/* ── Init Elettrocultura ── */
+function initElettrocultura() {
+  renderElettroTecniche();
+  elLunarTip();
+  elLoadTecnicheJSON();
+  elUpdateStats();
+}
+
+// Init al caricamento
+document.addEventListener('DOMContentLoaded', initElettrocultura);
+// Fallback se DOM già pronto
+if (document.readyState !== 'loading') initElettrocultura();
+
+/* ── Stili toggle switch ── */
+(function addToggleStyle() {
+  if (document.getElementById('el-toggle-style')) return;
+  const s = document.createElement('style');
+  s.id = 'el-toggle-style';
+  s.textContent = \`.toggle-sw{position:relative;display:inline-block;width:44px;height:24px}.toggle-sw input{opacity:0;width:0;height:0}.toggle-slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:var(--card2);border-radius:12px;transition:.3s;border:1px solid var(--border)}.toggle-sw input:checked+.toggle-slider{background:var(--green2)}.toggle-slider:before{content:"";position:absolute;height:18px;width:18px;left:2px;bottom:2px;background:white;border-radius:50%;transition:.3s}.toggle-sw input:checked+.toggle-slider:before{transform:translateX(20px)}\`;
+  document.head.appendChild(s);
+})();
 
 /* ══════════════════════════════════════════════════════════════
    METEO — Open-Meteo · Caserta fissa
