@@ -924,15 +924,14 @@
   </div>
 </div>
 
-<!-- AMBIENTE - sezione unificata Meteo+Luna+Bio+AI Serra -->
+<!-- AMBIENTE - sezione unificata Meteo+Luna+Bio -->
 <section id="sec-ambiente" class="section">
 
   <!-- TAB BAR AMBIENTE -->
   <div class="piante-tab-bar" id="amb-tab-bar" style="margin-bottom:16px;position:sticky;top:56px;z-index:50;background:var(--bg2);padding:4px;border-radius:12px;">
-    <button class="piante-tab active" id="ambt-meteo"  onclick="switchAmbTab('meteo')">⛅ Meteo</button>
-    <button class="piante-tab"        id="ambt-luna"   onclick="switchAmbTab('luna')">🌙 Luna</button>
-    <button class="piante-tab"        id="ambt-bio"    onclick="switchAmbTab('bio')">🌱 Bio</button>
-    <button class="piante-tab"        id="ambt-ai"     onclick="switchAmbTab('ai')">🤖 AI Serra</button>
+    <button class="piante-tab active" id="ambt-meteo" onclick="switchAmbTab('meteo')">⛅ Meteo</button>
+    <button class="piante-tab"       id="ambt-luna"  onclick="switchAmbTab('luna')">🌙 Luna</button>
+    <button class="piante-tab"       id="ambt-bio"   onclick="switchAmbTab('bio')">🌱 Bio</button>
   </div>
 
   <!-- ══════════ TAB METEO ══════════ -->
@@ -1212,72 +1211,9 @@
   </div>
 
   <!-- ══════════ TAB AI SERRA ══════════ -->
-  <div class="piante-panel" id="amb-panel-ai">
-    <!-- Card CONSIGLI DALLE GUIDE (ai_consigli.json) — 4 sezioni -->
-    <div class="card" style="background:linear-gradient(135deg,rgba(74,175,94,0.08),rgba(58,159,216,0.05));">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
-        <div class="card-title" style="color:var(--green3);">📚 Consigli dalle Guide</div>
-        <button class="json-reload-btn" onclick="loadAIConsigli();event.stopPropagation();">🔄</button>
-      </div>
-      <div id="ai-json-panel" style="display:block;">
-        <div class="amb-sezione-card" onclick="openAmbPopup('ai-giorno')" style="cursor:pointer;">
-          <div class="amb-sezione-icon">🌱</div>
-          <div class="amb-sezione-body">
-            <div class="amb-sezione-title">CONSIGLI DEL GIORNO</div>
-            <div class="amb-sezione-val" id="aic-giorno">Caricamento…</div>
-          </div>
-          <div class="amb-arrow">›</div>
-        </div>
-        <div class="amb-sezione-card" onclick="openAmbPopup('ai-tecniche')" style="cursor:pointer;">
-          <div class="amb-sezione-icon">🔬</div>
-          <div class="amb-sezione-body">
-            <div class="amb-sezione-title">TECNICHE AVANZATE</div>
-            <div class="amb-sezione-val" id="aic-tecniche">—</div>
-          </div>
-          <div class="amb-arrow">›</div>
-        </div>
-        <div class="amb-sezione-card" onclick="openAmbPopup('ai-avvisi')" style="cursor:pointer;border-color:rgba(255,152,0,0.3);">
-          <div class="amb-sezione-icon">⚠️</div>
-          <div class="amb-sezione-body">
-            <div class="amb-sezione-title" style="color:var(--orange);">AVVISI</div>
-            <div class="amb-sezione-val" id="aic-avvisi">—</div>
-          </div>
-          <div class="amb-arrow">›</div>
-        </div>
-        <div class="amb-sezione-card" onclick="openAmbPopup('ai-incrocio')" style="cursor:pointer;border-color:rgba(58,159,216,0.3);">
-          <div class="amb-sezione-icon">🔗</div>
-          <div class="amb-sezione-body">
-            <div class="amb-sezione-title" style="color:var(--blue);">INCROCIO DATI</div>
-            <div class="amb-sezione-val" id="aic-incrocio">—</div>
-          </div>
-          <div class="amb-arrow">›</div>
-        </div>
-      </div>
-      <div style="font-size:11px;color:var(--text3);margin-top:8px;" id="ai-json-meta">—</div>
-    </div>
-    <!-- Card CONSIGLI LUNARI AI -->
-    <div class="card">
-      <div class="card-title" style="color:#a0c4ff;">🌙 Consigli Lunari AI</div>
-      <div id="ai-lunari-list" style="display:flex;flex-direction:column;gap:8px;margin-top:8px;">
-        <div style="font-size:13px;color:var(--text3);">⏳ Caricamento…</div>
-      </div>
-    </div>
-    <!-- Card ANALISI METEO-LUNA-BIO incrociata -->
-    <div class="card" onclick="openAmbPopup('ai-analisi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(58,159,216,0.1),rgba(171,71,188,0.06));">
-      <div class="card-title" style="color:var(--blue);">🔬 Analisi Meteo × Luna × Bio</div>
-      <div style="font-size:13px;color:var(--text2);line-height:1.5;" id="ai-analisi-preview">Calcolo incrociato in corso…</div>
-      <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per analisi completa →</div>
-    </div>
-    <!-- Card CONSIGLI PERSONALIZZATI PER PIANTA -->
-    <div class="card" style="background:linear-gradient(135deg,rgba(74,175,94,0.06),rgba(30,50,38,0.04));">
-      <div class="card-title" style="color:var(--green3);">🌿 Consigli per Pianta</div>
-      <div id="ai-piante-list" style="display:flex;flex-direction:column;gap:8px;margin-top:8px;">
-        <div style="font-size:13px;color:var(--text3);">⏳ Calcolo…</div>
-      </div>
-    </div>
-  </div>
 
 </section>
+
 
 <!-- POP-UP AMBIENTE UNIVERSALE -->
 <div id="amb-popup-overlay" onclick="closeAmbPopup(event)" style="display:none;position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,0.75);align-items:flex-end;justify-content:center;">
@@ -3787,36 +3723,136 @@ window.initApp = function() {
 
 
 /* ══════════════════════════════════════════════════════════════
-   AMBIENTE — SISTEMA UNIFICATO Meteo + Luna + Bio + AI Serra
+   AMBIENTE — Meteo + Luna + Bio (versione corretta)
 ══════════════════════════════════════════════════════════════ */
 
-/* ── Dati globali per l'incrocio ── */
-window._ambWeather = null;
-window._ambLunaJSON = null;
-window._ambAIJSON = null;
-
-/* ── Switch tab interno ── */
+/* ── Switch tab interno — chiama direttamente le funzioni originali ── */
 function switchAmbTab(tab) {
-  ['meteo','luna','bio','ai'].forEach(t => {
+  ['meteo','luna','bio'].forEach(t => {
     const p = document.getElementById('amb-panel-' + t);
     const b = document.getElementById('ambt-' + t);
     if (p) p.classList.toggle('active', t === tab);
     if (b) b.classList.toggle('active', t === tab);
   });
-  if (tab === 'meteo') loadWeather();
-  if (tab === 'luna')  { setTimeout(renderLunarSection, 50); loadLunaConsigli6(); }
-  if (tab === 'bio')   { renderBioCalendar(); renderBio3Giorni(); updateBioElettroPreview(); }
-  if (tab === 'ai')    { loadAIConsigli(); renderAILunari(); renderAIAnalisi(); renderAIPiante(); }
+  if (tab === 'meteo') {
+    _doLoadWeather();
+  }
+  if (tab === 'luna') {
+    setTimeout(_doRenderLunar, 50);
+  }
+  if (tab === 'bio') {
+    _doRenderBio();
+  }
+}
+
+/* ── Wrappers sicuri che chiamano le funzioni originali ── */
+function _doLoadWeather() {
+  // chiama la funzione loadWeather che usa gli ID DOM dentro sec-ambiente
+  const loading = document.getElementById('weather-loading');
+  const error   = document.getElementById('weather-error');
+  const content = document.getElementById('weather-content');
+  if (!loading || !error || !content) return;
+  loading.style.display='block'; error.style.display='none'; content.style.display='none';
+  // CASERTA, WMO, WMO_ICONS, DAYS_IT sono const globali nello stesso script block
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=${CASERTA.lat}&longitude=${CASERTA.lon}`
+    + `&current=temperature_2m,apparent_temperature,relative_humidity_2m,weather_code,wind_speed_10m,surface_pressure,uv_index,rain`
+    + `&daily=weather_code,temperature_2m_max,temperature_2m_min,rain_sum,et0_fao_evapotranspiration,sunrise,sunset`
+    + `&timezone=Europe%2FRome&forecast_days=7`;
+  fetch(url)
+    .then(r => { if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+    .then(d => {
+      const c = d.current;
+      const now = new Date();
+      document.getElementById('w-lastupdate').textContent = now.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+      document.getElementById('w-temp').textContent = Math.round(c.temperature_2m)+'°';
+      document.getElementById('w-feels').textContent = Math.round(c.apparent_temperature);
+      document.getElementById('w-desc').textContent = WMO[c.weather_code] || '—';
+      document.getElementById('w-icon').textContent = WMO_ICONS[c.weather_code] || '🌡️';
+      document.getElementById('w-humidity').textContent = c.relative_humidity_2m+'%';
+      document.getElementById('w-uv').textContent = (c.uv_index ?? '—');
+      document.getElementById('w-wind').textContent = Math.round(c.wind_speed_10m)+' km/h';
+      document.getElementById('w-pressure').textContent = Math.round(c.surface_pressure)+' hPa';
+      document.getElementById('w-rain').textContent = (d.daily.rain_sum[0]||0).toFixed(1)+' mm';
+      const et = d.daily.et0_fao_evapotranspiration[0];
+      document.getElementById('w-et').textContent = et!=null ? et.toFixed(1)+' mm' : '—';
+      // Alba/tramonto/fotoperiodo
+      const sr=new Date(d.daily.sunrise[0]); const ss=new Date(d.daily.sunset[0]);
+      document.getElementById('w-sunrise').textContent = sr.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+      document.getElementById('w-sunset').textContent  = ss.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+      const dm = Math.round((ss-sr)/60000);
+      document.getElementById('w-daylen').textContent = Math.floor(dm/60)+'h'+(dm%60>0?String(dm%60).padStart(2,'0'):'');
+      // Consiglio irrigazione
+      const rain=d.daily.rain_sum[0]||0; const etVal=et||0; const netNeed=Math.max(0,etVal-rain);
+      let irrigMain, irrigDetail;
+      if(rain>5){ irrigMain='🌧️ Sospendi irrigazione automatica'; irrigDetail=`Pioggia prevista ${rain.toFixed(1)} mm > ETo ${etVal.toFixed(1)} mm. Disattiva il timer della pompa solare.`; }
+      else if(netNeed<2){ irrigMain='✅ Irrigazione normale — condizioni ideali'; irrigDetail=`Fabbisogno netto: ${netNeed.toFixed(1)} mm. Mantieni la frequenza impostata.`; }
+      else if(netNeed<4){ irrigMain='💧 Leggero aumento consigliato'; irrigDetail=`ETo ${etVal.toFixed(1)} mm, pioggia ${rain.toFixed(1)} mm → fabbisogno netto ${netNeed.toFixed(1)} mm.`; }
+      else { irrigMain='⚠️ Caldo secco — aumenta irrigazione'; irrigDetail=`Alta ETo: ${etVal.toFixed(1)} mm, pioggia ${rain.toFixed(1)} mm → fabbisogno netto ${netNeed.toFixed(1)} mm. Bagna i bordi.`; }
+      document.getElementById('w-irrig-main').textContent = irrigMain;
+      document.getElementById('w-irrig-detail').textContent = irrigDetail;
+      // Alert serra
+      const alertEl=document.getElementById('w-serra-alert'); const alertTxt=document.getElementById('w-serra-alert-text');
+      const temp=c.temperature_2m; const hum=c.relative_humidity_2m; const uv=c.uv_index; const alerts=[];
+      if(temp>35) alerts.push('🌡️ Temperatura critica ('+Math.round(temp)+'°C) — ombreggia la serra');
+      if(hum>80)  alerts.push('💧 Umidità alta ('+hum+'%) — rischio muffe. Ventila.');
+      if(hum<30)  alerts.push('🌵 Umidità bassa ('+hum+'%) — stress idrico. Bagna i bordi.');
+      if(uv!=null&&uv>8) alerts.push('☀️ UV molto alto ('+uv+') — ombreggia le piante delicate.');
+      if(alerts.length){ alertTxt.innerHTML='⚠️ <strong>Alert Serra:</strong><br>'+alerts.join('<br>'); alertEl.style.display='block'; }
+      else alertEl.style.display='none';
+      // Previsioni 7 giorni cliccabili
+      const fc=document.getElementById('w-forecast');
+      fc.innerHTML = d.daily.time.map((t,i)=>{
+        const dt=new Date(t+'T12:00'); const icon=WMO_ICONS[d.daily.weather_code[i]]||'🌡️';
+        const r=(d.daily.rain_sum[i]||0).toFixed(1);
+        return `<div onclick="openForecastPopup(${i})" style="display:flex;align-items:center;justify-content:space-between;padding:9px 4px;border-bottom:1px solid rgba(255,255,255,0.05);cursor:pointer;">
+          <span style="font-size:13px;color:var(--text2);min-width:32px;">${i===0?'Oggi':DAYS_IT[dt.getDay()]}</span>
+          <span style="font-size:20px;">${icon}</span>
+          <span style="font-size:11px;color:#4fc3f7;">${r>0?'💧'+r+'mm':''}</span>
+          <span style="font-size:13px;color:var(--text2);">${Math.round(d.daily.temperature_2m_min[i])}°</span>
+          <span style="font-size:13px;font-weight:600;">${Math.round(d.daily.temperature_2m_max[i])}°</span>
+          <span style="font-size:12px;color:var(--text3);">›</span>
+        </div>`;
+      }).join('');
+      loading.style.display='none'; content.style.display='block';
+    })
+    .catch(e => {
+      loading.style.display='none';
+      document.getElementById('weather-error-msg').textContent='Errore: '+e.message;
+      error.style.display='block';
+    });
+}
+
+function _doRenderLunar() {
+  // Chiama renderLunarSection originale (definita prima nel codice)
+  if (typeof renderLunarSection === 'function') {
+    renderLunarSection();
+    // Post-render: rendi striscia e tabella cliccabili
+    setTimeout(() => {
+      const strip = document.getElementById('moonStrip');
+      if(strip) strip.querySelectorAll('div').forEach((el,i)=>{
+        if(el.children.length>0){ el.style.cursor='pointer'; el.onclick=()=>openForecastPopup(i); }
+      });
+      const table=document.getElementById('phasesTable');
+      if(table){ const codes=['new','waxing_crescent','first_quarter','waxing_gibbous','full','waning_gibbous','last_quarter','waning_crescent'];
+        table.querySelectorAll('tr').forEach((row,i)=>{ row.style.cursor='pointer'; row.onclick=()=>openPhasePopup(codes[i]||'new'); }); }
+    }, 300);
+  }
+  loadLunaConsigli6();
+}
+
+function _doRenderBio() {
+  // Chiama renderBioCalendar originale
+  if (typeof renderBioCalendar === 'function') renderBioCalendar();
+  renderBio3Giorni();
+  updateBioElettroPreview();
 }
 
 /* ── Init ambiente (chiamato da showSection) ── */
 function initAmbiente() {
-  // Avvia sempre il tab attivo
   const activeTab = document.querySelector('#amb-tab-bar .piante-tab.active');
   const tabId = activeTab ? (
-    activeTab.id === 'ambt-meteo' ? 'meteo' :
-    activeTab.id === 'ambt-luna'  ? 'luna'  :
-    activeTab.id === 'ambt-bio'   ? 'bio'   : 'ai'
+    activeTab.id==='ambt-meteo' ? 'meteo' :
+    activeTab.id==='ambt-luna'  ? 'luna'  : 'bio'
   ) : 'meteo';
   switchAmbTab(tabId);
 }
@@ -3825,189 +3861,151 @@ function initAmbiente() {
    POP-UP UNIVERSALE
 ══════════════════════════════════════════════════════════════ */
 function openAmbPopup(type) {
-  const overlay = document.getElementById('amb-popup-overlay');
-  const content = document.getElementById('amb-popup-content');
-  if (!overlay || !content) return;
-  content.innerHTML = buildPopupContent(type);
-  overlay.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
+  const overlay=document.getElementById('amb-popup-overlay');
+  const content=document.getElementById('amb-popup-content');
+  if(!overlay||!content) return;
+  content.innerHTML=buildPopupContent(type);
+  overlay.style.display='flex';
+  document.body.style.overflow='hidden';
 }
 function closeAmbPopup(e) {
-  if (e && e.target !== document.getElementById('amb-popup-overlay')) return;
+  if(e&&e.target!==document.getElementById('amb-popup-overlay')) return;
   closeAmbPopupDirect();
 }
 function closeAmbPopupDirect() {
-  const overlay = document.getElementById('amb-popup-overlay');
-  if (overlay) overlay.style.display = 'none';
-  document.body.style.overflow = '';
+  const o=document.getElementById('amb-popup-overlay');
+  if(o) o.style.display='none';
+  document.body.style.overflow='';
 }
 
 function buildPopupContent(type) {
-  const w = window._ambWeather;
-  const lj = window._ambLunaJSON;
-  const today = new Date();
-  const age = getMoonAge(today);
-  const phase = getMoonPhase(age);
-  const advice = getAdvice(phase.code);
-  const bioConst = getDayType(today);
-  const bioType = DAY_TYPES[bioConst.type];
+  const today=new Date();
+  const age=getMoonAge(today);
+  const phase=getMoonPhase(age);
+  const advice=getAdvice(phase.code);
+  const bioConst=getDayType(today);
+  const bioType=DAY_TYPES[bioConst.type];
+
+  const gv=(id)=>{ const e=document.getElementById(id); return e?e.textContent:'—'; };
 
   switch(type) {
-
-    /* ── METEO POP-UP ── */
-    case 'meteo-main':
-      return `<div class="amb-popup-label">Temperatura & Condizioni</div>
-<div class="amb-popup-title">🌡️ Condizioni Meteo Attuali</div>
-${w ? `<div class="amb-popup-section">
-  <div style="font-size:48px;text-align:center;margin:10px 0;">${document.getElementById('w-icon').textContent}</div>
-  <div style="text-align:center;font-size:36px;font-weight:800;margin-bottom:4px;">${document.getElementById('w-temp').textContent}</div>
-  <div style="text-align:center;color:var(--text2);margin-bottom:16px;">${document.getElementById('w-desc').textContent}</div>
-  <div style="color:var(--text2);font-size:13px;line-height:1.8;">
-    🌡️ Temperatura percepita: <strong>${document.getElementById('w-feels').textContent}°</strong><br>
-    💧 Umidità relativa: <strong>${document.getElementById('w-humidity').textContent}</strong><br>
-    🔆 UV Index: <strong>${document.getElementById('w-uv').textContent}</strong><br>
-    💨 Vento: <strong>${document.getElementById('w-wind').textContent} km/h</strong><br>
-    🌡️ Pressione: <strong>${document.getElementById('w-pressure').textContent}</strong><br>
-    🌧️ Pioggia oggi: <strong>${document.getElementById('w-rain').textContent}</strong><br>
-    💦 ETo: <strong>${document.getElementById('w-et').textContent}</strong>
+    case 'meteo-main': return `<div class="amb-popup-label">Temperatura & Condizioni</div>
+<div class="amb-popup-title">🌡️ Meteo Attuale</div>
+<div class="amb-popup-section">
+  <div style="font-size:48px;text-align:center;margin:8px 0;">${gv('w-icon')}</div>
+  <div style="text-align:center;font-size:36px;font-weight:800;margin-bottom:4px;">${gv('w-temp')}</div>
+  <div style="text-align:center;color:var(--text2);margin-bottom:16px;">${gv('w-desc')}</div>
+  <div style="color:var(--text2);font-size:13px;line-height:2;">
+    🌡️ Percepita: <strong>${gv('w-feels')}°</strong><br>
+    💧 Umidità: <strong>${gv('w-humidity')}</strong><br>
+    🔆 UV: <strong>${gv('w-uv')}</strong><br>
+    💨 Vento: <strong>${gv('w-wind')}</strong><br>
+    🌡️ Pressione: <strong>${gv('w-pressure')}</strong><br>
+    🌧️ Pioggia: <strong>${gv('w-rain')}</strong><br>
+    💦 ETo: <strong>${gv('w-et')}</strong>
   </div>
 </div>
 <div class="amb-popup-section">
-  <div class="amb-popup-label">🕐 Fotoperiodo</div>
-  <div style="display:flex;gap:12px;margin-top:8px;">
-    <div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center;">🌅 Alba<br><strong>${document.getElementById('w-sunrise').textContent}</strong></div>
-    <div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center;">🌇 Tramonto<br><strong>${document.getElementById('w-sunset').textContent}</strong></div>
-    <div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center;">⏱️ Durata<br><strong>${document.getElementById('w-daylen').textContent}</strong></div>
-  </div>
-</div>` : '<div style="color:var(--text3);">Carica il meteo prima di vedere i dettagli.</div>'}`;
-
-    case 'meteo-umidita':
-      return `<div class="amb-popup-label">Umidità</div>
-<div class="amb-popup-title">💧 Umidità Relativa</div>
-<div class="amb-popup-section">
-  <div style="font-size:36px;font-weight:800;color:var(--blue);margin-bottom:12px;">${w ? document.getElementById('w-humidity').textContent : '—'}</div>
-  <div style="color:var(--text2);font-size:13px;line-height:1.8;">
-    L'umidità relativa misura la quantità di vapore acqueo nell'aria rispetto alla capacità massima a quella temperatura.<br><br>
-    <strong>Impatto sulla serra:</strong><br>
-    🟢 40-60% → Ideale. Nessuna azione necessaria.<br>
-    🟡 60-75% → Attenzione muffe. Ventila la mini-serra.<br>
-    🔴 >75% → Rischio elevato. Ventila immediatamente e riduci l'irrigazione.<br>
-    🟡 <35% → Stress idrico. Bagna i bordi dei vasi e aumenta l'irrigazione.<br><br>
-    <strong>Le tue piante:</strong> Le autofiorenti (Epsilon, Gaia, Medusa, Titan, Milky Way) tollerano umidità fino al 70% in fioritura. Le femminizzate (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) in vegetativa preferiscono 50-65%.
+  <div class="amb-popup-label">Fotoperiodo</div>
+  <div style="display:flex;gap:8px;margin-top:8px;">
+    <div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center;font-size:13px;">🌅 Alba<br><strong>${gv('w-sunrise')}</strong></div>
+    <div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center;font-size:13px;">🌇 Tramonto<br><strong>${gv('w-sunset')}</strong></div>
+    <div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center;font-size:13px;">⏱️ Durata<br><strong>${gv('w-daylen')}</strong></div>
   </div>
 </div>`;
 
-    case 'meteo-uv':
-      return `<div class="amb-popup-label">Radiazione UV</div>
-<div class="amb-popup-title">🔆 UV Index</div>
-<div class="amb-popup-section">
-  <div style="font-size:36px;font-weight:800;color:var(--yellow);margin-bottom:12px;">${w ? document.getElementById('w-uv').textContent : '—'}</div>
-  <div style="color:var(--text2);font-size:13px;line-height:1.8;">
-    L'indice UV misura l'intensità della radiazione ultravioletta solare.<br><br>
-    <strong>Scala:</strong><br>
-    🟢 0-2 → Basso. Luce insufficiente per la fotosintesi ottimale.<br>
-    🟢 3-5 → Moderato. Ideale per la crescita vegetativa.<br>
-    🟡 6-7 → Alto. Ottimo per la produzione di resine.<br>
-    🔴 8-10 → Molto alto. Considera ombreggiatura parziale.<br>
-    🔴 >10 → Estremo. Proteggi le piante in fioritura.<br><br>
-    <strong>Per la tua serra:</strong> UV alto favorisce la produzione di tricomi e resine nelle piante in fioritura (autofiorenti mesi 1-2). La pellicola Mylar riflette la luce verso il basso massimizzando l'utilizzo anche con UV moderato.
-  </div>
-</div>`;
+    case 'meteo-umidita': return `<div class="amb-popup-label">Umidità</div>
+<div class="amb-popup-title">💧 Umidità Relativa — ${gv('w-humidity')}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">
+Misura il vapore acqueo nell'aria. Per la tua serra in grow bag da 10L:<br><br>
+🟢 <strong>40–60%</strong> → Ideale. Nessuna azione.<br>
+🟡 <strong>60–75%</strong> → Attenzione muffe. Ventila.<br>
+🔴 <strong>>75%</strong> → Rischio elevato. Ventila subito e riduci irrigazione.<br>
+🟡 <strong><35%</strong> → Stress idrico. Bagna i bordi dei vasi.<br><br>
+<strong>Autofiorenti</strong> (Epsilon, Gaia, Medusa, Titan, Milky Way) tollerano fino al 70% in fioritura.<br>
+<strong>Femminizzate</strong> in vegetativa preferiscono 50–65%.
+</div></div>`;
 
-    case 'meteo-vento':
-      return `<div class="amb-popup-label">Vento</div>
-<div class="amb-popup-title">💨 Velocità del Vento</div>
-<div class="amb-popup-section">
-  <div style="font-size:36px;font-weight:800;color:var(--blue);margin-bottom:12px;">${w ? document.getElementById('w-wind').textContent : '—'}</div>
-  <div style="color:var(--text2);font-size:13px;line-height:1.8;">
-    <strong>Impatto sulla mini-serra outdoor:</strong><br>
-    🟢 0-15 km/h → Leggero. Buona circolazione d'aria naturale.<br>
-    🟡 15-30 km/h → Moderato. Verifica stabilità dei vasi e dei tutori dell'elettrocultura.<br>
-    🔴 >30 km/h → Forte. Assicura i vasi, controlla che i bastoncini di rame siano stabili. Proteggi le cime in fioritura.<br><br>
-    <strong>Effetti positivi del vento leggero:</strong><br>
-    ✅ Rinforza i fusti (stress meccanico controllato)<br>
-    ✅ Riduce umidità superficiale → meno muffe<br>
-    ✅ Migliora la circolazione del CO₂
-  </div>
-</div>`;
+    case 'meteo-uv': return `<div class="amb-popup-label">Radiazione UV</div>
+<div class="amb-popup-title">🔆 UV Index — ${gv('w-uv')}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">
+🟢 <strong>0–2</strong> → Basso. Fotosintesi limitata.<br>
+🟢 <strong>3–5</strong> → Moderato. Ideale vegetativa.<br>
+🟡 <strong>6–7</strong> → Alto. Ottimo per resine.<br>
+🔴 <strong>8–10</strong> → Molto alto. Ombreggia parzialmente.<br>
+🔴 <strong>>10</strong> → Estremo. Proteggi le cime in fioritura.<br><br>
+Il Mylar riflettente amplifica la luce disponibile anche con UV moderato. UV alto favorisce la produzione di tricomi nelle piante in fioritura.
+</div></div>`;
 
-    case 'meteo-pressione':
-      return `<div class="amb-popup-label">Pressione Atmosferica</div>
-<div class="amb-popup-title">🌡️ Pressione Barometrica</div>
-<div class="amb-popup-section">
-  <div style="font-size:36px;font-weight:800;color:var(--green3);margin-bottom:12px;">${w ? document.getElementById('w-pressure').textContent : '—'}</div>
-  <div style="color:var(--text2);font-size:13px;line-height:1.8;">
-    La pressione atmosferica indica le condizioni meteorologiche in arrivo.<br><br>
-    <strong>Interpretazione:</strong><br>
-    🟢 >1013 hPa → Alta pressione. Bel tempo stabile. Ottimo per la fotosintesi.<br>
-    🟡 1000-1013 hPa → Variabile. Monitora i prossimi giorni.<br>
-    🔴 <1000 hPa → Bassa pressione. Possibile maltempo. Riduci l'irrigazione automatica.<br><br>
-    <strong>Per il Living Soil:</strong> Le variazioni di pressione influenzano la disponibilità di ossigeno nel suolo. Alta pressione → maggiore attività microbica. Bassa pressione → rallentamento biologico.
-  </div>
-</div>`;
+    case 'meteo-vento': return `<div class="amb-popup-label">Vento</div>
+<div class="amb-popup-title">💨 Vento — ${gv('w-wind')}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">
+🟢 <strong>0–15 km/h</strong> → Ideale. Buona circolazione.<br>
+🟡 <strong>15–30 km/h</strong> → Verifica stabilità tutori elettrocultura.<br>
+🔴 <strong>>30 km/h</strong> → Assicura i vasi e i bastoncini rame. Proteggi le cime.<br><br>
+<strong>Effetti positivi vento leggero:</strong> rinforza i fusti, riduce umidità superficiale, migliora circolazione CO₂.
+</div></div>`;
 
-    case 'meteo-pioggia':
-      return `<div class="amb-popup-label">Precipitazioni</div>
-<div class="amb-popup-title">🌧️ Pioggia di Oggi</div>
-<div class="amb-popup-section">
-  <div style="font-size:36px;font-weight:800;color:var(--blue);margin-bottom:12px;">${w ? document.getElementById('w-rain').textContent : '—'}</div>
-  <div style="color:var(--text2);font-size:13px;line-height:1.8;">
-    <strong>Azioni consigliate in base alla pioggia:</strong><br>
-    🟢 0-2 mm → Nessuna. Mantieni irrigazione normale.<br>
-    🟡 2-5 mm → Riduci di 1 ciclo il timer della pompa.<br>
-    🔴 >5 mm → Sospendi l'irrigazione automatica. I vasi in tessuto assorbono bene ma drenano velocemente — controlla che non ristagnino.<br><br>
-    <strong>Nota vasi in tessuto:</strong> I grow bags da 10L drenano eccellentemente ma i bordi si seccano anche dopo la pioggia. Controlla sempre i bordi laterali manualmente dopo giornate di pioggia.
-  </div>
-</div>`;
+    case 'meteo-pressione': return `<div class="amb-popup-label">Pressione</div>
+<div class="amb-popup-title">🌡️ Pressione — ${gv('w-pressure')}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">
+🟢 <strong>>1013 hPa</strong> → Alta pressione. Bel tempo. Ottimo per fotosintesi.<br>
+🟡 <strong>1000–1013 hPa</strong> → Variabile. Monitora.<br>
+🔴 <strong><1000 hPa</strong> → Possibile maltempo. Riduci irrigazione automatica.<br><br>
+Alta pressione → maggiore attività microbica nel Living Soil. La pila galvanica è più efficace con terreno umido e alta pressione.
+</div></div>`;
 
-    case 'meteo-eto':
-      return `<div class="amb-popup-label">Evapotraspirazione</div>
-<div class="amb-popup-title">💦 ETo — Evapotraspirazione</div>
-<div class="amb-popup-section">
-  <div style="font-size:36px;font-weight:800;color:var(--blue);margin-bottom:12px;">${w ? document.getElementById('w-et').textContent : '—'}</div>
-  <div style="color:var(--text2);font-size:13px;line-height:1.8;">
-    L'ETo (Evapotraspirazione di riferimento FAO) misura quanta acqua le piante e il suolo perdono in un giorno attraverso evaporazione e traspirazione.<br><br>
-    <strong>Fabbisogno idrico netto = ETo - Pioggia</strong><br><br>
-    🟢 ETo <2 mm → Fabbisogno minimo. 1 ciclo pompa al giorno.<br>
-    🟡 ETo 2-4 mm → Fabbisogno moderato. 1-2 cicli al giorno.<br>
-    🔴 ETo >4 mm → Alto fabbisogno. 2+ cicli + irrigazione manuale bordi.<br><br>
-    <strong>Per i tuoi vasi da 10L:</strong> Con ETo alta, i bordi in tessuto si disidratano in poche ore. Priorità: bagna i bordi ogni mattina quando ETo > 3 mm.
-  </div>
-</div>`;
+    case 'meteo-pioggia': return `<div class="amb-popup-label">Pioggia</div>
+<div class="amb-popup-title">🌧️ Pioggia — ${gv('w-rain')}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">
+🟢 <strong>0–2 mm</strong> → Irrigazione normale.<br>
+🟡 <strong>2–5 mm</strong> → Riduci di 1 ciclo il timer pompa.<br>
+🔴 <strong>>5 mm</strong> → Sospendi irrigazione automatica.<br><br>
+I grow bag da 10L drenano bene, ma i bordi si seccano anche dopo la pioggia. Controlla sempre i bordi laterali manualmente.
+</div></div>`;
 
-    case 'meteo-impatto':
-      return `<div class="amb-popup-label">Impatto Serra</div>
-<div class="amb-popup-title">🏡 Azioni Consigliate per la Serra</div>
+    case 'meteo-eto': return `<div class="amb-popup-label">Evapotraspirazione</div>
+<div class="amb-popup-title">💦 ETo — ${gv('w-et')}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">
+Quanta acqua perdono piante e suolo ogni giorno.<br>
+<strong>Fabbisogno netto = ETo − Pioggia</strong><br><br>
+🟢 <strong>ETo <2 mm</strong> → 1 ciclo/giorno.<br>
+🟡 <strong>ETo 2–4 mm</strong> → 1–2 cicli/giorno.<br>
+🔴 <strong>ETo >4 mm</strong> → 2+ cicli + irrigazione manuale bordi.<br><br>
+Con ETo alta, i bordi dei grow bag si disidratano in poche ore. Bagna i bordi ogni mattina.
+</div></div>`;
+
+    case 'meteo-impatto': return `<div class="amb-popup-label">Impatto Serra</div>
+<div class="amb-popup-title">🏡 Azioni Consigliate</div>
 <div class="amb-popup-section">
-  <div style="font-size:15px;font-weight:700;margin-bottom:8px;">${document.getElementById('w-irrig-main').textContent}</div>
-  <div style="color:var(--text2);font-size:13px;line-height:1.7;margin-bottom:16px;">${document.getElementById('w-irrig-detail').textContent}</div>
+  <div style="font-size:15px;font-weight:700;margin-bottom:8px;">${gv('w-irrig-main')}</div>
+  <div style="color:var(--text2);font-size:13px;line-height:1.7;margin-bottom:16px;">${gv('w-irrig-detail')}</div>
 </div>
 <div class="amb-popup-section">
   <div class="amb-popup-label">Checklist operativa</div>
   <div style="color:var(--text2);font-size:13px;line-height:2;">
-    ☐ Controlla umidità superficiale tutti i vasi<br>
-    ☐ Verifica bordi vasi (idrofobia?)<br>
-    ☐ Gocciolatori: tutti attivi e non ostruiti?<br>
-    ☐ Livello serbatoio 50L sufficiente?<br>
-    ☐ Timer pompa solare impostato correttamente?<br>
-    ☐ Pannello solare pulito e orientato?<br>
-    ☐ Magnete principale + Geomag in posizione?
+    ☐ Umidità superficiale tutti i vasi<br>
+    ☐ Bordi vasi (idrofobia?)<br>
+    ☐ Gocciolatori attivi e non ostruiti<br>
+    ☐ Livello serbatoio 50L sufficiente<br>
+    ☐ Timer pompa solare corretto<br>
+    ☐ Pannello solare pulito e orientato<br>
+    ☐ Magnete principale + Geomag in posizione
   </div>
 </div>`;
 
-    /* ── LUNA POP-UP ── */
-    case 'luna-fase':
-      const fc7 = [];
+    /* ── LUNA ── */
+    case 'luna-fase': {
+      const fc7=[];
       for(let i=0;i<8;i++){const d=new Date(today.getTime()+i*86400000);const a=getMoonAge(d);const p=getMoonPhase(a);fc7.push({d,p,ill:getMoonIllum(a)});}
-      return `<div class="amb-popup-label">Calendario Lunare</div>
+      return `<div class="amb-popup-label">Fase Lunare</div>
 <div class="amb-popup-title">${phase.emoji} ${phase.name}</div>
 <div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
-    📅 Data: <strong>${fmtFull(today)}</strong><br>
-    💡 Illuminazione: <strong>${getMoonIllum(age)}%</strong><br>
-    📆 Età lunare: <strong>${age.toFixed(1)} giorni</strong> su 29.5<br>
-    🌕 Luna Piena: <strong>${document.getElementById('dateFullMoon').textContent}</strong><br>
-    🌑 Luna Nuova: <strong>${document.getElementById('dateNewMoon').textContent}</strong>
+  <div style="font-size:13px;color:var(--text2);line-height:2;">
+    📅 ${fmtFull(today)}<br>💡 Illuminazione: <strong>${getMoonIllum(age)}%</strong><br>
+    📆 Età: <strong>${age.toFixed(1)}/29.5 giorni</strong><br>
+    🌕 Luna Piena: <strong>${gv('dateFullMoon')}</strong><br>
+    🌑 Luna Nuova: <strong>${gv('dateNewMoon')}</strong>
   </div>
 </div>
 <div class="amb-popup-section">
@@ -4018,158 +4016,117 @@ ${w ? `<div class="amb-popup-section">
     <span style="font-size:12px;color:var(--text3);">${p.name}</span>
     <span style="font-size:12px;color:#3a9fd8;">${ill}%</span>
   </div>`).join('')}
-</div>`;
+</div>`; }
 
-    case 'luna-piena':
-      return `<div class="amb-popup-label">Prossima Luna Piena</div>
-<div class="amb-popup-title">🌕 Calendario Luna Piena</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
-    📅 Prossima luna piena: <strong>${document.getElementById('dateFullMoon').textContent}</strong><br>
-    ⏳ Mancano: <strong>${document.getElementById('daysToFull').textContent} giorni</strong><br><br>
-    <strong>Cosa fare alla luna piena:</strong><br>
-    📸 Documenta visivamente tutti gli esperimenti (elettrocultura, pila galvanica, cerchi di Lakhovsky)<br>
-    🔍 Osserva la produzione di resine sulle piante in fioritura<br>
-    ⚡ Verifica Pantacle di rame e pila galvanica<br>
-    📊 Confronta piante con e senza sistemi sperimentali<br>
-    💧 Ottimo per somministrare melassa (massima attività microbica)<br><br>
-    <strong>Per le tue piante:</strong> Epsilon F1, Gaia F1, Medusa F1 sono in fioritura — la luna piena massimizza la produzione di terpeni e cannabinoidi.
-  </div>
-</div>`;
+    case 'luna-piena': return `<div class="amb-popup-label">Luna Piena</div>
+<div class="amb-popup-title">🌕 Prossima Luna Piena</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">
+📅 Data: <strong>${gv('dateFullMoon')}</strong><br>⏳ Mancano: <strong>${gv('daysToFull')} giorni</strong><br><br>
+<strong>Cosa fare:</strong><br>
+📸 Fotografa tutti gli esperimenti (Lakhovsky, pila galvanica, Pantacle)<br>
+🔍 Osserva produzione resine sulle piante in fioritura<br>
+⚡ Verifica tutti i circuiti<br>
+💧 Somministra melassa (massima attività microbica)
+</div></div>`;
 
-    case 'luna-nuova':
-      return `<div class="amb-popup-label">Prossima Luna Nuova</div>
-<div class="amb-popup-title">🌑 Calendario Luna Nuova</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
-    📅 Prossima luna nuova: <strong>${document.getElementById('dateNewMoon').textContent}</strong><br>
-    ⏳ Mancano: <strong>${document.getElementById('daysToNew').textContent} giorni</strong><br><br>
-    <strong>Cosa fare alla luna nuova:</strong><br>
-    🧫 Rinnova l'infuso di humus nel serbatoio<br>
-    📋 Pianifica la settimana e prepara additivi<br>
-    💧 Sciacqua il serbatoio da 50L<br>
-    🔧 Manutenzione generale sistema<br>
-    ⚙️ Controlla il timer della pompa solare<br><br>
-    <strong>Nota:</strong> Luna nuova = energia minima nelle piante. Evita trapianti o operazioni invasive. Momento ideale per la pulizia e preparazione.
-  </div>
-</div>`;
+    case 'luna-nuova': return `<div class="amb-popup-label">Luna Nuova</div>
+<div class="amb-popup-title">🌑 Prossima Luna Nuova</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">
+📅 Data: <strong>${gv('dateNewMoon')}</strong><br>⏳ Mancano: <strong>${gv('daysToNew')} giorni</strong><br><br>
+<strong>Cosa fare:</strong><br>
+🧫 Rinnova infuso humus nel serbatoio (5L + 100-150g)<br>
+📋 Pianifica la settimana e prepara additivi<br>
+💧 Sciacqua il serbatoio da 50L<br>
+🔧 Manutenzione generale sistema<br>
+⛔ Evita trapianti e operazioni invasive
+</div></div>`;
 
-    case 'luna-attivita':
-      return `<div class="amb-popup-label">Attività di Oggi</div>
+    case 'luna-attivita': return `<div class="amb-popup-label">Attività di Oggi</div>
 <div class="amb-popup-title">📋 ${advice.main}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">${advice.detail}</div></div>
 <div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;">${advice.detail}</div>
-</div>
-<div class="amb-popup-section">
-  <div class="amb-popup-label">Tag attività</div>
+  <div class="amb-popup-label">Tag</div>
   <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;">${(advice.tags||[]).map(t=>`<span class="json-tag">${t}</span>`).join('')}</div>
 </div>
 <div class="amb-popup-section">
-  <div class="amb-popup-label">La tua serra — azioni specifiche</div>
+  <div class="amb-popup-label">La tua serra</div>
   <div style="font-size:13px;color:var(--text2);line-height:1.7;">${advice.serra}</div>
 </div>`;
 
-    case 'luna-irrigazione':
-      return `<div class="amb-popup-label">Irrigazione Lunare</div>
-<div class="amb-popup-title">💧 Consiglio Irrigazione — ${phase.name}</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;">
-    ${phase.code === 'waxing_crescent' || phase.code === 'waxing_gibbous' || phase.code === 'first_quarter' ?
-      '🌿 <strong>Fase crescente:</strong> Le piante assorbono meglio. Ottimo per irrigazione con additivi biologici (melassa, infuso ortiche). La linfa sale verso foglie e fusti — massimizza la nutrizione fogliare.' :
-    phase.code === 'full' ?
-      '🌕 <strong>Luna Piena:</strong> Picco di assorbimento. Somministra la dose mensile di infuso di ortiche e miscela organica. Le radici assorbono con il massimo dell efficienza.' :
-    phase.code === 'waning_gibbous' || phase.code === 'last_quarter' || phase.code === 'waning_crescent' ?
-      '🌿 <strong>Fase calante:</strong> La linfa scende verso le radici. Ideale per humus e infuso di ortiche a livello radicale. Riduci leggermente la dose fogliare.' :
-      '🌑 <strong>Luna Nuova:</strong> Momento di reset. Rinnova l infuso di humus nel serbatoio. Sciacqua la tanica e prepara un nuovo infuso fresco.'}
-    <br><br>
-    <strong>Frequenza suggerita oggi:</strong><br>
-    🔄 Timer pompa: ${phase.code === 'new' || phase.code === 'waning_crescent' ? '1 ciclo/giorno — piante a riposo' : '1-2 cicli/giorno — piante attive'}<br>
-    💧 Bordi vasi: controlla ogni mattina<br>
-    🧫 Melassa (${phase.code === 'full' || phase.code === 'waxing_gibbous' ? '✅ oggi è ottimo' : 'ogni 15 giorni'})
-  </div>
-</div>`;
+    case 'luna-irrigazione': return `<div class="amb-popup-label">Irrigazione Lunare</div>
+<div class="amb-popup-title">💧 Irrigazione — ${phase.name}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">
+${phase.code==='waxing_crescent'||phase.code==='waxing_gibbous'||phase.code==='first_quarter'?
+'🌿 <strong>Fase crescente</strong>: le piante assorbono meglio. Ottimo per somministrare melassa (1ml/L) e infuso ortiche. La linfa sale verso foglie e fusti.':
+phase.code==='full'?'🌕 <strong>Luna Piena</strong>: picco di assorbimento. Somministra la dose mensile di infuso ortiche e miscela organica.':
+phase.code==='waning_gibbous'||phase.code==='last_quarter'||phase.code==='waning_crescent'?'🌿 <strong>Fase calante</strong>: linfa verso le radici. Priorità a humus e infuso in profondità. Riduci apporti fogliari.':
+'🌑 <strong>Luna Nuova</strong>: rinnova l'infuso di humus nel serbatoio. Sciacqua la tanica.'}<br><br>
+<strong>Timer pompa:</strong> ${phase.code==='new'||phase.code==='waning_crescent'?'1 ciclo/giorno (piante a riposo)':'1–2 cicli/giorno (piante attive)'}<br>
+<strong>Bordi vasi:</strong> controlla ogni mattina<br>
+<strong>Melassa:</strong> ${phase.code==='full'||phase.code==='waxing_gibbous'?'✅ Ottimo momento':'ogni 15 giorni'}
+</div></div>`;
 
-    case 'luna-nutrizione':
-      return `<div class="amb-popup-label">Nutrizione Lunare</div>
-<div class="amb-popup-title">🧪 Schema Nutrizione — ${phase.name}</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
-    <strong>Priorità nutritive oggi:</strong><br>
-    ${phase.code === 'waxing_crescent' || phase.code === 'first_quarter' ?
-      '🌿 <strong>Azoto (N)</strong> in primo piano — crescita vegetativa. Infuso ortiche (ricco di N) + miscela organica con fondi di caffè.' :
-    phase.code === 'waxing_gibbous' || phase.code === 'full' ?
-      '🌸 <strong>Potassio (K)</strong> per la fioritura — tè di banana con cenere di legna (ogni 2 settimane, mesi 5-8). Massima assorbimento.' :
-    phase.code === 'waning_gibbous' || phase.code === 'last_quarter' ?
-      '🌿 <strong>Radici e microbi</strong> — humus e infuso in profondità. Pila galvanica ferro-rame più efficace. Priorità biologica.' :
-      '⚙️ <strong>Pausa nutritiva</strong> — luna nuova. Prepara i prossimi additivi ma non somministrare oggi.'}
-    <br><br>
-    <strong>Additivi del mese in scadenza:</strong><br>
-    🍯 Melassa (1 ml/L): ogni 15 gg<br>
-    🌿 Ortiche + Miscela + Humus: 1x/mese<br>
-    🍌 Tè banana + cenere: ogni 2 sett. (mesi 5-8)<br>
-    🌾 Generatore etilene: mesi 7-8
-  </div>
-</div>`;
+    case 'luna-nutrizione': return `<div class="amb-popup-label">Nutrizione</div>
+<div class="amb-popup-title">🧪 Nutrizione — ${phase.name}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">
+<strong>Priorità nutritive oggi:</strong><br>
+${phase.code==='waxing_crescent'||phase.code==='first_quarter'?'🌿 <strong>Azoto (N)</strong> — crescita vegetativa. Infuso ortiche + fondi caffè.':
+phase.code==='waxing_gibbous'||phase.code==='full'?'🌸 <strong>Potassio (K)</strong> — fioritura. Tè di banana con cenere di legna (ogni 2 sett., mesi 5-8).':
+phase.code==='waning_gibbous'||phase.code==='last_quarter'?'🌿 <strong>Radici e microbi</strong> — humus in profondità. Pila galvanica ferro-rame più efficace.':
+'⚙️ <strong>Pausa nutritiva</strong> — prepara prossimi additivi.'}<br><br>
+<strong>Calendario additivi:</strong><br>
+🍯 Melassa 1ml/L → ogni 15 gg<br>
+🌿 Ortiche + Miscela + Humus → 1×/mese<br>
+🍌 Tè banana + cenere → ogni 2 sett. (mesi 5-8)<br>
+🍎 Generatore etilene → mesi 7-8
+</div></div>`;
 
-    case 'luna-elettro':
-      return `<div class="amb-popup-label">Elettrocultura Lunare</div>
+    case 'luna-elettro': return `<div class="amb-popup-label">Elettrocultura</div>
 <div class="amb-popup-title">⚡ Elettrocultura — ${phase.name}</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
-    <strong>Stato consigliato dei sistemi:</strong><br>
-    ${phase.code === 'first_quarter' || phase.code === 'full' ?
-      '⚡ <strong>OTTIMO</strong> — Massima energia. Verifica e attiva tutti i sistemi: pila galvanica, cerchi Lakhovsky, antenne rame, Pantacle.' :
-    phase.code === 'waxing_crescent' || phase.code === 'waxing_gibbous' ?
-      '🟢 <strong>BUONO</strong> — Fase crescente. I sistemi funzionano bene. Controlla il fissaggio dei Geomag sui gocciolatori.' :
-    phase.code === 'waning_gibbous' ?
-      '🟡 <strong>PILA GALVANICA</strong> — Fase calante, energia verso le radici. La pila ferro-rame è particolarmente efficace ora.' :
-      '🔧 <strong>MANUTENZIONE</strong> — Fase di riposo. Ideale per controllare l integrit dei circuiti: chiodi arrugginiti, filo rame, archi Pantacle.'}
-    <br><br>
-    <strong>Checklist sistemi attivi:</strong><br>
-    ☐ Bastoncini elettrocultura (10 pz) — stabili?<br>
-    ☐ Filo rame a spirale integro?<br>
-    ☐ Cerchi Lakhovsky — estremit sovrapposte 2-3 cm?<br>
-    ☐ Pantacle rame — archi tra vasi in contatto?<br>
-    ☐ Pila galvanica — chiodo ferro + filo rame collegati?<br>
-    ☐ Magnete principale vicino al tubo principale?<br>
-    ☐ Geomag (1 per gocciolatoio) — fissati con nastro?
-  </div>
-</div>`;
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">
+<strong>Stato consigliato:</strong><br>
+${phase.code==='first_quarter'||phase.code==='full'?'⚡ <strong>OTTIMO</strong> — Attiva e verifica tutti i sistemi.':
+phase.code==='waxing_crescent'||phase.code==='waxing_gibbous'?'🟢 <strong>BUONO</strong> — Controlla fissaggio Geomag.':
+phase.code==='waning_gibbous'?'⚗️ <strong>PILA GALVANICA</strong> — particolarmente efficace ora (fase calante).':
+'🔧 <strong>MANUTENZIONE</strong> — controlla integrità circuiti.'}<br><br>
+<strong>Checklist:</strong><br>
+☐ Bastoncini elettrocultura (10) stabili<br>
+☐ Filo rame a spirale integro<br>
+☐ Cerchi Lakhovsky: estremità sovrapposte 2-3 cm, 1 cm di spazio<br>
+☐ Pantacle rame: archi tra vasi in contatto col terreno<br>
+☐ Pila galvanica: chiodo ferro + filo rame collegati<br>
+☐ Magnete principale vicino al tubo principale<br>
+☐ Geomag (1/gocciolatoio) fissati con nastro
+</div></div>`;
 
-    case 'luna-avviso':
-      return `<div class="amb-popup-label">Avviso Lunare</div>
-<div class="amb-popup-title">⚠️ Avvisi Importanti</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
-    ${phase.code === 'full' ? '🌕 <strong>LUNA PIENA:</strong> Massima vitalità. Osserva attentamente le piante — eventuali problemi (muffe, carenze) emergono chiaramente. Documenta con foto.<br><br>' : ''}
-    ${phase.code === 'new' ? '🌑 <strong>LUNA NUOVA:</strong> Evita trapianti e operazioni invasive. Giornata ideale per pulizia e manutenzione.<br><br>' : ''}
-    ${age > 25 ? '⚠️ Fine del ciclo lunare (gg ' + age.toFixed(0) + '/29.5). Preparati per la luna nuova — rinnova humus e pulisci serbatoio.<br><br>' : ''}
-    ${age < 2 ? '🌑 Luna nuova appena iniziata. Ciclo fresco — ottimo per impostare nuovi obiettivi e preparare additivi del mese.<br><br>' : ''}
-    <strong>Promemoria manuali:</strong><br>
-    🌱 I vasi in tessuto si seccano ai bordi — bagna manualmente ogni 7-10 giorni<br>
-    🧲 Controlla che i Geomag siano sul polo Nord verso il basso<br>
-    🍂 Mesi 7-8: sostituisci la frutta per etilene ogni 3-4 giorni
-  </div>
-</div>`;
+    case 'luna-avviso': return `<div class="amb-popup-label">Avviso</div>
+<div class="amb-popup-title">⚠️ Avvisi Lunari</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">
+${phase.code==='full'?'🌕 <strong>LUNA PIENA</strong>: documenta gli esperimenti. Osserva resine e tricomi.<br><br>':''}
+${phase.code==='new'?'🌑 <strong>LUNA NUOVA</strong>: evita trapianti. Giornata per pulizia e manutenzione.<br><br>':''}
+${age>26?'⚠️ Fine ciclo (gg '+age.toFixed(0)+'/29.5). Rinnova humus e pulisci serbatoio presto.<br><br>':''}
+${age<2?'🌑 Ciclo fresco iniziato. Imposta obiettivi del mese e prepara additivi.<br><br>':''}
+<strong>Promemoria permanenti:</strong><br>
+🌱 Bordi vasi: bagna manualmente ogni 7-10 gg<br>
+🧲 Geomag: polo Nord verso il basso sui gocciolatori<br>
+🍎 Mesi 7-8: cambia frutta etilene ogni 3-4 gg
+</div></div>`;
 
-    case 'luna-previsione':
-      const next7 = [];
+    case 'luna-previsione': {
+      const next7=[];
       for(let i=1;i<=7;i++){const d=new Date(today.getTime()+i*86400000);const a=getMoonAge(d);const p=getMoonPhase(a);const adv=getAdvice(p.code);next7.push({d,p,adv,ill:getMoonIllum(a)});}
-      return `<div class="amb-popup-label">Previsione Lunare</div>
+      return `<div class="amb-popup-label">Previsione</div>
 <div class="amb-popup-title">🔭 Prossimi 7 giorni</div>
 ${next7.map(({d,p,adv,ill})=>`<div class="amb-popup-section" style="padding:10px 0;">
-  <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
     <span style="font-size:24px;">${p.emoji}</span>
-    <div>
-      <div style="font-weight:700;">${fmtIT(d)}</div>
-      <div style="font-size:12px;color:var(--text3);">${p.name} · ${ill}% illuminazione</div>
-    </div>
+    <div><div style="font-weight:700;">${fmtIT(d)}</div><div style="font-size:12px;color:var(--text3);">${p.name} · ${ill}%</div></div>
   </div>
   <div style="font-size:12px;color:var(--text2);">${adv.main}</div>
-</div>`).join('')}`;
+</div>`).join('')}`; }
 
-    case 'luna-piante':
-      const pianteList = [
+    case 'luna-piante': {
+      const piante=[
         {nome:'Epsilon F1',id:7,tipo:'Auto',fase:'Fioritura'},
         {nome:'Milky Way F1',id:1,tipo:'Auto',fase:'Fioritura'},
         {nome:'Titan F1',id:2,tipo:'Auto',fase:'Fioritura'},
@@ -4181,499 +4138,177 @@ ${next7.map(({d,p,adv,ill})=>`<div class="amb-popup-section" style="padding:10px
         {nome:'Royal Gorilla',id:10,tipo:'Fem',fase:'Vegetativa'},
         {nome:'Mexican Rush',id:9,tipo:'Fem',fase:'Vegetativa'}
       ];
-      const lunaConsiglioPerPianta = (p) => {
-        if(p.fase==='Fioritura') return phase.code==='full'||phase.code==='waxing_gibbous' ? '🌸 Ottimo per resine — tè banana ogni 2 sett.' : phase.code==='new' ? '⏸️ Pausa — non somministrare oggi' : '✅ '+advice.main.split('—')[0];
-        return phase.code==='waxing_crescent'||phase.code==='first_quarter' ? '🌿 Ottimo per crescita vegetativa — somministra ortiche' : phase.code==='full' ? '💪 Massimo assorbimento — miscela organica' : '✅ '+advice.main.split('—')[0];
-      };
-      return `<div class="amb-popup-label">Correlazione Luna-Piante</div>
+      const cons=(p)=>p.fase==='Fioritura'?(phase.code==='full'||phase.code==='waxing_gibbous'?'🌸 Ottimo per resine — tè banana':phase.code==='new'?'⏸️ Pausa':'✅ '+advice.main.split('—')[0]):(phase.code.includes('waxing')||phase.code==='first_quarter'?'🌿 Veg ottimale — ortiche':phase.code==='full'?'💪 Max assorbimento':'✅ '+advice.main.split('—')[0]);
+      return `<div class="amb-popup-label">Correlazione</div>
 <div class="amb-popup-title">🌱 Analisi per ogni pianta</div>
-<div class="amb-popup-section">
-  <div style="font-size:12px;color:var(--text3);margin-bottom:12px;">Fase attuale: ${phase.emoji} ${phase.name} · ${getMoonIllum(age)}% illuminazione</div>
-  ${pianteList.map(p=>`<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
-    <div>
-      <div style="font-weight:700;font-size:13px;">${p.nome} <span style="font-size:10px;color:var(--text3);">ID:${p.id}</span></div>
-      <div style="font-size:11px;color:var(--text3);">${p.tipo} · ${p.fase}</div>
-    </div>
-    <div style="font-size:11px;color:var(--text2);text-align:right;max-width:160px;line-height:1.4;">${lunaConsiglioPerPianta(p)}</div>
-  </div>`).join('')}
-</div>`;
+<div style="font-size:12px;color:var(--text3);margin-bottom:12px;">${phase.emoji} ${phase.name} · ${getMoonIllum(age)}% illuminazione</div>
+${piante.map(p=>`<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+  <div><div style="font-weight:700;font-size:13px;">${p.nome} <span style="font-size:10px;opacity:.6">ID:${p.id}</span></div><div style="font-size:11px;color:var(--text3);">${p.tipo} · ${p.fase}</div></div>
+  <div style="font-size:11px;color:var(--text2);text-align:right;max-width:160px;line-height:1.4;">${cons(p)}</div>
+</div>`).join('')}`; }
 
-    /* ── BIO POP-UP ── */
-    case 'bio-oggi':
-      const bioAdv = ADVICE[bioConst.type];
+    /* ── BIO ── */
+    case 'bio-oggi': {
+      const adv=ADVICE[bioConst.type];
       return `<div class="amb-popup-label">Biodinamica Oggi</div>
 <div class="amb-popup-title">${bioType.icon} Giorno ${bioType.label}</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;">
-    📅 ${fmtFull(today)}<br>
-    ♐ Costellazione: <strong>${bioConst.sym} ${bioConst.name}</strong><br>
-    🌍 Elemento: <strong>${bioConst.element}</strong><br>
-    📊 Qualità giornata: <strong style="color:${bioConst.type==='frutto'?'#ff9800':bioConst.type==='fiore'?'#ab47bc':bioConst.type==='radice'?'#4caf76':'#42a5c8'}">${bioType.label.toUpperCase()}</strong>
-  </div>
-</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">
+📅 ${fmtFull(today)}<br>
+♐ Costellazione: <strong>${bioConst.sym} ${bioConst.name}</strong><br>
+🌍 Elemento: <strong>${bioConst.element}</strong>
+</div></div>
 <div class="amb-popup-section">
   <div class="amb-popup-label">Consigli per la serra</div>
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;">${bioAdv.tips.map(t=>'✅ '+t).join('<br>')}</div>
+  <div style="font-size:13px;color:var(--text2);line-height:1.7;">${adv.tips.map(t=>'✅ '+t).join('<br>')}</div>
 </div>
 <div class="amb-popup-section">
-  <div class="amb-popup-label">Cosa evitare oggi</div>
-  <div style="font-size:13px;color:var(--orange);line-height:1.7;">
+  <div class="amb-popup-label">Cosa evitare</div>
+  <div style="font-size:13px;color:var(--orange);">
     ${bioConst.type==='frutto'?'❌ Non trapiantare. Non potare in modo invasivo.':
     bioConst.type==='fiore'?'❌ Evita concimazioni azotate pesanti.':
-    bioConst.type==='radice'?'❌ Evita di disturbare il substrato in superficie.':
-    '❌ Non è il giorno migliore per raccolta o potature importanti.'}
+    bioConst.type==='radice'?'❌ Non disturbare la superficie del substrato.':
+    '❌ Non ideale per raccolta o potature importanti.'}
   </div>
-</div>`;
+</div>`; }
 
-    case 'bio-elettro':
-      const bioElettroMap = {
-        frutto: {titolo:'🍊 Giorno Frutto × Elettrocultura', testo:'Giorno ottimo per la produzione di resine e frutti. Le antenne di elettrocultura e la pila galvanica ferro-rame sono particolarmente attive in questo contesto energetico. La micro-corrente favorisce il trasporto di Potassio e Magnesio verso le zone produttive. Consiglio: verifica che la punta di rame superi la cima di ogni pianta.', azione:'⚡ Attiva e verifica tutti i circuiti. Somministra tè di banana (K) se siamo nei mesi 5-8.'},
-        fiore: {titolo:'🌸 Giorno Fiore × Elettrocultura', testo:'I giorni Fiore sono associati a Aria e Luce — elementi che amplificano l effetto dell elettrocultura atmosferica. I bastoncini di rame captano cariche elettrostatiche meglio in giornate secche con alta pressione. I cerchi di Lakhovsky risuonano con le frequenze cellulari delle cime in fioritura.', azione:'🔁 Controlla i cerchi di Lakhovsky: sovrapposizione 2-3 cm con 1 cm di spazio. Ideale per documentare visivamente la crescita delle cime.'},
-        radice: {titolo:'🌿 Giorno Radice × Elettrocultura', testo:'I giorni Radice (Terra) sono i più potenti per la pila galvanica ferro-rame. La micro-corrente ionizza i nutrienti nel terreno umido e li rende immediatamente disponibili alle radici. L humus aggiunto oggi sarà assorbito con massima efficienza.', azione:'⚗️ Versa un po di acqua con melassa direttamente sopra il chiodo di ferro. Aumenta la conducibilità del suolo e l efficacia della pila.'},
-        foglia: {titolo:'💧 Giorno Foglia × Elettrocultura', testo:'I giorni Foglia (Acqua) sono associati all elemento liquido. L acqua magnetizzata/strutturata dal sistema Geomag è teoricamente più attiva in questi giorni. Il polo Nord del magnete favorisce la crescita vegetativa. Il Pantacle di rame distribuisce uniformemente le cariche tra tutti i vasi.', azione:'🧲 Controlla il fissaggio dei Geomag su ogni gocciolatoio. Verifica il magnete principale vicino al tubo principale.'}
+    case 'bio-elettro': {
+      const bioElMap={
+        frutto:{t:'🍊 Giorno Frutto × Elettrocultura',d:'Ottimo per la produzione di resine. La pila galvanica ferro-rame e le antenne rame sono molto attive. La micro-corrente favorisce Potassio e Magnesio verso le zone produttive.',a:'⚡ Verifica tutti i circuiti. Somministra tè banana (K) se siamo nei mesi 5-8.'},
+        fiore:{t:'🌸 Giorno Fiore × Elettrocultura',d:'I giorni Fiore (Aria/Luce) amplificano l'effetto dell'elettrocultura atmosferica. I bastoncini di rame captano meglio con alta pressione.',a:'🔁 Controlla i cerchi Lakhovsky: 2-3 cm sovrapposizione, 1 cm spazio. Documenta la crescita.'},
+        radice:{t:'🌿 Giorno Radice × Elettrocultura',d:'I giorni Radice (Terra) sono i più potenti per la pila galvanica. La micro-corrente ionizza i nutrienti rendendoli disponibili alle radici.',a:'⚗️ Versa acqua con melassa sul chiodo di ferro per aumentare la conducibilità.'},
+        foglia:{t:'💧 Giorno Foglia × Elettrocultura',d:'I giorni Foglia (Acqua) attivano il sistema Geomag. L'acqua strutturata è teoricamente più attiva. Il Pantacle distribuisce le cariche tra tutti i vasi.',a:'🧲 Controlla fissaggio Geomag su ogni gocciolatoio e il magnete principale.'}
       };
-      const bem = bioElettroMap[bioConst.type] || bioElettroMap.frutto;
-      return `<div class="amb-popup-label">Biodinamica × Elettrocultura</div>
-<div class="amb-popup-title">${bem.titolo}</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;">${bem.testo}</div>
-</div>
-<div class="amb-popup-section">
-  <div class="amb-popup-label">Azione consigliata oggi</div>
-  <div style="font-size:13px;color:var(--green3);line-height:1.7;">${bem.azione}</div>
-</div>`;
+      const m=bioElMap[bioConst.type]||bioElMap.frutto;
+      return `<div class="amb-popup-label">Bio × Elettrocultura</div>
+<div class="amb-popup-title">${m.t}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">${m.d}</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">Azione oggi</div><div style="font-size:13px;color:var(--green3);line-height:1.7;">${m.a}</div></div>`; }
 
-    /* ── AI SERRA POP-UP ── */
-    case 'ai-giorno':
-      return `<div class="amb-popup-label">Consigli del Giorno</div>
-<div class="amb-popup-title">🌱 Consigli AI — Oggi</div>
-<div class="amb-popup-section">
-  <div id="aip-giorno-content" style="font-size:13px;color:var(--text2);line-height:1.7;">${document.getElementById('aic-giorno').textContent}</div>
-</div>
-<div class="amb-popup-section">
-  <div class="amb-popup-label">Fonte</div>
-  <div style="font-size:11px;color:var(--text3);">Basato su ai_consigli.json · Guida Royal Queen Seeds · Manuale Living Soil</div>
-</div>`;
-
-    case 'ai-tecniche':
-      return `<div class="amb-popup-label">Tecniche Avanzate</div>
-<div class="amb-popup-title">🔬 Tecniche Living Soil</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;">${document.getElementById('aic-tecniche').textContent}</div>
-</div>
-<div class="amb-popup-section">
-  <div class="amb-popup-label">Sistema completo attivo</div>
-  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
-    ✅ BioBizz Light-Mix + Fibra cocco + Super Soil + Humus<br>
-    ✅ Pompa solare + gocciolatori (1/pianta)<br>
-    ✅ Elettrocultura: bastoncini rame + Lakhovsky + Pantacle<br>
-    ✅ Acqua strutturata: magnete principale + 10 Geomag<br>
-    ✅ Pila galvanica ferro-rame (1/vaso)<br>
-    ✅ Escavatori di luce (dischi Mylar)
-  </div>
-</div>`;
-
-    case 'ai-avvisi':
-      return `<div class="amb-popup-label">Avvisi Importanti</div>
-<div class="amb-popup-title">⚠️ Avvisi AI Serra</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;">${document.getElementById('aic-avvisi').textContent}</div>
-</div>
-<div class="amb-popup-section">
-  <div class="amb-popup-label">Avvisi permanenti sistema</div>
-  <div style="font-size:13px;color:var(--orange);line-height:1.8;">
-    ⚠️ Vasi in tessuto: bordi idrofobici se non bagnati ogni 7-10 giorni<br>
-    ⚠️ Tanica 50L: agita ogni settimana + rinnova infuso humus mensile<br>
-    ⚠️ Melassa SOLO in bottiglia separata — mai nel serbatoio principale<br>
-    ⚠️ Chiodo ferro pila galvanica: NON usare acciaio inox<br>
-    ⚠️ Cerchi Lakhovsky: le estremità NON devono toccarsi (isolate)<br>
-    ⚠️ Mesi 7-8: frutto etilene da cambiare ogni 3-4 giorni
-  </div>
-</div>`;
-
-    case 'ai-incrocio':
-      return `<div class="amb-popup-label">Incrocio Dati</div>
-<div class="amb-popup-title">🔗 Analisi Incrociata</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;">${document.getElementById('aic-incrocio').textContent}</div>
-</div>`;
-
-    case 'ai-analisi':
-      return `<div class="amb-popup-label">Analisi Completa</div>
-<div class="amb-popup-title">🔬 Meteo × Luna × Bio — Analisi Incrociata</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;" id="aip-analisi-full">${document.getElementById('ai-analisi-preview').textContent}</div>
-</div>`;
-
-    default:
-      return `<div class="amb-popup-title">ℹ️ Informazioni</div><div style="color:var(--text2);font-size:13px;">Dati non disponibili per questo elemento.</div>`;
+    default: return `<div class="amb-popup-title">ℹ️ Info</div><div style="color:var(--text2);font-size:13px;">Dati non disponibili.</div>`;
   }
 }
 
-/* ══════════════════════════════════════════════════════════════
-   METEO — override loadWeather per salvare i dati
-══════════════════════════════════════════════════════════════ */
-const _origLoadWeather = typeof loadWeather === 'function' ? loadWeather : null;
-async function loadWeather() {
-  if (_origLoadWeather) {
-    await _origLoadWeather();
-    // Salva i dati per uso incrociato
-    window._ambWeather = { loaded: true };
-    renderAIAnalisi();
-    buildForecastClickable();
-  }
-}
-
-function buildForecastClickable() {
-  // Rende ogni riga del forecast cliccabile
-  const fc = document.getElementById('w-forecast');
-  if (!fc) return;
-  const rows = fc.querySelectorAll('div[style*="border-bottom"]');
-  rows.forEach((row, i) => {
-    row.style.cursor = 'pointer';
-    row.onclick = () => openForecastPopup(i);
-  });
-}
-
+/* ── Popup forecast ── */
 function openForecastPopup(dayIdx) {
-  const today = new Date();
-  const d = new Date(today.getTime() + dayIdx * 86400000);
-  const age = getMoonAge(d);
-  const phase = getMoonPhase(age);
-  const bioConst = getDayType(d);
-  const bioType = DAY_TYPES[bioConst.type];
-  const adv = getAdvice(phase.code);
-  openAmbPopup('_forecast_' + dayIdx);
-  // Override popup content
-  setTimeout(() => {
-    const content = document.getElementById('amb-popup-content');
-    if (!content) return;
-    content.innerHTML = `<div class="amb-popup-label">${dayIdx===0?'Oggi':fmtIT(d)}</div>
-<div class="amb-popup-title">${dayIdx===0?'📅 Oggi':'📅 '+fmtIT(d)}</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
-    🌙 Luna: <strong>${phase.emoji} ${phase.name}</strong> (${getMoonIllum(age)}% illuminazione)<br>
-    🌿 Biodinamica: <strong>${bioType.icon} Giorno ${bioType.label}</strong> · ${bioConst.sym} ${bioConst.name}<br>
-    📋 Consiglio lunare: <strong>${adv.main}</strong>
-  </div>
-</div>
-<div class="amb-popup-section">
-  <div class="amb-popup-label">Azione consigliata</div>
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;">${adv.detail}</div>
-</div>
-<div class="amb-popup-section">
-  <div class="amb-popup-label">Serra — operazioni specifiche</div>
-  <div style="font-size:13px;color:var(--green3);line-height:1.7;">${adv.serra}</div>
-</div>`;
-  }, 50);
+  const today=new Date();
+  const d=new Date(today.getTime()+dayIdx*86400000);
+  const a=getMoonAge(d); const p=getMoonPhase(a); const adv=getAdvice(p.code);
+  const bioC=getDayType(d); const bioT=DAY_TYPES[bioC.type];
+  const overlay=document.getElementById('amb-popup-overlay');
+  const content=document.getElementById('amb-popup-content');
+  if(!overlay||!content) return;
+  content.innerHTML=`<div class="amb-popup-label">${dayIdx===0?'Oggi':fmtIT(d)}</div>
+<div class="amb-popup-title">📅 ${fmtIT(d)}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">
+🌙 Luna: <strong>${p.emoji} ${p.name}</strong> (${getMoonIllum(a)}%)<br>
+🌿 Bio: <strong>${bioT.icon} Giorno ${bioT.label}</strong> · ${bioC.sym} ${bioC.name}
+</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">Consiglio lunare</div>
+<div style="font-size:13px;color:var(--text2);line-height:1.7;">${adv.main}<br><br>${adv.detail}</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">Serra</div>
+<div style="font-size:13px;color:var(--green3);line-height:1.7;">${adv.serra}</div></div>`;
+  overlay.style.display='flex'; document.body.style.overflow='hidden';
+}
+
+/* ── Popup fase lunare dalla tabella ── */
+function openPhasePopup(code) {
+  const pNames={new:'🌑 Luna Nuova',waxing_crescent:'🌒 Luna Crescente',first_quarter:'🌓 Primo Quarto',waxing_gibbous:'🌔 Gibbosa Crescente',full:'🌕 Luna Piena',waning_gibbous:'🌖 Gibbosa Calante',last_quarter:'🌗 Ultimo Quarto',waning_crescent:'🌘 Luna Calante'};
+  const adv=getAdvice(code);
+  const overlay=document.getElementById('amb-popup-overlay');
+  const content=document.getElementById('amb-popup-content');
+  if(!overlay||!content) return;
+  content.innerHTML=`<div class="amb-popup-label">Fase Lunare</div>
+<div class="amb-popup-title">${pNames[code]||code}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">${adv.detail}</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">Tag</div>
+<div style="display:flex;flex-wrap:wrap;gap:6px;">${(adv.tags||[]).map(t=>`<span class="json-tag">${t}</span>`).join('')}</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">Serra</div>
+<div style="font-size:13px;color:var(--text2);line-height:1.7;">${adv.serra}</div></div>`;
+  overlay.style.display='flex'; document.body.style.overflow='hidden';
 }
 
 /* ══════════════════════════════════════════════════════════════
-   LUNA — Carica e popola 6 sezioni
+   LUNA — 6 sezioni cliccabili
 ══════════════════════════════════════════════════════════════ */
 async function loadLunaConsigli6() {
-  // Prima popola con dati calcolati localmente (sempre disponibili)
-  const today = new Date();
-  const age = getMoonAge(today);
-  const phase = getMoonPhase(age);
-  const advice = getAdvice(phase.code);
-  const setVal = (id, val) => { const el=document.getElementById(id); if(el) el.textContent=val; };
+  const today=new Date();
+  const age=getMoonAge(today); const phase=getMoonPhase(age); const advice=getAdvice(phase.code);
+  const setVal=(id,val)=>{const e=document.getElementById(id);if(e)e.textContent=val;};
+  // Dati calcolati localmente (sempre disponibili)
   setVal('lc-attivita', advice.main);
-  setVal('lc-irrigazione', phase.code==='full'?'Massimo assorbimento — ottimo per infuso ortiche':
-    phase.code.includes('waxing')?'Fase crescente — piante assorbono attivamente':
-    phase.code==='new'?'Luna nuova — rinnova infuso humus nel serbatoio':
-    'Fase calante — priorità alle radici');
-  setVal('lc-nutrizione', phase.code.includes('waxing')||phase.code==='first_quarter'?
-    'Azoto in primo piano — infuso ortiche + caffè':
-    phase.code.includes('full')||phase.code==='waxing_gibbous'?
-    'Potassio — tè banana + cenere':
-    phase.code.includes('waning')||phase.code==='last_quarter'?
-    'Radici — humus + infuso in profondità':'Pausa nutritiva — prepara additivi');
-  setVal('lc-elettro', phase.code==='full'||phase.code==='first_quarter'?
-    '⚡ OTTIMO — verifica e attiva tutti i circuiti':
-    phase.code==='waning_gibbous'?'⚗️ Pila galvanica molto efficace oggi':
-    '🔧 Controlla integrità circuiti');
-  setVal('lc-avviso', age>26?'⚠️ Fine ciclo (gg '+age.toFixed(0)+'). Rinnova humus presto.':
-    age<1.5?'🌑 Luna nuova: evita trapianti oggi':
-    phase.code==='full'?'🌕 Luna piena: documenta gli esperimenti':'Nessun avviso urgente');
-  setVal('lc-previsione', (() => {
-    const tom = new Date(today.getTime()+86400000);
-    const pa = getMoonAge(tom); const pp = getMoonPhase(pa);
-    return 'Domani: '+pp.emoji+' '+pp.name+' ('+getMoonIllum(pa)+'%)';
-  })());
-  // Aggiorna luna-piante-preview
-  const preview = document.getElementById('luna-piante-preview');
-  if(preview) preview.textContent = `${phase.emoji} ${phase.name} — ${advice.main.split('—')[0].trim()}. Tocca per analisi dettagliata per ogni pianta.`;
-  // Poi prova a caricare dal JSON (se disponibile)
+  setVal('lc-irrigazione', phase.code==='full'?'Max assorbimento — infuso ortiche':phase.code.includes('waxing')?'Fase crescente — piante assorbono':phase.code==='new'?'Rinnova infuso humus':'Fase calante — priorità radici');
+  setVal('lc-nutrizione', phase.code.includes('waxing')||phase.code==='first_quarter'?'Azoto — infuso ortiche + caffè':phase.code==='full'||phase.code==='waxing_gibbous'?'Potassio — tè banana + cenere':phase.code.includes('waning')||phase.code==='last_quarter'?'Radici — humus + infuso':'Pausa nutritiva');
+  setVal('lc-elettro', phase.code==='full'||phase.code==='first_quarter'?'⚡ OTTIMO — verifica tutti i circuiti':phase.code==='waning_gibbous'?'⚗️ Pila galvanica efficace oggi':'🔧 Controlla integrità circuiti');
+  setVal('lc-avviso', age>26?'Fine ciclo (gg '+age.toFixed(0)+'). Rinnova humus.':age<1.5?'Luna nuova: evita trapianti oggi':phase.code==='full'?'Luna piena: documenta esperimenti':'Nessun avviso urgente');
+  const tom=new Date(today.getTime()+86400000); const pa=getMoonAge(tom); const pp=getMoonPhase(pa);
+  setVal('lc-previsione', 'Domani: '+pp.emoji+' '+pp.name+' ('+getMoonIllum(pa)+'%)');
+  // Aggiorna preview luna-piante
+  const prev=document.getElementById('luna-piante-preview');
+  if(prev) prev.textContent=phase.emoji+' '+phase.name+' · '+advice.main.split('—')[0].trim()+'. Tocca per analisi per ogni pianta.';
+  // Prova JSON
   try {
-    const data = await fetchGHJson('luna_consigli.json');
-    if (!data) return;
-    window._ambLunaJSON = data;
-    const meta = document.getElementById('luna-json-meta');
-    if(meta) meta.textContent = 'JSON: '+fmtJsonDate(data.aggiornato||data.updated_at||data.data);
-    const items = data.consigli||data.items||data.consigli_lunari||[];
-    if(items.length>0) {
-      const find = (keywords) => {
-        for(const k of keywords) { const f=items.find(i=>(i.titolo||'').toLowerCase().includes(k)||(i.testo||'').toLowerCase().includes(k)); if(f) return (f.titolo?f.titolo+': ':'')+( f.testo||f.body||''); }
-        return null;
-      };
-      const a=find(['attivit','oggi','giorno']); if(a) setVal('lc-attivita',a);
-      const ir=find(['irrig','acqua']); if(ir) setVal('lc-irrigazione',ir);
-      const nu=find(['nutriz','fertil','melassa','ortic']); if(nu) setVal('lc-nutrizione',nu);
-      const el=find(['elettro','rame','lakhovsky','pila']); if(el) setVal('lc-elettro',el);
-      const av=find(['avvis','alert','attenzi']); if(av) setVal('lc-avviso',av);
-      const pr=find(['previs','prossim']); if(pr) setVal('lc-previsione',pr);
-    }
-    // Popola anche luna-json-content (compatibilità)
-    const el2=document.getElementById('luna-json-content');
-    if(el2) { el2.innerHTML=items.map(item=>`<div class="json-item info-item">${item.titolo?`<div class="json-item-title">${item.titolo}</div>`:''}<div class="json-item-body">${item.testo||item.body||''}</div></div>`).join(''); }
-  } catch(e) { /* JSON non disponibile — dati locali già mostrati */ }
-}
-
-/* ══════════════════════════════════════════════════════════════
-   AI CONSIGLI
-══════════════════════════════════════════════════════════════ */
-async function loadAIConsigli() {
-  const setVal = (id,val) => { const el=document.getElementById(id); if(el) el.textContent=val; };
-  // Default locali
-  const today = new Date();
-  const age = getMoonAge(today);
-  const phase = getMoonPhase(age);
-  const advice = getAdvice(phase.code);
-  const bioConst = getDayType(today);
-  const bioType = DAY_TYPES[bioConst.type];
-  setVal('aic-giorno', `${phase.emoji} ${phase.name} + ${bioType.icon} Giorno ${bioType.label} — ${advice.main}`);
-  setVal('aic-tecniche', 'Living Soil water-only: Super Soil + BioBizz Light-Mix + Humus. Additivi: melassa 1ml/L ogni 15gg, ortiche+miscela+humus 1x/mese, tè banana mesi 5-8.');
-  setVal('aic-avvisi', 'Bordi vasi in tessuto: bagnare manualmente ogni 7-10 giorni. Melassa solo in bottiglia separata. Serbatoio: agitare ogni settimana.');
-  setVal('aic-incrocio', `Luna ${phase.name} + Bio ${bioType.label} + Meteo attuale → ${advice.main}. ${advice.detail.substring(0,80)}...`);
-  // Carica dal JSON
-  try {
-    const data = await fetchGHJson('ai_consigli.json');
+    const data=await fetchGHJson('luna_consigli.json');
     if(!data) return;
-    window._ambAIJSON = data;
-    const meta = document.getElementById('ai-json-meta');
-    if(meta) meta.textContent = 'Aggiornato: '+fmtJsonDate(data.aggiornato||data.data);
-    const items = data.consigli||data.items||[];
+    const meta=document.getElementById('luna-json-meta');
+    if(meta) meta.textContent='JSON: '+fmtJsonDate(data.aggiornato||data.updated_at||data.data);
+    const items=data.consigli||data.items||data.consigli_lunari||[];
+    if(!items.length) return;
     const find=(keys)=>{for(const k of keys){const f=items.find(i=>(i.titolo||'').toLowerCase().includes(k)||(i.testo||'').toLowerCase().includes(k));if(f)return(f.titolo?f.titolo+': ':'')+( f.testo||f.body||'');}return null;};
-    const g=find(['giorno','oggi','daily']); if(g) setVal('aic-giorno',g);
-    const t=find(['tecnica','avanzat','lakhovsky','pila','elettro']); if(t) setVal('aic-tecniche',t);
-    const a=find(['avvis','alert','attenz']); if(a) setVal('aic-avvisi',a);
-    const ic=find(['incrocio','combin','analisi']); if(ic) setVal('aic-incrocio',ic);
+    const a=find(['attivit','oggi']);if(a)setVal('lc-attivita',a);
+    const ir=find(['irrig','acqua']);if(ir)setVal('lc-irrigazione',ir);
+    const nu=find(['nutriz','fertil','melassa','ortic']);if(nu)setVal('lc-nutrizione',nu);
+    const el=find(['elettro','rame','lakhovsky','pila']);if(el)setVal('lc-elettro',el);
+    const av=find(['avvis','alert']);if(av)setVal('lc-avviso',av);
+    const pr=find(['previs','prossim']);if(pr)setVal('lc-previsione',pr);
   } catch(e) { /* usa dati locali */ }
 }
 
-/* ── AI Consigli Lunari (lista cliccabile) ── */
-function renderAILunari() {
-  const container = document.getElementById('ai-lunari-list');
-  if (!container) return;
-  const today = new Date();
-  const phase = getMoonPhase(getMoonAge(today));
-  const advice = getAdvice(phase.code);
-  const items = [
-    {icon:'📋', label:'Attività: '+advice.main, key:'luna-attivita'},
-    {icon:'💧', label:'Irrigazione: '+(phase.code.includes('waxing')?'Fase crescente — massimo assorbimento':'Fase calante — priorità radici'), key:'luna-irrigazione'},
-    {icon:'🧪', label:'Nutrizione: '+(phase.code==='full'||phase.code==='waxing_gibbous'?'Potassio — tè banana':'Azoto — infuso ortiche'), key:'luna-nutrizione'},
-    {icon:'⚡', label:'Elettrocultura: '+(phase.code==='full'?'Verifica tutti i circuiti':'Controlla integrità'), key:'luna-elettro'},
-    {icon:'🌱', label:'Serra: '+advice.serra.substring(0,60)+'...', key:'luna-piante'}
-  ];
-  container.innerHTML = items.map(item=>`
-    <div class="amb-pianta-card" onclick="openAmbPopup('${item.key}')">
-      <div style="font-size:18px;flex-shrink:0;">${item.icon}</div>
-      <div style="flex:1;font-size:12px;color:var(--text2);line-height:1.4;">${item.label}</div>
-      <div style="color:var(--text3);">›</div>
-    </div>`).join('');
-}
-
-/* ── AI Analisi incrociata ── */
-function renderAIAnalisi() {
-  const preview = document.getElementById('ai-analisi-preview');
-  if (!preview) return;
-  const today = new Date();
-  const phase = getMoonPhase(getMoonAge(today));
-  const bioConst = getDayType(today);
-  const bioType = DAY_TYPES[bioConst.type];
-  const advice = getAdvice(phase.code);
-  const w = window._ambWeather;
-  const tempStr = w ? document.getElementById('w-temp')?.textContent || '—' : '—';
-  const humStr  = w ? document.getElementById('w-humidity')?.textContent || '—' : '—';
-  preview.innerHTML = `<strong>${phase.emoji} ${phase.name}</strong> · <strong>${bioType.icon} ${bioType.label}</strong> · 🌡️ ${tempStr}<br>
-<span style="font-size:12px;color:var(--text3);">${advice.main}</span><br>
-<span style="font-size:12px;color:var(--text3);">${advice.detail.substring(0,100)}…</span>`;
-}
-
-/* ── AI Consigli per Pianta ── */
-function renderAIPiante() {
-  const container = document.getElementById('ai-piante-list');
-  if (!container) return;
-  const today = new Date();
-  const phase = getMoonPhase(getMoonAge(today));
-  const bioConst = getDayType(today);
-  const bioType = DAY_TYPES[bioConst.type];
-  const advice = getAdvice(phase.code);
-  const piante = [
-    {nome:'Epsilon F1',id:7,tipo:'🌸 Auto',giorno:'Fioritura 30-40gg'},
-    {nome:'Milky Way F1',id:1,tipo:'🌸 Auto',giorno:'Fioritura 42-45gg'},
-    {nome:'Titan F1',id:2,tipo:'🌸 Auto',giorno:'Fioritura 40-45gg'},
-    {nome:'Medusa F1',id:3,tipo:'🌸 Auto',giorno:'Fioritura 40-45gg'},
-    {nome:'Gaia F1',id:8,tipo:'🌸 Auto',giorno:'Fioritura 40-45gg'},
-    {nome:'Astro Lemonade',id:4,tipo:'🌿 Fem',giorno:'Veg → Fioritura ott.'},
-    {nome:'Cosmic Cheddar',id:11,tipo:'🌿 Fem',giorno:'Veg → Fioritura ott.'},
-    {nome:'Orbital Banana',id:6,tipo:'🌿 Fem',giorno:'Veg → Fioritura ott.'},
-    {nome:'Royal Gorilla',id:10,tipo:'🌿 Fem',giorno:'Veg → Fioritura metà ott.'},
-    {nome:'Mexican Rush',id:9,tipo:'🌿 Fem',giorno:'Veg → Fioritura metà ott.'}
-  ];
-  const consiglio = (p) => {
-    const isAuto = p.tipo.includes('Auto');
-    if(isAuto) return phase.code==='full'||phase.code==='waxing_gibbous'?'🌸 Ottimo per resine — tè banana':
-      phase.code.includes('waning')?'🌿 Humus radici — pila galvanica':advice.main.split('—')[0].trim();
-    return phase.code.includes('waxing')||phase.code==='first_quarter'?'🌿 Veg ottimale — ortiche+miscela':
-      phase.code==='full'?'💪 Massimo assorbimento — miscela organica':advice.main.split('—')[0].trim();
-  };
-  container.innerHTML = piante.map(p=>`
-    <div class="amb-pianta-card" onclick="openAmbPopup('luna-piante')">
-      <div>
-        <div style="font-size:12px;font-weight:700;">${p.nome} <span style="font-size:10px;opacity:.6;">ID:${p.id}</span></div>
-        <div style="font-size:10px;color:var(--text3);">${p.tipo} · ${p.giorno}</div>
-      </div>
-      <div style="font-size:11px;color:var(--text2);text-align:right;max-width:140px;line-height:1.4;">${consiglio(p)}</div>
-    </div>`).join('');
-}
-
 /* ══════════════════════════════════════════════════════════════
-   BIO — prossimi 3 giorni
+   BIO — prossimi 3 giorni + correlazione
 ══════════════════════════════════════════════════════════════ */
 function renderBio3Giorni() {
-  const container = document.getElementById('bio-3giorni');
-  if (!container) return;
-  const today = new Date();
-  const items = [];
-  for(let i=1;i<=3;i++){
-    const d = new Date(today.getTime()+i*86400000);
-    const constData = getDayType(d);
-    const dt = DAY_TYPES[constData.type];
-    const adv = ADVICE[constData.type];
-    items.push({d, constData, dt, adv});
-  }
-  container.innerHTML = items.map(({d,constData,dt,adv},i)=>`
+  const c=document.getElementById('bio-3giorni'); if(!c) return;
+  const today=new Date();
+  const items=[];
+  for(let i=1;i<=3;i++){const d=new Date(today.getTime()+i*86400000);const cd=getDayType(d);const dt=DAY_TYPES[cd.type];const adv=ADVICE[cd.type];items.push({d,cd,dt,adv});}
+  c.innerHTML=items.map(({d,cd,dt,adv},i)=>`
     <div class="amb-pianta-card" onclick="openBio3Popup(${i})">
       <div style="font-size:22px;">${dt.icon}</div>
-      <div style="flex:1;">
-        <div style="font-size:12px;font-weight:700;">${fmtIT(d)}</div>
-        <div style="font-size:11px;color:var(--text3);">${dt.label} · ${constData.sym} ${constData.name}</div>
-        <div style="font-size:11px;color:var(--text2);margin-top:2px;">${adv.short}</div>
-      </div>
+      <div style="flex:1;"><div style="font-size:12px;font-weight:700;">${fmtIT(d)}</div>
+      <div style="font-size:11px;color:var(--text3);">${dt.label} · ${cd.sym} ${cd.name}</div>
+      <div style="font-size:11px;color:var(--text2);margin-top:2px;">${adv.short}</div></div>
       <div style="color:var(--text3);">›</div>
     </div>`).join('');
 }
 
 function openBio3Popup(idx) {
-  const today = new Date();
-  const d = new Date(today.getTime()+(idx+1)*86400000);
-  const constData = getDayType(d);
-  const dt = DAY_TYPES[constData.type];
-  const adv = ADVICE[constData.type];
-  const overlay = document.getElementById('amb-popup-overlay');
-  const content = document.getElementById('amb-popup-content');
+  const today=new Date();
+  const d=new Date(today.getTime()+(idx+1)*86400000);
+  const cd=getDayType(d); const dt=DAY_TYPES[cd.type]; const adv=ADVICE[cd.type];
+  const overlay=document.getElementById('amb-popup-overlay');
+  const content=document.getElementById('amb-popup-content');
   if(!overlay||!content) return;
-  content.innerHTML = `<div class="amb-popup-label">${fmtIT(d)}</div>
+  content.innerHTML=`<div class="amb-popup-label">${fmtIT(d)}</div>
 <div class="amb-popup-title">${dt.icon} Giorno ${dt.label}</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;">
-    ♐ Costellazione: <strong>${constData.sym} ${constData.name}</strong><br>
-    🌍 Elemento: <strong>${constData.element}</strong><br>
-    📊 Tipo: <strong>${dt.label}</strong>
-  </div>
-</div>
-<div class="amb-popup-section">
-  <div class="amb-popup-label">Consigli per la serra</div>
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;">${adv.tips.map(t=>'✅ '+t).join('<br>')}</div>
-</div>`;
-  overlay.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">
+♐ ${cd.sym} ${cd.name} · 🌍 ${cd.element}
+</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">Consigli serra</div>
+<div style="font-size:13px;color:var(--text2);line-height:1.7;">${adv.tips.map(t=>'✅ '+t).join('<br>')}</div></div>`;
+  overlay.style.display='flex'; document.body.style.overflow='hidden';
 }
 
-/* ── Bio-Elettro preview ── */
 function updateBioElettroPreview() {
-  const preview = document.getElementById('bio-elettro-preview');
-  if(!preview) return;
-  const today = new Date();
-  const constData = getDayType(today);
-  const bioType = DAY_TYPES[constData.type];
-  const msgs = {
-    frutto:'🍊 Giorno Frutto: pila galvanica e antenne rame attive. Potassio verso le cime.',
+  const p=document.getElementById('bio-elettro-preview'); if(!p) return;
+  const cd=getDayType(new Date());
+  const msgs={frutto:'🍊 Giorno Frutto: pila galvanica e antenne rame molto attive. Potassio verso le cime.',
     fiore:'🌸 Giorno Fiore: elettrocultura atmosferica amplificata. Controlla i bastoncini.',
     radice:'🌿 Giorno Radice: pila galvanica ferro-rame al massimo. Ionizzazione radici.',
-    foglia:'💧 Giorno Foglia: acqua strutturata più attiva. Controlla Geomag e magnete.'
-  };
-  preview.textContent = msgs[constData.type] || msgs.frutto;
+    foglia:'💧 Giorno Foglia: acqua strutturata più attiva. Controlla Geomag e magnete principale.'};
+  p.textContent=msgs[cd.type]||msgs.frutto;
 }
 
-/* ══════════════════════════════════════════════════════════════
-   RENDERLUNAR — Override moonStrip e phasesTable per renderli cliccabili
-══════════════════════════════════════════════════════════════ */
-const _origRenderLunarSection = typeof renderLunarSection === 'function' ? renderLunarSection : null;
-function renderLunarSection() {
-  if (_origRenderLunarSection) _origRenderLunarSection();
-  // Rendi la striscia 7 giorni cliccabile
-  setTimeout(() => {
-    const strip = document.getElementById('moonStrip');
-    if (strip) {
-      strip.querySelectorAll('div').forEach((el, i) => {
-        if(el.children.length > 0) {
-          el.style.cursor = 'pointer';
-          el.onclick = () => { openForecastPopup(i); };
-        }
-      });
-    }
-    // Rendi la tabella 8 fasi cliccabile
-    const table = document.getElementById('phasesTable');
-    if (table) {
-      table.querySelectorAll('tr').forEach((row, i) => {
-        row.style.cursor = 'pointer';
-        const phaseCodes = ['new','waxing_crescent','first_quarter','waxing_gibbous','full','waning_gibbous','last_quarter','waning_crescent'];
-        row.onclick = () => openPhasePopup(phaseCodes[i] || 'new');
-      });
-    }
-    // Aggiorna preview luna-piante
-    loadLunaConsigli6();
-  }, 200);
-}
 
-function openPhasePopup(code) {
-  const advice = getAdvice(code);
-  const phaseNames = {new:'🌑 Luna Nuova',waxing_crescent:'🌒 Luna Crescente',first_quarter:'🌓 Primo Quarto',waxing_gibbous:'🌔 Gibbosa Crescente',full:'🌕 Luna Piena',waning_gibbous:'🌖 Gibbosa Calante',last_quarter:'🌗 Ultimo Quarto',waning_crescent:'🌘 Luna Calante'};
-  const overlay = document.getElementById('amb-popup-overlay');
-  const content = document.getElementById('amb-popup-content');
-  if(!overlay||!content) return;
-  content.innerHTML = `<div class="amb-popup-label">Fase Lunare</div>
-<div class="amb-popup-title">${phaseNames[code]||code}</div>
-<div class="amb-popup-section">
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;">${advice.detail}</div>
-</div>
-<div class="amb-popup-section">
-  <div class="amb-popup-label">Tag attività</div>
-  <div style="display:flex;flex-wrap:wrap;gap:6px;">${(advice.tags||[]).map(t=>`<span class="json-tag">${t}</span>`).join('')}</div>
-</div>
-<div class="amb-popup-section">
-  <div class="amb-popup-label">Serra — azioni</div>
-  <div style="font-size:13px;color:var(--text2);line-height:1.7;">${advice.serra}</div>
-</div>`;
-  overlay.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
-}
-
-/* ══════════════════════════════════════════════════════════════
-   RENDERBIOCALENDAR — Override per rendere celle cliccabili con popup Ambiente
-══════════════════════════════════════════════════════════════ */
-// Il calendario bio usa già showBioPopup — mantenuto invariato
-// Solo aggiorniamo la preview della card bio-elettro dopo il render
-const _origRenderBioCalendar = typeof renderBioCalendar === 'function' ? renderBioCalendar : null;
-function renderBioCalendar() {
-  if (_origRenderBioCalendar) _origRenderBioCalendar();
-  setTimeout(updateBioElettroPreview, 100);
-}
-
-/* ══ AVVIO APP ══ */
 (function avvioApp() {
   if (typeof window.initApp === 'function' && !window._appInitialized) {
     window._appInitialized = true;
