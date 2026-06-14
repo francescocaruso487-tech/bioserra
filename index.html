@@ -3221,25 +3221,45 @@ async function loadAIJSON() {
 
 /* ── Consigli Lunari ── */
 async function loadLunaJSON() {
-  const el = document.getElementById('luna-json-content');
   const meta = document.getElementById('luna-json-meta');
-  if (!el) return;
-  el.innerHTML = '<div class="json-loading">⏳ Caricamento…</div>';
   try {
     const data = await fetchGHJson('luna_consigli.json');
-    if (!data) { renderPending(el, meta); return; }
-    meta.textContent = 'Aggiornato: ' + fmtJsonDate(data.aggiornato || data.updated_at || data.data);
-    const items = data.consigli || data.items || data.consigli_lunari || [];
-    if (!items.length) { el.innerHTML = '<div class="json-pending">Nessun consiglio lunare disponibile</div>'; return; }
-    el.innerHTML = items.map(item => {
-      if (typeof item === 'string') return `<div class="json-item info-item">${item}</div>`;
-      return `<div class="json-item info-item">
-        ${item.titolo ? `<div class="json-item-title">${item.titolo}</div>` : ''}
-        <div class="json-item-body">${item.testo || item.body || item.messaggio || ''}</div>
-        ${(item.tag||[]).map(t=>`<span class="json-tag">${t}</span>`).join('')}
-      </div>`;
-    }).join('');
-  } catch(e) { renderJsonError(el, meta, e); }
+    if (!data) return;
+    // Aggiorna meta
+    const d = data.data || {};
+    if (meta) meta.textContent = 'Aggiornato: ' + fmtJsonDate(data.lastUpdate || data.aggiornato || '');
+    // Aggiorna badge fase nella card luna se esiste
+    const faseEl = document.getElementById('lc-fase');
+    if (faseEl && d.fase) faseEl.textContent = (d.emoji || '') + ' ' + d.fase;
+    // Parsa la stringa consigli nelle 6 sezioni numerate
+    const testo = d.consigli || '';
+    if (!testo) return;
+    // Estrae ogni sezione: "1) TITOLO\n...testo..." fino al prossimo "N)"
+    const sezioni = {};
+    const regex = /\d+\)\s+([^\n]+)\n([\s\S]*?)(?=\n\d+\)|$)/g;
+    let match;
+    while ((match = regex.exec(testo)) !== null) {
+      const titolo = match[1].trim().toLowerCase();
+      const corpo = match[2].trim();
+      // Prima riga del corpo come preview (max 80 chars)
+      const preview = corpo.split('\n').find(l => l.trim().length > 5) || corpo;
+      const short = preview.replace(/^[-•*]\s*/, '').replace(/<[^>]+>/g, '').substring(0, 80);
+      if (titolo.includes('attiv')) sezioni.attivita = short;
+      else if (titolo.includes('irrig')) sezioni.irrigazione = short;
+      else if (titolo.includes('nutri')) sezioni.nutrizione = short;
+      else if (titolo.includes('elettro')) sezioni.elettro = short;
+      else if (titolo.includes('avvis') || titolo.includes('evita')) sezioni.avviso = short;
+      else if (titolo.includes('prevision')) sezioni.previsione = short;
+    }
+    // Popola le 6 card preview
+    const set = (id, val) => { const e = document.getElementById(id); if (e && val) e.textContent = val + '…'; };
+    set('lc-attivita',   sezioni.attivita);
+    set('lc-irrigazione', sezioni.irrigazione);
+    set('lc-nutrizione', sezioni.nutrizione);
+    set('lc-elettro',    sezioni.elettro);
+    set('lc-avviso',     sezioni.avviso);
+    set('lc-previsione', sezioni.previsione);
+  } catch(e) { console.warn('[BioSerra] loadLunaJSON:', e); }
 }
 
 /* ── Stato Piante ── */
