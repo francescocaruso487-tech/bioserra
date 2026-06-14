@@ -1239,7 +1239,7 @@
 <!-- AI -->
 <section id="sec-ai" class="section">
   <div class="section-title">AI 🤖</div>
-  <div class="section-sub">Assistente Serra · Gemini Flash</div>
+  <div id="ai-subtitle" class="section-sub">Assistente Serra</div>
 
   <!-- CONSIGLI AI GIORNALIERI DA JSON -->
   <div class="json-panel" id="ai-json-panel">
@@ -1251,27 +1251,22 @@
     <div id="ai-json-content"><div class="json-loading">⏳ Caricamento consigli…</div></div>
   </div>
 
-  <!-- SETUP KEY (visibile solo se non configurata) -->
+  <!-- SETUP KEY -->
   <div id="ai-setup-box" style="display:none;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px;">
-    <div style="font-size:15px;font-weight:700;margin-bottom:6px;">🔑 Configura Gemini (gratis)</div>
-    <div style="font-size:13px;color:var(--text2);margin-bottom:12px;line-height:1.6;">
-      1. Apri <a href="https://aistudio.google.com/apikey" target="_blank" style="color:var(--green2);font-weight:600;">aistudio.google.com/apikey</a><br>
-      2. Accedi con Google (zero carta di credito)<br>
-      3. Clic su <strong>"Create API key"</strong><br>
-      4. Copia la chiave e incollala qui sotto
-    </div>
-    <input id="ai-key-setup-input" type="text" placeholder="Incolla qui la chiave AIzaSy..."
+    <div style="font-size:15px;font-weight:700;margin-bottom:4px;">🔑 Configura <span id="ai-setup-name">AI</span></div>
+    <div id="ai-setup-instructions" style="font-size:12px;color:var(--text3);margin-bottom:12px;line-height:1.6;"></div>
+    <input id="ai-key-setup-input" type="text" placeholder="Incolla qui la chiave API…"
       style="width:100%;box-sizing:border-box;background:var(--card2);border:1px solid var(--green2);border-radius:10px;padding:11px 14px;color:var(--text);font-size:14px;outline:none;font-family:var(--font);margin-bottom:10px;">
     <button onclick="aiSaveKeyInline()"
       style="width:100%;background:var(--green2);border:none;border-radius:10px;padding:12px;color:var(--text);font-size:15px;font-weight:700;cursor:pointer;">
-      ✅ Salva e inizia a chattare
+      ✅ Salva chiave e inizia
     </button>
   </div>
 
   <!-- BADGE modello attivo -->
   <div id="ai-model-badge" style="display:none;margin-bottom:10px;">
-    <div class="ai-sources-badge" style="justify-content:space-between;">
-      <span>✨ Gemini Flash · Gratis · <span id="ai-key-short"></span></span>
+    <div class="ai-sources-badge" style="justify-content:space-between;flex-wrap:wrap;gap:6px;">
+      <span id="ai-badge-label">🤖 AI attiva</span>
       <button onclick="aiChangeKey()" style="background:none;border:none;color:var(--green2);font-size:12px;cursor:pointer;padding:0;">Cambia chiave</button>
     </div>
   </div>
@@ -1290,7 +1285,7 @@
   </div>
 
   <div id="ai-input-row" class="ai-input-row" style="display:none;">
-    <input class="ai-input" id="ai-input" type="text" placeholder="Scrivi un messaggio…" onkeydown="if(event.key==='Enter')aiSend()">
+    <input class="ai-input" id="ai-input" type="text" placeholder="Scrivi un messaggio…" onkeydown="if(event.key='Enter')aiSend()">
     <button class="ai-send" onclick="aiSend()">➤</button>
   </div>
 </section>
@@ -1479,30 +1474,42 @@
   <!-- 5) AI ATTIVA -->
   <div class="setting-group">
     <div class="setting-group-label">🤖 AI Attiva</div>
-    <div style="font-size:11px;color:var(--text3);padding:0 4px 10px;">Seleziona il modello AI da usare nelle risposte della sezione AI.</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-      <div class="cfg-ai-btn" id="ai-claude" onclick="cfgSetAI('claude')" style="background:var(--card2);border:2px solid var(--green);border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
+    <div style="font-size:11px;color:var(--text3);padding:0 4px 10px;">Seleziona il modello, configura la chiave API. La chiave è salvata solo sul tuo dispositivo.</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;">
+      <div class="cfg-ai-btn" id="cfg-ai-claude" onclick="cfgSetAI('claude')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
         <div style="font-size:20px;">✨</div>
         <div style="font-size:12px;color:var(--text);margin-top:4px;font-weight:700;">Claude</div>
-        <div style="font-size:10px;color:var(--green3);">Attivo</div>
+        <div style="font-size:10px;" id="cfg-ai-st-claude">—</div>
       </div>
-      <div class="cfg-ai-btn" id="ai-gemini" onclick="cfgSetAI('gemini')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
+      <div class="cfg-ai-btn" id="cfg-ai-gemini" onclick="cfgSetAI('gemini')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
         <div style="font-size:20px;">💎</div>
         <div style="font-size:12px;color:var(--text);margin-top:4px;font-weight:700;">Gemini</div>
-        <div style="font-size:10px;color:var(--text3);">Google</div>
+        <div style="font-size:10px;" id="cfg-ai-st-gemini">—</div>
       </div>
-      <div class="cfg-ai-btn" id="ai-grok" onclick="cfgSetAI('grok')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
+      <div class="cfg-ai-btn" id="cfg-ai-grok" onclick="cfgSetAI('grok')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
         <div style="font-size:20px;">⚡</div>
         <div style="font-size:12px;color:var(--text);margin-top:4px;font-weight:700;">Grok</div>
-        <div style="font-size:10px;color:var(--text3);">xAI</div>
+        <div style="font-size:10px;" id="cfg-ai-st-grok">—</div>
       </div>
-      <div class="cfg-ai-btn" id="ai-chatgpt" onclick="cfgSetAI('chatgpt')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
+      <div class="cfg-ai-btn" id="cfg-ai-chatgpt" onclick="cfgSetAI('chatgpt')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
         <div style="font-size:20px;">🧠</div>
         <div style="font-size:12px;color:var(--text);margin-top:4px;font-weight:700;">ChatGPT</div>
-        <div style="font-size:10px;color:var(--text3);">OpenAI</div>
+        <div style="font-size:10px;" id="cfg-ai-st-chatgpt">—</div>
       </div>
     </div>
-    <div style="margin-top:8px;font-size:11px;color:var(--text3);padding:0 4px;">AI selezionata: <span id="cfg-ai-name" style="color:var(--green3);">Claude</span></div>
+    <!-- Box chiave per il motore selezionato -->
+    <div id="cfg-ai-key-box" style="background:var(--bg3);border-radius:12px;padding:14px;margin-top:4px;">
+      <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px;" id="cfg-ai-key-title">🔑 Chiave API</div>
+      <div style="display:flex;gap:8px;align-items:center;">
+        <input type="password" id="cfg-ai-key-input" placeholder="Incolla chiave API…"
+          style="flex:1;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:9px 12px;color:var(--text);font-size:13px;outline:none;font-family:var(--font);">
+        <button onclick="cfgSaveAIKey()" style="background:var(--green2);border:none;border-radius:8px;padding:9px 14px;color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;">Salva</button>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
+        <div id="cfg-ai-key-status" style="font-size:11px;color:var(--text3);">—</div>
+        <button onclick="cfgClearAIKey()" id="cfg-ai-clear-btn" style="display:none;background:none;border:none;color:var(--red);font-size:11px;cursor:pointer;padding:0;">✕ Rimuovi chiave</button>
+      </div>
+    </div>
   </div>
 
   <!-- 6) DATI -->
@@ -2825,6 +2832,50 @@ const MANUALE_CTX = 'Serra Living Soil: 10 vasi 10L, substrato BioBizz+cocco+Sup
 
 let aiHistory = [];
 
+/* ══════════════════════════════════════════════════════════════
+   AI MULTI-MOTORE — Claude / Gemini / Grok / ChatGPT
+══════════════════════════════════════════════════════════════ */
+
+const AI_ENGINES = {
+  claude:  {
+    nome: 'Claude (Anthropic)',
+    emoji: '✨',
+    keyLabel: 'AIzaSy… (chiave Anthropic)',
+    placeholder: 'sk-ant-…',
+    istruzioni: '1. Vai su <a href="https://console.anthropic.com" target="_blank" style="color:var(--green3)">console.anthropic.com</a><br>2. API Keys → Create Key<br>3. Copia e incolla qui sotto'
+  },
+  gemini: {
+    nome: 'Gemini Flash (Google)',
+    emoji: '💎',
+    keyLabel: 'AIzaSy…',
+    placeholder: 'AIzaSy…',
+    istruzioni: '1. Vai su <a href="https://aistudio.google.com/apikey" target="_blank" style="color:var(--green3)">aistudio.google.com/apikey</a><br>2. Create API key (gratis, zero carta)<br>3. Copia e incolla qui sotto'
+  },
+  grok: {
+    nome: 'Grok (xAI)',
+    emoji: '⚡',
+    keyLabel: 'gsk_…',
+    placeholder: 'gsk_…',
+    istruzioni: '1. Vai su <a href="https://console.x.ai" target="_blank" style="color:var(--green3)">console.x.ai</a><br>2. API Keys → Create<br>3. Copia e incolla qui sotto'
+  },
+  chatgpt: {
+    nome: 'ChatGPT (OpenAI)',
+    emoji: '🧠',
+    keyLabel: 'sk-proj-…',
+    placeholder: 'sk-proj-…',
+    istruzioni: '1. Vai su <a href="https://platform.openai.com/api-keys" target="_blank" style="color:var(--green3)">platform.openai.com/api-keys</a><br>2. Create new secret key<br>3. Copia e incolla qui sotto'
+  }
+};
+
+function aiGetEngine() {
+  return localStorage.getItem('bioserra_ai_attiva') || 'gemini';
+}
+
+function aiGetKey() {
+  const eng = aiGetEngine();
+  return (localStorage.getItem('bioserra_ai_key_' + eng) || '').trim();
+}
+
 function buildSystem() {
   return 'Sei BioSerra AI, assistente esperto di coltivazione Living Soil biologica. Oggi: ' +
     new Date().toLocaleDateString('it-IT') +
@@ -2833,18 +2884,19 @@ function buildSystem() {
     '. Rispondi SEMPRE in italiano, in modo conciso e pratico.';
 }
 
-/* ── Gestione chiave e UI ── */
-function aiGetKey() {
-  return (localStorage.getItem('bioserra_gemini_key') || '').trim();
-}
-
 function aiInitUI() {
+  const eng = aiGetEngine();
+  const cfg = AI_ENGINES[eng] || AI_ENGINES.gemini;
   const key = aiGetKey();
-  const setup = document.getElementById('ai-setup-box');
-  const badge = document.getElementById('ai-model-badge');
-  const quick = document.getElementById('ai-quick-btns');
+  const setup    = document.getElementById('ai-setup-box');
+  const badge    = document.getElementById('ai-model-badge');
+  const quick    = document.getElementById('ai-quick-btns');
   const inputRow = document.getElementById('ai-input-row');
-  const chat = document.getElementById('ai-chat');
+  const chat     = document.getElementById('ai-chat');
+
+  // Aggiorna titoli sezione
+  const sub = document.getElementById('ai-subtitle');
+  if (sub) sub.textContent = 'Assistente Serra · ' + cfg.nome;
 
   if (!key) {
     setup.style.display = 'block';
@@ -2852,94 +2904,148 @@ function aiInitUI() {
     quick.style.display = 'none';
     inputRow.style.display = 'none';
     chat.innerHTML = '';
-    appendMsg('🌿 Inserisci la tua chiave Gemini gratuita qui sopra per iniziare!', 'bot');
+
+    // Aggiorna istruzioni setup
+    const sn = document.getElementById('ai-setup-name');
+    if (sn) sn.textContent = cfg.nome;
+    const si = document.getElementById('ai-setup-instructions');
+    if (si) si.innerHTML = cfg.istruzioni;
+    const inp = document.getElementById('ai-key-setup-input');
+    if (inp) inp.placeholder = 'Incolla qui ' + cfg.placeholder;
+
+    appendMsg('🌿 Inserisci la chiave ' + cfg.nome + ' per iniziare!', 'bot');
   } else {
     setup.style.display = 'none';
     badge.style.display = 'block';
     quick.style.display = 'flex';
     inputRow.style.display = 'flex';
-    const short = key.substring(0, 8) + '…';
-    document.getElementById('ai-key-short').textContent = short;
+    const badgeLabel = document.getElementById('ai-badge-label');
+    if (badgeLabel) badgeLabel.textContent = cfg.emoji + ' ' + cfg.nome + ' · ' + key.substring(0,10) + '…';
     if (chat.children.length === 0) {
-      appendMsg('🌿 Ciao! Sono BioSerra AI. Chiedimi qualsiasi cosa sulle tue piante!', 'bot');
+      appendMsg('🌿 Ciao! Sono BioSerra AI (' + cfg.nome + '). Chiedimi qualsiasi cosa sulle tue piante!', 'bot');
     }
   }
 }
 
 function aiSaveKeyInline() {
+  const eng = aiGetEngine();
   const input = document.getElementById('ai-key-setup-input');
   const val = (input.value || '').trim();
-  if (!val || val.length < 20) {
+  if (!val || val.length < 10) {
     input.style.borderColor = '#ef5350';
-    input.placeholder = '⚠️ Chiave non valida — deve iniziare con AIzaSy...';
+    input.placeholder = '⚠️ Chiave troppo corta o non valida';
     return;
   }
-  localStorage.setItem('bioserra_gemini_key', val);
+  localStorage.setItem('bioserra_ai_key_' + eng, val);
   input.value = '';
+  input.style.borderColor = '';
   aiHistory = [];
   aiInitUI();
 }
 
 function aiChangeKey() {
-  localStorage.removeItem('bioserra_gemini_key');
+  const eng = aiGetEngine();
+  localStorage.removeItem('bioserra_ai_key_' + eng);
   aiHistory = [];
   aiInitUI();
 }
 
-/* ── Chiamata Gemini ── */
-async function sendGemini(userMsg) {
+/* ── Chiamate API per motore ── */
+async function callAI(userMsg) {
+  const eng = aiGetEngine();
   const key = aiGetKey();
-  const history = aiHistory.slice(0, -1).map(m => ({
-    role: m.role === 'assistant' ? 'model' : 'user',
-    parts: [{ text: m.content }]
-  }));
-  const body = {
-    system_instruction: { parts: [{ text: buildSystem() }] },
-    contents: [...history, { role: 'user', parts: [{ text: userMsg }] }],
-    generationConfig: { maxOutputTokens: 800, temperature: 0.7 }
-  };
-  const res = await fetch(
-    'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + key,
-    { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
-  );
-  const data = await res.json();
-  if (data.error) {
-    const msg = data.error.message || '';
-    if (msg.includes('API_KEY_INVALID') || msg.includes('API key not valid')) {
-      localStorage.removeItem('bioserra_gemini_key');
-      aiInitUI();
-      throw new Error('Chiave API non valida. Inseriscine una nuova.');
+
+  if (eng === 'gemini') {
+    const history = aiHistory.slice(0,-1).map(m=>({
+      role: m.role==='assistant'?'model':'user', parts:[{text:m.content}]
+    }));
+    const body = {
+      system_instruction:{parts:[{text:buildSystem()}]},
+      contents:[...history,{role:'user',parts:[{text:userMsg}]}],
+      generationConfig:{maxOutputTokens:800,temperature:0.7}
+    };
+    const res = await fetch(
+      'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key='+key,
+      {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}
+    );
+    const data = await res.json();
+    if (data.error) {
+      if ((data.error.message||'').includes('API_KEY_INVALID')||
+          (data.error.message||'').includes('API key not valid')) {
+        localStorage.removeItem('bioserra_ai_key_gemini');
+        aiInitUI();
+        throw new Error('Chiave Gemini non valida. Inseriscine una nuova.');
+      }
+      throw new Error(data.error.message || 'Errore Gemini');
     }
-    throw new Error(msg);
+    return data.candidates?.[0]?.content?.parts?.[0]?.text || 'Nessuna risposta.';
   }
-  return data.candidates?.[0]?.content?.parts?.[0]?.text || 'Nessuna risposta.';
+
+  if (eng === 'claude') {
+    const msgs = aiHistory.slice(0,-1).map(m=>({role:m.role==='assistant'?'assistant':'user',content:m.content}));
+    msgs.push({role:'user',content:userMsg});
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method:'POST',
+      headers:{'Content-Type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01'},
+      body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:800,system:buildSystem(),messages:msgs})
+    });
+    const data = await res.json();
+    if (data.error) throw new Error(data.error.message || 'Errore Claude');
+    return data.content?.[0]?.text || 'Nessuna risposta.';
+  }
+
+  if (eng === 'grok') {
+    const msgs = [{role:'system',content:buildSystem()},...aiHistory.slice(0,-1).map(m=>({role:m.role==='assistant'?'assistant':'user',content:m.content})),{role:'user',content:userMsg}];
+    const res = await fetch('https://api.x.ai/v1/chat/completions', {
+      method:'POST',
+      headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},
+      body:JSON.stringify({model:'grok-3-mini',max_tokens:800,messages:msgs})
+    });
+    const data = await res.json();
+    if (data.error) throw new Error(data.error.message || 'Errore Grok');
+    return data.choices?.[0]?.message?.content || 'Nessuna risposta.';
+  }
+
+  if (eng === 'chatgpt') {
+    const msgs = [{role:'system',content:buildSystem()},...aiHistory.slice(0,-1).map(m=>({role:m.role==='assistant'?'assistant':'user',content:m.content})),{role:'user',content:userMsg}];
+    const res = await fetch('https://api.openai.com/v1/chat/completions', {
+      method:'POST',
+      headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},
+      body:JSON.stringify({model:'gpt-4o-mini',max_tokens:800,messages:msgs})
+    });
+    const data = await res.json();
+    if (data.error) throw new Error(data.error.message || 'Errore ChatGPT');
+    return data.choices?.[0]?.message?.content || 'Nessuna risposta.';
+  }
+
+  throw new Error('Motore AI non supportato: ' + eng);
 }
 
 async function aiSend() {
-  const key = aiGetKey();
-  if (!key) { aiInitUI(); return; }
+  if (!aiGetKey()) { aiInitUI(); return; }
   const input = document.getElementById('ai-input');
-  const msg = (input.value || '').trim();
+  const msg = (input.value||'').trim();
   if (!msg) return;
   input.value = '';
-  appendMsg(msg, 'user');
-  aiHistory.push({ role: 'user', content: msg });
-  const loading = appendMsg('⏳ Gemini elabora…', 'bot loading');
+  appendMsg(msg,'user');
+  aiHistory.push({role:'user',content:msg});
+  const eng = aiGetEngine();
+  const cfg = AI_ENGINES[eng]||AI_ENGINES.gemini;
+  const loading = appendMsg('⏳ ' + cfg.nome + ' elabora…','bot loading');
   try {
-    const reply = await sendGemini(msg);
+    const reply = await callAI(msg);
     loading.className = 'ai-msg bot';
     loading.textContent = reply;
-    aiHistory.push({ role: 'assistant', content: reply });
+    aiHistory.push({role:'assistant',content:reply});
   } catch(e) {
     loading.className = 'ai-msg bot';
-    loading.textContent = '⚠️ ' + (e.message || 'Errore di connessione. Riprova.');
+    loading.textContent = '⚠️ ' + (e.message||'Errore di connessione. Riprova.');
   }
   document.getElementById('ai-chat').scrollTop = 99999;
 }
 
 function aiQuick(msg) {
-  const key = aiGetKey();
-  if (!key) { aiInitUI(); return; }
+  if (!aiGetKey()) { aiInitUI(); return; }
   document.getElementById('ai-input').value = msg;
   aiSend();
 }
@@ -2954,12 +3060,7 @@ function appendMsg(text, cls) {
   return div;
 }
 
-// ── INIT ──────────────────────────────────────
-
-function updateCfgKeyStatus() {
-  const el = document.getElementById('cfg-gemini-status');
-  if (el) el.textContent = localStorage.getItem('bioserra_gemini_key') ? '✓ Configurata' : 'Non configurata';
-}
+function updateCfgKeyStatus() {}
 
 /* ══════════════════════════════════════════════════════════════
    JSON DATA LOADER — Legge file JSON dalla repository GitHub
@@ -3184,12 +3285,21 @@ function navigateTo(sectionId) {
    IMPOSTAZIONI — CONFIG SECTION
 ══════════════════════════════════════════════════════════════ */
 
+// Mappa notifiche → ID panel HTML da mostrare/nascondere
+const NTF_PANELS = {
+  piante:  ['alerts-oggi-card','piante-json-panel'],
+  luna:    ['luna-json-panel'],
+  ai:      ['ai-json-panel'],
+  elettro: [],  // sezione dinamica, nessun json-panel fisso
+  pdf:     ['manuali-json-panel']
+};
+
 /* ── Init impostazioni all'avvio ── */
 function initImpostazioni() {
   // Carica nome serra
   const nome = localStorage.getItem('bioserra_cfg_nome') || 'BioSerra #1';
-  const el = document.getElementById('cfg-serra-nome-display');
-  if (el) el.textContent = nome;
+  const elNome = document.getElementById('cfg-serra-nome-display');
+  if (elNome) elNome.textContent = nome;
 
   // Sincronizza ore di luce
   const lh = parseFloat(localStorage.getItem('bioserra_light_hours') || '16');
@@ -3198,25 +3308,45 @@ function initImpostazioni() {
   if (s) s.value = lh;
   if (i) i.value = lh;
 
-  // Carica toggles notifiche
+  // Carica toggles notifiche e applica ai panel
   const ntf = cfgLoadNotifiche();
   ['piante','luna','ai','elettro','pdf'].forEach(k => {
-    const el = document.getElementById('ntf-' + k);
-    if (el) {
-      if (ntf[k]) el.classList.add('on'); else el.classList.remove('on');
+    const tog = document.getElementById('ntf-' + k);
+    // Default true se non ancora impostato
+    const attivo = ntf[k] !== false;
+    if (tog) {
+      if (attivo) tog.classList.add('on'); else tog.classList.remove('on');
     }
+    // Applica visibilità panel
+    (NTF_PANELS[k] || []).forEach(panelId => {
+      const panel = document.getElementById(panelId);
+      if (panel) panel.style.display = attivo ? '' : 'none';
+    });
   });
   const ts = localStorage.getItem('bioserra_ntf_last_update');
   const tsel = document.getElementById('cfg-ntf-last-update');
-  if (tsel && ts) tsel.textContent = new Date(ts).toLocaleString('it-IT');
+  if (tsel) tsel.textContent = ts ? new Date(ts).toLocaleString('it-IT') : '—';
 
   // Tema
   const tema = localStorage.getItem('bioserra_tema') || 'verde-scuro';
   cfgApplyThemeUI(tema);
 
-  // AI
-  const ai = localStorage.getItem('bioserra_ai_attiva') || 'claude';
+  // AI — seleziona motore e mostra stato chiavi
+  const ai = localStorage.getItem('bioserra_ai_attiva') || 'gemini';
   cfgApplyAIUI(ai);
+  cfgUpdateAIKeyBox(ai);
+}
+
+/* Applica i panel delle notifiche all'avvio dell'app (non solo quando si apre Impostazioni) */
+function applyNotificheAtBoot() {
+  const ntf = cfgLoadNotifiche();
+  Object.keys(NTF_PANELS).forEach(k => {
+    const attivo = ntf[k] !== false;
+    (NTF_PANELS[k] || []).forEach(panelId => {
+      const panel = document.getElementById(panelId);
+      if (panel) panel.style.display = attivo ? '' : 'none';
+    });
+  });
 }
 
 /* ── Serra ── */
@@ -3240,15 +3370,27 @@ function cfgLoadNotifiche() {
 }
 function cfgToggleNotifica(key, el) {
   el.classList.toggle('on');
+  const attivo = el.classList.contains('on');
   const ntf = cfgLoadNotifiche();
-  ntf[key] = el.classList.contains('on');
+  ntf[key] = attivo;
   localStorage.setItem('bioserra_notifiche', JSON.stringify(ntf));
+  // Applica subito: mostra/nascondi i panel corrispondenti
+  (NTF_PANELS[key] || []).forEach(panelId => {
+    const panel = document.getElementById(panelId);
+    if (panel) panel.style.display = attivo ? '' : 'none';
+  });
+  cfgToast(attivo ? '✅ Notifica attivata' : '🔕 Notifica disattivata');
 }
 function cfgSaveNotifiche() {
   const ntf = {};
   ['piante','luna','ai','elettro','pdf'].forEach(k => {
-    const el = document.getElementById('ntf-' + k);
-    ntf[k] = el ? el.classList.contains('on') : true;
+    const tog = document.getElementById('ntf-' + k);
+    ntf[k] = tog ? tog.classList.contains('on') : true;
+    // Applica ai panel
+    (NTF_PANELS[k] || []).forEach(panelId => {
+      const panel = document.getElementById(panelId);
+      if (panel) panel.style.display = ntf[k] ? '' : 'none';
+    });
   });
   const ts = new Date().toISOString();
   ntf.last_update = ts;
@@ -3256,7 +3398,7 @@ function cfgSaveNotifiche() {
   localStorage.setItem('bioserra_ntf_last_update', ts);
   const el = document.getElementById('cfg-ntf-last-update');
   if (el) el.textContent = new Date(ts).toLocaleString('it-IT');
-  cfgToast('✅ Configurazione notifiche salvata');
+  cfgToast('✅ Notifiche salvate — ' + Object.values(ntf).filter(v=>v===true).length + '/5 attive');
 }
 
 /* ── Ore di luce (sincronizzato con sezione Piante) ── */
@@ -3322,20 +3464,89 @@ function cfgApplyThemeCSS(id) {
 }
 
 /* ── AI Attiva ── */
+const CFG_AI_LABELS = {claude:'Claude (Anthropic)',gemini:'Gemini (Google)',grok:'Grok (xAI)',chatgpt:'ChatGPT (OpenAI)'};
+
 function cfgSetAI(id) {
   localStorage.setItem('bioserra_ai_attiva', id);
   cfgApplyAIUI(id);
-  cfgToast('🤖 AI ' + id.charAt(0).toUpperCase() + id.slice(1) + ' selezionata');
+  cfgUpdateAIKeyBox(id);
+  // Aggiorna anche il motore nella sezione AI
+  if (typeof aiInitUI === 'function') {
+    const chat = document.getElementById('ai-chat');
+    if (chat) chat.innerHTML = '';
+    if (typeof aiHistory !== 'undefined') aiHistory = [];
+    aiInitUI();
+  }
+  cfgToast('🤖 ' + (CFG_AI_LABELS[id]||id) + ' selezionata');
 }
+
 function cfgApplyAIUI(id) {
-  document.querySelectorAll('.cfg-ai-btn').forEach(b => {
-    b.style.border = '2px solid transparent';
+  ['claude','gemini','grok','chatgpt'].forEach(eng => {
+    const btn = document.getElementById('cfg-ai-' + eng);
+    const st  = document.getElementById('cfg-ai-st-' + eng);
+    if (btn) btn.style.border = eng===id ? '2px solid var(--green)' : '2px solid transparent';
+    if (st) {
+      const k = localStorage.getItem('bioserra_ai_key_' + eng);
+      st.textContent = k ? '✅ Chiave ok' : '— Non configurata';
+      st.style.color = k ? 'var(--green3)' : 'var(--text3)';
+    }
   });
-  const sel = document.getElementById('ai-' + id);
-  if (sel) sel.style.border = '2px solid var(--green)';
-  const nm = document.getElementById('cfg-ai-name');
-  const labels = {claude:'Claude',gemini:'Gemini',grok:'Grok',chatgpt:'ChatGPT'};
-  if (nm) nm.textContent = labels[id] || id;
+}
+
+function cfgUpdateAIKeyBox(id) {
+  const labels = {claude:'Claude (Anthropic)',gemini:'Gemini (Google)',grok:'Grok (xAI)',chatgpt:'ChatGPT (OpenAI)'};
+  const title = document.getElementById('cfg-ai-key-title');
+  if (title) title.textContent = '🔑 Chiave API — ' + (labels[id]||id);
+  const inp = document.getElementById('cfg-ai-key-input');
+  if (inp) { inp.value = ''; inp.placeholder = 'Incolla chiave API per ' + (id) + '…'; }
+  cfgRefreshAIKeyStatus(id);
+}
+
+function cfgRefreshAIKeyStatus(id) {
+  const k = localStorage.getItem('bioserra_ai_key_' + id);
+  const st = document.getElementById('cfg-ai-key-status');
+  const clrBtn = document.getElementById('cfg-ai-clear-btn');
+  if (st) {
+    if (k) {
+      st.textContent = '✅ Chiave salvata: ' + k.substring(0,12) + '…';
+      st.style.color = 'var(--green3)';
+    } else {
+      st.textContent = '⚠️ Nessuna chiave configurata';
+      st.style.color = 'var(--text3)';
+    }
+  }
+  if (clrBtn) clrBtn.style.display = k ? 'inline' : 'none';
+  cfgApplyAIUI(id);
+}
+
+function cfgSaveAIKey() {
+  const id = aiGetEngine();
+  const inp = document.getElementById('cfg-ai-key-input');
+  const val = (inp ? inp.value : '').trim();
+  if (!val || val.length < 10) {
+    cfgToast('⚠️ Chiave troppo corta o vuota');
+    if (inp) inp.style.borderColor = 'var(--red)';
+    return;
+  }
+  localStorage.setItem('bioserra_ai_key_' + id, val);
+  if (inp) { inp.value = ''; inp.style.borderColor = ''; }
+  cfgRefreshAIKeyStatus(id);
+  // Aggiorna anche sezione AI
+  if (typeof aiInitUI === 'function') {
+    const chat = document.getElementById('ai-chat');
+    if (chat) chat.innerHTML = '';
+    if (typeof aiHistory !== 'undefined') aiHistory = [];
+    aiInitUI();
+  }
+  cfgToast('✅ Chiave salvata');
+}
+
+function cfgClearAIKey() {
+  const id = aiGetEngine();
+  localStorage.removeItem('bioserra_ai_key_' + id);
+  cfgRefreshAIKeyStatus(id);
+  if (typeof aiInitUI === 'function') { aiHistory=[]; aiInitUI(); }
+  cfgToast('🗑️ Chiave rimossa');
 }
 
 /* ── Dati ── */
@@ -3374,7 +3585,12 @@ function cfgAggiornaTutto() {
   if (typeof renderActivePlants === 'function') renderActivePlants();
   if (typeof loadWeather === 'function') loadWeather();
   if (typeof updateMoon === 'function') updateMoon();
-  cfgToast('🔄 Aggiornamento completato');
+  if (typeof loadAIJSON === 'function') loadAIJSON();
+  if (typeof loadLunaJSON === 'function') loadLunaJSON();
+  if (typeof loadPianteJSON === 'function') loadPianteJSON();
+  if (typeof loadManualiJSON === 'function') loadManualiJSON();
+  applyNotificheAtBoot();
+  cfgToast('🔄 Tutto aggiornato');
 }
 
 /* ── Toast ── */
@@ -3396,6 +3612,8 @@ function cfgToast(msg) {
 (function() {
   const t = localStorage.getItem('bioserra_tema');
   if (t) cfgApplyThemeCSS(t);
+  // Applica stato notifiche ai panel subito (prima che l'utente apra Impostazioni)
+  setTimeout(applyNotificheAtBoot, 100);
 })();
 
 
