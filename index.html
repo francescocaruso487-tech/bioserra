@@ -1747,14 +1747,16 @@
    NAVIGATION
 ══════════════════════════════════════════════════════════════ */
 function showSection(id, btn) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
-  document.getElementById('sec-' + id).classList.add('active');
-  btn.classList.add('active');
+  document.querySelectorAll('.section').forEach(function(s){ s.classList.remove('active'); });
+  document.querySelectorAll('.nav-item').forEach(function(b){ b.classList.remove('active'); });
+  var sec = document.getElementById('sec-' + id);
+  if (sec) sec.classList.add('active');
+  if (btn) btn.classList.add('active');
   window.scrollTo(0, 0);
-  if (id === 'ai') setTimeout(aiInitUI, 50);
-  if (id === 'impostazioni') setTimeout(initImpostazioni, 50);
-  if (id === 'ambiente') initAmbiente();
+  try { if (id === 'ai') setTimeout(aiInitUI, 50); } catch(e) {}
+  try { if (id === 'impostazioni') setTimeout(initImpostazioni, 50); } catch(e) {}
+  try { if (id === 'ambiente') initAmbiente(); } catch(e) {}
+  try { if (id === 'piante') renderActivePlants(); } catch(e) {}
 }
 
 function refreshAll() { if(document.getElementById('sec-ambiente')&&document.getElementById('sec-ambiente').classList.contains('active')) initAmbiente(); }
@@ -2125,6 +2127,7 @@ function elUpdateStats() {
 
 /* ── Init Elettrocultura ── */
 function initElettrocultura() {
+  elLoadState();
   renderElettroTecniche();
   elLunarTip();
   elLoadTecnicheJSON();
@@ -2653,10 +2656,23 @@ let currentLightHours = parseFloat(localStorage.getItem('bioserra_ore_luce') || 
 
 /* ── Tab switch ── */
 function switchPianteTab(tab) {
-  document.querySelectorAll('.piante-tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.piante-panel').forEach(p => p.classList.remove('active'));
-  document.getElementById('panel-' + tab).classList.add('active');
-  event.target.classList.add('active');
+  // Scope to piante section only — avoid touching ambiente/elettro panels
+  var sec = document.getElementById('sec-piante');
+  if (sec) {
+    sec.querySelectorAll('.piante-tab').forEach(function(t){ t.classList.remove('active'); });
+    sec.querySelectorAll('.piante-panel').forEach(function(p){ p.classList.remove('active'); });
+  }
+  var activePanel = document.getElementById('panel-' + tab);
+  if (activePanel) activePanel.classList.add('active');
+  // Activate correct tab button by matching data
+  var tabBar = document.querySelector('#sec-piante .piante-tab-bar');
+  if (tabBar) {
+    tabBar.querySelectorAll('.piante-tab').forEach(function(btn){
+      if (btn.getAttribute('onclick') && btn.getAttribute('onclick').indexOf("'" + tab + "'") !== -1) {
+        btn.classList.add('active');
+      }
+    });
+  }
   if (tab === 'archivio') renderArchive();
 }
 
@@ -2970,6 +2986,12 @@ function confirmArchive() {
 
 /* ── Init ── */
 function initPiante() {
+  // Ensure defaults are seeded if localStorage is empty
+  var stored = null;
+  try { stored = localStorage.getItem('bioserra_active_plants'); } catch(e) {}
+  if (!stored) {
+    try { localStorage.setItem('bioserra_active_plants', JSON.stringify(DEFAULT_PLANTS)); } catch(e) {}
+  }
   renderActivePlants();
 }
 
@@ -3698,18 +3720,20 @@ function cfgToast(msg) {
 window._appInitialized = false;
 window.initApp = function() {
   // 1. Piante
-  if (typeof initPiante === 'function') initPiante();
+  try { if (typeof initPiante === 'function') initPiante(); } catch(e) { console.error('[BioSerra] initPiante:', e); }
   // 2. Elettrocultura
-  if (typeof initElettrocultura === 'function') initElettrocultura();
+  try { if (typeof initElettrocultura === 'function') initElettrocultura(); } catch(e) { console.error('[BioSerra] initElettrocultura:', e); }
   // 3. Calendario bio
-  if (typeof renderBioCalendar === 'function') renderBioCalendar();
+  try { if (typeof renderBioCalendar === 'function') renderBioCalendar(); } catch(e) { console.error('[BioSerra] renderBioCalendar:', e); }
   // 4. JSON loaders (meteo, luna, AI, piante stato)
-  if (typeof initJsonLoaders === 'function') initJsonLoaders();
+  try { if (typeof initJsonLoaders === 'function') initJsonLoaders(); } catch(e) { console.error('[BioSerra] initJsonLoaders:', e); }
   // 5. Tema salvato
-  const tema = localStorage.getItem('bioserra_tema');
-  if (tema && typeof cfgApplyThemeCSS === 'function') cfgApplyThemeCSS(tema);
+  try {
+    var tema = localStorage.getItem('bioserra_tema');
+    if (tema && typeof cfgApplyThemeCSS === 'function') cfgApplyThemeCSS(tema);
+  } catch(e) {}
   // 6. Notifiche panel
-  if (typeof applyNotificheAtBoot === 'function') setTimeout(applyNotificheAtBoot, 100);
+  try { if (typeof applyNotificheAtBoot === 'function') setTimeout(applyNotificheAtBoot, 100); } catch(e) {}
 };
 
 
@@ -4301,9 +4325,20 @@ function updateBioElettroPreview() {
 
 
 (function avvioApp() {
-  if (typeof window.initApp === 'function' && !window._appInitialized) {
-    window._appInitialized = true;
-    window.initApp();
+  function runInit() {
+    if (typeof window.initApp === 'function' && !window._appInitialized) {
+      window._appInitialized = true;
+      try {
+        window.initApp();
+      } catch(e) {
+        console.error('[BioSerra] initApp error:', e);
+      }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', runInit);
+  } else {
+    runInit();
   }
 })();
 
@@ -4437,6 +4472,7 @@ if ('serviceWorker' in navigator) {
 </div>
 </body>
 </html>
+
 
 
 
