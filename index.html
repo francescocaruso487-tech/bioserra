@@ -1313,47 +1313,259 @@
 <section id="sec-impostazioni" class="section">
   <div class="section-title">Impostazioni ⚙️</div>
   <div class="section-sub">Configurazione BioSerra</div>
+
+  <!-- 1) SERRA -->
   <div class="setting-group">
-    <div class="setting-group-label">Serra</div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">🌱</div><div><div class="setting-title">Nome Serra</div><div class="setting-value">BioSerra #1</div></div></div><div class="setting-arrow">›</div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">📍</div><div><div class="setting-title">Posizione</div><div class="setting-value">Non configurata</div></div></div><div class="setting-arrow">›</div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">🗓️</div><div><div class="setting-title">Inizio ciclo</div><div class="setting-value">21 aprile 2026</div></div></div><div class="setting-arrow">›</div></div>
-  </div>
-  <div class="setting-group">
-    <div class="setting-group-label">Notifiche</div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">💧</div><div><div class="setting-title">Promemoria irrigazione</div><div class="setting-value">Ogni 3-4 giorni</div></div></div><div class="toggle on" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">🌙</div><div><div class="setting-title">Avvisi luna</div><div class="setting-value">Giorni favorevoli</div></div></div><div class="toggle on" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">🧪</div><div><div class="setting-title">Additivi biologici</div><div class="setting-value">Melassa · Ortiche · Humus</div></div></div><div class="toggle on" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">⚡</div><div><div class="setting-title">Controllo esperimenti</div><div class="setting-value">Verifica settimanale</div></div></div><div class="toggle" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
-  </div>
-  <div class="setting-group">
-    <div class="setting-group-label">Dati e Integrazioni</div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">🌦️</div><div><div class="setting-title">API Meteo</div><div class="setting-value">Non collegata</div></div></div><div class="setting-arrow">›</div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">📡</div><div><div class="setting-title">Sensori IoT</div><div class="setting-value">Nessun sensore</div></div></div><div class="setting-arrow">›</div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">☁️</div><div><div class="setting-title">Backup cloud</div><div class="setting-value">Disattivato</div></div></div><div class="toggle" onclick="this.classList.toggle('on')"><div class="toggle-knob"></div></div></div>
-  </div>
-    <div class="setting-group">
-    <div class="setting-group-label">🔑 AI Key</div>
+    <div class="setting-group-label">🌱 Serra</div>
     <div class="setting-item">
       <div class="setting-left">
-        <div class="setting-icon">✨</div>
+        <div class="setting-icon">🌱</div>
         <div>
-          <div class="setting-title">Gemini Flash</div>
-          <div class="setting-value" id="cfg-gemini-status">Non configurata</div>
+          <div class="setting-title">Nome Serra</div>
+          <div class="setting-value" id="cfg-serra-nome-display">BioSerra #1</div>
         </div>
       </div>
-      <button onclick="showSection('ai', document.querySelector('[onclick*=\'ai\']'))" 
-        style="background:var(--green2);border:none;border-radius:8px;padding:6px 12px;color:var(--text);font-size:12px;cursor:pointer;font-weight:600;">
-        Configura
+      <button onclick="cfgEditSerra('nome')" style="background:var(--green2);border:none;border-radius:8px;padding:6px 14px;color:var(--text);font-size:12px;cursor:pointer;font-weight:600;">Modifica</button>
+    </div>
+    <div class="setting-item">
+      <div class="setting-left">
+        <div class="setting-icon">📍</div>
+        <div>
+          <div class="setting-title">Posizione</div>
+          <div class="setting-value">Caserta, Campania 🇮🇹</div>
+        </div>
+      </div>
+    </div>
+    <div class="setting-item">
+      <div class="setting-left">
+        <div class="setting-icon">🗓️</div>
+        <div>
+          <div class="setting-title">Inizio Ciclo</div>
+          <div class="setting-value" id="cfg-inizio-ciclo-display">21 aprile 2026</div>
+        </div>
+      </div>
+      <button onclick="cfgEditSerra('ciclo')" style="background:var(--green2);border:none;border-radius:8px;padding:6px 14px;color:var(--text);font-size:12px;cursor:pointer;font-weight:600;">Modifica</button>
+    </div>
+  </div>
+
+  <!-- 2) NOTIFICHE TELEGRAM -->
+  <div class="setting-group">
+    <div class="setting-group-label">📩 Notifiche Telegram</div>
+    <div style="font-size:11px;color:var(--text3);padding:0 4px 10px;line-height:1.5;">Le automazioni N8N leggono il file <code style="color:var(--green3);font-size:10px;">notifiche_config.json</code> su GitHub. Disattivando un toggle, quella notifica viene saltata.</div>
+
+    <div class="setting-item">
+      <div class="setting-left">
+        <div class="setting-icon">🌿</div>
+        <div>
+          <div class="setting-title">Alert piante</div>
+          <div class="setting-value">Raccolta · Fioritura · Essiccazione</div>
+        </div>
+      </div>
+      <div class="toggle on" id="ntf-piante" onclick="cfgToggleNotifica('piante',this)"><div class="toggle-knob"></div></div>
+    </div>
+
+    <div class="setting-item">
+      <div class="setting-left">
+        <div class="setting-icon">🌙</div>
+        <div>
+          <div class="setting-title">Consigli lunari giornalieri</div>
+          <div class="setting-value">Fase luna · Giorno favorevole</div>
+        </div>
+      </div>
+      <div class="toggle on" id="ntf-luna" onclick="cfgToggleNotifica('luna',this)"><div class="toggle-knob"></div></div>
+    </div>
+
+    <div class="setting-item">
+      <div class="setting-left">
+        <div class="setting-icon">🤖</div>
+        <div>
+          <div class="setting-title">Analisi AI giornaliera</div>
+          <div class="setting-value">Report stato piante via AI</div>
+        </div>
+      </div>
+      <div class="toggle on" id="ntf-ai" onclick="cfgToggleNotifica('ai',this)"><div class="toggle-knob"></div></div>
+    </div>
+
+    <div class="setting-item">
+      <div class="setting-left">
+        <div class="setting-icon">⚡</div>
+        <div>
+          <div class="setting-title">Aggiornamento elettrocultura</div>
+          <div class="setting-value">Nuove tecniche · Esperimenti</div>
+        </div>
+      </div>
+      <div class="toggle on" id="ntf-elettro" onclick="cfgToggleNotifica('elettro',this)"><div class="toggle-knob"></div></div>
+    </div>
+
+    <div class="setting-item">
+      <div class="setting-left">
+        <div class="setting-icon">📄</div>
+        <div>
+          <div class="setting-title">Analisi PDF settimanale</div>
+          <div class="setting-value">Riepilogo manuali · Calendario</div>
+        </div>
+      </div>
+      <div class="toggle on" id="ntf-pdf" onclick="cfgToggleNotifica('pdf',this)"><div class="toggle-knob"></div></div>
+    </div>
+
+    <div style="margin-top:8px;padding:8px 10px;background:var(--bg3);border-radius:8px;display:flex;align-items:center;justify-content:space-between;">
+      <span style="font-size:11px;color:var(--text3);">Ultimo aggiornamento config:</span>
+      <span id="cfg-ntf-last-update" style="font-size:11px;color:var(--green3);">—</span>
+    </div>
+    <button onclick="cfgSaveNotifiche()" style="margin-top:10px;width:100%;background:var(--green2);border:none;border-radius:10px;padding:10px;color:var(--text);font-size:13px;font-weight:700;cursor:pointer;">💾 Salva configurazione notifiche</button>
+  </div>
+
+  <!-- 3) ORE DI LUCE -->
+  <div class="setting-group">
+    <div class="setting-group-label">☀️ Ore di Luce</div>
+    <div style="font-size:11px;color:var(--text3);padding:0 4px 10px;">Sincronizzato con la sezione Piante — modifica qui o lì, i valori restano allineati.</div>
+    <div class="setting-item" style="flex-direction:column;align-items:stretch;gap:10px;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span style="font-size:13px;color:var(--text2);white-space:nowrap;">Ore attuali:</span>
+        <input type="range" id="cfg-light-slider" min="1" max="24" step="0.5" value="16"
+          oninput="cfgUpdateLight(this.value)"
+          style="flex:1;accent-color:var(--green);height:6px;cursor:pointer;">
+        <div style="display:flex;align-items:center;gap:4px;">
+          <input type="number" id="cfg-light-input" min="1" max="24" step="0.5" value="16"
+            oninput="cfgUpdateLight(this.value)"
+            style="width:54px;background:var(--card2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:15px;font-weight:700;text-align:center;padding:4px 6px;">
+          <span style="font-size:13px;color:var(--text3);">h</span>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button onclick="cfgUpdateLight(12)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">12h</button>
+        <button onclick="cfgUpdateLight(14)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">14h</button>
+        <button onclick="cfgUpdateLight(16)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">16h</button>
+        <button onclick="cfgUpdateLight(18)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">18h</button>
+        <button onclick="cfgUpdateLight(20)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">20h</button>
+      </div>
+      <div style="padding:8px 12px;background:var(--bg3);border-radius:8px;font-size:11px;color:var(--text3);">
+        Formula: <span style="color:var(--green3);">giorni reali = giorni produttore × (ore ideali ÷ ore tue)</span><br>
+        Auto: ore ideali 18h &nbsp;·&nbsp; Femm.: ore ideali 12h
+      </div>
+    </div>
+  </div>
+
+  <!-- 4) TEMA -->
+  <div class="setting-group">
+    <div class="setting-group-label">🎨 Tema</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:4px 0;">
+      <div class="cfg-theme-btn" id="theme-verde-scuro" onclick="cfgSetTheme('verde-scuro')" style="background:#0d1a12;border:2px solid var(--green);border-radius:10px;padding:12px 8px;text-align:center;cursor:pointer;">
+        <div style="font-size:18px;">🌲</div>
+        <div style="font-size:12px;color:#e8f5e9;margin-top:4px;font-weight:600;">Verde Scuro</div>
+        <div style="font-size:10px;color:#6a9e7a;">Attuale</div>
+      </div>
+      <div class="cfg-theme-btn" id="theme-verde-chiaro" onclick="cfgSetTheme('verde-chiaro')" style="background:#e8f5e0;border:2px solid transparent;border-radius:10px;padding:12px 8px;text-align:center;cursor:pointer;">
+        <div style="font-size:18px;">🌿</div>
+        <div style="font-size:12px;color:#1b4332;margin-top:4px;font-weight:600;">Verde Chiaro</div>
+        <div style="font-size:10px;color:#40916c;">Naturale</div>
+      </div>
+      <div class="cfg-theme-btn" id="theme-blu-notte" onclick="cfgSetTheme('blu-notte')" style="background:#0d1b2a;border:2px solid transparent;border-radius:10px;padding:12px 8px;text-align:center;cursor:pointer;">
+        <div style="font-size:18px;">🌙</div>
+        <div style="font-size:12px;color:#e0f0ff;margin-top:4px;font-weight:600;">Blu Notte</div>
+        <div style="font-size:10px;color:#5a9fd4;">Notturno</div>
+      </div>
+      <div class="cfg-theme-btn" id="theme-arancio-terra" onclick="cfgSetTheme('arancio-terra')" style="background:#1a0e00;border:2px solid transparent;border-radius:10px;padding:12px 8px;text-align:center;cursor:pointer;">
+        <div style="font-size:18px;">🪵</div>
+        <div style="font-size:12px;color:#ffe0b2;margin-top:4px;font-weight:600;">Arancio Terra</div>
+        <div style="font-size:10px;color:#ff9800;">Caldo</div>
+      </div>
+    </div>
+    <div id="cfg-theme-note" style="margin-top:8px;font-size:11px;color:var(--text3);padding:0 4px;">Tema attivo: <span id="cfg-theme-name" style="color:var(--green3);">Verde Scuro</span></div>
+  </div>
+
+  <!-- 5) AI ATTIVA -->
+  <div class="setting-group">
+    <div class="setting-group-label">🤖 AI Attiva</div>
+    <div style="font-size:11px;color:var(--text3);padding:0 4px 10px;">Seleziona il modello AI da usare nelle risposte della sezione AI.</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <div class="cfg-ai-btn" id="ai-claude" onclick="cfgSetAI('claude')" style="background:var(--card2);border:2px solid var(--green);border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
+        <div style="font-size:20px;">✨</div>
+        <div style="font-size:12px;color:var(--text);margin-top:4px;font-weight:700;">Claude</div>
+        <div style="font-size:10px;color:var(--green3);">Attivo</div>
+      </div>
+      <div class="cfg-ai-btn" id="ai-gemini" onclick="cfgSetAI('gemini')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
+        <div style="font-size:20px;">💎</div>
+        <div style="font-size:12px;color:var(--text);margin-top:4px;font-weight:700;">Gemini</div>
+        <div style="font-size:10px;color:var(--text3);">Google</div>
+      </div>
+      <div class="cfg-ai-btn" id="ai-grok" onclick="cfgSetAI('grok')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
+        <div style="font-size:20px;">⚡</div>
+        <div style="font-size:12px;color:var(--text);margin-top:4px;font-weight:700;">Grok</div>
+        <div style="font-size:10px;color:var(--text3);">xAI</div>
+      </div>
+      <div class="cfg-ai-btn" id="ai-chatgpt" onclick="cfgSetAI('chatgpt')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
+        <div style="font-size:20px;">🧠</div>
+        <div style="font-size:12px;color:var(--text);margin-top:4px;font-weight:700;">ChatGPT</div>
+        <div style="font-size:10px;color:var(--text3);">OpenAI</div>
+      </div>
+    </div>
+    <div style="margin-top:8px;font-size:11px;color:var(--text3);padding:0 4px;">AI selezionata: <span id="cfg-ai-name" style="color:var(--green3);">Claude</span></div>
+  </div>
+
+  <!-- 6) DATI -->
+  <div class="setting-group">
+    <div class="setting-group-label">🗂️ Dati</div>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <button onclick="cfgEsportaDati()" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:12px 16px;color:var(--text);font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:10px;width:100%;">
+        <span style="font-size:18px;">📤</span>
+        <div style="text-align:left;">
+          <div>Esporta dati</div>
+          <div style="font-size:11px;color:var(--text3);font-weight:400;">Scarica JSON con tutte le piante e impostazioni</div>
+        </div>
+      </button>
+      <button onclick="cfgResetCache()" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:12px 16px;color:var(--orange);font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:10px;width:100%;">
+        <span style="font-size:18px;">🗑️</span>
+        <div style="text-align:left;">
+          <div>Reset cache</div>
+          <div style="font-size:11px;color:var(--text3);font-weight:400;">Cancella cache app (piante salvate non vengono eliminate)</div>
+        </div>
+      </button>
+      <button onclick="cfgAggiornaTutto()" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:12px 16px;color:var(--green3);font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:10px;width:100%;">
+        <span style="font-size:18px;">🔄</span>
+        <div style="text-align:left;">
+          <div>Aggiorna tutto manualmente</div>
+          <div style="font-size:11px;color:var(--text3);font-weight:400;">Ricalcola timeline, meteo, fase lunare</div>
+        </div>
       </button>
     </div>
   </div>
+
+  <!-- 7) APP INFO -->
   <div class="setting-group">
-    <div class="setting-group-label">App</div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">🎨</div><div><div class="setting-title">Tema</div><div class="setting-value">Scuro — Verde Foresta</div></div></div><div class="setting-arrow">›</div></div>
-    <div class="setting-item"><div class="setting-left"><div class="setting-icon">ℹ️</div><div><div class="setting-title">Versione</div><div class="setting-value">BioSerra 0.1.0 · Beta</div></div></div></div>
+    <div class="setting-group-label">ℹ️ App</div>
+    <div class="setting-item">
+      <div class="setting-left">
+        <div class="setting-icon">📦</div>
+        <div>
+          <div class="setting-title">Versione</div>
+          <div class="setting-value">BioSerra 1.0.0 · Beta</div>
+        </div>
+      </div>
+    </div>
+    <div class="setting-item">
+      <div class="setting-left">
+        <div class="setting-icon">🐙</div>
+        <div>
+          <div class="setting-title">Repository GitHub</div>
+          <div class="setting-value" style="color:var(--blue);font-size:12px;">francescocaruso487-tech/bioserra</div>
+        </div>
+      </div>
+      <button onclick="window.open('https://github.com/francescocaruso487-tech/bioserra','_blank')" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:6px 12px;color:var(--text);font-size:12px;cursor:pointer;">Apri</button>
+    </div>
+    <div class="setting-item">
+      <div class="setting-left">
+        <div class="setting-icon">🌱</div>
+        <div>
+          <div class="setting-title">Sistema</div>
+          <div class="setting-value">Living Soil · 10 piante · 8 mesi</div>
+        </div>
+      </div>
+    </div>
   </div>
+
 </section>
+
 
 <!-- NAV -->
 <nav class="nav">
@@ -1381,6 +1593,7 @@ function showSection(id, btn) {
   if (id === 'luna') setTimeout(renderLunarSection, 50);
   if (id === 'bio') renderBioCalendar();
   if (id === 'ai') setTimeout(aiInitUI, 50);
+  if (id === 'impostazioni') setTimeout(initImpostazioni, 50);
 }
 
 function refreshAll() { renderBioCalendar(); renderLunarSection(); loadWeather(); }
@@ -2958,10 +3171,240 @@ function navigateTo(sectionId) {
   loadManualiJSON();
 })();
 
+
+/* ══════════════════════════════════════════════════════════════
+   IMPOSTAZIONI — CONFIG SECTION
+══════════════════════════════════════════════════════════════ */
+
+/* ── Init impostazioni all'avvio ── */
+function initImpostazioni() {
+  // Carica nome serra
+  const nome = localStorage.getItem('bioserra_cfg_nome') || 'BioSerra #1';
+  const el = document.getElementById('cfg-serra-nome-display');
+  if (el) el.textContent = nome;
+
+  // Sincronizza ore di luce
+  const lh = parseFloat(localStorage.getItem('bioserra_light_hours') || '16');
+  const s = document.getElementById('cfg-light-slider');
+  const i = document.getElementById('cfg-light-input');
+  if (s) s.value = lh;
+  if (i) i.value = lh;
+
+  // Carica toggles notifiche
+  const ntf = cfgLoadNotifiche();
+  ['piante','luna','ai','elettro','pdf'].forEach(k => {
+    const el = document.getElementById('ntf-' + k);
+    if (el) {
+      if (ntf[k]) el.classList.add('on'); else el.classList.remove('on');
+    }
+  });
+  const ts = localStorage.getItem('bioserra_ntf_last_update');
+  const tsel = document.getElementById('cfg-ntf-last-update');
+  if (tsel && ts) tsel.textContent = new Date(ts).toLocaleString('it-IT');
+
+  // Tema
+  const tema = localStorage.getItem('bioserra_tema') || 'verde-scuro';
+  cfgApplyThemeUI(tema);
+
+  // AI
+  const ai = localStorage.getItem('bioserra_ai_attiva') || 'claude';
+  cfgApplyAIUI(ai);
+}
+
+/* ── Serra ── */
+function cfgEditSerra(campo) {
+  if (campo === 'nome') {
+    const cur = localStorage.getItem('bioserra_cfg_nome') || 'BioSerra #1';
+    const val = prompt('Nome della serra:', cur);
+    if (val && val.trim()) {
+      localStorage.setItem('bioserra_cfg_nome', val.trim());
+      const el = document.getElementById('cfg-serra-nome-display');
+      if (el) el.textContent = val.trim();
+    }
+  } else if (campo === 'ciclo') {
+    const cur = localStorage.getItem('bioserra_cfg_ciclo') || '2026-04-21';
+    const val = prompt('Data inizio ciclo (YYYY-MM-DD):', cur);
+    if (val && /^\d{4}-\d{2}-\d{2}$/.test(val)) {
+      localStorage.setItem('bioserra_cfg_ciclo', val);
+      const d = new Date(val);
+      const el = document.getElementById('cfg-inizio-ciclo-display');
+      if (el) el.textContent = d.toLocaleDateString('it-IT', {day:'numeric',month:'long',year:'numeric'});
+    }
+  }
+}
+
+/* ── Notifiche ── */
+function cfgLoadNotifiche() {
+  try {
+    return JSON.parse(localStorage.getItem('bioserra_notifiche') || '{}');
+  } catch(e) { return {}; }
+}
+function cfgToggleNotifica(key, el) {
+  el.classList.toggle('on');
+  const ntf = cfgLoadNotifiche();
+  ntf[key] = el.classList.contains('on');
+  localStorage.setItem('bioserra_notifiche', JSON.stringify(ntf));
+}
+function cfgSaveNotifiche() {
+  const ntf = {};
+  ['piante','luna','ai','elettro','pdf'].forEach(k => {
+    const el = document.getElementById('ntf-' + k);
+    ntf[k] = el ? el.classList.contains('on') : true;
+  });
+  const ts = new Date().toISOString();
+  ntf.last_update = ts;
+  localStorage.setItem('bioserra_notifiche', JSON.stringify(ntf));
+  localStorage.setItem('bioserra_ntf_last_update', ts);
+  const el = document.getElementById('cfg-ntf-last-update');
+  if (el) el.textContent = new Date(ts).toLocaleString('it-IT');
+  cfgToast('✅ Configurazione notifiche salvata');
+}
+
+/* ── Ore di luce (sincronizzato con sezione Piante) ── */
+function cfgUpdateLight(val) {
+  val = Math.min(24, Math.max(1, parseFloat(val) || 16));
+  const s = document.getElementById('cfg-light-slider');
+  const i = document.getElementById('cfg-light-input');
+  if (s) s.value = val;
+  if (i) i.value = val;
+  // Chiama la funzione originale che aggiorna anche la sezione Piante
+  if (typeof updateLightHours === 'function') updateLightHours(val);
+}
+
+/* ── Tema ── */
+const CFG_THEMES = {
+  'verde-scuro': {
+    '--bg':'#0d1a12','--bg2':'#13231a','--bg3':'#1a2e20','--card':'#192819','--card2':'#1f3326',
+    '--border':'#2a4a35','--green':'#4caf76','--green2':'#2e7d52','--green3':'#81c784',
+    '--text':'#e8f5e9','--text2':'#a5c9b0','--text3':'#6a9e7a',
+    nome:'Verde Scuro 🌲'
+  },
+  'verde-chiaro': {
+    '--bg':'#f0faf0','--bg2':'#e2f5e2','--bg3':'#d0ecd0','--card':'#e8f5e8','--card2':'#d5edd5',
+    '--border':'#a8d5a8','--green':'#2e7d32','--green2':'#388e3c','--green3':'#1b5e20',
+    '--text':'#1a3a1a','--text2':'#2e5e2e','--text3':'#4e8e4e',
+    nome:'Verde Chiaro 🌿'
+  },
+  'blu-notte': {
+    '--bg':'#0d1b2a','--bg2':'#112233','--bg3':'#162d44','--card':'#132035','--card2':'#1a2d45',
+    '--border':'#1e4060','--green':'#42a5c8','--green2':'#1e7aa8','--green3':'#80cfee',
+    '--text':'#e0f0ff','--text2':'#a0c8e8','--text3':'#5a9fd4',
+    nome:'Blu Notte 🌙'
+  },
+  'arancio-terra': {
+    '--bg':'#1a0e00','--bg2':'#241200','--bg3':'#301800','--card':'#271200','--card2':'#341800',
+    '--border':'#5a3000','--green':'#ff9800','--green2':'#e65100','--green3':'#ffcc02',
+    '--text':'#ffe0b2','--text2':'#ffb74d','--text3':'#ff9800',
+    nome:'Arancio Terra 🪵'
+  }
+};
+function cfgSetTheme(id) {
+  localStorage.setItem('bioserra_tema', id);
+  cfgApplyThemeUI(id);
+  cfgApplyThemeCSS(id);
+  cfgToast('🎨 Tema ' + (CFG_THEMES[id]?.nome || id) + ' applicato');
+}
+function cfgApplyThemeUI(id) {
+  document.querySelectorAll('.cfg-theme-btn').forEach(b => {
+    b.style.border = '2px solid transparent';
+  });
+  const sel = document.getElementById('theme-' + id);
+  if (sel) sel.style.border = '2px solid var(--green)';
+  const nm = document.getElementById('cfg-theme-name');
+  if (nm) nm.textContent = CFG_THEMES[id]?.nome || id;
+}
+function cfgApplyThemeCSS(id) {
+  const t = CFG_THEMES[id];
+  if (!t) return;
+  const root = document.documentElement;
+  Object.entries(t).forEach(([k,v]) => {
+    if (k.startsWith('--')) root.style.setProperty(k, v);
+  });
+}
+
+/* ── AI Attiva ── */
+function cfgSetAI(id) {
+  localStorage.setItem('bioserra_ai_attiva', id);
+  cfgApplyAIUI(id);
+  cfgToast('🤖 AI ' + id.charAt(0).toUpperCase() + id.slice(1) + ' selezionata');
+}
+function cfgApplyAIUI(id) {
+  document.querySelectorAll('.cfg-ai-btn').forEach(b => {
+    b.style.border = '2px solid transparent';
+  });
+  const sel = document.getElementById('ai-' + id);
+  if (sel) sel.style.border = '2px solid var(--green)';
+  const nm = document.getElementById('cfg-ai-name');
+  const labels = {claude:'Claude',gemini:'Gemini',grok:'Grok',chatgpt:'ChatGPT'};
+  if (nm) nm.textContent = labels[id] || id;
+}
+
+/* ── Dati ── */
+function cfgEsportaDati() {
+  const data = {
+    bioserra_versione: '1.0.0',
+    esportato_il: new Date().toISOString(),
+    impostazioni: {
+      nome: localStorage.getItem('bioserra_cfg_nome'),
+      ciclo: localStorage.getItem('bioserra_cfg_ciclo'),
+      tema: localStorage.getItem('bioserra_tema'),
+      ai: localStorage.getItem('bioserra_ai_attiva'),
+      ore_luce: localStorage.getItem('bioserra_light_hours'),
+      notifiche: cfgLoadNotifiche()
+    },
+    piante_attive: JSON.parse(localStorage.getItem('bioserra_active_plants') || '[]'),
+    piante_archivio: JSON.parse(localStorage.getItem('bioserra_archive') || '[]')
+  };
+  const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'bioserra_backup_' + new Date().toISOString().slice(0,10) + '.json';
+  a.click();
+  cfgToast('📤 Dati esportati');
+}
+function cfgResetCache() {
+  if (!confirm('Resettare la cache? Le piante salvate restano intatte.')) return;
+  const keep = ['bioserra_active_plants','bioserra_archive','bioserra_cfg_nome','bioserra_cfg_ciclo',
+                 'bioserra_notifiche','bioserra_tema','bioserra_ai_attiva','bioserra_light_hours'];
+  Object.keys(localStorage).forEach(k => {
+    if (!keep.includes(k)) localStorage.removeItem(k);
+  });
+  cfgToast('🗑️ Cache resettata');
+}
+function cfgAggiornaTutto() {
+  if (typeof renderActivePlants === 'function') renderActivePlants();
+  if (typeof loadWeather === 'function') loadWeather();
+  if (typeof updateMoon === 'function') updateMoon();
+  cfgToast('🔄 Aggiornamento completato');
+}
+
+/* ── Toast ── */
+function cfgToast(msg) {
+  let t = document.getElementById('cfg-toast');
+  if (!t) {
+    t = document.createElement('div');
+    t.id = 'cfg-toast';
+    t.style.cssText = 'position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:8px 18px;font-size:13px;color:var(--text);z-index:9999;pointer-events:none;transition:opacity .3s;';
+    document.body.appendChild(t);
+  }
+  t.textContent = msg;
+  t.style.opacity = '1';
+  clearTimeout(t._to);
+  t._to = setTimeout(() => { t.style.opacity = '0'; }, 2500);
+}
+
+/* ── Applica tema salvato all'avvio ── */
+(function() {
+  const t = localStorage.getItem('bioserra_tema');
+  if (t) cfgApplyThemeCSS(t);
+})();
+
+
 renderBioCalendar();
 </script>
 </body>
 </html>
+
 
 
 
