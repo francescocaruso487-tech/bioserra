@@ -11,8 +11,9 @@
 <meta name="apple-mobile-web-app-title" content="BioSerra">
 <meta name="application-name" content="BioSerra">
 <meta name="msapplication-TileColor" content="#0d1a12">
-<link rel="manifest" href="/manifest.json">
-<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAEQ0lEQVR42u3dwY0UMRAFUCfAhSMxEQ9pkRYEwJ0DZxDanXX/X/WkH8DI9VQ9M3aXz6cvn0XenGMJBCABSAASgEQAEoAEIAFIBCABSAASgEQAEoAEoKJ8/f7NIgD0VxyvCkDEfOMJoCfR7MR0uCEJoGg3syUdbkhaDaiUzhhGBx2M1gEaRqea0UEHoxWAltCpY3TQwWgyoOV68g0ddDAaCAiXFkMHHYzmAIKjztChh6EJgIAoNXToYagYEAHtjA49DFUCUvIZhg49DJUBUuZJhg49DAEkOwAp7f/kx6+fRYYOPWl6/qTF0KEnjc6rAN0xdOgJ1FNk6NATSKfIEEC5eiq+DB16YulUNKFDT7KefEMApesJf5AdesLphDehQ0++nmRDABXQSX6QHXpa9GQ2IYA66MQ2oUNPkZ5AQwCV6XmJoVBA6Fygk9aEAOrTE9WEDj11dKIMAdSqZxSgnYclHqSTY2ggoDuVSNDzfkMRgCY9Sur0PN6EJgC6WZIoOglNqBvQ5ZJk6nmnoYcBbfvDl6EhgB6sCkDdgB4vzLwm9Bigtf/5MlQJKKoqAJUBCizMJEMPAFqlZ8ODDCBN6F2GxgIKr4oOFA0ovzDLv0cfeiYZur+xCtCcbbJHDkrnAur6ctpOB6C9hp6dDxwKKFnPP2pWreceoOXtJ+TEWciQ8qP9NALKmXIP0OvrV0pnDqDqR1j4aI4tgNq3uxvpDARUvdPUqGcgoOrNpjo9MwH1vsvXRWc4oNI9yy49wwGVblu20NkCKPN8dNTNGABNG8xTQecSIMOd3lbsCj1vMFTcgeo2wOfpmQDoPqMXfsjAlVwKqOUcRbie1YDuMHrJJ0xewO2A2k9TAOSuE4CmjIQGCKCm+ZsAjR1KDxBAKYYAWgroVYwAWg2o9JDXNEAD7uYBaMV0jgF3sgA0+XYwgAC6zQgggLqPnA4BNPKOy+WAJo/5vWno35IAAuhdrQgggADKADTY0EJAW657AggggABa8FtsFaCll+4CBBBA6wFt+0uaHoAAAgigSYBWbc7TAxBAeYD2HDGjByCAIgFNMrQB0KuKDhBAMYA2vK1BD0AABQMa/84hPQABlA1o9pvz9AAEUDygwSNg6LkEaOocKnoAAqgEUK+heYA+rsQfC2jeRE56AFqXbkAMDdZzCRBDU/XcA8TQSD1XATE0T89tQAwN0wMQQG2AGJqk5xlADI3R8xgghmboeRIQQwP0PAyIoXY9zwPCqJdOECCGSvUEAWKoUU8WIIbq9MQBYqhLTyIgjFroRANiqEJPNCCMwul0AGIovDoFgNYyqqhLDaBVjIoqUgZoPKO6WlQCGsmotArFgMYwql7/ekDVjAas/BBAXZImLfg0QMmSRq7zWEA5kmYv73xAj2Das6S7AH2cp7VruBrQfyKzCAAJQAKQACQCkAAkAAlAApAlEIAEIAFIABIBSACSlvwGtwmICimJ+cwAAAAASUVORK5CYII=">
+<link rel="manifest" href="/bioserra/manifest.json">
+<link rel="apple-touch-icon" sizes="192x192" href="/bioserra/icon-192.png">
+<link rel="apple-touch-icon" sizes="512x512" href="/bioserra/icon-512.png">
 <title>BioSerra</title>
 <style>
   :root {
@@ -4370,7 +4371,7 @@ function updateBioElettroPreview() {
 /* ── Registrazione Service Worker ── */
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js', { scope: '/' })
+    navigator.serviceWorker.register('/bioserra/sw.js', { scope: '/bioserra/' })
       .then(reg => {
         console.log('[BioSerra SW] Attivo:', reg.scope);
         /* Aggiornamento automatico quando c'è connessione */
