@@ -2372,8 +2372,7 @@ function initElettrocultura() {
   elLoadTecnicheJSON();
   elUpdateStats();
 }
-document.addEventListener('DOMContentLoaded', initElettrocultura);
-if (document.readyState !== 'loading') { setTimeout(initElettrocultura, 50); }
+// initElettrocultura viene chiamata da initApp() dopo sblocco PIN
 
 /* ══════════════════════════════════════════════════════════════
    METEO — Open-Meteo · Caserta fissa
@@ -2846,8 +2845,7 @@ function closeBioPopupDirect() {
   document.getElementById('bio-popup').classList.add('hidden');
 }
 
-// Render iniziale
-renderBioCalendar();
+// renderBioCalendar viene chiamata da initApp() dopo sblocco PIN
 
 /* ══════════════════════════════════════════════════════════════
    PIANTE — Sistema Dinamico: Attive, Aggiungi, Archivia
@@ -3213,9 +3211,9 @@ function confirmArchive() {
 }
 
 /* ── Init ── */
-(function initPiante() {
+function initPiante() {
   renderActivePlants();
-})();
+}
 
 
 /* ══════════════════════════════════════════════════════════════
@@ -3568,14 +3566,13 @@ function navigateTo(sectionId) {
 }
 
 /* ── Carica i JSON delle sezioni attive all'avvio ── */
-(function initJsonLoaders() {
+function initJsonLoaders() {
   loadAIJSON();
   loadLunaJSON();
   loadPianteJSON();
   loadManualiJSON();
-  // Prepara ambiente se è il tab attivo all'avvio
   setTimeout(() => { if(document.getElementById('sec-ambiente') && document.getElementById('sec-ambiente').classList.contains('active')) initAmbiente(); }, 200);
-})();
+}
 
 
 /* ══════════════════════════════════════════════════════════════
@@ -3941,15 +3938,30 @@ function cfgToast(msg) {
 }
 
 /* ── Applica tema salvato all'avvio ── */
-(function() {
-  const t = localStorage.getItem('bioserra_tema');
-  if (t) cfgApplyThemeCSS(t);
-  // Applica stato notifiche ai panel subito (prima che l'utente apra Impostazioni)
-  setTimeout(applyNotificheAtBoot, 100);
-})();
+// Tema e notifiche vengono applicati da initApp() dopo sblocco PIN
 
 
-renderBioCalendar();
+// renderBioCalendar viene chiamata da initApp()
+
+/* ══════════════════════════════════════════════════════════════
+   INIT APP — Eseguita dopo sblocco PIN (o subito se PIN disabilitato)
+══════════════════════════════════════════════════════════════ */
+window._appInitialized = false;
+window.initApp = function() {
+  // 1. Piante
+  if (typeof initPiante === 'function') initPiante();
+  // 2. Elettrocultura
+  if (typeof initElettrocultura === 'function') initElettrocultura();
+  // 3. Calendario bio
+  if (typeof renderBioCalendar === 'function') renderBioCalendar();
+  // 4. JSON loaders (meteo, luna, AI, piante stato)
+  if (typeof initJsonLoaders === 'function') initJsonLoaders();
+  // 5. Tema salvato
+  const tema = localStorage.getItem('bioserra_tema');
+  if (tema && typeof cfgApplyThemeCSS === 'function') cfgApplyThemeCSS(tema);
+  // 6. Notifiche panel
+  if (typeof applyNotificheAtBoot === 'function') setTimeout(applyNotificheAtBoot, 100);
+};
 
 /* ══════════════════════════════════════════════════════════════
    SISTEMA DI SICUREZZA — PIN · SESSIONE 24h · BIOMETRIA
@@ -4000,10 +4012,14 @@ renderBioCalendar();
     var ls = document.getElementById('lockscreen');
     if (!ls) return;
     ls.classList.remove('visible');
-    // Forza nascosto via style inline — sicurezza assoluta per tutti i browser
     ls.style.display = 'none';
     ls.style.visibility = 'hidden';
     ls.style.pointerEvents = 'none';
+    // Inizializza l'app dopo lo sblocco (o se PIN non attivo)
+    if (typeof window.initApp === 'function' && !window._appInitialized) {
+      window._appInitialized = true;
+      window.initApp();
+    }
   }
 
   /* ── Dots ── */
@@ -4125,11 +4141,14 @@ Confermi il reset completo?')) return;
 
   /* ── Init ── */
   function initLock() {
-    // Se PIN non attivato dall'utente → non mostrare mai il lock
-    if (!isPinEnabled()) { hideLock(); pinUpdateSettingsUI(); return; }
-    // Sessione ancora valida → non bloccare
-    if (isSessionValid()) { hideLock(); pinUpdateSettingsUI(); return; }
-    // Blocco attivo?
+    // PIN disabilitato o sessione valida → sblocca subito e avvia l'app
+    if (!isPinEnabled() || isSessionValid()) {
+      hideLock(); // hideLock chiama initApp() internamente
+      pinUpdateSettingsUI();
+      return;
+    }
+    // PIN attivo e sessione scaduta → mostra lockscreen
+    // initApp() viene chiamata da hideLock() dopo l'inserimento del PIN corretto
     var bu = getBlockUntil();
     if (bu > Date.now()) startBlockCountdown(bu);
     showLock();
