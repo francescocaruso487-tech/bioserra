@@ -1,21 +1,19 @@
-/* ══════════════════════════════════════════
-   BioSerra — Service Worker completo
-   Cache-first + aggiornamento in background
-══════════════════════════════════════════ */
-
-const CACHE_NAME   = 'bioserra-v2';
-const OFFLINE_PAGE = '/index.html';
+/* ══ BioSerra Service Worker v3 ══ */
+const CACHE_NAME   = 'bioserra-v3';
+const BASE_PATH    = '/bioserra/';
+const OFFLINE_PAGE = '/bioserra/index.html';
 
 const PRECACHE = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/sw.js'
+  '/bioserra/',
+  '/bioserra/index.html',
+  '/bioserra/manifest.json',
+  '/bioserra/icon-192.png',
+  '/bioserra/icon-512.png',
+  '/bioserra/sw.js'
 ];
 
-/* ── INSTALL: precache delle risorse essenziali ── */
 self.addEventListener('install', event => {
-  console.log('[SW] Install');
+  console.log('[SW v3] Install');
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => cache.addAll(PRECACHE))
@@ -23,23 +21,22 @@ self.addEventListener('install', event => {
   );
 });
 
-/* ── ACTIVATE: elimina cache obsolete ── */
 self.addEventListener('activate', event => {
-  console.log('[SW] Activate');
+  console.log('[SW v3] Activate');
   event.waitUntil(
     caches.keys()
       .then(keys => Promise.all(
-        keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))
+        keys.filter(k => k !== CACHE_NAME).map(k => {
+          console.log('[SW v3] Elimino cache obsoleta:', k);
+          return caches.delete(k);
+        })
       ))
       .then(() => self.clients.claim())
   );
 });
 
-/* ── FETCH: Cache-first con revalidazione in background ── */
 self.addEventListener('fetch', event => {
   const req = event.request;
-
-  /* Ignora non-GET e richieste ad API esterne */
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   if (url.origin !== location.origin) return;
@@ -48,37 +45,26 @@ self.addEventListener('fetch', event => {
     caches.open(CACHE_NAME).then(async cache => {
       const cached = await cache.match(req);
 
-      /* Fetch in background per aggiornare la cache */
       const fetchPromise = fetch(req)
-        .then(networkRes => {
-          if (networkRes && networkRes.ok) {
-            cache.put(req, networkRes.clone());
-          }
-          return networkRes;
+        .then(res => {
+          if (res && res.ok) cache.put(req, res.clone());
+          return res;
         })
         .catch(() => null);
 
       if (cached) {
-        /* Risposta immediata dalla cache + aggiornamento silenzioso */
         fetchPromise.catch(() => {});
         return cached;
       }
 
-      /* Non in cache → aspetta network */
-      const networkRes = await fetchPromise;
-      if (networkRes) return networkRes;
+      const res = await fetchPromise;
+      if (res) return res;
 
-      /* Offline + non in cache → pagina principale */
-      const offlinePage = await cache.match(OFFLINE_PAGE);
-      return offlinePage || new Response(
-        '<h1>BioSerra offline</h1><p>Ricarica quando sei connesso.</p>',
-        { headers: { 'Content-Type': 'text/html' } }
-      );
+      return cache.match(OFFLINE_PAGE);
     })
   );
 });
 
-/* ── MESSAGE: forza aggiornamento manuale ── */
-self.addEventListener('message', event => {
-  if (event.data === 'skipWaiting') self.skipWaiting();
+self.addEventListener('message', e => {
+  if (e.data === 'skipWaiting') self.skipWaiting();
 });
