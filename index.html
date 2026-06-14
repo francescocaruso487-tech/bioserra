@@ -4075,7 +4075,7 @@ ${phase.code==='waxing_crescent'||phase.code==='waxing_gibbous'||phase.code==='f
 '🌿 <strong>Fase crescente</strong>: le piante assorbono meglio. Ottimo per somministrare melassa (1ml/L) e infuso ortiche. La linfa sale verso foglie e fusti.':
 phase.code==='full'?'🌕 <strong>Luna Piena</strong>: picco di assorbimento. Somministra la dose mensile di infuso ortiche e miscela organica.':
 phase.code==='waning_gibbous'||phase.code==='last_quarter'||phase.code==='waning_crescent'?'🌿 <strong>Fase calante</strong>: linfa verso le radici. Priorità a humus e infuso in profondità. Riduci apporti fogliari.':
-'🌑 <strong>Luna Nuova</strong>: rinnova l'infuso di humus nel serbatoio. Sciacqua la tanica.'}<br><br>
+'🌑 <strong>Luna Nuova</strong>: rinnova l\'infuso di humus nel serbatoio. Sciacqua la tanica.'}<br><br>
 <strong>Timer pompa:</strong> ${phase.code==='new'||phase.code==='waning_crescent'?'1 ciclo/giorno (piante a riposo)':'1–2 cicli/giorno (piante attive)'}<br>
 <strong>Bordi vasi:</strong> controlla ogni mattina<br>
 <strong>Melassa:</strong> ${phase.code==='full'||phase.code==='waxing_gibbous'?'✅ Ottimo momento':'ogni 15 giorni'}
@@ -4189,9 +4189,9 @@ ${piante.map(p=>`<div style="display:flex;justify-content:space-between;align-it
     case 'bio-elettro': {
       const bioElMap={
         frutto:{t:'🍊 Giorno Frutto × Elettrocultura',d:'Ottimo per la produzione di resine. La pila galvanica ferro-rame e le antenne rame sono molto attive. La micro-corrente favorisce Potassio e Magnesio verso le zone produttive.',a:'⚡ Verifica tutti i circuiti. Somministra tè banana (K) se siamo nei mesi 5-8.'},
-        fiore:{t:'🌸 Giorno Fiore × Elettrocultura',d:'I giorni Fiore (Aria/Luce) amplificano l'effetto dell'elettrocultura atmosferica. I bastoncini di rame captano meglio con alta pressione.',a:'🔁 Controlla i cerchi Lakhovsky: 2-3 cm sovrapposizione, 1 cm spazio. Documenta la crescita.'},
+        fiore:{t:'🌸 Giorno Fiore × Elettrocultura',d:'I giorni Fiore (Aria/Luce) amplificano l\'effetto dell\'elettrocultura atmosferica. I bastoncini di rame captano meglio con alta pressione.',a:'🔁 Controlla i cerchi Lakhovsky: 2-3 cm sovrapposizione, 1 cm spazio. Documenta la crescita.'},
         radice:{t:'🌿 Giorno Radice × Elettrocultura',d:'I giorni Radice (Terra) sono i più potenti per la pila galvanica. La micro-corrente ionizza i nutrienti rendendoli disponibili alle radici.',a:'⚗️ Versa acqua con melassa sul chiodo di ferro per aumentare la conducibilità.'},
-        foglia:{t:'💧 Giorno Foglia × Elettrocultura',d:'I giorni Foglia (Acqua) attivano il sistema Geomag. L'acqua strutturata è teoricamente più attiva. Il Pantacle distribuisce le cariche tra tutti i vasi.',a:'🧲 Controlla fissaggio Geomag su ogni gocciolatoio e il magnete principale.'}
+        foglia:{t:'💧 Giorno Foglia × Elettrocultura',d:'I giorni Foglia (Acqua) attivano il sistema Geomag. L\'acqua strutturata è teoricamente più attiva. Il Pantacle distribuisce le cariche tra tutti i vasi.',a:'🧲 Controlla fissaggio Geomag su ogni gocciolatoio e il magnete principale.'}
       };
       const m=bioElMap[bioConst.type]||bioElMap.frutto;
       return `<div class="amb-popup-label">Bio × Elettrocultura</div>
