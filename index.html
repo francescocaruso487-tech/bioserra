@@ -1435,29 +1435,95 @@
   <!-- 4) TEMA -->
   <div class="setting-group">
     <div class="setting-group-label">🎨 Tema</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:4px 0;">
-      <div class="cfg-theme-btn" id="theme-verde-scuro" onclick="cfgSetTheme('verde-scuro')" style="background:#0d1a12;border:2px solid var(--green);border-radius:10px;padding:12px 8px;text-align:center;cursor:pointer;">
-        <div style="font-size:18px;">🌲</div>
-        <div style="font-size:12px;color:#e8f5e9;margin-top:4px;font-weight:600;">Verde Scuro</div>
-        <div style="font-size:10px;color:#6a9e7a;">Attuale</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:4px 0;">
+
+      <!-- Verde Scuro -->
+      <div class="cfg-theme-btn" id="theme-verde-scuro" onclick="cfgSetTheme('verde-scuro')"
+        style="background:#0d1a12;border:2px solid var(--green);border-radius:12px;padding:0;overflow:hidden;cursor:pointer;position:relative;">
+        <!-- Anteprima colori -->
+        <div style="display:flex;height:28px;">
+          <div style="flex:1;background:#0d1a12;"></div>
+          <div style="flex:1;background:#4aaf5e;"></div>
+          <div style="flex:1;background:#3a9fd8;"></div>
+          <div style="flex:1;background:#f0843c;"></div>
+        </div>
+        <!-- Miniatura UI -->
+        <div style="padding:8px 10px;background:#0d1a12;">
+          <div style="height:5px;width:60%;background:#4aaf5e;border-radius:3px;margin-bottom:5px;"></div>
+          <div style="height:4px;width:80%;background:#1f3326;border-radius:2px;margin-bottom:3px;"></div>
+          <div style="height:4px;width:55%;background:#1f3326;border-radius:2px;"></div>
+        </div>
+        <!-- Label -->
+        <div style="padding:6px 10px 8px;background:#13231a;">
+          <div style="font-size:13px;color:#e8f5e9;font-weight:700;">🌲 Verde Scuro</div>
+          <div style="font-size:10px;color:#6a9e7a;margin-top:1px;">Foresta · Default</div>
+        </div>
       </div>
-      <div class="cfg-theme-btn" id="theme-verde-chiaro" onclick="cfgSetTheme('verde-chiaro')" style="background:#e8f5e0;border:2px solid transparent;border-radius:10px;padding:12px 8px;text-align:center;cursor:pointer;">
-        <div style="font-size:18px;">🌿</div>
-        <div style="font-size:12px;color:#1b4332;margin-top:4px;font-weight:600;">Verde Chiaro</div>
-        <div style="font-size:10px;color:#40916c;">Naturale</div>
+
+      <!-- Verde Chiaro -->
+      <div class="cfg-theme-btn" id="theme-verde-chiaro" onclick="cfgSetTheme('verde-chiaro')"
+        style="background:#f0f7f0;border:2px solid transparent;border-radius:12px;padding:0;overflow:hidden;cursor:pointer;">
+        <div style="display:flex;height:28px;">
+          <div style="flex:1;background:#f0f7f0;"></div>
+          <div style="flex:1;background:#2d8a3e;"></div>
+          <div style="flex:1;background:#1976d2;"></div>
+          <div style="flex:1;background:#e65100;"></div>
+        </div>
+        <div style="padding:8px 10px;background:#f0f7f0;">
+          <div style="height:5px;width:60%;background:#2d8a3e;border-radius:3px;margin-bottom:5px;"></div>
+          <div style="height:4px;width:80%;background:#dceadc;border-radius:2px;margin-bottom:3px;"></div>
+          <div style="height:4px;width:55%;background:#dceadc;border-radius:2px;"></div>
+        </div>
+        <div style="padding:6px 10px 8px;background:#e4f0e4;">
+          <div style="font-size:13px;color:#1a2e1a;font-weight:700;">🌿 Verde Chiaro</div>
+          <div style="font-size:10px;color:#4a7e50;margin-top:1px;">Naturale · Giorno</div>
+        </div>
       </div>
-      <div class="cfg-theme-btn" id="theme-blu-notte" onclick="cfgSetTheme('blu-notte')" style="background:#0d1b2a;border:2px solid transparent;border-radius:10px;padding:12px 8px;text-align:center;cursor:pointer;">
-        <div style="font-size:18px;">🌙</div>
-        <div style="font-size:12px;color:#e0f0ff;margin-top:4px;font-weight:600;">Blu Notte</div>
-        <div style="font-size:10px;color:#5a9fd4;">Notturno</div>
+
+      <!-- Blu Notte -->
+      <div class="cfg-theme-btn" id="theme-blu-notte" onclick="cfgSetTheme('blu-notte')"
+        style="background:#0a0e1a;border:2px solid transparent;border-radius:12px;padding:0;overflow:hidden;cursor:pointer;">
+        <div style="display:flex;height:28px;">
+          <div style="flex:1;background:#0a0e1a;"></div>
+          <div style="flex:1;background:#3a9fd8;"></div>
+          <div style="flex:1;background:#7c4dff;"></div>
+          <div style="flex:1;background:#f06292;"></div>
+        </div>
+        <div style="padding:8px 10px;background:#0a0e1a;">
+          <div style="height:5px;width:60%;background:#3a9fd8;border-radius:3px;margin-bottom:5px;"></div>
+          <div style="height:4px;width:80%;background:#141c3a;border-radius:2px;margin-bottom:3px;"></div>
+          <div style="height:4px;width:55%;background:#141c3a;border-radius:2px;"></div>
+        </div>
+        <div style="padding:6px 10px 8px;background:#0e1428;">
+          <div style="font-size:13px;color:#e0eeff;font-weight:700;">🌙 Blu Notte</div>
+          <div style="font-size:10px;color:#5a90d4;margin-top:1px;">Tech · Notturno</div>
+        </div>
       </div>
-      <div class="cfg-theme-btn" id="theme-arancio-terra" onclick="cfgSetTheme('arancio-terra')" style="background:#1a0e00;border:2px solid transparent;border-radius:10px;padding:12px 8px;text-align:center;cursor:pointer;">
-        <div style="font-size:18px;">🪵</div>
-        <div style="font-size:12px;color:#ffe0b2;margin-top:4px;font-weight:600;">Arancio Terra</div>
-        <div style="font-size:10px;color:#ff9800;">Caldo</div>
+
+      <!-- Arancio Terra -->
+      <div class="cfg-theme-btn" id="theme-arancio-terra" onclick="cfgSetTheme('arancio-terra')"
+        style="background:#1a1208;border:2px solid transparent;border-radius:12px;padding:0;overflow:hidden;cursor:pointer;">
+        <div style="display:flex;height:28px;">
+          <div style="flex:1;background:#1a1208;"></div>
+          <div style="flex:1;background:#f0843c;"></div>
+          <div style="flex:1;background:#8b5e3c;"></div>
+          <div style="flex:1;background:#ffd54f;"></div>
+        </div>
+        <div style="padding:8px 10px;background:#1a1208;">
+          <div style="height:5px;width:60%;background:#f0843c;border-radius:3px;margin-bottom:5px;"></div>
+          <div style="height:4px;width:80%;background:#301e0e;border-radius:2px;margin-bottom:3px;"></div>
+          <div style="height:4px;width:55%;background:#301e0e;border-radius:2px;"></div>
+        </div>
+        <div style="padding:6px 10px 8px;background:#231810;">
+          <div style="font-size:13px;color:#ffe8cc;font-weight:700;">🪵 Arancio Terra</div>
+          <div style="font-size:10px;color:#a87840;margin-top:1px;">Caldo · Naturale</div>
+        </div>
       </div>
+
     </div>
-    <div id="cfg-theme-note" style="margin-top:8px;font-size:11px;color:var(--text3);padding:0 4px;">Tema attivo: <span id="cfg-theme-name" style="color:var(--green3);">Verde Scuro</span></div>
+    <div id="cfg-theme-note" style="margin-top:10px;font-size:11px;color:var(--text3);padding:0 4px;">
+      Tema attivo: <span id="cfg-theme-name" style="color:var(--green3);font-weight:600;">Verde Scuro</span>
+    </div>
   </div>
 
   <!-- 5) AI ATTIVA -->
@@ -3305,26 +3371,46 @@ const CFG_THEMES = {
   'verde-scuro': {
     '--bg':'#0d1a12','--bg2':'#13231a','--bg3':'#1a2e20','--card':'#192819','--card2':'#1f3326',
     '--border':'#2a4a35','--green':'#4caf76','--green2':'#2e7d52','--green3':'#81c784',
+    '--blue':'#42a5c8','--blue2':'#1e7aa8',
+    '--orange':'#ff9800','--orange2':'#e65100',
+    '--red':'#ef5350','--yellow':'#ffee58','--purple':'#ab47bc',
     '--text':'#e8f5e9','--text2':'#a5c9b0','--text3':'#6a9e7a',
-    nome:'Verde Scuro 🌲'
+    '--shadow':'0 2px 12px rgba(0,0,0,0.5)',
+    nome:'Verde Scuro 🌲',
+    preview: { bg:'#0d1a12', accent:'#4aaf5e', secondary:'#3a9fd8', tertiary:'#f0843c' }
   },
   'verde-chiaro': {
-    '--bg':'#f0faf0','--bg2':'#e2f5e2','--bg3':'#d0ecd0','--card':'#e8f5e8','--card2':'#d5edd5',
-    '--border':'#a8d5a8','--green':'#2e7d32','--green2':'#388e3c','--green3':'#1b5e20',
-    '--text':'#1a3a1a','--text2':'#2e5e2e','--text3':'#4e8e4e',
-    nome:'Verde Chiaro 🌿'
+    '--bg':'#f0f7f0','--bg2':'#e4f0e4','--bg3':'#d5e8d5','--card':'#eaf4ea','--card2':'#dceadc',
+    '--border':'#a8cfb0','--green':'#2d8a3e','--green2':'#3a9e4e','--green3':'#1a6628',
+    '--blue':'#1976d2','--blue2':'#1565c0',
+    '--orange':'#e65100','--orange2':'#bf360c',
+    '--red':'#c62828','--yellow':'#f9a825','--purple':'#6a1b9a',
+    '--text':'#1a2e1a','--text2':'#2d5a30','--text3':'#4a7e50',
+    '--shadow':'0 2px 12px rgba(0,80,0,0.15)',
+    nome:'Verde Chiaro 🌿',
+    preview: { bg:'#f0f7f0', accent:'#2d8a3e', secondary:'#1976d2', tertiary:'#e65100' }
   },
   'blu-notte': {
-    '--bg':'#0d1b2a','--bg2':'#112233','--bg3':'#162d44','--card':'#132035','--card2':'#1a2d45',
-    '--border':'#1e4060','--green':'#42a5c8','--green2':'#1e7aa8','--green3':'#80cfee',
-    '--text':'#e0f0ff','--text2':'#a0c8e8','--text3':'#5a9fd4',
-    nome:'Blu Notte 🌙'
+    '--bg':'#0a0e1a','--bg2':'#0e1428','--bg3':'#121c38','--card':'#0f1530','--card2':'#141c3a',
+    '--border':'#1e3060','--green':'#3a9fd8','--green2':'#1e7aa8','--green3':'#80cfee',
+    '--blue':'#7c4dff','--blue2':'#5c35cc',
+    '--orange':'#f06292','--orange2':'#c2185b',
+    '--red':'#ff5252','--yellow':'#ffd740','--purple':'#7c4dff',
+    '--text':'#e0eeff','--text2':'#90b8e8','--text3':'#5a90d4',
+    '--shadow':'0 2px 16px rgba(0,0,80,0.6)',
+    nome:'Blu Notte 🌙',
+    preview: { bg:'#0a0e1a', accent:'#3a9fd8', secondary:'#7c4dff', tertiary:'#f06292' }
   },
   'arancio-terra': {
-    '--bg':'#1a0e00','--bg2':'#241200','--bg3':'#301800','--card':'#271200','--card2':'#341800',
-    '--border':'#5a3000','--green':'#ff9800','--green2':'#e65100','--green3':'#ffcc02',
-    '--text':'#ffe0b2','--text2':'#ffb74d','--text3':'#ff9800',
-    nome:'Arancio Terra 🪵'
+    '--bg':'#1a1208','--bg2':'#231810','--bg3':'#2e2014','--card':'#251808','--card2':'#301e0e',
+    '--border':'#5a3a18','--green':'#f0843c','--green2':'#c45e1a','--green3':'#ffa060',
+    '--blue':'#8b5e3c','--blue2':'#6a3e20',
+    '--orange':'#f0843c','--orange2':'#c45e1a',
+    '--red':'#e53935','--yellow':'#ffd54f','--purple':'#8d6e63',
+    '--text':'#ffe8cc','--text2':'#d4a870','--text3':'#a87840',
+    '--shadow':'0 2px 12px rgba(80,20,0,0.5)',
+    nome:'Arancio Terra 🪵',
+    preview: { bg:'#1a1208', accent:'#f0843c', secondary:'#8b5e3c', tertiary:'#ffd54f' }
   }
 };
 function cfgSetTheme(id) {
@@ -3334,11 +3420,24 @@ function cfgSetTheme(id) {
   cfgToast('🎨 Tema ' + (CFG_THEMES[id]?.nome || id) + ' applicato');
 }
 function cfgApplyThemeUI(id) {
+  const accentMap = {
+    'verde-scuro': '#4aaf5e',
+    'verde-chiaro': '#2d8a3e',
+    'blu-notte': '#3a9fd8',
+    'arancio-terra': '#f0843c'
+  };
   document.querySelectorAll('.cfg-theme-btn').forEach(b => {
     b.style.border = '2px solid transparent';
+    b.style.transform = 'scale(1)';
+    b.style.boxShadow = 'none';
   });
   const sel = document.getElementById('theme-' + id);
-  if (sel) sel.style.border = '2px solid var(--green)';
+  if (sel) {
+    const ac = accentMap[id] || '#4aaf5e';
+    sel.style.border = '2px solid ' + ac;
+    sel.style.boxShadow = '0 0 12px ' + ac + '55';
+    sel.style.transform = 'scale(1.02)';
+  }
   const nm = document.getElementById('cfg-theme-name');
   if (nm) nm.textContent = CFG_THEMES[id]?.nome || id;
 }
