@@ -919,37 +919,6 @@
   <!-- TAB ATTIVE -->
   <div class="piante-panel active" id="panel-attive">
 
-    <!-- MOLTIPLICATORE ORE DI LUCE -->
-    <div class="card" style="margin-bottom:14px;">
-      <div class="card-title">☀️ Moltiplicatore Ore di Luce</div>
-      <div style="font-size:12px;color:var(--text3);margin-bottom:10px;">Imposta le ore di luce attuali — tutte le timeline si ricalcolano in automatico</div>
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
-        <span style="font-size:13px;color:var(--text2);">Ore attuali:</span>
-        <div style="display:flex;align-items:center;gap:8px;flex:1;">
-          <input type="range" id="light-hours-slider" min="1" max="24" step="0.5" value="16"
-            oninput="updateLightHours(this.value)"
-            style="flex:1;accent-color:var(--green);height:6px;cursor:pointer;">
-          <div style="display:flex;align-items:center;gap:4px;">
-            <input type="number" id="light-hours-input" min="1" max="24" step="0.5" value="16"
-              oninput="updateLightHours(this.value)"
-              style="width:54px;background:var(--card2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:15px;font-weight:700;text-align:center;padding:4px 6px;">
-            <span style="font-size:13px;color:var(--text3);">h</span>
-          </div>
-        </div>
-      </div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;">
-        <button onclick="updateLightHours(12)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">12h</button>
-        <button onclick="updateLightHours(14)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">14h</button>
-        <button onclick="updateLightHours(16)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">16h</button>
-        <button onclick="updateLightHours(18)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">18h</button>
-        <button onclick="updateLightHours(20)" style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;color:var(--text2);font-size:12px;cursor:pointer;">20h</button>
-      </div>
-      <div style="margin-top:10px;padding:8px 12px;background:var(--bg3);border-radius:8px;font-size:12px;color:var(--text3);">
-        Formula: <span style="color:var(--green3);">giorni reali = giorni produttore × (ore ideali ÷ ore tue)</span><br>
-        Auto: ore ideali 18h · Femm.: ore ideali 12h
-      </div>
-    </div>
-
     <!-- PULSANTE AGGIUNGI PIANTA -->
     <button class="btn-add-plant" onclick="openAddPlantModal()">
       <span style="font-size:20px;">＋</span> Aggiungi Nuova Pianta
@@ -1628,7 +1597,7 @@
   <!-- 3) ORE DI LUCE -->
   <div class="setting-group">
     <div class="setting-group-label">☀️ Ore di Luce</div>
-    <div style="font-size:11px;color:var(--text3);padding:0 4px 10px;">Sincronizzato con la sezione Piante — modifica qui o lì, i valori restano allineati.</div>
+    <div style="font-size:11px;color:var(--text3);padding:0 4px 10px;">Imposta le ore di luce attuali — le timeline delle piante si ricalcolano automaticamente in tempo reale.</div>
     <div class="setting-item" style="flex-direction:column;align-items:stretch;gap:10px;">
       <div style="display:flex;align-items:center;gap:12px;">
         <span style="font-size:13px;color:var(--text2);white-space:nowrap;">Ore attuali:</span>
@@ -2778,7 +2747,7 @@ function saveArchivedPlants(plants) {
 }
 
 /* ── State ── */
-let currentLightHours = parseFloat(localStorage.getItem('bioserra_light_hours') || '16');
+let currentLightHours = parseFloat(localStorage.getItem('bioserra_ore_luce') || '16');
 
 /* ── Tab switch ── */
 function switchPianteTab(tab) {
@@ -2793,11 +2762,12 @@ function switchPianteTab(tab) {
 function updateLightHours(val) {
   val = Math.min(24, Math.max(1, parseFloat(val) || 16));
   currentLightHours = val;
-  localStorage.setItem('bioserra_light_hours', val);
-  const slider = document.getElementById('light-hours-slider');
-  const input  = document.getElementById('light-hours-input');
-  if (slider) slider.value = val;
-  if (input)  input.value  = val;
+  localStorage.setItem('bioserra_ore_luce', val);
+  // Aggiorna slider Impostazioni (l'unico rimasto)
+  const cfgSl = document.getElementById('cfg-light-slider');
+  const cfgIn = document.getElementById('cfg-light-input');
+  if (cfgSl) cfgSl.value = val;
+  if (cfgIn) cfgIn.value  = val;
   renderActivePlants();
 }
 
@@ -2962,11 +2932,11 @@ function renderActivePlants() {
   if (el('stat-arch'))   el('stat-arch').textContent   = arch.length;
   if (el('piante-sub'))  el('piante-sub').textContent  = `${plants.length} piante attive · ${arch.length} in archivio`;
 
-  // Restore light hours sliders
-  const slider = document.getElementById('light-hours-slider');
-  const input  = document.getElementById('light-hours-input');
-  if (slider) slider.value = currentLightHours;
-  if (input)  input.value  = currentLightHours;
+  // Restore light hours — solo slider Impostazioni (quello Piante è stato rimosso)
+  const cfgSlider = document.getElementById('cfg-light-slider');
+  const cfgInput  = document.getElementById('cfg-light-input');
+  if (cfgSlider) cfgSlider.value = currentLightHours;
+  if (cfgInput)  cfgInput.value  = currentLightHours;
 }
 
 /* ── Render archive ── */
@@ -3480,7 +3450,7 @@ function initImpostazioni() {
   if (elNome) elNome.textContent = nome;
 
   // Sincronizza ore di luce
-  const lh = parseFloat(localStorage.getItem('bioserra_light_hours') || '16');
+  const lh = parseFloat(localStorage.getItem('bioserra_ore_luce') || '16');
   const s = document.getElementById('cfg-light-slider');
   const i = document.getElementById('cfg-light-input');
   if (s) s.value = lh;
@@ -3581,14 +3551,14 @@ function cfgSaveNotifiche() {
   cfgToast('✅ Notifiche salvate — ' + Object.values(ntf).filter(v=>v===true).length + '/5 attive');
 }
 
-/* ── Ore di luce (sincronizzato con sezione Piante) ── */
+/* ── Ore di luce (unico controllo — in Impostazioni) ── */
 function cfgUpdateLight(val) {
   val = Math.min(24, Math.max(1, parseFloat(val) || 16));
   const s = document.getElementById('cfg-light-slider');
   const i = document.getElementById('cfg-light-input');
   if (s) s.value = val;
   if (i) i.value = val;
-  // Chiama la funzione originale che aggiorna anche la sezione Piante
+  // Chiama updateLightHours che salva in localStorage e ricalcola le timeline
   if (typeof updateLightHours === 'function') updateLightHours(val);
 }
 
@@ -3772,7 +3742,7 @@ function cfgEsportaDati() {
       ciclo: localStorage.getItem('bioserra_cfg_ciclo'),
       tema: localStorage.getItem('bioserra_tema'),
       ai: localStorage.getItem('bioserra_ai_attiva'),
-      ore_luce: localStorage.getItem('bioserra_light_hours'),
+      ore_luce: localStorage.getItem('bioserra_ore_luce'),
       notifiche: cfgLoadNotifiche()
     },
     piante_attive: JSON.parse(localStorage.getItem('bioserra_active_plants') || '[]'),
@@ -3788,7 +3758,7 @@ function cfgEsportaDati() {
 function cfgResetCache() {
   if (!confirm('Resettare la cache? Le piante salvate restano intatte.')) return;
   const keep = ['bioserra_active_plants','bioserra_archive','bioserra_cfg_nome','bioserra_cfg_ciclo',
-                 'bioserra_notifiche','bioserra_tema','bioserra_ai_attiva','bioserra_light_hours'];
+                 'bioserra_notifiche','bioserra_tema','bioserra_ai_attiva','bioserra_ore_luce'];
   Object.keys(localStorage).forEach(k => {
     if (!keep.includes(k)) localStorage.removeItem(k);
   });
