@@ -4156,8 +4156,8 @@ Confermi il reset completo?')) return;
     pinUpdateSettingsUI();
   }
 
-  // Esegui dopo che tutto il DOM e gli altri script sono pronti
-  window.addEventListener('load', initLock);
+  // Esponi initLock globalmente per chiamata diretta a fine script
+  window._initLock = initLock;
 
   /* ══ Impostazioni ══ */
   window.pinToggleEnable = function() {
@@ -5097,6 +5097,21 @@ function renderBioCalendar() {
   if (_origRenderBioCalendar) _origRenderBioCalendar();
   setTimeout(updateBioElettroPreview, 100);
 }
+
+/* ══ AVVIO APP — chiamata diretta, funziona sempre (no race con load event) ══ */
+(function avvioApp() {
+  // Tutte le funzioni sono definite qui sotto, il DOM è già pronto
+  // Chiamiamo initLock che gestisce PIN → hideLock → initApp
+  if (typeof window._initLock === 'function') {
+    window._initLock();
+  } else {
+    // Fallback: se qualcosa è andato storto, avvia app direttamente
+    if (typeof window.initApp === 'function' && !window._appInitialized) {
+      window._appInitialized = true;
+      window.initApp();
+    }
+  }
+})();
 
 
 </script>
