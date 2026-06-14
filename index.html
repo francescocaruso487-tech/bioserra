@@ -1227,8 +1227,21 @@
 </div>
 
 <!-- ELETTROCULTURA -->
-<section id="sec-elettro" class="section">
-  <div class="section-title">Elettrocultura ⚡</div>
+<!-- LABORATORIO -->
+<section id="sec-laboratorio" class="section">
+  <div class="section-title">Laboratorio 🔬</div>
+  <div class="section-sub">Elettrocultura · Manuali · AI Serra</div>
+
+  <!-- TAB BAR LABORATORIO -->
+  <div class="piante-tab-bar" style="margin-bottom:16px">
+    <button class="piante-tab active" id="lab-tab-elettro" onclick="switchLabTab('elettro')">⚡ Elettrocultura</button>
+    <button class="piante-tab" id="lab-tab-manuali" onclick="switchLabTab('manuali')">📚 Manuali</button>
+    <button class="piante-tab" id="lab-tab-ai" onclick="switchLabTab('ai')">🤖 AI Serra</button>
+  </div>
+
+  <!-- PANNELLO: ELETTROCULTURA -->
+  <div id="lab-panel-elettro" class="piante-panel active">
+    <div class="section-title">Elettrocultura ⚡</div>
   <div class="section-sub">Esperimenti attivi · Living Soil</div>
 
   <!-- STATS DINAMICHE -->
@@ -1308,12 +1321,11 @@
       <div id="el-stats-tecniche"></div>
     </div>
   </div>
+  </div>
 
-</section>
-
-<!-- MANUALI -->
-<section id="sec-manuali" class="section">
-  <div class="section-title">Manuali 📚</div>
+  <!-- PANNELLO: MANUALI -->
+  <div id="lab-panel-manuali" class="piante-panel">
+    <div class="section-title">Manuali 📚</div>
   <div class="section-sub">Documenti e guide operative</div>
   <div class="manual-item"><div class="manual-icon">🌱</div><div class="manual-text"><div class="manual-title">Manuale Mini-Serra v2</div><div class="manual-sub">Living Soil · Aggiornato marzo 2026</div></div><div class="manual-arrow">›</div></div>
   <div class="manual-item"><div class="manual-icon">📋</div><div class="manual-text"><div class="manual-title">Calendario Colture</div><div class="manual-sub">10 varietà · 8 mesi ciclo</div></div><div class="manual-arrow">›</div></div>
@@ -1336,11 +1348,11 @@
     <div class="json-panel-meta" id="manuali-json-meta">In caricamento…</div>
     <div id="manuali-json-content"><div class="json-loading">⏳ Caricamento analisi…</div></div>
   </div>
-</section>
+  </div>
 
-<!-- AI -->
-<section id="sec-ai" class="section">
-  <div class="section-title">AI 🤖</div>
+  <!-- PANNELLO: AI SERRA -->
+  <div id="lab-panel-ai" class="piante-panel">
+    <div class="section-title">AI 🤖</div>
   <div class="section-sub">Assistente Serra · Groq Llama3 · Sempre attivo</div>
 
   <!-- ANALISI GIORNALIERA -->
@@ -1379,23 +1391,8 @@
       onkeydown="if(event.key==='Enter'){event.preventDefault();aiSend();}">
     <button class="ai-send" onclick="aiSend()">➤</button>
   </div>
-</section>
-
-<!-- SICUREZZA -->
-<section id="sec-sicurezza" class="section">
-  <div class="section-title">Sicurezza 🔒</div>
-  <div class="section-sub">Protezione dati e privacy</div>
-  <div class="sicurezza-banner">
-    <div class="sicurezza-banner-icon">🔒</div>
-    <div class="sicurezza-banner-text">
-      <div class="sicurezza-banner-title">Dati protetti localmente</div>
-      <div class="sicurezza-banner-sub">Tutti i dati restano sul tuo dispositivo</div>
-    </div>
   </div>
-  <div class="security-item"><div class="security-item-icon">📱</div><div><div class="security-item-title">Archiviazione locale</div><div class="security-item-desc">I dati della serra sono salvati solo sul tuo dispositivo tramite localStorage. Nessun server esterno coinvolto.</div></div></div>
-  <div class="security-item"><div class="security-item-icon">🔑</div><div><div class="security-item-title">API Key Claude</div><div class="security-item-desc">La chiave API viene usata solo per le richieste AI e non viene mai trasmessa a terzi.</div></div></div>
-  <div class="security-item"><div class="security-item-icon">🌐</div><div><div class="security-item-title">Connessioni esterne</div><div class="security-item-desc">Solo meteo (opzionale) e Claude AI usano internet. Il calendario biodinamico funziona completamente offline.</div></div></div>
-  <div class="security-item"><div class="security-item-icon">🗑️</div><div><div class="security-item-title">Cancella tutti i dati</div><div class="security-item-desc">Rimuove tutte le impostazioni e i dati salvati localmente.</div></div></div>
+
 </section>
 
 <!-- IMPOSTAZIONI -->
@@ -1735,12 +1732,10 @@
 
 <!-- NAV -->
 <nav class="nav">
-  <button class="nav-item active" onclick="showSection('piante',this)"><span>🌿</span><span>Piante</span></button>
+  <button class="nav-item active" id="nav-piante" onclick="showSection('piante',this)"><span>🌿</span><span>Piante</span></button>
   <button class="nav-item" id="nav-ambiente" onclick="showSection('ambiente',this)"><span>🌍</span><span>Ambiente</span></button>
-  <button class="nav-item" onclick="showSection('elettro',this)"><span>⚡</span><span>Elettro</span></button>
-  <button class="nav-item" onclick="showSection('manuali',this)"><span>📚</span><span>Manuali</span></button>
-  <button class="nav-item" onclick="showSection('ai',this)"><span>🤖</span><span>AI</span></button>
-  <button class="nav-item" onclick="showSection('impostazioni',this)"><span>⚙️</span><span>Config</span></button>
+  <button class="nav-item" id="nav-laboratorio" onclick="showSection('laboratorio',this)"><span>🔬</span><span>Laboratorio</span></button>
+  <button class="nav-item" id="nav-impostazioni" onclick="showSection('impostazioni',this)"><span>⚙️</span><span>Config</span></button>
 </nav>
 
 <script>
@@ -1754,10 +1749,21 @@ function showSection(id, btn) {
   if (sec) sec.classList.add('active');
   if (btn) btn.classList.add('active');
   window.scrollTo(0, 0);
-  try { if (id === 'ai') setTimeout(aiInitUI, 50); } catch(e) {}
+  try { if (id === 'laboratorio') { setTimeout(aiInitUI, 50); initElettrocultura(); } } catch(e) {}
   try { if (id === 'impostazioni') setTimeout(initImpostazioni, 50); } catch(e) {}
   try { if (id === 'ambiente') initAmbiente(); } catch(e) {}
   try { if (id === 'piante') renderActivePlants(); } catch(e) {}
+}
+
+/* ── Tab Laboratorio ── */
+function switchLabTab(tab) {
+  ['elettro','manuali','ai'].forEach(function(t) {
+    var panel = document.getElementById('lab-panel-' + t);
+    var btn = document.getElementById('lab-tab-' + t);
+    if (panel) panel.classList.toggle('active', t === tab);
+    if (btn) btn.classList.toggle('active', t === tab);
+  });
+  if (tab === 'ai') { try { setTimeout(aiInitUI, 50); } catch(e) {} }
 }
 
 function refreshAll() { if(document.getElementById('sec-ambiente')&&document.getElementById('sec-ambiente').classList.contains('active')) initAmbiente(); }
@@ -4493,6 +4499,7 @@ if ('serviceWorker' in navigator) {
 </div>
 </body>
 </html>
+
 
 
 
