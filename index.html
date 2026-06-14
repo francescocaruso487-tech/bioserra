@@ -166,6 +166,7 @@
   .tl-dot-fior  { background: var(--purple); }
   .tl-dot-rec   { background: var(--orange); }
   .tl-dot-ess   { background: var(--yellow); }
+  .tl-dot-conc { background: var(--orange); }
   .tl-content { flex: 1; min-width: 0; }
   .tl-phase { font-size: 12px; font-weight: 700; color: var(--text2); }
   .tl-date  { font-size: 11px; color: var(--text3); margin-top: 1px; }
@@ -869,8 +870,10 @@
         <input class="form-input" id="ap-racc" type="number" placeholder="es. 90" min="1" />
       </div>
       <div class="form-field">
-        <label class="form-label">Gg essiccazione</label>
-        <input class="form-input" id="ap-ess" type="number" placeholder="es. 15" min="1" />
+        <label class="form-label" style="color:var(--text3);">Essiccazione + Concia</label>
+        <div style="background:var(--bg3);border-radius:8px;padding:8px 10px;font-size:12px;color:var(--text3);">
+          🌬️ Essiccazione: <strong style="color:var(--text);">14 giorni fissi</strong> &nbsp;·&nbsp; 🫙 Concia: <strong style="color:var(--text);">14 giorni fissi</strong>
+        </div>
       </div>
     </div>
     <!-- Femm only: data inizio fioritura -->
@@ -1336,15 +1339,14 @@
         </div>
       </div>
     </div>
-    <div class="setting-item">
+    <div class="setting-item" style="background:var(--bg3);border-radius:10px;padding:10px 12px;">
       <div class="setting-left">
-        <div class="setting-icon">🗓️</div>
+        <div class="setting-icon">📅</div>
         <div>
-          <div class="setting-title">Inizio Ciclo</div>
-          <div class="setting-value" id="cfg-inizio-ciclo-display">21 aprile 2026</div>
+          <div class="setting-title" style="font-size:12px;">Date ciclo</div>
+          <div class="setting-value" style="font-size:11px;color:var(--text3);line-height:1.5;">Ogni pianta ha la propria data di germinazione.<br>Dal taglio: <span style="color:var(--green3);">14 gg essiccazione</span> + <span style="color:var(--orange);">14 gg concia</span> (fissi).</div>
         </div>
       </div>
-      <button onclick="cfgEditSerra('ciclo')" style="background:var(--green2);border:none;border-radius:8px;padding:6px 14px;color:var(--text);font-size:12px;cursor:pointer;font-weight:600;">Modifica</button>
     </div>
   </div>
 
@@ -2560,18 +2562,21 @@ function renderTimelineInBox(id) {
     const totalMax = Math.round(p.harvestMax * mult);
     const vegDays  = Math.round(totalMin * 0.35);
     const florDays = Math.round(totalMin * 0.45);
-    const essDays  = p.essDays || 15;
+    const essDays  = 14; // Fisso
+    const concDays = 14; // Fisso
     const endVeg   = addDays(germ, vegDays);
     const endFlor  = addDays(germ, vegDays + florDays);
     const harvest  = addDays(germ, totalMin);
     const harvestMaxD = addDays(germ, totalMax);
     const essEnd   = addDays(harvest, essDays);
+    const concEnd  = addDays(essEnd, concDays);
     steps = [
-      { dot:'germ', label:'🌱 Germinazione',      date: germ,        extra:'Giorno 0 · Inizio ciclo' },
+      { dot:'germ', label:'🌱 Germinazione',      date: germ,        extra:'Giorno 0' },
       { dot:'veg',  label:'🌿 Fine Vegetazione',   date: endVeg,      extra:`+${vegDays} gg (× ${mult.toFixed(2)})` },
       { dot:'fior', label:'🌸 Inizio Fioritura',   date: endFlor,     extra:`+${vegDays+florDays} gg dalla germ.` },
-      { dot:'rec',  label:'✂️ Raccolta prevista',  date: harvest,     extra: totalMin !== totalMax ? `${fmtDate(harvest)} → ${fmtDate(harvestMaxD)}` : '' },
-      { dot:'ess',  label:'🌬️ Fine Essiccazione', date: essEnd,      extra:`+${essDays} gg essiccazione` }
+      { dot:'rec',  label:'✂️ Taglio previsto',    date: harvest,     extra: totalMin !== totalMax ? `${fmtDate(harvest)} → ${fmtDate(harvestMaxD)}` : '' },
+      { dot:'ess',  label:'🌬️ Fine Essiccazione', date: essEnd,      extra:`+${essDays} gg fissi dal taglio` },
+      { dot:'conc', label:'🫙 Fine Concia',        date: concEnd,     extra:`+${concDays} gg fissi dall\'essiccazione` }
     ];
     const elapsed = daysDiff(germ, today);
     const pct = Math.min(100, Math.max(0, Math.round((elapsed / totalMin) * 100)));
@@ -2582,15 +2587,18 @@ function renderTimelineInBox(id) {
     const florDaysMax = Math.round(p.harvestMax * mult);
     const harvestMinD = addDays(florStartDate, florDaysMin);
     const harvestMaxD = addDays(florStartDate, florDaysMax);
-    const essDays = p.essDays || 15;
-    const essEnd  = addDays(harvestMinD, essDays);
-    const vegDays = daysDiff(germ, florStartDate);
+    const essDays  = 14; // Fisso
+    const concDays = 14; // Fisso
+    const essEnd   = addDays(harvestMinD, essDays);
+    const concEnd  = addDays(essEnd, concDays);
+    const vegDays  = daysDiff(germ, florStartDate);
     steps = [
-      { dot:'germ', label:'🌱 Germinazione',      date: germ,          extra:'Giorno 0 · Inizio ciclo' },
+      { dot:'germ', label:'🌱 Germinazione',      date: germ,          extra:'Giorno 0' },
       { dot:'veg',  label:'🌿 Vegetazione',        date: florStartDate, extra:`${vegDays} gg di vegetazione` },
       { dot:'fior', label:'🌸 Inizio Fioritura',   date: florStartDate, extra:`Cambio fotoperiodo` },
-      { dot:'rec',  label:'✂️ Raccolta prevista',  date: harvestMinD,   extra:`${fmtDate(harvestMinD)} → ${fmtDate(harvestMaxD)} (× ${mult.toFixed(2)})` },
-      { dot:'ess',  label:'🌬️ Fine Essiccazione', date: essEnd,        extra:`+${essDays} gg essiccazione` }
+      { dot:'rec',  label:'✂️ Taglio previsto',    date: harvestMinD,   extra:`${fmtDate(harvestMinD)} → ${fmtDate(harvestMaxD)} (× ${mult.toFixed(2)})` },
+      { dot:'ess',  label:'🌬️ Fine Essiccazione', date: essEnd,        extra:`+${essDays} gg fissi dal taglio` },
+      { dot:'conc', label:'🫙 Fine Concia',        date: concEnd,       extra:`+${concDays} gg fissi dall\'essiccazione` }
     ];
     const totalCycle = daysDiff(germ, harvestMinD);
     const elapsed = daysDiff(germ, today);
@@ -2730,7 +2738,7 @@ function saveNewPlant() {
   const veg   = parseInt(document.getElementById('ap-veg').value) || 0;
   const fior  = parseInt(document.getElementById('ap-fior').value) || 0;
   const racc  = parseInt(document.getElementById('ap-racc').value) || 0;
-  const ess   = parseInt(document.getElementById('ap-ess').value) || 15;
+  const ess   = 14; // Fisso: 14 gg essiccazione (concia altri 14 gg fissi)
   const florStart = document.getElementById('ap-florstart').value || null;
 
   if (!nome) { alert('Inserisci il nome della pianta'); return; }
@@ -2762,7 +2770,7 @@ function saveNewPlant() {
   saveActivePlants(plants);
   closeAddPlantModal();
   // Reset form
-  ['ap-nome','ap-id','ap-ore','ap-germ','ap-veg','ap-fior','ap-racc','ap-ess','ap-florstart'].forEach(id => {
+  ['ap-nome','ap-id','ap-ore','ap-germ','ap-veg','ap-fior','ap-racc','ap-florstart'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.value = '';
   });
@@ -3220,15 +3228,6 @@ function cfgEditSerra(campo) {
       localStorage.setItem('bioserra_cfg_nome', val.trim());
       const el = document.getElementById('cfg-serra-nome-display');
       if (el) el.textContent = val.trim();
-    }
-  } else if (campo === 'ciclo') {
-    const cur = localStorage.getItem('bioserra_cfg_ciclo') || '2026-04-21';
-    const val = prompt('Data inizio ciclo (YYYY-MM-DD):', cur);
-    if (val && /^\d{4}-\d{2}-\d{2}$/.test(val)) {
-      localStorage.setItem('bioserra_cfg_ciclo', val);
-      const d = new Date(val);
-      const el = document.getElementById('cfg-inizio-ciclo-display');
-      if (el) el.textContent = d.toLocaleDateString('it-IT', {day:'numeric',month:'long',year:'numeric'});
     }
   }
 }
