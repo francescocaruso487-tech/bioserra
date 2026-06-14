@@ -1,96 +1,96 @@
 {
-  "lastUpdate": "2026-06-13T13:26:51.595Z",
+  "lastUpdate": "2026-06-14T06:00:30.600Z",
   "data": {
     "stato_piante": [
       {
         "id": 7,
         "nome": "Epsilon F1",
         "tipo": "autofiorente",
-        "giorni": 53,
+        "giorni": 54,
         "fase": "Raccolta imminente",
-        "giorni_a_raccolta": 7,
-        "giorni_a_essiccazione": 22
+        "giorni_a_raccolta": 6,
+        "giorni_a_essiccazione": 21
       },
       {
         "id": 1,
         "nome": "Milky Way F1",
         "tipo": "autofiorente",
-        "giorni": 53,
+        "giorni": 54,
         "fase": "Raccolta imminente",
-        "giorni_a_raccolta": 19,
-        "giorni_a_essiccazione": 34
+        "giorni_a_raccolta": 18,
+        "giorni_a_essiccazione": 33
       },
       {
         "id": 2,
         "nome": "Titan F1",
         "tipo": "autofiorente",
-        "giorni": 53,
+        "giorni": 54,
         "fase": "Raccolta imminente",
-        "giorni_a_raccolta": 19,
-        "giorni_a_essiccazione": 34
+        "giorni_a_raccolta": 18,
+        "giorni_a_essiccazione": 33
       },
       {
         "id": 3,
         "nome": "Medusa F1",
         "tipo": "autofiorente",
-        "giorni": 53,
+        "giorni": 54,
         "fase": "Raccolta imminente",
-        "giorni_a_raccolta": 19,
-        "giorni_a_essiccazione": 34
+        "giorni_a_raccolta": 18,
+        "giorni_a_essiccazione": 33
       },
       {
         "id": 8,
         "nome": "Gaia F1",
         "tipo": "autofiorente",
-        "giorni": 53,
+        "giorni": 54,
         "fase": "Raccolta imminente",
-        "giorni_a_raccolta": 14,
-        "giorni_a_essiccazione": 29
+        "giorni_a_raccolta": 13,
+        "giorni_a_essiccazione": 28
       },
       {
         "id": 4,
         "nome": "Astro Lemonade",
         "tipo": "femminizzata",
-        "giorni": 53,
+        "giorni": 54,
         "fase": "Vegetazione",
-        "giorni_a_raccolta": 127,
-        "giorni_a_essiccazione": 142
+        "giorni_a_raccolta": 126,
+        "giorni_a_essiccazione": 141
       },
       {
         "id": 11,
         "nome": "Cosmic Cheddar",
         "tipo": "femminizzata",
-        "giorni": 53,
+        "giorni": 54,
         "fase": "Vegetazione",
-        "giorni_a_raccolta": 127,
-        "giorni_a_essiccazione": 142
+        "giorni_a_raccolta": 126,
+        "giorni_a_essiccazione": 141
       },
       {
         "id": 6,
         "nome": "Orbital Banana",
         "tipo": "femminizzata",
-        "giorni": 53,
+        "giorni": 54,
         "fase": "Vegetazione",
-        "giorni_a_raccolta": 127,
-        "giorni_a_essiccazione": 142
+        "giorni_a_raccolta": 126,
+        "giorni_a_essiccazione": 141
       },
       {
         "id": 10,
         "nome": "Royal Gorilla",
         "tipo": "femminizzata",
-        "giorni": 53,
+        "giorni": 54,
         "fase": "Vegetazione",
-        "giorni_a_raccolta": 142,
-        "giorni_a_essiccazione": 157
+        "giorni_a_raccolta": 141,
+        "giorni_a_essiccazione": 156
       },
       {
         "id": 9,
         "nome": "Mexican Rush",
         "tipo": "femminizzata",
-        "giorni": 53,
+        "giorni": 54,
         "fase": "Vegetazione",
-        "giorni_a_raccolta": 142,
-        "giorni_a_essiccazione": 157
+        "giorni_a_raccolta": 141,
+        "giorni_a_essiccazione": 156
       }
     ],
     "alerts_oggi": [
@@ -98,8 +98,8 @@
         "tipo": "RACCOLTA",
         "pianta": "Epsilon F1",
         "id": 7,
-        "giorni": 7,
-        "msg": "Raccolta tra 7 giorni"
+        "giorni": 6,
+        "msg": "Raccolta tra 6 giorni"
       }
     ],
     "alert_count": 1
