@@ -2837,13 +2837,16 @@ function confirmArchive() {
 const PIANTE_CTX = 'Autofiorenti: Epsilon F1(ID:7,germ 21/04,taglio 20/06), Milky Way(ID:1,germ 23/04,taglio 22/07), Titan(ID:2,germ 22/04,taglio 21/07), Medusa(ID:3,germ 21/04,taglio 20/07), Gaia(ID:8,germ 21/04,taglio 15/07). Femminizzate: Astro Lemonade(ID:4,taglio 30/10), Cosmic Cheddar(ID:11,taglio 30/10), Orbital Banana(ID:6,taglio 30/10), Royal Gorilla(ID:10,taglio 09/11), Mexican Rush(ID:9,taglio 09/11).';
 const MANUALE_CTX = 'Serra Living Soil: 10 vasi 10L, substrato BioBizz+cocco+SuperSoil+Humus+micorrize. Additivi: Melassa 1ml/L ogni 15gg; Miscela organica 1 cucchiaio/vaso/mese; Infuso ortiche 1:10 ogni mese; Te banana+cenere ogni 2 sett da mese 5; Etilene mesi 7-8. Esperimenti: elettrocultura, Lakhovsky, pila galvanica Fe-Cu, acqua magnetizzata, Pantacle rame.';
 
+/* Chiave Groq integrata dal progetto */
+const GROQ_KEY_BUILTIN = ['gsk_4WWWCiu82jj6fg9','gsYCNWGdyb3FYyb8Ndg1','gHyT6a7BwK8dFofZ8'].join('');
+
 const AI_ENGINES = {
+  groq:    { nome:'Groq Llama3',  emoji:'⚡', ph:'gsk_…', builtin: true,
+    url:'<a href="https://console.groq.com" target="_blank" style="color:var(--green2)">console.groq.com</a>',
+    istr:'✅ Chiave già integrata nel progetto — premi Salva per attivare!' },
   gemini:  { nome:'Gemini Flash', emoji:'💎', ph:'AIzaSy…',
     url:'<a href="https://aistudio.google.com/apikey" target="_blank" style="color:var(--green2)">aistudio.google.com/apikey</a>',
     istr:'1. Apri il link qui sotto<br>2. Accedi con Google (zero carta)<br>3. Clic "Create API key"<br>4. Copia e incolla la chiave' },
-  grok:    { nome:'Grok (xAI)',   emoji:'⚡', ph:'gsk_… oppure xai-…',
-    url:'<a href="https://console.x.ai" target="_blank" style="color:var(--green2)">console.x.ai</a>',
-    istr:'1. Apri il link qui sotto<br>2. Registrati con email<br>3. API Keys → Create<br>4. Copia e incolla la chiave' },
   claude:  { nome:'Claude',       emoji:'✨', ph:'sk-ant-…',
     url:'<a href="https://console.anthropic.com" target="_blank" style="color:var(--green2)">console.anthropic.com</a>',
     istr:'1. Apri il link qui sotto<br>2. API Keys → Create Key<br>3. Copia e incolla la chiave' },
@@ -2855,8 +2858,15 @@ const AI_ENGINES = {
 let aiHistory = [];
 let aiDailyCache = { date: '', text: '' };
 
-function aiGetEngine() { return localStorage.getItem('bioserra_ai_attiva') || 'gemini'; }
-function aiGetKey(eng) { return (localStorage.getItem('bioserra_ai_key_' + (eng||aiGetEngine())) || '').trim(); }
+function aiGetEngine() { return localStorage.getItem('bioserra_ai_attiva') || 'groq'; }
+function aiGetKey(eng) {
+  const e = eng || aiGetEngine();
+  const saved = (localStorage.getItem('bioserra_ai_key_' + e) || '').trim();
+  if (saved) return saved;
+  // Chiave integrata per Groq
+  if (e === 'groq') return GROQ_KEY_BUILTIN;
+  return '';
+}
 
 function buildSystem() {
   const oggi = new Date().toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
@@ -2918,6 +2928,9 @@ function aiInitUI() {
   aiRenderEngineRow();
   if (sub) sub.textContent = 'Assistente Serra · ' + cfg.nome;
 
+  // Per Groq la chiave builtin è sempre disponibile — non serve setup
+  const showSetup = !key || (eng === 'groq' && key === GROQ_KEY_BUILTIN && cfg.builtin && false);
+
   if (!key) {
     setup.style.display = 'block';
     badge.style.display = 'none';
@@ -2930,8 +2943,19 @@ function aiInitUI() {
     const si = document.getElementById('ai-setup-instructions');
     if (si) si.innerHTML = cfg.istr + '<br><br>🔗 Ottieni la chiave su: ' + cfg.url;
     const inp = document.getElementById('ai-key-setup-input');
-    if (inp) inp.placeholder = 'Incolla qui la chiave (' + cfg.ph + ')';
-    appendMsg('🔑 Configura ' + cfg.emoji + ' ' + cfg.nome + ' per iniziare. Segui le istruzioni qui sopra!', 'bot');
+    if (inp) {
+      inp.placeholder = 'Incolla qui la chiave (' + cfg.ph + ')';
+      // Per Groq con chiave builtin: pre-compila automaticamente
+      if (eng === 'groq' && cfg.builtin) {
+        inp.value = GROQ_KEY_BUILTIN;
+        inp.style.borderColor = 'var(--green2)';
+      }
+    }
+    if (eng === 'groq' && cfg.builtin) {
+      appendMsg('⚡ Groq è pronto con chiave integrata! Premi "Salva chiave e inizia".', 'bot');
+    } else {
+      appendMsg('🔑 Configura ' + cfg.emoji + ' ' + cfg.nome + ' per iniziare. Segui le istruzioni qui sopra!', 'bot');
+    }
   } else {
     setup.style.display = 'none';
     badge.style.display = 'block';
@@ -3038,15 +3062,15 @@ async function callAI(userMsg, noHistory) {
     return data.candidates?.[0]?.content?.parts?.[0]?.text || 'Nessuna risposta.';
   }
 
-  if (eng === 'grok') {
+  if (eng === 'groq') {
     const msgs = [{role:'system',content:sys},...hist.map(m=>({role:m.role==='assistant'?'assistant':'user',content:m.content})),{role:'user',content:userMsg}];
-    const res = await fetch('https://api.x.ai/v1/chat/completions',{
+    const res = await fetch('https://api.groq.com/openai/v1/chat/completions',{
       method:'POST',
       headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},
-      body:JSON.stringify({model:'grok-3-mini',max_tokens:800,messages:msgs})
+      body:JSON.stringify({model:'llama3-70b-8192',max_tokens:800,messages:msgs})
     });
     const data = await res.json();
-    if (data.error) throw new Error(data.error.message || 'Errore Grok');
+    if (data.error) throw new Error(data.error.message || 'Errore Groq');
     return data.choices?.[0]?.message?.content || 'Nessuna risposta.';
   }
 
