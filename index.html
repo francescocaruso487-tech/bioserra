@@ -2083,7 +2083,7 @@ function renderElettroTecniche() {
     html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">';
     html += '<div class="exp-title" style="margin:0">' + t.nome + ' <span class="exp-badge">' + t.badge + '</span></div>';
     html += '<label class="toggle-sw" style="flex-shrink:0" title="' + (attiva ? 'Disattiva' : 'Attiva') + ' tecnica">';
-    html += '<input type="checkbox" ' + (attiva ? 'checked' : '') + ' onchange="elToggleGlobale('' + t.id + '',this.checked)">';
+    html += '<input type="checkbox" ' + (attiva ? 'checked' : '') + ' onchange="elToggleGlobale(' + t.id + ',this.checked)">';
     html += '<span class="toggle-slider"></span></label>';
     html += '</div>';
     html += '<div class="exp-desc" style="margin-bottom:10px">' + t.desc + '</div>';
@@ -2091,7 +2091,8 @@ function renderElettroTecniche() {
     html += '<div style="font-size:12px;color:var(--text2);margin-top:8px;line-height:1.7;padding:8px;background:var(--card2);border-radius:8px">' + t.istruzioni + '</div></details>';
     html += '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">';
     html += '<div style="display:flex;gap:4px;flex-wrap:wrap">' + lunaHtml + '</div>';
-    html += '<button onclick="elRilasciaEsp('' + t.id + '','' + t.nome.replace(/'/g,'') + '')" style="background:none;border:1px solid var(--border);border-radius:8px;padding:4px 10px;color:var(--text3);font-size:11px;cursor:pointer">📤 → Esperimenti</button>';
+    html += '<button data-eid="' + t.id + '" data-enom="' + (t.nome||'').replace(/"/g,'') + '" onclick="elRilasciaEspBtn(this)" style="background:none;border:1px solid var(--border);border-radius:8px;padding:4px 10px;color:var(--text3);font-size:11px;cursor:pointer">&#128228; Esp</button>';
+
     html += '</div></div>';
   });
   lista.innerHTML = html;
@@ -2102,7 +2103,7 @@ function renderElTecnicheExtra() {
   var el = document.getElementById('el-tecniche-json');
   if (!el) return;
   if (elTecnicheExtra.length === 0) { el.innerHTML = ''; return; }
-  var html = '<div style="font-size:12px;font-weight:700;color:var(--green2);margin:12px 0 8px;display:flex;align-items:center;gap:6px"><span>🤖</span> Tecniche scoperte dall'AI nei PDF</div>';
+  var html = '<div style="font-size:12px;font-weight:700;color:var(--green2);margin:12px 0 8px;display:flex;align-items:center;gap:6px"><span>🤖</span> Tecniche scoperte dall’AI nei PDF</div>';
   elTecnicheExtra.forEach(function(t, idx) {
     var attiva = elGlobale[t.id] || false;
     var borderCol = attiva ? 'var(--green2)' : 'rgba(100,200,255,0.2)';
@@ -2110,7 +2111,7 @@ function renderElTecnicheExtra() {
     html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">';
     html += '<div class="exp-title" style="margin:0">' + (t.nome||t.id) + ' <span class="exp-badge" style="background:rgba(0,150,255,0.2);color:#60b0ff">AI</span></div>';
     html += '<div style="display:flex;align-items:center;gap:8px">';
-    html += '<label class="toggle-sw" style="flex-shrink:0"><input type="checkbox" ' + (attiva ? 'checked' : '') + ' onchange="elToggleGlobale('' + t.id + '',this.checked)"><span class="toggle-slider"></span></label>';
+    html += '<label class="toggle-sw" style="flex-shrink:0"><input type="checkbox" ' + (attiva ? 'checked' : '') + ' onchange="elToggleGlobale(' + t.id + ',this.checked)"><span class="toggle-slider"></span></label>';
     html += '<button onclick="elEliminaTecnicaExtra(' + idx + ')" style="background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;padding:0">×</button>';
     html += '</div></div>';
     html += '<div class="exp-desc">' + (t.desc||'') + '</div>';
@@ -2118,7 +2119,8 @@ function renderElTecnicheExtra() {
       html += '<details style="margin-top:8px"><summary style="font-size:12px;color:var(--green2);cursor:pointer;font-weight:600">📋 Istruzioni</summary>';
       html += '<div style="font-size:12px;color:var(--text2);margin-top:6px;line-height:1.7;padding:8px;background:var(--card2);border-radius:8px">' + t.istruzioni + '</div></details>';
     }
-    html += '<div style="margin-top:8px;text-align:right"><button onclick="elRilasciaEsp('' + t.id + '','' + (t.nome||t.id).replace(/'/g,'') + '')" style="background:none;border:1px solid var(--border);border-radius:8px;padding:4px 10px;color:var(--text3);font-size:11px;cursor:pointer">📤 → Esperimenti</button></div>';
+    html += '<div style="margin-top:8px;text-align:right"><button data-eid="' + t.id + '" data-enom="' + ((t.nome||t.id)||'').replace(/"/g,'') + '" onclick="elRilasciaEspBtn(this)" style="background:none;border:1px solid var(--border);border-radius:8px;padding:4px 10px;color:var(--text3);font-size:11px;cursor:pointer">&#128228; Esp</button></div>';
+
     html += '</div>';
   });
   el.innerHTML = html;
@@ -2158,6 +2160,12 @@ function elToggleGlobale(techId, val) {
 }
 
 /* ── Rilascia tecnica in Esperimenti ── */
+function elRilasciaEspBtn(btn) {
+  var techId   = btn.getAttribute('data-eid');
+  var techNome = btn.getAttribute('data-enom');
+  elRilasciaEsp(techId, techNome);
+}
+
 function elRilasciaEsp(techId, techNome) {
   if (!confirm('Spostare "' + techNome + '" nella sezione Esperimenti?')) return;
   // Rimuovi da extra se presente
@@ -2200,7 +2208,7 @@ function renderElTracker() {
     attive.forEach(function(t) {
       html += '<div class="card" style="margin-bottom:8px;border-left:3px solid var(--green2);display:flex;align-items:center;justify-content:space-between;padding:10px 14px">';
       html += '<span style="font-size:13px;font-weight:600">' + t.nome + '</span>';
-      html += '<label class="toggle-sw"><input type="checkbox" checked onchange="elToggleGlobale('' + t.id + '',this.checked)"><span class="toggle-slider"></span></label>';
+      html += '<label class="toggle-sw"><input type="checkbox" checked onchange="elToggleGlobale(' + t.id + ',this.checked)"><span class="toggle-slider"></span></label>';
       html += '</div>';
     });
   }
@@ -2209,7 +2217,7 @@ function renderElTracker() {
     inattive.forEach(function(t) {
       html += '<div class="card" style="margin-bottom:8px;display:flex;align-items:center;justify-content:space-between;padding:10px 14px;opacity:.6">';
       html += '<span style="font-size:13px">' + t.nome + '</span>';
-      html += '<label class="toggle-sw"><input type="checkbox" onchange="elToggleGlobale('' + t.id + '',this.checked)"><span class="toggle-slider"></span></label>';
+      html += '<label class="toggle-sw"><input type="checkbox" onchange="elToggleGlobale(' + t.id + ',this.checked)"><span class="toggle-slider"></span></label>';
       html += '</div>';
     });
   }
