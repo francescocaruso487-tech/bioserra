@@ -771,6 +771,18 @@
 .cal-subtab.active{background:var(--green);color:#fff;}
 .cal-subpanel{display:none;}
 .cal-subpanel.active{display:block;}
+
+/* ── Intestazioni sezione Ambiente scrollabile ── */
+.amb-section-header {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--green3);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 18px 4px 8px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 12px;
+}
 </style>
 </head>
 <body>
@@ -932,17 +944,12 @@
   </div>
 </div>
 
-<!-- AMBIENTE - sezione unificata Meteo+Calendario -->
+<!-- AMBIENTE - unica colonna scrollabile -->
 <section id="sec-ambiente" class="section">
 
-  <!-- TAB BAR AMBIENTE (2 tab principali) -->
-  <div class="piante-tab-bar" id="amb-tab-bar" style="margin-bottom:16px;position:sticky;top:56px;z-index:50;background:var(--bg2);padding:4px;border-radius:12px;">
-    <button class="piante-tab active" id="ambt-meteo" onclick="switchAmbTab('meteo')">⛅ Meteo</button>
-    <button class="piante-tab"       id="ambt-cal"   onclick="switchAmbTab('cal')">📅 Calendario</button>
-  </div>
-
-  <!-- ══════════ TAB METEO ══════════ -->
-  <div class="piante-panel active" id="amb-panel-meteo">
+  <!-- ══ METEO ══ -->
+  <div class="amb-section-header">⛅ Meteo — Caserta</div>
+<div>
     <div id="weather-loading" class="card" style="text-align:center;padding:32px 16px;">
       <div style="font-size:36px;margin-bottom:10px;">🌤️</div>
       <div style="color:var(--text2);font-size:14px;">Caricamento dati meteo…</div>
@@ -1015,77 +1022,9 @@
     </div>
   </div>
 
-  <!-- ══════════ TAB CALENDARIO UNIFICATO ══════════ -->
-  <div class="piante-panel" id="amb-panel-cal">
-
-    <!-- SOTTO-TAB BAR CALENDARIO (scrollabile) -->
-    <div style="overflow-x:auto;margin-bottom:14px;-webkit-overflow-scrolling:touch;scrollbar-width:none;">
-      <div style="display:flex;gap:6px;min-width:max-content;background:var(--bg3);padding:4px;border-radius:10px;">
-        <button class="cal-subtab active" id="csub-oggi"   onclick="switchCalSub('oggi')">🔗 Oggi</button>
-        <button class="cal-subtab"        id="csub-lunare" onclick="switchCalSub('lunare')">🌙 Lunare</button>
-        <button class="cal-subtab"        id="csub-bio"    onclick="switchCalSub('bio')">🌱 Bio</button>
-        <button class="cal-subtab"        id="csub-semine" onclick="switchCalSub('semine')">🌾 Semine</button>
-        <button class="cal-subtab"        id="csub-tratt"  onclick="switchCalSub('tratt')">🧪 Trattamenti</button>
-        <button class="cal-subtab"        id="csub-foto"   onclick="switchCalSub('foto')">☀️ Fotoperiodo</button>
-        <button class="cal-subtab"        id="csub-fenol"  onclick="switchCalSub('fenol')">🌸 Fenologico</button>
-      </div>
-    </div>
-
-    <!-- ─── PANNELLO: OGGI ─── -->
-    <div class="cal-subpanel active" id="csp-oggi">
-      <div class="card" onclick="openAmbPopup('oggi-full')" style="cursor:pointer;background:linear-gradient(135deg,rgba(74,175,94,0.1),rgba(58,159,216,0.07));border-color:rgba(74,175,94,0.25);">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
-          <div style="font-size:15px;font-weight:700;color:var(--green3);" id="oggi-data-title">Oggi</div>
-          <div style="font-size:11px;color:var(--text3);" id="oggi-ora-update">—</div>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;">
-          <div style="background:rgba(58,159,216,0.1);border-radius:10px;padding:10px;text-align:center;" onclick="openAmbPopup('oggi-luna');event.stopPropagation();">
-            <div style="font-size:28px;" id="oggi-moon-emoji">🌕</div>
-            <div style="font-size:12px;font-weight:600;margin-top:4px;" id="oggi-moon-phase">—</div>
-            <div style="font-size:10px;color:var(--text3);" id="oggi-moon-illum">—% illum.</div>
-          </div>
-          <div id="oggi-bio-block" style="border-radius:10px;padding:10px;text-align:center;" onclick="openAmbPopup('oggi-bio');event.stopPropagation();">
-            <div style="font-size:28px;" id="oggi-bio-icon">🍊</div>
-            <div style="font-size:12px;font-weight:600;margin-top:4px;" id="oggi-bio-type">—</div>
-            <div style="font-size:10px;color:var(--text3);" id="oggi-bio-const">—</div>
-          </div>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;">
-          <div style="background:rgba(255,193,7,0.08);border-radius:10px;padding:10px;text-align:center;" onclick="openAmbPopup('oggi-foto');event.stopPropagation();">
-            <div style="font-size:22px;">☀️</div>
-            <div style="font-size:14px;font-weight:700;color:#ffd54f;" id="oggi-foto-ore">—h</div>
-            <div style="font-size:10px;color:var(--text3);">Ore luce oggi</div>
-          </div>
-          <div style="background:rgba(100,181,246,0.08);border-radius:10px;padding:10px;text-align:center;" onclick="openAmbPopup('oggi-meteo');event.stopPropagation();">
-            <div style="font-size:22px;" id="oggi-meteo-icon">☀️</div>
-            <div style="font-size:14px;font-weight:700;" id="oggi-meteo-temp">—°</div>
-            <div style="font-size:10px;color:var(--text3);" id="oggi-meteo-desc">—</div>
-          </div>
-        </div>
-        <div style="background:rgba(255,255,255,0.03);border-radius:8px;padding:10px;">
-          <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;margin-bottom:6px;">🤖 Consiglio AI Integrato</div>
-          <div style="font-size:13px;color:var(--text2);line-height:1.6;" id="oggi-ai-consiglio">Calcolo in corso…</div>
-        </div>
-        <div style="margin-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-          <div style="background:rgba(74,175,94,0.08);border-radius:8px;padding:8px;" onclick="openAmbPopup('oggi-semine');event.stopPropagation();">
-            <div style="font-size:11px;font-weight:700;color:var(--green3);margin-bottom:4px;">🌱 SEMINE</div>
-            <div style="font-size:12px;color:var(--text2);" id="oggi-consiglio-semine">—</div>
-          </div>
-          <div style="background:rgba(171,71,188,0.08);border-radius:8px;padding:8px;" onclick="openAmbPopup('oggi-trattamenti');event.stopPropagation();">
-            <div style="font-size:11px;font-weight:700;color:var(--purple);margin-bottom:4px;">🧪 TRATTAMENTI</div>
-            <div style="font-size:12px;color:var(--text2);" id="oggi-consiglio-tratt">—</div>
-          </div>
-        </div>
-        <div style="margin-top:8px;background:rgba(255,152,0,0.08);border-radius:8px;padding:8px;" onclick="openAmbPopup('oggi-fenol');event.stopPropagation();">
-          <div style="font-size:11px;font-weight:700;color:var(--orange);margin-bottom:4px;">🌸 FASE FENOLOGICA</div>
-          <div style="font-size:12px;color:var(--text2);" id="oggi-fase-fenol">—</div>
-        </div>
-        <div style="font-size:10px;color:var(--text3);text-align:right;margin-top:8px;">Tocca per dettaglio completo →</div>
-      </div>
-    </div>
-
-    <!-- ─── PANNELLO: LUNARE ─── -->
-    <div class="cal-subpanel" id="csp-lunare">
+  <!-- ══ LUNA ══ -->
+  <div class="amb-section-header">🌙 Luna</div>
+<div>
       <div class="card" onclick="openAmbPopup('luna-fase')" style="cursor:pointer;background:linear-gradient(135deg,rgba(58,159,216,0.12),rgba(30,74,108,0.08));">
         <div style="display:flex;align-items:center;gap:16px;padding:8px 0 16px;">
           <div style="font-size:72px;line-height:1;flex-shrink:0;filter:drop-shadow(0 0 12px rgba(58,159,216,0.5));" id="moonSymbol">🌕</div>
@@ -1161,8 +1100,10 @@
       </div>
     </div>
 
-    <!-- ─── PANNELLO: BIODINAMICO ─── -->
-    <div class="cal-subpanel" id="csp-bio">
+
+  <!-- ══ BIODINAMICA ══ -->
+  <div class="amb-section-header">🌱 Biodinamica</div>
+<div>
       <div id="bio-today-banner" class="bio-today-banner bio-banner-frutto" onclick="openAmbPopup('bio-oggi')" style="cursor:pointer;">
         <div class="bio-today-icon" id="bio-today-icon">🍊</div>
         <div>
@@ -1228,146 +1169,6 @@
       </div>
     </div>
 
-    <!-- ─── PANNELLO: SEMINE E TRAPIANTI ─── -->
-    <div class="cal-subpanel" id="csp-semine">
-      <div class="card" onclick="openAmbPopup('semine-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(74,175,94,0.1),rgba(76,175,80,0.06));">
-        <div class="card-title" style="color:var(--green3);">🌱 Semine & Trapianti — Oggi</div>
-        <div style="display:flex;align-items:center;gap:12px;margin:8px 0;">
-          <div style="font-size:44px;" id="semine-oggi-emoji">🌱</div>
-          <div>
-            <div style="font-size:16px;font-weight:700;" id="semine-oggi-label">Calcolo…</div>
-            <div style="font-size:12px;color:var(--text2);margin-top:4px;" id="semine-oggi-motivo">—</div>
-          </div>
-        </div>
-        <div style="font-size:10px;color:var(--text3);">Tocca per dettaglio varietà →</div>
-      </div>
-      <div class="card">
-        <div class="bio-cal-header">
-          <div class="bio-cal-title" id="semine-cal-month">—</div>
-          <div class="bio-cal-nav">
-            <button class="bio-nav-btn" onclick="semineChangeMonth(-1)">‹</button>
-            <button class="bio-nav-btn" onclick="semineChangeMonth(0)">●</button>
-            <button class="bio-nav-btn" onclick="semineChangeMonth(1)">›</button>
-          </div>
-        </div>
-        <div class="bio-grid-header">
-          <div class="bio-grid-header-cell">L</div><div class="bio-grid-header-cell">M</div>
-          <div class="bio-grid-header-cell">M</div><div class="bio-grid-header-cell">G</div>
-          <div class="bio-grid-header-cell">V</div><div class="bio-grid-header-cell">S</div>
-          <div class="bio-grid-header-cell">D</div>
-        </div>
-        <div class="bio-grid" id="semine-grid"></div>
-        <div class="bio-legend">
-          <div class="bio-legend-item"><div class="bio-legend-dot" style="background:#4caf76;"></div>Favorevole</div>
-          <div class="bio-legend-item"><div class="bio-legend-dot" style="background:#ff7043;"></div>Sfavorevole</div>
-          <div class="bio-legend-item"><div class="bio-legend-dot" style="background:#78909c;"></div>Neutro</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-title">🌿 Indicazioni per le 10 Varietà</div>
-        <div id="semine-piante-list" style="display:flex;flex-direction:column;gap:6px;"></div>
-      </div>
-    </div>
-
-    <!-- ─── PANNELLO: TRATTAMENTI ─── -->
-    <div class="cal-subpanel" id="csp-tratt">
-      <div class="card" onclick="openAmbPopup('tratt-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.1),rgba(156,39,176,0.06));">
-        <div class="card-title" style="color:var(--purple);">🧪 Trattamento Ottimale — Oggi</div>
-        <div style="margin:8px 0;">
-          <div style="font-size:14px;font-weight:600;" id="tratt-oggi-label">Calcolo…</div>
-          <div style="font-size:12px;color:var(--text2);margin-top:4px;" id="tratt-oggi-desc">—</div>
-        </div>
-        <div style="font-size:10px;color:var(--text3);">Tocca per ricetta completa →</div>
-      </div>
-      <div class="card">
-        <div class="bio-cal-header">
-          <div class="bio-cal-title" id="tratt-cal-month">—</div>
-          <div class="bio-cal-nav">
-            <button class="bio-nav-btn" onclick="trattChangeMonth(-1)">‹</button>
-            <button class="bio-nav-btn" onclick="trattChangeMonth(0)">●</button>
-            <button class="bio-nav-btn" onclick="trattChangeMonth(1)">›</button>
-          </div>
-        </div>
-        <div class="bio-grid-header">
-          <div class="bio-grid-header-cell">L</div><div class="bio-grid-header-cell">M</div>
-          <div class="bio-grid-header-cell">M</div><div class="bio-grid-header-cell">G</div>
-          <div class="bio-grid-header-cell">V</div><div class="bio-grid-header-cell">S</div>
-          <div class="bio-grid-header-cell">D</div>
-        </div>
-        <div class="bio-grid" id="tratt-grid"></div>
-        <div class="bio-legend">
-          <div class="bio-legend-item"><div class="bio-legend-dot" style="background:#ce93d8;"></div>Biologici</div>
-          <div class="bio-legend-item"><div class="bio-legend-dot" style="background:#4db6ac;"></div>Preventivi</div>
-          <div class="bio-legend-item"><div class="bio-legend-dot" style="background:#ff8a65;"></div>Evitare</div>
-        </div>
-      </div>
-      <div id="tratt-schede" style="display:flex;flex-direction:column;gap:10px;"></div>
-    </div>
-
-    <!-- ─── PANNELLO: FOTOPERIODO ─── -->
-    <div class="cal-subpanel" id="csp-foto">
-      <div class="card" onclick="openAmbPopup('foto-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,193,7,0.1),rgba(255,152,0,0.06));">
-        <div class="card-title" style="color:#ffd54f;">☀️ Fotoperiodo Oggi — Caserta</div>
-        <div style="display:flex;align-items:center;gap:16px;margin:8px 0;">
-          <div style="font-size:48px;">☀️</div>
-          <div>
-            <div style="font-size:24px;font-weight:800;color:#ffd54f;" id="foto-ore-oggi">—h</div>
-            <div style="font-size:12px;color:var(--text2);" id="foto-alba-tramonto">Alba — · Tramonto —</div>
-            <div style="font-size:11px;color:var(--text3);margin-top:2px;" id="foto-vs-ieri">— vs ieri</div>
-          </div>
-        </div>
-        <div style="font-size:10px;color:var(--text3);">Tocca per impatto su piante →</div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;">
-        <div class="card" onclick="openAmbPopup('foto-autofiorenti')" style="cursor:pointer;background:rgba(74,175,94,0.08);">
-          <div style="font-size:12px;font-weight:700;color:var(--green3);margin-bottom:6px;">🌿 AUTOFIORENTI</div>
-          <div style="font-size:11px;color:var(--text2);line-height:1.5;" id="foto-auto-impact">Calcolo…</div>
-          <div style="font-size:10px;color:var(--text3);margin-top:4px;">→ dettaglio</div>
-        </div>
-        <div class="card" onclick="openAmbPopup('foto-femminizzate')" style="cursor:pointer;background:rgba(171,71,188,0.08);">
-          <div style="font-size:12px;font-weight:700;color:var(--purple);margin-bottom:6px;">🌸 FEMMINIZZATE</div>
-          <div style="font-size:11px;color:var(--text2);line-height:1.5;" id="foto-femm-impact">Calcolo…</div>
-          <div style="font-size:10px;color:var(--text3);margin-top:4px;">→ dettaglio</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-title">📊 Ore di Luce — Anno Caserta</div>
-        <div id="foto-grafico-annuale" style="display:flex;flex-direction:column;gap:4px;padding-top:4px;"></div>
-      </div>
-    </div>
-
-    <!-- ─── PANNELLO: FENOLOGICO ─── -->
-    <div class="cal-subpanel" id="csp-fenol">
-      <div class="card" onclick="openAmbPopup('fenol-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,152,0,0.1),rgba(255,87,34,0.06));">
-        <div class="card-title" style="color:var(--orange);">🌸 Fase Fenologica Attuale</div>
-        <div style="display:flex;align-items:center;gap:12px;margin:8px 0;">
-          <div style="font-size:44px;" id="fenol-fase-emoji">🌱</div>
-          <div>
-            <div style="font-size:16px;font-weight:700;" id="fenol-fase-nome">Calcolo…</div>
-            <div style="font-size:12px;color:var(--text2);margin-top:4px;" id="fenol-fase-desc">—</div>
-            <div style="font-size:11px;color:var(--text3);margin-top:2px;" id="fenol-fase-durata">Durata prevista: —</div>
-          </div>
-        </div>
-        <div style="font-size:10px;color:var(--text3);">Tocca per previsioni delle prossime settimane →</div>
-      </div>
-      <div class="card">
-        <div class="card-title">🌿 Fase per Pianta Attuale</div>
-        <div id="fenol-piante-list" style="display:flex;flex-direction:column;gap:6px;"></div>
-      </div>
-      <div class="card" onclick="openAmbPopup('fenol-luna')" style="cursor:pointer;background:linear-gradient(135deg,rgba(58,159,216,0.08),rgba(171,71,188,0.06));">
-        <div class="card-title" style="color:var(--blue);">🌙 Correlazione Fenologica-Lunare</div>
-        <div style="font-size:13px;color:var(--text2);line-height:1.5;" id="fenol-luna-preview">Analisi correlazione fasi naturali e calendario lunare…</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per analisi completa →</div>
-      </div>
-      <div class="card">
-        <div class="card-title">📅 Calendario Stagionale</div>
-        <div id="fenol-stagionale" style="display:flex;flex-direction:column;gap:8px;padding-top:4px;"></div>
-      </div>
-    </div>
-
-  </div><!-- fine amb-panel-cal -->
-
-  <!-- ══════════ TAB AI SERRA (preservato) ══════════ -->
 
 </section>
 
@@ -3925,34 +3726,13 @@ window.initApp = function() {
 
 /* ── Switch tab interno — chiama direttamente le funzioni originali ── */
 function switchAmbTab(tab) {
-  ['meteo','cal'].forEach(t => {
-    const p = document.getElementById('amb-panel-' + t);
-    const b = document.getElementById('ambt-' + t);
-    if (p) p.classList.toggle('active', t === tab);
-    if (b) b.classList.toggle('active', t === tab);
-  });
-  if (tab === 'meteo') {
-    _doLoadWeather();
-  }
-  if (tab === 'cal') {
-    // Attiva il sotto-tab corrente (default: oggi)
-    const activeSubBtn = document.querySelector('.cal-subtab.active');
-    const sub = activeSubBtn ? activeSubBtn.id.replace('csub-','') : 'oggi';
-    switchCalSub(sub);
-  }
+  // Sezione ambiente scrollabile — avvia tutto insieme
+  _doLoadWeather();
+  setTimeout(_doRenderLunar, 50);
+  _doRenderBio();
 }
 
-/* ── Sotto-tab Calendario ── */
-function switchCalSub(sub) {
-  ['oggi','lunare','bio','semine','tratt','foto','fenol'].forEach(s => {
-    const p = document.getElementById('csp-' + s);
-    const b = document.getElementById('csub-' + s);
-    if (p) p.classList.toggle('active', s === sub);
-    if (b) b.classList.toggle('active', s === sub);
-  });
-  if (sub === 'lunare') setTimeout(_doRenderLunar, 50);
-  if (sub === 'bio')    _doRenderBio();
-}
+/* switchCalSub non più usata — sezione ambiente ora scrollabile */
 
 /* ── Wrappers sicuri che chiamano le funzioni originali ── */
 function _doLoadWeather() {
@@ -4058,11 +3838,9 @@ function _doRenderBio() {
 
 /* ── Init ambiente (chiamato da showSection) ── */
 function initAmbiente() {
-  const activeTab = document.querySelector('#amb-tab-bar .piante-tab.active');
-  const tabId = activeTab ? (
-    activeTab.id==='ambt-meteo' ? 'meteo' : 'cal'
-  ) : 'meteo';
-  switchAmbTab(tabId);
+  _doLoadWeather();
+  setTimeout(_doRenderLunar, 50);
+  _doRenderBio();
 }
 
 /* ══════════════════════════════════════════════════════════════
