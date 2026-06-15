@@ -1361,10 +1361,10 @@
 
   </div>
 
-  <!-- PANNELLO: TRACKER PER PIANTA -->
+  <!-- PANNELLO: TRACKER — vista globale -->
   <div id="epanel-tracker" class="piante-panel">
-    <div style="font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.6">
-      Attiva/disattiva le tecniche per ogni pianta. I dati vengono salvati automaticamente.
+    <div style="font-size:13px;color:var(--text2);margin-bottom:12px;line-height:1.6">
+      Tecniche attive su <strong>tutte le piante</strong>. Usa i toggle nella tab Tecniche per attivarle.
     </div>
     <div id="el-tracker-lista"></div>
   </div>
@@ -1395,13 +1395,17 @@
   <!-- PANNELLO: STATISTICHE -->
   <div id="epanel-stats" class="piante-panel">
     <div class="card" style="margin-bottom:12px">
-      <div class="card-title">📊 Confronto Piante</div>
-      <div style="font-size:12px;color:var(--text2);margin-bottom:12px">Piante con vs senza tecniche attive</div>
+      <div class="card-title">📊 Tecniche attive globalmente</div>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:12px">Stato di ogni tecnica su tutte le 10 piante</div>
       <div id="el-stats-chart"></div>
     </div>
-    <div class="card">
-      <div class="card-title">⚡ Tecniche più usate</div>
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-title">⚡ Riepilogo attivazioni</div>
       <div id="el-stats-tecniche"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">📝 Log recenti</div>
+      <div id="el-stats-log-recent"></div>
     </div>
   </div>
 
@@ -1452,28 +1456,59 @@
   <!-- PANNELLO: MANUALI -->
   <div id="lab-panel-manuali" class="piante-panel">
     <div class="section-title">Manuali 📚</div>
-  <div class="section-sub">Documenti e guide operative</div>
-  <div class="manual-item"><div class="manual-icon">🌱</div><div class="manual-text"><div class="manual-title">Manuale Mini-Serra v2</div><div class="manual-sub">Living Soil · Aggiornato marzo 2026</div></div><div class="manual-arrow">›</div></div>
-  <div class="manual-item"><div class="manual-icon">📋</div><div class="manual-text"><div class="manual-title">Calendario Colture</div><div class="manual-sub">10 varietà · 8 mesi ciclo</div></div><div class="manual-arrow">›</div></div>
-  <div class="manual-item"><div class="manual-icon">⚡</div><div class="manual-text"><div class="manual-title">Guida Elettrocultura</div><div class="manual-sub">Lakhovsky · Galvanica · Pantacle</div></div><div class="manual-arrow">›</div></div>
-  <div class="manual-item"><div class="manual-icon">💧</div><div class="manual-text"><div class="manual-title">Gestione Serbatoio</div><div class="manual-sub">Irrigazione · Melassa · Humus</div></div><div class="manual-arrow">›</div></div>
-  <div class="manual-item"><div class="manual-icon">🧪</div><div class="manual-text"><div class="manual-title">Additivi Biologici</div><div class="manual-sub">Ortiche · Miscela · Banana · Etilene</div></div><div class="manual-arrow">›</div></div>
-  <div class="manual-item"><div class="manual-icon">📅</div><div class="manual-text"><div class="manual-title">Scheda Rapida Additivi</div><div class="manual-sub">Dosi · Cadenze · Metodi</div></div><div class="manual-arrow">›</div></div>
-  <div class="divider"></div>
-  <div class="card">
-    <div class="card-title">📄 Aggiunta rapida</div>
-    <div class="empty-state">Importa un documento o aggiungi note personali</div>
+    <div class="section-sub">Documenti e guide operative</div>
+
+    <!-- LISTA MANUALI CLICCABILI -->
+    <div id="man-lista">
+      <div class="manual-item" onclick="manApri('serra_v2')"><div class="manual-icon">🌱</div><div class="manual-text"><div class="manual-title">Manuale Mini-Serra v2</div><div class="manual-sub">Living Soil · Aggiornato marzo 2026</div></div><div class="manual-arrow">›</div></div>
+      <div class="manual-item" onclick="manApri('calendario')"><div class="manual-icon">📋</div><div class="manual-text"><div class="manual-title">Calendario Colture</div><div class="manual-sub">10 varietà · 8 mesi ciclo</div></div><div class="manual-arrow">›</div></div>
+      <div class="manual-item" onclick="manApri('elettrocultura')"><div class="manual-icon">⚡</div><div class="manual-text"><div class="manual-title">Guida Elettrocultura</div><div class="manual-sub">Lakhovsky · Galvanica · Pantacle</div></div><div class="manual-arrow">›</div></div>
+      <div class="manual-item" onclick="manApri('serbatoio')"><div class="manual-icon">💧</div><div class="manual-text"><div class="manual-title">Gestione Serbatoio</div><div class="manual-sub">Irrigazione · Melassa · Humus</div></div><div class="manual-arrow">›</div></div>
+      <div class="manual-item" onclick="manApri('additivi')"><div class="manual-icon">🧪</div><div class="manual-text"><div class="manual-title">Additivi Biologici</div><div class="manual-sub">Ortiche · Miscela · Banana · Etilene</div></div><div class="manual-arrow">›</div></div>
+      <div class="manual-item" onclick="manApri('scheda_rapida')"><div class="manual-icon">📅</div><div class="manual-text"><div class="manual-title">Scheda Rapida Additivi</div><div class="manual-sub">Dosi · Cadenze · Metodi</div></div><div class="manual-arrow">›</div></div>
+      <!-- Manuali aggiuntivi da JSON -->
+      <div id="man-extra-lista"></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- NOTE PERSONALI -->
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-title" style="display:flex;justify-content:space-between;align-items:center">
+        <span>📝 Note personali</span>
+        <span style="font-size:12px;color:var(--text3)" id="man-note-count">0 note</span>
+      </div>
+      <div style="display:grid;gap:8px;margin-top:10px">
+        <input id="man-nota-titolo" type="text" placeholder="Titolo nota…"
+          style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-size:13px;font-family:var(--font);outline:none">
+        <textarea id="man-nota-testo" placeholder="Scrivi la tua nota…" rows="3"
+          style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-size:13px;font-family:var(--font);resize:vertical;outline:none"></textarea>
+        <button onclick="manSalvaNota()" style="background:var(--green2);border:none;border-radius:10px;padding:11px;color:var(--text);font-size:14px;font-weight:700;cursor:pointer">💾 Salva nota</button>
+      </div>
+      <div id="man-note-lista" style="margin-top:12px"></div>
+    </div>
+
+    <!-- ANALISI AI PDF — ATTIVA -->
+    <div class="json-panel" id="manuali-json-panel">
+      <div class="json-panel-header">
+        <div class="json-panel-title">🤖 Analisi AI dei PDF</div>
+        <button class="json-reload-btn" onclick="loadManualiJSON()">🔄 Aggiorna</button>
+      </div>
+      <div style="font-size:11px;color:var(--text3);padding:0 0 6px 2px">Legge i PDF su Drive e propone nuove tecniche</div>
+      <div class="json-panel-meta" id="manuali-json-meta">In caricamento…</div>
+      <div id="manuali-json-content"><div class="json-loading">⏳ Caricamento analisi…</div></div>
+    </div>
   </div>
 
-  <!-- ANALISI AI PDF DA JSON -->
-  <div class="json-panel" id="manuali-json-panel">
-    <div class="json-panel-header">
-      <div class="json-panel-title">🤖 Analisi AI dei PDF</div>
-      <button class="json-reload-btn" onclick="loadManualiJSON()">🔄 Aggiorna</button>
+  <!-- MODALE MANUALE -->
+  <div id="man-modale" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.85);z-index:9000;overflow-y:auto">
+    <div style="background:var(--bg);min-height:100%;padding:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;position:sticky;top:0;background:var(--bg);padding:8px 0;z-index:1">
+        <div id="man-modale-titolo" style="font-size:17px;font-weight:800;color:var(--text)"></div>
+        <button onclick="manChiudi()" style="background:var(--card2);border:none;border-radius:8px;padding:8px 14px;color:var(--text);font-size:14px;cursor:pointer">✕ Chiudi</button>
+      </div>
+      <div id="man-modale-corpo" style="font-size:13px;color:var(--text2);line-height:1.8"></div>
     </div>
-    <div class="json-panel-meta" id="manuali-json-meta">In caricamento…</div>
-    <div id="manuali-json-content"><div class="json-loading">⏳ Caricamento analisi…</div></div>
-  </div>
   </div>
 
   <!-- PANNELLO: AI SERRA -->
@@ -1889,7 +1924,8 @@ function switchLabTab(tab) {
     if (panel) panel.classList.toggle('active', t === tab);
     if (btn) btn.classList.toggle('active', t === tab);
   });
-  if (tab === 'ai') { try { setTimeout(aiInitUI, 50); } catch(e) {} }
+  if (tab === 'ai')     { try { setTimeout(aiInitUI, 50); } catch(e) {} }
+  if (tab === 'manuali') { manRenderNote(); loadManualiJSON(); }
 }
 
 function refreshAll() { if(document.getElementById('sec-ambiente')&&document.getElementById('sec-ambiente').classList.contains('active')) initAmbiente(); }
@@ -2034,26 +2070,28 @@ function lunaIcona(fase) {
   return m[fase] || '🌙';
 }
 
-/* ── Render TECNICHE ── */
+/* ── Render TECNICHE — toggle globale ── */
 function renderElettroTecniche() {
   var lista = document.getElementById('el-tecniche-lista');
   if (!lista) return;
   var html = '';
   EL_TECNICHE_BASE.forEach(function(t) {
-    var cnt = elCounts[t.id] || 0;
+    var attiva = elGlobale[t.id] || false;
     var lunaHtml = t.lunaConsigl.map(function(l){ return '<span style="font-size:11px;background:rgba(100,80,200,0.2);color:#a8b8ff;border-radius:6px;padding:2px 7px">' + lunaIcona(l) + ' ' + l + '</span>'; }).join('');
-    html += '<div class="exp-card" style="margin-bottom:10px">';
-    html += '<div class="exp-title">' + t.nome + ' <span class="exp-badge">' + t.badge + '</span></div>';
+    var borderCol = attiva ? 'var(--green2)' : 'var(--border)';
+    html += '<div class="exp-card" style="margin-bottom:10px;border-left:3px solid ' + borderCol + '">';
+    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">';
+    html += '<div class="exp-title" style="margin:0">' + t.nome + ' <span class="exp-badge">' + t.badge + '</span></div>';
+    html += '<label class="toggle-sw" style="flex-shrink:0" title="' + (attiva ? 'Disattiva' : 'Attiva') + ' tecnica">';
+    html += '<input type="checkbox" ' + (attiva ? 'checked' : '') + ' onchange="elToggleGlobale('' + t.id + '',this.checked)">';
+    html += '<span class="toggle-slider"></span></label>';
+    html += '</div>';
     html += '<div class="exp-desc" style="margin-bottom:10px">' + t.desc + '</div>';
     html += '<details style="margin-bottom:10px"><summary style="font-size:12px;color:var(--green2);cursor:pointer;font-weight:600">📋 Istruzioni installazione</summary>';
     html += '<div style="font-size:12px;color:var(--text2);margin-top:8px;line-height:1.7;padding:8px;background:var(--card2);border-radius:8px">' + t.istruzioni + '</div></details>';
     html += '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">';
-    html += '<div class="exp-counter">';
-    html += '<button class="exp-btn" onclick="adjustCount(\'' + t.id + '\',-1)">−</button>';
-    html += '<div class="exp-count-num" id="' + t.id + '-count">' + cnt + '</div>';
-    html += '<button class="exp-btn" onclick="adjustCount(\'' + t.id + '\',1)">+</button>';
-    html += '<span style="font-size:12px;color:var(--text2)">' + cnt + '/' + t.max + ' ' + t.unita + '</span></div>';
     html += '<div style="display:flex;gap:4px;flex-wrap:wrap">' + lunaHtml + '</div>';
+    html += '<button onclick="elRilasciaEsp('' + t.id + '','' + t.nome.replace(/'/g,'') + '')" style="background:none;border:1px solid var(--border);border-radius:8px;padding:4px 10px;color:var(--text3);font-size:11px;cursor:pointer">📤 → Esperimenti</button>';
     html += '</div></div>';
   });
   lista.innerHTML = html;
@@ -2064,15 +2102,23 @@ function renderElTecnicheExtra() {
   var el = document.getElementById('el-tecniche-json');
   if (!el) return;
   if (elTecnicheExtra.length === 0) { el.innerHTML = ''; return; }
-  var html = '<div style="font-size:12px;font-weight:700;color:var(--green2);margin:12px 0 8px;display:flex;align-items:center;gap:6px"><span>🤖</span> Tecniche scoperte dall\'AI nei PDF</div>';
-  elTecnicheExtra.forEach(function(t) {
-    html += '<div class="exp-card" style="margin-bottom:10px;border-color:rgba(100,200,255,0.2)">';
-    html += '<div class="exp-title">' + (t.nome||t.id) + ' <span class="exp-badge" style="background:rgba(0,150,255,0.2);color:#60b0ff">AI</span></div>';
+  var html = '<div style="font-size:12px;font-weight:700;color:var(--green2);margin:12px 0 8px;display:flex;align-items:center;gap:6px"><span>🤖</span> Tecniche scoperte dall'AI nei PDF</div>';
+  elTecnicheExtra.forEach(function(t, idx) {
+    var attiva = elGlobale[t.id] || false;
+    var borderCol = attiva ? 'var(--green2)' : 'rgba(100,200,255,0.2)';
+    html += '<div class="exp-card" style="margin-bottom:10px;border-left:3px solid ' + borderCol + '">';
+    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">';
+    html += '<div class="exp-title" style="margin:0">' + (t.nome||t.id) + ' <span class="exp-badge" style="background:rgba(0,150,255,0.2);color:#60b0ff">AI</span></div>';
+    html += '<div style="display:flex;align-items:center;gap:8px">';
+    html += '<label class="toggle-sw" style="flex-shrink:0"><input type="checkbox" ' + (attiva ? 'checked' : '') + ' onchange="elToggleGlobale('' + t.id + '',this.checked)"><span class="toggle-slider"></span></label>';
+    html += '<button onclick="elEliminaTecnicaExtra(' + idx + ')" style="background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;padding:0">×</button>';
+    html += '</div></div>';
     html += '<div class="exp-desc">' + (t.desc||'') + '</div>';
     if (t.istruzioni) {
       html += '<details style="margin-top:8px"><summary style="font-size:12px;color:var(--green2);cursor:pointer;font-weight:600">📋 Istruzioni</summary>';
       html += '<div style="font-size:12px;color:var(--text2);margin-top:6px;line-height:1.7;padding:8px;background:var(--card2);border-radius:8px">' + t.istruzioni + '</div></details>';
     }
+    html += '<div style="margin-top:8px;text-align:right"><button onclick="elRilasciaEsp('' + t.id + '','' + (t.nome||t.id).replace(/'/g,'') + '')" style="background:none;border:1px solid var(--border);border-radius:8px;padding:4px 10px;color:var(--text3);font-size:11px;cursor:pointer">📤 → Esperimenti</button></div>';
     html += '</div>';
   });
   el.innerHTML = html;
@@ -2091,40 +2137,87 @@ async function elLoadTecnicheJSON() {
   }
 }
 
-/* ── Render TRACKER ── */
+/* ── State globale tecniche ── */
+var elGlobale = {};
+function elLoadGlobale() {
+  try { elGlobale = JSON.parse(localStorage.getItem('el_globale') || '{}'); } catch(e) { elGlobale = {}; }
+}
+function elSaveGlobale() {
+  try { localStorage.setItem('el_globale', JSON.stringify(elGlobale)); } catch(e) {}
+}
+elLoadGlobale();
+
+/* ── Toggle globale (una tecnica su tutte le piante) ── */
+function elToggleGlobale(techId, val) {
+  elGlobale[techId] = val;
+  elSaveGlobale();
+  renderElettroTecniche();
+  renderElTecnicheExtra();
+  renderElTracker();
+  elUpdateStats();
+}
+
+/* ── Rilascia tecnica in Esperimenti ── */
+function elRilasciaEsp(techId, techNome) {
+  if (!confirm('Spostare "' + techNome + '" nella sezione Esperimenti?')) return;
+  // Rimuovi da extra se presente
+  var idx = elTecnicheExtra.findIndex(function(t){ return t.id === techId; });
+  if (idx >= 0) elTecnicheExtra.splice(idx, 1);
+  // Aggiungi a proposte esperimenti
+  if (!espData) espData = { attivi: [], proposte: [] };
+  if (!espData.proposte) espData.proposte = [];
+  var exists = espData.proposte.find(function(e){ return e.nome === techNome; });
+  if (!exists) {
+    espData.proposte.unshift({ nome: techNome, descrizione: 'Tecnica rilasciata dalla sezione Tecniche.', data_proposta: new Date().toLocaleDateString('it-IT'), fonte: 'BioSerra Tecniche' });
+    espData.aggiornato = new Date().toISOString().slice(0,16).replace('T',' ');
+    espSalva('Tecnica rilasciata in esperimenti: ' + techNome);
+  }
+  renderElettroTecniche();
+  renderElTecnicheExtra();
+  elUpdateStats();
+}
+
+/* ── Elimina tecnica extra ── */
+function elEliminaTecnicaExtra(idx) {
+  if (!confirm('Eliminare questa tecnica AI?')) return;
+  elTecnicheExtra.splice(idx, 1);
+  renderElTecnicheExtra();
+  elUpdateStats();
+}
+
+/* ── Render TRACKER — vista globale ── */
 function renderElTracker() {
   var lista = document.getElementById('el-tracker-lista');
   if (!lista) return;
-  var plants = loadActivePlants();
   var tecniche = elAllTecniche();
+  var attive = tecniche.filter(function(t){ return elGlobale[t.id]; });
+  var inattive = tecniche.filter(function(t){ return !elGlobale[t.id]; });
   var html = '';
-  plants.forEach(function(p) {
-    if (!elTracker[p.id]) elTracker[p.id] = {};
-    var tecItems = '';
-    tecniche.forEach(function(t) {
-      var attiva = elTracker[p.id][t.id] || false;
-      var chk = attiva ? 'checked' : '';
-      tecItems += '<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">';
-      tecItems += '<div style="font-size:13px;color:var(--text)">' + t.nome + '</div>';
-      tecItems += '<label class="toggle-sw" style="flex-shrink:0"><input type="checkbox" ' + chk + ' onchange="elToggleTech(' + p.id + ',\'' + t.id + '\',this.checked)"><span class="toggle-slider"></span></label>';
-      tecItems += '</div>';
+  if (attive.length === 0) {
+    html += '<div class="empty-state"><div class="empty-state-icon">⚡</div>Nessuna tecnica attiva.<br>Attivale dalla tab Tecniche con i toggle.</div>';
+  } else {
+    html += '<div style="font-size:12px;font-weight:700;color:var(--green2);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px">✅ Attive su tutte le piante</div>';
+    attive.forEach(function(t) {
+      html += '<div class="card" style="margin-bottom:8px;border-left:3px solid var(--green2);display:flex;align-items:center;justify-content:space-between;padding:10px 14px">';
+      html += '<span style="font-size:13px;font-weight:600">' + t.nome + '</span>';
+      html += '<label class="toggle-sw"><input type="checkbox" checked onchange="elToggleGlobale('' + t.id + '',this.checked)"><span class="toggle-slider"></span></label>';
+      html += '</div>';
     });
-    var activeCount = Object.values(elTracker[p.id]).filter(Boolean).length;
-    html += '<div class="card" style="margin-bottom:10px">';
-    html += '<div class="card-title" style="display:flex;justify-content:space-between;align-items:center">';
-    html += '<span>' + (p.icon||'🌱') + ' ' + p.name + '</span>';
-    html += '<span style="font-size:12px;color:var(--green2);font-weight:600">' + activeCount + '/' + tecniche.length + ' attive</span></div>';
-    html += '<div style="margin-top:8px">' + tecItems + '</div></div>';
-  });
+  }
+  if (inattive.length > 0) {
+    html += '<div style="font-size:12px;font-weight:700;color:var(--text3);margin:12px 0 8px;text-transform:uppercase;letter-spacing:.5px">○ Non attive</div>';
+    inattive.forEach(function(t) {
+      html += '<div class="card" style="margin-bottom:8px;display:flex;align-items:center;justify-content:space-between;padding:10px 14px;opacity:.6">';
+      html += '<span style="font-size:13px">' + t.nome + '</span>';
+      html += '<label class="toggle-sw"><input type="checkbox" onchange="elToggleGlobale('' + t.id + '',this.checked)"><span class="toggle-slider"></span></label>';
+      html += '</div>';
+    });
+  }
   lista.innerHTML = html;
 }
 
-function elToggleTech(plantId, techId, val) {
-  if (!elTracker[plantId]) elTracker[plantId] = {};
-  elTracker[plantId][techId] = val;
-  elSaveState();
-  elUpdateStats();
-}
+/* ── Compat legacy (non usata ma mantenuta) ── */
+function elToggleTech(plantId, techId, val) { elToggleGlobale(techId, val); }
 
 /* ── Render LOG ── */
 function elPopulateSelects() {
@@ -2194,60 +2287,74 @@ function renderElLog() {
   lista.innerHTML = html;
 }
 
-/* ── Render STATS ── */
+/* ── Render STATS — globale ── */
 function renderElStats() {
-  var plants = loadActivePlants();
   var tecniche = elAllTecniche();
+  var attiveLista = tecniche.filter(function(t){ return elGlobale[t.id]; });
+  var inattiveLista = tecniche.filter(function(t){ return !elGlobale[t.id]; });
+  var pct = tecniche.length > 0 ? Math.round(attiveLista.length / tecniche.length * 100) : 0;
+
   var chartEl = document.getElementById('el-stats-chart');
   if (chartEl) {
     var html = '';
-    plants.forEach(function(p) {
-      var tracker = elTracker[p.id] || {};
-      var cnt = Object.values(tracker).filter(Boolean).length;
-      var pct = tecniche.length > 0 ? Math.round(cnt / tecniche.length * 100) : 0;
-      html += '<div style="margin-bottom:10px">';
-      html += '<div style="display:flex;justify-content:space-between;margin-bottom:3px">';
-      html += '<span style="font-size:13px">' + (p.icon||'🌱') + ' ' + p.name + '</span>';
-      html += '<span style="font-size:12px;color:var(--green2);font-weight:600">' + cnt + '/' + tecniche.length + ' (' + pct + '%)</span></div>';
-      html += '<div style="height:8px;background:var(--card2);border-radius:4px;overflow:hidden">';
-      html += '<div style="height:100%;width:' + pct + '%;background:linear-gradient(90deg,var(--green2),var(--green3));border-radius:4px;transition:.3s"></div></div></div>';
+    // Barra globale
+    html += '<div style="margin-bottom:16px">';
+    html += '<div style="display:flex;justify-content:space-between;margin-bottom:6px">';
+    html += '<span style="font-size:14px;font-weight:700">Copertura globale</span>';
+    html += '<span style="font-size:14px;font-weight:700;color:var(--green2)">' + attiveLista.length + '/' + tecniche.length + ' (' + pct + '%)</span></div>';
+    html += '<div style="height:12px;background:var(--card2);border-radius:6px;overflow:hidden">';
+    html += '<div style="height:100%;width:' + pct + '%;background:linear-gradient(90deg,var(--green2),var(--green3));border-radius:6px;transition:.5s"></div></div>';
+    html += '<div style="font-size:11px;color:var(--text3);margin-top:4px">' + attiveLista.length + ' tecniche attive su tutte le 10 piante</div></div>';
+    // Dettaglio per tecnica
+    tecniche.forEach(function(t) {
+      var on = elGlobale[t.id] || false;
+      html += '<div style="display:flex;align-items:center;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border)">';
+      html += '<span style="font-size:13px;color:' + (on ? 'var(--text)' : 'var(--text3)') + '">' + t.nome + '</span>';
+      html += '<span style="font-size:12px;font-weight:700;color:' + (on ? 'var(--green2)' : 'var(--text3)') + '">' + (on ? '✅ Attiva' : '○ Off') + '</span>';
+      html += '</div>';
     });
     chartEl.innerHTML = html;
   }
+
   var techEl = document.getElementById('el-stats-tecniche');
   if (techEl) {
-    var techCounts = {};
-    tecniche.forEach(function(t){ techCounts[t.id] = { nome: t.nome, cnt: 0 }; });
-    Object.values(elTracker).forEach(function(plantData) {
-      Object.keys(plantData).forEach(function(tid) {
-        if (plantData[tid] && techCounts[tid]) techCounts[tid].cnt++;
-      });
-    });
-    var sorted = Object.values(techCounts).sort(function(a,b){ return b.cnt - a.cnt; });
-    if (sorted.length === 0) {
-      techEl.innerHTML = '<div style="text-align:center;color:var(--text3);font-size:13px;padding:12px">Nessun dato ancora</div>';
+    var total = tecniche.length;
+    var on = attiveLista.length;
+    techEl.innerHTML = '<div style="padding:8px 0">' +
+      '<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border)"><span style="font-size:13px">Tecniche totali disponibili</span><span style="font-size:13px;font-weight:700;color:var(--text)">' + total + '</span></div>' +
+      '<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border)"><span style="font-size:13px">Tecniche attive</span><span style="font-size:13px;font-weight:700;color:var(--green2)">' + on + '</span></div>' +
+      '<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border)"><span style="font-size:13px">Tecniche disattive</span><span style="font-size:13px;font-weight:700;color:var(--text3)">' + (total-on) + '</span></div>' +
+      '<div style="display:flex;justify-content:space-between;padding:6px 0"><span style="font-size:13px">Osservazioni nel log</span><span style="font-size:13px;font-weight:700;color:var(--blue)">' + elLogs.length + '</span></div>' +
+      '</div>';
+  }
+
+  var logEl = document.getElementById('el-stats-log-recent');
+  if (logEl) {
+    if (elLogs.length === 0) {
+      logEl.innerHTML = '<div style="font-size:13px;color:var(--text3);padding:8px 0">Nessuna osservazione ancora</div>';
     } else {
-      var th = '';
-      sorted.forEach(function(t) {
-        th += '<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border)">';
-        th += '<span style="font-size:13px">' + t.nome + '</span>';
-        th += '<span style="font-size:13px;font-weight:700;color:var(--green2)">' + t.cnt + ' piante</span></div>';
+      var html2 = '';
+      elLogs.slice(0,3).forEach(function(l) {
+        html2 += '<div style="padding:8px 0;border-bottom:1px solid var(--border)">';
+        html2 += '<div style="font-size:12px;color:var(--text3);margin-bottom:2px">' + l.data + ' · ' + l.tecnica + '</div>';
+        html2 += '<div style="font-size:13px;color:var(--text2)">' + l.nota.slice(0,80) + (l.nota.length>80?'…':'') + '</div>';
+        html2 += '</div>';
       });
-      techEl.innerHTML = th;
+      logEl.innerHTML = html2;
     }
   }
 }
 
 /* ── Update statistiche header ── */
 function elUpdateStats() {
-  var attive = EL_TECNICHE_BASE.filter(function(t){ return (elCounts[t.id]||0) > 0; }).length + elTecnicheExtra.length;
+  var tecniche = elAllTecniche();
+  var attive = tecniche.filter(function(t){ return elGlobale[t.id]; }).length;
   var el1 = document.getElementById('el-stat-attive');
   if (el1) el1.textContent = attive;
   var el2 = document.getElementById('el-stat-log');
   if (el2) el2.textContent = elLogs.length;
-  var piante = Object.entries(elTracker).filter(function(e){ return Object.values(e[1]).some(Boolean); }).length;
   var el3 = document.getElementById('el-stat-piante');
-  if (el3) el3.textContent = piante;
+  if (el3) el3.textContent = attive > 0 ? '10' : '0';
 }
 
 /* ── Toggle switch CSS ── */
@@ -2451,6 +2558,9 @@ function espEscape(str) {
 /* ── Init Elettrocultura ── */
 function initElettrocultura() {
   elLoadState();
+  elLoadGlobale();
+  manLoadNote();
+  manRenderNote();
   renderElettroTecniche();
   elLunarTip();
   elLoadTecnicheJSON();
@@ -3648,27 +3758,159 @@ function renderAlertsOggi(alerts) {
   card.style.display = 'block';
 }
 
-/* ── Analisi PDF ── */
-async function loadManualiJSON() {
-  const el = document.getElementById('manuali-json-content');
-  const meta = document.getElementById('manuali-json-meta');
+/* ══════════════════════════════════════════════════════════════
+   MANUALI — modale + note personali + analisi AI PDF
+══════════════════════════════════════════════════════════════ */
+
+/* Contenuti manuali base */
+var MAN_CONTENUTI = {
+  serra_v2: {
+    titolo: '🌱 Manuale Mini-Serra v2',
+    corpo: '<h3>Struttura</h3><p>10 vasi in tessuto 10L su supporti forati. Pellicola riflettente sotto e sui 3 lati laterali. Serbatoio 50L con pompa solare.</p><h3>Substrato</h3><p>100L BioBizz Light-Mix + 10L fibra cocco + Super Soil + 3kg Worm Humus + micorrize 0.5-1g/pianta.</p><h3>Irrigazione</h3><p>1 gocciolatore/pianta. Frequenza: 1 volta/giorno o ogni 2 giorni in base al clima. Bagnare i bordi dei vasi ogni 7-10 giorni manualmente.</p><h3>Sistema Water-Only</h3><p>Grazie al Super Soil non servono fertilizzanti liquidi per 8 mesi. Solo irrigazione e additivi biologici periodici.</p>'
+  },
+  calendario: {
+    titolo: '📋 Calendario Colture',
+    corpo: '<h3>Autofiorenti (18h luce ideale)</h3><p>Epsilon F1 (ID:7) — Germinazione 21/04, Taglio 20/06<br>Milky Way F1 (ID:1) — Germinazione 23/04, Taglio 22/07<br>Titan F1 (ID:2) — Germinazione 22/04, Taglio 21/07<br>Medusa F1 (ID:3) — Germinazione 21/04, Taglio 20/07<br>Gaia F1 (ID:8) — Germinazione 21/04, Taglio 15/07</p><h3>Femminizzate (12h luce ideale)</h3><p>Astro Lemonade F1 (ID:4) — Taglio 30/10<br>Cosmic Cheddar F1 (ID:11) — Taglio 30/10<br>Orbital Banana F1 (ID:6) — Taglio 30/10<br>Royal Gorilla (ID:10) — Taglio 09/11<br>Mexican Rush (ID:9) — Taglio 09/11</p><h3>Moltiplicatore luce</h3><p>Formula: giorni reali = giorni produttore × (ore ideali ÷ ore attuali)</p>'
+  },
+  elettrocultura: {
+    titolo: '⚡ Guida Elettrocultura',
+    corpo: '<h3>Circuito di Lakhovsky</h3><p>Anello di rame aperto (~50 cm) alla base di ogni pianta. Estremità sovrapposte per 2-3 cm con 1 cm di spazio. Antenna di risonanza cosmica.</p><h3>Pila Galvanica Ferro-Rame</h3><p>Chiodo di ferro arrugginito + filo di rame in terreno umido. Micro-corrente ~0.5-0.7V ionizza i nutrienti. Ferro verso Nord, rame verso Sud.</p><h3>Pantacle di Rame</h3><p>Archi di rame collegano il terreno di tutti i vasi in serie. I 10 vasi diventano un organismo collettivo.</p><h3>Acqua Magnetizzata</h3><p>Magnete principale sul tubo principale + Geomag su ogni gocciolatoio. Polo Nord verso il flusso d\'acqua.</p><h3>Spirale di Rame Cosmica</h3><p>Spirale avvolta in senso orario attorno al fusto. Geometria sacra naturale.</p>'
+  },
+  serbatoio: {
+    titolo: '💧 Gestione Serbatoio',
+    corpo: '<h3>Preparazione</h3><p>Oscura la tanica con sacco nero per evitare alghe. Aggiungi pietra/rametto per colonizzazione microbica.</p><h3>Infuso di Humus</h3><p>5L acqua + 100-150g Worm Humus. Prepara separatamente e poi versa nella tanica. Rinnova 1x al mese.</p><h3>Ossigenazione</h3><p>Agita la tanica 10-15 secondi ogni settimana. Evita stagnazione.</p><h3>Acqua strutturata</h3><p>Magnete principale avvolto attorno al tubo vicino all\'inizio della linea. Polarità: polo Nord verso il flusso.</p>'
+  },
+  additivi: {
+    titolo: '🧪 Additivi Biologici',
+    corpo: '<h3>Melassa (1x ogni 15gg)</h3><p>1 ml/L — Dogma Organics Morganix. Prepara in bottiglia separata. Nutrimento microbi del suolo.</p><h3>Miscela Organica (1x/mese)</h3><p>Gusci d\'uovo + bucce banana + fondi caffè. Tutti essiccati e triturati. 1 cucchiaio grande/vaso. Calcio + Potassio + Azoto.</p><h3>Infuso Ortiche (1x/mese)</h3><p>100-150g foglie fresche per 1L acqua. Macerazione 3-7 giorni. Diluire 1:10. Dose: 1-2L/vaso.</p><h3>Tè Banana e Cenere (ogni 2 sett. da M5)</h3><p>3-4 bucce in 1L per 15 min. Filtra. Aggiungi 1 cucchiaino cenere. Diluisci 1:5.</p><h3>Generatore Etilene (M7-M8)</h3><p>1 mela matura o banana annerita nella serra. Sostituire ogni 3-4 giorni.</p>'
+  },
+  scheda_rapida: {
+    titolo: '📅 Scheda Rapida Additivi',
+    corpo: '<table style="width:100%;border-collapse:collapse;font-size:12px"><tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 4px;color:var(--green2)">Additivo</th><th style="text-align:left;padding:6px 4px;color:var(--green2)">Dose</th><th style="text-align:left;padding:6px 4px;color:var(--green2)">Cadenza</th></tr><tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 4px">Melassa</td><td style="padding:6px 4px">1 ml/L</td><td style="padding:6px 4px">Ogni 15gg</td></tr><tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 4px">Miscela organica</td><td style="padding:6px 4px">1 cucch/vaso</td><td style="padding:6px 4px">1x/mese</td></tr><tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 4px">Infuso ortiche</td><td style="padding:6px 4px">1-2L/vaso dil.1:10</td><td style="padding:6px 4px">1x/mese</td></tr><tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 4px">Tè banana+cenere</td><td style="padding:6px 4px">dil. 1:5</td><td style="padding:6px 4px">Ogni 2 sett (M5-M8)</td></tr><tr><td style="padding:6px 4px">Etilene</td><td style="padding:6px 4px">1 frutto maturo</td><td style="padding:6px 4px">M7-M8, ogni 3-4gg</td></tr></table>'
+  }
+};
+
+function manApri(id) {
+  var m = MAN_CONTENUTI[id];
+  if (!m) { alert('Contenuto non disponibile'); return; }
+  var modale = document.getElementById('man-modale');
+  var titolo = document.getElementById('man-modale-titolo');
+  var corpo  = document.getElementById('man-modale-corpo');
+  if (!modale) return;
+  titolo.textContent = m.titolo;
+  corpo.innerHTML = '<style>#man-modale-corpo h3{font-size:14px;color:var(--green2);margin:14px 0 6px}#man-modale-corpo p{margin:0 0 8px}#man-modale-corpo table{width:100%}</style>' + m.corpo;
+  modale.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+
+function manChiudi() {
+  var modale = document.getElementById('man-modale');
+  if (modale) modale.style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+/* Note personali */
+var manNote = [];
+function manLoadNote() { try { manNote = JSON.parse(localStorage.getItem('man_note') || '[]'); } catch(e) { manNote = []; } }
+function manSaveNote() { try { localStorage.setItem('man_note', JSON.stringify(manNote)); } catch(e) {} }
+manLoadNote();
+
+function manSalvaNota() {
+  var titoloEl = document.getElementById('man-nota-titolo');
+  var testoEl  = document.getElementById('man-nota-testo');
+  var titolo   = titoloEl ? titoloEl.value.trim() : '';
+  var testo    = testoEl  ? testoEl.value.trim()  : '';
+  if (!testo) { alert('Inserisci almeno il testo della nota'); return; }
+  manNote.unshift({ id: Date.now(), titolo: titolo || 'Nota', testo: testo, data: new Date().toLocaleDateString('it-IT') });
+  manSaveNote();
+  if (titoloEl) titoloEl.value = '';
+  if (testoEl)  testoEl.value  = '';
+  manRenderNote();
+}
+
+function manEliminaNota(id) {
+  manNote = manNote.filter(function(n){ return n.id !== id; });
+  manSaveNote();
+  manRenderNote();
+}
+
+function manRenderNote() {
+  var el = document.getElementById('man-note-lista');
+  var cnt = document.getElementById('man-note-count');
+  if (cnt) cnt.textContent = manNote.length + ' note';
   if (!el) return;
-  el.innerHTML = '<div class="json-loading">⏳ Caricamento…</div>';
+  if (manNote.length === 0) { el.innerHTML = '<div style="font-size:13px;color:var(--text3);padding:8px 0">Nessuna nota ancora</div>'; return; }
+  var html = '';
+  manNote.forEach(function(n) {
+    html += '<div style="padding:10px 0;border-top:1px solid var(--border)">';
+    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px">';
+    html += '<span style="font-size:13px;font-weight:700;color:var(--text)">' + n.titolo + '</span>';
+    html += '<div style="display:flex;align-items:center;gap:8px"><span style="font-size:11px;color:var(--text3)">' + n.data + '</span>';
+    html += '<button onclick="manEliminaNota(' + n.id + ')" style="background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;padding:0">×</button></div></div>';
+    html += '<div style="font-size:13px;color:var(--text2);line-height:1.6">' + n.testo + '</div></div>';
+  });
+  el.innerHTML = html;
+}
+
+/* ── Analisi PDF — carica pdf_knowledge.json e propone tecniche ── */
+async function loadManualiJSON() {
+  var el   = document.getElementById('manuali-json-content');
+  var meta = document.getElementById('manuali-json-meta');
+  if (!el) return;
+  el.innerHTML = '<div class="json-loading">⏳ Caricamento analisi AI…</div>';
   try {
-    const data = await fetchGHJson('pdf_knowledge.json');
+    var data = await fetchGHJson('pdf_knowledge.json');
     if (!data) { renderPending(el, meta); return; }
-    meta.textContent = 'Aggiornato: ' + fmtJsonDate(data.aggiornato || data.updated_at || data.data);
-    const items = data.analisi || data.items || data.documenti || [];
-    if (!items.length) { el.innerHTML = '<div class="json-pending">Nessuna analisi disponibile</div>'; return; }
-    el.innerHTML = items.map(item => {
-      if (typeof item === 'string') return `<div class="json-item info-item">${item}</div>`;
-      return `<div class="json-item info-item">
-        ${item.titolo || item.documento ? `<div class="json-item-title">📄 ${item.titolo || item.documento}</div>` : ''}
-        <div class="json-item-body">${item.sommario || item.analisi || item.testo || item.body || ''}</div>
-        ${(item.tag||[]).map(t=>`<span class="json-tag">${t}</span>`).join('')}
-      </div>`;
-    }).join('');
+    if (meta) meta.textContent = 'Aggiornato: ' + fmtJsonDate(data.aggiornato || data.updated_at || data.data);
+    var items = data.analisi || data.items || data.documenti || [];
+    var tecniche_nuove = data.tecniche_nuove || data.nuove_tecniche || [];
+    var html = '';
+    // Nuove tecniche proposte dall'AI
+    if (tecniche_nuove.length > 0) {
+      html += '<div style="background:rgba(0,200,100,.08);border:1px solid rgba(0,200,100,.2);border-radius:10px;padding:12px;margin-bottom:12px">';
+      html += '<div style="font-size:12px;font-weight:700;color:var(--green2);margin-bottom:8px">🔬 Nuove tecniche trovate nei PDF</div>';
+      tecniche_nuove.forEach(function(t, idx) {
+        html += '<div style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06)">';
+        html += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:3px">' + (t.nome||'Tecnica') + '</div>';
+        html += '<div style="font-size:12px;color:var(--text2);margin-bottom:6px">' + (t.desc||t.descrizione||'') + '</div>';
+        html += '<button onclick="manAggiungeTecnica(' + idx + ')" style="background:var(--green2);border:none;border-radius:8px;padding:5px 14px;color:var(--text);font-size:12px;font-weight:700;cursor:pointer">⚡ Aggiungi a Tecniche</button>';
+        html += '</div>';
+      });
+      html += '</div>';
+    }
+    // Analisi generali
+    if (items.length > 0) {
+      items.forEach(function(item) {
+        if (typeof item === 'string') { html += '<div class="json-item info-item">' + item + '</div>'; return; }
+        html += '<div class="json-item info-item">';
+        if (item.titolo || item.documento) html += '<div class="json-item-title">📄 ' + (item.titolo || item.documento) + '</div>';
+        html += '<div class="json-item-body">' + (item.sommario || item.analisi || item.testo || item.body || '') + '</div>';
+        var tags = item.tag || [];
+        if (tags.length) html += tags.map(function(t){ return '<span class="json-tag">' + t + '</span>'; }).join('');
+        html += '</div>';
+      });
+    }
+    if (!items.length && !tecniche_nuove.length) {
+      html = '<div class="json-pending">Il bot AI non ha ancora analizzato i PDF.<br>Verrà aggiornato automaticamente ogni mattina.</div>';
+    }
+    el.innerHTML = html;
+    // Salva tecniche nuove in memoria per aggiungerle
+    if (tecniche_nuove.length) window._pdf_tecniche = tecniche_nuove;
   } catch(e) { renderJsonError(el, meta, e); }
+}
+
+/* Aggiunge una tecnica trovata dall'AI PDF a elTecnicheExtra */
+function manAggiungeTecnica(idx) {
+  var techs = window._pdf_tecniche || [];
+  var t = techs[idx];
+  if (!t) return;
+  var newTech = { id: 'ai_' + Date.now(), nome: t.nome || 'Tecnica AI', desc: t.desc || t.descrizione || '', istruzioni: t.istruzioni || '', badge: 'AI PDF', lunaConsigl: [] };
+  var exists = elTecnicheExtra.find(function(e){ return e.nome === newTech.nome; });
+  if (exists) { alert('Questa tecnica è già presente'); return; }
+  elTecnicheExtra.push(newTech);
+  renderElTecnicheExtra();
+  elUpdateStats();
+  alert('✅ Tecnica aggiunta! Vai alla tab Tecniche per attivarla.');
 }
 
 /* ── Auto-load al cambio sezione ── */
