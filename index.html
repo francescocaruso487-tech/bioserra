@@ -2338,7 +2338,7 @@ function getMoonPhase(age){const p=age/LUNAR_CYCLE;
   return{name:'Luna Calante',emoji:'🌘',code:'waning_crescent'};}
 
 function getAdvice(code){const a={
-  new:{main:'⚙️ Pausa attiva — prepara substrati',detail:'Pianifica la settimana. Ideale per preparare l\'infuso di ortiche, sciacquare il serbatoio e rinnovare l\'humus. Evita trapianti o operazioni invasive.',tags:['🧫 Rinnova humus','📋 Pianifica','💧 Svuota serbatoio'],
+  new:{main:'🌑 Luna Nuova — energia nelle radici',detail:'Momento ideale per il terreno. Prepara l\'infuso di ortiche, sciacqua il serbatoio e rinnova l\'humus. Evita trapianti o operazioni invasive sulle piante.',tags:['🧫 Rinnova humus','🌱 Nutrimento radici','💧 Rinnova serbatoio'],
     serra:'🌿 Per Epsilon F1, Gaia F1 (autofiorenti): controlla il timer della pompa e regola la frequenza. Per i femminizzati in veg: giorno neutro, nessuna operazione urgente.'},
   waxing_crescent:{main:'🌿 Crescente — massima crescita vegetativa',detail:'La linfa sale verso foglie e fusti. Somministra infuso di ortiche diluito 1:10 (1-2L/vaso) e melassa (1ml/L). Le piante assorbono meglio in fase crescente.',tags:['🌿 Ortiche+Melassa','🌱 Crescita attiva','⬆️ Linfa in salita'],
     serra:'🔬 Autofiorenti in fioritura (Epsilon, Gaia, Medusa): applica tè di banana e cenere. Femminizzati in veg (Astro Lemonade, Cosmic Cheddar, Orbital Banana): ottimo per somministrare miscela organica.'},
@@ -4196,7 +4196,7 @@ phase.code==='waning_gibbous'||phase.code==='last_quarter'||phase.code==='waning
 ${phase.code==='waxing_crescent'||phase.code==='first_quarter'?'🌿 <strong>Azoto (N)</strong> — crescita vegetativa. Infuso ortiche + fondi caffè.':
 phase.code==='waxing_gibbous'||phase.code==='full'?'🌸 <strong>Potassio (K)</strong> — fioritura. Tè di banana con cenere di legna (ogni 2 sett., mesi 5-8).':
 phase.code==='waning_gibbous'||phase.code==='last_quarter'?'🌿 <strong>Radici e microbi</strong> — humus in profondità. Pila galvanica ferro-rame più efficace.':
-'⚙️ <strong>Pausa nutritiva</strong> — prepara prossimi additivi.'}<br><br>
+'🌑 <strong>Minima attività nutritiva</strong> — ideale per rinnovo humus e serbatoio.'}<br><br>
 <strong>Calendario additivi:</strong><br>
 🍯 Melassa 1ml/L → ogni 15 gg<br>
 🌿 Ortiche + Miscela + Humus → 1×/mese<br>
@@ -4261,7 +4261,7 @@ ${next7.map(({d,p,adv,ill})=>`<div class="amb-popup-section" style="padding:10px
         {nome:'Royal Gorilla',id:10,tipo:'Fem',fase:'Vegetativa'},
         {nome:'Mexican Rush',id:9,tipo:'Fem',fase:'Vegetativa'}
       ];
-      const cons=(p)=>p.fase==='Fioritura'?(phase.code==='full'||phase.code==='waxing_gibbous'?'🌸 Ottimo per resine — tè banana':phase.code==='new'?'⏸️ Pausa':'✅ '+advice.main.split('—')[0]):(phase.code.includes('waxing')||phase.code==='first_quarter'?'🌿 Veg ottimale — ortiche':phase.code==='full'?'💪 Max assorbimento':'✅ '+advice.main.split('—')[0]);
+      const cons=(p)=>p.fase==='Fioritura'?(phase.code==='full'||phase.code==='waxing_gibbous'?'🌸 Ottimo per resine — tè banana':phase.code==='new'?'🌑 Rinnovo substrati':'✅ '+advice.main.split('—')[0]):(phase.code.includes('waxing')||phase.code==='first_quarter'?'🌿 Veg ottimale — ortiche':phase.code==='full'?'💪 Max assorbimento':'✅ '+advice.main.split('—')[0]);
       return `<div class="amb-popup-label">Correlazione</div>
 <div class="amb-popup-title">🌱 Analisi per ogni pianta</div>
 <div style="font-size:12px;color:var(--text3);margin-bottom:12px;">${phase.emoji} ${phase.name} · ${getMoonIllum(age)}% illuminazione</div>
@@ -4361,14 +4361,14 @@ async function loadLunaConsigli6() {
   // Dati calcolati localmente (sempre disponibili)
   setVal('lc-attivita', advice.main);
   setVal('lc-irrigazione', phase.code==='full'?'Max assorbimento — infuso ortiche':phase.code.includes('waxing')?'Fase crescente — piante assorbono':phase.code==='new'?'Rinnova infuso humus':'Fase calante — priorità radici');
-  setVal('lc-nutrizione', phase.code.includes('waxing')||phase.code==='first_quarter'?'Azoto — infuso ortiche + caffè':phase.code==='full'||phase.code==='waxing_gibbous'?'Potassio — tè banana + cenere':phase.code.includes('waning')||phase.code==='last_quarter'?'Radici — humus + infuso':'Pausa nutritiva');
+  setVal('lc-nutrizione', phase.code.includes('waxing')||phase.code==='first_quarter'?'Azoto — infuso ortiche + caffè':phase.code==='full'||phase.code==='waxing_gibbous'?'Potassio — tè banana + cenere':phase.code.includes('waning')||phase.code==='last_quarter'?'Radici — humus + infuso':'🌑 Rinnovo humus e serbatoio');
   setVal('lc-elettro', phase.code==='full'||phase.code==='first_quarter'?'⚡ OTTIMO — verifica tutti i circuiti':phase.code==='waning_gibbous'?'⚗️ Pila galvanica efficace oggi':'🔧 Controlla integrità circuiti');
   setVal('lc-avviso', age>26?'Fine ciclo (gg '+age.toFixed(0)+'). Rinnova humus.':age<1.5?'Luna nuova: evita trapianti oggi':phase.code==='full'?'Luna piena: documenta esperimenti':'Nessun avviso urgente');
   const tom=new Date(today.getTime()+86400000); const pa=getMoonAge(tom); const pp=getMoonPhase(pa);
   setVal('lc-previsione', 'Domani: '+pp.emoji+' '+pp.name+' ('+getMoonIllum(pa)+'%)');
   // Aggiorna preview luna-piante
   const prev=document.getElementById('luna-piante-preview');
-  if(prev) prev.textContent=phase.emoji+' '+phase.name+' · '+advice.main.split('—')[0].trim()+'. Tocca per analisi per ogni pianta.';
+  if(prev) prev.textContent=phase.emoji+' '+phase.name+' · '+advice.detail.split('.')[0]+'. Tocca per analisi per ogni pianta.';
   // Prova JSON
   try {
     const data=await fetchGHJson('luna_consigli.json');
