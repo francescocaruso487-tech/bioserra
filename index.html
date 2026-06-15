@@ -1941,7 +1941,7 @@ function showSection(id, btn) {
   try { if (id === 'laboratorio') { setTimeout(aiInitUI, 50); initElettrocultura(); } } catch(e) {}
   try { if (id === 'impostazioni') setTimeout(initImpostazioni, 50); } catch(e) {}
   try { if (id === 'ambiente') initAmbiente(); } catch(e) {}
-  try { if (id === 'piante') renderActivePlants(); } catch(e) {}
+  // piante: renderActivePlants è gestita da navigateTo, non richiamarla di nuovo qui
 }
 
 /* ── Tab Laboratorio ── */
@@ -1956,7 +1956,16 @@ function switchLabTab(tab) {
   if (tab === 'manuali') { manRenderNote(); loadManualiJSON(); }
 }
 
-function refreshAll() { if(document.getElementById('sec-ambiente')&&document.getElementById('sec-ambiente').classList.contains('active')) initAmbiente(); }
+function refreshAll() {
+  const sec = document.querySelector('.section.active');
+  const secId = sec ? sec.id.replace('sec-','') : '';
+  if (secId === 'ambiente') { initAmbiente(); return; }
+  if (secId === 'piante') {
+    // Render locale puro: ricalcola timeline e alert senza toccare JSON remoto
+    renderActivePlants();
+    return;
+  }
+}
 function showNotifPanel() { alert('🔔 Nessuna notifica in sospeso'); }
 
 /* ══════════════════════════════════════════════════════════════
@@ -3099,7 +3108,27 @@ const DEFAULT_PLANTS = [
 function loadActivePlants() {
   try {
     const saved = localStorage.getItem('bioserra_active_plants');
-    if (saved) return JSON.parse(saved);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      // Migrazione: se i dati sono stati generati dal vecchio codice con moltiplicatore,
+      // harvestMin delle autofiorenti sarebbe >> 75 (es. 60×3=180). Reset ai default.
+      const needsMigration = parsed.some(p =>
+        p.type === 'auto' && p.harvestMin > 100
+      );
+      if (needsMigration) {
+        console.log('[BioSerra] Migrazione dati piante: reset ai valori produttore corretti');
+        // Conserva solo le date di germinazione inserite dall'utente
+        const germMap = {};
+        parsed.forEach(p => { if (p.germDate) germMap[p.id] = p.germDate; });
+        const migrated = DEFAULT_PLANTS.map(dp => ({
+          ...dp,
+          germDate: germMap[dp.id] || dp.germDate
+        }));
+        localStorage.setItem('bioserra_active_plants', JSON.stringify(migrated));
+        return migrated;
+      }
+      return parsed;
+    }
   } catch(e) {}
   localStorage.setItem('bioserra_active_plants', JSON.stringify(DEFAULT_PLANTS));
   return DEFAULT_PLANTS;
@@ -4037,24 +4066,9 @@ async function loadPianteJSON() {
 }
 
 function renderAlertsOggi(alerts) {
-  // Alert da JSON piante_stato — merge con gli alert calcolati dalle timeline
-  // Gli alert calcolati (checkHarvestAlerts) hanno precedenza e sono già mostrati.
-  // Questo gestisce solo alert aggiuntivi dal file remoto.
-  const card = document.getElementById('alerts-oggi-card');
-  const list = document.getElementById('alerts-oggi-list');
-  if (!card || !list || !alerts || !alerts.length) return;
-  const iconMap = { RACCOLTA: '🌾', FIORITURA: '🌸', ESSICCAZIONE: '🍂' };
-  const cssMap  = { RACCOLTA: 'tipo-raccolta', FIORITURA: 'tipo-fioritura', ESSICCAZIONE: 'tipo-essiccazione' };
-  const extra = alerts.map(a => {
-    const tipo = (a.tipo || '').toUpperCase();
-    const icon = iconMap[tipo] || '🔔';
-    const cls  = cssMap[tipo] || 'tipo-raccolta';
-    return `<div class="aoc-item ${cls}"><div class="aoc-icon">${icon}</div><div class="aoc-body"><div class="aoc-pianta">${a.pianta || a.nome || ''}${a.id ? ' <small>ID:'+a.id+'</small>' : ''}</div><div class="aoc-msg">${a.msg || a.messaggio || ''}</div></div></div>`;
-  }).join('');
-  if (extra) {
-    list.innerHTML = list.innerHTML + extra;
-    card.style.display = 'block';
-  }
+  // NO-OP: la card alerts-oggi è gestita esclusivamente da checkHarvestAlerts()
+  // che lavora sulle timeline calcolate in locale. Non aggiungere nulla qui
+  // per evitare duplicati quando loadPianteJSON viene richiamata più volte.
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -4218,8 +4232,9 @@ function navigateTo(sectionId) {
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
   const sec = document.getElementById('sec-' + sectionId);
   if (sec) sec.classList.add('active');
+  // Piante: solo render locale, NON ricaricare il JSON remoto (evita alert duplicati)
+  if (sectionId === 'piante')   { renderActivePlants(); return; }
   if (sectionId === 'ai')       loadAIJSON();
-  if (sectionId === 'piante')   loadPianteJSON();
   if (sectionId === 'manuali')  loadManualiJSON();
   if (sectionId === 'ambiente') initAmbiente();
 }
@@ -4227,7 +4242,8 @@ function navigateTo(sectionId) {
 /* ── Carica i JSON delle sezioni attive all'avvio ── */
 function initJsonLoaders() {
   loadAIJSON();
-  loadPianteJSON();
+  // loadPianteJSON viene chiamata solo dal bottone "Aggiorna" nel panel JSON
+  // NON all'avvio: gli alert piante sono gestiti localmente da checkHarvestAlerts()
   loadManualiJSON();
 }
 
@@ -4571,7 +4587,8 @@ function cfgAggiornaTutto() {
   if (typeof updateMoon === 'function') updateMoon();
   if (typeof loadAIJSON === 'function') loadAIJSON();
   if (typeof loadLunaJSON === 'function') loadLunaJSON();
-  if (typeof loadPianteJSON === 'function') loadPianteJSON();
+  // loadPianteJSON NON viene chiamata qui: gli alert sono calcolati localmente
+  // e il pannello "Stato & Alert Piante" si ricarica solo col suo bottone dedicato
   if (typeof loadManualiJSON === 'function') loadManualiJSON();
   applyNotificheAtBoot();
   cfgToast('🔄 Tutto aggiornato');
@@ -5646,6 +5663,7 @@ if ('serviceWorker' in navigator) {
 </div>
 </body>
 </html>
+
 
 
 
