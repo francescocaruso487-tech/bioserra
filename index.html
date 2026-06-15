@@ -765,6 +765,12 @@
   /* 8 fasi tabella row clickable */
   #phasesTable tr { cursor:pointer; }
 
+
+/* ── Calendario sotto-tab ── */
+.cal-subtab{background:transparent;border:none;color:var(--text2);font-size:12px;font-weight:600;padding:6px 10px;border-radius:8px;cursor:pointer;white-space:nowrap;transition:background 0.2s,color 0.2s;}
+.cal-subtab.active{background:var(--green);color:#fff;}
+.cal-subpanel{display:none;}
+.cal-subpanel.active{display:block;}
 </style>
 </head>
 <body>
@@ -926,14 +932,13 @@
   </div>
 </div>
 
-<!-- AMBIENTE - sezione unificata Meteo+Luna+Bio -->
+<!-- AMBIENTE - sezione unificata Meteo+Calendario -->
 <section id="sec-ambiente" class="section">
 
-  <!-- TAB BAR AMBIENTE -->
+  <!-- TAB BAR AMBIENTE (2 tab principali) -->
   <div class="piante-tab-bar" id="amb-tab-bar" style="margin-bottom:16px;position:sticky;top:56px;z-index:50;background:var(--bg2);padding:4px;border-radius:12px;">
     <button class="piante-tab active" id="ambt-meteo" onclick="switchAmbTab('meteo')">⛅ Meteo</button>
-    <button class="piante-tab"       id="ambt-luna"  onclick="switchAmbTab('luna')">🌙 Luna</button>
-    <button class="piante-tab"       id="ambt-bio"   onclick="switchAmbTab('bio')">🌱 Bio</button>
+    <button class="piante-tab"       id="ambt-cal"   onclick="switchAmbTab('cal')">📅 Calendario</button>
   </div>
 
   <!-- ══════════ TAB METEO ══════════ -->
@@ -945,14 +950,10 @@
     <div id="weather-error" class="card" style="display:none;text-align:center;padding:24px 16px;">
       <div style="font-size:32px;margin-bottom:8px;">⚠️</div>
       <div style="color:var(--text2);font-size:14px;" id="weather-error-msg">Errore caricamento meteo</div>
-      <button onclick="loadWeather()" style="margin-top:12px;padding:8px 20px;background:var(--green);border:none;border-radius:8px;color:#fff;cursor:pointer;font-size:13px;">Riprova</button>
+      <button onclick="_doLoadWeather()" style="margin-top:12px;padding:8px 20px;background:var(--green);border:none;border-radius:8px;color:#fff;cursor:pointer;font-size:13px;">Riprova</button>
     </div>
     <div id="weather-content" style="display:none;">
-      <!-- Alert serra -->
-      <div id="w-serra-alert" style="display:none;border-radius:12px;padding:12px 14px;margin-bottom:12px;background:linear-gradient(135deg,rgba(239,83,80,0.15),rgba(229,57,53,0.08));border:1px solid rgba(239,83,80,0.4);color:#ef9a9a;font-size:13px;line-height:1.5;">
-        <span id="w-serra-alert-text"></span>
-      </div>
-      <!-- Card principale temperatura -->
+      <div id="w-serra-alert" style="display:none;border-radius:12px;padding:12px 14px;margin-bottom:12px;background:linear-gradient(135deg,rgba(239,83,80,0.15),rgba(229,57,53,0.08));border:1px solid rgba(239,83,80,0.4);color:#ef9a9a;font-size:13px;line-height:1.5;"><span id="w-serra-alert-text"></span></div>
       <div class="card" onclick="openAmbPopup('meteo-main')" style="cursor:pointer;">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
           <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;">📍 Caserta CE · Ora locale</div>
@@ -968,7 +969,6 @@
         </div>
         <div style="font-size:10px;color:var(--text3);text-align:right;margin-top:6px;">Tocca per dettagli →</div>
       </div>
-      <!-- Griglia dati cliccabili -->
       <div class="card" style="padding:12px;">
         <div class="card-title" style="margin-bottom:10px;">📊 Dati Ambientali</div>
         <div class="weather-grid" id="w-grid-clic">
@@ -980,33 +980,30 @@
           <div class="weather-item" onclick="openAmbPopup('meteo-eto')" style="cursor:pointer;"><div class="weather-item-icon">💦</div><div><div class="weather-item-val" id="w-et">—</div><div class="weather-item-label">ETo mm/gg</div></div></div>
         </div>
         <div style="display:flex;gap:10px;margin-top:10px;">
-          <div style="flex:1;background:var(--card2);border-radius:8px;padding:8px 10px;display:flex;align-items:center;gap:8px;">
+          <div onclick="openAmbPopup('meteo-fotoperiodo')" style="flex:1;background:var(--card2);border-radius:8px;padding:8px 10px;display:flex;align-items:center;gap:8px;cursor:pointer;">
             <span style="font-size:18px;">🌅</span>
             <div><div style="font-size:14px;font-weight:600;" id="w-sunrise">—</div><div style="font-size:11px;color:var(--text3);">Alba</div></div>
           </div>
-          <div style="flex:1;background:var(--card2);border-radius:8px;padding:8px 10px;display:flex;align-items:center;gap:8px;">
+          <div onclick="openAmbPopup('meteo-fotoperiodo')" style="flex:1;background:var(--card2);border-radius:8px;padding:8px 10px;display:flex;align-items:center;gap:8px;cursor:pointer;">
             <span style="font-size:18px;">🌇</span>
             <div><div style="font-size:14px;font-weight:600;" id="w-sunset">—</div><div style="font-size:11px;color:var(--text3);">Tramonto</div></div>
           </div>
-          <div style="flex:1;background:var(--card2);border-radius:8px;padding:8px 10px;display:flex;align-items:center;gap:8px;">
+          <div onclick="openAmbPopup('meteo-fotoperiodo')" style="flex:1;background:var(--card2);border-radius:8px;padding:8px 10px;display:flex;align-items:center;gap:8px;cursor:pointer;">
             <span style="font-size:18px;">⏱️</span>
             <div><div style="font-size:14px;font-weight:600;" id="w-daylen">—h</div><div style="font-size:11px;color:var(--text3);">Fotoperiodo</div></div>
           </div>
         </div>
       </div>
-      <!-- Card IMPATTO SERRA cliccabile -->
       <div id="w-irrig-card" class="card" onclick="openAmbPopup('meteo-impatto')" style="cursor:pointer;background:linear-gradient(135deg,rgba(66,165,200,0.08),rgba(30,122,168,0.05));border-color:rgba(66,165,200,0.25);">
         <div class="card-title" style="color:var(--blue);">🏡 Impatto Serra</div>
         <div style="font-size:14px;font-weight:600;margin-bottom:4px;" id="w-irrig-main">Calcolo…</div>
         <div style="font-size:13px;color:var(--text2);line-height:1.5;" id="w-irrig-detail"></div>
         <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per azioni dettagliate →</div>
       </div>
-      <!-- Previsioni 7 giorni cliccabili -->
       <div class="card">
         <div class="card-title">📡 Previsioni 7 giorni</div>
         <div id="w-forecast"></div>
       </div>
-      <!-- Sensori interni placeholder -->
       <div class="card">
         <div class="card-title">🌡️ Sensori Interni Serra</div>
         <div class="empty-state" style="padding:16px 0;">
@@ -1018,201 +1015,359 @@
     </div>
   </div>
 
-  <!-- ══════════ TAB LUNA ══════════ -->
-  <div class="piante-panel" id="amb-panel-luna">
-    <!-- Hero fase lunare -->
-    <div class="card" onclick="openAmbPopup('luna-fase')" style="cursor:pointer;background:linear-gradient(135deg,rgba(58,159,216,0.12),rgba(30,74,108,0.08));">
-      <div style="display:flex;align-items:center;gap:16px;padding:8px 0 16px;">
-        <div style="font-size:72px;line-height:1;flex-shrink:0;filter:drop-shadow(0 0 12px rgba(58,159,216,0.5));" id="moonSymbol">🌕</div>
-        <div style="flex:1;">
-          <div style="font-size:20px;font-weight:700;margin-bottom:4px;" id="moonPhaseName">Calcolo…</div>
-          <div style="font-size:13px;color:var(--text2);margin-bottom:8px;"><strong id="moonIllumPct">—%</strong> illuminazione · <span id="moonAge" style="color:#f0843c;font-weight:600;">— gg</span></div>
-          <div style="height:8px;background:rgba(255,255,255,0.1);border-radius:4px;overflow:hidden;">
-            <div id="moonProgressBar" style="height:100%;background:linear-gradient(90deg,#3a9fd8,#4aaf5e);border-radius:4px;width:0%;transition:width 0.6s;"></div>
-          </div>
-          <div style="font-size:11px;color:var(--text3);margin-top:4px;"><span id="moonDateToday"></span></div>
-        </div>
-      </div>
-      <div style="font-size:10px;color:var(--text3);text-align:right;">Tocca per calendario completo →</div>
-    </div>
-    <!-- Countdown luna piena/nuova cliccabili -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;">
-      <div class="card" onclick="openAmbPopup('luna-piena')" style="text-align:center;padding:14px;cursor:pointer;">
-        <div style="font-size:28px;font-weight:800;color:#f0843c;" id="daysToFull">—</div>
-        <div style="font-size:12px;color:var(--text2);margin:2px 0;">🌕 Luna Piena</div>
-        <div style="font-size:11px;color:var(--text3);" id="dateFullMoon">—</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:4px;">→ calendario</div>
-      </div>
-      <div class="card" onclick="openAmbPopup('luna-nuova')" style="text-align:center;padding:14px;cursor:pointer;">
-        <div style="font-size:28px;font-weight:800;color:#3a9fd8;" id="daysToNew">—</div>
-        <div style="font-size:12px;color:var(--text2);margin:2px 0;">🌑 Luna Nuova</div>
-        <div style="font-size:11px;color:var(--text3);" id="dateNewMoon">—</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:4px;">→ calendario</div>
-      </div>
-    </div>
-    <!-- Card CONSIGLI LUNARI da JSON — 6 sezioni cliccabili -->
-    <div class="card" style="background:linear-gradient(135deg,rgba(74,175,94,0.08),rgba(58,159,216,0.06));border-color:rgba(74,175,94,0.2);">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
-        <div class="card-title">🌾 Consigli Lunari</div>
-        <button class="json-reload-btn" onclick="loadLunaJSON();event.stopPropagation();">🔄</button>
-      </div>
-      <div id="luna-consigli-6sezioni">
-        <!-- 6 sezioni: ATTIVITA, IRRIGAZIONE, NUTRIZIONE, ELETTROCULTURA, AVVISO, PREVISIONE -->
-        <div class="amb-sezione-card" onclick="openAmbPopup('luna-attivita')" style="cursor:pointer;">
-          <div class="amb-sezione-icon">📋</div>
-          <div class="amb-sezione-body">
-            <div class="amb-sezione-title">ATTIVITÀ DI OGGI</div>
-            <div class="amb-sezione-val" id="lc-attivita">Calcolo…</div>
-          </div>
-          <div class="amb-arrow">›</div>
-        </div>
-        <div class="amb-sezione-card" onclick="openAmbPopup('luna-irrigazione')" style="cursor:pointer;">
-          <div class="amb-sezione-icon">💧</div>
-          <div class="amb-sezione-body">
-            <div class="amb-sezione-title">IRRIGAZIONE</div>
-            <div class="amb-sezione-val" id="lc-irrigazione">—</div>
-          </div>
-          <div class="amb-arrow">›</div>
-        </div>
-        <div class="amb-sezione-card" onclick="openAmbPopup('luna-nutrizione')" style="cursor:pointer;">
-          <div class="amb-sezione-icon">🧪</div>
-          <div class="amb-sezione-body">
-            <div class="amb-sezione-title">NUTRIZIONE</div>
-            <div class="amb-sezione-val" id="lc-nutrizione">—</div>
-          </div>
-          <div class="amb-arrow">›</div>
-        </div>
-        <div class="amb-sezione-card" onclick="openAmbPopup('luna-elettro')" style="cursor:pointer;">
-          <div class="amb-sezione-icon">⚡</div>
-          <div class="amb-sezione-body">
-            <div class="amb-sezione-title">ELETTROCULTURA</div>
-            <div class="amb-sezione-val" id="lc-elettro">—</div>
-          </div>
-          <div class="amb-arrow">›</div>
-        </div>
-        <div class="amb-sezione-card" onclick="openAmbPopup('luna-avviso')" style="cursor:pointer;border-color:rgba(255,152,0,0.3);">
-          <div class="amb-sezione-icon">⚠️</div>
-          <div class="amb-sezione-body">
-            <div class="amb-sezione-title" style="color:var(--orange);">AVVISO</div>
-            <div class="amb-sezione-val" id="lc-avviso">—</div>
-          </div>
-          <div class="amb-arrow">›</div>
-        </div>
-        <div class="amb-sezione-card" onclick="openAmbPopup('luna-previsione')" style="cursor:pointer;">
-          <div class="amb-sezione-icon">🔭</div>
-          <div class="amb-sezione-body">
-            <div class="amb-sezione-title">PREVISIONE</div>
-            <div class="amb-sezione-val" id="lc-previsione">—</div>
-          </div>
-          <div class="amb-arrow">›</div>
-        </div>
-      </div>
-      <div style="font-size:11px;color:var(--text3);margin-top:8px;" id="luna-json-meta">—</div>
-      <div id="luna-json-content" style="display:none;"></div>
-    </div>
-    <!-- Striscia 7 giorni cliccabile -->
-    <div class="card">
-      <div class="card-title">Prossimi 7 giorni</div>
-      <div id="moonStrip" style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;"></div>
-    </div>
-    <!-- Tabella 8 fasi cliccabile -->
-    <div class="card">
-      <div class="card-title">Le 8 fasi lunari</div>
-      <table style="width:100%;border-collapse:collapse;font-size:13px;" id="phasesTable"><tbody></tbody></table>
-    </div>
-    <!-- Correlazione luna-piante -->
-    <div class="card" onclick="openAmbPopup('luna-piante')" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.08),rgba(74,175,94,0.05));">
-      <div class="card-title" style="color:var(--purple);">🌱 Correlazione Luna-Piante</div>
-      <div style="font-size:13px;color:var(--text2);line-height:1.5;" id="luna-piante-preview">Analisi per ogni pianta in base alla fase lunare attuale…</div>
-      <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per analisi completa →</div>
-    </div>
-    <!-- Ciclo corrente -->
-    <div class="card">
-      <div class="card-title">Ciclo corrente</div>
-      <div id="moonCycleInfo" style="font-size:13px;color:var(--text2);line-height:1.8;"></div>
-    </div>
-  </div>
+  <!-- ══════════ TAB CALENDARIO UNIFICATO ══════════ -->
+  <div class="piante-panel" id="amb-panel-cal">
 
-  <!-- ══════════ TAB BIO ══════════ -->
-  <div class="piante-panel" id="amb-panel-bio">
-    <!-- Banner oggi cliccabile -->
-    <div id="bio-today-banner" class="bio-today-banner bio-banner-frutto" onclick="openAmbPopup('bio-oggi')" style="cursor:pointer;">
-      <div class="bio-today-icon" id="bio-today-icon">🍊</div>
-      <div>
-        <div class="bio-today-type" id="bio-today-type">Giorno Frutto</div>
-        <div class="bio-today-date" id="bio-today-date">—</div>
-        <div class="bio-today-advice" id="bio-today-advice">—</div>
+    <!-- SOTTO-TAB BAR CALENDARIO (scrollabile) -->
+    <div style="overflow-x:auto;margin-bottom:14px;-webkit-overflow-scrolling:touch;scrollbar-width:none;">
+      <div style="display:flex;gap:6px;min-width:max-content;background:var(--bg3);padding:4px;border-radius:10px;">
+        <button class="cal-subtab active" id="csub-oggi"   onclick="switchCalSub('oggi')">🔗 Oggi</button>
+        <button class="cal-subtab"        id="csub-lunare" onclick="switchCalSub('lunare')">🌙 Lunare</button>
+        <button class="cal-subtab"        id="csub-bio"    onclick="switchCalSub('bio')">🌱 Bio</button>
+        <button class="cal-subtab"        id="csub-semine" onclick="switchCalSub('semine')">🌾 Semine</button>
+        <button class="cal-subtab"        id="csub-tratt"  onclick="switchCalSub('tratt')">🧪 Trattamenti</button>
+        <button class="cal-subtab"        id="csub-foto"   onclick="switchCalSub('foto')">☀️ Fotoperiodo</button>
+        <button class="cal-subtab"        id="csub-fenol"  onclick="switchCalSub('fenol')">🌸 Fenologico</button>
       </div>
     </div>
-    <!-- Card PROSSIMI 3 GIORNI cliccabili -->
-    <div class="card">
-      <div class="card-title">📅 Prossimi 3 giorni</div>
-      <div id="bio-3giorni" style="display:flex;flex-direction:column;gap:8px;"></div>
+
+    <!-- ─── PANNELLO: OGGI ─── -->
+    <div class="cal-subpanel active" id="csp-oggi">
+      <div class="card" onclick="openAmbPopup('oggi-full')" style="cursor:pointer;background:linear-gradient(135deg,rgba(74,175,94,0.1),rgba(58,159,216,0.07));border-color:rgba(74,175,94,0.25);">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+          <div style="font-size:15px;font-weight:700;color:var(--green3);" id="oggi-data-title">Oggi</div>
+          <div style="font-size:11px;color:var(--text3);" id="oggi-ora-update">—</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;">
+          <div style="background:rgba(58,159,216,0.1);border-radius:10px;padding:10px;text-align:center;" onclick="openAmbPopup('oggi-luna');event.stopPropagation();">
+            <div style="font-size:28px;" id="oggi-moon-emoji">🌕</div>
+            <div style="font-size:12px;font-weight:600;margin-top:4px;" id="oggi-moon-phase">—</div>
+            <div style="font-size:10px;color:var(--text3);" id="oggi-moon-illum">—% illum.</div>
+          </div>
+          <div id="oggi-bio-block" style="border-radius:10px;padding:10px;text-align:center;" onclick="openAmbPopup('oggi-bio');event.stopPropagation();">
+            <div style="font-size:28px;" id="oggi-bio-icon">🍊</div>
+            <div style="font-size:12px;font-weight:600;margin-top:4px;" id="oggi-bio-type">—</div>
+            <div style="font-size:10px;color:var(--text3);" id="oggi-bio-const">—</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;">
+          <div style="background:rgba(255,193,7,0.08);border-radius:10px;padding:10px;text-align:center;" onclick="openAmbPopup('oggi-foto');event.stopPropagation();">
+            <div style="font-size:22px;">☀️</div>
+            <div style="font-size:14px;font-weight:700;color:#ffd54f;" id="oggi-foto-ore">—h</div>
+            <div style="font-size:10px;color:var(--text3);">Ore luce oggi</div>
+          </div>
+          <div style="background:rgba(100,181,246,0.08);border-radius:10px;padding:10px;text-align:center;" onclick="openAmbPopup('oggi-meteo');event.stopPropagation();">
+            <div style="font-size:22px;" id="oggi-meteo-icon">☀️</div>
+            <div style="font-size:14px;font-weight:700;" id="oggi-meteo-temp">—°</div>
+            <div style="font-size:10px;color:var(--text3);" id="oggi-meteo-desc">—</div>
+          </div>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border-radius:8px;padding:10px;">
+          <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;margin-bottom:6px;">🤖 Consiglio AI Integrato</div>
+          <div style="font-size:13px;color:var(--text2);line-height:1.6;" id="oggi-ai-consiglio">Calcolo in corso…</div>
+        </div>
+        <div style="margin-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <div style="background:rgba(74,175,94,0.08);border-radius:8px;padding:8px;" onclick="openAmbPopup('oggi-semine');event.stopPropagation();">
+            <div style="font-size:11px;font-weight:700;color:var(--green3);margin-bottom:4px;">🌱 SEMINE</div>
+            <div style="font-size:12px;color:var(--text2);" id="oggi-consiglio-semine">—</div>
+          </div>
+          <div style="background:rgba(171,71,188,0.08);border-radius:8px;padding:8px;" onclick="openAmbPopup('oggi-trattamenti');event.stopPropagation();">
+            <div style="font-size:11px;font-weight:700;color:var(--purple);margin-bottom:4px;">🧪 TRATTAMENTI</div>
+            <div style="font-size:12px;color:var(--text2);" id="oggi-consiglio-tratt">—</div>
+          </div>
+        </div>
+        <div style="margin-top:8px;background:rgba(255,152,0,0.08);border-radius:8px;padding:8px;" onclick="openAmbPopup('oggi-fenol');event.stopPropagation();">
+          <div style="font-size:11px;font-weight:700;color:var(--orange);margin-bottom:4px;">🌸 FASE FENOLOGICA</div>
+          <div style="font-size:12px;color:var(--text2);" id="oggi-fase-fenol">—</div>
+        </div>
+        <div style="font-size:10px;color:var(--text3);text-align:right;margin-top:8px;">Tocca per dettaglio completo →</div>
+      </div>
     </div>
-    <!-- Costellazione attuale -->
-    <div class="card" style="margin-bottom:12px">
-      <div class="card-title">♐ Costellazione lunare attuale</div>
-      <div class="bio-constellation-card" style="background:transparent;border:none;padding:0">
-        <div class="bio-const-row">
-          <div class="bio-const-icon" id="bio-const-icon">♐</div>
+
+    <!-- ─── PANNELLO: LUNARE ─── -->
+    <div class="cal-subpanel" id="csp-lunare">
+      <div class="card" onclick="openAmbPopup('luna-fase')" style="cursor:pointer;background:linear-gradient(135deg,rgba(58,159,216,0.12),rgba(30,74,108,0.08));">
+        <div style="display:flex;align-items:center;gap:16px;padding:8px 0 16px;">
+          <div style="font-size:72px;line-height:1;flex-shrink:0;filter:drop-shadow(0 0 12px rgba(58,159,216,0.5));" id="moonSymbol">🌕</div>
+          <div style="flex:1;">
+            <div style="font-size:20px;font-weight:700;margin-bottom:4px;" id="moonPhaseName">Calcolo…</div>
+            <div style="font-size:13px;color:var(--text2);margin-bottom:8px;"><strong id="moonIllumPct">—%</strong> illuminazione · <span id="moonAge" style="color:#f0843c;font-weight:600;">— gg</span></div>
+            <div style="height:8px;background:rgba(255,255,255,0.1);border-radius:4px;overflow:hidden;">
+              <div id="moonProgressBar" style="height:100%;background:linear-gradient(90deg,#3a9fd8,#4aaf5e);border-radius:4px;width:0%;transition:width 0.6s;"></div>
+            </div>
+            <div style="font-size:11px;color:var(--text3);margin-top:4px;"><span id="moonDateToday"></span></div>
+          </div>
+        </div>
+        <div style="font-size:10px;color:var(--text3);text-align:right;">Tocca per calendario completo →</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;">
+        <div class="card" onclick="openAmbPopup('luna-piena')" style="text-align:center;padding:14px;cursor:pointer;">
+          <div style="font-size:28px;font-weight:800;color:#f0843c;" id="daysToFull">—</div>
+          <div style="font-size:12px;color:var(--text2);margin:2px 0;">🌕 Luna Piena</div>
+          <div style="font-size:11px;color:var(--text3);" id="dateFullMoon">—</div>
+          <div style="font-size:10px;color:var(--text3);margin-top:4px;">→ calendario</div>
+        </div>
+        <div class="card" onclick="openAmbPopup('luna-nuova')" style="text-align:center;padding:14px;cursor:pointer;">
+          <div style="font-size:28px;font-weight:800;color:#3a9fd8;" id="daysToNew">—</div>
+          <div style="font-size:12px;color:var(--text2);margin:2px 0;">🌑 Luna Nuova</div>
+          <div style="font-size:11px;color:var(--text3);" id="dateNewMoon">—</div>
+          <div style="font-size:10px;color:var(--text3);margin-top:4px;">→ calendario</div>
+        </div>
+      </div>
+      <div class="card" style="background:linear-gradient(135deg,rgba(74,175,94,0.08),rgba(58,159,216,0.06));border-color:rgba(74,175,94,0.2);">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+          <div class="card-title">🌾 Consigli Lunari</div>
+          <button class="json-reload-btn" onclick="loadLunaJSON();event.stopPropagation();">🔄</button>
+        </div>
+        <div id="luna-consigli-6sezioni">
+          <div class="amb-sezione-card" onclick="openAmbPopup('luna-attivita')" style="cursor:pointer;">
+            <div class="amb-sezione-icon">📋</div><div class="amb-sezione-body"><div class="amb-sezione-title">ATTIVITÀ DI OGGI</div><div class="amb-sezione-val" id="lc-attivita">Calcolo…</div></div><div class="amb-arrow">›</div>
+          </div>
+          <div class="amb-sezione-card" onclick="openAmbPopup('luna-irrigazione')" style="cursor:pointer;">
+            <div class="amb-sezione-icon">💧</div><div class="amb-sezione-body"><div class="amb-sezione-title">IRRIGAZIONE</div><div class="amb-sezione-val" id="lc-irrigazione">—</div></div><div class="amb-arrow">›</div>
+          </div>
+          <div class="amb-sezione-card" onclick="openAmbPopup('luna-nutrizione')" style="cursor:pointer;">
+            <div class="amb-sezione-icon">🧪</div><div class="amb-sezione-body"><div class="amb-sezione-title">NUTRIZIONE</div><div class="amb-sezione-val" id="lc-nutrizione">—</div></div><div class="amb-arrow">›</div>
+          </div>
+          <div class="amb-sezione-card" onclick="openAmbPopup('luna-elettro')" style="cursor:pointer;">
+            <div class="amb-sezione-icon">⚡</div><div class="amb-sezione-body"><div class="amb-sezione-title">ELETTROCULTURA</div><div class="amb-sezione-val" id="lc-elettro">—</div></div><div class="amb-arrow">›</div>
+          </div>
+          <div class="amb-sezione-card" onclick="openAmbPopup('luna-avviso')" style="cursor:pointer;border-color:rgba(255,152,0,0.3);">
+            <div class="amb-sezione-icon">⚠️</div><div class="amb-sezione-body"><div class="amb-sezione-title" style="color:var(--orange);">AVVISO</div><div class="amb-sezione-val" id="lc-avviso">—</div></div><div class="amb-arrow">›</div>
+          </div>
+          <div class="amb-sezione-card" onclick="openAmbPopup('luna-previsione')" style="cursor:pointer;">
+            <div class="amb-sezione-icon">🔭</div><div class="amb-sezione-body"><div class="amb-sezione-title">PREVISIONE</div><div class="amb-sezione-val" id="lc-previsione">—</div></div><div class="amb-arrow">›</div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:var(--text3);margin-top:8px;" id="luna-json-meta">—</div>
+        <div id="luna-json-content" style="display:none;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Prossimi 7 giorni</div>
+        <div id="moonStrip" style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Le 8 fasi lunari</div>
+        <table style="width:100%;border-collapse:collapse;font-size:13px;" id="phasesTable"><tbody></tbody></table>
+      </div>
+      <div class="card" onclick="openAmbPopup('luna-piante')" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.08),rgba(74,175,94,0.05));">
+        <div class="card-title" style="color:var(--purple);">🌱 Correlazione Luna-Piante</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.5;" id="luna-piante-preview">Analisi per ogni pianta in base alla fase lunare attuale…</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per analisi completa →</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Ciclo corrente</div>
+        <div id="moonCycleInfo" style="font-size:13px;color:var(--text2);line-height:1.8;"></div>
+      </div>
+    </div>
+
+    <!-- ─── PANNELLO: BIODINAMICO ─── -->
+    <div class="cal-subpanel" id="csp-bio">
+      <div id="bio-today-banner" class="bio-today-banner bio-banner-frutto" onclick="openAmbPopup('bio-oggi')" style="cursor:pointer;">
+        <div class="bio-today-icon" id="bio-today-icon">🍊</div>
+        <div>
+          <div class="bio-today-type" id="bio-today-type">Giorno Frutto</div>
+          <div class="bio-today-date" id="bio-today-date">—</div>
+          <div class="bio-today-advice" id="bio-today-advice">—</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">📅 Prossimi 3 giorni</div>
+        <div id="bio-3giorni" style="display:flex;flex-direction:column;gap:8px;"></div>
+      </div>
+      <div class="card" style="margin-bottom:12px">
+        <div class="card-title">♐ Costellazione lunare attuale</div>
+        <div class="bio-constellation-card" style="background:transparent;border:none;padding:0">
+          <div class="bio-const-row">
+            <div class="bio-const-icon" id="bio-const-icon">♐</div>
+            <div><div class="bio-const-name" id="bio-const-name">—</div><div class="bio-const-element" id="bio-const-element">—</div></div>
+          </div>
+        </div>
+        <div style="margin-top:10px;padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:6px;border-left:3px solid rgba(76,175,118,0.4);">
+          <div style="font-size:11px;color:var(--text3);line-height:1.5;">⚙️ <strong>Algoritmo:</strong> Posizione Luna calcolata con formule di Jean Meeus. Costellazioni tradizione Thun/Steiner.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bio-cal-header">
+          <div class="bio-cal-title" id="bio-cal-month">—</div>
+          <div class="bio-cal-nav">
+            <button class="bio-nav-btn" onclick="bioChangeMonth(-1)">‹</button>
+            <button class="bio-nav-btn" onclick="bioChangeMonth(0)" title="Oggi">●</button>
+            <button class="bio-nav-btn" onclick="bioChangeMonth(1)">›</button>
+          </div>
+        </div>
+        <div class="bio-grid-header">
+          <div class="bio-grid-header-cell">L</div><div class="bio-grid-header-cell">M</div>
+          <div class="bio-grid-header-cell">M</div><div class="bio-grid-header-cell">G</div>
+          <div class="bio-grid-header-cell">V</div><div class="bio-grid-header-cell">S</div>
+          <div class="bio-grid-header-cell">D</div>
+        </div>
+        <div class="bio-grid" id="bio-grid"></div>
+        <div class="bio-legend">
+          <div class="bio-legend-item"><div class="bio-legend-dot dot-frutto"></div>Frutto 🍊</div>
+          <div class="bio-legend-item"><div class="bio-legend-dot dot-fiore"></div>Fiore 🌸</div>
+          <div class="bio-legend-item"><div class="bio-legend-dot dot-radice"></div>Radice 🌿</div>
+          <div class="bio-legend-item"><div class="bio-legend-dot dot-foglia"></div>Foglia 💧</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">🌿 Consigli per la tua serra oggi</div>
+        <div class="bio-tip-list" id="bio-tip-list"><div class="bio-tip-item tip-frutto">⏳ Calcolo in corso…</div></div>
+      </div>
+      <div class="card" onclick="openAmbPopup('bio-elettro')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,152,0,0.08),rgba(74,175,94,0.05));">
+        <div class="card-title" style="color:var(--orange);">⚡ Correlazione Bio-Elettrocultura</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.5;" id="bio-elettro-preview">Interazioni tra giorno biodinamico e tecniche attive…</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per analisi completa →</div>
+      </div>
+      <div class="bio-detail-popup hidden" id="bio-popup" onclick="closeBioPopup(event)">
+        <div class="bio-detail-sheet">
+          <div class="bio-detail-handle"></div>
+          <button class="bio-detail-close" onclick="closeBioPopupDirect()">✕</button>
+          <div id="bio-popup-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── PANNELLO: SEMINE E TRAPIANTI ─── -->
+    <div class="cal-subpanel" id="csp-semine">
+      <div class="card" onclick="openAmbPopup('semine-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(74,175,94,0.1),rgba(76,175,80,0.06));">
+        <div class="card-title" style="color:var(--green3);">🌱 Semine & Trapianti — Oggi</div>
+        <div style="display:flex;align-items:center;gap:12px;margin:8px 0;">
+          <div style="font-size:44px;" id="semine-oggi-emoji">🌱</div>
           <div>
-            <div class="bio-const-name" id="bio-const-name">—</div>
-            <div class="bio-const-element" id="bio-const-element">—</div>
+            <div style="font-size:16px;font-weight:700;" id="semine-oggi-label">Calcolo…</div>
+            <div style="font-size:12px;color:var(--text2);margin-top:4px;" id="semine-oggi-motivo">—</div>
           </div>
         </div>
+        <div style="font-size:10px;color:var(--text3);">Tocca per dettaglio varietà →</div>
       </div>
-      <div style="margin-top:10px;padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:6px;border-left:3px solid rgba(76,175,118,0.4);">
-        <div style="font-size:11px;color:var(--text3);line-height:1.5;">⚙️ <strong>Algoritmo:</strong> Posizione Luna calcolata con formule di Jean Meeus. Costellazioni tradizione Thun/Steiner.</div>
-      </div>
-    </div>
-    <!-- Calendario mensile -->
-    <div class="card">
-      <div class="bio-cal-header">
-        <div class="bio-cal-title" id="bio-cal-month">—</div>
-        <div class="bio-cal-nav">
-          <button class="bio-nav-btn" onclick="bioChangeMonth(-1)">‹</button>
-          <button class="bio-nav-btn" onclick="bioChangeMonth(0)" title="Oggi">●</button>
-          <button class="bio-nav-btn" onclick="bioChangeMonth(1)">›</button>
+      <div class="card">
+        <div class="bio-cal-header">
+          <div class="bio-cal-title" id="semine-cal-month">—</div>
+          <div class="bio-cal-nav">
+            <button class="bio-nav-btn" onclick="semineChangeMonth(-1)">‹</button>
+            <button class="bio-nav-btn" onclick="semineChangeMonth(0)">●</button>
+            <button class="bio-nav-btn" onclick="semineChangeMonth(1)">›</button>
+          </div>
+        </div>
+        <div class="bio-grid-header">
+          <div class="bio-grid-header-cell">L</div><div class="bio-grid-header-cell">M</div>
+          <div class="bio-grid-header-cell">M</div><div class="bio-grid-header-cell">G</div>
+          <div class="bio-grid-header-cell">V</div><div class="bio-grid-header-cell">S</div>
+          <div class="bio-grid-header-cell">D</div>
+        </div>
+        <div class="bio-grid" id="semine-grid"></div>
+        <div class="bio-legend">
+          <div class="bio-legend-item"><div class="bio-legend-dot" style="background:#4caf76;"></div>Favorevole</div>
+          <div class="bio-legend-item"><div class="bio-legend-dot" style="background:#ff7043;"></div>Sfavorevole</div>
+          <div class="bio-legend-item"><div class="bio-legend-dot" style="background:#78909c;"></div>Neutro</div>
         </div>
       </div>
-      <div class="bio-grid-header">
-        <div class="bio-grid-header-cell">L</div><div class="bio-grid-header-cell">M</div>
-        <div class="bio-grid-header-cell">M</div><div class="bio-grid-header-cell">G</div>
-        <div class="bio-grid-header-cell">V</div><div class="bio-grid-header-cell">S</div>
-        <div class="bio-grid-header-cell">D</div>
-      </div>
-      <div class="bio-grid" id="bio-grid"></div>
-      <div class="bio-legend">
-        <div class="bio-legend-item"><div class="bio-legend-dot dot-frutto"></div>Frutto 🍊</div>
-        <div class="bio-legend-item"><div class="bio-legend-dot dot-fiore"></div>Fiore 🌸</div>
-        <div class="bio-legend-item"><div class="bio-legend-dot dot-radice"></div>Radice 🌿</div>
-        <div class="bio-legend-item"><div class="bio-legend-dot dot-foglia"></div>Foglia 💧</div>
+      <div class="card">
+        <div class="card-title">🌿 Indicazioni per le 10 Varietà</div>
+        <div id="semine-piante-list" style="display:flex;flex-direction:column;gap:6px;"></div>
       </div>
     </div>
-    <!-- Consigli serra -->
-    <div class="card">
-      <div class="card-title">🌿 Consigli per la tua serra oggi</div>
-      <div class="bio-tip-list" id="bio-tip-list">
-        <div class="bio-tip-item tip-frutto">⏳ Calcolo in corso…</div>
-      </div>
-    </div>
-    <!-- Correlazione Bio-Elettrocultura cliccabile -->
-    <div class="card" onclick="openAmbPopup('bio-elettro')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,152,0,0.08),rgba(74,175,94,0.05));">
-      <div class="card-title" style="color:var(--orange);">⚡ Correlazione Bio-Elettrocultura</div>
-      <div style="font-size:13px;color:var(--text2);line-height:1.5;" id="bio-elettro-preview">Interazioni tra giorno biodinamico e tecniche attive…</div>
-      <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per analisi completa →</div>
-    </div>
-    <!-- Popup dettaglio giorno bio (mantenuto funzionante) -->
-    <div class="bio-detail-popup hidden" id="bio-popup" onclick="closeBioPopup(event)">
-      <div class="bio-detail-sheet">
-        <div class="bio-detail-handle"></div>
-        <button class="bio-detail-close" onclick="closeBioPopupDirect()">✕</button>
-        <div id="bio-popup-content"></div>
-      </div>
-    </div>
-  </div>
 
-  <!-- ══════════ TAB AI SERRA ══════════ -->
+    <!-- ─── PANNELLO: TRATTAMENTI ─── -->
+    <div class="cal-subpanel" id="csp-tratt">
+      <div class="card" onclick="openAmbPopup('tratt-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.1),rgba(156,39,176,0.06));">
+        <div class="card-title" style="color:var(--purple);">🧪 Trattamento Ottimale — Oggi</div>
+        <div style="margin:8px 0;">
+          <div style="font-size:14px;font-weight:600;" id="tratt-oggi-label">Calcolo…</div>
+          <div style="font-size:12px;color:var(--text2);margin-top:4px;" id="tratt-oggi-desc">—</div>
+        </div>
+        <div style="font-size:10px;color:var(--text3);">Tocca per ricetta completa →</div>
+      </div>
+      <div class="card">
+        <div class="bio-cal-header">
+          <div class="bio-cal-title" id="tratt-cal-month">—</div>
+          <div class="bio-cal-nav">
+            <button class="bio-nav-btn" onclick="trattChangeMonth(-1)">‹</button>
+            <button class="bio-nav-btn" onclick="trattChangeMonth(0)">●</button>
+            <button class="bio-nav-btn" onclick="trattChangeMonth(1)">›</button>
+          </div>
+        </div>
+        <div class="bio-grid-header">
+          <div class="bio-grid-header-cell">L</div><div class="bio-grid-header-cell">M</div>
+          <div class="bio-grid-header-cell">M</div><div class="bio-grid-header-cell">G</div>
+          <div class="bio-grid-header-cell">V</div><div class="bio-grid-header-cell">S</div>
+          <div class="bio-grid-header-cell">D</div>
+        </div>
+        <div class="bio-grid" id="tratt-grid"></div>
+        <div class="bio-legend">
+          <div class="bio-legend-item"><div class="bio-legend-dot" style="background:#ce93d8;"></div>Biologici</div>
+          <div class="bio-legend-item"><div class="bio-legend-dot" style="background:#4db6ac;"></div>Preventivi</div>
+          <div class="bio-legend-item"><div class="bio-legend-dot" style="background:#ff8a65;"></div>Evitare</div>
+        </div>
+      </div>
+      <div id="tratt-schede" style="display:flex;flex-direction:column;gap:10px;"></div>
+    </div>
+
+    <!-- ─── PANNELLO: FOTOPERIODO ─── -->
+    <div class="cal-subpanel" id="csp-foto">
+      <div class="card" onclick="openAmbPopup('foto-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,193,7,0.1),rgba(255,152,0,0.06));">
+        <div class="card-title" style="color:#ffd54f;">☀️ Fotoperiodo Oggi — Caserta</div>
+        <div style="display:flex;align-items:center;gap:16px;margin:8px 0;">
+          <div style="font-size:48px;">☀️</div>
+          <div>
+            <div style="font-size:24px;font-weight:800;color:#ffd54f;" id="foto-ore-oggi">—h</div>
+            <div style="font-size:12px;color:var(--text2);" id="foto-alba-tramonto">Alba — · Tramonto —</div>
+            <div style="font-size:11px;color:var(--text3);margin-top:2px;" id="foto-vs-ieri">— vs ieri</div>
+          </div>
+        </div>
+        <div style="font-size:10px;color:var(--text3);">Tocca per impatto su piante →</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;">
+        <div class="card" onclick="openAmbPopup('foto-autofiorenti')" style="cursor:pointer;background:rgba(74,175,94,0.08);">
+          <div style="font-size:12px;font-weight:700;color:var(--green3);margin-bottom:6px;">🌿 AUTOFIORENTI</div>
+          <div style="font-size:11px;color:var(--text2);line-height:1.5;" id="foto-auto-impact">Calcolo…</div>
+          <div style="font-size:10px;color:var(--text3);margin-top:4px;">→ dettaglio</div>
+        </div>
+        <div class="card" onclick="openAmbPopup('foto-femminizzate')" style="cursor:pointer;background:rgba(171,71,188,0.08);">
+          <div style="font-size:12px;font-weight:700;color:var(--purple);margin-bottom:6px;">🌸 FEMMINIZZATE</div>
+          <div style="font-size:11px;color:var(--text2);line-height:1.5;" id="foto-femm-impact">Calcolo…</div>
+          <div style="font-size:10px;color:var(--text3);margin-top:4px;">→ dettaglio</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">📊 Ore di Luce — Anno Caserta</div>
+        <div id="foto-grafico-annuale" style="display:flex;flex-direction:column;gap:4px;padding-top:4px;"></div>
+      </div>
+    </div>
+
+    <!-- ─── PANNELLO: FENOLOGICO ─── -->
+    <div class="cal-subpanel" id="csp-fenol">
+      <div class="card" onclick="openAmbPopup('fenol-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,152,0,0.1),rgba(255,87,34,0.06));">
+        <div class="card-title" style="color:var(--orange);">🌸 Fase Fenologica Attuale</div>
+        <div style="display:flex;align-items:center;gap:12px;margin:8px 0;">
+          <div style="font-size:44px;" id="fenol-fase-emoji">🌱</div>
+          <div>
+            <div style="font-size:16px;font-weight:700;" id="fenol-fase-nome">Calcolo…</div>
+            <div style="font-size:12px;color:var(--text2);margin-top:4px;" id="fenol-fase-desc">—</div>
+            <div style="font-size:11px;color:var(--text3);margin-top:2px;" id="fenol-fase-durata">Durata prevista: —</div>
+          </div>
+        </div>
+        <div style="font-size:10px;color:var(--text3);">Tocca per previsioni delle prossime settimane →</div>
+      </div>
+      <div class="card">
+        <div class="card-title">🌿 Fase per Pianta Attuale</div>
+        <div id="fenol-piante-list" style="display:flex;flex-direction:column;gap:6px;"></div>
+      </div>
+      <div class="card" onclick="openAmbPopup('fenol-luna')" style="cursor:pointer;background:linear-gradient(135deg,rgba(58,159,216,0.08),rgba(171,71,188,0.06));">
+        <div class="card-title" style="color:var(--blue);">🌙 Correlazione Fenologica-Lunare</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.5;" id="fenol-luna-preview">Analisi correlazione fasi naturali e calendario lunare…</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per analisi completa →</div>
+      </div>
+      <div class="card">
+        <div class="card-title">📅 Calendario Stagionale</div>
+        <div id="fenol-stagionale" style="display:flex;flex-direction:column;gap:8px;padding-top:4px;"></div>
+      </div>
+    </div>
+
+  </div><!-- fine amb-panel-cal -->
+
+  <!-- ══════════ TAB AI SERRA (preservato) ══════════ -->
 
 </section>
 
@@ -3770,7 +3925,7 @@ window.initApp = function() {
 
 /* ── Switch tab interno — chiama direttamente le funzioni originali ── */
 function switchAmbTab(tab) {
-  ['meteo','luna','bio'].forEach(t => {
+  ['meteo','cal'].forEach(t => {
     const p = document.getElementById('amb-panel-' + t);
     const b = document.getElementById('ambt-' + t);
     if (p) p.classList.toggle('active', t === tab);
@@ -3779,12 +3934,29 @@ function switchAmbTab(tab) {
   if (tab === 'meteo') {
     _doLoadWeather();
   }
-  if (tab === 'luna') {
-    setTimeout(_doRenderLunar, 50);
+  if (tab === 'cal') {
+    // Attiva il sotto-tab corrente (default: oggi)
+    const activeSubBtn = document.querySelector('.cal-subtab.active');
+    const sub = activeSubBtn ? activeSubBtn.id.replace('csub-','') : 'oggi';
+    switchCalSub(sub);
   }
-  if (tab === 'bio') {
-    _doRenderBio();
-  }
+}
+
+/* ── Sotto-tab Calendario ── */
+function switchCalSub(sub) {
+  ['oggi','lunare','bio','semine','tratt','foto','fenol'].forEach(s => {
+    const p = document.getElementById('csp-' + s);
+    const b = document.getElementById('csub-' + s);
+    if (p) p.classList.toggle('active', s === sub);
+    if (b) b.classList.toggle('active', s === sub);
+  });
+  if (sub === 'oggi')   _doRenderOggi();
+  if (sub === 'lunare') setTimeout(_doRenderLunar, 50);
+  if (sub === 'bio')    _doRenderBio();
+  if (sub === 'semine') _doRenderSemine();
+  if (sub === 'tratt')  _doRenderTratt();
+  if (sub === 'foto')   _doRenderFoto();
+  if (sub === 'fenol')  _doRenderFenol();
 }
 
 /* ── Wrappers sicuri che chiamano le funzioni originali ── */
@@ -3893,8 +4065,7 @@ function _doRenderBio() {
 function initAmbiente() {
   const activeTab = document.querySelector('#amb-tab-bar .piante-tab.active');
   const tabId = activeTab ? (
-    activeTab.id==='ambt-meteo' ? 'meteo' :
-    activeTab.id==='ambt-luna'  ? 'luna'  : 'bio'
+    activeTab.id==='ambt-meteo' ? 'meteo' : 'cal'
   ) : 'meteo';
   switchAmbTab(tabId);
 }
@@ -4350,6 +4521,750 @@ function updateBioElettroPreview() {
   p.textContent=msgs[cd.type]||msgs.frutto;
 }
 
+/* ══════════════════════════════════════════════════════════════
+   NUOVE FUNZIONI — CALENDARIO UNIFICATO
+══════════════════════════════════════════════════════════════ */
+
+/* ── CSS per sotto-tab calendario e sub-panel ── */
+(function injectCalStyles(){
+  if(document.getElementById('cal-subtab-style')) return;
+  const s=document.createElement('style');
+  s.id='cal-subtab-style';
+  s.textContent=`
+.cal-subtab{background:transparent;border:none;color:var(--text2);font-size:12px;font-weight:600;padding:6px 10px;border-radius:8px;cursor:pointer;white-space:nowrap;transition:background 0.2s,color 0.2s;}
+.cal-subtab.active{background:var(--green);color:#fff;}
+.cal-subpanel{display:none;}
+.cal-subpanel.active{display:block;}
+`;
+  document.head.appendChild(s);
+})();
+
+/* ── Ore di luce medie mensili a Caserta ── */
+const CASERTA_ORE_LUCE = [9.5,10.5,11.8,13.2,14.3,15.0,14.7,13.6,12.2,10.8,9.7,9.2];
+
+/* ─────────────────────────────────────────
+   _doRenderOggi — pannello OGGI integrato
+───────────────────────────────────────── */
+function _doRenderOggi() {
+  const today = new Date();
+  const titEl = document.getElementById('oggi-data-title');
+  const updEl = document.getElementById('oggi-ora-update');
+  if(titEl) titEl.textContent = today.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long'});
+  if(updEl) updEl.textContent = today.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+
+  // Luna
+  try {
+    const age = getMoonAge(today);
+    const ph  = getMoonPhase(age);
+    const ill = getMoonIllum(age);
+    const me  = document.getElementById('oggi-moon-emoji');
+    const mn  = document.getElementById('oggi-moon-phase');
+    const mi  = document.getElementById('oggi-moon-illum');
+    if(me) me.textContent = ph.emoji;
+    if(mn) mn.textContent = ph.name;
+    if(mi) mi.textContent = Math.round(ill)+'% illum.';
+  } catch(e){}
+
+  // Bio
+  try {
+    const cd = getDayType(today);
+    const dt = DAY_TYPES[cd.type];
+    const bioB = document.getElementById('oggi-bio-block');
+    const bioI = document.getElementById('oggi-bio-icon');
+    const bioT = document.getElementById('oggi-bio-type');
+    const bioC = document.getElementById('oggi-bio-const');
+    if(bioB){ bioB.style.background = cd.type==='frutto'?'rgba(255,152,0,0.15)':cd.type==='fiore'?'rgba(236,64,122,0.15)':cd.type==='radice'?'rgba(74,175,94,0.15)':'rgba(100,181,246,0.15)'; }
+    if(bioI) bioI.textContent = dt.icon;
+    if(bioT) bioT.textContent = dt.label;
+    if(bioC) bioC.textContent = cd.sym+' '+cd.name;
+  } catch(e){}
+
+  // Fotoperiodo da meteo o calcolo
+  const fotoEl = document.getElementById('oggi-foto-ore');
+  if(fotoEl){
+    const dl = document.getElementById('w-daylen');
+    if(dl && dl.textContent!=='—h') { fotoEl.textContent = dl.textContent; }
+    else {
+      const m = today.getMonth();
+      fotoEl.textContent = CASERTA_ORE_LUCE[m].toFixed(1)+'h';
+    }
+  }
+
+  // Meteo (se già caricato)
+  const wIcon = document.getElementById('w-icon');
+  const wTemp = document.getElementById('w-temp');
+  const wDesc = document.getElementById('w-desc');
+  const oIcon = document.getElementById('oggi-meteo-icon');
+  const oTemp = document.getElementById('oggi-meteo-temp');
+  const oDesc = document.getElementById('oggi-meteo-desc');
+  if(oIcon && wIcon) oIcon.textContent = wIcon.textContent;
+  if(oTemp && wTemp) oTemp.textContent = wTemp.textContent;
+  if(oDesc && wDesc) oDesc.textContent = wDesc.textContent;
+
+  // Consiglio AI integrato da brain.json / luna_consigli.json
+  _loadOggiAIConsiglio();
+
+  // Consigli semine e trattamenti
+  _renderOggiSemine();
+  _renderOggiTratt();
+  _renderOggiFenol();
+}
+
+async function _loadOggiAIConsiglio() {
+  const el = document.getElementById('oggi-ai-consiglio');
+  if(!el) return;
+  try {
+    const age = getMoonAge(new Date());
+    const ph  = getMoonPhase(age);
+    const cd  = getDayType(new Date());
+    const dt  = DAY_TYPES[cd.type];
+    // Tenta brain.json
+    let consiglio = null;
+    try {
+      const r = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/brain.json');
+      if(r.ok){
+        const j = await r.json();
+        if(j.consiglio_oggi) consiglio = j.consiglio_oggi;
+        else if(j[ph.code]) consiglio = j[ph.code];
+      }
+    } catch(e2){}
+    if(!consiglio){
+      // Fallback: consiglio generato localmente
+      const adv = getAdvice(ph.code);
+      consiglio = dt.icon+' Giorno '+dt.label+' · '+ph.emoji+' '+ph.name+'. '+adv.tips[0];
+    }
+    el.textContent = consiglio;
+  } catch(e){ if(el) el.textContent = 'Consiglio non disponibile.'; }
+}
+
+function _renderOggiSemine() {
+  const el = document.getElementById('oggi-consiglio-semine');
+  if(!el) return;
+  try {
+    const cd = getDayType(new Date());
+    const msgs = {
+      frutto: '✅ Ottimo per raccolta e cimatura',
+      fiore:  '✅ Buono per trapianti e ripicchettature',
+      radice: '⚠️ Evita trapianti, ottimo per irrigare',
+      foglia: '✅ Buono per trapianti vegetativi'
+    };
+    el.textContent = msgs[cd.type] || '—';
+  } catch(e){ el.textContent = '—'; }
+}
+
+function _renderOggiTratt() {
+  const el = document.getElementById('oggi-consiglio-tratt');
+  if(!el) return;
+  try {
+    const cd = getDayType(new Date());
+    const msgs = {
+      frutto: '🍌 Tè di banana + cenere (Potassio)',
+      fiore:  '🌿 Infuso ortiche diluito 1:10',
+      radice: '🦠 Melassa 1ml/L + rinnovo humus',
+      foglia: '💧 Solo irrigazione pura, no trattamenti'
+    };
+    el.textContent = msgs[cd.type] || '—';
+  } catch(e){ el.textContent = '—'; }
+}
+
+function _renderOggiFenol() {
+  const el = document.getElementById('oggi-fase-fenol');
+  if(!el) return;
+  const today = new Date();
+  const piante = _getPianteConFase(today);
+  if(!piante.length){ el.textContent = 'Nessuna pianta attiva'; return; }
+  // Conta le fasi predominanti
+  const faseCounts = {};
+  piante.forEach(p => { faseCounts[p.fase] = (faseCounts[p.fase]||0)+1; });
+  const fasePred = Object.entries(faseCounts).sort((a,b)=>b[1]-a[1])[0][0];
+  el.textContent = fasePred+' ('+piante.length+' piante attive)';
+}
+
+/* ─────────────────────────────────────────
+   FENOLOGICO
+───────────────────────────────────────── */
+const PIANTE_DATA = [
+  {id:7,  nome:'Epsilon F1',      tipo:'auto', germ:new Date('2026-04-21'), fiorIn:new Date('2026-05-21'), raccolta:new Date('2026-06-20')},
+  {id:1,  nome:'Milky Way F1',    tipo:'auto', germ:new Date('2026-04-23'), fiorIn:new Date('2026-06-04'), raccolta:new Date('2026-07-07')},
+  {id:2,  nome:'Titan F1',        tipo:'auto', germ:new Date('2026-04-22'), fiorIn:new Date('2026-06-01'), raccolta:new Date('2026-07-06')},
+  {id:3,  nome:'Medusa F1',       tipo:'auto', germ:new Date('2026-04-21'), fiorIn:new Date('2026-05-31'), raccolta:new Date('2026-07-05')},
+  {id:8,  nome:'Gaia F1',         tipo:'auto', germ:new Date('2026-04-21'), fiorIn:new Date('2026-05-31'), raccolta:new Date('2026-06-30')},
+  {id:4,  nome:'Astro Lemonade F1',tipo:'femm',germ:new Date('2026-04-21'), fiorIn:new Date('2026-10-01'), raccolta:new Date('2026-11-15')},
+  {id:11, nome:'Cosmic Cheddar F1',tipo:'femm',germ:new Date('2026-05-02'), fiorIn:new Date('2026-10-01'), raccolta:new Date('2026-11-15')},
+  {id:6,  nome:'Orbital Banana F1',tipo:'femm',germ:new Date('2026-04-30'), fiorIn:new Date('2026-10-01'), raccolta:new Date('2026-11-15')},
+  {id:10, nome:'Royal Gorilla',   tipo:'femm', germ:new Date('2026-04-22'), fiorIn:new Date('2026-10-15'), raccolta:new Date('2026-11-25')},
+  {id:9,  nome:'Mexican Rush',    tipo:'femm', germ:new Date('2026-04-21'), fiorIn:new Date('2026-10-15'), raccolta:new Date('2026-11-25')}
+];
+
+function _getPianteConFase(today) {
+  return PIANTE_DATA.map(p => {
+    const daysSinceGerm = Math.floor((today - p.germ) / 86400000);
+    let fase = '—';
+    if(today < p.germ){ fase = 'Pre-germinazione'; }
+    else if(today < p.fiorIn){ fase = 'Crescita vegetativa 🌿'; }
+    else if(today < p.raccolta){ fase = 'Fioritura 🌸'; }
+    else { fase = 'Raccolta/Maturazione 🍊'; }
+    return {...p, fase, daysSinceGerm};
+  });
+}
+
+function _doRenderFenol() {
+  const today = new Date();
+  const piante = _getPianteConFase(today);
+
+  // Fase predominante
+  const faseCounts = {};
+  piante.forEach(p => { const f=p.fase.split(' ')[0]; faseCounts[f]=(faseCounts[f]||0)+1; });
+  const [fasePred, cnt] = Object.entries(faseCounts).sort((a,b)=>b[1]-a[1])[0];
+
+  const emojiMap = {'Pre-germinazione':'🌰','Crescita':'🌿','Fioritura':'🌸','Raccolta/Maturazione':'🍊'};
+  const key = Object.keys(emojiMap).find(k=>fasePred.startsWith(k))||'Crescita';
+
+  const fenE = document.getElementById('fenol-fase-emoji');
+  const fenN = document.getElementById('fenol-fase-nome');
+  const fenD = document.getElementById('fenol-fase-desc');
+  const fenL = document.getElementById('fenol-fase-durata');
+  if(fenE) fenE.textContent = emojiMap[key]||'🌱';
+  if(fenN) fenN.textContent = fasePred+' ('+cnt+' piante)';
+  if(fenD) fenD.textContent = 'Fase naturale prevalente nelle piante in coltivazione';
+  if(fenL) fenL.textContent = 'Aggiornamento automatico basato sulle date di germinazione';
+
+  // Lista piante
+  const list = document.getElementById('fenol-piante-list');
+  if(list){
+    list.innerHTML = piante.map(p=>{
+      const barW = Math.min(100, Math.max(0, Math.round(p.daysSinceGerm / 210 * 100)));
+      const col = p.fase.includes('Crescita')?'var(--green3)':p.fase.includes('Fiori')?'#ce93d8':p.fase.includes('Raccolto')||p.fase.includes('Raccolta')?'#ffb74d':'var(--text3)';
+      return `<div class="amb-pianta-card" onclick="openAmbPopup('fenol-pianta-${p.id}')">
+        <div style="font-size:20px;">${p.tipo==='auto'?'⚡':'🌸'}</div>
+        <div style="flex:1;">
+          <div style="font-size:12px;font-weight:700;">${p.nome}</div>
+          <div style="font-size:11px;color:${col};margin-top:2px;">${p.fase}</div>
+          <div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;margin-top:4px;overflow:hidden;">
+            <div style="height:100%;background:${col};width:${barW}%;border-radius:2px;transition:width 0.5s;"></div>
+          </div>
+        </div>
+        <div style="color:var(--text3);">›</div>
+      </div>`;
+    }).join('');
+  }
+
+  // Correlazione luna
+  const lunaP = document.getElementById('fenol-luna-preview');
+  if(lunaP){
+    try{
+      const age = getMoonAge(today);
+      const ph  = getMoonPhase(age);
+      const adv = getAdvice(ph.code);
+      lunaP.textContent = ph.emoji+' '+ph.name+' — '+adv.tips[0];
+    }catch(e){ lunaP.textContent = 'Calcolo in corso…'; }
+  }
+
+  // Calendario stagionale
+  const stag = document.getElementById('fenol-stagionale');
+  if(stag){
+    const mesi = ['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'];
+    const fasi = [
+      {mese:3, label:'🌱 Germinazione', piante:'Tutte le 10 piante'},
+      {mese:4, label:'🌿 Crescita vegetativa', piante:'Autofiorenti + Femminizzate'},
+      {mese:5, label:'🌸 Prima fioritura', piante:'Epsilon F1, Gaia F1, Medusa F1'},
+      {mese:6, label:'🌸 Fioritura autofiorenti', piante:'Milky Way, Titan, Medusa'},
+      {mese:9, label:'🍂 Cambio fotoperiodo', piante:'Femminizzate entrano in fioritura'},
+      {mese:10,label:'🌸 Fioritura femminizzate', piante:'Astro Lemonade, Orbital Banana, Cosmic Cheddar'},
+      {mese:11,label:'🍊 Raccolta femminizzate', piante:'Tutte le femminizzate'},
+    ];
+    const now = today.getMonth();
+    stag.innerHTML = fasi.map(f=>{
+      const isNow = f.mese === now;
+      return `<div style="display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;${isNow?'background:rgba(74,175,94,0.12);border:1px solid rgba(74,175,94,0.25);':''}" onclick="openAmbPopup('fenol-stagionale-${f.mese}')">
+        <div style="font-size:13px;font-weight:700;color:var(--text3);min-width:28px;">${mesi[f.mese]}</div>
+        <div style="flex:1;"><div style="font-size:13px;font-weight:600;${isNow?'color:var(--green3);':''}">${f.label}</div><div style="font-size:11px;color:var(--text2);">${f.piante}</div></div>
+        ${isNow?'<div style="font-size:11px;color:var(--green3);font-weight:700;">← ORA</div>':''}
+      </div>`;
+    }).join('');
+  }
+}
+
+/* ─────────────────────────────────────────
+   FOTOPERIODO
+───────────────────────────────────────── */
+let _semineMonth = new Date().getMonth();
+let _trattMonth  = new Date().getMonth();
+let _fotoYear    = new Date().getFullYear();
+
+function _doRenderFoto() {
+  const today = new Date();
+  const m = today.getMonth();
+
+  // Dati meteo se disponibili
+  const sr = document.getElementById('w-sunrise');
+  const ss = document.getElementById('w-sunset');
+  const dl = document.getElementById('w-daylen');
+
+  const fotoOre    = document.getElementById('foto-ore-oggi');
+  const fotoAlba   = document.getElementById('foto-alba-tramonto');
+  const fotoVsIeri = document.getElementById('foto-vs-ieri');
+
+  const oreOggi = CASERTA_ORE_LUCE[m];
+  const oreIeri = CASERTA_ORE_LUCE[m>0?m-1:0];
+  const delta   = (oreOggi - oreIeri).toFixed(1);
+
+  if(fotoOre){
+    if(dl && dl.textContent!=='—h') fotoOre.textContent = dl.textContent;
+    else fotoOre.textContent = oreOggi.toFixed(1)+'h';
+  }
+  if(fotoAlba){
+    const aT = sr&&sr.textContent!=='—' ? sr.textContent : '—';
+    const tT = ss&&ss.textContent!=='—' ? ss.textContent : '—';
+    fotoAlba.textContent = 'Alba '+aT+' · Tramonto '+tT;
+  }
+  if(fotoVsIeri){
+    const sign = parseFloat(delta)>=0 ? '+' : '';
+    fotoVsIeri.textContent = sign+delta+'h rispetto al mese precedente';
+  }
+
+  // Impatto autofiorenti
+  const autoEl = document.getElementById('foto-auto-impact');
+  if(autoEl){
+    const ore = oreOggi;
+    let msg = '';
+    if(ore >= 18) msg = '✅ Condizioni ideali (18h). Crescita massima.';
+    else if(ore >= 16) msg = '⚡ Buone condizioni. Autofiorenti crescono normalmente.';
+    else if(ore >= 14) msg = '⚠️ Ore ridotte: crescita leggermente rallentata.';
+    else msg = '🔴 Ore insufficienti (< 14h): considera lampada integrativa.';
+    autoEl.textContent = ore.toFixed(1)+'h luce · '+msg;
+  }
+
+  // Impatto femminizzate
+  const femmEl = document.getElementById('foto-femm-impact');
+  if(femmEl){
+    const ore = oreOggi;
+    if(ore > 12) femmEl.textContent = ore.toFixed(1)+'h · 🌿 Fase vegetativa attiva. Nessuna fioritura indotta.';
+    else if(ore <= 12) femmEl.textContent = ore.toFixed(1)+'h · 🌸 Fotoperiodo critico: le femminizzate iniziano a fiorire!';
+  }
+
+  // Grafico annuale
+  const graf = document.getElementById('foto-grafico-annuale');
+  if(graf){
+    const mesiNomi = ['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'];
+    const maxOre = Math.max(...CASERTA_ORE_LUCE);
+    graf.innerHTML = CASERTA_ORE_LUCE.map((ore,i)=>{
+      const isNow = i === m;
+      const pct = (ore/maxOre*100).toFixed(0);
+      const col = ore<=12 ? '#f48fb1' : ore>=15 ? '#81c784' : '#64b5f6';
+      return `<div style="display:flex;align-items:center;gap:8px;cursor:pointer;" onclick="openAmbPopup('foto-mese-${i}')">
+        <div style="font-size:11px;color:var(--text3);min-width:28px;${isNow?'color:var(--green3);font-weight:700;':''}">${mesiNomi[i]}</div>
+        <div style="flex:1;height:20px;background:rgba(255,255,255,0.05);border-radius:4px;overflow:hidden;">
+          <div style="height:100%;width:${pct}%;background:${isNow?'var(--green)':col};border-radius:4px;transition:width 0.5s;"></div>
+        </div>
+        <div style="font-size:12px;font-weight:${isNow?'700':'400'};color:${isNow?'var(--green3)':'var(--text2)'};min-width:36px;">${ore}h</div>
+        ${isNow?'<div style="font-size:10px;color:var(--green3);font-weight:700;">◀</div>':''}
+        ${ore<=12?'<div title="Fotoperiodo fioritura" style="font-size:11px;">🌸</div>':''}
+      </div>`;
+    }).join('');
+  }
+}
+
+/* ─────────────────────────────────────────
+   SEMINE
+───────────────────────────────────────── */
+let _semMonthOffset = 0;
+function semineChangeMonth(d){ _semMonthOffset = d===0?0:_semMonthOffset+d; _doRenderSemine(); }
+
+function _doRenderSemine() {
+  const today = new Date();
+  const viewDate = new Date(today.getFullYear(), today.getMonth()+_semMonthOffset, 1);
+  const m = viewDate.getMonth(); const y = viewDate.getFullYear();
+
+  const mesiNomi = ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
+  const calMonth = document.getElementById('semine-cal-month');
+  if(calMonth) calMonth.textContent = mesiNomi[m]+' '+y;
+
+  // Semaforo oggi
+  try {
+    const cd = getDayType(today);
+    const emEl = document.getElementById('semine-oggi-emoji');
+    const lbEl = document.getElementById('semine-oggi-label');
+    const mvEl = document.getElementById('semine-oggi-motivo');
+    const age  = getMoonAge(today);
+    const ph   = getMoonPhase(age);
+    const fav  = ['waxing_crescent','first_quarter','waxing_gibbous'].includes(ph.code);
+    const sfav = ['waning_gibbous','last_quarter','waning_crescent'].includes(ph.code);
+    const tipoFav = ['frutto','fiore'].includes(cd.type);
+
+    if(fav && tipoFav){ if(emEl) emEl.textContent='✅'; if(lbEl) lbEl.textContent='Giorno Favorevole per Semine'; if(mvEl) mvEl.textContent=ph.emoji+' Luna crescente · '+DAY_TYPES[cd.type].label; }
+    else if(sfav){ if(emEl) emEl.textContent='⛔'; if(lbEl) lbEl.textContent='Giorno Sfavorevole per Semine'; if(mvEl) mvEl.textContent=ph.emoji+' Luna calante — evita trapianti e semine'; }
+    else{ if(emEl) emEl.textContent='⚪'; if(lbEl) lbEl.textContent='Giorno Neutro'; if(mvEl) mvEl.textContent='Condizioni nella media'; }
+  } catch(e){}
+
+  // Griglia
+  const grid = document.getElementById('semine-grid');
+  if(!grid) return;
+  const firstDay = new Date(y,m,1); const lastDay = new Date(y,m+1,0);
+  let startDow = (firstDay.getDay()+6)%7;
+  let cells = '';
+  for(let i=0;i<startDow;i++) cells+=`<div class="bio-grid-cell"></div>`;
+  for(let d=1;d<=lastDay.getDate();d++){
+    const dd = new Date(y,m,d);
+    const age = getMoonAge(dd);
+    const ph  = getMoonPhase(age);
+    const cd  = getDayType(dd);
+    const isToday = dd.toDateString()===today.toDateString();
+    const fav = ['waxing_crescent','first_quarter','waxing_gibbous'].includes(ph.code) && ['frutto','fiore'].includes(cd.type);
+    const sfav= ['waning_gibbous','last_quarter','waning_crescent'].includes(ph.code);
+    const bg  = fav?'#4caf76':sfav?'#ff7043':'transparent';
+    const border = isToday?'2px solid var(--green3)':'1px solid transparent';
+    cells+=`<div class="bio-grid-cell" style="background:${fav?'rgba(76,175,118,0.25)':sfav?'rgba(255,112,67,0.18)':'transparent'};border:${border};border-radius:4px;cursor:pointer;" onclick="openCalDayPopup('semine',${y},${m},${d})">
+      <div style="font-size:11px;${isToday?'font-weight:800;color:var(--green3)':''}">${d}</div>
+      <div style="font-size:8px;margin-top:1px;">${fav?'✅':sfav?'⛔':''}</div>
+    </div>`;
+  }
+  grid.innerHTML = cells;
+
+  // Lista piante
+  const list = document.getElementById('semine-piante-list');
+  if(list){
+    list.innerHTML = PIANTE_DATA.map(p=>{
+      const fase = _getPianteConFase(today).find(x=>x.id===p.id);
+      return `<div class="amb-pianta-card" onclick="openAmbPopup('semine-pianta-${p.id}')">
+        <div style="font-size:18px;">${p.tipo==='auto'?'⚡':'🌸'}</div>
+        <div style="flex:1;"><div style="font-size:12px;font-weight:700;">${p.nome}</div>
+        <div style="font-size:11px;color:var(--text2);margin-top:2px;">${fase?fase.fase:'—'}</div></div>
+        <div style="color:var(--text3);">›</div>
+      </div>`;
+    }).join('');
+  }
+}
+
+/* ─────────────────────────────────────────
+   TRATTAMENTI
+───────────────────────────────────────── */
+let _trattMonthOffset = 0;
+function trattChangeMonth(d){ _trattMonthOffset = d===0?0:_trattMonthOffset+d; _doRenderTratt(); }
+
+const TRATTAMENTI_DEF = [
+  {id:'melassa',  label:'🍯 Melassa',      desc:'Dogma Organics Morganix Molasses — 1ml/L',     cadenza:'ogni 15 giorni', tipo:'biologico',  giorniBio:['radice','foglia'],  ricetta:'Sciogliere 1ml per litro in bottiglia separata. Irrigare tutte le 10 piante. NON aggiungere al serbatoio principale.'},
+  {id:'ortiche',  label:'🌿 Infuso Ortiche',desc:'100-150g ortiche per 1L, macerazione 3-7gg', cadenza:'1x al mese',    tipo:'biologico',  giorniBio:['foglia','radice'],  ricetta:'Macerare 100-150g foglie in 1L acqua per 3-7 giorni. Filtrare con panno fine. Diluire 1:10. Somministrare 1-2L per vaso.'},
+  {id:'banana',   label:'🍌 Tè Banana',    desc:'3-4 bucce bollite + cenere di legna',           cadenza:'ogni 2 sett.',  tipo:'biologico',  giorniBio:['frutto','fiore'],   ricetta:'Bollire 3-4 bucce di banana in 1L d'acqua per 15 min. Raffreddare, filtrare. Aggiungere 1 cucchiaino di cenere. Diluire 1:5 prima dell'uso.'},
+  {id:'humus',    label:'🦠 Rinnovo Humus', desc:'Infuso 100-150g BioBizz Worm Humus in 5L',    cadenza:'1x al mese',    tipo:'biologico',  giorniBio:['radice'],            ricetta:'Preparare 5L acqua + 100-150g BioBizz Worm Humus in contenitore separato. Lasciar riposare 1h. Versare acqua infusa nella tanica. Sciacquare prima la tanica.'},
+  {id:'miscela',  label:'🥚 Miscela Org.',  desc:'Gusci+banana+caffè essiccati e polverizzati',  cadenza:'1x al mese',    tipo:'biologico',  giorniBio:['radice','frutto'],  ricetta:'1 cucchiaio grande per vaso di miscela (gusci d'uovo + bucce banana + fondi caffè). Mescolare con un po' di humus. Spargere sulla superficie del terreno. Irrigare dopo.'},
+  {id:'preventivo',label:'🛡️ Preventivo',  desc:'Controllo funghi e parassiti biologici',        cadenza:'se necessario', tipo:'preventivo', giorniBio:['fiore'],             ricetta:'Ispezionare le foglie per botrytis, oidio, tripidi. In giorni Fiore le piante sono più sensibili. Ventilare la serra e ridurre l'umidità se > 70%.'},
+];
+
+function _doRenderTratt() {
+  const today = new Date();
+  const viewDate = new Date(today.getFullYear(), today.getMonth()+_trattMonthOffset, 1);
+  const m = viewDate.getMonth(); const y = viewDate.getFullYear();
+
+  const mesiNomi = ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
+  const calMonth = document.getElementById('tratt-cal-month');
+  if(calMonth) calMonth.textContent = mesiNomi[m]+' '+y;
+
+  // Trattamento oggi
+  try {
+    const cd  = getDayType(today);
+    const tratt = TRATTAMENTI_DEF.filter(t=>t.giorniBio.includes(cd.type));
+    const lbEl = document.getElementById('tratt-oggi-label');
+    const dsEl = document.getElementById('tratt-oggi-desc');
+    if(lbEl) lbEl.textContent = tratt.length ? tratt.map(t=>t.label).join(' · ') : '💧 Solo irrigazione pura';
+    if(dsEl) dsEl.textContent = tratt.length ? 'Giorno '+DAY_TYPES[cd.type].label+' — ottimale per questi trattamenti' : 'Giorno '+DAY_TYPES[cd.type].label+' — evita trattamenti fogliari';
+  } catch(e){}
+
+  // Griglia
+  const grid = document.getElementById('tratt-grid');
+  if(!grid) return;
+  const firstDay = new Date(y,m,1); const lastDay = new Date(y,m+1,0);
+  let startDow = (firstDay.getDay()+6)%7;
+  let cells = '';
+  for(let i=0;i<startDow;i++) cells+=`<div class="bio-grid-cell"></div>`;
+  for(let d=1;d<=lastDay.getDate();d++){
+    const dd = new Date(y,m,d);
+    const cd = getDayType(dd);
+    const isToday = dd.toDateString()===today.toDateString();
+    const tratt = TRATTAMENTI_DEF.filter(t=>t.giorniBio.includes(cd.type));
+    const bgC = cd.type==='radice'?'rgba(76,175,118,0.2)':cd.type==='foglia'?'rgba(100,181,246,0.15)':cd.type==='fiore'?'rgba(206,147,216,0.2)':cd.type==='frutto'?'rgba(255,183,77,0.15)':'transparent';
+    const border = isToday?'2px solid var(--green3)':'1px solid transparent';
+    cells+=`<div class="bio-grid-cell" style="background:${bgC};border:${border};border-radius:4px;cursor:pointer;" onclick="openCalDayPopup('tratt',${y},${m},${d})">
+      <div style="font-size:11px;${isToday?'font-weight:800;color:var(--green3)':''}">${d}</div>
+      <div style="font-size:8px;margin-top:1px;">${DAY_TYPES[cd.type]?DAY_TYPES[cd.type].icon:''}</div>
+    </div>`;
+  }
+  grid.innerHTML = cells;
+
+  // Schede trattamenti
+  const schede = document.getElementById('tratt-schede');
+  if(schede){
+    schede.innerHTML = TRATTAMENTI_DEF.map(t=>`
+      <div class="card" onclick="openAmbPopup('tratt-scheda-${t.id}')" style="cursor:pointer;border-left:3px solid ${t.tipo==='biologico'?'var(--green)':'var(--blue)'};">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="font-size:22px;">${t.label.split(' ')[0]}</div>
+          <div style="flex:1;">
+            <div style="font-size:13px;font-weight:700;">${t.label.replace(/^[^\s]+\s/,'')}</div>
+            <div style="font-size:11px;color:var(--text2);margin-top:2px;">${t.desc}</div>
+            <div style="font-size:10px;color:var(--text3);margin-top:2px;">⏱️ ${t.cadenza}</div>
+          </div>
+          <div style="color:var(--text3);">›</div>
+        </div>
+      </div>`).join('');
+  }
+}
+
+/* ─────────────────────────────────────────
+   openCalDayPopup — popup giorno unificato
+───────────────────────────────────────── */
+function openCalDayPopup(ctx, y, m, d) {
+  const dd  = new Date(y,m,d);
+  const age = getMoonAge(dd);
+  const ph  = getMoonPhase(age);
+  const ill = getMoonIllum(age);
+  const adv = getAdvice(ph.code);
+  const cd  = getDayType(dd);
+  const dt  = DAY_TYPES[cd.type];
+  const oreL= CASERTA_ORE_LUCE[m];
+  const fav = ['waxing_crescent','first_quarter','waxing_gibbous'].includes(ph.code);
+  const trattConsigl = TRATTAMENTI_DEF.filter(t=>t.giorniBio.includes(cd.type));
+
+  const overlay = document.getElementById('amb-popup-overlay');
+  const content = document.getElementById('amb-popup-content');
+  if(!overlay||!content) return;
+
+  content.innerHTML=`
+<div class="amb-popup-label">${dd.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}</div>
+<div class="amb-popup-title">${ph.emoji} ${ph.name} · ${dt.icon} ${dt.label}</div>
+
+<div class="amb-popup-section">
+  <div class="amb-popup-label">🌙 Luna</div>
+  <div style="font-size:13px;color:var(--text2);line-height:1.7;">
+    Fase: <strong>${ph.name}</strong> · Illuminazione: <strong>${Math.round(ill)}%</strong><br>
+    ${adv.tips[0]}
+  </div>
+</div>
+
+<div class="amb-popup-section">
+  <div class="amb-popup-label">🌱 Biodinamica</div>
+  <div style="font-size:13px;color:var(--text2);line-height:1.7;">
+    ${dt.icon} <strong>${dt.label}</strong> · ${cd.sym} ${cd.name} (${cd.element})<br>
+    ${ADVICE[cd.type]?ADVICE[cd.type].short:'—'}
+  </div>
+</div>
+
+<div class="amb-popup-section">
+  <div class="amb-popup-label">☀️ Fotoperiodo</div>
+  <div style="font-size:13px;color:var(--text2);">
+    ~${oreL}h luce a Caserta in questo mese<br>
+    ${oreL>12?'🌿 Femminizzate in fase vegetativa':'🌸 Fotoperiodo di fioritura per femminizzate'}
+  </div>
+</div>
+
+<div class="amb-popup-section">
+  <div class="amb-popup-label">🌱 Semine & Trapianti</div>
+  <div style="font-size:13px;color:var(--text2);">${fav?'✅ Giorno favorevole — luna crescente':'⛔ Evita semine — luna calante o nuova'}</div>
+</div>
+
+<div class="amb-popup-section">
+  <div class="amb-popup-label">🧪 Trattamenti consigliati</div>
+  <div style="font-size:13px;color:var(--text2);line-height:1.7;">
+    ${trattConsigl.length?trattConsigl.map(t=>'✅ '+t.label+' — '+t.desc).join('<br>'):'💧 Solo irrigazione. Evita trattamenti.'}
+  </div>
+</div>
+
+<div class="amb-popup-section">
+  <div class="amb-popup-label">✅ Cosa fare · 🚫 Cosa evitare</div>
+  <div style="font-size:13px;color:var(--text2);line-height:1.7;">
+    ${ADVICE[cd.type]?ADVICE[cd.type].tips.slice(0,2).map(t=>'✅ '+t).join('<br>'):''}
+    <br>🚫 ${cd.type==='foglia'?'Evita trattamenti con prodotti fogliari':cd.type==='radice'?'Evita trapianti importanti':cd.type==='fiore'?'Evita spruzzi sulle cime':'Evita concimazioni pesanti'}
+  </div>
+</div>`;
+
+  overlay.style.display='flex';
+  document.body.style.overflow='hidden';
+}
+
+/* buildPopupContent — estendo con i nuovi tipi */
+const _origBuildPopup = typeof buildPopupContent === 'function' ? buildPopupContent : null;
+
+function buildPopupContent(type) {
+  // Nuovi tipi calendario
+  if(type==='oggi-full') return _buildOggiFullPopup();
+  if(type==='oggi-luna') return _buildLunaPopup();
+  if(type==='oggi-bio')  return _buildBioOggiPopup();
+  if(type==='oggi-foto') return _buildFotoOggiPopup();
+  if(type==='oggi-meteo') return _buildMeteoOggiPopup();
+  if(type==='oggi-semine') return _buildSemineOggiPopup();
+  if(type==='oggi-trattamenti') return _buildTrattOggiPopup();
+  if(type==='oggi-fenol') return _buildFenolOggiPopup();
+  if(type==='semine-oggi') return _buildSemineOggiPopup();
+  if(type==='tratt-oggi') return _buildTrattOggiFullPopup();
+  if(type==='foto-oggi') return _buildFotoOggiPopup();
+  if(type==='foto-autofiorenti') return _buildFotoAutoPopup();
+  if(type==='foto-femminizzate') return _buildFotoFemmPopup();
+  if(type==='fenol-oggi') return _buildFenolOggiFullPopup();
+  if(type==='fenol-luna') return _buildFenolLunaPopup();
+  if(type.startsWith('fenol-pianta-')) return _buildFenolPiantaPopup(parseInt(type.split('-')[2]));
+  if(type.startsWith('tratt-scheda-')) return _buildTrattSchedaPopup(type.replace('tratt-scheda-',''));
+  if(type.startsWith('semine-pianta-')) return _buildSeminePiantaPopup(parseInt(type.split('-')[2]));
+  if(type.startsWith('foto-mese-')) return _buildFotoMesePopup(parseInt(type.split('-')[2]));
+  if(type==='meteo-fotoperiodo') return _buildFotoOggiPopup();
+  // Fallback: funzione originale
+  if(_origBuildPopup) return _origBuildPopup(type);
+  return '<div class="amb-popup-title">'+type+'</div><div style="font-size:13px;color:var(--text2);">Dettaglio non disponibile.</div>';
+}
+
+function _buildOggiFullPopup(){
+  const today=new Date();
+  const age=getMoonAge(today);const ph=getMoonPhase(age);const ill=getMoonIllum(age);
+  const cd=getDayType(today);const dt=DAY_TYPES[cd.type];
+  const adv=getAdvice(ph.code);
+  const oreL=CASERTA_ORE_LUCE[today.getMonth()];
+  const trattC=TRATTAMENTI_DEF.filter(t=>t.giorniBio.includes(cd.type));
+  return `<div class="amb-popup-label">${today.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long'})}</div>
+<div class="amb-popup-title">📅 Riepilogo Completo Oggi</div>
+<div class="amb-popup-section"><div class="amb-popup-label">🌙 Luna</div><div style="font-size:13px;color:var(--text2);line-height:1.7;">${ph.emoji} ${ph.name} · ${Math.round(ill)}% illuminazione<br>${adv.tips[0]}</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">🌱 Biodinamica</div><div style="font-size:13px;color:var(--text2);line-height:1.7;">${dt.icon} ${dt.label} · ${cd.sym} ${cd.name}<br>${ADVICE[cd.type].short}</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">☀️ Fotoperiodo</div><div style="font-size:13px;color:var(--text2);">~${oreL}h luce · ${oreL>12?'🌿 Femminizzate vegetative':'🌸 Femminizzate in fioritura'}</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">🧪 Trattamenti</div><div style="font-size:13px;color:var(--text2);">${trattC.length?trattC.map(t=>t.label).join(', '):'Solo irrigazione'}</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">✅ Da fare oggi</div><div style="font-size:13px;color:var(--text2);line-height:1.7;">${ADVICE[cd.type].tips.map(t=>'• '+t).join('<br>')}</div></div>`;
+}
+
+function _buildLunaPopup(){
+  const today=new Date();const age=getMoonAge(today);const ph=getMoonPhase(age);
+  const ill=getMoonIllum(age);const adv=getAdvice(ph.code);
+  return `<div class="amb-popup-title">${ph.emoji} ${ph.name}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">Illuminazione: <strong>${Math.round(ill)}%</strong><br>Età luna: <strong>${getMoonAge(today).toFixed(1)} giorni</strong></div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">Effetti sulle piante</div><div style="font-size:13px;color:var(--text2);line-height:1.7;">${adv.tips.map(t=>'• '+t).join('<br>')}</div></div>`;
+}
+
+function _buildBioOggiPopup(){
+  const cd=getDayType(new Date());const dt=DAY_TYPES[cd.type];const adv=ADVICE[cd.type];
+  return `<div class="amb-popup-title">${dt.icon} ${dt.label}</div>
+<div class="amb-popup-section"><div class="amb-popup-label">Costellazione</div><div style="font-size:13px;color:var(--text2);">${cd.sym} ${cd.name} · ${cd.element}</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">Consigli serra</div><div style="font-size:13px;color:var(--text2);line-height:1.7;">${adv.tips.map(t=>'✅ '+t).join('<br>')}</div></div>`;
+}
+
+function _buildFotoOggiPopup(){
+  const m=new Date().getMonth();const ore=CASERTA_ORE_LUCE[m];
+  const sr=document.getElementById('w-sunrise');const ss=document.getElementById('w-sunset');
+  return `<div class="amb-popup-title">☀️ Fotoperiodo — Caserta</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">
+Ore di luce oggi: <strong>${ore}h</strong><br>
+Alba: <strong>${sr?sr.textContent:'—'}</strong> · Tramonto: <strong>${ss?ss.textContent:'—'}</strong><br><br>
+🌿 <strong>Autofiorenti (ID: 7,1,2,3,8)</strong><br>
+Ore ideali: 18h · Ore attuali: ~${ore}h<br>
+Moltiplicatore: <strong>×${(18/ore).toFixed(2)}</strong> (giorni reali più lunghi rispetto al calendario produttore)<br><br>
+🌸 <strong>Femminizzate (ID: 4,11,6,10,9)</strong><br>
+Ore ideali: 12h · Ore attuali: ~${ore}h<br>
+${ore>12?'🌿 In fase vegetativa — ancora nessuna fioritura indotta dal fotoperiodo':'🌸 Fotoperiodo raggiunto — le femminizzate stanno fiorendo!'}
+</div></div>`;
+}
+
+function _buildMeteoOggiPopup(){
+  const i=document.getElementById('w-icon');const t=document.getElementById('w-temp');
+  const d=document.getElementById('w-desc');const h=document.getElementById('w-humidity');
+  return `<div class="amb-popup-title">⛅ Meteo Attuale Caserta</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">
+${i?i.textContent:''} Temperatura: <strong>${t?t.textContent:'—'}</strong><br>
+Condizioni: <strong>${d?d.textContent:'—'}</strong><br>
+Umidità: <strong>${h?h.textContent:'—'}</strong>
+</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">Impatto Serra</div><div style="font-size:13px;color:var(--text2);">${document.getElementById('w-irrig-main')?document.getElementById('w-irrig-main').textContent:'—'}</div></div>`;
+}
+
+function _buildSemineOggiPopup(){
+  const today=new Date();const cd=getDayType(today);const age=getMoonAge(today);const ph=getMoonPhase(age);
+  const fav=['waxing_crescent','first_quarter','waxing_gibbous'].includes(ph.code)&&['frutto','fiore'].includes(cd.type);
+  return `<div class="amb-popup-title">🌱 Semine & Trapianti</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">
+Luna: ${ph.emoji} ${ph.name}<br>Biodinamica: ${DAY_TYPES[cd.type].icon} ${DAY_TYPES[cd.type].label}<br><br>
+<strong>${fav?'✅ GIORNO FAVOREVOLE':'⛔ GIORNO SFAVOREVOLE'}</strong><br>
+${fav?'Le condizioni di luna crescente e giorno '+DAY_TYPES[cd.type].label+' favoriscono semine, trapianti e ripicchettature.':'Luna calante — le piante assorbono meno. Evita trapianti. Concentrati su irrigazione e osservazione.'}
+</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">Le 10 varietà</div><div style="font-size:13px;color:var(--text2);line-height:1.7;">${PIANTE_DATA.map(p=>{const f=_getPianteConFase(today).find(x=>x.id===p.id);return (p.tipo==='auto'?'⚡':'🌸')+' '+p.nome+': '+( f?f.fase:'—');}).join('<br>')}</div></div>`;
+}
+
+function _buildTrattOggiPopup(){
+  const cd=getDayType(new Date());const trattC=TRATTAMENTI_DEF.filter(t=>t.giorniBio.includes(cd.type));
+  return `<div class="amb-popup-title">🧪 Trattamenti — Oggi</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);">Giorno ${DAY_TYPES[cd.type].icon} ${DAY_TYPES[cd.type].label}</div></div>
+${trattC.length?trattC.map(t=>`<div class="amb-popup-section"><div class="amb-popup-label">${t.label}</div><div style="font-size:13px;color:var(--text2);line-height:1.6;">${t.ricetta}</div></div>`).join(''):'<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);">💧 Giorno di solo irrigazione. Evita trattamenti fogliari.</div></div>'}`;
+}
+
+function _buildTrattOggiFullPopup(){ return _buildTrattOggiPopup(); }
+
+function _buildFenolOggiPopup(){
+  const today=new Date();const piante=_getPianteConFase(today);
+  return `<div class="amb-popup-title">🌸 Fasi Fenologiche</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">${piante.map(p=>(p.tipo==='auto'?'⚡':'🌸')+' <strong>'+p.nome+'</strong>: '+p.fase).join('<br>')}</div></div>`;
+}
+
+function _buildFenolOggiFullPopup(){ return _buildFenolOggiPopup(); }
+
+function _buildFenolLunaPopup(){
+  const today=new Date();const age=getMoonAge(today);const ph=getMoonPhase(age);const adv=getAdvice(ph.code);
+  return `<div class="amb-popup-title">🌙 Correlazione Fenologica-Lunare</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">
+${ph.emoji} ${ph.name}<br><br>
+Fase di crescita vegetativa → favorita da luna crescente (${['waxing_crescent','first_quarter','waxing_gibbous'].includes(ph.code)?'✅ attuale':'⏳ prossima'})<br>
+Fioritura → favorita da luna piena (${ph.code==='full'?'✅ attuale':'⏳ prossima'})<br>
+Maturazione/raccolta → favorita da luna calante o frutto
+</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">Consigli per fase</div><div style="font-size:13px;color:var(--text2);line-height:1.7;">${adv.tips.map(t=>'• '+t).join('<br>')}</div></div>`;
+}
+
+function _buildFenolPiantaPopup(id){
+  const p=PIANTE_DATA.find(x=>x.id===id);if(!p) return '<div>Pianta non trovata</div>';
+  const today=new Date();const f=_getPianteConFase(today).find(x=>x.id===id);
+  const age=getMoonAge(today);const ph=getMoonPhase(age);const adv=getAdvice(ph.code);
+  return `<div class="amb-popup-title">${p.tipo==='auto'?'⚡':'🌸'} ${p.nome}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">
+ID: ${p.id} · Tipo: ${p.tipo==='auto'?'Autofiorente':'Femminizzata'}<br>
+Germinazione: <strong>${p.germ.toLocaleDateString('it-IT')}</strong><br>
+Inizio fioritura: <strong>${p.fiorIn.toLocaleDateString('it-IT')}</strong><br>
+Raccolta: <strong>${p.raccolta.toLocaleDateString('it-IT')}</strong><br>
+Fase attuale: <strong>${f?f.fase:'—'}</strong><br>
+Giorni dalla germinazione: <strong>${f?f.daysSinceGerm:'—'}</strong>
+</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">Consiglio lunare</div><div style="font-size:13px;color:var(--text2);">${ph.emoji} ${ph.name} — ${adv.tips[0]}</div></div>`;
+}
+
+function _buildTrattSchedaPopup(id){
+  const t=TRATTAMENTI_DEF.find(x=>x.id===id);if(!t) return '<div>Trattamento non trovato</div>';
+  return `<div class="amb-popup-title">${t.label}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);">${t.desc}</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">📋 Ricetta completa</div><div style="font-size:13px;color:var(--text2);line-height:1.7;">${t.ricetta}</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">⏱️ Cadenza</div><div style="font-size:13px;color:var(--text2);">${t.cadenza}</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">🌱 Giorni ottimali</div><div style="font-size:13px;color:var(--text2);">${t.giorniBio.map(g=>DAY_TYPES[g]?DAY_TYPES[g].icon+' '+DAY_TYPES[g].label:g).join(' · ')}</div></div>`;
+}
+
+function _buildSeminePiantaPopup(id){
+  const p=PIANTE_DATA.find(x=>x.id===id);if(!p) return '<div>Pianta non trovata</div>';
+  const today=new Date();const f=_getPianteConFase(today).find(x=>x.id===id);
+  const age=getMoonAge(today);const ph=getMoonPhase(age);
+  const fav=['waxing_crescent','first_quarter','waxing_gibbous'].includes(ph.code);
+  return `<div class="amb-popup-title">${p.tipo==='auto'?'⚡':'🌸'} ${p.nome} — Semine</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">
+Fase attuale: <strong>${f?f.fase:'—'}</strong><br>
+${fav?'✅ Luna favorevole per eventuali trapianti':'⛔ Luna sfavorevole per trapianti'}
+</div></div>
+<div class="amb-popup-section"><div class="amb-popup-label">Consigli specifici</div><div style="font-size:13px;color:var(--text2);line-height:1.7;">
+${f&&f.fase.includes('Crescita')?'🌿 In crescita vegetativa: puoi effettuare topping, LST o defogliazione leggera nei giorni di luna crescente.':''}
+${f&&f.fase.includes('Fiori')?'🌸 In fioritura: evita qualsiasi stress. Non trapiantare. Solo irrigazione e nutrimento leggero.':''}
+${f&&f.fase.includes('Raccolta')?'🍊 Prossima alla raccolta: osserva i trichomi. Ultimi 2 settimane solo acqua pura.':''}
+</div></div>`;
+}
+
+function _buildFotoMesePopup(m){
+  const mesiNomi=['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
+  const ore=CASERTA_ORE_LUCE[m];
+  return `<div class="amb-popup-title">☀️ ${mesiNomi[m]} — Fotoperiodo</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">
+Ore di luce medie: <strong>${ore}h</strong><br><br>
+🌿 Autofiorenti: ${ore>=16?'✅ Condizioni eccellenti ('+ore+'h ≥ 16h)':ore>=14?'⚠️ Condizioni buone ('+ore+'h)':'🔴 Ore insufficienti — considera lampada'}<br>
+Moltiplicatore ciclo: <strong>×${(18/ore).toFixed(2)}</strong><br><br>
+🌸 Femminizzate: ${ore>12?'🌿 Fase vegetativa ('+ore+'h > 12h)':'🌸 Fioritura indotta ('+ore+'h ≤ 12h)'}
+</div></div>`;
+}
+
+
 
 (function avvioApp() {
   function runInit() {
@@ -4499,6 +5414,7 @@ if ('serviceWorker' in navigator) {
 </div>
 </body>
 </html>
+
 
 
 
