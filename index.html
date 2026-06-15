@@ -4092,6 +4092,12 @@ function closeAmbPopupDirect() {
 }
 
 function buildPopupContent(type) {
+  // Tipi dinamici (startsWith)
+  if(type&&type.startsWith('fenol-pianta-')) return _buildFenolPiantaPopup(parseInt(type.split('-')[2]));
+  if(type&&type.startsWith('tratt-scheda-')) return _buildTrattSchedaPopup(type.replace('tratt-scheda-',''));
+  if(type&&type.startsWith('semine-pianta-')) return _buildSeminePiantaPopup(parseInt(type.split('-')[2]));
+  if(type&&type.startsWith('foto-mese-')) return _buildFotoMesePopup(parseInt(type.split('-')[2]));
+  if(type&&type.startsWith('fenol-stagionale-')) return _buildFenolStagiPopup(parseInt(type.split('-')[2]));
   const today=new Date();
   const age=getMoonAge(today);
   const phase=getMoonPhase(age);
@@ -4397,6 +4403,24 @@ ${piante.map(p=>`<div style="display:flex;justify-content:space-between;align-it
 <div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">${m.d}</div></div>
 <div class="amb-popup-section"><div class="amb-popup-label">Azione oggi</div><div style="font-size:13px;color:var(--green3);line-height:1.7;">${m.a}</div></div>`; }
 
+    // ── Nuovi tipi calendario ──
+    case 'oggi-full': return _buildOggiFullPopup();
+    case 'oggi-luna': return _buildLunaPopup();
+    case 'oggi-bio':  return _buildBioOggiPopup();
+    case 'oggi-foto': return _buildFotoOggiPopup();
+    case 'oggi-meteo': return _buildMeteoOggiPopup();
+    case 'oggi-semine': return _buildSemineOggiPopup();
+    case 'oggi-trattamenti': return _buildTrattOggiPopup();
+    case 'oggi-fenol': return _buildFenolOggiPopup();
+    case 'semine-oggi': return _buildSemineOggiPopup();
+    case 'tratt-oggi': return _buildTrattOggiFullPopup();
+    case 'foto-oggi': return _buildFotoOggiPopup();
+    case 'foto-autofiorenti': return _buildFotoAutoPopup();
+    case 'foto-femminizzate': return _buildFotoFemmPopup();
+    case 'fenol-oggi': return _buildFenolOggiFullPopup();
+    case 'fenol-luna': return _buildFenolLunaPopup();
+    case 'meteo-fotoperiodo': return _buildFotoOggiPopup();
+
     default: return `<div class="amb-popup-title">ℹ️ Info</div><div style="color:var(--text2);font-size:13px;">Dati non disponibili.</div>`;
   }
 }
@@ -4525,19 +4549,6 @@ function updateBioElettroPreview() {
    NUOVE FUNZIONI — CALENDARIO UNIFICATO
 ══════════════════════════════════════════════════════════════ */
 
-/* ── CSS per sotto-tab calendario e sub-panel ── */
-(function injectCalStyles(){
-  if(document.getElementById('cal-subtab-style')) return;
-  const s=document.createElement('style');
-  s.id='cal-subtab-style';
-  s.textContent=`
-.cal-subtab{background:transparent;border:none;color:var(--text2);font-size:12px;font-weight:600;padding:6px 10px;border-radius:8px;cursor:pointer;white-space:nowrap;transition:background 0.2s,color 0.2s;}
-.cal-subtab.active{background:var(--green);color:#fff;}
-.cal-subpanel{display:none;}
-.cal-subpanel.active{display:block;}
-`;
-  document.head.appendChild(s);
-})();
 
 /* ── Ore di luce medie mensili a Caserta ── */
 const CASERTA_ORE_LUCE = [9.5,10.5,11.8,13.2,14.3,15.0,14.7,13.6,12.2,10.8,9.7,9.2];
@@ -5080,35 +5091,7 @@ function openCalDayPopup(ctx, y, m, d) {
   document.body.style.overflow='hidden';
 }
 
-/* buildPopupContent — estendo con i nuovi tipi */
-const _origBuildPopup = typeof buildPopupContent === 'function' ? buildPopupContent : null;
 
-function buildPopupContent(type) {
-  // Nuovi tipi calendario
-  if(type==='oggi-full') return _buildOggiFullPopup();
-  if(type==='oggi-luna') return _buildLunaPopup();
-  if(type==='oggi-bio')  return _buildBioOggiPopup();
-  if(type==='oggi-foto') return _buildFotoOggiPopup();
-  if(type==='oggi-meteo') return _buildMeteoOggiPopup();
-  if(type==='oggi-semine') return _buildSemineOggiPopup();
-  if(type==='oggi-trattamenti') return _buildTrattOggiPopup();
-  if(type==='oggi-fenol') return _buildFenolOggiPopup();
-  if(type==='semine-oggi') return _buildSemineOggiPopup();
-  if(type==='tratt-oggi') return _buildTrattOggiFullPopup();
-  if(type==='foto-oggi') return _buildFotoOggiPopup();
-  if(type==='foto-autofiorenti') return _buildFotoAutoPopup();
-  if(type==='foto-femminizzate') return _buildFotoFemmPopup();
-  if(type==='fenol-oggi') return _buildFenolOggiFullPopup();
-  if(type==='fenol-luna') return _buildFenolLunaPopup();
-  if(type.startsWith('fenol-pianta-')) return _buildFenolPiantaPopup(parseInt(type.split('-')[2]));
-  if(type.startsWith('tratt-scheda-')) return _buildTrattSchedaPopup(type.replace('tratt-scheda-',''));
-  if(type.startsWith('semine-pianta-')) return _buildSeminePiantaPopup(parseInt(type.split('-')[2]));
-  if(type.startsWith('foto-mese-')) return _buildFotoMesePopup(parseInt(type.split('-')[2]));
-  if(type==='meteo-fotoperiodo') return _buildFotoOggiPopup();
-  // Fallback: funzione originale
-  if(_origBuildPopup) return _origBuildPopup(type);
-  return '<div class="amb-popup-title">'+type+'</div><div style="font-size:13px;color:var(--text2);">Dettaglio non disponibile.</div>';
-}
 
 function _buildOggiFullPopup(){
   const today=new Date();
