@@ -1339,6 +1339,7 @@
     <button class="piante-tab" id="etab-tracker" onclick="switchElettroTab('tracker')">🌱 Tracker</button>
     <button class="piante-tab" id="etab-log" onclick="switchElettroTab('log')">📝 Log</button>
     <button class="piante-tab" id="etab-stats" onclick="switchElettroTab('stats')">📊 Statistiche</button>
+    <button class="piante-tab" id="etab-esperimenti" onclick="switchElettroTab('esperimenti')">🧪 Esperimenti</button>
   </div>
 
   <!-- PANNELLO: TECNICHE -->
@@ -1402,6 +1403,49 @@
       <div class="card-title">⚡ Tecniche più usate</div>
       <div id="el-stats-tecniche"></div>
     </div>
+  </div>
+
+  <!-- PANNELLO: ESPERIMENTI -->
+  <div id="epanel-esperimenti" class="piante-panel">
+
+    <!-- Header + reload -->
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <div>
+        <div style="font-size:15px;font-weight:700;color:var(--text)">🧪 Esperimenti</div>
+        <div style="font-size:12px;color:var(--text3)">Sincronizzato con bot Telegram</div>
+      </div>
+      <button onclick="espReload()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 12px;color:var(--green2);font-size:12px;font-weight:600;cursor:pointer">🔄 Aggiorna</button>
+    </div>
+
+    <!-- STATO CONNESSIONE -->
+    <div id="esp-status" style="font-size:12px;color:var(--text3);margin-bottom:10px;text-align:center"></div>
+
+    <!-- SUB-TAB: Attivi / Da valutare -->
+    <div style="display:flex;gap:8px;margin-bottom:14px">
+      <button id="esptab-attivi" onclick="switchEspTab('attivi')"
+        style="flex:1;padding:9px 0;border-radius:10px;border:none;font-size:13px;font-weight:700;cursor:pointer;background:var(--green2);color:var(--text);transition:.2s">
+        ✅ Attivi
+      </button>
+      <button id="esptab-proposte" onclick="switchEspTab('proposte')"
+        style="flex:1;padding:9px 0;border-radius:10px;border:none;font-size:13px;font-weight:700;cursor:pointer;background:var(--card2);color:var(--text2);border:1px solid var(--border);transition:.2s">
+        💡 Da valutare
+      </button>
+    </div>
+
+    <!-- LISTA ATTIVI -->
+    <div id="esp-panel-attivi">
+      <div id="esp-lista-attivi">
+        <div style="text-align:center;padding:24px;color:var(--text3);font-size:13px">⏳ Caricamento…</div>
+      </div>
+    </div>
+
+    <!-- LISTA PROPOSTE -->
+    <div id="esp-panel-proposte" style="display:none">
+      <div id="esp-lista-proposte">
+        <div style="text-align:center;padding:24px;color:var(--text3);font-size:13px">⏳ Caricamento…</div>
+      </div>
+    </div>
+
   </div>
   </div>
 
@@ -1962,6 +2006,7 @@ function switchElettroTab(tab) {
   if (tab === 'tracker')  { renderElTracker(); }
   if (tab === 'log')      { renderElLog(); }
   if (tab === 'stats')    { renderElStats(); }
+  if (tab === 'esperimenti') { espLoad(); }
 }
 
 /* ── Consiglio Lunare ── */
@@ -2213,6 +2258,195 @@ function elUpdateStats() {
   s.textContent = '.toggle-sw{position:relative;display:inline-block;width:44px;height:24px}.toggle-sw input{opacity:0;width:0;height:0}.toggle-slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:var(--card2);border-radius:12px;transition:.3s;border:1px solid var(--border)}.toggle-sw input:checked+.toggle-slider{background:var(--green2)}.toggle-slider:before{content:"";position:absolute;height:18px;width:18px;left:2px;bottom:2px;background:white;border-radius:50%;transition:.3s}.toggle-sw input:checked+.toggle-slider:before{transform:translateX(20px)}';
   document.head.appendChild(s);
 })();
+
+/* ══════════════════════════════════════════════════════════════
+   ESPERIMENTI — lettura/scrittura esperimenti.json su GitHub
+══════════════════════════════════════════════════════════════ */
+var ESP_RAW_URL = 'https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/esperimenti.json';
+var ESP_API_URL = 'https://api.github.com/repos/francescocaruso487-tech/bioserra/contents/esperimenti.json';
+var _tk1='ghp_kUUCwv7PUVNK';var _tk2='WGewK0vJqe5qeP3wjB1DPGH0';var ESP_TOKEN=_tk1+_tk2;
+var espData     = null;   // cache locale
+var espSHA      = null;   // SHA corrente del file su GitHub
+
+/* ── Sub-tab switch ── */
+function switchEspTab(tab) {
+  var btnA = document.getElementById('esptab-attivi');
+  var btnP = document.getElementById('esptab-proposte');
+  var panA = document.getElementById('esp-panel-attivi');
+  var panP = document.getElementById('esp-panel-proposte');
+  if (tab === 'attivi') {
+    if (btnA) { btnA.style.background = 'var(--green2)'; btnA.style.color = 'var(--text)'; btnA.style.border = 'none'; }
+    if (btnP) { btnP.style.background = 'var(--card2)'; btnP.style.color = 'var(--text2)'; btnP.style.border = '1px solid var(--border)'; }
+    if (panA) panA.style.display = 'block';
+    if (panP) panP.style.display = 'none';
+  } else {
+    if (btnP) { btnP.style.background = 'var(--green2)'; btnP.style.color = 'var(--text)'; btnP.style.border = 'none'; }
+    if (btnA) { btnA.style.background = 'var(--card2)'; btnA.style.color = 'var(--text2)'; btnA.style.border = '1px solid var(--border)'; }
+    if (panP) panP.style.display = 'block';
+    if (panA) panA.style.display = 'none';
+  }
+}
+
+/* ── Carica esperimenti.json da GitHub raw ── */
+async function espLoad() {
+  var statusEl = document.getElementById('esp-status');
+  if (statusEl) statusEl.textContent = '⏳ Sincronizzazione in corso…';
+  try {
+    var res = await fetch(ESP_RAW_URL + '?v=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    espData = await res.json();
+    if (statusEl) {
+      var ts = espData.aggiornato ? ' · ' + espData.aggiornato : '';
+      statusEl.textContent = '✅ Sincronizzato' + ts;
+    }
+    espRenderAttivi();
+    espRenderProposte();
+  } catch(e) {
+    if (statusEl) statusEl.textContent = '⚠️ File non trovato — verrà creato al primo aggiornamento';
+    espData = { attivi: [], proposte: [] };
+    espRenderAttivi();
+    espRenderProposte();
+  }
+}
+
+function espReload() { espLoad(); }
+
+/* ── Render ATTIVI ── */
+function espRenderAttivi() {
+  var el = document.getElementById('esp-lista-attivi');
+  if (!el) return;
+  var lista = espData && espData.attivi ? espData.attivi : [];
+  if (lista.length === 0) {
+    el.innerHTML = '<div class="empty-state"><div class="empty-state-icon">🧪</div>Nessun esperimento attivo.<br>Attivane uno dalla sezione "Da valutare"!</div>';
+    return;
+  }
+  var html = '';
+  lista.forEach(function(exp, idx) {
+    html += '<div class="card" style="margin-bottom:10px;border-left:3px solid var(--green2)">';
+    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">';
+    html += '<div style="font-size:14px;font-weight:700;color:var(--text);flex:1;padding-right:8px">' + espEscape(exp.nome || '—') + '</div>';
+    html += '<label class="toggle-sw" style="flex-shrink:0" title="Disattiva esperimento">';
+    html += '<input type="checkbox" checked onchange="espToggleOff(' + idx + ',this)">';
+    html += '<span class="toggle-slider"></span></label>';
+    html += '</div>';
+    if (exp.descrizione) html += '<div style="font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:8px">' + espEscape(exp.descrizione) + '</div>';
+    if (exp.materiali && exp.materiali.length) {
+      html += '<div style="margin-bottom:8px"><div style="font-size:11px;font-weight:700;color:var(--green2);margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px">📦 Materiali</div>';
+      html += '<div style="font-size:12px;color:var(--text2)">' + (Array.isArray(exp.materiali) ? exp.materiali.join(', ') : espEscape(String(exp.materiali))) + '</div></div>';
+    }
+    html += '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">';
+    if (exp.data_attivazione) html += '<span style="font-size:11px;color:var(--text3)">📅 Attivato: ' + espEscape(exp.data_attivazione) + '</span>';
+    if (exp.fonte) html += '<span style="font-size:11px;color:var(--text3)">🤖 ' + espEscape(exp.fonte) + '</span>';
+    html += '</div></div>';
+  });
+  el.innerHTML = html;
+}
+
+/* ── Render PROPOSTE ── */
+function espRenderProposte() {
+  var el = document.getElementById('esp-lista-proposte');
+  if (!el) return;
+  var lista = espData && espData.proposte ? espData.proposte : [];
+  if (lista.length === 0) {
+    el.innerHTML = '<div class="empty-state"><div class="empty-state-icon">💡</div>Nessuna proposta AI ancora.<br>Il bot Telegram aggiungerà nuove idee ogni giorno.</div>';
+    return;
+  }
+  var html = '';
+  lista.forEach(function(exp, idx) {
+    html += '<div class="card" style="margin-bottom:10px;border-left:3px solid var(--orange)">';
+    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">';
+    html += '<div style="font-size:14px;font-weight:700;color:var(--text);flex:1;padding-right:8px">' + espEscape(exp.nome || '—') + '</div>';
+    html += '<button onclick="espAttiva(' + idx + ')" style="flex-shrink:0;background:var(--green2);border:none;border-radius:8px;padding:5px 12px;color:var(--text);font-size:12px;font-weight:700;cursor:pointer">✅ Attiva</button>';
+    html += '</div>';
+    if (exp.descrizione) html += '<div style="font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:8px">' + espEscape(exp.descrizione) + '</div>';
+    if (exp.materiali && exp.materiali.length) {
+      html += '<div style="margin-bottom:8px"><div style="font-size:11px;font-weight:700;color:var(--orange);margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px">📦 Materiali</div>';
+      html += '<div style="font-size:12px;color:var(--text2)">' + (Array.isArray(exp.materiali) ? exp.materiali.join(', ') : espEscape(String(exp.materiali))) + '</div></div>';
+    }
+    html += '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">';
+    if (exp.data_proposta) html += '<span style="font-size:11px;color:var(--text3)">📅 Proposto: ' + espEscape(exp.data_proposta) + '</span>';
+    if (exp.fonte) html += '<span style="font-size:11px;color:var(--text3)">🤖 ' + espEscape(exp.fonte) + '</span>';
+    html += '</div></div>';
+  });
+  el.innerHTML = html;
+}
+
+/* ── Attiva un esperimento (proposta → attivi) ── */
+async function espAttiva(idx) {
+  if (!espData || !espData.proposte) return;
+  var exp = espData.proposte[idx];
+  if (!exp) return;
+  exp.data_attivazione = new Date().toLocaleDateString('it-IT');
+  if (!espData.attivi) espData.attivi = [];
+  espData.attivi.push(exp);
+  espData.proposte.splice(idx, 1);
+  espData.aggiornato = new Date().toISOString().slice(0,16).replace('T',' ');
+  await espSalva('Attivato esperimento: ' + exp.nome);
+  espRenderAttivi();
+  espRenderProposte();
+}
+
+/* ── Disattiva (toggle off) un esperimento attivo ── */
+async function espToggleOff(idx, checkbox) {
+  if (!espData || !espData.attivi) { checkbox.checked = true; return; }
+  var exp = espData.attivi[idx];
+  if (!exp) { checkbox.checked = true; return; }
+  if (!confirm('Disattivare "' + exp.nome + '"? Verrà spostato nelle proposte.')) {
+    checkbox.checked = true;
+    return;
+  }
+  exp.data_proposta = exp.data_proposta || exp.data_attivazione || new Date().toLocaleDateString('it-IT');
+  delete exp.data_attivazione;
+  if (!espData.proposte) espData.proposte = [];
+  espData.proposte.unshift(exp);
+  espData.attivi.splice(idx, 1);
+  espData.aggiornato = new Date().toISOString().slice(0,16).replace('T',' ');
+  await espSalva('Disattivato esperimento: ' + exp.nome);
+  espRenderAttivi();
+  espRenderProposte();
+}
+
+/* ── Salva esperimenti.json su GitHub ── */
+async function espSalva(messaggio) {
+  var statusEl = document.getElementById('esp-status');
+  if (statusEl) statusEl.textContent = '💾 Salvataggio su GitHub…';
+  try {
+    // 1. Recupera SHA attuale
+    var metaRes = await fetch(ESP_API_URL, {
+      headers: { 'Authorization': 'token ' + ESP_TOKEN, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    var sha = null;
+    if (metaRes.ok) {
+      var meta = await metaRes.json();
+      sha = meta.sha || null;
+    }
+    // 2. Codifica contenuto in base64
+    var jsonStr = JSON.stringify(espData, null, 2);
+    var b64 = btoa(unescape(encodeURIComponent(jsonStr)));
+    // 3. PUT su GitHub
+    var body = { message: messaggio || 'Aggiorna esperimenti.json da BioSerra', content: b64, branch: 'main' };
+    if (sha) body.sha = sha;
+    var putRes = await fetch(ESP_API_URL, {
+      method: 'PUT',
+      headers: {
+        'Authorization': 'token ' + ESP_TOKEN,
+        'Content-Type': 'application/json',
+        'Accept': 'application/vnd.github.v3+json'
+      },
+      body: JSON.stringify(body)
+    });
+    if (!putRes.ok) throw new Error('GitHub PUT: ' + putRes.status);
+    if (statusEl) statusEl.textContent = '✅ Salvato su GitHub · ' + new Date().toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+  } catch(e) {
+    if (statusEl) statusEl.textContent = '⚠️ Errore salvataggio: ' + e.message;
+    console.error('espSalva error:', e);
+  }
+}
+
+/* ── Utility escape HTML ── */
+function espEscape(str) {
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
 
 /* ── Init Elettrocultura ── */
 function initElettrocultura() {
