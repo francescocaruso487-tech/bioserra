@@ -1011,14 +1011,7 @@
         <div class="card-title">📡 Previsioni 7 giorni</div>
         <div id="w-forecast"></div>
       </div>
-      <div class="card">
-        <div class="card-title">🌡️ Sensori Interni Serra</div>
-        <div class="empty-state" style="padding:16px 0;">
-          <div style="font-size:32px;margin-bottom:8px;">📡</div>
-          <div style="color:var(--text3);font-size:13px;">Nessun sensore IoT collegato</div>
-          <div style="color:var(--text3);font-size:11px;margin-top:4px;">Placeholder — integrare sensore DHT22 o simile</div>
-        </div>
-      </div>
+
     </div>
   </div>
 
@@ -1099,6 +1092,11 @@
         <div id="moonCycleInfo" style="font-size:13px;color:var(--text2);line-height:1.8;"></div>
       </div>
     </div>
+    <!-- elementi hidden per compatibilità renderLunarSection -->
+    <div id="agriAdviceMain" style="display:none;"></div>
+    <div id="agriAdviceDetail" style="display:none;"></div>
+    <div id="agriAdviceTags" style="display:none;"></div>
+    <div id="agriAdviceSerra" style="display:none;"></div>
 
 
   <!-- ══ BIODINAMICA ══ -->
@@ -1168,6 +1166,134 @@
         </div>
       </div>
     </div>
+
+
+
+  <!-- ══ SEMINE & TRAPIANTI ══ -->
+  <div class="amb-section-header">🌾 Semine &amp; Trapianti</div>
+  <div>
+    <!-- Card semaforo oggi -->
+    <div class="card" onclick="openAmbPopup('semine-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(74,175,94,0.1),rgba(76,175,80,0.06));">
+      <div class="card-title" style="color:var(--green3);">🌱 Favorevole oggi?</div>
+      <div style="display:flex;align-items:center;gap:14px;margin:8px 0;">
+        <div style="font-size:44px;" id="semine-oggi-emoji">⏳</div>
+        <div>
+          <div style="font-size:16px;font-weight:700;" id="semine-oggi-label">Calcolo…</div>
+          <div style="font-size:12px;color:var(--text2);margin-top:4px;" id="semine-oggi-motivo">—</div>
+        </div>
+      </div>
+      <div style="font-size:10px;color:var(--text3);">Tocca per dettaglio varietà →</div>
+    </div>
+    <!-- Le 10 piante: fase attuale -->
+    <div class="card">
+      <div class="card-title">🌿 Fase attuale — 10 Varietà</div>
+      <div id="semine-piante-list" style="display:flex;flex-direction:column;gap:6px;"></div>
+    </div>
+  </div>
+
+  <!-- ══ TRATTAMENTI BIOLOGICI ══ -->
+  <div class="amb-section-header">🧪 Trattamenti Biologici</div>
+  <div>
+    <div class="card" onclick="openAmbPopup('tratt-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.1),rgba(156,39,176,0.06));">
+      <div class="card-title" style="color:var(--purple);">🧪 Trattamento ottimale oggi</div>
+      <div style="font-size:14px;font-weight:600;margin:6px 0;" id="tratt-oggi-label">Calcolo…</div>
+      <div style="font-size:12px;color:var(--text2);" id="tratt-oggi-desc">—</div>
+      <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per ricetta completa →</div>
+    </div>
+    <div class="card" onclick="openAmbPopup('tratt-melassa')" style="cursor:pointer;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="font-size:22px;">🍯</div>
+        <div style="flex:1;">
+          <div style="font-size:13px;font-weight:700;">Melassa — ogni 15 giorni</div>
+          <div style="font-size:11px;color:var(--text2);">1 ml/L in bottiglia separata · Giorni Radice/Foglia</div>
+        </div><div style="color:var(--text3);">›</div>
+      </div>
+    </div>
+    <div class="card" onclick="openAmbPopup('tratt-ortiche')" style="cursor:pointer;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="font-size:22px;">🌿</div>
+        <div style="flex:1;">
+          <div style="font-size:13px;font-weight:700;">Infuso Ortiche — 1x al mese</div>
+          <div style="font-size:11px;color:var(--text2);">100-150g/L · macera 3-7gg · diluire 1:10 · Giorni Foglia</div>
+        </div><div style="color:var(--text3);">›</div>
+      </div>
+    </div>
+    <div class="card" onclick="openAmbPopup('tratt-banana')" style="cursor:pointer;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="font-size:22px;">🍌</div>
+        <div style="flex:1;">
+          <div style="font-size:13px;font-weight:700;">Tè Banana + Cenere — ogni 2 sett.</div>
+          <div style="font-size:11px;color:var(--text2);">Bolli 3-4 bucce 15min · filtra · 1 cucch. cenere · 1:5 · Giorni Frutto/Fiore</div>
+        </div><div style="color:var(--text3);">›</div>
+      </div>
+    </div>
+    <div class="card" onclick="openAmbPopup('tratt-humus')" style="cursor:pointer;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="font-size:22px;">🦠</div>
+        <div style="flex:1;">
+          <div style="font-size:13px;font-weight:700;">Rinnovo Humus — 1x al mese</div>
+          <div style="font-size:11px;color:var(--text2);">5L + 100-150g BioBizz Worm Humus · insieme a ortiche · Giorni Radice</div>
+        </div><div style="color:var(--text3);">›</div>
+      </div>
+    </div>
+    <div class="card" onclick="openAmbPopup('tratt-miscela')" style="cursor:pointer;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="font-size:22px;">🥚</div>
+        <div style="flex:1;">
+          <div style="font-size:13px;font-weight:700;">Miscela Organica — 1x al mese</div>
+          <div style="font-size:11px;color:var(--text2);">Gusci uovo + banana + caffè essiccati · 1 cucchiaio/vaso · Giorni Radice</div>
+        </div><div style="color:var(--text3);">›</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ FOTOPERIODO ══ -->
+  <div class="amb-section-header">☀️ Fotoperiodo</div>
+  <div>
+    <div class="card" onclick="openAmbPopup('foto-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,193,7,0.1),rgba(255,152,0,0.06));">
+      <div class="card-title" style="color:#ffd54f;">☀️ Fotoperiodo oggi — Caserta</div>
+      <div style="display:flex;align-items:center;gap:16px;margin:8px 0;">
+        <div style="font-size:44px;">☀️</div>
+        <div>
+          <div style="font-size:24px;font-weight:800;color:#ffd54f;" id="foto-ore-oggi">—h</div>
+          <div style="font-size:12px;color:var(--text2);" id="foto-alba-tramonto">—</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;">
+        <div style="background:rgba(74,175,94,0.1);border-radius:8px;padding:8px;text-align:center;">
+          <div style="font-size:11px;font-weight:700;color:var(--green3);">⚡ AUTOFIORENTI</div>
+          <div style="font-size:12px;color:var(--text2);margin-top:4px;" id="foto-auto-txt">—</div>
+        </div>
+        <div style="background:rgba(171,71,188,0.1);border-radius:8px;padding:8px;text-align:center;">
+          <div style="font-size:11px;font-weight:700;color:var(--purple);">🌸 FEMMINIZZATE</div>
+          <div style="font-size:12px;color:var(--text2);margin-top:4px;" id="foto-femm-txt">—</div>
+        </div>
+      </div>
+      <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per dettaglio →</div>
+    </div>
+    <!-- Grafico annuale ore luce -->
+    <div class="card">
+      <div class="card-title">📊 Ore di luce — Anno a Caserta</div>
+      <div id="foto-grafico" style="display:flex;flex-direction:column;gap:3px;padding-top:4px;"></div>
+    </div>
+  </div>
+
+  <!-- ══ FENOLOGICO ══ -->
+  <div class="amb-section-header">🌸 Fenologico</div>
+  <div>
+    <div class="card" style="background:linear-gradient(135deg,rgba(255,152,0,0.1),rgba(255,87,34,0.06));">
+      <div class="card-title" style="color:var(--orange);">🌸 Fase attuale</div>
+      <div style="font-size:13px;color:var(--text2);margin:4px 0;" id="fenol-fase-oggi">Calcolo…</div>
+    </div>
+    <div class="card">
+      <div class="card-title">🌿 Fase per pianta</div>
+      <div id="fenol-piante" style="display:flex;flex-direction:column;gap:5px;"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">📅 Calendario stagionale</div>
+      <div id="fenol-stagionale" style="display:flex;flex-direction:column;gap:6px;padding-top:4px;"></div>
+    </div>
+  </div>
 
 
 </section>
@@ -3834,6 +3960,11 @@ function _doRenderBio() {
   if (typeof renderBioCalendar === 'function') renderBioCalendar();
   renderBio3Giorni();
   updateBioElettroPreview();
+  // Nuovi calendari
+  try { _renderSemine(); } catch(e) {}
+  try { _renderTrattamenti(); } catch(e) {}
+  try { _renderFotoperiodo(); } catch(e) {}
+  try { _renderFenologico(); } catch(e) {}
 }
 
 /* ── Init ambiente (chiamato da showSection) ── */
@@ -3865,6 +3996,12 @@ function closeAmbPopupDirect() {
 }
 
 function buildPopupContent(type) {
+  // Delega ai nuovi popup calendario se il tipo inizia con queste stringhe
+  if (type && (type.startsWith('semine-') || type.startsWith('tratt-') ||
+      type.startsWith('foto-') || type.startsWith('fenol-'))) {
+    const result = _buildPopupNuovi(type);
+    if (result !== null) return result;
+  }
   const today=new Date();
   const age=getMoonAge(today);
   const phase=getMoonPhase(age);
@@ -4294,6 +4431,297 @@ function updateBioElettroPreview() {
     foglia:'💧 Giorno Foglia: acqua strutturata più attiva. Controlla Geomag e magnete principale.'};
   p.textContent=msgs[cd.type]||msgs.frutto;
 }
+/* ══════════════════════════════════════════════════════════════
+   NUOVI CALENDARI AMBIENTE — Semine, Trattamenti, Fotoperiodo, Fenologico
+══════════════════════════════════════════════════════════════ */
+
+const _PIANTE = [
+  {id:7,  nome:'Epsilon F1',       tipo:'auto', germ:'2026-04-21', raccolta:'2026-06-20'},
+  {id:1,  nome:'Milky Way F1',     tipo:'auto', germ:'2026-04-23', raccolta:'2026-07-07'},
+  {id:2,  nome:'Titan F1',         tipo:'auto', germ:'2026-04-22', raccolta:'2026-07-06'},
+  {id:3,  nome:'Medusa F1',        tipo:'auto', germ:'2026-04-21', raccolta:'2026-07-05'},
+  {id:8,  nome:'Gaia F1',          tipo:'auto', germ:'2026-04-21', raccolta:'2026-06-30'},
+  {id:4,  nome:'Astro Lemonade F1',tipo:'femm', germ:'2026-04-21', raccolta:'2026-11-15'},
+  {id:11, nome:'Cosmic Cheddar F1',tipo:'femm', germ:'2026-05-02', raccolta:'2026-11-15'},
+  {id:6,  nome:'Orbital Banana F1',tipo:'femm', germ:'2026-04-30', raccolta:'2026-11-15'},
+  {id:10, nome:'Royal Gorilla',    tipo:'femm', germ:'2026-04-22', raccolta:'2026-11-25'},
+  {id:9,  nome:'Mexican Rush',     tipo:'femm', germ:'2026-04-21', raccolta:'2026-11-25'},
+];
+const _ORE_LUCE = [9.5,10.5,11.8,13.2,14.3,15.0,14.7,13.6,12.2,10.8,9.7,9.2];
+const _MESI_S = ['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'];
+
+function _fasePianta(p, oggi) {
+  const g = new Date(p.germ); const r = new Date(p.raccolta);
+  const days = Math.floor((oggi - g) / 86400000);
+  if (oggi < g) return {fase:'Pre-germinazione', emoji:'🌰', days:0};
+  if (oggi > r) return {fase:'Raccolta completata', emoji:'✅', days};
+  if (p.tipo === 'auto') {
+    if (days < 30) return {fase:'Vegetativa', emoji:'🌿', days};
+    return {fase:'Fioritura', emoji:'🌸', days};
+  } else {
+    const fiorIn = new Date(p.tipo === 'femm' ? p.raccolta : p.raccolta);
+    fiorIn.setMonth(9); fiorIn.setDate(1); // ottobre
+    if (oggi < fiorIn) return {fase:'Vegetativa', emoji:'🌿', days};
+    return {fase:'Fioritura', emoji:'🌸', days};
+  }
+}
+
+/* ── Semine: popola il semaforo e la lista piante ── */
+function _renderSemine() {
+  const today = new Date();
+  try {
+    const age = getMoonAge(today);
+    const ph  = getMoonPhase(age);
+    const cd  = getDayType(today);
+    const lunaCresc = ['waxing_crescent','first_quarter','waxing_gibbous'].includes(ph.code);
+    const giornoBuono = ['frutto','fiore'].includes(cd.type);
+    const emEl = document.getElementById('semine-oggi-emoji');
+    const lbEl = document.getElementById('semine-oggi-label');
+    const mvEl = document.getElementById('semine-oggi-motivo');
+    if (lunaCresc && giornoBuono) {
+      if(emEl) emEl.textContent = '✅';
+      if(lbEl) lbEl.textContent = 'Favorevole per semine e trapianti';
+      if(mvEl) mvEl.textContent = ph.emoji + ' Luna crescente · ' + DAY_TYPES[cd.type].icon + ' ' + DAY_TYPES[cd.type].label;
+    } else if (!lunaCresc) {
+      if(emEl) emEl.textContent = '⛔';
+      if(lbEl) lbEl.textContent = 'Sfavorevole — luna calante';
+      if(mvEl) mvEl.textContent = ph.emoji + ' ' + ph.name + ' · evita trapianti';
+    } else {
+      if(emEl) emEl.textContent = '⚪';
+      if(lbEl) lbEl.textContent = 'Neutro';
+      if(mvEl) mvEl.textContent = ph.emoji + ' ' + ph.name + ' · ' + DAY_TYPES[cd.type].label;
+    }
+  } catch(e) {}
+
+  const list = document.getElementById('semine-piante-list');
+  if (!list) return;
+  list.innerHTML = _PIANTE.map(p => {
+    const f = _fasePianta(p, today);
+    const col = f.fase === 'Vegetativa' ? 'var(--green3)' : f.fase === 'Fioritura' ? '#ce93d8' : 'var(--text3)';
+    return '<div class="amb-pianta-card" onclick="openAmbPopup(&quot;semine-pianta-' + p.id + '&quot;)" style="cursor:pointer;">' +
+      '<div style="font-size:18px;">' + (p.tipo==='auto'?'⚡':'🌸') + '</div>' +
+      '<div style="flex:1;"><div style="font-size:12px;font-weight:700;">' + p.nome + '</div>' +
+      '<div style="font-size:11px;color:' + col + ';margin-top:2px;">' + f.emoji + ' ' + f.fase + ' · ' + f.days + ' gg dalla germ.</div></div>' +
+      '<div style="color:var(--text3);">›</div></div>';
+  }).join('');
+}
+
+/* ── Trattamenti: popola il suggerimento di oggi ── */
+function _renderTrattamenti() {
+  try {
+    const cd = getDayType(new Date());
+    const tipo = cd.type;
+    const suggerimenti = {
+      radice: {label:'🦠 Melassa + Rinnovo Humus + Miscela Organica', desc:'Giorno Radice: microbi al massimo. Somministra melassa (1ml/L) e rinnova infuso humus in tanica.'},
+      foglia: {label:'🌿 Infuso Ortiche', desc:'Giorno Foglia: assorbimento idrico elevato. Infuso ortiche diluito 1:10 (1-2L per vaso).'},
+      frutto: {label:'🍌 Tè Banana + Cenere', desc:'Giorno Frutto: potassio ottimale. Bolli bucce, filtra, aggiungi cenere, diluisci 1:5.'},
+      fiore:  {label:'🌸 Tè Banana + Cenere', desc:'Giorno Fiore: terpeni al picco. Tè banana amplifica aromi. Evita trattamenti fogliari bagnanti.'},
+    };
+    const s = suggerimenti[tipo] || {label:'💧 Solo irrigazione', desc:'Nessun trattamento specifico oggi.'};
+    const lbEl = document.getElementById('tratt-oggi-label');
+    const dsEl = document.getElementById('tratt-oggi-desc');
+    if(lbEl) lbEl.textContent = s.label;
+    if(dsEl) dsEl.textContent = s.desc;
+  } catch(e) {}
+}
+
+/* ── Fotoperiodo: popola grafico e testi ── */
+function _renderFotoperiodo() {
+  const m    = new Date().getMonth();
+  const ore  = _ORE_LUCE[m];
+  const sr   = document.getElementById('w-sunrise');
+  const ss   = document.getElementById('w-sunset');
+
+  const fOre  = document.getElementById('foto-ore-oggi');
+  const fAlba = document.getElementById('foto-alba-tramonto');
+  const fAuto = document.getElementById('foto-auto-txt');
+  const fFemm = document.getElementById('foto-femm-txt');
+
+  if(fOre) {
+    const dlEl = document.getElementById('w-daylen');
+    fOre.textContent = (dlEl && dlEl.textContent !== '—h') ? dlEl.textContent : ore + 'h';
+  }
+  if(fAlba && sr && ss) fAlba.textContent = 'Alba ' + sr.textContent + ' · Tramonto ' + ss.textContent;
+
+  const mult = (18 / ore).toFixed(2);
+  if(fAuto) fAuto.textContent = ore + 'h · mult. ×' + mult + (ore >= 16 ? ' ✅' : ore >= 14 ? ' ⚠️' : ' 🔴');
+  if(fFemm) fFemm.textContent = ore > 12 ? ore + 'h · 🌿 Vegetativa' : ore + 'h · 🌸 Fioritura indotta';
+
+  const graf = document.getElementById('foto-grafico');
+  if(!graf) return;
+  const max = Math.max.apply(null, _ORE_LUCE);
+  graf.innerHTML = _ORE_LUCE.map(function(o, i) {
+    const isCur = i === m;
+    const pct = Math.round(o / max * 100);
+    const col = o <= 12 ? '#f48fb1' : o >= 15 ? '#81c784' : '#64b5f6';
+    return '<div style="display:flex;align-items:center;gap:8px;cursor:pointer;" onclick="openAmbPopup(&quot;foto-mese-' + i + '&quot;)">' +
+      '<div style="font-size:11px;min-width:28px;' + (isCur ? 'color:var(--green3);font-weight:700;' : 'color:var(--text3);') + '">' + _MESI_S[i] + '</div>' +
+      '<div style="flex:1;height:18px;background:rgba(255,255,255,0.05);border-radius:4px;overflow:hidden;">' +
+        '<div style="height:100%;width:' + pct + '%;background:' + (isCur ? 'var(--green)' : col) + ';border-radius:4px;"></div></div>' +
+      '<div style="font-size:11px;font-weight:' + (isCur ? '700' : '400') + ';color:' + (isCur ? 'var(--green3)' : 'var(--text2)') + ';min-width:30px;">' + o + 'h</div>' +
+      (o <= 12 ? '<div style="font-size:10px;">🌸</div>' : '') +
+      (isCur ? '<div style="font-size:10px;color:var(--green3);font-weight:700;">◀</div>' : '') +
+      '</div>';
+  }).join('');
+}
+
+/* ── Fenologico: popola fase e lista piante ── */
+function _renderFenologico() {
+  const today = new Date();
+  const piante = _PIANTE.map(function(p){ return Object.assign({}, p, _fasePianta(p, today)); });
+
+  const fazioCount = {};
+  piante.forEach(function(p){ fazioCount[p.fase] = (fazioCount[p.fase]||0)+1; });
+  const fasePred = Object.keys(fazioCount).sort(function(a,b){return fazioCount[b]-fazioCount[a];})[0];
+  const fenEl = document.getElementById('fenol-fase-oggi');
+  if(fenEl) fenEl.textContent = fasePred + ' (' + fazioCount[fasePred] + ' piante) · ' + piante.filter(function(p){return p.fase===fasePred;}).map(function(p){return p.nome;}).join(', ');
+
+  const list = document.getElementById('fenol-piante');
+  if(list) {
+    list.innerHTML = piante.map(function(p) {
+      const col = p.fase==='Vegetativa'?'var(--green3)':p.fase==='Fioritura'?'#ce93d8':'var(--text3)';
+      const pct = Math.min(100, Math.round(p.days / 210 * 100));
+      return '<div class="amb-pianta-card" onclick="openAmbPopup(&quot;fenol-pianta-' + p.id + '&quot;)" style="cursor:pointer;">' +
+        '<div style="font-size:16px;">' + (p.tipo==='auto'?'⚡':'🌸') + '</div>' +
+        '<div style="flex:1;">' +
+          '<div style="font-size:12px;font-weight:700;">' + p.nome + '</div>' +
+          '<div style="font-size:11px;color:' + col + ';">' + p.emoji + ' ' + p.fase + '</div>' +
+          '<div style="height:3px;background:rgba(255,255,255,0.08);border-radius:2px;margin-top:3px;"><div style="height:100%;width:' + pct + '%;background:' + col + ';border-radius:2px;"></div></div>' +
+        '</div>' +
+        '<div style="color:var(--text3);">›</div></div>';
+    }).join('');
+  }
+
+  const stagEl = document.getElementById('fenol-stagionale');
+  if(stagEl) {
+    const fasi = [
+      {m:3,  label:'🌱 Germinazione',           chi:'Tutte le 10 piante'},
+      {m:4,  label:'🌿 Crescita vegetativa',     chi:'Autofiorenti + Femminizzate'},
+      {m:5,  label:'🌸 Fioritura autofiorenti',  chi:'Epsilon, Gaia, Medusa, Titan, Milky Way'},
+      {m:9,  label:'🍂 Cambio fotoperiodo',      chi:'Femminizzate entrano in fioritura'},
+      {m:10, label:'🌸 Fioritura femminizzate',  chi:'Astro Lemonade, Orbital Banana, Cosmic Cheddar'},
+      {m:11, label:'🍊 Raccolta femminizzate',   chi:'Tutte le femminizzate'},
+    ];
+    const cur = today.getMonth();
+    stagEl.innerHTML = fasi.map(function(f) {
+      const isCur = f.m === cur;
+      return '<div style="display:flex;align-items:center;gap:10px;padding:7px 8px;border-radius:8px;' + (isCur?'background:rgba(74,175,94,0.12);border:1px solid rgba(74,175,94,0.25);':'') + '">' +
+        '<div style="font-size:12px;font-weight:700;color:var(--text3);min-width:28px;">' + _MESI_S[f.m] + '</div>' +
+        '<div style="flex:1;"><div style="font-size:13px;font-weight:' + (isCur?'700':'500') + ';' + (isCur?'color:var(--green3);':'') + '">' + f.label + '</div>' +
+        '<div style="font-size:11px;color:var(--text2);">' + f.chi + '</div></div>' +
+        (isCur ? '<div style="font-size:10px;color:var(--green3);font-weight:700;">← ORA</div>' : '') +
+        '</div>';
+    }).join('');
+  }
+}
+
+/* ── Popup per i nuovi tipi ── */
+function _buildPopupNuovi(type) {
+  var today = new Date();
+  var ph, cd, age;
+  try { age=getMoonAge(today); ph=getMoonPhase(age); cd=getDayType(today); } catch(e) { ph={name:'?',emoji:'?',code:'?'}; cd={type:'frutto'}; }
+  var lunaCresc = ['waxing_crescent','first_quarter','waxing_gibbous'].indexOf(ph.code) >= 0;
+
+  if (type === 'semine-oggi') {
+    var favStr = lunaCresc ? '✅ FAVOREVOLE — luna crescente' : '⛔ SFAVOREVOLE — luna calante o nuova';
+    var motStr = lunaCresc
+      ? 'Ottimo per trapiantare e rinvasare. Le radici si sviluppano con luna crescente.'
+      : 'Evita trapianti. Concentrati su irrigazione e trattamenti del suolo.';
+    var pianteStr = _PIANTE.map(function(p){ var f=_fasePianta(p,today); return (p.tipo==='auto'?'⚡':'🌸')+' <strong>'+p.nome+'</strong>: '+f.emoji+' '+f.fase; }).join('<br>');
+    return '<div class="amb-popup-title">🌱 Semine &amp; Trapianti</div>' +
+      '<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">' +
+      'Luna: ' + ph.emoji + ' <strong>' + ph.name + '</strong><br>' +
+      'Bio: ' + DAY_TYPES[cd.type].icon + ' <strong>' + DAY_TYPES[cd.type].label + '</strong><br><br>' +
+      '<strong>' + favStr + '</strong><br>' + motStr +
+      '</div></div>' +
+      '<div class="amb-popup-section"><div class="amb-popup-label">Le 10 varietà oggi</div>' +
+      '<div style="font-size:13px;color:var(--text2);line-height:1.8;">' + pianteStr + '</div></div>';
+  }
+  if (type === 'tratt-melassa') {
+    return '<div class="amb-popup-title">🍯 Melassa</div>' +
+      '<div class="amb-popup-section"><div class="amb-popup-label">📋 Ricetta</div>' +
+      '<div style="font-size:13px;color:var(--text2);line-height:1.7;">Sciogliere <strong>1 ml per litro</strong> in bottiglia separata da 15-25L. NON aggiungere al serbatoio principale. Irrigare tutte le 10 piante.</div></div>' +
+      '<div class="amb-popup-section"><div class="amb-popup-label">⏱️ Cadenza · Giorno ottimale</div>' +
+      '<div style="font-size:13px;color:var(--text2);">Ogni 15 giorni · 🌿 Giorni Radice o Foglia</div></div>';
+  }
+  if (type === 'tratt-ortiche') {
+    return '<div class="amb-popup-title">🌿 Infuso Ortiche</div>' +
+      '<div class="amb-popup-section"><div class="amb-popup-label">📋 Ricetta</div>' +
+      '<div style="font-size:13px;color:var(--text2);line-height:1.7;">100-150g foglie ortiche fresche in 1L acqua. Macera 3-7 giorni. Filtra. Diluisci <strong>1:10</strong>. Somministra 1-2L per vaso.</div></div>' +
+      '<div class="amb-popup-section"><div class="amb-popup-label">⏱️ Cadenza · Giorno ottimale</div>' +
+      '<div style="font-size:13px;color:var(--text2);">1x al mese · 💧 Giorni Foglia</div></div>';
+  }
+  if (type === 'tratt-banana') {
+    return '<div class="amb-popup-title">🍌 Te di Banana + Cenere</div>' +
+      '<div class="amb-popup-section"><div class="amb-popup-label">📋 Ricetta</div>' +
+      '<div style="font-size:13px;color:var(--text2);line-height:1.7;">Bolli 3-4 bucce di banana in 1L acqua per 15 min. Raffredda, filtra. Aggiungi <strong>1 cucchiaino di cenere di legna</strong>. Diluisci <strong>1:5</strong>.</div></div>' +
+      '<div class="amb-popup-section"><div class="amb-popup-label">⏱️ Cadenza · Mesi</div>' +
+      '<div style="font-size:13px;color:var(--text2);">Ogni 2 settimane · 🍊 Giorni Frutto/Fiore · Solo mesi 5-8</div></div>';
+  }
+  if (type === 'tratt-humus') {
+    return '<div class="amb-popup-title">🦠 Rinnovo Humus</div>' +
+      '<div class="amb-popup-section"><div class="amb-popup-label">📋 Ricetta</div>' +
+      '<div style="font-size:13px;color:var(--text2);line-height:1.7;">Prepara <strong>5L acqua + 100-150g BioBizz Worm Humus</strong> in contenitore separato. Infusione 1h. Versa nella tanica da 50L.</div></div>' +
+      '<div class="amb-popup-section"><div class="amb-popup-label">⏱️ Cadenza · Giorno ottimale</div>' +
+      '<div style="font-size:13px;color:var(--text2);">1x al mese · 🌿 Giorni Radice</div></div>';
+  }
+  if (type === 'tratt-miscela') {
+    return '<div class="amb-popup-title">🥚 Miscela Organica</div>' +
+      '<div class="amb-popup-section"><div class="amb-popup-label">📋 Ricetta</div>' +
+      '<div style="font-size:13px;color:var(--text2);line-height:1.7;">Gusci uovo + bucce banana + fondi caffe — essiccati e tritati. <strong>1 cucchiaio grande per vaso</strong>. Mescola con humus. Poi irrigare.</div></div>' +
+      '<div class="amb-popup-section"><div class="amb-popup-label">Funzione</div>' +
+      '<div style="font-size:13px;color:var(--text2);">Calcio + Potassio + Azoto · 🌿 Giorni Radice</div></div>';
+  }
+  if (type === 'tratt-oggi') {
+    var testi = {
+      radice: 'Giorno Radice: melassa (1ml/L) + rinnovo humus + miscela organica. Microbi al massimo.',
+      foglia: 'Giorno Foglia: infuso ortiche diluito 1:10 (1-2L per vaso). Massimo assorbimento idrico.',
+      frutto: 'Giorno Frutto: te di banana con cenere (1:5). Potassio per resine e aromi.',
+      fiore:  'Giorno Fiore: te di banana con cenere (1:5). Evita spruzzi sulle cime.'
+    };
+    return '<div class="amb-popup-title">' + DAY_TYPES[cd.type].icon + ' Trattamento ottimale</div>' +
+      '<div class="amb-popup-section"><div style="font-size:14px;color:var(--text2);line-height:1.7;">' + (testi[cd.type]||'Solo irrigazione.') + '</div></div>';
+  }
+  if (type === 'foto-oggi') {
+    var m = today.getMonth(); var ore = _ORE_LUCE[m]; var mult = (18/ore).toFixed(2);
+    var condAuto = ore>=16 ? '✅ Eccellenti' : ore>=14 ? '⚠️ Buone' : '🔴 Valuta lampada';
+    var condFemm = ore>12 ? '🌿 Vegetativa ('+ore+'h > 12h)' : '🌸 Fioritura indotta!';
+    return '<div class="amb-popup-title">☀️ Fotoperiodo ' + _MESI_S[m] + ' — Caserta</div>' +
+      '<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">' +
+      'Ore luce: <strong>' + ore + 'h</strong><br><br>' +
+      '⚡ <strong>Autofiorenti</strong> — ore ideali 18h<br>' +
+      'Moltiplicatore: <strong>x' + mult + '</strong> · ' + condAuto + '<br><br>' +
+      '🌸 <strong>Femminizzate</strong> — soglia 12h<br>' + condFemm +
+      '</div></div>';
+  }
+  if (type.indexOf('foto-mese-') === 0) {
+    var mi = parseInt(type.split('-')[2]); var ore2 = _ORE_LUCE[mi]; var mult2 = (18/ore2).toFixed(2);
+    return '<div class="amb-popup-title">☀️ ' + _MESI_S[mi] + ' — Fotoperiodo</div>' +
+      '<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">' +
+      'Ore medie: <strong>' + ore2 + 'h</strong><br>' +
+      '⚡ Autofiorenti: x' + mult2 + '<br>' +
+      '🌸 Femminizzate: ' + (ore2>12 ? '🌿 Vegetativa' : '🌸 Fioritura') +
+      '</div></div>';
+  }
+  if (type.indexOf('semine-pianta-') === 0 || type.indexOf('fenol-pianta-') === 0) {
+    var pid = parseInt(type.split('-')[2]);
+    var p = null;
+    for (var pi=0; pi<_PIANTE.length; pi++) { if (_PIANTE[pi].id===pid) { p=_PIANTE[pi]; break; } }
+    if (!p) return '<div>Pianta non trovata</div>';
+    var fP = _fasePianta(p, today);
+    return '<div class="amb-popup-title">' + (p.tipo==='auto'?'⚡':'🌸') + ' ' + p.nome + '</div>' +
+      '<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">' +
+      'Tipo: <strong>' + (p.tipo==='auto'?'Autofiorente':'Femminizzata') + '</strong><br>' +
+      'Germinazione: <strong>' + p.germ + '</strong><br>' +
+      'Raccolta: <strong>' + p.raccolta + '</strong><br>' +
+      'Fase: <strong>' + fP.emoji + ' ' + fP.fase + '</strong><br>' +
+      'Giorni dalla germ.: <strong>' + fP.days + '</strong>' +
+      '</div></div>';
+  }
+  return null;
+}
+
+
 
 (function avvioApp() {
   function runInit() {
