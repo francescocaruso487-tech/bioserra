@@ -643,23 +643,6 @@
       "data_attivazione": null
     },
     {
-      "id": "daily_1781640025709_3",
-      "nome": "Introduzione di micorrize",
-      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della cannabis",
-      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
-      "materiali": [
-        "micorrize",
-        "substrato"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null
-    },
-    {
       "id": "daily_1781640025709_4",
       "nome": "Controllo della temperatura",
       "descrizione": "Regolazione della temperatura per assicurare un ambiente ottimale per la crescita della cannabis",
@@ -955,7 +938,24 @@
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": "16/06/2026"
+    },
+    {
+      "id": "daily_1781640025709_3",
+      "nome": "Introduzione di micorrize",
+      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "materiali": [
+        "micorrize",
+        "substrato"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": "16/06/2026"
     }
   ],
-  "aggiornato": "2026-06-16 20:09"
+  "aggiornato": "2026-06-16 20:10"
 }
