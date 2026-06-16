@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-16T20:02:35.746Z",
+  "lastUpdate": "2026-06-16T20:03:44.647Z",
   "versione": "1.0",
   "esperimenti_disponibili": [
     {
@@ -312,6 +312,96 @@
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_0",
+      "nome": "Elettrocultura con impulsi elettromagnetici",
+      "descrizione": "Applicazione di impulsi elettromagnetici alle piante per stimolare la crescita e migliorare la resa",
+      "obiettivo": "Aumentare la resa e la qualità della cannabis",
+      "materiali": [
+        "Generatore di impulsi elettromagnetici",
+        "Cavi di collegamento",
+        "Sistema di controllo"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Ricerche scientifiche sulla elettrocultura",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_1",
+      "nome": "Monitoraggio del pH e della conduttività elettrica",
+      "descrizione": "Monitoraggio costante del pH e della conduttività elettrica del substrato per ottimizzare la nutrizione delle piante",
+      "obiettivo": "Migliorare la salute e la crescita delle piante",
+      "materiali": [
+        "pHmetro",
+        "Conduttivimetro",
+        "Sistema di registrazione dati"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_2",
+      "nome": "Sistema di irrigazione a goccia con fertilizzanti",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
+      "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
+      "materiali": [
+        "Sistema di irrigazione a goccia",
+        "Fertilizzanti specifici per la cannabis",
+        "Tubi e connettori"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 21,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_3",
+      "nome": "Studio della fotosintesi e dell'assorbimento di CO2",
+      "descrizione": "Studio della fotosintesi e dell'assorbimento di CO2 delle piante per ottimizzare la crescita e la resa",
+      "obiettivo": "Migliorare la fotosintesi e la resa della cannabis",
+      "materiali": [
+        "Strumenti di misura della fotosintesi",
+        "Sistema di registrazione dati",
+        "CO2"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Difficile",
+      "fonte": "Ricerche scientifiche sulla fotosintesi",
+      "durata_giorni": 60,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_4",
+      "nome": "Tecnica di prunning e potatura",
+      "descrizione": "Applicazione di tecniche di prunning e potatura per migliorare la forma e la struttura delle piante",
+      "obiettivo": "Migliorare la forma e la resa della cannabis",
+      "materiali": [
+        "Forbici da potatura",
+        "Coltelli da prunning",
+        "Guanti di protezione"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
     }
   ],
   "proposte": [
@@ -562,6 +652,96 @@
       "difficolta": "Medio",
       "fonte": "Tecnica di coltivazione",
       "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_0",
+      "nome": "Elettrocultura con impulsi elettromagnetici",
+      "descrizione": "Applicazione di impulsi elettromagnetici alle piante per stimolare la crescita e migliorare la resa",
+      "obiettivo": "Aumentare la resa e la qualità della cannabis",
+      "materiali": [
+        "Generatore di impulsi elettromagnetici",
+        "Cavi di collegamento",
+        "Sistema di controllo"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Ricerche scientifiche sulla elettrocultura",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_1",
+      "nome": "Monitoraggio del pH e della conduttività elettrica",
+      "descrizione": "Monitoraggio costante del pH e della conduttività elettrica del substrato per ottimizzare la nutrizione delle piante",
+      "obiettivo": "Migliorare la salute e la crescita delle piante",
+      "materiali": [
+        "pHmetro",
+        "Conduttivimetro",
+        "Sistema di registrazione dati"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_2",
+      "nome": "Sistema di irrigazione a goccia con fertilizzanti",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
+      "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
+      "materiali": [
+        "Sistema di irrigazione a goccia",
+        "Fertilizzanti specifici per la cannabis",
+        "Tubi e connettori"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 21,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_3",
+      "nome": "Studio della fotosintesi e dell'assorbimento di CO2",
+      "descrizione": "Studio della fotosintesi e dell'assorbimento di CO2 delle piante per ottimizzare la crescita e la resa",
+      "obiettivo": "Migliorare la fotosintesi e la resa della cannabis",
+      "materiali": [
+        "Strumenti di misura della fotosintesi",
+        "Sistema di registrazione dati",
+        "CO2"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Difficile",
+      "fonte": "Ricerche scientifiche sulla fotosintesi",
+      "durata_giorni": 60,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_4",
+      "nome": "Tecnica di prunning e potatura",
+      "descrizione": "Applicazione di tecniche di prunning e potatura per migliorare la forma e la struttura delle piante",
+      "obiettivo": "Migliorare la forma e la resa della cannabis",
+      "materiali": [
+        "Forbici da potatura",
+        "Coltelli da prunning",
+        "Guanti di protezione"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 14,
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
