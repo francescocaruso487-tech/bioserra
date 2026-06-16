@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-16",
+  "lastUpdate": "2026-06-16T20:00:25.709Z",
   "versione": "1.0",
   "esperimenti_disponibili": [
     {
@@ -75,8 +75,40 @@
       "categoria": "training",
       "difficolta": "facile",
       "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null
+      "attivo": false
+    },
+    {
+      "id": "ai_004",
+      "nome": "Elettrocultura a bassa intensità con coils nel suolo",
+      "descrizione": "Installazione di elettrodi o coils in rame o acciaio inox nel profilo del suolo collegati a sorgente di corrente a bassissima intensità per stimolare attività radicale.",
+      "materiali": [
+        "Filo di rame o acciaio inox",
+        "Sorgente corrente bassa intensità",
+        "Connettori"
+      ],
+      "obiettivo": "Stimolare attività radicale e assorbimento nutrienti",
+      "fonte": "PDF Drive",
+      "categoria": "elettrocultura",
+      "difficolta": "avanzata",
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "ai_005",
+      "nome": "Infuso di ortica fermentato potenziato",
+      "descrizione": "Fermentazione prolungata di ortica fresca in acqua non clorata per 2 settimane. Ricco di azoto, ferro e silicio. Diluire 1:10 prima dell uso.",
+      "materiali": [
+        "Ortica fresca",
+        "Acqua non clorata",
+        "Contenitore",
+        "2 settimane di attesa"
+      ],
+      "obiettivo": "Apportare azoto, ferro e silicio in forma biodisponibile",
+      "fonte": "Royal Queen Seeds + PDF Drive",
+      "categoria": "nutrizione_biologica",
+      "difficolta": "facile",
+      "data_proposta": "2026-06-16",
+      "attivo": false
     },
     {
       "id": "ai_002",
@@ -112,36 +144,87 @@
       "data_attivazione": null
     },
     {
-      "id": "ai_004",
-      "nome": "Elettrocultura a bassa intensità con coils nel suolo",
-      "descrizione": "Installazione di elettrodi o coils in rame o acciaio inox nel profilo del suolo collegati a sorgente di corrente a bassissima intensità per stimolare attività radicale.",
+      "id": "daily_1781640025709_0",
+      "nome": "Elettrocultura con LED",
+      "descrizione": "Implementazione di un sistema di elettrocultura con LED per aumentare la resa e la qualità della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
       "materiali": [
-        "Filo di rame o acciaio inox",
-        "Sorgente corrente bassa intensità",
-        "Connettori"
+        "LED grow light",
+        "cavi",
+        "trasformatore"
       ],
-      "obiettivo": "Stimolare attività radicale e assorbimento nutrienti",
-      "fonte": "PDF Drive",
-      "categoria": "elettrocultura",
-      "difficolta": "avanzata",
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
     },
     {
-      "id": "ai_005",
-      "nome": "Infuso di ortica fermentato potenziato",
-      "descrizione": "Fermentazione prolungata di ortica fresca in acqua non clorata per 2 settimane. Ricco di azoto, ferro e silicio. Diluire 1:10 prima dell uso.",
+      "id": "daily_1781640025709_1",
+      "nome": "Monitoraggio del pH",
+      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della cannabis",
+      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della cannabis",
       "materiali": [
-        "Ortica fresca",
-        "Acqua non clorata",
-        "Contenitore",
-        "2 settimane di attesa"
+        "pHmetro",
+        "soluzione di calibrazione"
       ],
-      "obiettivo": "Apportare azoto, ferro e silicio in forma biodisponibile",
-      "fonte": "Royal Queen Seeds + PDF Drive",
-      "categoria": "nutrizione_biologica",
+      "categoria": "Controllo ambientale",
       "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_2",
+      "nome": "Tecnica di prunning",
+      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "materiali": [
+        "forbici",
+        "guanti"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_3",
+      "nome": "Introduzione di micorrize",
+      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "materiali": [
+        "micorrize",
+        "substrato"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_4",
+      "nome": "Controllo della temperatura",
+      "descrizione": "Regolazione della temperatura per assicurare un ambiente ottimale per la crescita della cannabis",
+      "obiettivo": "Mantenere una temperatura stabile e ottimale per la crescita della cannabis",
+      "materiali": [
+        "termometro",
+        "ventilatore"
+      ],
+      "categoria": "Controllo ambientale",
+      "difficolta": "facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
@@ -225,6 +308,92 @@
       "fonte": "Zamnesia",
       "categoria": "nutrizione_biologica",
       "difficolta": "media",
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_0",
+      "nome": "Elettrocultura con LED",
+      "descrizione": "Implementazione di un sistema di elettrocultura con LED per aumentare la resa e la qualità della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "materiali": [
+        "LED grow light",
+        "cavi",
+        "trasformatore"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_1",
+      "nome": "Monitoraggio del pH",
+      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della cannabis",
+      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della cannabis",
+      "materiali": [
+        "pHmetro",
+        "soluzione di calibrazione"
+      ],
+      "categoria": "Controllo ambientale",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_2",
+      "nome": "Tecnica di prunning",
+      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "materiali": [
+        "forbici",
+        "guanti"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_3",
+      "nome": "Introduzione di micorrize",
+      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "materiali": [
+        "micorrize",
+        "substrato"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_4",
+      "nome": "Controllo della temperatura",
+      "descrizione": "Regolazione della temperatura per assicurare un ambiente ottimale per la crescita della cannabis",
+      "obiettivo": "Mantenere una temperatura stabile e ottimale per la crescita della cannabis",
+      "materiali": [
+        "termometro",
+        "ventilatore"
+      ],
+      "categoria": "Controllo ambientale",
+      "difficolta": "facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
