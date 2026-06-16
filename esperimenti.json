@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-16T20:07:16.681Z",
+  "lastUpdate": "2026-06-16T20:43:35.798Z",
   "versione": "1.0",
   "esperimenti_disponibili": [
     {
@@ -503,6 +503,35 @@
       "difficolta": "facile",
       "fonte": "Zamnesia",
       "durata_giorni": 1,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "ai_1781642615798_1",
+      "nome": "Tecnica di training",
+      "descrizione": "Tecnica per addestrare le piante a crescere in una direzione specifica",
+      "materiali": [
+        "Fili di ferro",
+        "Pali"
+      ],
+      "obiettivo": "",
+      "fonte": "Zamnesia",
+      "categoria": "generale",
+      "difficolta": "Medio",
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "ai_1781642615798_2",
+      "nome": "Esperimento di crescita con luce LED",
+      "descrizione": "Esperimento per testare l'effetto della luce LED sulla crescita delle piante",
+      "materiali": [],
+      "obiettivo": "",
+      "fonte": "Cervello AI",
+      "categoria": "generale",
+      "difficolta": "media",
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
