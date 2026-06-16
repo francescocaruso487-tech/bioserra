@@ -149,6 +149,21 @@
   ],
   "proposte": [
     {
+      "id": "ai_001",
+      "nome": "Low-Stress Training (LST) mirato",
+      "descrizione": "Piegare e fissare i rami giovani per aprire la chioma, uniformare la luce e aumentare i siti di fioritura senza stress eccessivo.",
+      "materiali": [
+        "Filo morbido o clip",
+        "Supporti"
+      ],
+      "obiettivo": "Aumentare i siti di fioritura e uniformare l esposizione alla luce",
+      "fonte": "Royal Queen Seeds",
+      "categoria": "training",
+      "difficolta": "facile",
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
       "id": "ai_004",
       "nome": "Elettrocultura a bassa intensità con coils nel suolo",
       "descrizione": "Installazione di elettrodi o coils in rame o acciaio inox nel profilo del suolo collegati a sorgente di corrente a bassissima intensità per stimolare attività radicale.",
@@ -215,23 +230,6 @@
       "data_attivazione": null
     }
   ],
-  "attivi": [
-    {
-      "id": "ai_001",
-      "nome": "Low-Stress Training (LST) mirato",
-      "descrizione": "Piegare e fissare i rami giovani per aprire la chioma, uniformare la luce e aumentare i siti di fioritura senza stress eccessivo.",
-      "materiali": [
-        "Filo morbido o clip",
-        "Supporti"
-      ],
-      "obiettivo": "Aumentare i siti di fioritura e uniformare l esposizione alla luce",
-      "fonte": "Royal Queen Seeds",
-      "categoria": "training",
-      "difficolta": "facile",
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": "16/06/2026"
-    }
-  ],
+  "attivi": [],
   "aggiornato": "2026-06-16 08:27"
 }
