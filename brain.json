@@ -1,264 +1,246 @@
 {
-  "lastUpdate": "2026-06-16T06:31:08.869Z",
+  "lastUpdate": "2026-06-16T06:45:25.371Z",
   "versione": "2.0",
   "cervello": {
-    "data_analisi": "2026-06-16T08:28:56.089+02:00",
+    "data_analisi": "2026-06-16T08:43:11.552+02:00",
     "consigli_giorno": [
-      "Controllare umidità del suolo 0–15 cm: in Living Soil irrigare solo quando il primo centimetro è asciutto per mantenere la rete microbica.",
-      "Proteggere le piante dal picco di calore: applicare ombra parziale nelle ore 12:00–16:00 e aumentare frequenza irrigazioni superficiali per evitare stress idrico.",
-      "Evitare operazioni meccaniche pesanti su autofiorenti (niente topping, LST molto leggero); per femminizzate sfruttare la finestra vegetativa per training e potature leggere."
+      "Controllo acqua al mattino: inizia la giornata verificando umidità del terreno nei 10 vasi; la Living Soil trattiene bene ma in giornate calde di giugno può servire irrigazione leggera a pomeriggio.",
+      "Ombreggiatura temporanea: se previste temperature >30°C, predisponi ombra leggera (rete ombreggiante 30-40%) nelle ore più calde per ridurre stress e rischi di fermare la fioritura nelle femminizzate.",
+      "No topping alle autofiorenti: per le 5 autofiorenti evita topping o stress meccanici importanti; preferisci LST morbido o nessun training su Epsilon e Gaia nelle ultime 2-3 settimane prima del raccolto previsto."
     ],
     "tecniche_nuove": [
       {
-        "nome": "Defogliazione controllata pre-fioritura",
-        "descrizione": "Rimuovere selettivamente foglie grandi che ostruiscono i colli dei rami 7–10 giorni prima del cambio fotoperiodo (o prima della fioritura nelle autofiorenti solo se necessario). Favorisce penetrazione luce e circolazione d'aria senza stress eccessivo.",
+        "nome": "SCROG adattato outdoor su rete bassa",
+        "descrizione": "Utilizzo di una rete a maglia larga (10-15 cm) posta a 30-40 cm sopra il bordo del contenitore per mantenere le cime in un piano uniforme e sfruttare meglio la luce solare; modulare tensione e inserimento dei rami senza stress eccessivo.",
         "materiali": [
-          "forbici sterili",
-          "guanti",
-          "alcool isopropilico per disinfezione"
+          "rete SCROG (corda o rete in plastica resistente)",
+          "pali di sostegno",
+          "clips morbide"
         ],
-        "applicazione": "Tutte le piante: rimuovere al massimo 15–20% della massa fogliare totale, concentrandosi su foglie morte/danneggiate e quelle che coprono i futuri siti di gemma; nelle autofiorenti limitare a rimozione puntuale di foglie malate o completamente ombreggianti.",
-        "fonte": "Royal Queen Seeds",
+        "applicazione": "Installare la rete quando le piante sono in pre-fioritura; guidare orizzontalmente i rami principali attraverso la rete ogni 3-5 giorni; per autofiorenti usare rete più larga e posizionarla più alta per evitare di limitare la crescita veloce.",
+        "fonte": "Zamnesia",
         "categoria": "training",
         "difficolta": "media"
       },
       {
-        "nome": "Supercropping (piega controllata)",
-        "descrizione": "Tecnica di high-stress training che consiste nello schiacciare leggermente la parte interna del fusto (fogliastro) per piegarlo senza spezzarlo, creando callo che rafforza il ramo e aumenta il trasporto di nutrienti.",
+        "nome": "Compost tea aerato rinforzato",
+        "descrizione": "Preparazione di tè di compost aerato con ammendanti microbici (vermicompost, kelp, farina di osso/pesce o humus) e zuccheri (melassa) per stimolare la popolazione microbica del suolo; applicabile come drench o come spruzzo fogliare leggero.",
         "materiali": [
-          "guanti",
-          "nastro morbido o fascette per legare",
-          "cuscinetti protettivi opzionali"
+          "secchio 20 L",
+          "pompa aeratore (palline d'aria)",
+          "vermicompost o compost stabile",
+          "melassa o zucchero organico",
+          "estratto di kelp"
         ],
-        "applicazione": "Applicare su femminizzate vigorose in fase vegetativa media; evitare su autofiorenti o piante stressate. Piega singoli rami principali per abbassare la canopia e favorire bud sites uniformi.",
-        "fonte": "Zamnesia",
-        "categoria": "training",
+        "applicazione": "Preparare tè 12-24 h prima dell'applicazione; somministrare come drench al suolo o come spray fogliare al mattino; per piante in Living Soil usare dosi ridotte la prima volta per evitare sbalzi microbici.",
+        "fonte": "Royal Queen Seeds, Zamnesia",
+        "categoria": "nutrizione",
+        "difficolta": "media"
+      },
+      {
+        "nome": "Elettrocultura sperimentale: stimolazione radici a bassa intensità",
+        "descrizione": "Applicazione controllata di micro-correnti o polarizzazione elettrostatica localizzata nel rizosfera per favorire attività microbica e sviluppo radicale; tecnica sperimentale, monitorare parametri e reazioni delle piante.",
+        "materiali": [
+          "alimentatore DC a bassa tensione regolabile",
+          "elettrodi in rame o acciaio inossidabile",
+          "cavi isolati",
+          "multimetro"
+        ],
+        "applicazione": "Posizionare elettrodi nel bordo del contenitore (mai a contatto diretto con radici centrali), impostare cicli brevi (poche decine di minuti) e basse tensioni, osservare risposta della pianta e del suolo; non applicare durante stress idrico o termico elevato.",
+        "fonte": "Zamnesia (tecniche avanzate) + letteratura elettrocultura (sintesi)",
+        "categoria": "elettrocultura",
         "difficolta": "avanzata"
       },
       {
-        "nome": "Tè di compost aerato + kelp (doppia applicazione su suolo e foglia)",
-        "descrizione": "Preparare un tè aerobico ricco di microbi benefici aggiungendo estratto di kelp come stimolante ormonale. Applicare come drench e come spray fogliare mattutino per rinforzare la comunità microbica e stimolare crescita e resistenza ai patogeni.",
+        "nome": "Spray fogliare siliceo + estratto di kelp per robustezza",
+        "descrizione": "Nebulizzazione di una soluzione a base di silice colloidale e kelp per rinforzare pareti cellulari, aumentare resistenza a stress e migliorare rigidità degli steli durante fioritura.",
         "materiali": [
-          "compost ben maturo",
-          "bombola aeratore (acquario) o miscelatore",
-          "estratto di kelp/alghe",
-          "melassa non trattata (come cibo per microbi)"
+          "silice colloidale (soluzione pronti uso)",
+          "estratto di kelp",
+          "atomizzatore a pressione"
         ],
-        "applicazione": "Usare per tutte le piante una volta ogni 7–14 giorni come drench al suolo; applicare spray fogliare mattino presto per 1–2 spruzzi leggeri (evitare nelle ore calde). Ridurre frequenza su autofiorenti a 1 applicazione per ciclo se piante giovani.",
-        "fonte": "Zamnesia",
-        "categoria": "nutrizione",
-        "difficolta": "facile"
-      },
-      {
-        "nome": "Inoculo di micorrize al travaso",
-        "descrizione": "Aggiungere spore micorriziche e batteri rizosferici al momento del trapianto per stabilire sinergie con la Living Soil, migliorando assorbimento P e tolleranza allo stress idrico.",
-        "materiali": [
-          "inoculo micorrizico commerciale",
-          "polvere batterica rizosferica (opzionale)"
-        ],
-        "applicazione": "Applicare in piccola quantità nella buca di trapianto vicino alle radici su tutte le piante al prossimo rinvaso o come top-dressing leggero se non si può trapiantare.",
+        "applicazione": "Spruzzare al mattino o al tramonto su foglie e giovani internodi ogni 7-14 giorni; evitare spruzzi diretti durante alta insolazione; non sostituire nutrizione base.",
         "fonte": "Royal Queen Seeds",
-        "categoria": "nutrizione",
+        "categoria": "nutrizione/altro",
         "difficolta": "facile"
       }
     ],
     "esperimenti_nuovi": [
       {
-        "nome": "Elettrocultura a bassa intensità - impulso radicolare",
-        "descrizione": "Inserire una coppia di elettrodi (rame e grafite/acciaio inox passivato) nel rizosfera di 5 piante e applicare impulsi a bassa tensione (0,5–3 V) e bassa corrente per 10–30 minuti al giorno per 14 giorni. Monitorare crescita, vigore fogliare, consumo acqua e reazione microbica del suolo.",
-        "obiettivo": "Valutare se stimoli elettrici corti aumentano la produzione radicale, l'efficienza di assorbimento e la vigorosità senza danneggiare la microfauna del suolo.",
+        "nome": "Elettrocultura A/B su 10 piante (5 vs 5)",
+        "descrizione": "Dividere le 10 piante in due gruppi: applicare stimolazione elettroculturale a bassa intensità al gruppo sperimentale per 14 giorni con cicli controllati; gruppo controllo in assenza di elettrocultura. Monitorare crescita, colore fogliare, trofismo e sviluppo radicale finale.",
+        "obiettivo": "Valutare effetti a breve termine (14 gg) su vigor vegetativo e parametri del rizosfera in Living Soil.",
         "materiali": [
-          "elettrodi rame e grafite o acciaio inox",
-          "alimentatore a impulsi DC regolabile (bassa tensione)",
+          "alimentatore DC regolabile",
+          "elettrodi",
           "multimetro",
-          "registratore semplice per note giornaliere"
+          "termometro e igrometro per suolo"
         ],
         "durata_giorni": 14,
-        "fonte": "PDF",
+        "fonte": "Zamnesia + fonti elettrocultura (sintesi)",
         "categoria": "elettrocultura"
       },
       {
-        "nome": "Confronto Compost Tea + Kelp vs Controllo (gruppo 5 vs 5)",
-        "descrizione": "Dividere le 10 piante in due gruppi equilibrati per genetica: Gruppo A riceve tè di compost aerato + kelp come drench settimanale; Gruppo B riceve solo acqua di irrigazione (baseline Living Soil). Monitorare crescita, resistenza a parassiti, colorazione fogliare e sviluppo precoce delle gemme per 14 giorni.",
-        "obiettivo": "Misurare l'effetto a breve termine del compost tea sulla vitalità, presenza microbica e risposta alle aggressioni (afidi/otr).",
+        "nome": "Confronto compost-tea: drench vs fogliare",
+        "descrizione": "Preparare un unico tè di compost aerato e applicarlo su due sottogruppi: A = drench a livello del suolo; B = spray fogliare; tenere un terzo piccolo controllo non trattato. Monitorare pressione dei parassiti, vigore fogliare e reattività fertilizzante per 14 giorni.",
+        "obiettivo": "Determinare quale modalità d'applicazione del compost tea è più efficace in Living Soil per migliorare resilienza e vigore in condizioni estive.",
         "materiali": [
-          "compost maturo",
-          "estratto di kelp",
-          "bombola aeratore",
-          "contenitori per preparazione tè"
+          "secchio 20 L",
+          "pompa aeratore",
+          "vermicompost",
+          "atomizzatore"
         ],
         "durata_giorni": 14,
-        "fonte": "Zamnesia",
+        "fonte": "Royal Queen Seeds, Zamnesia",
         "categoria": "nutrizione"
-      },
-      {
-        "nome": "Prova di ombreggiamento mid-day per riduzione stress termico",
-        "descrizione": "Applicare telo ombreggiante 30–40% sopra le piante dalle 12:00 alle 16:00 per 14 giorni consecutivi. Misurare temperatura fogliare, perdita fogliare e consumo idrico rispetto a piante scoperte.",
-        "obiettivo": "Valutare beneficio pratico di ombra leggera nel ridurre stress idrico e abbassare traspirazione in piena estate a Caserta.",
-        "materiali": [
-          "telo ombreggiante 30–40%",
-          "struttura di sostegno (pali, fascette)"
-        ],
-        "durata_giorni": 14,
-        "fonte": "Royal Queen Seeds",
-        "categoria": "altro"
       }
     ],
     "scoperte": [
-      "Le guide evidenziano che in Living Soil la crescita sana dipende più dal mantenimento della comunità microbica che dalla frequenza di concimazione chimica: eccesso di nutrienti solubili riduce l'efficacia del suolo vivo.",
-      "Tecniche stressanti (supercropping, topping) danno risultati solo se applicate con buon periodo vegetativo: autofiorenti mostrano chiaramente diminuzione di resa se stressate precocemente.",
-      "L'uso combinato di compost tea + kelp aumenta indicativamente vigore fogliare e resilienza ai piccoli attacchi di insetti nelle prime 2 settimane secondo i dati qualitativi di Zamnesia."
+      "LST moderato e costante nelle femminizzate in Living Soil tende a migliorare l'esposizione alla luce senza impoverire il suolo, mentre training aggressivi su autofiorenti riducono rese.",
+      "Compost tea aerato mostra correlazione con riduzione apparente di fitopatie e aumento della vivacità fogliare quando applicato regolarmente in Living Soil.",
+      "Prove preliminari di elettrocultura segnalano aumento di ramificazione radicale e velocità di crescita nelle 2 settimane successive, ma la risposta è variabile e dipende da stato idrico e microflora del suolo."
     ],
     "avvisi": [
-      "Attenzione a non eseguire topping o grandi potature su autofiorenti: cicli fissi non recuperano bene lo stress.",
-      "Quando si sperimenta elettrocultura: usare solo basse tensioni, isolare connessioni e monitorare pH e ossidazione elettrolitica per evitare rilasci metallici nel suolo.",
-      "Evitate applicazioni fogliari nelle ore più calde (punte di calore) e non spruzzare in pieno sole per rischio di scottature fogliari."
+      "Attenzione a stress termico: monitorare irrigazione e prevedere ombra per picchi >30°C.",
+      "Non eccedere con applicazioni di compost tea in contenitori poco drenanti per evitare condizioni anaerobiche.",
+      "Sperimentazioni elettroculturali richiedono monitoraggio elettrico e attenzione alla sicurezza: evitare cortocircuiti e contatti umani diretti con elettrodi sotto tensione."
     ],
     "consigli_piante": {
-      "autofiorenti": "Minimizzare stress meccanico: nessun topping, LST molto leggero solo se piante sane e con almeno 3 set di nodi; irrigare con moderazione usando acqua tiepida, somministrare compost tea diluito 1 volta ogni 7–14 giorni solo se non c'è sovraccarico di nutrienti; evitare elettrocultura prolungata (testare impulsi brevi 5–10 min/giorno e osservare), proteggere dal caldo con ombra leggera nelle ore centrali.",
-      "femminizzate": "Sfruttare la lunga giornata estiva per intensificare LST, manifold o SCROG prima del cambio a <12 h; eseguire defogliazione controllata per aprire la chioma e migliorare penetrazione luce; inoculare micorrize ai punti di trapianto o come top-dressing; programmare supporti/trelli per sostenere futuri rami carichi."
+      "autofiorenti": "Per le 5 autofiorenti (Epsilon F1 ID:7 — raccolta a 60gg, Milky Way ID:1, Titan F1 ID:2, Medusa F1 ID:3, Gaia F1:8) evitare topping; applicare solo LST dolce nelle prime 2-3 settimane; irrigazioni leggere e più frequenti in giornate calde; non introdurre nuovi stress (elettrocultura aggressiva o training pesante) nelle ultime 2 settimane prima del raccolto previsto.",
+      "femminizzate": "Per le 5 femminizzate (Astro Lemonade ID:4, Cosmic Cheddar ID:11, Orbital Banana ID:6, Royal Gorilla ID:10, Mexican Rush ID:9) procedere con training moderato (LST/SCROG leggero) per massimizzare la copertura fogliare; iniziare applicazioni settimanali di compost tea per sostenere la microflora durante la fioritura; predisporre ombreggiatura temporanea nei picchi di caldo e controllare presenza di afidi/odore rilevabile, intervenendo con metodi biologici."
     }
   },
   "agenti": {
     "piante": {
-      "stato_generale": "buono: autofiorenti in avanzata fioritura (Epsilon molto vicina alla conclusione; Milky Way, Titan, Medusa in piena fase di fioritura; Gaia nelle fasi finali); femminizzate ancora in vegetativo, senza criticità evidenti.",
+      "stato_generale": "buono",
       "azioni_oggi": [
-        "ispezione visiva per parassiti, muffe e danni fogliari",
-        "registrare parametri ambientali (temperatura, umidità, ventilazione) e annotare variazioni",
-        "controllare drenaggio e stabilità dei vasi; applicare supporti meccanici se necessario",
-        "aggiornare diario di coltivazione con stadio fenologico e interventi eseguiti",
-        "preparare piano di gestione (irrigazione e nutrizione) basato sulle etichette dei prodotti e sulla normativa locale"
+        "Controllo tricomi su Epsilon F1 (possibile raccolto entro ~4 gg)",
+        "Verifica umidità substrato e peso vasi; annaffiare solo se superficiale 2–3 cm è asciutta",
+        "Controllo pH e EC soluzione di riserva (target pH 6.0–6.5)",
+        "Ispezione fitofagi e muffe (speciale attenzione cime dense delle autofiorenti)",
+        "Supportare rami con carico di infiorescenze, rimuovere foglie morte/gravi sintomi"
       ],
-      "irrigazione": "innaffiare in base allo stato del substrato: bagnare quando la parte superiore del terreno risulta asciutta e non ci sono segni di stress idrico; evitare ristagni e drenare l’acqua in eccesso. Seguire le raccomandazioni del fornitore per parametri dell’acqua e adattare la frequenza in funzione della fase di sviluppo e del clima locale.",
-      "nutrizione": "non posso fornire dosi specifiche. In termini generali, usare concimi formulati per la fase vegetativa sulle femminizzate e formulazioni da fiore per le autofiorenti in fioritura; favorire nutrienti con più fosforo e potassio nella fase di sviluppo dei fiori e ridurre progressivamente l’azoto verso la fine della fioritura. Seguire sempre le indicazioni del produttore dei prodotti nutritivi e consultare un tecnico qualificato.",
-      "attenzione": "monitorare regolarmente per segni di muffa o marciume nelle infiorescenze, infestazioni di insetti, ingiallimenti o necrosi fogliari improvvise, e problemi di ventilazione. Per le femminizzate, confermare che il regime luminoso e la gestione vegetativa siano coerenti con il piano stagionale. Verificare la conformità alle normative locali e rivolgersi a professionisti autorizzati per interventi specifici o dosaggi dettagliati."
+      "irrigazione": "Annaffiare quando lo strato superficiale (2–3 cm) è asciutto o quando il vaso è visibilmente più leggero. Dare acqua fino a ottenere ~10–20% di run‑off per lavare il substrato; frequenza tipica 2–5 giorni a seconda temperatura/RH e volume vaso. Per autofiorenti in late‑flower ridurre leggermente i volumi e lasciare asciugare un po' di più fra irrigazioni per evitare gonfiore e marciumi. Mantenere pH acqua 6.0–6.5.",
+      "nutrizione": "Generale: passare a formula bloom per autofiorenti in fioritura avanzata. Indicazioni conservative: concime base bloom 1.0–1.5 mL/L (monitorare EC target 1.2–1.6 mS/cm), Cal‑Mag 0.2–0.5 mL/L se necessario, PK booster 0.5 mL/L 1–2 volte/settimana per piante in piena fioritura. Microbiologia (mycorrhizae/batteri benefici) 0.5–1 mL/L ogni 2–3 irrigazioni per salute radici. Per piante femminizzate (fotoperiodiche in vegetativa): concime grow 0.8–1.2 mL/L, Cal‑Mag 0.2–0.5 mL/L. Epsilon F1: iniziare valutazione raccolta (flush 4–10 giorni prima se trichomi maturi), se si flush fare solo acqua pH 6.0 fino a run‑off; interrompere additivi nel periodo di flush. Regolare dosi in base a reazione fogliare e EC misurata.",
+      "attenzione": "Controllare quotidianamente: trichomi (colore) e rapporti pistilli sulle autofiorenti per programmare raccolta; ingiallimento foglie basali (normale in late flower) vs macchie/necrosi (carenze o salinità); segni di marciume del colletto o funghi; presenza di insetti (acari, afidi, mosche bianche) specialmente sotto foglie e nelle cime; temperatura giorno 22–28°C e notte 18–22°C, RH 40–50% in fioritura (50–70% in vegetativa); per le femminizzate evitare fughe di luce notturna e mantenere fotoperiodo vegetativo stabile (es. 18/6) fino a ottobre."
     },
     "ambiente": {
       "luna": {
-        "fase": "Gibbosa calante",
-        "emoji": "🌖",
-        "illuminazione_pct": 82,
-        "consiglio": "Giornata favorevole alla raccolta e alla conservazione dei frutti; evitare semine profonde e lavorazioni radicali. Eseguire controlli e irrigazioni al mattino."
+        "fase": "Gibbosa crescente",
+        "emoji": "🌔",
+        "illuminazione_pct": 75,
+        "consiglio": "Fase favorevole per raccolta e per lavori che valorizzano la produzione; evitare interventi che stimolano lo sviluppo radicale profondo."
       },
       "biodinamica": {
         "tipo_giorno": "Frutto",
         "qualita": "Ottimo",
-        "consiglio": "Ideale per raccogliere pomodori, peperoni e altre colture da frutto; potature leggere e controllo fitosanitario. Evitare interventi sulle radici."
+        "consiglio": "Giorno indicato per raccolta di frutti e per lavorazioni orientate alla produzione e conservazione; preferire interventi leggeri e non invasivi sul suolo."
       },
-      "correlazione": "La fase lunare (gibbosa calante) è coerente con un giorno biodinamico di tipo Frutto: buona sinergia per raccolta, maturazione e conservazione in serra Living Soil.",
-      "momento_migliore": "08:00-10:00 — raccolta frutti, controlli fitosanitari e irrigazione di integrazione; evitare trapianti e lavorazioni radicali."
+      "correlazione": "Luna gibbosa crescente + giorno biodinamico Frutto: energia orientata alla produzione e maturazione; sinergia positiva per raccolta e trattamenti che preservano qualità e shelf‑life.",
+      "momento_migliore": "2026-06-16 08:00-11:00 CEST — raccolta frutti, lavorazioni leggere in serra (controllo parassiti, irrigazione mirata), semina o trapianto di piante da frutto o da seme per resa"
     },
     "elettro": {}
   },
   "tecniche_nuove": [
     {
-      "nome": "Defogliazione controllata pre-fioritura",
-      "descrizione": "Rimuovere selettivamente foglie grandi che ostruiscono i colli dei rami 7–10 giorni prima del cambio fotoperiodo (o prima della fioritura nelle autofiorenti solo se necessario). Favorisce penetrazione luce e circolazione d'aria senza stress eccessivo.",
+      "nome": "SCROG adattato outdoor su rete bassa",
+      "descrizione": "Utilizzo di una rete a maglia larga (10-15 cm) posta a 30-40 cm sopra il bordo del contenitore per mantenere le cime in un piano uniforme e sfruttare meglio la luce solare; modulare tensione e inserimento dei rami senza stress eccessivo.",
       "materiali": [
-        "forbici sterili",
-        "guanti",
-        "alcool isopropilico per disinfezione"
+        "rete SCROG (corda o rete in plastica resistente)",
+        "pali di sostegno",
+        "clips morbide"
       ],
-      "applicazione": "Tutte le piante: rimuovere al massimo 15–20% della massa fogliare totale, concentrandosi su foglie morte/danneggiate e quelle che coprono i futuri siti di gemma; nelle autofiorenti limitare a rimozione puntuale di foglie malate o completamente ombreggianti.",
-      "fonte": "Royal Queen Seeds",
+      "applicazione": "Installare la rete quando le piante sono in pre-fioritura; guidare orizzontalmente i rami principali attraverso la rete ogni 3-5 giorni; per autofiorenti usare rete più larga e posizionarla più alta per evitare di limitare la crescita veloce.",
+      "fonte": "Zamnesia",
       "categoria": "training",
       "difficolta": "media"
     },
     {
-      "nome": "Supercropping (piega controllata)",
-      "descrizione": "Tecnica di high-stress training che consiste nello schiacciare leggermente la parte interna del fusto (fogliastro) per piegarlo senza spezzarlo, creando callo che rafforza il ramo e aumenta il trasporto di nutrienti.",
+      "nome": "Compost tea aerato rinforzato",
+      "descrizione": "Preparazione di tè di compost aerato con ammendanti microbici (vermicompost, kelp, farina di osso/pesce o humus) e zuccheri (melassa) per stimolare la popolazione microbica del suolo; applicabile come drench o come spruzzo fogliare leggero.",
       "materiali": [
-        "guanti",
-        "nastro morbido o fascette per legare",
-        "cuscinetti protettivi opzionali"
+        "secchio 20 L",
+        "pompa aeratore (palline d'aria)",
+        "vermicompost o compost stabile",
+        "melassa o zucchero organico",
+        "estratto di kelp"
       ],
-      "applicazione": "Applicare su femminizzate vigorose in fase vegetativa media; evitare su autofiorenti o piante stressate. Piega singoli rami principali per abbassare la canopia e favorire bud sites uniformi.",
-      "fonte": "Zamnesia",
-      "categoria": "training",
+      "applicazione": "Preparare tè 12-24 h prima dell'applicazione; somministrare come drench al suolo o come spray fogliare al mattino; per piante in Living Soil usare dosi ridotte la prima volta per evitare sbalzi microbici.",
+      "fonte": "Royal Queen Seeds, Zamnesia",
+      "categoria": "nutrizione",
+      "difficolta": "media"
+    },
+    {
+      "nome": "Elettrocultura sperimentale: stimolazione radici a bassa intensità",
+      "descrizione": "Applicazione controllata di micro-correnti o polarizzazione elettrostatica localizzata nel rizosfera per favorire attività microbica e sviluppo radicale; tecnica sperimentale, monitorare parametri e reazioni delle piante.",
+      "materiali": [
+        "alimentatore DC a bassa tensione regolabile",
+        "elettrodi in rame o acciaio inossidabile",
+        "cavi isolati",
+        "multimetro"
+      ],
+      "applicazione": "Posizionare elettrodi nel bordo del contenitore (mai a contatto diretto con radici centrali), impostare cicli brevi (poche decine di minuti) e basse tensioni, osservare risposta della pianta e del suolo; non applicare durante stress idrico o termico elevato.",
+      "fonte": "Zamnesia (tecniche avanzate) + letteratura elettrocultura (sintesi)",
+      "categoria": "elettrocultura",
       "difficolta": "avanzata"
     },
     {
-      "nome": "Tè di compost aerato + kelp (doppia applicazione su suolo e foglia)",
-      "descrizione": "Preparare un tè aerobico ricco di microbi benefici aggiungendo estratto di kelp come stimolante ormonale. Applicare come drench e come spray fogliare mattutino per rinforzare la comunità microbica e stimolare crescita e resistenza ai patogeni.",
+      "nome": "Spray fogliare siliceo + estratto di kelp per robustezza",
+      "descrizione": "Nebulizzazione di una soluzione a base di silice colloidale e kelp per rinforzare pareti cellulari, aumentare resistenza a stress e migliorare rigidità degli steli durante fioritura.",
       "materiali": [
-        "compost ben maturo",
-        "bombola aeratore (acquario) o miscelatore",
-        "estratto di kelp/alghe",
-        "melassa non trattata (come cibo per microbi)"
+        "silice colloidale (soluzione pronti uso)",
+        "estratto di kelp",
+        "atomizzatore a pressione"
       ],
-      "applicazione": "Usare per tutte le piante una volta ogni 7–14 giorni come drench al suolo; applicare spray fogliare mattino presto per 1–2 spruzzi leggeri (evitare nelle ore calde). Ridurre frequenza su autofiorenti a 1 applicazione per ciclo se piante giovani.",
-      "fonte": "Zamnesia",
-      "categoria": "nutrizione",
-      "difficolta": "facile"
-    },
-    {
-      "nome": "Inoculo di micorrize al travaso",
-      "descrizione": "Aggiungere spore micorriziche e batteri rizosferici al momento del trapianto per stabilire sinergie con la Living Soil, migliorando assorbimento P e tolleranza allo stress idrico.",
-      "materiali": [
-        "inoculo micorrizico commerciale",
-        "polvere batterica rizosferica (opzionale)"
-      ],
-      "applicazione": "Applicare in piccola quantità nella buca di trapianto vicino alle radici su tutte le piante al prossimo rinvaso o come top-dressing leggero se non si può trapiantare.",
+      "applicazione": "Spruzzare al mattino o al tramonto su foglie e giovani internodi ogni 7-14 giorni; evitare spruzzi diretti durante alta insolazione; non sostituire nutrizione base.",
       "fonte": "Royal Queen Seeds",
-      "categoria": "nutrizione",
+      "categoria": "nutrizione/altro",
       "difficolta": "facile"
     }
   ],
   "esperimenti_nuovi": [
     {
-      "nome": "Elettrocultura a bassa intensità - impulso radicolare",
-      "descrizione": "Inserire una coppia di elettrodi (rame e grafite/acciaio inox passivato) nel rizosfera di 5 piante e applicare impulsi a bassa tensione (0,5–3 V) e bassa corrente per 10–30 minuti al giorno per 14 giorni. Monitorare crescita, vigore fogliare, consumo acqua e reazione microbica del suolo.",
-      "obiettivo": "Valutare se stimoli elettrici corti aumentano la produzione radicale, l'efficienza di assorbimento e la vigorosità senza danneggiare la microfauna del suolo.",
+      "nome": "Elettrocultura A/B su 10 piante (5 vs 5)",
+      "descrizione": "Dividere le 10 piante in due gruppi: applicare stimolazione elettroculturale a bassa intensità al gruppo sperimentale per 14 giorni con cicli controllati; gruppo controllo in assenza di elettrocultura. Monitorare crescita, colore fogliare, trofismo e sviluppo radicale finale.",
+      "obiettivo": "Valutare effetti a breve termine (14 gg) su vigor vegetativo e parametri del rizosfera in Living Soil.",
       "materiali": [
-        "elettrodi rame e grafite o acciaio inox",
-        "alimentatore a impulsi DC regolabile (bassa tensione)",
+        "alimentatore DC regolabile",
+        "elettrodi",
         "multimetro",
-        "registratore semplice per note giornaliere"
+        "termometro e igrometro per suolo"
       ],
       "durata_giorni": 14,
-      "fonte": "PDF",
+      "fonte": "Zamnesia + fonti elettrocultura (sintesi)",
       "categoria": "elettrocultura"
     },
     {
-      "nome": "Confronto Compost Tea + Kelp vs Controllo (gruppo 5 vs 5)",
-      "descrizione": "Dividere le 10 piante in due gruppi equilibrati per genetica: Gruppo A riceve tè di compost aerato + kelp come drench settimanale; Gruppo B riceve solo acqua di irrigazione (baseline Living Soil). Monitorare crescita, resistenza a parassiti, colorazione fogliare e sviluppo precoce delle gemme per 14 giorni.",
-      "obiettivo": "Misurare l'effetto a breve termine del compost tea sulla vitalità, presenza microbica e risposta alle aggressioni (afidi/otr).",
+      "nome": "Confronto compost-tea: drench vs fogliare",
+      "descrizione": "Preparare un unico tè di compost aerato e applicarlo su due sottogruppi: A = drench a livello del suolo; B = spray fogliare; tenere un terzo piccolo controllo non trattato. Monitorare pressione dei parassiti, vigore fogliare e reattività fertilizzante per 14 giorni.",
+      "obiettivo": "Determinare quale modalità d'applicazione del compost tea è più efficace in Living Soil per migliorare resilienza e vigore in condizioni estive.",
       "materiali": [
-        "compost maturo",
-        "estratto di kelp",
-        "bombola aeratore",
-        "contenitori per preparazione tè"
+        "secchio 20 L",
+        "pompa aeratore",
+        "vermicompost",
+        "atomizzatore"
       ],
       "durata_giorni": 14,
-      "fonte": "Zamnesia",
+      "fonte": "Royal Queen Seeds, Zamnesia",
       "categoria": "nutrizione"
-    },
-    {
-      "nome": "Prova di ombreggiamento mid-day per riduzione stress termico",
-      "descrizione": "Applicare telo ombreggiante 30–40% sopra le piante dalle 12:00 alle 16:00 per 14 giorni consecutivi. Misurare temperatura fogliare, perdita fogliare e consumo idrico rispetto a piante scoperte.",
-      "obiettivo": "Valutare beneficio pratico di ombra leggera nel ridurre stress idrico e abbassare traspirazione in piena estate a Caserta.",
-      "materiali": [
-        "telo ombreggiante 30–40%",
-        "struttura di sostegno (pali, fascette)"
-      ],
-      "durata_giorni": 14,
-      "fonte": "Royal Queen Seeds",
-      "categoria": "altro"
     }
   ],
   "scoperte": [
-    "Le guide evidenziano che in Living Soil la crescita sana dipende più dal mantenimento della comunità microbica che dalla frequenza di concimazione chimica: eccesso di nutrienti solubili riduce l'efficacia del suolo vivo.",
-    "Tecniche stressanti (supercropping, topping) danno risultati solo se applicate con buon periodo vegetativo: autofiorenti mostrano chiaramente diminuzione di resa se stressate precocemente.",
-    "L'uso combinato di compost tea + kelp aumenta indicativamente vigore fogliare e resilienza ai piccoli attacchi di insetti nelle prime 2 settimane secondo i dati qualitativi di Zamnesia."
+    "LST moderato e costante nelle femminizzate in Living Soil tende a migliorare l'esposizione alla luce senza impoverire il suolo, mentre training aggressivi su autofiorenti riducono rese.",
+    "Compost tea aerato mostra correlazione con riduzione apparente di fitopatie e aumento della vivacità fogliare quando applicato regolarmente in Living Soil.",
+    "Prove preliminari di elettrocultura segnalano aumento di ramificazione radicale e velocità di crescita nelle 2 settimane successive, ma la risposta è variabile e dipende da stato idrico e microflora del suolo."
   ],
   "avvisi": [
-    "Attenzione a non eseguire topping o grandi potature su autofiorenti: cicli fissi non recuperano bene lo stress.",
-    "Quando si sperimenta elettrocultura: usare solo basse tensioni, isolare connessioni e monitorare pH e ossidazione elettrolitica per evitare rilasci metallici nel suolo.",
-    "Evitate applicazioni fogliari nelle ore più calde (punte di calore) e non spruzzare in pieno sole per rischio di scottature fogliari."
+    "Attenzione a stress termico: monitorare irrigazione e prevedere ombra per picchi >30°C.",
+    "Non eccedere con applicazioni di compost tea in contenitori poco drenanti per evitare condizioni anaerobiche.",
+    "Sperimentazioni elettroculturali richiedono monitoraggio elettrico e attenzione alla sicurezza: evitare cortocircuiti e contatti umani diretti con elettrodi sotto tensione."
   ],
   "consigli_giorno": [
-    "Controllare umidità del suolo 0–15 cm: in Living Soil irrigare solo quando il primo centimetro è asciutto per mantenere la rete microbica.",
-    "Proteggere le piante dal picco di calore: applicare ombra parziale nelle ore 12:00–16:00 e aumentare frequenza irrigazioni superficiali per evitare stress idrico.",
-    "Evitare operazioni meccaniche pesanti su autofiorenti (niente topping, LST molto leggero); per femminizzate sfruttare la finestra vegetativa per training e potature leggere."
+    "Controllo acqua al mattino: inizia la giornata verificando umidità del terreno nei 10 vasi; la Living Soil trattiene bene ma in giornate calde di giugno può servire irrigazione leggera a pomeriggio.",
+    "Ombreggiatura temporanea: se previste temperature >30°C, predisponi ombra leggera (rete ombreggiante 30-40%) nelle ore più calde per ridurre stress e rischi di fermare la fioritura nelle femminizzate.",
+    "No topping alle autofiorenti: per le 5 autofiorenti evita topping o stress meccanici importanti; preferisci LST morbido o nessun training su Epsilon e Gaia nelle ultime 2-3 settimane prima del raccolto previsto."
   ]
 }
