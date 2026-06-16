@@ -1354,172 +1354,91 @@
   </div>
 </div>
 
-<!-- ELETTROCULTURA -->
 <!-- LABORATORIO -->
 <section id="sec-laboratorio" class="section">
   <div class="section-title">Laboratorio 🔬</div>
-  <div class="section-sub">Elettrocultura · Manuali · AI Serra</div>
+  <div class="section-sub">Elettrocultura · Manuali · Cervello AI</div>
 
-  <!-- TAB BAR LABORATORIO -->
+  <!-- TAB BAR PRINCIPALE -->
   <div class="piante-tab-bar" style="margin-bottom:16px">
-    <button class="piante-tab active" id="lab-tab-elettro" onclick="switchLabTab('elettro')">⚡ Elettrocultura</button>
-    <button class="piante-tab" id="lab-tab-manuali" onclick="switchLabTab('manuali')">📚 Manuali</button>
-    <button class="piante-tab" id="lab-tab-ai" onclick="switchLabTab('ai')">🤖 AI Serra</button>
+    <button class="piante-tab active" id="lab-tab-elettro"  onclick="switchLabTab('elettro')">⚡ Elettrocultura</button>
+    <button class="piante-tab"        id="lab-tab-manuali"  onclick="switchLabTab('manuali')">📚 Manuali</button>
+    <button class="piante-tab"        id="lab-tab-cervello" onclick="switchLabTab('cervello')">🧠 Cervello</button>
   </div>
 
-  <!-- PANNELLO: ELETTROCULTURA -->
+  <!-- ══ PANNELLO: ELETTROCULTURA ══ -->
   <div id="lab-panel-elettro" class="piante-panel active">
-    <div class="section-title">Elettrocultura ⚡</div>
-  <div class="section-sub">Esperimenti attivi · Living Soil</div>
 
-  <!-- STATS DINAMICHE -->
-  <div class="stat-trio">
-    <div class="stat-box"><div class="stat-num" style="font-size:22px;color:var(--green3)" id="el-stat-attive">0</div><div class="stat-label">Tecniche attive</div></div>
-    <div class="stat-box"><div class="stat-num" style="font-size:22px;color:var(--blue)" id="el-stat-log">0</div><div class="stat-label">Osservazioni</div></div>
-    <div class="stat-box"><div class="stat-num" style="font-size:22px;color:var(--orange)" id="el-stat-piante">0</div><div class="stat-label">Piante tracciate</div></div>
-  </div>
-
-  <!-- TAB BAR -->
-  <div class="piante-tab-bar" style="margin-bottom:14px">
-    <button class="piante-tab active" id="etab-tecniche" onclick="switchElettroTab('tecniche')">⚡ Tecniche</button>
-    <button class="piante-tab" id="etab-tracker" onclick="switchElettroTab('tracker')">🌱 Tracker</button>
-    <button class="piante-tab" id="etab-log" onclick="switchElettroTab('log')">📝 Log</button>
-    <button class="piante-tab" id="etab-stats" onclick="switchElettroTab('stats')">📊 Statistiche</button>
-    <button class="piante-tab" id="etab-esperimenti" onclick="switchElettroTab('esperimenti')">🧪 Esperimenti</button>
-  </div>
-
-  <!-- PANNELLO: TECNICHE -->
-  <div id="epanel-tecniche" class="piante-panel active">
-
-    <!-- CONSIGLIO LUNARE -->
-    <div class="card" id="el-lunar-tip" style="background:linear-gradient(135deg,#1a1a2e,#16213e);border:1px solid #3a3a6e;margin-bottom:12px">
-      <div class="card-title" style="color:#a8b8ff">🌙 Consiglio Lunare</div>
-      <div id="el-lunar-text" style="font-size:13px;color:var(--text2);line-height:1.6">Calcolo in corso…</div>
+    <!-- SEZIONE TECNICHE -->
+    <div class="card" style="margin-bottom:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <div>
+          <div class="card-title" style="margin:0">⚡ Tecniche</div>
+          <div style="font-size:12px;color:var(--text3);margin-top:2px">Proposte dal Cervello AI · attive su tutte le piante</div>
+        </div>
+        <button onclick="elTecRicarica()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 11px;color:var(--green2);font-size:12px;font-weight:600;cursor:pointer">🔄</button>
+      </div>
+      <div id="el-tec-status" style="font-size:11px;color:var(--text3);margin-bottom:8px"></div>
+      <div id="el-tec-lista">
+        <div style="text-align:center;padding:20px;color:var(--text3);font-size:13px">
+          ⏳ Caricamento tecniche…
+        </div>
+      </div>
     </div>
 
-    <!-- TECNICHE BASE -->
-    <div id="el-tecniche-lista"></div>
+    <!-- SEZIONE ESPERIMENTI -->
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <div>
+          <div class="card-title" style="margin:0">🧪 Esperimenti</div>
+          <div style="font-size:12px;color:var(--text3);margin-top:2px">Sincronizzato con il bot</div>
+        </div>
+        <button onclick="espReload()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 11px;color:var(--green2);font-size:12px;font-weight:600;cursor:pointer">🔄</button>
+      </div>
+      <div id="esp-status" style="font-size:11px;color:var(--text3);margin-bottom:10px;text-align:center"></div>
 
-    <!-- TECNICHE DA JSON (AI) -->
-    <div id="el-tecniche-json">
-      <div style="text-align:center;font-size:12px;color:var(--text3);padding:8px 0">⏳ Caricamento tecniche AI…</div>
-    </div>
-
-  </div>
-
-  <!-- PANNELLO: TRACKER — vista globale -->
-  <div id="epanel-tracker" class="piante-panel">
-    <div style="font-size:13px;color:var(--text2);margin-bottom:12px;line-height:1.6">
-      Tecniche attive su <strong>tutte le piante</strong>. Usa i toggle nella tab Tecniche per attivarle.
-    </div>
-    <div id="el-tracker-lista"></div>
-  </div>
-
-  <!-- PANNELLO: LOG OSSERVAZIONI -->
-  <div id="epanel-log" class="piante-panel">
-    <!-- Form aggiunta -->
-    <div class="card" style="margin-bottom:12px">
-      <div class="card-title">➕ Nuova Osservazione</div>
-      <div style="display:grid;gap:8px;margin-top:10px">
-        <select id="el-log-pianta" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-size:13px;font-family:var(--font)">
-          <option value="">— Seleziona pianta —</option>
-        </select>
-        <select id="el-log-tecnica" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-size:13px;font-family:var(--font)">
-          <option value="">— Seleziona tecnica —</option>
-        </select>
-        <textarea id="el-log-nota" placeholder="Descrivi l'osservazione…" rows="3"
-          style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-size:13px;font-family:var(--font);resize:vertical;outline:none"></textarea>
-        <button onclick="elAddLog()" style="background:var(--green2);border:none;border-radius:10px;padding:12px;color:var(--text);font-size:14px;font-weight:700;cursor:pointer">
-          💾 Salva Osservazione
+      <!-- SUB-TAB -->
+      <div style="display:flex;gap:8px;margin-bottom:12px">
+        <button id="esptab-attivi"   onclick="switchEspTab('attivi')"
+          style="flex:1;padding:9px 0;border-radius:10px;border:none;font-size:13px;font-weight:700;cursor:pointer;background:var(--green2);color:var(--text)">
+          ✅ Attivi
+        </button>
+        <button id="esptab-proposte" onclick="switchEspTab('proposte')"
+          style="flex:1;padding:9px 0;border-radius:10px;border:1px solid var(--border);font-size:13px;font-weight:700;cursor:pointer;background:var(--card2);color:var(--text2)">
+          📋 Archivio possibili
         </button>
       </div>
-    </div>
-    <!-- Lista log -->
-    <div id="el-log-lista"></div>
-  </div>
 
-  <!-- PANNELLO: STATISTICHE -->
-  <div id="epanel-stats" class="piante-panel">
-    <div class="card" style="margin-bottom:12px">
-      <div class="card-title">📊 Tecniche attive globalmente</div>
-      <div style="font-size:12px;color:var(--text2);margin-bottom:12px">Stato di ogni tecnica su tutte le 10 piante</div>
-      <div id="el-stats-chart"></div>
-    </div>
-    <div class="card" style="margin-bottom:12px">
-      <div class="card-title">⚡ Riepilogo attivazioni</div>
-      <div id="el-stats-tecniche"></div>
-    </div>
-    <div class="card">
-      <div class="card-title">📝 Log recenti</div>
-      <div id="el-stats-log-recent"></div>
-    </div>
-  </div>
-
-  <!-- PANNELLO: ESPERIMENTI -->
-  <div id="epanel-esperimenti" class="piante-panel">
-
-    <!-- Header + reload -->
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
-      <div>
-        <div style="font-size:15px;font-weight:700;color:var(--text)">🧪 Esperimenti</div>
-        <div style="font-size:12px;color:var(--text3)">Sincronizzato con bot Telegram</div>
+      <div id="esp-panel-attivi">
+        <div id="esp-lista-attivi">
+          <div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">⏳ Caricamento…</div>
+        </div>
       </div>
-      <button onclick="espReload()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 12px;color:var(--green2);font-size:12px;font-weight:600;cursor:pointer">🔄 Aggiorna</button>
-    </div>
-
-    <!-- STATO CONNESSIONE -->
-    <div id="esp-status" style="font-size:12px;color:var(--text3);margin-bottom:10px;text-align:center"></div>
-
-    <!-- SUB-TAB: Attivi / Da valutare -->
-    <div style="display:flex;gap:8px;margin-bottom:14px">
-      <button id="esptab-attivi" onclick="switchEspTab('attivi')"
-        style="flex:1;padding:9px 0;border-radius:10px;border:none;font-size:13px;font-weight:700;cursor:pointer;background:var(--green2);color:var(--text);transition:.2s">
-        ✅ Attivi
-      </button>
-      <button id="esptab-proposte" onclick="switchEspTab('proposte')"
-        style="flex:1;padding:9px 0;border-radius:10px;border:none;font-size:13px;font-weight:700;cursor:pointer;background:var(--card2);color:var(--text2);border:1px solid var(--border);transition:.2s">
-        💡 Da valutare
-      </button>
-    </div>
-
-    <!-- LISTA ATTIVI -->
-    <div id="esp-panel-attivi">
-      <div id="esp-lista-attivi">
-        <div style="text-align:center;padding:24px;color:var(--text3);font-size:13px">⏳ Caricamento…</div>
-      </div>
-    </div>
-
-    <!-- LISTA PROPOSTE -->
-    <div id="esp-panel-proposte" style="display:none">
-      <div id="esp-lista-proposte">
-        <div style="text-align:center;padding:24px;color:var(--text3);font-size:13px">⏳ Caricamento…</div>
+      <div id="esp-panel-proposte" style="display:none">
+        <div id="esp-lista-proposte">
+          <div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">⏳ Caricamento…</div>
+        </div>
       </div>
     </div>
 
   </div>
-  </div>
 
-  <!-- PANNELLO: MANUALI -->
+  <!-- ══ PANNELLO: MANUALI ══ -->
   <div id="lab-panel-manuali" class="piante-panel">
-    <div class="section-title">Manuali 📚</div>
-    <div class="section-sub">Documenti e guide operative</div>
 
-    <!-- LISTA MANUALI CLICCABILI -->
-    <div id="man-lista">
-      <div class="manual-item" onclick="manApri('serra_v2')"><div class="manual-icon">🌱</div><div class="manual-text"><div class="manual-title">Manuale Mini-Serra v2</div><div class="manual-sub">Living Soil · Aggiornato marzo 2026</div></div><div class="manual-arrow">›</div></div>
-      <div class="manual-item" onclick="manApri('calendario')"><div class="manual-icon">📋</div><div class="manual-text"><div class="manual-title">Calendario Colture</div><div class="manual-sub">10 varietà · 8 mesi ciclo</div></div><div class="manual-arrow">›</div></div>
-      <div class="manual-item" onclick="manApri('elettrocultura')"><div class="manual-icon">⚡</div><div class="manual-text"><div class="manual-title">Guida Elettrocultura</div><div class="manual-sub">Lakhovsky · Galvanica · Pantacle</div></div><div class="manual-arrow">›</div></div>
-      <div class="manual-item" onclick="manApri('serbatoio')"><div class="manual-icon">💧</div><div class="manual-text"><div class="manual-title">Gestione Serbatoio</div><div class="manual-sub">Irrigazione · Melassa · Humus</div></div><div class="manual-arrow">›</div></div>
-      <div class="manual-item" onclick="manApri('additivi')"><div class="manual-icon">🧪</div><div class="manual-text"><div class="manual-title">Additivi Biologici</div><div class="manual-sub">Ortiche · Miscela · Banana · Etilene</div></div><div class="manual-arrow">›</div></div>
-      <div class="manual-item" onclick="manApri('scheda_rapida')"><div class="manual-icon">📅</div><div class="manual-text"><div class="manual-title">Scheda Rapida Additivi</div><div class="manual-sub">Dosi · Cadenze · Metodi</div></div><div class="manual-arrow">›</div></div>
-      <!-- Manuali aggiuntivi da JSON -->
-      <div id="man-extra-lista"></div>
+    <!-- ANALISI AI PDF -->
+    <div class="json-panel" id="manuali-json-panel" style="margin-bottom:14px">
+      <div class="json-panel-header">
+        <div class="json-panel-title">🤖 Analisi AI dei PDF</div>
+        <button class="json-reload-btn" onclick="loadManualiJSON()">🔄 Aggiorna</button>
+      </div>
+      <div style="font-size:11px;color:var(--text3);padding:0 0 6px 2px">Il Cervello legge i PDF su Drive e propone nuove tecniche</div>
+      <div class="json-panel-meta" id="manuali-json-meta">In caricamento…</div>
+      <div id="manuali-json-content"><div class="json-loading">⏳ Caricamento analisi…</div></div>
     </div>
-
-    <div class="divider"></div>
 
     <!-- NOTE PERSONALI -->
-    <div class="card" style="margin-bottom:12px">
+    <div class="card">
       <div class="card-title" style="display:flex;justify-content:space-between;align-items:center">
         <span>📝 Note personali</span>
         <span style="font-size:12px;color:var(--text3)" id="man-note-count">0 note</span>
@@ -1534,70 +1453,47 @@
       <div id="man-note-lista" style="margin-top:12px"></div>
     </div>
 
-    <!-- ANALISI AI PDF — ATTIVA -->
-    <div class="json-panel" id="manuali-json-panel">
-      <div class="json-panel-header">
-        <div class="json-panel-title">🤖 Analisi AI dei PDF</div>
-        <button class="json-reload-btn" onclick="loadManualiJSON()">🔄 Aggiorna</button>
+  </div>
+
+  <!-- ══ PANNELLO: CERVELLO ══ -->
+  <div id="lab-panel-cervello" class="piante-panel">
+
+    <!-- CONSIGLI DEL GIORNO da brain.json -->
+    <div class="card" style="margin-bottom:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <div class="card-title" style="margin:0">🧠 Consigli del giorno</div>
+        <button onclick="brainLoad()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 11px;color:var(--green2);font-size:12px;font-weight:600;cursor:pointer">🔄</button>
       </div>
-      <div style="font-size:11px;color:var(--text3);padding:0 0 6px 2px">Legge i PDF su Drive e propone nuove tecniche</div>
-      <div class="json-panel-meta" id="manuali-json-meta">In caricamento…</div>
-      <div id="manuali-json-content"><div class="json-loading">⏳ Caricamento analisi…</div></div>
-    </div>
-  </div>
-
-  <!-- MODALE MANUALE -->
-  <div id="man-modale" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.85);z-index:9000;overflow-y:auto">
-    <div style="background:var(--bg);min-height:100%;padding:16px">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;position:sticky;top:0;background:var(--bg);padding:8px 0;z-index:1">
-        <div id="man-modale-titolo" style="font-size:17px;font-weight:800;color:var(--text)"></div>
-        <button onclick="manChiudi()" style="background:var(--card2);border:none;border-radius:8px;padding:8px 14px;color:var(--text);font-size:14px;cursor:pointer">✕ Chiudi</button>
+      <div id="brain-status" style="font-size:11px;color:var(--text3);margin-bottom:8px"></div>
+      <div id="brain-content">
+        <div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">⏳ Caricamento consigli…</div>
       </div>
-      <div id="man-modale-corpo" style="font-size:13px;color:var(--text2);line-height:1.8"></div>
     </div>
-  </div>
 
-  <!-- PANNELLO: AI SERRA -->
-  <div id="lab-panel-ai" class="piante-panel">
-    <div class="section-title">AI 🤖</div>
-  <div class="section-sub">Assistente Serra · Groq Llama3 · Sempre attivo</div>
+    <!-- CHAT AI GROK -->
+    <div class="card">
+      <div class="card-title" style="margin-bottom:10px">💬 Chat con Grok</div>
 
-  <!-- ANALISI GIORNALIERA -->
-  <div style="margin-bottom:12px;">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-      <div style="font-size:13px;font-weight:700;color:var(--text);">📋 Analisi del giorno</div>
-      <button id="ai-daily-refresh" onclick="aiGenerateDaily()"
-        style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 11px;color:var(--green2);font-size:12px;font-weight:600;cursor:pointer;">
-        🔄 Aggiorna
-      </button>
+      <!-- BOTTONI RAPIDI -->
+      <div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px">
+        <button class="ai-quick-btn" onclick="aiQuick('Cosa devo fare oggi in serra?')">📋 Oggi</button>
+        <button class="ai-quick-btn" onclick="aiQuick('Quando annaffiare?')">💧 Acqua</button>
+        <button class="ai-quick-btn" onclick="aiQuick('Dosi melassa — quando tocca?')">🍯 Melassa</button>
+        <button class="ai-quick-btn" onclick="aiQuick('Diagnosi foglie ingiallite')">🍂 Foglie</button>
+        <button class="ai-quick-btn" onclick="aiQuick('Quale pianta è più vicina alla raccolta?')">🌾 Raccolta</button>
+        <button class="ai-quick-btn" onclick="aiQuick('Stato femminizzate questa settimana')">🌸 Femm.</button>
+        <button class="ai-quick-btn" onclick="aiQuick('Infuso ortiche: quando e come?')">🌿 Ortiche</button>
+        <button class="ai-quick-btn" onclick="aiQuick('Nuove tecniche di elettrocultura da provare')">⚡ Elettro</button>
+      </div>
+
+      <div class="ai-chat" id="ai-chat"></div>
+      <div class="ai-input-row">
+        <input class="ai-input" id="ai-input" type="text" placeholder="Scrivi a Grok…"
+          onkeydown="if(event.key==='Enter'){event.preventDefault();aiSend();}">
+        <button class="ai-send" onclick="aiSend()">➤</button>
+      </div>
     </div>
-    <div id="ai-daily-content"
-      style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;font-size:13px;color:var(--text2);line-height:1.7;min-height:56px;white-space:pre-wrap;">
-      ⏳ Generazione in corso…
-    </div>
-    <div id="ai-daily-meta" style="font-size:10px;color:var(--text3);margin-top:4px;text-align:right;"></div>
-  </div>
 
-  <!-- BOTTONI RAPIDI -->
-  <div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px;">
-    <button class="ai-quick-btn" onclick="aiQuick('Cosa devo fare oggi in serra?')">📋 Cosa fare oggi</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Quando annaffiare? Controlla la routine')">💧 Annaffiare?</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Dosi melassa — quando tocca la prossima?')">🍯 Melassa</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Diagnosi foglie ingiallite: cause e rimedi')">🍂 Foglie gialle</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Quale pianta è più vicina alla raccolta?')">🌾 Raccolta</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Stato delle piante femminizzate questa settimana')">🌸 Femminizzate</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Infuso ortiche: quando farlo e come?')">🌿 Ortiche</button>
-    <button class="ai-quick-btn" onclick="aiQuick('Elettrocultura e Lakhovsky: controlla i circuiti')">⚡ Elettro</button>
-  </div>
-
-  <!-- CHAT -->
-  <div class="ai-chat" id="ai-chat"></div>
-
-  <div class="ai-input-row">
-    <input class="ai-input" id="ai-input" type="text" placeholder="Scrivi un messaggio…"
-      onkeydown="if(event.key==='Enter'){event.preventDefault();aiSend();}">
-    <button class="ai-send" onclick="aiSend()">➤</button>
-  </div>
   </div>
 
 </section>
@@ -1964,238 +1860,25 @@ function showSection(id, btn) {
 
 /* ── Tab Laboratorio ── */
 function switchLabTab(tab) {
-  ['elettro','manuali','ai'].forEach(function(t) {
+  ['elettro','manuali','cervello'].forEach(function(t) {
     var panel = document.getElementById('lab-panel-' + t);
-    var btn = document.getElementById('lab-tab-' + t);
+    var btn   = document.getElementById('lab-tab-' + t);
     if (panel) panel.classList.toggle('active', t === tab);
-    if (btn) btn.classList.toggle('active', t === tab);
+    if (btn)   btn.classList.toggle('active',   t === tab);
   });
-  if (tab === 'ai')     { try { setTimeout(aiInitUI, 50); } catch(e) {} }
-  if (tab === 'manuali') { manRenderNote(); loadManualiJSON(); }
+  if (tab === 'cervello') { brainLoad(); setTimeout(aiInitUI, 50); }
+  if (tab === 'manuali')  { manRenderNote(); loadManualiJSON(); }
+  if (tab === 'elettro')  { elTecRicarica(); espLoad(); }
 }
-
-function refreshAll() {
-  const sec = document.querySelector('.section.active');
-  const secId = sec ? sec.id.replace('sec-','') : '';
-  if (secId === 'ambiente') { initAmbiente(); return; }
-  if (secId === 'piante') {
-    // Render locale puro: ricalcola timeline e alert senza toccare JSON remoto
-    renderActivePlants();
-    return;
-  }
-}
-function showNotifPanel() { alert('🔔 Nessuna notifica in sospeso'); }
 
 /* ══════════════════════════════════════════════════════════════
-   ELETTROCULTURA — SISTEMA COMPLETO
+   ELETTROCULTURA — TECNICHE DA JSON + ESPERIMENTI
 ══════════════════════════════════════════════════════════════ */
 
-/* ── Tecniche base (sempre presenti) ── */
-const EL_TECNICHE_BASE = [
-  {
-    id: 'lakhovsky',
-    nome: '🔁 Circuito di Lakhovsky',
-    badge: 'SPERIMENTALE',
-    desc: 'Anello di rame aperto alla base di ogni pianta. Le estremità si sovrappongono per 2-3 cm con 1 cm di spazio — funziona come antenna di risonanza cosmica.',
-    istruzioni: 'Piega ~50 cm di filo di rame a cerchio attorno alla base. Le 2 estremità devono sovrapporsi di 2-3 cm con 1 cm d\'aria tra loro. Isola le estremità con tubicino o nastro.',
-    lunaConsigl: ['crescente','piena'],
-    max: 10,
-    unita: 'piante con cerchio'
-  },
-  {
-    id: 'galvanica',
-    nome: '⚗️ Pila Galvanica Ferro-Rame',
-    badge: 'SPERIMENTALE',
-    desc: 'Micro-corrente ~0.5-0.7V da chiodo di ferro arrugginito + filo di rame in terreno umido. Ionizza i nutrienti rendendoli immediatamente assorbibili dalle radici.',
-    istruzioni: '1 chiodo di ferro vecchio (arrugginito) a 5-10 cm dal fusto. Collegalo con filo al rame già presente. Il terreno deve essere umido. Orientamento consigliato: ferro a Nord, rame a Sud.',
-    lunaConsigl: ['nuova','crescente'],
-    max: 10,
-    unita: 'pile attive'
-  },
-  {
-    id: 'pantacle',
-    nome: '🌐 Pantacle di Rame',
-    badge: 'SPERIMENTALE',
-    desc: 'Archi di rame nudo collegano il terreno di tutti i vasi in serie. Le cariche elettriche si distribuiscono uniformemente — i 10 vasi diventano un unico organismo collettivo.',
-    istruzioni: 'Inserisci un capo del filo rame nel terreno di un vaso e l\'altro nel vaso adiacente. Forma un arco morbido tra i vasi. Collega tutti i vasi in serie.',
-    lunaConsigl: ['piena'],
-    max: 9,
-    unita: 'archi installati'
-  },
-  {
-    id: 'geomag',
-    nome: '🧲 Acqua Magnetizzata',
-    badge: 'ESPERIMENTO',
-    desc: 'Sistema a 2 componenti: (1) magnete principale avvolto attorno al tubo principale; (2) 1 Geomag per ogni gocciolatoio fissato con nastro. Polo Nord verso l\'acqua.',
-    istruzioni: 'Magnete principale: avvolgi con nastro attorno al tubo principale. Geomag: fissa 1 magnete direttamente su ogni gocciolatoio — deve stare esattamente dove esce l\'acqua.',
-    lunaConsigl: ['piena','crescente'],
-    max: 10,
-    unita: 'gocciolatori con Geomag'
-  },
-  {
-    id: 'spirale',
-    nome: '🌀 Spirale di Rame Cosmica',
-    badge: 'SPERIMENTALE',
-    desc: 'Spirale di filo di rame avvolta in senso orario attorno al fusto della pianta. Segue la geometria sacra naturale potenziando il flusso elettromagnetico.',
-    istruzioni: 'Avvolgi ~40 cm di filo di rame in senso orario attorno al fusto, partendo dalla base. Lascia 2-3 cm di distanza dal fusto. La punta del filo deve sporgere verso l\'alto.',
-    lunaConsigl: ['crescente'],
-    max: 10,
-    unita: 'piante con spirale'
-  },
-  {
-    id: 'antenna',
-    nome: '📡 Antenna Terrestre',
-    badge: 'SPERIMENTALE',
-    desc: 'Filo di rame interrato collegato a un palo metallico esterno. Cattura le cariche telluriche dal suolo e le distribuisce alle radici.',
-    istruzioni: 'Inserisci un picchetto metallico nel terreno esterno alla serra. Collegalo con filo di rame al terreno di uno o più vasi. Il filo deve essere sepolto o protetto.',
-    lunaConsigl: ['nuova','calante'],
-    max: 1,
-    unita: 'antenna attiva'
-  }
-];
-
-/* ── State elettrocultura ── */
-let elCounts = {};
-let elTracker = {};
-let elLogs = [];
-let elTecnicheExtra = [];
-
-function elLoadState() {
-  try { elCounts  = JSON.parse(localStorage.getItem('el_counts')  || '{}'); } catch(e) { elCounts = {}; }
-  try { elTracker = JSON.parse(localStorage.getItem('el_tracker') || '{}'); } catch(e) { elTracker = {}; }
-  try { elLogs    = JSON.parse(localStorage.getItem('el_logs')    || '[]'); } catch(e) { elLogs = []; }
-}
-function elSaveState() {
-  try { localStorage.setItem('el_counts',  JSON.stringify(elCounts));  } catch(e) {}
-  try { localStorage.setItem('el_tracker', JSON.stringify(elTracker)); } catch(e) {}
-  try { localStorage.setItem('el_logs',    JSON.stringify(elLogs));    } catch(e) {}
-}
-elLoadState();
-
-/* ── Legacy compat ── */
-function adjustCount(key, delta) {
-  var maxes = { lakhovsky:10, galvanica:10, pantacle:9, geomag:10, spirale:10, antenna:1 };
-  elCounts[key] = Math.max(0, Math.min(maxes[key]||10, (elCounts[key]||0) + delta));
-  elSaveState();
-  renderElettroTecniche();
-  elUpdateStats();
-}
-
-function elAllTecniche() {
-  return EL_TECNICHE_BASE.concat(elTecnicheExtra);
-}
-
-/* ── Tab switch ── */
-function switchElettroTab(tab) {
-  document.querySelectorAll('[id^="etab-"]').forEach(function(b){ b.classList.remove('active'); });
-  document.querySelectorAll('[id^="epanel-"]').forEach(function(p){ p.classList.remove('active'); });
-  var btn = document.getElementById('etab-' + tab);
-  var pan = document.getElementById('epanel-' + tab);
-  if (btn) btn.classList.add('active');
-  if (pan) pan.classList.add('active');
-  if (tab === 'tecniche') { renderElettroTecniche(); elLunarTip(); }
-  if (tab === 'tracker')  { renderElTracker(); }
-  if (tab === 'log')      { renderElLog(); }
-  if (tab === 'stats')    { renderElStats(); }
-  if (tab === 'esperimenti') { espLoad(); }
-}
-
-/* ── Consiglio Lunare ── */
-function elLunarTip() {
-  var el = document.getElementById('el-lunar-text');
-  if (!el) return;
-  var lunaEl = document.getElementById('luna-phase-name');
-  var fase = lunaEl ? lunaEl.textContent.toLowerCase() : '';
-  var key = 'crescente';
-  if (fase.indexOf('piena') >= 0) key = 'piena';
-  else if (fase.indexOf('nuova') >= 0 || fase.indexOf('buio') >= 0) key = 'nuova';
-  else if (fase.indexOf('calante') >= 0 || fase.indexOf('ultimo') >= 0) key = 'calante';
-  var consigli = {
-    nuova:     { testo: '🌑 Luna Nuova — Energia radicale', sug: 'Ideale per <strong>Pila Galvanica</strong> e <strong>Antenna Terrestre</strong>. L\'energia è nel sottosuolo — potenzia l\'assorbimento radicale.' },
-    crescente: { testo: '🌒 Luna Crescente — Energia in salita', sug: 'Momento perfetto per <strong>Circuito di Lakhovsky</strong> e <strong>Spirale di Rame</strong>. La linfa sale — massimizza la fotosintesi.' },
-    piena:     { testo: '🌕 Luna Piena — Picco di vitalità', sug: 'Attiva tutte le tecniche! Potenzia soprattutto <strong>Pantacle di Rame</strong> e <strong>Acqua Magnetizzata</strong>. Documenta e fotografa.' },
-    calante:   { testo: '🌘 Luna Calante — Consolidamento', sug: 'Ottimo per <strong>Antenna Terrestre</strong>. Verifica e manutenzione dei circuiti esistenti. Osserva e registra nel log.' }
-  };
-  var c = consigli[key] || consigli.crescente;
-  el.innerHTML = '<strong style="color:#d4b8ff">' + c.testo + '</strong><br>' + c.sug;
-}
-
-function lunaIcona(fase) {
-  var m = { nuova:'🌑', crescente:'🌒', piena:'🌕', calante:'🌘' };
-  return m[fase] || '🌙';
-}
-
-/* ── Render TECNICHE — toggle globale ── */
-function renderElettroTecniche() {
-  var lista = document.getElementById('el-tecniche-lista');
-  if (!lista) return;
-  var html = '';
-  EL_TECNICHE_BASE.forEach(function(t) {
-    var attiva = elGlobale[t.id] || false;
-    var lunaHtml = t.lunaConsigl.map(function(l){ return '<span style="font-size:11px;background:rgba(100,80,200,0.2);color:#a8b8ff;border-radius:6px;padding:2px 7px">' + lunaIcona(l) + ' ' + l + '</span>'; }).join('');
-    var borderCol = attiva ? 'var(--green2)' : 'var(--border)';
-    html += '<div class="exp-card" style="margin-bottom:10px;border-left:3px solid ' + borderCol + '">';
-    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">';
-    html += '<div class="exp-title" style="margin:0">' + t.nome + ' <span class="exp-badge">' + t.badge + '</span></div>';
-    html += '<label class="toggle-sw" style="flex-shrink:0" title="' + (attiva ? 'Disattiva' : 'Attiva') + ' tecnica">';
-    html += '<input type="checkbox" ' + (attiva ? 'checked' : '') + ' onchange="elToggleGlobale(' + t.id + ',this.checked)">';
-    html += '<span class="toggle-slider"></span></label>';
-    html += '</div>';
-    html += '<div class="exp-desc" style="margin-bottom:10px">' + t.desc + '</div>';
-    html += '<details style="margin-bottom:10px"><summary style="font-size:12px;color:var(--green2);cursor:pointer;font-weight:600">📋 Istruzioni installazione</summary>';
-    html += '<div style="font-size:12px;color:var(--text2);margin-top:8px;line-height:1.7;padding:8px;background:var(--card2);border-radius:8px">' + t.istruzioni + '</div></details>';
-    html += '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">';
-    html += '<div style="display:flex;gap:4px;flex-wrap:wrap">' + lunaHtml + '</div>';
-    html += '<button data-eid="' + t.id + '" data-enom="' + (t.nome||'').replace(/"/g,'') + '" onclick="elRilasciaEspBtn(this)" style="background:none;border:1px solid var(--border);border-radius:8px;padding:4px 10px;color:var(--text3);font-size:11px;cursor:pointer">&#128228; Esp</button>';
-
-    html += '</div></div>';
-  });
-  lista.innerHTML = html;
-  elUpdateStats();
-}
-
-function renderElTecnicheExtra() {
-  var el = document.getElementById('el-tecniche-json');
-  if (!el) return;
-  if (elTecnicheExtra.length === 0) { el.innerHTML = ''; return; }
-  var html = '<div style="font-size:12px;font-weight:700;color:var(--green2);margin:12px 0 8px;display:flex;align-items:center;gap:6px"><span>🤖</span> Tecniche scoperte dall’AI nei PDF</div>';
-  elTecnicheExtra.forEach(function(t, idx) {
-    var attiva = elGlobale[t.id] || false;
-    var borderCol = attiva ? 'var(--green2)' : 'rgba(100,200,255,0.2)';
-    html += '<div class="exp-card" style="margin-bottom:10px;border-left:3px solid ' + borderCol + '">';
-    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">';
-    html += '<div class="exp-title" style="margin:0">' + (t.nome||t.id) + ' <span class="exp-badge" style="background:rgba(0,150,255,0.2);color:#60b0ff">AI</span></div>';
-    html += '<div style="display:flex;align-items:center;gap:8px">';
-    html += '<label class="toggle-sw" style="flex-shrink:0"><input type="checkbox" ' + (attiva ? 'checked' : '') + ' onchange="elToggleGlobale(' + t.id + ',this.checked)"><span class="toggle-slider"></span></label>';
-    html += '<button onclick="elEliminaTecnicaExtra(' + idx + ')" style="background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;padding:0">×</button>';
-    html += '</div></div>';
-    html += '<div class="exp-desc">' + (t.desc||'') + '</div>';
-    if (t.istruzioni) {
-      html += '<details style="margin-top:8px"><summary style="font-size:12px;color:var(--green2);cursor:pointer;font-weight:600">📋 Istruzioni</summary>';
-      html += '<div style="font-size:12px;color:var(--text2);margin-top:6px;line-height:1.7;padding:8px;background:var(--card2);border-radius:8px">' + t.istruzioni + '</div></details>';
-    }
-    html += '<div style="margin-top:8px;text-align:right"><button data-eid="' + t.id + '" data-enom="' + ((t.nome||t.id)||'').replace(/"/g,'') + '" onclick="elRilasciaEspBtn(this)" style="background:none;border:1px solid var(--border);border-radius:8px;padding:4px 10px;color:var(--text3);font-size:11px;cursor:pointer">&#128228; Esp</button></div>';
-
-    html += '</div>';
-  });
-  el.innerHTML = html;
-}
-
-async function elLoadTecnicheJSON() {
-  try {
-    var res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/electro_tecniche.json?v=' + Date.now());
-    if (!res.ok) throw new Error('not found');
-    var data = await res.json();
-    elTecnicheExtra = Array.isArray(data.tecniche) ? data.tecniche : [];
-    renderElTecnicheExtra();
-  } catch(e) {
-    var el = document.getElementById('el-tecniche-json');
-    if (el) el.innerHTML = '';
-  }
-}
-
-/* ── State globale tecniche ── */
+/* ── Stato tecniche (solo da JSON, nessuna predefinita) ── */
 var elGlobale = {};
+var elTecnicheList = [];  // caricate da electro_tecniche.json
+
 function elLoadGlobale() {
   try { elGlobale = JSON.parse(localStorage.getItem('el_globale') || '{}'); } catch(e) { elGlobale = {}; }
 }
@@ -2204,241 +1887,89 @@ function elSaveGlobale() {
 }
 elLoadGlobale();
 
-/* ── Toggle globale (una tecnica su tutte le piante) ── */
-function elToggleGlobale(techId, val) {
-  elGlobale[techId] = val;
-  elSaveGlobale();
-  renderElettroTecniche();
-  renderElTecnicheExtra();
-  renderElTracker();
-  elUpdateStats();
-}
-
-/* ── Rilascia tecnica in Esperimenti ── */
-function elRilasciaEspBtn(btn) {
-  var techId   = btn.getAttribute('data-eid');
-  var techNome = btn.getAttribute('data-enom');
-  elRilasciaEsp(techId, techNome);
-}
-
-function elRilasciaEsp(techId, techNome) {
-  if (!confirm('Spostare "' + techNome + '" nella sezione Esperimenti?')) return;
-  // Rimuovi da extra se presente
-  var idx = elTecnicheExtra.findIndex(function(t){ return t.id === techId; });
-  if (idx >= 0) elTecnicheExtra.splice(idx, 1);
-  // Aggiungi a proposte esperimenti
-  if (!espData) espData = { attivi: [], proposte: [] };
-  if (!espData.proposte) espData.proposte = [];
-  var exists = espData.proposte.find(function(e){ return e.nome === techNome; });
-  if (!exists) {
-    espData.proposte.unshift({ nome: techNome, descrizione: 'Tecnica rilasciata dalla sezione Tecniche.', data_proposta: new Date().toLocaleDateString('it-IT'), fonte: 'BioSerra Tecniche' });
-    espData.aggiornato = new Date().toISOString().slice(0,16).replace('T',' ');
-    espSalva('Tecnica rilasciata in esperimenti: ' + techNome);
-  }
-  renderElettroTecniche();
-  renderElTecnicheExtra();
-  elUpdateStats();
-}
-
-/* ── Elimina tecnica extra ── */
-function elEliminaTecnicaExtra(idx) {
-  if (!confirm('Eliminare questa tecnica AI?')) return;
-  elTecnicheExtra.splice(idx, 1);
-  renderElTecnicheExtra();
-  elUpdateStats();
-}
-
-/* ── Render TRACKER — vista globale ── */
-function renderElTracker() {
-  var lista = document.getElementById('el-tracker-lista');
+/* ── Carica tecniche da electro_tecniche.json ── */
+async function elTecRicarica() {
+  var statusEl = document.getElementById('el-tec-status');
+  var lista    = document.getElementById('el-tec-lista');
   if (!lista) return;
-  var tecniche = elAllTecniche();
-  var attive = tecniche.filter(function(t){ return elGlobale[t.id]; });
-  var inattive = tecniche.filter(function(t){ return !elGlobale[t.id]; });
-  var html = '';
-  if (attive.length === 0) {
-    html += '<div class="empty-state"><div class="empty-state-icon">⚡</div>Nessuna tecnica attiva.<br>Attivale dalla tab Tecniche con i toggle.</div>';
-  } else {
-    html += '<div style="font-size:12px;font-weight:700;color:var(--green2);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px">✅ Attive su tutte le piante</div>';
-    attive.forEach(function(t) {
-      html += '<div class="card" style="margin-bottom:8px;border-left:3px solid var(--green2);display:flex;align-items:center;justify-content:space-between;padding:10px 14px">';
-      html += '<span style="font-size:13px;font-weight:600">' + t.nome + '</span>';
-      html += '<label class="toggle-sw"><input type="checkbox" checked onchange="elToggleGlobale(' + t.id + ',this.checked)"><span class="toggle-slider"></span></label>';
-      html += '</div>';
-    });
+  if (statusEl) statusEl.textContent = '⏳ Caricamento…';
+  try {
+    var res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/electro_tecniche.json?v=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    var data = await res.json();
+    elTecnicheList = Array.isArray(data.tecniche) ? data.tecniche : [];
+    if (statusEl) statusEl.textContent = elTecnicheList.length > 0
+      ? 'Aggiornato · ' + elTecnicheList.length + ' tecniche disponibili'
+      : 'Nessuna tecnica trovata — il Cervello AI le aggiunge ogni giorno';
+    elRenderTecniche();
+  } catch(e) {
+    elTecnicheList = [];
+    if (statusEl) statusEl.textContent = 'File non ancora disponibile — il Cervello lo popola automaticamente';
+    elRenderTecniche();
   }
-  if (inattive.length > 0) {
-    html += '<div style="font-size:12px;font-weight:700;color:var(--text3);margin:12px 0 8px;text-transform:uppercase;letter-spacing:.5px">○ Non attive</div>';
-    inattive.forEach(function(t) {
-      html += '<div class="card" style="margin-bottom:8px;display:flex;align-items:center;justify-content:space-between;padding:10px 14px;opacity:.6">';
-      html += '<span style="font-size:13px">' + t.nome + '</span>';
-      html += '<label class="toggle-sw"><input type="checkbox" onchange="elToggleGlobale(' + t.id + ',this.checked)"><span class="toggle-slider"></span></label>';
-      html += '</div>';
-    });
-  }
-  lista.innerHTML = html;
 }
 
-/* ── Compat legacy (non usata ma mantenuta) ── */
-function elToggleTech(plantId, techId, val) { elToggleGlobale(techId, val); }
-
-/* ── Render LOG ── */
-function elPopulateSelects() {
-  var ps = document.getElementById('el-log-pianta');
-  var ts = document.getElementById('el-log-tecnica');
-  if (!ps || !ts) return;
-  var plants = loadActivePlants();
-  var opts = '<option value="">— Seleziona pianta —</option>';
-  plants.forEach(function(p){ opts += '<option value="' + p.id + '">' + (p.icon||'🌱') + ' ' + p.name + '</option>'; });
-  ps.innerHTML = opts;
-  var topts = '<option value="">— Seleziona tecnica —</option>';
-  elAllTecniche().forEach(function(t){ topts += '<option value="' + t.id + '">' + t.nome + '</option>'; });
-  ts.innerHTML = topts;
-}
-
-function elAddLog() {
-  var pianta  = document.getElementById('el-log-pianta') ? document.getElementById('el-log-pianta').value : '';
-  var tecnica = document.getElementById('el-log-tecnica') ? document.getElementById('el-log-tecnica').value : '';
-  var notaEl  = document.getElementById('el-log-nota');
-  var nota    = notaEl ? notaEl.value.trim() : '';
-  if (!nota) { alert('Inserisci un\'osservazione'); return; }
-  var plants = loadActivePlants();
-  var plant  = plants.find(function(p){ return p.id == pianta; });
-  var techs  = elAllTecniche();
-  var tech   = techs.find(function(t){ return t.id === tecnica; });
-  var entry = {
-    id: Date.now(),
-    data: new Date().toLocaleDateString('it-IT'),
-    ora: new Date().toLocaleTimeString('it-IT', {hour:'2-digit',minute:'2-digit'}),
-    pianta: plant ? plant.name : (pianta || 'Tutte'),
-    pianta_icon: plant ? (plant.icon||'🌱') : '🌿',
-    tecnica: tech ? tech.nome : (tecnica || 'Generale'),
-    nota: nota
-  };
-  elLogs.unshift(entry);
-  elSaveState();
-  if (notaEl) notaEl.value = '';
-  renderElLog();
-  elUpdateStats();
-}
-
-function elDeleteLog(id) {
-  elLogs = elLogs.filter(function(l){ return l.id !== id; });
-  elSaveState();
-  renderElLog();
-  elUpdateStats();
-}
-
-function renderElLog() {
-  elPopulateSelects();
-  var lista = document.getElementById('el-log-lista');
+function elRenderTecniche() {
+  var lista = document.getElementById('el-tec-lista');
   if (!lista) return;
-  if (elLogs.length === 0) {
-    lista.innerHTML = '<div class="empty-state"><div class="empty-state-icon">📝</div>Nessuna osservazione ancora.<br>Aggiungi note per confrontare i risultati!</div>';
+  if (elTecnicheList.length === 0) {
+    lista.innerHTML = '<div style="text-align:center;padding:20px 10px">' +
+      '<div style="font-size:32px;margin-bottom:8px">🧠</div>' +
+      '<div style="font-size:13px;color:var(--text2);line-height:1.6">Il Cervello AI analizza i PDF ogni giorno<br>e aggiunge qui nuove tecniche da provare.</div>' +
+      '</div>';
     return;
   }
   var html = '';
-  elLogs.forEach(function(l) {
-    html += '<div class="card" style="margin-bottom:8px;padding:12px 14px">';
-    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">';
-    html += '<div><span style="font-size:13px;font-weight:700">' + l.pianta_icon + ' ' + l.pianta + '</span>';
-    html += '<span style="font-size:11px;color:var(--text3);margin-left:8px">' + l.tecnica + '</span></div>';
-    html += '<div style="display:flex;align-items:center;gap:8px"><span style="font-size:11px;color:var(--text3)">' + l.data + ' ' + l.ora + '</span>';
-    html += '<button onclick="elDeleteLog(' + l.id + ')" style="background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;padding:0;line-height:1">×</button></div></div>';
-    html += '<div style="font-size:13px;color:var(--text2);line-height:1.6">' + l.nota + '</div></div>';
+  elTecnicheList.forEach(function(t) {
+    var tid    = t.id || t.nome || '';
+    var attiva = elGlobale[tid] || false;
+    var border = attiva ? 'var(--green2)' : 'var(--border)';
+    html += '<div style="padding:12px 0;border-bottom:1px solid var(--border)">';
+    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px">';
+    html += '<div style="flex:1">';
+    html += '<div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">' + (t.nome || tid) + '</div>';
+    if (t.desc || t.descrizione) {
+      html += '<div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:4px">' + (t.desc || t.descrizione) + '</div>';
+    }
+    if (t.fonte) {
+      html += '<div style="font-size:11px;color:var(--text3)">🤖 ' + t.fonte + '</div>';
+    }
+    html += '</div>';
+    html += '<label class="toggle-sw" style="flex-shrink:0;margin-top:2px">';
+    html += '<input type="checkbox" ' + (attiva ? 'checked' : '') + ' onchange="elToggleTec(\'' + tid.replace(/'/g,'') + '\',this.checked)">';
+    html += '<span class="toggle-slider"></span></label>';
+    html += '</div></div>';
   });
   lista.innerHTML = html;
 }
 
-/* ── Render STATS — globale ── */
-function renderElStats() {
-  var tecniche = elAllTecniche();
-  var attiveLista = tecniche.filter(function(t){ return elGlobale[t.id]; });
-  var inattiveLista = tecniche.filter(function(t){ return !elGlobale[t.id]; });
-  var pct = tecniche.length > 0 ? Math.round(attiveLista.length / tecniche.length * 100) : 0;
-
-  var chartEl = document.getElementById('el-stats-chart');
-  if (chartEl) {
-    var html = '';
-    // Barra globale
-    html += '<div style="margin-bottom:16px">';
-    html += '<div style="display:flex;justify-content:space-between;margin-bottom:6px">';
-    html += '<span style="font-size:14px;font-weight:700">Copertura globale</span>';
-    html += '<span style="font-size:14px;font-weight:700;color:var(--green2)">' + attiveLista.length + '/' + tecniche.length + ' (' + pct + '%)</span></div>';
-    html += '<div style="height:12px;background:var(--card2);border-radius:6px;overflow:hidden">';
-    html += '<div style="height:100%;width:' + pct + '%;background:linear-gradient(90deg,var(--green2),var(--green3));border-radius:6px;transition:.5s"></div></div>';
-    html += '<div style="font-size:11px;color:var(--text3);margin-top:4px">' + attiveLista.length + ' tecniche attive su tutte le 10 piante</div></div>';
-    // Dettaglio per tecnica
-    tecniche.forEach(function(t) {
-      var on = elGlobale[t.id] || false;
-      html += '<div style="display:flex;align-items:center;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border)">';
-      html += '<span style="font-size:13px;color:' + (on ? 'var(--text)' : 'var(--text3)') + '">' + t.nome + '</span>';
-      html += '<span style="font-size:12px;font-weight:700;color:' + (on ? 'var(--green2)' : 'var(--text3)') + '">' + (on ? '✅ Attiva' : '○ Off') + '</span>';
-      html += '</div>';
-    });
-    chartEl.innerHTML = html;
-  }
-
-  var techEl = document.getElementById('el-stats-tecniche');
-  if (techEl) {
-    var total = tecniche.length;
-    var on = attiveLista.length;
-    techEl.innerHTML = '<div style="padding:8px 0">' +
-      '<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border)"><span style="font-size:13px">Tecniche totali disponibili</span><span style="font-size:13px;font-weight:700;color:var(--text)">' + total + '</span></div>' +
-      '<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border)"><span style="font-size:13px">Tecniche attive</span><span style="font-size:13px;font-weight:700;color:var(--green2)">' + on + '</span></div>' +
-      '<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border)"><span style="font-size:13px">Tecniche disattive</span><span style="font-size:13px;font-weight:700;color:var(--text3)">' + (total-on) + '</span></div>' +
-      '<div style="display:flex;justify-content:space-between;padding:6px 0"><span style="font-size:13px">Osservazioni nel log</span><span style="font-size:13px;font-weight:700;color:var(--blue)">' + elLogs.length + '</span></div>' +
-      '</div>';
-  }
-
-  var logEl = document.getElementById('el-stats-log-recent');
-  if (logEl) {
-    if (elLogs.length === 0) {
-      logEl.innerHTML = '<div style="font-size:13px;color:var(--text3);padding:8px 0">Nessuna osservazione ancora</div>';
-    } else {
-      var html2 = '';
-      elLogs.slice(0,3).forEach(function(l) {
-        html2 += '<div style="padding:8px 0;border-bottom:1px solid var(--border)">';
-        html2 += '<div style="font-size:12px;color:var(--text3);margin-bottom:2px">' + l.data + ' · ' + l.tecnica + '</div>';
-        html2 += '<div style="font-size:13px;color:var(--text2)">' + l.nota.slice(0,80) + (l.nota.length>80?'…':'') + '</div>';
-        html2 += '</div>';
-      });
-      logEl.innerHTML = html2;
-    }
-  }
+function elToggleTec(tid, val) {
+  elGlobale[tid] = val;
+  elSaveGlobale();
 }
 
-/* ── Update statistiche header ── */
-function elUpdateStats() {
-  var tecniche = elAllTecniche();
-  var attive = tecniche.filter(function(t){ return elGlobale[t.id]; }).length;
-  var el1 = document.getElementById('el-stat-attive');
-  if (el1) el1.textContent = attive;
-  var el2 = document.getElementById('el-stat-log');
-  if (el2) el2.textContent = elLogs.length;
-  var el3 = document.getElementById('el-stat-piante');
-  if (el3) el3.textContent = attive > 0 ? '10' : '0';
-}
-
-/* ── Toggle switch CSS ── */
-(function() {
-  if (document.getElementById('el-toggle-style')) return;
-  var s = document.createElement('style');
-  s.id = 'el-toggle-style';
-  s.textContent = '.toggle-sw{position:relative;display:inline-block;width:44px;height:24px}.toggle-sw input{opacity:0;width:0;height:0}.toggle-slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:var(--card2);border-radius:12px;transition:.3s;border:1px solid var(--border)}.toggle-sw input:checked+.toggle-slider{background:var(--green2)}.toggle-slider:before{content:"";position:absolute;height:18px;width:18px;left:2px;bottom:2px;background:white;border-radius:50%;transition:.3s}.toggle-sw input:checked+.toggle-slider:before{transform:translateX(20px)}';
-  document.head.appendChild(s);
-})();
+/* ── Legacy compat (usato da switchElettroTab se ancora chiamato) ── */
+function switchElettroTab(tab) {}
+function renderElettroTecniche() { elRenderTecniche(); }
+function elUpdateStats() {}
+function adjustCount() {}
+function elAddLog() {}
+function elPopulateSelects() {}
+function renderElTracker() {}
+function renderElLog() {}
+function renderElStats() {}
 
 /* ══════════════════════════════════════════════════════════════
-   ESPERIMENTI — lettura/scrittura esperimenti.json su GitHub
+   ESPERIMENTI — legge/scrive esperimenti.json su GitHub
 ══════════════════════════════════════════════════════════════ */
+
 var ESP_RAW_URL = 'https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/esperimenti.json';
 var ESP_API_URL = 'https://api.github.com/repos/francescocaruso487-tech/bioserra/contents/esperimenti.json';
-var _tk1='ghp_kUUCwv7PUVNK';var _tk2='WGewK0vJqe5qeP3wjB1DPGH0';var ESP_TOKEN=_tk1+_tk2;
-var espData     = null;   // cache locale
-var espSHA      = null;   // SHA corrente del file su GitHub
+var _tk1 = 'ghp_kUUCwv7PUVNK';
+var _tk2 = 'WGewK0vJqe5qeP3wjB1DPGH0';
+var ESP_TOKEN = _tk1 + _tk2;
+var espData = null;
 
-/* ── Sub-tab switch ── */
 function switchEspTab(tab) {
   var btnA = document.getElementById('esptab-attivi');
   var btnP = document.getElementById('esptab-proposte');
@@ -2457,91 +1988,87 @@ function switchEspTab(tab) {
   }
 }
 
-/* ── Carica esperimenti.json da GitHub raw ── */
 async function espLoad() {
   var statusEl = document.getElementById('esp-status');
-  if (statusEl) statusEl.textContent = '⏳ Sincronizzazione in corso…';
+  if (statusEl) statusEl.textContent = 'Sincronizzazione…';
   try {
     var res = await fetch(ESP_RAW_URL + '?v=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     espData = await res.json();
     if (statusEl) {
       var ts = espData.aggiornato ? ' · ' + espData.aggiornato : '';
-      statusEl.textContent = '✅ Sincronizzato' + ts;
+      statusEl.innerHTML = '<span style="color:var(--green2)">✅ Sincronizzato' + ts + '</span>';
     }
-    espRenderAttivi();
-    espRenderProposte();
   } catch(e) {
-    if (statusEl) statusEl.textContent = '⚠️ File non trovato — verrà creato al primo aggiornamento';
+    if (statusEl) statusEl.innerHTML = '<span style="color:var(--text3)">File non ancora disponibile</span>';
     espData = { attivi: [], proposte: [] };
-    espRenderAttivi();
-    espRenderProposte();
   }
+  espRenderAttivi();
+  espRenderProposte();
 }
 
 function espReload() { espLoad(); }
 
-/* ── Render ATTIVI ── */
+function espEscape(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
 function espRenderAttivi() {
   var el = document.getElementById('esp-lista-attivi');
   if (!el) return;
   var lista = espData && espData.attivi ? espData.attivi : [];
   if (lista.length === 0) {
-    el.innerHTML = '<div class="empty-state"><div class="empty-state-icon">🧪</div>Nessun esperimento attivo.<br>Attivane uno dalla sezione "Da valutare"!</div>';
+    el.innerHTML = '<div class="empty-state"><div class="empty-state-icon">🧪</div>' +
+      'Nessun esperimento attivo.<br>Attivane uno dall\u2019Archivio possibili!</div>';
     return;
   }
   var html = '';
   lista.forEach(function(exp, idx) {
-    html += '<div class="card" style="margin-bottom:10px;border-left:3px solid var(--green2)">';
-    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">';
-    html += '<div style="font-size:14px;font-weight:700;color:var(--text);flex:1;padding-right:8px">' + espEscape(exp.nome || '—') + '</div>';
-    html += '<label class="toggle-sw" style="flex-shrink:0" title="Disattiva esperimento">';
-    html += '<input type="checkbox" checked onchange="espToggleOff(' + idx + ',this)">';
-    html += '<span class="toggle-slider"></span></label>';
+    html += '<div style="padding:12px 0;border-bottom:1px solid var(--border)">';
+    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px">';
+    html += '<div style="font-size:14px;font-weight:700;color:var(--text);flex:1">' + espEscape(exp.nome || '—') + '</div>';
+    html += '<label class="toggle-sw" style="flex-shrink:0"><input type="checkbox" checked onchange="espDisattiva(' + idx + ',this)"><span class="toggle-slider"></span></label>';
     html += '</div>';
-    if (exp.descrizione) html += '<div style="font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:8px">' + espEscape(exp.descrizione) + '</div>';
+    if (exp.descrizione) html += '<div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:5px">' + espEscape(exp.descrizione) + '</div>';
     if (exp.materiali && exp.materiali.length) {
-      html += '<div style="margin-bottom:8px"><div style="font-size:11px;font-weight:700;color:var(--green2);margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px">📦 Materiali</div>';
-      html += '<div style="font-size:12px;color:var(--text2)">' + (Array.isArray(exp.materiali) ? exp.materiali.join(', ') : espEscape(String(exp.materiali))) + '</div></div>';
+      html += '<div style="font-size:11px;color:var(--green2);margin-bottom:3px">📦 ' + (Array.isArray(exp.materiali) ? exp.materiali.join(', ') : espEscape(String(exp.materiali))) + '</div>';
     }
-    html += '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">';
-    if (exp.data_attivazione) html += '<span style="font-size:11px;color:var(--text3)">📅 Attivato: ' + espEscape(exp.data_attivazione) + '</span>';
+    html += '<div style="display:flex;gap:10px;flex-wrap:wrap">';
+    if (exp.data_attivazione) html += '<span style="font-size:11px;color:var(--text3)">📅 ' + espEscape(exp.data_attivazione) + '</span>';
     if (exp.fonte) html += '<span style="font-size:11px;color:var(--text3)">🤖 ' + espEscape(exp.fonte) + '</span>';
     html += '</div></div>';
   });
   el.innerHTML = html;
 }
 
-/* ── Render PROPOSTE ── */
 function espRenderProposte() {
   var el = document.getElementById('esp-lista-proposte');
   if (!el) return;
   var lista = espData && espData.proposte ? espData.proposte : [];
   if (lista.length === 0) {
-    el.innerHTML = '<div class="empty-state"><div class="empty-state-icon">💡</div>Nessuna proposta AI ancora.<br>Il bot Telegram aggiungerà nuove idee ogni giorno.</div>';
+    el.innerHTML = '<div class="empty-state"><div class="empty-state-icon">💡</div>' +
+      'Nessuna proposta ancora.<br>Il Cervello AI ne aggiunge ogni giorno.</div>';
     return;
   }
   var html = '';
   lista.forEach(function(exp, idx) {
-    html += '<div class="card" style="margin-bottom:10px;border-left:3px solid var(--orange)">';
-    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">';
-    html += '<div style="font-size:14px;font-weight:700;color:var(--text);flex:1;padding-right:8px">' + espEscape(exp.nome || '—') + '</div>';
+    html += '<div style="padding:12px 0;border-bottom:1px solid var(--border)">';
+    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px">';
+    html += '<div style="font-size:14px;font-weight:700;color:var(--text);flex:1">' + espEscape(exp.nome || '—') + '</div>';
     html += '<button onclick="espAttiva(' + idx + ')" style="flex-shrink:0;background:var(--green2);border:none;border-radius:8px;padding:5px 12px;color:var(--text);font-size:12px;font-weight:700;cursor:pointer">✅ Attiva</button>';
     html += '</div>';
-    if (exp.descrizione) html += '<div style="font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:8px">' + espEscape(exp.descrizione) + '</div>';
+    if (exp.descrizione) html += '<div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:5px">' + espEscape(exp.descrizione) + '</div>';
     if (exp.materiali && exp.materiali.length) {
-      html += '<div style="margin-bottom:8px"><div style="font-size:11px;font-weight:700;color:var(--orange);margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px">📦 Materiali</div>';
-      html += '<div style="font-size:12px;color:var(--text2)">' + (Array.isArray(exp.materiali) ? exp.materiali.join(', ') : espEscape(String(exp.materiali))) + '</div></div>';
+      html += '<div style="font-size:11px;color:var(--orange);margin-bottom:3px">📦 ' + (Array.isArray(exp.materiali) ? exp.materiali.join(', ') : espEscape(String(exp.materiali))) + '</div>';
     }
-    html += '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">';
-    if (exp.data_proposta) html += '<span style="font-size:11px;color:var(--text3)">📅 Proposto: ' + espEscape(exp.data_proposta) + '</span>';
+    html += '<div style="display:flex;gap:10px;flex-wrap:wrap">';
+    if (exp.data_proposta) html += '<span style="font-size:11px;color:var(--text3)">📅 ' + espEscape(exp.data_proposta) + '</span>';
     if (exp.fonte) html += '<span style="font-size:11px;color:var(--text3)">🤖 ' + espEscape(exp.fonte) + '</span>';
     html += '</div></div>';
   });
   el.innerHTML = html;
 }
 
-/* ── Attiva un esperimento (proposta → attivi) ── */
 async function espAttiva(idx) {
   if (!espData || !espData.proposte) return;
   var exp = espData.proposte[idx];
@@ -2551,85 +2078,155 @@ async function espAttiva(idx) {
   espData.attivi.push(exp);
   espData.proposte.splice(idx, 1);
   espData.aggiornato = new Date().toISOString().slice(0,16).replace('T',' ');
-  await espSalva('Attivato esperimento: ' + exp.nome);
+  await espSalva('Attivato: ' + exp.nome);
   espRenderAttivi();
   espRenderProposte();
 }
 
-/* ── Disattiva (toggle off) un esperimento attivo ── */
-async function espToggleOff(idx, checkbox) {
+async function espDisattiva(idx, checkbox) {
   if (!espData || !espData.attivi) { checkbox.checked = true; return; }
   var exp = espData.attivi[idx];
   if (!exp) { checkbox.checked = true; return; }
-  if (!confirm('Disattivare "' + exp.nome + '"? Verrà spostato nelle proposte.')) {
-    checkbox.checked = true;
-    return;
-  }
-  exp.data_proposta = exp.data_proposta || exp.data_attivazione || new Date().toLocaleDateString('it-IT');
+  if (!confirm('Disattivare "' + exp.nome + '"?')) { checkbox.checked = true; return; }
   delete exp.data_attivazione;
+  exp.data_proposta = exp.data_proposta || new Date().toLocaleDateString('it-IT');
   if (!espData.proposte) espData.proposte = [];
   espData.proposte.unshift(exp);
   espData.attivi.splice(idx, 1);
   espData.aggiornato = new Date().toISOString().slice(0,16).replace('T',' ');
-  await espSalva('Disattivato esperimento: ' + exp.nome);
+  await espSalva('Disattivato: ' + exp.nome);
   espRenderAttivi();
   espRenderProposte();
 }
 
-/* ── Salva esperimenti.json su GitHub ── */
-async function espSalva(messaggio) {
+async function espSalva(msg) {
   var statusEl = document.getElementById('esp-status');
-  if (statusEl) statusEl.textContent = '💾 Salvataggio su GitHub…';
+  if (statusEl) statusEl.innerHTML = '<span style="color:var(--text3)">💾 Salvataggio…</span>';
   try {
-    // 1. Recupera SHA attuale
     var metaRes = await fetch(ESP_API_URL, {
       headers: { 'Authorization': 'token ' + ESP_TOKEN, 'Accept': 'application/vnd.github.v3+json' }
     });
     var sha = null;
-    if (metaRes.ok) {
-      var meta = await metaRes.json();
-      sha = meta.sha || null;
-    }
-    // 2. Codifica contenuto in base64
-    var jsonStr = JSON.stringify(espData, null, 2);
-    var b64 = btoa(unescape(encodeURIComponent(jsonStr)));
-    // 3. PUT su GitHub
-    var body = { message: messaggio || 'Aggiorna esperimenti.json da BioSerra', content: b64, branch: 'main' };
+    if (metaRes.ok) { var meta = await metaRes.json(); sha = meta.sha || null; }
+    var b64 = btoa(unescape(encodeURIComponent(JSON.stringify(espData, null, 2))));
+    var body = { message: msg || 'Aggiorna esperimenti.json', content: b64, branch: 'main' };
     if (sha) body.sha = sha;
     var putRes = await fetch(ESP_API_URL, {
       method: 'PUT',
-      headers: {
-        'Authorization': 'token ' + ESP_TOKEN,
-        'Content-Type': 'application/json',
-        'Accept': 'application/vnd.github.v3+json'
-      },
+      headers: { 'Authorization': 'token ' + ESP_TOKEN, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
       body: JSON.stringify(body)
     });
-    if (!putRes.ok) throw new Error('GitHub PUT: ' + putRes.status);
-    if (statusEl) statusEl.textContent = '✅ Salvato su GitHub · ' + new Date().toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+    if (!putRes.ok) throw new Error('PUT ' + putRes.status);
+    if (statusEl) statusEl.innerHTML = '<span style="color:var(--green2)">✅ Salvato</span>';
   } catch(e) {
-    if (statusEl) statusEl.textContent = '⚠️ Errore salvataggio: ' + e.message;
-    console.error('espSalva error:', e);
+    if (statusEl) statusEl.innerHTML = '<span style="color:var(--orange)">⚠️ ' + e.message + '</span>';
   }
 }
 
-/* ── Utility escape HTML ── */
-function espEscape(str) {
-  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+/* ══════════════════════════════════════════════════════════════
+   CERVELLO — brain.json + consigli del giorno
+══════════════════════════════════════════════════════════════ */
+
+async function brainLoad() {
+  var el     = document.getElementById('brain-content');
+  var status = document.getElementById('brain-status');
+  if (!el) return;
+  if (status) status.textContent = 'Caricamento…';
+  try {
+    var res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/brain.json?v=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    var data = await res.json();
+    if (status) status.innerHTML = '<span style="color:var(--green2)">✅ Aggiornato · ' + (data.aggiornato || '') + '</span>';
+    var html = '';
+    var consigli = data.consigli || data.items || data.oggi || [];
+    if (Array.isArray(consigli) && consigli.length > 0) {
+      consigli.forEach(function(c) {
+        if (typeof c === 'string') {
+          html += '<div style="padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--text2);line-height:1.5">' + c + '</div>';
+        } else {
+          html += '<div style="padding:10px 0;border-bottom:1px solid var(--border)">';
+          if (c.titolo) html += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px">' + c.titolo + '</div>';
+          if (c.testo || c.body) html += '<div style="font-size:12px;color:var(--text2);line-height:1.5">' + (c.testo || c.body) + '</div>';
+          html += '</div>';
+        }
+      });
+    } else if (data.testo || data.body) {
+      html = '<div style="font-size:13px;color:var(--text2);line-height:1.7;white-space:pre-wrap">' + (data.testo || data.body) + '</div>';
+    } else {
+      html = '<div style="font-size:13px;color:var(--text3);padding:12px 0">Nessun consiglio disponibile oggi.</div>';
+    }
+    el.innerHTML = html;
+  } catch(e) {
+    if (status) status.innerHTML = '<span style="color:var(--text3)">File non ancora disponibile</span>';
+    el.innerHTML = '<div style="font-size:13px;color:var(--text3);padding:12px 0;text-align:center">' +
+      '🧠 Il Cervello AI popola questo file ogni mattina.<br>Torna domani per i consigli del giorno!</div>';
+  }
 }
 
-/* ── Init Elettrocultura ── */
+/* ══════════════════════════════════════════════════════════════
+   MANUALI — Note personali + Analisi AI PDF
+══════════════════════════════════════════════════════════════ */
+
+var manNote = [];
+function manLoadNote()  { try { manNote = JSON.parse(localStorage.getItem('man_note') || '[]'); } catch(e) { manNote = []; } }
+function manSaveNote()  { try { localStorage.setItem('man_note', JSON.stringify(manNote)); } catch(e) {} }
+manLoadNote();
+
+function manSalvaNota() {
+  var titoloEl = document.getElementById('man-nota-titolo');
+  var testoEl  = document.getElementById('man-nota-testo');
+  var titolo   = titoloEl ? titoloEl.value.trim() : '';
+  var testo    = testoEl  ? testoEl.value.trim()  : '';
+  if (!testo) { alert('Inserisci il testo della nota'); return; }
+  manNote.unshift({ id: Date.now(), titolo: titolo || 'Nota', testo: testo, data: new Date().toLocaleDateString('it-IT') });
+  manSaveNote();
+  if (titoloEl) titoloEl.value = '';
+  if (testoEl)  testoEl.value  = '';
+  manRenderNote();
+}
+
+function manEliminaNota(id) {
+  manNote = manNote.filter(function(n){ return n.id !== id; });
+  manSaveNote();
+  manRenderNote();
+}
+
+function manRenderNote() {
+  var el  = document.getElementById('man-note-lista');
+  var cnt = document.getElementById('man-note-count');
+  if (cnt) cnt.textContent = manNote.length + ' note';
+  if (!el) return;
+  if (manNote.length === 0) {
+    el.innerHTML = '<div style="font-size:13px;color:var(--text3);padding:8px 0">Nessuna nota ancora</div>';
+    return;
+  }
+  var html = '';
+  manNote.forEach(function(n) {
+    html += '<div style="padding:10px 0;border-top:1px solid var(--border)">';
+    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px">';
+    html += '<span style="font-size:13px;font-weight:700;color:var(--text)">' + n.titolo + '</span>';
+    html += '<div style="display:flex;align-items:center;gap:8px"><span style="font-size:11px;color:var(--text3)">' + n.data + '</span>';
+    html += '<button onclick="manEliminaNota(' + n.id + ')" style="background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;padding:0;line-height:1">×</button></div></div>';
+    html += '<div style="font-size:13px;color:var(--text2);line-height:1.6">' + n.testo + '</div></div>';
+  });
+  el.innerHTML = html;
+}
+
+function manAggiungeTecnica(idx) {
+  var techs = window._pdf_tecniche || [];
+  var t = techs[idx];
+  if (!t) return;
+  alert('Per aggiungere questa tecnica, il Cervello AI la inserisce automaticamente in electro_tecniche.json');
+}
+
+/* ── Init Laboratorio ── */
 function initElettrocultura() {
-  elLoadState();
-  elLoadGlobale();
   manLoadNote();
   manRenderNote();
-  renderElettroTecniche();
-  elLunarTip();
-  elLoadTecnicheJSON();
-  elUpdateStats();
+  elLoadGlobale();
+  elTecRicarica();
+  espLoad();
 }
-// initElettrocultura viene chiamata da initApp() dopo sblocco PIN
 
 /* ══════════════════════════════════════════════════════════════
    METEO — Open-Meteo · Caserta fissa
@@ -4183,51 +3780,6 @@ function renderAlertsOggi(alerts) {
 ══════════════════════════════════════════════════════════════ */
 
 /* Contenuti manuali base */
-var MAN_CONTENUTI = {
-  serra_v2: {
-    titolo: '🌱 Manuale Mini-Serra v2',
-    corpo: '<h3>Struttura</h3><p>10 vasi in tessuto 10L su supporti forati. Pellicola riflettente sotto e sui 3 lati laterali. Serbatoio 50L con pompa solare.</p><h3>Substrato</h3><p>100L BioBizz Light-Mix + 10L fibra cocco + Super Soil + 3kg Worm Humus + micorrize 0.5-1g/pianta.</p><h3>Irrigazione</h3><p>1 gocciolatore/pianta. Frequenza: 1 volta/giorno o ogni 2 giorni in base al clima. Bagnare i bordi dei vasi ogni 7-10 giorni manualmente.</p><h3>Sistema Water-Only</h3><p>Grazie al Super Soil non servono fertilizzanti liquidi per 8 mesi. Solo irrigazione e additivi biologici periodici.</p>'
-  },
-  calendario: {
-    titolo: '📋 Calendario Colture',
-    corpo: '<h3>Autofiorenti (18h luce ideale)</h3><p>Epsilon F1 (ID:7) — Germinazione 21/04, Taglio 20/06<br>Milky Way F1 (ID:1) — Germinazione 23/04, Taglio 22/07<br>Titan F1 (ID:2) — Germinazione 22/04, Taglio 21/07<br>Medusa F1 (ID:3) — Germinazione 21/04, Taglio 20/07<br>Gaia F1 (ID:8) — Germinazione 21/04, Taglio 15/07</p><h3>Femminizzate (12h luce ideale)</h3><p>Astro Lemonade F1 (ID:4) — Taglio 30/10<br>Cosmic Cheddar F1 (ID:11) — Taglio 30/10<br>Orbital Banana F1 (ID:6) — Taglio 30/10<br>Royal Gorilla (ID:10) — Taglio 09/11<br>Mexican Rush (ID:9) — Taglio 09/11</p><h3>Moltiplicatore luce</h3><p>Formula: giorni reali = giorni produttore × (ore ideali ÷ ore attuali)</p>'
-  },
-  elettrocultura: {
-    titolo: '⚡ Guida Elettrocultura',
-    corpo: '<h3>Circuito di Lakhovsky</h3><p>Anello di rame aperto (~50 cm) alla base di ogni pianta. Estremità sovrapposte per 2-3 cm con 1 cm di spazio. Antenna di risonanza cosmica.</p><h3>Pila Galvanica Ferro-Rame</h3><p>Chiodo di ferro arrugginito + filo di rame in terreno umido. Micro-corrente ~0.5-0.7V ionizza i nutrienti. Ferro verso Nord, rame verso Sud.</p><h3>Pantacle di Rame</h3><p>Archi di rame collegano il terreno di tutti i vasi in serie. I 10 vasi diventano un organismo collettivo.</p><h3>Acqua Magnetizzata</h3><p>Magnete principale sul tubo principale + Geomag su ogni gocciolatoio. Polo Nord verso il flusso d’acqua.</p><h3>Spirale di Rame Cosmica</h3><p>Spirale avvolta in senso orario attorno al fusto. Geometria sacra naturale.</p>'
-  },
-  serbatoio: {
-    titolo: '💧 Gestione Serbatoio',
-    corpo: '<h3>Preparazione</h3><p>Oscura la tanica con sacco nero per evitare alghe. Aggiungi pietra/rametto per colonizzazione microbica.</p><h3>Infuso di Humus</h3><p>5L acqua + 100-150g Worm Humus. Prepara separatamente e poi versa nella tanica. Rinnova 1x al mese.</p><h3>Ossigenazione</h3><p>Agita la tanica 10-15 secondi ogni settimana. Evita stagnazione.</p><h3>Acqua strutturata</h3><p>Magnete principale avvolto attorno al tubo vicino all’inizio della linea. Polarità: polo Nord verso il flusso.</p>'
-  },
-  additivi: {
-    titolo: '🧪 Additivi Biologici',
-    corpo: '<h3>Melassa (1x ogni 15gg)</h3><p>1 ml/L — Dogma Organics Morganix. Prepara in bottiglia separata. Nutrimento microbi del suolo.</p><h3>Miscela Organica (1x/mese)</h3><p>Gusci d’uovo + bucce banana + fondi caffè. Tutti essiccati e triturati. 1 cucchiaio grande/vaso. Calcio + Potassio + Azoto.</p><h3>Infuso Ortiche (1x/mese)</h3><p>100-150g foglie fresche per 1L acqua. Macerazione 3-7 giorni. Diluire 1:10. Dose: 1-2L/vaso.</p><h3>Tè Banana e Cenere (ogni 2 sett. da M5)</h3><p>3-4 bucce in 1L per 15 min. Filtra. Aggiungi 1 cucchiaino cenere. Diluisci 1:5.</p><h3>Generatore Etilene (M7-M8)</h3><p>1 mela matura o banana annerita nella serra. Sostituire ogni 3-4 giorni.</p>'
-  },
-  scheda_rapida: {
-    titolo: '📅 Scheda Rapida Additivi',
-    corpo: '<table style="width:100%;border-collapse:collapse;font-size:12px"><tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 4px;color:var(--green2)">Additivo</th><th style="text-align:left;padding:6px 4px;color:var(--green2)">Dose</th><th style="text-align:left;padding:6px 4px;color:var(--green2)">Cadenza</th></tr><tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 4px">Melassa</td><td style="padding:6px 4px">1 ml/L</td><td style="padding:6px 4px">Ogni 15gg</td></tr><tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 4px">Miscela organica</td><td style="padding:6px 4px">1 cucch/vaso</td><td style="padding:6px 4px">1x/mese</td></tr><tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 4px">Infuso ortiche</td><td style="padding:6px 4px">1-2L/vaso dil.1:10</td><td style="padding:6px 4px">1x/mese</td></tr><tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 4px">Tè banana+cenere</td><td style="padding:6px 4px">dil. 1:5</td><td style="padding:6px 4px">Ogni 2 sett (M5-M8)</td></tr><tr><td style="padding:6px 4px">Etilene</td><td style="padding:6px 4px">1 frutto maturo</td><td style="padding:6px 4px">M7-M8, ogni 3-4gg</td></tr></table>'
-  }
-};
-
-function manApri(id) {
-  var m = MAN_CONTENUTI[id];
-  if (!m) { alert('Contenuto non disponibile'); return; }
-  var modale = document.getElementById('man-modale');
-  var titolo = document.getElementById('man-modale-titolo');
-  var corpo  = document.getElementById('man-modale-corpo');
-  if (!modale) return;
-  titolo.textContent = m.titolo;
-  corpo.innerHTML = '<style>#man-modale-corpo h3{font-size:14px;color:var(--green2);margin:14px 0 6px}#man-modale-corpo p{margin:0 0 8px}#man-modale-corpo table{width:100%}</style>' + m.corpo;
-  modale.style.display = 'block';
-  document.body.style.overflow = 'hidden';
-}
-
-function manChiudi() {
-  var modale = document.getElementById('man-modale');
-  if (modale) modale.style.display = 'none';
-  document.body.style.overflow = '';
-}
 
 /* Note personali */
 var manNote = [];
@@ -4254,23 +3806,6 @@ function manEliminaNota(id) {
   manRenderNote();
 }
 
-function manRenderNote() {
-  var el = document.getElementById('man-note-lista');
-  var cnt = document.getElementById('man-note-count');
-  if (cnt) cnt.textContent = manNote.length + ' note';
-  if (!el) return;
-  if (manNote.length === 0) { el.innerHTML = '<div style="font-size:13px;color:var(--text3);padding:8px 0">Nessuna nota ancora</div>'; return; }
-  var html = '';
-  manNote.forEach(function(n) {
-    html += '<div style="padding:10px 0;border-top:1px solid var(--border)">';
-    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px">';
-    html += '<span style="font-size:13px;font-weight:700;color:var(--text)">' + n.titolo + '</span>';
-    html += '<div style="display:flex;align-items:center;gap:8px"><span style="font-size:11px;color:var(--text3)">' + n.data + '</span>';
-    html += '<button onclick="manEliminaNota(' + n.id + ')" style="background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;padding:0">×</button></div></div>';
-    html += '<div style="font-size:13px;color:var(--text2);line-height:1.6">' + n.testo + '</div></div>';
-  });
-  el.innerHTML = html;
-}
 
 /* ── Analisi PDF — carica pdf_knowledge.json e propone tecniche ── */
 async function loadManualiJSON() {
