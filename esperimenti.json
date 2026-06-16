@@ -885,24 +885,6 @@
       "data_attivazione": null
     },
     {
-      "id": "daily_1781640436681_0",
-      "nome": "Tecnica di irrigazione a goccia",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
-      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di cannabis",
-      "materiali": [
-        "tubazioni",
-        "gocciolatori",
-        "valvole"
-      ],
-      "categoria": "irrigazione",
-      "difficolta": "medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null
-    },
-    {
       "id": "daily_1781640436681_1",
       "nome": "Monitoraggio del pH del suolo",
       "descrizione": "Verifica regolare del pH del suolo per garantire un ambiente ottimale per la crescita della cannabis",
@@ -955,6 +937,25 @@
       "data_attivazione": null
     }
   ],
-  "attivi": [],
-  "aggiornato": "2026-06-16 08:27"
+  "attivi": [
+    {
+      "id": "daily_1781640436681_0",
+      "nome": "Tecnica di irrigazione a goccia",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
+      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di cannabis",
+      "materiali": [
+        "tubazioni",
+        "gocciolatori",
+        "valvole"
+      ],
+      "categoria": "irrigazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": "16/06/2026"
+    }
+  ],
+  "aggiornato": "2026-06-16 20:09"
 }
