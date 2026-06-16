@@ -1,12 +1,16 @@
 {
-  "lastUpdate": "2026-06-15",
+  "lastUpdate": "2026-06-16",
   "versione": "1.0",
   "esperimenti_disponibili": [
     {
       "id": "exp_001",
       "nome": "Legnetto con treccia di rame e punta di rame",
       "descrizione": "Legnetto naturale avvolto con treccia di rame terminante con punta di rame. Conduce e amplifica le energie bioelettriche dalla terra verso la pianta.",
-      "materiali": ["Legnetto naturale", "Treccia di rame", "Punta di rame"],
+      "materiali": [
+        "Legnetto naturale",
+        "Treccia di rame",
+        "Punta di rame"
+      ],
       "obiettivo": "Amplificare energia bioelettrica e conduzione terrestre",
       "funzione": "Conduzione e amplificazione energie naturali",
       "come_applicare": "Inserire nel terreno vicino alla base di ogni pianta. Si applica a tutte le piante contemporaneamente.",
@@ -21,7 +25,10 @@
       "id": "exp_002",
       "nome": "Magnete per ogni irrigatore",
       "descrizione": "Magnete posizionato su ogni irrigatore/gocciolatore per magnetizzare l acqua prima che raggiunga le radici.",
-      "materiali": ["Magneti permanenti", "Fascette o supporti"],
+      "materiali": [
+        "Magneti permanenti",
+        "Fascette o supporti"
+      ],
       "obiettivo": "Magnetizzare l acqua di irrigazione per migliorare assorbimento radicale",
       "funzione": "Strutturazione molecolare dell acqua tramite campo magnetico",
       "come_applicare": "Posizionare un magnete su ogni irrigatore. Si applica a tutte le piante contemporaneamente.",
@@ -36,7 +43,10 @@
       "id": "exp_003",
       "nome": "Melassa settimanale",
       "descrizione": "Somministrazione di melassa di canna come fonte di carboidrati per i microrganismi del Living Soil. Frequenza decisa dall utente.",
-      "materiali": ["Melassa di canna non solforata", "Acqua"],
+      "materiali": [
+        "Melassa di canna non solforata",
+        "Acqua"
+      ],
       "obiettivo": "Nutrire i microrganismi del Living Soil e aumentare attivita microbica",
       "funzione": "Stimolo microbico e nutrimento radicale indiretto",
       "come_applicare": "Diluire in acqua e irrigare tutte le piante. Frequenza a discrezione dell utente.",
@@ -50,5 +60,91 @@
   ],
   "esperimenti_attivi": [],
   "storico_cicli": [],
-  "prossimi_da_valutare": []
+  "prossimi_da_valutare": [],
+  "da_valutare": [
+    {
+      "id": "ai_001",
+      "nome": "Low-Stress Training (LST) mirato",
+      "descrizione": "Piegare e fissare i rami giovani per aprire la chioma, uniformare la luce e aumentare i siti di fioritura senza stress eccessivo.",
+      "materiali": [
+        "Filo morbido o clip",
+        "Supporti"
+      ],
+      "obiettivo": "Aumentare i siti di fioritura e uniformare l esposizione alla luce",
+      "fonte": "Royal Queen Seeds",
+      "categoria": "training",
+      "difficolta": "facile",
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "ai_002",
+      "nome": "Supercropping (high-stress training) selettivo",
+      "descrizione": "Ammorbidire la porzione centrale del fusto per rompere la fibra interna senza tagliare. Stimola crescita laterale e aumenta resa.",
+      "materiali": [
+        "Solo dita"
+      ],
+      "obiettivo": "Stimolare crescita laterale e aumentare resa",
+      "fonte": "Zamnesia",
+      "categoria": "training",
+      "difficolta": "media",
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "ai_003",
+      "nome": "Tè di compost attivato (compost tea)",
+      "descrizione": "Estrazione a basso/alto ossigeno di microbi benefici da compost maturo per inoculare il suolo e potenziare il microbioma del Living Soil.",
+      "materiali": [
+        "Compost maturo",
+        "Acqua non clorata",
+        "Pompa aria",
+        "Secchio"
+      ],
+      "obiettivo": "Potenziare il microbioma del Living Soil",
+      "fonte": "Zamnesia",
+      "categoria": "nutrizione_biologica",
+      "difficolta": "media",
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "ai_004",
+      "nome": "Elettrocultura a bassa intensità con coils nel suolo",
+      "descrizione": "Installazione di elettrodi o coils in rame o acciaio inox nel profilo del suolo collegati a sorgente di corrente a bassissima intensità per stimolare attività radicale.",
+      "materiali": [
+        "Filo di rame o acciaio inox",
+        "Sorgente corrente bassa intensità",
+        "Connettori"
+      ],
+      "obiettivo": "Stimolare attività radicale e assorbimento nutrienti",
+      "fonte": "PDF Drive",
+      "categoria": "elettrocultura",
+      "difficolta": "avanzata",
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "ai_005",
+      "nome": "Infuso di ortica fermentato potenziato",
+      "descrizione": "Fermentazione prolungata di ortica fresca in acqua non clorata per 2 settimane. Ricco di azoto, ferro e silicio. Diluire 1:10 prima dell uso.",
+      "materiali": [
+        "Ortica fresca",
+        "Acqua non clorata",
+        "Contenitore",
+        "2 settimane di attesa"
+      ],
+      "obiettivo": "Apportare azoto, ferro e silicio in forma biodisponibile",
+      "fonte": "Royal Queen Seeds + PDF Drive",
+      "categoria": "nutrizione_biologica",
+      "difficolta": "facile",
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    }
+  ]
 }
