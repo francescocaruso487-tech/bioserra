@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-16T20:00:25.709Z",
+  "lastUpdate": "2026-06-16T20:02:35.746Z",
   "versione": "1.0",
   "esperimenti_disponibili": [
     {
@@ -228,6 +228,90 @@
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_0",
+      "nome": "Elettrocultura per cannabis",
+      "descrizione": "Applicare un campo elettrico alle piante per aumentare la crescita",
+      "obiettivo": "Aumentare la resa e la qualità delle piante",
+      "materiali": [
+        "Generatore di campo elettrico",
+        "Elettrodi"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Ricerca scientifica",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_1",
+      "nome": "Irrigazione intelligente",
+      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
+      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
+      "materiali": [
+        "Sensori di umidità",
+        "Sistema di irrigazione automatico"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": " Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_2",
+      "nome": "Fertilizzazione organica",
+      "descrizione": "Utilizzare fertilizzanti organici per aumentare la salute e la resistenza delle piante",
+      "obiettivo": "Aumentare la resa e la qualità delle piante",
+      "materiali": [
+        "Fertilizzanti organici",
+        "Compost"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Agricoltura biologica",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_3",
+      "nome": "Monitoraggio della temperatura",
+      "descrizione": "Utilizzare termometri per monitorare la temperatura e regolare l'ambiente",
+      "obiettivo": "Mantenere una temperatura ottimale per la crescita delle piante",
+      "materiali": [
+        "Termometri",
+        "Sistema di riscaldamento/raffreddamento"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_4",
+      "nome": "Pruning selettiva",
+      "descrizione": "Utilizzare la tecnica di pruning per regolare la crescita e la forma delle piante",
+      "obiettivo": "Aumentare la resa e la qualità delle piante",
+      "materiali": [
+        "Forbici da giardinaggio"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Tecnica di coltivazione",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
     }
   ],
   "proposte": [
@@ -394,6 +478,90 @@
       "difficolta": "facile",
       "fonte": "Zamnesia",
       "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_0",
+      "nome": "Elettrocultura per cannabis",
+      "descrizione": "Applicare un campo elettrico alle piante per aumentare la crescita",
+      "obiettivo": "Aumentare la resa e la qualità delle piante",
+      "materiali": [
+        "Generatore di campo elettrico",
+        "Elettrodi"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Ricerca scientifica",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_1",
+      "nome": "Irrigazione intelligente",
+      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
+      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
+      "materiali": [
+        "Sensori di umidità",
+        "Sistema di irrigazione automatico"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": " Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_2",
+      "nome": "Fertilizzazione organica",
+      "descrizione": "Utilizzare fertilizzanti organici per aumentare la salute e la resistenza delle piante",
+      "obiettivo": "Aumentare la resa e la qualità delle piante",
+      "materiali": [
+        "Fertilizzanti organici",
+        "Compost"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Agricoltura biologica",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_3",
+      "nome": "Monitoraggio della temperatura",
+      "descrizione": "Utilizzare termometri per monitorare la temperatura e regolare l'ambiente",
+      "obiettivo": "Mantenere una temperatura ottimale per la crescita delle piante",
+      "materiali": [
+        "Termometri",
+        "Sistema di riscaldamento/raffreddamento"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_4",
+      "nome": "Pruning selettiva",
+      "descrizione": "Utilizzare la tecnica di pruning per regolare la crescita e la forma delle piante",
+      "obiettivo": "Aumentare la resa e la qualità delle piante",
+      "materiali": [
+        "Forbici da giardinaggio"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Tecnica di coltivazione",
+      "durata_giorni": 30,
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
