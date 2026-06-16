@@ -783,6 +783,67 @@
   border-bottom: 1px solid var(--border);
   margin-bottom: 12px;
 }
+
+  /* ══ CALENDARIO UNIFICATO — stili ══ */
+  .cal-subtab {
+    flex-shrink:0; padding:6px 12px; border:1px solid var(--border);
+    border-radius:20px; background:var(--card2); color:var(--text2);
+    font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap;
+    transition:background 0.2s, color 0.2s;
+  }
+  .cal-subtab.active { background:var(--green); color:#fff; border-color:var(--green); }
+  .cal-subtab:active { opacity:0.8; }
+  .cal-panel { display:none; }
+  .cal-panel.active { display:block; }
+  .cal-oggi-row {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:10px 12px; background:var(--card2); border-radius:10px;
+    border:1px solid var(--border); cursor:pointer; gap:10px;
+  }
+  .cal-oggi-row:active { background:var(--green2); }
+  .cal-oggi-icon { font-size:20px; flex-shrink:0; }
+  .cal-oggi-label { font-size:10px; font-weight:700; color:var(--text3); text-transform:uppercase; letter-spacing:0.5px; }
+  .cal-oggi-val { font-size:13px; color:var(--text); font-weight:600; margin-top:1px; }
+  .cal-oggi-sub { font-size:11px; color:var(--text3); }
+  .cal-moon-day {
+    flex-shrink:0; display:flex; flex-direction:column; align-items:center;
+    gap:2px; background:var(--card2); border-radius:8px; padding:6px 8px;
+    cursor:pointer; border:1px solid transparent; min-width:46px;
+  }
+  .cal-moon-day:active { border-color:var(--green); }
+  .cal-moon-day.today { border-color:var(--green3); background:rgba(74,175,94,0.12); }
+  .cal-phase-row {
+    display:flex; align-items:center; gap:10px; padding:8px 10px;
+    background:var(--card2); border-radius:8px; cursor:pointer; border:1px solid var(--border);
+  }
+  .cal-phase-row:active { border-color:var(--green); }
+  .cal-tratt-item {
+    display:flex; align-items:center; gap:10px; padding:10px 12px;
+    background:var(--card2); border-radius:10px; border:1px solid var(--border); cursor:pointer;
+  }
+  .cal-tratt-item:active { background:rgba(171,71,188,0.15); }
+  .cal-foto-bar {
+    display:flex; align-items:center; gap:8px; padding:3px 0;
+  }
+  .cal-foto-bar-fill { height:10px; border-radius:5px; transition:width 0.3s; }
+  .cal-gdd-row {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:8px 10px; background:var(--card2); border-radius:8px; cursor:pointer;
+  }
+  .cal-gdd-row:active { background:rgba(58,159,216,0.15); }
+  .cal-matur-row {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:9px 12px; background:var(--card2); border-radius:10px;
+    border:1px solid var(--border); cursor:pointer; gap:8px;
+  }
+  .cal-matur-row:active { background:rgba(255,152,0,0.12); }
+  .cal-lavori-day {
+    padding:8px 10px; background:var(--card2); border-radius:8px; border:1px solid var(--border); cursor:pointer;
+  }
+  .cal-lavori-day:active { border-color:var(--green); }
+  .cal-gelo-stat { display:flex; align-items:center; justify-content:space-between; padding:7px 10px; background:var(--card2); border-radius:8px; }
+  .cal-sem-day { display:flex; align-items:center; gap:8px; padding:7px 10px; background:var(--card2); border-radius:8px; border-left:3px solid transparent; }
+
 </style>
 </head>
 <body>
@@ -1340,6 +1401,311 @@
       <div id="fenol-stagionale" style="display:flex;flex-direction:column;gap:6px;padding-top:4px;"></div>
     </div>
   </div>
+
+  <!-- ══ CALENDARIO UNIFICATO ══ -->
+  <div class="amb-section-header" style="cursor:pointer;" onclick="toggleCalendario()">
+    📅 Calendario Unificato
+    <span id="cal-toggle-arrow" style="float:right;font-size:14px;transition:transform 0.3s;">▼</span>
+  </div>
+  <div id="cal-wrapper" style="display:none;">
+
+    <!-- Sotto-tab bar -->
+    <div style="display:flex;overflow-x:auto;gap:6px;padding:0 2px 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch;position:sticky;top:56px;z-index:40;background:var(--bg);padding-top:6px;">
+      <button class="cal-subtab active" id="cst-oggi"       onclick="switchCalTab('oggi')">🌟 Oggi</button>
+      <button class="cal-subtab"        id="cst-lunare"     onclick="switchCalTab('lunare')">🌙 Lunare</button>
+      <button class="cal-subtab"        id="cst-bio"        onclick="switchCalTab('bio')">🌱 Biodin.</button>
+      <button class="cal-subtab"        id="cst-semine"     onclick="switchCalTab('semine')">🌾 Semine</button>
+      <button class="cal-subtab"        id="cst-tratt"      onclick="switchCalTab('tratt')">🧪 Tratt.</button>
+      <button class="cal-subtab"        id="cst-foto"       onclick="switchCalTab('foto')">☀️ Foto.</button>
+      <button class="cal-subtab"        id="cst-fenol"      onclick="switchCalTab('fenol')">🌸 Fenol.</button>
+      <button class="cal-subtab"        id="cst-lavori"     onclick="switchCalTab('lavori')">🔧 Lavori</button>
+      <button class="cal-subtab"        id="cst-gdd"        onclick="switchCalTab('gdd')">📈 GDD</button>
+      <button class="cal-subtab"        id="cst-gelo"       onclick="switchCalTab('gelo')">❄️ Gelo</button>
+      <button class="cal-subtab"        id="cst-matur"      onclick="switchCalTab('matur')">🍊 Matur.</button>
+    </div>
+
+    <!-- ─── OGGI ─── -->
+    <div class="cal-panel active" id="cal-panel-oggi">
+      <div class="card" style="background:linear-gradient(135deg,rgba(74,175,94,0.1),rgba(58,159,216,0.06));border-color:rgba(74,175,94,0.25);">
+        <div class="card-title" style="font-size:16px;">🌟 Riepilogo Integrato — <span id="cal-oggi-data">—</span></div>
+        <div id="cal-oggi-grid" style="display:flex;flex-direction:column;gap:8px;margin-top:10px;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">🤖 Consiglio AI Integrato</div>
+        <div id="cal-oggi-ai" style="font-size:13px;color:var(--text2);line-height:1.7;">⏳ Caricamento…</div>
+      </div>
+    </div>
+
+    <!-- ─── LUNARE ─── -->
+    <div class="cal-panel" id="cal-panel-lunare">
+      <div class="card" onclick="openAmbPopup('luna-fase')" style="cursor:pointer;background:linear-gradient(135deg,rgba(58,159,216,0.12),rgba(30,74,108,0.08));">
+        <div style="display:flex;align-items:center;gap:14px;padding:6px 0 12px;">
+          <div style="font-size:64px;line-height:1;filter:drop-shadow(0 0 10px rgba(58,159,216,0.5));" id="cal-moon-emoji">🌕</div>
+          <div style="flex:1;">
+            <div style="font-size:18px;font-weight:700;" id="cal-moon-name">—</div>
+            <div style="font-size:13px;color:var(--text2);margin:4px 0;"><strong id="cal-moon-illum">—</strong>% illuminazione · <span id="cal-moon-age" style="color:#f0843c;font-weight:600;">—</span> gg</div>
+            <div style="height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;"><div id="cal-moon-bar" style="height:100%;background:linear-gradient(90deg,#3a9fd8,#4aaf5e);border-radius:3px;width:0%;"></div></div>
+          </div>
+        </div>
+        <div style="font-size:10px;color:var(--text3);text-align:right;">Tocca per dettagli →</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <div class="card" onclick="openAmbPopup('luna-piena')" style="text-align:center;cursor:pointer;">
+          <div style="font-size:26px;font-weight:800;color:#f0843c;" id="cal-days-full">—</div>
+          <div style="font-size:11px;color:var(--text2);">🌕 Luna Piena</div>
+          <div style="font-size:11px;color:var(--text3);" id="cal-date-full">—</div>
+        </div>
+        <div class="card" onclick="openAmbPopup('luna-nuova')" style="text-align:center;cursor:pointer;">
+          <div style="font-size:26px;font-weight:800;color:#3a9fd8;" id="cal-days-new">—</div>
+          <div style="font-size:11px;color:var(--text2);">🌑 Luna Nuova</div>
+          <div style="font-size:11px;color:var(--text3);" id="cal-date-new">—</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Prossimi 14 giorni</div>
+        <div id="cal-lunar-strip" style="display:flex;gap:5px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">🌾 Consigli agricoli per fase</div>
+        <div id="cal-lunar-advice" style="font-size:13px;color:var(--text2);line-height:1.7;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Le 8 fasi — cosa fare</div>
+        <div id="cal-phases-table" style="display:flex;flex-direction:column;gap:6px;"></div>
+      </div>
+    </div>
+
+    <!-- ─── BIODINAMICO ─── -->
+    <div class="cal-panel" id="cal-panel-bio">
+      <div id="cal-bio-banner" class="bio-today-banner bio-banner-frutto" onclick="openAmbPopup('bio-oggi')" style="cursor:pointer;margin-bottom:12px;">
+        <div class="bio-today-icon" id="cal-bio-icon">🍊</div>
+        <div>
+          <div class="bio-today-type" id="cal-bio-type">—</div>
+          <div class="bio-today-date" id="cal-bio-date">—</div>
+          <div class="bio-today-advice" id="cal-bio-advice">—</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bio-cal-header">
+          <div class="bio-cal-title" id="cal-bio-month">—</div>
+          <div class="bio-cal-nav">
+            <button class="bio-nav-btn" onclick="calBioChangeMonth(-1)">‹</button>
+            <button class="bio-nav-btn" onclick="calBioChangeMonth(0)">●</button>
+            <button class="bio-nav-btn" onclick="calBioChangeMonth(1)">›</button>
+          </div>
+        </div>
+        <div class="bio-grid-header">
+          <div class="bio-grid-header-cell">L</div><div class="bio-grid-header-cell">M</div>
+          <div class="bio-grid-header-cell">M</div><div class="bio-grid-header-cell">G</div>
+          <div class="bio-grid-header-cell">V</div><div class="bio-grid-header-cell">S</div>
+          <div class="bio-grid-header-cell">D</div>
+        </div>
+        <div class="bio-grid" id="cal-bio-grid"></div>
+        <div class="bio-legend">
+          <div class="bio-legend-item"><div class="bio-legend-dot dot-frutto"></div>Frutto 🍊</div>
+          <div class="bio-legend-item"><div class="bio-legend-dot dot-fiore"></div>Fiore 🌸</div>
+          <div class="bio-legend-item"><div class="bio-legend-dot dot-radice"></div>Radice 🌿</div>
+          <div class="bio-legend-item"><div class="bio-legend-dot dot-foglia"></div>Foglia 💧</div>
+        </div>
+      </div>
+      <div class="card" onclick="openAmbPopup('cal-preparazioni')" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.08),rgba(74,175,94,0.05));">
+        <div class="card-title" style="color:var(--purple);">🧘 Preparazioni Biodinamiche</div>
+        <div id="cal-bio-prep" style="font-size:13px;color:var(--text2);line-height:1.6;"></div>
+        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per dettagli →</div>
+      </div>
+      <div class="card" onclick="openAmbPopup('cal-compostaggio')" style="cursor:pointer;">
+        <div class="card-title">♻️ Compostaggio Ottimale</div>
+        <div id="cal-bio-compost" style="font-size:13px;color:var(--text2);line-height:1.6;"></div>
+        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per calendario →</div>
+      </div>
+    </div>
+
+    <!-- ─── SEMINE ─── -->
+    <div class="cal-panel" id="cal-panel-semine">
+      <div class="card" onclick="openAmbPopup('cal-semine-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(74,175,94,0.1),rgba(76,175,80,0.06));">
+        <div class="card-title" style="color:var(--green3);">🌱 Favorevole oggi per seminare?</div>
+        <div style="display:flex;align-items:center;gap:12px;margin:8px 0;">
+          <div style="font-size:40px;" id="cal-sem-emoji">⏳</div>
+          <div>
+            <div style="font-size:15px;font-weight:700;" id="cal-sem-label">Calcolo…</div>
+            <div style="font-size:12px;color:var(--text2);margin-top:3px;" id="cal-sem-motivo">—</div>
+          </div>
+        </div>
+        <div style="font-size:10px;color:var(--text3);">Tocca per dettaglio varietà →</div>
+      </div>
+      <div class="card">
+        <div class="card-title">🌿 Le 10 varietà — stato attuale</div>
+        <div id="cal-sem-piante" style="display:flex;flex-direction:column;gap:6px;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">📅 Giorni favorevoli — prossime 2 settimane</div>
+        <div id="cal-sem-strip" style="display:flex;flex-direction:column;gap:5px;"></div>
+      </div>
+      <div class="card" onclick="openAmbPopup('cal-thun')" style="cursor:pointer;">
+        <div class="card-title">📖 Metodo Maria Thun</div>
+        <div style="font-size:12px;color:var(--text2);line-height:1.6;">Il Lunario delle Semine di Maria Thun correlato col giorno biodinamico. Tocca per guida completa.</div>
+      </div>
+    </div>
+
+    <!-- ─── TRATTAMENTI ─── -->
+    <div class="cal-panel" id="cal-panel-tratt">
+      <div class="card" onclick="openAmbPopup('cal-tratt-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.1),rgba(156,39,176,0.06));">
+        <div class="card-title" style="color:var(--purple);">🧪 Trattamento ottimale oggi</div>
+        <div style="font-size:14px;font-weight:600;margin:6px 0;" id="cal-tratt-label">Calcolo…</div>
+        <div style="font-size:12px;color:var(--text2);" id="cal-tratt-desc">—</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per ricetta completa →</div>
+      </div>
+      <div class="card">
+        <div class="card-title">📆 Schema mensile trattamenti</div>
+        <div id="cal-tratt-schema" style="display:flex;flex-direction:column;gap:8px;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">🛡️ Difesa integrata — Prevenzione</div>
+        <div id="cal-tratt-difesa" style="display:flex;flex-direction:column;gap:6px;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">📅 Prossimi 7 giorni — finestre ideali</div>
+        <div id="cal-tratt-finestre" style="display:flex;flex-direction:column;gap:5px;"></div>
+      </div>
+    </div>
+
+    <!-- ─── FOTOPERIODO ─── -->
+    <div class="cal-panel" id="cal-panel-foto">
+      <div class="card" onclick="openAmbPopup('cal-foto-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,193,7,0.1),rgba(255,152,0,0.06));">
+        <div class="card-title" style="color:#ffd54f;">☀️ Fotoperiodo oggi — 41.10°N</div>
+        <div style="display:flex;align-items:center;gap:14px;margin:8px 0;">
+          <div style="font-size:40px;">☀️</div>
+          <div>
+            <div style="font-size:22px;font-weight:800;color:#ffd54f;" id="cal-foto-ore">—h</div>
+            <div style="font-size:12px;color:var(--text2);" id="cal-foto-alba-tr">— → —</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;">
+          <div style="background:rgba(74,175,94,0.1);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:10px;font-weight:700;color:var(--green3);">⚡ AUTOFIORENTI</div>
+            <div style="font-size:11px;color:var(--text2);margin-top:3px;" id="cal-foto-auto">—</div>
+          </div>
+          <div style="background:rgba(171,71,188,0.1);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:10px;font-weight:700;color:var(--purple);">🌸 FEMMINIZZATE</div>
+            <div style="font-size:11px;color:var(--text2);margin-top:3px;" id="cal-foto-femm">—</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">📊 Ore di luce ogni mese — Caserta</div>
+        <div id="cal-foto-chart" style="display:flex;flex-direction:column;gap:4px;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">📅 Prossimi 30 giorni</div>
+        <div id="cal-foto-30g" style="display:flex;flex-direction:column;gap:3px;font-size:12px;"></div>
+      </div>
+    </div>
+
+    <!-- ─── FENOLOGICO ─── -->
+    <div class="cal-panel" id="cal-panel-fenol">
+      <div class="card" onclick="openAmbPopup('cal-fenol-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,152,0,0.1),rgba(255,87,34,0.06));">
+        <div class="card-title" style="color:var(--orange);">🌸 Fase fenologica attuale</div>
+        <div style="font-size:14px;font-weight:600;margin:6px 0;" id="cal-fenol-fase">Calcolo…</div>
+        <div style="font-size:12px;color:var(--text2);" id="cal-fenol-desc">—</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per impatto sulle piante →</div>
+      </div>
+      <div class="card">
+        <div class="card-title">🌿 Fase per varietà</div>
+        <div id="cal-fenol-piante" style="display:flex;flex-direction:column;gap:5px;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">📅 Calendario stagionale 2026</div>
+        <div id="cal-fenol-anno" style="display:flex;flex-direction:column;gap:5px;"></div>
+      </div>
+    </div>
+
+    <!-- ─── LAVORI ─── -->
+    <div class="cal-panel" id="cal-panel-lavori">
+      <div class="card" onclick="openAmbPopup('cal-lavori-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(121,85,72,0.15),rgba(93,64,55,0.08));">
+        <div class="card-title" style="color:#bcaaa4;">🔧 Lavori consigliati oggi</div>
+        <div id="cal-lavori-oggi" style="font-size:13px;color:var(--text2);line-height:1.7;margin-top:6px;"></div>
+        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per checklist completa →</div>
+      </div>
+      <div class="card">
+        <div class="card-title">📅 Piano settimana</div>
+        <div id="cal-lavori-settimana" style="display:flex;flex-direction:column;gap:6px;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">📋 Piano mensile — Terra Nuova 2026</div>
+        <div id="cal-lavori-mese" style="display:flex;flex-direction:column;gap:5px;"></div>
+      </div>
+    </div>
+
+    <!-- ─── GDD ─── -->
+    <div class="cal-panel" id="cal-panel-gdd">
+      <div class="card" style="background:linear-gradient(135deg,rgba(58,159,216,0.1),rgba(30,74,108,0.06));">
+        <div class="card-title" style="color:var(--blue);">📈 Gradi-Giorno (GDD) — Caserta</div>
+        <div style="font-size:13px;color:var(--text3);margin-bottom:8px;">T base 10°C · Dati Open-Meteo · Anno 2026</div>
+        <div id="cal-gdd-loading" style="text-align:center;padding:16px;font-size:13px;color:var(--text3);">⏳ Calcolo GDD da Open-Meteo…</div>
+        <div id="cal-gdd-content" style="display:none;">
+          <div style="font-size:28px;font-weight:800;color:var(--blue);margin-bottom:4px;" id="cal-gdd-totale">—</div>
+          <div style="font-size:12px;color:var(--text3);">GDD accumulati dall'1 gennaio 2026</div>
+          <button onclick="loadGDD()" style="margin-top:10px;padding:6px 16px;background:var(--blue);border:none;border-radius:8px;color:#fff;font-size:12px;cursor:pointer;">🔄 Aggiorna</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">🌿 GDD per varietà — previsione raccolta</div>
+        <div id="cal-gdd-piante" style="display:flex;flex-direction:column;gap:6px;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">📊 GDD mensili 2026</div>
+        <div id="cal-gdd-chart" style="display:flex;flex-direction:column;gap:3px;"></div>
+      </div>
+    </div>
+
+    <!-- ─── GELO ─── -->
+    <div class="cal-panel" id="cal-panel-gelo">
+      <div class="card" style="background:linear-gradient(135deg,rgba(96,165,250,0.1),rgba(59,130,246,0.06));">
+        <div class="card-title" style="color:#93c5fd;">❄️ Rischio Gelo — Caserta</div>
+        <div style="display:flex;align-items:center;gap:12px;margin:8px 0;">
+          <div style="font-size:36px;" id="cal-gelo-emoji">🌡️</div>
+          <div>
+            <div style="font-size:15px;font-weight:700;" id="cal-gelo-status">Calcolo…</div>
+            <div style="font-size:12px;color:var(--text2);margin-top:3px;" id="cal-gelo-desc">—</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">📅 Statistiche gelo storiche — Caserta</div>
+        <div id="cal-gelo-stats" style="display:flex;flex-direction:column;gap:6px;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">🌱 Finestra sicura coltivazione outdoor</div>
+        <div id="cal-gelo-finestra" style="font-size:13px;color:var(--text2);line-height:1.7;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">⚠️ Avvisi automatici</div>
+        <div id="cal-gelo-avvisi" style="display:flex;flex-direction:column;gap:5px;"></div>
+      </div>
+    </div>
+
+    <!-- ─── MATURAZIONE ─── -->
+    <div class="cal-panel" id="cal-panel-matur">
+      <div class="card" style="background:linear-gradient(135deg,rgba(255,152,0,0.1),rgba(244,67,54,0.06));">
+        <div class="card-title" style="color:var(--orange);">🍊 Maturazione — Prossima raccolta</div>
+        <div id="cal-matur-prossima" style="font-size:14px;font-weight:700;margin:6px 0;color:var(--green3);">—</div>
+        <div id="cal-matur-desc" style="font-size:12px;color:var(--text2);">—</div>
+      </div>
+      <div class="card">
+        <div class="card-title">🌿 Calendario raccolte — tutte le varietà</div>
+        <div id="cal-matur-piante" style="display:flex;flex-direction:column;gap:6px;"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">🌙 Ottimizzazione luna × raccolta</div>
+        <div id="cal-matur-luna" style="font-size:13px;color:var(--text2);line-height:1.7;"></div>
+      </div>
+      <div class="card" onclick="openAmbPopup('cal-conservazione')" style="cursor:pointer;">
+        <div class="card-title">🫙 Conservazione e Concia</div>
+        <div style="font-size:12px;color:var(--text2);line-height:1.6;">Essiccazione 14 giorni · Concia 14 giorni in barattoli. Tocca per guida completa.</div>
+      </div>
+    </div>
+
+  </div><!-- /cal-wrapper -->
 
 
 </section>
@@ -4742,7 +5108,14 @@ ${piante.map(p=>`<div style="display:flex;justify-content:space-between;align-it
 <div class="amb-popup-section"><div class="amb-popup-label">Azione oggi</div><div style="font-size:13px;color:var(--green3);line-height:1.7;">${m.a}</div></div>`; }
 
 
-    default: return `<div class="amb-popup-title">ℹ️ Info</div><div style="color:var(--text2);font-size:13px;">Dati non disponibili.</div>`;
+    default: {
+      // Prova nei popup del Calendario Unificato
+      if (typeof buildCalPopupContent === 'function') {
+        const r = buildCalPopupContent(type);
+        if (r !== null) return r;
+      }
+      return `<div class="amb-popup-title">ℹ️ Info</div><div style="color:var(--text2);font-size:13px;">Dati non disponibili.</div>`;
+    }
   }
 }
 
@@ -5155,6 +5528,1261 @@ function _buildPopupNuovi(type) {
   return null;
 }
 
+
+
+
+/* ══════════════════════════════════════════════════════════════
+   CALENDARIO UNIFICATO — Sistema completo 11 sotto-tab
+   Coordinate: 41.09696262016739, 14.388065360906802 (Caserta)
+══════════════════════════════════════════════════════════════ */
+
+const CAL_LAT = 41.09696262016739;
+const CAL_LON = 14.388065360906802;
+
+/* Dati piante */
+const CAL_PIANTE = [
+  {id:7,  nome:'Epsilon F1',       tipo:'auto', germ:'2026-04-21', giorni:60,  fiorGG:30, label:'30-40gg fioritura'},
+  {id:1,  nome:'Milky Way F1',     tipo:'auto', germ:'2026-04-23', giorni:72,  fiorGG:42, label:'42-45gg fioritura'},
+  {id:2,  nome:'Titan F1',         tipo:'auto', germ:'2026-04-22', giorni:72,  fiorGG:40, label:'40-45gg fioritura'},
+  {id:3,  nome:'Medusa F1',        tipo:'auto', germ:'2026-04-21', giorni:72,  fiorGG:40, label:'40-45gg fioritura'},
+  {id:8,  nome:'Gaia F1',          tipo:'auto', germ:'2026-04-21', giorni:67,  fiorGG:40, label:'40-45gg fioritura'},
+  {id:4,  nome:'Astro Lemonade F1',tipo:'femm', germ:'2026-04-21', raccolta:'2026-10-30', fiorInizio:'2026-10-01', fiorGG:55, label:'Fioritura inizio ott.'},
+  {id:11, nome:'Cosmic Cheddar F1',tipo:'femm', germ:'2026-05-02', raccolta:'2026-10-30', fiorInizio:'2026-10-01', fiorGG:55, label:'Fioritura inizio ott.'},
+  {id:6,  nome:'Orbital Banana F1',tipo:'femm', germ:'2026-04-30', raccolta:'2026-10-30', fiorInizio:'2026-10-01', fiorGG:60, label:'Fioritura inizio ott.'},
+  {id:10, nome:'Royal Gorilla',    tipo:'femm', germ:'2026-04-22', raccolta:'2026-11-09', fiorInizio:'2026-10-15', fiorGG:60, label:'Fioritura metà ott.'},
+  {id:9,  nome:'Mexican Rush',     tipo:'femm', germ:'2026-04-21', raccolta:'2026-11-09', fiorInizio:'2026-10-15', fiorGG:65, label:'Fioritura metà ott.'}
+];
+
+/* ── Toggle calendario ── */
+let _calOpen = false;
+function toggleCalendario() {
+  _calOpen = !_calOpen;
+  const w = document.getElementById('cal-wrapper');
+  const a = document.getElementById('cal-toggle-arrow');
+  if (w) w.style.display = _calOpen ? 'block' : 'none';
+  if (a) a.style.transform = _calOpen ? 'rotate(180deg)' : '';
+  if (_calOpen) switchCalTab('oggi');
+}
+
+/* ── Switch sotto-tab ── */
+function switchCalTab(tab) {
+  document.querySelectorAll('.cal-subtab').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.cal-panel').forEach(p => p.classList.remove('active'));
+  const btn = document.getElementById('cst-' + tab);
+  const panel = document.getElementById('cal-panel-' + tab);
+  if (btn) btn.classList.add('active');
+  if (panel) panel.classList.add('active');
+  const renders = {
+    oggi:   renderCalOggi,
+    lunare: renderCalLunare,
+    bio:    renderCalBio,
+    semine: renderCalSemine,
+    tratt:  renderCalTratt,
+    foto:   renderCalFoto,
+    fenol:  renderCalFenol,
+    lavori: renderCalLavori,
+    gdd:    renderCalGDD,
+    gelo:   renderCalGelo,
+    matur:  renderCalMatur
+  };
+  if (renders[tab]) renders[tab]();
+}
+
+/* ══════════════════════════════════════════════════════════════
+   UTILITÀ ASTRONOMICHE
+══════════════════════════════════════════════════════════════ */
+
+/* Calcolo alba/tramonto (algoritmo NOAA adattato) */
+function calcSunTimes(date) {
+  const lat = CAL_LAT, lon = CAL_LON;
+  const JD = dateToJD(date);
+  const n = JD - 2451545.0;
+  const L = (280.46 + 0.9856474 * n) % 360;
+  const g = (357.528 + 0.9856003 * n) % 360;
+  const gR = g * Math.PI / 180;
+  const lambda = L + 1.915 * Math.sin(gR) + 0.02 * Math.sin(2 * gR);
+  const lambdaR = lambda * Math.PI / 180;
+  const epsilon = 23.439 - 0.0000004 * n;
+  const epsilonR = epsilon * Math.PI / 180;
+  const RA = Math.atan2(Math.cos(epsilonR) * Math.sin(lambdaR), Math.cos(lambdaR)) * 180 / Math.PI;
+  const decl = Math.asin(Math.sin(epsilonR) * Math.sin(lambdaR));
+  const EqT = (L - RA + 720) % 360;
+  const solarNoon = 720 - 4 * lon - EqT;
+  const latR = lat * Math.PI / 180;
+  const hAngle = Math.acos((Math.sin(-0.8333 * Math.PI / 180) - Math.sin(latR) * Math.sin(decl)) /
+    (Math.cos(latR) * Math.cos(decl)));
+  const hAngleDeg = hAngle * 180 / Math.PI;
+  const sunrise = (solarNoon - hAngleDeg * 4) / 60;
+  const sunset = (solarNoon + hAngleDeg * 4) / 60;
+  const dayLen = sunset - sunrise;
+  return { sunrise, sunset, dayLen };
+}
+
+function hToHHMM(h) {
+  const hh = Math.floor(h);
+  const mm = Math.round((h - hh) * 60);
+  return String(hh).padStart(2,'0') + ':' + String(mm % 60).padStart(2,'0');
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TAB OGGI — Card integrata
+══════════════════════════════════════════════════════════════ */
+function renderCalOggi() {
+  const today = new Date();
+  const el = document.getElementById('cal-oggi-data');
+  if (el) el.textContent = fmtFull(today);
+
+  const sun = calcSunTimes(today);
+  const age = getMoonAge(today);
+  const phase = getMoonPhase(age);
+  const advice = getAdvice(phase.code);
+  const bio = getDayType(today);
+  const bioT = DAY_TYPES[bio.type];
+  const fenol = getFenolFase(today);
+  const lavoriOggi = getLavoriOggi(today);
+  const sem = getSemineOggi(today);
+  const tratt = getTrattOggi(today);
+  const irrig = getIrrigOggi(today, sun);
+
+  const rows = [
+    { icon:'🌙', label:'Luna', val: phase.emoji + ' ' + phase.name, sub: getMoonIllum(age) + '% illuminazione', popup:'luna-fase' },
+    { icon:'🌱', label:'Biodinamica', val: bioT.icon + ' ' + bioT.label, sub: bio.sym + ' ' + bio.name, popup:'bio-oggi' },
+    { icon:'🌾', label:'Semine', val: sem.emoji + ' ' + sem.label, sub: sem.motivo, popup:'cal-semine-oggi' },
+    { icon:'🧪', label:'Trattamenti', val: tratt.label, sub: tratt.desc, popup:'cal-tratt-oggi' },
+    { icon:'☀️', label:'Fotoperiodo', val: sun.dayLen.toFixed(1).replace('.',',') + 'h luce', sub: '🌅 ' + hToHHMM(sun.sunrise) + ' → 🌇 ' + hToHHMM(sun.sunset), popup:'cal-foto-oggi' },
+    { icon:'🌸', label:'Fase Fenologica', val: fenol.fase, sub: fenol.desc, popup:'cal-fenol-oggi' },
+    { icon:'🔧', label:'Lavori oggi', val: lavoriOggi.titolo, sub: lavoriOggi.sub, popup:'cal-lavori-oggi' },
+    { icon:'💧', label:'Irrigazione', val: irrig.label, sub: irrig.desc, popup:'meteo-impatto' },
+  ];
+
+  const grid = document.getElementById('cal-oggi-grid');
+  if (grid) {
+    grid.innerHTML = rows.map(r => `
+      <div class="cal-oggi-row" onclick="openAmbPopup('${r.popup}')">
+        <div class="cal-oggi-icon">${r.icon}</div>
+        <div style="flex:1;min-width:0;">
+          <div class="cal-oggi-label">${r.label}</div>
+          <div class="cal-oggi-val">${r.val}</div>
+          <div class="cal-oggi-sub">${r.sub}</div>
+        </div>
+        <div style="color:var(--text3);flex-shrink:0;">›</div>
+      </div>`).join('');
+  }
+
+  // Consiglio AI integrato da JSON
+  const ai = document.getElementById('cal-oggi-ai');
+  if (ai) {
+    ai.innerHTML = `
+      <strong>${phase.emoji} ${phase.name}</strong> + <strong>${bioT.icon} ${bioT.label}</strong> + 
+      ☀️ ${sun.dayLen.toFixed(1)}h luce<br><br>
+      ${advice.main}<br><br>
+      <em style="color:var(--text3);font-size:12px;">${bio.type === 'frutto' ? '🍊 Giornata ottima per raccolta, resine e aromi.' :
+      bio.type === 'fiore' ? '🌸 Giornata per cime, terpeni, fioritura attiva.' :
+      bio.type === 'radice' ? '🌿 Giornata per substrato, microbi e radici.' :
+      '💧 Giornata per vegetazione e assorbimento idrico.'}</em>`;
+    // Prova a caricare da brain.json per aggiornare
+    fetchGHJson('brain.json').then(d => {
+      if (!d) return;
+      const txt = d.consiglio_giornaliero || d.oggi || d.summary || '';
+      if (txt) ai.innerHTML = `<em style="color:var(--text3);font-size:11px;">🤖 Brain AI:</em><br>${txt.substring(0,300)}${txt.length>300?'…':''}`;
+    }).catch(()=>{});
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TAB LUNARE
+══════════════════════════════════════════════════════════════ */
+function renderCalLunare() {
+  const today = new Date();
+  const age = getMoonAge(today);
+  const phase = getMoonPhase(age);
+  const illum = getMoonIllum(age);
+  const advice = getAdvice(phase.code);
+
+  const setT = (id,v) => { const e=document.getElementById(id); if(e) e.textContent=v; };
+  const setH = (id,v) => { const e=document.getElementById(id); if(e) e.innerHTML=v; };
+
+  setT('cal-moon-emoji', phase.emoji);
+  setT('cal-moon-name', phase.name);
+  setT('cal-moon-illum', illum);
+  setT('cal-moon-age', Math.round(age));
+  const bar = document.getElementById('cal-moon-bar');
+  if (bar) bar.style.width = illum + '%';
+
+  const fullInfo = nextPhaseCountdown(today, 0.5);
+  const newInfo = nextPhaseCountdown(today, 0);
+  setT('cal-days-full', fullInfo.days);
+  setT('cal-date-full', fmtIT(fullInfo.date));
+  setT('cal-days-new', newInfo.days);
+  setT('cal-date-new', fmtIT(newInfo.date));
+
+  // Striscia 14 giorni
+  const strip = document.getElementById('cal-lunar-strip');
+  if (strip) {
+    strip.innerHTML = '';
+    for (let i=0; i<14; i++) {
+      const d = new Date(today.getTime() + i*86400000);
+      const a = getMoonAge(d);
+      const p = getMoonPhase(a);
+      const il = getMoonIllum(a);
+      const div = document.createElement('div');
+      div.className = 'cal-moon-day' + (i===0?' today':'');
+      div.innerHTML = `<span style="font-size:18px;">${p.emoji}</span><span style="font-size:9px;color:var(--text3);">${['D','L','M','M','G','V','S'][d.getDay()]}</span><span style="font-size:9px;color:var(--text3);">${d.getDate()}</span><span style="font-size:9px;color:#3a9fd8;">${il}%</span>`;
+      div.onclick = () => openCalLunarePopup(d);
+      strip.appendChild(div);
+    }
+  }
+
+  setH('cal-lunar-advice', `
+    <strong>${phase.emoji} ${phase.name}</strong><br>
+    ${advice.detail}<br><br>
+    <strong style="color:var(--green3);">Per la tua serra:</strong><br>${advice.serra}`);
+
+  // Tabella 8 fasi
+  const phases8 = [
+    {code:'new',emoji:'🌑',nome:'Luna Nuova'},
+    {code:'waxing_crescent',emoji:'🌒',nome:'Luna Crescente'},
+    {code:'first_quarter',emoji:'🌓',nome:'Primo Quarto'},
+    {code:'waxing_gibbous',emoji:'🌔',nome:'Gibbosa Crescente'},
+    {code:'full',emoji:'🌕',nome:'Luna Piena'},
+    {code:'waning_gibbous',emoji:'🌖',nome:'Gibbosa Calante'},
+    {code:'last_quarter',emoji:'🌗',nome:'Ultimo Quarto'},
+    {code:'waning_crescent',emoji:'🌘',nome:'Luna Calante'}
+  ];
+  const pt = document.getElementById('cal-phases-table');
+  if (pt) {
+    pt.innerHTML = phases8.map(p => {
+      const a = getAdvice(p.code);
+      return `<div class="cal-phase-row" onclick="openPhasePopup('${p.code}')">
+        <span style="font-size:24px;">${p.emoji}</span>
+        <div style="flex:1;"><div style="font-size:13px;font-weight:600;">${p.nome}</div>
+        <div style="font-size:11px;color:var(--text3);">${a.main.substring(0,60)}…</div></div>
+        <span style="color:var(--text3);">›</span>
+      </div>`;
+    }).join('');
+  }
+}
+
+function openCalLunarePopup(date) {
+  const a = getMoonAge(date); const p = getMoonPhase(a); const adv = getAdvice(p.code);
+  const bio = getDayType(date); const bioT = DAY_TYPES[bio.type];
+  const sun = calcSunTimes(date);
+  const overlay=document.getElementById('amb-popup-overlay');
+  const content=document.getElementById('amb-popup-content');
+  if(!overlay||!content) return;
+  content.innerHTML = `<div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;">Dettaglio giorno</div>
+<div style="font-size:18px;font-weight:700;margin:6px 0;">${fmtIT(date)}</div>
+<div style="background:var(--card2);border-radius:10px;padding:12px;margin-bottom:12px;">
+  <div style="font-size:13px;color:var(--text2);line-height:1.9;">
+    🌙 <strong>${p.emoji} ${p.name}</strong> · ${getMoonIllum(a)}% illum.<br>
+    🌱 <strong>${bioT.icon} ${bioT.label}</strong> · ${bio.sym} ${bio.name}<br>
+    ☀️ <strong>${sun.dayLen.toFixed(1)}h luce</strong> · 🌅 ${hToHHMM(sun.sunrise)} → 🌇 ${hToHHMM(sun.sunset)}
+  </div>
+</div>
+<div style="font-size:13px;color:var(--text2);line-height:1.7;">${adv.main}<br><br>${adv.detail}</div>
+<div style="margin-top:12px;padding:10px;background:rgba(74,175,94,0.08);border-radius:8px;">
+  <div style="font-size:11px;font-weight:700;color:var(--green3);margin-bottom:4px;">SERRA</div>
+  <div style="font-size:12px;color:var(--text2);">${adv.serra}</div>
+</div>`;
+  overlay.style.display='flex'; document.body.style.overflow='hidden';
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TAB BIODINAMICO
+══════════════════════════════════════════════════════════════ */
+let _calBioY, _calBioM;
+
+function renderCalBio() {
+  const today = new Date();
+  if (_calBioY === undefined) { _calBioY = today.getFullYear(); _calBioM = today.getMonth(); }
+  const bio = getDayType(today); const bioT = DAY_TYPES[bio.type]; const adv = ADVICE[bio.type];
+
+  // Banner oggi
+  const banner = document.getElementById('cal-bio-banner');
+  if (banner) {
+    banner.className = 'bio-today-banner ' + bioT.bannerClass;
+    document.getElementById('cal-bio-icon').textContent = bioT.icon;
+    document.getElementById('cal-bio-type').textContent = bioT.label;
+    document.getElementById('cal-bio-date').textContent = fmtFull(today);
+    document.getElementById('cal-bio-advice').textContent = adv.short;
+  }
+
+  _renderCalBioGrid();
+
+  // Preparazioni
+  const prep = document.getElementById('cal-bio-prep');
+  if (prep) {
+    const prepsMonth = getPreparazioniBiodinamiche(today);
+    prep.innerHTML = prepsMonth.map(p => `<div style="display:flex;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+      <span style="font-size:18px;">${p.icon}</span>
+      <div><div style="font-size:12px;font-weight:700;">${p.nome}</div><div style="font-size:11px;color:var(--text3);">${p.quando}</div></div>
+    </div>`).join('');
+  }
+
+  // Compostaggio
+  const comp = document.getElementById('cal-bio-compost');
+  if (comp) {
+    const compInfo = getCompostaggioInfo(today);
+    comp.textContent = compInfo;
+  }
+}
+
+function calBioChangeMonth(delta) {
+  const today = new Date();
+  if (delta === 0) { _calBioY = today.getFullYear(); _calBioM = today.getMonth(); }
+  else {
+    _calBioM += delta;
+    if (_calBioM > 11) { _calBioM = 0; _calBioY++; }
+    if (_calBioM < 0) { _calBioM = 11; _calBioY--; }
+  }
+  _renderCalBioGrid();
+}
+
+function _renderCalBioGrid() {
+  const MONTHS = ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
+  const el = document.getElementById('cal-bio-month'); if (el) el.textContent = `${MONTHS[_calBioM]} ${_calBioY}`;
+  const grid = document.getElementById('cal-bio-grid'); if (!grid) return;
+  const today = new Date(); const todayStr = today.toISOString().slice(0,10);
+  const firstDay = new Date(_calBioY, _calBioM, 1);
+  let startDow = firstDay.getDay(); if (startDow === 0) startDow = 7;
+  const daysInMonth = new Date(_calBioY, _calBioM+1, 0).getDate();
+  let cells = '';
+  for (let i=1; i<startDow; i++) cells += '<div></div>';
+  for (let d=1; d<=daysInMonth; d++) {
+    const date = new Date(_calBioY, _calBioM, d);
+    const ct = getDayType(date); const bioT = DAY_TYPES[ct.type];
+    const ds = date.toISOString().slice(0,10);
+    const isToday = ds === todayStr;
+    cells += `<div class="bio-cell ${bioT.color}${isToday?' bio-today':''}" onclick="openCalBioDayPopup(${_calBioY},${_calBioM},${d})" title="${bioT.label}">${d}</div>`;
+  }
+  grid.innerHTML = cells;
+}
+
+function openCalBioDayPopup(y, m, d) {
+  const date = new Date(y, m, d);
+  const bio = getDayType(date); const bioT = DAY_TYPES[bio.type]; const adv = ADVICE[bio.type];
+  const sun = calcSunTimes(date);
+  const moonA = getMoonAge(date); const moonP = getMoonPhase(moonA);
+  const overlay=document.getElementById('amb-popup-overlay');
+  const content=document.getElementById('amb-popup-content');
+  if(!overlay||!content) return;
+  content.innerHTML = `<div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;">Biodinamica</div>
+<div style="font-size:18px;font-weight:700;margin:6px 0;">${bioT.icon} ${bioT.label} — ${fmtIT(date)}</div>
+<div style="background:var(--card2);border-radius:10px;padding:10px;margin-bottom:12px;font-size:13px;color:var(--text2);line-height:1.8;">
+  ♐ ${bio.sym} ${bio.name} · 🌍 ${bio.element}<br>
+  🌙 ${moonP.emoji} ${moonP.name} · ${getMoonIllum(moonA)}%<br>
+  ☀️ ${sun.dayLen.toFixed(1)}h luce
+</div>
+<div style="font-size:13px;font-weight:700;margin-bottom:8px;">Consigli per la serra:</div>
+<div style="font-size:13px;color:var(--text2);line-height:1.8;">${adv.tips.map(t=>'✅ '+t).join('<br>')}</div>
+<div style="margin-top:12px;padding:10px;background:rgba(255,152,0,0.08);border-radius:8px;font-size:12px;color:var(--orange);">
+  ${bio.type==='frutto'?'❌ Non trapiantare. Non potare invasivamente.':
+    bio.type==='fiore'?'❌ Evita concimazioni azotate pesanti.':
+    bio.type==='radice'?'❌ Non disturbare la superficie.':'❌ Non ideale per raccolta importanti.'}
+</div>`;
+  overlay.style.display='flex'; document.body.style.overflow='hidden';
+}
+
+function getPreparazioniBiodinamiche(today) {
+  const m = today.getMonth();
+  const preparations = [
+    {icon:'🌿', nome:'Preparato 500 — Cornoletame', quando: m>=3&&m<=9 ? '✅ Stagione attiva — applica alla sera' : '⏸️ Fuori stagione (ottobre-marzo)'},
+    {icon:'🦷', nome:'Preparato 501 — Cornosilice', quando: m>=4&&m<=8 ? '✅ Primavera-estate — applica al mattino presto' : '⏳ Usare da maggio ad agosto'},
+    {icon:'🌱', nome:'Preparato Ortica (508)', quando: 'Ogni 2-3 settimane · Contro parassiti e carenze'},
+    {icon:'🫙', nome:'Infuso Valeriana (507)', quando: 'Prima di gelate previste · Stimola fioritura'},
+  ];
+  return preparations;
+}
+
+function getCompostaggioInfo(today) {
+  const bio = getDayType(today);
+  const msgs = {
+    radice: '🌿 Ottimo per girare il compost e aggiungere materiale verde (radici, rifiuti organici). Massima attività microbica.',
+    foglia: '💧 Buono per irrigare il cumulo di compost. Aggiungi foglie secche per equilibrare l\'umidità.',
+    frutto: '🍊 Giorno ideale per raccogliere scarti organici freschi (frutta, verdura). Evita di girare oggi.',
+    fiore: '🌸 Giornata neutra per il compost. Aggiungi cenere di legno per correggere pH.'
+  };
+  return msgs[bio.type] || msgs.radice;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TAB SEMINE
+══════════════════════════════════════════════════════════════ */
+function getSemineOggi(today) {
+  const bio = getDayType(today); const moonA = getMoonAge(today); const moonP = getMoonPhase(moonA);
+  let score = 0; let motivi = [];
+  if (bio.type === 'radice') { score += 3; motivi.push('Giorno Radice ✅'); }
+  if (bio.type === 'frutto') { score += 2; motivi.push('Giorno Frutto ✅'); }
+  if (bio.type === 'foglia') { score -= 1; motivi.push('Giorno Foglia (neutro)'); }
+  if (bio.type === 'fiore') { score += 1; motivi.push('Giorno Fiore (buono)'); }
+  if (moonP.code === 'waxing_crescent' || moonP.code === 'first_quarter') { score += 2; motivi.push('Luna crescente ✅'); }
+  if (moonP.code === 'full') { score += 1; motivi.push('Luna piena'); }
+  if (moonP.code === 'new') { score -= 2; motivi.push('Luna nuova ⚠️'); }
+  if (moonP.code === 'waning_gibbous' || moonP.code === 'last_quarter') { score -= 1; motivi.push('Luna calante'); }
+  if (score >= 4) return { emoji:'🟢', label:'Molto favorevole', motivo: motivi.join(' · ') };
+  if (score >= 2) return { emoji:'🟡', label:'Favorevole', motivo: motivi.join(' · ') };
+  if (score >= 0) return { emoji:'🟠', label:'Neutro', motivo: motivi.join(' · ') };
+  return { emoji:'🔴', label:'Sfavorevole', motivo: motivi.join(' · ') };
+}
+
+function renderCalSemine() {
+  const today = new Date();
+  const sem = getSemineOggi(today);
+  const setT=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+  setT('cal-sem-emoji', sem.emoji);
+  setT('cal-sem-label', sem.label);
+  setT('cal-sem-motivo', sem.motivo);
+
+  // 10 piante — fase attuale
+  const lista = document.getElementById('cal-sem-piante');
+  if (lista) {
+    lista.innerHTML = CAL_PIANTE.map(p => {
+      const germ = new Date(p.germ);
+      const gg = Math.floor((today - germ) / 86400000);
+      let fase, azione;
+      if (p.tipo === 'auto') {
+        const giornaFior = Math.floor(p.giorni * 0.45);
+        if (gg < 14) { fase='Germinazione/Seedling'; azione='Nessun trapianto'; }
+        else if (gg < giornaFior) { fase='Vegetativa'; azione='Ottimo per rinvasare'; }
+        else if (gg < p.giorni-15) { fase='Fioritura'; azione='Non stressare'; }
+        else { fase='Pre-raccolta/Maturazione'; azione='Solo osservazione'; }
+      } else {
+        const racD = new Date(p.raccolta);
+        const fiorD = new Date(p.fiorInizio);
+        if (gg < 21) { fase='Seedling'; azione='Nessun trapianto'; }
+        else if (today < fiorD) { fase='Vegetativa'; azione=sem.score>=2?'✅ Potatura/rinvaso oggi':'Attendi giorno migliore'; }
+        else if (today < racD) { fase='Fioritura'; azione='Non stressare'; }
+        else { fase='Raccolta'; azione='Osserva trichomi'; }
+      }
+      return `<div style="display:flex;align-items:center;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;gap:8px;">
+        <div>
+          <div style="font-size:12px;font-weight:700;">${p.nome} <span style="font-size:10px;opacity:.6">ID:${p.id}</span></div>
+          <div style="font-size:10px;color:var(--text3);">${p.tipo==='auto'?'⚡ Auto':'🌸 Femm.'} · Gg ${gg} · ${fase}</div>
+        </div>
+        <div style="font-size:11px;color:var(--text2);text-align:right;">${azione}</div>
+      </div>`;
+    }).join('');
+  }
+
+  // Prossime 14 giorni
+  const strip = document.getElementById('cal-sem-strip');
+  if (strip) {
+    strip.innerHTML = '';
+    for (let i=0; i<14; i++) {
+      const d = new Date(today.getTime()+i*86400000);
+      const s = getSemineOggi(d);
+      strip.innerHTML += `<div class="cal-sem-day" style="border-left-color:${s.emoji==='🟢'?'#4caf76':s.emoji==='🟡'?'#ffd54f':s.emoji==='🟠'?'#ff9800':'#ef5350'};">
+        <span style="font-size:16px;">${s.emoji}</span>
+        <div><div style="font-size:12px;font-weight:600;">${fmtIT(d)}</div><div style="font-size:10px;color:var(--text3);">${s.label}</div></div>
+      </div>`;
+    }
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TAB TRATTAMENTI
+══════════════════════════════════════════════════════════════ */
+function getTrattOggi(today) {
+  const bio = getDayType(today); const moonA = getMoonAge(today); const moonP = getMoonPhase(moonA);
+  const day = today.getDate();
+  if (bio.type === 'radice' && moonP.code.includes('waxing')) return { label:'🌿 Infuso Ortiche + Humus', desc:'Giorno Radice + Luna crescente: massima efficacia. Diluire 1:10.' };
+  if (bio.type === 'frutto' && (moonP.code==='full'||moonP.code==='waxing_gibbous')) return { label:'🍌 Tè Banana + Cenere', desc:'Giorno Frutto + Luna piena/crescente: potenzia K. Bolli 15min, diluire 1:5.' };
+  if (bio.type === 'foglia') return { label:'🍯 Melassa 1ml/L', desc:'Giorno Foglia: attiva batteri del suolo. Non mescolare con ortiche.' };
+  if (bio.type === 'radice') return { label:'🦠 Rinnovo Humus', desc:'Giorno Radice: aggiungi 100-150g BioBizz Worm Humus nel serbatoio.' };
+  if (moonP.code === 'new') return { label:'⏸️ Riposo — no trattamenti', desc:'Luna nuova: pausa. Prepara i prossimi additivi.' };
+  return { label:'💧 Irrigazione normale', desc:'Nessun trattamento specifico oggi. Controlla solo i bordi dei vasi.' };
+}
+
+function renderCalTratt() {
+  const today = new Date();
+  const tratt = getTrattOggi(today);
+  const setT=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+  setT('cal-tratt-label', tratt.label);
+  setT('cal-tratt-desc', tratt.desc);
+
+  // Schema mensile
+  const schema = document.getElementById('cal-tratt-schema');
+  if (schema) {
+    schema.innerHTML = [
+      {icon:'🍯', nome:'Melassa 1ml/L', freq:'Ogni 15 giorni', giorni:'Foglia/Radice', pop:'tratt-melassa'},
+      {icon:'🌿', nome:'Infuso Ortiche + Miscela + Humus', freq:'1× al mese', giorni:'Radice (Luna crescente)', pop:'tratt-ortiche'},
+      {icon:'🍌', nome:'Tè Banana + Cenere di legno', freq:'Ogni 2 settimane (mag-ago)', giorni:'Frutto/Fiore', pop:'tratt-banana'},
+      {icon:'🥚', nome:'Miscela Organica (caffè+guscio+banana)', freq:'1× al mese', giorni:'Radice', pop:'tratt-miscela'},
+      {icon:'🦠', nome:'Rinnovo Humus nel serbatoio', freq:'1× al mese (Luna nuova)', giorni:'Radice', pop:'tratt-humus'},
+      {icon:'🍎', nome:'Generatore Etilene (frutto)', freq:'Luglio-Agosto', giorni:'Fase maturazione', pop:'tratt-oggi'},
+    ].map(t => `<div class="cal-tratt-item" onclick="openAmbPopup('${t.pop}')">
+      <span style="font-size:22px;">${t.icon}</span>
+      <div style="flex:1;"><div style="font-size:12px;font-weight:700;">${t.nome}</div>
+      <div style="font-size:10px;color:var(--text3);">${t.freq} · ${t.giorni}</div></div>
+      <span style="color:var(--text3);">›</span>
+    </div>`).join('');
+  }
+
+  // Difesa integrata
+  const difesa = document.getElementById('cal-tratt-difesa');
+  if (difesa) {
+    difesa.innerHTML = [
+      {icon:'🛡️', titolo:'Preventivo muffe', desc:'Giorni Frutto + bassa umidità: ventila la serra. Usa bicarbonato 5g/L in fogliare.'},
+      {icon:'🐛', titolo:'Parassiti foglie', desc:'Giorni Foglia + luna calante: applica infuso di ortiche concentrate. Controlla sotto le foglie.'},
+      {icon:'🌡️', titolo:'Stress termico', desc:'T>35°C: ombreggia. T<5°C: copri i vasi con telo. La radice di cannabis subisce stress a T<10°C.'},
+      {icon:'💧', titolo:'Marciume radicale', desc:'Evita ristagni. Giorni Foglia con alta umidità: riduci irrigazione del 30%.'},
+    ].map(d => `<div style="padding:8px 10px;background:var(--card2);border-radius:8px;border-left:3px solid rgba(239,83,80,0.4);">
+      <div style="font-size:12px;font-weight:700;margin-bottom:3px;">${d.icon} ${d.titolo}</div>
+      <div style="font-size:11px;color:var(--text2);">${d.desc}</div>
+    </div>`).join('');
+  }
+
+  // Prossime finestre
+  const finestre = document.getElementById('cal-tratt-finestre');
+  if (finestre) {
+    finestre.innerHTML = '';
+    for (let i=0; i<7; i++) {
+      const d = new Date(today.getTime()+i*86400000);
+      const t = getTrattOggi(d);
+      finestre.innerHTML += `<div style="display:flex;align-items:center;gap:8px;padding:7px 10px;background:var(--card2);border-radius:8px;">
+        <div style="min-width:60px;font-size:11px;color:var(--text3);">${i===0?'Oggi':fmtIT(d)}</div>
+        <div style="font-size:12px;color:var(--text);">${t.label}</div>
+      </div>`;
+    }
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TAB FOTOPERIODO
+══════════════════════════════════════════════════════════════ */
+function renderCalFoto() {
+  const today = new Date();
+  const sun = calcSunTimes(today);
+  const setT=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+  setH=(id,v)=>{const e=document.getElementById(id);if(e)e.innerHTML=v;};
+
+  setT('cal-foto-ore', sun.dayLen.toFixed(1).replace('.',',') + 'h');
+  setT('cal-foto-alba-tr', '🌅 ' + hToHHMM(sun.sunrise) + ' → 🌇 ' + hToHHMM(sun.sunset));
+
+  const ore = sun.dayLen;
+  setT('cal-foto-auto', ore >= 18 ? '✅ Crescita ottimale' : ore >= 15 ? '🟡 Buona crescita' : '⚠️ Crescita rallentata');
+  setT('cal-foto-femm', ore > 12 ? '🌿 Fase vegetativa' : ore <= 12 ? '🌸 Innesco fioritura' : '⏸️ Soglia critica');
+
+  // Grafico ore mensili
+  const MONTHS_S = ['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'];
+  const chart = document.getElementById('cal-foto-chart');
+  if (chart) {
+    chart.innerHTML = '';
+    const monthData = MONTHS_S.map((m, mi) => {
+      const d = new Date(2026, mi, 21);
+      const s = calcSunTimes(d);
+      return { m, ore: s.dayLen };
+    });
+    const maxOre = Math.max(...monthData.map(x=>x.ore));
+    chart.innerHTML = monthData.map(({m, ore}) => {
+      const pct = (ore / maxOre * 100).toFixed(0);
+      const color = ore >= 14 ? '#4caf76' : ore >= 12 ? '#ffd54f' : '#ef5350';
+      const isNow = new Date().getMonth() === MONTHS_S.indexOf(m);
+      return `<div class="cal-foto-bar">
+        <div style="width:28px;font-size:11px;color:var(--text3);font-weight:${isNow?'700':'400'};color:${isNow?'var(--green3)':'var(--text3)'};">${m}</div>
+        <div class="cal-foto-bar-fill" style="width:${pct}%;max-width:calc(100% - 80px);background:${color};"></div>
+        <div style="font-size:11px;color:var(--text2);min-width:36px;text-align:right;">${ore.toFixed(1)}h</div>
+      </div>`;
+    }).join('');
+  }
+
+  // Prossimi 30 giorni
+  const p30 = document.getElementById('cal-foto-30g');
+  if (p30) {
+    p30.innerHTML = '';
+    for (let i=0; i<=30; i+=3) {
+      const d = new Date(today.getTime()+i*86400000);
+      const s = calcSunTimes(d);
+      const impact = s.dayLen <= 12 ? '🌸 Fioritura femm.' : s.dayLen >= 18 ? '⚡ Auto ottimale' : '🌿 Vegetativa';
+      p30.innerHTML += `<div style="display:flex;align-items:center;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.04);">
+        <span style="font-size:11px;color:var(--text3);min-width:70px;">${fmtIT(d)}</span>
+        <span style="font-size:12px;font-weight:600;">${s.dayLen.toFixed(1)}h</span>
+        <span style="font-size:10px;color:var(--text3);">${impact}</span>
+      </div>`;
+    }
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TAB FENOLOGICO
+══════════════════════════════════════════════════════════════ */
+function getFenolFase(date) {
+  const m = date.getMonth(); const d = date.getDate();
+  const fasi = [
+    {da:[0,1], a:[1,28],  fase:'❄️ Dormienza invernale', desc:'Riposo vegetativo. Terreno freddo. Minimizza disturbi.'},
+    {da:[2,1], a:[3,14],  fase:'🌱 Risveglio primaverile', desc:'Germogliamento. Attività microbi in aumento. Prepara substrati.'},
+    {da:[3,15],a:[4,31],  fase:'🌿 Crescita vegetativa attiva', desc:'Massima crescita fogliare. Azoto, luce, irrigazione abbondante.'},
+    {da:[5,1], a:[6,20],  fase:'🌸 Pre-fioritura', desc:'Allungamento internodi. Switcha a K/P. Aumenta ore luce.'},
+    {da:[6,21],a:[8,14],  fase:'🍊 Fioritura piena — Estate', desc:'Calura estiva. Trichomi visibili. Massima produzione resina.'},
+    {da:[8,15],a:[9,14],  fase:'🍂 Maturazione autunnale', desc:'Ore luce < 12h → innesco femminizzate. Trichomi ambrati.'},
+    {da:[9,15],a:[10,30], fase:'🌾 Raccolta e post-raccolta', desc:'Autofiorenti già raccolte. Femminizzate in raccolta. Essiccazione.'},
+    {da:[11,1],a:[11,31], fase:'🫙 Conservazione e concia', desc:'Barattoli. Aria fresca e buia. Monitoraggio muffe. Fine ciclo.'},
+  ];
+  const dayOfYear = (m * 30 + d);
+  for (const f of fasi) {
+    const start = f.da[0]*30 + f.da[1];
+    const end = f.a[0]*30 + f.a[1];
+    if (dayOfYear >= start && dayOfYear <= end) return f;
+  }
+  return fasi[fasi.length-1];
+}
+
+function renderCalFenol() {
+  const today = new Date();
+  const fenol = getFenolFase(today);
+  const setT=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+  setT('cal-fenol-fase', fenol.fase);
+  setT('cal-fenol-desc', fenol.desc);
+
+  // Per varietà
+  const lista = document.getElementById('cal-fenol-piante');
+  if (lista) {
+    lista.innerHTML = CAL_PIANTE.map(p => {
+      const germ = new Date(p.germ);
+      const gg = Math.floor((today - germ) / 86400000);
+      let faseP, icona;
+      if (p.tipo === 'auto') {
+        const pctFior = p.giorni * 0.45;
+        if (gg < 0) { faseP='Non ancora germinata'; icona='⏳'; }
+        else if (gg < 10) { faseP='Germinazione/Seedling'; icona='🌱'; }
+        else if (gg < pctFior) { faseP='Vegetativa (gg '+gg+'/'+Math.floor(pctFior)+')'; icona='🌿'; }
+        else if (gg < p.giorni-10) { faseP='Fioritura ('+Math.floor(gg-pctFior)+'/'+Math.floor(p.giorni-pctFior)+'gg)'; icona='🌸'; }
+        else { faseP='Maturazione — prossima raccolta'; icona='🍊'; }
+      } else {
+        const fiorD = new Date(p.fiorInizio);
+        const racD = new Date(p.raccolta);
+        if (today < fiorD) { faseP='Vegetativa → innesco a '+(fiorD.getDate())+'/0'+(fiorD.getMonth()+1); icona='🌿'; }
+        else if (today < racD) {
+          const ggFior = Math.floor((today-fiorD)/86400000);
+          faseP='Fioritura (gg '+ggFior+'/'+p.fiorGG+')'; icona='🌸';
+        } else { faseP='Raccolta completata'; icona='🍊'; }
+      }
+      return `<div style="display:flex;align-items:center;gap:8px;padding:7px 10px;background:var(--card2);border-radius:8px;">
+        <span style="font-size:18px;">${icona}</span>
+        <div><div style="font-size:12px;font-weight:700;">${p.nome}</div>
+        <div style="font-size:11px;color:var(--text3);">${faseP}</div></div>
+      </div>`;
+    }).join('');
+  }
+
+  // Calendario stagionale annuale
+  const anno = document.getElementById('cal-fenol-anno');
+  if (anno) {
+    const stagioni = [
+      {periodo:'Gen–Feb', fase:'❄️ Dormienza', desc:'Preparazione substrato, sterilizzazione vasi'},
+      {periodo:'Mar–Apr', fase:'🌱 Germinazione', desc:'Germ. apr: Epsilon(21/4), Gaia(21/4), Medusa(21/4), Titan(22/4), Milky Way(23/4)'},
+      {periodo:'Mag–Giu', fase:'🌿 Vegetativa', desc:'Crescita attiva. Femm. > 12h luce. Ortiche mensili.'},
+      {periodo:'Lug–Ago', fase:'🌸 Fioritura auto', desc:'Autofiorenti in fioritura. Tè banana ogni 2 sett.'},
+      {periodo:'Set–Ott', fase:'🌸→🍊 Femm. fioriscono', desc:'Ore luce < 12h: innesco femminizzate (inizio ott)'},
+      {periodo:'Ott–Nov', fase:'🍊 Raccolta', desc:'Autofiorenti già raccolte. Femm.: Astro/Cosmic/Orbital(30/10), Royal/Mexican(9/11)'},
+      {periodo:'Nov–Dic', fase:'🫙 Essiccazione/Concia', desc:'14gg essiccazione + 14gg concia in barattoli.'},
+    ];
+    anno.innerHTML = stagioni.map(s => `<div style="padding:8px 10px;background:var(--card2);border-radius:8px;border-left:3px solid var(--green2);">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;">
+        <span style="font-size:11px;font-weight:700;color:var(--text3);min-width:50px;">${s.periodo}</span>
+        <span style="font-size:12px;font-weight:700;">${s.fase}</span>
+      </div>
+      <div style="font-size:11px;color:var(--text2);">${s.desc}</div>
+    </div>`).join('');
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TAB LAVORI
+══════════════════════════════════════════════════════════════ */
+function getLavoriOggi(today) {
+  const bio = getDayType(today); const moonA = getMoonAge(today); const moonP = getMoonPhase(moonA);
+  const sun = calcSunTimes(today);
+  let titolo='', sub='', lavori=[];
+
+  if (bio.type === 'radice') {
+    titolo='🌿 Terreno & Radici'; sub='Humus, lavorazione substrato, pila galvanica';
+    lavori=['Rinova l\'infuso humus nel serbatoio (5L + 100-150g)','Controlla peso vasi (alzali: secchi = irrigare di più)','Verifica pila galvanica ferro-rame','Aggiungi miscela organica al substrato'];
+  } else if (bio.type === 'frutto') {
+    titolo='🍊 Osservazione & Raccolta'; sub='Trichomi, resine, potature leggere';
+    lavori=['Osserva i trichomi con lente (ambrato ≥30% = raccolta)','Rimuovi foglie secche o malate','Controlla i bastoncini di elettrocultura','Aggiorna foto degli esperimenti'];
+  } else if (bio.type === 'fiore') {
+    titolo='🌸 Terpeni & Cime'; sub='Ventilazione, aromi, documentazione';
+    lavori=['Ventila bene la serra (terpeni volatili escono nei giorni Fiore)','Documenta aroma e sviluppo cime','Controlla umidità (evita spruzzi sulle cime)','Verifica e aggiusta cerchi Lakhovsky'];
+  } else {
+    titolo='💧 Irrigazione & Vegetazione'; sub='Acqua, stomi, Geomag';
+    lavori=['Agita il serbatoio 15 secondi (ossigena l\'acqua)','Controlla Geomag sui gocciolatori (polo N verso basso)','Bagna i bordi di tutti i vasi manualmente','Ispeziona foglie (ingiallimenti, macchie, deformazioni)'];
+  }
+  if (moonP.code === 'new') lavori.push('Luna nuova: pulisci e prepara additivi per il mese');
+  if (sun.dayLen < 12 && today.getMonth() >= 8) lavori.push('⚠️ Ore luce < 12h — femminizzate in innesco fioritura');
+  return { titolo, sub, lavori };
+}
+
+function renderCalLavori() {
+  const today = new Date();
+  const lav = getLavoriOggi(today);
+
+  const el = document.getElementById('cal-lavori-oggi');
+  if (el) el.innerHTML = lav.lavori.map(l=>`<div style="display:flex;align-items:flex-start;gap:6px;padding:4px 0;">
+    <span style="color:var(--green3);flex-shrink:0;">☐</span>
+    <span style="font-size:13px;color:var(--text2);">${l}</span>
+  </div>`).join('');
+
+  // Piano settimana
+  const sett = document.getElementById('cal-lavori-settimana');
+  if (sett) {
+    sett.innerHTML = '';
+    for (let i=0; i<7; i++) {
+      const d = new Date(today.getTime()+i*86400000);
+      const l = getLavoriOggi(d);
+      const bio = getDayType(d); const bioT = DAY_TYPES[bio.type];
+      sett.innerHTML += `<div class="cal-lavori-day" onclick="openCalLavoriPopup(${d.getTime()})">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div style="font-size:12px;font-weight:700;">${i===0?'Oggi':fmtIT(d)}</div>
+          <span style="font-size:11px;color:var(--text3);">${bioT.icon} ${bioT.label}</span>
+        </div>
+        <div style="font-size:12px;color:var(--text2);margin-top:3px;">${l.titolo}</div>
+      </div>`;
+    }
+  }
+
+  // Piano mese Terra Nuova
+  const mese = document.getElementById('cal-lavori-mese');
+  if (mese) {
+    const m = today.getMonth();
+    const pianiMese = {
+      0:['❄️ Pianificazione stagione','📋 Ordine semi e substrati','🧪 Sterilizzazione attrezzi'],
+      1:['🌱 Preparazione substrato','📦 Rinnovo BioBizz e additivi','🌡️ Monitoraggio temperature'],
+      2:['🌱 Prime semine indoor','🧫 Preparazione inoculo micorrize','☀️ Posizionamento serra'],
+      3:['🌿 Trapianti principali','💧 Attivazione sistema irrigazione','⚡ Setup elettrocultura'],
+      4:['🌿 Vegetativa piena','🍯 Prima melassa stagionale','🔧 Verifica sistemi'],
+      5:['🌸 Pre-fioritura auto','🍌 Primo tè banana','📊 Documentazione crescita'],
+      6:['🍊 Fioritura auto','🌡️ Gestione caldo estivo','🍎 Generatore etilene (mese 3)'],
+      7:['🍊 Raccolta autofiorenti (da ago)','🌸 Pre-fioritura femm.','🫙 Primo ciclo essiccazione'],
+      8:['🌸 Innesco fioritura femm.','📸 Documentazione trichomi','🍊 Raccolta auto tardive'],
+      9:['🌸 Fioritura femm. piena','🧪 Riduzione irrigazione','🔍 Monitoraggio maturazione'],
+      10:['🍊 Raccolta femm. (ott-nov)','🌬️ Essiccazione 14 giorni','📋 Preparazione concia'],
+      11:['🫙 Concia in barattoli','📊 Valutazione ciclo','🌱 Pianificazione 2027'],
+    };
+    mese.innerHTML = (pianiMese[m]||[]).map(l=>`<div style="display:flex;align-items:center;gap:8px;padding:7px 10px;background:var(--card2);border-radius:8px;">
+      <span style="font-size:14px;">${l.split(' ')[0]}</span>
+      <span style="font-size:12px;color:var(--text2);">${l.substring(l.indexOf(' ')+1)}</span>
+    </div>`).join('');
+  }
+}
+
+function openCalLavoriPopup(ts) {
+  const d = new Date(ts); const lav = getLavoriOggi(d);
+  const bio = getDayType(d); const bioT = DAY_TYPES[bio.type];
+  const sun = calcSunTimes(d);
+  const overlay=document.getElementById('amb-popup-overlay');
+  const content=document.getElementById('amb-popup-content');
+  if(!overlay||!content) return;
+  content.innerHTML = `<div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;">Piano lavori</div>
+<div style="font-size:18px;font-weight:700;margin:6px 0;">${fmtIT(d)} — ${lav.titolo}</div>
+<div style="font-size:13px;color:var(--text3);margin-bottom:12px;">${bioT.icon} ${bioT.label} · ☀️ ${sun.dayLen.toFixed(1)}h luce</div>
+<div style="font-size:13px;font-weight:700;margin-bottom:8px;">Checklist operativa:</div>
+${lav.lavori.map(l=>`<div style="display:flex;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+  <span style="color:var(--green3);">☐</span>
+  <span style="font-size:13px;color:var(--text2);">${l}</span>
+</div>`).join('')}`;
+  overlay.style.display='flex'; document.body.style.overflow='hidden';
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TAB GDD — Gradi-Giorno
+══════════════════════════════════════════════════════════════ */
+let _gddData = null;
+
+function renderCalGDD() {
+  const lista = document.getElementById('cal-gdd-piante');
+  if (_gddData) {
+    _renderGDDContent();
+    return;
+  }
+  loadGDD();
+  // Mostra stime locali intanto
+  if (lista) {
+    const today = new Date();
+    lista.innerHTML = CAL_PIANTE.map(p => {
+      const germ = new Date(p.germ);
+      const gg = Math.floor((today-germ)/86400000);
+      const raccoItaStr = p.tipo==='auto' ? (() => {
+        const r = new Date(germ.getTime() + p.giorni*86400000);
+        return fmtIT(r);
+      })() : (p.raccolta ? fmtIT(new Date(p.raccolta)) : 'Ott–Nov 2026');
+      const avanzamento = p.tipo==='auto' ? Math.min(100, Math.round(gg/p.giorni*100)) : null;
+      return `<div class="cal-gdd-row" onclick="openCalGDDPopup('${p.id}')">
+        <div>
+          <div style="font-size:12px;font-weight:700;">${p.nome}</div>
+          <div style="font-size:10px;color:var(--text3);">${p.tipo==='auto'?'⚡ Auto · Gg '+gg+'/'+p.giorni:'🌸 Femm.'}</div>
+        </div>
+        <div style="text-align:right;">
+          ${avanzamento!==null?`<div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;width:80px;margin-bottom:3px;"><div style="height:100%;background:var(--green);border-radius:2px;width:${avanzamento}%;"></div></div>`:''}
+          <div style="font-size:11px;color:var(--text3);">Raccolta: ${raccoItaStr}</div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+}
+
+async function loadGDD() {
+  const loading = document.getElementById('cal-gdd-loading');
+  const content = document.getElementById('cal-gdd-content');
+  const totEl = document.getElementById('cal-gdd-totale');
+  const chart = document.getElementById('cal-gdd-chart');
+  if (loading) loading.style.display = 'block';
+  if (content) content.style.display = 'none';
+
+  try {
+    const today = new Date();
+    const startDate = '2026-01-01';
+    const endDate = today.toISOString().slice(0,10);
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${CAL_LAT}&longitude=${CAL_LON}` +
+      `&daily=temperature_2m_max,temperature_2m_min&timezone=Europe%2FRome` +
+      `&start_date=${startDate}&end_date=${endDate}`;
+    const res = await fetch(url);
+    const data = await res.json();
+
+    // Calcola GDD base 10°C
+    let gddTotal = 0;
+    const gddMonthly = new Array(12).fill(0);
+    const MESI_S = ['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'];
+
+    data.daily.time.forEach((t, i) => {
+      const tMax = data.daily.temperature_2m_max[i];
+      const tMin = data.daily.temperature_2m_min[i];
+      const tMed = (tMax + tMin) / 2;
+      const gdd = Math.max(0, tMed - 10);
+      gddTotal += gdd;
+      const month = new Date(t).getMonth();
+      gddMonthly[month] += gdd;
+    });
+
+    _gddData = { total: Math.round(gddTotal), monthly: gddMonthly };
+
+    if (totEl) totEl.textContent = Math.round(gddTotal) + ' GDD';
+    if (loading) loading.style.display = 'none';
+    if (content) content.style.display = 'block';
+
+    // Grafico mensile
+    if (chart) {
+      const maxGDD = Math.max(...gddMonthly);
+      chart.innerHTML = gddMonthly.map((g, mi) => {
+        const pct = maxGDD > 0 ? (g/maxGDD*100).toFixed(0) : 0;
+        const color = g > 200 ? '#f0843c' : g > 100 ? '#ffd54f' : '#4caf76';
+        const isNow = mi <= today.getMonth();
+        return `<div class="cal-foto-bar" style="opacity:${isNow?1:0.3};">
+          <div style="width:28px;font-size:10px;color:var(--text3);">${MESI_S[mi]}</div>
+          <div class="cal-foto-bar-fill" style="width:${pct}%;max-width:calc(100% - 80px);background:${color};height:8px;"></div>
+          <div style="font-size:10px;color:var(--text2);min-width:46px;text-align:right;">${Math.round(g)} GDD</div>
+        </div>`;
+      }).join('');
+    }
+
+    _renderGDDContent();
+  } catch(e) {
+    if (loading) loading.textContent = '⚠️ Errore Open-Meteo. Riprova più tardi.';
+  }
+}
+
+function _renderGDDContent() {
+  if (!_gddData) return;
+  const today = new Date();
+  const lista = document.getElementById('cal-gdd-piante');
+  if (!lista) return;
+
+  lista.innerHTML = CAL_PIANTE.map(p => {
+    const germ = new Date(p.germ);
+    const gg = Math.floor((today-germ)/86400000);
+    const avanzamento = p.tipo==='auto' ? Math.min(100, Math.round(gg/p.giorni*100)) : null;
+    const raccoItaStr = p.tipo==='auto' ? fmtIT(new Date(germ.getTime()+p.giorni*86400000)) :
+      (p.raccolta ? fmtIT(new Date(p.raccolta)) : 'Ott–Nov 2026');
+    const gddNeeded = p.fiorGG * 12; // Stima GDD necessari (12 GDD/gg medio)
+    const gddHave = Math.min(_gddData.total, gddNeeded);
+    const gddPct = Math.min(100, Math.round(gddHave/gddNeeded*100));
+
+    return `<div class="cal-gdd-row" onclick="openCalGDDPopup('${p.id}')">
+      <div style="flex:1;">
+        <div style="font-size:12px;font-weight:700;">${p.nome}</div>
+        <div style="font-size:10px;color:var(--text3);">${p.tipo==='auto'?'⚡ Gg '+gg+'/'+p.giorni:'🌸 Femm. → '+raccoItaStr}</div>
+        <div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;width:100%;margin-top:4px;">
+          <div style="height:100%;background:${gddPct>=80?'#4caf76':gddPct>=50?'#ffd54f':'#ef5350'};border-radius:2px;width:${gddPct}%;"></div>
+        </div>
+      </div>
+      <div style="text-align:right;flex-shrink:0;margin-left:10px;">
+        <div style="font-size:11px;font-weight:700;color:var(--blue);">${gddPct}% GDD</div>
+        <div style="font-size:10px;color:var(--text3);">Raccolta: ${raccoItaStr}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openCalGDDPopup(id) {
+  const p = CAL_PIANTE.find(x=>String(x.id)===String(id));
+  if (!p) return;
+  const today = new Date(); const germ = new Date(p.germ);
+  const gg = Math.floor((today-germ)/86400000);
+  const overlay=document.getElementById('amb-popup-overlay');
+  const content=document.getElementById('amb-popup-content');
+  if(!overlay||!content) return;
+  const gddTotal = _gddData ? _gddData.total : '?';
+  const racD = p.tipo==='auto' ? new Date(germ.getTime()+p.giorni*86400000) : new Date(p.raccolta);
+  const daysLeft = Math.max(0, Math.floor((racD-today)/86400000));
+  content.innerHTML = `<div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;">GDD — ${p.tipo==='auto'?'Autofiorente':'Femminizzata'}</div>
+<div style="font-size:18px;font-weight:700;margin:6px 0;">${p.nome} (ID:${p.id})</div>
+<div style="background:var(--card2);border-radius:10px;padding:12px;margin-bottom:12px;font-size:13px;color:var(--text2);line-height:1.9;">
+  📅 Germinazione: <strong>${fmtIT(germ)}</strong><br>
+  🌿 Giorno: <strong>${gg}</strong> su ${p.tipo==='auto'?p.giorni:'~'} giorni totali<br>
+  📈 GDD accumulati 2026: <strong>${gddTotal}</strong><br>
+  🍊 Raccolta prevista: <strong>${fmtIT(racD)}</strong> (${daysLeft>0?daysLeft+' giorni':'⚠️ Data passata!'})
+</div>
+<div style="font-size:13px;color:var(--text2);line-height:1.7;">
+  ${p.tipo==='auto'?`Autofiorente: ciclo fisso di ${p.giorni} giorni dalla germinazione. I GDD influenzano la resa ma non la data esatta. Con ${_gddData?_gddData.total:'molti'} GDD la resa sarà ${_gddData&&_gddData.total>300?'ottimale ✅':'buona 🟡'}.`
+  :`Femminizzata fotoperiodica. Innesco fioritura previsto inizio ottobre (ore luce < 12h). Poi ${p.fiorGG} giorni di fioritura. GDD disponibili accelerano leggermente la maturazione.`}
+</div>`;
+  overlay.style.display='flex'; document.body.style.overflow='hidden';
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TAB GELO
+══════════════════════════════════════════════════════════════ */
+function renderCalGelo() {
+  const today = new Date();
+  const m = today.getMonth();
+  const d = today.getDate();
+
+  // Statistiche gelo Caserta (dati storici 1981-2010)
+  const GELO_STATS = {
+    primoGelo: { mese:11, giorno:15, nome:'15 Dicembre (media storica)' },
+    ultimoGelo: { mese:1, giorno:20, nome:'20 Febbraio (media storica)' },
+    fineSicura: { inizio: { mese:2, giorno:1 }, fine: { mese:11, giorno:30 } },
+    tempMinMedia: [-1,1,4,8,13,17,21,21,17,11,5,1]
+  };
+
+  // Status gelo attuale
+  const geloRischio = m===11&&d>=15 || m===0 || m===1&&d<=20 || m===11&&d>=20;
+  const setT=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+  const setH=(id,v)=>{const e=document.getElementById(id);if(e)e.innerHTML=v;};
+
+  const geloEl = document.getElementById('cal-gelo-emoji');
+  const stEl = document.getElementById('cal-gelo-status');
+  const dEl = document.getElementById('cal-gelo-desc');
+  if (geloRischio) {
+    if (geloEl) geloEl.textContent='❄️';
+    if (stEl) stEl.textContent='⚠️ Periodo a rischio gelo';
+    if (dEl) dEl.textContent='Temperatura minima può scendere sotto 0°C. Proteggi i vasi.';
+  } else if (m>=2&&m<=10) {
+    if (geloEl) geloEl.textContent='✅';
+    if (stEl) stEl.textContent='Finestra sicura outdoor';
+    if (dEl) dEl.textContent=`T minima media: ${GELO_STATS.tempMinMedia[m]}°C. Nessun rischio gelo.`;
+  } else {
+    if (geloEl) geloEl.textContent='🌡️';
+    if (stEl) stEl.textContent='Monitorare le temperature';
+    if (dEl) dEl.textContent='Periodo di transizione. Controlla le previsioni.';
+  }
+
+  // Statistiche
+  const stats = document.getElementById('cal-gelo-stats');
+  if (stats) {
+    stats.innerHTML = [
+      {label:'Primo gelo medio', val:'15 Dicembre', note:'Caserta storico'},
+      {label:'Ultimo gelo medio', val:'20 Febbraio', note:'Caserta storico'},
+      {label:'T minima assoluta', val:'-5°C (1985)', note:'Eccezionale'},
+      {label:'Giorni gelo/anno', val:'~8 giorni', note:'Media 1981-2010'},
+      {label:'Finestra sicura', val:'1 Mar → 30 Nov', note:'9 mesi outdoor'},
+    ].map(s => `<div class="cal-gelo-stat">
+      <div><div style="font-size:12px;font-weight:700;">${s.label}</div><div style="font-size:10px;color:var(--text3);">${s.note}</div></div>
+      <div style="font-size:13px;font-weight:700;color:var(--blue);">${s.val}</div>
+    </div>`).join('');
+  }
+
+  // Finestra sicura
+  const fw = document.getElementById('cal-gelo-finestra');
+  if (fw) fw.innerHTML = `
+    <div style="font-size:13px;color:var(--text2);line-height:1.8;">
+      🟢 <strong>Inizio stagione sicura:</strong> 1 Marzo<br>
+      🔴 <strong>Fine stagione sicura:</strong> 30 Novembre<br>
+      📅 <strong>Durata:</strong> ~9 mesi outdoor<br><br>
+      <strong>Per le tue piante 2026:</strong><br>
+      ✅ Germinazioni Apr 2026: tutte in finestra sicura<br>
+      ✅ Autofiorenti raccolta Lug–Ago: ampiamente sicure<br>
+      ✅ Femminizzate raccolta Ott–Nov: sicure fino al 30 Nov<br>
+      ⚠️ Concia in Dec–Jan: portare indoor sotto 5°C
+    </div>`;
+
+  // Avvisi
+  const avv = document.getElementById('cal-gelo-avvisi');
+  if (avv) {
+    const avvisi = [];
+    if (m>=11||m<=1) avvisi.push({color:'#ef5350',txt:'❄️ RISCHIO GELO ATTIVO — Copri i vasi con telo termico sotto 4°C'});
+    if (m===2&&d<15) avvisi.push({color:'#ff9800',txt:'⚠️ Ultime possibili gelate tardive — monitorare notte'});
+    if (m>=8&&m<=9) avvisi.push({color:'#ffd54f',txt:'🍂 Autunno in arrivo — controlla le previsioni per freddo notturno'});
+    if (avvisi.length===0) avvisi.push({color:'#4caf76',txt:'✅ Nessun rischio gelo attuale — stagione sicura'});
+    avv.innerHTML = avvisi.map(a=>`<div style="padding:10px 12px;background:var(--card2);border-radius:8px;border-left:4px solid ${a.color};font-size:13px;color:var(--text2);">${a.txt}</div>`).join('');
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TAB MATURAZIONE
+══════════════════════════════════════════════════════════════ */
+function renderCalMatur() {
+  const today = new Date();
+
+  // Prossima raccolta
+  const prossima = CAL_PIANTE
+    .map(p => {
+      const d = p.tipo==='auto' ? new Date(new Date(p.germ).getTime()+p.giorni*86400000) : new Date(p.raccolta);
+      return { p, d, gg: Math.floor((d-today)/86400000) };
+    })
+    .filter(x => x.gg >= 0)
+    .sort((a,b) => a.gg-b.gg)[0];
+
+  const pmEl = document.getElementById('cal-matur-prossima');
+  const pdEl = document.getElementById('cal-matur-desc');
+  if (prossima && pmEl) {
+    pmEl.textContent = `${prossima.p.nome} — ${fmtIT(prossima.d)} (tra ${prossima.gg} giorni)`;
+    if (pdEl) pdEl.textContent = `ID:${prossima.p.id} · ${prossima.p.tipo==='auto'?'Autofiorente '+prossima.p.giorni+'gg':'Femminizzata · innesco ott.'}`;
+  }
+
+  // Lista tutte le piante
+  const lista = document.getElementById('cal-matur-piante');
+  if (lista) {
+    const sorted = CAL_PIANTE.map(p => {
+      const racD = p.tipo==='auto' ? new Date(new Date(p.germ).getTime()+p.giorni*86400000) : new Date(p.raccolta);
+      const gg = Math.floor((racD-today)/86400000);
+      return { p, racD, gg };
+    }).sort((a,b) => a.gg-b.gg);
+
+    lista.innerHTML = sorted.map(({p, racD, gg}) => {
+      const status = gg < 0 ? '✅ Raccolta' : gg === 0 ? '🍊 OGGI!' : gg <= 7 ? '🔴 Imminente' : gg <= 30 ? '🟡 Prossima' : '🟢 In crescita';
+      const moonFase = getMoonPhase(getMoonAge(racD));
+      return `<div class="cal-matur-row" onclick="openCalMaturPopup('${p.id}')">
+        <div style="flex:1;">
+          <div style="font-size:12px;font-weight:700;">${p.nome} <span style="font-size:10px;opacity:.6">ID:${p.id}</span></div>
+          <div style="font-size:10px;color:var(--text3);">${p.tipo==='auto'?'⚡ Auto':'🌸 Femm.'} · Raccolta: ${fmtIT(racD)}</div>
+          <div style="font-size:10px;color:var(--text3);">🌙 ${moonFase.emoji} ${moonFase.name} (${gg>=0?'tra '+gg+' gg':'passata'})</div>
+        </div>
+        <div style="flex-shrink:0;font-size:12px;font-weight:700;text-align:right;">${status}</div>
+      </div>`;
+    }).join('');
+  }
+
+  // Ottimizzazione luna
+  const luna = document.getElementById('cal-matur-luna');
+  if (luna) {
+    const age = getMoonAge(today); const phase = getMoonPhase(age);
+    luna.innerHTML = `
+      <strong>Fase attuale: ${phase.emoji} ${phase.name}</strong><br><br>
+      <strong>Quando raccogliere per massima qualità:</strong><br>
+      🌕 <strong>Luna Piena</strong> → Massimo contenuto di resine e terpeni. Ideale per raccolta e prima valutazione.<br>
+      🌔 <strong>Gibbosa Crescente</strong> → Ottimo secondo best. Pianta al picco di vigore.<br>
+      🌑 <strong>Luna Nuova</strong> → Da evitare per raccolta. Minima vitalità.<br><br>
+      <strong>Per l'essiccazione:</strong><br>
+      🌿 Giorno Radice o Frutto → Miglior conservazione degli aromi durante il processo.<br><br>
+      <strong>Per la concia (barattoli):</strong><br>
+      🌙 Luna calante → Processo di curing più uniforme secondo la tradizione biodinamica.`;
+  }
+}
+
+function openCalMaturPopup(id) {
+  const p = CAL_PIANTE.find(x=>String(x.id)===String(id));
+  if (!p) return;
+  const today = new Date(); const germ = new Date(p.germ);
+  const racD = p.tipo==='auto' ? new Date(germ.getTime()+p.giorni*86400000) : new Date(p.raccolta);
+  const gg = Math.floor((racD-today)/86400000);
+  const moonFase = getMoonPhase(getMoonAge(racD));
+  const overlay=document.getElementById('amb-popup-overlay');
+  const content=document.getElementById('amb-popup-content');
+  if(!overlay||!content) return;
+  content.innerHTML = `<div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;">Maturazione</div>
+<div style="font-size:18px;font-weight:700;margin:6px 0;">${p.nome}</div>
+<div style="background:var(--card2);border-radius:10px;padding:12px;margin-bottom:12px;font-size:13px;color:var(--text2);line-height:1.9;">
+  🌱 Germinazione: <strong>${fmtIT(germ)}</strong><br>
+  🍊 Raccolta prevista: <strong>${fmtIT(racD)}</strong><br>
+  ⏳ Mancano: <strong>${gg>=0?gg+' giorni':'DATA PASSATA'}</strong><br>
+  🌙 Fase lunare alla raccolta: <strong>${moonFase.emoji} ${moonFase.name}</strong><br>
+  📏 ${p.tipo==='auto'?'Ciclo: '+p.giorni+'gg fisso · Fioritura: '+p.fiorGG+'gg':'Fioritura: '+p.fiorGG+'gg · Innesco: '+fmtIT(new Date(p.fiorInizio))}
+</div>
+<div style="font-size:13px;font-weight:700;margin-bottom:8px;">Segnali di maturità:</div>
+<div style="font-size:13px;color:var(--text2);line-height:1.8;">
+  🔬 Trichomi: <strong>≥30% ambrati</strong> → raccogli<br>
+  🍂 Pistilli: <strong>80% arancioni/rossi</strong> → maturità<br>
+  🌿 Foglie: ingiallimento naturale delle foglie più vecchie<br>
+  👃 Aroma: intenso e caratteristico della varietà
+</div>
+<div style="margin-top:12px;padding:10px;background:rgba(74,175,94,0.08);border-radius:8px;font-size:12px;color:var(--text2);">
+  <strong>Post-raccolta:</strong><br>
+  🌬️ Essiccazione: 14 giorni a 18-22°C, 50% umidità, buio<br>
+  🫙 Concia: 14 giorni in barattoli di vetro, aprire 15min/giorno
+</div>`;
+  overlay.style.display='flex'; document.body.style.overflow='hidden';
+}
+
+/* ══════════════════════════════════════════════════════════════
+   POPUP AGGIUNTIVI per buildPopupContent
+══════════════════════════════════════════════════════════════ */
+function buildCalPopupContent(type) {
+  const today = new Date();
+  const bio = getDayType(today); const bioT = DAY_TYPES[bio.type];
+  const moonA = getMoonAge(today); const moonP = getMoonPhase(moonA); const adv = getAdvice(moonP.code);
+  const sun = calcSunTimes(today);
+  const lav = getLavoriOggi(today);
+  const tratt = getTrattOggi(today);
+  const fenol = getFenolFase(today);
+
+  switch(type) {
+    case 'cal-semine-oggi': {
+      const sem = getSemineOggi(today);
+      return `<div class="amb-popup-label">Semine Oggi</div>
+<div class="amb-popup-title">${sem.emoji} ${sem.label}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">${sem.motivo}</div></div>
+<div class="amb-popup-section">
+  <div class="amb-popup-label">Metodo Maria Thun</div>
+  <div style="font-size:13px;color:var(--text2);line-height:1.7;">
+    🌱 <strong>Giorni Radice</strong> (${bio.type==='radice'?'✅ oggi!':'non oggi'}) → Seminare tuberi e radici<br>
+    🌸 <strong>Giorni Fiore</strong> (${bio.type==='fiore'?'✅ oggi!':'non oggi'}) → Fiorite, aromi<br>
+    🍊 <strong>Giorni Frutto</strong> (${bio.type==='frutto'?'✅ oggi!':'non oggi'}) → Cime, fiori, semi<br>
+    💧 <strong>Giorni Foglia</strong> (${bio.type==='foglia'?'✅ oggi!':'non oggi'}) → Foglie, vegetali<br><br>
+    Per la cannabis: preferisci <strong>Giorni Frutto</strong> per la fioritura e <strong>Giorni Radice</strong> per la crescita radicale.
+  </div>
+</div>`;
+    }
+    case 'cal-tratt-oggi': {
+      return `<div class="amb-popup-label">Trattamento Oggi</div>
+<div class="amb-popup-title">${tratt.label}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">${tratt.desc}</div></div>
+<div class="amb-popup-section">
+  <div class="amb-popup-label">Ricette complete</div>
+  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
+    🍯 <strong>Melassa:</strong> 1ml/L acqua · bottiglia separata · ogni 15 gg · Giorni Foglia<br>
+    🌿 <strong>Ortiche:</strong> 100g/L · macera 7gg · diluire 1:10 · Giorni Foglia/Radice<br>
+    🍌 <strong>Banana:</strong> 3-4 bucce bolli 15min · 1 cucch. cenere · diluire 1:5 · Giorni Frutto/Fiore<br>
+    🦠 <strong>Humus:</strong> 5L + 100-150g BioBizz · rinnova ogni mese · Giorni Radice<br>
+    🥚 <strong>Miscela:</strong> caffè essiccato + guscio uovo + banana · 1 cucch./vaso · Giorni Radice
+  </div>
+</div>`;
+    }
+    case 'cal-foto-oggi': {
+      return `<div class="amb-popup-label">Fotoperiodo</div>
+<div class="amb-popup-title">☀️ ${sun.dayLen.toFixed(2)}h di luce oggi</div>
+<div class="amb-popup-section">
+  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
+    🌅 Alba: <strong>${hToHHMM(sun.sunrise)}</strong><br>
+    🌇 Tramonto: <strong>${hToHHMM(sun.sunset)}</strong><br>
+    ⏱️ Durata: <strong>${sun.dayLen.toFixed(2)}h</strong><br>
+    📍 Coordinate: 41.097°N 14.388°E (Caserta)<br><br>
+    <strong>Impatto sulle piante:</strong><br>
+    ⚡ <strong>Autofiorenti:</strong> ${sun.dayLen>=18?'✅ Crescita ottimale (≥18h)':sun.dayLen>=15?'🟡 Buona crescita (15-18h)':sun.dayLen>=12?'🟠 Crescita moderata':'⚠️ Crescita rallentata (<12h)'}<br>
+    🌸 <strong>Femminizzate:</strong> ${sun.dayLen>12?'🌿 Fase vegetativa (>12h)':sun.dayLen===12?'⚠️ Soglia critica 12h!':'🌸 FIORITURA INNESCATA (<12h)'}<br><br>
+    Algoritmo astronomico NOAA adattato. Calcolo preciso per le coordinate della serra.
+  </div>
+</div>`;
+    }
+    case 'cal-fenol-oggi': {
+      return `<div class="amb-popup-label">Fase Fenologica</div>
+<div class="amb-popup-title">${fenol.fase}</div>
+<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">${fenol.desc}</div></div>
+<div class="amb-popup-section">
+  <div class="amb-popup-label">Impatto sulle 10 piante</div>
+  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
+    ${CAL_PIANTE.map(p=>{
+      const germ=new Date(p.germ); const gg=Math.floor((today-germ)/86400000);
+      return `${p.nome}: ${gg<0?'⏳ non ancora germinata':gg<15?'🌱 seedling':gg<50?'🌿 vegetativa':'🌸 fioritura/maturazione'}`;
+    }).join('<br>')}
+  </div>
+</div>`;
+    }
+    case 'cal-lavori-oggi': {
+      return `<div class="amb-popup-label">Lavori Oggi</div>
+<div class="amb-popup-title">🔧 ${lav.titolo}</div>
+<div class="amb-popup-section">
+  <div style="font-size:13px;color:var(--text3);margin-bottom:8px;">${lav.sub}</div>
+  ${lav.lavori.map(l=>`<div style="display:flex;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+    <span style="color:var(--green3);">☐</span><span style="font-size:13px;color:var(--text2);">${l}</span>
+  </div>`).join('')}
+</div>`;
+    }
+    case 'cal-preparazioni': {
+      return `<div class="amb-popup-label">Preparazioni Biodinamiche</div>
+<div class="amb-popup-title">🧘 Calendario Preparati</div>
+<div class="amb-popup-section">
+  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
+    🌿 <strong>Preparato 500 (Cornoletame)</strong><br>
+    Usa in primavera-autunno. Applica la sera su terreno umido. 1g/vaso diluito 1:10 agitato 1h. Favorisce vita del suolo.<br><br>
+    🦷 <strong>Preparato 501 (Cornosilice)</strong><br>
+    Usa in estate (mag-ago). Applica al mattino presto (6-8h). Potenzia fotosintesi e resine. Non usare in fioritura avanzata.<br><br>
+    🌿 <strong>Preparato Ortica (508)</strong><br>
+    Infuso di ortiche fermentato 14 giorni. Ricco di Fe, K, N. Rinforza le piante e contrasta i parassiti. Ogni 2-3 settimane.<br><br>
+    🫙 <strong>Valeriana (507)</strong><br>
+    Prima di temperature estreme. Stimola la fioritura. 8 gocce/L agitate 15min.
+  </div>
+</div>`;
+    }
+    case 'cal-compostaggio': {
+      return `<div class="amb-popup-label">Compostaggio</div>
+<div class="amb-popup-title">♻️ Calendario Compost Living Soil</div>
+<div class="amb-popup-section">
+  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
+    <strong>Giorni Radice:</strong> Gira il cumulo e aggiungi materiale verde (scarti organici). Massima attività microbica.<br><br>
+    <strong>Giorni Foglia:</strong> Aggiungi materiale carbonio (foglie secche, cartone) e irrora con acqua.<br><br>
+    <strong>Giorni Frutto:</strong> Aggiungi bucce di banana, fondi caffè, gusci uovo. Ideale per raccogliere scarti di cucina.<br><br>
+    <strong>Giorni Fiore:</strong> Aggiungi cenere di legno e polvere di roccia basaltica per remineralizzare.<br><br>
+    <strong>Luna nuova:</strong> Gira il cumulo principale. Massima penetrazione di ossigeno.<br>
+    <strong>Luna piena:</strong> Irrora con infuso di ortiche per attivare i microbi.
+  </div>
+</div>`;
+    }
+    case 'cal-thun': {
+      return `<div class="amb-popup-label">Metodo Maria Thun</div>
+<div class="amb-popup-title">📖 Lunario delle Semine</div>
+<div class="amb-popup-section">
+  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
+    Maria Thun (1922-2012) ha codificato il legame tra la posizione della Luna nelle costellazioni zodiacali e la crescita delle piante.<br><br>
+    <strong>Sistema delle 4 qualità:</strong><br>
+    🍊 <strong>Frutto</strong> (Ariete, Leone, Sagittario — Fuoco) → Semi, cime, frutti<br>
+    🌸 <strong>Fiore</strong> (Gemelli, Bilancia, Acquario — Aria) → Fiori, aromi, terpeni<br>
+    🌿 <strong>Radice</strong> (Toro, Vergine, Capricorno — Terra) → Radici, tuberi, substrato<br>
+    💧 <strong>Foglia</strong> (Cancro, Scorpione, Pesci — Acqua) → Foglie, vegetazione<br><br>
+    <strong>Per la cannabis:</strong><br>
+    ✅ Semina in Giorni Frutto (Ariete, Leone, Sagittario)<br>
+    ✅ Trapianto in Giorni Radice (Toro, Vergine, Capricorno)<br>
+    ✅ Raccolta in Giorni Frutto, preferibilmente Luna Piena<br>
+    ⚠️ Evita Giorni Foglia per operazioni importanti
+  </div>
+</div>`;
+    }
+    case 'cal-conservazione': {
+      return `<div class="amb-popup-label">Conservazione</div>
+<div class="amb-popup-title">🫙 Essiccazione e Concia</div>
+<div class="amb-popup-section">
+  <div style="font-size:13px;color:var(--text2);line-height:1.8;">
+    <strong>🌬️ Essiccazione (14 giorni):</strong><br>
+    🌡️ Temperatura: 18-22°C<br>
+    💧 Umidità: 50% (evita muffe)<br>
+    🌑 Luce: buio totale<br>
+    💨 Ventilazione: leggera circolazione d'aria<br>
+    📅 Ideale in Giorni Frutto o Radice (biodinamica)<br><br>
+    <strong>🫙 Concia/Curing (14+ giorni):</strong><br>
+    📦 Barattoli di vetro (non plastica)<br>
+    🌡️ Luogo fresco e buio (15-20°C)<br>
+    🔄 Apri 15 minuti/giorno (primi 7 giorni)<br>
+    📉 Poi ogni 2-3 giorni per altre 2 settimane<br>
+    🌙 Inizia in Luna calante per curing uniforme (tradizione biodinamica)<br><br>
+    <strong>✅ Pronta quando:</strong><br>
+    Umidità interna 62-65% · Aroma pieno · Consistenza morbida ma non umida
+  </div>
+</div>`;
+    }
+    default: return null;
+  }
+}
+
+/* buildCalPopupContent è chiamata dalla buildPopupContent originale tramite hook nel default */
+
+function getIrrigOggi(today, sun) {
+  const bio = getDayType(today); const moonA = getMoonAge(today); const moonP = getMoonPhase(moonA);
+  const dayLen = sun ? sun.dayLen : 14;
+  if (bio.type === 'foglia') return { label:'💧 Irrigazione aumentata (Giorno Foglia)', desc:'Massima domanda idrica. Verifica serbatoio 50L.' };
+  if (moonP.code === 'new') return { label:'⏸️ Irrigazione ridotta (Luna Nuova)', desc:'Minima vitalità. 1 ciclo/giorno sufficiente.' };
+  if (dayLen > 16) return { label:'⚠️ Alta ETo — Bagna i bordi dei vasi', desc:'Giornata lunga e calda. 2 cicli pompa + bordi manuali.' };
+  return { label:'✅ Irrigazione normale', desc:'1-2 cicli pompa. Controlla umidità superficiale.' };
+}
 
 
 (function avvioApp() {
