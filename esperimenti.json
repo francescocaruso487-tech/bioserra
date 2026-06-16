@@ -196,7 +196,9 @@
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
-    },
+    }
+  ],
+  "attivi": [
     {
       "id": "ai_004",
       "nome": "Elettrocultura a bassa intensità con coils nel suolo",
@@ -212,7 +214,7 @@
       "difficolta": "avanzata",
       "data_proposta": "2026-06-16",
       "attivo": false,
-      "data_attivazione": null
+      "data_attivazione": "16/06/2026"
     },
     {
       "id": "ai_005",
@@ -230,7 +232,8 @@
       "difficolta": "facile",
       "data_proposta": "2026-06-16",
       "attivo": false,
-      "data_attivazione": null
+      "data_attivazione": "16/06/2026"
     }
-  ]
+  ],
+  "aggiornato": "2026-06-16 08:27"
 }
