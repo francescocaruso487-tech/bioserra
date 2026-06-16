@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-16T20:03:44.647Z",
+  "lastUpdate": "2026-06-16T20:06:36.341Z",
   "versione": "1.0",
   "esperimenti_disponibili": [
     {
@@ -402,6 +402,40 @@
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640396342_1",
+      "nome": "Tecnica di pruning",
+      "descrizione": "Tagliare le piante di cannabis per controllare la forma e aumentare la produzione",
+      "obiettivo": "Aumentare la produzione di gemme e migliorare la struttura della pianta",
+      "materiali": [
+        "Forbici da giardinaggio",
+        "guanti"
+      ],
+      "categoria": "Potatura",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640396342_3",
+      "nome": "Tecnica di training con LST",
+      "descrizione": "Utilizzare la tecnica di LST (Low-Stress Training) per controllare la forma della pianta",
+      "obiettivo": "Aumentare la produzione di gemme e migliorare la struttura della pianta",
+      "materiali": [
+        "Fil di ferro",
+        "clip"
+      ],
+      "categoria": "Addestramento",
+      "difficolta": "medio",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 21,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
     }
   ],
   "proposte": [
@@ -742,6 +776,40 @@
       "difficolta": "Facile",
       "fonte": "Guide di coltivazione della cannabis",
       "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640396342_1",
+      "nome": "Tecnica di pruning",
+      "descrizione": "Tagliare le piante di cannabis per controllare la forma e aumentare la produzione",
+      "obiettivo": "Aumentare la produzione di gemme e migliorare la struttura della pianta",
+      "materiali": [
+        "Forbici da giardinaggio",
+        "guanti"
+      ],
+      "categoria": "Potatura",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640396342_3",
+      "nome": "Tecnica di training con LST",
+      "descrizione": "Utilizzare la tecnica di LST (Low-Stress Training) per controllare la forma della pianta",
+      "obiettivo": "Aumentare la produzione di gemme e migliorare la struttura della pianta",
+      "materiali": [
+        "Fil di ferro",
+        "clip"
+      ],
+      "categoria": "Addestramento",
+      "difficolta": "medio",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 21,
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
