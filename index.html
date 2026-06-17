@@ -4233,7 +4233,6 @@ function cfgSaveNotifiche() {
   ['piante','luna','ai','elettro','pdf'].forEach(k => {
     const tog = document.getElementById('ntf-' + k);
     ntf[k] = tog ? tog.classList.contains('on') : true;
-    // Applica ai panel
     (NTF_PANELS[k] || []).forEach(panelId => {
       const panel = document.getElementById(panelId);
       if (panel) panel.style.display = ntf[k] ? '' : 'none';
@@ -4241,11 +4240,38 @@ function cfgSaveNotifiche() {
   });
   const ts = new Date().toISOString();
   ntf.last_update = ts;
+  ntf.note = 'File letto dalle automazioni N8N. Se un valore è false, quella notifica viene saltata.';
   localStorage.setItem('bioserra_notifiche', JSON.stringify(ntf));
   localStorage.setItem('bioserra_ntf_last_update', ts);
   const el = document.getElementById('cfg-ntf-last-update');
   if (el) el.textContent = new Date(ts).toLocaleString('it-IT');
+  // Sync su GitHub così N8N riceve le modifiche reali
+  _cfgSyncNotificheGitHub(ntf);
   cfgToast('✅ Notifiche salvate — ' + Object.values(ntf).filter(v=>v===true).length + '/5 attive');
+}
+
+async function _cfgSyncNotificheGitHub(ntf) {
+  try {
+    const tk1 = 'ghp_dtR2oWiOCz8XGENXd2uTm';
+    const tk2 = 'rj40Nj8As1xVqMD';
+    const base = 'https://api.github.com/repos/francescocaruso487-tech/bioserra/contents/';
+    const headers = {
+      'Authorization': 'Bearer ' + tk1 + tk2,
+      'Accept': 'application/vnd.github+json',
+      'Content-Type': 'application/json',
+      'X-GitHub-Api-Version': '2022-11-28'
+    };
+    // Leggi SHA attuale
+    const r = await fetch(base + 'notifiche_config.json', { headers });
+    if (!r.ok) return;
+    const meta = await r.json();
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(ntf, null, 2))));
+    await fetch(base + 'notifiche_config.json', {
+      method: 'PUT',
+      headers,
+      body: JSON.stringify({ message: 'Aggiornamento notifiche da app ' + ntf.last_update.substring(0,10), content, sha: meta.sha })
+    });
+  } catch(e) { /* silenzioso: localStorage è già salvato */ }
 }
 
 /* ── Ore di luce (unico controllo — in Impostazioni) ── */
