@@ -710,23 +710,6 @@
       "data_attivazione": null
     },
     {
-      "id": "daily_1781640155746_1",
-      "nome": "Irrigazione intelligente",
-      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
-      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
-      "materiali": [
-        "Sensori di umidità",
-        "Sistema di irrigazione automatico"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Facile",
-      "fonte": " Tecnologia agricola",
-      "durata_giorni": 14,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null
-    },
-    {
       "id": "daily_1781640155746_2",
       "nome": "Fertilizzazione organica",
       "descrizione": "Utilizzare fertilizzanti organici per aumentare la salute e la resistenza delle piante",
@@ -1071,6 +1054,23 @@
       "difficolta": "medio",
       "fonte": "Zamnesia",
       "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": "17/06/2026"
+    },
+    {
+      "id": "daily_1781640155746_1",
+      "nome": "Irrigazione intelligente",
+      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
+      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
+      "materiali": [
+        "Sensori di umidità",
+        "Sistema di irrigazione automatico"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": " Tecnologia agricola",
+      "durata_giorni": 14,
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": "17/06/2026"
