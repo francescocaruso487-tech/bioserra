@@ -543,6 +543,23 @@
   ],
   "proposte": [
     {
+      "id": "daily_1781640436681_0",
+      "nome": "Tecnica di irrigazione a goccia",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
+      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di cannabis",
+      "materiali": [
+        "tubazioni",
+        "gocciolatori",
+        "valvole"
+      ],
+      "categoria": "irrigazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
       "id": "ai_001",
       "nome": "Low-Stress Training (LST) mirato",
       "descrizione": "Piegare e fissare i rami giovani per aprire la chioma, uniformare la luce e aumentare i siti di fioritura senza stress eccessivo.",
@@ -1023,24 +1040,6 @@
   ],
   "attivi": [
     {
-      "id": "daily_1781640436681_0",
-      "nome": "Tecnica di irrigazione a goccia",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
-      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di cannabis",
-      "materiali": [
-        "tubazioni",
-        "gocciolatori",
-        "valvole"
-      ],
-      "categoria": "irrigazione",
-      "difficolta": "medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": "16/06/2026"
-    },
-    {
       "id": "daily_1781640025709_3",
       "nome": "Introduzione di micorrize",
       "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della cannabis",
@@ -1076,5 +1075,5 @@
       "data_attivazione": "16/06/2026"
     }
   ],
-  "aggiornato": "2026-06-16 20:10"
+  "aggiornato": "2026-06-17 12:18"
 }
