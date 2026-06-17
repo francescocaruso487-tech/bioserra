@@ -543,6 +543,22 @@
   ],
   "proposte": [
     {
+      "id": "daily_1781640155746_1",
+      "nome": "Irrigazione intelligente",
+      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
+      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
+      "materiali": [
+        "Sensori di umidità",
+        "Sistema di irrigazione automatico"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": " Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
       "id": "ai_001",
       "nome": "Low-Stress Training (LST) mirato",
       "descrizione": "Piegare e fissare i rami giovani per aprire la chioma, uniformare la luce e aumentare i siti di fioritura senza stress eccessivo.",
@@ -1002,6 +1018,23 @@
       "data_proposta": "2026-06-17",
       "attivo": false,
       "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_1",
+      "nome": "Irrigazione intelligente",
+      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
+      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
+      "materiali": [
+        "Sensori di umidità",
+        "Sistema di irrigazione automatico"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": " Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
     }
   ],
   "attivi": [
@@ -1057,24 +1090,7 @@
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": "17/06/2026"
-    },
-    {
-      "id": "daily_1781640155746_1",
-      "nome": "Irrigazione intelligente",
-      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
-      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
-      "materiali": [
-        "Sensori di umidità",
-        "Sistema di irrigazione automatico"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Facile",
-      "fonte": " Tecnologia agricola",
-      "durata_giorni": 14,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": "17/06/2026"
     }
   ],
-  "aggiornato": "2026-06-17 17:50"
+  "aggiornato": "2026-06-17 22:02"
 }
