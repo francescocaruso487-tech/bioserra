@@ -773,7 +773,11 @@
 .cal-subpanel.active{display:block;}
 
 /* ── Intestazioni sezione Ambiente scrollabile ── */
-.amb-section-header {
+/* Ambiente scrollabile */
+  #sec-ambiente .card { margin-bottom:10px; }
+  .amb-oggi-master { border:1px solid rgba(74,175,94,0.35); }
+
+  .amb-section-header {
   font-size: 13px;
   font-weight: 700;
   color: var(--green3);
@@ -1051,12 +1055,31 @@
   </div>
 </div>
 
-<!-- AMBIENTE - unica colonna scrollabile -->
+<!-- AMBIENTE - pagina scorrevole continua -->
 <section id="sec-ambiente" class="section">
 
-  <!-- ══ METEO ══ -->
+  <!-- ══════════════════════════════════════════
+       1. CARD OGGI — Integrazione totale
+  ══════════════════════════════════════════ -->
+  <div class="amb-section-header">🌟 Oggi — Integrazione Totale</div>
+  <div class="card amb-oggi-master" onclick="openDayPopup(new Date())" style="cursor:pointer;background:linear-gradient(135deg,rgba(74,175,94,0.13),rgba(58,159,216,0.09));border-color:rgba(74,175,94,0.35);">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+      <div class="card-title" style="font-size:16px;margin:0;">🗓️ <span id="oggi-data-master">—</span></div>
+      <div style="font-size:10px;color:var(--text3);">Tocca per tutti i dettagli →</div>
+    </div>
+    <div id="oggi-master-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;"></div>
+    <div id="oggi-master-consiglio" style="font-size:12px;color:var(--text2);line-height:1.6;padding:8px 10px;background:var(--bg3);border-radius:8px;border-left:3px solid var(--green);"></div>
+  </div>
+  <div class="card" style="padding:10px 12px;">
+    <div class="card-title" style="font-size:13px;margin-bottom:8px;">🤖 Consiglio AI del Giorno</div>
+    <div id="cal-oggi-ai" style="font-size:13px;color:var(--text2);line-height:1.7;">⏳ Caricamento…</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       2. METEO CASERTA
+  ══════════════════════════════════════════ -->
   <div class="amb-section-header">⛅ Meteo — Caserta</div>
-<div>
+  <div>
     <div id="weather-loading" class="card" style="text-align:center;padding:32px 16px;">
       <div style="font-size:36px;margin-bottom:10px;">🌤️</div>
       <div style="color:var(--text2);font-size:14px;">Caricamento dati meteo…</div>
@@ -1118,595 +1141,327 @@
         <div class="card-title">📡 Previsioni 7 giorni</div>
         <div id="w-forecast"></div>
       </div>
-
     </div>
   </div>
 
-  <!-- ══ LUNA ══ -->
-  <div class="amb-section-header">🌙 Luna</div>
-<div>
-      <div class="card" onclick="openAmbPopup('luna-fase')" style="cursor:pointer;background:linear-gradient(135deg,rgba(58,159,216,0.12),rgba(30,74,108,0.08));">
-        <div style="display:flex;align-items:center;gap:16px;padding:8px 0 16px;">
-          <div style="font-size:72px;line-height:1;flex-shrink:0;filter:drop-shadow(0 0 12px rgba(58,159,216,0.5));" id="moonSymbol">🌕</div>
-          <div style="flex:1;">
-            <div style="font-size:20px;font-weight:700;margin-bottom:4px;" id="moonPhaseName">Calcolo…</div>
-            <div style="font-size:13px;color:var(--text2);margin-bottom:8px;"><strong id="moonIllumPct">—%</strong> illuminazione · <span id="moonAge" style="color:#f0843c;font-weight:600;">— gg</span></div>
-            <div style="height:8px;background:rgba(255,255,255,0.1);border-radius:4px;overflow:hidden;">
-              <div id="moonProgressBar" style="height:100%;background:linear-gradient(90deg,#3a9fd8,#4aaf5e);border-radius:4px;width:0%;transition:width 0.6s;"></div>
-            </div>
-            <div style="font-size:11px;color:var(--text3);margin-top:4px;"><span id="moonDateToday"></span></div>
-          </div>
-        </div>
-        <div style="font-size:10px;color:var(--text3);text-align:right;">Tocca per calendario completo →</div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;">
-        <div class="card" onclick="openAmbPopup('luna-piena')" style="text-align:center;padding:14px;cursor:pointer;">
-          <div style="font-size:28px;font-weight:800;color:#f0843c;" id="daysToFull">—</div>
-          <div style="font-size:12px;color:var(--text2);margin:2px 0;">🌕 Luna Piena</div>
-          <div style="font-size:11px;color:var(--text3);" id="dateFullMoon">—</div>
-          <div style="font-size:10px;color:var(--text3);margin-top:4px;">→ calendario</div>
-        </div>
-        <div class="card" onclick="openAmbPopup('luna-nuova')" style="text-align:center;padding:14px;cursor:pointer;">
-          <div style="font-size:28px;font-weight:800;color:#3a9fd8;" id="daysToNew">—</div>
-          <div style="font-size:12px;color:var(--text2);margin:2px 0;">🌑 Luna Nuova</div>
-          <div style="font-size:11px;color:var(--text3);" id="dateNewMoon">—</div>
-          <div style="font-size:10px;color:var(--text3);margin-top:4px;">→ calendario</div>
-        </div>
-      </div>
-      <div class="card" style="background:linear-gradient(135deg,rgba(74,175,94,0.08),rgba(58,159,216,0.06));border-color:rgba(74,175,94,0.2);">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
-          <div class="card-title">🌾 Consigli Lunari</div>
-          <button class="json-reload-btn" onclick="loadLunaJSON();event.stopPropagation();">🔄</button>
-        </div>
-        <div id="luna-consigli-6sezioni">
-          <div class="amb-sezione-card" onclick="openAmbPopup('luna-attivita')" style="cursor:pointer;">
-            <div class="amb-sezione-icon">📋</div><div class="amb-sezione-body"><div class="amb-sezione-title">ATTIVITÀ DI OGGI</div><div class="amb-sezione-val" id="lc-attivita">Calcolo…</div></div><div class="amb-arrow">›</div>
-          </div>
-          <div class="amb-sezione-card" onclick="openAmbPopup('luna-irrigazione')" style="cursor:pointer;">
-            <div class="amb-sezione-icon">💧</div><div class="amb-sezione-body"><div class="amb-sezione-title">IRRIGAZIONE</div><div class="amb-sezione-val" id="lc-irrigazione">—</div></div><div class="amb-arrow">›</div>
-          </div>
-          <div class="amb-sezione-card" onclick="openAmbPopup('luna-nutrizione')" style="cursor:pointer;">
-            <div class="amb-sezione-icon">🧪</div><div class="amb-sezione-body"><div class="amb-sezione-title">NUTRIZIONE</div><div class="amb-sezione-val" id="lc-nutrizione">—</div></div><div class="amb-arrow">›</div>
-          </div>
-          <div class="amb-sezione-card" onclick="openAmbPopup('luna-elettro')" style="cursor:pointer;">
-            <div class="amb-sezione-icon">⚡</div><div class="amb-sezione-body"><div class="amb-sezione-title">ELETTROCULTURA</div><div class="amb-sezione-val" id="lc-elettro">—</div></div><div class="amb-arrow">›</div>
-          </div>
-          <div class="amb-sezione-card" onclick="openAmbPopup('luna-avviso')" style="cursor:pointer;border-color:rgba(255,152,0,0.3);">
-            <div class="amb-sezione-icon">⚠️</div><div class="amb-sezione-body"><div class="amb-sezione-title" style="color:var(--orange);">AVVISO</div><div class="amb-sezione-val" id="lc-avviso">—</div></div><div class="amb-arrow">›</div>
-          </div>
-          <div class="amb-sezione-card" onclick="openAmbPopup('luna-previsione')" style="cursor:pointer;">
-            <div class="amb-sezione-icon">🔭</div><div class="amb-sezione-body"><div class="amb-sezione-title">PREVISIONE</div><div class="amb-sezione-val" id="lc-previsione">—</div></div><div class="amb-arrow">›</div>
-          </div>
-        </div>
-        <div style="font-size:11px;color:var(--text3);margin-top:8px;" id="luna-json-meta">—</div>
-        <div id="luna-json-content" style="display:none;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Prossimi 7 giorni</div>
-        <div id="moonStrip" style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Le 8 fasi lunari</div>
-        <table style="width:100%;border-collapse:collapse;font-size:13px;" id="phasesTable"><tbody></tbody></table>
-      </div>
-      <div class="card" onclick="openAmbPopup('luna-piante')" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.08),rgba(74,175,94,0.05));">
-        <div class="card-title" style="color:var(--purple);">🌱 Correlazione Luna-Piante</div>
-        <div style="font-size:13px;color:var(--text2);line-height:1.5;" id="luna-piante-preview">Analisi per ogni pianta in base alla fase lunare attuale…</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per analisi completa →</div>
-      </div>
-      <div class="card">
-        <div class="card-title">Ciclo corrente</div>
-        <div id="moonCycleInfo" style="font-size:13px;color:var(--text2);line-height:1.8;"></div>
+  <!-- ══════════════════════════════════════════
+       3. CALENDARIO LUNARE
+  ══════════════════════════════════════════ -->
+  <div class="amb-section-header">🌙 Calendario Lunare</div>
+  <div class="card" onclick="openDayPopup(new Date())" style="cursor:pointer;background:linear-gradient(135deg,rgba(58,159,216,0.12),rgba(30,74,108,0.08));">
+    <div style="display:flex;align-items:center;gap:16px;padding:8px 0 16px;">
+      <div style="font-size:72px;line-height:1;flex-shrink:0;filter:drop-shadow(0 0 12px rgba(58,159,216,0.5));" id="moonSymbol">🌕</div>
+      <div style="flex:1;">
+        <div style="font-size:20px;font-weight:700;margin-bottom:4px;" id="moonPhaseName">Calcolo…</div>
+        <div style="font-size:13px;color:var(--text2);margin-bottom:8px;"><strong id="moonIllumPct">—%</strong> illuminazione · <span id="moonAge" style="color:#f0843c;font-weight:600;">— gg</span></div>
+        <div style="height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;"><div id="moonBar" style="height:100%;background:linear-gradient(90deg,#3a9fd8,#4aaf5e);border-radius:3px;width:50%;"></div></div>
       </div>
     </div>
-    <!-- elementi hidden per compatibilità renderLunarSection -->
-    <div id="agriAdviceMain" style="display:none;"></div>
-    <div id="agriAdviceDetail" style="display:none;"></div>
-    <div id="agriAdviceTags" style="display:none;"></div>
-    <div id="agriAdviceSerra" style="display:none;"></div>
+    <div style="font-size:10px;color:var(--text3);text-align:right;">Tocca per tutti i dettagli del giorno →</div>
+  </div>
+  <!-- elementi hidden per compatibilità renderLunarSection -->
+  <div id="luna-phase-name"   style="display:none;"></div>
+  <div id="luna-illum"        style="display:none;"></div>
+  <div id="luna-age"          style="display:none;"></div>
+  <div id="luna-cons"         style="display:none;"></div>
+  <div id="luna-cons-element" style="display:none;"></div>
+  <div id="luna-advice"       style="display:none;"></div>
+  <div id="luna-next-full"    style="display:none;"></div>
+  <div id="luna-next-new"     style="display:none;"></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div class="card" onclick="openAmbPopup('luna-piena')" style="text-align:center;cursor:pointer;">
+      <div style="font-size:26px;font-weight:800;color:#f0843c;" id="cal-days-full">—</div>
+      <div style="font-size:11px;color:var(--text2);">🌕 Luna Piena</div>
+      <div style="font-size:11px;color:var(--text3);" id="cal-date-full">—</div>
+    </div>
+    <div class="card" onclick="openAmbPopup('luna-nuova')" style="text-align:center;cursor:pointer;">
+      <div style="font-size:26px;font-weight:800;color:#3a9fd8;" id="cal-days-new">—</div>
+      <div style="font-size:11px;color:var(--text2);">🌑 Luna Nuova</div>
+      <div style="font-size:11px;color:var(--text3);" id="cal-date-new">—</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">📅 Prossimi 14 giorni</div>
+    <div id="lunar-strip" style="display:flex;gap:5px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;"></div>
+  </div>
+  <div class="card">
+    <div class="card-title" style="margin-bottom:6px;">🌾 Consiglio per questa fase</div>
+    <div id="lunar-phase-advice" style="font-size:13px;color:var(--text2);line-height:1.7;"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Le 8 fasi — cosa fare</div>
+    <div id="lunar-phases-table" style="display:flex;flex-direction:column;gap:6px;"></div>
+  </div>
+  <!-- alias id per compatibilità cal-panel-lunare -->
+  <div id="cal-moon-emoji"  style="display:none;"></div>
+  <div id="cal-moon-name"   style="display:none;"></div>
+  <div id="cal-moon-illum"  style="display:none;"></div>
+  <div id="cal-moon-age"    style="display:none;"></div>
+  <div id="cal-moon-bar"    style="display:none;"></div>
+  <div id="cal-lunar-strip" style="display:none;"></div>
+  <div id="cal-lunar-advice" style="display:none;"></div>
+  <div id="cal-phases-table" style="display:none;"></div>
 
-
-  <!-- ══ BIODINAMICA ══ -->
-  <div class="amb-section-header">🌱 Biodinamica</div>
-<div>
-      <div id="bio-today-banner" class="bio-today-banner bio-banner-frutto" onclick="openAmbPopup('bio-oggi')" style="cursor:pointer;">
-        <div class="bio-today-icon" id="bio-today-icon">🍊</div>
-        <div>
-          <div class="bio-today-type" id="bio-today-type">Giorno Frutto</div>
-          <div class="bio-today-date" id="bio-today-date">—</div>
-          <div class="bio-today-advice" id="bio-today-advice">—</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-title">📅 Prossimi 3 giorni</div>
-        <div id="bio-3giorni" style="display:flex;flex-direction:column;gap:8px;"></div>
-      </div>
-      <div class="card" style="margin-bottom:12px">
-        <div class="card-title">♐ Costellazione lunare attuale</div>
-        <div class="bio-constellation-card" style="background:transparent;border:none;padding:0">
-          <div class="bio-const-row">
-            <div class="bio-const-icon" id="bio-const-icon">♐</div>
-            <div><div class="bio-const-name" id="bio-const-name">—</div><div class="bio-const-element" id="bio-const-element">—</div></div>
-          </div>
-        </div>
-        <div style="margin-top:10px;padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:6px;border-left:3px solid rgba(76,175,118,0.4);">
-          <div style="font-size:11px;color:var(--text3);line-height:1.5;">⚙️ <strong>Algoritmo:</strong> Posizione Luna calcolata con formule di Jean Meeus. Costellazioni tradizione Thun/Steiner.</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="bio-cal-header">
-          <div class="bio-cal-title" id="bio-cal-month">—</div>
-          <div class="bio-cal-nav">
-            <button class="bio-nav-btn" onclick="bioChangeMonth(-1)">‹</button>
-            <button class="bio-nav-btn" onclick="bioChangeMonth(0)" title="Oggi">●</button>
-            <button class="bio-nav-btn" onclick="bioChangeMonth(1)">›</button>
-          </div>
-        </div>
-        <div class="bio-grid-header">
-          <div class="bio-grid-header-cell">L</div><div class="bio-grid-header-cell">M</div>
-          <div class="bio-grid-header-cell">M</div><div class="bio-grid-header-cell">G</div>
-          <div class="bio-grid-header-cell">V</div><div class="bio-grid-header-cell">S</div>
-          <div class="bio-grid-header-cell">D</div>
-        </div>
-        <div class="bio-grid" id="bio-grid"></div>
-        <div class="bio-legend">
-          <div class="bio-legend-item"><div class="bio-legend-dot dot-frutto"></div>Frutto 🍊</div>
-          <div class="bio-legend-item"><div class="bio-legend-dot dot-fiore"></div>Fiore 🌸</div>
-          <div class="bio-legend-item"><div class="bio-legend-dot dot-radice"></div>Radice 🌿</div>
-          <div class="bio-legend-item"><div class="bio-legend-dot dot-foglia"></div>Foglia 💧</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-title">🌿 Consigli per la tua serra oggi</div>
-        <div class="bio-tip-list" id="bio-tip-list"><div class="bio-tip-item tip-frutto">⏳ Calcolo in corso…</div></div>
-      </div>
-      <div class="card" onclick="openAmbPopup('bio-elettro')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,152,0,0.08),rgba(74,175,94,0.05));">
-        <div class="card-title" style="color:var(--orange);">⚡ Correlazione Bio-Elettrocultura</div>
-        <div style="font-size:13px;color:var(--text2);line-height:1.5;" id="bio-elettro-preview">Interazioni tra giorno biodinamico e tecniche attive…</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per analisi completa →</div>
-      </div>
-      <div class="bio-detail-popup hidden" id="bio-popup" onclick="closeBioPopup(event)">
-        <div class="bio-detail-sheet">
-          <div class="bio-detail-handle"></div>
-          <button class="bio-detail-close" onclick="closeBioPopupDirect()">✕</button>
-          <div id="bio-popup-content"></div>
-        </div>
+  <!-- ══════════════════════════════════════════
+       4. CALENDARIO BIODINAMICO
+  ══════════════════════════════════════════ -->
+  <div class="amb-section-header">🌱 Calendario Biodinamico</div>
+  <div id="bio-today-banner" class="bio-today-banner bio-banner-frutto" onclick="openDayPopup(new Date())" style="cursor:pointer;margin-bottom:10px;">
+    <div class="bio-today-icon" id="bio-today-icon">🍊</div>
+    <div>
+      <div class="bio-today-type" id="bio-today-type">—</div>
+      <div class="bio-today-date" id="bio-today-date">—</div>
+      <div class="bio-today-advice" id="bio-today-advice">—</div>
+    </div>
+  </div>
+  <!-- alias per renderBioCalendar -->
+  <div id="cal-bio-banner"  style="display:none;"></div>
+  <div id="cal-bio-icon"    style="display:none;"></div>
+  <div id="cal-bio-type"    style="display:none;"></div>
+  <div id="cal-bio-date"    style="display:none;"></div>
+  <div id="cal-bio-advice"  style="display:none;"></div>
+  <div class="card">
+    <div class="bio-cal-header">
+      <div class="bio-cal-title" id="bio-cal-month-title">—</div>
+      <div class="bio-cal-nav">
+        <button class="bio-nav-btn" onclick="bioChangeMonth(-1)">‹</button>
+        <button class="bio-nav-btn" onclick="bioChangeMonth(0)">●</button>
+        <button class="bio-nav-btn" onclick="bioChangeMonth(1)">›</button>
       </div>
     </div>
+    <div class="bio-grid-header">
+      <div class="bio-grid-header-cell">L</div><div class="bio-grid-header-cell">M</div>
+      <div class="bio-grid-header-cell">M</div><div class="bio-grid-header-cell">G</div>
+      <div class="bio-grid-header-cell">V</div><div class="bio-grid-header-cell">S</div>
+      <div class="bio-grid-header-cell">D</div>
+    </div>
+    <div class="bio-grid" id="bio-cal-grid-main"></div>
+    <div class="bio-legend">
+      <div class="bio-legend-item"><div class="bio-legend-dot dot-frutto"></div>Frutto 🍊</div>
+      <div class="bio-legend-item"><div class="bio-legend-dot dot-fiore"></div>Fiore 🌸</div>
+      <div class="bio-legend-item"><div class="bio-legend-dot dot-radice"></div>Radice 🌿</div>
+      <div class="bio-legend-item"><div class="bio-legend-dot dot-foglia"></div>Foglia 💧</div>
+    </div>
+  </div>
+  <!-- alias per cal-bio-grid (renderCalBio) -->
+  <div id="cal-bio-grid"    style="display:none;"></div>
+  <div id="cal-bio-month"   style="display:none;"></div>
+  <div class="card" onclick="openAmbPopup('cal-preparazioni')" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.08),rgba(74,175,94,0.05));">
+    <div class="card-title" style="color:var(--purple);">🧘 Preparazioni Biodinamiche</div>
+    <div id="cal-bio-prep" style="font-size:13px;color:var(--text2);line-height:1.6;"></div>
+    <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per dettagli →</div>
+  </div>
+  <div class="card" onclick="openAmbPopup('cal-compostaggio')" style="cursor:pointer;">
+    <div class="card-title">♻️ Compostaggio Ottimale</div>
+    <div id="cal-bio-compost" style="font-size:13px;color:var(--text2);line-height:1.6;"></div>
+    <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per calendario →</div>
+  </div>
 
-
-
-  <!-- ══ SEMINE & TRAPIANTI ══ -->
+  <!-- ══════════════════════════════════════════
+       5. CALENDARIO SEMINE E TRAPIANTI
+  ══════════════════════════════════════════ -->
   <div class="amb-section-header">🌾 Semine &amp; Trapianti</div>
-  <div>
-    <!-- Card semaforo oggi -->
-    <div class="card" onclick="openAmbPopup('semine-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(74,175,94,0.1),rgba(76,175,80,0.06));">
-      <div class="card-title" style="color:var(--green3);">🌱 Favorevole oggi?</div>
-      <div style="display:flex;align-items:center;gap:14px;margin:8px 0;">
-        <div style="font-size:44px;" id="semine-oggi-emoji">⏳</div>
-        <div>
-          <div style="font-size:16px;font-weight:700;" id="semine-oggi-label">Calcolo…</div>
-          <div style="font-size:12px;color:var(--text2);margin-top:4px;" id="semine-oggi-motivo">—</div>
-        </div>
+  <div class="card" onclick="openDayPopup(new Date())" style="cursor:pointer;background:linear-gradient(135deg,rgba(74,175,94,0.1),rgba(76,175,80,0.06));">
+    <div class="card-title" style="color:var(--green3);">🌱 Favorevole oggi per seminare?</div>
+    <div style="display:flex;align-items:center;gap:12px;margin:8px 0;">
+      <div style="font-size:40px;" id="cal-sem-emoji">⏳</div>
+      <div>
+        <div style="font-size:15px;font-weight:700;" id="cal-sem-label">Calcolo…</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:3px;" id="cal-sem-motivo">—</div>
       </div>
-      <div style="font-size:10px;color:var(--text3);">Tocca per dettaglio varietà →</div>
     </div>
-    <!-- Le 10 piante: fase attuale -->
-    <div class="card">
-      <div class="card-title">🌿 Fase attuale — 10 Varietà</div>
-      <div id="semine-piante-list" style="display:flex;flex-direction:column;gap:6px;"></div>
-    </div>
+    <div style="font-size:10px;color:var(--text3);">Tocca per dettaglio completo →</div>
+  </div>
+  <div class="card">
+    <div class="card-title">🌿 Le 10 varietà — stato attuale</div>
+    <div id="cal-sem-piante" style="display:flex;flex-direction:column;gap:6px;"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">📅 Giorni favorevoli — prossime 2 settimane</div>
+    <div id="cal-sem-strip" style="display:flex;flex-direction:column;gap:5px;"></div>
+  </div>
+  <div class="card" onclick="openAmbPopup('cal-thun')" style="cursor:pointer;">
+    <div class="card-title">📖 Metodo Maria Thun</div>
+    <div style="font-size:12px;color:var(--text2);line-height:1.6;">Il Lunario delle Semine di Maria Thun correlato col giorno biodinamico. Tocca per guida completa.</div>
   </div>
 
-  <!-- ══ TRATTAMENTI BIOLOGICI ══ -->
+  <!-- ══════════════════════════════════════════
+       6. CALENDARIO TRATTAMENTI
+  ══════════════════════════════════════════ -->
   <div class="amb-section-header">🧪 Trattamenti Biologici</div>
-  <div>
-    <div class="card" onclick="openAmbPopup('tratt-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.1),rgba(156,39,176,0.06));">
-      <div class="card-title" style="color:var(--purple);">🧪 Trattamento ottimale oggi</div>
-      <div style="font-size:14px;font-weight:600;margin:6px 0;" id="tratt-oggi-label">Calcolo…</div>
-      <div style="font-size:12px;color:var(--text2);" id="tratt-oggi-desc">—</div>
-      <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per ricetta completa →</div>
-    </div>
-    <div class="card" onclick="openAmbPopup('tratt-melassa')" style="cursor:pointer;">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="font-size:22px;">🍯</div>
-        <div style="flex:1;">
-          <div style="font-size:13px;font-weight:700;">Melassa — ogni 15 giorni</div>
-          <div style="font-size:11px;color:var(--text2);">1 ml/L in bottiglia separata · Giorni Radice/Foglia</div>
-        </div><div style="color:var(--text3);">›</div>
-      </div>
-    </div>
-    <div class="card" onclick="openAmbPopup('tratt-ortiche')" style="cursor:pointer;">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="font-size:22px;">🌿</div>
-        <div style="flex:1;">
-          <div style="font-size:13px;font-weight:700;">Infuso Ortiche — 1x al mese</div>
-          <div style="font-size:11px;color:var(--text2);">100-150g/L · macera 3-7gg · diluire 1:10 · Giorni Foglia</div>
-        </div><div style="color:var(--text3);">›</div>
-      </div>
-    </div>
-    <div class="card" onclick="openAmbPopup('tratt-banana')" style="cursor:pointer;">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="font-size:22px;">🍌</div>
-        <div style="flex:1;">
-          <div style="font-size:13px;font-weight:700;">Tè Banana + Cenere — ogni 2 sett.</div>
-          <div style="font-size:11px;color:var(--text2);">Bolli 3-4 bucce 15min · filtra · 1 cucch. cenere · 1:5 · Giorni Frutto/Fiore</div>
-        </div><div style="color:var(--text3);">›</div>
-      </div>
-    </div>
-    <div class="card" onclick="openAmbPopup('tratt-humus')" style="cursor:pointer;">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="font-size:22px;">🦠</div>
-        <div style="flex:1;">
-          <div style="font-size:13px;font-weight:700;">Rinnovo Humus — 1x al mese</div>
-          <div style="font-size:11px;color:var(--text2);">5L + 100-150g BioBizz Worm Humus · insieme a ortiche · Giorni Radice</div>
-        </div><div style="color:var(--text3);">›</div>
-      </div>
-    </div>
-    <div class="card" onclick="openAmbPopup('tratt-miscela')" style="cursor:pointer;">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="font-size:22px;">🥚</div>
-        <div style="flex:1;">
-          <div style="font-size:13px;font-weight:700;">Miscela Organica — 1x al mese</div>
-          <div style="font-size:11px;color:var(--text2);">Gusci uovo + banana + caffè essiccati · 1 cucchiaio/vaso · Giorni Radice</div>
-        </div><div style="color:var(--text3);">›</div>
-      </div>
-    </div>
+  <div class="card" onclick="openDayPopup(new Date())" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.1),rgba(156,39,176,0.06));">
+    <div class="card-title" style="color:var(--purple);">🧪 Trattamento ottimale oggi</div>
+    <div style="font-size:14px;font-weight:600;margin:6px 0;" id="cal-tratt-label">Calcolo…</div>
+    <div style="font-size:12px;color:var(--text2);" id="cal-tratt-desc">—</div>
+    <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per ricetta completa →</div>
+  </div>
+  <div class="card">
+    <div class="card-title">📆 Schema mensile trattamenti</div>
+    <div id="cal-tratt-schema" style="display:flex;flex-direction:column;gap:8px;"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">🛡️ Difesa integrata — Prevenzione</div>
+    <div id="cal-tratt-difesa" style="display:flex;flex-direction:column;gap:6px;"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">📅 Prossimi 7 giorni — finestre ideali</div>
+    <div id="cal-tratt-finestre" style="display:flex;flex-direction:column;gap:5px;"></div>
   </div>
 
-  <!-- ══ FOTOPERIODO ══ -->
+  <!-- ══════════════════════════════════════════
+       7. CALENDARIO FOTOPERIODO
+  ══════════════════════════════════════════ -->
   <div class="amb-section-header">☀️ Fotoperiodo</div>
-  <div>
-    <div class="card" onclick="openAmbPopup('foto-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,193,7,0.1),rgba(255,152,0,0.06));">
-      <div class="card-title" style="color:#ffd54f;">☀️ Fotoperiodo oggi — Caserta</div>
-      <div style="display:flex;align-items:center;gap:16px;margin:8px 0;">
-        <div style="font-size:44px;">☀️</div>
-        <div>
-          <div style="font-size:24px;font-weight:800;color:#ffd54f;" id="foto-ore-oggi">—h</div>
-          <div style="font-size:12px;color:var(--text2);" id="foto-alba-tramonto">—</div>
-        </div>
+  <div class="card" onclick="openDayPopup(new Date())" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,193,7,0.1),rgba(255,152,0,0.06));">
+    <div class="card-title" style="color:#ffd54f;">☀️ Fotoperiodo oggi — 41.10°N</div>
+    <div style="display:flex;align-items:center;gap:14px;margin:8px 0;">
+      <div style="font-size:40px;">☀️</div>
+      <div>
+        <div style="font-size:22px;font-weight:800;color:#ffd54f;" id="cal-foto-ore">—h</div>
+        <div style="font-size:12px;color:var(--text2);" id="cal-foto-alba-tr">— → —</div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;">
-        <div style="background:rgba(74,175,94,0.1);border-radius:8px;padding:8px;text-align:center;">
-          <div style="font-size:11px;font-weight:700;color:var(--green3);">⚡ AUTOFIORENTI</div>
-          <div style="font-size:12px;color:var(--text2);margin-top:4px;" id="foto-auto-txt">—</div>
-        </div>
-        <div style="background:rgba(171,71,188,0.1);border-radius:8px;padding:8px;text-align:center;">
-          <div style="font-size:11px;font-weight:700;color:var(--purple);">🌸 FEMMINIZZATE</div>
-          <div style="font-size:12px;color:var(--text2);margin-top:4px;" id="foto-femm-txt">—</div>
-        </div>
-      </div>
-      <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per dettaglio →</div>
     </div>
-    <!-- Grafico annuale ore luce -->
-    <div class="card">
-      <div class="card-title">📊 Ore di luce — Anno a Caserta</div>
-      <div id="foto-grafico" style="display:flex;flex-direction:column;gap:3px;padding-top:4px;"></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;">
+      <div style="background:rgba(74,175,94,0.1);border-radius:8px;padding:8px;text-align:center;">
+        <div style="font-size:10px;font-weight:700;color:var(--green3);">⚡ AUTOFIORENTI</div>
+        <div style="font-size:11px;color:var(--text2);margin-top:3px;" id="cal-foto-auto">—</div>
+      </div>
+      <div style="background:rgba(171,71,188,0.1);border-radius:8px;padding:8px;text-align:center;">
+        <div style="font-size:10px;font-weight:700;color:var(--purple);">🌸 FEMMINIZZATE</div>
+        <div style="font-size:11px;color:var(--text2);margin-top:3px;" id="cal-foto-femm">—</div>
+      </div>
     </div>
   </div>
+  <div class="card">
+    <div class="card-title">📊 Ore di luce ogni mese — Caserta</div>
+    <div id="cal-foto-chart" style="display:flex;flex-direction:column;gap:4px;"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">📅 Prossimi 30 giorni</div>
+    <div id="cal-foto-30g" style="display:flex;flex-direction:column;gap:3px;font-size:12px;"></div>
+  </div>
 
-  <!-- ══ FENOLOGICO ══ -->
+  <!-- ══════════════════════════════════════════
+       8. CALENDARIO FENOLOGICO
+  ══════════════════════════════════════════ -->
   <div class="amb-section-header">🌸 Fenologico</div>
-  <div>
-    <div class="card" style="background:linear-gradient(135deg,rgba(255,152,0,0.1),rgba(255,87,34,0.06));">
-      <div class="card-title" style="color:var(--orange);">🌸 Fase attuale</div>
-      <div style="font-size:13px;color:var(--text2);margin:4px 0;" id="fenol-fase-oggi">Calcolo…</div>
-    </div>
-    <div class="card">
-      <div class="card-title">🌿 Fase per pianta</div>
-      <div id="fenol-piante" style="display:flex;flex-direction:column;gap:5px;"></div>
-    </div>
-    <div class="card">
-      <div class="card-title">📅 Calendario stagionale</div>
-      <div id="fenol-stagionale" style="display:flex;flex-direction:column;gap:6px;padding-top:4px;"></div>
-    </div>
+  <div class="card" onclick="openDayPopup(new Date())" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,152,0,0.1),rgba(255,87,34,0.06));">
+    <div class="card-title" style="color:var(--orange);">🌸 Fase fenologica attuale</div>
+    <div style="font-size:14px;font-weight:600;margin:6px 0;" id="cal-fenol-fase">Calcolo…</div>
+    <div style="font-size:12px;color:var(--text2);" id="cal-fenol-desc">—</div>
+    <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per impatto sulle piante →</div>
+  </div>
+  <div class="card">
+    <div class="card-title">🌿 Fase per varietà</div>
+    <div id="cal-fenol-piante" style="display:flex;flex-direction:column;gap:5px;"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">📅 Calendario stagionale 2026</div>
+    <div id="cal-fenol-anno" style="display:flex;flex-direction:column;gap:5px;"></div>
   </div>
 
-  <!-- ══ CALENDARIO UNIFICATO ══ -->
-  <div class="amb-section-header" style="cursor:pointer;" onclick="toggleCalendario()">
-    📅 Calendario Unificato
-    <span id="cal-toggle-arrow" style="float:right;font-size:14px;transition:transform 0.3s;">▼</span>
+  <!-- ══════════════════════════════════════════
+       9. CALENDARIO LAVORI AGRICOLI
+  ══════════════════════════════════════════ -->
+  <div class="amb-section-header">🔧 Lavori Agricoli</div>
+  <div class="card" onclick="openDayPopup(new Date())" style="cursor:pointer;background:linear-gradient(135deg,rgba(121,85,72,0.15),rgba(93,64,55,0.08));">
+    <div class="card-title" style="color:#bcaaa4;">🔧 Lavori consigliati oggi</div>
+    <div id="cal-lavori-oggi" style="font-size:13px;color:var(--text2);line-height:1.7;margin-top:6px;"></div>
+    <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per checklist completa →</div>
   </div>
-  <div id="cal-wrapper" style="display:none;">
+  <div class="card">
+    <div class="card-title">📅 Piano settimana</div>
+    <div id="cal-lavori-settimana" style="display:flex;flex-direction:column;gap:6px;"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">📋 Piano mensile — Terra Nuova 2026</div>
+    <div id="cal-lavori-mese" style="display:flex;flex-direction:column;gap:5px;"></div>
+  </div>
 
-    <!-- Sotto-tab bar -->
-    <div style="display:flex;overflow-x:auto;gap:6px;padding:0 2px 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch;position:sticky;top:56px;z-index:40;background:var(--bg);padding-top:6px;">
-      <button class="cal-subtab active" id="cst-oggi"       onclick="switchCalTab('oggi')">🌟 Oggi</button>
-      <button class="cal-subtab"        id="cst-lunare"     onclick="switchCalTab('lunare')">🌙 Lunare</button>
-      <button class="cal-subtab"        id="cst-bio"        onclick="switchCalTab('bio')">🌱 Biodin.</button>
-      <button class="cal-subtab"        id="cst-semine"     onclick="switchCalTab('semine')">🌾 Semine</button>
-      <button class="cal-subtab"        id="cst-tratt"      onclick="switchCalTab('tratt')">🧪 Tratt.</button>
-      <button class="cal-subtab"        id="cst-foto"       onclick="switchCalTab('foto')">☀️ Foto.</button>
-      <button class="cal-subtab"        id="cst-fenol"      onclick="switchCalTab('fenol')">🌸 Fenol.</button>
-      <button class="cal-subtab"        id="cst-lavori"     onclick="switchCalTab('lavori')">🔧 Lavori</button>
-      <button class="cal-subtab"        id="cst-gdd"        onclick="switchCalTab('gdd')">📈 GDD</button>
-      <button class="cal-subtab"        id="cst-gelo"       onclick="switchCalTab('gelo')">❄️ Gelo</button>
-      <button class="cal-subtab"        id="cst-matur"      onclick="switchCalTab('matur')">🍊 Matur.</button>
+  <!-- ══════════════════════════════════════════
+       10. CALENDARIO GDD
+  ══════════════════════════════════════════ -->
+  <div class="amb-section-header">📈 Gradi-Giorno (GDD)</div>
+  <div class="card" style="background:linear-gradient(135deg,rgba(58,159,216,0.1),rgba(30,74,108,0.06));">
+    <div class="card-title" style="color:var(--blue);">📈 GDD accumulati — Caserta 2026</div>
+    <div style="font-size:13px;color:var(--text3);margin-bottom:8px;">T base 10°C · Dati Open-Meteo · Anno 2026</div>
+    <div id="cal-gdd-loading" style="text-align:center;padding:16px;font-size:13px;color:var(--text3);">⏳ Calcolo GDD da Open-Meteo…</div>
+    <div id="cal-gdd-content" style="display:none;">
+      <div style="font-size:28px;font-weight:800;color:var(--blue);margin-bottom:4px;" id="cal-gdd-totale">—</div>
+      <div style="font-size:12px;color:var(--text3);">GDD accumulati dall'1 gennaio 2026</div>
+      <button onclick="loadGDD()" style="margin-top:10px;padding:6px 16px;background:var(--blue);border:none;border-radius:8px;color:#fff;font-size:12px;cursor:pointer;">🔄 Aggiorna</button>
     </div>
+  </div>
+  <div class="card">
+    <div class="card-title">🌿 GDD per varietà — previsione raccolta</div>
+    <div id="cal-gdd-piante" style="display:flex;flex-direction:column;gap:6px;"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">📊 GDD mensili 2026</div>
+    <div id="cal-gdd-chart" style="display:flex;flex-direction:column;gap:3px;"></div>
+  </div>
 
-    <!-- ─── OGGI ─── -->
-    <div class="cal-panel active" id="cal-panel-oggi">
-      <div class="card" style="background:linear-gradient(135deg,rgba(74,175,94,0.1),rgba(58,159,216,0.06));border-color:rgba(74,175,94,0.25);">
-        <div class="card-title" style="font-size:16px;">🌟 Riepilogo Integrato — <span id="cal-oggi-data">—</span></div>
-        <div id="cal-oggi-grid" style="display:flex;flex-direction:column;gap:8px;margin-top:10px;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">🤖 Consiglio AI Integrato</div>
-        <div id="cal-oggi-ai" style="font-size:13px;color:var(--text2);line-height:1.7;">⏳ Caricamento…</div>
-      </div>
-    </div>
-
-    <!-- ─── LUNARE ─── -->
-    <div class="cal-panel" id="cal-panel-lunare">
-      <div class="card" onclick="openAmbPopup('luna-fase')" style="cursor:pointer;background:linear-gradient(135deg,rgba(58,159,216,0.12),rgba(30,74,108,0.08));">
-        <div style="display:flex;align-items:center;gap:14px;padding:6px 0 12px;">
-          <div style="font-size:64px;line-height:1;filter:drop-shadow(0 0 10px rgba(58,159,216,0.5));" id="cal-moon-emoji">🌕</div>
-          <div style="flex:1;">
-            <div style="font-size:18px;font-weight:700;" id="cal-moon-name">—</div>
-            <div style="font-size:13px;color:var(--text2);margin:4px 0;"><strong id="cal-moon-illum">—</strong>% illuminazione · <span id="cal-moon-age" style="color:#f0843c;font-weight:600;">—</span> gg</div>
-            <div style="height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;"><div id="cal-moon-bar" style="height:100%;background:linear-gradient(90deg,#3a9fd8,#4aaf5e);border-radius:3px;width:0%;"></div></div>
-          </div>
-        </div>
-        <div style="font-size:10px;color:var(--text3);text-align:right;">Tocca per dettagli →</div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-        <div class="card" onclick="openAmbPopup('luna-piena')" style="text-align:center;cursor:pointer;">
-          <div style="font-size:26px;font-weight:800;color:#f0843c;" id="cal-days-full">—</div>
-          <div style="font-size:11px;color:var(--text2);">🌕 Luna Piena</div>
-          <div style="font-size:11px;color:var(--text3);" id="cal-date-full">—</div>
-        </div>
-        <div class="card" onclick="openAmbPopup('luna-nuova')" style="text-align:center;cursor:pointer;">
-          <div style="font-size:26px;font-weight:800;color:#3a9fd8;" id="cal-days-new">—</div>
-          <div style="font-size:11px;color:var(--text2);">🌑 Luna Nuova</div>
-          <div style="font-size:11px;color:var(--text3);" id="cal-date-new">—</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-title">Prossimi 14 giorni</div>
-        <div id="cal-lunar-strip" style="display:flex;gap:5px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">🌾 Consigli agricoli per fase</div>
-        <div id="cal-lunar-advice" style="font-size:13px;color:var(--text2);line-height:1.7;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Le 8 fasi — cosa fare</div>
-        <div id="cal-phases-table" style="display:flex;flex-direction:column;gap:6px;"></div>
+  <!-- ══════════════════════════════════════════
+       11. CALENDARIO GELO
+  ══════════════════════════════════════════ -->
+  <div class="amb-section-header">❄️ Rischio Gelo</div>
+  <div class="card" style="background:linear-gradient(135deg,rgba(96,165,250,0.1),rgba(59,130,246,0.06));">
+    <div class="card-title" style="color:#93c5fd;">❄️ Rischio Gelo — Caserta</div>
+    <div style="display:flex;align-items:center;gap:12px;margin:8px 0;">
+      <div style="font-size:36px;" id="cal-gelo-emoji">🌡️</div>
+      <div>
+        <div style="font-size:15px;font-weight:700;" id="cal-gelo-status">Calcolo…</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:3px;" id="cal-gelo-desc">—</div>
       </div>
     </div>
+  </div>
+  <div class="card">
+    <div class="card-title">📅 Statistiche gelo storiche — Caserta</div>
+    <div id="cal-gelo-stats" style="display:flex;flex-direction:column;gap:6px;"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">🌱 Finestra sicura coltivazione outdoor</div>
+    <div id="cal-gelo-finestra" style="font-size:13px;color:var(--text2);line-height:1.7;"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">⚠️ Avvisi automatici</div>
+    <div id="cal-gelo-avvisi" style="display:flex;flex-direction:column;gap:5px;"></div>
+  </div>
 
-    <!-- ─── BIODINAMICO ─── -->
-    <div class="cal-panel" id="cal-panel-bio">
-      <div id="cal-bio-banner" class="bio-today-banner bio-banner-frutto" onclick="openAmbPopup('bio-oggi')" style="cursor:pointer;margin-bottom:12px;">
-        <div class="bio-today-icon" id="cal-bio-icon">🍊</div>
-        <div>
-          <div class="bio-today-type" id="cal-bio-type">—</div>
-          <div class="bio-today-date" id="cal-bio-date">—</div>
-          <div class="bio-today-advice" id="cal-bio-advice">—</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="bio-cal-header">
-          <div class="bio-cal-title" id="cal-bio-month">—</div>
-          <div class="bio-cal-nav">
-            <button class="bio-nav-btn" onclick="calBioChangeMonth(-1)">‹</button>
-            <button class="bio-nav-btn" onclick="calBioChangeMonth(0)">●</button>
-            <button class="bio-nav-btn" onclick="calBioChangeMonth(1)">›</button>
-          </div>
-        </div>
-        <div class="bio-grid-header">
-          <div class="bio-grid-header-cell">L</div><div class="bio-grid-header-cell">M</div>
-          <div class="bio-grid-header-cell">M</div><div class="bio-grid-header-cell">G</div>
-          <div class="bio-grid-header-cell">V</div><div class="bio-grid-header-cell">S</div>
-          <div class="bio-grid-header-cell">D</div>
-        </div>
-        <div class="bio-grid" id="cal-bio-grid"></div>
-        <div class="bio-legend">
-          <div class="bio-legend-item"><div class="bio-legend-dot dot-frutto"></div>Frutto 🍊</div>
-          <div class="bio-legend-item"><div class="bio-legend-dot dot-fiore"></div>Fiore 🌸</div>
-          <div class="bio-legend-item"><div class="bio-legend-dot dot-radice"></div>Radice 🌿</div>
-          <div class="bio-legend-item"><div class="bio-legend-dot dot-foglia"></div>Foglia 💧</div>
-        </div>
-      </div>
-      <div class="card" onclick="openAmbPopup('cal-preparazioni')" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.08),rgba(74,175,94,0.05));">
-        <div class="card-title" style="color:var(--purple);">🧘 Preparazioni Biodinamiche</div>
-        <div id="cal-bio-prep" style="font-size:13px;color:var(--text2);line-height:1.6;"></div>
-        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per dettagli →</div>
-      </div>
-      <div class="card" onclick="openAmbPopup('cal-compostaggio')" style="cursor:pointer;">
-        <div class="card-title">♻️ Compostaggio Ottimale</div>
-        <div id="cal-bio-compost" style="font-size:13px;color:var(--text2);line-height:1.6;"></div>
-        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per calendario →</div>
-      </div>
-    </div>
+  <!-- ══════════════════════════════════════════
+       12. CALENDARIO MATURAZIONE
+  ══════════════════════════════════════════ -->
+  <div class="amb-section-header">🍊 Maturazione &amp; Raccolta</div>
+  <div class="card" style="background:linear-gradient(135deg,rgba(255,152,0,0.1),rgba(244,67,54,0.06));">
+    <div class="card-title" style="color:var(--orange);">🍊 Prossima raccolta</div>
+    <div id="cal-matur-prossima" style="font-size:14px;font-weight:700;margin:6px 0;color:var(--green3);">—</div>
+    <div id="cal-matur-desc" style="font-size:12px;color:var(--text2);">—</div>
+  </div>
+  <div class="card">
+    <div class="card-title">🌿 Calendario raccolte — tutte le varietà</div>
+    <div id="cal-matur-piante" style="display:flex;flex-direction:column;gap:6px;"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">🌙 Ottimizzazione luna × raccolta</div>
+    <div id="cal-matur-luna" style="font-size:13px;color:var(--text2);line-height:1.7;"></div>
+  </div>
+  <div class="card" onclick="openAmbPopup('cal-conservazione')" style="cursor:pointer;">
+    <div class="card-title">🫙 Conservazione e Concia</div>
+    <div style="font-size:12px;color:var(--text2);line-height:1.6;">Essiccazione 14 giorni · Concia 14 giorni in barattoli. Tocca per guida completa.</div>
+  </div>
 
-    <!-- ─── SEMINE ─── -->
-    <div class="cal-panel" id="cal-panel-semine">
-      <div class="card" onclick="openAmbPopup('cal-semine-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(74,175,94,0.1),rgba(76,175,80,0.06));">
-        <div class="card-title" style="color:var(--green3);">🌱 Favorevole oggi per seminare?</div>
-        <div style="display:flex;align-items:center;gap:12px;margin:8px 0;">
-          <div style="font-size:40px;" id="cal-sem-emoji">⏳</div>
-          <div>
-            <div style="font-size:15px;font-weight:700;" id="cal-sem-label">Calcolo…</div>
-            <div style="font-size:12px;color:var(--text2);margin-top:3px;" id="cal-sem-motivo">—</div>
-          </div>
-        </div>
-        <div style="font-size:10px;color:var(--text3);">Tocca per dettaglio varietà →</div>
-      </div>
-      <div class="card">
-        <div class="card-title">🌿 Le 10 varietà — stato attuale</div>
-        <div id="cal-sem-piante" style="display:flex;flex-direction:column;gap:6px;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">📅 Giorni favorevoli — prossime 2 settimane</div>
-        <div id="cal-sem-strip" style="display:flex;flex-direction:column;gap:5px;"></div>
-      </div>
-      <div class="card" onclick="openAmbPopup('cal-thun')" style="cursor:pointer;">
-        <div class="card-title">📖 Metodo Maria Thun</div>
-        <div style="font-size:12px;color:var(--text2);line-height:1.6;">Il Lunario delle Semine di Maria Thun correlato col giorno biodinamico. Tocca per guida completa.</div>
-      </div>
-    </div>
-
-    <!-- ─── TRATTAMENTI ─── -->
-    <div class="cal-panel" id="cal-panel-tratt">
-      <div class="card" onclick="openAmbPopup('cal-tratt-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.1),rgba(156,39,176,0.06));">
-        <div class="card-title" style="color:var(--purple);">🧪 Trattamento ottimale oggi</div>
-        <div style="font-size:14px;font-weight:600;margin:6px 0;" id="cal-tratt-label">Calcolo…</div>
-        <div style="font-size:12px;color:var(--text2);" id="cal-tratt-desc">—</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per ricetta completa →</div>
-      </div>
-      <div class="card">
-        <div class="card-title">📆 Schema mensile trattamenti</div>
-        <div id="cal-tratt-schema" style="display:flex;flex-direction:column;gap:8px;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">🛡️ Difesa integrata — Prevenzione</div>
-        <div id="cal-tratt-difesa" style="display:flex;flex-direction:column;gap:6px;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">📅 Prossimi 7 giorni — finestre ideali</div>
-        <div id="cal-tratt-finestre" style="display:flex;flex-direction:column;gap:5px;"></div>
-      </div>
-    </div>
-
-    <!-- ─── FOTOPERIODO ─── -->
-    <div class="cal-panel" id="cal-panel-foto">
-      <div class="card" onclick="openAmbPopup('cal-foto-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,193,7,0.1),rgba(255,152,0,0.06));">
-        <div class="card-title" style="color:#ffd54f;">☀️ Fotoperiodo oggi — 41.10°N</div>
-        <div style="display:flex;align-items:center;gap:14px;margin:8px 0;">
-          <div style="font-size:40px;">☀️</div>
-          <div>
-            <div style="font-size:22px;font-weight:800;color:#ffd54f;" id="cal-foto-ore">—h</div>
-            <div style="font-size:12px;color:var(--text2);" id="cal-foto-alba-tr">— → —</div>
-          </div>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;">
-          <div style="background:rgba(74,175,94,0.1);border-radius:8px;padding:8px;text-align:center;">
-            <div style="font-size:10px;font-weight:700;color:var(--green3);">⚡ AUTOFIORENTI</div>
-            <div style="font-size:11px;color:var(--text2);margin-top:3px;" id="cal-foto-auto">—</div>
-          </div>
-          <div style="background:rgba(171,71,188,0.1);border-radius:8px;padding:8px;text-align:center;">
-            <div style="font-size:10px;font-weight:700;color:var(--purple);">🌸 FEMMINIZZATE</div>
-            <div style="font-size:11px;color:var(--text2);margin-top:3px;" id="cal-foto-femm">—</div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-title">📊 Ore di luce ogni mese — Caserta</div>
-        <div id="cal-foto-chart" style="display:flex;flex-direction:column;gap:4px;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">📅 Prossimi 30 giorni</div>
-        <div id="cal-foto-30g" style="display:flex;flex-direction:column;gap:3px;font-size:12px;"></div>
-      </div>
-    </div>
-
-    <!-- ─── FENOLOGICO ─── -->
-    <div class="cal-panel" id="cal-panel-fenol">
-      <div class="card" onclick="openAmbPopup('cal-fenol-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,152,0,0.1),rgba(255,87,34,0.06));">
-        <div class="card-title" style="color:var(--orange);">🌸 Fase fenologica attuale</div>
-        <div style="font-size:14px;font-weight:600;margin:6px 0;" id="cal-fenol-fase">Calcolo…</div>
-        <div style="font-size:12px;color:var(--text2);" id="cal-fenol-desc">—</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per impatto sulle piante →</div>
-      </div>
-      <div class="card">
-        <div class="card-title">🌿 Fase per varietà</div>
-        <div id="cal-fenol-piante" style="display:flex;flex-direction:column;gap:5px;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">📅 Calendario stagionale 2026</div>
-        <div id="cal-fenol-anno" style="display:flex;flex-direction:column;gap:5px;"></div>
-      </div>
-    </div>
-
-    <!-- ─── LAVORI ─── -->
-    <div class="cal-panel" id="cal-panel-lavori">
-      <div class="card" onclick="openAmbPopup('cal-lavori-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(121,85,72,0.15),rgba(93,64,55,0.08));">
-        <div class="card-title" style="color:#bcaaa4;">🔧 Lavori consigliati oggi</div>
-        <div id="cal-lavori-oggi" style="font-size:13px;color:var(--text2);line-height:1.7;margin-top:6px;"></div>
-        <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per checklist completa →</div>
-      </div>
-      <div class="card">
-        <div class="card-title">📅 Piano settimana</div>
-        <div id="cal-lavori-settimana" style="display:flex;flex-direction:column;gap:6px;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">📋 Piano mensile — Terra Nuova 2026</div>
-        <div id="cal-lavori-mese" style="display:flex;flex-direction:column;gap:5px;"></div>
-      </div>
-    </div>
-
-    <!-- ─── GDD ─── -->
-    <div class="cal-panel" id="cal-panel-gdd">
-      <div class="card" style="background:linear-gradient(135deg,rgba(58,159,216,0.1),rgba(30,74,108,0.06));">
-        <div class="card-title" style="color:var(--blue);">📈 Gradi-Giorno (GDD) — Caserta</div>
-        <div style="font-size:13px;color:var(--text3);margin-bottom:8px;">T base 10°C · Dati Open-Meteo · Anno 2026</div>
-        <div id="cal-gdd-loading" style="text-align:center;padding:16px;font-size:13px;color:var(--text3);">⏳ Calcolo GDD da Open-Meteo…</div>
-        <div id="cal-gdd-content" style="display:none;">
-          <div style="font-size:28px;font-weight:800;color:var(--blue);margin-bottom:4px;" id="cal-gdd-totale">—</div>
-          <div style="font-size:12px;color:var(--text3);">GDD accumulati dall'1 gennaio 2026</div>
-          <button onclick="loadGDD()" style="margin-top:10px;padding:6px 16px;background:var(--blue);border:none;border-radius:8px;color:#fff;font-size:12px;cursor:pointer;">🔄 Aggiorna</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-title">🌿 GDD per varietà — previsione raccolta</div>
-        <div id="cal-gdd-piante" style="display:flex;flex-direction:column;gap:6px;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">📊 GDD mensili 2026</div>
-        <div id="cal-gdd-chart" style="display:flex;flex-direction:column;gap:3px;"></div>
-      </div>
-    </div>
-
-    <!-- ─── GELO ─── -->
-    <div class="cal-panel" id="cal-panel-gelo">
-      <div class="card" style="background:linear-gradient(135deg,rgba(96,165,250,0.1),rgba(59,130,246,0.06));">
-        <div class="card-title" style="color:#93c5fd;">❄️ Rischio Gelo — Caserta</div>
-        <div style="display:flex;align-items:center;gap:12px;margin:8px 0;">
-          <div style="font-size:36px;" id="cal-gelo-emoji">🌡️</div>
-          <div>
-            <div style="font-size:15px;font-weight:700;" id="cal-gelo-status">Calcolo…</div>
-            <div style="font-size:12px;color:var(--text2);margin-top:3px;" id="cal-gelo-desc">—</div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-title">📅 Statistiche gelo storiche — Caserta</div>
-        <div id="cal-gelo-stats" style="display:flex;flex-direction:column;gap:6px;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">🌱 Finestra sicura coltivazione outdoor</div>
-        <div id="cal-gelo-finestra" style="font-size:13px;color:var(--text2);line-height:1.7;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">⚠️ Avvisi automatici</div>
-        <div id="cal-gelo-avvisi" style="display:flex;flex-direction:column;gap:5px;"></div>
-      </div>
-    </div>
-
-    <!-- ─── MATURAZIONE ─── -->
-    <div class="cal-panel" id="cal-panel-matur">
-      <div class="card" style="background:linear-gradient(135deg,rgba(255,152,0,0.1),rgba(244,67,54,0.06));">
-        <div class="card-title" style="color:var(--orange);">🍊 Maturazione — Prossima raccolta</div>
-        <div id="cal-matur-prossima" style="font-size:14px;font-weight:700;margin:6px 0;color:var(--green3);">—</div>
-        <div id="cal-matur-desc" style="font-size:12px;color:var(--text2);">—</div>
-      </div>
-      <div class="card">
-        <div class="card-title">🌿 Calendario raccolte — tutte le varietà</div>
-        <div id="cal-matur-piante" style="display:flex;flex-direction:column;gap:6px;"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">🌙 Ottimizzazione luna × raccolta</div>
-        <div id="cal-matur-luna" style="font-size:13px;color:var(--text2);line-height:1.7;"></div>
-      </div>
-      <div class="card" onclick="openAmbPopup('cal-conservazione')" style="cursor:pointer;">
-        <div class="card-title">🫙 Conservazione e Concia</div>
-        <div style="font-size:12px;color:var(--text2);line-height:1.6;">Essiccazione 14 giorni · Concia 14 giorni in barattoli. Tocca per guida completa.</div>
-      </div>
-    </div>
-
-  </div><!-- /cal-wrapper -->
-
+  <!-- alias pannelli cal-panel-* per compatibilità JS (display:none) -->
+  <div id="cal-panel-oggi"   style="display:none;"><div id="cal-oggi-data"></div><div id="cal-oggi-grid"></div></div>
+  <div id="cal-panel-lunare" style="display:none;"></div>
+  <div id="cal-panel-bio"    style="display:none;"></div>
+  <div id="cal-panel-semine" style="display:none;"></div>
+  <div id="cal-panel-tratt"  style="display:none;"></div>
+  <div id="cal-panel-foto"   style="display:none;"></div>
+  <div id="cal-panel-fenol"  style="display:none;"></div>
+  <div id="cal-panel-lavori" style="display:none;"></div>
+  <div id="cal-panel-gdd"    style="display:none;"></div>
+  <div id="cal-panel-gelo"   style="display:none;"></div>
+  <div id="cal-panel-matur"  style="display:none;"></div>
 
 </section>
 
@@ -2950,8 +2705,8 @@ function getDayType(date) {
 let bioViewYear, bioViewMonth;
 
 function bioChangeMonth(delta) {
-  if (delta === 0) { // reset a oggi
-    const now = new Date();
+  if (delta === 0) {
+    var now = new Date();
     bioViewYear = now.getFullYear();
     bioViewMonth = now.getMonth();
   } else {
@@ -2960,6 +2715,28 @@ function bioChangeMonth(delta) {
     if (bioViewMonth > 11) { bioViewMonth = 0; bioViewYear++; }
   }
   renderBioCalendar();
+  // Aggiorna anche griglia nella pagina scorrevole Ambiente con mese selezionato
+  var grid = document.getElementById('bio-cal-grid-main');
+  if (grid) {
+    var year = bioViewYear, month = bioViewMonth;
+    var today = new Date(); var todayStr = today.toISOString().slice(0,10);
+    var firstDay = new Date(year, month, 1);
+    var startDow = firstDay.getDay(); if (startDow === 0) startDow = 7;
+    var daysInMonth = new Date(year, month+1, 0).getDate();
+    var cells = '';
+    for (var i=1; i<startDow; i++) cells += '<div class="bio-cell empty"></div>';
+    for (var d=1; d<=daysInMonth; d++) {
+      var date2 = new Date(year, month, d);
+      var ct2 = getDayType(date2); var bioT2 = DAY_TYPES[ct2.type];
+      var ds2 = date2.toISOString().slice(0,10);
+      var isToday2 = ds2 === todayStr;
+      cells += '<div class="bio-cell day-'+ct2.type+(isToday2?' today':'')+'" onclick="openCalBioDayPopup('+year+','+month+','+d+')" title="'+bioT2.label+'">'+d+'</div>';
+    }
+    grid.innerHTML = cells;
+    var MONTHS = ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
+    var titleEl = document.getElementById('bio-cal-month-title');
+    if (titleEl) titleEl.textContent = MONTHS[month] + ' ' + year;
+  }
 }
 
 const MONTH_IT = ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
@@ -4738,33 +4515,195 @@ function _doLoadWeather() {
 }
 
 function _doRenderLunar() {
-  // Chiama renderLunarSection originale (definita prima nel codice)
   if (typeof renderLunarSection === 'function') {
-    renderLunarSection();
-    // Post-render: rendi striscia e tabella cliccabili
-    setTimeout(() => {
-      const strip = document.getElementById('moonStrip');
-      if(strip) strip.querySelectorAll('div').forEach((el,i)=>{
-        if(el.children.length>0){ el.style.cursor='pointer'; el.onclick=()=>openForecastPopup(i); }
-      });
-      const table=document.getElementById('phasesTable');
-      if(table){ const codes=['new','waxing_crescent','first_quarter','waxing_gibbous','full','waning_gibbous','last_quarter','waning_crescent'];
-        table.querySelectorAll('tr').forEach((row,i)=>{ row.style.cursor='pointer'; row.onclick=()=>openPhasePopup(codes[i]||'new'); }); }
-    }, 300);
+    try { renderLunarSection(); } catch(e) { console.warn('[BioSerra] renderLunarSection:', e); }
   }
+  if (typeof renderCalLunare === 'function') {
+    try { renderCalLunare(); } catch(e) { console.warn('[BioSerra] renderCalLunare:', e); }
+  }
+  _renderLunarStrip14();
   loadLunaConsigli6();
 }
 
+function _renderLunarStrip14() {
+  var today = new Date();
+  var strip = document.getElementById('lunar-strip');
+  if (!strip) return;
+  strip.innerHTML = '';
+  var DAYS = ['D','L','M','M','G','V','S'];
+  for (var i=0; i<14; i++) {
+    var d = new Date(today.getTime() + i*86400000);
+    var a = getMoonAge(d); var p = getMoonPhase(a); var il = getMoonIllum(a);
+    var div = document.createElement('div');
+    div.style.cssText = 'flex:0 0 auto;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:8px 6px;text-align:center;min-width:52px;cursor:pointer;';
+    if (i===0) div.style.cssText += 'border-color:#4aaf5e;background:rgba(74,175,94,0.1);';
+    div.innerHTML = '<div style="font-size:20px;">'+p.emoji+'</div>'
+      + '<div style="font-size:9px;color:var(--text3);">'+(i===0?'Oggi':DAYS[d.getDay()])+'</div>'
+      + '<div style="font-size:9px;color:var(--text3);">'+d.getDate()+'/'+(d.getMonth()+1)+'</div>'
+      + '<div style="font-size:11px;font-weight:600;color:var(--text2);">'+il+'%</div>';
+    (function(dt){ div.onclick = function(){ openCalLunarePopup(dt); }; })(new Date(d));
+    strip.appendChild(div);
+  }
+  var age2 = getMoonAge(today); var ph = getMoonPhase(age2); var adv = getAdvice(ph.code);
+  var adel = document.getElementById('lunar-phase-advice');
+  if (adel) adel.innerHTML = '<strong>'+ph.emoji+' '+ph.name+'</strong><br>'+adv.detail+'<br><br><strong style="color:var(--green3);">Per la tua serra:</strong><br>'+(adv.serra||'');
+  var phases8 = [
+    {code:'new',emoji:String.fromCodePoint(0x1F311),nome:'Luna Nuova'},
+    {code:'waxing_crescent',emoji:String.fromCodePoint(0x1F312),nome:'Luna Crescente'},
+    {code:'first_quarter',emoji:String.fromCodePoint(0x1F313),nome:'Primo Quarto'},
+    {code:'waxing_gibbous',emoji:String.fromCodePoint(0x1F314),nome:'Gibbosa Crescente'},
+    {code:'full',emoji:String.fromCodePoint(0x1F315),nome:'Luna Piena'},
+    {code:'waning_gibbous',emoji:String.fromCodePoint(0x1F316),nome:'Gibbosa Calante'},
+    {code:'last_quarter',emoji:String.fromCodePoint(0x1F317),nome:'Ultimo Quarto'},
+    {code:'waning_crescent',emoji:String.fromCodePoint(0x1F318),nome:'Luna Calante'}
+  ];
+  var pt = document.getElementById('lunar-phases-table');
+  if (pt) {
+    var curCode = ph.code;
+    pt.innerHTML = phases8.map(function(pp){
+      var a2 = getAdvice(pp.code);
+      var activeStyle = pp.code===curCode ? 'background:rgba(74,175,94,0.08);color:#4aaf5e;font-weight:700;' : 'color:var(--text2);';
+      return '<div onclick="openPhasePopup(\'' + pp.code + '\')" style="display:flex;align-items:center;gap:10px;padding:8px 6px;border-bottom:1px solid rgba(255,255,255,0.05);cursor:pointer;'+activeStyle+'">'
+        +'<span style="font-size:22px;">'+pp.emoji+'</span>'
+        +'<div style="flex:1;"><div style="font-size:13px;font-weight:600;">'+pp.nome+(pp.code===curCode?' ← oggi':'')+'</div>'
+        +'<div style="font-size:11px;color:var(--text3);">'+a2.main.substring(0,60)+'...</div></div>'
+        +'<span style="color:var(--text3);">›</span></div>';
+    }).join('');
+  }
+}
+
 function _doRenderBio() {
-  // Chiama renderBioCalendar originale
-  if (typeof renderBioCalendar === 'function') renderBioCalendar();
-  renderBio3Giorni();
-  updateBioElettroPreview();
-  // Nuovi calendari
+  if (typeof renderBioCalendar === 'function') {
+    try { renderBioCalendar(); } catch(e) { console.warn('[BioSerra] renderBioCalendar:', e); }
+  }
+  try { renderBio3Giorni(); } catch(e) {}
+  try { updateBioElettroPreview(); } catch(e) {}
+  // Calendari nuovi tab
   try { _renderSemine(); } catch(e) {}
   try { _renderTrattamenti(); } catch(e) {}
   try { _renderFotoperiodo(); } catch(e) {}
   try { _renderFenologico(); } catch(e) {}
+  // Calendari pagina scorrevole Ambiente
+  try { renderCalOggi(); } catch(e) {}
+  try { renderCalBio(); } catch(e) {}
+  try { renderCalSemine(); } catch(e) {}
+  try { renderCalTratt(); } catch(e) {}
+  try { renderCalFoto(); } catch(e) {}
+  try { renderCalFenol(); } catch(e) {}
+  try { renderCalLavori(); } catch(e) {}
+  try { renderCalGDD(); } catch(e) {}
+  try { renderCalGelo(); } catch(e) {}
+  try { renderCalMatur(); } catch(e) {}
+  // Popola card Oggi master
+  try { renderOggiMaster(); } catch(e) {}
+  // Griglia bio nella nuova sezione scrollabile
+  try { _syncBioGridMain(); } catch(e) {}
+}
+
+/* Sincronizza la griglia bio nella sezione scrollabile (usa gli stessi dati di renderBioCalendar) */
+function _syncBioGridMain() {
+  var grid = document.getElementById('bio-cal-grid-main');
+  if (!grid) return;
+  var today = new Date();
+  var year = today.getFullYear(), month = today.getMonth();
+  var todayStr = today.toISOString().slice(0,10);
+  var firstDay = new Date(year, month, 1);
+  var startDow = firstDay.getDay(); if (startDow === 0) startDow = 7;
+  var daysInMonth = new Date(year, month+1, 0).getDate();
+  var cells = '';
+  for (var i=1; i<startDow; i++) cells += '<div class="bio-cell empty"></div>';
+  for (var d=1; d<=daysInMonth; d++) {
+    var date = new Date(year, month, d);
+    var ct = getDayType(date); var bioT = DAY_TYPES[ct.type];
+    var ds = date.toISOString().slice(0,10);
+    var isToday = ds === todayStr;
+    cells += '<div class="bio-cell day-'+ct.type+(isToday?' today':'')+'" onclick="openCalBioDayPopup('+year+','+month+','+d+')" title="'+bioT.label+'">'+d+'</div>';
+  }
+  grid.innerHTML = cells;
+  var titleEl = document.getElementById('bio-cal-month-title');
+  var MONTHS = ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
+  if (titleEl) titleEl.textContent = MONTHS[month] + ' ' + year;
+}
+
+/* Card Oggi master — riepilogo integrato nella sezione scorrevole */
+function renderOggiMaster() {
+  var today = new Date();
+  var MONTHS_IT = ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
+  var DAYS_IT2 = ['Domenica','Lunedi','Martedi','Mercoledi','Giovedi','Venerdi','Sabato'];
+  var el = document.getElementById('oggi-data-master');
+  if (el) el.textContent = DAYS_IT2[today.getDay()]+' '+today.getDate()+' '+MONTHS_IT[today.getMonth()]+' '+today.getFullYear();
+  var sun = calcSunTimes(today);
+  var age = getMoonAge(today); var phase = getMoonPhase(age); var bio = getDayType(today); var bioT = DAY_TYPES[bio.type];
+  var fenol = (typeof getFenolFase === 'function') ? getFenolFase(today) : {fase:'-',desc:''};
+  var sem = (typeof getSemineOggi === 'function') ? getSemineOggi(today) : {emoji:'-',label:'-',motivo:''};
+  var tratt = (typeof getTrattOggi === 'function') ? getTrattOggi(today) : {label:'-',desc:''};
+  var rows = [
+    {icon:'🌙', label:'Luna', val:phase.emoji+' '+phase.name, sub:getMoonIllum(age)+'% illum.'},
+    {icon:'🌱', label:'Biodinamica', val:bioT.icon+' '+bioT.label, sub:bio.sym+' '+bio.name},
+    {icon:'☀️', label:'Fotoperiodo', val:sun.dayLen.toFixed(1).replace('.',',')+' h luce', sub:'Alba '+hToHHMM(sun.sunrise)+' Tramonto '+hToHHMM(sun.sunset)},
+    {icon:'🌾', label:'Semine', val:sem.emoji+' '+sem.label, sub:sem.motivo},
+    {icon:'🧪', label:'Trattamenti', val:tratt.label, sub:tratt.desc},
+    {icon:'🌸', label:'Fenologia', val:fenol.fase, sub:fenol.desc}
+  ];
+  var grid = document.getElementById('oggi-master-grid');
+  if (grid) {
+    grid.innerHTML = rows.map(function(r){
+      return '<div onclick="openDayPopup(new Date())" style="background:var(--bg3);border-radius:10px;padding:8px 10px;cursor:pointer;display:flex;align-items:flex-start;gap:8px;">'
+        +'<span style="font-size:18px;flex-shrink:0;">'+r.icon+'</span>'
+        +'<div><div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:0.4px;">'+r.label+'</div>'
+        +'<div style="font-size:12px;font-weight:600;color:var(--text);margin-top:2px;">'+r.val+'</div>'
+        +'<div style="font-size:11px;color:var(--text3);">'+r.sub+'</div></div></div>';
+    }).join('');
+  }
+  var cons = document.getElementById('oggi-master-consiglio');
+  if (cons) {
+    var adv = getAdvice(phase.code);
+    cons.textContent = adv.main + ' ' + (bio.type==='frutto'?'Ottimo per raccolta e aromi.':bio.type==='fiore'?'Ottimo per cime e terpeni.':bio.type==='radice'?'Ideale per substrato e radici.':'Ideale per vegetazione e irrigazione.');
+  }
+}
+
+/* Pop-up universale per giorno — mostra TUTTE le info */
+function openDayPopup(date) {
+  var overlay = document.getElementById('amb-popup-overlay');
+  var contentEl = document.getElementById('amb-popup-content');
+  if (!overlay || !contentEl) return;
+  var MONTHS_IT = ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
+  var DAYS_IT2 = ['Domenica','Lunedi','Martedi','Mercoledi','Giovedi','Venerdi','Sabato'];
+  var sun = calcSunTimes(date);
+  var age = getMoonAge(date); var ph = getMoonPhase(age); var adv = getAdvice(ph.code);
+  var bio = getDayType(date); var bioT = DAY_TYPES[bio.type]; var bioAdv = ADVICE[bio.type];
+  var fenol = (typeof getFenolFase === 'function') ? getFenolFase(date) : {fase:'-',desc:''};
+  var sem = (typeof getSemineOggi === 'function') ? getSemineOggi(date) : {emoji:'-',label:'-',motivo:''};
+  var tratt = (typeof getTrattOggi === 'function') ? getTrattOggi(date) : {label:'-',desc:''};
+  var lavori = (typeof getLavoriOggi === 'function') ? getLavoriOggi(date) : {titolo:'-',sub:''};
+  contentEl.innerHTML =
+    '<div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;">Riepilogo integrato</div>'
+    +'<div style="font-size:18px;font-weight:700;margin:6px 0 14px;">'+DAYS_IT2[date.getDay()]+' '+date.getDate()+' '+MONTHS_IT[date.getMonth()]+' '+date.getFullYear()+'</div>'
+    +'<div class="amb-popup-section"><div class="amb-popup-label">Luna</div>'
+    +'<div style="font-size:15px;font-weight:700;">'+ph.emoji+' '+ph.name+'</div>'
+    +'<div style="font-size:13px;color:var(--text2);margin-top:4px;">'+getMoonIllum(age)+'% illuminazione · Giorno '+Math.round(age)+' del ciclo</div>'
+    +'<div style="font-size:12px;color:var(--text3);margin-top:4px;">'+adv.main+'</div></div>'
+    +'<div class="amb-popup-section"><div class="amb-popup-label">Biodinamica</div>'
+    +'<div style="font-size:15px;font-weight:700;">'+bioT.icon+' '+bioT.label+'</div>'
+    +'<div style="font-size:12px;color:var(--text2);margin-top:4px;">'+bio.sym+' '+bio.name+' · '+bio.element+'</div>'
+    +'<div style="font-size:12px;color:var(--text3);margin-top:3px;">'+bioAdv.short+'</div></div>'
+    +'<div class="amb-popup-section"><div class="amb-popup-label">Fotoperiodo</div>'
+    +'<div style="font-size:22px;font-weight:800;color:#ffd54f;">'+sun.dayLen.toFixed(1)+'h</div>'
+    +'<div style="font-size:12px;color:var(--text2);">Alba '+hToHHMM(sun.sunrise)+' → Tramonto '+hToHHMM(sun.sunset)+'</div></div>'
+    +'<div class="amb-popup-section"><div class="amb-popup-label">Semine</div>'
+    +'<div style="font-size:13px;font-weight:600;">'+sem.emoji+' '+sem.label+'</div>'
+    +'<div style="font-size:12px;color:var(--text3);">'+sem.motivo+'</div></div>'
+    +'<div class="amb-popup-section"><div class="amb-popup-label">Trattamenti</div>'
+    +'<div style="font-size:13px;font-weight:600;">'+tratt.label+'</div>'
+    +'<div style="font-size:12px;color:var(--text3);">'+tratt.desc+'</div></div>'
+    +'<div class="amb-popup-section"><div class="amb-popup-label">Fenologia</div>'
+    +'<div style="font-size:13px;font-weight:600;">'+fenol.fase+'</div>'
+    +'<div style="font-size:12px;color:var(--text3);">'+fenol.desc+'</div></div>'
+    +'<div class="amb-popup-section" style="border:none;"><div class="amb-popup-label">Lavori consigliati</div>'
+    +'<div style="font-size:13px;font-weight:600;">'+lavori.titolo+'</div>'
+    +'<div style="font-size:12px;color:var(--text3);">'+lavori.sub+'</div></div>';
+  overlay.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
 }
 
 /* ── Init ambiente (chiamato da showSection) ── */
@@ -4772,6 +4711,8 @@ function initAmbiente() {
   _doLoadWeather();
   setTimeout(_doRenderLunar, 50);
   _doRenderBio();
+  // GDD richiede fetch asincrono
+  setTimeout(function(){ try { loadGDD(); } catch(e) {} }, 200);
 }
 
 /* ══════════════════════════════════════════════════════════════
