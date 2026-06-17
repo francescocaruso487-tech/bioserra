@@ -899,24 +899,6 @@
       "data_attivazione": null
     },
     {
-      "id": "daily_1781640436681_3",
-      "nome": "Implementazione di un sistema di supporto",
-      "descrizione": "Installazione di un sistema di supporto per aiutare la crescita delle piante e prevenire la rottura dei rami",
-      "obiettivo": "Aiutare la crescita delle piante e prevenire la rottura dei rami",
-      "materiali": [
-        "tavole",
-        "filo",
-        "cordini"
-      ],
-      "categoria": "supporto",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 2,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null
-    },
-    {
       "id": "daily_1781640436681_4",
       "nome": "Monitoraggio della temperatura e dell'umidità",
       "descrizione": "Verifica regolare della temperatura e dell'umidità per garantire un ambiente ottimale per la crescita della cannabis",
@@ -1090,7 +1072,25 @@
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": "17/06/2026"
+    },
+    {
+      "id": "daily_1781640436681_3",
+      "nome": "Implementazione di un sistema di supporto",
+      "descrizione": "Installazione di un sistema di supporto per aiutare la crescita delle piante e prevenire la rottura dei rami",
+      "obiettivo": "Aiutare la crescita delle piante e prevenire la rottura dei rami",
+      "materiali": [
+        "tavole",
+        "filo",
+        "cordini"
+      ],
+      "categoria": "supporto",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 2,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": "18/06/2026"
     }
   ],
-  "aggiornato": "2026-06-17 22:02"
+  "aggiornato": "2026-06-17 22:04"
 }
