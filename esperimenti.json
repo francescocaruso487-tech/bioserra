@@ -916,23 +916,6 @@
       "data_attivazione": null
     },
     {
-      "id": "daily_1781667046478_0",
-      "nome": "Elettrocultura",
-      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
-      "obiettivo": "Migliorare la crescita e la resa delle piante",
-      "materiali": [
-        "Generatore di elettricità",
-        "Elettrodi"
-      ],
-      "categoria": "Tecniche di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-17",
-      "attivo": false,
-      "data_attivazione": null
-    },
-    {
       "id": "daily_1781667046478_1",
       "nome": "Controllo del pH",
       "descrizione": "Verifica e regola il pH del substrato e dell'acqua per garantire condizioni ottimali per la crescita delle piante",
@@ -1090,7 +1073,24 @@
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": "18/06/2026"
+    },
+    {
+      "id": "daily_1781667046478_0",
+      "nome": "Elettrocultura",
+      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
+      "obiettivo": "Migliorare la crescita e la resa delle piante",
+      "materiali": [
+        "Generatore di elettricità",
+        "Elettrodi"
+      ],
+      "categoria": "Tecniche di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-17",
+      "attivo": false,
+      "data_attivazione": "18/06/2026"
     }
   ],
-  "aggiornato": "2026-06-17 22:04"
+  "aggiornato": "2026-06-17 22:05"
 }
