@@ -1526,7 +1526,7 @@
         </button>
         <button id="esptab-proposte" onclick="switchEspTab('proposte')"
           style="flex:1;padding:9px 0;border-radius:10px;border:1px solid var(--border);font-size:13px;font-weight:700;cursor:pointer;background:var(--card2);color:var(--text2)">
-          📋 Archivio possibili
+          💡 Da valutare
         </button>
       </div>
 
@@ -2116,9 +2116,19 @@ async function espLoad() {
     var res = await fetch(ESP_RAW_URL + '?v=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     espData = await res.json();
+    // Unifica proposte + da_valutare (entrambi i campi usati dal Cervello AI)
+    var prop = Array.isArray(espData.proposte) ? espData.proposte : [];
+    var daVal = Array.isArray(espData.da_valutare) ? espData.da_valutare : [];
+    var nomiProp = new Set(prop.map(function(x){ return (x.nome||'').toLowerCase(); }));
+    daVal.forEach(function(x) {
+      if (x.nome && !nomiProp.has(x.nome.toLowerCase())) { prop.push(x); nomiProp.add(x.nome.toLowerCase()); }
+    });
+    espData.proposte = prop;
+    if (!Array.isArray(espData.attivi)) espData.attivi = [];
     if (statusEl) {
-      var ts = espData.aggiornato ? ' · ' + espData.aggiornato : '';
-      statusEl.innerHTML = '<span style="color:var(--green2)">✅ Sincronizzato' + ts + '</span>';
+      var tot = espData.proposte.length + espData.attivi.length;
+      var ts = espData.lastUpdate ? ' · ' + espData.lastUpdate.substring(0,10) : '';
+      statusEl.innerHTML = '<span style="color:var(--green2)">✅ ' + tot + ' esperimenti' + ts + '</span>';
     }
   } catch(e) {
     if (statusEl) statusEl.innerHTML = '<span style="color:var(--text3)">File non ancora disponibile</span>';
@@ -2140,22 +2150,28 @@ function espRenderAttivi() {
   var lista = espData && espData.attivi ? espData.attivi : [];
   if (lista.length === 0) {
     el.innerHTML = '<div class="empty-state"><div class="empty-state-icon">🧪</div>' +
-      'Nessun esperimento attivo.<br>Attivane uno dall\u2019Archivio possibili!</div>';
+      'Nessun esperimento attivo.<br>Attivane uno da “Da valutare”!</div>';
     return;
   }
   var html = '';
   lista.forEach(function(exp, idx) {
+    var cat = exp.categoria ? exp.categoria.charAt(0).toUpperCase() + exp.categoria.slice(1) : '';
     html += '<div style="padding:12px 0;border-bottom:1px solid var(--border)">';
     html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px">';
-    html += '<div style="font-size:14px;font-weight:700;color:var(--text);flex:1">' + espEscape(exp.nome || '—') + '</div>';
+    html += '<div style="flex:1">';
+    html += '<div style="font-size:14px;font-weight:700;color:var(--text)">' + espEscape(exp.nome || '—') + '</div>';
+    if (cat) html += '<span style="font-size:10px;background:var(--card2);border:1px solid var(--border);border-radius:6px;padding:1px 7px;color:var(--text3)">' + espEscape(cat) + '</span>';
+    html += '</div>';
     html += '<label class="toggle-sw" style="flex-shrink:0"><input type="checkbox" checked onchange="espDisattiva(' + idx + ',this)"><span class="toggle-slider"></span></label>';
     html += '</div>';
+    if (exp.obiettivo) html += '<div style="font-size:11px;color:var(--green2);margin-bottom:4px">🎯 ' + espEscape(exp.obiettivo) + '</div>';
     if (exp.descrizione) html += '<div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:5px">' + espEscape(exp.descrizione) + '</div>';
     if (exp.materiali && exp.materiali.length) {
-      html += '<div style="font-size:11px;color:var(--green2);margin-bottom:3px">📦 ' + (Array.isArray(exp.materiali) ? exp.materiali.join(', ') : espEscape(String(exp.materiali))) + '</div>';
+      html += '<div style="font-size:11px;color:var(--green2);margin-bottom:4px">📦 ' + (Array.isArray(exp.materiali) ? exp.materiali.join(', ') : espEscape(String(exp.materiali))) + '</div>';
     }
     html += '<div style="display:flex;gap:10px;flex-wrap:wrap">';
-    if (exp.data_attivazione) html += '<span style="font-size:11px;color:var(--text3)">📅 ' + espEscape(exp.data_attivazione) + '</span>';
+    if (exp.durata_giorni) html += '<span style="font-size:11px;color:var(--text3)">⏱️ ' + espEscape(String(exp.durata_giorni)) + ' giorni</span>';
+    if (exp.data_attivazione) html += '<span style="font-size:11px;color:var(--text3)">📅 attivato ' + espEscape(exp.data_attivazione) + '</span>';
     if (exp.fonte) html += '<span style="font-size:11px;color:var(--text3)">🤖 ' + espEscape(exp.fonte) + '</span>';
     html += '</div></div>';
   });
@@ -2173,16 +2189,29 @@ function espRenderProposte() {
   }
   var html = '';
   lista.forEach(function(exp, idx) {
+    var cat = exp.categoria ? exp.categoria.charAt(0).toUpperCase() + exp.categoria.slice(1) : '';
+    var diff = exp.difficolta || '';
+    var diffColor = diff === 'facile' ? 'var(--green2)' : diff === 'avanzata' ? '#e05252' : 'var(--orange)';
     html += '<div style="padding:12px 0;border-bottom:1px solid var(--border)">';
     html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px">';
-    html += '<div style="font-size:14px;font-weight:700;color:var(--text);flex:1">' + espEscape(exp.nome || '—') + '</div>';
+    html += '<div style="flex:1">';
+    html += '<div style="font-size:14px;font-weight:700;color:var(--text)">' + espEscape(exp.nome || '—') + '</div>';
+    if (cat || diff) {
+      html += '<div style="display:flex;gap:6px;margin-top:3px;flex-wrap:wrap">';
+      if (cat) html += '<span style="font-size:10px;background:var(--card2);border:1px solid var(--border);border-radius:6px;padding:1px 7px;color:var(--text3)">' + espEscape(cat) + '</span>';
+      if (diff) html += '<span style="font-size:10px;background:var(--card2);border:1px solid var(--border);border-radius:6px;padding:1px 7px;color:' + diffColor + '">' + espEscape(diff) + '</span>';
+      html += '</div>';
+    }
+    html += '</div>';
     html += '<button onclick="espAttiva(' + idx + ')" style="flex-shrink:0;background:var(--green2);border:none;border-radius:8px;padding:5px 12px;color:var(--text);font-size:12px;font-weight:700;cursor:pointer">✅ Attiva</button>';
     html += '</div>';
+    if (exp.obiettivo) html += '<div style="font-size:11px;color:var(--green2);margin-bottom:4px">🎯 ' + espEscape(exp.obiettivo) + '</div>';
     if (exp.descrizione) html += '<div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:5px">' + espEscape(exp.descrizione) + '</div>';
     if (exp.materiali && exp.materiali.length) {
-      html += '<div style="font-size:11px;color:var(--orange);margin-bottom:3px">📦 ' + (Array.isArray(exp.materiali) ? exp.materiali.join(', ') : espEscape(String(exp.materiali))) + '</div>';
+      html += '<div style="font-size:11px;color:var(--orange);margin-bottom:4px">📦 ' + (Array.isArray(exp.materiali) ? exp.materiali.join(', ') : espEscape(String(exp.materiali))) + '</div>';
     }
     html += '<div style="display:flex;gap:10px;flex-wrap:wrap">';
+    if (exp.durata_giorni) html += '<span style="font-size:11px;color:var(--text3)">⏱️ ' + espEscape(String(exp.durata_giorni)) + ' giorni</span>';
     if (exp.data_proposta) html += '<span style="font-size:11px;color:var(--text3)">📅 ' + espEscape(exp.data_proposta) + '</span>';
     if (exp.fonte) html += '<span style="font-size:11px;color:var(--text3)">🤖 ' + espEscape(exp.fonte) + '</span>';
     html += '</div></div>';
