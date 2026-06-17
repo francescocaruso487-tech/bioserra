@@ -543,22 +543,6 @@
   ],
   "proposte": [
     {
-      "id": "daily_1781640025709_3",
-      "nome": "Introduzione di micorrize",
-      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della cannabis",
-      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
-      "materiali": [
-        "micorrize",
-        "substrato"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-16",
-      "attivo": false
-    },
-    {
       "id": "daily_1781640224648_2",
       "nome": "Sistema di irrigazione a goccia con fertilizzanti",
       "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
@@ -1071,6 +1055,24 @@
       "data_attivazione": null
     }
   ],
-  "attivi": [],
-  "aggiornato": "2026-06-17 12:18"
+  "attivi": [
+    {
+      "id": "daily_1781640025709_3",
+      "nome": "Introduzione di micorrize",
+      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "materiali": [
+        "micorrize",
+        "substrato"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": "17/06/2026"
+    }
+  ],
+  "aggiornato": "2026-06-17 17:50"
 }
