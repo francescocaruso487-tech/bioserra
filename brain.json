@@ -1,135 +1,80 @@
 {
-  "lastUpdate": "2026-06-16T20:43:35.531Z",
-  "versione": "3.0",
+  "lastUpdate": "2026-06-17T14:37:03.469Z",
+  "versione": "4.0",
   "cervello": {
     "consigli_giorno": [
-      "Controlla le piante regolarmente per rilevare eventuali problemi",
-      "Assicurati di fornire abbastanza acqua e nutrienti",
-      "Mantieni una temperatura costante nella serra"
+      "controllare lo stato di crescita delle piante e regolare l'illuminazione e la temperatura se necessario"
     ],
+    "consigli_piante": {
+      "autofiorenti": "controllare la formazione dei fiori e la produzione di resina",
+      "femminizzate": "verificare la presenza di fiori maschili e femminili e intervenire se necessario"
+    },
     "tecniche_nuove": [
       {
-        "nome": "Tecnica di pruning",
-        "descrizione": "Tecnica per potare le piante per favorire la crescita",
+        "nome": "antenna terrestre avanzata",
+        "descrizione": "installazione di un'antenna terrestre per migliorare la connessione con la Terra e aumentare la crescita delle piante",
         "materiali": [
-          "Forbici di potatura",
-          "Guanti"
+          "rame",
+          "cavo elettrico"
         ],
-        "difficolta": "Facile",
-        "fonte": "Zamnesia"
-      },
-      {
-        "nome": "Tecnica di training",
-        "descrizione": "Tecnica per addestrare le piante a crescere in una direzione specifica",
-        "materiali": [
-          "Fili di ferro",
-          "Pali"
-        ],
-        "difficolta": "Medio",
-        "fonte": "Zamnesia"
-      }
-    ],
-    "esperimenti_nuovi": [
-      {
-        "nome": "Esperimento di crescita con luce LED",
-        "descrizione": "Esperimento per testare l'effetto della luce LED sulla crescita delle piante",
-        "durata_giorni": 30
+        "difficolta": "media",
+        "fonte": "Royal Queen Seeds"
       }
     ],
     "scoperte": [
-      "Le piante di cannabis possono essere coltivate con successo in una serra",
-      "La tecnica di pruning può aiutare a aumentare la resa delle piante"
+      "osservazione della crescita accelerata delle piante dopo l'installazione della pila galvanica Fe-Cu"
     ],
     "avvisi": [
-      "Assicurati di controllare le piante regolarmente per rilevare eventuali problemi",
-      "Non dimenticare di fornire abbastanza acqua e nutrienti alle piante"
-    ],
-    "consigli_piante": {
-      "autofiorenti": "Sono facili da coltivare e richiedono meno cure",
-      "femminizzate": "Richiedono più cure e attenzione, ma possono produrre resa più alta"
-    }
+      "controllare la presenza di parassiti o malattie nelle piante"
+    ]
   },
   "agenti": {
     "piante": {
-      "stato_generale": "buono",
-      "azioni_oggi": [
-        "Controllo dello stato di crescita delle piante autofiorenti",
-        "Verifica della presenza di eventuali problemi di salute",
-        "Irrigazione leggera per mantenere il terreno umido"
-      ],
-      "irrigazione": "quando il terreno risulta asciutto al tocco",
-      "nutrizione": "fertilizzante bilanciato per piante in crescita",
-      "attenzione": "controllare la presenza di parassiti e malattie, nonché il corretto sviluppo delle piante in base alla loro varieta' e numero di giorni trascorsi dalla germinazione"
+      "stato_generale": "in monitoraggio",
+      "irrigazione": "irrigare le piante ogni 2-3 giorni con 1-2 litri di acqua magnetizzata per pianta",
+      "nutrizione": "aggiungere un fertilizzante bilanciato per piante in crescita ogni 7-10 giorni",
+      "attenzione": "controllare la formazione dei fiori e la produzione di resina",
+      "piante_critiche": []
     },
     "ambiente": {
       "luna": {
-        "fase": "Primo quarto",
-        "emoji": "🌕",
-        "illuminazione_pct": 50,
-        "consiglio": "Ottimo per iniziare nuovi progetti"
+        "fase": "Luna Crescente",
+        "emoji": "🌒",
+        "illuminazione_pct": 4,
+        "consiglio": "Luna calante."
       },
       "biodinamica": {
-        "tipo_giorno": "Frutto",
-        "qualita": "Ottimo",
-        "consiglio": "E' un ottimo giorno per occuparsi di attività che richiedono una forte energia vitale e creatività, come la pittura o la scrittura creativa."
+        "tipo_giorno": "Foglia",
+        "qualita": "Buono",
+        "consiglio": "Ottimo per irrigazione e trapianto."
       },
-      "correlazione": "La fase di primo quarto e il giorno di frutto biodinamico si combinano per rendere questo giorno ideale per le attività creative e per l'inizio di nuovi progetti.",
-      "momento_migliore": "mattino presto"
+      "ore_luce": 15,
+      "correlazione": "Luna Crescente + Giorno Foglia",
+      "momento_migliore": "pomeriggio"
     },
     "elettro": {
       "verifica_oggi": [
-        "controllo parametri elettromagnetici",
-        "monitoraggio crescita piante"
+        "verificare la funzionalità della pila galvanica Fe-Cu e della spirale cosmica"
       ],
-      "ottimizzazione": "regolare la potenza della pila galvanica per ottimizzare l'assorbimento dei nutrienti",
-      "manutenzione": "pulire le antenne terrestri per garantire una buona conducibilità elettrica",
-      "osservazioni": [
-        "crescita radicale",
-        "sviluppo fogliare",
-        "presenza di eventuali parassiti"
-      ]
+      "ottimizzazione": "Ottimizza in base alla fase Luna Crescente"
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Tecnica di pruning",
-      "descrizione": "Tecnica per potare le piante per favorire la crescita",
+      "nome": "antenna terrestre avanzata",
+      "descrizione": "installazione di un'antenna terrestre per migliorare la connessione con la Terra e aumentare la crescita delle piante",
       "materiali": [
-        "Forbici di potatura",
-        "Guanti"
+        "rame",
+        "cavo elettrico"
       ],
-      "difficolta": "Facile",
-      "fonte": "Zamnesia"
-    },
-    {
-      "nome": "Tecnica di training",
-      "descrizione": "Tecnica per addestrare le piante a crescere in una direzione specifica",
-      "materiali": [
-        "Fili di ferro",
-        "Pali"
-      ],
-      "difficolta": "Medio",
-      "fonte": "Zamnesia"
+      "difficolta": "media",
+      "fonte": "Royal Queen Seeds"
     }
-  ],
-  "esperimenti_nuovi": [
-    {
-      "nome": "Esperimento di crescita con luce LED",
-      "descrizione": "Esperimento per testare l'effetto della luce LED sulla crescita delle piante",
-      "durata_giorni": 30
-    }
-  ],
-  "scoperte": [
-    "Le piante di cannabis possono essere coltivate con successo in una serra",
-    "La tecnica di pruning può aiutare a aumentare la resa delle piante"
   ],
   "avvisi": [
-    "Assicurati di controllare le piante regolarmente per rilevare eventuali problemi",
-    "Non dimenticare di fornire abbastanza acqua e nutrienti alle piante"
+    "controllare la presenza di parassiti o malattie nelle piante"
   ],
   "consigli_giorno": [
-    "Controlla le piante regolarmente per rilevare eventuali problemi",
-    "Assicurati di fornire abbastanza acqua e nutrienti",
-    "Mantieni una temperatura costante nella serra"
+    "controllare lo stato di crescita delle piante e regolare l'illuminazione e la temperatura se necessario"
   ]
 }
