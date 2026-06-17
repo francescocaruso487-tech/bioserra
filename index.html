@@ -2252,37 +2252,132 @@ async function brainLoad() {
   var el     = document.getElementById('brain-content');
   var status = document.getElementById('brain-status');
   if (!el) return;
-  if (status) status.textContent = 'Caricamento…';
+  if (status) status.textContent = 'Caricamento\u2026';
   try {
     var res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/brain.json?v=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     var data = await res.json();
-    if (status) status.innerHTML = '<span style="color:var(--green2)">✅ Aggiornato · ' + (data.aggiornato || '') + '</span>';
-    var html = '';
-    var consigli = data.consigli || data.items || data.oggi || [];
-    if (Array.isArray(consigli) && consigli.length > 0) {
-      consigli.forEach(function(c) {
-        if (typeof c === 'string') {
-          html += '<div style="padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--text2);line-height:1.5">' + c + '</div>';
-        } else {
-          html += '<div style="padding:10px 0;border-bottom:1px solid var(--border)">';
-          if (c.titolo) html += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px">' + c.titolo + '</div>';
-          if (c.testo || c.body) html += '<div style="font-size:12px;color:var(--text2);line-height:1.5">' + (c.testo || c.body) + '</div>';
-          html += '</div>';
-        }
-      });
-    } else if (data.testo || data.body) {
-      html = '<div style="font-size:13px;color:var(--text2);line-height:1.7;white-space:pre-wrap">' + (data.testo || data.body) + '</div>';
-    } else {
-      html = '<div style="font-size:13px;color:var(--text3);padding:12px 0">Nessun consiglio disponibile oggi.</div>';
+
+    // Struttura v4: data.lastUpdate, data.cervello.*, data.agenti.*
+    var aggiornato = (data.lastUpdate || '').substring(0, 16).replace('T', ' ');
+    if (status) status.innerHTML = '<span style="color:var(--green2)">✅ Aggiornato ' + aggiornato + '</span>';
+
+    var c = data.cervello || {};
+    var agenti = data.agenti || {};
+    var piante = agenti.piante || {};
+    var ambiente = agenti.ambiente || {};
+    var elettro = agenti.elettro || {};
+    var luna = ambiente.luna || {};
+    var bio = ambiente.biodinamica || {};
+
+    var h = '';
+
+    // ── SEZIONE 1: LUNA + BIODINAMICA (dati algoritmici reali) ──────────
+    if (luna.fase) {
+      h += '<div style="background:var(--card2);border-radius:10px;padding:12px;margin-bottom:10px">';
+      h += '<div style="font-size:12px;font-weight:700;color:var(--green2);margin-bottom:6px">';
+      h += (luna.emoji || '\ud83c\udf19') + ' LUNA &amp; BIODINAMICA</div>';
+      h += '<div style="font-size:13px;color:var(--text);margin-bottom:4px">';
+      h += '<strong>' + luna.fase + '</strong> &mdash; ' + (luna.illuminazione_pct || '?') + '% illuminazione</div>';
+      if (bio.tipo_giorno) {
+        h += '<div style="font-size:12px;color:var(--text2);margin-bottom:4px">';
+        h += '\ud83c\udf31 Giorno <strong>' + bio.tipo_giorno + '</strong> (' + (bio.qualita || '') + ')</div>';
+      }
+      if (bio.consiglio) {
+        h += '<div style="font-size:11px;color:var(--text3);line-height:1.5">' + bio.consiglio + '</div>';
+      }
+      if (ambiente.ore_luce) {
+        h += '<div style="font-size:11px;color:var(--text3);margin-top:4px">\u2600\ufe0f Ore luce oggi: <strong>' + ambiente.ore_luce + 'h</strong></div>';
+      }
+      h += '</div>';
     }
-    el.innerHTML = html;
+
+    // ── SEZIONE 2: CONSIGLI GIORNO ────────────────────────────────────────
+    var consigli = c.consigli_giorno || [];
+    if (consigli.length > 0) {
+      h += '<div style="background:var(--card2);border-radius:10px;padding:12px;margin-bottom:10px">';
+      h += '<div style="font-size:12px;font-weight:700;color:var(--green2);margin-bottom:8px">\u2705 CONSIGLI DI OGGI</div>';
+      consigli.forEach(function(cc) {
+        h += '<div style="font-size:13px;color:var(--text2);line-height:1.5;padding:4px 0;border-bottom:1px solid var(--border)">' + cc + '</div>';
+      });
+      h += '</div>';
+    }
+
+    // ── SEZIONE 3: PIANTE ─────────────────────────────────────────────────
+    var cp = c.consigli_piante || {};
+    if (piante.stato_generale || cp.autofiorenti) {
+      h += '<div style="background:var(--card2);border-radius:10px;padding:12px;margin-bottom:10px">';
+      h += '<div style="font-size:12px;font-weight:700;color:var(--green2);margin-bottom:8px">\ud83c\udf3f PIANTE &mdash; ';
+      h += '<span style="text-transform:uppercase">' + (piante.stato_generale || 'da verificare') + '</span></div>';
+      if (piante.attenzione) {
+        h += '<div style="font-size:12px;color:var(--text2);margin-bottom:6px">\u26a0\ufe0f ' + piante.attenzione + '</div>';
+      }
+      if (piante.irrigazione) {
+        h += '<div style="font-size:12px;color:var(--text2);margin-bottom:4px">\ud83d\udca7 <strong>Irrigazione:</strong> ' + piante.irrigazione + '</div>';
+      }
+      if (piante.nutrizione) {
+        h += '<div style="font-size:12px;color:var(--text2);margin-bottom:4px">\ud83e\uddea <strong>Nutrizione:</strong> ' + piante.nutrizione + '</div>';
+      }
+      if (cp.autofiorenti) {
+        h += '<div style="font-size:12px;color:var(--text3);margin-top:6px;line-height:1.5">\u26a1 <em>Autofiorenti:</em> ' + cp.autofiorenti + '</div>';
+      }
+      if (cp.femminizzate) {
+        h += '<div style="font-size:12px;color:var(--text3);margin-top:4px;line-height:1.5">\ud83c\udf38 <em>Femminizzate:</em> ' + cp.femminizzate + '</div>';
+      }
+      if (piante.piante_critiche && piante.piante_critiche.length) {
+        h += '<div style="font-size:12px;color:#e05252;margin-top:6px">\ud83d\udea8 Critiche: ' + piante.piante_critiche.join(', ') + '</div>';
+      }
+      h += '</div>';
+    }
+
+    // ── SEZIONE 4: ELETTROCULTURA ─────────────────────────────────────────
+    if (elettro.verifica_oggi && elettro.verifica_oggi.length) {
+      h += '<div style="background:var(--card2);border-radius:10px;padding:12px;margin-bottom:10px">';
+      h += '<div style="font-size:12px;font-weight:700;color:var(--green2);margin-bottom:8px">\u26a1 ELETTROCULTURA</div>';
+      elettro.verifica_oggi.slice(0, 3).forEach(function(v) {
+        h += '<div style="font-size:12px;color:var(--text2);padding:3px 0;border-bottom:1px solid var(--border)">\u2022 ' + v + '</div>';
+      });
+      if (elettro.ottimizzazione) {
+        h += '<div style="font-size:11px;color:var(--text3);margin-top:6px;line-height:1.5">' + elettro.ottimizzazione + '</div>';
+      }
+      h += '</div>';
+    }
+
+    // ── SEZIONE 5: AVVISI ─────────────────────────────────────────────────
+    var avvisi = c.avvisi || [];
+    if (avvisi.length) {
+      h += '<div style="background:rgba(224,82,82,0.08);border:1px solid rgba(224,82,82,0.2);border-radius:10px;padding:12px;margin-bottom:10px">';
+      h += '<div style="font-size:12px;font-weight:700;color:#e05252;margin-bottom:6px">\ud83d\udea8 AVVISI</div>';
+      avvisi.forEach(function(av) {
+        h += '<div style="font-size:12px;color:var(--text2);line-height:1.5;padding:2px 0">' + av + '</div>';
+      });
+      h += '</div>';
+    }
+
+    // ── SEZIONE 6: SCOPERTE ────────────────────────────────────────────────
+    var scoperte = c.scoperte || [];
+    if (scoperte.length) {
+      h += '<div style="background:var(--card2);border-radius:10px;padding:12px;margin-bottom:10px">';
+      h += '<div style="font-size:12px;font-weight:700;color:var(--green2);margin-bottom:6px">\ud83d\udd2c SCOPERTE</div>';
+      scoperte.forEach(function(s) {
+        h += '<div style="font-size:12px;color:var(--text2);line-height:1.5;padding:2px 0">\u2022 ' + s + '</div>';
+      });
+      h += '</div>';
+    }
+
+    if (!h) {
+      h = '<div style="font-size:13px;color:var(--text3);padding:12px 0;text-align:center">\ud83e\udde0 Nessun dato disponibile.</div>';
+    }
+
+    el.innerHTML = h;
+
   } catch(e) {
-    if (status) status.innerHTML = '<span style="color:var(--text3)">File non ancora disponibile</span>';
+    if (status) status.innerHTML = '<span style="color:var(--text3)">Errore caricamento</span>';
     el.innerHTML = '<div style="font-size:13px;color:var(--text3);padding:12px 0;text-align:center">' +
-      '🧠 Il Cervello AI popola questo file ogni mattina.<br>Torna domani per i consigli del giorno!</div>';
+      '\ud83e\udde0 Il Cervello AI popola questo file ogni mattina alle 5:00.<br>Torna domani per i consigli!</div>';
   }
 }
+
 
 /* ══════════════════════════════════════════════════════════════
    MANUALI — Note personali + Analisi AI PDF
