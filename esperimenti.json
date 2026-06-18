@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-17T03:30:46.478Z",
+  "lastUpdate": "2026-06-18T03:30:46.349Z",
   "versione": "1.0",
   "esperimenti_disponibili": [
     {
@@ -62,6 +62,22 @@
   "storico_cicli": [],
   "prossimi_da_valutare": [],
   "da_valutare": [
+    {
+      "id": "daily_1781640155746_1",
+      "nome": "Irrigazione intelligente",
+      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
+      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
+      "materiali": [
+        "Sensori di umidità",
+        "Sistema di irrigazione automatico"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": " Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
     {
       "id": "ai_001",
       "nome": "Low-Stress Training (LST) mirato",
@@ -225,23 +241,6 @@
       "difficolta": "Medio",
       "fonte": "Ricerca scientifica",
       "durata_giorni": 30,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null
-    },
-    {
-      "id": "daily_1781640155746_1",
-      "nome": "Irrigazione intelligente",
-      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
-      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
-      "materiali": [
-        "Sensori di umidità",
-        "Sistema di irrigazione automatico"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Facile",
-      "fonte": " Tecnologia agricola",
-      "durata_giorni": 14,
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
@@ -420,24 +419,6 @@
       "data_attivazione": null
     },
     {
-      "id": "daily_1781640436681_3",
-      "nome": "Implementazione di un sistema di supporto",
-      "descrizione": "Installazione di un sistema di supporto per aiutare la crescita delle piante e prevenire la rottura dei rami",
-      "obiettivo": "Aiutare la crescita delle piante e prevenire la rottura dei rami",
-      "materiali": [
-        "tavole",
-        "filo",
-        "cordini"
-      ],
-      "categoria": "supporto",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 2,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null
-    },
-    {
       "id": "daily_1781640436681_4",
       "nome": "Monitoraggio della temperatura e dell'umidità",
       "descrizione": "Verifica regolare della temperatura e dell'umidità per garantire un ambiente ottimale per la crescita della cannabis",
@@ -451,23 +432,6 @@
       "fonte": "Zamnesia",
       "durata_giorni": 1,
       "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null
-    },
-    {
-      "id": "daily_1781667046478_0",
-      "nome": "Elettrocultura",
-      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
-      "obiettivo": "Migliorare la crescita e la resa delle piante",
-      "materiali": [
-        "Generatore di elettricità",
-        "Elettrodi"
-      ],
-      "categoria": "Tecniche di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-17",
       "attivo": false,
       "data_attivazione": null
     },
@@ -537,6 +501,103 @@
       "fonte": "Zamnesia",
       "durata_giorni": 7,
       "data_proposta": "2026-06-17",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_1",
+      "nome": "Irrigazione intelligente",
+      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
+      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
+      "materiali": [
+        "Sensori di umidità",
+        "Sistema di irrigazione automatico"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": " Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_0",
+      "nome": "Tecnica di Elettrocultura 1",
+      "descrizione": "Applicazione di un campo elettrico alle piante per stimolare la crescita",
+      "obiettivo": "Miglioramento della crescita e della resistenza alle malattie",
+      "materiali": [
+        "Generatore di campo elettrico"
+      ],
+      "categoria": "Elettrocultura",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_1",
+      "nome": "Monitoraggio dell'Umido",
+      "descrizione": "Controllo dell'umidità del substrato per evitare overwatering",
+      "obiettivo": "Miglioramento della salute e della crescita delle piante",
+      "materiali": [
+        "Sensore di umidità"
+      ],
+      "categoria": "Manutenzione",
+      "difficolta": "Facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_2",
+      "nome": "Introduzione di Microrganismi Benefici",
+      "descrizione": "Inserimento di microrganismi benefici nel substrato per migliorare la salute delle piante",
+      "obiettivo": "Miglioramento della resistenza alle malattie e della crescita",
+      "materiali": [
+        "Microrganismi benefici"
+      ],
+      "categoria": "Biologia",
+      "difficolta": "Medio",
+      "fonte": "BioSerra",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_3",
+      "nome": "Regolazione del pH",
+      "descrizione": "Regolazione del pH del substrato per ottimizzare la crescita delle piante",
+      "obiettivo": "Miglioramento della crescita e della salute delle piante",
+      "materiali": [
+        "Prodotto per la regolazione del pH"
+      ],
+      "categoria": "Chimica",
+      "difficolta": "Facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_4",
+      "nome": "Ossigenazione del Substrato",
+      "descrizione": "Aumento dell'ossigenazione del substrato per migliorare la crescita radicale",
+      "obiettivo": "Miglioramento della crescita e della salute delle piante",
+      "materiali": [
+        "Aeratore per substrato"
+      ],
+      "categoria": "Fisiologia",
+      "difficolta": "Medio",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 21,
+      "data_proposta": "2026-06-18",
       "attivo": false,
       "data_attivazione": null
     }
@@ -998,6 +1059,86 @@
       "fonte": " Tecnologia agricola",
       "durata_giorni": 14,
       "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_0",
+      "nome": "Tecnica di Elettrocultura 1",
+      "descrizione": "Applicazione di un campo elettrico alle piante per stimolare la crescita",
+      "obiettivo": "Miglioramento della crescita e della resistenza alle malattie",
+      "materiali": [
+        "Generatore di campo elettrico"
+      ],
+      "categoria": "Elettrocultura",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_1",
+      "nome": "Monitoraggio dell'Umido",
+      "descrizione": "Controllo dell'umidità del substrato per evitare overwatering",
+      "obiettivo": "Miglioramento della salute e della crescita delle piante",
+      "materiali": [
+        "Sensore di umidità"
+      ],
+      "categoria": "Manutenzione",
+      "difficolta": "Facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_2",
+      "nome": "Introduzione di Microrganismi Benefici",
+      "descrizione": "Inserimento di microrganismi benefici nel substrato per migliorare la salute delle piante",
+      "obiettivo": "Miglioramento della resistenza alle malattie e della crescita",
+      "materiali": [
+        "Microrganismi benefici"
+      ],
+      "categoria": "Biologia",
+      "difficolta": "Medio",
+      "fonte": "BioSerra",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_3",
+      "nome": "Regolazione del pH",
+      "descrizione": "Regolazione del pH del substrato per ottimizzare la crescita delle piante",
+      "obiettivo": "Miglioramento della crescita e della salute delle piante",
+      "materiali": [
+        "Prodotto per la regolazione del pH"
+      ],
+      "categoria": "Chimica",
+      "difficolta": "Facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_4",
+      "nome": "Ossigenazione del Substrato",
+      "descrizione": "Aumento dell'ossigenazione del substrato per migliorare la crescita radicale",
+      "obiettivo": "Miglioramento della crescita e della salute delle piante",
+      "materiali": [
+        "Aeratore per substrato"
+      ],
+      "categoria": "Fisiologia",
+      "difficolta": "Medio",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 21,
+      "data_proposta": "2026-06-18",
       "attivo": false,
       "data_attivazione": null
     }
