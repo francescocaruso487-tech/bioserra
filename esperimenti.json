@@ -689,6 +689,39 @@
   ],
   "proposte": [
     {
+      "id": "daily_1781640436681_3",
+      "nome": "Implementazione di un sistema di supporto",
+      "descrizione": "Installazione di un sistema di supporto per aiutare la crescita delle piante e prevenire la rottura dei rami",
+      "obiettivo": "Aiutare la crescita delle piante e prevenire la rottura dei rami",
+      "materiali": [
+        "tavole",
+        "filo",
+        "cordini"
+      ],
+      "categoria": "supporto",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 2,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "daily_1781667046478_0",
+      "nome": "Elettrocultura",
+      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
+      "obiettivo": "Migliorare la crescita e la resa delle piante",
+      "materiali": [
+        "Generatore di elettricità",
+        "Elettrodi"
+      ],
+      "categoria": "Tecniche di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-17",
+      "attivo": false
+    },
+    {
       "id": "daily_1781640224648_2",
       "nome": "Sistema di irrigazione a goccia con fertilizzanti",
       "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
@@ -1363,42 +1396,6 @@
       "data_attivazione": null
     }
   ],
-  "attivi": [
-    {
-      "id": "daily_1781640436681_3",
-      "nome": "Implementazione di un sistema di supporto",
-      "descrizione": "Installazione di un sistema di supporto per aiutare la crescita delle piante e prevenire la rottura dei rami",
-      "obiettivo": "Aiutare la crescita delle piante e prevenire la rottura dei rami",
-      "materiali": [
-        "tavole",
-        "filo",
-        "cordini"
-      ],
-      "categoria": "supporto",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 2,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": "18/06/2026"
-    },
-    {
-      "id": "daily_1781667046478_0",
-      "nome": "Elettrocultura",
-      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
-      "obiettivo": "Migliorare la crescita e la resa delle piante",
-      "materiali": [
-        "Generatore di elettricità",
-        "Elettrodi"
-      ],
-      "categoria": "Tecniche di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-17",
-      "attivo": false,
-      "data_attivazione": "18/06/2026"
-    }
-  ],
+  "attivi": [],
   "aggiornato": "2026-06-19 09:38"
 }
