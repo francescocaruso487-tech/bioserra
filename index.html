@@ -2766,6 +2766,8 @@ async function loadWeather() {
       </div>`;
     }).join('');
     loading.style.display = 'none'; content.style.display = 'block';
+    // Aggiorna card OGGI con dati meteo appena caricati
+    try { renderOggiMaster(); } catch(e2) {}
   } catch(e) {
     loading.style.display = 'none';
     document.getElementById('weather-error-msg').textContent = 'Errore: ' + e.message;
@@ -4982,7 +4984,13 @@ function renderOggiMaster() {
   var fenol = (typeof getFenolFase === 'function') ? getFenolFase(today) : {fase:'-',desc:''};
   var sem = (typeof getSemineOggi === 'function') ? getSemineOggi(today) : {emoji:'-',label:'-',motivo:''};
   var tratt = (typeof getTrattOggi === 'function') ? getTrattOggi(today) : {label:'-',desc:''};
+  var wTempEl = document.getElementById('w-temp');
+  var wIconEl = document.getElementById('w-icon');
+  var wDescEl = document.getElementById('w-desc');
+  var meteoVal = wTempEl && wTempEl.textContent !== '—°' ? (wIconEl?wIconEl.textContent:'🌡️')+' '+wTempEl.textContent : '⏳ Caricamento…';
+  var meteoSub = wDescEl && wDescEl.textContent ? wDescEl.textContent : 'Meteo Caserta';
   var rows = [
+    {icon:'⛅', label:'Meteo', val:meteoVal, sub:meteoSub},
     {icon:'🌙', label:'Luna', val:phase.emoji+' '+phase.name, sub:getMoonIllum(age)+'% illum.'},
     {icon:'🌱', label:'Biodinamica', val:bioT.icon+' '+bioT.label, sub:bio.sym+' '+bio.name},
     {icon:'☀️', label:'Fotoperiodo', val:sun.dayLen.toFixed(1).replace('.',',')+' h luce', sub:'Alba '+hToHHMM(sun.sunrise)+' Tramonto '+hToHHMM(sun.sunset)},
@@ -5052,12 +5060,47 @@ function openDayPopup(date) {
 }
 
 /* ── Init ambiente (chiamato da showSection) ── */
+async function loadCalOggiAI() {
+  var el = document.getElementById('cal-oggi-ai');
+  if (!el) return;
+  // Prova luna_consigli.json
+  try {
+    var r = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/luna_consigli.json');
+    if (r.ok) {
+      var d = await r.json();
+      var items = d.consigli || d.items || d.consigli_lunari || [];
+      var today_key = new Date().toISOString().slice(0,10);
+      // Cerca il consiglio di oggi per data o come primo elemento
+      var item = items.find(function(i){ return (i.data||i.date||'').startsWith(today_key); }) || items[0];
+      if (item) {
+        var testo = item.testo || item.body || item.consiglio || '';
+        if (testo) { el.textContent = testo; return; }
+      }
+    }
+  } catch(e) {}
+  // Prova brain.json
+  try {
+    var r2 = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/brain.json');
+    if (r2.ok) {
+      var d2 = await r2.json();
+      var cons = d2.consiglio_oggi || d2.consiglio || d2.messaggio || '';
+      if (cons) { el.textContent = cons; return; }
+    }
+  } catch(e2) {}
+  // Fallback calcolato
+  var age = getMoonAge(new Date()); var ph = getMoonPhase(age); var bio = getDayType(new Date());
+  var adv = getAdvice(ph.code);
+  el.textContent = ph.emoji + ' ' + ph.name + ' · ' + DAY_TYPES[bio.type].icon + ' ' + DAY_TYPES[bio.type].label + ' — ' + adv.main;
+}
+
 function initAmbiente() {
   _doLoadWeather();
   setTimeout(_doRenderLunar, 50);
   _doRenderBio();
   // GDD richiede fetch asincrono
   setTimeout(function(){ try { loadGDD(); } catch(e) {} }, 200);
+  // Consiglio AI del giorno
+  setTimeout(function(){ try { loadCalOggiAI(); } catch(e) {} }, 300);
 }
 
 /* ══════════════════════════════════════════════════════════════
