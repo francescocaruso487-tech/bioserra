@@ -1058,201 +1058,147 @@
 <!-- AMBIENTE - pagina scorrevole continua -->
 <section id="sec-ambiente" class="section">
 
-  <!-- ══ 1. CARD OGGI ══ -->
-  <div class="card amb-oggi-master" onclick="openDayPopup(new Date())" style="cursor:pointer;background:linear-gradient(135deg,rgba(74,175,94,0.13),rgba(58,159,216,0.09));border-color:rgba(74,175,94,0.35);">
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
-      <div style="font-size:15px;font-weight:700;" id="oggi-data-master">—</div>
+  <!-- CARD OGGI -->
+  <div class="card amb-oggi-master" onclick="openDayPopup(new Date())" style="cursor:pointer;background:linear-gradient(135deg,rgba(74,175,94,0.13),rgba(58,159,216,0.09));border-color:rgba(74,175,94,0.35);margin-bottom:10px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      <div style="font-size:14px;font-weight:700;" id="oggi-data-master">—</div>
       <div style="font-size:10px;color:var(--text3);">Tocca per riepilogo →</div>
     </div>
-    <div id="oggi-master-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:10px;"></div>
-    <div id="oggi-master-consiglio" style="font-size:12px;color:var(--text2);line-height:1.6;padding:8px 10px;background:var(--bg3);border-radius:8px;border-left:3px solid var(--green);"></div>
+    <div id="oggi-master-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px;"></div>
+    <div id="oggi-master-consiglio" style="font-size:12px;color:var(--text2);line-height:1.6;padding:7px 10px;background:var(--bg3);border-radius:7px;border-left:3px solid var(--green);"></div>
   </div>
-  <div class="card" style="padding:10px 14px;" onclick="openDayPopup(new Date())" style="cursor:pointer;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:5px;">🤖 CONSIGLIO AI DEL GIORNO</div>
-    <div id="cal-oggi-ai" style="font-size:13px;color:var(--text2);line-height:1.7;">⏳ Caricamento…</div>
-  </div>
-
-  <!-- ══ 2. METEO + CLIMA ══ -->
-  <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:0.8px;padding:18px 4px 8px;border-bottom:1px solid var(--border);margin-bottom:12px;">⛅ Meteo & Clima — Caserta</div>
-
-  <div id="w-serra-alert" style="display:none;border-radius:10px;padding:9px 13px;margin-bottom:10px;background:rgba(239,83,80,0.12);border:1px solid rgba(239,83,80,0.3);color:#ef9a9a;font-size:12px;line-height:1.5;"><span id="w-serra-alert-text"></span></div>
-
-  <div id="weather-loading" class="card" style="text-align:center;padding:24px;">
-    <div style="font-size:28px;">🌤️</div><div style="color:var(--text3);font-size:13px;margin-top:8px;">Caricamento meteo…</div>
-  </div>
-  <div id="weather-error" class="card" style="display:none;text-align:center;padding:18px;">
-    <div style="font-size:24px;">⚠️</div>
-    <div style="color:var(--text2);font-size:13px;margin-top:6px;" id="weather-error-msg">Errore meteo</div>
-    <button onclick="_doLoadWeather()" style="margin-top:10px;padding:6px 16px;background:var(--green);border:none;border-radius:8px;color:#fff;cursor:pointer;font-size:13px;">Riprova</button>
+  <div class="card" style="padding:10px 14px;margin-bottom:4px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:4px;">🤖 CONSIGLIO AI</div>
+    <div id="cal-oggi-ai" style="font-size:13px;color:var(--text2);line-height:1.6;">⏳ Caricamento…</div>
   </div>
 
+  <!-- DIVISORE -->
+  <div style="height:1px;background:var(--border);margin:16px 0 12px;"></div>
+  <div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;">⛅ Meteo & Clima</div>
+
+  <!-- Alert -->
+  <div id="w-serra-alert" style="display:none;border-radius:10px;padding:8px 12px;margin-bottom:8px;background:rgba(239,83,80,0.12);border:1px solid rgba(239,83,80,0.3);color:#ef9a9a;font-size:12px;"><span id="w-serra-alert-text"></span></div>
+
+  <!-- Meteo loading/error/content -->
+  <div id="weather-loading" class="card" style="text-align:center;padding:20px;"><div style="font-size:24px;">🌤️</div><div style="color:var(--text3);font-size:12px;margin-top:6px;">Caricamento…</div></div>
+  <div id="weather-error" class="card" style="display:none;text-align:center;padding:16px;">
+    <div style="font-size:12px;color:var(--text2);" id="weather-error-msg">Errore meteo</div>
+    <button onclick="_doLoadWeather()" style="margin-top:8px;padding:5px 14px;background:var(--green);border:none;border-radius:7px;color:#fff;cursor:pointer;font-size:12px;">Riprova</button>
+  </div>
   <div id="weather-content" style="display:none;">
-    <!-- Temperatura principale + badge clima -->
+    <!-- Temperatura + dati + badge tutto insieme -->
     <div class="card" onclick="openAmbPopup('meteo-main')" style="cursor:pointer;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
-        <div style="font-size:10px;color:var(--text3);">📍 Caserta · agg. <span id="w-lastupdate">—</span></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+        <div style="font-size:10px;color:var(--text3);">📍 Caserta · <span id="w-lastupdate">—</span></div>
         <div style="font-size:10px;color:var(--text3);">→ dettaglio</div>
       </div>
-      <div style="display:flex;align-items:center;gap:14px;">
-        <div style="font-size:52px;line-height:1;" id="w-icon">☀️</div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <div style="font-size:48px;line-height:1;" id="w-icon">☀️</div>
         <div style="flex:1;">
-          <div style="font-size:30px;font-weight:800;" id="w-temp">—°</div>
+          <div style="font-size:28px;font-weight:800;" id="w-temp">—°</div>
           <div style="font-size:12px;color:var(--text2);" id="w-desc">—</div>
-          <div style="font-size:11px;color:var(--text3);">Percepita <span id="w-feels">—</span>°</div>
+          <div style="font-size:11px;color:var(--text3);">Perc. <span id="w-feels">—</span>° · 💧<span id="w-humidity">—</span> · 💨<span id="w-wind">—</span>km/h · UV<span id="w-uv">—</span></div>
         </div>
-        <div style="display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--text2);text-align:right;">
-          <div>💧 <span id="w-humidity">—</span></div>
-          <div>💨 <span id="w-wind">—</span> km/h</div>
-          <div>🔆 UV <span id="w-uv">—</span></div>
-          <div>🌧️ <span id="w-rain">—</span> mm</div>
-          <div>🌡️ <span id="w-pressure">—</span> hPa</div>
+        <div style="font-size:12px;color:var(--text2);text-align:right;">
+          <div>🌡️<span id="w-pressure">—</span></div>
+          <div>🌧️<span id="w-rain">—</span>mm</div>
+          <div>💦ETo<span id="w-et">—</span></div>
         </div>
       </div>
-      <!-- Badge GDD + Gelo + Irrigazione nella stessa card -->
-      <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap;">
-        <div style="background:rgba(58,159,216,0.14);border-radius:8px;padding:5px 10px;font-size:12px;flex:1;min-width:80px;text-align:center;">
-          📈 GDD <strong id="w-gdd-badge">…</strong>
-        </div>
-        <div id="w-gelo-badge" style="background:rgba(96,165,250,0.14);border-radius:8px;padding:5px 10px;font-size:12px;flex:1;min-width:80px;text-align:center;display:none;">
-          ❄️ <strong id="w-gelo-badge-txt">—</strong>
-        </div>
-        <div style="background:rgba(74,175,94,0.12);border-radius:8px;padding:5px 10px;font-size:12px;flex:2;min-width:130px;">
-          💦 <span id="w-irrig-main">—</span>
-        </div>
+      <!-- Badge compatti -->
+      <div style="display:flex;gap:5px;flex-wrap:wrap;">
+        <div style="background:rgba(74,175,94,0.12);border-radius:7px;padding:4px 9px;font-size:11px;flex:1;min-width:90px;" id="w-irrig-main">—</div>
+        <div style="background:rgba(58,159,216,0.12);border-radius:7px;padding:4px 9px;font-size:11px;">📈<span id="w-gdd-badge">…</span></div>
+        <div id="w-gelo-badge" style="background:rgba(96,165,250,0.14);border-radius:7px;padding:4px 9px;font-size:11px;display:none;">❄️<span id="w-gelo-badge-txt">—</span></div>
       </div>
     </div>
-
-    <!-- Alba / Tramonto / Fotoperiodo / ETo — riga compatta -->
-    <div class="card" style="padding:10px 14px;">
-      <div style="display:flex;justify-content:space-around;text-align:center;gap:4px;">
-        <div onclick="openAmbPopup('foto-oggi')" style="cursor:pointer;flex:1;">
-          <div style="font-size:16px;">🌅</div>
-          <div style="font-size:12px;font-weight:700;" id="w-sunrise">—</div>
-          <div style="font-size:9px;color:var(--text3);">Alba</div>
-        </div>
-        <div onclick="openAmbPopup('foto-oggi')" style="cursor:pointer;flex:1;">
-          <div style="font-size:16px;">⏱️</div>
-          <div style="font-size:12px;font-weight:700;" id="w-daylen">—</div>
-          <div style="font-size:9px;color:var(--text3);">Ore luce</div>
-        </div>
-        <div onclick="openAmbPopup('foto-oggi')" style="cursor:pointer;flex:1;">
-          <div style="font-size:16px;">🌇</div>
-          <div style="font-size:12px;font-weight:700;" id="w-sunset">—</div>
-          <div style="font-size:9px;color:var(--text3);">Tramonto</div>
-        </div>
-        <div onclick="openAmbPopup('meteo-et')" style="cursor:pointer;flex:1;">
-          <div style="font-size:16px;">💦</div>
-          <div style="font-size:12px;font-weight:700;" id="w-et">—</div>
-          <div style="font-size:9px;color:var(--text3);">ETo mm</div>
-        </div>
+    <!-- Alba/Tramonto/Ore luce/ETo riga compatta -->
+    <div class="card" style="padding:8px 12px;">
+      <div style="display:flex;justify-content:space-around;text-align:center;">
+        <div onclick="openAmbPopup('foto-oggi')" style="cursor:pointer;flex:1;"><div style="font-size:14px;">🌅</div><div style="font-size:12px;font-weight:700;" id="w-sunrise">—</div><div style="font-size:9px;color:var(--text3);">Alba</div></div>
+        <div onclick="openAmbPopup('foto-oggi')" style="cursor:pointer;flex:1;"><div style="font-size:14px;">⏱️</div><div style="font-size:12px;font-weight:700;" id="w-daylen">—</div><div style="font-size:9px;color:var(--text3);">Ore luce</div></div>
+        <div onclick="openAmbPopup('foto-oggi')" style="cursor:pointer;flex:1;"><div style="font-size:14px;">🌇</div><div style="font-size:12px;font-weight:700;" id="w-sunset">—</div><div style="font-size:9px;color:var(--text3);">Tramonto</div></div>
+        <div onclick="openAmbPopup('meteo-et')" style="cursor:pointer;flex:1;"><div style="font-size:14px;">💦</div><div style="font-size:12px;font-weight:700;" id="w-et2">—</div><div style="font-size:9px;color:var(--text3);">ETo mm</div></div>
       </div>
     </div>
-
-    <!-- Previsioni 7 giorni -->
-    <div class="card" style="padding:10px 14px;">
-      <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:8px;">📡 PREVISIONI 7 GIORNI</div>
+    <!-- Previsioni 7 gg -->
+    <div class="card" style="padding:8px 12px;">
+      <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:6px;">📡 7 GIORNI</div>
       <div id="w-forecast"></div>
     </div>
-
-    <!-- GDD: numero + grafico mensile + varietà -->
-    <div class="card" onclick="openAmbPopup('gdd-dettaglio')" style="cursor:pointer;background:linear-gradient(135deg,rgba(58,159,216,0.08),rgba(30,74,108,0.05));">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+    <!-- GDD + Gelo fusi -->
+    <div class="card" onclick="openAmbPopup('gdd-dettaglio')" style="cursor:pointer;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
         <div>
-          <div style="font-size:11px;font-weight:700;color:var(--blue);">📈 GDD STAGIONE 2026</div>
-          <div style="font-size:24px;font-weight:800;color:var(--blue);margin-top:2px;" id="cal-gdd-totale">—</div>
-          <div style="font-size:10px;color:var(--text3);">T base 10°C · dall'1 gennaio</div>
+          <div style="font-size:10px;font-weight:700;color:var(--blue);">📈 GDD 2026</div>
+          <div style="font-size:22px;font-weight:800;color:var(--blue);" id="cal-gdd-totale">—</div>
+          <div style="font-size:9px;color:var(--text3);">base 10°C · dal 1 gen</div>
         </div>
         <div style="text-align:right;">
-          <div style="font-size:11px;font-weight:700;color:#93c5fd;">❄️ RISCHIO GELO</div>
-          <div style="font-size:13px;font-weight:700;margin-top:2px;" id="cal-gelo-status">Calcolo…</div>
+          <div style="font-size:10px;font-weight:700;color:#93c5fd;">❄️ GELO</div>
+          <div style="font-size:13px;font-weight:700;" id="cal-gelo-status">…</div>
           <div style="font-size:10px;color:var(--text3);" id="cal-gelo-desc">—</div>
         </div>
       </div>
-      <div id="cal-gdd-loading" style="font-size:11px;color:var(--text3);text-align:center;padding:4px;">⏳ Caricamento GDD da Open-Meteo…</div>
+      <div id="cal-gdd-loading" style="font-size:10px;color:var(--text3);">⏳ Open-Meteo…</div>
       <div id="cal-gdd-content" style="display:none;"></div>
-      <div id="cal-gdd-chart" style="display:flex;flex-direction:column;gap:3px;margin-top:4px;"></div>
-      <div style="font-size:10px;color:var(--text3);margin-top:6px;text-align:right;">Tocca per dettaglio completo →</div>
+      <div id="cal-gdd-chart" style="display:flex;flex-direction:column;gap:2px;margin-top:4px;"></div>
+      <div style="font-size:9px;color:var(--text3);margin-top:4px;">→ dettaglio</div>
     </div>
-    <div class="card" style="padding:10px 14px;">
-      <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">🌿 GDD PER VARIETÀ</div>
-      <div id="cal-gdd-piante" style="display:flex;flex-direction:column;gap:5px;"></div>
+    <div class="card" style="padding:8px 12px;">
+      <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:6px;">🌿 GDD PER VARIETÀ</div>
+      <div id="cal-gdd-piante" style="display:flex;flex-direction:column;gap:4px;"></div>
     </div>
-  </div><!-- fine weather-content -->
+  </div>
 
-  <!-- ══ 3. LUNA & BIODINAMICA ══ -->
-  <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:0.8px;padding:18px 4px 8px;border-bottom:1px solid var(--border);margin-bottom:12px;">🌙 Luna & Biodinamica</div>
+  <!-- DIVISORE -->
+  <div style="height:1px;background:var(--border);margin:16px 0 12px;"></div>
+  <div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;">🌙 Luna & Biodinamica</div>
 
-  <!-- Luna principale: fase + barra + countdown -->
-  <div class="card" onclick="openAmbPopup('luna-fase')" style="cursor:pointer;background:linear-gradient(135deg,rgba(58,159,216,0.1),rgba(30,74,108,0.07));">
-    <div style="display:flex;align-items:center;gap:14px;">
-      <div style="font-size:56px;line-height:1;filter:drop-shadow(0 0 10px rgba(58,159,216,0.4));" id="moonSymbol">🌕</div>
+  <!-- Luna + Bio: card unica densa -->
+  <div class="card" onclick="openAmbPopup('luna-fase')" style="cursor:pointer;background:linear-gradient(135deg,rgba(58,159,216,0.09),rgba(30,74,108,0.06));">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+      <div style="font-size:48px;line-height:1;" id="moonSymbol">🌕</div>
       <div style="flex:1;">
-        <div style="font-size:18px;font-weight:700;" id="moonPhaseName">Calcolo…</div>
-        <div style="font-size:12px;color:var(--text2);margin:3px 0;"><strong id="moonIllumPct">—%</strong> · Età <span id="moonAge" style="color:#f0843c;font-weight:600;">—</span> gg</div>
-        <div style="height:5px;background:rgba(255,255,255,0.08);border-radius:3px;overflow:hidden;">
-          <div id="moonProgressBar" style="height:100%;background:linear-gradient(90deg,#3a9fd8,#4aaf5e);border-radius:3px;width:0%;transition:width 0.6s;"></div>
-        </div>
-        <div style="font-size:10px;color:var(--text3);margin-top:3px;" id="moonDateToday"></div>
+        <div style="font-size:16px;font-weight:700;" id="moonPhaseName">…</div>
+        <div style="font-size:11px;color:var(--text2);"><span id="moonIllumPct">—</span>% · età <span id="moonAge" style="color:#f0843c;font-weight:600;">—</span>gg</div>
+        <div style="height:4px;background:rgba(255,255,255,0.08);border-radius:2px;margin-top:5px;overflow:hidden;"><div id="moonProgressBar" style="height:100%;background:linear-gradient(90deg,#3a9fd8,#4aaf5e);border-radius:2px;width:0%;transition:width 0.6s;"></div></div>
+        <div style="font-size:9px;color:var(--text3);margin-top:2px;" id="moonDateToday"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:4px;text-align:center;">
+        <div style="background:rgba(240,132,60,0.12);border-radius:7px;padding:5px 8px;"><div style="font-size:15px;font-weight:800;color:#f0843c;" id="daysToFull">—</div><div style="font-size:9px;color:var(--text2);">🌕<div id="dateFullMoon" style="font-size:9px;color:var(--text3);">—</div></div></div>
+        <div style="background:rgba(58,159,216,0.12);border-radius:7px;padding:5px 8px;"><div style="font-size:15px;font-weight:800;color:#3a9fd8;" id="daysToNew">—</div><div style="font-size:9px;color:var(--text2);">🌑<div id="dateNewMoon" style="font-size:9px;color:var(--text3);">—</div></div></div>
       </div>
     </div>
-    <!-- Countdown piena/nuova -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px;">
-      <div style="background:rgba(240,132,60,0.1);border-radius:8px;padding:7px;text-align:center;">
-        <div style="font-size:18px;font-weight:800;color:#f0843c;" id="daysToFull">—</div>
-        <div style="font-size:10px;color:var(--text2);">🌕 Luna Piena</div>
-        <div style="font-size:10px;color:var(--text3);" id="dateFullMoon">—</div>
-      </div>
-      <div style="background:rgba(58,159,216,0.1);border-radius:8px;padding:7px;text-align:center;">
-        <div style="font-size:18px;font-weight:800;color:#3a9fd8;" id="daysToNew">—</div>
-        <div style="font-size:10px;color:var(--text2);">🌑 Luna Nuova</div>
-        <div style="font-size:10px;color:var(--text3);" id="dateNewMoon">—</div>
-      </div>
-    </div>
-    <!-- Consiglio lunare breve -->
-    <div id="agriAdviceMain" style="font-size:12px;color:var(--text2);margin-top:8px;padding:7px 10px;background:rgba(255,255,255,0.03);border-radius:7px;line-height:1.5;"></div>
-    <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per guida completa alle fasi →</div>
+    <div id="agriAdviceMain" style="font-size:11px;color:var(--text2);padding:6px 8px;background:rgba(255,255,255,0.03);border-radius:6px;line-height:1.5;"></div>
+    <div style="font-size:9px;color:var(--text3);margin-top:5px;">→ guida fasi complete</div>
   </div>
 
-  <!-- Biodinamica: banner oggi + prossimi 3 gg -->
-  <div id="bio-today-banner" class="bio-today-banner bio-banner-frutto" onclick="openAmbPopup('bio-oggi')" style="cursor:pointer;margin-bottom:10px;">
+  <!-- Banner bio -->
+  <div id="bio-today-banner" class="bio-today-banner bio-banner-frutto" onclick="openAmbPopup('bio-oggi')" style="cursor:pointer;margin-bottom:8px;">
     <div class="bio-today-icon" id="bio-today-icon">🍊</div>
-    <div>
-      <div class="bio-today-type" id="bio-today-type">Giorno Frutto</div>
-      <div class="bio-today-date" id="bio-today-date">—</div>
-      <div class="bio-today-advice" id="bio-today-advice">—</div>
-    </div>
+    <div><div class="bio-today-type" id="bio-today-type">Giorno Frutto</div><div class="bio-today-date" id="bio-today-date">—</div><div class="bio-today-advice" id="bio-today-advice">—</div></div>
   </div>
 
-  <!-- Prossimi 3 giorni bio + luna insieme -->
-  <div class="card">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:8px;">📅 PROSSIMI 3 GIORNI</div>
-    <div id="bio-3giorni" style="display:flex;flex-direction:column;gap:6px;"></div>
+  <!-- Prossimi 3 giorni -->
+  <div class="card" style="padding:8px 12px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:6px;">📅 PROSSIMI 3 GIORNI</div>
+    <div id="bio-3giorni" style="display:flex;flex-direction:column;gap:5px;"></div>
   </div>
 
-  <!-- Strip 7 giorni luna -->
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:8px;">🌙 PROSSIMI 7 GIORNI</div>
-    <div id="moonStrip" style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;"></div>
-  </div>
-
-  <!-- Griglia biodinamica mensile -->
-  <div class="card">
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
-      <div style="font-size:11px;font-weight:700;color:var(--text3);">🗓️ GRIGLIA MENSILE</div>
-      <div style="display:flex;gap:6px;align-items:center;">
+  <!-- Griglia mensile -->
+  <div class="card" style="padding:8px 12px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      <div style="font-size:10px;font-weight:700;color:var(--text3);">🗓️ GRIGLIA MENSILE</div>
+      <div style="display:flex;gap:4px;align-items:center;">
         <button class="bio-nav-btn" onclick="calBioChangeMonth(-1);event.stopPropagation();">‹</button>
-        <span id="cal-bio-month" style="font-size:12px;color:var(--text2);min-width:80px;text-align:center;">—</span>
+        <span id="cal-bio-month" style="font-size:11px;color:var(--text2);min-width:70px;text-align:center;">—</span>
         <button class="bio-nav-btn" onclick="calBioChangeMonth(1);event.stopPropagation();">›</button>
       </div>
     </div>
-    <div class="bio-grid-header">
-      <div class="bio-grid-header-cell">L</div><div class="bio-grid-header-cell">M</div>
-      <div class="bio-grid-header-cell">M</div><div class="bio-grid-header-cell">G</div>
-      <div class="bio-grid-header-cell">V</div><div class="bio-grid-header-cell">S</div>
-      <div class="bio-grid-header-cell">D</div>
-    </div>
+    <div class="bio-grid-header"><div class="bio-grid-header-cell">L</div><div class="bio-grid-header-cell">M</div><div class="bio-grid-header-cell">M</div><div class="bio-grid-header-cell">G</div><div class="bio-grid-header-cell">V</div><div class="bio-grid-header-cell">S</div><div class="bio-grid-header-cell">D</div></div>
     <div class="bio-grid" id="cal-bio-grid"></div>
-    <div class="bio-legend" style="margin-top:8px;">
+    <div class="bio-legend" style="margin-top:6px;">
       <div class="bio-legend-item"><div class="bio-legend-dot dot-frutto"></div>Frutto</div>
       <div class="bio-legend-item"><div class="bio-legend-dot dot-fiore"></div>Fiore</div>
       <div class="bio-legend-item"><div class="bio-legend-dot dot-radice"></div>Radice</div>
@@ -1260,151 +1206,139 @@
     </div>
   </div>
 
-  <!-- Consigli lunari da JSON -->
-  <div class="card" style="background:linear-gradient(135deg,rgba(74,175,94,0.08),rgba(58,159,216,0.06));border-color:rgba(74,175,94,0.2);">
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
-      <div style="font-size:11px;font-weight:700;color:var(--text3);">🌾 CONSIGLI LUNARI</div>
-      <button class="json-reload-btn" onclick="loadLunaJSON();event.stopPropagation();">🔄</button>
-    </div>
-    <div id="luna-consigli-6sezioni" style="display:flex;flex-direction:column;gap:4px;"></div>
-    <div style="font-size:10px;color:var(--text3);margin-top:6px;" id="luna-json-meta">—</div>
+  <!-- Strip 7 giorni luna + consigli lunari fusi -->
+  <div class="card" style="padding:8px 12px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:6px;">🌙 7 GIORNI · CONSIGLI LUNARI</div>
+    <div id="moonStrip" style="display:flex;gap:5px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;margin-bottom:8px;"></div>
+    <!-- Consigli lunari: lc-* diretti qui -->
+    <div id="lc-attivita" style="font-size:12px;color:var(--text2);padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.05);"></div>
+    <div id="lc-irrigazione" style="font-size:12px;color:var(--text2);padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.05);"></div>
+    <div id="lc-nutrizione" style="font-size:12px;color:var(--text2);padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.05);"></div>
+    <div id="lc-elettro" style="font-size:12px;color:var(--text2);padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.05);"></div>
+    <div id="lc-avviso" style="font-size:12px;color:#f0843c;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.05);"></div>
+    <div id="lc-previsione" style="font-size:12px;color:var(--text3);padding:5px 0;"></div>
+    <div style="font-size:9px;color:var(--text3);margin-top:4px;" id="luna-json-meta">—</div>
   </div>
 
-  <!-- 8 fasi + ciclo corrente -->
-  <div class="card" onclick="openAmbPopup('luna-fasi')" style="cursor:pointer;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:8px;">🌑🌒🌓🌔🌕🌖🌗🌘 LE 8 FASI</div>
-    <table style="width:100%;border-collapse:collapse;font-size:12px;" id="phasesTable"><tbody></tbody></table>
-    <div id="moonCycleInfo" style="font-size:12px;color:var(--text2);margin-top:8px;line-height:1.7;"></div>
+  <!-- 8 fasi -->
+  <div class="card" style="padding:8px 12px;" onclick="openAmbPopup('luna-fasi')" style="cursor:pointer;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:6px;">🌑→🌕 LE 8 FASI</div>
+    <table style="width:100%;border-collapse:collapse;font-size:11px;" id="phasesTable"><tbody></tbody></table>
+    <div id="moonCycleInfo" style="font-size:11px;color:var(--text2);margin-top:6px;line-height:1.7;"></div>
   </div>
 
-  <!-- ══ 4. COLTURA OGGI ══ -->
-  <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:0.8px;padding:18px 4px 8px;border-bottom:1px solid var(--border);margin-bottom:12px;">🌱 Coltura — Semine, Trattamenti, Lavori</div>
+  <!-- DIVISORE -->
+  <div style="height:1px;background:var(--border);margin:16px 0 12px;"></div>
+  <div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;">🌱 Coltura — Semine, Trattamenti, Lavori</div>
 
-  <!-- Semine: semaforo + varietà -->
+  <!-- Semine: semaforo + 10 varietà + 2 settimane -->
   <div class="card" onclick="openAmbPopup('semine-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(74,175,94,0.09),rgba(76,175,80,0.05));">
-    <div style="font-size:11px;font-weight:700;color:var(--green3);margin-bottom:8px;">🌱 SEMINE & TRAPIANTI — OGGI</div>
-    <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px;">
-      <div style="font-size:36px;" id="cal-sem-emoji">⏳</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;" id="cal-sem-label">Calcolo…</div>
-        <div style="font-size:11px;color:var(--text2);margin-top:2px;" id="cal-sem-motivo">—</div>
-      </div>
+    <div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:6px;">🌱 SEMINE & TRAPIANTI</div>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <div style="font-size:32px;" id="cal-sem-emoji">⏳</div>
+      <div><div style="font-size:13px;font-weight:700;" id="cal-sem-label">…</div><div style="font-size:11px;color:var(--text2);" id="cal-sem-motivo">—</div></div>
     </div>
-    <div style="font-size:10px;color:var(--text3);">Tocca per dettaglio varietà →</div>
   </div>
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">🌿 LE 10 VARIETÀ — FASE ATTUALE</div>
-    <div id="cal-sem-piante" style="display:flex;flex-direction:column;gap:5px;"></div>
+  <div class="card" style="padding:8px 12px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:5px;">🌿 LE 10 VARIETÀ</div>
+    <div id="cal-sem-piante" style="display:flex;flex-direction:column;gap:4px;"></div>
   </div>
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">📅 PROSSIME 2 SETTIMANE — FINESTRE SEMINE</div>
-    <div id="cal-sem-strip" style="display:flex;flex-direction:column;gap:5px;"></div>
+  <div class="card" style="padding:8px 12px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:5px;">📅 PROSSIME 2 SETTIMANE</div>
+    <div id="cal-sem-strip" style="display:flex;flex-direction:column;gap:4px;"></div>
   </div>
 
-  <!-- Trattamenti: consiglio + schema -->
+  <!-- Trattamenti -->
   <div class="card" onclick="openAmbPopup('tratt-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(171,71,188,0.09),rgba(156,39,176,0.05));">
-    <div style="font-size:11px;font-weight:700;color:var(--purple);margin-bottom:8px;">🧪 TRATTAMENTO OTTIMALE OGGI</div>
-    <div style="font-size:14px;font-weight:600;" id="cal-tratt-label">Calcolo…</div>
-    <div style="font-size:11px;color:var(--text2);margin-top:3px;" id="cal-tratt-desc">—</div>
-    <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per ricetta completa →</div>
+    <div style="font-size:10px;font-weight:700;color:var(--purple);margin-bottom:6px;">🧪 TRATTAMENTO OGGI</div>
+    <div style="font-size:13px;font-weight:600;" id="cal-tratt-label">…</div>
+    <div style="font-size:11px;color:var(--text2);margin-top:2px;" id="cal-tratt-desc">—</div>
+    <div style="font-size:9px;color:var(--text3);margin-top:5px;">→ ricetta completa</div>
   </div>
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">📆 SCHEMA MENSILE TRATTAMENTI</div>
-    <div id="cal-tratt-schema" style="display:flex;flex-direction:column;gap:7px;"></div>
+  <div class="card" style="padding:8px 12px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:5px;">📆 SCHEMA MENSILE</div>
+    <div id="cal-tratt-schema" style="display:flex;flex-direction:column;gap:6px;"></div>
   </div>
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">🛡️ DIFESA INTEGRATA</div>
+  <div class="card" style="padding:8px 12px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:5px;">📅 FINESTRE 7 GIORNI</div>
+    <div id="cal-tratt-finestre" style="display:flex;flex-direction:column;gap:4px;"></div>
+  </div>
+  <div class="card" style="padding:8px 12px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:5px;">🛡️ DIFESA INTEGRATA</div>
     <div id="cal-tratt-difesa" style="display:flex;flex-direction:column;gap:5px;"></div>
   </div>
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">📅 FINESTRE IDEALI — 7 GIORNI</div>
-    <div id="cal-tratt-finestre" style="display:flex;flex-direction:column;gap:5px;"></div>
-  </div>
 
-  <!-- Lavori: oggi + settimana + mese -->
+  <!-- Lavori -->
   <div class="card" onclick="openAmbPopup('lavori-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(188,170,164,0.09),rgba(161,136,127,0.05));">
-    <div style="font-size:11px;font-weight:700;color:#bcaaa4;margin-bottom:8px;">🔧 LAVORI CONSIGLIATI OGGI</div>
-    <div id="cal-lavori-oggi" style="font-size:13px;color:var(--text2);line-height:1.7;"></div>
+    <div style="font-size:10px;font-weight:700;color:#bcaaa4;margin-bottom:6px;">🔧 LAVORI DI OGGI</div>
+    <div id="cal-lavori-oggi" style="font-size:12px;color:var(--text2);line-height:1.7;"></div>
   </div>
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">📅 PIANO SETTIMANA</div>
-    <div id="cal-lavori-settimana" style="display:flex;flex-direction:column;gap:6px;"></div>
+  <div class="card" style="padding:8px 12px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:5px;">📅 PIANO SETTIMANA</div>
+    <div id="cal-lavori-settimana" style="display:flex;flex-direction:column;gap:5px;"></div>
   </div>
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">📋 PIANO MENSILE</div>
-    <div id="cal-lavori-mese" style="display:flex;flex-direction:column;gap:5px;"></div>
+  <div class="card" style="padding:8px 12px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:5px;">📋 PIANO MENSILE</div>
+    <div id="cal-lavori-mese" style="display:flex;flex-direction:column;gap:4px;"></div>
   </div>
 
-  <!-- ══ 5. FOTOPERIODO & FENOLOGIA ══ -->
-  <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:0.8px;padding:18px 4px 8px;border-bottom:1px solid var(--border);margin-bottom:12px;">☀️ Fotoperiodo & Fenologia</div>
+  <!-- DIVISORE -->
+  <div style="height:1px;background:var(--border);margin:16px 0 12px;"></div>
+  <div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;">☀️ Luce, Stagione & Raccolta</div>
 
-  <div class="card" onclick="openAmbPopup('foto-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,193,7,0.09),rgba(255,152,0,0.05));">
-    <div style="font-size:11px;font-weight:700;color:#ffd54f;margin-bottom:8px;">☀️ FOTOPERIODO OGGI — 41.10°N</div>
-    <div style="display:flex;align-items:center;gap:14px;margin-bottom:8px;">
-      <div style="font-size:40px;">☀️</div>
+  <!-- Fotoperiodo compatto -->
+  <div class="card" onclick="openAmbPopup('foto-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,193,7,0.08),rgba(255,152,0,0.04));">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+      <div style="font-size:36px;">☀️</div>
       <div>
-        <div style="font-size:22px;font-weight:800;color:#ffd54f;" id="cal-foto-ore">—h</div>
-        <div style="font-size:12px;color:var(--text2);" id="cal-foto-alba-tr">— → —</div>
+        <div style="font-size:20px;font-weight:800;color:#ffd54f;" id="cal-foto-ore">—h</div>
+        <div style="font-size:11px;color:var(--text2);" id="cal-foto-alba-tr">— → —</div>
+      </div>
+      <div style="margin-left:auto;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:10px;font-weight:700;color:var(--green3);">⚡ AUTO</div>
+        <div style="font-size:10px;color:var(--text2);" id="cal-foto-auto">—</div>
+        <div style="font-size:10px;font-weight:700;color:var(--purple);margin-top:3px;">🌸 FEMM</div>
+        <div style="font-size:10px;color:var(--text2);" id="cal-foto-femm">—</div>
       </div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-      <div style="background:rgba(74,175,94,0.1);border-radius:8px;padding:7px;">
-        <div style="font-size:10px;font-weight:700;color:var(--green3);">⚡ AUTOFIORENTI</div>
-        <div style="font-size:11px;color:var(--text2);margin-top:2px;" id="cal-foto-auto">—</div>
-      </div>
-      <div style="background:rgba(171,71,188,0.1);border-radius:8px;padding:7px;">
-        <div style="font-size:10px;font-weight:700;color:var(--purple);">🌸 FEMMINIZZATE</div>
-        <div style="font-size:11px;color:var(--text2);margin-top:2px;" id="cal-foto-femm">—</div>
-      </div>
-    </div>
+    <div id="cal-foto-chart" style="display:flex;flex-direction:column;gap:3px;"></div>
   </div>
 
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">📊 ORE LUCE — ANNO CASERTA</div>
-    <div id="cal-foto-chart" style="display:flex;flex-direction:column;gap:4px;"></div>
+  <!-- Fenologico -->
+  <div class="card" onclick="openAmbPopup('fenol-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,152,0,0.08),rgba(255,87,34,0.04));">
+    <div style="font-size:10px;font-weight:700;color:var(--orange);margin-bottom:5px;">🌸 FASE FENOLOGICA</div>
+    <div style="font-size:13px;font-weight:600;" id="cal-fenol-fase">…</div>
+    <div style="font-size:11px;color:var(--text2);margin-top:2px;" id="cal-fenol-desc">—</div>
+  </div>
+  <div class="card" style="padding:8px 12px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:5px;">🌿 FASE PER VARIETÀ</div>
+    <div id="cal-fenol-piante" style="display:flex;flex-direction:column;gap:4px;"></div>
+  </div>
+  <div class="card" style="padding:8px 12px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:5px;">📅 STAGIONALE 2026</div>
+    <div id="cal-fenol-anno" style="display:flex;flex-direction:column;gap:4px;"></div>
   </div>
 
-  <!-- Fenologico: fase + varietà + stagionale -->
-  <div class="card" onclick="openAmbPopup('fenol-oggi')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,152,0,0.09),rgba(255,87,34,0.05));">
-    <div style="font-size:11px;font-weight:700;color:var(--orange);margin-bottom:8px;">🌸 FASE FENOLOGICA ATTUALE</div>
-    <div style="font-size:14px;font-weight:600;" id="cal-fenol-fase">Calcolo…</div>
-    <div style="font-size:11px;color:var(--text2);margin-top:3px;" id="cal-fenol-desc">—</div>
-    <div style="font-size:10px;color:var(--text3);margin-top:6px;">Tocca per dettaglio →</div>
+  <!-- Maturazione -->
+  <div class="card" onclick="openAmbPopup('matur-prossima')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,152,0,0.09),rgba(245,124,0,0.05));">
+    <div style="font-size:10px;font-weight:700;color:var(--orange);margin-bottom:5px;">🍊 PROSSIMA RACCOLTA</div>
+    <div id="cal-matur-prossima" style="font-size:13px;font-weight:700;color:var(--orange);">…</div>
+    <div id="cal-matur-desc" style="font-size:11px;color:var(--text2);margin-top:2px;">—</div>
   </div>
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">🌿 FASE PER VARIETÀ</div>
-    <div id="cal-fenol-piante" style="display:flex;flex-direction:column;gap:5px;"></div>
+  <div class="card" style="padding:8px 12px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:5px;">🌿 TUTTE LE VARIETÀ</div>
+    <div id="cal-matur-piante" style="display:flex;flex-direction:column;gap:5px;"></div>
   </div>
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">📅 CALENDARIO STAGIONALE 2026</div>
-    <div id="cal-fenol-anno" style="display:flex;flex-direction:column;gap:5px;"></div>
-  </div>
-
-  <!-- ══ 6. MATURAZIONE & RACCOLTA ══ -->
-  <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:0.8px;padding:18px 4px 8px;border-bottom:1px solid var(--border);margin-bottom:12px;">🍊 Maturazione & Raccolta</div>
-
-  <div class="card" onclick="openAmbPopup('matur-prossima')" style="cursor:pointer;background:linear-gradient(135deg,rgba(255,152,0,0.1),rgba(245,124,0,0.06));">
-    <div style="font-size:11px;font-weight:700;color:var(--orange);margin-bottom:8px;">🍊 PROSSIMA RACCOLTA</div>
-    <div id="cal-matur-prossima" style="font-size:14px;font-weight:700;color:var(--orange);">Calcolo…</div>
-    <div id="cal-matur-desc" style="font-size:11px;color:var(--text2);margin-top:3px;">—</div>
-  </div>
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">🌿 CALENDARIO RACCOLTE — TUTTE LE VARIETÀ</div>
-    <div id="cal-matur-piante" style="display:flex;flex-direction:column;gap:6px;"></div>
-  </div>
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">🌙 OTTIMIZZAZIONE LUNA × RACCOLTA</div>
-    <div id="cal-matur-luna" style="font-size:13px;color:var(--text2);line-height:1.7;"></div>
-  </div>
-  <div class="card" style="padding:10px 14px;">
-    <div style="font-size:11px;font-weight:700;color:var(--text3);margin-bottom:6px;">🫙 CONSERVAZIONE E CONCIA</div>
-    <div style="font-size:13px;color:var(--text2);line-height:1.6;">Essiccazione 10-14 giorni a 18-22°C, umidità 45-55%. Concia minima 2 settimane in barattolo di vetro, apertura giornaliera 15 min. Conservazione in vetro scuro, buio e fresco.</div>
+  <div class="card" style="padding:8px 12px;">
+    <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:5px;">🌙 LUNA × RACCOLTA</div>
+    <div id="cal-matur-luna" style="font-size:12px;color:var(--text2);line-height:1.6;"></div>
   </div>
 
-  <!-- ─── Elementi hidden per compatibilità JS ─── -->
+  <!-- Elementi hidden compatibilità -->
   <div id="agriAdviceDetail" style="display:none;"></div>
   <div id="agriAdviceTags" style="display:none;"></div>
   <div id="agriAdviceSerra" style="display:none;"></div>
+  <div id="luna-consigli-6sezioni" style="display:none;"></div>
   <div id="luna-json-content" style="display:none;"></div>
   <div id="cal-foto-30g" style="display:none;"></div>
   <div id="cal-bio-banner" style="display:none;"></div>
@@ -1421,6 +1355,7 @@
   <div id="cal-moon-bar" style="display:none;"></div>
   <div id="cal-lunar-strip" style="display:none;"></div>
   <div id="cal-phases-table" style="display:none;"></div>
+  <div id="w-irrig-detail" style="display:none;"></div>
   <div id="cal-panel-oggi" style="display:none;"><div id="cal-oggi-data"></div><div id="cal-oggi-sun"></div><div id="cal-oggi-luna"></div><div id="cal-oggi-bio"></div><div id="cal-oggi-sem"></div><div id="cal-oggi-tratt"></div><div id="cal-oggi-fenol"></div></div>
   <div id="cal-panel-lunare" style="display:none;"></div>
   <div id="cal-panel-bio" style="display:none;"></div>
@@ -1432,13 +1367,8 @@
   <div id="cal-panel-gdd" style="display:none;"></div>
   <div id="cal-panel-gelo" style="display:none;"></div>
   <div id="cal-panel-matur" style="display:none;"></div>
-  <!-- Popup bio interno -->
   <div class="bio-detail-popup hidden" id="bio-popup" onclick="closeBioPopup(event)">
-    <div class="bio-detail-sheet">
-      <div class="bio-detail-handle"></div>
-      <button class="bio-detail-close" onclick="closeBioPopupDirect()">✕</button>
-      <div id="bio-popup-content"></div>
-    </div>
+    <div class="bio-detail-sheet"><div class="bio-detail-handle"></div><button class="bio-detail-close" onclick="closeBioPopupDirect()">✕</button><div id="bio-popup-content"></div></div>
   </div>
 
 </section>
@@ -2718,8 +2648,8 @@ async function loadWeather() {
       irrigMain = '⚠️ Caldo secco — aumenta irrigazione';
       irrigDetail = `Alta evapotraspirazione: ${etVal.toFixed(1)} mm, pioggia ${rain.toFixed(1)} mm → fabbisogno netto ${netNeed.toFixed(1)} mm. Bagna manualmente i bordi dei vasi e aggiungi 1 ciclo extra di pompa.`;
     }
-    document.getElementById('w-irrig-main').textContent = irrigMain;
-    document.getElementById('w-irrig-detail').textContent = irrigDetail;
+    const iMain=document.getElementById('w-irrig-main'); if(iMain) iMain.textContent=irrigMain;
+    const iDet=document.getElementById('w-irrig-detail'); if(iDet) iDet.textContent=irrigDetail;
     // Alert serra
     const alert = document.getElementById('w-serra-alert');
     const alertText = document.getElementById('w-serra-alert-text');
@@ -5416,6 +5346,64 @@ ${piante.map(p=>`<div style="display:flex;justify-content:space-between;align-it
 <div class="amb-popup-section"><div class="amb-popup-label">Azione oggi</div><div style="font-size:13px;color:var(--green3);line-height:1.7;">${m.a}</div></div>`; }
 
 
+    case 'luna-fasi':
+    case 'luna-fase': {
+      const _a=getMoonAge(today),_p=getMoonPhase(_a),_il=getMoonIllum(_a),_adv=getAdvice(_p.code);
+      return '<div class="amb-popup-label">Fase Lunare</div><div class="amb-popup-title">'+_p.emoji+' '+_p.name+'</div>'
+        +'<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">Illuminazione: <strong>'+_il+'%</strong><br>Età: <strong>'+Math.round(_a)+' giorni</strong><br><br>'+_adv.detail+'</div></div>'
+        +'<div class="amb-popup-section"><div class="amb-popup-label">Consigli</div><div style="font-size:13px;color:var(--text2);line-height:1.7;">'+_adv.tips.slice(0,3).map(function(t){return '✅ '+t;}).join('<br>')+'</div></div>';
+    }
+    case 'gdd-dettaglio': {
+      const _gv=typeof _gddData!=='undefined'&&_gddData?Math.round(_gddData.total)+'':'—';
+      return '<div class="amb-popup-label">Gradi Giorno</div><div class="amb-popup-title">📈 GDD Stagione 2026</div>'
+        +'<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">GDD accumulati: <strong>'+_gv+' GDD</strong><br>Base 10°C · dal 1 gen 2026<br><br>🌱 Germinazione: 50-100 GDD<br>🌿 Vegetativa: 100-400 GDD<br>🌸 Pre-fioritura: 400-600 GDD<br>🍊 Maturazione: 600+ GDD</div></div>';
+    }
+    case 'lavori-oggi': {
+      const _lv=getLavoriOggi(today);
+      return '<div class="amb-popup-label">Piano di Lavoro</div><div class="amb-popup-title">🔧 '+_lv.titolo+'</div>'
+        +'<div class="amb-popup-section"><div style="font-size:12px;color:var(--text3);margin-bottom:8px;">'+_lv.sub+'</div>'
+        +'<div style="font-size:13px;color:var(--text2);line-height:2.0;">'+_lv.lavori.map(function(l){return '☐ '+l;}).join('<br>')+'</div></div>';
+    }
+    case 'matur-prossima': {
+      const _mp=document.getElementById('cal-matur-prossima'),_md=document.getElementById('cal-matur-desc');
+      return '<div class="amb-popup-label">Prossima Raccolta</div><div class="amb-popup-title">🍊 Maturazione</div>'
+        +'<div class="amb-popup-section"><div style="font-size:14px;font-weight:700;color:var(--orange);">'+(_mp?_mp.textContent:'—')+'</div>'
+        +'<div style="font-size:13px;color:var(--text2);margin-top:6px;">'+(_md?_md.textContent:'—')+'</div></div>'
+        +'<div class="amb-popup-section"><div class="amb-popup-label">Ottimizzazione lunare</div><div style="font-size:13px;color:var(--text2);">Raccogli in Giorno Frutto 🍊 con luna calante. Ultimi 2 settimane: solo acqua pura.</div></div>';
+    }
+    case 'meteo-et': {
+      const _et=document.getElementById('w-et');
+      return '<div class="amb-popup-label">Evapotraspirazione</div><div class="amb-popup-title">💦 ETo Giornaliero</div>'
+        +'<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">ETo: <strong>'+(_et?_et.textContent:'—')+'</strong><br><br>ETo < 3mm: irrigazione normale<br>ETo 3-5mm: +20% durata<br>ETo > 5mm: +40% durata</div></div>';
+    }
+    case 'semine-oggi': {
+      const _sm=getSemineOggi(today);
+      return '<div class="amb-popup-label">Semine & Trapianti</div><div class="amb-popup-title">'+_sm.emoji+' '+_sm.label+'</div>'
+        +'<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">'+_sm.motivo+'</div></div>'
+        +'<div class="amb-popup-section"><div class="amb-popup-label">Nota</div><div style="font-size:13px;color:var(--text2);">Giorni Radice + luna crescente = ottimale per trapianti cannabis.</div></div>';
+    }
+    case 'tratt-oggi': {
+      const _tr=getTrattOggi(today);
+      return '<div class="amb-popup-label">Trattamenti</div><div class="amb-popup-title">'+_tr.label+'</div>'
+        +'<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">'+_tr.desc+'</div></div>';
+    }
+    case 'fenol-oggi': {
+      const _fn=getFenolFase(today);
+      return '<div class="amb-popup-label">Fenologia</div><div class="amb-popup-title">🌸 '+_fn.fase+'</div>'
+        +'<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);">'+_fn.desc+'</div></div>';
+    }
+    case 'foto-oggi': {
+      const _sn=calcSunTimes(today);
+      return '<div class="amb-popup-label">Fotoperiodo</div><div class="amb-popup-title">☀️ '+_sn.dayLen.toFixed(1)+'h di luce</div>'
+        +'<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.8;">Alba: <strong>'+hToHHMM(_sn.sunrise)+'</strong><br>Tramonto: <strong>'+hToHHMM(_sn.sunset)+'</strong><br><br>⚡ Autofiorenti: ciclo fisso, ore extra = resa maggiore<br>🌸 Femminizzate: fioriscono sotto 12h (settembre Caserta)</div></div>';
+    }
+    case 'bio-oggi': {
+      const _bc=getDayType(today),_bt=DAY_TYPES[_bc.type],_ba=ADVICE[_bc.type];
+      return '<div class="amb-popup-label">Biodinamica</div><div class="amb-popup-title">'+_bt.icon+' '+_bt.label+'</div>'
+        +'<div class="amb-popup-section"><div style="font-size:12px;color:var(--text3);">'+_bc.sym+' '+_bc.name+' · '+_bc.element+'</div>'
+        +'<div style="font-size:13px;color:var(--text2);margin-top:8px;line-height:1.6;">'+_ba.short+'</div></div>'
+        +'<div class="amb-popup-section"><div class="amb-popup-label">Consigli</div><div style="font-size:13px;color:var(--text2);line-height:1.7;">'+_ba.tips.slice(0,3).map(function(t){return '✅ '+t;}).join('<br>')+'</div></div>';
+    }
     default: {
       // Prova nei popup del Calendario Unificato
       if (typeof buildCalPopupContent === 'function') {
@@ -5963,7 +5951,7 @@ function renderCalOggi() {
     { icon:'💧', label:'Irrigazione', val: irrig.label, sub: irrig.desc, popup:'meteo-impatto' },
   ];
 
-  const grid = document.getElementById('cal-oggi-grid');
+  const grid = document.getElementById('oggi-master-grid');
   if (grid) {
     grid.innerHTML = rows.map(r => `
       <div class="cal-oggi-row" onclick="openAmbPopup('${r.popup}')">
@@ -6328,7 +6316,7 @@ function renderCalTratt() {
       {icon:'🥚', nome:'Miscela Organica (caffè+guscio+banana)', freq:'1× al mese', giorni:'Radice', pop:'tratt-miscela'},
       {icon:'🦠', nome:'Rinnovo Humus nel serbatoio', freq:'1× al mese (Luna nuova)', giorni:'Radice', pop:'tratt-humus'},
       {icon:'🍎', nome:'Generatore Etilene (frutto)', freq:'Luglio-Agosto', giorni:'Fase maturazione', pop:'tratt-oggi'},
-    ].map(t => `<div class="cal-tratt-item" onclick="openAmbPopup('${t.pop}')">
+    ].map(t => `<div class="cal-tratt-item" onclick="openAmbPopup('${t.popup}')">
       <span style="font-size:22px;">${t.icon}</span>
       <div style="flex:1;"><div style="font-size:12px;font-weight:700;">${t.nome}</div>
       <div style="font-size:10px;color:var(--text3);">${t.freq} · ${t.giorni}</div></div>
