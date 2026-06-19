@@ -689,6 +689,22 @@
   ],
   "proposte": [
     {
+      "id": "daily_1781667046478_0",
+      "nome": "Elettrocultura",
+      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
+      "obiettivo": "Migliorare la crescita e la resa delle piante",
+      "materiali": [
+        "Generatore di elettricità",
+        "Elettrodi"
+      ],
+      "categoria": "Tecniche di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-17",
+      "attivo": false
+    },
+    {
       "id": "daily_1781640025709_3",
       "nome": "Introduzione di micorrize",
       "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della cannabis",
@@ -1383,24 +1399,7 @@
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": "18/06/2026"
-    },
-    {
-      "id": "daily_1781667046478_0",
-      "nome": "Elettrocultura",
-      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
-      "obiettivo": "Migliorare la crescita e la resa delle piante",
-      "materiali": [
-        "Generatore di elettricità",
-        "Elettrodi"
-      ],
-      "categoria": "Tecniche di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-17",
-      "attivo": false,
-      "data_attivazione": "18/06/2026"
     }
   ],
-  "aggiornato": "2026-06-19 09:37"
+  "aggiornato": "2026-06-19 09:38"
 }
