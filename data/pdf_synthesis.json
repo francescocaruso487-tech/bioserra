@@ -1,14 +1,49 @@
 {
-  "lastUpdate": "2026-06-20T06:55:51.259Z",
-  "total_pdf_analizzati": 0,
-  "connessioni": [],
-  "principi_universali": [],
-  "esperimenti_incrociati": [],
-  "scoperte": [],
+  "lastUpdate": "2026-06-20T08:51:10.192Z",
+  "total_pdf_analizzati": 1,
+  "connessioni": [
+    {
+      "pdf_a": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas",
+      "pdf_b": "Non applicabile (solo un PDF fornito)",
+      "collegamento": "L'utilizzo della farina di roccia come fertilizzante naturale può avere un impatto positivo sulla struttura e sulla fertilità del suolo",
+      "principio_comune": "Equilibrio ecologico",
+      "esperimento": "Applicazione della farina di roccia alle piante di cannabis in serra per migliorare la salute del suolo e la crescita",
+      "materiali": [
+        "Farina di roccia"
+      ],
+      "difficolta": "Facile",
+      "beneficio_atteso": "Miglioramento della struttura del suolo e aumento della fertilità"
+    }
+  ],
+  "principi_universali": [
+    {
+      "principio": "Equilibrio ecologico",
+      "descrizione": "Il mantenimento dell'equilibrio tra gli elementi naturali per garantire la salute e la produttività dell'ecosistema",
+      "applicazione_serra": "Utilizzo di metodi naturali e sostenibili per mantenere la salute del suolo e delle piante",
+      "pdf_fonte": [
+        "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas"
+      ]
+    }
+  ],
+  "esperimenti_incrociati": [
+    {
+      "nome": "Esperimento con farina di roccia",
+      "origine": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas",
+      "protocollo": "Applicare 1 kg di farina di roccia per ogni 10 metri quadrati di suolo, misurare la crescita delle piante e la struttura del suolo dopo 30 giorni",
+      "durata": "30 giorni",
+      "misurazioni": "Crescita delle piante, struttura del suolo, pH del suolo"
+    }
+  ],
+  "scoperte": [
+    {
+      "data": "2026-06-20",
+      "testo": "L'utilizzo della farina di roccia come fertilizzante naturale può avere un impatto positivo sulla struttura e sulla fertilità del suolo, migliorando la salute e la crescita delle piante di cannabis in serra."
+    }
+  ],
   "stats": {
-    "totale_connessioni": 0,
-    "totale_principi": 0,
-    "totale_esperimenti": 0,
-    "nuovi_oggi": 0
+    "totale_connessioni": 1,
+    "totale_principi": 1,
+    "totale_esperimenti": 1,
+    "nuovi_oggi": 1
   }
 }
