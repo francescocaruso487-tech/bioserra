@@ -2937,5 +2937,3 @@ function getIrrigOggi(today, sun) {
   }
 })();
 
-
-</script>
