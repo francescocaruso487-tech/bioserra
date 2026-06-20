@@ -707,10 +707,218 @@ function manAggiungeTecnica(idx) {
 }
 
 /* ── Init Laboratorio ── */
+
+/* ══════════════════════════════════════════════════════════════
+   GUIDE COMPLETE — da guide_complete.json (RQS + Zamnesia fuse)
+══════════════════════════════════════════════════════════════ */
+
+async function loadGuideComplete() {
+  var el = document.getElementById('guide-content');
+  var meta = document.getElementById('guide-meta');
+  if (!el) return;
+  el.innerHTML = '<div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">\u23f3 Caricamento guide\u2026</div>';
+  try {
+    var res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/guide_complete.json?v=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    var data = await res.json();
+    var guide = data.guide || [];
+    var aggiornato = (data.lastUpdate || '').substring(0, 10);
+    if (meta) meta.innerHTML = '\u2705 ' + guide.length + ' guide \u00b7 ' + aggiornato;
+    if (guide.length === 0) {
+      el.innerHTML = '<div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">\ud83d\udcda Guide in generazione\u2026 Torna domani!</div>';
+      return;
+    }
+    var h = '';
+    guide.forEach(function(g, idx) {
+      var catColor = g.categoria === 'acqua' ? '#4a9eff' : g.categoria === 'nutrizione' ? '#4aaf5e' : g.categoria === 'difesa' ? '#e05252' : 'var(--green2)';
+      h += '<div style="background:var(--card2);border-radius:12px;padding:14px;margin-bottom:10px;border-left:3px solid ' + catColor + '">';
+      h += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">';
+      h += '<div style="font-size:14px;font-weight:700;color:var(--text)">' + (g.titolo || '') + '</div>';
+      h += '<span style="font-size:10px;background:rgba(74,175,94,0.15);color:var(--green2);padding:2px 8px;border-radius:20px">' + (g.categoria || '') + '</span>';
+      h += '</div>';
+      if (g.contenuto_completo) {
+        var preview = (g.contenuto_completo || '').substring(0, 200);
+        if (g.contenuto_completo.length > 200) preview += '...';
+        h += '<div style="font-size:12px;color:var(--text2);line-height:1.6;margin-bottom:8px">' + preview + '</div>';
+      }
+      if (g.punti_chiave && g.punti_chiave.length) {
+        h += '<div style="margin-bottom:6px">';
+        g.punti_chiave.forEach(function(p) {
+          h += '<div style="font-size:11px;color:var(--text3);padding:2px 0">\u2713 ' + p + '</div>';
+        });
+        h += '</div>';
+      }
+      if (g.quando) {
+        h += '<div style="font-size:11px;color:var(--text3);margin-top:4px">\ud83d\udcc5 <em>' + g.quando + '</em></div>';
+      }
+      h += '<button onclick="guideEspandi(' + idx + ')" id="guide-btn-' + idx + '" style="margin-top:8px;background:none;border:1px solid var(--border);border-radius:8px;padding:5px 12px;color:var(--text3);font-size:11px;cursor:pointer;width:100%">Leggi guida completa \u25bc</button>';
+      h += '<div id="guide-espansa-' + idx + '" style="display:none;margin-top:8px;padding-top:8px;border-top:1px solid var(--border)">';
+      if (g.contenuto_completo) {
+        h += '<div style="font-size:12px;color:var(--text2);line-height:1.7;margin-bottom:8px">' + g.contenuto_completo + '</div>';
+      }
+      if (g.errori_comuni && g.errori_comuni.length) {
+        h += '<div style="font-size:11px;font-weight:700;color:#e05252;margin-bottom:4px">\u26a0\ufe0f Errori comuni:</div>';
+        g.errori_comuni.forEach(function(e) {
+          h += '<div style="font-size:11px;color:var(--text3);padding:2px 0">\u2715 ' + e + '</div>';
+        });
+      }
+      if (g.fonte_rqs || g.fonte_zamnesia) {
+        h += '<div style="font-size:10px;color:var(--text3);margin-top:6px"><strong>Fonti:</strong> RQS \u2014 ' + (g.fonte_rqs || 'n.d.') + ' | Zamnesia \u2014 ' + (g.fonte_zamnesia || 'n.d.') + '</div>';
+      }
+      h += '</div></div>';
+    });
+    el.innerHTML = h;
+  } catch(e) {
+    if (meta) meta.innerHTML = '<span style="color:var(--text3)">Non disponibile</span>';
+    el.innerHTML = '<div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">\ud83d\udcda Guide in generazione\u2026</div>';
+  }
+}
+
+function guideEspandi(idx) {
+  var el = document.getElementById('guide-espansa-' + idx);
+  var btn = document.getElementById('guide-btn-' + idx);
+  if (!el) return;
+  var aperto = el.style.display !== 'none';
+  el.style.display = aperto ? 'none' : 'block';
+  if (btn) btn.innerHTML = aperto ? 'Leggi guida completa \u25bc' : 'Chiudi \u25b2';
+}
+
+/* ══════════════════════════════════════════════════════════════
+   PDF SYNTHESIS — connessioni inaspettate tra PDF Drive
+══════════════════════════════════════════════════════════════ */
+
+async function loadPdfSynthesis() {
+  var el = document.getElementById('synthesis-content');
+  var meta = document.getElementById('synthesis-meta');
+  if (!el) return;
+  el.innerHTML = '<div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">\u23f3 Caricamento connessioni\u2026</div>';
+  try {
+    var res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/pdf_synthesis.json?v=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    var data = await res.json();
+    var conn = data.connessioni || [];
+    var esp = data.esperimenti_incrociati || [];
+    var scoperte = data.scoperte || [];
+    var aggiornato = (data.lastUpdate || '').substring(0, 10);
+    if (meta) meta.innerHTML = '\ud83d\udd17 ' + conn.length + ' connessioni \u00b7 \ud83e\uddea ' + esp.length + ' esperimenti \u00b7 ' + aggiornato;
+    var h = '';
+    if (scoperte.length) {
+      var s = scoperte[0];
+      h += '<div style="background:rgba(74,175,94,0.08);border:1px solid rgba(74,175,94,0.2);border-radius:12px;padding:12px;margin-bottom:10px">';
+      h += '<div style="font-size:11px;font-weight:700;color:var(--green2);margin-bottom:4px">\ud83d\udca1 SCOPERTA DEL GIORNO</div>';
+      h += '<div style="font-size:13px;color:var(--text);line-height:1.6">' + (s.testo || '') + '</div>';
+      if (s.data) h += '<div style="font-size:10px;color:var(--text3);margin-top:4px">' + s.data + '</div>';
+      h += '</div>';
+    }
+    if (conn.length) {
+      h += '<div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:8px">\ud83d\udd17 Connessioni tra PDF</div>';
+      conn.slice(0, 5).forEach(function(c) {
+        h += '<div style="background:var(--card2);border-radius:10px;padding:10px;margin-bottom:8px">';
+        h += '<div style="font-size:11px;color:var(--text3);margin-bottom:4px"><strong>' + (c.pdf_a || '') + '</strong> + <strong>' + (c.pdf_b || '') + '</strong></div>';
+        h += '<div style="font-size:12px;color:var(--text);line-height:1.5;margin-bottom:6px">' + (c.collegamento || '') + '</div>';
+        if (c.principio_comune) h += '<div style="font-size:11px;color:var(--green2)">\u2605 ' + c.principio_comune + '</div>';
+        if (c.esperimento) h += '<div style="font-size:11px;color:var(--text3);margin-top:4px;font-style:italic">\ud83e\uddea ' + c.esperimento + '</div>';
+        h += '</div>';
+      });
+    }
+    if (esp.length) {
+      h += '<div style="font-size:12px;font-weight:700;color:var(--text);margin-top:10px;margin-bottom:8px">\ud83e\uddea Esperimenti Incrociati</div>';
+      esp.slice(0, 3).forEach(function(e) {
+        h += '<div style="background:var(--card2);border-radius:10px;padding:10px;margin-bottom:8px">';
+        h += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px">' + (e.nome || '') + '</div>';
+        if (e.protocollo) h += '<div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:4px">' + e.protocollo + '</div>';
+        if (e.misurazioni) h += '<div style="font-size:11px;color:var(--text3)">\ud83d\udcca ' + e.misurazioni + '</div>';
+        if (e.durata) h += '<div style="font-size:11px;color:var(--text3)">\u23f1 ' + e.durata + '</div>';
+        h += '</div>';
+      });
+    }
+    if (!conn.length && !esp.length) {
+      h = '<div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">\ud83e\udde0 Il Cervello analizza i PDF ogni giorno e trova nuove connessioni!</div>';
+    }
+    el.innerHTML = h;
+  } catch(e) {
+    if (meta) meta.innerHTML = '<span style="color:var(--text3)">Non disponibile</span>';
+    el.innerHTML = '<div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">\ud83d\udcda Connessioni in elaborazione\u2026</div>';
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   KNOWLEDGE DIGEST — fusione giornaliera di tutto
+══════════════════════════════════════════════════════════════ */
+
+async function loadKnowledgeDigest() {
+  var el = document.getElementById('digest-content');
+  var meta = document.getElementById('digest-meta');
+  if (!el) return;
+  el.innerHTML = '<div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">\u23f3 Caricamento digest\u2026</div>';
+  try {
+    var res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/knowledge_digest.json?v=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    var data = await res.json();
+    var aggiornato = (data.lastUpdate || '').substring(0, 10);
+    if (meta) meta.innerHTML = '\u2b50 ' + (data.data || aggiornato);
+    var h = '';
+    if (data.consiglio_integrato) {
+      h += '<div style="background:linear-gradient(135deg,rgba(74,175,94,0.12),rgba(74,175,94,0.04));border:1px solid rgba(74,175,94,0.25);border-radius:14px;padding:14px;margin-bottom:12px">';
+      h += '<div style="font-size:11px;font-weight:700;color:var(--green2);margin-bottom:6px">\ud83c\udf1f CONSIGLIO INTEGRATO DI OGGI</div>';
+      h += '<div style="font-size:13px;color:var(--text);line-height:1.7">' + data.consiglio_integrato + '</div>';
+      h += '</div>';
+    }
+    if (data.scoperta_del_giorno) {
+      h += '<div style="background:var(--card2);border-radius:10px;padding:10px;margin-bottom:10px">';
+      h += '<div style="font-size:11px;font-weight:700;color:var(--green2);margin-bottom:4px">\ud83d\udca1 Scoperta del giorno</div>';
+      h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + data.scoperta_del_giorno + '</div>';
+      h += '</div>';
+    }
+    if (data.connessione_inaspettata) {
+      h += '<div style="background:var(--card2);border-radius:10px;padding:10px;margin-bottom:10px">';
+      h += '<div style="font-size:11px;font-weight:700;color:#9b6dff;margin-bottom:4px">\u2728 Connessione inaspettata</div>';
+      h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + data.connessione_inaspettata + '</div>';
+      h += '</div>';
+    }
+    var gp = data.guide_potenziate || [];
+    if (gp.length) {
+      h += '<div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:8px">\ud83d\udcda Guide Potenziate dai PDF</div>';
+      gp.forEach(function(g) {
+        h += '<div style="background:var(--card2);border-radius:10px;padding:10px;margin-bottom:8px;border-left:3px solid var(--green2)">';
+        h += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px">' + (g.titolo || '') + '</div>';
+        h += '<div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:6px">' + (g.guida_base || '') + '</div>';
+        if (g.potenziamento_pdf) h += '<div style="font-size:11px;color:var(--green2);line-height:1.5;margin-bottom:4px">\ud83e\udde0 + ' + g.potenziamento_pdf + '</div>';
+        if (g.esperimento_suggerito) h += '<div style="font-size:11px;color:var(--text3);font-style:italic">\ud83e\uddea ' + g.esperimento_suggerito + '</div>';
+        h += '</div>';
+      });
+    }
+    var es = data.esperimenti_attivi_suggeriti || [];
+    if (es.length) {
+      h += '<div style="font-size:12px;font-weight:700;color:var(--text);margin-top:10px;margin-bottom:8px">\ud83e\uddea Esperimenti Suggeriti Oggi</div>';
+      es.forEach(function(e) {
+        var urgColor = e.urgenza === 'alta' ? '#e05252' : e.urgenza === 'media' ? '#f0a500' : 'var(--text3)';
+        h += '<div style="background:var(--card2);border-radius:10px;padding:10px;margin-bottom:8px">';
+        h += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">';
+        h += '<div style="font-size:13px;font-weight:700;color:var(--text)">' + (e.nome || '') + '</div>';
+        h += '<span style="font-size:10px;color:' + urgColor + ';font-weight:700">' + (e.urgenza || '').toUpperCase() + '</span>';
+        h += '</div>';
+        h += '<div style="font-size:12px;color:var(--text2);line-height:1.5">' + (e.descrizione || '') + '</div>';
+        h += '</div>';
+      });
+    }
+    if (!h) {
+      h = '<div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">\u2b50 Il Knowledge Digest viene aggiornato ogni mattina alle 8:30.</div>';
+    }
+    el.innerHTML = h;
+  } catch(e) {
+    if (meta) meta.innerHTML = '<span style="color:var(--text3)">Non disponibile</span>';
+    el.innerHTML = '<div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">\u2b50 Digest in preparazione\u2026</div>';
+  }
+}
+
 function initElettrocultura() {
   manLoadNote();
   manRenderNote();
   elLoadGlobale();
   elTecRicarica();
   espLoad();
+  loadGuideComplete();
+  loadPdfSynthesis();
+  loadKnowledgeDigest();
 }
