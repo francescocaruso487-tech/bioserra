@@ -1,4 +1,4 @@
-/* BioSerra - js/ambiente.js - Migrazione automatica */
+/* BioSerra - ambiente.js */
 /* ══════════════════════════════════════════════════════════════
    METEO — Open-Meteo · Caserta fissa
 ══════════════════════════════════════════════════════════════ */
@@ -2936,4 +2936,5 @@ function getIrrigOggi(today, sun) {
     runInit();
   }
 })();
+
 
