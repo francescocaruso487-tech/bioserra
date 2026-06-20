@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-20T08:51:10.192Z",
+  "lastUpdate": "2026-06-20T09:58:20.732Z",
   "total_pdf_analizzati": 1,
   "connessioni": [
     {
@@ -23,6 +23,14 @@
       "pdf_fonte": [
         "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas"
       ]
+    },
+    {
+      "principio": "Sostenibilità ambientale",
+      "descrizione": "Principio che mira a ridurre l'impatto negativo sull'ambiente attraverso pratiche agricole sostenibili",
+      "applicazione_serra": "Utilizzo di fertilizzanti naturali e gestione del suolo per minimizzare l'uso di sostanze chimiche",
+      "pdf_fonte": [
+        "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas"
+      ]
     }
   ],
   "esperimenti_incrociati": [
@@ -37,13 +45,17 @@
   "scoperte": [
     {
       "data": "2026-06-20",
+      "testo": "L'utilizzo della farina di roccia come fertilizzante naturale può migliorare significativamente la salute del suolo e la crescita delle piante di cannabis in serra."
+    },
+    {
+      "data": "2026-06-20",
       "testo": "L'utilizzo della farina di roccia come fertilizzante naturale può avere un impatto positivo sulla struttura e sulla fertilità del suolo, migliorando la salute e la crescita delle piante di cannabis in serra."
     }
   ],
   "stats": {
     "totale_connessioni": 1,
-    "totale_principi": 1,
+    "totale_principi": 2,
     "totale_esperimenti": 1,
-    "nuovi_oggi": 1
+    "nuovi_oggi": 0
   }
 }
