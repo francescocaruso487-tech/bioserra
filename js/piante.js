@@ -23,14 +23,19 @@ function loadActivePlants() {
     const saved = localStorage.getItem('bioserra_active_plants');
     if (saved) {
       const parsed = JSON.parse(saved);
-      // Migrazione: se i dati sono stati generati dal vecchio codice con moltiplicatore,
-      // harvestMin delle autofiorenti sarebbe >> 75 (es. 60×3=180). Reset ai default.
-      const needsMigration = parsed.some(p =>
-        p.type === 'auto' && p.harvestMin > 100
-      );
-      if (needsMigration) {
-        console.log('[BioSerra] Migrazione dati piante: reset ai valori produttore corretti');
-        // Conserva solo le date di germinazione inserite dall'utente
+      // Validazione struttura minima
+      if (!Array.isArray(parsed) || parsed.length === 0) {
+        throw new Error('dati non validi');
+      }
+      // Controlla che ogni pianta abbia i campi minimi
+      const valid = parsed.every(p => p && p.id && p.name && p.type);
+      if (!valid) throw new Error('struttura corrotta');
+      // Migrazione: harvestMin troppo alto = vecchio moltiplicatore
+      const needsMigration = parsed.some(p => p.type === 'auto' && p.harvestMin > 100);
+      // Migrazione: mancano campi nuovi (harvestMin/Max)
+      const needsFieldUpdate = parsed.some(p => !p.harvestMin);
+      if (needsMigration || needsFieldUpdate) {
+        console.log('[BioSerra] Migrazione dati piante...');
         const germMap = {};
         parsed.forEach(p => { if (p.germDate) germMap[p.id] = p.germDate; });
         const migrated = DEFAULT_PLANTS.map(dp => ({
@@ -40,9 +45,20 @@ function loadActivePlants() {
         localStorage.setItem('bioserra_active_plants', JSON.stringify(migrated));
         return migrated;
       }
-      return parsed;
+      // Aggiorna campi mancanti mantenendo i dati utente
+      const germMap2 = {};
+      parsed.forEach(p => { if (p.germDate) germMap2[p.id] = p.germDate; });
+      const updated = DEFAULT_PLANTS.map(dp => {
+        const existing = parsed.find(p => p.id === dp.id);
+        if (existing) return { ...dp, ...existing, harvestMin: dp.harvestMin, harvestMax: dp.harvestMax };
+        return dp;
+      });
+      localStorage.setItem('bioserra_active_plants', JSON.stringify(updated));
+      return updated;
     }
-  } catch(e) {}
+  } catch(e) {
+    console.log('[BioSerra] Reset piante per errore:', e.message);
+  }
   localStorage.setItem('bioserra_active_plants', JSON.stringify(DEFAULT_PLANTS));
   return DEFAULT_PLANTS;
 }
