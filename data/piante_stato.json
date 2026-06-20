@@ -1,0 +1,107 @@
+{
+  "lastUpdate": "2026-06-16T06:00:30.645Z",
+  "data": {
+    "stato_piante": [
+      {
+        "id": 7,
+        "nome": "Epsilon F1",
+        "tipo": "autofiorente",
+        "giorni": 56,
+        "fase": "Raccolta imminente",
+        "giorni_a_raccolta": 4,
+        "giorni_a_essiccazione": 19
+      },
+      {
+        "id": 1,
+        "nome": "Milky Way F1",
+        "tipo": "autofiorente",
+        "giorni": 56,
+        "fase": "Raccolta imminente",
+        "giorni_a_raccolta": 16,
+        "giorni_a_essiccazione": 31
+      },
+      {
+        "id": 2,
+        "nome": "Titan F1",
+        "tipo": "autofiorente",
+        "giorni": 56,
+        "fase": "Raccolta imminente",
+        "giorni_a_raccolta": 16,
+        "giorni_a_essiccazione": 31
+      },
+      {
+        "id": 3,
+        "nome": "Medusa F1",
+        "tipo": "autofiorente",
+        "giorni": 56,
+        "fase": "Raccolta imminente",
+        "giorni_a_raccolta": 16,
+        "giorni_a_essiccazione": 31
+      },
+      {
+        "id": 8,
+        "nome": "Gaia F1",
+        "tipo": "autofiorente",
+        "giorni": 56,
+        "fase": "Raccolta imminente",
+        "giorni_a_raccolta": 11,
+        "giorni_a_essiccazione": 26
+      },
+      {
+        "id": 4,
+        "nome": "Astro Lemonade",
+        "tipo": "femminizzata",
+        "giorni": 56,
+        "fase": "Vegetazione",
+        "giorni_a_raccolta": 124,
+        "giorni_a_essiccazione": 139
+      },
+      {
+        "id": 11,
+        "nome": "Cosmic Cheddar",
+        "tipo": "femminizzata",
+        "giorni": 56,
+        "fase": "Vegetazione",
+        "giorni_a_raccolta": 124,
+        "giorni_a_essiccazione": 139
+      },
+      {
+        "id": 6,
+        "nome": "Orbital Banana",
+        "tipo": "femminizzata",
+        "giorni": 56,
+        "fase": "Vegetazione",
+        "giorni_a_raccolta": 124,
+        "giorni_a_essiccazione": 139
+      },
+      {
+        "id": 10,
+        "nome": "Royal Gorilla",
+        "tipo": "femminizzata",
+        "giorni": 56,
+        "fase": "Vegetazione",
+        "giorni_a_raccolta": 139,
+        "giorni_a_essiccazione": 154
+      },
+      {
+        "id": 9,
+        "nome": "Mexican Rush",
+        "tipo": "femminizzata",
+        "giorni": 56,
+        "fase": "Vegetazione",
+        "giorni_a_raccolta": 139,
+        "giorni_a_essiccazione": 154
+      }
+    ],
+    "alerts_oggi": [
+      {
+        "tipo": "RACCOLTA",
+        "pianta": "Epsilon F1",
+        "id": 7,
+        "giorni": 4,
+        "msg": "Raccolta tra 4 giorni"
+      }
+    ],
+    "alert_count": 1
+  }
+}
