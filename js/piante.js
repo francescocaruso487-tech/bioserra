@@ -623,57 +623,73 @@ function renderActivePlants() {
   if (cfgInput)  cfgInput.value  = currentLightHours;
 }
 
-/* ── Render archive ── */
+/* ══════════════════════════════════════════════════════
+   STORICO CICLI — Render Archivio + Sync da GitHub
+══════════════════════════════════════════════════════ */
+
+/* ── Toast globale ── */
+function _archivioToast(msg) {
+  let t = document.getElementById('archivio-toast');
+  if (!t) {
+    t = document.createElement('div');
+    t.id = 'archivio-toast';
+    t.style.cssText = [
+      'position:fixed','bottom:90px','left:50%','transform:translateX(-50%)',
+      'background:var(--card2)','border:1px solid var(--border)',
+      'border-radius:20px','padding:8px 18px','font-size:13px',
+      'color:var(--text)','z-index:9999','pointer-events:none',
+      'transition:opacity .4s','white-space:nowrap','max-width:90vw',
+      'text-align:center','box-shadow:0 4px 16px rgba(0,0,0,.4)'
+    ].join(';');
+    document.body.appendChild(t);
+  }
+  t.textContent = msg;
+  t.style.opacity = '1';
+  clearTimeout(t._to);
+  t._to = setTimeout(() => { t.style.opacity = '0'; }, 3200);
+}
+
+/* ── Render archivio ── */
 function renderArchive() {
   const archived = loadArchivedPlants();
   const container = document.getElementById('lista-archivio');
   if (!container) return;
 
-  // ── Statistiche riepilogative ──
+  // Stats card
   const statsCard = document.getElementById('archivio-stats-card');
   if (statsCard) {
     if (archived.length) {
-      const withResa = archived.filter(p => p.resa_grammi > 0);
+      const withResa  = archived.filter(p => p.resa_grammi > 0);
       const resaMedia = withResa.length
-        ? Math.round(withResa.reduce((s,p) => s + p.resa_grammi, 0) / withResa.length)
-        : null;
-      const withDurata = archived.filter(p => p.durata_giorni > 0);
-      const durataMedia = withDurata.length
-        ? Math.round(withDurata.reduce((s,p) => s + p.durata_giorni, 0) / withDurata.length)
-        : null;
-      // Varietà più produttiva
-      let topPlant = null;
-      if (withResa.length) {
-        topPlant = withResa.reduce((best, p) => (p.resa_grammi > (best?.resa_grammi||0) ? p : best), null);
-      }
-      // Metodo più usato
-      const metodiMap = {};
-      archived.forEach(p => { if (p.metodo) metodiMap[p.metodo] = (metodiMap[p.metodo]||0)+1; });
-      const topMetodo = Object.entries(metodiMap).sort((a,b)=>b[1]-a[1])[0];
+        ? Math.round(withResa.reduce((s,p) => s+p.resa_grammi,0)/withResa.length) : null;
+      const withDur   = archived.filter(p => p.durata_giorni > 0);
+      const durMedia  = withDur.length
+        ? Math.round(withDur.reduce((s,p) => s+p.durata_giorni,0)/withDur.length) : null;
+      const topPlant  = withResa.length
+        ? withResa.reduce((b,p) => p.resa_grammi>(b?.resa_grammi||0)?p:b, null) : null;
+      const mMap = {};
+      archived.forEach(p => { if (p.metodo) mMap[p.metodo]=(mMap[p.metodo]||0)+1; });
+      const topM = Object.entries(mMap).sort((a,b)=>b[1]-a[1])[0];
 
       statsCard.style.display = 'block';
       statsCard.innerHTML = `
-        <div class="card" style="margin-bottom:12px;background:linear-gradient(135deg,rgba(74,175,94,0.1),rgba(58,159,216,0.06));">
+        <div class="card" style="margin-bottom:12px;background:linear-gradient(135deg,rgba(74,175,94,.1),rgba(58,159,216,.06));">
           <div class="card-title" style="margin-bottom:10px;">📊 Statistiche Storico</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
             <div style="background:var(--bg3);border-radius:8px;padding:8px 10px;text-align:center;">
               <div style="font-size:22px;font-weight:800;color:var(--green3);">${archived.length}</div>
-              <div style="font-size:10px;color:var(--text3);">Cicli completati</div>
-            </div>
+              <div style="font-size:10px;color:var(--text3);">Cicli completati</div></div>
             <div style="background:var(--bg3);border-radius:8px;padding:8px 10px;text-align:center;">
-              <div style="font-size:22px;font-weight:800;color:var(--green3);">${resaMedia !== null ? resaMedia+'g' : '—'}</div>
-              <div style="font-size:10px;color:var(--text3);">Resa media</div>
-            </div>
+              <div style="font-size:22px;font-weight:800;color:var(--green3);">${resaMedia!==null?resaMedia+'g':'—'}</div>
+              <div style="font-size:10px;color:var(--text3);">Resa media</div></div>
             <div style="background:var(--bg3);border-radius:8px;padding:8px 10px;text-align:center;">
-              <div style="font-size:22px;font-weight:800;color:var(--blue);">${durataMedia !== null ? durataMedia+'gg' : '—'}</div>
-              <div style="font-size:10px;color:var(--text3);">Durata media ciclo</div>
-            </div>
+              <div style="font-size:22px;font-weight:800;color:var(--blue);">${durMedia!==null?durMedia+'gg':'—'}</div>
+              <div style="font-size:10px;color:var(--text3);">Durata media</div></div>
             <div style="background:var(--bg3);border-radius:8px;padding:8px 10px;text-align:center;">
-              <div style="font-size:13px;font-weight:700;color:var(--orange);">${topPlant ? (topPlant.icon||'🌿')+' '+topPlant.name : '—'}</div>
-              <div style="font-size:10px;color:var(--text3);">Varietà top</div>
-            </div>
+              <div style="font-size:12px;font-weight:700;color:var(--orange);">${topPlant?(topPlant.icon||'🌿')+' '+topPlant.name:'—'}</div>
+              <div style="font-size:10px;color:var(--text3);">Varietà top</div></div>
           </div>
-          ${topMetodo ? `<div style="margin-top:8px;font-size:11px;color:var(--text3);text-align:center;">Metodo più usato: <strong style="color:var(--text2);">${topMetodo[0]}</strong> (${topMetodo[1]} cicl${topMetodo[1]===1?'o':'i'})</div>` : ''}
+          ${topM?`<div style="margin-top:8px;font-size:11px;color:var(--text3);text-align:center;">Metodo più usato: <strong style="color:var(--text2);">${topM[0]}</strong></div>`:''}
         </div>`;
     } else {
       statsCard.style.display = 'none';
@@ -682,159 +698,136 @@ function renderArchive() {
 
   if (!archived.length) {
     container.innerHTML = `
-      <div class="empty-archive" style="text-align:center;padding:40px 20px;color:var(--text3);">
+      <div style="text-align:center;padding:40px 20px;color:var(--text3);">
         <div style="font-size:48px;margin-bottom:12px;">📦</div>
         <div style="font-size:14px;font-weight:600;color:var(--text2);margin-bottom:6px;">Nessun ciclo archiviato</div>
-        <div style="font-size:12px;line-height:1.6;">Quando archivi una pianta, il ciclo completo<br>appare qui con tutte le statistiche.</div>
+        <div style="font-size:12px;line-height:1.6;">Completa un ciclo e archivia la pianta<br>per vedere lo storico qui.</div>
       </div>`;
     return;
   }
 
-  // Ordine cronologico inverso
-  const list = archived.slice().reverse();
+  const today = new Date(); today.setHours(0,0,0,0);
   let html = '';
-  for (const p of list) {
-    const archDate = p.archivedAt
-      ? new Date(p.archivedAt).toLocaleDateString('it-IT',{day:'2-digit',month:'short',year:'numeric'})
-      : '—';
+
+  for (const p of archived.slice().reverse()) {
     const germFmt = p.germDate
-      ? new Date(p.germDate).toLocaleDateString('it-IT',{day:'2-digit',month:'short',year:'numeric'})
-      : '—';
+      ? new Date(p.germDate).toLocaleDateString('it-IT',{day:'2-digit',month:'short',year:'numeric'}) : '—';
     const raccFmt = p.data_raccolta
-      ? new Date(p.data_raccolta).toLocaleDateString('it-IT',{day:'2-digit',month:'short',year:'numeric'})
-      : '—';
+      ? new Date(p.data_raccolta).toLocaleDateString('it-IT',{day:'2-digit',month:'short',year:'numeric'}) : '—';
+    const archFmt = p.archivedAt
+      ? new Date(p.archivedAt).toLocaleDateString('it-IT',{day:'2-digit',month:'short',year:'numeric'}) : '—';
 
-    // Badge qualità in base alle stelle
+    // Badge qualità
     const stelle = p.stelle || 0;
-    let badgeCls = '', badgeTxt = '';
-    if (stelle >= 5)      { badgeCls = 'background:rgba(74,175,94,0.2);color:var(--green3);border:1px solid rgba(74,175,94,0.4)'; badgeTxt = '🏆 Ottimo'; }
-    else if (stelle >= 3) { badgeCls = 'background:rgba(255,193,7,0.15);color:#ffd54f;border:1px solid rgba(255,193,7,0.3)';      badgeTxt = '⭐ Buono'; }
-    else if (stelle >= 1) { badgeCls = 'background:rgba(239,83,80,0.12);color:#ef9a9a;border:1px solid rgba(239,83,80,0.3)';      badgeTxt = '⚠️ Da migliorare'; }
-    else                  { badgeCls = 'background:var(--card2);color:var(--text3);border:1px solid var(--border)';               badgeTxt = '📦 Archiviato'; }
+    let bS='', bT='';
+    if      (stelle>=5){bS='background:rgba(74,175,94,.2);color:var(--green3);border:1px solid rgba(74,175,94,.4)';bT='🏆 Ottimo';}
+    else if (stelle>=3){bS='background:rgba(255,193,7,.15);color:#ffd54f;border:1px solid rgba(255,193,7,.3)';bT='⭐ Buono';}
+    else if (stelle>=1){bS='background:rgba(239,83,80,.12);color:#ef9a9a;border:1px solid rgba(239,83,80,.3)';bT='⚠️ Da migliorare';}
+    else               {bS='background:var(--card2);color:var(--text3);border:1px solid var(--border)';bT='📦 Archiviato';}
 
-    // Stelle render
-    const stelleHtml = stelle > 0
-      ? Array.from({length:5}, (_,i) => `<span style="color:${i<stelle?'#ffd54f':'var(--border)'}">★</span>`).join('')
+    const stelleH = stelle>0
+      ? Array.from({length:5},(_,i)=>`<span style="color:${i<stelle?'#ffd54f':'var(--border)'};">★</span>`).join('')
       : '<span style="color:var(--text3);font-size:11px;">Non valutato</span>';
 
-    // Esperimenti
-    const espHtml = (p.esperimenti_attivi && p.esperimenti_attivi.length)
-      ? p.esperimenti_attivi.map(e => `<span style="background:rgba(58,159,216,0.12);border-radius:5px;padding:2px 7px;font-size:10px;color:var(--blue);">${e}</span>`).join(' ')
-      : '<span style="color:var(--text3);font-size:11px;">Nessuno</span>';
+    const resaH = p.resa_grammi>0
+      ? `<div style="background:rgba(74,175,94,.1);border-radius:7px;padding:4px 10px;font-size:12px;font-weight:700;color:var(--green3);">${p.resa_grammi>50?'🏆':'💚'} ${p.resa_grammi}g</div>` : '';
 
-    // Problemi collassabili
-    const problemiId = `prob-${p.id}-${p.archivedAt ? p.archivedAt.slice(0,10) : 'x'}`;
-    const problemiHtml = p.problemi
-      ? `<div style="margin-top:6px;">
-           <div onclick="document.getElementById('${problemiId}').style.display=document.getElementById('${problemiId}').style.display==='none'?'block':'none'"
-             style="font-size:11px;color:var(--orange);cursor:pointer;font-weight:600;">
-             ⚠️ Problemi riscontrati ▾
-           </div>
-           <div id="${problemiId}" style="display:none;margin-top:4px;font-size:11px;color:var(--text2);line-height:1.5;padding:6px 8px;background:var(--bg3);border-radius:6px;">
-             ${p.problemi}
-           </div>
-         </div>`
-      : '';
+    // Fase post-raccolta con countdown
+    let postrH = '';
+    if (p.ess_end && p.conc_end) {
+      const essE  = new Date(p.ess_end);  essE.setHours(0,0,0,0);
+      const concE = new Date(p.conc_end); concE.setHours(0,0,0,0);
+      if (today <= concE) {
+        const inEss = today <= essE;
+        const endDate = inEss ? essE : concE;
+        const dLeft = Math.max(0, Math.round((endDate - today)/86400000));
+        const label = inEss ? '🌬️ Essiccazione in corso' : '🫙 Concia in corso';
+        const color = inEss ? 'var(--blue)' : 'var(--orange)';
+        const endFmt = endDate.toLocaleDateString('it-IT',{day:'2-digit',month:'short'});
+        postrH = `<div style="margin:8px 0;padding:7px 10px;background:rgba(58,159,216,.09);border-radius:8px;border-left:3px solid ${color};">
+          <div style="font-size:12px;font-weight:700;color:${color};">${label}</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px;">
+            ${dLeft===0?'Termina <strong>oggi</strong>':`Termina tra <strong>${dLeft} giorno${dLeft===1?'':'i'}</strong>`} · ${endFmt}
+          </div></div>`;
+      }
+    }
+
+    // Note collassabili
+    let noteH = '';
+    if (p.notes) {
+      const nId = `n-${p.id}-${(p.archivedAt||'').slice(0,10)}`;
+      noteH = p.notes.length>80
+        ? `<div style="margin-top:6px;border-top:1px solid var(--border);padding-top:6px;">
+             <div onclick="const e=document.getElementById('${nId}');e.style.display=e.style.display==='none'?'block':'none'"
+               style="font-size:11px;color:var(--text3);cursor:pointer;">💬 Note ▾</div>
+             <div id="${nId}" style="display:none;font-size:11px;color:var(--text2);line-height:1.5;margin-top:4px;">${p.notes}</div>
+           </div>`
+        : `<div style="margin-top:6px;border-top:1px solid var(--border);padding-top:6px;font-size:11px;color:var(--text2);line-height:1.5;">💬 ${p.notes}</div>`;
+    }
 
     html += `
-      <div class="archive-card" style="margin-bottom:10px;border-radius:var(--radius-sm);border:1px solid var(--border);background:var(--card2);padding:12px;">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-          <div style="font-size:24px;">${p.icon || '🌿'}</div>
+      <div style="margin-bottom:10px;border-radius:var(--radius-sm);border:1px solid var(--border);background:var(--card2);padding:12px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+          <div style="font-size:24px;">${p.icon||'🌿'}</div>
           <div style="flex:1;min-width:0;">
             <div style="font-size:14px;font-weight:700;color:var(--text);">${p.name} ×${p.id}</div>
-            <div style="font-size:11px;color:var(--text3);">${p.type === 'auto' ? 'Autofiorente' : 'Femminizzata'}</div>
+            <div style="font-size:11px;color:var(--text3);">${p.type==='auto'?'Autofiorente':'Femminizzata'}</div>
           </div>
-          <div style="border-radius:20px;padding:3px 9px;font-size:11px;font-weight:600;${badgeCls}">${badgeTxt}</div>
+          <div style="border-radius:20px;padding:3px 9px;font-size:11px;font-weight:600;${bS}">${bT}</div>
         </div>
-
-        <!-- Stelle -->
-        <div style="font-size:18px;margin-bottom:8px;">${stelleHtml}</div>
-
-        <!-- Timeline ciclo -->
+        <div style="font-size:20px;margin-bottom:8px;letter-spacing:2px;">${stelleH}</div>
         <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text3);margin-bottom:8px;flex-wrap:wrap;">
-          <span>🌱 ${germFmt}</span>
-          <span style="color:var(--border);">→</span>
-          <span>✂️ ${raccFmt}</span>
-          ${p.durata_giorni ? `<span style="color:var(--border);">·</span><span style="color:var(--green3);font-weight:600;">${p.durata_giorni} giorni</span>` : ''}
+          <span>🌱 ${germFmt}</span><span style="color:var(--border);">→</span><span>✂️ ${raccFmt}</span>
+          ${p.durata_giorni?`<span style="color:var(--border);">·</span><span style="color:var(--green3);font-weight:600;">${p.durata_giorni} gg</span>`:''}
         </div>
-
-        <!-- Resa + Metodo -->
-        <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
-          ${p.resa_grammi ? `<div style="background:rgba(74,175,94,0.1);border-radius:7px;padding:4px 10px;font-size:12px;font-weight:700;color:var(--green3);">💚 ${p.resa_grammi}g</div>` : ''}
-          ${p.metodo ? `<div style="background:var(--bg3);border-radius:7px;padding:4px 10px;font-size:12px;color:var(--text2);">🔧 ${p.metodo}</div>` : ''}
+        <div style="display:flex;gap:8px;margin-bottom:6px;flex-wrap:wrap;">
+          ${resaH}
+          ${p.metodo?`<div style="background:var(--bg3);border-radius:7px;padding:4px 10px;font-size:12px;color:var(--text2);">🌱 ${p.metodo}</div>`:''}
         </div>
-
-        <!-- Esperimenti -->
-        <div style="margin-bottom:6px;">
-          <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:3px;">⚡ ESPERIMENTI</div>
-          <div style="display:flex;flex-wrap:wrap;gap:4px;">${espHtml}</div>
-        </div>
-
-        <!-- Problemi collassabili -->
-        ${problemiHtml}
-
-        <!-- Note -->
-        ${p.notes ? `<div style="margin-top:6px;font-size:11px;color:var(--text2);line-height:1.5;border-top:1px solid var(--border);padding-top:6px;">💬 ${p.notes}</div>` : ''}
-
-        <div style="margin-top:6px;font-size:10px;color:var(--text3);">📦 Archiviata il ${archDate}</div>
+        ${postrH}
+        ${noteH}
+        <div style="margin-top:6px;font-size:10px;color:var(--text3);">📦 Archiviata ${archFmt}</div>
       </div>`;
   }
   container.innerHTML = html;
 }
 
-/* ── Sync da GitHub: carica storico_cicli e mostra cicli remoti non in locale ── */
+/* ── Sync da GitHub → locale (bottone tab Archivio) ── */
 async function archivioSync() {
   const btn = document.getElementById('btn-archivio-sync');
-  if (btn) { btn.textContent = '⏳ Sincronizzazione…'; btn.disabled = true; }
+  if (btn) { btn.textContent = '⏳…'; btn.disabled = true; }
   try {
     const data = await fetchGHJson('data/esperimenti.json');
-    if (!data || !data.storico_cicli || !data.storico_cicli.length) {
+    if (!data || !Array.isArray(data.storico_cicli) || !data.storico_cicli.length) {
       _archivioToast('☁️ Nessun ciclo remoto trovato');
-      if (btn) { btn.textContent = '☁️ Sincronizza da GitHub'; btn.disabled = false; }
-      return;
-    }
-
-    // Cache per mostrarli nella lista
-    localStorage.setItem('bioserra_storico_gh_cache', JSON.stringify(data.storico_cicli));
-
-    // Deduplicazione: non aggiungere cicli già in locale
-    const local = loadArchivedPlants();
-    const localKeys = new Set(local.map(p => `${p.id}_${p.data_raccolta || p.archivedAt?.slice(0,10)}`));
-
-    const remoti = data.storico_cicli.filter(s => {
-      const k = `${s.id_pianta}_${s.raccolta}`;
-      return !localKeys.has(k);
-    });
-
-    if (remoti.length) {
-      // Converti formato remoto → formato locale e aggiungi
-      const toAdd = remoti.map(s => ({
-        id: s.id_pianta,
-        name: s.nome,
-        type: s.tipo === 'autofiorente' ? 'auto' : 'femm',
-        icon: '☁️',
-        germDate: s.germinazione,
-        data_raccolta: s.raccolta,
-        durata_giorni: s.durata_giorni,
-        resa_grammi: s.resa_grammi,
-        metodo: s.metodo,
-        stelle: s.stelle,
-        problemi: s.problemi,
-        esperimenti_attivi: s.esperimenti_attivi || [],
-        notes: s.note,
-        harvestMin: 0, harvestMax: 0,
-        archivedAt: s.data_archiviazione ? s.data_archiviazione + 'T00:00:00.000Z' : new Date().toISOString(),
-        fromGitHub: true
-      }));
-      local.push(...toAdd);
-      saveArchivedPlants(local);
-      _archivioToast(`☁️ ${remoti.length} ciclo${remoti.length>1?'i':''} importato${remoti.length>1?'i':''} da GitHub`);
     } else {
-      _archivioToast('☁️ Già sincronizzato — nessun ciclo nuovo');
+      const local = loadArchivedPlants();
+      const lKeys = new Set(local.map(p => `${p.id}_${p.data_raccolta||''}`));
+      const nuovi = data.storico_cicli.filter(s => !lKeys.has(`${s.id_pianta}_${s.raccolta||''}`));
+      if (nuovi.length) {
+        nuovi.forEach(s => {
+          const rs = s.raccolta || new Date().toISOString().slice(0,10);
+          local.push({
+            id:s.id_pianta, name:s.nome, type:s.tipo==='autofiorente'?'auto':'femm',
+            icon:'☁️', germDate:s.germinazione, data_raccolta:rs,
+            durata_giorni:s.durata_giorni, resa_grammi:s.resa_grammi,
+            metodo:s.metodo, stelle:s.stelle, notes:s.note,
+            harvestMin:0, harvestMax:0,
+            ess_end:  addDays(new Date(rs),14).toISOString().slice(0,10),
+            conc_end: addDays(new Date(rs),28).toISOString().slice(0,10),
+            archivedAt: (s.data_archiviazione||new Date().toISOString().slice(0,10))+'T00:00:00.000Z',
+            fromGitHub:true
+          });
+        });
+        saveArchivedPlants(local);
+        _archivioToast(`☁️ ${nuovi.length} ciclo${nuovi.length>1?'i':''} importato${nuovi.length>1?'i':''}`);
+      } else {
+        _archivioToast('☁️ Già aggiornato');
+      }
+      renderArchive();
     }
-    renderArchive();
   } catch(e) {
-    _archivioToast('⚠️ Errore sync: ' + (e.message || 'rete'));
+    _archivioToast('⚠️ Errore: ' + (e.message||'rete'));
   }
   if (btn) { btn.textContent = '☁️ Sincronizza da GitHub'; btn.disabled = false; }
 }
@@ -900,215 +893,192 @@ function saveNewPlant() {
   renderActivePlants();
 }
 
-/* ── Modal: Archivia Pianta ── */
-function openArchiveModal(id) {
-  const plants = loadActivePlants();
-  const p = plants.find(p => p.id === id);
-  if (!p) return;
-  document.getElementById('archive-plant-id').value = id;
-  document.getElementById('archive-plant-name').textContent = `${p.icon || '🌿'} ${p.name} ×${p.id}`;
-  // Reset campi
-  document.getElementById('archive-notes').value = '';
-  document.getElementById('archive-resa').value = '';
-  document.getElementById('archive-metodo').value = 'Naturale';
-  document.getElementById('archive-problemi').value = '';
-  document.getElementById('archive-stelle').value = '0';
-  archiveSetStelle(0);
-  // Precompila esperimenti attivi da localStorage
-  try {
-    const espJson = localStorage.getItem('bioserra_esp_attivi');
-    const espAttivi = espJson ? JSON.parse(espJson) : null;
-    const espEl = document.getElementById('archive-esperimenti');
-    if (espAttivi && Array.isArray(espAttivi) && espAttivi.length) {
-      espEl.value = espAttivi.map(e => e.nome || e.name || e).join(', ');
-    } else if (espAttivi && typeof espAttivi === 'string') {
-      espEl.value = espAttivi;
-    } else {
-      // Prova a leggere da esperimenti.json cached
-      const espCache = localStorage.getItem('bioserra_esperimenti_cache');
-      if (espCache) {
-        try {
-          const ec = JSON.parse(espCache);
-          const attivi = (ec.esperimenti_attivi || ec.attivi || []).map(e => e.nome || e.name || e).filter(Boolean);
-          espEl.value = attivi.join(', ');
-        } catch(e2) { espEl.value = ''; }
-      } else {
-        espEl.value = '';
-      }
-    }
-  } catch(e) {
-    document.getElementById('archive-esperimenti').value = '';
-  }
-  document.getElementById('modal-archive-plant').classList.add('open');
-}
+/* ══════════════════════════════════════════════════════
+   STORICO CICLI — Modal Archiviazione Arricchito
+══════════════════════════════════════════════════════ */
 
+const _GH_TOK  = ['ghp_dtR2oW','iOCz8XGENX','d2uTmrj40Nj8As1xVqMD'].join('');
+const _GH_REPO = 'francescocaruso487-tech/bioserra';
+const _ESP_PATH = 'data/esperimenti.json';
+let _archStelle = 0;
+
+/* ── Stelle interattive ── */
 function archiveSetStelle(n) {
-  document.getElementById('archive-stelle').value = n;
-  document.querySelectorAll('.star-btn').forEach(btn => {
+  _archStelle = n;
+  const h = document.getElementById('archive-stelle');
+  if (h) h.value = n;
+  document.querySelectorAll('#archive-stelle-bar .star-btn').forEach(btn => {
     const s = parseInt(btn.dataset.s);
-    btn.style.color = s <= n ? '#ffd54f' : 'var(--text3)';
-    btn.style.fontSize = s <= n ? '24px' : '20px';
-    btn.style.background = 'none';
-    btn.style.border = 'none';
-    btn.style.cursor = 'pointer';
-    btn.style.padding = '0 2px';
-    btn.style.transition = 'all 0.15s';
+    btn.style.color     = s<=n ? '#ffd54f' : 'var(--text3)';
+    btn.style.fontSize  = s<=n ? '28px'    : '22px';
+    btn.style.transform = s<=n ? 'scale(1.15)' : 'scale(1)';
+    btn.style.transition = 'all .15s';
   });
 }
 
-function closeArchiveModal(e) {
-  if (!e || e.target === document.getElementById('modal-archive-plant')) {
-    document.getElementById('modal-archive-plant').classList.remove('open');
+/* ── Calcolo data raccolta e durata ── */
+function _calcHarvestDate(plant) {
+  const ovr = loadPlantPhaseOverride(plant.id);
+  if (ovr && ovr.harvestDate) return ovr.harvestDate;
+  if (plant.type === 'auto' && plant.germDate)
+    return addDays(new Date(plant.germDate), plant.harvestMin).toISOString().slice(0,10);
+  if (plant.type === 'femm') {
+    const fi = getEffectiveFlorStart(plant);
+    return addDays(fi.date, plant.harvestMin).toISOString().slice(0,10);
   }
+  return new Date().toISOString().slice(0,10);
 }
+
+function _calcDurata(germDate, raccoltaDate) {
+  if (!germDate || !raccoltaDate) return null;
+  const d = daysDiff(new Date(germDate), new Date(raccoltaDate));
+  return d >= 0 ? d : null;
+}
+
+function _updateDurataDisplay(germDate, raccStr) {
+  const el = document.getElementById('archive-durata-display');
+  if (!el) return;
+  const d = _calcDurata(germDate, raccStr);
+  el.textContent = d !== null ? `${d} giorni totali` : '—';
+}
+
+/* ── Apri modal ── */
+function openArchiveModal(id) {
+  const plants = loadActivePlants();
+  const p = plants.find(x => x.id === id);
+  if (!p) return;
+
+  const harvestStr = _calcHarvestDate(p);
+
+  document.getElementById('archive-plant-id').value   = id;
+  document.getElementById('archive-plant-name').textContent = `${p.icon||'🌿'} ${p.name} ×${p.id}`;
+
+  const raccEl = document.getElementById('archive-data-raccolta');
+  if (raccEl) {
+    raccEl.value = harvestStr;
+    raccEl.oninput = function() { _updateDurataDisplay(p.germDate, this.value); };
+  }
+  _updateDurataDisplay(p.germDate, harvestStr);
+
+  document.getElementById('archive-resa').value   = '';
+  document.getElementById('archive-metodo').value = 'Living Soil';
+  const noteEl = document.getElementById('archive-note');
+  if (noteEl) noteEl.value = '';
+  document.getElementById('archive-stelle').value = '0';
+  _archStelle = 0;
+  archiveSetStelle(0);
+
+  document.getElementById('modal-archive-plant').classList.add('open');
+}
+
+function closeArchiveModal(e) {
+  const m = document.getElementById('modal-archive-plant');
+  if (!e || e.target === m) { if (m) m.classList.remove('open'); }
+}
+
+/* ── Conferma archiviazione ── */
 function confirmArchive() {
-  const id = parseInt(document.getElementById('archive-plant-id').value);
-  const notes      = document.getElementById('archive-notes').value.trim();
-  const resa       = parseInt(document.getElementById('archive-resa').value) || 0;
-  const metodo     = document.getElementById('archive-metodo').value;
-  const stelle     = parseInt(document.getElementById('archive-stelle').value) || 0;
-  const problemi   = document.getElementById('archive-problemi').value.trim();
-  const espTxt     = document.getElementById('archive-esperimenti').value.trim();
-  const esperimenti = espTxt ? espTxt.split(',').map(s => s.trim()).filter(Boolean) : [];
+  const id  = parseInt(document.getElementById('archive-plant-id').value);
+  const resa = parseInt(document.getElementById('archive-resa').value) || 0;
+  const metodo = document.getElementById('archive-metodo').value;
+  const stelle = parseInt(document.getElementById('archive-stelle').value) || _archStelle || 0;
+  const noteEl = document.getElementById('archive-note');
+  const note   = noteEl ? noteEl.value.trim().slice(0,300) : '';
+  const raccEl = document.getElementById('archive-data-raccolta');
+  const raccoltaStr = (raccEl && raccEl.value) || new Date().toISOString().slice(0,10);
 
   const plants = loadActivePlants();
-  const idx = plants.findIndex(p => p.id === id);
+  const idx    = plants.findIndex(p => p.id === id);
   if (idx === -1) return;
-  const plant = { ...plants[idx] };
 
-  // Calcola durata effettiva in giorni
-  const today = new Date().toISOString().slice(0,10);
-  let durata = null;
-  if (plant.germDate) {
-    durata = daysDiff(new Date(plant.germDate), new Date(today));
-  }
+  const plant  = { ...plants[idx] };
+  const durata = _calcDurata(plant.germDate, raccoltaStr);
 
-  // Override raccolto: usa harvestDate da phase override se esiste
-  const ovr = loadPlantPhaseOverride(id);
-  const dataRaccolta = (ovr && ovr.harvestDate) ? ovr.harvestDate : today;
-
-  // Arricchisci l'oggetto pianta con i dati del ciclo
-  plant.notes         = notes;
+  plant.notes         = note;
   plant.resa_grammi   = resa;
   plant.metodo        = metodo;
   plant.stelle        = stelle;
-  plant.problemi      = problemi;
-  plant.esperimenti_attivi = esperimenti;
-  plant.data_raccolta = dataRaccolta;
+  plant.data_raccolta = raccoltaStr;
   plant.durata_giorni = durata;
   plant.archivedAt    = new Date().toISOString();
+  // Fase post-raccolta
+  plant.ess_end  = addDays(new Date(raccoltaStr), 14).toISOString().slice(0,10);
+  plant.conc_end = addDays(new Date(raccoltaStr), 28).toISOString().slice(0,10);
 
-  // Salva in localStorage
   const archived = loadArchivedPlants();
   archived.push(plant);
   saveArchivedPlants(archived);
   plants.splice(idx, 1);
   saveActivePlants(plants);
 
-  // Chiudi modal e aggiorna UI
   document.getElementById('modal-archive-plant').classList.remove('open');
   renderActivePlants();
+  _archivioToast('📦 Archiviata! Ciclo salvato.');
 
-  // Sync GitHub (silenzioso, non-bloccante)
-  _archivioSyncGitHub(plant, dataRaccolta, durata, esperimenti);
+  _syncStoricoGitHub(plant, raccoltaStr, durata);
 }
 
-/* ── Sync GitHub: aggiunge voce a esperimenti.json → storico_cicli ── */
-const GH_TOKEN  = ['ghp_dtR2oWiOCz8XGENXd2uTmrj40Nj', '8As1xVqMD'].join('');
-const GH_REPO   = 'francescocaruso487-tech/bioserra';
-const ESP_FILE  = 'data/esperimenti.json';
-
-async function _archivioSyncGitHub(plant, dataRaccolta, durata, esperimenti) {
+/* ── Sync GitHub ── */
+async function _syncStoricoGitHub(plant, raccoltaStr, durata) {
   try {
-    // 1. Leggi SHA e contenuto attuale
-    const metaRes = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${ESP_FILE}`, {
-      headers: { 'Authorization': 'token ' + GH_TOKEN }
-    });
-    let currentContent = {};
-    let sha = null;
+    const metaRes = await fetch(
+      `https://api.github.com/repos/${_GH_REPO}/contents/${_ESP_PATH}`,
+      { headers: { 'Authorization': 'token ' + _GH_TOK } }
+    );
+    let currentContent = {}, sha = null;
     if (metaRes.ok) {
       const meta = await metaRes.json();
       sha = meta.sha;
-      try { currentContent = JSON.parse(atob(meta.content.replace(/\n/g,''))); } catch(e) { currentContent = {}; }
+      try { currentContent = JSON.parse(atob(meta.content.replace(/\n/g,''))); }
+      catch(e) { currentContent = {}; }
     }
 
-    // 2. Prepara voce storico
     const voce = {
-      id_pianta:        plant.id,
-      nome:             plant.name,
-      tipo:             plant.type === 'auto' ? 'autofiorente' : 'femminizzata',
-      germinazione:     plant.germDate || null,
-      raccolta:         dataRaccolta,
-      durata_giorni:    durata,
-      resa_grammi:      plant.resa_grammi,
-      metodo:           plant.metodo,
-      stelle:           plant.stelle,
-      problemi:         plant.problemi,
-      esperimenti_attivi: esperimenti,
-      note:             plant.notes,
+      id_pianta:          plant.id,
+      nome:               plant.name,
+      tipo:               plant.type==='auto' ? 'autofiorente' : 'femminizzata',
+      germinazione:       plant.germDate || null,
+      raccolta:           raccoltaStr,
+      durata_giorni:      durata,
+      resa_grammi:        plant.resa_grammi,
+      metodo:             plant.metodo,
+      stelle:             plant.stelle,
+      note:               plant.notes,
       data_archiviazione: new Date().toISOString().slice(0,10)
     };
 
-    // 3. Aggiungi allo storico
     if (!currentContent.storico_cicli) currentContent.storico_cicli = [];
-    // Deduplicazione per id+raccolta
     currentContent.storico_cicli = currentContent.storico_cicli.filter(
-      s => !(s.id_pianta === voce.id_pianta && s.raccolta === voce.raccolta)
+      s => !(s.id_pianta===voce.id_pianta && s.raccolta===voce.raccolta)
     );
     currentContent.storico_cicli.push(voce);
     currentContent.last_updated = new Date().toISOString();
 
-    // 4. PUT su GitHub
-    const body = {
-      message: `Archivia ${plant.name} (ID:${plant.id}) · ${dataRaccolta}`,
+    const putBody = {
+      message: `storico: ${plant.name} ID${plant.id} · ${raccoltaStr}`,
       content: btoa(unescape(encodeURIComponent(JSON.stringify(currentContent, null, 2)))),
       branch: 'main'
     };
-    if (sha) body.sha = sha;
+    if (sha) putBody.sha = sha;
 
-    const putRes = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${ESP_FILE}`, {
-      method: 'PUT',
-      headers: {
-        'Authorization': 'token ' + GH_TOKEN,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(body)
-    });
-
+    const putRes = await fetch(
+      `https://api.github.com/repos/${_GH_REPO}/contents/${_ESP_PATH}`,
+      {
+        method: 'PUT',
+        headers: {'Authorization':'token '+_GH_TOK,'Content-Type':'application/json'},
+        body: JSON.stringify(putBody)
+      }
+    );
     if (putRes.ok) {
-      _archivioToast('☁️ Ciclo sincronizzato su GitHub');
+      _archivioToast('☁️ Storico sincronizzato su GitHub');
+    } else {
+      _archivioToast('⚠️ Salvato in locale — sync GitHub fallito');
     }
   } catch(e) {
-    // Fail silenzioso — l'archiviazione locale è già avvenuta
-    console.warn('[BioSerra] Sync GitHub archivio fallito:', e.message);
+    console.warn('[BioSerra] Sync storico:', e.message);
+    _archivioToast('⚠️ Salvato in locale — sync non disponibile');
   }
 }
-
-function _archivioToast(msg) {
-  let t = document.getElementById('archivio-toast');
-  if (!t) {
-    t = document.createElement('div');
-    t.id = 'archivio-toast';
-    t.style.cssText = 'position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:8px 18px;font-size:13px;color:var(--text);z-index:9999;pointer-events:none;transition:opacity .4s;white-space:nowrap;';
-    document.body.appendChild(t);
-  }
-  t.textContent = msg;
-  t.style.opacity = '1';
-  clearTimeout(t._to);
-  t._to = setTimeout(() => { t.style.opacity = '0'; }, 3000);
-}
-
-/* ── Init ── */
-function initPiante() {
-  var stored = null;
-  try { stored = localStorage.getItem('bioserra_active_plants'); } catch(e) {}
-  if (!stored) {
-    try { localStorage.setItem('bioserra_active_plants', JSON.stringify(DEFAULT_PLANTS)); } catch(e) {}
-  }
-  renderActivePlants();
-  checkHarvestAlerts();
-}
-
 
 /* ══════════════════════════════════════════════════════════════
    AI CHAT — Groq Llama3 (sempre attivo, zero config)
