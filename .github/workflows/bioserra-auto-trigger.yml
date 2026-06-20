@@ -1,0 +1,28 @@
+name: BioSerra - Auto Trigger Cervelli AI
+
+on:
+  push:
+    paths:
+      - 'data/pdf_knowledge.json'
+  workflow_dispatch:
+
+jobs:
+  trigger-cervelli:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger B - PDF Sintetizzatore
+        run: |
+          curl -s -X POST https://francesco467.app.n8n.cloud/api/v1/workflows/438SBWac0rWVi3X1/execute -H "Content-Type: application/json" -d '{}'
+          echo "PDF Sintetizzatore triggered"
+          sleep 90
+
+      - name: Trigger A - Guida Masterwork
+        run: |
+          curl -s -X POST https://francesco467.app.n8n.cloud/api/v1/workflows/MXZoTNSN6Q8Xq704/execute -H "Content-Type: application/json" -d '{}'
+          echo "Guida Masterwork triggered"
+          sleep 60
+
+      - name: Trigger C - Knowledge Digest
+        run: |
+          curl -s -X POST https://francesco467.app.n8n.cloud/api/v1/workflows/0LZhKWgiYlLBZMri/execute -H "Content-Type: application/json" -d '{}'
+          echo "Knowledge Digest triggered at $(date)"
