@@ -1,4 +1,4 @@
-/* BioSerra - js/config.js - Migrazione automatica */
+/* BioSerra - config.js */
 /* ══════════════════════════════════════════════════════════════
    IMPOSTAZIONI — CONFIG SECTION
 ══════════════════════════════════════════════════════════════ */
