@@ -1473,6 +1473,19 @@ function manAggiungeTecnica(idx) {
   alert('✅ Tecnica aggiunta! Vai alla tab Tecniche per attivarla.');
 }
 
+/* ── Init Piante ── */
+function initPiante() {
+  // Seed localStorage con piante di default se vuoto
+  try {
+    const stored = localStorage.getItem('bioserra_active_plants');
+    if (!stored) {
+      localStorage.setItem('bioserra_active_plants', JSON.stringify(DEFAULT_PLANTS));
+    }
+  } catch(e) {}
+  renderActivePlants();
+  checkHarvestAlerts();
+}
+
 /* ── Auto-load al cambio sezione ── */
 function navigateTo(sectionId) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
