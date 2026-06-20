@@ -1,13 +1,51 @@
 {
-  "lastUpdate": "2026-06-20T11:37:12.820Z",
+  "lastUpdate": "2026-06-20T14:15:55.854851Z",
   "data": "2026-06-20",
-  "guide_potenziate": [],
-  "esperimenti_attivi_suggeriti": [],
-  "scoperta_del_giorno": "",
-  "consiglio_integrato": "",
-  "connessione_inaspettata": "",
+  "guide_potenziate": [
+    {
+      "titolo": "Irrigazione Cannabis Outdoor",
+      "guida_base": "Irrigare con acqua a pH 6.2-6.8 a temperatura ambiente. Aspettare che i primi 2-3 cm di suolo siano asciutti prima di irrigare. In Living Soil la vita microbica regola il bilanciamento idrico.",
+      "potenziamento_pdf": "L'acqua magnetizzata con spirale cosmica in rame (tecnica Lakhovsky) struttura le molecole d'acqua aumentando la biodisponibilit\u00e0 dei nutrienti e l'assorbimento radicale del 15-30%.",
+      "esperimento_suggerito": "Posiziona la spirale cosmica in rame nel bidone dell'acqua 24h prima di ogni irrigazione. Confronta la risposta delle piante nelle prime 2 settimane.",
+      "applicabile_oggi": true,
+      "piante_coinvolte": [
+        "tutte"
+      ]
+    },
+    {
+      "titolo": "Nutrizione Living Soil",
+      "guida_base": "Il Living Soil si autoregola attraverso la vita microbica. Integrare con the di compost settimanale, farina di roccia basalto e calcite. Azoto in vegetativa, P-K in fioritura.",
+      "potenziamento_pdf": "La farina di roccia (da agricoltura organica) agisce sulla struttura elettromagnetica del suolo allo stesso modo della spirale cosmica: entrambe potenziano l'attivit\u00e0 microbica aumentando la disponibilit\u00e0 minerale.",
+      "esperimento_suggerito": "Aggiungi 50g di farina di roccia basalto per pianta questa settimana. Osserva l'attivit\u00e0 del suolo e il colore delle foglie nelle 2 settimane successive.",
+      "applicabile_oggi": true,
+      "piante_coinvolte": [
+        "tutte"
+      ]
+    }
+  ],
+  "esperimenti_attivi_suggeriti": [
+    {
+      "nome": "Acqua Magnetizzata Lakhovsky",
+      "descrizione": "Inserire la spirale cosmica in rame nel bidone dell'acqua 24h prima di ogni irrigazione per strutturare le molecole e aumentare il potere nutrizionale.",
+      "urgenza": "alta",
+      "piante": [
+        "tutte"
+      ]
+    },
+    {
+      "nome": "Integrazione Farina di Roccia",
+      "descrizione": "Distribuire 50g di farina di roccia basalto attorno alla base di ogni pianta per mineralizzare il Living Soil e aumentare l'attivit\u00e0 microbica.",
+      "urgenza": "media",
+      "piante": [
+        "tutte"
+      ]
+    }
+  ],
+  "scoperta_del_giorno": "La farina di roccia e la spirale cosmica in rame agiscono entrambe sulla struttura elettromagnetica del suolo potenziando la vita microbica del Living Soil.",
+  "consiglio_integrato": "Unisci la guida pratica di irrigazione con il principio Lakhovsky: usa acqua magnetizzata a pH 6.5 per massimizzare l'assorbimento radicale nel Living Soil. Aggiungi farina di roccia basalto per completare la mineralizzazione.",
+  "connessione_inaspettata": "Il principio ermetico 'come in alto cos\u00ec in basso' si manifesta nel Living Soil: i cicli lunari che guidano la crescita delle piante guidano anche i ritmi della vita microbica nel suolo.",
   "stats": {
-    "guide": 0,
-    "esperimenti": 0
+    "guide": 2,
+    "esperimenti": 2
   }
 }
