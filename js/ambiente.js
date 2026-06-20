@@ -2,7 +2,7 @@
 /* ══════════════════════════════════════════════════════════════
    METEO — Open-Meteo · Caserta fissa
 ══════════════════════════════════════════════════════════════ */
-const CASERTA = { lat: 41.0761, lon: 14.3328 };
+const CASERTA = { lat: 41.09696262016739, lon: 14.388065360906802 };
 const WMO = {0:'Sereno ☀️',1:'Prevalentemente sereno 🌤️',2:'Parzialmente nuvoloso ⛅',3:'Nuvoloso ☁️',45:'Nebbia 🌫️',48:'Nebbia gelata 🌫️',51:'Pioggerella 🌦️',53:'Pioggerella moderata 🌦️',55:'Pioggerella intensa 🌧️',61:'Pioggia leggera 🌧️',63:'Pioggia moderata 🌧️',65:'Pioggia intensa 🌧️',71:'Neve leggera ❄️',73:'Neve moderata ❄️',75:'Neve intensa ❄️',80:'Rovesci leggeri 🌦️',81:'Rovesci moderati 🌧️',82:'Rovesci violenti ⛈️',95:'Temporale ⛈️',96:'Temporale con grandine ⛈️',99:'Temporale forte ⛈️'};
 const WMO_ICONS = {0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌦️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',71:'❄️',73:'❄️',75:'❄️',80:'🌦️',81:'🌧️',82:'⛈️',95:'⛈️',96:'⛈️',99:'⛈️'};
 const DAYS_IT = ['Dom','Lun','Mar','Mer','Gio','Ven','Sab'];
@@ -554,8 +554,8 @@ function _doLoadWeather() {
       else if(netNeed<2){ irrigMain='✅ Irrigazione normale — condizioni ideali'; irrigDetail=`Fabbisogno netto: ${netNeed.toFixed(1)} mm. Mantieni la frequenza impostata.`; }
       else if(netNeed<4){ irrigMain='💧 Leggero aumento consigliato'; irrigDetail=`ETo ${etVal.toFixed(1)} mm, pioggia ${rain.toFixed(1)} mm → fabbisogno netto ${netNeed.toFixed(1)} mm.`; }
       else { irrigMain='⚠️ Caldo secco — aumenta irrigazione'; irrigDetail=`Alta ETo: ${etVal.toFixed(1)} mm, pioggia ${rain.toFixed(1)} mm → fabbisogno netto ${netNeed.toFixed(1)} mm. Bagna i bordi.`; }
-      document.getElementById('w-irrig-main').textContent = irrigMain;
-      document.getElementById('w-irrig-detail').textContent = irrigDetail;
+      const _iM=document.getElementById('w-irrig-main'); if(_iM)_iM.textContent=irrigMain;
+      const _iD=document.getElementById('w-irrig-detail'); if(_iD)_iD.textContent=irrigDetail;
       // Alert serra
       const alertEl=document.getElementById('w-serra-alert'); const alertTxt=document.getElementById('w-serra-alert-text');
       const temp=c.temperature_2m; const hum=c.relative_humidity_2m; const uv=c.uv_index; const alerts=[];
@@ -580,6 +580,8 @@ function _doLoadWeather() {
         </div>`;
       }).join('');
       loading.style.display='none'; content.style.display='block';
+      // Aggiorna card OGGI con dati meteo
+      try { renderOggiMaster(); } catch(e2) {}
     })
     .catch(e => {
       loading.style.display='none';
