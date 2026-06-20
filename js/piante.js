@@ -1,4 +1,4 @@
-/* BioSerra - js/piante.js - Migrazione automatica */
+/* BioSerra - piante.js */
 /* ══════════════════════════════════════════════════════════════
    PIANTE — Sistema Dinamico: Attive, Aggiungi, Archivia
 ══════════════════════════════════════════════════════════════ */
