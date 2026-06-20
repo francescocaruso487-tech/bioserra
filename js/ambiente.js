@@ -792,14 +792,25 @@ function openDayPopup(date) {
 async function loadCalOggiAI() {
   var el = document.getElementById('cal-oggi-ai');
   if (!el) return;
-  // Prova luna_consigli.json
+  // 1. Prova knowledge_digest.json — consiglio integrato piu ricco
   try {
-    var r = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/luna_consigli.json');
+    var rk = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/knowledge_digest.json?v=' + Date.now());
+    if (rk.ok) {
+      var dk = await rk.json();
+      var consDigest = dk.consiglio_integrato || '';
+      if (consDigest && consDigest.length > 20) {
+        el.innerHTML = '<span style="color:var(--green2);font-size:10px;font-weight:700;display:block;margin-bottom:4px">⭐ CONSIGLIO INTEGRATO</span>' + consDigest;
+        return;
+      }
+    }
+  } catch(ek) {}
+  // 2. Prova luna_consigli.json
+  try {
+    var r = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/luna_consigli.json?v=' + Date.now());
     if (r.ok) {
       var d = await r.json();
       var items = d.consigli || d.items || d.consigli_lunari || [];
       var today_key = new Date().toISOString().slice(0,10);
-      // Cerca il consiglio di oggi per data o come primo elemento
       var item = items.find(function(i){ return (i.data||i.date||'').startsWith(today_key); }) || items[0];
       if (item) {
         var testo = item.testo || item.body || item.consiglio || '';
@@ -807,16 +818,17 @@ async function loadCalOggiAI() {
       }
     }
   } catch(e) {}
-  // Prova brain.json
+  // 3. Prova brain.json
   try {
-    var r2 = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/brain.json');
+    var r2 = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/brain.json?v=' + Date.now());
     if (r2.ok) {
       var d2 = await r2.json();
-      var cons = d2.consiglio_oggi || d2.consiglio || d2.messaggio || '';
+      var cerv = d2.cervello || {};
+      var cons = cerv.consigli_giorno ? cerv.consigli_giorno[0] : (d2.consiglio_oggi || d2.consiglio || '');
       if (cons) { el.textContent = cons; return; }
     }
   } catch(e2) {}
-  // Fallback calcolato
+  // 4. Fallback calcolato
   var age = getMoonAge(new Date()); var ph = getMoonPhase(age); var bio = getDayType(new Date());
   var adv = getAdvice(ph.code);
   el.textContent = ph.emoji + ' ' + ph.name + ' · ' + DAY_TYPES[bio.type].icon + ' ' + DAY_TYPES[bio.type].label + ' — ' + adv.main;
