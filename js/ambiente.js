@@ -792,7 +792,7 @@ async function loadCalOggiAI() {
   if (!el) return;
   // Prova luna_consigli.json
   try {
-    var r = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/luna_consigli.json');
+    var r = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/luna_consigli.json');
     if (r.ok) {
       var d = await r.json();
       var items = d.consigli || d.items || d.consigli_lunari || [];
@@ -807,7 +807,7 @@ async function loadCalOggiAI() {
   } catch(e) {}
   // Prova brain.json
   try {
-    var r2 = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/brain.json');
+    var r2 = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/brain.json');
     if (r2.ok) {
       var d2 = await r2.json();
       var cons = d2.consiglio_oggi || d2.consiglio || d2.messaggio || '';
