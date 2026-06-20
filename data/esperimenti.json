@@ -1,0 +1,1550 @@
+{
+  "lastUpdate": "2026-06-20T03:30:46.062Z",
+  "versione": "1.0",
+  "esperimenti_disponibili": [
+    {
+      "id": "exp_001",
+      "nome": "Legnetto con treccia di rame e punta di rame",
+      "descrizione": "Legnetto naturale avvolto con treccia di rame terminante con punta di rame. Conduce e amplifica le energie bioelettriche dalla terra verso la pianta.",
+      "materiali": [
+        "Legnetto naturale",
+        "Treccia di rame",
+        "Punta di rame"
+      ],
+      "obiettivo": "Amplificare energia bioelettrica e conduzione terrestre",
+      "funzione": "Conduzione e amplificazione energie naturali",
+      "come_applicare": "Inserire nel terreno vicino alla base di ogni pianta. Si applica a tutte le piante contemporaneamente.",
+      "applicato_a": "tutte_le_piante",
+      "attivo": false,
+      "data_attivazione": null,
+      "fonte": "Guida personale",
+      "categoria": "elettrocultura",
+      "note": ""
+    },
+    {
+      "id": "exp_002",
+      "nome": "Magnete per ogni irrigatore",
+      "descrizione": "Magnete posizionato su ogni irrigatore/gocciolatore per magnetizzare l acqua prima che raggiunga le radici.",
+      "materiali": [
+        "Magneti permanenti",
+        "Fascette o supporti"
+      ],
+      "obiettivo": "Magnetizzare l acqua di irrigazione per migliorare assorbimento radicale",
+      "funzione": "Strutturazione molecolare dell acqua tramite campo magnetico",
+      "come_applicare": "Posizionare un magnete su ogni irrigatore. Si applica a tutte le piante contemporaneamente.",
+      "applicato_a": "tutte_le_piante",
+      "attivo": false,
+      "data_attivazione": null,
+      "fonte": "Guida personale",
+      "categoria": "magnetismo",
+      "note": ""
+    },
+    {
+      "id": "exp_003",
+      "nome": "Melassa settimanale",
+      "descrizione": "Somministrazione di melassa di canna come fonte di carboidrati per i microrganismi del Living Soil. Frequenza decisa dall utente.",
+      "materiali": [
+        "Melassa di canna non solforata",
+        "Acqua"
+      ],
+      "obiettivo": "Nutrire i microrganismi del Living Soil e aumentare attivita microbica",
+      "funzione": "Stimolo microbico e nutrimento radicale indiretto",
+      "come_applicare": "Diluire in acqua e irrigare tutte le piante. Frequenza a discrezione dell utente.",
+      "applicato_a": "tutte_le_piante",
+      "attivo": false,
+      "data_attivazione": null,
+      "fonte": "Guida personale",
+      "categoria": "nutrizione_biologica",
+      "note": "Frequenza variabile a discrezione"
+    }
+  ],
+  "esperimenti_attivi": [],
+  "storico_cicli": [],
+  "prossimi_da_valutare": [],
+  "da_valutare": [
+    {
+      "id": "daily_1781640436681_3",
+      "nome": "Implementazione di un sistema di supporto",
+      "descrizione": "Installazione di un sistema di supporto per aiutare la crescita delle piante e prevenire la rottura dei rami",
+      "obiettivo": "Aiutare la crescita delle piante e prevenire la rottura dei rami",
+      "materiali": [
+        "tavole",
+        "filo",
+        "cordini"
+      ],
+      "categoria": "supporto",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 2,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "daily_1781667046478_0",
+      "nome": "Elettrocultura",
+      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
+      "obiettivo": "Migliorare la crescita e la resa delle piante",
+      "materiali": [
+        "Generatore di elettricità",
+        "Elettrodi"
+      ],
+      "categoria": "Tecniche di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-17",
+      "attivo": false
+    },
+    {
+      "id": "daily_1781640224648_2",
+      "nome": "Sistema di irrigazione a goccia con fertilizzanti",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
+      "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
+      "materiali": [
+        "Sistema di irrigazione a goccia",
+        "Fertilizzanti specifici per la cannabis",
+        "Tubi e connettori"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 21,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "daily_1781640436681_0",
+      "nome": "Tecnica di irrigazione a goccia",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
+      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di cannabis",
+      "materiali": [
+        "tubazioni",
+        "gocciolatori",
+        "valvole"
+      ],
+      "categoria": "irrigazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "daily_1781640025709_3",
+      "nome": "Introduzione di micorrize",
+      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "materiali": [
+        "micorrize",
+        "substrato"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "daily_1781640155746_1",
+      "nome": "Irrigazione intelligente",
+      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
+      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
+      "materiali": [
+        "Sensori di umidità",
+        "Sistema di irrigazione automatico"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": " Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "ai_001",
+      "nome": "Low-Stress Training (LST) mirato",
+      "descrizione": "Piegare e fissare i rami giovani per aprire la chioma, uniformare la luce e aumentare i siti di fioritura senza stress eccessivo.",
+      "materiali": [
+        "Filo morbido o clip",
+        "Supporti"
+      ],
+      "obiettivo": "Aumentare i siti di fioritura e uniformare l esposizione alla luce",
+      "fonte": "Royal Queen Seeds",
+      "categoria": "training",
+      "difficolta": "facile",
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "ai_004",
+      "nome": "Elettrocultura a bassa intensità con coils nel suolo",
+      "descrizione": "Installazione di elettrodi o coils in rame o acciaio inox nel profilo del suolo collegati a sorgente di corrente a bassissima intensità per stimolare attività radicale.",
+      "materiali": [
+        "Filo di rame o acciaio inox",
+        "Sorgente corrente bassa intensità",
+        "Connettori"
+      ],
+      "obiettivo": "Stimolare attività radicale e assorbimento nutrienti",
+      "fonte": "PDF Drive",
+      "categoria": "elettrocultura",
+      "difficolta": "avanzata",
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "ai_005",
+      "nome": "Infuso di ortica fermentato potenziato",
+      "descrizione": "Fermentazione prolungata di ortica fresca in acqua non clorata per 2 settimane. Ricco di azoto, ferro e silicio. Diluire 1:10 prima dell uso.",
+      "materiali": [
+        "Ortica fresca",
+        "Acqua non clorata",
+        "Contenitore",
+        "2 settimane di attesa"
+      ],
+      "obiettivo": "Apportare azoto, ferro e silicio in forma biodisponibile",
+      "fonte": "Royal Queen Seeds + PDF Drive",
+      "categoria": "nutrizione_biologica",
+      "difficolta": "facile",
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "ai_002",
+      "nome": "Supercropping (high-stress training) selettivo",
+      "descrizione": "Ammorbidire la porzione centrale del fusto per rompere la fibra interna senza tagliare. Stimola crescita laterale e aumenta resa.",
+      "materiali": [
+        "Solo dita"
+      ],
+      "obiettivo": "Stimolare crescita laterale e aumentare resa",
+      "fonte": "Zamnesia",
+      "categoria": "training",
+      "difficolta": "media",
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "ai_003",
+      "nome": "Tè di compost attivato (compost tea)",
+      "descrizione": "Estrazione a basso/alto ossigeno di microbi benefici da compost maturo per inoculare il suolo e potenziare il microbioma del Living Soil.",
+      "materiali": [
+        "Compost maturo",
+        "Acqua non clorata",
+        "Pompa aria",
+        "Secchio"
+      ],
+      "obiettivo": "Potenziare il microbioma del Living Soil",
+      "fonte": "Zamnesia",
+      "categoria": "nutrizione_biologica",
+      "difficolta": "media",
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_0",
+      "nome": "Elettrocultura con LED",
+      "descrizione": "Implementazione di un sistema di elettrocultura con LED per aumentare la resa e la qualità della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "materiali": [
+        "LED grow light",
+        "cavi",
+        "trasformatore"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_1",
+      "nome": "Monitoraggio del pH",
+      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della cannabis",
+      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della cannabis",
+      "materiali": [
+        "pHmetro",
+        "soluzione di calibrazione"
+      ],
+      "categoria": "Controllo ambientale",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_2",
+      "nome": "Tecnica di prunning",
+      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "materiali": [
+        "forbici",
+        "guanti"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_4",
+      "nome": "Controllo della temperatura",
+      "descrizione": "Regolazione della temperatura per assicurare un ambiente ottimale per la crescita della cannabis",
+      "obiettivo": "Mantenere una temperatura stabile e ottimale per la crescita della cannabis",
+      "materiali": [
+        "termometro",
+        "ventilatore"
+      ],
+      "categoria": "Controllo ambientale",
+      "difficolta": "facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_0",
+      "nome": "Elettrocultura per cannabis",
+      "descrizione": "Applicare un campo elettrico alle piante per aumentare la crescita",
+      "obiettivo": "Aumentare la resa e la qualità delle piante",
+      "materiali": [
+        "Generatore di campo elettrico",
+        "Elettrodi"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Ricerca scientifica",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_2",
+      "nome": "Fertilizzazione organica",
+      "descrizione": "Utilizzare fertilizzanti organici per aumentare la salute e la resistenza delle piante",
+      "obiettivo": "Aumentare la resa e la qualità delle piante",
+      "materiali": [
+        "Fertilizzanti organici",
+        "Compost"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Agricoltura biologica",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_3",
+      "nome": "Monitoraggio della temperatura",
+      "descrizione": "Utilizzare termometri per monitorare la temperatura e regolare l'ambiente",
+      "obiettivo": "Mantenere una temperatura ottimale per la crescita delle piante",
+      "materiali": [
+        "Termometri",
+        "Sistema di riscaldamento/raffreddamento"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_4",
+      "nome": "Pruning selettiva",
+      "descrizione": "Utilizzare la tecnica di pruning per regolare la crescita e la forma delle piante",
+      "obiettivo": "Aumentare la resa e la qualità delle piante",
+      "materiali": [
+        "Forbici da giardinaggio"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Tecnica di coltivazione",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_0",
+      "nome": "Elettrocultura con impulsi elettromagnetici",
+      "descrizione": "Applicazione di impulsi elettromagnetici alle piante per stimolare la crescita e migliorare la resa",
+      "obiettivo": "Aumentare la resa e la qualità della cannabis",
+      "materiali": [
+        "Generatore di impulsi elettromagnetici",
+        "Cavi di collegamento",
+        "Sistema di controllo"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Ricerche scientifiche sulla elettrocultura",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_1",
+      "nome": "Monitoraggio del pH e della conduttività elettrica",
+      "descrizione": "Monitoraggio costante del pH e della conduttività elettrica del substrato per ottimizzare la nutrizione delle piante",
+      "obiettivo": "Migliorare la salute e la crescita delle piante",
+      "materiali": [
+        "pHmetro",
+        "Conduttivimetro",
+        "Sistema di registrazione dati"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_3",
+      "nome": "Studio della fotosintesi e dell'assorbimento di CO2",
+      "descrizione": "Studio della fotosintesi e dell'assorbimento di CO2 delle piante per ottimizzare la crescita e la resa",
+      "obiettivo": "Migliorare la fotosintesi e la resa della cannabis",
+      "materiali": [
+        "Strumenti di misura della fotosintesi",
+        "Sistema di registrazione dati",
+        "CO2"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Difficile",
+      "fonte": "Ricerche scientifiche sulla fotosintesi",
+      "durata_giorni": 60,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_4",
+      "nome": "Tecnica di prunning e potatura",
+      "descrizione": "Applicazione di tecniche di prunning e potatura per migliorare la forma e la struttura delle piante",
+      "obiettivo": "Migliorare la forma e la resa della cannabis",
+      "materiali": [
+        "Forbici da potatura",
+        "Coltelli da prunning",
+        "Guanti di protezione"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640396342_1",
+      "nome": "Tecnica di pruning",
+      "descrizione": "Tagliare le piante di cannabis per controllare la forma e aumentare la produzione",
+      "obiettivo": "Aumentare la produzione di gemme e migliorare la struttura della pianta",
+      "materiali": [
+        "Forbici da giardinaggio",
+        "guanti"
+      ],
+      "categoria": "Potatura",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640396342_3",
+      "nome": "Tecnica di training con LST",
+      "descrizione": "Utilizzare la tecnica di LST (Low-Stress Training) per controllare la forma della pianta",
+      "obiettivo": "Aumentare la produzione di gemme e migliorare la struttura della pianta",
+      "materiali": [
+        "Fil di ferro",
+        "clip"
+      ],
+      "categoria": "Addestramento",
+      "difficolta": "medio",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 21,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640436681_1",
+      "nome": "Monitoraggio del pH del suolo",
+      "descrizione": "Verifica regolare del pH del suolo per garantire un ambiente ottimale per la crescita della cannabis",
+      "obiettivo": "Mantenere un pH ottimale per la crescita della cannabis",
+      "materiali": [
+        "pHmetro",
+        "soluzione di calibrazione"
+      ],
+      "categoria": "manutenzione",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 1,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640436681_4",
+      "nome": "Monitoraggio della temperatura e dell'umidità",
+      "descrizione": "Verifica regolare della temperatura e dell'umidità per garantire un ambiente ottimale per la crescita della cannabis",
+      "obiettivo": "Mantenere un ambiente ottimale per la crescita della cannabis",
+      "materiali": [
+        "termometro",
+        "igrometro"
+      ],
+      "categoria": "manutenzione",
+      "difficolta": "facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 1,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781667046478_1",
+      "nome": "Controllo del pH",
+      "descrizione": "Verifica e regola il pH del substrato e dell'acqua per garantire condizioni ottimali per la crescita delle piante",
+      "obiettivo": "Mantenere un pH ottimale per la crescita delle piante",
+      "materiali": [
+        "pHmetro",
+        "Sostanze correttrici del pH"
+      ],
+      "categoria": "Gestione del substrato",
+      "difficolta": "Facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-17",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781667046478_2",
+      "nome": "Tecniche di prunning",
+      "descrizione": "Applica tecniche di prunning per migliorare la struttura e la resa delle piante",
+      "obiettivo": "Migliorare la struttura e la resa delle piante",
+      "materiali": [
+        "Forbici",
+        "Coltelli"
+      ],
+      "categoria": "Tecniche di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-17",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781667046478_3",
+      "nome": "Gestione dell'umidità",
+      "descrizione": "Verifica e regola l'umidità del substrato e dell'ambiente per garantire condizioni ottimali per la crescita delle piante",
+      "obiettivo": "Mantenere un'umidità ottimale per la crescita delle piante",
+      "materiali": [
+        "Igrometro",
+        "Sistema di irrigazione"
+      ],
+      "categoria": "Gestione dell'ambiente",
+      "difficolta": "Facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-17",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781667046478_4",
+      "nome": "Monitoraggio delle condizioni climatiche",
+      "descrizione": "Verifica e regola le condizioni climatiche per garantire condizioni ottimali per la crescita delle piante",
+      "obiettivo": "Mantenere condizioni climatiche ottimali per la crescita delle piante",
+      "materiali": [
+        "Termometro",
+        "Igrometro",
+        "Anemometro"
+      ],
+      "categoria": "Gestione dell'ambiente",
+      "difficolta": "Facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-17",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_1",
+      "nome": "Irrigazione intelligente",
+      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
+      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
+      "materiali": [
+        "Sensori di umidità",
+        "Sistema di irrigazione automatico"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": " Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_0",
+      "nome": "Tecnica di Elettrocultura 1",
+      "descrizione": "Applicazione di un campo elettrico alle piante per stimolare la crescita",
+      "obiettivo": "Miglioramento della crescita e della resistenza alle malattie",
+      "materiali": [
+        "Generatore di campo elettrico"
+      ],
+      "categoria": "Elettrocultura",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_1",
+      "nome": "Monitoraggio dell'Umido",
+      "descrizione": "Controllo dell'umidità del substrato per evitare overwatering",
+      "obiettivo": "Miglioramento della salute e della crescita delle piante",
+      "materiali": [
+        "Sensore di umidità"
+      ],
+      "categoria": "Manutenzione",
+      "difficolta": "Facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_2",
+      "nome": "Introduzione di Microrganismi Benefici",
+      "descrizione": "Inserimento di microrganismi benefici nel substrato per migliorare la salute delle piante",
+      "obiettivo": "Miglioramento della resistenza alle malattie e della crescita",
+      "materiali": [
+        "Microrganismi benefici"
+      ],
+      "categoria": "Biologia",
+      "difficolta": "Medio",
+      "fonte": "BioSerra",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_3",
+      "nome": "Regolazione del pH",
+      "descrizione": "Regolazione del pH del substrato per ottimizzare la crescita delle piante",
+      "obiettivo": "Miglioramento della crescita e della salute delle piante",
+      "materiali": [
+        "Prodotto per la regolazione del pH"
+      ],
+      "categoria": "Chimica",
+      "difficolta": "Facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_4",
+      "nome": "Ossigenazione del Substrato",
+      "descrizione": "Aumento dell'ossigenazione del substrato per migliorare la crescita radicale",
+      "obiettivo": "Miglioramento della crescita e della salute delle piante",
+      "materiali": [
+        "Aeratore per substrato"
+      ],
+      "categoria": "Fisiologia",
+      "difficolta": "Medio",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 21,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781839846625_0",
+      "nome": "Sistema di irrigazione automatico",
+      "descrizione": "Implementare un sistema di irrigazione automatico per ottimizzare l'apporto di acqua alle piante",
+      "obiettivo": "Ridurre lo stress idrico e migliorare la crescita delle piante",
+      "materiali": [
+        "Sistema di irrigazione automatico",
+        "Sensori di umidità del suolo"
+      ],
+      "categoria": "Irrigazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-19",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781839846625_1",
+      "nome": "Introduzione di micorrize",
+      "descrizione": "Introdurre micorrize nel substrato per migliorare l'assorbimento di nutrienti",
+      "obiettivo": "Migliorare la salute e la resistenza delle piante",
+      "materiali": [
+        "Micorrize",
+        "Substrato di crescita"
+      ],
+      "categoria": "Biologia",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-19",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781839846625_2",
+      "nome": "Monitoraggio del pH del substrato",
+      "descrizione": "Monitorare regolarmente il pH del substrato per assicurarsi che sia all'interno del range ottimale",
+      "obiettivo": "Prevenire carenze nutrizionali e migliorare la crescita delle piante",
+      "materiali": [
+        "pHmetro",
+        "Substrato di crescita"
+      ],
+      "categoria": "Chimica",
+      "difficolta": "facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 3,
+      "data_proposta": "2026-06-19",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781839846625_3",
+      "nome": "Impiego di batteri azotofissatori",
+      "descrizione": "Utilizzare batteri azotofissatori per migliorare la disponibilità di azoto nel substrato",
+      "obiettivo": "Migliorare la crescita e la produttività delle piante",
+      "materiali": [
+        "Batteri azotofissatori",
+        "Substrato di crescita"
+      ],
+      "categoria": "Biologia",
+      "difficolta": "medio",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 10,
+      "data_proposta": "2026-06-19",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781839846625_4",
+      "nome": "Sistema di supporto per le piante",
+      "descrizione": "Implementare un sistema di supporto per le piante per prevenire danni e migliorare la crescita",
+      "obiettivo": "Migliorare la stabilità e la produttività delle piante",
+      "materiali": [
+        "Sistema di supporto",
+        "Piante di cannabis"
+      ],
+      "categoria": "Ingegneria",
+      "difficolta": "facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 5,
+      "data_proposta": "2026-06-19",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781926246062_0",
+      "nome": "Monitoraggio Clima e Irrigazione",
+      "descrizione": "Verifica temperatura e umidità, asciuga leggermente il substrato prima di irrigare",
+      "obiettivo": "Prevenire pythium e overwatering",
+      "materiali": [
+        "Termometro",
+        "Igrometro"
+      ],
+      "categoria": "Manutenzione",
+      "difficolta": "Facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-20",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781926246062_1",
+      "nome": "Regolazione pH Acqua/substrato",
+      "descrizione": "Regola il pH dell'acqua e del substrato",
+      "obiettivo": "Mantenere un ambiente stabile per le piante",
+      "materiali": [
+        "pHmetro"
+      ],
+      "categoria": "Manutenzione",
+      "difficolta": "Medio",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 3,
+      "data_proposta": "2026-06-20",
+      "attivo": false,
+      "data_attivazione": null
+    }
+  ],
+  "proposte": [
+    {
+      "id": "daily_1781640436681_3",
+      "nome": "Implementazione di un sistema di supporto",
+      "descrizione": "Installazione di un sistema di supporto per aiutare la crescita delle piante e prevenire la rottura dei rami",
+      "obiettivo": "Aiutare la crescita delle piante e prevenire la rottura dei rami",
+      "materiali": [
+        "tavole",
+        "filo",
+        "cordini"
+      ],
+      "categoria": "supporto",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 2,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "daily_1781667046478_0",
+      "nome": "Elettrocultura",
+      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
+      "obiettivo": "Migliorare la crescita e la resa delle piante",
+      "materiali": [
+        "Generatore di elettricità",
+        "Elettrodi"
+      ],
+      "categoria": "Tecniche di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-17",
+      "attivo": false
+    },
+    {
+      "id": "daily_1781640224648_2",
+      "nome": "Sistema di irrigazione a goccia con fertilizzanti",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
+      "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
+      "materiali": [
+        "Sistema di irrigazione a goccia",
+        "Fertilizzanti specifici per la cannabis",
+        "Tubi e connettori"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 21,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "daily_1781640436681_0",
+      "nome": "Tecnica di irrigazione a goccia",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
+      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di cannabis",
+      "materiali": [
+        "tubazioni",
+        "gocciolatori",
+        "valvole"
+      ],
+      "categoria": "irrigazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "daily_1781640025709_3",
+      "nome": "Introduzione di micorrize",
+      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "materiali": [
+        "micorrize",
+        "substrato"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "daily_1781640155746_1",
+      "nome": "Irrigazione intelligente",
+      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
+      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
+      "materiali": [
+        "Sensori di umidità",
+        "Sistema di irrigazione automatico"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": " Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "ai_001",
+      "nome": "Low-Stress Training (LST) mirato",
+      "descrizione": "Piegare e fissare i rami giovani per aprire la chioma, uniformare la luce e aumentare i siti di fioritura senza stress eccessivo.",
+      "materiali": [
+        "Filo morbido o clip",
+        "Supporti"
+      ],
+      "obiettivo": "Aumentare i siti di fioritura e uniformare l esposizione alla luce",
+      "fonte": "Royal Queen Seeds",
+      "categoria": "training",
+      "difficolta": "facile",
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "ai_004",
+      "nome": "Elettrocultura a bassa intensità con coils nel suolo",
+      "descrizione": "Installazione di elettrodi o coils in rame o acciaio inox nel profilo del suolo collegati a sorgente di corrente a bassissima intensità per stimolare attività radicale.",
+      "materiali": [
+        "Filo di rame o acciaio inox",
+        "Sorgente corrente bassa intensità",
+        "Connettori"
+      ],
+      "obiettivo": "Stimolare attività radicale e assorbimento nutrienti",
+      "fonte": "PDF Drive",
+      "categoria": "elettrocultura",
+      "difficolta": "avanzata",
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "ai_005",
+      "nome": "Infuso di ortica fermentato potenziato",
+      "descrizione": "Fermentazione prolungata di ortica fresca in acqua non clorata per 2 settimane. Ricco di azoto, ferro e silicio. Diluire 1:10 prima dell uso.",
+      "materiali": [
+        "Ortica fresca",
+        "Acqua non clorata",
+        "Contenitore",
+        "2 settimane di attesa"
+      ],
+      "obiettivo": "Apportare azoto, ferro e silicio in forma biodisponibile",
+      "fonte": "Royal Queen Seeds + PDF Drive",
+      "categoria": "nutrizione_biologica",
+      "difficolta": "facile",
+      "data_proposta": "2026-06-16",
+      "attivo": false
+    },
+    {
+      "id": "ai_002",
+      "nome": "Supercropping (high-stress training) selettivo",
+      "descrizione": "Ammorbidire la porzione centrale del fusto per rompere la fibra interna senza tagliare. Stimola crescita laterale e aumenta resa.",
+      "materiali": [
+        "Solo dita"
+      ],
+      "obiettivo": "Stimolare crescita laterale e aumentare resa",
+      "fonte": "Zamnesia",
+      "categoria": "training",
+      "difficolta": "media",
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "ai_003",
+      "nome": "Tè di compost attivato (compost tea)",
+      "descrizione": "Estrazione a basso/alto ossigeno di microbi benefici da compost maturo per inoculare il suolo e potenziare il microbioma del Living Soil.",
+      "materiali": [
+        "Compost maturo",
+        "Acqua non clorata",
+        "Pompa aria",
+        "Secchio"
+      ],
+      "obiettivo": "Potenziare il microbioma del Living Soil",
+      "fonte": "Zamnesia",
+      "categoria": "nutrizione_biologica",
+      "difficolta": "media",
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_0",
+      "nome": "Elettrocultura con LED",
+      "descrizione": "Implementazione di un sistema di elettrocultura con LED per aumentare la resa e la qualità della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "materiali": [
+        "LED grow light",
+        "cavi",
+        "trasformatore"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_1",
+      "nome": "Monitoraggio del pH",
+      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della cannabis",
+      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della cannabis",
+      "materiali": [
+        "pHmetro",
+        "soluzione di calibrazione"
+      ],
+      "categoria": "Controllo ambientale",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_2",
+      "nome": "Tecnica di prunning",
+      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della cannabis",
+      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "materiali": [
+        "forbici",
+        "guanti"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_4",
+      "nome": "Controllo della temperatura",
+      "descrizione": "Regolazione della temperatura per assicurare un ambiente ottimale per la crescita della cannabis",
+      "obiettivo": "Mantenere una temperatura stabile e ottimale per la crescita della cannabis",
+      "materiali": [
+        "termometro",
+        "ventilatore"
+      ],
+      "categoria": "Controllo ambientale",
+      "difficolta": "facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_0",
+      "nome": "Elettrocultura per cannabis",
+      "descrizione": "Applicare un campo elettrico alle piante per aumentare la crescita",
+      "obiettivo": "Aumentare la resa e la qualità delle piante",
+      "materiali": [
+        "Generatore di campo elettrico",
+        "Elettrodi"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Ricerca scientifica",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_2",
+      "nome": "Fertilizzazione organica",
+      "descrizione": "Utilizzare fertilizzanti organici per aumentare la salute e la resistenza delle piante",
+      "obiettivo": "Aumentare la resa e la qualità delle piante",
+      "materiali": [
+        "Fertilizzanti organici",
+        "Compost"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Agricoltura biologica",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_3",
+      "nome": "Monitoraggio della temperatura",
+      "descrizione": "Utilizzare termometri per monitorare la temperatura e regolare l'ambiente",
+      "obiettivo": "Mantenere una temperatura ottimale per la crescita delle piante",
+      "materiali": [
+        "Termometri",
+        "Sistema di riscaldamento/raffreddamento"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_4",
+      "nome": "Pruning selettiva",
+      "descrizione": "Utilizzare la tecnica di pruning per regolare la crescita e la forma delle piante",
+      "obiettivo": "Aumentare la resa e la qualità delle piante",
+      "materiali": [
+        "Forbici da giardinaggio"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Tecnica di coltivazione",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_0",
+      "nome": "Elettrocultura con impulsi elettromagnetici",
+      "descrizione": "Applicazione di impulsi elettromagnetici alle piante per stimolare la crescita e migliorare la resa",
+      "obiettivo": "Aumentare la resa e la qualità della cannabis",
+      "materiali": [
+        "Generatore di impulsi elettromagnetici",
+        "Cavi di collegamento",
+        "Sistema di controllo"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Ricerche scientifiche sulla elettrocultura",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_1",
+      "nome": "Monitoraggio del pH e della conduttività elettrica",
+      "descrizione": "Monitoraggio costante del pH e della conduttività elettrica del substrato per ottimizzare la nutrizione delle piante",
+      "obiettivo": "Migliorare la salute e la crescita delle piante",
+      "materiali": [
+        "pHmetro",
+        "Conduttivimetro",
+        "Sistema di registrazione dati"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_3",
+      "nome": "Studio della fotosintesi e dell'assorbimento di CO2",
+      "descrizione": "Studio della fotosintesi e dell'assorbimento di CO2 delle piante per ottimizzare la crescita e la resa",
+      "obiettivo": "Migliorare la fotosintesi e la resa della cannabis",
+      "materiali": [
+        "Strumenti di misura della fotosintesi",
+        "Sistema di registrazione dati",
+        "CO2"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Difficile",
+      "fonte": "Ricerche scientifiche sulla fotosintesi",
+      "durata_giorni": 60,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640224648_4",
+      "nome": "Tecnica di prunning e potatura",
+      "descrizione": "Applicazione di tecniche di prunning e potatura per migliorare la forma e la struttura delle piante",
+      "obiettivo": "Migliorare la forma e la resa della cannabis",
+      "materiali": [
+        "Forbici da potatura",
+        "Coltelli da prunning",
+        "Guanti di protezione"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640396342_1",
+      "nome": "Tecnica di pruning",
+      "descrizione": "Tagliare le piante di cannabis per controllare la forma e aumentare la produzione",
+      "obiettivo": "Aumentare la produzione di gemme e migliorare la struttura della pianta",
+      "materiali": [
+        "Forbici da giardinaggio",
+        "guanti"
+      ],
+      "categoria": "Potatura",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640396342_3",
+      "nome": "Tecnica di training con LST",
+      "descrizione": "Utilizzare la tecnica di LST (Low-Stress Training) per controllare la forma della pianta",
+      "obiettivo": "Aumentare la produzione di gemme e migliorare la struttura della pianta",
+      "materiali": [
+        "Fil di ferro",
+        "clip"
+      ],
+      "categoria": "Addestramento",
+      "difficolta": "medio",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 21,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640436681_1",
+      "nome": "Monitoraggio del pH del suolo",
+      "descrizione": "Verifica regolare del pH del suolo per garantire un ambiente ottimale per la crescita della cannabis",
+      "obiettivo": "Mantenere un pH ottimale per la crescita della cannabis",
+      "materiali": [
+        "pHmetro",
+        "soluzione di calibrazione"
+      ],
+      "categoria": "manutenzione",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 1,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640436681_4",
+      "nome": "Monitoraggio della temperatura e dell'umidità",
+      "descrizione": "Verifica regolare della temperatura e dell'umidità per garantire un ambiente ottimale per la crescita della cannabis",
+      "obiettivo": "Mantenere un ambiente ottimale per la crescita della cannabis",
+      "materiali": [
+        "termometro",
+        "igrometro"
+      ],
+      "categoria": "manutenzione",
+      "difficolta": "facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 1,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781667046478_1",
+      "nome": "Controllo del pH",
+      "descrizione": "Verifica e regola il pH del substrato e dell'acqua per garantire condizioni ottimali per la crescita delle piante",
+      "obiettivo": "Mantenere un pH ottimale per la crescita delle piante",
+      "materiali": [
+        "pHmetro",
+        "Sostanze correttrici del pH"
+      ],
+      "categoria": "Gestione del substrato",
+      "difficolta": "Facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-17",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781667046478_2",
+      "nome": "Tecniche di prunning",
+      "descrizione": "Applica tecniche di prunning per migliorare la struttura e la resa delle piante",
+      "obiettivo": "Migliorare la struttura e la resa delle piante",
+      "materiali": [
+        "Forbici",
+        "Coltelli"
+      ],
+      "categoria": "Tecniche di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-17",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781667046478_3",
+      "nome": "Gestione dell'umidità",
+      "descrizione": "Verifica e regola l'umidità del substrato e dell'ambiente per garantire condizioni ottimali per la crescita delle piante",
+      "obiettivo": "Mantenere un'umidità ottimale per la crescita delle piante",
+      "materiali": [
+        "Igrometro",
+        "Sistema di irrigazione"
+      ],
+      "categoria": "Gestione dell'ambiente",
+      "difficolta": "Facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-17",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781667046478_4",
+      "nome": "Monitoraggio delle condizioni climatiche",
+      "descrizione": "Verifica e regola le condizioni climatiche per garantire condizioni ottimali per la crescita delle piante",
+      "obiettivo": "Mantenere condizioni climatiche ottimali per la crescita delle piante",
+      "materiali": [
+        "Termometro",
+        "Igrometro",
+        "Anemometro"
+      ],
+      "categoria": "Gestione dell'ambiente",
+      "difficolta": "Facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-17",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640155746_1",
+      "nome": "Irrigazione intelligente",
+      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
+      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
+      "materiali": [
+        "Sensori di umidità",
+        "Sistema di irrigazione automatico"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": " Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_0",
+      "nome": "Tecnica di Elettrocultura 1",
+      "descrizione": "Applicazione di un campo elettrico alle piante per stimolare la crescita",
+      "obiettivo": "Miglioramento della crescita e della resistenza alle malattie",
+      "materiali": [
+        "Generatore di campo elettrico"
+      ],
+      "categoria": "Elettrocultura",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_1",
+      "nome": "Monitoraggio dell'Umido",
+      "descrizione": "Controllo dell'umidità del substrato per evitare overwatering",
+      "obiettivo": "Miglioramento della salute e della crescita delle piante",
+      "materiali": [
+        "Sensore di umidità"
+      ],
+      "categoria": "Manutenzione",
+      "difficolta": "Facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_2",
+      "nome": "Introduzione di Microrganismi Benefici",
+      "descrizione": "Inserimento di microrganismi benefici nel substrato per migliorare la salute delle piante",
+      "obiettivo": "Miglioramento della resistenza alle malattie e della crescita",
+      "materiali": [
+        "Microrganismi benefici"
+      ],
+      "categoria": "Biologia",
+      "difficolta": "Medio",
+      "fonte": "BioSerra",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_3",
+      "nome": "Regolazione del pH",
+      "descrizione": "Regolazione del pH del substrato per ottimizzare la crescita delle piante",
+      "obiettivo": "Miglioramento della crescita e della salute delle piante",
+      "materiali": [
+        "Prodotto per la regolazione del pH"
+      ],
+      "categoria": "Chimica",
+      "difficolta": "Facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781753446349_4",
+      "nome": "Ossigenazione del Substrato",
+      "descrizione": "Aumento dell'ossigenazione del substrato per migliorare la crescita radicale",
+      "obiettivo": "Miglioramento della crescita e della salute delle piante",
+      "materiali": [
+        "Aeratore per substrato"
+      ],
+      "categoria": "Fisiologia",
+      "difficolta": "Medio",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 21,
+      "data_proposta": "2026-06-18",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781839846625_0",
+      "nome": "Sistema di irrigazione automatico",
+      "descrizione": "Implementare un sistema di irrigazione automatico per ottimizzare l'apporto di acqua alle piante",
+      "obiettivo": "Ridurre lo stress idrico e migliorare la crescita delle piante",
+      "materiali": [
+        "Sistema di irrigazione automatico",
+        "Sensori di umidità del suolo"
+      ],
+      "categoria": "Irrigazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-19",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781839846625_1",
+      "nome": "Introduzione di micorrize",
+      "descrizione": "Introdurre micorrize nel substrato per migliorare l'assorbimento di nutrienti",
+      "obiettivo": "Migliorare la salute e la resistenza delle piante",
+      "materiali": [
+        "Micorrize",
+        "Substrato di crescita"
+      ],
+      "categoria": "Biologia",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-19",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781839846625_2",
+      "nome": "Monitoraggio del pH del substrato",
+      "descrizione": "Monitorare regolarmente il pH del substrato per assicurarsi che sia all'interno del range ottimale",
+      "obiettivo": "Prevenire carenze nutrizionali e migliorare la crescita delle piante",
+      "materiali": [
+        "pHmetro",
+        "Substrato di crescita"
+      ],
+      "categoria": "Chimica",
+      "difficolta": "facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 3,
+      "data_proposta": "2026-06-19",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781839846625_3",
+      "nome": "Impiego di batteri azotofissatori",
+      "descrizione": "Utilizzare batteri azotofissatori per migliorare la disponibilità di azoto nel substrato",
+      "obiettivo": "Migliorare la crescita e la produttività delle piante",
+      "materiali": [
+        "Batteri azotofissatori",
+        "Substrato di crescita"
+      ],
+      "categoria": "Biologia",
+      "difficolta": "medio",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 10,
+      "data_proposta": "2026-06-19",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781839846625_4",
+      "nome": "Sistema di supporto per le piante",
+      "descrizione": "Implementare un sistema di supporto per le piante per prevenire danni e migliorare la crescita",
+      "obiettivo": "Migliorare la stabilità e la produttività delle piante",
+      "materiali": [
+        "Sistema di supporto",
+        "Piante di cannabis"
+      ],
+      "categoria": "Ingegneria",
+      "difficolta": "facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 5,
+      "data_proposta": "2026-06-19",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781926246062_0",
+      "nome": "Monitoraggio Clima e Irrigazione",
+      "descrizione": "Verifica temperatura e umidità, asciuga leggermente il substrato prima di irrigare",
+      "obiettivo": "Prevenire pythium e overwatering",
+      "materiali": [
+        "Termometro",
+        "Igrometro"
+      ],
+      "categoria": "Manutenzione",
+      "difficolta": "Facile",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-20",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781926246062_1",
+      "nome": "Regolazione pH Acqua/substrato",
+      "descrizione": "Regola il pH dell'acqua e del substrato",
+      "obiettivo": "Mantenere un ambiente stabile per le piante",
+      "materiali": [
+        "pHmetro"
+      ],
+      "categoria": "Manutenzione",
+      "difficolta": "Medio",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 3,
+      "data_proposta": "2026-06-20",
+      "attivo": false,
+      "data_attivazione": null
+    }
+  ],
+  "attivi": [],
+  "aggiornato": "2026-06-19 09:38"
+}
