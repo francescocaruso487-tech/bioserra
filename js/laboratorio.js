@@ -416,82 +416,80 @@ async function brainLoad() {
 
 
 /* ══════════════════════════════════════════════════════════════
-   CHAT CERVELLO AI — Groq con contesto dinamico
+   CHAT CERVELLO AI — API Anthropic con contesto dinamico
 ══════════════════════════════════════════════════════════════ */
 
 var cervHistory = [];
-var _GKc = ['gsk_4WWWCiu82jj6fg9','gsYCNWGdyb3FYyb8Ndg1','gHyT6a7BwK8dFofZ8'].join('');
-var _GKm = 'llama-3.3-70b-versatile';
-var _GKf = 'llama3-8b-8192';
 
 async function cervBuildSystem() {
   var oggi = new Date().toLocaleString('it-IT', {
     weekday: 'long', day: 'numeric', month: 'long',
     year: 'numeric', hour: '2-digit', minute: '2-digit'
   });
-  var sys = 'Sei il Cervello AI di BioSerra, assistente esperto per una serra Living Soil outdoor a Caserta.\n';
-  sys += 'Data e ora: ' + oggi + '\n';
-  sys += 'Tecniche elettrocultura attive: Lakhovsky, pila galvanica Fe-Cu, acqua magnetizzata, spirale cosmica rame, antenna a terra.\n';
-  sys += 'Substrato: BioBizz Light-Mix + fibra cocco + Super Soil + Humus + micorrize. 10 vasi tessuto 10L.\n';
 
-  // Fetch parallelo dei dati live
+  var sys = 'Sei il Cervello AI di BioSerra, serra Living Soil outdoor Caserta 10 piante cannabis.\n';
+  sys += 'Oggi: ' + oggi + '\n';
+  sys += 'Tecniche attive: Lakhovsky, pila Fe-Cu, acqua magnetizzata, spirale rame, antenna terra.\n';
+
   try {
     var results = await Promise.allSettled([
-      fetch('https://api.open-meteo.com/v1/forecast?latitude=41.097&longitude=14.388&current=temperature_2m,weathercode,windspeed_10m&timezone=Europe/Rome').then(r => r.json()),
-      fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/piante_stato.json?v=' + Date.now()).then(r => r.json()),
-      fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/brain.json?v=' + Date.now()).then(r => r.json()),
-      fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/luna_consigli.json?v=' + Date.now()).then(r => r.json())
+      fetch('https://api.open-meteo.com/v1/forecast?latitude=41.097&longitude=14.388&current=temperature_2m,weathercode&timezone=Europe/Rome').then(function(r){ return r.json(); }),
+      fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/brain.json?v=' + Date.now()).then(function(r){ return r.json(); }),
+      fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/luna_consigli.json?v=' + Date.now()).then(function(r){ return r.json(); }),
+      fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/piante_stato.json?v=' + Date.now()).then(function(r){ return r.json(); })
     ]);
 
     // Meteo
     if (results[0].status === 'fulfilled') {
-      var m = results[0].value;
-      var c = m.current || {};
-      sys += 'Meteo Caserta ora: ' + Math.round(c.temperature_2m || 0) + '°C';
-      if (c.windspeed_10m) sys += ', vento ' + Math.round(c.windspeed_10m) + ' km/h';
-      sys += '\n';
+      var cur = results[0].value.current || {};
+      sys += 'Meteo: ' + Math.round(cur.temperature_2m || 0) + '\u00b0C\n';
     }
 
-    // Piante stato
+    // Brain
     if (results[1].status === 'fulfilled') {
-      var ps = results[1].value;
+      var br = results[1].value;
+      var cerv = br.cervello || {};
+      var amb  = (br.agenti || {}).ambiente || {};
+      var luna = amb.luna || {};
+      var bio  = amb.biodinamica || {};
+      // Luna dal brain
+      if (luna.fase) {
+        sys += 'Luna: ' + luna.fase;
+        if (bio.tipo_giorno) sys += ' - giorno ' + bio.tipo_giorno;
+        sys += '\n';
+      }
+      // Consigli giorno
+      var cons = cerv.consigli_giorno || [];
+      if (cons.length) sys += 'Consigli AI oggi: ' + cons.slice(0, 4).join('; ') + '\n';
+      var avv = cerv.avvisi || [];
+      if (avv.length) sys += 'Avvisi: ' + avv.slice(0, 2).join('; ') + '\n';
+    }
+
+    // Luna fallback da luna_consigli.json
+    if (results[1].status !== 'fulfilled' && results[2].status === 'fulfilled') {
+      var lu = results[2].value;
+      var ld = lu.data || lu;
+      if (typeof ld === 'string') sys += 'Luna: ' + ld.substring(0, 100) + '\n';
+      else if (ld && ld.fase) sys += 'Luna: ' + ld.fase + (ld.tipo_giorno ? ' - ' + ld.tipo_giorno : '') + '\n';
+    }
+
+    // Piante
+    if (results[3].status === 'fulfilled') {
+      var ps = results[3].value;
       var pList = ps.piante || ps;
       if (Array.isArray(pList) && pList.length) {
-        sys += 'Stato piante: ';
-        sys += pList.map(function(p){ return (p.nome||p.name||'?') + '(ID:' + (p.id||'?') + ')=' + (p.fase||p.status||'?'); }).join(', ');
-        sys += '\n';
-      } else if (typeof ps === 'object') {
-        sys += 'Piante attive: Epsilon F1(ID:7), Milky Way(ID:1), Titan(ID:2), Medusa(ID:3), Gaia(ID:8), Astro Lemonade(ID:4), Cosmic Cheddar(ID:11), Orbital Banana(ID:6), Royal Gorilla(ID:10), Mexican Rush(ID:9)\n';
+        sys += 'Piante: ' + pList.map(function(p){
+          return (p.nome || p.name || '?') + '(ID:' + (p.id || '?') + ')=' + (p.fase || p.status || '?');
+        }).join(', ') + '\n';
+      } else {
+        sys += 'Piante: Epsilon F1(ID:7,auto), Milky Way(ID:1,auto), Titan(ID:2,auto), Medusa(ID:3,auto), Gaia(ID:8,auto), Astro Lemonade(ID:4,femm), Cosmic Cheddar(ID:11,femm), Orbital Banana(ID:6,femm), Royal Gorilla(ID:10,femm), Mexican Rush(ID:9,femm)\n';
       }
     } else {
       sys += 'Piante: Epsilon F1(ID:7,auto), Milky Way(ID:1,auto), Titan(ID:2,auto), Medusa(ID:3,auto), Gaia(ID:8,auto), Astro Lemonade(ID:4,femm), Cosmic Cheddar(ID:11,femm), Orbital Banana(ID:6,femm), Royal Gorilla(ID:10,femm), Mexican Rush(ID:9,femm)\n';
     }
+  } catch(e) { /* usa dati statici gi\u00e0 inclusi */ }
 
-    // Brain consigli
-    if (results[2].status === 'fulfilled') {
-      var br = results[2].value;
-      var cerv = br.cervello || {};
-      var cons = cerv.consigli_giorno || [];
-      if (cons.length) sys += 'Consigli cervello AI oggi: ' + cons.slice(0,3).join('; ') + '\n';
-      var avv = cerv.avvisi || [];
-      if (avv.length) sys += 'Avvisi: ' + avv.slice(0,2).join('; ') + '\n';
-    }
-
-    // Luna
-    if (results[3].status === 'fulfilled') {
-      var lu = results[3].value;
-      var ld = lu.data || lu;
-      if (typeof ld === 'string') {
-        sys += 'Luna oggi: ' + ld.substring(0, 80) + '\n';
-      } else if (ld.fase) {
-        sys += 'Luna oggi: ' + ld.fase + (ld.consiglio ? ' — ' + ld.consiglio : '') + '\n';
-      }
-    }
-  } catch(e) {
-    // Se i fetch falliscono, usa solo dati statici (già inclusi sopra)
-  }
-
-  sys += 'Rispondi sempre in italiano, in modo pratico e concreto per la coltivazione. Usa emoji per i punti chiave.';
+  sys += 'Rispondi in italiano, pratico e concreto. Usa emoji per i punti chiave.';
   return sys;
 }
 
@@ -501,47 +499,43 @@ async function cervSend(msgOverride) {
   if (!msg) return;
   if (input) input.value = '';
 
-  cervAppend(msg, 'user');
+  cervAppendUser(msg);
   cervHistory.push({ role: 'user', content: msg });
 
-  var loading = cervAppend('🤔 Sto analizzando la serra…', 'bot loading');
+  var loadEl = cervAppendBot('\ud83e\udde0 Sto analizzando\u2026', true);
 
   try {
     var sys = await cervBuildSystem();
-    var messages = [{ role: 'system', content: sys }];
-    // Includi history (max ultimi 6 messaggi per non sforare token)
-    var hist = cervHistory.slice(-7, -1);
-    hist.forEach(function(h) { messages.push({ role: h.role === 'assistant' ? 'assistant' : 'user', content: h.content }); });
-    messages.push({ role: 'user', content: msg });
-
-    var res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + _GKc },
-      body: JSON.stringify({ model: _GKm, max_tokens: 800, messages: messages, temperature: 0.7 })
+    // Costruisce history multiturno (max ultimi 8 msg)
+    var msgs = cervHistory.slice(-9, -1).map(function(h){
+      return { role: h.role === 'assistant' ? 'assistant' : 'user', content: h.content };
     });
+    msgs.push({ role: 'user', content: msg });
+
+    var res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true'
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 1000,
+        system: sys,
+        messages: msgs
+      })
+    });
+
     var data = await res.json();
-    if (data.error) {
-      var emsg = data.error.message || '';
-      if (emsg.includes('decommissioned') || emsg.includes('deprecated')) {
-        // Fallback automatico al modello minore
-        var res2 = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + _GKc },
-          body: JSON.stringify({ model: _GKf, max_tokens: 800, messages: messages, temperature: 0.7 })
-        });
-        data = await res2.json();
-        if (data.error) throw new Error(data.error.message || 'Errore Groq');
-      } else {
-        throw new Error(emsg || 'Errore Groq');
-      }
-    }
-    var reply = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || 'Nessuna risposta.';
-    loading.className = 'ai-msg bot';
-    loading.textContent = reply;
+    if (data.error) throw new Error(data.error.message || 'Errore API');
+    var reply = (data.content && data.content[0] && data.content[0].text) || 'Nessuna risposta.';
+    loadEl.textContent = reply;
+    loadEl.classList.remove('loading');
     cervHistory.push({ role: 'assistant', content: reply });
   } catch(e) {
-    loading.className = 'ai-msg bot';
-    loading.textContent = '⚠️ ' + (e.message || 'Errore di connessione. Riprova tra un momento.');
+    loadEl.textContent = '\u26a0\ufe0f ' + (e.message || 'Errore connessione. Riprova.');
+    loadEl.classList.remove('loading');
   }
 
   var chat = document.getElementById('cerv-chat');
@@ -551,18 +545,48 @@ async function cervSend(msgOverride) {
 function cervChatReset() {
   cervHistory = [];
   var chat = document.getElementById('cerv-chat');
-  if (chat) chat.innerHTML = '<div class="ai-msg bot">🧠 Nuova chat avviata. Come posso aiutarti?</div>';
+  if (!chat) return;
+  chat.innerHTML = '';
+  cervAppendBot('\ud83e\udde0 Nuova chat avviata! Come posso aiutarti con la tua serra?', false);
 }
 
-function cervAppend(text, cls) {
+/* Aggiunge messaggio utente (destra, verde) */
+function cervAppendUser(text) {
   var chat = document.getElementById('cerv-chat');
-  if (!chat) return { className: '', textContent: '' };
+  if (!chat) return;
   var div = document.createElement('div');
-  div.className = 'ai-msg ' + cls;
+  div.className = 'ai-msg user';
   div.textContent = text;
   chat.appendChild(div);
   chat.scrollTop = 99999;
-  return div;
+}
+
+/* Aggiunge messaggio AI (sinistra, scuro) con avatar 🧠 */
+function cervAppendBot(text, loading) {
+  var chat = document.getElementById('cerv-chat');
+  if (!chat) return { textContent: '', classList: { remove: function(){} } };
+  var row = document.createElement('div');
+  row.style.cssText = 'display:flex;align-items:flex-start;gap:8px;max-width:92%';
+  // Avatar
+  var av = document.createElement('div');
+  av.textContent = '\ud83e\udde0';
+  av.style.cssText = 'font-size:18px;flex-shrink:0;margin-top:2px';
+  // Bolla
+  var bolla = document.createElement('div');
+  bolla.className = 'ai-msg bot' + (loading ? ' loading' : '');
+  bolla.style.cssText = 'margin:0;max-width:100%';
+  bolla.textContent = text;
+  row.appendChild(av);
+  row.appendChild(bolla);
+  chat.appendChild(row);
+  chat.scrollTop = 99999;
+  return bolla; // ritorna la bolla per aggiornarne il testo
+}
+
+/* Compatibilità con la vecchia chiamata cervAppend dal HTML (bottoni rapidi) */
+function cervAppend(text, cls) {
+  if (cls === 'user') { cervAppendUser(text); return { className: 'ai-msg user', textContent: text }; }
+  return cervAppendBot(text, cls === 'bot loading');
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -570,9 +594,22 @@ function cervAppend(text, cls) {
 ══════════════════════════════════════════════════════════════ */
 
 var manNote = [];
+var manDelPending = null; // id nota in attesa conferma doppio tap
+
 function manLoadNote()  { try { manNote = JSON.parse(localStorage.getItem('bioserra_note_personali') || '[]'); } catch(e) { manNote = []; } }
 function manSaveNote()  { try { localStorage.setItem('bioserra_note_personali', JSON.stringify(manNote)); } catch(e) {} }
 manLoadNote();
+
+/* Contatore caratteri live sull'input nota */
+function manCountChars() {
+  var el  = document.getElementById('man-nota-testo');
+  var cnt = document.getElementById('man-nota-chars');
+  if (!el || !cnt) return;
+  var len = el.value.length;
+  cnt.textContent = len + '/200';
+  cnt.style.color = len >= 190 ? '#e05252' : len >= 150 ? '#f0a500' : 'var(--text3)';
+  if (len > 200) el.value = el.value.substring(0, 200);
+}
 
 function manSalvaNota() {
   var testoEl = document.getElementById('man-nota-testo');
@@ -583,38 +620,53 @@ function manSalvaNota() {
     if (testoEl) { testoEl.style.borderColor = '#e05252'; setTimeout(function(){ testoEl.style.borderColor = ''; }, 1500); }
     return;
   }
+  if (testo.length > 200) testo = testo.substring(0, 200);
   var ora = new Date();
   manNote.unshift({
-    id:   ora.getTime(),
+    id:    ora.getTime(),
     testo: testo,
-    tag:  tag,
-    data: ora.toLocaleDateString('it-IT', {day:'2-digit', month:'2-digit', year:'numeric'}),
-    ora:  ora.toLocaleTimeString('it-IT', {hour:'2-digit', minute:'2-digit'})
+    tag:   tag,
+    data:  ora.toLocaleDateString('it-IT', {day:'2-digit', month:'2-digit', year:'numeric'}),
+    ora:   ora.toLocaleTimeString('it-IT', {hour:'2-digit', minute:'2-digit'})
   });
   manSaveNote();
-  if (testoEl) testoEl.value = '';
-  if (tagEl)   tagEl.value   = '';
+  if (testoEl) { testoEl.value = ''; }
+  if (tagEl)   tagEl.value = '';
+  manCountChars();
+  manDelPending = null;
   manRenderNote();
 }
 
+/* Doppio tap: primo tap mostra "Conferma?" sul bottone, secondo tap elimina */
 function manEliminaNota(id) {
-  var el = document.getElementById('man-del-confirm-' + id);
-  if (el) { el.style.display = 'flex'; return; }
-  // fallback diretto
-  manNote = manNote.filter(function(n){ return n.id !== id; });
-  manSaveNote();
-  manRenderNote();
-}
-
-function manConfirmDel(id) {
-  manNote = manNote.filter(function(n){ return n.id !== id; });
-  manSaveNote();
-  manRenderNote();
-}
-
-function manCancelDel(id) {
-  var el = document.getElementById('man-del-confirm-' + id);
-  if (el) el.style.display = 'none';
+  if (manDelPending === id) {
+    // Secondo tap — elimina
+    manNote = manNote.filter(function(n){ return n.id !== id; });
+    manSaveNote();
+    manDelPending = null;
+    manRenderNote();
+  } else {
+    // Primo tap — imposta pending e aggiorna solo il bottone
+    if (manDelPending !== null) {
+      // Resetta il bottone precedente
+      var prevBtn = document.getElementById('man-del-btn-' + manDelPending);
+      if (prevBtn) { prevBtn.textContent = '\uD83D\uDDD1'; prevBtn.style.color = 'var(--text3)'; }
+    }
+    manDelPending = id;
+    var btn = document.getElementById('man-del-btn-' + id);
+    if (btn) {
+      btn.textContent = 'Conferma?';
+      btn.style.cssText = 'background:#e05252;border:none;border-radius:6px;padding:3px 8px;color:#fff;font-size:11px;font-weight:700;cursor:pointer;';
+    }
+    // Auto-reset dopo 3 secondi
+    setTimeout(function(){
+      if (manDelPending === id) {
+        manDelPending = null;
+        var b = document.getElementById('man-del-btn-' + id);
+        if (b) { b.textContent = '\uD83D\uDDD1'; b.style.cssText = 'background:none;border:none;color:var(--text3);font-size:18px;cursor:pointer;padding:0;line-height:1;flex-shrink:0'; }
+      }
+    }, 3000);
+  }
 }
 
 function manRenderNote() {
@@ -623,30 +675,25 @@ function manRenderNote() {
   if (cnt) cnt.textContent = manNote.length + ' ' + (manNote.length === 1 ? 'nota' : 'note');
   if (!el) return;
   if (manNote.length === 0) {
-    el.innerHTML = '<div style="font-size:13px;color:var(--text3);padding:10px 0;text-align:center">📋 Nessuna nota ancora.<br>Scrivi le tue osservazioni!</div>';
+    el.innerHTML = '<div style="font-size:13px;color:var(--text3);padding:16px 0;text-align:center">📋 Nessuna nota ancora.<br><span style="font-size:12px">Scrivi le tue osservazioni!</span></div>';
     return;
   }
   var html = '';
   manNote.forEach(function(n) {
     html += '<div style="padding:10px 0;border-top:1px solid var(--border)">';
-    // Header nota
     html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">';
-    html += '<div style="display:flex;flex-direction:column;gap:2px">';
+    // Meta (data + tag)
+    html += '<div style="display:flex;flex-direction:column;gap:3px">';
     html += '<span style="font-size:11px;color:var(--text3)">' + n.data + ' · ' + (n.ora || '') + '</span>';
     if (n.tag) {
-      html += '<span style="display:inline-block;background:rgba(74,175,94,0.15);color:var(--green2);font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;margin-top:2px">#' + n.tag + '</span>';
+      html += '<span style="display:inline-block;background:rgba(74,175,94,0.15);color:var(--green2);font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px">#' + n.tag + '</span>';
     }
     html += '</div>';
-    html += '<button onclick="manEliminaNota(' + n.id + ')" title="Elimina nota" style="background:none;border:none;color:var(--text3);font-size:18px;cursor:pointer;padding:0;line-height:1;flex-shrink:0">🗑</button>';
+    // Bottone elimina (doppio tap)
+    html += '<button id="man-del-btn-' + n.id + '" onclick="manEliminaNota(' + n.id + ')" title="Tocca due volte per eliminare" style="background:none;border:none;color:var(--text3);font-size:18px;cursor:pointer;padding:0;line-height:1;flex-shrink:0">\uD83D\uDDD1</button>';
     html += '</div>';
-    // Testo
+    // Testo nota
     html += '<div style="font-size:13px;color:var(--text2);line-height:1.6;white-space:pre-wrap">' + n.testo.replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>';
-    // Confirm inline eliminazione
-    html += '<div id="man-del-confirm-' + n.id + '" style="display:none;align-items:center;gap:8px;margin-top:8px;background:rgba(224,82,82,0.08);border-radius:8px;padding:8px 10px;">';
-    html += '<span style="font-size:12px;color:var(--text2);flex:1">Eliminare questa nota?</span>';
-    html += '<button onclick="manConfirmDel(' + n.id + ')" style="background:#e05252;border:none;border-radius:6px;padding:5px 12px;color:#fff;font-size:12px;font-weight:700;cursor:pointer">Sì</button>';
-    html += '<button onclick="manCancelDel(' + n.id + ')" style="background:var(--card2);border:1px solid var(--border);border-radius:6px;padding:5px 12px;color:var(--text2);font-size:12px;cursor:pointer">No</button>';
-    html += '</div>';
     html += '</div>';
   });
   el.innerHTML = html;
