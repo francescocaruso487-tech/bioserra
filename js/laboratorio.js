@@ -22,7 +22,7 @@ async function elTecRicarica() {
   if (!lista) return;
   if (statusEl) statusEl.textContent = '⏳ Caricamento…';
   try {
-    var res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/electro_tecniche.json?v=' + Date.now());
+    var res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/electro_tecniche.json?v=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     var data = await res.json();
     elTecnicheList = Array.isArray(data.tecniche) ? data.tecniche : [];
@@ -91,8 +91,8 @@ function renderElStats() {}
    ESPERIMENTI — legge/scrive esperimenti.json su GitHub
 ══════════════════════════════════════════════════════════════ */
 
-var ESP_RAW_URL = 'https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/esperimenti.json';
-var ESP_API_URL = 'https://api.github.com/repos/francescocaruso487-tech/bioserra/contents/esperimenti.json';
+var ESP_RAW_URL = 'https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/esperimenti.json';
+var ESP_API_URL = 'https://api.github.com/repos/francescocaruso487-tech/bioserra/contents/data/esperimenti.json';
 var _tk1 = 'ghp_dtR2oWiOCz8XGENXd2uTm';
 var _tk2 = 'rj40Nj8As1xVqMD';
 var ESP_TOKEN = _tk1 + _tk2;
@@ -290,7 +290,7 @@ async function brainLoad() {
   if (!el) return;
   if (status) status.textContent = 'Caricamento\u2026';
   try {
-    var res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/brain.json?v=' + Date.now());
+    var res = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/brain.json?v=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     var data = await res.json();
 
@@ -438,9 +438,9 @@ async function cervBuildSystem() {
   try {
     var results = await Promise.allSettled([
       fetch('https://api.open-meteo.com/v1/forecast?latitude=41.097&longitude=14.388&current=temperature_2m,weathercode,windspeed_10m&timezone=Europe/Rome').then(r => r.json()),
-      fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/piante_stato.json?v=' + Date.now()).then(r => r.json()),
-      fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/brain.json?v=' + Date.now()).then(r => r.json()),
-      fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/luna_consigli.json?v=' + Date.now()).then(r => r.json())
+      fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/piante_stato.json?v=' + Date.now()).then(r => r.json()),
+      fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/brain.json?v=' + Date.now()).then(r => r.json()),
+      fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/luna_consigli.json?v=' + Date.now()).then(r => r.json())
     ]);
 
     // Meteo
