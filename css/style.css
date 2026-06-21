@@ -169,6 +169,39 @@
     border-radius:4px; padding:1px 5px; font-size:10px; font-weight:700;
     margin-left:6px; vertical-align:middle;
   }
+  /* ─ Timeline fasi: stato visivo ─ */
+  .tl-done .tl-dot  { background: var(--green) !important; opacity: 1; }
+  .tl-done .tl-phase { color: var(--green); }
+  .tl-done .tl-date  { color: var(--text3); }
+  .tl-done { opacity: 0.75; }
+
+  .tl-active { background: rgba(76,175,80,0.06); border-radius: 10px; padding: 6px 8px; margin: -2px -8px; }
+  .tl-active .tl-phase { color: var(--text); font-weight: 700; }
+  .tl-active .tl-dot { box-shadow: 0 0 0 4px rgba(76,175,80,0.25); }
+
+  .tl-future { opacity: 0.42; }
+  .tl-future .tl-dot { background: var(--border) !important; }
+  .tl-future .tl-phase { color: var(--text3); }
+
+  .tl-active-tag {
+    display: inline-block;
+    margin-left: 6px;
+    background: var(--green);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 8px;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tl-extra { color: var(--text3); }
+
+  /* dot taglio e fine */
+  .tl-dot-taglio { background: #f44336; }
+  .tl-dot-fine   { background: var(--green); }
+
+  /* legacy tl-past → mantenuto per compatibilità */
   .tl-past { opacity: 0.5; }
   .tl-progress-wrap { margin: 8px 0 4px; }
   .tl-progress-label { font-size:11px;color:var(--text3);margin-bottom:4px; }
