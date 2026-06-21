@@ -5,11 +5,11 @@
 
 /* ── Piante di default (fisse) ── */
 const DEFAULT_PLANTS = [
-  { id:7,  name:'Epsilon F1',         type:'auto', icon:'🌸', harvestMin:60,  harvestMax:60,  idealH:18, germDate:'2026-04-21' },
-  { id:1,  name:'Milky Way F1',       type:'auto', icon:'🌙', harvestMin:70,  harvestMax:75,  idealH:18, germDate:'2026-04-23' },
-  { id:2,  name:'Titan F1',           type:'auto', icon:'⚡', harvestMin:70,  harvestMax:75,  idealH:18, germDate:'2026-04-22' },
-  { id:3,  name:'Medusa F1',          type:'auto', icon:'🪼', harvestMin:70,  harvestMax:75,  idealH:18, germDate:'2026-04-21' },
-  { id:8,  name:'Gaia F1',            type:'auto', icon:'🌍', harvestMin:65,  harvestMax:70,  idealH:18, germDate:'2026-04-21' },
+  { id:7,  name:'Epsilon F1',         type:'auto', icon:'🌸', harvestMin:90,  harvestMax:90,  idealH:18, germDate:'2026-04-21' },
+  { id:1,  name:'Milky Way F1',       type:'auto', icon:'🌙', harvestMin:106, harvestMax:106, idealH:18, germDate:'2026-04-23' },
+  { id:2,  name:'Titan F1',           type:'auto', icon:'⚡', harvestMin:106, harvestMax:106, idealH:18, germDate:'2026-04-22' },
+  { id:3,  name:'Medusa F1',          type:'auto', icon:'🪼', harvestMin:106, harvestMax:106, idealH:18, germDate:'2026-04-21' },
+  { id:8,  name:'Gaia F1',            type:'auto', icon:'🌍', harvestMin:100, harvestMax:100, idealH:18, germDate:'2026-04-21' },
   { id:4,  name:'Astro Lemonade F1',  type:'femm', icon:'🍋', harvestMin:50,  harvestMax:60,  idealH:12, florStart:'2026-10-01', germDate:'2026-04-21' },
   { id:11, name:'Cosmic Cheddar F1',  type:'femm', icon:'🧀', harvestMin:50,  harvestMax:60,  idealH:12, florStart:'2026-10-01', germDate:'2026-05-02' },
   { id:6,  name:'Orbital Banana F1',  type:'femm', icon:'🍌', harvestMin:55,  harvestMax:65,  idealH:12, florStart:'2026-10-01', germDate:'2026-04-30' },
@@ -30,8 +30,8 @@ function loadActivePlants() {
       // Controlla che ogni pianta abbia i campi minimi
       const valid = parsed.every(p => p && p.id && p.name && p.type);
       if (!valid) throw new Error('struttura corrotta');
-      // Migrazione: harvestMin troppo alto = vecchio moltiplicatore
-      const needsMigration = parsed.some(p => p.type === 'auto' && p.harvestMin > 100);
+      // Migrazione: harvestMin molto alto = vecchio moltiplicatore (soglia 200 per non triggerare sui nuovi valori 106)
+      const needsMigration = parsed.some(p => p.type === 'auto' && p.harvestMin > 200);
       // Migrazione: mancano campi nuovi (harvestMin/Max)
       const needsFieldUpdate = parsed.some(p => !p.harvestMin);
       if (needsMigration || needsFieldUpdate) {
@@ -566,7 +566,7 @@ function renderActivePlants() {
   const autoPlants = plants.filter(p => p.type === 'auto');
   const femmPlants = plants.filter(p => p.type === 'femm');
 
-  // Slider ore di sole — iniettato una sola volta sopra la lista
+  // Slider ore di sole
   const sunSliderHTML = `
     <div class="card" style="margin-bottom:12px;">
       <div class="card-title">☀️ Ore di sole oggi</div>
@@ -589,30 +589,185 @@ function renderActivePlants() {
 
   let html = sunSliderHTML;
 
+  function buildPlantCard(p) {
+    const today = new Date(); today.setHours(0,0,0,0);
+    const germ  = p.germDate ? new Date(p.germDate) : null;
+
+    // ── Calcola date taglio ──
+    let harvestDate = null;
+    const ovr = loadPlantPhaseOverride(p.id);
+    if (ovr && ovr.harvestDate) {
+      harvestDate = new Date(ovr.harvestDate);
+    } else if (p.type === 'auto' && germ) {
+      harvestDate = addDays(germ, p.harvestMin);
+    } else if (p.type === 'femm') {
+      const fi = getEffectiveFlorStart(p);
+      harvestDate = addDays(fi.date, p.harvestMin);
+    }
+
+    // ── Giorni passati e totali ──
+    const elapsed   = germ ? daysDiff(germ, today) : 0;
+    const totalDays = p.type === 'auto' ? p.harvestMin
+                    : (harvestDate && germ ? daysDiff(germ, harvestDate) : p.harvestMin);
+    const pct       = totalDays > 0 ? Math.min(100, Math.max(0, Math.round((elapsed / totalDays) * 100))) : 0;
+    const daysLeft  = harvestDate ? daysDiff(today, harvestDate) : null;
+
+    // ── Fase corrente calcolata ──
+    let currentPhase = 'vegetazione', currentPhaseLabel = '🌿 Vegetazione', phaseColor = '#4caf76';
+    if (p.type === 'auto' && germ) {
+      const vegEnd  = Math.round(p.harvestMin * 0.40);
+      const florEnd = Math.round(p.harvestMin * 0.85);
+      if      (elapsed < 5)       { currentPhase = 'germinazione'; currentPhaseLabel = '🌱 Germinazione'; phaseColor = '#8bc34a'; }
+      else if (elapsed < vegEnd)  { currentPhase = 'vegetazione';  currentPhaseLabel = '🌿 Vegetazione';  phaseColor = '#4caf76'; }
+      else if (elapsed < florEnd) { currentPhase = 'fioritura';    currentPhaseLabel = '🌸 Fioritura';    phaseColor = '#e91e8c'; }
+      else                        { currentPhase = 'maturazione';  currentPhaseLabel = '🔶 Maturazione';  phaseColor = '#ff9800'; }
+    } else if (p.type === 'femm') {
+      const fi = getEffectiveFlorStart(p);
+      const florStarted = today >= fi.date;
+      currentPhase      = florStarted ? 'fioritura'   : 'vegetazione';
+      currentPhaseLabel = florStarted ? '🌸 Fioritura' : '🌿 Vegetazione';
+      phaseColor        = florStarted ? '#e91e8c'     : '#4caf76';
+    }
+    if (ovr && ovr.currentPhase) {
+      const phaseMap = {
+        germinazione:  { label:'🌱 Germinazione', color:'#8bc34a' },
+        vegetazione:   { label:'🌿 Vegetazione',  color:'#4caf76' },
+        'pre-fioritura':{ label:'🌼 Pre-fioritura',color:'#cddc39' },
+        fioritura:     { label:'🌸 Fioritura',    color:'#e91e8c' },
+        maturazione:   { label:'🔶 Maturazione',  color:'#ff9800' },
+        pronto:        { label:'✂️ Pronto',        color:'#f44336' }
+      };
+      const mapped = phaseMap[ovr.currentPhase];
+      if (mapped) { currentPhaseLabel = mapped.label; phaseColor = mapped.color; }
+    }
+
+    // ── Countdown / stato raccolta ──
+    let countdownHTML = '';
+    if (daysLeft === null || !germ) {
+      countdownHTML = `<span style="color:var(--text3);font-size:12px;">Inserisci data germinazione</span>`;
+    } else if (daysLeft < 0 && !ovr) {
+      countdownHTML = `<span style="color:#f44336;font-weight:700;font-size:13px;">🔴 Verifica stato pianta</span>`;
+    } else if (daysLeft === 0) {
+      countdownHTML = `<span style="color:#f44336;font-weight:700;font-size:13px;">🔴 OGGI — GIORNO DEL TAGLIO!</span>`;
+    } else if (daysLeft <= 7) {
+      countdownHTML = `<span style="color:#ff9800;font-weight:700;font-size:13px;">⏳ Taglio tra </span><span style="color:#ff9800;font-weight:800;font-size:16px;">${daysLeft}</span><span style="color:#ff9800;font-weight:700;font-size:13px;"> giorni</span>`;
+    } else {
+      countdownHTML = `<span style="color:var(--text3);font-size:13px;">⏳ Taglio tra </span><span style="color:#4caf76;font-weight:800;font-size:16px;">${daysLeft}</span><span style="color:var(--text3);font-size:13px;"> giorni</span>`;
+    }
+
+    // ── Timeline orizzontale fasi ──
+    const PHASES = [
+      { key:'seme',   icon:'🌱', label:'SEME'   },
+      { key:'veg',    icon:'🌿', label:'VEG.'   },
+      { key:'fior',   icon:'🌸', label:'FIOR.'  },
+      { key:'essic',  icon:'✂️', label:'ESSIC.' },
+      { key:'concia', icon:'🫙', label:'CONCIA' },
+      { key:'fine',   icon:'✅', label:'FINE'   }
+    ];
+
+    // Mappa fase corrente → indice
+    const phaseIndexMap = { germinazione:0, vegetazione:1, 'pre-fioritura':1, fioritura:2, maturazione:3, pronto:3 };
+    const activeIdx = phaseIndexMap[currentPhase] ?? 1;
+
+    let timelineHTML = '<div style="display:flex;align-items:flex-end;gap:0;margin:10px 0 6px;position:relative;">';
+    for (let i = 0; i < PHASES.length; i++) {
+      const ph = PHASES[i];
+      const isPast   = i < activeIdx;
+      const isActive = i === activeIdx;
+      const isFuture = i > activeIdx;
+      const circleColor = isPast   ? '#4caf76'
+                        : isActive ? phaseColor
+                        : 'rgba(255,255,255,0.12)';
+      const circleSize  = isActive ? '38px' : '28px';
+      const iconSize    = isActive ? '16px' : '13px';
+      const borderStyle = isActive ? `3px solid ${phaseColor}` : 'none';
+      const boxShadow   = isActive ? `0 0 10px ${phaseColor}66` : 'none';
+      const lineColor   = isPast ? '#4caf76' : i === activeIdx ? phaseColor : 'rgba(255,255,255,0.1)';
+
+      // Linea connettrice a sinistra
+      const lineHTML = i > 0
+        ? `<div style="height:2px;flex:1;background:${lineColor};align-self:center;margin-bottom:16px;min-width:4px;"></div>`
+        : '';
+
+      timelineHTML += `
+        ${lineHTML}
+        <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+          <div style="width:${circleSize};height:${circleSize};border-radius:50%;background:${circleColor};border:${borderStyle};box-shadow:${boxShadow};display:flex;align-items:center;justify-content:center;font-size:${iconSize};transition:all .3s;">${ph.icon}</div>
+          <div style="font-size:9px;color:${isActive ? phaseColor : isPast ? '#4caf76' : 'rgba(255,255,255,0.35)'};font-weight:${isActive?'700':'400'};white-space:nowrap;">${ph.label}</div>
+        </div>`;
+    }
+    timelineHTML += '</div>';
+
+    // ── Barra progresso ──
+    const progressHTML = `
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+        <div style="flex:1;height:6px;background:rgba(255,255,255,0.08);border-radius:3px;overflow:hidden;">
+          <div style="height:100%;width:${pct}%;background:linear-gradient(90deg,#4caf76,${phaseColor});border-radius:3px;transition:width .5s;"></div>
+        </div>
+        <span style="font-size:11px;color:var(--text3);font-weight:600;white-space:nowrap;">${pct}%</span>
+      </div>`;
+
+    // ── 4 bottoni azioni ──
+    const actionsHTML = `
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px;">
+        <button onclick="openPhaseModal(${p.id})" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:8px 4px;color:var(--text2);font-size:12px;cursor:pointer;text-align:center;">✏️ Modifica fase</button>
+        <button onclick="openArchiveModal(${p.id})" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:8px 4px;color:var(--text2);font-size:12px;cursor:pointer;text-align:center;">📦 Archivia</button>
+        ${ovr ? `<button onclick="resetPhaseOverride(${p.id})" style="background:rgba(239,83,80,0.1);border:1px solid rgba(239,83,80,0.25);border-radius:10px;padding:8px 4px;color:#ef9a9a;font-size:12px;cursor:pointer;text-align:center;">↩ Ripristina</button>` : `<button onclick="saveGermDate(${p.id}, document.querySelector('[data-id=\\'${p.id}\\']').value)" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:8px 4px;color:var(--text2);font-size:12px;cursor:pointer;text-align:center;">🌱 Aggior. germ.</button>`}
+        ${p.type === 'femm' && !loadFlorConfirm(p.id) ? `<button onclick="confirmFlorStart(${p.id})" style="background:rgba(171,71,188,0.15);border:1px solid rgba(171,71,188,0.3);border-radius:10px;padding:8px 4px;color:#ce93d8;font-size:12px;cursor:pointer;text-align:center;">🌸 Conf. fior.</button>` : `<button onclick="renderTimelineInBox(${p.id})" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:8px 4px;color:var(--text2);font-size:12px;cursor:pointer;text-align:center;">🔄 Aggiorna</button>`}
+      </div>`;
+
+    // ── Card header ──
+    const typeLabel = p.type === 'auto' ? 'Autofiorente' : 'Femminizzata';
+    const heightLabel = p.type === 'auto' ? '50–70 cm' : '80–170 cm';
+
+    return `
+      <div id="plant-${p.id}" style="margin-bottom:10px;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);">
+        <!-- Header card -->
+        <div style="background:#1a2e1a;padding:12px 14px 10px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+            <span style="font-size:11px;color:rgba(255,255,255,0.45);">#${p.id} · ${typeLabel} · ${heightLabel}</span>
+            <div style="text-align:right;">
+              <span style="font-size:28px;font-weight:800;color:rgba(255,255,255,0.9);line-height:1;">${Math.max(0,elapsed)}</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.4);display:block;margin-top:-2px;">GIORNI</span>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <div style="font-size:20px;font-weight:700;color:#fff;">${p.icon||'🌿'} ${p.name}</div>
+            <div style="background:${phaseColor}22;border:1px solid ${phaseColor}55;border-radius:20px;padding:3px 10px;font-size:11px;color:${phaseColor};font-weight:600;">${currentPhaseLabel}</div>
+          </div>
+        </div>
+
+        <!-- Body card -->
+        <div style="background:#1e351e;padding:10px 14px 12px;">
+          <!-- Data germinazione -->
+          <div class="germ-row" style="margin-bottom:8px;">
+            <label class="germ-label">🌱 Germinazione:</label>
+            <input type="date" class="germ-input" data-id="${p.id}" value="${p.germDate || ''}" onchange="saveGermDate(${p.id},this.value)" />
+          </div>
+
+          <!-- Timeline orizzontale -->
+          ${timelineHTML}
+
+          <!-- Barra progresso -->
+          ${progressHTML}
+
+          <!-- 4 azioni -->
+          ${actionsHTML}
+
+          <!-- Countdown -->
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0 0;border-top:1px solid rgba(255,255,255,0.07);">
+            <span style="font-size:11px;color:rgba(255,255,255,0.35);">✂️ Taglio previsto</span>
+            <div>${countdownHTML}</div>
+          </div>
+        </div>
+      </div>`;
+  }
+
   function renderGroup(label, group) {
     if (!group.length) return '';
     let g = `<div class="plant-group-label">${label}</div>`;
     for (const p of group) {
-      const badge = p.type === 'auto'
-        ? '<span class="badge badge-green">Attiva</span>'
-        : '<span class="badge badge-blue">Veg.</span>';
-      g += `
-        <div class="plant-card-full" id="plant-${p.id}">
-          <div class="plant-card-header">
-            <div class="plant-icon">${p.icon || '🌿'}</div>
-            <div class="plant-info">
-              <div class="plant-name">${p.name} ×${p.id}</div>
-              <div class="plant-detail">${p.type === 'auto' ? 'Autofiorente' : 'Femminizzata'} · Raccolta produttore: ${p.harvestMin}${p.harvestMax !== p.harvestMin ? '–'+p.harvestMax : ''} gg${p.type === 'femm' && p.florStart ? ' · Fior. prevista '+new Date(p.florStart).toLocaleDateString('it-IT',{day:'2-digit',month:'short'}) : ''}</div>
-            </div>
-            ${badge}
-            <button class="btn-archive" onclick="openArchiveModal(${p.id})">📦 Archivia</button>
-          </div>
-          <div class="germ-row">
-            <label class="germ-label">🌱 Data germinazione:</label>
-            <input type="date" class="germ-input" data-id="${p.id}" value="${p.germDate || ''}" onchange="saveGermDate(${p.id},this.value)" />
-          </div>
-          <div class="timeline-box" id="tl-${p.id}"></div>
-        </div>`;
+      g += buildPlantCard(p);
     }
     return g;
   }
@@ -1513,6 +1668,12 @@ function initJsonLoaders() {
 
 /* ── Init Piante — chiamata da app.js all'avvio ── */
 function initPiante() {
+  // Pulizia override manuali per le 5 autofiorenti (date aggiornate)
+  [1, 2, 3, 7, 8].forEach(id => {
+    localStorage.removeItem('bioserra_phase_' + id);
+  });
+
+  // Seed localStorage con piante di default se vuoto
   try {
     if (!localStorage.getItem('bioserra_active_plants')) {
       localStorage.setItem('bioserra_active_plants', JSON.stringify(DEFAULT_PLANTS));
