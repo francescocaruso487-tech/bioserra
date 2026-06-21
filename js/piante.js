@@ -769,7 +769,12 @@ function renderActivePlants() {
 
     // ── Card header ──
     const typeLabel = p.type === 'auto' ? 'Autofiorente' : 'Femminizzata';
-    const heightLabel = p.type === 'auto' ? '50–70 cm' : '80–170 cm';
+    const HEIGHT_MAP = {
+      7: '50–70 cm', 1: '55–75 cm', 2: '55–75 cm',
+      3: '60–90 cm', 8: '50–70 cm', 4: '100–130 cm',
+      11: '80–120 cm', 6: '100–130 cm', 10: '130–170 cm', 9: '150–200 cm'
+    };
+    const heightLabel = HEIGHT_MAP[p.id] || (p.type === 'auto' ? '50–70 cm' : '80–170 cm');
 
     return `
       <div id="plant-${p.id}" style="margin-bottom:10px;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);">
