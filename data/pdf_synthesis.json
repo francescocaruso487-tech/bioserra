@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-20T11:36:42.155Z",
+  "lastUpdate": "2026-06-21T04:30:04.692Z",
   "total_pdf_analizzati": 1,
   "connessioni": [
     {
@@ -13,6 +13,19 @@
       ],
       "difficolta": "Facile",
       "beneficio_atteso": "Miglioramento della struttura del suolo e aumento della fertilità"
+    },
+    {
+      "pdf_a": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas",
+      "pdf_b": "Non disponibile, ma ipoteticamente un PDF su elettrocultura",
+      "collegamento": "Utilizzo della farina di roccia come fertilizzante naturale in sinergia con principi di elettrocultura per migliorare la crescita delle piante",
+      "principio_comune": "L'importanza della gestione del suolo e dell'utilizzo di risorse naturali per migliorare la salute delle piante",
+      "esperimento": "Applicazione della farina di roccia in combinazione con tecniche di elettrocultura per migliorare la struttura del suolo e la crescita delle piante di cannabis",
+      "materiali": [
+        "farina di roccia",
+        "attrezzature per elettrocultura"
+      ],
+      "difficolta": "media",
+      "beneficio_atteso": "Miglioramento della salute del suolo e aumento della crescita delle piante di cannabis"
     }
   ],
   "principi_universali": [
@@ -31,6 +44,14 @@
       "pdf_fonte": [
         "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas"
       ]
+    },
+    {
+      "principio": "Gestione del suolo",
+      "descrizione": "L'importanza della gestione del suolo per migliorare la salute delle piante",
+      "applicazione_serra": "Utilizzo di tecniche come la farina di roccia e l'elettrocultura per migliorare la struttura e la fertilità del suolo",
+      "pdf_fonte": [
+        "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas"
+      ]
     }
   ],
   "esperimenti_incrociati": [
@@ -40,9 +61,20 @@
       "protocollo": "Applicare 1 kg di farina di roccia per ogni 10 metri quadrati di suolo, misurare la crescita delle piante e la struttura del suolo dopo 30 giorni",
       "durata": "30 giorni",
       "misurazioni": "Crescita delle piante, struttura del suolo, pH del suolo"
+    },
+    {
+      "nome": "Elettrocultura con farina di roccia",
+      "origine": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas e ipoteticamente un PDF su elettrocultura",
+      "protocollo": "Applicazione della farina di roccia al suolo, seguita dall'applicazione di tecniche di elettrocultura",
+      "durata": "30 giorni",
+      "misurazioni": "Monitoraggio della crescita delle piante, della struttura del suolo e della presenza di nutrienti"
     }
   ],
   "scoperte": [
+    {
+      "data": "2026-06-21",
+      "testo": "La combinazione della farina di roccia con l'elettrocultura potrebbe rappresentare un metodo innovativo per migliorare la salute del suolo e la crescita delle piante di cannabis"
+    },
     {
       "data": "2026-06-20",
       "testo": "L'utilizzo della farina di roccia come fertilizzante naturale può migliorare significativamente la salute del suolo e la crescita delle piante di cannabis in serra."
@@ -53,9 +85,9 @@
     }
   ],
   "stats": {
-    "totale_connessioni": 1,
-    "totale_principi": 2,
-    "totale_esperimenti": 1,
-    "nuovi_oggi": 0
+    "totale_connessioni": 2,
+    "totale_principi": 3,
+    "totale_esperimenti": 2,
+    "nuovi_oggi": 1
   }
 }
