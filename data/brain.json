@@ -1,80 +1,80 @@
 {
-  "lastUpdate": "2026-06-17T14:37:03.469Z",
+  "lastUpdate": "2026-06-21T03:00:26.248Z",
   "versione": "4.0",
   "cervello": {
     "consigli_giorno": [
-      "controllare lo stato di crescita delle piante e regolare l'illuminazione e la temperatura se necessario"
+      "Controllare l'umidità e la temperatura nella serra per garantire condizioni ottimali per le piante"
     ],
     "consigli_piante": {
-      "autofiorenti": "controllare la formazione dei fiori e la produzione di resina",
-      "femminizzate": "verificare la presenza di fiori maschili e femminili e intervenire se necessario"
+      "autofiorenti": "Fornire supporto alle piante più alte per evitare che si rompano",
+      "femminizzate": "Verificare lo stato di crescita e pianificare la potatura se necessario"
     },
     "tecniche_nuove": [
       {
-        "nome": "antenna terrestre avanzata",
-        "descrizione": "installazione di un'antenna terrestre per migliorare la connessione con la Terra e aumentare la crescita delle piante",
+        "nome": "Tecnica di respirazione radicale",
+        "descrizione": "Tecnica per migliorare la crescita radicale delle piante",
         "materiali": [
-          "rame",
-          "cavo elettrico"
+          "Ossigeno",
+          "Acqua"
         ],
-        "difficolta": "media",
+        "difficolta": "facile",
         "fonte": "Royal Queen Seeds"
       }
     ],
     "scoperte": [
-      "osservazione della crescita accelerata delle piante dopo l'installazione della pila galvanica Fe-Cu"
+      "La luna nel primo quarto può influenzare la crescita delle piante, quindi è importante monitorarle con attenzione"
     ],
     "avvisi": [
-      "controllare la presenza di parassiti o malattie nelle piante"
+      "Controllare le piante per eventuali segni di malattie o parassiti"
     ]
   },
   "agenti": {
     "piante": {
       "stato_generale": "in monitoraggio",
-      "irrigazione": "irrigare le piante ogni 2-3 giorni con 1-2 litri di acqua magnetizzata per pianta",
-      "nutrizione": "aggiungere un fertilizzante bilanciato per piante in crescita ogni 7-10 giorni",
-      "attenzione": "controllare la formazione dei fiori e la produzione di resina",
+      "irrigazione": "Irrigare le piante tra le 8 e le 10 del mattino con circa 2 litri di acqua per pianta",
+      "nutrizione": "Aggiungere un integratore di azoto e potassio alle piante autofiorenti",
+      "attenzione": "Fornire supporto alle piante più alte per evitare che si rompano",
       "piante_critiche": []
     },
     "ambiente": {
       "luna": {
-        "fase": "Luna Crescente",
-        "emoji": "🌒",
-        "illuminazione_pct": 4,
+        "fase": "Primo Quarto",
+        "emoji": "🌓",
+        "illuminazione_pct": 34,
         "consiglio": "Luna calante."
       },
       "biodinamica": {
-        "tipo_giorno": "Foglia",
+        "tipo_giorno": "Radice",
         "qualita": "Buono",
-        "consiglio": "Ottimo per irrigazione e trapianto."
+        "consiglio": "Ideale per lavorazione terreno e concimazione."
       },
       "ore_luce": 15,
-      "correlazione": "Luna Crescente + Giorno Foglia",
+      "correlazione": "Primo Quarto + Giorno Radice",
       "momento_migliore": "pomeriggio"
     },
     "elettro": {
       "verifica_oggi": [
-        "verificare la funzionalità della pila galvanica Fe-Cu e della spirale cosmica"
+        "Verificare il funzionamento della pila galvanica Fe-Cu e della spirale cosmica"
       ],
-      "ottimizzazione": "Ottimizza in base alla fase Luna Crescente"
+      "ottimizzazione": "Ottimizza in base alla fase Primo Quarto"
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "antenna terrestre avanzata",
-      "descrizione": "installazione di un'antenna terrestre per migliorare la connessione con la Terra e aumentare la crescita delle piante",
+      "nome": "Tecnica di respirazione radicale",
+      "descrizione": "Tecnica per migliorare la crescita radicale delle piante",
       "materiali": [
-        "rame",
-        "cavo elettrico"
+        "Ossigeno",
+        "Acqua"
       ],
-      "difficolta": "media",
+      "difficolta": "facile",
       "fonte": "Royal Queen Seeds"
     }
   ],
   "avvisi": [
-    "controllare la presenza di parassiti o malattie nelle piante"
+    "Controllare le piante per eventuali segni di malattie o parassiti"
   ],
   "consigli_giorno": [
-    "controllare lo stato di crescita delle piante e regolare l'illuminazione e la temperatura se necessario"
+    "Controllare l'umidità e la temperatura nella serra per garantire condizioni ottimali per le piante"
   ]
 }
