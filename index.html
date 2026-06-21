@@ -616,200 +616,109 @@
 <!-- LABORATORIO -->
 <section id="sec-laboratorio" class="section">
   <div class="section-title">Laboratorio 🔬</div>
-  <div class="section-sub">Elettrocultura · Manuali · Cervello AI</div>
+  <div class="section-sub">Elettrocultura · PDF · Guide · Cervello AI</div>
+  <div id="lab-load-status" style="font-size:11px;color:var(--text3);text-align:center;padding:4px 0;min-height:16px"></div>
 
-  <!-- TAB BAR PRINCIPALE -->
-  <div class="piante-tab-bar" style="margin-bottom:16px">
-    <button class="piante-tab active" id="lab-tab-elettro"  onclick="switchLabTab('elettro')">⚡ Elettrocultura</button>
-    <button class="piante-tab"        id="lab-tab-manuali"  onclick="switchLabTab('manuali')">📚 Manuali</button>
-    <button class="piante-tab"        id="lab-tab-cervello" onclick="switchLabTab('cervello')">🧠 Cervello</button>
+  <!-- POPUP OVERLAY UNIVERSALE -->
+  <div id="lab-popup-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:9999;align-items:flex-end;justify-content:center" onclick="labPopupClose()">
+    <div id="lab-popup-box" onclick="event.stopPropagation()"
+      style="background:var(--card);border-radius:20px 20px 0 0;padding:20px 18px 32px;width:100%;max-width:560px;max-height:88vh;overflow-y:auto;box-shadow:0 -8px 40px rgba(0,0,0,.5)">
+    </div>
+    <button onclick="labPopupClose()" style="position:fixed;top:14px;right:14px;background:rgba(255,255,255,.15);border:none;border-radius:50%;width:36px;height:36px;font-size:18px;color:#fff;cursor:pointer;line-height:36px">✕</button>
   </div>
 
-  <!-- ══ PANNELLO: ELETTROCULTURA ══ -->
-  <div id="lab-panel-elettro" class="piante-panel active">
-
-    <!-- SEZIONE TECNICHE -->
-    <div class="card" style="margin-bottom:14px">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-        <div>
-          <div class="card-title" style="margin:0">⚡ Tecniche</div>
-          <div style="font-size:12px;color:var(--text3);margin-top:2px">Proposte dal Cervello AI · attive su tutte le piante</div>
-        </div>
-        <button onclick="elTecRicarica()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 11px;color:var(--green2);font-size:12px;font-weight:600;cursor:pointer">🔄</button>
-      </div>
-      <div id="el-tec-status" style="font-size:11px;color:var(--text3);margin-bottom:8px"></div>
-      <div id="el-tec-lista">
-        <div style="text-align:center;padding:20px;color:var(--text3);font-size:13px">
-          ⏳ Caricamento tecniche…
-        </div>
-      </div>
+  <!-- ① KNOWLEDGE DIGEST -->
+  <div class="card" style="margin-bottom:14px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <div class="card-title" style="margin:0">🌟 Consiglio del Giorno</div>
+      <button onclick="labLoadAll()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 10px;color:var(--text2);font-size:11px;cursor:pointer">🔄</button>
     </div>
-
-    <!-- SEZIONE ESPERIMENTI -->
-    <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-        <div>
-          <div class="card-title" style="margin:0">🧪 Esperimenti</div>
-          <div style="font-size:12px;color:var(--text3);margin-top:2px">Sincronizzato con il bot</div>
-        </div>
-        <button onclick="espReload()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 11px;color:var(--green2);font-size:12px;font-weight:600;cursor:pointer">🔄</button>
-      </div>
-      <div id="esp-status" style="font-size:11px;color:var(--text3);margin-bottom:10px;text-align:center"></div>
-
-      <!-- SUB-TAB -->
-      <div style="display:flex;gap:8px;margin-bottom:12px">
-        <button id="esptab-attivi"   onclick="switchEspTab('attivi')"
-          style="flex:1;padding:9px 0;border-radius:10px;border:none;font-size:13px;font-weight:700;cursor:pointer;background:var(--green2);color:var(--text)">
-          ✅ Attivi
-        </button>
-        <button id="esptab-proposte" onclick="switchEspTab('proposte')"
-          style="flex:1;padding:9px 0;border-radius:10px;border:1px solid var(--border);font-size:13px;font-weight:700;cursor:pointer;background:var(--card2);color:var(--text2)">
-          💡 Da valutare
-        </button>
-      </div>
-
-      <div id="esp-panel-attivi">
-        <div id="esp-lista-attivi">
-          <div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">⏳ Caricamento…</div>
-        </div>
-      </div>
-      <div id="esp-panel-proposte" style="display:none">
-        <div id="esp-lista-proposte">
-          <div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">⏳ Caricamento…</div>
-        </div>
-      </div>
-    </div>
-
+    <div id="lab-digest-content"><div style="color:var(--text3);font-size:12px;padding:8px">⏳ Caricamento…</div></div>
   </div>
 
-  <!-- ══ PANNELLO: MANUALI ══ -->
-  <div id="lab-panel-manuali" class="piante-panel">
-
-    <!-- ANALISI AI PDF -->
-    <div class="json-panel" id="manuali-json-panel" style="margin-bottom:14px">
-      <div class="json-panel-header">
-        <div class="json-panel-title">🤖 Analisi AI dei PDF</div>
-        <button class="json-reload-btn" onclick="loadManualiJSON()">🔄 Aggiorna</button>
+  <!-- ② TECNICHE ELETTROCULTURA -->
+  <div class="card" style="margin-bottom:14px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <div>
+        <div class="card-title" style="margin:0">⚡ Tecniche Elettrocultura</div>
+        <div style="font-size:12px;color:var(--text3);margin-top:2px">Attiva su tutte le piante · Tocca per istruzioni</div>
       </div>
-      <div style="font-size:11px;color:var(--text3);padding:0 0 6px 2px">Il Cervello legge i PDF su Drive e propone nuove tecniche</div>
-      <div class="json-panel-meta" id="manuali-json-meta">In caricamento…</div>
-      <div id="manuali-json-content"><div class="json-loading">⏳ Caricamento analisi…</div></div>
+      <button onclick="labLoadAll()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 10px;color:var(--text2);font-size:11px;cursor:pointer">🔄</button>
     </div>
-
-    <!-- GUIDE COMPLETE -->
-    <div class="card" style="margin-bottom:14px">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-        <div>
-          <div class="card-title" style="margin:0">&#x1F4D6; Guide Complete</div>
-          <div style="font-size:12px;color:var(--text3);margin-top:2px">RQS + Zamnesia &middot; aggiornate ogni giorno</div>
-        </div>
-        <button onclick="loadGuideComplete()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 10px;color:var(--text3);font-size:12px;cursor:pointer">&#x1F504;</button>
-      </div>
-      <div id="guide-meta" style="font-size:11px;color:var(--text3);margin-bottom:8px">Caricamento&hellip;</div>
-      <div id="guide-content"><div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">&#x23F3; Caricamento guide&hellip;</div></div>
-    </div>
-
-    <!-- PDF SYNTHESIS — connessioni inaspettate -->
-    <div class="card" style="margin-bottom:14px">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-        <div>
-          <div class="card-title" style="margin:0">&#x1F517; Connessioni PDF</div>
-          <div style="font-size:12px;color:var(--text3);margin-top:2px">Connessioni inaspettate tra i PDF della biblioteca</div>
-        </div>
-        <button onclick="loadPdfSynthesis()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 10px;color:var(--text3);font-size:12px;cursor:pointer">&#x1F504;</button>
-      </div>
-      <div id="synthesis-meta" style="font-size:11px;color:var(--text3);margin-bottom:8px">Caricamento&hellip;</div>
-      <div id="synthesis-content"><div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">&#x23F3; Caricamento connessioni&hellip;</div></div>
-    </div>
-
-    <!-- NOTE PERSONALI -->
-    <div class="card">
-      <div class="card-title" style="display:flex;justify-content:space-between;align-items:center">
-        <span>📝 Note personali</span>
-        <span style="font-size:12px;color:var(--text3)" id="man-note-count">0 note</span>
-      </div>
-      <div style="display:grid;gap:8px;margin-top:10px">
-        <input id="man-nota-testo" type="text" placeholder="Scrivi la tua osservazione…"
-          style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-size:13px;font-family:var(--font);outline:none"
-          onkeydown="if(event.key==='Enter'){event.preventDefault();manSalvaNota();}">
-        <input id="man-nota-tag" type="text" placeholder="Tag opzionale (es. medusa, elettro, terriccio)"
-          style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:9px 12px;color:var(--text);font-size:12px;font-family:var(--font);outline:none">
-        <button onclick="manSalvaNota()" style="background:var(--green2);border:none;border-radius:10px;padding:11px;color:var(--text);font-size:14px;font-weight:700;cursor:pointer">💾 Salva nota</button>
-      </div>
-      <div id="man-note-lista" style="margin-top:12px"></div>
-    </div>
-
+    <div id="lab-tec-lista"><div style="text-align:center;padding:20px;color:var(--text3);font-size:13px">⏳ Caricamento tecniche…</div></div>
   </div>
 
-  <!-- ══ PANNELLO: CERVELLO ══ -->
-  <div id="lab-panel-cervello" class="piante-panel">
-
-    <!-- KNOWLEDGE DIGEST — fusione giornaliera -->
-    <div class="card" style="margin-bottom:14px">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-        <div>
-          <div class="card-title" style="margin:0">&#x2B50; Knowledge Digest</div>
-          <div style="font-size:12px;color:var(--text3);margin-top:2px">Guide + PDF + Piante fusi ogni mattina</div>
-        </div>
-        <button onclick="loadKnowledgeDigest()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 10px;color:var(--text3);font-size:12px;cursor:pointer">&#x1F504;</button>
+  <!-- ③ ESPERIMENTI -->
+  <div class="card" style="margin-bottom:14px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+      <div>
+        <div class="card-title" style="margin:0">🧪 Esperimenti</div>
+        <div id="lab-esp-badge" style="font-size:11px;color:var(--text3);margin-top:2px">Caricamento…</div>
       </div>
-      <div id="digest-meta" style="font-size:11px;color:var(--text3);margin-bottom:8px">Caricamento&hellip;</div>
-      <div id="digest-content"><div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">&#x23F3; Caricamento digest&hellip;</div></div>
+      <button onclick="labLoadAll()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 10px;color:var(--text2);font-size:11px;cursor:pointer">🔄</button>
     </div>
+    <!-- Attivi -->
+    <div style="font-size:11px;font-weight:700;color:var(--green2);margin:10px 0 6px;letter-spacing:.3px">✅ ATTIVI</div>
+    <div id="lab-esp-attivi"><div style="text-align:center;padding:12px;color:var(--text3);font-size:12px">⏳ Caricamento…</div></div>
+    <!-- Da valutare -->
+    <div style="font-size:11px;font-weight:700;color:var(--text2);margin:14px 0 6px;letter-spacing:.3px">💡 DA VALUTARE</div>
+    <div id="lab-esp-proposte"><div style="text-align:center;padding:12px;color:var(--text3);font-size:12px">⏳ Caricamento…</div></div>
+  </div>
 
-    <!-- CONSIGLI DEL GIORNO da brain.json -->
-    <div class="card" style="margin-bottom:14px">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-        <div class="card-title" style="margin:0">🧠 Consigli del giorno</div>
-        <button onclick="brainLoad()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 11px;color:var(--green2);font-size:12px;font-weight:600;cursor:pointer">🔄</button>
+  <!-- ④ ESTRATTI PDF -->
+  <div class="card" style="margin-bottom:14px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <div>
+        <div class="card-title" style="margin:0">📄 Estratti PDF</div>
+        <div style="font-size:12px;color:var(--text3);margin-top:2px">Analisi AI dei PDF su Drive · aggiornato alle 5:00</div>
       </div>
-      <div id="brain-status" style="font-size:11px;color:var(--text3);margin-bottom:8px"></div>
-      <div id="brain-content">
-        <div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">⏳ Caricamento consigli…</div>
-      </div>
+      <button onclick="labLoadAll()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 10px;color:var(--text2);font-size:11px;cursor:pointer">🔄</button>
     </div>
+    <div id="lab-pdf-content"><div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">⏳ Caricamento analisi PDF…</div></div>
+  </div>
 
-    <!-- CHAT CERVELLO AI -->
-    <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-        <div class="card-title" style="margin:0">💬 Chatta con il Cervello AI</div>
-        <button onclick="cervChatReset()" title="Nuova chat"
-          style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 10px;color:var(--text3);font-size:12px;cursor:pointer">
-          🗑 Reset
-        </button>
+  <!-- ⑤ GUIDE COMPLETE -->
+  <div class="card" style="margin-bottom:14px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <div>
+        <div class="card-title" style="margin:0">📖 Guide Complete</div>
+        <div style="font-size:12px;color:var(--text3);margin-top:2px">RQS + Zamnesia · aggiornate ogni giorno</div>
       </div>
-
-      <!-- BOTTONI RAPIDI -->
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px">
-        <button class="ai-quick-btn" onclick="cervSend('Cosa devo fare oggi in serra?')">📋 Oggi</button>
-        <button class="ai-quick-btn" onclick="cervSend('Quando annaffiare prossima volta?')">💧 Acqua</button>
-        <button class="ai-quick-btn" onclick="cervSend('Dosi melassa: quando tocca la prossima?')">🍯 Melassa</button>
-        <button class="ai-quick-btn" onclick="cervSend('Diagnosi foglie ingiallite: cause e rimedi')">🍂 Foglie</button>
-        <button class="ai-quick-btn" onclick="cervSend('Quale pianta è più vicina alla raccolta?')">🌾 Raccolta</button>
-        <button class="ai-quick-btn" onclick="cervSend('Stato delle piante femminizzate questa settimana')">🌸 Femm.</button>
-        <button class="ai-quick-btn" onclick="cervSend('Infuso ortiche: quando farlo e come prepararlo?')">🌿 Ortiche</button>
-        <button class="ai-quick-btn" onclick="cervSend('Tecniche elettrocultura: cosa controllare oggi?')">⚡ Elettro</button>
-      </div>
-
-      <!-- AREA MESSAGGI -->
-      <div id="cerv-chat"
-        style="height:350px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;padding:4px 0;margin-bottom:10px">
-        <div class="ai-msg bot">🧠 Ciao! Sono il Cervello AI della tua serra.<br>Leggo i dati live — meteo, piante, luna — prima di rispondere.<br>Chiedimi qualsiasi cosa!</div>
-      </div>
-
-      <!-- INPUT -->
-      <div style="display:flex;gap:8px;align-items:center">
-        <button title="Prossimamente — analisi foto piante" disabled
-          style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text3);font-size:16px;cursor:not-allowed;opacity:0.5">
-          📷
-        </button>
-        <input id="cerv-input" class="ai-input" type="text"
-          placeholder="Chiedi qualcosa sulla tua serra…"
-          onkeydown="if(event.key==='Enter'){event.preventDefault();cervSend();}">
-        <button class="ai-send" onclick="cervSend()">➤</button>
-      </div>
+      <button onclick="labLoadAll()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 10px;color:var(--text2);font-size:11px;cursor:pointer">🔄</button>
     </div>
+    <div id="lab-guide-content"><div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">⏳ Caricamento guide…</div></div>
+  </div>
 
+  <!-- ⑥ CERVELLO AI — Consigli + Chat -->
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <div class="card-title" style="margin:0">🧠 Cervello AI</div>
+      <button onclick="cervChatReset()" style="background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:5px 10px;color:var(--text2);font-size:11px;cursor:pointer">🗑 Reset</button>
+    </div>
+    <!-- Consigli da brain.json -->
+    <div id="lab-brain-content" style="margin-bottom:12px"><div style="color:var(--text3);font-size:12px;padding:8px">⏳ Caricamento consigli…</div></div>
+    <!-- Bottoni rapidi -->
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px">
+      <button class="ai-quick-btn" onclick="cervSend('Cosa devo fare oggi in serra?')">📋 Oggi</button>
+      <button class="ai-quick-btn" onclick="cervSend('Quando annaffiare prossima volta?')">💧 Acqua</button>
+      <button class="ai-quick-btn" onclick="cervSend('Dosi melassa: quando tocca la prossima?')">🍯 Melassa</button>
+      <button class="ai-quick-btn" onclick="cervSend('Diagnosi foglie ingiallite: cause e rimedi')">🍂 Foglie</button>
+      <button class="ai-quick-btn" onclick="cervSend('Quale pianta è più vicina alla raccolta?')">🌾 Raccolta</button>
+      <button class="ai-quick-btn" onclick="cervSend('Stato delle piante femminizzate questa settimana')">🌸 Femm.</button>
+      <button class="ai-quick-btn" onclick="cervSend('Tecniche elettrocultura: cosa controllare oggi?')">⚡ Elettro</button>
+    </div>
+    <!-- Area chat -->
+    <div id="cerv-chat"
+      style="height:320px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;padding:4px 0;margin-bottom:10px">
+      <div class="ai-msg bot">🧠 Ciao! Sono il Cervello AI della tua serra.<br>Leggo i dati live — meteo, piante, luna — e rispondo alle tue domande.</div>
+    </div>
+    <!-- Input -->
+    <div style="display:flex;gap:8px;align-items:center">
+      <input id="cerv-input" class="ai-input" type="text"
+        placeholder="Chiedi qualcosa sulla tua serra…"
+        onkeydown="if(event.key==='Enter'){event.preventDefault();cervSend();}">
+      <button class="ai-send" onclick="cervSend()">➤</button>
+    </div>
   </div>
 
 </section>
