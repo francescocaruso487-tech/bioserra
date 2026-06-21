@@ -254,13 +254,17 @@ function renderTimelineInBox(id) {
       ? `${fmtDate(harvest)} → ${fmtDate(harvestMax)} (${p.harvestMin}–${p.harvestMax} gg produttore)` + manualTag
       : `${p.harvestMin} gg dalla germinazione` + manualTag;
 
+    const essStart = harvest;
+    const fineDate = addDays(concEnd, 0);
+
     steps = [
-      { dot:'germ', label:'🌱 Germinazione',      date: germ,     extra:'Giorno 0 — data inserita' },
-      { dot:'veg',  label:'🌿 Fine Vegetazione',   date: endVeg,   extra:`+${vegDays} gg dalla germinazione` },
-      { dot:'fior', label:'🌸 Inizio Fioritura',   date: endFlor,  extra:`+${florStart + Math.round(totalDays * florRatio)} gg totali` },
-      { dot:'rec',  label:'✂️ Taglio previsto',    date: harvest,  extra: extraHarvest },
-      { dot:'ess',  label:'🌬️ Fine Essiccazione', date: essEnd,   extra:`+${essDays} gg fissi` },
-      { dot:'conc', label:'🫙 Fine Concia',        date: concEnd,  extra:`+${concDays} gg fissi` }
+      { dot:'germ', label:'🌱 Germinazione',          date: germ,      extra:'Giorno 0 — data inserita' },
+      { dot:'veg',  label:'🌿 Vegetazione',            date: addDays(germ,1), extra:`${vegDays} gg di vegetazione` },
+      { dot:'fior', label:'🌸 Fioritura',              date: endVeg,    extra:`+${vegDays} gg dalla germinazione` },
+      { dot:'taglio', label:'✂️ Taglio',             date: harvest,   extra: extraHarvest },
+      { dot:'ess',  label:'🌬️ Essiccazione',     date: essStart,  extra:`14 gg fissi dal taglio` },
+      { dot:'conc', label:'🫙 Concia',                 date: essEnd,    extra:`14 gg fissi dall’essiccazione` },
+      { dot:'fine', label:'✅ Fine',                       date: concEnd,   extra:'Ciclo completato' }
     ];
 
     const elapsed = daysDiff(germ, today);
@@ -314,13 +318,16 @@ function renderTimelineInBox(id) {
       ? `✏️ Data impostata manualmente`
       : `${fmtDate(harvestMinD)} → ${fmtDate(harvestMaxD)} (${p.harvestMin}–${p.harvestMax} gg fioritura)`;
 
+    const vegMidDate = germ < florStartDate ? addDays(germ, 1) : germ;
+
     steps = [
-      { dot:'germ', label:'🌱 Germinazione',      date: germ,          extra:'Giorno 0' },
-      { dot:'veg',  label:'🌿 Vegetazione',        date: florStartDate, extra:`${vegDays > 0 ? vegDays+' gg fino alla fioritura' : ''}` },
-      { dot:'fior', label:'🌸 Inizio Fioritura',   date: florStartDate, extra: sourceLabel },
-      { dot:'rec',  label:'✂️ Taglio previsto',    date: harvestMinD,   extra: harvestExtra },
-      { dot:'ess',  label:'🌬️ Fine Essiccazione', date: essEnd,        extra:`+${essDays} gg fissi` },
-      { dot:'conc', label:'🫙 Fine Concia',        date: concEnd,       extra:`+${concDays} gg fissi` }
+      { dot:'germ',   label:'🌱 Germinazione',      date: germ,          extra:'Giorno 0' },
+      { dot:'veg',    label:'🌿 Vegetazione',        date: vegMidDate,    extra:`${vegDays > 0 ? vegDays+' gg di vegetazione' : ''}` },
+      { dot:'fior',   label:'🌸 Fioritura',          date: florStartDate, extra: sourceLabel },
+      { dot:'taglio', label:'✂️ Taglio',           date: harvestMinD,   extra: harvestExtra },
+      { dot:'ess',    label:'🌬️ Essiccazione', date: harvestMinD,   extra:'14 gg fissi dal taglio' },
+      { dot:'conc',   label:'🫙 Concia',             date: essEnd,        extra:'14 gg fissi dall’essiccazione' },
+      { dot:'fine',   label:'✅ Fine',                   date: concEnd,       extra:'Ciclo completato' }
     ];
 
     const totalCycle = daysDiff(germ, harvestMinD);
@@ -380,9 +387,20 @@ function openPhaseModal(id) {
 
   document.getElementById('phase-modal-title').textContent = `✏️ ${p.icon || ''} ${p.name}`;
 
-  // Fase select
+  // Fase select — aggiorna opzioni con le 7 fasi corrette
   const phaseSelect = document.getElementById('phase-select');
-  if (phaseSelect) phaseSelect.value = ovr ? (ovr.currentPhase || 'vegetazione') : 'vegetazione';
+  if (phaseSelect) {
+    phaseSelect.innerHTML = [
+      '<option value="germinazione">🌱 Germinazione</option>',
+      '<option value="vegetazione">🌿 Vegetazione</option>',
+      '<option value="fioritura">🌸 Fioritura</option>',
+      '<option value="taglio">✂️ Taglio (evento)</option>',
+      '<option value="essiccazione">🌬️ Essiccazione</option>',
+      '<option value="concia">🫙 Concia</option>',
+      '<option value="fine">✅ Fine ciclo</option>'
+    ].join('');
+    phaseSelect.value = ovr ? (ovr.currentPhase || 'vegetazione') : 'vegetazione';
+  }
 
   // Campo fioritura — solo femminizzate
   const florWrap = document.getElementById('phase-florstart-wrap');
@@ -545,14 +563,38 @@ function checkHarvestAlerts() {
 }
 
 function renderSteps(steps, today) {
+  // Trova la fase attiva: l'ultima il cui date <= today (o la prima se tutte future)
+  let activeIdx = -1;
+  for (let i = 0; i < steps.length; i++) {
+    if (steps[i].date <= today) activeIdx = i;
+  }
+  if (activeIdx < 0 && steps.length > 0) activeIdx = 0;
+
   let html = '';
   for (let i = 0; i < steps.length; i++) {
     const s = steps[i];
-    const isPast = s.date < today;
-    const isToday = daysDiff(s.date, today) === 0;
-    const pastCls = isPast && !isToday ? ' tl-past' : '';
-    const todayTag = isToday ? '<span class="tl-today-tag">OGGI</span>' : '';
-    html += `<div class="tl-step${pastCls}"><div class="tl-dot tl-dot-${s.dot}"></div><div class="tl-content"><div class="tl-phase">${s.label}${todayTag}</div><div class="tl-date">${fmtDate(s.date)}${s.extra ? ' · <span style="color:var(--text3)">' + s.extra + '</span>' : ''}</div></div></div>`;
+    const isDone   = i < activeIdx;
+    const isActive = i === activeIdx;
+    const isFuture = i > activeIdx;
+
+    let cls = ' tl-future';
+    if (isDone)   cls = ' tl-done';
+    if (isActive) cls = ' tl-active';
+
+    const todayTag = (daysDiff(s.date, today) === 0)
+      ? '<span class="tl-today-tag">OGGI</span>' : '';
+
+    const activeTag = isActive
+      ? '<span class="tl-active-tag">IN CORSO</span>' : '';
+
+    html += `<div class="tl-step${cls}">` +
+      `<div class="tl-dot tl-dot-${s.dot}"></div>` +
+      `<div class="tl-content">` +
+        `<div class="tl-phase">${s.label}${todayTag}${activeTag}</div>` +
+        `<div class="tl-date">${fmtDate(s.date)}` +
+          `${s.extra ? ' · <span class="tl-extra">' + s.extra + '</span>' : ''}` +
+        `</div>` +
+      `</div></div>`;
   }
   return html;
 }
@@ -630,12 +672,16 @@ function renderActivePlants() {
     }
     if (ovr && ovr.currentPhase) {
       const phaseMap = {
-        germinazione:  { label:'🌱 Germinazione', color:'#8bc34a' },
-        vegetazione:   { label:'🌿 Vegetazione',  color:'#4caf76' },
-        'pre-fioritura':{ label:'🌼 Pre-fioritura',color:'#cddc39' },
-        fioritura:     { label:'🌸 Fioritura',    color:'#e91e8c' },
-        maturazione:   { label:'🔶 Maturazione',  color:'#ff9800' },
-        pronto:        { label:'✂️ Pronto',        color:'#f44336' }
+        germinazione:    { label:'🌱 Germinazione',  color:'#8bc34a' },
+        vegetazione:     { label:'🌿 Vegetazione',   color:'#4caf76' },
+        'pre-fioritura': { label:'🌼 Pre-fioritura', color:'#cddc39' },
+        fioritura:       { label:'🌸 Fioritura',     color:'#e91e8c' },
+        maturazione:     { label:'🌸 Fioritura',     color:'#e91e8c' },
+        pronto:          { label:'✂️ Taglio',       color:'#f44336' },
+        taglio:          { label:'✂️ Taglio',       color:'#f44336' },
+        essiccazione:    { label:'🌬️ Essic.',   color:'#90caf9' },
+        concia:          { label:'🫙 Concia',         color:'#ff9800' },
+        fine:            { label:'✅ Fine',               color:'#4caf76' }
       };
       const mapped = phaseMap[ovr.currentPhase];
       if (mapped) { currentPhaseLabel = mapped.label; phaseColor = mapped.color; }
@@ -657,16 +703,21 @@ function renderActivePlants() {
 
     // ── Timeline orizzontale fasi ──
     const PHASES = [
-      { key:'seme',   icon:'🌱', label:'SEME'   },
+      { key:'germ',   icon:'🌱', label:'GERM.'  },
       { key:'veg',    icon:'🌿', label:'VEG.'   },
       { key:'fior',   icon:'🌸', label:'FIOR.'  },
-      { key:'essic',  icon:'✂️', label:'ESSIC.' },
+      { key:'taglio', icon:'✂️', label:'TAGLIO' },
+      { key:'essic',  icon:'🌬️', label:'ESSIC.' },
       { key:'concia', icon:'🫙', label:'CONCIA' },
       { key:'fine',   icon:'✅', label:'FINE'   }
     ];
 
-    // Mappa fase corrente → indice
-    const phaseIndexMap = { germinazione:0, vegetazione:1, 'pre-fioritura':1, fioritura:2, maturazione:3, pronto:3 };
+    // Mappa fase corrente → indice (0=germ,1=veg,2=fior,3=taglio,4=essic,5=concia,6=fine)
+    const phaseIndexMap = {
+      germinazione:0, vegetazione:1, 'pre-fioritura':1,
+      fioritura:2, maturazione:2, pronto:3,
+      taglio:3, essiccazione:4, concia:5, fine:6
+    };
     const activeIdx = phaseIndexMap[currentPhase] ?? 1;
 
     let timelineHTML = '<div style="display:flex;align-items:flex-end;gap:0;margin:10px 0 6px;position:relative;">';
