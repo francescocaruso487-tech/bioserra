@@ -192,7 +192,7 @@ function getAutoHarvestDate(p) {
   // Autofiorenti: data germinazione + gg produttore (nessun moltiplicatore)
   if (!p.germDate) return null;
   const germ = new Date(p.germDate);
-  const _sunM = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
+  const _sunM = (p.type === 'auto' && p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
   const harvestMin = addDays(germ, Math.round(p.harvestMin * _sunM));
   const harvestMax = addDays(germ, Math.round(p.harvestMax * _sunM));
   // Override manuale se impostato
@@ -644,7 +644,7 @@ function renderActivePlants() {
     if (ovr && ovr.harvestDate) {
       harvestDate = new Date(ovr.harvestDate);
     } else if (p.type === 'auto' && germ) {
-      // Moltiplica i giorni in base alle ore di sole reali vs ottimali
+      // Autofiorenti: moltiplica giorni per rapporto ore sole reali vs ottimali
       const sunMult = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
       harvestDate = addDays(germ, Math.round(p.harvestMin * sunMult));
     } else if (p.type === 'femm') {
@@ -654,7 +654,7 @@ function renderActivePlants() {
 
     // ── Giorni passati e totali ──
     const elapsed   = germ ? daysDiff(germ, today) : 0;
-    const _sunMult2 = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
+    const _sunMult2 = (p.type === 'auto' && p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
     const totalDays = p.type === 'auto' ? Math.round(p.harvestMin * _sunMult2)
                     : (harvestDate && germ ? daysDiff(germ, harvestDate) : p.harvestMin);
     const pct       = totalDays > 0 ? Math.min(100, Math.max(0, Math.round((elapsed / totalDays) * 100))) : 0;
