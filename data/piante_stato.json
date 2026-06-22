@@ -1,7 +1,7 @@
 {
-  "lastUpdate": "2026-06-22T13:55:51.000Z",
+  "lastUpdate": "2026-06-22T13:56:24.000Z",
   "ore_sole_default": 10.0,
-  "nota": "Date calcolate con moltiplicatore ore sole. Cambiano dinamicamente nell'app in base al cursore.",
+  "nota": "Auto: date con moltiplicatore ore sole. Femm: date fisse da fotoperiodo.",
   "data": {
     "stato_piante": [
       {
@@ -17,9 +17,7 @@
         "data_taglio": "2026-07-14",
         "data_raccolta": "2026-07-14",
         "data_essiccazione": "2026-07-29",
-        "data_concia": "2026-08-18",
-        "moltiplicatore_sole": 1.4,
-        "ore_sole_usate": 10.0
+        "data_concia": "2026-08-18"
       },
       {
         "id": 1,
@@ -34,9 +32,7 @@
         "data_taglio": "2026-07-30",
         "data_raccolta": "2026-07-30",
         "data_essiccazione": "2026-08-14",
-        "data_concia": "2026-09-03",
-        "moltiplicatore_sole": 1.4,
-        "ore_sole_usate": 10.0
+        "data_concia": "2026-09-03"
       },
       {
         "id": 2,
@@ -51,9 +47,7 @@
         "data_taglio": "2026-07-29",
         "data_raccolta": "2026-07-29",
         "data_essiccazione": "2026-08-13",
-        "data_concia": "2026-09-02",
-        "moltiplicatore_sole": 1.4,
-        "ore_sole_usate": 10.0
+        "data_concia": "2026-09-02"
       },
       {
         "id": 3,
@@ -68,9 +62,7 @@
         "data_taglio": "2026-07-28",
         "data_raccolta": "2026-07-28",
         "data_essiccazione": "2026-08-12",
-        "data_concia": "2026-09-01",
-        "moltiplicatore_sole": 1.4,
-        "ore_sole_usate": 10.0
+        "data_concia": "2026-09-01"
       },
       {
         "id": 8,
@@ -85,9 +77,7 @@
         "data_taglio": "2026-07-21",
         "data_raccolta": "2026-07-21",
         "data_essiccazione": "2026-08-05",
-        "data_concia": "2026-08-25",
-        "moltiplicatore_sole": 1.4,
-        "ore_sole_usate": 10.0
+        "data_concia": "2026-08-25"
       },
       {
         "id": 4,
@@ -96,15 +86,13 @@
         "germoglio": "2026-04-21",
         "giorni_vita": 62,
         "fase": "Vegetazione",
-        "giorni_a_taglio": 171,
-        "giorni_a_raccolta": 171,
-        "giorni_a_essiccazione": 186,
-        "data_taglio": "2026-12-10",
-        "data_raccolta": "2026-12-10",
-        "data_essiccazione": "2026-12-25",
-        "data_concia": "2027-01-14",
-        "moltiplicatore_sole": 1.4,
-        "ore_sole_usate": 10.0
+        "giorni_a_taglio": 151,
+        "giorni_a_raccolta": 151,
+        "giorni_a_essiccazione": 166,
+        "data_taglio": "2026-11-20",
+        "data_raccolta": "2026-11-20",
+        "data_essiccazione": "2026-12-05",
+        "data_concia": "2026-12-25"
       },
       {
         "id": 11,
@@ -113,15 +101,13 @@
         "germoglio": "2026-05-02",
         "giorni_vita": 51,
         "fase": "Vegetazione",
-        "giorni_a_taglio": 171,
-        "giorni_a_raccolta": 171,
-        "giorni_a_essiccazione": 186,
-        "data_taglio": "2026-12-10",
-        "data_raccolta": "2026-12-10",
-        "data_essiccazione": "2026-12-25",
-        "data_concia": "2027-01-14",
-        "moltiplicatore_sole": 1.4,
-        "ore_sole_usate": 10.0
+        "giorni_a_taglio": 151,
+        "giorni_a_raccolta": 151,
+        "giorni_a_essiccazione": 166,
+        "data_taglio": "2026-11-20",
+        "data_raccolta": "2026-11-20",
+        "data_essiccazione": "2026-12-05",
+        "data_concia": "2026-12-25"
       },
       {
         "id": 6,
@@ -130,15 +116,13 @@
         "germoglio": "2026-04-30",
         "giorni_vita": 53,
         "fase": "Vegetazione",
-        "giorni_a_taglio": 178,
-        "giorni_a_raccolta": 178,
-        "giorni_a_essiccazione": 193,
-        "data_taglio": "2026-12-17",
-        "data_raccolta": "2026-12-17",
-        "data_essiccazione": "2027-01-01",
-        "data_concia": "2027-01-21",
-        "moltiplicatore_sole": 1.4,
-        "ore_sole_usate": 10.0
+        "giorni_a_taglio": 156,
+        "giorni_a_raccolta": 156,
+        "giorni_a_essiccazione": 171,
+        "data_taglio": "2026-11-25",
+        "data_raccolta": "2026-11-25",
+        "data_essiccazione": "2026-12-10",
+        "data_concia": "2026-12-30"
       },
       {
         "id": 10,
@@ -147,15 +131,13 @@
         "germoglio": "2026-04-22",
         "giorni_vita": 61,
         "fase": "Vegetazione",
-        "giorni_a_taglio": 192,
-        "giorni_a_raccolta": 192,
-        "giorni_a_essiccazione": 207,
-        "data_taglio": "2026-12-31",
-        "data_raccolta": "2026-12-31",
-        "data_essiccazione": "2027-01-15",
-        "data_concia": "2027-02-04",
-        "moltiplicatore_sole": 1.4,
-        "ore_sole_usate": 10.0
+        "giorni_a_taglio": 170,
+        "giorni_a_raccolta": 170,
+        "giorni_a_essiccazione": 185,
+        "data_taglio": "2026-12-09",
+        "data_raccolta": "2026-12-09",
+        "data_essiccazione": "2026-12-24",
+        "data_concia": "2027-01-13"
       },
       {
         "id": 9,
@@ -164,15 +146,13 @@
         "germoglio": "2026-04-21",
         "giorni_vita": 62,
         "fase": "Vegetazione",
-        "giorni_a_taglio": 199,
-        "giorni_a_raccolta": 199,
-        "giorni_a_essiccazione": 214,
-        "data_taglio": "2027-01-07",
-        "data_raccolta": "2027-01-07",
-        "data_essiccazione": "2027-01-22",
-        "data_concia": "2027-02-11",
-        "moltiplicatore_sole": 1.4,
-        "ore_sole_usate": 10.0
+        "giorni_a_taglio": 175,
+        "giorni_a_raccolta": 175,
+        "giorni_a_essiccazione": 190,
+        "data_taglio": "2026-12-14",
+        "data_raccolta": "2026-12-14",
+        "data_essiccazione": "2026-12-29",
+        "data_concia": "2027-01-18"
       }
     ],
     "alerts_oggi": []
