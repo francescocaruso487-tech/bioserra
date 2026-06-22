@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-20T03:30:46.062Z",
+  "lastUpdate": "2026-06-22T15:24:03.025Z",
   "versione": "1.0",
   "esperimenti_disponibili": [
     {
@@ -58,7 +58,25 @@
       "note": "Frequenza variabile a discrezione"
     }
   ],
-  "esperimenti_attivi": [],
+  "esperimenti_attivi": [
+    {
+      "id": "daily_1781667046478_0",
+      "nome": "Elettrocultura",
+      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
+      "obiettivo": "Migliorare la crescita e la resa delle piante",
+      "materiali": [
+        "Generatore di elettricità",
+        "Elettrodi"
+      ],
+      "categoria": "Tecniche di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-17",
+      "attivo": true,
+      "data_attivazione": "2026-06-22"
+    }
+  ],
   "storico_cicli": [],
   "prossimi_da_valutare": [],
   "da_valutare": [
@@ -819,22 +837,6 @@
       "fonte": "Royal Queen Seeds",
       "durata_giorni": 2,
       "data_proposta": "2026-06-16",
-      "attivo": false
-    },
-    {
-      "id": "daily_1781667046478_0",
-      "nome": "Elettrocultura",
-      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
-      "obiettivo": "Migliorare la crescita e la resa delle piante",
-      "materiali": [
-        "Generatore di elettricità",
-        "Elettrodi"
-      ],
-      "categoria": "Tecniche di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-17",
       "attivo": false
     },
     {
