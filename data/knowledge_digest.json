@@ -1,7 +1,46 @@
 {
-  "lastUpdate": "2026-06-21T06:30:19.860Z",
-  "data": "2026-06-21",
-  "guide_potenziate": [],
+  "lastUpdate": "2026-06-22T06:30:19.327Z",
+  "data": "2026-06-22",
+  "guide_potenziate": [
+    {
+      "titolo": "Irrigazione",
+      "guida_base": "Annaffia al mattino presto con acqua a temperatura ambiente",
+      "potenziamento_pdf": "Utilizzo della farina di roccia come fertilizzante naturale in sinergia con principi di elettrocultura",
+      "esperimento_suggerito": "Posiziona spirale rame nel bidone acqua 24h prima irrigazione",
+      "applicabile_oggi": true,
+      "piante_coinvolte": [
+        "Epsilon",
+        "MilkyWay",
+        "Titan",
+        "Medusa",
+        "Gaia",
+        "AstroLemonade",
+        "CosmicCheddar",
+        "OrbitalBanana",
+        "RoyalGorilla",
+        "MexicanRush"
+      ]
+    },
+    {
+      "titolo": "Nutrizione",
+      "guida_base": "Utilizza un terreno ricco di materia organica, aggiungi compost o vermicompost",
+      "potenziamento_pdf": "L'utilizzo della farina di roccia come fertilizzante naturale può avere un impatto positivo sulla struttura e sulla fertilità del suolo",
+      "esperimento_suggerito": "Aggiungi 50g farina roccia basalto per pianta questa settimana",
+      "applicabile_oggi": true,
+      "piante_coinvolte": [
+        "Epsilon",
+        "MilkyWay",
+        "Titan",
+        "Medusa",
+        "Gaia",
+        "AstroLemonade",
+        "CosmicCheddar",
+        "OrbitalBanana",
+        "RoyalGorilla",
+        "MexicanRush"
+      ]
+    }
+  ],
   "esperimenti_attivi_suggeriti": [
     {
       "nome": "Acqua Magnetizzata Lakhovsky",
@@ -36,30 +75,13 @@
         "RoyalGorilla",
         "MexicanRush"
       ]
-    },
-    {
-      "nome": "Elettrocultura",
-      "descrizione": "Utilizzare principi di elettrocultura per migliorare la crescita delle piante",
-      "urgenza": "bassa",
-      "piante": [
-        "Epsilon",
-        "MilkyWay",
-        "Titan",
-        "Medusa",
-        "Gaia",
-        "AstroLemonade",
-        "CosmicCheddar",
-        "OrbitalBanana",
-        "RoyalGorilla",
-        "MexicanRush"
-      ]
     }
   ],
-  "scoperta_del_giorno": "La combinazione della farina di roccia con l'elettrocultura potrebbe rappresentare un metodo innovativo per migliorare la salute del suolo e la crescita delle piante di cannabis",
+  "scoperta_del_giorno": "L'utilizzo della farina di roccia come fertilizzante naturale può migliorare significativamente la salute del suolo e la crescita delle piante di cannabis in serra",
   "consiglio_integrato": "Unisci guida pratica irrigazione con principio Lakhovsky: usa acqua magnetizzata pH 6.5 per massimizzare assorbimento radicale nel Living Soil",
   "connessione_inaspettata": "La farina di roccia (agricoltura organica) e la spirale cosmica rame (Lakhovsky) agiscono entrambe sulla struttura elettromagnetica del suolo potenziando la vita microbica",
   "stats": {
-    "guide": 0,
-    "esperimenti": 3
+    "guide": 2,
+    "esperimenti": 2
   }
 }
