@@ -5,16 +5,18 @@
 
 /* ── Piante di default (fisse) ── */
 const DEFAULT_PLANTS = [
-  { id:7,  name:'Epsilon F1',         type:'auto', icon:'🌸', harvestMin:90,  harvestMax:90,  idealH:18, germDate:'2026-04-21' },
-  { id:1,  name:'Milky Way F1',       type:'auto', icon:'🌙', harvestMin:106, harvestMax:106, idealH:18, germDate:'2026-04-23' },
-  { id:2,  name:'Titan F1',           type:'auto', icon:'⚡', harvestMin:106, harvestMax:106, idealH:18, germDate:'2026-04-22' },
-  { id:3,  name:'Medusa F1',          type:'auto', icon:'🪼', harvestMin:106, harvestMax:106, idealH:18, germDate:'2026-04-21' },
-  { id:8,  name:'Gaia F1',            type:'auto', icon:'🌍', harvestMin:100, harvestMax:100, idealH:18, germDate:'2026-04-21' },
-  { id:4,  name:'Astro Lemonade F1',  type:'femm', icon:'🍋', harvestMin:50,  harvestMax:60,  idealH:12, florStart:'2026-10-01', germDate:'2026-04-21' },
-  { id:11, name:'Cosmic Cheddar F1',  type:'femm', icon:'🧀', harvestMin:50,  harvestMax:60,  idealH:12, florStart:'2026-10-01', germDate:'2026-05-02' },
-  { id:6,  name:'Orbital Banana F1',  type:'femm', icon:'🍌', harvestMin:55,  harvestMax:65,  idealH:12, florStart:'2026-10-01', germDate:'2026-04-30' },
-  { id:10, name:'Royal Gorilla',       type:'femm', icon:'🦍', harvestMin:55,  harvestMax:65,  idealH:12, florStart:'2026-10-15', germDate:'2026-04-22' },
-  { id:9,  name:'Mexican Rush',        type:'femm', icon:'🌮', harvestMin:60,  harvestMax:70,  idealH:12, florStart:'2026-10-15', germDate:'2026-04-21' }
+  // harvestMin/Max = giorni dalla germinazione (dati produttore outdoor)
+  // idealH = ore di sole ottimali outdoor Caserta estate (riferimento per moltiplicatore)
+  { id:7,  name:'Epsilon F1',         type:'auto', icon:'🌸', harvestMin:60,  harvestMax:60,  idealH:14, germDate:'2026-04-21' },
+  { id:1,  name:'Milky Way F1',       type:'auto', icon:'🌙', harvestMin:70,  harvestMax:75,  idealH:14, germDate:'2026-04-23' },
+  { id:2,  name:'Titan F1',           type:'auto', icon:'⚡', harvestMin:70,  harvestMax:75,  idealH:14, germDate:'2026-04-22' },
+  { id:3,  name:'Medusa F1',          type:'auto', icon:'🪼', harvestMin:70,  harvestMax:75,  idealH:14, germDate:'2026-04-21' },
+  { id:8,  name:'Gaia F1',            type:'auto', icon:'🌍', harvestMin:65,  harvestMax:70,  idealH:14, germDate:'2026-04-21' },
+  { id:4,  name:'Astro Lemonade F1',  type:'femm', icon:'🍋', harvestMin:50,  harvestMax:60,  idealH:14, florStart:'2026-10-01', germDate:'2026-04-21' },
+  { id:11, name:'Cosmic Cheddar F1',  type:'femm', icon:'🧀', harvestMin:50,  harvestMax:60,  idealH:14, florStart:'2026-10-01', germDate:'2026-05-02' },
+  { id:6,  name:'Orbital Banana F1',  type:'femm', icon:'🍌', harvestMin:55,  harvestMax:65,  idealH:14, florStart:'2026-10-01', germDate:'2026-04-30' },
+  { id:10, name:'Royal Gorilla',       type:'femm', icon:'🦍', harvestMin:55,  harvestMax:65,  idealH:14, florStart:'2026-10-15', germDate:'2026-04-22' },
+  { id:9,  name:'Mexican Rush',        type:'femm', icon:'🌮', harvestMin:60,  harvestMax:70,  idealH:14, florStart:'2026-10-15', germDate:'2026-04-21' }
 ];
 
 /* ── Storage helpers ── */
@@ -31,7 +33,7 @@ function loadActivePlants() {
       const valid = parsed.every(p => p && p.id && p.name && p.type);
       if (!valid) throw new Error('struttura corrotta');
       // Migrazione: harvestMin molto alto = vecchio moltiplicatore (soglia 200 per non triggerare sui nuovi valori 106)
-      const needsMigration = parsed.some(p => p.type === 'auto' && p.harvestMin > 200);
+      const needsMigration = parsed.some(p => p.type === 'auto' && p.harvestMin > 80);
       // Migrazione: mancano campi nuovi (harvestMin/Max)
       const needsFieldUpdate = parsed.some(p => !p.harvestMin);
       if (needsMigration || needsFieldUpdate) {
@@ -190,8 +192,9 @@ function getAutoHarvestDate(p) {
   // Autofiorenti: data germinazione + gg produttore (nessun moltiplicatore)
   if (!p.germDate) return null;
   const germ = new Date(p.germDate);
-  const harvestMin = addDays(germ, p.harvestMin);
-  const harvestMax = addDays(germ, p.harvestMax);
+  const _sunM = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
+  const harvestMin = addDays(germ, Math.round(p.harvestMin * _sunM));
+  const harvestMax = addDays(germ, Math.round(p.harvestMax * _sunM));
   // Override manuale se impostato
   const ovr = loadPlantPhaseOverride(p.id);
   if (ovr && ovr.harvestDate) {
@@ -613,7 +616,7 @@ function renderActivePlants() {
     <div class="card" style="margin-bottom:12px;">
       <div class="card-title">☀️ Ore di sole oggi</div>
       <div style="font-size:12px;color:var(--text3);margin-bottom:8px;">
-        Indica quante ore di sole ricevono le piante. <strong>Non cambia le date di raccolta</strong> — influenza solo la nota sulla resa attesa.
+        Indica quante ore di sole ricevono le piante. <strong>Modifica le date di raccolta</strong> in base al rapporto con le ore ottimali (14h).
       </div>
       <div style="display:flex;align-items:center;gap:10px;">
         <input type="range" id="sun-hours-slider" min="1" max="14" step="0.5" value="${currentSunHours}"
@@ -641,7 +644,9 @@ function renderActivePlants() {
     if (ovr && ovr.harvestDate) {
       harvestDate = new Date(ovr.harvestDate);
     } else if (p.type === 'auto' && germ) {
-      harvestDate = addDays(germ, p.harvestMin);
+      // Moltiplica i giorni in base alle ore di sole reali vs ottimali
+      const sunMult = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
+      harvestDate = addDays(germ, Math.round(p.harvestMin * sunMult));
     } else if (p.type === 'femm') {
       const fi = getEffectiveFlorStart(p);
       harvestDate = addDays(fi.date, p.harvestMin);
@@ -649,7 +654,8 @@ function renderActivePlants() {
 
     // ── Giorni passati e totali ──
     const elapsed   = germ ? daysDiff(germ, today) : 0;
-    const totalDays = p.type === 'auto' ? p.harvestMin
+    const _sunMult2 = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
+    const totalDays = p.type === 'auto' ? Math.round(p.harvestMin * _sunMult2)
                     : (harvestDate && germ ? daysDiff(germ, harvestDate) : p.harvestMin);
     const pct       = totalDays > 0 ? Math.min(100, Math.max(0, Math.round((elapsed / totalDays) * 100))) : 0;
     const daysLeft  = harvestDate ? daysDiff(today, harvestDate) : null;
@@ -657,8 +663,10 @@ function renderActivePlants() {
     // ── Fase corrente calcolata ──
     let currentPhase = 'vegetazione', currentPhaseLabel = '🌿 Vegetazione', phaseColor = '#4caf76';
     if (p.type === 'auto' && germ) {
-      const vegEnd  = Math.round(p.harvestMin * 0.40);
-      const florEnd = Math.round(p.harvestMin * 0.85);
+      const _smPhase = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
+      const _hMin = Math.round(p.harvestMin * _smPhase);
+      const vegEnd  = Math.round(_hMin * 0.40);
+      const florEnd = Math.round(_hMin * 0.85);
       if      (elapsed < 5)       { currentPhase = 'germinazione'; currentPhaseLabel = '🌱 Germinazione'; phaseColor = '#8bc34a'; }
       else if (elapsed < vegEnd)  { currentPhase = 'vegetazione';  currentPhaseLabel = '🌿 Vegetazione';  phaseColor = '#4caf76'; }
       else if (elapsed < florEnd) { currentPhase = 'fioritura';    currentPhaseLabel = '🌸 Fioritura';    phaseColor = '#e91e8c'; }
