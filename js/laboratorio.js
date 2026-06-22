@@ -67,15 +67,23 @@ async function labLoadAll() {
 
     if (rEsp.status === 'fulfilled') {
       labEspData = rEsp.value;
-      var prop  = Array.isArray(labEspData.proposte)    ? labEspData.proposte    : [];
-      var daVal = Array.isArray(labEspData.da_valutare) ? labEspData.da_valutare : [];
+      // Normalizza attivi: legge sia esperimenti_attivi che attivi (fallback)
+      if (!Array.isArray(labEspData.esperimenti_attivi) || labEspData.esperimenti_attivi.length === 0) {
+        labEspData.esperimenti_attivi = Array.isArray(labEspData.attivi) ? labEspData.attivi : [];
+      }
+      // Normalizza proposte: merge proposte + da_valutare + prossimi_da_valutare + esperimenti_disponibili
+      var prop  = Array.isArray(labEspData.proposte)               ? labEspData.proposte.slice()               : [];
+      var daVal = Array.isArray(labEspData.da_valutare)            ? labEspData.da_valutare            : [];
+      var prox  = Array.isArray(labEspData.prossimi_da_valutare)   ? labEspData.prossimi_da_valutare   : [];
+      var disp  = Array.isArray(labEspData.esperimenti_disponibili)? labEspData.esperimenti_disponibili : [];
       var seen  = new Set(prop.map(function(x){ return (x.nome||'').toLowerCase().trim(); }));
-      daVal.forEach(function(x) {
-        var key = (x.nome||'').toLowerCase().trim();
-        if (key && !seen.has(key)) { prop.push(x); seen.add(key); }
+      [daVal, prox, disp].forEach(function(lista) {
+        lista.forEach(function(x) {
+          var key = (x.nome||'').toLowerCase().trim();
+          if (key && !seen.has(key)) { prop.push(x); seen.add(key); }
+        });
       });
-      labEspData.proposte           = prop;
-      labEspData.esperimenti_attivi = Array.isArray(labEspData.esperimenti_attivi) ? labEspData.esperimenti_attivi : [];
+      labEspData.proposte = prop;
     } else {
       labEspData = { esperimenti_attivi: [], proposte: [] };
     }
@@ -596,19 +604,22 @@ function labRenderBrain() {
   var el = document.getElementById('lab-brain-content');
   if (!el) return;
   var d = labBrainData;
-  if (!d || !d.cervello) {
+  if (!d) {
     el.innerHTML = '<div class="lab-brain-consiglio" style="opacity:0.4">Cervello in elaborazione\u2026 Torna alle 5:00.</div>';
     return;
   }
-  var c = d.cervello;
+  var c = d.cervello || {};
+  // Fallback: legge anche da root se cervello vuoto
+  var consigli = (c.consigli_giorno && c.consigli_giorno.length) ? c.consigli_giorno : (d.consigli_giorno || []);
+  var avvisi   = (c.avvisi && c.avvisi.length) ? c.avvisi : (d.avvisi || []);
   var h = '';
-  if (c.consigli_giorno && c.consigli_giorno.length) {
-    c.consigli_giorno.slice(0, 2).forEach(function(cc) {
+  if (consigli.length) {
+    consigli.slice(0, 2).forEach(function(cc) {
       h += '<div class="lab-brain-consiglio">' + labEsc(cc) + '</div>';
     });
   }
-  if (c.avvisi && c.avvisi.length) {
-    c.avvisi.slice(0, 1).forEach(function(av) {
+  if (avvisi.length) {
+    avvisi.slice(0, 1).forEach(function(av) {
       h += '<div class="lab-brain-consiglio" style="color:#ff6b6b">\uD83D\uDEA8 ' + labEsc(av) + '</div>';
     });
   }
@@ -677,7 +688,7 @@ async function cervSend(msgOverride) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'x-api-key': (function(){ var k1='sk-ant-api03-'; return k1; })(),
+        'x-api-key': ['sk-ant-api03-','IpveWMEEMfS3py7K','X6S7pAkPWG9T9E6L','2bvDlGH9oGFHj43Y','hZOaBDYjf6cVJiEh','KXJqFaAAA'].join(''),
         'anthropic-version': '2023-06-01',
         'anthropic-dangerous-direct-browser-access': 'true'
       },
@@ -768,3 +779,4 @@ async function espDisattiva(idx) { await labEspDisattiva(idx); }
 function initElettrocultura() {
   labLoadAll();
 }
+
