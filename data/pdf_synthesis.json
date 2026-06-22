@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-21T04:30:04.692Z",
+  "lastUpdate": "2026-06-22T04:30:04.268Z",
   "total_pdf_analizzati": 1,
   "connessioni": [
     {
@@ -26,6 +26,18 @@
       ],
       "difficolta": "media",
       "beneficio_atteso": "Miglioramento della salute del suolo e aumento della crescita delle piante di cannabis"
+    },
+    {
+      "pdf_a": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas",
+      "pdf_b": "non applicabile",
+      "collegamento": "L'utilizzo della farina di roccia come fertilizzante naturale può migliorare la struttura e la fertilità del suolo",
+      "principio_comune": "Il principio della sostenibilità e della naturalità nell'agricoltura",
+      "esperimento": "Applicare la farina di roccia come fertilizzante alle piante di cannabis in serra",
+      "materiali": [
+        "farina di roccia"
+      ],
+      "difficolta": "facile",
+      "beneficio_atteso": "Miglioramento della salute del suolo e della crescita delle piante"
     }
   ],
   "principi_universali": [
@@ -52,6 +64,14 @@
       "pdf_fonte": [
         "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas"
       ]
+    },
+    {
+      "principio": "Sostenibilità",
+      "descrizione": "L'uso di metodi e materiali naturali per ridurre l'impatto ambientale",
+      "applicazione_serra": "Utilizzare fertilizzanti naturali come la farina di roccia per ridurre l'uso di chimica sintetica",
+      "pdf_fonte": [
+        "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas"
+      ]
     }
   ],
   "esperimenti_incrociati": [
@@ -68,9 +88,20 @@
       "protocollo": "Applicazione della farina di roccia al suolo, seguita dall'applicazione di tecniche di elettrocultura",
       "durata": "30 giorni",
       "misurazioni": "Monitoraggio della crescita delle piante, della struttura del suolo e della presenza di nutrienti"
+    },
+    {
+      "nome": "Farina di roccia e crescita delle piante",
+      "origine": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas",
+      "protocollo": "Applicare 1 kg di farina di roccia per ogni 10 mq di terreno, misurare la crescita delle piante ogni settimana",
+      "durata": "8 settimane",
+      "misurazioni": "Altezza delle piante, produzione di foglie e fiori"
     }
   ],
   "scoperte": [
+    {
+      "data": "2026-06-22",
+      "testo": "L'utilizzo della farina di roccia come fertilizzante naturale può migliorare significativamente la salute del suolo e la crescita delle piante di cannabis in serra"
+    },
     {
       "data": "2026-06-21",
       "testo": "La combinazione della farina di roccia con l'elettrocultura potrebbe rappresentare un metodo innovativo per migliorare la salute del suolo e la crescita delle piante di cannabis"
@@ -85,9 +116,9 @@
     }
   ],
   "stats": {
-    "totale_connessioni": 2,
-    "totale_principi": 3,
-    "totale_esperimenti": 2,
+    "totale_connessioni": 3,
+    "totale_principi": 4,
+    "totale_esperimenti": 3,
     "nuovi_oggi": 1
   }
 }
