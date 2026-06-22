@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-22T15:42:38.913Z",
+  "lastUpdate": "2026-06-22T19:52:04.699Z",
   "total_pdf": 20,
   "analisi": [
     {
@@ -18,7 +18,9 @@
       ],
       "rilevanza": "alta",
       "estratto_chiave": "Farina di roccia come fertilizzante naturale",
-      "data_analisi": "2026-06-20"
+      "data_analisi": "2026-06-20",
+      "id": "pdf_0",
+      "connessioni": []
     },
     {
       "titolo": "La Forza del Cervello Quantico - Dawson Church",
@@ -35,7 +37,28 @@
       ],
       "rilevanza": "media",
       "estratto_chiave": "Cervello Quantico e consapevolezza",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_1",
+      "connessioni": [
+        {
+          "id": "pdf_5",
+          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+          "peso": 4,
+          "motivo": "consapevolezza"
+        },
+        {
+          "id": "pdf_2",
+          "titolo": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
+          "peso": 3,
+          "motivo": "consapevolezza"
+        },
+        {
+          "id": "pdf_11",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 3,
+          "motivo": "consapevolezza"
+        }
+      ]
     },
     {
       "titolo": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
@@ -52,7 +75,40 @@
       ],
       "rilevanza": "bassa",
       "estratto_chiave": "Potenzialità nascoste del cervello",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_2",
+      "connessioni": [
+        {
+          "id": "pdf_5",
+          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+          "peso": 5,
+          "motivo": "spiritualità, consapevolezza"
+        },
+        {
+          "id": "pdf_11",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 5,
+          "motivo": "spiritualità, consapevolezza"
+        },
+        {
+          "id": "pdf_1",
+          "titolo": "La Forza del Cervello Quantico - Dawson Church",
+          "peso": 3,
+          "motivo": "consapevolezza"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 2,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_12",
+          "titolo": "Book of Wisdom Volume 2 (Harry B. Joseph, Revival of Wisdom)",
+          "peso": 2,
+          "motivo": "spiritualità"
+        }
+      ]
     },
     {
       "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
@@ -69,7 +125,40 @@
       ],
       "rilevanza": "media",
       "estratto_chiave": "Conoscenza della natura e dell'universo",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_3",
+      "connessioni": [
+        {
+          "id": "pdf_4",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 2,
+          "motivo": "utilizzo di principi alchemici nella coltivazione"
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Changez votre futur par les ouvertures temporelles (Jean-Pierre Garnier Malet etc.)",
+          "peso": 2,
+          "motivo": "utilizzo di principi alchemici nella coltivazione"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 2,
+          "motivo": "utilizzo di principi alchemici nella coltivazione"
+        },
+        {
+          "id": "pdf_8",
+          "titolo": "Fondamenti di Fisica Elettrologia Magnetismo Ottica (HALLIDAY, RESNICK, WALKER)",
+          "peso": 2,
+          "motivo": "utilizzo di principi alchemici nella coltivazione"
+        },
+        {
+          "id": "pdf_9",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi",
+          "peso": 2,
+          "motivo": "utilizzo di principi alchemici nella coltivazione"
+        }
+      ]
     },
     {
       "titolo": "Antenna uomo - Tiziano-Guerzoni",
@@ -86,7 +175,40 @@
       ],
       "rilevanza": "alta",
       "estratto_chiave": "connessione uomo-energie cosmiche",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_4",
+      "connessioni": [
+        {
+          "id": "pdf_3",
+          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
+          "peso": 2,
+          "motivo": "utilizzo di antenne a terra per la serra"
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Changez votre futur par les ouvertures temporelles (Jean-Pierre Garnier Malet etc.)",
+          "peso": 2,
+          "motivo": "utilizzo di antenne a terra per la serra"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 2,
+          "motivo": "utilizzo di antenne a terra per la serra"
+        },
+        {
+          "id": "pdf_8",
+          "titolo": "Fondamenti di Fisica Elettrologia Magnetismo Ottica (HALLIDAY, RESNICK, WALKER)",
+          "peso": 2,
+          "motivo": "utilizzo di antenne a terra per la serra"
+        },
+        {
+          "id": "pdf_9",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi",
+          "peso": 2,
+          "motivo": "utilizzo di antenne a terra per la serra"
+        }
+      ]
     },
     {
       "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
@@ -104,7 +226,40 @@
       ],
       "rilevanza": "media",
       "estratto_chiave": "Vivere in armonia con se stessi e il mondo",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_5",
+      "connessioni": [
+        {
+          "id": "pdf_2",
+          "titolo": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
+          "peso": 5,
+          "motivo": "spiritualità, consapevolezza"
+        },
+        {
+          "id": "pdf_11",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 5,
+          "motivo": "spiritualità, consapevolezza"
+        },
+        {
+          "id": "pdf_16",
+          "titolo": "Angeli.-Ebraismo_-cristianesimo_-islam-_G.-Agamben_-E.-Coccia",
+          "peso": 5,
+          "motivo": "spiritualità, natura"
+        },
+        {
+          "id": "pdf_1",
+          "titolo": "La Forza del Cervello Quantico - Dawson Church",
+          "peso": 4,
+          "motivo": "consapevolezza"
+        },
+        {
+          "id": "pdf_15",
+          "titolo": "Manuale di storia delle religioni (G. Filoramo, M. Massenzio, M. Raveri etc.)",
+          "peso": 4,
+          "motivo": "spiritualità, natura"
+        }
+      ]
     },
     {
       "titolo": "Changez votre futur par les ouvertures temporelles (Jean-Pierre Garnier Malet etc.)",
@@ -121,7 +276,40 @@
       ],
       "rilevanza": "media",
       "estratto_chiave": "Sincronicità e connessione con l'universo",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_6",
+      "connessioni": [
+        {
+          "id": "pdf_3",
+          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
+          "peso": 2,
+          "motivo": "applicazione di principi olistici in serra"
+        },
+        {
+          "id": "pdf_4",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 2,
+          "motivo": "applicazione di principi olistici in serra"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 2,
+          "motivo": "applicazione di principi olistici in serra"
+        },
+        {
+          "id": "pdf_8",
+          "titolo": "Fondamenti di Fisica Elettrologia Magnetismo Ottica (HALLIDAY, RESNICK, WALKER)",
+          "peso": 2,
+          "motivo": "applicazione di principi olistici in serra"
+        },
+        {
+          "id": "pdf_9",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi",
+          "peso": 2,
+          "motivo": "applicazione di principi olistici in serra"
+        }
+      ]
     },
     {
       "titolo": "Tertium Organum (P. D. Ouspensky)",
@@ -139,7 +327,40 @@
       ],
       "rilevanza": "media",
       "estratto_chiave": "La quarta dimensione come chiave per una comprensione più profonda",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_7",
+      "connessioni": [
+        {
+          "id": "pdf_12",
+          "titolo": "Book of Wisdom Volume 2 (Harry B. Joseph, Revival of Wisdom)",
+          "peso": 4,
+          "motivo": "filosofia, spiritualità"
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+          "peso": 3,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_16",
+          "titolo": "Angeli.-Ebraismo_-cristianesimo_-islam-_G.-Agamben_-E.-Coccia",
+          "peso": 3,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_2",
+          "titolo": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
+          "peso": 2,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_3",
+          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
+          "peso": 2,
+          "motivo": "applicazione di principi olistici in agricoltura"
+        }
+      ]
     },
     {
       "titolo": "Fondamenti di Fisica Elettrologia Magnetismo Ottica (HALLIDAY, RESNICK, WALKER)",
@@ -159,7 +380,40 @@
       ],
       "rilevanza": "media",
       "estratto_chiave": "Elettrologia e magnetismo applicati all'agricoltura",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_8",
+      "connessioni": [
+        {
+          "id": "pdf_3",
+          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
+          "peso": 2,
+          "motivo": "utilizzo di campi elettromagnetici per stimolare la crescita"
+        },
+        {
+          "id": "pdf_4",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 2,
+          "motivo": "utilizzo di campi elettromagnetici per stimolare la crescita"
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Changez votre futur par les ouvertures temporelles (Jean-Pierre Garnier Malet etc.)",
+          "peso": 2,
+          "motivo": "utilizzo di campi elettromagnetici per stimolare la crescita"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 2,
+          "motivo": "utilizzo di campi elettromagnetici per stimolare la crescita"
+        },
+        {
+          "id": "pdf_9",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi",
+          "peso": 2,
+          "motivo": "utilizzo di campi elettromagnetici per stimolare la crescita"
+        }
+      ]
     },
     {
       "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi",
@@ -177,7 +431,40 @@
       ],
       "rilevanza": "media",
       "estratto_chiave": "Applicazione di principi elettrici in agricoltura",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_9",
+      "connessioni": [
+        {
+          "id": "pdf_3",
+          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
+          "peso": 2,
+          "motivo": "Utilizzo di circuiti elettrici per il controllo dell'ambiente in serra"
+        },
+        {
+          "id": "pdf_4",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 2,
+          "motivo": "Utilizzo di circuiti elettrici per il controllo dell'ambiente in serra"
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Changez votre futur par les ouvertures temporelles (Jean-Pierre Garnier Malet etc.)",
+          "peso": 2,
+          "motivo": "Utilizzo di circuiti elettrici per il controllo dell'ambiente in serra"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 2,
+          "motivo": "Utilizzo di circuiti elettrici per il controllo dell'ambiente in serra"
+        },
+        {
+          "id": "pdf_8",
+          "titolo": "Fondamenti di Fisica Elettrologia Magnetismo Ottica (HALLIDAY, RESNICK, WALKER)",
+          "peso": 2,
+          "motivo": "Utilizzo di circuiti elettrici per il controllo dell'ambiente in serra"
+        }
+      ]
     },
     {
       "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
@@ -195,7 +482,40 @@
       ],
       "rilevanza": "media",
       "estratto_chiave": "Campi elettromagnetici e crescita delle piante",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_10",
+      "connessioni": [
+        {
+          "id": "pdf_3",
+          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
+          "peso": 2,
+          "motivo": "utilizzo di campi elettromagnetici per stimolare la crescita delle piante"
+        },
+        {
+          "id": "pdf_4",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 2,
+          "motivo": "utilizzo di campi elettromagnetici per stimolare la crescita delle piante"
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Changez votre futur par les ouvertures temporelles (Jean-Pierre Garnier Malet etc.)",
+          "peso": 2,
+          "motivo": "utilizzo di campi elettromagnetici per stimolare la crescita delle piante"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 2,
+          "motivo": "utilizzo di campi elettromagnetici per stimolare la crescita delle piante"
+        },
+        {
+          "id": "pdf_8",
+          "titolo": "Fondamenti di Fisica Elettrologia Magnetismo Ottica (HALLIDAY, RESNICK, WALKER)",
+          "peso": 2,
+          "motivo": "utilizzo di campi elettromagnetici per stimolare la crescita delle piante"
+        }
+      ]
     },
     {
       "titolo": "Activating The Inner Eye (Harry B. Joseph)",
@@ -212,7 +532,40 @@
       ],
       "rilevanza": "media",
       "estratto_chiave": "Attivare il terzo occhio",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_11",
+      "connessioni": [
+        {
+          "id": "pdf_2",
+          "titolo": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
+          "peso": 5,
+          "motivo": "spiritualità, consapevolezza"
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+          "peso": 5,
+          "motivo": "spiritualità, consapevolezza"
+        },
+        {
+          "id": "pdf_1",
+          "titolo": "La Forza del Cervello Quantico - Dawson Church",
+          "peso": 3,
+          "motivo": "consapevolezza"
+        },
+        {
+          "id": "pdf_16",
+          "titolo": "Angeli.-Ebraismo_-cristianesimo_-islam-_G.-Agamben_-E.-Coccia",
+          "peso": 3,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 2,
+          "motivo": "spiritualità"
+        }
+      ]
     },
     {
       "titolo": "Book of Wisdom Volume 2 (Harry B. Joseph, Revival of Wisdom)",
@@ -229,7 +582,40 @@
       ],
       "rilevanza": "bassa",
       "estratto_chiave": "Crescita personale e connessione con la natura",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_12",
+      "connessioni": [
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 4,
+          "motivo": "spiritualità, filosofia"
+        },
+        {
+          "id": "pdf_15",
+          "titolo": "Manuale di storia delle religioni (G. Filoramo, M. Massenzio, M. Raveri etc.)",
+          "peso": 3,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_2",
+          "titolo": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
+          "peso": 2,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+          "peso": 2,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_11",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 2,
+          "motivo": "spiritualità"
+        }
+      ]
     },
     {
       "titolo": "Book of Wisdom (revival of wisdom, Harry B. Joseph)",
@@ -247,7 +633,40 @@
       ],
       "rilevanza": "media",
       "estratto_chiave": "Rinascita della saggezza",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_13",
+      "connessioni": [
+        {
+          "id": "pdf_5",
+          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+          "peso": 3,
+          "motivo": "natura"
+        },
+        {
+          "id": "pdf_16",
+          "titolo": "Angeli.-Ebraismo_-cristianesimo_-islam-_G.-Agamben_-E.-Coccia",
+          "peso": 3,
+          "motivo": "natura"
+        },
+        {
+          "id": "pdf_3",
+          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
+          "peso": 2,
+          "motivo": "applicazione di principi olistici alla coltivazione"
+        },
+        {
+          "id": "pdf_4",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 2,
+          "motivo": "applicazione di principi olistici alla coltivazione"
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Changez votre futur par les ouvertures temporelles (Jean-Pierre Garnier Malet etc.)",
+          "peso": 2,
+          "motivo": "applicazione di principi olistici alla coltivazione"
+        }
+      ]
     },
     {
       "titolo": "Manuale-Di-Magia-Nera",
@@ -261,7 +680,9 @@
       ],
       "rilevanza": "bassa",
       "estratto_chiave": "Nessun estratto disponibile",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_14",
+      "connessioni": []
     },
     {
       "titolo": "Manuale di storia delle religioni (G. Filoramo, M. Massenzio, M. Raveri etc.)",
@@ -278,7 +699,40 @@
       ],
       "rilevanza": "bassa",
       "estratto_chiave": "Armonia con la natura",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_15",
+      "connessioni": [
+        {
+          "id": "pdf_5",
+          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+          "peso": 4,
+          "motivo": "spiritualità, natura"
+        },
+        {
+          "id": "pdf_16",
+          "titolo": "Angeli.-Ebraismo_-cristianesimo_-islam-_G.-Agamben_-E.-Coccia",
+          "peso": 4,
+          "motivo": "spiritualità, natura"
+        },
+        {
+          "id": "pdf_12",
+          "titolo": "Book of Wisdom Volume 2 (Harry B. Joseph, Revival of Wisdom)",
+          "peso": 3,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_2",
+          "titolo": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
+          "peso": 2,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 2,
+          "motivo": "spiritualità"
+        }
+      ]
     },
     {
       "titolo": "Angeli.-Ebraismo_-cristianesimo_-islam-_G.-Agamben_-E.-Coccia",
@@ -295,7 +749,40 @@
       ],
       "rilevanza": "media",
       "estratto_chiave": "Connessione con la natura e il divino",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_16",
+      "connessioni": [
+        {
+          "id": "pdf_5",
+          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+          "peso": 5,
+          "motivo": "spiritualità, natura"
+        },
+        {
+          "id": "pdf_15",
+          "titolo": "Manuale di storia delle religioni (G. Filoramo, M. Massenzio, M. Raveri etc.)",
+          "peso": 4,
+          "motivo": "spiritualità, natura"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 3,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_11",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 3,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_13",
+          "titolo": "Book of Wisdom (revival of wisdom, Harry B. Joseph)",
+          "peso": 3,
+          "motivo": "natura"
+        }
+      ]
     },
     {
       "titolo": "An Agricultural Testament - Albert Howard",
@@ -312,7 +799,16 @@
       ],
       "rilevanza": "alta",
       "estratto_chiave": "Suolo vivo e gestione naturale",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_17",
+      "connessioni": [
+        {
+          "id": "pdf_19",
+          "titolo": "La luna el sol nocturno en los tropicos y su influencia en la agricultura (Jairo Restrepo Rivera)",
+          "peso": 2,
+          "motivo": "agricoltura biodinamica"
+        }
+      ]
     },
     {
       "titolo": "The Soil Biology Primer - Elaine Ingham",
@@ -329,7 +825,9 @@
       ],
       "rilevanza": "alta",
       "estratto_chiave": "Biologia del suolo per una coltivazione sostenibile",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_18",
+      "connessioni": []
     },
     {
       "titolo": "La luna el sol nocturno en los tropicos y su influencia en la agricultura (Jairo Restrepo Rivera)",
@@ -346,7 +844,22 @@
       ],
       "rilevanza": "media",
       "estratto_chiave": "Influenza della luna sui ritmi naturali",
-      "data_analisi": "2026-06-22"
+      "data_analisi": "2026-06-22",
+      "id": "pdf_19",
+      "connessioni": [
+        {
+          "id": "pdf_16",
+          "titolo": "Angeli.-Ebraismo_-cristianesimo_-islam-_G.-Agamben_-E.-Coccia",
+          "peso": 2,
+          "motivo": "utilizzo di calendari lunari per la semina e la raccolta"
+        },
+        {
+          "id": "pdf_17",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 2,
+          "motivo": "agricoltura biodinamica"
+        }
+      ]
     }
   ],
   "tecniche_nuove": [
