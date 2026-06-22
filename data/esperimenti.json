@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-22T15:24:07.368Z",
+  "lastUpdate": "2026-06-22T15:30:11.822Z",
   "versione": "1.0",
   "esperimenti_disponibili": [
     {
@@ -90,6 +90,24 @@
       "difficolta": "Medio",
       "fonte": "Guide di coltivazione della cannabis",
       "durata_giorni": 21,
+      "data_proposta": "2026-06-16",
+      "attivo": true,
+      "data_attivazione": "2026-06-22"
+    },
+    {
+      "id": "daily_1781640436681_0",
+      "nome": "Tecnica di irrigazione a goccia",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
+      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di cannabis",
+      "materiali": [
+        "tubazioni",
+        "gocciolatori",
+        "valvole"
+      ],
+      "categoria": "irrigazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
       "data_proposta": "2026-06-16",
       "attivo": true,
       "data_attivazione": "2026-06-22"
@@ -858,23 +876,6 @@
       "attivo": false
     },
     {
-      "id": "daily_1781640436681_0",
-      "nome": "Tecnica di irrigazione a goccia",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
-      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di cannabis",
-      "materiali": [
-        "tubazioni",
-        "gocciolatori",
-        "valvole"
-      ],
-      "categoria": "irrigazione",
-      "difficolta": "medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-16",
-      "attivo": false
-    },
-    {
       "id": "daily_1781640025709_3",
       "nome": "Introduzione di micorrize",
       "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della cannabis",
@@ -1546,6 +1547,39 @@
       "data_proposta": "2026-06-20",
       "attivo": false,
       "data_attivazione": null
+    },
+    {
+      "id": "daily_1781667046478_0",
+      "nome": "Elettrocultura",
+      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
+      "obiettivo": "Migliorare la crescita e la resa delle piante",
+      "materiali": [
+        "Generatore di elettricità",
+        "Elettrodi"
+      ],
+      "categoria": "Tecniche di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-17",
+      "attivo": false
+    },
+    {
+      "id": "daily_1781640224648_2",
+      "nome": "Sistema di irrigazione a goccia con fertilizzanti",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
+      "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
+      "materiali": [
+        "Sistema di irrigazione a goccia",
+        "Fertilizzanti specifici per la cannabis",
+        "Tubi e connettori"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 21,
+      "data_proposta": "2026-06-16",
+      "attivo": false
     }
   ],
   "attivi": [],
