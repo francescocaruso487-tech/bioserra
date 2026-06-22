@@ -1,80 +1,86 @@
 {
-  "lastUpdate": "2026-06-21T03:00:26.248Z",
+  "lastUpdate": "2026-06-22T03:00:29.531Z",
   "versione": "4.0",
   "cervello": {
     "consigli_giorno": [
-      "Controllare l'umidità e la temperatura nella serra per garantire condizioni ottimali per le piante"
+      "Controllare la temperatura e l'umidità nella serra per garantire condizioni ottimali per le piante",
+      "Verificare lo stato di crescita delle piante e apportare eventuali correzioni"
     ],
     "consigli_piante": {
-      "autofiorenti": "Fornire supporto alle piante più alte per evitare che si rompano",
-      "femminizzate": "Verificare lo stato di crescita e pianificare la potatura se necessario"
+      "autofiorenti": "Controllare la lunghezza dei giorni di luce per ottimizzare la fioritura",
+      "femminizzate": "Iniziare a pensare alla potatura per favorire una crescita uniforme"
     },
     "tecniche_nuove": [
       {
-        "nome": "Tecnica di respirazione radicale",
-        "descrizione": "Tecnica per migliorare la crescita radicale delle piante",
+        "nome": "Tecnica di respirazione delle piante",
+        "descrizione": "Tecnica per migliorare la respirazione delle piante",
         "materiali": [
-          "Ossigeno",
-          "Acqua"
+          "ossigeno",
+          "anidride carbonica"
         ],
         "difficolta": "facile",
         "fonte": "Royal Queen Seeds"
       }
     ],
     "scoperte": [
-      "La luna nel primo quarto può influenzare la crescita delle piante, quindi è importante monitorarle con attenzione"
+      "La luna è nel primo quarto, il che potrebbe influenzare la crescita delle piante",
+      "Le piante sembrano rispondere bene alle tecniche di coltivazione attuali"
     ],
     "avvisi": [
-      "Controllare le piante per eventuali segni di malattie o parassiti"
+      "Attenzione alla presenza di parassiti o malattie nelle piante",
+      "Verificare l'integrità della serra e dei suoi componenti"
     ]
   },
   "agenti": {
     "piante": {
       "stato_generale": "in monitoraggio",
-      "irrigazione": "Irrigare le piante tra le 8 e le 10 del mattino con circa 2 litri di acqua per pianta",
-      "nutrizione": "Aggiungere un integratore di azoto e potassio alle piante autofiorenti",
-      "attenzione": "Fornire supporto alle piante più alte per evitare che si rompano",
+      "irrigazione": "Irrigare le piante ogni 2 giorni, con circa 1 litro d'acqua per pianta",
+      "nutrizione": "Aggiungere un fertilizzante equilibrato per favorire la crescita sana delle piante",
+      "attenzione": "Controllare la lunghezza dei giorni di luce per ottimizzare la fioritura",
       "piante_critiche": []
     },
     "ambiente": {
       "luna": {
         "fase": "Primo Quarto",
         "emoji": "🌓",
-        "illuminazione_pct": 34,
+        "illuminazione_pct": 45,
         "consiglio": "Luna calante."
       },
       "biodinamica": {
-        "tipo_giorno": "Radice",
-        "qualita": "Buono",
-        "consiglio": "Ideale per lavorazione terreno e concimazione."
+        "tipo_giorno": "Fiore",
+        "qualita": "Ottimo",
+        "consiglio": "Perfetto per trattamenti fogliari."
       },
       "ore_luce": 15,
-      "correlazione": "Primo Quarto + Giorno Radice",
+      "correlazione": "Primo Quarto + Giorno Fiore",
       "momento_migliore": "pomeriggio"
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare il funzionamento della pila galvanica Fe-Cu e della spirale cosmica"
+        "Verifica del sistema Lakhovsky per assicurarsi che sia funzionante correttamente",
+        "Controllo della pila galvanica Fe-Cu per garantire la presenza di elettricità"
       ],
       "ottimizzazione": "Ottimizza in base alla fase Primo Quarto"
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Tecnica di respirazione radicale",
-      "descrizione": "Tecnica per migliorare la crescita radicale delle piante",
+      "nome": "Tecnica di respirazione delle piante",
+      "descrizione": "Tecnica per migliorare la respirazione delle piante",
       "materiali": [
-        "Ossigeno",
-        "Acqua"
+        "ossigeno",
+        "anidride carbonica"
       ],
       "difficolta": "facile",
       "fonte": "Royal Queen Seeds"
     }
   ],
   "avvisi": [
-    "Controllare le piante per eventuali segni di malattie o parassiti"
+    "Attenzione alla presenza di parassiti o malattie nelle piante",
+    "Verificare l'integrità della serra e dei suoi componenti"
   ],
   "consigli_giorno": [
-    "Controllare l'umidità e la temperatura nella serra per garantire condizioni ottimali per le piante"
+    "Controllare la temperatura e l'umidità nella serra per garantire condizioni ottimali per le piante",
+    "Verificare lo stato di crescita delle piante e apportare eventuali correzioni"
   ]
 }
