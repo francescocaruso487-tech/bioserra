@@ -1,11 +1,11 @@
-/* BioSerra - laboratorio.js — Schermata Unica Laboratorio */
+/* BioSerra - laboratorio.js — Tech Lab v2 */
 
 /* ══════════════════════════════════════════════════════════════
-   POPUP OVERLAY UNIVERSALE
+   POPUP OVERLAY
 ══════════════════════════════════════════════════════════════ */
 
 function labPopupOpen(html) {
-  var ov = document.getElementById('lab-popup-overlay');
+  var ov  = document.getElementById('lab-popup-overlay');
   var box = document.getElementById('lab-popup-box');
   if (!ov || !box) return;
   box.innerHTML = html;
@@ -27,12 +27,12 @@ function labEsc(s) {
    STATO GLOBALE
 ══════════════════════════════════════════════════════════════ */
 
-var labElTecniche   = [];
-var labEspData      = null;
-var labPdfData      = null;
-var labGuideData    = [];
-var labDigestData   = null;
-var labBrainData    = null;
+var labElTecniche = [];
+var labEspData    = null;
+var labPdfData    = null;
+var labGuideData  = [];
+var labDigestData = null;
+var labBrainData  = null;
 
 var _tk1 = 'ghp_dtR2oWiOCz8XGENXd2uTm';
 var _tk2 = 'rj40Nj8As1xVqMD';
@@ -41,11 +41,11 @@ var LAB_API   = 'https://api.github.com/repos/francescocaruso487-tech/bioserra/c
 var LAB_RAW   = 'https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/';
 
 /* ══════════════════════════════════════════════════════════════
-   1. CARICAMENTO DATI
+   CARICAMENTO DATI
 ══════════════════════════════════════════════════════════════ */
 
 async function labLoadAll() {
-  labSetStatus('lab-load-status', '⏳ Sincronizzazione dati…');
+  labSetStatus('lab-load-status', '\u23F3 SYNC…');
   var ts = '?v=' + Date.now();
   try {
     var [rEl, rEsp, rPdf, rGuide, rDigest, rBrain] = await Promise.allSettled([
@@ -57,16 +57,14 @@ async function labLoadAll() {
       fetch(LAB_RAW + 'brain.json'             + ts).then(function(r){ return r.json(); })
     ]);
 
-    /* Tecniche: il JSON usa tecniche_base (non tecniche) */
     if (rEl.status === 'fulfilled') {
       var elRaw = rEl.value;
-      var base  = Array.isArray(elRaw.tecniche_base)     ? elRaw.tecniche_base     : [];
-      var extra = Array.isArray(elRaw.tecniche_aggiuntive) ? elRaw.tecniche_aggiuntive : [];
-      var tec   = Array.isArray(elRaw.tecniche)          ? elRaw.tecniche          : [];
+      var base  = Array.isArray(elRaw.tecniche_base)        ? elRaw.tecniche_base        : [];
+      var extra = Array.isArray(elRaw.tecniche_aggiuntive)  ? elRaw.tecniche_aggiuntive  : [];
+      var tec   = Array.isArray(elRaw.tecniche)             ? elRaw.tecniche             : [];
       labElTecniche = base.concat(extra).concat(tec);
     }
 
-    /* Esperimenti: deduplicazione proposte + da_valutare per nome */
     if (rEsp.status === 'fulfilled') {
       labEspData = rEsp.value;
       var prop  = Array.isArray(labEspData.proposte)    ? labEspData.proposte    : [];
@@ -76,7 +74,7 @@ async function labLoadAll() {
         var key = (x.nome||'').toLowerCase().trim();
         if (key && !seen.has(key)) { prop.push(x); seen.add(key); }
       });
-      labEspData.proposte          = prop;
+      labEspData.proposte           = prop;
       labEspData.esperimenti_attivi = Array.isArray(labEspData.esperimenti_attivi) ? labEspData.esperimenti_attivi : [];
     } else {
       labEspData = { esperimenti_attivi: [], proposte: [] };
@@ -89,7 +87,7 @@ async function labLoadAll() {
 
     labSetStatus('lab-load-status', '');
   } catch(e) {
-    labSetStatus('lab-load-status', '⚠️ Errore caricamento — riprova');
+    labSetStatus('lab-load-status', '\u26A0\uFE0F ERRORE SYNC');
   }
 
   labRenderDigest();
@@ -98,6 +96,7 @@ async function labLoadAll() {
   labRenderPdf();
   labRenderGuide();
   labRenderBrain();
+  labUpdateBadges();
 }
 
 function labSetStatus(id, txt) {
@@ -105,71 +104,110 @@ function labSetStatus(id, txt) {
   if (el) el.textContent = txt;
 }
 
+function labUpdateBadges() {
+  var bTec  = document.getElementById('badge-tec');
+  var bEsp  = document.getElementById('badge-esp');
+  var bPdf  = document.getElementById('badge-pdf');
+  var bBrain= document.getElementById('badge-brain');
+  if (bTec && labElTecniche.length) {
+    bTec.textContent = labElTecniche.length;
+    bTec.classList.add('show');
+  }
+  if (bEsp && labEspData) {
+    var na = labEspData.esperimenti_attivi.length;
+    if (na) { bEsp.textContent = na; bEsp.classList.add('show'); }
+  }
+  if (bPdf && labPdfData && labPdfData.analisi) {
+    bPdf.textContent = labPdfData.analisi.length;
+    bPdf.classList.add('show');
+  }
+  if (bBrain && labBrainData && labBrainData.cervello && labBrainData.cervello.avvisi && labBrainData.cervello.avvisi.length) {
+    bBrain.textContent = '!';
+    bBrain.classList.add('show');
+  }
+}
+
 /* ══════════════════════════════════════════════════════════════
-   2. RENDER — KNOWLEDGE DIGEST (card IN CIMA)
+   RENDER — KNOWLEDGE DIGEST (compatto in card campo)
 ══════════════════════════════════════════════════════════════ */
 
 function labRenderDigest() {
   var el = document.getElementById('lab-digest-content');
   if (!el) return;
   var d = labDigestData;
-  if (!d) { el.innerHTML = '<div style="color:var(--text3);font-size:12px;padding:8px">Digest in preparazione…</div>'; return; }
+  if (!d) {
+    el.innerHTML = '<div class="lab-digest-compact" style="opacity:0.4">Digest in preparazione\u2026</div>';
+    return;
+  }
   var h = '';
   if (d.consiglio_integrato) {
-    h += '<div style="background:linear-gradient(135deg,rgba(74,175,94,0.15),rgba(74,175,94,0.04));border-left:3px solid var(--green2);border-radius:0 10px 10px 0;padding:12px;margin-bottom:10px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--green2);margin-bottom:4px;letter-spacing:.5px">🌟 CONSIGLIO INTEGRATO DI OGGI</div>';
-    h += '<div style="font-size:13px;color:var(--text);line-height:1.7">' + labEsc(d.consiglio_integrato) + '</div>';
-    h += '</div>';
+    h += '<div class="lab-digest-compact">' + labEsc(d.consiglio_integrato) + '</div>';
   }
-  var riga = '';
-  if (d.scoperta_del_giorno) riga += '<span style="font-size:12px;color:var(--text2)">💡 ' + labEsc(d.scoperta_del_giorno) + '</span>';
-  if (d.connessione_inaspettata) {
-    if (riga) riga += '<br>';
-    riga += '<span style="font-size:12px;color:#9b6dff">✨ ' + labEsc(d.connessione_inaspettata) + '</span>';
+  if (d.scoperta_del_giorno) {
+    h += '<div class="lab-digest-scoperta">\u2728 ' + labEsc(d.scoperta_del_giorno) + '</div>';
   }
-  if (riga) h += '<div style="padding:8px 0;line-height:1.8">' + riga + '</div>';
-  if (!h) h = '<div style="color:var(--text3);font-size:12px">Digest aggiornato ogni mattina alle 8:30.</div>';
+  if (!h) h = '<div class="lab-digest-compact" style="opacity:0.4">Digest aggiornato ogni mattina alle 8:30.</div>';
   el.innerHTML = h;
 }
 
+/* ── Popup digest completo ── */
+function labPopupAllDigest() {
+  var d = labDigestData;
+  if (!d) { labPopupOpen('<div style="color:rgba(0,180,255,0.5);padding:20px;text-align:center">Digest in caricamento\u2026</div>'); return; }
+  var h = '<div style="font-size:10px;color:var(--el-blue);font-weight:700;letter-spacing:1px;margin-bottom:12px">\u2605 KNOWLEDGE DIGEST</div>';
+  if (d.consiglio_integrato) {
+    h += '<div style="background:linear-gradient(135deg,rgba(0,180,255,0.08),rgba(155,109,255,0.08));border-left:2px solid var(--el-blue);padding:12px;border-radius:0 10px 10px 0;margin-bottom:14px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:6px">CONSIGLIO INTEGRATO</div>';
+    h += '<div style="font-size:13px;color:var(--text);line-height:1.7">' + labEsc(d.consiglio_integrato) + '</div>';
+    h += '</div>';
+  }
+  if (d.scoperta_del_giorno) {
+    h += '<div style="background:rgba(0,229,255,0.06);border-radius:10px;padding:10px;margin-bottom:10px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-cyan);margin-bottom:4px">\u2728 SCOPERTA DEL GIORNO</div>';
+    h += '<div style="font-size:13px;color:var(--text2);line-height:1.6">' + labEsc(d.scoperta_del_giorno) + '</div>';
+    h += '</div>';
+  }
+  if (d.connessione_inaspettata) {
+    h += '<div style="background:rgba(155,109,255,0.06);border-radius:10px;padding:10px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-violet);margin-bottom:4px">\u26A1 CONNESSIONE INASPETTATA</div>';
+    h += '<div style="font-size:13px;color:var(--text2);line-height:1.6">' + labEsc(d.connessione_inaspettata) + '</div>';
+    h += '</div>';
+  }
+  labPopupOpen(h);
+}
+
 /* ══════════════════════════════════════════════════════════════
-   3. RENDER — TECNICHE ELETTROCULTURA
+   RENDER — TECNICHE (mini lista, max 4 in campo)
 ══════════════════════════════════════════════════════════════ */
 
 function labRenderTecniche() {
   var el = document.getElementById('lab-tec-lista');
   if (!el) return;
-  if (labElTecniche.length === 0) {
-    el.innerHTML = '<div style="text-align:center;padding:20px 10px;color:var(--text3);font-size:13px">🧠 Il Cervello AI aggiunge tecniche ogni giorno analizzando i PDF.<br>Torna domani!</div>';
+  if (!labElTecniche.length) {
+    el.innerHTML = '<div style="color:rgba(0,180,255,0.35);font-size:12px;padding:6px">Nessuna tecnica caricata. Il Cervello le aggiunge ogni giorno.</div>';
     return;
   }
   var elGlobale = {};
   try { elGlobale = JSON.parse(localStorage.getItem('el_globale') || '{}'); } catch(e) {}
-  var h = '';
-  labElTecniche.forEach(function(t, idx) {
+  var h = '<div class="lab-tec-mini">';
+  var mostrati = labElTecniche.slice(0, 4);
+  mostrati.forEach(function(t, idx) {
     var tid = t.id || t.nome || idx;
     var attiva = elGlobale[tid] || false;
-    var catColor = t.categoria === 'cosmica' ? '#9b6dff' : t.categoria === 'galvanica' ? '#f0a500' : t.categoria === 'magnetica' ? '#4a9eff' : 'var(--green2)';
-    h += '<div style="background:var(--card2);border-radius:12px;padding:14px;margin-bottom:10px;border-left:3px solid ' + catColor + ';cursor:pointer" onclick="labPopupTecnica(' + idx + ')">';
-    h += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px">';
+    h += '<div class="lab-tec-mini-item" onclick="labPopupTecnica(' + idx + ')">';
     h += '<div style="flex:1">';
-    h += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">';
-    h += '<div style="font-size:14px;font-weight:700;color:var(--text)">' + labEsc(t.nome || tid) + '</div>';
-    if (t.categoria) h += '<span style="font-size:10px;background:rgba(74,175,94,0.12);color:' + catColor + ';padding:2px 7px;border-radius:20px;white-space:nowrap">' + labEsc(t.categoria) + '</span>';
+    h += '<div class="lab-tec-mini-name">' + labEsc(t.nome || tid) + '</div>';
+    if (t.categoria) h += '<div class="lab-tec-mini-cat">' + labEsc(t.categoria) + '</div>';
     h += '</div>';
-    if (t.descrizione || t.desc) {
-      var desc = t.descrizione || t.desc;
-      h += '<div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:6px">' + labEsc((desc+'').substring(0,120)) + (desc.length>120?'…':'') + '</div>';
-    }
-    h += '<div style="font-size:11px;color:var(--text3)">📖 Tocca per vedere istruzioni complete</div>';
+    h += '<div onclick="event.stopPropagation()" style="margin-left:10px">';
+    h += '<label class="toggle-sw"><input type="checkbox" ' + (attiva ? 'checked' : '') + ' onchange="labToggleTec(\'' + String(tid).replace(/'/g,'') + '\',this.checked)"><span class="toggle-slider"></span></label>';
     h += '</div>';
-    h += '<div onclick="event.stopPropagation()">';
-    h += '<label class="toggle-sw" style="flex-shrink:0">';
-    h += '<input type="checkbox" ' + (attiva?'checked':'') + ' onchange="labToggleTec(\'' + String(tid).replace(/'/g,'') + '\',this.checked)">';
-    h += '<span class="toggle-slider"></span></label>';
     h += '</div>';
-    h += '</div></div>';
   });
+  h += '</div>';
+  if (labElTecniche.length > 4) {
+    h += '<div class="lab-tec-vedi-tutti" onclick="labPopupAllTecniche()">\u25BC vedi tutte (' + labElTecniche.length + ')</div>';
+  }
   el.innerHTML = h;
 }
 
@@ -180,178 +218,193 @@ function labToggleTec(tid, val) {
   try { localStorage.setItem('el_globale', JSON.stringify(elGlobale)); } catch(e) {}
 }
 
+/* Popup singola tecnica */
 function labPopupTecnica(idx) {
   var t = labElTecniche[idx];
   if (!t) return;
-  var catColor = t.categoria === 'cosmica' ? '#9b6dff' : t.categoria === 'galvanica' ? '#f0a500' : t.categoria === 'magnetica' ? '#4a9eff' : 'var(--green2)';
-  var h = '';
-  h += '<div style="font-size:11px;color:' + catColor + ';font-weight:700;margin-bottom:4px;letter-spacing:.5px">⚡ ' + labEsc((t.categoria||'elettrocultura')).toUpperCase() + '</div>';
-  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(t.nome||'') + '</div>';
+  var catColor = t.categoria === 'cosmica' ? 'var(--el-violet)' : t.categoria === 'galvanica' ? '#f0a500' : t.categoria === 'magnetica' ? 'var(--el-blue)' : 'var(--el-cyan)';
+  var h = '<div style="font-size:10px;color:' + catColor + ';font-weight:700;letter-spacing:1px;margin-bottom:4px">\u26A1 ' + labEsc((t.categoria || 'elettrocultura')).toUpperCase() + '</div>';
+  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(t.nome || '') + '</div>';
   if (t.descrizione || t.desc) {
-    h += '<div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:14px">' + labEsc(t.descrizione||t.desc||'') + '</div>';
+    h += '<div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:14px">' + labEsc(t.descrizione || t.desc || '') + '</div>';
   }
   if (t.istruzioni && t.istruzioni.length) {
-    h += '<div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:8px">📋 Come farla:</div>';
+    h += '<div style="font-size:11px;font-weight:700;color:var(--el-blue);margin-bottom:8px;letter-spacing:0.5px">ISTRUZIONI:</div>';
     t.istruzioni.forEach(function(step, i) {
       h += '<div style="display:flex;gap:10px;margin-bottom:8px;align-items:flex-start">';
-      h += '<div style="min-width:22px;height:22px;background:' + catColor + ';border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;flex-shrink:0">' + (i+1) + '</div>';
+      h += '<div style="min-width:22px;height:22px;background:' + catColor + ';border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#000;flex-shrink:0">' + (i + 1) + '</div>';
       h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(step) + '</div>';
       h += '</div>';
     });
   }
   if (t.materiali && t.materiali.length) {
-    h += '<div style="background:var(--bg3);border-radius:10px;padding:10px;margin-top:10px">';
-    h += '<div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px">🛠 Materiali:</div>';
-    t.materiali.forEach(function(m) {
-      h += '<div style="font-size:12px;color:var(--text2);padding:2px 0">• ' + labEsc(m) + '</div>';
-    });
+    h += '<div style="background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.15);border-radius:10px;padding:10px;margin-top:10px">';
+    h += '<div style="font-size:11px;font-weight:700;color:var(--el-blue);margin-bottom:6px">\uD83D\uDEE0 MATERIALI:</div>';
+    t.materiali.forEach(function(m) { h += '<div style="font-size:12px;color:var(--text2);padding:2px 0">\u2022 ' + labEsc(m) + '</div>'; });
     h += '</div>';
   }
   if (t.difficolta) {
-    var diff = t.difficolta === 'facile' ? '🟢 Facile' : t.difficolta === 'media' ? '🟡 Media' : '🔴 Difficile';
-    h += '<div style="margin-top:10px;font-size:12px;color:var(--text3)">Difficoltà: <strong>' + diff + '</strong></div>';
-  }
-  if (t.fonte) {
-    h += '<div style="margin-top:6px;font-size:11px;color:var(--text3)">🤖 Fonte: ' + labEsc(t.fonte) + '</div>';
+    var diff = t.difficolta === 'facile' ? '\uD83D\uDFE2 Facile' : t.difficolta === 'media' ? '\uD83D\uDFE1 Media' : '\uD83D\uDD34 Difficile';
+    h += '<div style="margin-top:10px;font-size:12px;color:var(--text3)">Difficolt\u00E0: <strong>' + diff + '</strong></div>';
   }
   if (t.sperimentale) {
-    h += '<div style="margin-top:10px;background:rgba(155,109,255,0.1);border:1px solid rgba(155,109,255,0.3);border-radius:8px;padding:8px;font-size:11px;color:#9b6dff">🔬 Tecnica sperimentale — risultati non garantiti, documentare osservazioni.</div>';
+    h += '<div style="margin-top:10px;background:rgba(155,109,255,0.1);border:1px solid rgba(155,109,255,0.3);border-radius:8px;padding:8px;font-size:11px;color:var(--el-violet)">\uD83D\uDD2C Tecnica sperimentale \u2014 documentare osservazioni.</div>';
   }
+  labPopupOpen(h);
+}
+
+/* Popup tutte le tecniche */
+function labPopupAllTecniche() {
+  if (!labElTecniche.length) {
+    labPopupOpen('<div style="color:rgba(0,180,255,0.4);padding:20px;text-align:center">Nessuna tecnica disponibile.</div>');
+    return;
+  }
+  var elGlobale = {};
+  try { elGlobale = JSON.parse(localStorage.getItem('el_globale') || '{}'); } catch(e) {}
+  var h = '<div style="font-size:10px;color:var(--el-blue);font-weight:700;letter-spacing:1px;margin-bottom:14px">\u26A1 TUTTE LE TECNICHE (' + labElTecniche.length + ')</div>';
+  labElTecniche.forEach(function(t, idx) {
+    var tid = t.id || t.nome || idx;
+    var attiva = elGlobale[tid] || false;
+    var catColor = t.categoria === 'cosmica' ? 'var(--el-violet)' : t.categoria === 'galvanica' ? '#f0a500' : t.categoria === 'magnetica' ? 'var(--el-blue)' : 'var(--el-cyan)';
+    h += '<div style="background:rgba(0,180,255,0.04);border:1px solid rgba(0,180,255,0.12);border-radius:12px;padding:12px;margin-bottom:8px">';
+    h += '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px">';
+    h += '<div style="flex:1;cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupTecnica(' + idx + ');},50)">';
+    h += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:2px">' + labEsc(t.nome || tid) + '</div>';
+    if (t.categoria) h += '<div style="font-size:10px;color:' + catColor + '">' + labEsc(t.categoria) + '</div>';
+    h += '</div>';
+    h += '<label class="toggle-sw" onclick="event.stopPropagation()"><input type="checkbox" ' + (attiva ? 'checked' : '') + ' onchange="labToggleTec(\'' + String(tid).replace(/'/g,'') + '\',this.checked)"><span class="toggle-slider"></span></label>';
+    h += '</div></div>';
+  });
   labPopupOpen(h);
 }
 
 /* ══════════════════════════════════════════════════════════════
-   4. RENDER — ESPERIMENTI (attivi + da valutare, no doppioni)
+   RENDER — ESPERIMENTI (mini: solo attivi in campo)
 ══════════════════════════════════════════════════════════════ */
 
 function labRenderEsperimenti() {
-  labRenderEspAttivi();
-  labRenderEspProposte();
+  labRenderEspAttiviMini();
   var na = labEspData ? labEspData.esperimenti_attivi.length : 0;
   var np = labEspData ? labEspData.proposte.length : 0;
   var badge = document.getElementById('lab-esp-badge');
-  if (badge) badge.textContent = na + ' attivi · ' + np + ' proposte';
+  if (badge) badge.textContent = na + ' attivi \u00B7 ' + np + ' proposte';
 }
 
-function labRenderEspAttivi() {
+function labRenderEspAttiviMini() {
   var el = document.getElementById('lab-esp-attivi');
   if (!el) return;
   var lista = labEspData ? labEspData.esperimenti_attivi : [];
   if (!lista.length) {
-    el.innerHTML = '<div style="text-align:center;padding:14px;color:var(--text3);font-size:12px">Nessun esperimento attivo.<br>Attivane uno dalle proposte qui sotto!</div>';
+    el.innerHTML = '<div style="color:rgba(76,175,118,0.4);font-size:12px;padding:6px">Nessun esperimento attivo. Tocca \u201cGestisci\u203A\u201d per attivarne uno.</div>';
     return;
   }
   var h = '';
   lista.forEach(function(exp, idx) {
-    h += '<div style="background:rgba(74,175,94,0.08);border:1px solid rgba(74,175,94,0.25);border-radius:12px;padding:13px;margin-bottom:10px">';
-    h += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">';
-    h += '<div style="flex:1;cursor:pointer" onclick="labPopupEsp(\'' + (labEspData.esperimenti_attivi.indexOf(exp)) + '\',\'attivo\')">';
-    h += '<div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">✅ ' + labEsc(exp.nome||exp.id||'') + '</div>';
-    if (exp.obiettivo) h += '<div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:4px">' + labEsc(exp.obiettivo) + '</div>';
-    if (exp.categoria) h += '<span style="font-size:10px;background:rgba(74,175,94,0.15);color:var(--green2);padding:2px 8px;border-radius:20px">' + labEsc(exp.categoria) + '</span>';
+    h += '<div class="lab-esp-mini-item" onclick="labPopupEsp(' + idx + ',\'attivo\')">';
+    h += '<div class="lab-esp-mini-name">\u2705 ' + labEsc(exp.nome || exp.id || '') + '</div>';
+    if (exp.categoria) h += '<div class="lab-esp-mini-badge">' + labEsc(exp.categoria) + '</div>';
     h += '</div>';
-    h += '<button onclick="labEspDisattiva(' + idx + ')" style="background:rgba(224,82,82,0.1);border:1px solid rgba(224,82,82,0.3);border-radius:8px;padding:6px 10px;color:#e05252;font-size:11px;cursor:pointer;white-space:nowrap;flex-shrink:0">Disattiva</button>';
-    h += '</div></div>';
   });
   el.innerHTML = h;
 }
 
-function labRenderEspProposte() {
-  var el = document.getElementById('lab-esp-proposte');
-  if (!el) return;
-  var lista = labEspData ? labEspData.proposte : [];
-  if (!lista.length) {
-    el.innerHTML = '<div style="text-align:center;padding:14px;color:var(--text3);font-size:12px">🧠 Il Cervello aggiunge proposte ogni giorno analizzando PDF e siti web.</div>';
+/* Popup gestione esperimenti (attivi + proposte) */
+function labPopupAllEsperimenti() {
+  if (!labEspData) {
+    labPopupOpen('<div style="color:rgba(76,175,118,0.4);padding:20px;text-align:center">Caricamento\u2026</div>');
     return;
   }
-  var h = '';
-  lista.forEach(function(exp, idx) {
-    var diff = exp.difficolta === 'facile' ? '#4aaf5e' : exp.difficolta === 'media' ? '#f0a500' : exp.difficolta === 'difficile' ? '#e05252' : 'var(--text3)';
-    h += '<div style="background:var(--card2);border-radius:12px;padding:13px;margin-bottom:10px">';
-    h += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">';
-    h += '<div style="flex:1;cursor:pointer" onclick="labPopupEsp(' + idx + ',\'proposta\')">';
-    h += '<div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">' + labEsc(exp.nome||exp.id||'') + '</div>';
-    if (exp.obiettivo || exp.descrizione) {
-      var testo = exp.obiettivo || exp.descrizione || '';
-      h += '<div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:6px">' + labEsc((testo+'').substring(0,100)) + (testo.length>100?'…':'') + '</div>';
-    }
-    h += '<div style="display:flex;gap:6px;flex-wrap:wrap">';
-    if (exp.categoria) h += '<span style="font-size:10px;background:var(--bg3);color:var(--text3);padding:2px 8px;border-radius:20px">' + labEsc(exp.categoria) + '</span>';
-    if (exp.difficolta) h += '<span style="font-size:10px;color:' + diff + ';padding:2px 8px;border-radius:20px;background:rgba(0,0,0,0.15)">' + labEsc(exp.difficolta) + '</span>';
-    if (exp.fonte) h += '<span style="font-size:10px;color:var(--text3)">🤖 ' + labEsc(exp.fonte) + '</span>';
-    h += '</div>';
-    h += '<div style="font-size:11px;color:var(--text3);margin-top:4px">📖 Tocca per dettagli completi</div>';
-    h += '</div>';
-    h += '<button onclick="labEspAttiva(' + idx + ')" style="background:var(--green2);border:none;border-radius:8px;padding:7px 12px;color:var(--bg);font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0">Attiva</button>';
-    h += '</div></div>';
-  });
-  el.innerHTML = h;
-}
-
-function labPopupEsp(idx, tipo) {
-  var exp = tipo === 'attivo' ? (labEspData && labEspData.esperimenti_attivi[idx]) : (labEspData && labEspData.proposte[idx]);
-  if (!exp) return;
-  var h = '';
-  if (tipo === 'attivo') h += '<div style="font-size:11px;color:var(--green2);font-weight:700;margin-bottom:4px">✅ ESPERIMENTO ATTIVO</div>';
-  else h += '<div style="font-size:11px;color:var(--text3);font-weight:700;margin-bottom:4px">💡 PROPOSTA</div>';
-  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(exp.nome||'') + '</div>';
-  if (exp.descrizione) {
-    h += '<div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px">' + labEsc(exp.descrizione) + '</div>';
-  }
-  if (exp.obiettivo) {
-    h += '<div style="background:rgba(74,175,94,0.08);border-radius:10px;padding:10px;margin-bottom:12px">';
-    h += '<div style="font-size:11px;font-weight:700;color:var(--green2);margin-bottom:4px">🎯 Obiettivo</div>';
-    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(exp.obiettivo) + '</div>';
-    h += '</div>';
-  }
-  if (exp.come_applicare) {
-    h += '<div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:8px">📋 Come applicare:</div>';
-    h += '<div style="font-size:12px;color:var(--text2);line-height:1.7;margin-bottom:12px">' + labEsc(exp.come_applicare) + '</div>';
-  }
-  if (exp.materiali && exp.materiali.length) {
-    h += '<div style="background:var(--bg3);border-radius:10px;padding:10px;margin-bottom:10px">';
-    h += '<div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px">🛠 Materiali:</div>';
-    exp.materiali.forEach(function(m) {
-      h += '<div style="font-size:12px;color:var(--text2);padding:2px 0">• ' + labEsc(m) + '</div>';
+  var na = labEspData.esperimenti_attivi.length;
+  var np = labEspData.proposte.length;
+  var h = '<div style="font-size:10px;color:var(--green3);font-weight:700;letter-spacing:1px;margin-bottom:14px">\uD83E\uDDEA ESPERIMENTI \u2014 ' + na + ' attivi \u00B7 ' + np + ' proposte</div>';
+  // Attivi
+  if (na) {
+    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:8px;letter-spacing:0.5px">\u2705 ATTIVI</div>';
+    labEspData.esperimenti_attivi.forEach(function(exp, idx) {
+      h += '<div style="background:rgba(76,175,118,0.06);border:1px solid rgba(76,175,118,0.2);border-radius:10px;padding:10px;margin-bottom:8px;display:flex;align-items:center;gap:10px">';
+      h += '<div style="flex:1;cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupEsp(' + idx + ',\'attivo\');},50)">';
+      h += '<div style="font-size:13px;font-weight:700;color:var(--text)">' + labEsc(exp.nome || '') + '</div>';
+      if (exp.obiettivo) h += '<div style="font-size:11px;color:var(--text3);margin-top:2px">' + labEsc((exp.obiettivo + '').substring(0, 80)) + '</div>';
+      h += '</div>';
+      h += '<button onclick="labEspDisattiva(' + idx + ');labPopupClose()" style="background:rgba(224,82,82,0.1);border:1px solid rgba(224,82,82,0.3);border-radius:8px;padding:5px 8px;color:#e05252;font-size:10px;cursor:pointer;flex-shrink:0">Off</button>';
+      h += '</div>';
     });
-    h += '</div>';
   }
-  var meta = [];
-  if (exp.categoria)     meta.push('Categoria: ' + exp.categoria);
-  if (exp.difficolta)    meta.push('Difficoltà: ' + exp.difficolta);
-  if (exp.durata_giorni) meta.push('Durata: ' + exp.durata_giorni + 'gg');
-  if (exp.fonte)         meta.push('Fonte: ' + exp.fonte);
-  if (meta.length) {
-    h += '<div style="font-size:11px;color:var(--text3);line-height:1.8">' + meta.join(' · ') + '</div>';
-  }
-  if (exp.applicato_a) {
-    h += '<div style="margin-top:8px;font-size:11px;color:var(--text3)">🌿 Applicato a: ' + labEsc(exp.applicato_a) + '</div>';
+  // Proposte
+  if (np) {
+    h += '<div style="font-size:10px;font-weight:700;color:var(--text3);margin:12px 0 8px;letter-spacing:0.5px">\uD83D\uDCA1 PROPOSTE</div>';
+    labEspData.proposte.forEach(function(exp, idx) {
+      h += '<div style="background:rgba(0,0,0,0.2);border:1px solid var(--border);border-radius:10px;padding:10px;margin-bottom:8px;display:flex;align-items:center;gap:10px">';
+      h += '<div style="flex:1;cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupEsp(' + idx + ',\'proposta\');},50)">';
+      h += '<div style="font-size:13px;font-weight:700;color:var(--text)">' + labEsc(exp.nome || '') + '</div>';
+      if (exp.obiettivo || exp.descrizione) {
+        var testo = exp.obiettivo || exp.descrizione || '';
+        h += '<div style="font-size:11px;color:var(--text3);margin-top:2px">' + labEsc((testo + '').substring(0, 80)) + '</div>';
+      }
+      h += '</div>';
+      h += '<button onclick="labEspAttiva(' + idx + ');labPopupClose()" style="background:var(--green2);border:none;border-radius:8px;padding:6px 10px;color:var(--bg);font-size:11px;font-weight:700;cursor:pointer;flex-shrink:0">On</button>';
+      h += '</div>';
+    });
   }
   labPopupOpen(h);
 }
 
-/* ── ATTIVA / DISATTIVA su GitHub ── */
+/* Popup dettaglio singolo esperimento */
+function labPopupEsp(idx, tipo) {
+  var exp = tipo === 'attivo' ? (labEspData && labEspData.esperimenti_attivi[idx]) : (labEspData && labEspData.proposte[idx]);
+  if (!exp) return;
+  var h = '';
+  if (tipo === 'attivo') h += '<div style="font-size:10px;color:var(--green3);font-weight:700;margin-bottom:4px;letter-spacing:0.5px">\u2705 ESPERIMENTO ATTIVO</div>';
+  else h += '<div style="font-size:10px;color:var(--text3);font-weight:700;margin-bottom:4px;letter-spacing:0.5px">\uD83D\uDCA1 PROPOSTA</div>';
+  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(exp.nome || '') + '</div>';
+  if (exp.descrizione) h += '<div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px">' + labEsc(exp.descrizione) + '</div>';
+  if (exp.obiettivo) {
+    h += '<div style="background:rgba(76,175,118,0.08);border-radius:10px;padding:10px;margin-bottom:10px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:4px">\uD83C\uDFAF OBIETTIVO</div>';
+    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(exp.obiettivo) + '</div>';
+    h += '</div>';
+  }
+  if (exp.come_applicare) {
+    h += '<div style="font-size:11px;font-weight:700;color:var(--text);margin-bottom:6px">COME APPLICARE:</div>';
+    h += '<div style="font-size:12px;color:var(--text2);line-height:1.7;margin-bottom:10px">' + labEsc(exp.come_applicare) + '</div>';
+  }
+  if (exp.materiali && exp.materiali.length) {
+    h += '<div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:10px;margin-bottom:10px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:6px">\uD83D\uDEE0 MATERIALI:</div>';
+    exp.materiali.forEach(function(m) { h += '<div style="font-size:12px;color:var(--text2);padding:2px 0">\u2022 ' + labEsc(m) + '</div>'; });
+    h += '</div>';
+  }
+  var meta = [];
+  if (exp.categoria)     meta.push('Cat: ' + exp.categoria);
+  if (exp.difficolta)    meta.push('Diff: ' + exp.difficolta);
+  if (exp.durata_giorni) meta.push(exp.durata_giorni + 'gg');
+  if (meta.length) h += '<div style="font-size:11px;color:var(--text3)">' + meta.join(' \u00B7 ') + '</div>';
+  labPopupOpen(h);
+}
 
+/* Attiva / Disattiva esperimento */
 async function labEspAttiva(idx) {
   var exp = labEspData && labEspData.proposte[idx];
   if (!exp) return;
   exp.attivo = true;
-  exp.data_attivazione = new Date().toISOString().substring(0,10);
+  exp.data_attivazione = new Date().toISOString().substring(0, 10);
   labEspData.esperimenti_attivi.push(exp);
   labEspData.proposte.splice(idx, 1);
   labRenderEsperimenti();
-  await labEspSalva('Attivato: ' + (exp.nome||''));
+  labUpdateBadges();
+  await labEspSalva('Attivato: ' + (exp.nome || ''));
 }
 
 async function labEspDisattiva(idx) {
   var esp = labEspData && labEspData.esperimenti_attivi[idx];
   if (!esp) return;
   esp.attivo = false;
-  esp.data_disattivazione = new Date().toISOString().substring(0,10);
+  esp.data_disattivazione = new Date().toISOString().substring(0, 10);
   labEspData.proposte.unshift(esp);
   labEspData.esperimenti_attivi.splice(idx, 1);
   labRenderEsperimenti();
-  await labEspSalva('Disattivato: ' + (esp.nome||''));
+  labUpdateBadges();
+  await labEspSalva('Disattivato: ' + (esp.nome || ''));
 }
 
 async function labEspSalva(msg) {
@@ -365,7 +418,7 @@ async function labEspSalva(msg) {
       method: 'PUT',
       headers: { 'Authorization': 'token ' + LAB_TOKEN, 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        message: '[BioSerra] ' + (msg||'Aggiorna esperimenti'),
+        message: '[BioSerra] ' + (msg || 'Aggiorna esperimenti'),
         content: btoa(unescape(encodeURIComponent(JSON.stringify(labEspData, null, 2)))),
         sha: sha
       })
@@ -374,7 +427,7 @@ async function labEspSalva(msg) {
 }
 
 /* ══════════════════════════════════════════════════════════════
-   5. RENDER — ESTRATTI PDF
+   RENDER — PDF (mini: 2 recenti in archivio)
 ══════════════════════════════════════════════════════════════ */
 
 function labRenderPdf() {
@@ -382,64 +435,39 @@ function labRenderPdf() {
   if (!el) return;
   var d = labPdfData;
   if (!d || !d.analisi || !d.analisi.length) {
-    el.innerHTML = '<div style="text-align:center;padding:16px;color:var(--text3);font-size:13px">📄 Il Cervello analizza i PDF su Drive ogni mattina alle 5:00.<br>Carica PDF nella cartella Drive per iniziare!</div>';
+    el.innerHTML = '<div class="lab-arch-mini" style="cursor:default;border-color:transparent"><span class="lab-arch-mini-icon">\uD83D\uDCC4</span><div class="lab-arch-mini-body"><div class="lab-arch-mini-title" style="color:rgba(155,109,255,0.4)">Nessun PDF analizzato</div><div class="lab-arch-mini-sub">Carica PDF su Drive \u2014 analisi ogni giorno alle 5:00</div></div></div>';
     return;
   }
   var h = '';
-  if (d.tecniche_nuove && d.tecniche_nuove.length) {
-    h += '<div style="background:rgba(74,175,94,0.08);border:1px solid rgba(74,175,94,0.2);border-radius:12px;padding:12px;margin-bottom:12px">';
-    h += '<div style="font-size:11px;font-weight:700;color:var(--green2);margin-bottom:8px">🆕 NUOVE TECNICHE ESTRATTE</div>';
-    d.tecniche_nuove.forEach(function(t) {
-      h += '<div style="font-size:12px;color:var(--text);margin-bottom:4px;font-weight:600">• ' + labEsc(t.nome||'') + '</div>';
-      if (t.descrizione) h += '<div style="font-size:11px;color:var(--text2);line-height:1.5;margin-bottom:6px;padding-left:12px">' + labEsc((t.descrizione+'').substring(0,150)) + (t.descrizione.length>150?'…':'') + '</div>';
-      if (t.fonte) h += '<div style="font-size:10px;color:var(--text3);padding-left:12px">📄 ' + labEsc(t.fonte) + '</div>';
-    });
+  d.analisi.slice(0, 3).forEach(function(pdf, idx) {
+    h += '<div class="lab-arch-mini" onclick="labPopupPdf(' + idx + ')">';
+    h += '<span class="lab-arch-mini-icon">\uD83D\uDCC4</span>';
+    h += '<div class="lab-arch-mini-body">';
+    h += '<div class="lab-arch-mini-title">' + labEsc(pdf.titolo || 'PDF') + '</div>';
+    if (pdf.sommario) h += '<div class="lab-arch-mini-sub">' + labEsc((pdf.sommario + '').substring(0, 70)) + '\u2026</div>';
     h += '</div>';
-  }
-  h += '<div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:8px">📚 PDF Analizzati (' + d.analisi.length + ')</div>';
-  d.analisi.forEach(function(pdf, idx) {
-    h += '<div style="background:var(--card2);border-radius:12px;padding:13px;margin-bottom:10px;cursor:pointer" onclick="labPopupPdf(' + idx + ')">';
-    h += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">';
-    h += '<div style="flex:1">';
-    h += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:6px">' + labEsc(pdf.titolo||'PDF') + '</div>';
-    if (pdf.sommario) {
-      h += '<div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:6px">' + labEsc((pdf.sommario+'').substring(0,120)) + (pdf.sommario.length>120?'…':'') + '</div>';
-    }
-    h += '<div style="display:flex;gap:6px;flex-wrap:wrap">';
-    if (pdf.rilevanza) {
-      var relColor = pdf.rilevanza === 'alta' ? '#4aaf5e' : pdf.rilevanza === 'media' ? '#f0a500' : 'var(--text3)';
-      h += '<span style="font-size:10px;color:' + relColor + ';padding:2px 8px;border-radius:20px;background:rgba(0,0,0,0.15)">rilevanza ' + labEsc(pdf.rilevanza) + '</span>';
-    }
-    if (pdf.tag && pdf.tag.length) {
-      pdf.tag.slice(0,3).forEach(function(tag) {
-        h += '<span style="font-size:10px;color:var(--text3);padding:2px 7px;border-radius:20px;background:var(--bg3)">' + labEsc(tag) + '</span>';
-      });
-    }
+    h += '<span class="lab-arch-arrow">\u203A</span>';
     h += '</div>';
-    h += '<div style="font-size:11px;color:var(--text3);margin-top:6px">📖 Tocca per analisi completa</div>';
-    h += '</div>';
-    h += '<div style="font-size:20px;opacity:.5">📄</div>';
-    h += '</div></div>';
   });
+  if (d.analisi.length > 3) {
+    h += '<div style="text-align:center;font-size:11px;color:var(--el-violet);padding:4px 0;cursor:pointer;opacity:0.7" onclick="labPopupAllPdf()">\u25BC altri ' + (d.analisi.length - 3) + ' PDF\u2026</div>';
+  }
   el.innerHTML = h;
 }
 
+/* Popup PDF singolo */
 function labPopupPdf(idx) {
   var pdf = labPdfData && labPdfData.analisi && labPdfData.analisi[idx];
   if (!pdf) return;
-  var h = '';
-  h += '<div style="font-size:11px;color:var(--text3);font-weight:700;margin-bottom:4px">📄 ANALISI PDF</div>';
-  h += '<div style="font-size:17px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(pdf.titolo||'') + '</div>';
-  if (pdf.sommario) {
-    h += '<div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:14px">' + labEsc(pdf.sommario) + '</div>';
-  }
+  var h = '<div style="font-size:10px;color:var(--el-violet);font-weight:700;letter-spacing:1px;margin-bottom:4px">\uD83D\uDCC4 ANALISI PDF</div>';
+  h += '<div style="font-size:17px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(pdf.titolo || '') + '</div>';
+  if (pdf.sommario) h += '<div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:14px">' + labEsc(pdf.sommario) + '</div>';
   if (pdf.tecniche_chiave && pdf.tecniche_chiave.length) {
-    h += '<div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:8px">🔑 Tecniche chiave:</div>';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-violet);margin-bottom:8px;letter-spacing:0.5px">TECNICHE CHIAVE:</div>';
     pdf.tecniche_chiave.forEach(function(tc) {
-      h += '<div style="background:var(--bg3);border-radius:8px;padding:8px;margin-bottom:6px">';
-      if (typeof tc === 'string') {
-        h += '<div style="font-size:12px;color:var(--text2)">• ' + labEsc(tc) + '</div>';
-      } else {
+      h += '<div style="background:rgba(155,109,255,0.06);border-radius:8px;padding:8px;margin-bottom:6px">';
+      if (typeof tc === 'string') h += '<div style="font-size:12px;color:var(--text2)">\u2022 ' + labEsc(tc) + '</div>';
+      else {
         if (tc.nome) h += '<div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px">' + labEsc(tc.nome) + '</div>';
         if (tc.descrizione) h += '<div style="font-size:11px;color:var(--text2);line-height:1.5">' + labEsc(tc.descrizione) + '</div>';
       }
@@ -447,125 +475,161 @@ function labPopupPdf(idx) {
     });
   }
   if (pdf.estratto_chiave) {
-    h += '<div style="background:rgba(74,175,94,0.08);border-left:3px solid var(--green2);padding:10px;border-radius:0 8px 8px 0;margin:10px 0">';
-    h += '<div style="font-size:11px;font-weight:700;color:var(--green2);margin-bottom:4px">✨ Estratto chiave</div>';
+    h += '<div style="background:rgba(0,180,255,0.06);border-left:2px solid var(--el-blue);padding:10px;border-radius:0 8px 8px 0;margin:10px 0">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:4px">ESTRATTO CHIAVE</div>';
     h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(pdf.estratto_chiave) + '</div>';
     h += '</div>';
   }
   if (pdf.consiglio_coltivazione) {
-    h += '<div style="background:var(--card2);border-radius:10px;padding:10px;margin-top:8px">';
-    h += '<div style="font-size:11px;font-weight:700;color:var(--green2);margin-bottom:4px">🌿 Consiglio coltivazione</div>';
+    h += '<div style="background:rgba(76,175,118,0.06);border-radius:10px;padding:10px;margin-top:8px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:4px">CONSIGLIO COLTIVAZIONE</div>';
     h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(pdf.consiglio_coltivazione) + '</div>';
-    h += '</div>';
-  }
-  if (pdf.consiglio_elettrocultura) {
-    h += '<div style="background:rgba(155,109,255,0.08);border-radius:10px;padding:10px;margin-top:8px">';
-    h += '<div style="font-size:11px;font-weight:700;color:#9b6dff;margin-bottom:4px">⚡ Consiglio elettrocultura</div>';
-    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(pdf.consiglio_elettrocultura) + '</div>';
     h += '</div>';
   }
   labPopupOpen(h);
 }
 
+/* Popup tutti i PDF */
+function labPopupAllPdf() {
+  var d = labPdfData;
+  if (!d || !d.analisi || !d.analisi.length) {
+    labPopupOpen('<div style="color:rgba(155,109,255,0.4);padding:20px;text-align:center">Nessun PDF analizzato.</div>');
+    return;
+  }
+  var h = '<div style="font-size:10px;color:var(--el-violet);font-weight:700;letter-spacing:1px;margin-bottom:14px">\uD83D\uDCC4 PDF ANALIZZATI (' + d.analisi.length + ')</div>';
+  if (d.tecniche_nuove && d.tecniche_nuove.length) {
+    h += '<div style="background:rgba(76,175,118,0.08);border:1px solid rgba(76,175,118,0.2);border-radius:10px;padding:10px;margin-bottom:12px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:6px">\uD83C\uDD95 NUOVE TECNICHE ESTRATTE</div>';
+    d.tecniche_nuove.forEach(function(t) {
+      h += '<div style="font-size:12px;color:var(--text);margin-bottom:4px;font-weight:600">\u2022 ' + labEsc(t.nome || '') + '</div>';
+      if (t.descrizione) h += '<div style="font-size:11px;color:var(--text2);padding-left:12px;margin-bottom:4px">' + labEsc((t.descrizione + '').substring(0, 120)) + '</div>';
+    });
+    h += '</div>';
+  }
+  d.analisi.forEach(function(pdf, idx) {
+    h += '<div style="background:rgba(155,109,255,0.04);border:1px solid rgba(155,109,255,0.15);border-radius:10px;padding:10px;margin-bottom:8px;cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupPdf(' + idx + ');},50)">';
+    h += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px">' + labEsc(pdf.titolo || 'PDF') + '</div>';
+    if (pdf.sommario) h += '<div style="font-size:11px;color:var(--text3)">' + labEsc((pdf.sommario + '').substring(0, 100)) + '\u2026</div>';
+    if (pdf.rilevanza) {
+      var rc = pdf.rilevanza === 'alta' ? 'var(--green3)' : pdf.rilevanza === 'media' ? 'var(--orange)' : 'var(--text3)';
+      h += '<div style="font-size:10px;color:' + rc + ';margin-top:4px">Rilevanza: ' + labEsc(pdf.rilevanza) + '</div>';
+    }
+    h += '</div>';
+  });
+  labPopupOpen(h);
+}
+
 /* ══════════════════════════════════════════════════════════════
-   6. RENDER — GUIDE COMPLETE
+   RENDER — GUIDE (mini: 2 recenti in archivio)
 ══════════════════════════════════════════════════════════════ */
 
 function labRenderGuide() {
   var el = document.getElementById('lab-guide-content');
   if (!el) return;
   if (!labGuideData.length) {
-    el.innerHTML = '<div style="text-align:center;padding:14px;color:var(--text3);font-size:12px">📖 Guide in generazione… Torna domani!</div>';
+    el.innerHTML = '<div class="lab-arch-mini" style="cursor:default;border-color:transparent"><span class="lab-arch-mini-icon">\uD83D\uDCD6</span><div class="lab-arch-mini-body"><div class="lab-arch-mini-title" style="color:rgba(155,109,255,0.4)">Guide in generazione</div><div class="lab-arch-mini-sub">Aggiornate ogni giorno dal Cervello AI</div></div></div>';
     return;
   }
   var h = '';
-  labGuideData.forEach(function(g, idx) {
-    var catColor = g.categoria === 'acqua' ? '#4a9eff' : g.categoria === 'nutrizione' ? '#4aaf5e' : g.categoria === 'difesa' ? '#e05252' : 'var(--green2)';
-    h += '<div style="background:var(--card2);border-radius:12px;padding:13px;margin-bottom:10px;border-left:3px solid ' + catColor + ';cursor:pointer" onclick="labPopupGuida(' + idx + ')">';
-    h += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">';
-    h += '<div style="font-size:14px;font-weight:700;color:var(--text)">' + labEsc(g.titolo||'') + '</div>';
-    h += '<span style="font-size:10px;background:rgba(74,175,94,0.12);color:' + catColor + ';padding:2px 8px;border-radius:20px">' + labEsc(g.categoria||'') + '</span>';
+  labGuideData.slice(0, 3).forEach(function(g, idx) {
+    h += '<div class="lab-arch-mini" onclick="labPopupGuida(' + idx + ')">';
+    h += '<span class="lab-arch-mini-icon">\uD83D\uDCD6</span>';
+    h += '<div class="lab-arch-mini-body">';
+    h += '<div class="lab-arch-mini-title">' + labEsc(g.titolo || '') + '</div>';
+    if (g.categoria) h += '<div class="lab-arch-mini-sub">' + labEsc(g.categoria) + '</div>';
     h += '</div>';
-    if (g.contenuto_completo) {
-      h += '<div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:6px">' + labEsc((g.contenuto_completo+'').substring(0,100)) + '…</div>';
-    }
-    if (g.punti_chiave && g.punti_chiave.length) {
-      h += '<div style="font-size:11px;color:var(--text3)">' + g.punti_chiave.slice(0,2).map(function(p){ return '✓ ' + p; }).join('  ') + '</div>';
-    }
-    h += '<div style="font-size:11px;color:var(--text3);margin-top:6px">📖 Tocca per guida completa</div>';
+    h += '<span class="lab-arch-arrow">\u203A</span>';
     h += '</div>';
   });
+  if (labGuideData.length > 3) {
+    h += '<div style="text-align:center;font-size:11px;color:var(--el-violet);padding:4px 0;cursor:pointer;opacity:0.7" onclick="labPopupAllGuide()">\u25BC altre ' + (labGuideData.length - 3) + '\u2026</div>';
+  }
   el.innerHTML = h;
 }
 
+/* Popup guida singola */
 function labPopupGuida(idx) {
   var g = labGuideData[idx];
   if (!g) return;
-  var catColor = g.categoria === 'acqua' ? '#4a9eff' : g.categoria === 'nutrizione' ? '#4aaf5e' : g.categoria === 'difesa' ? '#e05252' : 'var(--green2)';
-  var h = '';
-  h += '<div style="font-size:11px;color:' + catColor + ';font-weight:700;margin-bottom:4px">📖 ' + labEsc((g.categoria||'guida')).toUpperCase() + '</div>';
-  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(g.titolo||'') + '</div>';
-  if (g.contenuto_completo) {
-    h += '<div style="font-size:13px;color:var(--text2);line-height:1.8;margin-bottom:14px">' + labEsc(g.contenuto_completo) + '</div>';
-  }
+  var catColor = g.categoria === 'acqua' ? 'var(--el-blue)' : g.categoria === 'nutrizione' ? 'var(--green3)' : g.categoria === 'difesa' ? 'var(--red)' : 'var(--el-violet)';
+  var h = '<div style="font-size:10px;color:' + catColor + ';font-weight:700;letter-spacing:1px;margin-bottom:4px">\uD83D\uDCD6 ' + labEsc((g.categoria || 'guida')).toUpperCase() + '</div>';
+  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(g.titolo || '') + '</div>';
+  if (g.contenuto_completo) h += '<div style="font-size:13px;color:var(--text2);line-height:1.8;margin-bottom:14px">' + labEsc(g.contenuto_completo) + '</div>';
   if (g.punti_chiave && g.punti_chiave.length) {
-    h += '<div style="background:rgba(74,175,94,0.08);border-radius:10px;padding:12px;margin-bottom:12px">';
-    h += '<div style="font-size:12px;font-weight:700;color:var(--green2);margin-bottom:6px">✅ Punti chiave</div>';
-    g.punti_chiave.forEach(function(p) {
-      h += '<div style="font-size:12px;color:var(--text2);padding:3px 0">✓ ' + labEsc(p) + '</div>';
-    });
+    h += '<div style="background:rgba(76,175,118,0.08);border-radius:10px;padding:12px;margin-bottom:10px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:6px">PUNTI CHIAVE</div>';
+    g.punti_chiave.forEach(function(p) { h += '<div style="font-size:12px;color:var(--text2);padding:3px 0">\u2713 ' + labEsc(p) + '</div>'; });
     h += '</div>';
   }
   if (g.errori_comuni && g.errori_comuni.length) {
-    h += '<div style="background:rgba(224,82,82,0.08);border-radius:10px;padding:12px;margin-bottom:12px">';
-    h += '<div style="font-size:12px;font-weight:700;color:#e05252;margin-bottom:6px">⚠️ Errori comuni</div>';
-    g.errori_comuni.forEach(function(e) {
-      h += '<div style="font-size:12px;color:var(--text2);padding:3px 0">✗ ' + labEsc(e) + '</div>';
-    });
+    h += '<div style="background:rgba(224,82,82,0.06);border-radius:10px;padding:10px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--red);margin-bottom:6px">ERRORI COMUNI</div>';
+    g.errori_comuni.forEach(function(err) { h += '<div style="font-size:12px;color:var(--text2);padding:3px 0">\u2717 ' + labEsc(err) + '</div>'; });
     h += '</div>';
-  }
-  if (g.quando) {
-    h += '<div style="font-size:12px;color:var(--text3);margin-top:6px">📅 ' + labEsc(g.quando) + '</div>';
   }
   labPopupOpen(h);
 }
 
+/* Popup tutte le guide */
+function labPopupAllGuide() {
+  if (!labGuideData.length) {
+    labPopupOpen('<div style="color:rgba(155,109,255,0.4);padding:20px;text-align:center">Guide in generazione\u2026</div>');
+    return;
+  }
+  var h = '<div style="font-size:10px;color:var(--el-violet);font-weight:700;letter-spacing:1px;margin-bottom:14px">\uD83D\uDCD6 GUIDE COMPLETE (' + labGuideData.length + ')</div>';
+  labGuideData.forEach(function(g, idx) {
+    var catColor = g.categoria === 'acqua' ? 'var(--el-blue)' : g.categoria === 'nutrizione' ? 'var(--green3)' : g.categoria === 'difesa' ? 'var(--red)' : 'var(--el-violet)';
+    h += '<div style="background:rgba(155,109,255,0.04);border:1px solid rgba(155,109,255,0.15);border-left:2px solid ' + catColor + ';border-radius:0 10px 10px 0;padding:10px;margin-bottom:8px;cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupGuida(' + idx + ');},50)">';
+    h += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:2px">' + labEsc(g.titolo || '') + '</div>';
+    if (g.categoria) h += '<div style="font-size:10px;color:' + catColor + '">' + labEsc(g.categoria) + '</div>';
+    if (g.punti_chiave && g.punti_chiave.length) h += '<div style="font-size:11px;color:var(--text3);margin-top:4px">' + g.punti_chiave.slice(0, 2).map(function(p){ return '\u2713 ' + p; }).join('  ') + '</div>';
+    h += '</div>';
+  });
+  labPopupOpen(h);
+}
+
 /* ══════════════════════════════════════════════════════════════
-   7. RENDER — CERVELLO AI (brain.json) + CHAT
+   RENDER — CERVELLO AI (consigli da brain.json)
 ══════════════════════════════════════════════════════════════ */
 
 function labRenderBrain() {
   var el = document.getElementById('lab-brain-content');
   if (!el) return;
   var d = labBrainData;
-  if (!d || !d.cervello) { el.innerHTML = '<div style="color:var(--text3);font-size:12px;padding:8px">Cervello in elaborazione… Torna alle 5:00.</div>'; return; }
+  if (!d || !d.cervello) {
+    el.innerHTML = '<div class="lab-brain-consiglio" style="opacity:0.4">Cervello in elaborazione\u2026 Torna alle 5:00.</div>';
+    return;
+  }
   var c = d.cervello;
   var h = '';
   if (c.consigli_giorno && c.consigli_giorno.length) {
-    c.consigli_giorno.slice(0,3).forEach(function(cc) {
-      h += '<div style="background:var(--card2);border-radius:10px;padding:10px;margin-bottom:8px;font-size:13px;color:var(--text);line-height:1.6">🌿 ' + labEsc(cc) + '</div>';
+    c.consigli_giorno.slice(0, 2).forEach(function(cc) {
+      h += '<div class="lab-brain-consiglio">' + labEsc(cc) + '</div>';
     });
   }
   if (c.avvisi && c.avvisi.length) {
-    c.avvisi.slice(0,2).forEach(function(av) {
-      h += '<div style="background:rgba(224,82,82,0.08);border-left:3px solid #e05252;border-radius:0 8px 8px 0;padding:8px;margin-bottom:8px;font-size:12px;color:var(--text2)">🚨 ' + labEsc(av) + '</div>';
+    c.avvisi.slice(0, 1).forEach(function(av) {
+      h += '<div class="lab-brain-consiglio" style="color:#ff6b6b">\uD83D\uDEA8 ' + labEsc(av) + '</div>';
     });
   }
-  if (c.scoperte && c.scoperte.length) {
-    c.scoperte.slice(0,1).forEach(function(s) {
-      h += '<div style="background:rgba(155,109,255,0.08);border-radius:10px;padding:10px;margin-bottom:8px;font-size:12px;color:var(--text2)">✨ ' + labEsc(typeof s === 'string' ? s : (s.testo||'')) + '</div>';
-    });
-  }
-  if (!h) h = '<div style="color:var(--text3);font-size:12px">Cervello in elaborazione…</div>';
+  if (!h) h = '<div class="lab-brain-consiglio" style="opacity:0.4">Nessun consiglio disponibile.</div>';
   el.innerHTML = h;
 }
 
-/* ── CHAT CERVELLO AI ── */
+/* Scroll verso cervello AI */
+function labScrollBrain() {
+  var el = document.getElementById('lab-brain-section');
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+/* ══════════════════════════════════════════════════════════════
+   CHAT CERVELLO AI
+══════════════════════════════════════════════════════════════ */
 
 var cervHistory = [];
 
 async function cervBuildSystem() {
-  var sys = 'Sei il Cervello AI di BioSerra, esperto di cannabis outdoor Living Soil a Caserta (41°N). ';
+  var sys = 'Sei il Cervello AI di BioSerra, esperto di cannabis outdoor Living Soil a Caserta (41\u00B0N). ';
   sys += 'Rispondi in italiano, conciso e pratico, max 200 parole. ';
   try {
     var [rMeteo, rBrain, rLuna, rPiante] = await Promise.allSettled([
@@ -591,9 +655,7 @@ async function cervBuildSystem() {
     if (rPiante.status === 'fulfilled') {
       var pv = rPiante.value;
       var pList = (pv.data && pv.data.stato_piante) ? pv.data.stato_piante : (pv.stato_piante || []);
-      if (pList.length) {
-        sys += 'Piante: ' + pList.map(function(p){ return p.nome + '(' + (p.fase||'?') + ')'; }).join(', ') + '. ';
-      }
+      if (pList.length) sys += 'Piante: ' + pList.map(function(p){ return p.nome + '(' + (p.fase || '?') + ')'; }).join(', ') + '. ';
     }
   } catch(e) {}
   return sys;
@@ -638,7 +700,7 @@ async function cervSend(msgOverride) {
 function cervChatReset() {
   cervHistory = [];
   var chat = document.getElementById('cerv-chat');
-  if (chat) chat.innerHTML = '<div class="ai-msg bot">🧠 Ciao! Sono il Cervello AI della tua serra.<br>Leggo i dati live — meteo, piante, luna — e rispondo alle tue domande.</div>';
+  if (chat) chat.innerHTML = '<div class="ai-msg bot">\uD83E\uDDE0 Sistema attivo. Leggo meteo, piante, luna in tempo reale.<br>Cosa vuoi sapere sulla tua serra?</div>';
 }
 
 function cervAppendUser(text) {
@@ -656,7 +718,7 @@ function cervAppendBot(text, loading) {
   if (!chat) return { classList: { remove: function(){} }, textContent: '' };
   var div = document.createElement('div');
   div.className = 'ai-msg bot' + (loading ? ' loading' : '');
-  div.textContent = loading ? '⏳ Elaboro…' : text;
+  div.textContent = loading ? '\u23F3 Elaboro\u2026' : text;
   chat.appendChild(div);
   chat.scrollTop = chat.scrollHeight;
   return div;
@@ -668,7 +730,7 @@ function cervAppend(text, cls) {
 }
 
 /* ══════════════════════════════════════════════════════════════
-   COMPATIBILITÀ — funzioni vecchie chiamate da HTML rimasto
+   COMPATIBILITA' — funzioni legacy chiamate da HTML
 ══════════════════════════════════════════════════════════════ */
 
 function switchLabTab(tab) {}
