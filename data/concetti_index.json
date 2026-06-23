@@ -1,169 +1,15 @@
 {
-  "lastUpdate": "2026-06-23T16:10:28.213Z",
-  "totale_concetti": 12,
+  "lastUpdate": "2026-06-23T21:28:40.296Z",
+  "totale_concetti": 5,
   "totale_pdf_analizzati": 62,
-  "totale_edges": 16,
-  "note": "Concetti canonici estratti e deduplicati da pdf_knowledge.json via Groq clustering",
+  "totale_edges": 0,
+  "note": "Concetti canonici con istruzioni pratiche estratti da pdf_knowledge.json via Groq",
   "concetti": [
-    {
-      "id": "principi-olistici",
-      "label": "Principi Olistici",
-      "categoria": "tecnica_olistica",
-      "descrizione": "Applicazione di principi olistici nella coltivazione per migliorare la crescita e la salute delle piante",
-      "varianti": [
-        "principi olistici",
-        "agricoltura olistica",
-        "saggezza olistica"
-      ],
-      "fasi_guida": [
-        "living_soil",
-        "nutrizione",
-        "irrigazione"
-      ],
-      "rilevanza": "alta",
-      "pdf_count": 28,
-      "pdf_ids": [
-        "pdf_7",
-        "pdf_35",
-        "pdf_39",
-        "pdf_41",
-        "pdf_42",
-        "pdf_61",
-        "pdf_53",
-        "pdf_56",
-        "pdf_57",
-        "pdf_4",
-        "pdf_54",
-        "pdf_13",
-        "pdf_44",
-        "pdf_1",
-        "pdf_3",
-        "pdf_5",
-        "pdf_6",
-        "pdf_8",
-        "pdf_9",
-        "pdf_10",
-        "pdf_28",
-        "pdf_29",
-        "pdf_30",
-        "pdf_31",
-        "pdf_36",
-        "pdf_37",
-        "pdf_51",
-        "pdf_58"
-      ],
-      "tag_correlati": [
-        "consapevolezza",
-        "intenzioni positive",
-        "alchimia",
-        "geometria sacra",
-        "antenna a terra",
-        "elettrocultura",
-        "spiritualità",
-        "natura"
-      ]
-    },
-    {
-      "id": "principi-alchemici",
-      "label": "Principi Alchemici",
-      "categoria": "principio",
-      "descrizione": "Utilizzo di principi alchemici nella coltivazione per migliorare la crescita e la salute delle piante",
-      "varianti": [
-        "principi alchemici",
-        "alchimia"
-      ],
-      "fasi_guida": [
-        "germinazione",
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": "bassa",
-      "pdf_count": 27,
-      "pdf_ids": [
-        "pdf_7",
-        "pdf_35",
-        "pdf_39",
-        "pdf_41",
-        "pdf_42",
-        "pdf_61",
-        "pdf_53",
-        "pdf_56",
-        "pdf_57",
-        "pdf_4",
-        "pdf_54",
-        "pdf_13",
-        "pdf_44",
-        "pdf_3",
-        "pdf_5",
-        "pdf_6",
-        "pdf_8",
-        "pdf_9",
-        "pdf_10",
-        "pdf_28",
-        "pdf_29",
-        "pdf_30",
-        "pdf_31",
-        "pdf_36",
-        "pdf_37",
-        "pdf_51",
-        "pdf_58"
-      ],
-      "tag_correlati": [
-        "alchimia",
-        "geometria sacra",
-        "antenna a terra",
-        "elettrocultura",
-        "spiritualità",
-        "consapevolezza",
-        "natura",
-        "olismo"
-      ]
-    },
-    {
-      "id": "biodinamica",
-      "label": "Biodinamica",
-      "categoria": "tecnica_biodinamica",
-      "descrizione": "Applicazione di principi biodinamici nella coltivazione per migliorare la salute e la fertilità del suolo",
-      "varianti": [
-        "biodinamica",
-        "agricoltura biodinamica"
-      ],
-      "fasi_guida": [
-        "living_soil",
-        "nutrizione"
-      ],
-      "rilevanza": "alta",
-      "pdf_count": 12,
-      "pdf_ids": [
-        "pdf_7",
-        "pdf_35",
-        "pdf_39",
-        "pdf_53",
-        "pdf_56",
-        "pdf_57",
-        "pdf_1",
-        "pdf_30",
-        "pdf_36",
-        "pdf_37",
-        "pdf_51",
-        "pdf_58"
-      ],
-      "tag_correlati": [
-        "consapevolezza",
-        "intenzioni positive",
-        "filosofia",
-        "spiritualità",
-        "agricoltura olistica",
-        "elettrocultura",
-        "crescita delle piante",
-        "agricoltura biodinamica"
-      ]
-    },
     {
       "id": "acqua-magnetizzata",
       "label": "Acqua Magnetizzata",
       "categoria": "tecnica_magnetica",
-      "descrizione": "Utilizzo di acqua magnetizzata per migliorare la crescita delle piante",
+      "descrizione": "L'acqua magnetizzata è un tipo di acqua che è stata trattata con un campo magnetico per alterarne le proprietà fisiche e chimiche. Questo trattamento può migliorare la struttura dell'acqua, rendendola più assimilabile dalle piante. L'acqua magnetizzata può essere utile per la cannabis outdoor Living Soil perché può aiutare a migliorare la crescita e la salute delle piante, aumentando la loro resistenza alle malattie e agli stress ambientali.",
       "varianti": [
         "acqua magnetizzata",
         "magnetizzazione acqua"
@@ -172,6 +18,11 @@
         "irrigazione"
       ],
       "rilevanza": "alta",
+      "istruzioni_pratiche": [
+        "Passo 1: preparare l'acqua magnetizzata utilizzando un dispositivo di magnetizzazione acqua o un magnete neodymium",
+        "Passo 2: utilizzare l'acqua magnetizzata per l'irrigazione delle piante, almeno una volta a settimana, per migliorare la loro crescita e salute",
+        "Passo 3: monitorare i risultati e regolare la frequenza di utilizzo dell'acqua magnetizzata in base alle esigenze specifiche delle piante"
+      ],
       "pdf_count": 9,
       "pdf_ids": [
         "pdf_31",
@@ -196,50 +47,13 @@
       ]
     },
     {
-      "id": "gestione-del-suolo",
-      "label": "Gestione del Suolo",
-      "categoria": "tecnica_agronomica",
-      "descrizione": "Gestione del suolo per migliorare la sua struttura e fertilità",
-      "varianti": [
-        "gestione del suolo",
-        "salute del suolo"
-      ],
-      "fasi_guida": [
-        "living_soil",
-        "nutrizione"
-      ],
-      "rilevanza": "alta",
-      "pdf_count": 9,
-      "pdf_ids": [
-        "pdf_20",
-        "pdf_40",
-        "pdf_41",
-        "pdf_61",
-        "pdf_0",
-        "pdf_26",
-        "pdf_27",
-        "pdf_48",
-        "pdf_49"
-      ],
-      "tag_correlati": [
-        "agricoltura organica",
-        "farina di roccia",
-        "fertilizzanti naturali",
-        "salute del suolo",
-        "harina de rocas",
-        "elettrocultura",
-        "biodinamica",
-        "cannabis"
-      ]
-    },
-    {
-      "id": "meditazione",
-      "label": "Meditazione",
-      "categoria": "tecnica_vibrazionale",
-      "descrizione": "Utilizzo della meditazione per aumentare la consapevolezza e migliorare la connessione con la natura",
+      "id": "meditazione-e-intenzioni",
+      "label": "Meditazione e Intenzioni",
+      "categoria": "tecnica_olistica",
+      "descrizione": "La meditazione e l'utilizzo di intenzioni positive possono aiutare a migliorare la connessione con la natura e a influenzare la crescita delle piante. La meditazione può aiutare a ridurre lo stress e a migliorare la concentrazione, mentre le intenzioni positive possono aiutare a creare un ambiente più favorevole per la crescita delle piante. Questa tecnica può essere utile per la cannabis outdoor Living Soil perché può aiutare a migliorare la salute e la resistenza delle piante.",
       "varianti": [
         "meditazione",
-        "introspezione"
+        "intenzioni positive"
       ],
       "fasi_guida": [
         "germinazione",
@@ -247,6 +61,11 @@
         "fioritura"
       ],
       "rilevanza": "media",
+      "istruzioni_pratiche": [
+        "Passo 1: praticare la meditazione regolarmente, almeno 10-15 minuti al giorno, per ridurre lo stress e migliorare la concentrazione",
+        "Passo 2: utilizzare intenzioni positive per influenzare la crescita delle piante, ad esempio visualizzando la crescita e la salute delle piante",
+        "Passo 3: applicare le intenzioni positive durante le attività di cura delle piante, come l'irrigazione o la fertilizzazione"
+      ],
       "pdf_count": 6,
       "pdf_ids": [
         "pdf_2",
@@ -269,23 +88,27 @@
       "id": "elettrocultura",
       "label": "Elettrocultura",
       "categoria": "tecnica_elettrica",
-      "descrizione": "Utilizzo di principi elettromagnetici per migliorare la crescita delle piante",
+      "descrizione": "L'elettrocultura è la pratica di utilizzare l'elettricità per stimolare la crescita delle piante. L'elettrocultura può aiutare a migliorare la crescita e la salute delle piante, aumentando la loro resistenza alle malattie e agli stress ambientali. Questa tecnica può essere utile per la cannabis outdoor Living Soil perché può aiutare a migliorare la salute e la resistenza delle piante.",
       "varianti": [
         "elettrocultura",
-        "Tesla",
-        "Nikola Tesla"
+        "stimolazione elettrica"
       ],
       "fasi_guida": [
-        "germinazione",
         "vegetazione",
         "fioritura"
       ],
-      "rilevanza": "alta",
-      "pdf_count": 5,
+      "rilevanza": "media",
+      "istruzioni_pratiche": [
+        "Passo 1: acquistare un dispositivo di elettrocultura da un fornitore affidabile",
+        "Passo 2: utilizzare il dispositivo di elettrocultura per stimolare la crescita delle piante, seguendo le istruzioni del produttore",
+        "Passo 3: monitorare i risultati e regolare la quantità di stimolazione elettrica utilizzata in base alle esigenze specifiche delle piante"
+      ],
+      "pdf_count": 6,
       "pdf_ids": [
         "pdf_28",
         "pdf_30",
         "pdf_31",
+        "pdf_43",
         "pdf_51",
         "pdf_58"
       ],
@@ -296,80 +119,29 @@
         "agricoltura biodinamica",
         "biodinamica",
         "cannabis",
+        "cannabis Living Soil",
         "Pierluigi Ighina"
-      ]
-    },
-    {
-      "id": "visualizzazione",
-      "label": "Visualizzazione",
-      "categoria": "tecnica_vibrazionale",
-      "descrizione": "Utilizzo della visualizzazione per influenzare la crescita e la salute delle piante",
-      "varianti": [
-        "visualizzazione",
-        "intenzioni positive"
-      ],
-      "fasi_guida": [
-        "germinazione",
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": "media",
-      "pdf_count": 3,
-      "pdf_ids": [
-        "pdf_2",
-        "pdf_38",
-        "pdf_1"
-      ],
-      "tag_correlati": [
-        "consapevolezza",
-        "intenzioni positive",
-        "spiritualità",
-        "anima",
-        "natura"
-      ]
-    },
-    {
-      "id": "harina-de-rocas",
-      "label": "Harina de Rocas",
-      "categoria": "sostanza",
-      "descrizione": "Utilizzo di harina de rocas come fertilizzante naturale",
-      "varianti": [
-        "harina de rocas",
-        "farina di roccia"
-      ],
-      "fasi_guida": [
-        "nutrizione"
-      ],
-      "rilevanza": "media",
-      "pdf_count": 3,
-      "pdf_ids": [
-        "pdf_20",
-        "pdf_40",
-        "pdf_0"
-      ],
-      "tag_correlati": [
-        "agricoltura organica",
-        "farina di roccia",
-        "fertilizzanti naturali",
-        "salute del suolo",
-        "harina de rocas"
       ]
     },
     {
       "id": "geometria-sacra",
       "label": "Geometria Sacra",
-      "categoria": "principio",
-      "descrizione": "Utilizzo di principi di geometria sacra nella disposizione delle piante",
+      "categoria": "tecnica_cosmica",
+      "descrizione": "La geometria sacra è lo studio delle forme e dei pattern geometrici che si trovano in natura e che possono essere utilizzati per creare un ambiente più armonico e favorevole per la crescita delle piante. La geometria sacra può aiutare a migliorare la struttura e la disposizione delle piante, aumentando la loro resistenza alle malattie e agli stress ambientali. Questa tecnica può essere utile per la cannabis outdoor Living Soil perché può aiutare a creare un ambiente più favorevole per la crescita delle piante.",
       "varianti": [
         "geometria sacra",
-        "pattern"
+        "pattern geometrici"
       ],
       "fasi_guida": [
         "germinazione",
-        "vegetazione",
-        "fioritura"
+        "vegetazione"
       ],
       "rilevanza": "bassa",
+      "istruzioni_pratiche": [
+        "Passo 1: studiare la geometria sacra e i pattern geometrici che si trovano in natura",
+        "Passo 2: applicare la geometria sacra nella disposizione delle piante, utilizzando forme e pattern geometrici per creare un ambiente più armonico",
+        "Passo 3: monitorare i risultati e regolare la disposizione delle piante in base alle esigenze specifiche delle piante"
+      ],
       "pdf_count": 3,
       "pdf_ids": [
         "pdf_3",
@@ -387,84 +159,40 @@
       ]
     },
     {
-      "id": "antenne-a-terra",
-      "label": "Antenne a Terra",
-      "categoria": "strumento",
-      "descrizione": "Utilizzo di antenne a terra per migliorare la crescita delle piante",
+      "id": "harina-de-rocas",
+      "label": "Harina de Rocas",
+      "categoria": "tecnica_agronomica",
+      "descrizione": "La harina de rocas è un tipo di fertilizzante naturale che può aiutare a migliorare la struttura e la fertilità del suolo. La harina de rocas è ricca di minerali e oligoelementi che possono aiutare a migliorare la crescita e la salute delle piante. Questa tecnica può essere utile per la cannabis outdoor Living Soil perché può aiutare a migliorare la salute e la resistenza delle piante.",
       "varianti": [
-        "antenne a terra",
-        "antenna a terra"
+        "harina de rocas",
+        "fertilizzante naturale"
       ],
       "fasi_guida": [
-        "germinazione",
-        "vegetazione",
-        "fioritura"
+        "nutrizione"
       ],
-      "rilevanza": "bassa",
-      "pdf_count": 2,
+      "rilevanza": "alta",
+      "istruzioni_pratiche": [
+        "Passo 1: acquistare la harina de rocas da un fornitore affidabile",
+        "Passo 2: utilizzare la harina de rocas come fertilizzante, seguendo le istruzioni del produttore",
+        "Passo 3: monitorare i risultati e regolare la quantità di harina de rocas utilizzata in base alle esigenze specifiche delle piante"
+      ],
+      "pdf_count": 3,
       "pdf_ids": [
-        "pdf_4",
-        "pdf_32"
+        "pdf_20",
+        "pdf_40",
+        "pdf_0"
       ],
       "tag_correlati": [
-        "antenna a terra",
-        "elettrocultura",
-        "fisica",
-        "coltivazione",
-        "Living Soil"
-      ]
-    },
-    {
-      "id": "calendari-lunari",
-      "label": "Calendari Lunari",
-      "categoria": "principio",
-      "descrizione": "Utilizzo di calendari lunari per la coltivazione",
-      "varianti": [
-        "calendari lunari",
-        "lunazione"
-      ],
-      "fasi_guida": [
-        "germinazione",
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": "bassa",
-      "pdf_count": 2,
-      "pdf_ids": [
-        "pdf_6",
-        "pdf_19"
-      ],
-      "tag_correlati": [
-        "olismo",
-        "sincronicità",
-        "agricoltura biodinamica",
-        "influenza lunare"
+        "agricoltura organica",
+        "farina di roccia",
+        "fertilizzanti naturali",
+        "salute del suolo",
+        "harina de rocas"
       ]
     }
   ],
   "grafo": {
     "nodi": [
-      {
-        "id": "principi-olistici",
-        "label": "Principi Olistici",
-        "categoria": "tecnica_olistica",
-        "peso": 28,
-        "rilevanza": "alta"
-      },
-      {
-        "id": "principi-alchemici",
-        "label": "Principi Alchemici",
-        "categoria": "principio",
-        "peso": 27,
-        "rilevanza": "bassa"
-      },
-      {
-        "id": "biodinamica",
-        "label": "Biodinamica",
-        "categoria": "tecnica_biodinamica",
-        "peso": 12,
-        "rilevanza": "alta"
-      },
       {
         "id": "acqua-magnetizzata",
         "label": "Acqua Magnetizzata",
@@ -473,16 +201,9 @@
         "rilevanza": "alta"
       },
       {
-        "id": "gestione-del-suolo",
-        "label": "Gestione del Suolo",
-        "categoria": "tecnica_agronomica",
-        "peso": 9,
-        "rilevanza": "alta"
-      },
-      {
-        "id": "meditazione",
-        "label": "Meditazione",
-        "categoria": "tecnica_vibrazionale",
+        "id": "meditazione-e-intenzioni",
+        "label": "Meditazione e Intenzioni",
+        "categoria": "tecnica_olistica",
         "peso": 6,
         "rilevanza": "media"
       },
@@ -490,216 +211,24 @@
         "id": "elettrocultura",
         "label": "Elettrocultura",
         "categoria": "tecnica_elettrica",
-        "peso": 5,
-        "rilevanza": "alta"
-      },
-      {
-        "id": "visualizzazione",
-        "label": "Visualizzazione",
-        "categoria": "tecnica_vibrazionale",
-        "peso": 3,
-        "rilevanza": "media"
-      },
-      {
-        "id": "harina-de-rocas",
-        "label": "Harina de Rocas",
-        "categoria": "sostanza",
-        "peso": 3,
+        "peso": 6,
         "rilevanza": "media"
       },
       {
         "id": "geometria-sacra",
         "label": "Geometria Sacra",
-        "categoria": "principio",
+        "categoria": "tecnica_cosmica",
         "peso": 3,
         "rilevanza": "bassa"
       },
       {
-        "id": "antenne-a-terra",
-        "label": "Antenne a Terra",
-        "categoria": "strumento",
-        "peso": 2,
-        "rilevanza": "bassa"
-      },
-      {
-        "id": "calendari-lunari",
-        "label": "Calendari Lunari",
-        "categoria": "principio",
-        "peso": 2,
-        "rilevanza": "bassa"
+        "id": "harina-de-rocas",
+        "label": "Harina de Rocas",
+        "categoria": "tecnica_agronomica",
+        "peso": 3,
+        "rilevanza": "alta"
       }
     ],
-    "edges": [
-      {
-        "source": "principi-olistici",
-        "target": "principi-alchemici",
-        "peso": 27,
-        "tipo": "forte",
-        "pdf_comuni": [
-          "pdf_7",
-          "pdf_35",
-          "pdf_39"
-        ]
-      },
-      {
-        "source": "principi-olistici",
-        "target": "biodinamica",
-        "peso": 12,
-        "tipo": "forte",
-        "pdf_comuni": [
-          "pdf_7",
-          "pdf_35",
-          "pdf_39"
-        ]
-      },
-      {
-        "source": "principi-alchemici",
-        "target": "biodinamica",
-        "peso": 11,
-        "tipo": "forte",
-        "pdf_comuni": [
-          "pdf_7",
-          "pdf_35",
-          "pdf_39"
-        ]
-      },
-      {
-        "source": "principi-olistici",
-        "target": "elettrocultura",
-        "peso": 5,
-        "tipo": "forte",
-        "pdf_comuni": [
-          "pdf_28",
-          "pdf_30",
-          "pdf_31"
-        ]
-      },
-      {
-        "source": "principi-alchemici",
-        "target": "elettrocultura",
-        "peso": 5,
-        "tipo": "forte",
-        "pdf_comuni": [
-          "pdf_28",
-          "pdf_30",
-          "pdf_31"
-        ]
-      },
-      {
-        "source": "principi-olistici",
-        "target": "geometria-sacra",
-        "peso": 3,
-        "tipo": "debole",
-        "pdf_comuni": [
-          "pdf_3",
-          "pdf_7",
-          "pdf_35"
-        ]
-      },
-      {
-        "source": "principi-alchemici",
-        "target": "geometria-sacra",
-        "peso": 3,
-        "tipo": "debole",
-        "pdf_comuni": [
-          "pdf_3",
-          "pdf_7",
-          "pdf_35"
-        ]
-      },
-      {
-        "source": "biodinamica",
-        "target": "elettrocultura",
-        "peso": 3,
-        "tipo": "debole",
-        "pdf_comuni": [
-          "pdf_30",
-          "pdf_51",
-          "pdf_58"
-        ]
-      },
-      {
-        "source": "gestione-del-suolo",
-        "target": "harina-de-rocas",
-        "peso": 3,
-        "tipo": "debole",
-        "pdf_comuni": [
-          "pdf_20",
-          "pdf_40",
-          "pdf_0"
-        ]
-      },
-      {
-        "source": "meditazione",
-        "target": "visualizzazione",
-        "peso": 3,
-        "tipo": "debole",
-        "pdf_comuni": [
-          "pdf_2",
-          "pdf_38",
-          "pdf_1"
-        ]
-      },
-      {
-        "source": "principi-olistici",
-        "target": "acqua-magnetizzata",
-        "peso": 2,
-        "tipo": "debole",
-        "pdf_comuni": [
-          "pdf_31",
-          "pdf_36"
-        ]
-      },
-      {
-        "source": "principi-olistici",
-        "target": "gestione-del-suolo",
-        "peso": 2,
-        "tipo": "debole",
-        "pdf_comuni": [
-          "pdf_41",
-          "pdf_61"
-        ]
-      },
-      {
-        "source": "principi-olistici",
-        "target": "meditazione",
-        "peso": 2,
-        "tipo": "debole",
-        "pdf_comuni": [
-          "pdf_1",
-          "pdf_5"
-        ]
-      },
-      {
-        "source": "principi-alchemici",
-        "target": "acqua-magnetizzata",
-        "peso": 2,
-        "tipo": "debole",
-        "pdf_comuni": [
-          "pdf_31",
-          "pdf_36"
-        ]
-      },
-      {
-        "source": "principi-alchemici",
-        "target": "gestione-del-suolo",
-        "peso": 2,
-        "tipo": "debole",
-        "pdf_comuni": [
-          "pdf_41",
-          "pdf_61"
-        ]
-      },
-      {
-        "source": "biodinamica",
-        "target": "geometria-sacra",
-        "peso": 2,
-        "tipo": "debole",
-        "pdf_comuni": [
-          "pdf_7",
-          "pdf_35"
-        ]
-      }
-    ]
+    "edges": []
   }
 }
