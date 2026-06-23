@@ -50,8 +50,8 @@ async function labLoadAll() {
   labSetStatus('lab-load-status', '\u23F3 SYNC…');
   var ts = '?v=' + Date.now();
   try {
-    var [rEl, rEsp, rPdf, rGuide, rDigest, rBrain] = await Promise.allSettled([
-      fetch(LAB_RAW + 'electro_tecniche.json' + ts).then(function(r){ return r.json(); }),
+    var [rCon, rEsp, rPdf, rGuide, rDigest, rBrain] = await Promise.allSettled([
+      fetch(LAB_RAW + 'concetti_index.json'   + ts).then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'esperimenti.json'       + ts).then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'pdf_knowledge.json'     + ts).then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'guide_complete.json'    + ts).then(function(r){ return r.json(); }),
@@ -59,12 +59,24 @@ async function labLoadAll() {
       fetch(LAB_RAW + 'brain.json'             + ts).then(function(r){ return r.json(); })
     ]);
 
-    if (rEl.status === 'fulfilled') {
-      var elRaw = rEl.value;
-      var base  = Array.isArray(elRaw.tecniche_base)        ? elRaw.tecniche_base        : [];
-      var extra = Array.isArray(elRaw.tecniche_aggiuntive)  ? elRaw.tecniche_aggiuntive  : [];
-      var tec   = Array.isArray(elRaw.tecniche)             ? elRaw.tecniche             : [];
-      labElTecniche = base.concat(extra).concat(tec);
+    if (rCon.status === 'fulfilled') {
+      labConcettiData = rCon.value;
+      // labElTecniche: array piatto compatibile con le funzioni esistenti
+      labElTecniche = (labConcettiData.concetti || []).map(function(c) {
+        return {
+          id:          c.id,
+          nome:        c.label,
+          categoria:   c.categoria ? c.categoria.replace('tecnica_','') : 'generale',
+          descrizione: c.descrizione || '',
+          occorrenze:  c.pdf_count  || 0,
+          pdf_ids:     c.pdf_ids    || [],
+          fasi_guida:  c.fasi_guida || [],
+          tag:         c.tag_correlati || [],
+          varianti:    c.varianti   || [],
+          rilevanza:   c.rilevanza  || 'media',
+          daBase:      false
+        };
+      });
     }
 
     if (rEsp.status === 'fulfilled') {
@@ -207,65 +219,33 @@ function labCatColor(cat) {
 }
 
 function labBuildTecnicheComplete() {
-  var base = labElTecniche.slice();
+  // I concetti sono gia' canonici e deduplicati da N8N (concetti_index.json)
+  // labElTecniche e' gia' popolato da labLoadAll — restituiamo direttamente
+  if (labElTecniche.length) return labElTecniche.slice();
+
+  // Fallback: se concetti_index non ancora disponibile, estrai dai PDF
   var analisi = (labPdfData && labPdfData.analisi) ? labPdfData.analisi : [];
-  var CLUSTER = [
-    { label:'Acqua Magnetizzata',        cat:'magnetica',    kw:['acqua magnetizzata','magnetizzazione acqua','acqua magnetiz','uso di acqua magnetizzata'] },
-    { label:'Pila Galvanica Fe-Cu',      cat:'galvanica',    kw:['pila galvanica','galvanica fe','fe-cu','ferro-rame','dispositivi come la pila galvanica'] },
-    { label:'Circuito Lakhovsky',        cat:'cosmica',      kw:['lakhovsky','spirali cosmic','spirale cosmica','spirale di rame'] },
-    { label:'Antenna Terrestre',         cat:'cosmica',      kw:['antenna terrest','antenna a terra','antenne a terra'] },
-    { label:'Stimolazione Elettrica',    cat:'elettrica',    kw:['stimolazione elettrica','correnti elettriche','corrente elettrica','applicazione di correnti','campi elettrici per stimol','elettrocultura','dispositivi elettrocultur','applicazione di principi di elettrocultura','utilizzo di elettrocultura','applicazione di principi bioelettrici'] },
-    { label:'Campi Elettromagnetici',    cat:'elettrica',    kw:['campi elettromagnetici','campo elettromagnetico','principi elettromagnetici','principi di elettromagnetismo','dispositivi elettromagnetici','applicazione di campi elettromagnetici'] },
-    { label:'Frequenze e Risonanza',     cat:'vibrazionale', kw:['frequenze armoniche','frequenze sonore','frequenz','risonanza','vibrazione','vibrazioni','principi di risonanza','applicazione di frequenze'] },
-    { label:'Calendario Lunare',         cat:'biodinamica',  kw:['calendari lunari','calendario lunare','cicli lunari','osservazione della luna'] },
-    { label:'Principi Biodinamici',      cat:'biodinamica',  kw:['biodinamica','biodinamici','ritmi naturali','osservazione dei ritmi'] },
-    { label:'Gestione Suolo Organico',   cat:'agronomica',   kw:['gestione del suolo','gestione suolo','compostaggio','compost','sostanze naturali per il suolo','farina di roccia','harina de rocas','analisi del suolo','struttura del suolo'] },
-    { label:'Micorrize e Funghi',        cat:'agronomica',   kw:['miceli','funghi benefici','micorrize','organismi benefici','introduzione di funghi'] },
-    { label:'Rotazione Colture',         cat:'agronomica',   kw:['rotazione delle colture','rotazione colture'] },
-    { label:'Gestione Idrica',           cat:'agronomica',   kw:['gestione dell\u2019acqua','gestione acqua','risorse idriche'] },
-    { label:'Geometria Sacra',           cat:'olistica',     kw:['geometria sacra','geometrie sacre','simboli e pattern','simboli e geometrie'] },
-    { label:'Pratiche Olistiche',        cat:'olistica',     kw:['principi olistici','pratiche olistiche','intenzioni positive','energia vitale','connessione con la natura','armonia con la natura','principi spirituali','concetti spirituali','principi alchemici','principi magici','meditazione','visualizzazione per','crescita personale','armonizzazione'] },
-    { label:'Cristalloterapia Piante',   cat:'olistica',     kw:['cristalli per la crescita','cristall'] },
-    { label:'Automazione Serra',         cat:'tecnologica',  kw:['automazione','principi di automazione'] },
-    { label:'Illuminazione Ottimale',    cat:'tecnologica',  kw:['principi ottici','illuminazione ottimale'] },
-    { label:'Dispositivi Specializzati', cat:'elettrica',    kw:['dispositivi a basso','dispositivi di risonanza per'] }
-  ];
   var NON_TEC = ['nessuna tecnica','nessuna connessione','possibile ispirazione','nessuna'];
-  function norm(s) { return (s||'').toLowerCase().trim().replace(/[.,;:!?]+$/,''); }
-  function getCluster(t) {
-    var n=norm(t);
-    for (var i=0;i<CLUSTER.length;i++) {
-      for (var j=0;j<CLUSTER[i].kw.length;j++) {
-        if (n.indexOf(CLUSTER[i].kw[j])!==-1) return CLUSTER[i];
-      }
-    }
-    return null;
-  }
-  var cnt={}, baseNomi={};
+  var seen = {};
+  var fallback = [];
   analisi.forEach(function(a) {
     (a.tecniche_chiave||[]).forEach(function(t) {
-      var n=norm(t);
+      var n = (t||'').toLowerCase().trim();
       if (NON_TEC.some(function(x){ return n.indexOf(x)!==-1; })) return;
-      var c=getCluster(t);
-      if (c) cnt[c.label]=(cnt[c.label]||0)+1;
+      if (seen[n]) return;
+      seen[n] = true;
+      fallback.push({
+        id: 'raw_' + n.replace(/[^a-z0-9]+/g,'-').substring(0,30),
+        nome: t.trim(),
+        categoria: 'generale',
+        descrizione: 'Estratto da PDF (clustering in corso).',
+        occorrenze: 1,
+        daBase: false
+      });
     });
   });
-  base.forEach(function(t){ baseNomi[norm(t.nome)]=true; });
-  var extra=[];
-  CLUSTER.forEach(function(c) {
-    if (!cnt[c.label]) return;
-    if (baseNomi[norm(c.label)]) return;
-    var dupParz=false; var p=norm(c.label).split(' ')[0];
-    Object.keys(baseNomi).forEach(function(k){ if(k.indexOf(p)!==-1) dupParz=true; });
-    if (dupParz) return;
-    extra.push({
-      id:'pdf_'+c.label.toLowerCase().replace(/[^a-z0-9]+/g,'-'),
-      nome:c.label, categoria:c.cat, descrizione:'Tecnica ricorrente in '+cnt[c.label]+' PDF analizzati.',
-      occorrenze:cnt[c.label], daBase:false, sperimentale:c.cat==='olistica'
-    });
-  });
-  extra.sort(function(a,b){ return b.occorrenze-a.occorrenze; });
-  return base.concat(extra);
+  fallback.sort(function(a,b){ return b.occorrenze - a.occorrenze; });
+  return fallback;
 }
 
 function labRenderTecniche() {
@@ -949,6 +929,7 @@ function initElettrocultura() {
    SECOND BRAIN — variabili globali
 ══════════════════════════════════════════════════════════════ */
 
+var labConcettiData = null;  // concetti_index.json
 var labVettoriData = null;   // pdf_vectors.json
 var labGrafoData   = null;   // pdf_graph.json
 var labSbInited    = false;  // D3 già inizializzato
