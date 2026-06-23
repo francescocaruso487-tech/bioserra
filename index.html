@@ -656,9 +656,9 @@
       <span class="lab-icon-emoji">📖</span>
       <span class="lab-icon-label">Guide</span>
     </div>
-    <div class="lab-icon-btn red" onclick="labScrollBrain()">
+    <div class="lab-icon-btn red" onclick="labPopupSecondBrain()">
       <span class="lab-icon-emoji">🧠</span>
-      <span class="lab-icon-label">Cervello</span>
+      <span class="lab-icon-label">Second Brain</span>
       <span class="lab-icon-badge" id="badge-brain" style="background:var(--red);color:#fff"></span>
     </div>
   </div>
@@ -722,6 +722,19 @@
     </div>
     <div id="lab-guide-content">
       <div style="color:rgba(155,109,255,0.4);font-size:12px;padding:4px">Caricamento…</div>
+    </div>
+  </div>
+
+  <!-- ══ MACRO-AREA: SECOND BRAIN ══ -->
+  <div class="lab-macro-label" style="color:#00b4ff">🧠 second brain</div>
+
+  <div class="lab-tech-card" style="border-color:rgba(0,180,255,0.2);background:rgba(0,180,255,0.03)">
+    <div class="lab-tc-header">
+      <div class="lab-tc-title" style="color:#00b4ff">🧠 Grafo Conoscenza</div>
+      <button class="lab-tc-reload" onclick="labPopupSecondBrain()">Apri ›</button>
+    </div>
+    <div id="lab-sb-mini" style="padding:4px 0">
+      <div style="color:rgba(0,180,255,0.4);font-size:12px;padding:4px">Caricamento…</div>
     </div>
   </div>
 
