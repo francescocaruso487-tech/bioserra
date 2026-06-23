@@ -1,55 +1,291 @@
 {
-  "lastUpdate": "2026-06-23T05:31:02.800Z",
-  "fonte": "Royal Queen Seeds + Zamnesia",
-  "totale_guide": 3,
+  "lastUpdate": "2026-06-23T11:52:32.701Z",
+  "fonte": [
+    "zamnesia.io"
+  ],
+  "totale_guide": 10,
   "argomenti_coperti": [
-    "Irrigazione Cannabis Outdoor",
-    "Nutrizione Living Soil",
-    "Difesa Biologica"
+    "germinazione",
+    "vegetazione",
+    "fioritura",
+    "harvest",
+    "essiccazione",
+    "curing",
+    "living_soil",
+    "nutrizione",
+    "irrigazione",
+    "difesa_biologica"
   ],
   "guide": [
     {
+      "fase": "germinazione",
+      "categoria": "fase",
+      "titolo": "Germinazione Cannabis Outdoor",
+      "contenuto_completo": "La germinazione è la prima fase della crescita della cannabis. È importante utilizzare semi di alta qualità e seguire le istruzioni del produttore. La temperatura ideale per la germinazione è tra 20-25°C. È anche importante mantenere l'umidità costante e non esporre i semi alla luce diretta.",
+      "punti_chiave": [
+        "Utilizzare semi di alta qualità",
+        "Mantenere la temperatura costante",
+        "Mantenere l'umidità costante",
+        "Non esporre i semi alla luce diretta",
+        "Utilizzare un substrato idoneo per la germinazione"
+      ],
+      "errori_comuni": [
+        "Utilizzare semi di bassa qualità",
+        "Mantenere la temperatura troppo alta o troppo bassa",
+        "Non mantenere l'umidità costante"
+      ],
+      "quando": "La germinazione solitamente avviene entro 1-2 settimane",
+      "tecniche_pdf": [
+        "Utilizzo di farina di roccia come fertilizzante",
+        "Gestione del suolo per migliorare la struttura e la fertilità"
+      ],
+      "esperimenti_pdf": [
+        "Utilizzo di intenzioni positive per influenzare la crescita delle piante",
+        "Meditazione per aumentare la consapevolezza dell'agricoltore"
+      ]
+    },
+    {
+      "fase": "vegetazione",
+      "categoria": "fase",
+      "titolo": "Vegetazione Cannabis Outdoor",
+      "contenuto_completo": "La vegetazione è la fase in cui la pianta di cannabis cresce e si sviluppa. È importante fornire alla pianta sufficiente luce, acqua e nutrienti. La temperatura ideale per la vegetazione è tra 20-25°C.",
+      "punti_chiave": [
+        "Fornire sufficiente luce",
+        "Fornire sufficiente acqua",
+        "Fornire sufficienti nutrienti",
+        "Mantenere la temperatura costante",
+        "Utilizzare un substrato idoneo per la vegetazione"
+      ],
+      "errori_comuni": [
+        "Non fornire sufficiente luce",
+        "Non fornire sufficiente acqua",
+        "Non fornire sufficienti nutrienti"
+      ],
+      "quando": "La vegetazione solitamente avviene entro 2-4 settimane",
+      "tecniche_pdf": [
+        "Utilizzo di compost per migliorare la struttura del suolo",
+        "Introduzione di organismi benefici per controllare le malattie"
+      ],
+      "esperimenti_pdf": [
+        "Utilizzo di calendari lunari per la semina e la raccolta",
+        "Osservazione dei ritmi naturali delle piante"
+      ]
+    },
+    {
+      "fase": "fioritura",
+      "categoria": "fase",
+      "titolo": "Fioritura Cannabis Outdoor",
+      "contenuto_completo": "La fioritura è la fase in cui la pianta di cannabis produce fiori. È importante fornire alla pianta sufficiente luce, acqua e nutrienti. La temperatura ideale per la fioritura è tra 20-25°C.",
+      "punti_chiave": [
+        "Fornire sufficiente luce",
+        "Fornire sufficiente acqua",
+        "Fornire sufficienti nutrienti",
+        "Mantenere la temperatura costante",
+        "Utilizzare un substrato idoneo per la fioritura"
+      ],
+      "errori_comuni": [
+        "Non fornire sufficiente luce",
+        "Non fornire sufficiente acqua",
+        "Non fornire sufficienti nutrienti"
+      ],
+      "quando": "La fioritura solitamente avviene entro 6-8 settimane",
+      "tecniche_pdf": [
+        "Utilizzo di harina de rocas come fertilizzante naturale",
+        "Gestione del suolo per migliorare la sua struttura e fertilità"
+      ],
+      "esperimenti_pdf": [
+        "Utilizzo di campi elettromagnetici per stimolare la crescita delle piante",
+        "Applicazione di frequenze armoniche in serra"
+      ]
+    },
+    {
+      "fase": "harvest",
+      "categoria": "fase",
+      "titolo": "Harvest Cannabis Outdoor",
+      "contenuto_completo": "Il harvest è la fase in cui si raccolgono i fiori di cannabis. È importante effettuare il harvest al momento giusto per ottenere la massima qualità e quantità di prodotto.",
+      "punti_chiave": [
+        "Effettuare il harvest al momento giusto",
+        "Utilizzare strumenti idonei per il harvest",
+        "Mantenere la temperatura costante",
+        "Mantenere l'umidità costante",
+        "Utilizzare un substrato idoneo per la conservazione"
+      ],
+      "errori_comuni": [
+        "Non effettuare il harvest al momento giusto",
+        "Non utilizzare strumenti idonei per il harvest",
+        "Non mantenere la temperatura costante"
+      ],
+      "quando": "Il harvest solitamente avviene entro 8-10 settimane",
+      "tecniche_pdf": [
+        "Utilizzo di dispositivi di risonanza per migliorare la crescita delle piante",
+        "Applicazione di principi ottici per l'illuminazione ottimale"
+      ],
+      "esperimenti_pdf": [
+        "Utilizzo di circuiti elettrici per il controllo dell'ambiente in serra",
+        "Applicazione di principi di automazione per ottimizzare la coltivazione"
+      ]
+    },
+    {
+      "fase": "essiccazione",
+      "categoria": "fase",
+      "titolo": "Essiccazione Cannabis Outdoor",
+      "contenuto_completo": "L'essiccazione è la fase in cui si essiccano i fiori di cannabis per conservarli. È importante effettuare l'essiccazione in modo corretto per ottenere la massima qualità e quantità di prodotto.",
+      "punti_chiave": [
+        "Effettuare l'essiccazione in modo corretto",
+        "Utilizzare strumenti idonei per l'essiccazione",
+        "Mantenere la temperatura costante",
+        "Mantenere l'umidità costante",
+        "Utilizzare un substrato idoneo per la conservazione"
+      ],
+      "errori_comuni": [
+        "Non effettuare l'essiccazione in modo corretto",
+        "Non utilizzare strumenti idonei per l'essiccazione",
+        "Non mantenere la temperatura costante"
+      ],
+      "quando": "L'essiccazione solitamente avviene entro 1-2 settimane",
+      "tecniche_pdf": [
+        "Utilizzo di farina di roccia come fertilizzante",
+        "Gestione del suolo per migliorare la struttura e la fertilità"
+      ],
+      "esperimenti_pdf": [
+        "Utilizzo di intenzioni positive per influenzare la crescita delle piante",
+        "Meditazione per aumentare la consapevolezza dell'agricoltore"
+      ]
+    },
+    {
+      "fase": "curing",
+      "categoria": "fase",
+      "titolo": "Curing Cannabis Outdoor",
+      "contenuto_completo": "Il curing è la fase in cui si conservano i fiori di cannabis per migliorare la qualità e la quantità di prodotto. È importante effettuare il curing in modo corretto per ottenere la massima qualità e quantità di prodotto.",
+      "punti_chiave": [
+        "Effettuare il curing in modo corretto",
+        "Utilizzare strumenti idonei per il curing",
+        "Mantenere la temperatura costante",
+        "Mantenere l'umidità costante",
+        "Utilizzare un substrato idoneo per la conservazione"
+      ],
+      "errori_comuni": [
+        "Non effettuare il curing in modo corretto",
+        "Non utilizzare strumenti idonei per il curing",
+        "Non mantenere la temperatura costante"
+      ],
+      "quando": "Il curing solitamente avviene entro 2-4 settimane",
+      "tecniche_pdf": [
+        "Utilizzo di compost per migliorare la struttura del suolo",
+        "Introduzione di organismi benefici per controllare le malattie"
+      ],
+      "esperimenti_pdf": [
+        "Utilizzo di calendari lunari per la semina e la raccolta",
+        "Osservazione dei ritmi naturali delle piante"
+      ]
+    },
+    {
+      "fase": "living_soil",
+      "categoria": "fase",
+      "titolo": "Living Soil Cannabis Outdoor",
+      "contenuto_completo": "Il living soil è un metodo di coltivazione che utilizza un substrato vivo e fertile per crescere le piante di cannabis. È importante creare un ambiente idoneo per il living soil per ottenere la massima qualità e quantità di prodotto.",
+      "punti_chiave": [
+        "Creare un ambiente idoneo per il living soil",
+        "Utilizzare un substrato vivo e fertile",
+        "Mantenere la temperatura costante",
+        "Mantenere l'umidità costante",
+        "Utilizzare un substrato idoneo per la conservazione"
+      ],
+      "errori_comuni": [
+        "Non creare un ambiente idoneo per il living soil",
+        "Non utilizzare un substrato vivo e fertile",
+        "Non mantenere la temperatura costante"
+      ],
+      "quando": "Il living soil solitamente avviene entro 2-4 settimane",
+      "tecniche_pdf": [
+        "Utilizzo di farina di roccia come fertilizzante",
+        "Gestione del suolo per migliorare la struttura e la fertilità"
+      ],
+      "esperimenti_pdf": [
+        "Utilizzo di intenzioni positive per influenzare la crescita delle piante",
+        "Meditazione per aumentare la consapevolezza dell'agricoltore"
+      ]
+    },
+    {
+      "fase": "nutrizione",
+      "categoria": "fase",
+      "titolo": "Nutrizione Cannabis Outdoor",
+      "contenuto_completo": "La nutrizione è un aspetto importante della coltivazione della cannabis. È importante fornire alle piante i nutrienti necessari per crescere e produrre fiori di alta qualità.",
+      "punti_chiave": [
+        "Fornire i nutrienti necessari",
+        "Utilizzare un substrato idoneo per la nutrizione",
+        "Mantenere la temperatura costante",
+        "Mantenere l'umidità costante",
+        "Utilizzare un substrato idoneo per la conservazione"
+      ],
+      "errori_comuni": [
+        "Non fornire i nutrienti necessari",
+        "Non utilizzare un substrato idoneo per la nutrizione",
+        "Non mantenere la temperatura costante"
+      ],
+      "quando": "La nutrizione solitamente avviene entro 2-4 settimane",
+      "tecniche_pdf": [
+        "Utilizzo di compost per migliorare la struttura del suolo",
+        "Introduzione di organismi benefici per controllare le malattie"
+      ],
+      "esperimenti_pdf": [
+        "Utilizzo di calendari lunari per la semina e la raccolta",
+        "Osservazione dei ritmi naturali delle piante"
+      ]
+    },
+    {
+      "fase": "irrigazione",
+      "categoria": "fase",
       "titolo": "Irrigazione Cannabis Outdoor",
-      "categoria": "acqua",
-      "contenuto_completo": "L'irrigazione è fondamentale per la crescita sana della cannabis outdoor. Utilizza acqua a temperatura ambiente e evita di bagnare le foglie per prevenire malattie. La frequenza di irrigazione dipende dalle condizioni climatiche e dal tipo di terreno. In generale, annaffia quando il terreno è asciutto al tocco, circa 2-3 volte a settimana durante il periodo di crescita e 1-2 volte a settimana durante la fioritura.",
+      "contenuto_completo": "L'irrigazione è un aspetto importante della coltivazione della cannabis. È importante fornire alle piante l'acqua necessaria per crescere e produrre fiori di alta qualità.",
       "punti_chiave": [
-        "Annaffia al mattino presto",
-        "Utilizza acqua a temperatura ambiente",
-        "Evita di bagnare le foglie"
+        "Fornire l'acqua necessaria",
+        "Utilizzare un substrato idoneo per l'irrigazione",
+        "Mantenere la temperatura costante",
+        "Mantenere l'umidità costante",
+        "Utilizzare un substrato idoneo per la conservazione"
       ],
       "errori_comuni": [
-        "Annaffiare troppo frequentemente",
-        "Utilizzare acqua troppo fredda o troppo calda"
+        "Non fornire l'acqua necessaria",
+        "Non utilizzare un substrato idoneo per l'irrigazione",
+        "Non mantenere la temperatura costante"
       ],
-      "quando": "Durante tutto il ciclo di crescita, ma con maggiore attenzione durante la fioritura"
+      "quando": "L'irrigazione solitamente avviene entro 2-4 settimane",
+      "tecniche_pdf": [
+        "Utilizzo di farina di roccia come fertilizzante",
+        "Gestione del suolo per migliorare la struttura e la fertilità"
+      ],
+      "esperimenti_pdf": [
+        "Utilizzo di intenzioni positive per influenzare la crescita delle piante",
+        "Meditazione per aumentare la consapevolezza dell'agricoltore"
+      ]
     },
     {
-      "titolo": "Nutrizione Living Soil",
-      "categoria": "nutrizione",
-      "contenuto_completo": "La nutrizione Living Soil si basa sull'utilizzo di microrganismi benefici presenti nel terreno per fornire nutrienti alle piante. Utilizza un terreno ricco di materia organica e aggiungi compost o vermicompost per aumentare la biodiversità. Evita l'uso di fertilizzanti chimici, poiché possono danneggiare gli equilibri del terreno.",
+      "fase": "difesa_biologica",
+      "categoria": "fase",
+      "titolo": "Difesa Biologica Cannabis Outdoor",
+      "contenuto_completo": "La difesa biologica è un aspetto importante della coltivazione della cannabis. È importante utilizzare metodi naturali per controllare le malattie e i parassiti.",
       "punti_chiave": [
-        "Utilizza un terreno ricco di materia organica",
-        "Aggiungi compost o vermicompost",
-        "Evita l'uso di fertilizzanti chimici"
+        "Utilizzare metodi naturali per controllare le malattie e i parassiti",
+        "Utilizzare un substrato idoneo per la difesa biologica",
+        "Mantenere la temperatura costante",
+        "Mantenere l'umidità costante",
+        "Utilizzare un substrato idoneo per la conservazione"
       ],
       "errori_comuni": [
-        "Utilizzare fertilizzanti chimici"
+        "Non utilizzare metodi naturali per controllare le malattie e i parassiti",
+        "Non utilizzare un substrato idoneo per la difesa biologica",
+        "Non mantenere la temperatura costante"
       ],
-      "quando": "All'inizio del ciclo di crescita e durante la fase di crescita vegetativa"
-    },
-    {
-      "titolo": "Difesa Biologica",
-      "categoria": "difesa",
-      "contenuto_completo": "La difesa biologica è un metodo naturale per proteggere le piante da parassiti e malattie. Utilizza insetti benefici come ladybug e lacewing per controllare le infestazioni di afidi e altri insetti dannosi. Inoltre, utilizza fungicidi biologici come il Trichoderma per prevenire malattie come la muffa grigia.",
-      "punti_chiave": [
-        "Utilizza insetti benefici",
-        "Utilizza fungicidi biologici",
-        "Mantieni un ambiente pulito e asciutto"
+      "quando": "La difesa biologica solitamente avviene entro 2-4 settimane",
+      "tecniche_pdf": [
+        "Utilizzo di compost per migliorare la struttura del suolo",
+        "Introduzione di organismi benefici per controllare le malattie"
       ],
-      "errori_comuni": [
-        "Non utilizzare metodi di difesa biologica"
-      ],
-      "quando": "Durante tutto il ciclo di crescita, ma con maggiore attenzione durante la fioritura"
+      "esperimenti_pdf": [
+        "Utilizzo di calendari lunari per la semina e la raccolta",
+        "Osservazione dei ritmi naturali delle piante"
+      ]
     }
   ]
 }
