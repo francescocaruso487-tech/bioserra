@@ -1,86 +1,80 @@
 {
-  "lastUpdate": "2026-06-22T03:00:29.531Z",
+  "lastUpdate": "2026-06-23T03:00:27.300Z",
   "versione": "4.0",
   "cervello": {
     "consigli_giorno": [
-      "Controllare la temperatura e l'umidità nella serra per garantire condizioni ottimali per le piante",
-      "Verificare lo stato di crescita delle piante e apportare eventuali correzioni"
+      "Controllare l'umidità del terreno e l'irrigazione delle piante in base alle ore di luce disponibili"
     ],
     "consigli_piante": {
-      "autofiorenti": "Controllare la lunghezza dei giorni di luce per ottimizzare la fioritura",
-      "femminizzate": "Iniziare a pensare alla potatura per favorire una crescita uniforme"
+      "autofiorenti": "Controllare la data di raccolta per ogni pianta e prepararsi per la potatura",
+      "femminizzate": "Controllare lo sviluppo delle piante e assicurarsi che ricevano abbastanza luce e nutrienti"
     },
     "tecniche_nuove": [
       {
-        "nome": "Tecnica di respirazione delle piante",
-        "descrizione": "Tecnica per migliorare la respirazione delle piante",
+        "nome": "Sistema di supporto per piante",
+        "descrizione": "Utilizzare un sistema di supporto per aiutare le piante a crescere in modo più efficiente",
         "materiali": [
-          "ossigeno",
-          "anidride carbonica"
+          "filo di ferro",
+          "stalli di legno"
         ],
         "difficolta": "facile",
         "fonte": "Royal Queen Seeds"
       }
     ],
     "scoperte": [
-      "La luna è nel primo quarto, il che potrebbe influenzare la crescita delle piante",
-      "Le piante sembrano rispondere bene alle tecniche di coltivazione attuali"
+      "La Luna è nel primo quarto, il che può influire sulla crescita delle piante"
     ],
     "avvisi": [
-      "Attenzione alla presenza di parassiti o malattie nelle piante",
-      "Verificare l'integrità della serra e dei suoi componenti"
+      "Controllare le piante per eventuali segni di stress o malattie e prendere misure preventive"
     ]
   },
   "agenti": {
     "piante": {
       "stato_generale": "in monitoraggio",
-      "irrigazione": "Irrigare le piante ogni 2 giorni, con circa 1 litro d'acqua per pianta",
-      "nutrizione": "Aggiungere un fertilizzante equilibrato per favorire la crescita sana delle piante",
-      "attenzione": "Controllare la lunghezza dei giorni di luce per ottimizzare la fioritura",
+      "irrigazione": "Irrigare le piante ogni 2-3 giorni, a seconda dell'umidità del terreno, con circa 1-2 litri di acqua per pianta",
+      "nutrizione": "Aggiungere un concime bilanciato per piante in crescita, come NPK 20-20-20, una volta a settimana",
+      "attenzione": "Controllare la data di raccolta per ogni pianta e prepararsi per la potatura",
       "piante_critiche": []
     },
     "ambiente": {
       "luna": {
         "fase": "Primo Quarto",
         "emoji": "🌓",
-        "illuminazione_pct": 45,
-        "consiglio": "Luna calante."
+        "illuminazione_pct": 55,
+        "consiglio": "Luna in crescita."
       },
       "biodinamica": {
-        "tipo_giorno": "Fiore",
-        "qualita": "Ottimo",
-        "consiglio": "Perfetto per trattamenti fogliari."
+        "tipo_giorno": "Frutto",
+        "qualita": "Eccellente",
+        "consiglio": "Ideale per raccolta e cura infiorescenze."
       },
       "ore_luce": 15,
-      "correlazione": "Primo Quarto + Giorno Fiore",
-      "momento_migliore": "pomeriggio"
+      "correlazione": "Primo Quarto + Giorno Frutto",
+      "momento_migliore": "mattino presto"
     },
     "elettro": {
       "verifica_oggi": [
-        "Verifica del sistema Lakhovsky per assicurarsi che sia funzionante correttamente",
-        "Controllo della pila galvanica Fe-Cu per garantire la presenza di elettricità"
+        "Verificare il funzionamento della pila galvanica Fe-Cu e del sistema di magnetizzazione dell'acqua"
       ],
       "ottimizzazione": "Ottimizza in base alla fase Primo Quarto"
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Tecnica di respirazione delle piante",
-      "descrizione": "Tecnica per migliorare la respirazione delle piante",
+      "nome": "Sistema di supporto per piante",
+      "descrizione": "Utilizzare un sistema di supporto per aiutare le piante a crescere in modo più efficiente",
       "materiali": [
-        "ossigeno",
-        "anidride carbonica"
+        "filo di ferro",
+        "stalli di legno"
       ],
       "difficolta": "facile",
       "fonte": "Royal Queen Seeds"
     }
   ],
   "avvisi": [
-    "Attenzione alla presenza di parassiti o malattie nelle piante",
-    "Verificare l'integrità della serra e dei suoi componenti"
+    "Controllare le piante per eventuali segni di stress o malattie e prendere misure preventive"
   ],
   "consigli_giorno": [
-    "Controllare la temperatura e l'umidità nella serra per garantire condizioni ottimali per le piante",
-    "Verificare lo stato di crescita delle piante e apportare eventuali correzioni"
+    "Controllare l'umidità del terreno e l'irrigazione delle piante in base alle ore di luce disponibili"
   ]
 }
