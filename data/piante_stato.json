@@ -1,7 +1,5 @@
 {
-  "lastUpdate": "2026-06-22T13:56:24.000Z",
-  "ore_sole_default": 10.0,
-  "nota": "Auto: date con moltiplicatore ore sole. Femm: date fisse da fotoperiodo.",
+  "lastUpdate": "2026-06-23T06:00:30.666Z",
   "data": {
     "stato_piante": [
       {
@@ -9,152 +7,162 @@
         "nome": "Epsilon F1",
         "tipo": "autofiorente",
         "germoglio": "2026-04-21",
-        "giorni_vita": 62,
-        "fase": "Fioritura",
-        "giorni_a_taglio": 22,
-        "giorni_a_raccolta": 22,
-        "giorni_a_essiccazione": 37,
-        "data_taglio": "2026-07-14",
-        "data_raccolta": "2026-07-14",
-        "data_essiccazione": "2026-07-29",
-        "data_concia": "2026-08-18"
+        "giorni_vita": 63,
+        "fase": "Essiccazione",
+        "giorni_a_raccolta": -3,
+        "giorni_a_essiccazione": 12,
+        "data_raccolta": "2026-06-20",
+        "data_essiccazione": "2026-07-05",
+        "data_concia": "2026-07-25"
       },
       {
         "id": 1,
         "nome": "Milky Way F1",
         "tipo": "autofiorente",
         "germoglio": "2026-04-23",
-        "giorni_vita": 60,
+        "giorni_vita": 61,
         "fase": "Fioritura",
-        "giorni_a_taglio": 38,
-        "giorni_a_raccolta": 38,
-        "giorni_a_essiccazione": 53,
-        "data_taglio": "2026-07-30",
-        "data_raccolta": "2026-07-30",
-        "data_essiccazione": "2026-08-14",
-        "data_concia": "2026-09-03"
+        "giorni_a_raccolta": 14,
+        "giorni_a_essiccazione": 29,
+        "data_raccolta": "2026-07-07",
+        "data_essiccazione": "2026-07-22",
+        "data_concia": "2026-08-11"
       },
       {
         "id": 2,
         "nome": "Titan F1",
         "tipo": "autofiorente",
         "germoglio": "2026-04-22",
-        "giorni_vita": 61,
+        "giorni_vita": 62,
         "fase": "Fioritura",
-        "giorni_a_taglio": 37,
-        "giorni_a_raccolta": 37,
-        "giorni_a_essiccazione": 52,
-        "data_taglio": "2026-07-29",
-        "data_raccolta": "2026-07-29",
-        "data_essiccazione": "2026-08-13",
-        "data_concia": "2026-09-02"
+        "giorni_a_raccolta": 13,
+        "giorni_a_essiccazione": 28,
+        "data_raccolta": "2026-07-06",
+        "data_essiccazione": "2026-07-21",
+        "data_concia": "2026-08-10"
       },
       {
         "id": 3,
         "nome": "Medusa F1",
         "tipo": "autofiorente",
         "germoglio": "2026-04-21",
-        "giorni_vita": 62,
+        "giorni_vita": 63,
         "fase": "Fioritura",
-        "giorni_a_taglio": 36,
-        "giorni_a_raccolta": 36,
-        "giorni_a_essiccazione": 51,
-        "data_taglio": "2026-07-28",
-        "data_raccolta": "2026-07-28",
-        "data_essiccazione": "2026-08-12",
-        "data_concia": "2026-09-01"
+        "giorni_a_raccolta": 12,
+        "giorni_a_essiccazione": 27,
+        "data_raccolta": "2026-07-05",
+        "data_essiccazione": "2026-07-20",
+        "data_concia": "2026-08-09"
       },
       {
         "id": 8,
         "nome": "Gaia F1",
         "tipo": "autofiorente",
         "germoglio": "2026-04-21",
-        "giorni_vita": 62,
+        "giorni_vita": 63,
         "fase": "Fioritura",
-        "giorni_a_taglio": 29,
-        "giorni_a_raccolta": 29,
-        "giorni_a_essiccazione": 44,
-        "data_taglio": "2026-07-21",
-        "data_raccolta": "2026-07-21",
-        "data_essiccazione": "2026-08-05",
-        "data_concia": "2026-08-25"
+        "giorni_a_raccolta": 7,
+        "giorni_a_essiccazione": 22,
+        "data_raccolta": "2026-06-30",
+        "data_essiccazione": "2026-07-15",
+        "data_concia": "2026-08-04"
       },
       {
         "id": 4,
         "nome": "Astro Lemonade F1",
         "tipo": "femminizzata",
         "germoglio": "2026-04-21",
-        "giorni_vita": 62,
+        "giorni_vita": 63,
         "fase": "Vegetazione",
-        "giorni_a_taglio": 151,
-        "giorni_a_raccolta": 151,
-        "giorni_a_essiccazione": 166,
-        "data_taglio": "2026-11-20",
-        "data_raccolta": "2026-11-20",
-        "data_essiccazione": "2026-12-05",
-        "data_concia": "2026-12-25"
+        "giorni_a_raccolta": 114,
+        "giorni_a_essiccazione": 129,
+        "data_raccolta": "2026-10-15",
+        "data_essiccazione": "2026-10-30",
+        "data_concia": "2026-11-19"
       },
       {
         "id": 11,
         "nome": "Cosmic Cheddar F1",
         "tipo": "femminizzata",
         "germoglio": "2026-05-02",
-        "giorni_vita": 51,
+        "giorni_vita": 52,
         "fase": "Vegetazione",
-        "giorni_a_taglio": 151,
-        "giorni_a_raccolta": 151,
-        "giorni_a_essiccazione": 166,
-        "data_taglio": "2026-11-20",
-        "data_raccolta": "2026-11-20",
-        "data_essiccazione": "2026-12-05",
-        "data_concia": "2026-12-25"
+        "giorni_a_raccolta": 114,
+        "giorni_a_essiccazione": 129,
+        "data_raccolta": "2026-10-15",
+        "data_essiccazione": "2026-10-30",
+        "data_concia": "2026-11-19"
       },
       {
         "id": 6,
         "nome": "Orbital Banana F1",
         "tipo": "femminizzata",
         "germoglio": "2026-04-30",
-        "giorni_vita": 53,
+        "giorni_vita": 54,
         "fase": "Vegetazione",
-        "giorni_a_taglio": 156,
-        "giorni_a_raccolta": 156,
-        "giorni_a_essiccazione": 171,
-        "data_taglio": "2026-11-25",
-        "data_raccolta": "2026-11-25",
-        "data_essiccazione": "2026-12-10",
-        "data_concia": "2026-12-30"
+        "giorni_a_raccolta": 114,
+        "giorni_a_essiccazione": 129,
+        "data_raccolta": "2026-10-15",
+        "data_essiccazione": "2026-10-30",
+        "data_concia": "2026-11-19"
       },
       {
         "id": 10,
         "nome": "Royal Gorilla",
         "tipo": "femminizzata",
         "germoglio": "2026-04-22",
-        "giorni_vita": 61,
+        "giorni_vita": 62,
         "fase": "Vegetazione",
-        "giorni_a_taglio": 170,
-        "giorni_a_raccolta": 170,
-        "giorni_a_essiccazione": 185,
-        "data_taglio": "2026-12-09",
-        "data_raccolta": "2026-12-09",
-        "data_essiccazione": "2026-12-24",
-        "data_concia": "2027-01-13"
+        "giorni_a_raccolta": 124,
+        "giorni_a_essiccazione": 139,
+        "data_raccolta": "2026-10-25",
+        "data_essiccazione": "2026-11-09",
+        "data_concia": "2026-11-29"
       },
       {
         "id": 9,
         "nome": "Mexican Rush",
         "tipo": "femminizzata",
         "germoglio": "2026-04-21",
-        "giorni_vita": 62,
+        "giorni_vita": 63,
         "fase": "Vegetazione",
-        "giorni_a_taglio": 175,
-        "giorni_a_raccolta": 175,
-        "giorni_a_essiccazione": 190,
-        "data_taglio": "2026-12-14",
-        "data_raccolta": "2026-12-14",
-        "data_essiccazione": "2026-12-29",
-        "data_concia": "2027-01-18"
+        "giorni_a_raccolta": 124,
+        "giorni_a_essiccazione": 139,
+        "data_raccolta": "2026-10-25",
+        "data_essiccazione": "2026-11-09",
+        "data_concia": "2026-11-29"
       }
     ],
-    "alerts_oggi": []
+    "alerts_oggi": [
+      {
+        "tipo": "PREAVVISO",
+        "pianta": "Milky Way F1",
+        "id": 1,
+        "giorni": 14,
+        "msg": "Raccolta tra 14 giorni — prepara materiali"
+      },
+      {
+        "tipo": "PREAVVISO",
+        "pianta": "Titan F1",
+        "id": 2,
+        "giorni": 13,
+        "msg": "Raccolta tra 13 giorni — prepara materiali"
+      },
+      {
+        "tipo": "PREAVVISO",
+        "pianta": "Medusa F1",
+        "id": 3,
+        "giorni": 12,
+        "msg": "Raccolta tra 12 giorni — prepara materiali"
+      },
+      {
+        "tipo": "RACCOLTA",
+        "pianta": "Gaia F1",
+        "id": 8,
+        "giorni": 7,
+        "msg": "Raccolta tra 7 giorni (2026-06-30)"
+      }
+    ],
+    "alert_count": 4
   }
 }
