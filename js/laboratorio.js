@@ -191,23 +191,101 @@ function labPopupAllDigest() {
    RENDER — TECNICHE (mini lista, max 4 in campo)
 ══════════════════════════════════════════════════════════════ */
 
+
+/* ── HELPER CATEGORIE ── */
+function labCatColor(cat) {
+  if (cat === 'cosmica')     return 'var(--el-violet)';
+  if (cat === 'galvanica')   return '#f0a500';
+  if (cat === 'magnetica')   return 'var(--el-blue)';
+  if (cat === 'elettrica')   return 'var(--el-cyan)';
+  if (cat === 'biodinamica') return 'var(--green3)';
+  if (cat === 'agronomica')  return '#7ec860';
+  if (cat === 'vibrazionale')return '#e040fb';
+  if (cat === 'tecnologica') return '#29b6f6';
+  if (cat === 'olistica')    return 'rgba(155,109,255,0.6)';
+  return 'var(--el-cyan)';
+}
+
+function labBuildTecnicheComplete() {
+  var base = labElTecniche.slice();
+  var analisi = (labPdfData && labPdfData.analisi) ? labPdfData.analisi : [];
+  var CLUSTER = [
+    { label:'Acqua Magnetizzata',        cat:'magnetica',    kw:['acqua magnetizzata','magnetizzazione acqua','acqua magnetiz','uso di acqua magnetizzata'] },
+    { label:'Pila Galvanica Fe-Cu',      cat:'galvanica',    kw:['pila galvanica','galvanica fe','fe-cu','ferro-rame','dispositivi come la pila galvanica'] },
+    { label:'Circuito Lakhovsky',        cat:'cosmica',      kw:['lakhovsky','spirali cosmic','spirale cosmica','spirale di rame'] },
+    { label:'Antenna Terrestre',         cat:'cosmica',      kw:['antenna terrest','antenna a terra','antenne a terra'] },
+    { label:'Stimolazione Elettrica',    cat:'elettrica',    kw:['stimolazione elettrica','correnti elettriche','corrente elettrica','applicazione di correnti','campi elettrici per stimol','elettrocultura','dispositivi elettrocultur','applicazione di principi di elettrocultura','utilizzo di elettrocultura','applicazione di principi bioelettrici'] },
+    { label:'Campi Elettromagnetici',    cat:'elettrica',    kw:['campi elettromagnetici','campo elettromagnetico','principi elettromagnetici','principi di elettromagnetismo','dispositivi elettromagnetici','applicazione di campi elettromagnetici'] },
+    { label:'Frequenze e Risonanza',     cat:'vibrazionale', kw:['frequenze armoniche','frequenze sonore','frequenz','risonanza','vibrazione','vibrazioni','principi di risonanza','applicazione di frequenze'] },
+    { label:'Calendario Lunare',         cat:'biodinamica',  kw:['calendari lunari','calendario lunare','cicli lunari','osservazione della luna'] },
+    { label:'Principi Biodinamici',      cat:'biodinamica',  kw:['biodinamica','biodinamici','ritmi naturali','osservazione dei ritmi'] },
+    { label:'Gestione Suolo Organico',   cat:'agronomica',   kw:['gestione del suolo','gestione suolo','compostaggio','compost','sostanze naturali per il suolo','farina di roccia','harina de rocas','analisi del suolo','struttura del suolo'] },
+    { label:'Micorrize e Funghi',        cat:'agronomica',   kw:['miceli','funghi benefici','micorrize','organismi benefici','introduzione di funghi'] },
+    { label:'Rotazione Colture',         cat:'agronomica',   kw:['rotazione delle colture','rotazione colture'] },
+    { label:'Gestione Idrica',           cat:'agronomica',   kw:['gestione dell\u2019acqua','gestione acqua','risorse idriche'] },
+    { label:'Geometria Sacra',           cat:'olistica',     kw:['geometria sacra','geometrie sacre','simboli e pattern','simboli e geometrie'] },
+    { label:'Pratiche Olistiche',        cat:'olistica',     kw:['principi olistici','pratiche olistiche','intenzioni positive','energia vitale','connessione con la natura','armonia con la natura','principi spirituali','concetti spirituali','principi alchemici','principi magici','meditazione','visualizzazione per','crescita personale','armonizzazione'] },
+    { label:'Cristalloterapia Piante',   cat:'olistica',     kw:['cristalli per la crescita','cristall'] },
+    { label:'Automazione Serra',         cat:'tecnologica',  kw:['automazione','principi di automazione'] },
+    { label:'Illuminazione Ottimale',    cat:'tecnologica',  kw:['principi ottici','illuminazione ottimale'] },
+    { label:'Dispositivi Specializzati', cat:'elettrica',    kw:['dispositivi a basso','dispositivi di risonanza per'] }
+  ];
+  var NON_TEC = ['nessuna tecnica','nessuna connessione','possibile ispirazione','nessuna'];
+  function norm(s) { return (s||'').toLowerCase().trim().replace(/[.,;:!?]+$/,''); }
+  function getCluster(t) {
+    var n=norm(t);
+    for (var i=0;i<CLUSTER.length;i++) {
+      for (var j=0;j<CLUSTER[i].kw.length;j++) {
+        if (n.indexOf(CLUSTER[i].kw[j])!==-1) return CLUSTER[i];
+      }
+    }
+    return null;
+  }
+  var cnt={}, baseNomi={};
+  analisi.forEach(function(a) {
+    (a.tecniche_chiave||[]).forEach(function(t) {
+      var n=norm(t);
+      if (NON_TEC.some(function(x){ return n.indexOf(x)!==-1; })) return;
+      var c=getCluster(t);
+      if (c) cnt[c.label]=(cnt[c.label]||0)+1;
+    });
+  });
+  base.forEach(function(t){ baseNomi[norm(t.nome)]=true; });
+  var extra=[];
+  CLUSTER.forEach(function(c) {
+    if (!cnt[c.label]) return;
+    if (baseNomi[norm(c.label)]) return;
+    var dupParz=false; var p=norm(c.label).split(' ')[0];
+    Object.keys(baseNomi).forEach(function(k){ if(k.indexOf(p)!==-1) dupParz=true; });
+    if (dupParz) return;
+    extra.push({
+      id:'pdf_'+c.label.toLowerCase().replace(/[^a-z0-9]+/g,'-'),
+      nome:c.label, categoria:c.cat, descrizione:'Tecnica ricorrente in '+cnt[c.label]+' PDF analizzati.',
+      occorrenze:cnt[c.label], daBase:false, sperimentale:c.cat==='olistica'
+    });
+  });
+  extra.sort(function(a,b){ return b.occorrenze-a.occorrenze; });
+  return base.concat(extra);
+}
+
 function labRenderTecniche() {
   var el = document.getElementById('lab-tec-lista');
   if (!el) return;
-  if (!labElTecniche.length) {
-    el.innerHTML = '<div style="color:rgba(0,180,255,0.35);font-size:12px;padding:6px">Nessuna tecnica caricata. Il Cervello le aggiunge ogni giorno.</div>';
+  var tutte = labBuildTecnicheComplete();
+  if (!tutte.length) {
+    el.innerHTML = '<div style="color:rgba(0,180,255,0.35);font-size:12px;padding:6px">Nessuna tecnica disponibile.</div>';
     return;
   }
   var elGlobale = {};
   try { elGlobale = JSON.parse(localStorage.getItem('el_globale') || '{}'); } catch(e) {}
   var h = '<div class="lab-tec-mini">';
-  var mostrati = labElTecniche.slice(0, 4);
-  mostrati.forEach(function(t, idx) {
+  tutte.slice(0, 4).forEach(function(t, idx) {
     var tid = t.id || t.nome || idx;
     var attiva = elGlobale[tid] || false;
-    h += '<div class="lab-tec-mini-item" onclick="labPopupTecnica(' + idx + ')">';
+    var pdfBadge = (t.daBase === false) ? '<span style="font-size:9px;background:rgba(155,109,255,0.18);color:#9b6dff;border-radius:3px;padding:1px 4px;margin-left:4px">PDF</span>' : '';
+    h += '<div class="lab-tec-mini-item" onclick="labPopupTecnicaAll(' + idx + ')">';
     h += '<div style="flex:1">';
-    h += '<div class="lab-tec-mini-name">' + labEsc(t.nome || tid) + '</div>';
+    h += '<div class="lab-tec-mini-name">' + labEsc(t.nome || tid) + pdfBadge + '</div>';
     if (t.categoria) h += '<div class="lab-tec-mini-cat">' + labEsc(t.categoria) + '</div>';
     h += '</div>';
     h += '<div onclick="event.stopPropagation()" style="margin-left:10px">';
@@ -216,9 +294,7 @@ function labRenderTecniche() {
     h += '</div>';
   });
   h += '</div>';
-  if (labElTecniche.length > 4) {
-    h += '<div class="lab-tec-vedi-tutti" onclick="labPopupAllTecniche()">\u25BC vedi tutte (' + labElTecniche.length + ')</div>';
-  }
+  h += '<div class="lab-tec-vedi-tutti" onclick="labPopupAllTecniche()">▼ vedi tutte (' + tutte.length + ')</div>';
   el.innerHTML = h;
 }
 
@@ -230,6 +306,44 @@ function labToggleTec(tid, val) {
 }
 
 /* Popup singola tecnica */
+function labPopupTecnicaAll(idx) {
+  var lista = labBuildTecnicheComplete();
+  var t = lista[idx];
+  if (!t) return;
+  var catColor = labCatColor(t.categoria);
+  var h = '<div style="font-size:10px;color:' + catColor + ';font-weight:700;letter-spacing:1px;margin-bottom:4px">⚡ ' + labEsc((t.categoria||'elettrocultura')).toUpperCase() + '</div>';
+  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(t.nome||'') + '</div>';
+  if (t.daBase === false) {
+    h += '<div style="background:rgba(155,109,255,0.1);border-radius:8px;padding:6px 10px;margin-bottom:10px;font-size:11px;color:#9b6dff">';
+    h += '📄 Tecnica estratta da ' + (t.occorrenze||1) + ' PDF analizzati</div>';
+  }
+  if (t.descrizione||t.desc) {
+    h += '<div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:14px">' + labEsc(t.descrizione||t.desc||'') + '</div>';
+  }
+  if (t.istruzioni && t.istruzioni.length) {
+    h += '<div style="font-size:11px;font-weight:700;color:var(--el-blue);margin-bottom:8px">ISTRUZIONI:</div>';
+    t.istruzioni.forEach(function(step, i) {
+      h += '<div style="display:flex;gap:10px;margin-bottom:8px;align-items:flex-start">';
+      h += '<div style="min-width:22px;height:22px;background:' + catColor + ';border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#000;flex-shrink:0">' + (i+1) + '</div>';
+      h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(step) + '</div></div>';
+    });
+  }
+  if (t.materiali && t.materiali.length) {
+    h += '<div style="background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.15);border-radius:10px;padding:10px;margin-top:10px">';
+    h += '<div style="font-size:11px;font-weight:700;color:var(--el-blue);margin-bottom:6px">🛠 MATERIALI:</div>';
+    t.materiali.forEach(function(m) { h += '<div style="font-size:12px;color:var(--text2);padding:2px 0">• ' + labEsc(m) + '</div>'; });
+    h += '</div>';
+  }
+  if (t.difficolta) {
+    var diff = t.difficolta==='facile' ? '🟢 Facile' : t.difficolta==='media' ? '🟡 Media' : '🔴 Difficile';
+    h += '<div style="margin-top:10px;font-size:12px;color:var(--text3)">Difficoltà: <strong>' + diff + '</strong></div>';
+  }
+  if (t.sperimentale) {
+    h += '<div style="margin-top:10px;background:rgba(155,109,255,0.1);border:1px solid rgba(155,109,255,0.3);border-radius:8px;padding:8px;font-size:11px;color:var(--el-violet)">🔬 Tecnica sperimentale — documenta le osservazioni.</div>';
+  }
+  labPopupOpen(h);
+}
+
 function labPopupTecnica(idx) {
   var t = labElTecniche[idx];
   if (!t) return;
@@ -266,25 +380,43 @@ function labPopupTecnica(idx) {
 
 /* Popup tutte le tecniche */
 function labPopupAllTecniche() {
-  if (!labElTecniche.length) {
+  var tutte = labBuildTecnicheComplete();
+  if (!tutte.length) {
     labPopupOpen('<div style="color:rgba(0,180,255,0.4);padding:20px;text-align:center">Nessuna tecnica disponibile.</div>');
     return;
   }
   var elGlobale = {};
   try { elGlobale = JSON.parse(localStorage.getItem('el_globale') || '{}'); } catch(e) {}
-  var h = '<div style="font-size:10px;color:var(--el-blue);font-weight:700;letter-spacing:1px;margin-bottom:14px">\u26A1 TUTTE LE TECNICHE (' + labElTecniche.length + ')</div>';
-  labElTecniche.forEach(function(t, idx) {
-    var tid = t.id || t.nome || idx;
-    var attiva = elGlobale[tid] || false;
-    var catColor = t.categoria === 'cosmica' ? 'var(--el-violet)' : t.categoria === 'galvanica' ? '#f0a500' : t.categoria === 'magnetica' ? 'var(--el-blue)' : 'var(--el-cyan)';
-    h += '<div style="background:rgba(0,180,255,0.04);border:1px solid rgba(0,180,255,0.12);border-radius:12px;padding:12px;margin-bottom:8px">';
-    h += '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px">';
-    h += '<div style="flex:1;cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupTecnica(' + idx + ');},50)">';
-    h += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:2px">' + labEsc(t.nome || tid) + '</div>';
-    if (t.categoria) h += '<div style="font-size:10px;color:' + catColor + '">' + labEsc(t.categoria) + '</div>';
-    h += '</div>';
-    h += '<label class="toggle-sw" onclick="event.stopPropagation()"><input type="checkbox" ' + (attiva ? 'checked' : '') + ' onchange="labToggleTec(\'' + String(tid).replace(/'/g,'') + '\',this.checked)"><span class="toggle-slider"></span></label>';
-    h += '</div></div>';
+  var baseN = tutte.filter(function(t){ return t.daBase !== false; }).length;
+  var pdfN  = tutte.length - baseN;
+  var catOrder = ['elettrica','magnetica','galvanica','cosmica','vibrazionale','biodinamica','agronomica','tecnologica','olistica'];
+  var catMap = {}; catOrder.forEach(function(c){ catMap[c]=[]; });
+  tutte.forEach(function(t, idx) {
+    var cat = t.categoria || 'elettrica';
+    if (!catMap[cat]) catMap[cat]=[];
+    catMap[cat].push({ t:t, idx:idx });
+  });
+  var h = '<div style="font-size:10px;color:var(--el-blue);font-weight:700;letter-spacing:1px;margin-bottom:2px">⚡ TECNICHE (' + tutte.length + ')</div>';
+  h += '<div style="font-size:11px;color:var(--text3);margin-bottom:14px">' + baseN + ' base · ' + pdfN + ' da PDF</div>';
+  catOrder.forEach(function(cat) {
+    var items = catMap[cat];
+    if (!items || !items.length) return;
+    var catColor = labCatColor(cat);
+    h += '<div style="font-size:10px;font-weight:700;color:' + catColor + ';letter-spacing:0.5px;margin:12px 0 6px;text-transform:uppercase">' + cat + '</div>';
+    items.forEach(function(item) {
+      var t=item.t; var idx=item.idx;
+      var tid = t.id||t.nome||idx;
+      var attiva = elGlobale[tid]||false;
+      var pdfBadge = (t.daBase===false) ? ' <span style="font-size:9px;background:rgba(155,109,255,0.18);color:#9b6dff;border-radius:3px;padding:1px 4px">PDF</span>' : '';
+      h += '<div style="background:rgba(0,180,255,0.04);border:1px solid rgba(0,180,255,0.12);border-left:2px solid ' + catColor + ';border-radius:0 10px 10px 0;padding:10px 12px;margin-bottom:6px">';
+      h += '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px">';
+      h += '<div style="flex:1;cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupTecnicaAll(' + idx + ');},50)">';
+      h += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:1px">' + labEsc(t.nome||tid) + pdfBadge + '</div>';
+      if (t.occorrenze) h += '<div style="font-size:10px;color:' + catColor + '">' + t.occorrenze + ' PDF</div>';
+      h += '</div>';
+      h += '<label class="toggle-sw" onclick="event.stopPropagation()"><input type="checkbox" ' + (attiva?'checked':'') + ' onchange="labToggleTec(\'' + String(tid).replace(/'/g,'') + '\',this.checked)"><span class="toggle-slider"></span></label>';
+      h += '</div></div>';
+    });
   });
   labPopupOpen(h);
 }
@@ -470,31 +602,52 @@ function labRenderPdf() {
 function labPopupPdf(idx) {
   var pdf = labPdfData && labPdfData.analisi && labPdfData.analisi[idx];
   if (!pdf) return;
-  var h = '<div style="font-size:10px;color:var(--el-violet);font-weight:700;letter-spacing:1px;margin-bottom:4px">\uD83D\uDCC4 ANALISI PDF</div>';
-  h += '<div style="font-size:17px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(pdf.titolo || '') + '</div>';
-  if (pdf.sommario) h += '<div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:14px">' + labEsc(pdf.sommario) + '</div>';
-  if (pdf.tecniche_chiave && pdf.tecniche_chiave.length) {
-    h += '<div style="font-size:10px;font-weight:700;color:var(--el-violet);margin-bottom:8px;letter-spacing:0.5px">TECNICHE CHIAVE:</div>';
-    pdf.tecniche_chiave.forEach(function(tc) {
-      h += '<div style="background:rgba(155,109,255,0.06);border-radius:8px;padding:8px;margin-bottom:6px">';
-      if (typeof tc === 'string') h += '<div style="font-size:12px;color:var(--text2)">\u2022 ' + labEsc(tc) + '</div>';
-      else {
-        if (tc.nome) h += '<div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px">' + labEsc(tc.nome) + '</div>';
-        if (tc.descrizione) h += '<div style="font-size:11px;color:var(--text2);line-height:1.5">' + labEsc(tc.descrizione) + '</div>';
-      }
-      h += '</div>';
+  var relColor = pdf.rilevanza==='alta' ? 'var(--green3)' : pdf.rilevanza==='media' ? 'var(--orange)' : 'var(--text3)';
+  var h = '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">';
+  h += '<div style="font-size:10px;color:var(--el-violet);font-weight:700;letter-spacing:1px">📄 ANALISI PDF</div>';
+  if (pdf.rilevanza) h += '<div style="font-size:10px;color:' + relColor + ';font-weight:700">' + labEsc(pdf.rilevanza.toUpperCase()) + '</div>';
+  h += '</div>';
+  h += '<div style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:10px;line-height:1.4">' + labEsc(pdf.titolo||'') + '</div>';
+  if (pdf.tag && pdf.tag.length) {
+    h += '<div style="margin-bottom:10px">';
+    pdf.tag.forEach(function(tg) {
+      h += '<span style="background:rgba(155,109,255,0.12);border:1px solid rgba(155,109,255,0.2);border-radius:5px;padding:2px 7px;font-size:10px;color:#9b6dff;margin:0 3px 3px 0;display:inline-block">' + labEsc(tg) + '</span>';
     });
-  }
-  if (pdf.estratto_chiave) {
-    h += '<div style="background:rgba(0,180,255,0.06);border-left:2px solid var(--el-blue);padding:10px;border-radius:0 8px 8px 0;margin:10px 0">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:4px">ESTRATTO CHIAVE</div>';
-    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(pdf.estratto_chiave) + '</div>';
     h += '</div>';
   }
+  if (pdf.sommario) h += '<div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px">' + labEsc(pdf.sommario) + '</div>';
+  if (pdf.tecniche_chiave && pdf.tecniche_chiave.length) {
+    var NON_TEC=['nessuna tecnica','nessuna connessione','possibile ispirazione','nessuna'];
+    var tcF=pdf.tecniche_chiave.filter(function(t){
+      var n=(t+'').toLowerCase();
+      return !NON_TEC.some(function(x){ return n.indexOf(x)!==-1; });
+    });
+    if (tcF.length) {
+      h += '<div style="background:rgba(155,109,255,0.06);border-radius:10px;padding:10px;margin-bottom:10px">';
+      h += '<div style="font-size:10px;font-weight:700;color:var(--el-violet);margin-bottom:8px">⚡ TECNICHE CHIAVE</div>';
+      tcF.forEach(function(tc) { h += '<div style="font-size:12px;color:var(--text2);padding:3px 0;border-bottom:1px solid rgba(155,109,255,0.08)">• ' + labEsc(tc+'') + '</div>'; });
+      h += '</div>';
+    }
+  }
+  if (pdf.estratto_chiave) {
+    h += '<div style="background:rgba(0,180,255,0.06);border-left:2px solid var(--el-blue);padding:10px;border-radius:0 8px 8px 0;margin-bottom:10px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:4px">ESTRATTO CHIAVE</div>';
+    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6;font-style:italic">' + labEsc(pdf.estratto_chiave) + '</div></div>';
+  }
   if (pdf.consiglio_coltivazione) {
-    h += '<div style="background:rgba(76,175,118,0.06);border-radius:10px;padding:10px;margin-top:8px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:4px">CONSIGLIO COLTIVAZIONE</div>';
-    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(pdf.consiglio_coltivazione) + '</div>';
+    h += '<div style="background:rgba(76,175,118,0.07);border-radius:10px;padding:10px;margin-bottom:8px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:5px">🌱 COLTIVAZIONE</div>';
+    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(pdf.consiglio_coltivazione) + '</div></div>';
+  }
+  if (pdf.consiglio_elettrocultura) {
+    h += '<div style="background:rgba(0,180,255,0.06);border-radius:10px;padding:10px;margin-bottom:8px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:5px">⚡ ELETTROCULTURA</div>';
+    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(pdf.consiglio_elettrocultura) + '</div></div>';
+  }
+  if (pdf.connessioni && pdf.connessioni.length) {
+    h += '<div style="margin-top:4px">';
+    h += '<div style="font-size:10px;font-weight:700;color:rgba(155,109,255,0.6);margin-bottom:6px">CONNESSIONI (' + pdf.connessioni.length + ')</div>';
+    pdf.connessioni.slice(0,5).forEach(function(c) { h += '<div style="font-size:11px;color:rgba(155,109,255,0.55);padding:2px 0">🔗 ' + labEsc(c+'') + '</div>'; });
     h += '</div>';
   }
   labPopupOpen(h);
@@ -562,20 +715,26 @@ function labRenderGuide() {
 function labPopupGuida(idx) {
   var g = labGuideData[idx];
   if (!g) return;
-  var catColor = g.categoria === 'acqua' ? 'var(--el-blue)' : g.categoria === 'nutrizione' ? 'var(--green3)' : g.categoria === 'difesa' ? 'var(--red)' : 'var(--el-violet)';
-  var h = '<div style="font-size:10px;color:' + catColor + ';font-weight:700;letter-spacing:1px;margin-bottom:4px">\uD83D\uDCD6 ' + labEsc((g.categoria || 'guida')).toUpperCase() + '</div>';
-  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(g.titolo || '') + '</div>';
+  var catColor = g.categoria==='acqua' ? 'var(--el-blue)' : g.categoria==='nutrizione' ? 'var(--green3)' : g.categoria==='difesa' ? 'var(--red)' : g.categoria==='luce' ? '#f0a500' : 'var(--el-violet)';
+  var catIcon  = g.categoria==='acqua' ? '💧' : g.categoria==='nutrizione' ? '🌱' : g.categoria==='difesa' ? '🛡' : g.categoria==='luce' ? '☀️' : '📖';
+  var h = '<div style="font-size:10px;color:' + catColor + ';font-weight:700;letter-spacing:1px;margin-bottom:4px">' + catIcon + ' ' + labEsc((g.categoria||'guida')).toUpperCase() + '</div>';
+  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(g.titolo||'') + '</div>';
   if (g.contenuto_completo) h += '<div style="font-size:13px;color:var(--text2);line-height:1.8;margin-bottom:14px">' + labEsc(g.contenuto_completo) + '</div>';
   if (g.punti_chiave && g.punti_chiave.length) {
-    h += '<div style="background:rgba(76,175,118,0.08);border-radius:10px;padding:12px;margin-bottom:10px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:6px">PUNTI CHIAVE</div>';
-    g.punti_chiave.forEach(function(p) { h += '<div style="font-size:12px;color:var(--text2);padding:3px 0">\u2713 ' + labEsc(p) + '</div>'; });
+    h += '<div style="background:rgba(76,175,118,0.08);border-left:2px solid var(--green3);border-radius:0 10px 10px 0;padding:12px;margin-bottom:10px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:8px">PUNTI CHIAVE</div>';
+    g.punti_chiave.forEach(function(p) { h += '<div style="font-size:12px;color:var(--text2);padding:4px 0;border-bottom:1px solid rgba(76,175,118,0.1)">✓ ' + labEsc(p) + '</div>'; });
     h += '</div>';
   }
+  if (g.quando) {
+    h += '<div style="background:rgba(0,180,255,0.06);border-radius:10px;padding:10px;margin-bottom:10px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:5px">🗓 QUANDO APPLICARE</div>';
+    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(g.quando) + '</div></div>';
+  }
   if (g.errori_comuni && g.errori_comuni.length) {
-    h += '<div style="background:rgba(224,82,82,0.06);border-radius:10px;padding:10px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--red);margin-bottom:6px">ERRORI COMUNI</div>';
-    g.errori_comuni.forEach(function(err) { h += '<div style="font-size:12px;color:var(--text2);padding:3px 0">\u2717 ' + labEsc(err) + '</div>'; });
+    h += '<div style="background:rgba(224,82,82,0.07);border-left:2px solid var(--red);border-radius:0 10px 10px 0;padding:10px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--red);margin-bottom:8px">ERRORI COMUNI</div>';
+    g.errori_comuni.forEach(function(err) { h += '<div style="font-size:12px;color:var(--text2);padding:4px 0;border-bottom:1px solid rgba(224,82,82,0.1)">✗ ' + labEsc(err) + '</div>'; });
     h += '</div>';
   }
   labPopupOpen(h);
