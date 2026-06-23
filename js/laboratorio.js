@@ -810,6 +810,40 @@ async function labLoadSecondBrain() {
   } catch(e) {
     console.warn('Second Brain load error:', e);
   }
+  labRenderSbMini();
+}
+
+/* mini widget Second Brain nella pagina principale */
+function labRenderSbMini() {
+  var el = document.getElementById('lab-sb-mini');
+  if (!el) return;
+  var totVet = labVettoriData && labVettoriData.vettori ? labVettoriData.vettori.length : 0;
+  var totPdf = labPdfData && labPdfData.analisi ? labPdfData.analisi.length : 0;
+  var totEdg = labGrafoData && labGrafoData.edges ? labGrafoData.edges.length : 0;
+  if (!totVet && !totPdf) {
+    el.innerHTML = '<div style="color:rgba(0,180,255,0.35);font-size:12px;padding:4px">'
+      + 'Embedding in corso — workflow gira alle 6:30.</div>';
+    return;
+  }
+  el.innerHTML = '<div style="display:flex;gap:12px;padding:4px 0;flex-wrap:wrap">'
+    + '<div style="text-align:center">'
+    +   '<div style="font-size:18px;font-weight:700;color:#00b4ff">' + totVet + '</div>'
+    +   '<div style="font-size:9px;color:rgba(0,180,255,0.45);letter-spacing:0.5px">VETTORIZZATI</div>'
+    + '</div>'
+    + '<div style="text-align:center">'
+    +   '<div style="font-size:18px;font-weight:700;color:#9b6dff">' + totPdf + '</div>'
+    +   '<div style="font-size:9px;color:rgba(155,109,255,0.45);letter-spacing:0.5px">ANALIZZATI</div>'
+    + '</div>'
+    + '<div style="text-align:center">'
+    +   '<div style="font-size:18px;font-weight:700;color:rgba(0,180,255,0.6)">' + totEdg + '</div>'
+    +   '<div style="font-size:9px;color:rgba(0,180,255,0.35);letter-spacing:0.5px">CONNESSIONI</div>'
+    + '</div>'
+    + '<div style="flex:1;display:flex;align-items:center;justify-content:flex-end">'
+    +   '<button onclick="labPopupSecondBrain()" style="background:rgba(0,180,255,0.12);border:1px solid rgba(0,180,255,0.25);'
+    +   'border-radius:8px;padding:6px 14px;color:#00b4ff;font-size:12px;cursor:pointer">'
+    +   '🧠 Apri Grafo</button>'
+    + '</div>'
+    + '</div>';
 }
 
 /* ══════════════════════════════════════════════════════════════
