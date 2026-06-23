@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-23T10:01:08.911Z",
+  "lastUpdate": "2026-06-23T16:33:40.982Z",
   "versione": "1.0",
   "esperimenti_disponibili": [
     {
@@ -160,6 +160,24 @@
       "difficolta": "Facile",
       "fonte": " Tecnologia agricola",
       "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": true,
+      "data_attivazione": "2026-06-23"
+    },
+    {
+      "id": "daily_1781640224648_2",
+      "nome": "Sistema di irrigazione a goccia con fertilizzanti",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
+      "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
+      "materiali": [
+        "Sistema di irrigazione a goccia",
+        "Fertilizzanti specifici per la cannabis",
+        "Tubi e connettori"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Guide di coltivazione della cannabis",
+      "durata_giorni": 21,
       "data_proposta": "2026-06-16",
       "attivo": true,
       "data_attivazione": "2026-06-23"
@@ -1655,23 +1673,6 @@
       "fonte": "Guida personale",
       "categoria": "nutrizione_biologica",
       "note": "Frequenza variabile a discrezione"
-    },
-    {
-      "id": "daily_1781640224648_2",
-      "nome": "Sistema di irrigazione a goccia con fertilizzanti",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
-      "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
-      "materiali": [
-        "Sistema di irrigazione a goccia",
-        "Fertilizzanti specifici per la cannabis",
-        "Tubi e connettori"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Guide di coltivazione della cannabis",
-      "durata_giorni": 21,
-      "data_proposta": "2026-06-16",
-      "attivo": false
     }
   ],
   "attivi": [],
