@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-06-22T04:30:04.268Z",
-  "total_pdf_analizzati": 1,
+  "lastUpdate": "2026-06-23T04:30:05.724Z",
+  "total_pdf_analizzati": 62,
   "connessioni": [
     {
       "pdf_a": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas",
@@ -38,6 +38,45 @@
       ],
       "difficolta": "facile",
       "beneficio_atteso": "Miglioramento della salute del suolo e della crescita delle piante"
+    },
+    {
+      "pdf_a": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas",
+      "pdf_b": "La Forza del Cervello Quantico - Dawson Church",
+      "collegamento": "Utilizzo della meditazione per migliorare la consapevolezza dell'agricoltore e la salute del suolo",
+      "principio_comune": "Connessione tra la salute del suolo e la consapevolezza dell'agricoltore",
+      "esperimento": "Applicazione di tecniche di meditazione per migliorare la consapevolezza dell'agricoltore e la salute del suolo",
+      "materiali": [
+        "farina di roccia",
+        "strumenti di meditazione"
+      ],
+      "difficolta": "media",
+      "beneficio_atteso": "Miglioramento della salute del suolo e della crescita delle piante"
+    },
+    {
+      "pdf_a": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
+      "pdf_b": "I misteri dellAntico Egitto - Roberto Tresoldi",
+      "collegamento": "Utilizzo di principi alchemici e di conoscenza della natura per migliorare la coltivazione",
+      "principio_comune": "Connessione tra la natura e l'universo",
+      "esperimento": "Applicazione di principi alchemici e di conoscenza della natura per migliorare la coltivazione",
+      "materiali": [
+        "libri di alchimia",
+        "strumenti di coltivazione"
+      ],
+      "difficolta": "avanzata",
+      "beneficio_atteso": "Miglioramento della crescita delle piante e della comprensione della natura"
+    },
+    {
+      "pdf_a": "Antenna uomo - Tiziano-Guerzoni",
+      "pdf_b": "Fondamenti di Fisica Elettrologia Magnetismo Ottica (HALLIDAY, RESNICK, WALKER)",
+      "collegamento": "Utilizzo di campi elettromagnetici per stimolare la crescita delle piante",
+      "principio_comune": "Connessione tra i campi elettromagnetici e la crescita delle piante",
+      "esperimento": "Applicazione di campi elettromagnetici per stimolare la crescita delle piante",
+      "materiali": [
+        "generatori di campi elettromagnetici",
+        "piante da testare"
+      ],
+      "difficolta": "avanzata",
+      "beneficio_atteso": "Miglioramento della crescita delle piante"
     }
   ],
   "principi_universali": [
@@ -72,6 +111,33 @@
       "pdf_fonte": [
         "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas"
       ]
+    },
+    {
+      "principio": "Connessione tra la salute del suolo e la consapevolezza dell'agricoltore",
+      "descrizione": "La salute del suolo è strettamente legata alla consapevolezza dell'agricoltore",
+      "applicazione_serra": "Applicazione di tecniche di meditazione e di gestione del suolo per migliorare la salute del suolo e la crescita delle piante",
+      "pdf_fonte": [
+        "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas",
+        "La Forza del Cervello Quantico - Dawson Church"
+      ]
+    },
+    {
+      "principio": "Connessione tra la natura e l'universo",
+      "descrizione": "La natura e l'universo sono strettamente legati",
+      "applicazione_serra": "Applicazione di principi alchemici e di conoscenza della natura per migliorare la coltivazione",
+      "pdf_fonte": [
+        "I misteri dellAntico Egitto - Roberto Tresoldi",
+        "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-"
+      ]
+    },
+    {
+      "principio": "Connessione tra i campi elettromagnetici e la crescita delle piante",
+      "descrizione": "I campi elettromagnetici possono influenzare la crescita delle piante",
+      "applicazione_serra": "Applicazione di campi elettromagnetici per stimolare la crescita delle piante",
+      "pdf_fonte": [
+        "Fondamenti di Fisica Elettrologia Magnetismo Ottica (HALLIDAY, RESNICK, WALKER)",
+        "Antenna uomo - Tiziano-Guerzoni"
+      ]
     }
   ],
   "esperimenti_incrociati": [
@@ -95,9 +161,34 @@
       "protocollo": "Applicare 1 kg di farina di roccia per ogni 10 mq di terreno, misurare la crescita delle piante ogni settimana",
       "durata": "8 settimane",
       "misurazioni": "Altezza delle piante, produzione di foglie e fiori"
+    },
+    {
+      "nome": "Esperimento di meditazione e gestione del suolo",
+      "origine": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas e La Forza del Cervello Quantico - Dawson Church",
+      "protocollo": "Applicazione di tecniche di meditazione e di gestione del suolo per migliorare la salute del suolo e la crescita delle piante",
+      "durata": "30 giorni",
+      "misurazioni": "Misurazione della salute del suolo e della crescita delle piante"
+    },
+    {
+      "nome": "Esperimento di applicazione di principi alchemici e di conoscenza della natura",
+      "origine": "I misteri dellAntico Egitto - Roberto Tresoldi e THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
+      "protocollo": "Applicazione di principi alchemici e di conoscenza della natura per migliorare la coltivazione",
+      "durata": "60 giorni",
+      "misurazioni": "Misurazione della crescita delle piante e della comprensione della natura"
+    },
+    {
+      "nome": "Esperimento di applicazione di campi elettromagnetici",
+      "origine": "Fondamenti di Fisica Elettrologia Magnetismo Ottica (HALLIDAY, RESNICK, WALKER) e Antenna uomo - Tiziano-Guerzoni",
+      "protocollo": "Applicazione di campi elettromagnetici per stimolare la crescita delle piante",
+      "durata": "30 giorni",
+      "misurazioni": "Misurazione della crescita delle piante"
     }
   ],
   "scoperte": [
+    {
+      "data": "2026-06-23",
+      "testo": "La scoperta che la connessione tra la salute del suolo e la consapevolezza dell'agricoltore può essere migliorata attraverso l'applicazione di tecniche di meditazione e di gestione del suolo."
+    },
     {
       "data": "2026-06-22",
       "testo": "L'utilizzo della farina di roccia come fertilizzante naturale può migliorare significativamente la salute del suolo e la crescita delle piante di cannabis in serra"
@@ -116,9 +207,9 @@
     }
   ],
   "stats": {
-    "totale_connessioni": 3,
-    "totale_principi": 4,
-    "totale_esperimenti": 3,
-    "nuovi_oggi": 1
+    "totale_connessioni": 6,
+    "totale_principi": 7,
+    "totale_esperimenti": 6,
+    "nuovi_oggi": 3
   }
 }
