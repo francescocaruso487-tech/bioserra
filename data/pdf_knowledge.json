@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-06-22T20:47:31.909Z",
-  "total_pdf": 41,
+  "lastUpdate": "2026-06-23T03:01:41.865Z",
+  "total_pdf": 62,
   "analisi": [
     {
       "titolo": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas (Jairo Restrepo Rivera)",
@@ -32,6 +32,24 @@
           "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
           "peso": 4,
           "motivo": "agricoltura organica"
+        },
+        {
+          "id": "pdf_41",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 2,
+          "motivo": "utilizzo di farina di roccia come fertilizzante"
+        },
+        {
+          "id": "pdf_48",
+          "titolo": "Ricerca agro-alimentare, giugno 2019",
+          "peso": 2,
+          "motivo": "utilizzo di farina di roccia come fertilizzante"
+        },
+        {
+          "id": "pdf_61",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 2,
+          "motivo": "utilizzo di farina di roccia come fertilizzante"
         }
       ]
     },
@@ -70,6 +88,12 @@
           "titolo": "Activating The Inner Eye (Harry B. Joseph)",
           "peso": 3,
           "motivo": "consapevolezza"
+        },
+        {
+          "id": "pdf_59",
+          "titolo": "Gli insegnamenti del maestro. Il vangelo esseno della pace. Libro quarto. (Edmond Bordeaux-Szekely) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 2,
+          "motivo": "meditazione per aumentare la consapevolezza dell'agricoltore"
         }
       ]
     },
@@ -116,9 +140,9 @@
           "motivo": "consapevolezza"
         },
         {
-          "id": "pdf_7",
-          "titolo": "Tertium Organum (P. D. Ouspensky)",
-          "peso": 2,
+          "id": "pdf_59",
+          "titolo": "Gli insegnamenti del maestro. Il vangelo esseno della pace. Libro quarto. (Edmond Bordeaux-Szekely) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 3,
           "motivo": "spiritualità"
         }
       ]
@@ -243,6 +267,12 @@
       "id": "pdf_5",
       "connessioni": [
         {
+          "id": "pdf_59",
+          "titolo": "Gli insegnamenti del maestro. Il vangelo esseno della pace. Libro quarto. (Edmond Bordeaux-Szekely) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 6,
+          "motivo": "spiritualità, natura"
+        },
+        {
           "id": "pdf_2",
           "titolo": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
           "peso": 5,
@@ -265,12 +295,6 @@
           "titolo": "Registri-Akashici-Accedi-Alla-Memoria-Universale-Della-Tua-Anima-e-di-Quella-Altrui_-Scopri-La-Tua-S",
           "peso": 5,
           "motivo": "spiritualità, natura"
-        },
-        {
-          "id": "pdf_1",
-          "titolo": "La Forza del Cervello Quantico - Dawson Church",
-          "peso": 4,
-          "motivo": "consapevolezza"
         }
       ]
     },
@@ -362,15 +386,15 @@
           "motivo": "spiritualità"
         },
         {
-          "id": "pdf_5",
-          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
-          "peso": 3,
+          "id": "pdf_41",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 4,
           "motivo": "spiritualità"
         },
         {
-          "id": "pdf_16",
-          "titolo": "Angeli.-Ebraismo_-cristianesimo_-islam-_G.-Agamben_-E.-Coccia",
-          "peso": 3,
+          "id": "pdf_61",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 4,
           "motivo": "spiritualità"
         }
       ]
@@ -511,22 +535,22 @@
           "motivo": "Lakhovsky"
         },
         {
-          "id": "pdf_32",
-          "titolo": "nollet_lezioni_di_fisica_1",
-          "peso": 3,
-          "motivo": "coltivazione"
+          "id": "pdf_46",
+          "titolo": "hull-elcult",
+          "peso": 4,
+          "motivo": "Lakhovsky"
         },
         {
-          "id": "pdf_3",
-          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
-          "peso": 2,
-          "motivo": "utilizzo di campi elettromagnetici per stimolare la crescita delle piante"
+          "id": "pdf_50",
+          "titolo": "elcult3",
+          "peso": 4,
+          "motivo": "Lakhovsky"
         },
         {
-          "id": "pdf_4",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 2,
-          "motivo": "utilizzo di campi elettromagnetici per stimolare la crescita delle piante"
+          "id": "pdf_52",
+          "titolo": "elcult1",
+          "peso": 4,
+          "motivo": "Lakhovsky"
         }
       ]
     },
@@ -611,6 +635,12 @@
           "motivo": "spiritualità"
         },
         {
+          "id": "pdf_42",
+          "titolo": "Rol Il grande veggente (Renzo Allegri)",
+          "peso": 3,
+          "motivo": "spiritualità"
+        },
+        {
           "id": "pdf_2",
           "titolo": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
           "peso": 2,
@@ -619,12 +649,6 @@
         {
           "id": "pdf_5",
           "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
-          "peso": 2,
-          "motivo": "spiritualità"
-        },
-        {
-          "id": "pdf_11",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
           "peso": 2,
           "motivo": "spiritualità"
         }
@@ -668,14 +692,14 @@
           "motivo": "natura"
         },
         {
-          "id": "pdf_3",
-          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
-          "peso": 2,
-          "motivo": "applicazione di principi olistici alla coltivazione"
+          "id": "pdf_59",
+          "titolo": "Gli insegnamenti del maestro. Il vangelo esseno della pace. Libro quarto. (Edmond Bordeaux-Szekely) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 3,
+          "motivo": "natura"
         },
         {
-          "id": "pdf_4",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "id": "pdf_3",
+          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
           "peso": 2,
           "motivo": "applicazione di principi olistici alla coltivazione"
         }
@@ -734,16 +758,16 @@
           "motivo": "spiritualità, natura"
         },
         {
-          "id": "pdf_12",
-          "titolo": "Book of Wisdom Volume 2 (Harry B. Joseph, Revival of Wisdom)",
-          "peso": 3,
-          "motivo": "spiritualità"
+          "id": "pdf_59",
+          "titolo": "Gli insegnamenti del maestro. Il vangelo esseno della pace. Libro quarto. (Edmond Bordeaux-Szekely) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 4,
+          "motivo": "spiritualità, natura"
         },
         {
-          "id": "pdf_2",
-          "titolo": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
-          "peso": 2,
-          "motivo": "spiritualità"
+          "id": "pdf_60",
+          "titolo": "Se vuoi la Pace prepara te stesso BUNDLE 3 LIBRI - Libro 1 Il Vangelo della Pace 1 Tu salverai il mondo + Libro 2 Il Vangelo… (Davide Appi) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 4,
+          "motivo": "spiritualità, natura"
         }
       ]
     },
@@ -772,6 +796,12 @@
           "motivo": "spiritualità, natura"
         },
         {
+          "id": "pdf_59",
+          "titolo": "Gli insegnamenti del maestro. Il vangelo esseno della pace. Libro quarto. (Edmond Bordeaux-Szekely) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 5,
+          "motivo": "spiritualità, natura"
+        },
+        {
           "id": "pdf_15",
           "titolo": "Manuale di storia delle religioni (G. Filoramo, M. Massenzio, M. Raveri etc.)",
           "peso": 4,
@@ -784,16 +814,10 @@
           "motivo": "spiritualità, natura"
         },
         {
-          "id": "pdf_7",
-          "titolo": "Tertium Organum (P. D. Ouspensky)",
-          "peso": 3,
-          "motivo": "spiritualità"
-        },
-        {
-          "id": "pdf_11",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 3,
-          "motivo": "spiritualità"
+          "id": "pdf_60",
+          "titolo": "Se vuoi la Pace prepara te stesso BUNDLE 3 LIBRI - Libro 1 Il Vangelo della Pace 1 Tu salverai il mondo + Libro 2 Il Vangelo… (Davide Appi) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 4,
+          "motivo": "spiritualità, natura"
         }
       ]
     },
@@ -826,6 +850,12 @@
           "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
           "peso": 2,
           "motivo": "agricoltura biodinamica"
+        },
+        {
+          "id": "pdf_56",
+          "titolo": "Nikola Tesla, un genio volutamente dimenticato (Baccelli, Vittorio)",
+          "peso": 2,
+          "motivo": "agricoltura biodinamica"
         }
       ]
     },
@@ -846,7 +876,14 @@
       "estratto_chiave": "Biologia del suolo per una coltivazione sostenibile",
       "data_analisi": "2026-06-22",
       "id": "pdf_18",
-      "connessioni": []
+      "connessioni": [
+        {
+          "id": "pdf_45",
+          "titolo": "laemstromelcult",
+          "peso": 2,
+          "motivo": "utilizzo di compost per migliorare la struttura del suolo"
+        }
+      ]
     },
     {
       "titolo": "La luna el sol nocturno en los tropicos y su influencia en la agricultura (Jairo Restrepo Rivera)",
@@ -869,6 +906,12 @@
         {
           "id": "pdf_30",
           "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
+          "peso": 3,
+          "motivo": "agricoltura biodinamica"
+        },
+        {
+          "id": "pdf_56",
+          "titolo": "Nikola Tesla, un genio volutamente dimenticato (Baccelli, Vittorio)",
           "peso": 3,
           "motivo": "agricoltura biodinamica"
         },
@@ -916,6 +959,24 @@
           "titolo": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas (Jairo Restrepo Rivera)",
           "peso": 4,
           "motivo": "agricoltura organica"
+        },
+        {
+          "id": "pdf_41",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 2,
+          "motivo": "utilizzo di harina de rocas come fertilizzante naturale"
+        },
+        {
+          "id": "pdf_48",
+          "titolo": "Ricerca agro-alimentare, giugno 2019",
+          "peso": 2,
+          "motivo": "utilizzo di harina de rocas come fertilizzante naturale"
+        },
+        {
+          "id": "pdf_61",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 2,
+          "motivo": "utilizzo di harina de rocas come fertilizzante naturale"
         }
       ]
     },
@@ -957,16 +1018,16 @@
           "motivo": "elettrocultura, cannabis"
         },
         {
-          "id": "pdf_25",
-          "titolo": "elettrocoltura-andrea-starterkit2021",
-          "peso": 5,
+          "id": "pdf_51",
+          "titolo": "elcult2",
+          "peso": 6,
           "motivo": "elettrocultura, cannabis"
         },
         {
-          "id": "pdf_4",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 4,
-          "motivo": "elettrocultura"
+          "id": "pdf_52",
+          "titolo": "elcult1",
+          "peso": 6,
+          "motivo": "elettrocultura, cannabis"
         }
       ]
     },
@@ -1002,20 +1063,20 @@
           "motivo": "crescita delle piante"
         },
         {
+          "id": "pdf_46",
+          "titolo": "hull-elcult",
+          "peso": 4,
+          "motivo": "crescita delle piante"
+        },
+        {
+          "id": "pdf_54",
+          "titolo": "IL-CODICE-TESLA-SECOLARIUM-SAGA-_Italian-Edition_-_Alessandro-Falzani-_Falzani_-Alessandro_",
+          "peso": 4,
+          "motivo": "crescita delle piante"
+        },
+        {
           "id": "pdf_3",
           "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
-          "peso": 2,
-          "motivo": "applicazione di frequenze armoniche in serra"
-        },
-        {
-          "id": "pdf_4",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 2,
-          "motivo": "applicazione di frequenze armoniche in serra"
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Changez votre futur par les ouvertures temporelles (Jean-Pierre Garnier Malet etc.)",
           "peso": 2,
           "motivo": "applicazione di frequenze armoniche in serra"
         }
@@ -1059,16 +1120,16 @@
           "motivo": "elettrocultura, biodinamica"
         },
         {
-          "id": "pdf_4",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 4,
-          "motivo": "elettrocultura"
+          "id": "pdf_50",
+          "titolo": "elcult3",
+          "peso": 6,
+          "motivo": "elettrocultura, biodinamica"
         },
         {
-          "id": "pdf_21",
-          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
-          "peso": 4,
-          "motivo": "elettrocultura"
+          "id": "pdf_51",
+          "titolo": "elcult2",
+          "peso": 6,
+          "motivo": "elettrocultura, biodinamica"
         }
       ]
     },
@@ -1110,16 +1171,16 @@
           "motivo": "elettrocultura, cannabis"
         },
         {
-          "id": "pdf_25",
-          "titolo": "elettrocoltura-andrea-starterkit2021",
-          "peso": 5,
+          "id": "pdf_51",
+          "titolo": "elcult2",
+          "peso": 6,
           "motivo": "elettrocultura, cannabis"
         },
         {
-          "id": "pdf_4",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 4,
-          "motivo": "elettrocultura"
+          "id": "pdf_52",
+          "titolo": "elcult1",
+          "peso": 6,
+          "motivo": "elettrocultura, cannabis"
         }
       ]
     },
@@ -1167,10 +1228,10 @@
           "motivo": "elettrocultura, cannabis"
         },
         {
-          "id": "pdf_4",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 3,
-          "motivo": "elettrocultura"
+          "id": "pdf_51",
+          "titolo": "elcult2",
+          "peso": 5,
+          "motivo": "elettrocultura, cannabis"
         }
       ]
     },
@@ -1200,6 +1261,12 @@
           "motivo": "elettrocultura, biodinamica, cannabis"
         },
         {
+          "id": "pdf_51",
+          "titolo": "elcult2",
+          "peso": 8,
+          "motivo": "elettrocultura, biodinamica, cannabis"
+        },
+        {
           "id": "pdf_21",
           "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
           "peso": 6,
@@ -1216,12 +1283,6 @@
           "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
           "peso": 6,
           "motivo": "elettrocultura, cannabis"
-        },
-        {
-          "id": "pdf_36",
-          "titolo": "La-vita-segreta-delle-piante-_Peter-Tompkins_-Christopher-Bird",
-          "peso": 6,
-          "motivo": "elettrocultura, biodinamica"
         }
       ]
     },
@@ -1271,34 +1332,34 @@
       "id": "pdf_28",
       "connessioni": [
         {
+          "id": "pdf_46",
+          "titolo": "hull-elcult",
+          "peso": 8,
+          "motivo": "elettrocultura, Lakhovsky, crescita delle piante"
+        },
+        {
           "id": "pdf_30",
           "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
           "peso": 6,
           "motivo": "elettrocultura, crescita delle piante"
         },
         {
-          "id": "pdf_4",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 4,
-          "motivo": "elettrocultura"
+          "id": "pdf_50",
+          "titolo": "elcult3",
+          "peso": 6,
+          "motivo": "elettrocultura, Lakhovsky"
         },
         {
-          "id": "pdf_10",
-          "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
-          "peso": 4,
-          "motivo": "Lakhovsky"
+          "id": "pdf_52",
+          "titolo": "elcult1",
+          "peso": 6,
+          "motivo": "elettrocultura, Lakhovsky"
         },
         {
-          "id": "pdf_21",
-          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
-          "peso": 4,
-          "motivo": "elettrocultura"
-        },
-        {
-          "id": "pdf_22",
-          "titolo": "The energy grid - Harmonic 695. The pulse of the universe (Bruce L. Cathie)",
-          "peso": 4,
-          "motivo": "crescita delle piante"
+          "id": "pdf_54",
+          "titolo": "IL-CODICE-TESLA-SECOLARIUM-SAGA-_Italian-Edition_-_Alessandro-Falzani-_Falzani_-Alessandro_",
+          "peso": 6,
+          "motivo": "elettrocultura, crescita delle piante"
         }
       ]
     },
@@ -1378,26 +1439,26 @@
           "motivo": "elettrocultura, crescita delle piante"
         },
         {
+          "id": "pdf_46",
+          "titolo": "hull-elcult",
+          "peso": 6,
+          "motivo": "elettrocultura, crescita delle piante"
+        },
+        {
+          "id": "pdf_54",
+          "titolo": "IL-CODICE-TESLA-SECOLARIUM-SAGA-_Italian-Edition_-_Alessandro-Falzani-_Falzani_-Alessandro_",
+          "peso": 6,
+          "motivo": "elettrocultura, crescita delle piante"
+        },
+        {
+          "id": "pdf_56",
+          "titolo": "Nikola Tesla, un genio volutamente dimenticato (Baccelli, Vittorio)",
+          "peso": 6,
+          "motivo": "elettrocultura, agricoltura biodinamica"
+        },
+        {
           "id": "pdf_4",
           "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 4,
-          "motivo": "elettrocultura"
-        },
-        {
-          "id": "pdf_21",
-          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
-          "peso": 4,
-          "motivo": "elettrocultura"
-        },
-        {
-          "id": "pdf_22",
-          "titolo": "The energy grid - Harmonic 695. The pulse of the universe (Bruce L. Cathie)",
-          "peso": 4,
-          "motivo": "crescita delle piante"
-        },
-        {
-          "id": "pdf_23",
-          "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
           "peso": 4,
           "motivo": "elettrocultura"
         }
@@ -1429,6 +1490,12 @@
           "motivo": "elettrocultura, biodinamica, cannabis"
         },
         {
+          "id": "pdf_51",
+          "titolo": "elcult2",
+          "peso": 8,
+          "motivo": "elettrocultura, biodinamica, cannabis"
+        },
+        {
           "id": "pdf_21",
           "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
           "peso": 6,
@@ -1445,12 +1512,6 @@
           "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
           "peso": 6,
           "motivo": "elettrocultura, cannabis"
-        },
-        {
-          "id": "pdf_36",
-          "titolo": "La-vita-segreta-delle-piante-_Peter-Tompkins_-Christopher-Bird",
-          "peso": 6,
-          "motivo": "elettrocultura, biodinamica"
         }
       ]
     },
@@ -1490,6 +1551,12 @@
           "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
           "peso": 3,
           "motivo": "coltivazione"
+        },
+        {
+          "id": "pdf_49",
+          "titolo": "Corso-Elettrocoltura",
+          "peso": 3,
+          "motivo": "Living Soil"
         },
         {
           "id": "pdf_9",
@@ -1570,6 +1637,12 @@
       "id": "pdf_34",
       "connessioni": [
         {
+          "id": "pdf_58",
+          "titolo": "Pierluigi Ighina - Profeta sconosciuto (Alberto Tavanti)",
+          "peso": 6,
+          "motivo": "Pierluigi Ighina, elettrocultura"
+        },
+        {
           "id": "pdf_4",
           "titolo": "Antenna uomo - Tiziano-Guerzoni",
           "peso": 4,
@@ -1590,12 +1663,6 @@
         {
           "id": "pdf_24",
           "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
-          "peso": 4,
-          "motivo": "elettrocultura"
-        },
-        {
-          "id": "pdf_26",
-          "titolo": "ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - Unlock the Secret Power of Electricity to Maximize your Agriculture, have a Faster… (Errol Ramos) (z-library.sk, 1lib.sk, z-lib.sk)",
           "peso": 4,
           "motivo": "elettrocultura"
         }
@@ -1690,16 +1757,16 @@
           "motivo": "biodinamica, elettrocultura"
         },
         {
-          "id": "pdf_4",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 4,
-          "motivo": "elettrocultura"
+          "id": "pdf_50",
+          "titolo": "elcult3",
+          "peso": 6,
+          "motivo": "biodinamica, elettrocultura"
         },
         {
-          "id": "pdf_21",
-          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
-          "peso": 4,
-          "motivo": "elettrocultura"
+          "id": "pdf_51",
+          "titolo": "elcult2",
+          "peso": 6,
+          "motivo": "biodinamica, elettrocultura"
         }
       ]
     },
@@ -1747,10 +1814,10 @@
           "motivo": "biodinamica"
         },
         {
-          "id": "pdf_3",
-          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
-          "peso": 2,
-          "motivo": "utilizzo di cristalli per la crescita delle piante"
+          "id": "pdf_50",
+          "titolo": "elcult3",
+          "peso": 4,
+          "motivo": "biodinamica"
         }
       ]
     },
@@ -1780,6 +1847,12 @@
           "motivo": "spiritualità, natura"
         },
         {
+          "id": "pdf_59",
+          "titolo": "Gli insegnamenti del maestro. Il vangelo esseno della pace. Libro quarto. (Edmond Bordeaux-Szekely) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 5,
+          "motivo": "spiritualità, natura"
+        },
+        {
           "id": "pdf_2",
           "titolo": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
           "peso": 4,
@@ -1796,12 +1869,6 @@
           "titolo": "Angeli.-Ebraismo_-cristianesimo_-islam-_G.-Agamben_-E.-Coccia",
           "peso": 4,
           "motivo": "spiritualità, natura"
-        },
-        {
-          "id": "pdf_11",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 3,
-          "motivo": "spiritualità"
         }
       ]
     },
@@ -1836,21 +1903,21 @@
           "motivo": "crescita personale"
         },
         {
+          "id": "pdf_41",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 4,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_61",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 4,
+          "motivo": "spiritualità"
+        },
+        {
           "id": "pdf_5",
           "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
           "peso": 3,
-          "motivo": "spiritualità"
-        },
-        {
-          "id": "pdf_16",
-          "titolo": "Angeli.-Ebraismo_-cristianesimo_-islam-_G.-Agamben_-E.-Coccia",
-          "peso": 3,
-          "motivo": "spiritualità"
-        },
-        {
-          "id": "pdf_2",
-          "titolo": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
-          "peso": 2,
           "motivo": "spiritualità"
         }
       ]
@@ -1885,6 +1952,1063 @@
           "titolo": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas (Jairo Restrepo Rivera)",
           "peso": 4,
           "motivo": "agricoltura organica"
+        },
+        {
+          "id": "pdf_41",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 2,
+          "motivo": "utilizzo di harina de rocas come fertilizzante naturale"
+        },
+        {
+          "id": "pdf_48",
+          "titolo": "Ricerca agro-alimentare, giugno 2019",
+          "peso": 2,
+          "motivo": "utilizzo di harina de rocas come fertilizzante naturale"
+        },
+        {
+          "id": "pdf_61",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 2,
+          "motivo": "utilizzo di harina de rocas come fertilizzante naturale"
+        }
+      ]
+    },
+    {
+      "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+      "sommario": "Il libro racconta la vita di Gustavo Rol, un sensitivo italiano noto per le sue capacità paranormali. Il testo esplora la sua infanzia, la sua formazione e le sue esperienze spirituali. La vita di Rol è caratterizzata da eventi straordinari e prodigi",
+      "tecniche_chiave": [
+        "utilizzo di principi olistici nella coltivazione",
+        "applicazione di concetti spirituali nella gestione della serra"
+      ],
+      "consiglio_coltivazione": "osservare e ascoltare la natura per comprendere meglio le esigenze delle piante",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "spiritualità",
+        "olistico"
+      ],
+      "rilevanza": "media",
+      "estratto_chiave": "Vita di Gustavo Rol, sensitivo italiano",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_41",
+      "connessioni": [
+        {
+          "id": "pdf_61",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 6,
+          "motivo": "spiritualità, olistico"
+        },
+        {
+          "id": "pdf_42",
+          "titolo": "Rol Il grande veggente (Renzo Allegri)",
+          "peso": 5,
+          "motivo": "spiritualità, olistico"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 4,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_39",
+          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
+          "peso": 4,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+          "peso": 3,
+          "motivo": "spiritualità"
+        }
+      ]
+    },
+    {
+      "titolo": "Rol Il grande veggente (Renzo Allegri)",
+      "sommario": "Il libro parla della vita e delle opere di Rol, un sensitivo e medium italiano. Il testo esplora le sue capacità paranormali e la sua connessione con il mondo spirituale. Non ci sono informazioni dirette sulla coltivazione di cannabis.",
+      "tecniche_chiave": [
+        "nessuna tecnica pratica diretta",
+        "utilizzo di principi olistici nella coltivazione"
+      ],
+      "consiglio_coltivazione": "applicare principi olistici nella gestione del suolo e delle piante in serra",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "spiritualità",
+        "olistico"
+      ],
+      "rilevanza": "bassa",
+      "estratto_chiave": "connessione con il mondo spirituale",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_42",
+      "connessioni": [
+        {
+          "id": "pdf_41",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 5,
+          "motivo": "spiritualità, olistico"
+        },
+        {
+          "id": "pdf_61",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 5,
+          "motivo": "spiritualità, olistico"
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+          "peso": 3,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 3,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_12",
+          "titolo": "Book of Wisdom Volume 2 (Harry B. Joseph, Revival of Wisdom)",
+          "peso": 3,
+          "motivo": "spiritualità"
+        }
+      ]
+    },
+    {
+      "titolo": "US Patents for Electroculture -- Electrical_Magnetic Stimulation of Plant Growth, Weed Killing, Pruning, Pest Control",
+      "sommario": "Il PDF presenta brevetti USA per l'elettrocultura, che utilizza stimolazione elettrica e magnetica per migliorare la crescita delle piante, controllare le infestanti e gestire le pesti. Le tecniche descritte potrebbero essere applicate in coltivazioni di cannabis Living Soil. L'elettrocultura potrebbe migliorare la salute e la resa delle piante.",
+      "tecniche_chiave": [
+        "stimolazione elettrica per la crescita",
+        "controllo magnetico delle infestanti"
+      ],
+      "consiglio_coltivazione": "Applicare una sorgente di stimolazione elettrica a bassa intensità alle piante di cannabis per migliorare la loro crescita",
+      "consiglio_elettrocultura": "L'elettrocultura può essere integrata con la biodinamica per creare un ambiente di coltivazione più sano e bilanciato",
+      "tag": [
+        "elettrocultura",
+        "cannabis Living Soil",
+        "biodinamica"
+      ],
+      "rilevanza": "alta",
+      "estratto_chiave": "Stimolazione elettrica per migliorare la crescita",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_43",
+      "connessioni": [
+        {
+          "id": "pdf_23",
+          "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
+          "peso": 4,
+          "motivo": "elettrocultura, biodinamica"
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - Unlock the Secret Power of Electricity to Maximize your Agriculture, have a Faster… (Errol Ramos) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 4,
+          "motivo": "elettrocultura, biodinamica"
+        },
+        {
+          "id": "pdf_31",
+          "titolo": "Scoperte scientifiche non autorizzate - Pizzuti Marco",
+          "peso": 4,
+          "motivo": "elettrocultura, biodinamica"
+        },
+        {
+          "id": "pdf_36",
+          "titolo": "La-vita-segreta-delle-piante-_Peter-Tompkins_-Christopher-Bird",
+          "peso": 4,
+          "motivo": "elettrocultura, biodinamica"
+        },
+        {
+          "id": "pdf_50",
+          "titolo": "elcult3",
+          "peso": 4,
+          "motivo": "elettrocultura, biodinamica"
+        }
+      ]
+    },
+    {
+      "titolo": "dudgrichelcult",
+      "sommario": "Il titolo suggerisce una connessione con la coltivazione e la crescita, forse legata a tecniche di coltivazione innovative o sperimentali. Potrebbe trattarsi di un approccio olistico alla coltivazione, considerando l'ambiente e gli esseri viventi. Il contenuto esatto non è disponibile, quindi si possono solo fare ipotesi.",
+      "tecniche_chiave": [
+        "utilizzo di sostanze naturali per il suolo",
+        "applicazione di principi olistici alla coltivazione"
+      ],
+      "consiglio_coltivazione": "Oggi, in serra, potresti iniziare ad applicare principi di coltivazione olistica, come l'uso di sostanze naturali per arricchire il suolo.",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "coltivazione olistica",
+        "sostanze naturali"
+      ],
+      "rilevanza": "bassa",
+      "estratto_chiave": "Crescita olistica",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_44",
+      "connessioni": [
+        {
+          "id": "pdf_3",
+          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
+          "peso": 2,
+          "motivo": "utilizzo di sostanze naturali per il suolo"
+        },
+        {
+          "id": "pdf_4",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 2,
+          "motivo": "utilizzo di sostanze naturali per il suolo"
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Changez votre futur par les ouvertures temporelles (Jean-Pierre Garnier Malet etc.)",
+          "peso": 2,
+          "motivo": "utilizzo di sostanze naturali per il suolo"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 2,
+          "motivo": "utilizzo di sostanze naturali per il suolo"
+        },
+        {
+          "id": "pdf_8",
+          "titolo": "Fondamenti di Fisica Elettrologia Magnetismo Ottica (HALLIDAY, RESNICK, WALKER)",
+          "peso": 2,
+          "motivo": "utilizzo di sostanze naturali per il suolo"
+        }
+      ]
+    },
+    {
+      "titolo": "laemstromelcult",
+      "sommario": "Il titolo suggerisce una connessione con la coltivazione di funghi, forse relativa all'utilizzo di miceli per migliorare la salute del suolo. La tecnica potrebbe essere applicata in coltivazioni Living Soil per migliorare la biodiversità del terreno. Il PDF potrebbe trattare di come utilizzare i funghi per arricchire il suolo e migliorare la crescita delle piante.",
+      "tecniche_chiave": [
+        "utilizzo di miceli per migliorare la biodiversità del suolo",
+        "introduzione di funghi benefici nel terreno"
+      ],
+      "consiglio_coltivazione": "introdurre miceli di funghi benefici nel terreno per migliorare la salute delle piante",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "miceli",
+        "funghi benefici"
+      ],
+      "rilevanza": "media",
+      "estratto_chiave": "Miceli per salute del suolo",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_45",
+      "connessioni": [
+        {
+          "id": "pdf_18",
+          "titolo": "The Soil Biology Primer - Elaine Ingham",
+          "peso": 2,
+          "motivo": "utilizzo di miceli per migliorare la biodiversità del suolo"
+        }
+      ]
+    },
+    {
+      "titolo": "hull-elcult",
+      "sommario": "Il PDF 'hull-elcult' potrebbe trattare di tecniche di elettrocultura e coltivazione innovativa, forse in relazione alle scoperte di Lakhovsky. Potrebbe contenere informazioni su come applicare principi elettromagnetici per migliorare la crescita delle piante.",
+      "tecniche_chiave": [
+        "Applicazione di campi elettromagnetici alle piante",
+        "Utilizzo di dispositivi come la pila galvanica Fe-Cu per influenzare la crescita delle piante"
+      ],
+      "consiglio_coltivazione": "Oggi, in serra, potresti iniziare a sperimentare con l'applicazione di campi elettromagnetici alle tue piante di cannabis per osservare gli effetti sulla loro crescita.",
+      "consiglio_elettrocultura": "La tecnica di Lakhovsky potrebbe essere applicata alle piante di cannabis in serra per migliorarne la resistenza e la crescita.",
+      "tag": [
+        "elettrocultura",
+        "Lakhovsky",
+        "crescita delle piante"
+      ],
+      "rilevanza": "alta",
+      "estratto_chiave": "Elettrocultura per migliorare la crescita",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_46",
+      "connessioni": [
+        {
+          "id": "pdf_28",
+          "titolo": "DE L'ELECTRICITE' DES METEORES",
+          "peso": 8,
+          "motivo": "elettrocultura, Lakhovsky, crescita delle piante"
+        },
+        {
+          "id": "pdf_30",
+          "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
+          "peso": 6,
+          "motivo": "elettrocultura, crescita delle piante"
+        },
+        {
+          "id": "pdf_50",
+          "titolo": "elcult3",
+          "peso": 6,
+          "motivo": "elettrocultura, Lakhovsky"
+        },
+        {
+          "id": "pdf_52",
+          "titolo": "elcult1",
+          "peso": 6,
+          "motivo": "elettrocultura, Lakhovsky"
+        },
+        {
+          "id": "pdf_54",
+          "titolo": "IL-CODICE-TESLA-SECOLARIUM-SAGA-_Italian-Edition_-_Alessandro-Falzani-_Falzani_-Alessandro_",
+          "peso": 6,
+          "motivo": "elettrocultura, crescita delle piante"
+        }
+      ]
+    },
+    {
+      "titolo": "magnacult",
+      "sommario": "Il titolo 'magnacult' suggerisce una connessione con la magnetizzazione e le sue applicazioni in agricoltura, forse in relazione all'acqua magnetizzata o a tecniche di coltivazione innovative. Potrebbe trattare di metodi per migliorare la crescita delle piante attraverso l'applicazione di campi magnetici o principi simili. La mancanza del testo completo limita la comprensione approfondita del contenuto.",
+      "tecniche_chiave": [
+        "applicazione di acqua magnetizzata",
+        "utilizzo di spirali cosmiche rame per influenzare la crescita delle piante"
+      ],
+      "consiglio_coltivazione": "Applicare acqua magnetizzata alle piante di cannabis per osservare potenziali miglioramenti nella crescita",
+      "consiglio_elettrocultura": "Esplorare come l'elettrocultura Lakhovsky possa integrarsi con principi di magnetizzazione per potenziare la crescita delle piante",
+      "tag": [
+        "magnetizzazione",
+        "coltivazione innovativa"
+      ],
+      "rilevanza": "media",
+      "estratto_chiave": "Magnetizzazione per crescita ottimale",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_47",
+      "connessioni": [
+        {
+          "id": "pdf_3",
+          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
+          "peso": 2,
+          "motivo": "applicazione di acqua magnetizzata"
+        },
+        {
+          "id": "pdf_4",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 2,
+          "motivo": "applicazione di acqua magnetizzata"
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Changez votre futur par les ouvertures temporelles (Jean-Pierre Garnier Malet etc.)",
+          "peso": 2,
+          "motivo": "applicazione di acqua magnetizzata"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 2,
+          "motivo": "applicazione di acqua magnetizzata"
+        },
+        {
+          "id": "pdf_8",
+          "titolo": "Fondamenti di Fisica Elettrologia Magnetismo Ottica (HALLIDAY, RESNICK, WALKER)",
+          "peso": 2,
+          "motivo": "applicazione di acqua magnetizzata"
+        }
+      ]
+    },
+    {
+      "titolo": "Ricerca agro-alimentare, giugno 2019",
+      "sommario": "La ricerca agro-alimentare esplora metodi innovativi per migliorare la produzione e la sostenibilità nel settore agricolo. Potrebbe includere studi su tecniche di coltivazione, gestione del suolo e utilizzo di risorse idriche. La ricerca potrebbe avere implicazioni per la coltivazione di cannabis in serra.",
+      "tecniche_chiave": [
+        "gestione del suolo",
+        "utilizzo efficiente di risorse idriche"
+      ],
+      "consiglio_coltivazione": "Verificare il pH del suolo e ottimizzare l'irrigazione per le piante di cannabis",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "agricoltura sostenibile",
+        "gestione del suolo"
+      ],
+      "rilevanza": "media",
+      "estratto_chiave": "Miglioramento della sostenibilità agricola",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_48",
+      "connessioni": [
+        {
+          "id": "pdf_49",
+          "titolo": "Corso-Elettrocoltura",
+          "peso": 3,
+          "motivo": "agricoltura sostenibile"
+        },
+        {
+          "id": "pdf_0",
+          "titolo": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas (Jairo Restrepo Rivera)",
+          "peso": 2,
+          "motivo": "gestione del suolo"
+        },
+        {
+          "id": "pdf_20",
+          "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
+          "peso": 2,
+          "motivo": "gestione del suolo"
+        },
+        {
+          "id": "pdf_40",
+          "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
+          "peso": 2,
+          "motivo": "gestione del suolo"
+        },
+        {
+          "id": "pdf_41",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 2,
+          "motivo": "gestione del suolo"
+        }
+      ]
+    },
+    {
+      "titolo": "Corso-Elettrocoltura",
+      "sommario": "Il corso si concentra sull'applicazione di principi elettroculturali in agricoltura, esplorando metodi per migliorare la crescita delle piante attraverso l'uso di correnti elettriche e campi magnetici. Potrebbe trattare anche di come queste tecniche influenzano la salute e la resistenza delle piante. Il corso potrebbe includere anche la discussione su come integrare l'elettrocultura con altre pratiche agricole sostenibili.",
+      "tecniche_chiave": [
+        "applicazione di correnti elettriche per stimolare la crescita",
+        "utilizzo di campi magnetici per migliorare la salute delle piante"
+      ],
+      "consiglio_coltivazione": "Applicare una tecnica di stimolazione elettrica alle piante di cannabis per osservare i possibili effetti sulla crescita e sulla resistenza alle malattie.",
+      "consiglio_elettrocultura": "Integrare l'elettrocultura con la coltivazione Living Soil per potenziare la salute del suolo e la crescita delle piante.",
+      "tag": [
+        "elettrocultura",
+        "agricoltura sostenibile",
+        "Living Soil"
+      ],
+      "rilevanza": "alta",
+      "estratto_chiave": "Stimolazione elettrica per crescita ottimale",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_49",
+      "connessioni": [
+        {
+          "id": "pdf_4",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        },
+        {
+          "id": "pdf_21",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        },
+        {
+          "id": "pdf_23",
+          "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        },
+        {
+          "id": "pdf_24",
+          "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - Unlock the Secret Power of Electricity to Maximize your Agriculture, have a Faster… (Errol Ramos) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        }
+      ]
+    },
+    {
+      "titolo": "elcult3",
+      "sommario": "Il PDF 'elcult3' sembra trattare l'elettrocultura, una tecnica che utilizza campi elettrici per stimolare la crescita delle piante. Potrebbe essere correlato alle ricerche di Lakhovsky. La connessione con la coltivazione Living Soil cannabis potrebbe essere nell'ottimizzazione della crescita e della salute delle piante.",
+      "tecniche_chiave": [
+        "applicazione di campi elettrici",
+        "utilizzo di dispositivi come la pila galvanica Fe-Cu"
+      ],
+      "consiglio_coltivazione": "Verificare l'efficacia dell'elettrocultura sulle piante di cannabis in serra",
+      "consiglio_elettrocultura": "L'elettrocultura potrebbe essere integrata con la biodinamica per migliorare la salute del suolo e la resistenza delle piante",
+      "tag": [
+        "elettrocultura",
+        "Lakhovsky",
+        "biodinamica"
+      ],
+      "rilevanza": "alta",
+      "estratto_chiave": "Elettrocultura per la crescita ottimale",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_50",
+      "connessioni": [
+        {
+          "id": "pdf_23",
+          "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
+          "peso": 6,
+          "motivo": "elettrocultura, biodinamica"
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - Unlock the Secret Power of Electricity to Maximize your Agriculture, have a Faster… (Errol Ramos) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 6,
+          "motivo": "elettrocultura, biodinamica"
+        },
+        {
+          "id": "pdf_28",
+          "titolo": "DE L'ELECTRICITE' DES METEORES",
+          "peso": 6,
+          "motivo": "elettrocultura, Lakhovsky"
+        },
+        {
+          "id": "pdf_31",
+          "titolo": "Scoperte scientifiche non autorizzate - Pizzuti Marco",
+          "peso": 6,
+          "motivo": "elettrocultura, biodinamica"
+        },
+        {
+          "id": "pdf_36",
+          "titolo": "La-vita-segreta-delle-piante-_Peter-Tompkins_-Christopher-Bird",
+          "peso": 6,
+          "motivo": "elettrocultura, biodinamica"
+        }
+      ]
+    },
+    {
+      "titolo": "elcult2",
+      "sommario": "Il PDF 'elcult2' potrebbe trattare di elettrocultura e sue applicazioni in agricoltura, con possibili connessioni alla coltivazione di cannabis in serra. La tecnologia Lakhovsky potrebbe essere menzionata come metodo per migliorare la crescita delle piante. Il testo potrebbe fornire indicazioni pratiche per l'utilizzo di dispositivi elettroculturali in serra.",
+      "tecniche_chiave": [
+        "utilizzo di dispositivi elettroculturali",
+        "applicazione di principi biodinamici"
+      ],
+      "consiglio_coltivazione": "Verificare l'efficacia dell'acqua magnetizzata sulla crescita delle piante di cannabis",
+      "consiglio_elettrocultura": "Applicare la tecnologia Lakhovsky per migliorare la resistenza alle malattie delle piante",
+      "tag": [
+        "elettrocultura",
+        "biodinamica",
+        "cannabis"
+      ],
+      "rilevanza": "alta",
+      "estratto_chiave": "Elettrocultura per crescita ottimale",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_51",
+      "connessioni": [
+        {
+          "id": "pdf_26",
+          "titolo": "ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - Unlock the Secret Power of Electricity to Maximize your Agriculture, have a Faster… (Errol Ramos) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 8,
+          "motivo": "elettrocultura, biodinamica, cannabis"
+        },
+        {
+          "id": "pdf_31",
+          "titolo": "Scoperte scientifiche non autorizzate - Pizzuti Marco",
+          "peso": 8,
+          "motivo": "elettrocultura, biodinamica, cannabis"
+        },
+        {
+          "id": "pdf_21",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 6,
+          "motivo": "elettrocultura, cannabis"
+        },
+        {
+          "id": "pdf_23",
+          "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
+          "peso": 6,
+          "motivo": "elettrocultura, biodinamica"
+        },
+        {
+          "id": "pdf_24",
+          "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
+          "peso": 6,
+          "motivo": "elettrocultura, cannabis"
+        }
+      ]
+    },
+    {
+      "titolo": "elcult1",
+      "sommario": "Il PDF 'elcult1' potrebbe trattare dell'elettrocultura e delle sue applicazioni pratiche in agricoltura, inclusa la coltivazione di cannabis. Le tecniche di elettrocultura possono influenzare la crescita delle piante e migliorare la resa. Il contenuto potrebbe includere metodi per applicare l'elettrocultura in modo efficace.",
+      "tecniche_chiave": [
+        "Applicazione di campi elettromagnetici",
+        "Utilizzo di dispositivi come la pila di Lakhovsky"
+      ],
+      "consiglio_coltivazione": "Oggi, assicurati di controllare il pH del suolo per ottimizzare la crescita delle tue piante di cannabis",
+      "consiglio_elettrocultura": "Esplora l'utilizzo della pila di Lakhovsky per migliorare la salute e la resistenza delle piante",
+      "tag": [
+        "elettrocultura",
+        "cannabis",
+        "Lakhovsky"
+      ],
+      "rilevanza": "alta",
+      "estratto_chiave": "Elettrocultura per piante più resistenti",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_52",
+      "connessioni": [
+        {
+          "id": "pdf_21",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 6,
+          "motivo": "elettrocultura, cannabis"
+        },
+        {
+          "id": "pdf_24",
+          "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
+          "peso": 6,
+          "motivo": "elettrocultura, cannabis"
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - Unlock the Secret Power of Electricity to Maximize your Agriculture, have a Faster… (Errol Ramos) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 6,
+          "motivo": "elettrocultura, cannabis"
+        },
+        {
+          "id": "pdf_28",
+          "titolo": "DE L'ELECTRICITE' DES METEORES",
+          "peso": 6,
+          "motivo": "elettrocultura, Lakhovsky"
+        },
+        {
+          "id": "pdf_31",
+          "titolo": "Scoperte scientifiche non autorizzate - Pizzuti Marco",
+          "peso": 6,
+          "motivo": "elettrocultura, cannabis"
+        }
+      ]
+    },
+    {
+      "titolo": "Tesla_-lampo-di-genio",
+      "sommario": "Il PDF potrebbe trattare delle invenzioni e scoperte di Nikola Tesla, in particolare sulla sua teoria dell'elettricità e del suo impatto sulla tecnologia moderna. Potrebbe anche esplorare le connessioni tra la sua opera e la coltivazione biodinamica. Il titolo suggerisce un focus sulle intuizioni innovative di Tesla.",
+      "tecniche_chiave": [
+        "applicazione di principi elettromagnetici in agricoltura",
+        "utilizzo di dispositivi a basso consumo per migliorare la crescita delle piante"
+      ],
+      "consiglio_coltivazione": "Oggi, in serra, potresti sperimentare l'uso di un dispositivo a basso consumo per migliorare la crescita delle tue piante di cannabis Living Soil.",
+      "consiglio_elettrocultura": "La tecnica di elettrocultura di Lakhovsky potrebbe essere collegata ai principi di Tesla, esplorando come l'elettricità possa influenzare la crescita delle piante.",
+      "tag": [
+        "Tesla",
+        "elettrocultura",
+        "biodinamica"
+      ],
+      "rilevanza": "alta",
+      "estratto_chiave": "Elettricità e crescita delle piante",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_53",
+      "connessioni": [
+        {
+          "id": "pdf_23",
+          "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
+          "peso": 6,
+          "motivo": "elettrocultura, biodinamica"
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - Unlock the Secret Power of Electricity to Maximize your Agriculture, have a Faster… (Errol Ramos) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 6,
+          "motivo": "elettrocultura, biodinamica"
+        },
+        {
+          "id": "pdf_31",
+          "titolo": "Scoperte scientifiche non autorizzate - Pizzuti Marco",
+          "peso": 6,
+          "motivo": "elettrocultura, biodinamica"
+        },
+        {
+          "id": "pdf_36",
+          "titolo": "La-vita-segreta-delle-piante-_Peter-Tompkins_-Christopher-Bird",
+          "peso": 6,
+          "motivo": "elettrocultura, biodinamica"
+        },
+        {
+          "id": "pdf_50",
+          "titolo": "elcult3",
+          "peso": 6,
+          "motivo": "elettrocultura, biodinamica"
+        }
+      ]
+    },
+    {
+      "titolo": "IL-CODICE-TESLA-SECOLARIUM-SAGA-_Italian-Edition_-_Alessandro-Falzani-_Falzani_-Alessandro_",
+      "sommario": "Il titolo suggerisce una connessione con le teorie di Nikola Tesla e la sua applicazione in un contesto di saggezza secolare. Il contenuto potrebbe trattare di energie sottili e loro applicazioni pratiche. L'autore Alessandro Falzani potrebbe esplorare le connessioni tra le scoperte di Tesla e la spiritualità",
+      "tecniche_chiave": [
+        "applicazione di principi di risonanza per la crescita delle piante",
+        "utilizzo di dispositivi a basso voltaggio per stimolare la crescita"
+      ],
+      "consiglio_coltivazione": "oggi in serra, prova a posizionare le piante in modo da massimizzare la loro esposizione alle energie ambientali naturali",
+      "consiglio_elettrocultura": "esplora l'applicazione di principi di elettrocultura ispirati a Tesla per migliorare la crescita delle tue piante di cannabis",
+      "tag": [
+        "Tesla",
+        "elettrocultura",
+        "crescita delle piante"
+      ],
+      "rilevanza": "alta",
+      "estratto_chiave": "Energia sottile e crescita delle piante",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_54",
+      "connessioni": [
+        {
+          "id": "pdf_28",
+          "titolo": "DE L'ELECTRICITE' DES METEORES",
+          "peso": 6,
+          "motivo": "elettrocultura, crescita delle piante"
+        },
+        {
+          "id": "pdf_30",
+          "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
+          "peso": 6,
+          "motivo": "elettrocultura, crescita delle piante"
+        },
+        {
+          "id": "pdf_46",
+          "titolo": "hull-elcult",
+          "peso": 6,
+          "motivo": "elettrocultura, crescita delle piante"
+        },
+        {
+          "id": "pdf_53",
+          "titolo": "Tesla_-lampo-di-genio",
+          "peso": 6,
+          "motivo": "Tesla, elettrocultura"
+        },
+        {
+          "id": "pdf_4",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        }
+      ]
+    },
+    {
+      "titolo": "Nikola-Tesla-Come-Lenergia_-Le-Frequenze-e-Le-Vibrazioni-Modellano-La-Realtà-_Italian-Edition_-_Josh",
+      "sommario": "Il libro esplora le teorie di Nikola Tesla sulle frequenze e le vibrazioni come modellatori della realtà. La connessione tra energia e materia è analizzata in relazione alle leggi fisiche e alle applicazioni pratiche. Il testo si concentra sull'impatto delle frequenze e delle vibrazioni sulla realtà fisica e sulla possibilità di manipolarle per ottenere risultati desiderati.",
+      "tecniche_chiave": [
+        "applicazione di frequenze specifiche per migliorare la crescita delle piante",
+        "utilizzo di dispositivi di risonanza per aumentare l'assorbimento di nutrienti"
+      ],
+      "consiglio_coltivazione": "installare un sistema di sonorizzazione per le piante in serra per migliorare la loro crescita",
+      "consiglio_elettrocultura": "applicazione delle teorie di Tesla alle pratiche di elettrocultura per migliorare la salute e la crescita delle piante",
+      "tag": [
+        "Nikola Tesla",
+        "frequenze",
+        "vibrazioni",
+        "elettrocultura"
+      ],
+      "rilevanza": "alta",
+      "estratto_chiave": "Frequenze e vibrazioni modellano la realtà",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_55",
+      "connessioni": [
+        {
+          "id": "pdf_56",
+          "titolo": "Nikola Tesla, un genio volutamente dimenticato (Baccelli, Vittorio)",
+          "peso": 6,
+          "motivo": "Nikola Tesla, elettrocultura"
+        },
+        {
+          "id": "pdf_57",
+          "titolo": "Le-mie-invenzioni-lautobiografia-di-un-genio-_edizione-integrale_-_Nikola-Tesla_",
+          "peso": 6,
+          "motivo": "Nikola Tesla, elettrocultura"
+        },
+        {
+          "id": "pdf_4",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        },
+        {
+          "id": "pdf_21",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        },
+        {
+          "id": "pdf_23",
+          "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        }
+      ]
+    },
+    {
+      "titolo": "Nikola Tesla, un genio volutamente dimenticato (Baccelli, Vittorio)",
+      "sommario": "Il libro esplora la vita e le invenzioni di Nikola Tesla, un pioniere della fisica e dell'ingegneria elettrica. La sua eredità include contributi fondamentali alla tecnologia moderna, come la corrente alternata. Il libro potrebbe esplorare come le sue idee siano state dimenticate o sottovalutate.",
+      "tecniche_chiave": [
+        "applicazione di principi elettromagnetici in agricoltura",
+        "utilizzo di frequenze specifiche per stimolare la crescita delle piante"
+      ],
+      "consiglio_coltivazione": "Applicare principi di elettrocultura alle piante di cannabis in serra per migliorare la crescita",
+      "consiglio_elettrocultura": "Utilizzare la tecnica di Nikola Tesla per la stimolazione elettromagnetica delle piante",
+      "tag": [
+        "Nikola Tesla",
+        "elettrocultura",
+        "agricoltura biodinamica"
+      ],
+      "rilevanza": "alta",
+      "estratto_chiave": "Energia elettromagnetica e crescita delle piante",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_56",
+      "connessioni": [
+        {
+          "id": "pdf_30",
+          "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
+          "peso": 6,
+          "motivo": "elettrocultura, agricoltura biodinamica"
+        },
+        {
+          "id": "pdf_55",
+          "titolo": "Nikola-Tesla-Come-Lenergia_-Le-Frequenze-e-Le-Vibrazioni-Modellano-La-Realtà-_Italian-Edition_-_Josh",
+          "peso": 6,
+          "motivo": "Nikola Tesla, elettrocultura"
+        },
+        {
+          "id": "pdf_57",
+          "titolo": "Le-mie-invenzioni-lautobiografia-di-un-genio-_edizione-integrale_-_Nikola-Tesla_",
+          "peso": 6,
+          "motivo": "Nikola Tesla, elettrocultura"
+        },
+        {
+          "id": "pdf_4",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        },
+        {
+          "id": "pdf_21",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        }
+      ]
+    },
+    {
+      "titolo": "Le-mie-invenzioni-lautobiografia-di-un-genio-_edizione-integrale_-_Nikola-Tesla_",
+      "sommario": "L'autobiografia di Nikola Tesla, un genio dell'elettricità e dell'invenzione, che descrive la sua vita e le sue scoperte. Il libro copre argomenti come la corrente alternata e le sue applicazioni. Tesla condivide le sue esperienze e le sue intuizioni sulla natura dell'elettricità e del magnetismo.",
+      "tecniche_chiave": [
+        "applicazione di principi elettromagnetici in agricoltura",
+        "utilizzo di energia alternata per stimolare la crescita delle piante"
+      ],
+      "consiglio_coltivazione": "Applicare principi di elettrocultura come quelli di Lakhovsky per migliorare la salute e la resistenza delle piante di cannabis",
+      "consiglio_elettrocultura": "Utilizzare l'elettrocultura per migliorare la crescita e la salute delle piante, come descritto nelle ricerche di Lakhovsky",
+      "tag": [
+        "Nikola Tesla",
+        "elettrocultura",
+        "Lakhovsky"
+      ],
+      "rilevanza": "alta",
+      "estratto_chiave": "Elettricità e magnetismo applicati all'agricoltura",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_57",
+      "connessioni": [
+        {
+          "id": "pdf_28",
+          "titolo": "DE L'ELECTRICITE' DES METEORES",
+          "peso": 6,
+          "motivo": "elettrocultura, Lakhovsky"
+        },
+        {
+          "id": "pdf_46",
+          "titolo": "hull-elcult",
+          "peso": 6,
+          "motivo": "elettrocultura, Lakhovsky"
+        },
+        {
+          "id": "pdf_50",
+          "titolo": "elcult3",
+          "peso": 6,
+          "motivo": "elettrocultura, Lakhovsky"
+        },
+        {
+          "id": "pdf_52",
+          "titolo": "elcult1",
+          "peso": 6,
+          "motivo": "elettrocultura, Lakhovsky"
+        },
+        {
+          "id": "pdf_55",
+          "titolo": "Nikola-Tesla-Come-Lenergia_-Le-Frequenze-e-Le-Vibrazioni-Modellano-La-Realtà-_Italian-Edition_-_Josh",
+          "peso": 6,
+          "motivo": "Nikola Tesla, elettrocultura"
+        }
+      ]
+    },
+    {
+      "titolo": "Pierluigi Ighina - Profeta sconosciuto (Alberto Tavanti)",
+      "sommario": "Il libro parla della vita e delle scoperte di Pierluigi Ighina, un inventore e ricercatore italiano. Il testo esplora le sue teorie sulla energia e la sua applicazione pratica. Potrebbe contenere informazioni sulla sua tecnologia di elettrocultura.",
+      "tecniche_chiave": [
+        "applicazione di principi elettroculturali in agricoltura",
+        "utilizzo di dispositivi per la stimolazione delle piante"
+      ],
+      "consiglio_coltivazione": "Applicare principi di elettrocultura alle piante di cannabis in serra per migliorare la crescita",
+      "consiglio_elettrocultura": "Utilizzare la tecnologia di Ighina per migliorare la salute e la resistenza delle piante",
+      "tag": [
+        "elettrocultura",
+        "Pierluigi Ighina"
+      ],
+      "rilevanza": "alta",
+      "estratto_chiave": "Elettrocultura per la crescita delle piante",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_58",
+      "connessioni": [
+        {
+          "id": "pdf_34",
+          "titolo": "LA-SCOPERTA-DELLATOMO-MAGNETICO-1954-Pierluigi-Ighina",
+          "peso": 6,
+          "motivo": "elettrocultura, Pierluigi Ighina"
+        },
+        {
+          "id": "pdf_4",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        },
+        {
+          "id": "pdf_21",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        },
+        {
+          "id": "pdf_23",
+          "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        },
+        {
+          "id": "pdf_24",
+          "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
+          "peso": 4,
+          "motivo": "elettrocultura"
+        }
+      ]
+    },
+    {
+      "titolo": "Gli insegnamenti del maestro. Il vangelo esseno della pace. Libro quarto. (Edmond Bordeaux-Szekely) (z-library.sk, 1lib.sk, z-lib.sk)",
+      "sommario": "Il testo tratta degli insegnamenti spirituali e filosofici degli Esseni, una comunità ebraica del I secolo. Gli insegnamenti del maestro si concentrano sulla pace, l'armonia e la connessione con la natura. Il libro quarto potrebbe approfondire temi come la cura del corpo e dell'anima attraverso la natura e la spiritualità.",
+      "tecniche_chiave": [
+        "utilizzo di piante officinali e naturali per la cura del corpo e dell'anima",
+        "pratiche di meditazione e connessione con la natura per l'armonia interiore"
+      ],
+      "consiglio_coltivazione": "oggi in serra, assicurati di fornire alle tue piante cannabis un ambiente armonioso e naturale, con sufficiente luce e acqua, e prenditi del tempo per meditare e connetterti con la natura",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "spiritualità",
+        "natura",
+        "armonia"
+      ],
+      "rilevanza": "media",
+      "estratto_chiave": "Connessione con la natura per l'armonia",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_59",
+      "connessioni": [
+        {
+          "id": "pdf_5",
+          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+          "peso": 5,
+          "motivo": "spiritualità, natura"
+        },
+        {
+          "id": "pdf_16",
+          "titolo": "Angeli.-Ebraismo_-cristianesimo_-islam-_G.-Agamben_-E.-Coccia",
+          "peso": 5,
+          "motivo": "spiritualità, natura"
+        },
+        {
+          "id": "pdf_15",
+          "titolo": "Manuale di storia delle religioni (G. Filoramo, M. Massenzio, M. Raveri etc.)",
+          "peso": 4,
+          "motivo": "spiritualità, natura"
+        },
+        {
+          "id": "pdf_38",
+          "titolo": "Registri-Akashici-Accedi-Alla-Memoria-Universale-Della-Tua-Anima-e-di-Quella-Altrui_-Scopri-La-Tua-S",
+          "peso": 4,
+          "motivo": "spiritualità, natura"
+        },
+        {
+          "id": "pdf_60",
+          "titolo": "Se vuoi la Pace prepara te stesso BUNDLE 3 LIBRI - Libro 1 Il Vangelo della Pace 1 Tu salverai il mondo + Libro 2 Il Vangelo… (Davide Appi) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 4,
+          "motivo": "spiritualità, natura"
+        }
+      ]
+    },
+    {
+      "titolo": "Se vuoi la Pace prepara te stesso BUNDLE 3 LIBRI - Libro 1 Il Vangelo della Pace 1 Tu salverai il mondo + Libro 2 Il Vangelo… (Davide Appi) (z-library.sk, 1lib.sk, z-lib.sk)",
+      "sommario": "Il testo sembra trattare di spiritualità e pace interiore, senza contenuti direttamente applicabili alla coltivazione. Potrebbe trattare di crescita personale e armonia con la natura.",
+      "tecniche_chiave": [
+        "armonizzazione dell'ambiente",
+        "connessione con la natura"
+      ],
+      "consiglio_coltivazione": "Oggi, dedica un momento a osservare e ascoltare la natura in serra, per rafforzare la connessione con le piante.",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "spiritualità",
+        "natura"
+      ],
+      "rilevanza": "bassa",
+      "estratto_chiave": "Crescita personale e armonia",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_60",
+      "connessioni": [
+        {
+          "id": "pdf_5",
+          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+          "peso": 5,
+          "motivo": "spiritualità, natura"
+        },
+        {
+          "id": "pdf_38",
+          "titolo": "Registri-Akashici-Accedi-Alla-Memoria-Universale-Della-Tua-Anima-e-di-Quella-Altrui_-Scopri-La-Tua-S",
+          "peso": 5,
+          "motivo": "spiritualità, natura"
+        },
+        {
+          "id": "pdf_59",
+          "titolo": "Gli insegnamenti del maestro. Il vangelo esseno della pace. Libro quarto. (Edmond Bordeaux-Szekely) (z-library.sk, 1lib.sk, z-lib.sk)",
+          "peso": 5,
+          "motivo": "spiritualità, natura"
+        },
+        {
+          "id": "pdf_15",
+          "titolo": "Manuale di storia delle religioni (G. Filoramo, M. Massenzio, M. Raveri etc.)",
+          "peso": 4,
+          "motivo": "spiritualità, natura"
+        },
+        {
+          "id": "pdf_16",
+          "titolo": "Angeli.-Ebraismo_-cristianesimo_-islam-_G.-Agamben_-E.-Coccia",
+          "peso": 4,
+          "motivo": "spiritualità, natura"
+        }
+      ]
+    },
+    {
+      "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+      "sommario": "Il libro racconta la vita di Gustavo Rol, un sensitivo italiano noto per le sue capacità paranormali. Il testo esplora la sua infanzia, la sua formazione e le sue esperienze spirituali. La vita di Rol è caratterizzata da eventi straordinari e prodigi",
+      "tecniche_chiave": [
+        "utilizzo di principi olistici nella coltivazione",
+        "applicazione di concetti spirituali nella gestione della serra"
+      ],
+      "consiglio_coltivazione": "osservare e ascoltare la natura per comprendere meglio le esigenze delle piante",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "spiritualità",
+        "olistico"
+      ],
+      "rilevanza": "media",
+      "estratto_chiave": "Vita di Gustavo Rol, sensitivo italiano",
+      "data_analisi": "2026-06-23",
+      "id": "pdf_61",
+      "connessioni": [
+        {
+          "id": "pdf_41",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 6,
+          "motivo": "spiritualità, olistico"
+        },
+        {
+          "id": "pdf_42",
+          "titolo": "Rol Il grande veggente (Renzo Allegri)",
+          "peso": 5,
+          "motivo": "spiritualità, olistico"
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "Tertium Organum (P. D. Ouspensky)",
+          "peso": 4,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_39",
+          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
+          "peso": 4,
+          "motivo": "spiritualità"
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+          "peso": 3,
+          "motivo": "spiritualità"
         }
       ]
     }
@@ -2254,6 +3378,176 @@
       "nome": "utilizzo di tecniche di crescita personale per migliorare la connessione con la natura",
       "descrizione": "Il titolo suggerisce un'opera che esplora la spiritualità e la crescita personale, potenzialmente collegata a principi olistici e biodinamici.",
       "fonte": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti"
+    },
+    {
+      "nome": "utilizzo di principi olistici nella coltivazione",
+      "descrizione": "Il libro racconta la vita di Gustavo Rol, un sensitivo italiano noto per le sue capacità paranormali. Il testo esplora la sua infanzia, la sua formazione e le sue esperienze spirituali. La vita di Rol è caratterizzata da eventi straordinari e prodigi",
+      "fonte": "Gustavo Rol una vita di prodigi (Remo Lugli)"
+    },
+    {
+      "nome": "applicazione di concetti spirituali nella gestione della serra",
+      "descrizione": "Il libro racconta la vita di Gustavo Rol, un sensitivo italiano noto per le sue capacità paranormali. Il testo esplora la sua infanzia, la sua formazione e le sue esperienze spirituali. La vita di Rol è caratterizzata da eventi straordinari e prodigi",
+      "fonte": "Gustavo Rol una vita di prodigi (Remo Lugli)"
+    },
+    {
+      "nome": "stimolazione elettrica per la crescita",
+      "descrizione": "Il PDF presenta brevetti USA per l'elettrocultura, che utilizza stimolazione elettrica e magnetica per migliorare la crescita delle piante, controllare le infestanti e gestire le pesti. Le tecniche descritte potrebbero essere applicate in coltivazioni di cannabis Living Soil. L'elettrocultura potrebbe migliorare la salute e la resa delle piante.",
+      "fonte": "US Patents for Electroculture -- Electrical_Magnetic Stimulation of Plant Growth, Weed Killing, Pruning, Pest Control"
+    },
+    {
+      "nome": "controllo magnetico delle infestanti",
+      "descrizione": "Il PDF presenta brevetti USA per l'elettrocultura, che utilizza stimolazione elettrica e magnetica per migliorare la crescita delle piante, controllare le infestanti e gestire le pesti. Le tecniche descritte potrebbero essere applicate in coltivazioni di cannabis Living Soil. L'elettrocultura potrebbe migliorare la salute e la resa delle piante.",
+      "fonte": "US Patents for Electroculture -- Electrical_Magnetic Stimulation of Plant Growth, Weed Killing, Pruning, Pest Control"
+    },
+    {
+      "nome": "utilizzo di sostanze naturali per il suolo",
+      "descrizione": "Il titolo suggerisce una connessione con la coltivazione e la crescita, forse legata a tecniche di coltivazione innovative o sperimentali. Potrebbe trattarsi di un approccio olistico alla coltivazione, considerando l'ambiente e gli esseri viventi. Il contenuto esatto non è disponibile, quindi si possono solo fare ipotesi.",
+      "fonte": "dudgrichelcult"
+    },
+    {
+      "nome": "utilizzo di miceli per migliorare la biodiversità del suolo",
+      "descrizione": "Il titolo suggerisce una connessione con la coltivazione di funghi, forse relativa all'utilizzo di miceli per migliorare la salute del suolo. La tecnica potrebbe essere applicata in coltivazioni Living Soil per migliorare la biodiversità del terreno. Il PDF potrebbe trattare di come utilizzare i funghi per arricchire il suolo e migliorare la crescita delle piante.",
+      "fonte": "laemstromelcult"
+    },
+    {
+      "nome": "introduzione di funghi benefici nel terreno",
+      "descrizione": "Il titolo suggerisce una connessione con la coltivazione di funghi, forse relativa all'utilizzo di miceli per migliorare la salute del suolo. La tecnica potrebbe essere applicata in coltivazioni Living Soil per migliorare la biodiversità del terreno. Il PDF potrebbe trattare di come utilizzare i funghi per arricchire il suolo e migliorare la crescita delle piante.",
+      "fonte": "laemstromelcult"
+    },
+    {
+      "nome": "Applicazione di campi elettromagnetici alle piante",
+      "descrizione": "Il PDF 'hull-elcult' potrebbe trattare di tecniche di elettrocultura e coltivazione innovativa, forse in relazione alle scoperte di Lakhovsky. Potrebbe contenere informazioni su come applicare principi elettromagnetici per migliorare la crescita delle piante.",
+      "fonte": "hull-elcult"
+    },
+    {
+      "nome": "Utilizzo di dispositivi come la pila galvanica Fe-Cu per influenzare la crescita delle piante",
+      "descrizione": "Il PDF 'hull-elcult' potrebbe trattare di tecniche di elettrocultura e coltivazione innovativa, forse in relazione alle scoperte di Lakhovsky. Potrebbe contenere informazioni su come applicare principi elettromagnetici per migliorare la crescita delle piante.",
+      "fonte": "hull-elcult"
+    },
+    {
+      "nome": "applicazione di acqua magnetizzata",
+      "descrizione": "Il titolo 'magnacult' suggerisce una connessione con la magnetizzazione e le sue applicazioni in agricoltura, forse in relazione all'acqua magnetizzata o a tecniche di coltivazione innovative. Potrebbe trattare di metodi per migliorare la crescita delle piante attraverso l'applicazione di campi magnetici o principi simili. La mancanza del testo completo limita la comprensione approfondita del contenuto.",
+      "fonte": "magnacult"
+    },
+    {
+      "nome": "utilizzo di spirali cosmiche rame per influenzare la crescita delle piante",
+      "descrizione": "Il titolo 'magnacult' suggerisce una connessione con la magnetizzazione e le sue applicazioni in agricoltura, forse in relazione all'acqua magnetizzata o a tecniche di coltivazione innovative. Potrebbe trattare di metodi per migliorare la crescita delle piante attraverso l'applicazione di campi magnetici o principi simili. La mancanza del testo completo limita la comprensione approfondita del contenuto.",
+      "fonte": "magnacult"
+    },
+    {
+      "nome": "gestione del suolo",
+      "descrizione": "La ricerca agro-alimentare esplora metodi innovativi per migliorare la produzione e la sostenibilità nel settore agricolo. Potrebbe includere studi su tecniche di coltivazione, gestione del suolo e utilizzo di risorse idriche. La ricerca potrebbe avere implicazioni per la coltivazione di cannabis in serra.",
+      "fonte": "Ricerca agro-alimentare, giugno 2019"
+    },
+    {
+      "nome": "utilizzo efficiente di risorse idriche",
+      "descrizione": "La ricerca agro-alimentare esplora metodi innovativi per migliorare la produzione e la sostenibilità nel settore agricolo. Potrebbe includere studi su tecniche di coltivazione, gestione del suolo e utilizzo di risorse idriche. La ricerca potrebbe avere implicazioni per la coltivazione di cannabis in serra.",
+      "fonte": "Ricerca agro-alimentare, giugno 2019"
+    },
+    {
+      "nome": "applicazione di correnti elettriche per stimolare la crescita",
+      "descrizione": "Il corso si concentra sull'applicazione di principi elettroculturali in agricoltura, esplorando metodi per migliorare la crescita delle piante attraverso l'uso di correnti elettriche e campi magnetici. Potrebbe trattare anche di come queste tecniche influenzano la salute e la resistenza delle piante. Il corso potrebbe includere anche la discussione su come integrare l'elettrocultura con altre pratiche agricole sostenibili.",
+      "fonte": "Corso-Elettrocoltura"
+    },
+    {
+      "nome": "utilizzo di campi magnetici per migliorare la salute delle piante",
+      "descrizione": "Il corso si concentra sull'applicazione di principi elettroculturali in agricoltura, esplorando metodi per migliorare la crescita delle piante attraverso l'uso di correnti elettriche e campi magnetici. Potrebbe trattare anche di come queste tecniche influenzano la salute e la resistenza delle piante. Il corso potrebbe includere anche la discussione su come integrare l'elettrocultura con altre pratiche agricole sostenibili.",
+      "fonte": "Corso-Elettrocoltura"
+    },
+    {
+      "nome": "applicazione di campi elettrici",
+      "descrizione": "Il PDF 'elcult3' sembra trattare l'elettrocultura, una tecnica che utilizza campi elettrici per stimolare la crescita delle piante. Potrebbe essere correlato alle ricerche di Lakhovsky. La connessione con la coltivazione Living Soil cannabis potrebbe essere nell'ottimizzazione della crescita e della salute delle piante.",
+      "fonte": "elcult3"
+    },
+    {
+      "nome": "utilizzo di dispositivi come la pila galvanica Fe-Cu",
+      "descrizione": "Il PDF 'elcult3' sembra trattare l'elettrocultura, una tecnica che utilizza campi elettrici per stimolare la crescita delle piante. Potrebbe essere correlato alle ricerche di Lakhovsky. La connessione con la coltivazione Living Soil cannabis potrebbe essere nell'ottimizzazione della crescita e della salute delle piante.",
+      "fonte": "elcult3"
+    },
+    {
+      "nome": "utilizzo di dispositivi elettroculturali",
+      "descrizione": "Il PDF 'elcult2' potrebbe trattare di elettrocultura e sue applicazioni in agricoltura, con possibili connessioni alla coltivazione di cannabis in serra. La tecnologia Lakhovsky potrebbe essere menzionata come metodo per migliorare la crescita delle piante. Il testo potrebbe fornire indicazioni pratiche per l'utilizzo di dispositivi elettroculturali in serra.",
+      "fonte": "elcult2"
+    },
+    {
+      "nome": "applicazione di principi biodinamici",
+      "descrizione": "Il PDF 'elcult2' potrebbe trattare di elettrocultura e sue applicazioni in agricoltura, con possibili connessioni alla coltivazione di cannabis in serra. La tecnologia Lakhovsky potrebbe essere menzionata come metodo per migliorare la crescita delle piante. Il testo potrebbe fornire indicazioni pratiche per l'utilizzo di dispositivi elettroculturali in serra.",
+      "fonte": "elcult2"
+    },
+    {
+      "nome": "Applicazione di campi elettromagnetici",
+      "descrizione": "Il PDF 'elcult1' potrebbe trattare dell'elettrocultura e delle sue applicazioni pratiche in agricoltura, inclusa la coltivazione di cannabis. Le tecniche di elettrocultura possono influenzare la crescita delle piante e migliorare la resa. Il contenuto potrebbe includere metodi per applicare l'elettrocultura in modo efficace.",
+      "fonte": "elcult1"
+    },
+    {
+      "nome": "Utilizzo di dispositivi come la pila di Lakhovsky",
+      "descrizione": "Il PDF 'elcult1' potrebbe trattare dell'elettrocultura e delle sue applicazioni pratiche in agricoltura, inclusa la coltivazione di cannabis. Le tecniche di elettrocultura possono influenzare la crescita delle piante e migliorare la resa. Il contenuto potrebbe includere metodi per applicare l'elettrocultura in modo efficace.",
+      "fonte": "elcult1"
+    },
+    {
+      "nome": "applicazione di principi elettromagnetici in agricoltura",
+      "descrizione": "Il PDF potrebbe trattare delle invenzioni e scoperte di Nikola Tesla, in particolare sulla sua teoria dell'elettricità e del suo impatto sulla tecnologia moderna. Potrebbe anche esplorare le connessioni tra la sua opera e la coltivazione biodinamica. Il titolo suggerisce un focus sulle intuizioni innovative di Tesla.",
+      "fonte": "Tesla_-lampo-di-genio"
+    },
+    {
+      "nome": "utilizzo di dispositivi a basso consumo per migliorare la crescita delle piante",
+      "descrizione": "Il PDF potrebbe trattare delle invenzioni e scoperte di Nikola Tesla, in particolare sulla sua teoria dell'elettricità e del suo impatto sulla tecnologia moderna. Potrebbe anche esplorare le connessioni tra la sua opera e la coltivazione biodinamica. Il titolo suggerisce un focus sulle intuizioni innovative di Tesla.",
+      "fonte": "Tesla_-lampo-di-genio"
+    },
+    {
+      "nome": "utilizzo di dispositivi a basso voltaggio per stimolare la crescita",
+      "descrizione": "Il titolo suggerisce una connessione con le teorie di Nikola Tesla e la sua applicazione in un contesto di saggezza secolare. Il contenuto potrebbe trattare di energie sottili e loro applicazioni pratiche. L'autore Alessandro Falzani potrebbe esplorare le connessioni tra le scoperte di Tesla e la spiritualità",
+      "fonte": "IL-CODICE-TESLA-SECOLARIUM-SAGA-_Italian-Edition_-_Alessandro-Falzani-_Falzani_-Alessandro_"
+    },
+    {
+      "nome": "applicazione di frequenze specifiche per migliorare la crescita delle piante",
+      "descrizione": "Il libro esplora le teorie di Nikola Tesla sulle frequenze e le vibrazioni come modellatori della realtà. La connessione tra energia e materia è analizzata in relazione alle leggi fisiche e alle applicazioni pratiche. Il testo si concentra sull'impatto delle frequenze e delle vibrazioni sulla realtà fisica e sulla possibilità di manipolarle per ottenere risultati desiderati.",
+      "fonte": "Nikola-Tesla-Come-Lenergia_-Le-Frequenze-e-Le-Vibrazioni-Modellano-La-Realtà-_Italian-Edition_-_Josh"
+    },
+    {
+      "nome": "utilizzo di dispositivi di risonanza per aumentare l'assorbimento di nutrienti",
+      "descrizione": "Il libro esplora le teorie di Nikola Tesla sulle frequenze e le vibrazioni come modellatori della realtà. La connessione tra energia e materia è analizzata in relazione alle leggi fisiche e alle applicazioni pratiche. Il testo si concentra sull'impatto delle frequenze e delle vibrazioni sulla realtà fisica e sulla possibilità di manipolarle per ottenere risultati desiderati.",
+      "fonte": "Nikola-Tesla-Come-Lenergia_-Le-Frequenze-e-Le-Vibrazioni-Modellano-La-Realtà-_Italian-Edition_-_Josh"
+    },
+    {
+      "nome": "utilizzo di frequenze specifiche per stimolare la crescita delle piante",
+      "descrizione": "Il libro esplora la vita e le invenzioni di Nikola Tesla, un pioniere della fisica e dell'ingegneria elettrica. La sua eredità include contributi fondamentali alla tecnologia moderna, come la corrente alternata. Il libro potrebbe esplorare come le sue idee siano state dimenticate o sottovalutate.",
+      "fonte": "Nikola Tesla, un genio volutamente dimenticato (Baccelli, Vittorio)"
+    },
+    {
+      "nome": "utilizzo di energia alternata per stimolare la crescita delle piante",
+      "descrizione": "L'autobiografia di Nikola Tesla, un genio dell'elettricità e dell'invenzione, che descrive la sua vita e le sue scoperte. Il libro copre argomenti come la corrente alternata e le sue applicazioni. Tesla condivide le sue esperienze e le sue intuizioni sulla natura dell'elettricità e del magnetismo.",
+      "fonte": "Le-mie-invenzioni-lautobiografia-di-un-genio-_edizione-integrale_-_Nikola-Tesla_"
+    },
+    {
+      "nome": "applicazione di principi elettroculturali in agricoltura",
+      "descrizione": "Il libro parla della vita e delle scoperte di Pierluigi Ighina, un inventore e ricercatore italiano. Il testo esplora le sue teorie sulla energia e la sua applicazione pratica. Potrebbe contenere informazioni sulla sua tecnologia di elettrocultura.",
+      "fonte": "Pierluigi Ighina - Profeta sconosciuto (Alberto Tavanti)"
+    },
+    {
+      "nome": "utilizzo di dispositivi per la stimolazione delle piante",
+      "descrizione": "Il libro parla della vita e delle scoperte di Pierluigi Ighina, un inventore e ricercatore italiano. Il testo esplora le sue teorie sulla energia e la sua applicazione pratica. Potrebbe contenere informazioni sulla sua tecnologia di elettrocultura.",
+      "fonte": "Pierluigi Ighina - Profeta sconosciuto (Alberto Tavanti)"
+    },
+    {
+      "nome": "utilizzo di piante officinali e naturali per la cura del corpo e dell'anima",
+      "descrizione": "Il testo tratta degli insegnamenti spirituali e filosofici degli Esseni, una comunità ebraica del I secolo. Gli insegnamenti del maestro si concentrano sulla pace, l'armonia e la connessione con la natura. Il libro quarto potrebbe approfondire temi come la cura del corpo e dell'anima attraverso la natura e la spiritualità.",
+      "fonte": "Gli insegnamenti del maestro. Il vangelo esseno della pace. Libro quarto. (Edmond Bordeaux-Szekely) (z-library.sk, 1lib.sk, z-lib.sk)"
+    },
+    {
+      "nome": "pratiche di meditazione e connessione con la natura per l'armonia interiore",
+      "descrizione": "Il testo tratta degli insegnamenti spirituali e filosofici degli Esseni, una comunità ebraica del I secolo. Gli insegnamenti del maestro si concentrano sulla pace, l'armonia e la connessione con la natura. Il libro quarto potrebbe approfondire temi come la cura del corpo e dell'anima attraverso la natura e la spiritualità.",
+      "fonte": "Gli insegnamenti del maestro. Il vangelo esseno della pace. Libro quarto. (Edmond Bordeaux-Szekely) (z-library.sk, 1lib.sk, z-lib.sk)"
+    },
+    {
+      "nome": "armonizzazione dell'ambiente",
+      "descrizione": "Il testo sembra trattare di spiritualità e pace interiore, senza contenuti direttamente applicabili alla coltivazione. Potrebbe trattare di crescita personale e armonia con la natura.",
+      "fonte": "Se vuoi la Pace prepara te stesso BUNDLE 3 LIBRI - Libro 1 Il Vangelo della Pace 1 Tu salverai il mondo + Libro 2 Il Vangelo… (Davide Appi) (z-library.sk, 1lib.sk, z-lib.sk)"
+    },
+    {
+      "nome": "connessione con la natura",
+      "descrizione": "Il testo sembra trattare di spiritualità e pace interiore, senza contenuti direttamente applicabili alla coltivazione. Potrebbe trattare di crescita personale e armonia con la natura.",
+      "fonte": "Se vuoi la Pace prepara te stesso BUNDLE 3 LIBRI - Libro 1 Il Vangelo della Pace 1 Tu salverai il mondo + Libro 2 Il Vangelo… (Davide Appi) (z-library.sk, 1lib.sk, z-lib.sk)"
     }
   ]
 }
