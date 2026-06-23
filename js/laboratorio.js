@@ -359,6 +359,17 @@ function labPopupTecnicaAll(idx) {
     var diff = t.difficolta==='facile' ? '🟢 Facile' : t.difficolta==='media' ? '🟡 Media' : '🔴 Difficile';
     h += '<div style="margin-top:10px;font-size:12px;color:var(--text3)">Difficoltà: <strong>' + diff + '</strong></div>';
   }
+  if (t.istruzioni_pratiche && t.istruzioni_pratiche.length) {
+    var h_ip = '<div style="background:rgba(0,180,255,0.06);border-radius:10px;padding:10px;margin-bottom:10px">';
+    h_ip += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:8px">🛠 ISTRUZIONI PRATICHE</div>';
+    t.istruzioni_pratiche.forEach(function(step, si) {
+      h_ip += '<div style="display:flex;gap:8px;margin-bottom:6px;align-items:flex-start">';
+      h_ip += '<div style="min-width:20px;height:20px;background:rgba(0,180,255,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#000;flex-shrink:0">' + (si+1) + '</div>';
+      h_ip += '<div style="font-size:12px;color:var(--text2);line-height:1.5">' + labEsc(step) + '</div></div>';
+    });
+    h_ip += '</div>';
+    h += h_ip;
+  }
   if (t.sperimentale) {
     h += '<div style="margin-top:10px;background:rgba(155,109,255,0.1);border:1px solid rgba(155,109,255,0.3);border-radius:8px;padding:8px;font-size:11px;color:var(--el-violet)">🔬 Tecnica sperimentale — documenta le osservazioni.</div>';
   }
