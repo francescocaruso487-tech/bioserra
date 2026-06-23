@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-23T10:01:00.693Z",
+  "lastUpdate": "2026-06-23T10:01:08.911Z",
   "versione": "1.0",
   "esperimenti_disponibili": [
     {
@@ -143,6 +143,23 @@
       "difficolta": "facile",
       "fonte": "Royal Queen Seeds",
       "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": true,
+      "data_attivazione": "2026-06-23"
+    },
+    {
+      "id": "daily_1781640155746_1",
+      "nome": "Irrigazione intelligente",
+      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
+      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
+      "materiali": [
+        "Sensori di umidità",
+        "Sistema di irrigazione automatico"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": " Tecnologia agricola",
+      "durata_giorni": 14,
       "data_proposta": "2026-06-16",
       "attivo": true,
       "data_attivazione": "2026-06-23"
@@ -907,22 +924,6 @@
       "difficolta": "facile",
       "fonte": "Royal Queen Seeds",
       "durata_giorni": 2,
-      "data_proposta": "2026-06-16",
-      "attivo": false
-    },
-    {
-      "id": "daily_1781640155746_1",
-      "nome": "Irrigazione intelligente",
-      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
-      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
-      "materiali": [
-        "Sensori di umidità",
-        "Sistema di irrigazione automatico"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Facile",
-      "fonte": " Tecnologia agricola",
-      "durata_giorni": 14,
       "data_proposta": "2026-06-16",
       "attivo": false
     },
