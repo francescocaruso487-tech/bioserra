@@ -33,6 +33,8 @@ var labPdfData    = null;
 var labGuideData  = [];
 var labDigestData = null;
 var labBrainData  = null;
+var labVettoriData = null;
+var labGrafoData   = null;
 
 var _tk1 = 'ghp_dtR2oWiOCz8XGENXd2uTm';
 var _tk2 = 'rj40Nj8As1xVqMD';
@@ -105,6 +107,7 @@ async function labLoadAll() {
   labRenderGuide();
   labRenderBrain();
   labUpdateBadges();
+  labLoadSecondBrain();
 }
 
 function labSetStatus(id, txt) {
@@ -778,5 +781,425 @@ async function espDisattiva(idx) { await labEspDisattiva(idx); }
 /* ── INIT ── */
 function initElettrocultura() {
   labLoadAll();
+}
+
+
+
+
+/* ══════════════════════════════════════════════════════════════
+   SECOND BRAIN — variabili globali
+══════════════════════════════════════════════════════════════ */
+
+var labVettoriData = null;   // pdf_vectors.json
+var labGrafoData   = null;   // pdf_graph.json
+var labSbInited    = false;  // D3 già inizializzato
+
+/* ══════════════════════════════════════════════════════════════
+   SECOND BRAIN — caricamento dati (chiamato da labLoadAll)
+══════════════════════════════════════════════════════════════ */
+
+async function labLoadSecondBrain() {
+  var ts = '?v=' + Date.now();
+  try {
+    var [rVet, rGraf] = await Promise.allSettled([
+      fetch(LAB_RAW + 'pdf_vectors.json' + ts).then(function(r){ return r.json(); }),
+      fetch(LAB_RAW + 'pdf_graph.json'   + ts).then(function(r){ return r.json(); })
+    ]);
+    if (rVet.status  === 'fulfilled') labVettoriData = rVet.value;
+    if (rGraf.status === 'fulfilled') labGrafoData   = rGraf.value;
+  } catch(e) {
+    console.warn('Second Brain load error:', e);
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SECOND BRAIN — enrich nodi con titoli da pdf_knowledge
+   (pdf_knowledge usa id = pdf_0..N, vettori usano hash UUID
+    ma sono nello stesso ordine di analisi)
+══════════════════════════════════════════════════════════════ */
+
+function labSbEnrichNodi(nodi) {
+  if (!labPdfData || !labPdfData.analisi) return nodi;
+  var analisi = labPdfData.analisi;
+  return nodi.map(function(n, i) {
+    var src = analisi[i] || {};
+    return Object.assign({}, n, {
+      titolo:   src.titolo   || n.titolo   || ('PDF #' + i),
+      tag:      src.tag      || n.tag      || [],
+      gruppo:   src.rilevanza === 'alta' ? 'chiave' : (src.rilevanza === 'media' ? 'utile' : 'generale'),
+      rilevanza: src.rilevanza || n.rilevanza || 'media',
+      sommario: src.sommario || ''
+    });
+  });
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SECOND BRAIN — apre popup (entry point dall\u2019icona grid)
+══════════════════════════════════════════════════════════════ */
+
+function labPopupSecondBrain() {
+  var nodi  = (labGrafoData  && labGrafoData.nodi)  ? labSbEnrichNodi(labGrafoData.nodi.slice())  : [];
+  var edges = (labGrafoData  && labGrafoData.edges) ? labGrafoData.edges  : [];
+  var totVet = labVettoriData && labVettoriData.vettori ? labVettoriData.vettori.length : 0;
+  var totPdf = labPdfData && labPdfData.analisi ? labPdfData.analisi.length : 0;
+
+  var html = '<div style="padding:2px 0 12px">'
+    + '<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">'
+    +   '<span style="font-size:22px">\uD83E\uDDE0</span>'
+    +   '<div>'
+    +     '<div style="font-size:15px;font-weight:700;color:#00b4ff;letter-spacing:1px">SECOND BRAIN</div>'
+    +     '<div style="font-size:10px;color:rgba(0,180,255,0.5);letter-spacing:0.5px">'
+    +       totVet + ' PDF vettorizzati \u00B7 ' + totPdf + ' analizzati \u00B7 ' + edges.length + ' connessioni'
+    +     '</div>'
+    +   '</div>'
+    + '</div>'
+    /* barra ricerca semantica */
+    + '<div style="display:flex;gap:8px;margin-bottom:14px">'
+    +   '<input id="sb-search-input" type="text" placeholder="\uD83D\uDD0D Cerca nel Second Brain\u2026" '
+    +     'style="flex:1;background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.25);border-radius:10px;'
+    +     'padding:10px 14px;color:#e0f0ff;font-size:13px;outline:none" '
+    +     'onkeydown="if(event.key===\'Enter\'){event.preventDefault();labSbSearch();}" />'
+    +   '<button onclick="labSbSearch()" '
+    +     'style="background:rgba(0,180,255,0.15);border:1px solid rgba(0,180,255,0.3);border-radius:10px;'
+    +     'padding:10px 16px;color:#00b4ff;font-size:14px;cursor:pointer">\u27A4</button>'
+    + '</div>'
+    /* area risultati ricerca */
+    + '<div id="sb-search-results" style="margin-bottom:14px"></div>'
+    /* grafo */
+    + '<div style="font-size:10px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;margin-bottom:8px">'
+    +   'GRAFO CONNESSIONI PDF \u2014 ' + nodi.length + ' nodi'
+    + '</div>'
+    + '<div id="sb-graph-container" style="width:100%;height:340px;background:rgba(0,0,0,0.3);'
+    +   'border:1px solid rgba(0,180,255,0.15);border-radius:14px;overflow:hidden;position:relative">'
+    +   '<div id="sb-graph-loading" style="position:absolute;inset:0;display:flex;align-items:center;'
+    +     'justify-content:center;color:rgba(0,180,255,0.4);font-size:12px">\u23F3 Caricamento grafo\u2026</div>'
+    + '</div>'
+    /* legenda */
+    + '<div style="display:flex;gap:14px;margin-top:10px;flex-wrap:wrap">'
+    +   '<div style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(0,180,255,0.5)">'
+    +     '<div style="width:10px;height:10px;border-radius:50%;background:#00b4ff"></div>chiave'
+    +   '</div>'
+    +   '<div style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(155,109,255,0.5)">'
+    +     '<div style="width:10px;height:10px;border-radius:50%;background:#9b6dff"></div>utile'
+    +   '</div>'
+    +   '<div style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(0,180,255,0.3)">'
+    +     '<div style="width:8px;height:8px;border-radius:50%;background:rgba(0,180,255,0.3)"></div>generale'
+    +   '</div>'
+    +   '<div style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(255,255,255,0.3)">'
+    +     '<div style="width:20px;height:2px;background:rgba(0,180,255,0.6)"></div>forte'
+    +   '</div>'
+    +   '<div style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(255,255,255,0.2)">'
+    +     '<div style="width:20px;height:1px;background:rgba(0,180,255,0.2)"></div>debole'
+    +   '</div>'
+    + '</div>'
+    + '</div>';
+
+  labPopupOpen(html);
+
+  /* Carica D3 se non presente, poi renderizza */
+  if (typeof d3 === 'undefined') {
+    var script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js';
+    script.onload = function() { labSbInitGraph(nodi, edges); };
+    document.head.appendChild(script);
+  } else {
+    setTimeout(function(){ labSbInitGraph(nodi, edges); }, 80);
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SECOND BRAIN — D3.js force-directed graph
+══════════════════════════════════════════════════════════════ */
+
+function labSbInitGraph(nodi, edges) {
+  var container = document.getElementById('sb-graph-container');
+  var loading   = document.getElementById('sb-graph-loading');
+  if (!container) return;
+  if (loading) loading.style.display = 'none';
+
+  if (!nodi.length) {
+    container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;'
+      + 'height:100%;color:rgba(0,180,255,0.3);font-size:12px">Nessun dato grafo disponibile.<br>'
+      + 'Il workflow embedding gira alle 6:30.</div>';
+    return;
+  }
+
+  var W = container.clientWidth  || 340;
+  var H = container.clientHeight || 340;
+
+  /* Colore nodo per gruppo */
+  function nodeColor(d) {
+    if (d.gruppo === 'chiave')   return '#00b4ff';
+    if (d.gruppo === 'utile')    return '#9b6dff';
+    return 'rgba(0,180,255,0.3)';
+  }
+  function nodeRadius(d) {
+    if (d.gruppo === 'chiave') return 9;
+    if (d.gruppo === 'utile')  return 7;
+    return 5;
+  }
+  function edgeOpacity(d) {
+    return d.tipo === 'forte' ? 0.55 : 0.18;
+  }
+  function edgeWidth(d) {
+    return d.tipo === 'forte' ? 1.5 : 0.7;
+  }
+
+  /* Prepara link con riferimenti agli oggetti nodo */
+  var nodiMap = {};
+  nodi.forEach(function(n){ nodiMap[n.id] = n; });
+  var links = edges
+    .filter(function(e){ return nodiMap[e.source] && nodiMap[e.target]; })
+    .map(function(e){ return { source: e.source, target: e.target, peso: e.peso, tipo: e.tipo }; });
+
+  var svg = d3.select(container)
+    .append('svg')
+    .attr('width', W)
+    .attr('height', H)
+    .style('background', 'transparent');
+
+  /* glow filter */
+  var defs = svg.append('defs');
+  var filter = defs.append('filter').attr('id','sb-glow');
+  filter.append('feGaussianBlur').attr('stdDeviation','2.5').attr('result','coloredBlur');
+  var merge = filter.append('feMerge');
+  merge.append('feMergeNode').attr('in','coloredBlur');
+  merge.append('feMergeNode').attr('in','SourceGraphic');
+
+  var g = svg.append('g');
+
+  /* zoom/pan */
+  svg.call(d3.zoom()
+    .scaleExtent([0.3, 4])
+    .on('zoom', function(event){ g.attr('transform', event.transform); })
+  );
+
+  var simulation = d3.forceSimulation(nodi)
+    .force('link', d3.forceLink(links).id(function(d){ return d.id; }).distance(60).strength(0.4))
+    .force('charge', d3.forceManyBody().strength(-120))
+    .force('center', d3.forceCenter(W / 2, H / 2))
+    .force('collision', d3.forceCollide().radius(function(d){ return nodeRadius(d) + 6; }));
+
+  /* link */
+  var link = g.append('g')
+    .selectAll('line')
+    .data(links)
+    .join('line')
+    .attr('stroke', 'rgba(0,180,255,1)')
+    .attr('stroke-opacity', edgeOpacity)
+    .attr('stroke-width', edgeWidth);
+
+  /* nodi */
+  var node = g.append('g')
+    .selectAll('circle')
+    .data(nodi)
+    .join('circle')
+    .attr('r', nodeRadius)
+    .attr('fill', nodeColor)
+    .attr('filter', function(d){ return d.gruppo === 'chiave' ? 'url(#sb-glow)' : null; })
+    .style('cursor', 'pointer')
+    .on('click', function(event, d){ labSbNodeClick(d); })
+    .call(d3.drag()
+      .on('start', function(event, d){
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x; d.fy = d.y;
+      })
+      .on('drag', function(event, d){
+        d.fx = event.x; d.fy = event.y;
+      })
+      .on('end', function(event, d){
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null; d.fy = null;
+      })
+    );
+
+  /* label brevi (solo se il titolo esiste) */
+  var label = g.append('g')
+    .selectAll('text')
+    .data(nodi.filter(function(d){ return d.titolo && d.titolo.length > 0; }))
+    .join('text')
+    .attr('font-size', 8)
+    .attr('fill', 'rgba(0,180,255,0.65)')
+    .attr('text-anchor', 'middle')
+    .attr('pointer-events', 'none')
+    .text(function(d){
+      var t = d.titolo || '';
+      return t.length > 22 ? t.slice(0,20) + '\u2026' : t;
+    });
+
+  simulation.on('tick', function(){
+    link
+      .attr('x1', function(d){ return d.source.x; })
+      .attr('y1', function(d){ return d.source.y; })
+      .attr('x2', function(d){ return d.target.x; })
+      .attr('y2', function(d){ return d.target.y; });
+    node
+      .attr('cx', function(d){ return d.x; })
+      .attr('cy', function(d){ return d.y; });
+    label
+      .attr('x', function(d){ return d.x; })
+      .attr('y', function(d){ return d.y - 12; });
+  });
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SECOND BRAIN — click su nodo → mostra info
+══════════════════════════════════════════════════════════════ */
+
+function labSbNodeClick(d) {
+  var tagsHtml = (d.tag && d.tag.length)
+    ? d.tag.slice(0,5).map(function(t){
+        return '<span style="background:rgba(0,180,255,0.12);border:1px solid rgba(0,180,255,0.25);'
+          + 'border-radius:6px;padding:2px 7px;font-size:10px;color:#00b4ff;margin:2px 2px 0 0;display:inline-block">'
+          + labEsc(t) + '</span>';
+      }).join('')
+    : '<span style="color:rgba(0,180,255,0.3);font-size:11px">nessun tag</span>';
+
+  /* trova connessioni di questo nodo */
+  var edgesN = (labGrafoData && labGrafoData.edges) ? labGrafoData.edges : [];
+  var conn = edgesN.filter(function(e){ return e.source === d.id || e.target === d.id; });
+  var nodi = (labGrafoData && labGrafoData.nodi) ? labSbEnrichNodi(labGrafoData.nodi) : [];
+  var connHtml = conn.slice(0,4).map(function(e){
+    var altroId = e.source === d.id ? e.target : e.source;
+    var altro = nodi.find(function(n){ return n.id === altroId; }) || {};
+    var titoloAltro = altro.titolo || altroId.slice(0,8);
+    return '<div style="font-size:11px;color:rgba(0,180,255,0.6);padding:3px 0;border-bottom:1px solid rgba(0,180,255,0.08)">'
+      + (e.tipo === 'forte' ? '\uD83D\uDD35' : '\u26AA') + ' '
+      + labEsc(titoloAltro.slice(0,45)) + ' '
+      + '<span style="color:rgba(0,180,255,0.35)">(' + (e.peso * 100).toFixed(0) + '%)</span>'
+      + '</div>';
+  }).join('');
+
+  var info = '<div style="padding:4px 0">'
+    + '<div style="font-size:14px;font-weight:700;color:#00b4ff;margin-bottom:8px">'
+    + labEsc(d.titolo || 'PDF senza titolo') + '</div>'
+    + '<div style="margin-bottom:8px">' + tagsHtml + '</div>'
+    + (d.sommario ? '<div style="font-size:12px;color:rgba(0,180,255,0.7);line-height:1.5;margin-bottom:10px">'
+        + labEsc(d.sommario.slice(0,200)) + (d.sommario.length > 200 ? '\u2026' : '') + '</div>' : '')
+    + '<div style="font-size:10px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;margin-bottom:6px">'
+    + 'CONNESSIONI (' + conn.length + ')</div>'
+    + (connHtml || '<div style="font-size:11px;color:rgba(0,180,255,0.3)">Nessuna connessione</div>')
+    + '</div>';
+
+  /* mostra in sb-search-results senza chiudere il popup */
+  var el = document.getElementById('sb-search-results');
+  if (el) {
+    el.innerHTML = '<div style="background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.2);'
+      + 'border-radius:12px;padding:12px 14px;margin-bottom:4px">' + info + '</div>';
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SECOND BRAIN — ricerca semantica con Mistral embed
+══════════════════════════════════════════════════════════════ */
+
+async function labSbSearch() {
+  var input = document.getElementById('sb-search-input');
+  var resEl = document.getElementById('sb-search-results');
+  if (!input || !resEl) return;
+  var query = input.value.trim();
+  if (!query) return;
+
+  resEl.innerHTML = '<div style="color:rgba(0,180,255,0.4);font-size:12px;padding:8px">'
+    + '\u23F3 Ricerca semantica in corso\u2026</div>';
+
+  if (!labVettoriData || !labVettoriData.vettori || !labVettoriData.vettori.length) {
+    resEl.innerHTML = '<div style="color:rgba(255,100,100,0.7);font-size:12px;padding:8px">'
+      + 'Vettori non disponibili. Il workflow embedding gira alle 6:30.</div>';
+    return;
+  }
+
+  try {
+    /* Embedding della query con Mistral */
+    var mistralKey = 'CNMSB5c5o5OGZ0jiSLt7Mq8Yddz8fGt9';
+    var resp = await fetch('https://api.mistral.ai/v1/embeddings', {
+      method: 'POST',
+      headers: {
+        'Content-Type':  'application/json',
+        'Authorization': 'Bearer ' + mistralKey
+      },
+      body: JSON.stringify({
+        model: 'mistral-embed',
+        input: [query]
+      })
+    });
+
+    if (!resp.ok) throw new Error('Mistral API error ' + resp.status);
+    var data = await resp.json();
+    var queryVec = data.data[0].embedding;
+
+    /* Cosine similarity con ogni vettore */
+    var vettori = labVettoriData.vettori;
+    var analisi = (labPdfData && labPdfData.analisi) ? labPdfData.analisi : [];
+
+    var scores = vettori.map(function(v, i) {
+      var src = analisi[i] || {};
+      return {
+        score:    labSbCosine(queryVec, v.vettore),
+        titolo:   src.titolo   || v.titolo   || ('PDF #' + i),
+        sommario: src.sommario || '',
+        tag:      src.tag      || v.tag      || [],
+        id:       v.id
+      };
+    });
+
+    scores.sort(function(a,b){ return b.score - a.score; });
+    var top5 = scores.slice(0,5).filter(function(s){ return s.score > 0.3; });
+
+    if (!top5.length) {
+      resEl.innerHTML = '<div style="color:rgba(0,180,255,0.4);font-size:12px;padding:8px">'
+        + 'Nessun risultato rilevante trovato per <em>' + labEsc(query) + '</em>.</div>';
+      return;
+    }
+
+    var html = '<div style="font-size:10px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;'
+      + 'margin-bottom:8px">RISULTATI RICERCA: <em>' + labEsc(query) + '</em></div>';
+
+    top5.forEach(function(s) {
+      var pct = (s.score * 100).toFixed(0);
+      var barW = Math.max(8, Math.min(100, s.score * 100));
+      var tagsH = s.tag.slice(0,3).map(function(t){
+        return '<span style="background:rgba(0,180,255,0.1);border-radius:4px;padding:1px 6px;'
+          + 'font-size:9px;color:rgba(0,180,255,0.7);margin-right:3px">' + labEsc(t) + '</span>';
+      }).join('');
+      html += '<div style="background:rgba(0,180,255,0.05);border:1px solid rgba(0,180,255,0.15);'
+        + 'border-radius:10px;padding:10px 12px;margin-bottom:8px">'
+        + '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px">'
+        +   '<div style="font-size:12px;font-weight:600;color:#e0f0ff;flex:1;padding-right:8px">'
+        +     labEsc(s.titolo.slice(0,60)) + (s.titolo.length > 60 ? '\u2026' : '')
+        +   '</div>'
+        +   '<div style="font-size:11px;color:#00b4ff;font-weight:700;white-space:nowrap">' + pct + '%</div>'
+        + '</div>'
+        + '<div style="background:rgba(0,180,255,0.1);border-radius:3px;height:3px;margin-bottom:7px">'
+        +   '<div style="background:#00b4ff;height:3px;border-radius:3px;width:' + barW + '%"></div>'
+        + '</div>'
+        + (s.sommario ? '<div style="font-size:11px;color:rgba(0,180,255,0.6);line-height:1.4;margin-bottom:6px">'
+            + labEsc(s.sommario.slice(0,120)) + (s.sommario.length > 120 ? '\u2026' : '') + '</div>' : '')
+        + tagsH
+        + '</div>';
+    });
+
+    resEl.innerHTML = html;
+
+  } catch(e) {
+    resEl.innerHTML = '<div style="color:rgba(255,100,100,0.7);font-size:12px;padding:8px">'
+      + '\u26A0\uFE0F Errore ricerca: ' + labEsc(e.message) + '</div>';
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SECOND BRAIN — cosine similarity
+══════════════════════════════════════════════════════════════ */
+
+function labSbCosine(a, b) {
+  if (!a || !b || a.length !== b.length) return 0;
+  var dot = 0, normA = 0, normB = 0;
+  for (var i = 0; i < a.length; i++) {
+    dot   += a[i] * b[i];
+    normA += a[i] * a[i];
+    normB += b[i] * b[i];
+  }
+  var denom = Math.sqrt(normA) * Math.sqrt(normB);
+  return denom === 0 ? 0 : dot / denom;
 }
 
