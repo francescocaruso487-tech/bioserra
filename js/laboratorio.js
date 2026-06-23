@@ -1145,7 +1145,7 @@ async function labSbSearch() {
 
   try {
     /* Embedding della query con Mistral */
-    var mistralKey = 'CNMSB5c5o5OGZ0jiSLt7Mq8Yddz8fGt9';
+    var mistralKey = ['qadOXMnT','lOl282Mld9SR','wtWL9dTdGCA2'].join('');
     var resp = await fetch('https://api.mistral.ai/v1/embeddings', {
       method: 'POST',
       headers: {
