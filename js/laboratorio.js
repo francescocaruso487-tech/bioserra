@@ -960,7 +960,7 @@ function labScrollBrain() {
 var cervHistory = [];
 
 async function cervBuildSystem() {
-  var sys = 'Sei il Cervello AI di BioSerra, esperto di cannabis outdoor Living Soil a Caserta (41\u00B0N). ';
+  var sys = 'Sei il Cervello AI di BioSerra, esperto di coltivazione Living Soil outdoor a Caserta (41\u00B0N). ';
   sys += 'Rispondi in italiano, conciso e pratico, max 200 parole. ';
   try {
     var [rMeteo, rBrain, rLuna, rPiante] = await Promise.allSettled([
