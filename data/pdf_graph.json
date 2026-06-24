@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-24T11:04:12.723Z",
+  "lastUpdate": "2026-06-24T11:06:42.622Z",
   "nodi": [
     {
       "id": "2639cec481ad4d348e98a1e18917f590",
@@ -140,6 +140,146 @@
       "tag": [],
       "rilevanza": "media",
       "gruppo": "generale"
+    },
+    {
+      "id": "b25fb62c911345fe98810dbb945b0fb2",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "13732b1ee0dd451c9a8661e00c045293",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "1f979b427955483589c55b3915850062",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "7b828c2e39ed467fbc40e7155dab1679",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "faa2a2d7f5a843e5a691944222dc4083",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "40add0832522481da627ffa39a20dce9",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "edc2bf9506414f70822f41b90356fbd1",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "0a558096b15646adb2918505e419d352",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "f658da0e4c5b49f69f10d1151f818b01",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "d387fcd0da3d448cb74f3d039c67e784",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "aaf783263bd34c079dd6a94f501586ce",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "aed0c41754994e718eabc945807d08cc",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
+    },
+    {
+      "id": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "titolo": "",
+      "tag": [],
+      "rilevanza": "media",
+      "gruppo": "generale"
     }
   ],
   "edges": [
@@ -258,6 +398,126 @@
       "tipo": "forte"
     },
     {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "2639cec481ad4d348e98a1e18917f590",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
       "source": "98a3a7dc91f341b29b58189de61f7809",
       "target": "8e56ec31a4e9434890be6669b0ea3425",
       "peso": 0.83,
@@ -366,6 +626,126 @@
       "tipo": "forte"
     },
     {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "98a3a7dc91f341b29b58189de61f7809",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
       "source": "8e56ec31a4e9434890be6669b0ea3425",
       "target": "bce4462d6f244896a555e38fd6f5d411",
       "peso": 0.77,
@@ -468,6 +848,126 @@
       "tipo": "forte"
     },
     {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "8e56ec31a4e9434890be6669b0ea3425",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
       "source": "bce4462d6f244896a555e38fd6f5d411",
       "target": "7c0f0fda3b1e478ba6c46ebde45b05e1",
       "peso": 0.79,
@@ -564,6 +1064,126 @@
       "tipo": "forte"
     },
     {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "bce4462d6f244896a555e38fd6f5d411",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
       "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
       "target": "0199bbcfb3074367ae04a1a38b12eb83",
       "peso": 0.74,
@@ -654,6 +1274,126 @@
       "tipo": "forte"
     },
     {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.85,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "7c0f0fda3b1e478ba6c46ebde45b05e1",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
       "source": "0199bbcfb3074367ae04a1a38b12eb83",
       "target": "33593fe595a64c5f8420a6153416d50a",
       "peso": 0.77,
@@ -738,6 +1478,126 @@
       "tipo": "forte"
     },
     {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "0199bbcfb3074367ae04a1a38b12eb83",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
       "source": "33593fe595a64c5f8420a6153416d50a",
       "target": "e78cef220ade4a09bcb6262ec99bf539",
       "peso": 0.8,
@@ -816,6 +1676,126 @@
       "tipo": "forte"
     },
     {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "33593fe595a64c5f8420a6153416d50a",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
       "source": "e78cef220ade4a09bcb6262ec99bf539",
       "target": "3cc493a04ad74931bf43cc47b56d082b",
       "peso": 0.8,
@@ -888,6 +1868,126 @@
       "tipo": "forte"
     },
     {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "e78cef220ade4a09bcb6262ec99bf539",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
       "source": "3cc493a04ad74931bf43cc47b56d082b",
       "target": "4102c046041b483aaaa55789847605a9",
       "peso": 0.83,
@@ -954,6 +2054,126 @@
       "tipo": "forte"
     },
     {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.9,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "3cc493a04ad74931bf43cc47b56d082b",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
       "source": "4102c046041b483aaaa55789847605a9",
       "target": "4031b835747348a38b1df7e7cbdc1f0e",
       "peso": 0.84,
@@ -1014,6 +2234,126 @@
       "tipo": "forte"
     },
     {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "4102c046041b483aaaa55789847605a9",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
       "source": "4031b835747348a38b1df7e7cbdc1f0e",
       "target": "aea52a0915f141d7ad2a18fcfd36e2a6",
       "peso": 0.77,
@@ -1068,6 +2408,126 @@
       "tipo": "forte"
     },
     {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.85,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.9,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "4031b835747348a38b1df7e7cbdc1f0e",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
       "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
       "target": "03c279e2c977424688b56c70a3c21a4a",
       "peso": 0.84,
@@ -1116,6 +2576,126 @@
       "tipo": "forte"
     },
     {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "aea52a0915f141d7ad2a18fcfd36e2a6",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
       "source": "03c279e2c977424688b56c70a3c21a4a",
       "target": "d2e9d4639b4240bdb77148bc98b50e5c",
       "peso": 0.94,
@@ -1158,6 +2738,126 @@
       "tipo": "forte"
     },
     {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.94,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "03c279e2c977424688b56c70a3c21a4a",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
       "source": "d2e9d4639b4240bdb77148bc98b50e5c",
       "target": "d84e113a987548968e48226e5e980d67",
       "peso": 0.76,
@@ -1194,6 +2894,126 @@
       "tipo": "forte"
     },
     {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.71,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.94,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "d2e9d4639b4240bdb77148bc98b50e5c",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
       "source": "d84e113a987548968e48226e5e980d67",
       "target": "2448cf9cebe14c3d8a551f38ca1f8666",
       "peso": 0.85,
@@ -1224,6 +3044,126 @@
       "tipo": "forte"
     },
     {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.85,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "d84e113a987548968e48226e5e980d67",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
       "source": "2448cf9cebe14c3d8a551f38ca1f8666",
       "target": "05990b837dd54240815ab7665094d14a",
       "peso": 0.87,
@@ -1248,6 +3188,126 @@
       "tipo": "forte"
     },
     {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.85,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.87,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "2448cf9cebe14c3d8a551f38ca1f8666",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
       "source": "05990b837dd54240815ab7665094d14a",
       "target": "03242ca25cb343d38ae1ae898c0f12ec",
       "peso": 0.78,
@@ -1266,6 +3326,126 @@
       "tipo": "forte"
     },
     {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.87,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "05990b837dd54240815ab7665094d14a",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
       "source": "03242ca25cb343d38ae1ae898c0f12ec",
       "target": "20be958b8afb444680a740d47c15750d",
       "peso": 0.83,
@@ -1278,8 +3458,1508 @@
       "tipo": "forte"
     },
     {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "03242ca25cb343d38ae1ae898c0f12ec",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
       "source": "20be958b8afb444680a740d47c15750d",
       "target": "040cccc0523444a18964d046c4a57373",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "20be958b8afb444680a740d47c15750d",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "b25fb62c911345fe98810dbb945b0fb2",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "040cccc0523444a18964d046c4a57373",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "13732b1ee0dd451c9a8661e00c045293",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "b25fb62c911345fe98810dbb945b0fb2",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "13732b1ee0dd451c9a8661e00c045293",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "e4ff9ea9dfc34e2a87369eccc3f1c9ea",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "1f979b427955483589c55b3915850062",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "7e4db2a4163f4ad589a35a0b3df92bad",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "7b828c2e39ed467fbc40e7155dab1679",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.85,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "1f979b427955483589c55b3915850062",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "faa2a2d7f5a843e5a691944222dc4083",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "7b828c2e39ed467fbc40e7155dab1679",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "faa2a2d7f5a843e5a691944222dc4083",
+      "target": "40add0832522481da627ffa39a20dce9",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "faa2a2d7f5a843e5a691944222dc4083",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "faa2a2d7f5a843e5a691944222dc4083",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "faa2a2d7f5a843e5a691944222dc4083",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "faa2a2d7f5a843e5a691944222dc4083",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "faa2a2d7f5a843e5a691944222dc4083",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "faa2a2d7f5a843e5a691944222dc4083",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "faa2a2d7f5a843e5a691944222dc4083",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "faa2a2d7f5a843e5a691944222dc4083",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "faa2a2d7f5a843e5a691944222dc4083",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "faa2a2d7f5a843e5a691944222dc4083",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "faa2a2d7f5a843e5a691944222dc4083",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "faa2a2d7f5a843e5a691944222dc4083",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "40add0832522481da627ffa39a20dce9",
+      "target": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "40add0832522481da627ffa39a20dce9",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "40add0832522481da627ffa39a20dce9",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "40add0832522481da627ffa39a20dce9",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "40add0832522481da627ffa39a20dce9",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "40add0832522481da627ffa39a20dce9",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "40add0832522481da627ffa39a20dce9",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "40add0832522481da627ffa39a20dce9",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "40add0832522481da627ffa39a20dce9",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "40add0832522481da627ffa39a20dce9",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "40add0832522481da627ffa39a20dce9",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "40add0832522481da627ffa39a20dce9",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "target": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.9,
+      "tipo": "forte"
+    },
+    {
+      "source": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "759a0f94bc2d4ba2bb0d83f2d68dd1f3",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "target": "edc2bf9506414f70822f41b90356fbd1",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
+      "source": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.71,
+      "tipo": "forte"
+    },
+    {
+      "source": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "17f835a6dab4405e86d2c9708ecfb5a1",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "edc2bf9506414f70822f41b90356fbd1",
+      "target": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "edc2bf9506414f70822f41b90356fbd1",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "edc2bf9506414f70822f41b90356fbd1",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "edc2bf9506414f70822f41b90356fbd1",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "edc2bf9506414f70822f41b90356fbd1",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "edc2bf9506414f70822f41b90356fbd1",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "edc2bf9506414f70822f41b90356fbd1",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "edc2bf9506414f70822f41b90356fbd1",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "edc2bf9506414f70822f41b90356fbd1",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "target": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
+      "source": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "b82711f252ea45a0a7bcc5c19fccbcfc",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "target": "0a558096b15646adb2918505e419d352",
+      "peso": 0.94,
+      "tipo": "forte"
+    },
+    {
+      "source": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "9d9d2924dfd34648b924f309fc8c7b9f",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
+      "source": "0a558096b15646adb2918505e419d352",
+      "target": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "0a558096b15646adb2918505e419d352",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "0a558096b15646adb2918505e419d352",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "0a558096b15646adb2918505e419d352",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "0a558096b15646adb2918505e419d352",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "0a558096b15646adb2918505e419d352",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "target": "f658da0e4c5b49f69f10d1151f818b01",
+      "peso": 0.85,
+      "tipo": "forte"
+    },
+    {
+      "source": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "80092fc8a2b04bbe9ada166372cb8ef0",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "f658da0e4c5b49f69f10d1151f818b01",
+      "target": "d387fcd0da3d448cb74f3d039c67e784",
+      "peso": 0.87,
+      "tipo": "forte"
+    },
+    {
+      "source": "f658da0e4c5b49f69f10d1151f818b01",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "f658da0e4c5b49f69f10d1151f818b01",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "f658da0e4c5b49f69f10d1151f818b01",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "d387fcd0da3d448cb74f3d039c67e784",
+      "target": "aaf783263bd34c079dd6a94f501586ce",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "d387fcd0da3d448cb74f3d039c67e784",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "d387fcd0da3d448cb74f3d039c67e784",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "aaf783263bd34c079dd6a94f501586ce",
+      "target": "aed0c41754994e718eabc945807d08cc",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "aaf783263bd34c079dd6a94f501586ce",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "aed0c41754994e718eabc945807d08cc",
+      "target": "afd4fe447f50407bb9442fa1a5f9a52e",
       "peso": 0.8,
       "tipo": "forte"
     }
