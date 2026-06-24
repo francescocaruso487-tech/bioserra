@@ -1260,16 +1260,7 @@ function labPopupSecondBrain() {
   // Area risultati
   + '<div id="sb-search-results" style="margin-bottom:14px"></div>'
 
-  // Quick topics
-  + '<div style="margin-bottom:14px">'
-  + '<div style="font-size:10px;color:var(--text3);margin-bottom:8px">ARGOMENTI RAPIDI</div>'
-  + '<div style="display:flex;flex-wrap:wrap;gap:6px">'
-  + ['Elettrocultura', 'Acqua magnetizzata', 'Living Soil', 'Biodinamica', 'Rame in serra', 'Luna e coltivazione', 'Micorrize', 'Compost'].map(function(t){
-      return '<button onclick="document.getElementById(\'sb-search-input\').value=\'' + t + '\';labSbSearch()" '
-        + 'style="font-size:10px;padding:5px 10px;border-radius:20px;border:1px solid rgba(0,180,255,0.2);'
-        + 'color:rgba(0,180,255,0.7);background:rgba(0,180,255,0.05);cursor:pointer">' + t + '</button>';
-    }).join('')
-  + '</div></div>'
+  // [quick topics rimossi]
 
   // Grafo
   + '<div style="font-size:10px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;margin-bottom:8px">'
