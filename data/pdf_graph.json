@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-24T11:52:09.611Z",
+  "lastUpdate": "2026-06-24T11:53:50.006Z",
   "nodi": [
     {
       "id": "pdf_0",
@@ -846,6 +846,37 @@
       ],
       "rilevanza": "media",
       "gruppo": "utile"
+    },
+    {
+      "id": "pdf_80",
+      "titolo": "Corpus Hermeticum (Ermete Trismegisto)",
+      "tag": [
+        "biodinamica",
+        "olistico"
+      ],
+      "rilevanza": "alta",
+      "gruppo": "chiave"
+    },
+    {
+      "id": "pdf_81",
+      "titolo": "Il Pimandro (Poimandres) (Ermete Trismegisto)",
+      "tag": [
+        "ermetismo",
+        "filosofia naturale"
+      ],
+      "rilevanza": "media",
+      "gruppo": "utile"
+    },
+    {
+      "id": "pdf_82",
+      "titolo": "Electroculture (Christofleau Justin)",
+      "tag": [
+        "elettrocultura",
+        "biodinamica",
+        "cannabis"
+      ],
+      "rilevanza": "alta",
+      "gruppo": "chiave"
     }
   ],
   "edges": [
@@ -1324,6 +1355,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_0",
+      "target": "pdf_80",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_0",
+      "target": "pdf_81",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_0",
+      "target": "pdf_82",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_1",
       "target": "pdf_2",
       "peso": 0.83,
@@ -1792,6 +1841,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_1",
+      "target": "pdf_80",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_1",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_1",
+      "target": "pdf_82",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_2",
       "target": "pdf_3",
       "peso": 0.77,
@@ -2254,6 +2321,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_2",
+      "target": "pdf_80",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_2",
+      "target": "pdf_81",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_2",
+      "target": "pdf_82",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_3",
       "target": "pdf_4",
       "peso": 0.79,
@@ -2710,6 +2795,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_3",
+      "target": "pdf_80",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_3",
+      "target": "pdf_81",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_3",
+      "target": "pdf_82",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_4",
       "target": "pdf_5",
       "peso": 0.74,
@@ -3160,6 +3263,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_4",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_4",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_4",
+      "target": "pdf_82",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_5",
       "target": "pdf_6",
       "peso": 0.77,
@@ -3604,6 +3725,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_5",
+      "target": "pdf_80",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_5",
+      "target": "pdf_81",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_5",
+      "target": "pdf_82",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_6",
       "target": "pdf_7",
       "peso": 0.8,
@@ -4042,6 +4181,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_6",
+      "target": "pdf_80",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_6",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_6",
+      "target": "pdf_82",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_7",
       "target": "pdf_8",
       "peso": 0.8,
@@ -4474,6 +4631,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_7",
+      "target": "pdf_80",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_7",
+      "target": "pdf_81",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_7",
+      "target": "pdf_82",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_8",
       "target": "pdf_9",
       "peso": 0.83,
@@ -4900,6 +5075,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_8",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_8",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_8",
+      "target": "pdf_82",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_9",
       "target": "pdf_10",
       "peso": 0.84,
@@ -5320,6 +5513,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_9",
+      "target": "pdf_80",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_9",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_9",
+      "target": "pdf_82",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_10",
       "target": "pdf_11",
       "peso": 0.77,
@@ -5734,6 +5945,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_10",
+      "target": "pdf_80",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_10",
+      "target": "pdf_81",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_10",
+      "target": "pdf_82",
+      "peso": 0.86,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_11",
       "target": "pdf_12",
       "peso": 0.84,
@@ -6142,6 +6371,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_11",
+      "target": "pdf_80",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_11",
+      "target": "pdf_81",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_11",
+      "target": "pdf_82",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_12",
       "target": "pdf_13",
       "peso": 0.94,
@@ -6544,6 +6791,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_12",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_12",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_12",
+      "target": "pdf_82",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_13",
       "target": "pdf_14",
       "peso": 0.76,
@@ -6940,6 +7205,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_13",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_13",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_13",
+      "target": "pdf_82",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_14",
       "target": "pdf_15",
       "peso": 0.85,
@@ -7330,6 +7613,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_14",
+      "target": "pdf_80",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_14",
+      "target": "pdf_81",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_14",
+      "target": "pdf_82",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_15",
       "target": "pdf_16",
       "peso": 0.87,
@@ -7714,6 +8015,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_15",
+      "target": "pdf_80",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_15",
+      "target": "pdf_81",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_15",
+      "target": "pdf_82",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_16",
       "target": "pdf_17",
       "peso": 0.78,
@@ -8092,6 +8411,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_16",
+      "target": "pdf_80",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_16",
+      "target": "pdf_81",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_16",
+      "target": "pdf_82",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_17",
       "target": "pdf_18",
       "peso": 0.83,
@@ -8464,6 +8801,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_17",
+      "target": "pdf_80",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_17",
+      "target": "pdf_81",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_17",
+      "target": "pdf_82",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_18",
       "target": "pdf_19",
       "peso": 0.8,
@@ -8830,6 +9185,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_18",
+      "target": "pdf_80",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_18",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_18",
+      "target": "pdf_82",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_19",
       "target": "pdf_20",
       "peso": 0.83,
@@ -9190,6 +9563,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_19",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_19",
+      "target": "pdf_81",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_19",
+      "target": "pdf_82",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_20",
       "target": "pdf_21",
       "peso": 0.75,
@@ -9544,6 +9935,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_20",
+      "target": "pdf_80",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_20",
+      "target": "pdf_81",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_20",
+      "target": "pdf_82",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_21",
       "target": "pdf_22",
       "peso": 0.77,
@@ -9892,6 +10301,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_21",
+      "target": "pdf_80",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_21",
+      "target": "pdf_81",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_21",
+      "target": "pdf_82",
+      "peso": 0.89,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_22",
       "target": "pdf_23",
       "peso": 0.79,
@@ -10234,6 +10661,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_22",
+      "target": "pdf_80",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_22",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_22",
+      "target": "pdf_82",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_23",
       "target": "pdf_24",
       "peso": 0.79,
@@ -10570,6 +11015,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_23",
+      "target": "pdf_80",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_23",
+      "target": "pdf_81",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_23",
+      "target": "pdf_82",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_24",
       "target": "pdf_25",
       "peso": 0.89,
@@ -10900,6 +11363,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_24",
+      "target": "pdf_80",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_24",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_24",
+      "target": "pdf_82",
+      "peso": 0.91,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_25",
       "target": "pdf_26",
       "peso": 0.85,
@@ -11224,6 +11705,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_25",
+      "target": "pdf_80",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_25",
+      "target": "pdf_81",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_25",
+      "target": "pdf_82",
+      "peso": 0.86,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_26",
       "target": "pdf_27",
       "peso": 0.73,
@@ -11542,6 +12041,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_26",
+      "target": "pdf_80",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_26",
+      "target": "pdf_81",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_26",
+      "target": "pdf_82",
+      "peso": 0.88,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_27",
       "target": "pdf_28",
       "peso": 0.74,
@@ -11854,6 +12371,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_27",
+      "target": "pdf_80",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_27",
+      "target": "pdf_81",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_27",
+      "target": "pdf_82",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_28",
       "target": "pdf_29",
       "peso": 0.9,
@@ -12160,6 +12695,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_28",
+      "target": "pdf_80",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_28",
+      "target": "pdf_81",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_28",
+      "target": "pdf_82",
+      "peso": 0.88,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_29",
       "target": "pdf_30",
       "peso": 0.93,
@@ -12460,6 +13013,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_29",
+      "target": "pdf_80",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_29",
+      "target": "pdf_81",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_29",
+      "target": "pdf_82",
+      "peso": 0.88,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_30",
       "target": "pdf_31",
       "peso": 0.86,
@@ -12754,6 +13325,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_30",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_30",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_30",
+      "target": "pdf_82",
+      "peso": 0.92,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_31",
       "target": "pdf_32",
       "peso": 0.83,
@@ -13042,6 +13631,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_31",
+      "target": "pdf_80",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_31",
+      "target": "pdf_81",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_31",
+      "target": "pdf_82",
+      "peso": 0.86,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_32",
       "target": "pdf_33",
       "peso": 0.8,
@@ -13324,6 +13931,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_32",
+      "target": "pdf_80",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_32",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_32",
+      "target": "pdf_82",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_33",
       "target": "pdf_34",
       "peso": 0.87,
@@ -13600,6 +14225,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_33",
+      "target": "pdf_80",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_33",
+      "target": "pdf_81",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_33",
+      "target": "pdf_82",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_34",
       "target": "pdf_35",
       "peso": 0.78,
@@ -13870,6 +14513,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_34",
+      "target": "pdf_80",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_34",
+      "target": "pdf_81",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_34",
+      "target": "pdf_82",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_35",
       "target": "pdf_36",
       "peso": 0.79,
@@ -14134,6 +14795,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_35",
+      "target": "pdf_80",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_35",
+      "target": "pdf_81",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_35",
+      "target": "pdf_82",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_36",
       "target": "pdf_37",
       "peso": 0.87,
@@ -14392,6 +15071,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_36",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_36",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_36",
+      "target": "pdf_82",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_37",
       "target": "pdf_38",
       "peso": 0.79,
@@ -14644,6 +15341,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_37",
+      "target": "pdf_80",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_37",
+      "target": "pdf_81",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_37",
+      "target": "pdf_82",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_38",
       "target": "pdf_39",
       "peso": 0.79,
@@ -14890,6 +15605,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_38",
+      "target": "pdf_80",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_38",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_38",
+      "target": "pdf_82",
+      "peso": 0.73,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_39",
       "target": "pdf_40",
       "peso": 0.75,
@@ -15130,6 +15863,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_39",
+      "target": "pdf_80",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_39",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_39",
+      "target": "pdf_82",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_40",
       "target": "pdf_41",
       "peso": 0.76,
@@ -15364,6 +16115,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_40",
+      "target": "pdf_80",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_40",
+      "target": "pdf_81",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_40",
+      "target": "pdf_82",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_41",
       "target": "pdf_42",
       "peso": 0.9,
@@ -15592,6 +16361,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_41",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_41",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_41",
+      "target": "pdf_82",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_42",
       "target": "pdf_43",
       "peso": 0.76,
@@ -15814,6 +16601,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_42",
+      "target": "pdf_80",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_42",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_42",
+      "target": "pdf_82",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_43",
       "target": "pdf_44",
       "peso": 0.79,
@@ -16030,6 +16835,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_43",
+      "target": "pdf_80",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_43",
+      "target": "pdf_81",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_43",
+      "target": "pdf_82",
+      "peso": 0.91,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_44",
       "target": "pdf_45",
       "peso": 0.82,
@@ -16240,6 +17063,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_44",
+      "target": "pdf_80",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_44",
+      "target": "pdf_81",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_44",
+      "target": "pdf_82",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_45",
       "target": "pdf_46",
       "peso": 0.81,
@@ -16444,6 +17285,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_45",
+      "target": "pdf_80",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_45",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_45",
+      "target": "pdf_82",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_46",
       "target": "pdf_47",
       "peso": 0.86,
@@ -16642,6 +17501,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_46",
+      "target": "pdf_80",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_46",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_46",
+      "target": "pdf_82",
+      "peso": 0.87,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_47",
       "target": "pdf_48",
       "peso": 0.8,
@@ -16834,6 +17711,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_47",
+      "target": "pdf_80",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_47",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_47",
+      "target": "pdf_82",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_48",
       "target": "pdf_49",
       "peso": 0.84,
@@ -17020,6 +17915,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_48",
+      "target": "pdf_80",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_48",
+      "target": "pdf_81",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_48",
+      "target": "pdf_82",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_49",
       "target": "pdf_50",
       "peso": 0.9,
@@ -17200,6 +18113,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_49",
+      "target": "pdf_80",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_49",
+      "target": "pdf_81",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_49",
+      "target": "pdf_82",
+      "peso": 0.89,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_50",
       "target": "pdf_51",
       "peso": 0.95,
@@ -17374,6 +18305,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_50",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_50",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_50",
+      "target": "pdf_82",
+      "peso": 0.91,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_51",
       "target": "pdf_52",
       "peso": 0.96,
@@ -17542,6 +18491,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_51",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_51",
+      "target": "pdf_81",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_51",
+      "target": "pdf_82",
+      "peso": 0.91,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_52",
       "target": "pdf_53",
       "peso": 0.85,
@@ -17704,6 +18671,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_52",
+      "target": "pdf_80",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_52",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_52",
+      "target": "pdf_82",
+      "peso": 0.9,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_53",
       "target": "pdf_54",
       "peso": 0.86,
@@ -17860,6 +18845,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_53",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_53",
+      "target": "pdf_81",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_53",
+      "target": "pdf_82",
+      "peso": 0.85,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_54",
       "target": "pdf_55",
       "peso": 0.86,
@@ -18010,6 +19013,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_54",
+      "target": "pdf_80",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_54",
+      "target": "pdf_81",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_54",
+      "target": "pdf_82",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_55",
       "target": "pdf_56",
       "peso": 0.89,
@@ -18154,6 +19175,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_55",
+      "target": "pdf_80",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_55",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_55",
+      "target": "pdf_82",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_56",
       "target": "pdf_57",
       "peso": 0.92,
@@ -18292,6 +19331,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_56",
+      "target": "pdf_80",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_56",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_56",
+      "target": "pdf_82",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_57",
       "target": "pdf_58",
       "peso": 0.84,
@@ -18424,6 +19481,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_57",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_57",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_57",
+      "target": "pdf_82",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_58",
       "target": "pdf_59",
       "peso": 0.75,
@@ -18550,6 +19625,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_58",
+      "target": "pdf_80",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_58",
+      "target": "pdf_81",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_58",
+      "target": "pdf_82",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_59",
       "target": "pdf_60",
       "peso": 0.87,
@@ -18670,6 +19763,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_59",
+      "target": "pdf_80",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_59",
+      "target": "pdf_81",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_59",
+      "target": "pdf_82",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_60",
       "target": "pdf_61",
       "peso": 0.77,
@@ -18784,6 +19895,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_60",
+      "target": "pdf_80",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_60",
+      "target": "pdf_81",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_60",
+      "target": "pdf_82",
+      "peso": 0.72,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_61",
       "target": "pdf_62",
       "peso": 0.76,
@@ -18892,6 +20021,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_61",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_61",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_61",
+      "target": "pdf_82",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_62",
       "target": "pdf_63",
       "peso": 0.8,
@@ -18994,6 +20141,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_62",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_62",
+      "target": "pdf_81",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_62",
+      "target": "pdf_82",
+      "peso": 1,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_63",
       "target": "pdf_64",
       "peso": 0.82,
@@ -19090,6 +20255,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_63",
+      "target": "pdf_80",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_63",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_63",
+      "target": "pdf_82",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_64",
       "target": "pdf_65",
       "peso": 0.8,
@@ -19180,6 +20363,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_64",
+      "target": "pdf_80",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_64",
+      "target": "pdf_81",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_64",
+      "target": "pdf_82",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_65",
       "target": "pdf_66",
       "peso": 0.79,
@@ -19264,6 +20465,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_65",
+      "target": "pdf_80",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_65",
+      "target": "pdf_81",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_65",
+      "target": "pdf_82",
+      "peso": 0.74,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_66",
       "target": "pdf_67",
       "peso": 0.85,
@@ -19342,6 +20561,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_66",
+      "target": "pdf_80",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_66",
+      "target": "pdf_81",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_66",
+      "target": "pdf_82",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_67",
       "target": "pdf_68",
       "peso": 0.87,
@@ -19414,6 +20651,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_67",
+      "target": "pdf_80",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_67",
+      "target": "pdf_81",
+      "peso": 0.85,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_67",
+      "target": "pdf_82",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_68",
       "target": "pdf_69",
       "peso": 0.86,
@@ -19480,6 +20735,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_68",
+      "target": "pdf_80",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_68",
+      "target": "pdf_81",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_68",
+      "target": "pdf_82",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_69",
       "target": "pdf_70",
       "peso": 0.87,
@@ -19540,6 +20813,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_69",
+      "target": "pdf_80",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_69",
+      "target": "pdf_81",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_69",
+      "target": "pdf_82",
+      "peso": 0.76,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_70",
       "target": "pdf_71",
       "peso": 0.85,
@@ -19594,6 +20885,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_70",
+      "target": "pdf_80",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_70",
+      "target": "pdf_81",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_70",
+      "target": "pdf_82",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_71",
       "target": "pdf_72",
       "peso": 0.9,
@@ -19642,6 +20951,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_71",
+      "target": "pdf_80",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_71",
+      "target": "pdf_81",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_71",
+      "target": "pdf_82",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_72",
       "target": "pdf_73",
       "peso": 0.9,
@@ -19684,6 +21011,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_72",
+      "target": "pdf_80",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_72",
+      "target": "pdf_81",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_72",
+      "target": "pdf_82",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_73",
       "target": "pdf_74",
       "peso": 0.86,
@@ -19720,6 +21065,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_73",
+      "target": "pdf_80",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_73",
+      "target": "pdf_81",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_73",
+      "target": "pdf_82",
+      "peso": 0.75,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_74",
       "target": "pdf_75",
       "peso": 0.8,
@@ -19750,6 +21113,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_74",
+      "target": "pdf_80",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_74",
+      "target": "pdf_81",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_74",
+      "target": "pdf_82",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_75",
       "target": "pdf_76",
       "peso": 0.81,
@@ -19774,6 +21155,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_75",
+      "target": "pdf_80",
+      "peso": 0.81,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_75",
+      "target": "pdf_81",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_75",
+      "target": "pdf_82",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_76",
       "target": "pdf_77",
       "peso": 0.84,
@@ -19792,6 +21191,24 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_76",
+      "target": "pdf_80",
+      "peso": 0.85,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_76",
+      "target": "pdf_81",
+      "peso": 0.85,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_76",
+      "target": "pdf_82",
+      "peso": 0.78,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_77",
       "target": "pdf_78",
       "peso": 0.79,
@@ -19804,9 +21221,81 @@
       "tipo": "forte"
     },
     {
+      "source": "pdf_77",
+      "target": "pdf_80",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_77",
+      "target": "pdf_81",
+      "peso": 0.82,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_77",
+      "target": "pdf_82",
+      "peso": 0.77,
+      "tipo": "forte"
+    },
+    {
       "source": "pdf_78",
       "target": "pdf_79",
       "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_78",
+      "target": "pdf_80",
+      "peso": 0.87,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_78",
+      "target": "pdf_81",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_78",
+      "target": "pdf_82",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_79",
+      "target": "pdf_80",
+      "peso": 0.84,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_79",
+      "target": "pdf_81",
+      "peso": 0.83,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_79",
+      "target": "pdf_82",
+      "peso": 0.8,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_80",
+      "target": "pdf_81",
+      "peso": 0.89,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_80",
+      "target": "pdf_82",
+      "peso": 0.79,
+      "tipo": "forte"
+    },
+    {
+      "source": "pdf_81",
+      "target": "pdf_82",
+      "peso": 0.78,
       "tipo": "forte"
     }
   ]
