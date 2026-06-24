@@ -1212,7 +1212,7 @@ ${piante.map(p=>`<div style="display:flex;justify-content:space-between;align-it
       const _sm=getSemineOggi(today);
       return '<div class="amb-popup-label">Semine & Trapianti</div><div class="amb-popup-title">'+_sm.emoji+' '+_sm.label+'</div>'
         +'<div class="amb-popup-section"><div style="font-size:13px;color:var(--text2);line-height:1.7;">'+_sm.motivo+'</div></div>'
-        +'<div class="amb-popup-section"><div class="amb-popup-label">Nota</div><div style="font-size:13px;color:var(--text2);">Giorni Radice + luna crescente = ottimale per trapianti cannabis.</div></div>';
+        +'<div class="amb-popup-section"><div class="amb-popup-label">Nota</div><div style="font-size:13px;color:var(--text2);">Giorni Radice + luna crescente = ottimale per trapianti.</div></div>';
     }
     case 'tratt-oggi': {
       const _tr=getTrattOggi(today);
@@ -2162,7 +2162,7 @@ function renderCalTratt() {
     difesa.innerHTML = [
       {icon:'🛡️', titolo:'Preventivo muffe', desc:'Giorni Frutto + bassa umidità: ventila la serra. Usa bicarbonato 5g/L in fogliare.'},
       {icon:'🐛', titolo:'Parassiti foglie', desc:'Giorni Foglia + luna calante: applica infuso di ortiche concentrate. Controlla sotto le foglie.'},
-      {icon:'🌡️', titolo:'Stress termico', desc:'T>35°C: ombreggia. T<5°C: copri i vasi con telo. La radice di cannabis subisce stress a T<10°C.'},
+      {icon:'🌡️', titolo:'Stress termico', desc:'T>35°C: ombreggia. T<5°C: copri i vasi con telo. Le radici subiscono stress a T<10°C.'},
       {icon:'💧', titolo:'Marciume radicale', desc:'Evita ristagni. Giorni Foglia con alta umidità: riduci irrigazione del 30%.'},
     ].map(d => `<div style="padding:8px 10px;background:var(--card2);border-radius:8px;border-left:3px solid rgba(239,83,80,0.4);">
       <div style="font-size:12px;font-weight:700;margin-bottom:3px;">${d.icon} ${d.titolo}</div>
@@ -2787,7 +2787,7 @@ function buildCalPopupContent(type) {
     🌸 <strong>Giorni Fiore</strong> (${bio.type==='fiore'?'✅ oggi!':'non oggi'}) → Fiorite, aromi<br>
     🍊 <strong>Giorni Frutto</strong> (${bio.type==='frutto'?'✅ oggi!':'non oggi'}) → Cime, fiori, semi<br>
     💧 <strong>Giorni Foglia</strong> (${bio.type==='foglia'?'✅ oggi!':'non oggi'}) → Foglie, vegetali<br><br>
-    Per la cannabis: preferisci <strong>Giorni Frutto</strong> per la fioritura e <strong>Giorni Radice</strong> per la crescita radicale.
+    Preferisci <strong>Giorni Frutto</strong> per la fioritura e <strong>Giorni Radice</strong> per la crescita radicale.
   </div>
 </div>`;
     }
@@ -2887,7 +2887,7 @@ function buildCalPopupContent(type) {
     🌸 <strong>Fiore</strong> (Gemelli, Bilancia, Acquario — Aria) → Fiori, aromi, terpeni<br>
     🌿 <strong>Radice</strong> (Toro, Vergine, Capricorno — Terra) → Radici, tuberi, substrato<br>
     💧 <strong>Foglia</strong> (Cancro, Scorpione, Pesci — Acqua) → Foglie, vegetazione<br><br>
-    <strong>Per la cannabis:</strong><br>
+    <strong>Per le piante:</strong><br>
     ✅ Semina in Giorni Frutto (Ariete, Leone, Sagittario)<br>
     ✅ Trapianto in Giorni Radice (Toro, Vergine, Capricorno)<br>
     ✅ Raccolta in Giorni Frutto, preferibilmente Luna Piena<br>
