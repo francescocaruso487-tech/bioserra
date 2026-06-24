@@ -956,6 +956,26 @@ function cervChatReset() {
   if (chat) chat.innerHTML = '<div class="ai-msg bot">\uD83E\uDDE0 Sistema attivo. Leggo meteo, piante, luna in tempo reale.<br>Cosa vuoi sapere sulla tua serra?</div>';
 }
 
+async function cervSalva(domanda, risposta, btnEl) {
+  if (btnEl) { btnEl.disabled = true; btnEl.textContent = '\u23F3 Salvo...'; }
+  try {
+    var webhookUrl = 'https://francesco467.app.n8n.cloud/webhook/bioserra-salva-log';
+    var resp = await fetch(webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ domanda: domanda, risposta: risposta, tag: [], contesto: '' })
+    });
+    var data = await resp.json();
+    if (data.ok) {
+      if (btnEl) { btnEl.textContent = '\u2705 Salvato ' + data.id; btnEl.style.color = '#4caf50'; }
+    } else {
+      if (btnEl) { btnEl.textContent = '\u274C Errore salvataggio'; btnEl.disabled = false; }
+    }
+  } catch(e) {
+    if (btnEl) { btnEl.textContent = '\u274C Errore rete'; btnEl.disabled = false; }
+  }
+}
+
 function cervAppendUser(text) {
   var chat = document.getElementById('cerv-chat');
   if (!chat) return;
@@ -968,10 +988,30 @@ function cervAppendUser(text) {
 
 function cervAppendBot(text, loading) {
   var chat = document.getElementById('cerv-chat');
-  if (!chat) return { classList: { remove: function(){} }, textContent: '' };
+  if (!chat) return { classList: { remove: function(){} }, textContent: '', _isWrapper: false };
   var div = document.createElement('div');
   div.className = 'ai-msg bot' + (loading ? ' loading' : '');
   div.textContent = loading ? '\u23F3 Elaboro\u2026' : text;
+  if (!loading) {
+    var wrapper = document.createElement('div');
+    wrapper.className = 'cerv-msg-wrapper';
+    var btnSalva = document.createElement('button');
+    btnSalva.className = 'cerv-salva-btn';
+    btnSalva.textContent = '\uD83D\uDCCC Salva';
+    btnSalva.title = 'Salva questa risposta nel log';
+    var capturedText = text;
+    btnSalva.onclick = function() {
+      var lastUser = '';
+      var msgs = chat.querySelectorAll('.ai-msg.user');
+      if (msgs.length) lastUser = msgs[msgs.length - 1].textContent;
+      cervSalva(lastUser, capturedText, btnSalva);
+    };
+    wrapper.appendChild(div);
+    wrapper.appendChild(btnSalva);
+    chat.appendChild(wrapper);
+    chat.scrollTop = chat.scrollHeight;
+    return div;
+  }
   chat.appendChild(div);
   chat.scrollTop = chat.scrollHeight;
   return div;
