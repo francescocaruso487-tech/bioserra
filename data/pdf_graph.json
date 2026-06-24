@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-24T11:41:15.906Z",
+  "lastUpdate": "2026-06-24T11:44:14.555Z",
   "nodi": [
     {
       "id": "pdf_0",
@@ -10,7 +10,7 @@
         "fertilizzanti naturali"
       ],
       "rilevanza": "alta",
-      "gruppo": "agricoltura organica"
+      "gruppo": "chiave"
     },
     {
       "id": "pdf_1",
@@ -20,7 +20,7 @@
         "intenzioni positive"
       ],
       "rilevanza": "media",
-      "gruppo": "consapevolezza"
+      "gruppo": "utile"
     },
     {
       "id": "pdf_2",
@@ -30,7 +30,7 @@
         "consapevolezza"
       ],
       "rilevanza": "bassa",
-      "gruppo": "spiritualità"
+      "gruppo": "generale"
     },
     {
       "id": "pdf_3",
@@ -40,7 +40,7 @@
         "geometria sacra"
       ],
       "rilevanza": "media",
-      "gruppo": "alchimia"
+      "gruppo": "utile"
     },
     {
       "id": "pdf_4",
@@ -50,7 +50,7 @@
         "elettrocultura"
       ],
       "rilevanza": "alta",
-      "gruppo": "antenna a terra"
+      "gruppo": "chiave"
     },
     {
       "id": "pdf_5",
@@ -61,7 +61,7 @@
         "natura"
       ],
       "rilevanza": "media",
-      "gruppo": "spiritualità"
+      "gruppo": "utile"
     },
     {
       "id": "pdf_6",
@@ -71,7 +71,7 @@
         "sincronicità"
       ],
       "rilevanza": "media",
-      "gruppo": "olismo"
+      "gruppo": "utile"
     },
     {
       "id": "pdf_7",
@@ -82,7 +82,7 @@
         "agricoltura olistica"
       ],
       "rilevanza": "media",
-      "gruppo": "filosofia"
+      "gruppo": "utile"
     },
     {
       "id": "pdf_8",
@@ -95,7 +95,7 @@
         "agricoltura"
       ],
       "rilevanza": "media",
-      "gruppo": "fisica"
+      "gruppo": "utile"
     },
     {
       "id": "pdf_9",
@@ -106,7 +106,7 @@
         "serra"
       ],
       "rilevanza": "media",
-      "gruppo": "elettrotecnica"
+      "gruppo": "utile"
     },
     {
       "id": "pdf_10",
@@ -117,7 +117,7 @@
         "Lakhovsky"
       ],
       "rilevanza": "media",
-      "gruppo": "elettromagnetismo"
+      "gruppo": "utile"
     },
     {
       "id": "pdf_11",
@@ -127,7 +127,7 @@
         "consapevolezza"
       ],
       "rilevanza": "media",
-      "gruppo": "spiritualità"
+      "gruppo": "utile"
     },
     {
       "id": "pdf_12",
@@ -137,7 +137,7 @@
         "filosofia"
       ],
       "rilevanza": "bassa",
-      "gruppo": "spiritualità"
+      "gruppo": "generale"
     },
     {
       "id": "pdf_13",
@@ -148,7 +148,7 @@
         "natura"
       ],
       "rilevanza": "media",
-      "gruppo": "saggezza"
+      "gruppo": "utile"
     },
     {
       "id": "pdf_14",
@@ -158,7 +158,7 @@
         "esoterismo"
       ],
       "rilevanza": "bassa",
-      "gruppo": "occultismo"
+      "gruppo": "generale"
     },
     {
       "id": "pdf_15",
@@ -168,7 +168,7 @@
         "natura"
       ],
       "rilevanza": "bassa",
-      "gruppo": "spiritualità"
+      "gruppo": "generale"
     },
     {
       "id": "pdf_16",
@@ -178,7 +178,7 @@
         "natura"
       ],
       "rilevanza": "media",
-      "gruppo": "spiritualità"
+      "gruppo": "utile"
     },
     {
       "id": "pdf_17",
@@ -188,7 +188,7 @@
         "suolo vivo"
       ],
       "rilevanza": "alta",
-      "gruppo": "agricoltura biodinamica"
+      "gruppo": "chiave"
     },
     {
       "id": "pdf_18",
@@ -198,7 +198,7 @@
         "coltivazione sostenibile"
       ],
       "rilevanza": "alta",
-      "gruppo": "biologia del suolo"
+      "gruppo": "chiave"
     },
     {
       "id": "pdf_19",
@@ -208,7 +208,7 @@
         "influenza lunare"
       ],
       "rilevanza": "media",
-      "gruppo": "agricoltura biodinamica"
+      "gruppo": "utile"
     }
   ],
   "edges": [
@@ -239,7 +239,7 @@
     {
       "source": "pdf_0",
       "target": "pdf_5",
-      "peso": 0.74,
+      "peso": 0.75,
       "tipo": "forte"
     },
     {
@@ -1043,7 +1043,7 @@
     {
       "source": "pdf_9",
       "target": "pdf_13",
-      "peso": 0.71,
+      "peso": 0.72,
       "tipo": "forte"
     },
     {
@@ -1127,7 +1127,7 @@
     {
       "source": "pdf_10",
       "target": "pdf_18",
-      "peso": 0.8,
+      "peso": 0.81,
       "tipo": "forte"
     },
     {
@@ -1325,7 +1325,7 @@
     {
       "source": "pdf_16",
       "target": "pdf_18",
-      "peso": 0.78,
+      "peso": 0.77,
       "tipo": "forte"
     },
     {
