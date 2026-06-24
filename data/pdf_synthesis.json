@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-06-23T04:30:05.724Z",
-  "total_pdf_analizzati": 62,
+  "lastUpdate": "2026-06-24T04:30:05.994Z",
+  "total_pdf_analizzati": 83,
   "connessioni": [
     {
       "pdf_a": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas",
@@ -77,6 +77,32 @@
       ],
       "difficolta": "avanzata",
       "beneficio_atteso": "Miglioramento della crescita delle piante"
+    },
+    {
+      "pdf_a": "I misteri dellAntico Egitto - Roberto Tresoldi",
+      "pdf_b": "Antenna uomo - Tiziano-Guerzoni",
+      "collegamento": "La connessione tra la geometria sacra e le energie cosmiche",
+      "principio_comune": "L'importanza della geometria e delle energie nell'universo",
+      "esperimento": "Applicazione di principi di geometria sacra nella disposizione delle piante e utilizzo di antenne a terra per la serra",
+      "materiali": [
+        "piante di cannabis",
+        "antenne a terra"
+      ],
+      "difficolta": "avanzata",
+      "beneficio_atteso": "Ottimizzazione della crescita delle piante e connessione con le energie cosmiche"
+    },
+    {
+      "pdf_a": "THE-GATEWAY-SECRET-–-Le-potenzialità-nascoste-del-cervello-umano-I-governi-di-tutto-il-mondo-stanno-",
+      "pdf_b": "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_",
+      "collegamento": "La connessione tra la consapevolezza e la spiritualità",
+      "principio_comune": "L'importanza della consapevolezza e della spiritualità nella vita",
+      "esperimento": "Applicazione di tecniche di meditazione e introspezione per migliorare la consapevolezza e la connessione con la natura",
+      "materiali": [
+        "piante di cannabis",
+        "libri di spiritualità"
+      ],
+      "difficolta": "facile",
+      "beneficio_atteso": "Miglioramento della connessione con la natura e della consapevolezza"
     }
   ],
   "principi_universali": [
@@ -138,6 +164,24 @@
         "Fondamenti di Fisica Elettrologia Magnetismo Ottica (HALLIDAY, RESNICK, WALKER)",
         "Antenna uomo - Tiziano-Guerzoni"
       ]
+    },
+    {
+      "principio": "La consapevolezza e l'intenzione",
+      "descrizione": "L'importanza della consapevolezza e dell'intenzione nella coltivazione e nella vita",
+      "applicazione_serra": "Applicazione di tecniche di meditazione e introspezione per migliorare la consapevolezza e la connessione con la natura",
+      "pdf_fonte": [
+        "La Forza del Cervello Quantico - Dawson Church",
+        "Il-quinto-accordo-_Nuove-frontiere-del-pensiero_-_Italian-Edition_-_Miguel-Ruiz-Josè-Ruiz_"
+      ]
+    },
+    {
+      "principio": "La geometria sacra e le energie",
+      "descrizione": "L'importanza della geometria sacra e delle energie nell'universo",
+      "applicazione_serra": "Applicazione di principi di geometria sacra nella disposizione delle piante e utilizzo di antenne a terra per la serra",
+      "pdf_fonte": [
+        "I misteri dellAntico Egitto - Roberto Tresoldi",
+        "Antenna uomo - Tiziano-Guerzoni"
+      ]
     }
   ],
   "esperimenti_incrociati": [
@@ -182,9 +226,20 @@
       "protocollo": "Applicazione di campi elettromagnetici per stimolare la crescita delle piante",
       "durata": "30 giorni",
       "misurazioni": "Misurazione della crescita delle piante"
+    },
+    {
+      "nome": "Esperimento di consapevolezza e geometria sacra",
+      "origine": "La Forza del Cervello Quantico - Dawson Church e I misteri dellAntico Egitto - Roberto Tresoldi",
+      "protocollo": "Applicazione di tecniche di meditazione e introspezione per migliorare la consapevolezza e la connessione con la natura, e applicazione di principi di geometria sacra nella disposizione delle piante",
+      "durata": "30 giorni",
+      "misurazioni": "Osservazione della crescita delle piante e della connessione con la natura"
     }
   ],
   "scoperte": [
+    {
+      "data": "2026-06-24",
+      "testo": "La connessione tra la consapevolezza e la geometria sacra può migliorare la crescita delle piante e la connessione con la natura."
+    },
     {
       "data": "2026-06-23",
       "testo": "La scoperta che la connessione tra la salute del suolo e la consapevolezza dell'agricoltore può essere migliorata attraverso l'applicazione di tecniche di meditazione e di gestione del suolo."
@@ -207,9 +262,9 @@
     }
   ],
   "stats": {
-    "totale_connessioni": 6,
-    "totale_principi": 7,
-    "totale_esperimenti": 6,
-    "nuovi_oggi": 3
+    "totale_connessioni": 8,
+    "totale_principi": 9,
+    "totale_esperimenti": 7,
+    "nuovi_oggi": 2
   }
 }
