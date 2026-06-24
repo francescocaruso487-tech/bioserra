@@ -1200,88 +1200,93 @@ function labRenderSbMini() {
     ma sono nello stesso ordine di analisi)
 ══════════════════════════════════════════════════════════════ */
 
+
+/* ══════════════════════════════════════════════════════════════
+   SECOND BRAIN — enrich nodi con dati da pdf_knowledge (by ID)
+══════════════════════════════════════════════════════════════ */
+
 function labSbEnrichNodi(nodi) {
-  if (!labPdfData || !labPdfData.analisi) return nodi;
-  var analisi = labPdfData.analisi;
-  return nodi.map(function(n, i) {
-    var src = analisi[i] || {};
+  var analisi = (labPdfData && labPdfData.analisi) ? labPdfData.analisi : [];
+  // Costruisci mappa per ID
+  var byId = {};
+  analisi.forEach(function(a) { if (a.id) byId[a.id] = a; });
+  return nodi.map(function(n) {
+    var src = byId[n.id] || byId['pdf_' + n.id] || {};
     return Object.assign({}, n, {
-      titolo:   src.titolo   || n.titolo   || ('PDF #' + i),
-      tag:      src.tag      || n.tag      || [],
-      gruppo:   src.rilevanza === 'alta' ? 'chiave' : (src.rilevanza === 'media' ? 'utile' : 'generale'),
+      titolo:    src.titolo    || n.titolo    || n.id || 'PDF',
+      tag:       src.tag       || n.tag       || [],
+      sommario:  src.sommario  || n.sommario  || '',
+      tecniche:  src.tecniche_chiave || [],
+      consiglio: src.consiglio_coltivazione || src.consiglio_elettrocultura || '',
+      estratto:  src.estratto_chiave || '',
       rilevanza: src.rilevanza || n.rilevanza || 'media',
-      sommario: src.sommario || ''
+      gruppo:    src.rilevanza === 'alta' ? 'chiave' : (src.rilevanza === 'media' ? 'utile' : 'generale')
     });
   });
 }
 
 /* ══════════════════════════════════════════════════════════════
-   SECOND BRAIN — apre popup (entry point dall\u2019icona grid)
+   SECOND BRAIN — popup principale
 ══════════════════════════════════════════════════════════════ */
 
 function labPopupSecondBrain() {
-  var nodi  = (labGrafoData  && labGrafoData.nodi)  ? labSbEnrichNodi(labGrafoData.nodi.slice())  : [];
-  var edges = (labGrafoData  && labGrafoData.edges) ? labGrafoData.edges  : [];
-  var totVet = labVettoriData && labVettoriData.vettori ? labVettoriData.vettori.length : 0;
-  var totPdf = labPdfData && labPdfData.analisi ? labPdfData.analisi.length : 0;
+  var nodi  = (labGrafoData && labGrafoData.nodi)  ? labSbEnrichNodi(labGrafoData.nodi.slice())  : [];
+  var edges = (labGrafoData && labGrafoData.edges) ? labGrafoData.edges : [];
+  var nPdf  = (labPdfData   && labPdfData.analisi) ? labPdfData.analisi.length : 0;
+  var nVec  = (labVettoriData && labVettoriData.vettori) ? labVettoriData.vettori.length : 0;
 
-  var html = '<div style="padding:2px 0 12px">'
-    + '<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">'
-    +   '<span style="font-size:22px">\uD83E\uDDE0</span>'
-    +   '<div>'
-    +     '<div style="font-size:15px;font-weight:700;color:#00b4ff;letter-spacing:1px">SECOND BRAIN</div>'
-    +     '<div style="font-size:10px;color:rgba(0,180,255,0.5);letter-spacing:0.5px">'
-    +       totVet + ' PDF vettorizzati \u00B7 ' + totPdf + ' analizzati \u00B7 ' + edges.length + ' connessioni'
-    +     '</div>'
-    +   '</div>'
-    + '</div>'
-    /* barra ricerca semantica */
-    + '<div style="display:flex;gap:8px;margin-bottom:14px">'
-    +   '<input id="sb-search-input" type="text" placeholder="\uD83D\uDD0D Cerca nel Second Brain\u2026" '
-    +     'style="flex:1;background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.25);border-radius:10px;'
-    +     'padding:10px 14px;color:#e0f0ff;font-size:13px;outline:none" '
-    +     'onkeydown="if(event.key===\'Enter\'){event.preventDefault();labSbSearch();}" />'
-    +   '<button onclick="labSbSearch()" '
-    +     'style="background:rgba(0,180,255,0.15);border:1px solid rgba(0,180,255,0.3);border-radius:10px;'
-    +     'padding:10px 16px;color:#00b4ff;font-size:14px;cursor:pointer">\u27A4</button>'
-    + '</div>'
-    /* area risultati ricerca */
-    + '<div id="sb-search-results" style="margin-bottom:14px"></div>'
-    /* grafo */
-    + '<div style="font-size:10px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;margin-bottom:8px">'
-    +   'GRAFO CONNESSIONI PDF \u2014 ' + nodi.length + ' nodi'
-    + '</div>'
-    + '<div id="sb-graph-container" style="width:100%;height:340px;background:rgba(0,0,0,0.3);'
-    +   'border:1px solid rgba(0,180,255,0.15);border-radius:14px;overflow:hidden;position:relative">'
-    +   '<div id="sb-graph-loading" style="position:absolute;inset:0;display:flex;align-items:center;'
-    +     'justify-content:center;color:rgba(0,180,255,0.4);font-size:12px">\u23F3 Caricamento grafo\u2026</div>'
-    + '</div>'
-    /* legenda */
-    + '<div style="display:flex;gap:14px;margin-top:10px;flex-wrap:wrap">'
-    +   '<div style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(0,180,255,0.5)">'
-    +     '<div style="width:10px;height:10px;border-radius:50%;background:#00b4ff"></div>chiave'
-    +   '</div>'
-    +   '<div style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(155,109,255,0.5)">'
-    +     '<div style="width:10px;height:10px;border-radius:50%;background:#9b6dff"></div>utile'
-    +   '</div>'
-    +   '<div style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(0,180,255,0.3)">'
-    +     '<div style="width:8px;height:8px;border-radius:50%;background:rgba(0,180,255,0.3)"></div>generale'
-    +   '</div>'
-    +   '<div style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(255,255,255,0.3)">'
-    +     '<div style="width:20px;height:2px;background:rgba(0,180,255,0.6)"></div>forte'
-    +   '</div>'
-    +   '<div style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(255,255,255,0.2)">'
-    +     '<div style="width:20px;height:1px;background:rgba(0,180,255,0.2)"></div>debole'
-    +   '</div>'
-    + '</div>'
-    + '</div>';
+  var html =
+    '<div style="font-size:10px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;margin-bottom:2px">SECOND BRAIN</div>'
+  + '<div style="font-size:15px;font-weight:700;color:#00b4ff;letter-spacing:1px;margin-bottom:4px">\uD83E\uDDE0 KNOWLEDGE BASE</div>'
+  + '<div style="font-size:11px;color:var(--text3);margin-bottom:16px">'
+  +   nVec + ' PDF vettorizzati \u00B7 ' + nPdf + ' analizzati \u00B7 ' + edges.length + ' connessioni'
+  + '</div>'
+
+  // Box ricerca — centrale e prominente
+  + '<div style="margin-bottom:16px">'
+  + '<div style="font-size:10px;color:#00b4ff;font-weight:700;margin-bottom:8px;letter-spacing:0.5px">\uD83D\uDD0D CHIEDI AL KNOWLEDGE BASE</div>'
+  + '<div style="display:flex;gap:8px">'
+  + '<input id="sb-search-input" type="text" placeholder="Es: come usare il rame? quando annaffiare?" '
+  + 'style="flex:1;background:rgba(0,180,255,0.08);border:1px solid rgba(0,180,255,0.25);border-radius:10px;'
+  + 'padding:10px 14px;color:#e0f0ff;font-size:13px;outline:none" '
+  + 'onkeydown="if(event.key===\'Enter\'){event.preventDefault();labSbSearch();}" />'
+  + '<button onclick="labSbSearch()" '
+  + 'style="background:rgba(0,180,255,0.2);border:1px solid rgba(0,180,255,0.4);border-radius:10px;'
+  + 'padding:10px 16px;color:#00b4ff;font-size:16px;cursor:pointer;flex-shrink:0">\u25B6</button>'
+  + '</div>'
+  + '<div style="font-size:10px;color:var(--text3);margin-top:6px">Usa linguaggio naturale — la risposta sintetizza i PDF e usa l\u2019AI</div>'
+  + '</div>'
+
+  // Area risultati
+  + '<div id="sb-search-results" style="margin-bottom:14px"></div>'
+
+  // Quick topics
+  + '<div style="margin-bottom:14px">'
+  + '<div style="font-size:10px;color:var(--text3);margin-bottom:8px">ARGOMENTI RAPIDI</div>'
+  + '<div style="display:flex;flex-wrap:wrap;gap:6px">'
+  + ['Elettrocultura', 'Acqua magnetizzata', 'Living Soil', 'Biodinamica', 'Rame in serra', 'Luna e coltivazione', 'Micorrize', 'Compost'].map(function(t){
+      return '<button onclick="document.getElementById(\'sb-search-input\').value=\'' + t + '\';labSbSearch()" '
+        + 'style="font-size:10px;padding:5px 10px;border-radius:20px;border:1px solid rgba(0,180,255,0.2);'
+        + 'color:rgba(0,180,255,0.7);background:rgba(0,180,255,0.05);cursor:pointer">' + t + '</button>';
+    }).join('')
+  + '</div></div>'
+
+  // Grafo
+  + '<div style="font-size:10px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;margin-bottom:8px">'
+  + 'GRAFO CONNESSIONI PDF \u2014 ' + nodi.length + ' nodi'
+  + '</div>'
+  + '<div id="sb-graph-container" style="width:100%;height:320px;background:rgba(0,0,0,0.3);'
+  + 'border-radius:12px;position:relative;overflow:hidden;touch-action:none">'
+  + '<div id="sb-graph-loading" style="position:absolute;inset:0;display:flex;align-items:center;'
+  + 'justify-content:center;color:rgba(0,180,255,0.4);font-size:12px">\u23F3 Caricamento grafo\u2026</div>'
+  + '</div>';
 
   labPopupOpen(html);
 
-  /* Carica D3 se non presente, poi renderizza */
+  // Carica D3
   if (typeof d3 === 'undefined') {
     var script = document.createElement('script');
-    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js';
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js';
     script.onload = function() { labSbInitGraph(nodi, edges); };
     document.head.appendChild(script);
   } else {
@@ -1290,189 +1295,135 @@ function labPopupSecondBrain() {
 }
 
 /* ══════════════════════════════════════════════════════════════
-   SECOND BRAIN — D3.js force-directed graph
+   SECOND BRAIN — D3 grafo
 ══════════════════════════════════════════════════════════════ */
 
 function labSbInitGraph(nodi, edges) {
   var container = document.getElementById('sb-graph-container');
   var loading   = document.getElementById('sb-graph-loading');
-  if (!container) return;
+  if (!container || !nodi.length) return;
   if (loading) loading.style.display = 'none';
 
-  if (!nodi.length) {
-    container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;'
-      + 'height:100%;color:rgba(0,180,255,0.3);font-size:12px">Nessun dato grafo disponibile.<br>'
-      + 'Il workflow embedding gira alle 6:30.</div>';
-    return;
-  }
-
   var W = container.clientWidth  || 340;
-  var H = container.clientHeight || 340;
+  var H = container.clientHeight || 320;
 
-  /* Colore nodo per gruppo */
-  function nodeColor(d) {
-    if (d.gruppo === 'chiave')   return '#00b4ff';
-    if (d.gruppo === 'utile')    return '#9b6dff';
-    return 'rgba(0,180,255,0.3)';
-  }
-  function nodeRadius(d) {
-    if (d.gruppo === 'chiave') return 9;
-    if (d.gruppo === 'utile')  return 7;
-    return 5;
-  }
-  function edgeOpacity(d) {
-    return d.tipo === 'forte' ? 0.55 : 0.18;
-  }
-  function edgeWidth(d) {
-    return d.tipo === 'forte' ? 1.5 : 0.7;
-  }
-
-  /* Prepara link con riferimenti agli oggetti nodo */
-  var nodiMap = {};
-  nodi.forEach(function(n){ nodiMap[n.id] = n; });
-  var links = edges
-    .filter(function(e){ return nodiMap[e.source] && nodiMap[e.target]; })
-    .map(function(e){ return { source: e.source, target: e.target, peso: e.peso, tipo: e.tipo }; });
-
-  var svg = d3.select(container)
-    .append('svg')
-    .attr('width', W)
-    .attr('height', H)
-    .style('background', 'transparent');
-
-  /* glow filter */
-  var defs = svg.append('defs');
-  var filter = defs.append('filter').attr('id','sb-glow');
-  filter.append('feGaussianBlur').attr('stdDeviation','2.5').attr('result','coloredBlur');
-  var merge = filter.append('feMerge');
-  merge.append('feMergeNode').attr('in','coloredBlur');
-  merge.append('feMergeNode').attr('in','SourceGraphic');
+  d3.select(container).select('svg').remove();
+  var svg = d3.select(container).append('svg')
+    .attr('width', W).attr('height', H)
+    .style('cursor','grab');
 
   var g = svg.append('g');
 
-  /* zoom/pan */
   svg.call(d3.zoom()
-    .scaleExtent([0.3, 4])
-    .on('zoom', function(event){ g.attr('transform', event.transform); })
+    .scaleExtent([0.3, 3])
+    .on('zoom', function(ev){ g.attr('transform', ev.transform); })
   );
 
-  var simulation = d3.forceSimulation(nodi)
-    .force('link', d3.forceLink(links).id(function(d){ return d.id; }).distance(60).strength(0.4))
-    .force('charge', d3.forceManyBody().strength(-120))
-    .force('center', d3.forceCenter(W / 2, H / 2))
-    .force('collision', d3.forceCollide().radius(function(d){ return nodeRadius(d) + 6; }));
+  var defs = svg.append('defs');
+  var filter = defs.append('filter').attr('id','sb-glow2');
+  filter.append('feGaussianBlur').attr('stdDeviation','3').attr('result','blur');
+  var feMerge = filter.append('feMerge');
+  feMerge.append('feMergeNode').attr('in','blur');
+  feMerge.append('feMergeNode').attr('in','SourceGraphic');
 
-  /* link */
-  var link = g.append('g')
-    .selectAll('line')
-    .data(links)
-    .join('line')
-    .attr('stroke', 'rgba(0,180,255,1)')
-    .attr('stroke-opacity', edgeOpacity)
-    .attr('stroke-width', edgeWidth);
+  var COLOR = { chiave:'#00e5ff', utile:'#7b61ff', generale:'#1a4a6e' };
 
-  /* nodi */
-  var node = g.append('g')
-    .selectAll('circle')
-    .data(nodi)
-    .join('circle')
-    .attr('r', nodeRadius)
-    .attr('fill', nodeColor)
-    .attr('filter', function(d){ return d.gruppo === 'chiave' ? 'url(#sb-glow)' : null; })
-    .style('cursor', 'pointer')
-    .on('click', function(event, d){ labSbNodeClick(d); })
+  var linkData = edges.filter(function(e){
+    var src = nodi.find(function(n){ return n.id === e.source; });
+    var tgt = nodi.find(function(n){ return n.id === e.target; });
+    return src && tgt;
+  });
+
+  var sim = d3.forceSimulation(nodi)
+    .force('link', d3.forceLink(linkData).id(function(d){ return d.id; }).distance(50))
+    .force('charge', d3.forceManyBody().strength(-80))
+    .force('center', d3.forceCenter(W/2, H/2))
+    .force('collision', d3.forceCollide(14));
+
+  g.append('g').selectAll('line')
+    .data(linkData).enter().append('line')
+    .attr('stroke', function(d){ return d.tipo === 'forte' ? 'rgba(0,229,255,0.4)' : 'rgba(0,180,255,0.12)'; })
+    .attr('stroke-width', function(d){ return d.tipo === 'forte' ? 1.5 : 0.5; });
+
+  var node = g.append('g').selectAll('g')
+    .data(nodi).enter().append('g')
+    .style('cursor','pointer')
+    .on('click', function(ev, d){ ev.stopPropagation(); labSbNodeClick(d); })
     .call(d3.drag()
-      .on('start', function(event, d){
-        if (!event.active) simulation.alphaTarget(0.3).restart();
-        d.fx = d.x; d.fy = d.y;
-      })
-      .on('drag', function(event, d){
-        d.fx = event.x; d.fy = event.y;
-      })
-      .on('end', function(event, d){
-        if (!event.active) simulation.alphaTarget(0);
-        d.fx = null; d.fy = null;
-      })
+      .on('start', function(ev,d){ if(!ev.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
+      .on('drag',  function(ev,d){ d.fx=ev.x; d.fy=ev.y; })
+      .on('end',   function(ev,d){ if(!ev.active) sim.alphaTarget(0); d.fx=null; d.fy=null; })
     );
 
-  /* label brevi (solo se il titolo esiste) */
-  var label = g.append('g')
-    .selectAll('text')
-    .data(nodi.filter(function(d){ return d.titolo && d.titolo.length > 0; }))
-    .join('text')
-    .attr('font-size', 8)
-    .attr('fill', 'rgba(0,180,255,0.65)')
-    .attr('text-anchor', 'middle')
-    .attr('pointer-events', 'none')
-    .text(function(d){
-      var t = d.titolo || '';
-      return t.length > 22 ? t.slice(0,20) + '\u2026' : t;
-    });
+  node.append('circle')
+    .attr('r', function(d){ return d.gruppo === 'chiave' ? 10 : d.gruppo === 'utile' ? 7 : 5; })
+    .attr('fill', function(d){ return COLOR[d.gruppo] || COLOR.generale; })
+    .attr('filter', function(d){ return d.gruppo === 'chiave' ? 'url(#sb-glow2)' : null; })
+    .attr('opacity', 0.9);
 
-  simulation.on('tick', function(){
-    link
+  node.append('text')
+    .attr('dy', -13)
+    .attr('text-anchor', 'middle')
+    .attr('font-size', '7px')
+    .attr('fill', 'rgba(0,180,255,0.6)')
+    .text(function(d){ return (d.titolo||'').substring(0,20); });
+
+  sim.on('tick', function(){
+    g.selectAll('line')
       .attr('x1', function(d){ return d.source.x; })
       .attr('y1', function(d){ return d.source.y; })
       .attr('x2', function(d){ return d.target.x; })
       .attr('y2', function(d){ return d.target.y; });
-    node
-      .attr('cx', function(d){ return d.x; })
-      .attr('cy', function(d){ return d.y; });
-    label
-      .attr('x', function(d){ return d.x; })
-      .attr('y', function(d){ return d.y - 12; });
+    node.attr('transform', function(d){ return 'translate(' + d.x + ',' + d.y + ')'; });
   });
 }
 
 /* ══════════════════════════════════════════════════════════════
-   SECOND BRAIN — click su nodo → mostra info
+   SECOND BRAIN — click su nodo → popup PDF completo
 ══════════════════════════════════════════════════════════════ */
 
 function labSbNodeClick(d) {
-  var tagsHtml = (d.tag && d.tag.length)
-    ? d.tag.slice(0,5).map(function(t){
-        return '<span style="background:rgba(0,180,255,0.12);border:1px solid rgba(0,180,255,0.25);'
-          + 'border-radius:6px;padding:2px 7px;font-size:10px;color:#00b4ff;margin:2px 2px 0 0;display:inline-block">'
-          + labEsc(t) + '</span>';
-      }).join('')
-    : '<span style="color:rgba(0,180,255,0.3);font-size:11px">nessun tag</span>';
+  var edges = (labGrafoData && labGrafoData.edges) ? labGrafoData.edges : [];
+  var nodi  = (labGrafoData && labGrafoData.nodi)  ? labSbEnrichNodi(labGrafoData.nodi) : [];
+  var conn  = edges.filter(function(e){ return e.source === d.id || e.target === e.source && false || e.target === d.id; });
 
-  /* trova connessioni di questo nodo */
-  var edgesN = (labGrafoData && labGrafoData.edges) ? labGrafoData.edges : [];
-  var conn = edgesN.filter(function(e){ return e.source === d.id || e.target === d.id; });
-  var nodi = (labGrafoData && labGrafoData.nodi) ? labSbEnrichNodi(labGrafoData.nodi) : [];
-  var connHtml = conn.slice(0,4).map(function(e){
+  var tagsH = (d.tag||[]).slice(0,5).map(function(t){
+    return '<span style="background:rgba(0,180,255,0.1);border-radius:4px;padding:2px 7px;font-size:9px;color:#00b4ff;margin:2px 2px 0 0;display:inline-block">' + labEsc(t) + '</span>';
+  }).join('');
+
+  var connH = conn.slice(0,5).map(function(e){
     var altroId = e.source === d.id ? e.target : e.source;
     var altro = nodi.find(function(n){ return n.id === altroId; }) || {};
-    var titoloAltro = altro.titolo || altroId.slice(0,8);
-    return '<div style="font-size:11px;color:rgba(0,180,255,0.6);padding:3px 0;border-bottom:1px solid rgba(0,180,255,0.08)">'
-      + (e.tipo === 'forte' ? '\uD83D\uDD35' : '\u26AA') + ' '
-      + labEsc(titoloAltro.slice(0,45)) + ' '
-      + '<span style="color:rgba(0,180,255,0.35)">(' + (e.peso * 100).toFixed(0) + '%)</span>'
+    return '<div style="font-size:11px;color:rgba(0,180,255,0.7);padding:4px 0;border-bottom:1px solid rgba(0,180,255,0.08);cursor:pointer" onclick="labSbNodeClick(' + JSON.stringify(Object.assign({},altro)).replace(/"/g,"'") + ')">'
+      + (e.tipo==='forte'?'\uD83D\uDD35':'\u26AA') + ' ' + labEsc((altro.titolo||altroId).substring(0,50))
+      + ' <span style="color:rgba(0,180,255,0.35)">(' + (e.peso*100).toFixed(0) + '%)</span>'
       + '</div>';
   }).join('');
 
-  var info = '<div style="padding:4px 0">'
-    + '<div style="font-size:14px;font-weight:700;color:#00b4ff;margin-bottom:8px">'
-    + labEsc(d.titolo || 'PDF senza titolo') + '</div>'
-    + '<div style="margin-bottom:8px">' + tagsHtml + '</div>'
-    + (d.sommario ? '<div style="font-size:12px;color:rgba(0,180,255,0.7);line-height:1.5;margin-bottom:10px">'
-        + labEsc(d.sommario.slice(0,200)) + (d.sommario.length > 200 ? '\u2026' : '') + '</div>' : '')
-    + '<div style="font-size:10px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;margin-bottom:6px">'
-    + 'CONNESSIONI (' + conn.length + ')</div>'
-    + (connHtml || '<div style="font-size:11px;color:rgba(0,180,255,0.3)">Nessuna connessione</div>')
-    + '</div>';
+  var tecH = (d.tecniche||[]).slice(0,5).map(function(t){
+    return '<div style="font-size:11px;color:rgba(155,109,255,0.8);padding:2px 0">\u2022 ' + labEsc(t) + '</div>';
+  }).join('');
 
-  /* mostra in sb-search-results senza chiudere il popup */
+  var info =
+    '<div style="font-size:10px;color:#00b4ff;font-weight:700;letter-spacing:0.5px;margin-bottom:6px">PDF SELEZIONATO</div>'
+  + '<div style="font-size:14px;font-weight:700;color:#e0f0ff;margin-bottom:10px;line-height:1.3">' + labEsc(d.titolo||'PDF') + '</div>'
+  + '<div style="margin-bottom:10px">' + tagsH + '</div>'
+  + (d.sommario ? '<div style="font-size:12px;color:rgba(0,180,255,0.7);line-height:1.6;margin-bottom:12px;padding:10px;background:rgba(0,180,255,0.04);border-radius:8px">' + labEsc(d.sommario) + '</div>' : '')
+  + (d.estratto ? '<div style="background:rgba(155,109,255,0.05);border-radius:8px;padding:10px;margin-bottom:12px"><div style="font-size:9px;color:var(--el-violet);font-weight:700;margin-bottom:5px">ESTRATTO CHIAVE</div><div style="font-size:12px;color:rgba(155,109,255,0.8);line-height:1.6;font-style:italic">' + labEsc(d.estratto) + '</div></div>' : '')
+  + (d.consiglio ? '<div style="background:rgba(76,175,118,0.06);border-radius:8px;padding:10px;margin-bottom:12px"><div style="font-size:9px;color:var(--green3);font-weight:700;margin-bottom:5px">\uD83C\uDF31 CONSIGLIO PRATICO</div><div style="font-size:12px;color:rgba(76,175,118,0.8);line-height:1.6">' + labEsc(d.consiglio) + '</div></div>' : '')
+  + (tecH ? '<div style="background:rgba(0,180,255,0.04);border-radius:8px;padding:10px;margin-bottom:12px"><div style="font-size:9px;color:var(--el-blue);font-weight:700;margin-bottom:6px">\u26A1 TECNICHE CHIAVE</div>' + tecH + '</div>' : '')
+  + (conn.length ? '<div style="font-size:9px;color:rgba(0,180,255,0.4);font-weight:700;margin-bottom:6px">PDF COLLEGATI (' + conn.length + ')</div>' + connH : '')
+  + '<div style="margin-top:14px"><button onclick="document.getElementById(\'sb-search-input\').value=' + "'" + labEsc(d.titolo||'') + "'" + ';labSbSearch()" style="font-size:11px;padding:7px 14px;border-radius:10px;border:1px solid rgba(0,180,255,0.3);color:#00b4ff;background:rgba(0,180,255,0.08);cursor:pointer;width:100%">\uD83D\uDD0D Cerca argomenti correlati nel Knowledge Base</button></div>';
+
   var el = document.getElementById('sb-search-results');
   if (el) {
-    el.innerHTML = '<div style="background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.2);'
-      + 'border-radius:12px;padding:12px 14px;margin-bottom:4px">' + info + '</div>';
+    el.innerHTML = '<div style="background:rgba(0,180,255,0.04);border:1px solid rgba(0,180,255,0.2);border-radius:12px;padding:12px 14px;margin-bottom:12px">' + info + '</div>';
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
 
 /* ══════════════════════════════════════════════════════════════
-   SECOND BRAIN — ricerca semantica con Mistral embed
+   SECOND BRAIN — ricerca semantica → sintesi AI
 ══════════════════════════════════════════════════════════════ */
 
 async function labSbSearch() {
@@ -1482,91 +1433,155 @@ async function labSbSearch() {
   var query = input.value.trim();
   if (!query) return;
 
-  resEl.innerHTML = '<div style="color:rgba(0,180,255,0.4);font-size:12px;padding:8px">'
-    + '\u23F3 Ricerca semantica in corso\u2026</div>';
+  resEl.innerHTML = '<div style="color:rgba(0,180,255,0.5);font-size:12px;padding:10px;text-align:center">\u23F3 Cerco nel knowledge base\u2026</div>';
 
-  if (!labVettoriData || !labVettoriData.vettori || !labVettoriData.vettori.length) {
-    resEl.innerHTML = '<div style="color:rgba(255,100,100,0.7);font-size:12px;padding:8px">'
-      + 'Vettori non disponibili. Il workflow embedding gira alle 6:30.</div>';
+  var pdfAnalisi = (labPdfData && labPdfData.analisi) ? labPdfData.analisi : [];
+
+  // Step 1: embedding query con Mistral (se disponibile)
+  var topPdf = [];
+  var usedSemantic = false;
+
+  if (labVettoriData && labVettoriData.vettori && labVettoriData.vettori.length) {
+    try {
+      var mistralKey = ['qadOXMnT','lOl282Mld9SR','wtWL9dTdGCA2'].join('');
+      var resp = await fetch('https://api.mistral.ai/v1/embeddings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + mistralKey },
+        body: JSON.stringify({ model: 'mistral-embed', input: [query] })
+      });
+      if (resp.ok) {
+        var embData = await resp.json();
+        var queryVec = embData.data[0].embedding;
+        var byId = {};
+        pdfAnalisi.forEach(function(a){ if(a.id) byId[a.id]=a; });
+
+        var scores = labVettoriData.vettori.map(function(v) {
+          var src = byId[v.id] || {};
+          return {
+            score: labSbCosine(queryVec, v.vettore),
+            titolo: src.titolo || v.titolo || v.id,
+            sommario: src.sommario || '',
+            tecniche: src.tecniche_chiave || [],
+            consiglio: src.consiglio_coltivazione || src.consiglio_elettrocultura || '',
+            estratto: src.estratto_chiave || '',
+            id: v.id
+          };
+        });
+        scores.sort(function(a,b){ return b.score-a.score; });
+        topPdf = scores.slice(0,6).filter(function(s){ return s.score > 0.25; });
+        usedSemantic = true;
+      }
+    } catch(e) { /* fallback keyword */ }
+  }
+
+  // Fallback: ricerca keyword nei PDF analizzati
+  if (!topPdf.length) {
+    var ql = query.toLowerCase();
+    topPdf = pdfAnalisi.filter(function(a){
+      return (a.titolo||'').toLowerCase().indexOf(ql)!==-1
+        || (a.sommario||'').toLowerCase().indexOf(ql)!==-1
+        || (a.tecniche_chiave||[]).some(function(t){ return t.toLowerCase().indexOf(ql)!==-1; });
+    }).slice(0,5).map(function(a){
+      return { titolo:a.titolo||'', sommario:a.sommario||'', tecniche:a.tecniche_chiave||[], consiglio:a.consiglio_coltivazione||a.consiglio_elettrocultura||'', estratto:a.estratto_chiave||'', score:0.8, id:a.id };
+    });
+  }
+
+  if (!topPdf.length) {
+    resEl.innerHTML = '<div style="color:rgba(0,180,255,0.4);font-size:12px;padding:10px">Nessun documento trovato per <em>' + labEsc(query) + '</em>.</div>';
     return;
   }
 
+  // Step 2: sintesi via Cervello AI (Anthropic)
+  resEl.innerHTML = '<div style="color:rgba(0,180,255,0.5);font-size:12px;padding:10px;text-align:center">\uD83E\uDDE0 Sintetizzo con AI\u2026</div>';
+
+  var contesto = topPdf.map(function(p, i){
+    return '[PDF ' + (i+1) + '] ' + p.titolo + '\n'
+      + (p.sommario ? 'Sommario: ' + p.sommario.substring(0,200) + '\n' : '')
+      + (p.tecniche && p.tecniche.length ? 'Tecniche: ' + p.tecniche.slice(0,4).join(', ') + '\n' : '')
+      + (p.consiglio ? 'Consiglio: ' + p.consiglio.substring(0,150) + '\n' : '')
+      + (p.estratto ? 'Estratto: ' + p.estratto.substring(0,150) : '');
+  }).join('\n\n---\n\n');
+
+  var antKey = ['sk-ant-api03-','IpveWMEEMfS3py7K','X6S7pAkPWG9T9E6L','2bvDlGH9oGFHj43Y','hZOaBDYjf6cVJiEh','KXJqFaAAA'].join('');
+
   try {
-    /* Embedding della query con Mistral */
-    var mistralKey = ['qadOXMnT','lOl282Mld9SR','wtWL9dTdGCA2'].join('');
-    var resp = await fetch('https://api.mistral.ai/v1/embeddings', {
+    var aiResp = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
-        'Content-Type':  'application/json',
-        'Authorization': 'Bearer ' + mistralKey
+        'Content-Type': 'application/json',
+        'x-api-key': antKey,
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true'
       },
       body: JSON.stringify({
-        model: 'mistral-embed',
-        input: [query]
+        model: 'claude-sonnet-4-6',
+        max_tokens: 600,
+        system: 'Sei il Cervello AI di BioSerra. Rispondi in italiano, conciso e pratico. Sintetizza le informazioni dai PDF per rispondere alla domanda del coltivatore. Evidenzia consigli pratici applicabili in serra a Caserta.',
+        messages: [{
+          role: 'user',
+          content: 'Domanda: ' + query + '\n\nDocumenti trovati nel knowledge base:\n\n' + contesto + '\n\nRispondi in modo sintetico e pratico (max 5 frasi), poi elenca 2-3 punti chiave.'
+        }]
       })
     });
 
-    if (!resp.ok) throw new Error('Mistral API error ' + resp.status);
-    var data = await resp.json();
-    var queryVec = data.data[0].embedding;
+    var aiData = await aiResp.json();
+    var sintesi = (aiData.content && aiData.content[0] && aiData.content[0].text) ? aiData.content[0].text : null;
 
-    /* Cosine similarity con ogni vettore */
-    var vettori = labVettoriData.vettori;
-    var analisi = (labPdfData && labPdfData.analisi) ? labPdfData.analisi : [];
+    var html = '';
 
-    var scores = vettori.map(function(v, i) {
-      var src = analisi[i] || {};
-      return {
-        score:    labSbCosine(queryVec, v.vettore),
-        titolo:   src.titolo   || v.titolo   || ('PDF #' + i),
-        sommario: src.sommario || '',
-        tag:      src.tag      || v.tag      || [],
-        id:       v.id
-      };
-    });
-
-    scores.sort(function(a,b){ return b.score - a.score; });
-    var top5 = scores.slice(0,5).filter(function(s){ return s.score > 0.3; });
-
-    if (!top5.length) {
-      resEl.innerHTML = '<div style="color:rgba(0,180,255,0.4);font-size:12px;padding:8px">'
-        + 'Nessun risultato rilevante trovato per <em>' + labEsc(query) + '</em>.</div>';
-      return;
+    // Risposta AI
+    if (sintesi) {
+      html += '<div style="background:rgba(76,175,118,0.07);border:1px solid rgba(76,175,118,0.2);border-radius:12px;padding:14px;margin-bottom:14px">'
+        + '<div style="font-size:9px;color:var(--green3);font-weight:700;letter-spacing:0.5px;margin-bottom:8px">\uD83E\uDDE0 RISPOSTA DAL KNOWLEDGE BASE</div>'
+        + '<div style="font-size:13px;color:var(--text2);line-height:1.8;white-space:pre-wrap">' + labEsc(sintesi) + '</div>'
+        + '</div>';
     }
 
-    var html = '<div style="font-size:10px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;'
-      + 'margin-bottom:8px">RISULTATI RICERCA: <em>' + labEsc(query) + '</em></div>';
-
-    top5.forEach(function(s) {
-      var pct = (s.score * 100).toFixed(0);
-      var barW = Math.max(8, Math.min(100, s.score * 100));
-      var tagsH = s.tag.slice(0,3).map(function(t){
-        return '<span style="background:rgba(0,180,255,0.1);border-radius:4px;padding:1px 6px;'
-          + 'font-size:9px;color:rgba(0,180,255,0.7);margin-right:3px">' + labEsc(t) + '</span>';
-      }).join('');
-      html += '<div style="background:rgba(0,180,255,0.05);border:1px solid rgba(0,180,255,0.15);'
-        + 'border-radius:10px;padding:10px 12px;margin-bottom:8px">'
-        + '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px">'
-        +   '<div style="font-size:12px;font-weight:600;color:#e0f0ff;flex:1;padding-right:8px">'
-        +     labEsc(s.titolo.slice(0,60)) + (s.titolo.length > 60 ? '\u2026' : '')
-        +   '</div>'
-        +   '<div style="font-size:11px;color:#00b4ff;font-weight:700;white-space:nowrap">' + pct + '%</div>'
+    // Fonti PDF cliccabili
+    html += '<div style="font-size:9px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;margin-bottom:8px">FONTI (' + topPdf.length + ' PDF' + (usedSemantic?' \u2022 ricerca semantica':' \u2022 ricerca keyword') + ')</div>';
+    topPdf.forEach(function(p) {
+      var pct = usedSemantic ? (p.score*100).toFixed(0) + '%' : '';
+      html += '<div onclick="labSbOpenPdf(\'' + labEsc(p.id) + '\')" style="background:rgba(0,180,255,0.04);border:1px solid rgba(0,180,255,0.12);border-radius:10px;padding:10px 12px;margin-bottom:7px;cursor:pointer;transition:background 0.2s" onmouseover="this.style.background=\'rgba(0,180,255,0.08)\'" onmouseout="this.style.background=\'rgba(0,180,255,0.04)\'">'
+        + '<div style="display:flex;justify-content:space-between;margin-bottom:4px">'
+        + '<div style="font-size:12px;font-weight:600;color:#e0f0ff;flex:1;padding-right:8px">' + labEsc((p.titolo||'').substring(0,55)) + '</div>'
+        + (pct ? '<div style="font-size:11px;color:#00b4ff;font-weight:700">' + pct + '</div>' : '')
         + '</div>'
-        + '<div style="background:rgba(0,180,255,0.1);border-radius:3px;height:3px;margin-bottom:7px">'
-        +   '<div style="background:#00b4ff;height:3px;border-radius:3px;width:' + barW + '%"></div>'
-        + '</div>'
-        + (s.sommario ? '<div style="font-size:11px;color:rgba(0,180,255,0.6);line-height:1.4;margin-bottom:6px">'
-            + labEsc(s.sommario.slice(0,120)) + (s.sommario.length > 120 ? '\u2026' : '') + '</div>' : '')
-        + tagsH
+        + (p.sommario ? '<div style="font-size:11px;color:rgba(0,180,255,0.55);line-height:1.4">' + labEsc(p.sommario.substring(0,100)) + '\u2026</div>' : '')
         + '</div>';
     });
 
     resEl.innerHTML = html;
 
   } catch(e) {
-    resEl.innerHTML = '<div style="color:rgba(255,100,100,0.7);font-size:12px;padding:8px">'
-      + '\u26A0\uFE0F Errore ricerca: ' + labEsc(e.message) + '</div>';
+    // Fallback senza AI: mostra solo PDF con info estese
+    var html = '<div style="font-size:9px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;margin-bottom:8px">DOCUMENTI TROVATI</div>';
+    topPdf.forEach(function(p) {
+      html += '<div onclick="labSbOpenPdf(\'' + labEsc(p.id) + '\')" style="background:rgba(0,180,255,0.04);border:1px solid rgba(0,180,255,0.12);border-radius:10px;padding:10px 12px;margin-bottom:7px;cursor:pointer">'
+        + '<div style="font-size:12px;font-weight:600;color:#e0f0ff;margin-bottom:4px">' + labEsc((p.titolo||'').substring(0,55)) + '</div>'
+        + (p.consiglio ? '<div style="font-size:11px;color:rgba(76,175,118,0.7);margin-bottom:4px">' + labEsc(p.consiglio.substring(0,120)) + '</div>' : '')
+        + (p.sommario ? '<div style="font-size:11px;color:rgba(0,180,255,0.55)">' + labEsc(p.sommario.substring(0,100)) + '</div>' : '')
+        + '</div>';
+    });
+    resEl.innerHTML = html;
   }
+}
+
+/* Apre il PDF completo nel pannello */
+function labSbOpenPdf(pdfId) {
+  if (!labPdfData || !labPdfData.analisi) return;
+  var src = labPdfData.analisi.find(function(a){ return a.id === pdfId; });
+  if (!src) return;
+  var d = {
+    id: src.id,
+    titolo: src.titolo || pdfId,
+    tag: src.tag || [],
+    sommario: src.sommario || '',
+    estratto: src.estratto_chiave || '',
+    consiglio: src.consiglio_coltivazione || src.consiglio_elettrocultura || '',
+    tecniche: src.tecniche_chiave || [],
+    connessioni: src.connessioni || []
+  };
+  labSbNodeClick(d);
 }
 
 /* ══════════════════════════════════════════════════════════════
