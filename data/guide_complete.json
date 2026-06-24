@@ -1,24 +1,20 @@
 {
-  "lastUpdate": "2026-06-24T02:00:44.083Z",
-  "fonte": [
-    "zamnesia.io",
-    "pdf-knowledge"
-  ],
-  "totale_guide": 10,
-  "guide_con_contenuto": 0,
-  "parse_error": "No JSON braces found. Raw len: 0 preview: ",
-  "raw_len": 0,
+  "lastUpdate": "2026-06-24T05:31:01.238Z",
+  "fonte": "Royal Queen Seeds + Zamnesia",
+  "totale_guide": 12,
   "argomenti_coperti": [
-    "germinazione",
-    "vegetazione",
-    "fioritura",
-    "harvest",
-    "essiccazione",
-    "curing",
-    "living_soil",
-    "nutrizione",
-    "irrigazione",
-    "difesa_biologica"
+    "Germinazione",
+    "Vegetazione",
+    "Fioritura",
+    "Harvest",
+    "Essiccazione",
+    "Curing",
+    "Living soil",
+    "Nutrizione",
+    "Irrigazione",
+    "Difesa Biologica",
+    "Irrigazione Cannabis Outdoor",
+    "Nutrizione Living Soil"
   ],
   "guide": [
     {
@@ -157,19 +153,49 @@
       "esperimenti_pdf": []
     },
     {
-      "fase": "difesa_biologica",
-      "categoria": "fase",
-      "titolo": "Difesa biologica",
-      "contenuto_completo": "Guida in elaborazione.",
-      "punti_chiave": [],
-      "errori_comuni": [],
-      "quando": "",
-      "tecniche_pdf": [
-        "utilizzo di farina di roccia come fertilizzante",
-        "gestione del suolo per migliorare la struttura e la fertilità",
-        "meditazione per aumentare la consapevolezza dell'agricoltore"
+      "titolo": "Difesa Biologica",
+      "categoria": "difesa",
+      "contenuto_completo": "La difesa biologica è un metodo naturale per proteggere le piante da parassiti e malattie. Utilizza insetti benefici come ladybug e lacewing per controllare le infestazioni di afidi e altri parassiti. Utilizza anche funghi e batteri benefici per prevenire malattie come la muffa e la ruggine.",
+      "punti_chiave": [
+        "Utilizza insetti benefici",
+        "Utilizza funghi e batteri benefici",
+        "Crea un ecosistema equilibrato"
       ],
-      "esperimenti_pdf": []
+      "errori_comuni": [
+        "Non utilizzare insetti benefici",
+        "Non creare un ecosistema equilibrato"
+      ],
+      "quando": "Durante la stagione di crescita, quando le piante sono più suscettibili a parassiti e malattie"
+    },
+    {
+      "titolo": "Irrigazione Cannabis Outdoor",
+      "categoria": "acqua",
+      "contenuto_completo": "L'irrigazione è fondamentale per la crescita sana della cannabis outdoor. Utilizza un sistema di irrigazione a goccia per ridurre lo spreco d'acqua e garantire che le piante ricevano la quantità giusta di acqua. Controlla il pH dell'acqua e assicurati che sia tra 6,0 e 7,0 per evitare problemi di assorbimento dei nutrienti.",
+      "punti_chiave": [
+        "Utilizza un sistema di irrigazione a goccia",
+        "Controlla il pH dell'acqua",
+        "Evita di esagerare con l'acqua"
+      ],
+      "errori_comuni": [
+        "Sovraccaricare le piante d'acqua",
+        "Non controllare il pH dell'acqua"
+      ],
+      "quando": "Durante la stagione di crescita, quando le piante hanno bisogno di più acqua"
+    },
+    {
+      "titolo": "Nutrizione Living Soil",
+      "categoria": "nutrizione",
+      "contenuto_completo": "La nutrizione Living Soil si basa sull'utilizzo di microbi e nutrienti naturali per creare un suolo fertile e sano. Utilizza farina di roccia, compost e altri materiali organici per creare un suolo ricco di nutrienti. Evita di utilizzare fertilizzanti chimici e prodotti sintetici.",
+      "punti_chiave": [
+        "Utilizza farina di roccia e compost",
+        "Evita fertilizzanti chimici",
+        "Crea un suolo ricco di microbi"
+      ],
+      "errori_comuni": [
+        "Utilizzare fertilizzanti chimici",
+        "Non creare un suolo ricco di microbi"
+      ],
+      "quando": "Durante la preparazione del suolo, prima di piantare le piante"
     }
   ]
 }
