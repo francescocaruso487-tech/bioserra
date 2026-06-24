@@ -62,7 +62,7 @@
     {
       "id": "daily_1781667046478_0",
       "nome": "Elettrocultura",
-      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
+      "descrizione": "Applica elettrocultura alle 10 piante di pianta per migliorare la crescita e la resa",
       "obiettivo": "Migliorare la crescita e la resa delle piante",
       "materiali": [
         "Generatore di elettricità",
@@ -79,16 +79,16 @@
     {
       "id": "daily_1781640224648_2",
       "nome": "Sistema di irrigazione a goccia con fertilizzanti",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della pianta",
       "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
       "materiali": [
         "Sistema di irrigazione a goccia",
-        "Fertilizzanti specifici per la cannabis",
+        "Fertilizzanti specifici per la pianta",
         "Tubi e connettori"
       ],
       "categoria": "Tecnica di coltivazione",
       "difficolta": "Medio",
-      "fonte": "Guide di coltivazione della cannabis",
+      "fonte": "Guide di coltivazione della pianta",
       "durata_giorni": 21,
       "data_proposta": "2026-06-16",
       "attivo": true,
@@ -98,7 +98,7 @@
       "id": "daily_1781640436681_0",
       "nome": "Tecnica di irrigazione a goccia",
       "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
-      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di cannabis",
+      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di pianta",
       "materiali": [
         "tubazioni",
         "gocciolatori",
@@ -115,8 +115,8 @@
     {
       "id": "daily_1781640025709_3",
       "nome": "Introduzione di micorrize",
-      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della cannabis",
-      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della pianta",
+      "obiettivo": "Migliorare la crescita e la produzione di pianta",
       "materiali": [
         "micorrize",
         "substrato"
@@ -145,24 +145,6 @@
       "data_proposta": "2026-06-16",
       "attivo": true,
       "data_attivazione": "2026-06-23"
-    },
-    {
-      "id": "daily_1781640224648_2",
-      "nome": "Sistema di irrigazione a goccia con fertilizzanti",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
-      "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
-      "materiali": [
-        "Sistema di irrigazione a goccia",
-        "Fertilizzanti specifici per la cannabis",
-        "Tubi e connettori"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Guide di coltivazione della cannabis",
-      "durata_giorni": 21,
-      "data_proposta": "2026-06-16",
-      "attivo": true,
-      "data_attivazione": "2026-06-23"
     }
   ],
   "storico_cicli": [],
@@ -188,7 +170,7 @@
     {
       "id": "daily_1781667046478_0",
       "nome": "Elettrocultura",
-      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
+      "descrizione": "Applica elettrocultura alle 10 piante di pianta per migliorare la crescita e la resa",
       "obiettivo": "Migliorare la crescita e la resa delle piante",
       "materiali": [
         "Generatore di elettricità",
@@ -204,16 +186,16 @@
     {
       "id": "daily_1781640224648_2",
       "nome": "Sistema di irrigazione a goccia con fertilizzanti",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della pianta",
       "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
       "materiali": [
         "Sistema di irrigazione a goccia",
-        "Fertilizzanti specifici per la cannabis",
+        "Fertilizzanti specifici per la pianta",
         "Tubi e connettori"
       ],
       "categoria": "Tecnica di coltivazione",
       "difficolta": "Medio",
-      "fonte": "Guide di coltivazione della cannabis",
+      "fonte": "Guide di coltivazione della pianta",
       "durata_giorni": 21,
       "data_proposta": "2026-06-16",
       "attivo": false
@@ -222,7 +204,7 @@
       "id": "daily_1781640436681_0",
       "nome": "Tecnica di irrigazione a goccia",
       "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
-      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di cannabis",
+      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di pianta",
       "materiali": [
         "tubazioni",
         "gocciolatori",
@@ -238,8 +220,8 @@
     {
       "id": "daily_1781640025709_3",
       "nome": "Introduzione di micorrize",
-      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della cannabis",
-      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della pianta",
+      "obiettivo": "Migliorare la crescita e la produzione di pianta",
       "materiali": [
         "micorrize",
         "substrato"
@@ -351,8 +333,8 @@
     {
       "id": "daily_1781640025709_0",
       "nome": "Elettrocultura con LED",
-      "descrizione": "Implementazione di un sistema di elettrocultura con LED per aumentare la resa e la qualità della cannabis",
-      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "descrizione": "Implementazione di un sistema di elettrocultura con LED per aumentare la resa e la qualità della pianta",
+      "obiettivo": "Migliorare la crescita e la produzione di pianta",
       "materiali": [
         "LED grow light",
         "cavi",
@@ -369,8 +351,8 @@
     {
       "id": "daily_1781640025709_1",
       "nome": "Monitoraggio del pH",
-      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della cannabis",
-      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della cannabis",
+      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della pianta",
+      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della pianta",
       "materiali": [
         "pHmetro",
         "soluzione di calibrazione"
@@ -386,8 +368,8 @@
     {
       "id": "daily_1781640025709_2",
       "nome": "Tecnica di prunning",
-      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della cannabis",
-      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della pianta",
+      "obiettivo": "Migliorare la crescita e la produzione di pianta",
       "materiali": [
         "forbici",
         "guanti"
@@ -403,8 +385,8 @@
     {
       "id": "daily_1781640025709_4",
       "nome": "Controllo della temperatura",
-      "descrizione": "Regolazione della temperatura per assicurare un ambiente ottimale per la crescita della cannabis",
-      "obiettivo": "Mantenere una temperatura stabile e ottimale per la crescita della cannabis",
+      "descrizione": "Regolazione della temperatura per assicurare un ambiente ottimale per la crescita della pianta",
+      "obiettivo": "Mantenere una temperatura stabile e ottimale per la crescita della pianta",
       "materiali": [
         "termometro",
         "ventilatore"
@@ -419,7 +401,7 @@
     },
     {
       "id": "daily_1781640155746_0",
-      "nome": "Elettrocultura per cannabis",
+      "nome": "Elettrocultura per pianta",
       "descrizione": "Applicare un campo elettrico alle piante per aumentare la crescita",
       "obiettivo": "Aumentare la resa e la qualità delle piante",
       "materiali": [
@@ -488,7 +470,7 @@
       "id": "daily_1781640224648_0",
       "nome": "Elettrocultura con impulsi elettromagnetici",
       "descrizione": "Applicazione di impulsi elettromagnetici alle piante per stimolare la crescita e migliorare la resa",
-      "obiettivo": "Aumentare la resa e la qualità della cannabis",
+      "obiettivo": "Aumentare la resa e la qualità della pianta",
       "materiali": [
         "Generatore di impulsi elettromagnetici",
         "Cavi di collegamento",
@@ -514,7 +496,7 @@
       ],
       "categoria": "Tecnica di coltivazione",
       "difficolta": "Facile",
-      "fonte": "Guide di coltivazione della cannabis",
+      "fonte": "Guide di coltivazione della pianta",
       "durata_giorni": 14,
       "data_proposta": "2026-06-16",
       "attivo": false,
@@ -524,7 +506,7 @@
       "id": "daily_1781640224648_3",
       "nome": "Studio della fotosintesi e dell'assorbimento di CO2",
       "descrizione": "Studio della fotosintesi e dell'assorbimento di CO2 delle piante per ottimizzare la crescita e la resa",
-      "obiettivo": "Migliorare la fotosintesi e la resa della cannabis",
+      "obiettivo": "Migliorare la fotosintesi e la resa della pianta",
       "materiali": [
         "Strumenti di misura della fotosintesi",
         "Sistema di registrazione dati",
@@ -542,7 +524,7 @@
       "id": "daily_1781640224648_4",
       "nome": "Tecnica di prunning e potatura",
       "descrizione": "Applicazione di tecniche di prunning e potatura per migliorare la forma e la struttura delle piante",
-      "obiettivo": "Migliorare la forma e la resa della cannabis",
+      "obiettivo": "Migliorare la forma e la resa della pianta",
       "materiali": [
         "Forbici da potatura",
         "Coltelli da prunning",
@@ -550,7 +532,7 @@
       ],
       "categoria": "Tecnica di coltivazione",
       "difficolta": "Facile",
-      "fonte": "Guide di coltivazione della cannabis",
+      "fonte": "Guide di coltivazione della pianta",
       "durata_giorni": 14,
       "data_proposta": "2026-06-16",
       "attivo": false,
@@ -559,7 +541,7 @@
     {
       "id": "daily_1781640396342_1",
       "nome": "Tecnica di pruning",
-      "descrizione": "Tagliare le piante di cannabis per controllare la forma e aumentare la produzione",
+      "descrizione": "Tagliare le piante di pianta per controllare la forma e aumentare la produzione",
       "obiettivo": "Aumentare la produzione di gemme e migliorare la struttura della pianta",
       "materiali": [
         "Forbici da giardinaggio",
@@ -593,8 +575,8 @@
     {
       "id": "daily_1781640436681_1",
       "nome": "Monitoraggio del pH del suolo",
-      "descrizione": "Verifica regolare del pH del suolo per garantire un ambiente ottimale per la crescita della cannabis",
-      "obiettivo": "Mantenere un pH ottimale per la crescita della cannabis",
+      "descrizione": "Verifica regolare del pH del suolo per garantire un ambiente ottimale per la crescita della pianta",
+      "obiettivo": "Mantenere un pH ottimale per la crescita della pianta",
       "materiali": [
         "pHmetro",
         "soluzione di calibrazione"
@@ -610,8 +592,8 @@
     {
       "id": "daily_1781640436681_4",
       "nome": "Monitoraggio della temperatura e dell'umidità",
-      "descrizione": "Verifica regolare della temperatura e dell'umidità per garantire un ambiente ottimale per la crescita della cannabis",
-      "obiettivo": "Mantenere un ambiente ottimale per la crescita della cannabis",
+      "descrizione": "Verifica regolare della temperatura e dell'umidità per garantire un ambiente ottimale per la crescita della pianta",
+      "obiettivo": "Mantenere un ambiente ottimale per la crescita della pianta",
       "materiali": [
         "termometro",
         "igrometro"
@@ -865,7 +847,7 @@
       "obiettivo": "Migliorare la stabilità e la produttività delle piante",
       "materiali": [
         "Sistema di supporto",
-        "Piante di cannabis"
+        "Piante di pianta"
       ],
       "categoria": "Ingegneria",
       "difficolta": "facile",
@@ -913,16 +895,16 @@
     {
       "id": "daily_1781640224648_2",
       "nome": "Sistema di irrigazione a goccia con fertilizzanti",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della pianta",
       "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
       "materiali": [
         "Sistema di irrigazione a goccia",
-        "Fertilizzanti specifici per la cannabis",
+        "Fertilizzanti specifici per la pianta",
         "Tubi e connettori"
       ],
       "categoria": "Tecnica di coltivazione",
       "difficolta": "Medio",
-      "fonte": "Guide di coltivazione della cannabis",
+      "fonte": "Guide di coltivazione della pianta",
       "durata_giorni": 21,
       "data_proposta": "2026-06-16",
       "attivo": false,
@@ -1030,8 +1012,8 @@
     {
       "id": "daily_1781640025709_0",
       "nome": "Elettrocultura con LED",
-      "descrizione": "Implementazione di un sistema di elettrocultura con LED per aumentare la resa e la qualità della cannabis",
-      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "descrizione": "Implementazione di un sistema di elettrocultura con LED per aumentare la resa e la qualità della pianta",
+      "obiettivo": "Migliorare la crescita e la produzione di pianta",
       "materiali": [
         "LED grow light",
         "cavi",
@@ -1048,8 +1030,8 @@
     {
       "id": "daily_1781640025709_1",
       "nome": "Monitoraggio del pH",
-      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della cannabis",
-      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della cannabis",
+      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della pianta",
+      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della pianta",
       "materiali": [
         "pHmetro",
         "soluzione di calibrazione"
@@ -1065,8 +1047,8 @@
     {
       "id": "daily_1781640025709_2",
       "nome": "Tecnica di prunning",
-      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della cannabis",
-      "obiettivo": "Migliorare la crescita e la produzione di cannabis",
+      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della pianta",
+      "obiettivo": "Migliorare la crescita e la produzione di pianta",
       "materiali": [
         "forbici",
         "guanti"
@@ -1082,8 +1064,8 @@
     {
       "id": "daily_1781640025709_4",
       "nome": "Controllo della temperatura",
-      "descrizione": "Regolazione della temperatura per assicurare un ambiente ottimale per la crescita della cannabis",
-      "obiettivo": "Mantenere una temperatura stabile e ottimale per la crescita della cannabis",
+      "descrizione": "Regolazione della temperatura per assicurare un ambiente ottimale per la crescita della pianta",
+      "obiettivo": "Mantenere una temperatura stabile e ottimale per la crescita della pianta",
       "materiali": [
         "termometro",
         "ventilatore"
@@ -1098,7 +1080,7 @@
     },
     {
       "id": "daily_1781640155746_0",
-      "nome": "Elettrocultura per cannabis",
+      "nome": "Elettrocultura per pianta",
       "descrizione": "Applicare un campo elettrico alle piante per aumentare la crescita",
       "obiettivo": "Aumentare la resa e la qualità delle piante",
       "materiali": [
@@ -1167,7 +1149,7 @@
       "id": "daily_1781640224648_0",
       "nome": "Elettrocultura con impulsi elettromagnetici",
       "descrizione": "Applicazione di impulsi elettromagnetici alle piante per stimolare la crescita e migliorare la resa",
-      "obiettivo": "Aumentare la resa e la qualità della cannabis",
+      "obiettivo": "Aumentare la resa e la qualità della pianta",
       "materiali": [
         "Generatore di impulsi elettromagnetici",
         "Cavi di collegamento",
@@ -1193,7 +1175,7 @@
       ],
       "categoria": "Tecnica di coltivazione",
       "difficolta": "Facile",
-      "fonte": "Guide di coltivazione della cannabis",
+      "fonte": "Guide di coltivazione della pianta",
       "durata_giorni": 14,
       "data_proposta": "2026-06-16",
       "attivo": false,
@@ -1203,7 +1185,7 @@
       "id": "daily_1781640224648_3",
       "nome": "Studio della fotosintesi e dell'assorbimento di CO2",
       "descrizione": "Studio della fotosintesi e dell'assorbimento di CO2 delle piante per ottimizzare la crescita e la resa",
-      "obiettivo": "Migliorare la fotosintesi e la resa della cannabis",
+      "obiettivo": "Migliorare la fotosintesi e la resa della pianta",
       "materiali": [
         "Strumenti di misura della fotosintesi",
         "Sistema di registrazione dati",
@@ -1221,7 +1203,7 @@
       "id": "daily_1781640224648_4",
       "nome": "Tecnica di prunning e potatura",
       "descrizione": "Applicazione di tecniche di prunning e potatura per migliorare la forma e la struttura delle piante",
-      "obiettivo": "Migliorare la forma e la resa della cannabis",
+      "obiettivo": "Migliorare la forma e la resa della pianta",
       "materiali": [
         "Forbici da potatura",
         "Coltelli da prunning",
@@ -1229,7 +1211,7 @@
       ],
       "categoria": "Tecnica di coltivazione",
       "difficolta": "Facile",
-      "fonte": "Guide di coltivazione della cannabis",
+      "fonte": "Guide di coltivazione della pianta",
       "durata_giorni": 14,
       "data_proposta": "2026-06-16",
       "attivo": false,
@@ -1238,7 +1220,7 @@
     {
       "id": "daily_1781640396342_1",
       "nome": "Tecnica di pruning",
-      "descrizione": "Tagliare le piante di cannabis per controllare la forma e aumentare la produzione",
+      "descrizione": "Tagliare le piante di pianta per controllare la forma e aumentare la produzione",
       "obiettivo": "Aumentare la produzione di gemme e migliorare la struttura della pianta",
       "materiali": [
         "Forbici da giardinaggio",
@@ -1272,8 +1254,8 @@
     {
       "id": "daily_1781640436681_1",
       "nome": "Monitoraggio del pH del suolo",
-      "descrizione": "Verifica regolare del pH del suolo per garantire un ambiente ottimale per la crescita della cannabis",
-      "obiettivo": "Mantenere un pH ottimale per la crescita della cannabis",
+      "descrizione": "Verifica regolare del pH del suolo per garantire un ambiente ottimale per la crescita della pianta",
+      "obiettivo": "Mantenere un pH ottimale per la crescita della pianta",
       "materiali": [
         "pHmetro",
         "soluzione di calibrazione"
@@ -1289,8 +1271,8 @@
     {
       "id": "daily_1781640436681_4",
       "nome": "Monitoraggio della temperatura e dell'umidità",
-      "descrizione": "Verifica regolare della temperatura e dell'umidità per garantire un ambiente ottimale per la crescita della cannabis",
-      "obiettivo": "Mantenere un ambiente ottimale per la crescita della cannabis",
+      "descrizione": "Verifica regolare della temperatura e dell'umidità per garantire un ambiente ottimale per la crescita della pianta",
+      "obiettivo": "Mantenere un ambiente ottimale per la crescita della pianta",
       "materiali": [
         "termometro",
         "igrometro"
@@ -1544,7 +1526,7 @@
       "obiettivo": "Migliorare la stabilità e la produttività delle piante",
       "materiali": [
         "Sistema di supporto",
-        "Piante di cannabis"
+        "Piante di pianta"
       ],
       "categoria": "Ingegneria",
       "difficolta": "facile",
@@ -1590,7 +1572,7 @@
     {
       "id": "daily_1781667046478_0",
       "nome": "Elettrocultura",
-      "descrizione": "Applica elettrocultura alle 10 piante di cannabis per migliorare la crescita e la resa",
+      "descrizione": "Applica elettrocultura alle 10 piante di pianta per migliorare la crescita e la resa",
       "obiettivo": "Migliorare la crescita e la resa delle piante",
       "materiali": [
         "Generatore di elettricità",
@@ -1607,7 +1589,7 @@
       "id": "daily_1781640436681_0",
       "nome": "Tecnica di irrigazione a goccia",
       "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
-      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di cannabis",
+      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di pianta",
       "materiali": [
         "tubazioni",
         "gocciolatori",
@@ -1678,16 +1660,16 @@
     {
       "id": "daily_1781640224648_2",
       "nome": "Sistema di irrigazione a goccia con fertilizzanti",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della cannabis",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della pianta",
       "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
       "materiali": [
         "Sistema di irrigazione a goccia",
-        "Fertilizzanti specifici per la cannabis",
+        "Fertilizzanti specifici per la pianta",
         "Tubi e connettori"
       ],
       "categoria": "Tecnica di coltivazione",
       "difficolta": "Medio",
-      "fonte": "Guide di coltivazione della cannabis",
+      "fonte": "Guide di coltivazione della pianta",
       "durata_giorni": 21,
       "data_proposta": "2026-06-16",
       "attivo": false
