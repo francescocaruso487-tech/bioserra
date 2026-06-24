@@ -332,46 +332,90 @@ function labPopupTecnicaAll(idx) {
   var t = lista[idx];
   if (!t) return;
   var catColor = labCatColor(t.categoria);
-  var h = '<div style="font-size:10px;color:' + catColor + ';font-weight:700;letter-spacing:1px;margin-bottom:4px">⚡ ' + labEsc((t.categoria||'elettrocultura')).toUpperCase() + '</div>';
-  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(t.nome||'') + '</div>';
-  if (t.daBase === false) {
-    h += '<div style="background:rgba(155,109,255,0.1);border-radius:8px;padding:6px 10px;margin-bottom:10px;font-size:11px;color:#9b6dff">';
-    h += '📄 Tecnica estratta da ' + (t.occorrenze||1) + ' PDF analizzati</div>';
+  var h = '';
+  h += '<div style="font-size:10px;color:' + catColor + ';font-weight:700;letter-spacing:1px;margin-bottom:4px">\u26A1 ' + labEsc((t.categoria||'elettrocultura')).toUpperCase() + '</div>';
+  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:4px;line-height:1.3">' + labEsc(t.nome||'') + '</div>';
+  if (t.daBase === false || t.pdf_count) {
+    h += '<div style="font-size:10px;color:#9b6dff;margin-bottom:10px">\uD83D\uDCC4 Da ' + (t.pdf_count||t.occorrenze||1) + ' PDF analizzati</div>';
   }
-  if (t.descrizione||t.desc) {
-    h += '<div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:14px">' + labEsc(t.descrizione||t.desc||'') + '</div>';
+  var descTesto = t.descrizione || t.desc || '';
+  if (descTesto) {
+    h += '<div style="font-size:13px;color:var(--text2);line-height:1.8;margin-bottom:14px;padding:10px;background:rgba(255,255,255,0.03);border-radius:10px">' + labEsc(descTesto) + '</div>';
   }
-  if (t.istruzioni && t.istruzioni.length) {
-    h += '<div style="font-size:11px;font-weight:700;color:var(--el-blue);margin-bottom:8px">ISTRUZIONI:</div>';
-    t.istruzioni.forEach(function(step, i) {
-      h += '<div style="display:flex;gap:10px;margin-bottom:8px;align-items:flex-start">';
-      h += '<div style="min-width:22px;height:22px;background:' + catColor + ';border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#000;flex-shrink:0">' + (i+1) + '</div>';
-      h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(step) + '</div></div>';
+  var istr = t.istruzioni_pratiche || t.istruzioni || [];
+  if (istr.length) {
+    h += '<div style="margin-bottom:14px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:8px;letter-spacing:0.5px">\uD83D\uDEE0 COME FARE — PASSO PER PASSO</div>';
+    istr.forEach(function(step, i) {
+      h += '<div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">';
+      h += '<div style="min-width:24px;height:24px;background:' + catColor + ';border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#000;flex-shrink:0">' + (i+1) + '</div>';
+      h += '<div style="font-size:12px;color:var(--text2);line-height:1.7;padding-top:3px">' + labEsc(step) + '</div></div>';
     });
-  }
-  if (t.materiali && t.materiali.length) {
-    h += '<div style="background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.15);border-radius:10px;padding:10px;margin-top:10px">';
-    h += '<div style="font-size:11px;font-weight:700;color:var(--el-blue);margin-bottom:6px">🛠 MATERIALI:</div>';
-    t.materiali.forEach(function(m) { h += '<div style="font-size:12px;color:var(--text2);padding:2px 0">• ' + labEsc(m) + '</div>'; });
     h += '</div>';
   }
-  if (t.difficolta) {
-    var diff = t.difficolta==='facile' ? '🟢 Facile' : t.difficolta==='media' ? '🟡 Media' : '🔴 Difficile';
-    h += '<div style="margin-top:10px;font-size:12px;color:var(--text3)">Difficoltà: <strong>' + diff + '</strong></div>';
+  var mat = t.materiali || [];
+  if (mat.length) {
+    h += '<div style="background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.12);border-radius:10px;padding:12px;margin-bottom:12px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:8px">\uD83D\uDEE0 MATERIALI NECESSARI</div>';
+    mat.forEach(function(m) { h += '<div style="font-size:12px;color:var(--text2);padding:3px 0;border-bottom:1px solid rgba(0,180,255,0.07)">\u2022 ' + labEsc(m) + '</div>'; });
+    h += '</div>';
   }
-  if (t.istruzioni_pratiche && t.istruzioni_pratiche.length) {
-    var h_ip = '<div style="background:rgba(0,180,255,0.06);border-radius:10px;padding:10px;margin-bottom:10px">';
-    h_ip += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:8px">🛠 ISTRUZIONI PRATICHE</div>';
-    t.istruzioni_pratiche.forEach(function(step, si) {
-      h_ip += '<div style="display:flex;gap:8px;margin-bottom:6px;align-items:flex-start">';
-      h_ip += '<div style="min-width:20px;height:20px;background:rgba(0,180,255,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#000;flex-shrink:0">' + (si+1) + '</div>';
-      h_ip += '<div style="font-size:12px;color:var(--text2);line-height:1.5">' + labEsc(step) + '</div></div>';
+  var varianti = t.varianti || [];
+  if (varianti.length) {
+    h += '<div style="background:rgba(155,109,255,0.05);border-radius:10px;padding:10px;margin-bottom:12px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-violet);margin-bottom:6px">\uD83D\uDD00 VARIANTI E APPLICAZIONI</div>';
+    varianti.forEach(function(v) { h += '<div style="font-size:11px;color:rgba(155,109,255,0.8);padding:2px 0">\u2022 ' + labEsc(v) + '</div>'; });
+    h += '</div>';
+  }
+  var fasi = t.fasi_guida || [];
+  if (fasi.length) {
+    h += '<div style="font-size:10px;color:var(--text3);margin-bottom:12px">\uD83D\uDDD3 Applica in: <span style="color:var(--green3)">' + fasi.join(' \u00B7 ') + '</span></div>';
+  }
+  var espCollegati = [];
+  if (labEspData) {
+    var tuttiEsp = (labEspData.esperimenti_attivi||[]).concat(labEspData.proposte||[]).concat(labEspData.esperimenti_disponibili||[]);
+    var nomeT = (t.nome||'').toLowerCase();
+    var tagT = (t.tag_correlati||[]).map(function(x){return x.toLowerCase();});
+    tuttiEsp.forEach(function(e) {
+      var nomeE = (e.nome||'').toLowerCase();
+      var catE = (e.categoria||'').toLowerCase();
+      var match = nomeE.indexOf(nomeT.substring(0,6)) !== -1 || nomeT.indexOf(nomeE.substring(0,6)) !== -1
+        || tagT.some(function(tg){ return nomeE.indexOf(tg) !== -1 || catE.indexOf(tg) !== -1; });
+      if (match) espCollegati.push(e);
     });
-    h_ip += '</div>';
-    h += h_ip;
   }
-  if (t.sperimentale) {
-    h += '<div style="margin-top:10px;background:rgba(155,109,255,0.1);border:1px solid rgba(155,109,255,0.3);border-radius:8px;padding:8px;font-size:11px;color:var(--el-violet)">🔬 Tecnica sperimentale — documenta le osservazioni.</div>';
+  if (espCollegati.length) {
+    h += '<div style="background:rgba(76,175,118,0.07);border-left:2px solid var(--green3);border-radius:0 10px 10px 0;padding:10px;margin-bottom:12px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:6px">\uD83E\uDDEA ESPERIMENTI CORRELATI</div>';
+    espCollegati.slice(0,3).forEach(function(e) {
+      h += '<div style="font-size:11px;color:var(--text2);padding:3px 0;border-bottom:1px solid rgba(76,175,118,0.08)">\u2022 ' + labEsc(e.nome||'') + (e.obiettivo ? ' <em style=\\"color:var(--text3)\\">— ' + labEsc((e.obiettivo+'').substring(0,50)) + '</em>' : '') + '</div>';
+    });
+    h += '</div>';
+  }
+  var guideCollegate = [];
+  if (labGuideData && labGuideData.length) {
+    var nomeT2 = (t.nome||'').toLowerCase();
+    var cat2 = (t.categoria||'').toLowerCase();
+    labGuideData.forEach(function(g, gi) {
+      var tecPdf = (g.tecniche_pdf||[]).map(function(x){return x.toLowerCase();});
+      var match = tecPdf.some(function(tp){ return tp.indexOf(nomeT2.substring(0,6)) !== -1; })
+        || (g.fase && g.fase.indexOf(cat2.substring(0,5)) !== -1);
+      if (match) guideCollegate.push({g:g, idx:gi});
+    });
+  }
+  if (guideCollegate.length) {
+    h += '<div style="background:rgba(155,109,255,0.06);border-radius:10px;padding:10px;margin-bottom:12px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-violet);margin-bottom:6px">\uD83D\uDCD6 GUIDE CORRELATE</div>';
+    guideCollegate.slice(0,3).forEach(function(item) {
+      h += '<div style="font-size:11px;color:rgba(155,109,255,0.8);padding:3px 0;border-bottom:1px solid rgba(155,109,255,0.08);cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupGuida(' + item.idx + ');},60)">\u2192 ' + labEsc(item.g.titolo||'') + '</div>';
+    });
+    h += '</div>';
+  }
+  var tags = t.tag_correlati || [];
+  if (tags.length) {
+    h += '<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px">';
+    tags.slice(0,6).forEach(function(tg) { h += '<span style="font-size:9px;background:rgba(255,255,255,0.06);color:var(--text3);border-radius:6px;padding:2px 7px">' + labEsc(tg) + '</span>'; });
+    h += '</div>';
   }
   labPopupOpen(h);
 }
@@ -572,6 +616,47 @@ function labPopupEsp(idx, tipo) {
   if (esp.fonte)            meta.push('Fonte: ' + esp.fonte);
   if (esp.data_attivazione) meta.push('Dal: ' + esp.data_attivazione.substring(0,10));
   if (meta.length) h += '<div style="font-size:10px;color:var(--text3);margin-top:6px">' + meta.join(' · ') + '</div>';
+  // Interconnessioni: Tecniche correlate
+  var tecCollegate = [];
+  if (typeof labBuildTecnicheComplete === 'function') {
+    var tutteTec = labBuildTecnicheComplete();
+    var nomeE = (esp.nome||'').toLowerCase();
+    var catE = (esp.categoria||'').toLowerCase();
+    tutteTec.forEach(function(t, ti) {
+      var nomeT = (t.nome||'').toLowerCase();
+      var catT = (t.categoria||'').toLowerCase();
+      if (nomeT.indexOf(nomeE.substring(0,6)) !== -1 || nomeE.indexOf(nomeT.substring(0,6)) !== -1
+        || (catE && catT.indexOf(catE.substring(0,5)) !== -1)) {
+        tecCollegate.push({t:t, idx:ti});
+      }
+    });
+  }
+  if (tecCollegate.length) {
+    h += '<div style="background:rgba(0,180,255,0.06);border-left:2px solid var(--el-blue);border-radius:0 10px 10px 0;padding:10px;margin-bottom:12px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:6px">\u26A1 TECNICHE CORRELATE</div>';
+    tecCollegate.slice(0,3).forEach(function(item) {
+      h += '<div style="font-size:11px;color:rgba(0,180,255,0.8);padding:3px 0;border-bottom:1px solid rgba(0,180,255,0.08);cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupTecnicaAll(' + item.idx + ');},60)">\u2192 ' + labEsc(item.t.nome||'') + '</div>';
+    });
+    h += '</div>';
+  }
+  // Interconnessioni: Guide correlate per fase
+  var guideFase = [];
+  if (labGuideData && labGuideData.length && esp.categoria) {
+    var catEL = (esp.categoria||'').toLowerCase();
+    labGuideData.forEach(function(g, gi) {
+      if ((g.fase && g.fase.indexOf(catEL.substring(0,5)) !== -1) || (g.categoria && g.categoria.indexOf(catEL.substring(0,5)) !== -1)) {
+        guideFase.push({g:g, idx:gi});
+      }
+    });
+  }
+  if (guideFase.length) {
+    h += '<div style="background:rgba(155,109,255,0.06);border-radius:10px;padding:10px;margin-bottom:12px">';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--el-violet);margin-bottom:6px">\uD83D\uDCD6 GUIDE COLLEGATE</div>';
+    guideFase.slice(0,2).forEach(function(item) {
+      h += '<div style="font-size:11px;color:rgba(155,109,255,0.8);padding:3px 0;cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupGuida(' + item.idx + ');},60)">\u2192 ' + labEsc(item.g.titolo||'') + '</div>';
+    });
+    h += '</div>';
+  }
   labPopupOpen(h);
 }
 
@@ -765,45 +850,88 @@ function labRenderGuide() {
 function labPopupGuida(idx) {
   var g = labGuideData[idx];
   if (!g) return;
-  var catColor = (g.fase==='irrigazione'||g.categoria==='acqua') ? 'var(--el-blue)'
-    : (g.fase==='nutrizione'||g.categoria==='nutrizione') ? 'var(--green3)'
-    : (g.fase==='difesa_biologica'||g.categoria==='difesa') ? 'var(--red)'
-    : g.categoria==='luce' ? '#f0a500' : 'var(--el-violet)';
-  var faseLabel = (g.fase||g.categoria||'guida').replace('_',' ').toUpperCase();
-  var h = '<div style="font-size:10px;color:' + catColor + ';font-weight:700;letter-spacing:1px;margin-bottom:4px">' + faseLabel + '</div>';
-  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(g.titolo||'') + '</div>';
-  if (g.contenuto_completo) {
-    h += '<div style="font-size:13px;color:var(--text2);line-height:1.8;margin-bottom:14px;max-height:220px;overflow-y:auto;padding-right:4px">' + labEsc(g.contenuto_completo) + '</div>';
+  var FASE_COLOR = {
+    germinazione:'var(--green3)', vegetazione:'var(--green3)', fioritura:'#f0a500',
+    harvest:'#e05252', essiccazione:'var(--el-blue)', curing:'var(--el-violet)',
+    living_soil:'#7ec860', nutrizione:'var(--green3)', irrigazione:'var(--el-blue)',
+    difesa_biologica:'#e05252'
+  };
+  var catColor = FASE_COLOR[g.fase] || 'var(--el-violet)';
+  var faseLabel = (g.fase||g.categoria||'guida').replace(/_/g,' ').toUpperCase();
+  var h = '';
+  // Header
+  h += '<div style="font-size:10px;color:' + catColor + ';font-weight:700;letter-spacing:1px;margin-bottom:4px">' + faseLabel + '</div>';
+  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:4px;line-height:1.3">' + labEsc(g.titolo||'') + '</div>';
+  if (g.quando) h += '<div style="font-size:11px;color:var(--text3);margin-bottom:12px">\uD83D\uDDD3 ' + labEsc(g.quando) + '</div>';
+
+  // Contenuto completo scrollabile
+  if (g.contenuto_completo && g.contenuto_completo.length > 30 && g.contenuto_completo !== 'Guida in elaborazione.') {
+    h += '<div style="font-size:13px;color:var(--text2);line-height:1.9;margin-bottom:14px;max-height:200px;overflow-y:auto;padding:12px;background:rgba(255,255,255,0.03);border-radius:10px;padding-right:8px">' + labEsc(g.contenuto_completo) + '</div>';
   }
+
+  // Sezioni espandibili — Punti chiave
   if (g.punti_chiave && g.punti_chiave.length) {
-    h += '<div style="background:rgba(76,175,118,0.08);border-left:2px solid var(--green3);border-radius:0 10px 10px 0;padding:12px;margin-bottom:10px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:8px">PUNTI CHIAVE</div>';
-    g.punti_chiave.forEach(function(p) { h += '<div style="font-size:12px;color:var(--text2);padding:4px 0;border-bottom:1px solid rgba(76,175,118,0.1)">✓ ' + labEsc(p) + '</div>'; });
-    h += '</div>';
+    var pid = 'gpk_' + idx;
+    h += '<div style="border:1px solid rgba(76,175,118,0.2);border-radius:10px;margin-bottom:8px;overflow:hidden">';
+    h += '<div style="padding:10px 12px;background:rgba(76,175,118,0.06);cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="var el=document.getElementById(\'' + pid + '\');el.style.display=el.style.display===\'none\'?\'block\':\'none\'">';
+    h += '<span style="font-size:11px;font-weight:700;color:var(--green3)">\u2705 PUNTI CHIAVE (' + g.punti_chiave.length + ')</span>';
+    h += '<span style="color:var(--green3);font-size:14px">\u25BE</span></div>';
+    h += '<div id="' + pid + '" style="display:none;padding:10px 12px">';
+    g.punti_chiave.forEach(function(p) {
+      h += '<div style="font-size:12px;color:var(--text2);padding:5px 0;border-bottom:1px solid rgba(76,175,118,0.08)">\u2713 ' + labEsc(p) + '</div>';
+    });
+    h += '</div></div>';
   }
-  if (g.tecniche_pdf && g.tecniche_pdf.length) {
-    h += '<div style="background:rgba(0,180,255,0.06);border-radius:10px;padding:10px;margin-bottom:10px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:6px">⚡ TECNICHE PDF COLLEGATE</div>';
-    g.tecniche_pdf.forEach(function(t) { h += '<div style="font-size:11px;color:rgba(0,180,255,0.75);padding:3px 0;border-bottom:1px solid rgba(0,180,255,0.07)">• ' + labEsc(t) + '</div>'; });
-    h += '</div>';
-  }
-  if (g.esperimenti_pdf && g.esperimenti_pdf.length) {
-    h += '<div style="background:rgba(155,109,255,0.06);border-radius:10px;padding:10px;margin-bottom:10px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--el-violet);margin-bottom:6px">🎯 ESPERIMENTI COLLEGATI</div>';
-    g.esperimenti_pdf.forEach(function(e) { h += '<div style="font-size:11px;color:rgba(155,109,255,0.75);padding:3px 0;border-bottom:1px solid rgba(155,109,255,0.07)">• ' + labEsc(e) + '</div>'; });
-    h += '</div>';
-  }
-  if (g.quando) {
-    h += '<div style="background:rgba(0,180,255,0.05);border-radius:10px;padding:10px;margin-bottom:10px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:5px">🗓 QUANDO APPLICARE</div>';
-    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(g.quando) + '</div></div>';
-  }
+
+  // Sezione errori comuni
   if (g.errori_comuni && g.errori_comuni.length) {
-    h += '<div style="background:rgba(224,82,82,0.07);border-left:2px solid var(--red);border-radius:0 10px 10px 0;padding:10px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--red);margin-bottom:8px">ERRORI COMUNI</div>';
-    g.errori_comuni.forEach(function(err) { h += '<div style="font-size:12px;color:var(--text2);padding:4px 0;border-bottom:1px solid rgba(224,82,82,0.1)">✗ ' + labEsc(err) + '</div>'; });
-    h += '</div>';
+    var eid = 'gec_' + idx;
+    h += '<div style="border:1px solid rgba(224,82,82,0.2);border-radius:10px;margin-bottom:8px;overflow:hidden">';
+    h += '<div style="padding:10px 12px;background:rgba(224,82,82,0.06);cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="var el=document.getElementById(\'' + eid + '\');el.style.display=el.style.display===\'none\'?\'block\':\'none\'">';
+    h += '<span style="font-size:11px;font-weight:700;color:#e05252">\u26A0 ERRORI COMUNI (' + g.errori_comuni.length + ')</span>';
+    h += '<span style="color:#e05252;font-size:14px">\u25BE</span></div>';
+    h += '<div id="' + eid + '" style="display:none;padding:10px 12px">';
+    g.errori_comuni.forEach(function(err) {
+      h += '<div style="font-size:12px;color:var(--text2);padding:5px 0;border-bottom:1px solid rgba(224,82,82,0.08)">\u2717 ' + labEsc(err) + '</div>';
+    });
+    h += '</div></div>';
   }
+
+  // Sezione tecniche PDF collegate (cliccabili)
+  if (g.tecniche_pdf && g.tecniche_pdf.length) {
+    var tid2 = 'gtp_' + idx;
+    h += '<div style="border:1px solid rgba(0,180,255,0.2);border-radius:10px;margin-bottom:8px;overflow:hidden">';
+    h += '<div style="padding:10px 12px;background:rgba(0,180,255,0.05);cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="var el=document.getElementById(\'' + tid2 + '\');el.style.display=el.style.display===\'none\'?\'block\':\'none\'">';
+    h += '<span style="font-size:11px;font-weight:700;color:var(--el-blue)">\u26A1 TECNICHE PDF (' + g.tecniche_pdf.length + ')</span>';
+    h += '<span style="color:var(--el-blue);font-size:14px">\u25BE</span></div>';
+    h += '<div id="' + tid2 + '" style="display:none;padding:10px 12px">';
+    var tutteTec2 = (typeof labBuildTecnicheComplete === 'function') ? labBuildTecnicheComplete() : [];
+    g.tecniche_pdf.forEach(function(tname) {
+      var matchIdx = -1;
+      tutteTec2.forEach(function(tec, ti) { if ((tec.nome||'').toLowerCase().indexOf(tname.toLowerCase().substring(0,8)) !== -1) matchIdx = ti; });
+      if (matchIdx >= 0) {
+        h += '<div style="font-size:11px;color:rgba(0,180,255,0.8);padding:4px 0;border-bottom:1px solid rgba(0,180,255,0.07);cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupTecnicaAll(' + matchIdx + ');},60)">\u2192 \uD83D\uDD17 ' + labEsc(tname) + '</div>';
+      } else {
+        h += '<div style="font-size:11px;color:rgba(0,180,255,0.6);padding:4px 0;border-bottom:1px solid rgba(0,180,255,0.07)">\u2022 ' + labEsc(tname) + '</div>';
+      }
+    });
+    h += '</div></div>';
+  }
+
+  // Sezione esperimenti PDF collegati (cliccabili)
+  if (g.esperimenti_pdf && g.esperimenti_pdf.length) {
+    var eid2 = 'gep_' + idx;
+    h += '<div style="border:1px solid rgba(155,109,255,0.2);border-radius:10px;margin-bottom:8px;overflow:hidden">';
+    h += '<div style="padding:10px 12px;background:rgba(155,109,255,0.05);cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="var el=document.getElementById(\'' + eid2 + '\');el.style.display=el.style.display===\'none\'?\'block\':\'none\'">';
+    h += '<span style="font-size:11px;font-weight:700;color:var(--el-violet)">\uD83E\uDDEA ESPERIMENTI (' + g.esperimenti_pdf.length + ')</span>';
+    h += '<span style="color:var(--el-violet);font-size:14px">\u25BE</span></div>';
+    h += '<div id="' + eid2 + '" style="display:none;padding:10px 12px">';
+    g.esperimenti_pdf.forEach(function(ename) {
+      h += '<div style="font-size:11px;color:rgba(155,109,255,0.8);padding:4px 0;border-bottom:1px solid rgba(155,109,255,0.07)">\u2022 ' + labEsc(ename) + '</div>';
+    });
+    h += '</div></div>';
+  }
+
   labPopupOpen(h);
 }
 
@@ -1506,4 +1634,3 @@ function labSbCosine(a, b) {
   var denom = Math.sqrt(normA) * Math.sqrt(normB);
   return denom === 0 ? 0 : dot / denom;
 }
-
