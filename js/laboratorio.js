@@ -246,421 +246,371 @@ function labPopupAllDigest() {
 
 
 /* ── HELPER CATEGORIE ── */
+
+/* ══════════════════════════════════════════════════════════════
+   PRATICHE — sezione unificata (ex Tecniche + Esperimenti)
+══════════════════════════════════════════════════════════════ */
+
 function labCatColor(cat) {
-  if (cat === 'cosmica')     return 'var(--el-violet)';
-  if (cat === 'galvanica')   return '#f0a500';
-  if (cat === 'magnetica')   return 'var(--el-blue)';
-  if (cat === 'elettrica')   return 'var(--el-cyan)';
-  if (cat === 'biodinamica') return 'var(--green3)';
-  if (cat === 'agronomica')  return '#7ec860';
-  if (cat === 'vibrazionale')return '#e040fb';
-  if (cat === 'tecnologica') return '#29b6f6';
-  if (cat === 'olistica')    return 'rgba(155,109,255,0.6)';
+  var c = (cat||'').toLowerCase();
+  if (c==='elettrocultura'||c==='elettrica') return 'var(--el-blue)';
+  if (c==='magnetica') return '#00cfff';
+  if (c==='biodinamica'||c==='olistica') return 'var(--el-violet)';
+  if (c==='nutrizione'||c==='living_soil') return 'var(--green3)';
+  if (c==='irrigazione') return '#00b4ff';
+  if (c==='difesa'||c==='difesa_biologica') return '#e05252';
+  if (c==='harvest'||c==='raccolta') return '#f0a500';
   return 'var(--el-cyan)';
 }
 
-function labBuildTecnicheComplete() {
-  // I concetti sono gia' canonici e deduplicati da N8N (concetti_index.json)
-  // labElTecniche e' gia' popolato da labLoadAll — restituiamo direttamente
-  if (labElTecniche.length) return labElTecniche.slice();
+// Costruisce lista pratiche unificata ordinata per rilevanza contestuale
+function labBuildPratiche() {
+  var oggi = new Date();
+  var ora = oggi.getHours();
+  var pratiche = [];
 
-  // Fallback: se concetti_index non ancora disponibile, estrai dai PDF
-  var analisi = (labPdfData && labPdfData.analisi) ? labPdfData.analisi : [];
-  var NON_TEC = ['nessuna tecnica','nessuna connessione','possibile ispirazione','nessuna'];
-  var seen = {};
-  var fallback = [];
-  analisi.forEach(function(a) {
-    (a.tecniche_chiave||[]).forEach(function(t) {
-      var n = (t||'').toLowerCase().trim();
-      if (NON_TEC.some(function(x){ return n.indexOf(x)!==-1; })) return;
-      if (seen[n]) return;
-      seen[n] = true;
-      fallback.push({
-        id: 'raw_' + n.replace(/[^a-z0-9]+/g,'-').substring(0,30),
-        nome: t.trim(),
-        categoria: 'generale',
-        descrizione: 'Estratto da PDF (clustering in corso).',
-        occorrenze: 1,
-        daBase: false
+  // 1. Esperimenti attivi (priorità massima)
+  if (labEspData) {
+    var attivi = labEspData.esperimenti_attivi || labEspData.attivi || [];
+    attivi.forEach(function(e, i) {
+      pratiche.push({
+        id: 'esp_att_' + i,
+        nome: e.nome || '',
+        categoria: e.categoria || 'tecnica di coltivazione',
+        descrizione: e.obiettivo || e.descrizione || '',
+        badge: 'ATTIVA',
+        badgeColor: 'var(--green3)',
+        rilevanza: 95,
+        tipo: 'esp_attivo',
+        data: e,
+        idx: i
       });
     });
+  }
+
+  // 2. Tecniche da concetti_index (con rilevanza + contesto fase piante)
+  var fasePiante = labGetFaseAttuale();
+  labElTecniche.forEach(function(t, i) {
+    var ril = t.rilevanza || 5;
+    // Boost se la tecnica è rilevante per la fase attuale
+    if (t.fasi_guida && t.fasi_guida.some(function(f){ return f===fasePiante; })) ril += 3;
+    pratiche.push({
+      id: 'tec_' + i,
+      nome: t.nome || t.label || '',
+      categoria: t.categoria || 'elettrocultura',
+      descrizione: t.descrizione || t.desc || '',
+      badge: (t.pdf_count||t.occorrenze||0) > 0 ? (t.pdf_count||t.occorrenze) + ' PDF' : null,
+      badgeColor: 'var(--el-violet)',
+      rilevanza: ril,
+      tipo: 'tecnica',
+      data: t,
+      idx: i
+    });
   });
-  fallback.sort(function(a,b){ return b.occorrenze - a.occorrenze; });
-  return fallback;
+
+  // 3. Esperimenti proposti (ordinati per rilevanza)
+  if (labEspData) {
+    var proposte = labEspData.proposte || labEspData.esperimenti_disponibili || [];
+    proposte.slice(0, 8).forEach(function(e, i) {
+      pratiche.push({
+        id: 'esp_prop_' + i,
+        nome: e.nome || '',
+        categoria: e.categoria || 'tecnica di coltivazione',
+        descrizione: e.obiettivo || e.descrizione || '',
+        badge: 'SUGGERITA',
+        badgeColor: 'rgba(0,180,255,0.5)',
+        rilevanza: 40,
+        tipo: 'esp_proposta',
+        data: e,
+        idx: i
+      });
+    });
+  }
+
+  // Ordina per rilevanza decrescente
+  pratiche.sort(function(a,b){ return b.rilevanza - a.rilevanza; });
+  return pratiche;
 }
 
-function labRenderTecniche() {
+// Determina fase attuale piante (semplificata)
+function labGetFaseAttuale() {
+  if (!labBrainData) return 'vegetazione';
+  try {
+    var agenti = labBrainData.agenti || labBrainData.cervello || {};
+    var stato = (agenti.piante && agenti.piante.stato_generale) || '';
+    if (/fior/i.test(stato)) return 'fioritura';
+    if (/harvest|raccolt/i.test(stato)) return 'harvest';
+    if (/veg/i.test(stato)) return 'vegetazione';
+  } catch(e) {}
+  return 'vegetazione';
+}
+
+// Render mini card pratiche nella pagina principale
+function labRenderPratiche() {
   var el = document.getElementById('lab-tec-lista');
   if (!el) return;
-  var tutte = labBuildTecnicheComplete();
-  if (!tutte.length) {
-    el.innerHTML = '<div style="color:rgba(0,180,255,0.35);font-size:12px;padding:6px">Nessuna tecnica disponibile.</div>';
+  var pratiche = labBuildPratiche();
+  if (!pratiche.length) {
+    el.innerHTML = '<div style="color:rgba(0,180,255,0.35);font-size:12px;padding:6px">Nessuna pratica disponibile.</div>';
     return;
   }
-  var elGlobale = {};
-  try { elGlobale = JSON.parse(localStorage.getItem('el_globale') || '{}'); } catch(e) {}
-  var h = '<div class="lab-tec-mini">';
-  tutte.slice(0, 4).forEach(function(t, idx) {
-    var tid = t.id || t.nome || idx;
-    var attiva = elGlobale[tid] || false;
-    var pdfBadge = (t.daBase === false) ? '<span style="font-size:9px;background:rgba(155,109,255,0.18);color:#9b6dff;border-radius:3px;padding:1px 4px;margin-left:4px">PDF</span>' : '';
-    h += '<div class="lab-tec-mini-item" onclick="labPopupTecnicaAll(' + idx + ')">';
+  var fase = labGetFaseAttuale();
+  var h = '<div style="font-size:9px;color:var(--text3);margin-bottom:8px;letter-spacing:0.5px">FASE ATTUALE: <span style="color:var(--green3)">' + fase.toUpperCase() + '</span></div>';
+  pratiche.slice(0, 5).forEach(function(p, i) {
+    var catColor = labCatColor(p.categoria);
+    var isAttiva = p.tipo === 'esp_attivo';
+    h += '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-left:2px solid ' + catColor + ';border-radius:0 10px 10px 0;padding:10px 12px;margin-bottom:7px;cursor:pointer;transition:background 0.2s" onclick="labPopupPratica(\'' + p.id + '\')">';
+    h += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">';
     h += '<div style="flex:1">';
-    h += '<div class="lab-tec-mini-name">' + labEsc(t.nome || tid) + pdfBadge + '</div>';
-    if (t.categoria) h += '<div class="lab-tec-mini-cat">' + labEsc(t.categoria) + '</div>';
+    h += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:3px">' + labEsc(p.nome) + '</div>';
+    if (p.descrizione) h += '<div style="font-size:11px;color:var(--text3);line-height:1.5">' + labEsc(p.descrizione.substring(0,70)) + (p.descrizione.length>70?'\u2026':'') + '</div>';
     h += '</div>';
-    h += '<div onclick="event.stopPropagation()" style="margin-left:10px">';
-    h += '<label class="toggle-sw"><input type="checkbox" ' + (attiva ? 'checked' : '') + ' onchange="labToggleTec(\'' + String(tid).replace(/'/g,'') + '\',this.checked)"><span class="toggle-slider"></span></label>';
+    h += '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0">';
+    if (isAttiva) h += '<span style="font-size:9px;background:rgba(76,175,118,0.2);color:var(--green3);border-radius:4px;padding:2px 6px;font-weight:700">\u2705 ATTIVA</span>';
+    if (p.badge && !isAttiva) h += '<span style="font-size:9px;background:rgba(155,109,255,0.15);color:var(--el-violet);border-radius:4px;padding:2px 6px">' + labEsc(p.badge) + '</span>';
+    h += '<span style="font-size:9px;color:' + catColor + ';opacity:0.8">' + labEsc(p.categoria) + '</span>';
+    h += '</div></div></div>';
+  });
+  var tot = pratiche.length;
+  if (tot > 5) h += '<div style="text-align:center;font-size:11px;color:var(--el-blue);padding:6px 0;cursor:pointer;opacity:0.8" onclick="labPopupAllPratiche()">▼ vedi tutte (' + tot + ')</div>';
+  el.innerHTML = h;
+
+  // Nascondi la vecchia card esperimenti
+  var espEl = document.getElementById('lab-esp-attivi');
+  if (espEl) {
+    var card = espEl.closest('.lab-tech-card');
+    if (card) card.style.display = 'none';
+  }
+}
+
+// Rende labRenderEsperimenti un alias di labRenderPratiche
+function labRenderEsperimenti() { labRenderPratiche(); }
+function labRenderEspAttiviMini() { labRenderPratiche(); }
+
+// Popup singola pratica — ricco e contestuale
+function labPopupPratica(pid) {
+  var pratiche = labBuildPratiche();
+  var p = pratiche.find(function(x){ return x.id === pid; });
+  if (!p) return;
+  var d = p.data;
+  var catColor = labCatColor(p.categoria);
+  var h = '';
+
+  // Header con tipo e categoria
+  h += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">';
+  h += '<div>';
+  h += '<div style="font-size:9px;color:' + catColor + ';font-weight:700;letter-spacing:1px;margin-bottom:4px">' + labEsc(p.categoria.toUpperCase()) + '</div>';
+  h += '<div style="font-size:19px;font-weight:700;color:var(--text);line-height:1.3">' + labEsc(p.nome) + '</div>';
+  h += '</div>';
+  if (p.tipo === 'esp_attivo') {
+    h += '<span style="font-size:10px;background:rgba(76,175,118,0.15);color:var(--green3);border-radius:8px;padding:4px 10px;font-weight:700;flex-shrink:0">\u2705 ATTIVA</span>';
+  } else if (p.tipo === 'tecnica' && p.badge) {
+    h += '<span style="font-size:10px;background:rgba(155,109,255,0.12);color:var(--el-violet);border-radius:8px;padding:4px 10px;flex-shrink:0">\uD83D\uDCC4 ' + labEsc(p.badge) + '</span>';
+  }
+  h += '</div>';
+
+  // Toggle attiva/disattiva
+  if (p.tipo === 'esp_attivo') {
+    h += '<button onclick="labEspDisattiva(' + p.idx + ');labPopupClose()" style="width:100%;padding:8px;margin-bottom:14px;background:rgba(224,82,82,0.1);border:1px solid rgba(224,82,82,0.3);border-radius:10px;color:#e05252;font-size:12px;font-weight:700;cursor:pointer">\u23F9 Disattiva questa pratica</button>';
+  } else if (p.tipo === 'esp_proposta') {
+    h += '<button onclick="labEspAttiva(' + p.idx + ');labPopupClose()" style="width:100%;padding:8px;margin-bottom:14px;background:rgba(76,175,118,0.12);border:1px solid rgba(76,175,118,0.3);border-radius:10px;color:var(--green3);font-size:12px;font-weight:700;cursor:pointer">\u25B6 Attiva questa pratica</button>';
+  }
+
+  // Sezione descrizione
+  var desc = d.descrizione || d.desc || '';
+  if (desc) {
+    h += '<div style="font-size:13px;color:var(--text2);line-height:1.9;margin-bottom:14px;padding:12px;background:rgba(255,255,255,0.03);border-radius:10px">' + labEsc(desc) + '</div>';
+  }
+
+  // Funzione / obiettivo (esp)
+  if (d.funzione) {
+    h += '<div style="background:rgba(0,180,255,0.06);border-radius:10px;padding:10px 12px;margin-bottom:10px">';
+    h += '<div style="font-size:9px;font-weight:700;color:var(--el-blue);margin-bottom:5px;letter-spacing:0.5px">\u26A1 FUNZIONE</div>';
+    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(d.funzione) + '</div>';
     h += '</div>';
+  }
+
+  // Obiettivo
+  if (d.obiettivo && d.obiettivo !== desc) {
+    h += '<div style="background:rgba(76,175,118,0.07);border-radius:10px;padding:10px 12px;margin-bottom:10px">';
+    h += '<div style="font-size:9px;font-weight:700;color:var(--green3);margin-bottom:5px">\uD83C\uDFAF OBIETTIVO</div>';
+    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(d.obiettivo) + '</div>';
+    h += '</div>';
+  }
+
+  // Istruzioni passo-passo
+  var istr = d.istruzioni_pratiche || d.istruzioni || (d.come_applicare ? [d.come_applicare] : []);
+  if (istr.length) {
+    h += '<div style="margin-bottom:14px">';
+    h += '<div style="font-size:9px;font-weight:700;color:var(--el-blue);margin-bottom:10px;letter-spacing:0.5px">\uD83D\uDEE0 COME FARE — PASSO PER PASSO</div>';
+    istr.forEach(function(step, i) {
+      h += '<div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">';
+      h += '<div style="min-width:26px;height:26px;background:' + catColor + ';border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#000;flex-shrink:0">' + (i+1) + '</div>';
+      h += '<div style="font-size:12px;color:var(--text2);line-height:1.7;padding-top:4px">' + labEsc(step) + '</div>';
+      h += '</div>';
+    });
+    h += '</div>';
+  }
+
+  // Materiali
+  var mat = d.materiali || [];
+  if (mat.length) {
+    h += '<div style="background:rgba(0,180,255,0.05);border:1px solid rgba(0,180,255,0.1);border-radius:10px;padding:12px;margin-bottom:12px">';
+    h += '<div style="font-size:9px;font-weight:700;color:var(--el-blue);margin-bottom:8px">\uD83D\uDEE0 MATERIALI NECESSARI</div>';
+    mat.forEach(function(m) {
+      h += '<div style="font-size:12px;color:var(--text2);padding:4px 0;border-bottom:1px solid rgba(0,180,255,0.06)">\u2022 ' + labEsc(m) + '</div>';
+    });
+    h += '</div>';
+  }
+
+  // Varianti (tecniche)
+  var varianti = d.varianti || [];
+  if (varianti.length) {
+    h += '<div style="background:rgba(155,109,255,0.05);border-radius:10px;padding:10px;margin-bottom:12px">';
+    h += '<div style="font-size:9px;font-weight:700;color:var(--el-violet);margin-bottom:6px">\uD83D\uDD00 VARIANTI</div>';
+    varianti.forEach(function(v) { h += '<div style="font-size:11px;color:rgba(155,109,255,0.8);padding:2px 0">\u2022 ' + labEsc(v) + '</div>'; });
+    h += '</div>';
+  }
+
+  // Fasi applicabili
+  var fasi = d.fasi_guida || [];
+  if (fasi.length) {
+    var faseCurr = labGetFaseAttuale();
+    var isRilevante = fasi.indexOf(faseCurr) !== -1;
+    h += '<div style="font-size:10px;color:var(--text3);margin-bottom:12px">';
+    if (isRilevante) h += '<span style="color:var(--green3);font-weight:700">\u2605 Ideale per la fase attuale!</span> ';
+    h += 'Fasi: <span style="color:' + catColor + '">' + fasi.join(' \u00B7 ') + '</span></div>';
+  }
+
+  // Pratiche correlate (da stessa categoria)
+  var correlate = labBuildPratiche().filter(function(x){
+    return x.id !== pid && (x.categoria === p.categoria || (x.tipo !== p.tipo && x.nome.toLowerCase().split(' ').some(function(w){ return w.length>4 && p.nome.toLowerCase().indexOf(w)!==-1; })));
+  }).slice(0,3);
+  if (correlate.length) {
+    h += '<div style="background:rgba(0,180,255,0.05);border-left:2px solid var(--el-blue);border-radius:0 10px 10px 0;padding:10px;margin-bottom:12px">';
+    h += '<div style="font-size:9px;font-weight:700;color:var(--el-blue);margin-bottom:6px">\uD83D\uDD17 PRATICHE CORRELATE</div>';
+    correlate.forEach(function(c) {
+      h += '<div style="font-size:11px;color:rgba(0,180,255,0.8);padding:4px 0;border-bottom:1px solid rgba(0,180,255,0.07);cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupPratica(\'' + c.id + '\');},60)">\u2192 ' + labEsc(c.nome) + '</div>';
+    });
+    h += '</div>';
+  }
+
+  // Guide correlate
+  if (labGuideData && labGuideData.length) {
+    var nomeP = (p.nome||'').toLowerCase();
+    var catP = (p.categoria||'').toLowerCase();
+    var guideCorr = [];
+    labGuideData.forEach(function(g, gi) {
+      var match = (g.fase && (g.fase.indexOf(catP.substring(0,5))!==-1 || catP.indexOf(g.fase.substring(0,5))!==-1))
+        || (g.tecniche_pdf||[]).some(function(t){ return t.toLowerCase().indexOf(nomeP.substring(0,6))!==-1; });
+      if (match) guideCorr.push({g:g,idx:gi});
+    });
+    if (guideCorr.length) {
+      h += '<div style="background:rgba(155,109,255,0.05);border-radius:10px;padding:10px;margin-bottom:12px">';
+      h += '<div style="font-size:9px;font-weight:700;color:var(--el-violet);margin-bottom:6px">\uD83D\uDCD6 GUIDE COLLEGATE</div>';
+      guideCorr.slice(0,2).forEach(function(item) {
+        h += '<div style="font-size:11px;color:rgba(155,109,255,0.8);padding:4px 0;cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupGuida(' + item.idx + ');},60)">\u2192 ' + labEsc(item.g.titolo||'') + '</div>';
+      });
+      h += '</div>';
+    }
+  }
+
+  // Note (esp)
+  if (d.note) {
+    h += '<div style="background:rgba(240,165,0,0.06);border-radius:8px;padding:8px 10px;margin-bottom:10px">';
+    h += '<div style="font-size:9px;font-weight:700;color:#f0a500;margin-bottom:3px">NOTE</div>';
+    h += '<div style="font-size:11px;color:var(--text2)">' + labEsc(d.note) + '</div>';
+    h += '</div>';
+  }
+
+  // Meta
+  var meta = [];
+  if (d.fonte) meta.push('Fonte: ' + d.fonte);
+  if (d.data_attivazione) meta.push('Attiva dal: ' + d.data_attivazione.substring(0,10));
+  if (d.ultima_modifica) meta.push('Aggiornata: ' + d.ultima_modifica);
+  if (meta.length) h += '<div style="font-size:9px;color:var(--text3);margin-top:6px">' + meta.join(' \u00B7 ') + '</div>';
+
+  labPopupOpen(h);
+}
+
+// Popup tutte le pratiche — lista intelligente completa
+function labPopupAllPratiche() {
+  var pratiche = labBuildPratiche();
+  var fase = labGetFaseAttuale();
+  var h = '<div style="font-size:9px;color:var(--el-blue);font-weight:700;letter-spacing:1px;margin-bottom:4px">\u26A1 PRATICHE (' + pratiche.length + ')</div>';
+  h += '<div style="font-size:9px;color:var(--text3);margin-bottom:12px">Ordinate per rilevanza \u00B7 Fase attuale: <span style="color:var(--green3)">' + fase + '</span></div>';
+
+  // Filtri rapidi
+  h += '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px" id="pratiche-filtri">';
+  h += '<button onclick="labFiltriPratiche(\'tutti\',this)" style="font-size:10px;padding:4px 10px;border-radius:20px;border:1px solid var(--el-blue);color:var(--el-blue);background:rgba(0,180,255,0.1);cursor:pointer">Tutte</button>';
+  h += '<button onclick="labFiltriPratiche(\'attive\',this)" style="font-size:10px;padding:4px 10px;border-radius:20px;border:1px solid var(--green3);color:var(--green3);background:transparent;cursor:pointer">\u2705 Attive</button>';
+  h += '<button onclick="labFiltriPratiche(\'tecniche\',this)" style="font-size:10px;padding:4px 10px;border-radius:20px;border:1px solid var(--el-violet);color:var(--el-violet);background:transparent;cursor:pointer">\uD83D\uDCC4 Tecniche</button>';
+  h += '<button onclick="labFiltriPratiche(\'suggerite\',this)" style="font-size:10px;padding:4px 10px;border-radius:20px;border:1px solid var(--text3);color:var(--text3);background:transparent;cursor:pointer">\uD83D\uDCA1 Suggerite</button>';
+  h += '</div>';
+
+  h += '<div id="pratiche-lista">';
+  pratiche.forEach(function(p) {
+    var catColor = labCatColor(p.categoria);
+    var isAttiva = p.tipo === 'esp_attivo';
+    h += '<div class="prat-item" data-tipo="' + p.tipo + '" style="border-left:2px solid ' + catColor + ';border-radius:0 10px 10px 0;padding:10px 12px;margin-bottom:8px;cursor:pointer;background:rgba(255,255,255,0.02)" onclick="labPopupClose();setTimeout(function(){labPopupPratica(\'' + p.id + '\');},60)">';
+    h += '<div style="display:flex;justify-content:space-between;align-items:center">';
+    h += '<div><div style="font-size:13px;font-weight:700;color:var(--text)">' + labEsc(p.nome) + '</div>';
+    h += '<div style="font-size:10px;color:' + catColor + ';margin-top:2px">' + labEsc(p.categoria) + '</div></div>';
+    if (isAttiva) h += '<span style="font-size:9px;color:var(--green3);font-weight:700">\u2705</span>';
+    else if (p.badge) h += '<span style="font-size:9px;color:var(--text3)">' + labEsc(p.badge) + '</span>';
+    h += '</div>';
+    if (p.descrizione) h += '<div style="font-size:11px;color:var(--text3);margin-top:4px;line-height:1.4">' + labEsc(p.descrizione.substring(0,80)) + '\u2026</div>';
     h += '</div>';
   });
   h += '</div>';
-  h += '<div class="lab-tec-vedi-tutti" onclick="labPopupAllTecniche()">▼ vedi tutte (' + tutte.length + ')</div>';
-  el.innerHTML = h;
+
+  labPopupOpen(h);
 }
 
+// Filtro pratiche nel popup
+function labFiltriPratiche(tipo, btn) {
+  var items = document.querySelectorAll('.prat-item');
+  items.forEach(function(el) {
+    var t = el.getAttribute('data-tipo');
+    var show = tipo === 'tutti' 
+      || (tipo === 'attive' && t === 'esp_attivo')
+      || (tipo === 'tecniche' && t === 'tecnica')
+      || (tipo === 'suggerite' && t === 'esp_proposta');
+    el.style.display = show ? 'block' : 'none';
+  });
+  // Reset stile bottoni
+  document.querySelectorAll('#pratiche-filtri button').forEach(function(b){ b.style.opacity='0.5'; });
+  if (btn) btn.style.opacity = '1';
+}
+
+// Alias funzioni legacy — NON rinominare
+function labPopupAllEsperimenti() { labPopupAllPratiche(); }
+function labPopupAllTecniche() { labPopupAllPratiche(); }
+function labPopupEsp(idx, tipo) {
+  var p = null;
+  var pratiche = labBuildPratiche();
+  if (tipo === 'attivo') p = pratiche.find(function(x){ return x.tipo==='esp_attivo' && x.idx===idx; });
+  else p = pratiche.find(function(x){ return x.tipo==='esp_proposta' && x.idx===idx; });
+  if (p) labPopupPratica(p.id);
+}
+function labPopupTecnicaAll(idx) {
+  var pratiche = labBuildPratiche();
+  var p = pratiche.filter(function(x){ return x.tipo==='tecnica'; })[idx];
+  if (p) labPopupPratica(p.id);
+}
+function labPopupTecnica(idx) { labPopupTecnicaAll(idx); }
 function labToggleTec(tid, val) {
   var elGlobale = {};
   try { elGlobale = JSON.parse(localStorage.getItem('el_globale') || '{}'); } catch(e) {}
   elGlobale[tid] = val;
   try { localStorage.setItem('el_globale', JSON.stringify(elGlobale)); } catch(e) {}
 }
-
-/* Popup singola tecnica */
-function labPopupTecnicaAll(idx) {
-  var lista = labBuildTecnicheComplete();
-  var t = lista[idx];
-  if (!t) return;
-  var catColor = labCatColor(t.categoria);
-  var h = '';
-  h += '<div style="font-size:10px;color:' + catColor + ';font-weight:700;letter-spacing:1px;margin-bottom:4px">\u26A1 ' + labEsc((t.categoria||'elettrocultura')).toUpperCase() + '</div>';
-  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:4px;line-height:1.3">' + labEsc(t.nome||'') + '</div>';
-  if (t.daBase === false || t.pdf_count) {
-    h += '<div style="font-size:10px;color:#9b6dff;margin-bottom:10px">\uD83D\uDCC4 Da ' + (t.pdf_count||t.occorrenze||1) + ' PDF analizzati</div>';
-  }
-  var descTesto = t.descrizione || t.desc || '';
-  if (descTesto) {
-    h += '<div style="font-size:13px;color:var(--text2);line-height:1.8;margin-bottom:14px;padding:10px;background:rgba(255,255,255,0.03);border-radius:10px">' + labEsc(descTesto) + '</div>';
-  }
-  var istr = t.istruzioni_pratiche || t.istruzioni || [];
-  if (istr.length) {
-    h += '<div style="margin-bottom:14px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:8px;letter-spacing:0.5px">\uD83D\uDEE0 COME FARE — PASSO PER PASSO</div>';
-    istr.forEach(function(step, i) {
-      h += '<div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">';
-      h += '<div style="min-width:24px;height:24px;background:' + catColor + ';border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#000;flex-shrink:0">' + (i+1) + '</div>';
-      h += '<div style="font-size:12px;color:var(--text2);line-height:1.7;padding-top:3px">' + labEsc(step) + '</div></div>';
-    });
-    h += '</div>';
-  }
-  var mat = t.materiali || [];
-  if (mat.length) {
-    h += '<div style="background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.12);border-radius:10px;padding:12px;margin-bottom:12px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:8px">\uD83D\uDEE0 MATERIALI NECESSARI</div>';
-    mat.forEach(function(m) { h += '<div style="font-size:12px;color:var(--text2);padding:3px 0;border-bottom:1px solid rgba(0,180,255,0.07)">\u2022 ' + labEsc(m) + '</div>'; });
-    h += '</div>';
-  }
-  var varianti = t.varianti || [];
-  if (varianti.length) {
-    h += '<div style="background:rgba(155,109,255,0.05);border-radius:10px;padding:10px;margin-bottom:12px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--el-violet);margin-bottom:6px">\uD83D\uDD00 VARIANTI E APPLICAZIONI</div>';
-    varianti.forEach(function(v) { h += '<div style="font-size:11px;color:rgba(155,109,255,0.8);padding:2px 0">\u2022 ' + labEsc(v) + '</div>'; });
-    h += '</div>';
-  }
-  var fasi = t.fasi_guida || [];
-  if (fasi.length) {
-    h += '<div style="font-size:10px;color:var(--text3);margin-bottom:12px">\uD83D\uDDD3 Applica in: <span style="color:var(--green3)">' + fasi.join(' \u00B7 ') + '</span></div>';
-  }
-  var espCollegati = [];
-  if (labEspData) {
-    var tuttiEsp = (labEspData.esperimenti_attivi||[]).concat(labEspData.proposte||[]).concat(labEspData.esperimenti_disponibili||[]);
-    var nomeT = (t.nome||'').toLowerCase();
-    var tagT = (t.tag_correlati||[]).map(function(x){return x.toLowerCase();});
-    tuttiEsp.forEach(function(e) {
-      var nomeE = (e.nome||'').toLowerCase();
-      var catE = (e.categoria||'').toLowerCase();
-      var match = nomeE.indexOf(nomeT.substring(0,6)) !== -1 || nomeT.indexOf(nomeE.substring(0,6)) !== -1
-        || tagT.some(function(tg){ return nomeE.indexOf(tg) !== -1 || catE.indexOf(tg) !== -1; });
-      if (match) espCollegati.push(e);
-    });
-  }
-  if (espCollegati.length) {
-    h += '<div style="background:rgba(76,175,118,0.07);border-left:2px solid var(--green3);border-radius:0 10px 10px 0;padding:10px;margin-bottom:12px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:6px">\uD83E\uDDEA ESPERIMENTI CORRELATI</div>';
-    espCollegati.slice(0,3).forEach(function(e) {
-      h += '<div style="font-size:11px;color:var(--text2);padding:3px 0;border-bottom:1px solid rgba(76,175,118,0.08)">\u2022 ' + labEsc(e.nome||'') + (e.obiettivo ? ' <em style=\\"color:var(--text3)\\">— ' + labEsc((e.obiettivo+'').substring(0,50)) + '</em>' : '') + '</div>';
-    });
-    h += '</div>';
-  }
-  var guideCollegate = [];
-  if (labGuideData && labGuideData.length) {
-    var nomeT2 = (t.nome||'').toLowerCase();
-    var cat2 = (t.categoria||'').toLowerCase();
-    labGuideData.forEach(function(g, gi) {
-      var tecPdf = (g.tecniche_pdf||[]).map(function(x){return x.toLowerCase();});
-      var match = tecPdf.some(function(tp){ return tp.indexOf(nomeT2.substring(0,6)) !== -1; })
-        || (g.fase && g.fase.indexOf(cat2.substring(0,5)) !== -1);
-      if (match) guideCollegate.push({g:g, idx:gi});
-    });
-  }
-  if (guideCollegate.length) {
-    h += '<div style="background:rgba(155,109,255,0.06);border-radius:10px;padding:10px;margin-bottom:12px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--el-violet);margin-bottom:6px">\uD83D\uDCD6 GUIDE CORRELATE</div>';
-    guideCollegate.slice(0,3).forEach(function(item) {
-      h += '<div style="font-size:11px;color:rgba(155,109,255,0.8);padding:3px 0;border-bottom:1px solid rgba(155,109,255,0.08);cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupGuida(' + item.idx + ');},60)">\u2192 ' + labEsc(item.g.titolo||'') + '</div>';
-    });
-    h += '</div>';
-  }
-  var tags = t.tag_correlati || [];
-  if (tags.length) {
-    h += '<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px">';
-    tags.slice(0,6).forEach(function(tg) { h += '<span style="font-size:9px;background:rgba(255,255,255,0.06);color:var(--text3);border-radius:6px;padding:2px 7px">' + labEsc(tg) + '</span>'; });
-    h += '</div>';
-  }
-  labPopupOpen(h);
+function labBuildTecnicheComplete() {
+  return labElTecniche;
 }
+function labRenderTecniche() { labRenderPratiche(); }
 
-function labPopupTecnica(idx) {
-  var t = labElTecniche[idx];
-  if (!t) return;
-  var catColor = t.categoria === 'cosmica' ? 'var(--el-violet)' : t.categoria === 'galvanica' ? '#f0a500' : t.categoria === 'magnetica' ? 'var(--el-blue)' : 'var(--el-cyan)';
-  var h = '<div style="font-size:10px;color:' + catColor + ';font-weight:700;letter-spacing:1px;margin-bottom:4px">\u26A1 ' + labEsc((t.categoria || 'elettrocultura')).toUpperCase() + '</div>';
-  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.3">' + labEsc(t.nome || '') + '</div>';
-  if (t.descrizione || t.desc) {
-    h += '<div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:14px">' + labEsc(t.descrizione || t.desc || '') + '</div>';
-  }
-  if (t.istruzioni && t.istruzioni.length) {
-    h += '<div style="font-size:11px;font-weight:700;color:var(--el-blue);margin-bottom:8px;letter-spacing:0.5px">ISTRUZIONI:</div>';
-    t.istruzioni.forEach(function(step, i) {
-      h += '<div style="display:flex;gap:10px;margin-bottom:8px;align-items:flex-start">';
-      h += '<div style="min-width:22px;height:22px;background:' + catColor + ';border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#000;flex-shrink:0">' + (i + 1) + '</div>';
-      h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(step) + '</div>';
-      h += '</div>';
-    });
-  }
-  if (t.materiali && t.materiali.length) {
-    h += '<div style="background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.15);border-radius:10px;padding:10px;margin-top:10px">';
-    h += '<div style="font-size:11px;font-weight:700;color:var(--el-blue);margin-bottom:6px">\uD83D\uDEE0 MATERIALI:</div>';
-    t.materiali.forEach(function(m) { h += '<div style="font-size:12px;color:var(--text2);padding:2px 0">\u2022 ' + labEsc(m) + '</div>'; });
-    h += '</div>';
-  }
-  if (t.difficolta) {
-    var diff = t.difficolta === 'facile' ? '\uD83D\uDFE2 Facile' : t.difficolta === 'media' ? '\uD83D\uDFE1 Media' : '\uD83D\uDD34 Difficile';
-    h += '<div style="margin-top:10px;font-size:12px;color:var(--text3)">Difficolt\u00E0: <strong>' + diff + '</strong></div>';
-  }
-  if (t.sperimentale) {
-    h += '<div style="margin-top:10px;background:rgba(155,109,255,0.1);border:1px solid rgba(155,109,255,0.3);border-radius:8px;padding:8px;font-size:11px;color:var(--el-violet)">\uD83D\uDD2C Tecnica sperimentale \u2014 documentare osservazioni.</div>';
-  }
-  labPopupOpen(h);
-}
 
-/* Popup tutte le tecniche */
-function labPopupAllTecniche() {
-  var tutte = labBuildTecnicheComplete();
-  if (!tutte.length) {
-    labPopupOpen('<div style="color:rgba(0,180,255,0.4);padding:20px;text-align:center">Nessuna tecnica disponibile.</div>');
-    return;
-  }
-  var elGlobale = {};
-  try { elGlobale = JSON.parse(localStorage.getItem('el_globale') || '{}'); } catch(e) {}
-  var baseN = tutte.filter(function(t){ return t.daBase !== false; }).length;
-  var pdfN  = tutte.length - baseN;
-  var catOrder = ['elettrica','magnetica','galvanica','cosmica','vibrazionale','biodinamica','agronomica','tecnologica','olistica'];
-  var catMap = {}; catOrder.forEach(function(c){ catMap[c]=[]; });
-  tutte.forEach(function(t, idx) {
-    var cat = t.categoria || 'elettrica';
-    if (!catMap[cat]) catMap[cat]=[];
-    catMap[cat].push({ t:t, idx:idx });
-  });
-  var h = '<div style="font-size:10px;color:var(--el-blue);font-weight:700;letter-spacing:1px;margin-bottom:2px">⚡ TECNICHE (' + tutte.length + ')</div>';
-  h += '<div style="font-size:11px;color:var(--text3);margin-bottom:14px">' + baseN + ' base · ' + pdfN + ' da PDF</div>';
-  catOrder.forEach(function(cat) {
-    var items = catMap[cat];
-    if (!items || !items.length) return;
-    var catColor = labCatColor(cat);
-    h += '<div style="font-size:10px;font-weight:700;color:' + catColor + ';letter-spacing:0.5px;margin:12px 0 6px;text-transform:uppercase">' + cat + '</div>';
-    items.forEach(function(item) {
-      var t=item.t; var idx=item.idx;
-      var tid = t.id||t.nome||idx;
-      var attiva = elGlobale[tid]||false;
-      var pdfBadge = (t.daBase===false) ? ' <span style="font-size:9px;background:rgba(155,109,255,0.18);color:#9b6dff;border-radius:3px;padding:1px 4px">PDF</span>' : '';
-      h += '<div style="background:rgba(0,180,255,0.04);border:1px solid rgba(0,180,255,0.12);border-left:2px solid ' + catColor + ';border-radius:0 10px 10px 0;padding:10px 12px;margin-bottom:6px">';
-      h += '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px">';
-      h += '<div style="flex:1;cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupTecnicaAll(' + idx + ');},50)">';
-      h += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:1px">' + labEsc(t.nome||tid) + pdfBadge + '</div>';
-      if (t.occorrenze) h += '<div style="font-size:10px;color:' + catColor + '">' + t.occorrenze + ' PDF</div>';
-      h += '</div>';
-      h += '<label class="toggle-sw" onclick="event.stopPropagation()"><input type="checkbox" ' + (attiva?'checked':'') + ' onchange="labToggleTec(\'' + String(tid).replace(/'/g,'') + '\',this.checked)"><span class="toggle-slider"></span></label>';
-      h += '</div></div>';
-    });
-  });
-  labPopupOpen(h);
-}
-
-/* ══════════════════════════════════════════════════════════════
-   RENDER — ESPERIMENTI (mini: solo attivi in campo)
-══════════════════════════════════════════════════════════════ */
-
-function labRenderEsperimenti() {
-  labRenderEspAttiviMini();
-  var na = labEspData ? labEspData.esperimenti_attivi.length : 0;
-  var np = labEspData ? labEspData.proposte.length : 0;
-  var badge = document.getElementById('lab-esp-badge');
-  if (badge) badge.textContent = na + ' attivi \u00B7 ' + np + ' proposte';
-}
-
-function labRenderEspAttiviMini() {
-  var el = document.getElementById('lab-esp-attivi');
-  if (!el) return;
-  var lista = labEspData ? labEspData.esperimenti_attivi : [];
-  if (!lista.length) {
-    el.innerHTML = '<div style="color:rgba(76,175,118,0.4);font-size:12px;padding:6px">Nessun esperimento attivo. Tocca “Gestisci›” per attivarne uno.</div>';
-    return;
-  }
-  var h = '';
-  lista.forEach(function(exp, idx) {
-    h += '<div class="lab-esp-mini-item" onclick="labPopupEsp(' + idx + ',\'attivo\')">',
-    h += '<div class="lab-esp-mini-name">✅ ' + labEsc(exp.nome||exp.id||'') + '</div>';
-    if (exp.obiettivo) h += '<div style="font-size:10px;color:rgba(76,175,118,0.6);margin-top:2px">' + labEsc(exp.obiettivo.substring(0,70)) + '</div>';
-    if (exp.categoria) h += '<div class="lab-esp-mini-badge">' + labEsc(exp.categoria) + '</div>';
-    h += '</div>';
-  });
-  el.innerHTML = h;
-}
-
-/* Popup gestione esperimenti (attivi + proposte) */
-function labPopupAllEsperimenti() {
-  if (!labEspData) {
-    labPopupOpen('<div style="color:rgba(76,175,118,0.4);padding:20px;text-align:center">Caricamento\u2026</div>');
-    return;
-  }
-  var na = labEspData.esperimenti_attivi.length;
-  var np = labEspData.proposte.length;
-  var h = '<div style="font-size:10px;color:var(--green3);font-weight:700;letter-spacing:1px;margin-bottom:14px">\uD83E\uDDEA ESPERIMENTI \u2014 ' + na + ' attivi \u00B7 ' + np + ' proposte</div>';
-  // Attivi
-  if (na) {
-    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:8px;letter-spacing:0.5px">\u2705 ATTIVI</div>';
-    labEspData.esperimenti_attivi.forEach(function(exp, idx) {
-      h += '<div style="background:rgba(76,175,118,0.06);border:1px solid rgba(76,175,118,0.2);border-radius:10px;padding:10px;margin-bottom:8px;display:flex;align-items:center;gap:10px">';
-      h += '<div style="flex:1;cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupEsp(' + idx + ',\'attivo\');},50)">';
-      h += '<div style="font-size:13px;font-weight:700;color:var(--text)">' + labEsc(exp.nome || '') + '</div>';
-      if (exp.obiettivo) h += '<div style="font-size:11px;color:var(--text3);margin-top:2px">' + labEsc((exp.obiettivo + '').substring(0, 80)) + '</div>';
-      h += '</div>';
-      h += '<button onclick="labEspDisattiva(' + idx + ');labPopupClose()" style="background:rgba(224,82,82,0.1);border:1px solid rgba(224,82,82,0.3);border-radius:8px;padding:5px 8px;color:#e05252;font-size:10px;cursor:pointer;flex-shrink:0">Off</button>';
-      h += '</div>';
-    });
-  }
-  // Proposte
-  if (np) {
-    h += '<div style="font-size:10px;font-weight:700;color:var(--text3);margin:12px 0 8px;letter-spacing:0.5px">\uD83D\uDCA1 PROPOSTE</div>';
-    labEspData.proposte.forEach(function(exp, idx) {
-      h += '<div style="background:rgba(0,0,0,0.2);border:1px solid var(--border);border-radius:10px;padding:10px;margin-bottom:8px;display:flex;align-items:center;gap:10px">';
-      h += '<div style="flex:1;cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupEsp(' + idx + ',\'proposta\');},50)">';
-      h += '<div style="font-size:13px;font-weight:700;color:var(--text)">' + labEsc(exp.nome || '') + '</div>';
-      if (exp.obiettivo || exp.descrizione) {
-        var testo = exp.obiettivo || exp.descrizione || '';
-        h += '<div style="font-size:11px;color:var(--text3);margin-top:2px">' + labEsc((testo + '').substring(0, 80)) + '</div>';
-      }
-      h += '</div>';
-      h += '<button onclick="labEspAttiva(' + idx + ');labPopupClose()" style="background:var(--green2);border:none;border-radius:8px;padding:6px 10px;color:var(--bg);font-size:11px;font-weight:700;cursor:pointer;flex-shrink:0">On</button>';
-      h += '</div>';
-    });
-  }
-  labPopupOpen(h);
-}
-
-/* Popup dettaglio singolo esperimento */
-function labPopupEsp(idx, tipo) {
-  var esp = tipo === 'attivo' ? (labEspData && labEspData.esperimenti_attivi[idx]) : (labEspData && labEspData.proposte[idx]);
-  if (!esp) return;
-  var tipoColor = tipo === 'attivo' ? 'var(--green3)' : 'rgba(0,180,255,0.6)';
-  var tipoLabel = tipo === 'attivo' ? '✅ ESPERIMENTO ATTIVO' : '💡 PROPOSTA';
-  var h = '<div style="font-size:10px;color:' + tipoColor + ';font-weight:700;margin-bottom:4px;letter-spacing:0.5px">' + tipoLabel + '</div>';
-  h += '<div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:10px;line-height:1.3">' + labEsc(esp.nome||'') + '</div>';
-  if (esp.descrizione) { h += '<div style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:12px">' + labEsc(esp.descrizione) + '</div>'; }
-  if (esp.funzione) {
-    h += '<div style="background:rgba(0,180,255,0.07);border-radius:10px;padding:10px;margin-bottom:10px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:4px">⚡ FUNZIONE</div>';
-    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(esp.funzione) + '</div></div>';
-  }
-  if (esp.obiettivo) {
-    h += '<div style="background:rgba(76,175,118,0.08);border-radius:10px;padding:10px;margin-bottom:10px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:4px">🎯 OBIETTIVO</div>';
-    h += '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + labEsc(esp.obiettivo) + '</div></div>';
-  }
-  if (esp.come_applicare) {
-    h += '<div style="background:rgba(155,109,255,0.06);border-radius:10px;padding:10px;margin-bottom:10px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--el-violet);margin-bottom:6px">🛠 COME APPLICARE</div>';
-    h += '<div style="font-size:12px;color:var(--text2);line-height:1.7">' + labEsc(esp.come_applicare) + '</div></div>';
-  }
-  if (esp.materiali && esp.materiali.length) {
-    h += '<div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:10px;margin-bottom:10px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:6px">🛠 MATERIALI</div>';
-    esp.materiali.forEach(function(m) { h += '<div style="font-size:12px;color:var(--text2);padding:2px 0">• ' + labEsc(m) + '</div>'; });
-    h += '</div>';
-  }
-  if (esp.applicato_a) {
-    var appStr = Array.isArray(esp.applicato_a) ? esp.applicato_a.join(', ') : esp.applicato_a;
-    h += '<div style="font-size:10px;font-weight:700;color:var(--green3);margin-bottom:5px">🌱 APPLICATO A</div>';
-    h += '<div style="font-size:12px;color:var(--text2);margin-bottom:10px">' + labEsc(appStr) + '</div>';
-  }
-  if (esp.note) {
-    h += '<div style="background:rgba(240,165,0,0.07);border-radius:8px;padding:8px 10px;margin-bottom:10px">';
-    h += '<div style="font-size:10px;font-weight:700;color:#f0a500;margin-bottom:3px">NOTE</div>';
-    h += '<div style="font-size:11px;color:var(--text2)">' + labEsc(esp.note) + '</div></div>';
-  }
-  var meta = [];
-  if (esp.categoria)        meta.push('Cat: ' + esp.categoria);
-  if (esp.difficolta)       meta.push('Diff: ' + esp.difficolta);
-  if (esp.durata_giorni)    meta.push(esp.durata_giorni + 'gg');
-  if (esp.fonte)            meta.push('Fonte: ' + esp.fonte);
-  if (esp.data_attivazione) meta.push('Dal: ' + esp.data_attivazione.substring(0,10));
-  if (meta.length) h += '<div style="font-size:10px;color:var(--text3);margin-top:6px">' + meta.join(' · ') + '</div>';
-  // Interconnessioni: Tecniche correlate
-  var tecCollegate = [];
-  if (typeof labBuildTecnicheComplete === 'function') {
-    var tutteTec = labBuildTecnicheComplete();
-    var nomeE = (esp.nome||'').toLowerCase();
-    var catE = (esp.categoria||'').toLowerCase();
-    tutteTec.forEach(function(t, ti) {
-      var nomeT = (t.nome||'').toLowerCase();
-      var catT = (t.categoria||'').toLowerCase();
-      if (nomeT.indexOf(nomeE.substring(0,6)) !== -1 || nomeE.indexOf(nomeT.substring(0,6)) !== -1
-        || (catE && catT.indexOf(catE.substring(0,5)) !== -1)) {
-        tecCollegate.push({t:t, idx:ti});
-      }
-    });
-  }
-  if (tecCollegate.length) {
-    h += '<div style="background:rgba(0,180,255,0.06);border-left:2px solid var(--el-blue);border-radius:0 10px 10px 0;padding:10px;margin-bottom:12px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--el-blue);margin-bottom:6px">\u26A1 TECNICHE CORRELATE</div>';
-    tecCollegate.slice(0,3).forEach(function(item) {
-      h += '<div style="font-size:11px;color:rgba(0,180,255,0.8);padding:3px 0;border-bottom:1px solid rgba(0,180,255,0.08);cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupTecnicaAll(' + item.idx + ');},60)">\u2192 ' + labEsc(item.t.nome||'') + '</div>';
-    });
-    h += '</div>';
-  }
-  // Interconnessioni: Guide correlate per fase
-  var guideFase = [];
-  if (labGuideData && labGuideData.length && esp.categoria) {
-    var catEL = (esp.categoria||'').toLowerCase();
-    labGuideData.forEach(function(g, gi) {
-      if ((g.fase && g.fase.indexOf(catEL.substring(0,5)) !== -1) || (g.categoria && g.categoria.indexOf(catEL.substring(0,5)) !== -1)) {
-        guideFase.push({g:g, idx:gi});
-      }
-    });
-  }
-  if (guideFase.length) {
-    h += '<div style="background:rgba(155,109,255,0.06);border-radius:10px;padding:10px;margin-bottom:12px">';
-    h += '<div style="font-size:10px;font-weight:700;color:var(--el-violet);margin-bottom:6px">\uD83D\uDCD6 GUIDE COLLEGATE</div>';
-    guideFase.slice(0,2).forEach(function(item) {
-      h += '<div style="font-size:11px;color:rgba(155,109,255,0.8);padding:3px 0;cursor:pointer" onclick="labPopupClose();setTimeout(function(){labPopupGuida(' + item.idx + ');},60)">\u2192 ' + labEsc(item.g.titolo||'') + '</div>';
-    });
-    h += '</div>';
-  }
-  labPopupOpen(h);
-}
-
-/* Attiva / Disattiva esperimento */
 async function labEspAttiva(idx) {
   var exp = labEspData && labEspData.proposte[idx];
   if (!exp) return;
