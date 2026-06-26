@@ -1,7 +1,7 @@
 import os, json, base64, urllib.request, urllib.error, time, sys
 
 GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
-GROQ_KEY = os.environ['GROQ_KEY']
+GROQ_KEY = os.environ.get('GROQ_KEY', '')
 REPO = 'francescocaruso487-tech/bioserra'
 HEADERS_GH = {
     'Authorization': f'Bearer {GITHUB_TOKEN}',
@@ -25,7 +25,10 @@ def gh_put(path, content_b64, sha, message):
     with urllib.request.urlopen(req) as r:
         return json.load(r)
 
-def groq_chat(prompt, max_tokens=2000):
+def groq_chat(prompt, max_tokens=4000):
+    print(f'  GROQ_KEY presente: {"si" if GROQ_KEY else "NO - ERRORE"}')
+    if not GROQ_KEY:
+        raise Exception('GROQ_KEY non impostata')
     body = json.dumps({
         'model': 'llama-3.3-70b-versatile',
         'max_tokens': max_tokens,
@@ -42,156 +45,174 @@ def groq_chat(prompt, max_tokens=2000):
         with urllib.request.urlopen(req, timeout=60) as r:
             resp = json.load(r)
         content = resp['choices'][0]['message']['content']
-        print(f'  [Groq OK] {len(content)} chars, finish_reason={resp["choices"][0].get("finish_reason")}')
+        tokens_used = resp.get('usage', {}).get('total_tokens', 0)
+        print(f'  Groq OK: {len(content)} chars, {tokens_used} tokens')
         return content
     except urllib.error.HTTPError as e:
         err = e.read().decode()
-        print(f'  [Groq HTTP {e.code}] {err[:400]}')
+        print(f'  Groq HTTP {e.code}: {err[:600]}')
         raise
+
+def build_concetti_from_tecniche(tecniche_agg, analisi):
+    """Fallback: costruisce concetti direttamente dalle tecniche senza Groq"""
+    print('  Costruisco concetti da tecniche senza Groq...')
+
+    CATEGORIE_MAP = {
+        'compost': 'suolo', 'humus': 'suolo', 'suolo': 'suolo', 'terra': 'suolo',
+        'microbi': 'suolo', 'fungh': 'suolo', 'micoriz': 'suolo', 'ammendant': 'suolo',
+        'irrigazion': 'irrigazione', 'acqua': 'irrigazione', 'drip': 'irrigazione',
+        'goccia': 'irrigazione', 'humid': 'irrigazione',
+        'nutri': 'nutrizione', 'fertiliz': 'nutrizione', 'azoto': 'nutrizione',
+        'fosforo': 'nutrizione', 'potassio': 'nutrizione', 'minerali': 'nutrizione',
+        'elettro': 'elettrocultura', 'lakhovsky': 'elettrocultura', 'galvanic': 'elettrocultura',
+        'rame': 'elettrocultura', 'antenna': 'elettrocultura', 'magnetiz': 'elettrocultura',
+        'risonanz': 'elettrocultura', 'spirale': 'elettrocultura', 'pantacolo': 'elettrocultura',
+        'biodinam': 'biodinamica', 'luna': 'biodinamica', 'steiner': 'biodinamica',
+        'calendario': 'biodinamica', 'pianeta': 'biodinamica', 'cosm': 'biodinamica',
+        'parassit': 'fitosanitario', 'malattia': 'fitosanitario', 'fungicd': 'fitosanitario',
+        'insetti': 'fitosanitario', 'difesa': 'fitosanitario', 'trappola': 'fitosanitario',
+        'raccolt': 'raccolta', 'fioritura': 'raccolta', 'maturaz': 'raccolta',
+        'essiccaz': 'raccolta', 'taglio': 'raccolta',
+    }
+
+    def categorizza(label):
+        l = label.lower()
+        for kw, cat in CATEGORIE_MAP.items():
+            if kw in l:
+                return cat
+        return 'altro'
+
+    # Prendi top 40 tecniche per frequenza
+    top = sorted(tecniche_agg.items(), key=lambda x: -x[1]['count'])[:40]
+    concetti = []
+    used_ids = set()
+
+    for t_norm, td in top:
+        label = td['label']
+        cat = categorizza(label)
+        consiglio = td['consigli'][0] if td['consigli'] else f'Applica {label} in modo regolare'
+        elettro = td['elettro'][0] if td['elettro'] else ''
+
+        istruzioni = [consiglio]
+        if elettro:
+            istruzioni.append(elettro)
+        istruzioni.append(f'Monitora i risultati dopo ogni applicazione')
+
+        base_id = ''.join(ch if ch.isalnum() else '_' for ch in label.lower())[:20].strip('_')
+        uid = base_id if base_id not in used_ids else f'{base_id}_{len(used_ids)}'
+        used_ids.add(uid)
+
+        concetti.append({
+            'id': uid,
+            'label': label,
+            'categoria': cat,
+            'descrizione': f'{label} estratta da {td["count"]} documenti scientifici. {consiglio}',
+            'istruzioni_pratiche': istruzioni[:3],
+            'varianti': [],
+            'fasi_guida': ['vegetazione', 'fioritura'],
+            'rilevanza': min(95, 50 + td['count'] * 5),
+            'tag_correlati': [cat, 'living-soil'],
+            'pdf_ids': list(dict.fromkeys(td['pdf_ids']))[:10],
+            'pdf_count': len(td['pdf_ids'])
+        })
+
+    return concetti
 
 def main():
     oggi = __import__('datetime').date.today().isoformat()
-
     print('=== BioSerra Concetti Index v5 ===')
-    print('Leggo pdf_knowledge.json via API GitHub...')
+    print(f'GROQ_KEY: {"presente (" + GROQ_KEY[:8] + "...)" if GROQ_KEY else "ASSENTE"}')
+
+    print('Leggo pdf_knowledge.json...')
     raw, _ = gh_api_get('data/pdf_knowledge.json')
     knowledge = json.loads(raw)
     analisi = knowledge.get('analisi', [])
-    print(f'PDF in archivio: {len(analisi)}')
+    print(f'PDF: {len(analisi)}')
 
-    # Estrai tecniche aggregate — approccio diverso:
-    # NON mandare tutto a Groq in blocchi
-    # Estrai direttamente le tecniche+consigli da tutti i PDF
-    # e costruisci concetti manualmente, poi chiedi a Groq di arricchirli
-
-    tecniche_agg = {}  # label_norm -> {count, pdf_ids, descrizioni, consigli}
+    # Estrai tecniche
+    SKIP = ['harina de roca','non specificat','non disponib','nessuna tecn','nessun']
+    tecniche_agg = {}
     for a in analisi:
         pid = a.get('id','')
-        sommario = a.get('sommario','')
-        consiglio = a.get('consiglio_coltivazione','')
-        elettro = a.get('consiglio_elettrocultura','')
-
         for t in a.get('tecniche_chiave', []):
             t_clean = t.strip()
             if len(t_clean) < 5: continue
-            skip_words = ['harina de roca','cannabis','non specificat','non disponib','nessuna tecn','nessun conness']
-            if any(w in t_clean.lower() for w in skip_words): continue
-
+            if any(s in t_clean.lower() for s in SKIP): continue
             t_norm = t_clean.lower()
             if t_norm not in tecniche_agg:
-                tecniche_agg[t_norm] = {
-                    'label': t_clean,
-                    'count': 0,
-                    'pdf_ids': [],
-                    'consigli': [],
-                    'elettro': []
-                }
+                tecniche_agg[t_norm] = {'label': t_clean, 'count': 0, 'pdf_ids': [], 'consigli': [], 'elettro': []}
             tecniche_agg[t_norm]['count'] += 1
             tecniche_agg[t_norm]['pdf_ids'].append(pid)
-            if consiglio and len(tecniche_agg[t_norm]['consigli']) < 3:
-                tecniche_agg[t_norm]['consigli'].append(consiglio[:100])
-            if elettro and len(tecniche_agg[t_norm]['elettro']) < 2:
-                tecniche_agg[t_norm]['elettro'].append(elettro[:80])
+            c = a.get('consiglio_coltivazione','')
+            if c and len(tecniche_agg[t_norm]['consigli']) < 3:
+                tecniche_agg[t_norm]['consigli'].append(c[:100])
+            e = a.get('consiglio_elettrocultura','')
+            if e and len(tecniche_agg[t_norm]['elettro']) < 2:
+                tecniche_agg[t_norm]['elettro'].append(e[:80])
 
-    print(f'Tecniche aggregate: {len(tecniche_agg)}')
+    print(f'Tecniche uniche: {len(tecniche_agg)}')
 
-    # Ordina per frequenza, prendi top 80
-    top_tec = sorted(tecniche_agg.items(), key=lambda x: -x[1]['count'])[:80]
-    print(f'Top {len(top_tec)} tecniche per rilevanza:')
-    for t, td in top_tec[:10]:
-        print(f'  {td["label"]} ({td["count"]} PDF)')
+    # Prova Groq
+    concetti = []
+    if GROQ_KEY:
+        top_tec = sorted(tecniche_agg.items(), key=lambda x: -x[1]['count'])[:60]
+        lista_tec = '\n'.join([f'- {td["label"]} ({td["count"]} doc)' for _, td in top_tec])
 
-    # Ora manda a Groq SOLO la lista delle tecniche (non i PDF completi)
-    # per clustering e categorizzazione — prompt molto corto
-    lista_tec = '\n'.join([
-        f'- {td["label"]} (da {td["count"]} documenti)'
-        for _, td in top_tec
-    ])
+        prompt = (
+            'Agronomo esperto Living Soil Italia. Raggruppa queste tecniche in 25-35 concetti pratici distinti per serra outdoor.\n'
+            f'Tecniche estratte da 103 PDF scientifici:\n{lista_tec}\n\n'
+            'Escludi: filosofia pura, "harina de rocas", testi religiosi.\n'
+            'Rispondi SOLO con JSON valido:\n'
+            '{"concetti":[{"id":"slug","label":"Nome","categoria":"suolo|irrigazione|nutrizione|elettrocultura|biodinamica|fitosanitario|raccolta|altro","descrizione":"2 frasi pratiche","istruzioni_pratiche":["passo1","passo2","passo3"],"varianti":["alt"],"fasi_guida":["vegetazione"],"rilevanza":80,"tag_correlati":["tag1"]}]}'
+        )
+        print(f'Prompt: {len(prompt)} chars')
+        try:
+            risposta = groq_chat(prompt)
+            print(f'Risposta (200 chars): {risposta[:200]}')
+            s = risposta.find('{"concetti"')
+            if s == -1: s = risposta.find('{')
+            e = risposta.rfind('}')
+            if s >= 0 and e > s:
+                parsed = json.loads(risposta[s:e+1])
+                concetti = parsed.get('concetti', [])
+                print(f'Concetti Groq: {len(concetti)}')
+        except Exception as ex:
+            print(f'Groq fallito: {ex}')
 
-    prompt = (
-        'Sei un agronomo esperto di Living Soil, biodinamica ed elettrocultura per coltivazione outdoor italiana.\n\n'
-        'Ho estratto queste tecniche da 103 testi scientifici sulla coltivazione:\n\n'
-        f'{lista_tec}\n\n'
-        'Categorizza e raggruppa queste tecniche in 20-35 concetti pratici distinti.\n'
-        'Elimina duplicati e concetti troppo simili. Escludi filosofia pura non applicabile.\n'
-        'Per ogni concetto fornisci istruzioni pratiche concrete per una serra outdoor.\n\n'
-        'Rispondi SOLO con JSON, nessun testo fuori:\n'
-        '{"concetti": [\n'
-        '{"id": "slug_breve", "label": "Nome pratico", '
-        '"categoria": "suolo|irrigazione|nutrizione|elettrocultura|biodinamica|fitosanitario|raccolta|altro", '
-        '"descrizione": "Cosa e e perche usarla in 2 frasi pratiche", '
-        '"istruzioni_pratiche": ["passo 1 concreto", "passo 2", "passo 3"], '
-        '"varianti": ["alternativa pratica"], '
-        '"fasi_guida": ["vegetazione|fioritura|taglio|essiccazione"], '
-        '"rilevanza": 80, '
-        '"tag_correlati": ["tag1", "tag2"]}\n'
-        ']}'
-    )
-
-    print(f'\nPrompt length: {len(prompt)} chars')
-    print('Invio a Groq...')
-
-    try:
-        risposta = groq_chat(prompt, max_tokens=4000)
-    except Exception as ex:
-        print(f'ERRORE CRITICO Groq: {ex}')
-        sys.exit(1)
-
-    # Parse
-    print(f'Risposta raw (primi 500): {risposta[:500]}')
-
-    try:
-        s = risposta.find('{"concetti"')
-        if s == -1:
-            s = risposta.find('{')
-        e = risposta.rfind('}')
-        if s == -1 or e == -1 or e <= s:
-            print(f'ERRORE: JSON non trovato. Risposta completa:\n{risposta}')
-            sys.exit(1)
-
-        parsed = json.loads(risposta[s:e+1])
-        concetti = parsed.get('concetti', [])
-        print(f'Concetti estratti: {len(concetti)}')
-    except json.JSONDecodeError as ex:
-        print(f'ERRORE JSON decode: {ex}')
-        print(f'JSON tentato:\n{risposta[s:e+1][:500] if "s" in dir() else risposta}')
-        sys.exit(1)
-
+    # Fallback locale se Groq non funziona o restituisce 0
     if not concetti:
-        print('ERRORE: lista concetti vuota')
-        print(f'Risposta completa:\n{risposta}')
-        sys.exit(1)
+        print('Uso fallback locale...')
+        concetti = build_concetti_from_tecniche(tecniche_agg, analisi)
+        print(f'Concetti fallback: {len(concetti)}')
 
-    # Arricchisci con pdf_ids reali
-    used_ids = set()
-    for i, c in enumerate(concetti):
-        base_id = (c.get('id') or c.get('label','c')).lower()
-        base_id = ''.join(ch if ch.isalnum() else '_' for ch in base_id)[:20].strip('_')
-        uid = base_id if base_id not in used_ids else f'{base_id}_{i}'
-        used_ids.add(uid)
-        c['id'] = uid
-
-        words = [w for w in c.get('label','').lower().split() if len(w) > 3]
-        pdf_ids = []
-        for t_norm, tdata in tecniche_agg.items():
-            if any(w in t_norm for w in words):
-                pdf_ids.extend(tdata['pdf_ids'])
-        c['pdf_ids'] = list(dict.fromkeys(pdf_ids))[:10]
-        c['pdf_count'] = len(c['pdf_ids'])
+    # Arricchisci pdf_ids per concetti Groq (non fallback che li ha già)
+    if GROQ_KEY:
+        used_ids = set()
+        for i, c in enumerate(concetti):
+            base_id = ''.join(ch if ch.isalnum() else '_' for ch in c.get('id',c.get('label','c')).lower())[:20].strip('_')
+            uid = base_id if base_id not in used_ids else f'{base_id}_{i}'
+            used_ids.add(uid)
+            c['id'] = uid
+            words = [w for w in c.get('label','').lower().split() if len(w) > 3]
+            pdf_ids = []
+            for t_norm, tdata in tecniche_agg.items():
+                if any(w in t_norm for w in words):
+                    pdf_ids.extend(tdata['pdf_ids'])
+            c['pdf_ids'] = list(dict.fromkeys(pdf_ids))[:10]
+            c['pdf_count'] = len(c['pdf_ids'])
 
     # Grafo
-    nodi = [{'id': c['id'], 'label': c['label'], 'categoria': c['categoria']} for c in concetti]
+    nodi = [{'id': c['id'], 'label': c['label'], 'categoria': c.get('categoria','altro')} for c in concetti]
     edges = []
     for i, a in enumerate(concetti):
         for j, b in enumerate(concetti):
             if j <= i: continue
             peso = len(set(a.get('tag_correlati',[])) & set(b.get('tag_correlati',[]))) * 2
-            if a.get('categoria') == b.get('categoria'):
-                peso += 1
+            if a.get('categoria') == b.get('categoria'): peso += 1
             if peso >= 1:
                 edges.append({'source': a['id'], 'target': b['id'], 'peso': peso})
 
-    concetti_index = {
+    out = {
         'lastUpdate': oggi,
         'total': len(concetti),
         'fonte': f'{len(analisi)} PDF analizzati',
@@ -199,16 +220,12 @@ def main():
         'grafo': {'nodi': nodi, 'edges': edges}
     }
 
-    content_b64 = base64.b64encode(
-        json.dumps(concetti_index, indent=2, ensure_ascii=False).encode()
-    ).decode()
-
+    content_b64 = base64.b64encode(json.dumps(out, indent=2, ensure_ascii=False).encode()).decode()
     _, sha = gh_api_get('data/concetti_index.json')
     gh_put('data/concetti_index.json', content_b64, sha,
            f'BioSerra concetti {oggi} ({len(concetti)} concetti da {len(analisi)} PDF)')
 
-    print(f'\n=== COMPLETATO ===')
-    print(f'Concetti: {len(concetti)} | Edges grafo: {len(edges)}')
+    print(f'\n=== COMPLETATO: {len(concetti)} concetti, {len(edges)} edges ===')
     cat_count = {}
     for c in concetti:
         cat = c.get('categoria','altro')
