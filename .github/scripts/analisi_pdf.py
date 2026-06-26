@@ -250,11 +250,8 @@ def main():
 
     # Considera "da rianalizzare" quelli con sommario generico
     def e_valido(a):
-        # Considera valido tutto ciò che non è il fallback locale generico
-        s = a.get('sommario','')
-        return (len(s) > 30 and
-                'Manuale selezionato per la biblioteca BioSerra:' not in s and
-                'Analisi non disponibile' not in s)
+        # Valido solo se analizzato da Groq (flag esplicito)
+        return a.get('groq_analizzato', False) is True
 
     analisi_valide = [a for a in analisi_esistenti if e_valido(a)]
     titoli_validi = {a['titolo'].strip().lower() for a in analisi_valide}
@@ -314,17 +311,21 @@ def main():
 
         # Analisi: Groq sempre se disponibile (anche solo dal titolo)
         result = None
+        groq_ok = False
         if GROQ_KEY:
             result = groq_analizza(titolo, testo)
+            if result:
+                groq_ok = True
 
         if not result:
-            print('  Analisi locale')
+            print('  Analisi locale (fallback)')
             result = analizza_locale(titolo, testo)
 
-        # Forza sempre alta rilevanza
+        # Forza sempre alta rilevanza + flag groq
         result['titolo'] = titolo
         result['data_analisi'] = oggi
         result['rilevanza'] = 'alta'
+        result['groq_analizzato'] = groq_ok
         nuove_analisi.append(result)
         print(f'  OK | tec:{len(result.get("tecniche_chiave",[]))} | sommario:{len(result.get("sommario",""))}c')
 
