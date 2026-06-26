@@ -1,4 +1,4 @@
-import os, json, base64, urllib.request, urllib.error, time, datetime, sys, io
+import os, json, base64, urllib.request, urllib.error, time, datetime, sys, io, re
 
 GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
 GROQ_KEY = os.environ.get('GROQ_KEY', '')
@@ -8,6 +8,170 @@ HEADERS_GH = {
     'Accept': 'application/vnd.github+json',
     'X-GitHub-Api-Version': '2022-11-28'
 }
+
+# Mappa keyword → tecniche + categoria
+KEYWORD_MAP = {
+    'compost': {'tec': 'Compostaggio', 'tag': ['compost','suolo'], 'rel': 'alta'},
+    'humus': {'tec': 'Humus e materia organica', 'tag': ['humus','suolo'], 'rel': 'alta'},
+    'micorriza': {'tec': 'Micorrize', 'tag': ['micorrize','funghi','suolo'], 'rel': 'alta'},
+    'mycorrhiz': {'tec': 'Micorrize', 'tag': ['micorrize','funghi'], 'rel': 'alta'},
+    'vermicompost': {'tec': 'Vermicompostaggio', 'tag': ['vermi','compost','suolo'], 'rel': 'alta'},
+    'biochar': {'tec': 'Biochar', 'tag': ['biochar','suolo','carbonio'], 'rel': 'alta'},
+    'elettrocoltura': {'tec': 'Elettrocultura', 'tag': ['elettrocultura','elettro'], 'rel': 'alta'},
+    'electroculture': {'tec': 'Elettrocultura', 'tag': ['elettrocultura','elettro'], 'rel': 'alta'},
+    'lakhovsky': {'tec': 'Circuito Lakhovsky', 'tag': ['lakhovsky','elettro','risonanza'], 'rel': 'alta'},
+    'copper': {'tec': 'Rame in coltivazione', 'tag': ['rame','elettro'], 'rel': 'alta'},
+    'rame': {'tec': 'Spirale cosmica in rame', 'tag': ['rame','elettro','spirale'], 'rel': 'alta'},
+    'magnetiz': {'tec': 'Acqua magnetizzata', 'tag': ['acqua','magnetismo','elettro'], 'rel': 'alta'},
+    'magnetic': {'tec': 'Campo magnetico per piante', 'tag': ['magnetismo','elettro'], 'rel': 'alta'},
+    'antenna': {'tec': 'Antenna terrestre', 'tag': ['antenna','elettro','risonanza'], 'rel': 'alta'},
+    'biodinamic': {'tec': 'Agricoltura biodinamica', 'tag': ['biodinamica','steiner'], 'rel': 'alta'},
+    'biodynamic': {'tec': 'Agricoltura biodinamica', 'tag': ['biodinamica','steiner'], 'rel': 'alta'},
+    'steiner': {'tec': 'Metodo Steiner', 'tag': ['steiner','biodinamica'], 'rel': 'alta'},
+    'luna': {'tec': 'Calendario lunare', 'tag': ['luna','biodinamica','calendario'], 'rel': 'alta'},
+    'lunar': {'tec': 'Calendario lunare', 'tag': ['luna','biodinamica'], 'rel': 'alta'},
+    'living soil': {'tec': 'Living Soil', 'tag': ['living-soil','suolo','microbi'], 'rel': 'alta'},
+    'soil biology': {'tec': 'Biologia del suolo', 'tag': ['suolo','microbi'], 'rel': 'alta'},
+    'microrganismi': {'tec': 'Microbioma del suolo', 'tag': ['microbi','suolo'], 'rel': 'alta'},
+    'microbiome': {'tec': 'Microbioma del suolo', 'tag': ['microbi','suolo'], 'rel': 'alta'},
+    'irrigazion': {'tec': 'Irrigazione ottimizzata', 'tag': ['irrigazione','acqua'], 'rel': 'media'},
+    'drip': {'tec': 'Irrigazione a goccia', 'tag': ['irrigazione','goccia'], 'rel': 'media'},
+    'fertil': {'tec': 'Fertilizzazione organica', 'tag': ['nutrizione','organico'], 'rel': 'media'},
+    'azoto': {'tec': 'Gestione azoto organico', 'tag': ['azoto','nutrizione'], 'rel': 'media'},
+    'nitrogen': {'tec': 'Gestione azoto', 'tag': ['azoto','nutrizione'], 'rel': 'media'},
+    'tesla': {'tec': 'Principi elettromagnetici Tesla', 'tag': ['tesla','elettro','frequenze'], 'rel': 'media'},
+    'frequenz': {'tec': 'Frequenze vibrazionali', 'tag': ['frequenze','vibrazione','elettro'], 'rel': 'media'},
+    'frequency': {'tec': 'Frequenze vibrazionali', 'tag': ['frequenze','vibrazione'], 'rel': 'media'},
+    'vibrazion': {'tec': 'Vibrazione e risonanza', 'tag': ['vibrazione','risonanza'], 'rel': 'media'},
+    'piant': {'tec': 'Fisiologia vegetale', 'tag': ['piante','fisiologia'], 'rel': 'media'},
+    'plant': {'tec': 'Fisiologia vegetale', 'tag': ['piante','fisiologia'], 'rel': 'media'},
+    'root': {'tec': 'Sviluppo radicale', 'tag': ['radici','suolo'], 'rel': 'media'},
+    'radice': {'tec': 'Sviluppo radicale', 'tag': ['radici','suolo'], 'rel': 'media'},
+    'agricol': {'tec': 'Tecniche agricole', 'tag': ['agricoltura','coltivazione'], 'rel': 'media'},
+    'organic': {'tec': 'Agricoltura organica', 'tag': ['organico','biologico'], 'rel': 'media'},
+    'ighina': {'tec': 'Atomo magnetico Ighina', 'tag': ['ighina','magnetismo','elettro'], 'rel': 'media'},
+    'hermes': {'tec': 'Principi ermetici', 'tag': ['ermetico','filosofia'], 'rel': 'bassa'},
+    'kybalio': {'tec': 'Leggi universali Kybalion', 'tag': ['ermetico','leggi'], 'rel': 'bassa'},
+}
+
+def estrai_testo_pdf(pdf_bytes):
+    try:
+        import pypdf
+        reader = pypdf.PdfReader(io.BytesIO(pdf_bytes))
+        testo = []
+        for page in reader.pages[:10]:
+            t = page.extract_text()
+            if t:
+                testo.append(t.strip())
+        return '\n'.join(testo)[:5000]
+    except Exception as ex:
+        print(f'  pypdf: {ex}')
+        return ''
+
+def analizza_locale(titolo, testo):
+    """Analisi locale con keyword matching — zero API, sempre funziona"""
+    testo_lower = (titolo + ' ' + testo).lower()
+
+    tecniche = []
+    tags = set()
+    rilevanza_punteggio = 0
+    max_rel = 'bassa'
+
+    for kw, info in KEYWORD_MAP.items():
+        if kw in testo_lower:
+            if info['tec'] not in tecniche:
+                tecniche.append(info['tec'])
+            tags.update(info['tag'])
+            if info['rel'] == 'alta':
+                rilevanza_punteggio += 3
+            elif info['rel'] == 'media':
+                rilevanza_punteggio += 1
+
+    if rilevanza_punteggio >= 6:
+        max_rel = 'alta'
+    elif rilevanza_punteggio >= 2:
+        max_rel = 'media'
+    else:
+        max_rel = 'bassa'
+
+    # Sommario dalle prime righe del testo
+    if testo and len(testo) > 50:
+        righe = [r.strip() for r in testo.split('\n') if len(r.strip()) > 30][:3]
+        sommario = ' '.join(righe)[:250] if righe else f'Documento: {titolo}'
+    else:
+        sommario = f'Documento analizzato per connessioni con Living Soil e elettrocultura: {titolo}'
+
+    # Estratto chiave
+    estratto = ''
+    for kw in ['living soil','elettrocultura','lakhovsky','biodinamica','compost','micorriza']:
+        idx = testo_lower.find(kw)
+        if idx >= 0:
+            estratto = testo[max(0,idx-20):idx+120].strip()
+            break
+
+    # Consiglio coltivazione
+    consigli_map = {
+        'alta': f'Applica le tecniche di {tecniche[0] if tecniche else titolo} durante la fase vegetativa',
+        'media': f'Esplora i principi di {titolo[:40]} per ottimizzare il microbioma del suolo',
+        'bassa': f'Consulta per ispirazione: {titolo[:40]}'
+    }
+
+    elettro_kw = ['elettrocultura','lakhovsky','tesla','magnetic','antenna','rame','copper','ighina','frequenz']
+    consiglio_elettro = ''
+    for ek in elettro_kw:
+        if ek in testo_lower:
+            consiglio_elettro = f'Principi applicabili a circuito Lakhovsky e spirale cosmica rame'
+            break
+
+    return {
+        'sommario': sommario[:300],
+        'tecniche_chiave': tecniche[:5],
+        'consiglio_coltivazione': consigli_map[max_rel],
+        'consiglio_elettrocultura': consiglio_elettro,
+        'tag': list(tags)[:6],
+        'rilevanza': max_rel,
+        'estratto_chiave': estratto[:200]
+    }
+
+def groq_analizza(titolo, testo):
+    if not GROQ_KEY:
+        return None
+    contenuto = testo[:3000] if testo and len(testo) > 100 else f'Analizza dal titolo: {titolo}'
+    prompt = (
+        f'Esperto Living Soil Italia. Analizza "{titolo}" per serra outdoor Caserta.\n'
+        f'Tecniche attive: Lakhovsky, Fe-Cu, acqua magnetizzata, spirale rame, antenna terra.\n\n'
+        f'Testo:\n{contenuto}\n\n'
+        f'JSON SOLO:\n'
+        f'{{"sommario":"2 frasi","tecniche_chiave":["t1","t2"],'
+        f'"consiglio_coltivazione":"azione","consiglio_elettrocultura":"o vuoto",'
+        f'"tag":["t1","t2"],"rilevanza":"alta|media|bassa","estratto_chiave":"max 150c"}}'
+    )
+    body = json.dumps({
+        'model': 'llama-3.3-70b-versatile',
+        'max_tokens': 600,
+        'temperature': 0.1,
+        'messages': [{'role': 'user', 'content': prompt}]
+    }).encode()
+    req = urllib.request.Request(
+        'https://api.groq.com/openai/v1/chat/completions',
+        data=body,
+        headers={'Authorization': f'Bearer {GROQ_KEY}', 'Content-Type': 'application/json'},
+        method='POST'
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            resp = json.load(r)
+        content = resp['choices'][0]['message']['content']
+        s, e = content.find('{'), content.rfind('}')
+        if s >= 0 and e > s:
+            result = json.loads(content[s:e+1])
+            print(f'  Groq OK: [{result.get("rilevanza","?")}]')
+            return result
+    except urllib.error.HTTPError as ex:
+        print(f'  Groq HTTP {ex.code}: {ex.read().decode()[:150]}')
+    except Exception as ex:
+        print(f'  Groq errore: {ex}')
+    return None
 
 def gh_get(path):
     req = urllib.request.Request(
@@ -24,123 +188,36 @@ def gh_put(path, content_b64, sha, message):
     with urllib.request.urlopen(req) as r:
         return json.load(r)
 
-def estrai_testo_pdf(pdf_bytes):
-    try:
-        import pypdf
-        reader = pypdf.PdfReader(io.BytesIO(pdf_bytes))
-        testo = []
-        for page in reader.pages[:10]:
-            t = page.extract_text()
-            if t:
-                testo.append(t.strip())
-        risultato = '\n'.join(testo)[:4000]
-        return risultato
-    except Exception as ex:
-        print(f'  pypdf errore: {ex}')
-        return ''
-
-def groq_analizza(titolo, testo):
-    print(f'  GROQ_KEY: {"OK " + GROQ_KEY[:8] if GROQ_KEY else "ASSENTE"}')
-    if not GROQ_KEY:
-        print('  ERRORE: GROQ_KEY non impostata')
-        return None
-
-    if testo and len(testo) > 100:
-        contenuto = f'Testo estratto:\n\n{testo[:3000]}'
-    else:
-        contenuto = f'(PDF non leggibile, analizza dal titolo)'
-
-    prompt = (
-        f'Sei un esperto di Living Soil, biodinamica ed elettrocultura per coltivazione outdoor italiana.\n'
-        f'Analizza "{titolo}" e trova connessioni pratiche con la serra BioSerra Caserta.\n'
-        f'Tecniche attive: Lakhovsky, pila Fe-Cu, acqua magnetizzata, spirale rame, antenna terra.\n\n'
-        f'{contenuto}\n\n'
-        f'Rispondi SOLO con JSON, nessun testo fuori:\n'
-        f'{{"sommario":"2 frasi contenuto","tecniche_chiave":["tecnica1","tecnica2"],'
-        f'"consiglio_coltivazione":"azione concreta","consiglio_elettrocultura":"connessione o stringa vuota",'
-        f'"tag":["tag1","tag2"],"rilevanza":"alta|media|bassa","estratto_chiave":"max 150 char"}}'
-    )
-
-    body = json.dumps({
-        'model': 'llama-3.3-70b-versatile',
-        'max_tokens': 600,
-        'temperature': 0.1,
-        'messages': [{'role': 'user', 'content': prompt}]
-    }).encode()
-
-    for tentativo in range(3):
-        req = urllib.request.Request(
-            'https://api.groq.com/openai/v1/chat/completions',
-            data=body,
-            headers={'Authorization': f'Bearer {GROQ_KEY}', 'Content-Type': 'application/json'},
-            method='POST'
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=30) as r:
-                resp = json.load(r)
-            content = resp['choices'][0]['message']['content']
-            print(f'  Groq OK ({len(content)} chars): {content[:80]}')
-            s, e = content.find('{'), content.rfind('}')
-            if s >= 0 and e > s:
-                return json.loads(content[s:e+1])
-            print(f'  WARN JSON non trovato')
-            return None
-        except urllib.error.HTTPError as ex:
-            err = ex.read().decode()
-            print(f'  Groq HTTP {ex.code} (tentativo {tentativo+1}): {err[:200]}')
-            if ex.code == 429:
-                print('  Rate limit — aspetto 30s')
-                time.sleep(30)
-            else:
-                return None
-        except Exception as ex:
-            print(f'  Groq errore: {ex}')
-            return None
-    return None
-
 def main():
     oggi = datetime.date.today().isoformat()
-    print('=== BioSerra Analisi PDF v7 ===')
-    print(f'GROQ_KEY: {"presente (" + GROQ_KEY[:8] + "...)" if GROQ_KEY else "ASSENTE — ERRORE"}')
+    print('=== BioSerra Analisi PDF v8 (locale + Groq opzionale) ===')
+    print(f'Groq: {"disponibile" if GROQ_KEY else "non configurato — uso analisi locale"}')
 
-    if not GROQ_KEY:
-        print('ERRORE CRITICO: GROQ_KEY non impostata')
-        sys.exit(1)
+    os.system('pip install pypdf -q 2>/dev/null')
 
-    # Installa pypdf
-    os.system('pip install pypdf -q --break-system-packages 2>/dev/null || pip install pypdf -q')
-
-    # Leggi knowledge
-    print('Leggo pdf_knowledge.json...')
     kdata = gh_get('data/pdf_knowledge.json')
-    decoded = base64.b64decode(kdata['content'].replace('\n','')).decode('utf-8')
-    knowledge = json.loads(decoded)
+    knowledge = json.loads(base64.b64decode(kdata['content'].replace('\n','')).decode('utf-8'))
     analisi_esistenti = knowledge.get('analisi', [])
-    print(f'Gia analizzati: {len(analisi_esistenti)}')
 
-    # Filtra solo quelli con sommario reale (esclude "Analisi non disponibile")
-    analisi_valide = [a for a in analisi_esistenti if a.get('sommario','') != 'Analisi non disponibile']
-    analisi_invalide = [a for a in analisi_esistenti if a.get('sommario','') == 'Analisi non disponibile']
-    print(f'Validi: {len(analisi_valide)} | Da rianalizzare: {len(analisi_invalide)}')
-
+    # Separa validi da invalidi
+    analisi_valide = [a for a in analisi_esistenti
+                      if a.get('sommario','') not in ('Analisi non disponibile', '')]
     titoli_validi = {a['titolo'].strip().lower() for a in analisi_valide}
+    print(f'Gia validi: {len(analisi_valide)}')
 
-    # Lista PDF in MANUALI/
     manuali = gh_get('MANUALI')
     pdf_files = sorted([f for f in manuali if f['name'].endswith('.pdf')], key=lambda x: x['name'])
     print(f'PDF in MANUALI/: {len(pdf_files)}')
 
-    # Da analizzare: non validi + nuovi
     da_analizzare = [f for f in pdf_files
                      if f['name'].replace('.pdf','').strip().lower() not in titoli_validi]
-    print(f'Da analizzare (nuovi + falliti): {len(da_analizzare)}')
+    print(f'Da analizzare: {len(da_analizzare)}')
 
     if not da_analizzare:
-        print('Tutti i PDF gia analizzati correttamente.')
+        print('Tutti i PDF gia analizzati.')
         return
 
-    # Batch piccolo: 8 per run (evita rate limit Groq)
-    batch = da_analizzare[:8]
+    batch = da_analizzare[:15]
     nuove_analisi = []
 
     for i, pdf_file in enumerate(batch):
@@ -154,39 +231,33 @@ def main():
             raw_b64 = pdf_data.get('content','').replace('\n','')
             if raw_b64:
                 size_mb = len(raw_b64) * 3 / 4 / 1024 / 1024
-                print(f'  PDF: {size_mb:.1f} MB')
                 if size_mb < 15:
                     pdf_bytes = base64.b64decode(raw_b64)
+                    print(f'  PDF: {size_mb:.1f} MB')
                 else:
-                    print('  Troppo grande, uso solo titolo')
+                    print(f'  PDF {size_mb:.1f}MB — troppo grande, solo titolo')
         except Exception as ex:
-            print(f'  Download fallito: {ex}')
+            print(f'  Download: {ex}')
 
         # Estrai testo
-        testo = ''
-        if pdf_bytes:
-            testo = estrai_testo_pdf(pdf_bytes)
-            print(f'  Testo estratto: {len(testo)} chars')
+        testo = estrai_testo_pdf(pdf_bytes) if pdf_bytes else ''
+        if testo:
+            print(f'  Testo: {len(testo)} chars')
 
-        # Analizza
-        result = groq_analizza(titolo, testo)
+        # Prova Groq, fallback locale
+        result = groq_analizza(titolo, testo) if GROQ_KEY else None
+        if not result:
+            print('  Uso analisi locale')
+            result = analizza_locale(titolo, testo)
 
-        if result:
-            result['titolo'] = titolo
-            result['data_analisi'] = oggi
-            nuove_analisi.append(result)
-            print(f'  OK: [{result.get("rilevanza","?")}] tec:{len(result.get("tecniche_chiave",[]))}')
-        else:
-            print(f'  FALLITO — salto questo PDF')
+        result['titolo'] = titolo
+        result['data_analisi'] = oggi
+        nuove_analisi.append(result)
+        print(f'  [{result.get("rilevanza","?")}] tec:{len(result.get("tecniche_chiave",[]))}')
 
-        # Delay generoso tra chiamate
-        time.sleep(5)
+        time.sleep(2)
 
-    if not nuove_analisi:
-        print('\nNessuna analisi riuscita — verifica GROQ_KEY su GitHub Secrets')
-        sys.exit(1)
-
-    # Assembla: validi + nuovi (escludi invalidi rimpiazzati)
+    # Assembla
     titoli_nuovi = {a['titolo'].strip().lower() for a in nuove_analisi}
     tutte = [a for a in analisi_valide if a['titolo'].strip().lower() not in titoli_nuovi]
     tutte += nuove_analisi
@@ -206,13 +277,12 @@ def main():
 
     sha_fresco = gh_get('data/pdf_knowledge.json')['sha']
     gh_put('data/pdf_knowledge.json', content_b64, sha_fresco,
-           f'BioSerra PDF {oggi} (+{len(nuove_analisi)}, validi:{len(tutte)}/89)')
+           f'BioSerra PDF {oggi} (+{len(nuove_analisi)}, tot:{len(tutte)}/89)')
 
-    print(f'\n=== COMPLETATO: +{len(nuove_analisi)} analizzati, totale validi: {len(tutte)}/89 ===')
+    print(f'\n=== +{len(nuove_analisi)} analizzati, totale: {len(tutte)}/89 ===')
     rils = {}
     for a in nuove_analisi:
-        r = a.get('rilevanza','bassa')
-        rils[r] = rils.get(r,0)+1
+        rils[a.get('rilevanza','bassa')] = rils.get(a.get('rilevanza','bassa'),0)+1
     for r, c in sorted(rils.items()):
         print(f'  {r}: {c}')
 
