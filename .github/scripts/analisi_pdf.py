@@ -1,7 +1,7 @@
-import os, json, base64, urllib.request, urllib.error, time, datetime
+import os, json, base64, urllib.request, urllib.error, time, datetime, sys, io
 
 GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
-ANTHROPIC_KEY = os.environ['ANTHROPIC_KEY']
+GROQ_KEY = os.environ['GROQ_KEY']
 REPO = 'francescocaruso487-tech/bioserra'
 HEADERS_GH = {
     'Authorization': f'Bearer {GITHUB_TOKEN}',
@@ -24,78 +24,84 @@ def gh_put(path, content_b64, sha, message):
     with urllib.request.urlopen(req) as r:
         return json.load(r)
 
-def analizza_con_anthropic(titolo, pdf_b64):
-    """Analizza PDF reale con Anthropic claude-sonnet-4-6 che supporta PDF base64"""
+def estrai_testo_pdf(pdf_bytes):
+    """Estrae testo dal PDF con pypdf"""
+    try:
+        import pypdf
+        reader = pypdf.PdfReader(io.BytesIO(pdf_bytes))
+        testo = []
+        for page in reader.pages[:15]:  # max 15 pagine
+            t = page.extract_text()
+            if t:
+                testo.append(t.strip())
+        return '\n'.join(testo)[:6000]  # max 6000 chars a Groq
+    except Exception as ex:
+        print(f'  pypdf errore: {ex}')
+        return ''
+
+def groq_analizza(titolo, testo):
+    """Analizza con Groq usando testo estratto dal PDF"""
+    if testo and len(testo) > 100:
+        contenuto = f'Testo estratto dal PDF:\n\n{testo}'
+    else:
+        contenuto = f'PDF non leggibile — analizza dal titolo: {titolo}'
+
     prompt = (
-        f'Analizza questo PDF "{titolo}" e trova connessioni pratiche con la coltivazione Living Soil outdoor a Caserta, Italia.\n\n'
-        'Contesto: serra outdoor, piante in vasi Living Soil water-only, tecniche elettrocultura attive: '
-        'circuito Lakhovsky, pila galvanica Fe-Cu, acqua magnetizzata, spirale cosmica rame, antenna terra, pantacolo rame. '
-        'Metodo biodinamico Steiner/Thun/Masson.\n\n'
-        'Rispondi SOLO con questo JSON valido, nessun testo fuori:\n'
-        '{"titolo":"' + titolo + '",'
-        '"sommario":"2-3 frasi sul contenuto reale del PDF",'
-        '"tecniche_chiave":["tecnica pratica applicabile 1","tecnica 2","tecnica 3"],'
-        '"consiglio_coltivazione":"1 azione concreta da fare in serra",'
-        '"consiglio_elettrocultura":"connessione con elettrocultura o biodinamica se presente, altrimenti stringa vuota",'
-        '"tag":["tag1","tag2","tag3"],'
-        '"rilevanza":"alta|media|bassa",'
-        '"estratto_chiave":"frase o concetto piu rilevante max 200 caratteri"}'
+        f'Sei un esperto di agricoltura biodinamica, Living Soil ed elettrocultura per coltivazione outdoor italiana.\n\n'
+        f'Analizza questo documento "{titolo}" e trova connessioni pratiche con la coltivazione Living Soil outdoor a Caserta.\n\n'
+        f'Contesto serra: piante outdoor in vasi Living Soil water-only, tecniche elettrocultura attive: '
+        f'circuito Lakhovsky, pila galvanica Fe-Cu, acqua magnetizzata, spirale cosmica rame, antenna terra, pantacolo rame. '
+        f'Metodo biodinamico Steiner/Thun/Masson/Pistis.\n\n'
+        f'{contenuto}\n\n'
+        f'Rispondi SOLO con JSON valido, nessun testo fuori:\n'
+        f'{{"titolo":"{titolo}",'
+        f'"sommario":"2-3 frasi sul contenuto reale del documento",'
+        f'"tecniche_chiave":["tecnica pratica applicabile 1","tecnica 2","tecnica 3"],'
+        f'"consiglio_coltivazione":"1 azione concreta da fare in serra",'
+        f'"consiglio_elettrocultura":"connessione con elettrocultura o biodinamica se presente nel testo, altrimenti stringa vuota",'
+        f'"tag":["tag1","tag2","tag3"],'
+        f'"rilevanza":"alta|media|bassa",'
+        f'"estratto_chiave":"frase o concetto piu rilevante max 200 caratteri"}}'
     )
 
-    if pdf_b64:
-        messages = [{
-            'role': 'user',
-            'content': [
-                {
-                    'type': 'document',
-                    'source': {
-                        'type': 'base64',
-                        'media_type': 'application/pdf',
-                        'data': pdf_b64
-                    }
-                },
-                {'type': 'text', 'text': prompt}
-            ]
-        }]
-    else:
-        messages = [{'role': 'user', 'content': prompt + f'\n\n(PDF non disponibile, analizza dal titolo: {titolo})'}]
-
     body = json.dumps({
-        'model': 'claude-sonnet-4-6',
-        'max_tokens': 1000,
-        'messages': messages
+        'model': 'llama-3.3-70b-versatile',
+        'max_tokens': 800,
+        'temperature': 0.2,
+        'messages': [{'role': 'user', 'content': prompt}]
     }).encode()
 
     req = urllib.request.Request(
-        'https://api.anthropic.com/v1/messages',
+        'https://api.groq.com/openai/v1/chat/completions',
         data=body,
-        headers={
-            'x-api-key': ANTHROPIC_KEY,
-            'anthropic-version': '2023-06-01',
-            'content-type': 'application/json'
-        },
+        headers={'Authorization': f'Bearer {GROQ_KEY}', 'Content-Type': 'application/json'},
         method='POST'
     )
     try:
-        with urllib.request.urlopen(req, timeout=60) as r:
+        with urllib.request.urlopen(req, timeout=30) as r:
             resp = json.load(r)
-        content = resp['content'][0]['text']
+        content = resp['choices'][0]['message']['content']
         s, e = content.find('{'), content.rfind('}')
         if s >= 0 and e > s:
             return json.loads(content[s:e+1])
-        print(f'  WARN: JSON non trovato in risposta: {content[:200]}')
+        print(f'  WARN: JSON non trovato: {content[:150]}')
         return None
     except urllib.error.HTTPError as ex:
         err = ex.read().decode()
-        print(f'  Anthropic HTTP {ex.code}: {err[:300]}')
+        print(f'  Groq HTTP {ex.code}: {err[:200]}')
         return None
     except Exception as ex:
-        print(f'  Errore Anthropic: {ex}')
+        print(f'  Groq errore: {ex}')
         return None
 
 def main():
     oggi = datetime.date.today().isoformat()
-    print('=== BioSerra Analisi PDF v5 (Anthropic) ===')
+    print('=== BioSerra Analisi PDF v6 (pypdf + Groq) ===')
+
+    # Installa pypdf se non presente
+    print('Installo pypdf...')
+    os.system('pip install pypdf -q')
+    print('pypdf pronto')
 
     # Leggi knowledge attuale
     print('Leggo pdf_knowledge.json...')
@@ -103,26 +109,27 @@ def main():
     decoded = base64.b64decode(kdata['content'].replace('\n','')).decode('utf-8')
     knowledge = json.loads(decoded)
     analisi_esistenti = knowledge.get('analisi', [])
-    print(f'Già analizzati: {len(analisi_esistenti)}')
+    print(f'Gia analizzati: {len(analisi_esistenti)}')
 
     titoli_analizzati = {a['titolo'].strip().lower() for a in analisi_esistenti}
 
     # Lista PDF in MANUALI/
     print('Leggo MANUALI/...')
     manuali = gh_get('MANUALI')
-    pdf_files = sorted([f for f in manuali if f['name'].endswith('.pdf')], key=lambda x: x['name'])
+    pdf_files = sorted(
+        [f for f in manuali if f['name'].endswith('.pdf')],
+        key=lambda x: x['name']
+    )
     print(f'PDF totali in MANUALI/: {len(pdf_files)}')
 
-    # Filtra non analizzati
     da_analizzare = [f for f in pdf_files
                      if f['name'].replace('.pdf','').strip().lower() not in titoli_analizzati]
     print(f'Da analizzare: {len(da_analizzare)}')
 
     if not da_analizzare:
-        print('Tutti i PDF già analizzati.')
+        print('Tutti i PDF gia analizzati.')
         return
 
-    # Analizza max 15 per run (PDF reali richiedono più tempo)
     batch = da_analizzare[:15]
     nuove_analisi = []
 
@@ -130,23 +137,27 @@ def main():
         titolo = pdf_file['name'].replace('.pdf','').strip()
         print(f'\n[{i+1}/{len(batch)}] {titolo[:65]}')
 
-        # Scarica PDF (GitHub API restituisce base64 direttamente)
-        pdf_b64 = None
+        # Scarica PDF bytes
+        pdf_bytes = None
         try:
             pdf_data = gh_get(f"MANUALI/{pdf_file['name']}")
             raw_b64 = pdf_data.get('content','').replace('\n','')
-            if raw_b64 and len(raw_b64) > 100:
-                # Verifica dimensione: Anthropic max ~32MB base64 (~24MB PDF)
-                size_mb = len(raw_b64) * 3 / 4 / 1024 / 1024
-                print(f'  PDF: {size_mb:.1f} MB')
-                if size_mb < 20:
-                    pdf_b64 = raw_b64
-                else:
-                    print(f'  PDF troppo grande ({size_mb:.1f}MB) — analisi solo titolo')
+            if raw_b64:
+                pdf_bytes = base64.b64decode(raw_b64)
+                print(f'  Scaricato: {len(pdf_bytes)/1024:.0f} KB')
         except Exception as ex:
             print(f'  Download fallito: {ex}')
 
-        result = analizza_con_anthropic(titolo, pdf_b64)
+        # Estrai testo
+        testo = ''
+        if pdf_bytes:
+            testo = estrai_testo_pdf(pdf_bytes)
+            print(f'  Testo estratto: {len(testo)} chars')
+        else:
+            print('  Nessun PDF — uso solo titolo')
+
+        # Analizza con Groq
+        result = groq_analizza(titolo, testo)
 
         if result:
             result['titolo'] = titolo
@@ -161,14 +172,14 @@ def main():
                 'rilevanza': 'bassa', 'estratto_chiave': '', 'data_analisi': oggi
             })
 
-        time.sleep(2)
+        time.sleep(1.5)  # rate limit Groq
 
     # Assembla
     tutte = analisi_esistenti + nuove_analisi
     for idx, a in enumerate(tutte):
         a['id'] = a.get('id') or f'pdf_{idx}'
 
-    # Connessioni per tag
+    # Connessioni per tag condivisi
     for a in tutte:
         conn = []
         for b in tutte:
@@ -189,15 +200,14 @@ def main():
         json.dumps(knowledge_new, indent=2, ensure_ascii=False).encode()
     ).decode()
 
-    # SHA fresco
     sha_fresco = gh_get('data/pdf_knowledge.json')['sha']
     gh_put('data/pdf_knowledge.json', content_b64, sha_fresco,
-           f'BioSerra PDF {oggi} (+{len(nuove_analisi)}, tot:{len(tutte)})')
+           f'BioSerra PDF {oggi} (+{len(nuove_analisi)}, tot:{len(tutte)}/89)')
 
-    print(f'\n=== COMPLETATO: {len(nuove_analisi)} nuovi, totale {len(tutte)}/89 ===')
+    print(f'\n=== COMPLETATO: +{len(nuove_analisi)} nuovi, totale {len(tutte)}/89 ===')
     rils = {}
     for a in nuove_analisi:
-        r = a.get('rilevanza','?')
+        r = a.get('rilevanza','bassa')
         rils[r] = rils.get(r,0) + 1
     for r, c in sorted(rils.items()):
         print(f'  {r}: {c}')
