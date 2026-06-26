@@ -1,12 +1,7 @@
-import os
-import json
-import base64
-import urllib.request
-import urllib.error
-import time
+import os, json, base64, urllib.request, urllib.error, time, datetime
 
 GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
-GROQ_KEY = os.environ['GROQ_KEY']
+ANTHROPIC_KEY = os.environ['ANTHROPIC_KEY']
 REPO = 'francescocaruso487-tech/bioserra'
 HEADERS_GH = {
     'Authorization': f'Bearer {GITHUB_TOKEN}',
@@ -15,7 +10,8 @@ HEADERS_GH = {
 }
 
 def gh_get(path):
-    req = urllib.request.Request(f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
+    req = urllib.request.Request(
+        f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
     with urllib.request.urlopen(req) as r:
         return json.load(r)
 
@@ -28,107 +24,135 @@ def gh_put(path, content_b64, sha, message):
     with urllib.request.urlopen(req) as r:
         return json.load(r)
 
-def groq_analizza(titolo, pdf_b64):
-    system = ('Sei un esperto di agricoltura biodinamica, Living Soil e coltivazione outdoor. '
-              'Serra BioSerra Caserta, piante Living Soil outdoor. '
-              'Tecniche attive: elettrocultura Lakhovsky, pila galvanica Fe-Cu, acqua magnetizzata, '
-              'spirale cosmica rame, antenna a terra. '
-              'Rispondi SOLO con un oggetto JSON valido, nessun testo fuori dal JSON.')
-    
-    istruzioni = (f'Analizza questo PDF "{titolo}" e trova connessioni pratiche con la coltivazione Living Soil.\n\n'
-                  f'Rispondi SOLO con questo JSON:\n'
-                  f'{{"titolo":"{titolo}","sommario":"2-3 frasi sul contenuto","tecniche_chiave":["tecnica 1","tecnica 2"],'
-                  f'"consiglio_coltivazione":"1 azione concreta","consiglio_elettrocultura":"connessione biodinamica o stringa vuota",'
-                  f'"tag":["tag1","tag2"],"rilevanza":"alta/media/bassa","estratto_chiave":"max 200 caratteri"}}')
-    
+def analizza_con_anthropic(titolo, pdf_b64):
+    """Analizza PDF reale con Anthropic claude-sonnet-4-6 che supporta PDF base64"""
+    prompt = (
+        f'Analizza questo PDF "{titolo}" e trova connessioni pratiche con la coltivazione Living Soil outdoor a Caserta, Italia.\n\n'
+        'Contesto: serra outdoor, piante in vasi Living Soil water-only, tecniche elettrocultura attive: '
+        'circuito Lakhovsky, pila galvanica Fe-Cu, acqua magnetizzata, spirale cosmica rame, antenna terra, pantacolo rame. '
+        'Metodo biodinamico Steiner/Thun/Masson.\n\n'
+        'Rispondi SOLO con questo JSON valido, nessun testo fuori:\n'
+        '{"titolo":"' + titolo + '",'
+        '"sommario":"2-3 frasi sul contenuto reale del PDF",'
+        '"tecniche_chiave":["tecnica pratica applicabile 1","tecnica 2","tecnica 3"],'
+        '"consiglio_coltivazione":"1 azione concreta da fare in serra",'
+        '"consiglio_elettrocultura":"connessione con elettrocultura o biodinamica se presente, altrimenti stringa vuota",'
+        '"tag":["tag1","tag2","tag3"],'
+        '"rilevanza":"alta|media|bassa",'
+        '"estratto_chiave":"frase o concetto piu rilevante max 200 caratteri"}'
+    )
+
     if pdf_b64:
-        messages = [
-            {'role': 'user', 'content': [
-                {'type': 'text', 'text': istruzioni},
-                {'type': 'image_url', 'image_url': {'url': f'data:application/pdf;base64,{pdf_b64}'}}
-            ]}
-        ]
+        messages = [{
+            'role': 'user',
+            'content': [
+                {
+                    'type': 'document',
+                    'source': {
+                        'type': 'base64',
+                        'media_type': 'application/pdf',
+                        'data': pdf_b64
+                    }
+                },
+                {'type': 'text', 'text': prompt}
+            ]
+        }]
     else:
-        messages = [{'role': 'user', 'content': istruzioni + f'\n\n(Analizza dal titolo: {titolo})'}]
-    
+        messages = [{'role': 'user', 'content': prompt + f'\n\n(PDF non disponibile, analizza dal titolo: {titolo})'}]
+
     body = json.dumps({
-        'model': 'llama-3.3-70b-versatile',
+        'model': 'claude-sonnet-4-6',
         'max_tokens': 1000,
-        'temperature': 0.3,
-        'messages': [{'role': 'system', 'content': system}] + messages
+        'messages': messages
     }).encode()
-    
+
     req = urllib.request.Request(
-        'https://api.groq.com/openai/v1/chat/completions',
+        'https://api.anthropic.com/v1/messages',
         data=body,
-        headers={'Authorization': f'Bearer {GROQ_KEY}', 'Content-Type': 'application/json'},
+        headers={
+            'x-api-key': ANTHROPIC_KEY,
+            'anthropic-version': '2023-06-01',
+            'content-type': 'application/json'
+        },
         method='POST'
     )
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
             resp = json.load(r)
-        content = resp['choices'][0]['message']['content']
-        s, e = content.index('{'), content.rindex('}')
-        return json.loads(content[s:e+1])
+        content = resp['content'][0]['text']
+        s, e = content.find('{'), content.rfind('}')
+        if s >= 0 and e > s:
+            return json.loads(content[s:e+1])
+        print(f'  WARN: JSON non trovato in risposta: {content[:200]}')
+        return None
+    except urllib.error.HTTPError as ex:
+        err = ex.read().decode()
+        print(f'  Anthropic HTTP {ex.code}: {err[:300]}')
+        return None
     except Exception as ex:
-        print(f'  Errore Groq: {ex}')
+        print(f'  Errore Anthropic: {ex}')
         return None
 
 def main():
-    oggi = __import__('datetime').date.today().isoformat()
-    
-    # 1. Leggi pdf_knowledge.json
+    oggi = datetime.date.today().isoformat()
+    print('=== BioSerra Analisi PDF v5 (Anthropic) ===')
+
+    # Leggi knowledge attuale
     print('Leggo pdf_knowledge.json...')
     kdata = gh_get('data/pdf_knowledge.json')
     decoded = base64.b64decode(kdata['content'].replace('\n','')).decode('utf-8')
     knowledge = json.loads(decoded)
     analisi_esistenti = knowledge.get('analisi', [])
-    sha_knowledge = kdata['sha']
-    
+    print(f'Già analizzati: {len(analisi_esistenti)}')
+
     titoli_analizzati = {a['titolo'].strip().lower() for a in analisi_esistenti}
-    
-    # 2. Elenca PDF in MANUALI/
-    print('Leggo lista MANUALI/...')
+
+    # Lista PDF in MANUALI/
+    print('Leggo MANUALI/...')
     manuali = gh_get('MANUALI')
-    pdf_files = [f for f in manuali if f['name'].endswith('.pdf')]
-    
-    # 3. Filtra non analizzati
-    da_analizzare = [f for f in pdf_files 
+    pdf_files = sorted([f for f in manuali if f['name'].endswith('.pdf')], key=lambda x: x['name'])
+    print(f'PDF totali in MANUALI/: {len(pdf_files)}')
+
+    # Filtra non analizzati
+    da_analizzare = [f for f in pdf_files
                      if f['name'].replace('.pdf','').strip().lower() not in titoli_analizzati]
-    
-    print(f'PDF totali: {len(pdf_files)}, da analizzare: {len(da_analizzare)}')
-    
+    print(f'Da analizzare: {len(da_analizzare)}')
+
     if not da_analizzare:
         print('Tutti i PDF già analizzati.')
         return
-    
-    # 4. Analizza max 20
-    batch = da_analizzare[:20]
+
+    # Analizza max 15 per run (PDF reali richiedono più tempo)
+    batch = da_analizzare[:15]
     nuove_analisi = []
-    
+
     for i, pdf_file in enumerate(batch):
         titolo = pdf_file['name'].replace('.pdf','').strip()
-        print(f'[{i+1}/{len(batch)}] {titolo[:60]}...')
-        
-        # Scarica PDF
+        print(f'\n[{i+1}/{len(batch)}] {titolo[:65]}')
+
+        # Scarica PDF (GitHub API restituisce base64 direttamente)
         pdf_b64 = None
         try:
             pdf_data = gh_get(f"MANUALI/{pdf_file['name']}")
-            if pdf_data.get('content'):
-                pdf_b64 = pdf_data['content'].replace('\n','')
-                print(f'  PDF scaricato ({len(pdf_b64)} chars b64)')
+            raw_b64 = pdf_data.get('content','').replace('\n','')
+            if raw_b64 and len(raw_b64) > 100:
+                # Verifica dimensione: Anthropic max ~32MB base64 (~24MB PDF)
+                size_mb = len(raw_b64) * 3 / 4 / 1024 / 1024
+                print(f'  PDF: {size_mb:.1f} MB')
+                if size_mb < 20:
+                    pdf_b64 = raw_b64
+                else:
+                    print(f'  PDF troppo grande ({size_mb:.1f}MB) — analisi solo titolo')
         except Exception as ex:
-            print(f'  Scaricamento fallito: {ex}')
-        
-        # Analizza con Groq (solo testo dal titolo se PDF troppo grande)
-        # Groq non supporta PDF direttamente — usiamo solo il titolo
-        result = groq_analizza(titolo, None)
-        
+            print(f'  Download fallito: {ex}')
+
+        result = analizza_con_anthropic(titolo, pdf_b64)
+
         if result:
             result['titolo'] = titolo
             result['data_analisi'] = oggi
             nuove_analisi.append(result)
-            print(f'  OK: rilevanza={result.get("rilevanza","?")}')
+            print(f'  OK: rilevanza={result.get("rilevanza","?")} | tecniche={len(result.get("tecniche_chiave",[]))}')
         else:
             nuove_analisi.append({
                 'titolo': titolo, 'sommario': 'Analisi non disponibile',
@@ -136,44 +160,47 @@ def main():
                 'consiglio_elettrocultura': '', 'tag': [],
                 'rilevanza': 'bassa', 'estratto_chiave': '', 'data_analisi': oggi
             })
-        
-        time.sleep(1)  # rate limit Groq
-    
-    # 5. Assembla e salva
+
+        time.sleep(2)
+
+    # Assembla
     tutte = analisi_esistenti + nuove_analisi
-    tutte_con_id = []
     for idx, a in enumerate(tutte):
-        a2 = dict(a)
-        a2['id'] = a.get('id') or f'pdf_{idx}'
-        tutte_con_id.append(a2)
-    
-    # Calcola connessioni
-    for a in tutte_con_id:
-        connessioni = []
-        for b in tutte_con_id:
+        a['id'] = a.get('id') or f'pdf_{idx}'
+
+    # Connessioni per tag
+    for a in tutte:
+        conn = []
+        for b in tutte:
             if b['id'] == a['id']: continue
-            tag_comuni = set(a.get('tag',[])) & set(b.get('tag',[]))
-            peso = len(tag_comuni) * 2
-            if peso >= 2:
-                connessioni.append({'id': b['id'], 'titolo': b['titolo'], 'peso': peso})
-        connessioni.sort(key=lambda x: -x['peso'])
-        a['connessioni'] = connessioni[:5]
-    
+            comuni = set(a.get('tag',[])) & set(b.get('tag',[]))
+            if len(comuni) >= 2:
+                conn.append({'id': b['id'], 'titolo': b['titolo'], 'peso': len(comuni)})
+        conn.sort(key=lambda x: -x['peso'])
+        a['connessioni'] = conn[:5]
+
     knowledge_new = {
-        'lastUpdate': __import__('datetime').datetime.utcnow().isoformat() + 'Z',
-        'total_pdf': len(tutte_con_id),
-        'analisi': tutte_con_id
+        'lastUpdate': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        'total_pdf': len(tutte),
+        'analisi': tutte
     }
-    
-    content_b64 = base64.b64encode(json.dumps(knowledge_new, indent=2, ensure_ascii=False).encode()).decode()
-    
-    # Fetch SHA fresco
+
+    content_b64 = base64.b64encode(
+        json.dumps(knowledge_new, indent=2, ensure_ascii=False).encode()
+    ).decode()
+
+    # SHA fresco
     sha_fresco = gh_get('data/pdf_knowledge.json')['sha']
-    
     gh_put('data/pdf_knowledge.json', content_b64, sha_fresco,
-           f'BioSerra PDF analisi {oggi} (+{len(nuove_analisi)} nuovi, tot:{len(tutte_con_id)})')
-    
-    print(f'\nSalvato! Totale: {len(tutte_con_id)}, Nuovi: {len(nuove_analisi)}')
+           f'BioSerra PDF {oggi} (+{len(nuove_analisi)}, tot:{len(tutte)})')
+
+    print(f'\n=== COMPLETATO: {len(nuove_analisi)} nuovi, totale {len(tutte)}/89 ===')
+    rils = {}
+    for a in nuove_analisi:
+        r = a.get('rilevanza','?')
+        rils[r] = rils.get(r,0) + 1
+    for r, c in sorted(rils.items()):
+        print(f'  {r}: {c}')
 
 if __name__ == '__main__':
     main()
