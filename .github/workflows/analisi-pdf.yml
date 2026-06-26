@@ -19,8 +19,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Analisi PDF con Anthropic
+      - name: Analisi PDF (pypdf + Groq)
         env:
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
+          GROQ_KEY: ${{ secrets.GROQ_KEY }}
         run: python3 .github/scripts/analisi_pdf.py
