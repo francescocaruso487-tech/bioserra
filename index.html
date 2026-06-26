@@ -683,18 +683,10 @@
     </div>
   </div>
 
-  <!-- Esperimenti (gestito da Pratiche) -->
-  <div class="lab-tech-card" style="display:none">
-    <div class="lab-tc-header">
-      <div class="lab-tc-title green">🧪 Esperimenti</div>
-      <button class="lab-tc-reload" onclick="labPopupAllEsperimenti()">Gestisci ›</button>
-    </div>
-    <div id="lab-esp-attivi">
-      <div style="color:rgba(76,175,118,0.4);font-size:12px;padding:4px">Caricamento…</div>
-    </div>
-    <div id="lab-esp-badge" style="display:none"></div>
-    <div id="lab-esp-proposte" style="display:none"></div>
-  </div>
+  <!-- Esperimenti: div tecnici nascosti usati da labRenderPratiche -->
+  <div id="lab-esp-attivi" style="display:none"></div>
+  <div id="lab-esp-badge" style="display:none"></div>
+  <div id="lab-esp-proposte" style="display:none"></div>
 
   <!-- ══ MACRO-AREA: ARCHIVIO ══ -->
   <div class="lab-macro-label violet">📚 archivio</div>
