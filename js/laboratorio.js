@@ -132,14 +132,13 @@ function labUpdateBadges() {
   var bEsp  = document.getElementById('badge-esp');
   var bPdf  = document.getElementById('badge-pdf');
   var bBrain= document.getElementById('badge-brain');
-  if (bTec && labElTecniche.length) {
-    bTec.textContent = labElTecniche.length;
-    bTec.classList.add('show');
+  if (bTec) {
+    var nTec = labElTecniche.length;
+    var nEspA = labEspData && labEspData.esperimenti_attivi ? labEspData.esperimenti_attivi.length : 0;
+    var totPratiche = nTec + nEspA;
+    if (totPratiche) { bTec.textContent = totPratiche; bTec.classList.add('show'); }
   }
-  if (bEsp && labEspData) {
-    var na = labEspData.esperimenti_attivi.length;
-    if (na) { bEsp.textContent = na; bEsp.classList.add('show'); }
-  }
+  // badge-esp non piu usato (unificato in badge-tec)
   if (bPdf && labPdfData && labPdfData.analisi) {
     bPdf.textContent = labPdfData.analisi.length;
     bPdf.classList.add('show');
