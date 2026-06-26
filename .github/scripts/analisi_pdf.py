@@ -10,6 +10,54 @@ HEADERS_GH = {
 }
 
 # Mappa keyword → tecniche + categoria
+ALTA_KEYWORDS = [
+    'electroculture','elettrocoltura','electro','lakhovsky','ighina',
+    'tesla','soil biology','soil primer','living soil','magnacult',
+    'biodinamic','biodynamic','antenna uomo','atomo magnetico',
+    'magnetico','agricoltura organica','agricultural testament',
+    'frequenz','vibrazion','campi elettromagnetici','elcult','laemstrom',
+    'hull','dudgrichelcult','nollet','vegetaux','starterkit'
+]
+
+MEDIA_KEYWORDS = [
+    'nikola','hermes','kybalion','ermete','corpus hermeticum',
+    'ighina','scoperta','pimandro','aradia','strega','luna',
+    'chakra','organum','ouspensky','rol ','gustavo','cervello',
+    'quantico','gateway','inner eye','book of wisdom','registri',
+    'vita segreta','melodie','strega verde','cabala','occulta'
+]
+
+def calcola_rilevanza(titolo, tag):
+    t = titolo.lower()
+    for kw in ALTA_KEYWORDS:
+        if kw in t:
+            return 'alta'
+    tag_alta = {'elettrocultura','living-soil','biodinamica','compost',
+                'micorrize','suolo','magnetismo','frequenze','antenna'}
+    if len(set(tag) & tag_alta) >= 2:
+        return 'alta'
+    for kw in MEDIA_KEYWORDS:
+        if kw in t:
+            return 'media'
+    tag_media = {'elettro','rame','spirale','vibrazione','luna','piante'}
+    if len(set(tag) & tag_media) >= 1:
+        return 'media'
+    return 'bassa'
+
+def ricalcola_connessioni(analisi):
+    for a in analisi:
+        conn = []
+        for b in analisi:
+            if b['id'] == a['id']: continue
+            tag_score = len(set(a.get('tag',[])) & set(b.get('tag',[])))
+            tec_score = len(set(a.get('tecniche_chiave',[])) & set(b.get('tecniche_chiave',[]))) * 2
+            score = tag_score + tec_score
+            if score >= 1:
+                conn.append({'id': b['id'], 'titolo': b['titolo'], 'peso': score})
+        conn.sort(key=lambda x: -x['peso'])
+        a['connessioni'] = conn[:8]
+    return analisi
+
 KEYWORD_MAP = {
     'compost': {'tec': 'Compostaggio', 'tag': ['compost','suolo'], 'rel': 'alta'},
     'humus': {'tec': 'Humus e materia organica', 'tag': ['humus','suolo'], 'rel': 'alta'},
@@ -264,6 +312,11 @@ def main():
 
     for idx, a in enumerate(tutte):
         a['id'] = a.get('id') or f'pdf_{idx}'
+
+    # Ricalcola rilevanza e connessioni per tutti
+    for a in tutte:
+        a['rilevanza'] = calcola_rilevanza(a.get('titolo',''), a.get('tag',[]))
+    tutte = ricalcola_connessioni(tutte)
 
     knowledge_new = {
         'lastUpdate': datetime.datetime.now(datetime.timezone.utc).isoformat(),
