@@ -374,12 +374,6 @@ function labRenderPratiche() {
   if (tot > 5) h += '<div style="text-align:center;font-size:11px;color:var(--el-blue);padding:6px 0;cursor:pointer;opacity:0.8" onclick="labPopupAllPratiche()">▼ vedi tutte (' + tot + ')</div>';
   el.innerHTML = h;
 
-  // Nascondi la vecchia card esperimenti
-  var espEl = document.getElementById('lab-esp-attivi');
-  if (espEl) {
-    var card = espEl.closest('.lab-tech-card');
-    if (card) card.style.display = 'none';
-  }
 }
 
 // Rende labRenderEsperimenti un alias di labRenderPratiche
