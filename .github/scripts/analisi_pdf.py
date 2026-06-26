@@ -250,11 +250,11 @@ def main():
 
     # Considera "da rianalizzare" quelli con sommario generico
     def e_valido(a):
+        # Considera valido tutto ciò che non è il fallback locale generico
         s = a.get('sommario','')
-        return (len(s) > 100 and
-                'Documento analizzato per connessioni' not in s and
-                'Analisi non disponibile' not in s and
-                'Manuale selezionato per la biblioteca' not in s)
+        return (len(s) > 30 and
+                'Manuale selezionato per la biblioteca BioSerra:' not in s and
+                'Analisi non disponibile' not in s)
 
     analisi_valide = [a for a in analisi_esistenti if e_valido(a)]
     titoli_validi = {a['titolo'].strip().lower() for a in analisi_valide}
@@ -312,9 +312,9 @@ def main():
             if not testo:
                 print('  WARN: nessun testo estratto (PDF scansionato?)')
 
-        # Analisi: Groq se disponibile e c'è testo, altrimenti locale
+        # Analisi: Groq sempre se disponibile (anche solo dal titolo)
         result = None
-        if GROQ_KEY and testo:
+        if GROQ_KEY:
             result = groq_analizza(titolo, testo)
 
         if not result:
@@ -328,7 +328,7 @@ def main():
         nuove_analisi.append(result)
         print(f'  OK | tec:{len(result.get("tecniche_chiave",[]))} | sommario:{len(result.get("sommario",""))}c')
 
-        time.sleep(2)
+        time.sleep(4)  # delay per rate limit Groq
 
     # Assembla: validi + nuovi (sovrascrive stessi titoli)
     titoli_nuovi = {a['titolo'].strip().lower() for a in nuove_analisi}
