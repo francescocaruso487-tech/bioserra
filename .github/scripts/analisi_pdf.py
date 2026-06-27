@@ -129,19 +129,24 @@ def groq_analizza(titolo, testo):
             with urllib.request.urlopen(req_g, timeout=30) as r:
                 resp = json.load(r)
             raw = resp['choices'][0]['message']['content'].strip()
-            print(f'  Groq risposta ({len(raw)}c): {raw[:80]}')
+            print(f'  Groq risposta ({len(raw)}c): {repr(raw[:200])}')
 
             # Parse robusto: cerca primo { e ultimo }
             s = raw.find('{')
             e = raw.rfind('}')
             if s < 0 or e <= s:
-                print(f'  WARN: nessun JSON trovato')
+                print(f'  WARN: nessun JSON trovato in: {repr(raw[:300])}')
                 continue
 
             candidate = raw[s:e+1]
-            result = json.loads(candidate)
-            print(f'  Groq OK: sommario={len(result.get("sommario",""))}c tec={len(result.get("tecniche_chiave",[]))}')
-            return result
+            try:
+                result = json.loads(candidate)
+                print(f'  Groq OK: sommario={len(result.get("sommario",""))}c tec={len(result.get("tecniche_chiave",[]))}')
+                return result
+            except json.JSONDecodeError as jex:
+                print(f'  JSON parse fail: {jex}')
+                print(f'  Candidate: {repr(candidate[:300])}')
+                continue
 
         except json.JSONDecodeError as ex:
             print(f'  JSON decode err (tentativo {tentativo+1}): {ex} | raw={raw[:100] if "raw" in dir() else "N/A"}')
