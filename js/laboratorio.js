@@ -952,36 +952,137 @@ function labScrollBrain() {
 
 var cervHistory = [];
 
-async function cervBuildSystem() {
+async function cervBuildSystem(queryKeywords) {
   var sys = 'Sei il Cervello AI di BioSerra, esperto di coltivazione Living Soil outdoor a Caserta (41\u00B0N). ';
-  sys += 'Rispondi in italiano, conciso e pratico, max 200 parole. ';
+  sys += 'Hai accesso alla knowledge base completa della serra: PDF analizzati, tecniche elettrocultura, guide per fase, dati meteo e lunari in tempo reale. ';
+  sys += 'Rispondi in italiano, pratico e preciso, max 300 parole. Cita le fonti (es: "dal PDF X") quando pertinente.\n\n';
+
   try {
-    var [rMeteo, rBrain, rLuna, rPiante] = await Promise.allSettled([
-      fetch('https://api.open-meteo.com/v1/forecast?latitude=41.097&longitude=14.388&current=temperature_2m,weathercode&timezone=Europe/Rome').then(function(r){ return r.json(); }),
-      fetch(LAB_RAW + 'brain.json?v=' + Date.now()).then(function(r){ return r.json(); }),
+    // === DATI REAL-TIME (meteo + luna + piante) ===
+    var [rMeteo, rLuna, rPiante] = await Promise.allSettled([
+      fetch('https://api.open-meteo.com/v1/forecast?latitude=41.097&longitude=14.388&current=temperature_2m,relative_humidity_2m,weathercode,wind_speed_10m&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&timezone=Europe/Rome&forecast_days=3').then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'luna_consigli.json?v=' + Date.now()).then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'piante_stato.json?v=' + Date.now()).then(function(r){ return r.json(); })
     ]);
+
     if (rMeteo.status === 'fulfilled') {
       var cur = rMeteo.value.current || {};
-      if (cur.temperature_2m) sys += 'Meteo ora: ' + cur.temperature_2m + 'C. ';
+      var daily = rMeteo.value.daily || {};
+      sys += '=== METEO CASERTA ===\n';
+      if (cur.temperature_2m !== undefined) sys += 'Ora: ' + cur.temperature_2m + '\u00B0C, umid. ' + (cur.relative_humidity_2m||'?') + '%, vento ' + (cur.wind_speed_10m||0) + ' km/h\n';
+      if (daily.temperature_2m_max && daily.temperature_2m_max[0]) {
+        sys += 'Oggi max ' + daily.temperature_2m_max[0] + '\u00B0C / min ' + (daily.temperature_2m_min[0]||'?') + '\u00B0C';
+        if (daily.precipitation_sum && daily.precipitation_sum[0]) sys += ', pioggia ' + daily.precipitation_sum[0] + 'mm';
+        sys += '\n';
+      }
+      sys += '\n';
     }
-    if (rBrain.status === 'fulfilled') {
-      var bv = rBrain.value;
-      var cerv = bv.cervello || {};
-      if (cerv.consigli_giorno && cerv.consigli_giorno[0]) sys += 'Consiglio giorno: ' + cerv.consigli_giorno[0] + '. ';
-    }
+
     if (rLuna.status === 'fulfilled') {
-      var lv = rLuna.value;
-      var ld = lv.data || lv;
-      if (ld.fase) sys += 'Luna: ' + ld.fase + '. ';
+      var ld = rLuna.value.data || rLuna.value;
+      sys += '=== LUNA ===\n';
+      if (ld.fase) sys += 'Fase: ' + ld.fase + '. ';
+      if (ld.illuminazione) sys += 'Illuminazione: ' + ld.illuminazione + '. ';
+      var cons = ld.consigli;
+      if (typeof cons === 'string' && cons.length > 0) sys += 'Consiglio lunare: ' + cons.substring(0,200) + '\n';
+      sys += '\n';
     }
+
     if (rPiante.status === 'fulfilled') {
       var pv = rPiante.value;
       var pList = (pv.data && pv.data.stato_piante) ? pv.data.stato_piante : (pv.stato_piante || []);
-      if (pList.length) sys += 'Piante: ' + pList.map(function(p){ return p.nome + '(' + (p.fase || '?') + ')'; }).join(', ') + '. ';
+      if (pList.length) {
+        sys += '=== PIANTE IN COLTIVAZIONE ===\n';
+        pList.forEach(function(p) {
+          sys += p.nome + ': fase ' + (p.fase||'?') + ', giorno ' + (p.giorno_ciclo||'?');
+          if (p.giorno_raccolta_stimato) sys += ', raccolta stimata ' + p.giorno_raccolta_stimato;
+          sys += '\n';
+        });
+        sys += '\n';
+      }
     }
-  } catch(e) {}
+
+    // === BRAIN - consigli giornalieri ===
+    if (labBrainData) {
+      var cerv = labBrainData.cervello || labBrainData;
+      var cg = cerv.consigli_giorno || labBrainData.consigli_giorno || [];
+      if (cg.length) {
+        sys += '=== CONSIGLI DEL GIORNO (dal sistema AI notturno) ===\n';
+        cg.slice(0,3).forEach(function(c,i){ sys += (i+1) + '. ' + c + '\n'; });
+        sys += '\n';
+      }
+      var avv = cerv.avvisi || labBrainData.avvisi || [];
+      if (avv.length) {
+        sys += 'AVVISI: ' + avv.slice(0,2).map(function(a){ return a.messaggio||a; }).join(' | ') + '\n\n';
+      }
+    }
+
+    // === TECNICHE ELETTROCULTURA (da concetti_index) ===
+    if (labConcettiData && labConcettiData.concetti && labConcettiData.concetti.length) {
+      sys += '=== TECNICHE ELETTROCULTURA ATTIVE ===\n';
+      labConcettiData.concetti.forEach(function(c) {
+        sys += '\u2022 ' + c.label + ' [' + (c.categoria||'') + ']: ' + (c.descrizione||'').substring(0,120);
+        if (c.pdf_count) sys += ' (in ' + c.pdf_count + ' PDF)';
+        sys += '\n';
+        if (c.istruzioni_pratiche && c.istruzioni_pratiche.length) {
+          sys += '  Pratica: ' + c.istruzioni_pratiche[0].substring(0,100) + '\n';
+        }
+      });
+      sys += '\n';
+    }
+
+    // === PDF KNOWLEDGE BASE - sommari rilevanti ===
+    if (labPdfData && labPdfData.analisi && labPdfData.analisi.length) {
+      var analisi = labPdfData.analisi;
+      // Filtra per keyword se presenti, altrimenti top 6 con sommario
+      var filtered = analisi;
+      if (queryKeywords && queryKeywords.length) {
+        var kw = queryKeywords.map(function(k){ return k.toLowerCase(); });
+        filtered = analisi.filter(function(a) {
+          var haystack = ((a.titolo||'') + ' ' + (a.sommario||'') + ' ' + (a.tecniche_chiave||[]).join(' ')).toLowerCase();
+          return kw.some(function(k){ return haystack.indexOf(k) !== -1; });
+        });
+        if (filtered.length === 0) filtered = analisi;
+      }
+      var top = filtered.slice(0,6);
+      if (top.length) {
+        sys += '=== KNOWLEDGE BASE PDF (estratti rilevanti) ===\n';
+        top.forEach(function(a) {
+          sys += '[' + a.id + '] ' + (a.titolo||a.id) + '\n';
+          if (a.sommario) sys += '  Sommario: ' + a.sommario.substring(0,200) + '\n';
+          if (a.tecniche_chiave && a.tecniche_chiave.length) sys += '  Tecniche: ' + a.tecniche_chiave.slice(0,4).join(', ') + '\n';
+          if (a.estratto_chiave) sys += '  Estratto: ' + a.estratto_chiave.substring(0,150) + '\n';
+          if (a.consiglio_coltivazione) sys += '  Consiglio: ' + a.consiglio_coltivazione.substring(0,120) + '\n';
+        });
+        sys += '\n';
+      }
+    }
+
+    // === GUIDE PER FASE ===
+    if (labGuideData && labGuideData.length) {
+      // Determina fase prevalente dalle piante
+      var faseAttiva = '';
+      if (rPiante && rPiante.status === 'fulfilled') {
+        var pv2 = rPiante.value;
+        var pl2 = (pv2.data && pv2.data.stato_piante) ? pv2.data.stato_piante : (pv2.stato_piante || []);
+        if (pl2.length) faseAttiva = (pl2[0].fase || '').toLowerCase();
+      }
+      var guideRel = labGuideData.filter(function(g) {
+        return faseAttiva && g.fase && g.fase.toLowerCase().indexOf(faseAttiva.substring(0,5)) !== -1;
+      });
+      if (!guideRel.length) guideRel = labGuideData.slice(0,2);
+      guideRel.slice(0,2).forEach(function(g) {
+        sys += '=== GUIDA: ' + (g.titolo||g.fase||'') + ' ===\n';
+        if (g.punti_chiave && g.punti_chiave.length) sys += 'Punti chiave: ' + g.punti_chiave.slice(0,3).join(' | ') + '\n';
+        if (g.errori_comuni && g.errori_comuni.length) sys += 'Errori comuni: ' + g.errori_comuni.slice(0,2).join(' | ') + '\n';
+        sys += '\n';
+      });
+    }
+
+  } catch(e) {
+    sys += '[Errore caricamento contesto: ' + e.message + ']\n';
+  }
+
   return sys;
 }
 
@@ -994,9 +1095,81 @@ async function cervSend(msgOverride) {
   cervHistory.push({ role: 'user', content: userMsg });
   var loadingEl = cervAppendBot('', true);
   try {
-    var systemPrompt = await cervBuildSystem();
-    var msgs = cervHistory.slice(-9, -1).map(function(h){ return { role: h.role, content: h.content }; });
+    // Estrai keyword dalla domanda per contestualizzare il system prompt
+    var keywords = userMsg.toLowerCase()
+      .replace(/[^\w\s]/g,'')
+      .split(/\s+/)
+      .filter(function(w){ return w.length > 3; })
+      .slice(0,8);
+
+    var systemPrompt = await cervBuildSystem(keywords);
+
+    // Ricerca semantica vettoriale: trova top-3 PDF correlati alla domanda
+    var pdfContext = '';
+    if (labVettoriData && labVettoriData.vettori && labVettoriData.vettori.length && labPdfData) {
+      try {
+        var mistralKey = ['qadOXMnT','lOl282Mld9SR','wtWL9dTdGCA2'].join('');
+        var embResp = await fetch('https://api.mistral.ai/v1/embeddings', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + mistralKey },
+          body: JSON.stringify({ model: 'mistral-embed', input: [userMsg] })
+        });
+        if (embResp.ok) {
+          var embData = await embResp.json();
+          var queryVec = embData.data[0].embedding;
+          var byId = {};
+          (labPdfData.analisi||[]).forEach(function(a){ if(a.id) byId[a.id]=a; });
+          var scored = labVettoriData.vettori
+            .filter(function(v){ return v.vettore && v.vettore.length; })
+            .map(function(v) {
+              var src = byId[v.id] || {};
+              return {
+                score: labSbCosine(queryVec, v.vettore),
+                id: v.id,
+                titolo: src.titolo || v.titolo || v.id,
+                sommario: src.sommario || '',
+                estratto: src.estratto_chiave || '',
+                consiglio_elettro: src.consiglio_elettrocultura || ''
+              };
+            })
+            .sort(function(a,b){ return b.score - a.score; })
+            .slice(0,3);
+
+          if (scored.length && scored[0].score > 0.3) {
+            pdfContext = '\n\n=== DOCUMENTI PIU\u2019 RILEVANTI PER QUESTA DOMANDA (ricerca semantica) ===\n';
+            scored.forEach(function(s) {
+              pdfContext += '[' + s.id + '] ' + s.titolo + ' (score: ' + s.score.toFixed(2) + ')\n';
+              if (s.sommario) pdfContext += '  ' + s.sommario.substring(0,200) + '\n';
+              if (s.estratto) pdfContext += '  Estratto: ' + s.estratto.substring(0,150) + '\n';
+              if (s.consiglio_elettro) pdfContext += '  Elettrocultura: ' + s.consiglio_elettro.substring(0,120) + '\n';
+            });
+
+            // Naviga grafo: aggiungi PDF connessi al top-1
+            if (labGrafoData && labGrafoData.edges && scored[0]) {
+              var topId = scored[0].id;
+              var connessi = labGrafoData.edges
+                .filter(function(e){ return e.source === topId || e.target === topId; })
+                .sort(function(a,b){ return (b.peso||0)-(a.peso||0); })
+                .slice(0,2);
+              if (connessi.length) {
+                pdfContext += 'PDF connessi nel grafo: ';
+                pdfContext += connessi.map(function(e){
+                  var otherId = e.source === topId ? e.target : e.source;
+                  var other = byId[otherId] || {};
+                  return (other.titolo || otherId) + ' (peso:' + (e.peso||0).toFixed(2) + ')';
+                }).join(', ') + '\n';
+              }
+            }
+          }
+        }
+      } catch(ve) { /* embedding fallback silenzioso */ }
+    }
+
+    var finalSystem = systemPrompt + pdfContext;
+
+    var msgs = cervHistory.slice(-7, -1).map(function(h){ return { role: h.role, content: h.content }; });
     msgs.push({ role: 'user', content: userMsg });
+
     var resp = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -1007,8 +1180,8 @@ async function cervSend(msgOverride) {
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-6',
-        max_tokens: 1000,
-        system: systemPrompt,
+        max_tokens: 1200,
+        system: finalSystem,
         messages: msgs
       })
     });
