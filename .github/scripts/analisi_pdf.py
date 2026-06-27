@@ -129,8 +129,7 @@ def groq_analizza(titolo, testo):
             with urllib.request.urlopen(req_g, timeout=30) as r:
                 resp = json.load(r)
             raw = resp['choices'][0]['message']['content'].strip()
-            debug_log.append({'titolo': titolo_safe, 'raw': raw[:300], 'tentativo': tentativo})
-            print(f'  Groq risposta ({len(raw)}c): {repr(raw[:200])}')
+            print(f'  Groq raw ({len(raw)}c): {repr(raw[:300])}')
 
             # Parse robusto: cerca primo { e ultimo }
             s = raw.find('{')
