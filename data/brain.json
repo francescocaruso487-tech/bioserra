@@ -1,80 +1,100 @@
 {
-  "lastUpdate": "2026-06-24T03:00:27.990Z",
-  "versione": "4.0",
+  "lastUpdate": "2026-06-27T17:50:20.000Z",
+  "versione": "5.0",
   "cervello": {
     "consigli_giorno": [
-      "Controllare le condizioni climatiche e l'umidità nella serra per garantire un ambiente ottimale per le piante"
+      "Monitora l'umidità del suolo per le piante in essiccazione, evitando ristagni d'acqua.",
+      "Raccogli manualmente le foglie secche intorno alle piante in fioritura per prevenire malattie.",
+      "Proteggi le piante auto da stress idrico nelle ore più calde (12:00-15:00)."
     ],
     "consigli_piante": {
-      "autofiorenti": "Verificare lo stato di crescita e eventuali problemi di salute delle piante autofiorenti come Epsilon F1 e Milky Way",
-      "femminizzate": "Controllare lo stato di crescita e la formazione dei fiori nelle piante femminizzate come Astro Lemonade e Cosmic Cheddar"
+      "autofiorenti": "Ridurre l'irrigazione per Epsilon F1 in essiccazione, mantenendo solo umidità residua.",
+      "femminizzate": "Fornire supporto strutturale a Cosmic Cheddar e Orbital Banana per evitare cedimenti."
     },
     "tecniche_nuove": [
       {
-        "nome": "Impianto di cristalli di quarzo",
-        "descrizione": "Utilizzare cristalli di quarzo per migliorare l'energia della serra",
+        "nome": "Elettro-irrigazione a impulsi",
+        "descrizione": "Applicare brevi impulsi elettrici (5V) al terreno per migliorare l'assorbimento idrico e nutritivo.",
         "materiali": [
-          "cristalli di quarzo",
-          "filo di rame"
+          "generatore 5V DC",
+          "elettrodi in rame",
+          "cavi isolati"
         ],
-        "difficolta": "facile",
-        "fonte": "Royal Queen Seeds"
+        "difficoltà": "media"
       }
     ],
     "scoperte": [
-      "Le piante reagiscono positivamente all'acqua magnetizzata e mostrano un aumento della crescita"
+      "La fase di gibbosa crescente (73% illuminazione) potrebbe favorire la sintesi di terpeni nelle piante in fioritura."
     ],
     "avvisi": [
-      "Controllare le piante per eventuali segni di infestazioni o malattie"
+      "Raccolta imminente per Gaia F1 tra 6 giorni (30/06/2026) - prepara materiali.",
+      "Temperature massime prossime a 36°C: ombreggiatura consigliata tra 11:00 e 16:00."
     ]
   },
   "agenti": {
     "piante": {
-      "stato_generale": "in monitoraggio",
-      "irrigazione": "Irrigare le piante con acqua magnetizzata nel tardo pomeriggio per un totale di 2 litri per pianta",
-      "nutrizione": "Aggiungere un integratore di micronutrienti alle piante per supportare la loro crescita",
-      "attenzione": "Verificare lo stato di crescita e eventuali problemi di salute delle piante autofiorenti come Epsilon F1 e Milky Way",
-      "piante_critiche": []
+      "stato_generale": "monitoraggio",
+      "irrigazione": "Irrigare leggermente le piante in fioritura al tramonto (19:00), evitando le auto in essiccazione.",
+      "nutrizione": "Sospendere fertilizzazione per le auto; per le foto, applicare un booster di potassio (0.5g/L) domani.",
+      "piante_critiche": [
+        {
+          "id": 1,
+          "nome": "Milky Way F1",
+          "giorni_a_raccolta": 13
+        },
+        {
+          "id": 2,
+          "nome": "Titan F1",
+          "giorni_a_raccolta": 12
+        },
+        {
+          "id": 3,
+          "nome": "Medusa F1",
+          "giorni_a_raccolta": 11
+        },
+        {
+          "id": 8,
+          "nome": "Gaia F1",
+          "giorni_a_raccolta": 6
+        }
+      ]
     },
     "ambiente": {
       "luna": {
-        "fase": "Primo Quarto",
-        "emoji": "🌓",
-        "illuminazione_pct": 66,
-        "consiglio": "Luna in crescita."
+        "fase": "Gibbosa Crescente",
+        "emoji": "🌔",
+        "illuminazione_pct": 73,
+        "consiglio": "Ottimo momento per potature leggere e raccolta di materiale vegetale per compost."
       },
-      "biodinamica": {
-        "tipo_giorno": "Foglia",
-        "qualita": "Buono",
-        "consiglio": "Ottimo per irrigazione e trapianto."
-      },
-      "ore_luce": 15,
-      "correlazione": "Primo Quarto + Giorno Foglia",
-      "momento_migliore": "mattino presto"
+      "ore_luce": 15.1
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare il funzionamento della pila galvanica Fe-Cu e della spirale cosmica"
+        "Controlla il funzionamento degli elettrodi in rame per la tecnica di elettro-irrigazione.",
+        "Verifica la carica delle batterie del sistema di monitoraggio ambientale."
       ],
-      "ottimizzazione": "Ottimizza in base alla fase Primo Quarto"
+      "ottimizzazione": "Regola la frequenza degli impulsi elettrici a 10Hz per ottimizzare l'assorbimento radicale."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Impianto di cristalli di quarzo",
-      "descrizione": "Utilizzare cristalli di quarzo per migliorare l'energia della serra",
+      "nome": "Elettro-irrigazione a impulsi",
+      "descrizione": "Applicare brevi impulsi elettrici (5V) al terreno per migliorare l'assorbimento idrico e nutritivo.",
       "materiali": [
-        "cristalli di quarzo",
-        "filo di rame"
+        "generatore 5V DC",
+        "elettrodi in rame",
+        "cavi isolati"
       ],
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds"
+      "difficoltà": "media"
     }
   ],
   "avvisi": [
-    "Controllare le piante per eventuali segni di infestazioni o malattie"
+    "Raccolta imminente per Gaia F1 tra 6 giorni (30/06/2026) - prepara materiali.",
+    "Temperature massime prossime a 36°C: ombreggiatura consigliata tra 11:00 e 16:00."
   ],
   "consigli_giorno": [
-    "Controllare le condizioni climatiche e l'umidità nella serra per garantire un ambiente ottimale per le piante"
+    "Monitora l'umidità del suolo per le piante in essiccazione, evitando ristagni d'acqua.",
+    "Raccogli manualmente le foglie secche intorno alle piante in fioritura per prevenire malattie.",
+    "Proteggi le piante auto da stress idrico nelle ore più calde (12:00-15:00)."
   ]
 }
