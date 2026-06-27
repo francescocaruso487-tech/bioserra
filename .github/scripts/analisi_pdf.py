@@ -86,7 +86,7 @@ def groq_analizza(titolo, testo):
         return None
 
     titolo_safe = titolo.replace('"', "'")[:80]
-    contenuto = testo[:2000] if len(testo) > 50 else 'Documento: ' + titolo_safe
+    contenuto = testo[:500] if len(testo) > 50 else 'Documento: ' + titolo_safe
 
     prompt = (
         'Sei un agronomo esperto di Living Soil e biodinamica per serra outdoor italiana Caserta. '
@@ -102,7 +102,7 @@ def groq_analizza(titolo, testo):
 
     body_data = json.dumps({
         'model': 'llama-3.3-70b-versatile',
-        'max_tokens': 500,
+        'max_tokens': 400,
         'temperature': 0.0,
         'messages': [{'role': 'user', 'content': prompt}]
     }).encode()
@@ -307,7 +307,7 @@ def main():
         print('Salvato.')
         return
 
-    batch = da_analizzare[:12]
+    batch = da_analizzare[:6]
     nuove_analisi = []
 
     debug_log = []  # raccoglie info per debug su GitHub
@@ -359,7 +359,7 @@ def main():
         nuove_analisi.append(result)
         print(f'  OK | tec:{len(result.get("tecniche_chiave",[]))} | sommario:{len(result.get("sommario",""))}c')
 
-        time.sleep(4)  # delay per rate limit Groq
+        time.sleep(8)  # delay generoso per rate limit Groq
 
     # Assembla: validi + nuovi (sovrascrive stessi titoli)
     titoli_nuovi = {a['titolo'].strip().lower() for a in nuove_analisi}
