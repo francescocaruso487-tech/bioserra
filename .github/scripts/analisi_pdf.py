@@ -24,32 +24,75 @@ def gh_put(path, content_b64, sha, message):
         return json.load(r)
 
 def estrai_testo(pdf_bytes):
+    """Estrai testo da PDF. Prova fitz/pdfplumber/pypdf, poi OCR con tesseract."""
     testo = ''
+
+    # Tentativo 1: fitz (pymupdf)
     try:
         import fitz
         doc = fitz.open(stream=pdf_bytes, filetype='pdf')
         pagine = [page.get_text().strip() for i, page in enumerate(doc) if i < 10]
         doc.close()
         testo = '\n'.join(p for p in pagine if p)
-        if testo.strip(): return testo[:3000]
+        if len(testo.strip()) > 100:
+            print(f'  fitz: {len(testo)} chars')
+            return testo[:4000]
     except Exception as ex:
         print(f'  fitz: {ex}')
+
+    # Tentativo 2: pdfplumber
     try:
         import pdfplumber
         with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
             pagine = [page.extract_text() or '' for i, page in enumerate(pdf.pages) if i < 10]
         testo = '\n'.join(p.strip() for p in pagine if p.strip())
-        if testo.strip(): return testo[:3000]
+        if len(testo.strip()) > 100:
+            print(f'  pdfplumber: {len(testo)} chars')
+            return testo[:4000]
     except Exception as ex:
         print(f'  pdfplumber: {ex}')
+
+    # Tentativo 3: pypdf
     try:
         import pypdf
         reader = pypdf.PdfReader(io.BytesIO(pdf_bytes))
         pagine = [page.extract_text() or '' for i, page in enumerate(reader.pages) if i < 10]
         testo = '\n'.join(p.strip() for p in pagine if p.strip())
-        if testo.strip(): return testo[:3000]
+        if len(testo.strip()) > 100:
+            print(f'  pypdf: {len(testo)} chars')
+            return testo[:4000]
     except Exception as ex:
         print(f'  pypdf: {ex}')
+
+    # Tentativo 4: OCR con Tesseract (PDF scansionati)
+    print('  Testo digitale vuoto - provo OCR...')
+    try:
+        import pytesseract
+        from pdf2image import convert_from_bytes
+        from PIL import Image
+
+        # Rasterizza prime 5 pagine a 200 DPI (bilanciamento qualita/velocita)
+        images = convert_from_bytes(pdf_bytes, dpi=200, first_page=1, last_page=5)
+        testo_ocr = ''
+        for i, img in enumerate(images):
+            # Prova italiano prima, poi inglese come fallback
+            try:
+                page_text = pytesseract.image_to_string(img, lang='ita+eng', config='--psm 3')
+            except Exception:
+                page_text = pytesseract.image_to_string(img, lang='eng', config='--psm 3')
+            testo_ocr += page_text.strip() + '\n'
+            if len(testo_ocr) > 3000:
+                break
+
+        testo_ocr = testo_ocr.strip()
+        if len(testo_ocr) > 50:
+            print(f'  OCR tesseract: {len(testo_ocr)} chars')
+            return testo_ocr[:4000]
+        else:
+            print(f'  OCR: risultato scarso ({len(testo_ocr)} chars)')
+    except Exception as ex:
+        print(f'  OCR: {ex}')
+
     return ''
 
 def mistral_analizza(titolo, testo):
@@ -58,23 +101,27 @@ def mistral_analizza(titolo, testo):
         return None
 
     titolo_safe = titolo.replace('"', "'")[:80]
-    contenuto = testo[:800] if len(testo) > 50 else '(PDF scansionato, analizza dal titolo)'
+    ha_testo = len(testo) > 80
+    contenuto = testo[:2000] if ha_testo else '(PDF scansionato senza testo estraibile, analizza dal titolo)'
 
     prompt = (
         'Sei un agronomo esperto di Living Soil, biodinamica ed elettrocultura per serra outdoor italiana.\n'
         'Analizza questo documento per la serra BioSerra Caserta.\n'
         'Tecniche attive: Lakhovsky, Fe-Cu, acqua magnetizzata, spirale rame, antenna terra.\n\n'
         'Titolo: ' + titolo_safe + '\n'
-        'Contenuto: ' + contenuto + '\n\n'
+        'Contenuto estratto: ' + contenuto + '\n\n'
         'Rispondi SOLO con JSON valido, niente testo fuori:\n'
-        '{"sommario":"2 frasi sul contenuto reale","tecniche_chiave":["tecnica1","tecnica2"],'
-        '"consiglio_coltivazione":"azione pratica concreta","consiglio_elettrocultura":"",'
-        '"tag":["tag1","tag2"],"estratto_chiave":"frase chiave max 150 char"}'
+        '{"sommario":"2-3 frasi sul contenuto reale del documento",'
+        '"tecniche_chiave":["tecnica1","tecnica2","tecnica3"],'
+        '"consiglio_coltivazione":"azione pratica concreta per la serra",'
+        '"consiglio_elettrocultura":"applicazione specifica con Lakhovsky/Fe-Cu/spirale rame",'
+        '"tag":["tag1","tag2","tag3"],'
+        '"estratto_chiave":"frase o concetto chiave max 180 char dal testo"}'
     )
 
     body_data = json.dumps({
         'model': 'mistral-small-latest',
-        'max_tokens': 400,
+        'max_tokens': 500,
         'temperature': 0.0,
         'messages': [{'role': 'user', 'content': prompt}]
     }).encode()
@@ -97,7 +144,7 @@ def mistral_analizza(titolo, testo):
         return None
 
     raw = resp['choices'][0]['message']['content'].strip()
-    print(f'  Raw ({len(raw)}c): {repr(raw[:200])}')
+    print(f'  Raw ({len(raw)}c): {repr(raw[:150])}')
 
     s = raw.find('{')
     e = raw.rfind('}')
@@ -196,30 +243,38 @@ def ricalcola_connessioni(analisi):
 
 def main():
     oggi = datetime.date.today().isoformat()
-    print('=== BioSerra Analisi PDF v11 (Mistral chat) ===')
+    print('=== BioSerra Analisi PDF v12 (Mistral + OCR Tesseract) ===')
     print(f'MISTRAL_KEY: {"PRESENTE " + MISTRAL_KEY[:10] + "..." if MISTRAL_KEY else "ASSENTE"}')
 
-    os.system('pip install pymupdf pdfplumber pypdf -q 2>/dev/null')
+    # Installa dipendenze (OCR incluso)
+    os.system('pip install pymupdf pdfplumber pypdf pytesseract pdf2image Pillow -q 2>/dev/null')
 
     kdata = gh_get('data/pdf_knowledge.json')
     knowledge = json.loads(base64.b64decode(kdata['content'].replace('\n', '')).decode('utf-8'))
     analisi_esistenti = knowledge.get('analisi', [])
 
-    # Validi = analizzati da Mistral
+    # Considera validi: Mistral analizzato con testo reale (ha estratto_chiave non vuoto e sommario >80 chars)
     analisi_valide = [a for a in analisi_esistenti if a.get('mistral_analizzato') is True]
-    titoli_validi = {a['titolo'].strip().lower() for a in analisi_valide}
-    print(f'Gia analizzati con Mistral: {len(analisi_valide)}/89')
+    # Rianalizza quelli con sommario scarso (probabilmente analizzati senza OCR)
+    analisi_da_rifare = [a for a in analisi_valide
+                         if len(a.get('sommario','')) < 80 or a.get('estratto_chiave','') == '']
+    analisi_ok = [a for a in analisi_valide if a not in analisi_da_rifare]
+    titoli_ok = {a['titolo'].strip().lower() for a in analisi_ok}
+
+    print(f'Analisi Mistral OK: {len(analisi_ok)}/89')
+    print(f'Da rianalizzare (sommario scarso): {len(analisi_da_rifare)}')
 
     manuali = gh_get('MANUALI')
     pdf_files = sorted([f for f in manuali if f['name'].endswith('.pdf')], key=lambda x: x['name'])
     print(f'PDF in MANUALI/: {len(pdf_files)}')
 
+    # Priorita: nuovi PDF + quelli con sommario scarso
     da_analizzare = [f for f in pdf_files
-                     if f['name'].replace('.pdf', '').strip().lower() not in titoli_validi]
-    print(f'Da analizzare: {len(da_analizzare)}')
+                     if f['name'].replace('.pdf', '').strip().lower() not in titoli_ok]
+    print(f'Da analizzare (nuovi + da rifare): {len(da_analizzare)}')
 
     if not da_analizzare:
-        print('Tutti analizzati — ricalcolo connessioni')
+        print('Tutti analizzati con qualita OK - ricalcolo connessioni')
         for a in analisi_esistenti:
             a['rilevanza'] = 'alta'
         knowledge['analisi'] = ricalcola_connessioni(analisi_esistenti)
@@ -230,8 +285,9 @@ def main():
         print('Salvato.')
         return
 
-    batch = da_analizzare[:10]
+    batch = da_analizzare[:8]  # 8 per notte (OCR e' piu lento)
     nuove = []
+    ocr_count = 0
 
     for i, pdf_file in enumerate(batch):
         titolo = pdf_file['name'].replace('.pdf', '').strip()
@@ -247,12 +303,16 @@ def main():
                     pdf_bytes = base64.b64decode(raw_b64)
                     print(f'  PDF: {size_mb:.1f} MB')
                 else:
-                    print(f'  Troppo grande ({size_mb:.1f}MB)')
+                    print(f'  Troppo grande ({size_mb:.1f}MB) - skip')
+                    continue
         except Exception as ex:
             print(f'  Download: {ex}')
 
         testo = estrai_testo(pdf_bytes) if pdf_bytes else ''
-        print(f'  Testo: {len(testo)} chars')
+        usato_ocr = 'OCR' in ''.join(
+            [l for l in [] ]  # placeholder, log interno
+        )
+        print(f'  Testo estratto: {len(testo)} chars')
 
         result = mistral_analizza(titolo, testo) if MISTRAL_KEY else None
         mistral_ok = result is not None
@@ -265,13 +325,15 @@ def main():
         result['data_analisi'] = oggi
         result['rilevanza'] = 'alta'
         result['mistral_analizzato'] = mistral_ok
+        result['testo_chars'] = len(testo)  # traccia quanti chars OCR ha estratto
         nuove.append(result)
         print(f'  [{"Mistral" if mistral_ok else "locale"}] sommario:{len(result.get("sommario",""))}c tec:{len(result.get("tecniche_chiave",[]))}')
 
-        time.sleep(2)
+        time.sleep(3)  # OCR piu lento, piu pausa
 
+    # Merge: ok esistenti + nuovi
     titoli_nuovi = {a['titolo'].strip().lower() for a in nuove}
-    tutte = [a for a in analisi_valide if a['titolo'].strip().lower() not in titoli_nuovi] + nuove
+    tutte = [a for a in analisi_ok if a['titolo'].strip().lower() not in titoli_nuovi] + nuove
 
     for idx, a in enumerate(tutte):
         a['id'] = a.get('id') or f'pdf_{idx}'
@@ -289,7 +351,7 @@ def main():
     sha_fresco = gh_get('data/pdf_knowledge.json')['sha']
     mistral_count = sum(1 for a in nuove if a.get('mistral_analizzato'))
     gh_put('data/pdf_knowledge.json', content_b64, sha_fresco,
-           f'BioSerra PDF {oggi} (+{len(nuove)} mistral:{mistral_count}, tot:{len(tutte)}/89)')
+           f'BioSerra PDF v12 {oggi} (+{len(nuove)} mistral:{mistral_count} tot:{len(tutte)}/89)')
 
     con_conn = sum(1 for a in tutte if len(a.get('connessioni', [])) > 0)
     print(f'\n=== +{len(nuove)} | tot:{len(tutte)}/89 | Mistral:{mistral_count} | conn:{con_conn} ===')
