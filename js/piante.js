@@ -114,7 +114,7 @@ function switchPianteTab(tab) {
         btn.classList.add('active');
     });
   }
-  if (tab === 'archivio') renderArchive();
+  if (tab === 'archivio') { renderArchive(); archivioAutoSync(); }
 }
 
 /* ── Light hours (config slider in Impostazioni) ── */
@@ -771,6 +771,7 @@ function renderActivePlants() {
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px;">
         <button onclick="openPhaseModal(${p.id})" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:8px 4px;color:var(--text2);font-size:12px;cursor:pointer;text-align:center;">✏️ Modifica fase</button>
         <button onclick="openArchiveModal(${p.id})" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:8px 4px;color:var(--text2);font-size:12px;cursor:pointer;text-align:center;">📦 Archivia</button>
+        <button onclick="openDiarioModal(${p.id})" style="background:rgba(100,181,246,0.1);border:1px solid rgba(100,181,246,0.3);border-radius:10px;padding:8px 4px;color:#64b5f6;font-size:12px;cursor:pointer;text-align:center;font-weight:600;">Diario</button>
         ${ovr ? `<button onclick="resetPhaseOverride(${p.id})" style="background:rgba(239,83,80,0.1);border:1px solid rgba(239,83,80,0.25);border-radius:10px;padding:8px 4px;color:#ef9a9a;font-size:12px;cursor:pointer;text-align:center;">↩ Ripristina</button>` : `<button onclick="saveGermDate(${p.id}, document.querySelector('[data-id=\\'${p.id}\\']').value)" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:8px 4px;color:var(--text2);font-size:12px;cursor:pointer;text-align:center;">🌱 Aggior. germ.</button>`}
         ${p.type === 'femm' && !loadFlorConfirm(p.id) ? `<button onclick="confirmFlorStart(${p.id})" style="background:rgba(171,71,188,0.15);border:1px solid rgba(171,71,188,0.3);border-radius:10px;padding:8px 4px;color:#ce93d8;font-size:12px;cursor:pointer;text-align:center;">🌸 Conf. fior.</button>` : `<button onclick="renderTimelineInBox(${p.id})" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:8px 4px;color:var(--text2);font-size:12px;cursor:pointer;text-align:center;">🔄 Aggiorna</button>`}
       </div>`;
@@ -1032,7 +1033,7 @@ async function archivioSync() {
   const btn = document.getElementById('btn-archivio-sync');
   if (btn) { btn.textContent = '⏳…'; btn.disabled = true; }
   try {
-    const data = await fetchGHJson('data/esperimenti.json');
+    const data = await fetchGHJson('data/storico_cicli.json');
     if (!data || !Array.isArray(data.storico_cicli) || !data.storico_cicli.length) {
       _archivioToast('☁️ Nessun ciclo remoto trovato');
     } else {
@@ -1132,9 +1133,13 @@ function saveNewPlant() {
    STORICO CICLI — Modal Archiviazione Arricchito
 ══════════════════════════════════════════════════════ */
 
-const _GH_TOK  = ['ghp_dtR2oW','iOCz8XGENX','d2uTmrj40Nj8As1xVqMD'].join('');
-const _GH_REPO = 'francescocaruso487-tech/bioserra';
-const _ESP_PATH = 'data/esperimenti.json';
+const _GH_TOK       = ['ghp_dtR2oW','iOCz8XGENX','d2uTmrj40Nj8As1xVqMD'].join('');
+const _GH_REPO      = 'francescocaruso487-tech/bioserra';
+const _ESP_PATH     = 'data/esperimenti.json';
+const _STORICO_PATH = 'data/storico_cicli.json';
+const _DIARIO_PATH  = 'data/diario_interventi.json';
+let _diarioPiantaId = null;
+let _diarioTempC    = null;
 let _archStelle = 0;
 
 /* ── Stelle interattive ── */
@@ -1257,7 +1262,7 @@ function confirmArchive() {
 async function _syncStoricoGitHub(plant, raccoltaStr, durata) {
   try {
     const metaRes = await fetch(
-      `https://api.github.com/repos/${_GH_REPO}/contents/${_ESP_PATH}`,
+      `https://api.github.com/repos/${_GH_REPO}/contents/${_STORICO_PATH}`,
       { headers: { 'Authorization': 'token ' + _GH_TOK } }
     );
     let currentContent = {}, sha = null;
@@ -1297,7 +1302,7 @@ async function _syncStoricoGitHub(plant, raccoltaStr, durata) {
     if (sha) putBody.sha = sha;
 
     const putRes = await fetch(
-      `https://api.github.com/repos/${_GH_REPO}/contents/${_ESP_PATH}`,
+      `https://api.github.com/repos/${_GH_REPO}/contents/${_STORICO_PATH}`,
       {
         method: 'PUT',
         headers: {'Authorization':'token '+_GH_TOK,'Content-Type':'application/json'},
@@ -1745,4 +1750,204 @@ function initPiante() {
   } catch(e) {}
   renderActivePlants();
   checkHarvestAlerts();
+}
+
+/* =====================================================
+   DIARIO INTERVENTI
+===================================================== */
+
+const DIARIO_TIPI = {
+  irrigazione:          'Irrigazione',
+  acqua_magnetizzata:   'Acqua Magnetizzata',
+  spirale_rame:         'Spirale in Rame',
+  fe_cu:                'Fe-Cu',
+  lakhovsky:            'Lakhovsky',
+  trattamento_fogliare: 'Trattamento Fogliare',
+  nutrizione:           'Nutrizione',
+  esperimento:          'Esperimento',
+  osservazione:         'Osservazione',
+  altro:                'Altro'
+};
+
+function loadDiario() {
+  try { return JSON.parse(localStorage.getItem('bioserra_diario') || '[]'); }
+  catch(e) { return []; }
+}
+function saveDiario(arr) {
+  localStorage.setItem('bioserra_diario', JSON.stringify(arr));
+}
+
+function openDiarioModal(id) {
+  const plants = loadActivePlants();
+  const p = plants.find(x => x.id === id);
+  if (!p) return;
+  _diarioPiantaId = id;
+  document.getElementById('diario-plant-id').value = id;
+  document.getElementById('diario-plant-name').textContent = (p.icon || '') + ' ' + p.name;
+  document.getElementById('diario-data').value = new Date().toISOString().slice(0,10);
+  document.getElementById('diario-note').value = '';
+  document.getElementById('diario-tipo').value = 'irrigazione';
+  document.getElementById('diario-tutte').checked = false;
+
+  const allPlants = loadActivePlants();
+  const selDiv = document.getElementById('diario-piante-sel');
+  selDiv.innerHTML = '';
+  allPlants.forEach(function(pl) {
+    const chk = document.createElement('label');
+    chk.style.cssText = 'display:flex;align-items:center;gap:4px;font-size:12px;color:var(--text2);background:var(--bg3);border-radius:6px;padding:4px 8px;cursor:pointer;';
+    const isChecked = pl.id === id ? 'checked' : '';
+    chk.innerHTML = '<input type="checkbox" class="diario-pianta-chk" data-id="' + pl.id + '" ' + isChecked + ' style="accent-color:var(--green3);"> ' + (pl.icon || '') + ' ' + pl.name;
+    selDiv.appendChild(chk);
+  });
+
+  _diarioTempC = null;
+  document.getElementById('diario-temp-display').textContent = '...';
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=41.097&longitude=14.388&current=temperature_2m&timezone=Europe/Rome')
+    .then(r => r.json())
+    .then(d => {
+      _diarioTempC = (d.current && d.current.temperature_2m != null) ? d.current.temperature_2m : null;
+      document.getElementById('diario-temp-display').textContent = _diarioTempC !== null ? _diarioTempC + '\u00B0C' : 'N/D';
+    })
+    .catch(() => { document.getElementById('diario-temp-display').textContent = 'N/D'; });
+
+  diarioSwitchTab('aggiungi');
+  document.getElementById('modal-diario-pianta').classList.add('open');
+}
+
+function closeDiarioModal(e) {
+  const m = document.getElementById('modal-diario-pianta');
+  if (!e || e.target === m) { if (m) m.classList.remove('open'); }
+}
+
+function diarioSwitchTab(tab) {
+  const isAgg = tab === 'aggiungi';
+  document.getElementById('diario-panel-aggiungi').style.display = isAgg ? 'block' : 'none';
+  document.getElementById('diario-panel-storico').style.display  = isAgg ? 'none'  : 'block';
+  const btnA = document.getElementById('diario-tab-aggiungi');
+  const btnS = document.getElementById('diario-tab-storico');
+  if (btnA) {
+    btnA.style.background  = isAgg ? 'var(--green3)' : 'transparent';
+    btnA.style.color       = isAgg ? '#fff' : 'var(--text3)';
+    btnA.style.borderColor = isAgg ? 'var(--green3)' : 'var(--border)';
+  }
+  if (btnS) {
+    btnS.style.background  = !isAgg ? 'var(--green3)' : 'transparent';
+    btnS.style.color       = !isAgg ? '#fff' : 'var(--text3)';
+    btnS.style.borderColor = !isAgg ? 'var(--green3)' : 'var(--border)';
+  }
+  if (!isAgg) diarioRenderStorico(_diarioPiantaId);
+}
+
+function diarioToggleTutte(checked) {
+  document.querySelectorAll('.diario-pianta-chk').forEach(c => { c.checked = checked; });
+}
+
+function diarioSalvaIntervento() {
+  const tipo = document.getElementById('diario-tipo').value;
+  const data = document.getElementById('diario-data').value || new Date().toISOString().slice(0,10);
+  const note = document.getElementById('diario-note').value.trim().slice(0,300);
+  const ora  = new Date().toTimeString().slice(0,5);
+  const pianteIds = [];
+  document.querySelectorAll('.diario-pianta-chk:checked').forEach(c => {
+    pianteIds.push(parseInt(c.dataset.id));
+  });
+  if (!pianteIds.length) { alert('Seleziona almeno una pianta'); return; }
+  const intervento = {
+    id: Date.now(), data: data, ora: ora,
+    tipo: tipo, piante: pianteIds, note: note, temp_c: _diarioTempC
+  };
+  const diario = loadDiario();
+  diario.push(intervento);
+  saveDiario(diario);
+  document.getElementById('diario-note').value = '';
+  document.getElementById('diario-tutte').checked = false;
+  _archivioToast('Intervento salvato!');
+  _syncDiarioGitHub(intervento);
+  diarioSwitchTab('storico');
+}
+
+function diarioRenderStorico(plantId) {
+  const container = document.getElementById('diario-storico-list');
+  if (!container) return;
+  const diario   = loadDiario();
+  const filtrati = diario.filter(iv => iv.piante && iv.piante.indexOf(plantId) !== -1).slice().reverse();
+  if (!filtrati.length) {
+    container.innerHTML = '<div style="text-align:center;padding:24px 0;color:var(--text3);font-size:13px;">Nessun intervento registrato<br>per questa pianta.</div>';
+    return;
+  }
+  let html = '';
+  filtrati.forEach(iv => {
+    const tipoLabel = DIARIO_TIPI[iv.tipo] || iv.tipo;
+    const dataFmt   = iv.data
+      ? new Date(iv.data + 'T12:00:00').toLocaleDateString('it-IT',{day:'2-digit',month:'short',year:'numeric'})
+      : '';
+    const tempStr = iv.temp_c != null ? iv.temp_c + '\u00B0C' : '';
+    html += '<div style="border-radius:10px;border:1px solid var(--border);background:var(--bg3);padding:10px 12px;margin-bottom:8px;">'
+      + '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">'
+        + '<span style="font-size:13px;font-weight:700;color:var(--text);">' + tipoLabel + '</span>'
+        + '<span style="font-size:11px;color:var(--text3);">' + dataFmt + (iv.ora ? ' ' + iv.ora : '') + '</span>'
+      + '</div>'
+      + (tempStr ? '<div style="font-size:11px;color:var(--green3);">Temp: ' + tempStr + '</div>' : '')
+      + (iv.note ? '<div style="font-size:12px;color:var(--text2);margin-top:6px;line-height:1.5;">' + iv.note + '</div>' : '')
+      + '</div>';
+  });
+  container.innerHTML = html;
+}
+
+async function _syncDiarioGitHub(intervento) {
+  try {
+    const metaRes = await fetch(
+      'https://api.github.com/repos/' + _GH_REPO + '/contents/' + _DIARIO_PATH,
+      { headers: { 'Authorization': 'token ' + _GH_TOK } }
+    );
+    let currentContent = { versione: '1.0', interventi: [] }, sha = null;
+    if (metaRes.ok) {
+      const meta = await metaRes.json();
+      sha = meta.sha;
+      try { currentContent = JSON.parse(atob(meta.content.replace(/\n/g,''))); }
+      catch(e) { currentContent = { versione: '1.0', interventi: [] }; }
+    }
+    if (!Array.isArray(currentContent.interventi)) currentContent.interventi = [];
+    currentContent.interventi.push(intervento);
+    currentContent.lastUpdate = new Date().toISOString();
+    const putBody = {
+      message: 'diario: ' + intervento.tipo + ' ' + intervento.data,
+      content: btoa(unescape(encodeURIComponent(JSON.stringify(currentContent, null, 2)))),
+      branch: 'main'
+    };
+    if (sha) putBody.sha = sha;
+    await fetch(
+      'https://api.github.com/repos/' + _GH_REPO + '/contents/' + _DIARIO_PATH,
+      { method: 'PUT', headers: {'Authorization':'token '+_GH_TOK,'Content-Type':'application/json'}, body: JSON.stringify(putBody) }
+    );
+  } catch(e) { console.warn('[BioSerra] Sync diario:', e.message); }
+}
+
+async function archivioAutoSync() {
+  try {
+    const data = await fetchGHJson('data/storico_cicli.json');
+    if (!data || !Array.isArray(data.storico_cicli) || !data.storico_cicli.length) return;
+    const local = loadArchivedPlants();
+    const lKeys = new Set(local.map(p => p.id + '_' + (p.data_raccolta||'')));
+    const nuovi = data.storico_cicli.filter(s => !lKeys.has(s.id_pianta + '_' + (s.raccolta||'')));
+    if (nuovi.length) {
+      nuovi.forEach(s => {
+        const rs = s.raccolta || new Date().toISOString().slice(0,10);
+        local.push({
+          id:s.id_pianta, name:s.nome, type:s.tipo==='autofiorente'?'auto':'femm',
+          icon:'', germDate:s.germinazione, data_raccolta:rs,
+          durata_giorni:s.durata_giorni, resa_grammi:s.resa_grammi,
+          metodo:s.metodo, stelle:s.stelle, notes:s.note,
+          harvestMin:0, harvestMax:0,
+          ess_end:  addDays(new Date(rs),14).toISOString().slice(0,10),
+          conc_end: addDays(new Date(rs),28).toISOString().slice(0,10),
+          archivedAt:(s.data_archiviazione||new Date().toISOString().slice(0,10))+'T00:00:00.000Z',
+          fromGitHub:true
+        });
+      });
+      saveArchivedPlants(local);
+      renderArchive();
+      _archivioToast('Importati ' + nuovi.length + ' cicli da GitHub');
+    }
+  } catch(e) { /* silenzioso */ }
 }
