@@ -130,6 +130,7 @@ function updateLightHours(val) {
 }
 
 /* ── Sun hours slider (locale nelle Piante) ── */
+let _sunHoursDebounce = null;
 function updateSunHours(val) {
   val = Math.min(14, Math.max(1, parseFloat(val) || 10));
   currentSunHours = val;
@@ -140,6 +141,36 @@ function updateSunHours(val) {
   if (inp) inp.value = val;
   // Aggiorna nota resa su tutte le piante senza ricalcolare date
   renderActivePlants();
+  // Sync ore_luce_effettive su GitHub (debounce 2s)
+  clearTimeout(_sunHoursDebounce);
+  _sunHoursDebounce = setTimeout(() => _syncOreLuceGitHub(val), 2000);
+}
+
+async function _syncOreLuceGitHub(ore) {
+  try {
+    const _url = `https://api.github.com/repos/${_GH_REPO}/contents/data/piante_stato.json`;
+    const _hdr = { 'Authorization': 'token ' + _GH_TOK };
+    const metaRes = await fetch(_url, { headers: _hdr });
+    if (!metaRes.ok) return;
+    const meta = await metaRes.json();
+    let stato = {};
+    try { stato = JSON.parse(atob(meta.content.replace(/\n/g,''))); } catch(e) { stato = {}; }
+    stato.ore_luce_effettive = ore;
+    stato.ore_luce_update = new Date().toISOString().slice(0,16);
+    const putRes = await fetch(_url, {
+      method: 'PUT',
+      headers: { ..._hdr, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: `piante: ore luce effettive ${ore}h`,
+        content: btoa(unescape(encodeURIComponent(JSON.stringify(stato, null, 2)))),
+        sha: meta.sha,
+        branch: 'main'
+      })
+    });
+    if (putRes.ok) console.log('[BioSerra] Ore luce sincronizzate:', ore + 'h');
+  } catch(e) {
+    console.warn('[BioSerra] Sync ore luce:', e.message);
+  }
 }
 
 /* ── Germ date ── */
