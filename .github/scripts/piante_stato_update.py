@@ -44,7 +44,8 @@ def gh_put(path, content_b64, sha, message):
     with urllib.request.urlopen(req) as r:
         return json.load(r)
 
-def fetch_ore_luce():
+def fetch_ore_luce_astronomiche():
+    """Open-Meteo: ore luce astronomiche (per info, non usate nei calcoli)"""
     try:
         url = (
             f'https://api.open-meteo.com/v1/forecast'
@@ -59,25 +60,33 @@ def fetch_ore_luce():
         ss = daily.get('sunset',  [''])[0]
         if sr and ss:
             diff = datetime.datetime.fromisoformat(ss) - datetime.datetime.fromisoformat(sr)
-            ore = round(diff.total_seconds() / 3600, 2)
-            print(f'  Ore luce: {ore}h')
-            return ore
+            return round(diff.total_seconds() / 3600, 2)
     except Exception as ex:
         print(f'  Meteo error: {ex}')
-    return 14.5
+    return None
 
 def main():
     oggi = datetime.date.today()
     oggi_iso = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
     print(f'=== BioSerra Piante Stato Update ({oggi.isoformat()}) ===')
 
-    ore_luce = fetch_ore_luce()
-
-    # Leggi stato attuale — la fase viene PRESERVATA da qui
+    # Leggi stato attuale — la fase E le ore luce effettive vengono PRESERVATE da qui
     print('Leggo piante_stato.json attuale...')
     raw, sha = gh_get('data/piante_stato.json')
     stato_attuale = json.loads(raw)
-    # Mappa id -> entry attuale per recuperare la fase reale
+
+    # Ore luce effettive: impostate dall'utente via slider nell'app
+    # Fallback: ore astronomiche da Open-Meteo se non ancora impostato
+    ore_luce_effettive = stato_attuale.get('ore_luce_effettive', None)
+    if ore_luce_effettive:
+        print(f'  Ore luce effettive (da app): {ore_luce_effettive}h')
+        ore_luce = float(ore_luce_effettive)
+    else:
+        ore_luce_astro = fetch_ore_luce_astronomiche()
+        ore_luce = ore_luce_astro if ore_luce_astro else 14.5
+        print(f'  Ore luce effettive non impostate — uso astronomiche: {ore_luce}h')
+
+    # Mappa id -> fase attuale per recuperarla (fonte di verita = app)
     fase_map = {}
     for p in stato_attuale.get('data', {}).get('stato_piante', []):
         fase_map[p['id']] = p.get('fase', 'Vegetazione')
