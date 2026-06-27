@@ -1,29 +1,32 @@
 {
   "lastUpdate": "2026-06-27",
-  "total": 9,
+  "total": 15,
   "fonte": "89 PDF analizzati",
   "concetti": [
     {
       "id": "acqua_magnetizzata",
       "label": "Acqua Magnetizzata",
       "categoria": "elettrocultura",
-      "descrizione": "Acqua Magnetizzata presente in 74 documenti.",
+      "descrizione": "Applica acqua sottoposta a campi magnetici per migliorare l'assorbimento radicale e la vitalità cellulare.",
       "istruzioni_pratiche": [
-        "Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante la fase di fioritura",
-        "Applicare la spirale rame intorno alle piante per armonizzare i campi energetici e favorire la crescita, integrando acqu",
-        "Monitora i risultati"
+        "Filtra l'acqua e passala attraverso un magnete permanente (N-S) per 10-15 minuti.",
+        "Utilizza l'acqua magnetizzata per l'irrigazione a goccia o per nebulizzazione fogliare.",
+        "Evita di magnetizzare l'acqua per più di 24 ore prima dell'uso."
       ],
       "varianti": [
         "acqua magnetizzata"
       ],
       "fasi_guida": [
+        "germinazione",
         "vegetazione",
-        "fioritura"
+        "fioritura",
+        "taglio"
       ],
       "rilevanza": 95,
       "tag_correlati": [
-        "irrigazione",
-        "living-soil"
+        "idratazione",
+        "radici",
+        "stress idrico"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -40,14 +43,14 @@
       "pdf_count": 10
     },
     {
-      "id": "antenna_di_terra",
+      "id": "antenna_terra",
       "label": "Antenna di Terra",
       "categoria": "elettrocultura",
-      "descrizione": "Antenna di Terra presente in 72 documenti.",
+      "descrizione": "Collega un conduttore metallico al terreno per captare e trasmettere energie telluriche alle piante.",
       "istruzioni_pratiche": [
-        "Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante la fase di fioritura",
-        "Applicare la spirale in rame intorno al fusto delle piante per 2-3 settimane all’inizio della stagione, monitorando la r",
-        "Monitora i risultati"
+        "Inserisci un'asta di rame o acciaio zincato nel terreno vicino alle radici.",
+        "Collega l'antenna a una spirale di rame posizionata sopra la chioma o a un circuito Lakhovsky.",
+        "Assicurati che il contatto con il suolo sia stabile e umido per una buona conduzione."
       ],
       "varianti": [
         "antenna di terra",
@@ -57,10 +60,11 @@
         "vegetazione",
         "fioritura"
       ],
-      "rilevanza": 95,
+      "rilevanza": 85,
       "tag_correlati": [
-        "elettrocultura",
-        "living-soil"
+        "energia tellurica",
+        "radici",
+        "conduzione"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -77,14 +81,14 @@
       "pdf_count": 10
     },
     {
-      "id": "spirale_in_rame",
+      "id": "spirale_rame",
       "label": "Spirale in Rame",
       "categoria": "elettrocultura",
-      "descrizione": "Spirale in Rame presente in 72 documenti.",
+      "descrizione": "Posiziona una spirale di rame intorno alla pianta per generare campi elettromagnetici benefici.",
       "istruzioni_pratiche": [
-        "Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante la fase di fioritura",
-        "Applicare la spirale in rame intorno al fusto delle piante per 2-3 settimane all’inizio della stagione, monitorando la r",
-        "Monitora i risultati"
+        "Avvolgi un filo di rame (1-2 mm) in spirale con diametro 10-15 cm intorno al fusto.",
+        "Orientala in senso orario per piante in vegetazione, antiorario per fioritura.",
+        "Sostituisci la spirale ogni 2-3 mesi per evitare ossidazione eccessiva."
       ],
       "varianti": [
         "spirale rame",
@@ -95,84 +99,11 @@
         "vegetazione",
         "fioritura"
       ],
-      "rilevanza": 95,
+      "rilevanza": 80,
       "tag_correlati": [
-        "elettrocultura",
-        "living-soil"
-      ],
-      "pdf_ids": [
-        "pdf_0",
-        "pdf_13",
-        "pdf_14",
-        "pdf_16",
-        "pdf_18",
-        "pdf_28",
-        "pdf_34",
-        "pdf_55",
-        "pdf_57",
-        "pdf_59"
-      ],
-      "pdf_count": 10
-    },
-    {
-      "id": "circuito_di_lakhovsky",
-      "label": "Circuito di Lakhovsky",
-      "categoria": "elettrocultura",
-      "descrizione": "Circuito di Lakhovsky presente in 75 documenti.",
-      "istruzioni_pratiche": [
-        "Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante la fase di fioritura",
-        "Utilizzare acqua magnetizzata per l'irrigazione, combinata con spirali in rame posizionate intorno alle piante per stimo",
-        "Monitora i risultati"
-      ],
-      "varianti": [
-        "lakhovsky",
-        "risonanza di lakhovsky"
-      ],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 95,
-      "tag_correlati": [
-        "elettrocultura",
-        "living-soil"
-      ],
-      "pdf_ids": [
-        "pdf_0",
-        "pdf_16",
-        "pdf_43",
-        "pdf_55",
-        "pdf_62",
-        "pdf_63",
-        "pdf_64",
-        "pdf_66",
-        "pdf_78",
-        "pdf_79"
-      ],
-      "pdf_count": 10
-    },
-    {
-      "id": "elettrodi_fe_cu",
-      "label": "Elettrodi Fe-Cu",
-      "categoria": "elettrocultura",
-      "descrizione": "Elettrodi Fe-Cu presente in 74 documenti.",
-      "istruzioni_pratiche": [
-        "Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante la fase di fioritura",
-        "Applicare la spirale in rame intorno al fusto delle piante per 2-3 settimane all’inizio della stagione, monitorando la r",
-        "Monitora i risultati"
-      ],
-      "varianti": [
-        "fe-cu",
-        "ferro-rame"
-      ],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 95,
-      "tag_correlati": [
-        "elettrocultura",
-        "living-soil"
+        "campi EM",
+        "crescita",
+        "antiossidante"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -189,53 +120,109 @@
       "pdf_count": 10
     },
     {
-      "id": "atomo_magnetico_di_ighina",
-      "label": "Atomo Magnetico di Ighina",
+      "id": "circuito_lakhovsky",
+      "label": "Circuito Oscillante Lakhovsky",
       "categoria": "elettrocultura",
-      "descrizione": "Atomo Magnetico di Ighina presente in 1 documenti.",
+      "descrizione": "Applica un circuito oscillante a onde multiple per stimolare la rigenerazione cellulare delle piante.",
       "istruzioni_pratiche": [
-        "Integrare l'uso di acqua magnetizzata e spirali di rame per potenziare la vitalità del suolo e delle piante, monitorando",
-        "Monitora i risultati"
+        "Costruisci un circuito con filo di rame (1-2 mm) a forma di ovale o spirale, diametro 20-30 cm.",
+        "Posizionalo a 10-20 cm sopra la chioma o intorno al fusto.",
+        "Collega il circuito a un'antenna di terra per amplificare l'effetto."
       ],
       "varianti": [
-        "ighina",
-        "atomo magnetico"
+        "Lakhovsky",
+        "Lakhovsky (circuito oscillante)",
+        "Lakhovsky (onde di forma)",
+        "Lakhovsky (teoria delle onde di vita)",
+        "Lakhovsky (Oscillatori a onde multiple)"
       ],
       "fasi_guida": [
+        "germinazione",
         "vegetazione",
-        "fioritura"
+        "fioritura",
+        "essiccazione"
       ],
-      "rilevanza": 52,
+      "rilevanza": 90,
       "tag_correlati": [
-        "elettrocultura",
-        "living-soil"
+        "rigenerazione",
+        "frequenze",
+        "vitalità"
       ],
       "pdf_ids": [
-        "pdf_37"
+        "pdf_0",
+        "pdf_16",
+        "pdf_43",
+        "pdf_55",
+        "pdf_62",
+        "pdf_63",
+        "pdf_64",
+        "pdf_66",
+        "pdf_78",
+        "pdf_79"
       ],
-      "pdf_count": 1
+      "pdf_count": 10
     },
     {
-      "id": "farine_di_rocce",
-      "label": "Farine di Rocce",
-      "categoria": "suolo",
-      "descrizione": "Farine di Rocce presente in 2 documenti.",
+      "id": "sinergia_ferro_rame",
+      "label": "Sinergia Ferro-Rame (Fe-Cu)",
+      "categoria": "elettrocultura",
+      "descrizione": "Utilizza elettrodi o fili di ferro e rame per creare differenze di potenziale e stimolare la crescita.",
       "istruzioni_pratiche": [
-        "Integrare farine di rocce (es. basalto, zeolite) nel suolo prima della semina, miscelandole con compost per migliorare l",
-        "Integrare farine di rocce (es. basalto, zeolite) nel substrato della serra BioSerra Caserta per migliorare la disponibil",
-        "Monitora i risultati"
+        "Inserisci un elettrodo di ferro nel terreno e collegalo a una spirale di rame intorno al fusto.",
+        "Assicurati che i due metalli non si tocchino direttamente per evitare cortocircuiti.",
+        "Monitora la conduttività del suolo e aggiungi acqua se necessario."
       ],
       "varianti": [
-        "farin",
-        "rocce"
+        "Fe-Cu",
+        "Fe-Cu (ferro-rame)",
+        "Fe-Cu (sinergia metalli)",
+        "Fe-Cu (elettrodo ferro-rame)"
       ],
       "fasi_guida": [
         "vegetazione",
         "fioritura"
       ],
-      "rilevanza": 54,
+      "rilevanza": 88,
       "tag_correlati": [
-        "nutrizione",
+        "potenziale redox",
+        "nutrienti",
+        "crescita radicale"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "gestione_suolo_vivente",
+      "label": "Suolo Vivente",
+      "categoria": "suolo",
+      "descrizione": "Mantenimento microbioma del suolo attivo.",
+      "istruzioni_pratiche": [
+        "Aggiungi compost maturo ogni 2 settimane",
+        "Evita prodotti chimici",
+        "Mantieni umidita costante"
+      ],
+      "varianti": [
+        "living soil",
+        "suolo biologico"
+      ],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "suolo",
         "living-soil"
       ],
       "pdf_ids": [
@@ -245,69 +232,249 @@
       "pdf_count": 2
     },
     {
-      "id": "salute_del_suolo",
-      "label": "Salute del Suolo",
+      "id": "compostaggio_organico",
+      "label": "Compostaggio Organico",
       "categoria": "suolo",
-      "descrizione": "Salute del Suolo presente in 2 documenti.",
+      "descrizione": "Produzione compost di qualita per ammendare il substrato.",
       "istruzioni_pratiche": [
-        "Integrare farine di rocce (es. basalto, zeolite) nel suolo prima della semina, miscelandole con compost per migliorare l",
-        "Integrare farine di rocce (es. basalto, zeolite) nel suolo prima della semina, miscelandole con compost per migliorare l",
-        "Monitora i risultati"
+        "Bilancia materiali verdi e marroni",
+        "Tieni temperatura 55-65C",
+        "Rivolta ogni 2-3 giorni"
       ],
       "varianti": [
-        "salute del suolo",
-        "suolo vivente",
-        "agricoltura biologica"
+        "compost"
       ],
       "fasi_guida": [
-        "vegetazione",
-        "fioritura"
+        "germinazione",
+        "vegetazione"
       ],
-      "rilevanza": 54,
+      "rilevanza": 88,
       "tag_correlati": [
         "suolo",
-        "living-soil"
+        "nutrizione"
       ],
       "pdf_ids": [
-        "pdf_2"
+        "pdf_49"
       ],
       "pdf_count": 1
     },
     {
-      "id": "campi_elettromagnetici",
-      "label": "Campi Elettromagnetici",
-      "categoria": "elettrocultura",
-      "descrizione": "Campi Elettromagnetici presente in 14 documenti.",
+      "id": "inoculazione_micorrize",
+      "label": "Inoculazione Micorrize",
+      "categoria": "suolo",
+      "descrizione": "Introduzione funghi micorrizici per simbiosi radicale.",
       "istruzioni_pratiche": [
-        "Integrare l'uso di spirali di rame e acqua magnetizzata per potenziare la vitalità delle piante, posizionando l'antenna ",
-        "Applicare la spirale in rame avvolta intorno al fusto principale delle piante (es. pomodoro) a 10 cm dal suolo, orientat",
-        "Monitora i risultati"
+        "Applica inoculo alla radice al trapianto",
+        "Usa 5-10g per pianta",
+        "Evita fungicidi nei 30 giorni successivi"
       ],
       "varianti": [
-        "campi elettromagn"
+        "micorrize",
+        "funghi radicali"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione"
+      ],
+      "rilevanza": 92,
+      "tag_correlati": [
+        "suolo",
+        "micorrize"
+      ],
+      "pdf_ids": [],
+      "pdf_count": 0
+    },
+    {
+      "id": "fertilizzazione_organica",
+      "label": "Fertilizzazione Organica",
+      "categoria": "nutrizione",
+      "descrizione": "Apporto nutrienti tramite ammendanti organici naturali.",
+      "istruzioni_pratiche": [
+        "Usa farine organiche (sangue, osso, pesce)",
+        "Applica in dose ridotta ogni 2 settimane",
+        "Monitora colore foglie"
+      ],
+      "varianti": [
+        "nutrizione organica",
+        "concimazione biologica"
       ],
       "fasi_guida": [
         "vegetazione",
         "fioritura"
       ],
-      "rilevanza": 78,
+      "rilevanza": 85,
       "tag_correlati": [
-        "elettrocultura",
-        "living-soil"
+        "nutrizione",
+        "organico"
       ],
       "pdf_ids": [
-        "pdf_8",
-        "pdf_19",
-        "pdf_21",
-        "pdf_23",
-        "pdf_33",
-        "pdf_35",
-        "pdf_67",
-        "pdf_29",
-        "pdf_44",
-        "pdf_47"
+        "pdf_49"
       ],
-      "pdf_count": 10
+      "pdf_count": 1
+    },
+    {
+      "id": "te_di_compost",
+      "label": "Te di Compost",
+      "categoria": "suolo",
+      "descrizione": "Infuso aerobico di compost per applicazione fogliare o radicale.",
+      "istruzioni_pratiche": [
+        "Immergi compost in acqua per 24h con aeratore",
+        "Aggiungi melassa come cibo per batteri",
+        "Applica entro 4 ore dalla preparazione"
+      ],
+      "varianti": [
+        "compost tea",
+        "infuso microbico"
+      ],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 88,
+      "tag_correlati": [
+        "nutrizione",
+        "microbi"
+      ],
+      "pdf_ids": [
+        "pdf_49"
+      ],
+      "pdf_count": 1
+    },
+    {
+      "id": "farine_di_rocce",
+      "label": "Farine di Rocce",
+      "categoria": "nutrizione",
+      "descrizione": "Minerali in polvere per rimineralizzazione lenta del substrato.",
+      "istruzioni_pratiche": [
+        "Mischia 2-3% nel substrato",
+        "Usa basalto o silicio verde",
+        "Rinnova ogni ciclo"
+      ],
+      "varianti": [
+        "silice in polvere",
+        "polvere di roccia"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione"
+      ],
+      "rilevanza": 80,
+      "tag_correlati": [
+        "nutrizione",
+        "minerali"
+      ],
+      "pdf_ids": [
+        "pdf_2",
+        "pdf_49"
+      ],
+      "pdf_count": 2
+    },
+    {
+      "id": "calendario_lunare",
+      "label": "Calendario Lunare",
+      "categoria": "biodinamica",
+      "descrizione": "Pianificazione operazioni colturali secondo ciclo lunare.",
+      "istruzioni_pratiche": [
+        "Trapianta nei giorni Radice",
+        "Annaffia e fertilizza nei giorni Frutto/Fiore",
+        "Evita operazioni nei giorni sfavorevoli"
+      ],
+      "varianti": [
+        "giorni lunari",
+        "biodinamica lunare"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 75,
+      "tag_correlati": [
+        "biodinamica",
+        "luna"
+      ],
+      "pdf_ids": [],
+      "pdf_count": 0
+    },
+    {
+      "id": "controllo_parassiti",
+      "label": "Controllo Parassiti Naturale",
+      "categoria": "fitosanitario",
+      "descrizione": "Gestione biologica di infestazioni con metodi naturali.",
+      "istruzioni_pratiche": [
+        "Ispeziona quotidianamente foglie e steli",
+        "Applica olio di neem preventivo ogni 7 giorni",
+        "Usa insetti utili (acari predatori)"
+      ],
+      "varianti": [
+        "difesa biologica",
+        "pest management"
+      ],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 82,
+      "tag_correlati": [
+        "fitosanitario",
+        "biologico"
+      ],
+      "pdf_ids": [],
+      "pdf_count": 0
+    },
+    {
+      "id": "essiccazione_corretta",
+      "label": "Essiccazione Corretta",
+      "categoria": "raccolta",
+      "descrizione": "Processo di asciugatura lenta per preservare qualita.",
+      "istruzioni_pratiche": [
+        "Mantieni 60-70% umidita e 18-22C",
+        "Essicca in buio totale",
+        "Testa dopo 10-14 giorni con crack test"
+      ],
+      "varianti": [
+        "curing",
+        "asciugatura"
+      ],
+      "fasi_guida": [
+        "essiccazione"
+      ],
+      "rilevanza": 80,
+      "tag_correlati": [
+        "raccolta",
+        "qualita"
+      ],
+      "pdf_ids": [],
+      "pdf_count": 0
+    },
+    {
+      "id": "gestione_ph_suolo",
+      "label": "Gestione pH Suolo",
+      "categoria": "suolo",
+      "descrizione": "Mantenimento pH ottimale 6.0-7.0 per biodisponibilita nutrienti.",
+      "istruzioni_pratiche": [
+        "Misura pH ogni settimana",
+        "Correggi con calce se sotto 5.8",
+        "Correggi con zolfo se sopra 7.2"
+      ],
+      "varianti": [
+        "ph substrato",
+        "acidita suolo"
+      ],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 85,
+      "tag_correlati": [
+        "suolo",
+        "nutrizione"
+      ],
+      "pdf_ids": [
+        "pdf_2",
+        "pdf_49"
+      ],
+      "pdf_count": 2
     }
   ],
   "grafo": {
@@ -318,225 +485,210 @@
         "categoria": "elettrocultura"
       },
       {
-        "id": "antenna_di_terra",
+        "id": "antenna_terra",
         "label": "Antenna di Terra",
         "categoria": "elettrocultura"
       },
       {
-        "id": "spirale_in_rame",
+        "id": "spirale_rame",
         "label": "Spirale in Rame",
         "categoria": "elettrocultura"
       },
       {
-        "id": "circuito_di_lakhovsky",
-        "label": "Circuito di Lakhovsky",
+        "id": "circuito_lakhovsky",
+        "label": "Circuito Oscillante Lakhovsky",
         "categoria": "elettrocultura"
       },
       {
-        "id": "elettrodi_fe_cu",
-        "label": "Elettrodi Fe-Cu",
+        "id": "sinergia_ferro_rame",
+        "label": "Sinergia Ferro-Rame (Fe-Cu)",
         "categoria": "elettrocultura"
       },
       {
-        "id": "atomo_magnetico_di_ighina",
-        "label": "Atomo Magnetico di Ighina",
-        "categoria": "elettrocultura"
+        "id": "gestione_suolo_vivente",
+        "label": "Suolo Vivente",
+        "categoria": "suolo"
+      },
+      {
+        "id": "compostaggio_organico",
+        "label": "Compostaggio Organico",
+        "categoria": "suolo"
+      },
+      {
+        "id": "inoculazione_micorrize",
+        "label": "Inoculazione Micorrize",
+        "categoria": "suolo"
+      },
+      {
+        "id": "fertilizzazione_organica",
+        "label": "Fertilizzazione Organica",
+        "categoria": "nutrizione"
+      },
+      {
+        "id": "te_di_compost",
+        "label": "Te di Compost",
+        "categoria": "suolo"
       },
       {
         "id": "farine_di_rocce",
         "label": "Farine di Rocce",
-        "categoria": "suolo"
+        "categoria": "nutrizione"
       },
       {
-        "id": "salute_del_suolo",
-        "label": "Salute del Suolo",
-        "categoria": "suolo"
+        "id": "calendario_lunare",
+        "label": "Calendario Lunare",
+        "categoria": "biodinamica"
       },
       {
-        "id": "campi_elettromagnetici",
-        "label": "Campi Elettromagnetici",
-        "categoria": "elettrocultura"
+        "id": "controllo_parassiti",
+        "label": "Controllo Parassiti Naturale",
+        "categoria": "fitosanitario"
+      },
+      {
+        "id": "essiccazione_corretta",
+        "label": "Essiccazione Corretta",
+        "categoria": "raccolta"
+      },
+      {
+        "id": "gestione_ph_suolo",
+        "label": "Gestione pH Suolo",
+        "categoria": "suolo"
       }
     ],
     "edges": [
       {
         "source": "acqua_magnetizzata",
-        "target": "antenna_di_terra",
+        "target": "antenna_terra",
         "peso": 3
       },
       {
         "source": "acqua_magnetizzata",
-        "target": "spirale_in_rame",
+        "target": "spirale_rame",
+        "peso": 1
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "circuito_lakhovsky",
+        "peso": 1
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "sinergia_ferro_rame",
+        "peso": 1
+      },
+      {
+        "source": "antenna_terra",
+        "target": "spirale_rame",
+        "peso": 1
+      },
+      {
+        "source": "antenna_terra",
+        "target": "circuito_lakhovsky",
+        "peso": 1
+      },
+      {
+        "source": "antenna_terra",
+        "target": "sinergia_ferro_rame",
+        "peso": 1
+      },
+      {
+        "source": "spirale_rame",
+        "target": "circuito_lakhovsky",
+        "peso": 1
+      },
+      {
+        "source": "spirale_rame",
+        "target": "sinergia_ferro_rame",
+        "peso": 1
+      },
+      {
+        "source": "circuito_lakhovsky",
+        "target": "sinergia_ferro_rame",
+        "peso": 1
+      },
+      {
+        "source": "gestione_suolo_vivente",
+        "target": "compostaggio_organico",
         "peso": 3
       },
       {
-        "source": "acqua_magnetizzata",
-        "target": "circuito_di_lakhovsky",
+        "source": "gestione_suolo_vivente",
+        "target": "inoculazione_micorrize",
         "peso": 3
       },
       {
-        "source": "acqua_magnetizzata",
-        "target": "elettrodi_fe_cu",
+        "source": "gestione_suolo_vivente",
+        "target": "te_di_compost",
+        "peso": 1
+      },
+      {
+        "source": "gestione_suolo_vivente",
+        "target": "gestione_ph_suolo",
         "peso": 3
       },
       {
-        "source": "acqua_magnetizzata",
-        "target": "atomo_magnetico_di_ighina",
+        "source": "compostaggio_organico",
+        "target": "inoculazione_micorrize",
         "peso": 3
       },
       {
-        "source": "acqua_magnetizzata",
-        "target": "farine_di_rocce",
+        "source": "compostaggio_organico",
+        "target": "fertilizzazione_organica",
         "peso": 2
       },
       {
-        "source": "acqua_magnetizzata",
-        "target": "salute_del_suolo",
-        "peso": 2
-      },
-      {
-        "source": "acqua_magnetizzata",
-        "target": "campi_elettromagnetici",
+        "source": "compostaggio_organico",
+        "target": "te_di_compost",
         "peso": 3
       },
       {
-        "source": "antenna_di_terra",
-        "target": "spirale_in_rame",
-        "peso": 5
-      },
-      {
-        "source": "antenna_di_terra",
-        "target": "circuito_di_lakhovsky",
-        "peso": 5
-      },
-      {
-        "source": "antenna_di_terra",
-        "target": "elettrodi_fe_cu",
-        "peso": 5
-      },
-      {
-        "source": "antenna_di_terra",
-        "target": "atomo_magnetico_di_ighina",
-        "peso": 5
-      },
-      {
-        "source": "antenna_di_terra",
+        "source": "compostaggio_organico",
         "target": "farine_di_rocce",
         "peso": 2
       },
       {
-        "source": "antenna_di_terra",
-        "target": "salute_del_suolo",
+        "source": "compostaggio_organico",
+        "target": "gestione_ph_suolo",
+        "peso": 5
+      },
+      {
+        "source": "inoculazione_micorrize",
+        "target": "te_di_compost",
+        "peso": 1
+      },
+      {
+        "source": "inoculazione_micorrize",
+        "target": "gestione_ph_suolo",
+        "peso": 3
+      },
+      {
+        "source": "fertilizzazione_organica",
+        "target": "te_di_compost",
         "peso": 2
       },
       {
-        "source": "antenna_di_terra",
-        "target": "campi_elettromagnetici",
-        "peso": 5
+        "source": "fertilizzazione_organica",
+        "target": "farine_di_rocce",
+        "peso": 3
       },
       {
-        "source": "spirale_in_rame",
-        "target": "circuito_di_lakhovsky",
-        "peso": 5
+        "source": "fertilizzazione_organica",
+        "target": "gestione_ph_suolo",
+        "peso": 2
       },
       {
-        "source": "spirale_in_rame",
-        "target": "elettrodi_fe_cu",
-        "peso": 5
-      },
-      {
-        "source": "spirale_in_rame",
-        "target": "atomo_magnetico_di_ighina",
-        "peso": 5
-      },
-      {
-        "source": "spirale_in_rame",
+        "source": "te_di_compost",
         "target": "farine_di_rocce",
         "peso": 2
       },
       {
-        "source": "spirale_in_rame",
-        "target": "salute_del_suolo",
-        "peso": 2
-      },
-      {
-        "source": "spirale_in_rame",
-        "target": "campi_elettromagnetici",
-        "peso": 5
-      },
-      {
-        "source": "circuito_di_lakhovsky",
-        "target": "elettrodi_fe_cu",
-        "peso": 5
-      },
-      {
-        "source": "circuito_di_lakhovsky",
-        "target": "atomo_magnetico_di_ighina",
-        "peso": 5
-      },
-      {
-        "source": "circuito_di_lakhovsky",
-        "target": "farine_di_rocce",
-        "peso": 2
-      },
-      {
-        "source": "circuito_di_lakhovsky",
-        "target": "salute_del_suolo",
-        "peso": 2
-      },
-      {
-        "source": "circuito_di_lakhovsky",
-        "target": "campi_elettromagnetici",
-        "peso": 5
-      },
-      {
-        "source": "elettrodi_fe_cu",
-        "target": "atomo_magnetico_di_ighina",
-        "peso": 5
-      },
-      {
-        "source": "elettrodi_fe_cu",
-        "target": "farine_di_rocce",
-        "peso": 2
-      },
-      {
-        "source": "elettrodi_fe_cu",
-        "target": "salute_del_suolo",
-        "peso": 2
-      },
-      {
-        "source": "elettrodi_fe_cu",
-        "target": "campi_elettromagnetici",
-        "peso": 5
-      },
-      {
-        "source": "atomo_magnetico_di_ighina",
-        "target": "farine_di_rocce",
-        "peso": 2
-      },
-      {
-        "source": "atomo_magnetico_di_ighina",
-        "target": "salute_del_suolo",
-        "peso": 2
-      },
-      {
-        "source": "atomo_magnetico_di_ighina",
-        "target": "campi_elettromagnetici",
-        "peso": 5
-      },
-      {
-        "source": "farine_di_rocce",
-        "target": "salute_del_suolo",
+        "source": "te_di_compost",
+        "target": "gestione_ph_suolo",
         "peso": 3
       },
       {
         "source": "farine_di_rocce",
-        "target": "campi_elettromagnetici",
-        "peso": 2
-      },
-      {
-        "source": "salute_del_suolo",
-        "target": "campi_elettromagnetici",
+        "target": "gestione_ph_suolo",
         "peso": 2
       }
     ]
