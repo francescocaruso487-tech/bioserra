@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-06-27T06:30:34.973686+00:00",
-  "total_pdf": 19,
+  "lastUpdate": "2026-06-27T06:32:25.855155+00:00",
+  "total_pdf": 26,
   "analisi": [
     {
       "sommario": "Il documento '108upa' esplora l'applicazione di tecniche avanzate di elettrocultura e biodinamica per ottimizzare la crescita delle piante in serra. Si concentra su principi armonici e frequenze per stimolare la vitalità del suolo e delle colture.",
@@ -48,6 +48,11 @@
           "peso": 8
         },
         {
+          "id": "pdf_22",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 5
+        },
+        {
           "id": "pdf_3",
           "titolo": "Aleister-Crowley-Aforismi-Esoterici",
           "peso": 4
@@ -61,11 +66,6 @@
           "id": "pdf_7",
           "titolo": "An Agricultural Testament - Albert Howard",
           "peso": 3
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 2
         }
       ]
     },
@@ -180,7 +180,18 @@
       "rilevanza": "alta",
       "mistral_analizzato": true,
       "id": "pdf_4",
-      "connessioni": []
+      "connessioni": [
+        {
+          "id": "pdf_23",
+          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
+          "peso": 2
+        },
+        {
+          "id": "pdf_22",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 1
+        }
+      ]
     },
     {
       "sommario": "Il documento esplora le connessioni tra Aleister Crowley, Dion Fortune e Alan Richardson, analizzando le loro influenze reciproche e le teorie esoteriche condivise. Si concentra su pratiche magiche, simbolismo e applicazioni pratiche nel contesto agricolo e spirituale.",
@@ -217,9 +228,24 @@
           "peso": 11
         },
         {
+          "id": "pdf_25",
+          "titolo": "II Kojiki",
+          "peso": 6
+        },
+        {
           "id": "pdf_3",
           "titolo": "Aleister-Crowley-Aforismi-Esoterici",
           "peso": 5
+        },
+        {
+          "id": "pdf_22",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 2
+        },
+        {
+          "id": "pdf_24",
+          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
+          "peso": 2
         },
         {
           "id": "pdf_0",
@@ -229,21 +255,6 @@
         {
           "id": "pdf_8",
           "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 1
-        },
-        {
-          "id": "pdf_13",
-          "titolo": "Corso-Elettrocoltura_compressed",
-          "peso": 1
-        },
-        {
-          "id": "pdf_14",
-          "titolo": "DE L'ELECTRICITE' DES METEORES",
-          "peso": 1
-        },
-        {
-          "id": "pdf_16",
-          "titolo": "ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - Unlock the Secret Power of Electricity to Maximize your Agriculture, have a Faster… (Errol Ramos) (z-library.sk, 1lib.sk, z-lib.sk)",
           "peso": 1
         }
       ]
@@ -288,6 +299,16 @@
           "peso": 6
         },
         {
+          "id": "pdf_25",
+          "titolo": "II Kojiki",
+          "peso": 6
+        },
+        {
+          "id": "pdf_22",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 3
+        },
+        {
           "id": "pdf_0",
           "titolo": "108upa",
           "peso": 2
@@ -300,16 +321,6 @@
         {
           "id": "pdf_13",
           "titolo": "Corso-Elettrocoltura_compressed",
-          "peso": 2
-        },
-        {
-          "id": "pdf_14",
-          "titolo": "DE L'ELECTRICITE' DES METEORES",
-          "peso": 2
-        },
-        {
-          "id": "pdf_16",
-          "titolo": "ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - Unlock the Secret Power of Electricity to Maximize your Agriculture, have a Faster… (Errol Ramos) (z-library.sk, 1lib.sk, z-lib.sk)",
           "peso": 2
         }
       ]
@@ -355,6 +366,11 @@
           "peso": 6
         },
         {
+          "id": "pdf_25",
+          "titolo": "II Kojiki",
+          "peso": 6
+        },
+        {
           "id": "pdf_14",
           "titolo": "DE L'ELECTRICITE' DES METEORES",
           "peso": 4
@@ -365,19 +381,14 @@
           "peso": 4
         },
         {
+          "id": "pdf_22",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 4
+        },
+        {
           "id": "pdf_0",
           "titolo": "108upa",
           "peso": 3
-        },
-        {
-          "id": "pdf_17",
-          "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
-          "peso": 3
-        },
-        {
-          "id": "pdf_8",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 2
         }
       ]
     },
@@ -472,33 +483,11 @@
           "id": "pdf_10",
           "titolo": "Book of Wisdom (revival of wisdom, Harry B. Joseph)",
           "peso": 6
-        }
-      ]
-    },
-    {
-      "sommario": "Manuale biblioteca BioSerra: Activating The Inner Eye (Harry B. Joseph)",
-      "tecniche_chiave": [],
-      "consiglio_coltivazione": "Consulta: Activating The Inner Eye (Harry B. Joseph)",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "alta-rilevanza"
-      ],
-      "estratto_chiave": "",
-      "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-      "data_analisi": "2026-06-27",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "id": "pdf_9",
-      "connessioni": [
-        {
-          "id": "pdf_11",
-          "titolo": "Corpo ermetico e Asclepio",
-          "peso": 1
         },
         {
-          "id": "pdf_15",
-          "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
-          "peso": 1
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 2
         }
       ]
     },
@@ -533,6 +522,11 @@
           "peso": 6
         },
         {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 4
+        },
+        {
           "id": "pdf_0",
           "titolo": "108upa",
           "peso": 1
@@ -556,35 +550,10 @@
           "id": "pdf_18",
           "titolo": "Electroculture (Christofleau Justin)",
           "peso": 1
-        }
-      ]
-    },
-    {
-      "sommario": "Manuale biblioteca BioSerra: Corpo ermetico e Asclepio",
-      "tecniche_chiave": [
-        "Principi ermetici"
-      ],
-      "consiglio_coltivazione": "Applica Principi ermetici in serra",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "altro",
-        "alta-rilevanza"
-      ],
-      "estratto_chiave": "",
-      "titolo": "Corpo ermetico e Asclepio",
-      "data_analisi": "2026-06-27",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "id": "pdf_11",
-      "connessioni": [
-        {
-          "id": "pdf_9",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
         },
         {
-          "id": "pdf_15",
-          "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
+          "id": "pdf_22",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
           "peso": 1
         }
       ]
@@ -662,18 +631,18 @@
           "peso": 5
         },
         {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 4
+        },
+        {
+          "id": "pdf_21",
+          "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
+          "peso": 3
+        },
+        {
           "id": "pdf_6",
           "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 2
-        },
-        {
-          "id": "pdf_7",
-          "titolo": "An Agricultural Testament - Albert Howard",
-          "peso": 2
-        },
-        {
-          "id": "pdf_8",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
           "peso": 2
         }
       ]
@@ -739,36 +708,9 @@
           "peso": 3
         },
         {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 2
-        }
-      ]
-    },
-    {
-      "sommario": "Manuale biblioteca BioSerra: DE L'ELECTRICITE' DES VEGETAUX",
-      "tecniche_chiave": [],
-      "consiglio_coltivazione": "Consulta: DE L'ELECTRICITE' DES VEGETAUX",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "alta-rilevanza"
-      ],
-      "estratto_chiave": "",
-      "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
-      "data_analisi": "2026-06-27",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "id": "pdf_15",
-      "connessioni": [
-        {
-          "id": "pdf_9",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_11",
-          "titolo": "Corpo ermetico e Asclepio",
-          "peso": 1
+          "id": "pdf_23",
+          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
+          "peso": 3
         }
       ]
     },
@@ -875,6 +817,11 @@
           "peso": 4
         },
         {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 4
+        },
+        {
           "id": "pdf_7",
           "titolo": "An Agricultural Testament - Albert Howard",
           "peso": 3
@@ -885,23 +832,18 @@
           "peso": 3
         },
         {
+          "id": "pdf_22",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 3
+        },
+        {
+          "id": "pdf_23",
+          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
+          "peso": 3
+        },
+        {
           "id": "pdf_3",
           "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 2
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 2
-        },
-        {
-          "id": "pdf_8",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 2
-        },
-        {
-          "id": "pdf_13",
-          "titolo": "Corso-Elettrocoltura_compressed",
           "peso": 2
         }
       ]
@@ -957,9 +899,282 @@
           "peso": 6
         },
         {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 5
+        },
+        {
           "id": "pdf_3",
           "titolo": "Aleister-Crowley-Aforismi-Esoterici",
           "peso": 4
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 4
+        }
+      ]
+    },
+    {
+      "sommario": "Manuale biblioteca BioSerra: Activating The Inner Eye (Harry B. Joseph)",
+      "tecniche_chiave": [],
+      "consiglio_coltivazione": "Consulta: Activating The Inner Eye (Harry B. Joseph)",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "alta-rilevanza"
+      ],
+      "estratto_chiave": "",
+      "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": false,
+      "id": "pdf_16",
+      "connessioni": [
+        {
+          "id": "pdf_17",
+          "titolo": "Corpo ermetico e Asclepio",
+          "peso": 1
+        },
+        {
+          "id": "pdf_18",
+          "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Manuale biblioteca BioSerra: Corpo ermetico e Asclepio",
+      "tecniche_chiave": [
+        "Principi ermetici"
+      ],
+      "consiglio_coltivazione": "Applica Principi ermetici in serra",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "altro",
+        "alta-rilevanza"
+      ],
+      "estratto_chiave": "",
+      "titolo": "Corpo ermetico e Asclepio",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": false,
+      "id": "pdf_17",
+      "connessioni": [
+        {
+          "id": "pdf_16",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 1
+        },
+        {
+          "id": "pdf_18",
+          "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Manuale biblioteca BioSerra: DE L'ELECTRICITE' DES VEGETAUX",
+      "tecniche_chiave": [],
+      "consiglio_coltivazione": "Consulta: DE L'ELECTRICITE' DES VEGETAUX",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "alta-rilevanza"
+      ],
+      "estratto_chiave": "",
+      "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": false,
+      "id": "pdf_18",
+      "connessioni": [
+        {
+          "id": "pdf_16",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 1
+        },
+        {
+          "id": "pdf_17",
+          "titolo": "Corpo ermetico e Asclepio",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Il documento esplora tecniche avanzate di elettrocultura per ottimizzare la crescita delle piante tramite campi elettromagnetici e materiali conduttivi. Si concentra su applicazioni pratiche per serre e coltivazioni outdoor, integrando principi di biodinamica e living soil.",
+      "tecniche_chiave": [
+        "Lakhovsky (oscillatori a onde multiple)",
+        "Fe-Cu (ferro-rame per stimolazione biochimica)",
+        "Acqua magnetizzata (strutturazione molecolare)",
+        "Spirale in rame (campi elettromagnetici locali)",
+        "Antenna di terra (connessione geobiologica)"
+      ],
+      "consiglio_coltivazione": "Applicare la spirale in rame avvolta intorno al fusto principale delle piante (es. pomodoro) a 10 cm dal suolo, orientata verso nord, per 30 giorni consecutivi durante la fase vegetativa.",
+      "consiglio_elettrocultura": "Collegare l'antenna di terra a una barra di rame interrata a 1m di profondità, distante 2m dalla serra, per stabilizzare il potenziale elettrico del suolo e ridurre lo stress idrico.",
+      "tag": [
+        "elettrocultura",
+        "biodinamica",
+        "living soil",
+        "serre outdoor",
+        "agricoltura rigenerativa"
+      ],
+      "estratto_chiave": "L'elettrocultura attiva sfrutta campi elettromagnetici naturali per sincronizzare la crescita delle piante con i ritmi tellurici e solari, potenziando l'assorbimento dei nutrienti e la resilienza agli stress ambientali.",
+      "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "id": "pdf_19",
+      "connessioni": [
+        {
+          "id": "pdf_18",
+          "titolo": "Electroculture (Christofleau Justin)",
+          "peso": 5
+        },
+        {
+          "id": "pdf_10",
+          "titolo": "Book of Wisdom (revival of wisdom, Harry B. Joseph)",
+          "peso": 4
+        },
+        {
+          "id": "pdf_13",
+          "titolo": "Corso-Elettrocoltura_compressed",
+          "peso": 4
+        },
+        {
+          "id": "pdf_17",
+          "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
+          "peso": 4
+        },
+        {
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 3
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 3
+        },
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
+          "peso": 2
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 2
+        }
+      ]
+    },
+    {
+      "sommario": "Il documento sembra un insieme di testi esoterici e spirituali senza relazione diretta con l'agricoltura o le tecniche di coltivazione. Potrebbe contenere riferimenti simbolici o energetici, ma non risulta pertinente per un approccio agronomico.",
+      "tecniche_chiave": [],
+      "consiglio_coltivazione": "Verificare la coerenza tra le tecniche attive dichiarate (Lakhovsky, Fe-Cu, ecc.) e il contenuto reale del documento. Se non c'è relazione, focalizzarsi esclusivamente sulle metodologie di Living Soil e biodinamica per la serra.",
+      "consiglio_elettrocultura": "Escludere l'uso di tecniche esoteriche non validate scientificamente per l'elettrocultura. Concentrarsi su parametri misurabili (pH, conducibilità, umidità) per ottimizzare l'efficacia delle spirali in rame e antenne di terra.",
+      "tag": [
+        "esoterismo",
+        "non pertinente",
+        "agricoltura"
+      ],
+      "estratto_chiave": "Il documento non fornisce informazioni utili per la coltivazione in serra. Si consiglia di scartare contenuti non agronomici e mantenere focus su Living Soil e biodinamica.",
+      "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "id": "pdf_20",
+      "connessioni": [
+        {
+          "id": "pdf_5",
+          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+          "peso": 1
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Il documento tratta i principi fisici dei campi elettromagnetici, le loro equazioni fondamentali e le applicazioni pratiche in ambiti tecnologici e scientifici. Include analisi matematiche e modelli per la propagazione delle onde elettromagnetiche.",
+      "tecniche_chiave": [
+        "Lakhovsky (Oscillatori Multicellulari)",
+        "Fe-Cu (Bilanciamento elettrochimico)",
+        "Acqua magnetizzata (Strutturazione molecolare)",
+        "Spirale rame (Campi elettromagnetici localizzati)",
+        "Antenna terra (Messa a terra armonica)"
+      ],
+      "consiglio_coltivazione": "Integrare l'acqua magnetizzata per migliorare l'assorbimento dei nutrienti e la resilienza delle piante, abbinandola a un monitoraggio costante dell'umidità del suolo per ottimizzare l'elettrocultura.",
+      "consiglio_elettrocultura": "Posizionare la spirale rame a 30-50 cm dal suolo, orientata verso nord, e collegare l'antenna terra a una barra di rame interrata a 1,5 m di profondità per massimizzare la risonanza armonica.",
+      "tag": [
+        "elettromagnetismo",
+        "agricoltura rigenerativa",
+        "serra biodinamica",
+        "tecniche attive"
+      ],
+      "estratto_chiave": "I campi elettromagnetici naturali possono essere modulati per stimolare la crescita vegetale, agendo su frequenze specifiche che favoriscono la fotosintesi e la resistenza agli stress biotici.",
+      "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "id": "pdf_21",
+      "connessioni": [
+        {
+          "id": "pdf_13",
+          "titolo": "Corso-Elettrocoltura_compressed",
+          "peso": 3
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 1
+        },
+        {
+          "id": "pdf_18",
+          "titolo": "Electroculture (Christofleau Justin)",
+          "peso": 1
+        },
+        {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Il libro esplora la vita e i presunti poteri paranormali di Gustavo Rol, figura misteriosa legata a fenomeni inspiegabili e connessioni con energie invisibili. Analizza il suo approccio olistico e l'influenza su pratiche alternative come l'elettrocultura.",
+      "tecniche_chiave": [
+        "Lakhovsky (onde di forma)",
+        "Fe-Cu (ferro-rame)",
+        "acqua magnetizzata",
+        "spirale di rame",
+        "antenna di terra"
+      ],
+      "consiglio_coltivazione": "Integrare la spirale di rame intorno alla serra per armonizzare i campi elettromagnetici naturali, posizionando l'antenna di terra in direzione nord-sud per ottimizzare la conduzione energetica.",
+      "consiglio_elettrocultura": "Applicare la tecnica Fe-Cu (filo di ferro e rame intrecciati) a 10 cm di profondità lungo i bordi della serra per stimolare la crescita radicale e la resistenza delle piante.",
+      "tag": [
+        "elettricità naturale",
+        "biodinamica",
+        "energie sottili",
+        "Living Soil",
+        "serra outdoor"
+      ],
+      "estratto_chiave": "Gustavo Rol dimostrava come l'energia sottile, canalizzata tramite materiali conduttivi, potesse influenzare la materia vivente, aprendo strade a tecniche agricole innovative come l'elettrocultura.",
+      "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "id": "pdf_22",
+      "connessioni": [
+        {
+          "id": "pdf_24",
+          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
+          "peso": 10
+        },
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
+          "peso": 5
         },
         {
           "id": "pdf_7",
@@ -969,6 +1184,201 @@
         {
           "id": "pdf_6",
           "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 3
+        },
+        {
+          "id": "pdf_17",
+          "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
+          "peso": 3
+        },
+        {
+          "id": "pdf_18",
+          "titolo": "Electroculture (Christofleau Justin)",
+          "peso": 3
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+          "peso": 2
+        },
+        {
+          "id": "pdf_14",
+          "titolo": "DE L'ELECTRICITE' DES METEORES",
+          "peso": 2
+        }
+      ]
+    },
+    {
+      "sommario": "Il documento esplora la figura di Gustavo Adolfo Rol, noto per le sue capacità di percezione extrasensoriale e interazione con energie invisibili, presentando un approccio olistico alla realtà oltre i limiti umani. Si tratta di un testo biografico-spirituale che unisce scienza, misticismo e fenomeni paranormali.",
+      "tecniche_chiave": [
+        "Lakhovsky (teoria delle onde di vita)",
+        "Fe-Cu (sistemi metallici per armonizzazione energetica)",
+        "acqua magnetizzata (strutturazione molecolare)",
+        "spirale rame (campi elettromagnetici)",
+        "antenna terra (collegamento geobiologico)"
+      ],
+      "consiglio_coltivazione": "Integrare l'acqua magnetizzata (10-15 min di esposizione a spirale rame) nelle irrigazioni per stimolare la resilienza delle piante e ridurre lo stress idrico.",
+      "consiglio_elettrocultura": "Posizionare una spirale rame (diametro 30 cm) a 20 cm dal suolo, orientata verso nord magnetico, per potenziare la fotosintesi e la risposta immunitaria delle colture.",
+      "tag": [
+        "biodinamica",
+        "elettrocultura",
+        "armonizzazione energetica",
+        "Living Soil",
+        "fenomeni paranormali"
+      ],
+      "estratto_chiave": "Rol dimostrava come l'uomo possa interfacciarsi con energie sottili per trascendere i limiti fisici, applicabile anche alla coltivazione attraverso principi di risonanza e connessione con la terra.",
+      "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "id": "pdf_23",
+      "connessioni": [
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
+          "peso": 3
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 3
+        },
+        {
+          "id": "pdf_14",
+          "titolo": "DE L'ELECTRICITE' DES METEORES",
+          "peso": 3
+        },
+        {
+          "id": "pdf_17",
+          "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
+          "peso": 3
+        },
+        {
+          "id": "pdf_18",
+          "titolo": "Electroculture (Christofleau Justin)",
+          "peso": 3
+        },
+        {
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 2
+        },
+        {
+          "id": "pdf_4",
+          "titolo": "Aleister-Crowley-_Kaw-Djer",
+          "peso": 2
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 2
+        }
+      ]
+    },
+    {
+      "sommario": "Il documento esplora le connessioni tra le tecniche agricole antiche e moderne, con particolare attenzione ai principi di armonia e vibrazione applicati alla coltivazione. Si concentra su metodi energetici e simbolici per migliorare la salute delle piante e del suolo.",
+      "tecniche_chiave": [
+        "Lakhovsky (onde di forma)",
+        "Fe-Cu (ferro-rame)",
+        "acqua magnetizzata",
+        "spirale di rame",
+        "antenna di terra"
+      ],
+      "consiglio_coltivazione": "Integrare la spirale di rame intorno alla serra per armonizzare le frequenze ambientali, posizionandola a 1/3 dell'altezza totale e orientandola verso nord magnetico.",
+      "consiglio_elettrocultura": "Applicare un sistema di antenna di terra con elettrodo in rame a 50 cm di profondità, collegato a una barra di ferro verticale di 1,5 m, per bilanciare le cariche statiche del suolo.",
+      "tag": [
+        "simbologia antica",
+        "agricoltura vibrazionale",
+        "elettromagnetismo naturale"
+      ],
+      "estratto_chiave": "Le antiche civiltà utilizzavano principi di risonanza per potenziare la vita: applicare forme geometriche e metalli in armonia con la Terra significa risvegliare la memoria del suolo.",
+      "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "id": "pdf_24",
+      "connessioni": [
+        {
+          "id": "pdf_22",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 10
+        },
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
+          "peso": 2
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+          "peso": 2
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 2
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 2
+        },
+        {
+          "id": "pdf_25",
+          "titolo": "II Kojiki",
+          "peso": 2
+        }
+      ]
+    },
+    {
+      "sommario": "Il Kojiki è il più antico testo scritto giapponese, contenente miti cosmogonici e leggende che fondano la cultura shintoista. Rappresenta una fonte primaria per comprendere la visione del mondo e la spiritualità del Giappone antico.",
+      "tecniche_chiave": [
+        "Lakhovsky",
+        "Fe-Cu",
+        "acqua magnetizzata"
+      ],
+      "consiglio_coltivazione": "Integrare l'acqua magnetizzata nei trattamenti fogliari per migliorare l'assorbimento dei nutrienti e stimolare la resistenza delle piante alle avversità.",
+      "consiglio_elettrocultura": "Utilizzare la spirale in rame come antenna per armonizzare i campi elettromagnetici della serra, riducendo lo stress ossidativo delle piante.",
+      "tag": [
+        "mitologia giapponese",
+        "agricoltura sacra",
+        "elettrocultura biodinamica"
+      ],
+      "estratto_chiave": "Il Kojiki narra l'origine degli dei e del Giappone attraverso miti che legano cielo, terra e destino umano, ispirando pratiche agricole in armonia con le forze naturali.",
+      "titolo": "II Kojiki",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "id": "pdf_25",
+      "connessioni": [
+        {
+          "id": "pdf_5",
+          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+          "peso": 6
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 6
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 6
+        },
+        {
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 4
+        },
+        {
+          "id": "pdf_22",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 2
+        },
+        {
+          "id": "pdf_24",
+          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
           "peso": 2
         }
       ]
