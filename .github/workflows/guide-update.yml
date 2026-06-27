@@ -1,0 +1,27 @@
+name: BioSerra - Guide Complete
+
+on:
+  schedule:
+    - cron: '0 5 * * 0'  # ogni domenica 05:00 UTC (le guide non cambiano ogni giorno)
+  workflow_dispatch:
+
+jobs:
+  guide:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Genera guide complete con Mistral
+        env:
+          GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+          MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
+        run: python3 .github/scripts/guide_update.py
+
