@@ -19,8 +19,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Analisi PDF (OpenRouter + fallback locale)
+      - name: Analisi PDF con Mistral
         env:
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
-          OPENROUTER_KEY: ${{ secrets.OPENROUTER_KEY }}
+          MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
         run: python3 .github/scripts/analisi_pdf.py
