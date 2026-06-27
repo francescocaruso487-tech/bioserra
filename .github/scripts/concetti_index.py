@@ -25,14 +25,14 @@ def gh_put(path, content_b64, sha, message):
     with urllib.request.urlopen(req) as r:
         return json.load(r)
 
-def mistral_chat(prompt, max_tokens=4000):
-    print(f'  MISTRAL_KEY presente: {"si" if MISTRAL_KEY else "NO - ERRORE"}')
+def mistral_chat(prompt, max_tokens=6000):
+    print(f'  MISTRAL_KEY presente: {"si" if MISTRAL_KEY else "NO"}')
     if not MISTRAL_KEY:
         raise Exception('MISTRAL_KEY non impostata')
     body = json.dumps({
         'model': 'mistral-small-latest',
         'max_tokens': max_tokens,
-        'temperature': 0.1,
+        'temperature': 0.15,
         'messages': [{'role': 'user', 'content': prompt}]
     }).encode()
     req = urllib.request.Request(
@@ -41,86 +41,91 @@ def mistral_chat(prompt, max_tokens=4000):
         headers={'Authorization': f'Bearer {MISTRAL_KEY}', 'Content-Type': 'application/json'},
         method='POST'
     )
-    try:
-        with urllib.request.urlopen(req, timeout=90) as r:
-            resp = json.load(r)
-        content = resp['choices'][0]['message']['content']
-        tokens_used = resp.get('usage', {}).get('total_tokens', 0)
-        print(f'  Mistral OK: {len(content)} chars, {tokens_used} tokens')
-        return content
-    except urllib.error.HTTPError as e:
-        err = e.read().decode()
-        print(f'  Mistral HTTP {e.code}: {err[:600]}')
-        raise
+    with urllib.request.urlopen(req, timeout=90) as r:
+        resp = json.load(r)
+    content = resp['choices'][0]['message']['content']
+    tokens_used = resp.get('usage', {}).get('total_tokens', 0)
+    print(f'  Mistral OK: {len(content)} chars, {tokens_used} tokens')
+    return content
 
-def build_concetti_from_tecniche(tecniche_agg, analisi):
-    """Fallback: costruisce concetti direttamente dalle tecniche senza LLM"""
-    print('  Costruisco concetti da tecniche senza LLM...')
-
+def build_concetti_fallback(tecniche_agg, analisi):
+    """Fallback locale senza LLM"""
+    print('  Costruisco concetti da tecniche (fallback)...')
     CATEGORIE_MAP = {
         'compost': 'suolo', 'humus': 'suolo', 'suolo': 'suolo', 'terra': 'suolo',
         'microbi': 'suolo', 'fungh': 'suolo', 'micoriz': 'suolo', 'ammendant': 'suolo',
+        'pacciamatura': 'suolo', 'geobiolog': 'suolo', 'mappatura': 'suolo',
         'irrigazion': 'irrigazione', 'acqua': 'irrigazione', 'drip': 'irrigazione',
-        'goccia': 'irrigazione', 'humid': 'irrigazione',
+        'goccia': 'irrigazione', 'humid': 'irrigazione', 'ionizzata': 'irrigazione',
         'nutri': 'nutrizione', 'fertiliz': 'nutrizione', 'azoto': 'nutrizione',
-        'fosforo': 'nutrizione', 'potassio': 'nutrizione', 'minerali': 'nutrizione',
+        'fosforo': 'nutrizione', 'potassio': 'nutrizione', 'farina': 'nutrizione',
         'elettro': 'elettrocultura', 'lakhovsky': 'elettrocultura', 'galvanic': 'elettrocultura',
         'rame': 'elettrocultura', 'antenna': 'elettrocultura', 'magnetiz': 'elettrocultura',
         'risonanz': 'elettrocultura', 'spirale': 'elettrocultura', 'pantacolo': 'elettrocultura',
+        'fe-cu': 'elettrocultura', 'ferro-rame': 'elettrocultura', 'ighina': 'elettrocultura',
         'biodinam': 'biodinamica', 'luna': 'biodinamica', 'steiner': 'biodinamica',
-        'calendario': 'biodinamica', 'pianeta': 'biodinamica', 'cosm': 'biodinamica',
+        'calendario': 'biodinamica', 'cosm': 'biodinamica',
         'parassit': 'fitosanitario', 'malattia': 'fitosanitario', 'insetti': 'fitosanitario',
         'difesa': 'fitosanitario', 'trappola': 'fitosanitario',
         'raccolt': 'raccolta', 'fioritura': 'raccolta', 'maturaz': 'raccolta',
         'essiccaz': 'raccolta', 'taglio': 'raccolta',
     }
-
     def categorizza(label):
         l = label.lower()
         for kw, cat in CATEGORIE_MAP.items():
-            if kw in l:
-                return cat
+            if kw in l: return cat
         return 'altro'
 
-    top = sorted(tecniche_agg.items(), key=lambda x: -x[1]['count'])[:40]
+    # Dedup: raggruppa varianti dello stesso concetto base
+    GRUPPI = {
+        'acqua magnetizzata': ['acqua magnetizzata'],
+        'antenna di terra': ['antenna di terra', 'antenna terra'],
+        'spirale in rame': ['spirale rame', 'spirale in rame', 'spirale di rame'],
+        'lakhovsky': ['lakhovsky', 'risonanza di lakhovsky', 'risonanza cellulare (lakhovsky)'],
+        'fe-cu (ferro-rame)': ['fe-cu', 'fe-cu (ferro-rame)', 'interazione metalli (fe-cu)'],
+        'campi elettromagnetici': ['campi elettromagnetici naturali', 'campi elettromagnetici controllati'],
+        'farine di rocce': ['farine di rocce'],
+        'salute del suolo': ['salute del suolo', 'agricoltura biologica'],
+        'atomo magnetico di ighina': ['atomo magnetico di ighina'],
+        'pacciamatura': ['pacciamatura'],
+        'mappatura geobiologica': ['mappatura geobiologica', 'geobiolog'],
+    }
+
     concetti = []
     used_ids = set()
-
-    for t_norm, td in top:
-        label = td['label']
-        cat = categorizza(label)
-        consiglio = td['consigli'][0] if td['consigli'] else f'Applica {label} in modo regolare'
-        elettro = td['elettro'][0] if td['elettro'] else ''
-
-        istruzioni = [consiglio]
-        if elettro:
-            istruzioni.append(elettro)
-        istruzioni.append('Monitora i risultati dopo ogni applicazione')
-
-        base_id = ''.join(ch if ch.isalnum() else '_' for ch in label.lower())[:20].strip('_')
+    for label_principale, varianti_kw in GRUPPI.items():
+        count_tot = 0
+        pdf_ids_set = []
+        consigli = []
+        elettro = []
+        for t_norm, td in tecniche_agg.items():
+            if any(kw in t_norm for kw in varianti_kw):
+                count_tot += td['count']
+                pdf_ids_set.extend(td['pdf_ids'])
+                consigli.extend(td['consigli'])
+                elettro.extend(td['elettro'])
+        if count_tot == 0: continue
+        cat = categorizza(label_principale)
+        consiglio = consigli[0] if consigli else f'Applica {label_principale} regolarmente'
+        base_id = ''.join(ch if ch.isalnum() else '_' for ch in label_principale.lower())[:25].strip('_')
         uid = base_id if base_id not in used_ids else f'{base_id}_{len(used_ids)}'
         used_ids.add(uid)
-
         concetti.append({
-            'id': uid,
-            'label': label,
-            'categoria': cat,
-            'descrizione': f'{label} estratta da {td["count"]} documenti scientifici. {consiglio}',
-            'istruzioni_pratiche': istruzioni[:3],
-            'varianti': [],
+            'id': uid, 'label': label_principale.title(), 'categoria': cat,
+            'descrizione': f'{label_principale.title()} citata in {count_tot} documenti. {consiglio}',
+            'istruzioni_pratiche': ([consiglio] + (elettro[:1] if elettro else []) + ['Monitora i risultati'])[:3],
+            'varianti': list(set(varianti_kw))[:3],
             'fasi_guida': ['vegetazione', 'fioritura'],
-            'rilevanza': min(95, 50 + td['count'] * 5),
+            'rilevanza': min(95, 50 + count_tot * 2),
             'tag_correlati': [cat, 'living-soil'],
-            'pdf_ids': list(dict.fromkeys(td['pdf_ids']))[:10],
-            'pdf_count': len(td['pdf_ids'])
+            'pdf_ids': list(dict.fromkeys(pdf_ids_set))[:10],
+            'pdf_count': min(len(set(pdf_ids_set)), 10)
         })
-
     return concetti
 
 def main():
     oggi = __import__('datetime').date.today().isoformat()
-    print('=== BioSerra Concetti Index v6 (Mistral) ===')
-    print(f'MISTRAL_KEY: {"presente (" + MISTRAL_KEY[:8] + "...)" if MISTRAL_KEY else "ASSENTE"}')
+    print('=== BioSerra Concetti Index v7 (Mistral) ===')
 
     print('Leggo pdf_knowledge.json...')
     raw, _ = gh_api_get('data/pdf_knowledge.json')
@@ -128,7 +133,7 @@ def main():
     analisi = knowledge.get('analisi', [])
     print(f'PDF: {len(analisi)}')
 
-    # Estrai tecniche
+    # Estrai e aggrega tecniche
     SKIP = ['harina de roca', 'non specificat', 'non disponib', 'nessuna tecn', 'nessun']
     tecniche_agg = {}
     for a in analisi:
@@ -151,66 +156,91 @@ def main():
 
     print(f'Tecniche uniche: {len(tecniche_agg)}')
 
-    # Prova Mistral
+    # Raggruppa varianti simili prima di mandare a Mistral
+    # Prendi top per count ma dedup semplice: salta varianti di concetti gia inclusi
+    top_raw = sorted(tecniche_agg.items(), key=lambda x: -x[1]['count'])
+    # Dedup greedy: se una tecnica contiene le stesse prime 8 lettere di una gia inclusa, salta
+    top_dedup = []
+    seen_prefixes = set()
+    for t_norm, td in top_raw:
+        words = t_norm.split()
+        prefix = (words[0][:8] + (words[1][:5] if len(words) > 1 else ''))
+        if prefix not in seen_prefixes or td['count'] >= 5:
+            top_dedup.append((t_norm, td))
+            seen_prefixes.add(prefix)
+        if len(top_dedup) >= 50:
+            break
+
+    lista_tec = '\n'.join([f'- {td["label"]} ({td["count"]} occorrenze)' for _, td in top_dedup])
+    print(f'Tecniche inviate a Mistral (dopo dedup): {len(top_dedup)}')
+
+    # Estrai anche sommari e consigli per dare contesto
+    sommari_sample = []
+    for a in analisi[:15]:
+        s = a.get('sommario', '')
+        if s and len(s) > 20:
+            sommari_sample.append(s[:100])
+
+    contesto_sommari = '\n'.join([f'- {s}' for s in sommari_sample[:8]])
+
     concetti = []
     if MISTRAL_KEY:
-        top_tec = sorted(tecniche_agg.items(), key=lambda x: -x[1]['count'])[:70]
-        lista_tec = '\n'.join([f'- {td["label"]} ({td["count"]} doc)' for _, td in top_tec])
-
         prompt = (
-            'Sei un agronomo esperto di Living Soil per coltura outdoor in Italia. '
-            'Analizza queste tecniche estratte da 89 PDF scientifici e raggruppa/sintetizza '
-            'in 30-40 concetti pratici distinti. Ogni concetto deve essere concreto e applicabile '
-            'in una serra outdoor Living Soil.\n\n'
-            f'Tecniche estratte (con frequenza nei PDF):\n{lista_tec}\n\n'
-            'Regole:\n'
-            '- Raggruppa tecniche simili in un unico concetto\n'
-            '- Escludi: filosofia pura, testi religiosi, "harina de rocas"\n'
-            '- Descrizioni in italiano, concrete e pratiche\n'
-            '- istruzioni_pratiche: 3 passi applicativi reali\n'
-            '- fasi_guida: fasi applicabili tra [germinazione, vegetazione, fioritura, taglio, essiccazione, concia]\n'
-            '- rilevanza: 1-100 basata su frequenza e importanza\n\n'
+            'Sei un agronomo esperto di coltivazione Living Soil outdoor in Italia. '
+            'Hai analizzato 89 manuali scientifici principalmente su elettrocultura, biofisica e agricoltura energetica. '
+            'Devi creare un indice pratico di 25-35 concetti applicabili in una serra outdoor.\n\n'
+            '=== TECNICHE ESTRATTE DAI PDF (con frequenza) ===\n'
+            f'{lista_tec}\n\n'
+            '=== CONTESTO: estratti dai sommari PDF ===\n'
+            f'{contesto_sommari}\n\n'
+            '=== ISTRUZIONI ===\n'
+            '1. Raggruppa varianti identiche (es: "Spirale rame", "Spirale in rame", "spirale di rame" -> un solo concetto "Spirale in Rame")\n'
+            '2. I concetti di elettrocultura (Lakhovsky, Fe-Cu, Spirale, Antenna, Acqua magnetizzata) devono essere DETTAGLIATI e SEPARATI\n'
+            '3. Aggiungi 8-12 concetti di coltivazione Living Soil PRATICI che un esperto outdoor userebbe:\n'
+            '   (es: gestione suolo vivente, compostaggio, micorrize, irrigazione, nutrizione organica, '
+            '   fotoperiodo, gestione fioritura, essiccazione, cura radici, biodiversita, ph suolo, ecc.)\n'
+            '4. Categoria: suolo|irrigazione|nutrizione|elettrocultura|biodinamica|fitosanitario|raccolta|altro\n'
+            '5. fasi_guida: scegli tra [germinazione, vegetazione, fioritura, taglio, essiccazione, concia]\n'
+            '6. istruzioni_pratiche: 3 passi CONCRETI e APPLICABILI in serra outdoor\n'
+            '7. rilevanza: 1-100 (elettrocultura alta, tecniche comuni media)\n'
+            '8. id: slug senza spazi (es: spirale_rame, acqua_magnetizzata, gestione_suolo)\n\n'
             'Rispondi SOLO con JSON valido, nessun testo prima o dopo:\n'
-            '{"concetti":[{"id":"slug-univoco","label":"Nome Concetto","categoria":"suolo|irrigazione|nutrizione|elettrocultura|biodinamica|fitosanitario|raccolta|altro","descrizione":"2 frasi pratiche concrete","istruzioni_pratiche":["passo 1 concreto","passo 2 concreto","passo 3 concreto"],"varianti":["variante1"],"fasi_guida":["vegetazione","fioritura"],"rilevanza":80,"tag_correlati":["tag1","tag2"]}]}'
+            '{"concetti":[{"id":"slug","label":"Nome Completo","categoria":"categoria","descrizione":"2 frasi pratiche",'
+            '"istruzioni_pratiche":["passo1","passo2","passo3"],"varianti":["variante1"],'
+            '"fasi_guida":["vegetazione"],"rilevanza":80,"tag_correlati":["tag1","tag2"]}]}'
         )
-        print(f'Prompt: {len(prompt)} chars, {len(top_tec)} tecniche inviate')
+        print(f'Prompt: {len(prompt)} chars')
         try:
-            risposta = mistral_chat(prompt, max_tokens=6000)
-            print(f'Risposta raw (300 chars): {risposta[:300]}')
+            risposta = mistral_chat(prompt, max_tokens=8000)
+            print(f'Risposta (400 chars): {risposta[:400]}')
             # Estrai JSON robusto
             s = risposta.find('{"concetti"')
-            if s == -1:
-                s = risposta.find('{')
+            if s == -1: s = risposta.find('{')
             e = risposta.rfind('}')
             if s >= 0 and e > s:
-                json_str = risposta[s:e+1]
-                parsed = json.loads(json_str)
+                parsed = json.loads(risposta[s:e+1])
                 concetti = parsed.get('concetti', [])
                 print(f'Concetti Mistral: {len(concetti)}')
             else:
-                print('  JSON non trovato nella risposta')
+                print('  JSON non trovato')
         except json.JSONDecodeError as ex:
             print(f'  JSON parse error: {ex}')
         except Exception as ex:
             print(f'  Mistral fallito: {ex}')
 
-    # Fallback locale se Mistral non funziona o restituisce 0
     if not concetti:
         print('Uso fallback locale...')
-        concetti = build_concetti_from_tecniche(tecniche_agg, analisi)
-        print(f'Concetti fallback: {len(concetti)}')
+        concetti = build_concetti_fallback(tecniche_agg, analisi)
 
-    # Arricchisci pdf_ids per ogni concetto (sia Mistral che fallback)
+    # Normalizza IDs e arricchisci pdf_ids
     used_ids = set()
     for i, c in enumerate(concetti):
-        # Normalizza ID
-        raw_id = c.get('id', c.get('label', f'concetto_{i}'))
+        raw_id = c.get('id', f'concetto_{i}')
         base_id = ''.join(ch if ch.isalnum() else '_' for ch in raw_id.lower())[:25].strip('_')
         uid = base_id if base_id not in used_ids else f'{base_id}_{i}'
         used_ids.add(uid)
         c['id'] = uid
 
-        # Associa pdf_ids se non già presenti (concetti Mistral non li hanno)
         if not c.get('pdf_ids'):
             words = [w for w in c.get('label', '').lower().split() if len(w) > 3]
             pdf_ids = []
@@ -242,7 +272,7 @@ def main():
     content_b64 = base64.b64encode(json.dumps(out, indent=2, ensure_ascii=False).encode()).decode()
     _, sha = gh_api_get('data/concetti_index.json')
     gh_put('data/concetti_index.json', content_b64, sha,
-           f'BioSerra concetti {oggi} ({len(concetti)} concetti da {len(analisi)} PDF) [Mistral]')
+           f'BioSerra concetti {oggi} ({len(concetti)} concetti) [Mistral v7]')
 
     print(f'\n=== COMPLETATO: {len(concetti)} concetti, {len(edges)} edges ===')
     cat_count = {}
