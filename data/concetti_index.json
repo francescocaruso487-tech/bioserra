@@ -1,33 +1,31 @@
 {
   "lastUpdate": "2026-06-27",
-  "total": 11,
+  "total": 19,
   "fonte": "89 PDF analizzati",
   "concetti": [
     {
-      "id": "acqua_magnetizzata_strutt",
-      "label": "Acqua magnetizzata per struttura e vitalità",
+      "id": "acqua_magnetizzata",
+      "label": "Acqua Magnetizzata per Coltivazione",
       "categoria": "irrigazione",
-      "descrizione": "L'acqua sottoposta a campi magnetici acquisisce una struttura molecolare più ordinata, migliorando l'assorbimento radicale e la solubilizzazione dei nutrienti. Riduce la tensione superficiale, favorendo una distribuzione omogenea nell'appezzamento.",
+      "descrizione": "L'acqua magnetizzata migliora la struttura molecolare, favorisce l'assorbimento dei nutrienti e stimola la crescita delle piante. Può essere ottenuta con magneti permanenti o dispositivi di magnetizzazione.",
       "istruzioni_pratiche": [
-        "Utilizza un dispositivo di magnetizzazione (es. magneti al neodimio 1000-3000 Gauss) posizionati lungo il tubo di irrigazione o in un serbatoio di accumulo per 24-48 ore prima dell'uso.",
-        "Applica l'acqua magnetizzata durante le irrigazioni serali o mattutine, evitando i picchi di calore per preservare la struttura molecolare.",
-        "Monitora il pH e la conducibilità elettrica dell'acqua prima/ dopo la magnetizzazione per verificare cambiamenti (obiettivo: pH stabile, CE leggermente ridotta)."
+        "Posizionare magneti al neodimio (1000-3000 Gauss) lungo il tubo di irrigazione o in un contenitore d'acqua per 24-48 ore prima dell'uso.",
+        "Utilizzare l'acqua magnetizzata per l'irrigazione delle piante, evitando di superare i 5000 Gauss per non danneggiare i microrganismi del suolo.",
+        "Monitorare la risposta delle piante: maggiore vigore e resistenza a stress idrici sono indicatori di efficacia."
       ],
       "varianti": [
-        "magneti permanenti",
-        "elettromagneti a bassa frequenza",
-        "acqua statica in contenitori con magneti"
+        "acqua magnetizzata (strutturazione molecolare)",
+        "acqua magnetizzata (polarizzazione)"
       ],
       "fasi_guida": [
-        "germinazione",
         "vegetazione",
         "fioritura"
       ],
       "rilevanza": 90,
       "tag_correlati": [
-        "struttura suolo",
-        "assorbimento radicale",
-        "irrigazione efficiente"
+        "elettrocultura",
+        "nutrizione",
+        "irrigazione"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -44,29 +42,30 @@
       "pdf_count": 10
     },
     {
-      "id": "antenna_terra_geobiologic",
-      "label": "Antenna di terra per equilibrio geobiologico",
-      "categoria": "suolo",
-      "descrizione": "Un conduttore metallico (es. barra di rame o acciaio zincato) interrato verticalmente nel suolo agisce da antenna per armonizzare i campi elettromagnetici naturali del terreno. Riduce stress da radiazioni telluriche e migliora la vitalità microbica.",
+      "id": "antenna_terra",
+      "label": "Antenna di Terra per Connessione Geobiologica",
+      "categoria": "altro",
+      "descrizione": "L'antenna di terra sfrutta la connessione con il campo elettromagnetico terrestre per armonizzare le energie del suolo e delle piante. Può essere realizzata con materiali conduttivi interrati.",
       "istruzioni_pratiche": [
-        "Inserisci una barra di rame (Ø 10-15 mm, lunghezza 50-80 cm) nel suolo a 30-50 cm di profondità, posizionandola vicino alle radici principali (es. a 20 cm dal fusto delle piante).",
-        "Collega la barra a un filo di rame isolato (Ø 2-3 mm) che termina in superficie, avvolgendolo a spirale intorno al fusto della pianta o a un palo di supporto.",
-        "Effettua una verifica con un georadar o un pendolo per identificare la posizione ottimale (evita nodi di Hartmann o Curry)."
+        "Inserire un'asta di rame o ferro (1-2 m) nel terreno, collegandola a una spirale di rame posizionata sopra il suolo o vicino alle piante.",
+        "Orientare l'antenna verso nord magnetico per allinearsi al campo terrestre e verificare la risposta delle piante con strumenti di misura (es. pendolino o biometro).",
+        "Evitare interferenze con linee elettriche o metalli sepolti; monitorare settimanalmente la salute del suolo e delle piante."
       ],
       "varianti": [
-        "antenna a spirale",
-        "piastra di rame interrata",
-        "rete metallica orizzontale"
+        "Antenna di terra",
+        "antenna terra (connessione geobiologica)",
+        "Collegamento terra (antenna terra)"
       ],
       "fasi_guida": [
+        "germinazione",
         "vegetazione",
         "fioritura"
       ],
       "rilevanza": 85,
       "tag_correlati": [
-        "geobiologia",
-        "campi elettromagnetici",
-        "stress da radiazioni"
+        "elettrocultura",
+        "biodinamica",
+        "suolo"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -83,19 +82,20 @@
       "pdf_count": 10
     },
     {
-      "id": "spirale_rame_campi_locali",
-      "label": "Spirali di rame per armonizzazione elettromagnetica",
-      "categoria": "elettrocultura",
-      "descrizione": "Spirali di rame (Ø 1-3 mm, diametro 10-30 cm) posizionate intorno al fusto o al colletto delle piante generano campi elettromagnetici locali che stimolano la crescita e la resistenza agli stress. Funzionano come antenne bioenergetiche.",
+      "id": "spirale_rame",
+      "label": "Spirale in Rame per Armonizzazione Energetica",
+      "categoria": "altro",
+      "descrizione": "Le spirali di rame generano campi elettromagnetici che influenzano la crescita delle piante e la salute del suolo. Sono utilizzate in geometria sacra e tecniche di risonanza.",
       "istruzioni_pratiche": [
-        "Avvolgi 3-5 spire di filo di rame intorno al fusto principale a 5-10 cm dal suolo, lasciando uno spazio di 2-3 cm tra spira e pianta per evitare costrizioni.",
-        "Posiziona le spirali in direzione oraria (per piante in vegetazione) o antioraria (per fioritura), orientandole verso nord magnetico per massimizzare l'effetto.",
-        "Sostituisci le spirali ogni 2-3 mesi o quando si ossidano eccessivamente (puliscile con aceto o limone per rimuovere la patina)."
+        "Realizzare una spirale di rame (diametro 10-30 cm) con filo di rame spesso 2-3 mm, posizionandola a 10-20 cm dal suolo o intorno al fusto delle piante.",
+        "Orientare la spirale in senso orario per stimolare la crescita o antiorario per calmare le piante; cambiare orientamento ogni 2 settimane.",
+        "Pulire la spirale con acqua e aceto ogni mese per rimuovere ossidazione e mantenere l'efficacia."
       ],
       "varianti": [
-        "spirali multiple sovrapposte",
-        "spirali con magneti integrati",
-        "reti di rame a maglia quadrata"
+        "Spirale rame",
+        "Spirale in rame",
+        "spirale di rame",
+        "Geometria sacra (spirale rame)"
       ],
       "fasi_guida": [
         "vegetazione",
@@ -103,9 +103,9 @@
       ],
       "rilevanza": 80,
       "tag_correlati": [
-        "crescita radiale",
-        "resistenza agli stress",
-        "campi torsionali"
+        "elettrocultura",
+        "biodinamica",
+        "suolo"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -122,68 +122,32 @@
       "pdf_count": 10
     },
     {
-      "id": "fe_cu_elettrodi_bimetalli",
-      "label": "Elettrodi Fe-Cu per stimolazione biochimica",
-      "categoria": "nutrizione",
-      "descrizione": "Coppie di elettrodi in ferro e rame interrati nel suolo creano una differenza di potenziale che stimola l'attività microbica e la solubilizzazione dei nutrienti. Funzionano come catalizzatori elettrochimici naturali.",
+      "id": "circuito_lakhovsky",
+      "label": "Circuito Oscillante di Lakhovsky",
+      "categoria": "altro",
+      "descrizione": "Il circuito oscillante di Lakhovsky sfrutta frequenze specifiche per stimolare la risonanza cellulare delle piante, migliorando la salute e la resistenza agli stress.",
       "istruzioni_pratiche": [
-        "Inserisci un elettrodo di ferro (Ø 10-15 mm, lunghezza 30-50 cm) e uno di rame (stessa dimensione) a 20-30 cm di profondità, distanziati di 10-15 cm tra loro.",
-        "Collega i due elettrodi con un filo di rame isolato (Ø 2 mm) per creare un circuito chiuso, evitando cortocircuiti con il suolo.",
-        "Posiziona gli elettrodi in zone ad alta attività radicale (es. tra file di piante) e monitora il pH del suolo ogni 2 settimane (obiettivo: pH tra 6.2 e 6.8)."
+        "Costruire un circuito con filo di rame (diametro 1-2 mm) formato da una spirale principale e un'antenna secondaria, posizionandolo a 30-50 cm dalle piante.",
+        "Collegare il circuito a un generatore di frequenze (es. 7,83 Hz per risonanza Schumann) o utilizzare un dispositivo commerciale per elettrocultura.",
+        "Monitorare la risposta delle piante: maggiore vigore e riduzione di patogeni sono indicatori di efficacia."
       ],
       "varianti": [
-        "elettrodi a forma di U",
-        "coppie multiple in parallelo",
-        "elettrodi con rivestimento in argilla"
+        "Lakhovsky",
+        "Lakhovsky (circuito oscillante)",
+        "Lakhovsky (frequenze oscillanti)",
+        "Lakhovsky (tecnica di risonanza cellulare)",
+        "Risonanza di Lakhovsky",
+        "Risonanza cellulare (Lakhovsky)"
       ],
       "fasi_guida": [
         "vegetazione",
         "fioritura"
       ],
-      "rilevanza": 75,
+      "rilevanza": 88,
       "tag_correlati": [
-        "solubilizzazione nutrienti",
-        "attività microbica",
-        "equilibrio redox"
-      ],
-      "pdf_ids": [
-        "pdf_0",
-        "pdf_13",
-        "pdf_22",
-        "pdf_24",
-        "pdf_30",
-        "pdf_53",
-        "pdf_54",
-        "pdf_55",
-        "pdf_59",
-        "pdf_62"
-      ],
-      "pdf_count": 10
-    },
-    {
-      "id": "lakhovsky_oscillatori_cel",
-      "label": "Oscillatori di Lakhovsky per risonanza cellulare",
-      "categoria": "biodinamica",
-      "descrizione": "Circuiti oscillanti in rame (es. spirali aperte o anelli) posizionati intorno alle piante emettono frequenze che stimolano la risonanza cellulare, migliorando la salute e la resistenza agli stress. Basato sulla teoria delle onde di vita.",
-      "istruzioni_pratiche": [
-        "Costruisci un oscillatore con un filo di rame (Ø 1-2 mm) avvolto in una spirale aperta di diametro 10-20 cm, lasciando le estremità libere (non chiuse).",
-        "Posiziona l'oscillatore a 10-20 cm dal fusto principale, orientato verso nord o in direzione delle linee di forza geomagnetiche locali.",
-        "Lascia l'oscillatore in posizione per 2-4 settimane, poi ruotalo di 90° per evitare adattamenti delle piante alle frequenze."
-      ],
-      "varianti": [
-        "anelli di rame aperti",
-        "spirali multiple in serie",
-        "oscillatori con magneti integrati"
-      ],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 70,
-      "tag_correlati": [
-        "risonanza cellulare",
-        "resistenza agli stress",
-        "frequenze naturali"
+        "elettrocultura",
+        "biodinamica",
+        "fitosanitario"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -200,107 +164,447 @@
       "pdf_count": 10
     },
     {
-      "id": "atomo_magnetico_ighina",
-      "label": "Atomo magnetico di Ighina per armonizzazione",
-      "categoria": "elettrocultura",
-      "descrizione": "Dispositivo composto da magneti permanenti e conduttori metallici che genera campi di torsione per armonizzare l'energia del suolo e delle piante. Basato su principi di fisica non convenzionale.",
+      "id": "lega_ferro_rame",
+      "label": "Lega Ferro-Rame come Catalizzatore Biologico",
+      "categoria": "suolo",
+      "descrizione": "La combinazione di ferro e rame in forma di limatura o piccoli elementi metallici nel suolo agisce come catalizzatore per reazioni biochimiche e armonizzazione energetica.",
       "istruzioni_pratiche": [
-        "Costruisci un atomo magnetico con 4 magneti al neodimio (N42, 50x50x25 mm) disposti a croce, con i poli nord verso l'esterno, e un nucleo centrale in rame o ferro.",
-        "Posiziona il dispositivo a 30-50 cm di profondità nel suolo, orientato verso nord magnetico, e coprilo con uno strato di terreno o pacciamatura.",
-        "Lascia in funzione per 3-4 settimane, poi ruota i magneti di 45° per variare l'effetto."
+        "Incorporare nel suolo limatura di ferro (10-20 g/mq) e rame (5-10 g/mq) mescolata a compost o farine di rocce, evitando concentrazioni eccessive.",
+        "Utilizzare in terreni poveri di micronutrienti o con pH sbilanciato; monitorare il pH e la salute delle piante ogni 2 settimane.",
+        "Evitare l'uso in terreni già ricchi di questi metalli per non causare tossicità."
       ],
       "varianti": [
-        "atomo con magneti cilindrici",
-        "atomo con spirali di rame",
-        "atomo con elettrodi Fe-Cu"
-      ],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 65,
-      "tag_correlati": [
-        "campi di torsione",
-        "armonizzazione energetica",
-        "fisica non convenzionale"
-      ],
-      "pdf_ids": [
-        "pdf_8",
-        "pdf_9",
-        "pdf_10",
-        "pdf_36",
-        "pdf_76",
-        "pdf_17",
-        "pdf_23",
-        "pdf_37",
-        "pdf_41",
-        "pdf_45"
-      ],
-      "pdf_count": 10
-    },
-    {
-      "id": "campi_elettromagnetici_co",
-      "label": "Campi elettromagnetici a bassa frequenza per stimolazione",
-      "categoria": "elettrocultura",
-      "descrizione": "Generatori di onde elettromagnetiche a bassa frequenza (1-100 Hz) utilizzati per stimolare la crescita radicale e la fotosintesi. Applicabili in serra outdoor con dispositivi a batteria o pannelli solari.",
-      "istruzioni_pratiche": [
-        "Utilizza un generatore di onde ELF (es. dispositivo a 7.83 Hz, frequenza di Schumann) posizionato a 1-2 metri dalle piante, con antenna direzionale verso il suolo.",
-        "Applica il trattamento per 2-4 ore al giorno, preferibilmente durante le ore notturne per evitare interferenze con la fotosintesi.",
-        "Monitora la risposta delle piante (es. aumento della biomassa, riduzione di stress idrico) e regola la frequenza in base ai risultati."
-      ],
-      "varianti": [
-        "onde a 50 Hz (rete elettrica)",
-        "onde a 10 Hz (frequenza biologica)",
-        "dispositivi a batteria solare"
+        "Fe-Cu",
+        "Fe-Cu (ferro-rame)",
+        "Fe-Cu (ferro-rame come catalizzatori biologici)",
+        "Fe-Cu (sinergia metalli)",
+        "Fe-Cu (elettrodo ferro-rame)",
+        "Fe-Cu (Bilanciamento elettrochimico)",
+        "Fe-Cu (equilibrio metallico)",
+        "Fe-Cu (uso di ferro e rame per equilibrio elettromagnetico)",
+        "Fe-Cu (lega metallica per armonizzazione)",
+        "Fe-Cu (combinazione ferro-rame)",
+        "Interazione metalli (Fe-Cu)",
+        "Fe-Cu (biodinamica)"
       ],
       "fasi_guida": [
         "germinazione",
         "vegetazione"
       ],
-      "rilevanza": 60,
+      "rilevanza": 75,
       "tag_correlati": [
-        "stimolazione radicale",
-        "fotosintesi",
-        "onde ELF"
+        "suolo",
+        "nutrizione",
+        "elettrocultura"
       ],
       "pdf_ids": [
-        "pdf_8",
-        "pdf_10",
-        "pdf_17",
-        "pdf_84",
-        "pdf_19",
-        "pdf_21",
-        "pdf_23",
-        "pdf_33",
-        "pdf_35",
-        "pdf_67"
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
       ],
       "pdf_count": 10
     },
     {
-      "id": "pacciamatura_elettroattiv",
-      "label": "Pacciamatura con materiali conduttivi per armonizzazione",
-      "categoria": "suolo",
-      "descrizione": "L'uso di pacciamatura con materiali conduttivi (es. trucioli di rame, lana di roccia, carbone vegetale) migliora la conducibilità del suolo e armonizza i campi elettromagnetici locali.",
+      "id": "atomo_ighina",
+      "label": "Atomo Magnetico di Ighina",
+      "categoria": "altro",
+      "descrizione": "Il dispositivo di Ighina sfrutta principi di risonanza e campi magnetici per armonizzare le energie del suolo e delle piante, migliorando la crescita e la resistenza.",
       "istruzioni_pratiche": [
-        "Stendi uno strato di 2-3 cm di pacciamatura conduttiva (es. trucioli di rame o carbone vegetale) intorno al colletto delle piante, evitando il contatto diretto con il fusto.",
-        "Integra la pacciamatura con una rete di rame a maglia larga (5x5 cm) posizionata a 5 cm di profondità per distribuire uniformemente i campi.",
-        "Rinnova lo strato ogni 4-6 settimane o quando si ossida eccessivamente."
+        "Costruire un atomo magnetico con sfere di acciaio inox e magneti al neodimio, posizionandolo a 50 cm dal suolo o vicino alle piante.",
+        "Orientare il dispositivo verso nord magnetico e verificare la risposta delle piante con strumenti di misura (es. biometro).",
+        "Pulire e controllare periodicamente i magneti per mantenere l'efficacia."
       ],
       "varianti": [
-        "pacciamatura con lana di roccia",
-        "pacciamatura con argilla espansa + rame",
-        "rete di rame interrata"
+        "Atomo magnetico di Ighina"
       ],
       "fasi_guida": [
         "vegetazione",
         "fioritura"
       ],
-      "rilevanza": 55,
+      "rilevanza": 70,
       "tag_correlati": [
-        "conducibilità suolo",
-        "armonizzazione EM",
-        "pacciamatura attiva"
+        "elettrocultura",
+        "biodinamica"
+      ],
+      "pdf_ids": [
+        "pdf_9",
+        "pdf_10",
+        "pdf_36",
+        "pdf_76",
+        "pdf_37",
+        "pdf_41",
+        "pdf_45",
+        "pdf_48"
+      ],
+      "pdf_count": 8
+    },
+    {
+      "id": "gestione_suolo_vivente",
+      "label": "Gestione del Suolo Vivente",
+      "categoria": "suolo",
+      "descrizione": "Tecniche per mantenere un suolo vivo e fertile, ricco di microrganismi benefici, materia organica e struttura porosa. Fondamentale per la salute delle piante.",
+      "istruzioni_pratiche": [
+        "Aggiungere compost maturo (2-3 cm) sulla superficie del suolo ogni 2 mesi, evitando di interrare per non disturbare la vita microbica.",
+        "Utilizzare cover crops (es. trifoglio, veccia) per fissare azoto e migliorare la struttura del suolo; falciarle prima della fioritura.",
+        "Evitare lavorazioni profonde; preferire la pacciamatura con paglia o foglie per proteggere la vita del suolo e mantenere l'umidità."
+      ],
+      "varianti": [
+        "Salute del suolo",
+        "Gestione della struttura del suolo e biodiversità microbica"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "suolo",
+        "nutrizione",
+        "biodiversità"
+      ],
+      "pdf_ids": [
+        "pdf_2",
+        "pdf_49"
+      ],
+      "pdf_count": 2
+    },
+    {
+      "id": "compostaggio_fertilizzazi",
+      "label": "Compostaggio e Fertilizzazione Organica",
+      "categoria": "suolo",
+      "descrizione": "Tecniche per produrre compost di qualità e utilizzarlo come fertilizzante naturale, ricco di nutrienti e microrganismi benefici.",
+      "istruzioni_pratiche": [
+        "Costruire un cumulo di compost con materiali equilibrati (30% azoto: scarti verdi; 70% carbonio: foglie secche, paglia), mantenendo umidità al 50-60%.",
+        "Girare il cumulo ogni 2 settimane per ossigenare e accelerare la decomposizione; aggiungere microrganismi efficaci (EM) per accelerare il processo.",
+        "Utilizzare il compost maturo (dopo 3-6 mesi) come fertilizzante, distribuendolo sulla superficie del suolo (1-2 cm) e incorporandolo leggermente."
+      ],
+      "varianti": [
+        "Tecniche di compostaggio e fertilizzazione organica",
+        "Agricoltura biologica"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione"
+      ],
+      "rilevanza": 90,
+      "tag_correlati": [
+        "suolo",
+        "nutrizione",
+        "biodiversità"
+      ],
+      "pdf_ids": [
+        "pdf_49"
+      ],
+      "pdf_count": 1
+    },
+    {
+      "id": "farine_rocce",
+      "label": "Farine di Rocce per Apporto Minerale",
+      "categoria": "suolo",
+      "descrizione": "L'uso di farine di rocce (es. basalto, zeolite, scisto) per arricchire il suolo di minerali e migliorare la struttura, favorendo la vita microbica.",
+      "istruzioni_pratiche": [
+        "Spargere farina di basalto (50-100 g/mq) o zeolite (30-50 g/mq) sul suolo prima della semina o del trapianto, incorporandola leggermente.",
+        "Utilizzare farine di rocce a lenta cessione per evitare squilibri; abbinare a compost per migliorare l'assorbimento.",
+        "Monitorare il pH del suolo e la salute delle piante; ridurre l'uso in terreni già alcalini."
+      ],
+      "varianti": [
+        "Farine di rocce",
+        "Utilizzo di farine di rocce come apporto minerale"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione"
+      ],
+      "rilevanza": 85,
+      "tag_correlati": [
+        "suolo",
+        "nutrizione",
+        "minerali"
+      ],
+      "pdf_ids": [
+        "pdf_2",
+        "pdf_49"
+      ],
+      "pdf_count": 2
+    },
+    {
+      "id": "irrigazione_living_soil",
+      "label": "Irrigazione per Suolo Vivente",
+      "categoria": "irrigazione",
+      "descrizione": "Tecniche di irrigazione che mantengono la vita del suolo, evitando ristagni e favorendo l'assorbimento di acqua e nutrienti.",
+      "istruzioni_pratiche": [
+        "Utilizzare sistemi a goccia con timer per irrigare al mattino presto, evitando l'evaporazione e lo stress idrico.",
+        "Mantenere l'umidità del suolo al 60-70% della capacità di campo; utilizzare pacciamatura per ridurre l'evaporazione.",
+        "Evitare l'acqua stagnante; preferire substrati drenanti (es. perlite, pomice) per prevenire asfissia radicale."
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 92,
+      "tag_correlati": [
+        "irrigazione",
+        "suolo",
+        "nutrizione"
+      ],
+      "pdf_ids": [
+        "pdf_2",
+        "pdf_49"
+      ],
+      "pdf_count": 2
+    },
+    {
+      "id": "micorrize_innesto",
+      "label": "Inoculazione di Micorrize",
+      "categoria": "suolo",
+      "descrizione": "L'uso di funghi micorrizici per migliorare l'assorbimento di nutrienti e la resistenza delle piante agli stress ambientali.",
+      "istruzioni_pratiche": [
+        "Acquistare inoculo di micorrize (es. Glomus spp.) e applicarlo al trapianto o alla semina, mescolandolo al substrato o al compost.",
+        "Evitare l'uso di fungicidi chimici che uccidono i micorrize; preferire trattamenti con microrganismi benefici (EM).",
+        "Monitorare la risposta delle piante: maggiore crescita radicale e resistenza a patogeni sono indicatori di efficacia."
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione"
+      ],
+      "rilevanza": 90,
+      "tag_correlati": [
+        "suolo",
+        "nutrizione",
+        "biodiversità"
+      ],
+      "pdf_ids": [],
+      "pdf_count": 0
+    },
+    {
+      "id": "nutrizione_organica_bilan",
+      "label": "Nutrizione Organica Bilanciata",
+      "categoria": "nutrizione",
+      "descrizione": "Fornire nutrienti alle piante attraverso fertilizzanti organici bilanciati, evitando squilibri e favorendo la salute del suolo.",
+      "istruzioni_pratiche": [
+        "Utilizzare fertilizzanti organici (es. sangue secco, cornunghia, guano) in base alle esigenze delle piante: 5-10 g/mq per piante leggere, 10-20 g/mq per piante pesanti.",
+        "Alternare concimi azotati (es. stallatico) a quelli fosfo-potassici (es. cenere di legna) per bilanciare la nutrizione.",
+        "Monitorare il pH del suolo (ideale 6.0-7.0) e la salute delle piante; ridurre l'uso in caso di eccesso di sali."
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "nutrizione",
+        "suolo",
+        "fioritura"
+      ],
+      "pdf_ids": [
+        "pdf_49"
+      ],
+      "pdf_count": 1
+    },
+    {
+      "id": "fotoperiodo_gestione",
+      "label": "Gestione del Fotoperiodo",
+      "categoria": "altro",
+      "descrizione": "Controllo della luce per regolare la crescita e la fioritura delle piante, soprattutto in serra dove la luce artificiale può alterare i cicli naturali.",
+      "istruzioni_pratiche": [
+        "Per piante fotoperiodiche (es. cannabis), fornire 18 ore di luce per la vegetazione e 12 ore per la fioritura, utilizzando luci a spettro completo (es. LED 5000K).",
+        "Utilizzare timer per automatizzare i cicli di luce; evitare interruzioni durante la fase di fioritura.",
+        "Monitorare la risposta delle piante: piante troppo allungate indicano eccesso di luce, mentre fioritura precoce indica carenza."
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 88,
+      "tag_correlati": [
+        "fioritura",
+        "vegetazione",
+        "luce"
+      ],
+      "pdf_ids": [
+        "pdf_49"
+      ],
+      "pdf_count": 1
+    },
+    {
+      "id": "gestione_fioritura",
+      "label": "Gestione della Fioritura",
+      "categoria": "fitosanitario",
+      "descrizione": "Tecniche per ottimizzare la fase di fioritura, migliorando la qualità e la quantità dei fiori.",
+      "istruzioni_pratiche": [
+        "Ridurre l'azoto e aumentare il fosforo e il potassio (es. con guano o cenere) durante la fioritura per stimolare la produzione di fiori.",
+        "Mantenere temperature notturne tra 15-20°C e umidità al 40-50% per evitare stress e muffe.",
+        "Evitare l'uso di pesticidi chimici; preferire trattamenti con oli essenziali (es. neem) o insetti benefici (es. coccinelle)."
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "fioritura"
+      ],
+      "rilevanza": 90,
+      "tag_correlati": [
+        "fioritura",
+        "fitosanitario",
+        "nutrizione"
+      ],
+      "pdf_ids": [
+        "pdf_49",
+        "pdf_76"
+      ],
+      "pdf_count": 2
+    },
+    {
+      "id": "essiccazione_concia",
+      "label": "Essiccazione e Concitazione",
+      "categoria": "raccolta",
+      "descrizione": "Tecniche per essiccare e conciare le piante raccolte, preservando la qualità e il profumo.",
+      "istruzioni_pratiche": [
+        "Raccogliere le piante al mattino presto, quando i livelli di oli essenziali sono più alti; appendere i rami in un ambiente buio, asciutto e ben ventilato (15-20°C, 50-60% umidità).",
+        "Utilizzare essiccatori a flusso d'aria per accelerare il processo (3-7 giorni); evitare l'uso di calore eccessivo per non degradare i composti.",
+        "Conciare le piante essiccate in contenitori di vetro o legno per 2-4 settimane per migliorare il profumo e la qualità."
+      ],
+      "varianti": [
+        "taglio",
+        "essiccazione"
+      ],
+      "fasi_guida": [
+        "taglio",
+        "essiccazione"
+      ],
+      "rilevanza": 85,
+      "tag_correlati": [
+        "raccolta",
+        "conservazione",
+        "qualità"
+      ],
+      "pdf_ids": [],
+      "pdf_count": 0
+    },
+    {
+      "id": "cura_radici",
+      "label": "Cura delle Radici",
+      "categoria": "suolo",
+      "descrizione": "Tecniche per promuovere lo sviluppo radicale sano e resistente, fondamentale per la crescita delle piante.",
+      "istruzioni_pratiche": [
+        "Utilizzare rizobatteri benefici (es. Bacillus spp.) per stimolare la crescita delle radici; applicarli al trapianto o alla semina.",
+        "Mantenere un suolo ben strutturato e drenante; evitare compattazione con lavorazioni eccessive.",
+        "Monitorare la salute delle radici: radici bianche e fibrose indicano salute, mentre radici scure o marce segnalano problemi."
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione"
+      ],
+      "rilevanza": 90,
+      "tag_correlati": [
+        "suolo",
+        "radici",
+        "nutrizione"
+      ],
+      "pdf_ids": [
+        "pdf_23",
+        "pdf_51",
+        "pdf_35",
+        "pdf_45"
+      ],
+      "pdf_count": 4
+    },
+    {
+      "id": "biodiversita_suolo",
+      "label": "Promozione della Biodiversità del Suolo",
+      "categoria": "suolo",
+      "descrizione": "Tecniche per aumentare la biodiversità del suolo, favorendo la presenza di microrganismi, insetti e funghi benefici.",
+      "istruzioni_pratiche": [
+        "Incorporare piante companion (es. calendula, nasturzio) per attrarre insetti benefici e repellere parassiti.",
+        "Utilizzare compost e pacciamatura per creare un habitat favorevole ai microrganismi del suolo.",
+        "Evitare l'uso di pesticidi chimici; preferire metodi naturali (es. insetti predatori, oli essenziali)."
+      ],
+      "varianti": [
+        "Gestione della struttura del suolo e biodiversità microbica"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 92,
+      "tag_correlati": [
+        "suolo",
+        "biodiversità",
+        "nutrizione"
+      ],
+      "pdf_ids": [
+        "pdf_2",
+        "pdf_49",
+        "pdf_76"
+      ],
+      "pdf_count": 3
+    },
+    {
+      "id": "ph_suolo",
+      "label": "Gestione del pH del Suolo",
+      "categoria": "suolo",
+      "descrizione": "Monitoraggio e regolazione del pH del suolo per ottimizzare l'assorbimento dei nutrienti e la salute delle piante.",
+      "istruzioni_pratiche": [
+        "Misurare il pH del suolo con un kit di test; l'ideale varia in base alla pianta (es. 6.0-7.0 per la maggior parte delle piante).",
+        "Correggere il pH con materiali naturali: calce per aumentare il pH, zolfo o torba per abbassarlo.",
+        "Monitorare il pH ogni 2-3 mesi; evitare cambiamenti bruschi che possono stressare le piante."
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 88,
+      "tag_correlati": [
+        "suolo",
+        "nutrizione",
+        "pH"
+      ],
+      "pdf_ids": [
+        "pdf_2",
+        "pdf_49"
+      ],
+      "pdf_count": 2
+    },
+    {
+      "id": "simbologia_armonizzazione",
+      "label": "Armonizzazione Energetica e Simbologia",
+      "categoria": "altro",
+      "descrizione": "Tecniche di armonizzazione energetica basate su simbologie e principi esoterici per migliorare la crescita delle piante.",
+      "istruzioni_pratiche": [
+        "Posizionare simboli sacri (es. fiore della vita, spirale) vicino alle piante o nel suolo per creare un campo energetico favorevole.",
+        "Utilizzare mantra o suoni (es. 432 Hz) per armonizzare l'ambiente della serra; evitare rumori eccessivi.",
+        "Monitorare la risposta delle piante: maggiore vigore e resistenza sono indicatori di efficacia."
+      ],
+      "varianti": [
+        "Armonizzazione energetica",
+        "Risonanza armonica",
+        "Elevazione vibrazionale",
+        "simbologia wiccan",
+        "Corrispondenze alchemiche"
+      ],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 60,
+      "tag_correlati": [
+        "esoterico",
+        "biodinamica",
+        "energia"
       ],
       "pdf_ids": [
         "pdf_8",
@@ -308,217 +612,662 @@
         "pdf_17",
         "pdf_23",
         "pdf_45",
-        "pdf_48"
+        "pdf_48",
+        "pdf_52",
+        "pdf_71",
+        "pdf_76"
       ],
-      "pdf_count": 6
-    },
-    {
-      "id": "monitoraggio_geobiologico",
-      "label": "Mappatura geobiologica del suolo",
-      "categoria": "suolo",
-      "descrizione": "Analisi del suolo per identificare nodi di Hartmann, linee di Curry o altre anomalie geobiologiche che possono stressare le piante. Utile per posizionare antenne di terra o evitare zone critiche.",
-      "istruzioni_pratiche": [
-        "Utilizza un georadar portatile o un pendolo per mappare il suolo e identificare le linee di forza geomagnetiche (es. nodi di Hartmann ogni 2 metri).",
-        "Segna le zone critiche con picchetti colorati e posiziona antenne di terra o spirali di rame nelle aree ad alta attività.",
-        "Evita di coltivare in corrispondenza di incroci di linee geobiologiche o in prossimità di falde acquifere superficiali."
-      ],
-      "varianti": [
-        "pendolo di rabdomante",
-        "georadar professionale",
-        "test con acqua in bottiglia"
-      ],
-      "fasi_guida": [
-        "pre-coltivazione",
-        "vegetazione"
-      ],
-      "rilevanza": 50,
-      "tag_correlati": [
-        "geobiologia",
-        "stress da radiazioni",
-        "posizionamento piante"
-      ],
-      "pdf_ids": [
-        "pdf_2",
-        "pdf_10",
-        "pdf_19",
-        "pdf_29",
-        "pdf_41",
-        "pdf_43",
-        "pdf_44",
-        "pdf_47",
-        "pdf_31",
-        "pdf_33"
-      ],
-      "pdf_count": 10
-    },
-    {
-      "id": "nutrizione_elettrostatica",
-      "label": "Fertilizzazione con acqua ionizzata",
-      "categoria": "nutrizione",
-      "descrizione": "L'acqua ionizzata (positiva o negativa) viene utilizzata per solubilizzare e veicolare i nutrienti nel suolo, migliorando l'assorbimento radicale e riducendo la lisciviazione.",
-      "istruzioni_pratiche": [
-        "Utilizza un ionizzatore d'acqua per produrre acqua alcalina (pH 8-9) o acida (pH 5-6) a seconda delle esigenze delle piante.",
-        "Diluiscila con acqua normale in rapporto 1:3 e utilizzala per irrigare o per preparare soluzioni nutritive.",
-        "Applica durante la fase di vegetazione per piante acidifile (es. cannabis) o durante la fioritura per piante basifile (es. pomodoro)."
-      ],
-      "varianti": [
-        "acqua ozonizzata",
-        "acqua elettrolizzata",
-        "acqua con sali minerali ionizzati"
-      ],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 45,
-      "tag_correlati": [
-        "solubilizzazione nutrienti",
-        "pH suolo",
-        "lisciviazione"
-      ],
-      "pdf_ids": [
-        "pdf_0",
-        "pdf_3",
-        "pdf_5",
-        "pdf_6",
-        "pdf_7",
-        "pdf_13",
-        "pdf_14",
-        "pdf_16",
-        "pdf_18",
-        "pdf_22"
-      ],
-      "pdf_count": 10
-    },
-    {
-      "id": "coltivazione_sinergica",
-      "label": "Associazione di tecniche elettromagnetiche",
-      "categoria": "altro",
-      "descrizione": "Combinazione di più tecniche (es. antenna di terra + spirali di rame + acqua magnetizzata) per potenziare gli effetti sinergici e armonizzare l'intero sistema colturale.",
-      "istruzioni_pratiche": [
-        "Progetta un sistema integrato: posiziona un'antenna di terra centrale, circondala con spirali di rame intorno alle piante e utilizza acqua magnetizzata per l'irrigazione.",
-        "Monitora la risposta delle piante (es. crescita, resa, resistenza agli stress) e regola le combinazioni in base ai risultati.",
-        "Documenta le combinazioni testate per replicare i successi in future coltivazioni."
-      ],
-      "varianti": [
-        "sistema con Fe-Cu + Lakhovsky",
-        "sistema con acqua magnetizzata + geobiologia",
-        "sistema con campi ELF + spirali"
-      ],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 85,
-      "tag_correlati": [
-        "sinergia tecniche",
-        "sistema integrato",
-        "armonizzazione completa"
-      ],
-      "pdf_ids": [
-        "pdf_49"
-      ],
-      "pdf_count": 1
+      "pdf_count": 9
     }
   ],
   "grafo": {
     "nodi": [
       {
-        "id": "acqua_magnetizzata_strutt",
-        "label": "Acqua magnetizzata per struttura e vitalità",
+        "id": "acqua_magnetizzata",
+        "label": "Acqua Magnetizzata per Coltivazione",
         "categoria": "irrigazione"
       },
       {
-        "id": "antenna_terra_geobiologic",
-        "label": "Antenna di terra per equilibrio geobiologico",
+        "id": "antenna_terra",
+        "label": "Antenna di Terra per Connessione Geobiologica",
+        "categoria": "altro"
+      },
+      {
+        "id": "spirale_rame",
+        "label": "Spirale in Rame per Armonizzazione Energetica",
+        "categoria": "altro"
+      },
+      {
+        "id": "circuito_lakhovsky",
+        "label": "Circuito Oscillante di Lakhovsky",
+        "categoria": "altro"
+      },
+      {
+        "id": "lega_ferro_rame",
+        "label": "Lega Ferro-Rame come Catalizzatore Biologico",
         "categoria": "suolo"
       },
       {
-        "id": "spirale_rame_campi_locali",
-        "label": "Spirali di rame per armonizzazione elettromagnetica",
-        "categoria": "elettrocultura"
+        "id": "atomo_ighina",
+        "label": "Atomo Magnetico di Ighina",
+        "categoria": "altro"
       },
       {
-        "id": "fe_cu_elettrodi_bimetalli",
-        "label": "Elettrodi Fe-Cu per stimolazione biochimica",
+        "id": "gestione_suolo_vivente",
+        "label": "Gestione del Suolo Vivente",
+        "categoria": "suolo"
+      },
+      {
+        "id": "compostaggio_fertilizzazi",
+        "label": "Compostaggio e Fertilizzazione Organica",
+        "categoria": "suolo"
+      },
+      {
+        "id": "farine_rocce",
+        "label": "Farine di Rocce per Apporto Minerale",
+        "categoria": "suolo"
+      },
+      {
+        "id": "irrigazione_living_soil",
+        "label": "Irrigazione per Suolo Vivente",
+        "categoria": "irrigazione"
+      },
+      {
+        "id": "micorrize_innesto",
+        "label": "Inoculazione di Micorrize",
+        "categoria": "suolo"
+      },
+      {
+        "id": "nutrizione_organica_bilan",
+        "label": "Nutrizione Organica Bilanciata",
         "categoria": "nutrizione"
       },
       {
-        "id": "lakhovsky_oscillatori_cel",
-        "label": "Oscillatori di Lakhovsky per risonanza cellulare",
-        "categoria": "biodinamica"
+        "id": "fotoperiodo_gestione",
+        "label": "Gestione del Fotoperiodo",
+        "categoria": "altro"
       },
       {
-        "id": "atomo_magnetico_ighina",
-        "label": "Atomo magnetico di Ighina per armonizzazione",
-        "categoria": "elettrocultura"
+        "id": "gestione_fioritura",
+        "label": "Gestione della Fioritura",
+        "categoria": "fitosanitario"
       },
       {
-        "id": "campi_elettromagnetici_co",
-        "label": "Campi elettromagnetici a bassa frequenza per stimolazione",
-        "categoria": "elettrocultura"
+        "id": "essiccazione_concia",
+        "label": "Essiccazione e Concitazione",
+        "categoria": "raccolta"
       },
       {
-        "id": "pacciamatura_elettroattiv",
-        "label": "Pacciamatura con materiali conduttivi per armonizzazione",
+        "id": "cura_radici",
+        "label": "Cura delle Radici",
         "categoria": "suolo"
       },
       {
-        "id": "monitoraggio_geobiologico",
-        "label": "Mappatura geobiologica del suolo",
+        "id": "biodiversita_suolo",
+        "label": "Promozione della Biodiversità del Suolo",
         "categoria": "suolo"
       },
       {
-        "id": "nutrizione_elettrostatica",
-        "label": "Fertilizzazione con acqua ionizzata",
-        "categoria": "nutrizione"
+        "id": "ph_suolo",
+        "label": "Gestione del pH del Suolo",
+        "categoria": "suolo"
       },
       {
-        "id": "coltivazione_sinergica",
-        "label": "Associazione di tecniche elettromagnetiche",
+        "id": "simbologia_armonizzazione",
+        "label": "Armonizzazione Energetica e Simbologia",
         "categoria": "altro"
       }
     ],
     "edges": [
       {
-        "source": "antenna_terra_geobiologic",
-        "target": "pacciamatura_elettroattiv",
-        "peso": 1
-      },
-      {
-        "source": "antenna_terra_geobiologic",
-        "target": "monitoraggio_geobiologico",
-        "peso": 5
-      },
-      {
-        "source": "spirale_rame_campi_locali",
-        "target": "lakhovsky_oscillatori_cel",
+        "source": "acqua_magnetizzata",
+        "target": "antenna_terra",
         "peso": 2
       },
       {
-        "source": "spirale_rame_campi_locali",
-        "target": "atomo_magnetico_ighina",
+        "source": "acqua_magnetizzata",
+        "target": "spirale_rame",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "circuito_lakhovsky",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "lega_ferro_rame",
+        "peso": 4
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "atomo_ighina",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "gestione_suolo_vivente",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "compostaggio_fertilizzazi",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "farine_rocce",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "irrigazione_living_soil",
+        "peso": 5
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "micorrize_innesto",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "nutrizione_organica_bilan",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "gestione_fioritura",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "cura_radici",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "biodiversita_suolo",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "ph_suolo",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "spirale_rame",
+        "peso": 7
+      },
+      {
+        "source": "antenna_terra",
+        "target": "circuito_lakhovsky",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra",
+        "target": "lega_ferro_rame",
+        "peso": 4
+      },
+      {
+        "source": "antenna_terra",
+        "target": "atomo_ighina",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra",
+        "target": "gestione_suolo_vivente",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "compostaggio_fertilizzazi",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "farine_rocce",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "irrigazione_living_soil",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "micorrize_innesto",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "nutrizione_organica_bilan",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "fotoperiodo_gestione",
         "peso": 1
       },
       {
-        "source": "spirale_rame_campi_locali",
-        "target": "campi_elettromagnetici_co",
-        "peso": 1
+        "source": "antenna_terra",
+        "target": "cura_radici",
+        "peso": 2
       },
       {
-        "source": "fe_cu_elettrodi_bimetalli",
-        "target": "nutrizione_elettrostatica",
+        "source": "antenna_terra",
+        "target": "biodiversita_suolo",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "ph_suolo",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "simbologia_armonizzazione",
         "peso": 3
       },
       {
-        "source": "atomo_magnetico_ighina",
-        "target": "campi_elettromagnetici_co",
+        "source": "spirale_rame",
+        "target": "circuito_lakhovsky",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame",
+        "target": "lega_ferro_rame",
+        "peso": 4
+      },
+      {
+        "source": "spirale_rame",
+        "target": "atomo_ighina",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame",
+        "target": "gestione_suolo_vivente",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "compostaggio_fertilizzazi",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "farine_rocce",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "irrigazione_living_soil",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "micorrize_innesto",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "nutrizione_organica_bilan",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "fotoperiodo_gestione",
         "peso": 1
       },
       {
-        "source": "pacciamatura_elettroattiv",
-        "target": "monitoraggio_geobiologico",
+        "source": "spirale_rame",
+        "target": "cura_radici",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "biodiversita_suolo",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "ph_suolo",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "simbologia_armonizzazione",
+        "peso": 3
+      },
+      {
+        "source": "circuito_lakhovsky",
+        "target": "lega_ferro_rame",
+        "peso": 2
+      },
+      {
+        "source": "circuito_lakhovsky",
+        "target": "atomo_ighina",
+        "peso": 5
+      },
+      {
+        "source": "circuito_lakhovsky",
+        "target": "fotoperiodo_gestione",
         "peso": 1
+      },
+      {
+        "source": "circuito_lakhovsky",
+        "target": "gestione_fioritura",
+        "peso": 2
+      },
+      {
+        "source": "circuito_lakhovsky",
+        "target": "simbologia_armonizzazione",
+        "peso": 3
+      },
+      {
+        "source": "lega_ferro_rame",
+        "target": "atomo_ighina",
+        "peso": 2
+      },
+      {
+        "source": "lega_ferro_rame",
+        "target": "gestione_suolo_vivente",
+        "peso": 5
+      },
+      {
+        "source": "lega_ferro_rame",
+        "target": "compostaggio_fertilizzazi",
+        "peso": 5
+      },
+      {
+        "source": "lega_ferro_rame",
+        "target": "farine_rocce",
+        "peso": 5
+      },
+      {
+        "source": "lega_ferro_rame",
+        "target": "irrigazione_living_soil",
+        "peso": 4
+      },
+      {
+        "source": "lega_ferro_rame",
+        "target": "micorrize_innesto",
+        "peso": 5
+      },
+      {
+        "source": "lega_ferro_rame",
+        "target": "nutrizione_organica_bilan",
+        "peso": 4
+      },
+      {
+        "source": "lega_ferro_rame",
+        "target": "gestione_fioritura",
+        "peso": 2
+      },
+      {
+        "source": "lega_ferro_rame",
+        "target": "cura_radici",
+        "peso": 5
+      },
+      {
+        "source": "lega_ferro_rame",
+        "target": "biodiversita_suolo",
+        "peso": 5
+      },
+      {
+        "source": "lega_ferro_rame",
+        "target": "ph_suolo",
+        "peso": 5
+      },
+      {
+        "source": "atomo_ighina",
+        "target": "fotoperiodo_gestione",
+        "peso": 1
+      },
+      {
+        "source": "atomo_ighina",
+        "target": "simbologia_armonizzazione",
+        "peso": 3
+      },
+      {
+        "source": "gestione_suolo_vivente",
+        "target": "compostaggio_fertilizzazi",
+        "peso": 7
+      },
+      {
+        "source": "gestione_suolo_vivente",
+        "target": "farine_rocce",
+        "peso": 5
+      },
+      {
+        "source": "gestione_suolo_vivente",
+        "target": "irrigazione_living_soil",
+        "peso": 4
+      },
+      {
+        "source": "gestione_suolo_vivente",
+        "target": "micorrize_innesto",
+        "peso": 7
+      },
+      {
+        "source": "gestione_suolo_vivente",
+        "target": "nutrizione_organica_bilan",
+        "peso": 4
+      },
+      {
+        "source": "gestione_suolo_vivente",
+        "target": "gestione_fioritura",
+        "peso": 2
+      },
+      {
+        "source": "gestione_suolo_vivente",
+        "target": "cura_radici",
+        "peso": 5
+      },
+      {
+        "source": "gestione_suolo_vivente",
+        "target": "biodiversita_suolo",
+        "peso": 7
+      },
+      {
+        "source": "gestione_suolo_vivente",
+        "target": "ph_suolo",
+        "peso": 5
+      },
+      {
+        "source": "compostaggio_fertilizzazi",
+        "target": "farine_rocce",
+        "peso": 5
+      },
+      {
+        "source": "compostaggio_fertilizzazi",
+        "target": "irrigazione_living_soil",
+        "peso": 4
+      },
+      {
+        "source": "compostaggio_fertilizzazi",
+        "target": "micorrize_innesto",
+        "peso": 7
+      },
+      {
+        "source": "compostaggio_fertilizzazi",
+        "target": "nutrizione_organica_bilan",
+        "peso": 4
+      },
+      {
+        "source": "compostaggio_fertilizzazi",
+        "target": "gestione_fioritura",
+        "peso": 2
+      },
+      {
+        "source": "compostaggio_fertilizzazi",
+        "target": "cura_radici",
+        "peso": 5
+      },
+      {
+        "source": "compostaggio_fertilizzazi",
+        "target": "biodiversita_suolo",
+        "peso": 7
+      },
+      {
+        "source": "compostaggio_fertilizzazi",
+        "target": "ph_suolo",
+        "peso": 5
+      },
+      {
+        "source": "farine_rocce",
+        "target": "irrigazione_living_soil",
+        "peso": 4
+      },
+      {
+        "source": "farine_rocce",
+        "target": "micorrize_innesto",
+        "peso": 5
+      },
+      {
+        "source": "farine_rocce",
+        "target": "nutrizione_organica_bilan",
+        "peso": 4
+      },
+      {
+        "source": "farine_rocce",
+        "target": "gestione_fioritura",
+        "peso": 2
+      },
+      {
+        "source": "farine_rocce",
+        "target": "cura_radici",
+        "peso": 5
+      },
+      {
+        "source": "farine_rocce",
+        "target": "biodiversita_suolo",
+        "peso": 5
+      },
+      {
+        "source": "farine_rocce",
+        "target": "ph_suolo",
+        "peso": 5
+      },
+      {
+        "source": "irrigazione_living_soil",
+        "target": "micorrize_innesto",
+        "peso": 4
+      },
+      {
+        "source": "irrigazione_living_soil",
+        "target": "nutrizione_organica_bilan",
+        "peso": 4
+      },
+      {
+        "source": "irrigazione_living_soil",
+        "target": "gestione_fioritura",
+        "peso": 2
+      },
+      {
+        "source": "irrigazione_living_soil",
+        "target": "cura_radici",
+        "peso": 4
+      },
+      {
+        "source": "irrigazione_living_soil",
+        "target": "biodiversita_suolo",
+        "peso": 4
+      },
+      {
+        "source": "irrigazione_living_soil",
+        "target": "ph_suolo",
+        "peso": 4
+      },
+      {
+        "source": "micorrize_innesto",
+        "target": "nutrizione_organica_bilan",
+        "peso": 4
+      },
+      {
+        "source": "micorrize_innesto",
+        "target": "gestione_fioritura",
+        "peso": 2
+      },
+      {
+        "source": "micorrize_innesto",
+        "target": "cura_radici",
+        "peso": 5
+      },
+      {
+        "source": "micorrize_innesto",
+        "target": "biodiversita_suolo",
+        "peso": 7
+      },
+      {
+        "source": "micorrize_innesto",
+        "target": "ph_suolo",
+        "peso": 5
+      },
+      {
+        "source": "nutrizione_organica_bilan",
+        "target": "fotoperiodo_gestione",
+        "peso": 2
+      },
+      {
+        "source": "nutrizione_organica_bilan",
+        "target": "gestione_fioritura",
+        "peso": 4
+      },
+      {
+        "source": "nutrizione_organica_bilan",
+        "target": "cura_radici",
+        "peso": 4
+      },
+      {
+        "source": "nutrizione_organica_bilan",
+        "target": "biodiversita_suolo",
+        "peso": 4
+      },
+      {
+        "source": "nutrizione_organica_bilan",
+        "target": "ph_suolo",
+        "peso": 4
+      },
+      {
+        "source": "fotoperiodo_gestione",
+        "target": "gestione_fioritura",
+        "peso": 2
+      },
+      {
+        "source": "fotoperiodo_gestione",
+        "target": "simbologia_armonizzazione",
+        "peso": 1
+      },
+      {
+        "source": "gestione_fioritura",
+        "target": "cura_radici",
+        "peso": 2
+      },
+      {
+        "source": "gestione_fioritura",
+        "target": "biodiversita_suolo",
+        "peso": 2
+      },
+      {
+        "source": "gestione_fioritura",
+        "target": "ph_suolo",
+        "peso": 2
+      },
+      {
+        "source": "cura_radici",
+        "target": "biodiversita_suolo",
+        "peso": 5
+      },
+      {
+        "source": "cura_radici",
+        "target": "ph_suolo",
+        "peso": 5
+      },
+      {
+        "source": "biodiversita_suolo",
+        "target": "ph_suolo",
+        "peso": 5
       }
     ]
   }
