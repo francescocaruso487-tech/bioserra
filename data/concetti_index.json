@@ -1,15 +1,526 @@
 {
-  "lastUpdate": "2026-06-26",
-  "total": 13,
+  "lastUpdate": "2026-06-27",
+  "total": 40,
   "fonte": "89 PDF analizzati",
   "concetti": [
     {
-      "id": "elettrocultura",
-      "label": "Elettrocultura",
-      "categoria": "elettrocultura",
-      "descrizione": "Elettrocultura estratta da 6 documenti scientifici. Esplora i principi di Corso-Elettrocoltura_compressed per ottimizzare il microbioma del suolo",
+      "id": "acqua_magnetizzata",
+      "label": "Acqua magnetizzata",
+      "categoria": "irrigazione",
+      "descrizione": "Acqua magnetizzata estratta da 51 documenti scientifici. Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante ",
       "istruzioni_pratiche": [
-        "Esplora i principi di Corso-Elettrocoltura_compressed per ottimizzare il microbioma del suolo",
+        "Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante ",
+        "Collegare il circuito Lakhovsky a una fonte di corrente continua a 12V, regoland",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "irrigazione",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_3",
+        "pdf_5",
+        "pdf_6",
+        "pdf_7",
+        "pdf_13",
+        "pdf_14",
+        "pdf_16",
+        "pdf_18",
+        "pdf_22"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "antenna_di_terra",
+      "label": "Antenna di terra",
+      "categoria": "suolo",
+      "descrizione": "Antenna di terra estratta da 27 documenti scientifici. Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante ",
+      "istruzioni_pratiche": [
+        "Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante ",
+        "Collegare il circuito Lakhovsky a una fonte di corrente continua a 12V, regoland",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "suolo",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_14",
+        "pdf_16",
+        "pdf_18",
+        "pdf_22",
+        "pdf_24",
+        "pdf_28",
+        "pdf_34",
+        "pdf_53"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "spirale_rame",
+      "label": "Spirale rame",
+      "categoria": "elettrocultura",
+      "descrizione": "Spirale rame estratta da 22 documenti scientifici. Applicare la spirale rame intorno alle piante per armonizzare i campi energetici e favorire la cresc",
+      "istruzioni_pratiche": [
+        "Applicare la spirale rame intorno alle piante per armonizzare i campi energetici e favorire la cresc",
+        "Utilizzare l'antenna terra per bilanciare le cariche elettriche del suolo e ridu",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "antenna_terra",
+      "label": "Antenna terra",
+      "categoria": "suolo",
+      "descrizione": "Antenna terra estratta da 22 documenti scientifici. Applicare la spirale rame intorno alle piante per armonizzare i campi energetici e favorire la cresc",
+      "istruzioni_pratiche": [
+        "Applicare la spirale rame intorno alle piante per armonizzare i campi energetici e favorire la cresc",
+        "Utilizzare l'antenna terra per bilanciare le cariche elettriche del suolo e ridu",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "suolo",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_14",
+        "pdf_16",
+        "pdf_18",
+        "pdf_22",
+        "pdf_24",
+        "pdf_28",
+        "pdf_34",
+        "pdf_53"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "lakhovsky",
+      "label": "Lakhovsky",
+      "categoria": "elettrocultura",
+      "descrizione": "Lakhovsky estratta da 20 documenti scientifici. Applicare la spirale rame intorno alle piante per armonizzare i campi energetici e favorire la cresc",
+      "istruzioni_pratiche": [
+        "Applicare la spirale rame intorno alle piante per armonizzare i campi energetici e favorire la cresc",
+        "Utilizzare l'antenna terra per bilanciare le cariche elettriche del suolo e ridu",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_16",
+        "pdf_43",
+        "pdf_55",
+        "pdf_62",
+        "pdf_63",
+        "pdf_64",
+        "pdf_66",
+        "pdf_78",
+        "pdf_79"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "fe_cu",
+      "label": "Fe-Cu",
+      "categoria": "altro",
+      "descrizione": "Fe-Cu estratta da 20 documenti scientifici. Applicare la spirale rame intorno alle piante per armonizzare i campi energetici e favorire la cresc",
+      "istruzioni_pratiche": [
+        "Applicare la spirale rame intorno alle piante per armonizzare i campi energetici e favorire la cresc",
+        "Utilizzare l'antenna terra per bilanciare le cariche elettriche del suolo e ridu",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "altro",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "fe_cu__ferro_rame",
+      "label": "Fe-Cu (ferro-rame)",
+      "categoria": "elettrocultura",
+      "descrizione": "Fe-Cu (ferro-rame) estratta da 19 documenti scientifici. Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante ",
+      "istruzioni_pratiche": [
+        "Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante ",
+        "Collegare il circuito Lakhovsky a una fonte di corrente continua a 12V, regoland",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "spirale_in_rame",
+      "label": "Spirale in rame",
+      "categoria": "elettrocultura",
+      "descrizione": "Spirale in rame estratta da 19 documenti scientifici. Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante ",
+      "istruzioni_pratiche": [
+        "Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante ",
+        "Collegare il circuito Lakhovsky a una fonte di corrente continua a 12V, regoland",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "lakhovsky__circuito",
+      "label": "Lakhovsky (circuito oscillante)",
+      "categoria": "elettrocultura",
+      "descrizione": "Lakhovsky (circuito oscillante) estratta da 13 documenti scientifici. Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante ",
+      "istruzioni_pratiche": [
+        "Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante ",
+        "Collegare il circuito Lakhovsky a una fonte di corrente continua a 12V, regoland",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_16",
+        "pdf_43",
+        "pdf_55",
+        "pdf_62",
+        "pdf_63",
+        "pdf_64",
+        "pdf_66",
+        "pdf_78",
+        "pdf_79"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "acqua_magnetizzata_9",
+      "label": "acqua magnetizzata (strutturazione molecolare)",
+      "categoria": "irrigazione",
+      "descrizione": "acqua magnetizzata (strutturazione molecolare) estratta da 11 documenti scientifici. Integrare la spirale rame intorno alle piante di pomodoro (coltura target) per amplificare la rispos",
+      "istruzioni_pratiche": [
+        "Integrare la spirale rame intorno alle piante di pomodoro (coltura target) per amplificare la rispos",
+        "Applicare corrente pulsata a 7.83Hz (frequenza di Schumann) tramite elettrodi Fe",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "irrigazione",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_3",
+        "pdf_5",
+        "pdf_6",
+        "pdf_7",
+        "pdf_13",
+        "pdf_14",
+        "pdf_16",
+        "pdf_18",
+        "pdf_22"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "lakhovsky__oscillato",
+      "label": "Lakhovsky (Oscillatori a onde multiple)",
+      "categoria": "elettrocultura",
+      "descrizione": "Lakhovsky (Oscillatori a onde multiple) estratta da 9 documenti scientifici. Integrare l'elettrocultura con l'uso di spirali in rame posizionate intorno alle piante per captare ",
+      "istruzioni_pratiche": [
+        "Integrare l'elettrocultura con l'uso di spirali in rame posizionate intorno alle piante per captare ",
+        "Collegare un'antenna di terra a una spirale in rame avvolta intorno al fusto del",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_16",
+        "pdf_43",
+        "pdf_55",
+        "pdf_62",
+        "pdf_63",
+        "pdf_64",
+        "pdf_66",
+        "pdf_78",
+        "pdf_79"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "lakhovsky__oscillato_11",
+      "label": "Lakhovsky (Oscillatori Multicellulari)",
+      "categoria": "elettrocultura",
+      "descrizione": "Lakhovsky (Oscillatori Multicellulari) estratta da 8 documenti scientifici. Applicare la spirale in rame intorno al fusto delle piante per 2-3 settimane all’inizio della stagio",
+      "istruzioni_pratiche": [
+        "Applicare la spirale in rame intorno al fusto delle piante per 2-3 settimane all’inizio della stagio",
+        "Collegare l’antenna di terra a una barra metallica interrata a 1m di profondità,",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 90,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_16",
+        "pdf_43",
+        "pdf_55",
+        "pdf_62",
+        "pdf_63",
+        "pdf_64",
+        "pdf_66",
+        "pdf_78",
+        "pdf_79"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "spirale_di_rame",
+      "label": "spirale di rame",
+      "categoria": "elettrocultura",
+      "descrizione": "spirale di rame estratta da 8 documenti scientifici. Integrare la spirale di rame intorno alla serra per armonizzare i campi elettromagnetici naturali, p",
+      "istruzioni_pratiche": [
+        "Integrare la spirale di rame intorno alla serra per armonizzare i campi elettromagnetici naturali, p",
+        "Applicare la tecnica Fe-Cu (filo di ferro e rame intrecciati) a 10 cm di profond",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 90,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "antenna_di_terra__co",
+      "label": "Antenna di terra (connessione geobiologica)",
+      "categoria": "suolo",
+      "descrizione": "Antenna di terra (connessione geobiologica) estratta da 7 documenti scientifici. Applicare la spirale di rame intorno al fusto delle piante per 30 giorni consecutivi durante la fase",
+      "istruzioni_pratiche": [
+        "Applicare la spirale di rame intorno al fusto delle piante per 30 giorni consecutivi durante la fase",
+        "Collegare l'antenna di terra a una barra di rame interrata a 1 metro di profondi",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 85,
+      "tag_correlati": [
+        "suolo",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_14",
+        "pdf_16",
+        "pdf_18",
+        "pdf_22",
+        "pdf_24",
+        "pdf_28",
+        "pdf_34",
+        "pdf_53"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "lakhovsky__onde_di_f",
+      "label": "Lakhovsky (onde di forma)",
+      "categoria": "elettrocultura",
+      "descrizione": "Lakhovsky (onde di forma) estratta da 7 documenti scientifici. Integrare la spirale di rame intorno alla serra per armonizzare i campi elettromagnetici naturali, p",
+      "istruzioni_pratiche": [
+        "Integrare la spirale di rame intorno alla serra per armonizzare i campi elettromagnetici naturali, p",
+        "Applicare la tecnica Fe-Cu (filo di ferro e rame intrecciati) a 10 cm di profond",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 85,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_16",
+        "pdf_43",
+        "pdf_55",
+        "pdf_62",
+        "pdf_63",
+        "pdf_64",
+        "pdf_66",
+        "pdf_78",
+        "pdf_79"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "antenna_terra__conne",
+      "label": "antenna terra (connessione geobiologica)",
+      "categoria": "suolo",
+      "descrizione": "antenna terra (connessione geobiologica) estratta da 6 documenti scientifici. Integrare la spirale rame intorno alle piante per amplificare la captazione delle onde di forma Lakh",
+      "istruzioni_pratiche": [
+        "Integrare la spirale rame intorno alle piante per amplificare la captazione delle onde di forma Lakh",
+        "Utilizzare l'antenna terra con un picchetto di rame infisso a 30 cm di profondit",
         "Monitora i risultati dopo ogni applicazione"
       ],
       "varianti": [],
@@ -19,27 +530,31 @@
       ],
       "rilevanza": 80,
       "tag_correlati": [
-        "elettrocultura",
+        "suolo",
         "living-soil"
       ],
       "pdf_ids": [
+        "pdf_0",
         "pdf_13",
+        "pdf_14",
         "pdf_16",
-        "pdf_17",
         "pdf_18",
-        "pdf_19",
-        "pdf_79"
+        "pdf_22",
+        "pdf_24",
+        "pdf_28",
+        "pdf_34",
+        "pdf_53"
       ],
-      "pdf_count": 6
+      "pdf_count": 10
     },
     {
-      "id": "principi_elettromagn",
-      "label": "Principi elettromagnetici Tesla",
+      "id": "fe_cu__ferro_rame_co",
+      "label": "Fe-Cu (ferro-rame come catalizzatori biologici)",
       "categoria": "elettrocultura",
-      "descrizione": "Principi elettromagnetici Tesla estratta da 5 documenti scientifici. Esplora i principi di IL-CODICE-TESLA-SECOLARIUM-SAGA-_Italian per ottimizzare il microbioma del suo",
+      "descrizione": "Fe-Cu (ferro-rame come catalizzatori biologici) estratta da 5 documenti scientifici. Integrare la spirale rame intorno alle piante di pomodoro (coltura target) per amplificare la rispos",
       "istruzioni_pratiche": [
-        "Esplora i principi di IL-CODICE-TESLA-SECOLARIUM-SAGA-_Italian per ottimizzare il microbioma del suo",
-        "Principi applicabili a circuito Lakhovsky e spirale cosmica rame",
+        "Integrare la spirale rame intorno alle piante di pomodoro (coltura target) per amplificare la rispos",
+        "Applicare corrente pulsata a 7.83Hz (frequenza di Schumann) tramite elettrodi Fe",
         "Monitora i risultati dopo ogni applicazione"
       ],
       "varianti": [],
@@ -53,22 +568,27 @@
         "living-soil"
       ],
       "pdf_ids": [
-        "pdf_27",
-        "pdf_45",
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
         "pdf_53",
         "pdf_54",
-        "pdf_68"
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
       ],
-      "pdf_count": 5
+      "pdf_count": 10
     },
     {
-      "id": "fisiologia_vegetale",
-      "label": "Fisiologia vegetale",
-      "categoria": "altro",
-      "descrizione": "Fisiologia vegetale estratta da 4 documenti scientifici. Esplora i principi di Aleister-Crowley-Aforismi-Esoterici per ottimizzare il microbioma del suolo",
+      "id": "acqua_magnetizzata_1",
+      "label": "Acqua magnetizzata (polarizzazione)",
+      "categoria": "irrigazione",
+      "descrizione": "Acqua magnetizzata (polarizzazione) estratta da 5 documenti scientifici. Applicare la spirale rame intorno alle piante per 15 giorni prima del trapianto, posizionandola a 30",
       "istruzioni_pratiche": [
-        "Esplora i principi di Aleister-Crowley-Aforismi-Esoterici per ottimizzare il microbioma del suolo",
-        "Principi applicabili a circuito Lakhovsky e spirale cosmica rame",
+        "Applicare la spirale rame intorno alle piante per 15 giorni prima del trapianto, posizionandola a 30",
+        "Collegare l'antenna terra a una barra di rame interrata a 1m di profondità, orie",
         "Monitora i risultati dopo ogni applicazione"
       ],
       "varianti": [],
@@ -76,27 +596,33 @@
         "vegetazione",
         "fioritura"
       ],
-      "rilevanza": 70,
+      "rilevanza": 75,
       "tag_correlati": [
-        "altro",
+        "irrigazione",
         "living-soil"
       ],
       "pdf_ids": [
+        "pdf_0",
         "pdf_3",
-        "pdf_42",
-        "pdf_44",
-        "pdf_84"
+        "pdf_5",
+        "pdf_6",
+        "pdf_7",
+        "pdf_13",
+        "pdf_14",
+        "pdf_16",
+        "pdf_18",
+        "pdf_22"
       ],
-      "pdf_count": 4
+      "pdf_count": 10
     },
     {
-      "id": "campo_magnetico_per",
-      "label": "Campo magnetico per piante",
-      "categoria": "altro",
-      "descrizione": "Campo magnetico per piante estratta da 4 documenti scientifici. Esplora i principi di Fondamenti di campi elettromagnetici. Te per ottimizzare il microbioma del suo",
+      "id": "lakhovsky__oscillazi",
+      "label": "Lakhovsky (oscillazioni cellulari)",
+      "categoria": "elettrocultura",
+      "descrizione": "Lakhovsky (oscillazioni cellulari) estratta da 4 documenti scientifici. Applicare la spirale in rame intorno alle piante di basilico o pomodoro per potenziare la resilienza",
       "istruzioni_pratiche": [
-        "Esplora i principi di Fondamenti di campi elettromagnetici. Te per ottimizzare il microbioma del suo",
-        "Principi applicabili a circuito Lakhovsky e spirale cosmica rame",
+        "Applicare la spirale in rame intorno alle piante di basilico o pomodoro per potenziare la resilienza",
+        "Utilizzare il metodo Lakhovsky con elettrodi in rame posizionati a spirale intor",
         "Monitora i risultati dopo ogni applicazione"
       ],
       "varianti": [],
@@ -106,26 +632,99 @@
       ],
       "rilevanza": 70,
       "tag_correlati": [
-        "altro",
+        "elettrocultura",
         "living-soil"
       ],
       "pdf_ids": [
-        "pdf_21",
-        "pdf_28",
-        "pdf_37",
-        "pdf_84",
-        "pdf_55"
+        "pdf_0",
+        "pdf_16",
+        "pdf_43",
+        "pdf_55",
+        "pdf_62",
+        "pdf_63",
+        "pdf_64",
+        "pdf_66",
+        "pdf_78",
+        "pdf_79"
       ],
-      "pdf_count": 5
+      "pdf_count": 10
     },
     {
-      "id": "spirale_cosmica_in_r",
-      "label": "Spirale cosmica in rame",
+      "id": "fe_cu__ferro_rame_pe",
+      "label": "Fe-Cu (ferro-rame per equilibrio elettromagnetico)",
       "categoria": "elettrocultura",
-      "descrizione": "Spirale cosmica in rame estratta da 3 documenti scientifici. Esplora i principi di Aleister-Crowley-Aforismi-Esoterici per ottimizzare il microbioma del suolo",
+      "descrizione": "Fe-Cu (ferro-rame per equilibrio elettromagnetico) estratta da 4 documenti scientifici. Applicare la spirale in rame intorno alle piante di basilico o pomodoro per potenziare la resilienza",
       "istruzioni_pratiche": [
-        "Esplora i principi di Aleister-Crowley-Aforismi-Esoterici per ottimizzare il microbioma del suolo",
-        "Principi applicabili a circuito Lakhovsky e spirale cosmica rame",
+        "Applicare la spirale in rame intorno alle piante di basilico o pomodoro per potenziare la resilienza",
+        "Utilizzare il metodo Lakhovsky con elettrodi in rame posizionati a spirale intor",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 70,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "spirale_rame__campi",
+      "label": "spirale rame (campi elettromagnetici)",
+      "categoria": "elettrocultura",
+      "descrizione": "spirale rame (campi elettromagnetici) estratta da 4 documenti scientifici. Integrare l'acqua magnetizzata (10-15 min di esposizione a spirale rame) nelle irrigazioni per stimo",
+      "istruzioni_pratiche": [
+        "Integrare l'acqua magnetizzata (10-15 min di esposizione a spirale rame) nelle irrigazioni per stimo",
+        "Posizionare una spirale rame (diametro 30 cm) a 20 cm dal suolo, orientata verso",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 70,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "fe_cu__ferro_rame_co_21",
+      "label": "Fe-Cu (Ferro-Rame come conduttori)",
+      "categoria": "elettrocultura",
+      "descrizione": "Fe-Cu (Ferro-Rame come conduttori) estratta da 3 documenti scientifici. Integrare l'elettrocultura con l'uso di spirali in rame posizionate intorno alle piante per captare ",
+      "istruzioni_pratiche": [
+        "Integrare l'elettrocultura con l'uso di spirali in rame posizionate intorno alle piante per captare ",
+        "Collegare un'antenna di terra a una spirale in rame avvolta intorno al fusto del",
         "Monitora i risultati dopo ogni applicazione"
       ],
       "varianti": [],
@@ -139,20 +738,27 @@
         "living-soil"
       ],
       "pdf_ids": [
-        "pdf_3",
-        "pdf_9",
-        "pdf_27"
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
       ],
-      "pdf_count": 3
+      "pdf_count": 10
     },
     {
-      "id": "atomo_magnetico_ighi",
-      "label": "Atomo magnetico Ighina",
-      "categoria": "altro",
-      "descrizione": "Atomo magnetico Ighina estratta da 3 documenti scientifici. Esplora i principi di Ighina_El_Atomo_Magnetico_text per ottimizzare il microbioma del suolo",
+      "id": "spirale_in_rame__cam",
+      "label": "Spirale in rame (campi elettromagnetici)",
+      "categoria": "elettrocultura",
+      "descrizione": "Spirale in rame (campi elettromagnetici) estratta da 3 documenti scientifici. Applicare la spirale in rame avvolta in senso orario intorno al fusto principale delle piante, posiz",
       "istruzioni_pratiche": [
-        "Esplora i principi di Ighina_El_Atomo_Magnetico_text per ottimizzare il microbioma del suolo",
-        "Principi applicabili a circuito Lakhovsky e spirale cosmica rame",
+        "Applicare la spirale in rame avvolta in senso orario intorno al fusto principale delle piante, posiz",
+        "Collegare l'oscillatore Lakhovsky a una batteria da 12V con frequenza regolata s",
         "Monitora i risultati dopo ogni applicazione"
       ],
       "varianti": [],
@@ -162,78 +768,65 @@
       ],
       "rilevanza": 65,
       "tag_correlati": [
-        "altro",
+        "elettrocultura",
         "living-soil"
       ],
       "pdf_ids": [
-        "pdf_21",
-        "pdf_28",
-        "pdf_37",
-        "pdf_84",
-        "pdf_55"
-      ],
-      "pdf_count": 5
-    },
-    {
-      "id": "calendario_lunare",
-      "label": "Calendario lunare",
-      "categoria": "biodinamica",
-      "descrizione": "Calendario lunare estratta da 2 documenti scientifici. Applica le tecniche di Spirale cosmica in rame durante la fase vegetativa",
-      "istruzioni_pratiche": [
-        "Applica le tecniche di Spirale cosmica in rame durante la fase vegetativa",
-        "Principi applicabili a circuito Lakhovsky e spirale cosmica rame",
-        "Monitora i risultati dopo ogni applicazione"
-      ],
-      "varianti": [],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 60,
-      "tag_correlati": [
-        "biodinamica",
-        "living-soil"
-      ],
-      "pdf_ids": [
-        "pdf_9",
-        "pdf_36"
-      ],
-      "pdf_count": 2
-    },
-    {
-      "id": "frequenze_vibraziona",
-      "label": "Frequenze vibrazionali",
-      "categoria": "altro",
-      "descrizione": "Frequenze vibrazionali estratta da 2 documenti scientifici. Esplora i principi di Nikola-Tesla-Come-Lenergia_-Le-Frequenze per ottimizzare il microbioma del suo",
-      "istruzioni_pratiche": [
-        "Esplora i principi di Nikola-Tesla-Come-Lenergia_-Le-Frequenze per ottimizzare il microbioma del suo",
-        "Principi applicabili a circuito Lakhovsky e spirale cosmica rame",
-        "Monitora i risultati dopo ogni applicazione"
-      ],
-      "varianti": [],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 60,
-      "tag_correlati": [
-        "altro",
-        "living-soil"
-      ],
-      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
         "pdf_54",
-        "pdf_84"
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
       ],
-      "pdf_count": 2
+      "pdf_count": 10
     },
     {
-      "id": "vibrazione_e_risonan",
-      "label": "Vibrazione e risonanza",
+      "id": "spirale_rame__antenn",
+      "label": "spirale rame (antenne naturali)",
       "categoria": "elettrocultura",
-      "descrizione": "Vibrazione e risonanza estratta da 2 documenti scientifici. Esplora i principi di Nikola-Tesla-Come-Lenergia_-Le-Frequenze per ottimizzare il microbioma del suo",
+      "descrizione": "spirale rame (antenne naturali) estratta da 3 documenti scientifici. Integrare la spirale rame intorno alle piante per amplificare la captazione delle onde di forma Lakh",
       "istruzioni_pratiche": [
-        "Esplora i principi di Nikola-Tesla-Come-Lenergia_-Le-Frequenze per ottimizzare il microbioma del suo",
-        "Principi applicabili a circuito Lakhovsky e spirale cosmica rame",
+        "Integrare la spirale rame intorno alle piante per amplificare la captazione delle onde di forma Lakh",
+        "Utilizzare l'antenna terra con un picchetto di rame infisso a 30 cm di profondit",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 65,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "lakhovsky__oscillato_24",
+      "label": "Lakhovsky (oscillatori cellulari)",
+      "categoria": "elettrocultura",
+      "descrizione": "Lakhovsky (oscillatori cellulari) estratta da 2 documenti scientifici. Integrare la spirale rame intorno alle piante di pomodoro (coltura target) per amplificare la rispos",
+      "istruzioni_pratiche": [
+        "Integrare la spirale rame intorno alle piante di pomodoro (coltura target) per amplificare la rispos",
+        "Applicare corrente pulsata a 7.83Hz (frequenza di Schumann) tramite elettrodi Fe",
         "Monitora i risultati dopo ogni applicazione"
       ],
       "varianti": [],
@@ -247,67 +840,359 @@
         "living-soil"
       ],
       "pdf_ids": [
-        "pdf_54",
-        "pdf_56"
+        "pdf_0",
+        "pdf_16",
+        "pdf_43",
+        "pdf_55",
+        "pdf_62",
+        "pdf_63",
+        "pdf_64",
+        "pdf_66",
+        "pdf_78",
+        "pdf_79"
       ],
-      "pdf_count": 2
+      "pdf_count": 10
     },
     {
-      "id": "antenna_terrestre",
-      "label": "Antenna terrestre",
-      "categoria": "elettrocultura",
-      "descrizione": "Antenna terrestre estratta da 1 documenti scientifici. Esplora i principi di Antenna uomo - Tiziano-Guerzoni per ottimizzare il microbioma del suolo",
-      "istruzioni_pratiche": [
-        "Esplora i principi di Antenna uomo - Tiziano-Guerzoni per ottimizzare il microbioma del suolo",
-        "Principi applicabili a circuito Lakhovsky e spirale cosmica rame",
-        "Monitora i risultati dopo ogni applicazione"
-      ],
-      "varianti": [],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 55,
-      "tag_correlati": [
-        "elettrocultura",
-        "living-soil"
-      ],
-      "pdf_ids": [
-        "pdf_8"
-      ],
-      "pdf_count": 1
-    },
-    {
-      "id": "leggi_universali_kyb",
-      "label": "Leggi universali Kybalion",
-      "categoria": "altro",
-      "descrizione": "Leggi universali Kybalion estratta da 1 documenti scientifici. Consulta per ispirazione: Il-Kybalion-_I-tre-iniziati",
-      "istruzioni_pratiche": [
-        "Consulta per ispirazione: Il-Kybalion-_I-tre-iniziati",
-        "Monitora i risultati dopo ogni applicazione"
-      ],
-      "varianti": [],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 55,
-      "tag_correlati": [
-        "altro",
-        "living-soil"
-      ],
-      "pdf_ids": [
-        "pdf_33"
-      ],
-      "pdf_count": 1
-    },
-    {
-      "id": "biologia_del_suolo",
-      "label": "Biologia del suolo",
+      "id": "antenna_terra__colle",
+      "label": "antenna terra (collegamento geofisico)",
       "categoria": "suolo",
-      "descrizione": "Biologia del suolo estratta da 1 documenti scientifici. Esplora i principi di The Soil Biology Primer - Elaine Ingham per ottimizzare il microbioma del suol",
+      "descrizione": "antenna terra (collegamento geofisico) estratta da 2 documenti scientifici. Integrare la spirale rame intorno alle piante di pomodoro (coltura target) per amplificare la rispos",
       "istruzioni_pratiche": [
-        "Esplora i principi di The Soil Biology Primer - Elaine Ingham per ottimizzare il microbioma del suol",
+        "Integrare la spirale rame intorno alle piante di pomodoro (coltura target) per amplificare la rispos",
+        "Applicare corrente pulsata a 7.83Hz (frequenza di Schumann) tramite elettrodi Fe",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 60,
+      "tag_correlati": [
+        "suolo",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_14",
+        "pdf_16",
+        "pdf_18",
+        "pdf_22",
+        "pdf_24",
+        "pdf_28",
+        "pdf_34",
+        "pdf_53"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "antenna_di_terra__co_26",
+      "label": "Antenna di terra (collegamento geobiologico)",
+      "categoria": "suolo",
+      "descrizione": "Antenna di terra (collegamento geobiologico) estratta da 2 documenti scientifici. Applicare la spirale in rame intorno alle piante di basilico o pomodoro per potenziare la resilienza",
+      "istruzioni_pratiche": [
+        "Applicare la spirale in rame intorno alle piante di basilico o pomodoro per potenziare la resilienza",
+        "Utilizzare il metodo Lakhovsky con elettrodi in rame posizionati a spirale intor",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 60,
+      "tag_correlati": [
+        "suolo",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_14",
+        "pdf_16",
+        "pdf_18",
+        "pdf_22",
+        "pdf_24",
+        "pdf_28",
+        "pdf_34",
+        "pdf_53"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "fe_cu__ferro_rame_pe_27",
+      "label": "Fe-Cu (ferro-rame per stimolazione elettromagnetica)",
+      "categoria": "elettrocultura",
+      "descrizione": "Fe-Cu (ferro-rame per stimolazione elettromagnetica) estratta da 2 documenti scientifici. Applicare la spirale in rame avvolta intorno al fusto delle piante principali (es. pomodoro) per 4-6",
+      "istruzioni_pratiche": [
+        "Applicare la spirale in rame avvolta intorno al fusto delle piante principali (es. pomodoro) per 4-6",
+        "Utilizzare l'antenna di terra con un picchetto in acciaio zincato interrato a 50",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 60,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "lakhovsky__teoria_de",
+      "label": "Lakhovsky (teoria delle onde di vita)",
+      "categoria": "elettrocultura",
+      "descrizione": "Lakhovsky (teoria delle onde di vita) estratta da 2 documenti scientifici. Integrare l'acqua magnetizzata (10-15 min di esposizione a spirale rame) nelle irrigazioni per stimo",
+      "istruzioni_pratiche": [
+        "Integrare l'acqua magnetizzata (10-15 min di esposizione a spirale rame) nelle irrigazioni per stimo",
+        "Posizionare una spirale rame (diametro 30 cm) a 20 cm dal suolo, orientata verso",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 60,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_16",
+        "pdf_43",
+        "pdf_55",
+        "pdf_62",
+        "pdf_63",
+        "pdf_64",
+        "pdf_66",
+        "pdf_78",
+        "pdf_79"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "fe_cu__sinergia_meta",
+      "label": "Fe-Cu (sinergia metalli)",
+      "categoria": "altro",
+      "descrizione": "Fe-Cu (sinergia metalli) estratta da 2 documenti scientifici. Applicare la spirale in rame intorno al fusto principale delle piante per 30 giorni consecutivi, pos",
+      "istruzioni_pratiche": [
+        "Applicare la spirale in rame intorno al fusto principale delle piante per 30 giorni consecutivi, pos",
+        "Collegare l'antenna di terra a una barra di rame interrata a 1,5 m di profondità",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 60,
+      "tag_correlati": [
+        "altro",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "fe_cu__sinergia_meta_30",
+      "label": "Fe-Cu (sinergia metallica)",
+      "categoria": "altro",
+      "descrizione": "Fe-Cu (sinergia metallica) estratta da 2 documenti scientifici. Applicare la spirale rame intorno alle radici delle piante principali (es. pomodori) per potenziare ",
+      "istruzioni_pratiche": [
+        "Applicare la spirale rame intorno alle radici delle piante principali (es. pomodori) per potenziare ",
+        "Collegare l’antenna terra a una barra di rame interrata a 1m di profondità, orie",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 60,
+      "tag_correlati": [
+        "altro",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "lakhovsky__onde_mult",
+      "label": "Lakhovsky (onde multiple)",
+      "categoria": "elettrocultura",
+      "descrizione": "Lakhovsky (onde multiple) estratta da 2 documenti scientifici. Applicare la spirale in rame avvolta intorno al fusto principale delle piante (es. pomodoro) a 10 cm",
+      "istruzioni_pratiche": [
+        "Applicare la spirale in rame avvolta intorno al fusto principale delle piante (es. pomodoro) a 10 cm",
+        "Collegare l'antenna di terra (asta in rame da 1m) a una piastra metallica interr",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 60,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_16",
+        "pdf_43",
+        "pdf_55",
+        "pdf_62",
+        "pdf_63",
+        "pdf_64",
+        "pdf_66",
+        "pdf_78",
+        "pdf_79"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "fe_cu__elettrodo_fer",
+      "label": "Fe-Cu (elettrodo ferro-rame)",
+      "categoria": "elettrocultura",
+      "descrizione": "Fe-Cu (elettrodo ferro-rame) estratta da 2 documenti scientifici. Integrare la spirale in rame intorno al fusto delle piante (es. pomodoro) per potenziare la resisten",
+      "istruzioni_pratiche": [
+        "Integrare la spirale in rame intorno al fusto delle piante (es. pomodoro) per potenziare la resisten",
+        "Applicare l’antenna di terra connessa a un elettrodo Fe-Cu interrato a 30 cm di ",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 60,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "fe_cu__elettrodo_bim",
+      "label": "Fe-Cu (elettrodo bimetallico)",
+      "categoria": "elettrocultura",
+      "descrizione": "Fe-Cu (elettrodo bimetallico) estratta da 2 documenti scientifici. Posizionare la spirale di rame a 30-50 cm sopra le piante, orientata verso nord, e collegarla a un'a",
+      "istruzioni_pratiche": [
+        "Posizionare la spirale di rame a 30-50 cm sopra le piante, orientata verso nord, e collegarla a un'a",
+        "Effettuare trattamenti serali (tramonto) con impulsi a 7,83 Hz (frequenza di Sch",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 60,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "farine_di_rocce",
+      "label": "Farine di rocce",
+      "categoria": "altro",
+      "descrizione": "Farine di rocce estratta da 1 documenti scientifici. Integrare farine di rocce (es. basalto, zeolite) nel suolo prima della semina, miscelandole con comp",
+      "istruzioni_pratiche": [
+        "Integrare farine di rocce (es. basalto, zeolite) nel suolo prima della semina, miscelandole con comp",
+        "Applicare la spirale di rame in combinazione con l'antenna di terra per stimolar",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 55,
+      "tag_correlati": [
+        "altro",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_2",
+        "pdf_49"
+      ],
+      "pdf_count": 2
+    },
+    {
+      "id": "salute_del_suolo",
+      "label": "Salute del suolo",
+      "categoria": "suolo",
+      "descrizione": "Salute del suolo estratta da 1 documenti scientifici. Integrare farine di rocce (es. basalto, zeolite) nel suolo prima della semina, miscelandole con comp",
+      "istruzioni_pratiche": [
+        "Integrare farine di rocce (es. basalto, zeolite) nel suolo prima della semina, miscelandole con comp",
+        "Applicare la spirale di rame in combinazione con l'antenna di terra per stimolar",
         "Monitora i risultati dopo ogni applicazione"
       ],
       "varianti": [],
@@ -321,18 +1206,19 @@
         "living-soil"
       ],
       "pdf_ids": [
-        "pdf_69"
+        "pdf_2",
+        "pdf_49"
       ],
-      "pdf_count": 1
+      "pdf_count": 2
     },
     {
-      "id": "agricoltura_organica",
-      "label": "Agricoltura organica",
+      "id": "agricoltura_biologic",
+      "label": "Agricoltura biologica",
       "categoria": "altro",
-      "descrizione": "Agricoltura organica estratta da 1 documenti scientifici. Applica le tecniche di Campo magnetico per piante durante la fase vegetativa",
+      "descrizione": "Agricoltura biologica estratta da 1 documenti scientifici. Integrare farine di rocce (es. basalto, zeolite) nel suolo prima della semina, miscelandole con comp",
       "istruzioni_pratiche": [
-        "Applica le tecniche di Campo magnetico per piante durante la fase vegetativa",
-        "Principi applicabili a circuito Lakhovsky e spirale cosmica rame",
+        "Integrare farine di rocce (es. basalto, zeolite) nel suolo prima della semina, miscelandole con comp",
+        "Applicare la spirale di rame in combinazione con l'antenna di terra per stimolar",
         "Monitora i risultati dopo ogni applicazione"
       ],
       "varianti": [],
@@ -346,469 +1232,4225 @@
         "living-soil"
       ],
       "pdf_ids": [
-        "pdf_84"
+        "pdf_2",
+        "pdf_10",
+        "pdf_19",
+        "pdf_29",
+        "pdf_41",
+        "pdf_43",
+        "pdf_44",
+        "pdf_47",
+        "pdf_31",
+        "pdf_33"
       ],
-      "pdf_count": 1
+      "pdf_count": 10
+    },
+    {
+      "id": "spirale_rame__antenn_37",
+      "label": "spirale rame (antenne bioenergetiche)",
+      "categoria": "elettrocultura",
+      "descrizione": "spirale rame (antenne bioenergetiche) estratta da 1 documenti scientifici. Integrare la spirale rame intorno alle piante di pomodoro (coltura target) per amplificare la rispos",
+      "istruzioni_pratiche": [
+        "Integrare la spirale rame intorno alle piante di pomodoro (coltura target) per amplificare la rispos",
+        "Applicare corrente pulsata a 7.83Hz (frequenza di Schumann) tramite elettrodi Fe",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 55,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_13",
+        "pdf_22",
+        "pdf_24",
+        "pdf_30",
+        "pdf_53",
+        "pdf_54",
+        "pdf_55",
+        "pdf_59",
+        "pdf_62"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "risonanza_di_lakhovs",
+      "label": "Risonanza di Lakhovsky",
+      "categoria": "elettrocultura",
+      "descrizione": "Risonanza di Lakhovsky estratta da 1 documenti scientifici. Integrare l'uso di spirali di rame e acqua magnetizzata per potenziare la vitalità delle piante, pos",
+      "istruzioni_pratiche": [
+        "Integrare l'uso di spirali di rame e acqua magnetizzata per potenziare la vitalità delle piante, pos",
+        "Utilizzare l'antenna uomo come ricevitore/trasmettitore di frequenze naturali, a",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 55,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_16",
+        "pdf_43",
+        "pdf_55",
+        "pdf_62",
+        "pdf_63",
+        "pdf_64",
+        "pdf_66",
+        "pdf_78",
+        "pdf_79"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "campi_elettromagneti",
+      "label": "Campi elettromagnetici naturali",
+      "categoria": "elettrocultura",
+      "descrizione": "Campi elettromagnetici naturali estratta da 1 documenti scientifici. Integrare l'uso di spirali di rame e acqua magnetizzata per potenziare la vitalità delle piante, pos",
+      "istruzioni_pratiche": [
+        "Integrare l'uso di spirali di rame e acqua magnetizzata per potenziare la vitalità delle piante, pos",
+        "Utilizzare l'antenna uomo come ricevitore/trasmettitore di frequenze naturali, a",
+        "Monitora i risultati dopo ogni applicazione"
+      ],
+      "varianti": [],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 55,
+      "tag_correlati": [
+        "elettrocultura",
+        "living-soil"
+      ],
+      "pdf_ids": [
+        "pdf_8",
+        "pdf_9",
+        "pdf_10",
+        "pdf_17",
+        "pdf_19",
+        "pdf_21",
+        "pdf_23",
+        "pdf_33",
+        "pdf_35",
+        "pdf_67"
+      ],
+      "pdf_count": 10
     }
   ],
   "grafo": {
     "nodi": [
       {
-        "id": "elettrocultura",
-        "label": "Elettrocultura",
-        "categoria": "elettrocultura"
+        "id": "acqua_magnetizzata",
+        "label": "Acqua magnetizzata",
+        "categoria": "irrigazione"
       },
       {
-        "id": "principi_elettromagn",
-        "label": "Principi elettromagnetici Tesla",
-        "categoria": "elettrocultura"
-      },
-      {
-        "id": "fisiologia_vegetale",
-        "label": "Fisiologia vegetale",
-        "categoria": "altro"
-      },
-      {
-        "id": "campo_magnetico_per",
-        "label": "Campo magnetico per piante",
-        "categoria": "altro"
-      },
-      {
-        "id": "spirale_cosmica_in_r",
-        "label": "Spirale cosmica in rame",
-        "categoria": "elettrocultura"
-      },
-      {
-        "id": "atomo_magnetico_ighi",
-        "label": "Atomo magnetico Ighina",
-        "categoria": "altro"
-      },
-      {
-        "id": "calendario_lunare",
-        "label": "Calendario lunare",
-        "categoria": "biodinamica"
-      },
-      {
-        "id": "frequenze_vibraziona",
-        "label": "Frequenze vibrazionali",
-        "categoria": "altro"
-      },
-      {
-        "id": "vibrazione_e_risonan",
-        "label": "Vibrazione e risonanza",
-        "categoria": "elettrocultura"
-      },
-      {
-        "id": "antenna_terrestre",
-        "label": "Antenna terrestre",
-        "categoria": "elettrocultura"
-      },
-      {
-        "id": "leggi_universali_kyb",
-        "label": "Leggi universali Kybalion",
-        "categoria": "altro"
-      },
-      {
-        "id": "biologia_del_suolo",
-        "label": "Biologia del suolo",
+        "id": "antenna_di_terra",
+        "label": "Antenna di terra",
         "categoria": "suolo"
       },
       {
-        "id": "agricoltura_organica",
-        "label": "Agricoltura organica",
+        "id": "spirale_rame",
+        "label": "Spirale rame",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "antenna_terra",
+        "label": "Antenna terra",
+        "categoria": "suolo"
+      },
+      {
+        "id": "lakhovsky",
+        "label": "Lakhovsky",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "fe_cu",
+        "label": "Fe-Cu",
         "categoria": "altro"
+      },
+      {
+        "id": "fe_cu__ferro_rame",
+        "label": "Fe-Cu (ferro-rame)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "spirale_in_rame",
+        "label": "Spirale in rame",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "lakhovsky__circuito",
+        "label": "Lakhovsky (circuito oscillante)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "acqua_magnetizzata_9",
+        "label": "acqua magnetizzata (strutturazione molecolare)",
+        "categoria": "irrigazione"
+      },
+      {
+        "id": "lakhovsky__oscillato",
+        "label": "Lakhovsky (Oscillatori a onde multiple)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "lakhovsky__oscillato_11",
+        "label": "Lakhovsky (Oscillatori Multicellulari)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "spirale_di_rame",
+        "label": "spirale di rame",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "antenna_di_terra__co",
+        "label": "Antenna di terra (connessione geobiologica)",
+        "categoria": "suolo"
+      },
+      {
+        "id": "lakhovsky__onde_di_f",
+        "label": "Lakhovsky (onde di forma)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "antenna_terra__conne",
+        "label": "antenna terra (connessione geobiologica)",
+        "categoria": "suolo"
+      },
+      {
+        "id": "fe_cu__ferro_rame_co",
+        "label": "Fe-Cu (ferro-rame come catalizzatori biologici)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "acqua_magnetizzata_1",
+        "label": "Acqua magnetizzata (polarizzazione)",
+        "categoria": "irrigazione"
+      },
+      {
+        "id": "lakhovsky__oscillazi",
+        "label": "Lakhovsky (oscillazioni cellulari)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "fe_cu__ferro_rame_pe",
+        "label": "Fe-Cu (ferro-rame per equilibrio elettromagnetico)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "spirale_rame__campi",
+        "label": "spirale rame (campi elettromagnetici)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "fe_cu__ferro_rame_co_21",
+        "label": "Fe-Cu (Ferro-Rame come conduttori)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "spirale_in_rame__cam",
+        "label": "Spirale in rame (campi elettromagnetici)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "spirale_rame__antenn",
+        "label": "spirale rame (antenne naturali)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "lakhovsky__oscillato_24",
+        "label": "Lakhovsky (oscillatori cellulari)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "antenna_terra__colle",
+        "label": "antenna terra (collegamento geofisico)",
+        "categoria": "suolo"
+      },
+      {
+        "id": "antenna_di_terra__co_26",
+        "label": "Antenna di terra (collegamento geobiologico)",
+        "categoria": "suolo"
+      },
+      {
+        "id": "fe_cu__ferro_rame_pe_27",
+        "label": "Fe-Cu (ferro-rame per stimolazione elettromagnetica)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "lakhovsky__teoria_de",
+        "label": "Lakhovsky (teoria delle onde di vita)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "fe_cu__sinergia_meta",
+        "label": "Fe-Cu (sinergia metalli)",
+        "categoria": "altro"
+      },
+      {
+        "id": "fe_cu__sinergia_meta_30",
+        "label": "Fe-Cu (sinergia metallica)",
+        "categoria": "altro"
+      },
+      {
+        "id": "lakhovsky__onde_mult",
+        "label": "Lakhovsky (onde multiple)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "fe_cu__elettrodo_fer",
+        "label": "Fe-Cu (elettrodo ferro-rame)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "fe_cu__elettrodo_bim",
+        "label": "Fe-Cu (elettrodo bimetallico)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "farine_di_rocce",
+        "label": "Farine di rocce",
+        "categoria": "altro"
+      },
+      {
+        "id": "salute_del_suolo",
+        "label": "Salute del suolo",
+        "categoria": "suolo"
+      },
+      {
+        "id": "agricoltura_biologic",
+        "label": "Agricoltura biologica",
+        "categoria": "altro"
+      },
+      {
+        "id": "spirale_rame__antenn_37",
+        "label": "spirale rame (antenne bioenergetiche)",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "risonanza_di_lakhovs",
+        "label": "Risonanza di Lakhovsky",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "campi_elettromagneti",
+        "label": "Campi elettromagnetici naturali",
+        "categoria": "elettrocultura"
       }
     ],
     "edges": [
       {
-        "source": "elettrocultura",
-        "target": "principi_elettromagn",
+        "source": "acqua_magnetizzata",
+        "target": "antenna_di_terra",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "spirale_rame",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "antenna_terra",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "lakhovsky",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "fe_cu",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "fe_cu__ferro_rame",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "spirale_in_rame",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "lakhovsky__circuito",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "acqua_magnetizzata_9",
         "peso": 5
       },
       {
-        "source": "elettrocultura",
-        "target": "fisiologia_vegetale",
+        "source": "acqua_magnetizzata",
+        "target": "lakhovsky__oscillato",
         "peso": 2
       },
       {
-        "source": "elettrocultura",
-        "target": "campo_magnetico_per",
+        "source": "acqua_magnetizzata",
+        "target": "lakhovsky__oscillato_11",
         "peso": 2
       },
       {
-        "source": "elettrocultura",
-        "target": "spirale_cosmica_in_r",
+        "source": "acqua_magnetizzata",
+        "target": "spirale_di_rame",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "antenna_di_terra__co",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "lakhovsky__onde_di_f",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "antenna_terra__conne",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "acqua_magnetizzata_1",
         "peso": 5
       },
       {
-        "source": "elettrocultura",
-        "target": "atomo_magnetico_ighi",
+        "source": "acqua_magnetizzata",
+        "target": "lakhovsky__oscillazi",
         "peso": 2
       },
       {
-        "source": "elettrocultura",
-        "target": "calendario_lunare",
+        "source": "acqua_magnetizzata",
+        "target": "fe_cu__ferro_rame_pe",
         "peso": 2
       },
       {
-        "source": "elettrocultura",
-        "target": "frequenze_vibraziona",
+        "source": "acqua_magnetizzata",
+        "target": "spirale_rame__campi",
         "peso": 2
       },
       {
-        "source": "elettrocultura",
-        "target": "vibrazione_e_risonan",
+        "source": "acqua_magnetizzata",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "spirale_in_rame__cam",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "spirale_rame__antenn",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "lakhovsky__teoria_de",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "lakhovsky__onde_mult",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "spirale_rame",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "antenna_terra",
         "peso": 5
       },
       {
-        "source": "elettrocultura",
-        "target": "antenna_terrestre",
+        "source": "antenna_di_terra",
+        "target": "lakhovsky",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "fe_cu",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "fe_cu__ferro_rame",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "spirale_in_rame",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "lakhovsky__circuito",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "acqua_magnetizzata_9",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "lakhovsky__oscillato",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "lakhovsky__oscillato_11",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "spirale_di_rame",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "antenna_di_terra__co",
         "peso": 5
       },
       {
-        "source": "elettrocultura",
-        "target": "leggi_universali_kyb",
+        "source": "antenna_di_terra",
+        "target": "lakhovsky__onde_di_f",
         "peso": 2
       },
       {
-        "source": "elettrocultura",
-        "target": "biologia_del_suolo",
-        "peso": 2
-      },
-      {
-        "source": "elettrocultura",
-        "target": "agricoltura_organica",
-        "peso": 2
-      },
-      {
-        "source": "principi_elettromagn",
-        "target": "fisiologia_vegetale",
-        "peso": 2
-      },
-      {
-        "source": "principi_elettromagn",
-        "target": "campo_magnetico_per",
-        "peso": 2
-      },
-      {
-        "source": "principi_elettromagn",
-        "target": "spirale_cosmica_in_r",
+        "source": "antenna_di_terra",
+        "target": "antenna_terra__conne",
         "peso": 5
       },
       {
-        "source": "principi_elettromagn",
-        "target": "atomo_magnetico_ighi",
+        "source": "antenna_di_terra",
+        "target": "fe_cu__ferro_rame_co",
         "peso": 2
       },
       {
-        "source": "principi_elettromagn",
-        "target": "calendario_lunare",
+        "source": "antenna_di_terra",
+        "target": "acqua_magnetizzata_1",
         "peso": 2
       },
       {
-        "source": "principi_elettromagn",
-        "target": "frequenze_vibraziona",
+        "source": "antenna_di_terra",
+        "target": "lakhovsky__oscillazi",
         "peso": 2
       },
       {
-        "source": "principi_elettromagn",
-        "target": "vibrazione_e_risonan",
+        "source": "antenna_di_terra",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "spirale_rame__campi",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "spirale_in_rame__cam",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "spirale_rame__antenn",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "antenna_terra__colle",
         "peso": 5
       },
       {
-        "source": "principi_elettromagn",
-        "target": "antenna_terrestre",
+        "source": "antenna_di_terra",
+        "target": "antenna_di_terra__co_26",
         "peso": 5
       },
       {
-        "source": "principi_elettromagn",
-        "target": "leggi_universali_kyb",
+        "source": "antenna_di_terra",
+        "target": "fe_cu__ferro_rame_pe_27",
         "peso": 2
       },
       {
-        "source": "principi_elettromagn",
-        "target": "biologia_del_suolo",
+        "source": "antenna_di_terra",
+        "target": "lakhovsky__teoria_de",
         "peso": 2
       },
       {
-        "source": "principi_elettromagn",
-        "target": "agricoltura_organica",
+        "source": "antenna_di_terra",
+        "target": "fe_cu__sinergia_meta",
         "peso": 2
       },
       {
-        "source": "fisiologia_vegetale",
-        "target": "campo_magnetico_per",
+        "source": "antenna_di_terra",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "lakhovsky__onde_mult",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "salute_del_suolo",
         "peso": 5
       },
       {
-        "source": "fisiologia_vegetale",
-        "target": "spirale_cosmica_in_r",
+        "source": "antenna_di_terra",
+        "target": "agricoltura_biologic",
         "peso": 2
       },
       {
-        "source": "fisiologia_vegetale",
-        "target": "atomo_magnetico_ighi",
+        "source": "antenna_di_terra",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "antenna_terra",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "lakhovsky",
         "peso": 5
       },
       {
-        "source": "fisiologia_vegetale",
-        "target": "calendario_lunare",
+        "source": "spirale_rame",
+        "target": "fe_cu",
         "peso": 2
       },
       {
-        "source": "fisiologia_vegetale",
-        "target": "frequenze_vibraziona",
+        "source": "spirale_rame",
+        "target": "fe_cu__ferro_rame",
         "peso": 5
       },
       {
-        "source": "fisiologia_vegetale",
-        "target": "vibrazione_e_risonan",
-        "peso": 2
-      },
-      {
-        "source": "fisiologia_vegetale",
-        "target": "antenna_terrestre",
-        "peso": 2
-      },
-      {
-        "source": "fisiologia_vegetale",
-        "target": "leggi_universali_kyb",
+        "source": "spirale_rame",
+        "target": "spirale_in_rame",
         "peso": 5
       },
       {
-        "source": "fisiologia_vegetale",
-        "target": "biologia_del_suolo",
-        "peso": 2
-      },
-      {
-        "source": "fisiologia_vegetale",
-        "target": "agricoltura_organica",
+        "source": "spirale_rame",
+        "target": "lakhovsky__circuito",
         "peso": 5
       },
       {
-        "source": "campo_magnetico_per",
-        "target": "spirale_cosmica_in_r",
+        "source": "spirale_rame",
+        "target": "acqua_magnetizzata_9",
         "peso": 2
       },
       {
-        "source": "campo_magnetico_per",
-        "target": "atomo_magnetico_ighi",
+        "source": "spirale_rame",
+        "target": "lakhovsky__oscillato",
         "peso": 5
       },
       {
-        "source": "campo_magnetico_per",
-        "target": "calendario_lunare",
-        "peso": 2
-      },
-      {
-        "source": "campo_magnetico_per",
-        "target": "frequenze_vibraziona",
+        "source": "spirale_rame",
+        "target": "lakhovsky__oscillato_11",
         "peso": 5
       },
       {
-        "source": "campo_magnetico_per",
-        "target": "vibrazione_e_risonan",
-        "peso": 2
-      },
-      {
-        "source": "campo_magnetico_per",
-        "target": "antenna_terrestre",
-        "peso": 2
-      },
-      {
-        "source": "campo_magnetico_per",
-        "target": "leggi_universali_kyb",
+        "source": "spirale_rame",
+        "target": "spirale_di_rame",
         "peso": 5
       },
       {
-        "source": "campo_magnetico_per",
-        "target": "biologia_del_suolo",
+        "source": "spirale_rame",
+        "target": "antenna_di_terra__co",
         "peso": 2
       },
       {
-        "source": "campo_magnetico_per",
-        "target": "agricoltura_organica",
+        "source": "spirale_rame",
+        "target": "lakhovsky__onde_di_f",
         "peso": 5
       },
       {
-        "source": "spirale_cosmica_in_r",
-        "target": "atomo_magnetico_ighi",
+        "source": "spirale_rame",
+        "target": "antenna_terra__conne",
         "peso": 2
       },
       {
-        "source": "spirale_cosmica_in_r",
-        "target": "calendario_lunare",
-        "peso": 2
-      },
-      {
-        "source": "spirale_cosmica_in_r",
-        "target": "frequenze_vibraziona",
-        "peso": 2
-      },
-      {
-        "source": "spirale_cosmica_in_r",
-        "target": "vibrazione_e_risonan",
+        "source": "spirale_rame",
+        "target": "fe_cu__ferro_rame_co",
         "peso": 5
       },
       {
-        "source": "spirale_cosmica_in_r",
-        "target": "antenna_terrestre",
+        "source": "spirale_rame",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "lakhovsky__oscillazi",
         "peso": 5
       },
       {
-        "source": "spirale_cosmica_in_r",
-        "target": "leggi_universali_kyb",
-        "peso": 2
-      },
-      {
-        "source": "spirale_cosmica_in_r",
-        "target": "biologia_del_suolo",
-        "peso": 2
-      },
-      {
-        "source": "spirale_cosmica_in_r",
-        "target": "agricoltura_organica",
-        "peso": 2
-      },
-      {
-        "source": "atomo_magnetico_ighi",
-        "target": "calendario_lunare",
-        "peso": 2
-      },
-      {
-        "source": "atomo_magnetico_ighi",
-        "target": "frequenze_vibraziona",
+        "source": "spirale_rame",
+        "target": "fe_cu__ferro_rame_pe",
         "peso": 5
       },
       {
-        "source": "atomo_magnetico_ighi",
-        "target": "vibrazione_e_risonan",
-        "peso": 2
-      },
-      {
-        "source": "atomo_magnetico_ighi",
-        "target": "antenna_terrestre",
-        "peso": 2
-      },
-      {
-        "source": "atomo_magnetico_ighi",
-        "target": "leggi_universali_kyb",
+        "source": "spirale_rame",
+        "target": "spirale_rame__campi",
         "peso": 5
       },
       {
-        "source": "atomo_magnetico_ighi",
-        "target": "biologia_del_suolo",
-        "peso": 2
-      },
-      {
-        "source": "atomo_magnetico_ighi",
-        "target": "agricoltura_organica",
+        "source": "spirale_rame",
+        "target": "fe_cu__ferro_rame_co_21",
         "peso": 5
       },
       {
-        "source": "calendario_lunare",
-        "target": "frequenze_vibraziona",
-        "peso": 2
-      },
-      {
-        "source": "calendario_lunare",
-        "target": "vibrazione_e_risonan",
-        "peso": 2
-      },
-      {
-        "source": "calendario_lunare",
-        "target": "antenna_terrestre",
-        "peso": 2
-      },
-      {
-        "source": "calendario_lunare",
-        "target": "leggi_universali_kyb",
-        "peso": 2
-      },
-      {
-        "source": "calendario_lunare",
-        "target": "biologia_del_suolo",
-        "peso": 2
-      },
-      {
-        "source": "calendario_lunare",
-        "target": "agricoltura_organica",
-        "peso": 2
-      },
-      {
-        "source": "frequenze_vibraziona",
-        "target": "vibrazione_e_risonan",
-        "peso": 2
-      },
-      {
-        "source": "frequenze_vibraziona",
-        "target": "antenna_terrestre",
-        "peso": 2
-      },
-      {
-        "source": "frequenze_vibraziona",
-        "target": "leggi_universali_kyb",
+        "source": "spirale_rame",
+        "target": "spirale_in_rame__cam",
         "peso": 5
       },
       {
-        "source": "frequenze_vibraziona",
-        "target": "biologia_del_suolo",
-        "peso": 2
-      },
-      {
-        "source": "frequenze_vibraziona",
-        "target": "agricoltura_organica",
+        "source": "spirale_rame",
+        "target": "spirale_rame__antenn",
         "peso": 5
       },
       {
-        "source": "vibrazione_e_risonan",
-        "target": "antenna_terrestre",
+        "source": "spirale_rame",
+        "target": "lakhovsky__oscillato_24",
         "peso": 5
       },
       {
-        "source": "vibrazione_e_risonan",
-        "target": "leggi_universali_kyb",
+        "source": "spirale_rame",
+        "target": "antenna_terra__colle",
         "peso": 2
       },
       {
-        "source": "vibrazione_e_risonan",
-        "target": "biologia_del_suolo",
+        "source": "spirale_rame",
+        "target": "antenna_di_terra__co_26",
         "peso": 2
       },
       {
-        "source": "vibrazione_e_risonan",
-        "target": "agricoltura_organica",
-        "peso": 2
-      },
-      {
-        "source": "antenna_terrestre",
-        "target": "leggi_universali_kyb",
-        "peso": 2
-      },
-      {
-        "source": "antenna_terrestre",
-        "target": "biologia_del_suolo",
-        "peso": 2
-      },
-      {
-        "source": "antenna_terrestre",
-        "target": "agricoltura_organica",
-        "peso": 2
-      },
-      {
-        "source": "leggi_universali_kyb",
-        "target": "biologia_del_suolo",
-        "peso": 2
-      },
-      {
-        "source": "leggi_universali_kyb",
-        "target": "agricoltura_organica",
+        "source": "spirale_rame",
+        "target": "fe_cu__ferro_rame_pe_27",
         "peso": 5
       },
       {
-        "source": "biologia_del_suolo",
-        "target": "agricoltura_organica",
+        "source": "spirale_rame",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame",
+        "target": "fe_cu__sinergia_meta",
         "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra",
+        "target": "lakhovsky",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "fe_cu",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "fe_cu__ferro_rame",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "spirale_in_rame",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "lakhovsky__circuito",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "acqua_magnetizzata_9",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "lakhovsky__oscillato",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "lakhovsky__oscillato_11",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "spirale_di_rame",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "antenna_di_terra__co",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra",
+        "target": "lakhovsky__onde_di_f",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "antenna_terra__conne",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "lakhovsky__oscillazi",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "spirale_rame__campi",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "spirale_in_rame__cam",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "spirale_rame__antenn",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "antenna_terra__colle",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra",
+        "target": "antenna_di_terra__co_26",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "lakhovsky__teoria_de",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "lakhovsky__onde_mult",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "salute_del_suolo",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky",
+        "target": "fe_cu",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky",
+        "target": "fe_cu__ferro_rame",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "spirale_in_rame",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "lakhovsky__circuito",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "acqua_magnetizzata_9",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky",
+        "target": "lakhovsky__oscillato",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "lakhovsky__oscillato_11",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "spirale_di_rame",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "antenna_di_terra__co",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky",
+        "target": "lakhovsky__onde_di_f",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "antenna_terra__conne",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky",
+        "target": "lakhovsky__oscillazi",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "spirale_rame__campi",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "spirale_in_rame__cam",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu",
+        "target": "fe_cu__ferro_rame",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "spirale_in_rame",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "lakhovsky__circuito",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "acqua_magnetizzata_9",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "lakhovsky__oscillato",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "lakhovsky__oscillato_11",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "spirale_di_rame",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "antenna_di_terra__co",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "lakhovsky__onde_di_f",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "antenna_terra__conne",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "lakhovsky__oscillazi",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "spirale_rame__campi",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "spirale_in_rame__cam",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "spirale_rame__antenn",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "lakhovsky__teoria_de",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu",
+        "target": "lakhovsky__onde_mult",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "farine_di_rocce",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "agricoltura_biologic",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "spirale_in_rame",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "lakhovsky__circuito",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "acqua_magnetizzata_9",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "lakhovsky__oscillato",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "lakhovsky__oscillato_11",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "spirale_di_rame",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "antenna_di_terra__co",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "lakhovsky__onde_di_f",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "antenna_terra__conne",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "lakhovsky__oscillazi",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "spirale_rame__campi",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "spirale_in_rame__cam",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "lakhovsky__circuito",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "acqua_magnetizzata_9",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "lakhovsky__oscillato",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "lakhovsky__oscillato_11",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "spirale_di_rame",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "antenna_di_terra__co",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "lakhovsky__onde_di_f",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "antenna_terra__conne",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "lakhovsky__oscillazi",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "spirale_rame__campi",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "spirale_in_rame__cam",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "acqua_magnetizzata_9",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "lakhovsky__oscillato",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "lakhovsky__oscillato_11",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "spirale_di_rame",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "antenna_di_terra__co",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "lakhovsky__onde_di_f",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "antenna_terra__conne",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "lakhovsky__oscillazi",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "spirale_rame__campi",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "spirale_in_rame__cam",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__circuito",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "lakhovsky__oscillato",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "lakhovsky__oscillato_11",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "spirale_di_rame",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "antenna_di_terra__co",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "lakhovsky__onde_di_f",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "antenna_terra__conne",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "acqua_magnetizzata_1",
+        "peso": 5
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "lakhovsky__oscillazi",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "spirale_rame__campi",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "spirale_in_rame__cam",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "spirale_rame__antenn",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "lakhovsky__teoria_de",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "lakhovsky__onde_mult",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_9",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "lakhovsky__oscillato_11",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "spirale_di_rame",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "antenna_di_terra__co",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "lakhovsky__onde_di_f",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "antenna_terra__conne",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "lakhovsky__oscillazi",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "spirale_rame__campi",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "spirale_in_rame__cam",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "spirale_di_rame",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "antenna_di_terra__co",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "lakhovsky__onde_di_f",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "antenna_terra__conne",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "lakhovsky__oscillazi",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "spirale_rame__campi",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "spirale_in_rame__cam",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_11",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "antenna_di_terra__co",
+        "peso": 2
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "lakhovsky__onde_di_f",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "antenna_terra__conne",
+        "peso": 2
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "lakhovsky__oscillazi",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "spirale_rame__campi",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "spirale_in_rame__cam",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "spirale_di_rame",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "lakhovsky__onde_di_f",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "antenna_terra__conne",
+        "peso": 5
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "lakhovsky__oscillazi",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "spirale_rame__campi",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "spirale_in_rame__cam",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "spirale_rame__antenn",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "antenna_terra__colle",
+        "peso": 5
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "antenna_di_terra__co_26",
+        "peso": 5
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "lakhovsky__teoria_de",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "lakhovsky__onde_mult",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "salute_del_suolo",
+        "peso": 5
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "antenna_terra__conne",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "lakhovsky__oscillazi",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "spirale_rame__campi",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "spirale_in_rame__cam",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_di_f",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "fe_cu__ferro_rame_co",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "lakhovsky__oscillazi",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "spirale_rame__campi",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "spirale_in_rame__cam",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "spirale_rame__antenn",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "antenna_terra__colle",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "antenna_di_terra__co_26",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "lakhovsky__teoria_de",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "lakhovsky__onde_mult",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "salute_del_suolo",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__conne",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "acqua_magnetizzata_1",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "lakhovsky__oscillazi",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "spirale_rame__campi",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "spirale_in_rame__cam",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "lakhovsky__oscillazi",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "spirale_rame__campi",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "spirale_in_rame__cam",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "spirale_rame__antenn",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "lakhovsky__teoria_de",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "lakhovsky__onde_mult",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata_1",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "fe_cu__ferro_rame_pe",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "spirale_rame__campi",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "spirale_in_rame__cam",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillazi",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "spirale_rame__campi",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "spirale_in_rame__cam",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "fe_cu__ferro_rame_co_21",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "spirale_in_rame__cam",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__campi",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "spirale_in_rame__cam",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_co_21",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "spirale_rame__antenn",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "spirale_in_rame__cam",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "lakhovsky__oscillato_24",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__antenn",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "antenna_terra__colle",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "antenna_di_terra__co_26",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__oscillato_24",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "antenna_di_terra__co_26",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "lakhovsky__teoria_de",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "lakhovsky__onde_mult",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "salute_del_suolo",
+        "peso": 5
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "antenna_terra__colle",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co_26",
+        "target": "fe_cu__ferro_rame_pe_27",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co_26",
+        "target": "lakhovsky__teoria_de",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co_26",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co_26",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co_26",
+        "target": "lakhovsky__onde_mult",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co_26",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co_26",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co_26",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co_26",
+        "target": "salute_del_suolo",
+        "peso": 5
+      },
+      {
+        "source": "antenna_di_terra__co_26",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co_26",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co_26",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "antenna_di_terra__co_26",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe_27",
+        "target": "lakhovsky__teoria_de",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe_27",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe_27",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe_27",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe_27",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe_27",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe_27",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe_27",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe_27",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe_27",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe_27",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__ferro_rame_pe_27",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__teoria_de",
+        "target": "fe_cu__sinergia_meta",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__teoria_de",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__teoria_de",
+        "target": "lakhovsky__onde_mult",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__teoria_de",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__teoria_de",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__teoria_de",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__teoria_de",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__teoria_de",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__teoria_de",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__teoria_de",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__teoria_de",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__sinergia_meta",
+        "target": "fe_cu__sinergia_meta_30",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__sinergia_meta",
+        "target": "lakhovsky__onde_mult",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__sinergia_meta",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__sinergia_meta",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__sinergia_meta",
+        "target": "farine_di_rocce",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__sinergia_meta",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__sinergia_meta",
+        "target": "agricoltura_biologic",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__sinergia_meta",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__sinergia_meta",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__sinergia_meta",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__sinergia_meta_30",
+        "target": "lakhovsky__onde_mult",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__sinergia_meta_30",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__sinergia_meta_30",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__sinergia_meta_30",
+        "target": "farine_di_rocce",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__sinergia_meta_30",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__sinergia_meta_30",
+        "target": "agricoltura_biologic",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__sinergia_meta_30",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__sinergia_meta_30",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__sinergia_meta_30",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_mult",
+        "target": "fe_cu__elettrodo_fer",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_mult",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_mult",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_mult",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_mult",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "lakhovsky__onde_mult",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_mult",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "lakhovsky__onde_mult",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__elettrodo_fer",
+        "target": "fe_cu__elettrodo_bim",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__elettrodo_fer",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__elettrodo_fer",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__elettrodo_fer",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__elettrodo_fer",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__elettrodo_fer",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__elettrodo_fer",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__elettrodo_bim",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__elettrodo_bim",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__elettrodo_bim",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "fe_cu__elettrodo_bim",
+        "target": "spirale_rame__antenn_37",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__elettrodo_bim",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "fe_cu__elettrodo_bim",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "farine_di_rocce",
+        "target": "salute_del_suolo",
+        "peso": 2
+      },
+      {
+        "source": "farine_di_rocce",
+        "target": "agricoltura_biologic",
+        "peso": 5
+      },
+      {
+        "source": "farine_di_rocce",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "farine_di_rocce",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "farine_di_rocce",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "salute_del_suolo",
+        "target": "agricoltura_biologic",
+        "peso": 2
+      },
+      {
+        "source": "salute_del_suolo",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "salute_del_suolo",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "salute_del_suolo",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "agricoltura_biologic",
+        "target": "spirale_rame__antenn_37",
+        "peso": 2
+      },
+      {
+        "source": "agricoltura_biologic",
+        "target": "risonanza_di_lakhovs",
+        "peso": 2
+      },
+      {
+        "source": "agricoltura_biologic",
+        "target": "campi_elettromagneti",
+        "peso": 2
+      },
+      {
+        "source": "spirale_rame__antenn_37",
+        "target": "risonanza_di_lakhovs",
+        "peso": 5
+      },
+      {
+        "source": "spirale_rame__antenn_37",
+        "target": "campi_elettromagneti",
+        "peso": 5
+      },
+      {
+        "source": "risonanza_di_lakhovs",
+        "target": "campi_elettromagneti",
+        "peso": 5
       }
     ]
   }
