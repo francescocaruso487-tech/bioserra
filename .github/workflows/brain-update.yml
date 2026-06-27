@@ -1,0 +1,27 @@
+name: BioSerra - Brain Update
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # ogni notte 04:00 UTC (06:00 ora italiana)
+  workflow_dispatch:
+
+jobs:
+  brain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Aggiorna brain.json con Mistral
+        env:
+          GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+          MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
+        run: python3 .github/scripts/brain_update.py
+
