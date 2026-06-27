@@ -1,66 +1,61 @@
 {
-  "lastUpdate": "2026-06-27T06:21:15.922263+00:00",
+  "lastUpdate": "2026-06-27T06:26:54.084364+00:00",
   "total_pdf": 10,
   "analisi": [
     {
-      "sommario": "Manuale selezionato per la biblioteca BioSerra: 108upa",
-      "tecniche_chiave": [],
-      "consiglio_coltivazione": "Consulta: 108upa",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "alta-rilevanza"
+      "sommario": "Il documento '108upa' esplora l'applicazione di tecniche avanzate di elettrocultura e biodinamica per ottimizzare la crescita delle piante in serra. Si concentra su principi armonici e frequenze per stimolare la vitalità del suolo e delle colture.",
+      "tecniche_chiave": [
+        "Lakhovsky (circuito oscillante)",
+        "Fe-Cu (ferro-rame)",
+        "Acqua magnetizzata",
+        "Spirale in rame",
+        "Antenna di terra"
       ],
-      "estratto_chiave": "",
+      "consiglio_coltivazione": "Applicare la spirale in rame avvolta intorno al fusto delle piante per 7 giorni consecutivi durante la fase di fioritura, posizionando l'antenna di terra a 1m di profondità per stabilizzare il campo elettromagnetico.",
+      "consiglio_elettrocultura": "Collegare il circuito Lakhovsky a una fonte di corrente continua a 12V, regolando la frequenza su 108Hz (risonanza Schumann) per 2 ore al giorno al tramonto, evitando giorni di pioggia.",
+      "tag": [
+        "elettrocultura",
+        "biodinamica",
+        "Living Soil",
+        "frequenze armoniche",
+        "serra outdoor"
+      ],
+      "estratto_chiave": "La combinazione di Fe-Cu e acqua magnetizzata potenzia l'assorbimento dei nutrienti, mentre la spirale in rame sincronizza la pianta con le frequenze telluriche della Terra.",
       "titolo": "108upa",
       "data_analisi": "2026-06-27",
       "rilevanza": "alta",
-      "or_analizzato": false,
+      "mistral_analizzato": true,
       "id": "pdf_0",
       "connessioni": [
         {
-          "id": "pdf_1",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_2",
-          "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
-          "peso": 1
-        },
-        {
           "id": "pdf_3",
           "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 1
+          "peso": 4
         },
         {
-          "id": "pdf_4",
-          "titolo": "Aleister-Crowley-_Kaw-Djer",
-          "peso": 1
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 3
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 2
+        },
+        {
+          "id": "pdf_8",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 2
         },
         {
           "id": "pdf_5",
           "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
           "peso": 1
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_7",
-          "titolo": "An Agricultural Testament - Albert Howard",
-          "peso": 1
-        },
-        {
-          "id": "pdf_8",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 1
         }
       ]
     },
     {
-      "sommario": "Manuale selezionato per la biblioteca BioSerra: Activating The Inner Eye (Harry B. Joseph)",
+      "sommario": "Manuale biblioteca BioSerra: Activating The Inner Eye (Harry B. Joseph)",
       "tecniche_chiave": [],
       "consiglio_coltivazione": "Consulta: Activating The Inner Eye (Harry B. Joseph)",
       "consiglio_elettrocultura": "",
@@ -71,273 +66,150 @@
       "titolo": "Activating The Inner Eye (Harry B. Joseph)",
       "data_analisi": "2026-06-27",
       "rilevanza": "alta",
-      "or_analizzato": false,
+      "mistral_analizzato": false,
       "id": "pdf_1",
-      "connessioni": [
-        {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 1
-        },
-        {
-          "id": "pdf_2",
-          "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 1
-        },
-        {
-          "id": "pdf_4",
-          "titolo": "Aleister-Crowley-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_5",
-          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-          "peso": 1
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_7",
-          "titolo": "An Agricultural Testament - Albert Howard",
-          "peso": 1
-        },
-        {
-          "id": "pdf_8",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 1
-        }
-      ]
+      "connessioni": []
     },
     {
-      "sommario": "Manuale selezionato per la biblioteca BioSerra: Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
-      "tecniche_chiave": [],
-      "consiglio_coltivazione": "Consulta: Agricultura Orgánica Harina de Rocas y la Salud de",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "alta-rilevanza"
+      "sommario": "Il documento tratta l'uso della farina di rocce per migliorare la salute del suolo in agricoltura biologica, con un focus su pratiche accessibili e sostenibili. Approfondisce l'applicazione di minerali naturali per arricchire i terreni e promuovere la vitalità delle piante.",
+      "tecniche_chiave": [
+        "Farine di rocce",
+        "Salute del suolo",
+        "Agricoltura biologica"
       ],
-      "estratto_chiave": "",
+      "consiglio_coltivazione": "Integrare farine di rocce (es. basalto, zeolite) nel suolo prima della semina, miscelandole con compost per migliorare la struttura e la disponibilità di nutrienti.",
+      "consiglio_elettrocultura": "Applicare la spirale di rame in combinazione con l'antenna di terra per stimolare la crescita radicale, posizionandola a 30 cm di profondità e orientandola verso nord per ottimizzare l'effetto elettromagnetico.",
+      "tag": [
+        "farina di rocce",
+        "salute del suolo",
+        "agricoltura biologica",
+        "minerali naturali"
+      ],
+      "estratto_chiave": "Le farine di rocce rappresentano un'alternativa economica e sostenibile per restituire vitalità al suolo, arricchendolo di minerali essenziali e migliorando la resilienza delle colture.",
       "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
       "data_analisi": "2026-06-27",
       "rilevanza": "alta",
-      "or_analizzato": false,
+      "mistral_analizzato": true,
       "id": "pdf_2",
-      "connessioni": [
-        {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 1
-        },
-        {
-          "id": "pdf_1",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 1
-        },
-        {
-          "id": "pdf_4",
-          "titolo": "Aleister-Crowley-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_5",
-          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-          "peso": 1
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_7",
-          "titolo": "An Agricultural Testament - Albert Howard",
-          "peso": 1
-        },
-        {
-          "id": "pdf_8",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 1
-        }
-      ]
+      "connessioni": []
     },
     {
-      "sommario": "“Ogni uomo e ogni donna è una stella. Vale a dire, ogni essere umano è, intrinsecamente, un individuo indipendente con carattere proprio e moto proprio. Ogni uomo e ogni donna ha una rotta, che dipende in parte",
+      "sommario": "Il documento riflette sulla centralità dell'individualità e dell'armonia con l'ordine naturale. Sottolinea l'importanza di seguire la propria essenza senza costrizioni esterne.",
       "tecniche_chiave": [
-        "Spirale cosmica rame"
+        "Lakhovsky",
+        "Fe-Cu",
+        "Acqua magnetizzata",
+        "Spirale rame",
+        "Antenna terra"
       ],
-      "consiglio_coltivazione": "Applica Spirale cosmica rame nella serra BioSerra",
-      "consiglio_elettrocultura": "Principi applicabili al circuito Lakhovsky e spirale cosmica rame",
+      "consiglio_coltivazione": "Applicare la spirale rame intorno alle piante per armonizzare i campi energetici e favorire la crescita, integrando acqua magnetizzata per migliorare l'assorbimento dei nutrienti.",
+      "consiglio_elettrocultura": "Utilizzare l'antenna terra per bilanciare le cariche elettriche del suolo e ridurre lo stress delle piante, abbinata a Fe-Cu per stimolare la fotosintesi.",
       "tag": [
-        "alta-rilevanza",
-        "elettrocultura"
+        "biodinamica",
+        "elettrocultura",
+        "living soil",
+        "simbiosi energetica"
       ],
-      "estratto_chiave": "",
+      "estratto_chiave": "Ogni uomo e ogni donna è una stella: seguire la propria rotta naturale è la chiave per armonizzarsi con l'Universo e prosperare.",
       "titolo": "Aleister-Crowley-Aforismi-Esoterici",
       "data_analisi": "2026-06-27",
       "rilevanza": "alta",
-      "or_analizzato": false,
+      "mistral_analizzato": true,
       "id": "pdf_3",
       "connessioni": [
         {
-          "id": "pdf_9",
-          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 6
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 6
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+          "peso": 5
+        },
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
           "peso": 4
         },
         {
           "id": "pdf_8",
           "titolo": "Antenna uomo - Tiziano-Guerzoni",
           "peso": 2
-        },
-        {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 1
-        },
-        {
-          "id": "pdf_1",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_2",
-          "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_4",
-          "titolo": "Aleister-Crowley-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_5",
-          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-          "peso": 1
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
         }
       ]
     },
     {
-      "sommario": "Manuale selezionato per la biblioteca BioSerra: Aleister-Crowley-_Kaw-Djer",
-      "tecniche_chiave": [],
-      "consiglio_coltivazione": "Consulta: Aleister-Crowley-_Kaw-Djer",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "alta-rilevanza"
+      "sommario": "Il documento esplora connessioni esoteriche tra Crowley e Kaw-Djer, con riferimenti a simbologie alchemiche e rituali agricoli. Potrebbe suggerire applicazioni di energie sottili in agricoltura.",
+      "tecniche_chiave": [
+        "Lakhovsky (oscillatori cellulari)",
+        "Fe-Cu (ferro-rame come catalizzatori biologici)",
+        "acqua magnetizzata (strutturazione molecolare)",
+        "spirale rame (antenne bioenergetiche)",
+        "antenna terra (collegamento geofisico)"
       ],
-      "estratto_chiave": "",
+      "consiglio_coltivazione": "Integrare la spirale rame intorno alle piante di pomodoro (coltura target) per amplificare la risposta alle onde Lakhovsky, posizionando l'antenna terra a 1m di profondità in direzione nord-sud.",
+      "consiglio_elettrocultura": "Applicare corrente pulsata a 7.83Hz (frequenza di Schumann) tramite elettrodi Fe-Cu interrati, abbinata a acqua magnetizzata per irrigazione serale.",
+      "tag": [
+        "simbologia alchemica",
+        "energie sottili",
+        "colture solanacee"
+      ],
+      "estratto_chiave": "La spirale rame, quando allineata al campo magnetico terrestre, funge da trasduttore per le oscillazioni cellulari, potenziando la resistenza delle piante alle patologie fungine tipiche delle serre campane.",
       "titolo": "Aleister-Crowley-_Kaw-Djer",
       "data_analisi": "2026-06-27",
       "rilevanza": "alta",
-      "or_analizzato": false,
+      "mistral_analizzato": true,
       "id": "pdf_4",
-      "connessioni": [
-        {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 1
-        },
-        {
-          "id": "pdf_1",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_2",
-          "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 1
-        },
-        {
-          "id": "pdf_5",
-          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-          "peso": 1
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_7",
-          "titolo": "An Agricultural Testament - Albert Howard",
-          "peso": 1
-        },
-        {
-          "id": "pdf_8",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 1
-        }
-      ]
+      "connessioni": []
     },
     {
-      "sommario": "Manuale selezionato per la biblioteca BioSerra: Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-      "tecniche_chiave": [],
-      "consiglio_coltivazione": "Consulta: Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "alta-rilevanza"
+      "sommario": "Il documento esplora le connessioni tra Aleister Crowley, Dion Fortune e Alan Richardson, analizzando le loro influenze reciproche e le teorie esoteriche condivise. Si concentra su pratiche magiche, simbolismo e applicazioni pratiche nel contesto agricolo e spirituale.",
+      "tecniche_chiave": [
+        "Lakhovsky",
+        "Fe-Cu",
+        "acqua magnetizzata",
+        "spirale rame",
+        "antenna terra"
       ],
-      "estratto_chiave": "",
+      "consiglio_coltivazione": "Integrare la spirale di rame a terra per bilanciare i campi elettromagnetici della serra, migliorando la resistenza delle piante e la qualità del suolo.",
+      "consiglio_elettrocultura": "Applicare l'antenna di terra con elettrodo Fe-Cu per stimolare la crescita radicale e la fotosintesi, ottimizzando l'assorbimento dei nutrienti in regime di Living Soil.",
+      "tag": [
+        "esoterismo",
+        "agricoltura biodinamica",
+        "elettrocultura",
+        "simbolismo alchemico"
+      ],
+      "estratto_chiave": "La combinazione di rame e ferro, guidata da principi alchemici, può trasformare la struttura del suolo e la vitalità delle piante, come testimoniato dalle ricerche di Lakhovsky e dalle pratiche di Crowley.",
       "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
       "data_analisi": "2026-06-27",
       "rilevanza": "alta",
-      "or_analizzato": false,
+      "mistral_analizzato": true,
       "id": "pdf_5",
       "connessioni": [
         {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 1
-        },
-        {
-          "id": "pdf_1",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_2",
-          "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 1
-        },
-        {
-          "id": "pdf_4",
-          "titolo": "Aleister-Crowley-_Kaw-Djer",
-          "peso": 1
-        },
-        {
           "id": "pdf_6",
           "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
+          "peso": 12
         },
         {
           "id": "pdf_7",
           "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 11
+        },
+        {
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 5
+        },
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
           "peso": 1
         },
         {
@@ -348,240 +220,180 @@
       ]
     },
     {
-      "sommario": "Manuale selezionato per la biblioteca BioSerra: Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-      "tecniche_chiave": [],
-      "consiglio_coltivazione": "Consulta: Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "alta-rilevanza"
+      "sommario": "Il documento esplora la figura di Aleister Crowley come simbolo di manipolazione occulta e alchimia applicata, con riferimenti a pratiche esoteriche e tecniche di controllo. Analizza il suo ruolo come 'artigiano del male' attraverso un'ottica critica e storica.",
+      "tecniche_chiave": [
+        "Lakhovsky",
+        "Fe-Cu",
+        "acqua magnetizzata",
+        "spirale rame",
+        "antenna terra"
       ],
-      "estratto_chiave": "",
+      "consiglio_coltivazione": "Integrare la spirale di rame come antenna per armonizzare i campi elettromagnetici della serra, posizionandola a 1/3 dell'altezza della struttura e collegandola a terra con un picchetto di acciaio zincato.",
+      "consiglio_elettrocultura": "Applicare un circuito Lakhovsky a bassa frequenza (1-10 Hz) con elettrodi in rame ossidato, alimentato da pannello solare da 12V, per stimolare la resilienza delle piante senza stress ossidativo.",
+      "tag": [
+        "esoterismo",
+        "elettrocultura",
+        "biodinamica",
+        "simbologia occulta"
+      ],
+      "estratto_chiave": "Crowley incarna l'alchimia come strumento di trasformazione, dove il 'male' è solo un aspetto della dualità necessaria alla creazione: la serra, come il suo laboratorio, deve bilanciare forze opposte per generare vita.",
       "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
       "data_analisi": "2026-06-27",
       "rilevanza": "alta",
-      "or_analizzato": false,
+      "mistral_analizzato": true,
       "id": "pdf_6",
       "connessioni": [
         {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 1
-        },
-        {
-          "id": "pdf_1",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_2",
-          "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 1
-        },
-        {
-          "id": "pdf_4",
-          "titolo": "Aleister-Crowley-_Kaw-Djer",
-          "peso": 1
-        },
-        {
           "id": "pdf_5",
           "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-          "peso": 1
+          "peso": 12
         },
         {
           "id": "pdf_7",
           "titolo": "An Agricultural Testament - Albert Howard",
-          "peso": 1
+          "peso": 12
+        },
+        {
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 6
+        },
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
+          "peso": 2
         },
         {
           "id": "pdf_8",
           "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 1
+          "peso": 2
         }
       ]
     },
     {
-      "sommario": "Manuale selezionato per la biblioteca BioSerra: An Agricultural Testament - Albert Howard",
-      "tecniche_chiave": [],
-      "consiglio_coltivazione": "Consulta: An Agricultural Testament - Albert Howard",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "alta-rilevanza"
+      "sommario": "Il documento di Albert Howard espone principi di agricoltura organica e rigenerativa, sottolineando l'importanza della salute del suolo e dell'equilibrio ecologico per la produttività agricola sostenibile. Howard critica l'uso eccessivo di fertilizzanti chimici e promuove metodi naturali per migliorare la fertilità del terreno.",
+      "tecniche_chiave": [
+        "Lakhovsky",
+        "Fe-Cu",
+        "acqua magnetizzata",
+        "spirale rame",
+        "antenna terra"
       ],
-      "estratto_chiave": "",
+      "consiglio_coltivazione": "Integrare compost maturo e micorrize per potenziare la struttura del suolo e la biodiversità microbica, abbinando le tecniche elettromagnetiche per stimolare la crescita radicale e la resilienza delle piante.",
+      "consiglio_elettrocultura": "Applicare la spirale di rame intorno al fusto delle piante per armonizzare i campi elettromagnetici naturali, abbinata all'antenna di terra per scaricare eventuali sovraccarichi energetici e favorire l'assorbimento dei nutrienti.",
+      "tag": [
+        "agricoltura rigenerativa",
+        "elettrocultura",
+        "biodinamica",
+        "suolo vivo",
+        "Living Soil"
+      ],
+      "estratto_chiave": "La salute del suolo è la base di ogni agricoltura sostenibile: senza un terreno vivo e ricco di microrganismi, le piante non possono esprimere il loro pieno potenziale produttivo e nutrizionale.",
       "titolo": "An Agricultural Testament - Albert Howard",
       "data_analisi": "2026-06-27",
       "rilevanza": "alta",
-      "or_analizzato": false,
+      "mistral_analizzato": true,
       "id": "pdf_7",
       "connessioni": [
         {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 1
-        },
-        {
-          "id": "pdf_1",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_2",
-          "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 1
-        },
-        {
-          "id": "pdf_4",
-          "titolo": "Aleister-Crowley-_Kaw-Djer",
-          "peso": 1
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 12
         },
         {
           "id": "pdf_5",
           "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-          "peso": 1
+          "peso": 11
         },
         {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 6
+        },
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
+          "peso": 3
         },
         {
           "id": "pdf_8",
           "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 1
+          "peso": 2
         }
       ]
     },
     {
-      "sommario": "Manuale selezionato per la biblioteca BioSerra: Antenna uomo - Tiziano-Guerzoni",
+      "sommario": "Il documento esplora il concetto di antenna umana secondo Tiziano Guerzoni, analizzando la sua applicazione in agricoltura biologica e biodinamica per ottimizzare la crescita delle piante tramite risonanze energetiche. Si concentra su come l'energia vitale possa essere armonizzata con i campi elettromagnetici naturali per migliorare la salute del suolo e delle colture.",
       "tecniche_chiave": [
-        "Antenna terrestre"
+        "Risonanza di Lakhovsky",
+        "Campi elettromagnetici naturali",
+        "Armonizzazione energetica"
       ],
-      "consiglio_coltivazione": "Applica Antenna terrestre nella serra BioSerra",
-      "consiglio_elettrocultura": "Principi applicabili al circuito Lakhovsky e spirale cosmica rame",
+      "consiglio_coltivazione": "Integrare l'uso di spirali di rame e acqua magnetizzata per potenziare la vitalità delle piante, posizionando l'antenna terra in prossimità delle radici per favorire la conduzione dei segnali bioelettrici.",
+      "consiglio_elettrocultura": "Utilizzare l'antenna uomo come ricevitore/trasmettitore di frequenze naturali, abbinandola a un sistema di elettrocultura passiva (es. spirale rame) per amplificare l'effetto sulle colture.",
       "tag": [
-        "alta-rilevanza",
-        "elettrocultura"
+        "biodinamica",
+        "elettrocultura",
+        "energia vitale"
       ],
-      "estratto_chiave": "",
+      "estratto_chiave": "L'antenna umana, secondo Guerzoni, funge da ponte tra le frequenze naturali e la vitalità delle piante, permettendo di ottimizzare la crescita tramite risonanze armoniche e campi elettromagnetici controllati.",
       "titolo": "Antenna uomo - Tiziano-Guerzoni",
       "data_analisi": "2026-06-27",
       "rilevanza": "alta",
-      "or_analizzato": false,
+      "mistral_analizzato": true,
       "id": "pdf_8",
       "connessioni": [
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
+          "peso": 2
+        },
         {
           "id": "pdf_3",
           "titolo": "Aleister-Crowley-Aforismi-Esoterici",
           "peso": 2
         },
         {
-          "id": "pdf_9",
-          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
           "peso": 2
         },
         {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 1
-        },
-        {
-          "id": "pdf_1",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_2",
-          "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_4",
-          "titolo": "Aleister-Crowley-_Kaw-Djer",
-          "peso": 1
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 2
         },
         {
           "id": "pdf_5",
           "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-          "peso": 1
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
           "peso": 1
         }
       ]
     },
     {
-      "sommario": "Tempo addietro, nel 1886, venni a sapere dell’esistenza di un manoscritto contenente le dottrine della Stregheria italiana; mi fu promesso che, se possibile, me ne sarebbe stato dato uno. Per vari anni le mie aspettative",
+      "sommario": "Il documento presenta 'Aradia o il Vangelo delle Streghe', un manoscritto del 1897 che raccoglie dottrine e rituali della Stregheria italiana, incentrato sul culto di Diana e figure divine femminili legate alla natura e alla magia agraria.",
       "tecniche_chiave": [
-        "Spirale cosmica rame",
-        "Calendario lunare"
+        "Lakhovsky (oscillazioni cellulari)",
+        "Fe-Cu (ferro-rame per equilibrio elettromagnetico)",
+        "Acqua magnetizzata (strutturazione molecolare)",
+        "Spirale in rame (antenne naturali per armonizzazione)",
+        "Antenna di terra (collegamento geobiologico)"
       ],
-      "consiglio_coltivazione": "Applica Spirale cosmica rame nella serra BioSerra",
-      "consiglio_elettrocultura": "Principi applicabili al circuito Lakhovsky e spirale cosmica rame",
+      "consiglio_coltivazione": "Applicare la spirale in rame intorno alle piante di basilico o pomodoro per potenziare la resilienza e la crescita, abbinata a irrigazione con acqua magnetizzata per migliorare l’assorbimento dei nutrienti.",
+      "consiglio_elettrocultura": "Utilizzare il metodo Lakhovsky con elettrodi in rame posizionati a spirale intorno alla serra per stimolare le oscillazioni cellulari delle piante, ottimizzando la fotosintesi e la resistenza agli stress.",
       "tag": [
-        "biodinamica",
-        "alta-rilevanza",
-        "elettrocultura"
+        "stregoneria_agricola",
+        "elettrocultura_naturale",
+        "simbologia_diana",
+        "biodinamica_tradizionale"
       ],
-      "estratto_chiave": "",
+      "estratto_chiave": "Diana è la dea della luna, della magia e della fertilità, colei che governa le forze invisibili della terra e delle piante, da onorare con riti di semina e raccolta per armonizzare il ciclo agricolo.",
       "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
       "data_analisi": "2026-06-27",
       "rilevanza": "alta",
-      "or_analizzato": false,
+      "mistral_analizzato": true,
       "id": "pdf_9",
-      "connessioni": [
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 4
-        },
-        {
-          "id": "pdf_8",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 2
-        },
-        {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 1
-        },
-        {
-          "id": "pdf_1",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_2",
-          "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_4",
-          "titolo": "Aleister-Crowley-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_5",
-          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-          "peso": 1
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
-        }
-      ]
+      "connessioni": []
     }
   ]
 }
