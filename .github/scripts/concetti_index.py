@@ -10,34 +10,24 @@ HEADERS_GH = {
 }
 
 CATEGORIE_VALIDE = {'suolo','irrigazione','nutrizione','elettrocultura','biodinamica','fitosanitario','raccolta','altro'}
+ELETTRO_KW = ['lakhovsky','spirale','rame','antenna','magnetiz','fe-cu','ferro-rame','ighina','elettromagn','galvanic','risonanz','oscillat']
+SUOLO_KW = ['suolo','compost','humus','micoriz','fungh','microbi','ph suolo','biodiver','ammend','torba','perlite','lombrichi','argilla','silicati']
+IRRIGAZIONE_KW = ['acqua','irrigaz','goccia','drip','ionizzata','struttur','umidita']
+NUTRIZIONE_KW = ['nutriz','fertiliz','azoto','fosforo','potassio','organica','concime','aminoacid','alghe','guano']
+BIODINAMICA_KW = ['luna','biodinam','steiner','cosm','calendario','planetar','preparati']
+FITOSANITARIO_KW = ['parassit','malattia','insetti','difesa','trappol','neem','companion']
+RACCOLTA_KW = ['raccolt','taglio','essiccaz','concia','maturaz','trichomi','flush']
 
-ELETTRO_KW = [
-    'lakhovsky','spirale','rame','antenna','magnetiz','fe-cu','ferro-rame','ighina',
-    'elettromagn','galvanic','risonanz','pantacolo','campo elettr','oscillat'
-]
-SUOLO_KW = ['suolo','compost','humus','micoriz','fungh','microbi','ph','biodiver','ammend','torba','perlite','farina','rocce']
-IRRIGAZIONE_KW = ['acqua','irrigaz','umidità','goccia','drip','ionizzata','struttur']
-NUTRIZIONE_KW = ['nutriz','fertiliz','azoto','fosforo','potassio','organica','minerali','concime']
-BIODINAMICA_KW = ['luna','biodinam','steiner','cosm','calendario','planetar']
-FITOSANITARIO_KW = ['parassit','malattia','insetti','difesa','trappol','fungicd','alghe']
-RACCOLTA_KW = ['raccolt','fioritura','taglio','essiccaz','concia','maturaz','trichomi']
-
-def categorizza_auto(label, cat_mistral):
-    """Corregge la categoria basandosi su keyword nel label"""
-    if cat_mistral in CATEGORIE_VALIDE and cat_mistral != 'altro':
-        # Verifica se la categoria assegnata ha senso, altrimenti correggi
-        l = label.lower()
-        if any(kw in l for kw in ELETTRO_KW):
-            return 'elettrocultura'
+def categorizza_auto(label, cat_orig):
     l = label.lower()
     if any(kw in l for kw in ELETTRO_KW): return 'elettrocultura'
-    if any(kw in l for kw in SUOLO_KW): return 'suolo'
-    if any(kw in l for kw in IRRIGAZIONE_KW): return 'irrigazione'
-    if any(kw in l for kw in NUTRIZIONE_KW): return 'nutrizione'
-    if any(kw in l for kw in BIODINAMICA_KW): return 'biodinamica'
-    if any(kw in l for kw in FITOSANITARIO_KW): return 'fitosanitario'
     if any(kw in l for kw in RACCOLTA_KW): return 'raccolta'
-    return cat_mistral if cat_mistral in CATEGORIE_VALIDE else 'altro'
+    if any(kw in l for kw in FITOSANITARIO_KW): return 'fitosanitario'
+    if any(kw in l for kw in BIODINAMICA_KW): return 'biodinamica'
+    if any(kw in l for kw in NUTRIZIONE_KW): return 'nutrizione'
+    if any(kw in l for kw in IRRIGAZIONE_KW): return 'irrigazione'
+    if any(kw in l for kw in SUOLO_KW): return 'suolo'
+    return cat_orig if cat_orig in CATEGORIE_VALIDE else 'altro'
 
 def gh_api_get(path):
     req = urllib.request.Request(
@@ -55,13 +45,13 @@ def gh_put(path, content_b64, sha, message):
     with urllib.request.urlopen(req) as r:
         return json.load(r)
 
-def mistral_chat(prompt, max_tokens=7000):
+def mistral_chat(prompt, max_tokens=3000):
     if not MISTRAL_KEY:
-        raise Exception('MISTRAL_KEY non impostata')
+        raise Exception('MISTRAL_KEY mancante')
     body = json.dumps({
         'model': 'mistral-small-latest',
         'max_tokens': max_tokens,
-        'temperature': 0.2,
+        'temperature': 0.1,
         'messages': [{'role': 'user', 'content': prompt}]
     }).encode()
     req = urllib.request.Request(
@@ -77,60 +67,92 @@ def mistral_chat(prompt, max_tokens=7000):
     print(f'  Mistral OK: {len(content)} chars, {tokens} tokens')
     return content
 
-def build_concetti_fallback(tecniche_agg):
-    """Fallback con dedup manuale"""
-    print('  Uso fallback locale con dedup...')
-    GRUPPI = {
-        'Acqua Magnetizzata': {'kw': ['acqua magnetizzata'], 'cat': 'irrigazione'},
-        'Antenna di Terra': {'kw': ['antenna di terra', 'antenna terra'], 'cat': 'elettrocultura'},
-        'Spirale in Rame': {'kw': ['spirale rame', 'spirale in rame', 'spirale di rame'], 'cat': 'elettrocultura'},
-        'Circuito di Lakhovsky': {'kw': ['lakhovsky', 'risonanza di lakhovsky'], 'cat': 'elettrocultura'},
-        'Elettrodi Fe-Cu': {'kw': ['fe-cu', 'ferro-rame'], 'cat': 'elettrocultura'},
-        'Atomo Magnetico di Ighina': {'kw': ['ighina', 'atomo magnetico'], 'cat': 'elettrocultura'},
-        'Farine di Rocce': {'kw': ['farin', 'rocce'], 'cat': 'nutrizione'},
-        'Salute del Suolo': {'kw': ['salute del suolo', 'suolo vivente', 'agricoltura biologica'], 'cat': 'suolo'},
-        'Campi Elettromagnetici': {'kw': ['campi elettromagn'], 'cat': 'elettrocultura'},
-    }
-    concetti = []
-    used_ids = set()
-    for label, info in GRUPPI.items():
-        count_tot = 0
-        pdf_ids_set = []
-        consigli = []
-        for t_norm, td in tecniche_agg.items():
-            if any(kw in t_norm for kw in info['kw']):
-                count_tot += td['count']
-                pdf_ids_set.extend(td['pdf_ids'])
-                consigli.extend(td['consigli'])
-        if count_tot == 0: continue
-        base_id = ''.join(ch if ch.isalnum() else '_' for ch in label.lower())[:25].strip('_')
-        uid = base_id if base_id not in used_ids else f'{base_id}_{len(used_ids)}'
-        used_ids.add(uid)
-        concetti.append({
-            'id': uid, 'label': label, 'categoria': info['cat'],
-            'descrizione': f'{label} presente in {count_tot} documenti.',
-            'istruzioni_pratiche': (consigli[:2] + ['Monitora i risultati'])[:3],
-            'varianti': info['kw'][:3],
-            'fasi_guida': ['vegetazione', 'fioritura'],
-            'rilevanza': min(95, 50 + count_tot * 2),
-            'tag_correlati': [info['cat'], 'living-soil'],
-            'pdf_ids': list(dict.fromkeys(pdf_ids_set))[:10],
-            'pdf_count': min(len(set(pdf_ids_set)), 10)
-        })
-    return concetti
+def parse_concetti_json(risposta):
+    """Estrae lista concetti da risposta Mistral in modo robusto"""
+    # Prova parsing diretto
+    s = risposta.find('[')
+    e = risposta.rfind(']')
+    # Prima cerca {"concetti":[...]}
+    s2 = risposta.find('{"concetti"')
+    if s2 >= 0:
+        e2 = risposta.rfind('}')
+        if e2 > s2:
+            try:
+                parsed = json.loads(risposta[s2:e2+1])
+                return parsed.get('concetti', [])
+            except: pass
+    # Poi prova array diretto [...]
+    if s >= 0 and e > s:
+        try:
+            return json.loads(risposta[s:e+1])
+        except: pass
+    return []
+
+def concetti_dai_pdf(lista_tec):
+    """Chiamata 1: concetti dalle tecniche dei PDF"""
+    prompt = (
+        'Agronomo esperto Living Soil. '
+        'Queste tecniche sono estratte da 89 PDF di elettrocultura e biofisica applicata alle piante. '
+        'Raggruppa le varianti identiche e crea 8-10 concetti distinti.\n\n'
+        'Tecniche (con frequenza):\n' + lista_tec + '\n\n'
+        'Per ogni concetto:\n'
+        '- id: slug minuscolo con underscore (es: spirale_rame)\n'
+        '- label: nome chiaro italiano (es: Spirale in Rame)\n'
+        '- categoria: usa "elettrocultura" per tecniche EM/frequenza/metalli, "irrigazione" per acqua\n'
+        '- descrizione: 1 frase pratica applicabile in serra\n'
+        '- istruzioni_pratiche: array di 3 azioni concrete\n'
+        '- varianti: array con i nomi alternativi raggruppati\n'
+        '- fasi_guida: array con valori da [germinazione,vegetazione,fioritura,taglio,essiccazione,concia]\n'
+        '- rilevanza: numero 1-100\n'
+        '- tag_correlati: array di 2-3 tag\n\n'
+        'Rispondi SOLO con JSON array, nessun testo:\n'
+        '[{"id":"slug","label":"Nome","categoria":"elettrocultura","descrizione":"frase","istruzioni_pratiche":["a","b","c"],"varianti":["v1"],"fasi_guida":["vegetazione"],"rilevanza":90,"tag_correlati":["t1"]}]'
+    )
+    risposta = mistral_chat(prompt, max_tokens=2500)
+    print(f'  Risposta PDF (300 chars): {risposta[:300]}')
+    return parse_concetti_json(risposta)
+
+def concetti_living_soil():
+    """Chiamata 2: concetti pratici Living Soil outdoor"""
+    prompt = (
+        'Agronomo esperto di coltivazione Living Soil outdoor in Italia. '
+        'Crea 20-22 concetti pratici per una serra outdoor Living Soil, '
+        'coperti da queste categorie:\n'
+        '- suolo (6-7 concetti): gestione suolo vivente, compostaggio, micorrize, ph, pacciamatura, humus, lombrichi\n'
+        '- irrigazione (3): gestione irrigazione, acqua strutturata, umidita ambiente\n'
+        '- nutrizione (3-4): fertilizzazione organica, te di compost, farine di rocce, alghe marine\n'
+        '- fitosanitario (2-3): controllo parassiti naturale, olio neem, piante companion\n'
+        '- raccolta (2-3): timing raccolta, essiccazione corretta, cura trichomi\n'
+        '- biodinamica (2-3): calendario lunare, preparati biodinamici, giorni radice/fiore\n\n'
+        'Per ogni concetto:\n'
+        '- id: slug minuscolo con underscore\n'
+        '- label: nome pratico italiano\n'
+        '- categoria: uno tra suolo|irrigazione|nutrizione|fitosanitario|raccolta|biodinamica\n'
+        '- descrizione: 1 frase concreta applicabile in serra outdoor\n'
+        '- istruzioni_pratiche: array 3 azioni pratiche\n'
+        '- varianti: array con 1-2 nomi alternativi\n'
+        '- fasi_guida: array con valori da [germinazione,vegetazione,fioritura,taglio,essiccazione,concia]\n'
+        '- rilevanza: numero 1-100\n'
+        '- tag_correlati: array 2-3 tag\n\n'
+        'Rispondi SOLO con JSON array, nessun testo:\n'
+        '[{"id":"slug","label":"Nome","categoria":"suolo","descrizione":"frase","istruzioni_pratiche":["a","b","c"],"varianti":["v1"],"fasi_guida":["vegetazione"],"rilevanza":85,"tag_correlati":["t1"]}]'
+    )
+    risposta = mistral_chat(prompt, max_tokens=4000)
+    print(f'  Risposta Living Soil (300 chars): {risposta[:300]}')
+    return parse_concetti_json(risposta)
 
 def main():
     oggi = __import__('datetime').date.today().isoformat()
-    print('=== BioSerra Concetti Index v8 (Mistral) ===')
+    print('=== BioSerra Concetti Index v9 (Mistral 2-step) ===')
     print(f'MISTRAL_KEY: {"presente" if MISTRAL_KEY else "ASSENTE"}')
 
-    print('Leggo pdf_knowledge.json...')
+    print('\nLeggo pdf_knowledge.json...')
     raw, _ = gh_api_get('data/pdf_knowledge.json')
     knowledge = json.loads(raw)
     analisi = knowledge.get('analisi', [])
     print(f'PDF: {len(analisi)}')
 
-    # Estrai e aggrega tecniche
+    # Estrai tecniche
     SKIP = ['harina de roca', 'non specificat', 'non disponib', 'nessuna tecn', 'nessun']
     tecniche_agg = {}
     for a in analisi:
@@ -141,97 +163,100 @@ def main():
             if any(s in t_clean.lower() for s in SKIP): continue
             t_norm = t_clean.lower()
             if t_norm not in tecniche_agg:
-                tecniche_agg[t_norm] = {'label': t_clean, 'count': 0, 'pdf_ids': [], 'consigli': [], 'elettro': []}
+                tecniche_agg[t_norm] = {'label': t_clean, 'count': 0, 'pdf_ids': [], 'consigli': []}
             tecniche_agg[t_norm]['count'] += 1
             tecniche_agg[t_norm]['pdf_ids'].append(pid)
             c = a.get('consiglio_coltivazione', '')
-            if c and len(tecniche_agg[t_norm]['consigli']) < 3:
-                tecniche_agg[t_norm]['consigli'].append(c[:120])
-            e = a.get('consiglio_elettrocultura', '')
-            if e and len(tecniche_agg[t_norm]['elettro']) < 2:
-                tecniche_agg[t_norm]['elettro'].append(e[:100])
+            if c and len(tecniche_agg[t_norm]['consigli']) < 2:
+                tecniche_agg[t_norm]['consigli'].append(c[:100])
 
-    print(f'Tecniche uniche grezze: {len(tecniche_agg)}')
-
-    # Dedup greedy: raggruppa varianti dello stesso concetto base
-    seen_prefixes = set()
+    # Dedup: prendi top 20 con almeno 2 occorrenze (salta varianti minori)
     top_dedup = []
+    seen_p = set()
     for t_norm, td in sorted(tecniche_agg.items(), key=lambda x: -x[1]['count']):
+        if td['count'] < 2: break
         words = t_norm.split()
-        prefix = words[0][:8] + (words[1][:5] if len(words) > 1 else '')
-        if prefix not in seen_prefixes or td['count'] >= 4:
+        prefix = words[0][:7] + (words[1][:4] if len(words) > 1 else '')
+        if prefix not in seen_p:
             top_dedup.append((t_norm, td))
-            seen_prefixes.add(prefix)
-        if len(top_dedup) >= 40:
-            break
+            seen_p.add(prefix)
+        if len(top_dedup) >= 20: break
 
     lista_tec = '\n'.join([f'- {td["label"]} ({td["count"]}x)' for _, td in top_dedup])
-    print(f'Tecniche uniche dopo dedup: {len(top_dedup)}')
+    print(f'Tecniche uniche (>1 occ, dedup): {len(top_dedup)}')
 
-    concetti = []
+    concetti_pdf = []
+    concetti_ls = []
+
     if MISTRAL_KEY:
-        prompt = (
-            'Sei un agronomo esperto di coltivazione Living Soil outdoor in Italia. '
-            'Devi creare un indice COMPLETO di tecniche e concetti per una serra outdoor.\n\n'
-            '== TECNICHE ESTRATTE DA 89 PDF (principalmente elettrocultura e biofisica) ==\n'
-            f'{lista_tec}\n\n'
-            '== COMPITO ==\n'
-            'Crea esattamente 30-35 concetti distinti suddivisi in DUE GRUPPI:\n\n'
-            'GRUPPO A - Dai PDF (12-15 concetti): Usa le tecniche della lista sopra. '
-            'Raggruppa varianti identiche in un solo concetto. '
-            'Categoria "elettrocultura" per: Lakhovsky, Spirale rame, Antenna terra, Fe-Cu, Acqua magnetizzata, Ighina, campi EM.\n\n'
-            'GRUPPO B - Living Soil pratiche (18-20 concetti): Aggiungi concetti pratici di coltivazione outdoor '
-            'che un esperto Living Soil userebbe, suddivisi per queste categorie:\n'
-            '- suolo (6-7): es. compostaggio, micorrize, biodiversita suolo, ph suolo, pacciamatura, humus, lombrichi\n'
-            '- irrigazione (2-3): es. irrigazione goccia, gestione umidita, acqua strutturata\n'
-            '- nutrizione (3-4): es. fertilizzazione organica, tè di compost, farine di rocce, aminoacidi\n'
-            '- fitosanitario (2-3): es. controllo parassiti, olio di neem, piante companion\n'
-            '- raccolta (2-3): es. timing raccolta, essiccazione, cura trichomi\n'
-            '- biodinamica (2-3): es. calendario lunare, preparati biodinamici, semine lunari\n\n'
-            '== FORMATO RISPOSTA ==\n'
-            'Rispondi SOLO con JSON. Nessun testo aggiuntivo.\n'
-            'Categorie valide: suolo|irrigazione|nutrizione|elettrocultura|biodinamica|fitosanitario|raccolta|altro\n'
-            'fasi_guida valide: germinazione|vegetazione|fioritura|taglio|essiccazione|concia\n'
-            '{"concetti":[{"id":"slug_senza_spazi","label":"Nome Pratico","categoria":"elettrocultura",'
-            '"descrizione":"Una frase pratica concreta per serra outdoor","istruzioni_pratiche":["azione 1","azione 2","azione 3"],'
-            '"varianti":["alt1"],"fasi_guida":["vegetazione","fioritura"],"rilevanza":85,"tag_correlati":["tag1","tag2"]}]}'
-        )
-        print(f'Prompt inviato: {len(prompt)} chars')
+        # Chiamata 1: tecniche dai PDF
+        print('\n--- Chiamata 1: Concetti dai PDF ---')
         try:
-            risposta = mistral_chat(prompt, max_tokens=8000)
-            print(f'Risposta (500 chars): {risposta[:500]}')
-            s = risposta.find('{"concetti"')
-            if s == -1: s = risposta.find('{')
-            e = risposta.rfind('}')
-            if s >= 0 and e > s:
-                parsed = json.loads(risposta[s:e+1])
-                concetti = parsed.get('concetti', [])
-                print(f'Concetti Mistral: {len(concetti)}')
-            else:
-                print('  JSON non trovato nella risposta Mistral')
-        except json.JSONDecodeError as ex:
-            print(f'  JSON parse error: {ex}')
+            concetti_pdf = concetti_dai_pdf(lista_tec)
+            print(f'  Concetti PDF: {len(concetti_pdf)}')
         except Exception as ex:
-            print(f'  Mistral fallito: {ex}')
+            print(f'  Errore chiamata 1: {ex}')
 
-    if not concetti:
-        print('Uso fallback locale...')
-        concetti = build_concetti_fallback(tecniche_agg)
+        # Pausa tra chiamate
+        time.sleep(3)
 
-    # Post-processing: normalizza IDs, correggi categorie, arricchisci pdf_ids
+        # Chiamata 2: Living Soil pratiche
+        print('\n--- Chiamata 2: Living Soil pratiche ---')
+        try:
+            concetti_ls = concetti_living_soil()
+            print(f'  Concetti Living Soil: {len(concetti_ls)}')
+        except Exception as ex:
+            print(f'  Errore chiamata 2: {ex}')
+
+    # Fallback se una delle due chiamate ha fallito
+    if not concetti_pdf:
+        print('Fallback PDF: uso concetti hardcoded elettrocultura')
+        concetti_pdf = [
+            {'id': 'acqua_magnetizzata', 'label': 'Acqua Magnetizzata', 'categoria': 'irrigazione',
+             'descrizione': 'Trattamento acqua con magneti per migliorare assorbimento radicale.',
+             'istruzioni_pratiche': ['Posiziona magneti sul tubo di alimentazione', 'Usa acqua trattata per irrigazioni', 'Monitora crescita radicale'], 'varianti': ['acqua strutturata', 'acqua polarizzata'], 'fasi_guida': ['vegetazione', 'fioritura'], 'rilevanza': 95, 'tag_correlati': ['elettrocultura', 'irrigazione']},
+            {'id': 'spirale_rame', 'label': 'Spirale in Rame', 'categoria': 'elettrocultura',
+             'descrizione': 'Spirale in rame per armonizzazione campi elettromagnetici nella zona radice.',
+             'istruzioni_pratiche': ['Inserisci spirale nel substrato vicino alle radici', 'Orienta in senso antiorario', 'Pulisci periodicamente con acqua acidula'], 'varianti': ['spirale di rame', 'spirale rame'], 'fasi_guida': ['vegetazione', 'fioritura'], 'rilevanza': 92, 'tag_correlati': ['elettrocultura', 'rame']},
+            {'id': 'circuito_lakhovsky', 'label': 'Circuito di Lakhovsky', 'categoria': 'elettrocultura',
+             'descrizione': 'Oscillatore multicellulare per stimolazione risonanza cellulare delle piante.',
+             'istruzioni_pratiche': ['Installa l\'anello Lakhovsky attorno alla pianta', 'Assicura buon contatto col suolo', 'Verifica assenza interferenze metalliche vicine'], 'varianti': ['oscillatore Lakhovsky', 'MWO'], 'fasi_guida': ['vegetazione', 'fioritura'], 'rilevanza': 90, 'tag_correlati': ['elettrocultura', 'risonanza']},
+            {'id': 'elettrodi_fe_cu', 'label': 'Elettrodi Fe-Cu', 'categoria': 'elettrocultura',
+             'descrizione': 'Coppia ferro-rame nel suolo per stimolazione bioelettrochimica radicale.',
+             'istruzioni_pratiche': ['Inserisci elettrodi a 10-15cm dalla base', 'Mantieni distanza 20cm tra Fe e Cu', 'Rinnova ogni ciclo vegetativo'], 'varianti': ['pila galvanica Fe-Cu', 'ferro-rame'], 'fasi_guida': ['vegetazione', 'fioritura'], 'rilevanza': 88, 'tag_correlati': ['elettrocultura', 'galvanica']},
+            {'id': 'antenna_terra', 'label': 'Antenna di Terra', 'categoria': 'elettrocultura',
+             'descrizione': 'Connessione a terra per captare energie telluriche e migliorare il campo bioelettrico.',
+             'istruzioni_pratiche': ['Inserisci antenna in rame a 30cm di profondita', 'Orienta verticalmente al nord', 'Collega a spirale rame se presente'], 'varianti': ['antenna terra', 'connessione geobiologica'], 'fasi_guida': ['vegetazione', 'fioritura'], 'rilevanza': 85, 'tag_correlati': ['elettrocultura', 'geobiologia']},
+        ]
+
+    if not concetti_ls:
+        print('Fallback Living Soil: uso concetti base')
+        concetti_ls = [
+            {'id': 'gestione_suolo_vivente', 'label': 'Suolo Vivente', 'categoria': 'suolo', 'descrizione': 'Mantenimento microbioma del suolo attivo.', 'istruzioni_pratiche': ['Aggiungi compost maturo ogni 2 settimane', 'Evita prodotti chimici', 'Mantieni umidita costante'], 'varianti': ['living soil', 'suolo biologico'], 'fasi_guida': ['vegetazione', 'fioritura'], 'rilevanza': 95, 'tag_correlati': ['suolo', 'living-soil']},
+            {'id': 'compostaggio_organico', 'label': 'Compostaggio Organico', 'categoria': 'suolo', 'descrizione': 'Produzione compost di qualita per ammendare il substrato.', 'istruzioni_pratiche': ['Bilancia materiali verdi e marroni', 'Tieni temperatura 55-65C', 'Rivolta ogni 2-3 giorni'], 'varianti': ['compost'], 'fasi_guida': ['germinazione', 'vegetazione'], 'rilevanza': 88, 'tag_correlati': ['suolo', 'nutrizione']},
+            {'id': 'inoculazione_micorrize', 'label': 'Inoculazione Micorrize', 'categoria': 'suolo', 'descrizione': 'Introduzione funghi micorrizici per simbiosi radicale.', 'istruzioni_pratiche': ['Applica inoculo alla radice al trapianto', 'Usa 5-10g per pianta', 'Evita fungicidi nei 30 giorni successivi'], 'varianti': ['micorrize', 'funghi radicali'], 'fasi_guida': ['germinazione', 'vegetazione'], 'rilevanza': 92, 'tag_correlati': ['suolo', 'micorrize']},
+            {'id': 'fertilizzazione_organica', 'label': 'Fertilizzazione Organica', 'categoria': 'nutrizione', 'descrizione': 'Apporto nutrienti tramite ammendanti organici naturali.', 'istruzioni_pratiche': ['Usa farine organiche (sangue, osso, pesce)', 'Applica in dose ridotta ogni 2 settimane', 'Monitora colore foglie'], 'varianti': ['nutrizione organica', 'concimazione biologica'], 'fasi_guida': ['vegetazione', 'fioritura'], 'rilevanza': 85, 'tag_correlati': ['nutrizione', 'organico']},
+            {'id': 'te_di_compost', 'label': 'Te di Compost', 'categoria': 'nutrizione', 'descrizione': 'Infuso aerobico di compost per applicazione fogliare o radicale.', 'istruzioni_pratiche': ['Immergi compost in acqua per 24h con aeratore', 'Aggiungi melassa come cibo per batteri', 'Applica entro 4 ore dalla preparazione'], 'varianti': ['compost tea', 'infuso microbico'], 'fasi_guida': ['vegetazione', 'fioritura'], 'rilevanza': 88, 'tag_correlati': ['nutrizione', 'microbi']},
+            {'id': 'farine_di_rocce', 'label': 'Farine di Rocce', 'categoria': 'nutrizione', 'descrizione': 'Minerali in polvere per rimineralizzazione lenta del substrato.', 'istruzioni_pratiche': ['Mischia 2-3% nel substrato', 'Usa basalto o silicio verde', 'Rinnova ogni ciclo'], 'varianti': ['silice in polvere', 'polvere di roccia'], 'fasi_guida': ['germinazione', 'vegetazione'], 'rilevanza': 80, 'tag_correlati': ['nutrizione', 'minerali']},
+            {'id': 'calendario_lunare', 'label': 'Calendario Lunare', 'categoria': 'biodinamica', 'descrizione': 'Pianificazione operazioni colturali secondo ciclo lunare.', 'istruzioni_pratiche': ['Trapianta nei giorni Radice', 'Annaffia e fertilizza nei giorni Frutto/Fiore', 'Evita operazioni nei giorni sfavorevoli'], 'varianti': ['giorni lunari', 'biodinamica lunare'], 'fasi_guida': ['germinazione', 'vegetazione', 'fioritura'], 'rilevanza': 75, 'tag_correlati': ['biodinamica', 'luna']},
+            {'id': 'controllo_parassiti', 'label': 'Controllo Parassiti Naturale', 'categoria': 'fitosanitario', 'descrizione': 'Gestione biologica di infestazioni con metodi naturali.', 'istruzioni_pratiche': ['Ispeziona quotidianamente foglie e steli', 'Applica olio di neem preventivo ogni 7 giorni', 'Usa insetti utili (acari predatori)'], 'varianti': ['difesa biologica', 'pest management'], 'fasi_guida': ['vegetazione', 'fioritura'], 'rilevanza': 82, 'tag_correlati': ['fitosanitario', 'biologico']},
+            {'id': 'essiccazione_corretta', 'label': 'Essiccazione Corretta', 'categoria': 'raccolta', 'descrizione': 'Processo di asciugatura lenta per preservare qualita.', 'istruzioni_pratiche': ['Mantieni 60-70% umidita e 18-22C', 'Essicca in buio totale', 'Testa dopo 10-14 giorni con crack test'], 'varianti': ['curing', 'asciugatura'], 'fasi_guida': ['essiccazione'], 'rilevanza': 80, 'tag_correlati': ['raccolta', 'qualita']},
+            {'id': 'gestione_ph_suolo', 'label': 'Gestione pH Suolo', 'categoria': 'suolo', 'descrizione': 'Mantenimento pH ottimale 6.0-7.0 per biodisponibilita nutrienti.', 'istruzioni_pratiche': ['Misura pH ogni settimana', 'Correggi con calce se sotto 5.8', 'Correggi con zolfo se sopra 7.2'], 'varianti': ['ph substrato', 'acidita suolo'], 'fasi_guida': ['vegetazione', 'fioritura'], 'rilevanza': 85, 'tag_correlati': ['suolo', 'nutrizione']},
+        ]
+
+    # Unisci e normalizza
+    tutti = concetti_pdf + concetti_ls
     used_ids = set()
-    for i, c in enumerate(concetti):
-        # Normalizza ID
+    concetti_finali = []
+    for i, c in enumerate(tutti):
         raw_id = c.get('id', f'concetto_{i}')
         base_id = ''.join(ch if ch.isalnum() else '_' for ch in raw_id.lower())[:28].strip('_')
         uid = base_id if base_id not in used_ids else f'{base_id}_{i}'
         used_ids.add(uid)
         c['id'] = uid
-
-        # Correggi categoria
         c['categoria'] = categorizza_auto(c.get('label', ''), c.get('categoria', 'altro'))
-
-        # Associa pdf_ids se assenti
+        fasi_valide = {'germinazione', 'vegetazione', 'fioritura', 'taglio', 'essiccazione', 'concia'}
+        c['fasi_guida'] = [f for f in c.get('fasi_guida', []) if f in fasi_valide] or ['vegetazione']
         if not c.get('pdf_ids'):
             words = [w for w in c.get('label', '').lower().split() if len(w) > 3]
             pdf_ids = []
@@ -240,18 +265,13 @@ def main():
                     pdf_ids.extend(tdata['pdf_ids'])
             c['pdf_ids'] = list(dict.fromkeys(pdf_ids))[:10]
         c['pdf_count'] = len(c.get('pdf_ids', []))
-
-        # Assicura fasi_guida valide
-        fasi_valide = {'germinazione', 'vegetazione', 'fioritura', 'taglio', 'essiccazione', 'concia'}
-        c['fasi_guida'] = [f for f in c.get('fasi_guida', ['vegetazione']) if f in fasi_valide] or ['vegetazione']
-
-    print(f'\nConcetti totali: {len(concetti)}')
+        concetti_finali.append(c)
 
     # Grafo
-    nodi = [{'id': c['id'], 'label': c['label'], 'categoria': c.get('categoria', 'altro')} for c in concetti]
+    nodi = [{'id': c['id'], 'label': c['label'], 'categoria': c.get('categoria', 'altro')} for c in concetti_finali]
     edges = []
-    for i, a in enumerate(concetti):
-        for j, b in enumerate(concetti):
+    for i, a in enumerate(concetti_finali):
+        for j, b in enumerate(concetti_finali):
             if j <= i: continue
             peso = len(set(a.get('tag_correlati', [])) & set(b.get('tag_correlati', []))) * 2
             if a.get('categoria') == b.get('categoria'): peso += 1
@@ -260,20 +280,20 @@ def main():
 
     out = {
         'lastUpdate': oggi,
-        'total': len(concetti),
+        'total': len(concetti_finali),
         'fonte': f'{len(analisi)} PDF analizzati',
-        'concetti': concetti,
+        'concetti': concetti_finali,
         'grafo': {'nodi': nodi, 'edges': edges}
     }
 
     content_b64 = base64.b64encode(json.dumps(out, indent=2, ensure_ascii=False).encode()).decode()
     _, sha = gh_api_get('data/concetti_index.json')
     gh_put('data/concetti_index.json', content_b64, sha,
-           f'BioSerra concetti {oggi} ({len(concetti)} concetti) [Mistral v8]')
+           f'BioSerra concetti {oggi} ({len(concetti_finali)} concetti) [Mistral v9 2-step]')
 
-    print(f'\n=== COMPLETATO: {len(concetti)} concetti, {len(edges)} edges ===')
+    print(f'\n=== COMPLETATO: {len(concetti_finali)} concetti, {len(edges)} edges ===')
     cat_count = {}
-    for c in concetti:
+    for c in concetti_finali:
         cat = c.get('categoria', 'altro')
         cat_count[cat] = cat_count.get(cat, 0) + 1
     for cat, cnt in sorted(cat_count.items(), key=lambda x: -x[1]):
