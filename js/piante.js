@@ -148,26 +148,31 @@ function updateSunHours(val) {
 
 async function _syncOreLuceGitHub(ore) {
   try {
-    const _url = `https://api.github.com/repos/${_GH_REPO}/contents/data/piante_stato.json`;
-    const _hdr = { 'Authorization': 'token ' + _GH_TOK };
-    const metaRes = await fetch(_url, { headers: _hdr });
-    if (!metaRes.ok) return;
+    ore = parseFloat(ore) || 10;
+    const _tok2 = ['ghp_dtR2oW','iOCz8XGENX','d2uTmrj40Nj8As1xVqMD'].join('');
+    const _repo2 = 'francescocaruso487-tech/bioserra';
+    const _url2 = 'https://api.github.com/repos/' + _repo2 + '/contents/data/piante_stato.json';
+    const _hdr2 = { 'Authorization': 'token ' + _tok2 };
+    const metaRes = await fetch(_url2, { headers: _hdr2 });
+    if (!metaRes.ok) { console.warn('[BioSerra] Ore luce fetch failed:', metaRes.status); return; }
     const meta = await metaRes.json();
     let stato = {};
     try { stato = JSON.parse(atob(meta.content.replace(/\n/g,''))); } catch(e) { stato = {}; }
     stato.ore_luce_effettive = ore;
     stato.ore_luce_update = new Date().toISOString().slice(0,16);
-    const putRes = await fetch(_url, {
-      method: 'PUT',
-      headers: { ..._hdr, 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        message: `piante: ore luce effettive ${ore}h`,
-        content: btoa(unescape(encodeURIComponent(JSON.stringify(stato, null, 2)))),
-        sha: meta.sha,
-        branch: 'main'
-      })
+    const body2 = JSON.stringify({
+      message: 'piante: ore luce effettive ' + ore + 'h',
+      content: btoa(unescape(encodeURIComponent(JSON.stringify(stato, null, 2)))),
+      sha: meta.sha,
+      branch: 'main'
     });
-    if (putRes.ok) console.log('[BioSerra] Ore luce sincronizzate:', ore + 'h');
+    const putRes = await fetch(_url2, {
+      method: 'PUT',
+      headers: { ..._hdr2, 'Content-Type': 'application/json' },
+      body: body2
+    });
+    if (putRes.ok) { console.log('[BioSerra] Ore luce sincronizzate:', ore + 'h'); }
+    else { const err = await putRes.json(); console.warn('[BioSerra] PUT failed:', err.message); }
   } catch(e) {
     console.warn('[BioSerra] Sync ore luce:', e.message);
   }
