@@ -19,18 +19,12 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Test secrets disponibili
+      - name: Test Groq API
         env:
           GROQ_KEY: ${{ secrets.GROQ_KEY }}
-        run: |
-          if [ -z "$GROQ_KEY" ]; then
-            echo "ERRORE: GROQ_KEY non impostata"
-            exit 1
-          else
-            echo "GROQ_KEY presente: ${GROQ_KEY:0:8}..."
-          fi
+        run: python3 .github/scripts/test_groq.py
 
-      - name: Analisi PDF (pypdf + Groq)
+      - name: Analisi PDF (pymupdf + Groq)
         env:
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           GROQ_KEY: ${{ secrets.GROQ_KEY }}
