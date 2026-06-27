@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-06-27T06:37:37.120942+00:00",
-  "total_pdf": 46,
+  "lastUpdate": "2026-06-27T06:39:35.603388+00:00",
+  "total_pdf": 52,
   "analisi": [
     {
       "sommario": "Il documento '108upa' esplora l'applicazione di tecniche avanzate di elettrocultura e biodinamica per ottimizzare la crescita delle piante in serra. Si concentra su principi armonici e frequenze per stimolare la vitalità del suolo e delle colture.",
@@ -58,14 +58,14 @@
           "peso": 7
         },
         {
+          "id": "pdf_46",
+          "titolo": "Le_sette_valli_e_le_quattro_valli",
+          "peso": 6
+        },
+        {
           "id": "pdf_22",
           "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
           "peso": 5
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 4
         }
       ]
     },
@@ -90,7 +90,13 @@
       "rilevanza": "alta",
       "mistral_analizzato": true,
       "id": "pdf_2",
-      "connessioni": []
+      "connessioni": [
+        {
+          "id": "pdf_49",
+          "titolo": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas (Jairo Restrepo Rivera)",
+          "peso": 1
+        }
+      ]
     },
     {
       "sommario": "Il documento riflette sulla centralità dell'individualità e dell'armonia con l'ordine naturale. Sottolinea l'importanza di seguire la propria essenza senza costrizioni esterne.",
@@ -116,6 +122,11 @@
       "mistral_analizzato": true,
       "id": "pdf_3",
       "connessioni": [
+        {
+          "id": "pdf_46",
+          "titolo": "Le_sette_valli_e_le_quattro_valli",
+          "peso": 12
+        },
         {
           "id": "pdf_38",
           "titolo": "LE-TAVOLE-SMERALDINE-DI-THOTH-E.-Trismegisto",
@@ -147,14 +158,9 @@
           "peso": 6
         },
         {
-          "id": "pdf_5",
-          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-          "peso": 5
-        },
-        {
-          "id": "pdf_13",
-          "titolo": "Corso-Elettrocoltura_compressed",
-          "peso": 5
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 6
         }
       ]
     },
@@ -207,6 +213,11 @@
           "peso": 2
         },
         {
+          "id": "pdf_47",
+          "titolo": "Liber333 - Libro delle Menzogne falsamente chiamate tali",
+          "peso": 2
+        },
+        {
           "id": "pdf_22",
           "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
           "peso": 1
@@ -214,11 +225,6 @@
         {
           "id": "pdf_35",
           "titolo": "LA CABALA MISTICA",
-          "peso": 1
-        },
-        {
-          "id": "pdf_38",
-          "titolo": "LE-TAVOLE-SMERALDINE-DI-THOTH-E.-Trismegisto",
           "peso": 1
         }
       ]
@@ -273,19 +279,19 @@
           "peso": 11
         },
         {
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 11
+        },
+        {
           "id": "pdf_30",
           "titolo": "Il Libro Della Legge (Aleister Crowley)",
           "peso": 9
         },
         {
-          "id": "pdf_25",
-          "titolo": "II Kojiki",
-          "peso": 6
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 5
+          "id": "pdf_51",
+          "titolo": "Manuale-Di-Magia-Nera",
+          "peso": 7
         }
       ]
     },
@@ -339,19 +345,19 @@
           "peso": 12
         },
         {
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 12
+        },
+        {
           "id": "pdf_30",
           "titolo": "Il Libro Della Legge (Aleister Crowley)",
           "peso": 9
         },
         {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 6
-        },
-        {
-          "id": "pdf_25",
-          "titolo": "II Kojiki",
-          "peso": 6
+          "id": "pdf_51",
+          "titolo": "Manuale-Di-Magia-Nera",
+          "peso": 8
         }
       ]
     },
@@ -396,6 +402,11 @@
           "peso": 13
         },
         {
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 13
+        },
+        {
           "id": "pdf_6",
           "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
           "peso": 12
@@ -406,19 +417,14 @@
           "peso": 11
         },
         {
+          "id": "pdf_51",
+          "titolo": "Manuale-Di-Magia-Nera",
+          "peso": 8
+        },
+        {
           "id": "pdf_30",
           "titolo": "Il Libro Della Legge (Aleister Crowley)",
           "peso": 7
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 6
-        },
-        {
-          "id": "pdf_25",
-          "titolo": "II Kojiki",
-          "peso": 6
         }
       ]
     },
@@ -538,6 +544,11 @@
           "id": "pdf_44",
           "titolo": "La-vita-segreta-delle-piante-_Peter-Tompkins_-Christopher-Bird",
           "peso": 2
+        },
+        {
+          "id": "pdf_47",
+          "titolo": "Liber333 - Libro delle Menzogne falsamente chiamate tali",
+          "peso": 2
         }
       ]
     },
@@ -597,14 +608,14 @@
           "peso": 4
         },
         {
+          "id": "pdf_47",
+          "titolo": "Liber333 - Libro delle Menzogne falsamente chiamate tali",
+          "peso": 4
+        },
+        {
           "id": "pdf_41",
           "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
           "peso": 3
-        },
-        {
-          "id": "pdf_29",
-          "titolo": "Il Cuore del Maestro (Aleister Crowley)",
-          "peso": 2
         }
       ]
     },
@@ -774,13 +785,13 @@
           "peso": 7
         },
         {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 4
+          "id": "pdf_46",
+          "titolo": "Le_sette_valli_e_le_quattro_valli",
+          "peso": 5
         },
         {
-          "id": "pdf_7",
-          "titolo": "An Agricultural Testament - Albert Howard",
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
           "peso": 4
         }
       ]
@@ -846,9 +857,9 @@
           "peso": 4
         },
         {
-          "id": "pdf_38",
-          "titolo": "LE-TAVOLE-SMERALDINE-DI-THOTH-E.-Trismegisto",
-          "peso": 3
+          "id": "pdf_46",
+          "titolo": "Le_sette_valli_e_le_quattro_valli",
+          "peso": 4
         }
       ]
     },
@@ -913,9 +924,9 @@
           "peso": 4
         },
         {
-          "id": "pdf_7",
-          "titolo": "An Agricultural Testament - Albert Howard",
-          "peso": 3
+          "id": "pdf_46",
+          "titolo": "Le_sette_valli_e_le_quattro_valli",
+          "peso": 4
         }
       ]
     },
@@ -980,9 +991,9 @@
           "peso": 6
         },
         {
-          "id": "pdf_19",
-          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
-          "peso": 5
+          "id": "pdf_46",
+          "titolo": "Le_sette_valli_e_le_quattro_valli",
+          "peso": 6
         }
       ]
     },
@@ -1017,6 +1028,11 @@
           "peso": 8
         },
         {
+          "id": "pdf_47",
+          "titolo": "Liber333 - Libro delle Menzogne falsamente chiamate tali",
+          "peso": 6
+        },
+        {
           "id": "pdf_18",
           "titolo": "Electroculture (Christofleau Justin)",
           "peso": 5
@@ -1044,11 +1060,6 @@
         {
           "id": "pdf_41",
           "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
-          "peso": 4
-        },
-        {
-          "id": "pdf_43",
-          "titolo": "La-chiave-di-Salomone",
           "peso": 4
         }
       ]
@@ -1140,6 +1151,16 @@
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 1
+        },
+        {
+          "id": "pdf_47",
+          "titolo": "Liber333 - Libro delle Menzogne falsamente chiamate tali",
+          "peso": 1
+        },
+        {
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 1
         }
       ]
     },
@@ -1204,9 +1225,9 @@
           "peso": 4
         },
         {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 3
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 4
         }
       ]
     },
@@ -1235,6 +1256,11 @@
       "mistral_analizzato": true,
       "id": "pdf_23",
       "connessioni": [
+        {
+          "id": "pdf_51",
+          "titolo": "Manuale-Di-Magia-Nera",
+          "peso": 4
+        },
         {
           "id": "pdf_0",
           "titolo": "108upa",
@@ -1268,11 +1294,6 @@
         {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
-          "peso": 3
-        },
-        {
-          "id": "pdf_41",
-          "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
           "peso": 3
         }
       ]
@@ -1394,14 +1415,14 @@
           "peso": 6
         },
         {
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 6
+        },
+        {
           "id": "pdf_3",
           "titolo": "Aleister-Crowley-Aforismi-Esoterici",
           "peso": 4
-        },
-        {
-          "id": "pdf_22",
-          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
-          "peso": 2
         }
       ]
     },
@@ -1446,6 +1467,11 @@
           "peso": 13
         },
         {
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 13
+        },
+        {
           "id": "pdf_6",
           "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
           "peso": 12
@@ -1456,19 +1482,14 @@
           "peso": 11
         },
         {
-          "id": "pdf_30",
-          "titolo": "Il Libro Della Legge (Aleister Crowley)",
-          "peso": 7
+          "id": "pdf_46",
+          "titolo": "Le_sette_valli_e_le_quattro_valli",
+          "peso": 8
         },
         {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 6
-        },
-        {
-          "id": "pdf_25",
-          "titolo": "II Kojiki",
-          "peso": 6
+          "id": "pdf_51",
+          "titolo": "Manuale-Di-Magia-Nera",
+          "peso": 8
         }
       ]
     },
@@ -1585,6 +1606,11 @@
           "peso": 8
         },
         {
+          "id": "pdf_47",
+          "titolo": "Liber333 - Libro delle Menzogne falsamente chiamate tali",
+          "peso": 8
+        },
+        {
           "id": "pdf_19",
           "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
           "peso": 4
@@ -1612,11 +1638,6 @@
         {
           "id": "pdf_17",
           "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
-          "peso": 2
-        },
-        {
-          "id": "pdf_18",
-          "titolo": "Electroculture (Christofleau Justin)",
           "peso": 2
         }
       ]
@@ -1676,14 +1697,14 @@
           "peso": 7
         },
         {
-          "id": "pdf_22",
-          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
-          "peso": 6
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 7
         },
         {
-          "id": "pdf_24",
-          "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
-          "peso": 6
+          "id": "pdf_51",
+          "titolo": "Manuale-Di-Magia-Nera",
+          "peso": 7
         }
       ]
     },
@@ -1748,9 +1769,9 @@
           "peso": 2
         },
         {
-          "id": "pdf_8",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 1
+          "id": "pdf_48",
+          "titolo": "Magick-_Fanucci-Editore_-_Italian-Edition_-_Aleister-Crowley",
+          "peso": 2
         }
       ]
     },
@@ -1795,6 +1816,11 @@
           "peso": 13
         },
         {
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 13
+        },
+        {
           "id": "pdf_6",
           "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
           "peso": 12
@@ -1805,19 +1831,14 @@
           "peso": 11
         },
         {
-          "id": "pdf_30",
-          "titolo": "Il Libro Della Legge (Aleister Crowley)",
-          "peso": 7
+          "id": "pdf_46",
+          "titolo": "Le_sette_valli_e_le_quattro_valli",
+          "peso": 8
         },
         {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 6
-        },
-        {
-          "id": "pdf_25",
-          "titolo": "II Kojiki",
-          "peso": 6
+          "id": "pdf_51",
+          "titolo": "Manuale-Di-Magia-Nera",
+          "peso": 8
         }
       ]
     },
@@ -1878,6 +1899,11 @@
         {
           "id": "pdf_44",
           "titolo": "La-vita-segreta-delle-piante-_Peter-Tompkins_-Christopher-Bird",
+          "peso": 1
+        },
+        {
+          "id": "pdf_47",
+          "titolo": "Liber333 - Libro delle Menzogne falsamente chiamate tali",
           "peso": 1
         }
       ]
@@ -1974,6 +2000,11 @@
       "id": "pdf_35",
       "connessioni": [
         {
+          "id": "pdf_48",
+          "titolo": "Magick-_Fanucci-Editore_-_Italian-Edition_-_Aleister-Crowley",
+          "peso": 4
+        },
+        {
           "id": "pdf_23",
           "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
           "peso": 2
@@ -2040,6 +2071,11 @@
           "peso": 3
         },
         {
+          "id": "pdf_47",
+          "titolo": "Liber333 - Libro delle Menzogne falsamente chiamate tali",
+          "peso": 3
+        },
+        {
           "id": "pdf_4",
           "titolo": "Aleister-Crowley-_Kaw-Djer",
           "peso": 2
@@ -2052,11 +2088,6 @@
         {
           "id": "pdf_31",
           "titolo": "Il Pimandro (Poimandres) (Ermete Trismegisto)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_33",
-          "titolo": "Il-Kybalion-_I-tre-iniziati",
           "peso": 1
         }
       ]
@@ -2154,6 +2185,11 @@
           "peso": 7
         },
         {
+          "id": "pdf_46",
+          "titolo": "Le_sette_valli_e_le_quattro_valli",
+          "peso": 7
+        },
+        {
           "id": "pdf_30",
           "titolo": "Il Libro Della Legge (Aleister Crowley)",
           "peso": 5
@@ -2182,142 +2218,6 @@
           "id": "pdf_14",
           "titolo": "DE L'ELECTRICITE' DES METEORES",
           "peso": 3
-        },
-        {
-          "id": "pdf_16",
-          "titolo": "ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - Unlock the Secret Power of Electricity to Maximize your Agriculture, have a Faster… (Errol Ramos) (z-library.sk, 1lib.sk, z-lib.sk)",
-          "peso": 3
-        }
-      ]
-    },
-    {
-      "sommario": "Manuale biblioteca BioSerra: Activating The Inner Eye (Harry B. Joseph)",
-      "tecniche_chiave": [],
-      "consiglio_coltivazione": "Consulta: Activating The Inner Eye (Harry B. Joseph)",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "alta-rilevanza"
-      ],
-      "estratto_chiave": "",
-      "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-      "data_analisi": "2026-06-27",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "id": "pdf_36",
-      "connessioni": [
-        {
-          "id": "pdf_37",
-          "titolo": "Corpo ermetico e Asclepio",
-          "peso": 1
-        },
-        {
-          "id": "pdf_38",
-          "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
-          "peso": 1
-        },
-        {
-          "id": "pdf_39",
-          "titolo": "La Forza del Cervello Quantico - Dawson Church",
-          "peso": 1
-        }
-      ]
-    },
-    {
-      "sommario": "Manuale biblioteca BioSerra: Corpo ermetico e Asclepio",
-      "tecniche_chiave": [
-        "Principi ermetici"
-      ],
-      "consiglio_coltivazione": "Applica Principi ermetici in serra",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "altro",
-        "alta-rilevanza"
-      ],
-      "estratto_chiave": "",
-      "titolo": "Corpo ermetico e Asclepio",
-      "data_analisi": "2026-06-27",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "id": "pdf_37",
-      "connessioni": [
-        {
-          "id": "pdf_36",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_38",
-          "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
-          "peso": 1
-        },
-        {
-          "id": "pdf_39",
-          "titolo": "La Forza del Cervello Quantico - Dawson Church",
-          "peso": 1
-        }
-      ]
-    },
-    {
-      "sommario": "Manuale biblioteca BioSerra: DE L'ELECTRICITE' DES VEGETAUX",
-      "tecniche_chiave": [],
-      "consiglio_coltivazione": "Consulta: DE L'ELECTRICITE' DES VEGETAUX",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "alta-rilevanza"
-      ],
-      "estratto_chiave": "",
-      "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
-      "data_analisi": "2026-06-27",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "id": "pdf_38",
-      "connessioni": [
-        {
-          "id": "pdf_36",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_37",
-          "titolo": "Corpo ermetico e Asclepio",
-          "peso": 1
-        },
-        {
-          "id": "pdf_39",
-          "titolo": "La Forza del Cervello Quantico - Dawson Church",
-          "peso": 1
-        }
-      ]
-    },
-    {
-      "sommario": "Manuale biblioteca BioSerra: La Forza del Cervello Quantico - Dawson Church",
-      "tecniche_chiave": [],
-      "consiglio_coltivazione": "Consulta: La Forza del Cervello Quantico - Dawson Church",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "alta-rilevanza"
-      ],
-      "estratto_chiave": "",
-      "titolo": "La Forza del Cervello Quantico - Dawson Church",
-      "data_analisi": "2026-06-27",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "id": "pdf_39",
-      "connessioni": [
-        {
-          "id": "pdf_36",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_37",
-          "titolo": "Corpo ermetico e Asclepio",
-          "peso": 1
-        },
-        {
-          "id": "pdf_38",
-          "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
-          "peso": 1
         }
       ]
     },
@@ -2468,6 +2368,11 @@
           "peso": 13
         },
         {
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 13
+        },
+        {
           "id": "pdf_6",
           "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
           "peso": 12
@@ -2478,19 +2383,14 @@
           "peso": 11
         },
         {
+          "id": "pdf_51",
+          "titolo": "Manuale-Di-Magia-Nera",
+          "peso": 8
+        },
+        {
           "id": "pdf_30",
           "titolo": "Il Libro Della Legge (Aleister Crowley)",
           "peso": 7
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 6
-        },
-        {
-          "id": "pdf_25",
-          "titolo": "II Kojiki",
-          "peso": 6
         }
       ]
     },
@@ -2524,6 +2424,11 @@
           "peso": 7
         },
         {
+          "id": "pdf_47",
+          "titolo": "Liber333 - Libro delle Menzogne falsamente chiamate tali",
+          "peso": 7
+        },
+        {
           "id": "pdf_10",
           "titolo": "Book of Wisdom (revival of wisdom, Harry B. Joseph)",
           "peso": 4
@@ -2551,11 +2456,6 @@
         {
           "id": "pdf_0",
           "titolo": "108upa",
-          "peso": 2
-        },
-        {
-          "id": "pdf_4",
-          "titolo": "Aleister-Crowley-_Kaw-Djer",
           "peso": 2
         }
       ]
@@ -2585,6 +2485,11 @@
       "mistral_analizzato": true,
       "id": "pdf_44",
       "connessioni": [
+        {
+          "id": "pdf_47",
+          "titolo": "Liber333 - Libro delle Menzogne falsamente chiamate tali",
+          "peso": 11
+        },
         {
           "id": "pdf_19",
           "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
@@ -2619,11 +2524,6 @@
           "id": "pdf_18",
           "titolo": "Electroculture (Christofleau Justin)",
           "peso": 5
-        },
-        {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 3
         }
       ]
     },
@@ -2678,6 +2578,11 @@
           "peso": 4
         },
         {
+          "id": "pdf_46",
+          "titolo": "Le_sette_valli_e_le_quattro_valli",
+          "peso": 4
+        },
+        {
           "id": "pdf_7",
           "titolo": "An Agricultural Testament - Albert Howard",
           "peso": 3
@@ -2686,11 +2591,471 @@
           "id": "pdf_14",
           "titolo": "DE L'ELECTRICITE' DES METEORES",
           "peso": 3
+        }
+      ]
+    },
+    {
+      "sommario": "Manuale biblioteca BioSerra: Activating The Inner Eye (Harry B. Joseph)",
+      "tecniche_chiave": [],
+      "consiglio_coltivazione": "Consulta: Activating The Inner Eye (Harry B. Joseph)",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "alta-rilevanza"
+      ],
+      "estratto_chiave": "",
+      "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": false,
+      "id": "pdf_42",
+      "connessioni": [
+        {
+          "id": "pdf_43",
+          "titolo": "Corpo ermetico e Asclepio",
+          "peso": 1
         },
         {
-          "id": "pdf_22",
-          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "id": "pdf_44",
+          "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
+          "peso": 1
+        },
+        {
+          "id": "pdf_45",
+          "titolo": "La Forza del Cervello Quantico - Dawson Church",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Manuale biblioteca BioSerra: Corpo ermetico e Asclepio",
+      "tecniche_chiave": [
+        "Principi ermetici"
+      ],
+      "consiglio_coltivazione": "Applica Principi ermetici in serra",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "alta-rilevanza",
+        "altro"
+      ],
+      "estratto_chiave": "",
+      "titolo": "Corpo ermetico e Asclepio",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": false,
+      "id": "pdf_43",
+      "connessioni": [
+        {
+          "id": "pdf_42",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 1
+        },
+        {
+          "id": "pdf_44",
+          "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
+          "peso": 1
+        },
+        {
+          "id": "pdf_45",
+          "titolo": "La Forza del Cervello Quantico - Dawson Church",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Manuale biblioteca BioSerra: DE L'ELECTRICITE' DES VEGETAUX",
+      "tecniche_chiave": [],
+      "consiglio_coltivazione": "Consulta: DE L'ELECTRICITE' DES VEGETAUX",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "alta-rilevanza"
+      ],
+      "estratto_chiave": "",
+      "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": false,
+      "id": "pdf_44",
+      "connessioni": [
+        {
+          "id": "pdf_42",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 1
+        },
+        {
+          "id": "pdf_43",
+          "titolo": "Corpo ermetico e Asclepio",
+          "peso": 1
+        },
+        {
+          "id": "pdf_45",
+          "titolo": "La Forza del Cervello Quantico - Dawson Church",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Manuale biblioteca BioSerra: La Forza del Cervello Quantico - Dawson Church",
+      "tecniche_chiave": [],
+      "consiglio_coltivazione": "Consulta: La Forza del Cervello Quantico - Dawson Church",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "alta-rilevanza"
+      ],
+      "estratto_chiave": "",
+      "titolo": "La Forza del Cervello Quantico - Dawson Church",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": false,
+      "id": "pdf_45",
+      "connessioni": [
+        {
+          "id": "pdf_42",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 1
+        },
+        {
+          "id": "pdf_43",
+          "titolo": "Corpo ermetico e Asclepio",
+          "peso": 1
+        },
+        {
+          "id": "pdf_44",
+          "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Il documento presenta un testo spirituale di Bahá’u’lláh che descrive un percorso interiore attraverso sette valli simboliche e quattro valli, rappresentanti tappe di crescita spirituale e conoscenza. Le due opere sono indipendenti e rivolte a destinatari diversi.",
+      "tecniche_chiave": [
+        "Lakhovsky",
+        "Fe-Cu",
+        "Acqua magnetizzata",
+        "Spirale rame",
+        "Antenna terra"
+      ],
+      "consiglio_coltivazione": "Integrare l'uso di acqua magnetizzata per migliorare l'assorbimento dei nutrienti e la resilienza delle piante, abbinandola a spirali di rame per la protezione elettromagnetica.",
+      "consiglio_elettrocultura": "Applicare la tecnica Lakhovsky con frequenze specifiche (es. 7,83 Hz) per stimolare la crescita e la resistenza delle colture, monitorando l'impedenza del suolo.",
+      "tag": [
+        "biodinamica",
+        "elettrocultura",
+        "Living Soil",
+        "serra outdoor",
+        "frequenze naturali"
+      ],
+      "estratto_chiave": "Le sette valli rappresentano un cammino di purificazione interiore, mentre le quattro valli delineano tappe di armonizzazione con il creato, applicabili anche a un approccio olistico in agricoltura rigenerativa.",
+      "titolo": "Le_sette_valli_e_le_quattro_valli",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "id": "pdf_46",
+      "connessioni": [
+        {
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 12
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
+          "peso": 8
+        },
+        {
+          "id": "pdf_32",
+          "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
+          "peso": 8
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 7
+        },
+        {
+          "id": "pdf_38",
+          "titolo": "LE-TAVOLE-SMERALDINE-DI-THOTH-E.-Trismegisto",
+          "peso": 7
+        },
+        {
+          "id": "pdf_42",
+          "titolo": "La-Strega-Verde-Una-guida-pratica-per-scoprire-la-magia-delle-piante_-delle-erbe_-dei-cristalli-e-al",
+          "peso": 7
+        },
+        {
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 7
+        },
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
+          "peso": 6
+        }
+      ]
+    },
+    {
+      "sommario": "Il documento sembra essere una critica radicale alle tecniche di coltivazione convenzionali e moderne, promuovendo invece metodi alternativi basati su principi esoterici e pseudoscientifici. Analizza come tali approcci possano essere applicati in un contesto di serra biologica e biodinamica.",
+      "tecniche_chiave": [
+        "Lakhovsky (oscillatori a onde multiple)",
+        "Fe-Cu (ferro-rame come catalizzatori biologici)",
+        "Acqua magnetizzata (strutturazione molecolare)",
+        "Spirale in rame (campi elettromagnetici)",
+        "Antenna di terra (connessione geobiologica)"
+      ],
+      "consiglio_coltivazione": "Integrare le tecniche di elettrocultura (es. spirale rame + antenna terra) con un substrato Living Soil arricchito di micorrize e batteri benefici per potenziare la resilienza delle piante.",
+      "consiglio_elettrocultura": "Utilizzare l’antenna di terra per stabilizzare il potenziale elettrico del suolo e abbinare l’acqua magnetizzata per migliorare l’assorbimento dei nutrienti, monitorando con un multimetro la conducibilità del terreno.",
+      "tag": [
+        "pseudoscienza",
+        "agricoltura alternativa",
+        "geobiologia",
+        "elettromagnetismo"
+      ],
+      "estratto_chiave": "Le tecniche di Lakhovsky e Fe-Cu sfruttano principi di risonanza e sinergia minerale per attivare la vitalità delle piante, ma richiedono un approccio olistico e sperimentale per validarne l’efficacia in serra.",
+      "titolo": "Liber333 - Libro delle Menzogne falsamente chiamate tali",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "id": "pdf_47",
+      "connessioni": [
+        {
+          "id": "pdf_44",
+          "titolo": "La-vita-segreta-delle-piante-_Peter-Tompkins_-Christopher-Bird",
+          "peso": 11
+        },
+        {
+          "id": "pdf_29",
+          "titolo": "Il Cuore del Maestro (Aleister Crowley)",
+          "peso": 8
+        },
+        {
+          "id": "pdf_43",
+          "titolo": "La-chiave-di-Salomone",
+          "peso": 7
+        },
+        {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 6
+        },
+        {
+          "id": "pdf_10",
+          "titolo": "Book of Wisdom (revival of wisdom, Harry B. Joseph)",
+          "peso": 4
+        },
+        {
+          "id": "pdf_36",
+          "titolo": "LA FIGLIA DELLA LUNA (Aleister Crowley)",
           "peso": 3
+        },
+        {
+          "id": "pdf_41",
+          "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
+          "peso": 3
+        },
+        {
+          "id": "pdf_4",
+          "titolo": "Aleister-Crowley-_Kaw-Djer",
+          "peso": 2
+        }
+      ]
+    },
+    {
+      "sommario": "Il documento tratta di pratiche esoteriche e tecniche energetiche avanzate ispirate ad Aleister Crowley, con focus su simbologie magiche e applicazioni pratiche per l'alterazione della realtà. Include riferimenti a principi alchemici e rituali per la manipolazione delle forze naturali.",
+      "tecniche_chiave": [
+        "Lakhovsky (applicazione energetica)",
+        "Fe-Cu (lega metallica per armonizzazione)",
+        "acqua magnetizzata (polarizzazione)",
+        "spirale rame (campo elettromagnetico)",
+        "antenna terra (connessione geobiologica)"
+      ],
+      "consiglio_coltivazione": "Integrare la spirale rame nel substrato della serra per creare un campo di armonizzazione elettromagnetica, posizionandola a 30 cm di profondità in direzione nord-sud per ottimizzare la crescita radicale.",
+      "consiglio_elettrocultura": "Applicare impulsi a bassa frequenza (1-10 Hz) tramite antenna terra durante la fase lunare crescente per stimolare la fotosintesi e la resistenza delle piante, evitando sovraccarichi con resistenze da 100Ω.",
+      "tag": [
+        "alchimia energetica",
+        "geobiologia applicata",
+        "simbologia magica"
+      ],
+      "estratto_chiave": "La vera magia è l'arte di dirigere le forze invisibili della natura attraverso la volontà e la conoscenza dei loro linguaggi occulti.",
+      "titolo": "Magick-_Fanucci-Editore_-_Italian-Edition_-_Aleister-Crowley",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "id": "pdf_48",
+      "connessioni": [
+        {
+          "id": "pdf_35",
+          "titolo": "LA CABALA MISTICA",
+          "peso": 4
+        },
+        {
+          "id": "pdf_31",
+          "titolo": "Il Pimandro (Poimandres) (Ermete Trismegisto)",
+          "peso": 2
+        },
+        {
+          "id": "pdf_29",
+          "titolo": "Il Cuore del Maestro (Aleister Crowley)",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Il documento tratta principi di agricoltura organica con focus su fertilizzanti naturali e tecniche di miglioramento del suolo tramite l'uso di farine di rocce. Approfondisce metodi per incrementare la fertilità e la salute delle piante in modo sostenibile.",
+      "tecniche_chiave": [
+        "Utilizzo di farine di rocce come apporto minerale",
+        "Tecniche di compostaggio e fertilizzazione organica",
+        "Gestione della struttura del suolo e biodiversità microbica"
+      ],
+      "consiglio_coltivazione": "Integrare farine di rocce (es. basalto, zeolite) nel substrato della serra BioSerra Caserta per migliorare la disponibilità di minerali e la capacità di scambio cationico, abbinando a un compost maturo per stimolare la vita microbica.",
+      "consiglio_elettrocultura": "Applicare la spirale in rame con antenna di terra per armonizzare i campi elettromagnetici del suolo, abbinando l'acqua magnetizzata per potenziare l'assorbimento radicale e ridurre lo stress idrico nelle piante.",
+      "tag": [
+        "agricoltura organica",
+        "fertilizzazione minerale",
+        "salute del suolo"
+      ],
+      "estratto_chiave": "Le farine di rocce rappresentano un'alternativa sostenibile ai fertilizzanti chimici, arricchendo il suolo di minerali essenziali e migliorando la resilienza delle colture in sistemi biologici.",
+      "titolo": "Manual práctico El A, B, C de la agricultura orgánica y harina de rocas (Jairo Restrepo Rivera)",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "id": "pdf_49",
+      "connessioni": [
+        {
+          "id": "pdf_2",
+          "titolo": "Agricultura Orgánica Harina de Rocas y la Salud del Suelo al alcance de todos (Jairo Restrepo Rivera,Sebastião Pinheiro)",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Il manuale tratta principi di elettrotecnica e automazione applicabili a sistemi di coltivazione avanzati, con focus su controllo e ottimizzazione di processi elettrici in ambito agricolo. Include nozioni teoriche e pratiche per l'implementazione di tecnologie innovative in serra.",
+      "tecniche_chiave": [
+        "Lakhovsky",
+        "Fe-Cu",
+        "acqua magnetizzata",
+        "spirale rame",
+        "antenna terra"
+      ],
+      "consiglio_coltivazione": "Integrare l'acqua magnetizzata per migliorare l'assorbimento dei nutrienti e la resistenza delle piante, abbinandola a un monitoraggio costante dell'umidità del suolo con sensori IoT per ottimizzare l'irrigazione.",
+      "consiglio_elettrocultura": "Utilizzare la spirale di rame come antenna per armonizzare i campi elettromagnetici naturali, posizionandola a 1-2 metri di altezza sopra le colture e collegandola a un sistema di terra dedicato per ridurre lo stress ossidativo.",
+      "tag": [
+        "elettrocultura",
+        "automazione serra",
+        "Living Soil",
+        "biodinamica",
+        "tecniche attive"
+      ],
+      "estratto_chiave": "L'elettrocultura applicata in serra richiede un equilibrio tra campi elettromagnetici naturali e artificiali, con particolare attenzione alla qualità dell'acqua e alla connessione a terra per massimizzare la vitalità del suolo e delle piante.",
+      "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "id": "pdf_50",
+      "connessioni": [
+        {
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 13
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
+          "peso": 13
+        },
+        {
+          "id": "pdf_32",
+          "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
+          "peso": 13
+        },
+        {
+          "id": "pdf_42",
+          "titolo": "La-Strega-Verde-Una-guida-pratica-per-scoprire-la-magia-delle-piante_-delle-erbe_-dei-cristalli-e-al",
+          "peso": 13
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 12
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+          "peso": 11
+        },
+        {
+          "id": "pdf_51",
+          "titolo": "Manuale-Di-Magia-Nera",
+          "peso": 8
+        },
+        {
+          "id": "pdf_30",
+          "titolo": "Il Libro Della Legge (Aleister Crowley)",
+          "peso": 7
+        }
+      ]
+    },
+    {
+      "sommario": "Il documento sembra un manuale pseudoscientifico che mescola concetti di elettrocultura, biodinamica e pratiche esoteriche, presentando tecniche attive come Lakhovsky e spirali di rame come soluzioni magiche per la coltivazione. L'approccio risulta più vicino alla magia nera che all'agronomia razionale.",
+      "tecniche_chiave": [
+        "Lakhovsky (teoria delle onde di vita)",
+        "Fe-Cu (ferro-rame come elementi attivi)",
+        "acqua magnetizzata",
+        "spirale rame",
+        "antenna terra"
+      ],
+      "consiglio_coltivazione": "Verificare la compatibilità delle tecniche proposte con le normative bio italiane (Reg. UE 2018/848) e evitare l'uso di materiali non approvati in agricoltura biologica.",
+      "consiglio_elettrocultura": "Testare le tecniche su piccola scala con strumenti di misurazione (pH, conducibilità, umidità) per valutare l'impatto reale prima di applicarle su larga scala.",
+      "tag": [
+        "pseudoscienza",
+        "elettrocultura",
+        "biodinamica",
+        "agricoltura alternativa"
+      ],
+      "estratto_chiave": "Le tecniche proposte, come l'uso di spirali di rame e acqua magnetizzata, promettono risultati miracolosi ma mancano di validazione scientifica e rischiano di compromettere la salute del suolo e delle piante.",
+      "titolo": "Manuale-Di-Magia-Nera",
+      "data_analisi": "2026-06-27",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "id": "pdf_51",
+      "connessioni": [
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 8
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 8
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
+          "peso": 8
+        },
+        {
+          "id": "pdf_32",
+          "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
+          "peso": 8
+        },
+        {
+          "id": "pdf_42",
+          "titolo": "La-Strega-Verde-Una-guida-pratica-per-scoprire-la-magia-delle-piante_-delle-erbe_-dei-cristalli-e-al",
+          "peso": 8
+        },
+        {
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 8
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+          "peso": 7
+        },
+        {
+          "id": "pdf_30",
+          "titolo": "Il Libro Della Legge (Aleister Crowley)",
+          "peso": 7
         }
       ]
     }
