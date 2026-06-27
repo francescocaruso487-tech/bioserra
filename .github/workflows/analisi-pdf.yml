@@ -19,13 +19,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Test Groq API
-        env:
-          GROQ_KEY: ${{ secrets.GROQ_KEY }}
-        run: python3 .github/scripts/test_groq.py
-
-      - name: Analisi PDF (pymupdf + Groq)
+      - name: Analisi PDF (OpenRouter + fallback locale)
         env:
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
-          GROQ_KEY: ${{ secrets.GROQ_KEY }}
+          OPENROUTER_KEY: ${{ secrets.OPENROUTER_KEY }}
         run: python3 .github/scripts/analisi_pdf.py
