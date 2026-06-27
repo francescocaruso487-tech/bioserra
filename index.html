@@ -1220,6 +1220,93 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 
+
+<div class="modal-overlay" id="modal-diario-pianta" onclick="closeDiarioModal(event)">
+  <div class="modal-sheet" style="max-height:88vh;">
+    <div class="modal-handle"></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+      <div id="diario-plant-name" style="font-size:16px;font-weight:700;color:var(--green3);"></div>
+    </div>
+
+    <!-- Tab selector -->
+    <div style="display:flex;gap:6px;margin-bottom:14px;">
+      <button id="diario-tab-aggiungi" onclick="diarioSwitchTab('aggiungi')"
+        style="flex:1;padding:8px;border-radius:8px;border:1px solid var(--green3);background:var(--green3);color:#fff;font-size:12px;font-weight:700;cursor:pointer;">
+        ➕ Aggiungi
+      </button>
+      <button id="diario-tab-storico" onclick="diarioSwitchTab('storico')"
+        style="flex:1;padding:8px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);font-size:12px;font-weight:700;cursor:pointer;">
+        📋 Storico
+      </button>
+    </div>
+
+    <!-- Tab Aggiungi -->
+    <div id="diario-panel-aggiungi">
+      <!-- Tipo intervento -->
+      <div class="form-field" style="margin-bottom:10px;">
+        <label class="form-label">🔧 Tipo intervento</label>
+        <select class="form-select" id="diario-tipo">
+          <option value="irrigazione">💧 Irrigazione</option>
+          <option value="acqua_magnetizzata">🧲 Acqua Magnetizzata</option>
+          <option value="spirale_rame">🌀 Spirale in Rame</option>
+          <option value="fe_cu">⚡ Fe-Cu (Ferro-Rame)</option>
+          <option value="lakhovsky">〰️ Lakhovsky</option>
+          <option value="trattamento_fogliare">🌿 Trattamento Fogliare</option>
+          <option value="nutrizione">🌱 Nutrizione</option>
+          <option value="esperimento">🔬 Esperimento</option>
+          <option value="osservazione">👁️ Osservazione</option>
+          <option value="altro">🔹 Altro</option>
+        </select>
+      </div>
+
+      <!-- Piante coinvolte -->
+      <div class="form-field" style="margin-bottom:10px;">
+        <label class="form-label">🌿 Piante coinvolte</label>
+        <div id="diario-piante-sel"
+          style="display:flex;flex-wrap:wrap;gap:6px;padding:6px 0;"></div>
+        <label style="display:flex;align-items:center;gap:6px;margin-top:4px;font-size:12px;color:var(--text3);cursor:pointer;">
+          <input type="checkbox" id="diario-tutte" onchange="diarioToggleTutte(this.checked)"
+            style="width:16px;height:16px;accent-color:var(--green3);">
+          Seleziona tutte
+        </label>
+      </div>
+
+      <!-- Temperatura auto -->
+      <div class="form-row" style="margin-bottom:10px;">
+        <div class="form-field">
+          <label class="form-label">🌡️ Temp. attuale (°C)</label>
+          <div id="diario-temp-display"
+            style="background:var(--bg3);border-radius:8px;padding:9px 12px;font-size:13px;font-weight:700;color:var(--green3);">
+            —
+          </div>
+        </div>
+        <div class="form-field">
+          <label class="form-label">📅 Data</label>
+          <input class="form-input" id="diario-data" type="date" />
+        </div>
+      </div>
+
+      <!-- Note -->
+      <div class="form-field" style="margin-bottom:12px;">
+        <label class="form-label">📝 Note (max 300 caratteri)</label>
+        <textarea class="form-input" id="diario-note" rows="3" maxlength="300"
+          placeholder="es. Irrigazione 2L per pianta, substrato asciutto…"
+          style="resize:vertical;font-family:inherit;"></textarea>
+      </div>
+
+      <input type="hidden" id="diario-plant-id" />
+      <button class="btn-primary" onclick="diarioSalvaIntervento()">💾 Salva intervento</button>
+      <button class="btn-secondary" onclick="closeDiarioModal()">Annulla</button>
+    </div>
+
+    <!-- Tab Storico -->
+    <div id="diario-panel-storico" style="display:none;">
+      <div id="diario-storico-list"
+        style="max-height:55vh;overflow-y:auto;"></div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
 
