@@ -82,46 +82,82 @@ def estrai_testo_pdf(pdf_bytes):
 def groq_analizza(titolo, testo):
     if not GROQ_KEY:
         return None
-    contenuto = testo[:3000] if len(testo) > 100 else f'(testo non estraibile, analizza dal titolo)'
-    prompt = (
-        f'Esperto Living Soil, biodinamica ed elettrocultura per serra outdoor Caserta Italia.\n'
-        f'Analizza "{titolo}".\n'
-        f'Tecniche attive: Lakhovsky, Fe-Cu, acqua magnetizzata, spirale rame, antenna terra.\n\n'
-        f'Testo:\n{contenuto}\n\n'
-        f'JSON SOLO, nessun testo fuori:\n'
-        f'{{"sommario":"2-3 frasi contenuto reale","tecniche_chiave":["t1","t2","t3"],'
-        f'"consiglio_coltivazione":"azione concreta","consiglio_elettrocultura":"connessione o stringa vuota",'
-        f'"tag":["t1","t2","t3"],"estratto_chiave":"max 150 char"}}'
+
+    # Pulisci titolo da caratteri che rompono il JSON
+    titolo_safe = titolo.replace('"', "'").replace('\\', '')[:80]
+    contenuto = testo[:2500] if len(testo) > 100 else '(PDF scansionato, analizza dal titolo)'
+
+    # Usa system+user separati per evitare problemi di parsing
+    system_msg = (
+        'Sei un esperto di Living Soil, biodinamica ed elettrocultura per serra outdoor italiana. '
+        'Rispondi SEMPRE e SOLO con un oggetto JSON valido. '
+        'Nessun testo prima o dopo il JSON. Nessun markdown. Solo il JSON grezzo.'
     )
+
+    user_msg = (
+        'Analizza questo documento per la serra BioSerra Caserta. '
+        'Tecniche attive: Lakhovsky, Fe-Cu, acqua magnetizzata, spirale rame, antenna terra.\n\n'
+        'Titolo: ' + titolo_safe + '\n\n'
+        'Contenuto estratto:\n' + contenuto + '\n\n'
+        'Rispondi con questo JSON (compila i valori reali):\n'
+        '{"sommario":"descrizione del contenuto in 2 frasi","tecniche_chiave":["tecnica1","tecnica2"],'
+        '"consiglio_coltivazione":"azione pratica concreta","consiglio_elettrocultura":"connessione o vuoto",'
+        '"tag":["tag1","tag2"],"estratto_chiave":"frase chiave max 150 char"}'
+    )
+
     body = json.dumps({
         'model': 'llama-3.3-70b-versatile',
-        'max_tokens': 700,
-        'temperature': 0.1,
-        'messages': [{'role': 'user', 'content': prompt}]
+        'max_tokens': 600,
+        'temperature': 0.0,
+        'messages': [
+            {'role': 'system', 'content': system_msg},
+            {'role': 'user', 'content': user_msg}
+        ]
     }).encode()
-    req = urllib.request.Request(
-        'https://api.groq.com/openai/v1/chat/completions',
-        data=body,
-        headers={'Authorization': f'Bearer {GROQ_KEY}', 'Content-Type': 'application/json'},
-        method='POST'
-    )
-    for tentativo in range(2):
+
+    headers_groq = {
+        'Authorization': 'Bearer ' + GROQ_KEY,
+        'Content-Type': 'application/json'
+    }
+
+    for tentativo in range(3):
         try:
-            with urllib.request.urlopen(req, timeout=30) as r:
+            req_g = urllib.request.Request(
+                'https://api.groq.com/openai/v1/chat/completions',
+                data=body, headers=headers_groq, method='POST'
+            )
+            with urllib.request.urlopen(req_g, timeout=30) as r:
                 resp = json.load(r)
-            content = resp['choices'][0]['message']['content']
-            s, e = content.find('{'), content.rfind('}')
-            if s >= 0 and e > s:
-                result = json.loads(content[s:e+1])
-                print(f'  Groq OK')
-                return result
+            raw = resp['choices'][0]['message']['content'].strip()
+            print(f'  Groq risposta ({len(raw)}c): {raw[:80]}')
+
+            # Parse robusto: cerca primo { e ultimo }
+            s = raw.find('{')
+            e = raw.rfind('}')
+            if s < 0 or e <= s:
+                print(f'  WARN: nessun JSON trovato')
+                continue
+
+            candidate = raw[s:e+1]
+            result = json.loads(candidate)
+            print(f'  Groq OK: sommario={len(result.get("sommario",""))}c tec={len(result.get("tecniche_chiave",[]))}')
+            return result
+
+        except json.JSONDecodeError as ex:
+            print(f'  JSON decode err (tentativo {tentativo+1}): {ex} | raw={raw[:100] if "raw" in dir() else "N/A"}')
+            time.sleep(3)
         except urllib.error.HTTPError as ex:
             err = ex.read().decode()
-            print(f'  Groq HTTP {ex.code}: {err[:150]}')
+            print(f'  Groq HTTP {ex.code}: {err[:200]}')
             if ex.code == 429:
-                time.sleep(20)
+                print('  Rate limit — aspetto 30s')
+                time.sleep(30)
+            else:
+                break
         except Exception as ex:
-            print(f'  Groq: {ex}')
+            print(f'  Groq errore: {ex}')
+            time.sleep(3)
+
     return None
 
 def analizza_locale(titolo, testo):
