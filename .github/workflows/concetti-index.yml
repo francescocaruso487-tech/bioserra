@@ -19,8 +19,9 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Genera concetti index con Groq
+      - name: Genera concetti index con Mistral
         env:
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
-          GROQ_KEY: ${{ secrets.GROQ_KEY }}
+          MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
         run: python3 .github/scripts/concetti_index.py
+
