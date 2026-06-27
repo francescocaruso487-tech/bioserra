@@ -262,8 +262,9 @@ def ricalcola_connessioni(analisi):
 
 def main():
     oggi = datetime.date.today().isoformat()
-    print('=== BioSerra Analisi PDF v9 (fitz+pdfplumber+pypdf, tutti alta) ===')
-    print(f'Groq: {"disponibile" if GROQ_KEY else "non configurato"}')
+    print('=== BioSerra Analisi PDF v9 ===')
+    print(f'GROQ_KEY: {"PRESENTE " + GROQ_KEY[:10] + "..." if GROQ_KEY else "ASSENTE"}')
+    print(f'GITHUB_TOKEN: {"PRESENTE" if GITHUB_TOKEN else "ASSENTE"}')
 
     # Installa librerie PDF
     print('Installo librerie PDF...')
