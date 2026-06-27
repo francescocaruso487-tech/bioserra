@@ -129,6 +129,7 @@ def groq_analizza(titolo, testo):
             with urllib.request.urlopen(req_g, timeout=30) as r:
                 resp = json.load(r)
             raw = resp['choices'][0]['message']['content'].strip()
+            debug_log.append({'titolo': titolo_safe, 'raw': raw[:300], 'tentativo': tentativo})
             print(f'  Groq risposta ({len(raw)}c): {repr(raw[:200])}')
 
             # Parse robusto: cerca primo { e ultimo }
@@ -323,6 +324,8 @@ def main():
     batch = da_analizzare[:12]
     nuove_analisi = []
 
+    debug_log = []  # raccoglie info per debug su GitHub
+
     for i, pdf_file in enumerate(batch):
         titolo = pdf_file['name'].replace('.pdf','').strip()
         print(f'\n[{i+1}/{len(batch)}] {titolo[:65]}')
@@ -395,6 +398,27 @@ def main():
     content_b64 = base64.b64encode(
         json.dumps(knowledge_new, indent=2, ensure_ascii=False).encode()
     ).decode()
+
+    # Salva debug log su GitHub per diagnosi
+    if debug_log:
+        try:
+            debug_data = json.dumps({'run': oggi, 'entries': debug_log}, ensure_ascii=False, indent=2)
+            debug_b64 = base64.b64encode(debug_data.encode()).decode()
+            try:
+                debug_sha = gh_get('data/groq_debug.json')['sha']
+            except:
+                debug_sha = None
+            debug_body = {'message': f'debug groq {oggi}', 'content': debug_b64}
+            if debug_sha:
+                debug_body['sha'] = debug_sha
+            req_d = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/data/groq_debug.json',
+                data=json.dumps(debug_body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
+            with urllib.request.urlopen(req_d) as r:
+                print(f'  Debug log salvato su GitHub')
+        except Exception as dex:
+            print(f'  Debug save: {dex}')
 
     sha_fresco = gh_get('data/pdf_knowledge.json')['sha']
     gh_put('data/pdf_knowledge.json', content_b64, sha_fresco,
