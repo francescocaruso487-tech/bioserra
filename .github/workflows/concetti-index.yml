@@ -2,7 +2,7 @@ name: BioSerra - Concetti Index
 
 on:
   schedule:
-    - cron: '0 3 * * *'  # ogni notte 03:00 UTC (05:00 ora italiana)
+    - cron: '0 3 * * *'
   workflow_dispatch:
 
 jobs:
@@ -19,9 +19,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Genera concetti index con Mistral
+      - name: Concetti Index con Mistral
         env:
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
         run: python3 .github/scripts/concetti_index.py
-
