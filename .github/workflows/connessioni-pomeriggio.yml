@@ -1,0 +1,26 @@
+name: connessioni-pomeriggio
+
+on:
+  schedule:
+    - cron: "0 13 * * *"   # Ogni giorno alle 13:00 UTC (15:00 ora italiana)
+  workflow_dispatch:
+
+jobs:
+  connessioni:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run connessioni pomeriggio
+        env:
+          GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+          MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
+        run: python .github/scripts/connessioni_update.py pomeriggio
+
