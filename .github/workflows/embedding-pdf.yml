@@ -1,8 +1,8 @@
-name: BioSerra - Embedding PDF Mistral
+name: BioSerra - Embedding PDF
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # ogni notte 02:00 UTC (04:00 ora italiana)
+    - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Genera embeddings Mistral
+      - name: Embedding PDF con Mistral
         env:
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
