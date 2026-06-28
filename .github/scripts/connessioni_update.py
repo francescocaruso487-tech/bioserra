@@ -361,11 +361,14 @@ def main():
             pdf_b, dati_b.get('concetti', [])
         )
         print(f'  Connessioni trovate: {len(connessioni)}')
+        for conn in connessioni:
+            print(f'    peso={conn.get("peso",0):.2f} tipo={conn.get("tipo_conn",conn.get("tipo","?"))} ca={conn.get("concetto_a","")[:30]}')
 
         for conn in connessioni:
             peso = float(conn.get('peso', 0.5))
-            if peso < 0.3: continue
+            if peso < 0.1: continue
             chiave = f'{id_a}|{id_b}'
+            tipo_conn = conn.get('tipo_conn', conn.get('tipo', 'sinergia'))
             edges_esistenti[chiave] = {
                 'source': id_a,
                 'target': id_b,
@@ -374,7 +377,7 @@ def main():
                 'concetto_a': conn.get('concetto_a',''),
                 'concetto_b': conn.get('concetto_b',''),
                 'descrizione': conn.get('descrizione',''),
-                'tipo_conn': conn.get('tipo','sinergia'),
+                'tipo_conn': tipo_conn,
                 'data': oggi
             }
             nuove_connessioni.append(chiave)
