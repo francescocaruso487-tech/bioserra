@@ -1,13 +1,18 @@
-import os, json, base64, urllib.request, urllib.error, time, datetime, sys, io
+"""
+analisi_pdf.py v13 — Legge testi da data/testi/ (pre-estratti con OCR)
+Passa testo completo a Mistral in chunk, produce analisi ricca
+"""
+import os, json, base64, urllib.request, urllib.error, time, datetime, io, re
 
 GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
-MISTRAL_KEY = os.environ.get('MISTRAL_KEY', '')
+MISTRAL_KEY  = os.environ.get('MISTRAL_KEY', '')
 REPO = 'francescocaruso487-tech/bioserra'
 HEADERS_GH = {
     'Authorization': f'Bearer {GITHUB_TOKEN}',
     'Accept': 'application/vnd.github+json',
     'X-GitHub-Api-Version': '2022-11-28'
 }
+RAW_BASE = f'https://raw.githubusercontent.com/{REPO}/main/'
 
 def gh_get(path):
     req = urllib.request.Request(
@@ -23,158 +28,162 @@ def gh_put(path, content_b64, sha, message):
     with urllib.request.urlopen(req) as r:
         return json.load(r)
 
-def estrai_testo(pdf_bytes):
-    """Estrai testo da PDF. Prova fitz/pdfplumber/pypdf, poi OCR con tesseract."""
-    testo = ''
+def gh_get_sha(path):
+    try: return gh_get(path)['sha']
+    except: return None
 
-    # Tentativo 1: fitz (pymupdf)
+def leggi_testo_estratto(safe_id):
+    """Legge file testo pre-estratto da data/testi/."""
+    url = RAW_BASE + f'data/testi/{safe_id}.txt'
     try:
-        import fitz
-        doc = fitz.open(stream=pdf_bytes, filetype='pdf')
-        pagine = [page.get_text().strip() for i, page in enumerate(doc) if i < 10]
-        doc.close()
-        testo = '\n'.join(p for p in pagine if p)
-        if len(testo.strip()) > 100:
-            print(f'  fitz: {len(testo)} chars')
-            return testo[:8000]
-    except Exception as ex:
-        print(f'  fitz: {ex}')
+        req = urllib.request.Request(url, headers={
+            'Authorization': f'token {GITHUB_TOKEN}',
+            'Cache-Control': 'no-cache'
+        })
+        with urllib.request.urlopen(req, timeout=30) as r:
+            content = r.read().decode('utf-8', errors='replace')
+        # Rimuovi header
+        if content.startswith('==='):
+            idx = content.find('\n\n')
+            if idx > 0:
+                content = content[idx+2:]
+        return content.strip()
+    except:
+        return ''
 
-    # Tentativo 2: pdfplumber
-    try:
-        import pdfplumber
-        with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
-            pagine = [page.extract_text() or '' for i, page in enumerate(pdf.pages) if i < 10]
-        testo = '\n'.join(p.strip() for p in pagine if p.strip())
-        if len(testo.strip()) > 100:
-            print(f'  pdfplumber: {len(testo)} chars')
-            return testo[:8000]
-    except Exception as ex:
-        print(f'  pdfplumber: {ex}')
+def titolo_safe(nome_file):
+    base = nome_file.replace('.pdf', '').strip()
+    safe = re.sub(r'[^\w\-]', '_', base)
+    safe = re.sub(r'_+', '_', safe).strip('_')
+    return safe[:80]
 
-    # Tentativo 3: pypdf
-    try:
-        import pypdf
-        reader = pypdf.PdfReader(io.BytesIO(pdf_bytes))
-        pagine = [page.extract_text() or '' for i, page in enumerate(reader.pages) if i < 10]
-        testo = '\n'.join(p.strip() for p in pagine if p.strip())
-        if len(testo.strip()) > 100:
-            print(f'  pypdf: {len(testo)} chars')
-            return testo[:8000]
-    except Exception as ex:
-        print(f'  pypdf: {ex}')
-
-    # Tentativo 4: OCR con Tesseract (PDF scansionati) - TUTTE LE PAGINE
-    print('  Testo digitale vuoto - provo OCR su tutte le pagine...')
-    try:
-        import pytesseract
-        from pdf2image import convert_from_bytes
-
-        # Rasterizza TUTTE le pagine a 200 DPI
-        # Thread sicuro: una pagina alla volta per controllo memoria
-        images = convert_from_bytes(pdf_bytes, dpi=200)
-        n_pagine = len(images)
-        print(f'  OCR: {n_pagine} pagine da processare')
-        testo_ocr = ''
-        for i, img in enumerate(images):
-            try:
-                page_text = pytesseract.image_to_string(img, lang='ita+eng', config='--psm 3')
-            except Exception:
-                page_text = pytesseract.image_to_string(img, lang='eng', config='--psm 3')
-            page_clean = page_text.strip()
-            if page_clean:
-                testo_ocr += f'[Pag.{i+1}] ' + page_clean + '\n'
-            # Accumula fino a 8000 chars (Mistral riceve i primi 2000 nel prompt)
-            if len(testo_ocr) > 8000:
-                print(f'  OCR: limite 8000 chars raggiunto a pag.{i+1}/{n_pagine}')
-                break
-
-        testo_ocr = testo_ocr.strip()
-        if len(testo_ocr) > 50:
-            print(f'  OCR tesseract: {len(testo_ocr)} chars su {n_pagine} pagine')
-            return testo_ocr[:8000]
-        else:
-            print(f'  OCR: risultato scarso ({len(testo_ocr)} chars)')
-    except Exception as ex:
-        print(f'  OCR: {ex}')
-
-    return ''
-
-def mistral_analizza(titolo, testo):
+def mistral_analizza_completo(titolo, testo_completo):
+    """Analisi Mistral con testo completo suddiviso in chunk."""
     if not MISTRAL_KEY:
-        print('  SKIP: MISTRAL_KEY assente')
         return None
 
-    titolo_safe = titolo.replace('"', "'")[:80]
-    ha_testo = len(testo) > 80
-    contenuto = testo[:3000] if ha_testo else '(PDF scansionato senza testo estraibile, analizza dal titolo)'
+    titolo_safe_str = titolo.replace('"', "'")[:80]
+
+    # Se testo corto, una sola chiamata
+    if len(testo_completo) <= 4000:
+        return mistral_singola(titolo_safe_str, testo_completo, testo_completo)
+
+    # Testo lungo: prima chunk (inizio) + ultima chunk (fine) + sommario intermedio
+    inizio = testo_completo[:3000]
+    fine   = testo_completo[-2000:] if len(testo_completo) > 5000 else ''
+    medio  = testo_completo[3000:6000] if len(testo_completo) > 3000 else ''
+
+    # Chiamata 1: analisi inizio documento
+    risultato = mistral_singola(titolo_safe_str, inizio, testo_completo[:500])
+    if not risultato:
+        return None
+
+    # Chiamata 2: integra con fine documento (se significativa)
+    if fine and len(fine) > 200:
+        integrazione = mistral_integra(titolo_safe_str, risultato, medio + '\n...\n' + fine)
+        if integrazione:
+            risultato = integrazione
+
+    return risultato
+
+def mistral_singola(titolo, testo, estratto_raw):
+    """Singola chiamata Mistral per analisi documento."""
+    ha_testo = len(testo) > 100
+    contenuto = testo[:4000] if ha_testo else '(testo non disponibile, analizza dal titolo)'
 
     prompt = (
         'Sei un agronomo esperto di Living Soil, biodinamica ed elettrocultura per serra outdoor italiana.\n'
-        'Analizza questo documento per la serra BioSerra Caserta.\n'
-        'Tecniche attive: Lakhovsky, Fe-Cu, acqua magnetizzata, spirale rame, antenna terra.\n\n'
-        'Titolo: ' + titolo_safe + '\n'
-        'Contenuto estratto: ' + contenuto + '\n\n'
-        'Rispondi SOLO con JSON valido, niente testo fuori:\n'
-        '{"sommario":"2-3 frasi sul contenuto reale del documento",'
-        '"tecniche_chiave":["tecnica1","tecnica2","tecnica3"],'
-        '"consiglio_coltivazione":"azione pratica concreta per la serra",'
-        '"consiglio_elettrocultura":"applicazione specifica con Lakhovsky/Fe-Cu/spirale rame",'
-        '"tag":["tag1","tag2","tag3"],'
-        '"estratto_chiave":"frase o concetto chiave max 180 char dal testo"}'
+        'Analizza questo documento per la serra BioSerra Caserta (41N).\n'
+        'Tecniche attive: Lakhovsky, Fe-Cu, acqua magnetizzata, spirale rame, antenna terra, biodinamica.\n\n'
+        f'Titolo: {titolo}\n'
+        f'Testo estratto:\n{contenuto}\n\n'
+        'Rispondi SOLO con JSON valido:\n'
+        '{"sommario":"3-4 frasi dettagliate sul contenuto reale",'
+        '"tecniche_chiave":["max 5 tecniche specifiche menzionate"],'
+        '"concetti_principali":["concetti teorici chiave del documento"],'
+        '"consiglio_coltivazione":"azione pratica concreta e specifica",'
+        '"consiglio_elettrocultura":"applicazione specifica delle tecniche elettrocultura",'
+        '"tag":["4-6 tag specifici"],'
+        '"estratto_chiave":"frase o passaggio significativo max 200 char dal testo",'
+        '"applicabilita_serra":"alta/media/bassa - perche"}'
     )
 
-    body_data = json.dumps({
+    body = json.dumps({
         'model': 'mistral-small-latest',
-        'max_tokens': 500,
+        'max_tokens': 600,
         'temperature': 0.0,
         'messages': [{'role': 'user', 'content': prompt}]
     }).encode()
 
-    print('  Mistral...')
     try:
-        req_m = urllib.request.Request(
+        req = urllib.request.Request(
             'https://api.mistral.ai/v1/chat/completions',
-            data=body_data,
-            headers={'Authorization': 'Bearer ' + MISTRAL_KEY, 'Content-Type': 'application/json'},
-            method='POST'
-        )
-        with urllib.request.urlopen(req_m, timeout=30) as r:
+            data=body,
+            headers={'Authorization': f'Bearer {MISTRAL_KEY}', 'Content-Type': 'application/json'},
+            method='POST')
+        with urllib.request.urlopen(req, timeout=30) as r:
             resp = json.loads(r.read())
-    except urllib.error.HTTPError as ex:
-        print(f'  HTTP {ex.code}: {ex.read().decode()[:200]}')
-        return None
+        raw = resp['choices'][0]['message']['content'].strip()
+        s, e = raw.find('{'), raw.rfind('}')
+        if s >= 0 and e > s:
+            return json.loads(raw[s:e+1])
     except Exception as ex:
-        print(f'  Errore: {type(ex).__name__}: {ex}')
-        return None
+        print(f'  mistral_singola ERR: {ex}')
+    return None
 
-    raw = resp['choices'][0]['message']['content'].strip()
-    print(f'  Raw ({len(raw)}c): {repr(raw[:150])}')
+def mistral_integra(titolo, risultato_base, testo_aggiuntivo):
+    """Seconda chiamata: integra analisi con resto del documento."""
+    sommario_base = risultato_base.get('sommario', '')
+    tecniche_base = risultato_base.get('tecniche_chiave', [])
 
-    s = raw.find('{')
-    e = raw.rfind('}')
-    if s < 0 or e <= s:
-        print('  Nessun JSON trovato')
-        return None
+    prompt = (
+        f'Documento: {titolo}\n'
+        f'Analisi parziale già fatta:\n'
+        f'Sommario: {sommario_base}\n'
+        f'Tecniche: {", ".join(tecniche_base)}\n\n'
+        f'Testo aggiuntivo del documento:\n{testo_aggiuntivo[:3000]}\n\n'
+        'Aggiorna e arricchisci l\'analisi integrando le nuove informazioni.\n'
+        'Rispondi SOLO con JSON:\n'
+        '{"sommario":"versione aggiornata e completa",'
+        '"tecniche_chiave":["lista aggiornata"],'
+        '"concetti_principali":["lista aggiornata"],'
+        '"consiglio_coltivazione":"consiglio aggiornato",'
+        '"consiglio_elettrocultura":"applicazione aggiornata",'
+        '"tag":["tag aggiornati"],'
+        '"estratto_chiave":"estratto piu significativo",'
+        '"applicabilita_serra":"alta/media/bassa - perche"}'
+    )
+
+    body = json.dumps({
+        'model': 'mistral-small-latest',
+        'max_tokens': 600,
+        'temperature': 0.0,
+        'messages': [{'role': 'user', 'content': prompt}]
+    }).encode()
+
     try:
-        result = json.loads(raw[s:e+1])
-        print(f'  OK: sommario={len(result.get("sommario",""))}c tec={len(result.get("tecniche_chiave",[]))}')
-        return result
-    except json.JSONDecodeError as ex:
-        print(f'  JSON decode: {ex}')
-        return None
+        req = urllib.request.Request(
+            'https://api.mistral.ai/v1/chat/completions',
+            data=body,
+            headers={'Authorization': f'Bearer {MISTRAL_KEY}', 'Content-Type': 'application/json'},
+            method='POST')
+        with urllib.request.urlopen(req, timeout=30) as r:
+            resp = json.loads(r.read())
+        raw = resp['choices'][0]['message']['content'].strip()
+        s, e = raw.find('{'), raw.rfind('}')
+        if s >= 0 and e > s:
+            return json.loads(raw[s:e+1])
+    except Exception as ex:
+        print(f'  mistral_integra ERR: {ex}')
+    return None
 
 def analizza_locale(titolo, testo):
     KW = {
-        'compost': ('Compostaggio', 'suolo'),
-        'humus': ('Humus', 'suolo'),
-        'micorriza': ('Micorrize', 'suolo'),
-        'mycorrhiz': ('Micorrize', 'suolo'),
-        'biochar': ('Biochar', 'suolo'),
-        'vermicompost': ('Vermicompostaggio', 'suolo'),
+        'compost': ('Compostaggio', 'suolo'), 'humus': ('Humus', 'suolo'),
+        'micorriza': ('Micorrize', 'suolo'), 'mycorrhiz': ('Micorrize', 'suolo'),
+        'biochar': ('Biochar', 'suolo'), 'vermicompost': ('Vermicompostaggio', 'suolo'),
         'elettrocoltura': ('Elettrocultura', 'elettrocultura'),
         'electroculture': ('Elettrocultura', 'elettrocultura'),
-        'electro': ('Elettrocultura', 'elettrocultura'),
         'lakhovsky': ('Circuito Lakhovsky', 'elettrocultura'),
         'rame': ('Spirale cosmica rame', 'elettrocultura'),
         'copper': ('Rame in coltivazione', 'elettrocultura'),
@@ -183,53 +192,24 @@ def analizza_locale(titolo, testo):
         'biodinamic': ('Biodinamica', 'biodinamica'),
         'biodynamic': ('Biodinamica', 'biodinamica'),
         'steiner': ('Metodo Steiner', 'biodinamica'),
-        'luna': ('Calendario lunare', 'biodinamica'),
         'living soil': ('Living Soil', 'suolo'),
-        'soil biology': ('Biologia del suolo', 'suolo'),
         'tesla': ('Principi Tesla', 'elettrocultura'),
         'ighina': ('Atomo magnetico Ighina', 'elettrocultura'),
-        'frequenz': ('Frequenze vibrazionali', 'biodinamica'),
-        'frequency': ('Frequenze', 'biodinamica'),
-        'agricol': ('Tecniche agricole', 'suolo'),
-        'organic': ('Agricoltura organica', 'suolo'),
-        'irrigaz': ('Irrigazione', 'irrigazione'),
-        'fertil': ('Fertilizzazione', 'nutrizione'),
-        'plant': ('Fisiologia vegetale', 'suolo'),
-        'piante': ('Fisiologia vegetale', 'suolo'),
-        'ermet': ('Principi ermetici', 'altro'),
-        'alchim': ('Alchimia', 'altro'),
     }
-    testo_full = (titolo + ' ' + testo).lower()
+    tl = (titolo + ' ' + testo).lower()
     tecniche, tags = [], set()
     for kw, (tec, tag) in KW.items():
-        if kw in testo_full and tec not in tecniche:
-            tecniche.append(tec)
-            tags.add(tag)
-    tags.add('alta-rilevanza')
-
-    if testo and len(testo) > 100:
-        righe = [r.strip() for r in testo.split('\n') if len(r.strip()) > 40][:3]
-        sommario = ' '.join(righe)[:250] if righe else f'Manuale: {titolo}'
-    else:
-        sommario = f'Manuale biblioteca BioSerra: {titolo}'
-
-    estratto = ''
-    for kw in ['living soil', 'elettrocultura', 'lakhovsky', 'tesla', 'ighina', 'biodinamica']:
-        idx = testo_full.find(kw)
-        if idx >= 0:
-            estratto = testo[max(0, idx-10):idx+130].strip()
-            break
-
-    elettro_kw = ['elettro', 'electro', 'lakhov', 'tesla', 'magnet', 'antenna', 'rame', 'copper', 'ighina', 'frequen']
-    consiglio_elettro = 'Principi applicabili al circuito Lakhovsky e spirale cosmica rame' if any(k in testo_full for k in elettro_kw) else ''
-
+        if kw in tl and tec not in tecniche:
+            tecniche.append(tec); tags.add(tag)
     return {
-        'sommario': sommario[:300],
+        'sommario': f'Documento BioSerra: {titolo[:100]}',
         'tecniche_chiave': tecniche[:5],
-        'consiglio_coltivazione': f'Applica {tecniche[0]} in serra' if tecniche else f'Consulta: {titolo[:50]}',
-        'consiglio_elettrocultura': consiglio_elettro,
+        'concetti_principali': [],
+        'consiglio_coltivazione': f'Consulta il documento per tecniche specifiche',
+        'consiglio_elettrocultura': '',
         'tag': list(tags)[:6],
-        'estratto_chiave': estratto[:200]
+        'estratto_chiave': '',
+        'applicabilita_serra': 'media - da valutare'
     }
 
 def ricalcola_connessioni(analisi):
@@ -237,111 +217,121 @@ def ricalcola_connessioni(analisi):
         conn = []
         for b in analisi:
             if b['id'] == a['id']: continue
-            tag_s = len(set(a.get('tag', [])) & set(b.get('tag', [])))
-            tec_s = len(set(a.get('tecniche_chiave', [])) & set(b.get('tecniche_chiave', []))) * 2
-            score = tag_s + tec_s
+            tag_s = len(set(a.get('tag',[]) ) & set(b.get('tag',[])))
+            tec_s = len(set(a.get('tecniche_chiave',[])) & set(b.get('tecniche_chiave',[]))) * 2
+            conc_s = len(set(a.get('concetti_principali',[])) & set(b.get('concetti_principali',[])))
+            score = tag_s + tec_s + conc_s
             if score >= 1:
                 conn.append({'id': b['id'], 'titolo': b['titolo'], 'peso': score})
         conn.sort(key=lambda x: -x['peso'])
-        a['connessioni'] = conn[:8]
+        a['connessioni'] = conn[:10]
     return analisi
 
 def main():
     oggi = datetime.date.today().isoformat()
-    print('=== BioSerra Analisi PDF v12 (Mistral + OCR Tesseract) ===')
-    print(f'MISTRAL_KEY: {"PRESENTE " + MISTRAL_KEY[:10] + "..." if MISTRAL_KEY else "ASSENTE"}')
+    print(f'=== BioSerra Analisi PDF v13 (da testi pre-estratti) — {oggi} ===')
+    print(f'MISTRAL_KEY: {"OK " + MISTRAL_KEY[:8] + "..." if MISTRAL_KEY else "ASSENTE"}')
 
-    # Installa dipendenze (OCR incluso)
-    os.system('pip install pymupdf pdfplumber pypdf pytesseract pdf2image Pillow -q 2>/dev/null')
-
+    # Carica pdf_knowledge esistente
     kdata = gh_get('data/pdf_knowledge.json')
-    knowledge = json.loads(base64.b64decode(kdata['content'].replace('\n', '')).decode('utf-8'))
+    knowledge = json.loads(base64.b64decode(kdata['content'].replace('\n','')).decode('utf-8'))
     analisi_esistenti = knowledge.get('analisi', [])
 
-    # Considera validi: Mistral analizzato con testo reale (ha estratto_chiave non vuoto e sommario >80 chars)
-    analisi_valide = [a for a in analisi_esistenti if a.get('mistral_analizzato') is True]
-    # Rianalizza quelli con sommario scarso (probabilmente analizzati senza OCR)
-    analisi_da_rifare = [a for a in analisi_valide
-                         if len(a.get('sommario','')) < 80 or a.get('estratto_chiave','') == '']
-    analisi_ok = [a for a in analisi_valide if a not in analisi_da_rifare]
-    titoli_ok = {a['titolo'].strip().lower() for a in analisi_ok}
+    # Carica lista testi estratti
+    try:
+        testi_list = gh_get('data/testi')
+        testi_disponibili = {f['name'].replace('.txt',''): True
+                             for f in testi_list if f['name'].endswith('.txt')}
+    except:
+        testi_disponibili = {}
+    print(f'Testi disponibili in data/testi/: {len(testi_disponibili)}')
 
-    print(f'Analisi Mistral OK: {len(analisi_ok)}/89')
-    print(f'Da rianalizzare (sommario scarso): {len(analisi_da_rifare)}')
-
+    # Carica lista PDF in MANUALI
     manuali = gh_get('MANUALI')
     pdf_files = sorted([f for f in manuali if f['name'].endswith('.pdf')], key=lambda x: x['name'])
-    print(f'PDF in MANUALI/: {len(pdf_files)}')
 
-    # Priorita: nuovi PDF + quelli con sommario scarso
-    da_analizzare = [f for f in pdf_files
-                     if f['name'].replace('.pdf', '').strip().lower() not in titoli_ok]
-    print(f'Da analizzare (nuovi + da rifare): {len(da_analizzare)}')
+    # Costruisci mappa titolo -> analisi esistente
+    by_titolo = {}
+    for a in analisi_esistenti:
+        by_titolo[a.get('titolo','').strip().lower()] = a
 
-    if not da_analizzare:
-        print('Tutti analizzati con qualita OK - ricalcolo connessioni')
-        for a in analisi_esistenti:
-            a['rilevanza'] = 'alta'
+    # Identifica PDF con testo disponibile MA analisi scarsa (da rianalizzare)
+    # Criteri: ha testo estratto E (non mistral_analizzato O sommario <150c O no concetti_principali)
+    da_rianalizzare = []
+    for pdf_file in pdf_files:
+        titolo = pdf_file['name'].replace('.pdf','').strip()
+        safe_id = titolo_safe(pdf_file['name'])
+        ha_testo = safe_id in testi_disponibili
+        analisi_curr = by_titolo.get(titolo.lower())
+        analisi_scarsa = (not analisi_curr or
+                          not analisi_curr.get('mistral_analizzato') or
+                          len(analisi_curr.get('sommario','')) < 150 or
+                          not analisi_curr.get('concetti_principali'))
+        if ha_testo and analisi_scarsa:
+            da_rianalizzare.append((pdf_file, safe_id, titolo))
+
+    print(f'PDF con testo + analisi scarsa: {len(da_rianalizzare)}')
+
+    if not da_rianalizzare:
+        print('Tutto aggiornato — ricalcolo connessioni')
         knowledge['analisi'] = ricalcola_connessioni(analisi_esistenti)
         knowledge['lastUpdate'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
         content_b64 = base64.b64encode(json.dumps(knowledge, indent=2, ensure_ascii=False).encode()).decode()
         sha = gh_get('data/pdf_knowledge.json')['sha']
-        gh_put('data/pdf_knowledge.json', content_b64, sha, f'BioSerra PDF {oggi} connessioni')
-        print('Salvato.')
+        gh_put('data/pdf_knowledge.json', content_b64, sha, f'PDF v13 {oggi} connessioni')
         return
 
-    batch = da_analizzare[:8]  # 8 per notte (OCR e' piu lento)
+    # Batch: 10 per notte (veloce perché il testo è già estratto)
+    batch = da_rianalizzare[:10]
     nuove = []
-    ocr_count = 0
+    mistral_count = 0
 
-    for i, pdf_file in enumerate(batch):
-        titolo = pdf_file['name'].replace('.pdf', '').strip()
+    for i, (pdf_file, safe_id, titolo) in enumerate(batch):
         print(f'\n[{i+1}/{len(batch)}] {titolo[:65]}')
 
-        pdf_bytes = None
-        try:
-            pdf_data = gh_get(f"MANUALI/{pdf_file['name']}")
-            raw_b64 = pdf_data.get('content', '').replace('\n', '')
-            if raw_b64:
-                size_mb = len(raw_b64) * 3 / 4 / 1024 / 1024
-                if size_mb < 20:
-                    pdf_bytes = base64.b64decode(raw_b64)
-                    print(f'  PDF: {size_mb:.1f} MB')
-                else:
-                    print(f'  Troppo grande ({size_mb:.1f}MB) - skip')
-                    continue
-        except Exception as ex:
-            print(f'  Download: {ex}')
+        # Leggi testo pre-estratto
+        testo = leggi_testo_estratto(safe_id)
+        print(f'  Testo: {len(testo)} chars')
 
-        testo = estrai_testo(pdf_bytes) if pdf_bytes else ''
-        usato_ocr = 'OCR' in ''.join(
-            [l for l in [] ]  # placeholder, log interno
-        )
-        print(f'  Testo estratto: {len(testo)} chars')
+        if len(testo) < 50:
+            print('  Testo troppo corto, skip')
+            continue
 
-        result = mistral_analizza(titolo, testo) if MISTRAL_KEY else None
+        # Analisi Mistral con testo completo
+        result = mistral_analizza_completo(titolo, testo) if MISTRAL_KEY else None
         mistral_ok = result is not None
 
         if not result:
             print('  Fallback locale')
             result = analizza_locale(titolo, testo)
 
+        if mistral_ok:
+            mistral_count += 1
+            n_chunk = 2 if len(testo) > 4000 else 1
+            print(f'  Mistral OK: sommario={len(result.get("sommario",""))}c chunk={n_chunk}')
+        else:
+            print(f'  Locale: {len(result.get("sommario",""))}c')
+
+        # Mantieni id esistente se c'è
+        analisi_curr = by_titolo.get(titolo.lower(), {})
+        result['id']   = analisi_curr.get('id') or f'pdf_{len(analisi_esistenti)+i}'
         result['titolo'] = titolo
         result['data_analisi'] = oggi
         result['rilevanza'] = 'alta'
         result['mistral_analizzato'] = mistral_ok
-        result['testo_chars'] = len(testo)  # traccia quanti chars OCR ha estratto
+        result['testo_chars'] = len(testo)
+        result['testo_id'] = safe_id
         nuove.append(result)
-        print(f'  [{"Mistral" if mistral_ok else "locale"}] sommario:{len(result.get("sommario",""))}c tec:{len(result.get("tecniche_chiave",[]))}')
 
-        time.sleep(3)  # OCR piu lento, piu pausa
+        time.sleep(2)
 
-    # Merge: ok esistenti + nuovi
+    # Merge
     titoli_nuovi = {a['titolo'].strip().lower() for a in nuove}
-    tutte = [a for a in analisi_ok if a['titolo'].strip().lower() not in titoli_nuovi] + nuove
-
+    tutte = [a for a in analisi_esistenti if a.get('titolo','').strip().lower() not in titoli_nuovi]
+    tutte += nuove
     for idx, a in enumerate(tutte):
-        a['id'] = a.get('id') or f'pdf_{idx}'
+        if not a.get('id'):
+            a['id'] = f'pdf_{idx}'
         a['rilevanza'] = 'alta'
 
     tutte = ricalcola_connessioni(tutte)
@@ -354,12 +344,10 @@ def main():
 
     content_b64 = base64.b64encode(json.dumps(knowledge_new, indent=2, ensure_ascii=False).encode()).decode()
     sha_fresco = gh_get('data/pdf_knowledge.json')['sha']
-    mistral_count = sum(1 for a in nuove if a.get('mistral_analizzato'))
     gh_put('data/pdf_knowledge.json', content_b64, sha_fresco,
-           f'BioSerra PDF v12 {oggi} (+{len(nuove)} mistral:{mistral_count} tot:{len(tutte)}/89)')
+           f'PDF v13 {oggi} (+{len(nuove)} mistral:{mistral_count} tot:{len(tutte)}/89)')
 
-    con_conn = sum(1 for a in tutte if len(a.get('connessioni', [])) > 0)
-    print(f'\n=== +{len(nuove)} | tot:{len(tutte)}/89 | Mistral:{mistral_count} | conn:{con_conn} ===')
+    print(f'\n=== +{len(nuove)} | tot:{len(tutte)}/89 | Mistral:{mistral_count} ===')
 
 if __name__ == '__main__':
     main()
