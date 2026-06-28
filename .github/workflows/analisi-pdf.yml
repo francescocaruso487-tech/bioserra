@@ -2,7 +2,7 @@ name: BioSerra - Analisi PDF
 
 on:
   schedule:
-    - cron: '0 1 * * *'   # 01:00 UTC — dopo estrazione testi alle 00:00
+    - cron: '0 1 * * *'
   workflow_dispatch:
 
 jobs:
