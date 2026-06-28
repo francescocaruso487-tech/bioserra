@@ -4,7 +4,7 @@ Legge i testi completi (tutti i chunk) di ogni PDF,
 Mistral analizza trasversalmente e trova connessioni concettuali profonde.
 Aggiorna pdf_graph.json con connessioni basate su contenuto reale.
 """
-import os, json, base64, urllib.request, urllib.error, datetime, re, time
+import os, json, base64, urllib.request, urllib.error, datetime, re, time, sys
 
 GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
 MISTRAL_KEY  = os.environ.get('MISTRAL_KEY', '')
@@ -221,8 +221,22 @@ Peso da 0 (debole) a 1 (fortissima). Max 5 connessioni. Solo JSON."""
     return []
 
 def main():
+    # Modalita: notte (default) = 5 PDF + 10 coppie
+    #           pomeriggio      = 3 PDF + 20 coppie (piu connessioni)
+    MODE = 'notte'
+    for arg in sys.argv[1:]:
+        if arg in ('--mode', '-m'):
+            pass  # handled next
+        elif arg in ('pomeriggio', 'notte'):
+            MODE = arg
+        elif sys.argv[sys.argv.index(arg)-1] in ('--mode', '-m'):
+            MODE = arg
+
+    MAX_PDF_CONCETTI = 3 if MODE == 'pomeriggio' else 5
+    MAX_COPPIE       = 20 if MODE == 'pomeriggio' else 10
+
     oggi = datetime.date.today().isoformat()
-    print(f'=== BioSerra Connessioni Update ({oggi}) ===')
+    print(f'=== BioSerra Connessioni Update [{MODE.upper()}] ({oggi}) ===')
     print(f'MISTRAL_KEY: {"OK" if MISTRAL_KEY else "ASSENTE"}')
 
     # Carica pdf_knowledge
@@ -248,20 +262,25 @@ def main():
         concetti_per_pdf = {}
     print(f'PDF con concetti estratti: {len(concetti_per_pdf)}')
 
-    # Lista testi disponibili
+    # Lista testi disponibili (PDF + web)
     testi_disp = {f['name'].replace('.txt','')
                   for f in gh_list('data/testi')
                   if f.get('type') == 'file' and f['name'].endswith('.txt')}
-    print(f'Testi disponibili: {len(testi_disp)}')
+    # Aggiungi testi web (zamnesia, rqs)
+    for sito in ['zamnesia', 'rqs']:
+        for f in gh_list(f'data/testi/web/{sito}'):
+            if f.get('type') == 'file' and f['name'].endswith('.txt'):
+                testi_disp.add(f['name'].replace('.txt',''))
+    print(f'Testi disponibili (PDF+web): {len(testi_disp)}')
 
     # FASE 1: Estrai concetti da PDF non ancora processati (5 per notte)
     pdf_senza_concetti = [
         a for a in analisi
         if titolo_safe(a.get('titolo','')) in testi_disp
         and a.get('id','') not in concetti_per_pdf
-    ][:5]
+    ][:MAX_PDF_CONCETTI]
 
-    print(f'\n[FASE 1] Estrazione concetti: {len(pdf_senza_concetti)} PDF')
+    print(f'\n[FASE 1] Estrazione concetti: {len(pdf_senza_concetti)} PDF (max {MAX_PDF_CONCETTI})')
     nuovi_concetti = 0
 
     for a in pdf_senza_concetti:
@@ -330,9 +349,9 @@ def main():
                     continue
             coppie_da_fare.append((pdf_ordinati[i], pdf_ordinati[j]))
 
-    print(f'  Coppie da analizzare: {len(coppie_da_fare)} (max 10 questa notte)')
+    print(f'  Coppie da analizzare: {len(coppie_da_fare)} (max {MAX_COPPIE} [{MODE}])')
 
-    for (id_a, dati_a), (id_b, dati_b) in coppie_da_fare[:10]:
+    for (id_a, dati_a), (id_b, dati_b) in coppie_da_fare[:MAX_COPPIE]:
         pdf_a = {'id': id_a, 'titolo': dati_a.get('titolo','')}
         pdf_b = {'id': id_b, 'titolo': dati_b.get('titolo','')}
         print(f'\n  {pdf_a["titolo"][:40]} <-> {pdf_b["titolo"][:40]}')
@@ -394,3 +413,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
