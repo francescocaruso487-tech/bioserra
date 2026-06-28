@@ -1079,6 +1079,39 @@ async function cervBuildSystem(queryKeywords) {
       });
     }
 
+    // === WIKI INCREMENTALE (pagine concetti rilevanti) ===
+    if (queryKeywords && queryKeywords.length && labConcettiData && labConcettiData.concetti) {
+      var wikiBase = 'https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/wiki/concetti/';
+      // Trova concetti che matchano le keyword
+      var concettiMatch = labConcettiData.concetti.filter(function(c) {
+        var haystack = (c.label + ' ' + (c.descrizione||'') + ' ' + (c.varianti||[]).join(' ')).toLowerCase();
+        return queryKeywords.some(function(k){ return haystack.indexOf(k) !== -1; });
+      }).slice(0,3);
+
+      if (concettiMatch.length) {
+        var wikiResults = await Promise.allSettled(
+          concettiMatch.map(function(c) {
+            return fetch(wikiBase + c.id + '.md?v=' + Date.now())
+              .then(function(r){ return r.ok ? r.text() : null; })
+              .then(function(t){ return { id: c.id, label: c.label, testo: t }; });
+          })
+        );
+        var wikiSezione = '';
+        wikiResults.forEach(function(wr) {
+          if (wr.status === 'fulfilled' && wr.value && wr.value.testo && wr.value.testo.length > 100) {
+            // Estrai solo le sezioni utili (max 400 chars per pagina)
+            var t = wr.value.testo;
+            // Rimuovi frontmatter yaml
+            if (t.startsWith('---')) { var endFm = t.indexOf('---', 3); if (endFm > 0) t = t.slice(endFm+3); }
+            wikiSezione += '\n[WIKI: ' + wr.value.label + ']\n' + t.substring(0,500).trim() + '\n';
+          }
+        });
+        if (wikiSezione.length > 50) {
+          sys += '=== WIKI CONCETTI RILEVANTI ===\n' + wikiSezione + '\n';
+        }
+      }
+    }
+
   } catch(e) {
     sys += '[Errore caricamento contesto: ' + e.message + ']\n';
   }
