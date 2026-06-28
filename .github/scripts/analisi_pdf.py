@@ -36,7 +36,7 @@ def estrai_testo(pdf_bytes):
         testo = '\n'.join(p for p in pagine if p)
         if len(testo.strip()) > 100:
             print(f'  fitz: {len(testo)} chars')
-            return testo[:4000]
+            return testo[:8000]
     except Exception as ex:
         print(f'  fitz: {ex}')
 
@@ -48,7 +48,7 @@ def estrai_testo(pdf_bytes):
         testo = '\n'.join(p.strip() for p in pagine if p.strip())
         if len(testo.strip()) > 100:
             print(f'  pdfplumber: {len(testo)} chars')
-            return testo[:4000]
+            return testo[:8000]
     except Exception as ex:
         print(f'  pdfplumber: {ex}')
 
@@ -60,34 +60,39 @@ def estrai_testo(pdf_bytes):
         testo = '\n'.join(p.strip() for p in pagine if p.strip())
         if len(testo.strip()) > 100:
             print(f'  pypdf: {len(testo)} chars')
-            return testo[:4000]
+            return testo[:8000]
     except Exception as ex:
         print(f'  pypdf: {ex}')
 
-    # Tentativo 4: OCR con Tesseract (PDF scansionati)
-    print('  Testo digitale vuoto - provo OCR...')
+    # Tentativo 4: OCR con Tesseract (PDF scansionati) - TUTTE LE PAGINE
+    print('  Testo digitale vuoto - provo OCR su tutte le pagine...')
     try:
         import pytesseract
         from pdf2image import convert_from_bytes
-        from PIL import Image
 
-        # Rasterizza prime 5 pagine a 200 DPI (bilanciamento qualita/velocita)
-        images = convert_from_bytes(pdf_bytes, dpi=200, first_page=1, last_page=5)
+        # Rasterizza TUTTE le pagine a 200 DPI
+        # Thread sicuro: una pagina alla volta per controllo memoria
+        images = convert_from_bytes(pdf_bytes, dpi=200)
+        n_pagine = len(images)
+        print(f'  OCR: {n_pagine} pagine da processare')
         testo_ocr = ''
         for i, img in enumerate(images):
-            # Prova italiano prima, poi inglese come fallback
             try:
                 page_text = pytesseract.image_to_string(img, lang='ita+eng', config='--psm 3')
             except Exception:
                 page_text = pytesseract.image_to_string(img, lang='eng', config='--psm 3')
-            testo_ocr += page_text.strip() + '\n'
-            if len(testo_ocr) > 3000:
+            page_clean = page_text.strip()
+            if page_clean:
+                testo_ocr += f'[Pag.{i+1}] ' + page_clean + '\n'
+            # Accumula fino a 8000 chars (Mistral riceve i primi 2000 nel prompt)
+            if len(testo_ocr) > 8000:
+                print(f'  OCR: limite 8000 chars raggiunto a pag.{i+1}/{n_pagine}')
                 break
 
         testo_ocr = testo_ocr.strip()
         if len(testo_ocr) > 50:
-            print(f'  OCR tesseract: {len(testo_ocr)} chars')
-            return testo_ocr[:4000]
+            print(f'  OCR tesseract: {len(testo_ocr)} chars su {n_pagine} pagine')
+            return testo_ocr[:8000]
         else:
             print(f'  OCR: risultato scarso ({len(testo_ocr)} chars)')
     except Exception as ex:
@@ -102,7 +107,7 @@ def mistral_analizza(titolo, testo):
 
     titolo_safe = titolo.replace('"', "'")[:80]
     ha_testo = len(testo) > 80
-    contenuto = testo[:2000] if ha_testo else '(PDF scansionato senza testo estraibile, analizza dal titolo)'
+    contenuto = testo[:3000] if ha_testo else '(PDF scansionato senza testo estraibile, analizza dal titolo)'
 
     prompt = (
         'Sei un agronomo esperto di Living Soil, biodinamica ed elettrocultura per serra outdoor italiana.\n'
