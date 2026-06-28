@@ -128,70 +128,116 @@ def fetch_meteo():
 
 def carica_testi_pdf(pdf_knowledge, max_testi=30, chars_per_testo=3000):
     """
-    Carica i testi estratti da data/testi/.
-    Priorità: PDF con più connessioni e rilevanti per Living Soil/elettrocultura.
-    Restituisce lista di dict {id, titolo, testo, tecniche}.
+    Carica testi estratti dalle sottocartelle tematiche di data/testi/.
+    Legge prima le categorie prioritarie (elettrocultura, biodinamica, living_soil...)
+    poi integra con testi dalla root non ancora classificati.
+    Restituisce lista di dict {id, titolo, testo, tecniche, categoria}.
     """
     analisi = pdf_knowledge.get('analisi', [])
 
-    # Ordina per connessioni (più connesso = più rilevante nella knowledge base)
-    analisi_ord = sorted(analisi, key=lambda a: len(a.get('connessioni', [])), reverse=True)
+    # Mappa titolo -> analisi per lookup rapido
+    by_titolo = {}
+    for a in analisi:
+        safe = re.sub(r'[^\w\-]', '_', a.get('titolo','').strip())
+        safe = re.sub(r'_+', '_', safe).strip('_')[:80]
+        by_titolo[safe] = a
 
-    # Parole chiave prioritarie
-    PRIORITA_KW = ['lakhovsky', 'elettrocultura', 'living soil', 'biodinamic', 'rame',
-                   'magnetiz', 'antenna', 'tesla', 'ighina', 'compost', 'micorriz',
-                   'radici', 'suolo', 'frequenz', 'vibraz', 'steiner', 'luna']
-
-    def punteggio(a):
-        score = len(a.get('connessioni', []))
-        tl = (a.get('titolo','') + ' ' + a.get('sommario','')).lower()
-        for kw in PRIORITA_KW:
-            if kw in tl: score += 3
-        return score
-
-    analisi_ord = sorted(analisi, key=punteggio, reverse=True)
+    # Categorie in ordine di priorita per la serra
+    CATEGORIE_ORDINE = [
+        'elettrocultura', 'biodinamica', 'living_soil',
+        'fisica_energie', 'agricoltura', 'fitoterapia',
+        'scienza', 'esoterismo', 'altro'
+    ]
+    # Quanti testi per categoria (piu dalle categorie rilevanti)
+    QUOTA_CAT = {
+        'elettrocultura': 10, 'biodinamica': 6, 'living_soil': 6,
+        'fisica_energie': 4, 'agricoltura': 3, 'fitoterapia': 2,
+        'scienza': 2, 'esoterismo': 1, 'altro': 1
+    }
 
     testi = []
-    try:
-        lista_testi = gh_list('data/testi')
-        by_nome = {f['name'].replace('.txt',''): True for f in lista_testi if f['name'].endswith('.txt')}
-    except:
-        by_nome = {}
+    totale_per_cat = {}
 
-    print(f'  Testi disponibili in data/testi/: {len(by_nome)}')
-
-    for a in analisi_ord:
+    # 1. Carica dalle sottocartelle classificate
+    for cat in CATEGORIE_ORDINE:
         if len(testi) >= max_testi:
             break
-        titolo = a.get('titolo', '')
-        # Calcola safe_id (stesso algoritmo di estrai_testi.py)
-        safe_id = re.sub(r'[^\w\-]', '_', titolo.strip())
-        safe_id = re.sub(r'_+', '_', safe_id).strip('_')[:80]
-
-        if safe_id not in by_nome:
-            continue  # testo non ancora estratto
-
+        quota = QUOTA_CAT.get(cat, 1)
         try:
-            testo_raw = gh_raw(f'data/testi/{safe_id}.txt')
-            # Rimuovi header
-            if testo_raw.startswith('==='):
-                idx = testo_raw.find('\n\n')
-                if idx > 0: testo_raw = testo_raw[idx+2:]
-            if '[VUOTO]' in testo_raw[:50]:
-                continue
-            testo_raw = testo_raw.strip()[:chars_per_testo]
-            testi.append({
-                'id': a.get('id',''),
-                'titolo': titolo,
-                'testo': testo_raw,
-                'tecniche': a.get('tecniche_chiave', []),
-                'sommario': a.get('sommario',''),
-                'connessioni': len(a.get('connessioni',[]))
-            })
+            files_cat = gh_list(f'data/testi/{cat}')
+            files_cat = [f for f in files_cat if f.get('type') == 'file' and f['name'].endswith('.txt')]
         except:
-            continue
+            files_cat = []
 
-    print(f'  Testi caricati: {len(testi)}/{max_testi}')
+        cat_count = 0
+        for f_info in files_cat:
+            if len(testi) >= max_testi or cat_count >= quota:
+                break
+            safe_id = f_info['name'].replace('.txt', '')
+            a = by_titolo.get(safe_id, {})
+            try:
+                testo_raw = gh_raw(f'data/testi/{cat}/{f_info["name"]}')
+                # Rimuovi header
+                if testo_raw.startswith('==='):
+                    idx_h = testo_raw.find('\n\n')
+                    if idx_h > 0: testo_raw = testo_raw[idx_h+2:]
+                if '[VUOTO]' in testo_raw[:50] or len(testo_raw.strip()) < 100:
+                    continue
+                testo_raw = testo_raw.strip()[:chars_per_testo]
+                testi.append({
+                    'id':          a.get('id', safe_id),
+                    'titolo':      a.get('titolo', safe_id.replace('_',' ')),
+                    'testo':       testo_raw,
+                    'tecniche':    a.get('tecniche_chiave', []),
+                    'sommario':    a.get('sommario', ''),
+                    'connessioni': len(a.get('connessioni', [])),
+                    'categoria':   cat
+                })
+                cat_count += 1
+            except:
+                continue
+
+        totale_per_cat[cat] = cat_count
+        if cat_count > 0:
+            print(f'  {cat}: {cat_count} testi')
+
+    # 2. Integra con testi non ancora classificati (root data/testi/)
+    if len(testi) < max_testi:
+        try:
+            files_root = gh_list('data/testi')
+            files_root = [f for f in files_root
+                         if f.get('type') == 'file' and f['name'].endswith('.txt')]
+        except:
+            files_root = []
+
+        gia_caricati = {t['id'] for t in testi}
+        for f_info in files_root:
+            if len(testi) >= max_testi:
+                break
+            safe_id = f_info['name'].replace('.txt', '')
+            a = by_titolo.get(safe_id, {})
+            if a.get('id','') in gia_caricati:
+                continue
+            try:
+                testo_raw = gh_raw(f'data/testi/{f_info["name"]}')
+                if testo_raw.startswith('==='):
+                    idx_h = testo_raw.find('\n\n')
+                    if idx_h > 0: testo_raw = testo_raw[idx_h+2:]
+                if '[VUOTO]' in testo_raw[:50] or len(testo_raw.strip()) < 100:
+                    continue
+                testi.append({
+                    'id':          a.get('id', safe_id),
+                    'titolo':      a.get('titolo', safe_id.replace('_',' ')),
+                    'testo':       testo_raw.strip()[:chars_per_testo],
+                    'tecniche':    a.get('tecniche_chiave', []),
+                    'sommario':    a.get('sommario', ''),
+                    'connessioni': len(a.get('connessioni', [])),
+                    'categoria':   'non_classificato'
+                })
+            except:
+                continue
+
+    print(f'  Testi totali caricati: {len(testi)}/{max_testi} (classificati: {sum(totale_per_cat.values())})')
     return testi
 
 # ── Sintetizza knowledge base ───────────────────────────────────
