@@ -221,11 +221,32 @@ def main():
 
         # 2. Estrai tutti i link articoli
         links = estrai_links_da_indice(html_indice, sito['pattern_articoli'])
-        print(f'  Link trovati: {len(links)}')
+        print(f'  Link trovati (raw): {len(links)}')
 
         if not links:
             print(f'  ATTENZIONE: nessun link trovato, pattern potrebbe non matchare')
             continue
+
+        # Filtra link non pertinenti per RQS
+        if nome == 'rqs':
+            ESCLUDI_RQS = [
+                'promo', 'resi', 'negoz', 'spediz', 'privacy', 'cookie',
+                'legal', 'all-ingrosso', 'su-di-noi', 'amsterdam', 'vincitor',
+                'cup', 'contatt', 'lavora', 'affiliat', 'esaurim',
+                'trova-negoz', 'indirizz', 'politica', 'condizioni',
+                'responsab', 'stile-di-vita', 'vaporizzator', 'usa-premium',
+                'collezioni', 'economici', 'misti', 'omaggio', 'esclusiva',
+                'potenti', 'principianti', 'cannabinoidi-special', 'cbd-alto',
+                'thc-basso', 'all-ingrosso', 'informazioni-general',
+                'informazione-sulla', 'sistema-endocannab'
+            ]
+            links_filtrati = []
+            for l in links:
+                slug_l = l.rstrip('/').split('/')[-1].lower()
+                if not any(e in slug_l for e in ESCLUDI_RQS):
+                    links_filtrati.append(l)
+            print(f'  Link dopo filtro: {len(links_filtrati)} (rimossi: {len(links)-len(links_filtrati)})')
+            links = links_filtrati
 
         # 3. Per ogni articolo
         for url in links:
