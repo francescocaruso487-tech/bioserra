@@ -1,0 +1,30 @@
+name: BioSerra - Estrai Testi PDF
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # mezzanotte UTC (prima di analisi alle 01:00)
+  workflow_dispatch:
+
+jobs:
+  estrai:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300     # 5 ore — OCR su PDF grandi è lento
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Installa Tesseract OCR + Poppler
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-ita poppler-utils
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Estrai testi da PDF (OCR completo)
+        env:
+          GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+        run: python3 .github/scripts/estrai_testi.py
