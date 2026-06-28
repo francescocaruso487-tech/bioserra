@@ -1,0 +1,26 @@
+name: BioSerra - Connessioni Semantiche
+
+on:
+  schedule:
+    - cron: '0 2 * * *'   # 02:00 UTC dopo analisi (01:00) prima embedding (era 02:00, sposto a 02:30)
+  workflow_dispatch:
+
+jobs:
+  connessioni:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Connessioni semantiche reali tra PDF
+        env:
+          GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+          MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
+        run: python3 .github/scripts/connessioni_update.py
