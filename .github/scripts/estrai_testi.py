@@ -151,7 +151,7 @@ def main():
         print('Tutti estratti!')
         return
 
-    batch = da_fare[:5]  # 5 per notte — ogni PDF può richiedere 5-15 min con OCR
+    batch = da_fare[:13]  # 13 per notte → 89 PDF completati in 7 notti
 
     stats = {'ok': 0, 'digitale': 0, 'ocr': 0, 'vuoti': 0}
 
