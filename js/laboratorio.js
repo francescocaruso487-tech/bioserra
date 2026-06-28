@@ -50,13 +50,14 @@ async function labLoadAll() {
   labSetStatus('lab-load-status', '\u23F3 SYNC…');
   var ts = '?v=' + Date.now();
   try {
-    var [rCon, rEsp, rPdf, rGuide, rDigest, rBrain] = await Promise.allSettled([
+    var [rCon, rEsp, rPdf, rGuide, rDigest, rBrain, rMem] = await Promise.allSettled([
       fetch(LAB_RAW + 'concetti_index.json'   + ts).then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'esperimenti.json'       + ts).then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'pdf_knowledge.json'     + ts).then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'guide_complete.json'    + ts).then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'knowledge_digest.json'  + ts).then(function(r){ return r.json(); }),
-      fetch(LAB_RAW + 'brain.json'             + ts).then(function(r){ return r.json(); })
+      fetch(LAB_RAW + 'brain.json'             + ts).then(function(r){ return r.json(); }),
+      fetch(LAB_RAW + 'memoria_chat.json'      + ts).then(function(r){ return r.json(); }).catch(function(){ return null; })
     ]);
 
     if (rCon.status === 'fulfilled') {
@@ -106,6 +107,7 @@ async function labLoadAll() {
     if (rGuide.status  === 'fulfilled') labGuideData  = rGuide.value.guide || [];
     if (rDigest.status === 'fulfilled') labDigestData = rDigest.value;
     if (rBrain.status  === 'fulfilled') labBrainData  = rBrain.value;
+    if (rMem && rMem.status === 'fulfilled' && rMem.value) labMemoriaData = rMem.value;
 
     labSetStatus('lab-load-status', '');
   } catch(e) {
@@ -951,11 +953,35 @@ function labScrollBrain() {
 ══════════════════════════════════════════════════════════════ */
 
 var cervHistory = [];
+var labMemoriaData = null;
+var labAnalisiOnDemand = {};
 
 async function cervBuildSystem(queryKeywords) {
-  var sys = 'Sei il Cervello AI di BioSerra, esperto di coltivazione Living Soil outdoor a Caserta (41\u00B0N). ';
-  sys += 'Hai accesso alla knowledge base completa della serra: PDF analizzati, tecniche elettrocultura, guide per fase, dati meteo e lunari in tempo reale. ';
-  sys += 'Rispondi in italiano, pratico e preciso, max 300 parole. Cita le fonti (es: "dal PDF X") quando pertinente.\n\n';
+  var sys = 'Sei il Cervello AI di BioSerra: agronomo esperto che ha letto TUTTI i manuali Living Soil, biodinamica ed elettrocultura della biblioteca BioSerra (89 PDF). ';
+  sys += 'Serra outdoor water-only Caserta 41N. Tecniche attive: Lakhovsky, Fe-Cu, acqua magnetizzata, spirale rame, antenna terra. ';
+  sys += 'Rispondi in italiano, SPECIFICO e PRATICO, max 350 parole. Cita sempre i manuali ([id]) quando disponibile.\n\n';
+  if (labBrainData) {
+    var cerv5 = labBrainData.cervello || labBrainData;
+    if (cerv5.briefing_mattutino) sys += '=== BRIEFING NOTTURNO ===\n' + cerv5.briefing_mattutino + '\n\n';
+    var kbs = cerv5.kb_sintesi || {};
+    if (kbs.principi_attivi && kbs.principi_attivi.length) {
+      sys += '=== CONOSCENZE DAI MANUALI (sintetizzate stanotte) ===\n';
+      sys += kbs.principi_attivi.join('\n') + '\n';
+      if (kbs.consiglio_elettro_da_testi)      sys += 'Elettro: ' + kbs.consiglio_elettro_da_testi + '\n';
+      if (kbs.consiglio_suolo_da_testi)        sys += 'Suolo: '   + kbs.consiglio_suolo_da_testi   + '\n';
+      if (kbs.consiglio_biodinamica_da_testi)  sys += 'Biodin: '  + kbs.consiglio_biodinamica_da_testi + '\n';
+      if (kbs.tecnica_da_provare && kbs.tecnica_da_provare.nome)
+        sys += 'Tecnica: ' + kbs.tecnica_da_provare.nome + ' - ' + kbs.tecnica_da_provare.descrizione + '\n';
+      sys += '\n';
+    }
+    var piano5 = cerv5.piano_giornata || {};
+    if (piano5.mattina) sys += '=== PIANO GIORNATA ===\nMattina: ' + piano5.mattina + '\nSera: ' + (piano5.sera||'') + '\n\n';
+  }
+  if (labMemoriaData && labMemoriaData.sessioni && labMemoriaData.sessioni.length) {
+    sys += '=== CONTESTO STORICO (ultimi giorni) ===\n';
+    labMemoriaData.sessioni.slice(-5).forEach(function(s){ sys += s.data + ': ' + (s.riassunto||'').substring(0,150) + '\n'; });
+    sys += '\n';
+  }
 
   try {
     // === DATI REAL-TIME (meteo + luna + piante) ===
@@ -1230,7 +1256,21 @@ async function cervSend(msgOverride) {
 function cervChatReset() {
   cervHistory = [];
   var chat = document.getElementById('cerv-chat');
-  if (chat) chat.innerHTML = '<div class="ai-msg bot">\uD83E\uDDE0 Sistema attivo. Leggo meteo, piante, luna in tempo reale.<br>Cosa vuoi sapere sulla tua serra?</div>';
+  if (!chat) return;
+  var briefing = '';
+  if (labBrainData) {
+    var cerv = labBrainData.cervello || labBrainData;
+    if (cerv.briefing_mattutino && cerv.briefing_mattutino.length > 20) briefing = cerv.briefing_mattutino;
+    var avvisi = cerv.avvisi || labBrainData.avvisi || [];
+    if (avvisi.length) briefing += (briefing ? '\n\n' : '') + '⚠ ' + avvisi.slice(0,2).join(' | ');
+    var piano = cerv.piano_giornata || {};
+    if (piano.mattina) briefing += (briefing ? '\n\n' : '') + '⏳ Oggi: ' + piano.mattina;
+  }
+  var nPdf = (labPdfData && labPdfData.analisi) ? labPdfData.analisi.length : 0;
+  var nLetti = (labBrainData && labBrainData.testi_pdf_letti) || 0;
+  chat.innerHTML = briefing
+    ? '<div class="ai-msg bot"><strong>🧠 Briefing Serra</strong> <span style="font-size:10px;opacity:0.5">· ' + nLetti + ' PDF letti stanotte</span><br><br>' + labEsc(briefing).replace(/\n/g,'<br>') + '</div>'
+    : '<div class="ai-msg bot">🧠 Sistema attivo · ' + nPdf + ' PDF · ' + nLetti + ' testi letti.<br>Cosa vuoi sapere sulla tua serra?</div>';
 }
 
 async function cervSalva(domanda, risposta, btnEl) {
@@ -1678,7 +1718,10 @@ function labSbNodeClick(d) {
   + (d.consiglio ? '<div style="background:rgba(76,175,118,0.06);border-radius:8px;padding:10px;margin-bottom:12px"><div style="font-size:9px;color:var(--green3);font-weight:700;margin-bottom:5px">\uD83C\uDF31 CONSIGLIO PRATICO</div><div style="font-size:12px;color:rgba(76,175,118,0.8);line-height:1.6">' + labEsc(d.consiglio) + '</div></div>' : '')
   + (tecH ? '<div style="background:rgba(0,180,255,0.04);border-radius:8px;padding:10px;margin-bottom:12px"><div style="font-size:9px;color:var(--el-blue);font-weight:700;margin-bottom:6px">\u26A1 TECNICHE CHIAVE</div>' + tecH + '</div>' : '')
   + (conn.length ? '<div style="font-size:9px;color:rgba(0,180,255,0.4);font-weight:700;margin-bottom:6px">PDF COLLEGATI (' + conn.length + ')</div>' + connH : '')
-  + '<div style="margin-top:14px"><button onclick="document.getElementById(\'sb-search-input\').value=' + "'" + labEsc(d.titolo||'') + "'" + ';labSbSearch()" style="font-size:11px;padding:7px 14px;border-radius:10px;border:1px solid rgba(0,180,255,0.3);color:#00b4ff;background:rgba(0,180,255,0.08);cursor:pointer;width:100%">\uD83D\uDD0D Cerca argomenti correlati nel Knowledge Base</button></div>';
+  + '<div style="margin-top:14px;display:flex;flex-direction:column;gap:8px">'
+  + '<button onclick="document.getElementById(\'sb-search-input\').value=\''+labEsc(d.titolo||'')+'\'  ;labSbSearch()" style="font-size:11px;padding:7px 14px;border-radius:10px;border:1px solid rgba(0,180,255,0.3);color:#00b4ff;background:rgba(0,180,255,0.08);cursor:pointer">🔍 Cerca argomenti correlati</button>'
+  + '<button onclick="labAnalizzaPdf(\'' + labEsc(d.id||'') + '\')" style="font-size:11px;padding:7px 14px;border-radius:10px;border:1px solid rgba(76,175,118,0.3);color:var(--green3);background:rgba(76,175,118,0.08);cursor:pointer">🧠 Analizza PDF completo con AI</button>'
+  + '</div>';
 
   var grafo = labGrafoNaviga(d.id, 4);
   var hop2H = '';
@@ -1934,6 +1977,56 @@ async function labSbConcettoClick(cid, clabel) {
   html += '</div>';
   resEl.innerHTML = html;
   resEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+/* analisi PDF on-demand */
+
+async function labAnalizzaPdf(pdfId, domanda) {
+  var resEl = document.getElementById('sb-search-results');
+  if (!resEl) return;
+  var src = (labPdfData && labPdfData.analisi||[]).find(function(a){ return a.id===pdfId; });
+  if (!src) { resEl.innerHTML='<div style="color:rgba(255,100,100,0.7);padding:10px">PDF non trovato.</div>'; return; }
+  var titolo = src.titolo || pdfId;
+  resEl.innerHTML = '<div style="color:rgba(0,180,255,0.5);font-size:12px;padding:10px;text-align:center">⏳ Carico testo: ' + labEsc(titolo.substring(0,50)) + '...</div>';
+  var safeId = titolo.replace(/[^\w\-]/g,'_').replace(/_+/g,'_').replace(/^_|_$/g,'').substring(0,80);
+  var testoCompleto = '';
+  try {
+    var tr = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/testi/'+safeId+'.txt?v='+Date.now());
+    if (tr.ok) {
+      testoCompleto = await tr.text();
+      if (testoCompleto.startsWith('===')) { var ei=testoCompleto.indexOf('\n\n'); if(ei>0) testoCompleto=testoCompleto.slice(ei+2); }
+      testoCompleto = testoCompleto.trim().substring(0,8000);
+    }
+  } catch(e) {}
+  var ctx = testoCompleto.length>100 ? testoCompleto : (src.sommario||'')+'\n'+(src.estratto_chiave||'')+'\n'+(src.consiglio_coltivazione||'');
+  if (ctx.length<30) {
+    resEl.innerHTML='<div style="color:rgba(255,180,0,0.7);padding:10px">⚠ Testo non ancora estratto. Riprova domani.</div>'; return;
+  }
+  resEl.innerHTML='<div style="color:rgba(0,180,255,0.5);font-size:12px;padding:10px;text-align:center">🧠 Analizzo '+ctx.length+' chars con AI...</div>';
+  var antKey=['sk-ant-api03-','IpveWMEEMfS3py7K','X6S7pAkPWG9T9E6L','2bvDlGH9oGFHj43Y','hZOaBDYjf6cVJiEh','KXJqFaAAA'].join('');
+  var dom = domanda || 'Riassumi i punti chiave applicabili alla serra BioSerra Caserta (Living Soil, elettrocultura, biodinamica).';
+  try {
+    var resp = await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','x-api-key':antKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1200,
+        system:'Sei un agronomo esperto Living Soil, biodinamica ed elettrocultura per serra outdoor Caserta (41N). Hai letto questo manuale. Rispondi in italiano, specifico e pratico. Cita il testo.',
+        messages:[{role:'user',content:'MANUALE "'+titolo+'":\n\n'+ctx+'\n\n---\nDOMANDA: '+dom}]})
+    });
+    var data=await resp.json();
+    var rispo=(data.content&&data.content[0]&&data.content[0].text)||'Errore.';
+    resEl.innerHTML='<div style="background:rgba(76,175,118,0.06);border:1px solid rgba(76,175,118,0.2);border-radius:12px;padding:14px;margin-bottom:12px">'
+      +'<div style="font-size:9px;color:var(--green3);font-weight:700;margin-bottom:4px">📄 '+labEsc(titolo.substring(0,60))+' · '+ctx.length+' chars</div>'
+      +'<div style="font-size:12px;color:var(--text2);line-height:1.8;white-space:pre-wrap">'+labEsc(rispo)+'</div>'
+      +'<div style="margin-top:10px;display:flex;gap:8px">'
+      +'<input id="sb-od-inp" type="text" placeholder="Altra domanda su questo PDF..." '
+      +'style="flex:1;background:rgba(0,180,255,0.08);border:1px solid rgba(0,180,255,0.2);border-radius:8px;padding:8px 12px;color:#e0f0ff;font-size:12px;outline:none" '
+      +'onkeydown="if(event.key===\'Enter\')labAnalizzaPdf(\'' + labEsc(pdfId) + '\',this.value)" />'
+      +'<button onclick="labAnalizzaPdf(\'' + labEsc(pdfId) + '\',document.getElementById(\'sb-od-inp\').value)" '
+      +'style="background:rgba(76,175,118,0.15);border:1px solid rgba(76,175,118,0.3);border-radius:8px;padding:8px 14px;color:var(--green3);cursor:pointer">🔍</button>'
+      +'</div></div>';
+    resEl.scrollIntoView({behavior:'smooth',block:'start'});
+  } catch(e) { resEl.innerHTML='<div style="color:rgba(255,100,100,0.7);padding:10px">Errore: '+labEsc(e.message)+'</div>'; }
 }
 
 /* ══════════════════════════════════════════════════════════════
