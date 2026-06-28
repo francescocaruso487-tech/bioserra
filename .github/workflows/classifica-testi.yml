@@ -1,0 +1,26 @@
+name: BioSerra - Classifica Testi
+
+on:
+  schedule:
+    - cron: '30 0 * * *'   # 00:30 UTC — dopo estrazione (00:00) prima di analisi (01:00)
+  workflow_dispatch:
+
+jobs:
+  classifica:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Classifica testi in sottocartelle tematiche
+        env:
+          GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+          MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
+        run: python3 .github/scripts/classifica_testi.py
