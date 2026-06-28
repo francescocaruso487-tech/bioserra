@@ -2,13 +2,13 @@ name: BioSerra - Estrai Testi PDF
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # mezzanotte UTC (prima di analisi alle 01:00)
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
   estrai:
     runs-on: ubuntu-latest
-    timeout-minutes: 300     # 5 ore — OCR su PDF grandi è lento
+    timeout-minutes: 240
 
     steps:
       - name: Checkout repo
