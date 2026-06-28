@@ -1,17 +1,17 @@
 {
-  "lastUpdate": "2026-06-27",
-  "total": 15,
+  "lastUpdate": "2026-06-28",
+  "total": 16,
   "fonte": "89 PDF analizzati",
   "concetti": [
     {
       "id": "acqua_magnetizzata",
       "label": "Acqua Magnetizzata",
       "categoria": "elettrocultura",
-      "descrizione": "Applica acqua sottoposta a campi magnetici per migliorare l'assorbimento radicale e la vitalità cellulare.",
+      "descrizione": "Utilizza acqua sottoposta a campi magnetici per migliorare l'assorbimento dei nutrienti e la crescita delle piante.",
       "istruzioni_pratiche": [
-        "Filtra l'acqua e passala attraverso un magnete permanente (N-S) per 10-15 minuti.",
-        "Utilizza l'acqua magnetizzata per l'irrigazione a goccia o per nebulizzazione fogliare.",
-        "Evita di magnetizzare l'acqua per più di 24 ore prima dell'uso."
+        "Filtra l'acqua e passala attraverso un dispositivo magnetico (es. magneti al neodimio) per 10-15 minuti.",
+        "Irriga le piante con l'acqua magnetizzata durante le prime ore del mattino per massimizzare l'assorbimento.",
+        "Evita di esporre l'acqua a fonti di calore dopo la magnetizzazione per preservare le proprietà."
       ],
       "varianti": [
         "acqua magnetizzata"
@@ -19,18 +19,15 @@
       "fasi_guida": [
         "germinazione",
         "vegetazione",
-        "fioritura",
-        "taglio"
+        "fioritura"
       ],
       "rilevanza": 95,
       "tag_correlati": [
         "idratazione",
-        "radici",
-        "stress idrico"
+        "nutrizione",
+        "crescita"
       ],
       "pdf_ids": [
-        "pdf_0",
-        "pdf_3",
         "pdf_5",
         "pdf_6",
         "pdf_7",
@@ -38,7 +35,9 @@
         "pdf_14",
         "pdf_16",
         "pdf_18",
-        "pdf_22"
+        "pdf_22",
+        "pdf_24",
+        "pdf_25"
       ],
       "pdf_count": 10
     },
@@ -46,14 +45,14 @@
       "id": "antenna_terra",
       "label": "Antenna di Terra",
       "categoria": "elettrocultura",
-      "descrizione": "Collega un conduttore metallico al terreno per captare e trasmettere energie telluriche alle piante.",
+      "descrizione": "Collega un conduttore metallico al terreno per bilanciare le cariche elettriche e stimolare la crescita delle piante.",
       "istruzioni_pratiche": [
-        "Inserisci un'asta di rame o acciaio zincato nel terreno vicino alle radici.",
-        "Collega l'antenna a una spirale di rame posizionata sopra la chioma o a un circuito Lakhovsky.",
-        "Assicurati che il contatto con il suolo sia stabile e umido per una buona conduzione."
+        "Inserisci un'asta di rame o ferro nel terreno vicino alle radici, collegandola a una piastra metallica interrata.",
+        "Assicurati che il collegamento sia stabile e che il metallo sia in contatto diretto con il suolo umido.",
+        "Posiziona l'antenna in modo che sia perpendicolare alla direzione delle radici per ottimizzare l'effetto."
       ],
       "varianti": [
-        "antenna di terra",
+        "Antenna di terra",
         "antenna terra"
       ],
       "fasi_guida": [
@@ -62,21 +61,21 @@
       ],
       "rilevanza": 85,
       "tag_correlati": [
-        "energia tellurica",
+        "bilanciamento elettrico",
         "radici",
-        "conduzione"
+        "crescita"
       ],
       "pdf_ids": [
-        "pdf_0",
-        "pdf_13",
-        "pdf_14",
-        "pdf_16",
-        "pdf_18",
-        "pdf_22",
-        "pdf_24",
-        "pdf_28",
-        "pdf_34",
-        "pdf_53"
+        "pdf_5",
+        "pdf_6",
+        "pdf_7",
+        "pdf_26",
+        "pdf_30",
+        "pdf_32",
+        "pdf_38",
+        "pdf_42",
+        "pdf_46",
+        "pdf_50"
       ],
       "pdf_count": 10
     },
@@ -84,16 +83,17 @@
       "id": "spirale_rame",
       "label": "Spirale in Rame",
       "categoria": "elettrocultura",
-      "descrizione": "Posiziona una spirale di rame intorno alla pianta per generare campi elettromagnetici benefici.",
+      "descrizione": "Avvolgi una spirale di rame intorno al fusto o ai rami per generare campi elettromagnetici benefici.",
       "istruzioni_pratiche": [
-        "Avvolgi un filo di rame (1-2 mm) in spirale con diametro 10-15 cm intorno al fusto.",
-        "Orientala in senso orario per piante in vegetazione, antiorario per fioritura.",
-        "Sostituisci la spirale ogni 2-3 mesi per evitare ossidazione eccessiva."
+        "Utilizza un filo di rame spesso 1-2 mm e avvolgilo a spirale intorno al fusto principale, senza stringere troppo.",
+        "Posiziona la spirale a 10-15 cm dal suolo per evitare danni da umidità.",
+        "Lascia uno spazio tra le spire per permettere la crescita della pianta."
       ],
       "varianti": [
         "spirale rame",
-        "spirale in rame",
-        "spirale di rame"
+        "Spirale in rame",
+        "spirale di rame",
+        "Spirale cosmica rame"
       ],
       "fasi_guida": [
         "vegetazione",
@@ -102,20 +102,20 @@
       "rilevanza": 80,
       "tag_correlati": [
         "campi EM",
-        "crescita",
-        "antiossidante"
+        "resistenza",
+        "fioritura"
       ],
       "pdf_ids": [
-        "pdf_0",
-        "pdf_13",
-        "pdf_22",
-        "pdf_24",
+        "pdf_5",
+        "pdf_6",
+        "pdf_7",
+        "pdf_26",
         "pdf_30",
-        "pdf_53",
-        "pdf_54",
-        "pdf_55",
-        "pdf_59",
-        "pdf_62"
+        "pdf_32",
+        "pdf_38",
+        "pdf_42",
+        "pdf_46",
+        "pdf_50"
       ],
       "pdf_count": 10
     },
@@ -123,82 +123,118 @@
       "id": "circuito_lakhovsky",
       "label": "Circuito Oscillante Lakhovsky",
       "categoria": "elettrocultura",
-      "descrizione": "Applica un circuito oscillante a onde multiple per stimolare la rigenerazione cellulare delle piante.",
+      "descrizione": "Costruisci un circuito oscillante a forma di anello per emettere frequenze benefiche che stimolano la vitalità cellulare.",
       "istruzioni_pratiche": [
-        "Costruisci un circuito con filo di rame (1-2 mm) a forma di ovale o spirale, diametro 20-30 cm.",
-        "Posizionalo a 10-20 cm sopra la chioma o intorno al fusto.",
-        "Collega il circuito a un'antenna di terra per amplificare l'effetto."
+        "Realizza un anello di rame del diametro di 10-15 cm e collegalo a un filo di rame isolato.",
+        "Posiziona il circuito sopra la chioma delle piante o vicino al fusto, a 20-30 cm di distanza.",
+        "Assicurati che il circuito sia ben isolato e non tocchi parti metalliche della serra."
       ],
       "varianti": [
         "Lakhovsky",
         "Lakhovsky (circuito oscillante)",
         "Lakhovsky (onde di forma)",
         "Lakhovsky (teoria delle onde di vita)",
-        "Lakhovsky (Oscillatori a onde multiple)"
+        "Lakhovsky (tecnica di risonanza cellulare)"
       ],
       "fasi_guida": [
         "germinazione",
         "vegetazione",
-        "fioritura",
-        "essiccazione"
+        "fioritura"
       ],
       "rilevanza": 90,
       "tag_correlati": [
-        "rigenerazione",
         "frequenze",
-        "vitalità"
+        "vitalità",
+        "crescita cellulare"
       ],
       "pdf_ids": [
-        "pdf_0",
-        "pdf_16",
-        "pdf_43",
-        "pdf_55",
-        "pdf_62",
-        "pdf_63",
-        "pdf_64",
-        "pdf_66",
-        "pdf_78",
-        "pdf_79"
+        "pdf_5",
+        "pdf_6",
+        "pdf_7",
+        "pdf_25",
+        "pdf_26",
+        "pdf_32",
+        "pdf_42",
+        "pdf_46",
+        "pdf_50",
+        "pdf_57"
       ],
       "pdf_count": 10
     },
     {
-      "id": "sinergia_ferro_rame",
-      "label": "Sinergia Ferro-Rame (Fe-Cu)",
+      "id": "multi_onde_lakhovsky",
+      "label": "Oscillatori a Onde Multiple Lakhovsky",
       "categoria": "elettrocultura",
-      "descrizione": "Utilizza elettrodi o fili di ferro e rame per creare differenze di potenziale e stimolare la crescita.",
+      "descrizione": "Utilizza più circuiti oscillanti di dimensioni diverse per coprire un'ampia gamma di frequenze benefiche.",
       "istruzioni_pratiche": [
-        "Inserisci un elettrodo di ferro nel terreno e collegalo a una spirale di rame intorno al fusto.",
-        "Assicurati che i due metalli non si tocchino direttamente per evitare cortocircuiti.",
-        "Monitora la conduttività del suolo e aggiungi acqua se necessario."
+        "Costruisci 3-5 anelli di rame di diametri diversi (es. 5 cm, 10 cm, 15 cm) e collegali in parallelo.",
+        "Posiziona gli anelli a diverse altezze sopra le piante per coprire l'intera chioma.",
+        "Regola la distanza tra gli anelli per evitare interferenze reciproche."
       ],
       "varianti": [
-        "Fe-Cu",
-        "Fe-Cu (ferro-rame)",
-        "Fe-Cu (sinergia metalli)",
-        "Fe-Cu (elettrodo ferro-rame)"
+        "Lakhovsky (Oscillatori a onde multiple)"
       ],
       "fasi_guida": [
         "vegetazione",
         "fioritura"
       ],
-      "rilevanza": 88,
+      "rilevanza": 85,
       "tag_correlati": [
-        "potenziale redox",
-        "nutrienti",
-        "crescita radicale"
+        "frequenze multiple",
+        "stimolazione",
+        "adattabilità"
       ],
       "pdf_ids": [
-        "pdf_0",
+        "pdf_5",
+        "pdf_6",
+        "pdf_7",
+        "pdf_25",
+        "pdf_26",
+        "pdf_32",
+        "pdf_42",
+        "pdf_46",
+        "pdf_50",
+        "pdf_57"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "elettrodo_ferro_rame",
+      "label": "Elettrodo Ferro-Rame (Fe-Cu)",
+      "categoria": "elettrocultura",
+      "descrizione": "Inserisci un elettrodo composto da ferro e rame nel terreno per creare una differenza di potenziale che stimola le radici.",
+      "istruzioni_pratiche": [
+        "Collega un chiodo di ferro e un filo di rame, interrandoli a 10-15 cm di profondità e a 5-10 cm di distanza.",
+        "Assicurati che i due metalli non si tocchino direttamente per evitare cortocircuiti.",
+        "Inumidisci il terreno intorno all'elettrodo per migliorare la conducibilità."
+      ],
+      "varianti": [
+        "Fe-Cu",
+        "Fe-Cu (Ferro-Rame)",
+        "Fe-Cu (sinergia metalli)",
+        "Fe-Cu (elettrodo ferro-rame)"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione"
+      ],
+      "rilevanza": 88,
+      "tag_correlati": [
+        "potenziale elettrico",
+        "radici",
+        "nutrizione"
+      ],
+      "pdf_ids": [
+        "pdf_9",
+        "pdf_10",
+        "pdf_36",
+        "pdf_76",
         "pdf_13",
         "pdf_22",
         "pdf_24",
         "pdf_30",
         "pdf_53",
-        "pdf_54",
-        "pdf_55",
-        "pdf_59",
-        "pdf_62"
+        "pdf_54"
       ],
       "pdf_count": 10
     },
@@ -254,9 +290,10 @@
         "nutrizione"
       ],
       "pdf_ids": [
-        "pdf_49"
+        "pdf_49",
+        "pdf_0"
       ],
-      "pdf_count": 1
+      "pdf_count": 2
     },
     {
       "id": "inoculazione_micorrize",
@@ -336,9 +373,10 @@
         "microbi"
       ],
       "pdf_ids": [
-        "pdf_49"
+        "pdf_49",
+        "pdf_0"
       ],
-      "pdf_count": 1
+      "pdf_count": 2
     },
     {
       "id": "farine_di_rocce",
@@ -500,8 +538,13 @@
         "categoria": "elettrocultura"
       },
       {
-        "id": "sinergia_ferro_rame",
-        "label": "Sinergia Ferro-Rame (Fe-Cu)",
+        "id": "multi_onde_lakhovsky",
+        "label": "Oscillatori a Onde Multiple Lakhovsky",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "elettrodo_ferro_rame",
+        "label": "Elettrodo Ferro-Rame (Fe-Cu)",
         "categoria": "elettrocultura"
       },
       {
@@ -573,8 +616,38 @@
       },
       {
         "source": "acqua_magnetizzata",
-        "target": "sinergia_ferro_rame",
+        "target": "multi_onde_lakhovsky",
         "peso": 1
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "elettrodo_ferro_rame",
+        "peso": 3
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "compostaggio_organico",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "fertilizzazione_organica",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "te_di_compost",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "gestione_ph_suolo",
+        "peso": 2
       },
       {
         "source": "antenna_terra",
@@ -588,8 +661,13 @@
       },
       {
         "source": "antenna_terra",
-        "target": "sinergia_ferro_rame",
+        "target": "multi_onde_lakhovsky",
         "peso": 1
+      },
+      {
+        "source": "antenna_terra",
+        "target": "elettrodo_ferro_rame",
+        "peso": 3
       },
       {
         "source": "spirale_rame",
@@ -598,13 +676,53 @@
       },
       {
         "source": "spirale_rame",
-        "target": "sinergia_ferro_rame",
+        "target": "multi_onde_lakhovsky",
+        "peso": 1
+      },
+      {
+        "source": "spirale_rame",
+        "target": "elettrodo_ferro_rame",
         "peso": 1
       },
       {
         "source": "circuito_lakhovsky",
-        "target": "sinergia_ferro_rame",
+        "target": "multi_onde_lakhovsky",
         "peso": 1
+      },
+      {
+        "source": "circuito_lakhovsky",
+        "target": "elettrodo_ferro_rame",
+        "peso": 1
+      },
+      {
+        "source": "multi_onde_lakhovsky",
+        "target": "elettrodo_ferro_rame",
+        "peso": 1
+      },
+      {
+        "source": "elettrodo_ferro_rame",
+        "target": "compostaggio_organico",
+        "peso": 2
+      },
+      {
+        "source": "elettrodo_ferro_rame",
+        "target": "fertilizzazione_organica",
+        "peso": 2
+      },
+      {
+        "source": "elettrodo_ferro_rame",
+        "target": "te_di_compost",
+        "peso": 2
+      },
+      {
+        "source": "elettrodo_ferro_rame",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "elettrodo_ferro_rame",
+        "target": "gestione_ph_suolo",
+        "peso": 2
       },
       {
         "source": "gestione_suolo_vivente",
