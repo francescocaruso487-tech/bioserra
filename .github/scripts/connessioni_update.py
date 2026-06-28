@@ -383,10 +383,18 @@ def main():
             pdf_id_b = pdf_ordinati[j][0]
             chiave = f'{pdf_id_a}|{pdf_id_b}'
             chiave_inv = f'{pdf_id_b}|{pdf_id_a}'
-            # Salta se già connessi con peso semantico alto
-            if chiave in edges_esistenti or chiave_inv in edges_esistenti:
+            # Salta solo se già connessi con edge semantico_reale
+            gia_connessi = chiave in edges_esistenti or chiave_inv in edges_esistenti
+            if gia_connessi:
                 edge = edges_esistenti.get(chiave) or edges_esistenti.get(chiave_inv)
+                # Se già semantico_reale, salta
                 if edge.get('tipo') == 'semantico_reale':
+                    continue
+                # Se è un edge web (almeno uno dei due è web), ri-analizza sempre
+                is_web_a = pdf_id_a.startswith('web_')
+                is_web_b = pdf_id_b.startswith('web_')
+                if not (is_web_a or is_web_b):
+                    # Edge embedding tra PDF classici: salta per oggi
                     continue
             coppie_da_fare.append((pdf_ordinati[i], pdf_ordinati[j]))
 
