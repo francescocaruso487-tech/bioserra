@@ -282,7 +282,7 @@ def main():
         return
 
     # Batch: 10 per notte (veloce perché il testo è già estratto)
-    batch = da_rianalizzare[:10]
+    batch = da_rianalizzare[:20]  # 20 per notte (testo gia estratto, veloce)
     nuove = []
     mistral_count = 0
 
@@ -323,7 +323,7 @@ def main():
         result['testo_id'] = safe_id
         nuove.append(result)
 
-        time.sleep(2)
+        time.sleep(1)
 
     # Merge
     titoli_nuovi = {a['titolo'].strip().lower() for a in nuove}
