@@ -1,0 +1,26 @@
+name: BioSerra - Esperimenti Update
+
+on:
+  schedule:
+    - cron: '30 2 * * *'   # 02:30 UTC dopo connessioni
+  workflow_dispatch:
+
+jobs:
+  esperimenti:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Genera esperimenti da incrocio PDF
+        env:
+          GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+          MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
+        run: python3 .github/scripts/esperimenti_update.py
