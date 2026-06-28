@@ -1434,12 +1434,20 @@ function labPopupSecondBrain() {
   var nPdf  = (labPdfData   && labPdfData.analisi) ? labPdfData.analisi.length : 0;
   var nVec  = (labVettoriData && labVettoriData.vettori) ? labVettoriData.vettori.length : 0;
 
+  var nConcetti = (labConcettiData && labConcettiData.concetti) ? labConcettiData.concetti.length : 0;
+
   var html =
     '<div style="font-size:10px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;margin-bottom:2px">SECOND BRAIN</div>'
   + '<div style="font-size:15px;font-weight:700;color:#00b4ff;letter-spacing:1px;margin-bottom:4px">\uD83E\uDDE0 KNOWLEDGE BASE</div>'
-  + '<div style="font-size:11px;color:var(--text3);margin-bottom:16px">'
-  +   nVec + ' PDF vettorizzati \u00B7 ' + nPdf + ' analizzati \u00B7 ' + edges.length + ' connessioni'
+  + '<div style="font-size:11px;color:var(--text3);margin-bottom:10px">'
+  +   nVec + ' vettori \u00B7 ' + nPdf + ' PDF \u00B7 ' + edges.length + ' link \u00B7 ' + nConcetti + ' wiki'
   + '</div>'
+  + (nConcetti ? '<div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px">'
+      + (labConcettiData.concetti||[]).map(function(c){
+          return '<span onclick="labSbConcettoClick(\'' + labEsc(c.id) + '\',\'' + labEsc(c.label) + '\')" '
+            + 'style="background:rgba(76,175,118,0.08);border:1px solid rgba(76,175,118,0.2);border-radius:20px;'
+            + 'padding:3px 9px;font-size:10px;color:rgba(76,175,118,0.8);cursor:pointer">' + labEsc(c.label) + '</span>';
+        }).join('') + '</div>' : '')
 
   // Box ricerca — centrale e prominente
   + '<div style="margin-bottom:16px">'
@@ -1572,6 +1580,73 @@ function labSbInitGraph(nodi, edges) {
    SECOND BRAIN — click su nodo → popup PDF completo
 ══════════════════════════════════════════════════════════════ */
 
+/* Navigazione grafo (Fase 4) */
+
+function labGrafoNaviga(id, maxHop2) {
+  if (!labGrafoData || !labGrafoData.edges) return { hop1: [], hop2: [] };
+  var edges = labGrafoData.edges;
+  var analisi = (labPdfData && labPdfData.analisi) ? labPdfData.analisi : [];
+  var pdfMap  = {};
+  analisi.forEach(function(a){ if(a.id) pdfMap[a.id] = a; });
+  var hop1 = edges
+    .filter(function(e){ return e.source === id || e.target === id; })
+    .map(function(e){
+      var nid = e.source === id ? e.target : e.source;
+      var src = pdfMap[nid] || {};
+      return { id: nid, titolo: src.titolo || nid, peso: e.peso || 0,
+               sommario: src.sommario || '', tecniche: src.tecniche_chiave || [],
+               tipo: e.tipo || 'normale' };
+    })
+    .sort(function(a,b){ return b.peso - a.peso; });
+  var hop2 = [];
+  if (maxHop2 && hop1.length) {
+    var visti = new Set([id].concat(hop1.map(function(n){ return n.id; })));
+    hop1.slice(0,3).forEach(function(h1) {
+      edges.filter(function(e){ return e.source === h1.id || e.target === h1.id; })
+        .forEach(function(e){
+          var nid = e.source === h1.id ? e.target : e.source;
+          if (!visti.has(nid)) {
+            visti.add(nid);
+            var src = pdfMap[nid] || {};
+            hop2.push({ id: nid, titolo: src.titolo || nid, peso: (e.peso||0)*0.7,
+                        sommario: src.sommario||'', tecniche: src.tecniche_chiave||[], via: h1.titolo });
+          }
+        });
+    });
+    hop2.sort(function(a,b){ return b.peso-a.peso; });
+    hop2 = hop2.slice(0, maxHop2);
+  }
+  return { hop1: hop1, hop2: hop2 };
+}
+
+async function labWikiCarica(concettoId) {
+  if (!concettoId) return null;
+  try {
+    var url = 'https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/wiki/concetti/' + concettoId + '.md?v=' + Date.now();
+    var resp = await fetch(url);
+    if (!resp.ok) return null;
+    var testo = await resp.text();
+    if (!testo || testo.length < 80) return null;
+    if (testo.startsWith('---')) { var endFm = testo.indexOf('---', 3); if (endFm > 0) testo = testo.slice(endFm+3).trim(); }
+    return testo.substring(0, 600);
+  } catch(e) { return null; }
+}
+
+function labWikiMatchConcetto(pdf) {
+  if (!labConcettiData || !labConcettiData.concetti) return null;
+  var tecniche = (pdf.tecniche || pdf.tecniche_chiave || []).map(function(t){ return t.toLowerCase(); });
+  var best = null, bestScore = 0;
+  labConcettiData.concetti.forEach(function(c) {
+    var cl = (c.label||'').toLowerCase();
+    var cv = (c.varianti||[]).map(function(v){ return v.toLowerCase(); });
+    var score = 0;
+    tecniche.forEach(function(t){ if (cl.indexOf(t)!==-1||t.indexOf(cl.substring(0,6))!==-1) score+=2; });
+    cv.forEach(function(v){ tecniche.forEach(function(t){ if(t.indexOf(v.substring(0,5))!==-1) score+=1; }); });
+    if (score > bestScore) { bestScore = score; best = c; }
+  });
+  return best && bestScore > 0 ? best : null;
+}
+
 function labSbNodeClick(d) {
   var edges = (labGrafoData && labGrafoData.edges) ? labGrafoData.edges : [];
   var nodi  = (labGrafoData && labGrafoData.nodi)  ? labSbEnrichNodi(labGrafoData.nodi) : [];
@@ -1605,10 +1680,32 @@ function labSbNodeClick(d) {
   + (conn.length ? '<div style="font-size:9px;color:rgba(0,180,255,0.4);font-weight:700;margin-bottom:6px">PDF COLLEGATI (' + conn.length + ')</div>' + connH : '')
   + '<div style="margin-top:14px"><button onclick="document.getElementById(\'sb-search-input\').value=' + "'" + labEsc(d.titolo||'') + "'" + ';labSbSearch()" style="font-size:11px;padding:7px 14px;border-radius:10px;border:1px solid rgba(0,180,255,0.3);color:#00b4ff;background:rgba(0,180,255,0.08);cursor:pointer;width:100%">\uD83D\uDD0D Cerca argomenti correlati nel Knowledge Base</button></div>';
 
+  var grafo = labGrafoNaviga(d.id, 4);
+  var hop2H = '';
+  if (grafo.hop2.length) {
+    hop2H = '<div style="font-size:9px;color:rgba(155,109,255,0.5);font-weight:700;margin:10px 0 5px">PDF A 2 HOP</div>'
+      + grafo.hop2.map(function(n){
+          return '<div style="font-size:10px;color:rgba(155,109,255,0.6);padding:3px 0;border-bottom:1px solid rgba(155,109,255,0.06)">'
+            + '⋅ ' + labEsc((n.titolo||n.id).substring(0,50))
+            + ' <span style="color:rgba(155,109,255,0.3)">via ' + labEsc((n.via||'').substring(0,25)) + '</span></div>';
+        }).join('');
+  }
   var el = document.getElementById('sb-search-results');
   if (el) {
-    el.innerHTML = '<div style="background:rgba(0,180,255,0.04);border:1px solid rgba(0,180,255,0.2);border-radius:12px;padding:12px 14px;margin-bottom:12px">' + info + '</div>';
+    el.innerHTML = '<div style="background:rgba(0,180,255,0.04);border:1px solid rgba(0,180,255,0.2);border-radius:12px;padding:12px 14px;margin-bottom:12px">' + info + hop2H + '</div>';
     el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  var concettoMatch = labWikiMatchConcetto(d);
+  if (concettoMatch) {
+    labWikiCarica(concettoMatch.id).then(function(wikiTesto) {
+      if (!wikiTesto) return;
+      var wikiBox = '<div style="background:rgba(76,175,118,0.05);border:1px solid rgba(76,175,118,0.15);border-radius:10px;padding:12px;margin-top:10px">'
+        + '<div style="font-size:9px;color:var(--green3);font-weight:700;letter-spacing:0.5px;margin-bottom:6px">📖 WIKI: ' + labEsc(concettoMatch.label) + '</div>'
+        + '<div style="font-size:11px;color:rgba(76,175,118,0.75);line-height:1.7;white-space:pre-wrap">' + labEsc(wikiTesto.substring(0,400)) + '</div>'
+        + '</div>';
+      var inner = el.querySelector('div');
+      if (inner) inner.insertAdjacentHTML('beforeend', wikiBox);
+    }).catch(function(){});
   }
 }
 
@@ -1684,12 +1781,31 @@ async function labSbSearch() {
   // Step 2: sintesi via Cervello AI (Anthropic)
   resEl.innerHTML = '<div style="color:rgba(0,180,255,0.5);font-size:12px;padding:10px;text-align:center">\uD83E\uDDE0 Sintetizzo con AI\u2026</div>';
 
-  var contesto = topPdf.map(function(p, i){
-    return '[PDF ' + (i+1) + '] ' + p.titolo + '\n'
-      + (p.sommario ? 'Sommario: ' + p.sommario.substring(0,200) + '\n' : '')
-      + (p.tecniche && p.tecniche.length ? 'Tecniche: ' + p.tecniche.slice(0,4).join(', ') + '\n' : '')
-      + (p.consiglio ? 'Consiglio: ' + p.consiglio.substring(0,150) + '\n' : '')
-      + (p.estratto ? 'Estratto: ' + p.estratto.substring(0,150) : '');
+  // Grafo: hop1+hop2 arricchisce contesto
+  var pdfPerContesto = topPdf.slice();
+  if (topPdf.length && labGrafoData) {
+    var grafoTop = labGrafoNaviga(topPdf[0].id, 3);
+    var byIdPdf2 = {};
+    pdfAnalisi.forEach(function(a){ if(a.id) byIdPdf2[a.id]=a; });
+    var giaPres = new Set(pdfPerContesto.map(function(p){ return p.id; }));
+    grafoTop.hop1.slice(0,2).concat(grafoTop.hop2.slice(0,2)).forEach(function(n) {
+      if (!giaPres.has(n.id)) {
+        var src = byIdPdf2[n.id] || {};
+        pdfPerContesto.push({ id:n.id, titolo:n.titolo, score:n.peso,
+          sommario:src.sommario||'', tecniche:src.tecniche_chiave||[],
+          consiglio:src.consiglio_coltivazione||src.consiglio_elettrocultura||'',
+          estratto:src.estratto_chiave||'', _hop:n.via?'2hop':'1hop' });
+        giaPres.add(n.id);
+      }
+    });
+  }
+  var contesto = pdfPerContesto.slice(0,8).map(function(p, i){
+    var hl = p._hop ? ' ['+p._hop+']' : '';
+    return '[PDF '+(i+1)+']'+hl+' '+p.titolo+'\n'
+      +(p.sommario?'Sommario: '+p.sommario.substring(0,200)+'\n':'')
+      +(p.tecniche&&p.tecniche.length?'Tecniche: '+p.tecniche.slice(0,4).join(', ')+'\n':'')
+      +(p.consiglio?'Consiglio: '+p.consiglio.substring(0,150)+'\n':'')
+      +(p.estratto?'Estratto: '+p.estratto.substring(0,150):'');
   }).join('\n\n---\n\n');
 
   var antKey = ['sk-ant-api03-','IpveWMEEMfS3py7K','X6S7pAkPWG9T9E6L','2bvDlGH9oGFHj43Y','hZOaBDYjf6cVJiEh','KXJqFaAAA'].join('');
@@ -1772,6 +1888,52 @@ function labSbOpenPdf(pdfId) {
     connessioni: src.connessioni || []
   };
   labSbNodeClick(d);
+}
+
+/* SECOND BRAIN — click su concetto wiki */
+
+async function labSbConcettoClick(cid, clabel) {
+  var resEl = document.getElementById('sb-search-results');
+  if (!resEl) return;
+  resEl.innerHTML = '<div style="color:rgba(76,175,118,0.5);font-size:12px;padding:10px;text-align:center">⏳ Carico wiki: ' + labEsc(clabel) + '…</div>';
+  var concetto  = (labConcettiData && labConcettiData.concetti||[]).find(function(c){ return c.id===cid; });
+  var pdfIds    = concetto ? (concetto.pdf_ids||[]) : [];
+  var pdfColleg = (labPdfData && labPdfData.analisi||[]).filter(function(a){ return pdfIds.indexOf(a.id)!==-1; }).slice(0,4);
+  var grafoAgg  = [];
+  if (labGrafoData && pdfColleg.length) {
+    var visti = new Set(pdfIds);
+    pdfColleg.slice(0,2).forEach(function(pdf){
+      labGrafoNaviga(pdf.id,0).hop1.slice(0,3).forEach(function(n){
+        if (!visti.has(n.id)){ visti.add(n.id); grafoAgg.push(n); }
+      });
+    });
+    grafoAgg.sort(function(a,b){ return b.peso-a.peso; });
+  }
+  var wikiTesto = await labWikiCarica(cid);
+  var html = '<div style="background:rgba(76,175,118,0.05);border:1px solid rgba(76,175,118,0.2);border-radius:12px;padding:14px;margin-bottom:14px">';
+  html += '<div style="font-size:10px;color:var(--green3);font-weight:700;letter-spacing:0.5px;margin-bottom:6px">📖 WIKI: ' + labEsc(clabel) + '</div>';
+  if (wikiTesto) {
+    html += '<div style="font-size:12px;color:rgba(76,175,118,0.8);line-height:1.7;white-space:pre-wrap;margin-bottom:12px">' + labEsc(wikiTesto.substring(0,500)) + '</div>';
+  } else {
+    html += '<div style="font-size:11px;color:rgba(76,175,118,0.4);margin-bottom:8px">Pagina wiki in generazione.</div>';
+    if (concetto && concetto.descrizione) html += '<div style="font-size:12px;color:rgba(76,175,118,0.7);margin-bottom:12px">' + labEsc(concetto.descrizione) + '</div>';
+  }
+  if (pdfColleg.length) {
+    html += '<div style="font-size:9px;color:rgba(0,180,255,0.4);font-weight:700;margin-bottom:6px">PDF COLLEGATI</div>';
+    pdfColleg.forEach(function(p){
+      html += '<div onclick="labSbOpenPdf(\'' + labEsc(p.id) + '\')" style="font-size:11px;color:rgba(0,180,255,0.7);padding:4px 0;border-bottom:1px solid rgba(0,180,255,0.08);cursor:pointer">📄 ' + labEsc((p.titolo||'').substring(0,55)) + '</div>';
+    });
+  }
+  if (grafoAgg.length) {
+    html += '<div style="font-size:9px;color:rgba(155,109,255,0.4);font-weight:700;margin:10px 0 6px">CORRELATI VIA GRAFO</div>';
+    grafoAgg.slice(0,4).forEach(function(n){
+      html += '<div onclick="labSbOpenPdf(\'' + labEsc(n.id) + '\')" style="font-size:10px;color:rgba(155,109,255,0.65);padding:3px 0;cursor:pointer">⋅ ' + labEsc((n.titolo||n.id).substring(0,50)) + '</div>';
+    });
+  }
+  html += '<div style="margin-top:12px"><button onclick="document.getElementById(\'sb-search-input\').value=\'' + labEsc(clabel) + '\';labSbSearch()" style="font-size:11px;padding:7px 14px;border-radius:10px;border:1px solid rgba(76,175,118,0.3);color:var(--green3);background:rgba(76,175,118,0.08);cursor:pointer;width:100%">🔍 Cerca nel Knowledge Base</button></div>';
+  html += '</div>';
+  resEl.innerHTML = html;
+  resEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 /* ══════════════════════════════════════════════════════════════
