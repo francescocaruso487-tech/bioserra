@@ -114,7 +114,20 @@ def trova_testi_per_fase(fase_info, pdf_knowledge, testi_disponibili, max_testi=
             })
             continue
         try:
-            raw = gh_raw(f'data/testi/{safe_id}.txt')
+            # Prova prima in data/testi/, poi in data/testi/web/
+            raw = ''
+            try:
+                raw = gh_raw(f'data/testi/{safe_id}.txt')
+            except:
+                pass
+            if not raw:
+                for sito_web in ['zamnesia', 'rqs']:
+                    try:
+                        raw = gh_raw(f'data/testi/web/{sito_web}/{safe_id}.txt')
+                        if raw:
+                            break
+                    except:
+                        pass
             if raw.startswith('==='): raw = raw[raw.find('\n\n')+2:]
             if '[VUOTO]' in raw[:50]: continue
             testi.append({
@@ -202,13 +215,21 @@ def main():
     pdf_knowledge = json.loads(raw_pdf)
     print(f'PDF in knowledge base: {len(pdf_knowledge.get("analisi",[]))}')
 
-    # Lista testi disponibili
+    # Lista testi disponibili (PDF + web)
     try:
         lista = gh_list('data/testi')
         testi_disp = {f['name'].replace('.txt','') for f in lista if f['name'].endswith('.txt')}
     except:
         testi_disp = set()
-    print(f'Testi estratti disponibili: {len(testi_disp)}')
+    # Aggiungi testi web (zamnesia, rqs)
+    for sito_web in ['zamnesia', 'rqs']:
+        try:
+            for f in gh_list(f'data/testi/web/{sito_web}'):
+                if f.get('type') == 'file' and f['name'].endswith('.txt'):
+                    testi_disp.add(f['name'].replace('.txt',''))
+        except:
+            pass
+    print(f'Testi disponibili (PDF+web): {len(testi_disp)}')
 
     # Carica guide esistenti
     try:
@@ -263,3 +284,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
