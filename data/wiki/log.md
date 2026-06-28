@@ -2,3 +2,9 @@
 
 > Log append-only degli aggiornamenti wiki — generato automaticamente
 
+## [2026-06-28 09:50 UTC] aggiornamento
+- Pagine aggiornate: 16
+- Errori: 0 (nessuno)
+- PDF nella knowledge base: 89
+- Concetti: 15
+
