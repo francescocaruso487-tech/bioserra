@@ -273,12 +273,44 @@ def main():
                 testi_disp.add(f['name'].replace('.txt',''))
     print(f'Testi disponibili (PDF+web): {len(testi_disp)}')
 
-    # FASE 1: Estrai concetti da PDF non ancora processati (5 per notte)
-    pdf_senza_concetti = [
+    # FASE 1: Estrai concetti da PDF rilevanti non ancora processati
+    CATEGORIE_RILEVANTI = {
+        'elettrocultura', 'biodinamica', 'living_soil', 'agricoltura',
+        'fisica_energie', 'fitoterapia', 'scienza', 'web_coltivazione'
+    }
+    TAG_RILEVANTI = ['coltivazione', 'suolo', 'piante', 'elettro', 'biodinamic',
+                     'living', 'compost', 'fertilit', 'guida', 'web']
+
+    def is_rilevante(a):
+        cat = a.get('categoria_reale','')
+        if cat in CATEGORIE_RILEVANTI:
+            return True
+        tags = ' '.join(a.get('tag',[])).lower()
+        if any(t in tags for t in TAG_RILEVANTI):
+            return True
+        # Web sempre rilevante
+        if a.get('fonte_sito'):
+            return True
+        return False
+
+    # Prima i rilevanti, poi gli altri — entrambi filtrati per testo disponibile
+    pdf_senza_concetti_rilevanti = [
         a for a in analisi
-        if titolo_safe(a.get('titolo','')) in testi_disp
+        if (titolo_safe(a.get('titolo','')) in testi_disp
+            or a.get('fonte_sito'))
         and a.get('id','') not in concetti_per_pdf
-    ][:MAX_PDF_CONCETTI]
+        and is_rilevante(a)
+    ]
+    pdf_senza_concetti_altri = [
+        a for a in analisi
+        if (titolo_safe(a.get('titolo','')) in testi_disp
+            or a.get('fonte_sito'))
+        and a.get('id','') not in concetti_per_pdf
+        and not is_rilevante(a)
+    ]
+    # Usa prima i rilevanti, poi eventualmente gli altri se ne restano slot
+    pdf_senza_concetti = (pdf_senza_concetti_rilevanti + pdf_senza_concetti_altri)[:MAX_PDF_CONCETTI]
+    print(f'  Rilevanti: {len(pdf_senza_concetti_rilevanti)} | Altri: {len(pdf_senza_concetti_altri)}')
 
     print(f'\n[FASE 1] Estrazione concetti: {len(pdf_senza_concetti)} PDF (max {MAX_PDF_CONCETTI})')
     nuovi_concetti = 0
@@ -288,7 +320,16 @@ def main():
         safe_id = titolo_safe(titolo)
         print(f'\n  {titolo[:60]}')
 
-        testo = carica_testo_completo(safe_id)
+        # Per voci web usa path specifico
+        if a.get('fonte_sito'):
+            slug = a.get('testo_id', safe_id)
+            sito = a.get('fonte_sito','')
+            try:
+                testo = gh_raw(f'data/testi/web/{sito}/{slug}.txt')
+            except:
+                testo = ''
+        else:
+            testo = carica_testo_completo(safe_id)
         if len(testo) < 200:
             print(f'  Testo insufficiente ({len(testo)} chars)')
             continue
