@@ -375,6 +375,12 @@ def main():
 
     pdf_ordinati = sorted(pdf_con_concetti, key=rilevanza_pdf, reverse=True)
 
+    # Set di coppie già analizzate semanticamente (per non rifare)
+    edges_semantici_set = set()
+    for e in grafo.get('edges', []):
+        if e.get('tipo') == 'semantico_reale':
+            edges_semantici_set.add(f'sem|{e["source"]}|{e["target"]}')
+
     # Genera coppie prioritizzando i più rilevanti
     coppie_da_fare = []
     for i in range(min(10, len(pdf_ordinati))):
@@ -383,19 +389,11 @@ def main():
             pdf_id_b = pdf_ordinati[j][0]
             chiave = f'{pdf_id_a}|{pdf_id_b}'
             chiave_inv = f'{pdf_id_b}|{pdf_id_a}'
-            # Salta solo se già connessi con edge semantico_reale
-            gia_connessi = chiave in edges_esistenti or chiave_inv in edges_esistenti
-            if gia_connessi:
-                edge = edges_esistenti.get(chiave) or edges_esistenti.get(chiave_inv)
-                # Se già semantico_reale, salta
-                if edge.get('tipo') == 'semantico_reale':
-                    continue
-                # Se è un edge web (almeno uno dei due è web), ri-analizza sempre
-                is_web_a = pdf_id_a.startswith('web_')
-                is_web_b = pdf_id_b.startswith('web_')
-                if not (is_web_a or is_web_b):
-                    # Edge embedding tra PDF classici: salta per oggi
-                    continue
+            # Salta solo se già esiste un edge semantico_reale tra questi due PDF
+            chiave_sem = f'sem|{pdf_id_a}|{pdf_id_b}'
+            chiave_sem_inv = f'sem|{pdf_id_b}|{pdf_id_a}'
+            if chiave_sem in edges_semantici_set or chiave_sem_inv in edges_semantici_set:
+                continue
             coppie_da_fare.append((pdf_ordinati[i], pdf_ordinati[j]))
 
     print(f'  Coppie da analizzare: {len(coppie_da_fare)} (max {MAX_COPPIE} [{MODE}])')
@@ -465,4 +463,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
