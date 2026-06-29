@@ -1,6 +1,6 @@
 import os, json, base64, urllib.request, time, math
 
-GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
+GITHUB_TOKEN = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
 MISTRAL_KEY = os.environ['MISTRAL_KEY']
 REPO = 'francescocaruso487-tech/bioserra'
 HEADERS_GH = {
