@@ -232,8 +232,8 @@ def main():
         print('Tutti estratti!')
         return
 
-    # 13 per notte — completiamo 89 PDF in ~7 notti
-    batch = da_fare[:13]
+    # 30 per run — completiamo 89 PDF in ~3 run
+    batch = da_fare[:30]
     stats = {'ok': 0, 'digitale': 0, 'ocr': 0, 'vuoti': 0, 'chunks_totali': 0}
 
     for i, pdf_file in enumerate(batch):
@@ -276,3 +276,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
