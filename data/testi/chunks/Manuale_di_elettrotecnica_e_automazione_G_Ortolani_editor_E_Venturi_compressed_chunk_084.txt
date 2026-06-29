@@ -1,0 +1,1791 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 84/116 ===
+Chars: 45,000 | Offset: 3,668,042
+
+ecimale 3.
+A7 A4 B7 B4
+S7
+S4
+A3 A0 B3 B0
+S1
+S0
+CO1
+CI1
+CO0
+CI0
+7483
+7483
+S3
+S0
+S3 S2 S1 S0
+CO
+CI = 1
+A3 A2 A1 A0 B3 B2 B1 B0
+
+[PAG 1704]
+XVII-104
+ELETTRONICA ANALOGICA E DIGITALE
+15.2  Comparatori
+I comparatori sono circuiti che confrontano due numeri fra di loro, verificandone le
+relazioni d'uguaglianza e di disuguaglianza. I dati sono forniti in parallelo o in serie; in
+questo paragrafo sono considerati i dati in parallelo.
+I comparatori realizzati con circuiti integrati hanno un limitato numero d'ingresso dati;
+ad esempio, l'integrato 7485 ha una coppia di quattro ingressi, quindi si possono confron-
+tare numeri costituiti con solo quattro bit, per confrontare dati con un numero maggiore di
+cifre, si connettono più comparatori o in cascata o ad albero. 
+Per realizzare queste connessioni, gli integrati commerciali hanno ingressi supple-
+mentari indicati con , = e .
+Fig. XVII.15.4   Comparatore di numeri a 8 bit realizzato con comparatori da 4 bit con-
+nessi in cascata.
+Nella Fig. XVII.15.4 sono impiegati due comparatori del tipo 7485, a quattro bit, col-
+legati in cascata per realizzare un comparatore a otto bit. Nella Tab. XVII.15.1 sono ripor-
+tati gli elementi per la comparazione da utilizzare nelle connessioni degli integrati 7485;
+in base ad essa si effettua il confronto fra due numeri, A(2)  A7A6A5A4 A3A2A1A0 e B(2) 
+B7B6B5B4 B3B2B1B0.
+Ad esempio, per comparare i numeri A(2)  0111 1011 (12310) e B(2)  0101 0100
+(8410), al comparatore Comp. 0 si applicano, agli ingressi dei dati, i bit A3A2A1A0  1011 e
+B3B2B1B0  0100; indicando con X il valore degli ingressi supplementari, si pongono gli
+ingressi supplementari  e  al valore X  0, e l'ingresso supplementare  al valore X  1.
+Dal confronto dei bit d'ingresso dati, A3A2A1A0  1011 e B3B2B1B0  0100, il comparatore
+Comp. 0 esegue la comparazione corrispondente al caso 1 della Tab. XVII.15.1, e le uscite
+sono: 0 per A  B e A  B, e 1 per A  B. Agli ingressi del comparatore Comp. 1 si appli-
+cano i bit A7A6A5A4  0111, B7B6B5B4  0101 e agli ingressi supplementari i bit d'uscita di
+Comp. 0: 0,0,1.
+Dal confronto dei bit d'ingresso dati, il comparatore Comp. 1 esegue la comparazione
+corrispondente al caso 5 della Tab. XVII.15.1, e le uscite sono: 0 per A  B e A  B, e 1 per
+A  B; essendo l'uscita A  B allo stato alto, si ha A(2) B(2).
+Si consideri ora il confronto fra A(2)  0111 1011 (12310) e B(2)  0111 0100 (11610). Il
+comparatore Comp. 0 si comporta come nell'esempio precedente; al comparatore Comp. 1
+si applicano i bit A7A6A5A4  0111 e B7B6B5B4  0111, e agli ingressi supplementari i bit
+d'uscita di Comp0 (0,0,1). 
+Dal confronto dei bit d'ingresso dati, Comp. 1 esegue la comparazione corrispondente
+al caso 9 della Tab. XVII.15.1, e le uscite sono: 0 per A  B e A  B, e 1 per A  B; essendo
+l'uscita A  B allo stato alto, si ha A(2)  B(2).
+Comp. 0
+A3
+A2
+A1
+A0
+B3
+B2
+B1
+B0
+A3
+A2
+A1
+A0
+B3
+B2
+B1
+B0
+1
+0
+0
+A7
+A6
+A5
+A4
+B7
+B6
+B5
+B4
+A3
+A2
+A1
+A0
+B3
+B2
+B1
+B0
+=
+<
+>
+=
+<
+>
+A=B
+A<B
+A>B
+Comp. 1
+
+[PAG 1705]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-105
+Tab. XVII.15.1   Elementi per la comparazione per l'integrato 7485
+15.3  Circuiti di codifica e decodifica
+Le codifiche sono utilizzate ad esempio per: la conversione di codice (decimale/bina-
+rio); la codifica dei tasti di una tastiera (alla pressione di un tasto corrisponde la genera-
+zione di un codice standard, interpretato da un sistema a microprocessore). Esempi
+d'applicazione della decodifiche sono: la decodifica BCD/decimale (per la conversione
+binario/decimale); la decodifica per display, che permette di visualizzare i numeri deci-
+mali corrispondenti ai numeri binari; la decodifica d'indirizzi nei circuiti di controllo o nei
+sistemi a microprocessore. I circuiti di codifica e decodifica sono realizzati in forma inte-
+grata, a media scala d'integrazione (MSI); possono essere realizzati anche con singole
+porte logiche, però i circuiti in forma integrata sono più affidabili
+A)  Circuiti di codifica
+I circuiti di codifica, o encoder, sono caratterizzati da n ingressi e m uscite; ad un dato
+istante, un solo ingresso può essere attivo e ad esso corrisponde un determinato stato delle
+uscite; sono indicati come circuiti di codifica da n a m linee (n to m encoder). Ad esempio,
+per convertire i numeri decimali da 0 a 3 nel sistema binario si può impiegare il circuito di
+codifica con porte logiche disegnato nella Fig. XVII.15.5b; può essere attivo un solo
+ingresso alla volta. Nel circuito si hanno due uscite A0 e A1: A1 è a livello alto (1) quando
+Caso
+Comparazione fra dati d’ingresso
+Ingressi
+supplementari
+Uscite
+A3 e B3
+A2 e B2
+A1 e B1
+A0 e B0
+<
+=
+>
+A < B
+A = B
+A > B
+  1
+A3 > B3
+A2 < B2
+A2 = B2
+A2 > B2
+A1 < B1
+A1 = B1
+A1 > B1
+A0 < B0
+A0 = B0
+A0 > B0
+X
+X
+X
+0
+0
+1
+  2
+A3 < B3
+A2 < B2
+A2 = B2
+A2 > B2
+A1 < B1
+A1 = B1
+A1 > B1
+A0 < B0
+A0 = B0
+A0 > B0
+X
+X
+X
+1
+0
+0
+  3
+A3 = B3
+A2 > B2
+A1 < B1
+A1 = B1
+A1 > B1
+A0 < B0
+A0 = B0
+A0 > B0
+X
+X
+X
+0
+0
+1
+  4
+A3 = B3
+A2 < B2
+A1 < B1
+A1 = B1
+A1 > B1
+A0 < B0
+A0 = B0
+A0 > B0
+X
+X
+X
+1
+0
+0
+  5
+A3 = B3
+A2 = B2
+A1 > B1
+A0 < B0
+A0 = B0
+A0 > B0
+X
+X
+X
+0
+0
+1
+  6
+A3 = B3
+A2 = B2
+A1 < B1
+A0 > B0
+A0 < B0
+A0 = B0
+X
+X
+X
+1
+0
+0
+  7
+A3 = B3
+A2 = B2
+A1 = B1
+A0 > B0
+X
+X
+X
+0
+0
+1
+  8
+A3 = B3
+A2 = B2
+A1 = B1
+A0 < B0
+X
+X
+X
+1
+0
+0
+  9
+10
+11
+A3 = B3
+A3 = B3
+A3 = B3
+A2 = B2
+A2 = B2
+A2 = B2
+A1 = B1
+A1 = B1
+A1 = B1
+A0 = B0
+A0 = B0
+A0 = B0
+0
+1
+0
+0
+0
+1
+1
+0
+0
+0
+1
+0
+0
+0
+1
+1
+0
+0
+12
+13
+14
+A3 = B3
+A3 = B3
+A3 = B3
+A2 = B2
+A2 = B2
+A2 = B2
+A1 = B1
+A1 = B1
+A1 = B1
+A0 = B0
+A0 = B0
+A0 = B0
+X
+1
+0
+1
+0
+0
+X
+1
+0
+0
+0
+1
+1
+0
+0
+0
+0
+1
+X indica lo stato di indifferenza, 1 o 0.
+
+[PAG 1706]
+XVII-106
+ELETTRONICA ANALOGICA E DIGITALE
+o I2 o I3 sono attivi; A0 è a livello alto (1) quando o I1 o I3 sono attivi; A1 e A0 sono con-
+temporaneamente a livello basso (0) quando I1, I2 e I3 sono a livello basso (0). Si ottiene
+pertanto la tabella di verità del circuito riportata nella Fig. XVII.15.5a, nella quale si nota
+che, se è attivo un solo ingresso alla volta, l'uscita dà la codifica binaria del numero deci-
+male di ingresso, corrispondente alla linea attivata.
+Fig. XVII.15.5   Esempio di circuito di codifica con 4 ingressi e 2 uscite: a) tabella di ve-
+rità; b) realizzazione con porte OR.
+Vi sono circuiti di codifica chiamati codificatore con priorità, o priority encoder,
+dove possono essere attivati due o più ingressi contemporaneamente. In questo caso, per-
+ché non si abbiano errori di codifica, si assegna un ordine di priorità agli ingressi aggiun-
+gendo porte d'interdizione; all'uscita si ha il codice corrispondente all'ingresso attivato
+che ha priorità più alta. Ad esempio, si consideri la codifica con priorità della Fig.
+XVII.15.6a, che ha le seguenti caratteristiche.
+Fig. XVII.15.6   Esempio di codifica con priorità: a) simbolo di un circuito di codifica;
+b) tabella di verità.
+1)  Vi sono quattro linee di ingresso, I3, I2, I1, I0, con I3 a priorità più alta e I0 a priorità
+più bassa.
+2)  Ogni linea, quando è attiva, deve determinare all'uscita A1A0, il valore binario cor-
+rispondente al pedice dell'indicazione della linea stessa. Ad esempio, se è attiva I2, l'uscita
+deve essere 10; se non è attiva alcuna linea, l'uscita deve essere 00.
+3)  L'ingresso EI d'abilitazione del circuito (Enable Input), quando è alto, attiva il fun-
+zionamento del circuito, quando è basso lo blocca, e le uscite sono tutte a livello 0 indi-
+pendentemente dall'attivazione o meno delle linee d'ingresso.
+4)  L'uscita EO è impiegata per l'abilitazione di eventuali altri circuiti connessi in
+cascata (Enable Output); è a livello alto quando il circuito è abilitato da EI = 1 e contem-
+poraneamente nessuna linea di ingresso è attiva.
+I0
+I1
+I2
+I3
+A0
+A1
+I3
+I2
+I1
+I0
+A0
+A1
+EI
+Circuito di
+codifica
+EO
+GS
+N10
+I0
+I1
+I2
+I3
+A1
+A0
+0
+1
+0
+0
+0
+0
+0
+1
+0
+1
+0
+0
+0
+1
+2
+0
+0
+1
+0
+1
+0
+3
+0
+0
+0
+1
+1
+1
+a)
+b)
+Ingressi
+Uscite
+EI
+I0
+I1
+I2
+I3
+A1
+A0
+GS
+EO
+0
+X
+X
+X
+X
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+1
+1
+X
+X
+X
+1
+1
+1
+1
+0
+1
+X
+X
+1
+0
+1
+0
+1
+0
+1
+X
+1
+0
+0
+0
+1
+1
+0
+1
+1
+0
+0
+0
+0
+0
+1
+0
+a)
+b)
+
+[PAG 1707]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-107
+5)  L'uscita GS (Group Signal), anch'essa utilizzata per connettere altri circuiti, è a
+livello alto quando il circuito è abilitato ed almeno una linea di ingresso è attivata.
+La tabella di verità del circuito è riportata nella Fig. XVII.15.6b; il significato delle
+sue righe è il seguente.
+–  La prima riga corrisponde alla condizione EI = 0, e comunque siano le linee
+d'ingresso, le linee d'uscita sono a livello 0.
+–  La seconda riga indica che il circuito è abilitato (EI = 1), nessuna linea è attiva,
+l'uscita A1A0 vale 00; inoltre, non essendo nessuna linea attiva, è EO = 1 (punto 4) e GS =
+0 (punto 5).
+–  La terza riga indica che il circuito è abilitato ed è attiva la linea I3; essendo questa a
+priorità più alta, l'uscita vale 11 (punto 2), valore binario corrispondente al pedice di I3,
+indipendentemente dall'attivazione degli altri ingressi. Inoltre, si ha GS = 1 (punto 5) e
+EO = 0, perché la linea d'ingresso I3 è attiva.
+–  La quarta riga indica che il circuito è abilitato ed è attiva la linea I2. L'uscita è 102,
+corrispondente al valore del pedice di I2, perché I3 = 0 (I3 ha priorità più alta di I2, ma non
+è attivo); questo avviene indipendentemente dallo stato delle altre linee, perché esse
+hanno priorità più bassa.
+–  In modo analogo si possono commentare le rimanenti righe.
+B)  Circuiti di decodifica
+I circuiti di decodifica, detti anche decodificatori o decoder, hanno n ingressi e m
+uscite; ad ogni combinazione dei livelli degli ingressi corrisponde l'attivazione di una ed
+una sola linea d'uscita. Il numero m delle linee d'uscita è al massimo 2n; generalmente si
+hanno 4, 8, 16 uscite e sono presenti ingressi d'abilitazione indicati con G o E (Enable) o
+S (Strobe). Nella Fig. XVII.15.7b è riportato un esempio di decodifica a n = 2 ingressi e m
+= 4 uscite, realizzato con singole porte logiche.Nella Fig. XVII.15.7a è rappresentata la
+tabella di verità; si vede come ad ogni combinazione delle linee d'ingresso corrisponda
+l'attivazione di una sola linea d'uscita (ad esempio a BA = 10 corrisponde solo Y2 = 1).
+L'ingresso aggiunto G consente di abilitare o meno il decodificatore, a seconda che sia a
+livello 1 o 0. Dalla tabella di verità si ha:
+(XVII.15.2)
+Le applicazioni dei circuiti di decodifica sono diverse, e molte volte si realizzano con
+decoder integrati.
+Fig. XVII.15.7   Decodifica a 2 ingressi e 4 uscite: a) tabella di verità; b) circuito di deco-
+difica.
+Y0
+BAG;
+=
+Y1
+BAG;
+=
+Y2
+BAG;
+=
+Y3
+BAG
+=
+b)
+Y3
+Y2
+Y1
+Y0
+B
+A
+B
+A
+G
+G
+B
+A
+Y3
+Y2
+Y1
+Y0
+0
+X
+X
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+1
+0
+1
+0
+0
+1
+0
+1
+1
+0
+0
+1
+0
+0
+1
+1
+1
+1
+0
+0
+0
+a)
+
+[PAG 1708]
+XVII-108
+ELETTRONICA ANALOGICA E DIGITALE
+C)  Circuiti di decodifica per display a LED a sette segmenti
+I circuiti di decodifica per display o driver, convertono dei dati codificati in modo da
+comandare visualizzatori, detti display, utilizzati per visualizzare numeri o lettere corri-
+spondenti ai dati codificati stessi; i principali circuiti di decodifica sono per display a
+LED a sette segmenti. 
+I display a sette segmenti sono costituiti da diodi LED che hanno la forma di seg-
+menti, ognuno individuato da una lettera, da a a g, come illustrato nella Fig. XVII.15.8a;
+spesso è presente un LED puntiforme, chiamato Dot Point, utilizzato per segnalare la vir-
+gola. Nei display, i catodi o gli anodi dei segmenti sono tutti collegati fra di loro; si hanno
+pertanto due tipi di display a sette segmenti, detti, rispettivamente, a catodo comune (Fig.
+XVII.15.8b) e ad anodo comune (Fig. XVII.15.8c). Un display a LED a sette segmenti a
+catodo comune è quello con sigla FND500, emette luce rossa (è realizzato con GaAsP); la
+piedinatura è riportata nella Fig. XVII.15.8a e i piedini 3 e 8, indicati con k, sono una dira-
+mazione del collegamento dei catodi e sono due per facilitare il cablaggio.
+Fig. XVII.15.8   Display a sette segmenti: a) struttura e piedinatura del display a catodo
+comune FND500; b) esempio di connessione dei diodi a catodo comune; c) esempio di
+connessione dei diodi ad anodo comune.
+Il display FND500, con il driver 9368, costituisce uno dei circuiti più comuni per
+visualizzare il risultato di un conteggio. Il dispositivo 9368 è un decoder, che accetta al
+suo ingresso un codice binario a 4 bit e lo converte in un'uscita in corrente idonea a pilo-
+tare un display a LED a sette segmenti a catodo comune. I dati d'ingresso possono essere
+memorizzati attivando l'ingresso di latch o di memorizzazione. Nella Fig. XVII.15.9a è
+riportata la piedinatura dell'integrato 9368. Le principali caratteristiche del decoder 9368
+sono le seguenti.
+–  È in grado di comandare display a catodo comune direttamente.
+–  Il circuito di decodifica consente di avere la visualizzazione in formato esadeci-
+male, mediante l'attivazione di quelle uscite che, quando il decoder è connesso ad un
+display a sette segmenti, determinano l'accensione dei corrispondenti segmenti. Ad esem-
+pio, quando gli ingressi A3, A2 e A0 sono alti, e A1 è basso (1101 corrisponde a D esadeci-
+male o 13 decimale), sul display si visualizza il carattere d, dato che i segmenti del display
+che s'illuminano sono: b, c, d, e, g.
+–  L'ingresso LE (Latch Enable) d'abilitazione, attivo a livello basso, permette la
+memorizzazione dei dati di ingresso di un latch.
+–  L'ingresso RBI (Ripple Blanking Input) è attivo a livello basso, e consente di spe-
+gnere gli zeri non significativi prima e dopo la virgola, nei numeri a più cifre.
+1
+2
+3
+4
+5
+10
+9
+8
+7
+6
+g
+f
+k
+a
+b
+e
+d
+k
+c DP
+b
+c
+d
+e
+f
+a
+g
+DP
+a)
+DP a
+b
+c
+d
+e
+f
+g
+k
+Display
+b)
+DP a
+b
+c
+d
+e
+f
+g
+UCC
+Display
+c)
+
+[PAG 1709]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-109
+–  Il pin BI/RBO (Blanking Input/Ripple Blanking Output) è sia d'ingresso sia d'uscita.
+Questo terminale, quando è utilizzato come ingresso, è attivo a livello basso, e determina
+lo spegnimento del display collegato, indipendentemente da tutte le altre condizioni
+d'ingresso (blanking); quando è utilizzato come terminale d'uscita, è impiegato per lo spe-
+gnimento degli zeri non significativi del numero. Un esempio di connessione di più deco-
+der, con spegnimento degli zeri all'inizio del numero, è riportato nella Fig. XVII.15.9b. Ad
+esempio, se le cifre del numero sono 0 1 3 9, con 0 la cifra più significativa, il numero
+visualizzato mediante il circuito indicato in figura è 139 e non 0139. In modo analogo si
+possono spegnere gli zeri non significativi dopo la virgola; ad esempio, il numero 1,30 è
+visualizzato come 1,3.
+Nella Fig. XVII.15.9b è riportato un esempio d'impiego di decoder 9368 con display
+FND500, nel caso di visualizzazione di un numero di quattro cifre. I dati d'ingresso pos-
+sono provenire da quattro contatori binari o BCD, e l'ingresso LE consente l'attivazione
+dei latch dei decoder. Per illustrare il funzionamento, si supponga che i valori BCD appli-
+cati ai display, dalla cifra più significativa, siano: 0011, 0101, 1001, 0001. Il decoder rela-
+tivo alla cifra più significativa ha all'ingresso A3 A2 A1 A0  0011, rende attive le uscite a,
+b, c, d, g, ed è visualizzata la cifra 3. Il decoder corrispondente alla cifra immediatamente
+meno significativa ha all'ingresso A3 A2 A1 A0 = 0101, rende attive le uscite a, c, d, f, g, ed
+è visualizzata la cifra 5. Proseguendo in modo analogo con i rimanenti decoder, si ha che
+il numero decimale visualizzato è 3591. Nel caso in cui il numero abbia zeri non significa-
+tivi, essi non sono visualizzati, essendo attivo l'ingresso RBI del decoder della cifra più
+significativa (il terminale è collegato a massa); questa condizione è riportata agli altri
+decoder con il collegamento fra le uscite RBO e gli ingressi RBI.
+15.4  Multiplexer e demultiplexer
+I multiplexer ed i demultiplexer svolgono importanti funzioni nei sistemi digitali: i
+Fig. XVII.15.9   Visualizzazione del risultato di un conteggio:
+a) piedinatura del decoder-driver 9368; b) esempio di circuito
+di visualizzazione di un numero di quattro cifre, con display di
+tipo FND500 e decoder-driver 9368.
+Display FND500
+Display FND500
+Display FND500
+Display FND500
+Cifra più significativa
+Cifra meno significativa
+k
+k
+k
+k
+a
+g
+a
+g
+a
+g
+a
+g
+a
+g
+a
+g
+a
+g
+a
+g
+9368
+9368
+9368
+9368
+RBI
+RBI
+RBI
+RBI
+RBO
+RBO
+RBO
+RBO
+Latch enable
+LE A0 A1 A2 A3
+LE A0 A1 A2 A3
+LE A0 A1 A2 A3
+LE A0 A1 A2 A3
+b)
+9368
+BI/RBO
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+e
+d
+c
+b
+a
+g
+f
+UCC
+A0
+A1
+A2
+A3
+GND
+RBI
+LE
+a)
+
+[PAG 1710]
+XVII-110
+ELETTRONICA ANALOGICA E DIGITALE
+multiplexer permettono di convogliare i segnali, provenienti da una delle linee d'ingresso,
+su un'unica linea d'uscita; i demultiplexer compiono l'operazione inversa, inviando i
+segnali, provenienti da un'unica linea d'ingresso, ad una delle linee d'uscita. Questi dispo-
+sitivi sono realizzati su moduli integrati MSI.
+A)  Multiplexer
+I multiplexer, detti anche MUX o data selector, sono dispositivi con n ingressi ed
+un'uscita; scelto un ingresso, hanno la proprietà di trasmettere alla linea d'uscita i dati pre-
+senti all'ingresso stesso. Oltre alle funzioni d'ingresso, d'uscita, e di selezione d'ingresso,
+vi sono funzioni d'abilitazione ottenute mediante uno o più ingressi, detti strobe ed indi-
+cati con S o G. Nel multiplexer integrato 74151, riportato nella Fig. XVII.15.10a, si
+hanno: otto linee d'ingresso dati, tre linee di selezione, un ingresso d'abilitazione, due
+uscite, una non negata, Y, e una negata, W = Y (la presenza di due uscite, Y e W, aumenta
+la flessibilità del multiplexer, che si può utilizzare nei circuiti in cui sono richieste sia
+l'uscita non negata sia l'uscita negata, senza dovere aggiungere una porta NOT). La tabella
+di verità dell'integrato è riportata nella Fig. XVII.15.10b.
+Fig. XVII.15.10   Multiplexer 74151: a) piedinatura; b) tabella di verità.
+Nel multiplexer 74151, gli ingressi D0  D7 si connettono all'uscita Y solo uno per
+volta; la scelta si determina con gli ingressi di selezione dati C, B, A. Ad ognuna delle
+combinazioni di CBA corrisponde la connessione di una linea d'ingresso all'uscita Y,
+quando l'ingresso d'abilitazione S è portato a livello basso; la linea connessa all'uscita è
+quella d'ingresso che ha nella sua indicazione il pedice dello stesso valore di CBA. Ad
+esempio, se CBA = HLL (100) e S = L (0), la linea D4 è connessa all'uscita; nel caso di
+D4 = L, si ha: Y = L e W = H. I multiplexer trovano applicazione: nella selezione dati (si
+può scegliere quali dati convogliare all'uscita); nella trasmissione dati (consentono di con-
+nettere più linee di dati su un'unica linea di trasmissione, permettendo di ridurre il numero
+di linee occorrenti per trasmettere i segnali); nella generazione di funzioni digitali; nella
+connessione di due o più linee ad otto bit su un unico data bus dati, impiegando multi-
+plexer multipli.
+B)  Demultiplexer
+I demultiplexer, detti anche DMUX o Data distributor, sono dispositivi con un solo
+ingresso e più uscite; il segnale d'ingresso è trasmesso ad un'uscita, scelta in base ai livelli
+degli ingressi di selezione; se m è il numero dei bit del codice di selezione, le uscite indi-
+rizzabili sono al massimo 2m. Il numero n delle uscite deve essere pertanto inferiore o
+uguale a 2m. La loro funzione è opposta a quella dei multiplexer.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+D0
+D1
+D2
+D3
+D4 D5 D6 D7 A
+B
+C
+S
+W
+Y
+Ingressi dati Uscite
+GND
+UCC Ingressi dati Ingressi di selezione
+a)
+Ingressi
+Uscite
+Selezione
+Strobe
+C
+B
+A
+S
+Y
+W
+X
+X
+X
+H
+0
+1
+L
+L
+L
+L
+D0
+D0
+L
+L
+H
+L
+D1
+D1
+L
+H
+L
+L
+D2
+D2
+L
+H
+H
+L
+D3
+D3
+H
+L
+L
+L
+D4
+D4
+H
+L
+H
+L
+D5
+D5
+H
+H
+L
+L
+D6
+D6
+H
+H
+H
+L
+D7
+D7
+b)
+
+[PAG 1711]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-111
+I demultiplexer trovano applicazione in particolare: nella selezione dati (si può sce-
+gliere su quale uscita convogliare i dati d'ingresso); nella trasmissione dati (consentono di
+connettere la linea da cui provengono i dati ad una linea d'uscita selezionata, permettendo,
+con il multiplexer, di ridurre il numero di linee occorrente per trasmettere i segnali).
+16  DISPOSITIVI SEQUENZIALI: LATCH E FLIP-FLOP
+I sistemi sequenziali hanno l'uscita che dipende non solo dai valori presenti agli
+ingressi, ma anche dai valori precedenti; essi hanno pertanto una memoria. In questo para-
+grafo sono esaminati i dispositivi di base dei sistemi sequenziali, latch e flip-flop.
+16.1  Latch SR
+I latch SR sono realizzati con porte o NOR o NAND, hanno due ingressi per i dati, due
+uscite, e due circuiti di reazione positiva che collegano un'uscita ad un ingresso.
+A)  Latch SR con porte NOR
+Nella Fig. XVII.16.1a è disegnato lo schema del circuito di un latch SR realizzato con
+porte NOR; gli ingressi per i dati sono indicati con R e S, e le uscite sono fra loro comple-
+mentari, una è indicata con Q, l'altra con Q (nel seguito si considera solo l'uscita Q). Per
+mantenere inalterato lo stato delle uscite, occorre porre, all'ingresso, S = 0 e R = 0; questa
+condizione è detta stato di memorizzazione o di riposo del latch, e nella tabella di verità il
+valore dell'uscita è indicato con Q0.
+Per S = 0 e R = l, l'uscita Q è allo stato 0, chiamato stato di reset, e il latch è detto
+resettato. Per S = 1 e R = 0, l'uscita Q è allo stato 1, chiamato stato di set, e il latch è detto
+settato. Lo stato degli ingressi S = l, R = 1 dà un'uscita non valida; infatti, per S = l e R =
+1, le porte NOR danno entrambe Q = Q = 0, e questa situazione non è accettabile, perché
+le due uscite devono essere complementari.
+Nella Fig. XVII.16.1b è riportata la tabella di verità, detta anche tabella di eccitazione
+o tabella caratteristica. Nelle Fig. XVII.16.1c e d, sono disegnati i simboli del latch SR
+con porte NOR di uso più comune.
+Fig. XVII.16.1   Latch SR con porte NOR: a) circuito; b) tabella di verità; c) simbolo; d)
+altro simbolo usato. Latch SR con porte NAND: e) circuito; f) tabella di verità; g) sim-
+bolo; h) altro simbolo usato.
+a)
+S
+R
+Q
+Q
+P1
+P2
+c)
+Q
+Q
+R
+S
+d)
+Q
+Q
+R
+S
+e)
+R
+S
+Q
+Q
+P1
+P2
+g)
+R
+S
+Q
+Q
+R
+S
+h)
+R
+S
+Q
+Q
+R
+S
+Q
+Q
+S
+R
+Q
+0
+0
+Q0
+(Memoria)
+0
+1
+0
+(Reset)
+1
+0
+1
+(Set)
+1
+1
+NV (Non valida)
+S
+R
+Q
+0
+0
+NV (Non valida)
+0
+1
+1
+(Set)
+1
+0
+0
+(Reset)
+1
+1
+Q0
+(Memoria)
+b)
+f)
+
+[PAG 1712]
+XVII-112
+ELETTRONICA ANALOGICA E DIGITALE
+B)  Latch SR con porte NAND
+Nella Fig. XVII.16.1e è disegnato lo schema del circuito di un latch SR realizzato con
+porte NAND; gli ingressi per i dati sono indicati con S e R, e le uscite sono fra loro com-
+plementari, una è indicata con Q, l'altra con Q (nel seguito si considera solo l'uscita Q). La
+tabella di verità è analoga a quella del latch SR realizzato con porte NOR, ed è riportata
+nella Fig. XVII.16.1f; vi sono indicati i diversi stati in cui si può trovare il latch. Per S = 0
+e R = 1, il latch è nello stato di Set; per S = 1 e R = 0, il latch è nello stato di Reset; per S =
+1 e R = 1, il latch è nello stato di memorizzazione; per S = 0 e R = 0, le uscite sono Q = Q
+= 1, e non sono considerate valide. Nelle Fig. XVII.16.1g e h, sono disegnati i simboli del
+latch SR con porte NAND di uso più comune.
+Come esempio di impiego di latch, nella Fig. XVII.16.2 è riportato un circuito antirim-
+balzo, realizzato con un latch SR con porte NAND. I circuiti antirimbalzo, detti anche
+debouncer, consentono di eliminare i rimbalzi dei contatti degli interruttori meccanici
+dopo la commutazione.
+Fig. XVII.16.2   Impiego di latch SR: a) circuito con rimbalzo; b) circuito antirimbalzo.
+Si consideri la Fig. XVII.16.2a; quando il commutatore è in A, l'uscita è alta, essendo
+la linea Y connessa all'alimentazione UCC; quando il commutatore passa in B, l'uscita
+dovrebbe essere connessa a massa ed essere bassa; l'uscita non rimane però a 0, perché la
+lamella del commutatore rimbalza sul terminale B diverse volte, prima che si stabilisca la
+connessione permanente, a causa dell’elasticità e dell'inerzia della lamella. Si ha perciò
+una serie di oscillazioni di Y fra 0 e 1, che può essere causa d’errori. Nel circuito b),
+quando la lamella giunge a B, è Y = 0, gli ingressi R e S del latch si trovano rispettiva-
+mente a 0 e 1; in seguito al rimbalzo, la lamella si trova fra i terminali A e B, il latch SR ha
+gli ingressi entrambi a livello 1, situazione di memorizzazione, e Y rimane a livello 0
+senza oscillazioni.
+16.2  Latch con abilitazione
+I latch con abilitazione, oltre all'ingresso per i dati, ne hanno uno di abilitazione, indi-
+cato con EN (enable) o G, che permette di attivare o disattivare l'azione dell'ingresso dati
+sul circuito. Qui sono descritti i latch con abilitazione, di tipo SR e D.
+A)  Latch SR
+Nella Fig. XVII.16.3 sono riportati il simbolo del latch SR con abilitazione, e la
+tabella di verità. Dalla tabella della Fig. XVII.16.3a risulta che, per EN = 1, un latch SR
+con abilitazione si comporta come uno senza ingresso di abilitazione, e, per EN = 0, il
+latch è nello stato di memorizzazione per qualunque stato degli ingressi.
+B)  Latch di tipo D
+Il latch di tipo D (Data latch) con abilitazione ha due ingressi: uno per i dati, indicato
+con la lettera D; l'altro per l'abilitazione, indicato con G. Per G = 1, lo stato dell'ingresso è
+portato all'uscita; per questo il latch di tipo D è detto latch trasparente. Per G = 0, il latch
+B
+A
+R
+Y
+UCC
+a)
+UCC
+R
+R
+B
+A
+R
+S
+Y
+b)
+
+[PAG 1713]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-113
+è nello stato di memorizzazione. Il latch di tipo D con abilitazione è chiamato anche
+Delay latch, perché può memorizzare i dati e mantenerli all'uscita per un intervallo di
+tempo (delay) determinato dal segnale di abilitazione. Nella Fig. XVII.16.4 sono riportati:
+in a) il simbolo; in b) la tabella di verità; in c) un esempio di diagrammi temporali dei
+segnali d'ingresso e d'uscita.
+Fig. XVII.16.3   Latch SR con abilitazione: a) tabella di verità; b) simbolo.
+Fig. XVII.16.4   Latch di tipo D: a) simbolo; b) tabella di verità; c) esempio di diagrammi
+temporali.
+16.3  Caratteristiche di commutazione dei latch
+Le principali caratteristiche di commutazione nel seguito elencate sono riferite al latch
+di tipo D.
+–  tpLH (da D a Q) è l'intervallo di tempo che intercorre fra la commutazione da basso (L)
+ad alto (H) dell'ingresso D e la commutazione da basso (L) ad alto (H) dell'uscita Q (Fig.
+XVII.16.5a).
+–  tpHL (da D a Q) è l'intervallo di tempo che intercorre fra la commutazione da alto (H) a
+basso (L) dell'ingresso D e la commutazione da alto (H) a basso (L) dell'uscita Q (Fig.
+XVII.16.5b).
+–  tpLH (da G a Q) è l'intervallo di tempo che intercorre fra la commutazione da basso (L)
+ad alto (H) dell'ingresso di abilitazione G e la commutazione da basso (L) a alto (H)
+dell'uscita Q (Fig. XVII.16.5c).
+–  tpHL (da G a Q) è l'intervallo di tempo che intercorre fra la commutazione da basso (L)
+ad alto (H) dell'ingresso d’abilitazione G e la commutazione da alto (H) a basso (L)
+dell'uscita Q (Fig. XVII.16.5d).
+I tempi suddetti sono chiamati ritardi di propagazione e indicano con quanto ritardo
+l'uscita risponde all'attivazione degli ingressi.
+b)
+S
+EN
+R
+Q
+Q
+D
+G Q
+Q
+a)
+D
+G
+Q
+0
+t
+1
+2
+3
+4
+5
+6
+7
+8
+9 10
+c)
+D
+G
+Q
+0
+1
+0
+1
+1
+1
+X
+0
+Q0
+(Memoria)
+S
+R
+EN
+Q
+0
+0
+1
+Q0
+(Memoria)
+0
+1
+1
+0
+(Reset)
+1
+0
+1
+1
+(Set)
+1
+1
+1
+NV (Non valida)
+X
+X
+0
+Q0
+(Memoria)
+a)
+b)
+
+[PAG 1714]
+XVII-114
+ELETTRONICA ANALOGICA E DIGITALE
+–  tSETUP, chiamato tempo di stabilizzazione o di setup, è l'intervallo minimo durante il
+quale deve rimanere costante il livello dell'ingresso D, prima che avvenga una transizione
+del segnale d’abilitazione G (Fig. XVII.16.5e), in modo da garantire che il dato d’ingresso
+sia caricato correttamente nel latch.
+–  tHOLD, chiamato tempo di hold o tempo di mantenimento, è l'intervallo di tempo
+minimo durante il quale deve rimanere costante il livello dell'ingresso D, dopo che si è
+verificata una transizione del segnale di abilitazione G (Fig. XVII.16.5f), in modo da
+garantire che il dato d’ingresso sia caricato correttamente nel latch.
+–  tw indica la durata dell'impulso del segnale d’abilitazione G (Fig. XVII.16.5g); deve
+essere tale da garantire che il dato d’ingresso sia caricato correttamente nel latch. Il tempo
+tw indica la minima durata dell'impulso del segnale d’abilitazione, nel caso che questo
+abbia due transizioni consecutive ravvicinate nel tempo; infatti, se l'impulso è troppo
+breve, la risposta del circuito può non essere corretta.
+Fig. XVII.16.5   Caratteristiche di commutazione dei latch: a) tpLH (da D a Q); b) tpHL (da
+D a Q); c) tpLH (da G a Q); d) tpHL (da G a Q); e) tSETUP; f) tHOLD; g) tw.
+16.4  Flip-flop 
+I flip-flop sono dispositivi simili ai latch, di cui rappresentano un'evoluzione; differi-
+scono dai latch, perché hanno un segnale di controllo, detto clock, in sincronismo col
+quale i segnali di uscita assumono i valori determinati dai segnali di ingresso. Vi sono
+diversi tipi di flip-flop; qui sono considerati i flip-flop edge-triggered.
+16.4.1  Flip-flop edge-triggered
+I flip-flop edge-triggered sono dispositivi sincroni bistabili dove, con gli ingressi
+opportunamente sollecitati, l'uscita è attivata in corrispondenza di uno dei due fronti del
+segnale di clock. 
+I flip-flop edge-triggered sono dispositivi bistabili, perché hanno solo due stati stabili
+in cui possono rimanere indefinitamente, e sono dispositivi sincroni, perché operano sin-
+cronizzati dal segnale di clock. Dal modo di commutare, i flip-flop si dividono in positive
+edge-triggered e flip-flop negative edge-triggered, quando la commutazione avviene,
+rispettivamente, sul fronte positivo (di salita) o sul fronte negativo (di discesa) del segnale
+di clock, come riportato nelle Fig. XVII.16.6a, b. I tipi fondamentali di flip-flop edge-trig-
+gered sono: SR, D, JK e T, e i loro simboli sono indicati nella Fig. XVII.16.6. Nei simboli,
+il triangolo in corrispondenza dell'ingresso di clock (Ck) indica che il flip-flop è edge-
+G = 1
+D
+Q
+tpLH
+a)
+G = 1
+D
+Q
+tpHL
+b)
+D = 1
+G
+Q
+tpLH
+c)
+D = 0
+G
+Q
+tpHL
+d)
+D
+G
+tSETUP
+e)
+D
+G
+tHOLD
+f)
+G
+tw
+g)
+
+[PAG 1715]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-115
+triggered; l'assenza o la presenza di un circolino sulla base del triangolo indicano, rispetti-
+vamente, che il flip-flop è attivo sul fronte di salita o sul fronte di discesa.
+Vi sono flip-flop edge-triggered dove è possibile agire sulle uscite, indipendentemente
+dai segnali di clock, mediante ingressi asincroni indicati con PRE (Preset) e CLR (Clear).
+Gli ingressi asincroni sono attivi uno per volta: l'ingresso di Preset determina lo stato di
+set del flip-flop, Q = 1; l'ingresso di Clear determina lo stato di reset del flip-flop, Q = 0.
+Essi possono essere attivi alti o bassi; nel secondo caso o un circolino o la sopralineatura
+o entrambi contraddistinguono i terminali.
+A)  Flip-flop di tipo SR edge-triggered
+Il flip-flop SR edge-triggered è un dispositivo con caratteristiche analoghe a quelle del
+latch SR. Il funzionamento del flip-flop SR positive edge-triggered (Fig. XVII.16.7a) è
+descritto dalla tabella di verità nella Fig. XVII.16.7b dove, nella colonna Ck, la freccia con
+la punta verso l'alto indica che il flip-flop è positive edge-triggered (una freccia con la
+punta verso il basso indica che il flip-flop è negative edge-triggered).
+Fig. XVII.16.7   Flip-flop SR positive edge-triggered: a) simbolo; b) tabella della verità;
+c) esempio di diagrammi temporali.
+Fig. XVII.16.6   Tipi di flip-flop edge-triggered: i tipi SR (a), D
+(c), JK (d), T (e) sono attivi sul fronte di salita; il tipo SR (b) è
+attivo sul fronte di discesa.
+S
+Q
+Ck
+R
+Q
+a)
+S
+Q
+Ck
+R
+Q
+b)
+D
+Q
+Ck
+Q
+PRE
+CLR
+c)
+J
+Q
+Ck
+K
+Q
+d)
+T
+Q
+Ck
+Q
+e)
+S
+Q
+Ck
+R
+Q
+a)
+Ck
+S
+R
+0
+t
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+c)
+Q
+S
+R
+Ck
+Q
+Q
+0
+0
+
+Q0
+Q0
+(Memoria)
+0
+1
+
+0
+1
+(Reset)
+1
+0
+
+1
+0
+(Set)
+1
+1
+
+NV
+NV (Non valida)
+b)
+
+[PAG 1716]
+XVII-116
+ELETTRONICA ANALOGICA E DIGITALE
+La risposta del circuito (segnali Q e Q) si determina considerando gli istanti di com-
+mutazione del segnale di clock e lo stato degli ingressi negli stessi istanti (gli stati sono
+indicati nella tabella di verità). Nella Fig. XVII.16.7c, come esempio, sono riportati i dia-
+grammi temporali della risposta, del segnale di clock e dei segnali d'ingresso di un flip-
+flop positive edge-triggered.
+B)  Flip-flop di tipo D edge-triggered
+I flip-flop di tipo D edge-triggered sono circuiti bistabili dove il segnale d’ingresso D
+è esaminato in corrispondenza della transizione del segnale di clock, e l'uscita Q assume il
+valore di D e subito lo memorizza fino alla transizione successiva.
+Fig. XVII.16.8   Flip-flop di tipo D positive edge-triggered: a) simbolo; b) tabella della
+verità; c) esempio di diagrammi temporali.
+Nella Fig. XVII.16.8 è riportato un flip-flop di tipo D positive edge-triggered, con
+ingressi asincroni di Preset e Clear attivi bassi, come indicato nel simbolo della Fig.
+XVII.16.8a. Gli ingressi asincroni permettono di settare o resettare il flip-flop, indipen-
+dentemente dal segnale di clock; ad esempio, per settare il flip-flop occorre portare
+l'ingresso di Preset a livello basso, mantenendo a livello alto il terminale di Clear. La
+risposta del circuito si determina come nel caso precedente, considerando gli istanti di
+transizione del segnale di clock e gli stati indicati nella tabella di verità della Fig.
+XVII.16.8b. Nella Fig. XVII.16.8c è riportato l'andamento dei segnali applicati D, Ck,
+PRE, CLR e dell'uscita Q del flip-flop.
+C)  Flip-flop di tipo JK edge-triggered
+I flip-flop JK rappresentano un’evoluzione dei flip-flop SR; in essi è eliminata la
+situazione vietata, sostituita con quella detta di toggle, dove le uscite vengono comple-
+mentate rispetto allo stato precedente, in corrispondenza della transizione del segnale di
+clock. Il simbolo del flip-flop JK è disegnato nella Fig. XVII.16.9a. La risposta del flip-
+flop si determina considerando gli istanti in cui si ha transizione del segnale di clock e gli
+stati indicati nella tabella di verità della Fig. XVII.16.9b; nella Fig. XVII.16.9c è riportato
+un esempio di diagramma temporale, con l'andamento dei segnali applicati J, K, Ck e
+dell'uscita Q del flip-flop.
+D)  Flip-flop di tipo T edge-triggered
+Il flip-flop edge-triggered di tipo T, realizzato mediante un JK (Fig. XVII.16.10c), ha
+D
+Q
+Ck
+PRE
+Q
+a)
+CLR
+CLR
+Ck
+D
+0
+t
+1
+2
+3
+4
+5
+6
+7
+8
+9 10
+c)
+Q
+PRE
+PRE CLR
+D
+Ck
+Q
+Q
+0
+1
+X
+X
+1
+0
+1
+0
+X
+X
+0
+1
+0
+0
+X
+X
+NV
+NV
+1
+1
+0
+
+0
+1
+1
+1
+1
+
+1
+0
+1
+1
+X
+0
+Q0
+Q0
+b)
+
+[PAG 1717]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-117
+una sola linea d'ingresso, indicata con T (il nome T deriva da Toggle = cambiamento).
+Quando è T = 1, il flip-flop commuta ad ogni transizione del segnale di clock; quando è T
+= 0, il flip-flop è nello stato di memorizzazione. 
+Il simbolo è disegnato nella Fig. XVII.16.10a; in b) è riportata la tabella di verità; in c)
+è indicato come il flip-flop di tipo T possa essere realizzato con un JK.
+Fig. XVII.16.9   Flip-flop JK edge-triggered: a) simbolo; b) tabella della verità; c) esem-
+pio di diagrammi temporali.
+Fig. XVII.16.10   Flip-flop di tipo T edge-triggered: a) simbolo; b) tabella di verità;
+c) esempio di realizzazione mediante un flip-flop JK.
+La tabella di verità si ricava da quella del JK, tenendo conto che: per T = 0 è J = K =
+0, e quindi Q = Q0 (memorizzazione); per T = 1 è J = K = 1, e quindi Q = Q0 (toggle).
+Il flip-flop di tipo T è usato soprattutto nei circuiti di conteggio. La risposta del cir-
+cuito in funzione del tempo si determina considerando gli istanti in cui si ha transizione
+del segnale di clock ed applicando la tabella di verità della Fig. XVII.16.10b.
+16.4.2  Caratteristiche di commutazione dei flip-flop
+Le principali caratteristiche di commutazione elencate qui sono riferite al flip-flop di
+tipo D, positive edge-triggered, con preset e clear. Ritardo di propagazione, tempo di set-
+up e tempo di hold hanno lo stesso significato visto in relazione alle caratteristiche di
+commutazione dei latch.
+–  fmax è la frequenza massima di clock.
+–  tpLH (Preset), è il ritardo di propagazione fra il fronte di preset da alto a basso, ed il
+fronte dell'uscita Q, da basso ad alto (Fig. XVII.16.11a).
+J
+Q
+Ck
+Q
+K
+a)
+Ck
+J
+K
+0
+t
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+c)
+Q
+T
+Q
+Ck
+Q
+a)
+J
+Q
+Ck
+Q
+K
+c)
+T
+Ck
+J
+K
+Ck
+Q
+Q
+0
+0
+
+Q0
+Q0
+(Memoria)
+0
+1
+
+0
+1
+(Reset)
+1
+0
+
+1
+0
+(Set)
+1
+1
+
+Q0
+Q0
+(Toggle)
+b)
+T
+Ck
+Q
+Q
+0
+
+Q0
+Q0
+(Memoria)
+1
+
+Q0
+Q0
+(Toggle)
+b)
+
+[PAG 1718]
+XVII-118
+ELETTRONICA ANALOGICA E DIGITALE
+–  tpHL (Clear), è il ritardo di propagazione fra il fronte di clear ed il fronte dell'uscita Q,
+entrambi i fronti da alto a basso (Fig. XVII.16.11b).
+–  tpLH (Clock), è il ritardo di propagazione fra il fronte di clock ed il fronte dell'uscita Q,
+entrambi i fronti da basso ad alto (Fig. XVII.16.11c).
+Fig. XVII.16.11   Caratteristiche di commutazione dei flip-flop: a) tpLH (Preset); b) tpHL
+(Clear); c) tpLH (Clock); d) tpHL (Clock); e) tSETUP; f) tHOLD.
+–  tpHL (Clock), è il ritardo di propagazione fra il fronte di clock da basso ad alto, ed il
+fronte dell'uscita Q, da alto a basso (Fig. XVII.16.11d).
+–  tSETUP, detto tempo di setup, è l'intervallo minimo in cui devono rimanere costanti i
+livelli degli ingressi, prima che si presenti un fronte dell'impulso di clock (Fig.
+XVII.16.11e). Garantisce che gli ingressi siano caricati nel flip-flop.
+–  tHOLD, detto tempo di hold, è l'intervallo minimo in cui devono rimanere costanti i
+livelli degli ingressi, dopo il fronte dell'impulso di clock (Fig. XVII.16.11f). Garantisce
+che gli ingressi siano caricati nel flip-flop.
+17  REGISTRI
+I registri sono circuiti realizzati con latch o flip-flop, che memorizzano i bit dei dati o
+modificano la loro posizione all'interno di un dato. In questo paragrafo sono considerati: i
+registri per la memorizzazione dei dati ed i registri a scorrimento, o shift register.
+17.1  Memorizzazione dei dati nei registri
+I registri sono dispositivi utilizzati per memorizzazione dati e renderli disponibili su
+linee d'uscita. Il processo di memorizzazione in un registro può essere di tipo o parallelo o
+serie: nella memorizzazione di tipo parallelo dei bit di un dato, il registro ha un numero
+d'ingressi uguale al numero di bit del dato; in quella di tipo serie, si ha un solo ingresso e
+i bit del dato sono memorizzati in sequenza.
+A)  Memorizzazione di tipo parallelo
+Per illustrare il processo di memorizzazione di tipo parallelo si fa riferimento alla Fig.
+XVII.17.1a, nella quale è riportato il circuito di un registro con quattro flip-flop di tipo D
+PRE
+Q
+tpLH
+a)
+CLR
+Q
+tpHL
+b)
+Ck
+Q
+tpLH
+c)
+Ck
+Q
+tpHL
+d)
+D = 0
+Ck
+tSETUP
+e)
+D = 1
+D = 0
+Ck
+tHOLD
+f)
+D = 1
+
+[PAG 1719]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-119
+positive edge-triggered, con gli ingressi di clock e clear collegati fra loro in modo da
+potere comandare simultaneamente tutti i flip-flop. Il dato in ingresso al registro,
+D3D2D1D0, è a quattro bit, che sono presenti contemporaneamente agli ingressi D dei flip-
+flop; i bit sono memorizzati sul fronte di salita del segnale di clock. Dopo il fronte posi-
+tivo del clock si ha Q3Q2Q1Q0 = D3D2D1D0. L'ingresso di Clear, attivo basso, consente di
+azzerare tutti i flip-flop contemporaneamente.
+Fig. XVII.17.1   Registri per la memorizzazione dei dati: a) esempio di circuito con flip-
+flop di tipo D; b) registro indirizzabile.
+B)  Memorizzazione di tipo serie
+Per illustrare il processo di memorizzazione di tipo serie si fa riferimento alla Fig.
+XVII.17.1b, nella quale è riportato il simbolo di un registro indirizzabile, con un ingresso
+dati D (ingresso seriale), un ingresso d'abilitazione EN (attivo basso), otto uscite, nume-
+rate da 0 a 7, e tre ingressi di selezione delle uscite, S2S1S0. La memorizzazione tipo serie
+di un dato ad otto bit avviene nel seguente modo: si pone EN = 0 per abilitare l'ingresso
+del registro; al primo fronte positivo di clock, il primo bit del dato in ingresso è trasferito
+ad una delle uscite, quella individuata dai bit di selezione; si pone EN = 1 per disabilitare
+l'ingresso del registro; in questo modo il bit è memorizzato ed è sulla linea d'uscita prece-
+dentemente attivata; il processo si ripete per i rimanenti bit del dato. L'ingresso di Clear,
+attivo basso, azzera le uscite.
+17.2  Registri a scorrimento
+I registri a scorrimento, o shift register, sono caratterizzati dalla proprietà di memo-
+rizzare i dati e di farli scorrere a destra o a sinistra. I registri a scorrimento sono formati da
+blocchi in cascata detti celle, costituite da flip-flop edge-triggered di tipo D, JK, SR.
+A)  Costituzione delle celle dei registri e scorrimento dei bit
+Nella Fig. XVII.17.2 è riportato un esempio di registro con due celle; ogni cella è rea-
+lizzata con flip-flop SR positive edge-triggered, e ad ogni flip-flop è applicato lo stesso
+segnale di clock. 
+Fig. XVII.17.2   Esempio di registro a scorrimento.
+Ck
+D3
+D2
+D1
+D0
+Ck
+Ck
+Ck
+Ck
+Q0
+Q1
+Q2
+Q3
+a)
+CLR
+CLR
+CLR
+CLR
+CLR
+D
+Q
+D
+Q
+D
+Q
+D
+Q
+D
+EN
+S2
+S1
+S0
+CLR
+0
+1
+2
+7
+b)
+Ck
+B0B1 = 01
+Ck
+FF0
+S
+Q0
+R
+Q0
+1
+0
+Ck
+FF1
+S
+Q1
+R
+Q1
+1
+I
+
+[PAG 1720]
+XVII-120
+ELETTRONICA ANALOGICA E DIGITALE
+Si suppone che due bit B1 e B0, siano applicati in successione e in sincronismo col
+segnale di clock, all'ingresso I. Inizialmente è I = B1= 1. Sul fronte positivo del primo
+segnale di clock, il flip-flop FF0 ha S = 1, R = 0, e, dopo il fronte di clock, è Q0 = 1 e Q0 =
+0, con Q0 = 1 e Q0 = 0 presenti anche all'ingresso di FF1.
+All'ingresso I è applicato poi B0 = 0, il flip-flop FF0 ha S = 0 e R = 1, mentre per FF1
+si ha S = 1 e R = 0. Al secondo impulso di clock si ha Q0 = 0 all'uscita di FF0, e Q1 = 1
+all'uscita di FF1; quindi è come se il bit B1 = 1 fosse traslato a destra nella cella FF1, e il
+bit B0 = 0 fosse traslato dall'ingresso all'uscita di FF0. Il dato 01, con due impulsi di clock,
+è stato trasferito nel registro.
+B)  Scrittura, scorrimento e lettura dati 
+L'inserimento o ingresso o scrittura e l'uscita o estrazione o lettura dei dati nei regi-
+stri a scorrimento avviene in modo seriale o parallelo.
+1)  Ingresso seriale e scorrimento dei dati. Nel registro con ingresso seriale, le celle
+sono collegate in cascata. I bit del dato sono inseriti in serie, uno dopo l'altro, in sincroni-
+smo con gli impulsi di clock; ad ogni fronte positivo del clock un bit entra nella prima
+cella, e gli altri scorrono di una posizione verso destra. Nella Fig. XVII.17.3a è riportato
+un esempio di ingresso seriale dove i bit scorrono verso destra.
+2)  Uscita seriale. Nel registro con uscita seriale, i bit si presentano in successione, in
+sincronismo col segnale di clock, all'uscita (lo scorrimento nei registri può anche essere
+verso sinistra, ed esistono registri bidirezionali in cui lo scorrimento può avvenire in
+entrambe le direzioni).
+3)  Ingresso parallelo. Nel registro con ingresso parallelo, tutti i bit sono presenti agli
+ingressi contemporaneamente e sono memorizzati dopo l'impulso di clock (Fig.
+XVII.17.3b, c).
+4)  Uscita parallelo. Nel registro con uscita parallelo, tutti i bit memorizzati nel regi-
+stro sono presenti contemporaneamente all'uscita (Fig. XVII.17.3b).
+Fig. XVII.17.3   Registri a scorrimento e segnali di clock, con: a) ingresso ed uscita
+seriali (SISO); b) ingresso ed uscita parallelo (PIPO); c) ingresso parallelo ed uscita
+seriale (PISO); d) ingresso seriale ed uscita parallelo (SIPO).
+Ck
+B0B1B2B3
+B0B1B2
+B0B1
+B0
+Ck
+Ck
+Ck
+Ck
+Ck
+B3
+B2 B3
+B1 B2 B3
+B0 B1 B2 B3
+B0 B1 B2
+a)
+B0 B1 B2 B3
+Ck
+b)
+B0 B1 B2 B3
+Ck
+c)
+B0B1B2B3
+Ck
+d)
+
+[PAG 1721]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-121
+C)  Tipi di registri a scorrimento
+In base alle caratteristiche di lettura e scrittura dati, si hanno i seguenti tipi di registri
+a scorrimento.
+–  SISO (Serial In Serial Out): è un registro con ingresso ed uscita dati seriali (Fig.
+XVII.17.3a).
+–  SIPO (Serial In Parallel Out): è un registro con ingresso seriale ed uscita parallelo.
+All'ingresso del registro s'inseriscono i bit del dato in serie (Serial In), che sono invece
+presenti contemporaneamente sulle linee d'uscita (Parallel Out) (Fig. XVII.17.3d).
+–  PISO (Parallel In Serial Out): è un registro con ingresso dati parallelo ed uscita
+seriale. I bit del dato sono presenti contemporaneamente sulle linee d'ingresso del registro
+(Parallel In); poi, ad ogni impulso di clock, i bit scorrono nel registro ed escono in serie
+(Serial Out) (Fig. XVII.17.3c).
+–  PIPO (Parallel In Parallel Out): è un registro con ingresso ed uscita dati parallelo. I
+bit del dato sono tutti presenti agli ingressi del registro (Parallel In), ed estratti tutti con-
+temporaneamente dalle uscite (Parallel Out) (Fig. XVII.17.3b). Si osservi che, nella defi-
+nizione di registro PIPO, si ha il caricamento ed estrazione dati in parallelo, senza lo
+scorrimento dei bit; per questo esso è chiamato registro parallelo ed è utilizzato solo per
+la memorizzazione di dati 
+18  CONTATORI E DIVISORI DI FREQUENZA
+I contatori sono dispositivi dove all'uscita si rileva il numero d'impulsi applicati
+all'ingresso (conteggio degli impulsi). I contatori possono essere asincroni e sincroni;
+entrambi i tipi possono contare in avanti e/o all'indietro. I divisori di frequenza sono
+dispositivi in cui la frequenza del segnale d'uscita è una frazione di quella del segnale
+d'ingresso.
+18.1  Contatori asincroni binari
+I contatori binari presentano il risultato del conteggio sotto forma di numero binario. I
+contatori asincroni in avanti, binari, sono realizzati con flip-flop, collegando l'uscita di
+uno all'ingresso di clock del successivo; i flip-flop sono attivati, quindi, in successione. I
+flip-flop sono di tipo T attivi sul fronte positivo o sul fronte negativo e il conteggio può
+essere
