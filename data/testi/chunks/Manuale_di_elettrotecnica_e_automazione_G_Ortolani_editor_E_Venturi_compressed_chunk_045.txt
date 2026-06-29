@@ -1,0 +1,1532 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 45/116 ===
+Chars: 44,805 | Offset: 1,943,557
+
+
+
+[PAG 996]
+X-146
+  IMPIANTI ELETTRICI 
+–  prove di tenuta a impulso atmosferico, con forma d'onda 1,2/50 s;
+–  prove di tenuta a impulso di manovra, con forma d'onda 250/2500 s, previste solo
+per il campo C.
+I livelli d'isolamento normali delle apparecchiature sono indicati nelle Tabb. X.9.3,
+X.9.4 e X.9.5.
+9.4  Scaricatori di sovratensione
+Gli scaricatori servono per la protezione dalle sovratensioni; vengono detti anche limi-
+tatori di sovratensione e indicati con l'acronimo SPD (Surge Protective Device). Il sim-
+Tab. X.9.3   Livelli d'isolamento normali (campo A)
+Tensione
+massima Um
+(kV eff.)
+Tensione nominale di tenuta a impulso
+atmosferico (kV di cresta)
+Tensione nominale di tenuta a 
+frequenza industriale di breve 
+durata (1 min) (kV eff.)
+Lista 1
+Lista 2
+3,6
+7,2
+12
+17,5
+24
+36
+41,5
+20
+40
+60
+75
+95
+145
+170
+40
+60
+75
+95
+125
+170
+200
+10
+20
+28
+38
+50
+70
+80
+Nota. I valori della lista 1 o della lista 2 vanno scelti in funzione della severità delle condizioni
+ambientali
+Tab. X.9.4   Livelli d'isolamento normali (campo B)
+Tensione
+massima Um
+(kV eff.)
+Tensione nominale di tenuta a impulso
+atmosferico (kV di cresta)
+Tensione nominale di tenuta a 
+frequenza industriale di breve 
+durata (1 min) (kV eff.)
+52
+72,5
+123
+145
+170
+245
+250
+325
+450, 550
+450, 550, 650
+550, 650, 750
+650, 750, 850, 950, 1050
+95
+140
+185, 230
+185, 230, 275
+230, 275, 325
+275, 325, 360, 395, 460
+Nota. I valori separati dalla virgola sono corrispondenti. Per esempio per la tensione 145 kV sono
+ammesse le combinazioni 450/185 kV, 550/230 kV, 650/275 kV
+Tab. X.9.5   Livelli d'isolamento normali (campo C)
+Tensione
+massima Um
+(kV eff.)
+Tensione nominale di tenuta a impulso 
+di manovra fase-terra 250/2500 s
+(kV di cresta)
+Tensione nominale di tenuta a impulso 
+di manovra fase-fase 250/2500 s
+(kV di cresta)
+300
+420
+525
+765
+750, 850
+950, 1050
+1050, 1175
+1425, 1550
+1125, 1275
+1425, 1575
+1680, 1763
+2423, 2480
+
+[PAG 997]
+IMPIANTI  ELETTRICI                                               X-147
+bolo e il principio di funzionamento di un generico scaricatore spinterometrico sono
+indicati nelle Figure X.9.3a, b.
+Fig. X.9.3   Simbolo grafico (a) e principio di funzionamento (b) di uno scaricatore.
+Quando la tensione verso terra nel punto in cui lo scaricatore è installato si mantiene
+ai livelli normali di esercizio o quando si verifica una sovratensione compatibile con il
+livello di isolamento del sistema, lo scaricatore mantiene la linea isolata da terra. Se
+invece la d.d.p. tra il punto A e la terra supera la tensione d'innesco del dispositivo, tra gli
+elettrodi si manifesta una scarica che convoglia a terra l'onda di sovratensione, proteg-
+gendo le apparecchiature a valle.
+Quando la tensione torna ai valori normali lo scaricatore deve essere in grado di ripri-
+stinare l'isolamento verso terra. Durante il passaggio della corrente di scarica Is la ten-
+sione verso terra del punto A è data da UAO = Us + Ut, essendo Us la tensione propria dello
+scaricatore corrispondente a Is e Ut la tensione della presa di terra. Poiché questa tensione
+è applicata alle apparecchiature a valle, l'isolamento di queste ultime deve essere dimen-
+sionato in modo da sopportarla.
+Costruttivamente vi sono vari tipi di scaricatori.
+–  Scaricatori spinterometrici, a corna o ad aste (Fig. X.9.4a, b) che vengono, di
+solito, montati direttamente sulle apparecchiature da proteggere.
+Fig. X.9.4   Scaricatori spinterometrici: a) a corna; b) ad aste.
+–  Scaricatori a espulsione (a tubo di gas), costituiti schematicamente da uno spintero-
+metro esterno e da uno interno posto entro un tubo isolante rivestito da una sostanza orga-
+nica che, generando gas per il calore prodotto dall'arco, contribuisce allo spegnimento
+dell'arco stesso.
+–  Scaricatori a resistenza non lineare (Fig. X.9.5a, b), formati dalla serie di uno spin-
+terometro S e di un resistore R di caratteristica voltamperometrica non lineare che limita
+la tensione sul circuito a valle.
+Is
+Us
+Ut
+A
+a)
+b)
+a)
+b)
+d
+d
+
+[PAG 998]
+X-148
+  IMPIANTI ELETTRICI 
+–  Varistori a ossidi metallici MOV (Metal Oxide Varistor), del tipo a resistenza non
+lineare e usati nei sistemi BT, aventi una caratteristica tensione-corrente (Fig. X.9.6) che
+presenta un tratto con tensione quasi costante, in modo che durante la scarica la tensione sul
+componente da proteggere non superi un determinato valore (tensione residua).
+Fig. X.9.5   Rappresentazione schematica di uno scaricatore a resistenza non lineare a) e
+caratteristica voltamperometrica del resistore b).
+Fig. X.9.6   Caratteristica tensione corrente di un MOV.
+9.5  Caratteristiche e installazione degli SPD
+Nel campo dei sistemi elettrici di bassa tensione i limitatori di sovratensione SPD ven-
+gono classificati, in base alla loro modalità di funzionamento, in tre categorie.
+–  SPD a commutazione, costituiti da spinterometri in aria o a tubo di gas. Sono detti
+così in quanto il loro innesco ne fa diminuire bruscamente l'impedenza, da un valore
+molto elevato a uno prossimo allo zero, determinando una intensa corrente di scarica.
+–  SPD a limitazione di tensione, costituiti da varistori, diodi a valanga e diodi zener
+che non sopportano elevate correnti di scarica.
+–  SPD combinati, ottenuti dal collegamento in serie o in parallelo dei due elementi
+precedenti.
+In funzione dell'entità delle sollecitazioni termiche a cui vengono sottoposti in fase di
+prova, gli SPD vengono suddivisi in tre classi (Tab. X.9.6).
+Parametri elettrici degli SPD
+Le principali caratteristiche elettriche degli SPD sono le seguenti.
+–  Tensione di esercizio Uc (tensione nominale): è il massimo valore efficace della
+tensione che può essere applicata al dispositivo in modo continuativo. Il suo valore non
+deve essere inferiore alla tensione nominale verso terra del sistema elettrico in cui l'SPD
+deve essere installato.
+S
+R
+U
+I
+0
+1
+2
+a)
+b)
+campo di funzionamento normale
+1000
+100
+10
+108
+105
+102
+1
+102
+105
+U
+I
+
+[PAG 999]
+IMPIANTI  ELETTRICI                                               X-149
+–  Corrente di esercizio Ic: è la corrente che fluisce attraverso l'SPD quando è sottopo-
+sto alla tensione di esercizio Uc. Poiché i limitatori sono collegati in parallelo tra ogni
+conduttore di linea e terra, il valore di Ic deve essere molto piccolo, per evitare scatti
+intempestivi degli eventuali differenziali a monte e per limitare la tensione di contatto
+sulle masse connesse a terra.
+–  Sovratensione temporanea UT: è il massimo valore efficace della tensione che il
+dispositivo può sopportare per un determinato tempo senza intervenire. Deve essere mag-
+giore delle sovratensioni temporanee che normalmente si verificano sull'impianto, per
+evitare interventi intempestivi.
+–  Corrente nominale di scarica In: è il valore di cresta usato per le prove di funziona-
+mento degli SPD.
+–  Massima corrente di scarica Imax: è il valore di cresta dell'onda 8/20 s che un SPD
+di classe II può sopportare almeno una volta senza subire danni. Deve essere Imax  1,2 In.
+–  Tensione d'intervento Ui (o di innesco): è il valore di tensione raggiunto il quale ini-
+zia l'azione limitatrice del dispositivo.
+–  Tensione residua Ures: è il valore di picco della tensione che si manifesta ai capi del
+dispositivo durante l'azione limitatrice, con una corrente di forma e ampiezza definite.
+Tab. X.9.6   Classificazione degli SPD
+Classe
+Forma d'onda della corrente di prova
+Applicazione
+I
+10/350 s
+(tipica della fulminazione diretta)
+All'arrivo di linee molto esposte alla fulmina-
+zione diretta
+II
+8/20 s
+(tipica della fulminazione indiretta)
+All'arrivo di linee in edifici non soggetti alla ful-
+minazione diretta o su linee soggette a una
+minima frazione della corrente di fulmine
+III
+Onda combinata:
+1/50 s a circuito aperto
+8/20 s in corto circuito
+In vicinanza di singole apparecchiature, per pro-
+teggerle contro la tensione residua degli SPD di
+classe I e II installati a monte o contro le sovra-
+tensioni dovute alla eccessiva distanza degli
+SPD posti a monte
+Tab. X.9.7   Caratteristiche tecniche di limitatori di sovratensione tipo MOV per sistemi
+BT in c.a. (serie OBO V 20, Carpaneto & C. spa)
+Caratteristiche tecniche 
+Valori
+Tensione nominale 
+220 V 
+550 V
+Corrente nominale di scarica (forma d'onda 8/20 s)
+15 kA
+15 kA
+Massima corrente di scarica (forma d'onda 8/20 s)
+40 kA
+40 kA
+Tensione residua, con corrente
+1 kA
+5 kA
+10 kA
+15 kA
+40 kA
+0,8 kV
+1,0 kV
+1,2 kV
+1,3 kV
+1,9 kV
+1,7 kV
+2,0 kV
+2,3 kV
+2,5 kV
+3,3 kV
+Tempo di innesco
+< 25 s
+< 25 s
+Temperatura di impiego 
+ 40  80 °C
+
+[PAG 1000]
+X-150
+  IMPIANTI ELETTRICI 
+Nella Tab. X.9.7 sono riportate alcune caratteristiche di limitatori di sovratensione
+costituiti con varistori MOV.
+Installazione degli SPD
+I limitatori di sovratensione vanno collegati in derivazione tra i conduttori di linea e
+l'impianto di terra. Nel caso di impianti poco estesi basta installare un SPD per ogni con-
+duttore attivo, all'ingresso delle linee nell'edificio (Fig. X.9.7), mentre per impianti com-
+plessi può essere necessario installare più SPD in cascata (Fig. X.9.8), nel qual caso
+nascono problemi di coordinamento e di distanza tra gli stessi.
+Fig. X.9.7   Installazione di SPD all'ingresso di una linea trifase.
+Fig. X.9.8   Installazione di SPD in cascata, su una utenza con propria cabina di trasfor-
+mazione MT/BT.
+9.6  Protezione delle strutture ordinarie contro le fulminazioni atmosferiche
+La realizzazione di sistemi di protezione contro i fulmini che possono colpire una
+struttura e i servizi a essa connessi (per esempio linee elettriche, telefoniche, di trasmis-
+sione dati ecc.), sia in modo diretto sia indiretto, è soggetta alle norme tecniche emanate
+dal CT 81 del CEI. Attualmente sono in vigore le norme CEI EN 62305-1-2-3-4 (CEI 81-
+10/1, 81-10/2, 81-10/3, 81-10/4) che trattano, rispettivamente, i principi generali, la valu-
+tazione del rischio, il danno materiale alle strutture e il pericolo per le persone, gli
+L1
+kWh
+L2
+L3
+N
+SPD
+all’impianto di terra
+Cabina
+Quadri di reparto
+Singole apparecchiature
+
+[PAG 1001]
+IMPIANTI  ELETTRICI                                               X-151
+impianti elettrici ed elettronici nelle strutture. Queste norme hanno sostituito le precedenti
+norme CEI 81-1 e 81-4 e la guida CEI 81-8.
+Data la complessità e la specificità dell'argomento, in questo sottoparagrafo ci si limi-
+terà a brevi cenni, rimandando alla normativa e a testi specialistici per eventuali approfon-
+dimenti.
+Il sistema di protezione completo di una struttura contro i fulmini è denominato con
+l'acronimo LPS (Lightning Protection System), ha lo scopo di ridurre il danno materiale
+dovuto alla fulminazione diretta della struttura ed è costituito da un impianto di prote-
+zione esterno (LPS esterno) e da uno interno (LPS interno).
+L'impianto di protezione esterno (Fig. X.9.9) serve a intercettare i fulmini in modo che
+non colpiscano la struttura protetta e a disperdere la corrente di fulmine. È formato dai
+captatori (a maglia, ad asta, a fune), dagli organi di discesa (calate), aventi la funzione di
+condurre la corrente di fulmine al dispersore, e dalla parte adibita a condurre e a disper-
+dere a terra la corrente di fulmine (dispersore). L'impianto interno, invece, comprende
+tutti i dispositivi e le misure di protezione, come per esempio l'installazione di SPD, atti a
+ridurre gli effetti (sovratensioni, sollecitazioni elettrodinamiche e termiche ecc.) della cor-
+rente di fulmine entro la struttura da proteggere, sia per fulminazione diretta che indiretta.
+Per decidere se è necessario o meno installare un sistema di protezione contro i ful-
+mini per la struttura in esame e per i servizi a essa collegati, occorre effettuare la valuta-
+zione del rischio, ossia confrontare il rischio R con il rischio tollerabile RT: la protezione
+contro il fulmine è necessaria se si verifica R  RT per i vari tipi di rischio indicati dalla
+normativa. In questo caso devono essere adottate misure di protezione tali da ridurre il
+rischio al valore tollerato, in modo da ottenere R  RT.
+La normativa prevede, in generale a prescindere dal pericolo di fulminazione, quattro
+tipi di rischio, a seconda del tipo di perdita associata:
+–  rischio R1 con perdita di vite umane;
+–  rischio R2 con perdita di servizio pubblico (per esempio, danni a reti di gas, idriche;
+–  rischio R3 con perdita di patrimonio culturale insostituibile;
+–  rischio R4 con perdita economica, compreso il danno a esseri viventi per le strutture
+in cui può verificarsi la perdita di animali.
+Mentre per i primi tre tipi di rischio la protezione è necessaria se per ogni singolo
+rischio R  RT, a prescindere dal costo da sostenere, nel caso della sola perdita economica
+(rischio R4) è possibile fare una valutazione economica: la protezione contro il fulmine è
+conveniente se la somma del costo CRL della perdita residua in presenza delle misure di
+protezione e del costo CPM di dette misure risulta inferiore al costo CL della perdita totale
+in assenza di protezione.
+In base alla norma CEI 81-10, il rischio relativo alla fulminazione di strutture e/o di
+linee di energia o di segnale è scomposto in otto componenti, indicate con i simboli RA,
+RB, RC, RM, RU, RV, RW, RZ, distinte in funzione del tipo di fulminazione a cui sono asso-
+Fig. X.9.9   Rappresentazione schematica
+di un LPS esterno con captatore a maglia.
+
+[PAG 1002]
+X-152
+  IMPIANTI ELETTRICI 
+ciate e dei danni che possono provocare, come riportato nella Tab. X.9.8.
+Le componenti di rischio indicate devono essere considerate nella determinazione dei
+quattro tipi generali di rischio, a seconda della perdita che possono generare. Per esempio
+le componenti RA e RU possono produrre perdita di vite umane a causa delle elevate ten-
+sioni di contatto indiretto che possono provocare all'esterno o all'interno della struttura
+colpita e anche una perdita economica per le strutture agricole e zootecniche, in cui c'è la
+possibilità di danneggiamento o di morte di animali allevati.
+Nella Tab. X.9.9 sono sintetizzate le componenti di rischio da considerare per ogni
+tipo di perdita.
+X: si considera la componente di rischio indicata in testa alla colonna
+: non si considera la componente di rischio indicata in testa alla colonna
+(1) Solo per strutture con rischio di esplosione, per ospedali con apparecchiature essenziali per la vita 
+umana e per edifici in genere in cui l’avaria di apparecchiature elettriche ed elettroniche può causare 
+direttamente la perdita di vite umane.
+(2) Solo per edifici agricoli in cui vi sia possibilità di perdita di animali.
+Tab. X.9.8   Componenti del rischio relativo alla fulminazione
+Tipo di fulminazione
+Componente di rischio
+Significato
+Diretta dell’edificio
+RA
+Danni a persone o animali per tensioni di con-
+tatto e di passo all'esterno della struttura
+RB
+Danni materiali dovuti a incendio o esplosioni
+RC
+Avarie alle apparecchiature elettriche ed elet-
+troniche
+Indiretta dell’edificio
+RM
+Avarie alle apparecchiature elettriche ed elet-
+troniche
+Diretta di linea
+RU
+Danni a persone o animali per tensioni di con-
+tatto all'interno della struttura
+RV
+Danni materiali dovuti a incendio o esplosioni
+RW
+Avarie alle apparecchiature elettriche ed elet-
+troniche
+Diretta di linea
+RZ
+Avarie alle apparecchiature elettriche ed elet-
+troniche
+Tab. X.9.9  Componenti di rischio da considerare in relazione al tipo di perdita
+Rischio per
+tipo di perdita
+Sorgenti di danno
+Fulminazione
+diretta
+della struttura
+Fulminazione
+indiretta
+della struttura
+Fulminazione
+diretta
+della linea entrante
+Fulminazione
+indiretta
+della linea entrante
+RA   RB   RC
+RM
+RU   RV   RW
+RZ
+R1
+   X     X    X(1)
+X(1)
+   X     X    X(1)
+ X(1)
+R2
+     X    X
+X
+     X    X
+X
+R3
+     X    
+
+     X    
+
+R4
+X(2)  X    X
+X
+X(2)  X    X
+X
+
+[PAG 1003]
+IMPIANTI  ELETTRICI                                               X-153
+10  PROTEZIONE CONTRO I CONTATTI DIRETTI E INDIRETTI
+10.1  Effetti della corrente elettrica circolante nel corpo umano
+La percezione della corrente elettrica e gli effetti che produce quando circola attra-
+verso il corpo umano, in seguito all'applicazione di una d.d.p. tra due punti dello stesso,
+avvengono con valori di corrente diversi per i vari individui e dipendenti da numerosi fat-
+tori, sia soggettivi (sesso, massa corporea, stato di salute) sia legati alla corrente stessa
+(forma d'onda, frequenza, percorso attraverso il corpo).
+Per questa ragione i valori dell'intensità di corrente che vengono associati ai vari
+effetti sono valori medi, ottenuti valutando con criteri statistici i risultati sperimentali.
+Della materia si occupa la pubblicazione CEI 64, fascicolo 4985 R.
+Soglia di percezione
+È il valore minimo di corrente che causa una sensazione alla persona attraverso cui
+fluisce la corrente. Valori di massima per contatto con la mano sono 0,5 mA per c.a. a
+50/60 Hz e 2 mA per corrente continua.
+Sul valore in c.a. influisce la frequenza, all'aumentare della quale deve aumentare
+l'intensità della corrente per essere avvertita. Si definisce fattore di frequenza (Ff) il rap-
+porto tra la corrente di soglia alla frequenza f considerata e la corrente di soglia a 50/60 Hz.
+Il suo andamento in funzione della frequenza è indicato nelle Figg. X.10.1 e X.10.2.
+Tetanizzazione dei muscoli
+Consiste nella contrazione involontaria dei muscoli interessati al passaggio della cor-
+rente, non più comandati dagli impulsi elettrici fisiologici. Nella forma più grave non con-
+sente all'interessato di staccarsi dalla parte in tensione, prolungando il contatto e
+producendo effetti ancora più dannosi.
+Si definisce soglia di rilascio il massimo valore di corrente per il quale una persona
+può staccarsi volontariamente dagli elettrodi con i quali è a contatto. Per c.a. a 50/60 Hz si
+considera il valore di massima di 10 mA, mentre per la corrente continua il rilascio può
+diventare impossibile dopo i 300 mA.
+Fig. X.10.1   Variazione della soglia di
+percezione per frequenze da 50/60 Hz a
+1000 Hz.
+Fig. X.10.2   Variazione della soglia di per-
+cezione per frequenze da 1000 Hz a 10 kHz.
+1,0
+1,2
+1,4
+1,6
+1,8
+2,0
+50/60 100
+200 300
+500
+1000
+frequenza f (Hz)
+fattore di frequenza Ff
+1
+5
+10
+50
+100
+150
+2
+3
+10
+5
+frequenza f (kHz)
+fattore di frequenza Ff
+
+[PAG 1004]
+X-154
+  IMPIANTI ELETTRICI 
+L'aumento della frequenza fa diminuire la pericolosità della corrente; la soglia di rila-
+scio aumenta come indicato nelle Figg. X.10.3 e X.10.4.
+Difficoltà e arresto della respirazione
+Si possono manifestare per correnti di durata maggiore e valori lievemente superiori
+al limite di rilascio. Sono dovuti alla contrazione non controllata dei muscoli addetti alla
+respirazione e alla paralisi dei centri nervosi da cui dipende questa funzione. Il fenomeno
+è reversibile solo se si interviene entro pochi minuti dall'infortunio.
+Ustioni
+Sono prodotte dal calore sviluppato per effetto Joule dalla corrente e dipendono dal
+quadrato della densità di corrente, dalla resistività del tessuto interessato e dalla durata del
+contatto. Densità di corrente di qualche milliampere al millimetro quadrato provocano già
+ustioni per durate dell'ordine del secondo.
+Densità di 50 mA/mm2 provocano la carbonizzazione della pelle in pochi secondi.
+L'effetto termico è quello più pericoloso per i contatti in alta tensione: produce distruzione
+di tessuti e centri nervosi e rottura di arterie.
+Fibrillazione ventricolare
+È uno stato di asincronismo completo delle fibre ventricolari, durante il quale cia-
+scuna fibra sviluppa una contrazione propria e indipendente, ed è dovuto al sovrapporsi
+della corrente esterna alle correnti fisiologiche che fanno contrarre in modo ritmico e
+regolare le fibre muscolari dei ventricoli, correnti prodotte dal nodo senoatriale.
+La fibrillazione si automantiene anche se cessa la causa che l'ha innescata. È l'effetto
+più pericoloso prodotto dalla corrente elettrica e può portare alla morte del soggetto, per
+arresto cardiaco e della circolazione sanguigna, se non si interviene entro pochi minuti
+con un apposito apparecchio, detto defibrillatore.
+I valori di corrente che producono questo effetto (soglia di fibrillazione) vengono
+associati alla probabilità che si inneschi la fibrillazione.
+Il valore di soglia (mA) con probabilità 0,5% di indurre fibrillazione, in soggetti di
+massa corporea 70 kg per c.a. 50/60 Hz, è legato alla durata t del contatto (s) dalla rela-
+zione:
+Fig. X.10.3   Variazione della soglia di rila-
+scio per frequenze da 50/60 Hz a 1000 Hz.
+Fig. X.10.4   Variazione della soglia di rila-
+scio per frequenze da 50/60 Hz a 10 kHz.
+1,0
+1,2
+1,4
+1,6
+1,8
+2,0
+50/60
+100
+200 300
+500
+1000
+frequenza f (Hz)
+fattore di frequenza Ff
+2
+3
+5
+10
+2
+3
+10
+5
+frequenza f (kHz)
+fattore di frequenza Ff
+7
+
+[PAG 1005]
+IMPIANTI  ELETTRICI                                               X-155
+(X.10.1)
+Per esempio con t = 5 s si ha fibrillazione nello 0,5% dei casi con I = 80 mA, valore
+che aumenta a circa 550 mA se si riduce la durata del contatto a 0,1 s.
+All'aumentare della frequenza la corrente diventa meno pericolosa; la soglia di fibril-
+lazione aumenta secondo il grafico di Fig. X.10.5.
+La soglia di fibrillazione dipende anche dal percorso della corrente, risultando minore
+(maggiore pericolosità) per i percorsi caratterizzati da una maggiore densità di corrente
+nella regione cardiaca. Si definisce fattore di percorso il rapporto:
+(X.10.2)
+dove Irif e I sono le intensità di corrente aventi la stessa probabilità di innescare la fibrilla-
+zione e relative, rispettivamente, al percorso di riferimento (mano sinistra-piedi) e a
+quello considerato.
+Percorsi più pericolosi sono quelli con F  1 (I  Irif) e viceversa. I valori del fattore di
+percorso sono riportati nella Tab. X.10.1.
+Fig. X.10.5   Variazione della
+soglia di fibrillazione ventricolare
+per frequenze da 50/60 Hz a 1000
+Hz, per durata del contatto supe-
+riore a un periodo cardiaco e per-
+corso della corrente longitudinale
+attraverso il tronco del corpo.
+Tab. X.10.1   Valori del fattore di percorso F
+Percorso della corrente attraverso il corpo
+Valore di F
+Mani - piedi
+Mano sinistra - piede sinistro
+Mano sinistra - piede destro
+Mano sinistra - piedi
+Mano sinistra - mano destra
+Mano sinistra - dorso
+Mano sinistra - torace
+Mano destra - piede sinistro
+Mano destra - piede destro
+Mano destra - piedi
+Mano destra - dorso
+Mano destra - torace
+Regione glutea verso mano destra o sinistra o entrambi le mani
+1
+1
+1
+1
+0,4
+0,7
+1,5
+0,8
+0,8
+0,8
+0,3
+1,3
+0,7
+I
+165
+185
+
+
+
+t
+
+=
+1
+5
+10
+15
+50/60
+100
+300
+1000
+frequenza f (Hz)
+fattore di frequenza Ff
+F
+Irif
+I
+-------
+=
+
+[PAG 1006]
+X-156
+  IMPIANTI ELETTRICI 
+10.2  Curve di pericolosità della corrente
+Gli effetti della corrente elettrica e i valori tra loro corrispondenti dell'intensità e della
+durata del contatto vengono descritti mediante grafici tempo-corrente di pericolosità con-
+venzionale.
+Corrente alternata sinusoidale
+Il grafico delle zone tempo-corrente relativo agli effetti della c.a. sinusoidale con fre-
+quenza 50/60 Hz è rappresentato nella Fig. X.10.6. È stata considerata una durata minima
+del contatto di 10 ms, corrispondente a una semionda alla frequenza di 50 Hz; per durate
+inferiori la corrente è da considerare impulsiva e gli effetti prodotti sul corpo umano
+variano. Le caratteristiche delle quattro zone sono indicate nella Tab. X.10.2.
+Fig. X.10.6   Zone tempo-corrente relative agli effetti sulle persone della c.a. sinusoidale
+a 50/60 Hz.
+Tab. X.10.2   Caratteristiche delle zone tempo-corrente (c.a. 50/60 Hz)
+Zona 
+Caratteristiche
+1
+È delimitata dalla soglia di percezione (0,5 mA, retta a). Non vi sono reazioni al passag-
+gio della corrente, qualunque sia la sua durata
+2
+È compresa tra la retta a e la spezzata b (soglia di tetanizzazione). Non si verifica normal-
+mente alcun effetto fisiopatologico pericoloso. Con corrente 10 mA non si ha alcun
+effetto pericoloso qualunque sia la durata del contatto. Esso rappresenta il valore di non
+pericolosità convenzionale
+3
+È compresa tra la spezzata b e la soglia di fibrillazione ventricolare c1 riferita al percorso
+mano sinistra-piedi. Possono verificarsi effetti fisiopatologici pericolosi, generalmente
+reversibili, quali contrazioni muscolari, difficoltà di respirazione e disturbi cardiaci
+4
+È delimitata inferiormente dalla curva c1 ed è attraversata dalle curve c2 (soglia di fibril-
+lazione 5%) e c3 (soglia di fibrillazione 50%). In essa si innesca la fibrillazione, con pro-
+babilità crescente per i punti più lontani da c1; possono presentarsi altri effetti
+fisiopatologici, come arresto cardiaco, arresto respiratorio e gravi ustioni
+10
+20
+50
+100
+200
+500
+1000
+2000
+5000
+10 000
+0,1
+0,5
+1
+2
+5
+10
+20
+50 100 200 500 1000
+5000
+corrente (mA)
+tempo (ms)
+1
+2
+3
+4
+a
+b
+c1
+c2 c3
+
+[PAG 1007]
+IMPIANTI  ELETTRICI                                               X-157
+Corrente continua
+Il grafico delle zone tempo-corrente relativo agli effetti della corrente continua è rap-
+presentato nella Fig. X.10.7. Le caratteristiche delle quattro zone sono indicate nella Tab.
+X.10.3.
+Fig. X.10.7   Zone tempo-corrente relative agli effetti sulle persone della corrente continua.
+10.3  Resistenza elettrica del corpo umano
+La corrente IB che attraversa il corpo umano quando esso è sottoposto alla tensione di
+contatto UT è inversamente proporzionale all'impedenza ZB presentata dal corpo tra i punti
+di contatto, essendo IB = UTZB.
+L'impedenza del corpo si può ritenere composta da tre termini (Fig. X.10.8): l'impe-
+denza del punto di entrata, quella del punto di uscita e l'impedenza interna. I primi due ter-
+mini sono dovuti essenzialmente al contatto elettrodo-pelle e allo strato epidermico e
+Tab. X.10.3   Caratteristiche delle zone tempo-corrente (corrente continua)
+Zona 
+Caratteristiche
+1
+È delimitata dalla soglia di percezione (2 mA, retta a). Non vi sono reazioni al passaggio
+della corrente, qualunque sia la sua durata
+2
+È compresa tra la retta a e la spezzata b (soglia di tetanizzazione). Non si verifica normal-
+mente alcun effetto fisiopatologico pericoloso e si è in grado di rilasciare la presa. Il tratto
+verticale della spezzata b indica il valore di non pericolosità convenzionale
+3
+È compresa tra la spezzata b e la soglia di fibrillazione ventricolare c1 riferita al percorso
+mano sinistra-piedi. Abitualmente non si ha alcun danno organico; aumentando l'intensità
+e la durata del contatto diventano probabili disturbi reversibili nella formazione e condu-
+zione degli impulsi elettrici nel cuore. 
+4
+È delimitata inferiormente dalla curva c1 ed è attraversata dalle curve c2 (soglia di fibril-
+lazione 5%) e c3 (soglia di fibrillazione 50%). In essa si innesca la fibrillazione, con pro-
+babilità crescente per i punti più lontani da c1; possono presentarsi altri effetti
+fisiopatologici, come le ustioni, in aggiunta a quelli della zona 3
+10
+20
+50
+100
+200
+500
+1000
+2000
+5000
+10 000
+0,1
+0,5
+1
+2
+5
+10
+20
+50 100 200
+500 1000
+5000
+corrente (mA)
+tempo (ms)
+1
+2
+3
+4
+a
+b
+c1
+c2 c3
+
+[PAG 1008]
+X-158
+  IMPIANTI ELETTRICI 
+hanno carattere ohmico-capacitivo, mentre l'impedenza interna ha carattere ohmico e
+dipende dal percorso della corrente.
+Fig. X.10.8   Circuito elettrico equivalente del corpo umano tra due punti.
+Il carattere capacitivo di ZB è rilevante solo per frequenze superiori a 1 kHz; a fre-
+quenza industriale contano solo i termini resistivi e si considera come resistenza elettrica
+del corpo umano RB quella totale del percorso.
+Fattori influenti e valori della resistenza
+Molti fattori, oltre alla variabilità individuale, influiscono sulla resistenza del corpo,
+come indicato nella Tab. X.10.4.
+Nella Tab. X.10.5 sono riportati i valori indicativi della resistenza elettrica del corpo
+umano in funzione della tensione applicata, misurati tra due mani in condizioni asciutte. I
+valori si riferiscono a quelli statisticamente non superati rispettivamente dal 5%, dal 50%
+Tab. X.10.4   Fattori influenti sulla resistenza elettrica del corpo umano
+Fattore 
+Influenza esercitata
+Percorso della corrente
+Influisce sulla resistenza interna. Il valore maggiore (700  800 ) si ha
+nei percorsi mano-mano e mano-piedi, assunti come riferimento. I valori
+per gli altri percorsi vengono espressi in percentuale rispetto al riferimento
+Stato della pelle
+Influisce sulla resistenza dei punti di contatto con gli elettrodi, che dimi-
+nuisce per la presenza di sudore, umidità, tagli, abrasioni
+Superficie di contatto
+Influisce sulla resistenza dei punti di contatto con gli elettrodi. Se aumenta
+la superficie di contatto la resistenza diminuisce
+Pressione di contatto
+Influisce sulla resistenza dei punti di contatto con gli elettrodi. Se aumenta
+la pressione di contatto la resistenza diminuisce
+Frequenza
+Per frequenze oltre i 1000 Hz RB si riduce al solo termine interno Ri (700 
+800  al massimo), in quanto le resistenze Rs risultano in parallelo con
+reattanze capacitive di valore molto piccolo
+Tensione di contatto
+All'aumentare della tensione applicata la resistenza Rs diminuisce, fino a
+diventare trascurabile per tensioni oltre 100 V, per cui la resistenza RB
+tende al valore Ri (Tab. X.10.5)
+Rs
+Rs
+Rs
+Rs
+Ri
+Ri
+Cs
+Cs
+
+[PAG 1009]
+IMPIANTI  ELETTRICI                                               X-159
+e dal 95% della popolazione. Rispetto a quelli tabulati e per tensioni fino a 50 V, i valori
+si riducono del 25% nel caso di pelle bagnata con acqua e del 50% con soluzioni condut-
+trici.
+Il valore RB = 1000 , non superato dal 5% delle persone per tensione 220 V, è stato
+assunto come resistenza convenzionale del corpo umano, per la definizione di alcune pro-
+cedure di prova delle tensioni di contatto.
+10.4  Curve di sicurezza della tensione
+Impianti utilizzatori in bassa tensione
+Per gli impianti utilizzatori con tensione nominale non superiore a 1000 V c.a. e
+1500 V c.c. (impianti BT) la norma CEI 64-8 pone dei limiti alla tensione di contatto a
+vuoto UST, definita come la tensione esistente tra la massa M di un apparecchio utilizza-
+tore e la terra (considerata convenzionalmente a potenziale zero, punto T0), quando si
+verifica un guasto di isolamento nell'apparecchio, ma nessuna persona tocca la massa
+stessa (Fig. X.10.9a). La tensione di contatto UT è invece quella che si ha sulla persona
+quando effettivamente c'è il contatto con la massa (Fig. X.10.9b). I parametri RE ed REB
+indicano, rispettivamente, la resistenza dell'impianto di terra e la resistenza verso terra
+della persona, equivalente a tutto il complesso di resistenze esistenti tra il punto di appog-
+gio a terra della persona e il punto T0.
+Tab. X.10.5   Valori indicativi della resistenza elettrica del corpo umano misurati tra due
+mani in condizioni asciutte, al variare della tensione applicata
+Tensione (V)
+Valori di RB () che non sono superati dalla percentuale di popolazione indicata
+5%
+50%
+95%
+25
+50
+75
+100
+125
+220
+700
+1000
+Valore asintotico
+1750
+1450
+1250
+1200
+1125
+1000
+750
+700
+650
+3250
+2625
+2200
+1875
+1625
+1350
+1100
+1050
+750
+6100
+4375
+3500
+3200
+2875
+2125
+1550
+1500
+850
+Fig. X.10.9   Tensione di contatto a vuoto (a) e tensione di contatto (b). La chiusura
+dell'interruttore simula il contatto della persona con la massa.
+RE
+RB
+REB
+U0
+UST
+M
+T0
+a)
+RE
+RB
+REB
+U0
+UST
+M
+T0
+UT
+b)
+
+[PAG 1010]
+X-160
+  IMPIANTI ELETTRICI 
+Supponendo per semplicità che nel passaggio da vuoto a carico la tensione UST non
+vari, si avrà:
+(X.10.3)
+Vale inoltre la relazione:
+(X.10.4)
+che mostra che UT, pur dipendendo dal rapporto REBRB, è sempre inferiore a UST (al
+limite UT = UST per REB = 0). Se si limitano i valori della tensione di contatto a vuoto
+risultano limitati, di conseguenza, quelli della tensione di contatto.
+La tensione di contatto a vuoto i cui valori e la cui durata non creano effetti pericolosi
+è detta tensione di contatto a vuoto ammissibile, indicata con USTP. I suoi valori, riferiti a
+quelli del tempo di permanenza del guasto tF, costituiscono i punti della curva di sicu-
+rezza. Essi vengono convenzionalmente definiti con la seguente procedura:
+–  si considerano le coppie tempo-corrente di una curva di sicurezza convenzionale
+posta nella zona tra la spezzata b e la curva c1 del grafico di Fig. X.10.6;
+–  si considerano come valori di RB quelli non superati dal 5% delle persone per il per-
+corso mani unite-piedi, pari alla metà dei corrispondenti valori della Tab. X.10.5;
+–  per la resistenza REB si considerano come valori convenzionali 1000  per le condi-
+zioni ambientali ordinarie e 200  per i contatti in condizioni particolari (cantieri di
+costruzione e demolizione, locali a uso medico, strutture a uso agricolo e zootecnico), per
+i quali ci si può trovare in condizioni di minor isolamento dal terreno;
+–  si applica la relazione X.10.3 per il calcolo della tensione USTP.
+I valori delle curve di sicurezza tensione-tempo sono riportati nella Tab. X.10.6. I rela-
+tivi grafici sono indicati nella Fig. X.10.10.
+Si definisce tensione di contatto limite convenzionale UL il massimo valore della ten-
+sione di contatto che è possibile mantenere per un tempo indefinito, in condizioni ambien-
+tali specificate.
+I valori si deducono dalle curve di sicurezza e sono riportati nella Tab. X.10.7.
+Tab. X.10.6   Curve di sicurezza tensione-tempo
+USTP (V)
+Condizioni ordinarie
+Condizioni particolari
+RB + REB ()
+IB (mA)
+tF (s)
+RB + REB ()
+IB (mA)
+tF (s)
+25
+50
+75
+90
+110
+150
+230
+280
+500
+
+1725
+1625
+1600
+1535
+1475
+1375
+1370
+1360
+
+29
+46
+56
+72
+102
+167
+204
+368
+
+5
+0,60
+0,45
+0,36
+0,27
+0,17
+0,12
+0,04
+1075
+925
+825
+780
+730
+660
+575
+570
+
+23
+54
+91
+115
+151
+227
+400
+491
+
+5
+0,47
+0,30
+0,25
+0,18
+0,10
+0,03
+0,02
+
+UST
+RB
+REB
++
+
+IB
+=
+UT
+UST
+RB
+RB
+REB
++
+------------------------
+UST
+1
+1
+REB
+RB
+---------
++
+--------------------
+=
+=
+
+[PAG 1011]
+IMPIANTI  ELETTRICI                                               X-161
+Fig. X.10.10   Curve di sicurezza per c.a. a 50/60 Hz. Condizioni ordinarie: REB = 1 k;
+condizioni particolari: REB = 200 .
+Impianti in c.a. a tensione superiore a 1000 V
+Per questi impianti la norma CEI 11-1 prevede altri limiti di tensione, considerando
+sia la tensione di contatto ammissibile UTP sia la USTP prima definita.
+Nella Fig. X.10.11 e nella Tab. X.10.8 sono riportati i valori di UTP in funzione del
+tempo tF di permanenza della corrente. Per guasti di durata maggiore di 10 s si può far
+riferimento al valore 75 V.
+Tab. X.10.7   Valori della tensione di contatto limite convenzionale per impianti BT
+Circuito
+Valori di UL (V)
+Condizioni
+Ordinarie
+Particolari
+Corrente alternata 50/60 Hz
+50
+25
+Corrente continua
+120
+60
+10
+20
+50
+100
+200
+500
+1000
+2000
+5000
+10 000
+20
+50
+100
+200
+500 1000
+tensione di contatto a vuoto ammissibile USTP (V)
+tempo di permanenza del guasto tF (ms)
+condizioni particolari
+condizioni ordinarie
+
+[PAG 1012]
+X-162
+  IMPIANTI ELETTRICI 
+Fig. X.10.11   Curva di sicurezza per c.a. con tensione superiore a 1000 V.
+10.5  Impianto di terra
+Quando un dispersore emisferico (Fig. X.10.12) di raggio r0 disperde in un terreno di
+resistività elettrica costante E la corrente di terra IE, la corrente si ripartisce in maniera
+uniforme in tutte le direzioni (caso ideale). Indicando con uE la d.d.p. tra un generico
+punto A del terreno, a distanza r dal dispersore, e un punto di riferimento a distanza infi-
+nita, l'andamento del potenziale è rappresentato nella Fig. X.10.13 e la legge di variazione
+è espressa dalla funzione iperbolica:
+(X.10.5)
+Tab. X.10.8   Valori della tensione di contatto ammissibile per c.a. con tensione superiore
+a 1000 V (norma CEI 11-1)
+tF (s)
+UTP (V)
+10
+2
+1
+0,80
+0,70
+0,60
+0,50
+0,39
+0,20
+0,14
+0,08
+0,04
+80
+85
+103
+120
+130
+155
+220
+300
+500
+600
+700
+800
+4
+5
+6
+100
+0,05
+0,1
+0,2
+0,3 0,4 0,5
+1
+tempo di permanenza della corrente tF (s)
+tensione di contatto UTP (V)
+7
+8
+9
+2
+5
+6
+7
+8
+9
+3
+4
+1000
+0,7
+2
+3
+4 5 6 7 8 9 10
+uE
+EIE
+2r
+-----------
+=
+
+[PAG 1013]
+IMPIANTI  ELETTRICI                                               X-163
+Fig. X.10.12   Campo di corrente creato da un elettrodo emisferico.
+Fig. X.10.13   Andamento del potenziale nel terreno per dispersione da un elettrodo emi-
+sferico. AP: potenziale del punto A rispetto a un punto di riferimento a distanza infinita.
+BP: d.d.p. tra i dispersore e il punto A.
+Si definisce tensione totale di terra UE la differenza di potenziale tra il dispersore e il
+punto di riferimento a potenziale zero, posto teoricamente a distanza infinita ma, in pra-
+tica, sufficientemente lontano dall'elettrodo da poterne trascurare il potenziale.
+Nel caso del dispersore emisferico la sua espressione si ricava dalla X.10.5, sostituendo r0 a r:
+(X.10.6)
+Si definisce resistenza totale di terra il rapporto RE = UEIE tra la tensione e la cor-
+rente di terra. Nel caso del dispersore emisferico è data da:
+(X.10.7)
+La RE rappresenta la resistenza elettrica equivalente presentata dal percorso tra l'elet-
+trodo disperdente E e il punto convenzionale a potenziale zero T0 (Fig. X.10.14).
+Fig. X.10.14   Resistenza totale di terra.
+r
+IE
+r0
+dr
+B
+P
+A
+r0
+r0
+r
+0
+u
+UE
+EIE
+2r0
+-----------
+=
+RE
+UE
+IE
+------
+E
+2r0
+-----------
+=
+=
+IE
+T0
+E
+UE
+RE
+
+[PAG 1014]
+X-164
+  IMPIANTI ELETTRICI 
+Tensioni di contatto e di passo
+Vengono definite dalla norma CEI 11-1 per impianti in c.a. con tensione superiore a
+1000 V, per i quali la tensione di contatto UT è definita convenzionalmente per il contatto
+mano-piedi, con la mano a contatto con la massa in esame e i piedi alla distanza di 1 m
+dalla proiezione verticale del punto considerato. I valori di UT consentiti dalla norma
+costituiscono la tensione di contatto ammissibile UTP considerata nella Fig. X.10.11 e
+nella Tab. X.10.8.
+La tensione di contatto a vuoto UST è la d.d.p. che si localizza tra la massa e i punti del
+terreno a distanza 1 m in occasione di un guasto a terra, ma in assenza del corpo umano
+(Fig. X.10.15).
+La tensione di passo US è quella che si stabilisce tra i piedi di una persona, posti con-
+venzionalmente a 1 m di distanza tra loro, in occasione di un guasto a terra; è dovuta al
+diverso valore del potenziale assunto dai vari punti del terreno. Il valore che si ha in occa-
+sione di un guasto a terra in assenza del corpo umano costituisce la tensione di passo a
+vuoto USS (Fig. X.10.15).
+I valori di US consentiti dalla norma costituiscono la tensione di passo ammissibile
+USP. Essa è pari a tre volte quella di contatto ammissibile, tenuto conto che il percorso
+piede-piede è meno pericoloso di quello mano-piedi.
+Fig. X.10.15   Tensioni di contatto (UST) e di passo (USS) a vuoto.
+Impianto di terra globale
+Con questa dicitura la norma CEI 11-1 intende un impianto di terra, realizzato con l'inter-
+connessione di più impianti di terra, che assicura, data la vicinanza degli impianti stessi,
+l'assenza di tensioni di contatto pericolose. Questo impianto permette la ripartizione della
+corrente di terra in modo da ridurre l'aumento del potenziale di terra negli impianti di terra
+singoli. Si può dire che tale impianto formi una superficie quasi equipotenziale.
+10.6  Costituzione dell'impianto di terra
+La Fig. X.10.16 mostra schematicamente la composizione di un impianto di terra per
+un sistema di categoria I.
+Dispersori
+I dispersori sono corpi metallici che hanno il compito di realizzare il collegamento
+elettrico con il terreno, per disperdervi correnti elettriche. Sono detti dispersori propri o
+intenzionali quelli che vengono infissi al solo scopo di disperdere corrente in occasione di
+un guasto a terra, dispersori naturali o di fatto i corpi metallici immessi nel terreno per
+altri scopi ma che collaborano, se collegati, alla dispersione a terra della corrente (ferri di
+armatura degli edifici, basamenti delle macchine, serbatoi interrati ecc.).
+È vietato utilizzare come dispersori le tubazioni del gas, dell'aria compressa e simili
+(DPR 547/1955, art. 326). L'uso delle tubazioni dell'acqua potabile è, in teoria, possibile
+per impianti con tensione nominale non superiore a 1000 V, ma in pratica è soggetto ad
+UST
+USS
+u
+r
+1 m
+1 m
+0
+
+[PAG 1015]
+IMPIANTI  ELETTRICI                                               X-165
+autorizzazioni e vincoli burocratici che lo rendono praticamente inattuabile.
+Fig. X.10.16   Parti costituenti un impianto di terra.
+Le forme, i materiali e le dimensioni minime dei dispersori sono riportati nella Fig.
+X.10.17 e nelle Tabb. X.10.9 e X.10.10, a seconda che si tratti di impianti soggetti alla
+norma CEI 64-8 (impianti utilizzatori BT) o alla norma CEI 11-1 (c.a. con tensione supe-
+riore a 1000 V).
+Fig. X.10.17   Dimensioni minime dei dispersori (norma CEI 64-8). Per l'acciaio non zin-
+cato valgono i valori relativi a quello zincato, purché con spessore aumentato del 50% e
+sezione minima 100 mm2. I valori sono riportati nella Tab. X.10.9.
+L1
+L2
+L3
+N
+PE
+PE
+PE
+PE
+M
+M
+EQS
+ME
+ME
+EQP
+COL
+CT
+D
+D
+D
+D
+PE 
+Conduttore di protezione
+M 
+Massa
+ME Massa estranea
+EQP Collegamento equipotenziale principale
+EQS Collegamento equipotenziale supplementare
+COL Collettore di terra
+CT
+Conduttore di terra
+P
+Pozzetto
+D
+Dispersore
+A
+s
+Nastro
+A
+Tondino a conduttore massiccio
+A
+d
+Conduttore cordato
+s
+de
+Picchetto a tubo
+d
+Picchetto massiccio
+a
+s
+Picchetto in profilato
+
+[PAG 1016]
+X-166
+  IMPIANTI ELETTRICI 
+Tab. X.10.9   Dimensioni minime del dispersore di terra (norma CEI 64-8, guida CEI 64-
+12)
+Tipo di elettrodo
+Dimensioni minime
+Acciaio zin-
+cato a caldo 
+(norma CEI 
+7-6)a
+Acciaio rive-
+stito di rame
+Rame
+Per posa
+nel terreno
+piastra
+spessore (mm)
+3
+b
+3
+nastro
+spessore (mm)
+sezione (mm2)
+3
+100
+b
+3
+50
+tondino o conduttore
+massiccio
+sezione (mm2)
+50
+b
+35
+conduttore cordato
+Ø ciascun filo (mm)
+sezione corda (mm2)
+1,8
+50
+b
+1,8
+35
+Per 
+infissione
+nel terreno
+picchetto a tubo
+Ø esterno (mm)
+spessore (mm)
+40
+2
+b
+30
+3
+picchetto massiccio
+Ø (mm)
+20
+15c
+d
+15
+picchetto in profilato
+spessore (mm)
+dim. trasversale (mm)
+5
+50
+b
+5
+50
+Note. a Anche acciaio senza rivestimento protettivo purché con dimensioni lineari aumentate del
+50% (sezione minima 100 mm2). b Tipo e dimensioni non considerati dalla norma. c Rivestimento
+per deposito elettrolitico: 100 m. d Rivestimento per trafilatura: 500 m
+Tab. X.10.10   Materiali e dimensioni minime dei dispersori (all. A, norma CEI 11-1)
+Materiale
+Tipo di
+dispersore
+Dimensione minima
+corpo
+rivestimento/guaina
+diametro 
+(mm)
+sezione
+trasversale
+(mm2)
+spessore 
+(mm)
+valori
+singoli
+(m)
+valori 
+medi
+(m)
+Acciaio
+Zincato a caldo
+piattinad
+90
+3
+63
+70
+profilato
+(inclusi i piatti)
+90 (250)
+3 (5)
+63
+70
+tubo
+25
+2
+47
+55
+barra tonda per 
+picchetto
+16 (20)
+63
+70
+tondo per 
+dispersore oriz-
+zontale
+10
+50
+Con guaina di 
+piomboc
+tondo per 
+dispersore oriz-
+zontale
+8
+1000
+Con guaina di 
+rame estrusa
+barra tonda per 
+picchetto
+15
+2000 (500)
+Con guaina di 
+rame elettrolitico
+barra tonda per 
+picchetto
+14,2 (15)
+90
+100
+
+[PAG 1017]
+IMPIANTI  ELETTRICI                                               X-167
+Tab. X.10.10 Segue
+Conduttori di terra e di protezione
+Il conduttore di terra è quello che collega i dispersori tra loro e al collettore (o nodo)
+principale di terra ed è isolato dal terreno. Se il collegamento tra i dispersori viene fatto
+con un conduttore interrato, quest'ultimo è da considerare come dispersore. I conduttori di
+terra devono essere di materiale metallico di sufficiente resistenza meccanica e possono
+essere realizzati con fili, corde, piattine, tubi e simili.
+I conduttore di protezione (PE) servono per il collegamento a terra delle masse degli
+utilizzatori fissi e dei poli di terra delle prese. Alcuni PE principali vengono collegati
+direttamente al collettore di terra, altri effettuano la connessione tra le masse (o i poli di
+terra delle prese) e i PE principali. Normalmente i PE vengono realizzati con cavi unipo-
+lari con isolamento giallo-verde, con l'anima giallo-verde dei cavi multipolari e con con-
+duttori nudi; è anche possibile usare involucri metallici, tubi protettivi e canali metallici,
+masse estranee di adeguate caratteristiche.
+La sezione minima S dei conduttori di terra e di protezione può essere calcolata con la
+relazione:
+(X.10.8)
+dove:
+–  I è il valore efficace della corrente di guasto che può percorrere il conduttore (A);
+–  t è il tempo di intervento del dispositivo di protezione che interrompe il circuito di
+guasto (s);
+–  K è un fattore dipendente dal tipo di conduttore e di isolante e dalle temperature,
+iniziale (0) e finale (f) ammesse; nei casi più comuni di installazione i suoi valori sono
+riportati nelle Tabb. X.10.11, X.10.12, X.10.13.
+Materiale
+Tipo di
+dispersore
+Dimensione minima
+corpo
+rivestimento/guaina
+diametro 
+(mm)
+sezione
+trasversale
+(mm2)
+spessore 
+(mm)
+valori
+singoli
+(m)
+valori 
+medi
+(m)
+Rame
+Nudo
+piattina
+50
+2
+tondo per 
+dispersore oriz-
+zontale
+25e
+corda
+1,8b
+25
+tubo
+20
+2
+Stagnato
+corda
+1,8b
+25
+1
+5
+Zincato
+piattina
+50
+2
+20
+40
+Con guaina di 
+piomboc
+corda
+1,8b
+25
+1000
+filo tondo
+25
+1000
+Note. a I valori riportati tra parentesi sono comunemente utilizzati in Italia. b Per cavetti singoli.
+c Non idoneo per posa diretta in calcestruzzo. d Piattina, arrotondata o tagliata con angoli arroton-
+dati. e In condizioni eccezionali, dove l'esperienza mostra che il rischio di corrosione e di danno
+meccanico è estremamente basso, si può usare la sezione di 16 mm2.
+S
+I2t
+K
+----------
+=
