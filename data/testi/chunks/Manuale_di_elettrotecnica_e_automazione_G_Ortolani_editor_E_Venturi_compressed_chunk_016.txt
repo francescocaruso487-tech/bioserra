@@ -1,0 +1,1388 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 16/116 ===
+Chars: 44,639 | Offset: 663,738
+
+alità
+e deontologia. Gli Organismi che non sono accreditati non sono sottoposti a questi con-
+trolli.
+Nel caso di apparecchiature elettriche è prevista, tra l’altro, la compilazione di una
+serie di fascicoli che recepiscano i requisiti che le macchine e i prodotti devono avere in
+base alla direttive sopracitate.
+Il costo della certificazione dipende dalla norma di certificazione e dal numero di
+addetti coinvolti nell'attività da certificare. La certificazione ISO 9002 è meno costosa
+della ISO 9001 perché il valutatore non deve verificare il punto relativo alla progetta-
+zione. Il numero di addetti è importante perché il sistema di gestione di un'azienda è più
+complesso quando coinvolge più persone. Altre variabili che influenzano il costo della
+certificazione, e quindi delle sorveglianze successive, sono la presenza di più sedi o filiali
+che rientrano nella certificazione, lavori su cantieri, particolarità dell'attività dell'azienda:
+per esempio ospedali.
+
+[PAG 334]
+IV-46
+NORMATIVA, LEGISLAZIONE E SICUREZZA
+BIBLIOGRAFIA
+FAZIO M., SI, mksa, cgs & Co. - Dizionario e manuale delle unità di misura, Zani-
+chelli, Milano, 1995.
+FIGINI G. - LIBERATORE A., Sicurezza degli impianti elettrici - principi e metodi di
+protezione-, Hoepli, Milano, 1996.
+FIGINI G. - TORELLI U., Impianti elettrici antideflagranti - manuale di applicazione
+delle norme CEI-, Hoepli, Milano, 2000.
+FIGINI G. - TORELLI U., Impianti elettrici civili - manuale di applicazione delle norme
+CEI-, Hoepli, Milano, 2000.
+FIGINI G. - TORELLI U., Impianti elettrici per l’industria e le macchine operatrici -
+manuale di applicazione delle norme CEI-, Hoepli, Milano, 1995.
+GRASSANI E., Direttiva bassa tensione e legge 46/90, Editoriale Delfino, Milano,
+1998.
+GRASSANI E., Illuminazione di emergenza e sistemi di sicurezza, Utet, Milano, 2000.
+GRASSANI E., La direttiva macchine, Utet, Milano, 2000.
+GRASSANI E., La sicurezza sulle macchine, Utet, Milano, 1997.
+GRASSANI E.,Valutazione e riduzione del rischio elettrico, Utet, Milano, 1996.
+MARINONI G., I sistemi qualità ai fini della sicurezza sulle macchine, Utet, Milano,
+1999.
+RIVISTE: Tutto Norme, Il giornale dell’installatore elettrico, anni dal 1980 a 2002.
+SITI VISITATI: www.ceiuni.it
+
+[PAG 335]
+Sezione V
+Segni grafici
+INDICE 
+pag.
+1   INTRODUZIONE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+2   CLASSIFICAZIONE DEGLI SCHEMI ELETTRICI . . . . . . . . . . . . . . . . . . . . .
+5
+3   RAPPRESENTAZIONE GRAFICA DELLE APPARECCHIATURE ELETTRICHE 
+SECONDO LE NORME CEI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+3.1   Segni di uso generale  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+3.2   Conduttori, condutture e dispositivi di derivazione . . . . . . . . . . . . . . . . . . .
+10
+3.3   Dispositivi di connessione e componenti passivi  . . . . . . . . . . . . . . . . . . . .
+11
+3.4   Apparecchi e dispositivi di comando e manovra . . . . . . . . . . . . . . . . . . . . .
+12
+3.5   Relè elettromeccanici e di misura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+3.6   Dispositivi di protezione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+3.7   Motori e trasformatori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+3.8   Strumenti di misura e coppie termoelettriche  . . . . . . . . . . . . . . . . . . . . . . .
+16
+3.9   Segnalazioni  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+3.10   Lampade e apparecchi ausiliari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+3.11   Apparecchi in derivazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+3.12   Apparecchi vari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+3.13   Trasduttori e apparecchi per la distribuzione di segnali radio TV . . . . . . .
+19
+3.14   Apparecchi per impianti antifurto e antincendio . . . . . . . . . . . . . . . . . . . .
+20
+4   RAPPRESENTAZIONE GRAFICA DELLE APPARECCHIATURE 
+ELETTRONICHE SECONDO LE NORME CEI  . . . . . . . . . . . . . . . . . . . . . . . .
+21
+4.1   Semiconduttori  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+4.2   Elementi analogici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+4.3   Elementi logici binari  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+5   RAPPRESENTAZIONE GRAFICA DELLE APPARECCHIATURE 
+PNEUMATICHE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+5.1   Trasmissione e trattamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+5.2   Comando . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+27
+5.3   Distribuzione e regolazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+27
+5.4   Trasformazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+28
+6   CENTRALI DI PRODUZIONE ELETTRICA  . . . . . . . . . . . . . . . . . . . . . . . . . .
+29
+6.1   Centrali, stazioni e linee di trasporto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+29
+6.2   Segni generali idraulici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+30
+6.3   Segni generali per macchinario . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+30
+
+[PAG 336]
+V-2
+SEGNI GRAFICI
+6.4   Tubazioni ed accessori di collegamento . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+32
+6.5   Valvole rappresentazione costruttiva  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+33
+6.6   Comandi valvole  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+34
+6.7   Comandi passivi per tubazioni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+34
+6.8   Componenti attivi per tubazioni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+36
+6.9   Strumenti di misura  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+37
+6.10   Apparecchi di controllo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+37
+7   LETTERE DI IDENTIFICAZIONE DELLE APPARECCHIATURE 
+ELETTRICHE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+39
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+40
+1  INTRODUZIONE
+Gli schemi di impianti elettrici ed elettronici si possono definire rappresentazioni che
+si avvalgono di segni grafici normalizzati. Sapendo che gli impianti elettrici ed elettronici
+sono l’insieme di apparecchi elettrici ed elettronici collegati tra loro con conduttori elet-
+trici e funzionanti ad una determinata tensione nominale, è facile dedurre che i segni gra-
+fici rappresentano (oppure si potrebbe dire che costituiscono sulla carta) gli apparecchi e i
+conduttori presenti nell’impianto.
+La normativa definisce in modo molto chiaro e preciso le diverse tipologie di segni.
+Il segno grafico è una figura, un contrassegno o un carattere, utilizzati convenzional-
+mente su uno schema o su un altro documento, per rappresentare un oggetto o un con-
+cetto.
+L’elemento di segno grafico è una figura semplice avente un significato definitivo e
+destinata a combinarsi con altre figure per comporre un segno grafico completo di un
+dispositivo o di un concetto. Per esempio, il segno grafico di un tubo elettronico è compo-
+sto da elementi di segni grafici rappresentanti: il filamento riscaldatore, la griglia,
+l’anodo, l’involucro ecc. Quando elementi di segni grafici sono combinati in questo
+modo, la loro disposizione non è necessariamente riferita alla struttura fisica del disposi-
+tivo rappresentato.
+Il segno grafico generale è un segno grafico, generalmente semplice, comune a una
+intera famiglia di oggetti e caratteristico di questa famiglia.
+Il segno grafico distintivo è invece un segno grafico aggiunto ad un altro per fornire
+ulteriori informazioni.
+Il segno grafico di funzione è un segno grafico semplice rappresentante un assieme di
+oggetti, inteso ad indicare la funzione dell’assieme, ma senza fornire dettagli sugli oggetti
+stessi né considerare tutte le connessioni.
+La norma CEI 3-25 "Segni grafici per schemi. Parte 1: Generalità" riporta struttura,
+terminologia, costruzione, numerazione e utilizzo dei segni grafici riportati nelle Norme
+CEI del CT 3.
+Essa indica che le dimensioni dei segni grafici sono state scelte per facilitarne la com-
+prensione e, nello specifico, sono state anche scelte in modo proporzionato, in modo tale
+che ogni segno grafico possa essere associato con altri. I segni grafici sono stati costruiti
+in modo che la distanza fra i tratti di connessione sia un multiplo di un modulo stabilito
+che permette di riservare uno spazio sufficiente per la marcatura dei terminali.
+
+[PAG 337]
+SEGNI GRAFICI
+V-3
+Benché i segni grafici siano presentati senza griglia di fondo, nella maggioranza dei
+casi i segni grafici sono direttamente utilizzati su uno schema e sono allocabili su una gri-
+glia di un sistema a tracciatura automatica (Fig. V.1.1) considerando che:
+–  i segni sono stati costruiti in modo che si possano usare su una griglia con un
+modulo M; il modulo di 2,5 mm utilizzato nella normativa, non è obbligatorio;
+–  i tratti di connessione di un segno grafico coincidono con le linee della griglia e ter-
+minano nei suoi nodi;
+–  i lati dei rettangoli e il diametro dei cerchi sono stati tracciati multipli di 2M; per
+segni grafici più piccoli sono state usate anche dimensioni uguali a 1,5M, 1M e 0,5M;
+–  una distanza non minore di 2M è stata tenuta tra le linee di connessione conforme-
+mente alla Norma ISO 3098/1 - 1974 "Technical Drawings Lettering Part 1";
+–  per i sistemi di tracciamento automatico si richiede inoltre che ciascun segno gra-
+fico abbia un punto di riferimento localizzato in un nodo della griglia; benché non vi sia
+alcuna regola generale che precisi la posizione esatta di questo punto, la griglia a passo
+2,5 mm ne facilita la scelta.
+Oltre alla pubblicazione di una nutrita serie di fascicoli sui segni grafici (dalla quale
+sono stati estratti i segni che si presentano), il CEI ha pubblicato alcuni fascicoli utilizza-
+bili come una guida essenziale per la preparazione di schemi elettrici, la scelta di segni
+grafici da utilizzare sulle apparecchiature e la preparazione di schemi circuitali.
+La norma riguardante le raccomandazioni per la preparazione degli schemi circuitali
+affronta inoltre gli scopi che si prefigge uno schema circuitale, i suoi contenuti (collega-
+menti elettrici e funzioni di un determinato circuito), le regole generali per la sua prepara-
+zione, i modi per disporre i segni grafici, i criteri di rappresentazione dei circuiti,
+riferimenti indicativi, iscrizioni ecc.
+Per quel che riguarda le raccomandazioni generali per la preparazione di documenti
+utilizzati in elettrotecnica, la norma CEI 3-36 indica le regole generali e la guida alla pre-
+parazione di tali documenti.
+I documenti possono essere classificati in diversi modi. Se la loro caratteristica è la
+disposizione funzionale, essi si dividono in:
+–  Schema di sistema - È uno schema relativamente semplice, spesso utilizzante rap-
+presentazioni di tipo unifilare, che mostra le principali relazioni o connessioni tra le parti
+che costituiscono un sistema o sottosistema, installazione, apparecchiatura, software ecc.
+–  Schema a blocchi - È uno schema d’insieme che utilizza principalmente segni gra-
+fici a blocchi.
+–  Mappa di rete - È uno schema d’insieme che mostra una rete su una mappa, per
+esempio, centrali di generazione, stazione di trasformazione, linee elettriche, centrali e
+linee di telecomunicazione.
+Fig. V.1.1   Griglia suggerita dalle Norme.
+2M = 5 mm
+
+[PAG 338]
+V-4
+SEGNI GRAFICI
+–  Schema di funzione - È uno schema che mostra i dettagli di funzionamento teorico o
+ideale di un sistema o sottosistema, di una installazione, apparecchiatura, software ecc.,
+per mezzo di circuiti teorici o ideali senza tener conto obbligatoriamente dei dispositivi
+utilizzati per la realizzazione.
+–  Schema logico di funzione - È uno schema di funzione che utilizza preferibilmente
+segni grafici per elementi logici binari.
+–  Schema dei circuiti equivalenti - È uno schema di funzione che mostra i circuiti
+equivalenti, utilizzati come aiuto per l’analisi e il calcolo delle caratteristiche o del fun-
+zionamento.
+–  Diagramma funzionale - È un diagramma che descrive le funzioni e il comporta-
+mento di un sistema di comando, utilizzando passi e transizioni.
+–  Diagramma (tabella) di sequenza operativa - È un diagramma (tabella) che mostra
+la successione delle operazioni o degli stati delle unità di un sistema.
+–  Diagramma di sequenza temporale - È un diagramma di sequenza, con l’asse del
+tempo tracciato in scala.
+–  Schema dei circuiti - È uno schema che mostra la messa in opera dei circuiti di un
+sistema, sottosistema, installazione, apparecchiatura, software ecc., illustrando le parti e
+le connessioni mediante segni grafici posizionati per evidenziare le funzioni ma senza
+necessariamente tener conto delle dimensioni fisiche, delle forme o del posizionamento
+dei materiali.
+–  Schema funzionale dei morsetti - È uno schema per una unità funzionale, che evi-
+denzia i morsetti per l’interfaccia delle connessioni e le relative funzioni interne. Queste
+possono essere descritte mediante uno schema di circuito (semplificato se possibile), uno
+schema di funzione, una mappa di funzione o di sequenza, o un testo.
+–  Schema (tabella o lista) di programma - È uno schema (tabella o lista) che mostra
+in dettaglio gli elementi logici e le loro interconnessioni, in modo che le corrispondenze
+del programma possano essere chiaramente riconoscibili.
+Se la loro caratteristica è la disposizione topografica, essi si dividono in:
+–  Planimetria - È un piano topografico del sito che mostra la posizione (in relazione
+ai “capisaldi”) dei lavori di costruzione, delle reti di distribuzione ecc. con i mezzi di
+accesso e le informazioni generali.
+–  Disegno di installazione - È un disegno che mostra la posizione dei componenti di
+una installazione.
+–  Schema di installazione - È uno schema di installazione che mostra i collegamenti
+tra gli apparecchi.
+–  Disegno di assieme - È un disegno che rappresenta la posizione e la forma di un
+gruppo di parti assemblate, normalmente in scala.
+–  Disegno di disposizione - È un disegno di costruzione semplificato o completo, che
+fornisce informazioni necessarie per scopi particolari.
+Se sono documenti di connessione, si dividono in:
+–  Schema (tabella) delle connessioni - È uno schema (tabella) che indica o elenca le
+connessioni di una installazione o di una apparecchiatura.
+–  Schema (tabella) dei cablaggi - È uno schema (tabella) che mostra o elenca le con-
+nessioni all’interno di una unità costruttiva.
+–  Schema (tabella) delle interconnessioni - È uno schema (tabella) che mostra le
+interconnessioni tra differenti unità costruttive.
+–  Schema (tabella) delle morsettiere - È uno schema (tabella) di connessione che
+mostra al completo la/e morsettiera/e di una unità costruttiva, e le connessioni interne e/o
+esterne dei relativi morsetti.
+Per quel che riguarda i segni grafici impiegabili nei documenti, è possibile evidenziare
+
+[PAG 339]
+SEGNI GRAFICI
+V-5
+alcune regole generali.
+–  Nello scegliere un segno grafico idoneo per più rappresentazioni, è preferibile
+orientarsi, se ciò è possibile, sulla forma preferenziale e scegliere il segno grafico più
+semplice.
+–  Lo spessore e le dimensioni del segno, in linea generale, non hanno alcuna
+influenza sul significato del segno grafico; tuttavia per evidenziare alcuni caratteri parti-
+colari si possono usare dimensioni diverse oppure, per distinguere alcuni circuiti da altri,
+si possono scegliere spessori diversi.
+–  L'orientamento della maggior parte dei simboli grafici non è obbligatorio e quindi
+possono essere ruotati o capovolti qualora si voglia evitare incroci di conduttori. Pur tutta-
+via se una parte di un segno grafico è derivata da una curva caratteristica di un disposi-
+tivo, essa non può essere rappresentata ruotata (per esempio le forme d'onda devono
+essere rappresentate come compaiono sullo schermo dell'oscilloscopio).
+–  I conduttori possono essere rappresentati come si vuole, tranne creare incongruenze
+che possano influire sul significato del simbolo grafico.
+–  Le linee di connessione singole o in fascio devono essere identificate con apposita
+siglatura posta accanto alla linea, che serve ad identificare eventualmente anche la desti-
+nazione del collegamento.
+–  Le apparecchiature sono rappresentate nella posizione di riposo, cioè nella situa-
+zione di non operatività.
+Lo scopo di uno schema è anche quello di illustrare il funzionamento di una apparec-
+chiatura con l'ausilio di diagrammi e tabelle. Deve fornire la base per la preparazione di
+altri schemi o tabelle che illustrino o meglio approfondiscano le informazioni sul funzio-
+namento di tale apparecchiatura.
+Lo schema circuitale deve facilitare infine l'esecuzione delle prove e la ricerca dei
+guasti, con l'ausilio di documentazione supplementare, quali tabelle schemi topografici o
+manuali.
+Allineandosi con la normativa internazionale, il CEI ha indicato in modo esauriente
+come si classificano gli schemi elettrici e i diagrammi per la descrizione degli impianti
+elettrici, considerando lo schema elettrico in base al suo scopo oppure in base agli oppor-
+tuni metodi di rappresentazione.
+2  CLASSIFICAZIONE DEGLI SCHEMI ELETTRICI
+Se l’impianto elettrico viene rappresentato in base al suo scopo, esso può essere defi-
+nito come segue.
+–  Schema o diagramma esplicativo. Svolge la funzione di facilitare lo studio e la
+comprensione del funzionamento di un circuito o di un’apparecchiatura e si può articolare
+ulteriormente in: a blocchi e funzionale; del circuito logico; logico e dei sistemi di
+comando.
+–  Schema di connessione. Permette di realizzare e controllare le connessioni di una
+apparecchiatura o di un impianto; inoltre consente di indicare la disposizione degli acces-
+sori (morsettiere). Lo schema di connessione si può distinguere in: architettonico (piano
+di posa) e di disposizione (di installazione).
+–  Schema di ubicazione o schema topografico. Informa in modo dettagliato sulla
+posizione delle parti di un’apparecchiatura o di un impianto e può essere distinto in:
+(piano di posa) e di disposizione (di installazione).
+–  Schema di manutenzione. Ha lo scopo di facilitare la manutenzione di apparecchia-
+ture e di impianti.
+Se l’impianto elettrico viene rappresentato in base al modo di rappresentazione, esso
+
+[PAG 340]
+V-6
+SEGNI GRAFICI
+può essere definito come segue.
+–  Schema dei conduttori. Si distingue in: unifilare, se una sola linea rappresenta due o
+più conduttori, e multifilare, se ogni conduttore viene rappresentato con una propria linea.
+–  Schema della disposizione dei segni grafici. Rappresenta i componenti delle singole
+apparecchiature in modalità raggruppata, semiraggruppata o distribuita, per facilitare i
+collegamenti. La rappresentazione raggruppata dei segni grafici è indicata per schemi
+semplici, mentre la rappresentazione semi-raggruppata viene impiegata quando si hanno
+simboli che necessitano di collegamenti meccanici (linee tratteggiate) che attraversano e
+incrociano i conduttori. La rappresentazione distribuita è utile, soprattutto negli schemi
+funzionali complessi, per evitare confusioni date da continui incroci dei conduttori; in
+questo caso le parti che appartengono allo stesso elemento andranno indicate con la stessa
+sigla di identificazione.
+–  Schema del riferimento alla posizione topografica dei componenti. In esso viene
+indicata, parzialmente o totalmente, la reciproca posizione dei componenti raffigurati. Gli
+schemi di connessione e i piani di posa usano quasi esclusivamente la rappresentazione
+topografica. Schema topografico o architettonico: rappresenta gli apparecchi elettrici e le
+apparecchiature non elettriche, che concorrono alla posa dell'impianto, dove effettiva-
+mente essi saranno dislocati (Fig. V.2.1); è una rappresentazione unifilare, in quanto una
+sola linea indica più conduttori.
+Gli schemi che si possono utilizzare per una corretta e chiara rappresentazione degli
+impianti elettrici ed elettronici sono quelli funzionale, funzionale a blocchi e di flusso, di
+connessione e di potenza.
+Lo schema funzionale o schema sviluppato rappresenta nel modo più semplice possi-
+bile lo specifico funzionamento delle apparecchiature componenti l'impianto. Esso è uti-
+lizzato sia per lo studio che per la comprensione del funzionamento e si caratterizza per la
+segmentazione di apparecchi complessi nelle parti che li compongono e per la distribu-
+zione di queste ultime secondo un criterio di svolgimento della funzione. L'aspetto e la
+stesura di uno schema funzionale sono del tutto convenzionali ed è indispensabile fare
+riferimento alle convenzioni dettate dalle indicazioni internazionali. Utilizza la rappresen-
+tazione distribuita, cioè ogni apparecchio è scomposto negli elementi che lo costituiscono,
+e non tiene conto della ubicazione delle apparecchiature rappresentate, della loro reale
+dimensione e forma fisica. Tutto questo però necessita di una adeguata siglatura (CEI 3-
+34 che recepisce la IEC 750) per fare comprendere nel modo più chiaro l'influenza reci-
+proca di funzionamento. Viene utilizzato per schematizzare sia gli impianti elettrici civili,
+Fig. V.2.1   Esempio di schema topografico.
+
+[PAG 341]
+SEGNI GRAFICI
+V-7
+che gli impianti industriali (Fig. V.2.2). L'alimentazione è costituita generalmente da
+barre orizzontali che portano l'indicazione del tipo di sistema a cui è derivato l'impianto.
+Lo schema a blocchi e di flusso indica la logica di funzionamento di un impianto o di
+un sistema. Esso utilizza tutta una serie di indicazioni che definiscono le operazioni e le
+verifiche effettuate, secondo la sequenza di intervento.
+Lo schema di connessione permette in modo semplice e chiaro di realizzare e di con-
+trollare delle connessioni interne (schema di connessione di un’apparecchiatura) ed
+esterne (schema di connessione di una installazione).
+Lo schema di potenza rappresenta le apparecchiature o parti di apparecchiature che
+concorrono, mediante lo scambio dei contatti, al collegamento o alla disinserzione degli
+avvolgimenti statorici dei motori elettrici con la linea di alimentazione (Fig. V.2.3). Que-
+sto schema utilizza la rappresentazione semiraggruppata e un'unica sigla identifica più
+componenti della stessa apparecchiatura.
+Schema di montaggio: viene impiegato per la visualizzazione di circuiti elettrici civili
+e industriali (Fig. V.2.4). Rappresenta le apparecchiature nella loro forma globale (rappre-
+Fig. V.2.2  Esempi di schemi funzionali: a) impianto elettrico civile; b) impianto
+elettrico industriale.
+Fig. V.2.3   Esempio di schema di potenza di un
+impianto elettrico industriale.
+L
+N
+PE
+a)
+L1
+L2
+F
+S1
+S2
+RT
+K
+H
+RT
+b)
+L1
+L2
+K
+RT
+M
+3
+F
+L3
+U V W
+
+[PAG 342]
+V-8
+SEGNI GRAFICI
+sentazione raggruppata) e tiene conto in modo particolare della loro posizione di installa-
+zione. In questo schema, oltre alle apparecchiature elettriche, vengono rappresentate tutte
+le scatole e cassette di derivazione che concorrono alla messa in opera dell'impianto; inol-
+tre i conduttori seguono percorsi paralleli, indicando che in quello stesso tragitto essi sono
+vicini, inseriti in un tubo protettivo o canalizzazione, orientati nella stessa direzione.
+3  RAPPRESENTAZIONE GRAFICA DELLE APPARECCHIATURE ELETTRI-
+CHE SECONDO LE NORME CEI
+Questo capitolo riporta i segni grafici che possono impiegati nella stesura di schemi
+per impianti elettrici. I primi sono i segni grafici di uso generale che rappresentano la
+natura della corrente e della tensione, la variabilità, la forma dei segnali, i vari tipi di
+comandi meccanici, i diversi metodi di comando con la specificazione dei dispositivi.
+Occorre ricordare che la variabilità viene definita estrinseca quando il valore della gran-
+dezza che varia dipende da un dispositivo esterno; viene definita intrinseca quando la
+variazione è strettamente legata alle proprietà dello stesso dispositivo (per esempio la
+resistenza di un sensore varia in funzione della temperatura alla quale esso viene a tro-
+varsi). Vengono successivamente riportati i segni grafici riguardanti i conduttori, le con-
+dutture e i dispositivi di derivazione; seguono poi quelli dei dispositivi di connessione e
+dei componenti passivi. Uno sviluppo ampio viene riservato ai segni grafici associati agli
+apparecchi e ai dispositivi di comando e manovra.
+Seguono i segni grafici riguardanti i relè elettromeccanici e di misura, i dispositivi di
+protezione, i motori e trasformatori. Passando tra gli strumenti di misura e le coppie ter-
+moelettriche, le segnalazioni, le lampade e gli apparecchi ausiliari, gli apparecchi in deri-
+vazione e altri, si conclude riportando i segni grafici riguardanti i trasduttori e apparecchi
+per la distribuzione di segnali radio TV e quelli concernenti gli apparecchi per impianti
+antifurto e antincendio.
+Fig. V.2.4   Esempi di schemi di montaggio: a) civile; b) industriale.
+L
+N
+PE
+A
+A
+a)
+L1
+L2
+K
+RT
+M
+3
+F1
+L3
+U V W
+F2
+H
+S1
+S2
+b)
+
+[PAG 343]
+SEGNI GRAFICI
+V-9
+3.1  Segni di uso generale
+Corrente continua
+Corrente alternata
+Polarità positiva
+Polarità negativa
+Neutro
+Mediano
+Variabilità estrinseca
+Variabilità estrinseca non 
+lineare
+Variabilità intrinseca
+Variabilità intrinseca
+non lineare
+Variabilità a gradini
+Regolazione automatica
+Impulso positivo
+Impulso negativo
+Impulso di corrente alternata
+Funzione a gradino positivo
+Funzione a gradino negativo
+Onda a denti di sega
+Collegamento meccanico
+Movimento ritardato
+Interblocco meccanico
+Dispositivo di aggancio, libero
+Dispositivo di aggancio, in 
+presa
+Giunto o accoppiamento 
+meccanico, frizione
+Freno
+Motore elettrico con freno 
+inserito
+Motore elettrico con freno 
+inserito
+Comando meccanico manuale
+Comando meccanico manuale 
+con accesso limitato
+Comando con tirante
+Comando rotativo
+Comando a pulsante
+Comando di sicurezza o di 
+emergenza (pulsante a fungo)
+Comando per effetto
+di prossimità
+Comando a sfioramento
+Comando con volantino
+Comando a pedale
+Comando a chiave
+Comando a rullino
+Comando a camma
+M
+N
+M
+M
+
+[PAG 344]
+V-10
+SEGNI GRAFICI
+3.2  Conduttori, condutture e dispositivi di derivazione
+Comando elettromagnetico
+Comando da protezione 
+elettromagnetica di 
+sovracorrente
+Comando da protezione 
+termica di sovracorrente
+Comando a motore elettrico
+Comando ad orologio elettrico
+Comando dal livello di un 
+fluido
+Comando dal numero di eventi
+Comando da una portata fluida
+Elemento di pila o 
+accumulatore
+Terra
+Terra senza rumore
+Terra di protezione
+Massa, telaio
+Equipotenzialità
+Guasto con indicatore 
+del luogo
+Difetto di isolamento, 
+con scarica
+Separatore galvanico, 
+per esempio X//Y
+Segno grafico di identificazio-
+ne di segnali analogici
+Segno grafico di identificazio-
+ne di segnali numerici o binari
+Magnete permanente
+Contatto mobile
+ (per esempio a cursore)
+Linea o conduttore
+(segno generale)
+Linea o conduttore, con 
+indicazione della utilizzazione 
+(F=Telefonia; T=trasmissione 
+dati e telegrafia; V=canale 
+video; S=canale audio)
+Linea sotterranea
+Linea aerea
+Linea con supporto a muro
+Condotto, canalizzazione
+Conduttura a parete
+Conduttura in tubo protettivo 
+incassato con indicazione di 
+sezione e numero di conduttori
+Conduttura in canaletta o 
+passerella
+Conduttura in sbarra protetta
+Conduttura ascendente
+Conduttura discendente
+Conduttura verticale passante
+Quadro di distribuzione 
+(rappresentato con sette 
+condutture)
+Scatola (segno generale)
+M
+X//Y
+2x1,5    16
+
+
+[PAG 345]
+SEGNI GRAFICI
+V-11
+3.3  Dispositivi di connessione e componenti passivi
+Scatola con connessioni
+Cassetta
+Cassetta con terminale di 
+allacciamento utente
+Scatola per frutti (è possibile 
+indicare i dispositivi da 
+installare)
+Conduttore. Il numero dei 
+conduttori è indicato da trattini 
+o da un numero
+Condutture neutro
+Condutture di protezione
+Condutture neutro avente 
+anche funzioni di conduttore di 
+protezione (PEN)
+Esempi di conduttura trifase 
+con conduttore neutro e 
+conduttore di protezione
+Connessione di conduttori
+Terminale o morsetto
+Morsettiera con esempio di 
+numerazione dei morsetti
+Derivazione (forma 1)
+Derivazione (forma 2)
+Doppia derivazione (forma 1)
+Doppia derivazione (forma 2)
+Resistore (forma preferita)
+Resistore (altra forma)
+Resistore variabile
+Resistore dipendente 
+dalla tensione
+Resistore variabile con 
+contatto mobile
+Resistore con contatto mobile 
+e posizione di interruzione
+Potenziometro con contatto 
+mobile
+Resistore con prese fisse
+Deviatore (resistore con 
+terminali di tensione e corrente 
+separati)
+Condensatore (forma preferita)
+Condensatore (altra forma)
+Condensatore polarizzato
+Condensatore variabile
+Induttore, bobina, 
+avvolgimento (forma preferita)
+Induttore, bobina 
+avvolgimento (altra forma)
+Induttore a nucleo magnetico
+Induttore a nucleo magnetico 
+con traferro
+V
++
+
+[PAG 346]
+V-12
+SEGNI GRAFICI
+3.4  Apparecchi e dispositivi di comando e manovra
+Interruttore (segno generale)
+Deviatore
+Commutatore
+Invertitore
+Interruttore automatico 
+con un polo protetto
+Pulsante NO
+Pulsante NC
+Interruttore (segno generale)
+Interruttore con lampada spia
+Interruttore bipolare
+Interruttore a perella
+Interruttore a tirante
+Interruttore unipolare a tempo 
+di chiusura limitato
+Variatore di luminosità
+Interruttore orario
+Commutatore 
+(doppio interruttore)
+Deviatore
+Invertitore
+Pulsante
+Pulsante luminoso
+Pulsante a tirante
+Pulsante ad accesso protetto
+Pulsante di comando 
+di relè interruttore
+Funzione di contattore
+Funzione di interruttore 
+(di potenza)
+Funzione di sezionatore
+Funzione di interruttore 
+di manovra, sezionatore
+Funzione di apertura 
+automatica
+Funzione di contatto 
+di posizione
+Funzione di ritorno automatico
+Funzione posizione mantenuta
+Contatto di chiusura 
+(aperto a riposo)
+Contatto di apertura 
+(chiusi a riposo)
+Contatto di scambio con 
+interruzione momentanea
+Contatto a due vie a tre 
+posizioni, con posizione 
+centrale di apertura
+Contatto di scambio, 
+senza interruzione (forma 1)
+Contatto di scambio, 
+senza interruzione (forma 2)
+t
+
+[PAG 347]
+SEGNI GRAFICI
+V-13
+Contatto a due chiusure
+Contatto a due apertura
+Contatto di chiusura anticipato 
+(chiude in anticipo rispetto agli 
+altri contatti del gruppo)
+Contatto di chiusura ritardato 
+(chiude in ritardo rispetto agli 
+altri contatti del gruppo)
+Contatto di apertura ritardato 
+(apre in ritardo rispetto agli 
+altri contatti del gruppo)
+Contatto di apertura anticipato 
+(apre in anticipo rispetto agli 
+altri contatti del gruppo)
+Contatto di chiusura ritardato 
+alla chiusura (forma 1)
+Contatto di chiusura ritardato 
+alla chiusura (forma 2)
+Contatto di chiusura ritardato 
+alla apertura (forma 1)
+Contatto di chiusura ritardato 
+alla apertura (forma 2)
+Contatto di apertura ritardato 
+alla apertura (forma 1)
+Contatto di apertura ritardato 
+alla apertura (forma 2)
+Contatto di apertura ritardato 
+alla chiusura (forma 1)
+Contatto di apertura ritardato 
+alla chiusura (forma 2)
+Contatto di chiusura 
+con comando manuale
+Contatto di chiusura 
+con comando a pulsante
+Contatto di apertura con 
+comando a pulsante
+Contatto di chiusura 
+con comando rotativo
+Contatto di posizione 
+di chiusura
+Contatto di posizione 
+di apertura
+Contatto di posizione a due 
+circuiti separati, azionato 
+meccanicamente nei due sensi
+Contatto di chiusura, 
+sensibile alla temperatura
+Contatto di apertura, 
+sensibile alla temperatura
+Contatto di apertura, 
+funzionante per effetto
+termico diretto
+Contatto di apertura 
+di relè termico
+Contatto di chiusura 
+di relè termico
+Contatto a mercurio a tre 
+terminali
+Commutatore complesso 
+(segno generale)
+Commutatore rotativo a tre 
+posizioni e otto terminali
+Contattore 
+(contatto di chiusura)
+Contattore ad apertura 
+automatica (associato ad un 
+relè di protezione)
+Contattore 
+(contatto di apertura)
+Interruttore (di potenza)
+11
+19
+3
+16
+3
+2
+5
+4
+
+
+
+[PAG 348]
+V-14
+SEGNI GRAFICI
+3.5  Relè elettromeccanici e di misura
+Sezionatore
+Sezionatore a due vie tre 
+posizioni, con posizione 
+centrale di apertura
+Interruttore di 
+manovra-sezionatore
+Interruttore di manovra-
+sezionatore ad apertura 
+automatica
+Interruttore di potenza 
+ad apertura automatica
+Interruttore di manovra-
+sezionatore con fusibile
+Interruttore di potenza 
+ad apertura automatica, 
+differenziale
+Interruttore di potenza ad 
+apertura automatica, termico
+Interruttore di potenza 
+ad apertura automatica, 
+magnetotermico
+Contattore ad apertura 
+automatica con fusibile, 
+funzionante per effetto termico
+Avviatore per motore 
+(segno generale)
+Avviatore a gradini
+Avviatore regolatore
+Avviatore diretto mediante 
+contattore per due sensi di 
+marcia
+Avviatore stella-triangolo
+Avviatore con ritorno 
+automatico
+Avviatore mediante 
+autotrasformatore
+Avviatore-regolatore a tiristori
+Bobina di comando 
+(segno generale, forma 1)
+Bobina di comando 
+(segno generale, forma 2)
+Bobina di comando con due 
+avvolgimenti separati, 
+rappresentazione raggruppata
+Bobina di comando con due 
+avvolgimenti separati, 
+rappresentazione separata
+Bobina di comando di un relè 
+con ritardo alla ricaduta
+Bobina di comando di un relè 
+con ritardo all’attrazione
+Bobina di comando di un relè 
+con ritardo alla ricaduta e 
+all’attrazione
+Bobina di comando di un relè 
+rapido (attrazione e ricaduta 
+rapide)
+Bobina di comando di un relè 
+insensibile alla corrente 
+alternata
+Bobina di comando di un relè a 
+corrente alternata
+Bobina di comando di un relè 
+ad aggancio automatico
+Bobina di comando di un relè 
+termico
+Id
+
+[PAG 349]
+SEGNI GRAFICI
+V-15
+3.6  Dispositivi di protezione
+Relè di misura o dispositivo 
+similare (simbolo generale)
+Relè di massima corrente
+Relè a corrente di ritorno
+Relè a corrente di guasto 
+a terra
+Relè a corrente differenziale
+Relè a mancanza di tensione
+Relè di minima tensione
+Relè rilevatore di interruzione 
+di avvolgimento
+Relè di minima impedenza
+Relè rilevatore di corto 
+circuito tra spire
+Relè Buchholz 
+(a sviluppo di gas)
+Relè di massima e minima 
+corrente. Aggiustaggio < 5 A. 
+Aggiustaggio > 3 A
+Sensore di prossimità
+Dispositivo sensibile alla 
+prossimità, segno a blocco
+Dispositivo di prossimità capa-
+citivo che funzione all’avvici-
+namento di materiale solido
+Sensore al tocco
+Dispositivo sensibile al tocco, 
+con contatto di chiusura
+Dispositivo sensibile alla pros-
+simità, con contatto di chiusura
+Dispositivo sensibile alla pros-
+simità, comandato all’avvici-
+namento di un magnete, con 
+contatto di chiusura
+Dispositivo sensibile alla pros-
+simità, comandato all’avvici-
+namento di ferro, con contatto 
+di apertura
+Fusibile (segno generale)
+Fusibile con indicazione 
+dell’estremo che rimane sotto 
+tensione (tratto annerito
+Fusibile con percussore
+Fusibile con percussore e con 
+circuito di segnalazione, 
+a tre morsetti
+Fusibile con percussore e con 
+circuito di segnalazione 
+separato
+Interruttore di manovra 
+tripolare con apertura 
+automatica comandata da
+uno qualunque dei fusibili
+con percussore
+Interruttore di manovra con 
+fusibile incorporato 
+(segno generale)
+Sezionatore con fusibile 
+incorporato
+Interruttore di manovra-
+sezionatore, con fusibile 
+incorporato
+Z
+N
+U
+U = 0
+Id
+I
+I
+I
+3A
+5A
+I
+Fe
+
+[PAG 350]
+V-16
+SEGNI GRAFICI
+3.7  Motori e trasformatori
+3.8  Strumenti di misura e coppie termoelettriche
+Motore
+Motore lineare
+Motore passo a passo
+Motore a corrente continua 
+con eccitazione serie
+Motore a corrente continua 
+con eccitazione derivata
+Motore monofase a 
+commutatore, con eccitazione 
+in serie
+Motore trifase a commutatore, 
+con eccitazione in serie
+Motore sincrono monofase
+Motore asincrono trifase 
+con rotore a gabbia
+Motore asincrono trifase 
+con rotore avvolto
+Trasformatore a due 
+avvolgimenti (forma 1)
+Trasformatore a due 
+avvolgimenti (forma 2)
+Trasformatore di sicurezza 
+(segno generale)
+Trasformatore di sicurezza 
+resistente ai corto circuiti
+Trasformatore di sicurezza 
+per campanelli
+Autotrasformatore (forma 1)
+Autotrasformatore (forma 2)
+Induttore
+Trasformatore di corrente
+Trasformatore di impulsi
+Strumento indicatore
+(segno generale)
+Strumento registratore
+(segno generale)
+Strumento integratore
+(segno generale)
+Voltmetro
+Amperometro
+Varmetro
+Frequenzimetro
+Oscilloscopio 
+M
+M
+M
+M
+M
+M
+1
+M
+3
+MS
+1
+M
+3
+M
+3
+V
+A
+var
+Hz
+
+[PAG 351]
+SEGNI GRAFICI
+V-17
+3.9  Segnalazioni
+Wattmetro
+Oscillografo
+Wattorametro
+Varorametro
+Strumento ad induzione
+Strumento a vibrazione
+Strumento elettrodinamico
+Strumento ferromagnetico a 
+ferro mobile
+Strumento elettrostatico
+Strumento ferrodinamico
+Strumento logaritmico a 
+magnete permanente
+Strumento logaritmico 
+elettrodinamico
+Strumento magnetoelettrico a 
+bobina mobile
+Strumento magnetoelettrico a 
+magnete mobile
+Strumento magnetoelettrico 
+a raddrizzatore
+Strumento magnetoelettrico 
+a termocoppia
+Strumento a tensione
+ di isolamento
+Strumento termico a filo caldo
+Coppia termoelettrica, 
+con i simboli di polarità
+Coppia termoelettrica, 
+con indicazione di polarità
+(il tratto con maggior spessore 
+rappresenta il negativo)
+Coppia termoelettrica con 
+elemento riscaldante non 
+isolato
+Coppia termoelettrica con 
+elemento riscaldante non 
+isolato (forma semplificata)
+Coppia termoelettrica con 
+elemento riscaldante isolato
+Coppia termoelettrica con 
+elemento riscaldante isolato 
+(forma semplificata)
+Lampada di segnalazione 
+(segno generale)
+Se si vuole indicare il colore 
+della lampada, si mette vicino 
+al segno una delle seguenti 
+indicazioni:
+RD = rosso
+YE = giallo
+GN = verde
+BU = blu
+WH = bianco
+Lampada di segnalazione 
+lampeggiante
+Tromba elettrica, clacson
+Suoneria (forma preferita)
+Suoneria (altra forma)
+Sirena
+Ronzatore o cicala
+(forma preferita)
+Ronzatore o cicala
+(altra preferita)
+Fischio di comando elettrico
+W
+Wh
+varh
+
+
+
+[PAG 352]
+V-18
+SEGNI GRAFICI
+3.10  Lampade e apparecchi ausiliari
+3.11  Apparecchi in derivazione
+Lampada di segnalazione 
+(segno generale)
+Se si vuole indicare il colore 
+della lampada, si mette vicino 
+al segno una delle seguenti 
+indicazioni:
+Ne = Neon
+Xe = Xenio
+Na = Sodio
+Hg = Mercurio
+I = Iodio
+IN = Incandescenza
+EL = Elettroluminescenza
+ARC = Arco
+FL = Fluorescenza
+IR = Infrarosso
+UV = Ultravioletto
+LED = Diodo 
+elettroluminescente
+Punto luce, rappresentato con 
+conduttura
+Punto luce a parete, 
+rappresentato con conduttura
+Proiettore (segno generale)
+Proiettore a fascio stretto
+Proiettore a fascio largo
+Apparecchio di illuminazione 
+di sicurezza su circuito 
+speciale
+Complesso autonomo di 
+illuminazione di sicurezza
+Apparecchio ausiliario per 
+lampada a scarica
+Apparecchio di illuminazione 
+a tubo fluorescente
+Apparecchio di illuminazione 
+a tre tubi fluorescenti
+Lampada fluorescente tubolare 
+circolare
+Starter per lampada 
+fluorescente
+Accenditore per lampada a 
+scarica
+Lampada fluorescente 
+rettilinea
+Lampada slimline
+Lampada fluorescente 
+circolare
+Lampada a vapori di sodio
+Lampada a vapori di mercurio
+Presa multipla rappresentata 
+con tre uscite (forma 1)
+Presa multipla rappresentata 
+con tre uscite (forma 2)
+Presa con contatto per con-
+duttore di protezione (10 A)
+Presa con contatto per con-
+duttore di protezione (16 A)
+Presa di sicurezza
+Presa con interruttore 
+unipolare
+3
+Na
+Hg
+3
+
+[PAG 353]
+SEGNI GRAFICI
+V-19
+3.12  Apparecchi vari
+3.13  Trasduttori e apparecchi per la distribuzione di segnali radio TV
+Presa con interruttore 
+unipolare interbloccato
+Presa con trasformatore di 
+isolamento
+Presa e spina
+(femmina e maschio)
+Presa per telecomunicazioni 
+(segno generale). Per 
+distinguere le differenti prese 
+si usano i seguenti simboli:
+TP = Telefono;
+TV = Televisione;
+TX = Telex;
+FD = Filodiffusione;
+FM = Modulazione di 
+frequenza;
+M = Microfono
+ = Altoparlante
+Scalda acqua
+Ventilatore
+Orologio marca tempo
+Bobina di comando di un relè 
+temporizzatore luci scale
+Serratura elettrica
+Interruttore crepuscolare
+Cellula fotoelettrica
+Quadretto indicatore 
+a cartellini
+Quadretto indicatore luminoso
+Relè a cartellino 
+azionato da bobina
+Interfono, citofono
+Ricevitore televisivo
+Videocitofono
+Telefono (segno generale)
+Microfono (segno generale)
+Altoparlante (segno generale)
+Altoparlante microfono
+Antenna (segno generale)
+Apparecchio telegrafico 
+emittente
+Ricevitore di telecopia
+Ripartitore a due vie
+Ripartitore a tre vie, con una 
+uscita a livello più elevato
+Derivazione d’utente
+Presa da rete
+Presa da rete diretta
+Equalizzatore
+Attenuatore (per schema 
+topografico)
+Attenuatore
+Alimentatore di linea
+Dispositivo di interruzione 
+dell’alimentazione
+Punto di iniezione 
+dell’alimentazione
+t
+T
+dB
+CT
+
+[PAG 354]
+V-20
+SEGNI GRAFICI
+3.14  Apparecchi per impianti antifurto e antincendio
+Rivelatore antincendio
+(segno generale)
+Rivelatore antintrusione
+(segno generale)
+Rivelatore d’incendio
+Rivelatore termico
+Rivelatore di fumo
+Rivelatore di fumo a 
+ionizzazione
+Rivelatore di fiamma
+A = Pulsante antirapina a 
+rottura vetro
+I = Pulsante incendio a rottura 
+vetro
+Pulsante antincendio
+Pulsante antirapina con 
+memoria
+Rivelatore volumetrico (segno 
+generale)
+L’asterisco viene sostituito con 
+i seguenti simboli, per 
+distinguere i differenti sistemi 
+di rilevazione:
+M = Rivelatore a microonde
+I = Rivelatore a infrarosso
+V = Rivelatore a confronto di 
+immagini TV CC
+Rivelatore puntuale o 
+superficiale (segno generale)
+L’asterisco viene sostituito con 
+i seguenti simboli, per 
+distinguere i differenti sistemi 
+di rilevazione:
+MG = Rivelatore magnetico
+V = Rivelatore di vibrazioni
+P = Rivelatore a pressione
+B = Rivelatore rottura vetro
+Rivelatore lineare (segno 
+generale). L’asterisco viene 
+sostituito con i seguenti 
+simboli, per distinguere i 
+differenti sistemi di 
+rilevazione:
+L = Rivelatore a luce
+I = Rivelatore a infrarosso
+M = Rivelatore a microonde
+MC = Rivelatore meccanico
+C = Rivelatore a linea interrata
+Rivelatore di metalli
+Rivelatore di allagamento
+Rivelatore di radioattività
+Rivelatore di esplosivi
+Rivelatore di gas (indicare il 
+simbolo chimico del gas)
+Comando elettronico a tastiera 
+protetto contro l’alterazione
+Comando a chiave protetto 
+contro l’alterazione
+Comando a orologio protetto 
+contro l’alterazione
+Segnalazione luminosa 
+protetta contro l’alterazione
+Segnalazione luminosa 
+lampeggiante protetta contro 
+l’alterazione
+Sirena protetta contro 
+l’alterazione
+Sirena autoalimentata protetta 
+contro l’alterazione
+Segnalazione via telefono 
+protetta contro l’alterazione
+Segnalazione via radio protetta 
+contro l’alterazione
+..
+!
+.
+.
+.
+
+
+MD
+
+[PAG 355]
+SEGNI GRAFICI
+V-21
+4  RAPPRESENTAZIONE GRAFICA DELLE APPARECCHIATURE ELETTRO-
+NICHE SECONDO LE NORME CEI
+I segni grafici raccolti in questo capitolo sono stato divisi in tre categorie: quelli
+riguardanti i semiconduttori, gli elementi analogici e quelli logici binari.
+4.1  Semiconduttori
+Registratore di eventi protetto 
+contro l’alterazione. 
+L’asterisco viene sostituito dai 
+seguenti simboli, per 
+distinguere i differenti sistemi 
+di registrazione:
+ = Su carta
+ = Su nastro magnetico
+ = Su disco
+VR = Video registratore
+Centrale Antincendio.
+Gli asterischi vanno sostituiti 
+con le seguenti indicazioni:
+ Numero delle zone
+ Numero ore di 
+funzionamento in assenza di 
+energia elettrica
+Centrale Antifurto o 
+Antintrusione. Gli asterischi 
+vanno sostituiti con le seguenti 
+indicazioni:
+ Numero delle zone
+ Numero ore di 
+funzionamento in assenza di 
+energia elettrica
+Centrale Rivelazione Gas.
+Gli asterischi vanno sostituiti 
+con le seguenti indicazioni:
+ Numero delle zone
+ Numero ore di 
+funzionamento in assenza di 
+energia elettrica
+Macchina fotografica
+Lettore.
+L’asterisco viene sostituito con 
+i seguenti simboli, per 
+distinguere i differenti sistemi 
+di lettura:
+I = Inserimento
+P Prossimità
+O = Ottico
+S = Striscio
+N = Codice numerico
+M = Magnetico
+Esempio: Lettore a striscio 
+magnetico
+Telecamera a fuoco fisso.
+Gli asterischi vanno sostituiti 
+con i seguenti simboli:
+* IPxy - grado di protezione
+** C = a colori, BW = bianco e 
+nero
+T = Termostatica
+All’esterno del segno
+   = Brandeggio
+Telecamera con Zoom
+Video di controllo
+Video di controllo a 
+commutazione automatica
+Regione di semiconduttore 
+(tratto orizzontale) con 
+connessione (tratto verticale)
+Regione di semiconduttore 
+con più connessioni 
+(per esempio due)
+Canale conduttore per 
+dispositivi a svuotamento
+Canale conduttore per 
+dispositivi a svuotamento
+Giunzione raddrizzatrice 
+(forma preferita)
+
+
+
+
+A 
+
+
+
+
+SM
+
+
+
+
