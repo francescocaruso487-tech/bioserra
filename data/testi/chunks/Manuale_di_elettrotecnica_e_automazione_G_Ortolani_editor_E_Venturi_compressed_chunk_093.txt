@@ -1,0 +1,1044 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 93/116 ===
+Chars: 45,000 | Offset: 4,063,487
+
+
+
+[PAG 1859]
+ELETTRONICA DI POTENZA
+XVIII-41
+onde ottenere una quantità di energia accumulata sufficiente, è necessario che vi siano sul 
+primario picchi di corrente di elevata intensità e che l’induttanza del circuito primario 
+abbia valore minore di quella di un normale trasformatore.
+Dal punto di vista costruttivo si noti che il transistor deve essere in grado di soppor-
+tare una tensione pari alla somma del doppio della tensione applicata, più la sovratensione 
+generata dalle commutazioni; soluzioni alternative prevedono un ulteriore avvolgimento 
+primario con un diodo di ricircolo.
+Questo tipo di convertitore consente di realizzare alimentatori aventi più tensioni di 
+uscita e richiede per ognuna di esse semplicemente un diodo ed un condensatore; 
+quest’ultimo viene alimentato solo durante il periodo di tempo nel quale il transistor è 
+nello stato di OFF, pertanto è soggetto ad elevati picchi di corrente e conseguentemente 
+questo alimentatore presenta un valore non trascurabile di ripple.
+Un circuito alternativo al prece-
+dente è il convertitore Flyback a 
+due transistor (Fig. XVIII.8.2); è un 
+dispositivo che utilizza due transi-
+stor commutati contemporaneamen-
+te, ai capi dei quali la tensione mas-
+sima risulta di valore pari alla ten-
+sione in ingresso.
+Si noti la presenza di due diodi di ri-
+circolo che eliminano le sovraten-
+sioni da commutazione e consen-
+tono di aumentare notevolmente la 
+frequenza di commutazione. 
+Fig. XVIII.8.2  Convertitore Flyback a due transistor.
+Anche con questa configurazione è possibile, al pari del convertitore Buck-Boost, far 
+funzionare il circuito in modo continuo oppure in modo discontinuo. La differenza sostan-
+ziale nei due tipi di funzionamento risiede nel fatto che, con il modo di funzionamento 
+discontinuo, la corrente nel secondario va a zero durante ogni periodo di commutazione; 
+con il modo di funzionamento continuo la corrente scorre al secondario per tutto il tempo, 
+assumendo un andamento di tipo trapezoidale e, al primario, a parità di potenza erogata, la 
+corrente nei transistor risulta la metà con conseguente valore minore di ripple.
+Per il convertitore Flyback i valori tipici e di calcolo sono:
+–  rendimento  = 80%;
+–  duty cycle massimo D = 0,45;
+–  tensione massima sui transistor UCE oppure UDS = 2·Ui(max) + sovratensioni;
+–  corrente massima sui transistor IC oppure 
+;
+–  per la tensione in uscita
+modo di funzionamento discontinuo 
+modo di funzionamento continuo 
+.
+La simbologia adottata è quella usuale, dove Ui e Uo rappresentano rispettivamente la 
+tensione in ingresso e quella di uscita, Po è la potenza dissipata dall’utilizzatore di resi-
+stenza RUtil, LPrim è il valore dell’induttanza del primario del trasformatore, D T, sono 
+Ui
+C1
+T2
+T1
+D1
+D2
+D3
+C2
+Uo
+segnali di
+controllo
+c
+e
+c
+e
+ID
+2
+Po
+Dmax Umin
+
+
+-------------------------------------
+
+=
+Uo
+Ui D
+RUtil T
+
+2 LPrim
+
+--------------------
+
+
+=
+Uo
+Ui n
+
+D
+1D
+----------
+
+=
+
+[PAG 1860]
+XVIII-42
+ELETTRONICA DI POTENZA
+nell’ordine il rendimento, il valore del duty cycle, il periodo di funzionamento del conver-
+titore, infine n è il rapporto spire del trasformatore.
+8.2  Convertitore Forward
+Evoluzione di un convertitore di tipo Buck, il convertitore Forward utilizza un sin-
+golo transistor in commutazione che comanda un vero e proprio trasformatore munito di 
+un avvolgimento primario ausiliario, e che invia l’energia verso il carico durante la fase di 
+conduzione del transistor (Fig. XVIII.8.3).
+Fig. XVIII.8.3  Convertitore Forward.
+Si noti, nella figura precedente, il verso degli avvolgimenti primari e secondario: la 
+polarità del secondario risulta opposta a quella dell’avvolgimento primario ausiliario per-
+mettendo così il trasferimento di energia, tramite D1, verso il carico tramite l’induttanza 
+L1, durante la fase di conduzione del transistor. Quando il transistor passa in interdizione 
+il diodo D1 risulta interdetto a causa della tensione inversa presente sul secondario del tra-
+sformatore, mentre il diodo di ricircolo D2, per effetto della tensione che si genera su L1
+conseguente all’interruzione della corrente fornita da D1, risulta polarizzato direttamente 
+e permette che l’energia accumulata da L1 sia trasferita al carico durante il periodo in cui 
+il transistor è interdetto.
+Il convertitore Forward opera sempre nel modo di funzionamento continuo poiché con-
+sente di avere dei picchi di corrente al primario, e quindi anche al secondario, di piccolo 
+valore, con conseguente minimo valore di ripple. Dal punto di vista del controllo sulla ten-
+sione di uscita si precisa che, in questo caso, anche col modo di funzionamento continuo, 
+il controllo retroazionato risulta semplice e preciso. Dall’analisi delle forme d’onda dei 
+segnali presenti in Fig. XVIII.8.3 si evidenzia che la corrente nell’induttore L1 risulta pres-
+soché costante, senza interruzioni; essendo questa anche la corrente sul carico, anche l’uti-
+lizzatore è interessato da una corrente costante quindi con un ripple decisamente contenuto.
+Ui
+C1
+D3
+T1
+D1
+D2
+L1
+C2
+Uo
+segnale di
+controllo
+IP
+ID3
+ID2
+ID1
+IL
+Uce
+2Ui
+Ui
+t
+t
+t
+tON
+tOFF
+Uce
+ID3
+ID1
+ID2
+c
+e
+
+[PAG 1861]
+ELETTRONICA DI POTENZA
+XVIII-43
+Per quanto riguarda il trasformatore il suo avvolgimento primario deve presentare un 
+valore di induttanza abbastanza elevato, infatti l’energia immagazzinata nel nucleo del 
+trasformatore durante il funzionamento è trascurabile perché tutta l’energia viene trasfe-
+rita senza essere accumulata. L’energia accumulata è solo quella di magnetizzazione; ven-
+gono pertanto usati in questa occasione trasformatori privi di traferro aventi elevati valori 
+di permeabilità relativa (da 2000 a 3000); tutto questo comporta piccoli valori di corrente 
+primaria. È da precisare comunque che il trasformatore deve essere sovradimensionato in 
+quanto, anche in questa occasione, funziona in modo asimmetrico ed il trasferimento di 
+energia avviene unicamente durante la fase di conduzione del transistor (stato di ON). 
+Costruttivamente si fa presente che il transistor deve essere in grado di sopportare una 
+tensione pari almeno al doppio della tensione di ingresso Ui, mentre i diodi, essendo solle-
+citati da rapide variazioni di corrente, dovranno essere dispositivi con tempi di recupero 
+estremamente piccoli, alfine di minimizzare le perdite ed eliminare quanto prima gli 
+impulsi di tensione e corrente dovuti alle discontinuità di funzionamento.
+Una soluzione alternativa alla soluzione precedente è il convertitore Forward a due 
+transistor; è un circuito utilizzante due transistor commutati contemporaneamente, ai capi 
+dei quali la tensione massima risulta di valore pari alla tensione in ingresso (Fig. XVIII.8.4).
+Fig. XVIII.8.4  Convertitore Forward a due transistor.
+Questo circuito, a fronte di costi più elevati per quanto riguarda i componenti attivi, è 
+in grado di fornire frequenze di commutazione e correnti più elevate. In uscita, grazie ad un 
+trasformatore avente più avvolgimenti secondari, si avranno più tensioni, mentre anche per 
+merito dell’induttore presente sull’uscita verrà fornito un segnale con ripple estremamente 
+contenuto per tensioni basse, generalmente di ampiezza minore della tensione in ingresso.
+Per il convertitore Forward i valori caratteristici e di calcolo sono:
+–  rendimento  = 80%;
+–  duty cycle massimo D = 0,45;
+–  tensione massima sui transistor UCE oppure UDS = 2·Ui(max);
+–  corrente massima sui transistor IC oppure 
+;
+–  per la tensione in uscita
+.
+I simboli adottati sono quelli usuali, dove Ui e Uo rappresentano rispettivamente la 
+tensione in ingresso e quella di uscita, Po è la potenza dissipata dall’utilizzatore, eD
+sono nell’ordine il rendimento e il valore del duty cycle, mentre n è il rapporto spire del 
+trasformatore.
+Ui
+C1
+T1
+T2
+D1
+D2
+L1
+C2
+Uo
+segnali di
+controllo
+c
+e
+c
+e
+ID
+Po
+Dmax Umin
+
+
+-------------------------------------
+=
+Uo
+Ui n
+
+D
+
+=
+
+[PAG 1862]
+XVIII-44
+ELETTRONICA DI POTENZA
+8.3  Convertitore Push-pull
+Per variare il flusso nel nucleo del trasformatore in modo da utilizzare tutti e quattro i 
+quadranti, si può utilizzare il convertitore Push-pull; quest’ultimo permette di impiegare 
+trasformatori con nucleo di dimensioni più contenute (tipicamente la metà) pur fornendo 
+correnti in uscita di valore maggiore rispetto ai convertitori visti precedentemente. La 
+figura seguente mostra lo schema base di funzionamento di un circuito di questo tipo; si 
+rileva immediatamente la presenza di una coppia di transistor; questi ultimi, anche per con-
+figurazioni derivate da quella dello schema di Fig. XVIII.8.5, risultano sempre in numero 
+pari, proprio per guidare il trasformatore in modo simmetrico.
+Fig. XVIII.8.5  Convertitore Push-pull.
+Il primario del trasformatore è costituito da 
+un avvolgimento avente una presa centrale; 
+ciascuna sua metà è percorsa alternativa-
+mente dalla corrente poiché i due transistor 
+sono comandati alternativamente. Si crea 
+così un flusso nel nucleo del trasformatore 
+che, ad ogni periodo, risulta percorrere il 
+nucleo in entrambi i sensi; per metà periodo 
+assume un verso, nella metà successiva 
+assume il verso opposto. Durante ogni pe-
+riodo l’energia viene trasferita al circuito 
+secondario di tipo buck e, quindi, al carico. 
+L’intervallo di tempo, durante il quale ogni 
+metà dell’avvolgimento primario è percorso 
+da corrente risulta, normalmente, pari allo 
+0,45% del periodo complessivo T di funzio-
+namento. Ciò evita che ci sia la possibilità di 
+conduzione di entrambi i transistor nello 
+stesso periodo di tempo con conseguenti 
+sovracorrenti. L’energia viene quindi tra-
+sferita al secondario per il 90% del periodo 
+di commutazione, risultando così un mag-
+gior rendimento dell’apparecchiatura. 
+Fig. XVIII.8.6  Forme d’onda di un convertitore Push-pull.
+La presenza in uscita di una tensione alternata permette di utilizzare filtri LC di valore 
+più piccolo a parità di ripple se confrontati con i precedenti alimentatori. La presenza dei 
+diodi di ricircolo limita le sovratensioni, alle quali vengono sottoposti i transistor, in quanto 
+permettono l’eliminazione del flusso di magnetizzazione. Si noti, inoltre, che entrambi i 
+Ui
+C1
+T1
+T2
+D3
+D4
+L1
+C2
+Uo
+segnali di
+controllo
+e
+c
+e
+cD1
+D2
+UceT1
+UceT2
+2Ui
+Ui
+2Ui
+Ui
+IT1
+IT2
+t
+t
+t
+t
+t
+t
+tON2
+tON1
+T
+ID1
+ID2
+IL
+
+[PAG 1863]
+ELETTRONICA DI POTENZA
+XVIII-45
+transistor sono di facile pilotaggio in quanto sono entrambi riferiti allo stesso potenziale, 
+per contro la loro tensione di funzionamento deve essere almeno pari a due volte la tensione 
+di ingresso. La Fig. XVIII.8.6 riporta le forme d’onda durante il funzionamento.
+Per il convertitore Push-pull i valori caratteristici e di calcolo sono:
+–  rendimento  = 80%;
+–  duty cycle massimo D = 0,90;
+–  tensione massima sui transistor UCE oppure UDS = 2·Ui(max) + sovratensioni;
+–  corrente massima sui transistor IC oppure 
+;
+–  per la tensione in uscita
+.
+La simbologia adottata è la solita, dove Ui e Uo rappresentano rispettivamente la ten-
+sione in ingresso e quella di uscita, Po è la potenza dissipata dall’utilizzatore, eD sono 
+nell’ordine il rendimento e il valore del duty cycle, mentre n è il rapporto spire del trasfor-
+matore.
+9  CONVERSIONE C.C.-C.C.
+La conversione c.c.-c.c. si occupa di dispositivi in grado di modificare una tensione con-
+tinua in ingresso in una tensione disponibile in uscita anch’essa continua ma di ampiezza 
+diversa, nell’ambito di grandi potenze e con la prerogativa di effettuare una conversione ad 
+elevato rendimento. Questi convertitori vengono usualmente designati col none di conver-
+titori Choppers e vengono normalmente realizzati tramite l’impiego di tiristori (SCR).
+Lo schema tipico di impiego è quello di Fig. XVIII.9.1, nella quale viene riportata 
+anche la forma d’onda in uscita di tale convertitore; il valore medio della tensione pre-
+sente sul carico risulta espresso dalla seguente formula:
+(XVIII.9.1)
+dove U, E, tc, T rappresentano nell’ordine la tensione media sull’utilizzatore, la ten-
+sione in ingresso, l’intervallo di tempo durante il quale il semiconduttore è nello stato di 
+ON, il periodo complessivo.
+Fig. XVIII.9.1  Convertitore Chopper.
+La regolazione della tensione può essere effettuata tramite l’intervento sulla durata 
+degli intervalli di tempo, precisamente:
+la regolazione è di tipo P.W.M. (Pulse Width Modulation) quando viene variato il 
+tempo tc in cui l’SCR è nello stato di ON (a parità di T).
+ID
+Po
+Dmax Umin
+
+
+-------------------------------------
+=
+Uo
+Ui n
+
+D 2
+
+
+=
+U
+E
+tc
+T---
+=
+E
+U
+t
+tc
+T
+U
+R
+U
+E
+SCR
+
+[PAG 1864]
+XVIII-46
+ELETTRONICA DI POTENZA
+la regolazione è di tipo P.R.M. (Pulse Rate Modulation) quando viene modificato il 
+periodo T (a parità di tc).
+Il problema nell’impiego di questi circuiti risulta proprio il dispositivo SCR; 
+quest’ultimo, come è noto, una volta messo nello stato di conduzione, per potere inter-
+rompere il passaggio della corrente, necessita che il valore di quest’ultima scenda ad un 
+valore inferiore a quello definito come corrente di automantenimento. In altri termini è 
+necessario che la tensione ai suoi capi si annulli affinché si interrompa la fase di condu-
+zione del tiristore stesso. Esistono diversi circuiti che permettono di disinnescare la fase 
+di conduzione del tiristore: vengono accomunati dalla prerogativa che tutti utilizzano la 
+carica-scarica di un condensatore.
+Si analizzi il circuito di Fig. XVIII.9.2: il circuito 
+costituito dal condensatore e dall’induttanza, 
+durante la fase in cui il tiristore è interdetto (stato 
+di OFF), è sottoposto alla tensione di ingresso (in 
+questo momento il tiristore altro non è che un inter-
+ruttore aperto), per cui il condensatore si carica con 
+una tensione ai suoi capi di polarità positiva in cor-
+rispondenza dell’anodo del tiristore. Se l’inter-
+vallo di tempo durante il quale il semiconduttore 
+non conduce risulta sufficiente, la tensione ai capi 
+del condensatore raggiunge il valore pari alla ten-
+sione in ingresso E. 
+Fig. XVIII.9.2  Convertitore c.c.- c.c. 
+con circuito di spegnimento.
+Quando l’SCR  passa allo stato di conduzione (stato di ON), trascurando la sua resistenza 
+di conduzione, il circuito composto da SCR, condensatore C e induttanza L costituiscono un 
+circuito oscillante con periodo:
+(XVIII.9.2)
+dove la pulsazione dipende dai valori di L e di C secondo l’espressione seguente:
+(XVIII.9.3)
+in grado di far circolare una corrente pari a: 
+(XVIII.9.4)
+con I0 valore della corrente all’istante iniziale. 
+Fig. XVIII.9.3  Circuito per l’analisi della scarica del condensatore.
+Con un circuito del tipo evidenziato in Fig. XVIII.9.3, la 
+variazione della tensione media sul carico avviene solita-
+mente modificando il periodo T; si effettua cioè, tipica-
+mente, un controllo di tipo P.R.M.; il circuito oscillante LC
+stabilisce, con i valori dei suoi componenti, l’intervallo di 
+tempo tc di conduzione del tiristore. Si esamini ora il tipo di 
+circuito per lo spegnimento proposto dalla Fig. XVIII.9.4. In 
+questo circuito si distinguono tre SCR ciascuno dei quali 
+con funzione ben precisa.
+Fig. XVIII.9.4  Convertitore c.c.-c.c. con spegnimento realizzato con SCR.
+Ui
+R
+L
+C
+SCR
+T
+2
+
+------
+=
+S
+C
+L
+
+1
+LC
+-------
+=
+i
+I0sen t
+
+
+=
+  
+SCR3
+L
+C
+E
+U
+SCR1
+SCR2
+
+[PAG 1865]
+ELETTRONICA DI POTENZA
+XVIII-47
+L’SCR1 è il semiconduttore che determina l’alimentazione dell’utilizzatore, infatti la 
+durata del suo stato di conduzione determina il valore medio della tensione in uscita in ana-
+logia al caso precedente. Il tiristore SCR2 che, nello stato di conduzione, consente la carica 
+del condensatore con una tensione ai suoi capi, grazie alla presenza dell’induttore L che 
+costituisce un circuito risonante serie, di valore superiore alla tensione in ingresso.
+Quando il condensatore ha raggiunto la carica corrispondente ad una tensione almeno 
+superiore a quella di ingresso, se viene posto in conduzione il tiristore SCR3, il tiristore SCR1
+trova il catodo polarizzato con tensione di valore superiore a quello in ingresso, si inter-
+rompe il passaggio della corrente che lo percorre e, pertanto, passa allo stato di interdizione.
+In questo circuito, a fronte di un sistema di gestione dei tre tiristori decisamente più 
+sofisticato, è possibile realizzare un controllo di tipo P.W.M. intervenendo cioè sulla 
+durata dell’intervallo di tempo tc durante il quale è in conduzione il tiristore SCR1.
+10  REGOLAZIONE IN CORRENTE ALTERNATA
+L’impiego di dispositivi allo stato solido quali SCR e TRIAC consentono di regolare il 
+trasferimento di potenza alternata dal generatore al carico. Dal punto di vista dei circuiti 
+di controllo il dispositivo risulta più semplice che nel caso della regolazione della potenza 
+continua, infatti la presenza di tensione alternata in ingresso (e in uscita) permette al 
+dispositivo di passare allo stato di interdizione senza ausilio di circuiti ulteriori. I sistemi 
+di regolazione in c.a. realizzati con TRIAC, oppure con SCR collegati tra loro in antiparal-
+lelo, possono essere di due tipi: regolazione a controllo continuo detta anche regolazione 
+a parzializzazione di fase, oppure regolazione con numero intero di cicli.
+10.1  Regolazione a controllo continuo (a parzializzazione di fase)
+Consente di regolare in maniera continua la potenza trasferita al carico comandando 
+l’istante di innesco del semiconduttore e creando così una parzializzazione della fase (Fig. 
+XVIII.10.1). 
+Precisato che il TRIAC presente nella figura può essere sostituito da due SCR collegati 
+tra loro in antiparallelo, in questo circuito è possibile variare il valore efficace della ten-
+sione ai capi del carico semplicemente intervenendo sul ritardo 1 degli impulsi di innesco 
+inviati al TRIAC. La forma d’onda sul carico (Fig. XVIII.10.2), ovviamente, non è un’onda 
+sinusoidale, tant’è che vengono contemporaneamente generate armoniche e segnali 
+(disturbi) a radiofrequenza, inoltre è necessario che gli impulsi arrivino dopo un determi-
+nato ritardo sia per la semionda positiva che per quella negativa.
+Fig. XVIII.10.1  Regolazione di
+potenza in c.a. tramite TRIAC.
+Fig. XVIII.10.2  Regolazione a controllo continuo.
+Ui
+Uo
+R
+C
+TRIAC
+Ru
+Uo
+t
+
+
+
+[PAG 1866]
+XVIII-48
+ELETTRONICA DI POTENZA
+Con questo tipo di controllo è possibile intervenire sul valore medio della corrente che 
+percorre l’utilizzatore potendolo variare tra zero e il massimo. Per un corretto comando 
+del dispositivo a semiconduttore è necessario disporre di un apparato che permetta di indi-
+viduare il passaggio per lo zero della forma d’onda della tensione in ingresso.
+10.2  Regolazione con numero intero di cicli
+In questo tipo di regolazione, indicata anche come controllo a tempo proporzionale, si 
+effettua un controllo sul valore medio della potenza alternata trasferita dal generatore 
+all’utilizzatore; infatti il TRIAC viene messo in conduzione nell’istante in cui la forma 
+d’onda in ingresso subisce il passaggio per lo zero, e successivamente viene lasciato nello 
+stato di conduzione per un certo numero di cicli, cioè per un certo intervallo di tempo. Il 
+tutto in maniera ripetitiva.
+Fig. XVIII.10.3  Regolazione a numero intero di cicli.
+Risulta ovvio che questo sistema di regolazione della potenza agisce sul numero delle 
+onde complete (periodi) che possono transitare attraverso il TRIAC (Fig. XVIII.10.3).
+In dipendenza dell’istante in cui viene attivato il TRIAC, si distingue il controllo sin-
+crono dal controllo asincrono: col primo l’istante di attivazione del TRIAC viene inviato 
+in corrispondenza al passaggio per lo zero della tensione di alimentazione, nel secondo 
+l’attivazione è casuale. Naturalmente lo spegnimento avviene per tutti, in presenza di 
+carico resistivo, al passaggio per lo zero della tensione di alimentazione; l’utilizzo di un 
+controllo sincrono consente di limitare se non addirittura eliminare la generazione di 
+armoniche. L’impiego di questi dispositivi a semiconduttore consente, talvolta, di sostitu-
+ire i contattori: vengono definiti interruttori allo stato solido e permettono di evitare la 
+presenza di parti in movimento. La stessa regolazione è applicabile anche per carichi tri-
+fase, dove, in questo caso, è necessaria la presenza di un TRIAC su ogni conduttore, tutti 
+comandati da un unico generatore di impulsi opportunamente sfasati tra loro.
+11  INVERTER
+Il termine inverter indica tipicamente un dispositivo impiegato in ambito industriale 
+per la conversione di grandezze elettriche continue in grandezze elettriche variabili in 
+grado di pilotare efficacemente macchine elettriche o elettroniche di potenza. La conver-
+sione c.c.-c.a. può avvenire tramite macchine elettriche rotanti (l’impiego di un motore c.c. 
+azionante un alternatore dove viene controllata la tensione di eccitazione di entrambe le 
+macchine), oppure mediante congegni statici; questi ultimi hanno ormai preso il soprav-
+vento sui primi proprio per l’affermazione dei dispositivi a semiconduttore anche 
+nell’ambito di elevate potenze. L’uso dei convertitori statici ha consentito di ottenere un 
+rendimento complessivo più elevato, in quanto non vi sono perdite meccaniche dovute a 
+parti in movimento, dimensioni più contenute e, non ultimo, un minore costo di manuten-
+zione. Per contrapposizione la forma d’onda in uscita non risulta perfettamente sinusoidale 
+tant’è vero che spesso viene indicata come tensione alternativa in luogo di tensione alter-
+nata e la sua frequenza varia normalmente da 5 Hz a 120 Hz. La caratteristica essenziale 
+della tensione in uscita dall’inverter è quella di avere ampiezza e frequenza indipendenti 
+Uo
+t
+
+[PAG 1867]
+ELETTRONICA DI POTENZA
+XVIII-49
+dalla tensione in ingresso. La realizzazione di questi convertitori c.c.-c.a. avviene tramite 
+l’impiego di transistor di potenza (bipolari o Mosfet) per commutazione se la loro potenza 
+in uscita è al massimo a qualche decina di kilowatt, altrimenti, per potenze maggiori, alfine 
+di ottenere rendimenti più elevati, si ricorre all’impiego dei tiristori oppure dei GTO.
+ Usualmente il convertitore c.c.-c.a. è legato al funzionamento di motori elettrici di 
+tipo asincrono; per merito dell’inverter siamo in grado di intervenire sulla velocità di un 
+motore asincrono modificando la frequenza della tensione applicata (anch’essa a sua volta 
+modificata). Nei motori asincroni trifase la velocità del rotore dipende dalla velocità del 
+campo magnetico rotante generato dallo statore; quest’ultimo dipende a sua volta dalla 
+frequenza della tensione applicata e dal numero dei poli. Per poter effettuare variazioni 
+continue di velocità è necessario intervenire sulla frequenza della tensione di alimenta-
+zione, e, conseguentemente, anche sull’ampiezza di questa. Normalmente la fonte di ener-
+gia per gli inverter viene fornita dalla rete elettrica a corrente alternata e, per questo 
+motivo, viene generalmente effettuata una doppia conversione; la tensione alternata della 
+rete elettrica viene convertita in tensione continua e, dopo un adeguato filtraggio, 
+quest’ultima viene convertita in una tensione alternata con ampiezza e frequenza indipen-
+denti da quella di rete. L’alimentazione da rete dell’inverter può essere di tipo monofase 
+oppure trifase; con alimentazione monofase si realizzano inverter anche con uscita trifase 
+ma di potenze inferiori ai 3kW, con l’alimentazione trifase l’uscita è normalmente trifase 
+con potenze che possono raggiungere valori intorno al centinaio di kW. 
+Dal punto di vista del rendimento si ottengono 
+valori intorno al 95% della potenza commutata, 
+questo per merito dell’elevata velocità di com-
+mutazione dei nuovi dispositivi a semicondut-
+tore. Il principio base di un inverter sta nella 
+tecnica di comando della parte di potenza, una 
+di queste è il funzionamento PWM: la modula-
+zione della larghezza degli impulsi applicati 
+alla parte di potenza può essere effettuata in 
+modo tale che il segnale in uscita risulti di tipo 
+sinusoidale. 
+Fig. XVIII.11.1  Sintesi di una semionda con tecnica P.W.M.
+Si consideri, per semplicità, un convertitore c.c-c.c. (Fig. XVIII.9.2) tramite il quale si 
+desidera realizzare in uscita la semionda positiva di una tensione sinusoidale: trascurando, 
+per il momento, le problematiche di spegnimento del tiristore presente nella figura, se si 
+comanda il Gate del tiristore (o meglio del GTO) con segnali di comando di tipo PWM, 
+cioè aventi frequenza costante e durata variabile, si ottiene in uscita la semisinusoide desi-
+derata (Fig. XVIII.11.1). Il funzionamento è assimilabile a quello degli alimentatori 
+switching, ma, in questo caso, il duty cycle è variabile.
+La caratteristica peculiare degli inverter è di generare una forma d’onda quanto più 
+prossima a quella sinusoidale; poiché la forma d’onda tipica in uscita è l’onda quadra, è 
+necessario contenere al massimo le armoniche generate. La soluzione a quest’ultimo pro-
+blema è l’impiego dei filtri, anche se, in corrispondenza alle frequenze più basse, i filtri 
+efficaci risultano dispendiosi e ingombranti. 
+In alternativa si realizzano inverter dove la forma d’onda in uscita è una sinusoide 
+composta da una successione di gradini di tensione: in questo caso il contenuto maggiore 
+di armoniche è alle frequenze più alte e viene eliminato con filtri che, proprio per l’ele-
+vata frequenza, risultano di dimensioni contenute (il nucleo dell’induttanza è in ferrite) e 
+poco costosi. Altre peculiarità dell’inverter sono quelle di controllare in uscita una ten-
+U
+t
+
+[PAG 1868]
+XVIII-50
+ELETTRONICA DI POTENZA
+sione di ampiezza indipendente dal carico applicato, cioè essere un circuito elettronico 
+ben retroazionato, imporre una frequenza di commutazione dei dispositivi di potenza più 
+elevata possibile, compatibilmente col dispositivo, onde contenere al massimo le perdite 
+di potenza dovute alla commutazione ed approssimare nel migliore dei modi la tensione 
+sinusoidale desiderata.
+11.1  Inverter a transistor
+Gli inverter realizzati con transistor di potenza sia bipolari che Mosfet hanno la parti-
+colarità di non poter erogare elevate potenze, ma presentano il vantaggio di poter essere rea-
+lizzati con circuiti di pilotaggio dello stadio di potenza piuttosto semplici. 
+In particolare lo stadio di 
+potenza sarà realizzato con tran-
+sistor bipolari quando, a fronte 
+di potenze maggiori rispetto 
+quelle controllate dai Mosfet, la 
+frequenza di commutazione è 
+bassa. 
+Al contrario si impiegano i 
+transistor Mosfet con fre-
+quenze di commutazione più 
+elevate ma con potenze più 
+basse. 
+Fig. XVIII.11.2  Inverter a transistor controfase.
+Dall’analisi della Fig. XVIII.11.2 si evince quanto segue:
+–  ai capi di ogni transistor durante la sua fase di interdizione la tensione raggiunge un 
+valore pari a circa il doppio della tensione di alimentazione;
+–   per effetto del carico applicato (tipicamente ohmico-induttivo) durante la commuta-
+zione dei transistor la corrente di questi ultimi si evolve con andamento esponenziale sia 
+nella fase di ON che in quella di OFF;
+–  sono presenti due diodi in parallelo ai transistor: questi hanno il compito di soppri-
+mere le sovratensioni che si generano durante le commutazioni, permettono la circola-
+zione della corrente induttiva e trasferiscono il contenuto energetico di questa alla sezione 
+in c.c. dell’inverter.
+11.2  Inverter a tiristori
+Destinati a convertire potenze medio alte, vengono suddivisi tra inverter unidirezionali, 
+cioè con funzionamento in un solo quadrante, ed inverter reversibili, con funzionamento sui 
+quattro quadranti. I modelli unidirezionali sono realizzati con tiristori e diodi e destinati in 
+prevalenza ad utilizzatori di tipo resistivo, gli altri implementano solo tiristori e consentono 
+il recupero in rete dell’energia accumulata dagli utilizzatori di tipo induttivo.
+L’impiego dei tiristori in un circuito in corrente continua, tipico degli inverter c.c. - c.a., 
+e, quindi, con le problematiche inerenti l’interdizione di questi dispositivi, viene indicato 
+con il termine di convertitori con tiristori a spegnimento forzato.
+Quando il dispositivo SCR entra in conduzione, essendo percorso da corrente continua, 
+persevera nello stato di conduzione a meno che non si intervenga interrompendo il passaggio 
+di corrente, magari tramite polarizzazione inversa del dispositivo (si veda Cap. XVIII.9).
+La tecnica di controllo dello stadio di potenza utilizza principalmente la tecnica PWM
+e l’onda quadra parzializzata. L’invertitore parallelo e l’invertitore serie sono due circuiti 
+comunemente impiegati negli inverter destinati, rispettivamente, all’alimentazione dei 
+motori asincroni trifase e all’alimentazione di utilizzatori ad elevata frequenza, in quanto 
+Ut
+Ui
+D1
+D2
+T1
+T2
+Oscillatore
+
+[PAG 1869]
+ELETTRONICA DI POTENZA
+XVIII-51
+consentono di generare in uscita una tensione alternata avente frequenza e ampiezza 
+variabili di buone caratteristiche.
+11.3  Invertitore parallelo
+Lo schema semplificato dell’invertitore parallelo è rappresentato nella figura seguente. 
+Il primario del trasformatore T1 è inte-
+ressato da una corrente che alternativa-
+mente scorre nei due sensi qualora 
+vengano innescati i due tiristori SCR1
+ed SCR2. Risulta evidente che sul 
+secondario del trasformatore sarà, con-
+seguentemente, presente una tensione 
+alternativa la cui frequenza è legata ai 
+tempi di accensione e spegnimento dei 
+tiristori. Questi ultimi, proprio per la 
+loro costituzione, essendo polarizzati 
+sempre direttamente, non sarebbero in 
+grado di passare allo stato di interdi-
+zione se non fosse presente il conden-
+satore C2 (non polarizzato). 
+Fig. XVIII.11.3  Inverter parallelo.
+Se si considera l’istante durante il quale l’SCR1 è in conduzione, e l’SCR2 è interdetto, 
+la corrente circolante nel semiavvolgimento interessato genera un flusso che, a sua volta, 
+genera una forza elettromotrice indotta nell’altro semiavvolgimento. 
+Trascurando le cadute di tensione si può scrivere:
+(XVIII.11.1)
+(XVIII.11.2)
+Ciò sta a dimostrare che la tensione ai capi del condensatore C2 vale circa il doppio 
+della tensione in ingresso con il punto C a potenziale positivo rispetto B. Nell’istante in 
+cui viene inviato l’impulso di comando verso l’SCR2, e quindi quest’ultimo viene messo 
+in conduzione, la tensione UCB risulta applicata all’SCR1 con polarità inversa e quindi lo 
+costringe all’interdizione. Il corretto funzionamento del circuito è subordinato al fatto che 
+la tensione di polarità inversa necessaria all’interdizione del tiristore abbia una durata tale 
+da superare il tempo di turn OFF proprio del tiristore.
+È quest’ultimo il motivo per il quale è presente l’induttanza L1 in serie all’alimenta-
+zione; essa consente di ritardare la scarica del condensatore C2 creando con quest’ultimo 
+un circuito oscillante che, nell’ipotesi esemplificativa di trascurare gli altri elementi reat-
+tivi presenti, ha periodo:
+(XVIII.11.3)
+I diodi D1 e D2 consentono di realizzare un circuito di controllo degli SCR indipen-
+dente dalla natura dell’utilizzatore U presente sul secondario del trasformatore; nel caso 
+di un carico di tipo ohmico-induttivo, la sua reattanza, è in grado, in assenza dei suddetti 
+diodi, di ritardare la carica del condensatore C2, quindi di generare l’eventualità di avere 
+una tensione insufficiente a spegnere i tiristori all’atto della commutazione con ovvio 
+conseguente malfunzionamento dell’inverter stesso.
+Ui
+C1
+L1
+SCR1
+SCR2
+D2
+D1
+Ut
+A
+B
+C
+segnali di
+controllo
+C2
+UCA
+E1
+Ui
+
+=
+UCB
+UCA+UAB
+2
+
+Ui
+
+T
+2L1 C2
+
+=
+
+[PAG 1870]
+XVIII-52
+ELETTRONICA DI POTENZA
+11.4  Inverter serie
+È un inverter utilizzato per produrre potenze anche rilevanti (fino a 10 kW) con ten-
+sioni sinusoidali aventi elevata frequenza (50 kHz), impiegato principalmente nel riscal-
+damento a radio frequenza e nel campo degli ultrasuoni (Fig. XVIII.11.4). 
+Nella Fig. XVIII.11.4 lo schema di prin-
+cipio evidenzia un circuito dove le indut-
+tanze L1 ed L2, rispettivamente con le 
+capacità C1 e C2 e con l’utilizzatore, for-
+mano due circuiti oscillanti aventi una 
+frequenza di risonanza (comune ai due 
+circuiti) propria, che interviene sulla 
+forma d’onda della tensione in uscita, in 
+funzione della frequenza di pilotaggio 
+dei tiristori; se la frequenza di pilotaggio 
+degli SCR è maggiore o uguale a quella 
+di risonanza, la tensione disponibile è 
+circa sinusoidale. 
+Fig. XVIII.11.4  Inverter serie.
+Una delle particolarità di questo circuito è quella che i tiristori passano automatica-
+mente allo stato di OFF non appena il circuito oscillante genera una tensione di polarità 
+inversa. Si noti infine la presenza dei diodi D1 e D2 con funzione di diodi di ricircolo. 
+Posto che i due circuiti oscillanti siano ovviamente uguali e che pertanto C1 = C2 = C ed 
+L1 = L2 = L, detta f la frequenza della tensione in uscita, indicato con Q il fattore di merito 
+del circuito oscillante e con R la resistenza dell’utilizzatore, si hanno le seguenti relazioni:
+(XVIII.11.4)
+(XVIII.11.5)
+11.5  Inverter trifase
+L’inverter trifase deriva direttamente dal circuito denominato inverter a mezzo ponte.
+Quest’ultimo è caratterizzato dall’assenza del trasformatore e dalla necessità di 
+disporre di una alimentazione duale; può essere realizzato con transistor di potenza 
+oppure tramite tiristori, dispositivi che, al solito, agiscono come interruttori che, opportu-
+Fig. XVIII.11.5  Inverter a mezzo 
+ponte.
+Fig. XVIII.11.6  Inverter trifase a transistor.
+Ui
+C1
+C2
+R
+L2
+L1
+SCR1
+SCR2
+D2
+D1
+Utilizz.
+C
+1
+4f Q R
+
+
+-------------------------
+=
+L
+Q R
+
+2f
+-----------
+=
+S1
+S2
+R
+Ui   
+Ui
+2
+2
+Ui
+T1
+T2
+T3
+T4
+T5
+T6
+D1
+D2
+D3
+D4
+D5
+D6
+Utilizzatore trifase
+
+[PAG 1871]
+ELETTRONICA DI POTENZA
+XVIII-53
+namente comandati, generano una tensione ad onda quadra sul carico.
+Lo schema di principio di un inverter a mezzo ponte viene visualizato in Fig. 
+XVIII.11.5, mentre lo schema di un inverter trifase realizzato mediante transistor viene 
+evidenziato in Fig. XVIII.11.6
+Nel circuito proposto in Fig. XVIII.11.6 i transistor, opportunamente comandati, sono 
+in grado di generare un sistema di tre tensioni alternate sfasate tra loro di 120°. A comple-
+tamento del circuito, sull’uscita, viene inserito un filtro (non presente in figura)  per limi-
+tare la generazione di armoniche. 
+12  CONVERSIONE FREQUENZA - FREQUENZA
+Talvolta risulta necessario poter convertire la potenza alternata ad una determinata 
+frequenza in una frequenza diversa, si pensi, ad esempio, alla necessità di modificare la 
+frequenza della tensione di alimentazione dei motori asincroni onde modificare la loro 
+velocità di rotazione, oppure agli alimentatori destinati ai vibratori elettromagnetici dove, 
+in quest’ultimo caso vi è un ben preciso e limitato intervallo di frequenze di funziona-
+mento.Vi possono essere due esigenze:
+–  la conversione dalla frequenza  ad una frequenza f0 comunque diversa;
+–  la conversione dalla frequenza f0 alla frequenza f1 con f1 < f0, naturalmente con forma 
+d’onda della tensione in uscita il più possibile sinusoidale.
+La generalità dei casi si risolve raddriz-
+zando la tensione disponibile a fre-
+quenza f0 ed inviando la tensione 
+continua così ottenuta ad un converti-
+tore, realizzando cioè un inverter che 
+genererà in uscita la tensione con la fre-
+quenza desiderata.
+Nel caso in cui la frequenza richiesta sia 
+inferiore a quella della tensione in 
+ingresso, si può utilizzare una apparec-
+chiatura denominata cicloconverter al 
+posto all’inverter. 
+Fig. XVIII.12.1  Cicloconverter monofase.
+Il cicloconverter è un dispositivo statico in grado di accettare in ingresso una tensione 
+sinusoidale di frequenza f0 e di generare una tensione quasi sinusoidale con una frequenza 
+f1 che arriva al massimo al 40% di f0; in questo caso la conversione di potenza da una fre-
+quenza all’altra avviene senza raddrizzare la tensione in ingresso, si effettua cioè l’opera-
+zione di conversione diretta. 
+La Fig. XVIII.12.1 illustra lo schema di principio di una apparecchiatura monofase di 
+questo tipo. Il funzionamento è il seguente: i tiristori vengono comandati in coppia, preci-
+samente SCR1 con SCR3 ed SCR2 con SCR4, realizzando, durante lo stato di conduzione, un 
+alimentatore monofase ad onda intera. Infatti nel momento in cui conducono i tiristori SCR1
+ed SCR3 la corrente che percorre l’utilizzatore risulta unidirezionale con ben definito e ovvio 
+verso; esce dall’anodo dei suddetti SCR. Per analogia, quando conduce l’altra coppia di tiri-
+stori, l’utilizzatore risulta nuovamente interessato da una corrente unidirezionale, ma questa 
+volta di verso opposto al precedente. 
+ I tiristori vengono comandati con impulsi il cui ritardo di accensione risulta legato in 
+maniera inversa all’ampiezza della tensione in uscita avente frequenza più bassa che si 
+vuole ottenere. Le due coppie di tiristori vengono comandate una con l’evento della 
+Filtro
+Ut
+Uut
+Uo
+Ui
+SCR1
+SCR2
+SCR3
+SCR4
+
+[PAG 1872]
+XVIII-54
+ELETTRONICA DI POTENZA
+semionda positiva da generare, l’altra con l’evento di quella negativa.
+Fig. XVIII.12.2  Forme d’onda di un cicloconverter monofase.
+La presenza del filtro in uscita dal cicloconverter permette di ottenere una forma 
+d’onda sinusoidale sul carico perché lascia passare la frequenza fondamentale eliminando 
+le armoniche. La Fig. XVIII.12.2 illustra le forme d’onda della tensione per il cicloconver-
+ter monofase. Si noti che questo dispositivo non necessita di particolari circuiti per lo spe-
+gnimento dei tiristori; la corrente è impulsiva e pertanto consente il loro spegnimento 
+automatico ad ogni semionda.
+I cicloconverter trovano applicazione specialmente nei sistemi trifase perché non 
+necessitano di trasformatori e, a fronte di un circuito di comando dei Gate dei tiristori deci-
+samente più complesso, si ottiene in uscita una forma d’onda migliore (Fig. XVIII.12.3). 
+Fig. XVIII.12.3  Circuito di potenza di un cicloconverter trifase.
+  
+BIBLIOGRAFIA
+BIONDO G. - SACCHI E., Manuale di elettronica e telecomunicazioni, 5a edizione, 
+Hoepli, Milano, 2005.
+COTTIGNOLI F., Macchine elettriche, Calderini, Bologna, 1995.
+OLIVIERI L. - RAVELLI E., Elettronica per Elettrotecnica e Automazione, CEDAM, 
+Padova, 2001.
+PEZZI M., Macchine elettriche, Zanichelli, Bologna, 1995.
+PHILIPS, Power Semiconductor Application, Philips, Hazel Grove, 1994.
+VALDES G., Elettrotecnica, elettronica ed applicazioni, Calderini, Bologna, 1998.
+RIVISTE: Control Engineering Europe, Elettronica Oggi, Automazione, EDN Europe, 
+Automazione e Strumentazione, anni dal 1980 a 2002.
+DATA SHEET: American Semiconductor, SGS-Thomson, Philips, Semikron, Siemens.
+Ui
+Uo
+Uut
+t
+t
+t
+L1
+L2
+L3
+
+[PAG 1873]
+Sezione XIX
+Tecnologie elettriche 
+ed elettroniche
+INDICE
+pag.
+1    MATERIALI CONDUTTORI, ISOLANTI E MAGNETICI . . . . . . . . . . . . . . .
+3
+1.1    Generalità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 3
+1.1.1    Materiali metallici. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 4
+1.1.2    Materiali plastici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+1.1.3    Materiali ceramici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+1.2     Proprietà fisico-chimiche dei materiali . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 6
+1.2.1    Proprietà fisiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+1.2.2    Proprietà meccaniche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+1.2.3    Proprietà tecnologiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+1.2.4    Caratteristiche termiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+1.2.5    Proprietà chimiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+1.2.6    Proprietà elettriche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+1.2.7    Proprietà magnetiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+1.3    Materiali per le tecnologie elettriche e elettroniche  . . . . . . . . . . . . . . . . .
+18
+1.3.1    Materiali conduttori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+1.3.2    Materiali isolanti  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+1.3.3    Materiali semiconduttori  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+1.3.4    Materiali magnetici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+1.3.5    Materiali piezoelettrici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+1.4    Il processo di conduzione nei solidi conduttori di elettricità . . . . . . . . . . .
+ 25
+1.4.1    Metalli . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 25
+1.4.2    Semiconduttori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+1.4.3    Deriva di un campo elettrico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+28
+1.4.4    Diffusione in un gradiente di concentrazione . . . . . . . . . . . . . . . . .
+ 28
+2    ELEMENTI UTILIZZATI NEGLI IMPIANTI ELETTRICI CIVILI . . . . . . . . .
+ 28
+2.1    Montante . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 30
+2.2    Cavi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+2.3    Cavi a fibre ottiche. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 34
+2.4    Tubi e canali . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+40
+2.5    Dispositivi di connessione e cassette . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 46
+2.6    Centralino . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+48
+2.7    Apparecchi di protezione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+49
+2.7.1    Interruttori automatici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+49
+2.7.2     Interruttori differenziali . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 50
+2.7.3    Soluzioni modulari combinate . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 50
+2.8    Apparecchi di comando . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 51
+2.8.1    Interruttore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 52
+2.8.2    Deviatore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+52
+
+[PAG 1874]
+XIX-2
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+2.8.3    Doppio interruttore (commutatore) . . . . . . . . . . . . . . . . . . . . . . . . 
+ 53
+2.8.4    Invertitore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+53
+2.8.5    Pulsante . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+54
+2.9    Prese di corrente e prese speciali  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+54
+2.9.1    Prese e spine di corrente e prese particolari per uso domestico . . . 
+54
+2.9.2    Prese a ricettività multipla e adattatori . . . . . . . . . . . . . . . . . . . . . . 
+ 58
+2.9.3    Apparecchi speciali di derivazione  . . . . . . . . . . . . . . . . . . . . . . . . 
+59
+2.9.4    Prese e spine ad uso industriale . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 60
+2.10    Apparecchi di segnalazione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+62
+2.10.1    Suoneria, ronzatore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+62
+2.10.2    Quadro indicatore a cartellini. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 65
+2.10.3    Quadro indicatore luminoso  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+65
+2.11    Apparecchi per controlli . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+65
+2.11.1    Variatore di luminosità . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+65
+2.11.2    Temporizzatore luci scale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+66
+2.11.3    Orologio programmatore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+67
+2.12    Apparecchi per il controllo della temperatura . . . . . . . . . . . . . . . . . . . . . 
+67
+2.12.1    Termostato ambiente . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 67
+2.12.2    Cronotermostati elettronici. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 68
+2.13    Relè e rivelatori vari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 69
+2.13.1    Relè . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 69
+2.13.2    Relè passo-passo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 70
+2.13.3    Interruttore crepuscolare . . . . . . . . . . . . . . . . . . . . . . . .
