@@ -436,8 +436,8 @@ Rispondi SOLO JSON valido. Nessun testo fuori dal JSON."""
             # Fallback: crea struttura minima dal testo
             print(f'  parse_json fallito, uso testo diretto')
             result = {
-                'briefing_mattutino': risposta[:600] if risposta else 'Briefing non disponibile',
-                'consigli_giorno': [risposta[:200]] if risposta else [],
+                'briefing_mattutino': 'Briefing non disponibile (parse fallito)',
+                'consigli_giorno': [],
                 'consigli_piante': {},
                 'piano_giornata': {'mattina': '', 'pomeriggio': '', 'sera': ''},
                 'avvisi_urgenti': []
@@ -544,8 +544,26 @@ def main():
 
     # 2. Carica pdf_knowledge
     print('\n[2/6] PDF knowledge...')
-    raw_pdf, _ = gh_get('data/pdf_knowledge.json')
-    pdf_knowledge = json.loads(raw_pdf)
+    # Lettura pdf_knowledge robusta (file >1MB — retry con gh_raw)
+    pdf_knowledge = {}
+    for _attempt in range(3):
+        try:
+            raw_pdf, _ = gh_get('data/pdf_knowledge.json')
+            if raw_pdf and raw_pdf.strip():
+                pdf_knowledge = json.loads(raw_pdf)
+                break
+        except Exception as _ex:
+            print(f'  pdf_knowledge tentativo {_attempt+1} fallito: {_ex}')
+            try:
+                raw_pdf = gh_raw('data/pdf_knowledge.json')
+                if raw_pdf and raw_pdf.strip():
+                    pdf_knowledge = json.loads(raw_pdf)
+                    break
+            except Exception as _ex2:
+                print(f'  gh_raw fallito: {_ex2}')
+            import time as _t; _t.sleep(3)
+    if not pdf_knowledge:
+        print('  WARN: pdf_knowledge vuoto, continuo senza')
     print(f'  PDF analizzati: {len(pdf_knowledge.get("analisi",[]))}')
 
     # 3. Carica memoria
