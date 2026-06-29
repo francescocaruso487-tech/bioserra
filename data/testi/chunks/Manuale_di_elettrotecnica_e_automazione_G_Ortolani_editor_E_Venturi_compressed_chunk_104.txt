@@ -1,0 +1,1062 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 104/116 ===
+Chars: 43,447 | Offset: 4,554,283
+
+
+
+[PAG 2022]
+XX-4
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+regola dell’arte; si intende con ciò, tutti i progetti elaborati in conformità alla vigente nor-
+mativa e alle indicazioni delle guide e alle norme dell’UNI, del CEI o di altri Enti di nor-
+malizzazione appartenenti agli Stati membri dell’Unione europea.
+Tipicamente i progetti contengono almeno gli schemi dell’impianto e i disegni plani-
+metrici, nonché una relazione tecnica sulla consistenza e sulla tipologia dell’installazione, 
+della trasformazione o dell’ampliamento dell’impianto stesso, con particolare riguardo 
+alla tipologia e alle caratteristiche dei materiali e componenti da utilizzare e alle misure di 
+prevenzione e di sicurezza da adottare. Nei luoghi a maggior rischio di incendio e in quelli 
+con pericoli di esplosione, particolare attenzione è posta nella scelta dei materiali e dei 
+componenti da utilizzare nel rispetto della specifica normativa tecnica vigente.
+Nel caso in cui l’impianto a base di progetto venga variato in corso d’opera, il pro-
+getto presentato deve essere integrato con la necessaria documentazione tecnica attestante 
+le varianti, alle quali, oltre che al progetto, l’installatore è tenuto a fare riferimento nella 
+dichiarazione di conformità.
+Al termine dei lavori, previa effettuazione delle verifiche previste dalla normativa 
+vigente, comprese quelle di funzionalità dell’impianto, l’impresa installatrice rilascia al 
+committente la dichiarazione di conformità degli impianti realizzati nel rispetto delle 
+norme. Di tale dichiarazione fanno parte integrante la relazione contenente la tipologia dei 
+materiali impiegati, nonché il progetto di cui sopra.
+In caso di rifacimento parziale di impianti, il progetto, la dichiarazione di conformità, 
+e l’attestazione di collaudo, ove previsto, si riferiscono alla sola parte degli impianti 
+oggetto dell’opera di rifacimento, ma tengono conto della sicurezza e funzionalità 
+dell’intero impianto. Nella dichiarazione di conformità e nel progetto verrà infatti espres-
+samente indicata la compatibilità tecnica con le condizioni preesistenti dell’impianto.
+Nel caso in cui la dichiarazione di conformità prevista non sia stata prodotta o non sia 
+più reperibile, tale atto è sostituito, per gli impianti eseguiti prima dell’entrata in vigore 
+del presente decreto, da una dichiarazione di rispondenza, resa da un professionista 
+iscritto all’albo professionale per le specifiche competenze tecniche richieste.
+1.2  Livelli di progetto
+Per stabilire quali siano i documenti che costituiscono la documentazione di progetto 
+di un impianto elettrico occorre anzitutto definire a quale stadio della progettazione ci si 
+riferisce; la guida CEI 0-2 (guida per la definizione della documentazione di progetto 
+degli impianti elettrici), nella seconda edizione pubblicata nel mese di settembre 2002 
+(fascicolo 6578) distingue tre livelli di progetto, per ognuno dei quali la relativa documen-
+tazione deve essere redatta dal progettista dell’impianto elettrico, funzione che può essere 
+svolta da un professionista competente in materia, iscritto al proprio albo professionale:
+–  progetto preliminare, costituente il primo stadio della progettazione e avente lo scopo 
+di definire le caratteristiche qualitative e funzionali dei lavori, le esigenze da soddisfare e 
+le specifiche prestazioni da fornire; la documentazione del progetto preliminare viene uti-
+lizzata per gli studi di fattibilità, per la valutazione sommaria dei costi e per lo sviluppo 
+del progetto definitivo; 
+–  progetto definitivo, che viene redatto sulla base del progetto preliminare ed è utilizzato 
+per il rilascio della concessione edilizia o di altro atto equivalente; esso non è valido per la 
+realizzazione dell’impianto elettrico;
+–  progetto esecutivo da utilizzare per l’appalto e la realizzazione dell’impianto elettrico, 
+da eseguire nel rispetto del progetto definitivo e di eventuali ulteriori prescrizioni legate al 
+rilascio della concessione edilizia o del permesso per costruire; deve definire completa-
+mente, per quanto riguarda l’impiantistica elettrica, l’opera da realizzare e, pertanto, la 
+documentazione di progetto prevista è quella più ampia e approfondita.
+
+[PAG 2023]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-5
+La progettazione secondo i tre livelli indicati è obbligatoria solo per i lavori pubblici. 
+Negli altri casi può essere semplificata, riducendo il numero dei livelli (anche al solo pro-
+getto esecutivo) purché siano soddisfatte le necessità per le quali l’attività di progetta-
+zione è stata posta in essere.
+1.3  Destinazione d’uso delle opere
+Sempre al fine di definire la consistenza della documentazione di progetto, che dovrà 
+essere diversa a seconda della complessità dell’impianto, nella seconda edizione della 
+guida CEI 0-2 si fa riferimento alla destinazione d’uso dell’opera, secondo la classifica-
+zione introdotta dalla 46/90 (non ancora sostituita in ciò dal DM 37/2008), dal DPR 447/
+91 e dalla legge 109/94 relativa ai lavori pubblici. Sono state stabilite tre categorie:
+–  edifici civili come definiti dal DPR 447/91, art. 1, comma 1, ossia le unità immobiliari 
+o le parti di esse destinate a uso abitativo, a studio professionale o a sede di persone giuri-
+diche private, associazioni, circoli o conventi e simili;
+–  altre opere come definite dal DPR 447/91, art. 1, comma 2, ossia edifici adibiti a sede 
+di società, ad attività industriale, commerciale o agricola o comunque di produzione o di 
+intermediazione di beni o servizi, gli edifici di culto, nonché gli immobili destinati a 
+uffici, scuole, luoghi di cura, magazzini o depositi o in genere a pubbliche finalità, dello 
+Stato o di Enti pubblici territoriali, istituzionali o economici;
+–  opere pubbliche ai sensi della legge 109/94 e del DPR 554/99.
+Nell’ambito delle prime due categorie gli impianti elettrici vengono suddivisi in fun-
+zione dei limiti dimensionali indicati dal DM 37/2008 e dal DPR 447/91, relativi 
+all’obbligatorietà del progetto elettrico, distinguendo quelli al di sotto di tali limiti dimen-
+sionali, per i quali non è obbligatorio il progetto, e quelli al di sopra dei limiti, ossia con 
+obbligo di progetto.
+Il progetto deve essere depositato presso lo sportello unico per l’edilizia del comune 
+in cui si realizza l’impianto.
+Per gli impianti senza obbligo di progetto la documentazione è, evidentemente, riferita 
+al caso in cui il progetto viene comunque redatto.
+1.4  Documentazione di progetto
+La documentazione di progetto è l’insieme dei documenti che costituiscono il progetto 
+dell’impianto ed è riferita al livello di progetto considerato.
+Se nel corso dell’opera vengono effettuate delle varianti esecutive, i documenti del pro-
+getto esecutivo, aggiornati con quelli delle varianti, costituiscono la documentazione finale 
+di progetto.
+Per documentazione finale d’impianto si intende, invece, l’insieme della documenta-
+zione finale di progetto, della dichiarazione di conformità con i relativi allegati obbligatori 
+e della documentazione fornita dai costruttori dei componenti elettrici, riguardante le istru-
+zioni per l’installazione, la messa in servizio, l’esercizio, la verifica e la manutenzione.
+I documenti previsti dalla guida CEI 0-2 sono diversi a seconda del livello di progetto 
+e della destinazione d’uso delle opere, come indicato nella Tab. XX.1.1 in cui sono distinti 
+i documenti previsti nella generalità dei casi (simbolo SI) da quelli non necessari (simbolo 
+NO) e facoltativi (simbolo F), questi ultimi da redigere quando necessario, in base alle 
+caratteristiche e alla complessità del progetto.
+I documenti previsti per il progetto preliminare dell’impianto elettrico devono conte-
+nere le seguenti, principali, informazioni.
+Relazione illustrativa: essa contiene, generalmente, la descrizione del progetto, i cri-
+teri di scelta delle soluzioni previste, le indicazioni per la redazione del progetto defini-
+tivo, per il cronoprogramma attuativo e quelle necessarie per garantire l’accessibilità, 
+l’utilizzo e la manutenzione degli impianti esistenti.
+
+[PAG 2024]
+XX-6
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tab. XX.1.1   Consistenza della documentazione di progetto in relazione alla destinazione 
+d’uso dell’opera (guida CEI 0-2, seconda edizione)
+Documentazione di progetto
+Destinazione d’uso delle opere
+Edifici civili
+Altre opere
+Opere 
+pubbliche
+Impianti 
+senza 
+obbligo di 
+progetto
+Impianti 
+con 
+obbligo di 
+progetto
+Impianti 
+senza 
+obbligo di 
+progetto
+Impianti 
+con 
+obbligo di 
+progetto
+Documentazione del progetto preliminare
+Relazione illustrativa
+NO
+SI
+NO
+SI
+SI
+Relazione tecnica
+NO
+NO
+NO
+NO
+SI
+Planimetria generale e schema 
+elettrico generale
+NO
+F
+NO
+F
+SI
+Piano di sicurezza
+NO
+NO
+NO
+NO
+SI
+Calcolo sommario delle spese 
+NO
+NO
+NO
+NO
+SI
+Documentazione del progetto definitivo
+Relazione descrittiva
+NO
+F
+NO
+SI
+SI
+Relazione tecnica
+NO
+SI
+NO
+SI
+SI
+Elaborati grafici
+NO
+SI
+NO
+SI
+SI
+Calcoli preliminari (relazione 
+illustrativa)
+NO
+SI
+NO
+SI
+SI
+Disciplinare descrittivo e 
+prestazionale degli elementi tecnici
+NO
+F
+NO
+F
+SI
+Computo metrico
+NO
+SI
+NO
+SI
+SI
+Computo metrico estimativo
+NO
+F
+NO
+F
+SI
+Quadro economico
+NO
+NO
+NO
+NO
+SI
+Documentazione del progetto esecutivo
+Relazione generale
+NO
+F
+NO
+SI
+SI
+Relazione specialistica
+NO
+SI
+NO
+SI
+SI
+Schema (descrizione) dell’impianto 
+elettrico
+SI
+NO
+SI
+NO
+NO
+Elaborati grafici
+F
+SI
+F
+SI
+SI
+Calcoli esecutivi (relazione 
+illustrativa), tabelle e diagrammi di 
+coordinamento delle protezioni
+NO
+SI
+NO
+SI
+SI
+Piano di manutenzione
+NO
+F
+NO
+F
+SI
+Elementi per il piano di sicurezza e di 
+coordinamento
+NO
+F
+NO
+F
+SI
+Computo metrico
+NO
+SI
+NO
+SI
+SI
+Computo metrico estimativo
+NO
+SI
+NO
+SI
+SI
+Quadro economico
+NO
+NO
+NO
+F
+SI
+Cronoprogramma
+NO
+F
+NO
+F
+SI
+Quadro dell’incidenza della 
+manodopera
+NO
+NO
+NO
+NO
+SI
+Capitolato speciale d’appalto
+NO
+SI
+NO
+SI
+SI
+Schema di contratto
+NO
+F
+NO
+F
+SI
+
+[PAG 2025]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-7
+Relazione tecnica: deve riportare i dati di progetto e i criteri di scelta delle soluzioni 
+impiantistiche elettriche.
+Planimetria generale: deve riportare gli elementi indispensabili del sistema elettrico, 
+da coordinare con quelli del progetto dell’opera nel suo insieme, come, per esempio, il 
+posizionamento della cabina, dei locali tecnici a uso elettrico, i percorsi delle condutture 
+elettriche.
+Schema elettrico generale: deve mostrare le principali relazioni o connessioni tra i 
+componenti dell’impianto elettrico; può essere uno schema di sistema, uno schema a bloc-
+chi o di principio.
+Piano di sicurezza: deve riportare le prime indicazioni e disposizioni per la stesura del 
+piano di sicurezza previsto dal D.Lgs. n.81 del 9 aprile 2008, integrato e corretto con il D. 
+Lgs. n. 106 del 3 agosto 2009.
+Calcolo sommario delle spese: deve contenere la stima parametrica per blocchi di 
+impianti (per esempio cabine, linee principali, quadri ecc.). 
+I documenti previsti per il progetto definitivo dell’impianto elettrico devono conte-
+nere, in sintesi, le informazioni seguenti.
+Relazione descrittiva: deve fornire i chiarimenti atti a dimostrare la rispondenza del 
+progetto alle finalità dell’intervento, comprese le motivazioni per eventuali variazioni 
+rispetto al progetto preliminare e, ove previsto per le opere pubbliche, anche indicazioni 
+circa il tempo necessario per la redazione del progetto esecutivo.
+Relazione tecnica: indica le soluzioni che dovranno essere adottate nel progetto esecu-
+tivo e svolge la funzione di documento di raccordo tra i diversi elaborati. Deve riportare, 
+per esempio, l’identificazione dell’opera, i dati di progetto, i criteri di scelta delle prote-
+zioni, i criteri di dimensionamento dei componenti, la documentazione relativa alla prote-
+zione contro i fulmini, le caratteristiche dei sistemi di sicurezza per gli ambienti e le 
+applicazioni particolari.
+Elaborati grafici: descrivono le principali caratteristiche dell’intervento da realizzare 
+mediante schemi elettrici, planimetrie, eventuali sezioni in scala.
+Calcoli preliminari: devono consentire un primo dimensionamento degli impianti elet-
+trici; i criteri, le modalità di esecuzione e i risultati dei calcoli vanno raccolti in una rela-
+zione illustrativa che non deve necessariamente contenere i calcoli stessi.
+Disciplinare descrittivo e prestazionale degli elementi tecnici: precisa i contenuti pre-
+stazionali degli elementi previsti nel progetto; esso contiene, inoltre, la descrizione delle 
+caratteristiche dei materiali, dei componenti e delle opere previste nel progetto.
+Computo metrico: deve definire le quantità dei materiali da installare e delle attività 
+previste per la realizzazione dell’impianto.
+Computo metrico-estimativo: è il documento che, partendo dalle quantità indicate dal 
+computo metrico e dai prezzi unitari ricavati dai listini correnti, fornisce la stima somma-
+ria delle opere.
+Quadro economico: è il documento che riassume i costi per i lavori appaltati a misura, 
+a corpo, in economia e le somme a disposizione del committente per imprevisti, per le 
+spese tecniche, IVA e imposte.
+La documentazione del progetto esecutivo è quella formata dal maggior numero di 
+documenti, alcuni dei quali rappresentano l’evoluzione degli omonimi documenti previsti 
+per i precedenti livelli di progetto.
+Relazione generale: deve descrivere in dettaglio i criteri seguiti nelle scelte progettuali 
+e il trasferimento delle soluzioni tecnologiche sul piano contrattuale e su quello costruttivo.
+Relazione specialistica: è l’evoluzione della relazione tecnica del progetto definitivo e 
+corrisponde alla relazione tecnica sulla consistenza e sulla tipologia dell’installazione pre-
+vista dall’art. 4, comma 2 del DPR 447/91. Essa dovrà contenere tutte le informazioni
+
+[PAG 2026]
+XX-8
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+relative all’impianto, come per esempio l’elenco delle utenze e la descrizione dei carichi 
+elettrici, i dati del sistema di distribuzione e di utilizzazione dell’energia elettrica, i dati 
+relativi al sistema d’illuminazione, la descrizione delle misure di protezione ecc.
+Schema (descrizione) dell’impianto elettrico: è un documento previsto per gli impianti 
+senza obbligo di progetto, in alternativa alla relazione generale e a quella specialistica e deve 
+riportare le principali caratteristiche dell’impianto e le modalità di realizzazione dello stesso.
+Elaborati grafici: costituiscono una evoluzione di quelli previsti per il progetto defini-
+tivo e comprendono gli schemi di sistema, gli schemi elettrici e d’installazione, i disegni 
+planimetrici, particolari costruttivi e altri dettagli d’installazione ed eventuali altri elabo-
+rati, se necessari.
+Calcoli esecutivi: sono i calcoli esecutivi di dimensionamento degli impianti e si rife-
+riscono a tutte le apparecchiature, condutture elettriche, canalizzazioni e qualsiasi altro 
+elemento necessario per la funzionalità dell’impianto stesso. Vanno raccolti, come per il 
+progetto definitivo, in una relazione illustrativa.
+Tabelle e diagrammi di coordinamento delle protezioni: sono documenti alternativi o 
+complementari tra loro e riportano i dati relativi al coordinamento dei dispositivi di inter-
+ruzione e di protezione dei circuiti (curve d’intervento, campi di taratura, poteri d’interru-
+zione ecc.) e i criteri per la verifica dell’idoneità e della selettività delle protezioni per i 
+vari circuiti.
+Piano di manutenzione: è un documento, obbligatorio solo per le opere pubbliche, che 
+prevede, pianifica e programma l’attività di manutenzione, al fine di mantenere nel tempo 
+la funzionalità, le caratteristiche di qualità e di sicurezza, l’efficienza e il valore econo-
+mico dell’opera. 
+Elementi per il piano di sicurezza e di coordinamento: è il documento che definisce gli 
+elementi necessari per la redazione del piano di sicurezza e di coordinamento da attuare in 
+cantiere durante i lavori.
+Computo metrico e computo metrico estimativo: costituiscono l’integrazione e l’aggior-
+namento degli omonimi documenti redatti in sede di progetto definitivo; se tale progetto non 
+era previsto dovranno essere preparati ex-novo, tenendo conto del progetto esecutivo.
+Quadro economico: è simile all’omonimo documento previsto per il progetto definitivo.
+Cronoprogramma: definisce la sequenza temporale delle lavorazioni, in funzione di 
+particolari esigenze di programmazione e di finanziamento dell’opera.
+Quadro dell’incidenza della manodopera: riporta l’incidenza percentuale della quan-
+tità di manodopera rispetto al totale dei lavori.
+Capitolato speciale d’appalto: riporta gli elementi necessari per una compiuta defini-
+zione dell’appalto, i requisiti di accettazione dei materiali e dei componenti, le specifiche 
+di prestazione e le modalità di prova, l’ordine a cui attenersi nello svolgimento di specifiche 
+lavorazioni e ogni altra informazione e prescrizione ritenuta necessaria dal progettista.
+Schema di contratto: contiene le clausole dirette a regolare il rapporto tra il commit-
+tente e l’impresa appaltatrice.
+2  APPLICAZIONI ELETTRICHE
+2.1  Impianto elettrico di abitazione civile
+La grande diffusione di apparecchiature e novità tecnologiche ha comportato un note-
+vole aumento del consumo di energia elettrica anche per usi domestici. In ogni abitazione 
+infatti sono oggi presenti elettrodomestici di ogni genere; ogni casa è dotata di frigorifero 
+e lavatrice, di lavastoviglie e cucina elettrica e di un numero sempre maggiore di piccoli 
+elettrodomestici per la cucina e per la pulizia. Di pari passo è cresciuto l’uso dei mezzi di 
+comunicazione e la loro integrazione con procedure computerizzate e telematiche anche 
+nelle abitazioni residenziali oltre che nel settore terziario.
+
+[PAG 2027]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-9
+L’impianto elettrico non può quindi essere considerato come una semplice installa-
+zione di alcuni apparecchi illuminanti e di alcune prese di alimentazione. Molte sono oggi 
+le problematiche che si debbono affrontare: la protezione di persone e cose, il benessere 
+ed il comfort ambientale, la comunicazione sia all’interno sia con l’esterno, il controllo e 
+la programmazione delle apparecchiature elettriche e, da non sottovalutare, il coordina-
+mento estetico degli impianti con l’arredamento dei locali.
+2.1.1  Tipologie di impianti elettrici negli edifici civili
+Fino a qualche anno fa, nelle mansioni dell’installatore elettrico, non rientravano quelle 
+inerenti la predisposizione di impianti antifurto, antincendio, telefonico, televisivo e di dif-
+fusione sonora. Allo stato attuale invece è necessario prevedere tutta una serie di potenzia-
+lità installative, predisponendo una rete di canalizzazioni sotto intonaco (sotto traccia), che 
+potranno essere successivamente utilizzate. In un moderno appartamento non viene più tol-
+lerato un cavo televisivo o telefonico fissato esternamente lungo i battiscopa dei vari locali. 
+Quando si parla di impianto elettrico, perciò, si comprendono in esso anche tutte que-
+ste installazioni particolari che oramai sono dotazione normale di capitolato e vengono 
+eseguite, se non dalla stessa ditta, sicuramente in collaborazione tra vari esecutori. 
+L’installatore elettrico deve quindi possedere anche conoscenze generali relative agli 
+impianti di riscaldamento e condizionamento, di sollevamento e trasporto acque, di tra-
+sporto e utilizzazione gas, per quel che riguarda le possibili collaborazioni con i tecnici dei 
+vari settori specifici; con tali tecnici deve confrontarsi, allo scopo di ottenere un risultato 
+impiantistico che dal punto installativo ed estetico sia il più unitario e uniforme possibile.
+Tutte queste problematiche, inerenti settori che esulano dal semplice impianto elet-
+trico tradizionale, comportano una maggiore professionalità degli installatori, i quali 
+dovranno possedere una qualificazione adeguata.
+Questa tendenza, oltre che dalla situazione operativa, viene anche sostenuta dalle 
+recenti disposizioni legislative.
+Il Decreto del ministero dello sviluppo economico 22 gennaio 2008, n. 37 Regola-
+mento concernente l’attuazione dell’articolo 11-quaterdecies, comma 13, lettera a) della 
+legge n. 248 del 2005, recante riordino delle disposizioni in materia di attività di installa-
+zione degli impianti all’interno degli edifici (integralmente riportati nel DVD allegato) che 
+ha sostituito la legge n. 46 del 5/3/90 “Norme per la sicurezza degli impianti” e il succes-
+sivo regolamento di attuazione DPR n. 447 del 6/12/91, definisce i soggetti abilitati 
+all’esercizio della professione ed i requisiti che tale personale deve possedere.
+–  Diploma di laurea in materia tecnica.
+–  Diploma o qualifica con un periodo di inserimento, di almeno due anni continuativi, 
+alle dirette dipendenze di una impresa del settore.
+–  Titolo o attestato di formazione professionale, previo un periodo di un inserimento, di 
+almeno quattro anni consecutivi, alle dirette dipendenze di una impresa del settore.
+–  Prestazione lavorativa svolta, alle dirette dipendenze di una impresa abilitata nel ramo 
+di attività cui si riferisce la prestazione dell’operaio installatore per un periodo non infe-
+riore a tre anni.
+Il D.M. 37 si applica agli impianti posti al servizio degli edifici, indipendentemente dalla 
+destinazione d’uso, collocati all’interno degli stessi o delle relative pertinenze. Se 
+l’impianto è connesso a reti di distribuzione si applica a partire dal punto di consegna 
+della fornitura.
+Per gli impianti tecnologici (elettrico, radiotelevisivo, di riscaldamento e climatizza-
+zione, idrosanitario, di distribuzione gas, di sollevamento di cose e persone e antincendio) 
+viene prescritta la redazione di un vero progetto, che - dopo essere stato approvato ed ese-
+guito - dovrà essere collaudato e verificato per poter ottenere l’agibilità dell’edificio.
+
+[PAG 2028]
+XX-10
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Questa legge quindi si prefigge lo scopo di una maggiore affidabilità delle installa-
+zioni delegando alle ditte affidatarie dei lavori la responsabilità in ordine ad eventuali 
+disfunzioni degli impianti, ma ancorché obbliga il committente ad affidare i lavori di 
+installazione, trasformazione, di ampliamento e di manutenzione straordinaria ad imprese 
+abilitate, oltre che corresponsabilizzandolo nel conservare per l’impianto le caratteristiche 
+di sicurezza previste dalla normativa vigente. 
+È dunque di primaria importanza definire che cosa si intenda per progetto. Il progetto
+di un impianto elettrico è il complesso di studi che deve considerare in primo luogo le pre-
+stazioni che l’impianto deve fornire: la situazione ambientale e di funzionamento a cui è 
+asservito, le implicazioni in ordine alle norme e alle leggi che regolamentano la sua costi-
+tuzione, la sua classificazione, le caratteristiche delle apparecchiature che lo compongono 
+e quindi la redazione di un capitolato e la definizione di uno schema elettrico.
+In un secondo tempo rientra nella progettazione la definizione delle modalità di instal-
+lazione, delle verifiche e dei collaudi da effettuare.
+Nel progetto preliminare gli sforzi saranno concentrati sulle caratteristiche del futuro 
+impianto: destinazione d’uso dell’edificio o struttura, eventuali vincoli da rispettare, 
+norme tecniche da osservare, dati principali di progetto, soluzioni impiantistiche da adot-
+tare in relazione alla protezione di persone e cose e in particolare in luoghi con maggior 
+rischio di esplosione o incendio.
+Nel progetto esecutivo saranno relazionati in modo analitico i capitolati di fornitura 
+dei vari impianti, avvalendosi anche di schemi planimetrici che indichino la consistenza 
+dei lavori eseguiti.
+Le norme CEI 64-8, giunte nel 2007 alla sesta edizione, stabiliscono quali siano le 
+principali direttive, in linea generale, relative all’esecuzione degli impianti elettrici; vi 
+sono però prescrizioni particolari riguardo a taluni impianti nelle unità abitative e similari 
+ed in particolare: per i locali da bagno o per doccia, nei locali di pubblico spettacolo, per i 
+locali ad uso medico, nei luoghi con maggior pericolo di esplosione e incendio.
+Per queste tipologie particolari di impianti si deve fare riferimento alle norme:
+–  CEI 64-50 del 2007 - Edilizia ad uso residenziale e terziario. Guida per l’integra-
+zione degli impianti elettrici utilizzatori e per la predisposizione di impianti ausiliari, tele-
+fonici e di trasmissione dati negli edifici. Criteri generali.
+–  CEI 64-51 - del 2007 - Edilizia ad uso residenziale e terziario. Guida per l’integra-
+zione degli impianti elettrici utilizzatori e per la predisposizione di impianti ausiliari, tele-
+fonici e di trasmissione dati negli edifici. Criteri particolari per centri commerciali.
+–  CEI 64-52 del 2007 - Edilizia ad uso residenziale e terziario. Guida per l’integra-
+zione degli impianti elettrici utilizzatori e per la predisposizione di impianti ausiliari, tele-
+fonici e di trasmissione dati negli edifici. Criteri particolari per edifici scolastici.
+–  CEI 64-53 del 2007 - Edilizia ad uso residenziale e terziario. Guida per l’integra-
+zione degli impianti elettrici utilizzatori e per la predisposizione di impianti ausiliari, tele-
+fonici e di trasmissione dati negli edifici. Criteri particolari per edifici ad uso 
+prevalentemente residenziale.
+–  CEI 64-54 del 2007 - Edilizia ad uso residenziale e terziario. Guida per l’integra-
+zione degli impianti elettrici utilizzatori e per la predisposizione di impianti ausiliari, tele-
+fonici e di trasmissione dati negli edifici. Criteri particolari per locali di pubblico 
+spettacolo.
+–  CEI 64-55 del 2007 - Edilizia ad uso residenziale e terziario. Guida per l’integra-
+zione degli impianti elettrici utilizzatori e per la predisposizione di impianti ausiliari, tele-
+fonici e di trasmissione dati negli edifici. Criteri particolari per strutture alberghiere.
+–  CEI 64-56 del 2008 - Edilizia ad uso residenziale. Guida per l’integrazione degli 
+impianti elettrici utilizzatori e per la predisposizione di impianti ausiliari, telefonici e di
+
+[PAG 2029]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-11
+trasmissione dati negli edifici. Criteri particolari per locali ad uso medico.
+–  CEI 64-100/1 del 2006 - Edilizia residenziale. Guida per la predisposizione delle 
+infrastrutture per gli impianti elettrici, elettronici e per le comunicazioni Parte 1: Montanti 
+degli edifici.
+–  CEI 64-100/1;V1 del 2009 - Edilizia residenziale. Guida per la predisposizione 
+delle infrastrutture per gli impianti elettrici, elettronici e per le comunicazioni Parte 1: 
+Montanti degli edifici.
+–  CEI 0-2 seconda edizione del 2002 - Guida per la definizione della documentazione 
+di progetto degli impianti elettrici.
+Gli impianti elettrici da prendere in considerazione, in fase di progetto, si possono 
+suddividere, per tipologia, in:
+–  impianto di forza motrice;
+–  impianto luce;
+–  impianto telefonico;
+–  impianto TV;
+–  impianto antintrusione;
+–  impianto di rilevamento fumi e fughe di gas;
+–  impianto di segnalazione, di chiamata, citofonico e videocitofonico; 
+–  impianto servizi generali e spazi comuni condominiali;
+–  impianto luce esterna;
+–  impianto nella cantina, solaio, box e scantinato con più di nove posti macchina;
+–  impianto locale contatori e colonna montante;
+–  impianto ascensore;
+–  impianto centrale termica;
+–  impianto EDP;
+–  impianto luce d’emergenza;
+–  impianto di sonorizzazione;
+–  impianto richiesta di udienza o guida-luce;
+–  impianto di terra;
+–  impianto contro le scariche atmosferiche.
+La guida CEI 64-50 e la norma 64-8 stabiliscono le quote di installazione delle appa-
+recchiature (Fig. XX.2.1); in particolare l’altezza delle prese deve essere di almeno 17,5 
+cm dal piano di calpestio e l’asse di inserzione non deve essere orizzontale bensì verticale; 
+per le prese derivate su zoccoli o canaline l’asse di inserzione può essere abbassato ad una 
+quota di almeno 7 cm dal piano di calpestio (minimo 12 cm per le prese telefoniche); per 
+le prese montate su torrette la quota minima è di 4 cm.
+La legislazione per l’eliminazione delle barriere architettoniche è:
+–  D.P.R. 24 luglio 1996 n. 503: Regolamento recante norme per l’eliminazione delle 
+barriere architettoniche negli edifici, spazi e servizi pubblici.
+–  D. M. LL.PP. 14 giugno 1989, n. 236: Prescrizioni tecniche necessarie a garantire 
+l’accessibilità, l’adattabilità e la visibilità degli edifici privati e di edilizia residenziale 
+pubblica sovvenzionata e agevolata, ai fini del superamento e dell’eliminazione delle bar-
+riere architettoniche. 
+–  Legge 9 gennaio 1989, n. 13: Disposizioni per favorire il superamento e l’elimina-
+zione delle barriere architettoniche negli edifici privati.
+–  Circolare Ministeriale - Ministero dei Lavori Pubblici - 22 giugno 1989, n. 1669/
+U.L.: Circolare esplicativa della legge 9 gennaio 1989, n. 13.
+Queste disposizioni e innumerevoli altre leggi regionali sono volte a favorire la qualità 
+della vita delle persone con disabilità; per quanto concerne gli impianti elettrici, le quote 
+di installazione proposte, per le varie apparecchiature sono quelle di Fig. XX.2.2.
+
+[PAG 2030]
+XX-12
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+ 
+Fig. XX.2.1  Quote di installazione delle apparecchiature secondo CEI 64-50 e 64-8.
+Fig. XX.2.2   Quote di installazione delle apparecchiature per l’eliminazione delle bar-
+riere architettoniche.
+7
+17,5
+30
+80
+90
+120
+140
+150
+225
+265
+0
+I
+0
+I
+0
+I
+0
+I
+Prese o passacordone per alimentazione
+Pulsante a tirante e passacordone o
+e nei box h = 150 cm.
+Citofono, videocitofono h = 140 cm.
+Prese e comandi nei servizi e sul piano
+di lavoro della cucina h = 110
+h = 70
+Prese a spina, TV, TP, trasporto segnali
+Cassette di derivazione h = 30 cm.
+Comandi punti luce, prese ( ad altezza
+1)
+cappa di aspirazione cucina h = 265 cm.
+2)
+4)
+7)
+3)
+Suoneria h = 160
+205 cm.
+Passacordone per alimentazione scaldacqua
+h = 180 cm.
+Prese e comandi luce nelle cantine
+Centralino unità abitativa h = 160 cm.
+5)
+presa aspiratore bagno h = 225 cm.
+6)
+8)
+120 cm.
+9)
+maniglie delle porte) h = 90 cm.
+10)
+Prese e comandi punti luce testaletto
+80 cm.
+12)
+h > 17,5 cm.
+11)
+o zoccolo battiscopa h > 12 cm.
+13)
+Prese telefoniche montate su canale
+battiscopa h > 7 cm.
+14)
+Prese montate su canale o zoccolo
+15)
+Prese montate su torrette h > 4 cm.
+205
+180
+160
+4
+12
+SIP
+SIP
+120
+140
+0
+I
+Citofono, videocitofono h = 110
+Prese a spina, TV, TP, trasporto segnali
+3)
+Centralino unità abitativa h = 60
+1)
+4)
+h = 45
+SIP
+140 cm
+(altezza consigliata 75
+140 cm).
+2)
+Campanelli e pulsanti di comando h =
+140 cm).
+(altezza consigliata 60
+140 cm
+130 cm
+120 cm).
+(altezza consigliata 110
+115 cm
+(altezza consigliata
+110 cm).
+110
+40
+60
+
+[PAG 2031]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-13
+Si ricorda che tali precauzioni devono essere adottate negli spazi comuni condominiali 
+(vano scale, luoghi di riunione, porticati, scantinato), negli spazi esterni, nei locali pub-
+blici; deve inoltre essere previsto un comando di segnalazione acustica in prossimità della 
+tazza wc e della vasca o doccia dei bagni riservati ai portatori di handicap.
+Nella casa del futuro, inoltre, verranno sempre più utilizzate procedure che consen-
+tano l’ottimizzazione del consumo di energia elettrica.
+Sono oramai patrimonio comune le installazioni che utilizzano centrali “intelligenti” a 
+microprocessore, per il controllo dell’impianto elettrico; queste centrali sono collegate a 
+vari sensori e attuatori mediante particolari linee denominate bus.
+Tramite queste linee, costituite da doppini, cavi coassiali, cavi multifilari e cavi normali, 
+il microprocessore può governare l’intero sistema di gestione della casa: si può per esempio 
+accendere la lavatrice tramite il telefono o avvisare il portiere che abbiamo riscontrato una 
+segnalazione di allarme nel nostro appartamento. Tutto questo però, se da un lato rappre-
+senta un affascinante futuro non tanto lontano, dall’altro rimarca maggiormente il problema 
+di una maggiore dipendenza dalla gestione politica dell’informazione e dell’energia.
+Una trattazione più approfondita di tale tecnica installativa si trova nella Sez. XVI Tec-
+nologie BUS.
+2.1.2  Dimensionamento dell’impianto elettrico di un appartamento
+L’analisi delle problematiche fin qui effettuata richiede ora una risoluzione pratica. 
+Viene quindi proposto il dimensionamento dell’impianto elettrico di un appartamento 
+tipo, senza la presunzione di esaurire un argomento che, come si è detto, dipende da una 
+molteplicità di fattori e di esigenze. Si sono scelte delle apparecchiature di tipo modulare, 
+facenti parte della serie Living prodotta dalla ditta Bticino (Figg. XX.2.3). La Tav. XX.2.1
+riporta la planimetria dell’appartamento con la distribuzione degli arredi nei vari locali. 
+Strettamente collegato alla planimetria dell’appartamento e caratteristica iniziale di 
+lavoro, a questo punto deve essere stilato un capitolato di offerta lavori redatto dal cliente 
+o dalla Direzione Lavori. Se questo capitolato non esiste, l’installatore ne deve compilare 
+uno che contempli tutti i lavori da eseguire (a titolo di esempio vedasi il capitolato ripor-
+tato nel DVD allegato).
+La fase di lavoro successiva prevede il disegno di uno schema sulla planimetria 
+dell’appartamento, in modo da visualizzare la distribuzione e la localizzazione di massima 
+dei punti luce e dei punti di comando dei vari utilizzatori (Tav. XX.2.2).
+Quindi i vari locali dell’appartamento vengono passati in rassegna per determinare la 
+dislocazione precisa di tutte le apparecchiature. 
+I locali scelti nell’esempio proposto sono elencati nel seguente ordine:
+–  disimpegno, sgabuzzino;
+–  studio;
+–  soggiorno;
+–  cucina, terrazzo;
+–  bagno, bagno di servizio;
+–  camera matrimoniale;
+–  camera singola;
+–  ingresso.
+Non sono contemplati in questo esempio, ma sono sicuramente parte integrante di un 
+qualsiasi progetto, i locali cantina e garage e le zone comuni dell’edificio.
+Fase successiva del dimensionamento è quella di fissare per ciascun locale la consi-
+stenza dell’impianto indicando la dotazione di minima delle apparecchiature da installare 
+e la rete di canalizzazioni necessaria per la loro connessione; viene inoltre suggerita una 
+dotazione supplementare denominata ad alta funzionalità.
+
+[PAG 2032]
+XX-14
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+ 
+Fig. XX.2.3a  Apparecchi modulari di comando Bticino serie Living.
+
+[PAG 2033]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-15
+Fig. XX.2.3b  Apparecchi modulari di segnalazione Bticino serie Living.
+
+[PAG 2034]
+XX-16
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Fig. XX.2.3c  Apparecchi modulari di derivazione Bticino serie Living.
+
+[PAG 2035]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-17
+Fig. XX.2.3d  Apparecchi modulari per funzioni speciali Bticino serie Living.
+
+[PAG 2036]
+XX-18
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.2.1  Schema planimetrico.
+Soggiorno
+Cucina
+Terrazzo
+Studio
+Sgabuzzino
+Disimpegno
+Bagno
+Ingresso
+Camera matrimoniale
+Camera singola
+Bagno
+
+[PAG 2037]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-19
+Tav. XX.2.2  Riepilogo generale piani di installazione (punti luce e di comando).
+Soggiorno
+Cucina
+Terrazzo
+Studio
+Sgabuzzino
+Disimpegno
+Bagno
+Ingresso
+Camera matrimoniale
+Camera singola
+Bagno
+1
+*
+*
+*
+*
+*
+*
+*
+2
+3
+4
+5
+6
+7 8
+9
+Q
+6
+1
+2
+3
+V
+4
+5
+14 15
+13
+12
+11
+10
+9
+8
+7
+6
+5
+1
+2
+4
+3
+2
+7
+8
+9
+4
+5
+6
+1
+2
+3
+1
+4
+3
+1
+2
+1
+2
+3
+4
+5
+*
+1
+2
+3
+4
+5
+6
+7
+8
+4
+5
+6
+7
+8
+9
+10
+3
+2
+1
+1
+*
+Scatola telefonica unificata
+
+[PAG 2038]
+XX-20
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.2.3  Disposizione apparecchiature nei locali disimpegno e sgabuzzino.
+Disimpegno, sgabuzzino
+Non sono previste prescrizioni particolari per il disimpegno e lo sgabuzzino, se non 
+quelle di una illuminazione con punti di comando funzionali e ben accessibili in entrata o 
+in uscita da ogni stanza; nel disimpegno in modo particolare si presenta tale esigenza in 
+Tab. XX.2.1  Quantificazione tipologie impianti nel disimpegno, sgabuzzino
+Locale: Disimpegno, sgabuzzino
+Codice
+impianto
+Descrizione tipologia impianto
+Quantità
+Tipologie impianti
+A
+Punto luce con cavo N07V-K sez. 1,5 mm2 posato in opera entro tuba-
+zioni in PVC corrugato flessibile, comprese le scatole di derivazione.
+2
+C
+Punto comando con interruttore unipolare tipo componibile, su supporto 
+in resina entro scatola incassata e placca in alluminio o resina, tubo PVC 
+flessibile e conduttori compresi a partire dalla derivazione posta in dor-
+sale, questa esclusa, percorso 5 m.
+1
+H
+Punto comando c.s. con pulsante e relè interruttore con bobina alla ten-
+sione di rete, compresa la quota del relè e della relativa linea.
+3
+I
+Punto presa 2  10 A + T realizzato in tubo PVC incassato, conduttori 
+N07V-K sez. 1,5 mm2, presa bipolare da 10 A con terra centrale tipo 
+componibile, su supporto in resina entro scatola incassata e placca in 
+alluminio o resina, tubo PVC flessibile e conduttori compresi a partire 
+dalla derivazione posta in dorsale, questa esclusa, percorso 5 m. 
+1
+P
+Punto presa 2  16 A + T realizzato in tubo PVC incassato, conduttori 
+N07V-K sez. 2,5 mm2, presa bipolare da 16 A con terra centrale tipo 
+componibile, su supporto in resina entro scatola incassata e placca in 
+alluminio o resina, tubo PVC flessibile e conduttori compresi a partire 
+dalla derivazione posta in dorsale, questa esclusa, percorso 5 m.
+1
+X
+Rivelatore ad infrarosso posato in opera con tubo PVC corrugato flessi-
+bile incassato compreso cavetto schermato 6  0,5 mm2.
+1
+Z
+Centrale antintrusione a 5 zone autoalimentata 24 h.
+1
+AP
+Dorsale linea luce 2 (1  2,5) ø 20.                                                               m
+6
+AR
+Dorsale linea F.M. 2 (1  4) + 1G4 ø 25.                                                      m
+6
+A
+3
+4
+1
+2
+1
+B
+Disimpegno
+A
+A
+A
+A
+I
+B
+A 5
+24
+Sgabuzzino
+
+[PAG 2039]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-21
+quanto è il luogo di passaggio tra la zona giorno e la zona notte e i servizi. 
+Nello sgabuzzino è prevista anche la dislocazione della centralina del sistema antin-
+trusione. Nella Tab. XX. 2.1 sono sintetizzati i vari impianti per stilare un preventivo.
+Come si può vedere dalla Tav. XX. 2.3, in questi locali si prevedono le installazioni di:
+–  un punto luce a soffitto (punto A) comandato da tre pulsanti attraverso relè interruttore 
+del tipo passo-passo;
+–  un punto luce (punto B) comandato da un interruttore;
+–  una presa 2P + T 10 A;
+–  una presa 2P + T 16 A;
+–  un rivelatore passivo a infrarossi collegato alla centrale antifurto;
+–  una centrale antifurto autoalimentata a 5 zone;
+–  relative scatole portafrutti e di derivazione con canalizzazioni atte a contenere i condut-
+tori necessari per la connessione degli apparecchi e delle linee dorsali di alimentazione.
+Le dotazioni supplementari possono essere costituite da: prese 2P + T 10 A e 16 A 
+protette con interruttore automatico magnetotermico; prese 2P + T 10 A e 16 A protette 
+con interruttore automatico magnetotermico e differenziale ad alta sensibilità (10 mA); 
+segnalatore di massima corrente; lampada di emergenza che entra in funzione automatica-
+mente in caso di black-out; lampada segnapasso. L’impianto di illuminazione del disimpe-
+gno può essere sostituito con comandi diretti (deviatori e invertitore) al posto 
+dell’impianto con relè passo-passo e pulsanti.
+Studio
+Il vano studio, di frequente riscontro nei moderni appartamenti, è il luogo deputato al 
+lavoro, allo studio, e dove ci si reca per guardare la televisione, per conversare in un posto 
+più raccolto in modo confidenziale. L’illuminazione di questo locale dipende dall’uso pre-
+valente previsto, per cui si dimostra utile predisporre una molteplicità di punti luce e di 
+comando.
+Nello studio si devono considerare eventuali potenziamenti della linea telefonica per 
+l’installazione di strumenti telematici legati all’uso di computer; per l’alimentazione delle 
+apparecchiature informatiche è bene prevedere l’utilizzo di prese provviste di scaricatore 
+e protette da interruttori differenziali ad altissima sensibilità.
+Nel caso di appartamento adibito a sede di uffici si prevedono reti preferenziali dedi-
+cate all’alimentazione delle apparecchiature informatiche e l’utilizzo di connettori EDP 
+per l’interconnessione di computer tramite rete di comunicazione.
+Tav. XX.2.4  Disposizione apparecchiature locale studio.
+5
+4
+3
+*
+TP
+B
+TV
+A
+M
+Studio
+B
+A
+2
+1
+*
+Scatola telefonica 
+unificata
+
+[PAG 2040]
+XX-22
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Nell’esempio proposto (Tav. XX.2.4) la dotazione prevista è rappresentata da:
+–  un punto luce a soffitto (punto A) comandato da un interruttore;
+–  una presa 2P + T 10 A (presa B) comandata da interruttore;
+–  una presa 2P + T 10 A;
+–  due prese 2P + T 10 A con scaricatore incorporato per l’alimentazione di computer e TV;
+–  una presa 2P + T 16 A;
+–  una presa TV a bassa attenuazione;
+–  un ripartitore TV a tre vie; 
+–  una presa telefonica;
+–  un rivelatore antintrusione a microonde collegato con la centrale antifurto;
+–  relative scatole portafrutti e di derivazione con canalizzazioni atte a contenere i condut-
+tori necessari per la connessione degli apparecchi e delle linee dorsali di alimentazione.
+Nella Tab. XX.2.2 sono sintetizzati i vari impianti per stilare un preventivo.
+Si possono anche prevedere le seguenti dotazioni supplementari: prese 2P + T 10 A e 
+16 A protette con interruttore automatico magnetotermico; prese 2P + T 10 A e 16 A pro-
+tette con interruttore automatico magnetotermico e differenziale ad alta sensibilità (10 
+mA); segnalatore di massima corrente; connettori EDP; lampada di emergenza che entra 
+Tab. XX.2.2  Quantificazione tipologie impianti nello studio
+Locale: Studio
+Codice
+impianto
+Descrizione tipologia impianto
+Quantità
+Tipologie impianti
+A
+Punto luce con cavo N07V-K sez. 1,5 mm2 posato in opera entro tuba-
+zioni in PVC corrugato flessibile, comprese le scatole di derivazione.
+1
+C
+Punto comando con interruttore unipolare tipo componibile, su supporto 
+in resina entro scatola incassata e placca in alluminio o resina, tubo PVC 
+flessibile e conduttori compresi a partire dalla derivazione posta in dor-
+sale, questa esclusa, percorso 5 m.
+2
+I
+Punto presa 2  10 A + T realizzato in tubo PVC incassato, conduttori 
+N07V-K sez. 1,5 mm2, presa bipolare da 10 A con terra centrale tipo 
+componibile, su supporto in resina entro scatola incassata e placca in 
+alluminio o resina, tubo PVC flessibile e conduttori compresi a partire 
+dalla derivazione posta in dorsale, questa esclusa, percorso 5 m. 
+2
+O
+Punto presa c.s. con scaricatore incorporato.
+2
+P
+Punto presa 2  16 A + T realizzato in tubo PVC incassato, conduttori 
+N07V-K sez. 2,5 mm2, presa bipolare da 16 A con terra centrale tipo 
+componibile, su supporto in resina entro scatola incassata e placca in 
+alluminio o resina, tubo PVC flessibile e conduttori compresi a partire 
+dalla derivazione posta in dorsale, questa esclusa, percorso 5 m. 
+1
+U
+Punto presa TV formato da tubazione 25 mm, cassetta di derivazione e 
+cavo coassiale 75  
+1
+V
+Punto presa TP formato da tubazione 20 mm, cassetta di derivazione e 
+doppino telefonico intrecciato. 
+1
+W
+Rivelatore a microonde posato in opera con tubo PVC corrugato flessi-
+bile incassato compreso cavetto schermato 60  0,5 mm2.
+1
+AP
+Dorsale linea luce 2 (1  2,5) ø 20.                                                               m
+1
+AQ
+Dorsale linea F.M. 2 (1  2,5) + 1G2,5 ø 20                                                m
+1
