@@ -1,0 +1,1714 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 74/116 ===
+Chars: 43,169 | Offset: 3,225,825
+
+
+
+[PAG 1530]
+XV-46
+SISTEMI
+5.3  Trasformata Zeta
+Data una funzione reale o complessa della variabile reale t, continua in 
+, che sod-
+disfa la condizione di essere esponenziale di ordine n, cioè tale che: 
+   
+ con A > 0 e  reale 
+(XV.5.7)
+definito un T reale e positivo, si definisce trasformata Zeta della funzione f(t) con periodo 
+T la funzione complessa della variabile complessa z l’espressione:
+(XV.5.8)
+tipicamente indicata con ZT(f).
+La trasformata Zeta è una trasformazione lineare che dipende unicamente dai valori di 
+f(t) nei punti nT, cioè in quei punti nei quali avviene il campionamento. È importante notare 
+lo stretto legame tra la trasformata di Laplace e la trasformata Zeta; infatti, posto: 
+(XV.5.9)
+dove Re(s) > , si ha:
+(XV.5.10)
+L’ultimo membro altro non è che la trasformata di Laplace della funzione:
+(XV.5.11)
+5.4  Proprietà della trasformata Zeta
+–  La trasformata Zeta è una trasformazione lineare e pertanto gode delle proprietà di 
+linearità.
+–  Data una funzione avente trasformata Zeta ZT(f), per ogni valore m intero e positivo:
+(XV.5.12)
+Questa proprietà consente di utilizzare la trasformata Zeta per risolvere equazioni alle 
+differenze finite; infatti la più semplice approssimazione dell’equazione differenziale 
+ è l’equazione alle differenze finite:
+(XV.5.13)
+con T incremento della variabile. Passando alle trasformate, si ottiene la trasformata Zeta 
+della soluzione; infatti:
+(XV.5.14)
+dove yT(z) e GT(z) sono le trasformate Zeta rispettivamente di y(t) e di g(t); pertanto:
+(XV.5.15)
+0 +
+
+
+f t
+Aet
+
+F z
+f nT
+
+
+zn
+------------
+n
+0
+
+
+=
+z
+esT
+=
+F esT
+
+
+f
+n nT
+
+esT
+
+
+-n
+0
+
+
+f
+n nT
+
+e-nsT.
+0
+
+
+=
+=
+f
+n ttnT
+
+.
+0
+
+
+Z f t
+mT
++
+
+
+
+
+zm F z
+f kT
+
+
+zk
+------------
+k
+0
+m-1
+
+.
+=
+y' t
+g t
+=
+y t
+T
++
+
+y t
+Tg t
+=
+z yT zy 0
+
+
+y
+– T z
+TGT z
+=
+yT z
+zy 0
++TGT z
+z1
+-----------------------------------
+=
+
+[PAG 1531]
+SISTEMI
+XV-47
+rappresenta la trasformata Zeta della soluzione.
+–  Se la funzione f(t) ha trasformata Zeta ZT(f), allora per ogni intero positivo m:
+(XV.5.16)
+proprietà indicata come traslazione in “t”.
+–  Data la funzione f(t) dotata di trasformata Zeta, per il teorema di derivazione in “z”, si 
+ha:
+(XV.5.17)
+–  Se ZT(f(t)) è la trasformata Zeta della funzione f(t) allora:
+(XV.5.18)
+valida per 
+.
+–  Per il teorema del valor iniziale e finale, detta F(z) la trasformata Zeta della funzione 
+f(t), si ha:
+(XV.5.19)
+e, se esiste il limite finito della f(t) per 
+, allora:
+(XV.5.20)
+purché la funzione (f(t) - sia di ordine esponenziale .
+–  Questi teoremi vengono presentati sotto il nome di teoremi del valor iniziale e finale 
+per analogia coi teoremi validi per le trasformate di Laplace. Si osservi che per il teorema 
+del valor finale il comportamento asintotico della f(t) per 
+ corrisponde con quello di 
+F(z) per 
+.
+5.5  Esempi di trasformate Zeta
+Di seguito vengono riportati esempi di trasformate Zeta di funzioni di particolare inte-
+resse (Tab. XV.5.1).
+–  Per il gradino unitario:
+(XV.5.21)
+–  La trasformata Zeta della funzione t vale:
+(XV.5.22)
+–  La trasformata Zeta della funzione 
+ vale:
+(XV.5.23)
+ZT f tmT
+
+-1 tmT
+
+
+
+
+ZT f
+zm
+------------
+=
+ZT tf t
+
+
+Tz
+d ZT f
+
+
+dz
+--------------------.
+=
+ZT etf t
+
+
+F e-Tz
+
+
+=
+z
+e 
+Re 
+
++
+
+T
+
+f 0
+
+F z
+z
+
+
+lim
+=
+t
+
+
+f t
+t
+
+
+lim
+z1
+
+F z
+z
+1
+
+lim
+=
+t
+
+
+z
+1
+
+ZT -1 t
+
+
+z
+z1
+--------.
+=
+ZT t
+T
+z
+z1
+
+2
+----------------.
+=
+f t
+
+1
+T--
+=
+ZT a
+t
+T--
+
+
+
+
+
+
+1
+1z-1
+-----------------
+=
+valida per
+z-1
+1.
+
+
+[PAG 1532]
+XV-48
+SISTEMI
+Tab. XV.5.1 Trasformata Zeta di alcune funzioni 
+5.6  Antitrasformata Zeta
+Secondo Cauchy, una funzione di variabile complessa è analitica in una regione se, in 
+quella regione di spazio, è derivabile e la sua derivata è continua. Ciò premesso ogni tra-
+sformata Zeta è una funzione analitica nella sua regione di definizione ed i valori che assume 
+la funzione nei punti nT di campionamento sono dati da:
+(XV.5.24)
+con  curva definita all’interno dell’insieme di definizione di F(z).
+È da notare che vi sono infinite funzioni aventi la medesima trasformata Zeta. Il metodo 
+più utilizzato per calcolare l’antitrasformata Zeta è, per analogia con il caso della antitra-
+sformata di Laplace, quello dello sviluppo in frazioni parziali.
+Nel caso di una funzione F(z) razionale propria avente solamente poli semplici, con 
+valore zk, l’antitrasformata è data da:
+(XV.5.25)
+ dove ZT
+-1 indica l’antitrasformata ed 
+. Nel caso di radici multiple, 
+l’antitrasformata risulta più complicata, ma non presenta difficoltà concettuali.
+Funzione
+Funzione trasformata
+1
+oppure
+u(t)
+f t
+F z
+t
+1
+tT
+
+
+z-1
+z
+z1
+--------
+kT
+T z
+
+z1
+
+2
+----------------
+ak
+z
+za
+--------
+ak-1
+1
+za
+--------
+k a
+
+k
+z
+a
+
+
+
+z
+a
++
+
+2
+------------------
+f nT
+
+
+1
+2j
+-------- F z
+z1-n
+----------
+
+dz
+=
+ZT
+-1 F z
+
+
+A
+k k
+1
+n
+
+zk
+
+
+t-T
+T
+-------
+-1 tT
+
+
+=
+Ak
+z-zk
+
+
+z
+zk
+
+lim
+F z
+=
+
+[PAG 1533]
+SISTEMI
+XV-49
+5.7  Algoritmi di controllo nei sistemi digitali
+La rappresentazione generale nel dominio di Zeta di un qualsiasi sistema può essere fatta 
+tramite la sua funzione di trasferimento intesa, ancora una volta, come rapporto tra la tra-
+sformata Zeta del segnale in uscita e la trasformata Zeta del segnale in ingresso. In parti-
+colare, la funzione di trasferimento potrebbe essere del tipo:
+(XV.5.26)
+con ovvio significato dei termini.
+Se il numeratore ed il denominatore sono entrambi fattorizzati, il numeratore rappresenta 
+gli zeri della funzione di trasferimento, il denominatore i poli di quest’ultima. È possibile 
+riscrivere l’equazione XV.5.26 nel modo che segue ottenendo così l’uscita del sistema:
+(XV.5.27)
+dove z-1 rappresenta il ritardo pari ad un intervallo di tempo, quindi l’equazione XV.5.27 
+può essere convertita nel dominio del tempo in una equazione alle differenze finite, e pre-
+cisamente:
+(XV.5.28)
+dove y(k1), y(k2), x(k) e x(k1) sono i campioni di x(t) e di y(t) ai k-esimi intervalli di 
+tempo.
+L’equazione XV.5.28 rappresenta, per un sistema digitale, l’equivalente delle equazioni 
+differenziali per i sistemi continui.
+Come esempio concreto si riporta di seguito l’implementazione, in un sistema digitale, 
+di un controllore di tipo PID. Esso viene realizzato tramite i tre seguenti termini:
+(XV.5.29)
+(XV.5.30)
+(XV.5.31)
+dove x(k) è l’ingresso all’istante k-esimo, KP, KI e KD rappresentano i coefficienti Propor-
+zionale, Integrativo e Derivativo, e T è l’intervallo di campionamento. L’uscita del control-
+lore digitale PID risulta pertanto:
+(XV.5.32)
+equazione facilmente implementabile sui dispositivi digitali programmabili.
+6  REGOLATORI E CONTROLLORI
+Con particolare riferimento ai sistemi retroazionati, possiamo suddividere questi ultimi 
+in regolatori e servosistemi, dove i regolatori sono quei sistemi nei quali l’uscita deve essere 
+mantenuta ad un valore fisso, mentre nei servosistemi l’uscita deve variare per adeguarsi alle 
+variazioni del segnale di riferimento. Un tipico esempio di sistema regolatore è costituito 
+dal termostato e dal forno del quale deve mantenere costante la temperatura. Un esempio di 
+W z
+Y z
+X z
+----------
+b0
+b1z-1
+b2z-2
+...
+bnz n
+–
++
++
++
++
+1
+a1z-1
+a2z-2
+...
+anz-n
++
++
++
++
+-------------------------------------------------------------------------
+=
+=
+Y z
+- a1z-1
+a2z-2
+...
+anz-n
++
++
++
+
+Y z
+b0
+b1z-1
+b2z-2
+...
+bnz-n
++
++
++
++
+
+X z
++
+=
+y k
+
+a1y k1
+
+a2y k2
+
+
+...
+b0x k
+
+b1x k1
+
+
+...
++
++
++
++
+=
+yP k
+
+KPx k
+
+=
+yI k
+
+yI k1
+
+
+TKIx k
+
++
+=
+yD k
+
+KD T
+
+
+x k
+x k1
+
+
+
+
+=
+y k
+
+yP k
+
+yI k
+
+yD k
+
++
++
+KP
+KIT
+KD T
+
+
+x k
+KD T
+
+
+x k1
+
+
+yI k1
+
+
++
++
++
+=
+=
+
+[PAG 1534]
+XV-50
+SISTEMI
+servosistema è costituito dall’amplificatore sonoro, dove il segnale in uscita varia la sua 
+ampiezza ma mantiene costante tutte le altre caratteristiche del segnale in ingresso. Viene 
+proposto di seguito l’esempio di un sistema di riscaldamento realizzato con un regolatore 
+e con un controllore.
+6.1  Regolatore ON-OFF
+La caratteristica essenziale dei regolatori ON-OFF (Fig. XV.6.1) è quella di poter assu-
+mere in uscita solo due stati: quello di ON e quello di OFF. 
+Fig. XV.6.1  Regolatore ON-OFF.
+Questa è la prerogativa per la quale il loro impiego tipico rientra nella realizzazione di 
+sistemi dove la grandezza in uscita assume un valore fisso e non viene richiesta una elevata 
+precisione in termini di errore a regime, sensibilità o tempo di risposta. 
+Si consideri un sistema costituito da un forno munito di elemento riscaldante di tipo elet-
+trico, un trasduttore in grado di rilevare la temperatura all’interno del forno ed un regolatore 
+in grado di confrontare il segnale proveniente dal trasduttore di temperatura con il segnale 
+di riferimento, quest’ultima spesso indicata come temperatura di Set-Point (S.P.). Regola-
+tore e trasduttore costituiscono semplicemente il termostato sulla cui uscita vi è, inoltre, 
+l’elemento di potenza in grado di comandare l’accensione e lo spegnimento della resistenza 
+di riscaldamento. Il funzionamento consiste nell’alimentare il riscaldatore elettrico quando 
+la temperatura nel forno risulta inferiore al valore impostato e viceversa. 
+Applicando alla lettera quanto sopra si ottiene un dispositivo che continua ad attivarsi 
+e disattivarsi oscillando tra lo stato di ON e quello di OFF. Per evitare questo si ricorre ad 
+implementare sul regolatore due soglie: una soglia superiore (S.S.) ed una soglia inferiore
+(S.I.). Questo modifica pertanto il funzionamento: l’elemento riscaldante viene attivato 
+quando la temperatura all’interno del forno è minore della Soglia Inferiore S.I. e viene disat-
+tivato quando è raggiunta la temperatura corrispondente alla Soglia Superiore S.S. L’inter-
+vallo di temperatura corrispondente alla differenza tra la soglia superiore e quella inferiore 
+viene indicato col termine di banda o isteresi.
+La presenza dell’isteresi comporta sicuramente un’aumento dell’errore durante il fun-
+Temperatura
+Tempo
+Tempo
+TON%
+100
+S.S.
+S.I.
+0
+S.P.
+
+[PAG 1535]
+SISTEMI
+XV-51
+zionamento, in quanto la temperatura del sistema continuerà ad oscillare tra un valore mag-
+giore della soglia superiore ed uno minore della soglia inferiore. La presenza dell’isteresi 
+consente però di evitare che vi sia un continuo intervento del dispositivo di pilotaggio 
+dell’elemento riscaldatore. È necessario pertanto individuare i valori di compromesso da 
+assegnare alle soglie in modo da limitare l’errore commesso dal sistema, ma contempora-
+neamente ridurre gli interventi del dispositivo di pilotaggio.
+6.1.1.  Controllore Proporzionale a Sfasamento
+Si consideri un controllore del tipo proporzionale destinato al sistema di riscaldamento 
+dell’esempio precedente: si tratta di pilotare la potenza dell’elemento riscaldatore stabilendo 
+tra questa e la temperatura del forno una relazione di proporzionalità. Il controllore agisce 
+in questo caso fornendo al sistema di pilotaggio dell’elemento riscaldante un segnale di 
+ampiezza costante all’esterno della banda di proporzionalità ed un segnale variabile al suo 
+interno.
+La banda di proporzionalità viene definita come l’intervallo di temperatura tra la soglia 
+superiore e la soglia inferiore (Fig. XV.6.2): il segnale proveniente dal controllore dovrà agire 
+parzializzando la potenza generata dall’elemento riscaldante. Ciò potrà avvenire, per esem-
+pio nel caso di elementi riscaldanti di un forno elettrico, tramite l’impiego di SCR o Triacs 
+comandati per operare a parzializzazione di fase, variando cioè l’angolo di conduzione dei 
+medesimi. Al di fuori della banda di proporzionalità, il controllore invierà il valore massimo 
+del segnale di comando se la temperatura del forno risulta minore del valore di soglia infe-
+riore, viceversa invierà un segnale di ampiezza nulla se la tempera-tura del forno avrà valore 
+maggiore della soglia superiore. In questo caso l’errore a regime risulterà sicuramente 
+minore di quello ottenibile dal regolatore ON-OFF descritto precedentemente, anche se, si 
+rammenta che l’errore a regime può essere eliminato solo dalla presenza di un’azione inte-
+grale.
+Fig. XV.6.2  Relazione temporale temperatura-potenza con un controllore proporzionale.
+6.1.2.  Controllore Proporzionale a Rapporto di Tempo
+In questo caso il segnale proveniente dal regolatore agisce come segnale di ON-OFF 
+dove, fissato un determinato intervallo di tempo, indicato usualmente come Tempo di Ciclo
+Temperatura
+Tempo
+Tempo
+PON%
+100
+S.S.
+S.I.
+0
+S.P.
+
+[PAG 1536]
+XV-52
+SISTEMI
+Tc, lo stato di ON e, conseguentemente di OFF, la cui somma vale Tc, sono legati nella loro 
+durata alla differenza fra la temperatura impostata e quella reale nel forno. In particolar modo 
+si interviene sul duty cycle del segnale inviato al comando dell’elemento riscaldante con 
+un’azione proporzionale all’interno della Banda Proporzionale e come regolatore ON-OFF 
+al di fuori della medesima. Anche questa soluzione fornisce, pur con un comando di tipo 
+acceso-spento, una buona regolazione, in quanto l’errore a regime sarà sicuramente inferiore 
+a quello ottenuto col regolatore ON-OFF. Tipicamente, per evitare che l’accensione degli 
+SCR o dei Triacs, utilizzati per l’attivazione dell’elemento comandato, generino interferenze 
+a radiofrequenza, si innescano tali dispositivi in modo sincrono col passaggio per lo zero 
+della tensione di rete. Si osservi nella Fig. XV.6.3 che il dispositivo rimane attivo per un peri-
+odo pari al 50% di Tc quando la temperatura del sistema è pari al valore di Set-Point.
+Fig. XV.6.3  Controllore proporzionale a rapporto di tempo.
+7  TECNICHE DIGITALI
+Fin qui si sono presi in esame Regolatori e Controllori di tipo analogico, cioè sistemi 
+nei quali il segnale di riferimento e quello di retroazione vengono confrontati ed utilizzati 
+in forma analogica, pur se con la possibilità di avere in uscita un segnale di comando di tipo 
+digitale. 
+Oggigiorno il controllo dei sistemi avviene prevalentemente con tecniche digitali: il 
+motivo fondamentale risiede nella flessibilità di impiego del sistema di controllo realizzato. 
+È possibile, infatti, modificare i parametri del controllore senza dover intervenire sui suoi 
+componenti fisici. 
+Concretamente: se in un sistema di controllo analogico, per modificare il coefficiente 
+integrativo, si è costretti a sostituire un condensatore avente una certa capacità con un altro 
+avente capacità diversa, in un sistema digitale la variazione consiste semplicemente nel 
+modificare la memoria contenente il valore del coefficiente integrativo. I controllori digitali 
+vengono realizzati tramite l’impiego dei PLC (Programmable Logic Controller), tramite 
+schede con microcontrollori e, infine, tramite PC (Personal Computer). È evidente che in 
+Temperatura
+Tempo
+Tempo
+TON%
+100
+S.S.
+S.I.
+0
+S.P.
+50
+
+[PAG 1537]
+SISTEMI
+XV-53
+quest’ultimo caso l’apparecchiatura deve essere realizzata, al pari degli altri dispositivi, con 
+tecniche e criteri che la rendano adatta all’ambiente industriale.
+7.1  PLC
+Premesso che per una adeguata e approfondita analisi dei sistemi a PLC si rimanda alla 
+Sez. XIV Automazione, si può affermare che il PLC è l’apparecchiatura che ha consentito la 
+svolta nell’ambito dell’automazione industriale. I primi automatismi furono realizzati tra-
+mite la logica cablata, pertanto con caratteristiche di assoluta rigidità: una qualsiasi modifica, 
+anche se superficiale, comportava l’intervento sui loro componenti fisici. A partire dalla fine 
+degli anni sessanta, la necessità di poter modificare in maniera semplice e rapida le funzioni 
+di un sistema dedicato al controllo di linee di produzione e, allo stesso tempo, lo sviluppo 
+del microprocessore, comportarono la nascita e la conseguente diffusione del PLC.
+ Quest’ultimo è un’apparecchiatura nata per compiti ripetitivi, cioè per svolgere inin-
+terrottamente lo stesso lavoro: inizialmente in grado di gestire unicamente ingressi e uscite 
+digitali si è, nel tempo, evoluta tramite l’aggiunta di interfacce analogiche sia di ingresso 
+che di uscita. In particolare l’evoluzione nell’ambito delle grandezze analogiche ha permesso 
+l’impiego dei PLC anche nel controllo di processo. Pur essendo forniti di un proprio pro-
+cessore, di memorie e dispositivi di interfaccia di Ingresso-Uscita, i PLC si distinsero ini-
+zialmente dai computer principalmente per due motivi: l’assenza di un terminale interattivo 
+quale il monitor e la tastiera, e la limitata capacità di eseguire calcoli matematici. 
+È da precisare che l’assenza di dispositivi di interazione con i PLC, fu la naturale con-
+seguenza che il lavoro per il quale furono ideati e sviluppati era, ed è, di tipo ripetitivo.
+Oggigiorno troviamo sul mercato PLC che nulla hanno da invidiare ai PC: hanno capacità 
+di elaborare ed effettuare calcoli anche in virgola mobile, possono interagire con terminali 
+interattivi quali, ad esempio, il touch screen, possono essere collegati in rete non solo per 
+interagire con qualche dispositivo simile a loro (nell’ambito di sistemi CAD-CAM), ma per-
+sino con reti di computer tramite le quali vengono modificati, se necessario, i dati o i pro-
+grammi residenti nelle loro memorie. Di fatto i PLC sono diventati dei veri e propri PC per 
+uso industriale: dispositivi aventi interfacce di I/O digitali e analogiche con sufficiente insen-
+sibilità ai disturbi elettromagnetici inevitabilmente presenti in particolar modo in ambiente 
+industriale, possibilità di interscambio dati con l’esterno tramite dispositivi hardware (dischi 
+magnetici, memorie di massa, ecc.) o tramite la rete.
+Un altro grande e ineluttabile pregio dei PLC è rappresentato dal tipo di programmazione: 
+ha consentito a molti, compresi coloro che non disponevano di una specifica mentalità o 
+conoscenza informatica, di avvicinarsi al mondo della programmazione e di essere in grado, 
+tramite la tecnica del Ladder diagram, di trasporre uno schema elettrico in un programma. 
+Nondimeno sono state sviluppate tecniche di programmazione, quali la lista istruzioni e il 
+linguaggio letterale, che lasciano ampi spazi per l’uso dei PLC agli operatori informatici.
+La configurazione base di un PLC comprende i seguenti moduli:
+–  Alimentatore;
+–  Unità centrale indicata anche come CPU (Central Processing Unit);
+–  Memoria dati e memoria programmi;
+–  Dispositivi di ingresso-uscita di tipo digitale e analogico.
+Senza addentrarsi sulle caratteristiche di ciascun modulo si precisa che la CPU rappre-
+senta l’unità intelligente del dispositivo, cioè il modulo responsabile del funzionamento e 
+della gestione dell’intero complesso. La CPU esegue le istruzione contenute nella memoria 
+programmi e opera sui dati presenti nella memoria dati: i programmi da eseguire possono 
+essere infatti di due tipi: il programma realizzato dall’utente del PLC ed i programmi che 
+risiedono nella CPU stessa e che vengono richiamati dal programma utente. È da precisare 
+che, sovente, la memoria del programma utente e la memoria dati risulta condivisa. Talvolta
+
+[PAG 1538]
+XV-54
+SISTEMI
+le routine più complesse, per esempio quelle di conversione dei numeri da un formato 
+all’altro (da binario a BCD o esadecimale, ecc.), vengono integrate nella memoria del sistema 
+operativo della CPU e rese disponibili sotto forma di subroutine tramite semplice richiamo 
+da parte del programma utente. È il caso anche di routine che implementano funzioni di 
+P.I.D.: invece di realizzare un filtro digitale P.I.D. tramite programma tradizionale, è pos-
+sibile richiamarlo semplicemente trasferendogli i dati di parametrizzazione ed i valori attuali 
+del processo in corso.
+La presenza di queste routine preconfezionate è dovuta principalmente al fatto che i cal-
+coli che devono essere effettuati risultano laboriosi, con fattori decimali e, pertanto, in grado 
+di rallentare notevolmente il tempo di ciclo del PLC.
+Ricordiamo che un controllo di processo realizzato con dispositivi digitali, per avere un 
+funzionamento valido, quale quello dei regolatori analogici, deve avere la prerogativa di 
+risultare estremamente veloce nell’acquisizione dei valori in ingresso, nel computo dei dati 
+e nell’aggiornamento delle uscite.
+Un controllore di processo realizzato tramite impiego di PLC, che agisce su grandezze 
+analogiche, prevede sostanzialmente la presenza dell’unità centrale, di un modulo di 
+ingresso per l’acquisizione dati analogici e la loro conversione in digitale, e di un modulo 
+di uscita analogico per la conversione dei dati da digitali in analogici. Risulta ovvio che, a 
+complemento, saranno presenti moduli I/O digitali che potranno servire per i più disparati 
+usi (per esempio, l’abilitazione o meno di un azionamento, di un inverter, una elettrovalvola, 
+ecc.) ma che non sono fondamentali per il controllo di processo analizzato.
+Nei controllori di processo nei quali l’uscita è di tipo ON-OFF, mancherà il modulo di 
+uscita analogico e verrà utilizzata un’uscita digitale. Nella Fig. XV.7.1 è visualizzato lo 
+schema di principio di un sistema per il controllo di processo di una applicazione con ingresso 
+e uscita di tipo analogico.
+Fig. XV.7.1  Implementazione di un regolatore P.I.D. tramite PLC.
+La tecnica di controllo è, ovviamente, sempre la stessa: il segnale rilevato dal modulo 
+di conversione ADC (Analog to Digital Converter) viene confrontato con il valore di rife-
+rimento, per essere successivamente elaborato dal filtro digitale PID, e mandato in uscita 
+attraverso il modulo DAC (Digital to Analog Converter). La velocità di elaborazione deve 
+essere la massima possibile anche se, nel caso di sistemi dedicati al controllo di processi lenti 
+quali, per esempio, quelli termici, si ricorda che anche PLC con tempi di scansione non tra-
+scurabili (maggiori di 400 ms) possono egregiamente svolgere tale compito.
+Processo da controllare
+Programma ciclico
+Regolatore
+P.I.D.
+PLC
+Modulo
+ingressi analogici
+Modulo
+uscite analogiche
+
+[PAG 1539]
+SISTEMI
+XV-55
+7.1.1.  Regolatore P.I.D. nei PLC
+ Di seguito viene analizzato il funzionamento e l’impiego pratico di un programma pre-
+confezionato presente su alcuni PLC Telemecanique.
+ In particolare si considera l’utilizzo del programma di regolazione P.I.D. disponibile 
+all’utente tramite la cartuccia di programma TSX P17 20 FC1/FD1 installabile su un PLC 
+serie TSX 17. Anche in questa occasione ci si trova di fronte ad un dispositivo, in questo 
+caso un software, che, a partire dai dati di configurazione del regolatore, dal valore di rife-
+rimento e dal valore misurato come retroazione, è in grado di fornire in uscita una grandezza 
+analogica da inviare al dispositivo da controllare (Fig. XV.7.2).
+Fig. XV.7.2  Parametri del blocco regolatore.
+Il compito svolto dal software in questione prevede, oltre a compiti di regolazione, anche 
+ulteriori compiti tra i quali quelli definibili di sorveglianza come:
+- Allarmi per segnali rilevati oltre determinati limiti impostati (siano essi troppo alti o 
+troppo bassi).
+–  Sorveglianza dei valori in uscita affinché le loro ampiezze non superino il limite supe-
+riore positivo o quello inferiore negativo.
+–  Possibilità di disporre in uscita di segnali destinati a servomotori, quindi di tipo analo-
+gico, o segnali a modulazione di durata, quindi destinati a controllori del tipo a rapporto di 
+tempo.
+–  Possibilità di passare dal controllo automatico a quello manuale senza discontinuità 
+sul segnale di uscita ma, contemporaneamente, la possibilità di imporre valori arbitrari e 
+indipendenti dal processo di regolazione in corso.
+–  Impostazione del tempo di ciclo, ovvero dell’intervallo di tempo tra due aggiorna-
+menti dell’uscita, dal valore minimo di 400 ms a quello massimo di 10 minuti per passi di 
+400 ms.
+–  Limitazione della velocità di variazione del segnale in uscita, quello che viene talvolta 
+indicato come gradiente.
+–  Normalizzazione dei dati numerici in uscita dal modulo software affinché il loro 
+valore sia esprimibile con numeri compresi tra 0 e 1000: in questo modo si consente l’uti-
+lizzo, per la grandezza da inviare all’attuatore, sia di moduli con uscita normalizzata in 
+corrente, che quelli con uscita normalizzata in tensione.
+La Fig. XV.7.3 evidenzia come il blocco software indicato come blocco P.I.D. in realtà 
+contenga molte altre funzioni oltre quella di regolazione pura svolta dai regolatori standard. 
+Dall’analisi di tale figura si possono individuare svariati blocchi funzionali che intervengono 
+sul segnale in ingresso, sul segnale di retroazione, sul segnale o in uscita. 
+Regolatore
+P.I.D.
+Uscita
+Segnale di
+riferimento
+Segnale di
+retroazione
+Guadagno
+Fattore Integrativo
+Fattore Derivativo
+-
++
+
+[PAG 1540]
+XV-56
+SISTEMI
+Fig. XV.7.3  Sinottico di funzionamento del blocco Regolatore in un PLC.
+Nello specifico si ritrovano le seguenti caratteristiche:
+–  Possibilità di polarizzare l’uscita in maniera tale da compensare eventuali deviazioni 
+statiche del segnale anche se il regolatore viene utilizzato senza l’azione integrale.
+–  Dispositivo limitatore dell’azione integrale: se l’azione integrale presenta, nel tempo, 
+valori esageratamente elevati, questo dispositivo ne limita il valore massimo.
+Uscita
+numerica
+Uscita
+analogica
+Uscita
+PWM
+uscita
+Selezione
+Stand-by
+Marcia
+Comando
+manuale
+Copia
+dell’uscita
+Manuale
+Allarme
+Polarizzaz.
+uscita
+allarme
+Soglia
+morta
+Banda
+di segnale
+Condizionatore
+riferiemnto
+Segnale di
+retroazione
+Segnale di
+-
++
+azione
+Limitatore
+Integrale
+Regolatore
+standard
+P.I.D.
++
++
+sup/inf
+Limite
+gradiente
+Limite
+uscita
+Polarità
+Automatico
+
+[PAG 1541]
+SISTEMI
+XV-57
+–  Possibilità di acquisire come segnale di retroazione grandezze provenienti da trasdut-
+tori con uscite aventi segnale con andamento quadratico.
+–  Dispositivi per l’impostazione di soglie di allarme e di bande morte sul segnale errore 
+che evitano al regolatore di assumere valori imprevedibili in caso di errori rilevanti. 
+Allarmi impostabili sia per l’ampiezza del segnale di retroazione presente in ingresso, che 
+per il segnale errore all’uscita del nodo sommatore. Normalizzazione del segnale da invia-
+re in uscita tramite limitatore sulla sua ampiezza fra 0 e 100%. Limitatore del gradiente 
+del segnale da inviare in uscita e perfezionamento del medesimo tramite il segno.
+–  Dispositivo per l’intervento tramite comando manuale.
+–  Possibilità di scelta del tipo di segnale in uscita: analogico o a modulazione di durata 
+di tipo PWM. 
+–  Il blocco funzionale P.I.D. il vero e proprio regolatore: un dispositivo di tipo digitale 
+che utilizza, per il suo funzionamento, il seguente algoritmo:
+ 
+(XV.7.1)
+dove:
+Sn rappresenta l’uscita all’istante n-esimo;
+ è l’errore, cioè la differenza tra il valore di riferimento e quello di retroazione all’istante 
+n ed n-1 esimo;
+Kp è il coefficiente proporzionale o guadagno;
+TI è il tempo integrativo;
+TD è il tempo derivativo;
+T è l'intervallo di tempo tra due campionamenti successivi.
+Tale algoritmo viene implementato tramite la tecnica delle equazioni alle differenze 
+finite.
+La Fig. XV.7.4 illustra il significato della formula XV.7.1 evidenziando i singoli fattori 
+che intervengono nel filtro di regolazione.
+Fig. XV.7.4   Sinottico del filtro P.I.D. del PLC.
+Sn
+Kp n
+T
+TI
+------
+K
+K
+0
+=
+n
+
+TD
+T
+------ nn-1
+
+
++
++
+=
+Limitatore
+azione
+Integrale
+Limite
+sup/inf
+Azione
+Integrale
+Azione
+Derivativa
+Guadagno
+Banda
+Morta
+Segnale di
+riferimento
+Segnale di
+retroazione
+Polarizzazione
+uscita
+1
+TI
+x
+TD
+
+d
+dt
+Kp
++
++
++
++
++
+
+
+
+[PAG 1542]
+XV-58
+SISTEMI
+Un altro blocco disponibile per la corretta gestione del regolatore è quello che consente 
+di ottenere da un segnale in ingresso compreso tra due valori impostabili, un segnale in uscita 
+compreso tra il valore nullo e quello massimo (1000): consente di effettuare l’operazione 
+di normalizzazione e viene indicato come blocco di Scala.
+Si richiama l’attenzione al fatto che i blocchi e i dispositivi succitati altro non sono che 
+parti di un programma software contenuto all’interno della cartuccia di programma del 
+Modulo PLC di base.
+L’operazione di regolazione viene effettuata dal dispositivo sui valori che vengono asse-
+gnati tramite la tecnica software designata come passaggio di parametri. In pratica deter-
+minate zone di memoria quali bit di memoria B, parole costanti CW, e parole della memoria 
+dati W, vengono sottratte dalle normali risorse del PLC e dedicate al blocco regolatore. 
+Il numero dei regolatori contemporaneamente disponibili sono, nell’esempio in que-
+stione, pari a quattro: i regolatori inutilizzati liberano le zone di memoria altrimenti loro dedi-
+cate rimettendole così a disposizione del programma principale del PLC.
+Per esempio il blocco regolatore numero zero coinvolge:
+–  i bits da B253 a B255,
+–  le parole costanti da CW97 a CW125,
+–  le word dati da W1007 a W1023.
+Tutti i dati in ingresso, nonché quelli di configurazione e di uscita, verranno letti/scritti 
+o aggiornati agli indirizzi di memoria appena citati.
+La Fig. XV.7.5 evidenzia all’interno del blocco regolatore il punto di intervento di ogni 
+singolo parametro o dato introdotto, modificato per effetto del filtro o generato durante il 
+funzionamento (run-time).
+Questo consente di effettuare, all’atto della messa a punto (sintonizzazione del filtro), 
+la lettura e, se necessario, la forzatura dei valori presenti nei vari stadi in modo da poter indi-
+viduarne eventuali malfunzionamenti.
+Le Tabb. XV.7.1 e XV.7.2 riportano, per tutti e quattro i regolatori impiegati, la lista delle 
+variabili evidenziate nel precedente schema a blocchi, con le rispettive funzioni e l’indiriz-
+zamento.
+Tab. XV.7.1  Tabella assegnazione bit interni e word delle variabili test e informazione
+Mnemonico
+Funzione 
+Indirizzamento
+P.I.D. 0
+P.I.D. 1
+P.I.D. 2
+P.I.D. 3
+MA/AU
+Selettore Automatico/Manuale
+B253
+B250
+B247
+B244
+FL/ON
+Selettore valori di Run o default
+B254
+B251
+B248
+B245
+INIT
+Inizializzazione
+B255
+B252
+B249
+B246
+STA
+Stato
+W1007
+W990
+W973
+W956
+PV
+Valore di retroazione utilizzato
+W1008
+W991
+W974
+W957
+SP
+Valore di riferimento utilizzato
+W1009
+W992
+W975
+W958
+OUT
+Uscita
+W1011
+W994
+W977
+W960
+DEV
+Errore
+W1022
+W1005
+W988
+W971
+
+[PAG 1543]
+SISTEMI
+XV-59
+Fig. XV.7.5  Variabili di configurazione del blocco regolatore.
+uscita
+Selezione
+Stand-by
+Comando
+manuale
+Copia
+dell’uscita
+Manuale
+Allarme
+Polarizzaz.
+uscita
+allarme
+Soglia
+morta
+Banda
+di segnale
+Condizionatore
+riferiemnto
+Segnale di
+retroazione
+Segnale di
+
+
+azione
+Limitatore
+Integrale
+Regolatore
+standard
+P.I.D.
++
++
+sup/inf
+Limite
+gradiente
+Limite
+uscita
+Polarità
+SPIN
+PVAD
+PVHL
+PVLL
+SP
+DEV
+DEVHL
+DEVLL
+OUTBI
+DBAND
+OUTFL
+Automatico
+OUT
+MA
+AU
+FL
+ON
+OUTMOD
+Marcia
+Uscita
+Numerica
+Uscita
+Analogica
+Uscita
+PWM
+TORAD
+OUTAD
+OUT
+OUTMA
+OUTMI
+OUTRT
+DIR-REV
+KP TI TD
+
+[PAG 1544]
+XV-60
+SISTEMI
+Tab. XV.7.2  Tabella assegnazione word delle variabili di struttura e comando
+Mnemonico
+Funzione 
+Indirizzamento
+P.I.D. 0
+P.I.D. 1
+P.I.D. 2
+P.I.D. 3
+SPIN
+Valore di riferimento
+Valore di default 
+W1010
+CW97
+W993
+CW68
+W976
+CW39
+W959
+CW10
+KP
+Guadagno moltiplicato x 100
+Valore di default 
+W1012
+CW98
+W995
+CW69
+W978
+CW40
+W961
+CW11
+TI
+Tempo Integrativo in s/10
+Valore di default 
+W1013
+CW99
+W996
+CW70
+W979
+CW41
+W962
+CW12
+TD
+Tempo Derivativo in s/10
+Valore di default 
+W1014
+CW100
+W997
+CW71
+W980
+CW42
+W963
+CW13
+PVHL
+Soglia superiore Riferimento
+Valore di default 
+W1015
+CW101
+W998
+CW72
+W981
+CW43
+W964
+CW14
+PVLL
+Soglia inferiore Riferimento
+Valore di default 
+W1016
+CW102
+W999
+CW73
+W982
+CW44
+W965
+CW15
+DEVHL
+Soglia superiore dell’errore
+Valore di default 
+W1017
+CW103
+W1000
+CW74
+W983
+CW45
+W966
+CW16
+DEVLL
+Soglia inferiore dell’errore
+Valore di default 
+W1018
+CW104
+W1001
+CW75
+W984
+CW46
+W967
+CW17
+TCYCL
+Tempo di ciclo
+Valore di default 
+W1019
+CW125
+W1002
+CW96
+W985
+CW67
+W968
+CW38
+DBAND
+Banda morta
+Valore di default
+W1020
+CW108
+W1003
+CW79
+W986
+CW50
+W969
+CW21
+OUTBI
+Polarizzazione
+Valore di default
+W1021
+CW109
+W1004
+CW80
+W987
+CW51
+W970
+CW22
+TMOD
+Periodo per il PWM 
+Valore di default 
+W1023
+CW107
+W1006
+CW78
+W989
+CW49
+W972
+CW22
+OUTMA
+Uscita MAX
+CW105
+CW76
+CW47
+CW18
+OUTMI
+Uscita min
+CW106
+CW77
+CW48
+CW19
+OUTRT
+Gradiente
+CW110
+CW81
+CW52
+CW23
+OUTFL
+Uscita di default
+CW111
+CW82
+CW53
+CW24
+CONF
+Configurazione
+CW112
+CW83
+CW54
+CW25
+SSRHL
+Valore MAX riferito al 100%
+CW113
+CW84
+CW55
+CW26
+DRLL
+Valore min riferito allo 0%
+CW114
+CW85
+CW56
+CW27
+
+[PAG 1545]
+SISTEMI
+XV-61
+Tab. XV.7.2  Segue
+7.1.2.  Regolazione di livello in un serbatoio
+Si ribadisce che, per un corretto e completo utilizzo del blocco regolatore in questione, 
+è necessario fare riferimento ai manuali specifici del costruttore, pur tuttavia si riporta di 
+seguito l’esempio di programmazione da effettuarsi nel caso di un serbatoio del quale si 
+desideri mantenere il livello costante. Il sistema da controllare è quello della Fig. XV.7.6.
+Fig. XV.7.6   Sinottico della regolazione del livello di un serbatoio.
+Si prevede che si debbano soddisfare le seguenti caratteristiche:
+–  La misura del livello all’interno del serbatoio avviene tramite trasduttore di livello che 
+invia un segnale 4 ÷ 20 mA in corrispondenza ad una variazione della grandezza fisica da 
+0 al 100%.
+–  La valvola di scarico è di tipo proporzionale, anch’essa comandata in corrente con 
+segnale avente range 4 ÷ 20 mA.
+–  La regolazione è permanentemente attiva; in caso di guasto la valvola di scarico viene 
+mantenuta alla condizione di massima apertura (20 mA di comando).
+–  La saracinesca in ingresso, comandata con un segnale digitale, viene bloccata se il 
+livello del serbatoio oltrepassa il valore pari al 90%.
+–  Il valore di riferimento, posto inizialmente al 60% (valore di default), può essere 
+incrementato o decrementato tramite l’intervento su appositi ingressi digitali dedicati.
+Dall’analisi dei dati forniti, si può immediatamente concludere che la configurazione del 
+Mnemonico
+Funzione 
+Indirizzamento
+P.I.D. 0
+P.I.D. 1
+P.I.D. 2
+P.I.D. 3
+UNIT
+Unità di misura delle variabili (2 
+caratteri ASCII)
+CW115
+CW116
+CW86
+CW87
+CW57
+CW58
+CW28
+CW29
+ID
+Nome dell’applicazione (10 carat-
+teri ASCII)
+CW117
+...
+CW121
+CW88
+...
+CW92
+CW59
+...
+CW63
+CW30
+...
+CW34
+PVAD
+Indirizzo della grandezza in Input
+CW122
+CW93
+CW64
+CW35
+OUTAD
+Indirizzo della grandezza in Output
+CW123
+CW94
+CW65
+CW36
+TORAD
+Indirizzo dell’uscita PWM
+CW124
+CW95
+CW66
+CW37
+Ingresso
+Uscita
+PLC
+Valore di
+riferimento
+Valore
+misurato
+
+[PAG 1546]
+XV-62
+SISTEMI
+sistema in grado di soddisfare tali esigenze dovrà prevedere l’impiego di una unità centrale, 
+di una scheda per l’acquisizione di dati analogici e di una scheda di uscita analogica. Le 
+schede analogiche di ingresso e di uscita saranno del tipo in corrente. La configurazione hard-
+ware (Fig. XV.7.7) risulta pertanto costituita da:
+–  una unità centrale TSX 17-20 munita di cartuccia software tipo TSX P17 20 FC1/FD1;
+–  un modulo di entrate analogiche modello TSX AEG 4111;
+–  un modulo di uscite analogiche TSX AEG 2001.
+Fig. XV.7.7  Composizione hardware PLC di controllo e regolazione serbatoio.
+Del sistema realizzato si utilizzerà inoltre l’uscita digitale O0,1 per il comando della sara-
+cinesca in ingresso, l’ingresso digitale I0,1 per selezionare il comando AUTOMATI-CO o 
+MANUALE, infine gli ingressi I0,2 e I0,3 consentiranno la regolazione in aumento o dimi-
+nuzione del valore di riferimento ad ogni scansione del ciclo, per una quantità pari allo 0,1%.
+Fig. XV.7.8  Sinottico del blocco di regolazione e interfacce analogiche.
+La Fig. XV.7.8 illustra lo schema a blocchi dell’anello di regolazione realizzato: il rego-
+latore P.I.D. agisce aumentando il valore del segnale di uscita ogniqualvolta avverte un 
+SORTIES ANALOG
+ENTREES ANALOG
+Cartuccia TSX P17 2220 FC1/FD1
+Uscita comando
+servovalvola
+Misura del
+ livello
+Misura di
+livello
+TSX AEG
+TSX AEG
+Blocco regolatore P.I.D.
+V0
+V1
+V2
+V3
+V0
+V1
+Uscita comando
+valvola
+
+
+Auto
+Man
+Uscita
+P.I.D.
+Riferimento
+
+[PAG 1547]
+SISTEMI
+XV-63
+aumento del segnale errore, cioè ogniqualvolta vi è un aumento della differenza tra il segnale 
+proveniente dal trasduttore e il valore di riferimento, e viceversa.
+La rilevazione del sensore guasto comporterà il passaggio del blocco regolatore dalla 
+funzione di regolazione all’imposizione della uscita al valore contenuto nella memoria 
+OUTFL (uscita di ripiego); mentre il valore PVHL (soglia valore elevato del segnale di retro-
+azione) viene utilizzato per intervenire sulla saracinesca in entrata bloccandola.
+I coefficienti del regolatore P.I.D. sono inizializzati con i seguenti valori:
+tali valori sono quantità di partenza, nel senso che possono e molto probabilmente dovranno 
+essere modificati durante la fase di messa a punto del regolatore. La messa a uno del bit 
+SW43.0 comporta l’inizializzazione dell’anello di regolazione, trasferendo i valori presenti 
+nelle parole costanti CW in quelli delle parole dati W corrispondenti.
+Le Tabb. XV.7.3 e XV.7.4 visualizzano i valori da inserire nelle parole costanti CW per 
+l’applicazione presa in esame.
+Tab. XV.7.3  Valori da inserire nelle costant word
+Tab. XV.7.4 Valori da inserire nelle costant word
+Parole costanti comuni
+Indirizzo
+Valore
+Commento
+CW126
+1
+Validazione blocco P.I.D. 0
+CW127
+2
+Configurazione materiale: 1 CPU + 1 ADC + 1 DAC
+Parole costanti del blocco P.I.D. 0
+Indirizzo
+Valore
+Commento
+CW97
+600
+Valore di riferimento di partenza P.I.D. 0  60%
+CW98
+250
+Guadagno = 2,5
+CW99
+80
+Tempo di regolazione = 8 s
+CW100
+0
+Tempo di derivazione = 0 s
+CW101
+900
+Soglia di intervento per misura eccessiva  90%
+CW102
+0
+Soglia di intervento misura minima = 0%
+CW103
+1000
+Soglia massima eccessivo errore = 100%
+CW104
+-1000
+Soglia minima eccessivo errore = -100%
+CW105
+1000
+Soglia massima = 100%
+CW106
+0
+Soglia minima 0%
+CW107
+0
+Periodo della modulazione (parametro non utilizzato)
+CW 108
+0
+Banda morta = 0%
+Kp
+2 5
+
+=
+TI
+8s
+=
+TD
+0s
+=
+
+[PAG 1548]
+XV-64
+SISTEMI
+Tab. XV.7.4.  Segue
+La Fig. XV.7.9 riporta il programma per il funzionamento del regolatore di livello del 
+serbatoio realizzato in ladder diagram.
+7.2  Microcontrollori
+ I microcontrollori hanno sempre rappresentato, dopo il loro avvento, la soluzione 
+migliore come alternativa al regolatore analogico: sono stati in grado, fin dalla loro appa-
+rizione sul mercato, di svolgere operazioni e calcoli matematici con tempi di elaborazione 
+estremamente ridotti. 
+Sono dispositivi che implementano nella loro struttura fisica la classica architettura di 
+Von Neumann (Fig. XV.7.10). Essi contengono dispositivi di memoria sia di tipo RAM, cioè 
+volatili, che di tipo retentivo quali EPROM e PROM, dispositivi di interfaccia di ingresso 
+e uscita, una unità aritmetico-logica (ALU) che, talvolta, risulta essere un vero e proprio 
+coprocessore matematico, una unità di controllo, la CPU, con prestazioni notevoli in termini 
+di velocità.
+Si ribadisce ancora una volta che un sistema di regolazione digitale, per poter competere 
+con l’equivalente regolatore analogico, deve avere come prerogativa essenziale la capacità 
+di eseguire calcoli matematici e operazioni logiche in tempi estremamente brevi.
+Parole costanti del blocco P.I.D. 0
+Indirizzo
+Valore
+Commento
+CW 109
+0
+Polarizzazione dell’uscita = 0%
+CW110
+1000
+Limitazione del gradiente
+CW111
+1000
+Valore in uscita in caso di rimedio forzato
+CW112
+H‘0000’
+Azione diretta / misura / uscita analogica
+CW113
+0
+Valore del livello allo 0% della scala
+CW114
+100
+Valore del livello al 100% della scala
+CW115
+M%
+Unità di misura
+CW116
+M‘  ’
+Unità di misura
+CW117
+M‘RE’
+Nome dell’applicazione
+CW118
+M‘G.’
+Nome dell’applicazione
+CW119
+M‘LI’
+Nome dell’applicazione
+CW120
+M‘VE’
+Nome dell’applicazione
+CW121
+M‘L.’
+Nome dell’applicazione
+CW122
+0
+Indirizzo dell’ingresso analogico
+CW123
+0
+Indirizzo dell’uscita analogia
+CW124
+0
+Non significativo
+CW125
+4
+Periodo tra due scansioni del regolatore = 400 ms
+
+[PAG 1549]
+SISTEMI
+XV-65
+ 
+Fig. XV.7.9  Programma in ladder diagram del controllo di livello di un serbatoio.
+Label 10
+S
+R
+SY8
+SY8
+SW43,0
+Label 20
+Label 30
+I0,1
+B253
+I1,0
+B254
+Label 40
+I0,1
+I0,3
+Label 50
+H'0010'
+OW1,7
+OPERATE
+W10 + 1
+W10
+OPERATE
+OPERATE
+W10 - 1
+W10
+W1010[2]
+W10[2]
+OPERATE
+OPERATE
+W11 + 1
+W11
+OPERATE
+W11 - 1
+W11
+I0,1
+I0,2
+I0,2
+I0,3
+OPERATE
+OPERATE
+OPERATE
+OPERATE
+0
+0
+1000
+Label 60
+1000
+W10
+W11
+W11
+W10
+COMPAR
+COMPAR
+COMPAR
+COMPAR
+W10 > 1000
+W10 < 0
+W11 > 1000
+W11 < 0
+Label 70
+W10[2]
+OPERATE
+W1010[2]
+OPERATE
+Label 80
+W1007[1]
+W7[1]
+Label 90
+W7,0
+O0,1
+
+[PAG 1550]
+XV-66
+SISTEMI
+Fig. XV.7.10  Architettura di Von Neumann di un sistema digitale.
+D’altronde la regolazione digitale avviene tramite l’implementazione di algoritmi con-
+tenenti equazioni alle differenze finite derivanti dall’applicazione della teoria della Tra-
+sformata Zeta. 
+Vi sono comunque processi che, per loro natura, non richiedono sistemi di controllo par-
+ticolarmente rapidi: è il caso della regolazione di temperatura di forni aventi grandi dimen-
+sioni e quindi grandi masse da riscaldare. Al contrario, vi sono applicazioni quali per esempio 
+quelle militari o spaziali dove la velocità di elaborazione gioca un ruolo fondamentale.
+ Per questo ultimo caso oggigiorno il controllo dei sistemi avviene prevalentemente con 
+tecniche digitali, anche perché sono disponibili dispositivi quali i Digital Signal Processing, 
+indicati comunemente con la sigla DSP, che consentono di elaborare i dati introdotti in inter-
+valli di tempo dell’ordine dei microsecondi. Il funzionamento è inoltre legato alla possibilità 
+di convertire con velocità altrettanto elevate i segnali analogici in digitale tramite i conver-
+titori ADC e, viceversa, convertire i segnali digitali in analogici tramite i convertitori DAC. 
+Talvolta i segnali disponibili sono segnali digitali; nell’esempio successivo viene riportato 
+un sistema destinato a controllare la posizione di un carro mobile dove i segnali in ingresso, 
+ovvero il valore di riferimento (la quota da raggiungere) e il valore di retroazione (la quota 
+istantanea) sono grandezze digitali. Il segnale di uscita è destinato a comandare un aziona-
+mento per motori a corrente continua oppure motori brushless (senza spazzole), quindi un 
+segnale di tipo analogico (tipicamente un segnale variabile entro un range 10 ÷ +10V).
+7.2.1.  Controllore di Posizione a microcontrollore
+Un microcontrollore non è altro che un dispositivo elettronico che ingloba in sé:
+–  un microprocessore,
+–  una memoria ROM dove risiederà il programma per il funzionamento del sistema,
+–  una memoria RAM per i dati da memorizzare e da elaborare,
+–  un timer interno in grado di generare la base dei tempi tramite delle richieste cicliche 
+di interrupt,
+–  ingressi dedicati con funzione di interrupts esterni (cioè su evento),
+–  disponibilità di ingressi e uscite digitali per interfacciarsi con finecorsa, relè ecc.,
+–  una o più porte seriali per l’interfaccia verso unità intelligenti, convertitori ADC e 
+DAC per trasformare i segnali in ingresso di tipo analogico in digitale e, viceversa, i 
+segnali interni digitali in equivalenti segnali analogici verso l’esterno.
+Ciò che si va ad analizzare è un sistema di controllo, realizzabile tramite un microcon-
+trollore, in grado di posizionare il carro mobile (Fig. XV.7.11) alla quota che si andrà ad indi-
+care al controllore, il tutto ad una velocità preventivamente stabilita.
+OUT
+Unità di uscita
+CPU
+Unità di controllo
+INPUT
+Unità di ingresso
+ALU
+Unità aritmetico logica
+MEM
+Unità di memoria
