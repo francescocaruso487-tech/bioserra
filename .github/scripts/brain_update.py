@@ -6,7 +6,7 @@ Include memoria conversazioni e briefing proattivo.
 """
 import os, json, base64, urllib.request, urllib.error, datetime, re, time
 
-GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
+GITHUB_TOKEN = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
 MISTRAL_KEY  = os.environ.get('MISTRAL_KEY', '')
 REPO = 'francescocaruso487-tech/bioserra'
 LAT  = 41.09696262016739
