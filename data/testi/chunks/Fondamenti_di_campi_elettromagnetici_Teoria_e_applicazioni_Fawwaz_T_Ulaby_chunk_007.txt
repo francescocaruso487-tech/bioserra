@@ -1,0 +1,1522 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 7/23 ===
+Chars: 44,824 | Offset: 269,700
+
+
+
+Esempio 3.-5 Area in coordinate sferiche
+
+La zona sferica descritta in Figura 3.15 fa parte di una sfera di raggio pari a 3 cm. Si
+calcoli l’area della zona.
+
+Figura 3.15 Zona sferica dell’Esempio 3.5.
+
+Soluzione Applicando la (3.50b) per ricavare l’area di un elemento di superficie sfe-
+rica di raggio R costante, si ha
+
+60° an
+SaR / sin6d@ | dé
+a3 'o=0
+= 9(— cos ale. of (cm?)
+30° "lo
+
+= 18n(cos 30° — cos 60°) = 20.7 cm’.
+
+3,3 Trasformazioni tra sistemi di riferimento
+
+Esempio 3.6 Carica in una sfera
+‘| Una sfera di raggio pari a 2 cm contiene una densità volumetrica di carica p, data da
+pe=400898 (C/m?).
+
+Si ricavi la carica totale Q contenuta nella sfera.
+
+0= [ndo
+v
+2x pr p2x107?
+= / [ / (4 cos 29)R? sin 64Rd0d$
+$=0 Jé=0 JR=O
+
+<[[®) 2x 10°?
+‘ o Jo \3
+
+Soluzione
+
+sin 9 cos?9d0d$
+
+0
+
+32 2(  cosìg
+= = x 1078 _
+3° I ( 3 )
+
+7
+
+ag
+
+0
+
+2a
+= 10-8 dé
+9 0
+
+= tee x 10-6 = 44.68 (uC).
+
+3.3 Trasformazioni tra sistemi di riferimento
+
+La posizione di un punto dato nello spazio è indipendente dalla scelta del sistema di
+riferimento, vale a dire che la sua posizione è la stessa a prescindere da quale partico-
+lare sistema di riferimento si usi per rappresentarla. La stessa cosa si può dire per i
+vettori. In questo paragrafo verranno enunciate le relazioni tra le variabili (x, y, z)
+del sistema in coordinate cartesiane, (r, ¢, z) del sistema in coordinate cilindriche e
+(R, 8, $) del sistema in coordinate sferiche. Queste relazioni verranno quindi sfrutta-
+te per trasformare i vettori espressi in uno qualunque dei tre sistemi in vettori espressi
+in uno degli altri due.
+
+3.3.1 Trasformazioni da coordinate cartesiane a cilindriche
+
+Il punto P in Figura 3.16 ha coordinate cartesiane (x, y, z) e coordinate cilindriche
+{r, $, 2). I due sistemi definiscono allo stesso modo la coordinata z, mentre le rela-
+zioni tra le altre due coppie di coordinate si ottengono dalla geometria descritta in
+Figura 3.16.
+
+a
+
+PP I, 2)
+
+Si noti che i limiti di R sono stati convertiti in metri prima di valutare l’integrale su R.
+i
+i
+
+Figura 3.16
+
+Relazioni tra coordinate
+cartesiane (x, y, 2) e
+coordinate cilindriche
+(r, 6,2).
+
+119
+
+[PAG 68]
+120
+
+Figura 3.17
+Relazioni tra i vettori di
+base (%, 9) e (?, 6).
+
+Capitolo 3 — Analisi vettoriale
+
+Esse sono
+
+Meri 6= tn (2), “ @51)
+
+x
+e ie relazioni inverse sono
+
+x=rcosg, y=rsing. (3.52)
+
+In seguito, con l’ausilio della Figura 3.17, che mostra le direzioni dei versori X, ¥, Fe
+è nel piano x-y, si ottengono le seguenti relazioni:
+
+F-%=cos¢, F-¥=sing, (3.53a)
+è £=-sinò, 9-9 = cosd. (3.53b)
+
+Per esprimere f in funzione di $ e $, si scrive î nella forma
+F=%a+¥o, (3.54)
+
+dove a e b sono coefficienti incogniti di trasformazione. Dal prodotto scalare f - ¥ si
+ottiene
+
+fi=î-ia+fib=a. (3.55)
+
+Confrontando la (3.55) e la (3.53a) si conclude che a = cos $. Analogamente, appli-
+cando il prodotto scalare È - $ alla (3.54) si ottiene b = sin ¢. Pertanto
+
+osd+F sing. (3.562)
+
+Ripetendo il procedimento per ésiha
+
+è=-îsingd+3cosd. (3.565)
+
+Il terzo versore di base % è identico in entrambi i sistemi di riferimento. Risolvendo
+contemporaneamente la (3.56a) e la (3.56b) per ricavare & e ¥, si ottengono le se-
+guenti relazioni inverse:
+
+Foosé-¢sing, (3.57a)
+$=fsing+cosg. (3.57b)
+
+Le relazioni date dalla (3.572) e dalla (3.57b) non sono utili solo per trasformare i
+versori di base (£, 3) nei versori (f, $) e viceversa, ma si possono anche sfruttare per
+trasformare i componenti di un vettore espresso in uno dei due sistemi di riferimento
+nei corrispondenti componenti espressi nell’altro sistema. Per esempio, un vettore
+
+A=34,4+ 4,474,
+A
+Vale a dire
+
+in coordinate
+
+3.3 Trasformazioni tra sistemi di riferimento 12
+
+cartesiane si può trasformare
+= 4,4 $A5 + 2A; in coordinate cilindriche applicando la (3.562) e la (3.56b).
+
+A, = A, cos ¢.+4, sind,
+As =—A,sing+Aycos¢, (3.58b)
+
+(3.58a)
+
+e all’inverso
+
+A, = Arcos — Ag sing,
+A, = A, sin ¢ + Ag cos ¢.
+
+(3.59a)
+(3.59)
+
+in
+
+Le relazioni di trasformazione date in: questo paragrafo e nei prossimi due sono rias-
+
+sunte in Tabella 3.2.
+Tabella 3.2 Relazioni di trasformazione delle coordinate.
+Trasformazione Coordinate variabili Versori Componenti vettoriali
+Da cartesiane r=YR+y? f=%cosg+Ysing Ar=Acosg+Ay sind
+a cilindriche $= tan" (y/%) Ag = -Axsind+A, cos ¢
+z=z Ar Ar
+Da cilindriche x=rcos$ K=Foosd—dsing Ax =A, 008 $ - Ay cos $
+a cartesiane yersing y=îsing+$cos$ Ay =Ar sing + Ay cos ¢
+z=z 2=2 Ax = Ar
+Da cartesiane R= RF ee R=ksin6cosd Ar =A, sin 8 cos ¢
+a sferiche +4 sin@ sin $+2c0s@ +Ay sind sing +A, cos@
+8 = tan [x2 + 2/2] d=%cosfcos$ Ag=A,c0s?cos$
++$ cos sing — Z sin@ +A, cos sin $ — A; sin 8
+= tan-'{y/x) $= —ksing+¥cos¢ Ag = A, Sing + Ay cos ¢
+Da sferiche x=Rsin@cos¢ K=Rsindcos¢ Ax = Ap sin cos ¢
+a cartesiane +8 cos9 cos $ — gsing +Ag cos 0 008 $ — Ay sind
+y=Rsinesing y=Rsingsing Ay = Ar sin@siné
++8 cos0sing +$00s$ +Ag così sin $ + Ay cos ¢
+2=Rcos@ 2=R00s9- dsing Az = Ar cos @ — Ag sin?
+Da cilindriche R= FE R=fsin8+£cos9 An =A, sin +A, cos @
+a sferiche @ = tan"! (r/2) 6 = cost sin? Ag = A, cos 0—A, sind
+$=$ As=Ag
+Da sferiche sing +6cos 6 Ap = Ar sin9+ Ap cos?
+a cilindriche è Ag=Ag
+2=cosé- sing Az = Ap C08 9 — Ag sing
+
+Esempio 3.7 Trasformazioni da coordinate cartesiane a cilindriche
+
+Dati un punto P; (3, ~4,3) e un vettore A = £2 — 93 + 24, definiti in coordinate carte-
+siane, si esprimano P; e A in coordinate cilindriche e si valuti A nel punto Pi.
+
+Soluzione. Nel punto P; si ha che x = 3,y = —4 ez = 3. Applicando la (3.51) si ot-
+
+tiene
+
+r= Fae Hs,
+
+$= tan! 2 = —53.1° = 306.99,
+
+ez testa invariata. Dunque, P; = P; (5, 306.9°, 3) in coordinate cilindriche.
+
+[PAG 69]
+122
+
+Figura 3.18
+
+Relazioni tra (x, y, z) e
+
+(R, 0, 9).
+
+Capitolo 3 — Analisi vettoriale
+
+Per il vettore A = FA, + dAg + 2A, in coordinate cilindriche, i suoi componenti si pos-
+
+-| sono-determinare applicando la (3.582) e la (3.58b):
+
+A, = 4, cos 6+ A, sing = 2 cos $ —3 sing,
+Ag = —Ax sin ¢ + A, cos @ = —2 sin g — 3 cos 4,
+A, = 4,
+
+Dunque
+= F(2.cos $ ~ 3 sin g) — $(2 sin ¢ +3 cos $) +24.
+Nel punto P; si ha $ = 306.9°, da cui si ottiene
+A= £3.60 — 60.20 + 44.
+
+3.3.2 Trasformazioni da coordinate cartesiane a sferiche
+
+Dalla Figura 3.18 si ottengono le seguenti relazioni tra le coordinate cartesiane
+(x, y, 2) e le coordinate sferiche (R, 0, $):
+
+R= VP +P +2, (3.60a)
+
+@ = tan! | (3.606)
+1/7
+$= tan (è). (3.600)
+e le relazioni inverse
+x=Rsin@cos$, (3.61a)
+y=Rsin@sing, (3.616)
+z=Rcosì. (3.61c)
+
+Il versore È giace nel piano #-2. Dunque lo si può esprimere come combinazione li-
+neare di f e Z come segue:
+
+(3.62)
+
+3.3 Trasformazioni tra sistemi di riferimento
+
+dove a e è sono coefficienti di trasformazione. Dal momento che f e Z sono mutua-
+mente perpendicolari, si ha
+
+ta
+n
+
+=a, (3.63a)
+=). (3.63b)
+Dalla Figura 3.18, l’angolo tra È e î è il complementare di 8 e l’angolo tra Rezèo
+
+Dunque, a=R-F = sindeb=R-2= così. Sostituendo queste espressioni di a
+e b nella (3.62) e sostituendo f con l’espressione della (3.562), si ottiene
+
+Î R=ksincosd+Hsindsing+Zcosd. (3.642)
+
+Con procedimento analogo si può ottenere la seguente espressione di 6:
+
+| 6 =KcosPcosd+Ffceosdsing—Zsin@, (3.64b)
+
+e l’espressione di ¢ è data dalla (3.56b) come
+
+$= -fsind+$cosd. (3.64c)
+
+Le equazioni dalla (3.64a) alla (3. 64c) si possono mettere a sistema e risolvere per ot-
+tenere le seguenti espressioni di (%, $, 2) in funzione di (R, 6, 4):
+
+= Rsin@cos$+dcos?cosg— dsing, (3.652)
+
+y= È sind sind + 6 cos? sind + bcos ¢, (3.65b)
+=R così — Gsind. (3.65c)
+
+Le equazioni dalla (3.65a) alla (3.65c) si possono anche usare per trasformare
+(Ax, Ay, Az) del vettore A nei suoi componenti sferici (dp, Ag, Ag) € viceversa, sosti-
+tuendo rispettivamente (%, 7, 2, R, 6, $) con (4, Ay, Az, Ar, do, Ag).
+
+Esempio 3.8 Trasformazioni da coordinate cartesiane a sferiche
+
+Si esprima il vettore A = £(x+-y) + ¥(y — x) + #2 in coordinate sferiche.
+
+Soluzione Applicando la relazione di trasformazione per A, data in Tabella 3.2, si ha
+Ag =A, sin cos $ + Ay sin @ sin $ +4; cos 6
+= (x+y) sin 6 cos ¢ + (y~x) sin @ sind +z cos 8.
+Applicando le espressioni per x, y e z date dalla (3.61c), si ha
+Ar = (Rsin§ cos ¢ +Rsin? sind) sin8cos$
++ (Rsin 0 sin$-Rsin@ cos $) sin 9 sind +R cos 6
+= Rsin? 0 (cos? $ + sin? $) + R cos 6
+= Rsin° 0+ Roos? d= R.
+Analogamente
+Ag = (x +7) cos 6 cos + (y— x) cos Asin d —zsin 8,
+Ag = ~(x+y) sind + (y— x) cos 4,
+
+13
+
+[PAG 70]
+124
+
+Capitolo 3 - Analisi vettoriale
+
+e seguendo il procedimento usato per 4, si ottiene che
+
+Ag =0,
+Ag = —Rsin 8.
+
+Dunque
+
+A= RAg + 64g + dA = RR — $R sin8.
+
+3.3.3 Trasformazioni da coordinate cilindriche a sferiche
+
+Le trasformazioni tra coordinate cilindriche e sferiche si possono ricavare combinan-
+do le relazioni di trasformazione date nei due paragrafi precedenti. I risultati sono
+elencati in Tabella 3.2.
+
+3.3.4 Distanza tra due punti
+
+In coordinate cartesiane, la distanza d tra due punti Pi(x1, yi, 21) € Pa(x2, y2, 22) È
+data dalla (3.12) come
+
+d= [Ri] :
+= [Oe -m)+-nl+@2-2)I7. (3.66)
+
+Applicando la (3.52) per trasformare le coordinate di P; e P, da cartesiane a cilindri-
+che, si ottiene
+
+d = [(r2 cos 42 — ry cos di?
++ (ra sin ga — ri sind) + (22—21)7] ia
+
+= [B47 — 21112 cos (92-91) +(22 —a)?}!?
+(cilindriche). (3.67)
+
+Una trasformazione analoga che sfrutta le (3.61a-c) porta a ottenere ùn’espressione di
+d in termini delle coordinate sferiche di P e P2:
+
+d = {Ri + Ri — 2RiRo[ cos 6 cos 6
++ sin 8; sin 8 cos (go — di}?
+(sferiche). (3.68)
+
+Domande di verifica
+
+3.7 Perché si utilizza più di un sistema di riferimento?
+3.8 Perché i versori di base (%, j, 2) sono indipendenti dalla posizione del punto,
+mentre È e ¢-non lo sono?
+3.9 Quali sono le relazioni cicliche tra i versori di base in (a) coordinate cartesiane,
+(b) coordinate cilindriche e (c) coordinate sferiche?
+3.10 Qual è la relazione tra il vettore posizione di un punto in coordinate cilindriche
+e il suo vettore posizione in coordinate sferiche?
+
+3.4 Gradiente di un campo scalare
+
+15
+
+_Esercizio.3.6 Il punto. P(2V/3, x/3, — 2) è definito in coordinate cilindriche. Si espri- “|
+
+ma P in coordinate sferiche.
+
+Sotuzione P(4, 27/3, 7/3).
+
+Esercizio3.6 Si trasformi il vettore
+A=î(x+y)+90-2) +22
+
+da coordinate cartesiane a cilindriche.
+
+SOLUZIONE A = fr — dr + èz.
+
+3.4 Gradiente di un campo scalare
+
+Quando si trattano grandezze fisiche scalari il cui modulo dipende da una sola varia-
+bile, come la temperatura T in funzione dell’altitudine z; la velocità di variazione di
+7 rispetto all’altitudine può essere descritta mediante la derivata dT /dz. Tuttavia, se
+T è anche funzione di x e y in un sistema di coordinate cartesiane, la sua velocità di
+variazione nello spazio diventa più complicata da descrivere, in quanto in tal caso bi-
+sogna non solo trattare tre variabili separate, ma anche unificare in maniera organica
+la trattazione. La variazione differenziale di 7 lungo x, y e z si può descrivere in ter-
+mini delle derivate parziali di 7 rispetto alle tre variabili coordinate, ma il procedi-
+mento con cui si debbano combinare le tre derivate parziali per descrivere la velocità
+di variazione spaziale di T lungo una determinata direzione non è immediato. Inoltre,
+molte delle grandezze che si trattano nell’elettromagnetismo sono vettori e dunque
+sia i loro moduli che le loro direzioni possono variare in funzione della posizione nel-
+.lo spazio. Nel calcolo vettoriale si usano tre operatori fondamentali per descrivere le
+variazioni differenziali nello spazio di scalari e vettori: gli operatori gradiente, diver-
+genza e rotore. L'operatore gradiente si applica ai campi scalari e costituisce l’argo-
+mento del presente paragrafo. Gli altri due operatori, che si applicano ai campi vetto-
+riali, sono trattati nei paragrafi seguenti. ”
+
+Si supponga che 7; (x, y, z) sia la temperatura nel punto P(x, y, z) situato in una
+qualche regione dello spazio e che T(x + dx, y + dy,z + dz) sia la temperatura in un
+punto adiacente P., come descritto in Figura 3.19. Le distanze differenziali dx, dy e
+dz sono i componenti del vettore distanza differenziale dl. Vale a dire
+
+dl = det dy + ide. (3.69)
+
+z P2(x+dx, y+dy, z+dz)
+
+WPI Y 2)
+
+Figura 3.19
+
+Vettore distanza
+differenziale di tra i punti
+PiePa.
+
+[PAG 71]
+126
+
+Capitolo 3 — Analisi vettoriale
+
+Dal calcolo differenziale si ha che la temperatura differenziale dT = 7) — 7; è data
+da TO - - - -
+or or or
+aT = det 5 dy +a
+e dal momento che per definizione dx = £ - dl, dy = J - dle dz =Z- di, la (3.70) si
+pud riscrivere come
+
+&, (3.70)
+
+ata ge
+
+Ox oy dz (3.71)
+= [poh 5 OF OF), °
+“la a ee
+
+Il vettore all’interno delle parentesi quadre nella (3.71) definisce la variazione di tem-
+peratura 47° corrispondente a una variazione vettoriale di posizione dI. Questo vetto-
+re è detto gradiente di T e di solito si indica dal punto di vista simbolico con VT.
+Vale a dire
+
+Ter
+Vr=gnd 780,397 ,,0
+
+> ati 07)
+
+e la (3.71) si può esprimere nella forma
+” aT =VT dl. (3.73)
+
+Il simbolo V è detto operatore gradiente e si definisce come
+
+, 0 + d
+
+‘5°
+Si noti che, mentre l'operatore gradiente non ha significato di per sé, esso riveste si-
+gnificato fisico nel momento in cui agisce su una grandezza fisica scalare, e il risul-
+tato dell'operazione è un vettore il cui modulo è uguale alla massima velocità di va-
+riazione della grandezza fisica per unita di distanza e la cui direzione è rivolta lungo
+la direzione di massimo incremento. Definendo di = à,dl, dove 4; è il versore asso-
+ciato a dl, la derivata direzionale di T lungo la direzione 4; è data da
+
+vi si + (Cartesiane). (3.74)
+
+aT ,
+VT a. (3-15)
+
+Se VT è una funzione nota delle variabili coordinate di un dato sistema di riferimen-
+to, si può calcolare la differenza (7) — 71), dove T; e T sono i valori di 7’ rispettiva
+mente nei punti P, e P2, integrando entrambi i membri della (3.73). Pertanto
+
+Pa
+T-T=| vr-d (3.76)
+Pi
+Esempio 3.9 Derivata direzionale
+Si ricavi la derivata direzionale di T = x? +22 lungo la direzione £2 + 73 — 22 elasi
+valuti in (f, — 1, 2).
+
+Soluzione La derivata direzionale dT /di è data dalla (3.72). Si ricava dapprima il
+gradiente di 7:
+
+3.4 Gradiente di un campo scalare
+
+(0 MaRS eZ ew,
+= + facto.
+Si indica con ] la direzione data
+1=82+93-22.
+Ii versore associato è
+got = 2tB-2 _ +92
+
+MN v+7+® VIT
+Applicando la (3.75) si ottiene
+
+SE VIa = (92x + 5292+ 97): (ERE)
+_ 4x+ 62 — 27°
+ae
+In (1, — 1, 2) siha
+dT 4-12-2  ~10
+
+dla vit aT
+
+3.4.4 Operatore gradiente in coordinate cilindriche e sferiche
+
+Anche se la (3.73) è stata ottenuta utilizzando le coordinate cartesiane, deve essere
+ugualmente valida in qualsiasi sistema di riferimento ortogonale. Per poter applicare
+l’operatore gradiente a una grandezza scalare espressa in coordinate cilindriche o sfe-
+riche, bisogna ottenere l’espressione di V in questi sistemi di riferimento. Per conver-
+tire la (3.72) nelle coordinate cilindriche (r, 0, z), si parte dalle relazioni tra le coordi-
+nate
+
+re vt, tanga. EL)
+
+x
+Dal calcolo differenziale
+
+ar _9r & , aT O$ , OT &
+
+= 3.78
+dx Or Ox | Ob da Or Ox (3.78)
+
+Dal momento che z è ortogonale a x, l’ultimo termine è uguale a zero in quanto
+6z/Ox = 0. Applicando le relazioni tra le coordinate date dalla (3.77), si dimostra fa-
+cilmente che
+
+or x
+
+= — = p 3.79:
+è Eee cos @, (3.79a)
+sno. (3.796)
+Ox r
+Dunque
+aT aT sing OT
+
+(3.80)
+
+eae 7 9°
+
+127
+
+[PAG 72]
+128
+
+Capitolo 3 - Analisi vettoriale
+
+Questa espressione si può usare per sostituire il coefficiente di X nella (3.72) e si può
+
+- -seguire-un procedimento analogo per ottenere l'espressione di OT /ay i in termini-dir -
+
+e è. Se inoltre si applicano le relazioni î = È cos $ — ¢ sin ge$=fsind- $ cos ¢
+prese dalla (3.57a) e dalla (3.57b), la (3.72) diviene
+
+, OF 1 oT 430
+VI = 849755 Eri is
+
+e dunque l’operatore gradiente in coordinate cilindriche si può definire come
+
+(3.81)
+
+i +o oy ai (cilindriche). (3.82)
+
+v dò dz
+
+Un procedimento analogo porta a ottenere la seguente espressione del gradiente in
+coordinate sferiche:
+
+1
+R
+
+29,190 4,
+Vaiggt sat +9%
+
+=v, io (sferiche). 08
+
+3.4.2. Proprietà dell'operatore gradiente
+Date due funzioni scalari arbitrarie U e V, valgono le seguenti relazioni:
+
+(1) V(U+V)=VU+VY, (3.842)
+(2) V(UP)=UVV+VVU, (3.84b)
+(3) V¥"=nv"! VV, ©. per ogni n. (3.840)
+
+Il gradiente di un vettore non ha significato secondo le regole del calcolo vettoriale.
+
+Esempio 3.10 Calcolo del gradiente
+
+Si ricavi il gradiente di ciascuna delle seguenti funzioni scalari e lo si valuti nel punto
+dato:
+
+(a) V.= 24V cos (ay/3) sin (272/3) nel punto (3, 2, 1) in coordinate cartesiane;
+(b) V2 = Voe-? sin 3¢ nel punto (1, 7/2, 3) in coordinate cilindriche;
+(c).V3 = Vo(a/R) cos 20 nel punto (2a, 0, 7) in coordinate sferiche.
+
+Soluzione (a) In coordinate cartesiane
+
+HM ON
+Wi kg tia 1° da
+
+my . 2a. n 2rz
+3 sin 3 + 2167/ cos 3 008 3
+
+_ een IP gin 27% 1 m 2nz
+= 80%] $ sin 3 sin 3 + 22 cos 3 cos 3|
+
+= —38r% sin
+
+in (3, 2, 1)
+
+Wh = nto (gin 10.005? 22
+
+= aVo[-$6 + 24].
+
+3.5 Divergenza di un campo vettoriale 129
+
+(®) La funzione V2 è espressa in funzione di variabili cilindriche, dunque bisogna appli
+«care Pespressione-di V data dalia (3.82): salini ie
+vu = (i Igl at iz.) Yee sin 36
+
+= -£2%e™ sin3¢+ dee” cos 3$)/r
+
+= È sin3o+¢ jp 22878 ye
+
+In (1, 2/2, 3) sihar = 1e ¢ = 7/2, dunque
+VI = È #2 sin 443 cos = the?
+= F2Ve* = £0.27 Mo.
+
+(€) Dato che V3 è espressa in coordinate sferiche, si applica a V3 l’espressione data dalla
+(3.83):
+
+8 .18 , 1 8 a
+ve iù aR +65 oe Fp) to eos 20
+
+os
+= -[R cos20 + 62 sin ral
+In (2a, 0, ) siha R = 2a e 6 = 0, da cui si ottiene
+
+Vo
+vi=-è7.
+
+Esercizio 3.7 Dato V = xy + xy* + x2’, (a) si ricavi il gradiente di V e (b) to si valuti
+in(1,—1,2).
+
+SOLUZIONE (a) VV = X(2xy +7 + 2) + G(x? + 2x9) + 22az,
+O) VP a, 1) = 3 -F +24.
+
+Esercizio 3.8 Si ricavi la derivata direzionale di VY = rz? cos 2$ lungo la direzione
+A=î2-Zelasi valuti nel punto (1, 7/2, 2).
+
+SOLUZIONE (dV//42)|;1.2/2,) = —4/V5.
+
+3.5 Divergenza di un campo vettoriale
+
+Dalla breve introduzione della legge di Coulomb esposta nel Capitolo 1, è noto che
+una carica puntuale positiva g isolata induce un campo elettrico E nello spazio circo-
+stante e la direzione di E è rivolta radialmente a uscire dalla carica. Inoltre, la forza
+(modulo) di E è proporzionale a q e cala con la distanza R dalla carica in ragione di
+1/R2. Dal punto di vista grafico, un campo vettoriale si rappresenta di solito con del-
+le dinee di campo, come descritto in Figura 3.20. Le frecce indicano la direzione del
+campo nei punti in cui è tracciata la linea di campo, mentre le lunghezze dei segmen-
+ti offrono un’indicazione qualitativa del modulo del campo.
+
+[PAG 73]
+130
+
+Capitolo 3 — Analisi vettoriale
+
+Superficie
+sferica
+" immaginaria
+
+Figura 3.20 Linee di flusso del campo elettrico E dovute alla carica positiva 4.
+
+Anche se il vettore campo elettrico non si sposta in concreto, la sua presenza è consi-
+derata nella forma di un flusso in movimento nello spazio e le sue linee di campo so-
+no dette linee di flusso. Su una superficie di contorno si definisce la densita di flusso
+come la quantità di flusso uscente che attraversa una superficie infinitesima ds:
+
+E-ds _ E-iids
+lds] ds”
+dove fi è il versore normale uscente dalla superficie ds. Il flusso totale che attraversa
+
+una superficie chiusa S, come la superficie descritta dalla sfera immaginaria tracciata
+in Figura 3.20, è
+
+Densità di flusso E = (3.85)
+
+Flusso totale = f E-ds. (3.86)
+Ss
+
+f
+
+Figura 3.21 Linee di flusso di un campo vettoriale E che passano attraverso un parallelepipedo
+rettangolare differenziale di volume Av = AxAyAz.
+
+3.5 Divergenza di un campo vettoriale
+
+Si consideri ora il caso di un parallelepipedo differenziale, simile a un cubetto, i cui
+
+.. spigoli sono allineati con gli assi di.un sistema in coordinate.cartesiane come descrit-
+
+to in Figura 3.21. Le lunghezze degli spigoli sono Ax lungo x, Ay lungo y e Az lun-
+go z. Nella regione di spazio-che contiene il parallelepipedo esiste un campo vettoria-
+le E(x, y, z) e si vuole determinare il flusso di E attraverso la sua superficie totale S.
+Dato che S comprende sei facce, si devono sommare i flussi attraverso ciascuna di es-
+se, e per definizione il flusso attraverso ciascuna faccia è il flusso uscente dal volume
+Av attraverso quella faccia.
+
+Si definisca E come
+
+E= î£,+9E,+3E.. (3.87)
+
+L'area della faccia contrassegnata con il numero | in Figura 3.21 è AyAz e il versore
+normale associato è fi; = —&. Dunque il flusso uscente Fi attraverso la faccia 1 è
+
+r=/ E- fi) ds
+Face 1
+
+= [Gee +96, +00): (Mie (3.88)
+Face 1
+
+= -E,(1) Ay Az,
+
+dove E,(1) è il valore di E, al centro della faccia 1. L’approssimazione di Z, su tutta
+ja faccia 1 con il suo valore nel centro è giustificata dall’ipotesi che il volume diffe-
+renziale in esame sia molto piccolo.
+
+Analogamente, il flusso uscente dalla faccia 2, con fig = &, è
+
+Fy = E,(2) Ay Az, (3.89)
+
+dove E,(2) è il valore di Ex al centro della faccia 2. Essendo separati da una distanza
+differenziale Ax, E,(1) ed £,(2) sono legati dalla
+
+OE,
+Ox
+dove si sono trascurati i termini di ordine superiore dipendenti da (Ax? e potenze
+
+maggiori poiché il loro contributo è minuscolo quando Ax è molto piccolo.
+Sostituendo la (3.90) nella (3.89) si ha
+
+E,(2) = E:(1) +
+
+Ax, (3.90)
+
+OE,
+Ox
+
+E = [ew + ax Ay Az. (3.91)
+
+La somma dei flussi uscenti daile facce 1 e 2 si ottiene sommando la (3.88) e la
+B.91):
+
+Fith= He Ax Ay Az. (3.92a)
+. Ripetendo il procedimento per ciascuna delle altre coppie di facce si ha
+
+Fy +Fy= a Ax Ay Az, (3.92b)
+
+Fs+Fe= de Ax Ay Az. (3.920)
+
+131
+
+[PAG 74]
+132
+
+--del parallelepipedo: - -. -.-- -- ----
+
+* flusso di E attraverso la superficie chiusa S che racchiude v. Vale a dire
+
+Capitolo 3 — Analisi vettoriale
+
+Dalla somma dei flussi da F a Fs si ricava il flusso totale attraverso la superficie S
+
+OF, .. OE, . OE,
+E ds i+ + Ax Ay Az
+f oy a (3.93)
+
+= (div E) Ay,
+
+dove Av = AxApAz e div E è una funzione differenziale detta divergenza di E e de-
+finita in coordinate cartesiane come
+
+OE, , OE, , ob;
+me Ot ae
+
+Facendo tendere a zero.il volume Ay, si definisce la divergenza di E in un punto co-
+me il flusso netto uscente per unità di volume attraverso una superficie chiusa infini-
+tesima. Pertanto dalla (3.93) si ha
+
+f E-ds
+
+JS
+
+Av
+
+divE=
+
+(3.94)
+
+a A x
+div ES im, (3.95)
+
+dove DI racchiude il volume infinitesimo Av. Invece di indicare la divergenza di E
+con div E, nella pratica si è soliti indicarla con V - E. Vale a dire
+
+9E (396)
+
+ox by da
+
+per un vettore E in coordinate cartesiane. Questi due tipi di notazione saranno discus-
+si più in dettaglio nel Paragrafo 3.5.2.
+
+Dalla definizione della divergenza di E data dalla (3.95), il campo E ha divergenza
+positiva se il flusso netto uscente dalla superficie S è positivo, il che si può interpreta-
+re come la presenza di una sorgente di flusso all’interno del volume Av. Se la diver-
+genza è negativa, Av si può interpretare come un pozzo, dal momento che il flussò
+netto è entrante in Av. Per un campo uniforme E, in Av entra tanto flusso quanto ne
+esce, dunque la sua divergenza è zero e il campo è detto non divergente. La divergen-
+Za è un operatore differenziale, po operare solo su un vettore e il risultato dell’opera-
+zione è uno scalare, al contrario dell’operatore gradiente, che opera solo su scalari e
+il cui risultato è un vettore. Le espressioni della divergenza di un vettore in coordina-
+te cilindriche e sferiche sono date nelle pagine finali di questo libro.
+
+L'operatore divergenza è distributivo, cioè per una coppia arbitraria di vettori E)
+ed E, si ha
+
+V-(E:+E;)=V-E1+V-E. (3.97)
+
+Se V.E = 0 il campo vettoriale E è detto solenoidale.
+
+3.5.1 Teorema della divergenza
+
+Il risultato dato dalla (3.93) per un volume differenziale Av può essere esteso per de-
+scrivere la relazione tra l'integrale volumetrico di V - E su un volume v arbitrario e il
+
+/ V-Edv= 4 E-ds (teorema della divergenza). (3.98)
+v 8
+
+e igpetiso, n eee ce
+
+3.5 Divergenza di un campo vettoriale
+
+Questa relazione, nota come teorema della divergenza, è molto usata nell’elettroma-
+
+3.5.2 Considerazioni sulla notazione
+
+I libri di analisi vettoriale usano una o entrambe delle due notazioni seguenti per indi-
+care gli operatori gradiente, divergenza e rotore. Nella notazione linguistica, il gra-
+diente di uno scalare T si scrive ‘grad T”’, mentre divergenza e rotore di un vettore
+E si scrivono “div E” e “rot E”. Pochi anni dopo la pubblicazione da parte di
+James Clerk Maxwell nel 1873 del suo classico trattato sull’elettricità e il magneti-
+smo, scritto quando l’analisi vettoriale nel tempo non era ancora disponibile, il mate-
+matico statunitense J. Willard Gibbs pubblicò una coppia di saggi intitolati
+“Elements of Vector Analysis”, in cui fondò la branca dell’analisi vettoriale come la
+conosciamo oggi. Nella sua presentazione, introdusse una nuova notazione per gli
+operatori divergenza e gradiente: “‘V - E” al posto di “div E” e “V x E” al posto
+di “rot E”?. La notazione di Gibbs si diffuse rapidamente grazie alla sua semplicità
+dal punto di vista simbolico e ora è applicata dalla stragrande maggioranza dei testi
+sull’elettromagnetismo. Tuttavia, il problema della notazione di Gibbs è che è sogget-
+ta a errori di interpretazione. Nella notazione di Gibbs, V - E significa la divergenza
+del vettore E, ma ciò viene facilmente interpretato in maniera errata come il prodotto
+scalare dell’operatore V con il vettore E, pur non avendo Gibbs stesso mai dato una
+definizione di questo genere. La ragione di questo errore è dovuta al fatto che dal
+punto di vista algebrico il prodotto scalare di V, come definito dalla (3.74), con E,
+come definito dalla (3.87), ha lo stesso risultato dell'espressione della divergenza di
+E data dalla (3.96). Tuttavia, l’interpretazione del “prodotto scalare’’ è errata sotto
+due punti di vista. Prima di tutto, l’operatore V è considerato una grandezza vettoria-
+le, il che non è vero: come si è detto in precedenza, un operatore differenziale non ha
+significato fisico di per sé e riveste significato solo dopo che è applicato a una gran-
+dezza fisica. Questa distinzione sara pure sottile, ma è comunque basilare. La secon-
+da critica all’interpretazione è che può portare a risultati scorretti quando si applicano
+trasformazioni di coordinate, il che non è accettabile in quanto la divergenza di una
+grandezza fisica deve essere univoca a prescindere dalla scelta del sistema di riferi-
+mento. Critiche analoghe si applicano all’interpretazione di V x E come prodotto
+vettoriale di V ed E.
+
+Per evitare i problemi di errata interpretazione della notazione di Gibbs, Tai! ha in-
+trodotto la notazione V E per la divergenza di E e V E per il rotore di E. La notazio-
+ne proposta da Tai è tuttavia relativamente recente e richiederà un po’ di tempo pri-
+ma che i suoi fondamenti logici siano pienamente apprezzati. Dunque, rispettando la
+tradizione, in questo libro verrà adottata la notazione di Gibbs, volendo però rimarca-
+re ulteriormente il fatto che ‘‘V-”’ e “V x” non devono essere considerati come l’o-
+peratore nabla seguito da un prodotto scalare o vettoriale.
+
+Esempio.3.11 Calcolo della divergenza
+
+Si ricavi la divergenza di ciascuno dei seguenti campi vettoriali e la si valuti nel punto
+indicato:
+
+(@ E = 332 + 922 + 272 nel punto (2, — 2, 0);
+
+©) E = R(a? cos8/R°)— 8(@? sin 9/R2) nel punto (2/2, 0, n).
+
+1 CIT. Tai, Generalized Vector and Dyadic Analysis, IEEE Press, New York, 1992, pagg.
+4i44,
+
+133
+
+[PAG 75]
+134
+
+Capitolo 3 — Analisi vettoriale
+
+Soluzione
+
+AA e ee ee ee ee
+
+DE, ,9E, , OE
+dx ay dz
+a
+Tan: ie +55! 2)
+=6x+0+2=2 +6
+
+In (-2, - 2,0), V-Elo,-29,=16.
+(b) Applicando l’espressione data nelle pagine finali del libro per la divergenza di un
+vettore in coordinate sferiche, si ha
+
+180 1
+
+V.E=
+
+VE =e og Fs) * Reno Fresa
+105
++ Rano “Oo
+19,, 1 d/ &sin?0
+= RI Op (08) + Fao dI (- E )
+203 così 20 così
+=0-—— =-—
+
+InR=a/2€9=0,V Elo, = —16.
+
+Esercizio3.9 Dato A = e~?”(& sin 2x + 9 cos 2x), si ricavi V - A.
+SoLuzione V.A=0.
+EseRcIZIO 3.10 Dato A = fr cos fg + or sin ¢ + 23z, si ricavi V - A in (2, 0, 3).
+
+Soruzione V-A=6.
+
+Esercizio 3.11 Se E = RAR in coordinate sferiche, si calcoli il flusso di E attraverso
+‘una superficie sferica di raggio a centrata nell’origine.
+
+SOLUZIONE f E-ds = 44a’,
+
+Esercizio 3,12 Si verifichi il teorema della divergenza calcolando l’integrale di volume
+della divergenza del campo E nell’Esercizio 3.11 su un volume delimitato dalla superfi-
+cie di raggio a.
+
+3.6 Rotore di un campo vettoriale
+
+Finora si sono definiti e discussi due dei tre operatori fondamentali usati nell’analisi
+vettoriale, il gradiente di uno scalare e la divergenza di un vettore. Verrà ora presen-
+tato l’operatore rotore. Ii rotore di un campo vettoriale-B descrive la proprietà Tota-
+zionale, 0 circuitazione, di B. Per un contomo chiuso C, la circuitazione di B è defi-
+nita come Vintegrale di linea di B lungo C. Vale a dire
+
+Circuitazione ¢ B-dl. (3.99)
+fe
+
+Per comprendere questa definizione dal punto di vista fisico, si considerino due
+
+3.6 Rotore di un campo vettoriale
+
+esempi. Il primo esempio è relativo a un campo uniforme B = %Bp, le cui linee di
+
+-campo-sono descritte in Figura 3.22(a). Per il contorno rettangolare abcd mostrato in
+
+figura, si ha
+
+Circuitazione = [ &Bo Ede + [ Bo -9dy
+
+(3.100)
++f Bo - kde + f Bo -3dy
+
+= By Ax — By Ax =0,
+
+(a) Campo uniforme (b) Campo azimutale
+Figura 3.22 La circuitazione è nulia per il campo uniforme in (a), ma è diversa da zero per il
+campo azimutale in (b).
+
+dove Ax = b~—a=c-—de, dal momento che £ - 7 = 0, il secondo e il quarto inte-
+grale sono nulli. Secondo la (3.100), Ja circuitazione di un campo uniforme é uguale
+a zero.
+
+Si considerino in seguito il campo magnetico B indotto da un filo infinito che porta
+una corrente continua /. Se la corrente è nello spazio libero ed è orientata in direzio-
+ne dell’asse z, allora dalla (1.13) si ba
+
+= gl (3.101)
+2ar?
+dove po è la permeabilità dello spazio libero e r è la distanza radiale dalla corrente
+nei piano x-y. La direzione di B è rivolta lungo la direzione azimutale È. Le linee di
+campo di B sono cerchi concentrici attorno alla sorgente della corrente, come descrit-
+to in Figura 3.22(b). Per un contomo circolare di raggio r, il vettore lunghezza diffe-
+renziale dl = ord, e la circuitazione di B attorno a C è
+
+Circuitazione = ¢ B-dl
+©
+3.102)
+“I (10)
+= | $i -drdé = pol.
+ar
+
+0
+
+135
+
+[PAG 76]
+136
+
+Figura 3.23
+
+La direzione dei versore fi
+è quella del pollice quando
+
+lealtre quattro dita della
+mano destra seguono dl.
+
+Capitolo 3 — Analisi vettoriale
+
+In tal caso la circuitazione non è uguale a zero, ma se il contorno C fosse stato posto
+
+--in-un qualsiasi piano-perpendicolare-al piano-x-y; dt non avrebbe avuto alcun compo: > =
+
+nente lungo ¢ e dall’integrale sarebbe risultata una circuitazione netta pari a zero. In
+altre parole, il modulo della circuitazione di B dipende dalla scelta del contorno.
+Inoltre, la direzione di percorrenza del contomo determina se la circuitazione è positi-
+va o negativa. Per esempio, per descrivere la circuitazione di un tornado si sceglierà
+un contorno tale da massimizzare la circuitazione del campo del vento, e oltre al mo-
+dulo sarà desiderabile che la circuitazione abbia una direzione, che sia rivolta verso il
+vortice del tornado. L’operatore rotore è stato definito per soddisfare queste proprie-
+tà. Il rotore di un campo vettoriale B, indicato con curl B oppure con V x B è defini-
+to come
+
+= cut BS im lads.
+VxB= cut B= lim = [af al (3.103)
+
+Pertanto, V x B è pari alla circuitazione di B per unità di area, con l’area As del con-
+tomo C orientata in modo che la circuitazione sia massima. La direzione di V x B è
+îì, il versore normale a As, definito secondo la regola della mano destra: quando le
+quattro dita della mano destra seguono la direzione di dl lungo il contorno, il pollice
+punta lungo fi (Figura 3.23). Il rotore di un vettore è funzione del punto: ciò segue
+dalla definizione data dalla (3.103) in cui la circuitazione è normalizzata all’area As,
+per As che tende-a zero. Come detto nel Paragrafo 3.5.2, quando si usa la notazione
+V x B per indicare curl B, non la si deve interpretare come il prodotto vettoriale di
+V con B. :
+Per un vettore B definito in coordinate cartesiane come
+B= &£B, + yBy +28,, (3.104)
+si può dimostrare, con un procedimento piuttosto lungo e involuto, che la definizione
+data dalla (3.103) porta a ottenere
+
+vanni(È &) +3 F- =)
+
+oy oz dz Ox
++1 5)
+oy (3.105)
+of è
+i dd
+dx Oy dl
+B, By B.
+
+Le espressioni di V x B sono riportate nelle pagine finali del libro per i tre sistemi di
+riferimento ortogonali considerati in questo capitolo.
+
+ds=fì ds
+
+3.6 Rotore di un campo vettoriale
+
+3.6.1 Identità vettoriali caratteristiche del rotore
+
+Per due vettori arbitrari A e B
+
+(1) Vx(A+B)=VxA+VxB, (3.106a)
+(2) V-{VxA)=0  perognivettore A, (3.106b)
+(3) Vx(VY)=0 per ogni funzione scalare V. (3.106c)
+
+Le identità (2) e (3) sono proprietà importanti, che troveranno uso nei prossimi capi-
+toli. -
+
+3.6.2 Teorema di Stokes
+
+Il teorema di Stokes trasforma l’integrale di superficie del rotore di un vettore su una
+superficie aperta S in un integrale di linea del vettore lungo il contorno C che delimi-
+ta la superficie S. La geometria è mostrata in Figura 3.23. Dal punto di vista matema-
+tico il teorema di Stokes è descritto da
+
+fo x B)-ds= fs «di (teorema di Stokes), (3.107)
+s fe
+
+e la sua dimostrazione segue dalla definizione di V x B data dalla (3.103). La con-
+versione rappresentata dalla (3.107) è molto usata per risolvere i problemi elettroma-
+gnetici. Se V x B = 0, il campo B è detto conservativo o irrotazionale in quanto la
+sua circuitazione, rappresentata dal membro destro della (3.107), è nulla.
+
+Esempio 3.12 Verifica del teorema di Stokes
+
+Un campo vettoriale è definito come B = 2 cos ¢/r. Si verifichi il teorema di Stokes
+per un segmento di superficie cilindrica definito dar = 2, 7/3 < @ <a/2e0 Sz <3,
+come descritto in Figura 3.24.
+
+Soluzione Il teorema di Stokes dice che
+
+VICELIEZTAZI
+
+Figura 3.24 Geometria dell’Esempio 3.12.
+
+137
+
+[PAG 77]
+138
+
+Capitolo 3 ~ Analisi vettoriale
+
+Membro sinistro: Dal momento che B ha solo il componente 8; = cos ¢/r, applicando
+
+...=— |-l'espressione. di V_x B in.coordinate cilindriche nelle pagine finali del libro si ottiene
+
+108. 9B; 3( OB, OB.
+VxB=î (-3- e Ge S)
+
+L’integrale di V x B sulla superficie S descritta vale
+
+[ona
+
+_ na A sing cos$\ .
+[SE +4 r ) fraba
+
+è sin 3 3
+-[ ING nd age di,
+
+dove si è usato il fattocher=2.
+
+Membro destro: La superficie S è delimitata dal contorno C = abcd in Figura 3.24. La
+direzione di C è scelta in modo che sia compatibile con la normale f alla superficie se-
+condo la regola della mano destra. Dunque
+
+d 1
+fsa-] Basal / Bue di
+c a 5
+5 d a
++f Baal f Ba di
+e d
+
+dove Bas, Bic, Bea € Ba, sono le espressioni del campo B valutato rispettivamente sui
+segmenti ab, bc, cd e da. Sul segmento ab il prodotto scalare di Bay = 2( cos $)/2 e
+di= prd¢ è zero, e lo stesso vale per il segmento cd. Sul segmento be, $ = 1/2; per-
+ciò Bse =2(cosr/2)/2=0. Per l’ultimo segmento, By, = 2( cos x/3)/2 = 2/4 e
+di = îdz. Quindi
+
+eid di 3
+B-dl= %—-idz= —d@d=-—
+f dl [epi [ae 7!
+
+che è lo stesso risultato ottenuto valutando il membro sinistro dell’equazione di Stokes.
+
+Esercizio 3.13 Si trovi V x A nel punto (2, 0, 3) in coordinate cilindriche per il campo
+vettoriale
+
+A=fl0e™ cos$+ 210 sin $.
+SOLUZIONE
+
+3106-27
+vVxA= (et eee snd)
+
+F
+
+3.7 Operatore Laplaciano
+
+Esercizio 3,14 Si calcoli V x A nel punto (3, wis 6, 0) in coordinate sferiche per jl cam-
+po vettoriale A = 612 sin 0... ITA -
+
+SOLUZIONE
+VxA= gi2sing = da.
+
+(3,7/6,9)
+
+3.7 Operatore Laplaciano
+
+Nei capitoli successivi si tratteranno a volte problemi che coinvolgono combinazioni
+multiple di operazioni su scalari e vettori. Una combinazione che si incontra di fre-
+quente è la divergenza del gradiente di uno scalare. Per una funzione scalare V defi-
+
+nita in coordinate cartesiane il gradiente è
+CIA ov CIA
+VV =i ot + is
+ye (3.108)
+
+= a + YA, +24, =
+
+dove si è definito un vettore A con componenti A, = OV/Ox, Ay = OV/dy e
+A, = 0V/9z. La divergenza di VV è
+
+ver) =v A= 04% fae
+at è
+
+ev BY ev (3.109)
+cata
+
+Per comodità, V - (VV) è chiamato il Laplaciano di V e si indica con VV (il simbo-
+lo V? si pronuncia “nabla quadro”). Quindi,
+
+Come si vede dalla (3.110), il Laplaciano di una funzione scalare è uno scalare. Le
+espressioni per V? in coordinate cilindriche e sferiche sono riportate nelle pagine fi-
+nali del libro.
+Il Laplaciano di uno scalare può essere usato per definire il Laplaciano di un vetto-
+re. Per un vettore E espresso in coordinate cartesiane come
+E=x£,+ SE, + 2£,, (3.111)
+
+il Laplaciano è definito come
+Fe FF è
+2, =\|— — 4+ _
+VE ( oa + ME” ) E
+HIVE, +H VE, +2V°E.
+Perciò in coordinate cartesiane il Laplaciano di un vettore è un vettore le cui compo-
+
+nenti sono i Laplaciani delle componenti del vettore stesso. Tramite una sostituzione
+diretta, si può mostrare che
+
+(3.112)
+
+VE=V(V-E)—Vx(VxE). (3.113)
+
+Questa uguaglianza si dimostrerà utile nei capitoli successivi.
+
+139
+
+[PAG 78]
+140
+
+Glossario
+
+Si definiscano i seguenti termini, spiegandone il significato:
+
+quantità scalare
+quantità vettoriale
+modulo
+
+versore
+
+vettori della base
+vettore posizione
+
+Capitolo 3 - Analisi vettoriale
+
+Domande di verifica
+
+3.11 Cosarappresentano il modulo la direzione del gradiente di una quantità scalare?
+
+3.12 Dimostrare la validità della (3.84c) in coordinate cartesiane.
+
+3.13 Qual è il significato fisico della divergenza di un campo vettoriale?
+
+3.14 Se un campo vettoriale è solenoidale in un dato punto dello spazio, questo im-
+plica necessariamente che il campo vettoriale è nullo in quel punto? Spiegare.
+
+3.15 Qualè il significato della trasformazione prevista dal teorema della divergenza?
+
+3.16 Come è legato il rotore di un campo vettoriale in un punto alla circuitazione
+del campo vettoriale stésso?
+
+3.17 Qual è il significato della trasformazione prevista dal teorema di Stokes?
+
+3.18 Quando un campo vettoriale è ‘‘conservativo’’?
+
+Concetti fondamentali
+
+e L’algebra vettoriale governa le leggi della somma; sottrazione e moltiplicazione
+dei vettori, e il calcolo vettoriale comprende le leggi della differenziazione e del-
+l’integrazione dei vettori.
+
+e In un sistema di coordinate ortogonali destrorso i tre vettori di base sono mutua-
+mente perpendicolari l’uno all’altro in ogni punto dello spazio, e la relazione cicli-
+ca che governa il prodotto-vettoriale dei vettori della base obbedisce alla regola del-
+la mano destra.
+
+¢ Il prodotto scalare di due vettori produce uno scalare, mentre il prodotto vettoriale
+di due vettori produce un altro vettore.
+
+© Un vettore espresso in un dato sistema di coordinate può essere espresso in un altro
+sistema di coordinate tramite l’uso di relazioni di trasformazione che legano i due
+sistemi di coordinate.
+
+e Le principali funzioni differenziali nel calcolo vettoriale sono il gradiente, la diver-
+genza e il rotore.
+
+¢ Il gradiente di una funzione scalare è un vettore il cui modulo è uguale al massimo
+tasso di crescita della funzione scalare per unità di distanza, e la cui direzione è
+quella di massima crescita.
+
+¢ La divergenza di un campo vettoriale è la misura del flusso netto uscente per unità
+di volume attraverso una superficie chiusa che racchiude il volume unitario.
+
+e Il teorema della divergenza trasforma l’integrale di volume della divergenza nel-
+Vintegrale di superficie del flusso del campo attraverso una superficie chiusa che
+circonda il volume stesso.
+
+¢ Il rotore di un campo vettoriale è la misura della circuitazione del campo vettoriale
+per unità di area As, con l’orientazione di As scelta in modo da rendere massima
+la circuitazione. o
+
+¢ Il teorema di Stokes trasforma l’integrale superficiale del rotore del campo vettoria-
+le in un integrale di linea del campo sul contorno che delimita la superficie.
+
+® Il Laplaciano di una funzione scalare è definito come la divergenza del gradiente
+della funzione stessa.
+
+vettore distanza
+
+prodotto semplice
+
+prodotto scalare
+
+prodotto vettoriale
+
+sistema di coordinate ortogonali
+sistema di coordinate cartesiane
+sistema di coordinate cilindriche
+sistema di coordinate sferiche
+
+Problemi 141
+
+Nota: Le risposte ai problemi contrassegnati da un asterisco si
+trovano nell’Appendice D.
+
+Paragrafo 3.1. Algebra vettoriale
+
+*3,1 Il vettore A va dal punto (1, -1, —2) al punto (2,--1,0).
+Trovare il versore nella direzione di A.
+3.2 Datiivettoi A= 82-93 +Z,B=i2-f+Be
+C = î4 +72 — 22, mostrare che.C è perpendicolare sia a
+AcheaB.
+
+*3.3 In coordinate cartesiane i tre vertici di un triangolo sono
+P,(0,2,2), Pa(2,-2,2) e P;(1, 1, -2). Trovare l’area del
+triangolo.
+
+3.4 DatiA=£2—93+2Z1eB= $8,+92+28,, trovare
+
+(a) Be B. se Aè parallelo a B;
+(b) uma relazione tra B, e 8. se A è perpendicolare a B.
+
+*3.5 Datiivettoi A= X+j2-23,B = %3 ~ f4e
+C= 33 — 24, trovare
+(a) Aeà;
+
+(b) la componente di B lungo C;
+© Uci
+
+(Ax C;
+(©) A-(BXC);
+
+© Ax(BxC);
+
+@ îxB;
+
+(i) (Ax9) 2.
+
+3.6 Datiivettori A = 12 ~ 9 +23 e B = £3 — 22, trovare un
+vettore C il cui modulo è 6 e la cui direzione è
+perpendicolare sia ad A che a B.
+
+*3.7 Dato A = £(2x+3y) — $(27+32) +#(3x-)),
+determinare il versore parallelo ad A nel punto
+P(i,~ 1, 2).
+
+3.8 Con Pespansione in coordinate cartesiane dimostrare:
+(a) la relazione per il triplo prodotto scalare dato dalla
+G29); .
+
+(b) la relazione per il triplo prodotto vettoriale dato dalla
+33).
+*3.9 Trovare un'espressione per il versore diretto verso
+
+_ l'origine da un punto arbitrario sulla retta descritta da
+x=lez=2.
+
+distanza radiale r ‘operatore divergenza
+j-- — «angolo azimutale g-- - —— —-/—- = ene —* me — eampe sélenoidale = |. -——. — --._. -___-. ui
+angolo zenitale # teorema delia divergenza
+distanza R circuitazione di un vettore
+‘operatore gradiente operatore rotore
+derivata direzionale campo conservativo
+linee di flusso teorema di Stokes
+densità di flusso operatore Laplaciano
+PROBLEMI
+
+3.10 Trovare un'espressione per il versore diretto verso il punto
+P situato sull'asse z all’altezza h sopra il piano x — y da un
+arbitrario punto Q(x, y, 2) nel piano z = 2.
+
+*3.11 Trovare il versore parallelo alla direzione della retta
+descritta da
+2x-z=4
+
+3.12 Due rette nel piano x — y sono descritte dalle espressioni:
+Lineal x+2y=-6
+Linea 2 3x+4y=8
+
+Usare l’algebra vettoriale per trovare il più piccolo angolo
+tra le rette al loro punto di intersezione.
+
+#3.13. Una data retta è descritta da
+x+2y=4
+Il vettore A inizia nell'origine e termina nel punto P sulla
+retta in modo che A sia a essa ortogonale. Calcolare
+un'espressione per A.
+3.14 Dimostrare che, dati due vettori A e B,
+
+(a) il vettore C definito come il vettore componente di B
+nella direzione di A è dato da
+
+A(B-A)
+
+C=A(B- a) = iaP
+
+dove è è il versore di A;
+(b) il vettore D definito come il vettore componente di B
+perpendicolare ad A è dato da
+
+A(B-A)
+
+D=B-
+la?
+
+*3.15 Un piano è descritto da
+2x+3y+42= 16
+Trovare il versore normale alla superficie nella direzione
+uscente dall’origine.
+
+3.16 Dato B = î(22 — 37) + 3(2x — 32) — 2(x +7), calcolare
+il versore parallelo 2 B nei puato P(1, 0, — 1).
+
+3.17 Nel rappresentare o dimostrare la variazione spaziale di un
+campo vettoriale, si usano spesso frecce, come nella
+
+[PAG 79]
+142 Capitolo 3 — Analisi vettoriale
+
+Figura 3.25, in cui la lunghezza della freccia è resa
+proporzionale alla forza del campo e la direzione è ia
+stessa di quella del campo. La rappresentazione mostrata
+in Figura 3.25, che mostra il campo vettoriale E = ir,
+consiste di frecce che puntano radialmente in direzione
+uscente dall’origine e la cui lunghezza aumenta
+linearmente in proporzione alla loro distanza dail’origine.
+Usando questa rappresentazione a frecce, rappresentare
+ciascuno dei seguenti campi vettoriali:
+
+(@) Ey = -îyi
+
+(b) Ez = fx;
+
+© Es= a +yy
+(A) Es = kx +92;
+
+© Es = or;
+© Es =fsing.
+»
+|
+E E
+
+Figura 3.25 Rappresentazione a frecce per il campo
+vettoriale E = fr (Problema 3.17).
+
+3.18 Usare le frecce per rappresentare ciascuno dei seguenti
+campi vettoriali:
+
+(© Es = ¥(1/x);
+(d) Ey =F cos.
+
+Paragrafi 3.2 e 3.3 Sistemi di coordinate
+
+#3.19 Convertire le coordinate dei seguenti punti da cartesiane a
+cilindriche e sferiche: *
+
+(a) P;(1, 2,0);
+(b) P2(0, 0, 3);
+© P;(1, 1,2);
+@ P:(-3, 3, — 3).
+
+3.20 Convertire le coordinate dei seguenti punti da cilindriche a
+
+cartesiane:
+(a) Pi(2, 7/4, — 3);
+(b) P2(3, 0, 0);
+(©) Ps(4, 2, 2).
+
+#3.21 Convertire le coordinate dei seguenti punti da sferiche a
+cilindriche:
+(a) Pi(5, 0, 0);
+®) P2(5, 0, x);
+© P33, 7/2, 7).
+
+3.22 Usare l’espressione appropriata per la superficie
+differenziale ds per determinare l’area di ognuna delle
+seguenti superfici:
+
+(a) r=3;0<$S7/3;-2<2<%;
+
+®) 2<r<5;m/2<$<7;2=0;
+
+© 2<r<5;$=7/4-2<2<2;
+
+(A) R=2,0<S0<a/ 056555
+
+(©) 0<R<5;0=2/3;0<9< 20.
+Rappresentare anche il profilo di ciascuna superficie.
+
+*#3.23 Trovare i volumi descritti dalle seguenti condizioni:
+
+@ 2<r SS 7/2<$<m0<2<2;
+©) O<R<5;0<9<7/3;0<$<27
+Rappresentare anche il profilo di ciascun volume.
+
+3.24 La sezione di una sfera è descritta da 0 < R < 2,
+0 <8< 90° e 30° < $ < 90°. Calcolare:
+(a) l’area superficiale della sezione sferica;
+(b) il volume racchiuso.
