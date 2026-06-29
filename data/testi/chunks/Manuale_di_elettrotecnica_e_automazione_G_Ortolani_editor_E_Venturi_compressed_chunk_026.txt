@@ -1,0 +1,2101 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 26/116 ===
+Chars: 44,922 | Offset: 1,104,810
+
+
+
+[PAG 549]
+ELETTROTECNICA GENERALE
+VII-45
+Per la regola del derivatore di corrente si ottiene
+Rispettando i versi, si determinano le correnti che si instaurano dopo la chiusura del
+tasto T; il loro valore è
+I1
+* = I1  I1
+1 = 7,17 A
+I2
+* = I2  I2
+1 = 2,39 A
+I3
+* = I3  I3
+1 = 4,78 A
+3.10  Principio di reciprocità
+In una rete elettrica passiva, la f.e.m. Ei che agisce nel lato i-esimo, determina nel
+ramo n-esimo la corrente In.
+Il principio di reciprocità assicura che, eliminata Ei e instaurata nel ramo n-esimo una
+f.e.m. En, circolerà nel ramo i-esimo una corrente Ii legata a In dalla relazione:
+(VII.3.3)
+Per determinare il verso della corrente Ii, è necessario conoscere quello della corrente
+In prima dello spostamento dei generatori e applicare la seguente regola: il verso della cor-
+rente Ii coincide con il verso della f.e.m Ei prima dello spostamento dei generatori se la
+f.e.m. En agisce nel ramo n-esimo in modo tale che il verso della corrente In, prima dello
+spostamento, coincida con il verso di En.
+Esempio
+Il regime elettrico della rete elettrica di Fig. VII.3.23 è noto e i valori sono: E1 = 106
+V, R1 = 2 , R2 = 50 , R3 = 100 , I1 = 3 A, I2 = 2 A, I3 = 1 A. Determinare il verso e il
+valore della corrente I1, se il generatore viene portato ad agire nel ramo contenente la resi-
+stenza R3, come riportato in Fig. VII.3.24.
+Risoluzione
+L’applicazione della regola dei segni e della relazione tipica del principio VII.3.3,
+consente di stabilire che il verso della corrente I1
+1 rimane lo stesso di quello della corrente
+I1, e che il suo valore è
+Fig. VII.3.23   
+Fig. VII.3.24   
+I2
+1
+I3
+1
+R1
+R1
+R2
++
+--------------------
+0,11 A;
+=
+=
+I1
+1
+I3
+1
+I2
+1
+–
+2,17 A
+=
+=
+Ii
+In
+----
+En
+Ei
+-----
+=
+R1
+R2
+I1
+
+E1
+I3
+R3
+I2
+A
+B
+R1
+R2
+R3
+A
+B
+I1
+1
+I2
+1
+I3
+1
+
+E
+I3
+I1
+1
+------
+E1
+E3
+-----
+106
+106
+--------
+1 ;
+=
+=
+=
+I3
+I1
+1
+=
+
+[PAG 550]
+VII-46
+ELETTROTECNICA GENERALE
+Lo spostamento del generatore ha provocato, nel lato 1, una variazione di corrente di 2 A.
+Il risultato può essere facilmente verificato col teorema di Millmann.
+3.11  Trasformazione stella-poligono
+La trasformazione stella-triangolo rappresenta un caso particolare di una trasforma-
+zione più generale. Si dimostra infatti che è sempre possibile sostituire a n resistori colle-
+gati a stella, uscenti da n nodi e convergenti nel punto comune O, un poligono di resistori
+avente per vertici i medesimi n nodi e un numero di lati pari a
+Il valore da assegnare alla resistenza equivalente di un lato del poligono derivato fra i
+nodi generici A e B, deriva dalla relazione
+(VII.3.4)
+dove RA e RB indicano i valori delle resistenze che nella stella collegano rispettivamente i
+nodi A e B e il punto comune O; RO è il valore di un ideale collegamento in parallelo di
+tutte le resistenze della stella convergenti nel punto comune O, cioè:
+(VII.3.5)
+È utile ricordare che in generale non è possibile la trasformazione inversa poligono-
+stella; l’eccezione è costituita dal poligono di tre lati e quindi dalla trasformazione trian-
+golo-stella.
+Il metodo facilita, in qualche caso, la risoluzione di reti elettriche complesse, permet-
+tendo l’eliminazione di un nodo.
+Esempio
+Determinare la potenza elettrica dissipata dalla rete di Fig. VII.3.25, nella quale E1 =
+30 V, E2 = 20 V, E3 = 10 V, R1 = R2 = 20 , R3 = 10 , R4 = 5 .
+La rete è costituita da 4 resistori collegati rispettivamente tra i nodi A, B, C, D e il
+punto comune O. La rete equivalente, ottenuta applicando la trasformazione stella-poli-
+gono (Fig. VII.3.26), è costituita da 6 lati come risulta dalla relazione
+Fig. VII.3.25   
+Fig. VII.3.26   
+n n
+1
+–
+
+
+2
+----------------------
+RAB
+RA
+RB
+
+RO
+---------------------
+=
+RO
+1
+1
+RA
+
+1
+RB
+
+
+1
+Rn
+
++
++
++
+------------------------------------------------------------------------------
+=
+R1
+R2
+
+E1
+R3
+A
+B
+R4
+C
+D
+O
+
+E2
+
+E3
+
+E1
+A
+B
+C
+D
+
+E2
+
+E3
+RAB
+RBC
+RCD
+RAC
+RAD
+RBD
+
+[PAG 551]
+ELETTROTECNICA GENERALE
+VII-47
+Risoluzione
+Dalle relazioni VII.3.4 e VII.3.5, si ha
+Essendo note le tensioni applicate, la potenza dissipata da ciascun resistore è
+La potenza dissipata è perciò
+P  PAB  PBC  PCD  PAD  PAC  PBD = 159,375 W.
+3.12  Reti con generatori dipendenti
+Alcuni dispositivi elettronici possono essere modellizzati mediante un circuito elet-
+trico equivalente che può contenere generatori, di tensione o di corrente, dipendenti o
+pilotati; si tratta di dispositivi la cui tensione o corrente ai morsetti dipende linearmente
+dalla tensione o dalla corrente presente in un’altra parte della rete. A tal proposito si pos-
+sono avere:
+–  generatori di tensione dipendenti da tensione (Fig. VII.3.27a): la tensione impressa
+Ei dipende dalla tensione Uj presente tra due punti della rete, secondo un coefficiente Kv
+adimensionale;
+–  generatori di tensione dipendenti da corrente (Fig. VII.3.27b): la tensione impressa
+Ei dipende dalla corrente Ij presente in un lato della rete, secondo un coefficiente h che ha
+le dimensioni di una resistenza;
+–  generatori di corrente dipendenti da tensione (Fig. VII.3.27c): la corrente impressa
+I0i dipende dalla tensione Uj presente tra due punti della rete, secondo un coefficiente 
+che ha le dimensioni di una conduttanza;
+l
+n n
+1
+–
+
+
+2
+----------------------
+4 4
+1
+–
+
+
+2
+----------------------
+6
+=
+=
+=
+RO
+1
+1
+R1
+
+1
+R2
+
+1
+R3
+
+1
+R4
+
++
++
++
+--------------------------------------------------------------------------------------
+2,5
+=
+=
+RAB
+R1
+R2
+
+RO
+--------------------
+160 ;
+=
+=
+RBC
+R2
+R3
+
+RO
+--------------------
+80 ;
+=
+=
+RCD
+R3
+R4
+
+RO
+--------------------
+20 ;
+=
+=
+RAC
+R1
+R3
+
+RO
+--------------------
+80 ;
+=
+=
+RAD
+R1
+R4
+
+RO
+--------------------
+40 ;
+=
+=
+RBD
+R2
+R4
+
+RO
+--------------------
+40 
+=
+=
+PAB
+E1
+2
+RAB
+---------
+5,625W ;
+=
+=
+PBC
+E2
+2
+RBC
+---------
+5 W ;
+=
+=
+PCD
+E3
+2
+RCD
+----------
+5 W ;
+=
+=
+PAD
+E1
+E2
+E3
++
++
+
+2
+RAD
+-------------------------------------------
+90 W ;
+=
+=
+PAC
+E1
+E2
++
+
+2
+RAC
+----------------------------
+31,25 W ;
+=
+=
+PBD
+E2
+E3
++
+
+2
+RBD
+----------------------------
+22,5 W
+=
+=
+
+[PAG 552]
+VII-48
+ELETTROTECNICA GENERALE
+–  generatori di corrente dipendenti da corrente (Fig. VII.3.27d): la corrente impressa
+I0i dipende dalla corrente Ij in un lato della rete, secondo un coefficiente KA adimensionale.
+Per la risoluzione di reti contenenti anche generatori dipendenti, si possono applicare i
+principi e teoremi illustrati, con le seguenti avvertenze:
+–  nessuna particolare cautela per la legge di Ohm, i principi di Kirchhoff, i metodi
+delle correnti di maglia e dei potenziali ai nodi, il teorema di Millmann;
+–  non è conveniente il metodo della sovrapposizione degli effetti in quanto si applica
+solo ai generatori indipendenti;
+–  per l’applicazione dei teoremi di Thevenin e di Norton, si deve tener presente che
+non è possibile separare un generatore dipendente dalla parte di rete contenente la gran-
+dezza dalla quale il generatore dipende;
+–  una parte di rete contenente solo generatori dipendenti, non avendo componenti in
+grado di fornire energia elettrica, si comporta come un bipolo passivo ed è quindi assimi-
+labile ad un resistore.
+Esempio
+Risolvere la rete di Fig. VII.3.28 dove E1 = 25 V, R1 = R3 = 50 , R2 = 100 , I02 =
+UAB,  = 0,04 A/V.
+Risoluzione
+Applicando il metodo di Maxwell e ponendo I02 = J2, si ottiene il sistema
+J1 (R1  R3)  (J1  J2) R2 = E1
+(J2  J1) R2 = J2
+risolvendo il sistema rispetto alle incognite J1 e J2 si ha
+Fig. VII.3.27  
+Fig. VII.3.28  
+a)
+b)
+c)
+d)
+
+Ei KvUj
+
+Ei hIj
+I0i Uj
+I0i KAIj
+I1
+
+E1
+A
+B
+R1
+R3
+J1
+J2
+I2
+R2
+I02 UAB
+
+[PAG 553]
+ELETTROTECNICA GENERALE
+VII-49
+100 J1  100 J1  100 J2 = 25
+100 J2  100 J1 = J20,04
+semplificando e riordinando si ottiene
+8 J1  4 J2 = 1
+4 J1  4 J2 = J2
+da cui
+J2 = 0,166 A; J1 = 0,2075 A
+e quindi
+I1 = 0,2075 A; I2 = 0,0415 A; I02 = 0,166 A; UAB = 4,15 V
+4  RETI ELETTRICHE CAPACITIVE
+4.1  Richiami di elettrostatica
+Campo elettrico nel vuoto
+–  Legge di Coulomb. Due corpi puntiformi, aventi cariche elettriche Q1 e Q2 e distanti
+fra loro r, si attraggono se le cariche hanno segno opposto o si respingono se le cariche
+hanno segno uguale, con una forza direttamente proporzionale al prodotto delle cariche e
+inversamente proporzionale al quadrato della distanza:
+(VII.4.1)
+dove:
+k0 = 8,99  109 Nm2/C2
+–  Costante dielettrica assoluta (del vuoto). La costante dielettrica assoluta è data da:
+(VII.4.2)
+–  Campo elettrico. Una regione dello spazio è sede di un campo elettrico se una carica
+di prova, posta in un punto qualsiasi di questo spazio, è soggetta ad una forza di origine
+elettrica.
+–  Vettore campo elettrico. Il campo elettrico è una grandezza vettoriale; il campo elet-
+trico in un punto P dello spazio è definito dal rapporto:
+(VII.4.3)
+e quindi da un vettore caratterizzato da:
+–  intensità: pari al rapporto E  Fq e di unità di misura [NC] o [Vm];
+–  direzione e verso: coincidenti con quelli della forza.
+–  Linee di forza o linee di campo. Sono linee orientate che permettono di rappresentare
+graficamente l’azione del campo elettrico o di un qualsiasi campo vettoriale. La forza
+esercitata dal campo su una carica esploratrice q, presa per convenzione con segno posi-
+tivo e posta in un punto P, ha sempre direzione tangente alla linea di forza in quel punto e
+verso coincidente con quello della linea di forza. È importante rilevare che per ogni punto
+dello spazio passa una sola linea di forza, salvo il caso in cui nel punto sia concentrata una
+carica elettrica e che dove le linee di forza sono più fitte, il campo elettrico è più intenso
+rispetto a dove le linee di forza sono più rarefatte. Le Fig. VII.4.1, VII.4.2, VII.4.3,
+F0
+k0
+Q1Q2
+r2
+--------------
+=
+0
+1
+4k0
+------------
+8,85
+10 12
+–
+
+C2 Nm2
+
+=
+=
+E
+F
+q---
+=
+
+[PAG 554]
+VII-50
+ELETTROTECNICA GENERALE
+VII.4.4, rappresentano le linee di forza di alcuni campi elettrici. Particolare attenzione va
+rivolta alla Fig. VII.4.5 che rappresenta un campo elettrico uniforme, caratterizzato da una
+forza F che agisce su una carica q, costante in intensità, direzione e verso; naturalmente
+anche il vettore campo elettrico E sarà costante per intensità, direzione e verso.
+–  Comportamento dei corpi conduttori. Nei fenomeni elettrostatici, le superfici dei
+corpi conduttori sono equipotenziali, per cui eventuali linee di forza che attraversano la
+superficie sono ad essa perpendicolari, non potendosi ammettere componenti tangenziali
+che determinerebbero un movimento di cariche.
+Fig. VII.4.1   Campo elettrico prodotto
+da una carica positiva.
+Fig. VII.4.2   Campo elettrico prodotto da
+due cariche uguali e opposte.
+Fig. VII.4.3   Campo elettrico prodotto
+da più cariche.
+Fig. VII.4.4   Campo elettrico prodotto da
+corpi di forma particolare.
+Fig. VII.4.5   Campo elettrico uniforme.
+P
+F
+q
+F
+q
+P
+Addensamento
+di cariche
+Q
+Q
+F
+F
+F
+F
+
+[PAG 555]
+ELETTROTECNICA GENERALE
+VII-51
+Si rileva ancora che le cariche di un corpo conduttore elettrizzato sono addensate sulla
+superficie e determinano al suo interno un campo elettrico nullo, condizione che si man-
+tiene anche in presenza di campi elettrici esterni al conduttore. Gli schermi elettrostatici,
+dei quali la gabbia di Faraday costituisce un esempio, si basano su questo fenomeno.
+–  Differenza di potenziale elettrico (tensione elettrica). La forza F, che agisce su una
+carica q determinandone lo spostamento s, compie il lavoro L. Ciò significa che il
+campo elettrico può compiere lavoro e che ogni suo punto è caratterizzato da energia
+potenziale. Si definisce differenza di potenziale elettrico (d.d.p.) fra due punti A e B del
+campo, la differenza di energia per unità di carica espressa dal rapporto:
+(VII.4.4)
+La superficie formata da tutti i punti del campo elettrico che sono allo stesso poten-
+ziale e quindi allo stesso livello energetico, è definita superficie equipotenziale. La carica
+q che si muove fra due punti di una linea equipotenziale non compie lavoro per cui il suo
+spostamento è perpendicolare alla direzione della forza; ne consegue che le superfici equi-
+potenziali sono perpendicolari, in ogni punto, alle linee di forza.
+–  Induzione elettrostatica. Il fenomeno dell’induzione elettrostatica si manifesta quando
+si avvicina ad un corpo conduttore isolato e scarico (corpo indotto), un corpo carico di
+elettricità (corpo inducente). Il fenomeno determina nel corpo conduttore indotto:
+–  un addensamento di cariche di segno opposto rispetto a quelle inducenti, sulla parte
+(faccia) più vicina al corpo carico;
+–  un addensamento di cariche di segno uguale a quelle inducenti, sulla parte (faccia)
+più lontana dal corpo carico;
+–  una zona centrale elettricamente neutra.
+Se il corpo carico viene allontanato, il fenomeno cessa e il corpo indotto ritorna alle
+condizioni iniziali.
+–  Induzione elettrica (Vettore spostamento elettrico). È un vettore parallelo in ogni
+punto al vettore campo elettrico ed è a questo legato dalla relazione
+(VII.4.5)
+con 0 = 8,86  1012 F/m, costante dielettrica del vuoto.
+In un corpo carico di elettricità, il vettore rappresenta la densità di carica superficiale
+definibile con la relazione:
+(VII.4.6)
+per cariche uniformemente distribuite sulla superficie, e con la relazione
+(VII.4.7)
+per cariche non uniformemente distribuite sulla superficie.
+–  Flusso del vettore spostamento. Considerato un insieme di linee di forza di un campo
+uniforme prodotto dal vettore spostamento D, si definisce flusso del vettore attraverso una
+superficie S, il prodotto:
+(VII.4.8)
+U
+WB
+WA
+–
+q
+-----------------------
+WB
+q
+-------
+WA
+q
+-------
+–
+UB
+UA
+–
+=
+=
+=
+D
+0E
+=
+D
+Q
+S---
+C
+m2
+
+
+
+=
+D
+dQ
+dS
+-------
+=
+D
+
+
+DScos
+=
+
+[PAG 556]
+VII-52
+ELETTROTECNICA GENERALE
+dove D è il modulo del vettore sulla superficie S e  è l’angolo originatosi fra la perpendi-
+colare alla superficie considerata e il vettore D.
+Se il campo vettoriale non è uniforme, è necessario considerare una superficie infini-
+tesima e il flusso sarà definito dalla relazione
+(VII.4.9)
+In questo caso, per determinare il flusso relativo ad una superficie più ampia, si dovrà
+sommare tutti i flussi infinitesimi che interessano l’area e quindi:
+(VII.4.10)
+–  Tubo di flusso. Si definisce tubo di flusso del vettore D il volume racchiuso
+dall’insieme delle linee di forza del campo prodotto da D che si appoggiano al contorno di
+una determinata superficie o a una linea chiusa. La proprietà fondamentale dei tubi di
+flusso consiste nel fatto che il flusso si mantiene costante attraverso qualsiasi superficie
+del tubo di flusso (Fig. VII.4.6).
+–  Teorema di Gauss. Esso afferma che il flusso totale del vettore spostamento uscente
+da qualsiasi superficie chiusa, è uguale alla somma algebrica delle cariche elettriche con-
+tenute nella superficie considerata secondo la relazione
+(VII.4.11)
+L’unità di misura del flusso del vettore induzione elettrica è il Coulomb.
+Esempio
+Determinare, mediante l’applicazione del teorema di Gauss, l’intensità del campo
+elettrico prodotto da una carica Q in un punto distante r.
+Per la risoluzione è utile considerare una superficie sferica di raggio r e centro in Q; il
+vettore D è perpendicolare in ogni punto alla superficie per cui
+Applicando il teorema di Gauss si ha:
+Fig. VII.4.6   Tubo di flusso. Il flusso è
+costante attraverso qualsiasi superficie.
+dD
+
+
+D dScos
+=
+D
+
+
+s D
+
+
+d
+
+sDdScos
+=
+=
+Linea chiusa o
+S2
+S1
+D1
+D2
+contorno di superficie
+D
+
+
+Q
+=
+D
+
+
+4r2D
+=
+Q
+4r2D
+4r20E
+=
+=
+
+[PAG 557]
+ELETTROTECNICA GENERALE
+VII-53
+da cui:
+Campo elettrico nei dielettrici
+–  Polarizzazione. L’azione di un campo elettrico su un materiale isolante determina il
+fenomeno della polarizzazione dielettrica. Esso consiste nella deformazione degli atomi
+del materiale che si comportano perciò come un dipolo elettrico, cioè come un sistema
+rappresentabile mediante due cariche elettriche, uguali ma di segno opposto, poste fra loro
+ad una piccolissima distanza (Fig. VII.4.7). Nel caso dei materiali costituiti da molecole
+che presentano già un carattere polare (sono dei dipoli), alla polarizzazione per deforma-
+zione appena illustrata, si aggiunge la polarizzazione per orientamento dovuta al fatto che
+le molecole tendono ad orientarsi nella direzione del campo elettrico. Comunque, il feno-
+meno cessa quando termina l’azione del campo elettrico.
+–  Vettore campo e spostamento elettrico. Un materiale isolante omogeneo, sottoposto
+all’azione di un campo elettrico, si polarizza uniformemente; le cariche risultano presenti
+sulla superficie mentre sono apparentemente assenti all’interno del corpo. Il risultato è
+che all’interno di un materiale isolante, il campo elettrico e il vettore spostamento non si
+annullano, come invece accade nei materiali conduttori. La relazione
+(VII.4.12)
+rappresenta il rapporto di proporzionalità fra i vettori campo e spostamento, con 
+costante dielettrica del materiale.
+Nel caso di materiali isolanti non omogenei (Fig. VII.4.8), le linee di forza del campo
+elettrico e quindi del vettore spostamento, cambiano direzione in corrispondenza delle
+superfici di disomogeneità secondo la relazione
+(VII.4.13)
+Fig. VII.4.7   Deformazione
+degli atomi nei materiali iso-
+lanti.
+Fig. VII.4.8   Variazione di dire-
+zione del campo elettrico.
+E
+Q
+4r20
+-----------------
+=
+E
+E
+D
+2
+1
+D
+E
+=
+tg1
+tg2
+-----------
+1
+2
+----
+=
+
+[PAG 558]
+VII-54
+ELETTROTECNICA GENERALE
+–  Costante dielettrica. Costante dielettrica del materiale e costante dielettrica del vuoto
+sono legate dalla relazione
+(VII.4.14)
+dove r, che rappresenta la costante dielettrica relativa, è un numero adimensionale.
+4.2  Condensatore
+Il condensatore è un dispositivo costituito nella sua forma più semplice da due piastre
+conduttrici chiamate armature, provviste di terminali per il collegamento al circuito
+esterno e separate fra loro da uno strato di materiale isolante; il condensatore ora descritto
+è denominato condensatore piano. Un condensatore è scarico quando le armature sono
+elettricamente neutre, cioè quando possiedono in ugual misura cariche elettriche positive
+e negative mentre è carico quando le armature non sono elettricamente neutre, cioè
+quando un’armatura possiede cariche positive in eccesso e l’altra cariche negative in
+eccesso.
+La Fig. VII.4.9 riporta un circuito per la carica e la scarica del condensatore. Durante
+l’operazione di carica, a interruttore S chiuso e selettore nella posizione 1, si ha una circo-
+lazione di elettroni all’esterno del condensatore attraverso i suoi terminali e il generatore;
+nessun elettrone attraversa il dielettrico a causa della sua natura di isolante. Il movimento
+di carica cessa quando la tensione Uc sul condensatore eguaglia la f.e.m. del generatore. Il
+risultato è che un’armatura, quella che ha perso elettroni, si carica positivamente, mentre
+l’altra, che ha acquistato elettroni, si carica negativamente.
+Se il condensatore viene scollegato dall’alimentazione, con interruttore aperto e selet-
+tore nella posizione 0, la carica accumulata sulle armature rimane immagazzinata nello
+stesso condensatore che, teoricamente, dovrebbe mantenere questo stato nel tempo. In
+realtà, poiché il materiale isolante non è perfetto, ha luogo un processo di scarica lenta che
+termina quando la d.d.p. fra le armature si è annullata.
+Per accelerare il processo di scarica, con interruttore aperto e selettore nella posizione
+2, è necessario collegare fra loro le armature mediante una resistenza; si genera in tal
+modo una corrente di scarica che si annulla quando le armature sono ritornate neutre.
+L’energia che il condensatore ha accumulato nel processo di carica è dissipata per effetto
+Joule durante la scarica.
+L’intensità E del campo elettrico, la tensione Uc fra le armature e la distanza d fra le
+stesse, sono legate dalla relazione:
+(VII.4.15)
+Fig. VII.4.9   Circuito per la carica e
+la scarica di un condensatore.
+
+0r
+=
+
+E1
+R1
+R2
+Ri
+C
+S
+0
+1
+2
+E
+U
+d---
+=
+
+[PAG 559]
+ELETTROTECNICA GENERALE
+VII-55
+L’unità di misura del campo elettrico è Vm anche se nella pratica si ricorre a valori
+superiori: kVmm o kVcm.
+Il massimo valore del rapporto Ud applicabile ad un isolante senza che questo si dan-
+neggi, rappresenta la rigidità dielettrica dell’isolante.
+4.3  Capacità di un condensatore piano con dielettrico omogeneo
+La carica elettrica accumulata sulle armature di un condensatore e la tensione appli-
+cata fra esse, sono legate dalla relazione:
+(VII.4.16)
+dove la costante C, misurata in Farad, rappresenta la capacità del condensatore.
+Essendo C una grandezza di valore costante, l’espressione VII.4.16 che costituisce
+l’equazione caratteristica del bipolo condensatore è rappresentabile mediante una retta
+passante per l’origine degli assi (Fig. VII.4.10).
+Dalla relazione VII.4.16, valida per qualsiasi condensatore, si ricava la capacità di un
+condensatore piano con dielettrico omogeneo che, con le opportune sostituzioni, risulta:
+(VII.4.17)
+Un condensatore piano avente per dielettrico un materiale omogeneo, presenta una
+capacità r volte maggiore di quella che lo stesso condensatore presenterebbe se il dielet-
+trico fosse l’aria.
+4.4  Collegamento dei condensatori
+Condensatori in serie
+Due o più condensatori si dicono collegati in serie quando durante il processo di
+carica si avrà la circolazione della stessa corrente nei conduttori di collegamento fra un
+condensatore e l’altro e nel lato del generatore.
+Al termine del processo (Fig. VII.4.11a), ciascun condensatore sarà caricato con la
+stessa carica Q e tra le loro armature risulterà applicata una tensione inversamente propor-
+zionale alle rispettive capacità; naturalmente la somma delle tensioni parziali sarà uguale
+alla tensione totale. Gli n condensatori collegati in serie di Fig. VII.4.11a sono equivalenti
+ad un solo condensatore di capacità Ceq (Fig. VII.4.11b), avente la stessa carica Q e ten-
+sione pari a quella totale. Quanto affermato permette di ricavare la relazione
+(VII.4.18)
+Fig. VII.4.10   Caratteristica carica-
+tensione di un condensatore.
+Q
+CU
+=
+Q1
+Q
+0
+U
+Q2
+C1
+C2
+C
+Q
+U---
+DS
+Ed
+-------
+ES
+Ed
+---------
+S
+d--
+0r
+S
+d--
+=
+=
+=
+=
+=
+Q
+Ceq
+--------
+Q
+C1
+------
+Q
+C2
+------
+
+Q
+Cn
+------
++
++
++
+=
+
+[PAG 560]
+VII-56
+ELETTROTECNICA GENERALE
+che opportunamente semplificata e sviluppata consente di determinare, note le capacità
+dei vari condensatori collegati in serie, la capacità del condensatore equivalente, che
+risulta:
+(VII.4.19)
+Fig. VII.4.11   Collegamento in serie dei condensatori. Circuito equivalente.
+Nel collegamento in serie valgono le seguenti regole:
+–  tutti i condensatori hanno carica elettrica uguale;
+–  le tensioni sui condensatori sono inversamente proporzionali alle rispettive capa-
+cità, per cui il condensatore di capacità minore assume la massima tensione e viceversa.
+Per n condensatori di uguale capacità si ha:
+(VII.4.20)
+mentre per due condensatori si ha
+Un’applicazione particolare del collegamento in serie dei condensatori è rappresentata
+dal partitore di tensione capacitivo (Fig. VII.4.12) che consente di calcolare le tensioni
+parziali sui singoli condensatori, in funzione della tensione totale, senza dover ricorrere al
+calcolo della carica. La regola esprimibile con la relazione:
+Fig. VII.4.12   Regola del partitore di tensione.
+Ceq
+1
+1
+C1
+------
+1
+C2
+------
+
+1
+Cn
+------
++
++
++
+----------------------------------------------------
+=
+C1
+C2
+Cn
+Ceq
+U1
+U2
+Un
+Utot = E
+R
+
+E
+
+E
+R
+Utot = E
+I = 0
+a)
+b)
+
+
+
+
+
+
+
+
+Ceq
+C
+n---
+=
+Ceq
+C1C2
+C1
+C2
++
+---------------------
+=
+C1
+C2
+Cn
+U1
+U2
+Un
+Ut
+
+[PAG 561]
+ELETTROTECNICA GENERALE
+VII-57
+(VII.4.21)
+afferma che nel collegamento in serie la tensione su ogni condensatore è pari alla tensione
+totale per il rapporto fra la capacità equivalente e quella Ci del condensatore considerato.
+Condensatori in parallelo
+Due o più condensatori si dicono collegati in parallelo quando durante il processo di
+carica si avrà la circolazione di correnti diverse nel circuito esterno di ogni condensatore e
+il generatore fornirà la corrente totale, somma delle varie correnti parziali.
+Fig. VII.4.13   Condensatori in parallelo e circuito equivalente.
+Al termine del processo (Fig. VII.4.13a), ciascun condensatore presenta ai suoi capi
+una tensione pari alla f.e.m. del generatore, mentre le cariche saranno diverse in quanto
+causate da diverse correnti.
+Gli n condensatori collegati in parallelo di Fig. VII.4.13a, sono equivalenti ad un solo
+condensatore di capacità Ceq (Fig. VII.4.13b), avente carica Q uguale alla somma delle
+cariche parziali e tensione pari a quella del generatore.
+In tal modo, è possibile scrivere la relazione:
+da cui si ricava la capacità equivalente di n condensatori collegati in parallelo
+(VII.4.22)
+Nel collegamento in parallelo valgono le seguenti regole:
+–  tutti i condensatori hanno la stessa tensione;
+–  le cariche sui condensatori sono direttamente proporzionali alle rispettive capacità
+per cui sul condensatore di capacità maggiore si accumulerà la maggior carica elettrica e
+viceversa.
+Se gli n condensatori sono di uguale capacità si ha:
+(VII.4.23)
+Un’applicazione particolare del collegamento in parallelo dei condensatori, è rappre-
+sentata dal partitore di carica (Fig. VII.4.14) che consente di calcolare le cariche parziali
+Ui
+Ut
+Ceq
+Ci
+--------
+=
+C1
+C2
+Cn
+Ceq
+Q1
+Q2
+Qn
+U
+R
+
+E
+
+E
+R
+U
+I = 0
+a)
+b)
+
+
+
+
+
+
+
+
+Qt
+C1
+C2
+
+Cn
++
++
++
+
+U
+CeqU
+=
+Ceq
+C1
+C2
+
+Cn
++
++
++
+=
+Ceq
+nC
+=
+
+[PAG 562]
+VII-58
+ELETTROTECNICA GENERALE
+sui singoli condensatori, in funzione della carica totale, senza dover ricorrere al calcolo
+della tensione. La regola esprimibile con la relazione
+(VII.4.24)
+afferma che nel collegamento in parallelo, la carica su ogni condensatore è pari alla carica
+totale per il rapporto fra la capacità Ci del condensatore considerato e quella totale.
+Condensatori in serie-parallelo
+Per calcolare la capacità equivalente, le cariche e le tensioni parziali nel caso di reti
+capacitive dove sono presenti collegamenti in serie e parallelo, è sufficiente applicare le
+regole precedentemente illustrate e procedere come per le reti con resistori, iniziando a
+risolvere la rete partendo dai lati più lontani dal generatore che impone la tensione sui
+condensatori.
+Fig. VII.4.15   Condensatori a stella (a); condensatori a triangolo (b).
+Collegamento a stella e triangolo
+Le formule di conversione da un collegamento all’altro (Fig. VII.4.15a e b) ricalcano
+quelle valide per i resistori, per cui:
+–  trasformazione stella-triangolo:
+(VII.4.25)
+Fig. VII.4.14   Regola del partitore di
+carica.
+Qi
+Qt
+Ci
+Ceq
+--------
+=
+Q1
+Q2
+Qn
+C1
+C2
+Cn
+U
+
+
+
+
+
+
+
+
+Qi
+Ci
+
+
+1
+2
+3
+1
+2
+3
+C1
+C2
+C3
+C12
+C23
+C31
+b)
+a)
+C12
+C1C2
+C1
+C2
+C3
++
++
+------------------------------------
+=
+C23
+C2C3
+C1
+C2
+C3
++
++
+------------------------------------
+=
+C31
+C3C1
+C1
+C2
+C3
++
++
+------------------------------------
+=
+
+[PAG 563]
+ELETTROTECNICA GENERALE
+VII-59
+–  trasformazione triangolo-stella:
+(VII.4.26)
+Nel caso di condensatori di uguale capacità, indicando con Cy la capacità dei conden-
+satori a stella e con CD quella dei condensatori a triangolo, si ha:
+(VII.4.27)
+(VII.4.28)
+4.5  Capacità di un condensatore piano con dielettrico non omogeneo
+Un condensatore piano fra le cui armature sono presenti diversi tipi di dielettrici, può
+essere considerato come una successione di condensatori collegati in serie; naturalmente i
+condensatori avranno la stessa superficie S e la distanza fra le armature sarà quella dello
+spessore del singolo materiale dielettrico. La semplificazione è possibile perché la super-
+ficie di separazione fra i materiali isolanti è equipotenziale. Le Fig. VII.4.16a e VII.4.16b
+riportano il caso semplice di condensatore con due dielettrici; per calcolare la capacità si
+applicano le relazioni tipiche del collegamento serie nel modo seguente:
+Fig. VII.4.16   
+Può essere importante valutare il grado di sollecitazione elettrica cui sono sottoposti i
+due materiali isolanti. A tal proposito si ricorda che l’induzione elettrica è costante, per
+cui è valida la relazione:
+C1
+C12C23
+C23C31
+C31C12
++
++
+C23
+------------------------------------------------------------------------
+=
+C2
+C12C23
+C23C31
+C31C12
++
++
+C31
+------------------------------------------------------------------------
+=
+C3
+C12C23
+C23C31
+C31C12
++
++
+C12
+------------------------------------------------------------------------
+=
+CD
+Cy
+3-----
+=
+Cy
+3 CD
+=
+Ceq
+C1C2
+C1
+C2
++
+---------------------
+=
+dove:
+C1
+1
+S
+d1
+-----
+=
+C2
+2
+S
+d2
+-----
+=
+E1
+U
+
+E2
+U1 U2
+E
+R
+Superficie equipotenziale
+U1
+U2
+d1
+d2
+a)
+b)
+
+[PAG 564]
+VII-60
+ELETTROTECNICA GENERALE
+(VII.4.29)
+Si evidenzia in tal modo che, nel passaggio da un mezzo isolante all’altro, il campo
+elettrico subisce una variazione di intensità, in ragione inversa delle relative costanti die-
+lettriche. Precisamente, il campo elettrico assume il valore maggiore nell’isolante che pre-
+senta la costante dielettrica più piccola e viceversa mentre la differenza di potenziale
+presente sulle armature si distribuisce sui due dielettrici nella seguente misura:
+U1 = E1d1; U2 = E2d2
+4.6  Capacità di condensatori sferici e di altro tipo
+Si riportano le formule che permettono il calcolo delle capacità di alcuni tipi di con-
+densatori o di sistemi elettrici abbastanza diffusi:
+–  capacità di una sfera di raggio r, lontana da altri corpi:
+–  capacità fra due sfere concentriche, di raggio rispettivamente r1 e r2 (r2 > r1):
+–  capacità fra due cilindri coassiali, lunghi l, di raggio rispettivamente r1 e r2 (r2 >
+r1):
+–  capacità fra due conduttori cilindrici, lunghi l, entrambi di raggio r, paralleli e
+distanti d (lontani da altri corpi e tali che r « d):
+–  capacità di un conduttore cilindrico di raggio r, lunghezza l, parallelo ad un piano
+conduttore di superficie infinita dalla quale dista h, con r « h:
+4.7  Campi elettrici nei conduttori percorsi da corrente
+Consideriamo, per semplicità di trattazione, un conduttore cilindrico di sezione S
+costante, percorso da corrente continua di intensità I. Nel conduttore si rileva un campo
+elettrico perché al suo interno è attivo un movimento ordinato di cariche nella direzione
+dell’asse, sottoposte a forze agenti nella direzione del movimento.
+Fig. VII.4.17   Campi elettrici nei conduttori
+percorsi da corrente.
+E1
+E2
+-----
+2
+1
+----
+=
+C
+40r
+=
+C
+40
+r1r2
+r2
+r1
+–
+-----------------
+=
+C
+20l
+2,3log r2
+r1
+
+-------------------------------
+=
+C
+0l
+2,3log d
+r
+
+---------------------------
+=
+C
+20l
+2,3log 2h
+r
+
+------------------------------
+=
+E
+I
+S
+
+UAB
+A
+B
+l
+
+[PAG 565]
+ELETTROTECNICA GENERALE
+VII-61
+Con riferimento alla Fig. VII.4.17, affinché tra due punti di un conduttore circoli cor-
+rente, è necessario applicare una differenza di potenziale. In tal modo si potrà scrivere per
+le sezioni A e B:
+Ora, dividendo entrambi i membri per l
+si otterrà:
+(VII.4.30)
+dove J è la densità di corrente.
+L’uguaglianza esprime la relazione fra campo elettrico e densità di corrente in ogni
+punto di un conduttore percorso uniformemente da corrente. Le considerazioni fatte e le
+relazioni ricavate nel caso del conduttore cilindrico valgono per qualsiasi corpo condut-
+tore anche se percorso da corrente non uniforme, avvertendo peraltro che, in questo caso,
+la densità di corrente nel punto considerato deve essere espressa con la relazione dJdS.
+4.8  Energia immagazzinata da un condensatore carico
+Durante il processo di carica, un condensatore immagazzina sotto forma di energia
+elettrostatica l’energia elettrica fornitagli da un generatore esterno.
+Per calcolare la quantità di energia accumulata in un condensatore di capacità C, si
+consideri il grafico di Fig. VII.4.18, dove U e Q sono i valori finali della tensione della
+carica elettrica. Durante il processo di carica, ad ogni incremento U della tensione corri-
+sponde un incremento medio qm della carica e quindi un accumulo di energia nel conden-
+satore pari a:
+W = qmU
+corrispondente all’area del rettangolo evidenziato. Alla fine della carica, la somma di tutti
+gli incrementi W fornisce l’energia totale immagazzinata, che corrisponde all’area del
+triangolo rettangolo avente per cateti la tensione U e la carica Q. Si può perciò scrivere
+(VII.4.31)
+Fig. VII.4.18   Energia immagazzinata in
+un condensatore.
+UAB
+l
+S-- I
+=
+UAB
+l
+----------
+I
+S--
+=
+E
+J
+=
+q
+Q
+v
+U
+0
+q1
+q2
+U
+W
+W
+W
+QU
+2
+--------
+=
+
+[PAG 566]
+VII-62
+ELETTROTECNICA GENERALE
+oppure, con le opportune sostituzioni:
+(VII.4.32)
+(VII.4.33)
+o ancora
+(VII.4.34)
+4.9  Forze attrattive in un condensatore carico
+Le armature di un condensatore a facce piane e parallele di superficie S, spessore d,
+isolato con un materiale omogeneo di costante dielettrica , con tensione fra le armature U
+e carico con una carica Q, sono soggette a forze di attrazione. Le forze sono determinabili
+in funzione dei parametri elettrici e geometrici del condensatore sulla base delle seguenti
+relazioni:
+–  condensatore isolato da qualsiasi sorgente di energia:
+(VII.4.35)
+oppure
+(VII.4.36)
+o ancora
+(VII.4.37)
+–  condensatore permanentemente collegato a una sorgente di energia elettrica in
+grado di mantenere costante fra le armature:
+(VII.4.38)
+4.10  Transitorio di carica e scarica di un condensatore
+Transitorio di carica a tensione costante
+Con riferimento al circuito di Fig. VII.4.9, alla chiusura dell’interruttore S e con il
+selettore nella posizione 1 corrisponde l’inizio del processo di carica e una corrente i flui-
+sce nel circuito esterno. Sul condensatore inizia ad accumularsi una carica q e fra le arma-
+ture comincia a manifestarsi una tensione uc che agisce nel circuito in opposizione alla
+f.e.m. E del generatore e quindi alla corrente di carica.
+Quando la tensione uc sulle armature del condensatore è uguale a E ha termine il pro-
+cesso di carica, la corrente si annulla e il condensatore ha accumulato una carica Q = CE.
+Un attento esame del processo di carica (Fig. VII.4.19) permette di constatare che la
+tensione sul condensatore:
+–  ha valore iniziale nullo uc = 0,
+–  ha andamento crescente nel tempo (la tensione aumenta col procedere della carica),
+W
+1
+2-- CU2
+=
+W
+1
+2-- Q2
+C
+------
+=
+W
+1
+2-- DESd
+1
+2-- DE volume del dielettrico
+=
+=
+F
+1
+2-- SE2
+=
+F
+1
+2-- Q2
+S
+------
+=
+F
+1
+2-- S
+d2
+----- U2
+=
+F
+1
+2-- S
+d2
+----- U2
+=
+
+[PAG 567]
+ELETTROTECNICA GENERALE
+VII-63
+–  subisce incrementi (al procedere della carica), sempre più piccoli,
+–  tende al valore finale E.
+La legge matematica che soddisfa le condizioni indicate è l’equazione differenziale:
+(VII.4.39)
+Risolta rispetto a uc, l’equazione determina la funzione:
+(VII.4.40)
+dove Uf = E è la tensione finale. La funzione è graficamente rappresentata dalla curva
+esponenziale crescente di Fig. VII.4.19, che è perciò la curva di carica del condensatore
+collegato ad un generatore di tensione costante.
+La grandezza  rappresenta la costante di tempo del sistema; il suo valore è pari a
+(VII.4.41)
+e la sua unità di misura è il secondo.
+In teoria, il processo di carica di un condensatore, come tutti i processi che evolvono in
+maniera esponenziale, dura un tempo infinito, dato che la tensione uc si avvicina sempre più
+al valore finale senza però mai raggiungerlo. In pratica, si considera concluso il processo
+di carica quando la tensione effettiva si discosta da quella finale di uno scarto percentuale
+pari all’1%; il tempo corrispondente è detto tempo di assestamento e corrisponde a:
+(VII.4.42)
+Fig. VII.4.19   Carica del condensa-
+tore: andamento esponenziale della
+tensione e della corrente.
+Fig. VII.4.20   Andamento della
+tensione in un condensatore inizial-
+mente carico.
+t
+Uc; I
+Uf
+I0
+0
+Uc
+Uf
+U0
+0
+t
+E
+–
+uc
+RC
+duc
+dt
+--------
++
++
+0
+=
+uc
+Uf 1
+e t
+
+
+–
+–
+
+
+=
+
+R1C
+=
+Ta
+4,6 
+=
+
+[PAG 568]
+VII-64
+ELETTROTECNICA GENERALE
+giustificando l’affermazione qualitativa che considera concluso il fenomeno dopo un
+tempo pari a 4 - 5 volte la costante di tempo.
+Si può perciò concludere che la durata del transitorio di carica è direttamente pro-
+porzionale alla costante di tempo del circuito di carica, aumentando con il suo valore.
+La corrente nel circuito esterno
+–  assume il valore massimo nell’istante iniziale del processo di carica essendo uc = 0;
+–  diminuisce all’aumentare della tensione fra le armature del condensatore;
+–  tende al valore zero al termine del processo di carica.
+La funzione che descrive l’andamento nel tempo della corrente è di tipo esponenziale
+decrescente ed è data da:
+(VII.4.43)
+il cui grafico è rappresentato in Fig. VII.4.19.
+Nel caso in cui il condensatore di Fig. VII.4.9 sia inizialmente carico alla tensione U0,
+la legge di variazione della tensione è data da:
+(VII.4.44)
+l’espressione rappresentata nel grafico di Fig. VII.4.20 è di validità generale ogni volta
+che la tensione varia esponenzialmente da un valore iniziale a uno finale.
+Per la corrente, la legge di variazione vale:
+(VII.4.45)
+Transitorio di scarica
+Con riferimento al circuito di Fig. VII.4.9 e con il condensatore carico, allo sposta-
+mento del selettore nella posizione 2 corrisponde l’inizio del processo di scarica, caratte-
+rizzato da una corrente i, diretta in senso opposto a quella che si aveva durante la carica.
+Il condensatore si comporta perciò come un “generatore temporaneo”, cioè un genera-
+tore che non essendo in grado di produrre continuamente energia, fornirà al circuito
+esterno solo l’energia accumulata. Il processo di scarica si esaurirà perciò nel tempo con il
+conseguente annullamento della corrente.
+Per il processo di scarica si possono effettuare le seguenti osservazioni:
+–  la tensione sul condensatore dal valore iniziale U0 tende al valore finale zero con
+legge esponenziale decrescente;
+–  la corrente dal valore iniziale I0 = U0R2 tende al valore finale zero con legge espo-
+nenziale decrescente;
+–  il verso della corrente è opposto a quello della corrente di carica;
+–  la costante di tempo è ancora data da  = R2C, dove R2 è la resistenza del circuito di
+scarica;
+–  la durata pratica del processo è ancora 4,6 .
+Le espressioni generali VII.4.44 e VII.4.45, considerando nulli i valori finali, permet-
+tono di ottenere le funzioni:
+(VII.4.46)
+e
+(VII.4.47)
+i
+I0 e t
+
+
+–
+=
+uc
+Uf
+U0
+Uf
+–
+
+
++
+e t
+
+
+–
+=
+i
+If
+I0
+If
+–
+
+
++
+e t
+
+
+–
+=
+uc
+U0 e t
+
+
+–
+=
+i
+I0 e t
+
+
+–
+=
+
+[PAG 569]
+ELETTROTECNICA GENERALE
+VII-65
+Quando un condensatore carico con tensione U0 è collegato ad un generatore di ten-
+sione avente f.e.m. E  U0 (Fig. VII.4.21), si ha una scarica incompleta.
+Il fenomeno è caratterizzato da una circolazione di corrente i nel verso indicato men-
+tre la corrente dal valore iniziale:
+(VII.4.48)
+tende anche in questo caso esponenzialmente al valore finale zero.
+Fig. VII.4.21   Scarica parziale di un con-
+densatore su un bipolo attivo.
+Fig. VII.4.22   Scarica di un condensatore: a) andamento esponenziale della tensione;
+b) parziale su un bipolo attivo.
+Fig. VII.4.23   Scarica di un condensatore: a) andamento esponenziale della corrente,
+considerata negativa; b) parziale su un bipolo attivo.
+E
+
+I
+C
+
+
+UC
+R
+I0
+U0
+E
+–
+R
+------------------
+=
+Uc
+U0
+0
+t
+a)
+Uc
+U0
+0
+t
+UF  E
+b)
+0
+t
+I0 
+a)
+i
+U0
+R
+0
+t
+b)
+i
+I0 U0E
+R
+
+[PAG 570]
+VII-66
+ELETTROTECNICA GENERALE
+Le Figg. VII.4.22a e b rappresentano l’andamento della tensione rispettivamente nel
+caso di scarica completa e parziale; le Figg. VII.4.23a e b, l’andamento della corrente sia
+nel caso di scarica completa che parziale, considerata con segno negativo quando si
+prende come riferimento il segno della corrente di carica.
+In conclusione, si ricorda che un condensatore può essere caricato e scaricato a cor-
+rente costante perché questo procedimento è utilizzato nella costruzione di generatori di
+segnali elettrici ad andamento triangolare (denti di sega).
+4.11  Risoluzione di reti capacitive in regime costante
+Lo studio di una rete capacitiva in regime costante implica le seguenti considerazioni:
+–  ogni condensatore rimane carico, con un valore di tensione dipendente dalla riparti-
+zione delle tensioni fra i vari bipoli attivi presenti nella rete;
+–  le correnti nei lati contenenti condensatori sono nulle;
+–  i generatori funzionano a vuoto, a meno che non vi siano circuiti chiusi oltre quelli
+costituiti dai condensatori;
+–  sulle armature di un condensatore di capacità C si accumula una carica elettrica
+positiva sull'armatura a potenziale elettrico maggiore e negativa sull’altra;
+–  esiste una corrispondenza fra corrente e carica e fra conduttanza e capacità.
+Risolvere una rete capacitiva a regime costante significa di solito determinare le cari-
+che di ogni lato della rete e una volta note le cariche, le tensioni. Se si tiene conto delle
+analogie precedentemente riportate, si possono sostanzialmente applicare per la risolu-
+zione delle reti capacitive, i metodi di risoluzione delle reti resistive.
+Esempio 1
+Calcolare le cariche e le tensioni di ogni condensatore della rete di Fig. VII.4.24a,
+dove E1 = 300 V; C1 = C2 = 10 pF; C3 = 5 pF; C4 = 8,1 pF; C5 = 15 pF.
+Fig. VII.4.24  
+E1
+
+C4
+
+
+C5
+
+
+C1
+
+
+C2
+
+
+C3
+
+
+A
+C
+B
+D
+a)
+E1
+
+A
+C
+B
+C1
+C4
+
+
+
+
+C23
+C35
+
+
+
+
+C25
+
+
+b)
+B
+CAB
+CBC
+
+
+
+
+A
+C
+C25
+
+
+E1
+
+c)
+
+[PAG 571]
+ELETTROTECNICA GENERALE
+VII-67
+Risoluzione
+Si trasforma la stella formata dai condensatori C2, C3, C5 nel triangolo equivalente
+C23, C35, C25, ottenendo lo schema di Fig. VII.4.24b, dove:
+Semplificando ulteriormente, si ottiene lo schema di Fig. VII.4.24c, dove:
+CAB  C1  C23  11,67 pF; CBC  C4  C35  10,6 pF
+e quindi la capacità equivalente
+e la carica totale
+Qtot  Ceq UAC  10,6  10 12 300  3,18 nC.
+Per il calcolo delle cariche e delle tensioni parziali, conviene muovere dallo schema di
+Fig. VII.4.24c, dal quale si ricava:
+Dallo schema di Fig. VII.4.24b, si ricava altresì:
+In tal modo si risolve facilmente lo schema di Fig. VII.4.24a applicando i principi di
+Kirchhoff per le reti capacitive al nodo B; ovvero:
+il risultato positivo di U3 significa che la polarità scelta inizialmente è esatta.
+(Q2 = Q5 per le approsimazioni di calcolo introdotte).
+C23
+C2
+C3
+
+C2
+C3
+C5
++
++
+------------------------------------
+1,67 pF;
+=
+=
+C35
+C3
+C5
+
+C2
+C3
+C5
++
++
+------------------------------------
+2,5 pF;
+=
+=
+C25
+C2
+C5
+
+C2
+C3
+C5
++
++
+------------------------------------
+5 pF
+=
+=
+Ceq
+CAB
+CBC
+
+CAB
+CBC
++
+-----------------------------
+C25
++
+10,6 pF;
+=
+=
+Q25
+C25UAC
+1,5 nC
+=
+=
+QAB
+QBC
+Qtot
+Q25
+–
+1,68 nC
+=
+=
+=
+UAB
+QAB
+CAB
+----------
+144 V
+=
+=
+UBC
+UAC
+UAB
+–
+156 V
+=
+=
+Q1
+C1U1
+C1UAB
+1,44 nC
+=
+=
+=
+Q4
+C4U4
+C4UBC
+1,26 nC
+=
+=
+=
+Q1
+Q3
+Q4
++
++
+0
+=
+–
+Q3
+Q1
+Q4
+–
+0,18 nC
+=
+=
+UBD
+U3
+Q3
+C3
+------
+36 V
+=
+=
+=
+U2
+UAD
+U1
+U3
++
+180 V
+=
+=
+=
+Q2
+C2U2
+1,8 nC
+=
+=
+UDC
+U2
+U5
++
+=
+U5
+UDC
+U2
+–
+120 V
+=
+=
+Q5
+C5U5
+1,8 nC
+=
+=
+
+[PAG 572]
+VII-68
+ELETTROTECNICA GENERALE
+Esempio 2
+In un condensatore piano con le armature distanti 6 mm (d), carico alla tensione di 300
+V (Fig. VII.4.25), determinare:
+–  la differenza di potenziale fra l’armatura positiva e un punto P distante da essa
+1,5 mm ();
+–  il potenziale del punto P, quando sono alternativamente collegate a massa l’arma-
+tura positiva e negativa.
+Fig. VII.4.25   
+Risoluzione:
+Il campo elettrico all’interno del condensatore indicato è uniforme e costante, per cui:
+quando l’armatura positiva è a massa, il potenziale del punto P è negativo (rispetto a
+massa) e vale 75 V; quando l’armatura negativa è a massa, il potenziale del punto P è
+positivo (rispetto a massa) e vale + 225 V.
+Esempio 3
+Lo spazio compreso fra le armature di un condensatore piano è occupato da quattro die-
+lettrici diversi per qualità e spessore (Fig. VII.4.26a). Determinare la capacità del conden-
+satore e il valore del campo elettrico negli isolanti, quando U = 1500 V; S = 200 cm2; d =
+7 mm; d1 = 2 mm; d2 = 1,5 mm; d3 = 3 mm; d4 = 0,5 mm; r1 = 3; r2 = 2; r3 = 1,5; r4 = 4.
+Risoluzione
+Considerando il condensatore costituito da quattro condensatori in serie (Fig.
+VII.4.26b), si ha:
+Fig. VII.4.26  
+300 V
+P
+300 V
+P
+O
+O
+U
+E
+U
+d--- 
+75 V
+=
+=
+=
+1
+2
+3
+4
+1 2
+3 4
+a)
+d1
+d2
+d3
+d4
+b)
+
+[PAG 573]
+ELETTROTECNICA GENERALE
+VII-69
+Poiché lo spazio compreso fra le armature è un tubo di flusso, si può scrivere:
+per cui:
+Si possono verificare i risultati con la relazione:
+Esempio 4
+Il circuito di Fig. VII.4.27, alimentato alla tensione di 30 kV, è composto da un con-
+densatore piano (C1) isolato in olio minerale con r1 = 2,5 e rigidità dielettrica Er1 = 15 kV/
+mm e da un condensatore piano (C2) isolato in aria con rigidità dielettrica Er2 = 3 kV/mm.
+Si determini il rapporto fra le superfici delle armature dei condensatori e la distanza
+fra queste, in modo che il campo elettrico in ogni condensatore non superi 1/6 delle rispet-
+tive rigidità dielettriche e la tensione ai capi del condensatore in aria sia pari a 1/5 della
+totale.
+Risoluzione
+Dai dati del problema si ha
+Fig. VII.4.27  
+C
+1
+1
+C1
+------
+1
+C2
+------
+1
+C3
+------
+1
+C4
+------
++
++
++
+-----------------------------------------------------
+S0
+d1
+r1
+-------
+d2
+r2
+-------
+d3
+r3
+-------
+d4
+r4
+-------
++
++
++
+---------------------------------------------------------
+50,2
+=
+=
+=
+pF
+Q
+CU
+75,3
+10 9
+–
+
+C
+=
+=
+D1
+D2
+D3
+D4
+Q
+S---
+=
+=
+=
+=
+E1
+D1
+1
+------
+Q
+S1
+--------
+1,416
+105
+
+V/m
+=
+=
+=
+E2
+D2
+2
+------
+Q
+S2
+--------
+2,125
+105
+
+V/m
+=
+=
+=
+E3
+D3
+3
+------
+Q
+S3
+--------
+2,833
+105
+
+V/m
+=
+=
+=
+E4
+D4
+4
+------
+Q
+S4
+--------
+1,0625
+105
+
+V/m
+=
+=
+=
+E1d1
+E2d2
+E3d3
+E4d4
++
++
++
+U
+=
+C1
+C2
+
+
+U
+U2 15U
+U1
+24kV
+=
+U2
+6 kV
+=
