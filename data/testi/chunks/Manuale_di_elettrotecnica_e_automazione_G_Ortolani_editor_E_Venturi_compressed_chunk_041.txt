@@ -1,0 +1,3252 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 41/116 ===
+Chars: 44,978 | Offset: 1,766,019
+
+
+
+[PAG 908]
+X-58
+  IMPIANTI ELETTRICI 
+4.11  Portata dei cavi per bassa tensione posati in aria
+La portata di corrente dei cavi elettrici isolati con materiale elastomerico o termopla-
+stico per tensioni nominali non superiori a 1000 V in c.a. e a 1500 V in c.c., funzionanti in
+regime permanente e posati in aria sono stabilite dalla norma CEI-UNEL 35024/1.
+La portata Iz (A) di un cavo, per una determinata condizione di installazione, si ricava
+con la formula seguente:
+(X.4.10)
+dove:
+–  I0 è la portata alla temperatura ambiente convenzionale di 30 °C, relativa al singolo
+cavo multipolare o all'insieme dei cavi unipolari che costituiscono il singolo circuito, per
+le diverse condizioni di posa; i suoi valori sono riportati nelle Tabb. X.4.23 e X.4.24;
+–  k1 è il fattore di correzione da applicare se la temperatura ambiente effettiva è diversa
+da 30 °C; il suo valore è 1 se la temperatura è inferiore a 30 °C (la portata aumenta), 1
+se superiore a 30 °C (la portata diminuisce); i suoi valori sono riportati nella Tab. X.4.25;
+–  k2 è il fattore di correzione da applicare per più circuiti installati in fascio o in
+strato; i valori inferiori all'unità indicano che la portata deve essere ridotta per tener conto
+dell'effetto di prossimità dovuto a più circuiti o cavi vicini tra loro; i valori da utilizzare
+sono riportati nelle Tabb. X.4.26, X.4.27, X.4.28.
+Si tenga presente che per strato si intende l'insieme di più circuiti realizzati con cavi
+installati affiancati, distanziati o no, disposti in orizzontale o in verticale, mentre per
+fascio si intende l'insieme di più circuiti realizzati con cavi non distanziati e non installati
+in strato. Più strati sovrapposti su un unico supporto (per esempio su una passerella) sono
+da considerare un fascio.
+Nella lettura delle tabelle si deve tenere conto delle seguenti principali indicazioni:
+–  le sigle PVC ed EPR indicano, rispettivamente, cavi isolati con polivinilcloruro e
+gomma etilenpropilenica, con temperature di servizio pari a  70 °C e 90 °C;
+–  il simbolo "" nelle tabelle indica un valore non disponibile;
+–  la dicitura "conduttori caricati" indica il numero dei conduttori percorsi effettiva-
+mente dalla corrente; nei circuiti monofase è 2 in quanto anche il neutro è percorso dalla
+stessa corrente della fase, mentre nei circuiti trifase è 3, dato che si suppone che il sistema
+sia sostanzialmente equilibrato e che la corrente nel neutro sia trascurabile;
+–  i valori del fattore k2 si riferiscono a gruppi di cavi simili, ossia aventi la stessa tem-
+peratura massima ammissibile e sezioni comprese in una terna di valori adiacenti, per
+esempio 6-10-16 mm2; nel caso di cavi con temperature ammissibili diverse la portata va
+riferita al tipo con temperatura minore;
+–  se le sezioni non sono simili il fattore di correzione si calcola con la relazione
+k2  1
+, essendo n il numero di circuiti elementari o di cavi unipolari del fascio.
+Esempio 2
+N. 6 cavi unipolari isolati in PVC, S = 16 mm2, posati entro tubo in aria (n. 2 circuiti
+trifasi, con tre conduttori caricati ognuno), temperatura ambiente 35 °C.
+I valori da considerare sono: I0 = 68 A (Tab. X.4.23, colonna posa 3); k1 = 0,94 (Tab.
+X.4.25), k2 = 0,80 (Tab. X.4.26, valori della prima riga). La portata è pari a:
+Iz = I0  k1  k2 = 68  0,94  0,80 = 51,1 A
+Esempio 3
+N. 4 cavi multipolari isolati in EPR, S = 50 mm2, posati a strato su una passerella per-
+forata (posa 13), con tre conduttori caricati per cavo e temperatura ambiente 40 °C.
+I valori da considerare sono: I0 = 192 A (Tab. X.4.24 seconda pagina); k1 = 0,91 (Tab.
+Iz
+I0k1k2
+=
+n
+
+[PAG 909]
+IMPIANTI  ELETTRICI                                               X-59
+X.4.25), k2 = 0,77 (Tab. X.4.26, valori della riga per posa 13). La portata è pari a:
+Iz = I0  k1  k2 = 192  0,91  0,77 = 134,5 A
+Tab. X.4.23   Valori della portata I0 per cavi unipolari per bassa tensione isolati in PVC e
+in EPR, posati in aria (da norma CEI-UNEL 35024/1)
+Metodologia 
+tipica di instal-
+lazione
+Cavi in tubo incassato in 
+parete isolante
+Cavi in tubo in aria
+Cavi in aria libera in posi-
+zione non a portata di 
+mano
+Altri tipi di 
+posa (rif. Tab. 
+X.4.22)
+1-51-71-73-74
+3-4-5-22-23-24-31-32-33
+34-41-42-72
+18
+Tipo di isola-
+mento
+PVC
+EPR
+PVC
+EPR
+PVC
+EPR
+Conduttori 
+caricati
+2
+3
+2
+3
+2
+3
+2
+3
+2
+3
+2
+3
+Portata I0 (A)
+Sezione (mm2)
+1,5
+14,5
+13,5
+19
+17
+17,5
+15,5
+23
+20
+19,5
+15,5
+24
+20
+2,5
+19,5
+18
+26
+23
+24
+21
+31
+28
+26
+21
+33
+28
+4
+26
+24
+36
+31
+32
+28
+42
+37
+35
+28
+45
+37
+6
+34
+31
+45
+40
+41
+36
+54
+48
+46
+36
+58
+48
+10
+46
+42
+61
+54
+57
+50
+75
+66
+63
+57
+80
+71
+16
+61
+56
+81
+73
+76
+68
+100
+88
+85
+76
+107
+96
+25
+80
+73
+106
+95
+101
+89
+133
+117
+112
+101
+142
+127
+35
+99
+89
+131
+117
+125
+110
+164
+144
+138
+125
+175
+157
+50
+119
+108
+158
+141
+151
+134
+198
+175
+168
+151
+212
+190
+70
+151
+136
+200
+179
+192
+171
+253
+222
+213
+192
+270
+242
+95
+182
+164
+241
+216
+232
+207
+306
+269
+258
+232
+327
+293
+120
+210
+188
+278
+249
+269
+239
+354
+312
+299
+269
+
+
+150
+240
+216
+318
+285
+309
+275
+402
+355
+344
+309
+
+
+185
+273
+245
+362
+324
+353
+314
+472
+417
+392
+353
+
+
+240
+320
+286
+424
+380
+415
+369
+555
+490
+461
+415
+
+
+300
+
+
+
+
+
+
+
+
+
+
+
+
+400
+
+
+
+
+
+
+
+
+
+
+
+
+500
+
+
+
+
+
+
+
+
+
+
+
+
+630
+
+
+
+
+
+
+
+
+
+
+
+
+
+[PAG 910]
+X-60
+  IMPIANTI ELETTRICI 
+Tab. X.4.23 Segue
+Metodologia tipica 
+di installazione
+Cavi in aria libera a trifoglio
+Cavi in aria libera in piano a contatto
+Altri tipi di posa 
+(rif. Tab. X.4.22)
+11-12-21-25-43-52-53
+13-14-15-16-17
+Tipo di isolamento
+PVC
+EPR
+PVC
+EPR
+Conduttori caricati
+3
+3
+2
+3
+2
+3
+Portata I0 (A)
+Sezione (mm2)
+1,5
+19,5
+24
+22
+19,5
+27
+24
+2,5
+26
+33
+30
+26
+37
+33
+4
+35
+45
+40
+35
+50
+45
+6
+46
+58
+52
+46
+64
+58
+10
+63
+80
+71
+63
+88
+80
+16
+85
+107
+96
+85
+119
+107
+25
+110
+135
+131
+114
+161
+141
+35
+137
+169
+162
+143
+200
+176
+50
+167
+207
+196
+174
+242
+216
+70
+216
+268
+251
+225
+310
+279
+95
+264
+328
+304
+275
+377
+342
+120
+308
+383
+352
+321
+437
+400
+150
+356
+444
+406
+372
+504
+464
+185
+409
+510
+463
+427
+575
+533
+240
+485
+607
+546
+507
+679
+634
+300
+561
+703
+629
+587
+783
+736
+400
+656
+823
+754
+689
+940
+868
+500
+749
+946
+868
+789
+1083
+998
+630
+855
+1088
+1005
+905
+1254
+1151
+De
+De
+De
+
+[PAG 911]
+IMPIANTI  ELETTRICI                                               X-61
+Tab. X.4.23 Segue
+Metodologia 
+tipica di installa-
+zione
+Cavi in aria libera distanziati su un 
+piano orizzontale
+Cavi in aria libera distanziati su piano 
+verticale
+Altri tipi di posa 
+(rif. Tab. X.4.22)
+14-15-16
+13-14-15-16
+Tipo di isola-
+mento
+PVC
+EPR
+PVC
+EPR
+Conduttori cari-
+cati
+2
+3
+2
+3
+2
+3
+2
+3
+Portata I0 (A)
+Sezione (mm2)
+1,5
+
+
+
+
+
+
+
+
+2,5
+
+
+
+
+
+
+
+
+4
+
+
+
+
+
+
+
+
+6
+
+
+
+
+
+
+
+
+10
+
+
+
+
+
+
+
+
+16
+
+
+
+
+
+
+
+
+25
+146
+146
+182
+182
+130
+130
+161
+161
+35
+181
+181
+226
+226
+162
+162
+201
+201
+50
+219
+219
+275
+275
+197
+197
+246
+246
+70
+281
+281
+353
+353
+254
+254
+318
+318
+95
+341
+341
+430
+430
+311
+311
+389
+389
+120
+396
+396
+500
+500
+362
+362
+454
+454
+150
+456
+456
+577
+577
+419
+419
+527
+527
+185
+521
+521
+661
+661
+480
+480
+605
+605
+240
+615
+615
+781
+781
+569
+569
+719
+719
+300
+709
+709
+902
+902
+659
+659
+833
+833
+400
+852
+852
+1085
+1085
+795
+795
+1008
+1008
+500
+982
+982
+1253
+1253
+920
+920
+1169
+1169
+630
+1138
+1138
+1454
+1454
+1070
+1070
+1362
+1362
+De
+De
+De
+
+[PAG 912]
+X-62
+  IMPIANTI ELETTRICI 
+Tab. X.4.24   Valori della portata I0 per cavi multipolari per bassa tensione isolati in PVC
+e in EPR, posati in aria (da norma CEI-UNEL 35024/1)
+Metodologia 
+tipica di installa-
+zione
+Cavo in tubo incassato in parete isolante
+Cavo in tubo in aria
+Altri tipi di posa 
+(rif. Tab. X.4.22)
+2-51-73-74
+3A-4A-5A-21-22A-24A-25
+33A-31-34A-43-32
+Tipo di isola-
+mento
+PVC
+EPR
+PVC
+EPR
+Conduttori cari-
+cati
+2
+3
+2
+3
+2
+3
+2
+3
+Portata I0 (A)
+Sezione (mm2)
+1,5
+14
+13
+18,5
+16,5
+16,5
+15
+22
+19,5
+2,5
+18,5
+17,5
+25
+22
+23
+20
+30
+26
+4
+25
+23
+33
+30
+30
+27
+40
+35
+6
+32
+29
+42
+38
+38
+34
+51
+44
+10
+43
+39
+57
+51
+52
+46
+69
+60
+16
+57
+52
+76
+68
+69
+62
+91
+80
+25
+75
+68
+99
+89
+90
+80
+119
+105
+35
+92
+83
+121
+109
+111
+99
+146
+128
+50
+110
+99
+145
+130
+133
+118
+175
+154
+70
+139
+125
+183
+164
+168
+149
+221
+194
+95
+167
+150
+220
+197
+201
+179
+265
+233
+120
+192
+172
+253
+227
+232
+206
+305
+268
+150
+219
+196
+290
+259
+258
+225
+334
+300
+185
+248
+223
+329
+295
+294
+255
+384
+340
+240
+291
+261
+386
+346
+344
+297
+459
+398
+300
+334
+298
+442
+396
+394
+339
+532
+455
+Metodologia 
+tipica di installa-
+zione
+Cavo in aria libera, distanziato dalla 
+parete/soffitto o su passerella
+Cavo in aria libera, fissato alla
+parete/soffitto
+Altri tipi di posa 
+(rif. Tab. X.4.22)
+13-14-15-16-17
+11-11A-12-52-53
+De
+
+[PAG 913]
+IMPIANTI  ELETTRICI                                               X-63
+Tab. X.4.24 Segue
+Tipo di isola-
+mento
+PVC
+EPR
+PVC
+EPR
+Conduttori cari-
+cati
+2
+3
+2
+3
+2
+3
+2
+3
+Portata I0 (A)
+Sezione (mm2)
+1,5
+22
+18,5
+26
+23
+19,5
+17,5
+24
+22
+2,5
+30
+25
+36
+32
+27
+24
+33
+30
+4
+40
+34
+49
+42
+36
+32
+45
+40
+6
+51
+43
+63
+54
+46
+41
+58
+52
+10
+70
+60
+86
+75
+63
+57
+80
+71
+16
+94
+80
+115
+100
+85
+76
+107
+96
+25
+119
+101
+149
+127
+112
+96
+138
+119
+35
+148
+126
+185
+158
+138
+119
+171
+147
+50
+180
+153
+225
+192
+168
+144
+209
+179
+70
+232
+196
+289
+246
+213
+184
+269
+229
+95
+282
+238
+352
+298
+258
+223
+328
+278
+120
+328
+276
+410
+346
+299
+259
+382
+322
+150
+379
+319
+473
+399
+344
+299
+441
+371
+185
+434
+364
+542
+456
+392
+341
+506
+424
+240
+514
+430
+641
+538
+461
+403
+599
+500
+300
+593
+497
+741
+621
+530
+464
+693
+576
+Tab. X.4.25   Valori del fattore di correzione k1 per temperature ambiente diverse da 30
+°C (da norma CEI-UNEL 35024/1)
+Temperatura ambiente 
+(°C)
+Tipo di isolamento
+PVC
+EPR
+10
+15
+20
+25
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+1,22
+1,17
+1,12
+1,06
+0,94
+0,87
+0,79
+0,71
+0,61
+0,50
+
+
+
+
+1,15
+1,12
+1,08
+1,04
+0,96
+0,91
+0,87
+0,82
+0,76
+0,71
+0,65
+0,58
+0,50
+0,41
+
+[PAG 914]
+X-64
+  IMPIANTI ELETTRICI 
+Tab. X.4.26   Valori del fattore di correzione k2 per circuiti realizzati con cavi installati in
+fascio o strato (da norma CEI-UNEL 35024/1)
+Posa secondo 
+Tab. X.4.22
+Numero di circuiti o di cavi multipolari
+Disposizione 
+(cavi a con-
+tatto)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Condizioni di 
+posa non previste 
+nelle altre righe 
+di questa tabella 
+e nelle Tabb. 
+X.4.27 e X.4.28
+Raggruppati 
+a fascio, 
+annegati
+1,00
+0,80
+0,70
+0,65
+0,60
+0,57
+0,54
+0,52
+0,50
+11-12-25
+Singolo strato 
+su muro, 
+pavimento o 
+passerelle 
+non perforate
+1,00
+0,85
+0,79
+0,75
+0,73
+0,72
+0,72
+0,71
+0,70
+11A
+Strato a sof-
+fitto
+0,95
+0,81
+0,72
+0,68
+0,66
+0,64
+0,63
+0,62
+0,61
+13
+Strato su pas-
+serelle perfo-
+rate 
+orizzontali o 
+verticali (per-
+forate o non 
+perforate)
+1,00
+0,88
+0,82
+0,77
+0,75
+0,73
+0,73
+0,72
+0,72
+14-15-16-17
+Strato su 
+scala posa 
+cavi o graf-
+fato a un 
+sostegno
+1,00
+0,87
+0,82
+0,80
+0,80
+0,79
+0,79
+0,78
+0,78
+Avvertenze
+1)  Questi fattori sono applicabili a fascio o strato di cavi simili, uniformemente caricati.
+2)  Dove le spaziature orizzontali tra cavi adiacenti, appartenenti a circuiti diversi, superano di due
+volte il diametro esterno del cavo di sezione maggiore, non è necessario applicare il fattore di
+correzione.
+3)  Sono applicabili gli stessi fattori per circuiti di cavi unipolari e cavi multipolari.
+4)  Se un sistema consiste sia di cavi bipolari sia tripolari, il numero di cavi è preso pari al numero
+dei circuiti e il corrispondente fattore è applicato alle tabelle di I0 per due conduttori caricati
+per i cavi bipolari e a quella per tre conduttori caricati per cavi tripolari.
+5)  Se un fascio o strato consiste di "n" cavi unipolari carichi, si possono considerare sia come n/2
+circuiti bipolari per sistemi fase-fase o fase-terra sia come n/3 circuiti tripolari per sistemi tri-
+fase.
+6)  I valori dati sono la media sulla gamma delle dimensioni dei conduttori e dei tipi di installa-
+zione. La tolleranza dei valori riportati è entro il 5%.
+
+[PAG 915]
+IMPIANTI  ELETTRICI                                               X-65
+Tab. X.4.27   Valori del fattore di correzione k2 per circuiti realizzati con cavi multipolari
+installati in strato su più supporti (da norma CEI-UNEL 35024/1)
+Posa da 
+Tab. 
+X.4.22
+Metodo di installazione
+Numero di  
+passerelle
+Numero di cavi per ogni supporto
+1
+2
+3
+4
+6
+9
+13
+Passerelle perforate
+ (nota 1)
+2
+3
+2
+3
+1,00
+1,00
+1,00
+1,00
+0,87
+0,86
+0,99
+0,98
+0,80
+0,79
+0,96
+0,95
+0,77
+0,76
+0,92
+0,91
+0,73
+0,71
+0,87
+0,85
+0,68
+0,66
+
+
+13
+Passerelle verticali
+perforate (nota 2)
+2
+2
+1,00
+1,00
+0,88
+0,91
+0,81
+0,88
+0,76
+0,87
+0,71
+0,85
+0,70
+
+14-15
+16-17
+Scala posa cavi o elemento
+di sostegno (nota 1)
+2
+3
+2
+3
+1,00
+1,00
+1,00
+1,00
+0,86
+0,85
+0,99
+0,98
+0,80
+0,79
+0,98
+0,97
+0,78
+0,76
+0,97
+0,96
+0,76
+0,73
+0,96
+0,93
+0,73
+0,70
+
+
+Note
+Questi fattori sono applicabili a cavi simili uniformemente caricati.
+1)  I valori sono relativi a distanze verticali tra le passerelle di 300 mm. Per distanze verticali
+minori i fattori dovrebbero essere ridotti.
+2)  I valori sono relativi a distanze orizzontali tra le passerelle di 225 mm, con passerelle montate
+dorso a dorso. Per distanze minori i fattori dovrebbero essere ridotti.
+ 20 mm
+ 20 mm
+De
+ 225 mm
+ 225 mm
+ 20 mm
+ 20 mm
+De
+
+[PAG 916]
+X-66
+  IMPIANTI ELETTRICI 
+Tab. X.4.28   Valori del fattore di correzione k2 per circuiti realizzati con cavi unipolari
+installati in strato su più supporti (da norma CEI-UNEL 35024/1)
+Posa da
+Tab. X.4.22
+Metodo di installazione
+Numero di 
+passerelle
+Numero di circuiti 
+trifasi
+1
+2
+3
+13
+13
+Passerelle 
+perforate 
+(nota 1)
+Passerelle 
+verticali
+perforate 
+(nota 2)
+2
+3
+2
+0,96
+0,95
+0,95
+0,87
+0,85
+0,84
+0,81
+0,78
+
+14-15
+16-17
+Scala posa 
+cavi o ele-
+mento di 
+sostegno
+(nota 1)
+2
+3
+0,98
+0,97
+0,93
+0,90
+0,89
+0,86
+13
+Passerelle 
+perforate 
+(nota 1)
+2
+3
+0,97
+0,96
+0,93
+0,92
+0,89
+0,86
+13
+Passerelle 
+perforate ver-
+ticali (nota 2)
+2
+1,00
+0,90
+0,86
+14-15
+16-17
+Scala posa 
+cavi o ele-
+mento di 
+sostegno 
+(nota 1)
+2
+3
+0,97
+0,96
+0,95
+0,94
+0,93
+0,90
+Note
+Questi fattori sono applicabili a cavi simili uniformemente caricati.
+1)  I valori sono relativi a distanze verticali tra le passerelle di 300 mm. Per distanze verticali
+minori i fattori dovrebbero essere ridotti.
+2)  I valori sono relativi a distanze orizzontali tra le passerelle di 225 mm, con passerelle montate
+dorso a dorso. Per distanze minori i fattori dovrebbero essere ridotti.
+ 20 mm
+ 225 mm
+ 20 mm
+ 20 mm
+De
+ 2De
+ 225 mm
+ 2De
+De
+ 20 mm
+ 2De
+De
+
+[PAG 917]
+IMPIANTI  ELETTRICI                                               X-67
+4.12  Portata dei cavi per bassa tensione posati entro tubi interrati
+In questo caso si fa riferimento alle tabelle della norma CEI-UNEL 35026, applicabile
+ai cavi isolati con materiale elastomerico (EPR o XLPE, 90 °C) o termoplastico (PVC,
+70 °C) usati in impianti con tensione nominale fino a 1000 V in c.a. e 1500 V in c.c., con
+conduttori di rame e funzionanti in regime permanente.
+La tabelle si riferiscono a cavi interrati entro tubi protettivi; per cavi direttamente
+interrati, per i quali la portata è maggiore a parità di altre condizioni in quanto lo scambio
+termico è più efficace, la stessa norma consente di valutare la portata moltiplicando per
+1,15 quella relativa al corrispondente cavo posto entro tubo interrato.
+La portata Iz di un cavo, in una determinata condizione di installazione, si ricava con
+l'espressione:
+(X.4.11)
+dove:
+–  I0 è la portata del cavo in esame in condizioni standard, quando tutti i fattori di cor-
+rezione sono unitari, ossia quando la temperatura del terreno è 20 °C, vi è un solo circuito
+formato da cavi unipolari o un solo cavo multipolare, la profondità di posa è 0,8 m e la
+resistività termica del terreno vale 1,5 K m/W; i valori di I0 sono riportati nella Tab.
+X.4.29;
+–  k1 è il fattore di correzione per temperature del terreno diverse da 20 °C, i cui valori
+sono riportati nella Tab. X.4.30; poiché all'aumentare della temperatura ambiente la por-
+tata diminuisce, per temperature superiori a 20 °C si avrà k1  1 e viceversa;
+–  k2 è il fattore di correzione che tiene conto del numero di circuiti elementari nel
+caso di cavi unipolari e del numero di cavi tripolari posati sullo stesso strato di terreno e
+della loro distanza (Tab. X.4.31); all'aumentare del numero di circuiti o di cavi e al dimi-
+nuire della loro distanza il valore di tale fattore diminuisce, dato che occorre ridurre la
+portata;
+–  k3 è il fattore di riduzione da applicare nel caso di profondità di posa diversa dal
+valore di riferimento di 0,8 m (Tab. X.4.32); per profondità superiori si avrà k3  1
+(minore portata dovuta alla maggiore difficoltà nello smaltimento del calore) e viceversa;
+–  k4 è il fattore di correzione che tiene conto della resistività termica del terreno (Tab.
+X.4.33); il suo valore è minore di uno quando la resistività è superiore a quella di riferi-
+mento (1,5 K m/W) e viceversa, dato che una maggiore resistività del mezzo comporta
+una dissipazione termica meno efficace, con conseguente riduzione della portata; nella
+Tab. X.4.34 sono riportati i valori medi della resistività termica di alcuni tipi di terreno e
+di materiali.
+Esempio 4
+Cavo tripolare isolato in EPR, sezione 120 mm2, posto entro un tubo interrato a 0,5 m
+di profondità in un terreno di resistività termica 2 K m/W, temperatura 25 °C, con nessun
+altro cavo nelle vicinanze.
+Dalle tabelle si ricava: I0 = 238 A (Tab. X.4.29.C con tre conduttori caricati); k1 = 0,96
+(Tab. X.4.30 per temperatura del terreno 25 °C); k2 = 1 essendoci un solo cavo; k3 = 1,02
+(Tab. X.4.32 per profondità di posa 0,5 m); k4 = 0,91 (Tab. X.4.33 per resistività termica
+2 K m/W).
+La portata del cavo in esame è data da:
+Iz = I0k1 k2 k3 k4 = 238  0,96  1  1,02  0,91 = 212 A
+Iz
+I0k1k2k3k4
+=
+
+[PAG 918]
+X-68
+  IMPIANTI ELETTRICI 
+Tab. X.4.29   Valori della portata I0 di cavi unipolari e multipolari per bassa tensione iso-
+lati in PVC ed EPR (o XLPE), per varie condizioni di posa (da norma CEI-UNEL 35026)
+A. Cavi unipolari in tubi interrati tra loro a contatto (1 cavo per tubo)
+Sezione
+(mm2)
+Portata I0 (A)
+Isolamento in PVC
+Isolamento in EPR
+Numero di conduttori caricati
+Numero di conduttori caricati
+2
+3
+2
+3
+1,5
+22
+20
+26
+23
+2,5
+29
+26
+34
+31
+4
+38
+34
+44
+40
+6
+47
+43
+54
+49
+10
+63
+57
+73
+67
+16
+82
+74
+95
+85
+25
+105
+95
+122
+110
+35
+127
+115
+148
+133
+50
+157
+141
+182
+163
+70
+191
+171
+222
+198
+95
+225
+201
+261
+233
+120
+259
+231
+301
+268
+150
+294
+262
+343
+304
+185
+330
+293
+385
+340
+240
+386
+342
+450
+397
+300
+
+
+509
+448
+B. Cavi unipolari in un unico tubo interrato
+Sezione
+(mm2)
+Portata I0 (A)
+Isolamento in PVC
+Isolamento in EPR
+Numero di conduttori caricati
+Numero di conduttori caricati
+2
+3
+2
+3
+1,5
+21
+18
+24
+21
+2,5
+27
+23
+32
+27
+4
+36
+30
+41
+35
+6
+45
+38
+52
+44
+
+[PAG 919]
+IMPIANTI  ELETTRICI                                               X-69
+Tab. X.4.29 Segue
+10
+61
+51
+70
+59
+16
+78
+66
+91
+77
+25
+101
+86
+118
+100
+35
+123
+104
+144
+121
+50
+153
+129
+178
+150
+70
+187
+158
+218
+184
+95
+222
+187
+258
+217
+120
+256
+216
+298
+251
+150
+292
+246
+340
+287
+185
+328
+277
+383
+323
+240
+385
+325
+450
+379
+300
+
+
+510
+429
+C. Cavo multipolare in tubo interrato
+Sezione
+(mm2)
+Portata I0 (A)
+Isolamento in PVC
+Isolamento in EPR
+Numero di conduttori caricati
+Numero di conduttori caricati
+2
+3
+2
+3
+1,5
+19
+16
+23
+19
+2,5
+25
+21
+30
+25
+4
+33
+28
+39
+32
+6
+41
+35
+49
+41
+10
+56
+47
+66
+55
+16
+73
+61
+86
+72
+25
+94
+79
+111
+93
+35
+115
+97
+136
+114
+50
+143
+120
+168
+141
+70
+175
+148
+207
+174
+95
+208
+175
+245
+206
+120
+240
+202
+284
+238
+150
+273
+231
+324
+272
+185
+307
+259
+364
+306
+240
+360
+304
+428
+360
+
+[PAG 920]
+X-70
+  IMPIANTI ELETTRICI 
+Tab. X.4.30   Valori del fattore di correzione k1 per temperature del terreno diverse da
+20 °C (da norma CEI-UNEL 35026)
+Temperatura del terreno (°C)
+Tipo di isolante
+PVC
+EPR-XLPE
+10
+15
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+1,10
+1,05
+0,95
+0,89
+0,84
+0,77
+0,71
+0,63
+0,55
+0,45
+
+
+
+
+1,07
+1,04
+0,96
+0,93
+0,89
+0,85
+0,80
+0,76
+0,71
+0,65
+0,60
+0,53
+0,46
+0,38
+Tab. X.4.31   Valori del fattore di correzione k2 per gruppi di più circuiti (cavi unipolari)
+o di più cavi multipolari installati sullo stesso piano (da norma CEI-UNEL 35026)
+Cavi multipolari in tubi protettivi interrati (un cavo per tubo)
+Numero di cavi
+Distanza tra tubi adiacenti (m)
+a contatto
+0,25
+0,5
+1
+2
+3
+4
+5
+6
+0,85
+0,75
+0,70
+0,65
+0,60
+0,90
+0,85
+0,80
+0,80
+0,80
+0,95
+0,90
+0,85
+0,85
+0,80
+0,95
+0,95
+0,90
+0,90
+0,90
+Cavi unipolari in tubi protettivi interrati (un cavo per tubo)
+Numero di circuiti
+Distanza tra tubi adiacenti (m)
+a contatto
+0,25
+0,5
+1
+2
+3
+4
+5
+6
+0,80
+0,70
+0,65
+0,60
+0,60
+0,90
+0,80
+0,75
+0,70
+0,70
+0,90
+0,85
+0,80
+0,80
+0,80
+0,95
+0,90
+0,90
+0,90
+0,90
+Tab. X.4.32   Valori del fattore di correzione k3 per differenti valori della profondità di
+posa (da norma CEI-UNEL 35026)
+Profondità di posa (m)
+0,5
+0,8
+1
+1,2
+1,5
+Fattore di correzione
+1,02
+1,00
+0,98
+0,96
+0,94
+
+[PAG 921]
+IMPIANTI  ELETTRICI                                               X-71
+Cavi con conduttori di alluminio
+I cavi con conduttori di alluminio hanno minore portata rispetto a quelli con condut-
+tori di rame, a causa della maggiore resistività elettrica del materiale che farebbe aumen-
+tare il calore prodotto se fossero attraversati dalla stessa corrente.
+Il coefficiente di riduzione indicato dalla norma CEI-UNEL 35026 è pari a 0,78 ed è
+circa uguale al rapporto:
+4.13  Portata dei cavi per media tensione
+In media tensione vengono usati cavi isolati con materiale elastomerico EPR o XLPE
+e non termoplastico. Rispetto a un corrispondente cavo per bassa tensione lo smaltimento
+del calore è più difficoltoso, a causa del maggior spessore di isolante e quindi, in teoria, la
+portata dovrebbe essere minore.
+In realtà la differenza è minima e generalmente non è determinante, tenuto anche
+conto delle approssimazioni con le quali si valutano i coefficienti correttivi. Per questa
+ragione le portate ricavate dalle tabelle dei cavi in EPR (o XLPE) per bassa tensione, sia
+per la posa in aria che per quella interrata, si possono usare anche per i cavi di media ten-
+sione, per sezioni e pose corrispondenti. Volendo tener conto della lieve riduzione di por-
+tata, si può usare un coefficiente di correzione pari a 0,97  0,98.
+Tab. X.4.33   Valori del fattore di correzione k4 per differenti valori della resistività ter-
+mica del terreno (da norma CEI-UNEL 35026)
+Resistività termica del terreno
+(K m/W)
+Fattore di correzione
+Cavi unipolari
+Cavi multipolari
+1,0
+1,2
+1,5
+2,0
+2,5
+1,08
+1,05
+1,00
+0,90
+0,82
+1,06
+1,04
+1,00
+0,91
+0,84
+Tab. X.4.34   Valori medi della resistività termica di alcuni tipi di terreno e di materiali
+Tipi di terreno e di materiali
+Resistività termica
+(K m/W)
+Terreno con basso contenuto di umidità
+Terreno compatto con normale contenuto di umidità
+Terra argillosa
+Sabbia asciutta
+Sabbia satura di umidità
+Mattoni
+Calcestruzzo
+Pietra compatta (per es. granito, basalto, marmo)
+Ghiaia
+2
+1
+1
+3
+0,50
+1,15
+1,10
+0,50
+3
+cu
+al
+-------
+17,8
+28,4
+---------
+0,8
+
+=
+
+[PAG 922]
+X-72
+  IMPIANTI ELETTRICI 
+4.14  Sezioni minime delle condutture elettriche
+Per gli impianti utilizzatori con tensione nominale fino a 1000 V in corrente alternata
+e 1500 V in corrente continua, la norma CEI 64-8/5 prescrive che la sezione dei condut-
+tori di fase nei circuiti in c.a. e dei conduttori attivi nei circuiti in c.c. non deve essere
+inferiore ai valori riportati nella Tab. X.4.35, anche se dal calcolo elettrico della condut-
+tura risulti eventualmente un valore inferiore.
+La sezione del conduttore neutro nei circuiti in c.a. è uguale o minore di quella della
+fase, secondo le indicazioni della Tab. X.4.36, tratte dalla norma CEI 64-8/5.
+Tab. X.4.35   Sezioni minime dei conduttori (dalla Tab. 52E della norma CEI 64-8/5)
+Tipo di conduttura
+Uso del circuito
+Conduttore 
+materiale
+sezione (mm2)
+Condutture 
+fisse
+cavi
+circuiti di potenza
+Cu
+Al
+1,5
+16
+circuiti di segnalazione e
+circuiti ausiliari di comando
+Cu
+0,5*
+conduttori nudi
+circuiti di potenza
+Cu
+Al
+10
+16
+circuiti di segnalazione e
+circuiti ausiliari di comando
+Cu
+4
+Condutture mobili con cavi 
+flessibili
+per un apparecchio utilizza-
+tore specifico
+Cu
+come 
+specificato
+nella norma CEI cor-
+rispondente
+per qualsiasi altra applica-
+zione
+0,75**
+circuiti a bassissima ten-
+sione per applicazioni spe-
+ciali
+0,75
+Note:
+*)  nei circuiti di segnalazione e comando destinati ad apparecchiature elettroniche è ammessa una
+sezione minima di 0,1 mm2;
+**)  per i cavi flessibili multipolari che contengono sette o più anime vale la nota precedente.
+Tab. X.4.36   Scelta della sezione del conduttore neutro
+Sezione 
+della fase 
+Sezione del neutro
+Condizioni
+SF
+SN  SF
+Nei circuiti monofase e due fili di qualunque sezione.
+Nei circuiti polifase con SF non superiore a 16 mm2
+(rame) e 25 mm2 (alluminio)
+SF
+SN  SF
+minimo 16 mm2 (Cu)
+minimo 25 mm2 (Al)
+Quando la corrente massima (comprese le eventuali
+armoniche) che si prevede possa percorrere il neutro
+durante il servizio ordinario non sia superiore alla cor-
+rente ammissibile corrispondente alla ridotta sezione del
+neutro.
+
+[PAG 923]
+IMPIANTI  ELETTRICI                                               X-73
+5  METODI PER IL DIMENSIONAMENTO E LA VERIFICA DELLE CONDUT-
+TURE ELETTRICHE
+5.1  Calcolo di progetto e di verifica
+Per calcolo di progetto di una conduttura elettrica si intende la determinazione delle
+caratteristiche fisiche (sezione dei conduttori, tipo di cavo, modalità di posa ecc.) in fun-
+zione dei dati di ingresso e nel rispetto di determinati vincoli progettuali che andranno poi
+verificati a calcolo concluso. Esso si riferisce a linee di nuova installazione, ossia non esi-
+stenti in precedenza o che sostituiscono integralmente condutture esistenti.
+Nel caso più comune di linee in cavo il calcolo comprende le seguenti principali fasi:
+- scelta del tipo di cavo, delle sue tensioni di isolamento in funzione della tensione nomi-
+nale del sistema e della modalità di posa; - determinazione della sezione teorica dei con-
+duttori e scelta della sezione commerciale; - verifica della portata del cavo scelto in
+relazione alla corrente d'impiego del circuito.
+Il calcolo di verifica consiste nel controllare che una conduttura elettrica esistente, in
+seguito a modifiche intervenute nel suo regime di funzionamento, continui a possedere
+determinati requisiti e a soddisfare i vincoli prefissati. Un caso frequente si ha quando si
+deve verificare che la sezione di una conduttura sia adeguata a sopportare un determinato
+aumento della sua corrente d'impiego.
+5.2  Metodo della perdita di potenza ammissibile
+Indicando con  la resistività elettrica del conduttore alla temperatura di servizio, con
+l la lunghezza della linea, con P la potenza attiva trasmessa, con U la tensione nominale
+(valore concatenato per i sistemi trifase), con cos  il fattore di potenza, con S la sezione
+dei conduttori e con p% la perdita di potenza percentuale, le relazioni da usare per i cal-
+coli di progetto per i diversi sistemi di distribuzione sono le seguenti:
+–  corrente continua:
+(X.5.1)
+–  c.a. monofase:
+(X.5.2)
+–  c.a. trifase:
+(X.5.3)
+Se si vuole invece effettuare la verifica della perdita di potenza corrispondente
+all'adozione di una determinata sezione, occorre usare le espressioni:
+–  corrente continua:
+(X.5.4)
+–  c.a. monofase:
+(X.5.5)
+S
+200lP
+p%U2
+-------------------
+=
+S
+200lP
+p%U2cos2
+-----------------------------------
+=
+S
+100lP
+p%U2cos2
+-----------------------------------
+=
+p%
+200lP
+SU2
+------------------
+=
+p%
+200lP
+SU2cos2
+-------------------------
+=
+
+[PAG 924]
+X-74
+  IMPIANTI ELETTRICI 
+–  c.a. trifase
+(X.5.6)
+La perdita di potenza percentuale è legata a quella assoluta dalle relazioni:
+(X.5.7)
+Per l'applicazione di questo metodo come calcolo di progetto occorre fissare preventi-
+vamente il valore di p%, variabile in genere dal 2 all'8%, tenendo conto che al suo
+aumentare diminuisce la sezione (minor costo d'installazione dell'impianto) ma aumen-
+tano le perdite di potenza (maggior costo di gestione).
+Esempio 1
+Si vuole verificare che in una linea monofase avente S = 16 mm2, U = 230 V,
+l = 200 m, P = 6 kW, f.d.p. 0,85,  = 0,0213  mm2/m (a 70 °C), la perdita di potenza sia
+inferiore al 5%.
+Si ottiene:
+La verifica è negativa: per contenere la perdita di potenza entro il limite indicato
+occorre aumentare la sezione dei conduttori o ridurre la potenza trasmessa.
+5.3  Metodo della temperatura ammissibile
+È un metodo che si applica prevalentemente ai conduttori nudi e si basa sull'equazione
+che si ottiene uguagliando la potenza prodotta per effetto Joule dalla corrente circolante
+nel conduttore (RI2) e quella dissipata verso l'esterno dal conduttore stesso (  A): a
+regime, in condizioni di equilibrio termico, rimanendo costante la temperatura le due
+potenze sono uguali.
+Sviluppando l'uguaglianza si ottiene:
+(X.5.8)
+dove  è la resistività del materiale riportata alla temperatura  di funzionamento, data
+dalla somma a +  tra la temperatura ambiente e la sovratemperatura , l è la lun-
+ghezza del conduttore, A è l'area della superficie disperdente del conduttore, S è la sezione
+retta del conduttore e  è il coefficiente globale di trasmissione del calore, i cui valori, per
+ = (30  90) °C, si possono scegliere con il seguente criterio:
+–   = 12  16 W/(m2 K) per conduttori in aria stagnante;
+–   = 15  20 W/(m2 K) per conduttori in aria a circolazione naturale.
+Caso del conduttore di sezione circolare
+Per un conduttore cilindrico di diametro d la sezione è data da S =  d2/4, mentre l'area
+laterale di dissipazione del calore è uguale ad A = dl; sostituendo nella X.5.8 e svilup-
+pando si ottiene:
+(X.5.9)
+La relazione X.5.9 può essere utilizzata in vari modi.
+p%
+100lP
+SU2cos2
+-------------------------
+=
+p
+p%P
+100
+---------------- ;
+=
+p%
+100p
+P
+----------------
+=
+p%
+200lP
+SU2cos2
+-------------------------
+200
+0,0213
+
+200
+
+6
+
+103
+
+16
+2302
+
+0,852
+
+----------------------------------------------------------------------------
+8,36 %
+=
+=
+=
+lI2
+AS
+=
+4I2
+2d3
+=
+
+[PAG 925]
+IMPIANTI  ELETTRICI                                               X-75
+–  Progetto. Fissato il valore massimo ammissibile di  si calcola il diametro d con
+l'espressione:
+(X.5.10)
+In genere si fissa   (25  30) °C, con a pari a 40 °C nelle condizioni più sfavore-
+voli.
+–  Verifica della sovratemperatura. Si effettua con la relazione:
+(X.5.11)
+–  Verifica della massima corrente ammissibile. Noto d e fissata  si determina la
+massima corrente che può circolare nel conduttore:
+(X.5.12)
+Caso del conduttore di sezione rettangolare
+Per un conduttore a barra di sezione rettangolare con dimensioni b (base) e h (altezza),
+la sezione è data da S = bh mentre l'area laterale di dissipazione del calore è uguale ad A =
+2 (b + h) l; sostituendo nella X.5.8 e sviluppando si ottiene:
+(X.5.13)
+Progetto. Si devono determinare due incognite, b e h, per cui occorre fissare preventi-
+vamente una delle due dimensioni o il loro rapporto kd = h/b. Il dimensionamento della
+barra viene effettuato con le relazioni:
+(X.5.14)
+Verifica della sovratemperatura. Si effettua con la relazione:
+(X.5.15)
+–  Verifica della massima corrente ammissibile. Note le dimensioni b e h e fissata 
+si determina la massima corrente che può circolare nel conduttore:
+(X.5.16)
+Esempio 2
+Si vuole calcolare il diametro di un conduttore cilindrico in rame in grado di condurre
+la corrente I = 80 A con una sopraelevazione di temperatura non superiore a 30 °C, par-
+tendo da una temperatura di 40 °C in un ambiente in aria a circolazione naturale.
+d
+4I2
+2
+----------------
+3
+=
+
+4I2
+2d3
+---------------
+=
+I
+1,571
+d3
+
+---------------
+=
+I2
+2b
+h
++
+
+bh
+=
+b
+I2
+21
+kd
++
+
+kd
+----------------------------------------
+3
+=
+h
+kd b
+=
+
+
+
+
+
+
+
+
+I2
+2b
+h
++
+
+bh
+---------------------------------
+=
+I
+2b
+h
++
+
+bh
+
+---------------------------------------
+=
+
+[PAG 926]
+X-76
+  IMPIANTI ELETTRICI 
+Dalla relazione X.5.10 con  = 15 W/(m2 K) e  = 0,0213  106  m alla temperatura
+ = a +  = 70 °C, si ottiene:
+Esempio 3
+Si vuole verificare che una barra di sezione rettangolare di alluminio, di dimensioni
+5  20 mm, sia in grado di condurre la corrente I = 300 A senza che la sovratemperatura
+superi i 25 °C partendo da una temperatura di 35 °C, in un ambiente con aria a circola-
+zione naturale.
+Dalla relazione X.5.16, con  = 15 W/(m2 K) e  = 0,0329  106  m alla temperatura
+ = a +  = 60 °C, si ottiene:
+La verifica è negativa: per rispettare i vincoli imposti la corrente non deve superare il
+valore 238,7 A.
+5.4  Metodo della caduta di tensione ammissibile
+Per una linea di lunghezza l, tensione sul carico U2 (valore concatenato nel caso di
+linea trifase, valore della tensione fase-neutro per una linea monofase), angolo di carico 
+e parametri unitari rl e xl , la c.d.t. industriale percentuale, riferita alla tensione nel punto di
+arrivo, è data da:
+(X.5.17)
+(X.5.18)
+(X.5.19)
+Per la determinazione della sezione dei conduttori (calcolo di progetto) la procedura
+di calcolo è la seguente:
+–  si assegna un opportuno valore alla c.d.t. percentuale U%;
+–  si stabilisce un valore orientativo della reattanza unitaria xl, uguale a 0,4 /km per
+le linee aeree e 0,1 /km per quelle in cavo;
+–  si calcola la resistenza unitaria di linea rl dalla corrispondente espressione della U%;
+–  si determina la sezione teorica dei conduttori con la formula S = /rl, assumendo
+per la resistività il valore alla temperatura di esercizio;
+–  si sceglie la sezione commerciale dei conduttori e si verifica che la portata sia non
+inferiore alla corrente d'impiego, altrimenti si passa alle sezioni superiori;
+d
+4I2
+2
+----------------
+3
+4
+0,0213
+
+10 6
+–
+
+802
+
+15
+3,142
+
+30
+
+--------------------------------------------------------------
+3
+0,497
+10 2
+–
+
+m
+5 mm
+
+=
+=
+=
+I
+2b
+h
++
+
+bh
+
+---------------------------------------
+=
+=
+2
+15
+
+25 5
+20
++
+
+
+
+10 3
+–
+
+5
+
+10 3
+–
+20
+
+10 3
+–
+
+
+0,0329
+10 6
+–
+
+--------------------------------------------------------------------------------------------------------------------------------------
+238,7A
+=
+=
+c.a. trifase:
+U%
+100
+3I l
+U2
+--------------------- rlcos
+xlsen
++
+
+
+=
+c.a. monofase:
+U%
+200Il
+U2
+------------- rlcos
+xlsen
++
+
+
+=
+corrente continua:
+U%
+200Il rl
+U2
+-----------------
+=
+
+[PAG 927]
+IMPIANTI  ELETTRICI                                               X-77
+–  nei casi dubbi si verifica che la c.d.t. effettiva, determinata con i parametri rl e xl
+corrispondenti alla conduttura scelta, rientri nei limiti imposti.
+Per la scelta della c.d.t. percentuale occorre tener presente che per gli impianti utiliz-
+zatori con tensione nominale fino a 1000 V in c.a. e 1500 V in c.c. la norma CEI 64-8 rac-
+comanda che la c.d.t. tra l'origine dell'impianto e qualunque apparecchio utilizzatore non
+sia superiore al 4% della tensione nominale dell'impianto.
+5.5  Metodo della caduta di tensione unitaria
+La caduta di tensione unitaria u di una linea in cavo rappresenta la c.d.t. (espressa in
+millivolt/ampère metro) che si ha per ogni metro di cavo e per ogni ampère di corrente:
+(X.5.20)
+I valori assunti dalla c.d.t. unitaria per cavi di diversa sezione, essendo svincolati da
+quelli della corrente e della lunghezza, dipendono solo dai parametri longitudinali del
+cavo e dal fattore di potenza; per i cavi di comune impiego negli impianti di distribuzione
+in bassa tensione essi sono riportati nelle Tabb. X.5.1 e X.5.2, in funzione del tipo di cavo,
+del tipo di circuito (c.c., c.a. monofase, c.a. trifase) e per due valori caratteristici del f.d.p.
+(0,8 e 1).
+Per l'applicazione di questo metodo, molto usato per le linee BT in cavo, occorre fis-
+sare la U%, determinare la c.d.t. assoluta U = U% Un/100, calcolare la c.d.t. unitaria
+con la X.5.20 e scegliere dalle tabelle la sezione del cavo avente una u minore di quella
+calcolata, considerando, per la c.a., il valore del f.d.p. più vicino a quello tabulato. Andrà
+poi verificato che la portata del cavo sia adeguata alla corrente d'impiego.
+Tab. X.5.1  Cadute di tensione in mV/(A m) per cavi BT unipolari (da norma CEI-UNEL 35023)
+Sezione nominale
+(mm2)
+Cavi unipolari
+corrente continua
+c.a. monofase
+c. a. trifase
+cos  = 1
+cos  = 0,8
+cos  = 1
+cos  = 0,8
+1,5
+2,5
+4
+6
+10
+16
+25
+35
+50
+70
+95
+120
+150
+185
+240
+300
+400
+29,7
+17,8
+11,1
+7,41
+4,47
+2,82
+1,78
+1,28
+0,947
+0,655
+0,472
+0,373
+0,304
+0,243
+0,185
+0,147
+0,115
+29,7
+17,8
+11,1
+7,41
+4,47
+2,82
+1,78
+1,28
+0,947
+0,656
+0,473
+0,375
+0,306
+0,246
+0,189
+0,152
+0,121
+23,9
+14,4
+9,08
+6,10
+3,72
+2,39
+1,55
+1,15
+0,878
+0,641
+0,494
+0,413
+0,356
+0,306
+0,259
+0,229
+0,202
+25,7
+15,4
+9,65
+6,42
+3,87
+2,44
+1,54
+1,11
+0,820
+0,568
+0,410
+0,325
+0,265
+0,213
+0,163
+0,132
+0,105
+20,7
+12,5
+7,87
+5,28
+3,22
+2,07
+1,34
+0,993
+0,760
+0,555
+0,428
+0,358
+0,308
+0,265
+0,224
+0,198
+0,175
+u
+1000U
+I l
+--------------------
+=
+
+[PAG 928]
+X-78
+  IMPIANTI ELETTRICI 
+Esempio 4
+Per una linea monofase avente Un = 230 V, l = 100 m, I = 35 A, la c.d.t. unitaria corri-
+spondente a U% = 4% è data da:
+Se la linea è realizzata con cavi unipolari e il f.d.p. è prossimo a 0,8 la sezione da sce-
+gliere è 16 mm2, con u = 2,39 mV/(A m), della quale si dovrà verificare che la portata sia
+non inferiore a 35 A.
+5.6  Metodo dei momenti amperometrici: linea con carico di estremità
+Si abbia una linea (Fig. X.5.1) di lunghezza l avente origine nel punto A e con il carico
+elettrico concentrato nell'estremità B, carico che assorbe una corrente di intensità I sfasata
+dell'angolo  rispetto alla tensione (ipotesi di carico R-L, Fig. X.5.2).
+Tab. X.5.2   Cadute di tensione in mV/(A m) per cavi BT bipolari e tripolari (da norma
+CEI-UNEL 35023)
+Sezione nominale
+(mm2)
+Cavi bipolari
+Cavi tripolari
+corrente continua
+c.a. monofase
+c. a. trifase
+cos  = 1
+cos  = 0,8
+cos  = 1
+cos  = 0,8
+1,5
+2,5
+4
+6
+10
+16
+25
+35
+50
+70
+95
+120
+150
+185
+240
+300
+400
+30,2
+18,2
+11,4
+7,56
+4,55
+2,87
+1,81
+1,31
+0,966
+0,667
+0,482
+0,381
+0,311
+0,247
+0,188
+0,150
+0,117
+30,2
+18,2
+11,4
+7,56
+4,55
+2,87
+1,81
+1,31
+0,967
+0,669
+0,484
+0,383
+0,314
+0,251
+0,193
+0,156
+0,125
+24,3
+14,7
+9,21
+6,16
+3,73
+2,39
+1,55
+1,14
+0,866
+0,624
+0,476
+0,394
+0,341
+0,289
+0,245
+0,215
+0,189
+26,1
+15,7
+9,85
+6,54
+3,94
+2,48
+1,57
+1,13
+0,838
+0,579
+0,419
+0,332
+0,272
+0,217
+0,167
+0,135
+0,108
+21,0
+12,7
+7,98
+5,34
+3,24
+2,07
+1,34
+0,988
+0,750
+0,541
+0,412
+0,342
+0,295
+0,250
+0,212
+0,186
+0,164
+Fig. X.5.1   Linea con carico
+di estremità.
+Fig. X.5.2   Diagramma vettoriale 
+delle correnti.
+U
+U%Un
+100
+---------------------
+4
+230
+
+100
+-------------------
+9,2 V
+=
+=
+=
+u
+1000U
+I l
+--------------------
+1000
+9,2
+
+35
+100
+
+--------------------------
+2,63 mV
+A m
+---------
+=
+=
+=
+l
+A
+B
+I
+O
+I
+U
+Ir
+
+Il
+
+[PAG 929]
+IMPIANTI  ELETTRICI                                               X-79
+La corrente può essere scomposta nelle due componenti Ir e Il, rispettivamente in fase
+(componente attiva) e in quadratura con la tensione (componente reattiva, induttiva o
+capacitiva), date da:
+(X.5.21)
+La sezione della linea può essere calcolata, in funzione della c.d.t. ammessa, con la
+relazione:
+(X.5.22)
+dove:
+–   è la resistività del conduttore alla temperatura di servizio;
+–  xl è la reattanza unitaria di linea che, in via preliminare, si assume pari a 0,1103 o
+0,4103 /m, rispettivamente per linee in cavo o aeree;
+–  Uf è la caduta di tensione di fase, pari a U2 per linee in c.a. monofase e  U
+per linee in c.a. trifase;
+–  Mr e Ml sono i momenti amperometrici delle due componenti della corrente rispetto
+al punto A, espressi in ampèremetro e dati da:
+(X.5.23)
+Per applicare questo metodo, che si basa ancora sul criterio del contenimento della
+c.d.t., occorre pertanto:
+–  fissare il valore ammissibile della c.d.t. percentuale e calcolare U e Uf;
+–  assegnare il valore convenzionale della reattanza di linea unitaria;
+–  calcolare i momenti amperometrici;
+–  determinare la sezione teorica con la X.5.22, scegliere la sezione commerciale effet-
+tiva e verificare che la portata sia non inferiore alla corrente d'impiego I, altrimenti si deve
+aumentare la sezione;
+–  nei casi dubbi, quando il valore effettivo di xl è molto diverso da quello convenzio-
+nale assunto, potrebbe essere necessario verificare la c.d.t. effettiva.
+Esempio 5
+Per la linea monofase dell'esempio 4, supponendo che il f.d.p. sia pari a 0,8 e che il
+cavo sia isolato in PVC ( = 0,0213  mm2/m a 70 °C), l'applicazione del metodo porta ai
+seguenti risultati:
+Il valore normalizzato corrispondente è 16 mm2.
+Ir
+I cos;
+=
+Il
+I sen
+=
+S
+Mr
+Uf
+xlMl
+–
+----------------------------
+=
+3
+Mr
+lIr ;
+=
+Ml
+lIl
+=
+Ir
+I cos
+35
+0,8
+
+28 A
+=
+=
+;
+=
+Il
+I sen
+35
+0,6
+
+21 A
+=
+=
+=
+Mr
+lIr
+100
+28
+
+2800 A m
+=
+=
+;
+=
+Ml
+lIl
+100
+21
+
+2100 A m
+=
+=
+;
+=
+Uf
+U
+2
+-------
+9,2
+2
+------
+4,6 A
+=
+=
+=
+;
+xl
+0,1
+10 3
+–
+
+m----
+
+=
+S
+Mr
+Uf
+xlMl
+–
+----------------------------
+0,0213
+2800
+
+4,6
+0,1
+10 3
+–
+2100
+
+
+–
+------------------------------------------------------------
+13,6 mm2
+=
+=
+=
+
+[PAG 930]
+X-80
+  IMPIANTI ELETTRICI 
+5.7  Metodo dei momenti amperometrici: linea con carichi distribuiti
+In questo caso i carichi elettrici sono distribuiti lungo la linea, con collegamenti di
+lunghezza trascurabile.
+Fig. X.5.3   Linea con carichi distribuiti.
+Considerando il caso di Fig. X.5.3 con tre carichi posti nei punti B, C, D (l'estensione
+al caso generale di n carichi non comporta difficoltà), per l'applicazione del metodo si
+determinano, in primo luogo, le componenti delle correnti:
+(X.5.24)
+(X.5.25)
+Si calcolano poi le correnti nei vari tratti di linea:
+(X.5.26)
+(X.5.27)
+(X.5.28)
+Nel caso di presenza di carichi capacitivi, le relative componenti reattive vanno consi-
+derate negative.
+Si determinano i momenti delle componenti ohmiche e reattive delle correnti rispetto
+al punto A:
+(X.5.29)
+(X.5.30)
+Dopo aver fissato il valore di xl e trovato Uf in base alla U% ammessa, la sezione
+della linea A-D si calcola con la stessa relazione usata per la linea con carico di estremità:
+(X.5.31)
+A
+I1
+B
+C
+D
+I2
+J1
+J2
+J3
+d1
+d2
+d3
+l1
+l2
+l3
+I3
+Ir1
+I1 cos1 ;
+=
+Ir2
+I2 cos2 ;
+=
+Ir3
+I3 cos3
+=
+Il1
+I1 sen1 ;
+=
+Il2
+I2 sen2 ;
+=
+Il3
+I3 sen3
+=
+J3
+I3
+Ir3
+2
+Il3
+2
++
+=
+=
+J2
+Ir2
+Ir3
++
+
+2
+Il2
+Il3
++
+
+2
++
+=
+J1
+Ir1
+Ir2
+Ir3
++
++
+
+2
+Il1
+Il2
+Il3
++
++
+
+2
++
+=
+Mr
+l1Ir1
+l2Ir2
+l3Ir3
++
++
+liIri
+i
+1
+=
+n
+
+=
+=
+Ml
+l1Il1
+l2Il2
+l3Il3
++
++
+liIli
+i
+1
+=
+n
+
+=
+=
+S
+Mr
+Uf
+xlMl
+–
+----------------------------
+=
+
+[PAG 931]
+IMPIANTI  ELETTRICI                                               X-81
+La particolarità di questo metodo è che la linea viene calcolata con sezione costante,
+anche se in realtà è interessata da correnti diverse. La verifica della portata va eseguita
+rispetto alla corrente J maggiore; nel caso di carichi tutti di tipo R-L il tratto più caricato è
+il primo, avente corrente J1.
+5.8  Metodo dei momenti amperometrici: linea con carichi diramati
+In questo caso (Fig. X.5.4 riferita a due carichi) la linea presenta un tratto principale
+A-B e delle diramazioni partenti dal nodo B, alle estremità delle quali sono collegati i
+carichi elettrici.
+Fig. X.5.4   Linea con carichi diramati.
+Fig. X.5.5   Schema equivalente.
+Dopo aver determinato le componenti delle correnti I2 e I3 con le relazioni X.5.24 e
+X.5.25, si riduce il circuito allo schema equivalente di Fig. X.5.5, nel quale il complesso
+delle diramazioni è sostituito da un unico tratto di lunghezza d, il cui valore si calcola
+imponendo l'uguaglianza dei momenti amperometrici resistivi rispetto al punto B, con la
+relazione:
+(X.5.32)
+In questo modo si ritorna al caso della linea con carico di estremità, per la quale i
+momenti amperometrici valgono:
+(X.5.33)
+(X.5.34)
+La sezione S1 del tratto A-B si calcola con formula generale:
+(X.5.35)
+La portata del cavo scelto andrà confrontata con la corrente d'impiego del tratto A-B,
+data da:
+(X.5.36)
+A
+B
+C
+D
+I1
+I2
+I3
+l1
+l2
+l3
+A
+B
+I1
+l1
+d
+d
+l2Ir2
+l3Ir3
++
+Ir2
+Ir3
++
+-------------------------------
+=
+Mr
+l1
+d
++
+
+Ir1
+l1
+d
++
+
+Ir2
+Ir3
++
+
+
+=
+=
+Ml
+l1
+d
++
+
+Il1
+l1
+d
++
+
+Il2
+Il3
++
+
+
+=
+=
+S1
+Mr
+Uf
+xlMl
+–
+----------------------------
+=
+I1
+Ir1
+2
+Il1
+2
++
+Ir2
+Ir3
++
+
+2
+Il2
+Il3
++
+
+2
++
+=
+=
+
+[PAG 932]
+X-82
+  IMPIANTI ELETTRICI 
+Le sezioni dei tratti diramati si possono determinare solo in base alle portate dei cavi,
+scegliendole di valore tale da avere delle portate non inferiori alle correnti I2 e I3, nel caso
+di derivazioni corte, di lunghezza non superiore a 20  30 m.
+Per lunghezze superiori si deve tener conto anche delle cadute di tensione, procedendo
+nel seguente modo:
+–  si determina la c.d.t. resistiva effettiva del tratto A-B, usando la sezione S1 real-
+mente scelta, con la relazione:
+(X.5.37)
+–  si calcola la c.d.t. resistiva disponibile per le derivazioni in parallelo:
+(X.5.38)
+–  si determinano le sezioni delle derivazioni con le relazioni:
+(X.5.39)
+5.9  Metodo dei momenti amperometrici: linea alimentata alle due estremità con
+carico concentrato
+In questo caso (Fig. X.5.6) la linea è alimentata a entrambe le estremità A e B con la
+stessa tensione, mentre il carico elettrico è concentrato nel punto C.
+Fig. X.5.6   Linea alimentata alle due estremità con carico concentrato.
+Dopo aver determinato il valore della resistività  alla temperatura di servizio, aver
+fissato il valore convenzionale della reattanza unitaria xl e calcolato la c.d.t. di fase Uf in
+base alla U% ammessa, il metodo di calcolo prevede i seguenti passi:
+–  si calcolano le componenti della corrente di carico Ir = I cos e Il = I sen;
+–  si determinano le componenti resistive e reattive delle correnti Ia e Ib con le rela-
+zioni seguenti, ricavate imponendo l'uguaglianza dei momenti amperometrici delle due
+correnti rispetto al punto C:
+(X.5.40)
+(X.5.41)
+–  si calcolano le correnti nei due tratti di linea:
+(X.5.42)
+Ufr1
+l1 Ir2
+Ir3
++
+
+
+S1
+-----------------------------------
+=
+Ufrd
+Ufr
+Ufr1
+–
+rlMr
+Ufr1
+–
+=
+=
+S2
+l2Ir2
+Ufrd
+--------------- ;
+=
+S3
+l3Ir3
+Ufrd
+---------------
+=
+A
+B
+la
+lb
+Ia
+Ib
+I
+C
+Ira
+lbIr
+la
+lb
++
+--------------- ;
+=
+Irb
+laIr
+la
+lb
++
+---------------
+=
+Ila
+lbIl
+la
+lb
++
+--------------- ;
+=
+Ilb
+laIl
+la
+lb
++
+---------------
+=
+Ia
+Ira
+2
+Ila
+2
++
+=
+;
+Ib
+Irb
+2
+Ilb
+2
++
+=
