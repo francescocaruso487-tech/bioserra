@@ -1,0 +1,3279 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 3/116 ===
+Chars: 43,467 | Offset: 90,000
+
+elle m equazioni del sistema e si tralasciano le rimanenti m k
+equazioni; la scelta si deve operare in modo che la caratteristica della matrice dei coeffi-
+x1
+det A1
+det A
+-------------- x2
+
+det A2
+det A
+-------------- ... xn
+
+
+det An
+det A
+--------------
+=
+=
+=
+A
+a11 a12
+... a1n
+a21 a22
+... a2n
+...
+...
+...
+...
+am1 am2
+... amn
+=
+A
+a11 a12
+... a1n
+b1
+a21 a22
+... a2n
+b2
+...
+...
+...
+...
+...
+am1 am2
+... amn
+bm
+=
+
+[PAG 40]
+I-24
+MATEMATICA
+cienti delle equazioni considerate valga proprio k. In questo modo si opererà con un 
+sistema di sole k equazioni in n incognite.
+–  In tale sistema si prendono k incognite tali che il determinante della matrice dei loro 
+coefficienti sia diverso da zero. Alle altre n k incognite si attribuiscono valori arbitrari 
+(parametri).
+Si ottiene quindi un sistema di k equazioni in k incognite il cui determinante della 
+matrice dei coefficienti è diverso da zero e quindi si può risolvere con la regola di Cramer.
+La n-upla di valori così trovata (k soluzioni e n k parametri) costituisce una solu-
+zione del sistema.
+Esempio
+Dato il sistema
+le matrici completa A ed incompleta A sono:
+ed entrambe hanno la stessa caratteristica 2; è quindi verificata la condizione del teorema 
+di Rouchè-Capelli ed il sistema ha   soluzioni.
+Poiché il determinante formato dalle incognite x e y è diverso da zero, per determinare 
+tali soluzioni si può attribuire all’incognita z un valore arbitrario e risolvere il sistema con 
+la regola di Cramer:
+Di seguito sono riportati due esempi dei valori assunti dalle variabili x e y in relazione 
+al parametro z; analogamente si possono calcolare altre infinite coppie di valori per ogni 
+possibile z.
+3.4.3  Sistemi omogenei
+Dato il sistema lineare omogeneo I.3.22, esso ammette sempre la soluzione nulla 
+x1 = x2 = ... = xn = 0; con il teorema di Rouchè-Capelli è però possibile valutare se, oltre a 
+questa, esistono anche altre soluzioni.
+x
+y
+z = 0
+1/7
+3/7
+z = 1
+4
+0
+x
+2y
+–
+5z
++
+1
+=
+2x
+3y
+7z
++
++
+1
+–
+=
+
+
+
+A
+1
+2
+–
+5
+2
+3
+7
+=
+A
+1
+2
+–
+5
+1
+2
+3
+7
+1
+–
+=
+x
+2y
+–
+1
+5z
+–
+=
+2x
+3y
++
+1
+–
+7z
+–
+=
+
+
+
+D
+1
+2
+–
+2
+3
+7
+=
+=
+Dx
+1
+5z
+–
+
+
+2
+–
+1
+–
+7z
+–
+
+3
+1
+29z
+–
+=
+=
+Dy
+1
+1
+5z
+–
+
+
+2
+1
+–
+7z
+–
+
+
+3
+–
+3z
++
+=
+=
+x
+1
+29z
+–
+7
+-----------------
+=
+y
+3
+–
+3z
++
+7
+------------------
+=
+
+[PAG 41]
+MATEMATICA
+I-25
+(I.3.22)
+È evidente che nel caso di sistemi omogenei la matrice completa e quella dei coeffi-
+cienti hanno la stessa caratteristica k.
+In particolare:
+–  se k = n la soluzione nulla è l’unica;
+–  se k < n si hanno n k incognite libere e quindi n k soluzioni oltre a quella nulla;
+–  se il numero delle equazioni è uguale a quello delle incognite, perché sia k < n biso-
+gna che il determinante della matrice dei coefficienti sia nullo.
+3.4.4  Metodo di Gauss
+Dato il sistema I.3.16 di n equazioni in n incognite si procede nel modo seguente:
+–  si riscrive la prima equazione inalterata;
+–  la seconda equazione si ottiene sottraendo la prima equazione moltiplicata per a21
+dalla seconda moltiplicata per a11;
+–  la terza equazione si ottiene sottraendo la prima equazione moltiplicata per a31 dalla 
+terza moltiplicata per a11;
+–  si procede così fino all’ultima equazione ottenuta sottraendo la prima equazione mol-
+tiplicata per an1 dall’ultima moltiplicata per a11.
+Si ottiene quindi il seguente sistema:
+(I.3.23)
+Si opera poi in modo analogo lasciando inalterate le prime due equazioni ed elimi-
+nando dalle altre x2, e così via con le altre incognite fino ad ottenere il sistema I.3.24; 
+ricavata xn utilizzando la sostituzione a ritroso si ricavano anche i valori di x1, ..., xn - 1.
+(I.3.24)
+Il metodo di Gauss si può utilizzare anche per sistemi di m equazioni in n incognite.
+Se m > n e se, per il teorema di Rouchè-Cappelli, il sistema ammette una sola soluzio-
+ne, si possono trascurare m n equazioni e risolvere il sistema di n equazioni in n inco-
+gnite come appena visto.
+Se m < n si hanno n m incognite libere ed il sistema può essere risolto assegnando 
+valori arbitrari ad esse.
+a11x1
+a12x2
+...
+a1nxn
++
++
++
+0
+=
+a21x1
+a22x2
+...
+a2nxn
++
++
++
+0
+=
+...
+am1x1
+am2x2
+...
+amnxn
++
++
++
+0
+=
+
+
+
+
+
+
+
+a11x1
+a12x2
+...
+a1nxn
++
++
++
+b1
+=
++a22x2
+...
+a2nxn
++
++
+b2
+=
+...
++an2x2
+...
+annxn
++
++
+bn
+=
+
+
+
+
+
+
+
+a11x1
+a12x2
+a13x3
+...
+a1nxn
++
++
++
++
+b1
+=
++a22x2
+a23x3
++
+...
+a2nxn
++
++
+b2
+=
++a33x3
+...
+a3nxn
++
++
+b3
+=
+...
++annxn
+bn
+=
+
+
+
+
+
+
+
+
+
+
+[PAG 42]
+I-26
+MATEMATICA
+4  EQUAZIONI, SISTEMI E DISEQUAZIONI
+4.1  Generalità
+Un’equazione è un’uguaglianza tra due espressioni algebriche contenenti una o più 
+lettere verificata solo per determinati valori di queste ultime. Tali valori si chiamano solu-
+zioni o radici dell’equazione, mentre le lettere alle quali si devono sostituire le soluzioni 
+si chiamano incognite. Il grado di un’equazione rispetto ad un’incognita è il massimo 
+esponente con cui essa compare. Il teorema fondamentale dell’algebra o di D’Alembert
+afferma che un’equazione intera di grado n ammette al massimo n soluzioni (reali o com-
+plesse). Se un’equazione ammette infinite soluzioni si dice indeterminata o identità; 
+un’equazione si dice impossibile se non ammette nessuna soluzione; due equazioni si 
+dicono equivalenti se ammettono le stesse soluzioni.
+Principi di equivalenza
+Primo principio di equivalenza. Aggiungendo o togliendo ad ambo i membri di una 
+equazione uno stesso numero o una stessa espressione si ottiene un’equazione equivalente 
+a quella data.
+Secondo principio di equivalenza. Moltiplicando o dividendo ambo i membri di 
+un’equazione per uno stesso numero o una stessa espressione algebrica diversa da zero e 
+non contenente l’incognita, si ottiene un’equazione equivalente a quella data.
+Si hanno alcune importanti conseguenze:
+–  si possono eliminare termini uguali posti in membri diversi;
+–  si può trasportare un termine da un membro all'altro purché lo si cambi di segno;
+–  si può cambiare il segno a tutti i termini di entrambi i membri;
+–  un’equazione contenente frazioni può essere portata a forma intera moltiplicando i 
+due membri dell’equazione per il minimo comun denominatore.
+4.2  Equazioni di 1° grado ad una incognita
+Sono equazioni che contengono una sola incognita che compare solo al primo grado; 
+la loro forma normale è ax = b.
+Per quanto riguarda le costanti a e b, si possono verificare i seguenti tre casi:
+–  Se a  0 e b qualsiasi (cioè b  0 oppure b  0) l’equazione si dice determinata e la sua 
+soluzione è
+(I.4.1)
+–  Se a  0 e b  0 l’equazione è del tipo 0 x  b e si dice impossibile perché non ha 
+soluzioni; infatti ogni numero moltiplicato per 0 dà 0 (e non b).
+–  Se a  0 e b  0 l’equazione è del tipo 0 x  0 e si dice indeterminata, in quanto 
+ammette infinite soluzioni (è un’identità); infatti tutti i numeri moltiplicati per 0 danno 0.
+Il procedimento per la risoluzione delle equazioni di 1° grado è il seguente:
+–  si libera l’equazione dagli eventuali denominatori, facendo il minimo comun deno-
+minatore (m. c. d.);
+–  si eliminano le parentesi, effettuando i calcoli;
+–  si spostano i termini in modo da avere al 1° membro solo quelli che contengono 
+l’incognita;
+–  si riducono i termini simili, portando l’equazione in forma normale;
+–  si stabilisce se l’equazione è determinata (e si trova la soluzione), indeterminata o 
+impossibile.
+Esempio
+Data l’equazione
+x
+b
+a--
+=
+
+[PAG 43]
+MATEMATICA
+I-27
+si ha
+e quindi: 4x + 2 + 12 = 6  3x  6; 4x + 3x = 2 12; x = 2.
+4.3  Equazioni frazionarie
+Nelle equazioni frazionarie l’incognita compare anche al denominatore. Il procedi-
+mento di risoluzione prevede il calcolo del minimo comun denominatore e la sua succes-
+siva eliminazione, ma è necessario individuare prima quali valori dell’incognita rendono 
+nulli i denominatori: tali valori non possono essere soluzione dell’equazione perché ren-
+dono priva di senso almeno una delle frazioni.
+Esempio
+Data l’equazione
+i valori di x che annullano i denominatori sono x = 0 e x = 1/3 e quindi le condizioni di 
+accettabilità sono x  0 e x  1/3.
+4.4  Sistemi di equazioni di 1° grado in due incognite
+L’insieme di due equazioni di 1° grado in due incognite si dice sistema di 1° grado in 
+due incognite (I.4.2).
+(I.4.2)
+La soluzione del sistema è una coppia di numeri soluzione contemporaneamente di 
+entrambe le equazioni. Un sistema è ridotto in forma normale quando tutte le sue equa-
+zioni sono ridotte in forma normale, cioè sono del tipo ax + by = c. Due sistemi si dicono 
+equivalenti quando ammettono le stesse soluzioni.
+Un sistema di 1° grado è:
+–  determinato quando ammette una sola soluzione;
+–  impossibile quando non ammette soluzioni;
+–  indeterminato quando ammette infinite soluzioni.
+4.5  Risoluzione dei sistemi di 1° grado di due equazioni in due incognite
+Sostituzione
+–  Si esplicita una delle equazioni rispetto ad una delle incognite, ad esempio rispetto a x.
+–  Si sostituisce l’espressione trovata nell’altra equazione e la si risolve, trovando il 
+valore di y.
+–  Si sostituisce il valore di y nell’espressione esplicitata rispetto a x e si calcola 
+quest’ultima.
+Confronto
+–  Si ricava la stessa incognita in entrambe le equazioni.
+–  Si uguagliano le due espressioni ottenute e si risolve ottenendo il valore dell’altra 
+incognita.
+–  Si sostituisce il valore trovato in una delle equazioni iniziali e si ricava quindi il valore 
+della prima incognita.
+2x
+1
++
+3
+--------------
+2
++
+2
+x
+–
+2
+-----------
+1
+–
+=
+2
+2x
+1
++
+
+
+12
++
+
+6
+---------------------------------------
+3
+2
+x
+–
+
+
+6
+–
+
+6
+--------------------------------
+=
+4x
+1
++
+x
+--------------
+6x
+2
++
+3x
+1
+–
+--------------
+2
++
+=
+ax
+by
+c
++
++
+0
+=
+ax
+by
+c
++
++
+0
+=
+
+
+
+
+[PAG 44]
+I-28
+MATEMATICA
+Metodo di Cramer
+Dato il  sistema in forma normale
+si calcolano i tre determinanti
+e la risoluzione del sistema è:
+4.6   Disequazioni
+Una disequazione è una disuguaglianza fra due espressioni algebriche contenenti 
+incognite e verificata solo per particolari valori attribuiti alle incognite. Risolvere una 
+disequazione significa determinare l’insieme S dei numeri reali per i quali risulta vera; gli 
+elementi di questo insieme S sono le sue soluzioni.
+Due disequazioni si dicono equivalenti se ammettono le stesse soluzioni.
+Principi di equivalenza
+–  Aggiungendo ai due membri di una disequazione uno stesso numero relativo o una 
+stessa espressione si ottiene una disequazione equivalente alla data.
+–  Moltiplicando o dividendo entrambi i membri di una disequazione per uno stesso 
+numero positivo si ottiene una disequazione equivalente alla data; moltiplicando o divi-
+dendo per un numero negativo si ottiene una disequazione equivalente alla data solo se si 
+cambia il verso della disuguaglianza.
+4.7  Proprietà delle disequazioni
+–  Si possono spostare i termini da un membro all’altro, purché si cambi loro il segno.
+–  Si possono moltiplicare o dividere i due membri per uno stesso fattore numerico, pur-
+ché positivo.
+–  Si può cambiare il segno a tutta la disequazione, purché si cambi anche il suo verso.
+Esempio
+Applicando il secondo principio e quindi il primo: 3x + 6 4x + 8; x  2; x  2.
+Le soluzioni si possono rappresentare graficamente su una retta orientata:
+ax
+by
++
+c
+=
+ax
+by
++
+c
+=
+
+
+
+D
+a b
+ab
+ab
+ab
+–
+=
+=
+Dx
+c b
+cb
+cb
+cb
+–
+=
+=
+Dy
+a c
+ac
+ac
+ac
+–
+=
+=
+x
+Dx
+D
+------
+=
+y
+Dy
+D
+------
+=
+1
+2--x
+1
++
+2x
+4
++
+3
+--------------
+
+2
+
+[PAG 45]
+MATEMATICA
+I-29
+4.8  Sistemi di disequazioni
+Si chiama sistema di disequazioni l’insieme di due o più disequazioni nella stessa 
+incognita. La soluzione del sistema è data dai valori dell’incognita che soddisfano tutte le 
+disequazioni del sistema, cioè l’intersezione dei singoli insiemi soluzione. Per risolvere 
+un sistema di disequazioni di 1° grado in una incognita si risolvono separatamente le sin-
+gole disequazioni, si rappresentano graficamente le soluzioni e i valori che risultano 
+simultaneamente soddisfatti costituiscono la soluzione.
+Esempio
+Le due disequazioni risultano soddisfatte per:
+4.9  Disequazioni fratte
+Una disequazione si dice fratta quando l’incognita compare al denominatore.
+Per trovare le soluzioni si applica il seguente procedimento:
+–  si porta la disequazione in forma normale, cioè nella forma:
+(I.4.3)
+–  si studiano separatamente i segni del numeratore e del denominatore e si rappresen-
+tano graficamente;
+–  si applica la regola dei segni della divisione e si determina il segno complessivo della 
+frazione, individuando così gli intervalli in cui la disequazione è soddisfatta.
+Esempio
+Si porta la disequazione in forma normale:
+Graficamente:
+x
+1
+0
+
+–
+2x
+1
+6x
+9
+–
+
+–
+
+
+
+x
+1
+
+x
+2
+
+
+
+
+e quindi il sistema per
+1
+x
+2
+
+
+2
+1
+x  1
+x  2
+1 x  2
+A x
+
+B x
+
+----------
+0
+0
+
+
+2x
+1
+–
+x
+2
++
+--------------
+3
+
+2x
+1
+–
+3x
+–
+6
+–
+x
+2
++
+-----------------------------------
+0
+
+x
+–
+7
+–
+x
+2
++
+---------------
+0
+
+numeratore
+denominatore
+frazione
+
+
+
+
+
+
+7
+2
+
+
+
+
+[PAG 46]
+I-30
+MATEMATICA
+Quindi la disequazione risulta soddisfatta per valori di x  7 e x 2; l’elemento 
+{2} non fa parte dell’insieme delle soluzioni perché annullerebbe il denominatore.
+4.10  Equazioni di 2° grado
+La forma canonica o normale di un’equazione di secondo grado in una incognita è la 
+seguente:
+ax2 + bx + c = 0
+(I.4.4)
+Per risolverla si ricorre alla formula risolutiva:
+(I.4.5)
+Si pone b2 4ac, dove  è detto discriminante, poiché da esso dipendono il 
+numero e il valore delle soluzioni:
+–  se b24ac > 0 si hanno due soluzioni reali e distinte;
+–  se b2 4ac = 0 si hanno due soluzioni reali coincidenti: 
+;
+–  se b24ac < 0 non si hanno soluzioni reali ma l’equazione ammette due soluzioni 
+nel campo dei numeri complessi.
+Formula risolutiva ridotta
+La formula ridotta si applica nel caso in cui il coefficiente b sia un numero pari ed è 
+così strutturata:
+(I.4.6)
+Relazioni fra le soluzioni ed i coefficienti di un’equazione di secondo grado
+Tra le due soluzioni di un’equazione di 2° grado x1 e x2 valgono le seguenti relazioni:
+–  
+;
+–  
+.
+Detti quindi rispettivamente s la somma delle due soluzioni e p il prodotto, l’equa-
+zione I.4.4 si può riscrivere nella forma: x2  sx + p = 0.
+In un’equazione di secondo grado in forma canonica si ha una permanenza quando i 
+segni di due coefficienti consecutivi sono concordi; se invece i segni di due coefficienti 
+consecutivi sono discordi si ha una variazione.
+Esempio
+Nell’equazione 2x2  3x + 1 = 0 si hanno due variazioni.
+Teorema di Cartesio o regola dei segni
+In un’equazione di secondo grado completa ridotta a forma normale e con discriminante 
+positivo o nullo, ad ogni variazione di segno corrisponde una radice positiva, ad ogni per-
+manenza corrisponde una radice negativa. Se la permanenza precede la variazione, la radice 
+negativa è maggiore in valore assoluto; viceversa, se la variazione precede la permanenza, 
+la radice positiva è maggiore in valore assoluto.
+4.11  Disequazioni di 2° grado
+Una disequazione è di secondo grado quand si può portare nella forma:
+x
+b
+–
+b2
+4ac
+–
+
+2a
+--------------------------------------
+=
+x1
+x2
+b
+–
+2a
+-----
+=
+=
+x
+b
+2--
+–
+b
+2--
+–
+
+
+
+2
+ac
+–
+
+a
+--------------------------------------------
+=
+x1
+x2
++
+b
+–
+a-----
+=
+x1 x2
+
+c
+a--
+=
+
+[PAG 47]
+MATEMATICA
+I-31
+ax2+bx+c  0     con a  0
+(I.4.7)
+(ax2+bx+c  0 ax2+bx+c  0 ax2+bx+c  0)
+Per risolvere tale disequazione è efficace la trattazione analitica: chiamando y il trino-
+mio al primo membro della disequazione, trovare le soluzioni equivale a stabilire per 
+quali valori di x l’ordinata y della parabola y = ax2 + bx + c risulta positiva, negativa o 
+nulla (si veda il Par. 7.8). Si presentano i casi seguenti:
+1)  Se b24ac > 0, la parabola ha due intersezioni distinte con l’asse x:
+(I.4.8)
+2)  Se b24ac = 0, l’unica intersezione con l’asse x è anche il vertice della parabola e 
+cioè: 
+.
+a)  Se a > 0, la parabola ha la concavità verso l’alto:
+–  y > 0 per x < x1 e x > x2;
+–  y = 0 per x = x1 e x = x2;
+–  y < 0 per  x1 < x < x2.
+b)  Se a < 0, la parabola ha la concavità verso il basso:
+–  y < 0 per x < x1 e x > x2;
+–  y = 0 per x = x1 e x = x2;
+–  y > 0 per  x1 < x < x2.
+a)  Se a > 0, la parabola ha la concavità verso l’alto:
+–  y > 0 per ogni 
+;
+–  y = 0 per 
+;
+–  y < 0  per nessun valore di x.
+b)  Se a < 0, la parabola ha la concavità verso il basso:
+–  y < 0 per ogni 
+;
+–  y = 0 per 
+;
+–  y > 0 per nessun valore di x.
+x1
+b
+–
+b2
+4ac
+–
++
+2a
+--------------------------------------
+=
+x2
+b
+–
+b2
+4ac
+–
+–
+2a
+--------------------------------------
+=
+y
+x
+x1
+x2
+x
+x1
+x2
+y
+x1
+x2
+b
+2a
+-----
+–
+=
+=
+x
+b
+2a
+-----
+–
+
+x
+b
+2a
+-----
+–
+=
+x
+y
+x1 = x2 = b
+2a
+x
+b
+2a
+-----
+–
+
+x
+b
+2a
+-----
+–
+=
+x1 = x2 = b
+2a
+x
+y
+
+[PAG 48]
+I-32
+MATEMATICA
+3)  Se b24ac < 0 non vi sono intersezioni con l’asse x.
+4.12  Sistemi di 2° grado
+Un sistema di 2° grado di due equazioni in due incognite è costituito da un’equazione 
+di primo grado e da una di secondo.
+(I.4.9)
+Per risolverlo si applica il metodo di sostituzione: si ricava una variabile dall’equa-
+zione di primo grado e si sostituisce in quella di secondo ottenendo in tal modo un’equa-
+zione di secondo grado in una sola incognita.
+A seconda del valore del discriminante dell’equazione risolutrice si possono avere tre casi:
+–  per > 0 si ricavano due valori reali distinti x1 e x2 da cui si calcolano rispettivamente
+y1 e y2. Il sistema è determinato e le soluzioni sono le coppie (x1; y1) e (x2; y2).
+–  per = 0 si ricavano due valori reali coincidenti x1 = x2 da cui si trovano y1 = y2. Il 
+sistema è determinato e la soluzione è la coppia (x1; y1).
+–  per < 0 non ci sono soluzioni reali. Il sistema è impossibile.
+5  TRIGONOMETRIA
+5.1  Misura degli angoli in gradi sessagesimali ed in radianti
+Il grado sessagesimale è la novantesima parte dell’angolo retto. Il radiante è l’angolo 
+al centro di una circonferenza che sottende un arco lungo quanto il raggio della circonfe-
+renza stessa. Un angolo piatto misura quindi 180 gradi sessagesimali e  radianti.
+Per passare dalla misura di un angolo in radianti a quella in gradi e viceversa si usano 
+le seguenti formule di trasformazione:
+(I.5.1)
+a)  Se a > 0, la parabola ha la concavità verso l’alto:
+–  y > 0 xR;
+–  y  0 per nessun valore di x.
+b)  Se a < 0, la parabola ha la concavità verso il basso:
+–  y < 0 xR;
+–  y  0 per nessun valore di x.
+x
+y
+x
+y
+ax
+by
++
+c
+=
+dx2
+exy
+fy2
+gx
+hy
++
++
++
++
+i
+=
+
+
+
+
+r 180
+
+
+------------------
+=
+e
+r
+
+
+180
+-------------
+=
+
+[PAG 49]
+MATEMATICA
+I-33
+5.2  Funzioni trigonometriche e loro rappresentazioni grafiche
+Consideriamo la circonferenza goniometrica (circonferenza di centro l’origine e di 
+raggio di lunghezza 1 rispetto all’unità di misura). Consideriamo un punto P su di essa e 
+l’angolo  formato dal raggio OP e dall’asse delle ascisse (Fig. I.5.1). L’ascissa e l’ordi-
+nata del punto P sono rispettivamente il coseno ed il seno dell’angolo.
+La funzione tangente è definita come
+(I.5.2)
+Geometricamente tale funzione rappresenta l’ordinata del punto T intersezione tra la 
+retta parallela all’asse delle ordinate e passante per A = (1, 0) con la retta congiungente 
+l’origine con il punto P (Fig. I.5.2).
+La funzione cotangente è definita come
+(I.5.3)
+Geometricamente è l’ascissa del punto C di intersezione tra la retta parallela all’asse x
+passante per B(0, 1) e la retta congiungente l’origine con il punto P (Fig. I.5.3).
+Fig. I.5.1   Circonferenza goniometrica.
+Fig. I.5.2  
+Fig. I.5.3  
+
+O
+P (cos; sen)
+x
+y
+tg
+sen
+cos
+-----------
+=
+per
+
+
+2--
+k
++
+k
+Z
+
+
+
+cotg
+cos
+sen
+-----------
+=
+per
+
+kk
+Z
+
+
+
+A = (1, 0)
+
+P
+tg
+T
+x
+y
+B = (0, 1)
+
+P
+C
+cotg
+x
+y
+
+[PAG 50]
+I-34
+MATEMATICA
+La funzione secante è l’inverso del coseno, purché il coseno sia  0:
+(I.5.4)
+La funzione cosecante è l’inverso del seno, purché il seno sia  0:
+(I.5.5)
+5.3  Valori delle funzioni goniometriche di archi particolari
+5.4  Archi associati
+Tab. I.5.1   Valori delle funzioni goniometriche per archi particolari
+
+sen
+cos
+tg
+cotg
+2 = 0° = 360°
+0
+1
+0
+non esiste
+1
+1
+1
+0
+non esiste
+0
+ = 180°
+0
+1
+0
+non esiste
+1
+0
+non esiste
+0
+Tab. I.5.2   Relazioni tra archi
+seno
+coseno
+tangente
+cotangente
+sen() = sen
+cos() = cos
+tg() = tg
+cotg() = cotg
+sen(/2 + ) = cos
+cos(/2 + ) = sen
+tg(/2 + ) = cotg
+cotg(/2 + ) = tg
+sen(/2  ) = cos
+cos(/2  ) = sen
+tg(/2  ) = cotg
+cotg(/2  ) = tg
+sen( + ) = sen
+cos( + ) = cos
+tg( + ) = tg
+cotg( + ) = cotg
+sen(  ) = sen
+cos(  ) = cos
+tg(  ) = tg
+cotg(  ) = cotg
+sen(2 + ) = sen
+cos(2 + ) = cos
+tg(2 + ) = tg
+cotg(2 + ) = cotg
+sen(2  ) = sen
+cos(2  ) = cos
+tg(2  ) = tg
+cotg(2  ) = cotg
+sec
+1
+cos
+-----------
+=
+cosec
+1
+sen
+-----------
+=
+
+12
+-----
+15
+=
+6
+2
+–
+4
+-------------------
+6
+2
++
+4
+--------------------
+2
+3
+–
+2
+3
++
+
+6--
+30
+=
+1
+2--
+3
+2
+------
+3
+3
+------
+3
+
+4--
+45
+=
+2
+2
+------
+2
+2
+------
+
+3--
+60
+=
+3
+2
+------
+1
+2--
+3
+3
+3
+------
+5
+12
+-----
+75
+=
+6
+2
++
+4
+--------------------
+6
+2
+–
+4
+-------------------
+2
+3
++
+2
+3
+–
+
+2--
+90
+=
+3
+2--
+270
+=
+
+[PAG 51]
+MATEMATICA
+I-35
+Tab. I.5.3   Relazioni tra funzioni trigonometriche
+In funzione di
+cosecante
+cosec
+secante
+sec
+cotangente
+cotg
+tangente
+tg
+coseno
+cos
+seno
+sen
+Funzione    
+sen
+cos
+tg
+cotg
+sec
+cosec
+1
+cosec
+----------------
+cosec2
+1
+–
+cosec
+--------------------------------
+
+1
+cosec2
+1
+–
+--------------------------------
+
+cosec2
+1
+–
+
+cosec
+cosec2
+1
+–
+--------------------------------
+
+sec2
+1
+–
+sec
+--------------------------
+
+1
+sec
+-----------
+sec2
+1
+–
+
+1
+sec2
+1
+–
+--------------------------
+
+sec
+sec2
+1
+–
+--------------------------
+
+1
+cotg2
+1
++
+------------------------------
+
+cotg
+cotg2
+1
++
+------------------------------
+
+1
+cotg
+-------------
+cotg2
+1
++
+cotg
+------------------------------
+
+cotg2
+1
++
+
+tg
+1
+tg2
++
+------------------------
+
+1
+1
+tg2
++
+------------------------
+
+1
+tg
+--------
+1
+tg2
++
+
+1
+tg2
++
+tg
+------------------------
+
+1
+cos2
+–
+
+1
+cos2
+–
+cos
+---------------------------
+
+cos
+1
+cos2
+–
+---------------------------
+
+1
+cos
+-----------
+1
+1
+cos2
+–
+---------------------------
+
+1
+sen2
+–
+
+sen
+1
+sen2
+–
+---------------------------
+
+1
+sen2
+–
+sen
+---------------------------
+
+1
+1
+sen2
+–
+---------------------------
+
+1
+sen
+-----------
+
+[PAG 52]
+I-36
+MATEMATICA
+5.5  Relazioni tra le varie funzioni trigonometriche
+Di seguito sono elencate le relazioni fondamentali tra funzioni trigonometriche.
+–  sen2 + cos2 = 1, teorema di Pitagora;
+–  sec2  tg2 = 1;
+–  cosec2  cotg2 = 1.
+Nella Tab. I.5.3 sono presenti altre relazioni.
+5.6  Formule di addizione, duplicazione, bisezione, prostaferesi, formule parametri-
+che e di Werner
+Tab. I.5.4   Formule di addizione
+Tab. I.5.5   Formule di duplicazione
+Tab. I.5.6   Formule di bisezione
+Tab. I.5.7   Formule parametriche
+sen 
+
+
+
+
+sencos
+cossen
+
+
+
+=
+tg 
+
+
+
+
+tg
+tg
+
+1
+tgtg
+
+
+------------------------------
+=
+cos 
+
+
+
+
+coscos
+sensen
+
+
+
+=
+cotg 
+
+
+
+
+cotgcotg
+
+1
+
+cotg
+cotg
+
+-----------------------------------------
+=
+sen2
+2sencos
+
+=
+tg2
+2tg
+1
+tg2
+–
+-------------------
+=
+cos2
+cos2
+sen2
+–
+=
+cotg2
+cotg2
+1
+–
+2cotg
+-------------------------
+=
+sen
+2---
+1
+cos
+–
+2
+--------------------
+
+=
+tg
+2---
+1
+cos
+–
+1
+cos
++
+--------------------
+
+1
+cos
+–
+sen
+--------------------
+sen
+1
+cos
++
+--------------------
+=
+=
+=
+cos
+2---
+1
+cos
++
+2
+--------------------
+
+=
+cotg
+2---
+1
+cos
++
+1
+cos
+–
+--------------------
+
+1
+cos
++
+sen
+--------------------
+sen
+1
+cos
+–
+--------------------
+=
+=
+=
+sen
+2t
+1
+t2
++
+-------------
+=
+con
+t
+tg
+2---
+=
+tg
+2t
+1
+t2
+–
+------------
+=
+cos
+1
+t2
+–
+1
+t2
++
+-------------
+=
+cotg
+1
+t2
+–
+2t
+------------
+=
+
+[PAG 53]
+MATEMATICA
+I-37
+5.7  Relazioni tra lati ed angoli di un triangolo
+5.7.1  Triangolo rettangolo
+Teorema
+In un triangolo rettangolo:
+–  la lunghezza di un cateto è uguale a quella dell’ipotenusa per il seno dell’angolo oppo-
+sto al cateto;
+–  la lunghezza di un cateto è uguale a quella dell’ipotenusa per il coseno dell’angolo 
+acuto adiacente al cateto;
+–  la lunghezza di un cateto è uguale a quella dell’altro cateto per la tangente dell’angolo 
+opposto al primo cateto.
+Osservando la Fig. I.5.4 si ricavano le seguenti relazioni.
+Tab. I.5.8   Formule di prostaferesi
+Tab. I.5.9  Formule di Werner
+Fig. I.5.4  
+sen
+sen
++
+2sen
+
++
+2
+------------
+cos
+
+–
+2
+------------
+
+=
+cos
+cos
++
+2cos
+
++
+2
+------------
+cos
+
+–
+2
+------------
+
+=
+sen
+sen
+–
+2cos
+
++
+2
+------------
+sen
+
+–
+2
+------------
+
+=
+cos
+cos
+–
+2
+– sen
+
++
+2
+------------
+sen
+
+–
+2
+------------
+
+=
+sensen
+
+1
+2-- cos 
+
+–
+
+
+cos 
+
++
+
+
+–
+
+
+=
+sencos
+
+1
+2-- sen 
+
++
+
+
+sen 
+
+–
+
+
++
+
+
+=
+coscos
+
+1
+2-- cos 
+
+–
+
+
+cos 
+
++
+
+
++
+
+
+=
+cossen
+
+1
+2-- sen 
+
++
+
+
+sen 
+
+–
+
+
+–
+
+
+=
+A
+B
+C
+a
+b
+c
+
+
+
+b
+a sen
+
+=
+c
+a sen
+
+=
+a
+b
+sen
+-----------
+=
+sen
+b
+a--
+=
+sen
+c
+a--
+=
+b
+a cos
+
+=
+c
+a cos
+
+=
+a
+c
+cos
+-----------
+=
+cos
+c
+a--
+=
+cos
+b
+a--
+=
+b
+c
+tg
+------
+=
+c
+b
+tg
+-------
+=
+tg
+b
+c--
+=
+tg
+c
+b--
+=
+
+[PAG 54]
+I-38
+MATEMATICA
+Teorema della corda
+Considerata una circonferenza di centro O e raggio r, siano BC una sua corda e  uno 
+qualunque degli angoli acuti alla circonferenza che insistono sull’arco
+. Condotto il 
+diametro passante per C si ottiene un triangolo ABC, rettangolo in B in quanto inscritto in 
+una semicirconferenza. Sotto queste ipotesi si ha:
+BC = 2rsen
+(I.5.6)
+5.7.2  Triangolo qualsiasi
+Siano , , , ed a, b, c rispettivamente le ampiezze degli angoli e le lunghezze dei lati 
+di un triangolo qualsiasi ABC.
+–  Teorema dei seni
+In un triangolo qualunque è costante il rapporto tra ogni lato e il seno dell’angolo 
+opposto:
+(I.5.7)
+–  Teorema delle proiezioni
+Ciascun lato è pari alla somma degli altri due moltiplicati ciascuno per il coseno 
+dell’angolo opposto all’altro lato:
+a = b cos + c cos
+b = c cos + a cos
+c = a cos + b cos
+–  Teorema di Carnot o del coseno
+Il quadrato di ogni lato si ottiene sommando i quadrati degli altri due lati e sottraendo 
+il loro doppio prodotto moltiplicato per il coseno dell’angolo da essi formato:
+a2 = b2 + c2  2bc cos
+b2 = a2 + c2  2ac cos
+c2 = a2 + b2  2ab cos
+Fig. I.5.5  
+Fig. I.5.6  
+BC
+)
+A
+B
+C
+O
+
+r
+a
+b
+c
+
+
+r
+
+a
+sen
+-----------
+b
+sen
+-----------
+c
+sen
+----------
+2r
+=
+=
+=
+
+[PAG 55]
+MATEMATICA
+I-39
+–  Formule di Briggs
+Sia p il semiperimetro del triangolo, cioe p = 1/2(a + b + c).
+(I.5.8)
+(I.5.9)
+(I.5.10)
+–  Area del triangolo
+(I.5.11)
+(I.5.12)
+6  GEOMETRIA EUCLIDEA
+6.1  Geometria piana
+Triangolo 
+–   +  +  = 180° 
+–  a < b + c e a > b  c
+–  Area:
+  
+Formula di Erone: 
+ con p semiperimetro
+–  Raggio del cerchio circoscritto: 
+–  Raggio del cerchio inscritto: 
+Triangolo rettangolo
+–  Teorema di Pitagora: a2 = b2 + c2
+–  I° Teorema di Euclide: AB2 = BH BC
+–  II° Teorema di Euclide: AH2 = BH HC
+–  Area: 
+sen
+2---
+p
+b
+–
+
+p
+c
+–
+
+
+bc
+---------------------------------
+=
+cos
+2---
+p p
+c
+–
+
+
+bc
+-------------------
+=
+tg
+2---
+p
+b
+–
+
+p
+c
+–
+
+
+p p
+a
+–
+
+
+---------------------------------
+=
+S
+1
+2--ab sen
+
+1
+2--bc sen
+
+1
+2--ac sen
+
+=
+=
+=
+S
+p p
+a
+–
+
+p
+b
+–
+
+p
+c
+–
+
+
+=
+a
+b
+c
+
+
+
+h
+S
+1
+2--ah
+=
+quindi
+a
+2 S
+
+h
+--------- h
+2 S
+
+a
+---------
+=
+
+=
+S
+1
+2--acsen
+=
+quindi
+a
+2 S
+
+csen
+-------------- h
+csensen
+
+=
+
+2 S
+
+ac
+---------
+=
+=
+S
+p p
+a
+–
+
+p
+b
+–
+
+p
+c
+–
+
+
+=
+R
+abc
+4S
+--------
+=
+r
+p
+a
+–
+
+p
+b
+–
+
+p
+c
+–
+
+
+p
+--------------------------------------------------
+=
+a
+b
+c
+h
+A
+B
+C
+H
+S
+b c
+
+2
+---------
+a h
+
+2
+---------
+=
+=
+
+[PAG 56]
+I-40
+MATEMATICA
+Triangolo equilatero
+–  Perimetro: 2p = 3l
+–  Altezza: 
+–  Raggio del cerchio circoscritto: 
+–  Raggio del cerchio inscritto: 
+–  R = 2r
+–  Area: 
+Poligoni
+Nei poligoni convessi di n lati si hanno le seguenti proprietà.
+–  Numero delle diagonali: 
+–  Somma degli angoli interni: (n 2) 180°
+–  Somma degli angoli esterni: 360°
+Rettangolo
+–  Perimetro: 2p = 2(a + b)
+–  Area: 
+–  Diagonale: 
+Quadrato
+–  Perimetro: 2p = 4l
+–  Area: 
+–  Diagonale: 
+Parallelogramma
+–  Perimetro: 2p = 2(a + b)
+–  Area: 
+A
+B
+C
+h
+l
+l
+l
+h
+3
+2
+------l
+=
+R
+2
+3--h
+3
+3
+------l
+=
+=
+r
+h
+3--
+3
+6
+------l
+=
+=
+S
+l h
+
+2
+--------
+3
+4
+------ l2
+3
+3
+------ h2
+3 3
+4
+--------- R2
+3 3r2
+=
+=
+=
+=
+=
+n n
+3
+–
+
+
+2
+-------------------
+a
+b
+d
+S
+a b
+
+=
+quindi
+a
+S
+b-- b
+S
+a--
+=
+
+=
+d
+a2
+b2
++
+=
+d
+l
+l
+S
+l2
+=
+quindi
+l
+S
+=
+S
+d2
+2----
+=
+quindi
+d
+2S
+=
+d
+l 2
+=
+a
+b
+h
+
+S
+a h
+
+=
+quindi
+a
+S
+h-- h
+S
+a--
+=
+
+=
+S
+absen
+=
+quindi
+a
+S
+bsen
+-------------- b
+S
+asen
+-------------- sen
+
+=
+
+S
+ab
+-----
+=
+=
+
+[PAG 57]
+MATEMATICA
+I-41
+Rombo
+–  Perimetro: 2p = 4a
+–  Area: 
+Trapezio
+–  Perimetro: 2p = a + b + c + d
+–  Area: 
+Quadrilatero
+–  Perimetro: 2p = a + b + c + d
+–  Area: 
+Quadrilatero inscritto in una circonferenza
+–  Perimetro: 2p = a + b + c + d
+–  Area: 
+Quadrilatero circoscritto ad una circonferenza
+–  Perimetro: 2p = a + b + c + d
+–  Area: 
+Poligono regolare di n lati
+–  Perimetro: 2p = n l
+a
+d1
+d2
+S
+d1 d2
+
+2
+---------------
+=
+2p
+a
+c
+h
+1
+sen
+-----------
+1
+sen
+-----------
++
+
+
+
+
+
++
++
+=
+S
+1
+2-- a
+c
++
+
+h
+
+=
+quindi
+a
+2S
+h-----
+c
+–
+h
+2S
+a
+c
++
+-----------
+=
+
+=
+a
+b
+c
+d
+h
+
+
+S
+1
+2--d1 d2
+
+sen
+
+=
+quindi
+d1
+2S
+d2 sen
+
+---------------------
+=
+a
+b
+c
+d
+
+d1
+d2
+a
+b
+c
+d
+R
+S
+ab
+cd
++
+
+ac
+bd
++
+
+ad
+bc
++
+
+
+4R
+----------------------------------------------------------------------
+=
+a
+b
+c
+d
+r
+S
+p r
+
+=
+quindi
+r
+S
+p--
+p
+
+S
+r--
+=
+=
+
+[PAG 58]
+I-42
+MATEMATICA
+–  Area: 
+con a = apotema del poligono.
+–  In ogni poligono regolare è costante il rapporto tra la misura 
+dell’apotema e quella del lato.
+Poligono regolare di n lati circoscritto ad una circonferenza
+–  Perimetro: 
+(r è l’apotema del poligono e coincide con il raggio)
+–  Area: 
+ 
+–  
+Poligono regolare di n lati inscritto in una circonferenza
+–  Perimetro: 
+–  Area: 
+, 
+Circonferenza e cerchio
+–  La circonferenza è il luogo geometrico dei punti che hanno uguale distanza (raggio) 
+da un punto dato (centro).
+–  Il cerchio è il luogo geometrico dei punti che hanno distanza dal centro minore o 
+uguale al raggio.
+–  Per tre punti non allineati passa una ed una sola circonferenza.
+–  In una circonferenza ogni diametro è maggiore di qualsiasi altra corda.
+–  Corde uguali hanno distanze uguali dal centro.
+Tab. I.6.1   Valori approssimati del rapporto apotema-lato per alcuni poligoni regolari
+Poligono regolare
+Poligono regolare
+Triangolo equilatero
+0,2887
+Ottagono
+1,2071
+Quadrato
+0,5
+Ennagono
+1,3737
+Pentagono
+0,6882
+Decagono
+1,5388
+Esagono
+0,8660
+Endecagono
+1,702
+Ettagono
+1,0383
+Dodecagono
+1,8660
+l
+O
+a
+S
+p a
+
+=
+quindi
+p
+S
+a--
+a
+
+S
+p--
+=
+=
+a
+l--
+a
+l--
+l
+O
+r
+2
+n
+2p
+n l
+2n r tg 
+n--
+
+
+=
+
+=
+S
+p r
+
+=
+S
+n r2 tg 
+n--
+1
+4--n l2 cotg 
+n--
+
+
+=
+
+
+=
+l
+R
+2
+n
+2p
+n l
+2n R sen
+n--
+
+
+=
+=
+S
+1
+4--nl2 cotg
+n--
+
+=
+S
+1
+2--nR2 sen2
+n
+------
+
+=
+
+[PAG 59]
+MATEMATICA
+I-43
+–  La retta tangente ad una circonferenza è perpendicolare 
+al raggio passante per il punto di contatto.
+–  Ogni angolo alla circonferenza è uguale alla metà 
+dell’angolo al centro che sottende la stessa corda.
+–  Ogni angolo alla circonferenza che sottende un diametro 
+è retto.
+–  I segmenti di tangente condotti da un punto esterno ad 
+una circonferenza sono uguali tra loro.
+–  Perimetro: 2p = 2r
+–  Area: S = r2
+Segmento circolare
+–  Area: 
+–  Altezza: 
+ 
+Settore circolare
+–  Area: 
+6.2  Geometria solida
+Sl = superficie laterale
+Sb= superficie di base
+St = superficie totale
+V = volume
+d1 = diagonale di base
+d2 = diagonale del solido
+a = apotema
+Parallelepipedo rettangolo
+–  Sl = 2(a + b) c
+–  St = 2(ab + ac + bc)
+–  V = abc
+–  
+–  
+B
+P
+A
+R
+2
+
+S
+1
+2-- R ls
+s
+–
+
+
+sh
++
+
+
+=
+h
+R
+1
+2-- 4R2
+s2
+–
+–
+=
+se 
+180
+
+h
+R
+1
+2-- 4R2
+s2
+–
++
+=
+se 
+180
+
+R
+h
+
+ls
+s
+
+ls
+R
+s
+h
+ls
+
+R
+S
+ls R
+
+2
+-----------
+R2
+360
+-------------
+=
+=
+a
+b
+c
+d1
+d2
+d1
+a2
+b2
++
+=
+d2
+a2
+b2
+c2
++
++
+=
+
+[PAG 60]
+I-44
+MATEMATICA
+Cubo
+l = spigolo
+–  Sl = 4l2
+–  St = 6l2
+–  V = l3
+–  
+–  
+Prisma retto
+Un prisma si dice retto se gli spigoli laterali sono perpendi-
+colari ai piani di base del prisma stesso.
+h = altezza
+2p = perimetro di base
+–  Sl = 2p h
+–  St = Sl + 2Sb
+–  V = Sb h
+Piramide retta
+Una piramide si dice retta se la base è un poligono circoscritto 
+ad una circonferenza il cui centro coincide con la proiezione orto-
+gonale del vertice sul piano di base. Una piramide retta si dice 
+regolare se ha per base un poligono regolare.
+r = raggio della circonferenza inscritta nella base
+R = raggio della circonferenza circoscritta alla base
+h = altezza della piramide
+a = apotema
+s = spigolo laterale
+2p = perimetro di base
+–  Sl = p a
+–  St = p a + Sb
+–  
+–  a2 = h2 + r2
+–  s2 = h2 + R2
+Cilindro retto
+–  Sl = 2rh
+–  St = 2r(h + r)
+–  V = r2h
+Cono retto
+–  Sl = ra
+–  St = r(a + r)
+–  
+l
+d1
+d2
+d1
+2 l
+=
+d2
+3 l
+=
+h
+h
+a
+s
+R
+r
+V
+1
+3--Sb h
+
+=
+h
+r
+h
+r
+a
+V
+1
+3--r2 h
+
+=
+
+[PAG 61]
+MATEMATICA
+I-45
+–  a2 = h2 + r2
+Sfera
+–  Sl = 4r2
+–  
+7  GEOMETRIA ANALITICA NEL PIANO
+7.1  Coordinate cartesiane nel piano
+Date in un piano due rette numeriche Ox e Oy aventi il punto O in comune e preso un 
+punto P nel piano, si considerino P e P, proiezioni di P sulle rette Ox e Oy, rispettiva-
+mente parallele alla retta Ox e alla retta Oy. Chiamate xP l’ascissa di P su Ox e yP
+l’ascissa di P su Oy, ad ogni punto P del piano viene associata una coppia di numeri reali 
+(xP, yP), e viceversa. Con questa costruzione si dice che si è riferito il piano ad un sistema 
+di coordinate cartesiane Oxy (Fig. I.7.1a).
+Fig. I.7.1   a) Sistema di coordinate cartesiane Oxy. b) Riferimento ortonormato Oxy.
+Il punto O si chiama origine del riferimento, le rette Ox e Oy sono gli assi coordinati e 
+più precisamente la retta Ox prende il nome di asse delle ascisse, mentre la retta Oy viene 
+detta asse delle ordinate. La coppia di valori associata ad ogni punto del piano è composta 
+nell’ordine dall’ascissa xP e dall’ordinata yP del punto considerato.
+Se le due rette Ox e Oy sono tra loro perpendicolari, il riferimento si dice ortogonale.
+Se sui due assi coordinati si scelgono punti unità U1 e U2 tali che
+d(O, U1) = d(O, U2)
+il riferimento si dice monometrico o normato. Un sistema cartesiano che sia contempora-
+neamente ortogonale e normato si dice ortonormato (Fig. I.7.1b). Nei paragrafi seguenti 
+si considereranno sistemi ortonormati.
+7.2  Cambiamento di coordinate cartesiane
+Traslazione degli assi coordinati
+Le nuove coordianate di un punto P(x, y) che viene visto come il punto P(x, y) a 
+seguito di una traslazione degli assi si possono calcolare mediante le seguenti equazioni:
+(I.7.1)
+dove Oxy è il primo sistema di riferimento, Oxy il secondo ed a, b sono le coordinate 
+della seconda origine O rispetto al primo sistema (Fig. I.7.2).
+r
+V
+4
+3--r3
+=
+y
+x
+P
+O
+y
+yP
+yP
+xP
+x
+xP
+O
+P
+P
+P
+P
+P
+U2
+U1
+U2
+U1
+1
+1
+1
+1
+1
+1
+a)
+b)
+x
+x
+a
+–
+=
+y
+y
+b
+–
+=
+
+
+
+
+[PAG 62]
+I-46
+MATEMATICA
+Fig. I.7.2   Traslazione degli assi coordinati.
+Rotazione
+Fissato in un piano un punto O, si chiama rotazione di centro O e ampiezza , e si 
+indica con RO,l’applicazione del piano in se stesso che ad ogni punto P fa corrispondere 
+il punto P in modo che:
+–  se P = O, allora P = P = O;
+–  se P O, allora PÔP =  e OP = OP.
+Una rotazione di centro O e ampiezza  si indica generalmente con RO, se avviene in 
+senso antiorario, con RO, se avviene in senso orario.
+Le coordinate del punto P(x, y) ottenute dalle coordinate P(x, y) dopo la rotazione 
+degli assi cartesiani mediante la RO, si calcolano con le seguenti equazioni:
+(I.7.2)
+7.3  Coordinate polari
+Si consideri una retta numerica x e siano O il suo punto origine e U il suo punto unità. 
+Preso un qualunque punto P del piano diverso da O, si consideri la circonferenza di centro 
+O passante per P e perciò di raggio OP = ; sia poi  l’angolo, misurato in radianti in 
+senso antiorario (e perciò positivo), che la semiretta OP forma con la retta x. In tale modo, 
+se 0  2, si viene a stabilire una biiezione tra i punti del piano diversi da O e le cop-
+pie di numeri reali (, ); il numero reale non negativo si chiama raggio vettore o
+modulo, mentre l’angolo  è detto anomalia del punto P. Modulo e anomalia costitui-
+scono le coordinate polari di P, il punto O si chiama polo e la retta x asse polare.
+Per passare dalle coordinate polari (, ) di un punto a quelle cartesiane (x, y) riferite 
+ad un sistema Oxy, si utilizzano le seguenti relazioni:
+(I.7.3)
+Fig. I.7.3   Rotazione degli assi.
+a
+P
+y
+O
+O
+x
+y
+b
+x
+P
+y
+O
+x
+y
+x
+
+x
+x cos
+y sen
+
++
+
+=
+y
+x sen
+y cos
+
++
+
+–
+=
+
+
+
+x
+cos
+=
+y
+sen
+=
+
+
+
+
+[PAG 63]
+MATEMATICA
+I-47
+Viceversa, per passare dalle coordinate cartesiane a quelle polari si adottano le formule 
+inverse:
+Fig. I.7.4   Coordinate polari.
+7.4  Coordinate logaritmiche
+Oltre alle coordinate cartesiane e alle coordinate polari esistono anche sistemi di coor-
+dinate logaritmiche. Dati i logaritmi decimali dei numeri interi da 1 a 10
+e fissato un segmento unitario OP detto modulo o unità della scala logaritmica, si ripor-
+tino su questo rispetto all’unità OP dieci punti aventi rispettivamente le ascisse pari a logn
+per n = 1, 2, .., 10; i punti P1, P2, ..., P10 formano una scala logaritmica:
+Tracciati nel piano due assi ortogonali, si riportino su di essi, a partire dall’origine O e 
+soltanto nel verso positivo dei due assi, due scale logaritmiche.
+n
+logn 
+n
+logn
+n
+logn
+n
+logn
+n
+logn 
+1
+0
+2
+0,30103
+3
+0,47712
+4
+0,60206
+5
+0,69897
+6
+0,77815
+7
+0,84510
+8
+0,90309
+9
+0,95424
+10
+1
+
+x2
+y2
++
+=
+sen
+y
+x2
+y2
++
+--------------------
+=
+cos
+x
+x2
+y2
++
+--------------------
+=
+P
+y
+O
+x
+
+
+y
+x
+P
+O
+
+
+U
+x
+P1
+P2
+P3
+P4
+P5
+P6 P7 P8 P9 P10
+O
+P
+1
+2
+3
+4
+5
+6 7 8 9 10
+1
+3
+4
+5
+6
+7
+8
+9
+10
+2
+
+[PAG 64]
+I-48
+MATEMATICA
+Ad ogni punto A del primo quadrante corrispondono due coordinate logaritmiche 
+(klogx, klogy), dove k indica il modulo fissato per entrambe le scale; in tal modo si stabili-
+sce una corrispondenza biunivoca tra i punti del primo quadrante e le loro coordinate 
+logaritmiche.
+La finalità dell’utilizzo delle coordinate logaritmiche sta nel ridurre le difficoltà che si pos-
+sono incontrare nella rappresentazione grafica di alcune funzioni in coordinate cartesiane.
+Esempio
+La funzione xy = 6, che rappresenta un’iperbole equilatera riferita agli asintoti, in 
+coordinate logaritmiche è rappresentata da una retta. Applicando i logaritmi decimali si 
+ottiene infatti:
+log x + log y = log 6
+Per x = 1 si ha log x = 0,  da cui log y = log 6, cioè y = 6; per y = 1 si ha log y = 0  da 
+cui log x = log 6, cioè x = 6. Unendo i punti (6, 1) e (1, 6) degli assi logaritmici si ottiene 
+una retta i cui punti hanno per coordinate due numeri il cui prodotto è 6.
+7.5  Distanza di due punti
+Dati i punti P(x1, y1) e Q(x2, y2) la distanza tra i due è pari a:
+(I.7.4)
+7.6  Punto medio di un segmento
+Dati due punti P(x1, y1) e Q(x2, y2), le coordinate di M punto medio del segmento PQ
+(Fig. I.7.5) si calcolano nel seguente modo:
+(I.7.5)
+Fig. I.7.5   Punto medio di un segmento.
+7.7  Rette
+Equazione della retta
+L’equazione di una retta si può presentare in varie forme:
+–  Forma generale:
+ax + by + c = 0
+(I.7.6)
+In particolare se la retta passa per l’origine degli assi l’equazione diventa:
+ax + by = 0
+(I.7.7)
+d P Q
+
+
+
+x1
+x2
+–
+
+2
+y1
+y2
+–
+
+2
++
+=
+xM
+x1
+x2
++
+2
+----------------
+=
+yM
+y1
+y2
++
+2
+----------------
+=
+P
+Q
+M
+O
+y
+y2
+y1
+x2
+xM
+x1
+x
+yM
+
+[PAG 65]
+MATEMATICA
+I-49
+–  Forma esplicita:
+y = mx + q
+(I.7.8)
+dove m è il coefficiente angolare ed è la tangente trigonometrica dell’angolo  che la retta 
+forma con il verso positivo dell’asse x, mentre q è il termine noto (o intercetta) ed è l’ordi-
+nata di intersezione della retta con l’asse y (Fig. I.7.6).
+Se la retta passa per l’origine l’equazione diventa:
+y = mx
+(I.7.9)
+–  Forma segmentaria:
+(I.7.10)
+Espressa in questa forma l’equazione esplicita i segmenti p e q che la retta stacca 
+rispettivamente sull’asse x e sull’asse y.
+Rette parallele agli assi
+–  Una retta parallela all’asse x ha un’equazione del tipo:
+y = k
+(I.7.11)
+–  Una retta parallela all’asse y ha un’equazione nella forma:
+x = k
+(I.7.12)
+In particolare l’asse x  e l’asse y hanno rispettivamente equazione y = 0 e x = 0.
+Rette parallele e rette incidenti
+–  Le rette r ed s:
+r: ax + by + c = 0
+ s: a'x + b'y + c' = 0
+sono parallele se a b = ab, incidenti se a b  ab.
+–  Le rette r ed s:
+r: y = mx + q
+ 
+s: y = m'x + q'
+sono parallele se m = m, incidenti se m  m.
+Nel caso di rette incidenti, per calcolare le coordinate del punto di intersezione si 
+risolve il sistema formato dalle equazioni delle due rette.
+Fig. I.7.6  
+r
+y
+O
+x
+
+q
+x
+p--
+y
+q--
++
+1
+=
+
+[PAG 66]
+I-50
+MATEMATICA
+Rette perpendicolari
+–  Le rette r ed s:
+r: ax + by + c = 0
+ s: a'x + b'y + c' = 0
+sono perpendicolari se a a  bb = 0.
+–  Le rette r ed s:
+r: y = mx + q
+ 
+s: y = m'x + q'
+sono perpendicolari se mm = 1, cioè se i due coefficienti angolari sono uno l’antireci-
+proco dell’altro: m =  1/m.
+Fascio di rette passanti per un punto
+Dato un punto P(x0, y0) per esso passano infinite rette; tale fascio è rappresentato 
+dall’equazione:
+y y0 = m(x  x0)
+(I.7.13)
+Ad m si possono assegnare infiniti valori numerici poiché ciascuno identifica una retta 
+passante per P.
+Retta passante per due punti
+Dati i due punti distinti P(x1, y1) e Q(x2, y2), per essi passa una ed una sola retta la cui 
+equazione è data da:
+(I.7.14)
+Distanza di un punto da una retta
+Dati la retta r: ax + by + c = 0 ed il punto P(x0, y0), per distanza d di P da r si intende 
+la lunghezza del segmento perpendicolare ad r che va dal punto alla retta.
+(I.7.15)
+7.8  Coniche
+Si chiamano coniche le curve che si possono ottenere sezionando una superficie coni-
+ca indefinita a due falde con un piano non passante per il vertice.
+Proprietà rilevante delle coniche è che, comunque si intersechi la curva con una retta, 
+non si ottengono mai più di due punti di intersezione.
+7.8.1  Circonferenza
+L’equazione di una circonferenza di centro C(, ) e raggio r è:
+(x )2 + (y )2 = r2
+(I.7.16)
+Infatti un punto P(x, y) del piano appartiene alla circonferenza se e solo se la sua 
+distanza dal centro C è uguale al raggio r:
+(I.7.17)
+y
+y1
+–
+y2
+y1
+–
+---------------
+x
+x1
+–
+x2
+x1
+–
+---------------
+=
+d P r
+
+
+
+a x0
+b y0
+c
++
+
++
+
+a2
+b2
++
+-------------------------------------------
+=
+CP
+x
+
+–
+
+2
+y
+
+–
+
+2
++
+r
+=
+=
+
+[PAG 67]
+MATEMATICA
+I-51
+Elevando entrambi i membri al quadrato si ricava la I.7.16, che una volta sviluppata 
+dà l’equazione canonica della circonferenza:
+x2 + y2 + ax + by + c = 0
+(I.7.18)
+dove  = a2,  = b/2, r2 = 2 +2  c.
+–  Circonferenza di centro l’origine e raggio r:
+x2 + y2 = r2
+(I.7.19)
+–  Equazioni parametriche della circonferenza di centro l’origine e raggio r (Fig. I.7.7):
+(I.7.20)
+Fig. I.7.7   
+7.8.2  Parabola
+Fissati nel piano un punto F ed una retta d non passante per F, si dice parabola di 
+fuoco F e direttrice d il luogo dei punti equidistanti da F e da d.
+Equazione cartesiana della parabola avente il vertice nell’origine
+y = ax2
+(I.7.21)
+–  Vertice: V = (0, 0);
+–  Asse di simmetria: x = 0;
+x
+rcos
+=
+y
+rsen
+=
+
+
+
+r
+y
+O
+x
+
+d
+y
+x
+P1
+P2
+P3
+P4
+F
+V
+
+[PAG 68]
+I-52
+MATEMATICA
+–  Fuoco: 
+;
+–  Direttrice: 
+.
+Equazione generica di una parabola con asse parallelo all’asse y
+y = ax2 + bx + c
+(I.7.22)
+Posto il discriminante  = b2  4ac, si hanno:
+–  Vertice: 
+;
+–  Asse di simmetria: 
+;
+–  Fuoco: 
+;
+–  Direttrice: 
+.
+Fig. I.7.8    Grafico della parabola y = ax2 + bx + c con a > 0 (a) e a < 0 (b).
+Equazione generica di una parabola con asse parallelo all’asse x
+x = ay2 + by + c
+(I.7.23)
+Fig. I.7.9   Grafico della parabola x = ay2 + by + c con a > 0.
+F
+0 1
+4a
+-----
+
+
+
+
+
+=
+y
+1
+4a
+-----
+–
+=
+V
+b
+2a
+-----
+–
+
+4a
+-----
+–
+
+
+
+
+
+=
+x
+b
+2a
+-----
+–
+=
+F
+b
+2a
+-----
+–
+1
+
+–
+4a
+------------
+
+
+
+
+
+=
+y
+1
+
++
+4a
+------------
+–
+=
+d
+y
+x
+F
+O
+a)
+d
+y
+x
+F
+O
+b)
+d
+y
+x
+F
+O
