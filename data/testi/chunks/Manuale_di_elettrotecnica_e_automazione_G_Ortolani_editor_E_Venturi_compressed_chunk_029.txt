@@ -1,0 +1,2722 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 29/116 ===
+Chars: 44,592 | Offset: 1,238,586
+
+
+
+[PAG 622]
+VII-118
+ELETTROTECNICA GENERALE
+Con riferimento alla Fig. VII.7.6 e considerando l’istante t = 90°, si nota che la sinu-
+soide x(t) assume il valore massimo positivo mentre la sinusoide y(t) il valore 0. Quando
+si verifica questa situazione, si dice che le due sinusoidi sono sfasate tra loro dell’angolo
+formato dai due vettori rappresentativi delle sinusoidi, considerati nella loro posizione
+iniziale. Lo sfasamento può essere in anticipo o in ritardo secondo la seguente conven-
+zione:
+–  la sinusoide y(t) è in ritardo rispetto a x(t) dell’angolo  quando il suo vettore rap-
+presentativo Y deve ruotare dell’angolo  in senso antiorario per sovrapporsi a X;
+–  la sinusoide y(t) è in anticipo rispetto a x(t) dell’angolo  quando il suo vettore rap-
+presentativo Y deve ruotare dell’angolo  in senso orario per sovrapporsi a X.
+Nel caso rappresentato in Fig. VII.7.7 la sinusoide y(t) risulta in ritardo di 90° rispetto
+a x(t); è però altrettanto giusto dire che la sinusoide x(t) è in anticipo di 90° rispetto a y(t).
+Sul grafico delle sinusoidi, il senso degli anticipi e dei ritardi si determina conside-
+rando due punti corrispondenti (punti A e B della Fig. VII.7.6) nei quali le sinusoidi assu-
+mono il valore massimo positivo; la sinusoide y(t) è in ritardo rispetto a x(t) in quanto il
+punto B è spostato di 90° verso destra rispetto ad A. La sinusoide y(t) assume così lo
+stesso valore di x(t) (valore massimo positivo) dopo uno spostamento angolare di 90° in
+senso antiorario.
+Si può costruire un diagramma vettoriale di più sinusoidi isofrequenziali rispettando
+le seguenti convenzioni:
+–  tutti i vettori associati alle sinusoidi sono considerati fermi e sono rappresentati
+nella posizione angolare che hanno nell’istante t = 0, uguale alla fase  della corrispon-
+dente sinusoide. La semplificazione è corretta poiché i vettori ruotano tutti alla stessa
+velocità angolare e conservano le posizioni relative dipendenti dalle fasi delle rispettive
+sinusoidi;
+–  il modulo del vettore corrisponde al valore efficace della grandezza sinusoidale e
+non al valore massimo. La convenzione è giustificata perché nel calcolo dei circuiti elet-
+trici in corrente alternata si utilizzano sempre i valori efficaci.
+Nella rappresentazione vettoriale delle grandezze sinusoidali si mantengono le infor-
+mazioni relative al valore delle sinusoidi e alle loro fasi ma si perde l’informazione sulla
+frequenza.
+Poiché nel calcolo dei circuiti in corrente alternata si ricorre spesso all’uso dei numeri
+complessi rappresentati sul piano di Gauss, si utilizzerà il termine vettore per indicare i
+fasori associati a grandezze sinusoidali. È opportuno perciò tenere conto delle sottoripor-
+tate corrispondenze ricordando che nella rappresentazione vettoriale tutte le sinusoidi
+devono avere la stessa frequenza, perché in caso contrario i vettori non conservando
+immutate le loro posizioni relative, assumono sfasamenti variabili nel tempo, rendendo
+impossibile rappresentare le sinusoidi con vettori fissi.
+Fig. VII.7.7   Fasori corrispondenti
+alle sinusoidi di Fig. VII.7.6, per t = 0.
+X
+0°
+90°
+180°
+270°
+90°
+Y
+t 0
+
+[PAG 623]
+ELETTROTECNICA GENERALE
+VII-119
+7.2  Circuito puramente resistivo (ohmico)
+Il circuito di Fig. VII.7.8 costituito da un generatore di tensione alternata sinusoidale e
+da un resistore puro di resistenza R, è un circuito puramente ohmico in quanto in esso non
+compaiono parametri di tipo induttivo o capacitivo. La chiusura dell’interruttore S deter-
+mina nel circuito l’insorgere di una corrente di valore istantaneo esprimibile con la rela-
+zione:
+(VII.7.9)
+Indicando con:
+il valore efficace della corrente, l’espressione precedente diventa:
+(VII.7.10)
+La relazione permette di affermare che: la corrente ha andamento sinusoidale caratte-
+rizzato dalla stessa frequenza e dalla stessa fase della tensione e da un valore efficace
+legato a quello della tensione dalla legge di Ohm.
+Poiché ad una sinusoide può essere associato un numero complesso, le operazioni tra
+sinusoidi si possono ricondurre a operazioni fra numeri complessi. Questo modo di proce-
+dere è detto simbolico e consente di studiare i circuiti interessati da correnti e tensioni iso-
+frequenziali considerando solo i valori efficaci e le fasi delle varie sinusoidi,
+corrispondenti ai moduli e agli argomenti dei relativi numeri complessi.
+Procedendo in questo modo, l’espressione simbolica della tensione è data da:
+(VII.7.11)
+Elementi caratteristici della 
+sinusoide
+Elementi caratteristici del
+fasore
+Elementi caratteristici del 
+numero complesso
+valore efficace
+modulo
+modulo
+fase 
+posizione angolare rispetto al 
+riferimento di 0
+argomento 
+pulsazione
+non rappresentata
+non rappresentata
+Fig. VII.7.8   Circuito puramente resistivo.
+i t( )
+u t( )
+R
+--------
+2 U
+R--- sen t
+
++
+
+
+=
+=
+I
+U
+R---
+=
+i t( )
+u t( )
+R
+--------
+2 Isen t
+
++
+
+
+=
+=
+i(t)
+u(t)
+R
+S
+U
+U cos
+jsen
++
+
+
+Ucos
+jUsen
++
+=
+=
+
+[PAG 624]
+VII-120
+ELETTROTECNICA GENERALE
+Applicando la legge di Ohm si ha:
+e quindi:
+(VII.7.12)
+Il metodo influenza anche la simbologia utilizzata nel disegno in quanto le grandezze
+variabili nel tempo sono sostituite dalle grandezze simboliche; la tensione e la corrente
+sono indicate nel circuito con i versi che esse hanno durante la semionda positiva.
+Le Figg. VII.7.9, VII.7.10, VII.7.11 rappresentano i concetti sopra esposti.
+Nei circuiti in corrente alternata vale la legge di Ohm. Il rapporto UI tra due numeri com-
+plessi è, in generale, un numero complesso che viene denominato impedenza; essa è per-
+ciò caratterizzata da un modulo Z = UI espresso in Ohm () e da un argomento
+ = u  i espresso in gradi o in radianti, uguale alla differenza fra la fase della tensione
+e quella della corrente.
+L’impedenza espressa in forma polare assume la forma:
+(VII.7.13)
+Fig. VII.7.9   Tensione e corrente in un cir-
+cuito puramente ohmico.
+Fig. VII.7.10   Diagramma vettoriale di un
+circuito puramente ohmico.
+Fig. VII.7.11   Rappresentazione simbolica
+di un circuito ohmico.
+I
+U
+R--- cos
+jU
+R--- sen
++
+=
+I
+Icos
+jIsen
++
+=
+u, i
+t
+u i
+0
+i
+u
+UM
+IM
+u i
+I
+U
+J
+0
+r
+U
+I
+R
+S
+Z
+Z
+
+
+U
+I---
+u
+i
+–
+
+=
+=
+
+[PAG 625]
+ELETTROTECNICA GENERALE
+VII-121
+Nel caso del circuito puramente ohmico le fasi sono uguali, l’argomento di Z è zero e
+quindi il numero complesso Z ha solo la parte reale che coincide col valore della resi-
+stenza. Si scriverà perciò:
+Giova precisare che l’impedenza non è una grandezza sinusoidale; infatti se è vero che
+a ogni sinusoide può essere associato un numero complesso, non è altrettanto vero il con-
+trario.
+7.3  Circuito puramente induttivo
+Il circuito di Fig. VII.7.12 costituito da un generatore di tensione alternata sinusoidale
+e da un utilizzatore induttivo puro di induttanza L costante, è un circuito puramente indut-
+tivo in quanto in esso non compaiono parametri di tipo resistivo o capacitivo. La chiusura
+dell’interruttore S determina nel circuito l’insorgere di una corrente istantanea legata alla
+tensione applicata dalla relazione:
+Per le proprietà della derivata, dalla relazione si deduce che: la tensione e la corrente
+sono sinusoidi caratterizzate dalla stessa frequenza e da fasi diverse, con la tensione in
+anticipo di 90° rispetto alla corrente (Fig. VII.7.13); ovviamente la corrente sarà in
+ritardo di 90° rispetto alla tensione.
+Fig. VII.7.13   Tensione e corrente in un circuito induttivo puro.
+Fig. VII.7.12   Circuito induttivo puro.
+Z
+R
+j0
++
+=
+u t( )
+L id
+td----
+=
+i(t)
+u(t)
+L
+S
+u, i
+t
+0
+u(t)
+i(t)
+2
+
+32
+2
+t
+U
+I
+0
+UM
+0
+2
+0
+IM
+
+UM
+0
+32
+0
+IM
+2
+UM
+0
+Intervallo
+didt
+0 ÷ 2
+0
+2 ÷ 32
+0
+32 ÷ 2
+0
+Per t = 2 e 32    didt = 0
+
+[PAG 626]
+VII-122
+ELETTROTECNICA GENERALE
+L’espressione sinusoidale della tensione, considerando i = 0 e quindi u = i + 2,
+sarà data da:
+che nel caso di i  0 diventa:
+I valori massimi della tensione e della corrente e quindi anche i valori efficaci sono
+legati dalla relazione:
+(VII.7.14)
+dove il fattore:
+(VII.7.15)
+è la reattanza induttiva del circuito ed è misurata in Ohm.
+La Fig. VII.7.14, che rappresenta la tensione e la corrente sul piano di Gauss nel caso
+I = 0, evidenzia vettori sfasati fra loro di 90°; questi, espressi in forma complessa, risul-
+tano:
+Il loro rapporto, che rappresenta la legge di Ohm in forma simbolica, fornisce l’impe-
+denza del bipolo puramente induttivo:
+e quindi l’espressione dell’impedenza in forma simbolica:
+(VII.7.16)
+Fig. VII.7.14   Diagramma vettoriale di un
+circuito induttivo puro.
+u t( )
+UMsen t
+u
++
+
+
+2Usen t
+
+2--
++
+
+
+
+
+=
+=
+u t( )
+2Usen t
+i
+
+2--
++
++
+
+
+
+
+=
+UM
+IM
+--------
+2U
+2I
+-----------
+=
+2fL
+L
+=
+=
+XL
+2fL
+L
+=
+=
+U
+0
+JU
++
+=
+I
+I
+J0
++
+=
+j
+r
+0
+I
+U
+Z
+U
+I---
+0
+JU
++
+I
+J0
++
+------------------
+0
+jU
+I---
++
+=
+=
+=
+Z
+0
+jXL
++
+jXL
+=
+=
+
+[PAG 627]
+ELETTROTECNICA GENERALE
+VII-123
+dalla quale si ricavano il modulo e l’argomento di Z:
+La legge di Ohm in forma simbolica diventa:
+(VII.7.17)
+7.4  Circuito puramente capacitivo
+Il circuito di Fig. VII.7.15 costituito da un generatore di tensione alternata sinusoidale
+e da un condensatore ideale di capacità C costante, è un circuito puramente capacitivo in
+quanto in esso non compaiono parametri di tipo resistivo o induttivo. La chiusura
+dell’interruttore S nell’istante in cui la fase della tensione è nulla (posizione qui assunta
+per semplicità di trattazione), determina nel circuito l’insorgere di una corrente istantanea
+legata alla tensione applicata dalla relazione:
+Per le proprietà della derivata, dalla relazione si deduce che: la tensione e la corrente
+sono sinusoidi caratterizzate dalla stessa frequenza e da fasi diverse, con la corrente in
+anticipo di 90° rispetto alla tensione (Fig. VII.7.16); ovviamente la tensione sarà in
+ritardo di 90° rispetto alla corrente.
+Fig. VII.7.16   Tensione e corrente in un circuito capacitivo puro.
+Fig. VII.7.15   Circuito capacitivo puro.
+Z
+0
+XL
+2
++
+XL ;
+=
+=
+
+arctg
+XL
+0
+------
+90°
+
+2-- ;
+=
+=
+=
+Z
+XL
+90°
+
+=
+U
+ZI
+jXLI
+=
+=
+i t( )
+q
+d
+td-----
+C u
+d
+td-----
+=
+=
+i(t)
+u(t)
+C
+S
+u, i
+t
+0
+u(t)
+i(t)
+2
+
+32
+2
+t
+U
+I
+0
+0
+IM
+2
+UM
+0
+
+0
+IM
+32
+UM
+0
+2
+0
+IM
+Intervallo
+dudt
+0 ÷ 2
+0
+2 ÷ 32
+0
+32 ÷ 2
+0
+Per t = 2 e 32    dudt = 0
+
+[PAG 628]
+VII-124
+ELETTROTECNICA GENERALE
+È utile ricordare che la circolazione della corrente non interessa il dielettrico interno
+al condensatore, ma solo il circuito esterno ed è determinata da una sequenza di fenomeni
+di carica e scarica, durante i quali avvengono degli scambi energetici fra generatore e con-
+densatore.
+L’espressione sinusoidale della corrente, considerando u = 0 e quindi i = u + 2,
+sarà data da:
+che nel caso di u  0 diventa:
+I valori massimi della tensione e della corrente e, quindi, anche i valori efficaci sono
+legati dalla relazione:
+(VII.7.18)
+dove il fattore:
+(VII.7.19)
+è la suscettanza capacitiva del circuito ed è misurata in siemens (S = 1).
+Il reciproco della suscettanza è la reattanza capacitiva del bipolo data dalla relazione:
+(VII.7.20)
+La Fig. VII.7.17, che rappresenta la tensione e la corrente sul piano di Gauss nel caso
+u = 0, evidenzia vettori sfasati fra loro di 90°; questi, scritti in forma complessa, risul-
+tano:
+Il loro rapporto, che rappresenta la legge di Ohm in forma simbolica, fornisce l’impe-
+denza del bipolo puramente capacitivo:
+Fig. VII.7.17   Diagramma vettoriale di un
+circuito capacitivo puro.
+i t( )
+IMsen t
+i
++
+
+
+2Isen t
+
+2--
++
+
+
+
+
+=
+=
+i t( )
+2Isen t
+u
+
+2--
++
++
+
+
+
+
+=
+IM
+UM
+-------
+2I
+2U
+-----------
+=
+2fC
+C
+=
+=
+BC
+2fC
+C
+=
+=
+XC
+U
+I---
+1
+C
+--------
+1
+2fC
+-------------
+1
+BC
+------
+=
+=
+=
+=
+U
+U
+j0
++
+=
+I
+0
+jI
++
+=
+j
+r
+0
+U
+I
+
+[PAG 629]
+ELETTROTECNICA GENERALE
+VII-125
+e quindi l’espressione dell’impedenza in forma simbolica:
+(VII.7.21)
+dalla quale si ricavano il modulo e l’argomento di Z:
+La legge di Ohm in forma simbolica diventa:
+(VII.7.22)
+e quindi
+(VII.7.23)
+7.5  Circuito ohmico-induttivo (R-L) serie e parallelo
+È un circuito formato da una sorgente di alimentazione e dall’insieme di un resistore
+di resistenza R e da un induttore di induttanza L.
+Nel circuito R-L serie (Fig. VII.7.18), la corrente è comune e produce ai capi dei bipoli
+elementari due tensioni in fase (UR) e in anticipo di 90° (UL) rispetto alla corrente. Nel caso
+di corrente con fase i = 0 il diagramma vettoriale del circuito è riportato in Fig. VII.7.19.
+La tensione totale risulta sfasata in anticipo rispetto alla corrente dell’angolo , varia-
+bile da 0° a 90°, a seconda dei valori assunti da UR e UL ed è espressa dalla somma vetto-
+riale delle tensioni parziali:
+(VII.7.24)
+Fig. VII.7.18   Circuito R-L serie.
+Fig. VII.7.19   Diagramma vettoriale di
+un circuito R-L serie.
+Z
+U
+I---
+U
+j0
++
+0
+jI
++
+-----------------
+j
+– U
+I---
+=
+=
+=
+Z
+jXC
+–
+=
+Z
+0
+XC
+2
++
+XC ;
+=
+=
+
+arctg
+X
+–
+C
+0
+---------
+90°
+–
+
+2--
+–
+;
+=
+=
+=
+Z
+XC
+90°
+–
+
+=
+U
+ZI
+j
+– XCI
+=
+=
+I
+jBCU
+=
+UR
+R
+L
+UL
+I
+U
+j
+r
+0
+UR
+UL
+U
+
+I
+U
+UR
+UL
++
+RI
+jXLI
++
+I R
+jXL
++
+
+
+=
+=
+=
+
+[PAG 630]
+VII-126
+ELETTROTECNICA GENERALE
+Il termine:
+(VII.7.25)
+pari al rapporto UI, costituisce l’impedenza del bipolo R-L serie e la legge di Ohm è
+espressa dalla relazione:
+Rappresentando sul piano di Gauss il numero complesso Z, si ottiene il triangolo
+dell’impedenza di Fig. VII.7.20 da cui si deducono le relazioni:
+Poiché l’angolo di sfasamento  in anticipo della tensione rispetto alla corrente è
+uguale all’argomento dell’impedenza, anche per le tensioni si può considerare un trian-
+golo (Fig. VII.7.21) dal quale, supposto i = 0, si ricava:
+Nel circuito R-L parallelo (Fig. VII.7.22), la tensione è comune e fa circolare nei rami
+elementari due correnti in fase (IR) e in ritardo di 90° (IL), rispetto alla tensione. Nel caso
+di tensione con fase u = 0 il diagramma vettoriale del circuito è riportato in Fig. VII.7.23.
+La corrente totale risulta sfasata in ritardo rispetto alla tensione dell’angolo , in modo
+analogo a quanto avviene nel collegamento serie, ed è espressa dalla somma vettoriale
+delle correnti parziali:
+(VII.7.26)
+dove G  1R è la conduttanza del bipolo e BL  1XL la suscettanza induttiva dell’induttore.
+Fig. VII.7.20   Triangolo delle impedenze
+di un circuito R-L serie.
+Fig. VII.7.21   Triangolo delle tensioni di
+un circuito R-L serie.
+Z
+R
+jXL
++
+=
+U
+ZI
+=
+Z
+R2
+XL
+2 ;
++
+=
+R
+Zcos;
+=
+XL
+Zsen;
+=
+XL
+R
+------
+tg
+=
+j
+r
+0
+Z
+
+R
+jXL
+
+UR
+UL
+U
+I
+U
+UR
+2
+UL
+2 ;
++
+=
+UR
+Ucos;
+=
+UL
+Usen;
+=
+UL
+UR
+------
+tg
+=
+I
+IR
+IL
++
+U
+R---
+U
+jXL
+--------
++
+GU
+jBLU
+–
+U G
+jBL
+–
+
+
+=
+=
+=
+=
+
+[PAG 631]
+ELETTROTECNICA GENERALE
+VII-127
+Il termine:
+(VII.7.27)
+pari al rapporto IU, costituisce l’ammettenza del bipolo R-L parallelo; essa corrisponde
+al reciproco dell’impedenza (Y  1Z) e si misura in siemens (S). La legge di Ohm è
+espressa dalla relazione:
+Rappresentando sul piano di Gauss il numero complesso Y, si ottiene il triangolo
+dell’ammettenza di Fig. VII.7.24 da cui si deducono le relazioni:
+senza considerare il segno dell’angolo .
+Fig. VII.7.22   Circuito R-L parallelo.
+Fig. VII.7.23   Diagramma vettoriale del
+circuito R-L parallelo.
+Fig. VII.7.24   Triangolo delle ammet-
+tenze di un circuito R-L parallelo.
+Fig. VII.7.25   Triangolo delle correnti di
+un circuito R-L parallelo.
+IR
+R
+L
+IL
+I
+U
+j
+r
+0
+IL
+IR
+U
+I
+
+Y
+G
+jBL
+–
+=
+I
+YU
+=
+Y
+G2
+BL
+2 ;
++
+=
+G
+Ycos;
+=
+BL
+Ysen;
+=
+BL
+G
+------
+tg
+=
+j
+r
+0
+jBL
+
+G
+Y
+
+IL
+U
+IR
+I
+
+[PAG 632]
+VII-128
+ELETTROTECNICA GENERALE
+Poiché l’angolo di sfasamento  caratteristico dell’ammettenza è uguale all’angolo di
+sfasamento fra tensione e corrente, anche per le correnti si può considerare un triangolo
+(Fig. VII.7.25) dal quale si ricava:
+7.6  Circuito ohmico-capacitivo (R-C) serie e parallelo
+È un circuito formato da una sorgente di alimentazione e dall’insieme di un resistore
+di resistenza R e da un condensatore di capacità C.
+Nel circuito R-C serie (Fig. VII.7.26), la corrente è comune e produce ai capi dei
+bipoli elementari due tensioni in fase (UR) e in ritardo di 90° (UC), rispetto alla corrente.
+Nel caso di corrente con fase i = 0 il diagramma vettoriale del circuito è riportato in Fig.
+VII.7.27. La tensione risulta sfasata in ritardo rispetto alla corrente dell’angolo , varia-
+bile da 0° a 90°, a seconda dei valori assunti da UR e UC ed è espressa dalla somma vetto-
+riale delle tensioni parziali:
+(VII.7.28)
+Il termine:
+(VII.7.29)
+pari al rapporto UI, costituisce l’impedenza del bipolo R-C serie e la legge di Ohm è
+espressa dalla relazione:
+Rappresentando sul piano di Gauss il numero complesso Z, si ottiene il triangolo
+dell’impedenza di Fig. VII.7.28 da cui si deducono le relazioni:
+Fig. VII.7.26   Circuito R-C serie.
+Fig. VII.7.27   Diagramma vettoriale del
+circuito R-C serie.
+I
+IR
+2
+IL
+2 ;
++
+=
+IR
+Icos;
+=
+IL
+Isen;
+=
+IL
+IR
+----
+tg
+=
+U
+UR
+UC
++
+RI
+jXCI
+–
+I R
+jXC
+–
+
+
+=
+=
+=
+UC
+UR
+I
+U
+R
+C
+j
+r
+0
+
+UR
+I
+U
+UC
+Z
+R
+jXC
+–
+=
+U
+ZI
+=
+Z
+R2
+XC
+2 ;
++
+=
+R
+Zcos;
+=
+XC
+Zsen;
+=
+arctg
+XC
+R
+------
+–
+
+
+
+
+
+=
+
+[PAG 633]
+ELETTROTECNICA GENERALE
+VII-129
+L’argomento dell’impedenza è negativo e opposto a quello dell’impedenza R-L. Poi-
+ché l’angolo di sfasamento  in anticipo della corrente rispetto alla tensione è uguale
+all’argomento dell’impedenza, anche per le tensioni si può considerare un triangolo (Fig.
+VII.7.29) dal quale, supposto i  0, si ricava:
+Nel circuito R-C parallelo (Fig. VII.7.30), la tensione è comune e fa circolare nei rami
+elementari due correnti in fase (IR) e in anticipo di 90° (IC), rispetto alla tensione. Nel caso
+di tensione con fase u  0 il diagramma vettoriale del circuito è riportato in Fig. VII.7.31.
+La corrente totale risulta sfasata in anticipo rispetto alla tensione dell’angolo , in modo
+analogo a quanto avviene nel collegamento serie, ed è espressa dalla somma vettoriale
+delle correnti parziali:
+(VII.7.30)
+dove G  1R è la conduttanza del bipolo e BC  1XC la suscettanza capacitiva del con-
+densatore.
+Fig. VII.7.28   Triangolo dell’impedenza
+del circuito R-C serie.
+Fig. VII.7.29   Triangolo delle tensioni del
+circuito R-C serie.
+Fig. VII.7.30   Circuito R-C parallelo.
+Fig. VII.7.31   Diagramma vettoriale del
+circuito R-C parallelo.
+j
+r
+0
+jXC
+
+R
+Z
+
+UR
+I
+U
+UC
+U
+UR
+2
+UC
+2 ;
++
+=
+UR
+Ucos ;
+=
+UC
+Usen ;
+=
+UC
+UR
+-------
+tg 
+=
+IC
+IR
+I
+U
+R
+C
+j
+r
+0
+
+IR
+I
+IC
+U
+I
+IR
+IC
++
+U
+R---
+U
+jXC
+–------------
++
+GU
+jBCU
++
+U G
+jBC
++
+
+
+=
+=
+=
+=
+
+[PAG 634]
+VII-130
+ELETTROTECNICA GENERALE
+Il termine:
+(VII.7.31)
+pari al rapporto IU, costituisce l’ammettenza del bipolo R-C parallelo; essa corrisponde
+al reciproco dell’impedenza (Y  1Z) e si misura in siemens (S). La legge di Ohm è
+espressa dalla relazione:
+Rappresentando sul piano di Gauss il numero complesso Y, si ottiene il triangolo
+dell’ammettenza di Fig. VII.7.32, da cui si deducono le relazioni:
+Poiché l’angolo di sfasamento  caratteristico dell’ammettenza è uguale all’angolo di
+sfasamento fra tensione e corrente, anche per le correnti si può considerare un triangolo
+(Fig. VII.7.33) dal quale si ricava:
+7.7  Circuito R-L-C serie e parallelo
+È un circuito formato da una sorgente di alimentazione e da un bipolo complesso com-
+posto da tre bipoli elementari che sono: un resistore di resistenza R, un induttore di indut-
+tanza L e un condensatore di capacità C.
+Nel circuito R-L-C serie (Fig. VII.7.34), la corrente è comune e produce ai capi dei
+bipoli elementari tre tensioni, di cui una in fase (UR), una in anticipo di 90° (UL) e una in
+ritardo di 90° (UC), rispetto alla corrente; le tensioni sull’induttore e sul condensatore
+sono perciò in opposizione di fase. Nel caso di corrente con fase i = 0 il diagramma vet-
+toriale del circuito è riportato in Fig. VII.7.35.
+La tensione totale è espressa dalla somma vettoriale delle tensioni parziali:
+(VII.7.32)
+Fig. VII.7.32   Triangolo dell’ammettenza
+del circuito R-C parallelo.
+Fig. VII.7.33   Triangolo delle correnti del
+circuito R-C parallelo.
+Y
+G
+jBC
++
+=
+I
+YU
+=
+Y
+G2
+BC
+2 ;
++
+=
+G
+Ycos;
+=
+BC
+Ysen;
+=
+BC
+G
+------
+tg
+=
+I
+IR
+2
+IC
+2 ;
++
+=
+IR
+Icos;
+=
+IC
+Isen;
+=
+IC
+IR
+----
+tg
+=
+j
+r
+0
+jBC
+
+G
+Y
+
+I
+IR
+IC
+U
+U
+UR
+UL
+UC
++
++
+RI
+jXLI
+jXCI
+–
++
+I R
+j XL
+XC
+–
+
+
++
+
+
+=
+=
+=
+
+[PAG 635]
+ELETTROTECNICA GENERALE
+VII-131
+Il termine:
+(VII.7.33)
+pari al rapporto UI, costituisce l’impedenza del bipolo R-L-C serie e la legge di Ohm è
+espressa dalla relazione:
+Il modulo e l’argomento dell’impedenza sono dati dalle relazioni:
+Poiché sono presenti due reattanze, si possono avere i seguenti casi:
+–  XL  XC; il bipolo si comporta come ohmico-induttivo di reattanza equivalente
+Xeq  XL  XC e la tensione totale risulta sfasata in anticipo dell’angolo  caratteristico
+dell’impedenza, rispetto alla corrente;
+–  XL  XC; il bipolo si comporta come ohmico-capacitivo di reattanza equivalente
+Xeq  XC  XL e la tensione totale risulta sfasata in ritardo dell’angolo  rispetto alla cor-
+rente;
+–  XL  XC; il bipolo si comporta come puramente ohmico di reattanza equivalente nulla
+e la tensione totale è in fase con la corrente.
+Fig. VII.7.34   Circuito R-L-C serie.
+Fig. VII.7.35   Diagramma vettoriale del
+circuito R-L-C serie.
+Fig. VII.7.36   Triangolo delle impedenze nei casi: a) ohmico-induttivo; b) ohmico-
+capacitivo; c) puramente ohmico.
+Z
+R
+j XL
+XC
+–
+
+
++
+=
+U
+ZI
+=
+UC
+IR
+I
+U
+R
+C
+L
+UR
+UL
+j
+r
+0
+UL
+UR
+I
+UC
+Z
+R2
+XL
+XC
+–
+
+2 ;
++
+=
+
+arctg
+XL
+XC
+–
+R
+---------------------
+=
+j
+r
+0
+R
+jXL
+jXC
+Z
+
+a)
+j
+r
+0
+R
+jXC
+jXL
+Z
+
+b)
+j
+r
+0
+jXL
+jXC
+R
+c)
+
+[PAG 636]
+VII-132
+ELETTROTECNICA GENERALE
+Le Figg. VIII.7.36 (a, b, c,) e VII.7.37 (a, b, c) rappresentano sul piano di Gauss i con-
+cetti appena esposti.
+Il valore efficace e la fase della tensione totale sono espressi dalle relazioni:
+Nel circuito R-L-C parallelo (Fig. VII.7.38), la tensione è comune e fa circolare nei
+rami elementari tre correnti una in fase (IR), una in ritardo di 90° (IL)e una in anticipo di
+90° (IC), rispetto alla tensione; le correnti nell’induttore e nel condensatore sono tra loro
+in opposizione di fase. Nel caso di tensione con fase u = 0 il diagramma vettoriale del
+circuito è riportato in Fig. VII.7.39.
+La corrente totale è espressa dalla somma vettoriale delle correnti parziali:
+(VII.7.34)
+Il termine:
+(VII.7.35)
+pari al rapporto IU, costituisce l’ammettenza del bipolo R-L-C parallelo e la legge di
+Fig. VII.7.37   Triangolo delle tensioni nei casi: a) ohmico-induttivo; b) ohmico-capaci-
+tivo; c) puramente ohmico.
+Fig. VII.7.38   Circuito R-L-C parallelo.
+Fig. VII.7.39   Diagramma vettoriale del
+circuito R-L-C parallelo.
+j
+r
+0
+
+a)
+UL
+UC
+UR
+I
+U
+j
+r
+0
+
+b)
+UL
+UC
+UR
+I
+U
+j
+r
+0
+c)
+UL
+UC
+U UR
+U
+UR
+2
+UL
+UC
+–
+
+2 ;
++
+=
+
+arctg
+UL
+UC
+–
+UR
+----------------------
+=
+IL
+IC
+IR
+I
+U
+R
+L
+C
+j
+r
+0
+IC
+IR
+IL
+U
+I
+IR
+IL
+IC
++
++
+GU
+jBLU
+jBCU
++
+–
+U G
+j BC
+BL
+–
+
+
++
+
+
+=
+=
+=
+Y
+G
+j BC
+BL
+–
+
+
++
+=
+
+[PAG 637]
+ELETTROTECNICA GENERALE
+VII-133
+Ohm è espressa dalla relazione:
+Il modulo e l’argomento dell’ammettenza sono dati dalle relazioni:
+Poiché sono presenti due suscettanze, si possono avere i seguenti casi:
+–  BC  BL; il bipolo si comporta come ohmico-capacitivo di suscettanza equivalente
+Beq  BC  BL e la corrente totale risulta sfasata in anticipo dell’angolo , caratteristico
+dell’ammettenza, rispetto alla tensione;
+–  BC  BL; il bipolo si comporta come ohmico-induttivo di reattanza equivalente
+Beq  BL  BC e la corrente totale risulta sfasata in ritardo dell’angolo  rispetto alla ten-
+sione;
+–  BC  BL; il bipolo si comporta come puramente ohmico di suscettanza equivalente
+nulla e la corrente totale è in fase con la tensione.
+Le Figg. VII.7.40 (a, b, c) e VII.7.41 (a, b, c), rappresentano sul piano di Gauss i con-
+cetti appena esposti.
+Il valore efficace e la fase della corrente totale sono espressi dalle relazioni:
+Fig. VII.7.40   Triangolo delle ammettenze nei casi: a) ohmico-capacitivo; b) ohmico-
+induttivo; c) puramente ohmico.
+Fig. VII.7.41   Triangolo delle correnti nei casi: a) ohmico-capacitivo; b) ohmico-indut-
+tivo; c) puramente ohmico (risonanza).
+I
+YU
+=
+Y
+G2
+BC
+BL
+–
+
+2 ;
++
+=
+
+arctg
+BC
+BL
+–
+G
+---------------------
+=
+j
+r
+0
+a)
+
+jBL
+jBC
+Y
+G
+j
+r
+0
+b)
+
+G
+Y
+jBC
+jBL
+j
+r
+0
+c)
+G
+jBL
+jBC
+j
+r
+0
+a)
+IL
+IC
+IR
+U
+
+I
+j
+r
+0
+b)
+IL
+IC
+IR
+U
+
+I
+j
+r
+0
+c)
+IL
+IC
+U
+I IR
+I
+IR
+2
+IC
+IL
+–
+
+2 ;
++
+=
+
+arctg
+IC
+IL
+–
+IR
+-----------------
+=
+
+[PAG 638]
+VII-134
+ELETTROTECNICA GENERALE
+7.8  Potenza elettrica
+Si consideri un circuito elementare in corrente alternata caratterizzato ad esempio da
+un carico di impedenza Z = R + jXL. Quando ai capi del carico si applica una tensione di
+valore istantaneo:
+si determina in esso la circolazione di una corrente di valore istantaneo:
+dove  è l’angolo di sfasamento fra la tensione e la corrente.
+Il prodotto fra i valori istantanei della tensione e della corrente definisce la potenza
+elettrica istantanea, esprimibile perciò con la relazione:
+(VII.7.36)
+che, per le regole sul prodotto fra due grandezze sinusoidali isofrequenziali, diventa:
+Tab. VII.7.1   Riepilogo
+Circuito
+Impedenza (ohm)
+Ammettenza (siemens) Angolo di sfasamento  
+tensione-corrente
+Puramente ohmico
+Z  R
+Tensione e corrente in 
+fase (  0)
+Puramente induttivo
+Z  jXL
+Tensione in anticipo 
+sulla corrente (  90°)
+Puramente capacitivo
+Z  jXC
+Corrente in anticipo 
+sulla tensione
+(  90°)
+R-L serie
+Z  R  jXL
+Tensione in anticipo 
+sulla corrente
+(  arctg XLR)
+R-L parallelo
+Y = G – jBL
+Tensione in anticipo 
+sulla corrente
+[  arctg (BLG)]
+R-C serie
+Z  R  jXC
+Corrente in anticipo 
+sulla tensione
+[  arctg (XCR)]
+R-C parallelo
+Y  G  jBC
+Corrente in anticipo 
+sulla tensione
+[  arctg (BCG )]
+R-L-C serie
+Z  R  j (XL  XC)
+(  arctg (XLXCR)
+R-L-C parallelo
+Y  G  j(BC  BL) 
+(  arctg (BC BLG)
+u t( )
+UMsen t
+u
++
+
+
+=
+i t( )
+IMsen t
+u
+
++
++
+
+
+=
+p t( )
+u t( )i t( )
+UMsen t
+u
++
+
+IMsen t
+u
+
++
++
+
+
+=
+=
+
+[PAG 639]
+ELETTROTECNICA GENERALE
+VII-135
+(VII.7.37)
+La relazione, rappresentata graficamente in Fig. VII.7.42, è costituita da due termini:
+il primo indipendente dal tempo e quindi costante (retta a del grafico), il secondo variabile
+nel tempo con legge cosinusoidale e quindi a valore medio nullo (curva b del grafico).
+Il primo termine, esprimibile anche con le relazioni:
+(VII.7.38)
+rappresenta la potenza attiva o reale assorbita dal circuito. Essa è fornita al circuito dal
+generatore; è indicata con la lettera P e si misura in watt (W).
+Il secondo termine, rappresentato da una cosinusoide di ampiezza UI e frequenza dop-
+pia rispetto a quella della tensione applicata al circuito, rappresenta la potenza elettrica
+fluttuante.
+Il termine cos, denominato fattore di potenza, positivo sia per correnti in ritardo che
+per correnti in anticipo sulla tensione, assume il valore massimo pari a 1 quando la cor-
+rente è in fase con la tensione, mentre raggiunge il valore 0 quando la corrente è in qua-
+dratura con la tensione. Da quanto detto risulta che la potenza attiva è massima nel caso di
+circuito puramente ohmico ed è nulla nel caso di circuiti puramente induttivi o capacitivi.
+L’esame del grafico di Fig. VII.7.43, che rappresenta una generica condizione di
+carico, permette di individuare la componente della corrente in fase con la tensione Ia
+(componente attiva della corrente) e la componente in quadratura Ir (componente reattiva
+Fig. VII.7.42   Potenza istantanea.
+Fig. VII.7.43   Diagramma vettoriale.
+p t( )
+UMIM
+2
+-------------- cos
+UMIM
+2
+-------------- cos 2t
+2u
+
++
++
+
+
+–
+=
+P
+t
+UI
+a
+b
+EI
+i
+v
+P
+1
+T--
+p td
+0
+T
+
+UIcos
+=
+=
+j
+r
+0
+Ir
+Ia U
+
+I
+
+[PAG 640]
+VII-136
+ELETTROTECNICA GENERALE
+della corrente), che sono espresse dalle relazioni:
+La prima relazione consente di esprimere la potenza attiva anche con:
+Il prodotto:
+(VII.7.39)
+definisce la potenza reattiva del circuito che è misurata in voltampere reattivi (VAR).
+La potenza reattiva rappresenta la parte di potenza scambiata fra gli elementi reattivi
+del circuito (induttore o condensatore) e il generatore; essa non rappresenta quindi l’ener-
+gia che il circuito trasforma ad esempio in energia termica, meccanica ecc. Infatti con
+riferimento alla Fig. VII.7.44, che rappresenta con la curva p la potenza istantanea nel
+caso di un circuito contenente un condensatore, si può osservare che:
+–  negli intervalli in cui la tensione aumenta sia in senso positivo che negativo, il
+generatore fornisce al condensatore l’energia necessaria alla sua carica;
+–  negli intervalli in cui la tensione decresce il condensatore cede al generatore l’ener-
+gia accumulata.
+Lo scambio di energia fra generatore e condensatore avviene perciò ogni mezzo periodo.
+La potenza reattiva cambia segno al variare del segno dell’angolo di sfasamento e la
+convenzione adottata nel testo considera positiva la potenza associata ad un carico indut-
+tivo.
+Il prodotto fra i valori efficaci della tensione e della corrente definisce la potenza
+apparente:
+(VII.7.40)
+Essa si misura in voltampère (VA) ed è legata alle potenze attiva e reattiva dalla rela-
+zione:
+(VII.7.41)
+che permette di definire il triangolo delle potenze di Fig. VII.7.45.
+Fig. VII.7.44   Potenza istantanea in
+un circuito ohmico-capacitivo.
+I cos
+Ia
+=
+I sen
+Ir
+=
+P
+UIa
+=
+Q
+EI sen
+EIr
+=
+=
+ t
+v
+P
+i
+i
+v
+P
+S
+UI
+=
+S
+P2
+Q2
++
+=
+
+[PAG 641]
+ELETTROTECNICA GENERALE
+VII-137
+7.9  Comportamento dei circuiti al variare della frequenza
+Circuito puramente induttivo
+L’espressione XL = 2fL mostra che la reattanza induttiva varia con legge lineare al
+variare della frequenza. Ciò determina:
+–  per f = 0 XL = 0 (corrente continua); l’induttore si comporta come un corto circuito
+ideale e presenta una opposizione nulla al passaggio della corrente;
+–  per f   XL   (alta frequenza); l’induttore si comporta come un circuito aperto
+ideale e blocca il passaggio della corrente.
+Fig. VII.7.45   Triangolo delle potenze:
+a) circuito R-L; b) circuito R-C.
+Tab. VII.7.2.   Potenze nei circuiti elementari
+Circuito
+Potenza attiva (W)
+Potenza reattiva (VAR) Potenza apparente (VA)
+Puramente ohmico
+P  UI  RI2  U2R
+Nulla
+uguale a P
+Puramente induttivo
+nulla 
+Q  UI  XLI2  U2XL
+uguale a Q
+Puramente capacitivo
+nulla
+Q  UI  XCI2 
+U2XC  BCU2
+uguale a Q
+R-L serie
+P  URI  RI2
+ UI cos
+Q  ULI  XLI2
+ UI sen
+S  UI  ZI2
+
+ 
+R-L parallelo
+P  UIR  GU2
+ UI cos
+Q  UIL  BLU2
+ UI sen
+S  UI  YU2
+
+ 
+R-C serie
+P  URI  RI2
+ UI cos
+Q = UCI  XCI2
+ UI sen  
+S  UI  ZI2
+
+
+R-C parallelo
+P  UIR  GU2
+ UI cos
+Q  UIC  BCU2
+ UI sen 
+S  UI  YU2
+ 
+R-L-C serie
+P  URI  RI2
+ UI cos
+QT  QL  QC
+ (UL UC) I
+ (XL  XC) I2
+ UI sen
+S  UI  ZI2
+ 
+R-L-C parallelo
+P  UIR  GU2
+ UI cos
+QT  QL  QC
+ (IL IC) U
+ (BL  BC) U2
+ UI sen
+S  UI  YU2
+ 
+P
+P
+Q
+Q
+S
+S
+a)
+b)
+
+
+P2
+Q2
++
+P2
+Q2
++
+P2
+Q2
++
+P2
+Q2
++
+P2
+Q2
++
+P2
+Q2
++
+
+[PAG 642]
+VII-138
+ELETTROTECNICA GENERALE
+Circuito puramente capacitivo
+L’espressione XC = 12fC mostra che la reattanza capacitiva diminuisce secondo
+l’andamento di Fig. VII.7.46 all’aumentare della frequenza. Ciò determina:
+–  per f = 0 (bassa frequenza) XC  ; il condensatore si comporta come un circuito
+aperto ideale e blocca il passaggio della corrente;
+–  per f   (alta frequenza) XC  0; il condensatore si comporta come un corto cir-
+cuito ideale.
+Circuito R-L
+Se il circuito di Fig. VII.7.47 è alimentato da un generatore di tensione sinusoidale
+con frequenza variabile, si determinano le seguenti condizioni:
+–  il modulo e la fase dell’impedenza aumentano con la frequenza;
+–  il valore efficace della corrente circolante diminuisce all’aumentare della fre-
+quenza, passando dal valore massimo UiR per f = 0 e tendendo a 0 per f  ;
+–  la tensione Uu = RI sul resistore diminuisce all’aumentare della frequenza, in modo
+analogo alla corrente rispetto alla quale è proporzionale.
+La Fig. VII.7.48, che lega il guadagno di tensione Uu/Ui alla frequenza, rappresenta la
+risposta in frequenza del circuito. Il circuito, presentando una tensione di valore efficace
+Uu sempre inferiore a Ui tranne che per f = 0, si comporta come filtro passa-basso perché
+attenua la tensione di ingresso in modo tanto maggiore quanto maggiore è la frequenza. Il
+valore 0,707 di guadagno di tensione costituisce il limite dell’attenuazione al di sotto del
+quale si ritiene convenzionalmente che il filtro blocchi il passaggio del segnale. Il valore
+della frequenza fc, per il quale il guadagno di tensione vale 0,707, è detto frequenza di
+taglio (cutoff) e il campo di frequenze tra zero e fc è detto banda passante.
+Fig. VII.7.46   Variazione di XC con la frequenza.
+Fig. VII.7.47   Circuito R-L serie alimen-
+tato con frequenza variabile.
+Fig. VII.7.48   Filtro R-L passa-basso:
+risposta in frequenza.
+t
+0
+XC
+L
+R
+Uu
+I
+Ui
+fc
+0
+Banda passante
+0,707
+f
+Uu/Ui
+1
+
+[PAG 643]
+ELETTROTECNICA GENERALE
+VII-139
+Circuito R-C
+Se il circuito di Fig. VII.7.49 è alimentato da un generatore di tensione sinusoidale
+con frequenza variabile, si determinano le seguenti condizioni:
+–  il modulo e la fase dell’impedenza diminuiscono con la frequenza;
+–  il valore efficace della corrente circolante aumenta all’aumentare della frequenza,
+passando dal valore zero per f = 0 e tendendo al valore massimo UiR per f  ;
+–  la tensione Uu = RI sul resistore aumenta all’aumentare della frequenza, in modo
+analogo alla corrente rispetto alla quale è proporzionale.
+La Fig. VII.7.50, che lega il guadagno di tensione UuUi alla frequenza, rappresenta la
+risposta in frequenza del circuito. Il circuito si comporta come filtro passa-alto perché
+attenua le sinusoidi di frequenza inferiore a fc a cui corrisponde il guadagno di valore
+0,707. Il campo di frequenze tra fc e infinito è detto banda passante.
+Circuito R-L-C serie
+Sul grafico di Fig. VII.7.51, che mostra l’andamento di XL e XC al variare della fre-
+quenza, è facilmente individuabile il valore di frequenza per il quale si ha l’uguaglianza
+delle due reattanze.
+Quando questo si verifica, il circuito è in risonanza e il suo comportamento comples-
+sivo è di tipo resistivo (la rete di alimentazione “vede” il bipolo come un circuito pura-
+mente ohmico).
+La frequenza fr per la quale si verifica l’uguaglianza delle reattanze è detta frequenza
+di risonanza ed è espressa dalla relazione:
+Fig. VII.7.49   Circuito R-C serie alimen-
+tato con frequenza variabile.
+Fig. VII.7.50   Filtro R-C passa-alto: rispo-
+sta in frequenza.
+Fig. VII.7.51   Variazione delle reattanze al
+variare della frequenza.
+C
+R
+Uu
+I
+Ui
+fc
+0
+Banda passante
+0,707
+f
+Uu/Ui
+1
+XC > XL
+0
+f
+X
+Risonanza
+XL > XC
+XC
+XL
+XL = XC
+fr
+cap.
+ind.
+
+[PAG 644]
+VII-140
+ELETTROTECNICA GENERALE
+(VII.7.42)
+e quindi la pulsazione propria del circuito vale:
+(VII.7.43)
+Il valore della frequenza determina il comportamento del circuito, rendendo possibili
+le seguenti condizioni di funzionamento:
+–  per f  fr prevale la reattanza capacitiva e il circuito ha un comportamento ohmico-
+capacitivo;
+–  per f  fr si ha l’uguaglianza delle reattanze e il circuito ha un comportamento
+ohmico;
+–  per f  fr prevale la reattanza induttiva e il circuito ha un comportamento ohmico-
+induttivo.
+La tensione Uu del circuito di Fig. VII.7.52 assume i seguenti valori:
+–  per f  0 si ha Z  ; il condensatore si comporta da circuito aperto determinando
+una circolazione di corrente nulla e quindi una tensione Uu  0;
+–  per f  fr si ha Z  R; si ha l’uguaglianza Uu  Ui;
+–  per f   si ha Z  ; l’induttore si comporta da circuito aperto determinando una
+circolazione di corrente nulla e quindi una tensione Uu  0.
+Il grafico di Fig. VII.7.53 riporta l’andamento del guadagno di tensione Av  UuUi in
+funzione della frequenza. Il suo esame mostra che il circuito si comporta come un filtro
+passa-banda nel senso che le sinusoidi di frequenza inferiore a f1 e superiore a f2 subi-
+scono una attenuazione maggiore del valore 0,707 e quindi “non passano”. L’intervallo di
+frequenza compreso fra f1 e f2 costituisce la banda passante.
+Fig. VII.7.52   Circuito R-L-C serie alimen-
+tato con frequenza variabile.
+Fig. VII.7.53   Filtro passa-banda R-L-C
+serie: risposta in frequenza.
+fr
+1
+2
+LC
+-------------------
+=
+r
+2fr
+1
+LC
+-----------
+=
+C
+R
+Uu
+I
+Ui
+L
+fr
+0
+Banda passante
+0,707
+f
+Uu/Ui
+1
+f1
+f2
+
+[PAG 645]
+ELETTROTECNICA GENERALE
+VII-141
+Circuito R-L-C parallelo
+Sul grafico di Fig. VII.7.54, che mostra l’andamento di BL e BC al variare della fre-
+quenza, è facilmente individuabile il valore di frequenza per il quale si ha l’uguaglianza
+delle due suscettanze.
+La frequenza fr per la quale si verifica l’uguaglianza delle reattanze è detta frequenza
+di risonanza ed è espressa dalla relazione:
+(VII.7.44)
+da tale relazione si deduce che la frequenza di risonanza di un circuito R-L-C è unica ed è
+indipendente dal tipo di collegamento.
+Il comportamento del collegamento parallelo è però opposto al comportamento del
+collegamento serie in quanto:
+–  per f  fr prevale la suscettanza induttiva e il circuito ha un comportamento ohmico-
+induttivo;
+–  per f  fr si ha l’uguaglianza delle suscettanze e il circuito ha un comportamento
+ohmico;
+–  per f  fr prevale la suscettanza capacitiva e il circuito ha un comportamento
+ohmico-capacitivo.
+La corrente Iu del circuito di Fig. VII.7.55 assume i seguenti valori:
+–  per f  0 si ha Y  ; l’induttore si comporta da corto circuito ideale e assorbe tutta
+la corrente del generatore; di conseguenza la corrente di uscita Iu è nulla;
+–  per f = fr si ha Y  G; si ha l’uguaglianza Iu  Ii;
+–  per f   si ha Y  ; il condensatore si comporta da corto circuito ideale e
+assorbe tutta la corrente del generatore; di conseguenza la corrente di uscita Iu è nulla.
+Fig. VII.7.54   Variazione delle
+suscettanze in funzione della
+frequenza.
+Fig. VII.7.55   Circuito R-L-C
+parallelo alimentato con frequen-
+za variabile.
+fr
+1
+2
+LC
+-------------------
+=
+BL > BC
+0
+f
+B
+Risonanza
+BC > BL
+BL
+BC
+BL = BC
+fr
+ind.
+cap.
+BC
+2fC
+=
+BL
+1
+2fL
+--------------
+=
+C
+R
+Iu
+Uu=RIu
+Ii
+L
+
+[PAG 646]
+VII-142
+ELETTROTECNICA GENERALE
+Il grafico di Fig. VII.7.56 riporta l’andamento del guadagno di corrente Ai  IuIi in
+funzione della frequenza. Il suo esame mostra che il circuito si comporta come un filtro
+passa-banda e l’intervallo di frequenza compreso fra f1 e f2 costituisce la banda passante.
+Anche la tensione Uu varia come la corrente.
+7.10  Equivalenza serie-parallelo
+I bipoli di Fig. VII.7.57 sono equivalenti agli effetti esterni se, alimentati con la stessa
+tensione, assorbono la stessa corrente; l’ugualianza è in modulo e fase.
+Fig. VII.7.57   Equivalenza fra bipoli collegati in serie e in parallelo.
+La trasformazione del circuito serie nell’equivalente circuito parallelo comporta
+l’uso delle seguenti relazioni:
+(VII.7.45)
+Per la trasformazione del circuito parallelo nell’equivalente circuito serie, si utilizze-
+ranno invece:
+(VII.7.46)
+7.11  Circuiti equivalenti dei bipoli induttivi reali
+Induttore
+Un induttore reale, essendo costituito da un avvolgimento, presenta anche resistenza
+elettrica; ciò determina un assorbimento di potenza attiva dalla rete di alimentazione, che
+Fig. VII.7.56   Filtro passa-banda R-L-C
+parallelo: risposta in frequenza.
+fr
+0
+Banda passante
+0,707
+f
+Iu/Ii
+1
+f1
+f2
+RS
+I
+I
+U
+U
+XS
+GP
+BP
+Collegamento serie
+Collegamento parallelo
+Gp
+Rs
+Rs
+2
+Xs
+2
++
+-------------------------
+Rs
+Zs
+2
+------- ;
+=
+=
+Bp
+Xs
+Rs
+2
+Xs
+2
++
+-------------------------
+–
+Xs
+Zs
+2
+-------
+–
+=
+=
+Rs
+Gp
+Gp
+2
+Bp
+2
++
+--------------------------
+Gp
+Yp
+2
+-------- ;
+=
+=
+Xs
+Bp
+Gp
+2
+Bp
+2
++
+--------------------------
+–
+Bp
+Yp
+2
+--------
+–
+=
+=
+
+[PAG 647]
+ELETTROTECNICA GENERALE
+VII-143
+corrisponde alla potenza persa per effetto joule nel conduttore e, se presente, nel nucleo in
+ferro.
+Il diagramma vettoriale dell’induttore reale (Fig. VII.7.58) mostra che la corrente
+totale è sfasata in ritardo rispetto alla tensione di un angolo  inferiore a 90° definito dalla
+relazione:
+(VII.7.47)
+Il rapporto
+(VII.7.48)
+definisce il fattore di merito della bobina che in base al suo valore indica il pregio
+dell’induttore, tanto migliore quanto maggiore è il suo valore.
+Condensatore
+Un condensatore reale alimentato in corrente alternata è sottoposto a regolari fasi di
+carica e scarica che determinano continui cambi di direzione delle molecole polarizzate
+del dielettrico; ciò determina una perdita di potenza nel dielettrico, potenza che si tra-
+sforma in calore.
+Il diagramma vettoriale del condensatore reale (Fig. VII.7.59) mostra che la corrente
+totale è sfasata in anticipo rispetto alla tensione di un angolo  = 90° , dove  è
+l’angolo di perdita.
+Il rapporto:
+(VII.7.49)
+Fig. VII.7.58   Induttore reale: diagramma
+vettoriale.
+Fig. VII.7.59   Condensatore reale: dia-
+gramma vettoriale.
+UL
+U
+
+I
+UR
+
+arctg
+Xs
+Rs
+-----
+arctg
+UL
+UR
+------
+=
+=
+Q
+Xs
+Rs
+-----
+=
+IC
+I
+
+U
+IR
+
+D
+P
+Q---
+UIcos 90°
+
+–
+
+
+UIsen 90°
+
+–
+
+
+----------------------------------------
+UIsen
+UIcos
+------------------
+sen
+cos
+----------
+tg
+=
+=
+=
+=
+=
+
+[PAG 648]
+VII-144
+ELETTROTECNICA GENERALE
+è detto fattore di dissipazione e rappresenta la potenza attiva persa nel condensatore per
+unità di potenza reattiva. Un buon condensatore ha un basso valore di D per evitare un
+eccessivo riscaldamento del dielettrico dovuto alle perdite.
+7.12  Esempi
+Dato il circuito di Fig. VII.7.60, alimentato da un generatore di tensione alternata sinu-
+soidale di valore efficace costante U = 100 V ma con frequenza variabile e con R1 = 2 ,
+R2 = 3 , C = 300 F, L = 0,01 H, determinare:
+–  i valori efficaci e gli sfasamenti delle correnti per f = 50 Hz;
+–  la frequenza di risonanza e i valori efficaci delle correnti risultanti;
+–  il regime elettrico del circuito al variare della frequenza;
+–  le potenze attive e reattive dei singoli rami e la potenza apparente, nel caso di
+f = 50 Hz e di f = fr.
+Risoluzione
+Punto 1
+Posizionando il vettore U sull’asse reale risulta U = 100, per cui:
+La corrente I1 ha valore efficace I = 9,25 A ed è sfasata in anticipo sulla tensione
+dell’angolo 1 = 79° 33.
+Fig. VII.7.60   
+I2
+I
+U
+R1
+R2
+C
+L
+I1
+Z1
+R1
+jXC
+–
+R1
+j 1
+C
+--------
+–
+2
+j10,62 ;
+–
+=
+=
+=
+Z2
+R2
+jXL
+–
+R2
+jL
+–
+3
+j3,14
++
+=
+=
+=
+I1
+U
+Z1
+-----
+100
+2
+j10,62
+–
+--------------------------
+100
+2
+j10,62
+–
+-------------------------- 2
+j10,62
++
+2
+j10,62
++
+--------------------------
+200
+j1062
++
+4
+112,8
++
+-------------------------------
+1,71
+j9,09
++
+=
+=
+=
+=
+=
+I1
+1,712
+9,092
++
+9,25 A;
+=
+=
+tg1
+IC
+IR1
+-------
+9,09
+1,71
+---------
+5,31
+1
+79° 33
+=
+
+=
+=
+=
+I2
+U
+Z2
+-----
+100
+3
+j3,14
++
+-----------------------
+100
+3
+j3,14
++
+----------------------- 3
+j3,14
+–
+3
+j3,14
+–
+-----------------------
+300
+j314
+–
+9
+9,86
++
+---------------------------
+15,9
+j16,65
+–
+=
+=
+=
+=
+=
+I2
+15,92
+16,652
++
+23 A;
+=
+=
+tg2
+IL
+IR2
+-------
+–
+16,65
+15,9
+------------
+–
+1,047
+–
+2
+46
+–
+° 32
+=
+
+=
+=
+=
+
+[PAG 649]
+ELETTROTECNICA GENERALE
+VII-145
+La corrente I2 ha valore efficace I = 23 A ed è sfasata in ritardo sulla tensione
+dell’angolo 2 = 46° 32.
+La corrente I ha valore efficace I = 19,16 A ed è sfasata in ritardo sulla tensione
+dell’angolo 2 = 23° 23. Il circuito nel complesso ha un comportamento ohmico-indut-
+tivo. Il diagramma vettoriale è riportato in Fig. VII.7.61.
+Punto 2
+Il circuito è in condizione di risonanza quando le suscettanze BL e BC dei due rami
+sono uguali.
+Per cui:
+e quindi
+Con questa frequenza, le conduttanze e le suscettanze dei due lati risultano:
+Fig. VII.7.61   
+I
+I1
+I2
++
+1,71
+j9,09
++
+
+
+15,9
+j16,65
+–
+
+
++
+17,61
+j7,56
+–
+=
+=
+=
+I
+17,612
+7,562
++
+19,16 A;
+=
+=
+tg
+IL
+IR
+----
+–
+7,56
+17,61
+------------
+–
+0,43
+–
+
+23
+–
+° 23
+=
+
+=
+=
+=
+I2
+I
+U
+I1
+2
+1
+
+BL
+L
+R2
+2
+L
+
+2
++
+---------------------------------
+=
+BC
+C
+CR1
+
+2
+1
++
+----------------------------------
+=
+L
+R2
+2
+L
+
+2
++
+---------------------------------
+C
+CR1
+
+2
+1
++
+----------------------------------
+R
+
+1
+LC
+-----------
+CR2
+2
+L
+–
+CR1
+2
+L
+–
+------------------------
+=
+=
+R
+1
+0,01
+300
+6
+–
+10
+
+----------------------------------------------
+300
+6
+–
+10
+32
+0,01
+–
+
+300
+6
+–
+10
+22
+0,01
+–
+
+-------------------------------------------------------
+526
+
+=
+fr
+R
+2
+------
+83,8 Hz
+
+=
+G1
+C
+
+2R1
+CR1
+
+2
+1
++
+----------------------------------
+0,045 S;
+=
+=
+BC
+B1
+0,143 S
+=
+=
+
+[PAG 650]
+VII-146
+ELETTROTECNICA GENERALE
+e le correnti:
+con la corrente I1 in anticipo sulla tensione
+con la corrente I2 in ritardo sulla tensione
+la corrente totale è in fase con la tensione.
+Punto 3
+Per studiare il comportamento del circuito al variare della frequenza si possono calco-
+lare le correnti per una serie di valori crescenti della frequenza. I risultati sono riportati
+nella seguente tabella, che consente di costruire il grafico di Fig. VII.7.62.
+
+I1
+I2
+I
+0
+0
+33,3
+33,3
+100
+3
+31,6
+30,9
+200
+5,98
+27,8
+24,5
+314
+9,5
+23
+19,2
+400
+11,7
+20
+15,5
+526 (r)
+15,05
+16,5
+12,73
+600
+17,2
+14,9
+12,85
+800
+21,7
+11,78
+16,1
+1000
+25,8
+9,52
+20,6
+1500
+33,9
+6,5
+29,6
+
+50
+0
+50
+G2
+R2
+R2
+2
+L
+
+2
++
+---------------------------------
+0,082 S
+=
+=
+BL
+B2
+0,143 S
+=
+=
+I1
+UY1
+U
+G1
+2
+B1
+2
++
+100
+0,045
+0,143
++
+
+
+15 A ;
+=
+=
+=
+=
+tg1
+B1
+G1
+------
+3,18
+
+72°50
+=
+
+=
+=
+I2
+UY2
+U
+G2
+2
+B2
+2
++
+100
+0,082
+0,143
++
+
+
+16,5 A ;
+=
+=
+=
+=
+tg2
+B2
+G2
+------
+–
+1,64
+
+60°
+–
+11
+=
+
+=
+=
+I
+U G1
+G2
++
+
+
+100 0,045
+0,082
++
+
+
+12,7 A
+=
+=
+=
