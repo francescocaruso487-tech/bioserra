@@ -1,0 +1,809 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 63/116 ===
+Chars: 45,000 | Offset: 2,738,238
+
+
+
+[PAG 1309]
+SENSORI E TRASDUTTORI
+XIII-79
+La Tabella XIII.10.1 indica i valori nominali dei termistori NTC, utilizzando i codici 
+colore.
+Anche i resistori PTC (Positive Temperature Coefficient) sono dei particolari tipi di 
+semiconduttori nei quali la resistenza varia in funzione della temperatura. A differenza dei 
+precedenti, essi sono caratterizzati da un coefficiente termico sempre accentuato ma posi-
+tivo. Le diverse forme che si trovano in commercio sono dello stesso tipo dei resistori 
+NTC e anch'essi utilizzano degli ossidi (di bario e di titanio) opportunamente trattati. Essi, 
+a differenza dei precedenti, producono una risposta fortemente non lineare, che solo in via 
+sperimentale può essere linearizzata.
+10.2  Rivelatori RTD o termoresistenze
+Un sistema molto diffuso per la misura della temperatura è l'utilizzo delle termoresi-
+stenze, chiamate anche RTD (Resistence Temperature Detector).
+Una termoresistenza è di fatto un elemento passivo formato da materiale metallico che 
+varia il suo valore resistivo in funzione della temperatura. In commercio si trovano termo-
+resistenze in platino e nichel aventi la forma di filo o di film e con valore resistivo pari a 
+100 ohm a 0 gradi centigradi.
+Costruttivamente una termoresistenza è un filamento avvolto di platino o di nichel che 
+viene annegato in un materiale isolante, di solito ceramica o vetro. Nelle applicazioni 
+industriali il campo classico nel quale le termoresistenze vengono maggiormente utiliz-
+zate va dai 220 °C agli 850 °C.
+Tra le caratteristiche negative è opportuno menzionare che le termoresistenze hanno 
+un elevato costo, presentano un autoriscaldamento, sono poco robuste e sono caratteriz-
+zate da una scarsa resistenza alle vibrazioni. La caratteristica positiva più evidente è data 
+da una eccellente stabilità. Infine le caratteristiche proprie delle termoresistenze sono una 
+sensibilità distribuita lungo lo stelo, uno scarso ingombro, la richiesta di alimentazione e 
+un output in ohm.
+10.3  Termocoppie
+Le termocoppie hanno rappresentato il primo metodo di misurazione elettrica della 
+temperatura, costituendo sensori estremamente semplici e affidabili. Denominate anche 
+coppie bimetalliche o coppie termoelettriche, esse basano il loro funzionamento 
+sull'effetto di termoelettricità (effetto Seebeck), il quale definisce il generarsi di un poten-
+ziale elettrico ai capi della termocoppia come funzione della differenza di temperatura tra 
+Tab. XIII.10.1   Valori nominali dei termistori NTC mediante l’uso dei codici colore (la 
+lettura si esegue da sinistra verso destra)
+Colore
+Primo settore
+Secondo settore
+Moltiplicatore
+Nero
+Marrone
+Rosso
+Arancione
+Giallo
+Verde
+Blu
+Viola
+Grigio
+Bianco
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+1
+10
+102
+103
+104
+105
+106
+107
+
+[PAG 1310]
+XIII-80
+SENSORI E TRASDUTTORI
+il giunto di misura e il giunto di riferimento. Nello specifico se due differenti metalli ven-
+gono a contatto, alcuni elettroni passano dal metallo caratterizzato da inferiore lavoro di 
+estrazione a quello caratterizzato da maggiore lavoro di estrazione.
+Lo spostamento continua fino a quando la tensione di contatto generata non lo blocca. 
+Questa particolare tensione di contatto dipende dai metalli usati e dalla loro temperatura 
+(tensione termoelettrica) e generalmente vale pochi V. Nella situazione in cui i due 
+metalli vengono chiusi su un circuito elettrico e i due punti di contatto vengono riscaldati 
+a differente temperatura, le tensioni di contatto generate non si compensano più e si 
+genera una circolazione di corrente termoelettrica che trae la sua energia dalla sorgente di 
+calore.
+È un effetto che definisce una conversione diretta del calore in energia elettrica. I 
+giunti che caratterizzano la termocoppia sono anche chiamati giunto caldo e giunto 
+freddo.
+In base alla relazione sopra esposta è possibile per ogni tipo di giunzione stabilire un 
+riferimento tabellare, nel quale alla temperatura specifica del giunto corrisponde un valore 
+di tensione generata. Occorre precisare però che la relazione risultante non presenta un 
+andamento lineare e la tensione riscontrata, dell'ordine dei millivolt, varia in base ai mate-
+riali utilizzati.
+La scelta di una termocoppia, condizionata dalle esigenze di affidabilità e lunga 
+durata, è relazionata ad alcune variabili che è bene conoscere. Innanzi tutto occorre sapere 
+a quale temperatura massima e a quale temperatura di lavoro verrà sottoposta la termo-
+coppia. È opportuno determinare inoltre se l'esposizione sarà continua oppure intermit-
+tente. Anche l'ambiente ha la sua enorme importanza; infatti si sceglierà l'adatto tipo di 
+termocoppia a seconda se la natura dell'ambiente è corrosiva, ossidante oppure neutra.
+Altri fattori che concorrono sono infine la resistenza meccanica e quella termica. 
+Tenendo in considerazione tutte queste variabili si sceglieranno in definitiva il tipo e il 
+diametro del filo della termocoppia, il materiale della guaina di protezione e il tipo di ese-
+cuzione della termocoppia (dritta, a squadra, compatta a isolamento minerale, a baionetta 
+con molla di pressione, da immersione con cartuccia ecc.).
+La Tabella XIII.10.2 riporta le caratteristiche di alcune termocoppie.
+Tab. XIII.10.2   Tipi di termocoppie
+Nelle misure di temperatura con termocoppie, riveste una grossa importanza il cavo 
+che collega la termocoppia allo strumento di misura. Da quanto esposto sopra, la termo-
+coppia genera una forza elettromotrice che dipende dalla differenza di temperatura tra il 
+Tipo
+Materiale bimetallo
+Campo T [°C]
+Uu [mV]
+Caratteristiche
+J
+Ferro-Costantana
+200  780
+30 con T  500 °C
+Economica
+T
+Rame-Costantana
+200  400
+15 con T  320 °C
+Sens.: 45 V/°C
+Piccole dimensioni
+E
+Cromel-Costantana
+200  1250
+70 con T  1000 °C
+Elevata f.e.m.
+S
+Pt-Pt 90%, Rd 10%
+0  1760
+10 con T  1000 °C
+Robusta, affidabile,
+costosa, poco sensibile
+C
+Tungsteno-Tungsteno, 
+Iridio
+0  2400
+Dipende dalla % della lega
+Alta temperatura
+
+[PAG 1311]
+SENSORI E TRASDUTTORI
+XIII-81
+giunto caldo e quello freddo, costituito in pratica da due terminali liberi della termocoppia 
+normalmente situati in una testa di connessione.
+Nelle utilizzazioni industriali il collegamento tra la testa di connessione della termo-
+coppia e lo strumento di misura viene fatto mediante un particolare cavo, chiamato cavo 
+di estensione, che è formato da due termoelementi di filo metallico. I due termoelementi 
+sono diversi tra loro, vengono tenuti isolati per tutta la loro lunghezza e presentano una 
+relazione forza elettromotrice/temperatura uguale o molto simile a quella della termocop-
+pia.
+In alcuni casi la composizione nominale dei termoelementi del cavo differisce da 
+quella della termocoppia alla quale è collegato, mentre la relazione forza elettromotrice/
+temperatura rimane sempre la stessa nel campo di impiego specificato. In questo caso il 
+cavo prende il nome di cavo di estensione sostitutivo o cavo di compensazione.
+La Figura XIII.10.1 illustra le principali parti che compongono una termocoppia con 
+isolamento tradizionale.
+Fig. XIII.10.1  Termocoppia con isolamento tradizionale.
+Per mezzo di questo cavo il giunto freddo della termocoppia viene trasferito alla estre-
+mità del cavo dove è collegato lo strumento di misura, il quale a sua volta, mediante un 
+proprio circuito di compensazione automatica o manuale della temperatura ambiente, per-
+mette la taratura della scala di misura.
+Per ogni tipo di termocoppia esiste un cavo di estensione che risolve in modo anche 
+economico il problema del collegamento della termocoppia allo strumento di misura, 
+introducendo solo in casi limitati errori di piccola entità.
+BIBLIOGRAFIA
+BRAMBILLA L., Teoria e applicazioni dei trasduttori, Principato, Milano, 1992.
+CARIBONI A, ALBANESI S., ALFIORE F., Controlli automatici, Editrice La Scuola, Bre-
+scia, 1999.
+CAVALIERI R., Controlli automatici, Hoepli, Milano, 2002.
+ORTOLANI G., VENTURI E., Impianti elettrici automatici, Hoepli, Milano, 2009.
+Giunto di misura
+Isolatori termici
+Guaina di protezione
+Fili della termocoppia
+Testa di connessione
+
+[PAG 1313]
+Sezione XIV
+Automazione
+INDICE
+pag.
+1    INTRODUZIONE. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 2
+1.1    Parte operativa e parte di comando  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.1.1    Rilevamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.1.2    Elaborazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.1.3    Comando di potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.1.4    Azionamento. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.1.5    Dialogo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+1.2    Logica cablata . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+1.3    Logica programmabile  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2    TECNOLOGIE UTILIZZATE NEI PROCESSI AUTOMATICI . . . . . . . . . . . .
+6
+2.1    Sistemi elettromeccanici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+2.2    Sistemi pneumatici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+2.3    Sistemi elettronici e microelettronici . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+2.4    Sistemi informatici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+2.5    Sistemi informatico-industriali  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+3    CIM, PLC E COMUNICAZIONE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+3.1    PLC e CIM (Computer Integrated Manufacturing). . . . . . . . . . . . . . . . . . .
+9
+3.2    Comunicazione. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+3.2.1    Tipi di rete di comunicazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+3.2.2    Modalità operative . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+3.2.3    Collegamento tra reti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+3.2.4    Vantaggi dati dall’impiego delle reti. . . . . . . . . . . . . . . . . . . . . . . .
+16
+3.2.5    Comunicazione parallela. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+3.2.6    Comunicazione seriale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+3.3    Storia del PLC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+4    HARDWARE NEI PLC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+4.1    Architettura del PLC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+4.2    Parti costituenti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+4.2.1    Alimentatore  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+4.2.2    CPU (Central Processing Unit)  . . . . . . . . . . . . . . . . . . . . . . . . . . .
+27
+4.2.3    Unità di memoria . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+31
+4.2.4    Moduli di I/O (Input/Output) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+4.2.5    Parametri da considerare per l’interfacciamento degli I/O al PLC .
+36
+4.2.6    Collegamento degli ingressi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+38
+4.2.7    Collegamento delle uscite  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+42
+4.2.8    Regolazione e conteggio con i moduli intelligenti . . . . . . . . . . . . .
+43
+4.2.9    Orodatario. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+49
+
+[PAG 1314]
+XIV-2
+AUTOMAZIONE
+4.3    Periferiche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+50
+4.3.1    Dialogo operatore. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+50
+4.3.2    Monitoraggio e supervisione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+51
+5    LA MESSA IN SERVIZIO DEL PLC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+53
+5.1    Conformità alle norme  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+53
+5.2    Installazione, collegamenti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+53
+5.3    Alimentazione, trasformatore di sicurezza  . . . . . . . . . . . . . . . . . . . . . . . . 
+55
+5.4    Condizioni ambientali e di servizio  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+57
+5.5    Caratteristiche ergonomiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+60
+5.6    Manutenzione e ricerca guasti  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+60
+6    PROGRAMMAZIONE DEL PLC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+62
+6.1    Fasi della programmazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+62
+6.2    Linguaggi utilizzati  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+64
+6.3    Linguaggi grafici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+67
+6.3.1    Ladder diagram (LD)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+69
+6.3.2    Function Block Diagram (FBD)  . . . . . . . . . . . . . . . . . . . . . . . . . . 
+76
+6.3.3    Sequential Function Chart (SFC)  . . . . . . . . . . . . . . . . . . . . . . . . . 
+76
+6.4    Linguaggi letterali  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+82
+6.4.1    Instruction List (IL)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+82
+6.4.2    Stuctured Text (ST) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+85
+6.5    Scansione del PLC e tempi di esecuzione . . . . . . . . . . . . . . . . . . . . . . . . . 
+87
+6.6    Cicli monotask, bitask, multitask . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+92
+7    PAROLE DI ISTRUZIONE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+94
+7.1    Configurazione hardware . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+94
+7.2    Elementi utilizzabili e loro indirizzamento . . . . . . . . . . . . . . . . . . . . . . . . 
+95
+7.3    Struttura software . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+98
+7.4    Elementi grafici di base  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+101
+7.5    Blocchi funzione predefiniti (FB) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+106
+7.5.1    Temporizzatore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+106
+7.5.2    Contatore  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+111
+7.5.3     Registro  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+119
+7.5.4    Programmatore a tamburo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+125
+7.6    Elaborazioni numeriche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+131
+7.6.1    Istruzioni di confronto o comparazione . . . . . . . . . . . . . . . . . . . . . 
+131
+7.6.2    Istruzioni di calcolo e assegnazione (trasferimento)  . . . . . . . . . . . 
+133
+7.7    Funzioni di controllo del programma . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+153
+7.8    Istruzioni di gestione del tempo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+162
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+170
+1  INTRODUZIONE
+Nell’industria in genere, e in particolare nell’industria pesante, sempre maggiori sono 
+le operazioni che si ripetono ciclicamente senza cambiare. Si immagini una catena di mon-
+
+[PAG 1315]
+AUTOMAZIONE
+XIV-3
+taggio di produzione di automobili, dove un operatore deve compiere ogni due minuti la 
+stessa saldatura, oppure una catena di produzione alimentare dove un operatore deve 
+imballare dei prodotti, sempre quelli nell’intero turno di lavoro. Sono processi che insieme 
+a moltissimi altri non hanno bisogno di operatori intelligenti per essere eseguiti, determi-
+nano senz’altro stress per l’operatore che li compie e sono eseguiti a velocità non elevate.
+Ecco quindi che si va affermando sempre più la necessità di automatizzare questi eventi 
+per poter ottimizzare la produzione in termini sia di velocità maggiori di esecuzione, sia di 
+costi di produzione minori di quelli che si hanno utilizzando manodopera tradizionale.
+Un sistema automatizzato è un qualcosa che è capace di compiere un certo servizio, 
+prendendo autonomamente le decisioni atte a realizzare quanto è stato preventivamente 
+predisposto, in funzione di determinati input provenienti dalla parte controllata; tale capa-
+cità è frutto di una serie di azioni combinate e coordinate degli elementi che compongono 
+il sistema. Un’automazione può essere strutturata con differenti livelli di complessità in 
+modo da controllare una sola macchina, l’insieme delle macchine di un reparto, fino ad 
+arrivare alla fabbrica automatica, dove l’intervento dell’uomo è richiesto in misura molto 
+marginale soltanto per la supervisione del processo.
+1.1  Parte operativa e parte di comando
+Ogni ciclo automatico (Fig.XIV.1.1), semplice o complesso che sia, viene organizzato 
+in due parti: parte operativa e parte di comando.
+La parte operativa comprende la macchina in tutte le sue componenti: gli azionatori 
+(motori di vario genere, cilindri, attivatori elettromeccanici, tastatori, ecc.) costituiscono i 
+muscoli della macchina, cioè gli organi che muovono il sistema.
+La parte di comando comprende: l’unità di governo che è il cuore dell’automatismo, 
+la parte intelligente che elabora il processo; i rilevatori (interruttori, finecorsa, sensori, 
+trasduttori ecc.), che costituiscono i sensi, cioè le apparecchiature che consentono di sen-
+tire i vari stati del processo automatico e di comunicarli all’elaboratore; i vari dispositivi 
+d’interfaccia di ingresso e di uscita e le apparecchiature che consentono il dialogo tra 
+uomo e macchina, che costituiscono la logica; il comando di potenza, il tramite fra l’ela-
+borazione e l’attivazione del processo, una sorta di sistema nervoso dell’automazione.
+Fig. XIV.1.1   Parti che compongono un’automazione.
+cilindri, tastatori,
+motori, servomotori
+microprocessori, PLC, computer, 
+a relè e sequenziali
+console di programmazione,
+pulsanti, selettori
+interruttori di posizionamento,
+di prossimità, trasduttori
+AZIONAMENTO
+RILEVAMENTO
+ELABORAZIONE
+DIALOGO
+PARTE OPERATIVA
+PARTE DI COMANDO
+relè di potenza, contattori
+COMANDO
+logiche
+
+[PAG 1316]
+XIV-4
+AUTOMAZIONE
+1.1.1  Rilevamento
+Il rilevamento è il problema che più di tutti è stato sviluppato dalla ricerca tecnologica 
+di questi ultimi anni. L’acquisizione dei dati viene effettuata tramite rilevatori che infor-
+mano l’unità di elaborazione dello stato del sistema (posizionamento di organi, presenza/
+assenza di oggetti, livello di temperatura, pressione, umidità ecc.).
+Si possono rilevare oggetti che transitano a elevatissime velocità, si può controllare 
+qualsiasi grandezza fisica con tempi di retroazione veramente ottimali. Generalmente si 
+distingue tra dispositivi di rilevamento ON-OFF e analogici. Si producono rilevatori e tra-
+sduttori tra i più svariati, che possono inviare segnali di input alla parte che elabora l’auto-
+mazione; la scelta del tipo di apparecchiatura dipende dalle condizioni di impiego (tipo di 
+grandezza da controllare, precisione di rilevamento, cadenza, tipo di elaborazione a cui ci 
+si interfaccia, condizioni climatiche ecc.).
+Tra i rilevatori più utilizzati si annoverano: finecorsa meccanici, rilevatori capacitivi e 
+induttivi, fotocellule, rilevatori di fumo, interruttori crepuscolari. 
+1.1.2  Elaborazione
+Per elaborazione si intende il complesso di operazioni di confronto tra le informazioni 
+in input al sistema, provenienti dai sensori o dai dispositivi di dialogo (governati dall’ope-
+ratore di macchina o di sistema), che genera una sequenza di azioni stabilite da trasmet-
+tere ai dispositivi di comando o di visualizzazione; l’arresto piuttosto che l’avvio di un 
+azionamento, l’avanzamento di un pistone o di un tapis roulant sono alcuni esempi di 
+azioni possibili; tra le segnalazioni si possono riscontrare l’accensione di una lampada 
+spia, di una sirena o la visualizzazione di un messaggio su di un display.
+Ovviamente l’elaborazione dei dati fa riferimento ad una programmazione di eventi 
+rigidamente stabilita dal progettista a seconda dell’input che viene rilevato. A seconda 
+della complessità dell’automatismo l’elaborazione dei dati avviene tramite relè, contattori 
+ausiliari, cellule logiche o sequenziatori, microsistemi, programmi scritti su microproces-
+sori o PLC.
+Per i sistemi automatici considerati, cioè quelli di complessità intermedia, che riguar-
+dano una macchina o un insieme di macchine, la parte di comando è costituita da un PLC. 
+Il controllore programmabile ha il compito di governare le azioni del sistema, sulla scorta 
+di informazioni che gli arrivano dai rilevatori sullo stato del processo, in base a un pro-
+gramma preventivamente elaborato.
+Il PLC si avvale quindi di interfacce di ingresso e di uscita che permettono il dialogo 
+tra il mondo esterno e il processore che è il cuore del controllore (CPU).
+1.1.3  Comando di potenza
+Il segnale in uscita dallo stadio di elaborazione è a bassa potenza, insufficiente a pilo-
+tare direttamente l’azionatore. Il compito di trasferire il segnale in uscita dall’unità di ela-
+borazione agli azionatori viene svolto dallo stadio di potenza.
+La movimentazione degli attivatori generalmente non viene eseguita direttamente 
+dalle uscite dell’elaboratore, ma passa attraverso organi di amplificazione del segnale: 
+questo circuito è tipicamente costituito da contattori o relè di potenza, avviatori, variatori 
+di velocità, distributori pneumatici. La scelta degli oggetti necessari avviene a seconda 
+della tecnologia impiegata, della potenza degli azionatori in gioco e dalle loro condizioni 
+di funzionamento.
+1.1.4  Azionamento
+L’azionamento della macchina o delle macchine, che costituiscono il sistema automa-
+tico, è un problema che in genere viene risolto da oggetti di tipo elettromeccanico, come i 
+motori (in corrente continua, alternata, passo passo, brushless ecc.), di tipo pneumatico o 
+idraulico, come i cilindri, le valvole, i tastatori e i manipolatori.
+
+[PAG 1317]
+AUTOMAZIONE
+XIV-5
+1.1.5  Dialogo
+Il dialogo uomo-macchina consente ad un qualsiasi operatore o a un controllo automa-
+tico di intervenire nella gestione del sistema, all’avvio piuttosto che durante il ciclo, con 
+la possibilità di eseguire arresti di emergenza o cambiamenti dei menu di configurazione.
+La funzione di dialogo è realizzata tramite ausiliari di comando a intervento umano 
+(pulsanti, pulsantiere, commutatori, interruttori, ecc.) e da spie di segnalazione. Per 
+sistemi più complessi si possono utilizzare pulpiti di comando, tavole sinottiche, tastiere, 
+terminali di dialogo. Attraverso schede elettroniche di comunicazione seriale, parallela o 
+tramite porte USB i dati e le informazioni possono essere scambiati tra la parte di 
+comando del sistema automatico e apparecchiature che consentono la supervisione e la 
+gestione automatizzata.
+Tramite stampanti o registratori è possibile seguire la cronistoria di un processo, men-
+tre con l’ausilio di monitor o di terminali video, interfacciati con personal computer, è 
+possibile monitorare passo passo l’andamento e lo stato in cui si evolvono le procedure 
+automatizzate.
+1.2  Logica cablata
+Per logica cablata si intende quell’insieme di apparecchiature di tipo elettromecca-
+nico (relè, temporizzatori, contatori, programmatori) o di tipo elettronico (reti logiche 
+combinatorie, che utilizzano blocchi logici standard o elementi sequenziali) che, posti su 
+schede e all’interno di un quadro, governano una macchina o un insieme di macchine.
+Tali sistemi hanno le caratteristiche seguenti:
+–  ogni uscita è attivata da un circuito sviluppato appositamente per quell’unica funzione 
+che svolge, anche se parte dei componenti può essere utilizzata per circuiti che attivano 
+altre uscite;
+–  anche se delle uscite sono attivate da funzioni logiche o circuiti elettromeccanici 
+uguali, tali circuiti devono essere ripetuti per ogni uscita;
+–  l’attivazione delle uscite avviene in modo parallelo e quindi il rinfresco delle stesse 
+avviene con tempi legati alla sola risposta delle singole apparecchiature;
+–  i circuiti risultano spesso complessi e assolutamente non flessibili e riconvertibili in 
+caso di espansione; normalmente è necessaria la riprogettazione del circuito stesso;
+–  il numero elevato di componenti e la complessità della connessioni tra apparecchia-
+ture pongono problemi riguardo la manutenzione e la ricerca di eventuali guasti, oltre a 
+produrre una minore affidabilità.
+L’applicazione per tale tipo di logica sarà quindi idonea in quei processi automatici 
+dove non sono previste né variazioni sostanziali, né aggiustamenti in fase di lavoro.
+1.3  Logica programmabile
+Una logica di tipo programmabile prevede l’uso di una apparecchiatura che gestisca 
+tutte le funzioni specifiche contemplate dalle sue istruzioni (relè, registri, temporizzatori, 
+contatori, programmatori ciclici, orologi, operazioni logiche e matematiche ecc.), per il 
+controllo di un’automazione o di una singola macchina secondo un programma predeter-
+minato.
+Il programma è memorizzato all’interno di particolari dispositivi facenti parte inte-
+grante della macchina stessa e può essere all’occorrenza modificato e variato. La regola-
+zione del processo automatico può avvenire anche in fase di messa in servizio e 
+addirittura on-line per determinati parametri.
+L’elaborazione delle informazioni avviene, come per tutti gli elaboratori basati sui 
+microprocessori in modo sequenziale, manipolando un solo dato o una sola operazione 
+per volta, avendo preventivamente scomposto anche le operazioni più complesse in un 
+certo numero di semplici operazioni che si susseguiranno in sequenza.
+
+[PAG 1318]
+XIV-6
+AUTOMAZIONE
+2  TECNOLOGIE UTILIZZATE NEI PROCESSI AUTOMATICI
+L’Elettrotecnica è stata per molto tempo la disciplina di riferimento per i sistemi auto-
+matici di fabbrica; gli impianti elettrici venivano realizzati mediante relè e relativi contatti 
+collegati in serie o in parallelo tra loro; per far funzionare un qualunque sistema, semplice 
+o complesso che fosse, si cablavano i vari componenti elettrici nella sequenza esatta stabi-
+lita da uno schema di collegamento, realizzando quindi la Logica Cablata.
+Con l’avvento della valvola e successivamente del transistor e del diodo a semicon-
+duttore l’elettrotecnica lasciava il passo ad una nuova disciplina, l’elettronica; dalla logica 
+di tipo elettromeccanico si passava alla logica digitale di tipo elettronico, dove le opera-
+zioni che non venivano più eseguite tramite relè, potevano avvenire in modo più veloce e 
+silenzioso con l’uso dei transistor: si comincia in questo caso a parlare di Logica Pro-
+grammabile.
+Il notevole sviluppo del controllo di macchine e processi si ha con l’avvento del 
+microprocessore: un unico prodotto poteva essere sviluppato su larga scala per molte 
+applicazioni, per poi essere personalizzato rispetto ai bisogni specifici del cliente 
+mediante un software apposito.
+Nello specifico, il controllo automatico di tipo elettronico seguì due diversi ambiti di 
+sviluppo: il controllo di segnali analogici e quello dei segnali digitali ON/OFF. Il con-
+trollo definito con l’acronimo DCS (Distribuited Control System), asserviva al comando e 
+alla regolazione di grandezze fisiche di tipo analogico (temperatura, pressione, umidità 
+ecc.), mentre il controllo di tipo ON/OFF veniva implementato in dispositivi che prende-
+vano il nome di PLC (Programmable Logic Controller). In origine quindi soltanto i 
+sistemi DCS potevano gestire grandi impianti con “intelligenze” (microprocessori) dislo-
+cate in diversi spazi ma collegate tra loro con reti di comunicazione; inoltre i PLC pur 
+essendo parimenti ai DCS equipaggiati con un microprocessore, avevano una capacità di 
+calcolo molto limitata, con elaborazioni soltanto su singoli bit. Con lo sviluppo delle reti e 
+la produzione di molti accessori modulari il PLC, combinato con il personal computer e 
+software dedicati, ha in molte situazioni sostituito i sistemi DCS, grazie alla sua flessibi-
+lità e al basso costo di investimento rispetto a questi ultimi. 
+Il futuro del controllo automatico sembra essere oggi affidato ai controller che inclu-
+dono le migliori funzioni dei PLC e dei PC, denominati PAC (Controller di Automazione 
+Programmabili); tali sistemi offrono l’affidabilità del PLC combinata alla funzionalità del 
+PC. Le loro caratteristiche sono:
+–  funzionalità multidominio,
+–  singola piattaforma di sviluppo multidisciplinare,
+–  strumenti software per la progettazione con flusso attraverso diverse macchine o unità 
+di elaborazione,
+–  architetture modulari aperte,
+–  utilizzo di standard per interfacce di rete e linguaggi.
+Nei processi industriali sono oggi utilizzate diverse tecnologie applicative per il con-
+trollo dei sistemi automatici. Tutte queste diverse tipologie trovano comunque applica-
+zione nell’ambito industriale a seconda delle caratteristiche degli impianti e delle 
+condizioni ambientali in cui vanno ad operare.
+Le principali applicazioni si possono così riassumere in:
+–  sistemi elettromeccanici,
+–  sistemi pneumatici,
+–  sistemi elettronici e microelettronici,
+–  sistemi informatici,
+–  sistemi informatico-industriali.
+
+[PAG 1319]
+AUTOMAZIONE
+XIV-7
+2.1  Sistemi elettromeccanici
+Fino all’avvento dei PLC, intorno agli anni ‘70 del secolo scorso, la logica cablata a 
+relè era la tecnologia preponderante nell’impiantistica industriale.
+Il relè e tutte le apparecchiature da esso derivate hanno dei notevoli pregi che si pos-
+sono così riassumere:
+–  sono diffusi in tutto il territorio mondiale con modelli e configurazioni tra i più sva-
+riati;
+–  sono apparecchiature semplici nella loro costituzione e molto robuste, adatte a lavo-
+rare in condizioni ambientali gravose;
+–  sono facili da utilizzare e il loro funzionamento è interpretabile in modo immediato, 
+senza possedere competenze particolarmente approfondite in ambito elettrico-elettronico;
+–  pur nella loro semplicità permettono di svolgere anche le operazioni più complesse.
+Per contro, gli svantaggi del relè sono:
+–  in sistemi complessi risulta dispendioso economicamente e il suo cablaggio elaborato;
+–  è altresì dispendioso in termini di ingombro e di potenza elettrica assorbita;
+–  i contatti che lo supportano non sono espandibili e risultano essere spesso insufficienti 
+al fabbisogno, per cui si rende necessario l’utilizzo di più relè in parallelo;
+–  la durata dell’apparecchiatura è limitata dal suo utilizzo, in particolare per quanto con-
+cerne le parti suscettibili di movimentazione;
+–  in caso di guasto, gli impianti vengono costretti a fermate consistenti, poiché non è 
+supportato da caratteristiche autodiagnostiche che permettano una rapida localizzazione 
+della disfunzione e la rimozione dell’anomalia funzionale.
+Pertanto la tecnologia elettromeccanica che utilizza il relè come apparecchiatura prin-
+cipale trova applicazione soltanto in quei sistemi automatici di piccole e semplici taglie; 
+impianti in cui non è prevista alcuna flessibilità o espansione del sistema, dove non sono 
+necessari interfacciamenti con periferiche intelligenti (monitor, stampanti, reti di comuni-
+cazione), che il relè non è in grado di gestire.
+2.2  Sistemi pneumatici
+La tecnologia pneumatica è una tecnica ausiliaria, e nello stesso tempo indipendente, 
+che non necessariamente è in conflitto con le altre tecnologie. 
+Si basa su postulati elementari che fondano la loro base concettuale sull’algebra di 
+Boole. La redazione di un circuito pneumatico è caratterizzata da:
+–  componibilità di elementi semplici nella loro configurazione, anche per i sistemi più 
+complessi;
+–  basso tempo di risposta dell’anello elementare che compone il circuito complessiva-
+mente;
+–  un massimo di circa 50 I/O;
+–  possibilità di funzionare in ambienti deflagranti senza particolari accorgimenti.
+Le applicazioni della pneumatica si ritrovano in ambiente industriale in tutti i settori; 
+esse possono risolvere problemi di semplici movimentazioni che vanno a sostituire mano-
+dopera impegnata in operazioni ripetitive e frustranti, ottenendo velocità di esecuzione e 
+costi di gestione senza dubbio inferiori ai primi.
+Con l’ausilio di interfacce pneumoelettriche ed elettropneumatiche è possibile confi-
+gurare sistemi silenziosi, puliti, che non producono scorie e gas di scarico e possono lavo-
+rare in ambienti gravosi e deflagranti in particolare.
+2.3  Sistemi elettronici e microelettronici
+La produzione elettronica ha avuto negli ultimi anni una evoluzione nei processi di 
+costruzione: dai manufatti che utilizzavano tecnologie costruttive di tipo bipolare o ECL 
+si è passati alla nuova tecnica CMOS.
+
+[PAG 1320]
+XIV-8
+AUTOMAZIONE
+Una seconda direttrice di tale evoluzione si individua nella realizzazione di schede 
+elettroniche che utilizzano circuiti integrati in luogo dei tradizionali componenti discreti. 
+La tecnologia di integrazione tende a ridurre notevolmente gli ingombri delle schede e 
+offre l’opportunità inoltre di confezionare schede di tipo custom, sviluppate in base a pro-
+getti forniti dal cliente.
+Le schede elettroniche, confezionate con componenti discreti o integrati di tipo stan-
+dard o custom, sono comparse quindi in modo massiccio nelle applicazioni industriali in 
+seguito a questo sviluppo tecnologico, in quanto consentono:
+–  limitato assorbimento di energia elettrica, che si riduce praticamente a zero a riposo;
+–  dispositivi completamente immuni rispetto ai disturbi e alle interferenze provenienti 
+dal campo di applicazione.
+Una ulteriore innovazione è costituita dall’impiego dei microprocessori per i sistemi 
+di controllo automatico. In questo caso sono previsti costosi investimenti in ordine alle 
+apparecchiature, che sono però molto flessibili, e ulteriori costi di gestione riguardanti il 
+software.
+Le applicazioni riguarderanno sistemi con le seguenti caratteristiche:
+–  produzioni su vasta scala per ammortizzare i costi dei progetti;
+–  prestazioni elevate e funzioni applicative particolari;
+–  continuo adeguamento tecnologico delle apparecchiature in base alla evoluzione dei 
+microprocessori;
+–  flessibilità operativa e naturalmente congrua compatibilità per l’interfacciamento con 
+altri sistemi.
+2.4  Sistemi informatici
+Anche in ambito industriale si assiste a una fitta informatizzazione: dall’impiego del 
+computer per risolvere prevalentemente problematiche di tipo amministrativo e di elabo-
+razione dei dati, si arriva all’utilizzo del PC per applicazioni produttive.
+Le dimensioni utili, i costi, le condizioni ambientali in cui si deve operare hanno tra-
+sformato il PC anche nella sua struttura architettonica, per poterlo asservire direttamente 
+al controllo di fabbrica.
+Il PC industriale diventa anche microcontroller, una struttura sempre più integrata che 
+può dialogare col campo grazie a particolari interfacce d’ingresso/uscita. Il ruolo che 
+prima era riservato esclusivamente al PLC viene compartecipato da questa evoluzione del 
+computer.
+La scelta tra le due tecnologie (PLC o microcontroller) si basa sulle loro diverse carat-
+teristiche operative:
+–  il PLC acquisisce tutti gli stati logici degli input, elabora in base a un programma sta-
+bilito e quindi rinfresca tutte le uscite; il tutto avviene con modalità ciclica;
+–  il PC acquisisce solo i dati di input stabiliti in quel momento particolare, li elabora in 
+base al programma ed eroga le uscite richieste in base al programma.
+Generalmente il PLC è utilizzato per avere sotto controllo tutto il processo, mentre il 
+PC è utilizzato su input e output dedicati; l’orientamento è comunque non di alternativa 
+tra le due tecnologie ma di sinergia: il PLC gestisce il dialogo con il campo e il PC ha il 
+compito di elaborare successivamente i dati e di gestire eventuali periferiche di archivia-
+zione e monitoraggio dei processi. Il PC è inoltre sempre più impiegato per la programma-
+zione e la gestione on-line del PLC.
+2.5  Sistemi informatico-industriali
+La tecnologia che impiega il PLC è denominata informatica industriale poiché utilizza 
+strumenti informatici (microprocessori, memorie, digitalizzatori, visualizzatori ecc.) che 
+resistono però alle sollecitazioni e alla gravosità delle situazioni ambientali della fabbrica.
+
+[PAG 1321]
+AUTOMAZIONE
+XIV-9
+Il PLC è senza dubbio una macchina meno potente del PC, per quanto concerne 
+l’aspetto dell’elaborazione; tuttavia è una macchina dedicata più efficace nella gestione 
+dei processi industriali, poiché:
+–  privilegia lo scambio di informazioni con il campo e il dialogo con l’operatore-pro-
+grammatore;
+–  è più semplice da usare per operatori non particolarmente competenti nell’ambito 
+informatico, pur essendo nella sua architettura un dispositivo prevalentemente a carattere 
+informatico;
+–  è possibile gestire una quantità di I/O numerosa con modalità più semplici rispetto al 
+personal computer;
+–  si può programmare un PLC senza rinunciare alle proprie competenze specifiche, in 
+quanto sono possibili svariate modalità di gestione.
+3  CIM, PLC E COMUNICAZIONE 
+Oggigiorno non vi sono più onerosi magazzini di produzione ma, grazie alla automa-
+zione totale della fabbrica, si è passati alla filosofia del just-in-time, cioè della produzione 
+su commessa: si ordina per esempio a catalogo un’auto di un determinato colore e di 
+determinate caratteristiche che viene prodotta in un determinato tempo, generalmente 
+quindi non più a pronto magazzino.
+3.1  PLC e CIM (Computer Integrated Manufacturing)
+Il CIM è la nuova via per affrontare la soluzione di problemi, quali manufacturing, 
+manutenzione, produzione e management, qualità totale, metodologia e organizzazione 
+industriale in modo integrato con marketing e distribuzione, mediante l’uso di computer.
+L’organizzazione della struttura CIM suddivide il progetto di gestione della fabbrica 
+in livelli ben definiti che formano una sorta di piramide, dove con efficienti sistemi di 
+comunicazione si stabilisce un dialogo tra i vari livelli. L’obiettivo destinazione del CIM 
+è di ottenere:
+–  maggiori volumi produttivi con la contestuale diminuzione dei costi e dei tempi di 
+produzione,
+–  miglioramenti della qualità totale del prodotto,
+–  rintracciabilità di tutte le informazioni sul prodotto,
+–  riduzione delle spese generali e delle scorte,
+–  flessibilità e integrazione delle funzioni di fabbrica.
+Nodo importante nella comprensione della piramide CIM rimane la funzione di Rela-
+zione Specifica tra i vari livelli:
+–  ciascun livello nella piramide CIM gode della possibilità di comunicare al livello n+1 
+e n-1;
+–  software specifici in accordo alle necessità possono originare dati trasferibili tra i vari 
+livelli;
+–  basi di conoscenza interne o esterne ai livelli sono disponibili e consultabili secondo 
+necessità;
+–  basi hardware e software standardizzate, manutenibili, flessibili rendono elegante e 
+funzionale la configurazione e l’architettura del sistema.
+Nei sistemi industriali in genere, e in particolare con la presenza di processi di elevata 
+complessità, diventa fondamentale la questione del controllo. La supervisione dei processi 
+assume importanza strategica nel momento in cui i sistemi di controllo e di scambio delle 
+informazioni, di manutenzione e di messa a punto raggiungono un elevato livello di auto-
+nomia, che dipende in minima parte dal lavoro manuale. Il dialogo operatore dovrà essere 
+fatto con i mezzi e le metodologie più “intelligenti” possibili.
+
+[PAG 1322]
+XIV-10
+AUTOMAZIONE
+Altro aspetto rilevante nella struttura a piramide del CIM è lo scambio delle informa-
+zioni, in modo orizzontale (tra le strutture di uno stesso livello) e in modo verticale (tra i 
+vari livelli gerarchici).
+Il CIM ha ragione di essere in funzione della trasparenza con cui avviene, tramite le 
+reti di comunicazione, lo scambio delle informazioni. Ogni utente della piramide dovrà 
+essere in grado di prendere l’iniziativa rispetto a tutti gli altri utenti, e scambiare con essi 
+e con il mondo esterno informazioni, senza bisogno di software particolari o non compati-
+bili con l’esterno.
+Lo scambio di tali informazioni può avvenire secondo i vari livelli gerarchici di comu-
+nicazione tra i sistemi di gestione, supervisione e controllo. Ai bassi livelli della piramide 
+CIM la frequenza di elaborazione dei dati è alta, con situazioni di real-time, mentre l’ela-
+borazione degli stessi non è per nulla complessa. Nei livelli alti i dati elaborati sono di 
+grandi dimensioni e strutturati; la frequenza di acquisizione delle informazioni non è 
+stringente rispetto a vincoli temporali. Si avranno quindi:
+–  Reti per le informazioni. Collegano i sistemi informativi di alto livello ERP/MES con 
+i sistemi di supervisione SCADA nei livelli azienda, stabilimento e reparto. Tali reti non 
+soddisfano specifiche di tempo reale, mentre trasferiscono dati e informazioni complesse.
+–  Reti per il controllo. Connettono i livelli di controllo di cella o isola con quelli di 
+reparto con centratura su specifiche di correttezza dell’informazione e vincoli temporali, 
+mentre le informazioni sono di tipo semplice. Si tratta tipicamente di reti proprietarie.
+–  Reti di campo (fieldbus). Sono le reti che connettono i controlli modulanti e logici ai 
+sensori e attuatori del campo.
+Nella Fig. XIV.3.1 viene presentata un’architettura CIM, dove vengono visualizzati i 
+vari livelli, gli strumenti utilizzati e le reti di comunicazione.
+Fig. XIV.3.1   Schematizzazione dei vari livelli della struttura CIM.
+Livello 6
+Livello 5
+Livello 4
+Livello 3
+Livello 2
+Livello 1
+società
+stabilimento
+Reparto
+Isola/cella
+Macchina
+Campo
+Rete informazioni
+ERP/MES
+     SCADA,
+Host computer
+CAD, CAE, SCADA
+Rete informazioni
+IPC, PLC, DCS
+ Sensori,
+attuatori
+Rete campo (fieldbus )
+IPC, PLC, CNC,
+PID, DCS, robot
+Azienda
+Fabbrica
+
+[PAG 1323]
+AUTOMAZIONE
+XIV-11
+Livello 1 (Campo). In questo primo livello si collocano i dispositivi che interagiscono 
+direttamente con il campo come i sensori e gli attuatori. L’intelligenza di tali apparecchia-
+ture è modesta, si tratta soltanto di potersi interfacciare con i dispositivi logici di controllo 
+che li raggruppano.
+Livello 2 (Macchina). Le apparecchiature che presiedono al controllo di questo livello 
+sono: controllori modulanti PID (Proporzionale Integrativo Derivativo); controllori pro-
+grammabili PLC (Programmable Logic Controller); sistemi di controllo distribuito DCS 
+(Distributed Control System) che integrano funzioni di controllo, calcolo, monitoraggio, 
+gestione allarmi; sistemi a controllo numerico CNC (Computer Numerical Control) per il 
+controllo assi in modalità interpolata degli utensili di macchina; robot industriali; personal 
+computer industriali IPC (Industrial Personal Computer) che sanno resistere alle gravose 
+condizioni di servizio in ambito industriale.
+Livello 3 (Isola o cella). Ogni isola o cella viene controllata e gestita da un sistema 
+computerizzato. In ogni cella o isola diverse macchine contribuiscono ad un sottoprocesso 
+produttivo che deve essere coordinato. Le informazioni vanno scambiate in duplice dire-
+zione tra i due livelli inferiore e superiore tramite computer, minielaboratori e PLC di 
+classe superiore. La differenza con il livello inferiore è infatti soltanto nella complessità 
+delle operazioni che devono essere coordinate tra le varie macchine e apparecchiature.
+Livello 4 (Reparto). Tutti i reparti fanno capo ad un centro di archiviazione e analisi 
+delle informazioni che interconnettono le varie unità di reparto. Sono i sistemi CAD 
+(Computer Aided Design) che con l’ausilio di un computer assistono nella progettazione 
+dei manufatti, mentre i software CAE (Computer Aided Engineering) assistono nell’ana-
+lisi e nella simulazione dei progetti che si vogliono trasformare in prodotti. È a questo 
+livello che la base di dati di ogni cella viene coordinata con le altre isole per contribuire al 
+processo produttivo.
+Livello 5 (Fabbrica/stabilimento). I vari reparti dello stabilimento di produzione ven-
+gono connessi tra loro in modo che l’amministrazione, la logi
