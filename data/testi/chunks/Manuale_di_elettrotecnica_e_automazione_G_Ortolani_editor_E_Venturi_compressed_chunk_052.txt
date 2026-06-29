@@ -1,0 +1,947 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 52/116 ===
+Chars: 43,122 | Offset: 2,253,264
+
+
+
+[PAG 1134]
+XI-6
+ILLUMINOTECNICA
+nale al quadrato della distanza fra la sorgente luminosa e la superficie da illuminare (Fig. 
+XI.2.4) e che esso vale solo fino a quando le distanze della sorgente luminosa sono piccole 
+rispetto alle superfici.
+Considerando una superficie elementare orizzontale dA illuminata da una sorgente 
+puntiforme P e posta alla distanza r e derivando dal diagramma polare fotometrico di 
+emissione il valore dell’intensità luminosa Iv emessa dalla sorgente nella direzione della 
+superficie dA, il flusso luminoso incidente sulla superficie dA segue la relazione
+(XI.2.8)
+e il corrispondente illuminamento Eo è
+(XI.2.9)
+Per quanto riguarda l'illuminazione artificiale per interni, occorre distinguere tra illu-
+minamento medio e illuminamento di esercizio. 
+L’illuminamento medio (Em) è il valore medio aritmetico degli illuminamenti misurati 
+o calcolati in un ambiente o in una zona destinata ad una determinata attività (la defini-
+zione di zona di un ambiente viene intesa come quella parte di un locale nella quale si 
+svolge un'uguale attività lavorativa, o in cui si riscontra un'uniforme utilizzazione dello 
+spazio).
+L’illuminamento di esercizio (En) è concepito come il valore dell'illuminamento 
+medio sul piano di lavoro, tenendo in considerazione lo stato medio di invecchiamento e 
+insudiciamento dell'impianto di illuminazione.
+2.4  Luminanza
+La luminanza (L) definisce la sensazione di luminosità dovuta alla presenza di una 
+sorgente luminosa oppure di una superficie illuminata. Questa grandezza esprime il rap-
+porto fra l'intensità del flusso luminoso percepito e la superficie della sorgente luminosa, 
+nella direzione di osservazione. La Tab. XI.2.2 riporta i valori di luminanza di alcuni corpi 
+illuminanti.
+ 
+Fig. XI.2.3   Illuminamento.
+Fig. XI.2.4   Relazione tra illuminamento e 
+distanza di una lampada con riflettore incor-
+porato.
+1300 lux
+325 lux
+145 lux
+81 lux
+51 lux
+ 2,2 m
+ 4,4 m
+ 6,6 m
+ 8,8 m
+ 11 m
+2 m
+4 m
+6 m
+8 m
+10 m
+d
+Ivds
+Iv
+dA
+r2
+------
+s
+cos
+=
+=
+Eo
+d
+dA
+-------
+Iv
+r2
+----
+s
+cos
+=
+=
+
+[PAG 1135]
+ILLUMINOTECNICA
+XI-7
+(XI.2.10)
+Questa definizione è valida anche per tutti i corpi illuminati (per esempio una superfi-
+cie): infatti essi si vedono perché riflettono la luce che ricevono. Il loro aspetto dipende 
+essenzialmente dalle variazioni della luminanza sull'intera superficie. Ecco perché, per 
+una buona illuminazione di un ambiente, si tiene conto  oltre che del volume, delle 
+dimensioni e dell'attività che vi si esercita  anche del potere riflettente (o coefficiente di 
+riflessione) delle pareti, del suolo, del soffitto e degli oggetti che producono riflessioni 
+considerevoli e che quindi costituiscono delle sorgenti luminose secondarie.
+L’unità di misura della luminanza è la candela al metro quadro (cd/m2), unità denomi-
+nata nit.
+2.5  Radianza
+Si definisce radianza o emittanza luminosa di una sorgente luminosa estesa M il rap-
+porto tra il flusso luminoso d emesso da una porzione della superficie emittente, com-
+prendente il punto considerato, e l'area dA della stessa superficie.
+(XI.2.11)
+È la grandezza fotometrica corrispondente all'emittanza integrale J che si definisce 
+nello studio della trasmissione del calore per irraggiamento. L'unità di misura della 
+radianza è il lux su bianco (lux s.b.). Questa unità è derivata dal fatto che la relazione che 
+lega la radianza all’illuminamento è pari a
+(XI.2.12)
+Tab. XI.2.1   Alcuni valori di luminanza
+superficie del Sole vista dalla Terra
+1,6 · 109  cd/m2
+arco elettrico
+1 · 108  cd/m2
+filamento di tungsteno di lampada ad incandescenza
+5 · 106  cd/m2
+filamento di carbone di lampada ad incandescenza
+8 · 105  cd/m2
+foglio di carta illuminato in pieno sole
+3 · 104  cd/m2
+lampada fluorescente tubolare da 40 W
+4500 cd/m2
+cielo sereno di giorno
+103 · 104  cd/m2
+fiamma
+1  2 · 104  cd/m2
+superficie della Luna vista dalla Terra
+2500 cd/m2
+cielo nuvoloso di giorno
+50  500 cd/m2
+cielo sereno con luna di notte
+102  101  cd/m2
+soglia di luminanza percettibile
+ 106  cd/m2
+L
+dI
+dA
+
+cos
+-------------------
+d d
+d
+-------
+
+
+
+
+dA
+
+cos
+-------------------
+d2
+ddA
+
+cos
+---------------------------
+d d
+dA
+-------
+
+
+
+
+d
+
+cos
+-------------------
+dE
+d
+
+cos
+-------------------
+=
+=
+=
+=
+=
+M
+d
+dA
+-------
+=
+M
+rE
+=
+
+[PAG 1136]
+XI-8
+ILLUMINOTECNICA
+Con un coefficiente di riflessione della superficie r pari a 1 (superfici perfettamente 
+riflettenti, cioè bianche) si ha una perfetta concordanza tra radianza e illuminamento. Di 
+fatto la radianza si misura in lumen al metro quadrato (lm/m2).
+3  MISURE FOTOMETRICHE
+Le misure fotometriche hanno la funzione di creare un supporto al professionista per 
+una corretta progettazione degli impianti di illuminazione. A differenza di anni addietro, 
+le attuali tecniche si appoggiano sull’uso dell’elettronica, abbandonando il metodo del 
+confronto visivo a favore di quello fotoelettrico. Quest’ultimo effettua la misura dell’illu-
+minamento (E) mediante una conversione dell’energia luminosa in energia elettrica che, 
+con opportuni accorgimenti, permette di ottenere misure oggettive anche sulle altre gran-
+dezze fotometriche.
+3.1  Misura del flusso luminoso
+La misurazione del flusso luminoso emesso da una sorgente di luce (lampada o appa-
+recchio di illuminazione) può essere effettuata mediante l’impiego di un goniofotometro o 
+di una sfera integratrice.
+Il goniofotometro è lo strumento che permette di misurare la ripartizione nello spazio 
+del flusso luminoso emesso da una sorgente di luce. È composto da un rivelatore fotome-
+trico posto in linea orizzontale con la sorgente di luce e separato da essa per mezzo di uno 
+schermo, un braccio rotante con uno specchio all’estremità che riflette verso il rivelatore 
+la luce emessa dalla sorgente (Fig. XI.3.1). La misura viene effettuata ruotando il braccio 
+attorno al suo asse verticale di un angolo prefissato e a distanze diverse dalla sorgente 
+luminosa. Normalmente i bracci rotanti possono raggiungere una lunghezza massima di 
+3 ÷ 4 m.
+Fig. XI.3.1  Elementi di un goniofotometro.
+È possibile dedurre il flusso luminoso con elaborazioni successive del proprio solido 
+fotometrico. In questo caso occorre rilevare più indicatrici di emissione considerando la 
+configurazione del solido e il grado di affidamento della misura desiderato.
+La relazione sarà data dalla sommatoria dei flussi parziali tra i punti  = 0° e  = 180°
+(XI.3.1)
+dato che il flusso spaziale, relativo a ciascuna intensità media angolare I, è rappresentato 
+dalla relazione
+(XI.3.2)
+Rilevatore
+Schermo
+Sorgente luce
+Specchio
+Braccio
+rotante
+tot
+I
+
+0°
+=
+180°
+
+=
+
+I
+=
+
+[PAG 1137]
+ILLUMINOTECNICA
+XI-9
+La sfera integratrice di Ulbricht è una sfera cava avente un diametro di qualche metro 
+e la superficie interna ricoperta da una vernice adatta a renderla bianca e diffondente 
+(lambertiana), almeno nel campo della radiazione visibile. All’interno della sfera viene 
+collocata, in posizione eccentrica, la sorgente da sottoporre a misura (Fig. XI.3.2). Nella 
+superficie della sfera è aperta una finestrella di area nota; un piccolo schermo impedisce 
+che la luce emessa dalla sorgente da misurare colpisca direttamente la finestrella.
+Sulla superficie di questa, dalla parte interna, si produce un illuminamento per effetto 
+della riflessione diffusa della luce emessa dalla sorgente da misurare sulla parete interna 
+della sfera e delle successive riflessioni che la luce subisce ulteriormente sulla parete 
+stessa. Tale illuminamento è proporzionale al flusso emesso dalla sorgente da misurare 
+secondo la relazione 
+(XI.3.3)
+nella quale il fattore di proporzionalità k viene individuato mediante taratura della sfera 
+con una lampada campione di cui si conosce il flusso luminoso sferico. La misura viene 
+eseguita da un luxmetro affacciato alla finestra aperta della sfera.
+Se si vuole misurare la distribuzione spaziale dell’intensità luminosa, si impiega il gonio-
+fotometro; questa misura di laboratorio prevede quattro tecniche, diverse nella relazione 
+dinamico-spaziale tra la sorgente di luce e la cellula fotorilevatrice. I risultati vengono 
+rappresentati con specifici rapporti di coordinate denominati A-, B- e C-. Le rappre-
+sentazioni maggiormente utilizzate, e consigliate dalla CIE, sono le B- e le C-Figg. 
+XI.3.3 e XI.3.4)
+Fig. XI.3.3   Sistema di rilevamento B-. Asse di rotazione dei piani B.
+Fig. XI.3.2   Elementi della sfera di Ulbricht.
+Sorgente
+luce
+Schermo
+Rivelatore
+E
+k
+=
+0°
+piano B = 20°
+Asse di rotazione
+90°
+90°
+
+B = 0°
+B = 270°
+B = 180°
+B = 90°
+
+[PAG 1138]
+XI-10
+ILLUMINOTECNICA
+Fig. XI.3.4   Sistema di rilevamento C-. Asse di rotazione dei piani C.
+3.2  Misura dell’intensità luminosa
+La misura dell’intensità luminosa può essere effettuata in due modi diversi:
+–  visivo,
+–  mediante luxmetro.
+Il primo metodo, che è stato anche il primo applicato storicamente, si basa sul giudizio 
+di un osservatore per un confronto tra l'intensità da misurare e una intensità di riferimento 
+conosciuta. Si dispongono la sorgente luminosa da sottoporre a misura, la sorgente cam-
+pione, che serve da riferimento, e un piccolo schermo che, illuminato da un lato dalla sor-
+gente campione e dall'altro da quella da misurare, assume a sua volta due valori di 
+luminanza, che possono essere confrontati. Tutto il dispositivo è posto in camera oscura, 
+cosicché non vi sia il disturbo della luce proveniente da altre sorgenti. Il fatto che la valu-
+tazione dell'intensità si fonda sul giudizio dell'operatore causa però qualche incertezza 
+nella misura.
+Il secondo metodo prevede l’impiego del luxmetro per misurare l’intensità luminosa 
+diffusa da una sorgente di luce puntiforme e si basa sull’illuminamento E prodotto dalla 
+sorgente ad una certa distanza d, cioè seguendo la legge del quadrato delle distanze. In 
+questa situazione l’intensità sarà uguale a
+(XI.3.4)
+È possibile anche invertire il procedimento: mediante una lampada campione, regolata 
+in intensità luminosa, tarare un luxmetro. In questo caso, i due dovranno essere montati su 
+un banco fotometrico, cioè un'asta rettilinea molto rigida e stabile su cui sono scorrevoli i 
+supporti della lampada e il luxometro. Tutto il sistema è collocato in camera oscura, affin-
+ché le misure non siano influenzate da sorgenti luminose estranee. Si dovrà verificare 
+inoltre che la sensibilità del luxmetro sia conforme alla sensibilità spettrale secondo la 
+V(). In altri casi il supporto della sorgente da esaminare è girevole per permettere con 
+facilità la ripetizione della misura lungo diverse direzioni. Così si può determinare il dia-
+gramma polare dell'intensità luminosa o superficie fotometrica di emissione della sor-
+gente.
+Il luxmetro è uno strumento formato da un rivelatore fotometrico e da un disco opalino 
+avente la funzione di ridurre o annullare la dipendenza della corrente di uscita del rileva-
+tore dalla direzione di provenienza della luce (correzione per il coseno).
+piano C = 20°
+
+0°
+90°
+C = 90°
+Asse di rotazione
+C = 180°
+C = 0°
+C =270°
+I
+E d 2
+–
+
+=
+
+[PAG 1139]
+ILLUMINOTECNICA
+XI-11
+I rivelatori attualmente adoperati sono:
+–  fotometrici (fotovoltaici, a fotodiodi ad accumulazione di carica, fotomoltiplicatori)
+–  radiometrici.
+I fotovoltaici si basano sul trasferimento di elettroni attraverso lo strato di sbarra-
+mento generato dalla luce che colpisce la giunzione tra due semiconduttori di silicio. Essi 
+presentano caratteristiche di ottima linearità e stabilità e assenza di fatica; sono condizio-
+nati dalla temperatura e presentano una dipendenza della corrente di uscita dalla direzione 
+di provenienza dei raggi luminosi. Devono essere dotati di opportuni sistemi per correg-
+gere la sensibilità spettrale in conformità alla V().
+I rivelatori fotometrici a fotodiodi ad accumulazione di carica, denominati CCD, sono 
+formati da un dispositivo allo stato solido che, isolato dal circuito di uscita, accumula 
+cariche elettriche quando è colpito dalla luce. Al momento opportuno queste vengono sca-
+ricate sul circuito di misura. Anche essi presentano una dipendenza della corrente di 
+uscita dalla direzione di provenienza dei raggi luminosi e devono essere dotati di oppor-
+tuni sistemi per correggere la sensibilità spettrale in conformità alla V().
+I fotomoltiplicatori sono dotati di elementi con proprietà fotoemissive che, quando 
+sono colpiti dalla luce, producono elettroni. Il processo avviene all’interno di un tubo 
+sotto vuoto ed è caratterizzato dalla presenza di numerosi anodi rivestiti di sostanze parti-
+colari che, colpiti dagli elettroni generati in precedenza, emettono una serie più numerosa 
+di elettroni secondari. Il processo a cascata determina una serie di amplificazioni succes-
+sive del segnale iniziale. Questo tipo di rivelatori presentano una accentuata sensibilità 
+alle condizioni ambientali e una scarsa stabilità, elementi che fanno richiedere al rivela-
+tore continue tarature durante la misurazione.
+I radiometri sono tipi particolari di rivelatori che, nel campo delle lunghezze d’onda 
+interessate, presentano una sensibilità spettrale costante. In alcuni casi sono composti da 
+un superficie sensibile nera la quale trasforma in calore la radiazione incidente assorbita. 
+In risposta all’elevazione della temperatura, l’elemento sensibile può generare una cor-
+rente elettrica o variare la sua resistenza.
+3.3  Misura dell’illuminamento
+L'illuminamento EV può essere misurato per mezzo di celle fotovoltaiche (luxmetri o 
+luxometri), essenzialmente costituiti da un sensore S a semiconduttore nel quale, quando 
+esso sia colpito da luce, si genera una forza elettromotrice (e); questa viene misurata con 
+un voltmetro V (Fig. XI.3.5).
+Se la risposta dello strumento fosse indipendente dalla lunghezza d'onda della radia-
+zione, la forza elettromotrice suscitata nella cella sarebbe approssimativamente propor-
+zionale alla potenza della radiazione elettromagnetica assorbita dalla superficie sensibile 
+e il dispositivo costituirebbe un misuratore di potenza radiante o radiometro. Invece per 
+avere un misuratore di flusso luminoso bisogna che la curva di sensibilità alla radiazione 
+dello strumento riproduca la curva di visibilità normale della luce in modo che, per una 
+Fig. XI.3.5   Misura dell'illuminamento con 
+una cella fotovoltaica.
+V
+S
+W
+
+[PAG 1140]
+XI-12
+ILLUMINOTECNICA
+radiazione incidente monocromatica di lunghezza d'onda e potenza W(), valga la rela-
+zione:
+(XI.3.5)
+dove W() è la potenza della radiazione monocromatica incidente sul sensore, s), sensi-
+bilità, è il rapporto tra la forza elettromotrice generata e la potenza della radiazione, V() 
+è la visibilità relativa della radiazione, funzione della sua lunghezza d'onda, C una 
+costante caratteristica dello strumento indipendente da . All'esterno del campo di visibi-
+lità della radiazione la risposta del sensore deve ovviamente essere nulla.
+In generale la condizione XI.3.5 non è rispettata dal sensore se non approssimativa-
+mente; per rimediare, si pongono sul sensore dei filtri che possano attenuare quelle com-
+ponenti della radiazione che altrimenti darebbero luogo a una risposta eccessiva del 
+sensore; così si ottiene, più o meno esattamente, il rispetto della condizione XI.3.5 da 
+parte dell'insieme (filtro + sensore). Per semplicità di uso, il voltmetro porta una scala 
+direttamente tarata in lux. Sono usati altri luxometri, che si fondano su diversi principi di 
+funzionamento: ve ne sono a fotoresistenza, a fotodiodo ecc.
+3.4  Misura della luminanza
+La luminanza può essere misurata con metodi diretti o indiretti, a seconda che si para-
+gonino tra loro due luminanze oppure i valori vengano dedotti, con formule matematiche, 
+da misure eseguite su altre grandezze fotometriche. Nelle attuale tecniche di misura si 
+impiega il luminanzometro (Fig. XI.3.6). In questo caso, si consideri una sorgente lumi-
+nosa estesa, della quale si vuole misurare la luminanza nel punto P lungo una certa dire-
+zione. Lungo questa direzione e alla distanza R disponiamo un luminanzometro, 
+essenzialmente costituito da una camera recante una finestrella F di area SF; sul fondo c’è 
+una cella C, del tipo usato per i luxometri, misurante il flusso luminoso incidente su di 
+essa. Le pareti laterali del contenitore sono internamente molto assorbenti (nere), sicché il 
+flusso luminoso che arriva sulla cella C è solo quello direttamente proveniente dalla por-
+zione della superficie A delimitata dall'angolo solido M, dipendente dalle dimensioni 
+dello strumento. Se l'area su cui punta lo strumento emette nella direzione della finestra 
+con intensità IV , il flusso luminoso che entra nello strumento e viene a cadere sulla cella di 
+misura C è:
+(XI.3.6)
+Fig. XI.3.6   Schema del lumi-
+nanzometro.
+e
+W 
+
+------------
+s 
+
+CV 
+
+=
+=
+V
+IVF
+LVAcosF
+=
+=
+F
+R
+P
+C
+A
+M
+
+M
+F
+C
+SF
+n
+
+[PAG 1141]
+ILLUMINOTECNICA
+XI-13
+dove F è il piccolo angolo solido sotto il quale da ogni punto della superficie A si vede la 
+finestra F. Per tale angolo solido si può scrivere:
+(XI.3.7)
+Poiché anche l'angolo solido M è sempre piccolo, vale pure la relazione:
+(XI.3.8)
+con  l'angolo formato dalla normale n ad A con la retta passante per la finestra SF.
+Dalle XI.3.6, XI.3.7, XI.3.8 si trova:
+(XI.3.9)
+La XI.3.9 lega il flusso luminoso V misurato con la cella C e la luminanza LV della 
+superficie verso cui è puntato il luminanzometro. Le altre grandezze, che figurano nella 
+XI.3.9 SF e M, sono caratteristiche solo dello strumento; di esse si può tenere conto una 
+volta per tutte nella taratura della scala di lettura dello strumento indicatore, che dà diret-
+tamente il valore della luminanza in candele al metro quadrato. Se la superficie emittente 
+è lambertiana, il valore della luminanza non muta al variare dell'angolo , altrimenti LV
+dipende dalla direzione di osservazione.
+4  COLORIMETRIA
+La colorimetria è quella disciplina che studia la misurazione oggettiva del colore. Al 
+termine colore vengono attribuiti significati spesso molto diversi tra loro, significati quasi 
+sempre risultanti da un’esperienza soggettiva di valutazione. La luce che ci arriva dal sole 
+o da altre sorgenti di luce è generalmente vista come bianca dal nostro occhio. Quando 
+illumina un oggetto, oltre a permetterci di osservarne la forma e le dimensioni, essa ci for-
+nisce anche l’informazione del colore di quell’oggetto. Diversamente, quando si osserva 
+lo stesso oggetto non più con luce bianca ma con luce colorata, la percezione del suo 
+colore risulta diversa. Può capitare addirittura (luce di una lampada al sodio) di non riu-
+scire più a distinguere i colori. Questo evidenzia che l’oggetto illuminato può solo “sele-
+zionare” quali dei colori presenti nella luce fare ritornare al nostro occhio oppure 
+trattenere. Da tutti questi fattori scaturisce una definizione di colore in senso soggettivo, 
+legata al “colore percepito di un oggetto”; in questo senso il colore percepito risulta: 
+appartenente ad un oggetto, legato alle caratteristiche dell’oggetto, alla luce incidente, 
+all’ambiente circostante, alla direzione di osservazione e all’adattamento dell’osserva-
+tore.
+Una seconda definizione, legata alla necessità di misurarlo e di posizionarlo 
+all’interno della distribuzione spettrale del fascio luminoso osservato, lo indica come il 
+colore della luce riflessa o trasmessa da un oggetto illuminato da una delle sorgenti di 
+luce normalizzate dalla CIE.
+I tre attributi del colore sono tonalità, luminosità e saturazione. La tonalità si riferisce 
+all'attributo dei colori che permette loro di essere classificati come rosso, giallo, verde, 
+blu, o un valore intermedio tra qualsiasi coppia contigua di tali colori. Le differenze di 
+tonalità dipendono principalmente dalle variazioni nella lunghezza d'onda della luce che 
+colpisce l'occhio. La tonalità può essere rappresentata visivamente da una ruota delle 
+F
+SF
+R2
+-----
+
+Acos
+MR2
+
+V
+LVAcosF
+LVMR2 SF
+R2
+-----
+LVSFM
+=
+=
+=
+
+[PAG 1142]
+XI-14
+ILLUMINOTECNICA
+tonalità che va dal rosso al verde al blu e di nuovo al rosso. La luminosità si riferisce alla 
+quantità di chiaro o scuro del colore. Essa è determinata dal grado di riflettività della 
+superficie fisica che riceve la luce. Tanto più alta è la luminosità, tanto più chiaro è il 
+colore. La saturazione si riferisce alla vividezza del colore. Essa viene misurata nei ter-
+mini della differenza di un colore rispetto a un grigio senza colore (neutrale) con lo stesso 
+livello di luminosità. Tanto più bassa è la saturazione, tanto più grigio è il colore. Quando 
+la saturazione è zero, il colore è grigio.
+La misurazione di un campione colorato o di una luce è realizzata attraverso lo spet-
+trofotometro o il colorimetro. Il primo è un sistema ottico con il quale si mettono a con-
+fronto un campione bianco e un campione colorato, esposti alle componenti colorate della 
+luce bianca attraverso un prisma; il risultato della comparazione viene registrato in un 
+grafico che ne determina le componenti cromatiche dei colori fondamentali della luce 
+(rosso, verde, blu). Il colorimetro è invece un dispositivo con due superfici angolari che 
+illuminano il campione in esame, da sinistra con tre proiettori muniti di filtri delle tre luci 
+fondamentali e da destra con una luce bianca standard. Il confronto tra la riflettanza delle 
+due superfici fornisce il valore cromatico in RGB del campione da misurare.
+I sistemi oggi più comunemente usati per dare una valutazione oggettiva di un colore 
+sono: il sistema CIE e il sistema Munsell.
+4.1  Sistema CIE
+Il sistema CIE permette di individuare matematicamente il colore di una radiazione 
+luminosa attraverso due coordinate cromatiche. La sua struttura si basa sulle leggi di 
+Grassmann che si possono riassumere nel modo seguente:
+–  È possibile risalire ad uno stimolo (per esempio la luminanza) di una radiazione che 
+produce colore individuando e sommando gli stimoli legati ai tre colori primari. Se L() è 
+la luminanza, L() = LR + LV + LB.
+–  Esiste una relazione di proporzionalità diretta tra lo stimolo cromatico e gli stimoli 
+legati ai colori primari; infatti, se lo stimolo di una radiazione cromatica aumenta di n, 
+anche gli stimoli primari aumentano di n. L’esempio precedente si trasforma in
+nL() = nLR + nLV + nLB.
+–  L’effetto ottenuto sommando due stimoli cromatici qualsiasi si ottiene anche som-
+mando fra loro gli stimoli primari che lo compongono.
+L1(1) + L2(2) = (LR1 + LR2) + (LV1 + LV2) + (LB1 + LB2).
+I modelli di colore, prodotti dalla Commission Internationale de l'Eclairage (CIE), 
+sono basati sulla risposta dell'occhio umano al modello RVB e sono progettati per rappre-
+sentare in modo accurato la percezione umana del colore. Essi sono utilizzati per definire 
+colori indipendenti dal dispositivo, sono ampiamente adottati perché sono facili da usare 
+sui computer e descrivono un'ampia gamma di colori. I modelli più conosciuti sono CIE 
+XYZ e CIE Lab.
+Nel 1931 la CIE sviluppò il sistema di colore XYZ, chiamato anche “sistema di colore 
+norma”. Questo sistema viene spesso rappresentato come un grafico bidimensionale che 
+corrisponde più o meno alla sagoma di una vela (Fig. XI.4.1). I componenti di rosso di un 
+colore sono disposti lungo l'asse x (orizzontale) del piano delle coordinate e i componenti 
+di verde sono disposti lungo l'asse y (verticale). In questo modo ogni colore può essere 
+assegnato a un particolare punto sul piano delle coordinate. La purezza spettrale dei colori 
+diminuisce mano a mano che ci si sposta lungo il piano delle coordinate. In questo 
+modello non viene considerata la luminosità.
+CIE Lab è un potenziamento del modello di colore CIE XYZ. In questo modello tridi-
+mensionale, le differenze di colore che si percepiscono corrispondono alle distanze misu-
+rate in modo colorimetrico. L'asse a si estende dal verde (a) al rosso (a) e l'asse b dal
+
+[PAG 1143]
+ILLUMINOTECNICA
+XI-15
+blu (b) al giallo (b). La luminosità (L) diminuisce andando dal basso verso l'alto del 
+modello tridimensionale. I colori sono rappresentati da valori numerici.
+Fig. XI.4.1   Diagramma cromatico CIE.
+In confronto al modello XYZ, i colori CIE Lab sono più compatibili con i colori per-
+cepiti dall'occhio umano. Con il modello CIE Lab, la luminanza di colore (L), tonalità e 
+saturazione (a, b) possono essere rivisti singolarmente; come risultato, il colore comples-
+sivo dell'immagine può essere modificato senza cambiare l'immagine o la sua luminanza.
+4.2  Valori tristimolo
+La somma dei dati relativi al rosso, verde e blu si chiama valore-tristimolo di un 
+determinato colore e viene definito con le lettere maiuscole X per il rosso, Y per il verde, 
+Z per il blu.
+I valori tristimolo servono per calcolare le coordinate della cromaticità di un colore; 
+tali coordinate rappresentano le percentuali relative di ciascun colore primario presente in 
+un certo colore e il loro valore è indicato con lettere minuscole: x valori del rosso, y valori 
+del verde, z valori del blu.
+4.3  Sistema Munsell
+Questo sistema venne proposto dalla American A.H. Munsell nel 1905 e poi riveduto 
+nel 1943. Esso definisce tre attributi di colore: H (hue, cioè tonalità), C (chroma, cioè 
+croma) e V (valore = luminosità). Il sistema è costituito da un insieme di piastrine colo-
+rate, che formano un libro di carte di colori, in ciascuna delle quali una delle tre variabili 
+viene mantenuta costante (Fig. XI.4.2).
+La tonalità è divisa in cinque colori di base: rosso (R), giallo (Y), verde (G), blu (B) e 
+porpora (P), con una seconda dimensione tra ciascun colore, che ha 10 gradazioni.
+Il valore, una misurazione del livello di luminosità o oscurità di un colore, è definito 
+in 11 incrementi da bianco a nero.
+Il croma, una misurazione della saturazione (o purezza) di un colore, è suddiviso in 15 
+gradazioni.
+L'aspetto dei colori nel sistema di Munsell viene caratterizzato usando gruppi di tre 
+verde
+rosso
+blu
+verde-giallo
+blu-verde
+violetto
+porpora
+x
+y
+bianco
+0
+0,2
+0,4
+0,6
+0,8
+0
+0,2
+0,4
+0,6
+0,8
+
+[PAG 1144]
+XI-16
+ILLUMINOTECNICA
+simboli. Per esempio, la sigla 5R 4/14 indica un rosso brillante, dove 5R è la tonalità, 4 la 
+luminosità e 14 il croma.
+Fig. XI.4.2   Sistema Munsell.
+4.4  Temperatura di colore e indice di resa cromatica
+Se prendiamo un corpo nero cavo e lo surriscaldiamo, si troverà che nella cavità si 
+evidenzierà prima un colore rosso, poi rosso arancio, poi bianco e poi, continuando il 
+corpo a surriscaldarsi, apparirà bianco-azzurro.
+Si definisce temperatura di colore (teoria di Max Planck) il colore corrispondente a 
+quello di un corpo nero surriscaldato ad una temperatura in °C con riferimento alla tempe-
+ratura assoluta in gradi Kelvin (0 K = 273 °C).
+In questo modo, a temperatura ambiente il corpo nero apparirà nero, a 800 K sarà 
+rosso, a 3000 K apparirà giallo, a 4000 K sarà bianco caldo, a 5000 K sarà bianco freddo e 
+comparirà azzurro a 8000 K.
+Nel caso dell'emissione di corpi neri o grigi la temperatura di colore è, per la defini-
+zione, pienamente in grado di indicare la tinta della luce. Con le sorgenti termiche selet-
+tive (non grigie) e con gran parte delle lampade a fluorescenza il metodo è ancora idoneo 
+a dare un'indicazione abbastanza significativa del colore. Invece con le sorgenti di luce 
+colorata (lampade a vapori di sodio, lampade a scarica colorate per insegne commerciali 
+ecc.) il metodo della temperatura di colore non è più applicabile. Per esempio, le lampade 
+ad incandescenza hanno una temperatura colore di 2700 ÷ 3100 K.
+Bisogna considerare che la temperatura di colore non dà indicazioni sulla distribu-
+zione dell’energia spettrale della luce della lampada, così che l’effetto di due luci che illu-
+minano degli oggetti può essere diverso se diverso è il loro grafico di energia spettrale, 
+anche se la temperatura di colore apparente è uguale. Questo aspetto risulta molto impor-
+tante nei progetti di illuminazione.
+Le sorgenti luminose che la CIE ha individuato come sorgenti modello sono quelle 
+definite “A” pari a 2854 K (incandescenza normale), “B” pari a 4870 K (sorgente A più 
+un filtro) e “C” pari a 6770 K (sorgente A più un filtro). Secondo questo sistema, il tipo B 
+rappresenta il colore della luce naturale del mezzogiorno nel centro Europa a primavera, il 
+tipo C invece rappresenta il colore della luce a mezzogiorno con il cielo coperto, sempre 
+nel centro Europa e in primavera.
+L’indice di resa cromatica Ra è definito come la capacità della sorgente luminosa di 
+riprodurre i colori in modo che le persone, gli oggetti e i prodotti abbiano un aspetto più 
+Tinta
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Nero
+Bianco
+Rosso (R)
+Viola-Rosso (RP)
+Rosso-Giallo (YR)
+Giallo (Y)
+Verde-Giallo (GY)
+Verde (G)
+Blu (B)
+Viola (P)
+Valore
+Blu-Viola (BP)
+Blu-Verde (BG)
+
+[PAG 1145]
+ILLUMINOTECNICA
+XI-17
+naturale; è di fatto il rapporto tra il valore della luce di una lampada da esaminare e quello 
+di una sorgente luminosa di riferimento, aventi entrambi la stessa temperatura di colore.
+Per esempio, se la luce cade su una superficie colorata, la luce riflessa viene modifi-
+cata in funzione della composizione spettrale della luce e delle caratteristiche ottiche 
+dell’oggetto: l’indice della "resa cromatica" è di fatto una misura delle variazioni nella 
+composizione della luce.
+Esso viene determinato su superfici normate con composizione del colore esattamente 
+definita mediante confronto della luce da analizzare con la sorgente luminosa ideale asse-
+gnata (Fig. XI.4.3). Quanto meno la composizione dei colori di prova varia nella luce 
+riflessa, tanto migliori sono le caratteristiche di resa cromatica della sorgente luminosa di 
+prova.
+Fig. XI.4.3   Procedimento per calcolare l’indice di resa cromatica.
+L’indice di resa cromatica, che raggiunge nel caso ideale il valore numerico massimo 
+di 100, è una grandezza relativa, nella quale vengono indicati solo valori di rapporto.
+Attualmente vengono utilizzate due luci campione: la prima è il radiatore Planck che 
+viene impiegato per il confronto di luci con temperature di colore inferiori ai 5000 K; la 
+seconda è una luce artificiale, considerata vicina alla luce del giorno, che viene usata per 
+temperature di colore superiori ai 5000 K.
+4.5  Efficienza luminosa
+L'efficienza luminosa () indica la relazione che esiste tra il flusso luminoso emesso 
+da una sorgente luminosa e la potenza elettrica assorbita da tale sorgente (Fig. XI.5.1).
+Il rapporto tra queste due grandezze rappresenta il rendimento di una lampada o di un 
+apparecchio illuminante (cioè la capacità di tradurre la potenza elettrica consumata in 
+radiazioni visibili) che risulta essere in definitiva un parametro per valutare l'economicità 
+di un impianto.
+(XI.4.1)
+Fig. XI.4.4   Efficienza luminosa.
+Lampada
+Colore
+Colore
+Confronto
+Ra
+Resa cromatica
+Resa cromatica
+Luminosità
+normata
+Lumen
+Watt
+
+
+P---
+=
+
+[PAG 1146]
+XI-18
+ILLUMINOTECNICA
+Più il rendimento delle lampade è alto, più risulta essere economico il loro utilizzo. 
+Per esempio le lampade a incandescenza sono caratterizzate da una efficienza luminosa di 
+10 ÷ 15 lm/W, mentre le lampade fluorescenti di 60 ÷ 100 lm/W.
+Più il rendimento delle lampade è alto, più risulta essere economico il loro utilizzo. 
+Per esempio le lampade a incandescenza sono caratterizzate da una efficienza luminosa di 
+10 ÷ 15 lm/W, mentre le lampade fluorescenti di 60 ÷ 100 lm/W.
+5  SORGENTI LUMINOSE
+La continua innovazione tecnologia ha accresciuto enormemente il numero di scelte 
+disponibili per l'illuminazione. Il minuto controllo qualitativo e quantitativo della luce ha 
+portato ad avere a disposizione sorgenti luminose capaci di produrre effetti sottili che 
+hanno trasformato il modo in cui noi percepiamo l'ambiente.
+Le sorgenti luminose si possono suddividere in:
+–  a irradiazione termica (ad incandescenza con filamento nel vuoto, ad incandescenza 
+con filamento in gas inerti, a ciclo di alogeni);
+–  a irradiazione per luminescenza (fluorescenti, a vapori di mercurio ad alta pres-
+sione, ad alogenuri metallici, a vapori di sodio a bassa pressione, a vapori di sodio ad alta 
+pressione);
+–  a luce miscelata;
+–  a irradiazione a semiconduttore.
+5.1  Lampade ad incandescenza
+Le tradizionali lampade a incandescenza sono sorgenti luminose a irradiazione ter-
+mica, come in natura è il Sole. Una parte del calore che producono viene emessa sotto 
+forma di luce; si dividono in tre tipi:
+–  lampade a incandescenza con filamento nel vuoto;
+–  lampade a incandescenza in gas inerti (GLS, Reflector, PAR);
+–  lampade a incandescenza a ciclo di alogeni.
+5.1.1  Lampade ad incandescenza con filamento nel vuoto
+La prima lampada ad incandescenza di uso pratico fu realizzata da Thomas Alva Edi-
+son nel lontano 19 ottobre 1879; essa rappresentò la prima sorgente luminosa di origine 
+elettrica disponibile in commercio. Le lampade ad incandescenza tradizionali, nonostante 
+gli sviluppi tecnologici degli ultimi decenni e nonostante i numerosi e nuovi tipi progettati 
+e messi in commercio, sono ancora le più diffuse nelle case di abitazione. Questo radicato 
+utilizzo è dovuto essenzialmente alla loro semplicità, al ridotto ingombro e alla versatilità 
+di impiego e di potenza.
+Le lampade a incandescenza con l’interno del bulbo sotto vuoto sono lampade che 
+funzionano a una bassa temperatura (2400-2600 K); la loro efficienza luminosa raggiunge 
+al massimo i 7 lm/W e la potenza emessa risulta inferiore a 25 W. La soluzione di costru-
+ire queste lampade sotto vuoto è motivata dal fatto che, se fosse presente una miscela di 
+gas, questa - a causa dei moti convettivi al suo interno - asporterebbe parte del calore al 
+filamento riducendo ulteriormente l’efficienza luminosa.
+Le lampade a incandescenza con filamento sotto vuoto sono impiegate in tutti i tipi di 
+illuminazione decorativa, sia interna che esterna, e per illuminazione con effetti speciali.
+5.1.2  Lampade ad incandescenza in gas inerti
+Quando le lampade a incandescenza raggiungono temperature prossime ai 2700-3000 
+K, al loro interno si verifica il fenomeno della sublimazione del tungsteno: il metallo con 
+cui è costruito il filamento in parte passa dallo stato solido a quello aeriforme. La sezione 
+trasversale del filamento si assottiglia fino alla rottura, determinando la fine della vita
+
+[PAG 1147]
+ILLUMINOTECNICA
+XI-19
+della lampada. Per rallentare la volatilizzazione del filamento, vengono introdotti nel 
+bulbo dei gas inerti, come per esempio argo, cripto e azoto, anche se una parte della 
+potenza assorbita dalla lampada viene persa nei moti convettivi. In questa situazione deve 
+essere fornita una potenza maggiore per poter mantenere il filamento a una temperatura 
+elevata.
+Le parti principali che compongono una lampada a incandescenza (Fig. XI.5.1) sono: 
+lo zoccolo o attacco, il filamento e il bulbo o ampolla.
+La componente più importante di una lampada a incandescenza è il filamento, che 
+assolve il compito di trasformare l'energia elettrica in energia luminosa (luce). Il principio 
+di funzionamento di questo tipo di lampade si basa infatti sul riscaldamento, fino 
+all’incandescenza, di un filamento, opportunamente dimensionato, tramite il passaggio di 
+corrente elettrica. Il filamento, affinché non bruci all'istante, viene racchiuso in un 
+ambiente privo di ossigeno dall'ampolla. Il grado di protezione del filamento determina i 
+parametri di funzionamento della lampada stessa e le sue prestazioni nel tempo. La lun-
+ghezza (circa 1 m per una lampada da 60 W) è calcolata principalmente in funzione della 
+tensione di alimentazione e il diametro in funzione della corrente di funzionamento. Il 
+filamento (Fig. XI.5.2) viene realizzato in doppia spirale per potere essere contenuto 
+all’interno della lampada e per ridurre le perdite per effetto Joule, aumentando così l'effi-
+cienza di circa il 20% pur mantenendo costante la durata della vita.
+Il metallo utilizzato per la costruzione del filamento è il tungsteno (o wolframio). Esso 
+sopporta, con un punto di fusione a circa 3360 °C, le elevate temperature che si riscon-
+trano durante il funzionamento, pari a circa 2000 °C. Questa sua caratteristica viene sfrut-
+tata secondo la regola che stabilisce che un conduttore percorso da una corrente elettrica 
+si riscalda ed emette tanta più luce quanto più alta è la temperatura raggiunta. Il filamento 
+è sostenuto da un supporto costituito da un gambo di vetro (orletto) e da fili metallici ter-
+minanti con gancetti. Il supporto, oltre a sostenere il filamento, assolve lo scopo di limi-
+tare le vibrazioni a cui può andare incontro la lampada. La Figura XI.5.3 riporta alcuni 
+tipi di filamento.
+L'attacco è la parte della lampada che consente di collegare il filamento al circuito 
+elettrico; può avere varie forme, le più diffuse sono il tipo filettato, chiamato anche a vite 
+o Edison, e il tipo a baionetta. Mentre l'attacco a baionetta porta entrambi i contatti elet-
+Fig. XI.5.1   Principali parti di una 
+lampada ad incandescenza in gas 
+inerti.
+Fig. XI.5.2   Filamento di tungsteno avvolto su sup-
+porto di molibdeno.
+Bulbo o ampolla
+Filamento
+Zoccolo o attacco
+
+[PAG 1148]
+XI-20
+ILLUMINOTECNICA
+trici sulla base, quello Edison è diviso in due parti, denominate chiocciola e virola, sulle 
+quali sono saldati i capi del filamento.
+Una specifica differenziazione viene fatta in base al diametro, espresso in millimetri. 
+Esistono attacchi a baionetta standardizzati chiamati B15 e B22. Nel caso di attacchi a 
+vite invece si trovano sigle di tipo E10, E14, E27 e E40.
+È stata definita dalla norma CEI-UNEL 61671 e dalla corrispondente Norma Interna-
+zionale IEC 61 una classificazione degli attacchi (e naturalmente dei rispettivi portalam-
+pade), basata su una o più lettere maiuscole seguite da un numero. Il codice di 
+designazione fornisce una indicazione concisa della parte essenziale per la adattabilità 
+dell'attacco al portalampada ed è costituito da indicatori, fino a sette.
+Nel primo indicatore vengono impiegate lettere maiuscole, talvolta seguite da una let-
+tera minuscola, che specificano il genere di costruzione. Esso si identifica in:
+B 
+a baionetta
+BA 
+a baionetta per lampade per auto
+BM 
+a baionetta per lampade
+E 
+a vite Edison
+F 
+con un solo spinotto di contatto:
+a = cilindrico
+b = cilindrico ma profilato
+c = di forma speciale o con una parte a risalto
+G 
+con due o più spinotti di contatto
+K 
+a connessione con cavi flessibili
+P 
+prefocus
+R 
+a contatti incassati
+S 
+cilindrico
+SV 
+cilindrico, senza pioli, con un’estremità conica
+T 
+per lampade telefoniche
+W 
+stampato
+X 
+speciale
+Il secondo indicatore, costituito da un numero che segue le lettere, indica il valore 
+approssimativo in millimetri della dimensione principale dell'attacco. Si diversifica nelle 
+voci che seguono.
+Fig. XI.5.3   Filamento di tungsteno 
+avvolto su supporto di molibdeno.
+
+[PAG 1149]
+ILLUMINOTECNICA
+XI-21
+–  Diametro della calotta (B, BA, BM).
+–  Diametro esterno della filettatura (E).
+–  Diametro dello spinotto (F).
+–  Disposizione degli spinotti (G).
+–  Diametro della calotta (K).
+–  Diametro o altro per centratura laterale (P).
+–  Massima dimensione laterale corpo isolante (R).
+–  Diametro della calotta o dimensione parte essenziale per fissaggio (S, SV).
+–  Lunghezza esterna fra piastre di contatto (T).
+–  Somma spessore del conduttore e nucleo (W).
+–  Numero di serie (X).
+Il terzo indicatore è composto dalle lettere maiuscole X, Y e Z che, quando sono 
+aggiunte a quelle precedenti, indicano attacchi non intercambiabili per diversità dimensio-
+nali (per esempio RX7s, GY6,35).
+Il quarto indicatore comprende lettere minuscole (s = 1, d = 2, t = 3, q = 4), le quali 
+aggiungono indicazioni complementari sul numero dei contatti o di connessioni flessibili 
+(per esempio R7s, G10q).
+Il quinto indicatore, composto da un numero, una lettera oppure una loro combina-
+zione preceduta da un trattino, indica elementi ulteriori per l'intercambiabilità degli spi-
+notti, pioli e scanalature; in genere indica un cambio di disposizioni ma non di dimensioni 
+(per esempio G24 d-1, G24 d-2, G24 d-3, G24 q-1, G24 q-2, G24 q-3, B22 d-3).
+Il sesto indicatore è composto da un numero, preceduto da una barra, fornente la lun-
+ghezza approssimativa in millimetri dell'attacco (per esempio E27/25, E27/27, E27/30).
+Il settimo indicatore, un numero preceduto dal segno x, fornisce il valore approssima-
+tivo in millimetri del diametro dell'estremità aperta della calotta verso il bulbo (per esem-
+pio E14/23 x 15, E14/25 x 17).
+La Figura XI.5.4 riporta alcuni tipi di attacchi.
+Fig. XI.5.4   Alcuni tipi di attacchi.
+Il bulbo svolge la duplice funzione di isolare il filamento dall'ambiente esterno, man-
+tenendo le condizioni interne più opportune per un duraturo e costante funzionamento 
+della lampada, controllando al contempo l'effetto luminoso ed estetico.
+I bulbi sono prodotti in svariate forme, in base alle quali viene spesso attribuito un 
+nome alla lampada.
+Si trovano per esempio:
+E14
+E27
+E40
+B22d
+S14s
+S14d
+GU4
+GU10
+R7s
+G13
+G23
+G10q
+
+[PAG 1150]
+XI-22
+ILLUMINOTECNICA
+–  bulbi con forma a goccia e sferica, per una illuminazione generale, decorativa ecc.;
+–  bulbi con forma a oliva e a tortiglione, per una illuminazione di interni in lampadari 
+a goccia di cristallo e appliques;
+–  bulbi K, per ottenere una luce intensa e confortevole;
+–  bulbi tubolari, utilizzati per l'illuminazione dell'interno dei frigoriferi, macchine da 
+cucire ecc.;
+–  bulbi a fungo, a cipolla, a faretto, con riflettore ecc.
+Occorre considerare poi che le lampade a incandescenza vengono costruite in diverse 
+configurazioni, a seconda dell'impiego specifico a cui sono destinate. È evidente che la 
+scelta del tipo di lampada non deve essere casuale, ma deve seguire una corretta logica per 
+ottimizzare il rendimento in relazione al tipo di ambiente nel quale viene installata e in 
+base al tipo di apparecchi nei quali funziona.
+Si ritrovano quindi nella produzione di qualsiasi casa costruttrice lampade ad incande-
+scenza con svariate caratteristiche:
+–  bulbo trasparente, per avere il massimo flusso luminoso emesso;
+–  bulbo opalizzato, per ridurre al minimo l'effetto abbagliante (per uso di arreda-
+mento e decorativo);
+–  bulbo smerigliato, per ottenere una illuminazione con luce diffusa e ridurre anche in 
+questo caso l'abbagliamento;
+–  bulbo azzurrato, per ridurre le radiazioni rosso-arancioni (calde) e rendere la tona-
+lità della luce più simile a quella solare;
+–  bulbo giallo, per non attirare gli insetti, effetto ottenuto mediante una emissione di 
+luce particolarmente gialla;
+–  bulbo trasparente con cupola argentata/dorata riflettente, per eliminare l'effetto 
+abbagliante frontale (a scopi decorativi);
+–  con riflettore incorporato, per indirizzare la luce in una direzione ben precisa;
+–  in vetro pressato e con riflettore parabolico incorporato (in ambiente esterno e per 
+una illuminazione direzionale).
+La Figura XI.5.5 riporta alcuni tipi di bulbo.
+Fig. XI.5.5   Alcuni tipi di bulbo.
+Nei loro aspetti tecnici e commerciali, le lampade a incandescenza con gas inerte si 
+possono distinguere in: GLS, Reflector e PAR.
+Le lampade a incandescenza GLS (General Lighting Service) rappresentano il 
+Fiamma
+Lineare
+Tubolare
+T
+Sfera
+Faretto
