@@ -46,12 +46,22 @@ def gh_list(path):
 
 def scarica_pdf(nome_file):
     url = RAW_BASE + 'MANUALI/' + urllib.request.quote(nome_file)
+    print(f'  URL: {url[:80]}')
     req = urllib.request.Request(url, headers={
         'Authorization': f'token {GITHUB_TOKEN}',
         'Cache-Control': 'no-cache'
     })
-    with urllib.request.urlopen(req, timeout=180) as r:
-        return r.read()
+    try:
+        with urllib.request.urlopen(req, timeout=180) as r:
+            data = r.read()
+            print(f'  Download OK: {len(data)//1024} KB')
+            return data
+    except urllib.error.HTTPError as e:
+        print(f'  HTTP {e.code}: {e.reason} — {url[:60]}')
+        raise
+    except Exception as e:
+        print(f'  Download ERR: {type(e).__name__}: {e}')
+        raise
 
 def titolo_safe(nome_file):
     base = nome_file.replace('.pdf', '').strip()
@@ -275,5 +285,13 @@ def main():
     print(f'Rimanenti: {len(da_fare) - len(batch)}')
 
 if __name__ == '__main__':
-    main()
+    import traceback
+    try:
+        main()
+    except Exception as ex:
+        print(f'\n=== CRASH GLOBALE ===')
+        print(f'Tipo: {type(ex).__name__}')
+        print(f'Messaggio: {ex}')
+        traceback.print_exc()
+        raise
 
