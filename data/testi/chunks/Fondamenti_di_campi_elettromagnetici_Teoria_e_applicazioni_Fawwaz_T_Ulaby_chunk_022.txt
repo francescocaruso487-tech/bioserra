@@ -1,0 +1,2120 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 22/23 ===
+Chars: 44,906 | Offset: 942,413
+
+
+
+Pre = So. = (W). (10.20)
+Questa potenza reirradiata si distribuisce su una superficie sferica, producendo una
+densità di potenza $; incidente sull’antenna del radar ricevente data da
+
+Pret PG 2
+
+S= =——— (W/m). 10.21
+a og (VI) (10.21)
+[antenna del radar ricevente ha area efficace A, e rendimento ,; essa intercetta e tra-
+sferisce al ricevitore una potenza P, data da
+
+= Pio — POG
+(AmBB? © (4n)PRER?"
+
+Pre GAS = (10.22)
+
+10.6 Rivelazione del bersaglio
+
+Figura 10.14 Sistema radar bistatico che osserva un bersaglio con sezione radar (RCS) pari a cx.
+
+i i tere in relazione l’area efficace 4,
+dove si sono applicate la (9.29) e la (9.64) per me ; ‘
+dell'antenna fil rento e il suo guadagno Gr. Nei caso di un radar monostaiep oe
+utilizzi la stessa antenna per la trasmissione e la ricezione, si ha G = G, =
+
+R=R SR Dunque
+
+i i icazioni unidirezionale per il quale la dipen-
+i ite dal sistema di telecomunicazioni unidirezional I i
+
+Senza da Re del tipo 1/R?, la dipendenza dalla distanza presente nell’ equazione det
+
+radar di cui sopra è del tipo 1 /RÉ, il che rappresenta a tutti gli effetti il prodo:
+
+rocessi di propagazione unidirezionale. .
+
+“a Processo di rivelazione si può basare sull’eco prodotto da ue solo impo o sue
+i e degli echi prodotti da più impulsi; in questa sede si cor e °
+il caso è Peer eo Un bersaglio è detto rivelabile se la potenza P, dell’eco as
+
+sociato è maggiore della soglia di rivelazione P,,,, indicata in Figura 10.13. La mas-
+
+sima distanza rivelabile Rmax è la distanza oltre la quale il bersaglio non può essere
+rivelato e corrisponde alla distanza per cui Pr = Pras, nella (10.23). Pertanto
+
+1/4
+Rm = (PERI. (10.24)
+me | (47) Praz
+
+Il rapporto segnale-rumore è uguale al rapporto tra la potenza di segnale ricevuta P, e
+la potenza media di rumore in ingresso Pri data dalla (10.18):
+
+Pi Per (10.25)
+"Pai KT sys?
+e il rapporto segnale-rumore minimo Sgin corrisponde al caso in cui Py = Pr...
+Swain = t=, (10.26)
+me. Keys
+
+Applicando la (10.26) nella (10.24) si ottiene
+
+2 1/4
+Rima = PG Nor . (40.27)
+ON | Ga) KToySiia
+
+499
+
+[PAG 223]
+10.7 Radar doppler al
+Capitolo [0 — Sistemi di comunicazione via satellite e radar
+
+Ti prodotto Pr è uguale all’energia dell’impulso trasmesso, dunque, secondo la
+(10.27), la massima distanza rivelabile è definita dall ‘energia-dell'impulso-trasmes:—* -
+50 piuttosto che dalla sola potenza di trasmissione. Un impulso breve a elevata po-
+tenza e un impulso lungò a bassa potenza che abbiano la stessa energia danno luogo
+alle stesse prestazioni dal punto di vista della massima distanza rivelabile. Tuttavia,
+
+Figura 10.16
+
+Trasmettitore con velocità. - -
+
+i ~ {eroe radial che si avvicina a
+i cevatore ricevitore fermo.
+[rente] <<] M WW D un
+
+! I
+
+!
+
+res I i Ricevitore stazionario
+Tosse 5 ° : ” tore - “ Trasmettitore in mot
+- ...-. da risoluzione. radiale data dall’impulso lungo è molto più scarsa di quella data dal- Trasmenitore n no °
+l’impulso breve, come si può verificare mediante la (10.16).
+i La massima distanza rivelabile R
+
+‘max Si può aumentare anche migliorando il rappor-
+to segnale-rumore; ciò si può ottenere integrando gli echi prodotti da più impulsi in
+modo da aumentare l’energia totale dovuta al bersaglio ricevuta dal radar. Il numero
+di impulsi disponibili su un intervallo di integrazione fissato è proporzionale alla
+PRE, dunque per massimizzare la probabilità di rivelazione
+
+Vale a dire che se ft è la frequenza dell’onda irradiata dalla sorgente in movimento,
+allora la frequenza f, dell’onda osservata da un ricevitore stazionario è
+
+Seftha (10.28)
+
+‘anoeema, mnesio i i fa dipendono delle direzione del vettore velocità relativamente
+so utilizzare la massima PRF consentita dalle considerazioni progettuali. n modulo ci segno di hi dipend ono è eo diez verre si Ste e
+i ideri " ttromagne! :
+Si consideri una sorgente che trasmette un’onda ele! i 3
+107 Radar doppler come descritto in Figura 10.16. Ad una distanza R dalla sorgente il campo elettrico
+SPO dell’onda irradiata è dato da
+
+L'effetto Doppler è la deviazione di frequenza di un'onda causata dal moto della sor- E(R) = Epel#-48) = Evelt, (10.29)
+gente trasmittente, dell’oggetto riflettente o del ricevitore. Come illustrato in Fi, in in cui A, è la lunghezza d’on-
+10.15, un’onda irradiata da una sorgente puntuale isotropa stazionaria descrive cerchi dove Ep è il modulo del campo, wx = 2a nen ar in cu Sca @antenna
+concentrici equispaziati che si allontanano dalla sorgente in funzione del tempo. Per da dell’onda trasmessa. Il modulo dipen e to di vista dell’effetto Doppler. La gran-
+contro, un'onda irradiata da una sorgente in movimento viene compressa nella dire- della sorgente, ma non è importante dal puni
+
+zione del moto ed espansa nella direzione Opposta: comprimendo un'onda si riduce ; dezza 2 10.30)
+la sua lunghezza d’onda, il che equivale ad aumentarne la frequenza, mentre espan- ‘ @ = unt — kR = 2afit — 7% . (10.
+dendola la sua frequenza si riduce. La variazione di frequenza risultante è detta devia- ‘
+zione di frequenza per effetto Doppler fa.
+
+= 0alli i rife-
+è la fase dell’ onda irradiata rispetto alla fase che presenta per R = 0 all istante dire
+rimento t = 0. Se la sorgente è in movimento verso il ricevitore o vicevers:
+
+cità radiale #,, come in Figura 10.16, si ha
+— R= Ry - ut, (10.31)
+Onda irradiata da una | |
+sorgente puntuale (a)
+stazionaria e (b) in mòto.
+
+dove Ro è la distanza tra la sorgente e il ricevitore all’istante t = 0. Dunque
+L'onda viene compressa
+
+2r (10.32)
+
+nella direzione del moto, nal LL NI prat (Ro — ust). .
+espansa nella direzione . La frequenza di un'onda è uguale
+opposta e rimane invariata è la fase del segnale captato dal ricevitore. a frequei LA
+nella direzione normale al Co aetvsione all desivata temporale della fase divisa per 27. Pertanto
+
+1 dé Ur (10.33)
+
+fera 84
+(a) Sorgente stazionaria 27 *
+
+Uguagliando la (10.33) e la (10.28) si ottiene fa = ur/Ar. Nel caso del radar. offeto
+Dop ler agisce due volte, prima sull’onda diretta dal radar al bersag i ‘ H move
+ull’onda riflessa dal bersaglio verso il radar, dunque fa = 2u;/ Me La dipen ona
+funzionale di fa dalla direzione è data dal prodotto scalare dei versori veloci!
+
+stanza, da cui si ottiene
+Ur Qu (10.34)
+x A; =—2— = —— così,
+Vai > fi=-23:
+Onda che si Onda che dove u; è il componente radiale della velocità u e 0. è l'angolo compreso tra il vettore
+3 propaga in Si propaga OVE Ur 1 a direzio-
+zione, direzione ne del vettore distanza è definita dal radar verso il perego. Per un bersagi Sha
+dar si ha 0 < @ < 90°, mentre per un bersa;
+sorgente () Sorgente in movimento Sla sorgente allontana dal radar
+
+nella stessa distanza e il vettore velocità come descritto in Figura 10.17, nel qual caso la direzio-
+90° < 8 < 180°.
+
+[PAG 224]
+432
+
+Figura 10.17
+~~ Ladeviazione di
+frequenza per effetto
+Doppler é negativa per un
+bersaglio che si allontana
+(0< 8 < 90°) in@),
+‘mentre è positiva perun
+bersaglio che si avvicina
+(90° < # < 180°) in).
+
+Figura 10.18
+
+Dispositivo di
+alimentazione d’antenna
+per un radar monoimpulso
+a confronto di ampiezza:
+(a) alimentazione
+dell’antenna a tromba e
+(b) coltegamenti alla rete
+di sfasamento,
+
+Capitolo 10 — Sistemi di comunicazione via satellite e radar
+
+-. Vettore asian. -
+
+>
+
+Vettore velocità
+
+®)
+
+10.8 Radar monoimpulso
+
+Un radar radar monoimpulso può seguire la direzione di un bersaglio con un’accura-
+tezza angolare pari a una frazione dell’ampiezza del lobo principale della sua antenna
+sulla base dell’informazione estratta dall’eco di un singolo impulso. Per inseguire un
+bersaglio sia in elevazione che in azimuth, un radar monoimpulso impiega un’anten-
+na parabolica nel cui fuoco sono montati quattro piccoli illuminatori separati, come
+descritto in Figura 10.18 nel caso di antenne a tromba. I sistemi monoimpulso sono
+di due tipi: il primo è detto monoimpulso a confronto di ampiezza, in quanto l’infor-
+mazione utile all’inseguimento viene estratta dalle ampiezze degli echi ricevuti dai
+quattro illuminatori, mentre il secondo tipo è detto monoimpulso a confronto di fase,
+
+in quanto si basa sulle fasi dei segnali ricevuti. La trattazione sarà limitata allo sche-
+ma a confronto di ampiezza.
+
+Tis|Ela
+Fiolliz
+$imjeli
+mV im
+i|?|8iu
+i [tl
+3 i o|h
+DI 2:
+n
+dea
+
+AU
+
+@) : ®
+
+108 Radar monoimpulso
+
+Ogni singolo illuminatore a tromba produce un proprio lobo principale e i quattro lo-
+bi puntano in direzioni leggermente diverse; a Figura 10.19 mostra i lobi prodotti da
+due illuminatori adiacenti. Il principio di funzionamento del monoimpulso a confton-
+to di ampiezza è la misura delle ampiezze degli echi ricevuti attraverso i due lobi, la
+cui differenza è usata per riallineare il puntamento dell’antenna in direzione del ber-
+saglio. Utilizzando degli sfasatori comandati da un computer, la rete di sfasamento
+descritta in Figura 10.18 può combinare in modi diversi i segnali inviati ai quattro il-
+luminatori a tromba dal trasmettitore o gli echi da essi ricevuti. In fase di trasmissio-
+ne la rete eccita in fase i quattro illuminatori, producendo un lobo principale unico
+detto lobo somma. La rete di sfasamento impiega componenti per microonde che
+consentono di eseguire le funzioni desiderate sia in trasmissione che in ricezione: la
+sua funzione equivalente è descritta dai circuiti illustrati in Figura 10.20. In fase di ri-
+cezione, la rete di sfasamento impiega divisori e combinatori di potenza e sfasatori in
+modo da produrre tre canali di uscita diversi. Uno di essi è il canale somma, ottenuto
+sommando in fase i segnali dei quattro illuminator, il cui diagramma di radiazione è
+descritto in Figura 10.21(a). Il secondo canale, detto canale differenza in elevazione,
+si ottiene sommando le uscite dei due illuminatori superiori [Figura 10.20(b)], som-
+mando poi le uscite dei due illumiriatori inferiori e quindi sottraendo la seconda som-,
+ma dalla prima. La sottrazione viene eseguita aggiungendo uno sfasatore di 180° in
+serie al circuito del secondo segnale somma, che viene poi sommato al primo. Il dia-
+
+mma di radiazione associato al canale differenza in elevazione è descritto in
+
+Figura 10.21(b).
+
+#3:
+
+Figura 10.19
+Bersaglio osservato da
+due lobi sovrapposti di un
+radar monoimpulso.
+Superiore destra
+» Superiore sinistra È
+Inferiore destra __!
+> Inferiore sinistra Y
+(a) Trasmissione
+Superiore destra
+Superiore sinistra c
+‘anale somma Segnale
+. di
+Inferiore destra angolare
+
+Canale
+
+. se differenza in elevazione
+Inferiore sinistra.
+
+(b) Ricezione in elevazione
+
+Figura 10.20 Funzionamento della rete di sfasamento (a) in trasmissione e (b) in ricezione per
+il canale differenza in elevazione.
+
+[PAG 225]
+434
+
+Figura 10.21
+Antenna monoimpulso:
+(a) diagramma associato al
+canale somma, (b)
+diagramma associato al
+Canale differenza in_
+elevazione e (c) segnale di
+errore angolare.
+
+Capitolo 10 - Sistemi di comunicazione via satellite e radar
+
+(b) Diagramma differenza in elevazione
+
+230
+ges
+#59
+3s
+es
+
+(c) Segnale di errore angolare
+
+Il terzo canale, non presente in Figura 10.20, è il canale differenza azimutale, che si
+ottiene mediante un processo analogo che genera un lobo corrispondente alia diffe-
+renza tra la somma dei due illuminatori a destra e la somma dei due a sinistra. Se il
+bersaglio inseguito è centrato tra i due lobi in elevazione, gli echi ricevuti dai due lo-
+bi avranno la stessa intensità, annullando if segnale in uscita dal canale differenza in
+elevazione. Se ciò non accade, l’ampiezza associata al canale differenza in elevazio-
+ne è proporzionale alla deviazione angolare del bersaglio dalla direzione di allinea-
+mento, mentre il suo segno indica la direzione della deviazione. Nella pratica si mol-
+tiplica il segnale in uscita dal canale differenza per il segnale in uscita dal canale
+somma, per aumentare l’intensità del segnale differenza e introdurre un riferimento
+di fase per l’estrazione del segno dell'errore angolare. Questo prodotto, detto segnale
+di errore angolare, è graficato in Figura 10.21(c) in funzione dell’errore angolare. Il
+segnale di errore attiva un sistema di servomotori che riallinea la direzione dell’an-
+tenna. Applicando un procedimento simile lungo la direzione azimutale e utilizzando
+il prodotto del canale differenza azimutale e del canale somma, un radar monoimpul-
+so è in grado di effettuare l'inseguimento automatico in entrambe le direzioni. La di-
+stanza dal bersaglio si ottiene misurando il ritardo di propagazione del segnale.
+
+Domande di verifica
+
+10.5 Qual è il legame tra PRF e distanza non ambigua?
+
+10.8 Si spieghi in che modo ia probabilità di falso allarme e la probabilità di rivela
+zione sono legate ai livello di rumore del ricevitore.
+
+10.7 Facendo riferimento alla geometria descritta in Figura 10.17, quando si verifica
+la massima deviazione per effetto Doppler?
+
+10.8 Qual è il principio di funzionamento del radar monoimpulso?
+
+a fe ri
+
+{
+
+Glossario”
+
+Concetti fondamentali
+
+e Tre satelliti equispaziati in orbita geostazionaria possono realizzare la copertura
+delia maggior parte della superficie terrestre.
+
+© Impiegando la diversità di polarizzazione è possibile raddoppiare il numero di ca-
+nali per unità di banda gestiti da un ripetitore satellitare.
+
+© Il sistema d’antenna di un satellite viene progettato in modo da generare lobi di ra-
+diazione modellati per adattarsi alle regioni servite dal satellite. Le schiere di anten-
+ne sono particolarmente adatte a questo scopo.
+
+e Il radar è un sensore elettromagnetico che illumina una regione di spazio e quindi
+misura gli echi dovuti alle riflessioni da parte degli oggetti. Dagli echi si può estrar-
+re informazione sulla distanza di un bersaglio, la sua velocità radiale, la direzione
+di movimento e altre caratteristiche.
+
+e A causa della natura aleatoria del rumore al ricevitore; la rivelazione dei bersagli è
+un procedimento statistico caratterizzato dalle probabilità di falso allarme e di rive-
+lazione.
+
+e Un oggetto in moto produce una deviazione di frequenza per effetto Doppler pro-
+porzionale alla velocità radiale dell’oggetto relativamente al radar e inversamente
+proporzionale a À.
+
+e Un radar monoimpulso utilizza lobi multipli per inseguire la direzione del bersa-
+glio ed è dotato di un’accuratezza angolare pari a una frazione dell’ampiezza del lo-
+bo principale dell’antenna.
+
+Glossario
+
+Si definiscano i seguenti termini, spiegandone il significato: periodo interimpulso 7,
+distanza non ambigua R,
+
+orbita geostazionaria risoluzione radiale
+
+uplink e downlink risoluzione azimutale
+
+transponder probabilità di faiso allarme
+
+dupiexer probabilità di rivelazione
+
+circolatore filtro adattato
+
+multiplexer radar bistatico
+
+diversita di polarizzazione radar monostatico
+
+trasmittività atmosferica T sezione radar cx
+
+velocità radiale i, soglia di rivelazione
+
+deviazione di frequenza per effetto Doppler fa massima distanza rivelabile Rmax
+
+durata dell'impulso 7 tadar monoimpulso
+
+frequenza di ripetizione degli impulsi (PRF) fo canali somma e differenza
+
+[PAG 226]
+#6 Capitolo [0 ~ Sistemi di comunicazione via satellite e radar
+
+PROBLEMI © ~ Lire
+
+Nota: Le risposte ai problemi contrassegnati da un asterisco si
+trovano nell’Appendice D.
+
+Paragrafi da 10.1 a 10.4 Sistemi di
+comunicazione
+via satellite
+
+*40.1 Un satellite per telerilevamento è posto in orbita circolare
+attorno alla Terra a un’altitadine di 1000 km sopra la
+superficie terrestre. Qual è il suo periodo orbitale?
+
+10.2 Un transponder con banda passante pari a 500 MHz
+funziona in diversità di polarizzazione. Se la banda
+allocata per la trasmissione di un singolo canale telefonico
+è pari a 4 KHz, quanti canali telefonici possono essere
+veicolati dal transponder?
+
+*10.3 Si risolva nuovamente il Problema 10.2 nel caso di canali
+TV, ciascuno dei quali richiede una banda passante di 6
+MHz.
+
+10.4 Un satellite geostazionario si trova a una distanza di
+40000 km da una stazione ricevente.a terra. L’antenna
+trasmittente sul satellite ha un'apertura circolare di 1 m di
+diametro e Ja stazione di terra impiega un’antenna
+parabolica con diametro efficace di 30 cm. Se il satellite
+trasmette una potenza di 1 kW alla frequenza di 12 GHz e
+il ricevitore a terra è caratterizzato da una temperatura di
+rumore di sistema di 1000 K, qual è il valore del rapporto
+Segnale-rumore in caso di ricezione di un segnale TV con
+una banda di 6 MHz? Le antenne e l'atmosfera si possono
+considerare senza perdite.
+
+<*10.5 Un radar automobilistico anticollisione è progettato per.
+
+oe A-P-PENDICE
+
+Paragrafi da 10.5 a 10.8 Sensori radar
+
+Simboli, grandezze e
+unità di misura
+
+rivelare la presenza di veicoli fino a una distanza di 1 km.
+Qual è la massima PRF utilizzabile?
+
+10.6 Un radar meteorologico alla frequenza di 10 GHz impiega
+un'antenna senza perdite del diametro di 30 cm. Alla
+distanza di 1 km quali sono le dimensioni del volume che
+può essere risolto dal radar se la durata dell'impulso è pari
+al ps?
+
+Simbolo  Grandezza Unità SI Abbreviazione
+*10.7 Un sistema radar è caratterizzato dai seguenti parametri: A Potenziale (vettore) magnetico weber/metro Whim
+P,=1kW,7 = 0.1 ys, G = 30 dB, A=3 cme B Suscettanza siemens Ss
+Teys = 1500 K. La sezione radar tipica di un’automobile è B Induzione magnetica tesla 0 weber/metro® To Whim?
+pari a 10 m?. Qual è la distanza massima a cui la e Capacità farad F
+‘macchina rimane rivelabile dal radar quando il rapporto D Direttività (di un'antenna) (adimensionale) -
+segnale-rumore minimo è di 13 dB? E Intensità di campo elettrico voltimetro Vim
+D Spostamento elettrico coulomb/metro? Cio?
+10.8 Un radar con lunghezza d’onda pari a 3 cm è situato F Intensità di radiazione (normalizzata) (adimensionale) -
+nell’origine di un sistema in coordinate cartesiane x-y. F Forza newton . N
+Un’automobile posizionata ax = 100 me y = 200 mé : f Distanza focale metro m
+diretta verso est in direzione delle x positive alia velocità y f Frequenza hertz Hz
+di 120 km/h. Qual è fa frequenza Doppler misurata dal G Conduttanza siemens. s
+radar? G Guadagno (in potenza) (adimensionale) -
+E Intensità di carupo magnetico ampere/metro Alm
+I Corrente ampere A
+J Densita (volumetrica) di corrente ampere/metro? Afro?
+L J, Densità (superficiale) di corrente ampere/metro Alm
+k Numero d’onda radiante/metro radi
+L Induttanza henry H
+t Lunghezza metro m
+Mm Massa chilogrammo kg
+ri M Vettore magnetizzazione ampere/metro Ala
+m Momento di dipofo magnetico ampere-metro? A-n?
+n Indice di rifrazione (adimensionale) -
+P Potenza i watt Ww
+P Vettore polarizzazione elettrica coulomb/metro? Ch?
+2 Pressione newton/metro” Nim?
+P Momento di dipolo elettrico coulomb-metro Com
+29 Carica coulomb c
+R Riflettività (riflettanza) (dimensionale) -
+R Resistenza ohm a
+s Rapporto d’onda stazionaria (adimensionale) -
+s Vettore di Poynting : watt/metro” Win?
+Sw Densità di potenza walt/metro? Wim?
+T Temperatura kelvin K
+T Coppia newton-metro Nem
+hi Trasmittività (trasmittanza) © {adimensionale) -
+t Tempo secondo $
+a Velocità metro/secondo ms
+Vv Potenziale elettrico volt v
+14 Tensione volt v
+Vest Forza elettromotrice (emf) volt v
+w Energia (lavoro) joule J
+w Densità di energia joule/metro? Vin
+x Reattanza ohm Q
+Y Ammettenza siemens $s.
+z Impedenza ohm 2
+a Costante di attenuazione neper/metro Np/m
+
+(segue)
+
+[PAG 227]
+438 Appendice A — Simboli, grandezze e unità di misura 2
+(continua)
+- Simbolo Grandezza = Unità SI - Abbreviazione + - A p p E N | - C E
+8 Costante di fase radiante/metro rad'm
+Tr Coefficiente di riflessione (adimensionale) -
+DI Costante di propagazione metro”! mo Li H oR GE
+a E = n arametri costitutivi
+ee Penmittivita farad/metro Fim
+& Permitivita relativa (adimensionale) - ' poop
+= E E di materiali di mun
+À Lunghezza d'onda metro m
+Ho. Permeabilità henry/metto Him
+ih Permeabilità relativa (edimensionale) -
+Hes ty Mobilit (elettroni, lacune) metro?/volt - secondo mN-s
+Ai Densità (lineare) di carica coulomb/metro Cm
+Ps Densità (superficiale) di carica coulombimetro? Chm? Tabella 8.1 Permittività relativa e; di materiali di uso comune?
+di Densità (volumetrica) di carica coulombimetro? Ch?
+@ Conducibilità siemens/metro Sin = ero © £0 = 8.854 x 1077 Fim.
+a Sezione radar metro? ni Materiale Permittività relativa c, | Materiale Permittività relativa e,
+7 Coefficiente di trasmissione (adimensionale) - rn
+î Deas dol'ingule diner ; Vuoto I Terriccio asciutto 2535
+5 Fino magneto second ‘vp 4 Asia (a livello del mare) 1.0006 Plexiglas 34
+Y Campo gravitazionale newton/chilogrammo Ng Polistirolo espanso 1.03 Vero 45-10
+Xe Suscettbilità elettrica (adimensionale) - Teflon 21 Quarzo 385
+Xm Suscettibilità magnetica (adimensionale) - Petrolio 21 Bakelite 2
+a Angolo solido steradiante st Lego (secco) eu Porcellana È
+Fre i raffina 5
+w quenza angolare radiante/secondo rad/s x Polietilene 225 Mica 5.46
+Polistirene 26 Ammoniaca n
+Carta 24 Acqua marina 7-80
+Gomma 224,1 Acqua distillata 8,
+
+* Valori a bassa frequenza e temperatura ambiente (20°C
+
+Nota: per la maggior parte dei metalli si ha e, ~ 1.
+
+Tabella B.2 Conducibilità o di materiali di uso comune?
+
+y
+
+i Materiale Conducibilità o(S/m) | Materiale Conducibilità o(S/m)
+Conduttori Semiconduttori
+
+Argento 6.2 x 107 Germanio puro 22
+Rame 58x 10° Silicio puro 4.4.x 10%
+Oro 4.1x 107 Isolanti
+
+A Alluminio 3.5x 10? Terriccio bagnato ~ 107?
+Tungsteno 18 x 10° Acqua fresca ~ 1073
+Zinco 17x10? Acqua distillata ~ 107%
+Ottone 15 x 107 Terriccio asciutto ~ 10-4
+Ferro 107 Vetro 1071?
+Bronzo 10° Gomma dura 10715
+
+& Stagno 9x 108 Paraffina 10715
+Piombo 5x 108 Mica 10-15
+Mercurio 109 Quarzo fuso 10-!?
+Carbonio 3x lof Cera 10!”
+Acqua marina 4
+Tessuto animale (in media) 0.3 (scarsa)
+
+> Valori a bassa frequenza e temperatura ambiente (20°C).
+
+[PAG 228]
+Appendice B — Parametri costitutivi di materiali di uso comune
+
+--.Tabella.B.3.-. Permeabilità relativa. di materiali di uso comune?. __
+
+= tho © to = 47 x 10-7 Him.
+
+* I valori elencati sono tipici del materiale: i valori effettivi dipendono
+
+dalla varietà specifica.
+
+Materiale Permeabilità relativa 4
+_ -Diamagnetici _
+
+Bismuto 0.99983 = |
+Oro 0.99996 = 1
+Mercurio 0.99997 = 1
+Argento 0.99998 =f
+Rame 0.99999 = È
+Acqua 0.99999 = 1
+
+Paramagnetici
+Aria 1.000004 > 1
+Alluminio 1.00002 ~ 1
+Tuagsteno 1.00008 ~ 1
+Titanio 1.0002 = 1
+Platino 1.0003 = 1
+
+Ferromagnetic (non lineari)
+Cobalto © 250
+Nichel 600
+Acciaio dolce 2000
+Ferro (puro) 4000-5000
+Ferro al silicio 7000
+Mumetal ~ 100000
+Ferro purificato ~ 200000
+
+Nota: Tranne che per i materiali ferrornagnetici, si ha jz, = | per tutti
+
+dielettrici e i conduttori.
+
+—.... APPENDICE...
+
+. Formule matematiche
+
+Relazioni trigonometriche
+
+sin (x+y) = sinxcosy + cosxsiny
+cos (x+y) = cosxcosy 7 sinxsiny
+2sinxsiny = cos(x—y)—cos(x+7)
+2sinxcosy = sin(x+y)+sin(x—y)
+2cosxcosy = cos (x +) + cos (x — y)
+sin 2x = 2 sinx cosx
+
+cos 2x = 1 —2sin’ x
+x
+
+sinx-+sin y = 2sin (
+
++
+x
+n
+2
+ts)
+a
+“——
+x
+Pel
+SS
+n
+
+2
+sinx— siny =2 cos (=) sin cone
+cosx + cos y = 2.cos (75) cos >)
+
+cosx ~ cosy = ~2 sin (
+cos (x + 90°) = 7 sinx
+cos (—x) = cosx
+
+sin (x + 90°) = + cosx
+sin (—x) = —sinx
+
+e* =cosx+jsinx (Identità di Eulero)
+
+. e — ed
+sinx =
+
+i ie
+e+e
+2
+
+cosx=
+
+Approssimazioni per piccoli valori
+Per |x| < 1,
+
+(ltx)" e lin
+
+(lx)? 2 1+2x
+
+Vizzolei
+1 c132
+VIEX O 2
+Es ltxt opto sl ts
+In(i+a)=x
+sinx=x atat x
+roo
+cosx=1- op tat 1-3
+lim 2 =
+x0 x
+
+[PAG 229]
+-_ APPENDICE D
+Risposte ai problemi di numero dispari
+
+Capitolo 1
+1.1. p(x,5) = 24 cos (87 x 10° — 24.24nx + 42°) (Nim?)
+13 A=12.5cm
+15 up = 0.83 (m/s) \ = 10.47 m
+i 1.7 (a) yi{x,1) si propaga in direzione delle x-positive, mentre
+y2(x, t) si propaga in direzione delle x-negative
+(b) x = (1/60 + 2121/30) cm; slm = 19
+(©) x = 17/30; |bslmin = 0
+19 T= 1.55; up = 0.56 m/s; \ = 0.84m
+1.11 y»(1) è in ritardo su y(t) di 60°.
+1.13 a =5 x 1073 (Np/m)
+145 (a) 21 = 3.627; 2) = 4,56094
+() {z:| = 3.60
+(©) 2122 = 16.2619"
+(d) 21/2 = 0.809187"
+(0) 2) = 46.6627"
+LIT (a) = 3.160845 5 = 5.108
+(b) 1= 2.832"; 5 = 2.83 e4*
+©) t=5.2;5=3e
+(d) £=0;5 = 62°"
+1.19 In(z) = 1.61 — 0.93
+121 v¢(t) = 8.5 cos (27 x 10° 62.19) V
+1.23 (a) v(t) =3cos (wt ~ 27/3) V
+(b) v(t) = 6 cos (wt + 32/4) V
+{c) i{1) =Scos (wt + 53.1°) A
+(a) it) = 3.61 cos (wt + 146.31°) A
+© it sinwt A
+(8 i) = 2 cos (wt + 30/4) A
+
+Capitolo 2
+
+2.1 (a) 1/A=6.67 x 10-6; la linea di trasmissione si può trascurare
+3 (b) 1/A = 0.01; caso limite.
+i (©) //A = 0.2; si devono considerare gli effetti della linea di trasmissione.
+(d) i/A = 0.33; si devono considerare gli effetti della linea di trasmissione.
+23 R°=1.0(Q/m); L’ = 167 (nH/m); G' = 0; C’ = 172 (pF/m)
+25 a@=0.14 Np/m; 8 = 31.5 rad'm; Zp = (27.7 + j0.098)Q; up = 2 10° m/s
+
+[PAG 230]
+444 Appendice D - Risposte ai problemi di numero dispari
+2.7 R! = 2 (Qhm); L' = 200 (nH/m); G'= 800 (uS/m); C’ = 80 (pF/m); A= 1m
+"2.9" R= 0.8 Om; L' = 38.2 nim; G'= 0.5 mS/m; C’ = 23.9 prim oo.
+2.11 (a) b=3.5mm
+
+rr re men woman QA SZ (90 =7120) O > TO SUI
+
+245
+247
+2.21
+
+2.23
+
+2.25
+2.27
+2.29
+231
+
+2.33
+2,35
+
+2.37
+2.39
+
+244
+
+2.43
+2.45
+2.47
+
+2.49
+2.53
+
+) up = 1.98 x 108 ms
+
+2 = 5599
+
+Zin = (60 + j20) 2
+
+(a) T = 0.62007
+
+® Zn = (12.5 — 12.7}
+(© Vi1.40e7® (V); i = 78.415 (mA)
+@) Zm = (35.20 — j8.62) Q
+(b) 2! = (17.6 ~j4.31) 2
+© Zin = (107.57 ~ j56.7) 2
+1=/4+nd/2
+
+Zn = 240 0
+
+1= 0,294
+
+(a) Zn=(41.25-j16.35) 2
+
+(b) Î= 1.08 e/!010 A; 7} = 47.860 y
+
+(€) Pin =24W
+
+(@) Pi = 606° È = 0.82 AP = Pip = 24 W
+
+(€) Pz, = 29.15 W; Py = 53.15 W
+
+Pry = 10.0 mW; Pi, = —1.1 mW; Pi, = 8.9 mW
+
+(a) T=0.5
+
+(b) T = 0.62 /-29.7°
+
+(c) D=1.0/-53.1°
+
+(@ P= 10/1802
+
+Zu = 409; 2 = 250 2
+
+(a) Zin = 7154.0
+
+(b) 0.0744 + (#A/2), 2 =0,1,2,.--
+
+(a) Z +95 2
+
+(b): 1 = 0.246
+
+Z = (41 -719.5) 2
+
+Zin = (95 — 770) Q
+
+Prima soluzione: Stub a d = 0.199 dall’antenna con lunghezza / = 0.125).
+Seconda soluzione: d = 0.375. dall’antenna e lunghezza / = 0.375A.
+Zin = 100 2 .
+
+V, = 19.2 V; Ry =30 25) = 525m
+
+Capitolo 3
+
+31
+
+33
+3.5
+
+& = 30.45 + 20.89
+
+Area = 9
+
+(a) 4 = V14; a) = (8+ 92-B)/Vi4
+®) -12/5
+
+(©) de = 15.8°
+
+@ AxC=i4+ 9443
+
+Appendice D — Risposte ai problemi di numero dispari
+
+© ABxC)=13
+
+~ QA X (BX C) = 854 = 957 = 20
+
+37
+
+39
+3.1
+3.13
+3.15
+3.19
+
+3.21
+
+3.23
+
+3.25
+
+3.27
+
+3.29
+
+331
+
+3.33
+3.35
+3.37
+
+3.39
+
+3.41
+
+3.43
+
+@ îxB=-24
+(a) (Axg)-2=1
+A(1,--1,2)
+;A(1,-1,2)]
+
+a= tpt D/Ery)?
+
+a = (£2+24)/V20
+
+A=i084+fyl6
+
+è = 20.37 + 370.56 + 20.74
+
+(a) P = (2.24, 63.4°, 0) in coord. cilindriche;
+P; = (2.24, 90°, 63.4°) in coord. sferiche
+
+() Pz = (0,0°, 3) in coord. cilindriche;
+P2 = (3,0°, 0°) in coord. sferiche
+
+(©) Ps = (1.41, 45°, 2).in coord. cilindriche;
+Ps = (2.45,35.3°, 45°) in coord. sferiche
+
+(4) Ps = (4.24, 135°, —3) in coord. cilindriche;
+Ps = (5.2, 125.3°, 135°) in coord. sferiche
+
+(a) P:(0,0,5)
+
+() P2(0,7, 5)
+
+© P;(3,7,0)
+
+(a) V = 21x/2
+
+®) V = 1252/3
+
+(a) E, = -#4
+
+®) E, = 24
+
+(a) Gaz = 90°
+
+(b) +(F0.487 +4 0.228 + 20.843)
+
+@) d=v2
+
+(b) d = 2.67
+
+@ d=5
+
+(a) A(P,) = R2.856 — 42.888 +4 2.123
+
+(b) B(P.) = —R0.896 +60.449 - $5
+
+(©) C(P3) = R0.854 +6 0.146 — È 0.707
+
+(@) D(P,) = R3.67 —6 1.73 — 60.707
+
+T(z) = 10+ (1~e™)/2
+
+dvjdi=-3/V5
+
+aU jdi = 3.125 x 10?
+
+@ fra =-8/3
+
+® [[[F-260=-85
+
+@ fipds= 150"
+
+® ff V-Day = 1507
+
+@ fra
+
+= —£0.17 — 70.70 + 20.70
+
+445
+
+[PAG 231]
+446
+
+Appendice D — Risposte ai problemi di numero dispari
+
+3.48
+
+(a) A è solencidale, ma non conservativo.
+(©) B è conservativo, ma non solenoidale.
+(€) C nonè né conservativo, né solenoidale.
+(@) D è conservativo ma non solenoidale.
+(e) E è conservativo ma non solenoidale.
+(f) Fnonè né conservativo, né solenoidale.
+(g) Gnon é né conservativo, né solenoidale.
+(t) Hè conservativo, ma non solenoidale.
+
+Capitolo 4
+
+41
+43
+45
+
+4.7
+49
+4.11
+4.13
+
+445
+4.17
+4.21
+
+4.23
+4.25
+
+4.29
+431
+4.35
+437
+
+Q = 2.62 (mC)
+
+Q=0.173C
+
+(a) Q=0
+
+) Q= 1a p9/2
+
+© Q=2rpol1- e(1+0)]
+
+(a) Q= poli — e(1+a)]
+
+I= 15708 A
+
+E = 225.61 kV/m
+
+qa = —63.13 (uC)
+
+(a) E(0, 0,0) = —21.6 ~ $0.66 (MV/m)
+
+(b) E(0,0,5 cm) = —881.4 — 933.7 + 2226 (kV/m)
+(©) (0,0, —5 cm) = —£814— 933.7 — #226 (kV/m)
+E = i(poh/2e)[Var +R + 12/VEFF - 2h)
+E=0
+
+@ pr=y?
+
+(b) Q = 64/3 (C)
+
+(©) Q= 64/3 (C)
+
+= Ampya? (C)
+
+= Foo(? — 1)/2r, per1<r<3m
+
+= P4pxo/r, perr>3m
+
+(b) E = 2(p14/2e){z/(a? + 2)°?} (Vim)
+
+Tess
+
+V(b) = (pif4me) x tn[(! + VP-+46)/(~14 VE £ 4B] (Vv)
+
+Van = -78.06 V
+(a)- 0 = 4.32 x 10-4 (S/m)
+
+(b) I = 542.9 (nA)
+
+(©) 4, = —13E/|E| (avs); up = SE/[E{ (m/s)
+
+5 @ R=921 (MA)
+
+© P=27(1W)
+
+441 R=2.1(mQ)
+
+443
+
+a= 42°
+
+445 E;
+
+4.47
+4.49
+
+451
+4.53
+
+Appendice D — Risposte ai problemi di numero-dispafi
+
+= R9 cost -d3 sin 8 (Vim);
+
+Dy. = €9(R27 cos 9 69 sin 6) (Cim?)
+
+8, = 71.6°; Oy = 78.7°; 83 = 81.9°; 04 = 45°
+
+(a) |E|é massimo per r = a.
+
+(b) La tensione di rottura del condensatore è V = 1.39 (MV).
+W, = 4.62 x 10° ()
+
+@) C=3.1pF
+
+(b) C=0.5 pF
+
+(@ C=031 pF
+
+Capitolo 5
+
+5.1
+53
+55
+
+5.7
+59
+
+5.11
+5.13
+5.15
+
+5.17
+
+5.19
+5.21
+
+5.23
+
+5.25
+
+5.27
+
+5.29
+531
+
+535 L=
+
+5.37
+
+a= —§2.1 x 10° (ns?)
+{B| = 410 (mT)
+(a) F=0
+
+@) W=0
+
+© $=0
+
+B = —20.3 (mT)
+3166-09)
+
+4rab
+4, =0.8 A; in senso orario, vista dall’alto.
+=320A
+
+F = -î0.1 (mN), dove î è rivolto a uscire dal filo, nel piano della spira.
+Perciò la forza tira la spira verso il filo.
+
+(@) 11(0,0,8) = 11 tan”! (34) (arm)
+
+H= , con 2 rivolto a uscire dalla pagina.
+
+La forza è repulsiva.
+F=$4 x 10-5N
+@ Hi=dJper0<r<a
+©) Ho =$ Jo(a/r) perr > a
+J= 216677 Alm?
+(a) B=257sin xy — yr cos ax (T)
+©) d=0
+(e) d=0
+
+(a) A=2poIL/(47R)
+
+©) H=(/2/4n)((-3y+9n)/(2 +7 +2)
+ne = 1.5 elettroni/atomo
+
+=
+
+(ul/x}n{(d — a) fal
+
+Wa = 139° (N)
+
+=
+
+Capitolo 6
+
+6.1
+
+Per t = 0, la corrente nella spira superiore scorre istantaneamente
+in senso orario.
+
+47
+
+[PAG 232]
+448 Appendice D — Risposte at problemi di numero dispari
+
+63
+
+6.5
+67
+69
+6.11
+6.13
+6.15
+6.19
+6.23
+6.25
+
+Per t = ty, la corrente nella spira superiore scorre istantaneamente
+in.senso antiorario... ... ......- TE -
+
+(2) Vene = 12567” (V)
+
+(b) Ver = 62.3 sin 10°? (kV)
+
+© Vem = 0
+
+Bo = 1.06 (nT)
+
+Jing = 37.7 sin (2007#) mA
+
+Via = —707(uV)
+
+Via = 3.77
+
+V = wBoa"/2
+
+J = 1.63 cos (120nt) (A)
+
+6y/w) sin wt + Co, dove Cy è una costante di integrazione.
+11/30) rad/m; È = —-2941e/ 9/30 (V/m)
++ sin 9 cos (6 x 10%: — 27R) (4A/m)
+
+Capitolo 7
+
+71
+
+73
+
+15
+71
+
+(a) In direzione delle y positive
+
+(b) up=2x 108 m/s
+
+(€) A=1.26m
+
+(@ €, =2.25
+
+(©) È = ~£12.57e7 (V/m)
+
+(a) \=31.42m
+
+(b) f = 4.77 MHz
+
+(c) e = 1.67
+
+(d) A(z, 1) = £22.13 cos (9.547 x 10% + 0.22) (mA/m)
+ee =4
+
+E = iv2 cos (m x 10! + 104.722) — #2 sin (7 x 10!%+ 104.722) (Vim)
+
+7.9 |E| = 20; p(t = 0) = 0; Y(t = 5 ns) = —45°; W(t = 10 ns) = —90°
+TAL (a) y=65.5° and x = ~11.79°
+(b) Polarizzazione ellittica destrorsa
+719 up = 6.28 x 104 (m/s)
+7.24 H = 0.162"? cos (2x x 10°t — 40x ~ 36.85°) (A/m)
+7.23. (Rio/Rac) = 143.55
+7.25 Sw = 90.12 (Wim?)
+7.27 (a) Sw = 2500e"°* (W/m?)
+(b) 4 = ~1.742 (dB)
+(©) z= 23.03 m
+7.29 up = 6 x 10? (m/s)
+Capitolo 8
+81, (a) D'=-0.67;7=0.33
+®) S=S
+© Si, = 0.13 (Wim); St, = 0.06 (Wim); St, = 0.07 (Wim?)
+85 (a) Ei = 108 + je HF (vim)
+
+®) T=-0.2;7=0.8
+
+87
+89
+8.11
+
+8.13
+8.15
+8.17
+
+8.19
+
+8.21
+8.23
+8.25
+8.29
+8.33
+
+8.35
+8.37
+
+8.39
+
+8.43
+
+8.45
+8.47
+
+Appendice D — Risposte ai problemi di numero dispari
+
+—2R +9 (Vin);
+
+8 & + j8} en 1.26 1072, ease (Vim);
+
+È, = 10(£ + j9)[e #9 — 0.2e/#*/3} (V/m)
+% di potenza riflessa = 4%;
+
+% di potenza trasmessa = 96%
+
+{E Ina = 51-3 (ViM); ima = 15m
+fq = VEE d = cf (Af (Exen)']
+
+Zin = (100 ~ j127) Q; frazione:della potenza incidente che viene
+riflessa = 0.24
+
+f = 60 MHz
+Pi =4.04 x 10 Wim?
+Oi = 27.92°
+
+Di = 0.835
+
+si
+d=15cm
+d = 68.42 cm
+Jp = 166.33 (Mb/s)
+6 = 18.44°
+(a) R=64x 107;
+(b) Pî=0.34W; PF
+s= 0.67 m;f =0.53m
+{a) R=32cm
+@) M=-4
+= -25 cm; M = 1.25; l’immagine è virtuale e diritta.
+1 NI — fim 1 1
+© 7° ()(-x)
+(b) f = —-60 cm in aria; f = —235 cm in acqua.
+54 = 8.34 cm
+= 00
+
+(d)
+
+0.9936
+.2 x 1073 W; Pt = 0.338 W
+
+Capitolo 9
+
+91
+
+9.3 (a) La direzione di massima radiazione è definita da un cono circolare ampio 120° e
+
+95
+
+9.7
+99
+9.11
+
+Smax = 1.9(4W/m?)
+
+centrato attorno alla direzione delle 2 positive.
+
+®) D=4=6cB
+© % = a(S) = 3.14 (sn)
+@) B= 120°
+
+(a) €=29.7%
+
+©) G=0.44= -3.5dB
+
+© 1l=338A4;P,=673W
+Stax = 2 x 1075 (Wim?)
+D=40.13 dB
+
+a) €=993%
+®) G=163=2.1d8
+© h=074A;P,=201W
+
+49
+
+[PAG 233]
+Appendice D ~ Risposte ai problemi di numero dispari
+
+9.13
+
+9.17
+
+9.19
+9.21
+9.23
+9.25
+
+9.27
+
+9.29
+
+9.31
+9.33
+
+9,35
+
+(@) E(R, 0,4) =8& =
+
+4. folk eR
+di a ( R
+2
+(b) S(R,6) = (4) sin 20 (W/m?)
+© D=15
+(@) Rag = 20n7(1/A) (Q)
+(a) € = 62%
+(b) G=0.93 =-0.3 dB
+© 1 =47.5A;P, =323W
+Pi = 25.9 (mW)
+P, = 0.15 (mW)
+Bro = 5.73°
+(A) Bez = 0.5%; Bye = 15°
+(b) D=5.41 x 10' = 47.3 dB
+(a) Be = 1.89; B, = 0.18°
+©) Ay = 6,8 = 0.96m
+(2) F,(9) = 4 cos? F (4cos 8 + DI
+(b) F,(8) = 5 + 4 cos (22 cos 6)
+Ls
+
+n
+(©) F,(8) =4 cos (3 così — 4)
+
+@) F.(9)=5+4cos (« cos? + +)
+
+(€) F,(6) = 5 —4sin F cos 9)
+
+“d/d = 1414
+
+__sin?|(157/4) cos 6]
+Fa(0)= 25 sin?[(37/4) cos 9]
+§ = -2.72 (rad) = -155.9°
+
+5, B = 13.5°
+
+Capitolo 10
+
+10.1
+10.3
+
+10.5.
+
+10.7
+
+T = 105.08 minuti
+166 canali
+
+Go) mas = 150 KHz
+Remax = 5.75 km
+
+) sin 8 (V/m)
+
+n ___ Bibliografia
+
+Elettromagnetismo
+
+Balanis, C.A., Advanced Engineering Electromagnetics, John Wiley & Sons, New
+York, 1989.
+
+Cheng, D.K., Fundamentals of Engineering Electromagnetics, Addison Wesley,
+Reading, Reading, MA, 1993.
+
+Crowley, J.M., Fundamentals of Applied Electrostatics, John Wiley & Sons, New
+York, 1986.
+
+DuBroff, R.E., S.V. Marshall, e G.G. Skitek, Electromagnetic Concepts and
+Applications, 4° ed., Prentice Hall, Upper Saddle River, New Jersey, 1996.
+
+Hayt, W.H., Jr., Engineering Electromagnetics, 5* ed., McGraw-Hill, New York,
+1989.
+
+Iskander, M.F., Electromagnetic Fields & Waves, Prentice Hall, Upper Saddle River,
+NJ, 1992,
+
+Johnk, C.T.A., Engineering Electromagnetic Fields and Waves, 2* ed., John Wiley
+& Sons, New York, 1988.
+
+King, R.W.P. and S. Prasad, Fundamental Electromagnetic Theory and
+Applications, Prentice Hall, Englewood Cliffs, New Jersey, 1986.
+
+Kong, J.A., Electromagnetic Wave Theory, 2nd ed., John Wiley & Sons, New York,
+1990.
+
+Kraus, J.D., Electromagnetics, 4° ed., McGraw-Hill, New York, 1992.
+
+Neff, H.P., Jr., Introductory Electromagnetics, JohnWiley & Sons, New York, 1991.
+
+Parton, JE, S.IT. Owens e M.S. Raven, Applied Electromagnetics, 2° ed.,
+Macmillan, London, 1986.
+
+Paul, C.R. e S.A. Nasar, Introduction to Electromagnetic Fields, McGraw-Hill, New
+York, 1987.
+
+Ramo, S., LR. Whinnery, e T. Van Duzer, Fields and Waves in Communication
+Electronics, 3° ed., John Wiley & Sons, New York, 1994.
+
+Rao, N.N., Elements of Engineering Electromagnetics, 2° ed., Prentice Hall, Upper
+Saddle River, New Jersey, 1987.
+
+Shen, L.C. e L.A. Kong, Applied Electromagnetism, 2° ed., PWS Engineering,
+Boston, Mass., 1987.
+
+Taylor, D.M. e P.E. Secker, Industrial Electrostatics: Fundamentals and
+Measurements, John Wiley & Sons, New York, 1994. °
+
+Wait, J.R., Electromagnetic Theory, Harper & Row, New York, 1985.
+
+Antenne e propagazione delle onde radio
+
+Balanis, C.A., Antenna Theory: Analysis and Design, Harper & Row, New York,
+1982.
+
+Collin, R.E., Antennas and Radiowave Propagation, McGraw-Hill, New York,
+1985.
+
+Ishimaru, A., Electromagnetic Wave Propagation, Radiation, and Scattering,
+
+[PAG 234]
+452
+
+Bibliografia
+
+Prentice Hall, Upper Saddle River, New Jersey, 1991.
+
+Kraus, L.D:; Antennas, 2° ed., McGraw-Hill; New York;1988>--- <> > —
+
+Sander, KE. ‘e'G.AL: Reed, Transmission and Propagation of Electromagnetic
+Waves, 2° ed., Cambridge University Press, Cambridge, England, 1986.
+
+Stutzman, W.L. e G.A. Thiele, Antenna Theory and Design, John Wiley & Sons,
+New York, 1981.
+
+Ingegneria ottica
+
+Bohren, C.F. e D.R. Huffman, Absorption and Scattering of Light by Small
+Particles, John Wiley & Sons, New York, 1983.
+
+Bom, M. e E. Wolf, Principles of Optics, 6° ed., Pergamon Press, New York, 1980.
+
+Cho, Z.H., J.P. Jones, e M. Singh, Foundations of Medical Imaging, John Wiley &
+Sons, New York, 1993.
+
+Hecht, E., Optics, 2° ed., Addison-Wesley, Reading, Mass., 1990.
+
+Keiser, G., Optical Fiber Communications, 2° ed., McGraw-Hill, New York, 1991.
+
+Lee, D.L., Electromagnetic Principles of Integrated Optics, John Wiley & Sons,
+New York, 1986,
+
+Smith, W.J.; Modern Optical Engineering: The Design of Optical Systems, McGraw-
+Hill, New York, 1991.
+
+Walker, B.H., Optical Engineering Fundamentals, McGraw-Hill, New York, 1994.
+
+Ingegneria delle microonde
+
+Freeman, J.C., Fundamentals of Microwave Transmission Lines, Joh Wiley &
+Sons, New York, 1996.
+
+Pozar, D.M., Microwave Engineering, Addison-Wesley, Reading, Mass., 1990.
+
+Richharia, M., Satellite Communication Systems Design Principles, McGraw-Hill,
+New York, 1995.
+
+Scott, A.W., Understanding Microwaves, John Wiley & Sons, New York, 1993.
+
+Sinnema, W., Electronic Transmission Technology, 2° ed., Prentice Hall, Englewood
+Cliffs, New Jersey, 1988.
+
+Skolnik, M.I., Introduction to Radar Systems, 2° ed., McGraw-Hill, New York,
+1980.
+
+Stimson, G.W., Introduction. to Airborne Radar, Hughes Aircraft Company, El
+Segundo, California, 1983.
+
+‘Indice analiti
+
+(“P.” indica che il termine si trova all’interno di un problema.)
+
+A
+
+accesso multiplo a divisione di frequenza, 419
+‘acqua marina, 295
+‘adattamento
+
+— a stub semplice, 83
+
+— di impedenza, 83
+‘adattatore a stub semplice, 84
+ammettenza, 78
+
+ampiezza del lobo
+
+— apertura rettangolare, 392
+~ dipolo a mezz’onda, 381
+
+~ dipolo a onda intera, 381
+— dipolo corto, 366
+
+auello carico, 153
+
+angolo
+
+~ azimutale, 113, 363
+
+— critico, 323
+
+— di Brewster, 335
+
+— di ellitticità, 289
+
+~ di incidenza, 322
+
+~ di riflessione, 322
+
+— di rifrazione, 322
+
+— di rotazione, 289
+
+— di scansione, 406, 409
+
+— distanza, 363
+
+— solido, 367
+
+— solido equivalente, 370
+
+— zenitale, 116, 363
+anisotropo, mezzo, 173
+antenna
+
+— a specchio parabolico, 360
+— ampiezza del lobo, 370
+
+— area efficace, 382
+
+— diagramma di radiazione, 360, 367
+— dipolo a mezz’onda, 375
+— dipolo corto, 362
+
+— dipolo hertziano, 362
+
+— dipolo rettilineo, 380
+
+— direttività, 371
+
+— isotropa, 360
+— lobi multipli, 396
+
+— monopolo a quarto d’onda, 379
+— polarizzazione dell’, 361
+
+— rendimento, 373
+
+— resistenza di radiazione, 374
+
+— ricevente, 382
+
+— satellite, 1, 386, 422
+
+~ sistema di comunicazione via, 386
+— spira, 360
+
+~ tromba, 360
+
+apertura rettangolare, 391
+approssimazioni, 441
+
+area efficace
+
+~ antenna ad apertura, 394
+
+— antenna qualsiasi, 383
+
+~ dipolo corto, 383
+
+asse principale, 343
+
+atomo, 3, 166
+
+autoinduttanza, 228
+
+B
+
+banda, 19
+
+— delle microonde, 21
+barra magnetica, 8, 212
+bobina toroidale, 215
+buon conduttore, 294
+
+Cc
+
+campo, 4
+
+— conservativo, 137, 161
+
+— apertura, 389
+
+— di polarizzazione, 172-173
+
+— elettrico, 5, 145
+
+— irrotazionale, 137, 161
+
+~ lontano, 361
+
+— lontano, apertura, 389
+
+~ lontano, dipolo elettrico, 364
+
+— magnetico, 8
+
+— magnetico, intensità di, 195
+
+— nou divergente, 132
+
+— solenoide, 226
+
+capacità, 180
+
+— condensatore a piastre parallele, 181
+~ linea coassiale, 182
+
+— per unità di lunghezza, linea a piani paralleli, 39
+
+[PAG 235]
+454 indice analitico
+
+— per unità di lunghezza, linea bifilare, 39
+.— per unità di lunghezza, linea coassiale, 39, 41, 183
+caratteristica, impedenza, 44
+carica elettrica, dell’elettrone, 5
+— legge di conservazione della, 6
+lineare, 147.-.
+— puntuale, 157
+cariche puntuali, 151
+carico, impedenza di, 49
+carta di Smith, 70
+— angolo del coefficiente di riflessione, 73
+— cerchio del ROS, 75
+— cerchio unitario, 70
+— lunghezze d’onda verso il carico (WTL), 75
+— lunghezze d’onda verso il generatore (WTG), 75
+cavo coassiale, resistenza, 299
+cerchio del ROS, 75
+circolatore, 1, 419-420
+circuitazione, 134
+circuito
+— aperto, linea in, 63
+— equivalente di Thévenin, 382
+cladding, 325
+coefficiente
+~ complesso di alimentazione, 397
+~ di riflessione di Fresnel per la polarizzazione parallela, 334
+~ di riflessione di Fresnel per le polarizzazione perpendicolare,
+331 .
+— di riflessione, incidenza normale, 313
+— di riflessione, tensione, 49
+~ di trasmissione di Fresnel per la polarizzazione paralleta, 334
+— di trasmissione di Fresnel per la polarizzazione
+perpendicolare, 331
+— di trasmissione, incidenza normale, 313
+complesso coniugato, 21
+concatenato, flusso magnetico, 228
+condizione di phase-matching, 330
+condizioni al contorno
+— campo magnetico, 224
+— densità di corrente, 179
+— elettromagnetiche, 260
+~ elettrostatiche, 174
+~ tra due mezzi dielettrici, 176
+— tra un dielettrico e un conduttore perfetto, 178
+conducibilità, 10, 167
+— dei materiali, 165
+— materiali di uso comune, 439
+conduttanza, 169
+— per unità di lunghezza, 170
+— ~ cavo coassiale, 169
+linea a piani paralleli, 39
+linea bifilare, 39
+~ — linea coassiale, 39 3
+conduttore perfetto, 10, 40
+conduttori, 166
+~ cariche, 180
+conduzione, corrente di, 149
+— densità di, 167
+
+conservativo, campo, 161, 137
+contorni amperiani, 213 - ...-
+convezione, corrente di, 149
+convenzioni sui segui
+
+— per gli specchi sferici, 344
+
+— sui segni per le lenti sottili, 346
+coordinate
+
+— cartesiane, 112
+
+— cartesiane, vettore posizione, 112
+— cilindriche, 113
+
+~ cilindriche, vettore posizione, 112
+— rettangolari, 111
+
+— sferiche, 116
+
+— sferiche, vettore posizione, 112
+coppia, 196, 201
+
+coppia magnetica, 201
+
+core, 325
+
+oorrente
+
+~ diconduzione, 149
+
+— di convezione, 149
+
+— di spostamento, 258-259
+
+costante
+
+— di attenuazione, 291
+
+— — buon conduttore, 293-294
+
+— — dielettrico a basse perdite, 293
+— ~ linea di trasmissione, 43
+
+— — linea senza perdite, 45
+
+— — mezzo a basse perdite, 294
+
+— di fase, 15, 291
+
+- — buon conduttore, 293-294
+
+— ~ dielettrico a basse perdite, 293
+~ ~ linea di trasmissione, 43
+
+~ — linea di trasmissione senza perdite, 46
+— — mezzo a basse perdite, 294
+
+— di propagazione, 276
+
+~ — buon conduttore, 293-294
+
+— — dielettrico a basse perdite, 293
+~ ~ linea di trasmissione, 43, 48
+
+~ ~ linea di trasmissione senza perdite, 46
+~ — linea non distorcente, 96, (97, P.2.6)
+— ~ mezzo a basse perdite, 294
+
+~ — non distorcente, linea (97, P.2.6), 96
+~ di tempo di rilassamento, 263
+
+~ dielettrica, 7, 150
+
+Coulomb, Charles Augustin de, 5
+curva di magnetizzazione, 223
+
+— materiali ferromagnetici dolci, 223
+~ materiali ferromagnetici duri, 223
+
+D
+
+decibel, 303
+
+densità
+
+— di carica lineare, 147
+
+— di carica superficiale, 147
+
+~ di carica volumetrica, 146
+
+— di corrente, 205
+
+— di corrente di conduzione, 167
+— di corrente di convezione, 149
+
+— di corrente di spostamento, 258
+— di corrente superficiale, 205
+~ di corrente volumetrica, 205
+~ di potenza, 300, 365
+derivata direzionale, 126
+designazione delle bande, 19
+deviazione di frequenza per effetto Doppler, 424, 430
+diagramma a rimbalzo, 91
+
+diamagnetismo, 222
+
+dielettrici, 166, 171
+
+dielettrico perfetto, 10, 40
+
+diffrazione, 341
+
+dipolo a mezz'onda, 375
+
+dipolo corto, 362
+
+— diagrammi di radiazione di un, 366
+
+— area efficace, 382
+
+— campi elettrico e magnetico, 362
+
+— direttività, 373
+
+— resistenza di radiazione, 374
+
+dipolo elettrico, 7, 163
+
+~ dipolo a mezz’onda, 375
+
+— monopolo a quarto d’onda, 379
+
+dipolo magnetico, 209
+
+dipolo rettilineo, 380
+
+direttività, 371
+
+direttività
+
+— antenna ad apertura, 394
+
+~ dipolo hertziano, 373
+
+~ dipolo a mezz’onda, 378
+
+disco carico, 155
+
+dispersione, 35
+
+— della carica, 263
+
+— fibre ottiche, 326
+
+distanza focale
+
+— dello specchio, 344
+
+~ di una lente, 350
+
+~ immagine, 342
+
+— oggetto, 342
+
+~ radiale, 113
+
+distribuzione di campo uniforme, 391
+divergenza, 129
+
+domini magnetici di Weiss, 222
+
+downlink, 418
+
+duplexer, 419, 425
+
+durata dell’impulso, 425
+
+E
+
+EHF, 20
+
+elettrica, forza, 184
+
+elettrico, momento di dipolo, 164
+elettrico, dipolo, 163
+elettromagnetico, campo, 242
+elettrone
+
+— carica, 5
+
+— mobilità, 167
+
+— velocità di deriva, 166
+elettrostatica, 9-10, 145-146
+ELF, 19-20
+
+Indice analitico:
+
+EM, 18
+
+energia.
+
+— elettrostatica, 184
+
+— magnetica, 231 LR teen
+— potenziale elettrostatica; 183.
+equazione. -
+
+~ del radar, 429
+
+— della lente sottile, 350
+
+— delle onde, 276 :
+
+~ di continuità della carica, 262
+
+~ di Laplace, 165 Pia
+— di Poisson per il potenziamento elettrico, 165
+
+~ vettoriale di Poisson per.il potenziale magnetico, 218. ,
+equazioni
+
+— del telegrafo, 37,42. 7 .
+
+— di Maxwell, forma differenziale, 145, 241
+
+~ di Maxwell, forma integrale, 241
+
+~ di Maxwell, regime armonico, 274
+
+F
+Faraday, Michael, 242
+
+fase
+
+— anticipo, 15
+
+~ ritardo, 15
+
+~ velocità di, 13-14, 45
+
+fattore
+
+~ di attenuazione, 16
+
+~ di forma, 390
+
+— di propagazione sferica, 363
+— di schiera, 398
+
+— di schiera uniforme, 404
+
+— di schiera a scansione elettronica, 405
+— di schiera di due dipoli verticali, 399
+~ di schiera a lobi multipli, 404
+FDMA, 419
+
+ferromagnetismo, 222
+
+fibre ottiche, 36, 37, 325
+
+— angolo di accettazione, 326
+
+— cladding, 325
+
+— core, 325
+
+~ dispersione modale, 326
+
+— modi, 326
+
+filo carico infinito, 158
+
+flusso
+
+~ densità di, 130
+
+— linee di, 130
+
+— magnetico, 219, 242
+
+~ magnetico concatenato, 228
+formula .
+
+— dei costruttori di lenti, 350
+
+— di Gauss, 350
+
+— di trasmissione di Friis, 386, 421
+formulazione
+
+— scalare, 388
+
+— vettoriale, 388
+
+forza centrifuga, 416
+
+~ di Lorentz, 197
+
+— dielettrica, 173
+
+[PAG 236]
+456 Indice analitico
+
+G
+
+generatore elettrico, 254, 257
+giorno sidereo, 417
+
+gradiente di un campo scalare, 125
+gravitazionale
+
+— campo, 4
+
+— forza, 4
+
+H
+Henry, Joseph, 242
+HF, 19-20
+
+I
+
+identità di Eulero, 21
+
+immagine
+
+— reale, 342
+
+= virtuale, 342
+
+impedenza
+
+— caratteristica, 44, 47-48
+
+— circuito aperto, 63
+
+— di carico, 49
+
+— di ingresso, 57
+
+— interna, 298
+
+— intrinseca, 279
+
+— = buon conduttore, 293-294
+~ — del mezzo con perdite, 292
+— — dello spazio libero, 280
