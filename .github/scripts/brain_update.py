@@ -430,11 +430,15 @@ Rispondi SOLO JSON valido. Nessun testo fuori dal JSON."""
 
     try:
         risposta = mistral_chat(prompt, max_tokens=2500, temperatura=0.25)
-        return parse_json(risposta)
+        print(f'  Briefing raw ({len(risposta)}c): {risposta[:400]}')
+        result = parse_json(risposta)
+        if not result:
+            print('  parse_json fallito')
+        return result
     except Exception as ex:
         import traceback
         print(f'  genera_briefing ERR: {type(ex).__name__}: {ex}')
-        print(traceback.format_exc()[:500])
+        print(traceback.format_exc()[-400:])
         return None
 
 # ── Memoria conversazioni ────────────────────────────────────────
