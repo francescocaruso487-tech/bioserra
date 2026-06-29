@@ -1,0 +1,899 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 1/116 ===
+Chars: 45,000 | Offset: 0
+
+[PAG 1]
+MANUALE DI
+ELETTROTECNICA
+E AUTOMAZIONE
+
+[PAG 3]
+a cura di
+GIULIANO ORTOLANI - EZIO VENTURI
+MANUALE DI
+ELETTROTECNICA
+E AUTOMAZIONE
+Matematica - Chimica - Fisica
+Normativa, legislazione e sicurezza - Segni grafici - CAD
+Elettrotecnica generale - Macchine elettriche - Misure elettriche
+Impianti elettrici - Illuminotecnica - Trazione elettrica
+Sensori e trasduttori - Automazione - Sistemi - Tecnologie BUS
+Elettronica analogica e digitale - Elettronica di potenza
+Tecnologie elettriche ed elettroniche
+Progettazione elettrica ed elettronica
+Seconda edizione
+EDITORE ULRICO HOEPLI MILANO
+
+[PAG 4]
+UN TESTO PIÙ RICCO E SEMPRE AGGIORNATO
+Alla pagina web www.hoeplieditore.it/4456-6 sono disponibili: 
+•      materiali didattici integrativi;
+•      eventuali aggiornamenti del testo;
+•      un estratto esemplificativo del volume in formato PDF che può essere
+consultato, scaricato e stampato.
+Copyright © Ulrico Hoepli Editore S.p.A. 2010
+Via Hoepli 5, 20121 Milano (Italy)
+tel. 39 02 864871 – fax 39 02 8052886
+e-mail hoepli@hoepli.it
+www.hoepli.it
+Tutti i diritti sono riservati a norma di legge
+e a norma delle convenzioni internazionali
+ISBN 978-88-203-4456-6
+Ristampa:
+4     3     2          
+   
+ 2012     2013     2014
+Stampa: L.E.G.O. S.p.A., stabilimento di Lavis (Trento)
+Printed in Italy
+Le fotocopie per uso personale del lettore possono essere effettuate nei limiti 
+del 15% di ciascun volume/fascicolo di periodico dietro pagamento alla SIAE 
+del compenso previsto dall’art. 68, commi 4 e 5, della legge 22 aprile 1941 n. 633.
+Le fotocopie effettuate per finalità di carattere professionale, economico o commerciale,
+o comunque per uso diverso da quello personale possono essere effettuate a seguito
+di specifica autorizzazione rilasciata da CLEARedi, Centro Licenze e Autorizzazioni
+per le Riproduzioni Editoriali, Corso di Porta Romana 108, 20122 Milano,
+e-mail autorizzazioni@clearedi.org e sito web www.clearedi.org.
+
+[PAG 5]
+Indice
+(Ogni Sezione è preceduta dall’indice dettagliato e termina con la bibliografia)
+PREFAZIONE
+PREFAZIONE ALLA SECONDA EDIZIONE
+SEZIONE I - MATEMATICA
+1 - Calcolo combinatorio  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+2 - Monomi e polinomi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+3 - Matrici, determinanti e sistemi lineari . . . . . . . . . . . . . . . . . . . . . . .
+15
+4 - Equazioni, sistemi e disequazioni . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+5 - Trigonometria . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+6 - Geometria euclidea . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+39
+7 - Geometria analitica nel piano  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+45
+8 - Geometria analitica nello spazio . . . . . . . . . . . . . . . . . . . . . . . . . . .
+55
+9 - Vettori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+57
+10 - Numeri complessi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+61
+11 - Funzioni reali  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+66
+12 - Calcolo differenziale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+95
+13 - Studio completo di funzione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+111
+14 - Successioni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+119
+15 - Serie numeriche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+124
+16 - Serie di funzioni  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+130
+17 - Integrali . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+138
+18 - Equazioni differenziali  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+148
+SEZIONE II - CHIMICA
+1 - Introduzione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+2 - Struttura e trasformazioni della materia  . . . . . . . . . . . . . . . . . . . . .
+11
+3 - Governo delle reazioni chimiche . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+4 - Chimica inorganica descrittiva  . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+33
+5 - Principi generali di chimica organica  . . . . . . . . . . . . . . . . . . . . . . .
+34
+
+[PAG 6]
+SEZIONE III - FISICA
+1 - Errori di misura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+2 - Vettori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+3 - Cinematica, il moto dei corpi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+4 - Moti relativi, movimenti composti  . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+5 - Principi della dinamica, forze  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+6 - Impulso, lavoro ed energia  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+7 - Statica dei sistemi rigidi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+8 - Corpo rigido  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+29
+9 - Statica dei fluidi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+31
+10 - Fenomeni di superficie  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+11 - Dinamica dei fluidi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+12 - Onde meccaniche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+38
+13 - Acustica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+42
+14 - Propagazione della luce . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+43
+15 - Ottica geometrica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+46
+16 - Termometria  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+50
+17 - Calorimetria  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+53
+18 - Termodinamica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+58
+19 - Interazioni elettriche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+63
+20 - Corrente elettrica continua  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+65
+21 - Campo magnetico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+68
+SEZIONE IV - NORMATIVA, LEGISLAZIONE E SICUREZZA
+1 - Normativa . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+2 - Legislazione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+SEZIONE V - SEGNI GRAFICI
+1 - Introduzione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+2 - Classificazione degli schemi elettrici  . . . . . . . . . . . . . . . . . . . . . . .
+5
+3 - Rappresentazione grafica delle apparecchiature elettriche
+secondo le norme CEI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+4 - Rappresentazione grafica delle apparecchiature elettroniche
+secondo le norme CEI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+5 - Rappresentazione grafica delle apparecchiature pneumatiche . . . . .
+26
+6 - Centrali di produzione elettrica . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+29
+7 - Lettere di identificazione delle apparecchiature elettriche  . . . . . . .
+39
+SEZIONE VI - CAD
+1 - Elementi fondamentali  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+2 - Preparazione del foglio di lavoro  . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+
+[PAG 7]
+3 - Nuovo disegno  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+4 - Selezione degli oggetti  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+5 - Disegno della stella . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+30
+6 - Soluzione di una rete trifase  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+38
+7 - Proiezioni ortogonali . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+47
+8 - Viste in sezione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+63
+9 - Quotatura dei disegni  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+78
+10 - Proiezioni assonometriche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+89
+11 - Casa a schiera . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+102
+12 - Blocchi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+106
+13 - Spazio carta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+122
+SEZIONE VII - ELETTROTECNICA GENERALE
+1 - Grandezze elettriche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+2 - Bipoli elettrici e loro collegamenti  . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+3 - Metodi di risoluzione delle reti lineari  . . . . . . . . . . . . . . . . . . . . . .
+30
+4 - Reti elettriche capacitive . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+49
+5 - Grandezze magnetiche e loro legami, circuiti magnetici . . . . . . . . .
+73
+6 - Interazioni tra circuiti elettrici e campi magnetici . . . . . . . . . . . . . .
+92
+7 - Circuiti in corrente alternata monofase . . . . . . . . . . . . . . . . . . . . . .
+113
+8 - Risoluzione delle reti lineari in corrente alternata monofase . . . . . .
+147
+9 - Sistemi trifasi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+158
+SEZIONE VIII - MACCHINE ELETTRICHE
+1 - Elementi generali sulle macchine elettriche  . . . . . . . . . . . . . . . . . .
+4
+2 - Trasformatore  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+3 - Campo magnetico rotante  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+30
+4 - Motore asincrono  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+37
+5 - Generatore sincrono  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+52
+6 - Generatore a corrente continua  . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+66
+7 - Motore a corrente continua . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+77
+SEZIONE IX - MISURE ELETTRICHE
+1 - Errori di misura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2 - Strumenti elettrici (caratteristiche)  . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+3 - Strumenti elettrici (tipi e impieghi) . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+4 - Sistemi resistivi di regolazione . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+5 - Misura di tensione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+29
+6 - Misura di corrente . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+31
+7 - Misure di resistenza  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+8 - Misure di forza elettromotrice . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+39
+
+[PAG 8]
+9 - Misure di potenza  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+40
+10 - Misure di impedenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+43
+11 - Misure su linee trifasi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+46
+12 - Strumenti particolari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+54
+13 - Trasformatori di misura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+59
+14 - Misure sulle macchine elettriche . . . . . . . . . . . . . . . . . . . . . . . . . . .
+62
+15 - Prove sul trasformatore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+67
+16 - Prove sul motore asincrono . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+71
+17 - Prove sulla macchina sincrona  . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+75
+18 - Prove sulle macchine a corrente continua . . . . . . . . . . . . . . . . . . . .
+79
+SEZIONE X - IMPIANTI ELETTRICI
+1 - Definizioni e classificazioni  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+2 - Calcolo della potenza convenzionale e della corrente d’impiego
+delle condutture elettriche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+3 - Parametri elettrici e circuiti equivalenti delle linee elettriche . . . . .
+19
+4 - Condutture elettriche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+31
+5 - Metodi per il dimensionamento e la verifica delle condutture
+elettriche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+73
+6 - Sovracorrenti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+83
+7 - Apparecchi di manovra e protezione . . . . . . . . . . . . . . . . . . . . . . . .
+100
+8 - Protezione dalle sovracorrenti . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+130
+9 - Protezione dalle sovratensioni . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+143
+10 - Protezione contro i contatti diretti e indiretti . . . . . . . . . . . . . . . . . .
+153
+11 - Impianti per la distribuzione e l'utilizzazione dell'energia elettrica .
+192
+12 - Ambienti e applicazioni particolari . . . . . . . . . . . . . . . . . . . . . . . . .
+226
+13 - Verifiche degli impianti elettrici utilizzatori . . . . . . . . . . . . . . . . . .
+247
+14 - Centrali elettriche di produzione e stazioni elettriche . . . . . . . . . . .
+255
+SEZIONE XI - ILLUMINOTECNICA
+1 - Introduzione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+2 - Grandezze fotometriche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+3 - Misure fotometriche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+4 - Colorimetria  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+5 - Sorgenti luminose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+6 - Apparecchi illuminanti  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+47
+8 - Illuminazione di interni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+51
+SEZIONE XII - TRAZIONE ELETTRICA
+1 - Generalità e concetti fondamentali  . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+2 - Binario, sala ferroviaria e carrelli  . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+
+[PAG 9]
+3 - Condizioni di marcia . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+4 - Condizioni di arresto e sicurezza . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+5 - Corrosione elettrolitica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+6 - Alimentazione dei mezzi di trazione . . . . . . . . . . . . . . . . . . . . . . . .
+17
+7 - Azionamenti per trazione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+28
+8 - Mezzi di trazione con azionamenti  . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+9 - Alimentazione delle linee di contatto  . . . . . . . . . . . . . . . . . . . . . . .
+34
+SEZIONE XIII - SENSORI E TRASDUTTORI
+1 - Introduzione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+2 - Sensori per il controllo di posizione e di spostamento . . . . . . . . . . .
+7
+3 - Sensori per il controllo di prossimità  . . . . . . . . . . . . . . . . . . . . . . .
+27
+4 - Sensori per il controllo di vibrazioni . . . . . . . . . . . . . . . . . . . . . . . .
+45
+5 - Sensori per il controllo di peso e di deformazione  . . . . . . . . . . . . .
+47
+6 - Sensori per il controllo di velocità  . . . . . . . . . . . . . . . . . . . . . . . . .
+53
+7 - Sensori per il controllo di livello . . . . . . . . . . . . . . . . . . . . . . . . . . .
+56
+8 - Sensori per il controllo di portata  . . . . . . . . . . . . . . . . . . . . . . . . . .
+67
+9 - Trasduttori per il controllo di pressione  . . . . . . . . . . . . . . . . . . . . .
+74
+10 - Sensori per il controllo di temperatura  . . . . . . . . . . . . . . . . . . . . . .
+78
+SEZIONE XIV - AUTOMAZIONE
+1 - Introduzione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+2 - Tecnologie utilizzate nei processi automatici  . . . . . . . . . . . . . . . . .
+6
+3 - CIM, PLC e comunicazione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+4 - Hardware nei PLC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+5 - La messa in servizio del PLC  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+53
+6 - Programmazione del PLC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+62
+7 - Parole di istruzione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+94
+SEZIONE XV - SISTEMI
+1 - Sistemi di regolazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+2 - Studio nel dominio del tempo . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+3 - Studio nel dominio di s e di 
+
+4 - Stabilità e criteri di stabilità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+5 - Sistemi di controllo a tempo discreto  . . . . . . . . . . . . . . . . . . . . . . .
+43
+6 - Regolatori e controllori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+49
+7 - Tecniche digitali . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+52
+SEZIONE XVI - TECNOLOGIE BUS
+1 - Introduzione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+2 - Caratteristiche della tecnologia bus . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+
+[PAG 10]
+3 - Sistemi bus a livello mondiale: standard e mercato . . . . . . . . . . . . .
+18
+4 - Mercato e standard europeo del bus  . . . . . . . . . . . . . . . . . . . . . . . .
+20
+SEZIONE XVII - ELETTRONICA ANALOGICA E DIGITALE
+1 - Generalità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2 - Elementi di teoria delle reti elettriche lineari  . . . . . . . . . . . . . . . . .
+7
+3 - Amplificatori lineari  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+4 - Materiali semiconduttori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+37
+5 - Diodi a giunzione pn . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+39
+6 - Circuiti con diodi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+44
+7 - Transistor bipolari a giunzione e circuiti di polarizzazione . . . . . . .
+49
+8 - Amplificatori a bjt . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+54
+9 - Transistor ad effetto di campo . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+59
+10 - Transistor nei circuiti digitali  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+68
+11 - Amplificatori operazionali  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+73
+12 - Sistemi di numerazione e codici numerici e alfanumerici . . . . . . . .
+82
+13 - Elementi di algebra booleana  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+89
+14 - Circuiti logici di base  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+97
+15 - Circuiti combinatori  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+102
+16 - Dispositivi sequenziali: latch e flip-flop  . . . . . . . . . . . . . . . . . . . . .
+111
+17 - Registri . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+118
+18 - Contatori e divisori di frequenza . . . . . . . . . . . . . . . . . . . . . . . . . . .
+121
+19 - Memorie ROM e RAM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+125
+20 - Dispositivi logici programmabili . . . . . . . . . . . . . . . . . . . . . . . . . . .
+129
+21 - Microprocessore  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+132
+22 - Oscillatori sinusoidali . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+135
+23 - Generatori di forme d'onda  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+139
+24 - Filtri  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+147
+25 - Amplificatori di potenza, tiristori, comando di attuatori . . . . . . . . .
+162
+26 - Introduzione alle conversioni A/D e D/A . . . . . . . . . . . . . . . . . . . .
+180
+27 - Oscilloscopio e suo impiego nelle misure di tensione, corrente, 
+frequenza e fase  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+190
+SEZIONE XVIII - ELETTRONICA DI POTENZA
+1 - Generalità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+2 - Conversione della corrente elettrica  . . . . . . . . . . . . . . . . . . . . . . . .
+22
+3 - Alimentazione monofase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+4 - Alimentazione trifase  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+5 - Controllo della potenza nella conversione C.A.-C.C.  . . . . . . . . . . .
+30
+6 - Alimentatori a commutazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+
+[PAG 11]
+7 - Convertitori non isolati . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+37
+8 - Convertitori con trasformatori . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+39
+9 - Conversione C.C.-C.C.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+45
+10 - Regolazione in corrente alternata  . . . . . . . . . . . . . . . . . . . . . . . . . .
+47
+11 - Inverter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+48
+12 - Conversione frequenza-frequenza . . . . . . . . . . . . . . . . . . . . . . . . . .
+53
+SEZIONE XIX - TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+1 - Materiali conduttori, isolanti e magnetici  . . . . . . . . . . . . . . . . . . . .
+3
+2 - Elementi utilizzati negli impianti elettrici civili  . . . . . . . . . . . . . . .
+28
+3 - Apparecchiature di comando, segnalazione, protezione per 
+azionamenti industriali  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+78
+4 - Componenti passivi impiegati nei circuiti elettronici  . . . . . . . . . . .
+107
+SEZIONE XX - PROGETTAZIONE ELETTRICA ED ELETTRONICA
+1 - Progetto degli impianti elettrici . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+2 - Applicazioni elettriche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+3 - Progetto degli impianti elettronici . . . . . . . . . . . . . . . . . . . . . . . . . .
+111
+4 - Applicazioni elettroniche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+141
+CONTENUTO DVD
+INDICE ANALITICO
+
+[PAG 12]
+Direttore dell’opera ULRICO HOEPLI; curatori GIULIANO ORTOLANI - EZIO VENTURI
+Prof. GIUSEPPE BIONDO (Elettronica analogica e digitale)
+Prof. GAETANO CONTE (Impianti elettrici; Progettazione elettrica ed elettronica)
+Prof. TANIA CUNIBERTI (Chimica)
+Prof. EDOARDO DONINI (Elettrotecnica generale)
+Prof. MIRCO ERBOGASTO (Elettronica di potenza; Sistemi; Trazione elettrica)
+Prof. FAUSTO MARIA FERRI (Progettazione elettrica ed elettronica; Tecnologie 
+elettriche ed elettroniche)
+Prof. UMBERTO FIERRO (Fisica)
+Prof. GIOVANNA GAROFOLO (Matematica)
+Prof. IGNAZIO MENDOLIA (Macchine elettriche; Misure elettriche)
+Prof. ENZO MONASTERO (CAD)
+Prof. GIULIANO ORTOLANI (Automazione; Illuminotecnica; Normativa, legisla-
+zione e sicurezza; Progettazione elettrica ed elettronica; Segni grafici; Sen-
+sori e trasduttori; Tecnologie BUS; Tecnologie elettriche ed elettroniche)
+Prof. ENRICO SACCHI (Elettronica analogica e digitale)
+Prof. EZIO VENTURI (Automazione;  Illuminotecnica;  Normativa, legislazione e 
+sicurezza; Progettazione elettrica ed elettronica; Segni grafici; Sensori e tra-
+sduttori; Tecnologie BUS; Tecnologie elettriche ed elettroniche)
+
+[PAG 13]
+Prefazione
+Il Manuale di Elettrotecnica e Automazione, nel solco della tradizione 
+manualistica tecnica Hoepli rivolta sia al mondo scolastico sia a quello professio-
+nale, si propone a studenti e professionisti come utile strumento di studio e con-
+sultazione. L’opera è frutto di un imponente lavoro di ricerca e aggiornamento, 
+teso a offrire un’ampia correlazione tra discipline tradizionali (elettrotecnica, 
+macchine e misure elettriche, elettronica) nuove tecnologie (automazione e 
+sistemi BUS) e normativa (in particolare CEI), il tutto accompagnato da esempi 
+di applicazioni reali nel settore impiantistico e della progettazione di sistemi.
+Le 20 sezioni che compongono il manuale affrontano tanto argomenti di 
+carattere generale e propedeutico (tali vanno intese le parti dedicate alle nozioni 
+fondamentali di matematica, chimica e fisica) quanto, e soprattutto, argomenti di 
+interesse specialistico dell’ambito elettrico. In questo senso vanno segnalati, 
+accanto ai tradizionali settori dell’elettrotecnica, dell’elettronica, delle macchine 
+e delle misure, sia la ricchezza della trattazione dedicata ad argomenti tecnolo-
+gici innovativi (uno su tutti le tecnologie BUS) sia l’ampio spazio riservato alle 
+logiche programmabili e ai sensori e trasduttori impiegati nell’automazione indu-
+striale.
+Le sezioni propedeutiche (Matematica, Fisica, Chimica) e tradizionali (Elet-
+trotecnica ed Elettronica, Macchine e Misure elettriche, Impianti e Trazione) 
+sono tutte sviluppate in modo approfondito ed esauriente, e sono puntualmente 
+corredate da tabelle tecniche utili per una rapida consultazione. Così pure la trat-
+tazione riservata ai Segni grafici presenta una panoramica completa e aggiornata 
+dei simboli impiegati negli schemi elettrici.
+Tra le maggiori novità del manuale va segnalata la sezione CAD, in cui è pro-
+posto un vero e proprio corso per la progettazione elettrica con l’ausilio del com-
+puter. In particolare sono sviluppati esempi di dimensionamento elettrico con 
+l’uso alternativo di un programma CAD rispetto ai metodi tradizionali.
+Ugualmente innovativa è la sezione Automazione, che analizza in dettaglio la 
+struttura delle logiche programmabili, ponendo particolare attenzione alle tipolo-
+gie di linguaggi utilizzabili e alla normativa IEC 1131 (CEI 64-50). Vi sono esa-
+minate le parole di istruzione implementate in un PLC, corredate da applicazioni 
+significative. Ingressi e uscite tipicamente collegati alle logiche programmabili 
+sono poi analizzati nella sezione Sensori e trasduttori.
+Da segnalare ancora la presenza di progetti realmente attuati nell’ambito pro-
+fessionale posti a corredo delle sezioni Sistemi e Progettazione elettrica ed elet-
+tronica, come pure, nella sezione Tecnologie BUS, la proposta di un nuovo
+
+[PAG 14]
+sistema di installazione elettrica per gli ambienti domestici e del terziario.
+Il CD-ROM allegato contiene argomenti, esercizi, schemi elettrici e progetti 
+che si prefiggono l’obiettivo di approfondire alcuni degli argomenti sviluppati 
+all’interno del manuale, oltre a presentare il testo di alcune importanti leggi 
+riguardanti la sicurezza negli impianti elettrici. Parte del materiale presente è 
+consultabile con modalità ipertestuale, un’altra parte della documentazione è pre-
+sente in altri formati (pdf, doc, dwg ecc.) per i quali sono richiesti i relativi sof-
+tware di gestione. Infine, vi è inclusa una significativa raccolta di software 
+tecnico, freeware o shareware, utilizzabile sia didatticamente, sia professional-
+mente.
+Oltre a tutti gli autori che hanno partecipato con noi a questa fatica, desideriamo 
+vivamente ringraziare Irene Venturi e Gianfranco Mereu per la preziosa e 
+costante collaborazione prestata alla realizzazione del manuale.
+Giuliano Ortolani   Ezio Venturi
+
+[PAG 15]
+Prefazione alla seconda edizione
+La seconda edizione dell’opera è caratterizzata dalla parziale rielaborazione 
+di alcune sezioni. Mantenendo l’impostazione e i criteri di esposizione della pre-
+cedente edizione, si adeguano le tematiche del Manuale sia all’evoluzione della 
+normativa e della legislazione sia all’evoluzione delle tecniche dell’elettrotecnica 
+e dell’automazione.
+Le sezioni rielaborate sono le seguenti:
+ Sez. IV (Normativa, legislazione e sicurezza). La sezione è stata parzial-
+mente rinnovata aggiornando gli argomenti che fanno riferimento alla normativa 
+e alla legislazione vigenti. Sono stati rielaborati le tabelle riportanti i Comitati 
+tecnici CEI e l’elenco di alcune norme. Inoltre, si sono riportate le indicazioni 
+principali della Direttiva Macchine 2006/42/CE, della Direttiva Bassa Tensione 
+2006/95/CE, della Direttiva Compatibilità Elettromagnetica 2004/108/CE, del 
+D.LGS. n. 81/2008, conosciuto come Testo Unico sulla sicurezza sul lavoro, e del 
+D.M. n. 37 del 22 gennaio 2008 sull’installazione degli impianti elettrici negli edifici.
+ Sez. VI (CAD). Questa sezione è stata rivista; tutta la procedura di disegno 
+con l’ausilio del computer e tutti i riferimenti di comando sono stati aggiornati 
+alla versione 2009 di AutoCad.
+ Sez. X (Impianti elettrici). La sezione è stata rielaborata in parte, elimi-
+nando i riferimenti alla normativa non più in vigore e aggiornando gli argomenti 
+alle correnti norme. Anche alcune tabelle, contenenti dati tecnici di apparecchi 
+elettrici che si sono evoluti con l’attuale tecnologia, sono state aggiornate.
+ Sez. XI (Illuminotecnica). Le innovazioni più importanti apportate in questa 
+sezione riguardano la riclassificazione delle sorgenti luminose, con l’aggiorna-
+mento del loro funzionamento e delle loro principali caratteristiche, e la reimpo-
+stazione delle aree tecniche trattate.
+ Sez. XIII (Sensori e trasduttori). Anche in questa sezione è stata rivista la 
+classificazione dei sensori e dei trasduttori, ampliandola e corredandola di nuove 
+figure e tabelle.
+ Sez. XIV (Automazione). Il contenuto di questa sezione è stato completa-
+mente rivisto anche se ha mantenuto immutata la sua struttura precedente.
+ Sez. XVI (Tecnologie Bus). Gli argomenti di questa sezione sono stati 
+aggiornati ed allineati ai nuovi standard tecnologici e di prodotto.
+ Sez. XIX (Tecnologie elettriche ed elettroniche). La sezione è stata parzial-
+mente rinnovata aggiornando gli argomenti che fanno riferimento alla normativa 
+e alla legislazione vigenti.
+ Sez. XX (Progettazione elettrica ed elettronica). La materia trattata in que-
+sta sezione è stata rivista ed adeguata alle nuove disposizioni legislative e norma-
+tive. In particolare, sono state eliminate le disposizioni non più in vigore e
+
+[PAG 16]
+sostituite con le nuove direttive del D.LGS. n. 81/2008 e del D.M. n. 37 del 22 gen-
+naio 2008.
+Il DVD allegato contiene argomenti, esercizi, schemi elettrici e progetti che si 
+prefiggono l’obiettivo di approfondire un nutrito numero di argomenti sviluppati 
+all’interno del Manuale, oltre a presentare il testo di alcune importanti leggi 
+riguardanti la sicurezza negli impianti elettrici. Il materiale e la documentazione 
+che sono stati allegati hanno formati diversi (pdf, doc, dwg ecc.) per i quali sono 
+richiesti i relativi software di gestione. Nel DVD è inclusa una significativa rac-
+colta di software tecnico, freeware o shareware, che può essere utilizzato sia 
+didatticamente, sia professionalmente.
+Per disporre di aggiornamenti su argomenti e norme tecniche e per consultare 
+capitoli estratti dal manuale si consiglia di visitare il sito www.hoeplieditore.it/
+4456-6.
+Giuliano Ortolani   Ezio Venturi
+
+[PAG 17]
+Sezione I
+Matematica
+INDICE
+pag.
+1   CALCOLO COMBINATORIO  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+1.1   Fattoriale, semifattoriale  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+1.2   Disposizioni semplici di n oggetti  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+1.3   Disposizioni con ripetizione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+1.4   Permutazioni semplici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+1.5   Permutazioni con ripetizione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+1.6   Combinazioni semplici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+1.7   Coefficienti binomiali e loro proprietà . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+1.8   Combinazioni con ripetizione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+2   MONOMI E POLINOMI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+2.1   Monomi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+2.2   Operazioni con i monomi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+2.3   Polinomi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+2.4   Operazioni con i polinomi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+2.5   Prodotti notevoli . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+2.6   Formula binomiale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+2.7   Divisibilità . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+2.8   Divisione di due polinomi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+2.9   Teorema fondamentale dell’algebra . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+2.10   Regola di Ruffini  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+2.11   Massimo comun divisore  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+2.12   Radici di un polinomio . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+2.13   Regola dei segni o di Cartesio  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+3   MATRICI, DETERMINANTI E SISTEMI LINEARI . . . . . . . . . . . . . . . . . . . .
+15
+3.1   Matrici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+3.2   Operazioni con le matrici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+3.2.1   Addizione e sottrazione di matrici  . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+3.2.2   Prodotto di un numero per una matrice . . . . . . . . . . . . . . . . . . . . . .
+18
+3.2.3   Prodotto di due matrici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+3.3   Determinante di una matrice quadrata  . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+3.3.1   Determinante di matrici del 1°ordine. . . . . . . . . . . . . . . . . . . . . . . .
+19
+3.3.2   Determinante di matrici del 2° ordine.  . . . . . . . . . . . . . . . . . . . . . .
+19
+3.3.3   Determinante di matrici di ordine superiore al 2° . . . . . . . . . . . . . .
+19
+3.3.4   Proprietà dei determinanti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+3.3.5   Rango (o caratteristica) di una matrice  . . . . . . . . . . . . . . . . . . . . . .
+21
+3.4   Sistemi lineari  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+3.4.1   Regola di Cramer  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+
+[PAG 18]
+I-2
+MATEMATICA
+3.4.2   Risoluzione di un sistema con m equazioni in n incognite . . . . . . . 
+23
+3.4.3   Sistemi omogenei . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+24
+3.4.4   Metodo di Gauss  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+25
+4   EQUAZIONI, SISTEMI E DISEQUAZIONI  . . . . . . . . . . . . . . . . . . . . . . . . . . 
+26
+4.1   Generalità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+26
+4.2   Equazioni di 1° grado ad una incognita . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+26
+4.3   Equazioni frazionarie  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+27
+4.4   Sistemi di equazioni di 1° grado in due incognite  . . . . . . . . . . . . . . . . . . . 
+27
+4.5   Risoluzione dei sistemi di 1° grado di due equazioni in due incognite  . . . 
+27
+4.6   Disequazioni  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+28
+4.7   Proprietà delle disequazioni  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+28
+4.8   Sistemi di disequazioni  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+29
+4.9   Disequazioni fratte  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+29
+4.10   Equazioni di 2° grado  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+30
+4.11   Disequazioni di 2° grado . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+30
+4.12   Sistemi di 2° grado  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+32
+5   TRIGONOMETRIA  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+32
+5.1   Misura degli angoli in gradi sessagesimali ed in radianti  . . . . . . . . . . . . . 
+32
+5.2   Funzioni trigonometriche e loro rappresentazioni grafiche  . . . . . . . . . . . . 
+33
+5.3   Valori delle funzioni goniometriche di archi particolari  . . . . . . . . . . . . . . 
+34
+5.4   Archi associati . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+34
+5.5   Relazioni tra le varie funzioni trigonometriche . . . . . . . . . . . . . . . . . . . . . 
+36
+5.6   Formule di addizione, duplicazione, bisezione, prostaferesi, formule 
+parametriche e di Werner  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+36
+5.7   Relazioni tra lati ed angoli di un triangolo  . . . . . . . . . . . . . . . . . . . . . . . . 
+37
+5.7.1   Triangolo rettangolo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+37
+5.7.2   Triangolo qualsiasi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+38
+6   GEOMETRIA EUCLIDEA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+39
+6.1   Geometria piana  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+39
+6.2   Geometria solida . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+43
+7   GEOMETRIA ANALITICA NEL PIANO  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+45
+7.1   Coordinate cartesiane nel piano . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+45
+7.2   Cambiamento di coordinate cartesiane  . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+45
+7.3   Coordinate polari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+46
+7.4   Coordinate logaritmiche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+47
+7.5   Distanza di due punti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+48
+7.6   Punto medio di un segmento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+48
+7.7   Rette  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+48
+7.8   Coniche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+50
+7.8.1   Circonferenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+50
+7.8.2   Parabola . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+51
+7.8.3   Ellisse  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+53
+7.8.4   Iperbole  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+54
+8   GEOMETRIA ANALITICA NELLO SPAZIO . . . . . . . . . . . . . . . . . . . . . . . . . 
+55
+
+[PAG 19]
+MATEMATICA
+I-3
+8.1   Coordinate cartesiane ortogonali  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+55
+8.2   Distanza di due punti  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+55
+8.3   Il piano . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+55
+8.4   La retta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+56
+9   VETTORI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+57
+9.1   Somma di vettori  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+57
+9.2   Prodotto di un vettore per uno scalare  . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+58
+9.3   Scomposizione di un vettore secondo due direzioni . . . . . . . . . . . . . . . . . .
+58
+9.4   Componenti cartesiane di un vettore  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+59
+9.5   Prodotto scalare  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+60
+9.6   Vettori nello spazio  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+60
+9.7   Prodotto vettoriale  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+61
+10   NUMERI COMPLESSI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+61
+10.1   Operazioni con i numeri complessi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+62
+10.2   Rappresentazione geometrica dei numeri complessi  . . . . . . . . . . . . . . . .
+63
+10.3   Forma trigonometrica dei numeri complessi  . . . . . . . . . . . . . . . . . . . . . .
+64
+10.4   Operazioni con i numeri complessi in forma trigonometrica  . . . . . . . . . .
+65
+11   FUNZIONI  REALI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+66
+11.1   Intervalli  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+66
+11.2   Intorni di un numero  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+66
+11.3   Punti di accumulazione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+67
+11.4   Funzioni reali di una variabile reale . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+68
+11.5   Classificazione delle funzioni matematiche . . . . . . . . . . . . . . . . . . . . . . .
+71
+11.6   Determinazione del dominio di una funzione . . . . . . . . . . . . . . . . . . . . . .
+71
+11.7   Trasformazioni del grafico di funzioni . . . . . . . . . . . . . . . . . . . . . . . . . . .
+72
+11.8   Grafici di funzioni  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+73
+11.9   Funzioni iperboliche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+76
+11.10   Limiti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+79
+11.10.1   Definizioni di limite  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+79
+11.10.2   Teoremi sui limiti  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+81
+11.10.3   Operazioni con i limiti finiti  . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+82
+11.10.4   Operazioni con i limiti infiniti  . . . . . . . . . . . . . . . . . . . . . . . . . .
+83
+11.10.5   Infinitesimi ed infiniti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+86
+11.11   Funzioni continue . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+88
+11.12   Funzioni inverse e continuità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+91
+11.13   Limiti notevoli . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+92
+11.14   Asintoti  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+93
+12   CALCOLO DIFFERENZIALE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+95
+12.1   Problema delle tangenti  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+95
+12.1.1   Derivabilità e continuità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+96
+12.2   Significato geometrico della d
