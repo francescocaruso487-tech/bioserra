@@ -1,0 +1,1112 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 21/23 ===
+Chars: 44,997 | Offset: 897,416
+
+
+
+9.44 Per un'antenna a dipolo di lunghezza / = 34/2:
+
++ @ si determinino le-direzioni di massima radiazione; - —
+(b) si ricavi l’espressione di Smax;
+(© sitracci il grafico del diagramma di radiazione
+normalizzato F(@);
+(@) si confronti il diagramma tracciato con quello descritto
+in Figura 9.17(0).
+
+9.15: Si risolvano nuovamente i quesiti da (a) a (c) del Problema
+9.14 per un dipolo di lunghezza ! = 34/4.
+
+9.16 Si risolvano nuovamente i quesiti da (a) a (c) del Problema
+9.14 per un dipolo di lunghezza / = A.
+
+*9,17 Un’antenna da automobile è formata da un monopolo
+verticale posto su una superficie conduttiva. Si risolva
+nuovamente il Problema 9.5 nel caso di un’antenna da
+automobile lunga 1 m che funziona alla frequenza di 1
+MHz. [i filo dell’antenna è realizzato in alluminio con
+1 = fg © Oe = 3.5 x 10” Sime il suo diametro è pari a
+lem.
+
+Paragrafi 9.5 e 9.6 Area efficace'e formula
+di Friis
+9.18 Si catcoli l’area efficace di un dipolo a mezz’onda a 100
+
+MHz e la si confronti con l'area geometrica della sua
+sezione quando il filo ha un diametro di 1 cm.
+
+*9,19 Un ponte radio terrestre a 3 GHz è formato da due antenne
+
+paraboliche senza perdite ciascuna delle quali ha diametro
+pari a 1 m. Se l’antenna ricevente necessita di 1 nW di
+potenza ricevuta per garantire una buona ricezione e la
+distanza tra le antenne è 40 km, quanta potenza deve
+essere trasmessa?
+
+9.20 Un’antenna per trasmissione TV formata da un dipolo a
+‘mezz’onda trasmette una potenza di 1:kW a 50 MHz.
+Qual è il valore della potenza ricevutaida un’antenna
+televisiva domestica con 13 dB di guadagno posta alla
+distanza di 30 km?
+
+#9.21 Un ponte radio a 150 MHz è formato da due dipoli
+
+Problemi 43
+
+9.22 Si consideri il sistema di comunicazione descritto in
+Figura 9.37, in cui tutti i componenti del sistema sono
+opportunamente adattati. Se P, = 10 Wef= 6 GHz: ~
+(a) Qual é il valore della densità di potenza all’antenna
+ricevente, supponendo le antenne perfettamente allineate?
+{b) Qual è il valore della potenza ricevuta?
+
+(©) Se Ty; = 1000 K e la banda passante del ricevitore è
+pari a 10 MHz, qual è il valore del rapporto segnale»
+rumore in dB?
+
+Paragrafi 9.7 e 9.8 Radiazione da parte
+di aperture
+
+*9,23 Un’apertura uniformemente illuminata ha lunghezza
+J, = 20). Si calcoli l’ampiezza del lobo principale tra i
+primi zeri nel piano x — z.
+
+9.24 L'ampiezza a 10 dB è l’ampiezza del lobo principale
+compresa tra gli angoli nei quali F(6) è inferiore di 10 dB
+al suo valore di picco. Si calcoli l'ampiezza a 10 dB nel
+piano x — 2 di un'apertura uniformemente illuminata di
+lunghezza J, = 104.
+
+*9.25 Un’apertura rettangolare uniformemente illuminata situata
+
+nel piano x — y è alta 3 m lungo x e larga 1.m lungo y, Se
+f = 10 GHz, si calcoli quanto segue:
+(a) le ampiezze del lobo principale nel piano di elevazione
+(piano x — 2) e nel piano azimutale (piano y — 2);
+(b) la direttività D in dB.
+9.26 Un’antenna ad apertura circolare ha un lobo principale di
+forma circolare con ampiezza di 1.5° a 20 GHz.
+(a) Qual è la direttività dell’antenna in dB?
+(b) Se si raddoppia l’area dell'antenna, quali sono i nuovi
+valori della direttività e dell’ampiezza del lobo?
+(€) Se l’apertura mantiene le dimensioni del punto (a) ma
+la frequenza viene raddoppiata a 40 GHz, quali saranno in
+tal caso i valori della direttività e dell’ampiezza del lobo?
++9.27 Un radar anticollisione automobilistico a 94 GHz impiega
+un'antenna ad apertura rettangolare posizionata sopra il
+paraurti, Se l'antenna è lunga 1 me alta 10 cm, si calcoli
+quanto segue:
+
+*9.5 Un'antenna a dipolo lunga 2 m alimentata ai centro
+
+funziona nella banda di radiodiffusione AM alla frequenza
+dil MUz. Il dipolo è realizzato con un filo di rame di
+raggio pari a l mm.
+
+(a) Si calcoli il rendimento dell’antenna.
+
+(b) Qual è il guadagno dell'antenna in dB?
+
+(©) Qual è il valore della corrente di alimentazione
+uecessaria affinché l’antenna irradii 20 W di potenza e
+quanta potenza dovrà fomire il generatore all’antenna?
+
+9.6 Si risolva nuovamente i! Problema 9.5 per un'antenna
+lunga 20 cm che funziona a $ MHz.
+
+39.7 Un’antenna con un angolo solidotequivalente di 1.5 (sr)
+irradia 30 Ww di potenza, Qual è la massima densità di
+potenza imadiata dall’antenna alla distanza di 1 km?
+
+98 Un’antenna con rendimento pari al 90% ha una direttivita
+di 6.7 dB. Qual è il suo guadagno in dB?
+
+*9.13 Per un dipolo corto di lunghezza / tale che / < A, invece
+
+di considerare costante la corrente /{z)- lungo il dipolo,
+come si è fatto nel Paragrafo 9.1, si può applicare
+‘un’approssimazione più realistica che garantisce che la
+corrente si annulli alle estremità descrivendo /(z) mediante
+la funzione triangolare
+
+i = {ee —2z/f), per0<z<1/2
+I(1+22/1), per -i/2<z<0
+
+come descritto in Figura 9.36. Si applichi questa
+distribuzione di corrente per calcolare quanto segue:
+{a) il campo lontano È(R,9,6);
+
+@®) la densità di potenza S(R, @, 6);
+
+(©) la direttività D;
+
+(@) la resistenza di radiazione Rpg.
+
+Si verticali a mezz'onda separati da una distanza di 2 km. Le
+
+antenne sono prive di perdite, il segnale occupa una banda
+di 3 MHz, la temperatura di rumore del ricevitore è di 600
+Ke il rapporto segnale-rumore desiderato è di 20 dB. Qual
+è il valore della potenza di trasmissione richiesta?
+
+G:=20 dB G;=23dB
+
+pr WMA [Pre
+
+Figura 9.37 Sistema di comunicazione del Problema 9.22.
+
+{a) le ampiezze del lobo in elevazione e in azimuth,
+{b) l'estensione orizzontale del fascio ixradiato a una
+distanza di 300 m.
+
+9.28 Un radiotelescopio a microonde formato da un ricevitore
+molto sensibile collegato a un'antenna parabolica di 100 m
+di diametro è impiegato per misurare l'energia irradiata
+dagli oggetti celesti alla frequenza di 10 GHz. Se il lobo
+principale dell'antenna viene diretto verso la luna e la
+luna, vista dalla Terra, ha un'estensione angolare piana
+pari a 0.5°, quale frazione della sezione trasversa della
+luna sarà occupata dal lobo?
+
+Paragrafi da 9.9 a 9.11 Schiere d’antenne
+
+*9.29 Una schiera a due elementi formata da due antenne
+
+isotrope separate da una distanza d lungo Passe z è situata
+in un sisteroa di riferireento il cui asse z punta verso est €
+
+[PAG 215]
+alae Capitolo:9 — Radiazione e antenne
+
+il cui asse x punta verso io zenith. Se aq e a; sono le
+
+ampiezze delle eccitazioni delle antenne rispettivamente in
+
+z= Deinz= de sedè la fase-dell’eccitazione
+
+dell'antenna in z = d relativamente all’altra antenna, si
+
+calcoli il fattore di schiera e si tracci il diagramma di
+
+radiazione nel piano x — z nei casi seguenti:
+——7@us=u=t6="%n/#6d=X/2;
+
+(b) 40=1,01=2,5=0e4=);
+
+© m=, =1,6 n/2ed= X/2;
+
+@ a = 1a, =2,6 /4ed = 2;
+
+© a=1a =2,6=n/2ed = d/4.
+
+9.30 Nel caso in cui le antenne considerate al ‘punto (a) del
+Problema 9.29 siano dipoli verticali hertziani paralleli con
+gli assi rivolti in direzione dell’asse x, si calcoli l'intensità
+di radiazione normalizata nel piano x —- z e se ne tracci il
+grafico.
+
+*9.31 Si consideri la schiera di due dipoli descritta in Figura
+9.29(a): se i dipoli sono eccitati con uguali coefficienti di
+alimentazione, cioè ag = a, =1e%0= i = 0, si scelga
+d/A in modo che il fattore di schiera sia massimo per
+O= 45°,
+
+9.32 Si scelga 4/4 in modo che il diagramma di radiazione
+della schiera descritta ne! Problema 9.31 abbia uno zero in
+8 = 45°, piuttosto che un massimo.
+
+*9.33 Si calcoli e si grafichi il fattore di schiera normalizzato e si
+ricavi l'ampiezza a metà potenza di una schiera rettilinea a
+cinque elementi eccitati con uguali fasi e distribuzione di
+ampiezza uniforme. Lo spazio tra un elemento e l’altro è
+pari a 34/4.
+
+TS
+
+MA
+: 2/0.
+MA
+i 1 Aa
+
+Figura 9.38 Schiera di tre elementi del Problema 9.34.
+
+9.34 Una schiera rettilinea a tre elementi è formata da sorgenti
+isotrope allineate fungo l’asse z spaziate di /4 (Figura
+9.38). L'ampiezza dell’eccitazione dell'elemento centrale è
+doppia rispetto agli elementi superiore e inferiore, mentre
+le fasi, relativamente a quella dell’elemento centrale, sono
+—/2 per Pelemento inferiore e 7/2 per l'elemento
+superiore. Si calcoli il fattore di schiera e se ne tracci il
+grafico nel piano di elevazione.
+
+*9.35 Una schiera rettilinea è formata da otto elementi spaziati di
+
+A/2 ed eccitati con ampiezze uguali. Per orientare il lobo
+principale in una direzione 60° al di sotto di quella
+trasversale, quale deve essere lo sfasamento progressivo
+tra elementi adiacenti? Inoltre, si ricavi l'espressione del
+fattore di schiera e se ne tracci il diagramma.
+
+9.36 Una schiera rettilinea allineata lungo l’asse z è formata da
+12 elementi equispaziati con d = /2. Si scelga
+opportunamente lo sfasamento progressivo 6 in modo da
+orientare il lobo principale verso una direzione 30° al di
+sopra di quella trasversale. Si ottenga l’espressione dei
+fattore di schiera dell’antenna in questa situazione e se ne
+tracci il diagramma. Si stimi mediante il diagramma
+l’ampiezza del lobo principale,
+
+CAPITOLO
+
+10
+
+Sistemi di comunicazione
+via satellite e radar
+
+Esempi applicativi
+
+Questo capitolo conclusivo presenta una discussione generale sui principi di funzio
+namento dei sistemi di comunicazione via satellite e dei sensori radar, con particolare
+attenzione agli argomenti legati all’elettromagnetismo.
+
+10.1 Sistemi di comunicazione via satellite
+
+in cui viviamo è interconnesso da una vasta rete di comunicazione che for-
+Lione mpia gamma di servizi in voce, dati e video a terminali sia fissi che mobili,
+come esemplificato in Figura 10.1. La realizzabilita e l’efficacia della rete sono È
+gran parte dovute all’uso di satelliti in orbita che fungono da ponti radio in grado
+coprire vaste aree della superficie terrestre. Un satellite posizionato in orbita goose
+zionaria a 35786 km sopra l’equatore ha visibilità su più di un terzo della sup i fe
+terrestre ed è in grado di collegare tra loro qualsiasi coppia di luoghi all interno dell
+sua area di copertura {Figura 10.2]. La storia dell’ingegneria delle comunicazioni via
+satellite iniziò alla fine degli anni *50, quando la U.S. Navy utilizzò la luna come Hi
+flettore passivo per ritrasmettere comunicazioni a bassa velocità tra Washington vai
+Hawaii. Il primo importante sviluppo nel campo dei satelliti artificiali terrestri si ebbe
+nell’ottobre del 1957, quando l'Unione Sovietica lanciò lo Sputnik I, che per 21 gor
+ni trasmise a terra informazioni di telemetria. Esso fu poi seguito da un altro satellite
+per telemetria; l’Explorer I, che fu lanciato dagli Stati Uniti nel gennaio del 1958,
+mentre a dicembre dello stesso anno il satellite Score fu lanciato e usato per fast
+tere il messaggio di Natale del presidente Eisenhower, realizzando per la prima volta
+la comunicazione vocale bidirezionale mediante un satellite artificiale.
+
+ED
+
+‘Mobile
+feet Ma
+[x fissa
+
+terrestre
+
+Figura 10.1 Elementi di una rete di comunicazione via satellite.
+
+[PAG 216]
+AG
+
+Capitolo:10 = Sistemi di comunicazione via satellite e radar
+
+227 \Orbita
+i geostazionaria
+(a) Orbita satellitare geostazionaria
+
+(b) Copertura mondiale con tre
+satelliti spaziati di 120°
+
+Figura 10.2 Orbite dei satelliti geostazionari.
+
+Questi successi furono seguiti da una frenetica attività spaziale, che portò allo svilup-
+po di satelliti per comunicazioni da parte di molte nazioni per servizi commerciali e
+governativi. Questo paragrafo offre una panoramica delle comunicazioni via satellite,
+con considerazioni sul calcolo del bilancio di potenza in trasmissione e in ricezione,
+sulle caratteristiche di propagazione delle onde, sulle allocazioni di frequenza e sul
+progetto dei sistemi d’antenna.
+
+Un satellite é detto in orbita geostazionaria attorno alla Terra quando si trova in or-
+bita circolare. in un piano coincidente con il piano equatoriale terrestre, a un’altitudi-
+ne tale che il periodo orbitale sia uguale al periodo di rotazione della Terra. Un satel-
+woes di se i in orbita circolare attomo alla Terra, come descritto in Figura 10.3, è
+
+etto a due forze, una forza gravitazi i i
+I moduli delle due-forze sono dat da azionate Fe ¢ una forza centrifuga rpulsiva
+
+GMM,
+Fa= È (10.1)
+Mya
+Fou = Mu Ry, (10.2)
+A
+
+dove G = 6.67 x 10-!! (N. m?/kg?) è la costante di gravitazione universale
+Ma = 5.98 x 1024 kg è la massa della Terra, Ro è la distanza tra il satellite e il centro
+della Terra e u, è la velocità del satellite. Nel caso di un oggetto in rotazione si ha
+us = WRo, dove w è la velocità angolare. Affinché il satellite rimanga in orbita, le due
+forte Opposte che agiscono su di esso devono essere ‘uguali in modulo, ovvero
+
+MM.
+
+G
+8
+
+= MsPRo, (10.3)
+
+10.1 Sistemi di comunicazione via satellite
+
+Orbita
+
+Vani
+POM,
+
+h= 35,786 km
+
+TH 619 \
+Ta qnassima = al
+
+Ro=Re + h = 42,164 km
+
+Re = 6,378 km
+all’equatore
+Figura 10.3 Un satellite di massa m, orbita attorno alla Terra; perché si trovi in orbita
+geostazionaria, la distanza Ro tra il satellite e il centro della Terra deve essere uguale a
+
+42 164 km, che all’equatore corrisponde a un'altitudine di 35786 km rispetto alla superficie
+terrestre.
+
+da cui si ottiene come soluzione ii valore di Ro dato da
+
+Ro = je) (10.4)
+
+w
+
+Perché il satellite rimanga fermo rispetto alla superficie terrestre, la sua velocità ango-
+lare deve essere uguale alla velocità angolare di rotazione della Terra attorno al pro-
+prio asse. Pertanto
+
+(10.5)
+
+dove T è la durata in secondi di un giorno sidereo. Esso tiene conto-del moto di rivo-
+luzione della Terra attorno al sole e dura 23 ore, 56 minuti e 4.1 secondi. Applicando
+la (10.5) nella (10.4) si ha
+
+_ (GMT!
+= (SE) , (10.6)
+
+e sostituendo i valori numerici di T, M, e G'si ottiene Ro = 42164 km. Sottraendo il
+raggio medio della Terra all’equatore, pari a 6378 km, risulta un'altitudine
+A = 35786 km sulla superficie terrestre.
+
+Vista dall’orbita geostazionaria, la Terra sottende un angolo di 17.4° che copre un
+arco di circa 18000 km lungo l’equatore, a cui corrisponde un angolo di longitudine
+di circa 160°. Utilizzando tre satelliti equispaziati in orbita geostazionaria sopra l’e-
+quatore terrestre si può ottenere la copertura globale completa di tutto il piano equa-
+toriale, con una significativa sovrapposizione delle aree di copertura dei tre satelliti.
+Per quanto riguarda la copertura verso i poli, un fascio a illuminazione globale può
+raggiungere stazioni terrestri fino a 81° di latitudine su entrambi gli emisferi.
+
+Non tutti i sistemi di comunicazione di questo tipo sfruttano satelliti in orbita geo-
+stazionaria: a causa di limitazioni nelia potenza di trasmissione o per altre considera-
+zioni è a volte necessario lavorare ad altitudini molto più basse, nel qual caso, per
+soddisfare la legge di Keplero, il satellite deve essere posizionato su un’orbita forte-
+mente ellittica tale che, nel tratto dell’orbita vicino al perigeo, esso si trovi a una di-
+stanza di poche centinaia di chilometri dalla superficie terrestre.. Mentre bastano tre
+
+-\-geostazionaria~~ - ——--— ~-— — 0
+
+us = 11,070 (km/hr)
+
+[PAG 217]
+418
+
+Capitolo 10 — Sistemi di comunicazione via satellite e radar
+
+satelliti geostazionari per garantire la copertura globale della superficie terrestre,
+quando si utilizzano satelliti in orbita fortemente ellittica ne serve un numero molto
+maggiore, 7 se ~ °
+
+10.2. Transponder satellitari
+
+Tabella 10.1 Allocazioni di frequenza dei satelliti per telecomunicazioni.
+
+Utilizzo Sottobanda di downlink Sottobanda di uplink
+{MHz} (Miz)
+Servizio fisso
+Commerciale (banda C) . 3700-4200 5925-6425
+Militare (banda X) 7250-7750 7900-8400
+Commerciale (banda Mi
+Domestico (USA) 11700-12200 14000-14500
+Internazionale 10950-11200 27500-31 000
+Servizio mobile
+Maritimo 1835-1542.5 1635-1644
+Aeronautico 1543.5-1558.8 1645-1660
+Servizio di radiodiffusione
+2800-2535 2655-2690
+11700-12750
+
+- Telemetria, inseguimento e comando
+137-138, 401-402, 1525-1540
+TT Oo ee Bee
+
+Un satellite per telecomunicazioni svolge le funzioni di un ripetitore a grande distan-
+
+| che riceve i segnali dalle stazioni terrestri sulla tratta di uplink, li elabora e quindi
+li ritrasmette verso le rispettive destinazioni a terra sulla tratta di downlink. L'Unione
+Internazionale per le Telecomunicazioni (ITU) ha allocato bande specifiche per le te-
+lecomunicazioni via satellite, elencate in Tabella 10.1: tra queste bande, quelle più
+usate dalla maggior parte dei satelliti commerciali statunitensi per le comunicazioni
+nazionali sono la banda dei 4/6 GHz (da 3.7 a 4.2. GHz in downlink e da 5.925 a
+6.425 GHz in uplink) e la banda dei 12/14 GHz (da 11.7 a 12.2 GHz in downlink e
+da 14.0 a 14.5 GHz in uplink), Per ciascuna sottobanda di uplink e di downlink sono
+allocati 500 MHz di banda; utilizzando sottobande diverse per l’uplink da Terra a sa-
+tellite e per il downlink da satellite a Terra, si possono utilizzare le stesse antenne per
+svolgere entrambe le funzioni e allo stesso tempo garantire l’assenza di interferenze
+tra i due segnali. Di solito per il downlink si usa la sottobanda a frequenza inferiore,
+in quanto le frequenze più basse subiscono minore attenuazione da parte dell’atmo-
+Sfera terrestre e dunque consentono di rendere meno stringenti i requisiti sulla poten-
+Za trasmessa dal satellite.
+
+La banda dei 4/6 GHz verrà presa a modelo per semplificare la discussione sul
+funzionamento del ripetitore via satellite, tenendo presente che la struttura funzionale
+del ripetitore è fondamentalmente la stessa a prescindere dalla particolare banda uti-
+lizzata.
+
+La Figura 10.4 mostra uno schema a blocchi generale di un ripetitore a 12 canali
+del tipo comunemente implementato sui satelliti per telecomunicazioni. Ii circuito re-
+lativo a ciascun canale, che parte dal punto in cui il canale viene ricevuto dall’anten-
+na} attraversa il ripetitore e termina nel punto in cui viene ritrasmesso dall’antenna
+Stessa, è chiamato transponder. La banda disponibile di 500 MHz viene allocata a 12
+canali, a ciascuno dei quali corrisponde un transponder, con una banda passante di
+36 MHz per canale e una banda di guardia di 4 MHz tra canali adiacenti. Le funzioni
+
+10.2 Transponder satellitari
+
+Ricevitore a larga banda
+ATTI
+
+* Oscillatore locale
+
+a
+i 1
+1 '
+! fy= 10,105 MHz
+'
+%=5,921- 6,403 MHz ! ho
+' '
+' 1
+Filtro passa banda 1 Fa fi 1
+di ricezione ia INT ) Ampi
+5,900 - 6425MHz] | mixer '
+1
+
+Antenna
+
+i = 3,702 ~ 4,178 MHZ
+
+Amplificatore |__ Filtro passa banda
+di potenza 4,142 - 4,178 MHz
+
+|
+
+bo
+
+Multiplexer d'uscita
+
+Filtro passa banda
+3,702 - 3,738 MHz
+
+Figura 10.4 Elementi di un sistema di comunicazione (transponder) a 12 canali.
+
+principali di ciascun transponder sono isolamento tra i canali a radiofrequenza adia-
+centi, la conversione di frequenza e l'amplificazione. Impiegando la tecnica ad acces-
+so multiplo a divisione di frequenza (frequency-division multiple access 0 FDMA),
+uno schema comunemente usato per la trasmissione delle informazioni, ciascun tran-
+sponder può contenere migliaia di canali telefonici all’interno dei propri 36 MHz di
+banda passante (il segnale vocale telefonico richiede una banda minima di 3 KHz e
+l’intervallo nominale di frequenza comunemente impiegato è di 4 KHz per canale),
+diversi canali TV (ciascuno dei quali richiede una banda di 6 MHz), milioni di bit di
+dati numerici oppure varie combinazioni di tutti e tre i tipi di traffico. o.
+
+Quando si utilizza Ja stessa antenna sia per la trasmissione che per la ricezione, la
+separazione tra i due segnali si realizza mediante un duplexer. I duplexer esistono di
+vari tipi, ma uno tra i più semplici da comprendere è il circolatore descritto in Figura
+10.5. Un circolatore è un dispositivo a tre porte che impiega un materiale composto
+da ferrite immerso nel campo magnetico indotto da un magnete permanente per inca-
+nalare il flusso di potenza entrante dalla porta 1 verso la porta 2, dalla 2 alla 3 e dalla
+3 alla 1, ma impedire il flusso in direzione opposta. Quando l’antenna è collegata alla
+porta 1, il segnale ricevuto viene diretto esclusivamente verso la porta 2: se la porta 2
+è opportunamente adattata al filtro passa banda, nessun segnale verrà riflesso dalla
+porta 2 alla 3. Ii segnale trasmesso viene applicato alla porta 3 in modo che il circola-
+tore lo incanali verso la porta ! affinché venga irradiato dall'antenna. .
+
+Dopo aver superato il duplexer in Figura 10.4, il segnale ricevuto attraversa il filtro
+passa banda di ricezione, che garantisce l'isolamento tra il segnale ricevuto e quello
+trasmesso. Il filtro copre la banda tra 5925 e 6425 GHz, che comprende l'insieme
+delle bande passanti dei 12 canali: il primo canale di ricezione si ‘estende da 5927 a
+5963 MHz, il secondo da 5967 a 6003 MHz e cosi via fino al dodicesimo, che copre
+la banda da 6367 a 6403 MHz. Il componente successivo del sistema è il ricevitore a
+larga banda, formato da tre elementi: un amplificatore a larga banda e a basso rumo-
+
+rey »
+
+pr
+D
+
+Multiplexer d’ingresso
+
+[PAG 218]
+420
+
+_ Figura 10:5- -
+Principio di
+funzionamento di un
+circolatore a ferrite.
+
+Figura 10.6
+
+La diversità di
+polarizzazione viene usata
+per aumentare il numero
+dei canali da 12 a 24.
+
+Capitolo. 10 ~ Sistemi. di comunicazione via satellite e radar
+
+Circolatore
+
+Segnale ricevuto
+
+Dai multiplexer
+d'uscita
+
+re, un convertitore di frequenza e un amplificatore d’uscita. Il convertitore di frequen-
+za è formato da un oscillatore locale stabile che genera un segnale alla frequenza
+So = 10105 MHz, collegato a un mixer non lineare per microonde. Il mixer converte
+la frequenza f; del segnale ricevuto, che copre ia banda da 5927 a 6403 MHz, a una
+frequenza più bassa fi = fy — fi. Pertanto, l’estremità inferiore della banda di ricezio-
+ne viene convertita da 5927 a 4178 MHz e l'estremità superiore viene convertita da
+6403 a 3702 MHz. Da questo processo si ottengono 12 canali su nuovi intervalli di
+frequenza, ma i cui segnali trasportano la stessa informazione, cioè lo stesso invilup-
+po di modulazione, presente nei segnali ricevuti. Il segnale in uscita dal ricevitore po-
+trebbe ora essere amplificato e diretto all’antenna mediante il duplexer, in modo da
+essere trasmesso verso terra; invece i canali relativi ai 12 transponder vengono sepa-
+rati da un mulfiplexer seguito da un banco di filtri a banda stretta, ciascuno dei quali
+copre la banda passante di un canale. Ciascuno dei 12 canali viene amplificato da un
+proprio amplificatore di potenza (high-power amplifier o HPA), e tutti i canali sono
+poi ricombinati da un altro multiplexer che trasferisce il segnale complessivo al du-
+plexer. Il procedimento di separazione e ricombinazione dei canali è impiegato come
+misura di sicurezza, in modo da non perdere tutti e 12 i canali nel caso in cui Pampli-
+ficatore di potenza subisca un degrado nelle prestazioni o un guasto.
+
+La capacità di un satellite di veicolare informazioni può essere raddoppiata da 12 a
+24 canali sulla stessa banda passante di 500 MHz impiegando la tecnica a diversità di
+polarizzazione. Per esempio, invece di trasmettere da 5927 a 5963 MHz un solo cana-
+le di informazione, la stazione di terra trasmette verso il satellite due segnali che tra-
+sportano informazioni diverse e coprono la stessa banda passante, ma con polarizza-
+zioni dell'antenna diverse, per esempio uno di essi in polarizzazione circolare destror-
+sa (right-hand circular o RHC) e l’altro in polarizzazione circolare sinistrorsa (left-
+hand circular o LHC). In questo caso l’antenna sul satellite è dotata di un sistema di
+alimentazione in grado di ricevere separatamente i segnali in ciascuna delle due pola-
+rizzazioni circolari con interferenza reciproca trascurabile. Questo schema impiega
+due duplexer, uno collegato al sistema di alimentazione in polarizzazione RHC e l’al-
+tro al sistema di alimentazione in polarizzazione LHC, come descritto in Figura 10.6.
+
+Dal multiplexer d’uscita
+(canali 1-12)
+
+Duplexer
+
+Al ricevitore
+(canali 13-24)
+a Dai multiplexer d'uscita
+
+(canali 13-24)
+
+Al ricevitore
+(canali 1-12)
+
+RHC
+
+aes
+
+10.3. Bilancio di potenza del collegamento radio.
+
+10.3 Bilancio di potenza del collegamento radio
+
+i di upli ink di i i 10.7] sono en-
+I segmenti di uplink e downlink di un collegamento satellitare [Figura
+trambi descritti dalla formula di trasmissione di Friis illustrata nel Paragrafo 9.6, che
+afferma che la potenza P, ricevuta da un’antenna con guadagno G; € dovuta alla tra-
+smissione di una potenza P, da parte di un’antenna con guadagno G situata a una di-
+stanza R è data da
+
+a (107)
+P,= P.GG; (È) . .
+
+L’espressione data dalla (10.7) vale per mezzi senza perdite, come per esempio lo
+spazio libero. Per tener conto dell’attenuazione atmosferica aggiuntiva quando il per
+corso di propagazione attraversa nuvole e pioggia e dell’assorbimento da paste di de-
+terminati gas, principalmente ossigeno e vapor d’acqua, si deve riscrivere la (10.7)
+nella forma seguente:
+
+Xr 2
+Pi =TO)P = ronac, (Az) , (10.8)
+ve ora Px rappresenta la potenza in ingresso al ricevitore in presenza di perdite at
+do To) è la trasmittività unidirezionale dell'atmosfera in funzione del-
+Pangolo zenitale 0. Oltre a dipendere da 0, T(0) è funzione della frequenza delle on-
+de trasmesse sul collegamento e dell’intensita della pioggia lungo il percorso di go:
+pagazione. A frequenze inferiori a 10 GHz, che comprendono la banda dei 4/6 i
+utilizzata per le comunicazioni via satellite, Passorbimento da parte dei gas atmosfe-
+rici è molto basso e anche l’attenuazione da nuvole oda pioggia è relativamente bas-
+sa: di conseguenza il modulo di T(6) nella maggior parte dei casi è variabile all in-
+circa tra 0.5 e 1. Una trasmittivita di 0.5 indica che, rispetto al caso nello spazio libe-
+ro, è necessario trasmettere una potenza doppia per ottenere lo stesso Livello di se-
+gnale ricevuto. Tra le varie cause di attenuazione atmosferica quella più importante
+è la pioggia, e il suo coefficiente :di attenuazione aumenta rapidamente al crescere
+della frequenza. Di conseguenza, per definire i requisiti di potenza trasmessa Patte-
+nuazione atmosferica riveste un’importanza sempre maggiore man mano che si uti-
+lizzano frequenze di trasmissione appartenenti a bande più elevate nello spettro delle
+microonde.
+
+Satellite È
+
+Guadagno Guadagno
+dell'antenna dell'antenna
+ricevente Gsr © \ trasmittente Gs
+
+è,
+SD
+Uplink Se 2% Downlink
+re
+se 3%
+gv È
+ee &%
+Se Sa.
+SS De:
+
+Stazione
+a terra
+
+DI
+
+Figura 10.7
+Transponder satellitare.
+
+[PAG 219]
+422
+
+Capitolo 10 — Sistemi di comunicazione via satellite è radar
+
+Il rumore Pro presente all’uscita del ricevitore è formato da tre contributi: (1) rumore
+
+_. Benerato internamente.ai circuiti del ricevitore; (2)-rumore-captato dall’antenna a cau-
+
+sa di sorgenti esterne e (3) rumore dovuto all’emissione termica da parte del materia-
+Je con cui è costruita l'antenna. La combinazione di tutte le sorgenti di rumore si può
+rappresentare mediante la temperatura di rumore del sistema equivalente T,,,, defini.
+ta come segue:
+
+Pro = GueKTssB, (10.9)
+
+dove K è la costante di Boltzmann, Gree è il guadagno in potenza del ricevitore e B è
+la sua larghezza di banda. Il livello di rumore in uscita è lo stesso che apparirebbe al-
+Puscita di un ricevitore privo di rumore con in ingresso un livello di potenza di rumo-
+re pari a
+P,
+
+Pa = Ge
+Il rapporto segnale-rumore è definito come il rapporto tra la potenza di segnale e la
+potenza di rumore all'ingresso di un ricevitore equivalente privo di rumore. Dunque
+
+_ Pa _ TORGG, ( A \°
+= a id (ak): (001)
+
+= KTgsB. (10.10)
+
+Le prestazioni di un sistema di telecomunicazioni sono influenzate da due gruppi di
+fattori. Il primo gruppo comprende le tecniche di elaborazione dei segnali impiegate
+per codificare, modulare, combinare e trasmettere il segnale da parte del trasmettitore
+€ per ricevere, separare, demodulare e decodificare il segnale da parte del ricevitore. I
+secondo gruppo di fattori è costituito dai guadagni e dalle perdite che caratterizzano il
+collegamento radio, e questi sono rappresentati mediante il rapporto segnale-rumore
+Sn. Fissate le tecniche di elaborazione dei seguali, Sn determina la qualità del segnale
+ricevuto, espressa dal tasso di errore sul bit in caso di trasmissione di dati numerici op-
+pure dalla qualità dell’immagine in caso di trasmissioni audiovisive. Per avere un’ele-
+vata qualità di trasmissione dei segnali è necessario avere valori elevati di Sn: alcuni
+sistemi di trasmissione televisiva satellitare con qualità commerciale sono progettati
+per fomire valori di Sy superiori a 50 dB, corrispondenti a un fattore di 105. ©.
+
+Le prestazioni di un collegamento satellitare dipendono dalla prestazione comples-
+siva delle tratte di uplink e downlink. Se una delle tratte ha prestazioni scadenti lo sa-
+rà anche la prestazione complessiva, a prescindere dalla bontà dell’altra tratta. Per
+questa ragione i calcoli sul bilancio di potenza del sistema vengono svolti separata-
+mente per ciascuna tratta. ll
+
+10.4 Antenne
+
+Mentre la maggior parte delle antenne delle stazioni a terra devono avere lobi forte-
+mente direttivi per evitare interferenze, il sistema di antenna sul satellite viene proget
+tato in modo da fornire lobi modeliati a misura delle regioni coperte dal satellite. Per
+avere copertura globale è richiesta un’ampiezza del lobo principale di 17.4°; per con-
+tro, in caso di ricetrasmissione su regioni di estensione limitata possono essere neces-
+sarie ampiezze dell’ordine di 1° 0 inferiori, come descritto in Figura 10.8. Un’anten-
+na con un’ampiezza 8 del lobo pari a 1° produce un fascio che copre una regione del-
+la superficie terrestre di circa 630 km di diametro.
+
+L'ampiezza del lobo è strettamente legata al guadagno dell’antenna e dunque an-
+che ai requisiti di potenza del trasmettitore. Il guadagno G dell'antenna è legato alla
+
+{0.4 Antenne
+
+ttività i èi i è legata all’ampiezza 8
+irettività ediante la G = ED, dove € è il rendimento, e Dè i piezza 8
+dizione approssimata data dalla (9.26). Nel caso di un lobo a simmetria circo- .
+lare si ha
+Ax
+G=£ E: (10.12)
+
+i ianti ? i = 1), un lobo a coper-
+è espressa in radianti. Per un’antenna senza perdite (£ sun | per
+peal api B = 17.4° = 0.3 rad corrisponde a un guadagno G = 136, equiva:
+lente a 21.3 dB. Un lobo stretto di ampiezza pari a 1°, d’aitra parte, corrisponde
+i 253, ovvero 46.2 dB. o. . sa
+nni ee necessità delle varie funzioni di comunicazione associate ai siste-
+mi satellitari si usano quattro tipi principali di antenne:
+1. Dipoli ed eliche in VHF e in UHF per funzioni di telemetria, inseguimento e co-
+2 Rate a tromba e piccole antenne paraboliche, 2 a e soba.
+i centimetri, per produrre lobi di ampiezza elevata adatti alla copertura g! di
+3 eater parabolic? Muminati da una o più rr ; tromba per la copertura re:
+ionale [Fi 10.8(a)] o multilobo (Figura 1 .8(b)); i
+4 Schiere Pine formate da molti elementi radiant ti per ottenere copertura multi
+° lobo e anche per l'orientamento e la scansione dei lobi.
+
+(a) Copertura regionale
+
+Aree di copertura
+
+Trasmettitori e antenne
+SS a tromba indipendenti
+
+(b) Copertura multilobo
+
+1 RG. Meadows e AJ. Parsons, Satellite Communications, Hutchinson Publishers, Londra,
+
+1989.
+
+43
+
+Figura 10.8
+
+Sistemi di antenne
+satellitari a lobo singolo e
+multilobo per la copertura
+di aree delimitate sulla
+superficie terrestre.
+
+[PAG 220]
+© "424
+
+Capitolo 10 — Sistemi di comunicazione via satellite è radar
+
+Domande di verifica
+
+"£01 Quali sono i vantaggi e gli svantaggi delle orbite ellittiche rispetto all'orbita
+
+geostazionaria?
+
+10.2 Perché i sistemi di telecomunicazioni via satellite impiegano frequenze diverse
+per le tratte di uplink e downlink? Quale tratta utilizza Je frequenze più elevate
+e perché?
+
+10.3. In che modo si può sfruttare la polarizzazione dell’antenna per aumentare il nu-
+mero di canali di un sistema di telecomunicazioni?
+
+10.4 Quali sono le sorgenti di rumore che contribuiscono alla temperatura di rumore
+
+© di sistema complessiva di un ricevitore?
+
+10.5 Sensori radar
+
+Il termine radar è un’abbreviazione dell’espressione radio detection and ranging
+(radio rivelazione e localizzazione), che esprime alcune caratteristiche di un sistema
+radar modemo, ma non tutte, Storicamente, i sistemi radar sono stati sviluppati e uti-
+lizzati dapprima a frequenze radio, compresa la banda delle microonde, ma ora sono
+disponibili anche radar laser, o lidar, che funzionano lunghezze d’onda ottiche. Nei
+corso degli anni il termine radar ha perso il suo significato originario e ora indica un
+qualsiasi sensore elettromagnetico attivo che sfrutta una sorgente propria per illumi-
+nare una regione di spazio e quindi misura gli echi prodotti dagli oggetti riflettenti
+contenuti nella regione illuminata. Oltre a rivelare la presenza di un oggetto rifletten-
+te e a determiname la distanza misurando il ritardo di propagazione di impulsi di bre-
+ve durata trasmessi a questo scopo, il radar è ariche in grado di determinare la posi-
+zione (o direzione) del bersaglio e la sua velocità radiale. La misura della velocità ra-
+diale di un oggetto in movimento, cioè del componente del vettore velocità dell’og-
+getto parallelo alla direzione diretta dall’oggetto al radar, si ottiene misurando la de-
+viazione di frequenza per effetto Doppler causata dall’oggetto in movimento; essa è
+uguale alla differenza tra le frequenze dei segnali trasmesso e riflesso. Inoltre, l’inten-
+sità e la forma dell’impulso riflesso forniscono informazioni riguardo alla forma e al-
+te proprietà dei materiali dell’oggetto riflettente.
+
+Il radar viene impiegato in un’ampia varietà di applicazioni civili e militari, che
+comprendono il controllo del traffico aereo, la navigazione aeronautica, i servizi di po-
+lizia, il controllo ela guida dei sistemi d’armamento, la rivelazione a distanza delle ca-
+ratteristiche ambientali terrestri, le osservazioni meteorologiche, l'astronomia e la pre-
+venzione delle collisioni tra automobili. Le bande di frequenza utilizzate per i vari tipi
+di applicazioni radar si estendono da pochi megahertz fino a frequenze di 225 GHz.
+
+10.5.1 Principi di funzionamento dei sistemi radar
+
+Lo schema a blocchi descritto in Figura 10.9 contiene gli elementi funzionali di base
+di un sistema radar a impulsi. L’unita detta sincronizzatore di modulazione serve per
+sincronizzare il funzionamento del trasmettitore con quello dell’unità di elaborazione
+e visualizzazione mediante la generazione di un treno di impulsi di corrente continua
+di breve.durata ed equispaziati nel tempo. Questi impulsi, che vengono inviati sia al
+trasmettitore che all’unità di visualizzazione, definiscono gli istanti in cui vengono
+trasmessi gli impulsi radar. Il trasmettitore contiene un oscillatore a radiofrequenza di
+potenza elevata che può essere attivato e disattivato mediante una tensione di control-
+lo comandata dagli impulsi generati dal sincronizzatore di modulazione. Pertanto il
+trasmettitore genera impulsi di energia a radiofrequenza con durata e spaziatura ugua-
+
+li a quelle degli impulsi di corrente continua prodotti dal sincronizzatore di modula-
+zione,
+
+10,5 Sensori radar
+
+~~ Sineronizzatore © [CT
+di modulazione
+
+Ricevitore le
+
+Servomotore }* — - ~
+
+i iene inviato all’antenna tramite un duple-
+i impulso generato dal trasmettitore viene invia! T tramite i
+a che permette la condivisione dell'antenna tra il srasmetniiore È in pit i die
+x i utatore di trasmissione/ricezione , a
+plexer, spesso chiamato comm SI one CA eee al
+i ? ita dell'impulso è quindi og: T
+smettitore all’antenna per tutta la durat ll'impuls ca ani duple
+i il i i È ll’inizio di un nuovo impulso; i ;
+cevitore per il periodo che rimane fino all 0 | alci 7
+xer sono tuttavia realizzati con dispositivi passivi che svolgono le mon hi Few
+visione e isolamento senza soluzione di continuità. Il asi dea igus
+io di i stato
+è un esempio di duplexer passivo. Dopo essere È na, i
+pale wanmeses viene in parte intercettato da un oggetto niet herpes
+irradiato i Ite direzioni. L’energia reirra 1
+come bersaglio, e reirradiato in mol ezio nergi i sevie
+i i inviata al ricevitore, che elal
+verso il radar viene raccolta dall’antenna e ¢ he € : ule
+per rivelare la presenza del bersaglio € per ovate ee Rf ee coma a
+izione e velocità relativa. Il ricevitore trasforma 1 segn lessi in segnali a
+Frequenza inferiore adatti alla visualizzazione e li trasferisce ora bosoni
+i i i tratta in un formato visuale ac plica
+zione, che presenta l’informazione est int x i oem ae
+i i difica l’orientazione del lobo in ri-
+zione desiderata. Ii servomotore mo Ore eo e rit di
+i di do che possono essere forniti dall’op ,
+piani ice unità di ita comandata da un altro
+i ita di comando a sua vo!
+comando preimpostata o da un’unil 1 0 aa a eae
+i i ita di do di un radar per il controllo )
+sistema. Per esempio, l’unità di coman E act afte ae
+i i tare continuamente l’antenna nel pi:
+reo comanda il servomotore in modo da ruo TEE Dino
+i ” tata nella parte frontale di un
+azimutale. Per contro, l’antenna radar monte i mae
+scansionata con moto altemativo solo su un’estensione angolare determinata.
+
+Elaboratore
+video
+
+--------4>0
+
+Figura 10.9 Schema a blocchi di principio di un sistema radar.
+
+10.5.2 Distanza non ambigua
+
+isti i ” i da un radar sono esprimibili
+
+tiche complessive dell’energia trasmessa 0 bil
+
+De fame le caratterstiche della forma d ‘onda del ney edu din, rear ube
+
+ural
+
+i comprendono (1) la frequenza della portante f, (2) la ta n °
+
+me fa frequenza di ripetizione degli impulsi f, (ovvero il numero di imp alse
+
+condo) o equivalentemente il periodo inerimpulso D Si / do. cl yr za cdi
+lulazi ione degli impulsi, se presente. Tre di queste cara teri:
+
+viema 10.10. Le studio della modulazione, riferita all’ampiezza, Requenza N fase dl
+
+5 0 della presente trattazione e dunque non sa rato.
+Oe ena ceo si determina misurando il ritardo T impiegato dall imp
+so per propagarsi fino al bersaglio e poi tornare indietro. Nel caso di un bersaglio a
+distanza R si ha
+
+pack (10.13)
+
+[PAG 221]
+10.6 Rivelazione del bersaglio 407
+Capitolo 10 — Sistemi di comunicazione via satellite e radar
+
+Figura 10.11 .
+Fascio radar che.osserva. :
+Figura 10.10 : Forma d’onda due bersagli situati a: ..-.
+Un impulso radar . Radio frequenza dell'impulso is ra
+trasmette una successione a frequenza f tanza Ry
+H continua di impulsi a M 7 TAM
+i radiofrequenza, con ~~ 1 i ;
+È i» SOIL . 9
+_ frequenza diripetizione f Wt HEL Lobo dell'antenna
++ (n 4
+T
+
+#1, = 1; >
+
+dove c = 3 x 108 m/s è la velocità della luce e il fattore 2 tiene conto del fatto che la
+distanza viene percorsa due volte dalf’impulso. La distanza massima di un bersaglio
+che un radar può misurare senza ambiguità, detta distanza non ambigua R,, è defini-
+ta dal periodo interimpulso T, ed è data da
+
+(10.14)
+
+La distanza Ry corrisponde alla massima distanza a cui può trovarsi un bersaglio tale
+che il suo eco venga ricevuto prima della trasmissione dell’impulso successivo. Se qt
+è troppo breve, l’eco associato a un dato impulso può essere ricevuto dopo la trasmis-
+sione dell’impulso successivo, nel qual caso il bersaglio sembra trovarsi a una distan-
+
+- za molto più breve di quella reale.
+
+Secondo la (10.14), se per esempio un radar deve essere impiegato per rivelare ber-
+sagli distanti fino a 100 km, allora Sp deve essere inferiore a 1.5 kHz: più alta è la fre-
+quenza di ripetizione degli impulsi (pulse repetition frequency o PRF), più breve è la
+distanza non ambigua R,. Se si considera solo Ru, sembra che sia preferibile sceglie-
+re una PRF bassa, ma altre considerazioni spingono invece a scegliere una PRF mol-
+to elevata. Come si vedrà in seguito nel Paragrafo 10.6, il rapporto segnale-rumore
+del ricevitore radar è direttamente proporzionale a f, e dunque scegliere la PRF più
+alta possibile è vantaggioso. Inoltre la PRF non definisce solo la massima distanza
+non ambigua ,, ma anche la massima deviazione di frequenza Doppler che il radar
+può misurare senza ambiguità, e dunque la massima velocità radiale del bersaglio. Se
+i requisiti sulla distanza massima e sulla velocità ‘massima non possono essere soddi-
+sfatti dalla stessa PRF, è necessario ricorrere a soluzioni di compromesso. In altemna-
+tiva, è possibile utilizzare un sistema radar a PRF multipla che trasmette alcuni im-
+pulsi con una PRF seguiti da un’altra sequenza di impulsi con un’altra PRF: le due
+serie di impulsi ricevuti sono poi elaborate insieme per rimuovere le ambiguità che
+sarebbero state presenti se si fosse impiegata una sola sequenza.
+
+10.5.3 Risoluzione radiale e angolare
+
+Si consideri un radar che osserva due bersagli situati a distanze R, e Ro, come descrit-
+to in Figura 10.11. Si supponga che l’impulso trasmesso inizi all’istante t = 0, con
+durata pari a 7. L’eco dovuto al bersaglio 1 giungerà all’istante 7; = 2R, fe e avrà
+durata 7, assumendo che la lunghezza spaziale dell’impulso sia molto maggiore del-
+l'estensione del bersaglio lungo l’asse radiale. Analogamente, l’eco dovuto al bersa-
+glio 2 giungerà all’istante T, = 2R, /c. I due bersagli sono risolvibili indipendente-
+mente l’uno dall’altro nella misura in cui Tz > T +7 0 analogamente
+
+2
+RR, (10.15)
+© Ce
+
+La risoluzione radiale AR del radar è definita come l'intervallo spaziale minimo tra
+due bersagli necessario a evitare la sovrapposizione tra i foro echi. Dalla (10.15), ciò
+gi
+
+accade quando
+
+AR =R,—R, =cr/2. (10.16)
+
+Alcuni radar sono in grado di trasmettere impulsi di durata uguale o inferiore a i ns:
+t= Ins, siha AR = 15cm. . ci
+
+ai parametro fondamentale di risoluzione angolare di un radar è l'ampiezza B del
+
+lobo principale dell’antenna, come descritto in Figura 10.12. La corrispondente ri.
+
+luzione azimutale Ax alla distanza R è data da
+
+Ax = BR, (10.17)
+
+è i anti i casi si impi tecniche speciali per spinge-
+
+è espressa in radianti. In alcuni casi si impiegano re spe Be
+
+ele eat angolare a frazioni dell’ampiezza ; un esempio è il radar monoim-
+pulso descritto nel Paragrafo 10.8.
+
+Ampiezza del lobo 8
+
+10.6 Rivelazione del bersaglio
+
+La rivelazione dei bersagli da parte di un radar è soggetta a due ol l'enetia
+icevi della riflessione di ps
+di segnale captata dal ricevitore radar a causa aa a ee
+i ” ore generata dal rice
+trasmessa da parte del bersaglio e (2) Penergia i rumor ener ie del
+i 10.13, che descrive il segnale in uscita da un rice 1
+pesi mostra i segnali dovuti ai bersagli, sovrappost al rumore copiato da mae
+e i circuiti del ricevitore. Le variazioni al
+esteme e a quello generato dai circuiti di i a leatorie presenti
+iffici l segnale riflesso dai picchi di ru
+nel rumore a volte rendono difficile distinguere il seg So io iaicato
+i .13, ii livello medio della potenza di rumore al rice
+par sa ‘love Gree è il guadagno del ricevitore e Pai È il livello del mor
+riferito all’ingresso del ricevitore; i livelli di potenza Pr, € Pr, rappresentano g ech
+dei due bersagli osservati dal radar. A causa della natura aleatorio del rumore Mem .
+i i i i ivelazioni dei bersagli.
+sario fissare un livello di soglia P,,,,, per la rivel i ; Se
+i i ia 1 indi in Fi 13, il radar rivelera la presenza di ent
+livello di soglia 1 indicato in Figura 10.13, ele re e dena
+i i à Harme; la probabilità che ciò accada è detta p
+bersagli, ma rivelerà anche un falso a 3 bab e accada è O
+ilità di ? alza il livello di soglia fino al
+babilità di falso allarme. D'altra parte, se si liv o ee sagtin tac
+itare i falsi i, il radar non sarà in grado di rivelare il primo ersaglio;
+ee dna dei bersagl è i dalia probabilità di rivelazione. La
+ione corretta dei bersagli è caratterizzata dalla pro a ione. |
+sora del livello di soglia in relazione al livello medio di rumore viene perciò decisa
+sulla base di un compromesso che considera entrambe le probabilità.
+
+La risoluzione azimutale
+Ax alla distanza R è
+
+[PAG 222]
+Figura 10.13
+
+-. Segnale inuscita da un
+ricevitore radar al variare
+del tempo.
+
+i
+i
+È
+|
+
+Capitolo 10 ~ Sistemi di comunicazione via satellite e radar
+
+Livello medio
+
+Per mantenere minimo il livello di rumore, il ricevitore è progettato in modo che la
+sua banda 2 sia larga il minimo indispensabile per lasciar passare la maggior parte
+dell’energia contenuta nell’impulso ricevuto. Un ricevitore di questo tipo, detto rice-
+vitore a filtro adattato, richiede che B sia uguale al reciproco della durata 7 dell’im-
+pulso, cioè B = 1/r. Pertanto, nel caso di un ricevitore a filtro adattato, la (10.10) di-
+viene
+
+Pai = KTyysB = Sim, (10.18)
+
+La potenza di segnale P; ricevuta dal radar è legata alla potenza trasmessa P, median-
+te l’equazione del radar. Questa equazione verrà ora ricavata nel caso generale del ra-
+dar bistatico, nel quale il trasmettitore e il ricevitore non si trovano necessariamente
+nella stessa posizione, passando poi al caso particolare del radar monostatico, in cui
+il trasmettitore e il ricevitore si ‘trovano nello stesso luogo. In Figura 10.14, il bersa-
+glio si trova a una distanza R; dal trasmettitore e a una distanza R, dal ricevitore. La
+densità di potenza che illumina il bersaglio è data da
+
+s G (W/m), (10.19)
+
+t
+— 4nR?
+dove (P,/4xR?) rappresenta la derisità di potenza che verrebbe irradiata da un radia-
+tore isotropo, mentre G, è il guadagno dell’antenna trasmittente nella direzione del
+bersaglio. Il bersaglio è caratterizzato mediante Ja propria sezione radar (radar cross
+section 0 RCS) 71 (m?), definita in modo che la potenza intercettata e reirradiata dal
+bersaglio sia
+
+PGi
+4nR?
