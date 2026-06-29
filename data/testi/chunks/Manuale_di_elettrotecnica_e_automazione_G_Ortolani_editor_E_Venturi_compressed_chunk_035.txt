@@ -1,0 +1,1395 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 35/116 ===
+Chars: 44,217 | Offset: 1,500,808
+
+
+
+[PAG 772]
+IX-4
+MISURE ELETTRICHE
+15.2    Prove indirette  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+68
+15.2.1    Prova a vuoto  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+68
+15.2.2    Prova in cortocircuito  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+69
+15.2.3    Rendimento e variazione di tensione . . . . . . . . . . . . . . . . . . . . . . 
+71
+16    PROVE SUL MOTORE ASINCRONO  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+71
+16.1    Prova diretta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+71
+16.2    Prove indirette  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+72
+16.2.1    Prova a vuoto  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+72
+16.2.2    Prova in cortocircuito  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+73
+16.3    Tracciamento del diagramma circolare . . . . . . . . . . . . . . . . . . . . . . . . . . 
+74
+17    PROVE SULLA MACCHINA SINCRONA . . . . . . . . . . . . . . . . . . . . . . . . . . 
+75
+17.1    Prova diretta dell’alternatore  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+76
+17.2    Prove indirette dell’alternatore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+77
+17.2.1    Prova a vuoto  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+77
+17.2.2    Prova in cortocircuito  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+77
+17.2.3    Rendimento e variazione di tensione . . . . . . . . . . . . . . . . . . . . . . 
+78
+17.3    Curva a V del motore sincrono . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+78
+18    PROVE SULLE MACCHINE A CORRENTE CONTINUA . . . . . . . . . . . . . . 
+79
+18.1    Prova diretta della dinamo ad eccitazione indipendente . . . . . . . . . . . . . 
+79
+18.2    Prove indirette della dinamo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+80
+18.2.1    Prova a vuoto  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+80
+18.2.2    Le perdite nel rame e il rendimento . . . . . . . . . . . . . . . . . . . . . . . 
+80
+18.3    Prova diretta del motore a corrente continua  . . . . . . . . . . . . . . . . . . . . . 
+81
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+81
+
+[PAG 773]
+MISURE ELETTRICHE
+IX-5
+1  ERRORI DI MISURA
+Nell’effettuazione delle misure si commettono errori, dipendenti da cause diverse, che 
+possono riferirsi agli strumenti oppure ai metodi di misura impiegati. Questi errori 
+influenzano il valore della grandezza che viene rilevata e per questo occorre che vengano 
+tenuti in considerazione in modo che: se conosciuti, possano essere corretti; se trascurati, 
+possano essere resi minimi.
+In realtà, attraverso una misura, non si potrà mai ottenere il valore vero, ma soltanto 
+un valore approssimato, in misura più o meno grande. Quando si effettuano le misure, per 
+verificarne l’errore ci si riferisce a grandezze campioni, o nominali, assunte come riferi-
+mento.
+1.1  Errori sistematici ed occasionali
+Gli errori sistematici sono riconducibili a difetti degli strumenti, dipendenti sia dal 
+loro funzionamento che dall’impiego come ad esempio gli errori di taratura e gli errori di 
+inserzione. Questi errori hanno segno costante e, una volta rilevati, consentono la corre-
+zione della misura.
+Gli errori occasionali sono dipendenti da cause non prevedibili e si distribuiscono 
+casualmente sia in difetto che in eccesso. Questi errori possono essere resi minimi ripe-
+tendo le misure n volte ed assumendo come risultato (X) il loro valore medio:
+(IX.1.1)
+In molti casi gli errori possono essere evidenziati con metodo grafico. Ad esempio, 
+nel caso del rilievo della caratteristica di una resistenza col metodo voltamperometrico, si 
+possono disporre i valori della tensione U in funzione di quelli di corrente I (Fig. IX.1.1).
+Fig. IX.1.1  Caratteristica di una resistenza.
+Mediante l’operazione di interpolazione si ottiene una retta di taratura che consente:
+–  di rilevare l’errore sistematico, evidenziato come lo scostamento presente all’origine;
+–  di constatare la presenza degli errori occasionali come scostamento dei vari punti 
+rispetto alla retta di   interpolazione.
+1.2  Errori assoluti e relativi
+Si definisce: errore assoluto (a) la differenza fra il valore misurato (Xm) di una gran-
+dezza ed il valore vero, o nominale (Xc), preso come riferimento:
+(IX.1.2)
+La conoscenza dell’errore assoluto consente la correzione della misura.
+Si definisce: errore relativo (r) il rapporto fra l’errore assoluto e il valore in misura:
+(IX.1.3)
+Molto spesso l’errore relativo viene espresso in termini percentuali:
+X
+X1
+X2
+...
+Xn
++
++
++
+
+
+n
+
+Xi
+=
+=
+per i = 1, 2, ..., n
+U
+I
+a
+Xm
+Xc
+–
+=
+r
+a
+Xm
+
+=
+
+[PAG 774]
+IX-6
+MISURE ELETTRICHE
+(IX.1.4)
+La conoscenza dell’errore relativo fornisce l’indicazione della bontà e dell’attendibi-
+lità della misura.
+1.3  Errori derivanti da operazioni
+Siano date due grandezze A e B, note a meno di un errore assoluto rispettivamente 
+A e B. Indicando con Ac e Bc il valore esatto si ha:
+(IX.1.5)
+con un errore relativo:
+(IX.1.6)
+Esaminiamo gli errori che influenzano i risultati delle operazioni principali.
+Addizione. Considerando il caso più sfavorevole, di errori entrambi in eccesso o in difetto, 
+e tenendo conto della IX.1.5 risulta: S = A + B = Sc  (A + B).
+L’operazione di addizione comporta:
+–  un errore assoluto S che è la somma degli errori assoluti delle grandezze date:
+(IX.1.7)
+–  un errore relativo che, con la IX.1.6 risulta:
+(IX.1.8)
+Nel caso particolare in cui rA = rB si ottiene:
+(IX.1.9)
+L’operazione di addizione non aggrava gli errori relativi, che rimangono dell’ordine 
+di grandezza di quelli dei termini componenti.
+Sottrazione. Considerando il caso più sfavorevole, di errori uno in eccesso (+A) ed uno in 
+difetto (B), ammesso A > B e tenendo conto della IX.1.5 si ottiene:
+L’operazione di sottrazione comporta:
+–  un errore assoluto che è la somma degli errori assoluti delle grandezze date:
+(IX.1.10)
+–   un errore relativo dato da:
+(IX.1.11)
+Nel caso particolare in cui  rA = rB si ottiene:
+(IX.1.12)
+%
+100 a
+Xm
+
+
+
+=
+A
+Ac
+A ,
+
+=
+B
+Bc
+B
+
+=
+rA
+A A ,
+
+
+=
+rB
+B B
+
+
+=
+S
+A
+B
++
+
+
+
+=
+rS
+rAA
+rBB
++
+
+
+A
+B
++
+
+
+
+
+=
+rS
+rA
+rB
+=
+=
+D
+A
+B
+–
+Dc
+A
+B
++
+
+
+
+=
+=
+D
+A
+B
++
+
+
+
+=
+rD
+rAA
+rBB
++
+
+
+A
+B
+–
+
+
+
+
+=
+rD
+rA A
+B
++
+
+
+A
+B
+–
+
+
+
+
+=
+
+[PAG 775]
+MISURE ELETTRICHE
+IX-7
+Le formule IX.1.11 e IX.1.12 mettono in risalto che attraverso l’operazione di sottra-
+zione l’errore relativo si esalta, tendendo a valori molto alti quando i due termini sono 
+vicini.
+Moltiplicazione. L’operazione di moltiplicazione fra le due grandezze risulta:
+P = A B = (Ac  A) (Bc  B) = Pc  A Bc  B Ac  A B
+Trascurando l’ultimo termine, non rilevante, si ottiene per il caso più sfavorevole:
+–  un errore assoluto:
+(IX.1.13)
+–  un errore relativo:
+(IX.1.14)
+Nell’operazione di moltiplicazione l’errore relativo del prodotto è la somma degli 
+errori relativi dei fattori.
+Divisione. Il rapporto fra le due grandezze risulta:
+Per il caso più sfavorevole e trascurando i termini non rilevanti si ottiene:
+–  un errore assoluto:
+(IX.1.15)
+–  un errore relativo:
+(IX.1.16)
+Nell’operazione di divisione l’errore relativo del quoziente è la somma degli errori 
+relativi dei due termini.
+2  STRUMENTI ELETTRICI (CARATTERISTICHE)
+2.1  Classificazione
+Gli strumenti elettrici possono essere analogici o digitali. I primi hanno una indica-
+zione continua della grandezza in misura, ottenuta tramite un indice che scorre su una 
+scala graduata; gli strumenti digitali, a funzionamento elettronico, presentano un’indica-
+zione a carattere discreto, che si presenta su un visore a LED oppure a cristalli liquidi.
+Gli strumenti possono essere:
+–  indicatori, quando indicano, direttamente o indirettamente, il valore della grandezza;
+–  registratori, quando tracciano l’andamento della grandezza nel tempo;
+–  integratori, quando integrano la grandezza in relazione alla sua durata.
+Secondo il principio di funzionamento si distinguono in:
+–  magnetoelettrici,
+–  elettromagnetici,
+–  termici,
+–  elettrostatici,
+–  elettrodinamici,
+–  a induzione.
+P
+ABc
+BAc
++
+
+
+
+Pc rA
+rB
++
+
+
+
+=
+=
+rP
+rA
+rB
++
+
+
+
+=
+Q
+A
+B---
+Ac
+A
+
+Bc
+B
+
+---------------
+Qc
+1
+rA
+
+1
+rB
+
+--------------
+Qc
+1
+rA
+
+rB
+rArB
+
+
+1
+rB
+2
+
+-------------------------------------------------
+=
+=
+=
+=
+Q
+Qc rA
+rB
++
+
+
+
+=
+rQ
+rA
+rB
++
+
+
+
+=
+
+[PAG 776]
+IX-8
+MISURE ELETTRICHE
+Tab. IX.2.1   Simbologia dei principali strumenti di misura
+Simbolo
+Significato
+Simbolo
+Significato
+        magnetoelettrico a bobina 
+mobile
+       per corrente alternata trifase
+        magnetoelettrico a raddrizza-
+tore
+        per funzionamento in posizione 
+verticale
+       magnetoelettrico a termocop-
+pia
+        per funzionamento in posizione 
+orizzontale
+      magnetoelettrico a magnete 
+mobile
+      tensione di isolamento 2000 V
+(l’indicazione interna corri-
+sponde alla tensione di isola-
+mento in kV; senza indicazione 
+significa una tensione di isola-
+mento di 500 V)
+       elettromagnetico a ferro 
+mobile
+    termico a filo caldo
+cl ...
+classe di precisione
+ termico a termocoppia
+         strumenti indicatori
+      elettrostatico
+     strumenti registratori
+      elettrodinamico
+     
+strumenti integratori
+    ferrodinamico
+         voltmetro
+      a induzione
+          amperometro
+     a vibrazione
+          wattmetro
+        logometrico a magnete perma-
+nente
+         ohmmetro
+2
+V
+A
+W
+
+
+[PAG 777]
+MISURE ELETTRICHE
+IX-9
+Tab. IX.2.1 Segue
+2.2  Strumenti indicatori analogici
+2.2.1  Forme costruttive ed impiego
+Gli strumenti indicatori possono essere portatili oppure ad installazione fissa.
+I primi sono usati prevalentemente per misure di laboratorio o di controllo sugli 
+impianti, funzionano di norma in posizione orizzontale e sono spesso muniti di più por-
+tate, quindi a lettura indiretta. Gli strumenti per installazione fissa vengono applicati sui 
+quadri elettrici delle centrali, delle sottostazioni e cabine, e in tutti quegli ambienti dove è 
+necessario tenere sotto controllo i valori di determinate grandezze.
+Secondo la forma costruttiva gli strumenti da quadro possono essere (Fig. IX.2.1): a 
+profilo circolare, quadrato, rettangolare.
+ 
+ 
+ 
+Fig. IX.2.1  Profili di strumenti a quadro.
+2.2.2  Portata e costante
+Uno strumento indicatore funziona grazie all’azione che la grandezza in misura eser-
+cita su un equipaggio mobile. Esso è supportato da due perni e ruota senza attrito apprez-
+zabile fra due cuscinetti di sospensione. La rotazione della parte mobile è contrastata da 
+una coppia antagonista, sviluppata dalla torsione di una o più molle. L’indice, solidale con 
+l’equipaggio mobile, si sposta lungo una scala graduata sino al punto di equilibrio fra la 
+coppia motrice e la coppia antagonista.
+Gli strumenti possono essere:
+–  a lettura diretta, se tarati direttamente coi valori della grandezza da rilevare; questi 
+strumenti sono generalmente installati sui quadri di manovra e di comando degli impianti;
+–  a lettura indiretta, quando hanno una suddivisione numerica convenzionale della 
+scala; questi strumenti sono impiegati in misure di laboratorio.
+Simbolo
+Significato
+Simbolo
+Significato
+    logometrico elettrodinamico
+         fasometro
+     per corrente continua
+          frequenzimetro
+   per corrente alternata mono-
+fase
+          varmetro
+     
+per corrente continua e alter-
+nata
+        
+contatore
+
+f
+VAR
+Wh
+
+[PAG 778]
+IX-10
+MISURE ELETTRICHE
+La scala degli strumenti può essere (Fig. IX.2.2):
+–  lineare, quando le suddivisioni sono distribuite uniformemente;
+–  quadratica, quando ha andamento quadratico, con le divisioni addensate all’inizio;
+–  logaritmica, con le divisioni addensate verso il fondo;
+–  empirica, quando non segue alcuna legge ma è tracciata sperimentalmente.
+      
+Fig. IX.2.2  Tipi di scale: a) lineare; b) quadratica.
+Si definisce:
+–  portata (Q) di uno strumento il valore della grandezza di fondoscala,
+–  costante (K) il rapporto fra la portata ed il numero di divisioni (N) della scala
+(IX.2.1)
+–  sensibilità (s) il reciproco della costante
+(IX.2.2)
+La costante permette di calcolare il valore della grandezza noto il valore della lettura.
+Gli strumenti a lettura indiretta hanno più portate e quindi altrettante costanti.
+2.3  Errori e classi di precisione
+2.3.1  Errore di apprezzamento
+È l’errore che si compie effettuando la lettura ed ha carattere soggettivo. Dipende da 
+diversi fattori fra i quali possiamo indicare: il potere risolutivo dell’occhio umano, limi-
+tato costituzionalmente; la capacità individuale di definire con precisione la posizione 
+dell’indice quando si posiziona nello spazio fra due tracce consecutive.
+Questi errori possono essere ridotti con alcuni accorgimenti, ad esempio: rendendo 
+minimo lo spessore dell’indice; oppure adottando la scala ticonica, usata in taluni casi 
+negli strumenti da laboratorio (Fig. IX.2.3). In questa scala le divisioni successive sono 
+raccordate da un tratto obliquo intersecato da archi di cerchio concentrici, ciò che facilita 
+l’apprezzamento delle frazioni di divisione.
+Fig. IX.2.3  Scala ticonica.
+2.3.2  Errore di parallasse
+È l’errore che si compie quando la linea di traguardo non è normale al piano della 
+scala dello strumento (Fig. IX.2.4).
+L’errore di parallasse può essere annullato munendo la scala di una superficie a spec-
+0
+20
+40
+60
+80
+100
+a)
+0
+20
+30
+40
+50
+10
+b)
+K
+Q
+N
+
+=
+s
+1
+K
+
+N
+Q
+
+=
+=
+20
+10
+30
+40
+50
+60
+
+[PAG 779]
+MISURE ELETTRICHE
+IX-11
+chio che possa riflettere l’indice dello strumento; la lettura deve essere eseguita colli-
+mando esattamente l’indice con la sua immagine.
+Fig. IX.2.4  Errore di parallasse: A = posizione corretta; B = posizione errata; C = errore.
+In un secondo tipo si realizza la scala a sbalzo in modo che l’indice possa spostarsi 
+sullo stesso piano della scala (Fig. IX.2.5).
+Fig. IX.2.5  Scala antiparallasse.
+L’errore di parallasse non sussiste negli strumenti a riflessione.
+2.3.3  Smorzatori
+L’equipaggio mobile può essere munito, ove occorra, anche di dispositivi smorzatori i 
+quali hanno il compito di esercitare una coppia frenante dinamica che contrasti due effetti 
+indesiderati:
+–  il movimento oscillatorio che può instaurarsi durante il regime transitorio che segue 
+l’applicazione della grandezza in misura;
+–  la vibrazione dell’indice dovuta alla eventuale presenza di componenti variabili che 
+accompagnano il valore medio della coppia motrice.
+Alcuni tipi di strumenti, come ad esempio quelli magnetoelettrici, posseggono una 
+coppia di smorzamento intrinseca, spesso sufficiente. Per altri occorre ricorrere a disposi-
+tivi addizionali che possono essere a funzionamento meccanico od elettromagnetico.
+I primi consistono in appendici poste a contrappeso sull’indice e conformate a paletta 
+oppure, con più efficacia, a stantuffo (Fig. IX.2.6).
+   
+Fig. IX.2.6  Smorzatori meccanici: a) a paletta; b) a stantuffo.
+Gli smorzatori elettromagnetici sono basati sul principio del freno elettromagnetico 
+(si veda la Sez. VII Elettrotecnica generale) e comprendono un elemento fisso magnetiz-
+A
+B
+B
+C
+a)
+b)
+
+[PAG 780]
+IX-12
+MISURE ELETTRICHE
+zato il cui flusso è tagliato nel traferro da una lamina di materiale conduttore, solidale con 
+l’equipaggio mobile (Fig. IX.2.7).
+Fig. IX.2.7  Smorzatore elettromagnetico.
+2.3.4  Classi di precisione
+Gli strumenti elettrici indicatori sono suddivisi in classi di precisione; per ciascuna di 
+esse il costruttore garantisce un errore massimo intrinseco, derivante dalla struttura dello 
+strumento, dalla sua realizzazione e dal suo funzionamento. Questo errore viene calcolato 
+sulla portata ed è ammesso per qualsiasi punto della scala. Per questo motivo la lettura 
+sarà tanto meglio approssimata quanto più elevata risulterà l’indicazione sulla scala.
+Esempio 1. Un voltmetro di classe 0,5 è impiegato con una portata di 300 V. Si effettuano 
+due letture: U1=220 V e U2=110 V. Determinare l’errore assoluto e relativo delle letture.
+Soluzione.
+Data la classe, l’errore massimo che si può compiere è: 0,5 300/100 =  1,5 V. Il valore 
+vero delle letture è compreso fra i limiti:
+1)  220  1,5 = 218,5 V e 220 + 1,5 = 221,5 V,
+2)  110  1,5 = 108,5 V e 110 + 1,5 = 111,5 V
+e l’errore relativo delle letture risulta:
+r1 =  1,5100 / 220 =  0,68%
+r2 =  1,5100 / 110 =  1,36%
+2.3.5  Verifica di taratura degli strumenti
+La verifica della taratura di uno strumento si esegue in laboratorio adottando il 
+metodo di paragone, cioè confrontando le indicazioni dello strumento con quelle di un 
+secondo strumento ritenuto campione. Si procede facendo assumere allo strumento in 
+verifica predeterminati valori (Xm) distribuiti uniformemente lungo tutta l’ampiezza della 
+scala e rilevando le indicazioni corrispondenti (Xc) sullo strumento campione. Per ogni 
+misura si calcola: l’errore assoluto: a = Xm  Xc; l’errore relativo percentuale: r = 100 a
+/ Xm. Lo strumento sarà considerato idoneo se gli errori assoluti sono tutti contenuti entro 
+la fascia di tolleranza, data dalla classe dello strumento.
+Esempio 2. La verifica di taratura di un voltmetro di classe 1,5 e portata 300 V ha for-
+nito i risultati seguenti:
+Tab. IX.22.   Classi di precisione degli strumenti
+classe
+0,05
+0,1
+0,2
+0,5
+1
+1,5
+2,5
+errore massimo 
+(% della portata)
+
+
+
+
+
+
+
+Um (V)
+60
+120
+180
+240
+300
+Uc (V)
+59
+117
+181
+242
+304
+
+[PAG 781]
+MISURE ELETTRICHE
+IX-13
+Tracciare la caratteristica di errore e valutare il risultato.
+Soluzione. 
+L’errore assoluto è:
+Lo strumento, appartenendo alla classe 1,5, ammette un errore assoluto massimo che 
+vale  1,5  300 / 100 =  4,5 V e quindi è in tolleranza (Fig. IX.2.8)
+Fig. IX.2.8  Caratteristica di errore di un voltmetro.
+3  STRUMENTI ELETTRICI (TIPI E IMPIEGHI)
+3.1  Strumenti magnetoelettrici
+3.1.1  Principio di funzionamento
+Gli strumenti magnetoelettrici sono formati da un magnete permanente che termina in 
+due espansioni polari. Fra di esse è collocato un nucleo cilindrico di materiale magnetico 
+che assolve il duplice compito, di ridurre la riluttanza del circuito, ma soprattutto di deter-
+minare nel traferro una distribuzione del flusso tale che le linee di forza siano radiali ed 
+uniformemente distribuite (Fig. IX.3.1).
+Fig. IX.3.1  Schema di principio di uno strumento magnetoelettrico.
+Nello spazio anulare del traferro è posto l’equipaggio mobile, formato da un telaio ret-
+tangolare, che fa da alloggiamento ad un avvolgimento in rame, sospeso fra due cuscinetti 
+e mantenuto in sito da molle antagoniste; queste molle svolgono anche il ruolo di termi-
+nali dell’avvolgimento.
+Quando lo strumento è attivo, la corrente continua I che scorre nell’avvolgimento di N
+spire produce una coppia motrice data da:
+Um (V)
+60
+120
+180
+240
+300
+a (V)
++1
++3
+1
+2
+4
+60
+120
+180
+240
+300
+4
+3
+2
+1
+0
+1
+2
+3
+4
+(U)
+(U)
+Vv
+a
+N
+S
+
+[PAG 782]
+IX-14
+MISURE ELETTRICHE
+(IX.3.1)
+L’equipaggio mobile si pone in rotazione determinando la torsione delle molle che 
+producono un’azione antagonista. Ad equilibrio raggiunto, quando le due coppie motrice 
+ed antagonista sono uguali, l’angolo di deviazione  sarà proporzionale alla corrente e ne 
+risulterà una scala uniforme:
+(IX.3.2)
+Lo strumento descritto è chiamato galvanometro ed è adatto a misurare grandezze in 
+corrente continua. Per essere utilizzato in corrente alternata deve essere preceduto da un 
+raddrizzatore ed in tal caso la scala deve essere ritracciata perché occorre tener conto del 
+fattore di forma.
+Il galvanometro può essere impiegato per realizzare sia il voltmetro che l’amperome-
+tro, dotandolo rispettivamente di una resistenza addizionale oppure di una in derivazione 
+(Fig. IX.3.2).
+In particolare questo strumento rappresenta la parte operativa dei tester ad indice, nei 
+quali viene utilizzato sia come voltmetro che come amperometro e dotato di molte portate.
+         
+Fig. IX.3.2  Impiego del galvanometro: a) come voltmetro; b) come amperometro.
+3.1.2  Caratteristiche
+Affinché lo strumento magnetoelettrico si mantenga efficiente occorre che il coeffi-
+ciente di proporzionalità K della IX.3.2 rimanga costante, assicurando la linearità della 
+funzione.
+Occorre perciò che il flusso del magnete si mantenga costante nel tempo e che le 
+molle conservino la loro elasticità. Poiché esse sono anche i terminali dell’avvolgimento, 
+quest’ultima condizione può essere compromessa da sovracorrenti accidentali, che vanno 
+assolutamente evitate.
+Lo strumento magnetoelettrico è in grado di esercitare una coppia dinamica di smor-
+zamento, che agisce durante i transitori. Infatti, in regime dinamico, quando l’equipaggio 
+mobile si sta spostando animato da una velocità angolare  mentre l’indice tende ad assu-
+mere la sua posizione di equilibrio, per la legge di induzione elettromagnetica (si veda la
+Sez. VII Elettrotecnica generale) si sviluppa nell’avvolgimento una fem istantanea di 
+valore assoluto:
+(IX.3.3)
+Se indichiamo con R la resistenza dell’intero circuito, durante il transitorio si genera 
+una potenza elettrica p = e2R compensata da una uguale potenza meccanica p = Cs, dove 
+Cs rappresenta la coppia di smorzamento. Tenendo conto della IX.3.3 si ottiene:
+C
+NI
+=
+
+KI
+=
+G
+U
+Rg
+Ra
++
+a)
+G
+Rg
+Ig
+I
+Rd
++
+b)
+e
+2Blv
+N
+=
+=
+
+[PAG 783]
+MISURE ELETTRICHE
+IX-15
+(IX.3.4)
+Il comportamento dello strumento durante il transitorio dipende quindi da due fattori: 
+uno intrinseco, N2 2, legato alle caratteristiche costruttive; uno esterno, R, che rappre-
+senta la resistenza totale del circuito.
+Si verifica allora che: per resistenze piccole l’azione frenante è forte, il transitorio è 
+lento ed il moto ha carattere aperiodico; per resistenze di valore elevato l’azione frenante 
+è debole ed il moto, più rapido, può anche avere carattere oscillatorio.
+3.2  Strumenti elettromagnetici
+3.2.1  Costituzione
+In linea di principio gli strumenti elettromagnetici sono formati da una bobina fissa, 
+che costituisce il circuito elettrico, e da una barretta ferromagnetica che è parte dell’equi-
+paggio mobile; esso è sostenuto fra due cuscinetti e dotato di un indice ed una molla anta-
+gonista (Fig. IX.3.3).
+Fig. IX.3.3  Schema di principio di uno strumento elettromagnetico a ferro mobile.
+Al passaggio della corrente nella bobina si produce un campo magnetico che esercita 
+un’attrazione sulla barretta provocandone lo spostamento. L’angolo di rotazione, determi-
+nato dall’equilibrio con l’azione antagonista della molla, è funzione della corrente.
+Sullo stesso principio si può ottenere uno strumento di maggiore sensibilità dotando il 
+circuito magnetico di un nucleo, fra le cui espansioni polari viene fatto agire un ferro 
+mobile (Fig. IX.3.4).
+Fig. IX.3.4  Schema di uno strumento elettromagnetico con nucleo.
+Un’altra possibile utilizzazione dell’effetto elettromagnetico è attuata negli strumenti 
+a repulsione. In questi la bobina fissa è munita, al proprio interno, di una lamina ferroma-
+gnetica alla quale fa riscontro una seconda lamina, in posizione angolare sfalsata, apparte-
+nente all’equipaggio mobile (Fig. IX.3.5).
+Al passaggio della corrente le due lamine si magnetizzano con polarità omonime pro-
+ducendo un’azione di repulsione con conseguente spostamento dell’indice. La posizione 
+Cs
+N22
+R
+
+=
+N
+S
+S N
+
+[PAG 784]
+IX-16
+MISURE ELETTRICHE
+di equilibrio, determinata dalle molle, dipende dalla corrente.
+Fig. IX.3.5  Schema di uno strumento elettromagnetico a repulsione.
+3.2.2  Principio di funzionamento
+Gli strumenti elettromagnetici, data la loro costituzione, funzionano in base alla forza 
+di attrazione o di repulsione fra due masse magnetiche, una fissa e l’altra mobile. Tenendo 
+conto della legge di Coulomb magnetica (si veda la Sez. VII Elettrotecnica generale) e 
+poiché entrambe le masse sono magnetizzate dalla medesima corrente, la coppia motrice 
+dello strumento sarà:
+(IX.3.5)
+La scala dello strumento è tendenzialmente quadratica e l’approssimazione dipende 
+dal coefficiente K che non è esattamente costante in quanto include la riluttanza del cir-
+cuito magnetico e la distanza fra i poli magnetici operativi, distanza che varia con 
+l’angolo di deviazione.
+Lo strumento è impiegato sia come voltmetro che come amperometro. Grazie alla 
+dipendenza quadratica dalla corrente lo strumento elettromagnetico è adatto sia in cor-
+rente continua che in corrente alternata. In quest’ultimo caso, posto i = IM sent, l’appli-
+cazione della IX.3.5 offre una coppia istantanea:
+(IX.3.6)
+Dalla formula si desume che lo strumento presenta una coppia media dipendente dal 
+valore efficace della corrente, in perfetta corrispondenza con la IX.3.5, cui è sovrapposta 
+una componente oscillatoria a frequenza doppia. A neutralizzare quest’ultima l’equipag-
+gio mobile è dotato di dispositivi smorzatori.
+Data la sua struttura, questo strumento si presenta particolarmente robusto; esso però 
+non è molto preciso ed inoltre è sensibile ai campi magnetici esterni.
+3.3  Strumenti termici
+3.3.1  Generalità
+Gli strumenti termici basano il loro funzionamento sugli effetti della sovratemperatura 
+che si produce, per effetto Joule, in un tratto del circuito elettrico percorso dalla corrente.
+Indicata con R la resistenza del tratto interessato, la potenza elettrica riscaldante è RI2
+e quindi questi strumenti hanno un’elongazione dell’indice del tipo:
+(IX.3.7)
+Secondo il principio di funzionamento gli strumenti termici si distinguono in: a filo 
+caldo, a termocoppia. Questi strumenti sono impiegati come amperometri e come voltme-
+tri e sono adatti sia in corrente continua che in corrente alternata, nel qual caso indicano il 
+valore efficace. Essi godono di particolari proprietà fra le quali indichiamo le seguenti: 
+I
+C
+KI2
+=
+c
+KI2
+KI2cos2t
+–
+=
+
+KI2
+=
+
+[PAG 785]
+MISURE ELETTRICHE
+IX-17
+sono indipendenti dalla frequenza; sono indipendenti dalla forma d’onda; non risentono di 
+campi magnetici od elettrici esterni; sono adatti anche per correnti elevate; hanno una 
+scala tendenzialmente quadratica.
+3.3.2  Principio di funzionamento
+Strumenti a filo caldo.
+Sfruttano il fenomeno dell’allungamento di un filo soggetto a riscaldamento. Il filo è 
+tenuto teso fra due morsetti ed è percorso dalla corrente del circuito. L’allungamento che 
+ne deriva viene ricuperato, tramite una molla di richiamo, dalla trazione esercitata da un 
+secondo filo, che agisce al centro del conduttore, con effetto moltiplicatore (Fig. IX.3.6).
+Fig. IX.3.6  Schema di principio di uno strumento termico a filo caldo.
+Mediante una puleggia scanalata munita di indice, lo spostamento viene convertito in una 
+rotazione ottenendo così l’indicazione della grandezza in misura su una scala graduata.
+Strumenti a termocoppia.
+Questi strumenti basano il loro funzionamento sulla fem che si genera per fenomeno 
+termoelettrico in una giunzione bimetallica, fem che dipende dalla temperatura della giun-
+zione. Lo strumento è realizzato in modo che la giunzione sia influenzata, direttamente o 
+indirettamente, dalla sovratemperatura prodotta per effetto Joule da un tratto conduttore 
+del circuito principale (Fig. IX.3.7). La fem che ne risulta agisce su uno strumento galva-
+nometrico la cui indicazione è proporzionale alla potenza riscaldante, cioè a I2.
+           
+Fig. IX.3.7  Schema di principio di uno strumento a termocoppia: a) a giunzione sem-
+plice; b) a doppia giunzione.
+Per strumenti di maggior precisione il circuito di misura è provvisto di due giunzioni 
+in contrapposizione, una operativa, riscaldata dall’elemento in misura, l’altra di riferi-
+mento, mantenuta a temperatura costante. Le due fem in opposizione danno una risultante 
+dipendente dalla differenza fra le loro temperature.
+3.4  Strumenti elettrostatici
+3.4.1  Principio di funzionamento
+Questi strumenti utilizzano, per il loro funzionamento, la forza di attrazione che si 
+I
+A
+I
+R
+a)
+E
+T
+t
+b)
+
+[PAG 786]
+IX-18
+MISURE ELETTRICHE
+esercita fra le armature di un condensatore (si veda la Sez. VII Elettrotecnica generale). Il 
+principio cui si ispirano deriva dal primo strumento di tipo elettrostatico, utilizzato nei 
+laboratori di fisica, che è la bilancia di Thomson. Si tratta, in linea essenziale, di un con-
+densatore le cui armature, una fissa e l’altra mobile, sono caricate dalla tensione continua 
+che si vuole rilevare. Lo spostamento dell’armatura mobile provocato dalla forza di attra-
+zione è contrastato, tramite un filo, dalla trazione sviluppata da una molla antagonista 
+(Fig. IX.3.8). Lo spostamento del filo può essere convertito in una rotazione tramite una 
+puleggia scanalata munita di indice.
+Fig. IX.3.8  Schema di principio di uno strumento elettrostatico.
+L’equilibrio viene raggiunto quando l’estensione della molla produce una forza 
+uguale a quella di attrazione fra le armature. Lo spostamento angolare dell’indice risulta 
+proporzionale al quadrato della tensione:
+(IX.3.8)
+Va osservato che la variazione di capacità dovuta allo spostamento delle armature, 
+modifica il valore del coefficiente di proporzionalità K per cui la scala non risulta perfet-
+tamente quadratica.
+Gli strumenti elettrostatici sono impiegati come voltmetri, normalmente per tensioni 
+elevate, e funzionano sia in corrente continua che alternata, nel qual caso indicano il 
+valore efficace.
+Essi godono delle seguenti proprietà: risentono dei campi elettrostatici, ed è bene che 
+siano schermati; non risentono di campi magnetici; presentano resistenza interna molto 
+elevata, dell’ordine delle resistenze di isolamento; non possiedono coppie intrinseche di 
+smorzamento, perciò sono muniti di elementi smorzatori.
+È possibile impiegare lo strumento elettrostatico come amperometro connettendolo in 
+parallelo ad una resistenza R, inserita lungo il circuito (Fig. IX.3.9). Essa, attraversata 
+dalla corrente da misurare, determina una caduta di tensione proporzionale, rilevata dallo 
+strumento.
+Fig. IX.3.9  Schema dell’amperometro elettrostatico.
+3.4.2  Realizzazioni costruttive
+La realizzazione dello strumento elettrostatico è attuata secondo lo schema della Fig. 
+
+KU2
+=
+I
+R
+
+[PAG 787]
+MISURE ELETTRICHE
+IX-19
+IX.3.8 oppure, in modo più efficace, formando l’elemento condensatore con due armature 
+fisse e dotando una di esse di una lamina flessibile interposta. Il campo elettrico esercita 
+la forza di attrazione sulla lamina, che si flette verso la posizione di equilibrio e lo sposta-
+mento è funzione della tensione.
+Un secondo tipo di strumento elettrostatico viene realizzato conformando le due arma-
+ture, fissa e mobile, a settori contrapposti, detti quadranti. I settori fissi sono piegati ad U 
+e costituiscono lo spazio entro il quale penetrano i due settori mobili (Fig. IX.3.10). 
+Quando lo strumento è operativo i settori mobili, rotanti su un asse munito di indice, si 
+spostano sino alla posizione di equilibrio, dettata dalla molla antagonista.
+Fig. IX.3.10  Schema di uno strumento elettrostatico a quadranti.
+Migliore sensibilità si ottiene realizzando lo strumento a celle multiple.
+3.4.3  Spinterometri
+Sono apparecchi impiegati per la misura di tensioni molto elevate. Sono formati da 
+due sfere che costituiscono i terminali dello strumento, una delle quali è mantenuta fissa 
+mentre l’altra è regolabile in modo da variare lo spazio isolante interposto (Fig. IX.3.11).
+Fig. IX.3.11  Spinterometro a sfere.
+Essi non sono strumenti indicatori propriamente detti ma elementi che permettono il 
+rilievo della tensione di scarica fra le due sfere. Questa tensione è correlata, mediante gra-
+fici, alla distanza d fra le sfere ed al diametro D delle stesse (Fig. IX.3.12).
+Possono essere ad asse orizzontale o verticale; questi ultimi sono comunemente impiegati 
+per le prove di isolamento e di rigidità dielettrica. Ad evitare il cortocircuito che si veri-
+fica all’atto della scarica, il dispositivo deve essere munito di un’adatta resistenza in serie.
+U
+U
+R
+D
+d
+
+[PAG 788]
+IX-20
+MISURE ELETTRICHE
+ 
+Fig. IX.3.12  Diagramma della tensione di scarica degli spinterometri U = f(D, d): 
+a, a’ = sfere isolate; b, b’ = una sfera connessa a terra.
+3.5  Strumenti elettrodinamici
+3.5.1  Principio di funzionamento
+Questi strumenti basano il loro funzionamento sull’azione elettrodinamica che si svi-
+luppa fra conduttori percorsi da corrente (si veda la Sez. VII Elettrotecnica generale). In 
+linea di principio, lo strumento elettrodinamico è costituito da due bobine a sagoma ret-
+tangolare: una fissa, solitamente suddivisa in due sezioni affiancate per consentire la col-
+locazione dell’asse dello strumento; una mobile, centrata all’interno di quella fissa e 
+sostenuta da un asse munito di molle antagoniste e di indice (Fig. IX.3.13).
+      
+Fig. IX.3.13  Schema di principio di uno strumento elettrodinamico: a) coppia motrice.
+Quando le bobine, fissa e mobile, sono percorse da una corrente continua, rispettiva-
+mente I1 e I2, i lati attivi esercitano azione elettrodinamica e producono una coppia 
+motrice proporzionale al loro prodotto:
+(IX.3.9)
+Lo strumento è adatto sia in corrente continua che in corrente alternata. In questo 
+100
+200
+300
+400
+500
+600
+700
+800
+10
+50
+20
+100
+100
+200
+300
+a
+b
+a’
+b’
+(a, b) (a’, b’)
+U (kV)
+(a’, b’)
+(a, b)
+d (cm)
+0
+D= 100 cm
+D= 25 cm
+I1
+I1
+I2
+a)
+C
+KI1I2
+=
+
+[PAG 789]
+MISURE ELETTRICHE
+IX-21
+caso, posto i1 = I1M sent e i2 = I2M sen (t   ) la IX.3.9 offre una coppia istantanea:
+(IX.3.10)
+Dalla formula si desume la coppia media dello strumento:
+(IX.3.11)
+Ad essa è sovrapposta una componente oscillatoria a frequenza doppia di quella delle 
+correnti, che è neutralizzata dotando l’equipaggio mobile di elementi smorzatori.
+Lo strumento elettrodinamico è impiegato come voltmetro, amperometro e wattmetro.
+Gli strumenti elettrodinamici sono molto sensibili ai campi magnetici e per questo devono 
+essere efficacemente schermati.
+In altro modo, possono essere resi insensibili ai campi magnetici realizzandoli in due 
+sezioni gemelle sovrapposte, con le bobine mobili agenti sul medesimo asse. Le bobine 
+delle due sezioni sono percorse dalle correnti in senso inverso per cui, mentre la loro 
+azione rimane concorde, il campo disturbante esterno produce effetti contrapposti che si 
+compensano. Questo tipo di strumento si chiama astatico.
+3.5.2  Voltmetro elettrodinamico
+In questo strumento le due bobine sono collegate in serie e dotate di una conveniente 
+resistenza addizionale (Fig. IX.3.14).
+Fig. IX.3.14  Schema elettrico di un voltmetro elettrodinamico.
+Indicando con Rv l’intera resistenza del circuito dello strumento si ha: I1 = I2 = Iv = U/Rv e 
+quindi dalla IX.3.11:
+(IX.3.12)
+Il voltmetro si presta sia in corrente continua che in corrente alternata in quanto evi-
+dentemente  = 0.
+3.5.3  Amperometro elettrodinamico
+Questo strumento possiede le due bobine collegate in parallelo (Fig. IX.3.15)
+La corrente continua del circuito si suddivide fra di esse in modo inversamente pro-
+porzionale alle loro resistenze dando luogo a due componenti: I1 = k1 I e I2 = k2 I. La 
+IX.3.11 diviene:
+(IX.3.13)
+Lo strumento si presta anche in corrente alternata, dotato però di una diversa scala 
+perché il coefficiente KI è diverso. 
+c
+KI1I2cos
+KI1I2cos 2t 
+
+
+
+–
+=
+C
+KI1I2cos
+=
+U
+Iv
+Ra
+C
+KvU2
+=
+C
+KII2
+=
+
+[PAG 790]
+IX-22
+MISURE ELETTRICHE
+Infatti occorre considerare che, in questo caso, la ripartizione delle correnti dipende 
+dalle impedenze e non semplicemente dalle resistenze delle due bobine ed inoltre l’angolo 
+fra esse non è in generale nullo.
+Fig. IX.3.15  Schema elettrico di un amperometro elettrodinamico.
+3.5.4  Wattmetro elettrodinamico
+Lo strumento viene collegato al circuito con la bobina fissa in serie e la bobina 
+mobile, dotata di una conveniente resistenza addizionale, in parallelo. (Fig. IX.3.16).
+Fig. IX.3.16  Schema elettrico di un wattmetro elettrodinamico.
+Le correnti risultano: I1 = I e I2 = U / Rv per cui le formule IX.3.9 e IX.3.11 divengono,
+–  in corrente continua:
+(IX.3.14)
+–  in corrente alternata, con  = :
+(IX.3.15)
+In entrambi i casi lo strumento fornisce il valore della potenza (attiva) di un circuito.
+Per la trattazione completa del wattmetro elettrodinamico si veda il Cap. 9.
+3.6  Strumenti a induzione
+3.6.1  Principio di funzionamento
+Questi strumenti sono basati sul principio di induzione elettromagnetica esercitata da 
+un sistema induttore bifase, che agisce su un indotto mobile, costituito da un disco di 
+materiale conduttore. 
+Le due fasi induttrici (Fig. IX.3.17) sono realizzate da elettromagneti, eccitati da due 
+correnti alternate sinusoidali, di valore istantaneo:
+i1 = I1M sen t     e     i2 = I2M sen (t   ).
+I
+I1
+I2
+I2
+I1=I
+U
+C
+KPUI
+KPP
+=
+=
+C
+KPUIcos
+KPP
+=
+=
+
+[PAG 791]
+MISURE ELETTRICHE
+IX-23
+Fig. IX.3.17  Schema di principio di uno strumento ad induzione.
+In regime lineare, i due flussi alternati proporzionali alle correnti, di valore istantaneo:
+(IX.3.16)
+inducono nel disco un sistema di fem e =  d /dt sfasate di 90° in ritardo.
+Il disco, considerato resistivo, sarà percorso da due sistemi di correnti indotte i’ = e/R
+(Fig. IX.3.18) proporzionali alle rispettive fem, di valore istantaneo:
+(IX.3.17)
+Fig. IX.3.18  Grandezze elettromagnetiche operanti nel disco.
+Accade che sotto l’espansione polare 1 il gruppo di correnti i’2 indotte dall’altro elet-
+tromagnete eserciti una forza che agisce nel piano del disco in direzione tangenziale, di 
+valore assoluto istantaneo f1 = B1 l i’2.
+Egualmente, sotto l’espansione polare 2 si produce, per effetto delle correnti indotte 
+i’1, una forza f2 = B2 l i’1.
+Tenendo conto delle IX.3.16 e IX.3.17 le forze risultano:
+Lo sviluppo fornisce per entrambe una coppia istantanea:
+(IX.3.18)
+Da questa formula si deduce una coppia media:
+I1
+I2
+1
+ki1
+kI1Msent
+=
+=
+e
+2
+ki2
+kI2Msen t
+
+
+
+
+=
+=
+i'
+1
+k'I1Mcost
+=
+e
+i'
+2
+k'I2Mcos t
+
+
+
+
+=
+I’1
+I’2
+2
+1
+f1
+KI1Msent
+I2Mcos t
+
+
+
+
+
+=
+e
+f2
+KI2Msen t
+
+
+
+
+I1Mcost
+
+=
+c
+KI1I2sen
+KI1I2sen 2t
+
+
+
+
+
+=
+
+[PAG 792]
+IX-24
+MISURE ELETTRICHE
+(IX.3.19)
+alla quale è sovrapposta una componente oscillatoria a frequenza doppia di quella delle 
+correnti.
+La IX.3.19 afferma che la coppia di uno strumento a induzione dipende dalle compo-
+nenti in quadratura delle due correnti induttrici (Fig. IX.3.19).
+Fig. IX.3.19  Componenti delle correnti induttrici di uno strumento a induzione: I2 cos
+inerte; I2 sen attiva.
+Lo strumento a induzione funziona soltanto in corrente alternata ed è impiegato come 
+voltmetro, amperometro, wattmetro e contatore.
+3.6.2  Amperometro a induzione
+Lo strumento a induzione può funzionare come amperometro realizzando un circuito 
+con due rami in parallelo, uno comprendente un induttore connesso in serie ad una resi-
+stenza e l’altro con l’induttore in serie con una reattanza (Fig. IX.3.20).
+Fig. IX.3.20  Schema elettrico di un amperometro a induzione.
+La corrente totale I si suddivide in due componenti proporzionali ad essa e la IX.3.19
+diviene:
+(IX.3.20)
+avendo inserito nella costante di proporzionalità anche il fattore sen residuo.
+Fig. IX.3.21  Schema elettrico di un voltmetro a induzione.
+C
+KI1I2sen
+=
+I2 sen
+I2 cos
+
+I2
+I1
+I1
+I2
+I
+R
+X
+C
+KII2
+=
+I2
+I1
+U
+X
+R
+Z
+
+[PAG 793]
+MISURE ELETTRICHE
+IX-25
+3.6.3  Voltmetro a induzione
+È analogo all’amperometro, dal quale differisce soltanto per il dimensionamento degli 
+avvolgimenti degli induttori e delle componenti addizionali R e X (Fig. IX.3.21).
+Poiché le correnti sono entrambe proporzionali alla tensione ne risulta una coppia:
+(IX.3.21)
+3.6.4  Wattmetro a induzione
+Lo strumento a induzione può funzionare come wattmetro adottando l’accorgimento 
+di differenziare i due elettromagneti. L’elettromagnete voltmetrico (1) presenta circuito 
+magnetico chiuso con una componente induttiva dominante, e quindi funziona con una 
+corrente I1 pressoché sfasata di 90° in ritardo sulla tensione. L’elettromagnete amperome-
+trico (2), percorso dalla corrente di linea, I2 = I, è a circuito magnetico aperto e presenta 
+impedenza molto bassa (Fig. IX.3.22).
+     
+Fig. IX.3.22.  Schema di un wattmetro a induzione: a) strutturale; b) elettrico.
+In condizioni ideali, l’angolo  fra le due correnti risulta complementare a  (Fig. 
+IX.3.23) per cui lo strumento presenta una coppia:
+(IX.3.22)
+Fig. IX.3.23  Diagramma vettoriale del wattmetro a induzione.
+3.6.5  Contatore
+È uno strumento integratore che misura l’energia. Ha la stessa struttura del wattmetro 
+a induzione, ma è privo della molla antagonista perché l’azione frenante, dinamica, è eser-
+citata per effetto elettromagnetico da un magnete permanente che abbraccia il disco (Fig. 
+IX.3.24). Dalla teoria del freno elettromagnetico risulta che la coppia frenante dinamica Cf
+è direttamente proporzionale alla velocità:
+(IX.3.23)
+C
+KVU2
+=
+a)
+1
+2
+b)
+C
+KPUIcos
+KPP
+=
+=
+U
+
+
+I=Ia
+Iv
+Cf
+Kf
+=
+
+[PAG 794]
+IX-26
+MISURE ELETTRICHE
+Fig. IX.3.24  Schema strutturale di un contatore a induzione.
+Il disco sospinto dalla coppia motrice Cm = KP P si pone in rotazione ed assume la 
+velocità di regime quando le due coppie sono uguali, cioè quando:
+(IX.3.24)
+La velocità è proporzionale alla potenza e perciò il numero di giri del disco risulta 
+proporzionale all’energia. Un dispositivo contatore a decadi effettua il conteggio e forni-
+sce il valore direttamente in kWh.
+Parametro caratteristico del contatore è la costante N; essa indica il numero di giri del 
+disco corrispondente a 1 kWh. Nota la costante e conteggiati n giri del disco in t secondi, 
+la potenza si ottiene con la formula:
+(IX.3.25)
+4  SISTEMI RESISTIVI DI REGOLAZIONE
+4.1  Resistori variabili
+Nelle prove di laboratorio si fa spesso uso di resistori variabili. Essi possono essere a 
+variazione discontinua oppure a variazione continua, con incrementi predeterminati e 
+noti.
+I resistori a variazione discontinua ad elevata precisione sono composti da un gruppo di 
+resistenze uguali in serie, con incrementi unitari inseribili mediante spine o, più semplice-
+mente, mediante un commutatore a manopola con avanzamento a scatto. Uno dei termi-
+nali del resistore è ad una estremità fissa mentre l’altro è connesso al cursore (Fig. IX.4.1).
+Fig. IX.4.1  Resistore variabile a commutatore.
+
+K'P
+=
+P
+3,6
+106n
+
+Nt
+
+
+
+=
+
+[PAG 795]
+MISURE ELETTRICHE
+IX-27
+Se, ad esempio, la resistenza è suddivisa in 9 tratti elementari da 1 , col commuta-
+tore a 10 posizioni si può ottenere un valore: 0  R  9 . Raggruppando in serie un certo 
+numero di questi resistori, aventi incrementi elementari differenziati di un fattore 10, si 
+ottengono le cassette di resistenze a decadi. La cassetta fornisce un valore decimale di 
+resistenza, discontinuo e con scarto minimo corrispondente alla decade meno significa-
+tiva. Ad esempio, con 4 commutatori si può ottenere una resistenza: 0  R  9999 . Ogni 
+decade porta l’indicazione della propria portata amperometrica.
+Le resistenze a variazione continua, dette reostati, sono formate da un filo avvolto a 
+spirale su un supporto cilindrico isolante. Lungo una generatrice scorre una spazzola che 
+costituisce il contatto mobile, connesso a morsetti esterni (Fig. IX.4.2).
+Fig. IX.4.2  Reostato.
+Detta R la resistenza totale del reostato, il cursore permette di ottenere una resistenza 
+variabile r compresa fra i limiti: 0  r  R. In realtà la variazione della resistenza non è 
+esattamente continua ma si succede per valori discreti la cui entità è pari alla resistenza di 
+una spira; data però l’esiguità dell’incremento, il fatto viene trascurato perché non avver-
+tibile.
+4.2  Circuiti di regolazione
+4.2.1  Regolazione reostatica
+Il resistore variabile viene utilizzato fra un terminale fisso ed il cursore, e connesso in 
+serie al carico RL (Fig. IX.4.3).
+Fig. IX.4.3  Regolazione reostatica.
+Detta R la resistenza fra i due terminali fissi, viene resa operante una resistenza varia-
+bile r compresa tra i limiti: 0  r  R. L’esame del circuito consente di rilevare,
+–  la corrente:
+(IX.4.1)
+–  la tensione al carico:
+(IX.4.2)
+La regolazione si sviluppa fra i seguenti limiti:
+–  per la corrente, Imin = Ui / (R + RL), Imax = Ui /RL
+–  per la tensione, Uumin = Ui RL/(R + RL), Uumax = Ui.
+Ui
+Uu
+RL
+I
+R
+r
+I
+Ui
+r
+RL
++
+
+
+
+=
+Uu
+UiRL
+r
+RL
++
+
+
+
+=
