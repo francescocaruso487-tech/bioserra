@@ -6,7 +6,7 @@ Aggiorna pdf_graph.json con connessioni basate su contenuto reale.
 """
 import os, json, base64, urllib.request, urllib.error, datetime, re, time, sys
 
-GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
+GITHUB_TOKEN = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
 MISTRAL_KEY  = os.environ.get('MISTRAL_KEY', '')
 REPO = 'francescocaruso487-tech/bioserra'
 RAW  = f'https://raw.githubusercontent.com/{REPO}/main/'
