@@ -66,6 +66,20 @@ def titolo_safe(nome_file):
     safe = re.sub(r'_+', '_', safe).strip('_')
     return safe[:80]
 
+def rileva_lingua(testo):
+    """Rilevazione lingua via parole funzione. Fallback robusto per campo lingua."""
+    t1k = (' ' + (testo or '')[:2000].lower() + ' ')
+    def _score(t, words): return sum(t.count(w) for w in words)
+    scores = {
+        'it': _score(t1k,[' il ',' la ',' di ',' che ',' per ',' con ',' del ',' una ',' sono ',' alle ']),
+        'en': _score(t1k,[' the ',' of ',' and ',' for ',' with ',' this ',' are ',' is ',' in ',' to ']),
+        'fr': _score(t1k,[' le ',' la ',' les ',' des ',' du ',' pour ',' dans ',' est ',' et ']),
+        'es': _score(t1k,[' el ',' los ',' las ',' de ',' del ',' para ',' con ',' que ',' es ']),
+        'de': _score(t1k,[' der ',' die ',' das ',' und ',' fur ',' mit ',' ein ',' ist ']),
+    }
+    best = max(scores, key=lambda k: scores[k])
+    return best if scores[best] > 2 else 'altro'
+
 def mistral_analizza_completo(titolo, testo_completo):
     """Analisi Mistral con testo completo suddiviso in chunk."""
     if not MISTRAL_KEY:
@@ -342,6 +356,10 @@ def main():
         result['titolo'] = titolo
         result['data_analisi'] = oggi
         result['rilevanza'] = 'alta'
+        # Campo lingua: usa quello di Mistral, altrimenti rilevazione locale
+        if not result.get('lingua') or result.get('lingua') not in ('it','en','fr','es','de','pt','altro'):
+            prev_lng = analisi_curr.get('lingua')
+            result['lingua'] = prev_lng if prev_lng in ('it','en','fr','es','de','pt','altro') else rileva_lingua(testo)
         result['mistral_analizzato'] = mistral_ok
         result['testo_chars'] = len(testo)
         result['testo_id'] = safe_id
