@@ -1,0 +1,1987 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 71/116 ===
+Chars: 44,847 | Offset: 3,091,719
+
+
+
+[PAG 1463]
+AUTOMAZIONE
+XIV-151
+Fig. XIV.7.37   Segue.
+–  Un segnale alto sull’ingresso %I1.0 effettua un one shot sul bit %M0 che a sua volta 
+determina la messa ON dell’uscita %Q2.0, mentre un secondo fronte di salita effettuato 
+con lo stesso ingresso arresta il motore che aziona il nastro trasportatore.
+–  Con l’ingresso %I1.2 si predispongono le due word che verranno impiegate per lo 
+shift register, immettendo il valore 0 nella %MW0 e 1 nella %MW1. Dopo il reset le 
+parole assumeranno la configurazione:
+–  Nel rung 7 viene effettuata una somma logica (funzione logica OR) tra le due parole in 
+modo da segnalare che vi è la presenza di un pezzo scarto, immettendo il livello logico 1 
+sul bit meno significativo (LSD) della word %MW1 dello shift register (bit %MW0:X0).
+–  L’operazione viene eseguita mediante l’ingresso %I1.1 che è appunto collegato al pul-
+sante di scarto S2 comandato dall’operatore.
+P
+%I1.2
+Rung 6
+%MW1:= 1
+OPERATE
+OPERATE
+%MW0:= 0
+%I1.1
+P
+%MW0:= %MW0 OR %MW1
+OPERATE
+Rung 7
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+15
+bit
+%MW0
+%MW1
+bit
+15
+14
+13
+12
+11
+10
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+14
+15
+13
+12
+11
+07
+09
+10
+08
+06
+05
+04
+00
+02
+03
+01
+14
+15
+13
+12
+11
+07
+09
+10
+08
+06
+05
+04
+00
+02
+03
+01
+14
+15
+13
+12
+11
+07
+09
+10
+08
+06
+05
+04
+00
+02
+03
+01
+%MWO
+0
+OR
+1
+%MW1
+=
+%MW0
+1
+0 OR 0 = 0
+0 OR 1 = 1
+1 OR 0 = 1
+1 OR 1 = 1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+[PAG 1464]
+XIV-152
+AUTOMAZIONE
+–  Quando dunque il pezzo avanzerà sul nastro trasportatore e si troverà in prossimità 
+della stazione 1 di assemblaggio, un secondo pezzo verrà intercettato dal finecorsa colle-
+gato all’ingresso %I1.3.
+–  Il segnale fornito su %I1.3 determina lo shift di un posto dei bit che costituiscono la 
+parola registro %MW0, per cui la configurazione della word sarà:
+dove il bit %MW0:X1 sarà allo stato logico alto.
+–  L’uscita %Q2.1 che segnala in modo intermittente (è presente il bit sistema %S6 che 
+fornisce un clock con un ciclo di 1 s) la presenza nella stazione 1 di un pezzo difettoso 
+verrà quindi attivata dal bit estratto di parola %MW0:X1 che la controlla.
+–  Se seguiranno altri prodotti idonei, il finecorsa S4 verrà azionato e quindi l’ingresso 
+%I1.3 determinerà ulteriori shift dei bit della word registro.
+–  Con ancora un input dato da %I1.3 la parola registro avrà la configurazione:
+per cui sarà disattivata la segnalazione %Q2.1, mentre si attiverà l’uscita %Q2.2, coman-
+data dal bit estratto di parola %MW0:X2.
+–  Nel rung 8 oltre all’operazione di shift operata sul fronte di salita da %I1.3, si effettua 
+una mascheratura degli altri bit della word che non vengono impiegati. Tale è il signifi-
+cato dell’operazione di AND tra il valore 16#001F e la word registro %MW0: in questo 
+modo i bit %MW0:X5  %MW0:X15 saranno sempre a 0 e non andranno ad interferire 
+sulle altre uscite.
+–  Ad ogni segnale fornito allo shift register tramite %I1.3, i bit verranno traslati di un 
+posto verso sinistra e il bit allo stato logico 1 attiverà l’uscita corrispondente.
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+15
+bit
+%MW0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+%MW0
+bit
+15
+14
+13
+12
+11
+10
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+bit
+15
+14
+13
+12
+11
+10
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0
+0
+1
+1
+1
+1
+0
+1
+16#001F
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+0
+0
+%MW0
+=
+16#001F
+1
+AND
+0
+%MWO
+14
+15
+13
+12
+11
+07
+09
+10
+08
+06
+05
+04
+00
+02
+03
+01
+14
+15
+13
+12
+11
+07
+09
+10
+08
+06
+05
+04
+00
+02
+03
+01
+14
+15
+13
+12
+11
+07
+09
+10
+08
+06
+05
+04
+00
+02
+03
+01
+0 AND 1 = 0
+0 AND 0 = 0
+1 AND 0 = 0
+1 AND 1 = 1
+
+[PAG 1465]
+AUTOMAZIONE
+XIV-153
+Fig. XIV.7.37   Segue.
+Le apparecchiature di ingresso e di uscita al PLC sono cablate secondo lo schema di 
+Tav. XIV.7.10.
+7.7  Funzioni di controllo del programma
+In questo gruppo di istruzioni sono raggruppate le operazioni di gestione del pro-
+gramma utente.
+Richiamo a sottoprogramma
+L’istruzione di chiamata a sottoprogrammi permette di richiamare un modulo sotto-
+programma posto nello stesso task.
+SRi rappresenta il modulo sottoprogramma chiamato: i (variabile da 0 a 254).
+Per l’istruzione di chiamata CALL ad un sottoprogramma si deve sottostare a delle 
+regole di programmazione:
+–  La chiamata a un sottoprogramma può essere effettuata solo se è stato creato prelimi-
+narmente un modulo sottoprogramma.
+–  Il ritorno di un sotto programma avviene sull’azione che segue immediatamente 
+l’istruzione di chiamata al sottoprogramma. 
+–  I sottoprogrammi sono assegnati ad un task, pertanto possono essere richiamati solo 
+da quel dato task.
+Ritorno a sottoprogramma
+L’istruzione RETURN serve come operazione di ritorno di un sottoprogramma; è 
+riservata ai moduli sottoprogramma e permette il ritorno verso il modulo chiamante, se il 
+risultato dell’istruzione del test precedente è pari a 1.
+%I1.3
+P
+%MW0:= %MW0 AND 16#001F
+%MW0:= SHL(%MW0,1)
+OPERATE
+OPERATE
+Rung 8
+%MW0:X1
+Rung 9
+%Q2.1
+%S6
+Rung 10
+%MW0:X2
+%S6
+%Q2.2
+Rung 11
+%MW0:X3
+%S6
+%Q2.3
+
+[PAG 1466]
+XIV-154
+AUTOMAZIONE
+Tav. XIV.7.10  
+24V
+0V
+100/240V
+0V
+Out DC
+Input AC
+Modicon
+TSX Micro
+TER
+AUX
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+2
+4
+6
+8
+10
+12
+14
+16
+18
+I
+N
+P
+U
+T
+21 22
+23 24
+25 26
+27 28
+29 30
+31 32
+33 34
+35
+O
+U
+T
+P
+U
+T
+Battery
+20
+14
+15
+7
+N
+3
+1
+I
+5
+4
+2
+6
+U 11
+P
+9
+T 13
+10
+8
+12
+28
+P
+T 27
+20
+19
+17 18
+16
+O 23
+21
+U 25 24
+22
+26
+35
+U
+T
+31
+29
+33
+30
+32
+34
+15 14
+N
+7
+I
+4
+3
+2
+1
+6
+5
+13
+11
+N L
+Q1
+U
+P
+T
+10
+8
+9
+12
+27
+T
+P
+28
+20
+17
+19 18
+16
+25
+21
+23
+O
+U
+24
+22
+26
+35
+33
+29
+31
+T
+U
+30
+34
+32
+K1
+H4
+H1 H2 H3
+Q2
+L1
+L2
+S3
+S2
+S1
+S4
+S3 RESET SHIFT REGISTER
+%I1.2
+S4 FINECORSA AVANZAMENTO PEZZI
+K1 CONTATTORE COMANDO MOTORE NASTRO
+H1 SEGNALAZIONE PEZZO DIFETTOSO IN STAZIONE 1
+H2 SEGNALAZIONE PEZZO DIFETTOSO IN STAZIONE 2
+H3 SEGNALAZIONE PEZZO DIFETTOSO IN STAZIONE 3
+H4 SEGNALAZIONE PEZZO DIFETTOSO IN STAZIONE 4
+USCITE
+%Q2.2
+%Q2.4
+%Q2.3
+%Q2.1
+%Q2.0
+BIT
+%I1.3
+S1 START/ALT NASTRO TRASPORTATORE
+S2 PULSANTE SCARTO PEZZI DIFETTOSI
+INGRESSI
+ASSEGNAZIONE I/O
+%I1.1
+%I1.0
+BIT
+
+[PAG 1467]
+AUTOMAZIONE
+XIV-155
+L’istruzione di ritorno di un sottoprogramma è implicita alla fine di ogni sottopro-
+gramma, ma può essere utilizzata per un ritorno verso il modulo di chiamata prima della 
+fine del sottoprogramma.
+Salto nel programma
+Le istruzioni di salto permettono di collegarsi a una riga di programmazione identifi-
+cata da una label %Li: 
+–  JMP: salto di programma incondizionato;
+–  JMPC: salto di programma se il risultato booleano dell’istruzione del test precedente 
+è a 1;
+–  JMPCN: salto di programma se il risultato booleano dell’istruzione del test prece-
+dente è a 0.
+%Li rappresenta la label della riga sulla quale viene svolto il collegamento (i variabile 
+da 1 a 999 con 256 label max).
+Le regole di programmazione sono le seguenti:
+–  Un salto di programma viene eseguito all’interno della stessa entità di programma-
+zione (modulo principale di un task master MAIN, sottoprogramma SRi, ...)
+–  Un salto di programma viene eseguito verso una riga di programmazione situata a 
+valle o a monte.
+–  Nel caso di un salto a monte, occorre fare attenzione al tempo di esecuzione del pro-
+gramma: il tempo di esecuzione del programma può infatti risultare più lungo e compor-
+tare un superamento del periodo di tempo assegnato al task incluso il salto a monte e 
+quindi l’intervento del watchdog.
+–  L’istruzione JMP può essere impiegata in un programma solo se la label di chiamata è 
+stata dichiarata preliminarmente.
+Fine programma
+L’istruzione HALT in un programma applicazione permette l’arresto della sua esecu-
+zione (arresto di tutti i task), che ha per effetto il congelamento gli oggetti variabili di que-
+sto programma. L’istruzione HALT viene eseguita se si verifica la condizione (uguale a 1). 
+Per avviare di nuovo un programma così interrotto lo si dovrà inizializzare (con il comando 
+INIT di PL7). Le istruzioni, che seguono le istruzioni HALT, non saranno eseguite.
+Arresto del programma
+Sono istruzioni che permettono di definire la fine dell’esecuzione del ciclo di pro-
+gramma. Sono utilizzabili unicamente nel linguaggio Lista di istruzioni nel task master.
+–  END: fine del programma incondizionale;
+–  ENDC: fine del programma se il risultato booleano dell’istruzione del test precedente 
+è impostata a 1;
+–  ENDCN: fine del programma se il risultato booleano dell’istruzione del test prece-
+dente è impostata a 0.
+L’azione di default (modalità normale), quando la fine del programma è attivata, con-
+siste nell’aggiornare le uscite e passare al ciclo successivo.
+Mascheratura/smascheratura avvenimento
+Le istruzioni di mascheratura/smascheratura permettono la mascheratura o la sma-
+scheratura dell’insieme degli eventi che assicurano l’attivazione dei task di evento.
+–  MASKEVT: mascheratura globale degli eventi. Gli eventi sono memorizzati con il 
+PLC, mentre i task di evento associati restano inattivi fintantoché l’operazione di masche-
+ratura è valida (fino alla successiva istruzione UNMASKEVT).
+–  UNMASKEVT: smascheratura globale degli eventi. Gli eventi memorizzati durante il 
+periodo di mascheratura vengono elaborati.
+
+[PAG 1468]
+XIV-156
+AUTOMAZIONE
+Il meccanismo di elaborazione degli eventi è attivo fino alla successiva istruzione 
+MASKEVT.
+Esempio
+L’applicazione che viene presa in esame (Fig. XIV.7.38) prevede lo smistamento di 
+due diversi prodotti (tipo A e tipo B), che devono essere smistati in una catena di confe-
+zionamento. I prodotti vengono caricati su un nastro trasportatore e un selettore (interrut-
+tore S3 connesso all’input %I1.6) ne individua la tipologia. A seconda del tipo di prodotto 
+viene attivato un sottoprogramma che attiva una sequenza particolare per lo smistamento 
+del prodotto stesso. Il motore asincrono trifase che muove il nastro trasportatore è costru-
+ito con avvolgimento Dahlander, che offre la possibilità di movimentare il nastro con due 
+diverse velocità di scorrimento: una velocità bassa attivando il contattore K1 (%Q2.0) che 
+collega i morsetti del motore a triangolo, ed una velocità alta con i contattori K2 (%Q2.1) 
+e K3 (%Q2.2) che collegano il motore con il collegamento doppia stella. I pistoni mono-
+stabili Y1 (%Q2.3) e Y2 (%Q2.4) provvedono a scaricare il prodotto nell’apposito conte-
+nitore, comandati dalle fotocellule B1 (%I1.4) e B2 (%I1.5) che intercettano la 
+confezione.
+La particolarità del programma che si vuole evidenziare è l’attivazione di due subrou-
+tine che vengono attivate alternativamente a seconda dei prodotti da smistare.
+Fig. XIV.7.38  
+Il programma per tale applicazione è quello di Fig. XIV.7.39 che prevede il seguente 
+funzionamento:
+–  Il pulsante NO di start S2 (%I1.2) attiva il bit interno %M0, ovviamente se gli altri 
+consensi (%I1.0 pulsante di arresto, e %I1.1 relè termico) sono a 1. Si ha così lo start ini-
+ziale del sistema, che prevede anche il reset del conteggio dei vari contatori (%C1, %C2, 
+%C3).
+–  Nei rung 2, 3 e 4 sono programmati i tre contatori che effettuano rispettivamente il 
+conteggio dei prodotti totali smistati, dei prodotti di tipo A e dei prodotti di tipo B.
+–  Nei due rung 5 e 6 oltre alla condizione di avvio sistema (%M0 a 1) è presente un bit 
+negato o normale di %I1.6 che consente la selezione del tipo di prodotto e quindi la chia-
+mata al rispettivo sottoprogramma.
+–  Si ricorda infatti che con l’istruzione CALL si rimanda la lettura da parte della CPU al 
+sottoprogramma indicato (SR0 o SR1).
+–  Quindi se è vera la condizione del test di rung 5 si attiva la subroutine 0 che prevede 
+lo smistamento del prodotto di tipo A; se invece è attiva la chiamata alla subroutine 1 si 
+predispone il sistema per lo smistamento di un prodotto di tipo B.
+Y1
+Y2
+ESPULSORE
+PRODOTTI TIPO B
+ESPULSORE
+PRODOTTI TIPO A
+BOX
+S1 (ALT)
+S2 (START)
+S3 (SELETTORE)
+B1
+B2
+K2
+K3
+CON MOTORE DAHLANDER
+CONTENITORE
+PRODOTTI TIPO B
+CONTENITORE
+PRODOTTI TIPO A
+AZIONATORE
+NASTRO TRASPORTATORE
+3
+M1
+K1
+B3
+
+[PAG 1469]
+AUTOMAZIONE
+XIV-157
+Fig. XIV.7.39  
+%I1.1
+%M0
+%I1.2
+Rung 1
+%I1.0
+%M0
+MODIF: Y
+%Q2.4
+CD
+C.P: 9999
+%Q2.3
+%I1.2
+Rung 2
+S
+CU
+R
+C
+D
+F
+E
+%C3
+C.P: 9999
+MODIF: Y
+%I1.2
+%Q2.4
+CD
+CU
+S
+R
+Rung 3
+F
+C
+D
+E
+%C2
+C.P: 9999
+MODIF: Y
+%I1.2
+%Q2.3
+CD
+CU
+S
+R
+Rung 4
+F
+C
+D
+E
+%C1
+Rung 5
+%M0
+%I1.6
+SR0
+Rung 6
+%M0
+%I1.6
+SR1
+C
+C
+
+[PAG 1470]
+XIV-158
+AUTOMAZIONE
+Fig. XIV.7.40  
+Si ricorda che l’esecuzione di una chiamata ad un sottoprogramma causa:
+–  l’arresto dell’analisi della rete in corso,
+–  l’esecuzione del sottoprogramma,
+–  la ripresa dell’analisi della rete interrotta.
+In Fig. XIV.7.40 è visualizzato il sottoprogramma 0 (SR0) che viene chiamato dal 
+rung 5 del programma master, qualora il selettore sia in posizione OFF e quindi il suo bit 
+negato %I1.6 attivi l’istruzione CALL SR0. Nel rung 1, mediante la fotocellula B3 
+(%I1.3) viene rilevata la presenza del prodotto e il conseguente settaggio del bit interno 
+%M1, mentre nel rung 2 lo stesso bit viene eventualmente resettato (dal pulsante di arre-
+sto %I1.0 oppure dal contatto del relè termico %I1.1) nell’eventualità di arresto del 
+sistema o di malfunzionamenti dovuti a sovraccarico del motore.
+–  Nel rung 3 viene programmato un timer per un tempo di attesa di 5 s, dopodiché (nel 
+rung 4) il flag di fine conteggio %TM0.Q provvede a settare le due uscite (%Q2.1 e 
+%Q2.2) che connettono gli avvolgimenti del motore asincrono del nastro in maniera da 
+avere la velocità di scorrimento più alta.
+–  Nel rung 5 la fotocellula B2 intercetta il prodotto e ferma il nastro trasportatore (rest di 
+%Q2.1 e %Q2.2), oltre a resettare anche il timer %TM0 che veniva tenuto alto dal bit %M1.
+–  La stessa fotocellula B2 attiva due timer: il primo (%TM1) tramite la sua uscita 
+%TM1.Q, per 4 s tiene alto il segnale che aziona l’espulsore (pistone Y2) collegato 
+all’output %Q2.4 e devia il prodotto dal nastro trasportatore, collocandolo nell’apposito 
+contenitore dei prodotti di tipo A; il secondo timer (%TM4) configurato come TOF (ritar-
+dato alla diseccitazione) provvede a far tornare alla task master, dopo 4 s, la lettura del pro-
+gramma da parte della CPU, mediante l’istruzione RETURN.
+MODIF: Y
+TM.P: 5
+MODE: TON
+TB: 1s
+%M1
+%I1.0
+%I1.3
+Rung 3
+%M1
+%TM0
+TM
+IN
+Q
+%I1.1
+Rung 1
+%M1
+Rung 2
+S
+R
+P
+%TM0.Q
+Rung 4
+%Q2.1
+S
+%Q2.2
+S
+
+[PAG 1471]
+AUTOMAZIONE
+XIV-159
+Fig. XIV.7.40   Segue.
+In Fig. XIV.7.41 è visualizzato il sottoprogramma 1 (SR1) che viene chiamato dal 
+rung 6 del programma master, qualora il selettore sia in posizione ON e quindi il suo bit 
+%I1.6 attivi l’istruzione CALL SR1.
+La programmazione è simile a quella della subroutine 0; le differenze riguardano 
+l’attivazione della velocità più bassa del motore anziché quella più alta e il pistone devia-
+tore di smistamento che viene azionato, che riguarda i prodotti di tipo B. 
+–  I rung 1 e 2 sono identici a quelli dell’altra subroutine. Sarà attivato infatti il merker 
+%M2 mediante l’ingresso della fotocellula B3 (%I1.3), bit interno che verrà resettato (nel 
+rung 2) dagli ingressi di arresto e del relè termico. Il merker %M2 azionerà il timer 
+%TM2, che dopo un tempo di attesa di 5 s provvederà, mediante il flag di fine conteggio 
+%TM2.Q, ad azionare l’uscita %Q2.0 che collega i morsetti del motore a triangolo.
+Fig. XIV.7.41  
+TB: 1s
+MODIF: Y
+TM.P: 4
+P
+%I1.5
+Rung 6
+TB: 1s
+IN
+MODIF: Y
+TM.P: 4
+%TM4
+TM
+IN
+MODE: TP
+TM
+%TM1
+%I1.5
+Rung 5
+P
+%M1
+RETURN
+%Q2.4
+Q
+Q
+R
+%Q2.1
+%Q2.2
+R
+R
+MODE: TOF
+%M2
+%I1.0
+%I1.3
+%I1.1
+Rung 1
+%M2
+Rung 2
+S
+R
+P
+
+[PAG 1472]
+XIV-160
+AUTOMAZIONE
+–  Il motore verrà avviato alla velocità più bassa per trasportare il prodotto alla stazione 
+di smistamento più vicina.
+–  Il pistone monostabile Y1 (%Q2.3) provvede a scaricare il prodotto nell’apposito con-
+tenitore, comandato dalla fotocellula B1 (%I1.4) che intercetta la confezione; questo gra-
+zie al timer monostabile %TM3 che è collegato (tramite %TM3.Q) all’uscita %Q2.3.
+–  La stessa fotocellula consente di riportare il programma alla task master con l’istru-
+zione RETURN programmata sull’uscita del timer %TM5 ritardato alla diseccitazione, 
+dopo i 4 s di attività del pistone di smistamento.
+Fig. XIV.7.41   Segue.
+Le apparecchiature di ingresso e di uscita al PLC sono cablate secondo lo schema di 
+Tav. XIV.7.11.
+MODIF: Y
+TM.P: 5
+MODE: TON
+TB: 1s
+Rung 3
+%M2
+%TM2
+TM
+IN
+Q
+%TM2.Q
+Rung 4
+%Q2.0
+S
+Rung 5
+%I1.4
+%M2
+R
+%Q2.1
+R
+P
+MODE: TOF
+TM.P: 4
+MODIF: Y
+TM
+IN
+TB: 1s
+%TM5
+Q
+P
+RETURN
+TM.P: 4
+MODIF: Y
+TB: 1s
+%TM3
+MODE: TP
+Q
+IN
+TM
+Rung 6
+%I1.4
+%Q2.3
+
+[PAG 1473]
+AUTOMAZIONE
+XIV-161
+Tav. XIV.7.11  
+N L
+Q1
+24V
+0V
+100/240V
+0V
+Out DC
+Input AC
+Modicon
+TSX Micro
+TER
+AUX
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+2
+4
+6
+8
+10
+12
+14
+16
+18
+I
+N
+P
+U
+T
+21 22
+23 24
+25 26
+27 28
+29 30
+31 32
+33 34
+35
+O
+U
+T
+P
+U
+T
+Battery
+20
+14
+15
+7
+N
+3
+1
+I
+5
+4
+2
+6
+U 11
+P
+9
+T 13
+10
+8
+12
+28
+P
+T 27
+20
+19
+17 18
+16
+O 23
+21
+U 25 24
+22
+26
+35
+U
+T
+31
+29
+33
+30
+32
+34
+15 14
+N
+7
+I
+4
+3
+2
+1
+6
+5
+13
+11
+U
+P
+T
+10
+8
+9
+12
+27
+T
+P
+28
+20
+17
+19 18
+16
+25
+21
+23
+O
+U
+24
+22
+26
+35
+33
+29
+31
+T
+U
+30
+34
+32
+INGRESSI
+BIT
+K1 CONTATTORE MARCIA VELOCITA' BASSA  M1
+K2 CONTATTORE MARCIA VELOCITA' ALTA MOTORE M1
+K3 CONTATTORE MARCIA VELOCITA' ALTA MOTORE M1
+Y1 PISTONE SCARICO PRODOTTI TIPO B
+Y2 PISTONE SCARICO PRODOTTI TIPO A
+S1 PULSANTE ARRESTO CICLO SMISTAMENTO
+S2 PULSANTE DI AVVIO CICLO SMISTAMENTO
+B1 FOTOCELLULA PRESENZA PRODOTTO
+B2 FOTOCELLULA PRESENZA PRODOTTO TIPO B
+USCITE
+RT CONTATTO RELE' TERMICO
+%Q2.4
+%Q2.0
+%Q2.1
+%Q2.2
+%Q2.3
+BIT
+%I1.0
+%I1.2
+%I1.3
+%I1.4
+%I1.1
+ASSEGNAZIONE I/O
+RT1
+B1
+S1
+S2
+S3
+Q2
+L3
+L2
+L1
+B3
+B2
+1W
+1V
+1U
+2U
+2V
+2W
+K2
+K1
+K3
+M1
+3
+Y2
+Y1
+B3 FOTOCELLULA PRESENZA PRODOTTO TIPO A
+S3 SELETTORE PRODOTTI TIPO A O B
+%I1.5
+%I1.6
+
+[PAG 1474]
+XIV-162
+AUTOMAZIONE
+7.8  Istruzioni di gestione del tempo
+Il blocco funzione orodatario consente tre tipi di operazioni:
+–  Programmazione temporale: comandare delle azioni ad orari e date definiti.
+–  Giornale: memorizzare il momento in cui avviene un determinato evento.
+–  Misurazione di durata: calcolo dell’intervallo di tempo intercorso tra due eventi.
+La messa a punto dell’orodatario viene effettuata tramite il menu configurazione del 
+software di gestione del PLC oppure da programma tramite le parole sistema che conten-
+gono i dati di settaggio dello stesso.
+Il formato dei parametri Data, ora e Durata definiti dalla norma IEC1131 -3 sono:
+–  TIME: è il formato (sssssssss.d)che consente di codificare in una doppia parola (32 
+bit) un numero limite di 0,4294967295 decimi di secondo pari a circa 13 anni e 7 mesi.
+–  DATE: è il formato (yyyy-mmmm-dd) che codifica una data in anno, mese, e giorno 
+con valori compresi tra 1990-01-01  2099-12-31.
+–  TIME_OF_DAY (TOD): è il formato (hh:mm:ss) che consente di codificare l’ora, i 
+minuti e i secondi. Il range di impiego è compreso tra 00:00:00  23:59:59.
+–  DATE_AND _TIME (DT): è il formato (yyyy-mm-dd-hh:mm:ss) che consente di 
+codificare anno, mese, giorno, ora, minuti e secondi. I valori utilizzabili vanno da 1990-
+01-01-00:00:00:  2099-12-31-23:59:59).
+Lettura scrittura orodatario
+È possibile leggere la configurazione corrente dell’orodatario mediante l’istruzione 
+RRTC (Read Real Time Clock) che consente di trasferire il dato configurato come for-
+mato data e ora (DT) in una tabella di 4 word; per esempio la scrittura:
+RRTC(%MW0:4)
+consente la memorizzazione del parametro DT (yyyy-mm-dd-hh:mm:ss) corrente 
+della macchina in 4 word a partire da %MW0. 
+Fig. XIV.7.42  
+La scrittura o meglio l’aggiornamento della data del sistema si effettua con l’istru-
+zione WRTC (Write Real Time Clock) che consente di trasferire il formato DT da una 
+serie di word al sistema. Un esempio di programmazione è visualizzato in Fig. XIV.7.42, 
+dove viene trasferito nel sistema #1000 (secondi), #12 (ore), #20 (minuti), #10 (mese), 
+#22 (giorno), #2003 (anno). Con l’istruzione PTC (Powerfail Time Clock) si legge l’ora 
+del sistema e il codice di arresto del controllore. La scrittura avviene su un dispositivo for-
+mato da 5 word.
+%I1.0
+P
+Rung 1
+WRTC (%MW0:4)
+OPERATE
+OPERATE
+OPERATE
+OPERATE
+OPERATE
+%MW0:= 16#1000
+%MW1:=  16#1220
+%MW2:=  16#1022
+%MW1:=  16#2003
+
+[PAG 1475]
+AUTOMAZIONE
+XIV-163
+Per esempio, la scrittura:
+PTC(%MW0:5)
+consente la memorizzazione del parametro DT corrente della macchina in 5 word a partire 
+da %MW0.
+Altra funzione implementata è quella di lettura del giorno della settimana 
+DAY_OF_WEEK(), che consente di leggere il giorno della settimana codificato con un 
+numero (1 = lunedì, 2 = martedì, 3 = mercoledì, ecc.) memorizzato in una word. Per esem-
+pio, la scrittura:
+%MW0:=DAY_OF_WEEK
+consente la memorizzazione del numero corrispondente al giorno corrente della settimana 
+nella word %MW0.
+Aggiunta e rimozione della data
+L’aggiunta o la sottrazione di una data ad una data origine si effettua con l’istruzione 
+ADD_DT() e SUB_DT(); mentre per le stesse operazioni su un’ora, si impiegano le istru-
+zioni ADD_TOD() e SUB_TOD().
+Variazioni dei tempi
+Lo scarto fra due date è possibile calcolarlo con le istruzioni: DELTA_D() (senza 
+ora), DELTA_DT (con ora) e DELTA_TOD (tra due ore)
+Conversione data ora per modifica
+La conversione di date nei vari formati in stringhe di caratteri è possibile con le istru-
+zioni DATE_TO_STRING(), DT_TO_STRING(), TIME_TO_STRING, 
+TOD_TO_STRING.
+Comando orodatario
+Questa funzione permette di comandare azioni a orari e a date predefiniti o calcolati. 
+Posiziona a 1 il parametro di uscita OUT se la data fornita dall’orologio PLC, al momento 
+della chiamata della funzione, appartiene al periodo programmato nei parametri 
+d’ingresso.
+Esempio
+Un esempio di utilizzo del sistema orodatario è visualizzato nella Fig. XIV.7.43.
+Una vasca per l’allevamento delle trote è equipaggiata con due pompe immerse. 
+Facendo ricadere a pioggia l’acqua che le due pompe sollevano si effettua l’ossigenazione 
+della stessa. Si formano però durante la giornata dei depositi di materiale vario che pos-
+sono essere tolti facendo girare i motori nel senso inverso. I due motori sono in servizio 
+continuo e si deve invertire il loro senso di rotazione per un tempo di 3 min, uno alla 
+volta, a distanza di 5 s l’uno dall’altro, per poi riprendere il funzionamento normale; 
+l’operazione viene eseguita ogni 24 ore alle ore 17:00 di ogni giorno della settimana. Nel 
+mese di gennaio l’impianto rimane fermo poiché‚ quando i pesci vengono trasferiti in una 
+seconda vasca la prima rimane fuori uso per consentire la normale manutenzione. Sono 
+previste le seguenti apparecchiature a corredo del PLC:
+–  il pulsante di start ciclo S1 (%I1.0) che avvia le due pompe (il primo motore alla chiu-
+sura di S1 e a distanza di 5 s l’altro);
+–  il pulsante di sgancio S2 (%I1.1) che serve ad arrestare l’intero sistema;
+–  il pulsante S3 (%I1.2) che esegue manualmente l’operazione di inversione del senso 
+di marcia dei due motori;
+–  i contatti dei relè termici RT1 (%I1.3) e RT2 (%I1.4) che proteggono dai sovraccari-
+chi i rispettivi motori M1 e M2;
+
+[PAG 1476]
+XIV-164
+AUTOMAZIONE
+–  le bobine dei contattori K1 (%Q2.0) e K2 (%Q2.1) che servono a controllare la telein-
+versione di marcia del motore M1 e le bobine dei contattori K3 (%Q2.2) e K4 (%Q2.3) 
+che servono a controllare la teleinversione di marcia del motore M2;
+–  le lampade di segnalazione H1 (%Q2.4) e H2 (%Q2.5) che hanno due modi di funzio-
+namento: luce fissa per il funzionamento normale del motore e luce lampeggiante quando 
+si è in fase di “pulizia pompe”, con la rotazione in senso contrario del motore.
+Fig. XIV.7.43  
+Il cablaggio delle apparecchiature di ingresso e di uscita rispetto al PLC è quello di 
+Tav. XIV.7.12, mentre il programma per questa applicazione è quello di Fig. XIV.7.44 che 
+funziona nel seguente modo:
+–  Considerato che i motori devono ogni giorno alla stessa ora invertire il loro senso di 
+rotazione si programma nel rung 1 una funzione orodatario.
+–  Il blocco funzionale si dovrà comporre di una programmazione annuale che prevede il 
+funzionamento dal 02/01 (01 febbraio) al 12/31 (31 dicembre) e di una settimanale che sia 
+attiva tutti i giorni (1 2 3 4 5 6 7) dalle ore 17:00 alle 17:01.
+Fig. XIV.7.44  
+3
+M1
+K1
+S1 (START)
+S2 (STOP)
+S3 (INVERSIONE MANUALE)
+H1 (M1 IN FUNZIONE)
+H2 (M2 IN FUNZIONE)
+K2
+K4
+K3
+M2
+3
+Rung 1
+* SCHEDULE( 16#0201, 16#1231, 2#0000000001111111,
+OPERATE
+*
+16#17000000, 16#17010000, %M2 )
+
+[PAG 1477]
+AUTOMAZIONE
+XIV-165
+Tav. XIV.7.12  
+N L
+Q1
+U
+P
+T
+10
+8
+9
+12
+27
+T
+P
+28
+20
+17
+19 18
+16
+25
+21
+23
+O
+U
+24
+22
+26
+35
+33
+29
+31
+T
+U
+30
+34
+32
+INGRESSI
+BIT
+K1 CONTATTORE MARCIA ORARIA MOTORE M1
+K2 CONTATTORE MARCIA ANTIORARIA MOTORE M1
+K3 CONTATTORE MARCIA ORARIA MOTORE M2
+K4 CONTATTORE MARCIA ANTIORARIA MOTORE M2
+H1 MOTORE M1 IN FUNZIONE
+H2 MOTORE M2 IN FUNZIONE
+S1 START
+S3 INVERSIONE MANUALE
+RT1 RELE' TERMICO MOTORE M1
+RT2 RELE' TERMICO MOTORE M2
+USCITE
+S2 ALT
+%Q2.4
+%Q2.5
+%Q2.0
+%Q2.1
+%Q2.2
+%Q2.3
+BIT
+%I1.0
+%I1.2
+%I1.3
+%I1.4
+%I1.1
+ASSEGNAZIONE I/O
+RT1
+RT2
+S1
+S2
+S3
+H1
+H2
+M1
+3
+M2
+3
+K2
+K4
+K3
+K1
+Q2
+24V
+0V
+100/240V
+0V
+Out DC
+Input AC
+Modicon
+TSX Micro
+TER
+AUX
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+2
+4
+6
+8
+10
+12
+14
+16
+18
+I
+N
+P
+U
+T
+21 22
+23 24
+25 26
+27 28
+29 30
+31 32
+33 34
+35
+O
+U
+T
+P
+U
+T
+Battery
+20
+14
+15
+7
+N
+3
+1
+I
+5
+4
+2
+6
+U 11
+P
+9
+T 13
+10
+8
+12
+28
+P
+T 27
+20
+19
+17 18
+16
+O 23
+21
+U 25 24
+22
+26
+35
+U
+T
+31
+29
+33
+30
+32
+34
+15 14
+N
+7
+I
+4
+3
+2
+1
+6
+5
+13
+11
+L3
+L2
+L1
+
+[PAG 1478]
+XIV-166
+AUTOMAZIONE
+–  La sintassi è SCHEDULE (DBEG, DEND, WEEK, HBEG, HEND, OUT) e le 
+caratteristiche dei parametri sono:
+–  Data d’inizio DBEG: parola che codifica la data di inizio del periodo (mese-
+giorno) in BCD (nell’intervallo 01-01  12-31). Nel caso specifico 16#0201 (1 
+febbraio).
+–  Data di fine DEND: parola che codifica la data di fine del periodo (mese-
+giorno) in BCD (nell’intervallo 01-01  12-31). Nel caso specifico 16#1231 (31 
+dicembre).
+–  Giorno della settimana WEEK: parola che codifica il giorno o i giorni della 
+settimana presi in considerazione nel periodo definito dai parametri DBEG e 
+DEND. I 7 bit di peso deboli rappresentano i 7 giorni della settimana: bit 
+6=lunedì, bit 5 = martedì,..., bit 0 = domenica. Nel caso specifico 
+02#0000000001111111 (tutti i giorni).
+–  Ora d’inizio HBEG: parola doppia che codifica l’ora d’inizio del periodo 
+durante la giornata (ore- minuti- secondi) in BCD formato ora del giorno (tipo: 
+TOD). Valori compresi nell’intervallo 00:00:00 23:59:59. Nel caso specifico 
+16#17000000 (ore 17:00).
+–  Ora di fine HEND: parola doppia che codifica l’ora di fine del periodo nella 
+giornata (ore- minuti-secondi) in BCD formato ora del giorno (tipo: TOD). 
+Valori compresi nell’intervallo 00:00:00 23:59:59. Nel caso specifico 
+16#17010000 (ore 17:01).
+Uscita OUT: bit che viene messo a 1 quando è vero il risultato dei confronti 
+effettuati dalla funzione orodatario rispetto all’ora del sistema. Nel caso speci-
+fico %M2 (il bit interno %M2).
+–  L’ingresso %I1.0 allo stato logico alto provoca la messa ON del bit %M0 che tramite 
+un contatto in OR con lo stesso %I1.0 si autoritiene.
+–  L’ingresso %I1.1, cablato esternamente come pulsante NC, serve all’eventuale arresto 
+dell’intero sistema.
+–  I bit %I1.2 e %M2 sono interblocchi che arrestano la marcia dei motori per poi 
+avviarli nel senso inverso mentre il bit %M5, come si vedrà successivamente, serve a 
+rimettere in funzione le pompe per il ciclo normale di ossigenazione.
+–  Nel rung 3 con il contatto %M0 ON (con %I1.3 e %Q2.1 chiusi) si attiva l’uscita %Q2.O.
+–  Lo stesso %M0 che mette in moto il primo motore, avvia la temporizzazione di %TM0.
+–  Nel rung 5, sempre con lo stesso bit %M0, quando sono trascorsi 5s dalla partenza di 
+M1 (uscita %Q2.0) e quindi il bit %TM0.Q è allo stato ON, con gli interblocchi %I1.4 
+(relè termico) e %Q2.3 (contattore senso inverso di rotazione) anch’essi allo stato logico 1 
+si attiva l’uscita %Q2.2 che avvia anche il secondo motore.
+–  Nei rung 5 e 6 le uscite %Q2.0 e %Q2.2, riprese con un contatto associato al rispettivo 
+bit, mettono ON le rispettive segnalazioni collegate alle uscite %Q2.4 e %Q2.5.
+–  La segnalazione si effettua a luce fissa, mentre la luce lampeggiante dovuta alla pre-
+senza del bit sistema %S6 si avrà quando i due motori gireranno nel senso inverso cioè 
+quando saranno attive le uscite %Q2.1 e %Q2.3.
+–  L’inversione del senso di marcia dei due “ossigenatori” partirà dunque automatica-
+mente con un impulso fornito dal bit %M2, oppure in modo manuale mediante l’ingresso 
+%I1.2 cablato appunto sul pulsante di inversione manuale S3 (rung 8).
+–  Nello stesso rung il bit %I1.1 serve sempre per l’arresto d’emergenza del ciclo, men-
+tre %M4 servirà a terminare il ciclo di inversione, trascorsi i 3 min stabiliti di durata della 
+funzione “pulizia pompe”.
+–  In un modo o nell’altro si determina comunque la messa ON del bit %M3 che con un 
+suo contatto messo in OR con i contatti che lo hanno attivato si autoritiene.
+
+[PAG 1479]
+AUTOMAZIONE
+XIV-167
+Fig. XIV.7.44   Segue.
+MODIF: Y
+TM.P: 5
+MODE: TON
+TB: 1s
+%M0
+%I1.0
+Rung 4
+%M0
+%TM0
+TM
+IN
+Q
+%M0
+Rung 2
+%M5
+%I1.1
+%I1.2
+%M2
+%Q2.1
+Rung 3
+%M0
+%I1.3
+%Q2.0
+%Q2.3
+%M0
+Rung 5
+%I1.4
+%Q2.2
+%TM0.Q
+%Q2.1
+Rung 6
+%Q2.0
+%S6
+%Q2.4
+%Q2.2
+%Q2.3
+Rung 7
+%S6
+%Q2.5
+
+[PAG 1480]
+XIV-168
+AUTOMAZIONE
+Fig. XIV.7.44   Segue.
+–  Nel rung 9 il bit %M3 avvia la temporizzazione di %TM1 che a sua volta tramite il bit 
+Quit %TM1.Q mette ON l’uscita %Q2.1 (rung 11) quando sono trascorsi i 5 s utili affin-
+ché‚ il motore si fermi e non si abbia quindi una brusca inversione di marcia dello stesso.
+–  Sempre con il bit associato al temporizzatore %TM1 si avvia un secondo timer 
+(%TM2) che trascorsi ancora 5 s metterà ON l’uscita %Q2.3 che avvierà in senso inverso 
+anche il motore M2.
+%M4
+%M3
+%M2
+Rung 8
+%I1.2
+%I1.1
+%M3
+MODE: TON
+%M3
+Rung 9
+TB: 1s
+MODIF: Y
+TM.P: 5
+IN
+%TM1
+TM
+Q
+MODE: TON
+%TM1.Q
+Rung 10
+TB: 1s
+MODIF: Y
+TM.P: 5
+IN
+%TM2
+TM
+Q
+%Q2.0
+Rung 11
+%TM1.Q
+%I1.3
+%Q2.1
+%I1.4
+%M3
+Rung 12
+%TM2.Q
+%Q2.3
+%Q2.2
+
+[PAG 1481]
+AUTOMAZIONE
+XIV-169
+Fig. XIV.7.44   Segue.
+–  Le righe di programma che attivano le uscite %Q2.1 e %Q2.3 sono caratterizzate dalla 
+presenza del rispettivo contatto collegato al relè termico (%I1.3 e %I1.4) e dall’inter-
+blocco delle due uscite che attivano la rotazione dei motori in senso inverso (%Q2.0 e 
+%Q2.2).
+–  Tornando ai rung 6 e 7, essendo attive le uscite %Q2.1 e %Q2.3, ciascuna in AND con 
+il clock sistema %S6, saranno di conseguenza ON le segnalazioni %Q2.4 e %Q2.5 in 
+modo intermittente, indicando quindi il funzionamento dei due motori nella modalità 
+“pulizia pompe”.
+–  Ancora un contatto del bit %M3 si ritrova nel rung 13 e serve a far partire il temporiz-
+zatore %TM3; trascorsi i 3 minuti programmati il bit %TM3.Q associato al timer %TM3 
+setta il bit %M4 (rung 14); con tale operazione si determina l’arresto dei due motori 
+dovuto allo sgancio delle uscite %Q2.1 e %Q2.3 in quanto con l’apertura del contatto NC 
+di %M4 presente nel rung 8 l’uscita interna %M3 va OFF e di conseguenza l’intero ciclo 
+che segue si arresta.
+–  In contemporanea si era attivato il temporizzatore %TM4 (rung 15) che dopo 5 s utili 
+all’arresto dei due motori attiva il bit %M5 che viene richiamato nella programmazione 
+del rung 2.
+%M5
+%TM4.Q
+Rung 16
+%M4
+S
+R
+MODE: TON
+%M3
+Rung 13
+IN
+TM.P: 3
+MODIF: Y
+TB: 1min
+TM
+%TM3
+Q
+MODE: TON
+TM
+IN
+TM.P: 5
+TB: 1s
+MODIF: Y
+%M4
+Rung 15
+Rung 14
+%TM3.Q
+%TM4
+Q
+%M4
+
+[PAG 1482]
+XIV-170
+AUTOMAZIONE
+–  Mentre quindi nel rung 16 si ha, sempre ad opera di %TM4.Q, il reset del bit %M4 che 
+attivava il temporizzatore, il bit %M5, programmato nel rung 15, rimette in funzione il 
+ciclo normale delle pompe.
+–  In ogni momento, tramite %I1.1 che è collegato al pulsante di arresto, o tramite 
+l’intervento dei rispettivi relè termici, che individuano un sovraccarico sui rispettivi cir-
+cuiti, i due motori si possono arrestare.
+Si ricorda che tutti gli esempi che sono stati proposti sono disponibili in formato .STX 
+nel DVD allegato per essere utilizzati con un PLC TSX 37 Schneider o con un qualsiasi 
+altro PLC che funzioni secondo le specifiche della norma IEC 1131-3 (CEI 65-40, CEI 
+EN 61131-3).
+BIBLIOGRAFIA
+AEG SCHNEIDER AUTOMATION, Controllori programmabili TSX Micro TSX 37-10/
+20/21 Manuale di messa in opera -, Groupe schneider, Torino, 1995.
+AEG SCHNEIDER AUTOMATION, Software PL7 Micro - Manuale di riferimento -, 
+Groupe Schneider, Torino, 1995.
+AEG SCHNEIDER AUTOMATION, Logiciel PL7 Micro - Manuel de référence -, Groupe 
+Schneider, France, 1995
+AEG SCHNEIDER AUTOMATION, Logiciel PL7 Micro - Manuel mise en oevre métiers 
+tome 1 et 2 -, Groupe Schneider, France, 1995
+AEG SCHNEIDER AUTOMATION, Logiciel PL7 Micro - Manuel modes opératories -, 
+Groupe Schneider, France, 1995
+ALESSANDRONI V. - GALEANO P., Sistemi d’automazione : i controllori programma-
+bili, Jackson, Milano, 1984.
+BERGAMASCHI L., Manuale di programmazione dei PLC, Hoepli, Milano, 2000.
+BIONDO G. - SACCHI E., Manuale di elettronica e telecomunicazioni, 5a edizione, 
+Hoepli, Milano, 2005.
+BOLTON W., Programmable Logic Controller, Fourth Edition, Elsevier Newnes, 
+Oxford, 2006.
+CELATI C., Processi - Sistemi - Automi, Hoepli, Milano, 1992.
+CGE, Manuale di riferimento Logicmaster 90-30, CGE Compagnia Generale Elet-
+tromeccanica, Milano, 1991.
+CGE, Manuale d’uso Controllori Programmabili serie 90-30, CGE Compagnia Gene-
+rale Elettromeccanica, Milano, 1991.
+GE FANUC AUTOMATION, Series 90-30 Programmable Controller ­ distributor semi-
+nar manual -, GE Fanuc Automation, North America, 1990.
+GROUPE SCHNEIDER - FORMAZIONE TECNICA -, Automation for yourself - Introdu-
+zione all’Automazione dei processi, Schneider Electric, Agrate (MI), 2000.
+GROUPE SCHNEIDER - FORMAZIONE TECNICA -, Automation for yourself - Introdu-
+zione all’Automazione industriale, Schneider Electric, Agrate (MI), 1999.
+GROUPE SCHNEIDER, PL7 Micro V3.4 Logiciel de programmation , Schneider Auto-
+mation, France, 1999.
+NORMA CEI 65-40 (IEC 1131-3; CEI EN 61131-3), Controllori programmabili parte 
+3: linguaggi di programmazione, CEI, Milano, giugno 1996.
+OMRON, Installation guide Sysmac Programmable Controllers C20/28/40H, Omron 
+Corporation, Japan, 1990.
+OMRON, Manuale dell’Operatore Controllore Programmabile Sysmac C20/28/40H, 
+Omron, Milano, 1991.
+OMRON, Manuale di installazione Controllori Programmabili Sysmac C20/28/40H,
+
+[PAG 1483]
+AUTOMAZIONE
+XIV-171
+Omron Milano 1990.
+OMRON, Sistemi per l’automazione, Omron, Milano, 1992.
+OMRON, System Manual Host Link Sysmac C series Rack PCs, Omron, Japan, 1991.
+ORTOLANI G. - VENTURI E. Automazione, Hoepli, Milano, 2001.
+ORTOLANI G. - VENTURI E. PLC Modicon TSX37 Micro Telemecanique, Hoepli, 
+Milano, 2007.
+ORTOLANI G. - VENTURI E. PLC Siemens Simatic S7-222, Hoepli, Milano, 2007.
+ORTOLANI G. - VENTURI E. PLC Telemecanique TSX17 - Applicazione ed esercita-
+zioni -, Hoepli, Milano, 2001.
+ORTOLANI G. - VENTURI E., Schemi e apparecchi negli impianti elettrici volume 2, 
+Hoepli, Milano, 1994.
+ORTOLANI G. - VENTURI E., Schemi e apparecchi nell’automazione industriale, 
+Hoepli, Milano, 1994.
+SCUOLA DI AUTOMAZIONE INDUSTRIALE, Corso base Simatic S5: esercizi, Siemens 
+AG, Amberg, 1992.
+SCHNEIDER ELECTRIC, Manuali Prodotto TSX, Modicon, Magelis, Altivar, Altistart, 
+Lexium, Schneider Automation, Agrate (MI), 2001.
+SCHNEIDER ELECTRIC, Manuali Prodotto TSX serie 7/17-20, Schneider Automation, 
+Agrate (MI), 1999.
+SCHNEIDER ELECTRIC, PL7 Micro V3.4 Logiciel de programmation , Schneider Auto-
+mation, France, 2001.
+SCHNEIDER ELECTRIC, PL7 V3.3/V3.4 Complément fonctionnel C, Schneider Automa-
+tion, France, 2000.
+SCHNEIDER ELECTRIC, Quick reference guide, Schneider Automation, France, 2000.
+SCHNEIDER ELECTRIC, Twido Training, Schneider Automation, Agrate (MI), 2002.
+SIEMENS, Simatic S5 ­ Basicpaket STEP5 ­ Handbuch, Siemens AG, Federal Republic 
+of Germany, 1991.
+SIEMENS, Simatic S5 Manuale Controllore programmabile S5 100U, Siemens AG, 
+Amberg, 1988.
+SIEMENS, Simatic S5 Manuale CPU 100/102/103, Siemens AG, Amberg, 1988.
+SIEMENS, Simatic Software. AWL e KOP per Simatic S7-200. Programmazione di 
+blocchi, Siemens AG, Amberg, 1995.
+SIEMENS, Simatic Software. Step 7 Micro/Dos, Siemens AG, Amberg, 1995.
+SIEMENS, Sistema di automazione s7-200. Installazione, configurazione e dati della 
+CPU, Siemens AG, Amberg, 1995.
+TELEMECANIQUE, Controllore programmabile TSX 17 ­ Messa in opera ­, Telemeca-
+nique, Torino, 1992.
+TELEMECANIQUE, Interface TSX 17 ACC5 Bus UNI-TELWAY Micro automate TSX 17-
+20 ­ Programmation PL7_2 et mise en oeuvre -, Telemecanique, France, 1988.
+TELEMECANIQUE, Langages PL7-2 Modes operatories V3, Telemecanique, France, 
+1991.
+TELEMECANIQUE, Langages PL7-2 Manuel de reference ­ TSX 17-20 / TSX 27 / TSX 
+47-10 / TSX 47-20 -, Telemecanique, France, 1991.
+TELEMECANIQUE, Modules d’extension Micro automate TSX 17 ­ Mise en oeuvre TSX 
+AEG/ASX TSX DTF 400 -, Telemecanique, France, 1991.
+TELEMECANIQUE, TSX 17 SCS 113 Serial Communication Module ­ User’s Manual RS 
+232C for TSX 17-20 -, Telemecanique, France, 1991.
+TELEMECANIQUE, TSX SCG 116 Bus UNI-TELWAY Micro automate TSX 17-20 ­ Pro-
+grammation  et mise en oeuvre maitre esclave -, Telemecanique, France, 1989.
+TELEMECANIQUE - SERVIZIO FORMAZIONE -, Esempi in ladder e in grafcet, Telemeca-
+
+[PAG 1484]
+XIV-172
+AUTOMAZIONE
+nique, Torino, 1990.
+TELEMECANIQUE - SERVIZIO FORMAZIONE -, I controllori Programmabili, Telemeca-
+nique, Torino, 1990.
+TELEMECANIQUE - SERVIZIO FORMAZIONE -, Introduzione all’automazione, 
+Telemecanique, Torino, 1987.
+TELEMECANIQUE - SERVIZIO FORMAZIONE -, TSX 17.20 presentazione ed uso con lin-
+guaggio PL7_2, Telemecanique, Torino, 1990.
+TELEMECANIQUE - SERVIZIO FORMAZIONE -, TSX 17.20/27/4 linguaggio PL7.2 (base), 
+Telemecanique, Torino, 1990.
+TELEMECANIQUE, Soluzioni integrate d’automazione, Telemecanique, Torino, 1991.
+SOFTWARE: Telemecanique Software PL7_2 rel 3.0 France 1990; Schneider Automa-
+tion software PL7 Micro ver 4.1 France 2001.
+CATALOGHI: CGE, Klockner Moeller, Omron, Sprecher Schuh, Schneider, Siemens, 
+Telemecanique, Texas Instruments.
+PUBBLICAZIONI: Elettronica Oggi, Automazione Oggi, Automazione e Strumentazio-
+ne, anni dal 1980 a 2009.
+
+[PAG 1485]
+Sezione XV
+Sistemi
+INDICE
+pag.
+1    SISTEMI DI REGOLAZIONE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+1.1    Generalità e concetti fondamentali. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+1.2    Modelli matematici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.3    Basi delle analogie  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.4    Schemi a blocchi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+1.5    Schema a blocchi di un sistema di controllo retroazionato. . . . . . . . . . . . .
+9
+1.6    Linearità, sovrapposizione degli effetti e stazionarietà  . . . . . . . . . . . . . . .
+10
+2    STUDIO NEL DOMINIO DEL TEMPO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+2.1    Risposta libera e forzata  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+2.2    Modi aperiodici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+2.3    Modi pseudoperiodici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+2.4    Risposte transitorie e a regime  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+2.5    Funzioni impulso, scalino, rampa  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+2.6    Specifiche della risposta temporale dei sistemi . . . . . . . . . . . . . . . . . . . . .
+15
+3    STUDIO NEL DOMINIO DI s E DI   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+3.1    Trasformata di Laplace . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+3.2    Proprietà della trasformata  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+3.3    Antitrasformata di Laplace  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+3.4    Funzione di trasferimento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+3.5    Rappresentazione nel dominio di  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+4    STABILITÀ E CRITERI DI STABILITÀ . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+4.1    Criterio di stabilità di Routh  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+4.2    Criterio di stabilità di Hurwitz  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+4.3    Metodi numerici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+4.4    Diagrammi Polari  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+4.5    Diagramma di Nyquist  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+4.6    Analisi di Bode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+4.7    Diagramma di Nichols  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+31
+4.8    Luogo delle Radici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+4.9    Stabilità Relativa . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+4.10    Classificazione dei sistemi, coefficienti di errore e sensibilità  . . . . . . . .
+37
+4.11    Reti di compensazione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+40
+4.12    Esempi di reti correttrici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+40
+4.13    Strutture fondamentali dei regolatori . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+42
+5    SISTEMI DI CONTROLLO A TEMPO DISCRETO . . . . . . . . . . . . . . . . . . . . .
+43
+5.1    Segnali campionati  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+43
+5.2    Teorema di Shannon . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+45
+
+[PAG 1486]
+XV-2
+SISTEMI
+5.3    Trasformata Zeta  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+46
+5.4    Proprietà della trasformata Zeta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+46
+5.5    Esempi di trasformate Zeta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+47
+5.6    Antitrasformata Zeta  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+48
+5.7    Algoritmi di controllo nei sistemi digitali . . . . . . . . . . . . . . . . . . . . . . . . . 
+49
+6    REGOLATORI E CONTROLLORI. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 49
+6.1    Regolatore ON-OFF . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 50
+6.1.1    Controllore Proporzionale a Sfasamento . . . . . . . . . . . . . . . . . . . . 
+ 51
+6.1.2    Controllore Proporzionale a Rapporto di Tempo . . . . . . . . . . . . . . 
+ 51
+7    TECNICHE DIGITALI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 52
+7.1    PLC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 53
+7.1.1    Regolatore P.I.D. nei PLC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 55
+7.1.2    Regolazione di livello in un serbatoio . . . . . . . . . . . . . . . . . . . . . . 
+ 61
+7.2    Microcontrollori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 64
+7.2.1    Controllore di Posizione a microcontrollore. . . . . . . . . . . . . . . . . . 
+ 66
+7.2.2    Realizzazione industriale del controllo di posizione . . . . . . . . . . . 
+ 69
+7.2.3    Controllo di temperatura a microcontrollore . . . . . . . . . . . . . . . . . 
+ 71
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+73
+1  SISTEMI DI REGOLAZIONE
+1.1  Generalità e concetti fondamentali
+Per controllo si deve intendere l’evento o l’insieme degli eventi necessari a modificare 
+nel modo voluto una determinata grandezza. Il controllo si dice automatico ogniqualvolta 
+le azioni sono derivate da dispositivi in grado di sostituirsi in tutto o in parte all’uomo. I 
+sistemi di controllo (fig. XV.1.1) sono classificati tramite diversi criteri, uno dei quali è quello 
+che tiene conto di come è realizzata l’azione di controllo: in particolare la distinzione fon-
+damentale è quella tra sistemi a catena aperta (open loop) e a catena chiusa (closed loop).
+Fig. XV.1.1  Sistema open loop a) e closed loop b).
+Il sistema si dice a catena aperta se l’azione di comando, magari dopo stadi intermedi 
+disposti in cascata, interviene direttamente sulla grandezza controllata, indipendentemente 
+dal valore di quest’ultima. Si definisce a catena chiusa il sistema dove la grandezza di uscita 
+viene confrontata con la grandezza in ingresso, e si utilizza la differenza tra le due per gene-
+rare un segnale che agirà a sua volta direttamente sull’uscita.
+x
+y
+a)
+x
+y
+e
+
+
+b)
