@@ -1,0 +1,1330 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 15/23 ===
+Chars: 44,938 | Offset: 627,941
+
+
+
+soluti delle fasi di Ex) e Esp. Perciò, per convenienza, si assumerà la fase di Ex come
+quella di riferimento (assegnando quindi a E, un angolo di fase nullo), e si indicherà
+la fase di Zp, relativamente a | quella di E.o, con &. Pertanto 6 è la differenza di fase
+tra il componente lungo y di È e il suo componente lungo x. Conseguentemente si
+pongono Exo e Eyy come
+
+Ex = 4,
+
+Ep = ae*,
+
+(7.48a)
+(7.48b)
+dove a, = [Exa] e ay = [Eyo| sono le ampiezze di Exo © Eg, rispettivamente. Quindi,
+per definizione, a, è @ non possono-assumere valori negativi. Inserendo le (7.484) e
+(7.48b) nelle (7.472) e (7.47b), il fasore del campo elettrico è dato da
+È) = (x0, + Jac), (7.49)
+e il corrispondente campo istantaneo è
+E(z, 1) = Re SO) et]
+= fa, cos (wt — kz) (7.50)
++ Yay cos (wt ~ kz + $).
+Quando si caratterizza il comportamento di un’onda elettromagnetica, due sono le
+proprietà di particolare interesse; l’ampiezza e la direzione del suo campo elettrico.
+L'ampiezza di E(z, 1) è data dal suo modulo |E(z, t)], cioè
+IEG, dI = (2G, ) +2%, A}?
+= {al cos (wt — ke) (7.51)
++9) cos (wt ~ kz + 6)j!?.
+Il campo elettrico E(z, tha componenti lungo le direzioni x e y. In una specifica po-
+sizione z, la direzione di E(z, 1) è definita nel piano x-y (in quel valore di z) dall’an-
+
+golo di inclinazione x, definito rispetto al componente di E(z, f) con fase di riferi-
+mento nulla, che in questo caso è il componente lungo x. Pertanto,
+Sp {Be
+& |. 52)
+Ve 0) Sun (DEI (7.52)
+In generale, sia ’ampiezza che la direzione di E(z, #) sono funzioni diz e di ¢. Nel se-
+guito si esaminano alcuni casi particolari.
+
+7.3.1 Polarizzazione lineare
+
+Lo stato di polarizzazione di un’onda che viaggia nella direzione z è determinato. trac-
+ciando il percorso seguito dalla punta del vettore E(z, ¢) in funzione del tempo in un
+piano ortogonale alla direzione di propagazione. Per convenienza e senza perdita di
+generalità, si assuma questo come il piano z = 0. Un’onda è detta polarizzata linear-
+mente se E,(z, t) e E,(z, t) sono in fase (cioe 6 = 0) o in opposizione di fase ($= x).
+Questo perché, fissato il valore di 2, per esempio z = 0, la punta di E(0, t) traccia una
+Enea retta nel piano x-y.Inz=0e per § = 0 0 2, la (7.50) si semplifica come segue
+
+E(0, )= (Ra, + fay) coswt (in fase),
+E(0, t) = (fa, — fa} cosut (in opposizione di fase).
+
+(7.53a)
+(1.536)
+
+7.3 Polarizzazione delle onde
+
+i ini i i izi i = = fa, — fay, che signi-
+Si esamini il caso di opposizione di fase. Per wt = 0, E(0, 0) = Ka, — Yay, ci
+fica che E si estende dall’origine in Figura 7.7 al punto @:, ay) nel quarto quadran-
+te del piano x-y. Al crescere di t, il:modulo di E(0, #) varia come il cos wt:
+
+|E(0, #)| = fa? + 22]? cosut, (7.54a)
+e l’angolo di inclinazione definito dalla (7.52) è dato da
+= tan! (=) (in opposizione di fase), (7.546)
+a,
+
+che è indipendente sia da z che da f. Perciò la lunghezza del vettore rappresentante
+E(0, 1) cala a zero per wt = 7/2, poi cambia direzione e cresce in ampiezza fino a
+ia + a2} nel secondo quadrante del piano x-y per wt = mr. Poiché è indipendente
+sia da Z che da t, E(z, t) mantiene la sua direzione rivolta lungo la linea che forma
+un’angolo + con l’asse x. ; .
+
+Se ay=0, 4=0° o 180° e l’onda diventa polarizzata lungo x; viceversa se
+a, = 0, = 90° 0 —-90° e l’onda è polarizzata lungo y.
+7.3.2 Polarizzazione circolare _
+Si consideri ora il caso particolare in cui le ampiezze dei componenti xey di E)
+siano uguali e la differenza di fase 6 = +7/2. Per ragioni che saranno evidenti a bre-
+ve, la polarizzazione dell’onda è detta circolare sinistrorsa quando 6 = x/2, e circo-
+lare destrorsa quando $ = —x/2.
+Polarizzazione circolare sinistrorsa
+
+Pera; = a, = ae 6 = 2/2, la (7.49) ela (7.50) diventano
+
+È) = (fa + gael!)e*
+
+=alk+jfe™, (7.552)
+E(z, )=Re a) e]
+
+= ka cos (wt — kz) + fa cos (wt ~ kz + 7/2)
+
+= fa cos (wt — kz) — fa sin (wt- iz). (7.556)
+
+285
+Figura 7.7
+Onda polarizzata -
+linearmente che si propaga
+
+in direzione +z (ad uscire
+dal foglio).
+
+[PAG 151]
+286 Capitolo 7 — Propagazione delle onde piane | 73 Polarizzazione delle onde 287
+
+Il corrispondente modulo e angolo di inclinazione sono dati da Antenna
++ trasmittente
+
+Be ol= [26 +a 0]
+
+= (a? cos (wt — kz) +a? sin? (wt — ta)!" i
+=a, (1.562)
+Eyl, 1)
+
+ve.) mew FE
+
+Avvitamento sinistrorso
+
+= tan! =asin (ut — le), nello spazio
+acos (wt — kz) {
+= —(ut—k). (7.560) : Rotazione destrorsa
+Si può osservare che in questo caso il modulo di E è indipendente sia da z che da t ! nel piano i
+mentre + dipende da entrambe le variabili. Queste dipendenze funzionali sono oppo- i Figura 7.9 Onda con polarizzazione circolare destrorsa irradiata da un'antenna a elica.
+
+ste a quelle viste nel caso di polarizzazione lineare.
+
+Per un valore fissato della posizione z, per esempio z = 0, la (7.56b) fornisce
+4 = —wt; il segno negativo indica che l’angolo di inclinazione cala al crescere del |
+tempo. . Lo. .
+
+Come illustrato in Figura 7.8(a), la punta di E() traccia una circonferenza nel pia- Esempio 7.2 Onda con polarizzazione circolare destrorsa
+
+no x-y e, mentre si guarda l’onda avvicinarsi, ruota in senso orario in funzione del Un’onda piana destrorsa con modulo del campo elettrico pari a 3 (mV/m) sta viaggian-
+tempo. Tale onda è detta polarizzata circolarmente in senso sinistrorso, perché quan- do nel verso delle y positive in un mezzo dielettrico con e = 4e0, 2 = po € 0 = 0. Sela
+do il pollice della mano sinistra punta lango la direzione di propagazione dell’onda, frequenza dell’onda è 100 MHz, si trovi l’espressione di E(y, 1) e H(y, 2).
+
+in questo caso la direzione z, le altre quattro dita puntano nella direzione di rotazione
+dik.
+
+Soluzione Poiché l'onda sta viaggiando nella direzione delle y positive, i suoi com-
+i ponenti di campo devono essere rivolti lungo le direzioni x e z. La rotazione di E(y, t) è
+| illustrata in Figura 7.10, dove 3 è uscente dal foglio.
+i
+
+Polarizzazione circolare destrorsa
+Pera = a, = ae 6 = —7n/2, siha
+
+|E@,d)|=¢ w= (wt—k). (7.57)
+
+3 28
+
+aa
+
+Il percorso tracciato da E in funzione di t è mostrato in Figura 7.8(b) per z = 0. Per
+¢ . la polarizzazione destrorsa, le dita della mano destra puntano nella direzione di rota-
+zione di E quando il pollice è diretto lungo la direzione di propagazione dell’onda.
+La Figura 7.9 illustra un’onda polarizzata circolarmente in senso destrorso generata |
+da un’antenna a elica. Si noti che la polarizzazione è definita dalla rotazione di E in
+funzione del tempo in un piano fissato, ortogonale alla direzione di propagazione,
+ed è opposta alla direzione di rotazione di ¥ in funzione della distanza in un fissato
+
+istante.
+
+Figura 7.8 i
+
+Onda piana polarizzata Figura 7.10 L’onda con polarizzazione circolare destrorsa dell’Esempio 7.2.
+
+circolarmente che si i
+
+propaga in direzione +2 I
+
+(ad uscire dal foglio). i Per confronto con l’onda polarizzata circolarmente in senso destrorso mostrata in
+Figura 7.8(b), si può assegnare un angolo di fase nullo al componente lungo z di É(y) e
+uno spostamento di fase $ = ~/2 al componente lungo x. Entrambi i componenti han-
+
+no un’ampiezza a = 3 (mV/m). Perciò
+E(y) = 88, +28,
+= kae FP + fae
+=(-îj+2)3e? (mVim),
+
+(a) Polarizzazione circolare sinistrorsa (b) Polarizzazione circolare destrorsa
+
+[PAG 152]
+LF
+
+GR A
+
+288
+
+Figura 7.11
+
+Ellisse di polarizzazione
+nel piano x-y per l'onda
+che si propaga in direzione
++z (uscente dal piano del
+foglio).
+
+Capitolo 7 — Propagazione delle onde piane
+
+e applicando la (7.39a) si ottiene
+HG) =— 9 x EQ)
+
+Fx (8 +930"
+
+wis lms lm
+
+= 7 (+e (mA/m).
+Con w = 2af = 2m x 108 (rad/s), il numero d'onda k vale .
+wi mx 1084 _ 4
+
+k= =i ae
+c igs "37 (dm),
+mentre l’impedenza intrinseca 7 è data da
+Mr (0.
+
+ve va
+Quindi le funzioni istantanee E(y, #) e H{y, #) sono date da
+Ey, ft) = Re [Eo al
+= Re[(-¥/ + 2)3e%e™"]
+= 3(K sin (wt — ky) +Zc0s (wt — ky] | (mVim),
+ly, t) = Re [i0) #]
+= Re È (+ cai
+
+= nl cos (wt — ky) — sin (wi — ly)] | (mA/m),
+
+con w = 2m x 10 (rad/s)e k = 47/3 (rad/m).
+
+7.3.3 Polarizzazione ellittica
+
+Nel caso più generale, dove a, # 0, a, # 0 e 6 # 0, la punta di E traccia un’ellisse
+nel piano x-y e l'onda è detta polarizzata ellitticamente. La forma dell’ellisse e il suo
+senso di percorrenza, destrorso o sinistrorso, sono determinati dai valori del rapporto
+(a,/a,) e dalla differenza di fase 6.
+
+y Angolo di ellitticita
+
+Angolo di
+
+maggiore Asst rotazione
+
+minore
+
+Ellisse di
+polarizzazione
+
+7.3 Polarizzazione delle onde
+
+L’ellisse di polarizzazione mostrata:in Figura 7.11 ha l’asse maggiore ag lungo la dire-
+zione £ e l’asse minore a, lungo la direzione 7. L'angolo di rotazione 7 è definito co-
+me l’angolo tra l’asse maggiore dell’ellisse e una direzione di riferimento, qui scelta
+coincidente con l’asse x, con y compreso nell’intervallo —1/2 < y < x/2. La forma
+dell’ellisse e il suo senso di rotazione sono caratterizzati dall’angolo di ellitticita x de-
+finito come segue:
+
+tny=+tiz4 (1.58)
+
+x ag R° °
+
+con il segno più che corrisponde a una rotazione sinistrorsa e il segno meno a una de-
+strorsa. I limiti di variazione per x sono —m/4 < x < 7/4. La quantità R = ag/an è
+detta rapporto assiale dell’ellisse di polarizzazione e varia tra 1, per la polarizzazio-
+ne circolare, e co, per la polarizzazione lineare. Gli angoli di polarizzazione Y e x so-
+no legati ai parametri dell’onda a,, a, e 6 da?
+
+tan 2y = (tan2yo) cos$ (-n/2 Sy < 7/2), (7.59a)
+sin2x = (sin2%0) sind (—a/4< x < 1/4), (7.59)
+
+dove yp è un angolo ausiliario definito come
+
+tendo =  (0<%<3). (7.60)
+
+Schemi dell’ ellisse di polarizzazione sono mostrati nella Figura 7.12 per varie combi-
+nazioni degli angoli (Y, x).
+
+L’ellisse si riduce a una circonferenza per x = +45° e a una linea per x=0.
+Valori positivi di x, corrispondenti a sin 6 > 0, sono associati a rotazioni sinistror-
+se mentre valori negativi di x, corrispondenti a sin 6 < 0, sono associati a rotazioni
+
+x
+
+| yo ~ 90° ~45°
+
+45° Polarizzazione circolare
+sinistrorsa
+
+22.5° Polarizzazione ellittica: {)
+sinistrorsa
+
+0° Polarizzazione lineare |
+
+©
+
+O
+
+OZ 0 O
+0
+
+-22.5° Polarizzazione ellittica {)
+destrorsa
+
+O
+
+-— 45° Polarizzazione circolare O
+destrorsa
+
+45°
+
+Sx 8 O
+
+O
+
+2899
+
+90°
+
+Figura 7.12 Stati di polarizzazione per varie combinazioni degli angoli di polarizzazione (y, x) per un’onda che viaggia in
+
+direzione perpendicolare uscente dal piano del foglio.
+
+? Da M. Bom ed E. Wolf, Principles of Optics, New York:Macmillan, 1965, p. 27.
+
+[PAG 153]
+asma gy
+
+Capitolo 7 — Propagazione delle onde piane
+
+destrorse. Poiché le ampiezze a, e a, sono, per definizione, numeri non negativi, il
+rapporto ay/a, può variare tra zero, per una polarizzazione lineare lungo x, e 00, per
+una polarizzazione lineare lungo y. Di conseguenza, l’angolo wy è limitato nell’inter-
+vallo 0 < 10 < 90°. Tramite la (7.59a) si ottengono due possibili soluzioni per i va-
+lori di y, entrambi all’interno dell’intervallo definito da ~x/2 a 1/2. La scelta giusta
+è indicata dalla regola seguente:
+
+47> 0 secosé > 0,
+
+¥ <0 secos 6 < 0.
+
+Riassumendo, il segno dell’angolo di rotazione + è lo stesso segno del cos é e il se-
+gno dell’angolo di ellitticita x è lo stesso segno del sin 6. :
+
+Esempio 7.3 Stato di polarizzazione
+Si determini lo stato di polarizzazione di un’onda piana con campo elettrico
+
+E(z, t) = &3 cos (wt — kz + 30°)
+— 34sin(wt-k+45) (mVim).
+
+Soluzione Si inizi convertendo il secondo termine in un coseno:
+
+E= 3 cos (wt — kz + 30°)
+— 34 cos (wt — kz + 45° — 90°)
+= £3 cos (wt — kx + 30°) — #4 cos (wt — kz — 45°).
+
+Il corrispondente fasore E(z) è
+È (2) = £3e EP" — 3 dee
+= Feo 4 9 de He eH g/l"
+= Rel + ge HIBS
+ove si è sostituito il segno negativo del secondo termine con e'!*° in modo da avere
+un’ampiezza positiva per entrambi i termini, così da poter utilizzare le definizioni date
+nel Paragrafo 7.3.3. Secondo l’espressione di E(z), gli angoli di fase dei componenti x €
+y sono 6,=30° e 6,=135° che danno una differenza di fase
+
+6 = 6, — 6 = 135° — 30° = 105°. L'angolo ausiliario yy si ottiene da
+-1f % -1f4 °
+hy = — | =tan™ | =} =53.1°.
+wome(Z) <0 (3)
+
+tan 2y = (tan 240) cos 6
+= tan 106.2° cos 105°
+= 0.89,
+
+Dalla (7.59a),
+
+che fomisce due soluzioni per 7, cioè y = 20.8° e y = —69.2°. Poiché cos 5 < 0, il va-
+lore corretto di y è —69.2°. Dalla (7.59b)
+sin 2x = (sin 24) sin é
+= sin 106.2° sin 105°
+=0.93 oppure x=34.0°.
+
+Il modulo di x indica che l’onda è polarizzata ellitticamente e la sua polarità positiva
+specifica la sua polarizzazione come sinistrorsa.
+
+7.4 Propagazione di onde piane in mezzi con perdite
+
+Domande di verifica
+
+7.4 Un’onda polarizzata ellitticamerité è caratterizzata dalle ampiezze a, e a, e dal-
+la differenza di fase 6. Se a, e a, sono entrambe non nulle, quale deve essere
+il valore di 6 affichè lo stato di polarizzazione si riduca a una polarizzazione li-
+neare?
+
+7.5 Quale delle due seguenti descrizioni definisce un’onda polarizzata circolarmente
+in senso destrorso: un'onda incidente su un osservatore è polarizzata circolar-
+mente in senso destrorso se il suo campo elettrico, visto dall’osservatore, ruota in
+senso antiorario (a) in funzione del tempo in un piano fissato, perpendicolare alla
+direzione in cui sta viaggiando l’onda o (b) in funzione della distanza percorsa
+per un valore fissato di ?
+
+Esercizio 7.5 Il campo elettrico di un’onda piana è dato da
+E(z, :)=3c0s(wt-k)+$4cos(wt-k) (Vin).
+Si determini (a) fo stato di polarizzazione, (b) il modulo di E e (c) l'angolo di inclinazione.
+
+SOLUZIONE (a) Polarizzazione lineare, (b) |E| = 5 cos (wt — kz) (Vim), (c) vw = 53.1°.
+
+Esercizio 7.6 Il fasore campo elettrico di un'onda TEM è dato da È = (9 Ze". Si
+determini lo stato di polarizzazione.
+
+SOLUZIONE Polarizzazione circolare in senso destrorso.
+a re IA
+
+7.4 Propagazione di onde piane in mezzi con perdite
+
+Per esaminare la propagazione delle onde in un mezzo conduttore, si ritorni all’equa-
+zione delle onde data dalla (7.15)
+
+VE -7E =0, (7.61)
+con
+of = ~w pe, = -w ule’ — je"), (7.62)
+dove e = e e e” = 7/w. Poiché y è complessa, si può esprimere come
+q=a+/6, (7.63)
+
+dove a è la costante di attenuazione del mezzo e f è la costante di fase. Sostituendo
+7 con { +8) nella (7.62) si ha
+
+{a+j9)° = (o? - 8°) +208
+
+=-w pe! + ju? pe". (7-64)
+
+Le regole dell’algebra complessa richiedono che la parte reale e quella immaginaria
+dell’equazione siano uguali in entrambi i membri. Perciò
+
+of — FP = uP ye! (7.65a)
+208 = ue". (7.65b)
+
+[PAG 154]
+aay
+
+Wie RET
+
+Capitolo 7 — Propagazione delle onde piane
+
+Risolvendo queste due equazioni per a € si ottiene:
+
+I 3 12 o
+
+onal Z| 1+ (5) - |} (Npim), (7.669)
+3 1/2
+
+8= ad I) + (2) + i (rad/m). (7.666)
+
+Per un’onda piana uniforme con un campo elettrico E =iÉ) che viaggia nella di-
+rezione delle z positive, l'equazione delle onde data dalla (7.61) si riduce a
+
+LE (2)
+
+a  E,(2) = 0. (7.67)
+La soluzione di questa equazione fornisce
+EQ) = £82) = Rhye ™ = BE gee ™. (7.68)
+
+Il campo magnetico associato può essere determinato (1) applicando la (7.2b):
+Vx E = -jwu, (2) applicando la (7.39a): H = (K x E)/7m, dove n. è Pimpedenza
+intrinseca del mezzo con perdite oppure (3) per arialogia con il caso senza perdite.
+Ognuno di questi approcci fornisce
+
+~ = È, E,
+A@ = pf) = 9 EO = 9 ran, (7.69)
+Ne Me
+
+dove
+
+n= (E- Bug)" (A). (7.70)
+
+Si è notato in precedenza che in mezzo non conduttore, E(z, f) è in fase con H(z, f),
+ma poiché 7 è una quantità complessa in un mezzo conduttore, i campi non hanno
+più la stessa fase, come verrà illustrato nell’Esempio 7.4. Dalla (7.68), l'ampiezza di
+Ex(2) è data da
+
+{Ex = [Eee ™| = |Eale"®, (7.71)
+
+che cala esponenzialmente con z con un tasso specificato dalla costante di attenuazio-
+ne a. Poiché H, = E,/n., anche l'ampiezza di Hy si attenua secondo e~™. Il proces-
+so di attenuazione converte in calore parte dell’energia trasportata dall’onda elettro-
+magnetica, come risultato del processo di conduzione nel mezzo. Dopo una distanza
+z= 6, tale che
+
+1
+b= (m), (17)
+
+* Pampiezza dell’onda decresce di un fattore e! ~ 0.37 rispetto al suo valore in
+z = 0, come mostrato in Figura 7.13. La distanza 6,, chiamata spessore pellicolare 0
+spessore di penetrazione del mezzo, caratterizza quanto un’onda elettromagnetica
+può penetrare in un mezzo conduttore. In un dielettrico perfetto si ha c = 0, perciò
+
+a = 0 e quindi 5, = co. Cosi nello spazio vuoto, un’onda piana si può propagare in-
+
+I
+|
+
+74 Propagazione di onde piane in mezzi con perdite
+
+z
+
+Figura 7.13 Attenuazione del modulo di £,(z) con la distanza z. Lo spessore di penetrazione 6,
+è il valore diz in corrispondenza del quale |£,(z)|/{E.0] = e~', ovveroz = 6, = I/a.
+
+definitamente senza perdite. Viceversa, se il mezzo è ua conduttore perfetto con
+og = 00, l'utilizzo della e = 0/w nella (7.662) porta ad @ = co e quindi $; = 0, In
+un cavo coassiale, se il conduttore esterno è progettato in modo da avere uno spesso-
+re pari a diversi spessori pellicolari; si evita che l’energia all’interno del cavo fluisca
+all’estemo così come lo si scherma contro la penetrazione di energia elettromagneti-
+ca dall’esterno.
+
+Le espressioni date dalle (7.66a),.(7.66b) e (7.70) per a, 8 e n: sono valide per un
+mezzo lineare, isotropo e omogeneo. Se il mezzo è un dielettrico perfetto (0 = 0),
+queste espressioni si riducono al caso senza perdite [Paragrafo 7.2], in cui si aveva
+a=0,8=k=wy/PE en: = n. Per un mezzo con perdite, il rapporto e /e' = o/we
+appare in tutte queste espressioni e gioca un ruolo importante nel determinare l’entità
+delle perdite del mezzo. Quando e /e’ < 1, il mezzo è detto dielettrico a basse per-
+dite mentre quando ¢” /e’ > 1, il mezzo è definito come un buon conduttore. in pra-
+tica, il mezzo può essere considerato come un dielettrico a basse perdite se
+e" [e < 107?, come un buon conduttore se e /e' > 10? e come un semiconduttore se
+107? < "fe < 10°.
+
+7.4.1 Dielettrico a basse perdite
+Dalla (7.62), l’espressione generale per 7 è data da
+
+dI
+
+Y =jovie(1 -i5) . (7.73)
+Per qualsiasi quantita |x| < 1, la funzione (1 — x)" ? può essere approssimata dai pri-
+mi due termini del suo sviluppo in serie, ovvero (1 — a)! Pa (1- x/2). Applicando
+questa espansione alla (7.73) per un dielettrico a basse perdite con x =je"/e' e
+e" fe’ «1 si ottiene
+
+124o/o8 (1 st) ° (7.74)
+
+Le parti reale e immaginaria della (7.74) forniscono
+
+we" fu _0 fp
+2 (e-s(E (Np/m), (7.752)
+
+pe = w/e (rad/m). (7.75b)
+
+IR
+
+a
+
+8
+
+IR
+
+[PAG 155]
+YEE DETTA
+
+294
+
+Capitolo 7 - Propagazione delle onde piane
+
+Si noti che l’espressione di £ è la stessa di quella del numero d’onda & di un mezzo
+senza perdite. Applicando l’approssimazione (1 — x)! 2 2 (1+x/2) alla (7.70) si
+
+ottiene
+~ {E .e'\_ fu _o
+RE We 14S) = (E) (7.762)
+
+In pratica, queste espressioni approssimate per a, 8 e 7: sono usate tutte le volte che
+e" Je! = o/we < 1/100, nel qual caso il secondo termine nella (7.762) può essere
+
+ignorato. Quindi,
+asi (7.160
+
+che è la stessa espressione data dalla (7.31) nel caso di assenza di perdite.
+
+7.4.2 Buon conduttore
+
+Si consideri ora il caso di un buon conduttore caratterizzato da <”/e’ > 100. Sotto
+questa condizione, le (7.662), (7.66b) e (7.70) possono essere approssimate come se-
+
+gue:
+as wy = uf Z = ynfpo (Np/m), (7.772)
+B=a®yvnfpo (rad/m), (7.776)
+
+ne fE=04fE=14)£ @. 079
+
+Nella (7.77c), si è utilizzata la relazione data daila (1.53): Vj = (1 +j)/v2. Per un
+conduttore perfetto con o = oo, queste espressioni forniscono a = 8 = 00 em = 0.
+Un conduttore perfetto è equivalente a un cortocircuito.
+
+Le espressioni dei parametri propagativi nei vari tipi di mezzi sono riassunti nella
+Tabella 7.1. ‘
+
+Tabella 7.1 Espressioni di a, 8, 1, Up € A per vari tipi di mezzi.
+
+Mezzo Mezzo Mezzo Buon Unità di
+qualsiasi senza perdite a basse conduttore misura
+(o=0) perdite —(e”/e’ > 1)
+(fe <1)
+= uf ey" af
+a= off 14 (£) -] 0 se Gia Nom)
+uN? 12
+Bs fF 1+(5) +] wi ug van (edie)
+= E e B C a
+we f2(1-i5) e Bont  @
+© Up = w/B 1) fie 1 fie Vella (Ws)
+A= 27/8= up/f Uplf Up/f up/f m
+
+Note: e = e; e” = o/w; nello spazio libero e = co, 4 = pio; nella pratica, un materiale è considerato un
+mezzo a basse perdite se e”/e’ = ¢/we < 0.01 e un buon conduttore se #*/e > 100.
+
+74 Propagazione di onde piane in mezzi con perdite
+Esempio 7.4. Onda piana in acqua marina
+
+Un’onda piana uniforme si propaga nel mare verso il basso nella direzione positiva del-
+l’asse z, con il piano x — y corrispondente alla superficie del mare e z = 0 che indica un
+punto subito ai di sotto della superficie stessa. I parametri costitutivi dell’acqua di mare
+sono er= 80, 4 =1 e g=4 S/m. Se il campo magnetico in z=0 è dato da
+H(0, £) = 3 100 cos(2 x 10°1+ 15°) (mA/m),
+
+{a) si determini l’espressione di E(z, 1) e H(z, ¢);
+(b) si calcoli la profondità per cui l'ampiezza di E è 1% del suo valore in z = 0.
+
+Soluzione (a) Poiché H è diretto lungo $ e la direzione di propagazione è 2, E deve
+essere rivolto lungo £. L'espressione fasoriale dei campi è quindi:
+
+E() = RE oe Ce, (7.782)
+fia=; = sel, (1.786)
+‘
+
+Per determinare a, 8 ed 7. per l’acqua marina, si calcoli dapprima il rapporto ¢/e’.
+
+Dall’argomento della funzione cosinusoidale H(0, 1) si deduce che w = 27 x 10? (rad/s)
+
+e quindi f = 1 kHz. Pertanto
+eg o 4
+e we were 27x10 x 80 x (10-9/367)
+=9x 10°,
+
+Dato che e”/e’ > I, l’acqua marina è un buon conduttore a | kHz. Si possono quindi
+utilizzare le espressioni per i buoni conduttori riportate in Tabella 7.1:
+
+a= vifpo
+= Vit x 10? x 47 x 10-7 x 4
+
+=0.126 (Npim), (7.792)
+B=a=0.126 (rad/m), (7.79b)
+a ao
+te = (Lt)
+= (vie ie = 0.044e7/4 (9). (7.796)
+
+Poiché non sono date informazioni esplicite sull’ampiezza del campo elettrico Ey, que-
+sta deve essere assunta complessa, cioè Exo = |Exo|e/®. I campi elettrico e magnetico
+istantanei dell’onda sono quindi dati da:
+
+EG, 1) = Re[R|Eole*e ee]
+= $lEsole ©! cos (24 x 10° ~ 0.1262 + go) (Vim), (7.802)
+
+= Hop Eole® oo jb put
+Hz, )= rely le eel
+= $22.5|Exole"®!25 cos (2m x 10%£
+— 0.1262+ do ~ 45°} (A/m). (7.806)
+Inz=0
+HO, 2) = $22.5|E,9| cos (27 x 10° + Go — 45°) (Alm). (7.81)
+
+295
+
+[PAG 156]
+2%
+
+Capitolo 7 - Propagazione delle onde piane
+
+Confrontando ia (7.81). con l’espressione data dal testo del problema
+oo AO, ) = ¥ 100 cos (2m x 10°#+15°) (mA/m),
+si deduce che
+
+22.5|E,o| = 100 x 107
+ovvero
+
+|Eol=444 (mV/m),
+
+do -45°=15° 0 by = 60°.
+Pertanto le espressioni finali di E(z, ¢) e H(z, ¢) sono:
+E (2, 1) = &4.Ade O12 cos (2 x 10° - 0.1262 + 60°) (mV/m), (7.82a)
+A(z, t) = $ 100°! cos (27 x 10°¢ — 0.1262 -+ 15°)  (mA/im). (7.82b)
+
+(b) La profondità per cui l’ampiezza di E si è ridotta all’1% del suo valore iniziale in
+z=Osiottiene da
+_ In(0.01) —
+
+— g701268 =
+0.01 =e 0 z= 9796 36 m.
+
+Esercizio 7.7 1 parametri costitutivi del rame sono p= po = 4x x 10° (Hm),
+€ = €9 & (1/36m) x 107° (Fim) eo = 5.8 x 107 (S/m). Assumendo questi parametri in-
+dipendenti dalla frequenza, per quale intervallo di frequenze dello spettro etettromagneti-
+co [si veda la Figura 1.15] il rame è un buon conduttore?
+
+SoLuzIoNE f < 1.04 x 10! Hz, che include lo spettro radio, le regioni dell’infrarosso e
+del visibile e parte dello spettro ultravioletto.
+
+EseRcizio 7.8 In quale intervallo di frequenze il terriccio asciutto, avente e; = 3, 4, = 1
+e a = 10~ (S/m), può essere considerato un materiale dielettrico a basse perdite?
+
+Soluzione f > 60 MHz.
+
+Esercizio 7.9 Per un’onda che viaggia in un mezzo con spessore di penetrazione ds,
+quanto vale l’ampiezza di E a una distanza pari a 36, rispetto al suo valore iniziale?
+
+SoLuzionE e73 = 0.05 ovvero il 5%.
+a
+
+7.5  Flusso di corrente in un buon conduttore.
+
+Quando una tensione continua è applicata agli estremi di un filo conduttore, la cor-
+rente che fluisce lungo il filo presenta una densità di corrente uniforme J sulla sezio-
+ne del filo, ovvero J ha lo stesso valore sia lungo Passe del filo che lungo il perime-
+tro esterno [Figura 7.14(a)]. Questo non è vero nel caso di corrente alternata. Come
+si vedrà in breve, la densità di corrente nel caso tempo-variante è massima lungo il
+perimetro e decresce esponenzialmente in funzione della distanza verso l’asse del filo
+
+” {Figura 7.14(b)]. Infatti a frequenze molto elevate la maggior parte della corrente flui-
+
+sce attraverso un sottile strato esterno del filo e, se il materiale che costituisce il filo è
+un conduttore perfetto, la corrente scorre completamente sulla superficie del filo.
+
+7.5 Flusso di corrente in un buon conduttore
+
+VO
+(a) Caso d-c (b) Caso a-c
+
+Prima di trattare il caso di fili con sezione circolare, si consideri la geometria più
+semplice di un solido semi infinito, come mostrato in Figura 7.15(a). Il solido con-
+duttore ha una profondità infinita e una superficie piana coincidente con il piano x-y.
+Se in z = 07, ovvero nel mezzo appena sopra la superficie del conduttore, esiste un
+campo elettromagnetico polarizzato lungo x con E = ££) e H = $£0/7, allora un
+campo elettromagnetico con stessa polarizzazione sarà indotto nel mezzo conduttore,
+formando un’onda piana che viaggia lungo la direzione positiva dell’asse z. Come
+conseguenza della condizione al contorno che impone la continuità del componente
+tangente di E sulla superficie di separazione di due mezzi contigui, in z = 0*, ovvero
+appena sotto la superficie, il campo elettrico dell'onda è E(0) = &Zo. I campi del-
+l’onda elettromagnetica a una generica profondità z nel conduttore sono dati da:
+
+E(z) = ibye Te, (7.832)
+fig) = pieeoh, (7.835)
+Da J = GE, la corrente fluisce nella direzione x e la sua densità è:
+Ha=ik@, (7.84)
+con
+Ti.(2) = Eye Pe = yee, (7.85)
+
+dove Jp = Eo è l'ampiezza della-densita di corrente sulla superficie. In termini di
+spessore di penetrazione é, = 1/a definito dalla (7.72) e in conseguenza della
+(7.77(b)), che per un buon conduttore pone a = 8, la (7.85) può essere riscritta come
+
+F(z) = he 04/8 (Alm?) (7.86)
+
+(b) Jo equivalente su uno
+spessore pellicolare 5,.
+
+Uil
+
+Figura 7.14
+
+La densità di corrente Tin
+un filo conduttore è (a)
+uniforme sulla sezione
+trasversa nel caso d-c, ma
+nel caso a-c (b), è
+maggiore lungo il
+perimetro del filo.
+
+Figura 7.15
+
+Decadimento
+esponenziale della densità
+di corrente J;(2) conz
+coordinata nel solido
+conduttore. La corrente
+totale che fluisce
+attraverso la sezione di
+larghezza w che si estende
+traz=0ez=00(a)è
+equivalente a una densità
+di corrente costante Jp che
+fluisce attraverso la
+sezione di spessore 6, (b).
+
+[PAG 157]
+298
+
+Capitolo 7 ~ Propagazione delle onde piane
+
+La corrente che fluisce attraverso una striscia rettangolare che si estende tra zero e in-
+finito lungo z e di spessore w lungo-la-direzione y è :
+
+Faw [Toa
+
+tai da Jow6.
+=wf Reg = E (A).
+[o tag ©
+
+It numeratore della (7.87) è equivalente a una densità di corrente uniforme Jg che
+fluisce attraverso una sottile sezione superficiale di spessore w e profondità 6,.
+Poichè J;(2) cala esponenzialmente con la profondità z, un conduttore di spessore fi-
+nito d può essere trattato in pratica come se fosse infinitamente profondo fintanto che
+d presenta un'estensione pari a diversi spessori di penetrazione. Se d = 36, [invece
+che infinito nell’integrale della (7.87)], l’errore che si commette nell’utilizzare il ri-
+sultato dell’ultima uguaglianza della (7.87) è minore del 5%, e se d = 56, esso è mi-
+nore dell’1%.
+La tensione ai capi di una lunghezza / sulla superficie {Figura 7.15(b)] è data da
+o
+
+¥ = Fol = 21. È
+ol=T (7.88)
+
+(7.87)
+
+Perciò V'impedenza di una lastra di larghezza w, lunghezza / e profondità d = co (0
+in pratica d > 56;) è:
+
+MIANELI RI
+Z= Fo w (Q). (7.89)
+E consuetudine rappresentare Z come
+1
+Z=% >” (7.90)
+
+dove Z;, che è chiamata impedenza superficiale 0 interna del conduttore, è definita
+come l'impedenza Z per lunghezza e larghezza unitaria, /= 1 me w = 1 m. Pertanto
+
+1+)
+
+Z I
+
+(). (191)
+
+Poichè la parte reattiva di Z, è positiva, Z; può essere definita come
+
+Z, = Rs + july
+con
+1 WII
+R= PARA ACE (9), (7.92a)
+-t_1 [E
+L= alia ® (7.920)
+
+dove si è utilizzata la relazione 6, = I /a = 1/./af uo data dalla (7.77(a)). In termini
+della resistenza superficiale R,, la resistenza in corrente alternata della lastra di lar-
+ghezza w e lunghezza / è:
+
+i
+
+I
+R=R = (7.93)
+
+L’espressione della resistenza in corrente alternata A è equivalente alla resistenza in
+corrente continua di un conduttore piano di lunghezza / e sezione A = wé,.
+
+7.5 Flusso di corrente in un buon conduttore
+
+Conduttore esterno
+
+Conduttore interno
+(a) Cavo coassiale
+
+(b) Conduttore intemo equivalente
+
+I risultati ottenuti per un conduttore piano saranno ora estesi al cavo coassiale mostra-
+to in Figura 7.16(a). Se i conduttori sono fatti di rame con o = 5.8 x 107 S/m, lo
+spessore di penetrazione è 6, = 1/77 wo = 0.066 mm a 1 MHz e poichè 4, varia
+come 1/,/f, diventa più piccolo per frequenze più alte. Per il conduttore interno, fin-
+tanto che il suo raggio a è maggiore di 54,, ovvero 0.33 mm a 1 MHz, la sua
+“profondità’’ può essere considerata come semi infinita e un criterio simile si applica
+anche allo spessore del conduttore esterno. La corrente che fluisce attraverso il con-
+duttore interno è concentrata sulla sua superficie esterna ed è approssimativamente
+equivalente a una corrente uniforme che scorre attraverso uno strato sottile di spesso-
+re 6, e circonferenza 27a. Ciò è equivalente a un conduttore planare di larghezza
+w = 27ra, come mostrato in Figura 7.16(b). La corrispondente resistenza per unità di
+lunghezza si ottiene ponendo w = 27a e dividendo per / nella (7.93):
+pod
+VL 2ra
+In modo simile, nel conduttore esterno la corrente è concentrata all’interno di un sot-
+tile strato sulla sua superficie interna, adiacente al materiale isolante tra i due condut-
+tori, materiale che rappresenta la regione dove ha sede il campo elettromagnetico. La
+resistenza per unità di lunghezza del conduttore esterno con raggio b è
+
+Rs
+
+(Om). (7.94)
+
+R= Tab (Um), (7.95)
+e la resistenza in corrente alternata totale per unità di lunghezza è
+R (1.1
+R=R+R= = + 3) (Um). (7.96)
+
+Questa espressione è stata utilizzata nel Capitolo 2 per caratterizzare la resistenza per
+unità di lunghezza di una linea di trasmissione coassiale.
+
+Domande di verifica
+
+7.6 Cosa emerge dal confronto tra 8 di un mezzo dielettrico a basse perdite e quel-
+fa di un mezzo senza perdite?
+
+7.7. Tn un buon conduttore la fase di H è in anticipo o in ritardo rispetto a quella di
+E e di quanto?
+
+7.8 Attenuazione significa che l’onda perde energia mentre si propaga in un mezzo
+con perdite. Cosa accade all’energia persa?
+
+9
+
+Figura 7.16
+
+Il conduttore interno di un.
+cavo coassiale in (a) è
+rappresentato in (b) da un
+conduttore planare di
+larghezza 27a e spessore
+6, come se fosse stato
+tagliato longitudinaimente
+e steso su un piano.
+
+[PAG 158]
+300
+
+Figura 7.17
+Flusso di potenza
+elettromagnetica
+
+attraverso un'apertura.
+
+Capitolo 7 ~ Propagazione delle onde piane
+
+7.9 Un mezzo conduttore è dispersivo o non dispersivo? Si spieghi.
+
+7.10- Si confronti-il flusso di corrente attraverso un filo nei casi in corrente alternata
+e continua. Si confrontino le corrispondenti resistenze in alternata e in continua
+del filo.
+
+7.6 Densità di potenza elettromagnetica
+
+Questo paragrafo tratta del flusso di potenza trasportata da un’onda elettromagnetica.
+Per una qualsiasi onda con un. campo elettrico E e un campo magnetico H, il vertore
+di Poyting S è definito come
+
+S=ExH (W/r’). (7.97)
+
+L'unità di misura di S è (V/m) x (A/m) = (W/m?) e la sua direzione è la stessa dire-
+zione di propagazione dell’onda, ovvero k. Pertanto S rappresenta la potenza per uni-
+tà di area (densità di potenza) trasportata dall’onda e se l’onda incide su un'apertura
+di area A con fi versore normale uscente dalla superficie, come mostrato in Figura
+7.17, allora la potenza totale che fluisce attraverso o che è intercettata dall’apertura è
+
+P= | S-idd (W). (7.98)
+
+Per un’onda piana uniforme che si propaga nella direzione k con un angolo @ rispetto
+aii, si ha P = SA cos 6, dove S = ||.
+
+La (7.97), a parte l’unità di misura di S data per unità di area, è l’analoga vettoriale
+dell’espressione scalare per la potenza istantanea P(z, t) che fluisce lungo una linea
+di trasmissione, ovvero:
+
+Piz, t) = v(z, t) i(z, t), (7.99)
+
+dove v(z, t) e i(z, #) sono la tensione e la corrente istantanee nella linea.
+
+Poiché sia E che H sono funzioni del tempo, tale è il vettore di Poynting S. In prati-
+ca, comunque, la grandezza di maggiore interesse è la densità di potenza media del-
+l’onda, Sy, che è la media temporale di S. Per una linea di trasmissione eccitata da
+una sorgente in regime armonico (sinusoidale) nel tempo, si è visto nel Capitolo 2
+che la media temporale della potenza che fluisce verso il carico può essere calcolata
+applicando la (2.87):
+
+Pyy(z) = +re[7@) Fel, (7.100)
+
+dove F (2) e Î(z) sono i fasori corrispondenti a v(z, f) e i(z, ?), rispettivamente.
+L'espressione analoga per l’onda elettromagnetica è:
+
+Sw =+ pe [È x fit] (Wim?). (7.101)
+
+76 Densità di potenza elettromagnetica
+
+. 7.6.1 Onda piana in un mezzo senza perdite
+
+‘L'espressione g generale per il fasore campo elettrico di un'onda piana ‘uniforme con
+
+polarizzazione arbitraria che viaggia nella direzione delle z positive è data da
+E@ =sE()+35
+Quoto (uo
+= (8B +9 Ea)e FE,
+
+dove, nel caso generale, Ex» ed Ey possono essere quantità complesse. Il modulo di
+Eè
+
+(Bl = EB"? = [oP + Bol |”. (7.103)
+Il fasore campo magnetico associato a ÎÈ si ottiene applicando la (7.3%a)):
+H(z) = li xE= 1484 +3E)e E. (7.104)
+
+L’onda può essere considerata come la somma di due onde, una con E. È, i) e l’altra
+con È, H,). Inserendo la (7.102) e la (7.104) nella (7.101) si ottiene
+
+21
+Sw = 85° (IExot + 12,01?)
+
+(Wim), (7.105)
+
+che afferma che il flusso di potenza è in direzione z e che la densità di potenza media
+è uguale alla somma delle densità di potenza media dell’onda (Ex, Hy) e dell’onda
+(Ey, Hz). Si noti che, essendo Sy dipendente solo da 7 ed E}, onde caratterizzate da
+diverse polarizzazioni trasportano la stessa quantità di potenza media se i loro campi
+elettrici hanno la stessa ampiezza.
+
+Esempio 7.5 Potenza del sole
+
+Se l’illuminazione del sole, assunta’ monofrequenziale, è caratterizzata da una densità di
+potenza di 1 KW/m? sulla superficie terrestre, si trovi (a) la potenza totale irradiata dal
+sole, (b) la potenza totale intercettata dalla terra e (c) il campo elettrico che fornisce la
+densità di potenza incidente sulla superficie terrestre. Il raggio dell’ orbita terrestre attor-
+no al sole, R;, è approssimativamente 1.5 x 10° km e il raggio medio della terra, Re, è
+6.380 km.
+
+Soluzione (a) Assumendo che il sole irradi in modo isotropo (ugualmente in tutte le
+direzioni), la potenza totale che irradia è uguale a SiyAsph, dove Asp è l’area della super-
+ficie sferica di raggio R, [Figura 7.18(a)]. Pertanto
+Peay = Soy(40R2) = 1 x 10° x dor x (1.5 x 10!1)?
+=2.8 x 10% W.
+(b) Con riferimento alla Figura 7.18(b), la potenza intercettata dalla sezione della terra
+Ae = TR è
+Pini = Sye(@R2) = 1 x 10° x 7 x (6.38 x 109)?
+(= 1.28 x10!7 W.
+
+308
+
+[PAG 159]
+302
+
+Capitolo 7 — Propagazione delle onde piane
+
+Area della Terra
+
+superficie sferica 2
+
+Agph = 4nR Ae=nRî
+(a) Potenza irradiata dal sole (b) Potenza intercettata dalla terra
+
+Figura 7.18 La radiazione solare intercettata (a) da una superficie sferica di raggio R; e (b)
+dalla superficie della terra (Esempio 7.5).
+
+(©) La densità di potenza S,, è legata all’ampiezza del campo elettrico |Eo| dalla
+
+E 2
+5 = BL,
+dove, in aria, si ha m = 377 (9). Quindi
+
+[Eo| = /2noSw = V2 x 377 x 103
+= 870 (Vin).
+
+7.6.2 Onda piana in un mezzo con perdite
+
+Le espressioni date dalla (7.68) e dalla (7.69) caratterizzano i campi elettrici e magne-
+tici di un’onda piana diretta lungo z e polarizzata lungo x che si propaga in un mezzo
+con perdite con una costante di propagazione y = a +8. Estendendo queste espres-
+sioni al caso più generale di un’onda piana con componenti lungo x e y, si ha
+
+EG) = 86.) + 98,
+= (RE + fEp)e Te, (7.106a)
+fie = = (RB + $E gle te, (7.106b)
+le
+dove ne è Vimpedenza intrinseca del mezzo con perdite. Applicando la (7.101) si ot-
+tiene
+1 = =
+av (2) = > e lE x
+Sav(z) Re[E x H*
+
+| AE) re (=)
+3 .
+
+(7.107)
+
+*
+le
+
+Esprimendo n, in forma polare come
+
+Te = Inele™, (7.108)
+
+i
+t
+|
+i
+
+76 Densità di potenza elettromagnetica
+
+Ja (7.107) può essere riscritta come
+
+[Bal
+2lnel
+
+dove |Fo| = [IExo]? + [Eyol”]’? è l'ampiezza di F(z) in z = 0. Poichè i campi E(z) e
+H(z) decadono con z secondo e~, la densità di potenza S,y decresce come 2%,
+Quando l’onda si propaga per una distanza z = 6, = 1/@, le ampiezze dei suoi campi
+elettrico e magnetico decadano a e~! & 37% del loro valore iniziale e la densità di
+potenza media si riduce a e~? ~ 14% del suo valore iniziale.
+
+Say(2}
+
+e 0089, (Wim), (7.109)
+
+7.6.3 Scala in decibel per i rapporti tra potenze
+
+L'unità di misura della potenza P è il watt (W). In molti problemi dell’ingegneria, la
+grandezza di interesse è il rapporto tra due livelli di potenza, P; e P2, come per esem-
+pio le potenze incidente e riflessa in una linea di trasmissione, e spesso tale rapporto
+può variare di diversi ordini di grandezza. La scala in decibel (dB) è logaritmica, e
+fornisce pertanto una rappresentazione conveniente per il rapporto tra potenze, in par-
+ticolare quando i valori numerici di P; /P2 sono graficati in funzione di qualche varia-
+bile di interesse. Se
+
+Pi
+G=— Ad
+DE (7.110)
+allora
+4 Pi
+G{dB] = 10logG = 10log 5 (dB). (7.111)
+2
+Tabella7.2 Rapporti tra potenze in numeri naturali e in decibel.
+G G [dB]
+10% 10x dB
+4 6d8
+2 3 dB
+1 0d8
+05 -3 dB
+025 —6dB
+0.1 -100B
+103 ~30 dB
+
+La Tabella 7.2 confronta alcuni valori di G con i corrispondenti valori di G [dB].
+Anche se i decibel sono definiti per rapporti tra potenze, qualche volta possono esse-
+re utilizzati anche per rappresentare altre grandezze. Per esempio, se P; = V?/R è la
+potenza dissipata sulla resistenza R con tensione Vi ai suoi capi all’istante 4 e
+P.= WEIR è la potenza dissipata sulla stessa resistenza all’ istante £, allora
+
+G{dB] = 10t08(71)
+2
+
+_ V2/R
+
+= 1010g( VIR
+
+V
+= 20log (È)
+
+= 20log(g) È g [dB],
+
+(7.112)
+
+303
+
+[PAG 160]
+304
+
+Capitolo 7 — Propagazione delle onde piane
+
+dove g = V/V, è il rapporto tra le tensioni. Si noti che per i rapporti tra tensioni 0
+correnti il fattore moltiplicativo è 20 @ non 10, è quindi G [dB] = g [dB]. - ~~ 7
+
+Il tasso di attenuazione, che rappresenta il tasso di decadimento dell’ampiezza di
+S.v(z) in funzione della distanza di propagazione, è definito come
+
+Problemi
+
+Concetti fondamentali
+
+“e Un’onda sferica irradiata da una sorgente diventa approssimativamente un'onda
+piana uniforme a grande distanza dalla sorgente.
+
+è I campi elettrico e magnetico di un’onda trasverso elettromagnetica (TEM) sono
+
+305
+
+NE fra loro ortogonali ed entrambi sono ortogonali alla direzione di propagazione del-
+Ax 100g ] | Vonda.
+Sx/(0} e Le ampiezze dei campi elettrici e magnetici di un’onda TEM sono legate dall’impe-
+2 202 i denza intrinseca del mezzo.
+10log(e 7?) (7.113) e La polarizzazione di un’onda descrive il luogo tracciato dalla punta del vettore E in
+una data posizione nello spazio, in funzione del tempo. Lo stato di polarizzazione,
+che può essere lineare, circolare 0 ellittico, è definito dal rapporto tra le ampiezze
+dei due componenti ortogonali del vettore campo elettrico e dalla loro differenza di
+dove i fase.
+e I materiali sono classificati come senza perdite, a basse perdite, semiconduttori o
+or [4B/m] © 8.680 [Np/m]. (7.114) i buoni conduttori in base al rapporto <”/e’ = o/we. i
+d ® Diversamente dal caso in continua in cui la corrente che scorre lungo un filo è è di-
+stribuita uniformemente sulla sua sezione, nel caso in alternata la maggior parte
+
+= —20az loge
+=-8.680z= a [dB/mlz (dB),
+
+Si noti inoltre che, essendo $.,(z) direttamente proporzionale a [E(2)/?, si ha
+
+2 della corrente è concentrata lungo:il perimetro esterno del filo.
+\E@)I [Ea]
+A= 10log 7} = 20104] E ] (dB). (7.115) La densità di potenza trasportata da un’onda piana elettromagnetica che si propaga
+\E(O) IE(O)I in un mezzo illimitato è simile alla potenza trasportata dall’onda di tensione/corren-
+P
+
+te in una linea di trasmissione.
+
+Esempio 7.6 Potenza ricevuta da un’antenna sottomarina |
+Un sottomarino alla profondità di 200 m utilizza un’antenna a filo per ricevere segnali i Glossario di termini importanti
+trasmessi a una frequenza di 1 kHz. Si determini la densità di potenza incidente sull’an- i Si definiscano o si spieghi il significato dei seguenti termini: polarizzazione lineare
+tenna del sottomarino dovuta all’onda elettromagnetica dell’Esempio 7.4. i polarizzazioni circolari destrorsa e sinistrorsa
+| mezzo guidante costante di attenuazione a
+Soluzione Dall’Esempio 7.4, |Eo] = |Exo| = 4.44 (mV/m), a = 0.126 (Np/m) e | mezzo limitato costante n fase 8, ione 6
+= 0.0448" (O). 5 109) si ha: onda sferica spessore di penetrazione 6,
+® = 0.0440" (0). Applicando la (7.109) si | onda piana uniforme dielettrico a basse perdite
+. 2 pre i permittività complessa eo semiconduttore
+cos O, | numero d'onda k buon conduttore
+onda TEM impedenza superficiale o interna
+3)? moasa o | impedenza intrinseca 7 resistenza superficiale Ry
+“ax 0.044 È cos 45 i polarizzazione dell’onda resistenze in continua e in alternata
+= 20,16070-252 W/m? | polarizzazione ellittica vettore di Poynting $
+= eV. 10e (mW/m°). i polarizzazione circolare densità di potenza media Sy
+Perz = 200 m, la densità di potenza incidente è i
+Say = 2(0.16 x 109092522200) i
+=21x 107 (W/m). | PROBLEMI
+i | Nota: Le risposte ai problemi contrassegnati da un asterisco si (€) La lunghezza d’onda nel materiale.
+H trovano nell’Appendice D. (d) La permittività relativa del materiale.
+
+Esercizio 7.10 Si convertano i seguenti valori di rapporti tra potenze G da numeri natu- | Paragrafo 7.2 Propagazione in mezzi senza per- (©) I fasore campo eletrico.
+
+rali a decibel: (a) 2.3, (b) 4°x 103, (c) 3 x 107*. ! dite 7.2. Si sctivano le espressioni generali per il campo elettrico e
+quello magnetico di un’onda piana sinusoidale a 1 GHz
+che viaggia nel verso positivo dell’asse y in un mezzo non
+
+SOLUZIONE (a) 3.6 dB, (b) 36 dB, (c) —-15.2 dB. *7.1 Il campo magnetico di un’onda che si propaga attraverso
+
+I
+i un materiale non magnetico è dato da magnetico, privo di perdite e con permittività relativa
+Esercizio 7.11 Si trovi il rapporto tra tensioni g in unità naturali corrispondente ai se- I H= 350 cos (10% — 5 & = 9. Il campo elettrico è polarizzato lungo x, il suo
+4 si “ = — 5y) (mA/m) i iene 4 < _
+guenti valori in decibel del rapporto tra potenze G: (a) 23 dB, (b) —14 dB, (c) -3.6 dB. | simon ( ) (adie) valor di eco è3 Vimela sua ampiezza è 2 Vim at = 0
+| i trovi: =
+SOLUZIONE (a) 14.13, (b) 0.2, (c) 0.66. | (a) La direzione di propagazione dell’onda. *7.3. Il fasore campo elettrico di un’onda piana uniforme è dato
+î (b) La velocità di fase. da E = $102” (V/m). Se la velocità di fase dell'onda è
+
+[PAG 161]
+306 Capitolo 7 — Propagazione delle onde piane
+
+1.5 x 10° m/s e la permeabilità relativa del mezzo è
+Hr = 2.4 si trovi;
+
+(a) La langhezza d'onda” ~
+(b) La frequenza f dell'onda.
+(©) La penmittivita relativa del materiale.
+(d) I campo magnetico H(z, 1).
+
+7.4 Il campo elettrico di un’onda piana che si propaga in un
+materiale non magnetico è dato da
+
+= [#3 sin (2 x 10% — 0.47)
++£4 cos (27 x 10% 0.47x)] (V/m)
+
+Si determini:
+(a) La lunghezza d’onda.
+
+O) e.
+OH
+
+*7,5 Un'onda irradiata da una sorgente in aria incide su una
+superficie di terriccio e una parte dell’onda è trasmessa nel
+terriccio stesso. Se ia lunghezza d’onda è 30 cm in aria e
+15 cm nel terriccio, qual è ia permittività relativa del
+terriccio? Si consideri il terriccio come un mezzo con
+perdite molto basse.
+
+7.6 Il campo elettrico di un'onda piana che si propaga in un
+materiale dielettrico privo di perdite, non magnetico e con
+Er = 2.56 è dato da
+
+E = $20cos (87 x 10%— ke) (Vim)
+Si determini:
+@) fiup, A, k edn.
+(b) Il campo magnetico H.
+
+Paragrafo 7.3 Polarizzazione delle onde
+
+*7.7. Un’onda con polarizzazione circolare destrorsa e modulo
+pari a 2 (V/m) viaggia nello spazio libero nel verso negativo
+dell’asse z. Si scriva l’espressione per il vettore campo
+elettrico dell’onda, data la lunghezza d’onda di 6 cm.
+
+7.8 Per un'onda caratterizzata da un campo elettrico
+EG, t) = ka, cos (wt — kz) + Fay cos (wt — kz + 6)
+
+si identifichi lo stato di polarizzazione, si calcolino gli
+angoli di polarizzazione (, x) e si disegni il luogo dei
+punti di È(0, ¢) per ognuno dei seguenti casi:
+
+(a) a, = 3 Vin, a, = 4 Vimed =0
+
+{b) a, = 3 Vira, ay Vim e 6 = 180°
+
+(©) @ = 3 Vin, ay Vim e 6 = 45°
+
+(d) a, = 3 Vim, a = 4 Vime 6 = —135°
+
+*7.9 Il campo elettrico di un’onda piana che si propaga nello
+spazio libero è dato da
+
+E = (£+,9)206//5 (Vim)
+
+Si specifichino il modulo e la direzione dell’intensità di
+campo elettrico nel piano z = 0 per¢ = 0,5 e 10 as.
+
+7.10 Un’onda piana polarizzata linearmente del tipo
+È = ia,e7 può essere espressa come la somma di
+
+un’onda polarizzata circolarmente in senso destrorso con
+‘ampiezza ag e di un’onda polarizzata circolarmente in
+
+© °° senso sinistrorso con ampiezza ay. Si dimostri questa
+affermazione trovando le espressioni di ag € ar in termini
+diay.
+
+*7,11 Il campo elettrico di un'onda piana polarizzata
+ellitticamente è dato da
+
+EG, :) = [-£10sin (ut ~ & 60°)
++920 cos (wt — kz)| (Vim)
+
+Si determinino:
+
+(a) Gli angoli di polarizzazione (Y, x).
