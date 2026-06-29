@@ -1,0 +1,2607 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 79/116 ===
+Chars: 43,116 | Offset: 3,445,546
+
+
+
+[PAG 1614]
+XVII-14
+ELETTRONICA ANALOGICA E DIGITALE
+La FdT Ai(j) è data da:
+(XVII.2.10)
+con Z(j) funzione impedenza data dalla XVII.2.1 e G = 1/R.
+Dalla XVII.2.5, si ottiene:
+(XVII.2.11)
+Sostituendo Z(j) della XVII.2.11 nella XVII.2.10, la FdT Ai(j) è:
+(XVII.2.12)
+B)  Rappresentazione in forma canonica
+La FdT, indicata genericamente con F(j), è rappresentata in forma canonica
+mediante il rapporto di due polinomi a coefficienti reali ai' e bk', espressi da parametri. Se
+l'ingresso è un segnale sinusoidale, la FdT in forma canonica è espressa nel seguente
+modo:
+(XVII.2.13)
+con m n e h = a'm / b'n.
+Esempio
+Determinare la FdT Ai(j), in forma canonica, del circuito RLC nella Fig. XVII.2.6.
+Dalla FdT espressa dalla XVII.2.12, si ottiene:
+Si considerano i due parametri: = G / (2C) = 1 / 2RC, chiamato costante di smorza-
+mento, e 0
+2 = 1 / (LC), con 0 chiamato frequenza angolare di risonanza o frequenza di
+risonanza (0 = 2f0). La FdT XVII.2.12 scritta in forma canonica, con i due parametri 
+e 0, diviene:
+(XVII.2.14)
+C)  Poli e zeri della funzione di trasferimento
+La FdT espressa dalla XVII.2.13 in prodotti di fattori diviene:
+(XVII.2.15)
+Ai j
+
+
+IR j
+
+
+IS j
+
+
+----------------
+G UR j
+
+
+IS j
+
+
+-------------------
+GZ j
+
+
+=
+=
+=
+Z j
+
+
+1
+Y j
+
+
+--------------
+1
+G
+jC
+1
+jL
+---------
++
++
+----------------------------------------
+=
+=
+Ai j
+
+
+G
+1
+G
+jC
+1
+jL
+---------
++
++
+----------------------------------------
+1
+1
+jC
+G
+----------
+1
+jLG
+--------------
++
++
+--------------------------------------------
+=
+=
+F j
+
+
+a'm j
+
+m
+a'm
+1
+–
+j
+
+m
+1
+–
+
+a'2 j
+
+2
+a'1 j
+
+
+a'0
++
++
++
++
++
+b'n j
+
+n
+b'n
+1
+–
+j
+
+n
+1
+–
+
+b'2 j
+
+2
+b'1 j
+
+
+b'0
++
++
++
++
++
+--------------------------------------------------------------------------------------------------------------------------------------------------------------=
+=
+= h
+j
+
+m
+am
+1
+–
+j
+
+m
+1
+–
+
+a2 j
+
+2
+a1 j
+
+
+a0
++
++
++
++
++
+j
+
+n
+bn
+1
+–
+j
+
+n
+1
+–
+
+b2 j
+
+2
+b1 j
+
+
+b0
++
++
++
++
++
+-----------------------------------------------------------------------------------------------------------------------------------------------
+F j
+
+
+G
+C---
+j
+j
+
+2
+G
+C--- j
+
+
+1
+LC
+-------
++
++
+------------------------------------------------------
+=
+F j
+
+
+1
+RC
+-------
+j
+j
+
+2
+2j
+
+
+0
+2
++
++
+---------------------------------------------------------
+=
+F j
+
+
+h
+j
+z1
+–
+
+j
+z2
+–
+
+j
+zm
+–
+
+
+j
+p1
+–
+
+j
+p2
+–
+
+j
+pn
+–
+
+
+---------------------------------------------------------------------------------
+=
+
+[PAG 1615]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-15
+I fattori sono ottenuti uguagliando a zero il polinomio del numeratore e quello del
+denominatore e, risolvendo le due equazioni, si ottengono radici reali o complesse coniu-
+gate. Per il numeratore le radici z1, z2, …, zm, sono chiamate zeri, per il denominatore le
+radici p1, p2, …, pn, sono chiamate poli della FdT. I poli e gli zeri sono espressi tutti in
+forma complessa, e graficamente sono rappresentati nel piano complesso, detto piano
+delle frequenze complesse, mediante due simboli:  per gli zeri,  per i poli; mediante la
+loro localizzazione nel piano si hanno informazioni sul comportamento della rete. Nel
+piano delle frequenze complesse, l'asse delle ascisse rappresenta la parte reale e l'asse
+delle ordinate la parte immaginaria. Le parti reale e immaginaria di una radice sono le
+coordinate del simbolo nel piano delle frequenze complesse, e quando entrambe sono
+nulle, esse individuano o zeri nell'origine (zi = 0) o poli nell'origine (pi = 0) del piano. La
+FdT XVII.2.15, se contiene radici nulle, si scrive:
+(XVII.2.16)
+con l ordine di molteplicità della radice nell'origine. Per l  0 l'ordine di molteplicità
+nell'origine riguarda gli zeri, per l  0 l'ordine di molteplicità nell'origine riguarda i poli. I
+pedici k e q rappresentano il numero di zeri e di poli non nulli.
+Nella XVII.2.16, mettendo in evidenza i poli e gli zeri non nulli, si ottiene:
+(XVII.2.17)
+Calcolando il limite di   0 della XVII.2.17, si ottiene il guadagno statico K della
+rete, che determina il legame fra il segnale d'uscita e un segnale d'ingresso continuo e
+costante nel tempo. Per l = 0 (nessuno zero all’origine), K è un numero reale finito e vale:
+(XVII.2.18)
+I termini della XVII.2.18 sono reali, o eventualmente complessi coniugati.
+Nella XVII.2.17, quando le radici non nulle sono reali e negative, i reciproci dei poli e
+degli zeri rappresentano le costanti di tempo della rete: z1 = 1/z1, z2 = 1/z2, …, zk = 
+1/zk, p1 = 1/p1, p2 = 1/p2, …, pq = 1/pq. La XVII.2.17 si scrive:
+(XVII.2.19)
+D)  Rappresentazione delle FdT mediante schema a blocchi
+La FdT consente di suddividere un circuito in blocchi funzionali. I blocchi sono sche-
+matizzati graficamente mediante rettangoli, ed esprimono le relazioni esistenti fra i loro
+segnali d'ingresso e d'uscita. Nella Fig. XVII.2.7, sono riportati gli elementi che costitui-
+scono uno schema a blocchi. Per ogni blocco è valida la relazione F = XU / XI, con F FdT,
+XU segnale d'uscita e XI segnale d'ingresso. La FdT ha caratteristiche di linearità, e per i
+blocchi è stata elaborata una teoria denominata algebra degli schemi a blocchi.
+L'algebra degli schemi a blocchi è basata sulle seguenti ipotesi.
+–  Assenza di interazione fra i blocchi, che comporta l'indipendenza delle FdT dei sin-
+goli blocchi.
+F j
+
+
+h
+j
+
+l j
+z1
+–
+
+j
+z2
+–
+
+j
+zk
+–
+
+
+j
+p1
+–
+
+j
+p2
+–
+
+j
+pq
+–
+
+
+--------------------------------------------------------------------------------------------
+=
+F j
+
+
+h
+z1
+–
+
+
+z2
+–
+
+
+zk
+–
+
+
+p1
+–
+
+
+p2
+–
+
+
+pq
+–
+
+
+-------------------------------------------------
+j
+
+l 1
+j
+z1
+-----
+–
+
+
+
+1
+j
+z2
+-----
+–
+
+
+
+1
+j
+zk
+-----
+–
+
+
+
+
+1
+j
+p1
+-----
+–
+
+
+
+1
+j
+p2
+-----
+–
+
+
+
+1
+j
+pq
+-----
+–
+
+
+
+
+-----------------------------------------------------------------------------------------
+=
+K
+h
+z1
+–
+
+
+z2
+–
+
+
+zk
+–
+
+
+p1
+–
+
+
+p2
+–
+
+
+pq
+–
+
+
+-------------------------------------------------
+=
+F j
+
+
+K
+j
+
+l 1
+jz1
++
+
+1
+jz2
++
+
+1
+jzk
++
+
+
+1
+jp1
++
+
+1
+jp2
++
+
+1
+jpq
++
+
+
+----------------------------------------------------------------------------------------------------------------
+=
+
+[PAG 1616]
+XVII-16
+ELETTRONICA ANALOGICA E DIGITALE
+–  Unidirezionalità dei blocchi. Essa significa che il flusso del segnale è dall'ingresso
+all'uscita di ogni singolo blocco e che XU = FXI (Fig. XVII.2.7b). Il flusso di un segnale X
+è rappresentato da una linea e da un simbolo di orientamento (Fig. XVII.2.7a).
+–  Presenza di punti di diramazione, dai quali partono percorsi multipli del medesimo
+segnale X (Fig. XVII.2.7c).
+–  Presenza di nodo sommatori, in cui si effettua la somma algebrica di due segnali
+omogenei (Fig. XVII.2.7d).
+              
+ 
+        
+Fig. XVII.2.7   Elementi che costituiscono uno schema a blocchi: a) linea orientata;
+b) blocco; c) punto di diramazione; d) nodo sommatore.
+Le proprietà dell'algebra dei blocchi regolano le connessioni fra i blocchi. Nella Fig.
+XVII.2.8 sono rappresentate le connessioni fondamentali fra blocchi.
+Fig. XVII.2.8   Connessioni fondamentali fra blocchi: a) serie; b) parallelo; c) in reazione.
+1)  Connessione serie o cascata (Fig. XVII.2.8a). L'uscita del primo blocco è
+l'ingresso del secondo, e la FdT equivalente F della connessione è F = XU XI = F1 F2
+(oppure F = F1F2).
+X
+a)
+X
+c)
+X
+X
+X
+XI
+b)
+XU
+F
+X1
+XU X1X2
+X2
+
+
+d)
+XI
+F1
+F2
+X
+F=F1F2
+F=F1F2
+F= F1
+1F1F2
+XI
+XU
+XU
+a)
+XI
+XI
+XU
+XU
+b)
+F1
+F2
+XI
+XI
+X1
+X2
++
++
+F1
+F2
+Xd
+Xr
+XU
+XU
+XS
+XU
+c)
+XS
+XU
+
+
+[PAG 1617]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-17
+2)  Connessione parallelo (Fig. XVII.2.8b). L'ingresso XI è applicato contemporanea-
+mente ad entrambi i blocchi e le singole uscite X1 e X2 convergono in un nodo sommatore;
+l'uscita XU è il risultato della connessione parallelo. La FdT equivalente F della connes-
+sione è F = XU XI = F1 F2.
+3)  Connessione reazionata (Fig. XVII.2.8c). In questa connessione il blocco F1 è
+detto blocco di andata, e indicando con Xd il segnale d'ingresso, il segnale d'uscita è
+XU = F1Xd. Il blocco F2 è detto blocco di reazione, il suo segnale d'ingresso è XU, e il
+segnale d'uscita Xr, detto segnale di reazione, vale Xr = F2XU. Nel nodo sommatore si som-
+mano algebricamente il segnale d'ingresso XS e il segnale di reazione Xr , e il segnale
+d'uscita è il segnale Xd. Il segno associato al segnale Xr determina il tipo di reazione: si
+definisce reazione positiva quella caratterizzata dalla somma XS Xr = Xd, e reazione
+negativa quella caratterizzata dalla somma XSXr) = Xd.
+Particolare importanza ha la connessione in reazione negativa; per essa la FdT F è:
+(XVII.2.20)
+Nella relazione XVII.2.20 particolare importanza ha il termine F1F2, che, come si
+rileva dalla Fig. XVII.2.8c, esprime la FdT: Xr / Xd = F1F2.
+Questa funzione è chiamata guadagno d’anello, ed è utilizzata per quantificare le pro-
+prietà della reazione negativa (si veda il Par. 3.4). Nella denominazione di F1F2, il termine
+anello è dovuto al percorso del segnale Xd dal blocco di andata al blocco di reazione e
+infine al nodo sommatore (si veda la Fig. XVII.2.8c) a cui è sottoposto Xd per essere tra-
+sformato nel segnale di reazione Xr .
+Tab. XVII.2.1   Regole di riduzione degli schemi a blocchi
+Regola
+Schema originario
+Schema equivalente
+Spostamento di un 
+punto di diramazione 
+a valle di un blocco
+Eliminazione del 
+blocco nella linea di 
+retroazione
+Scomposizione di un 
+nodo sommatore
+F
+XU
+XS
+------
+F1Xd
+Xd
+Xr
++
+-------------------
+F1
+1
+Xr
+Xd
+-----
++
+----------------
+F1
+1
+F2XU
+Xd
+-------------
++
+------------------------
+F1
+1
+F1F2
++
+-----------------------
+=
+=
+=
+=
+=
+X1
+X1
+X1
+F
+XU
+X1
+X1
+XU
+F
+XU
+XU
+1/F
+XS
+Xr
+Xd
+F1
+XU
+F2
+XU
+XU
+
+
+XS
+X
+Xd F1F2
+XU
+1/F2
+X
+X
+
+
+X1
+X2
+X3
+XU
+
+
+
+X1
+X2
+X3
+XU
+
+
+
+
+[PAG 1618]
+XVII-18
+ELETTRONICA ANALOGICA E DIGITALE
+Tab. XVII.2.1 Segue
+Con analogo procedimento per la reazione positiva si ottiene:
+(XVII.2.21)
+Le regole dell'algebra dei blocchi della Tab. XVII.2.1 sono chiamate regole di ridu-
+zione degli schemi a blocchi, e consentono di disegnare lo schema a blocchi costituito da
+sole configurazioni fondamentali.
+2.6  Risposta in frequenza di un circuito RLC
+A)  Risposta in frequenza
+La FdT è particolarmente utile per determinare la risposta in frequenza di una rete
+LTI al variare della frequenza angolare dell'ingresso: 0   . La risposta in frequenza
+di una rete LTI è data dalla variazione del modulo (ampiezza) e della fase di F(j).
+B)  Rappresentazione grafica della risposta in frequenza
+Una rappresentazione grafica della FdT consiste nel tracciare due distinti diagrammi
+Regola
+Schema originario
+Schema equivalente
+Spostamento di un 
+punto di diramazione 
+a monte di un blocco
+Scambio di sommatori
+Spostamento di un 
+sommatore a valle di 
+un blocco
+Spostamento di un 
+punto di diramazione 
+a monte di un blocco
+
+
+X1
+X2
+XU
+F
+
+
+X1
+X2
+F
+XU
+1/F
+
+
+X1
+X2
+XU
+
+
+X3
+
+
+X1
+X2
+XU
+
+
+X3
+X1
+X3
+
+XU
+
+
+
+X2
+X1
+X2
+XU
+
+
+F
+X1
+X2
+XU
+
+
+F
+F
+X1
+XU
+F
+XU
+XU
+XU
+X1
+F
+X1
+XU
+XU
+F
+X1
+F
+F1
+1
+F1F2
+–
+-----------------------
+=
+
+[PAG 1619]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-19
+cartesiani, uno per l'ampiezza,F(j), e l'altro per la fase, arg[F(j)], ricavati dalla
+XVII.2.13. In entrambi i grafici sull'asse delle ascisse sono riportate in scala logaritmica le
+pulsazioni o le frequenze.
+Esempio
+Determinare la risposta in frequenza del circuito RLC della Fig. XVII.2.9a, per tre
+valori differenti di R.
+–  In questo caso la risposta in frequenza è espressa in forma parametrica, conside-
+rando anche il parametro fattore di qualità Q del circuito, definito dal rapporto fra la fre-
+quenza angolare di risonanza 0 e la costante di smorzamento .
+(XVII.2.22)
+–  Esprimendo la XVII.2.14 in funzione di Q e 0, dalla XVII.2.22, si ottiene:
+(XVII.2.23)
+   
+Fig. XVII.2.9   Circuito RLC parallelo: a) schema del circuito; b) risposta in frequenza.
+–  L'ampiezza e la fase di F(j) sono:
+(XVII.2.24)
+con 90°  arg[F(j)] 90°.
+Q
+0
+2
+------
+0CR
+R
+0L
+----------
+R
+C
+L---
+=
+=
+=
+=
+F j
+
+
+0
+Q
+------
+j
+j
+
+2
+0
+Q
+------ j
+
+
+0
+2
++
++
+-------------------------------------------------------
+1
+1
+jQ
+
+0
+------
+0
+
+------
+–
+
+
+
+
++
+---------------------------------------------
+=
+
+=
+1
+1'
+2
+2'
+iS
+iR
+R
+uR
+C
+L
+iS = I cos(t +)
+a)
+0,2
+0
+1
+0,4
+0,6
+0,8
+1
+2
+3
+F(j)
+/0
+Q1
+Q2>Q1
+Q3>Q2
+b)
+F(j)
+Q1
+Q2>Q1
+Q3>Q2
+0
+1
+2
+3
+/0
+60°
+90°
+0°
+60°
+30°
+30°
+90°
+F j
+
+
+1
+1
+Q2
+
+0
+------
+0
+
+------
+–
+
+
+
+2
++
+----------------------------------------------------
+=
+arg F j
+
+
+
+
+arctan
+–
+Q
+
+0
+------
+0
+
+------
+–
+
+
+
+
+=
+
+[PAG 1620]
+XVII-20
+ELETTRONICA ANALOGICA E DIGITALE
+Nella Fig. XVII.2.9b, sono rappresentate graficamente le risposte in ampiezza e fase del
+circuito della Fig. XVII.2.9a, per R = R1, a cui corrisponde Q1= R1
+, per R = R2 > R1,
+a cui corrisponde Q2= R2
+, e per R = R3  R2, a cui corrisponde Q3= R3
+.
+C)  Circuito risonante
+Dai grafici della Fig. XVII.2.9b si rileva che:
+–  alla frequenza di risonanza 0, F(j0) e arg[F(j0)] = 0°;
+–  alla frequenza   0, F(j)0 e arg[F(j)] =  90°;
+–  alla frequenza   , F(j)0 e arg[F(j)] =  90°.
+–  Per le altre frequenze, si ha una riduzione d'ampiezza ed una variazione di fase
+rispetto ai valori di risonanza.
+Un circuito RLC, quindi, fa passare completamente i segnali alla frequenza di riso-
+nanza 0, li blocca quando il segnale ha frequenza zero o infinita, alle altre frequenze si
+hanno variazioni di fase e attenuazione d'ampiezza del segnale. Un circuito con queste
+proprietà è chiamato circuito risonante.
+2.7  Parametri dei quadripoli
+La risposta di un quadripolo LTI, con stato iniziale zero, è caratterizzata dalla scelta
+delle variabili d'ingresso. Con riferimento alla Fig. XVII.2.5b, considerando l'insieme
+delle variabili i1, i2, u1 e u2, del quadripolo, scegliendo come variabili indipendenti
+(ingresso) le correnti i1 e i2, le variabili dipendenti u1 e u2 sono la risposta (uscita).
+Essendo il quadripolo LTI, le tensioni u1 e u2 sono espresse in funzione di i1 e i2, con un
+sistema lineare in cui compaiono dei parametri. Nella Tab. XVII.2.3, sono riportati i sei
+modi di scelta delle variabili indipendenti per il quadripolo LTI, e il tipo di parametri uti-
+lizzati per ottenere la risposta allo stato zero. In questo paragrafo si prendono in esame i
+primi quattro di parametri.
+A)  Parametri impedenza (a circuito aperto)
+Si consideri il quadripolo nella Fig. XVII.2.5a; applicando il teorema di sostituzione,
+le variabili i1 e i2, sono sostituite con due generatori ideali indipendenti di corrente di tipo
+sinusoidale, con 0    come nella Fig. XVII.2.10a. Considerando le correnti di porta
+Il (j) e I2 (j) come variabili indipendenti, le tensioni di porta Ul (j) e U2 (j) sono line-
+Tab. XVII.2.2   Tipi di parametri per la risposta allo stato zero di un quadripolo LTI.
+Variabili 
+indipendenti 
+d’ingresso
+Variabili dipendenti 
+d’uscita
+Parametri utilizzati
+Simboli
+Nome
+i1, i2
+u1, u2
+z11, z12, z21, z22
+Impedenza
+u1, u2
+i1, i2
+y11, y12, y21, y22
+Ammettenza
+i1, u2
+u1, i2
+h11, h12, h21, h22
+Ibridi h
+u1, i2
+i1, u2
+g11, g12, g21, g22
+Ibridi g
+u1, i1
+u2, i2
+A, B, C, D
+Trasmissione diretta
+u2, i2
+u1, i1
+A', B', C', D'
+Trasmissione 
+inversa
+C
+L
+
+C
+L
+
+C
+L
+
+
+[PAG 1621]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-21
+armente dipendenti dalle correnti Il (j) e I2 (j), mediante le seguenti equazioni:
+(XVII.2.25)
+(XVII.2.26)
+con z11(j), z12(j), z21(j) e z22(j), opportune FdT.
+Spesso le equazioni XVII.2.25 e XVII.2.26, sono scritte omettendo la dipendenza da j.
+Le FdT z11, z12, z21 e z22 sono dette parametri impedenza a circuito aperto e sono defi-
+nite nel seguente modo:
+–  con il circuito aperto alla porta 2 si ha: 
+ e 
+;
+–  con il circuito aperto alla porta 1 si ha: 
+ e 
+.
+ 
+Fig. XVII.2.10   Parametri dei quadripoli: a) circuito per determinare i parametri z; b) cir-
+cuito per determinare i parametri y.
+Per rappresentare un quadripolo, i parametri d'impedenza zik sono usati in molti modi:
+se sono valide le equazioni generali XVII.2.25 e XVII.2.26, il quadripolo è rappresentato
+come nella Fig. XVII.2.11a. Con i morsetti 1' e 2' del quadripolo allo stesso potenziale, il
+quadripolo è rappresentato come nella Fig. XVII.2.11b, ed è detto circuito equivalente a
+T. In questo circuito, se z12 = z21, il generatore di tensione dipendente è sostituito con un
+cortocircuito; quando z12 = z21, il quadripolo si dice reciproco. Un quadripolo composto di
+resistori, induttori, condensatori e trasformatori è un quadripolo reciproco.
+  
+   
+Fig. XVII.2.11   Circuiti equivalenti di un quadripolo: a) in funzione dei parametri impe-
+denza a circuito aperto; b) circuito a T.
+B)  Parametri ammettenza (in corto circuito)
+Si consideri un quadripolo dove ai morsetti esterni si collegano due generatori ideali
+indipendenti di tensione, come nella Fig. XVII.2.10b. Con i generatori indipendenti di tipo
+U1 j
+
+
+z11 j
+
+I1 j
+
+
+z12 j
+
+I2 j
+
+
++
+=
+(per la porta 1, 1')
+U2 j
+
+
+z21 j
+
+I1 j
+
+
+z22 j
+
+I2 j
+
+
++
+=
+(per la porta 2, 2')
+z11
+U1
+I1
+
+I2
+0
+=
+=
+z21
+U2
+I1
+
+I2
+0
+=
+=
+z22
+U2
+I2
+
+I1
+0
+=
+=
+z12
+U1
+I2
+
+I1
+0
+=
+=
+U1
+I1
+1
+1'
+Quadripolo
+U2
+2
+2'
+I2
+a)
+U1
+I1
+1
+1'
+Quadripolo
+U2
+2
+2'
+I2
+b)
+1
+1'
+2
+2'
+I2
+U2
+z22
+z21I1
+z12I2
+z11
+U1
+I1
+a)
+U2
+z22z12
+(z21z12)I1
+z11z12
+U1
+1
+1'
+2
+2'
+I2
+z12
+I1
+b)
+
+[PAG 1622]
+XVII-22
+ELETTRONICA ANALOGICA E DIGITALE
+sinusoidale, con 0   , considerando le tensioni di porta Ul (j) e U2 (j), come
+variabili indipendenti, le correnti di porta Il (j) e I2 (j) sono linearmente dipendenti
+dalle tensioni Ul (j) e U2 (j), mediante le seguenti equazioni:
+(XVII.2.27)
+(XVII.2.28)
+con y11(j), y12(j), y21(j) e y22(j) opportune FdT.
+Spesso le equazioni XVII.2.27 e XVII.2.28, sono scritte omettendo la dipendenza da j.
+Le funzioni di rete y11, y12, y21 e y22 sono definite nel seguente modo:
+–  con il cortocircuito alla porta 2 si ha: 
+ e 
+;
+–  con il cortocircuito alla porta 1 si ha: 
+ e 
+.
+Le ammettenze y11, y12, y21e y22 sono dette parametri ammettenza in cortocircuito.
+I parametri ammettenza yik sono usati in molti modi per rappresentare il quadripolo: se
+sono valide le equazioni generali XVII.2.27 e XVII.2.28, il quadripolo è rappresentato
+come nella Fig. XVII.2.12a. Con i morsetti l' e 2' del quadripolo allo stesso potenziale, il
+quadripolo è rappresentato come nella Fig. XVII.2.12b, ed è detto circuito equivalente a
+. In questo circuito se y12 = y21, il generatore di corrente dipendente è sostituito con un
+circuito aperto; quando y12 = y21, il quadripolo si dice reciproco. Un quadripolo composto
+di resistori, induttori, condensatori e trasformatori è un quadripolo reciproco.
+  
+Fig. XVII.2.12   Circuiti equivalenti di un quadripolo: a) in funzione dei parametri
+ammettenza; b) circuito a .
+C)  Parametri ibridi h
+Si consideri il quadripolo della Fig. XVII.2.13a; rimanendo valide le convezioni stabi-
+lite per i parametri impedenza e ammettenza, scegliendo Il e U2 come variabili indipen-
+denti, i parametri ibridi h che caratterizzano il quadripolo sono definiti dalle seguenti
+relazioni:
+(XVII.2.29)
+con:
+I1 j
+
+
+y11 j
+
+U1 j
+
+
+y12 j
+
+U2 j
+
+
++
+=
+(per la porta 1, 1')
+I2 j
+
+
+y21 j
+
+U1 j
+
+
+y22 j
+
+U2 j
+
+
++
+=
+(per la porta 2, 2')
+y11
+I1
+U1
+
+U2
+0
+=
+=
+y21
+I2
+U1
+
+U2
+0
+=
+=
+y22
+I2
+U2
+
+U1
+0
+=
+=
+y12
+I1
+U2
+
+U1
+0
+=
+=
+1
+1'
+2
+2'
+I2
+U2
+y22
+y21U1
+y12U2
+y11
+U1
+I1
+a)
+1'
+2
+2'
+I2
+U2
+y22+y12
+(y21y12)U1
+y11y12
+U1
+1
+1'
+2
+2'
+I2
+y12
+I1
+b)
+U1
+h11I1
+h12U2
++
+=
+I2
+h21I1
+h22U2
++
+=
+
+[PAG 1623]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-23
+Il parametro h11 ha le dimensioni di una impedenza; h22 ha le dimensioni di una
+ammettenza; h12, scalare, è chiamato rapporto di tensione di trasferimento inverso; h21,
+scalare, è chiamato rapporto di corrente di cortocircuito di trasferimento diretto.
+La condizione per la quale il doppio bipolo è reciproco è h12 = h21.
+I parametri ibridi sono utilizzati: nei circuiti equivalenti dei transistor, per caratteriz-
+zare una qualsiasi rete LTI costituita da elementi passivi R, L, C e trasformatori.
+ 
+Fig. XVII.2.13   Parametri ibridi: a) quadripolo collegato a un generatore ideale di cor-
+rente e a un generatore ideale di tensione indipendenti per la determinazione dei parametri
+h; b) quadripolo collegato a un generatore ideale di tensione e a un generatore ideale di
+corrente indipendenti per la determinazione dei parametri g.
+D)  Parametri ibridi g
+Si consideri il quadripolo della Fig. XVII.2.13b; scegliendo Ul e I2 come variabili
+indipendenti, i parametri ibridi g che caratterizzano il quadripolo sono definiti dalle
+seguenti relazioni:
+(XVII.2.30)
+con
+Il quadripolo è reciproco se gl2 = g21.
+3  AMPLIFICATORI LINEARI
+Un amplificatore lineare è un dispositivo elettronico dove a variazioni di tensione o
+corrente all'ingresso corrispondono variazioni proporzionali di tensione o di corrente
+all'uscita; e se il segnale d'uscita ha potenza maggiore di quella del segnale d'ingresso si
+ha amplificazione. Ad esempio, un amplificatore realizzato con transistor è in grado di
+fornire all'uscita un segnale a cui è associata una potenza maggiore di quella del segnale
+d'ingresso; la potenza aggiunta proviene dal circuito d'alimentazione del transistor. 
+Un amplificatore LTI, con un ingresso ed un'uscita, è rappresentato con un doppio
+bipolo lineare, o quadripolo lineare. In questo paragrafo si riportano due metodi d'analisi
+per determinare le caratteristiche della risposta degli amplificatori LTI ad ingresso sin-
+golo: si tratta dell'analisi nel dominio della frequenza mediante segnali sinusoidali e
+h11
+U1
+I1 U2
+0
+=
+
+1
+y11
+
+=
+=
+;
+h12
+U1
+U2 I1
+0
+=
+
+z12
+z22
+
+=
+=
+;
+h21
+I2
+I1 U2
+0
+=
+
+y21
+y11
+
+=
+=
+;
+h22
+I2
+U2 I1
+0
+=
+
+1
+z22
+
+=
+=
+.
+U1
+I1
+1
+1'
+Quadripolo
+U2
+2
+2'
+I2
+a)
+U1
+I1
+1
+1'
+Quadripolo
+U2
+2
+2'
+I2
+b)
+I1
+g11U1
+g12I2
++
+=
+U2
+g21U1
+g22I2
++
+=
+g11
+I1
+U1 I2
+0
+=
+
+1
+z11
+
+=
+=
+;
+g12
+I1
+I2 U1
+0
+=
+
+y12
+y22
+
+=
+=
+;
+g21
+U2
+U1 I2
+0
+=
+
+z21
+z11
+
+=
+=
+;
+g22
+U2
+I2 U1
+0
+=
+
+1
+y22
+
+=
+=
+.
+
+[PAG 1624]
+XVII-24
+ELETTRONICA ANALOGICA E DIGITALE
+dell'analisi nel dominio del tempo mediante segnali a gradino. Si considera l'amplificatore
+accoppiato ad un generatore reale di tensione e ad un carico resistivo. Con la reazione
+negativa si mostra come ampliare la risposta degli amplificatori LTI e come migliorarne
+alcune proprietà.
+3.1  Accoppiamento generatore, amplificatore e carico
+Il collegamento diretto in cascata fra un generatore in corrente alternata utilizzato
+come sorgente del segnale d'ingresso, un amplificatore, e un carico con due morsetti dal
+quale prelevare il segnale d'uscita, è detto accoppiamento in continua.
+Spesso l'accoppiamento in continua non è realizzabile, perché nei circuiti dell'amplifi-
+catore si potrebbe avere un segnale in corrente continua non desiderato.
+In un amplificatore, per eliminare la componente continua indesiderata, si collegano il
+generatore e il carico mediante due condensatori, C1 e C2, come indicato nella Fig.
+XVII.3.1; in questo modo si realizza l'accoppiamento in alternata.
+Fig. XVII.3.1   Amplificatore di tensione: a) accoppiato in alternata; b) accoppiato in
+continua con il generatore del segnale d'ingresso e in alternata con il carico.
+3.2  Analisi nel dominio della frequenza
+Con l'analisi nel dominio della frequenza si determinano le caratteristiche comples-
+sive dell'ampiezza e della fase del segnale d'uscita di un amplificatore al variare della fre-
+quenza del segnale d'ingresso sinusoidale.
+A)  Tipi di amplificatori
+Si considera un amplificatore LTI con condizioni iniziali nulle, con un ingresso ed una
+uscita, con ai morsetti d'ingresso (ii') un generatore ideale o di corrente o di tensione sinu-
+soidale a frequenza variabile accoppiato in continua all'amplificatore, e con i morsetti
+d'uscita (uu') a circuito aperto.
+Le frequenze del segnale d'ingresso hanno valori da rendere trascurabili gli elementi
+reattivi dei componenti interni dell'amplificatore.
+L'insieme di queste frequenze costituisce una banda chiamata banda delle medie fre-
+quenze (MF). 
+Con queste condizioni, l'amplificatore è rappresentato con un doppio bipolo LTI (qua-
+dripolo LTI), e la sua descrizione dipende dalla scelta di due variabili indipendenti
+dall'insieme delle quattro Ui, Uu, Ii e Iu, presenti ai morsetti del quadripolo.
+Si hanno quattro rappresentazioni: con Ui e Iu variabili indipendenti, si utilizza il qua-
+dripolo della Fig. XVII.2.13b; con Ui e Uu si utilizza il quadripolo della Fig. XVII.2.10b;
+con Ii e Uu si utilizza il quadripolo della Fig. XVII.2.13a; con Ii e Iu si utilizza il quadri-
+polo della Fig. XVII.2.10a.
+ Nella Tab. XVII.3.1 sono riportate: le relazioni fra le variabili nei quattro doppi bipoli
+e i parametri relativi (colonna 2); le equazioni dei circuiti equivalenti dell'amplificatore e
+gli schemi relativi (colonna 3). Nelle FdT sono omesse le dipendenze dalla frequenza j
+(si veda il Par. 2.7).
+us
+Rs
+C1 i
+i'
+Amplificatore
+LTI
+Ui
+Rc
+C2 u
+u'
+Uu
+a)
+us
+Rs
+i
+i'
+Amplificatore
+LTI
+Ui
+Rc
+C2 u
+u'
+Uu
+b)
+
+[PAG 1625]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-25
+Tab. XVII.3.1   Modelli con doppi bipoli degli amplificatori LTI
+Tipo di 
+amplificatore
+Equazioni del quadripolo 
+equivalente
+Circuito equivalente dell'amplificatore
+di tensione
+di
+transcondut-
+tanza
+di
+corrente
+di
+transresistenza
+Ii
+g11Ui
+g12Iu
++
+=
+Uu
+g21Ui
+g22Iu
++
+=
+g11
+Ii
+Ui Iu
+0
+=
+
+1
+Ri
+
+=
+=
+1
+
+g21
+Uu
+Ui Iu
+0
+=
+
+AV
+=
+=
+1
+
+g12
+Ii
+Iu Ui
+0
+=
+
+0
+=
+=
+2
+
+g22
+Uu
+Iu Ui
+0
+=
+
+Ru
+=
+=
+2
+
+Ui
+i
+i'
+Ii
+Ri AVUi
+Ru
+Uu
+u
+u'
+Iu
+Ii
+Ui
+Ri
+
+=
+Uu
+AVUi
+RuIu
++
+=
+Ii
+y11Ui
+y12Uu
++
+=
+Iu
+y21Ui
+y22Uu
++
+=
+y11
+Ii
+Ui Uu
+0
+=
+
+1
+Ri
+
+=
+=
+3
+
+y21
+Iu
+Ui Uu
+0
+=
+
+GM
+=
+=
+3
+
+y12
+Ii
+Uu Ui
+0
+=
+
+0
+=
+=
+2
+
+y22
+Iu
+Uu Ui
+0
+=
+
+1
+Ru
+
+=
+=
+2
+
+Ui
+i
+i'
+Ii
+Ri
+GMUi
+Ru
+Uu
+u
+u'
+Iu
+Ii
+Ui
+Ri
+
+=
+Iu
+GMUi
+Uu
+Ru
+
++
+=
+Ui
+h11Ii
+h12Uu
++
+=
+Iu
+h21Ii
+h22Uu
++
+=
+h11
+Ui
+Ii Uu
+0
+=
+
+Ri
+=
+=
+3
+
+h21
+Iu
+Ii Uu
+0
+=
+
+AI
+=
+=
+3
+
+h12
+Ui
+Uu Ii
+0
+=
+
+0
+=
+=
+4
+
+h22
+Iu Uu Ii
+0
+=
+
+1
+Ru
+
+=
+=
+4
+
+Ui
+i
+i'
+Ii
+Ri
+AIIi
+Ru
+Uu
+u
+u'
+Iu
+Ui
+RiIi
+=
+Iu
+AIIi
+Uu
+Ru
+
++
+=
+Ui
+z11Ii
+z12Iu
++
+=
+Uu
+z21Ii
+z22Iu
++
+=
+z11
+Ui
+Ii Iu
+0
+=
+
+Ri
+=
+=
+1
+
+z21
+Uu
+Ii Iu
+0
+=
+
+RM
+=
+=
+1
+
+z12
+Ui
+Iu Ii
+0
+=
+
+0
+=
+=
+4
+
+z22
+Uu
+Iu Ii
+0
+=
+
+Ru
+=
+=
+4
+
+Ui
+i
+i'
+Ii
+Ri
+RMIi
+Ru
+Uu
+u
+u'
+Iu
+Ui
+RiIi
+=
+Uu
+RMIi
+RuIu
++
+=
+
+[PAG 1626]
+XVII-26
+ELETTRONICA ANALOGICA E DIGITALE
+Le note riportate hanno il significato seguente:
+(1) Parametro determinato con il circuito della porta d'uscita (uu') aperto.
+(2) Parametro determinato con il circuito della porta d'ingresso (ii') in cortocircuito.
+(3) Parametro determinato con il circuito della porta d'uscita (uu') in cortocircuito.
+(4) Parametro determinato con il circuito della porta d'ingresso (ii') aperto
+In generale, le relazioni lineari fra le variabili d'ingresso e d'uscita del quadripolo
+determinano quattro FdT (si veda il Par. 2.5) indicate con:
+Data l'ipotesi che rende trascurabili gli elementi reattivi dei componenti del circuito
+amplificatore, le quattro FdT sono scalari reali e sono chiamate: Av, guadagno di tensione;
+Rm, guadagno di transresistenza; Gm, guadagno di transconduttanza; Ai, guadagno di
+corrente dell'amplificatore. Alle quattro FdT si fanno corrispondere quattro tipi di ampli-
+ficatori denominati come nella colonna 1 della Tab. XVII.3.1.
+B)  Analisi di un amplificatore LTI con carico
+Per l'analisi del comportamento di un amplificatore di tensione con carico resistivo,
+come quello della Fig. XVII.3.1b, in prima approssimazione si fanno le seguenti ipotesi.
+–  Il generatore reale di tensione sinusoidale è a frequenza variabile (0    ),
+accoppiato in continua all'amplificatore.
+–  L'amplificatore è LTI, ha condizioni iniziali nulle e solo alle alte frequenze del
+segnale d'ingresso la reattanza della capacità interna d'ingresso Ci ha valore non trascura-
+bile.
+–  Il carico Rc è resistivo ed è accoppiato in alternata all'amplificatore tramite il con-
+densatore di capacità C2.
+Con queste condizioni, al variare della frequenza del generatore, si determinano tre
+modelli dell'amplificatore (si veda la Tab. XVII.3.2). In ogni modello si individuano tre
+blocchi collegati in cascata: un blocco attenuatore d'ingresso, un blocco generatore di
+tensione dipendente, e un blocco attenuatore d'uscita. I blocchi attenuatore d'ingresso e
+attenuatore d'uscita si comportano in modo diverso al variare della frequenza del genera-
+tore; il generatore di tensione dipendente ha valore AVUi, con AV costante scalare. Il
+sistema è descritto dalla FdT Avt(j) = Uu(j)  Us(j), detta guadagno di tensione totale.
+Nella banda delle medie frequenza (MF) gli attenuatori d’ingresso e d’uscita si com-
+portano come partitori resistivi di tensione (Tab. XVII.3.2), le reattanze del condensatore
+di accoppiamento C2 e della capacità d'ingresso dell'amplificatore Ci hanno valori trascu-
+rabili, e il guadagno di tensione totale Avt(j) ha valore reale costante. Le frequenze, per
+le quali solo la reattanza del condensatore di accoppiamento C2 ha valore non trascurabile,
+costituiscono la banda delle basse frequenze (LF). Per queste frequenze l'attenuatore
+d'uscita si comporta come un filtro passa alto, l'attenuatore d'ingresso è un partitore resi-
+stivo di tensione, e il guadagno di tensione totale Avt(j) presenta un solo polo. Le fre-
+quenze, per le quali solo la reattanza della capacità d’ingresso Ci ha valore non
+trascurabile, costituiscono la banda delle alte frequenze (HF). Per tali frequenze l'attenua-
+tore d'ingresso si comporta come un filtro passa basso, l'attenuatore d'uscita come un par-
+titore resistivo di tensione, e il guadagno di tensione totale Avt(j) presenta un solo polo.
+Nella Tab. XVII.3.2, per ogni banda di frequenza LF, MF e HF, sono riportati: il cir-
+cuito del modello; la FdT del guadagno di tensione totale Avt(j) espressa come prodotto
+di fattori delle FdT dei blocchi; la rappresentazione grafica di Bode della risposta in fre-
+quenza del modulo del guadagno totale dell'amplificatore, Avt(j) espresso in dB.
+Av
+Uu
+Ui
+------
+=
+;
+Rm
+Uu
+Ii
+------
+=
+;
+Gm
+Iu
+Ui
+-----
+=
+;
+Ai
+Iu
+Ii
+----
+=
+
+[PAG 1627]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-27
+Tab. XVII.3.2   Modelli di amplificatori di tensione nel dominio della frequenza
+Modello amplificatore di tensione alle basse frequenze (LF)
+Funzioni di trasferimento
+Avt(j) = Fi(j)AV(j)Fu(j) = Uu(j)  Us(j)
+Risposta in frequenza di
+Avt(j)
+Fi(j)
+Fu(j)
+Modello amplificatore di tensione alle medie frequenze (MF)
+Funzioni di trasferimento
+Avt(j) = Fi(j)AV(j)Fu(j) = Uu(j)  Us(j)
+Risposta in frequenza di
+Avt(j)
+Fi(j)
+Fu(j)
+Us
+Rs
+Ui
+Ri
+Ui
+Fi
+i
+i'
+Attenuatore d’ingresso
+AV
+Generatore di tensione
+Fu
+Attenuatore d’uscita
+Amplificatore di tensione AV
+AVUi
+Rc
+Uu
+Ru
+C2
+u
+u'
+AV
+Uu
+Ui Rc
+
+=
+
+=
+Ri
+Rs
+Ri
++
+------------------
+C2Rc
+j
+1
+j1
++
+----------------- =
+Rc
+Rc
+Ru
++
+-------------------- 1
+j
+1
+j1
++
+-----------------
+=
+1
+Ru
+Rc
++
+
+C2
+=
+1
+1
+1
+-----
+=
+Fu
+
+
+
+lim
+j
+
+
+Rc
+Rc
+Ru
++
+--------------------
+=
+dB
+40
+20
+0
+1
+0
+10
+102
+1
+
+20dBdec
+AvtLF j
+
+
+AvtMF1
+j
+1
+j1
++
+----------------------
+=
+Us
+Rs
+Ui
+Ri
+Ui
+Fi
+i
+i'
+Attenuatore d’ingresso
+AV
+Generatore di tensione
+Fu
+Attenuatore d’uscita
+Amplificatore di tensione AV
+AVUi
+Rc
+Uu
+Ru
+u
+u'
+AV
+Uu
+Ui Rc
+
+=
+
+=
+Ri
+Ri
+Rs
++
+------------------
+Rc
+Ru
+Rc
++
+--------------------
+dB
+40
+20
+10
+0
+102
+104
+1
+
+2
+AvtMF j
+
+
+Ri
+Ri
+Rs
++
+------------------ AV
+Rc
+Ru
+Rc
++
+--------------------
+=
+
+[PAG 1628]
+XVII-28
+ELETTRONICA ANALOGICA E DIGITALE
+Tab. XVII.3.2 Segue
+Le FdT dei fattori dei blocchi sono:
+–  Fi(j) = Ui(j)  Us(j)Zc=, FdT del blocco attenuatore d'ingresso determinata
+con circuito aperto della porta d'uscita;
+–  AV = Uu(j)  Ui(j)Rc= (scalare), FdT del generatore di tensione dipendente;
+–  Fu(j) = Uu(j)  (AVUi(j)), FdT del blocco attenuatore d'uscita.
+C)  Diagrammi di Bode
+Costituiscono un metodo grafico per rappresentare l'ampiezza e la fase della FdT nel
+dominio della frequenza. La rappresentazione è costituita da un diagramma dell'ampiezza
+e da un diagramma della fase, detti diagrammi asintotici di Bode. La FdT F(j) è espressa
+nella forma XVII.2.19, ed è rappresentata riportando in ascissa la pulsazione (o la fre-
+quenza), per 0   , in scala logaritmica, e in ordinata i valori di F(j) espressi in
+decibel (dB). I valori in dB sono ottenuti considerando il logaritmo naturale di F(j) nel
+seguente modo.
+–  Si esprime F(j) in forma esponenziale e si ha F(j) = F(j)ej().
+–  Si esegue il logaritmo e si ottiene: lnF(j) = lnF(j) + j(), con lnF(j) modulo
+della FdT misurato in neper, e () = arg[F(j)] fase della FdT misurata in gradi o
+radianti.
+–  Il valore in decibel è ottenuto operando il cambiamento di scala, 8,686lnF(j) 
+20logF(j) = F(j)dB.
+La forma logaritmica consente di ottenere i diagrammi di Bode della XVII.2.19, come
+somma dei contributi dei diagrammi logaritmici dei suoi fattori riportati come curve asin-
+totiche. Queste sono rappresentate da semirette spezzate nel punto corrispondente alla
+pulsazione relativa a un polo o a uno zero, detta pulsazione d'angolo.
+Modello amplificatore di tensione alle alte frequenze (HF)
+Funzioni di trasferimento
+Avt(j) = Fi(j)Av(j)Fu(j) = Uu(j)  Us(j)
+Risposta in frequenza di
+Avt(j)
+Fi(j)
+Fu(j)
+Us
+Rs
+Ui
+Ri
+Ui
+Fi
+i
+i'
+Attenuatore d’ingresso
+AV
+Generatore di tensione
+Fu
+Attenuatore d’uscita
+Amplificatore di tensione AV
+AVUi
+Rc
+Uu
+Ru
+u
+u'
+AV
+Uu
+Ui Rc
+
+=
+
+=
+Ci
+Ri
+Rs
+Ri
++
+------------------
+1
+1
+j2
++
+-----------------
+2
+Ci Rs
+Ri
+
+
+
+=
+2
+1
+2
+----
+=
+Fi
+
+0
+
+lim
+j
+
+
+Ri
+Rs
+Ri
++
+------------------
+=
+Rc
+Ru
+Rc
++
+--------------------
+dB
+40
+20
+0
+104
+105
+2
+
+20dBdec
+AvtHF j
+
+
+AvtMF
+1
+1
+j2
++
+----------------------
+=
+
+[PAG 1629]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-29
+Ad esempio, si consideri il diagramma relativo al modello di amplificatore per le alte
+frequenze della Tab. XVII.3.2. Il diagramma del modulo della FdT AvtHF(j) è ottenuto nel
+seguente modo.
+–  Si determina l'espressione della FdT AvtHF(j). Si ha:
+–  Si esprime in dB il modulo di AvtHF(j). Supponendo, per semplicità, che il modulo
+della funzione di trasferimento alle frequenze medie abbia valore 100, si ottiene:
+20log AvtMF(j) = 40 dB; il valore, in generale, dipende da AV, Ri, Ru, Rs, Rc. La rappre-
+sentazione del fattore indicato è una retta parallela all'asse delle ascisse, come nella Fig.
+XVII.3.2.
+–  Il fattore 1(1+j) ha modulo 
+,
+ed è approssimato con asintoti nel seguente modo:
+–  per « 1, 10log(1 + ()2) 10log1 = 0 dB, e l'asintoto è rappresentato da 
+una semiretta che parte dal punto con ascissa  e coincide con l'asse delle ascisse;
+–  per » 1, 10log(1 + ()2) 10log()2 = 20log  20log, e l'asintoto è
+rappresentato da una semiretta che parte dal punto con ascissa  con pendenza di
+20 dB/dec.
+Nella Fig. XVII.3.2 sono disegnati i moduli dei due fattori; il modulo della FdT
+AvtHF(j) è ottenuto sommando i valori delle ordinate dei grafici asintotici dei due fattori,
+come si può vedere nella Fig. XVII.3.2, dove, ad esempio, l'ordinata del punto c vale 40dB
+ (25dB)  15dB.
+Fig. XVII.3.2   Diagramma di Bode del modulo di AvtHF(j) e dei fattori che lo determi-
+nano.
+D)  Risposta in frequenza di un amplificatore con carico
+Nella Fig. XVII.3.3 è disegnato il grafico completo della risposta in frequenza del gua-
+dagno totale di tensione Avt(j), espresso in dB, ottenuto riunendo i diagrammi di Bode
+riportati nella Tab. XVII.3.2, e tracciando la curva risultante.
+In relazione alla risposta in frequenza del guadagno totale dell'amplificatore, si defini-
+scono due parametri: la pulsazione di taglio inferiore L 1 e la pulsazione di
+taglio superiore H 2, per le quali Avt(j) diminuisce di 3 dB, ovvero di 1
+ in
+termini lineari, rispetto al diagramma di Bode alle MF. La differenza:
+è chiamata banda passante (Band Width), ed è un parametro dell'amplificatore, con L e
+AvtHF j
+
+
+Ri
+Rs
+Ri
++
+------------------
+Rc
+Rc
+Ru
++
+------------------- AV
+1
+1
+j2
++
+----------------------
+AvtMF
+1
+1
+j2
++
+----------------------
+=
+=
+20log1
+1
+2
+
+2
++
+
+10log
+–
+1
+
+
+2
++
+
+
+=
+20dBdec
+20dBdec
+dB
+40
+15
+0
+25
+10
+a
+c
+b
+104
+105
+2
+
+AvtHF(j)
+AvtMF
+1+(j2)
+2
+BW
+H
+L
+–
+=
+
+[PAG 1630]
+XVII-30
+ELETTRONICA ANALOGICA E DIGITALE
+H.
+Fig. XVII.3.3   Modulo della risposta in frequenza dell'amplificatore di tensione con
+carico resistivo, il cui schema è riportato nella Fig. XVII.3.1b.
+3.3  Analisi nel dominio del tempo
+L'analisi nel dominio del tempo di un amplificatore consiste nel determinare speri-
+mentalmente la risposta dell'amplificatore nel tempo; essa consente, inoltre, di determi-
+nare la pulsazione di taglio inferiore L e la pulsazione di taglio superiore H. Per fare
+ciò, si applica all'ingresso dell'amplificatore un opportuno segnale us(t) (un segnale a gra-
+dino o un impulso o un'onda rettangolare) e si rileva la forma d'onda del segnale d'uscita,
+dalla quale si possono determinare L e H. Si consideri il caso in cui l'accoppiamento
+che si realizza fra generatore e carico è del tipo riportato nella Fig. XVII.3.1b, e si sup-
+ponga che per il circuito valgano le ipotesi descritte nel Par. 3.2, punto B.
+A)  Analisi alle basse frequenze (LF) e calcolo di L
+Il circuito equivalente dell'amplificatore alle basse frequenze è quello della Tab.
+XVII.3.2 (prima riga). Il segnale d'ingresso rettangolare us(t), disegnato nella Fig.
+XVII.3.4a, è periodico ed ha equazione:
+(XVII.3.1)
+con: tp 0,1L; L = (Ru + Rc) C2; periodo TS = 2tp e frequenza fS = 1TS.
+Il segnale d'uscita vu(t) è determinato dalla carica e scarica del condensatore C2, ed ha
+la forma indicata nella Fig. XVII.3.4b. Noti AvtMF dell'amplificatore alle medie frequenze
+e i parametri del segnale d'ingresso US e TS, la pulsazione di taglio alle basse frequenze L
+è ottenuta misurando la variazione U del segnale d'uscita ed è data dalla relazione:
+(XVII.3.2)
+Fig. XVII.3.4   Analisi nel dominio del tempo dell'amplificatore di tensione alle basse fre-
+quenze: a) segnale d'ingresso; b) segnale d'uscita.
+dB
+40
+20
+0
+102
+103
+1=L
+
+10
+1
+2=H 104
+105
+3 dB
+uS t
+US
+=
+per 0
+t
+tp
+
+
+uS t
+0
+=
+per tp
+t
+2tp
+
+
+
+
+
+L
+1
+--
+U
+uu 0
+
+-------------
+
+2fs
+U
+uu 0
+
+------------- 2fs
+U
+AvtMFUs
+----------------------2fs
+=
+=
+=
+us(t)
+uu(t)
+Us
+tp
+0
+U
+AvtMF Us
+tp
+L
+L
+t
+t
+0
+TS = 2tp = s
+a)
+b)
+
+[PAG 1631]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-31
+L'effetto della variazione U è spesso espressa mediante il parametro S%, detto Sag o
+Tilt, definito da: S%100Uuu(0). Esprimendo la XVII.3.2 con questo parametro, si ha:
+B)  Analisi alle alte frequenze (HF) e calcolo di H
+Il circuito equivalente dell'amplificatore è quello della Tab. XVII.3.2 alle alte fre-
+quenze. Il segnale d'ingresso rettangolare uS(t), disegnato nella Fig. XVII.3.5a, è periodico
+ed espresso dalle XVII.3.1, con: tp 10H; H = Ci(Rs  Ri).
+Il segnale d'uscita uu(t) è determinato dalla carica e scarica del condensatore Ci, ed ha
+l'andamento disegnato nella Fig. XVII.3.5b. Misurando il tempo di salita tr (rise time), che
+è il tempo di transizione necessario perché la tensione di uscita passi dal 10% al 90% della
+tensione massima AvtMFUS, la pulsazione di taglio alle alte frequenze H è:
+(XVII.3.3)
+con tr  t2t1 2,2H.
+Fig. XVII.3.5   Analisi nel dominio del tempo dell'amplificatore di tensione alle alte fre-
+quenze: a) segnale d'ingresso; b) segnale d'uscita.
+Sia il tilt (S%) che il tempo di salita (tr), dipendono dalle caratteristiche dell’amplifi-
+catore e dell'accoppiamento con il carico: bassi valori di questi due parametri indicano
+che l'amplificatore ha una larga banda.
+3.4  Amplificatori reazionati negativamente
+Negli amplificatori reazionati i segnali sono controllati e amplificati, secondo lo
+schema a blocchi riportato nella Fig. XVII.2.8c. In questo schema la funzione di controllo
+consiste nel trasformare il segnale d'uscita XU nel segnale di reazione Xr, che dovrà essere
+omogeneo al segnale d'ingresso XS, e nel confrontare mediante somma algebrica i valori
+di Xr e XS; il segnale risultante Xd è detto segnale differenza o errore. I blocchi preposti al
+controllo sono: il punto di diramazione, realizzato con una rete di prelievo (sampling
+network); il blocco F2, realizzato con una rete di reazione (feedback network); il nodo
+sommatore, realizzato con un circuito indicato come comparatore (comparator). La fun-
+zione di amplificazione consiste nell'amplificare il segnale Xd, mediante il blocco di
+amplificazione F1, costituito da un amplificatore detto amplificatore base (basic ampli-
+fier). In un amplificatore reazionato si ha reazione negativa quando nel comparatore si ot-
+tiene Xd come differenza Xd = XS  Xr. La catena di controllo dà come effetto complessivo
+un'autoregolazione ottenuta dal confronto continuo fra XS e XU. Un amplificatore reazio-
+nato è a reazione positiva quando nel comparatore si ottiene Xd come somma Xd = XS  Xr.
+A)  Tipologia degli amplificatori con reazione negativa
+Negli amplificatori con reazione negativa, la connessione della Fig. XVII.2.8c si rea-
+L
+S%
+100
+------------s
+S%
+100
+--------2fs
+=
+=
+H
+0,7
+tr
+
+=
+us(t)
+uu(t)
+AvtMF Us
+0,9 AvtMF Us
+0,1 AvtMF Us
+TS = 2tp
+tp
+t
+Us
+0
+H
+0
+tp
+tr
+t2
+t1
+Ts
+t
+a)
+b)
+
+[PAG 1632]
+XVII-32
+ELETTRONICA ANALOGICA E DIGITALE
+lizza in quattro modi diversi, secondo il tipo di amplificatore base. Per la descrizione delle
+quattro tipologie, la relazione XVII.2.20 è scritta nel seguente modo:
+(XVII.3.4)
+con: Ar = FdT dell'amplificatore reazionato; A(j) = FdT dell'amplificatore di base; (j)
+= FdT della rete di reazione.
+La reazione negativa in un amplificatore influisce sulla resistenza d'ingresso Rir e
+sulla resistenza d'uscita Rur dell'amplificatore reazionato, che risultano diverse delle corri-
+spondenti resistenze Ri e Ru, dell'amplificatore base; nella descrizione delle tipologie,
+quindi, sono riportati anche questi dati.
+1)  Topologia serieparallelo (Fig. XVII.3.6a)
+–  L'amplificatore base è un amplificatore di tensione.
+–  Il comparatore è costituito da un circuito con topologia serie, e il confronto è fra US
+e Ur.
+–  La rete di prelievo ha topologia parallelo, per applicare la tensione UU alla rete di
+reazione.
+–  La topologia dell'amplificatore reazionato risultante è detta serieparallelo.
+–  Applicando all'ingresso il segnale uS = US cos(t + ), si determinano le seguenti
+funzioni di trasferimento: per l'amplificatore di tensione, Av(j = UU(jUd(j; per la
+rete di reazione, (j = Ur(jUU(j.
+Fig. XVII.3.6   Topologie per l'amplificatore di tensione con reazione negativa: a) topolo-
+gia serie/parallelo; b) topologia parallelo/serie; c) topologia serie/serie; d) topologia
+parallelo/parallelo.
+Ar j
+
+
+XU j
+
+
+XS j
+
+
+------------------
+A j
+
+
+1
+A j
+
+j
+
+
++
+------------------------------------------
+=
+=
+Amplificatore
+di tensione
+Rete di
+reazione
+Comparatore
+(topologia serie)
+Rete di prelievo
+(topologia parallelo)
+Us
+Ud
+UU
+UU
+Ur
+a)
+Rete di
+reazione
+Amplificatore
+di corrente
+Comparatore
+(topologia parallelo)
+Rete di prelievo
+(topologia serie)
+Is
+Id
+IU
+IU
+Ir
+b)
+Rete di
+reazione
+Amplificatore di
+transconduttanza
+Comparatore
+(topologia serie)
+Rete di prelievo
+(topologia serie)
+Us
+Ud
+Ur
+IU
+IU
+c)
+Amplificatore di
+transresistenza
+Rete di
+reazione
+Comparatore
+(topologia parallelo)
+Rete di prelievo
+(topologia parallelo)
+Is
+Id
+Ir
+UU
+UU
+d)
