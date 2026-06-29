@@ -1,0 +1,979 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 57/116 ===
+Chars: 44,895 | Offset: 2,474,362
+
+
+
+[PAG 1213]
+TRAZIONE ELETTRICA
+XII-23
+down), quando la tensione in uscita risulta inferiore a quella in ingresso, che come elevatore 
+(step up) nel caso opposto. 
+Nei veicoli a corrente continua muniti di motore a collettore, la configurazione di 
+abbassatore viene impiegata nella fase di trazione, l’altra per la frenatura con recupero. 
+Nelle Figg. XII.6.9 e XII.6.10 compaiono rispettivamente il simbolo e la tipologia del 
+frazionatore.
+Fig. XII.6.10  Tipi di frazionatore.
+Costituito da un interruttore elettronico quale il tiristore o il GTO, il frazionatore agi-
+sce modificando l’intervallo di conduzione durante il quale la sorgente di alimentazione e 
+l’utilizzatore risultano tra loro direttamente collegati. Indicato con T il periodo di funzio-
+namento dell’interruttore elettronico, detto Tc l’intervallo di conduzione, cioè la durata 
+temporale durante la quale l’interruttore è chiuso, e Ta l’intervallo di apertura, si ha: 
+(XII.6.2)
+(XII.6.3)
+La frequenza f  viene indicata come frequenza di chopper; si caratterizza  il rapporto:
+(XII.6.4)
+indicante il duty cycle col termine rapporto di conduzione, parzializzazione, intermittenza.
+La Fig. XII.6.11 illustra l’andamento della tensione in uscita da un frazionatore la cui 
+regolazione avviene per variazione di fase; il valore medio della tensione presente alla sua 
+uscita è calcolabile tramite la formula:
+(XII.6.5)
+con evidente significato dei simboli.
+Modificando il valore di s tra 0 e 1, si ottiene la 
+variazione continua del valore medio della tensione 
+di uscita del frazionatore. In particolare la tensione 
+di uscita del frazionatore può essere modificata tra-
+mite due tecniche:
+–  variazione del periodo di conduzione Tc, mante-
+nendo costante il periodo T (tecnica usualmente impie-
+gata e indicata col termine di regolazione di fase); 
+–  variazione del periodo complessivo T, mante-
+nendo costante la durata del periodo di conduzione 
+(tecnica della regolazione di frequenza).
+Fig. XII.6.11  Regolazione per variazione 
+di fase con un frazionatore abbassatore.
+
+
+
+
+
+
+
+
+Ui
+Uo
+Uo
+D
+SCR
+SCR
+D
+Frazionatore step up: Uo > Ui
+Frazionatore step down: Uo < Ui
+Ui
+f
+1
+T--
+=
+T
+Tc
+Ta
++
+=
+s
+Tc
+T-----,        con   0
+s
+1
+
+
+=
+U
+Ui
+Uo
+Tc
+Ta
+T
+t
+U
+Ui
+Uo
+Tc
+Ta
+T
+t
+Uo
+s Ui
+
+=
+
+[PAG 1214]
+XII-24
+TRAZIONE ELETTRICA
+L’impiego del frazionatore ha consentito di limitare la corrente assorbita dalla linea, 
+con conseguenti vantaggi dal punto di vista delle cadute di tensione e perdite di potenza 
+sulla linea di contatto, in particolar modo durante la fase di avviamento dei motori, evi-
+tando inoltre dissipazione di potenza sul reostato di avviamento.
+In presenza di più motori, nelle reti ferrovie italiane alimentate a 3 kV, il frazionatore 
+alimenta due motori tra loro collegati in serie consentendo così che ogni motore sia alimen-
+tato a metà tensione; in alternativa ogni motore viene corredato di un proprio frazionatore.
+In quest’ultimo caso il motore viene alimentato con una tensione compresa tra 1,8 e 
+2,2 kV. Per aggirare le limitazioni in termini di tensione e corrente derivanti dai disposi-
+tivi a semiconduttore disponibili sul mercato, questi ultimi vengono utilizzati collegati tra 
+loro in serie per quanto riguarda la tensione ed in parallelo per far fronte alla richiesta di 
+corrente. In pratica il convertitore viene ripartito in un numero q di frazionatori elemen-
+tari, solitamente alimentati da un unico filtro di linea, ognuno dei quali viene comandato 
+alla stessa frequenza f e con la stessa intermittenza s, ma con cicli di funzionamento tra 
+loro sfasati di un angolo elettrico : 
+(XII.6.6)
+intendendo che tale convertitore è costituito da q frazionatori interallacciati, o che è a 
+q fasi. Se le correnti interessanti i singoli frazionatori sono equilibrate e vige l’identicità 
+dei rapporti di parzializzazione, il filtro di ingresso è interessato da un modesto contenuto 
+di armoniche sovrapposte alla corrente assorbita in quanto i loro valori efficaci risultano 
+divisi per q3, quindi con notevoli vantaggi in termini costruttivi del filtro stesso.
+La Fig. XII.6.12 propone lo schema elettrico di principio di un convertitore costituito 
+da sei frazionatori interallacciati, quindi q = 6, destinato al comando di tre motori a c.c. 
+con eccitazione separata, nel quale gli avvolgimenti di eccitazione sono collegati tra loro 
+in serie ed alimentati da un convertitore ausiliario.
+In Italia la prima applicazione di serie del frazionatore si ebbe nel 1975 con l’installa-
+zione a bordo delle locomotive E.444 005, queste ultime, pur essendo invariate nel rap-
+porto di trasmissione e nei motori rispetto alle loro equivalenti, permisero di raggiungere 
+la velocità di 250 km/h con una potenza continua di 4,5 MW.
+Fig. XII.6.12  Azionamento per motori ad eccitazione separata con 6 motori interallac-
+ciati (locomotive E.632, E633, E652). 
+Un’altra tecnica per la regolazione della marcia dei motori di trazione elettrica è 
+quella indicata come regolazione reostatica continua, detta anche frazionatore in deriva-
+zione o shunt chopper (Fig. XII.6.13), consistente in un interruttore statico collegato in 
+
+2 
+
+q
+----------
+=
+Convert.
+aux
+M1
+M2
+M3
+M1
+M2
+M3
+Th11
+Th12
+Th21
+Th22
+Th31
+Th32
+B11
+B12
+B21
+B22
+B31
+B32
+D11
+D12
+D21
+D22
+D31
+D32
+L
+C
+
+[PAG 1215]
+TRAZIONE ELETTRICA
+XII-25
+parallelo al reostato di avviamento. 
+Durante l’intervallo di conduzione Tc, trascurando 
+la caduta di tensione ai capi del semiconduttore, la resi-
+stenza tra i morsetti estremi risulta nulla, mentre 
+durante gli intervalli Ta in cui il dispositivo è inter-
+detto, la medesima resistenza vale R. 
+Fig. XII.6.13  Shunt chopper.
+Posto, come sovente T = Tc + Ta ed s = Tc  T, detto Rc il valor medio equivalente
+della resistenza tra i morsetti A e B, si ha:
+(XII.6.7)
+La relazione XII.6.7 evidenzia la possibilità di modificare con continuità, agendo su s, 
+il valore della resistenza equivalente. Per s = 0 si ottiene Rc = R, se s = 1 allora Rc = 0. 
+Tale controllo, applicato per la prima volta nel 1974 alle locomotive della serie E.444 per-
+mise di incrementare lo sforzo di trazione delle medesime di circa il 10%, e contempora-
+neamente diminuire gli strappi e gli slittamenti; tuttora questo tipo di regolazione trova 
+applicazione per l’indebolimento del campo dei motori ad eccitazione serie e nella frena-
+tura elettrica reostatica.
+6.4  Alimentazione a corrente alternata trifase
+Nacque per superare i limiti imposti dall’alimentazione monofase in termini di ten-
+sione e potenza, a parità di sezione dei conduttori di linea. Permette l’impiego dei motori 
+asincroni, già tecnicamente e costruttivamente disponibili a partire dal 1900, anche per 
+tensioni di esercizio fino a 10 kV. Si ricorda, a tal fine, che il motore asincrono trifase si 
+distingue per le sue peculiarità di robustezza e semplicità meccanica ed elettrica.
+A tale scopo furono realizzate elettrificazioni trifase con due conduttori aerei ed il 
+terzo costituito dalle rotaie con tensioni di alimentazioni che, nei vari stati, assunsero il 
+valore di 1550 V, 3000 V, 6000 V, con frequenze comprese tra 15 ÷ 25 HZ. La scelta 
+della frequenza di funzionamento fu correlata all’esigenza di poter costruire motori con 
+un numero di poli non particolarmente elevato, contenere le cadute di tensione dovute 
+all’ulteriore contributo dovuto dalla reattanza induttiva della linea, ed infine limitare le 
+perdite di energia sulle rotaie costituenti uno dei conduttori di alimentazione.
+In particolare, a partire dal 1897, in Italia si realizzarono elettrificazioni a 3400 V, 
+16,7 Hz per le linee della Valtellina, cioè la linea Lecco – Colico – Sondrio, e la linea 
+Colico – Chiavenna. Le locomotive trifasi di elevata potenza erano realizzate prevedendo 
+la presenza di due motori asincroni trifase identicamente costruiti in modo da poter effet-
+tuare le sequenze di seguito riportate:
+1)  avviamento con i due motori collegati tra di loro in cascata e l’avvolgimento del rotore 
+del secondo motore chiuso su di un reostato inizialmente totalmente inserito
+2)  graduale disinserimento del reostato per aumentare la velocità di movimentazione;
+3)  marcia a mezza velocità con i due motori collegati in cascata ma con l’avvolgimento 
+del rotore del secondo motore chiuso in corto circuito (reostato completamente disinserito);
+4)  marcia a piena velocità dove i due motori vengono collegati tra loro in parallelo ed 
+i loro rotori risultano in corto circuito.
+La Fig. XII.6.14 illustra lo schema di principio di avviamento, modifica della velocità 
+e marcia presente nelle locomotive trifasi equipaggiate con due motori.
+Nonostante le applicazioni di linee alimentate con tensioni fino a 10 kV e frequenze 
+fino a 45 Hz (linea ferroviaria Roma – Sulmona  lunga 172 km, di cui 20 km in galleria, 
+nell’anno 1927) dessero esito positivo, la complessità nella realizzazione di una linea di 
+Th
+R
+Rc
+1
+s
+–
+
+R
+
+=
+
+[PAG 1216]
+XII-26
+TRAZIONE ELETTRICA
+contatto bifilare, in particolare in corrispondenza degli scambi e degli incroci, nonché le 
+caratteristiche del motore asincrono assai più limitative in termini di elasticità all’avvia-
+mento e durante la regolazione della velocità, hanno fatto propendere per il sistema a c.c. 
+con tensione pari a 3 kV. Inoltre è da considerarsi che ancora non erano disponibili dispo-
+sitivi elettronici in grado di generare tensioni trifase con frequenze diverse da quella 
+nominale a 50 Hz e con valori di corrente rilevanti; era quindi necessario ricorrere a con-
+vertitori rotanti installati nelle sottostazioni.
+Fig. XII.6.14  Avviamento e regolazione della velocità con due motori trifase.
+6.5  Alimentazione a corrente alternata monofase
+È nata successivamente al sistema di alimentazione trifase delle linee, per evitare le 
+complicazioni connesse alla doppia linea di contatto e, contemporaneamente, consentire 
+l’utilizzo di un motore dalle caratteristiche più flessibili rispetto a quello trifase.
+Nella fase iniziale fu previsto l’impiego di un motore monofase a collettore con ecci-
+L1
+L2
+R1
+M1
+3~
+M2
+3~
+M1
+3~
+M2
+3~
+M1
+3~
+M2
+3~
+~
+~
+R2
+L3
+L1
+L2
+R1
+~
+~
+R2
+L3
+L1
+L2
+R1
+~
+~
+R2
+L3
+L1
+L2
+R1
+~
+~
+R2
+L3
+M1
+3~
+M2
+3~
+1)
+2)
+3)
+4)
+
+[PAG 1217]
+TRAZIONE ELETTRICA
+XII-27
+tazione serie, proprio per il fatto che la caratteristica di funzionamento di quest’ultimo è 
+simile a quella dell’equivalente motore in c.c. Si ricorda, inoltre, che il succitato motore, 
+proprio per sua peculiare costruzione, risultava meno sensibile alle cadute di tensione in 
+linea. La frequenza della tensione di alimentazione non poteva essere quella nominale, 
+poiché comportava problemi costruttivi per quanto riguardava la realizzazione del collet-
+tore, con riferimento ai fenomeni della commutazione.
+Inizialmente l’alimentazione monofase per trazione venne applicata ai motori con ten-
+sioni di linea di circa 15 kV e frequenze di 50/3 Hz, oppure di 50/2 Hz, tramite trasforma-
+tori installati a bordo del veicolo; infatti la tensione massima di funzionamento di tali 
+motori arriva, per necessità costruttive, a 600 V. 
+Poiché una tensione così limitata comporta anche 
+potenze disponibili limitate (fino ad un massimo di 800 
+kW), le locomotive vengono munite di gruppi di motori 
+a corrente alternata monofase con collettore, per un 
+massimo di 6 motori, distribuiti sugli assi  in modo da 
+utilizzare al meglio il peso aderente in funzione dello 
+sforzo di trazione.
+Nei locomotori dotati di motori monofasi a collet-
+tore la fase di avviamento e la successiva regolazione 
+di velocità viene effettuata tramite la variazione della 
+tensione di alimentazione, attuata intervenendo sul tra-
+sformatore, sia variandone il rapporto spire, che tra-
+mite la variazione dei collegamenti serie-parallelo fra i 
+motori. 
+Per una locomotiva munita di due motori la Fig. 
+XII.6.15 illustra lo schema elettrico di principio. In par-
+ticolare si distinguono le seguenti fasi:
+1)  avviamento che prevede i due motori collegati 
+tra loro in serie e, a loro volta in serie col reostato di 
+avviamento, alimentati da una tensione ridotta;
+2)  marcia a mezza velocità ottenuta con l’esclu-
+sione graduale del reostato e successivo aumento della 
+tensione di alimentazione;
+3)  velocità uguale o poco superiore alla precedente 
+ottenuta collegando in parallelo i motori e applicando 
+una tensione ridotta;
+4)  marcia a piena velocità applicando ai motori il 
+valore di tensione nominale.
+Anche in questo caso la regolazione di velocità 
+risulta discontinua in quanto legata, tra l’altro, al 
+numero di prese disponibili sul trasformatore. 
+Fig. XII.6.15  Sequenza per regolazione della 
+ velocità in corrente alternata monofase.
+In particolare la variazione della tensione avviene tramite l’impiego di un dispositivo, 
+il graduatore, che può agire sia in bassa che in alta tensione (impiegato per potenze supe-
+riori a 2 MVA) modificando la tensione sui motori, senza che durante la variazione vi sia 
+interruzione nella circolazione della corrente. 
+Il graduatore, essendo nella realizzazione di base costituito da un certo numero di con-
+tatti striscianti presenta lo svantaggio dell’usura di questi ultimi. Per ovviare a questo sono 
+~
+1)
+2)
+3)
+4)
+TR
+TR
+R
+TR
+R
+R
+R
+~
+~
+~
+~
+~
+~
+~
+TR
+ ~
+M
+1  
+ ~
+M
+1  
+ ~
+M
+1  
+ ~
+M
+1  
+ ~
+M
+1  
+ ~
+M
+1  
+ ~
+M
+1  
+ ~
+M
+1
+
+[PAG 1218]
+XII-28
+TRAZIONE ELETTRICA
+stati realizzati graduatori a tiristori dove questi ultimi sostituiscono i contattori di potenza.
+L’alimentazione a corrente alternata monofase utilizzata con questo tipo di motori com-
+porta la presenza di uno o più trasformatori a bordo del veicolo, nonché la disponibilità di 
+sottostazioni di alimentazione in grado di effettuare la conversione di frequenza. 
+Attualmente vi sono elettrificazioni a 15 kV, 50/3 Hz in paesi europei quali Germania, 
+Austria, Svizzera, Norvegia e Svezia. Negli Stati Uniti d’America le linee sono alimentate 
+a tensioni di 12 kV con frequenza 50/2 Hz. L’elettrificazione in corrente alternata a fre-
+quenza industriale di 50 o 60 Hz e tensione a 25 kV viene utilizzata nelle linee francesi ad 
+alta velocità (il sistema TGV), Russia, Cina, Giappone, Gran Bretagna, ecc. 
+7  AZIONAMENTI PER TRAZIONE
+7.1  Generalità
+Gli azionamenti per trazione si sono evoluti, nelle varie soluzioni tecniche adottate, in 
+funzione di particolari requisiti legati fondamentalmente all’impiego al quale sono desti-
+nati e ai vari tipi di elettrificazione presenti. In particolare i requisiti ai quali devono sod-
+disfare si possono enumerare in:
+–  Dimensioni e pesi compatibili col veicolo al quale sono destinati.
+–  Realizzazione costruttiva in grado di far fronte a condizioni climatiche ampiamente 
+variabili, dovute al cambiamento di stagione o, semplicemente di località, per effetto di 
+uno spostamento, e a vibrazioni dovute all’impiego stesso del dispositivo con possibili 
+eventuali urti.
+–  Capacità di sopportare sotto e sovra tensioni per effetto di possibili fulmini in linea.
+–  Possibilità di funzionamento in condizioni di sovraccarico temporaneo (per esempio 
+durante la fase di partenza).
+–  Alta immunità ai disturbi elettromagnetici e, nel contempo, bassa emissione dei medesimi.
+–  Elevato grado di affidabilità.
+Gli attributi sopra riportati impongono che tutti i dispositivi possano essere installati a 
+bordo del veicolo, siano essi l’auto elettrica, il tram, il treno, senza creare particolari pro-
+blemi dimensionali o di peso. È da tener presente, inoltre, che la trazione elettrica non si 
+limita all’impiego in luoghi chiusi, anzi, solitamente, i mezzi di locomozione stazionano e 
+viaggiano in luoghi aperti ed entrano in luoghi chiusi (l’officina) solo se necessitano di ope-
+razioni di manutenzione. Durante i loro spostamenti sono sicuramente soggetti a vibrazioni 
+ed urti anche di entità non trascurabile senza dimenticare che durante il loro percorso, in 
+presenza di avversità metereologiche, possono essere soggetti a scariche elettriche notevoli 
+con sotto e sovra tensioni causate da fulmini. Durante la fase di partenza, dovendo movi-
+mentare masse talvolta considerevoli, si pensi ai treni merci, gli azionamenti devono essere 
+in grado di sopportare sovraccarichi momentanei senza danneggiamenti.
+I convertitori sono realizzati tramite dispositivi a stato solido nei quali la commutazione 
+avviene con fronti di salita ripidi, quindi con generazione di onde elettromagnetiche la cui 
+propagazione deve essere contenuta ai minimi livelli, per non interagire e quindi disturbare 
+altri dispositivi o apparecchiature. Infine una esigenza particolarmente sentita nell’ambito 
+della trazione elettrica è l’affidabilità. Se si pensa alla trazione elettrica in ambito ferrovia-
+rio si intuisce immediatamente che un guasto su un mezzo di trazione in linea è in grado di 
+compromettere completamente il buon funzionamento dell’intera linea ferroviaria.
+Per limitare quest’ultimo possibile inconveniente si è ricorsi al frazionamento dei cir-
+cuiti di potenza, che alimentano i motori di trazione, creando quindi una condizione di 
+ridondanza. Più circuiti di potenza presenti sul mezzo alimentano ciascuno uno o più 
+motori, consentendo in questo caso di far proseguire il mezzo, magari a velocità ridotta, 
+anche in caso di guasto di uno dei dispositivi di alimentazione. Per quanto concerne i
+
+[PAG 1219]
+TRAZIONE ELETTRICA
+XII-29
+sistemi di controllo, essendo questi meno delicati in quanto non sottoposti a sovracorrenti, 
+ci si garantisce il loro funzionamento tramite configurazioni provviste di circuiti ridon-
+danti. La realizzazione di azionamenti impiegabili nella trazione elettrica si è resa possi-
+bile dopo l’avvento e l’impiego dei semiconduttori di potenza, in particolare con gli SCR 
+ed i GTO. I primi, con spegnimento tramite l’impiego di circuiti ausiliari dedicati, gli 
+altri, con spegnimento comandato, sono in grado di interrompere correnti elevate anche in 
+presenza di tensioni medio-alte consentendo di realizzare varie conversioni di potenza: da 
+alternata monofase a continua, o da alternata monofase o continua ad alternata trifase con 
+controllo continuo sull’uscita.
+I primi azionamenti realizzati sono stati quelli precedentemente trattati del tipo a con-
+trollo di fase e chopper, rispettivamente nei sistemi con elettrificazione in alternata e in 
+quelli ad elettrificazione in continua, in quanto destinati ad alimentare motori elettrici a 
+collettore con campo serie o ad immagine serie.
+Successivamente, a causa dei problemi legati alla commutazione, alle limitazioni di 
+impiego ed anche per l’onerosa manutenzione dei suddetti motori, l’attenzione è stata 
+rivolta alle macchine a campo rotante sia di tipo asincrono che sincrono. Queste ultime 
+consentono di alleggerire la manutenzione offrendo, nel contempo, vantaggi di potenza e 
+leggerezza.
+Gli azionamenti destinati a macchine a campo rotante hanno risolto, tra l’altro, il pro-
+blema di poter inviare convogli ferroviari tra Paesi aventi sistemi di elettrificazione 
+diversi. In merito a quest’ultima asserzione, si precisa che, attualmente, regolamenti e 
+normative nazionali non sono armonizzate fra le varie Nazioni, e, pertanto, essendo 
+vigenti regolamenti, impianti di segnalazione, e sistemi di sicurezza diversi tra loro, esiste 
+comunque il problema di inviare materiale rotabile tra le varie Nazioni. In particolare, i 
+sistemi di segnalazione realizzati in maniera diversa da Paese a Paese, hanno, di fatto, 
+determinato la scelta della tipologia di azionamento impiegabile.
+L’azionamento, per suo funzionamento, interviene modificando la forma d’onda della 
+tensione e della corrente, creando, con le sue rapide commutazioni, segnali di tipo armo-
+nico (disturbi) in grado di propagarsi per la linea di alimentazione. Tali disturbi possono 
+influenzare i circuiti di segnalazione ed allarme; in particolare nelle linee elettrificate in 
+corrente continua il fenomeno si manifesta più intensamente perché si ha la sovrapposi-
+zione di tensioni alternate (i disturbi) alla componente continua di alimentazione. Pertanto 
+nei sistemi con elettrificazione in alternata gli azionamenti sono realizzati in modo che i 
+convertitori in ingresso funzionano con uno sfasamento tra loro, sincronizzati con  la ten-
+sione di linea e con frequenza di conversione inferiore al limite imposto dai dispositivi di 
+commutazione; nell’elettrificazione in continua, in particolare dove la potenza e la ten-
+sione lo permettono, si hanno frequenze di commutazione più elevate.
+Gli azionamenti impiegati nell’ambito della trazione elettrica sono quelli che tramite 
+l’invertitore elettronico permettono di convertire la tensione continua in alternata trifase 
+adatta all’alimentazione dei motori asincroni e dei motori sincroni.
+Brevemente si ricordano i vantaggi dell’utilizzo di un motore a campo rotante rispetto 
+ad un motore a collettore:
+–  A parità di potenza risultano ridotte sia la massa che l’ingombro, consentendo quindi 
+la realizzazione di carrelli motori di dimensioni più contenute;
+–  Nel caso dell’asincrono si ha una totale assenza di spazzole, ma per entrambi i tipi di 
+motore una manutenzione ridotta rispetto quelli a collettore;
+–  Ottimo comportamento per quanto riguarda l’aderenza sia durante la fase di trazione 
+che quella di frenatura;
+–  Possibilità di inversione della marcia con intervento sulla sequenza di comando 
+dell’invertitore senza ausilio di apparecchiature elettromeccaniche;
+
+[PAG 1220]
+XII-30
+TRAZIONE ELETTRICA
+–  Elevata elasticità di funzionamento, intesa come possibilità di sfruttamento della mas-
+sima potenza disponibile entro una ampia gamma di velocità, permettendo la realizza-
+zione di locomotive utilizzabili sia per movimentazione di merci, quindi a bassa velocità 
+ed elevata forza di trazione, che per il trasporto di viaggiatori, quindi ad elevata velocità.
+L’elasticità di funzionamento viene definita dal rapporto tra la velocità massima vM
+e la velocità minima vm in corrispondenza della quale è possibile utilizzare la potenza 
+nominale del motore:
+(XII.7.1)
+Una prerogativa offerta dagli azionamenti trifase è quella di consentire, a fronte di un 
+dimensionamento accettabile del convertitore e del motore associato, l’ottenimento della 
+caratteristica meccanica ideale per il mezzo di trazione. Con riferimento alla Fig. XII.7.1
+si può notare che la condizione ideale, in particolare per mezzi di trazione di grande 
+potenza, è soddisfatta quando la forza F fornita è costante o leggermente calante tra 0 vm, 
+mentre la potenza P fornita è costante nel  tratto vm  vM. Un invertitore interviene sulla ten-
+sione in uscita modificandone sia l’ampiezza che la frequenza. 
+ Per un motore asincrono, la variazione della tensione 
+di alimentazione, a parità di frequenza, agisce sulla 
+coppia fornita con la seguente relazione:
+(XII.7.2)
+dove C, C2 e kU rappresentano rispettivamente il 
+valore della coppia corrispondente alla tensione base 
+U, il valore della coppia in corrispondenza alla nuova 
+tensione di alimentazione U2 = kU · U. Nel caso in cui 
+la tensione venga mantenuta costante, ma si aumenti 
+la frequenza dal valore f al valore kf · f, la coppia 
+disponibile risulta:
+Fig. XII.7.1  Caratteristica 
+meccanica ideale.
+(XII.7.3)
+Una distinzione rigorosa delle diverse tipologie di azionamento non è semplice, anche 
+perché dipendono dal sistema di elettrificazione al quale sono destinati e dal motore che 
+andranno ad alimentare. 
+7.2  Convertitore trifase per motori asincroni
+La funzione principale svolta da un convertitore è quella di trasformare una tensione 
+continua in un sistema trifase di tensioni con frequenza variabile. È un sistema a commu-
+tazione forzata costituito da sei dispositivi SCR comandati da un sistema elettronico che 
+stabilisce sfasamenti e frequenza delle tensioni generate.
+Il funzionamento del convertitore può essere di tipo a tensione impressa oppure a cor-
+rente impressa.Il convertitore a tensione impressa (Fig. XII.7.2) può essere costituito da 
+uno oppure due convertitori in cascata; il primo tipo viene impiegato quando la tensione in 
+ingresso è continua e pertanto alimenta direttamente il convertitore continua-trifase. Il 
+convertitore a doppio stadio viene realizzato dalla cascata di un primo convertitore, detto 
+convertitore di ingresso, avente funzioni che dipendono dalla tensione della linea di ali-
+mentazione; tale primo stadio può essere:
+
+vM
+vm
+------
+=
+P
+P, F
+O
+vm
+vM
+v
+C2
+kU
+2
+C
+
+=
+C2
+C
+kf
+2
+------
+=
+
+[PAG 1221]
+TRAZIONE ELETTRICA
+XII-31
+–  un semplice raddrizzatore per la conversione dell’energia elettrica trifase generata a 
+bordo dei veicoli diesel;
+–  un raddrizzatore controllato di tipo a commutazione naturale o forzata, se l’alimenta-
+zione della linea è una tensione alternata monofase;
+–  un frazionatore (chopper) con alimentazione a corrente continua.
+A questo primo stadio segue un secondo convertitore avente la funzione di invertire la 
+tensione da continua ad alternata trifase, cioè il convertitore continua-trifase. I due con-
+vertitori sono collegati tra loro tramite un circuito intermedio costituito da un condensa-
+tore di adeguata capacità in grado di mantenere costante la tensione in ingresso al secondo 
+stadio.
+Fig. XII.7.2  Convertitori a tensione impressa monostadio e bistadio alimentati a corrente 
+continua o alternata monofase.
+ 
+Fig. XII.7.3  Convertitori a corrente impressa alimentati in c.c. o c.a. monofase.
+Il convertitore a corrente impressa (Fig. XII.7.3) è sempre costituito da due stadi:
+1)  Uno stadio avente funzioni di raddrizzatore e di regolatore, nel caso di alimentazi-
+one in alternata, o di frazionatore nel caso della continua, che alimenta, tramite una indut-
+tanza di opportuno valore, il secondo stadio.
+2)  Il secondo stadio comunemente denominato commutatore statico, è un circuito 
+realizzato a semiconduttori con la funzione di commutare ciclicamente ad una data fre-
+quenza, la corrente in ingresso da una fase all’altra del motore asincrono, in maniera del 
+tutto analoga nel funzionamento all’alimentazione di un motore a collettore.
+I due stadi risultano collegati tra loro tramite una induttanza con la funzione di mante-
+MA
+MA
+MA
++
+
++
+
+=
+=
+=
+=
+3
+~
+~
+=
+3~
+=
+3~
+Uc
+Uc
+Uc
+UL
+UL
+UL~
+MA
+UL
+MA
+UL
++
+
+=
+=
+=
+=
+=
+3~
+~
+3~
+~
+
+[PAG 1222]
+XII-32
+TRAZIONE ELETTRICA
+nere costante il valore della corrente che entra nel secondo stadio.
+Lo schema a corrente impressa risulta particolarmente efficace, in quanto consente 
+l’impiego di tiristori con spegnimento naturale, ma ha lasciato il passo a configurazioni 
+del tipo a tensione impressa con la recente disponibilità di GTO in grado di comandare 
+elevate potenze.
+Riguardo la reversibilità si noti che sia l’invertitore che il motore asincrono sono 
+dispositivi reversibili, costituiscono cioè un sistema in grado di passare dalla condizione 
+di trazione a quella di frenatura con recupero senza effettuare modifica alcuna nei circuiti 
+di comando. È necessario tuttavia che, nei sistemi a due stadi, si impieghi un frazionatore 
+reversibile (a due quadranti) nel caso di alimentazione continua, oppure un raddrizzatore 
+totalmente controllato con l’alimentazione in alternata.
+7.3  Convertitore trifase per motori sincroni
+Anche questo tipo di convertitori interviene generando tensioni aventi frequenze 
+variabili, risultando comunque semplificato rispetto a quello destinato ai motori asincroni, 
+proprio in virtù del funzionamento sincrono del motore a cui è destinato.
+Il motore sincrono, opportunamente eccitato, per effetto della rotazione, genera esso 
+stesso una terna di tensioni aventi frequenza che dipendono dalla velocità di rotazione 
+stessa, in grado di effettuare lo spegnimento naturale dell’invertitore.
+L’invertitore impiegato è di tipo a corrente impressa, è realizzato nello stesso modo di 
+quello destinato ai motori asincroni, quindi di tipo a due stadi, e prende il nome di auto-
+sincrono (Fig. XII.7.4). Lo stadio in ingresso svolge la funzione di regolatore di corrente, 
+mentre lo stadio di uscita svolge la funzione di commutatore statico, modificando cioè la 
+frequenza di commutazione delle correnti in uscita.
+Anche per questo azionamento l’inversione di marcia avviene staticamente, ovvero 
+con la semplice variazione della sequenza dei comandi di gate dei tiristori presenti nello 
+stadio in uscita. Se lo stadio in ingresso è di tipo bidirezionale, è possibile intervenire sul 
+funzionamento del sistema, passando dalla trazione alla frenatura con recupero dell’ener-
+gia, modificando l’angolo di comando dei tiristori dello stadio di uscita, in modo da tra-
+sformare il loro funzionamento da invertitori a raddrizzatori. 
+Fig. XII.7.4  Azionamenti trifase autosincroni alimentati a corrente continua o alternata 
+monofase.
+8  MEZZI DI TRAZIONE CON AZIONAMENTI
+8.1  Locomotiva BB 26000
+Lo schema elettrico di principio che viene riportato in Fig. XII.8.1 viene impiegato 
+sulle locomotive bicorrente ad alta prestazione, denominate SYBIC BB 26000, in grado di 
+sviluppare una potenza nominale di 5,6 MW con velocità compresa tra 90 e 200 km/h.
+Si noti il primo stadio, quello di conversione, realizzato tramite raddrizzatori a com-
+UL
+UL
++
+
+~
+=
+3~
+=
+3~
++
++
+
+
+MS
+MS
+=
+=
+=
+~
+disp. di
+commut.
+disp. di
+commut.
+
+[PAG 1223]
+TRAZIONE ELETTRICA
+XII-33
+mutazione naturale di tipo semicontrollato; una soluzione che consente di ottenere fattori 
+di potenza decisamente più elevati rispetto alla commutazione a controllo totale. Inoltre, il 
+comando di questo stadio di conversione agisce assicurando che la tensione in uscita 
+risulti stabile, e insensibile alle variazioni o alle cadute di tensione in linea.
+La corrente allo stadio successivo viene inviata tramite un filtro di tipo LC. Lo stadio 
+seguente, quello dei motori, è costituito da due inverter di corrente, uno per ciascuno dei 
+due avvolgimenti statorici del motore sincrono a doppia stella destinato alla movimenta-
+zione del carrello, alimentati da un chopper, tramite una induttanza che mantiene stabile 
+la corrente durante il funzionamento.
+Un circuito ausiliario costituito da due tiristori (SCR1, SCR2) ed un condensatore 
+(Caux) costituisce il sistema di avviamento. Nella figura si evidenzia anche la possibilità 
+di alimentazione in c.c. con tensione di 1500 Volt. In quest’ultimo caso viene oltrepassato 
+lo stadio raddrizzatore, ed il filtro LC costituisce il filtro di ingresso per il chopper. 
+Fig. XII.8.1  Azionamento di un carrello della locomotiva BB26000.
+8.2  Elettrotreno TGV Atlantique
+L’azionamento impiegato sul treno ad alta velocità TGV-A (Fig. XII.8.2) è costituito 
+da due ponti raddrizzatori semicontrollati, tra loro sfasati e collegati in serie, e prevede per 
+l’avviamento un circuito ausiliario di commutazione alimentante il centro stella dei motori 
+sincroni, questi ultimi realizzati con un avvolgimento statorico a stella singola.
+L’avviamento si realizza intervenendo progressivamente sull’angolo di conduzione di 
+uno dei due ponti raddrizzatori, tenendo l’altro al minimo della conduzione ed agendo su 
+quest’ultimo solo quando il primo ponte risulta nello stato di conduzione massima.
+Questa disposizione consente di ottenere valori del fattore di potenza più elevati che 
+nel caso di ponte singolo. Si noti la presenza di un dispositivo chopper che permette il 
+funzionamento anche con catenaria alimentata in c.c. a 1,5 kV.
+La soluzione proposta risulta particolarmente valida quando la frequenza di alimenta-
+zione è di 50Hz, ma, per valori più bassi, diventa preponderante la dimensione ed il peso 
+dell’induttore posto in serie. 
+8.3  Locomotore E 402 B
+In Italia, come conseguenza della scelta del sistema di alimentazione alternata mono-
+fase per le nuove linee ad alta velocità, si sono realizzate locomotive in grado di funzio-
+nare a 25 kV, 50 Hz oltre che la tradizionale tensione di 3 kV in corrente continua.
+25 kV  50 Hz
+1,5 kV  c.c.
+L
+Caux
+SCR1
+SCR2
+Precarica
+Chopper
+Motore
+C
+
+[PAG 1224]
+XII-34
+TRAZIONE ELETTRICA
+Fig. XII.8.2  Azionamento di un carrello del TGV-A.
+È nata così la locomotiva policorrente E 402 B (esiste anche la versione tritensione 
+con alimentazione a 1,5 kV in c.c.), equipaggiata con azionamento e motori asincroni. È il 
+risultato delle modifiche meccaniche ed elettriche apportate alla locomotiva  E 402 A, ser-
+vite  a fornire lo spazio necessario al collocamento delle apparecchiature necessarie al 
+funzionamento politensione. Con massa complessiva di 87 t, e munita di rodiggio BoBo, 
+ogni suo motore è alimentato da un proprio convertitore bistadio, raffreddato da un moto-
+ventilatore aspirante l’aria dal tetto del veicolo.
+Il primo stadio è un convertitore che svolge una duplice funzione: effettua la conversione 
+corrente alternata in corrente continua, qualora la linea sia alimentata in alternata, seguito 
+da un frazionatore con la funzione di compensare le variazioni della tensione in ingresso.
+Il secondo stadio è costituito da un inverter realizzato con tiristori di tipo GTO realiz-
+zando un convertitore tensione impressa.
+Questa locomotiva, in grado di sviluppare una potenza continua di 5,6 MW, ed una 
+potenza oraria di 4  1,4 MW, raggiunge la velocità massima di 220 km/h, inoltre, dato il 
+suo elevato valore di elasticità di funzionamento, è in grado di garantire un elevato rendi-
+mento sia per il traino di treni passeggeri che di quelli merci. A tal riguardo si precisa che 
+è previsto l’utilizzo delle linee ad alta velocità negli orari di pausa del traffico passeggeri.
+9  ALIMENTAZIONE DELLE LINEE DI CONTATTO
+L’elettrificazione delle linee è il risultato di:
+–  Evoluzione dei sistemi di alimentazione;
+–  Necessità di trasportare una quantità di merce e di viaggiatori sempre più consistente
+–  Richiesta di velocità crescenti;
+–  Impiego di motori elettrici di vario tipo.
+L’alimentazione delle linee si diversifica per il sistema di tensione applicata, per il 
+valore della tensione, e per la frequenza. In particolare vi sono sistemi di alimentazione 
+alternata trifase, alternata monofase e a corrente continua, con tensioni che variano da 600 
+25 kV  50 Hz
+1,5 kV  c.c.
+Chopper
+M2
+Precarica
+Precarica
+M1
+
+[PAG 1225]
+TRAZIONE ELETTRICA
+XII-35
+V a 25 kV e frequenze di 50/3 Hz (indicata come frequenza ferroviaria), 50 Hz e 60 Hz.
+L’utilizzo dell’alta tensione in linea è dovuto essenzialmente alle ragguardevoli 
+potenze assorbite dalle locomotive ed alla limitazione della corrente sulla linea di contatto 
+imposta dai problemi legati alla captazione. La scelta di frequenze speciali quale quella di 
+50/3 Hz è conseguenza della necessità di poter impiegare motori con un numero tollera-
+bile di poli (usualmente 6 oppure 8) che consentano di far viaggiare il convoglio a velo-
+cità intorno ai 50-60 km/h evitando di ricorrere ai riduttori a ruote dentate. Inoltre una 
+frequenza bassa permette di limitare l’impedenza della linea con conseguenti minori 
+cadute di tensione; precisamente, considerando la presenza della reattanza induttiva della 
+linea e del suo amento di resistenza dovuta alla componente alternata, l’impedenza com-
+plessiva a 50/3 Hz risulta appena 2,5 volte maggiore, se confrontata con la resistenza pre-
+sentata dalla medesima linea alimentata in corrente continua.
+È necessario ricordare a tal proposito che, per i motori funzionanti in corrente alter-
+nata, è bene che le cadute di tensione siano il più possibile contenute; infatti queste ultime 
+intervengono limitando il valore della coppia massima sviluppata dai motori medesimi. 
+Questo è il motivo per il quale, alfine di contenere le cadute di tensione, le sottostazioni 
+devono distare tra loro al massimo 12 km. Si ricorda che l’alimentazione a tensione alter-
+nata trifase a frequenza speciale di 50/3 Hz, particolarmente presente in Italia al punto da 
+essere considerata un sistema tipicamente italiano, ha avuto un inesorabile declino per una 
+serie di problematiche quali:
+–  difficoltà di produzione di tale energia,
+–  impossibilità di adattare le velocità al tipo di servizio e di tratta da percorrere, 
+–  limitazione della velocità massima imposta dalla linea aerea a due conduttori,
+–  difficoltà di garantire la continuità della terza fase, tramite le rotaie, in corrispondenza 
+degli scambi.
+Le locomotive utilizzanti il sistema trifase, quali la E 550, la E 551 e la E 554 erano 
+dotate di motori asincroni trifase collegati in cascata oppure in parallelo che consentivano 
+velocità di 25 e 50 km/h.
+9.1  Linee elettrificate a corrente continua
+L’impiego di linee elettrificate a corrente continua è legato essenzialmente alla facilità 
+del processo di conversione da tensione alternata a tensione continua ed alla flessibilità di 
+utilizzo dei motori a corrente continua; infatti, questi ultimi, sono capaci di fornire elevate 
+coppie anche a basso numero di giri.
+Attualmente vi sono linee alimentate a tensioni continue di 750 V, o 1500 V per le 
+metropolitane e di 3000 V per le ferrovie. La tensione continua viene fornita alle linee da 
+sottostazioni di conversione aventi tra loro distanze che dipendono dal traffico effettuato 
+sulla tratta alimentata: per le linee a traffico intenso di metropolitane alimentate a 750 V 
+la distanza minima risulta talvolta inferiore a 1,5 km; nelle metropolitane alimentate a 
+1500 V si arriva a distanze intorno agli 8 km; infine nelle linee a 3000 V la distanza tra le 
+sottostazioni di conversione si aggira intorno ai 15 km.
+A fronte di potenze unificate dei gruppi di conversione di 3,6 MW e 5,4 MW, le reti 
+industriali di alimentazione trifase che forniscono energia a tali gruppi hanno tensioni di 
+valore pari a 66, 132 e 150 kV.
+L’evoluzione delle sottostazioni di conversione si è avuta in modo particolare per 
+quanto riguarda la sezione destinata alla conversione, infatti in quest’ultima inizialmente 
+furono impiegati convertitori rotanti, successivamente la tensione venne raddrizzata tra-
+mite raddrizzatori a vapore di mercurio detti anche mutatori, per approdare infine alle tec-
+niche odierne di conversione tramite i raddrizzatori al silicio, talvolta di tipo controllato. 
+Quest’ultimo tipo di convertitori permette una efficace regolazione della tensione di linea; 
+inoltre si sono potute realizzare delle sottostazioni reversibili, in grado di effettuare il recu-
+
+[PAG 1226]
+XII-36
+TRAZIONE ELETTRICA
+pero in rete dell’energia durante la fase di frenatura dei convogli. Questa evoluzione ha 
+comportato notevoli benefici quali il minor costo di esercizio e di manutenzione, rendi-
+menti di conversione particolarmente elevati ed elevato grado di affidabilità.
+Operativamente la sottostazione può considerarsi composta di:
+–  Una sezione di alta tensione dove arriva la linea di alimentazione primaria trifase di 
+Alta Tensione AT.
+–  Gli interruttori ed i sezionatori, entrambi 
+tripolari.
+–  Un trasformatore per abbassare la ten-
+sione al valore opportuno.
+–  Il gruppo dei raddrizzatori al silicio col-
+legati a ponte trifase, corredati in uscita di 
+filtri realizzati tramite induttori.
+–  I sezionatori e gli interruttori extrara-
+pidi, questi ultimi in grado di intervenire 
+nel caso di corto circuiti sulla linea a cor-
+rente continua
+Usualmente la sezione AT, trasformatori 
+compresi, nonché i sezionatori e gli inter-
+ruttori extrarapidi, a causa delle dimen-
+sioni talvolta non trascurabili, vengono 
+collocati all’aperto, mentre il sistema di 
+conversione trova alloggiamento in armadi 
+ricoverati in un edificio.
+L’ubicazione e le prerogative richieste 
+dalle sottostazioni di conversione SSE 
+definiscono il tipo di collegamento tra la 
+sottostazione e la rete industriale trifase
+ad alta tensione che le alimenta:
+–  alimentate direttamente da una stazione 
+a rete industriale qualora quest’ultima sia 
+ubicata nelle vicinanze e, pertanto, colle-
+gate in derivazione tramite una linea pri-
+maria, competenza dell’impianto di trazio-
+ne, alla stazione della rete AT;
+–  alimentate in gruppo tramite collega-
+mento in derivazione a più linee primarie
+AT collocate in prossimità del percorso 
+ferroviario, queste ultime collegate a loro 
+volta magari in più punti alle stazioni della 
+rete industriale;
+–  con alimentazione mista, cioè alimen-
+tate dalle stazioni della rete industriale 
+nonché da linee primarie di altre sottosta-
+zioni di conversione.
+Fig. XII.9.1  Collegamenti alle sottostazioni.
+Si dice che una sottostazione di conversione risulta collegata in serie rispetto alle 
+linee primarie se, queste ultime, risultano interrotte e collegate, tramite interruttori tripo-
+lari di linea, alle sbarre AT della sottostazione stessa. La Fig. XII. 9.1 illustra i vari tipi di 
+a
+a
+b
+b
+b
+b
+b
+c
+c
+d
+d
+a) Collegamento in derivazione
+d
+d
+b
+b
+b
+b
+b
+b
+b
+b
+b
+b
+d
+d
+e
+a
+a
+b) Collegamento in serie
+ Nota a = Linea primaria trifase Alta Tensione
+b = Sezionatori tripolari
+c = Sbarra trifase Alta Tensione della sottostazione
+b
+b
+d = Interruttori tripolari di gruppo in Alta Tensione
+e = Postazione per sottostazione mobile
+
+[PAG 1227]
+TRAZIONE ELETTRICA
+XII-37
+collegamento delle sottostazioni.
+Un aspetto di primaria importanza è la continuità di esercizio: per garantirla si ricorre 
+all'impiego di una doppia alimentazione effettuata tramite due linee primarie, queste 
+ultime collegate a stazioni della rete industriale tra loro indipendenti, e all'utilizzo di un 
+sistema doppio o triplo di sbarre AT con la presenza di una doppia linea primaria. Nor-
+malmente i gruppi di conversione presenti in ogni sottostazione di conversione sono in 
+numero di due, mentre nelle linee destinate all'alta velocità, nei nodi ferroviari più impor-
+tanti, e nei tratti di valico, tali gruppi sono presenti in numero di tre o più. Talvolta il 
+gruppo si riduce ad uno solo, pertanto per garantire la continuità di servizio si prevede 
+l'impiego delle sottostazioni ambulanti SSA, apparecchiature sistemate su uno o due carri 
+speciali, che facilmente possono essere spostate in modo da poter sostituire una SSE.
+Si indica col termine potenza specifica Ps il rapporto tra la potenza nominale totale 
+delle sottostazioni di alimentazione e l’estensione della linea; il suo valore dipende dal 
+tipo e dall’impiego della linea, e può arrivare, per le linee destinate all'Alta Velocità, a 
+raggiungere il valore di 2 MW assorbiti/km. 
+9.2  Linee elettrificate a corrente alternata
+La necessità di contenere a limiti accettabili il valore della corrente assorbita dalla 
+linea di contatto e, contemporaneamente, poter disporre di elevate potenze, è il motivo per 
+il quale alcuni stati europei quali per esempio Germania, Austria, Svezia ed altri come il 
+Giappone, la Bulgaria, il Sud Africa, ed altri ancora, hanno optato per l’alimentazione 
+delle linee in corrente alternata monofase con tensione di 15 kV e frequenza 50/3 Hz, 
+oppure tensione di 25 KV e frequenza di 50 o 60 Hz. Non mancano realizzazione di linee 
+alimentate alla tensione di 50 kV in Paesi quali il Canada e il Sud Africa.
+Questa soluzione consente di contenere le perdite di potenza sulla linea e conseguire 
+così la massima economia di esercizio, inoltre permette la realizzazione di linee di con-
+tatto con sezione dei conduttori complessivamente minore, e conseguente minor peso 
+della catenaria. In questi casi la tensione captata viene convertita ad un valore adeguato ad 
+alimentare i motori del convoglio tramite dei trasformatori presenti a bordo.
+L’elettrificazione delle reti a corrente alternata monofase con frequenza ferroviaria, 
+avviene in Europa con due tecniche:
+–  Distribuzione centralizzata. Le sottostazioni, distribuite lungo le linee ferroviarie, sono 
+alimentate da linee primarie in Alta Tensione, e queste ultime sono, a loro volta, alimentate 
+da centrali termoelettriche o idroelettriche generanti la tensione a frequenza ferroviaria.
+–  Conversione distribuita. Realizzata tramite stazioni di conversione in grado di trasfe-
+rire energia alle reti di trazione, ad adeguata frequenza, prelevandola dalle reti trifase a fre-
+quenza industriale.
+È bene ricordare a questo proposito che le variazioni di frequenza ammesse sulle reti 
+ferroviarie sono più elevate rispetto alle reti industriali; infatti, per rispettare la normativa 
+europea EN 50163, i valori tipici devono essere compresi tra -3% e +2%.
+Normalmente i sistemi a distribuzione centralizzata prevedono sottostazioni equipag-
+giate da due trasformatori monofase per una potenza complessiva installata fino a 15 MW, 
+alimentati alla tensione di 110 kV ( in Svizzera a 132 kV) e distanti tra loro al massimo 
+80 km. La tensione di alimentazione delle linee di contatto a 15 kV può variare tra -20% e 
++15% in modo permanente, ed arrivare ai valori estremi di 11 kV per un periodo massimo 
+di 10 minuti e di 18 kV per 5 minuti (EN 50163).
+I sistemi a conversione distribuita prevedono la presenza di sottostazioni aventi fun-
+zione sia di trasformazione della tensione che di conversione della frequenza e della fase, 
+in quanto risultano direttamente connesse alla rete industriale. In questo tipo di alimenta-
+zione la frequenza risultante dalla conversione è legata alla frequenza della tensione di
