@@ -40,7 +40,7 @@ function refreshAll() {
   try { if (typeof renderActivePlants === 'function') renderActivePlants(); } catch(e) {}
   try { if (typeof loadWeather === 'function') loadWeather(); } catch(e) {}
   try { if (typeof renderLunarSection === 'function') renderLunarSection(); } catch(e) {}
-  try { if (typeof loadLunaConsigli === 'function') loadLunaConsigli(); } catch(e) {}
+  try { if (typeof loadLunaConsigli6 === 'function') loadLunaConsigli6(); } catch(e) {}
   try { if (typeof labLoadAll === 'function') labLoadAll(); } catch(e) {}
 }
 
