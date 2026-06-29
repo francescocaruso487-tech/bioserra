@@ -24,6 +24,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Installa dipendenze Python
+        run: pip install pymupdf pdfplumber pypdf --break-system-packages
+
       - name: Estrai testi da PDF (OCR completo)
         env:
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
