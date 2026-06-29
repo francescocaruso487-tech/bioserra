@@ -1,0 +1,1450 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 107/116 ===
+Chars: 45,000 | Offset: 4,686,988
+
+
+
+[PAG 2079]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-61
+Tav. XX.2.15  Schema planimetrico con disposizione topografica dei componenti.
+
+
+
+
+
+
+
+
+
+
+
+
+
+[PAG 2080]
+XX-62
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.2.16  Schema dei collegamenti principali dell’impianto di terra.
+–  conformi alla norma CEI 23-51 per i quadri per uso domestico e similare;
+–  accesso ai comandi con barriera contro i contatti diretti;
+–  tenuta al corto circuito per corrente di corto circuito trifase nel punto di installazione 
+pari a 6 kA (quadro generale) e 4,5 kA (quadri secondari);
+–  frequenza nominale di tutti i circuiti 50 Hz;
+
+[PAG 2081]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-63
+Tav. XX.2.17   Schema elettrico generale della distribuzione.
+–  tensione nominale d’impiego dei componenti: 230 V monofase, 400 V trifase;
+–  tensione nominale d’isolamento 500 V;
+–  caratteristica d’intervento degli interruttori magnetotermici di tipo C.
+Le altre caratteristiche degli interruttori (numero poli, corrente nominale, potere 
+d’interruzione nominale) sono indicate nelle tabelle annesse agli schemi.
+
+
+
+[PAG 2082]
+XX-64
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.2.18   Schema unifilare del quadro elettrico generale (quadro 1).
+Gli interruttori magnetotermici e magnetotermici differenziali hanno funzione di 
+sezionamento e protezione combinata dai sovraccarichi e dai corto circuiti (quelli diffe-
+renziali anche per i contatti indiretti), in quanto scelti come indicato al Par. XX.2.2.6.
+
+[PAG 2083]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-65
+Tav. XX.2.19  Schema unifilare del quadro elettrico generale (quadro 1).
+L’interruttore magnetotermico differenziale generale a valle del contatore, posto a 
+protezione dei contatti con la struttura del quadro, sarà di tipo selettivo ritardato, per evi-
+tare conflitti d’intervento con quelli installati a valle.
+
+
+[PAG 2084]
+XX-66
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.2.20  Schema unifilare delle alimentazioni delle rettificatrici.
+
+[PAG 2085]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-67
+Tav. XX.2.21  Schema unifilare dei quadri secondari dell’officina.
+
+[PAG 2086]
+XX-68
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.2.22   Schema unifilare dei quadri secondari dell’officina.
+2.2.5  Calcoli esecutivi (relazione illustrativa) 
+È il documento che indica il dimensionamento dei componenti elettrici e delle condut-
+ture, in base alle potenze dei carichi, ai valori assunti per i fattori di contemporaneità e uti-
+lizzazione, alle massime cadute di tensione ammesse.
+a)  Determinazione della potenza convenzionale di progetto e delle correnti 
+d’impiego dei vari circuiti
+Dall’esame dei carichi da alimentare sono stati ricavati i dati riportati nella Tab. XX.2.16.
+Per alcune sezioni d’impianto (ufficio, mensa e servizi) è stata valutata la potenza pre-
+
+[PAG 2087]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-69
+sunta globalmente assorbita.
+Il calcolo delle potenze convenzionali dei vari circuiti e delle rispettive correnti d’impiego 
+è stato effettuato tenendo presente, oltre ai dati della Tab. XX.2.16, i seguenti criteri:
+–  per le macchine rettificatrici, in base alle informazioni ricevute dalla committenza rela-
+tivamente al funzionamento delle stesse, è stato assunto un fattore di utilizzazione pari a 0,6;
+–  per gli altri carichi si è posto Ku = 1;
+–  le macchine di minore importanza (troncatrice, smerigliatrice, trapani, mola) verranno 
+alimentate dai quadri secondari serviti dalla stessa linea dorsale, alla quale saranno colle-
+gati anche i pannelli delle prese a disposizione; per tale linea è stata assunta una potenza 
+assorbita pari a 7,5 kW, comprensiva della potenza delle macchine e di quella a disposi-
+zione per i pannelli prese;
+–  gli apparecchi illuminanti del capannone verranno divisi in quattro circuiti partenti dal 
+quadro generale, corrispondenti alle quattro file;
+–  la potenza assorbita dal compressore è stata calcolata considerando un rendimento di 0,8;
+–  la potenza assorbita dalle ventole è stata calcolata considerando il rendimento pari a 0,75.
+Le caratteristiche dei circuiti partenti dal quadro generale sono riportate nella Tab. XX.2.17.
+Il valore della potenza convenzionale di progetto è stato calcolato in base alle potenze 
+assorbite convenzionali della Tab. XX.2.17, tenendo conto di un fattore globale di contem-
+poraneità, come di seguito indicato:
+–  somma delle potenze assorbite convenzionali 50,7 kW
+–  fattore di riduzione globale per contemporaneità 0,75
+–  potenza convenzionale 50,70,75  38 kW
+Tab. XX.2.16  Dati dei carichi da alimentare
+Denominazione
+Alimentazione
+Tensione
+nominale
+[V]
+Potenza
+resa
+[kW]
+Potenza
+assorbita
+[kW]
+cos 
+Rettifica 1
+Trifase
+400
+8,8
+0,48
+Rettifica 2
+Trifase
+400
+8,8
+0,48
+Rettifica 3
+Trifase
+400
+8,8
+0,48
+Rettifica 4
+Trifase
+400
+16
+0,48
+Rettifica 5
+Trifase
+400
+11
+0,48
+Compressore
+Trifase
+400
+4
+0,76
+Troncatrice
+Trifase
+400
+1,85
+0,76
+Smerigliatrice
+Trifase
+400
+0,7
+0,76
+Trapano 1
+Trifase
+400
+0,37
+0,76
+Trapano 2
+Trifase
+400
+0,37
+0,76
+Mola
+Trifase
+400
+0,37
+0,76
+Ventole (n. 2)
+Monofase
+230
+0,45
+0,76
+Ufficio
+Monofase
+230
+1
+0,95
+Servizi e mensa
+Monofase
+230
+2,4
+0,95
+Illuminazione officina
+Monofase
+230
+2
+0,95
+Illuminazione di sicurezza
+Monofase
+230
+0,1
+0,95
+
+[PAG 2088]
+XX-70
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tab. XX.2.17  Caratteristiche dei circuiti partenti dal quadro generale
+In base a questo valore risultante di potenza convenzionale, verrà effettuata la richie-
+sta alla società elettrofornitrice per l’aumento della potenza impegnata, come specificato 
+nella premessa.
+A tale valore corrisponde una corrente d’impiego della linea a monte del quadro di 61 
+A, per fornitura in c.a. trifase, 400 V e fattore di potenza 0,9 (impianto rifasato).
+b)  Determinazione della sezione delle linee principali
+Per il calcolo delle sezioni delle linee principali si è seguito il criterio della massima 
+caduta di tensione ammissibile (assunta pari al 4%), secondo il metodo della caduta di 
+tensione unitaria, valutata dalla tabella CEI-UNEL 35023.
+Le sezioni sono state poi verificate in base alla portata dei cavi.
+I valori ottenuti sono riportati nella Tab. XX.2.18. Nella tabella si nota che la c.d.t. ha 
+scarsa incidenza: i valori effettivi delle sezioni, scelti in base alla portata, sono molto più 
+elevati di quelli derivanti dal calcolo. Per questa ragione le sezioni delle linee caratteriz-
+zate da piccoli valori della corrente d’impiego e della lunghezza sono state determinate 
+solo in base alla portata e nel rispetto delle sezioni minime stabilite dalla norma CEI 64-8.
+c)  Correnti di corto circuito nei vari punti dell’impianto
+La determinazione della corrente di corto circuito massima, alla fine delle linee per le 
+quali è prevista l’installazione di interruttori terminali, è stata eseguita tenendo conto 
+della riduzione della corrente di corto circuito causata dall’impedenza delle linee, in base 
+ai valori della tabella riportata (Tab. XX.2.19).
+Partendo dal valore di 6 kA della corrente di corto circuito nel punto di origine e 
+tenendo presenti le lunghezze indicate, si ottengono i seguenti valori della corrente di 
+corto circuito trifase a fondo linea:
+–  2,5 kA per le linee delle rettifiche 1 e 2;
+–  2 kA per la linea della rettifica 3;
+–  3,5 kA per la linea della rettifica 4;
+–  4 kA per la linea della rettifica 5;
+–  2 kA per la linea del compressore;
+Denominazione
+N° 
+fasi
+Un 
+[V]
+Pan 
+[kW]
+Ku
+Pac 
+[kW]
+cos 
+Ib 
+[A]
+Rettifiche 1-2-3 (n. 3 circuiti)
+3+N
+400
+8,8
+0,6
+5,3
+0,48
+16,1
+Rettifica 4
+3+N
+400
+16
+0,6
+9,6
+0,48
+29,2
+Rettifica 5
+3+N
+400
+11
+0,6
+6,6
+0,48
+20
+Compressore
+3+N
+400
+5
+1
+5
+0,76
+9,5
+Macchine e prese officina
+3+N
+400
+7,5
+1
+7,5
+0,76
+14,3
+Ventole
+1+N
+230
+0,6
+1
+0,6
+0,76
+3,4
+Illuminazione officina (n. 4 circuiti)
+1+N
+230
+0,5
+1
+0,5
+0,95
+2,3
+Ufficio
+1+N
+230
+1
+1
+1
+0,95
+4,6
+Servizi e mensa
+1+N
+230
+2,4
+1
+2,4
+0,95
+10,9
+Illuminazione di sicurezza
+1+N
+230
+0,1
+1
+0,1
+0,95
+0,5
+ Nota Un è la tensione nominale di alimentazione del circuito; Pan è la potenza 
+assorbita nominale; Ku è il fattore di utilizzazione; Pac è la potenza assorbita con-
+venzionale (Pn Ku); cos  è il fattore di potenza; Ib è la corrente d’impiego.
+
+[PAG 2089]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-71
+Tab. XX.2.18  Calcolo della sezione delle linee principali
+–  2,5 kA per la linea macchine e prese officina.
+In base alle caratteristiche degli apparecchi in commercio, il potere d’interruzione 
+degli interruttori a fine linea sarà pari a 4,5 kA.
+d)  Calcolo del rifasatore
+Partendo dai seguenti dati:
+–  potenza convenzionale dell’impianto Pc = 38 kW
+–  fattore di potenza medio prima del rifasamento cos 0 = 0,55
+–  fattore di potenza a cui si vuole portare l’impianto cos r = 0,92
+e applicando la formula:
+Qc = Pc (tg 0  tg r)
+si ottiene la potenza reattiva capacitiva:
+Qc = 41,5 kvar.
+Tenendo presente i valori commerciali delle potenze reattive dei regolatori automatici, 
+si sceglie:
+–  regolatore automatico di potenza reattiva;
+–  tensione nominale 400 V;
+–  frequenza nominale 50 Hz;
+Denominazione
+Uam
+[V]
+Ib
+[A]
+l
+[m]
+u
+[mV/Am]
+Sc
+[mm2]
+Sn
+[mm2]
+Iz 
+[A]
+Rettifica 1
+16
+16,1
+31
+32,1
+1,5
+10
+26
+Rettifica 2
+16
+16,1
+35
+28,4
+1,5
+10
+26
+Rettifica 3
+16
+16,1
+39
+25,5
+1,5
+10
+26
+Rettifica 4
+16
+29,2
+29
+19
+2,5
+16
+35
+Rettifica 5
+16
+20
+17
+47,1
+1,5
+16
+35
+Compressore
+16
+9,5
+23
+73,3
+1,5
+6
+19,5
+Macchine e prese officina
+16
+14,3
+18
+62
+1,5
+6
+19,5
+Servizi e mensa
+9,2
+10,9
+16
+53,2
+1,5
+6
+22
+Ventole
+3,4
+1,5
+9,5
+Illuminazione officina (n. 4 circuiti)
+2,3
+1,5
+9,5
+Ufficio
+4,6
+2,5
+19
+Illuminazione di sicurezza
+0,5
+1,5
+9,5
+ Nota Uam è la c.d.t. ammissibile, corrispondente al 4% della tensione nominale; Ib è la 
+corrente d’impiego; l è la lunghezza della linea; u è la c.d.t unitaria calcolata; Sc è la sezione 
+calcolata, corrispondente al cavo avente c.d.t. unitaria inferiore a quella determinata; Sn è la 
+sezione nominale effettiva della linea, scelta in base alla verifica della portata; Iz è la portata 
+del cavo impiegato, in base ai valori indicati nelle tabelle della Sez. X Impianti elettrici Cap. 
+XX.4, nell’ipotesi di cavi unipolari con guaina e unipolari senza guaina, isolamento in PVC, 
+posa entro canaline e tubi in aria, con temperatura ambiente 30 °C; per quanto concerne il 
+numero di circuiti elementari o di cavi multipolari, ne sono stati considerati 6 per il tratto di 
+canalina più caricato.
+
+[PAG 2090]
+XX-72
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tab. XX.2.19  Determinazione della corrente di corto circuito al termine di una linea 
+trifase, in funzione della corrente di corto circuito inziale e della lunghezza della linea
+–  potenza reattiva nominale 40 kvar;
+–  n. 3 gradini di potenze 7,5 kvar, 12,5 kvar, 20 kvar;
+–  combinazioni ottenibili 5;
+–  corrente nominale 57,8 A.
+Per la protezione si utilizzerà un interruttore magnetotermico differenziale avente:
+In = (1,5  2) Inc = (87  116) A
+e quindi con corrente nominale 100 A, regolata a 90 A.
+2.2.6  Tabelle e diagrammi di coordinamento delle protezioni 
+Sono documenti alternativi o complementari tra loro che contengono i dati per defi-
+Correnti 
+di corto 
+circuito 
+Icc0 [kA]
+Correnti di corto circuito Icc1
+[kA]
+3
+3
+3
+2,5
+2,5
+2,5
+2,5
+2
+2
+1,5
+1,5
+1
+3,5
+3,5
+3
+3
+3
+3
+2,5
+2,5
+2
+2
+1,5
+1
+4
+3,5
+3,5
+3,5
+3,5
+3
+3
+2,5
+2,5
+2
+1,5
+1,5
+4,5
+4
+4
+4
+3,5
+3,5
+3
+3
+2,5
+2
+2
+1,5
+5
+5
+4,5
+4,5
+4
+4
+3,5
+3
+3
+2,5
+2
+1,5
+6
+5,5
+5,5
+5
+5
+4,5
+4
+3,5
+3
+2,5
+2
+1,5
+7
+6,5
+6,5
+6
+6
+5,5
+5
+4
+3,5
+3
+2
+1,5
+8
+7,5
+7
+7
+6,5
+6
+5
+4,5
+3,5
+3
+2
+2
+10
+10
+8,5
+8
+7,5
+7
+5,5
+5
+4
+3
+2
+2
+12
+10,5
+10
+9,5
+8,5
+7,5
+6,5
+5
+4
+3
+2,5
+2
+14
+12
+11,5
+10,5
+9,5
+8
+6,5
+5,5
+4
+3
+2,5
+2
+17
+14,5
+13,5
+12
+10,5
+9
+7
+5,5
+4
+3,5
+2,5
+2
+20
+16
+15
+13
+11
+9,5
+7,5
+5,5
+4,5
+3,5
+2,5
+2
+22
+17,5
+16
+14
+12
+10
+7,5
+6
+4,5
+3,5
+2,5
+2
+25
+19
+17,5
+15
+12,5
+10
+8
+6
+4,5
+3,5
+2,5
+2
+Sezione 
+[mm2]
+Lunghezza della linea
+[m]
+4
+1
+1,3
+1,8
+2,4
+3,2
+4,4
+6
+8,4
+11
+15
+20
+6
+1,5
+2
+2,7
+3,6
+4,8
+6,6
+9
+12,6
+16,5
+22,5
+30
+10
+2,5
+3,3
+4,5
+6
+8
+11
+15
+21
+28
+37,5
+50
+16
+4
+5,2
+7,1
+9,5
+12,5
+17,5
+24
+33,5
+44
+60
+80
+25
+6,3
+8,1
+11,3
+15
+20
+27,5
+37,5
+52,5
+70
+94
+125
+Nota Icc0 è la corrente di corto circuito nel punto di origine; Icc1 è la corrente di corto circuito 
+a fine linea.
+
+[PAG 2091]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-73
+nire le caratteristiche significative dei dispositivi di protezione dei circuiti e degli apparec-
+chi utilizzatori.
+Nel caso in esame occorre evidenziare il coordinamento dei dispositivi di protezione 
+contro i sovraccarichi e i corto circuiti.
+Per la scelta di tali dispositivi di protezione i criteri adottati sono i seguenti:
+–  per tutte le linee la protezione dal sovraccarico e dal corto circuito è affidata a un 
+unico dispositivo, posto nel quadro elettrico generale, nel punto di origine;
+–  la scelta del dispositivo di protezione è stata effettuata secondo le relazioni di coordi-
+namento:
+Ib  In  Iz;
+If  1,45 Iz
+indicate dalla norma CEI 64-8, riassumibili soltanto nella prima disequazione per gli 
+interruttori automatici magnetotermici usati, aventi If  1,45 In;
+–  il potere d’interruzione dei dispositivi è stato scelto di valore non inferiore alla cor-
+rente di corto circuito presunta nel punto di installazione;
+Tab. XX.2.20  Coordinamento delle protezioni dalle sovracorrenti
+Denominazione
+Ib 
+[A]
+Interrut-
+tore
+In 
+[A]
+Cavo
+Sn 
+[mm2]
+Iz 
+[A]
+Icc 
+[kA]
+Icn 
+[kA]
+Alimentazione quadro 1
+61
+4P-MTD
+80
+N07V-K
+35
+110
+6
+10
+Rettifiche 1-2-3
+16,1
+4P-MTD
+20
+N1VV-K
+10
+26
+6
+6
+Rettifica 4
+29,2
+4P-MTD
+32
+N1VV-K
+16
+35
+6
+6
+Rettifica 5
+20
+4P-MTD
+25
+N1VV-K
+16
+35
+6
+6
+Compressore
+9,5
+4P-MTD
+16
+N1VV-K
+6
+19,5
+6
+6
+Macchine e prese officina
+14,3
+4P-MTD
+16
+N1VV-K
+6
+19,5
+6
+6
+Servizi e mensa
+10,9
+2P-MTD
+16
+N1VV-K
+6
+22
+6
+6
+Ventole
+3,4
+2P-MTD
+6
+N1VV-K
+1,5
+9,5
+6
+6
+Illuminazione officina (n. 4 circuiti)
+2,3
+2P-MT
+6
+N1VV-K
+1,5
+9,5
+6
+6
+Ufficio
+4,6
+2P-MTD
+10
+N07V-K
+2,5
+19
+6
+6
+Illuminazione di sicurezza
+0,5
+2P-MT
+6
+N1VV-K
+1,5
+9,5
+6
+6
+Rifasatore
+86
+4P-MTD
+90
+N07V-K
+35
+110
+2,5
+4,5
+Troncatrice
+4,7
+3P-MTSM
+6,3
+N07V-K
+2,5
+21
+2,5
+4,5
+Smerigliatrice
+1,8
+3P-MTSM
+2,5
+N07V-K
+1,5
+15,5
+2,5
+4,5
+Trapani e mola
+1,1
+3P-MTSM
+1,6
+N07V-K
+1,5
+15,5
+2,5
+4,5
+Prese interbloccate
+16
+4P-MTD
+16
+N07V-K
+2,5
+21
+2,5
+4,5
+ Nota Ib è la corrente d’impiego; In è la corrente nominale (o di regolazione dell’interruttore); Sn è 
+la sezione nominale effettiva della linea, scelta in base alla verifica della portata; Iz è la portata del 
+cavo in regime permanente, nelle condizioni di posa specificate nel Par XX.2.2.5b; MT interruttore 
+magnetotermico; MTD interruttore magnetotermico differenziale; MTSM interruttore automatico 
+salvamotore; Icc è la corrente di corto circuito presunta nel punto di installazione; Icn è il potere 
+d’interruzione nominale degli interruttori.
+
+[PAG 2092]
+XX-74
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+–  le linee che alimentano i quadri secondari non subiscono variazioni di sezione e di carat-
+teristiche fino all’arrivo e quindi non sono necessari dispositivi di protezione intermedi;
+–  le prese di servizio dell’officina e quelle installate negli altri locali sono protette da 
+interruttori automatici con corrente nominale non superiore a quella delle prese.
+In base a quanto previsto dagli artt. 435.1 e 533.3 (sezione commenti) della norma 
+CEI 64-8, essendo le condutture protette sia dal sovraccarico che dal corto circuito da un 
+unico dispositivo di tipo limitatore, la verifica dell’integrale di Joule mediante la determi-
+nazione della corrente di corto circuito minima e della lunghezza massima protetta non è 
+necessaria; essa si intende soddisfatta avendo scelto gli interruttori in base alla protezione 
+contro le sovracorrenti.
+I dati di coordinamento sono riportati nella Tab. XX.2.20.
+2.2.7  Computo metrico
+Viene generalmente redatto sotto forma di tabella, riportando le quantità dei diversi 
+componenti installati (apparecchi illuminanti, prese civili, prese industriali, quadri elet-
+trici, cavi ecc.). Le quantità vengono indicate, a seconda degli articoli, come numero o 
+come lunghezze. Per i quadri elettrici non c’è bisogno di specificare le diverse parti che li 
+costituiscono, in quanto ogni quadro viene considerato come un unico componente avente 
+una determinata configurazione, risultante dagli elaborati grafici di progetto.
+Sul computo metrico devono essere poi indicate le quantità di lavorazioni, riportando 
+le ore previste per le diverse operazioni necessarie per l’installazione degli impianti e spe-
+cificando le figure professionali alle quali si riferiscono.
+Nel caso in esame non si ritiene significativo riportare tale computo. Per quanto concerne 
+le quantità dei materiali, possono essere ricavate dai documenti di progetto precedenti.
+2.2.8  Computo metrico estimativo
+Anche il computo metrico estimativo viene di solito redatto sotto forma di tabella, 
+applicando alle quantità indicate nel computo metrico i prezzi unitari dedotti da prezzari e 
+listini. I prezzi unitari dei materiali vanno riferiti all’unità numerica di componente o 
+all’unità di lunghezza, a seconda dei casi. Per la manodopera ci si riferisce al costo orario.
+Nel caso in esame non si ritiene significativo riportarlo, anche perché i prezzi unitari 
+sono soggetti a continui aggiornamenti.
+2.2.9  Capitolato speciale d’appalto
+Per l’impianto in oggetto questo documento non è stato redatto, per espressa volontà del 
+committente che intendeva affidare i lavori in economia a un installatore di sua fiducia. 
+2.3  Impianto elettrico industriale con cabina di trasformazione MT/BT
+Una ditta operante nel settore della sabbiatura e verniciatura di tubi e carpenteria 
+metallica e vetrificazione di serbatoi ha bisogno di ampliare il proprio insediamento indu-
+striale, con l’installazione di una nuova macchina sabbiatrice e la costruzione di un 
+secondo capannone al posto delle tettoie esistenti. Per questa ragione deve aumentare la 
+potenza elettrica impegnata, dagli attuali 95 kW forniti in bassa tensione a 320 kW in 
+media tensione (23 kV) e, pertanto, deve installare una cabina elettrica di trasformazione 
+MT/BT su un’area di sua proprietà, a ridosso della recinzione.
+La ditta incarica un tecnico per il progetto della cabina e delle linee BT uscenti da 
+questa e destinate ad alimentare un quadro elettrico esistente, seppur con potenza conve-
+nientemente aumentata per tener conto dell’ampliamento, e l’attuale macchina sabbia-
+trice, mentre per l’alimentazione della nuova sabbiatrice si decide di non installare, per il 
+momento, alcuna linea, ma di considerare la relativa potenza sia nel dimensionamento 
+della cabina che del quadro generale BT.
+Come prima operazione il tecnico incaricato, insieme al titolare della ditta, provvede a
+
+[PAG 2093]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-75
+determinare la potenza necessaria che, considerando anche la parte che verrà installata 
+successivamente, risulta essere circa pari a 400 kW. Il rappresentante legale della ditta 
+decide quindi di stipulare un contratto di fornitura con la società distributrice dell’energia 
+elettrica per una potenza impegnata di 320 kW e massima a disposizione 400 kW, rite-
+nendo che la potenza stimata come necessaria sia quella massima possibile.
+In base alle caratteristiche tecniche della fornitura il tecnico esegue il dimensiona-
+mento della cabina elettrica, del quadro BT e delle due linee partenti dal quadro stesso.
+2.3.1  Definizione della documentazione di progetto
+In base a quanto indicato nella Tab. XX.1.1 la destinazione d’uso dell’immobile rientra 
+nella voce “altre opere” di cui all’art. 1, comma 2, del DPR 447/91; l’impianto elettrico in 
+questione è soggetto a progettazione obbligatoria, da parte di un professionista esterno, in 
+quanto i limiti dimensionali sono superiori a quelli indicati dall’art. 5 del DM 37 del 22/
+01/2008 (tensione di alimentazione superiore a 1000 V).
+È prevista la redazione del solo progetto esecutivo, la cui documentazione dovrà com-
+prendere i seguenti documenti, previsti nella generalità dei casi:
+–  relazione generale;
+–  relazione specialistica;
+–  elaborati grafici;
+–  calcoli esecutivi (relazione illustrativa), tabelle e diagrammi di coordinamento delle 
+protezioni;
+–  computo metrico;
+–  computo metrico estimativo;
+–  capitolato speciale d’appalto.
+2.3.2  Relazione generale
+La relazione generale deve descrivere, in dettaglio, i criteri utilizzati per le scelte pro-
+gettuali esecutive. Oltre agli elementi indicati nella premessa, anch’essi oggetto di tale 
+relazione, verranno riportate le indicazioni sugli interventi da effettuare e sui limiti del 
+progetto, dato che vi sono degli aspetti della progettazione globale della cabina che non 
+fanno parte del progetto elettrico.
+In sintesi, rimandando la costituzione delle varie parti e le caratteristiche dei compo-
+nenti agli altri documenti, il progetto e la sua realizzazione riguarderanno le seguenti 
+sezioni d’impianto:
+–  impianto di terra: dovrà essere ampliato quello esistente nello stabilimento, per ade-
+guarlo alle caratteristiche richieste per l’installazione della cabina; 
+–  lato MT della cabina elettrica;
+–  trasformatore MT/BT;
+–  linea di collegamento tra il trasformatore e il quadro BT;
+–  quadro elettrico generale lato BT;
+–  impianto elettrico dei locali della cabina (prese e illuminazione);
+–  condutture elettriche uscenti dal quadro BT.
+Il progetto non comprende la parte strutturale della cabina elettrica (edificio in cui 
+verranno installate le varie apparecchiature) e le parti non propriamente elettriche (scavi 
+per l’interramento dei tubi portacavi, cunicoli di posa delle condutture elettriche ecc. di 
+competenza del progettista edile.
+2.3.3  Relazione specialistica sulla consistenza e tipologia dell’impianto elettrico
+Questa relazione deve contenere una serie di informazioni atte a individuare 
+l’impianto, le sue caratteristiche e le sue prestazioni, a definire i dati di progetto e a speci-
+ficare le caratteristiche dei sistemi di protezione da porre in atto.
+Nel caso dell’impianto in esame essa può essere organizzata come di seguito specificato.
+
+[PAG 2094]
+XX-76
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+a)  Descrizione e classificazione dei luoghi d’installazione
+Come specificato nella premessa, si tratta del progetto di una cabina privata (d’utente) 
+di trasformazione MT/BT per l’alimentazione di un impianto elettrico utilizzatore al ser-
+vizio di un complesso industriale in cui si effettua la sabbiatura e la verniciatura di tubi e 
+carpenteria metallica e la vetrificazione di serbatoi, comprendente:
+–  una palazzina adibita a uffici e servizi;
+–  un capannone di verniciatura;
+–  due tettoie metalliche adibite a lavorazioni varie e deposito, nell’area delle quali si 
+prevede la costruzione di un secondo capannone; sotto le tettoie è installato il quadro elet-
+trico di alimentazione di tutto l’impianto attuale e l’unica macchina sabbiatrice esistente;
+–  cortile intorno ai fabbricati, con recinzione, in prossimità della quale verrà posto l’edi-
+ficio della cabina di trasformazione.
+La disposizione delle parti indicate è riportata sulla planimetria generale, facente parte 
+della documentazione di progetto (Tav. XX.2.23).
+Le due condutture elettriche previste dal progetto serviranno per l’alimentazione del 
+quadro elettrico preesistente (quadro QE1) e della sabbiatrice. Il quadro QE1, non com-
+preso nel progetto, serve per la distribuzione in bassa tensione alle varie sezioni 
+d’impianto (palazzina uffici, capannone, tettoie ecc.), mentre per l’alimentazione della 
+seconda futura sabbiatrice è prevista solo una riserva di potenza nel quadro, senza linea 
+elettrica.
+ La distribuzione sarà di tipo TN-S, con neutro e conduttore di protezione separati.
+Considerando che gli interventi in progetto non comprendono il capannone di verni-
+ciatura, le tettoie e la palazzina uffici e servizi e che il trasformatore da installare in cabina 
+è del tipo a secco, con avvolgimenti inglobati in resina isolante, i luoghi d’installazione 
+dell’impianto elettrico sono di tipo ordinario, senza particolari rischi elettrici, salvo che 
+per i contatti diretti e indiretti per la parte in media tensione. 
+b)  Caratteristiche tecniche della fornitura
+In base agli accordi intercorsi tra l’utente e il fornitore dell’energia elettrica, le carat-
+teristiche tecniche della fornitura e i valori da assumere per il dimensionamento delle pro-
+tezioni sono quelli di seguito indicati:
+–  fornitura e misura dell’energia elettrica in media tensione, mediante linea in cavo, con 
+cabina di consegna in muratura di “tipo basso”;
+–  potenza impegnata prevista: 320 kW;
+–  potenza massima a disposizione prevista: 400 kW;
+–  tensione nominale della fornitura: 23 kV;
+–  tensione concatenata a vuoto sul lato bassa tensione: 400 V;
+–  forma d'onda e frequenza nominale: corrente alternata sinusoidale trifase a 50 Hz;
+–  corrente di corto circuito simmetrica trifase lato MT: 16 kA efficaci;
+–  corrente convenzionale di guasto a terra: 275 A;
+–  tempo per l’eliminazione del guasto: 500 ms (0,5 s).
+c)  Caratteristiche generali di progetto
+Oltre alle grandezze elettriche riportate al punto precedente, per la definizione dei dati 
+di progetto sono stati assunti anche i seguenti valori e caratteristiche:
+–  fattore di potenza globale dell’impianto: 0,9 essendo previsto un impianto di rifasa-
+mento centralizzato automatico;
+–  caduta di tensione ammissibile per ognuna delle due linee uscenti dal quadro BT: 2%, 
+riservando l’ulteriore c.d.t. del 2% per i circuiti derivati;
+–  tipi di cavi da usare per le condutture elettriche: unipolari con guaina isolati con 
+gomma EPR (cavi FG7R), con temperatura di servizio 90 °C;
+
+[PAG 2095]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-77
+–  posa entro tubi interrati e all’interno di un cunicolo portacavi;
+–  numero di circuiti per tubo: 1
+–  temperatura ambiente d’installazione per posa interrata: 20 °C; 
+–  valore della tensione di contatto ammissibile (Norma CEI 11-1): 220 V, corrispon-
+dente al tempo di eliminazione del guasto di 0,5 s;
+Eventuali altri dati di progetto verranno specificati nei calcoli esecutivi per il dimen-
+sionamento delle varie sezioni d’impianto.
+d)  Norme tecniche di riferimento per l’impianto e i componenti
+Nella scelta e nell’installazione dei vari componenti elettrici verranno rispettate le 
+seguenti principali norme tecniche CEI:
+–  CEI 11-1 per la parte d’impianto a tensione superiore a 1 kV;
+–  CEI 64-8 per la parte d’impianto a tensione inferiore a 1 kV;
+–  CEI 14-4 e CEI 14-12 per i trasformatori di potenza a secco; 
+–  CEI 17-9 per i sezionatori e i sezionatori di terra a c.a. e tensione superiore a 1000 V;
+–  CEI 17-5 per gli interruttori automatici di bassa tensione;
+–  CEI 17-6 per le apparecchiature prefabbricate con involucro metallico per tensioni da 
+1 kV a 52 kV;
+–  CEI 17-11 per gli interruttori di manovra e per gli interruttori di manovra-sezionatori 
+combinati con fusibili in c.a.;
+–  CEI 20-14, CEI 20-20 e CEI 20-22 per i cavi isolati in PVC e non propaganti l’incendio;
+–  CEI 20-38/1 per i cavi isolati con gomma non propaganti l’incendio e a basso sviluppo 
+di fumi e gas corrosivi, con tensione nominale non superiore a 0,6/1 kV;
+–  CEI-UNEL 35026 per le portate dei cavi elettrici in bassa tensione per posa interrata;
+–  CEI 23-12 per le prese a spina per uso industriale;
+–  CEI 23-39 per i sistemi di tubi e accessori;
+–  CEI 32-3 per i fusibili a tensione superiore a 1000 V;
+–  CEI 34-21 per gli apparecchi d’illuminazione;
+–  CEI 38-1 per i trasformatori di misura TA.
+e)  Tipologia degli impianti in relazione all’ambiente e ai parametri elettrici
+In base a quanto esposto al punto a) della presente relazione, l’impianto in oggetto è 
+di tipo ordinario e non a sicurezza, con installazione all’interno di un edificio in muratura.
+f)  Caratteristiche generali dei sistemi di protezione
+Le misure di protezione da porre in opera riguarderanno il sezionamento dei circuiti, 
+la protezione contro i contatti diretti e indiretti, la protezione contro i sovraccarichi e i 
+corto circuiti, la protezione contro i guasti interni del trasformatore, l’interruzione di 
+emergenza e l’illuminazione di emergenza. 
+Le caratteristiche dei sistemi di protezione e la verifica della loro efficacia sono ripor-
+tate nel relativo documento di progetto (Par. XX.2.3.6.).
+f1)  Sezionamento
+Per i vari circuiti il sezionamento interesserà anche il conduttore neutro, da ritenersi a 
+tutti gli effetti conduttore attivo, essendo la distribuzione di tipo TN-S. 
+L’impianto sarà interamente sezionabile mediante il sezionatore sottocarico della parte 
+MT. I circuiti del quadro generale BT saranno sezionabili nel complesso mediante l’inter-
+ruttore generale del quadro e singolarmente tramite gli interruttori automatici di protezione 
+dei vari circuiti.
+I circuiti terminali partenti dal pannello prese da porre nel locale utente saranno sezio-
+nabili con l’interruttore di interblocco delle prese CEE e direttamente con la presa per 
+quella bipasso, avente corrente non superiore a 16 A.
+
+[PAG 2096]
+XX-78
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+f2)  Protezione contro i contatti diretti
+I sistemi di protezione previsti sono l’isolamento delle parti attive e l’uso di involucri 
+con grado di protezione contro il contatto diretto non inferiore a IPXXD, come richiesto 
+dalla Norma CEI 64-8.
+Per la sezione MT l’accesso alle parti in tensione è impedito dai blocchi a chiave di 
+cui sono dotati gli armadi contenenti le varie apparecchiature.
+Per i circuiti delle prese di servizio e dell’illuminazione dei locali della cabina è stata 
+prevista anche la protezione addizionale mediante interruttore differenziale ad alta sensi-
+bilità (30 mA).
+f3)  Protezione contro i contatti indiretti
+Per la parte di bassa tensione verrà posta in atto mediante la tecnica della interruzione 
+automatica del circuito, ottenuta dal coordinamento tra l’impianto di terra e le protezioni 
+differenziali da porre nel quadro generale BT, secondo la relazione:
+Zs Ia  U0
+indicata dalla Norma CEI 64-8 per i sistemi TN, dove:
+–  Zs è l’impedenza dell’anello di guasto (sorgente, conduttore attivo, conduttore di pro-
+tezione);
+–  Ia è la corrente che provoca l’intervento automatico del dispositivo di protezione entro 
+un determinato tempo; per l’impianto in oggetto essa corrisponde alla corrente differen-
+ziale nominale Idn, essendo previsto l’uso di interruttori con sganciatore differenziale;
+–  U0 è il valore efficace tra fase e terra della tensione nominale, pari a 230 V.
+Per la sezione di media tensione verrà dimensionato l’impianto di terra, in modo che la 
+tensione totale di terra UE sia non superiore alla tensione di contatto ammissibile UTP = 230V 
+e, quindi, limitando la resistenza di terra secondo la relazione:
+nella quale come corrente di terra IE verrà considerata la corrente convenzionale di guasto 
+a terra IFC = 275 A (Par. XX.2.3.3b).
+f4)  Protezione contro i sovraccarichi
+La protezione interesserà tutte le linee della sezione BT e sarà effettuata tramite inter-
+ruttori automatici con sganciatori magnetotermici, coordinati con le condutture elettriche 
+secondo le relazioni indicate dalla Norma CEI 64-8:
+Ib  In  Iz            If   1,45 Iz
+dove:  
+–  Ib è la corrente d’impiego della conduttura elettrica;
+–  In è la corrente nominale dell’interruttore (per gli apparecchi regolabili si considererà 
+la corrente di regolazione dello sganciatore termico Irt);
+–  If è la corrente convenzionale di funzionamento dell’interruttore;
+–  Iz è la portata della conduttura elettrica.
+Trattandosi di interruttori automatici, per i quali il rapporto If /In è non superiore a 
+1,45, il soddisfacimento della prima equazione implica, di conseguenza, che è verificata 
+anche la seconda.
+f5)  Protezione contro i corto circuiti
+Per la sezione MT la protezione dal corto circuito verrà svolta dai fusibili a corredo 
+RE
+UE
+IE
+------
+UTP
+IFC
+---------
+
+
+
+[PAG 2097]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-79
+del sezionatore sotto carico di linea.
+Per le linee in partenza dal quadro BT e per quelle interne alla cabina la protezione 
+verrà effettuata tramite gli interruttori automatici del quadro stesso, dotati di sganciatori di 
+massima corrente di tipo magnetotermico (protezione combinata contro il sovraccarico e 
+il corto circuito). Per i circuiti dell’illuminazione di emergenza e della strumentazione 
+voltmetrica la protezione avverrà tramite fusibili BT con base sezionabile inserite nel qua-
+dro BT.
+I criteri di scelta delle protezioni sono i seguenti:
+–  installazione all’inizio della linea;
+–  corrente nominale In  Ib; 
+–  potere d’interruzione non inferiore alla corrente di corto circuito nel punto d’installazione;
+–  energia specifica passante non superiore a quella tollerabile dal cavo, per tutte le correnti 
+di corto circuito comprese tra quella massima a inizio linea e quella minima a fondo linea;
+–  caratteristica d’intervento scelta in modo da garantire l’intervento immediato anche 
+per la corrente di corto circuito minima.
+f6)  Protezione contro i guasti interni del trasformatore 
+È una protezione già presente a bordo del trasformatore, gestita da una centralina di 
+rilevamento guasti e, pertanto, il suo dimensionamento non rientra nel presente progetto.
+f7)  Interruzione di emergenza
+Verrà attuata mediante un pulsante di sgancio normalmente aperto agente su una bobina 
+di sgancio a lancio di corrente posta nella centralina di rilevamento guasti, con il conse-
+guente intervento del sezionatore di linea. Il pulsante verrà posto all’esterno della cabina.
+f8)  Illuminazione di emergenza
+L’illuminazione di emergenza interesserà i locali della cabina e verrà attuata dotando 
+di gruppi statici autonomi gli apparecchi per l’illuminazione generale.
+g)  Elenco dei componenti elettrici e loro specifiche tecniche
+È l’elenco dei componenti dell’impianto elettrico e degli apparecchi utilizzatori, con 
+indicate le loro caratteristiche tecniche.
+Dall’elenco sono escluse le condutture elettriche, le apparecchiature dei quadri e gli 
+altri componenti già oggetto di documentazione separata.
+Per l’impianto in oggetto viene redatto in forma tabulare (Tab. XX.2.21), facendo rife-
+rimento ai seguenti schemi:
+–  Tav. XX.2.24: planimetria dell’impianto di terra;
+–  Tav. XX.2.25: planimetria della cabina di trasformazione;
+–  Tav. XX.2.27: schema unifilare della sezione MT.
+h)  Elenco delle condutture elettriche
+È l’elenco, con i dati significativi, delle varie condutture. Le loro caratteristiche, desu-
+mibili dalle Tabb. XX.2.23 ÷ XX.2.26, sono di seguito sintetizzate.
+–  Linea di collegamento tra il trasformatore e il quadro BT, dai morsetti d’uscita del tra-
+sformatore al quadro generale BT, trifase con neutro, 400 V, lunghezza 10 m circa, for-
+mata da cavi unipolari con guaina FG7R, di sezione 2  240 mm2 (fasi) e 1 240 mm2
+(neutro), posata nel cunicolo portacavi in cabina.
+–  Linea 1 dal quadro BT per l’alimentazione della sabbiatrice 1, trifase con neutro, 380V, 
+lunghezza 60 m circa, formata da cavi unipolari con guaina FG7R, di sezione 185 mm2 (fasi) 
+e 95 mm2 (neutro), posata entro tubo interrato.
+
+[PAG 2098]
+XX-80
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tab. XX.2.21  Componenti elettrici e loro specifiche tecniche
+Denominazione
+Quantità
+Caratteristiche
+Lato media tensione
+Sezionatori di terra Q1 - Q3
+2
+Tripolari, per interno, tensione nominale 24 kV
+Sezionatore di linea Q2
+1
+Interruttore di manovra-sezionatore sotto carico simultaneo, per 
+interno, tensione nominale 24 kV, corrente nominale 630 A, corrente 
+simmetrica di breve durata 16 kA, corrente di cresta di breve durata 40 
+kA
+Fusibili F1
+3
+Fusibili MT, tensione nominale 24 kV, corrente nominale 32 A, potere 
+d'interruzione simmetrico 16 kA
+Trasformatore MT/BT
+Trasformatore T1
+1
+Trasformatore MT/BT a secco con avvolgimenti inglobati in resina, 
+potenza apparente nominale 500 kVA, tensioni nominali 23 kV/400 V 
+con commutare a vuoto + 2  2,5%  2  2,5%, tensione di corto 
+circuito 6%, perdite a vuoto non superiori a 1100 W, perdite a pieno 
+carico a 75 °C non superiori a 5700 W, collegamento Dyn11
+Lato bassa tensione 
+Quadro elettrico
+1
+Quadro elettrico generale di bassa tensione, ad armadio in lamiera 
+metallica verniciata, installazione per interno, IP30D, adatto al 
+funzionamento con temperatura massima 40 °C, umidità relativa 80%, 
+altitudine non superiore a 1000 m s.l.m, tensione nominale dei circuiti 
+400 V, tensione d’isolamento 690 V, frequenza 50 Hz, corrente 
+nominale massima del circuito principale 1250 A, corrente di corto 
+circuito 12 kA
+Impianto elettrico della 
+cabina
+Pannello prese X1
+1
+Pannello prese CEE di servizio, IP44, formato da n. 1 presa CEE 
+interbloccata 3P+T/16 A, n. 1 presa CEE interbloccata 2P+T/16 A, n. 1 
+presa bipasso 2P+T/10-16 A
+Pulsante S1
+1
+Pulsante per l’interruzione di emergenza, per esterno, IP55, del tipo a 
+lancio di corrente con segnalazione luminosa dell'integrità del circuito 
+di comando 
+Interruttori di comando
+3
+Interruttori di comando dei circuiti luce a parete, per esterno, IP55, 
+tensione nominale 230 V, corrente nominale 10 A
+Apparecchi illuminanti
+6
+Fluorescenti lineari a plafone, IP40, di cui n. 3 di potenza 136 W e n. 
+5 di potenza 258 W
+Gruppi di emergenza
+3
+Gruppi statici per l’illuminazione di emergenza da applicare agli 
+apparecchi per l'illuminazione generale, di potenza 136 W (n.1) e 
+158 W (n.2)
+Impianto di terra
+Dispersore orizzontale
+134 m
+Corda nuda in rame, sezione trasversale 50 mm2, diametro dei fili 
+elementari 1,8 mm, direttamente interrata a 0,5 m di profondità
+Dispersore verticale
+1
+Picchetto massiccio cilindrico, in acciaio ramato, diametro 25 mm, 
+lunghezza 3 m (n. 2 elementi da 1,5 m), all’interno di un pozzetto 
+prefabbricato in calcestruzzo, dimensioni 50  50 cm
+Conduttore di terra
+5 m
+Cavo unipolare in rame N07V-K, sezione 50 mm2, entro tubo interrato
+Collettore di terra
+1
+Barra conduttrice in ottone, con morsetti imbullonati
+Conduttori di protezione linee 
+principali
+n. 2 
+110 m
+Cavo unipolare in rame N07V-K, sezione 50 mm2, entro tubi interrati e 
+cunicoli
+Conduttori di protezione 
+interno cabina
+n. 7
+70 m 
+Cavo unipolare in rame N07V-K, sezione 50 mm2, entro tubi interrati e 
+cunicoli
+
+[PAG 2099]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-81
+–  Linea 2 dal quadro BT per l’alimentazione del quadro elettrico QE1 di distribuzione 
+all’impianto esistente, trifase con neutro, 400 V, lunghezza 50 m circa, formata da cavi 
+unipolari con guaina FG7R, di sezione 300 mm2 (fasi) e 150 mm2 (neutro), posata entro 
+tubo interrato e cunicolo esterno.
+–  Linea prese cabina, uscente dal quadro BT per l’alimentazione del pannello prese X1, 
+trifase con neutro, 400 V, lunghezza 8 m circa, formata da n. 5 cavi unipolari N07V-K 
+(3F+N+PE) di sezione 4 mm2, posati entro tubazione esterna in materiale plastico.
+–  Linea luce cabina, uscente dal quadro BT per l’alimentazione di tutti gli apparecchi 
+illuminanti della cabina, monofase, 230 V, formata da n. 3 cavi unipolari N07V-K di 
+sezione 2,5 mm2, posati entro tubazione esterna in materiale plastico.
+–  Linea luce emergenza, uscente dal quadro BT per la tenuta in tampone dei gruppi di 
+continuità degli apparecchi illuminanti, monofase, 230 V, formata da n. 2 cavi unipolari 
+N07V-K di sezione 2,5 mm2, posati entro tubazione esterna in materiale plastico.
+i)  Documentazione relativa agli ambienti e applicazioni particolari
+Questo documento deve contenere, per ciascun tipo di ambiente e applicazione parti-
+colare (locali con docce, piscine, locali per uso medico, luoghi a maggior rischio in caso 
+d'incendio, luoghi con pericolo di esplosione ecc.) le informazioni che evidenziano il 
+rispetto delle prescrizioni particolari contenute nelle norme specifiche.
+Per l’impianto in oggetto non vi sono ambienti e applicazioni particolari.
+l)  Documentazione relativa alla protezione contro i fulmini
+Per decidere se esiste o meno l’esigenza di approntare misure per la protezione 
+dell’edificio contro le fulminazioni per scariche atmosferiche è necessario eseguire il cal-
+colo della probabilità di fulminazione, in base alle caratteristiche della struttura, del terri-
+torio circostante e dell’attività svolta (questa parte di progetto viene omessa).
+2.3.4  Elaborati grafici
+Per l’impianto in oggetto questo documento è composto dai disegni planimetrici, dallo 
+schema elettrico generale e dagli schemi elettrici unifilari delle sezioni MT e BT.
+a)  Disegni planimetrici
+I disegni planimetrici mostrano i componenti elettrici in relazione alla loro ubicazione 
+in pianta, con l’indicazione delle cabine elettriche, dei percorsi principali delle condutture 
+elettriche, dei principali componenti (quadri, macchine, apparecchiature, prese, utilizza-
+tori ecc.), la posizione degli elementi dell’impianto di terra e quant’altro possa servire a 
+individuare la posizione dei vari componenti.
+Per l’impianto in oggetto questo documento è formato da:
+–  planimetria generale (Tav. XX.2.23);
+–  planimetria dell'impianto di terra (Tav. XX.2.24);
+–  planimetria della cabina elettrica (Tav. XX.2.25).
+b)  Schema elettrico generale
+È uno schema, unifilare, multifilare o a blocchi, che mostra le principali connessioni 
+tra i componenti, contiene le informazioni relative ai circuiti di potenza, ai valori della 
+tensione e della corrente di corto circuito, al sistema delle protezioni elettriche, ai dati 
+nominali dei componenti principali.
+Per l’impianto in oggetto la configurazione generale dell’impianto è indicata dallo 
+schema unifilare a blocchi rappresentato nella Tav. XX.2.26, che mostra il collegamento 
+tra le parti, la funzione delle varie linee e i livelli di tensione e di corto circuito. Ulteriori 
+informazioni sono contenute negli altri documenti di progetto.
+
+[PAG 2100]
+XX-82
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.2.23  Planimetria generale.
+
+[PAG 2101]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-83
+Tav. XX.2.24  Planimetria impianto di terra.
+
+[PAG 2102]
+XX-84
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.2.25   Planimetria cabina trasformazione MT/BT, con disposizione delle appa-
+recchiature elettriche della “cabina utente”.
+
+
+
+
+
+
+
+
+
+
+
+
+
+[PAG 2103]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-85
+Tav. XX.2.26  Schema elettrico generale.
+
+[PAG 2104]
+XX-86
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+c)  Schemi elettrici unifilari
+Sono gli schemi dei quadri elettrici, con le caratteristiche delle apparecchiature. Per 
+l’impianto in oggetto questo documento è formato da:
+–  schema unifilare della sezione MT (Tav. XX.2.27);
+–  schema unifilare del quadro generale lato BT (Tav. XX.2.28).
+Per quest’ultimo quadro nella Tab. XX.2.22 sono specificate con maggiori dettagli le 
+caratteristiche dei tre interruttori principali e le loro regolazioni, scelte in base alle esi-
+genze di coordinamento delle protezioni.
+Tab. XX.2.22  Caratteristiche degli interruttori principali del quadro BT
+2.3.5  Calcoli esecutivi (relazione illustrativa)
+È il documento che indica il dimensionamento dei componenti elettrici e delle condut-
+ture, in base alle potenze dei carichi, ai valori assunti per i fattori di contemporaneità e uti-
+lizzazione, alle massime cadute di tensione ammesse. Per l’impianto in oggetto si dovrà 
+procedere anche alla determinazione delle correnti di corto circuito e al dimensionamento 
+dell’impianto di terra.
+a)  Potenze convenzionali e correnti d’impiego dei circuiti partenti dal quadro 
+elettrico generale di bassa tensione
+Le potenze elettriche assorbite dai due circuiti principali (alimentazione della sabbia-
+trice 1 esistente e del quadro elettrico QE1 per la distribuzione all’impianto preesistente) e 
+l’entità della riserva di potenza destinata all’alimentazione della futura sabbiatrice 2 sono 
+state stabilite nella fase preliminare, di comune accordo tra il titolare della ditta e il pro-
+gettista. Sono state poi considerate altre due utenze, di piccola entità, relative all’edificio 
+della cabina elettrica. I dati dei carichi sono riportati nella Tab. XX.2.23.
+b)  Potenza convenzionale di progetto e scelta della potenza del trasformatore
+La potenza convenzionale di progetto è stata calcolata come somma delle potenze 
+attive dei circuiti riportati nella Tab. XX.2.23, senza applicare alcun fattore di riduzione (K
+= 1), in quanto si prevede che le cinque sezioni d’impianto possano funzionare contempo-
+raneamente dopo l’ampliamento dell’impianto elettrico; inoltre le potenze riportate sono 
+già convenzionali e tengono conto, quindi, dei vari fattori di utilizzazione.
+Si è ottenuto:
+Pct = 399 kW
+Caratteristiche e regolazioni
+Interruttore 
+generale Q4
+Interruttore Q5 
+linea 1
+Interruttore Q6 
+linea 2
+Corrente nominale dell’interruttore
+1250 A
+400 A
+400 A
+Corrente nominale dello sganciatore termico
+1000 A
+320 A
+400 A
+Taratura dello sganciatore termico
+750 A (0,75 In)
+256 A (0,8 In)
+360 A (0,9 In)
+Campo di regolazione dello sganciatore 
+magnetico
+(5  10) In
+(5  10) In
+(5  10) In
+Taratura dello sganciatore magnetico
+8 kA (8 In)
+2,56 kA (8 In)
+3,2 kA (8 In)
