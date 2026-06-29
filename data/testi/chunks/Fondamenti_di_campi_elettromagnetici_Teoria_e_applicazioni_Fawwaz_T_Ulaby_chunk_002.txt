@@ -1,0 +1,1295 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 2/23 ===
+Chars: 44,991 | Offset: 44,996
+
+
+
+anche essere suscitato da una corrente elettrica. Questo legame tra l'elettricità e i
+‘gnetismo fu scoperto nel 1819 dallo scienziato danese Hans Oersted (1777 18515 '
+elettrica in un filo provocava la deflessione di un ago z
+ago ru . nia
+Pee sempre perpendicolare al filo e alla relia radiale che andar dal zione
+pa aon ooo env aaiont, fa dedotto che il filo percorso da corrente induce un
+Figa [ee ch emma anelli circolari chiusi attorno al filo, come illustrato in
+Bite ELA po la scoperta di Oersted, gli scienziati francesi Jean Baptiste
+aVart svilupparono un’espressione che lega la induzione magnetica B
+
+in un punto dello spazio alla correnti i
+zione nota or cone fe ren le / nel conduttore. Applicando la loro formula-
+
+t-Savart, alla situazione descritta in Figura 1.8 per
+
+Breci avevano scoperto che determinati tipi di rocce manif stano
+
+1.2 La natura dell'elettromagnetismo
+
+_. un filo, molto lungo, si ottiene che la induzione magnetica B indotta da una corrente __
+
+costante J che scorre in direzione dell’asse z è data dalla
+=
+B=d97 (© (1.13)
+
+dove r è la distanza radiale dal flusso di corrente e © è il versore azimutale che indi-
+ca il fatto che la direzione del campo magnetico è tangente alla circonferenza che cir-
+conda la corrente, come descritto in Figura 1.8. Il campo magnetico si misura in tesia.
+(T), in onore di Nikola Tesla (1856-1943), un ingegnere elettrotecnico croato-ameri-
+cano le cui ricerche sui trasformatori hanno reso possibile il trasporto di elettricità su
+lunghe tratte di cavo senza perdite eccessive. La grandezza po è detta permeabilità
+magnetica dello spazio libero [uo = 4 x 10-? henry al metro (H/m)] ed è analoga
+alla permittività elettrica eo. Cdimé si Vedra nel Capitolo 2, dal prodotto di co © po si
+ottiene c, la velocità della luce nello spazio libero, come segue:
+
+= 1 = È m
+C= Ta = 3 x10 (m/s). (1.14)
+
+I materiali in natura sono in maggioranza non magnetici, vale a dire che possiedono !
+una permeabilità magnetica 4 = #0. Per i materiali ferromagnetici, come ferro e ni- ©
+chel, x può essere molto più grande di uo. La permeabilità magnetica rappresenta
+le proprietà di magnetizzazic i un materiale. Analogamente alla (1.11), il di un”
+determinato materiale si può definire come
+
+p= o (H/m), (1.15)
+
+dove 4 è una grandezza adimensionale detta permeabilità magnetica relativa del
+materiale. I valori di 4, dei materiali ferromagnetici di uso comune sono tabulati
+nell’Appendice B.
+
+Si è detto che le grandezze E e D costituiscono una delle due coppie fondamentali
+dei campi elettromagnetici. La seconda coppia è formata da B e dall’intensità di cam-
+po magnetico H, che sono legate l’una all'altra tramite p:
+
+B=yH. (1.16)
+
+1.2.4 Campi statici e dinamici
+
+Siccome il campo elettrico E è governato dalla carica g ¢ il campo magnetico H è go-
+vernato da I = dq/dt e dato che q e dg/dt sono variabili indipendenti, i campi elettri-
+ci e magnetici indotti sono indipendenti l'uno dall'altro finché J rimane costante. Per
+dimostrare la validità di questa asserzione, si consideri per esempio un breve tratto di
+un fascio di particelle cariche che si muovono a velocità costante: le cariche in movi-
+mento costituiscono una corrente continua. Il campo elettrico dovuto a quel tratto del
+fascio è determinato dalla carica totale g contenuta nel tratto. Îl campo magnetico
+non dipende da g, ma piuttosto dal tasso di carica, cioè dalla corrente, che scorre at-
+traverso quel tratto: poche cariche che si muovono molto velocemente possono dar
+luogo alla stessa corrente di molte cariche che si muovono lentamente. In entrambi i
+casi il campo magnetico indotto sarà uguale in quanto la corrente / è la stessa, ma il
+campo elettrico indotto sarà piuttosto diverso in quanto il numero di cariche non è lo
+stesso.
+
+Lelettrostatica e la magnetostatica, che corrispondono rispettivamente ai casi di
+cariche stazionarie e correnti continue, sono casi particolari dell’elettromagnetismo.
+
+[PAG 13]
+i
+|
+}
+i
+i
+
+Capitolo | — Introduzione: onde e fasori
+
+Esse rappresentano due branche indipendenti, e questa classificazione è dovuta al fat-
+
+to che i campi elettrici e magnetici indotti sono disaccoppiati gli uni dagli altri. La di-~
+
+namica, che è la terza e più generale branca dell’elettromagnetismo, si occupa dei
+campi tempo-varianti indotti da sorgenti, vale a dire correnti e densità di carica, che
+sono varianti nel tempo. Se la corrente associata al fascio di particelle cariche in mo-
+to varia nel tempo, allora anche la quantità di carica presente in un determinato tratto
+del fascio varia nel tempo e viceversa. Come si vedrà nel Capitolo 6, in questo caso i
+campi elettrici e magnetici sono accoppiati gli uni agli altri. Infatti un campo elettrico
+tempo-variante genera un campo magnetico tempo-variante e viceversa. La Tabella
+1.3 riassume le tre branche dell’elettromagnetismo.
+
+Tabella 1.3 Le tre branche dell’elettromagnetismo.
+
+Branca Condizione Grandezze (Unita)
+Elettrostatica Cariche stazionarie Intensità di campo elettrico E (V/m)
+(0q/at = 0) Spostamento elettrico D (C/m?}
+= E
+Magnetostatica Correnti continue induzione magnetica B (7)
+«(At/0t = 0) Intensità di campo magnetico H (H/m}
+B=uH
+Dinamica Correnti tempo-varianti E,D,BeH
+(campi tempo-varianti) @l/at £9) E, D) accoppiati a B, H)
+
+Le proprietà elettriche e magnetiche dei materiali sono caratterizzate rispettivamente
+dai due parametri = Tiecessario ‘anche un terzo parametro fondamentale, la
+
+ducibilita del materiale 0, che si misura in siemens al metro (S/m). La c conducibi
+defini se la facilità con cui le cariche, cioè gli elettroni, possono muoversi
+
+pesso i indicati” come ‘parametri Costituti del
+10 è detto omogeneo se. i suoi parametri costitutivi so-
+es nsione del n mezzo.
+
+fio costanti per tutta Pes
+
+Tabella 1.4 Parametri costitutivi dei materiali.
+
+Parametro Unita Valore nello spazio libero
+Permittività elettrica e Fim £9 = 8.854 x 107% (F/m)
+J 3
+mage x 10° Fim)
+Permeabilità magnetica u Him Ho = 4x x 1077 (H/m)
+Conducibilità e sim o
+
+Domande di verifica
+
+1.1 Quali sono le quattro forze fondamentali della natura e quali sono le loro intensi-
+tà relative?
+
+1.2 Cos'è la legge di Coulomb? Si specifichino le sue proprietà.
+
+1.3 Quali sono le due importanti proprietà della carica elettrica?
+
+14 cos Tappresentano la permittività elettrica e la permeabilità magnetica di un ma-
+teriale?
+
+1.5 Quali sono le tre branche dell’elettromagnetismo e le condizioni loro associate?
+
+1.3 Onde progressive
+
+1.8 Onde progressive
+
+Le onde sono una naturale conseguenza di molti processi fisici: per esempio le onde
+e le increspature sugli oceani e i laghi, le onde sonore che viaggiano nell’aria, le on-
+de meccaniche sulle corde musicali tese, le onde elettromagnetiche che costituiscono
+la luce e molte altre. Tutti i vari tipi di onde manifestano alcune proprietà comuni,
+comprese le seguenti:
+
+« Le onde in movimento trasportano energia da un punto all’altro.
+
+® Le onde possiedono una velocita: ci vuole un certo tempo perché un'onda si propa-
+ghi da un punto a un altro. Le onde luminose nel vuoto viaggiano a una velocità di
+3 x 108 m/se le onde sonore nell’aria viaggiano a una velocità circa un milione di
+volte inferiore, vale a dire 330 m/s.
+
+Certe onde manifestano una proprietà detta linearità. Onde che non influenzano ii
+passaggio di altre onde sono dette lineari perché possono passare l’una attraverso
+Paltra e il risultato della sovrapposizione di due onde lineari è semplicemente la
+somma delle due onde prese separatamente. Le onde elettromagnetiche sono linea-
+ri, come pure le onde sonore. Quando due persone si parlano, le onde sonore pro-
+dotte da ciascuno dei due non si riflettono l’una con l’altra, ma si attraversano a vi-
+cenda in modo indipendente. Le onde in acqua sono approssimativamente lineari: i
+cerchi di increspature in espansione provocati dal lancio di due sassolini in due
+punti diversi della superficie di un lago non si influenzano a vicenda. Anche se l’in-
+terazione dei due cerchi può dar luogo a una configurazione complicata, essa è
+semplicemente la sovrapposizione lineare di due cerchi indipendenti in espansione.
+
+Esistono due tipi di onde: le onde transitorie causate da una perturbazione di breve
+durata e le onde continue in regime armonico generate da una sorgente oscillante. In
+questo libro si esamineranno onde di entrambi i tipi, ma la discussione riguarderà
+principalmente la propagazione di onde continue che variano nel tempo con legge si-
+nusoidale.
+
+Una caratteristica fondamentale delle onde progressive è che esse sono perturbazio-
+ni del mezzo in cui si propagano che continuano a esistere anche se le sorgenti ven-
+gono spente. Se la perturbazione varia in funzione di una sola variabile spaziale, co-
+me lo spostamento della corda mostrata in Figura 1.9, si parla di onda monodimen-
+sionale. .
+
+Figura 1.9
+
+Onda monodimensionale
+che si propaga su una
+corda.
+
+[PAG 14]
+n Capitolo | — Introduzione: onde e fasori
+
+Fronte d’onda cifindrico
+
+Onda bidimensionale Fronte d’onda piano )
+
+(a) Onde circolari - (b) Onde piane e cilindriche
+
+«Fronte d’onda sferico .. -
+
+} _
+
+(c) Onde sferiche
+
+Figura 1.10 Esempi di onde bidimensionali e tridimensionali: (a) onde circolari su un lago, (b) onda piana luminosa che eccita
+un'onda cilindrica luminosa attraversando una fessura lunga e sottile in uno schermo opaco, (c) onda sferica in sezione.
+
+Lo spostamento verticale varia rispetto al tempo e alla posizione lungo la corda.
+Anche se la corda si solleva nella seconda dimensione, l'onda è monodimensionale
+in quanto la perturbazione è funzione di una sola variabile spaziale. Un’onda bidi-
+mensionale si propaga lungo una superficie, come le increspature su un lago [Figura
+1.10(a)], e la sua perturbazione si può descrivere in funzione di due variabili spaziali.
+Per estensione, un’onda tridimensionale si propaga attraverso un volume e la sua per-
+turbazione può essere funzione di tutte e tre le variabili spaziali. Le onde tridimensio-
+nali possono avere forme differenti, comprendendo onde piane, onde cilindriche e
+onde sferiche. Un’onda piana è caratterizzata da una perturbazione che in un dato
+istante nel tempo ha proprietà uniformi su un piano infinito perpendicolare alla dire-
+zione di propagazione dell’onda [Figura 1.10(b)] e similmente per le onde cilindriche
+e sferiche le perturbazioni sono uniformi su superfici cilindriche e sferiche, come de-
+seritto in Figura 1.10(b) e (c).
+
+Nei paragrafi seguenti si esamineranno alcune proprietà fondamentali delle onde,
+sviluppando delle formulazioni matematiche che descrivano la loro dipendenza fun-
+zionale dalle variabili spaziali e temporali. Per semplificare la presentazione, la di-
+scussione sarà limitata alle onde varianti con legge sinusoidale e le cui perturbazioni
+siano funzioni di una sola variabile spaziale, rinviando ai capitoli successivi la di-
+scussione di onde più complesse.
+
+1.3.1 Onde sinusoidali in un mezzo senza perdite
+
+Tutte le onde sono esprimibili matematicamente in termini simili, a prescindere dal
+meccanismo responsabile della loro generazione. Per fare un esempio, si consideri
+un'onda che si propaga sulla superficie di un lago: Un mezzo é detto senza perdite se
+non attenua l'ampiezza delle onde che si propagano in esso o sulla sua superficie. Si
+presuma per il momento che si possano ignorare le forze di frizione, consentendo
+così a un’onda generata sulla superficie dell’acqua di propagarsi indefinitamente sen-
+za perdite di energia. Se si indica con y Paltezza della superficie dell’acqua rispetto a
+un'altezza media in condizioni imperturbate e con x la distanza per cui l’onda si pro-
+paga, la dipendenza funzionale di y rispetto al tempo ¢ e alla coordinata spaziale x ha
+la forma generale
+
+yx, 1) = A cos (+ Fa) (m), (1.17)
+
+1.3 Onde progressive
+
+(a) y(x, £) in funzione dix per:=0
+
+(0, 5)
+
+(b) y(x, 2) in funzione di t per x= 0
+
+è ie > i i le, A è la lunghezza d’on-
+dove A è l'ampiezza dell’onda, T è il suo periodo temporale, h ì
+da spaziale e do è la fase iniziale. La quantità y(x, #) si può anche esprimere nella
+forma
+
+y(x, t) = A cos f(x, 1), (1.18)
+dove
+dx, ) = (uo) (rad). (1.19)
+
+è ? la fase iniziale
+*angolo $(x, t) è detto fase dell’onda e non deve essere confuso con iziale
+fae é ae Oe sia rispetto al tempo che allo spazio. La fase ha le stesse unità di
+misura degli angoli, vale a dire radianti (rad) o gradi, dove 27 radianti = 360°.
+Il primo caso analizzato è per do = 0:
+
+2rt 27x
+y(x, t) = A cos (F - =) m. (1.20)
+
+i in Fi 1.11 mostrano la variazione di y(x, f) rispetto ax per? = Oe rispet-
+
+an per Mona forma d'onda si ripete con periodo spaziale A lungo x e con perio-
+lungo ¢. : nn
+
+Sea ogra Ia superficie dell’acqua, il profilo di altezza y(x) mostrerà gli anda
+menti sinusoidali descritti in Figura 1.12. In ogni grafico; che corrisponde a un deter-
+minato valore di t, la distanza tra i picchi è uguale alla lunghezza d'onda A, ma gli an-
+damenti sono traslati l'uno rispetto all’altro in quanto corrispondono a istanti di of
+servazione diversi. Siccome la forma d’onda avanza in direzione delle x positive al-
+l'aumentare di ¢, il profilo di altezza si comporta come un ‘onda che si propaga n
+quella direzione. Se si sceglie un valore di altezza qualsiasi, per esempio il va lore
+picco P, e lo si segue nel tempo, si può misurare la velocità di fase dell’onda. i pice
+corrisponde all’istante in cui la fase $(x, #) dell’onda è uguale a zero o a multipl
+27 radianti. Pertanto
+
+00) = 2 A om, n=0,1,2,.. (1.21)
+
+Figura 1.11
+
+Graficidi ~~ °°
+ost) = cos (1-20)
+in funzione di (a) x per
+t= Oe(o)perx = 0.
+
+[PAG 15]
+\4 Capitolo | — Introduzione: onde e fasori
+
+1.3 Onde progressive 15
+
+Figura 1.2
+
+Graficidi 10) Rxpoiss La direzione di propagazione dell'onda si determina facilmente controllando i segni
+ye 1) = Acos C# 38) dei termini in £ e in x all’interno dell’espressione della fase $(x, ) data dalla (1.19):
+
+t=O, ve Ti4e VA bi se uno dei segni é positivo e l’altro è negativo, l’onda si propaga nel verso delle x
+
+t= T/2. Sinoti che : positive e se i segni sono entrambi positivi o negativi, l'onda si propaga nel verso
+Tonda si muove nella = delle x negative. La fase iniziale costante dg non ha alcuna influenza sulla velocità 0
+direzione positiva = sulla direzione di propagazione dell’onda.
+beley, 7 con velocità La frequenza f di un’onda sinusoidale è il reciproco del suo periodo temporale T:
+
+p= AT.
+
+faz (Ha. (126)
+
+& Sostituendo nell’ equazione precedente si ottiene la relazione
+
+fd (m/s). (127)
+
+u,
+
+Alla frequenza f dell’onda, misurata in cicli al secondo, è stata assegnata l’unità
+(Hz), detta “hertz” in onore del fisico tedesco Heinrich Hertz (1857-1894), pioniere
+
+nello studio delle onde radio.
+i Usando la (1.26), si può riscrivere la (1.20) in forma abbreviata come
+I Qn
+li , t) = Acos | 2aft -——x
+vin )= Acos (298-2) (29
+
+= Acos (wt — fx),
+
+È dove w è la velocità angolare dell’onda e 8 è la sua costante di fase o numero d’on-
+(c) 1=772 î da, con le seguenti definizioni:
+
+Se si fosse scelto un’altro valore di altezza, per esempio yp, e si fosse seguito il suo e vu (rad/s), (1.282)
+movimento al variare di t e x, ciò sarebbe stato comunque equivalente a fissare una p= > (rad/m). (1.29)
+
+fase (x, f) costante tale che
+
+Hx, 8) Acos ( Ont | =) | (129) : In termini di queste due quantità,
+w
+oppure uw =frA= 3 (1.30)
+nt Mai = così! ( DO) _ Finora si è esaminato il comportamento di un’onda che si propaga nella direzione
+: T A A ) = costante. (1.23) delle x positive, Per descrivere un’onda che si propaga nella direzione delle x negati-
+i itd i i inverte i i 28):
+i La velocità apparente di un punto con quel valore di altezza si ottiene derivando ri- È ve, si inverte il segno dix nella (128):
+spetto al tempo la (1.23) : Y(x, 1) = A 005 (wt + Bx). (1.31)
+I on _ jn de =0 È Sarà adesso esaminato il ruolo della fase iniziale o presente nella (1.17). Se do è di-
+| T Nd” (1.24) È versa da zero, la (1.28) va riscritta come
+: da cui si ottiene la velocita di fase up cosi definita E y(x, t) = A cos (wt — Bx + do). (1.32)
+il Ù
+ti de A Hi Il grafico di y(x, #) in funzione di x per 1 fissato o in funzione di ¢ per x fissato verrà
+i aL P : ;
+i POT (m/s). (1.25) traslato di una quantità do, rispettivamente nello spazio o nel tempo, rispetto al grafi-
+co relativo a dp = 0. Ciò è illustrato dai grafici mostrati in Figura 1.13. Si osservi
+gral
+
+che quando dp è positiva, y(#) raggiunge il proprio valore di picco o un altro valore
+. FAN fissato in un istante precedente rispetto a quando ¢p = 0. Per questo si dice che l’on-
+equa stessa si muove princi- da con dy = 77/4 è in anticipo rispetto all’onda con do = 0, con un anticipo di fase
+pari a 7/4. Similmente, si dice che i’onda con do = —1/4 è in ritardo rispetto all’on-
+da con gg = 0, con un ritardo di fase pari a 7/4. Una funzione d’onda che abbia do
+
+ma d'onda si muove lungo la superficie dell’acqua. L’
+
+palmente verso l’alto e verso il basso: quando l’onda si sposta da un punto all’altro,
+
+i
+La velocità di fase, anche detta velocita di propagazione, è la velocità con cui la for-
+|
+il ? i i
+
+| l’acqua non si sposta fisicamente insieme a essa.
+
+|
+
+i
+
+[PAG 16]
+16 Capitolo | — Introduzione: onde e fasori
+
+In anticipo “oy > ‘7, Onda di riferimento (9 = 0)
+rispetto alPonda
+di riferimento \
+i4f
+
+do = 7
+
+vA
+
+In ritardo rispetto all’onda di riferimento
+
+Figura 1.13 Grafici di y(0, #) = A cos[(271/7) + op] per tre valori diversi della fase iniziale do
+
+negativa impiega più tempo per raggiungere un dato valore di y(+) rispetto alla fun-
+zione con fase iniziale pari a zero. Quando è positiva, $o indica un anticipo di fase
+nel-tempo, mentre quando è negativa indica un ritardo di fase.
+
+1.8.2 Onde sinusoidali in un mezzo con perdite
+
+Se un'onda si propaga nella direzione delle x positive in un mezzo con perdite, la sua
+ampiezza diminuisce progressivamente di un fattore e”*. Questo fattore è detto fat-
+tore di attenuazione e a è detta costante di attenuazione del mezzo, la cui unità di
+misura è il neper al metro (Np/m). Perciò, in generale
+
+x, 1) = Ae" cos (wt — Bx + do). (1.33)
+
+L'ampiezza dell’onda non è più 4, mia Ae~*. La Figura 1.14 mostra il grafico di
+(x, t) in funzione di x all’istante t = 0 per 4= 10 m, \=2 m,a=0.2 Np/m e
+do = 0. Si noti che l’inviluppo della forma d’onda decresce con e7®.
+
+L’unità di misura effettiva di a è (1/m); il neper (Np) è un aggettivo fittizio adi-
+mensionale, che si usa tradizionalmente per ricordare che l’unità (Np/m) è riferita al-
+la costante di attenuazione a del mezzo. Un espediente simile si usa per la costante
+di fase 8, assegnando l’unità di misura (rad/m) invece di (1/An).
+
+-10m
+
+i A = Eri e ati oan è limi .
+IT Lie Griso diy(x) = (106-°% cos ax) m. Si noti che | inviluppo è limitato dalla curva i0e~°** e dalla sua simmetrica
+
+1.3 Onde progressive
+
+Domande di verifica
+
+1.6 In che modo si può verificare se un’onda si sta propagando nella direzione delle
+x positive o in quella delle x negative?
+
+1.7 Con quale dipendenza dalla distanza varia l’inviluppo di una forma d’onda (a) in
+un mezzo senza perdite e (b) in-un mezzo con perdite?
+
+1.8 Perché un valore negativo di ¢o indica un ritardo di fase?
+
+Esempio 1.1 Onda sonora in acqua
+
+Un’onda acustica che si propaga nella direzione dell’asse x in un fluido, cioè un liquido
+o un gas, è caratterizzata da una pressione differenziale p(x, 1). L'unità di misura della
+pressione è il newton per metro quadrato (N/m’). Si trovi l'espressione di p(x, #) per
+un’onda sonora sinusoidale che si propaga nella direzione delle x positive in acqua, sa-
+pendo che la frequenza è 1 kHz, la velocità del suono neli’acqua è 1.5 km/s, l'ampiezza
+dell'onda è 10 N/m? e che p(x, #) presenta un massimo per t = 0 e x = 0.25 m. Si con-
+sideri l’acqua come un mezzo senza perdite.
+Soluzione Secondo la formulazione generale data dalla (1.17) per un’onda che si
+propaga in direzione delle x positive, si ha
+2 2:
+
+P(x, t)= Acos (F: - Fa + 4) N/m’.
+
+L’ampiezza è A = 10 N/m?, T = 1/f = 107 se, dalla up = fd, si ha
+
+Uy 1.5 x 103
+
+Aaya 15
+
+103
+Dunque
+
+p(x, t) = 10 cos (2 x 10°¢ Pau ho) N/m’.
+Siccome per f = 0 e x = 0.25 msi ha p(0.25, 0) = 10 N/m’, si ottiene
+10 = 10 cos (+ 0.254 D)
+rr
+= 10 cos (F+ do).
+da cui risulta che (do — 7/3) = cos ~!(1), cioè go = 7/3. Quindi
+
+p(x, t) = 10cos (2 x wi S543) N/m.
+
+Esempio 1.2 Perdita di potenza
+Un fascio di luce laser che si propaga attraverso l’atmosfera è caratterizzato da un’inten-
+sità di campo elettrico data dalla
+
+E(x, 1) = 15027 cos (3 x 10!5— 107%) V/m,
+
+dove x è la distanza dalla sorgente in metri. L’attennazione è dovuta all’assorbimento
+da parte dei gas atmosferici. Si determinino (a) la direzione di propagazione dell’onda,
+(b) la velocità dell’onda e (c) l'ampiezza dell’onda a una distanza di 200 m.
+
+Soluzione (a) Siccome i coefficienti di ¢ e x nell'argomento delia funzione coseno
+hanno segno opposto, l’onda si propaga nella direzione delle x positive.
+
+[PAG 17]
+él
+
+Capitolo | — Introduzione: onde e fasori
+
+®)
+w_3x 105
+
+80107
+
+pari a c, la velocità della luce nello spazio libero.
+
+=3x 10° ms,
+
+(©) Per x = 200 m, l'ampiezza di E(x, 1) è
+150e7%9*20 — 0,37 V/m.
+
+Esercizio 1.1 Il campo elettrico di un’onda elettromagnetica progressiva è dato dalia
+Eta, t) = 10cos (rx 107t+x2/15+7/6) V/m.
+
+Si determinino (a) la direzione di propagazione dell’onda, (b) la frequenza f dell’onda,
+(c) la lunghezza d’onda A e (d) la velocità di fase up.
+
+SOLUZIONE (a) direzione delle z negative, (b) f = 5 MHz, (c) A= 30m,
+(A) up = 1.5 x 108 m/s.
+
+Esercizio 1.2 Un’onda elettromagnetica si propaga in direzione dell’asse z in un mezzo
+con perdite la cui costante di attenuazione è a = 0.5 Np/m. Se l’ampiezza del campo
+
+‘elettrico dell’onda è di 100 V/m per z = 0, a quale distanza può propagarsi l’onda prima
+
+che la sua ampiezza si sia ridotta a (a) 10 V/m, (b) 1 V/m, (c) È pV/m?
+
+SotuzionE (a) 4.6 m, (b) 9.2 m, (c) 37m.
+
+1.4 Lo spettro elettromagnetico
+
+La luce visibile costituisce una porzione dello spettro elettromagnetico (Figura 1.15).
+Altri intervaili dello spettro comprendono i raggi gamma, i raggi X, i raggi infrarossi
+e le onde radio. In generale tutte queste onde 5900 chiamate onde elettromagnetiche
+
+EM) p perché hanno i in comune le seguenti proprietà fondamentali:
+
+e Un’ onda J EM è è formata da intensità di campo elettrico e di ca campo magnetico che
+oscillano alla stessa frequenza f.
+
+e La velocità di fase di un’onda EM che si propaga nel vuoto è una costante univer-
+sale data dalla velocità della luce c, definita in precedenza dalla (1.14).
+
+® Nel vuoto, la lunghezza d’onda A di un’onda EM è legata alla frequenza di oscilla-
+zione f dalla
+
+ASF. (1.34)
+
+Per quanto tutte le onde EM condividano queste proprietà, ciascuna di esse è caratte-
+rizzata da una propria lunghezza d’onda A o analogamente da una propria frequenza
+d’oscillazione f.
+
+La parte visibile dello spettro EM mostrato in Figura 1.15 copre una banda molto
+ridotta di lunghezze d’onda, che si estende tra \ = 0.4 um per il viola e \ = 0.7 um
+per il rosso. Spostandosi progressivamente verso lunghezze d’onda più brevi, si in-
+contrano le bande dell’uitravioletto, dei raggi X e dei raggi gamma, così chiamate per
+ragioni storiche associate alla scoperta di onde con quelle funghezze d’onda.
+
+Mesa enti
+
+14 Lo spettro elettromagnetico
+
+Finestra Finestre
+ottica nell’infrarosso Finestra radio
+
+Raggi
+=
+Diagnosi medica tipa.
+Raggi Gamma _icietto, Spettro radio
+Terapia contro Sterilizza- Comunicazioni, radar, radiodiffusione, TV, radioastronomia
+I cancro zione
+1 fm Ipm = Lom 1am Imm Im Lkm 1Mm Lunghezza d'onda (m)
+rent + Ut + + +
+10815 soft? 19810 10Î9 1086 108 1 10° 10 108
+1EH2 1PH2 THz 1GHz 1 MHz 1 KHz 1 Hz Frequenza (Hz)
+10? 10?! 1088 10! 10! 10 10° 10° 1
+
+Figura 1.15 Lo spettro elettromagnetico.
+
+Sull'altro lato rispetto allo spettro visibile si trovano la banda dell’infrarosso e più ol-
+tre la regione delle onde radio. A causa del legame tra A e f dato dalla (1.34), ciascu-
+na di queste bande spettrali si può specificare in termini della banda di lunghezze
+d'onda o alternativamente in termini della banda di frequenze. Nella pratica, tuttavia,
+un’onda viene specificata in termini della sua lunghezza d’onda A se A < 1 mm, il
+che comprende tutte le parti dello spettro EM tranne la regione delle onde radio, men-
+tre viene specificata in termini della sua frequenza f se A > 1 mm, cioè nella regione
+delle onde radio. La lunghezza d’onda di 1 mm corrisponde a una frequenza di
+3 x 10!! Hz = 300 GHz nello spazio libero.
+
+Lo spettro radio è formato da diverse bande, come descritto nel grafico in Figura
+1.16. Ogni banda copre una decade dello spettro radio e viene designata da una sigla
+basata su una nomenclatura stabilita dall’International Telecommunication Union.
+Frequenze diverse hanno applicazioni diverse in quanto vengono eccitate mediante
+meccanismi diversi, e le proprietà di un’onda EM che si propaga in un materiale pos-
+sono variare in maniera considerevole da una banda all’altra. La banda delle onde
+estremamente luaghe (ELF) da 3 a 30 Hz viene usata principalmente per la rilevazio-
+ne di oggetti metallici sepolti. Le frequenze più basse fino a 0.i Hz vengono utilizza-
+te per la rilevazione magnetotellurica delia struttura della terra, inoltre le frequenze
+nella banda tra 1 Hz e 1 kHz sono a volte usate per le comunicazioni con i sottomari-
+ni in immersione e per alcuni tipi di rilevazioni sulla ionosfera terrestre. La regione
+delle onde lunghissime (VLF) da 3 a 30 kHz è usata sia per le comunicazioni sotto-
+marine che per la radiolocalizzazione da parte del sistema di navigazione Omega. La
+banda delle onde lunghe (LF) da 30 a 300 KHz viene usata per alcune forme di comu-
+nicazione e per il sistema di radiolocalizzazione Loran C. Alcuni radiofari e stazioni
+di informazione meteorologica in ausilio alla navigazione aerea operano su frequenze
+all’estremita alta della banda LF. La regione delle onde medie (MF) da 300 kHz a 3
+MHz comprende la banda di radiodiffusione AM tra 0.5 e 1.5 MHz.
+
+Le comunicazioni e la radiodiffusione su lunghe distanze usano frequenze nella ban-
+da delle onde corte (HF) da 3 a 30 MHz perché le onde in questa banda sono forte-
+mente influenzate dalla riflessione da parte della ionosfera e poco influenzate dall’as-
+sorbimento nella ionosfera medesima. La regione successiva, cioè la banda delle on-
+de cortissime (VHF) da 30 a 300 MHz, viene usata principalmente per la televisione
+e ia radiodiffusione FM su distanze in visuale diretta e anche per comunicare con ae-
+
+[PAG 18]
+20
+
+Capitolo { — Introduzione: onde e fasori
+
+rei e altri veicoli. Anche alcune delle prime ricerche nel campo della radioastronomia
+furono compiute in questa banda. La regione delle onde ultracorte (UHF) da 300
+MHz a 3 GHz è ampiamente impiegata dai radar, anche se parti di questa banda sono
+utilizzate per le trasmissioni televisive e le comunicazioni mobili con aerei e veicoli
+
+—--+--—-di superficie. I radar presenti in questa regione dello spettro vengono per Io più usati
+
+per la rivelazione e Pinseguimento di aerei. Alcune parti di questa regione sono state
+riservate alle osservazioni radioastronomiche. oo .
+Diversi sistemi di comunicazione punto-punto e vari tipi di radar terrestri e navali
+
+«operano su frequenze nella banda delle onde centimetriche (SHF) da 3 a 30 GHz, in-
+
+sieme ad alcuni sistemi di navigazione aerea. .
+
+La maggior parte della banda delle onde millimetriche (EHF) viene utilizzata in
+maniera meno intensiva delle altre, più che altro in quanto la tecnologia non è altret-
+tanto sviluppata e inoltre a causa dell’assorbimento eccessivo da parte dell’atmosfera
+su alcuni intervalli di frequenza. Sono in via di sviluppo alcuni sistemi avanzati di co-
+municazione che sfruttano frequenze all’interno delle cosiddette ‘finestre atmosferi-
+che”’, vale a dire sottobande in cui l'assorbimento atmosferico non costituisce un pro-
+blema serio, come i radar anti-collisione per uso automobilistico e alcuni sistemi ra-
+dar per la registrazione di immagini per uso militare. Queste finestre atmosferiche
+comprendono le bande tra 30 e 35 GHz, tra 70 e 75 GHz, tra 90 e 95 GHz etra 1356
+145 GHz.
+
+Frequenza (Hz)
+
+1012
+300 GHz Banda Applicazioni
+Extvemely High Frequency Radar, sistemi avanzati di comunicazione,
+EHF (30 - 300 GHz) rilevazione a distanza, radioastronomia
+d Super High Frequency Radar, sistemi di comunicazione via satellite,
+Microonde SHF (3 - 30 GHz) navigazione aerea, radioastronomia,
+1 GH2-409 : rilevazione a distanza
+Ultra High Frequency Tv, radar, radioastronomia, forni a microonde,
+UHF (300 MHz - 3 GHz) telefonia cellulare
+Very High Frequency Radicdiffusione FM e TV, comunicazioni
+VHF (30 - 300 MHz) tadiomobili, controllo del traffico aereo
+High Frequency Radiodiffusione a onde corte
+1 MHz} 106 HF (3 - 30 MHz)
+Medium Frequency Radiodiffusione AM
+MF (300 kz - 3 MHz)
+Low Frequency Radiofari, stazioni di informazione
+LF (30 - 300 kHz) meteorologica in ausilio alla navigazione aerea
+Very Low Frequency Navigazione e radiolocalizzazione
+nidi  _YLF.G - 30 kz)
+Ultra Low Frequency Segnali audio su linea telefonica
+ULF (300 Hz - 3 kHz)
+Super Low Frequency Caratterizzazione della ionosfera, distribuzione
+SLF (30 - 300 Hz) dell’energia elettrica, comunicazioni
+di Extremely Low Frequency Rilevazione di oggetti metallici sepolti
+1Hz ELF (3 - 30 Hz)
+
+Figura 1.16 Bande dello spettro radio e loro applicazioni principali.
+
+f<3Hz) Rilevazione magnetotellurica della
+struttura della terra
+
+1.5 Richiami sui numeri complessi
+
+Anche se non esiste alcuna definizione precisa dei limiti della banda delle microon-
+de, si considera per convenzione che essa comprenda l’intera estensione delle bande
+UHF, SHF ed EHF. Di particolare:rilevanza è la designazione di onde millimetriche
+
+vr la banda delle EHF, dovuta al fatto che la banda di junghezze d’onda associata si
+estende da î mm (300 GHz) a 1 cm (30 GHz).
+
+Domande di verifica
+
+1.9 Quali sono le tre proprietà fondamentali delle onde EM?
+
+1.10 Quali bande di frequenze sono comprese nella banda delle microonde?
+
+1.11 Qual è la banda di lunghezze d’onda dello spettro visibile? Quali sono alcune
+delle applicazioni della banda dell’infrarosso?
+
+1.5 Richiami sui numeri complessi
+
+Un numero complesso z è scritto nella forma
+z=x+jp (1.35)
+
+dove x e y sono rispettivamente la parte reale (Re) e immaginaria (Sm) di z e
+j= VET. Vale a dire
+
+x=Relz), y=Sm(2). (1.36)
+In alternativa, z si può scrivere in forma polare come
+z=|z|e” =|z|/6 (1.37)
+
+dove |z| è il modulo di z, 8 è il suo argomento e la forma /@ è un’utile abbreviazione
+usata comunemente nei calcoli. Applicando l’identita di Eulero
+
+e” = cost+jsin0, (1.38)
+
+si può convertire z dalla forma polare espressa dalla (1.37) alla forma rettangolare
+espressa dalla (1.35)
+
+2=2e =|z| cos +jlz| sind, (1.39)
+
+da cui si ottengono le relazioni
+
+x= |z|cos 6,
+
+n= +»,
+
+Le due forme sono illustrate graficamente in Figura 1.17. Per usare la (1.41), bisogna
+controllare che 6 si trovi nel quadrante corretto. Si noti anche che, essendo {z| una
+quantità positiva, la radice nella (1.41) va presa col segno positivo. Ciò è indicato dal
+segno + posto sopra il segno di radice quadrata.
+
+Il complesso coniugato di z, indicato con un asterisco; si ottiene sostituendo j con
+—j ogni volta che compare, in modo che
+
+y=|z|sin@ (1.40)
+@=tan!(y/x). (141)
+
+»
+
+x+p)f=x-jp=zle#=|2]/-0. (142)
+
+al
+
+[PAG 19]
+Figura 1.17
+Relazione tra la
+rappresentazione
+rettangolare e quella
+polare di un numero
+complesso
+zextyjy= ale.
+
+Capitolo | - introduzione: onde e fasori
+
+Sm@ x=lz cos é
+, y= ll sin8
+ye ------+%
+kl=72+
+8 = tan (y/x}
+
+Relz)
+
+11 modulo |z| è uguale alla radice quadrata del prodotto di z con ii suo complesso co-
+niugato, presa col segno positivo:
+
+|
+
+Saranno ora illustrate alcune proprieta dell’algebra dei numeri complessi che si po-
+tranno ritrovare nei capitoli seguenti.
+
+ver. (143)
+
+Uguaglianza: Se due numeri complessi z € zz sono dati da
+a=ntin=lale™, (1.44)
+n=mtin=lale™, (1.45)
+
+allora z; = z, se e solo se x, = x; € yi = y2, oppure analogamente se |z;] = |z2| e
+= &.
+
+Addizione:
+2 +22 = (m +2) +j( +72). (1.46)
+Moltiplicazione:
+ziz = (x1 +1) (%2 +02)
+= (tux — 102) ty +291), (1.47a)
+“pps nz =| fe” |]
+= Ja [lzz]ef®t®
+== |zi]|z2{[cos(A1 +92) + sin (A; + 4)]. (1.47b)
+Divisione: Per zz # 0
+aut
+z at.
+
+_ Git) Gia
+(a+) (a_i)
+_ Gare tyry2) + Jay — 2172) ,
+
+1.48:
+CES (489
+oppure a ale”
+Zz |zle®
+— lal g0-%
+tz]
+= 2 fs (81-02) +jsin (0-9). (1.48b)
+2
+
+15 Richiami sui numeri complessi pri
+Potenza: Per ogni n intero positivo
+2 = (lzle8)”
+= |z|"e" = |z|"(cos nO +) sin né), (1.49)
+2M = ja] el
+= +|z|"[cos (6/2) +, sin (9/2)]. (1.50)
+Relazioni utili:
+—1=ef=e=1/180°,
+jel? =1/90°, (1.51)
+—j= el = ei = 1/-909°, (1.52)
+vi = (e)? = Feel EL, (1.53)
+ja te = #02), (1.54)
+
+v2
+
+Esempio 1.3 Calcoli con i numeri complessi
+Dati due numeri complessi
+V=3~j4,
+[=-(2+j3).
+(a) Si esprimano V e J in forma polare e si ricavino (b) VI, (c) 77", (d) V/I e (e) vi.
+Soluzione
+@ Wa vw
+= VE +9) = Fb =5,
+Oy = tan"!(-4/3) = —53.1°,
+V=|Vie% = 5e79" = 5 /-53.1°,
+W= VP 43 = VB =3.61.
+Dato che J = (—2 — j3) si trova nel terzo quadrante del piano complesso [Figura 1.18},
+8; = 180° + tan_!(3) = 236.3°,
+I=3.61/2363°.
+®) VI= 5 e753. x 3.617736"
+= 18.05e/2363°-53.1°) = 18.0521
+© VI =S5e7F" x 3,6162869
+= 18.05e 7" = 18.052.
+
+5e TP
+
+Vv
+qd 1 _
+© TO 3616/2367
+
+= 1.39¢ POF = 1396994,
+
+[PAG 20]
+w
+
+Capitolo | — Introduzione: onde e fasori
+
+© vi= 3618868 fe anon | Di.
+= 43.616 = 4190601819,
+° Im
+
+Figura 1.18 {numeri complessi V e / nel piano complesso (Esempio 1.3).
+
+Esencizio 1.3 Si esprimano le seguenti funzioni complesse in forma polare:
+n= (4-53),
+n= (4-3).
+
+SOLUZIONE 2; = 25 /—73.7°, 2 = + V5 /-18.4°.
+
+Esercizio 1.4 Si dimostri che 27 = +(1 +J).
+
+1.6 Richiami sui fasori
+
+L’analisi fasoriale è un utile strumento matematico per risolvere i problemi che ri-
+guardano sistemi lineari quando l’eccitazione è una funzione periodica del tempo.
+Molti problemi ingegneristici sono dati in forma di equazioni lineari integro-differen-
+ziali e se l'eccitazione, comunemente detta funzione forzante, varia nel tempo con
+legge sinusoidale, l’uso della notazione fasoriale per rappresentare le variabili dipen-
+denti dal tempo consente di trasformare l'equazione integro-differenziale in un’equa-
+zione lineare priva di funzioni sinusoidali, semplificando così il metodo risolutivo.
+Dopo aver risolto l'equazione nella variabile voluta, come la tensione o Ja corrente in
+un circuito, l’antitrasformazione dal dominio fasoriale al dominio del tempo fornisce
+il risultato desiderato.
+
+La tecnica fasoriale si può anche usare per l’analisi di sistemi lineari in cui la funzio-
+ne forzante sia un’arbitraria funzione periodica del tempo, anche non sinusoidale, co-
+me un'onda quadra o una successione di impulsi. Espandendo la funzione forzante in
+una serie di Fourier di componenti sinusoidali, si può risolvere l’equazione nella va-
+riabile voluta applicando l’analisi fasoriale separatamente a ciascuna componente del
+la funzione forzante. Secondo il principio di sovrapposizione degli effetti, sommando
+le soluzioni relative a tutte le componenti della serie di Fourier si ottiene lo stesso ri-
+sultato che si otterrebbe risolvendo il problema nel dominio del tempo senza l'ausilio
+della serie di Fourier. L’evidente vantaggio dell’approccio fasoriale secondo Fourier è
+la semplicità, inoltre nel caso di funzioni forzanti non periodiche, come un impulso
+singolo, le funzioni si possono esprimere sotto forma di integrali di Fourier, consen-
+tendo di applicare in modo analogo il principio di sovrapposizione degli effetti.
+
+1.6 Richiami sui fasori
+
+Il semplice circuito RC mostrato in Figura 1.19 contiene un generatore di tensione
+variabile nel tempo con legge sinusoidale data da
+
+v(t) = Vo sin (wt + do), (1.55)
+
+dove V è l'ampiezza, w è la frequenza angolare e dp è la fase iniziale. Applicando la
+legge di Kirchhoff per le tensioni si ottiene la seguente equazione di maglia:
+
+Rift) +& / Mez (dominio del tempo). (1.56)
+
+Si vuole calcolare l’espressione della corrente i(t): ciò si può ottenere risolvendo la
+(1.56) nel dominio del tempo, il che è piuttosto complicato dal momento che la fun-
+zione forzante v,(#) è una sinusoide. In alternativa si può trarre vantaggio dalla tecni-
+ca fasoriale come segue.
+
+Passo 1: Adottare un riferimento cosinusoidale
+
+Questo vuol dire che si deve esprimere la funzione forzante sotto forma di coseno, se
+non è già in tale forma, e dunque tutte le funzioni tempo-varianti, come le correnti
+nel circuito e le tensioni ai capi di R e C, saranno di tipo cosinusoidale. Perciò
+
+vs(1) = Vo sin (wt + da)
+= Vo cos F -—wt— do) (1.57)
+= Voy cos (wt + do — +)
+
+dove si sono sfruttate le proprietà trigonometriche sinx = cos(7/2-x) e
+cos (—x} = cos x.
+
+Passo 2: Esprimere le variabili dipendenti dal tempo sotto forma di fasori
+Qualsiasi funzione tempo-variante cosinusoidale (1) si può esprimere nella forma
+z(t) = Re {È Cal (1.58)
+
+dove Z è una funzione indipendente dal tempo detta fasore associato alla funzione
+istantanea z(t). Per distinguere le quantità istantanee dalle loro controparti fasoriali,
+le lettere che indicano i fasori sono sormontate dalla tilde (~). La tensione v(t) data
+daila (1.57) si può rappresentare nella forma
+
+a(t) = Re[Voolra |
+
+= Re[poeltt Meh) (1.59)
+
+}
+
+= Rel?
+
+Figura 1.19
+Circuito RC collegato a un
+generatore di tensione
+
+vs(i).
+
+[PAG 21]
+Capitolo { — Introduzione: onde e fasori
+
+dove
+
+Il fasore ¥, che è associato alla finzione de
+lativa all’ampiezza e alla fase, ma è indi,
+
+È, = Vuela),
+
+to si definisce la variabile incognita i(t) in termini di un fasore 7,
+
+€ se l’equazione da risolvere contiene derivate
+
+tà seguenti:
+
+Pertanto la derivazione della
+
+fasore J per ji, mentre
+
+i(1) = Re(fe*),
+di di.
+5 =} [Rete]
+
+= Re È Ge
+
+= Rel jue],
+
+[iam [retina
+
+= Re( Te")
+= Re È e)
+Jw
+
+l’integrazione è equivalente alla divisione per jw.
+
+Passo 3: Riscrivere l'equazione integro-differenziale in forma fasoriale
+Sostituendo la (1.59), la (1.61) e la (1.63) nella (1.56) si ottiene
+
+Î
+
+RRe (ie) +c) = Re (Fe),
+
+Dato che sia R che C sono quantità reali e |’
+
+semplifica nella forma
+
+jw
+
+> 1 = nur ;
+(841) =; (dominio fasoriale). (1.65)
+
+Il fattore temporale ei
+
+ed è stato semplificato.
+
+(1.60)
+
+1 tempo x;(#), contiene l'informazione re-
+(pendente dalla variabile temporale £. In segui-
+
+(1.61)
+
+© integrali, si sfruttano le due Pproprie-
+
+(1.62)
+
+(1.63)
+
+funzione del tempo i(:) è equivalente a moltiplicare il
+
+(1.64)
+
+operatore Re è distributivo, la ( 1.64) si
+
+non compare in quanto era contenuto in tutti e tre i termini
+
+La (1.65) è l’equivalente nel dominio fasoriale della (1.56).
+
+Passo 4: Risolvere | ‘equazione nel dominio fasoriale
+
+Dalla (1.65) si ottiene il fasore di corrente È dato da
+
+LA
+R+1/(jwC) ~
+
+T=
+
+(1.66)
+
+Prima di applicare il passo successivo, si deve riscrivere il membro destro della
+
+(1.66) nella forma he?
+
+in cui J è una quantità reale. Perciò
+
+1.6 Richiami sui fasori
+
+“Fs pel [_jeC _
+I= Yoo! È + jwRC
+4 Celtt2
+= Vo eilo7/2) Sea
+° Vir RC cid
+IC pit)
+VI+@RC?
+dove si è utilizzata l’identità j = e/*/*, L’angolo di fase ¢, = tan "!(wRC) si trova
+nel primo quadrante del piano complesso.
+
+(1.67)
+
+Passo 5: Ricavare il valore istantaneo
+
+Per ricavare i{t) si applica direttamente la (1.61). Vale a dire che si moltiplica per
+ei il fasore J ottenuto dalla (1.67) e si prende la parte reale:
+i(t) = Re[fe®
+Vo j( 9-01) pit
+"raga (1.68)
+VYowC
+
+"7 PS (wt + bo — di).
+
+Tabella 1.5 Funzioni tempo-varianti sinusoidali z(t) ei loro equivalenti Z nel
+dominio fasoriafe con riferimento cosinusoidale, dove z(t) = Re [Zeit].
+
+z(t) 2
+Acoswt A
+
+ACOS (wt + do) + Agito
+
+A cos (ut + 8x + do) © Acie)
+
+Ae™™ cos (wt + BX +49) + Aev%gil®tt)
+Asinut + Ae?
+
+Asin (ut + do) + Aelite-s2)
+Se) © Judi
+4 {A cos (ut + do)] © juAeit
+ts
+f Gba © pi
+/ Asin (ut + ¢o)at © pago
+
+Riassumendo, si sono trasformate tutte le quantità tempo-varianti nel dominio faso-
+riale, si è risolta l'equazione ricavando il fasore 7 associato alla corrente istantanea
+voluta i{f) e quindi lo si è antitrasformato nel dominio del tempo per ottenere le
+spressione di i(t). La Tabella 1.5 contiene alcune funzioni tempo-varianti notevoli e i
+loro equivalenti fasoriali.
+
+Esempio 1.4 Circuito RL
+
+Il generatore di tensione del circuito mostrato in Figura 1.20 è descritto da
+
+vs) = Ssin(4x 104-309) (V). (1.69)
+
+Si ricavi l’espressione della tensione ai capi dell’induttanza.
+
+vi
+
+[PAG 22]
+28
+
+Capitolo 1 — Introduzione: onde e fasori
+
+31 =0.2 mH
+
+Figura 1.20 Circuito RL (Esempio 1.4).
+
+Soluzione L’equazione di maglia del circuito RL è
+
+. di
+Ri+LS = oli), (1.70)
+Prima di trasformare la (1.70) nel dominio fasoriale, si deve esprimere la (1.69) in base
+a un riferimento cosinusoidale:
+
+vile) = S sin (4 x 10% = 30°)
+4 n (1.71)
+= Scos (4 x 10%— 120°) (V).
+
+Il coefficiente di ¢ definisce la frequenza angolare w = 4 x 104 (rad/s). Il fasore di ten-
+
+‘| sione associato a v;(1) è
+
+Ras (v),
+
+€ l’equazione fasoriale corrispondente alla (1.70) è
+
+RÎ+jwLÎ=}, (1.72)
+Risolvendo l’equazione si ricava il fasore di corrente /, vale a dire
+~ SF,
+f= ì
+R+ jul
+5g-j120*
+
+* 6 $74 x 108 x2 x 10-4
+Se FP seit
+e478 108
+Il fasore associato alla tensione ai capi dell’induttanza è legato a J tramite la
+R= fol
+= j4 x 10% x 2x 104 x 0.5e HBF
+
+= 4ei99- 173.1) = Ag (V).
+,
+
+=05e7B! (A),
+
+€ la corrispondente tensione istantanea v(t) è perciò
+a(t) = Re [Fer]
+= Re Mente oy
+
+= 4008 (4 x 10*t—83.1°) (V).
+
+_
+|
+Î
+
+Concerti fondamentali
+
+Domande di verifica
+
+© 1.12 ‘Qual è Putilita delia tecnica fasoriale? Quando vierie usata? Si desoriva il pro-
+
+cedimento.
+1.13 Come si utilizza la tecnica:fasoriale quando la funzione forzante è una forma
+d'onda periodica non sinusoidale, per esempio un treno di impulsi?
+
+Esercizio 1.5 Un circuito RL serie è collegato a un generatore di tensione descritto da
+vs(1) = 150 cos wt (V). Si calcoli (a) il fasore di corrente J e (b) la corrente istantanea i(t}
+perR = 4000, L =3 mHew = 10° rad/s.
+
+SoLuzione (a) 7 = 150/(R + jwL) = 0.3 /-36.9° (A), (6) i(t) = 0.3 cos (wt — 36.9°)
+(A).
+
+Esercizio 1.6 Un fasore di tensione è definito come 7 = j5 V. Si ricavi v(?).
+
+SOLUZIONE v(t) = 5 cos (wt + 7/2) = —5 sinwt (V).
+
+Concetti fondamentali
+
+ L’elettromagnetismo è lo studio dei fenomeni elettrici e magnetici e delle loro ap-
+plicazioni nell’ingegneria.
+
+© Il Sistema Internazionale di Unità di Misura è formato dalle sei dimensioni fonda-
+mentali elencate in Tabella 1.1. Le unità relative a tutte le altre grandezze fisiche
+sono esprimibili in termini delle sei unità fondamentali.
+
+Le quattro forze fondamentali della natura sono la forza nucleare, la forza da intera-
+zione debole, la forza elettromagnetica e la forza gravitazionale.
+
+e La sorgente delle grandezze di campo elettrico E e D è la carica elettrica g.
+All’intemo di un materiale, E e D sono legate da D = cE, dove £ è la permittività
+elettrica del materiale. Nello spazio libero e = ep © (1/367) x 107? (F/m).
+
+e La sorgente delle grandezze di campo magnetico B e H è la corrente elettrica J.
+All’interno di un materiale, B e H sono legate da B = pH, dove p è la permeabilità
+magnetica del materiale. Nello spazio libero js = ju = 47 x 1077 (H/m).
+
+© L’elettromagnetismo è formato da tre branche: (1) l’elettrostatica, che si occupa dei
+campi generati dalle cariche stazionarie, (2) la magnetostatica, che si occupa dei
+campi generati dalle correnti continue e (3) l’elettrodinamica, che si occupa dei
+campi generati dalle correnti tempo-varianti.
+
+ Un’onda progressiva è caratterizzata da una lunghezza d’onda spaziale A, un perio-
+do temporale 7 e una velocità di fase up = A/T.
+
+e Un’onda elettromagnetica (EM) è costituita da intensità di campo elettrico e di
+campo: magnetico e si propaga nello spazio libero alla velocità della luce
+c = 1/,/€ou0. Lo spettro EM comprende i raggi gamma, i raggi X, la luce visibile,
+l’infrarosso e le onde radio.
+
+® L'analisi fasoriale è un utile strumento matematico per la soluzione dei problemi
+caratterizzati da sorgenti periodiche nel tempo. .
+
+vl
+
+[PAG 23]
+Glossario
+
+Si definiscano i seguenti termini, spiegandone il significato:
+
+sistema SI
+
+dimensioni fondamentali
+
+legge di Coulomb
+
+intensità di campo elettrico E
+
+legge di conservazione della carica elettrica
+principio di sovrapposizione degli effetti
+dipolo elettrico
+
+polarizzazione elettrica
+
+permittività elettrica
+
+permittivita relativa o costante dielettrica relativa er
+spostamento elettrico D
+
+elettrostatica
+
+magnetostatica
+
+induzione magnetica B
+
+permeabilità magnetica p
+
+velocità delle luce c
+
+materiali non magnetici
+
+intensità di campo magnetico H
+elettrodinamica
+
+conducibilità 7
+
+dielettrico perfetto
+
+Capitolo | ~ Introduzione: onde e fasori
+
+conduttore perfetto
+
+parametri costitutivi
+
+onda transitoria
+
+onda continua in regime armonico
+ampiezza d'onda
+
+periodo temporale T
+
+lunghezza d’onda À
+
+fase iniziale do
+
+velocità di fase o velocità di propagazione up
+frequenza f
+
+velocità angolare w
+
+costante di fase o numero d'onda 8
+anticipo e ritardo di fase
+
+fattore di attenuazione
+
+costante di attenuazione a -
+spettro EM
+
+banda delle microonde
+
+numero complesso
+
+identità di Eulero
+
+complesso coniugato
+
+funzione forzante
+
+fasore
+
+funzione istantanea
