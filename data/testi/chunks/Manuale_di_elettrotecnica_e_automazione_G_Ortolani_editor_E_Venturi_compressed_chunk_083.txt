@@ -1,0 +1,1999 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 83/116 ===
+Chars: 45,000 | Offset: 3,623,042
+
+iporto (carry) della somma delle cifre d'ordine immediata-
+mente inferiore. Essendo le cifre solo 0 e 1, si hanno i seguenti casi:
+(XVII.12.2)
+Riporto
+ 
+1
+
+0+
+0=
+0  
+1+
+0=
+1  
+0+
+1=
+1  
+01+
+01=
+10
+
+[PAG 1685]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-85
+L'ultima relazione significa che il risultato è 0, ma che si ha un riporto 1, da sommare
+alle cifre d'ordine immediatamente superiore.
+12.6  Numeri binari con segno
+Per rappresentare i numeri binari con segno si utilizzano le notazioni in complemento
+a uno e in complemento a due.
+A)  Notazione in complemento a uno di un numero binario naturale
+La notazione in complemento a uno di un numero binario (N)2 è indicata con Nc1, ed è
+ottenuto sostituendo 0 con 1 e 1 con 0. Nei sistemi elettronici digitali per eseguire
+quest'operazione occorre fissare il numero di bit di (N)2, e se questo ha un numero di cifre
+inferiori al valore n prefissato, si premettono al numero tanti zeri in modo da avere n bit.
+Ad esempio, per il numero binario (N)2 = (1001)2, si vuole determinare la notazione in
+complemento a uno, con n = 8. Prima si premettono zeri, in modo che il numero binario di
+partenza abbia otto cifre, e si ha: (N)2 = (1001)2 = (00001001)2; si sostituisce poi 0 con 1,
+e 1 con 0, e si ottiene: (N)c1 = (11110110)2.
+B)  Notazione in complemento a due di un numero binario naturale
+Ci sono due modi per convertire un numero binario nella notazione in complemento a due.
+1.  Per convertire il numero binario (N)2 nella notazione in complemento a due, si
+determina (N)c1, e si somma 1 al complemento a uno: (N)c2 = (N)c1  1. Ad esempio, per
+10012, si ha: (N)c2 = (N)c1  1 = 01102  1 = 0111c2.
+2.  Per convertire il numero binario (N)2 nella notazione in complemento a due, si
+scrive il numero partendo dalla cifra meno significativa, lasciando inalterati i valori fino
+al primo 1 compreso, e poi si complementano a uno tutte le cifre che s'incontrano. Ad
+esempio: 11102, è complementato a due lasciando invariati 0 e 1, e complementando a
+uno le rimanenti cifre, e si ha: (N)c2 = (0010)c2.
+C)  Notazione in complemento a due dei numeri binari con segno
+Il complemento a due dei numeri binari con segno si ottiene nel seguente modo:
+–  i numeri positivi si rappresentano nel sistema binario naturale, e si aggiunge uno
+zero come cifra più significativa;
+–  i numeri negativi sono rappresentati nella forma di complemento a due dei corri-
+spondenti numeri positivi, e si aggiunge un 1 come cifra più significativa.
+Per giustificare l'uso del complemento a due per rappresentare i numeri negativi, si
+consideri il seguente esempio. Il decimale 5 sommato a 5 dà 0. Si supponga di rappre-
+sentare 5 in complemento a due con 4 bit; si ottiene 1011c2 (equivalente al decimale 5
+nella rappresentazione a 4 bit) che, sommato a 01012 (equivalente al decimale 5 nella rap-
+presentazione a 4 bit) dà 10000; dato che i numeri sono rappresentati a 4 bit, il risultato è
+proprio 0000.
+12.7  Addizione e sottrazione con numeri binari con segno
+Le operazioni di addizione e sottrazione con numeri binari con segno hanno rilevanza
+nei sistemi digitali, poiché le operazioni di moltiplicazione e divisione sono ricondotte ad
+esse. Prima di eseguire le operazioni di addizione e sottrazione i numeri binari con segno
+sono complementati a due, quindi si eseguono le operazioni come nel sistema binario
+naturale, tenendo conto che il numero n di bit definisce l'intervallo dei valori interi rappre-
+sentati. Si deve anche tener conto che il risultato di un'operazione può portare ad un
+valore maggiore di n e il risultato non è accettabile; in questo caso si ha la condizione di
+overflow. Si deve tener conto che nel sistema dei numeri in complemento a due la somma
+di numeri uguali in valore assoluto, ma di segno opposto, è uguale a zero solo se non si
+considera il riporto (carry). Il sistema di numeri in complemento a due consente il con-
+trollo della condizione di overflow.
+
+[PAG 1686]
+XVII-86
+ELETTRONICA ANALOGICA E DIGITALE
+A)  Operazione di addizione di numeri con segno, in complemento a due
+Le regole per l'addizione di numeri con segno sono riportate nella XVII.12.2. L'addi-
+zione di numeri in complemento a due si esegue come nel sistema binario; il riporto deve
+essere ignorato. Il bit più significativo è il bit di segno (0 e 1 indicano, rispettivamente,
+numeri positivi e negativi). Il bit più significativo è anche utilizzato per rilevare l'errore di
+overflow: si ha overflow quando il bit di segno della somma è 0 e gli addendi sono
+entrambi negativi, oppure quando il bit di segno della somma è 1 e gli addendi sono
+entrambi positivi. Gli esempi riportati riguardano i casi di numeri positivi e negativi con n
+= 8 bit.
+Esempi di addizione di numeri con segno, in complemento a due
+1.  Somma di numeri positivi. In a) il bit più significativo del risultato (bit di segno) è
+0, quindi il risultato è positivo. In b) il bit più significativo del risultato è 1, si ha overflow
+e il risultato è errato (132 è al di fuori dell'intervallo da 128 a 127, che è l'insieme dei
+valori rappresentabili con 8 bit nel sistema dei numeri con segno in complemento a due).
+2.  Somma di numeri negativi. In c) il bit più significativo (bit di segno) è uguale a 1,
+quindi il risultato è negativo. In d) la somma dei due numeri negativi presenta overflow (
+132  128). La condizione di overflow è rivelata dal bit di segno della somma, uguale a
+0 quando gli addendi sono entrambi negativi.
+3.  Somma di numeri di segno opposto. In e) il bit di segno è 0, quindi il risultato ha
+valore positivo. In f) non vi è riporto, il bit di segno è 1, quindi il risultato ha valore nega-
+tivo.
+B)  Operazione di sottrazione di numeri con segno, in complemento a due
+L'operazione di sottrazione è ricondotta a addizione, dopo avere complementato il sot-
+traendo. Ad esempio, la sottrazione 000001102  000001002 (equivalente alla sottrazione
+decimale 6  4) si esegue nel seguente modo. Si complementa a due e si ha: 000001102 
+000001002  00000110c2  11111100c2 00000010c2, che corrisponde 210.
+caso a
+caso b
+caso c
+1
+1
+1
+1
+1
+1
+1
+1
+6 +
+0
+0
+0
+0
+0
+1
+1
+0
++
+36 +
+0
+0
+1
+0
+0
+1
+0
+0
++
+6 +
+1
+1
+1
+1
+1
+0
+1
+0
++
+12 =
+0
+0
+0
+0
+1
+1
+0
+0
+=
+96 =
+0
+1
+1
+0
+0
+0
+0
+0
+=
+12 =
+1
+1
+1
+1
+0
+1
+0
+0
+=
+18
+0
+0
+0
+1
+0
+0
+1
+0
+132
+1
+0
+0
+0
+0
+1
+0
+0
+18
+1
+1
+1
+1
+0
+1
+1
+1
+0
+overflow
+riporto
+caso d
+caso e
+caso f
+1
+1
+1
+1
+1
+1
+1
+36 +
+1
+1
+0
+1
+1
+1
+0
+0
++
+126 +
+0
+1
+1
+1
+1
+1
+1
+0
++
+12 +
+0
+0
+0
+0
+1
+1
+0
+0
++
+96 =
+1
+0
+1
+0
+0
+0
+0
+0
+=
+12 =
+1
+1
+1
+1
+0
+1
+0
+0
+=
+126 =
+1
+0
+0
+0
+0
+0
+1
+0
+=
+132
+1
+0
+1
+1
+1
+1
+1
+0
+0
+114
+1
+0
+1
+1
+1
+0
+0
+1
+0
+114
+1
+0
+0
+0
+1
+1
+1
+0
+riporto
+overflow
+riporto
+
+[PAG 1687]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-87
+12.8  Notazioni a virgola fissa ed a virgola mobile
+Le notazioni a virgola fissa ed a virgola mobile di un numero binario sono utilizzate
+per rappresentare i numeri nei sistemi digitali.
+A)  Notazioni a virgola fissa
+La rappresentazione a virgola fissa è detta anche di tipo fixed-point (punto fisso, dato
+l'uso anglosassone del punto al posto della virgola nelle indicazioni numeriche). In essa il
+numero è scritto nella forma: (N)r  dn1dn2...d2d1d0,d1d2...d(m1)dm, dove r è la radice
+ed indica il numero di cifre del sistema. La virgola separa la parte intera, a sinistra della
+virgola, dalla parte frazionaria, a destra della virgola. La notazione a virgola fissa ha i
+seguenti inconvenienti. In primo luogo, il campo di valori rappresentabili è ristretto. In
+secondo luogo, nelle operazioni aritmetiche i numeri con parte intera e frazionaria devono
+essere trasformati in numeri con solo parte intera (o solo parte frazionaria); è necessario
+memorizzare la posizione della virgola e tenerne conto nel risultato. Ad esempio, per mol-
+tiplicare 2,5 per 1,2, si trasformano i fattori in interi e si ha 25 e 12; si esegue la moltipli-
+cazione ottenendo 280; infine, si tiene conto della parte frazionaria e si ha 2,80.
+B)  Notazioni a virgola mobile
+La notazione a virgola mobile, detta floating-point, è stata introdotta per superare gli
+inconvenienti visti per la notazione a virgola fissa. Nella notazione a virgola mobile il
+numero è espresso nella forma: (N)r  M  rE, con (N)r numero in base r; M mantissa o fra-
+zione; E esponente o caratteristica. La mantissa M è detta anche frazione, perché può
+assumere solo valori frazionari; ha segno positivo ed è scritta in forma normalizzata, in
+cui la prima cifra dopo la virgola è diversa da zero. Ad esempio, per 13900010, la forma
+normalizzata della mantissa è 0,139. L'esponente E è intero sia positivo sia negativo. Ad
+esempio, 13900010 ha base r = 10, ed esponente E = 6.
+I formati secondo cui sono rappresentati segno, mantissa ed esponente dei numeri a
+virgola mobile sono diversi. La struttura di base è la seguente:
+dove S indica il segno della mantissa.
+Il numero di bit di un numero a virgola mobile può essere: di 32 (numeri in precisione
+singola), di 64 (numeri in precisione doppia), di 80 (numeri in precisione estesa).
+12.9  Codici numerici e alfanumerici
+Per codice binario s'intende l'insieme delle regole che stabiliscono la corrispondenza
+fra numeri, lettere e simboli e le sequenze di bit che li rappresentano, chiamate dati
+binari. Il numero m massimo di caratteri diversi rappresentabili con una sequenza di n bit
+è: m = 2n.
+A)  Codici numerici
+I seguenti codici sono codici numerici.
+–  Codici pesati. I codici pesati sono caratterizzati dalla proprietà che ad ogni bit è
+assegnato un peso in base alla posizione che occupa all'interno della sequenza di bit che
+costituisce il dato binario. Ad esempio, il codice BCD (binary coded decimal o decimale
+codificato in binario o codice 8421) è un codice pesato. Nel caso di codifica di quattro
+cifre, si ha: peso 8 = 23 per il bit più significativo, indicato con MSB; peso 4 = 22 per il
+terzo bit; 2 = 22 per il secondo bit; 1 = 20 per il bit meno significativo, indicato con LSB.
+Ad esempio, 193910 in BCD diviene: 110  00012, 910  10012, 310  00112, 910 
+10012 e quindi 193910 = (0001 1001 0011 1001)BCD. Per il dato 0001 si ha: 0 (MSB) con
+peso 8, 0 con peso 4, 0 con peso 2, 1 (LSB) con peso 1.
+S
+Esponente
+Mantissa
+
+[PAG 1688]
+XVII-88
+ELETTRONICA ANALOGICA E DIGITALE
+–  Codici autocomplementanti. Sono codici in cui il complemento a 9 di un numero
+binario si ottiene sostituendo 1 con uno 0, e 0 con un 1 nel numero binario. Un esempio è
+il codice Aiken.
+–  Codici ciclici. Sono codici in cui, passando da una parola alla successiva, si cambia
+solo un bit. Un esempio è il codice Gray.
+–  Codici con rivelazione d'errore. Sono codici che rivelano errori, consistenti nella
+mancanza o nell'aggiunta di bit in un dato binario. Un esempio è il codice 2 su 5.
+–  Codici con correzione d'errore. Sono codici in cui il dato binario corretto si deduce
+dal dato con errore. Un esempio è il codice Hamming.
+B)  Codici alfanumerici
+I codici alfanumerici servono per codificare valori numerici e altri caratteri come: let-
+tere dell'alfabeto, segni d'interpunzione e di punteggiatura, simboli speciali. Il codice alfa-
+numerico più usato è il codice ASCII. Questo codice fu introdotto negli USA nel 1963 e
+prese il nome dalle iniziali di American Standard Code for Information Interchange. 
+Tab. XVII.12.2   Codice ASCII
+0
+1
+2
+3
+4
+5
+6
+7
+B6B5B4
+B3B2B1B0
+000
+001
+010
+011
+100
+101
+110
+111
+0
+0000
+NUL
+DLE
+SP
+0
+@
+P
+`
+p
+1
+0001
+SOH
+DC1
+!
+1
+A
+Q
+a
+q
+2
+0010
+STX
+DC2
+"
+2
+B
+R
+b
+r
+3
+0011
+ETX
+DC3
+#
+3
+C
+S
+c
+s
+4
+0100
+EOT
+DC4
+$
+4
+D
+T
+d
+t
+5
+0101
+ENQ
+NAK
+%
+5
+E
+U
+e
+u
+6
+0110
+ACK
+SYN
+&
+6
+F
+V
+f
+v
+7
+0111
+BEL
+ETB
+'
+7
+G
+W
+g
+w
+8
+1000
+BS
+CAN
+(
+8
+H
+X
+H
+x
+9
+1001
+HT
+EM
+)
+9
+I
+Y
+i
+y
+10
+1010
+LF
+SUB
+*
+:
+J
+Z
+j
+z
+11
+1011
+VT
+ESC
++
+;
+K
+[
+k
+{
+12
+1100
+FF
+FS
+,
+<
+L
+\
+l
+|
+13
+1101
+CR
+GS
+
+=
+M
+]
+m
+}
+14
+1110
+SO
+RS
+.
+>
+N
+^
+n
+~
+15
+1111
+SI
+US
+/
+?
+O
+_
+o
+DEL
+
+[PAG 1689]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-89
+Esso è un codice a sette bit utili, al quale può essere aggiunto un ottavo bit, come bit
+più significativo, da utilizzare per il controllo d'errore (controllo della parità). 
+Nella Tab. XVII.12.2 è riportato il codice ASCII a sette bit. Ogni carattere è indicato
+con B6B5B4B3B2B1B0. Ad esempio, nella tabella la lettera a è localizzata all'intersezione
+della colonna 6 con la riga 1 ed è pertanto codificata con B6B5B4B3B2B1B0 = 1100001 (61
+in esadecimale, 97 in decimale). Nelle prime due colonne sono riportati i caratteri di spe-
+ciali di controllo utilizzati per i controlli di trasmissione, i controlli di formato, i controlli
+di dispositivo e come separatori di informazione.
+13  ELEMENTI DI ALGEBRA BOOLEANA
+In questo paragrafo vengono considerati, nelle linee essenziali, gli elementi di base
+dell'algebra booleana utilizzati nell'analisi dei circuiti digitali.
+Tab. XVII.13.1   Postulati e teoremi dell'algebra booleana
+Postulati e Teoremi
+Formulazione 1
+Formulazione 2
+P1) Operazioni di connessione 
+fra variabili
+Se A e B sono definite nell’insieme {0, 1}, anche A + B e A 
+appartengono allo stesso insieme.
+P2) Condizioni di identità
+A + 0 = A
+A  = A
+P3) Proprietà commutativa 
+rispetto all’operatore + ed 
+all’operatore 
+A + B = B + A
+A  B = B  A
+P4) Proprietà associativa 
+rispetto all’operatore + e rispetto 
+all’operatore 
+A + (B + C) = (A + B) + C
+A  (B  C) = (A  B)  C
+P5) Proprietà distributiva 
+dell’operatore + verso l’opera-
+tore  e dell’operatore  verso 
+l’operatore +
+A + (B  C) = (A + B)  (A + C)
+A  (B + C) = (A  B) + (A  C)
+P6) Proprietà del complemento
+A + A = 1
+A  A = 0
+T1) Teorema della doppia nega-
+zione
+A = A
+T2) Teorema di idempotenza
+A + A = A
+A  A = A
+T3) Teorema degli elementi di 
+identità
+A + 1 = 1
+A  0 = 0
+T4) Teorema dell’assorbimento
+A + AB = A
+A(A + B) = A
+T5) Teorema della semplifica-
+zione
+A + AB = A + B
+A(A + B) = AB
+T6) Teorema dell’adiacenza
+AB + AB = A
+(A + B)(A + B) = A
+T7) Teorema del consenso
+AB + BC + AC = AB + AC
+(A + B)(B + C)(A + C) =
+= (A + B)(A + C)
+T8) Teorema di De Morgan
+A + B = A  B
+A  B = A + B
+
+[PAG 1690]
+XVII-90
+ELETTRONICA ANALOGICA E DIGITALE
+13.1  Elementi dell'algebra booleana
+L'algebra booleana è definita nell'insieme {0,1}, dove gli elementi 0 e 1 sono chiamati
+stati logici e l'elemento 1 è lo stato logico opposto a quello dell'elemento 0. Si definisce
+variabile dell'algebra booleana l'ente a cui si può assegnare o lo stato logico 0 o lo stato
+logico 1.
+Alle variabili possono corrispondere enti reali; ad esempio, nell'elettronica digitale le
+tensioni sono considerate variabili cui corrisponde uno stato logico definito, come esposto
+nel Cap. 10.
+Le variabili sono connesse fra loro mediante i seguenti operatori: l'operatore OR, o
+operatore di somma logica, indicato comunemente con il simbolo ; l'operatore AND, o
+operatore di prodotto logico, indicato comunemente con il simbolo ; l'operatore NOT, o
+operatore di negazione, indicato comunemente con il simbolo . Valgono i postulati e i
+teoremi esposti nella Tab. XVII.13.1. L'operatore AND fra variabili è generalmente
+omesso e, come nell'algebra ordinaria, è inserito solo quando l'omissione potrebbe dare
+luogo ad ambiguità.
+13.2  Funzioni booleane e tabelle di verità
+A)  Funzioni booleane
+Un'espressione booleana costituita da variabili ed operatori booleani, per i quali val-
+gono i postulati e i teoremi dell'algebra booleana, prende il nome di funzione booleana.
+Ad esempio, si consideri l'espressione X  YZ. Se X, Y e Z sono variabili definite
+nell'insieme {0,1}, l'espressione rappresenta la funzione F (X, Y, Z) = X + YZ, anch'essa
+appartenente all'insieme {0,1}; le variabili X, Y e Z sono le variabili indipendenti, mentre
+F, vista come variabile, è detta variabile dipendente. In un'espressione l'ordine di prece-
+denza degli operatori è: NOT, AND, OR; quando necessario, l'uso delle parentesi con-
+sente di superarlo.
+B)  Tabelle di verità
+Le tabelle di verità sono rappresentazioni delle funzioni booleane in forma tabulare.
+In esse sono riportate tutte le combinazioni degli stati logici delle variabili indipendenti e
+tutti gli stati logici della funzione. Nella Tab. XVII.13.2 sono rappresentate le tabelle di
+verità di funzioni in cui compaiono uno solo degli operatori NOT, AND e OR; esse sono
+dette anche tabelle di verità degli operatori.
+13.3  Semplificazione di funzioni
+La semplificazione delle funzioni è anche detta di minimizzazione. La minimizzazione
+di una funzione è fatta utilizzando i postulati e i teoremi dell'algebra booleana. Spesso il
+metodo algebrico di minimizzazione è di difficile applicazione, e pertanto sono stati intro-
+dotti altri metodi, come ad esempio il metodo delle mappe di Karnaugh, o il metodo di
+Tab. XVII.13.2   Tabelle di verità degli operatori: NOT; OR; AND
+NOT
+OR
+AND
+A
+F (A) = A
+A
+B
+F (A, B) = A + B
+A
+B
+F (A, B) = A  B
+0
+1
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+1
+0
+1
+0
+1
+0
+1
+1
+0
+0
+1
+1
+1
+1
+1
+1
+
+[PAG 1691]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-91
+Quine-McCluskey. Per utilizzare questi metodi di minimizzazione, la funzione deve
+essere scritta o come somma di prodotti, e i prodotti sono chiamati mintermini, o come
+prodotto di somme, e le somme sono chiamate maxtermini; una funzione scritta in una di
+questi due modi si dice che è espressa in forma canonica o standard.
+A)  Mintermini
+Data la tabella di verità di una funzione booleana, ogni mintermine si costruisce
+facendo il prodotto logico delle variabili indipendenti, complementate se alla variabile
+corrisponde 0, non complementate se alla variabile corrisponde 1; ogni mintermine è indi-
+cato con mi, essendo i il valore decimale corrispondente alla combinazione binaria dei
+valori delle variabili indipendenti. Ad esempio, nella Tab. XVII.13.3, alla seconda riga
+corrisponde il mintermine A B C (A = 0, B = 0, C = 1) ed è indicato con m1, perché a 0012
+corrisponde 110. I mintermini sono così detti perché se si costruisce la tabella di verità di
+un mintermine, essa presenta un solo 1; ad esempio, se si forma la tabella di verità di
+A B C, si ha una sola volta 1, in corrispondenza di A = 0, B = 0, C = 1.
+B)  Forma canonica di somma di prodotti
+Se una funzione booleana è espressa come somma dei mintermini, si dice che la fun-
+zione è in forma canonica di somma di prodotti; essa è indicata con SOP (Sum Of Pro-
+ducts). Data la tabella verità di una funzione F, per scrivere la funzione nella forma
+canonica SOP si procede nel seguente modo: si esamina la colonna della tabella verità in
+cui sono riportati i valori di F; si individuano le righe in cui F = 1; per ogni riga indivi-
+duata si costruiscono i mintermini e la forma canonica SOP è
+, essendo mi i
+mintermini. Nell'esempio 1 sono riportate la tabella di verità di una funzione F e la sua
+forma canonica come somma di prodotti.
+C)  Maxtermini
+Data la tabella di verità di una funzione booleana, ogni maxtermine si costruisce
+facendo la somma logica delle variabili indipendenti, complementate se alla variabile cor-
+risponde 1, non complementate se alla variabile corrisponde 0; ogni maxtermine è indi-
+cato con Mi, essendo i il valore decimale corrispondente alla combinazione binaria dei
+Tab. XVII.13.3   Mintermini e maxtermini realizzati con tre variabili
+A
+B
+C
+Mintermini
+Indicatori 
+mintermini
+Maxtermini
+Indicatori 
+maxtermini
+0
+0
+0
+A B C
+m0
+A  B  C
+M0
+0
+0
+1
+A B C
+m1
+A  B  C
+M1
+0
+1
+0
+A B C
+m2
+A  B  C
+M2
+0
+1
+1
+A B C
+m3
+A  B  C
+M3
+1
+0
+0
+A B C
+m4
+A  B  C
+M4
+1
+0
+1
+A B C
+m5
+A  B  C
+M5
+1
+1
+0
+A B C
+m6
+A  B  C
+M6
+1
+1
+1
+A B C
+m7
+A  B  C
+M7
+F
+mi
+
+=
+
+[PAG 1692]
+XVII-92
+ELETTRONICA ANALOGICA E DIGITALE
+valori delle variabili indipendenti. Ad esempio, nella Tab. XVII.13.3, alla seconda riga
+corrisponde il maxtermine A  B  C (A = 0, B = 0, C = 1), indicato con M1, perché a 0012
+corrisponde 110. I maxtermini sono così detti perché, se si costruisce la tabella di verità di
+un maxtermine, essa presenta un solo 0 e vale 1 in tutti gli altri casi; ad esempio, se si
+forma la tabella di verità di A  B  C, si ha una sola volta 0, in corrispondenza di A = 0,
+B = 0, C = 1, mentre per tutte le altre combinazioni delle variabili indipendenti il maxter-
+mine vale 1.
+D)  Forma canonica di prodotto di somme
+Se una funzione booleana è espressa come prodotto dei maxtermini, si dice che la fun-
+zione è in forma canonica di prodotto di somme, ed è indicata con POS (Product Of
+Sums). Data la tabella verità di una funzione F, per scrivere la funzione nella forma cano-
+nica POS, si procede nel seguente modo: si esamina la colonna della tabella di verità in
+cui sono riportati i valori di F; si individuano le righe in cui F = 0; per ogni riga indivi-
+duata si costruiscono i maxtermini e la forma canonica POS è 
+, essendo Mi i
+maxtermini. Nell'esempio 2 sono riportate la tabella di verità di una funzione F e la sua
+forma canonica come prodotto di somme.
+Esempio 1.
+A
+B
+C
+F
+0
+0
+0
+0
+0
+0
+1
+1
+A
+B
+C
+F
+Mintermini Indicatori mintermini
+0
+1
+0
+0
+0
+0
+1
+1
+A B C
+m1
+0
+1
+1
+0
+1
+0
+0
+1
+A B C
+m4
+1
+0
+0
+1
+1
+1
+1
+1
+A B C
+m7
+1
+0
+1
+0
+1
+1
+0
+0
+1
+1
+1
+1
+Forma SOP:
+F = A B C + A B C + A B C oppure F = m1 + m4 + m7
+Esempio 2.
+A
+B
+C
+F
+0
+0
+0
+0
+0
+0
+1
+1
+A
+B
+C
+F
+Mintermini Indicatori mintermini
+0
+1
+0
+0
+0
+0
+0
+0
+A + B + C
+M0
+0
+1
+1
+0
+0
+1
+0
+0
+A + B + C
+M2
+1
+0
+0
+1
+0
+1
+1
+0
+A + B + C
+M3
+1
+0
+1
+0
+1
+0
+1
+0
+A + B + C
+M5
+1
+1
+0
+1
+1
+1
+1
+0
+A + B + C
+M7
+1
+1
+1
+0
+Forma POS: F = (A + B + C)  (A + B + C)  (A + B + C)  (A + B + C)  (A + B + C)
+oppure 
+F = M0  M2  M3  M5  M7
+F
+Mi
+
+=
+
+[PAG 1693]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-93
+Si può dimostrare che il prodotto dei maxtermini di F è uguale alla negazione della
+somma dei mintermini di F: 
+, con 
+.
+E)  Scelta della forma canonica di un'espressione booleana
+Data la tabella di verità di una funzione booleana F, se i valori 1 sono più numerosi
+dei valori 0, per essa si sceglie la forma canonica SOP, altrimenti si sceglie la forma POS.
+13.4  Mappe di Karnaugh
+Il metodo delle mappe di Karnaugh è grafico e permette una semplificazione della
+funzione booleana generalmente più immediata che con il metodo algebrico. Ha il limite
+d'essere conveniente solo fino a cinque variabili, perché se il numero delle variabili è
+maggiore, la rappresentazione grafica diviene troppo complessa. Le mappe di Karnaugh
+sono disegnate in modo da formare un insieme di celle e, generalmente, ogni cella è un
+quadrato. In questo paragrafo si analizzano mappe fino quattro variabili.
+A)  Mappe a due variabili
+La funzione da minimizzare è espressa in forma di tabella di verità e mintermini.
+Nella Fig. XVII.13.1a sono riportati i mintermini corrispondenti alle combinazioni delle
+due variabili A e B. Nella Fig. XVII.13.1b è disegnata la mappa di Karnaugh a due varia-
+bili; all'interno d'ogni cella sono indicati i mintermini. Ogni mintermine contraddistingue
+una cella. All'esterno delle mappe si segnano le variabili che individuano le celle; si prefe-
+risce, però, la forma rappresentata nella Fig. XVII.13.1c, in cui le variabili negate sono
+sostituite da 0 e le variabili non negate da 1.
+Fig. XVII.13.1   Mappe a due variabili: a) tabella con le combinazioni di due variabili e
+mintermini corrispondenti; b) mappa di Karnaugh a due variabili; c) modo più comune di
+rappresentazione della mappa di Karnaugh a due variabili.
+B)  Mappe a tre e quattro variabili
+Nella Fig. XVII.13.2 sono riportate le mappe a tre e quattro variabili, costruite in
+modo analogo alla mappa a due variabili. Si osservi la sequenza dei valori delle variabili:
+00, 01, 11, 10 nelle mappe della Fig. XVII.13.2; in questo modo due celle contigue, aventi
+in comune un lato, sono caratterizzate da combinazioni delle variabili che differiscono di
+una sola variabile; due celle che hanno questa proprietà sono dette adiacenti, e hanno i
+mintermini corrispondenti differenti per una sola variabile. Due celle, che hanno in
+comune un vertice, ma non un lato, non sono adiacenti. Ad esempio, considerando una
+mappa a quattro variabili (Fig. XVII.13.2b), alla cella AB  10, CD  00, a cui corrisponde
+il mintermine m8 = A B C D (1000), sono adiacenti le celle con i mintermini:
+m0 = A B C D (0000), m9 = A B C D (1001), m10 = A B C D (1010), m12 = A B C D (1100).
+A
+B
+m
+A
+0
+0
+m0 = A B 
+A
+A
+B
+0
+1
+0
+1
+m1 = A B
+B
+m0
+m2
+0
+m0
+m2
+1
+0
+m2 = A B
+B
+m1
+m3
+1
+m1
+m3
+1
+1
+m3 = A B
+a)
+b)
+c)
+F
+M F
+
+
+
+m F
+
+
+
+=
+=
+F
+m F
+
+
+
+=
+
+[PAG 1694]
+XVII-94
+ELETTRONICA ANALOGICA E DIGITALE
+Fig. XVII.13.2   Mappe di Karnaugh: a) a tre variabili; b) a quattro variabili.
+C)  Inserimento di valori della funzione booleana in una mappa
+Le funzioni sono scritte in forma canonica come somma di prodotti o di prodotto di
+somme; in entrambi i casi esse possono essere rappresentate con le mappe di Karnaugh.
+Come esempio, qui si illustrano solo le funzioni espresse come somma di prodotti.
+Fig. XVII.13.3   Mappe di Karnaugh della funzione Y = A B C  A B C  A B C: a) con
+tutti i valori della funzione; b) con solo i mintermini.
+Data la funzione s'inseriscono nella mappa degli 1 nelle celle che corrispondono ai
+mintermini presenti, 0 nelle altre. Spesso, per semplicità, s'inseriscono solo gli 1, sottin-
+tendendo che le altre celle contengono 0. Ad esempio, per tracciare la mappa corrispon-
+dente alla funzione Y = A B C  A B C  A B C si procede nel seguente modo.
+–  Si disegna la mappa a tre variabili.
+–  A B C vale 1 per A = 0, B = 1, C = 0, e quindi s'inserisce un 1 nella cella corrispon-
+dente al mintermine A B C, individuata dalla colonna A B = 01 e dalla riga C = 0; analoga-
+mente, s'introduce un 1 nella cella corrispondente al mintermine ABC (colonna AB = 11 e
+riga C = 1) ed un 1 nella cella corrispondente al mintermine A B C (colonna A B = 10 e
+riga C = 0).
+–  Nelle altre celle sono inseriti zeri.
+–  Si disegna la mappa come nella Fig. XVII.13.3a; in b) è riportata la forma equiva-
+lente, in cui si sottintende la presenza degli zeri.
+13.4.1  Semplificazione delle mappe
+L'espressione semplificata della funzione booleana rappresentata nella mappa si
+ottiene dopo un'operazione di raggruppamento delle celle contenenti 1. I gruppi sono indi-
+AB
+AB
+C
+00
+01
+11
+10
+CD
+00
+01
+11
+10
+0
+m0
+m2
+m6
+m4
+00
+m0
+m4
+m12
+m8
+1
+m1
+m3
+m7
+m5
+01
+m1
+m5
+m13
+m9
+11
+m3
+m7
+m15 m11
+10
+m2
+m6
+m14 m10
+a)
+b)
+AB
+AB
+C
+00
+01
+11
+10
+C
+00
+01
+11
+10
+0
+0
+1
+0
+1
+0
+1
+1
+1
+0
+0
+1
+0
+1
+1
+a)
+b)
+
+[PAG 1695]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-95
+cati mediante una linea chiusa che comprende le celle che ne fanno parte. Il procedimento
+si sviluppa secondo i seguenti punti.
+1)  Raggruppamento delle celle contenenti 1. I raggruppamenti sono effettuati con i
+seguenti criteri:
+–  Le celle adiacenti contenenti 1 sono raggruppate a gruppi di 2 o 4 o 8 o … 2n celle
+adiacenti; i gruppi devono essere quadrati o rettangolari e si deve cercare di realizzare i
+raggruppamenti più ampi possibile.
+–  Le celle periferiche di un gruppo formano i lati del gruppo, con un numero di celle
+uguale ad una potenza di 2 (1, 2, 4, …, 2n).
+–  Ogni cella contenente 1 deve fare parte di un raggruppamento; se non è possibile, la
+cella rimane isolata ed il corrispondente mintermine entra nell'espressione finale della
+funzione semplificata.
+–  Una cella contenente 1 può fare parte di più raggruppamenti, se ciò permette di rea-
+lizzare gruppi più ampi.
+–  È conveniente iniziare il procedimento di raggruppamento partendo dalle celle che
+hanno meno adiacenze, e quindi meno possibilità di formare gruppi, e risalendo a quelle
+con più adiacenze, che quindi hanno più possibilità di raggruppamenti. L'obiettivo è di
+raggruppare tutte le celle nel minore numero di gruppi, i più ampi possibili.
+2)  Corrispondenza di un termine prodotto ad ogni gruppo. Ogni gruppo permette la sem-
+plificazione dei mintermini che ne fanno parte e dà origine ad un termine prodotto. Esso si
+ottiene facendo il prodotto delle variabili che non cambiano passando da una cella all'altra
+del gruppo; ogni variabile, a sua volta, è presa non negata, se rimane di valore costante
+uguale a 1, negata se rimane di valore costante uguale a 0.
+3)  Espressione della funzione semplificata. La funzione semplificata si ottiene facendo la
+somma dei termini prodotto.
+Esempio
+Semplificare la funzione F = A B C  A B C  A B C  A B C  A B C, rappresentata
+dalla mappa della Fig. XVII.13.4.
+Fig. XVII.13.4   Semplificazione delle mappe.
+Si parte dalla cella 111, perché è caratterizzata da una sola adiacenza; con essa è pos-
+sibile formare solo un gruppo di 2 celle, unendola con la cella 011 (gruppo p1). L'altra
+cella che presenta una sola adiacenza è la 100, che è unita alla cella 000, in un altro
+gruppo da 2 (gruppo p2). La cella rimasta, 010, può essere unita ad una delle due celle
+adiacenti, in modo da formare un gruppo di 2; si sceglie, arbitrariamente, il raggruppa-
+mento con la cella 011 (gruppo p3). Si noti che, in questo modo, la cella 011 è considerata
+due volte. Si scrivono i termini prodotto. Le variabili che nel gruppo p1 hanno valore
+uguale in entrambe le celle (valore 1), sono B e C; A non s'inserisce, perché varia, assu-
+mendo i valori 0 e 1 all'interno del gruppo, quindi il mintermine espresso dal gruppo p1 è
+B C. Il gruppo p2 dà p2 = B C, essendo B e C costanti e uguali a 0 all'interno del gruppo; A
+p2
+p3
+AB
+p2
+C
+00
+01
+11
+10
+0
+1
+1
+0
+1
+p1
+1
+0
+1
+1
+0
+
+[PAG 1696]
+XVII-96
+ELETTRONICA ANALOGICA E DIGITALE
+non è inserita, perché varia, assumendo i valori 0 e 1 all'interno del gruppo. Il gruppo p3
+dà p3 = A B essendo A e B costanti e uguali, rispettivamente, a 0 e a 1 all'interno del
+gruppo; C non è inserita, perché varia, assumendo i valori 0 e 1 all'interno del gruppo. 
+La funzione semplificata è: F = B C  B C  A B.
+13.4.2  Condizione di indifferenza nelle mappe di Karnaugh
+Nei circuiti logici può verificarsi che, per certe combinazioni delle variabili
+d'ingresso, non abbia importanza il livello dell'uscita; esso può essere indifferentemente 0
+o 1, e quindi questa combinazione è detta condizione d'indifferenza.
+Le funzioni che presentano condizioni d'indifferenza sono date mediante tabelle di
+verità, con l'indicazione X nei casi in cui l'uscita è indifferente, e nella mappa di Kar-
+naugh la situazione d'indifferenza è indicata inserendo una X nelle celle corrispondenti
+alle combinazioni delle variabili d'ingresso per le quali l'uscita è indifferente. Le celle
+contrassegnate con X sono utilizzate per semplificare di più la funzione; in esse infatti, è
+possibile sostituire la X con 1 per costruire gruppi più grandi, altrimenti non sono prese in
+considerazione.
+Esempio
+Semplificare la funzione rappresentata dalla tabella di verità della Fig. XVII.13.5a.
+–  Si costruisce la mappa, come in Fig. XVII.13.5b, inserendo 1, 0 e condizioni di
+indifferenza X.
+–  Si attribuisce il valore 1 alle celle 0011 e 1001; raggruppando le celle 0001, 0011,
+1001, 1011, si ha: p1 = B D.
+–  Analogamente, con le celle rimanenti contenenti 1, si può estendere il raggruppa-
+mento da quattro a otto celle, attribuendo il valore 1 alle celle 1100, 1000, 1101, 1001. Si
+ha: p2 = A.
+–  Le rimanenti celle contenenti X non vengono considerate; ciò equivale ad attribuire
+loro il valore 0.
+–  La funzione semplificata è: Y = B D  A. 
+Fig. XVII.13.5   Figura dell'esempio: a) tabella di verità con condizioni di indifferenza;
+b) mappa di Karnaugh e semplificazioni.
+A
+B
+C
+D
+Y
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+1
+0
+X
+0
+0
+1
+1
+X
+0
+1
+0
+0
+0
+p2
+0
+1
+0
+1
+0
+AB
+0
+1
+1
+0
+X
+CD
+00
+01
+11
+10
+0
+1
+1
+1
+X
+00
+0
+0
+X
+X
+p1
+1
+0
+0
+0
+X
+01
+1
+0
+X
+X
+1
+0
+0
+1
+X
+11
+X
+X
+1
+1
+1
+0
+1
+0
+1
+10
+X
+X
+1
+1
+1
+0
+1
+1
+1
+1
+1
+0
+0
+X
+1
+1
+0
+1
+X
+a)
+b)
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+
+[PAG 1697]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-97
+14  CIRCUITI LOGICI DI BASE
+14.1  Tipi di logiche
+Nel Cap. 10 è illustrata la corrispondenza fra stati logici e segnali elettrici. Il modo
+con cui si realizza la corrispondenza determina il tipo di logica, che può essere positiva o
+negativa.
+A)  Logica positiva
+La logica di una circuito digitale è positiva quando al livello di tensione basso (L) si fa
+corrispondere lo stato logico 0 ed al livello di tensione alto (H) si fa corrispondere lo stato
+logico 1. È il tipo di logica più usato e ad esso si farà riferimento in questa sezione.
+Fig. XVII.14.1   Circuito in logica positiva (porta AND elettronica): a) tabella del cir-
+cuito; b) tabella della funzione logica AND; c) tabella della funzione logica OR.
+Si consideri il circuito digitale a due ingressi ed un'uscita, porta AND elettronica, con
+i livelli di tensione rappresentati nella tabella della Fig. XVII.14.1a; scegliendo la logica
+positiva si ottiene la tabella di verità della Fig. XVII.14.1b, che corrisponde alla funzione
+logica AND, quindi il circuito considerato, in logica positiva, realizza la funzione logica
+AND.
+B)  Logica negativa
+La logica di un circuito digitale è detta negativa quando al livello di tensione basso
+(L) viene fatto corrispondere lo stato logico 1 ed al livello di tensione alto (H) viene fatto
+corrispondere lo stato logico 0.
+Si consideri la porta AND elettronica con livelli di tensione rappresentati nella tabella
+di Fig. XVII.14.1a; scegliendo la logica negativa si ottiene la tabella di Fig. XVII.14.1c,
+che corrisponde alla funzione logica OR, quindi il circuito considerato, in logica negativa,
+realizza la funzione logica OR.
+14.2  Porte logiche di base
+Le porte logiche sono i circuiti logici di base con le quali si ottengono circuiti che rea-
+lizzano funzioni logiche complesse. Le caratteristiche delle porte sono illustrate nella
+Tab. XVII.14.1. In essa sono riportati: nella prima colonna i nomi delle porte; nella
+seconda colonna i simboli principali più usati; nella terza colonna le tabelle di verità;
+nella quarta colonna le espressioni delle funzioni d'uscita Y; nella quinta colonna gli
+schemi di circuiti elettrici che simulano le funzioni d'uscita Y delle porte. Nei circuiti elet-
+trici si suppone di fare corrispondere allo stato delle due variabili A e B (o ad una sola di
+esse) l'apertura e la chiusura d'interruttori; in particolare, allo stato 0 della variabile corri-
+sponde l'interruttore aperto ed allo stato 1 l'interruttore chiuso; analogamente, a lampada
+accesa corrisponde Y = 1 e a lampada spenta corrisponde Y = 0.
+A
+B
+Y
+A
+B
+Y
+A
+B
+Y
+L
+L
+L
+0
+0
+0
+0
+0
+0
+L
+H
+L
+0
+1
+0
+0
+1
+1
+H
+L
+L
+1
+0
+0
+1
+0
+1
+H
+H
+H
+1
+1
+1
+1
+1
+1
+a)
+b)
+c)
+
+[PAG 1698]
+XVII-98
+ELETTRONICA ANALOGICA E DIGITALE
+Tab. XVII.14.1   Porte logiche di base 
+Porta
+Simbolo
+Tabella verità
+Funzione 
+d’uscita
+Analogia elettrica
+Not
+Y = A
+Or
+Y = A + B
+And
+Y = A  B
+Nand
+Y = A  B
+Nor
+Y = A + B
+A
+Y
+A
+Y
+R
+E
+S1
+A
+B
+Y
+A
+E
+R
+Y
+S1
+S2
+B
+A
+B
+Y
+E
+R
+A
+B
+S1
+S2
+Y
+A
+B
+Y
+E
+R
+Y
+B
+A
+S2
+S1
+A
+B
+Y
+A
+B
+R
+Y
+E
+S1
+S2
+A
+Y
+0
+1
+1
+0
+A
+B
+Y
+0
+0
+0
+0
+1
+1
+1
+0
+1
+1
+1
+1
+A
+B
+Y
+0
+0
+0
+0
+1
+0
+1
+0
+0
+1
+1
+1
+A
+B
+Y
+0
+0
+1
+0
+1
+1
+1
+0
+1
+1
+1
+0
+A
+B
+Y
+0
+0
+1
+0
+1
+0
+1
+0
+0
+1
+1
+0
+
+[PAG 1699]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-99
+Tab. XVII.14.1 Segue
+Le porte NAND e NOR sono dette porte universali, in quanto i circuiti logici possono
+essere realizzati con o solo porte NAND o solo porte NOR. La realizzazione di un circuito
+mediante porte universali offre il vantaggio di avere tutte le porte del circuito con le stesse
+caratteristiche.
+Fig. XVII.14.2   Realizzazione delle funzioni NOT, AND e OR con le porte universali
+NAND e NOR.
+A)  Circuiti con porte NAND
+Una funzione espressa in forma canonica come somma di prodotti, può essere imple-
+mentata con porte NAND. Infatti si supponga F = F1 + F2 + F3, con F1, F2, F3 prodotti di
+Porta
+Simbolo
+Tabella verità
+Funzione 
+d’uscita
+Analogia elettrica
+Xor
+Y = A  B
+Xnor
+Y = A  B
+A
+B
+Y
+A
+A
+Y
+R
+E
+S1
+S2
+B
+B
+S3
+S4
+A
+B
+Y
+A
+B
+B
+A
+S1
+S2
+S3
+S4
+R
+E
+Y
+A
+B
+Y
+A
+A
+B
+B
+AB
+A
+B
+Y = AB
+Y = A+B = AB
+A
+Y
+A
+A
+A
+A
+A
+B
+Y
+A
+B
+A
+B
+A
+B
+A+B
+A+B
+Y = A B = A+B
+A
+B
+Y
+0
+0
+0
+0
+1
+1
+1
+0
+1
+1
+1
+0
+A
+B
+Y
+0
+0
+1
+0
+1
+0
+1
+0
+0
+1
+1
+1
+
+[PAG 1700]
+XVII-100
+ELETTRONICA ANALOGICA E DIGITALE
+variabili. Se si effettua una doppia negazione e si applica il teorema di De Morgan, si ha:
+F = F = F1F2F3 = F1F2F3, con F1F2F3 realizzate con porte NAND.
+B)  Circuiti con porte NOR
+Una funzione espressa in forma canonica, come prodotto di somme, può essere facil-
+mente implementata con porte NOR. Infatti si supponga F = F1F2F3, con F1, F2, F3
+somme di variabili. Se si effettua una doppia negazione e si applica il teorema di De Mor-
+gan, si ha: F = F = F1F2F3 = F1F2F3, con F1, F2, F3 realizzate con porte NOR.
+Nella Fig. XVII.14.2 sono riportati i circuiti con le porte universali NAND e NOR che
+realizzano le funzioni NOT, AND e OR.
+14.3  Simboli rettangolari normalizzati delle porte logiche di base
+Un altro modo di rappresentare i simboli delle porte logiche di base è quello fornito
+dalle norme ANSI/IEEE Standard 91-1984; i simboli, disegnati nella Fig. XVII.14.3,
+hanno forma rettangolare. Si noti che, alle uscite dei simboli nei quali è presente la nega-
+zione, è posto un triangolino, detto indicatore di polarità; esso indica che, quando l'uscita
+è attiva (stato logico interno 1), lo stato logico della linea di uscita è basso. Nei simboli
+utilizzati precedentemente, il circolino indica che allo stato logico interno 1 corrisponde
+lo stato logico esterno 0 e viceversa, allo stato logico interno 0 corrisponde lo stato logico
+esterno 1.
+Fig. XVII.14.3   Simboli a forma rettangolare delle porte logiche di base secondo le
+norme ANSI/IEEE.
+14.4  Esempi di impiego delle porte logiche di base
+Si riportano alcuni esempi di progetto e di analisi di semplici circuiti con porte logi-
+che.
+Esempio 1
+Realizzare il circuito di comando di un motore che soddisfi alle seguenti specifiche:
+l'uscita Y del circuito deve essere allo stato 1 quando si vuole attivare il motore; il
+comando di attivazione può essere dato da due linee di ingresso A e B, ed il motore deve
+avviarsi se o A o B o entrambe sono portate allo stato 1; l'avviamento del motore deve
+essere possibile solo se è abilitato da un comando dato con una linea d'ingresso E allo
+stato 1.
+–  La descrizione delle specifiche consente di determinare direttamente la funzione
+d'uscita.
+–  Le variabili d'ingresso del circuito sono A, B ed E, la variabile d'uscita è Y.
+–  Il motore è in moto quando gli ingressi o A o B o entrambi sono allo stato 1. Il cir-
+cuito, perciò, si deve comportare come una porta OR dove l'uscita, Y1  A B, vale 1
+quando o A o B o entrambi sono a 1. L'uscita Y1  1 non può però comandare direttamente
+A
+B
+Y
+AND
+&
+A
+B
+Y
+OR
+1
+A
+Y
+NOT
+1
+A
+B
+Y
+XNOR
+=1
+A
+B
+Y
+NAND
+&
+A
+B
+Y
+NOR
+1
+A
+B
+Y
+XOR
+=1
+
+[PAG 1701]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-101
+il motore, in quanto l'avviamento del motore deve essere abilitato dalla variabile E, solo
+quando essa vale 1.
+–  L'uscita Y1 della porta OR e la variabile di abilitazione E sono pertanto le variabili
+d'ingresso per l'uscita Y. La condizione Y = 1 si ha solo se le variabili E ed Y1 sono a 1,
+condizione ottenuta con una porta AND.
+–  La funzione d'uscita del circuito è Y = (A  B)  E, ed il circuito che la realizza è
+disegnato nella Fig. XVII.14.4a.
+Esempio 2
+Analizzare il circuito della Fig. XVII.14.4b.
+L'analisi può essere sviluppata in due modi, partendo dagli ingressi o dall'uscita.
+a)  Primo modo
+Si parte da sinistra, cioè dagli ingressi. All'uscita della porta NOT (P1) si ha A; questo
+segnale è applicato alla porta AND (P3). All'uscita di P3 si ottiene Y2  A B, e all'uscita
+della porta P4 si ha Y3  AB C. Infine la porta P5 dà la funzione d'uscita del circuito: Y 
+D B C.
+b)  Secondo modo
+Si parte dall'uscita e per sostituzione si ottiene: Y  D Y3 con Y3  Y2Y4. Sostituendo
+si ha: Y  D Y2Y4 con Y2  Y1B e Y4  C. Sostituendo nuovamente, si ha: Y  D Y1BC,
+con Y1  A, e infine Y  D ABC.
+Fig. XVII.14.4   Esempi di impiego delle porte logiche di base: a) circuito dell'esempio 1;
+b) circuito dell'esempio 2.
+14.5  Porte con uscita three-state
+Le porte con uscita three-state, indicate anche come porte tristate, sono caratterizzate
+da tre stati dell'uscita: alto, basso e ad alta impedenza. Queste porte hanno un ingresso di
+abilitazione, per interrompere il collegamento dell'uscita dal resto del circuito interno
+della porta; in questo modo l'uscita è ad alta impedenza (high-Z). Nella Fig. XVII.14.5a è
+riportato il simbolo di una porta NOT con uscita three-state, con abilitazione attiva a
+livello basso. Portando EN a 0 la porta è abilitata, e l'uscita è U = A. Portando EN a 1, la
+porta è disabilitata, l'uscita passa ad alta impedenza, sconnettendo l'uscita dal circuito
+interno della porta. Si osservi, nel simbolo, il triangolino che indica l'uscita three-state.
+Vi sono dispositivi three-state chiamati buffer (Fig. XVII.14.5b), utilizzati per connet-
+tere un sistema digitale con dispositivi analogici, come linee, relè ecc. 
+Fig. XVII.14.5   Porte con uscita three-state: a) simbolo di porta NOT; b) simbolo di buffer.
+A
+B
+Y
+Y1
+E
+a)
+A
+B
+C
+D
+Y1
+Y2
+Y3
+Y
+P1
+P3
+P4
+P5
+P2
+Y4
+b)
+A
+EN
+U
+a)
+A
+EN
+U
+b)
+
+[PAG 1702]
+XVII-102
+ELETTRONICA ANALOGICA E DIGITALE
+15  CIRCUITI COMBINATORI
+In questo paragrafo sono esaminati i principali tipi di circuiti combinatori: per opera-
+zioni aritmetiche, di comparazione, di codifica e di decodifica, multiplexer e demulti-
+plexer. Questi circuiti sono realizzati con porte logiche, ma esistono dispositivi in forma
+integrata a media scala (MSI, da Medium Scale Integration); essi sono caratterizzati dalla
+presenza di un numero di transistor compreso fra 100 e 1000, e sono più affidabili dei cir-
+cuiti realizzati con singole porte logiche.
+15.1  Circuiti per operazioni aritmetiche
+I circuiti per operazioni aritmetiche sono circuiti combinatori che permettono di ese-
+guire le operazioni aritmetiche di addizione, sottrazione, moltiplicazione e divisione fra
+numeri binari.
+A)  Sommatore completo ad un bit
+Si considerino due numeri a due bit, di cui si vuole effettuare l'addizione; essi sono
+indicati, rispettivamente, con A1A0 e B1B0, essendo A0 e B0 i bit meno significativi dei due
+numeri e A1 e B1 i bit più significativi. La somma, espressa in funzione delle variabili A0,
+B0, A1, B1, è riportata nella Fig. XVII.15.1d, dove: CI è l'eventuale riporto della somma dei
+bit meno significativi A0 e B0; CO è il riporto della somma risultante, diverso da 0 se A1 =
+B1 = 1, oppure se o solo A1 o solo B1 sono uguali a 1, ma CI vale 1. Il circuito di base per
+realizzare la somma espressa nella Fig. XVII.15.1d, o, in generale, per sommare numeri a
+più bit, è il sommatore completo ad un bit (Full Adder). Esso, quando è realizzato con un
+circuito integrato, è rappresentato con un simbolo; il più comune è quello riportato nella
+Fig. XVII.15.1c. Nel sommatore completo si considerano A, B e CI come variabili
+d'ingresso, S e CO come variabili d'uscita. Nella Fig. XVII.15.1a è riportata la tabella di
+verità, in base alla quale si ha:
+(XVII.15.1)
+Nella Fig. XVII.15.1b, è disegnato il circuito del sommatore completo a 1 bit, realiz-
+zato con porte logiche.
+Fig. XVII.15.1   Sommatore completo: a) tabella di verità; b) esempio di circuito; c) sim-
+bolo; d) esempio di addizione di numeri a due bit.
+L'addizione nella Fig. XVII.15.1d è ottenuta con due sommatori completi, del tipo
+S
+A
+B
+
+
+
+CI ;
+
+=
+CO
+AB
+A
+B
+
+
+CI
++
+=
+b)
+CO
+S
+A
+B
+CI
+c)
+A
+B
+CI
+S
+CO
+FA
+A
+B
+CI
+S
+CO
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+1
+0
+1
+0
+0
+1
+1
+0
+1
+1
+0
+0
+1
+0
+1
+0
+1
+0
+1
+1
+1
+0
+0
+1
+1
+1
+1
+1
+1
+      
+CO
+CI
+A1 A0 +
+B1 B0 =
+S1
+S0
+a)
+d)
+
+[PAG 1703]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-103
+della Fig. XVII.15.1b. Nel primo sommatore l'addizione fra i bit meno significativi A0 e
+B0, che dà come risultato S0, è realizzata ponendo nella XVII.15.1 CI = 0; ciò è ottenuto
+connettendo a massa l'ingresso CI, che assume così il valore 0. Nel secondo sommatore
+l'addizione, fra i bit delle variabili A1, B1 e CI, è effettuata in base alla XVII.15.1.
+B)  Sommatori a più bit
+Fig. XVII.15.2   Sommatore a 8 bit, ottenuto utilizzando l'integrato 7483.
+L'integrato 7483 è un sommatore a quattro bit (Fig. XVII.15.2). Collegando più 7483
+in cascata si realizzano sommatori a più di quattro bit; nella Fig. XVII.15.2 è riportato lo
+schema di un sommatore a 8 bit, realizzato con due integrati in cascata, indicati con S0 e
+S1. Questo circuito comporta ritardi di propagazione; infatti, dato che il riporto deve pro-
+pagarsi da un integrato all'altro, il valore corretto della somma si ha solo quando il riporto
+è pervenuto all'integrato cui corrispondono i bit più significativi.
+Per realizzare sommatori veloci con un elevato numero di bit, si utilizzano gli inte-
+grati 74181 e 74182. L'integrato 74181 è indicato anche come ALU (Arithmetic Logic
+Unit) per le diverse operazioni aritmetiche e logiche che può compiere.
+C)  Sottrazione binaria
+Fig. XVII.15.3   Circuito sottrattore in complemento a 2, a quattro bit.
+La sottrazione binaria A  B è effettuata sommando ad A il complemento a due di B.
+Nella Fig. XVII.15.3 è riportato un circuito che realizza la sottrazione binaria fra due
+numeri a quattro bit. Per eseguire A  B, al minuendo A  A3A2A1A0 è sommato il comple-
+mento a due del sottraendo B  B3B2B1B0, ottenuto complementando i bit di B con porte
+NOT e aggiungendo 1 tramite il terminale CI, CI  1. Inoltre, se A  B è sempre CO  1, e
+il risultato della sottrazione è costituito dalle uscite S3S2S1S0 e si ignora l'uscita CO. Per A
+ B è sempre CO  0, e il risultato della sottrazione è ottenuta indirettamente nel seguente
+modo: si complementa a 2 l'uscita del sommatore e si cambia il segno del risultato. Ad
+esempio, se A  1010 (decimale 10) e B  1101 (decimale 13), l'uscita del sommatore è
+1101; il complemento a 2 di 1101 è 0011; CO  0 avverte che il risultato è negativo e
+quindi A  B  0011, corrispondente al d
