@@ -1,0 +1,2197 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 39/116 ===
+Chars: 44,665 | Offset: 1,676,480
+
+
+
+[PAG 865]
+IMPIANTI  ELETTRICI                                               X-15
+Nel funzionamento a tensione nominale, ma con potenza erogata, f.d.p. e rendimento
+diversi da quelli nominali, la potenza resa è data da Ku Pn, per cui la potenza assorbita e la
+corrente diventano: 
+(X.2.14)
+(X.2.15)
+dove  e cos sono relativi al regime di funzionamento considerato e quindi si scostano,
+più o meno sensibilmente, dai valori nominali. Per l’applicazione delle relazioni X.2.14 e
+X.2.15 occorre conoscerne i valori al variare della potenza.
+Se il fattore di utilizzazione è noto come rapporto tra le potenze assorbite (e non tra
+quelle rese), la relazione X.2.14 diventa di più facile applicazione in quanto vi compare il
+rendimento di targa del motore:
+(X.2.16)
+Per la corrente si fa riferimento, in mancanza dei valori di  e cos, al valore della
+corrente nominale.
+Nel caso di più motori bisogna tener conto del fattore di contemporaneità, per cui la
+potenza assorbita da un gruppo di N motori aventi le stesse caratteristiche è data da:
+(X.2.17)
+Esempio 4
+La potenza assorbita da un gruppo di 4 motori asincroni trifasi di potenza nominale
+7,5 kW, rendimento nominale 0,86, assumendo Ku = 0,75 (Tab. X.2.1) e Kc = 0,7 (Tab.
+X.2.2), è data da:
+Le caratteristiche di targa di una serie di motori asincroni trifasi con rotore a gabbia
+sono riportate nella Tab. X.2.3.
+2.6  Valutazione della potenza convenzionale totale di un impianto
+Per determinare la potenza convenzionale totale di un impianto si può procedere in
+diversi modi, a seconda del grado di approfondimento voluto.
+Somma delle potenze convenzionali dei vari circuiti
+L’impianto viene suddiviso nei vari circuiti che lo compongono (illuminazione, prese,
+utilizzatori fissi ecc.), per ognuno dei quali si valuta la potenza convenzionale utilizzando
+i fattori di utilizzazione e di contemporaneità introdotti nei paragrafi precedenti.
+Indicando con P1, P2 … Pn le potenze convenzionali degli n circuiti individuati si cal-
+cola la potenza convenzionale totale con la relazione:
+(X.2.18)
+Pa
+P
+---
+KuPn
+
+------------
+=
+=
+I
+Pa
+3Un
+
+cos
+----------------------------
+KuPn
+3Un
+
+cos
+--------------------------------
+=
+=
+Pa
+KuPan
+KuPn
+n
+------------
+=
+=
+P
+NPanKuKc
+N
+=
+=
+Pn
+n
+----- KuKc
+P
+N
+Pn
+n
+----- KuKc
+4 7,5
+0,86
+--------- 0,75
+0,7
+
+18,3 kW
+=
+=
+=
+Pt
+P1
+P2
+...
+Pn
++
++
++
+=
+
+[PAG 866]
+X-16
+  IMPIANTI ELETTRICI 
+senza applicare nessun ulteriore coefficiente di riduzione se i vari circuiti possono funzio-
+nare contemporaneamente, altrimenti si tiene conto della condizione di carico più gra-
+vosa.
+Tab. X.2.3   Caratteristiche elettriche di motori asincroni trifasi con rotore a gabbia,
+esecuzione base, Un = 400 V, f = 50 Hz, isolamento in classe F (Siemens S.p.a.)
+Pn
+[kW]
+Rendimento nominale
+n
+f.d.p. nominale
+cosn
+Corrente nominale In
+[A]
+2
+poli
+4
+poli
+6
+poli
+8
+poli
+2
+poli
+4
+poli
+6
+poli
+8
+poli
+2
+poli
+4
+poli
+6
+poli
+8
+poli
+0,18
+64
+59
+56
+51
+0,80
+0,76
+0,75
+0,68
+0,51
+0,58
+0,62
+0,75
+0,25
+65
+60
+61
+55
+0,82
+0,79
+0,76
+0,64
+0,68
+0,76
+0,78
+1,03
+0,37
+67
+65
+62
+63
+0,82
+0,80
+0,72
+0,75
+1,00
+1,03
+1,20
+1,13
+0,55
+71
+67
+67
+66
+0,82
+0,81
+0,74
+0,76
+1,36
+1,45
+1,60
+1,58
+0,75
+73
+72
+69
+66
+0,86
+0,81
+0,76
+0,76
+1,73
+1,86
+2,10
+2,15
+1,1
+77
+73
+72
+72
+0,87
+0,83
+0,77
+0,76
+2,40
+2,65
+2,90
+2,90
+1,5
+78
+77
+74
+74
+0,85
+0,82
+0,75
+0,76
+3,25
+3,45
+3,90
+3,90
+2,2
+81
+80
+78
+75
+0,85
+0,82
+0,78
+0,74
+4,60
+4,90
+5,20
+5,70
+3
+83,5
+81,5
+79
+77
+0,85
+0,83
+0,76
+0,74
+6,10
+6,40
+7,20
+7,60
+4
+83,5
+84,0
+80,5
+80
+0,88
+0,83
+0,76
+0,72
+7,70
+8,30
+9,40
+10,0
+5,5
+84,5
+86,0
+83,0
+83,5
+0,85
+0,81
+0,76
+0,73
+11,1
+11,4
+12,8
+13,0
+7,5
+86,0
+87,5
+86,0
+85,5
+0,86
+0,82
+0,74
+0,72
+14,7
+15,1
+17,0
+17,6
+11
+87,0
+88,5
+87,5
+87,0
+0,85
+0,84
+0,74
+0,75
+21,4
+21,4
+24,5
+24,0
+15
+88,5
+90,0
+89,5
+87,5
+0,87
+0,84
+0,77
+0,78
+28,2
+28,5
+31,5
+32,0
+18,5
+90,0
+90,5
+90,2
+89,2
+0,85
+0,83
+0,77
+0,79
+34,7
+35
+38,5
+38,0
+22
+91,7
+91,2
+90,8
+90,6
+0,88
+0,84
+0,77
+0,79
+39
+41
+45,5
+44,5
+30
+92,3
+91,8
+91,8
+91,6
+0,89
+0,86
+0,77
+0,82
+53
+55
+61
+58
+37
+92,8
+92,9
+92,4
+92,7
+0,89
+0,87
+0,86
+0,82
+65
+66
+68
+70
+45
+94,1
+93,4
+93,1
+92,8
+0,89
+0,87
+0,86
+0,83
+78
+80
+81
+84
+55
+93,7
+94,0
+93,6
+93,1
+0,91
+0,87
+0,86
+0,82
+93
+97
+99
+104
+75
+94,7
+94,7
+93,9
+94
+0,90
+0,86
+0,86
+0,83
+128
+132
+134
+138
+90
+95,1
+94,9
+94,2
+93,8
+0,91
+0,86
+0,86
+0,83
+150
+160
+160
+166
+110
+94,8
+94,8
+94,7
+94,1
+0,90
+0,86
+0,86
+0,83
+186
+194
+194
+205
+132
+95,1
+95,5
+95,0
+94,1
+0,90
+0,87
+0,86
+0,82
+225
+230
+235
+245
+160
+95,5
+95,8
+95,1
+94,9
+0,91
+0,87
+0,86
+0,82
+265
+275
+280
+295
+200
+95,9
+96,2
+95,7
+95,2
+0,92
+0,87
+0,87
+0,82
+325
+345
+345
+370
+250
+96,2
+96,0
+95,9
+95,7
+0,90
+0,88
+0,87
+0,82
+415
+425
+430
+460
+315
+96,6
+96,3
+96,2
+96,0
+0,91
+0,88
+0,87
+0,82
+520
+540
+540
+580
+
+[PAG 867]
+IMPIANTI  ELETTRICI                                               X-17
+Applicazione di un coefficiente di riduzione globale
+Questo metodo consiste nel determinare la potenza convenzionale totale mediante il
+prodotto tra la potenza totale, somma delle potenze di tutti gli utilizzatori alimentati (o
+almeno di quelli principali), e un coefficiente di riduzione globale che tenga conto sia
+dell’utilizzazione dei singoli carichi sia della loro contemporaneità, senza distinguere tra i
+vari circuiti. L’attendibilità del calcolo dipende dall’accuratezza nella scelta di tale fat-
+tore, che va fatta dopo un attento esame delle caratteristiche di funzionamento
+dell’impianto. Valori medi orientativi del coefficiente di riduzione, nel caso di impianti
+civili di grandi dimensioni, sono riportati nella Tab. X.2.4.
+Uso della potenza specifica 
+La potenza apparente specifica Ssp è il rapporto tra la potenza apparente totale di un
+impianto e l’area dell’edificio entro cui l’impianto è installato; si può quindi valutare la
+potenza attiva totale con la relazione: 
+(X.2.19)
+dove A è l’area e cos  il f.d.p. globale dell’impianto.
+I valori della potenza specifica, per alcune applicazioni industriali e civili, sono ripor-
+tati nella Tab. X.2.5.
+ 
+Tab. X.2.4   Valori del coefficiente di riduzione globale
+Tipo di utilizzazione
+Coefficiente
+Alberghi, collegi
+0,60 0,80
+Ospedali
+0,50 0,75
+Grandi magazzini
+0,70 0,90
+Scuole
+0,60 0,70
+Tab. X.2.5   Valori della potenza specifica
+Tipo di attività
+Potenza specifica 
+[VA/m2]
+Utilizzazioni industriali
+Cartiera
+120
+Industria tessile
+100
+Industria elettronica
+90
+Officina meccanica
+80
+Falegnameria
+70
+Utilizzazioni civili e del terziario
+Uffici
+70
+Scuole
+50
+Ospedali
+60
+Alberghi
+80
+Abitazioni
+40
+Pt
+St
+
+cos
+Ssp A
+
+cos
+=
+=
+
+[PAG 868]
+X-18
+  IMPIANTI ELETTRICI 
+Questo metodo si applica per determinare la potenza da installare in prima approssi-
+mazione, per esempio nella fase del progetto preliminare se non sono ancora noti i carichi
+elettrici che saranno effettivamente installati nell’impianto.
+Esempio 5
+La potenza necessaria per un capannone adibito a lavori di falegnameria, di superficie
+1500 m2, con f.d.p. globale 0,9 è pari a:
+ipotizzando una potenza specifica di 70 VA/m2.
+2.7  Corrente d’impiego termicamente equivalente
+Si supponga che un carico elettrico, durante un periodo di lavoro di durata T, assorba
+una corrente con valore efficace variabile nel tempo secondo un andamento a gradini (Fig.
+X.2.2). Si indichino con t1, t2 … tn le durate degli intervalli in cui può essere suddiviso il
+tempo T e con I1, I2 … In i valori efficaci assunti dalla corrente negli stessi intervalli.
+Fig. X.2.2  Grafico a gradini di una corrente con valore efficace variabile nel tempo.
+La corrente d’impiego termicamente equivalente è la corrente di valore efficace Ib
+supposto costante nel tempo T che ha lo stesso effetto termico della corrente variabile,
+ossia che produce lo stesso sviluppo di calore se circola in un elemento di circuito avente
+la stessa resistenza elettrica.
+La sua espressione è:
+(X.2.20)
+dove con ti e Ii sono stati indicati i valori della durata e dell’intensità di corrente nello i-
+esimo intervallo di tempo.
+Quando la legge di variazione della corrente non è riconducibile a una sequenza di
+valori costanti, nella X.2.20 la sommatoria va sostituita con un integrale definito, per
+risolvere il quale occorre conoscere la legge di variazione dell’intensità di corrente
+(valore efficace nel caso della c.a.) nel tempo:
+Pt
+Ssp Acos
+70
+1500
+
+0,9
+
+94,5 kW
+=
+=
+=
+I
+I1
+I2
+In
+t1
+t2
+tn
+T
+t
+0
+Ib
+1
+T--
+Ii
+2ti
+i
+1
+=
+n
+
+=
+
+[PAG 869]
+IMPIANTI  ELETTRICI                                               X-19
+(X.2.21)
+Esempio 6
+Per un carico elettrico che funziona con cicli di durata T = 600 s divisibili in due inter-
+valli t1 = 100 s e t2 = 500 s durante i quali assorbe le correnti I1 = 300 A e I2 = 180 A, la
+corrente d’impiego per la quale occorre dimensionare la linea per rispettare l’equivalenza
+agli effetti termici è pari a:
+3  PARAMETRI ELETTRICI E CIRCUITI EQUIVALENTI DELLE LINEE
+ELETTRICHE
+3.1  Parametri elettrici di una linea
+Per linea elettrica si intende un sistema elettrico avente lo scopo di collegare tra loro
+due sezioni di una rete elettrica, trasferendo la potenza dal punto di origine a quello di
+arrivo. Dato che una linea può teoricamente funzionare in entrambi i sensi, il punto di ali-
+mentazione può essere posto a una qualsiasi delle estremità.
+Una linea elettrica è formata principalmente da un certo numero di conduttori, da un
+sistema d'isolamento tra i conduttori e verso massa, da un sistema di sostegno e fissaggio
+dei conduttori stessi.
+La rappresentazione di una linea elettrica mediante un circuito equivalente impone la
+conoscenza dei parametri di linea, ossia delle grandezze tipiche del circuito che vengono
+introdotte per tener conto dei diversi fenomeni, di tipo sia conservativo sia dissipativo,
+che avvengono nella linea stessa.
+In particolare si introducono i seguenti parametri:
+–  resistenza elettrica di linea, dovuta alla resistenza che i conduttori oppongono al
+passaggio della corrente e che provoca sia una variazione di tensione lungo la linea che
+una perdita di potenza attiva per effetto Joule;
+–  reattanza induttiva di linea, mediante la quale si tiene conto delle tensioni indotte
+nei vari conduttori di linea per effetto dell'auto e della mutua induzione, nel caso di linee
+funzionanti con correnti variabili nel tempo; la reattanza produce una variazione di ten-
+sione lungo la linea, ma non una perdita di potenza attiva, dato il carattere conservativo
+del campo magnetico;
+–  conduttanza di linea, dovuta alle correnti di dispersione che circolano trasversal-
+mente tra un conduttore e l'altro e tra i conduttori e la massa, per cause varie (dispersione
+lungo gli isolatori, effetto corona); essa produce una variazione di corrente lungo la linea
+e una dissipazione di potenza attiva;
+–  suscettanza capacitiva di linea, dovuta alle capacità parassite tra i conduttori e tra
+questi e massa; produce una variazione di corrente lungo la linea, ma non una dissipa-
+zione di potenza attiva, dato il carattere conservativo del campo elettrico.
+I parametri di linea vengono distinti in longitudinali e trasversali. Si definiscono para-
+metri longitudinali (Fig. X.3.1) quelli i cui effetti dipendono dalla corrente e che vengono
+collegati in serie ai conduttori di linea nel circuito equivalente. Si definiscono, invece,
+Ib
+1
+T--
+I2 ttd
+0
+T
+
+=
+Ib
+1
+T-- I1
+2 t1
+I2
+2 t2
++
+
+
+1
+600
+-------- 3002
+100
+1802
++
+
+500
+
+
+
+205 A
+=
+=
+=
+
+[PAG 870]
+X-20
+  IMPIANTI ELETTRICI 
+parametri trasversali (Fig. X.3.2) quelli che danno effetti dipendenti dalla tensione e che
+vengono collegati in derivazione tra i conduttori di linea.
+3.2  Resistenza elettrica di linea
+La resistenza elettrica di un conduttore di lunghezza l, sezione S e resistività  si cal-
+cola con la formula:
+(X.3.1)
+Il fattore Kr è un coefficiente maggiorativo (Kr  1) che, per le linee aeree, tiene conto
+della maggiore lunghezza effettiva del conduttore rispetto a quella teorica, a causa della
+forma assunta dal conduttore teso tra i sostegni e, nel caso delle corde formate da fili ele-
+mentari, del fatto che i fili sono avvolti a spirale. In questo caso si può ritenere Kr  1,01
+per i conduttori a filo unico e Kr = 1,02  1,05 per le corde.
+Nel caso dei cavi l'aumento di resistenza rispetto al valore teorico è dovuto all'effetto
+di cordatura e alle perdite per correnti parassite indotte dal campo magnetico prodotto dal
+cavo nelle eventuali guaine metalliche di protezione; il valore di Kr è difficilmente valuta-
+bile e può arrivare a 1,2.
+Nella formula X.3.1 la resistività va riportata alla temperatura di funzionamento  del
+conduttore, con la relazione:
+(X.3.2)
+dove i valori della resistività e del coefficiente di temperatura a 20 °C valgono:
+–  per il rame crudo: 
+–  per l'alluminio crudo:
+La resistenza elettrica riferita all'unità di lunghezza (resistenza unitaria) è data da:
+(X.3.3)
+Fig. X.3.1   Effetto dei parametri
+longitudinali.
+Fig. X.3.2   Effetto dei parametri
+trasversali.
+Ur
+Ul
+Rl
+Xl
+I
+Ur  Rl I
+Ul  jXl I
+Ig
+U
+G
+Bc
+Id
+Ic
+I1
+I2  I1
+Ig  G U
+Ic  jBc U
+Rl
+Kr
+l
+S----
+=
+
+201
+20
+20
+–
+
+
++
+
+
+=
+20
+17,8 mm2
+m
+---------------- ;
+=
+20
+0,0039 C 1
+–
+=
+20
+28,4 mm2
+m
+---------------- ;
+=
+20
+0,0040 C 1
+–
+=
+rl
+Rl
+l----
+Kr
+S
+---------
+=
+=
+
+[PAG 871]
+IMPIANTI  ELETTRICI                                               X-21
+e la sua unità di misura (/m o /km) dipende da quella usata per la resistività.
+Esempio 1
+La resistenza elettrica di un conduttore in corda di rame, di lunghezza 200 m (0,2 km)
+e sezione 16 mm2, calcolata alla temperatura di servizio di 70 °C, è data da:
+a cui corrisponde la resistenza unitaria:
+3.3  Induttanza e reattanza di servizio
+In una linea elettrica formata da più conduttori funzionanti in corrente alternata sinu-
+soidale, il campo magnetico creato da ogni conduttore è variabile nel tempo e produce sul
+conduttore stesso una tensione indotta di autoinduzione; inoltre ogni conduttore produce
+sugli altri conduttori di linea una tensione indotta di mutua induzione. La conseguenza di
+questo insieme di azioni elettromagnetiche è la comparsa, in ogni conduttore, di una ten-
+sione indotta totale, dipendente dalle correnti di linea, dai coefficienti di auto induzione
+dei vari conduttori e da quelli di mutua induzione tra le diverse coppie.
+Nel circuito equivalente della linea gli effetti combinati di auto e mutua induzione su
+ogni conduttore vengono ricondotti a una autoinduzione equivalente, introducendo
+l'induttanza di servizio Ls a cui corrisponde la reattanza di servizio xl della linea, data da
+xl  Ls  2 f Ls.
+Nel caso di linee aeree in c.a. trifase l'induttanza unitaria di servizio, relativa a 1 km di
+linea, con conduttori di diametro d posti alla stessa distanza D fra loro (conduttori situati
+ai vertici di un triangolo equilatero), è data da:
+(X.3.4)
+a cui corrisponde la reattanza unitaria di servizio:
+(X.3.5)
+Nell'applicazione delle formule precedenti d e D devono essere espressi nella stessa
+unità di misura, in modo che il loro rapporto sia un numero adimensionato.
+Nel caso di conduttori posti a distanze diverse fra loro, si utilizzano ancora le stesse
+formule ponendo al posto di D la media geometrica Dm delle tre distanze:
+(X.3.6)
+Per i conduttori disposti su un piano, con distanze D, D e 2D, la distanza media da
+usare è Dm = 1,26 D.
+Il termine Kl rappresenta il contributo all'induttanza dato dal campo interno al condut-
+tore; il suo valore può essere assunto mediamente pari a Kl = 0,05 per conduttori lisci e
+Kl = 0,05  0,064 per conduttori a corda.
+
+201
+20
+20
+–
+
+
++
+
+
+17,8 1
+0,0039 70
+20
+–
+
+
++
+
+
+21,27 mm2
+m
+----------------
+=
+=
+=
+Rl
+Kr
+l
+S----
+1,05 21,27
+0,2
+
+16
+----------------------------
+0,279 
+=
+=
+=
+rl
+Rl
+l----
+0,279
+0,2
+------------
+1,395 
+km
+-------
+=
+=
+=
+Ls
+0,4606 log 2D
+d
+-------
+Kl
++
+
+
+
+10 3
+–
+H
+km
+-------
+=
+xl
+2f 0,4606 log 2D
+d
+-------
+Kl
++
+
+
+
+10 3
+–
+
+km
+-------
+=
+Dm
+DabDbcDca
+3
+=
+
+[PAG 872]
+X-22
+  IMPIANTI ELETTRICI 
+Per le linee aeree funzionanti a 50 Hz la reattanza di servizio unitaria assume orienta-
+tivamente valori compresi nell'intervallo:
+xl = (0,37  0,46) /km
+Per le linee in cavo la variabilità è molto più estesa, dato che le distanze e le disposi-
+zioni dei conduttori sono varie. In questo caso la reattanza non si calcola, ma viene indi-
+cata dal costruttore del cavo, a seguito di apposite misure. Un valore medio orientativo,
+valido solo per un calcolo di massima, è:
+xl = 0,1 /km
+Esempio 2
+L'induttanza e la reattanza unitaria di servizio per una linea aerea trifase funzionante a
+50 Hz e formata da tre conduttori equidistanti, con D = 6 m e diametro d = 27 mm, sono
+date da:
+3.4  Capacità e suscettanza di servizio
+In una linea composta da un certo numero di conduttori occorre considerare la pre-
+senza di un insieme di condensatori elementari, formati da armature aventi una certa dif-
+ferenza di potenziale (i conduttori fra loro e verso massa), con dielettrico costituito da aria
+se la linea è aerea o dall'isolante se in cavo. Occorrerà quindi considerare, nel circuito
+equivalente della linea, una capacità fra ogni coppia di conduttori e una fra ogni condut-
+tore e la massa (Fig. X.3.3 nel caso di una linea trifase).
+Fig. X.3.3   Complesso delle capacità per una linea trifase.
+Supponendo che tutte le capacità tra le fasi siano uguali (Cab = Cbc = Cac = C) e che
+siano uguali fra loro anche quelle verso massa (Cao = Cbo = Cco = Co), è possibile dimo-
+strare che il complesso di Fig. X.3.3 è equivalente a quello di Fig. X.3.4 in cui vi è una
+sola capacità per fase, detta capacità di servizio, pari a:
+(X.3.7)
+Ls
+0,4606 log 2
+6
+103
+
+
+27
+-----------------------------
+0,064
++
+
+
+
+10 3
+–
+1,284
+10 3
+–
+
+=
+S
+km
+-------
+=
+xl
+2fLs
+250
+1,284
+10 3
+–
+
+
+0,403
+=
+=
+
+km
+-------
+=
+a
+b
+c
+o
+Iao
+Cao
+Iab
+Cab
+Cbc
+Cbo
+Iac
+Cac
+Cco
+Cs
+Co
+3C
++
+=
+
+[PAG 873]
+IMPIANTI  ELETTRICI                                               X-23
+Fig. X.3.4   Capacità di servizio per una linea trifase.
+Nel circuito equivalente della linea ogni fase sarà caratterizzata da una suscettanza di
+servizio, data da:
+(X.3.8)
+Per le linee aeree trifasi, indicando con d il diametro dei conduttori e con D la loro
+distanza, la capacità di servizio per unità di lunghezza si può calcolare con la formula:
+(X.3.9)
+Se i conduttori non sono posti alla stessa distanza l'espressione X.3.9 è ancora valida,
+a patto di considerare la media geometrica delle distanze:
+(X.3.10)
+Per conduttori disposti su un piano a distanze D, D e 2D, si ha: Dm = 1,26 D.
+Per le linee aeree monofasi si deve considerare una sola capacità di servizio tra fase e
+neutro, il cui valore è dato da:
+(X.3.11)
+La capacità di servizio per grandi linee aeree trifasi di trasmissione è mediamente
+compresa nell'intervallo:
+cs = (0,008  0,0095) 106 F/km
+a cui corrisponde, con frequenza 50 Hz, una suscettanza capacitiva pari a:
+bc = (2,5  3) 106 S/km
+Nel caso delle linee in cavo la capacità è nettamente maggiore rispetto alle linee aeree,
+sia per la minore distanza tra i conduttori sia per il maggior valore della costante dielet-
+trica relativa dell'isolante rispetto all'aria. Mediamente si arriva a valori 20  30 volte
+superiori. Data la complessità della configurazione del campo elettrico in un cavo, la
+capacità viene valutata sperimentalmente e indicata dal costruttore.
+a
+b
+c
+o
+Cs
+Cs
+Cs
+a
+o
+Cs
+Bc
+Cs
+2fCs
+=
+=
+cs
+0,02413
+log2D
+d
+-------
+------------------ 10 6
+–
+F
+km
+-------
+=
+Dm
+DabDbcDca
+3
+=
+cs
+0,01206
+log2D
+d
+-------
+------------------ 10 6
+–
+F
+km
+-------
+=
+
+[PAG 874]
+X-24
+  IMPIANTI ELETTRICI 
+Esempio 3
+La capacità e la suscettanza di servizio unitarie della linea dell'esempio 2 sono pari a:
+3.5  Conduttanza di dispersione
+Nelle linee aeree la conduttanza di dispersione per unità di lunghezza da considerare
+per ogni conduttore è data dal rapporto tra la perdita di potenza trasversale totale, riferita
+alla lunghezza unitaria ed espressa in watt/kilometro, e la tensione di fase della linea:
+(X.3.12)
+La potenza Pd è quella persa lungo gli isolatori, a causa delle piccole correnti disperse
+a terra per l'imperfetto isolamento superficiale degli isolatori stessi. La sua valutazione è
+alquanto incerta, in quanto dipende da diversi fattori, alcuni piuttosto aleatori. In generale
+essa aumenta con la tensione e al diminuire della distanza del conduttore dal sostegno;
+dipende inoltre dallo stato superficiale dell'isolatore e dalle condizioni atmosferiche,
+risultando massima per tempo piovoso. Nelle condizioni peggiori, per linee in alta ten-
+sione, si arriva a un valore di circa 1 kW/km per ogni fase.
+La potenza Pc è dovuta, invece, all'effetto corona, ossia all'emissione di cariche elet-
+triche dalla superficie esterna del conduttore, a causa del campo elettrico che si crea
+attorno agli stessi conduttori.
+Nel caso di una linea aerea trifase a tre fili, con conduttori di diametro d posti a
+distanza D fra loro, l'effetto corona si manifesta quando il valore efficace della tensione di
+fase E supera il valore critico Ec, dato da:
+(X.3.13)
+Con tempo umido si deve considerare un valore pari all'80% rispetto a quello calco-
+lato con la relazione precedente, dato che l'effetto corona si innesca per un valore di ten-
+sione minore.
+Nella relazione X.3.13 il rapporto 2Dd deve essere un numero adimensionato, per cui
+D e d devono avere la stessa unità di misura, il fattore d2 va espresso in centimetri, m è il
+coefficiente di scabrosità che tiene conto della presenza di irregolarità sulla superficie del
+conduttore, presenza che fa aumentare il gradiente di potenziale, e  è un fattore che
+dipende dalla pressione p (espressa in millimetri di mercurio) e dalla temperatura  in
+gradi centigradi, secondo la relazione:
+(X.3.14)
+I valori di m da considerare sono compresi negli intervalli 0,93  1 per conduttori a
+filo unico e 0,83  0,87 per le corde che, avendo una superficie esterna meno liscia, favo-
+riscono l'effetto corona e per le quali la tensione critica è minore.
+cs
+0,02413
+log2
+6
+
+103
+
+27
+-----------------------------
+--------------------------------------10 6
+–
+0,00911
+10 6
+–
+
+=
+F
+km
+-------
+=
+bc
+250
+0,00911
+10 6
+–
+
+
+2,86
+10 6
+–
+
+=
+S
+km
+-------
+=
+g
+Pd
+Pc
++
+E2
+-------------------
+S
+km
+-------
+=
+Ec
+49,2 md
+2-- log 2D
+d
+------- kV
+=
+
+0,386 p
+273
+
++
+-------------------
+=
+
+[PAG 875]
+IMPIANTI  ELETTRICI                                               X-25
+La potenza unitaria persa per effetto corona, nel caso che sia E  Ec, si valuta con la
+formula empirica:
+(X.3.15)
+nella quale E ed Ec devono essere espresse in kilovolt.
+Nella progettazione di linee aeree in alta tensione si cerca di evitare l'insorgere
+dell'effetto corona in condizioni di tempo normale, facendo in modo che sia Ec  E.
+L'aumento della tensione critica si realizza con accorgimenti costruttivi, basati
+sull'aumento del diametro d del conduttore mediante l'impiego di conduttori in alluminio-
+acciaio, aventi un diametro maggiore di quelli di rame a parità di resistenza elettrica, e
+l'uso di conduttori binati e trinati, costituiti da due o tre corde per fase distanziate fra loro
+e collegate in parallelo; questi conduttori hanno un raggio equivalente maggiore di quelli
+a conduttore unico. Nel caso delle linee in cavo la conduttanza è dovuta essenzialmente
+alle perdite per isteresi dielettrica che si verificano negli isolamenti durante il funziona-
+mento in corrente alternata, ma risulta quasi sempre trascurabile.
+3.6  Rappresentazione con parametri distribuiti e concentrati
+Per rappresentare una linea elettrica in modo aderente alla realtà fisica occorrerebbe
+tener conto del fatto che i parametri elettrici sono distribuiti lungo la linea stessa, in
+quanto ogni tratto infinitesimale di linea, di lunghezza dl, è caratterizzata dai parametri
+dRl, dXl, dG e dBc (Fig. X.3.5). Per rappresentare l'intera linea con parametri distribuiti
+bisognerebbe quindi collegare in cascata infiniti quadripoli del tipo indicato e usare, per
+lo studio della linea, i metodi dell'analisi infinitesimale.
+Fig. X.3.5   Circuito equivalente di un tratto di linea di lunghezza dl.
+Per semplificare la trattazione si usa generalmente la rappresentazione con parametri
+concentrati, raggruppando tutta la resistenza, la reattanza induttiva, la conduttanza e la
+suscettanza capacitiva di un tratto di linea di lunghezza finita in un punto del circuito
+equivalente. In questo modo i parametri dell'intera linea vengono suddivisi in N parti, con
+N variabile a seconda dell'approssimazione che si vuole conseguire. Nei casi pratici i
+parametri vengono concentrati in uno o due punti.
+Per calcolare i valori dei parametri elettrici relativi a un tratto di linea di lunghezza l è
+necessario conoscere i valori di quelli unitari, riferiti generalmente alla lunghezza di
+1 km, e usare le relazioni:
+(X.3.16)
+nelle quali con le lettere minuscole sono stati indicati i parametri unitari.
+Pc
+2,41
+
+--------- f
+25
++
+
+
+d
+2D
+------- E
+Ec
+–
+
+210 3
+–
+kW
+km
+--------
+=
+dRl
+dXl
+dBc
+dG
+dL
+Rl
+rll ;
+=
+Xl
+xll ;
+=
+Bc
+bcl ;
+=
+G
+gl
+=
+
+[PAG 876]
+X-26
+  IMPIANTI ELETTRICI 
+3.7  Linee con parametri trasversali trascurabili (circuito R-L)
+La corrente totale derivata da una fase per effetto della conduttanza G e della suscet-
+tanza capacitiva Bc che, in parallelo fra loro, formano l'ammettenza trasversale Y = yl sot-
+toposta alla tensione di fase E, è data da:
+(X.3.17)
+La relazione X.3.17 mostra che la corrente derivata è trascurabile quando la lunghezza
+e la tensione di esercizio della linea non sono molto elevate; questo avviene per le cosid-
+dette linee corte, ossia linee aeree di lunghezza non superiore a 100 km e tensione fino a
+66 kV. Per queste linee l'effetto dei parametri trasversali può essere trascurato.
+Nel caso delle linee in cavo è senz'altro trascurabile la conduttanza g, mentre bisogna
+valutare l'effetto della suscettanza capacitiva bc, di valore superiore a quella delle linee
+aeree, a parità di altre caratteristiche. Per queste linee i parametri trasversali sono
+senz'altro trascurabili per tutte le linee in bassa tensione (con Un non superiore a 1000 V)
+e anche per quelle in media tensione (Un fino a 30 kV) di lunghezza non eccessiva,
+dell'ordine dei kilometri. Tutte le linee a parametri trasversali trascurabili possono essere
+rappresentate con un circuito di tipo R-L come quello di Fig. X.3.6 relativo a una linea
+monofase oppure a una fase di una linea trifase. I parametri Rl e Xl sono quelli totali, rife-
+riti all'intera lunghezza l della linea.
+Fig. X.3.6   Circuito equivalente R-L.
+Una linea di questo tipo è caratterizzata dalla costanza della corrente in tutta la sua
+lunghezza, mentre la tensione varia dal punto di alimentazione fino al carico. Le relazioni
+elettriche simboliche della rete sono:
+(X.3.18)
+Nel caso più frequente di alimentazione di un carico ohmico-induttivo con angolo di
+fase , il diagramma vettoriale indicativo della linea è rappresentato nella Fig. X.3.7.
+L'angolo  +  è quello d'ingresso della linea, ossia lo sfasamento tra la tensione e la cor-
+rente nel punto di partenza.
+Fig. X.3.7   Diagramma vettoriale di una linea R-L su carico ohmico-induttivo.
+Id
+ylE
+g2
+bc
+2
++
+l E
+=
+=
+Rl
+Xl
+I
+E1
+I
+E2
+U
+I1
+I2
+I
+=
+=
+E1
+E2
+RlI
+jXlI
++
++
+=
+E1
+E2
+I
+jXlI
+RlI
+O
+
+
+
+
+[PAG 877]
+IMPIANTI  ELETTRICI                                               X-27
+3.8  Rendimento e variazione di tensione per le linee R-L
+Rendimento di linea
+La potenza persa p in una linea con parametri trasversali trascurabili è dovuta solo
+alla resistenza di linea, interessata dalla corrente I circolante nei conduttori; il suo valore è
+dato da:
+(X.3.19)
+per una linea monofase, in cui Rl è la resistenza totale di entrambi i conduttori (fase e neu-
+tro, di lunghezza totale 2l), mentre per una linea trifase si ha:
+(X.3.20)
+in cui Rl è la resistenza di una fase, di lunghezza l.
+Indicando con P la potenza erogata al carico, la somma P + p rappresenta la potenza
+assorbita dalla linea e quindi il rendimento di linea è dato da:
+(X.3.21)
+La potenza persa in funzione del rendimento si calcola con la relazione:
+(X.3.22)
+La potenza persa percentuale, riferita alla potenza erogata, è data da:
+(X.3.23)
+In funzione del rendimento di linea tale potenza è pari a:
+(X.3.24)
+Esempio 4
+La potenza persa (assoluta e percentuale) e il rendimento di una linea trifase, avente
+una resistenza di fase Rl = 6,2 , che eroga la potenza P = 500 kW con corrente I = 32 A,
+sono dati da:
+Esempio 5
+La potenza persa percentuale di una linea elettrica funzionante con rendimento 0,95 è
+data da:
+p
+RlI2
+=
+p
+3RlI2
+=
+
+P
+P
+p
++
+------------------
+=
+p
+P 1
+
+–
+
+
+
+----------------------
+=
+p%
+100p
+P
+----------------
+=
+p%
+100 1
+
+–
+
+
+
+----------------------------
+=
+p
+3RlI2
+3
+6,2
+
+322
+
+19 kW
+=
+=
+=
+p%
+100p
+P
+----------------
+100
+19
+
+500
+----------------------
+3,8%
+=
+=
+=
+
+P
+P
+p
++
+------------------
+500
+500
+19
++
+----------------------
+0,963
+=
+=
+=
+
+[PAG 878]
+X-28
+  IMPIANTI ELETTRICI 
+Variazione di tensione
+Il legame tra le tensioni di fase nel punto iniziale e in quello terminale di una linea con
+parametri trasversali trascurabili è espresso in forma simbolica dalla seconda delle rela-
+zioni X.3.18.
+Se non si vuole operare con i numeri complessi è possibile riferirsi al diagramma vet-
+toriale di Fig. X.3.8, relativo all'alimentazione di un carico ohmico-induttivo, nel quale il
+tratto CL è un arco di cerchio di centro O.
+Fig. X.3.8   Diagramma vettoriale di una linea R-L su carico ohmico induttivo.
+Applicando il teorema di Pitagora al triangolo rettangolo OFC è possibile ricavare le
+relazioni seguenti:
+(X.3.25)
+(X.3.26)
+L'espressione X.3.25 può essere utilizzata in vari modi:
+–  conoscendo i parametri di linea, la tensione di arrivo, la corrente trasmessa e il
+f.d.p. del carico si determina la tensione di partenza di fase E1;
+–  conoscendo i parametri di linea, la tensione di partenza, la corrente trasmessa e il
+f.d.p. del carico si determina la tensione di arrivo di fase E2;
+–  conoscendo i parametri di linea, le due tensioni e il f.d.p. del carico si determina la
+corrente trasmessa I.
+La relazione X.3.26 consente invece di calcolare lo sfasamento tra la tensione e la cor-
+rente nel punto di partenza della linea.
+Caduta di tensione industriale
+Nei calcoli pratici è possibile determinare la differenza di tensione tra la partenza e
+l'arrivo della linea con una formula approssimata, che si ottiene trascurando il tratto GL
+nel diagramma di Fig. X.3.8.
+Indicando con E  E1  E2 la differenza tra i valori efficaci delle tensioni di fase, pari
+alla lunghezza del segmento AL, e tenendo presente che le lunghezze dei segmenti AH e
+p%
+100 1
+
+–
+
+
+
+----------------------------
+100 1
+0,95
+–
+
+
+0,95
+-----------------------------------
+5,26%
+=
+=
+=
+E1
+E2
+I
+jXlI
+RlI
+O
+
+
+
+
+D
+F
+B
+C
+A
+E
+G L
+H
+
+E1
+2
+E2cos
+RlI
++
+
+2
+E2sen
+XlI
++
+
+2
++
+=
+tg
+E2sen
+XlI
++
+E2cos
+RlI
++
+----------------------------------
+=
+
+[PAG 879]
+IMPIANTI  ELETTRICI                                               X-29
+HG sono pari, rispettivamente, a (Ri I cos) e a (Xi I sen), si ottiene la formula della
+caduta di tensione industriale di fase, espressa sia in funzione dei parametri totali di linea
+che di quelli unitari:
+(X.3.27)
+Nel caso delle linee trifasi la caduta di tensione industriale concatenata è data da:
+(X.3.28)
+La caduta di tensione percentuale, riferita alla tensione di arrivo U2 è pari a:
+(X.3.29)
+Esempio 6
+La caduta di tensione concatenata, in valore assoluto e percentuale, che si verifica su
+una linea avente parametri unitari xl = 0,14 /km e rl = 1,2 /km, lunga 200 m, che tra-
+smette la corrente I = 40 A con tensione U2 = 400 V a un carico con fattore di potenza
+cos = 0,8 (sen = 0,6), è data da:
+3.9  Linee a parametri trasversali non trascurabili, schema a T e a 
+Per studiare le linee con parametri trasversali non trascurabili bisogna considerare
+un'ammettenza ohmico-capacitiva in derivazione per ogni fase; si possono usare diversi
+circuiti equivalenti, a seconda di come vengono collegati i parametri di linea. Gli schemi
+più frequentemente utilizzati sono quelli a T e a . Per linee di lunghezza superiore a
+300 km si ottiene una migliore approssimazione con circuiti equivalenti composti da più
+moduli in cascata del tipo a T o a .
+Schema a T
+I parametri longitudinali sono divisi in due gruppi, mentre quelli trasversali vengono
+raggruppati al centro, come se fossero derivati nella mezzeria della linea (Fig. X.3.9, rela-
+tiva a una fase di una linea trifase).
+Fig. X.3.9   Circuito equivalente a T.
+E
+I Rlcos
+Xlsen
++
+
+
+lI rlcos
+xlsen
++
+
+
+=
+=
+U
+3E
+3lI rlcos
+xlsen
++
+
+
+=
+=
+U%
+100U
+U2
+-----------------
+100
+3lI rlcos
+xlsen
++
+
+
+U2
+--------------------------------------------------------------------
+=
+=
+U
+3E
+3
+0,2
+40 1,2
+0,8
+
+0,14
+0,6
+
++
+
+
+
+
+14,5 V
+=
+=
+=
+U%
+100U
+U2
+-----------------
+100
+14,5
+
+400
+--------------------------
+3,63 %
+=
+=
+=
+E1
+E2
+Rl2
+E3
+Bc
+G
+U
+Id
+Xl2
+Rl2
+Xl2
+I1
+I2
+
+[PAG 880]
+X-30
+  IMPIANTI ELETTRICI 
+Supponendo di conoscere la tensione e la corrente nel punto di arrivo della linea, le
+equazioni simboliche per il calcolo dei valori complessi della corrente e della tensione nel
+punto di partenza sono le seguenti, da utilizzare nella sequenza in cui sono scritte:
+(X.3.30)
+(X.3.31)
+(X.3.32)
+(X.3.33)
+La potenza attiva persa nella linea, relativa alle tre fasi, è data da:
+(X.3.34)
+Conoscendo la potenza erogata è possibile poi calcolare la potenza assorbita dalla
+linea e il suo rendimento.
+Schema a 
+È lo schema duale del precedente: i parametri longitudinali sono raggruppati al centro
+del circuito, mentre quelli trasversali sono divisi in due gruppi derivati alle estremità (Fig.
+X.3.10, relativa a una fase di una linea trifase).
+Fig. X.3.10   Circuito equivalente a .
+Supponendo di conoscere la tensione e la corrente nel punto di arrivo della linea, le
+equazioni simboliche per il calcolo dei valori complessi della corrente e della tensione nel
+punto di partenza sono le seguenti, da utilizzare nella sequenza in cui sono scritte:
+(X.3.35)
+(X.3.36)
+E3
+E2
+Rl
+2---- I2
+j
+Xl
+2---- I2
++
++
+=
+Id
+G
+jBc
++
+
+E3
+=
+I1
+I2
+Id
++
+=
+E1
+E3
+Rl
+2---- I1
+j
+Xl
+2---- I1
++
++
+=
+p
+3
+Rl
+2---- I1
+2
+3 G E3
+2
+3
+Rl
+2---- I2
+2
++
++
+=
+E1
+E2
+Rl
+Bc2
+G2
+U
+Id2
+Xl
+Bc2
+G2
+I1
+I2
+Id1
+I3
+Id2
+G
+2---
+j
+Bc
+2-----
++
+
+
+
+E2
+=
+I3
+I2
+Id2
++
+=
+
+[PAG 881]
+IMPIANTI  ELETTRICI                                               X-31
+(X.3.37)
+(X.3.38)
+(X.3.39)
+La potenza attiva persa nella linea, relativa alle tre fasi, è data da:
+(X.3.40)
+Conoscendo la potenza erogata è possibile poi calcolare la potenza assorbita dalla
+linea e il suo rendimento.
+4  CONDUTTURE ELETTRICHE
+4.1  Conduttori per linee aeree
+I conduttori hanno il compito di consentire il passaggio della corrente elettrica lungo
+la linea, contenendo entro opportuni limiti i valori della perdita di potenza e della caduta
+di tensione; per tale ragione devono avere un basso valore della resistività elettrica. Poi-
+ché la resistenza elettrica per unità di lunghezza è proporzionale al rapporto /S, quanto
+minore è la resistività tanto più si riduce la sezione, a parità di resistenza elettrica.
+Anche il peso specifico è importante: conduttori come quelli di alluminio e di lega di
+alluminio, aventi basso valore del peso specifico, consentono di ridurre il peso totale della
+conduttura, con conseguenti vantaggi economici sul costo dei conduttori e dei sostegni.
+I conduttori per linee aeree sono soggetti a sforzi meccanici, dovuti alla forza di tesa-
+tura fra i sostegni, al peso proprio e ai sovraccarichi per vento e ghiaccio. Per questa
+ragione devono avere un adeguato valore del carico di rottura a trazione. La forza che pro-
+voca la rottura del filo di sezione unitaria (1 mm2) è detta carico di rottura unitario
+(espresso in N/mm2), mentre quella che provoca la rottura del filo o della corda aventi una
+determinata sezione è il carico di rottura totale, misurato in newton (N).
+I conduttori per linee aeree sono soggetti alle norme CEI seguenti:
+–  norma CEI 7-1, terza edizione 1997, relativa ai conduttori di rame e di leghe di
+rame per linee elettriche aeree;
+–  norma CEI 7-2, quarta edizione 1997, relativa ai conduttori di alluminio, alluminio-
+acciaio, lega di alluminio e lega di alluminio-acciaio per linee elettriche aeree.
+I materiali considerati nelle norme suddette sono:
+–  rame crudo normale, con carico di rottura alla trazione dei fili non inferiore a
+37,2 daN/mm2 (372 N/mm2);
+–  rame ricotto normale, con carico di rottura alla trazione dei fili non inferiore a
+21,6 daN/mm2;
+–  lega di rame e cadmio, con percentuale di cadmio compresa tra 0,3% e 1,3% (rame
+al cadmio), del tipo 50 e 60, dove i numeri precedenti indicano il carico di rottura in
+kgf/mm2, unità di misura utilizzata in passato nel Sistema tecnico;
+–  alluminio di prima fusione per conduttori elettrici, di purezza non inferiore al
+99,50%, di tipo crudo o ricotto;
+E1
+E2
+Rl I3
+j Xl I3
++
++
+=
+Id1
+G
+2---
+j
+Bc
+2-----
++
+
+
+
+E1
+=
+I1
+I3
+Id1
++
+=
+p
+3 G
+2--- E1
+2
+3 Rl I3
+2
+3 G
+2--- E2
+2
++
++
+=
+
+[PAG 882]
+X-32
+  IMPIANTI ELETTRICI 
+–  lega ternaria Al-Si-Mg, con lo 0,5% di silicio e lo 0,5% di magnesio, indicata anche
+come aldrey;
+–  acciaio legato con tenore di carbonio da 0,40% a 0,85%, di manganese da 0,40% a
+1%, di silicio da 0,10% a 0,35% e con impurità di zolfo e fosforo non oltre lo 0,035%.
+Il rame da utilizzare deve essere del tipo Cu-ETP, soggetto alla norma UNI 5649-1-
+1988, ottenuto dalla rifusione di rame elettrolitico Cu-CATH, con purezza non inferiore a
+99,90%. Anche l'alluminio deve essere ottenuto per raffinazione elettrolitica, di tipo ALP
+E 99,5 UNI 3950, con tenore di alluminio 99,50%.
+L'elevata purezza richiesta ai conduttori dipende dal fatto che la presenza di impurità,
+anche in piccolissime percentuali, fa diminuire notevolmente la loro conducibilità elettrica.
+L'uso delle leghe di rame e di alluminio serve per potenziare alcune particolari caratte-
+ristiche dei conduttori. I fili in rame-cadmio hanno, rispetto a quelli in rame, una mag-
+giore resistenza a trazione e una notevole resistenza all'usura per abrasione e per effetto di
+scariche elettriche, per cui sono indicati nella costruzione dei conduttori per le linee di
+contatto tranviarie e ferroviarie. Anche i conduttori in lega di alluminio hanno maggiore
+resistenza meccanica di quelli in alluminio e sono usati per costruire corde, sia da soli che
+rinforzati da fili di acciaio. L'aggiunta di elementi leganti fa diminuire, sia per il rame che
+per l'alluminio, la conducibilità elettrica.
+I fili di acciaio vengono utilizzati per la costruzione delle corde bimetalliche in allu-
+minio-acciaio (conduttori ACSR: Alluminium Conductor Steel Reinforced) utilizzati per
+le linee in alta tensione e costituiti da un'anima in fili di acciaio zincato, avente il compito
+di resistere alle sollecitazioni meccaniche, attorno alla quale vengono avvolti più strati di
+fili di alluminio (mantello) che servono per la conduzione della corrente. In questo modo
+si ottiene il duplice vantaggio di avere corde con elevata resistenza meccanica e basso
+peso per unità di lunghezza, minore di quello di una corda in fili di rame avente la stessa
+resistenza elettrica.
+Tab. X.4.1   Caratteristiche dei materiali conduttori
+Materiali
+Densità a
+20 °C
+[kg/dm3]
+Resistività a
+20 °C
+[ mm2/m]
+Coefficiente di 
+variazione 
+della resistività
+[°C1]
+Carico unitario 
+minimo di rottura 
+del filo
+[daN/mm2]
+Rame crudo
+8,89
+0,017860
+0,00393
+37,2 43,2
+Rame ricotto
+8,89
+0,017543
+0,00393
+21,6
+Lega di 
+rame
+Tipo 
+50
+8,89
+0,019157
+0,00350
+48,0 51,0
+Tipo 
+60
+8,89
+0,021551
+0,00350
+52,9 61,8
+Alluminio crudo
+2,703
+0,028264
+0,00403
+15,8 19,3
+Alluminio ricotto
+2,703
+0,02780
+0,00403
+6 10
+Lega di alluminio
+2,70
+0,03250
+0,00360
+30
+Acciaio 
+zincato
+Tipo 135
+7,80
+/
+/
+132,3
+Tipo 170
+7,80
+/
+/
+161,8 166,6
+
+[PAG 883]
+IMPIANTI  ELETTRICI                                               X-33
+Le caratteristiche fisiche dei materiali considerati sono riportati nella Tab. X.4.1. Per
+il carico unitario minimo di rottura del filo sono stati riportati, in alcuni casi, gli intervalli
+di variazione in funzione del diametro del filo: i valori maggiori si riferiscono ai fili di
+minore diametro.
+Conduttori a filo unico e a corda
+I conduttori a filo unico sono poco usati, essendo preferibile costituire delle corde for-
+mate da più fili elementari avvolti a elica, con un determinato passo. Le corde sono carat-
+terizzate dai seguenti elementi:
+–  diametro teorico di un filo: è il diametro espresso in millimetri al quale sono riferite
+le prescrizioni normative e rispetto al quale sono ammesse delle precisate tolleranze:
+–  sezione teorica di un filo: è la sezione corrispondente al diametro teorico, espressa
+in millimetri quadrati;
+–  composizione della corda: è detta anche formazione ed è definita dal numero e dal
+diametro teorico dei fili che costituiscono la corda; 
+–  sezione teorica di una corda: è la somma delle sezioni rette teoriche dei fili che
+compongono la corda;
+–  sezione nominale della corda: è il valore di riferimento della sezione, ottenuto arro-
+tondando il valore di quella teorica;
+–  carico di rottura a trazione: per una corda rappresenta il carico di rottura totale,
+calcolato come somma dei carichi minimi di rottura dei fili componenti e moltiplicando il
+risultato per un fattore di riduzione da 0,90 a 0,96, secondo le modalità specificate dalle
+relative norme CEI;
+–  resistenza elettrica: la resistenza elettrica teorica di una corda, riferita alla lun-
+ghezza unitaria (1 km o 1 m) si valuta in base alla resistività ammessa per i fili compo-
+nenti, alla sezione teorica e maggiorando la lunghezza di una piccola percentuale, per
+tener conto del suo aumento dovuto alla spiralatura, secondo quanto previsto dalle norme
+CEI 7-1 e 7-2; per le corde di rame la maggiorazione va dal 2 al 3,5%. Per le corde con
+l'anima in fili di acciaio non si considera il contributo alla conduzione dovuto all'acciaio.
+Corde di rame crudo
+Sono formate da fili di rame crudo avvolti a spirale e vengono usate come conduttori
+per linee aeree in bassa e media tensione, anche se la tendenza attuale è quella di costitui-
+re queste linee con cavi elettrici. L'uso del rame crudo è giustificato dalla sua maggiore
+resistenza meccanica e dal minore allungamento a trazione rispetto a quello ricotto.
+Tab. X.4.2   Caratteristiche tecniche dei conduttori a corda di rame crudo per linee elettri-
+che aeree (CEI-UNEL 01437)
+Grandezza
+Formazione
+(numero fili  
+diametro)
+[n°  mm]
+Sezione 
+teorica
+[mm2]
+Diametro 
+della corda
+[mm]
+Massa 
+teorica
+[kg/km]
+Carico di 
+rottura
+[daN]
+Resistenza 
+elettrica teo-
+rica a 20 °C
+[/km]
+16/7
+7  1,70
+15,69
+5,1
+144,1
+664
+1,140
+25/7
+7  2,14
+25,18
+6,42
+228,3
+1028
+0,7199
+35/7
+7  2,52
+34,91
+7,56
+316,6
+1426
+0,5192
+50/7
+7  3,00
+49,48
+9
+448,7
+2021
+0,3663
+70/19
+19  2,14
+68,34
+10,7
+625,8
+2733
+0,2678
+95/19
+19  2,52
+94,76
+12,6
+867,7
+3790
+0,1831
+120/19
+19  2,80
+117,0
+14
+1071
+4679
+0,1564
+150/37
+37  2,30
+153,7
+16,1
+1415
+5949
+0,1196
+
+[PAG 884]
+X-34
+  IMPIANTI ELETTRICI 
+I conduttori così formati hanno una buona conducibilità elettrica e una discreta resi-
+stenza a trazione, ma presentano un peso e un costo elevati.
+Nella Tab. X.4.2, tratta dalla norma CEI-UNEL 01437, sono riportate le loro caratteri-
+stiche tecniche.
+Corde di alluminio crudo e di lega di alluminio
+Rispetto alle corde di rame presentano un peso unitario minore a parità di resistenza
+elettrica, a causa del minor valore del peso specifico, pur avendo una sezione maggiore.
+Vengono utilizzate per linee aeree di bassa e media tensione. Le corde formate con fili di
+lega di alluminio, più usate, hanno un carico di rottura maggiore di quelle di alluminio.
+Tab. X.4.3   Caratteristiche tecniche dei conduttori a corda di alluminio crudo per linee
+elettriche aeree (CEI-UNEL 01435)
+Grandezza
+Formazione
+(numero fili 
+ diametro)
+[n°  mm]
+Sezione 
+teorica
+[mm2]
+Diametro 
+della corda
+[mm]
+Massa 
+teorica
+[kg/km]
+Carico di 
+rottura
+[daN]
+Resistenza 
+elettrica teo-
+rica a 20 °C
+[/km]
+25/7
+7  2,14
+25,18
+6,42
+68
+431
+1,137
+35/7
+7  2,50
+34,36
+7,5
+94,1
+575
+0,8332
+50/7
+7  3,00
+49,48
+9
+135,5
+790
+0,5786
+70/19
+19  2,14
+68,34
+10,7
+188
+1169
+0,4210
+95/19
+19  2,50
+93,27
+12,5
+256,6
+1559
+0,3085
+120/19
+19  2,90
+125,5
+14,5
+345,3
+2003
+0,2292
+240/37
+37  2,90
+244,4
+20,3
+673,8
+3900
+0,1180
+500/61
+61  3,20
+490,6
+28,8
+1355
+7285
+0,0569
+800/61
+61  4,00
+766,5
+36
+2118
+10 970
+0,0377
+Tab. X.4.4   Caratteristiche tecniche dei conduttori a corda di lega di alluminio per linee
+elettriche aeree (CEI-UNEL 01436)
+Grandezza
+Formazione
+(numero fili  
+diametro)
+[n°  mm]
+Sezione 
+teorica
+[mm2]
+Diametro 
+della corda
+[mm]
+Massa
+teorica
+[kg/km]
+Carico di 
+rottura
+[daN]
+Resistenza elet-
+trica teorica a 20 
+°C
+[/km]
+35/7
+7  2,52
+34,91
+7,56
+95,6
+995
+0,9429
+50/7
+7  3,00
+49,48
+9
+135,5
+1410
+0,6653
+70/19
+19  2,14
+68,34
+10,7
+188,0
+1948
+0,4840
+95/19
+19  2,52
+94,76
+12,6
+260,7
+2701
+0,3491
+120/19
+19  2,90
+125,5
+14,5
+345,3
+3577
+0,2636
+150/37
+37  2,25
+147,1
+15,75
+405,6
+4193
+0,2253
+185/37
+37  2,52
+184,5
+17,64
+508,8
+5259
+0,1797
+240/37
+37  2,90
+244,4
+20,3
+673,8
+6965
+0,1357
+300/61
+61  2,52
+304,2
+22,68
+840,6
+8671
+0,1092
+400/61
+61  2,90
+402,9
+26,1
+1113
+11 480
+0,08247
