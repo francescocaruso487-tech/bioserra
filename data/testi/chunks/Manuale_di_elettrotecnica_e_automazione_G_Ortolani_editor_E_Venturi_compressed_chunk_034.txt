@@ -1,0 +1,1451 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 34/116 ===
+Chars: 44,415 | Offset: 1,456,393
+
+
+
+[PAG 749]
+MACCHINE ELETTRICHE
+VIII-67
+Stabilito il principio di funzionamento, per migliorare la forma della fem ottenuta, 
+tendendo a renderla costante, si passa alla disposizione costruttiva di Fig. VIII.6.3, detta 
+ad anello di Pacinotti.
+Su un nucleo avente una sezione a corona circolare, costituito in materiale ferroma-
+gnetico, si avvolge il conduttore a circuito chiuso, cioè senza terminali esterni.
+Dall’avvolgimento partono le derivazioni che sono collegate alle lamelle del collet-
+tore; per l’esempio dato si tratta di 8 conduttori periferici collegati ad altrettante lamelle 
+del collettore. 
+Fig. VIII.6.3  Struttura di una dinamo con rotore ad anello.
+Al ruotare della macchina, nei conduttori si verifica l’insorgenza di fem indotte, orien-
+tate nel circuito interno in due gruppi in opposizione fra loro. Rispetto alle spazzole, poste 
+ad agire sull’asse interpolare, cioè nei punti di inversione delle fem, la macchina si pre-
+senta come la connessione di due gruppi di generatori in parallelo (Fig. VIII.6.4).
+Durante il movimento la situazione si ripete ogni ottavo di giro per l’avvicendamento 
+dei conduttori, per cui la fem colta alle spazzole, in posizione fissa rispetto allo statore, 
+rimane costante. Il rotore ad anello si presenta di costruzione onerosa e non economica. 
+Per migliorare l’efficienza della macchina si realizza il rotore a tamburo, cioè con l’avvol-
+gimento di-sposto in cave distribuite sull’intera superficie cilindrica esterna. In questo 
+caso l’asse delle spazzole coincide con l’asse polare.
+6.2  Funzionamento a vuoto
+6.2.1  Forza elettromotrice indotta
+Mettendo in rotazione la macchina mediante un motore primo, alla velocità di 
+n giri/1’, ogni conduttore taglia l’intero flusso in mezzo giro, pari ad un tempo 
+t = 60/(2 n). La fem media indotta Em = /t risulta:
+(VIII.6.1)
+Indicato con N il numero totale dei conduttori attivi, la fem totale è la somma di quelle 
+indotte in metà dei conduttori e quindi per una macchina bipolare è:
+Fig. VIII.6.4  Schema del circuito interno 
+di una dinamo bipolare.
+N
+S
+
++
+
++
+
++
++
++
++
++
++
++
++
+Em
+2n
+60
+
+=
+
+[PAG 750]
+VIII-68
+MACCHINE ELETTRICHE
+(VIII.6.2)
+Il diagramma vettoriale poligonale della fem indotta (Fig. VIII.6.5) mette in risalto 
+che, fra una commutazione e la successiva, la fem totale oscilla fra un valore massimo e 
+un valore minimo corrispondenti rispettivamente al diametro del cerchio circoscritto e 
+inscritto.
+Ne risulta una pulsazione della fem generata, che in valore relativo è: Er = 1  Emin/Emax.
+Indicando con z il numero di lamelle, cioè il numero di commutazioni in un giro, il 
+residuo di alternata ha valore relativo e frequenza rispettivamente:
+(VIII.6.3)
+Macchina multipolare.
+In generale le macchine possono avere più di due poli e l’avvolgimento può essere 
+multiplato e comprendere corrispondentemente più sezioni uguali, come altrettante mac-
+chine bipolari. In relazione al tipo di connessione delle sezioni, l’avvolgimento può essere 
+sviluppato in serie oppure in parallelo. Per tener conto di queste possibilità, indicando 
+con p le coppie di poli e con a le coppie di vie interne, la formula generale della fem gene-
+rata da una dinamo è:
+(VIII.6.4)
+In particolare:
+–  per macchina bipolare è p = 1, a = 1 e la VIII.6.4 si identifica con la VIII.6.2;
+–  per una macchina a 4 poli è p = 2 e, con avvolgimento serie: a = 1, p/a = 2; con avvol-
+gimento parallelo: a = 2, p/a = 1.
+La caratteristica di eccitazione.
+Corrisponde alla funzione E = f(Iecc) e ripete sostanzialmente la caratteristica di 
+magnetizzazione di un circuito magnetico (Fig. VIII.6.6).
+Va osservato che, poiché sopravvive un certo magnetismo residuo, la caratteristica 
+non ha inizio esattamente all’origine delle coordinate. Ciò è di estrema importanza perché 
+Fig. VIII.6.5  Diagramma vettoriale della 
+fem indotta in una dinamo.
+Fig. VIII.6.6  Caratteristica di eccitazione di 
+una dinamo.
+Em
+nN
+60
+
+=
+Emax
+Emin
+Er
+1
+cos 
+z
+
+
+,
+–
+=
+fr
+nz
+60
+
+=
+E
+p
+a-- nN
+60
+------------
+=
+U
+P
+E=U0
+Iecc
+Iecc
+
+[PAG 751]
+MACCHINE ELETTRICHE
+VIII-69
+consente alla macchina di autoeccitarsi sviluppando un funzionamento completamente 
+autonomo.
+6.2.2  Potenza a vuoto
+In funzionamento a vuoto la macchina è sede di:
+–  perdite meccaniche (Pm) per attrito e ventilazione;
+–  perdite nel ferro di rotore (Pf) per isteresi e correnti parassite, funzioni della velocità e 
+quindi relative ad una frequenza f = p n/60;
+–  perdite di eccitazione: Pecc = Recc Iecc
+2; per le macchine autoeccitate queste perdite 
+sono fornite dal motore primo.
+6.3  Funzionamento a carico
+Chiudendo la dinamo su un carico esterno, verrà erogata una corrente ed una potenza 
+elettrica, con riflessi sul funzionamento di carattere elettrico, magnetico e meccanico.
+6.3.1  Circuito elettrico
+La dinamo presenta una resistenza interna Ri risultante dal parallelo delle resistenze 
+delle varie vie interne e comprensiva della resistenza offerta dal gruppo di commutazione. 
+L’equazione di funzionamento è (Fig. VIII.6.7):
+(VIII.6.5)
+    
+Fig. VIII.6.7  a) Schema di una dinamo ad eccitazione indipendente; b) circuito elettrico.
+La presenza della resistenza interna produce perdite nel rame:
+(VIII.6.6)
+Per macchine di potenza rilevante e per un calcolo più preciso, le perdite a carico ven-
+gono suddivise in una parte spettante al solo avvolgimento di resistenza Ri cui vanno 
+aggiunte le perdite del gruppo di commutazione, valutate convenzionalmente dalla for-
+mula:
+(VIII.6.7)
+con: Usp = 2 V per spazzole in grafite, 0,6 V per spazzole con componenti metallici.
+6.3.2  Reazione di armatura
+La corrente di carico produce un campo magnetico rotorico avente asse normale al 
+campo induttore (Fig. VIII.6.8).
+Come effetto meccanico i poli rotorici esercitano un’azione frenante e, per mantenere 
+costante la velocità, occorre aumentare la coppia di trascinamento prodotta dal motore 
+primo fino a ripristinare l’equilibrio dinamico.
+U
+E
+RiI
+–
+=
+A
+Iecc
+I
+U
+G
++
+
+a)
+I
+U
+E
+Ri
++
++
+b)
+Pcu
+RiI2
+=
+Psp
+UspI
+=
+
+[PAG 752]
+VIII-70
+MACCHINE ELETTRICHE
+Fig. VIII.6.8  Poli rotorici di una dinamo bipolare.
+Ma il flusso di indotto sviluppa anche un’azione magnetica che altera il flusso indut-
+tore e, componendosi con esso produce un effetto torcente, spostando l’asse neutro di 
+inversione (Fig. VIII.6.9).
+Questo fatto produce due conseguenze negative.
+Anzitutto, per effetto della saturazione, alla torsione del flusso è associata anche una 
+sua diminuzione che riduce la fem. Per ripristinare la tensione occorre allora aumentare la 
+corrente di eccitazione, cui corrisponde, a vuoto una fem E0 > E.
+Inoltre lo spostamento dell’asse neutro per effetto della corrente di carico comporta 
+che la commutazione, rimasta inalterata sull’asse interpolare, avviene su conduttori 
+ancora sede di fem indotta, con scintillio alle spazzole pericoloso e intollerabile.
+  
+    
+    
+Fig. VIII.6.9  Reazione di armatura di una dinamo ed effetto torcente: a) campo indut-
+tore; b) campo indotto; c) campo totale.
+I provvedimenti per neutralizzare questi effetti e rendere la commutazione priva di 
+scintillio possono essere diversi.
+Per macchine di piccola potenza si sposta l’asse di commutazione fino a farlo coinci-
+dere con l’asse neutro (Fig. VIII.6.10).
+Fig. VIII.6.10  Dinamo a carico ad asse di commutazione spostato.
+Ciò comporta tuttavia una diminuzione della fem prodotta ed inoltre si può fare sol-
+tanto per carico costante.
+N
+S
+S
+N
+
+
+N
+S
+n
+a)
+N
+S
+b)
+c)
+N
+S
+n
+
+
+[PAG 753]
+MACCHINE ELETTRICHE
+VIII-71
+Fig. VIII.6.11  Dinamo con poli ausiliari.
+Per macchine di media potenza si interviene a mezzo di poli ausiliari o di commuta-
+zione, interposti fra i poli principali ed eccitati dalla stessa corrente di carico (Fig. 
+VIII.6.11). La loro azione neutralizza, nel punto di commutazione, l’effetto dei poli di 
+rotore e la fem di autoinduzione.
+Per macchine di potenza elevata, accanto ai poli ausiliari si predispongono gli avvolgi-
+menti compensatori, collocati ad agire fra due espansioni polari contigue (Fig. VIII.6.12).
+Inseriti in circuito in serie ai poli ausiliari ed agendo in analogia a questi, esercitano la 
+loro azione su tutto il passo polare tendendo a compensare l’intera azione torcente.
+Fig. VIII.6.12  Dinamo con poli ausiliari ed avvolgimenti compensatori.
+Va considerato che la presenza di questi elementi comporta un aumento della resi-
+stenza interna della macchina.
+6.4  Caratteristiche di funzionamento
+6.4.1   Potenze e rendimento
+La dinamo, tenuta in rotazione da un motore primo alla velocità n, è sollecitata da una 
+coppia di trascinamento C e assorbe una potenza:
+(VIII.6.8)
+Le perdite che la macchina subisce inizialmente sono:
+–  meccaniche (Pm) per attrito e ventilazione;
+–  nel ferro di rotore (Pf) per isteresi e correnti parassite.
+Detratte queste perdite dalla potenza di ingresso, la potenza meccanica (Pt) che flui-
+sce:
+(VIII.6.9)
+viene convertita in una potenza elettrica generata:
+(VIII.6.10)
+S
+n
+S
+N
+N
+S
+N
+
++
+N
+S
+S
+n
+Pa
+C
+=
+Pt
+C0
+=
+PG
+EI
+=
+
+[PAG 754]
+VIII-72
+MACCHINE ELETTRICHE
+Il circuito elettrico dissipa le perdite nel rame Pcu = RiI2 e la potenza erogata dalla 
+macchina risulta:
+(VIII.6.11)
+ Il rendimento è:
+(VIII.6.12)
+Si osserva che le perdite di eccitazione sono parte del rendimento complessivo in ter-
+mini economici, ma la potenza corrispondente, in questa macchina ad eccitazione indipen-
+dente, non è fornita dal motore primo.
+In Tab. VIII.6.1 sono indicati i rendimenti medi delle macchine a corrente continua in 
+funzione della potenza nominale.
+Si definisce rendimento elettrico (e) quello riferito al solo circuito ed è il rapporto fra 
+la potenza resa e quella generata: 
+(VIII.6.13)
+Per la macchina ad eccitazione indipendente è: e= U/E.
+6.4.2  Caratteristica esterna
+La caratteristica esterna U = f(I) è tracciata in Fig. VIII.6.13. Si nota una diminuzione 
+della tensione col carico, sia per effetto della reazione di indotto, per cui E < E0, sia per la 
+caduta di tensione dovuta alla resistenza interna.
+Fig. VIII.6.13  Caratteristica esterna di una dinamo ad eccitazione indipendente.
+6.5  Elementi costruttivi delle macchine a corrente continua
+6.5.1  Statore
+È formato da una carcassa che è struttura portante ed elemento del circuito magnetico. 
+Ad essa sono applicati saldamente i poli principali e i poli ausiliari (Fig. VIII.6.14).
+I poli principali sono costituiti da un corpo ed un’espansione polare che abbraccia un 
+Tab. VIII.6.1   Rendimenti medi delle dinamo
+P (kW)
+0,5
+1
+5
+10
+50
+100
+500
+(%) 
+66
+70
+82
+84
+90
+91
+93
+Pr
+UI
+=
+
+UI
+UI
+Pf
+Pm
+Pcu
+Pecc
+Pad
++
++
++
++
++
+-------------------------------------------------------------------------------------------
+=
+e
+Pr
+PG
+
+=
+U
+U0
+U
+U
+P
+I
+
+[PAG 755]
+MACCHINE ELETTRICHE
+VIII-73
+arco della macchina distribuendo il flusso. Il corpo del polo, in materiale magnetico, 
+sostiene gli avvolgimenti di eccitazione. I poli ausiliari interposti sono magnetizzati da un 
+avvolgimento connesso in serie al circuito di macchina che, per la sua funzione, è formato 
+da poche spire a sezione elevata.
+Fig. VIII.6.14  Struttura statorica della macchina a corrente continua.
+Anche gli avvolgimenti compensatori sono eccitati in modo analogo e sono allocati in 
+apposite cave praticate sulle espansioni polari in modo da agire concordemente ai poli 
+ausiliari.
+6.5.2  Rotore
+Il rotore, a struttura cilindrica, è formato da lamierini impaccati ed è sostenuto 
+dall’albero motore. Il pacco lamiere reca sulla superficie esterna le cave, di solito di tipo 
+aperto, per l’alloggiamento dei conduttori attivi. L’albero sostiene anche il collettore 
+mentre le spazzole sono solidali alla carcassa.
+  
+Fig. VIII.6.15.  Schema del collettore.
+Il collettore è formato da lamelle in rame, isolate fra loro, profilate a coda di rondine e 
+tenute in sito da anelli di contenimento. Il collegamento fra le lamelle e l’avvolgimento 
+viene assicurato da elementi detti forcelle (Fig. VIII.6.15).
+Le spazzole, in grafite o composte con elementi metallici, sono inserite in guide porta-
+spazzole e tenute a contatto sul collettore mediante molle tarate.
+Fig. VIII.6.16  Avvolgimenti di una macchina a corrente continua a 4 poli: a) a spirale; 
+b) ondulato.
+A
+B
+C
+D
+
++
+a)
+A
+B
+C
+D
+
++
+b)
+
+[PAG 756]
+VIII-74
+MACCHINE ELETTRICHE
+Gli avvolgimenti della macchina possono essere a spirale oppure ondulati (Fig. 
+VIII.6.16). Per la sua conformazione tipica, l’avvolgimento ondulato si impiega quando i 
+conduttori sono sbarre di rame, cioè per macchine ad elevata intensità di corrente.
+6.6  Dinamo ad eccitazione parallelo
+6.6.1  Funzionamento a vuoto
+La dinamo ad eccitazione parallelo presenta il circuito di eccitazione collegato in 
+parallelo al carico esterno, sfruttando per l’eccitazione la stessa tensione continua erogata 
+dalla macchina (Fig. VIII.6.17).
+Il meccanismo di eccitazione si innesca in virtù della presenza del magnetismo resi-
+duo che, al ruotare della macchina, produce una piccola fem e quindi una corrente di ecci-
+tazione che tende a rafforzare il flusso (Fig. VIII.6.18).
+Il fenomeno prosegue sino a raggiungere un punto di stabilità, quando le due caratteri-
+stiche: a) U0  E = f(Iecc) e b) U0 = Recc Iecc coincidono.
+6.6.2  Funzionamento a carico
+La corrente di indotto (Ii) è la somma fra la corrente di eccitazione, Iecc = U/Recc e la 
+corrente erogata: I = U/RL:
+(VIII.6.14)
+La legge di funzionamento è:
+(VIII.6.15)
+Le potenze impegnate dal circuito elettrico sono,
+–  la potenza generata:
+(VIII.6.16)
+Fig. VIII.6.17  Dinamo ad eccitazione paral-
+lelo.
+Fig. VIII.6.18  Caratteristica di eccitazione 
+ed autoeccitazione della dinamo eccitata in 
+parallelo.
+Iecc
+I
+U
+Ii
+U0
+P
+a
+b
+Iecc
+Ii
+I
+Iecc
++
+=
+U
+E
+RiIi
+–
+=
+PG
+EIi
+=
+
+[PAG 757]
+MACCHINE ELETTRICHE
+VIII-75
+–  le perdite nel rame:
+(VIII.6.17)
+–  le perdite di eccitazione:
+(VIII.6.18)
+–  la potenza resa:
+(VIII.6.19)
+Il rendimento elettrico, riferito al solo circuito, è:
+(VIII.6.20)
+Il rendimento totale è dato dalla formula VIII.6.12.
+La caratteristica esterna della macchina (Fig. VIII.6.19), nel tratto di lavoro, è analoga 
+a quella della dinamo ad eccitazione indipendente, ma più cadente. Infatti alla reazione 
+d’armatura e alla caduta di tensione interna si somma l’effetto di una minor eccitazione 
+dovuta alla diminuzione della tensione.
+Fig. VIII.6.19  Caratteristica esterna di una dinamo ad eccitazione parallelo.
+In particolare questa macchina, posta in cortocircuito, si diseccita e la corrente di cor-
+tocircuito (Ik) è molto piccola, legata soltanto alla fem Ek prodotta dal flusso residuo:
+(VIII.6.21)
+Esempio 1.   Funzionamento di una dinamo ad eccitazione parallelo.
+Una dinamo ad eccitazione parallelo presenta una resistenza interna Ri = 1  e una 
+resistenza di eccitazione Recc = 200 .
+La dinamo funziona a tensione U = 250 V su un carico RL = 25  con perdite nel ferro 
+e meccaniche per complessivi 150 W. Si vuole calcolare la fem indotta ed il rendimento 
+elettrico e totale.
+Procedimento.
+–  Le correnti sono: I = U/RL = 250/25 = 10 A; Iecc = U/Recc = 250/200 = 1,25 A; 
+Ii = I + Iecc = 10 + 1,25 = 11,25 A.
+–  La fem indotta risulta: E = U + Ri Ii = 250 + 1  11,25 = 261 V.
+–  Le potenze impegnate sono: Pr = U I = 250 10 = 2500 W; PG = E Ii = 261 11,25 = 
+2936 W; Pad = 0,52500/100 = 12,5 W; Pa = PG + Pm + Pf + Pad = 2936 + 150 + 12,5 = 
+3098 W;
+Pcu
+RiIi
+2
+=
+Pecc
+ReccIecc
+2
+=
+Pr
+UI
+=
+
+Pr
+PG
+------
+UI
+EIi
+-------
+UI
+UI
+Pcu
+Pecc
++
++
+-------------------------------------------
+=
+=
+=
+U0
+U
+Ik
+Ik
+Ek
+Ri
+
+=
+
+[PAG 758]
+VIII-76
+MACCHINE ELETTRICHE
+–  I rendimenti risultano: e = Pr/PG = 2500/2936 = 0,851;  = Pr/Pa = 2500/3098 = 0,807.
+6.7  Dinamo ad eccitazione serie
+La dinamo ad eccitazione serie sfrutta, per la propria eccitazione, la corrente erogata 
+al carico e quindi l’avvolgimento di eccitazione è collegato in serie al circuito di indotto 
+(Fig. VIII.6.20). Poiché la corrente di carico è anche corrente di eccitazione, la macchina 
+non si eccita a vuoto.
+A circuito chiuso su un carico esterno RL, la macchina si autoeccita grazie al magneti-
+smo residuo e si porta a funzionare in un punto stabile, corrispondente all’intersezione fra 
+la caratteristica esterna U = f(I) e la caratteristica del carico U = RLI (Fig. VIII.6.21).
+Fig. VIII.6.21  Caratteristica di una dinamo ad eccitazione serie: a) U = RLI.
+Il circuito elettrico della macchina presenta una resistenza interna complessiva (Rt) 
+che è la somma di quelle di indotto e di eccitazione:
+(VIII.6.22)
+e funziona in base alla legge:
+(VIII.6.23)
+Le perdite del circuito elettrico sono:
+(VIII.6.24)
+e il rendimento elettrico risulta:
+(VIII.6.25)
+Data la estrema variabilità della tensione, questa macchina ha impiego molto limitato 
+e per casi del tutto particolari.
+Fig. VIII.6.20  Dinamo ad eccitazione serie.
+G
+U
+I
+RL
+U
+E0
+E
+U
+a
+I
+Rt
+Ri
+Recc
++
+=
+U
+E
+RtI
+–
+=
+Pcu
+Pecc
++
+RtI2
+=
+e
+U
+E
+
+=
+
+[PAG 759]
+MACCHINE ELETTRICHE
+VIII-77
+6.8  Dinamo ad eccitazione composta
+La dinamo ad eccitazione composta possiede due avvolgimenti di eccitazione, ad 
+azione concorde: un avvolgimento principale parallelo (Rp) ed uno secondario serie (Rs). 
+Essi danno luogo a due possibili schemi detti: a corta derivazione e a lunga derivazione, 
+con comportamenti pressoché analoghi (Fig. VIII.6.22).
+La caratteristica esterna è la risultante delle due caratteristiche parziali derivanti dai 
+due avvolgimenti di eccitazione (Fig. VIII.6.23). La componente serie, saliente, serve a 
+compensare, entro certi limiti, la componente parallelo, discendente.
+Ne risulta una caratteristica tendenzialmente orizzontale, quindi una macchina a ten-
+sione costante.
+In base al circuito elettrico, le grandezze interessanti sono,
+–  a corta derivazione:
+(VIII.6.26)
+(VIII.6.27)
+–  a lunga derivazione:
+(VIII.6.28)
+(VIII.6.29)
+7  MOTORE A CORRENTE CONTINUA
+7.1  Principio di funzionamento
+Per il principio di reversibilità, la stessa macchina a corrente continua che ha originato 
+la dinamo può funzionare come motore (Fig. VIII.7.1).
+Schematicamente, alimentato l’indotto da una sorgente esterna, la corrente si distribu-
+Fig. VIII.6.22  Dinamo ad eccitazione com-
+posta a corta derivazione.
+Fig. VIII.6.23  Caratteristiche esterne di una 
+dinamo ad eccitazione composta: p = paral-
+lelo, s = serie, c = composta.
+G
++
+
+c
+p
+s
+U
+I
+Ii
+I
+Ip,
++
+=
+Ip
+E
+RiIi
+–
+
+
+Rp,
+
+=
+U
+E
+RiIi
+–
+RsI,
+–
+=
+Pcu
+RiIi
+2,
+=
+Pecc
+RpIp
+2
+RsI2
++
+=
+Ii
+I
+Ip,
++
+=
+Ip
+U
+Rp,
+
+=
+U
+E
+Ri
+Rs
++
+
+I,
+–
+=
+Pcu
+RiIi
+2,
+=
+Pecc
+RpIp
+2
+RsIi
+2
++
+=
+
+[PAG 760]
+VIII-78
+MACCHINE ELETTRICHE
+isce nelle due vie interne dell’indotto producendo un campo magnetico rotorico che si svi-
+luppa su un asse trasverso rispetto al campo statorico, producendo una coppia motrice 
+(Fig. VIII.7.2).
+Fig. VIII.7.1  Motore a corrente continua ad eccitazione indipendente.
+La macchina si avvia ed accelera tendendo alla velocità di regime, mentre la situa-
+zione magnetica prospettata rimane inalterata per effetto della commutazione.
+Il motore a corrente continua presenta tutte le particolarità costruttive già esaminate a 
+proposito della dinamo, fra le quali citiamo la presenza dei poli ausiliari e degli avvolgi-
+menti compensatori.
+Fig. VIII.7.2  Coppia motrice in un motore a corrente continua.
+7.2  Funzionamento a vuoto
+Il motore, privo di carico meccanico, alimentato dalla tensione U, si avvia ed aumenta 
+progressivamente la propria velocità. Per effetto del movimento si produce una fem 
+indotta data da (si veda la VIII.6.4):
+(VIII.7.1)
+avendo raggruppato in KE tutte le costanti costruttive.
+Dalla legge di funzionamento degli utilizzatori:
+(VIII.7.2)
+deriva la corrente assorbita:
+(VIII.7.3)
+Supposto il motore ideale, privo di perdite e senza carico applicato, quando al crescere 
+della velocità diviene E = U, la corrente si annulla e con essa la coppia di trascinamento. 
+Ciò accade alla velocità:
+(VIII.7.4)
+In realtà il motore funzionerà ad una velocità un po' inferiore. La potenza assorbita a 
+M
+U
+I
++
+Iecc
++
+N
+N
+S
+S
+
++
+E
+KEn
+=
+U
+E
+RiI
++
+=
+I
+U
+E
+–
+
+
+Ri
+
+=
+n0
+U
+KE
+
+
+
+=
+
+[PAG 761]
+MACCHINE ELETTRICHE
+VIII-79
+vuoto è la somma delle perdite nel ferro e meccaniche. Per la macchina ad eccitazione 
+indipendente le perdite di eccitazione sono fornite da una sorgente esterna.
+7.3  Funzionamento a carico
+7.3.1  Potenze e rendimento
+Applicando un carico all’albero il motore rallenta riducendo la fem e richiedendo con 
+questo una maggior corrente in modo da assorbire una potenza in ingresso tale da bilan-
+ciare la potenza meccanica richiesta. A regime la potenza assorbita dalla rete è:
+(VIII.7.5)
+L’avvolgimento rotorico dissipa le perdite nel rame: Pcu = Ri I2 e quindi rimane dispo-
+nibile una potenza elettrica:
+(VIII.7.6)
+che si traduce in potenza meccanica:
+(VIII.7.7)
+avendo indicato con C0 la coppia motrice esercitata al traferro.
+La macchina subisce ancora le perdite nel ferro di rotore e le perdite meccaniche, 
+detraendo le quali si ottiene la potenza resa:
+(VIII.7.8)
+che vale:
+(VIII.7.9)
+Le perdite complessive della macchina sono: Pp = Pf + Pm + Pcu + Pecc + Pad e il rendi-
+mento risulta:
+(VIII.7.10)
+7.3.2  Caratteristica meccanica
+La coppia al traferro si ottiene eguagliando la VIII.7.6 con la VIII.7.7 e risulta:
+(VIII.7.11)
+Da questa appare che, ad eccitazione costante, la coppia al traferro è proporzionale 
+alla corrente.
+La velocità si deduce dalla VIII.7.1:
+(VIII.7.12)
+Sostituendo la VIII.7.2 si ricava:
+(VIII.7.13)
+Nella seconda formulazione, il termine:
+(VIII.7.14)
+rappresenta lo scarto di velocità della macchina da vuoto a carico.
+Pa
+UI
+=
+Pt
+EI
+=
+Pt
+C0
+=
+Pr
+Pt
+Pf
+–
+Pm
+–
+=
+Pr
+C
+=
+
+Pr
+Pr
+Pp
++
+
+
+
+=
+C0
+KCI
+=
+n
+E
+KE
+
+
+
+=
+n
+U
+RiI
+–
+KE
+-------------------
+=
+ovvero
+n
+n0
+RiI
+KE
+-----------
+–
+=
+n
+RiI
+KE
+
+
+
+=
+
+[PAG 762]
+VIII-80
+MACCHINE ELETTRICHE
+La caratteristica meccanica assume l’andamento di Fig. VIII.7.3 e denuncia una dimi-
+nuzione della velocità da vuoto a carico modesta (5  10)%.
+Fig. VIII.7.3  Caratteristica meccanica di un motore a corrente continua ad eccitazione 
+indipendente.
+7.4  Avviamento
+All’atto dell’avviamento è n = 0 e quindi E = 0; il motore si trova in condizione di cor-
+tocircuito ed assorbe una corrente:
+(VIII.7.15)
+Questa corrente è molto elevata e non sostenibile dalla macchina per cui occorre limi-
+tarla disponendo un reostato Rr in serie (Fig. VIII.7.4) di valore tale da ridurre la corrente 
+entro limiti accettabili:
+(VIII.7.16)
+Fig. VIII.7.4  Avviamento di un motore a corrente continua ad eccitazione indipendente.
+Per diversi valori della resistenza del reostato si hanno altrettante caratteristiche mec-
+caniche a diversa pendenza per cui l’esclusione graduale del reostato consente un avvia-
+mento con correnti limitate (Fig. VIII.7.5).
+Fig. VIII.7.5  Caratteristiche meccaniche per avviamento con reostato.
+7.5  Regolazione della velocità
+Si può effettuare agendo sui parametri che la condizionano e che sono: Ri, U, .
+C
+C
+n
+n n0
+Ik
+U
+Ri
+
+=
+Iavv
+U
+Ri
+Rr
++
+
+
+
+=
+M
+U
+I
++
+Iecc
++
+Rr
+C
+C
+P1
+P2
+P3
+P4
+n1
+n2
+n3 n4 n0
+1
+2
+3
+4
+
+[PAG 763]
+MACCHINE ELETTRICHE
+VIII-81
+Un primo sistema consiste nell’impiegare un reostato in serie, esattamente come 
+quello di avviamento (Fig. VIII.7.5) che qui svolge il ruolo di regolatore di velocità. È un 
+sistema oneroso e dispendioso, usato in casi limitati.
+La regolazione si può ottenere anche agendo sulla tensione di alimentazione, con la 
+quale si varia n0 e si ottengono caratteristiche a pendenza costante (Fig. VIII.7.6).
+Fig. VIII.7.6.  Regolazione della velocità di un motore a corrente continua n0 = f(U).
+Infine è possibile variare la velocità intervenendo sul flusso, cioè sul reostato di ecci-
+tazione. In particolare dalla VIII.7.13 si deduce che un indebolimento di campo produce 
+un aumento della velocità.
+7.6  Motore ad eccitazione parallelo
+Questo motore possiede il circuito di eccitazione alimentato dalla stessa sorgente che 
+alimenta l’indotto (Fig. VIII.7.7).
+Per sua natura funziona come quello ad eccitazione indipendente con le puntualizza-
+zioni seguenti.
+La corrente di indotto è:
+(VIII.7.17)
+Le perdite nel rame sono date da:
+(VIII.7.18)
+Anche la caratteristica meccanica è analoga a quella del motore ad eccitazione indi-
+pendente e presenta,
+–  una coppia:
+(VIII.7.19)
+Fig. VIII.7.7  Motore a corrente continua ad 
+eccitazione parallelo.
+C
+C
+U3
+U2
+U1
+n3
+n2
+n1
+n
+M
+U
+Ii
++
+Rr
+
+Iecc
+I
+Ii
+I
+Iecc
+–
+=
+Pcu
+RiIi
+2
+=
+C0
+KCIi
+=
+
+[PAG 764]
+VIII-82
+MACCHINE ELETTRICHE
+–  una velocità:
+(VIII.7.20)
+Per l’avviamento e la regolazione della velocità è bene osservare che il reostato deve 
+essere connesso in serie al solo circuito di indotto.
+Esempio 1. Funzionamento di un motore a corrente continua ad eccitazione parallelo.
+Un motore a corrente continua eccitato in parallelo presenta una resistenza interna 
+complessiva Ri = 0,2  e una resistenza di eccitazione Recc = 100 . Nella prova a vuoto 
+alla tensione U = 250 V ha assorbito una corrente I0 = 5 A ed assunto la velocità di 
+800 g/1’. Il motore funziona a carico, alimentato a 250 V ed assorbe una corrente I = 50 A.
+Si vuole calcolare: la velocità; il rendimento elettrico; il rendimento totale ammet-
+tendo Pm + Pf proporzionali a n2; la resistenza del reostato per un avviamento con una cor-
+rente pari a 1,5 In.
+Procedimento.
+Funzionamento a vuoto:
+–  Iecc = U/Recc = 250/100 = 2,5 A;
+–  Ii0 = I0  Iecc = 5  2,5 = 2,5 A;
+–  E0 = U  Ri Ii0 = 250  0,2  2,5 = 249,5 V;
+–  (Pm + Pf)0 = E0 Ii0 = 249,5  2,5 = 624 W.
+Funzionamento a carico:
+–  Ii = I  Iecc = 50  2,5 = 47,5 A;
+–  E = U  Ri Ii = 250  0,2  47,5 = 240,5 V;
+–  n = n0 E/E0 = 800  240,5/249,5 = 771 g/1’.
+Le potenze impegnate sono:
+–  Pa = U I = 250  50 = 12.500 W;
+–  Pt = E Ii = 240,5  47,5 = 11.420 W;
+–  e quindi e = Pt/Pa = 11.420/12.500 = 0,914;
+–  Pm + Pf = (Pm + Pf)0 (n/n0)2 = 624(771/800)2 = 580 W;
+–  Pr = Pt  (Pm + Pf)  Pad = 11.420  580  0,005 Pr da cui Pr = 10.790 W
+e il rendimento totale risulta:
+–   = Pr/Pa = 10.790/12.500 = 0,863.
+La corrente di avviamento assegnata è:
+–  Iavv = 1,5 In = 1,5  50 = 75 A
+per cui il reostato per l’avviamento risulta:
+–  Rr = (U/Iavv)  Ri = (250/75)  0,2 = 3,1 .
+7.7  Motore ad eccitazione serie
+Questo tipo di motore presenta il circuito di eccitazione connesso in serie all’indotto e 
+sfrutta, per l’eccitazione, la stessa corrente assorbita: I = Iecc (Fig. VIII.7.8). Per questo 
+motivo la macchina funziona a flusso variabile.
+Fig. VIII.7.8  Motore a corrente continua ad 
+eccitazione serie.
+n
+U
+RiIi
+–
+KE
+---------------------
+=
+ovvero
+n
+n0
+RiIi
+KE
+-----------
+–
+=
+M
+U
+I
++
+Rr
+
+
+[PAG 765]
+MACCHINE ELETTRICHE
+VIII-83
+Posto Rt = Ri + Recc, la legge di funzionamento risulta:
+(VIII.7.21)
+Le perdite nel rame e di eccitazione sono date globalmente da:
+(VIII.7.22)
+Ammessa una relazione lineare fra la corrente e il flusso, dalla VIII.7.19 la coppia 
+risulta:
+(VIII.7.23)
+e la velocità:
+(VIII.7.24)
+Poiché all’aumentare della coppia aumenta sia la corrente che il flusso, la velocità 
+diminuisce. La caratteristica meccanica ha l’andamento illustrato in Fig. VIII.7.9.
+Il motore non deve essere lasciato senza carico perché la diminuzione di flusso lo 
+porta in velocità di fuga. La tendenza del motore a reagire al carico variando la propria 
+velocità lo rende particolarmente adatto per la trazione. L’avviamento del motore com-
+porta gli stessi problemi delle altre macchine. Infatti la corrente di cortocircuito:
+(VIII.7.25)
+deve essere limitata mediante un reostato di avviamento entro valori accettabili:
+(VIII.7.26)
+In modo analogo si procede per la regolazione della velocità.
+Esempio 2.   Funzionamento di un motore a corrente continua ad eccitazione serie.
+Un motore a corrente continua ad eccitazione serie, avente Ri = 0,1  e Recc = 0,15 
+funziona alimentato a 200 V sviluppando una coppia C = 120 Nm alla velocità di 
+1200 g/1’. Ammettendo perdite meccaniche e nel ferro per complessivi 1,5 kW si vuole 
+calcolare la corrente ed il rendimento. Inoltre si desidera stabilire quanto diviene la velo-
+cità quando la coppia al traferro raddoppia.
+Procedimento.
+–   = 2  1200/60 = 125,6 rad/s, Rt = Ri + Recc = 0,1 + 0,15 = 0,25 
+Le potenze valgono:
+–  Pr = C  = 120  125,6 = 15.000 W;
+–  Pad = 0,5 Pr/100 = 75 W;
+–  Pt = Pr + Pm + Pf + Pad = 15.000 + 1500 + 75 = 16.575 W.
+La potenza trasmessa è anche:
+Fig. VIII.7.9  Caratteristica meccanica di un 
+motore a corrente continua ad eccitazione 
+serie.
+U
+E
+RtI
++
+=
+Pcu
+Pecc
++
+RtI2
+=
+C0
+K1I2
+K22
+=
+=
+n
+U
+RtI
+–
+KE
+-------------------
+=
+C
+n
+Ik
+U
+Rt
+
+=
+Iavv
+U
+Rr
+Rt
++
+
+
+
+=
+
+[PAG 766]
+VIII-84
+MACCHINE ELETTRICHE
+–  Pt = Pa  Pcu  Pecc = U I  Rt I2.
+Sostituendo e sviluppando si ha:
+–  16.575 = 200 I  0,25 I2   ovvero   I2  800 I + 66.300 = 0.
+Risolvendo ed accettando la soluzione più ragionevole si ha:
+–  I = 94 A.
+Segue che:
+–  Pa = U I = 200  94 = 18.800 W;
+–   = Pr/Pa = 15.000/18.800 = 0,798;
+e la fem sviluppata risulta:
+–  E = Pt/I = 16.575/94 = 176 V.
+Se la coppia raddoppia:
+–  C’ = 2 C, è I’ = I 
+ = 132,5 A
+e quindi:
+–  E’ = U  Rt I’ = 200  0,25  132,5 = 166,9 V e ’ =  
+.
+In base alle relazioni di proporzionalità, la velocità risulta:
+–  n’ = n (E’/E)(/’) = 1200 (166,9/176)/
+ = 807 g/1’.
+7.8  Motori ad eccitazione composta
+Sono soggetti a due effetti di magnetizzazione, uno serie e l’altro parallelo, in modo 
+da modificare le caratteristiche meccaniche traendone alcuni vantaggi. Lo schema di col-
+legamento a corta derivazione è illustrato in Fig. VIII.7.10. Un primo tipo di motore è 
+dimensionato con prevalenza dell’eccitazione serie, offrendo al campo in derivazione, 
+agente in senso concorde, un ruolo secondario. Il flusso totale di induttore diverrà: 
+t = s + p.
+Per la prevalenza assunta dall’eccitazione serie sulla formazione del campo induttore, 
+la caratteristica avrà andamento analogo a quella del corrispondente motore serie (Fig. 
+VIII.7.11). Ma ai bassi carichi, quando il campo serie tende a svanire, l’efficacia del 
+campo parallelo, inalterato perché dipende dalla tensione, si fa sempre più importante 
+tanto da determinare, a carico nullo, una velocità massima data da:
+(VIII.7.27)
+Si fa in modo che tale velocità non risulti pericolosa per l’integrità del motore.
+Fig. VIII.7.11  Caratteristica meccanica di un motore a corrente continua ad eccitazione 
+composta con campo prevalente serie.
+Fig. VIII.7.10  Motore a corrente continua 
+ad eccitazione composta.
+2
+2
+2
+M
+U
+I
++
+nmax
+U
+KEp
+
+
+
+=
+C
+n
+nmax
+
+[PAG 767]
+MACCHINE ELETTRICHE
+VIII-85
+Fig. VIII.7.12  Caratteristica meccanica di un motore a corrente continua ad eccitazione 
+composta con campo prevalente parallelo.
+Il secondo tipo di motore ad eccitazione composta viene dimensionato con una netta 
+prevalenza del campo parallelo. Il campo serie sovrapposto, con funzioni di correzione, 
+ha senso contrastante al primo e determina un flusso totale: t = p  s.
+Un aumento della coppia applicata comporta un aumento della corrente assorbita e, 
+con essa, della fmm sviluppata dal campo serie, che agisce indebolendo il flusso e com-
+pensando, con la sua azione, l’effetto della caduta di tensione, come risulta dalla formula:
+(VIII.7.28)
+Questo tipo di motore funziona a velocità pressoché costante (Fig. VIII.7.12).
+BIBLIOGRAFIA
+BROSON G. S., HAYDEN J. T., Advanced electrical power and machines, Pitman & 
+Sons LTD, London, 1966.
+CREPAZ S., Macchine elettriche, CittàStudi Edizione, Milano, 1996.
+C
+n
+n0
+n
+U
+RiI
+–
+KE p
+s
+–
+
+
+----------------------------------
+=
+
+[PAG 769]
+Sezione IX
+Misure elettriche
+INDICE
+pag.
+1    ERRORI DI MISURA  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+1.1    Errori sistematici ed occasionali  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+1.2    Errori assoluti e relativi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+1.3    Errori derivanti da operazioni  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+2    STRUMENTI ELETTRICI (Caratteristiche)  . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+2.1    Classificazione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+2.2    Strumenti indicatori analogici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+2.2.1    Forme costruttive ed impiego . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+2.2.2    Portata e costante . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+2.3    Errori e classi di precisione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+2.3.1    Errore di apprezzamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+2.3.2    Errore di parallasse  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+2.3.3    Smorzatori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+2.3.4    Classi di precisione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+2.3.5    Verifica di taratura degli strumenti  . . . . . . . . . . . . . . . . . . . . . . . .
+12
+3    STRUMENTI ELETTRICI (Tipi e impieghi)  . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+3.1    Strumenti magnetoelettrici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+3.1.1    Principio di funzionamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+3.1.2    Caratteristiche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+3.2    Strumenti elettromagnetici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+3.2.1    Costituzione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+3.2.2    Principio di funzionamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+3.3    Strumenti termici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+3.3.1    Generalità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+3.3.2    Principio di funzionamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+3.4    Strumenti elettrostatici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+3.4.1    Principio di funzionamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+3.4.2    Realizzazioni costruttive  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+3.4.3    Spinterometri . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+3.5    Strumenti elettrodinamici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+3.5.1    Principio di funzionamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+3.5.2    Voltmetro elettrodinamico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+3.5.3    Amperometro elettrodinamico . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+3.5.4    Wattmetro elettrodinamico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+3.6    Strumenti a induzione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+3.6.1    Principio di funzionamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+
+[PAG 770]
+IX-2
+MISURE ELETTRICHE
+3.6.2    Amperometro a induzione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+24
+3.6.3    Voltmetro a induzione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+25
+3.6.4    Wattmetro a induzione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+25
+3.6.5    Contatore  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+25
+4    SISTEMI RESISTIVI DI REGOLAZIONE  . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+26
+4.1    Resistori variabili . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+26
+4.2    Circuiti di regolazione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+27
+4.2.1    Regolazione reostatica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+27
+4.2.2    Regolazione potenziometrica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+28
+5    MISURA DI TENSIONE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+29
+5.1    Voltmetro . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+29
+5.2    Portata del voltmetro  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+30
+5.3    Verifica di taratura di un voltmetro  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+31
+6    MISURA DI CORRENTE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+31
+6.1    Amperometro . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+31
+6.2    Portata dell’amperometro . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+31
+6.3    Verifica di taratura di un amperometro . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+32
+7    MISURE DI RESISTENZA  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+32
+7.1    Metodi industriali . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+32
+7.1.1    Metodo voltamperometrico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+32
+7.1.2    Metodo di confronto  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+33
+7.1.3    Metodo di sostituzione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+34
+7.2    Ponti in corrente continua . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+34
+7.2.1    Ponte di Wheatstone  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+34
+7.2.2    Ponte a filo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+35
+7.2.3    Doppio ponte di Thomson . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+35
+7.2.4    Applicazioni del metodo a ponte . . . . . . . . . . . . . . . . . . . . . . . . . . 
+36
+7.3    Ohmmetri . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+36
+7.3.1    Ohmmetro in serie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+36
+7.3.2    Ohmmetro a bobine incrociate (logometrico)  . . . . . . . . . . . . . . . . 
+37
+7.4    Misure di resistenze di terra . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+37
+8    MISURE DI FORZA ELETTROMOTRICE . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+39
+8.1    Metodo potenziometrico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+39
+8.2    Potenziometro  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+39
+9    MISURE DI POTENZA  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+40
+9.1    Misure di potenza in corrente continua . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+40
+9.1.1    Metodo voltamperometrico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+40
+9.1.2    Wattmetro . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+40
+9.1.3    Verifica di taratura del wattmetro . . . . . . . . . . . . . . . . . . . . . . . . . 
+41
+9.2    Misure di potenza in corrente alternata . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+42
+9.2.1    Wattmetro in corrente alternata . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+42
+10    MISURE DI IMPEDENZA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+43
+10.1    Metodo industriale  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+43
+10.2    Ponti in corrente alternata . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+43
+
+[PAG 771]
+MISURE ELETTRICHE
+IX-3
+10.2.1    Ponte di Kohlrausch . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+44
+10.2.2    Ponte di De Sauty  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+44
+10.2.3    Ponte di Wien  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+44
+10.2.4    Ponte di Schering . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+45
+10.2.5    Ponte di Maxwell . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+45
+11    MISURE SU LINEE TRIFASI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+46
+11.1    Misure su carico accessibile  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+46
+11.2    Indipendenza della potenza attiva totale dal potenziale di riferimento  . .
+47
+11.3    Circuito simmetrico equilibrato . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+48
+11.3.1    Potenza attiva . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+48
+11.3.2    Potenza reattiva e fattore di potenza  . . . . . . . . . . . . . . . . . . . . . .
+49
+11.4    Circuito simmetrico squilibrato . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+50
+11.4.1    Metodo delle quattro letture (Barbagelata) . . . . . . . . . . . . . . . . . .
+50
+11.4.2    Metodo delle tre letture (Righi)  . . . . . . . . . . . . . . . . . . . . . . . . . .
+52
+11.5    Misure di energia su linee trifasi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+53
+12    STRUMENTI PARTICOLARI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+54
+12.1    Galvanometro balistico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+54
+12.1.1    Principio di funzionamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+54
+12.1.2    Misura della capacità di un condensatore . . . . . . . . . . . . . . . . . . .
+55
+12.1.3    Misura del flusso  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+55
+12.2    Generatore di Hall . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+56
+12.3    Fasometro  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+57
+12.4    Frequenzimetri  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+57
+12.5    Indicatori di senso ciclico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+58
+13    TRASFORMATORI DI MISURA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+59
+13.1    Trasformatore di tensione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+59
+13.1.1    Caratteristiche di impiego  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+59
+13.1.2    Errori e classi di precisione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+59
+13.2    Trasformatore di corrente  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+60
+13.2.1    Caratteristiche di impiego  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+60
+13.2.2    Errori e classi di precisione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+61
+14    MISURE SULLE MACCHINE ELETTRICHE . . . . . . . . . . . . . . . . . . . . . . . .
+62
+14.1    Misure delle perdite di un lamierino magnetico  . . . . . . . . . . . . . . . . . . .
+62
+14.1.1    Apparecchio di Epstein  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+62
+14.1.2    Separazione delle perdite . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+63
+14.2    Misura della resistenza degli avvolgimenti . . . . . . . . . . . . . . . . . . . . . . .
+63
+14.3    Prove di isolamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+64
+14.4    Prove dirette  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+65
+14.4.1    Generalità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+65
+14.4.2    Misura della potenza  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+65
+14.4.3    Misura della coppia dei motori  . . . . . . . . . . . . . . . . . . . . . . . . . .
+66
+14.5    Prove indirette . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+67
+15    PROVE SUL TRASFORMATORE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+67
+15.1    Prova diretta  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+67
