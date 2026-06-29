@@ -1,0 +1,1088 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 103/116 ===
+Chars: 43,387 | Offset: 4,510,896
+
+llegate in serie con polarità opposte, possono 
+essere usati nei circuiti percorsi da corrente alternata. Ciascuna capacità deve inoltre poter 
+funzionare con una tensione di lavoro maggiore di quella alternata applicata alla combina-
+zione in serie (Fig. XIX.4.21). Viene mostrato anche un differente circuito che impiega 
+due diodi e due condensatori; al condensatore C1 viene applicata la tensione della 
+semionda positiva mentre a C2 la tensione di quella negativa.
+A causa della loro particolare tecnica costruttiva tutti i condensatori elettrolitici sotto-
+posti ad una tensione continua presentano una sia pur minima corrente di dispersione o di 
+fuga. La corrente di dispersione è ottenuta l’effettiva tensione di lavoro con la polarità 
+appropriata ai terminali del condensatore e misurando la corrente che lo attraversa. Il 
+valore della corrente di fuga aumenta all’aumentare della temperatura con un andamento 
+quasi lineare, come si rileva dal diagramma della Fig. XIX.4.22.
+La corrente di fuga è una corrente di natura ionica che con il suo apporto di ossigeno 
+ha la funzione di mantenere efficiente lo strato di ossido presente sull’anodo. 
+La corrente di fuga sviluppa inoltre idrogeno sul catodo, il che determina un  aumento 
+della pressione interna del condensatore. 
+Questo fenomeno è dovuto a cause naturali può anche dipendere da errate condizioni 
+di impiego o da guasti alle apparecchiature. I condensatori elettrolitici, per prevenire vere 
+e proprie esplosioni, sono dotati di una valvola di sicurezza (safety vent) consistente in un 
+punto di rottura prestabilito situato sul gruppo di taratura.
+
+[PAG 2006]
+XIX-134
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Fig. XIX.4.22  Caratteristica corrente di fuga-temperatura di un condensatore elettrolitico.
+Se la corrente di dispersione con la polarità corretta è elevata, il suo passaggio pro-
+duce inevitabilmente una certa quantità di calore all’interno del condensatore elettrolitico. 
+Di conseguenza, se in un’apparecchiatura elettronica funzionante si riscontra la presenza 
+di un condensatore elettrolitico caldo o addirittura che scotta – soprattutto nei circuiti di 
+alimentazione – pur non essendo in prossimità di alcuna sorgente di calore (per esempio, 
+un dissipatore di calore), il fenomeno deve essere considerato con molta attenzione. Si 
+tratta infatti, con ogni probabilità, di un problema suscettibile di provocare un guasto assai 
+più serio. Se la corrente di dispersione è di intensità sufficientemente elevata, può – come 
+già descritto – determinare la formazione di vapore, che può far aumentare la pressione 
+all’interno del condensatore fino a provocarne l’esplosione. Il condensatore, allora, si 
+spacca, e la violenza dello scoppio può espellerlo dall’apparecchiatura elettronica come se 
+fosse un proiettile. 
+I condensatori elettrolitici vengono utilizzati soprattutto nel filtraggio delle tensioni di 
+alimentazione, come componenti di accoppiamento e disaccoppiamento fra stadi amplifi-
+catori.
+4.7.2  Codificazione dei condensatori
+Le ditte produttrici di condensatori usano vari metodi per indicare il valore nominale 
+della capacità, la tensione di lavoro e la polarità (se è significativa).
+Un metodo di uso generale è quello di stampare questi dati sul contenitore (Fig. 
+XIX.4.23).
+Fig. XIX.4.23  Codici utilizzati per indicare il valore della capacità nominale sul conteni-
+tore dei condensatori ceramici a disco.
+Altri metodi sono fondati su codici dei colori (formati da 35 bande colorate) simili a 
+quello già descritto per le resistenze (Tab. XIX.4.7).
+-40
+-20
+0
+20
+40
+60
+80
+1
+10
+100
+1000
+Temperatura [°C]
+Corrente di fuga [mA]
+Simbolo
+Sigla
+Unità di mis.
+Valore
+0,22
+103
+22 k
+n 15
+1 p 8
+22 n
+F
+pF
+pF
+nF
+pF
+nF
+220 nF
+10 nF
+22 pF
+0,15 nF
+1,8 pF
+22 nF
+103
+n12
+
+[PAG 2007]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-135
+ 
+I condensatori elettrolitici al tantalio utilizzano il codice a colori di cui alla Fig. 
+XIX.4.24 che è leggermente differente da quello proposto per i condensatori ceramici 
+(Tab. XIX.4.8).
+I valori dei condensatori sono normalizzati solo per i valori più bassi della scala e 
+coincidono con quelli presentati per le resistenze (scala E12). I valori di capacità più ele-
+vati non sono normalizzati.
+Fig. XIX.4.24  Condensatori elettrolitici al tantalio.
+I condensatori plastici con custodia a parallelepipedo, utilizzano il codice illustrato 
+nell’esempio che segue: 
+2N2J100
+Tab. XIX.4.7  Codice a colori di identificazione dei condensatori
+Banda
+I
+II
+III
+IV
+V
+Colore
+Coefficiente 
+di 
+temperatura
+Capacità [pF]
+Tolleranza [%]
+1a cifra
+2a cifra
+Moltiplicat.
+C > 10 pF
+C 10 pF
+Nero
+NPO
+0
+0
+1
+± 20
+± 2
+Marrone
+N30
+1
+1
+10
+± 1
+± 0,1
+Rosso
+N80
+2
+2
+100
+± 2
+
+Arancione
+N150
+3
+3
+1.000
+± 2,5
+± 0,25
+Giallo
+N220
+4
+4
+10.000
+
+
+Verde
+N330
+5
+5
+
+± 5
+± 0,5
+Blu
+N470
+6
+6
+
+
+
+Violetto
+N750
+7
+7
+
+
+
+Grigio
+
+8
+8
+0,01
+
+
+Bianco
+
+9
+9
+0,1
+± 10
+± 1
+Quando sul corpo del condensatore vi sono solo quattro bande di colore, la lettura è la seguente:
+I Valore capacità: 1a cifra
+II Valore capacità: 2a cifra
+III Moltiplicatore
+IV Tolleranza
+Nel caso vi siano solo tre bande di colore, la lettura è la seguente:
+I Valore capacità: 1a cifra
+II Valore capacità: 2a cifra
+III Moltiplicatore
+D
+2,5
+ø 0,5
+H
+15
+
+
+1 banda
+2 banda
+3 banda
+
+[PAG 2008]
+XIX-136
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+dove:
+–  2N2  N indica il sottomultiplo dell’unità di misura e la posizione della virgola; 
+nell’esempio il valore della capacità in nF del condensatore, cioè 2,2 nF; se la lettera 
+viene omessa si sottintende che il valore sia inF;
+–  J indica la tolleranza di fabbricazione rispetto al valore nominale (J = ±5%; K = 
+±10%; M = ±20%)
+–  100 è la tensione di lavoro espressa in V.
+Sono commercializzate reti elettriche passive RC assemblate in contenitori DIL. Con 
+questi dispositivi è possibile realizzare, per esempio, dei filtri passa-alto o passa-basso 
+passivi utilizzati per eliminare i rimbalzi (bounce) dei contatti elettromeccanici. Questo 
+tipo di condizionamento del segnale di ingresso viene effettuato nelle apparecchiature 
+digitali contemporaneamente per molti ingressi. L’assemblaggio proposto consente di rea-
+lizzare sul circuito stampato un assemblaggio molto compatto ed affidabile.
+L’industria produce anche condensatori elettrolitici complessi, che possono contenere 
+fino a 4 diversi valori capacitivi in un unico involucro, per esempio 8 + 8 + 16 + 16 F, 
+con il polo negativo in comune. I 4 terminali positivi vengono usati per disaccoppiare e 
+livellare tensioni continue e segnali.
+4.7.3  Condensatori variabili (variable capacitors)
+I condensatori variabili, come quelli fissi, sono disponibili in una grande varietà di 
+tipi, di dimensioni, e di valori. I condensatori possono essere semplici (2 elettrodi) o com-
+plessi e a sezioni multiple. La variazione di capacità viene ottenuta modificando la posi-
+zione relativa delle lamine. Le lamine fisse costituiscono lo statore e fanno solitamente 
+parte dell’intelaiatura che sostiene l’intero condensatore variabile, mentre le lamine 
+mobili costituiscono il rotore. Lo statore viene sostenuto da supporti isolanti in materiale 
+ceramico per ridurre al minimo le inevitabili perdite. 
+Nelle realizzazioni economiche il rotore ruota su un solo cuscinetto posto da un lato, 
+mentre i modelli che devono offrire una maggior affidabilità e stabilità delle caratteristi-
+che meccaniche utilizzano un cuscinetto per lato.
+Tab. XIX.4.8  Codice a colori  dei condensatori elettrolitici al tantalio
+Fascia
+I
+II
+Punto color.
+III
+Colore
+Capacità [pF]
+Colore
+Tensione 
+di lavoro
+ (Uc.c.)
+1a cifra
+2a cifra
+Moltiplicat.
+Nero
+
+0
+1
+Bianco
+3,15
+Marrone
+1
+1
+10
+Giallo
+6,3
+Rosso
+2
+2
+100
+Nero
+10
+Arancione
+3
+3
+
+Verde
+16
+Giallo
+4
+4
+
+Blu
+20
+Verde
+5
+5
+
+Grigio
+25
+Blu
+6
+6
+
+Rosa
+35
+Violetto
+7
+7
+
+Viola
+50
+Grigio
+8
+8
+0,01
+Bianco
+9
+9
+0,1
+Per identificare il terminale dell’anodo bisogna tener presente che, guardando il punto 
+colorato con i terminali rivolti verso il basso, l’anodo (+) si trova a destra.
+
+[PAG 2009]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-137
+La distanza tra ogni lamina fissa ed ogni lamina mobile può essere compresa fra un 
+minimo di qualche decimo di millimetro a un massimo di qualche millimetro, in funzione 
+della tensione che deve essere presente tra il rotore e lo statore.
+In alcuni tipi di condensatori variabili miniaturizzati il dielettrico di aria viene sostitu-
+ito con una sottile pellicola di materiale plastico che, come è noto, possiede un valore 
+della costante dielettrica più elevato; questo accorgimento costruttivo permette di ridurre 
+notevolmente, a pari capacità, le dimensioni del condensatore.
+I condensatori variabili accoppiati in due o più sezioni sono realizzati assemblando 
+più sezioni montate tutte su di un medesimo albero di comando. Le varie sezioni possono 
+avere tutte la stessa capacità oppure capacità differenti.
+4.8  Induttori
+Un induttore è un dispositivo formato da un conduttore avvolto su un nucleo o in aria 
+che presenta un alto valore di autoinduzione. Il suo comportamento può essere descritto 
+dalla seguente equazione che mostra la relazione esistente fra il flusso magnetico generato 
+e la corrente circolante nel conduttore:
+ = L I
+(XIX.4.18)
+ove:  è il flusso magnetico; L è l’induttanza o coefficiente di autoinduzione del disposi-
+tivo (Henry); I è la corrente che vi circola (Ampere).
+Caratteristiche elettriche
+I parametri elettrici che caratterizzano gli induttori sono:
+–  valore nominale;
+–  tolleranza di fabbricazione;
+–  capacità parassite;
+–  fattore di qualità o di merito;
+–  tensione di lavoro;
+–  coefficiente di temperatura.
+Per gli induttori non esiste una normalizzazione dei valori di induttanza per cui è necessario 
+reperire direttamente sui fogli tecnici forniti dai costruttori le informazioni su tali valori. 
+Il valore nominale dell’induttanza è espresso in Henry, o con i suoi sottomultipli, mil-
+liHenry o microHenry.
+La tolleranza di fabbricazione viene espressa in valore percentuale rispetto al valore 
+nominale.
+Le capacità parassite si formano tra spira e spira dell’avvolgimento e tra strato e 
+strato della bobina.
+Il fattore di qualità dell’induttore è un indice che fornisce al tecnico la possibilità di sta-
+bilire con quale grado di precisione l’induttore approssima l’induttanza ideale. Viene ricavato 
+facendo il rapporto fra la potenza reattiva (energia immagazzinata) e la potenza attiva dissipata 
+dall’induttore. L’induttore dissipa potenza in quanto vi sono perdite dovute ad effetto Joule, 
+perdite dielettriche nei materiali isolanti, perdite causate da eventuali isteresi magnetiche e 
+correnti parassite; è ovvio che più basse sono queste perdite (e quindi quanto minore è la dis-
+sipazione di potenza) tanto meglio l’induttore reale approssima l’induttanza ideale.
+Nella Fig. XIX.4.25a è mostrato il circuito equivalente dell’induttore reale. Il modello 
+tiene conto sia delle perdite di dissipazione della bobina mediante la resistenza serie Rs e 
+degli effetti capacitivi attraverso la capacità C.
+La resistenza serie Rs congloba la resistenza ohmica del filo che costituisce la bobina, 
+le perdite per isteresi dielettrica negli elementi isolanti investiti da variazioni del campo 
+elettrico, le perdite per isteresi magnetica e quelle dovute alle correnti parassite negli ele-
+menti metallici investiti dalla variazione di flusso magnetico.
+
+[PAG 2010]
+XIX-138
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Il condensatore C congloba l’effetto 
+capacitivo esistente fra spira e spira 
+dell’avvolgimento e fra i terminali e gli 
+altri conduttori del circuito. Tutte queste 
+grandezze dipendono dalle sollecitazioni 
+ambientali, elettriche e magnetiche e dalla 
+frequenza di impiego dell’induttore.
+La capacità parassita limita superior-
+mente la frequenza di impiego dell’indut-
+tore, alle alte frequenze si comporta come 
+un circuito risonante e per frequenze supe-
+riori a quelle di risonanza manifesta un 
+comportamento capacitivo.
+Per frequenze molto più piccole di 
+quelle di risonanza  f0:
+(XIX.4.19)
+il circuito equivalente dell’induttore può 
+essere semplificato come mostrato nella 
+Fig. XIX.4.25b.
+L’induttore reale approssimerà meglio 
+l’induttanza ideale quanto più piccola è la 
+resistenza di perdita Rs.
+Fig. XIX.4.25  Circuito equivalente di un 
+induttore reale. Circuito serie e parallelo.
+Se al circuito equivalente serie si applica una tensione di valore efficace U, la corrente 
+che vi circola non viene sfasata di 90° in ritardo rispetto alla tensione come avverrebbe se 
+l’induttanza fosse ideale; a causa della resistenza Rs l’angolo di sfasamento  sarà minore 
+di 90°. La tangente trigonometrica di quest’angolo definisce il fattore di merito Q
+dell’induttore.
+L’angolo  viene definito angolo di perdita dell’induttore ed è definito relativamente 
+al circuito equivalente serie dalla seguente relazione:
+(XIX.4.20)
+Talvolta la descrizione dell’induttore reale si 
+effettua in modo più efficace utilizzando un cir-
+cuito equivalente parallelo (Fig. XIX.4.25c). 
+Nella Fig. XIX.4.25c sono raccolti i vari circuiti 
+equivalenti e le formule di calcolo del fattore di 
+merito Q, che dipende dalle dimensioni e dalla 
+forma del materiale utilizzato come nucleo, dal 
+numero di spire e dalle dimensioni e dalle 
+caratteristiche del filo dell’avvolgimento.
+Il valore del fattore di merito Q di un induttore è 
+funzione della frequenza di utilizzo del circuito 
+che li impiega.
+Fig. XIX.4.26  Andamento del fattore di merito Q per induttori.
+a)
+b)
+c)
+Circuito equivalente
+per un induttore reale
+Circuito equivalente
+serie
+Circuito equivalente
+parallelo
+RS
+L
+C
+RS
+L
+Rp
+L
+per  2 = 1 / LC 
+Angolo di perdita
+tg
+RS
+Q
+Fattore di merito
+ 
+
+
+L
+RS
+Rp
+L
+L
+arctg
+RSI
+I
+jL
+ 
+
+R
+1
+2L C
+
+----------------------
+=
+
+arctg 
+Rs
+L
+
+-----------
+=
+Q
+0
+50
+100
+200
+300
+1
+2
+3
+4
+5
+6
+f [MHz]
+
+[PAG 2011]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-139
+Nella Fig. XIX.4.26 viene mostrato l’andamento caratteristico del fattore di merito in 
+funzione della frequenza. Si noti che lo stesso rimane pressoché costante per una certa 
+gamma di frequenze (intorno alla frequenza per la quale il fattore di merito è massimo) 
+mentre al di sotto e al di sopra di queste diminuisce rapidamente. Alle frequenze superiori 
+al valore massimo le perdite per correnti parassite e per isteresi magnetica e dielettrica 
+diventano significative. Per questa ragione, alle alte frequenze gli induttori vengono rea-
+lizzati impiegando supporti a basse perdite e si evita l’uso di nuclei e schermi magnetici. 
+Alle basse frequenze diventano significative le perdite ohmiche del conduttore che costi-
+tuisce l’avvolgimento, per cui si cerca di migliorare il comportamento degli induttori in 
+bassa frequenza impiegando materiali a bassa resistività, oppure si aumenta la sezione del 
+filo e se ne diminuisce la lunghezza.
+A parità di valore induttivo, un induttore viene realizzato scegliendo quelle tecniche 
+di esecuzione e quelle caratteristiche elettriche e dimensionali che garantiscono, nel 
+campo di frequenza di impiego previsto, il massimo valore del coefficiente di merito Q.
+I valori tipici del fattore di merito sono compresi fra 50 e 150, ma,  se si opera 
+un’attenta selezione dei materiali, è possibile ottenere induttori con fattore di merito che 
+raggiungono valori pari ad alcune centinaia. 
+La tensione di lavoro rappresenta il valore limite della tensione applicata all’induttore. 
+Al di sopra di questo valore si possono avere scariche fra spira e spira o fra le spire e parti 
+metalliche del supporto.
+Rappresentazione grafica
+Il simbolo grafico dell’induttore ne riproduce la forma geometrica dello stesso (Fig. 
+XIX.4.27). La presenza o l’assenza delle linee sul simbolo dell’avvolgimento indica se la 
+bobina è avvolta su un supporto ferromagnetico o in aria. Non esistono valori normalizzati 
+per gli induttori. Generalmente, il valore viene stampato sul contenitore o sulla lacca pro-
+tettiva dell’avvolgimento. 
+Le forme e le dimensioni dipendono dalle scelte costruttive e variano da costruttore a 
+costruttore in funzione dei parametri caratteristici dell’induttore.
+Fig. XIX.4.27  Simbolo grafico dell’induttore.
+Esistono in commercio induttori, con la forma di una resistenza a impasto che codifi-
+cano il valore dell’induttanza mediante un codice a colori con 4 o 5 bande simile a quelli 
+già descritti per le resistenze e per i condensatori (Tab. XIX.4.9).
+Applicazioni
+Dal punto di vista tecnologico la realizzazione delle induttanze è alquanto complessa 
+ed è difficile ottenere induttori adatti a tutti gli impieghi; ogniqualvolta vi sia la necessità 
+di impiegarli in un apparecchiatura elettronica, è quindi indispensabile eseguire un’accu-
+rata ricerca sui fogli tecnici. L’induttore viene utilizzato come :
+Induttore
+Induttore con
+nucleo in ferro
+Induttore isolato
+Induttore variabile
+con nucleo in ferro
+
+[PAG 2012]
+XIX-140
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+–  elemento del circuito risonante negli oscillatori (ricevitori e trasmettitori radio); pre-
+sentano un’induttanza di basso valore (0,1100 mH);
+–  elemento nei filtri di banda;
+–  elemento di disaccoppiamento degli altoparlanti;
+–  impedenza in circuiti in regime impulsivo o alternato (alimentatori switching) pre-
+senta un’induttanza di valore medio (0,1100 mH).
+4.8.1  Realizzazione tecnologica
+Gli induttori vengono realizzati avvolgendo un filo conduttore su un nucleo di mate-
+riale isolante o in aria oppure su un nucleo di materiale ferromagnetico.
+I valori nominali di induttanza devono essere ottenuti realizzando induttori con 
+dimensioni fisiche accettabili. A parità di induttanza, un induttore che utilizza un nucleo 
+in ferro è meno voluminoso rispetto a un altro avvolto in aria. Le dimensioni possono poi 
+variare della forma geometrica del supporto (bobine, anelli toroidali, spirali piatte) e in 
+funzione del numero di strati, uno o più, che compongono l’avvolgimento. Per le realizza-
+zioni più comuni esistono semplici formule di progetto, tabelle e grafici che permettono di 
+dimensionare in modo corretto gli induttori.
+Induttori con nucleo isolante o in aria
+Il filo utilizzato per la realizzazione dell’induttore alle basse potenze è costituito da un 
+cavo pieno rivestito da una vernice isolante. Il nucleo di materiale isolante è costituito da 
+bachelite o da materiali ceramici o in aria.
+La realizzazione in aria è possibile solamente quando la sezione del filo della bobina è 
+di diametro notevole e la sua rigidità e tale da dare consistenza meccanica all’induttore 
+anche senza la presenza del supporto.
+Gli induttori in aria presentano valori di induttanza bassi, un alto fattore di merito e 
+capacità distribuite molto basse: sono particolarmente adatti alle apparecchiature elettro-
+niche che operano in alta frequenza.
+La bobina può essere avvolta su un unico strato (Fig. XIX.4.28a) o distribuita su più 
+strati sovrapposti (Fig. XIX.4.28b), a ciambella, a strati spaziati (Fig. XIX.4.28c) o a nido 
+d’ape (Fig. XIX.4.28d).
+Quando la bobina è a più strati, è necessario adottare particolari accorgimenti costrut-
+tivi, affinché fra spire adiacenti la differenza di potenziale sia solo una piccola frazione 
+Tab. XIX.4.9  Codice colori degli induttori
+Colore
+Nero
+Marrone
+Rosso
+Arancio
+Giallo
+Verde
+Blu
+Violetto
+Grigio
+Bianco
+Oro
+Argento
+Cifra
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Moltiplicatore
+1
+10
+102
+103
+104
+Tolleranza
+±5% ±10%
+1  2  3  4  5
+2) Prima cifra significativa
+3) Prima o seconda cifra significativa
+1) Moltiplicatore
+5) Tolleranza
+4) Seconda cifra significativa o moltiplicatore
+
+[PAG 2013]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-141
+della tensione totale applicata; ciò al fine di minimizzare gli effetti capacitivi fra le spire.
+Fig. XIX.4.28  Tipi di avvolgimento. 
+Formule di progetto
+Esistono varie tecniche costruttive che si avvalgono di numerose formule empiriche di 
+progetto degli induttori in aria o su supporto isolante che pongono in relazione le dimen-
+sioni geometriche del supporto e del filo  con il valore dell’induttanza.
+Per esemplificare, sono di seguito proposte alcune delle formule di dimensionamento 
+più comuni: le formule di Weeler-Benz e di Hazeltine.
+Per ulteriori informazioni rimandiamo il lettore alla manualistica specializzata che è 
+in grado di fornire informazioni complete e dettagliate per risolvere specifici problemi di 
+progetto.
+Il dimensionamento di un solenoide lungo (l/D > 5) avvolto in aria su un solo strato 
+può essere effettuato utilizzando la seguente formula che tiene conto delle permeabilità 
+magnetica dei materiali e delle sue dimensioni geometriche.
+(XIX.4.21)
+ove: µo è la permeabilità magnetica dell’aria (µo =1,256  10-6 H/m); µr è la permeabi-
+lità magnetica relativa del materiale su cui è avvolto il solenoide; N è il numero di spire 
+avvolte; S è la sezione del solenoide; l è la lunghezza del solenoide.
+Il dimensionamento di una bobina cilin-
+drica corta (rapporto l/D < 5) ad un solo 
+strato, in aria, può essere calcolato con la for-
+mula di Weeler-Benz, che consente di realiz-
+zare induttori con valori di induttanze 
+approssimate al ± 1% (Fig. XIX.4.29).
+Il valore del diametro del filo della bobina 
+deve comprendere anche lo spessore della ver-
+nice, cioè il diametro lordo del filo.
+La quota l deve essere calcolato moltipli-
+cando il numero delle spire per il diametro del 
+filo, tenendo conto anche dello spessore della 
+vernice isolante che lo ricopre. Il diametro D è 
+dato dalla somma fra il diametro del tubo iso-
+lante e di quello lordo del filo della bobina. 
+Fig. XIX.4.29  Formule di 
+progetto di bobina in aria.
+Nella Fig. XIX.4.30 è proposta un’altra formula di progetto per una bobina in aria ad 
+un solo strato, ove il coefficiente empirico di dimensionamento è ricavabile da una curva 
+a)
+b)
+c)
+d)
+L
+o r N2S
+l
+---------
+
+=
+D [cm]
+l [cm]
+Formula di progetto Veeler-Benz
+L = 0,01 
+N2 D2
+l + 0,45 D
+ove N è il numero di spire
+della bobina
+[H]
+D [cm]
+l [cm]
+Formula di progetto Veeler-Benz
+L = 0,01 
+N2 D2
+l + 0,45 D
+ove N è il numero di spire
+della bobina
+[H]
+
+[PAG 2014]
+XIX-142
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+di taratura. La formula di dimensionamento proposta nella Fig. XIX.4.31 si riferisce 
+invece ad una bobina corta (l < 5 D) a più strati avvolta a nido d’ape.
+4.8.2  Induttori con nucleo ferromagnetico
+Questo tipo di induttore viene realizzato avvolgendo il filo della bobina su un nucleo 
+di materiale ferromagnetico ad elevata permeabilità.
+Tale nucleo riduce la riluttanza del circuito elettromagnetico aumentando, a parità di 
+volume, il valore dell’induttanza rispetto a quello ottenibile da una analoga bobina con 
+nucleo in aria.
+Il nucleo ferromagnetico introduce peraltro nuove perdite dovute a una certa conduci-
+bilità del materiale – che comporta la presenza di correnti parassite – e alle caratteristiche 
+magnetiche del materiale quali l’isteresi magnetica, la non linearità e la saturazione. Tali per-
+dite magnetiche si aggiungono alle perdite ohmiche aumentando la resistenza equivalente 
+serie dell’induttore reale. Si ha quindi un peggioramento del fattore di merito Q della bobina.
+Le tecniche costruttive adottate per la realizzazione degli induttori a nucleo ferroma-
+gnetico tendono, quindi, a minimizzare queste perdite con una oculata scelta del materiale 
+ferromagnetico, utilizzando lamierini ferro-silicio laminati per le basse frequenze e lamie-
+rini sinterizzati di permalloy, permivar, permendur o mumetal per le alte frequenze.
+I lamierini sinterizzati sono ottenuti mescolando con un legante isolante particelle 
+molto piccole di materiale ferromagnetico.
+I lamierini costituiti da ferriti, ossidi di ferro miscelati a nichel, zinco o rame presen-
+tano un ciclo di isteresi molto stretto: hanno quindi perdite per correnti parassite estrema-
+mente basse e manifestano alti valori del coefficiente di merito.
+Il rapporto fra induzione magnetica e campo applicato,  definito permeabilità magne-
+Fig. XIX.4.30  Formula di progetto per induttore 
+in aria e diagramma per determinazione fattore K.
+Fig. XIX.4.31  Formule di progetto
+di bobina a più strati a nido d’ape.
+D [cm]
+Formula di progetto di Nagaoka
+  L = 987 10-5 
+K D2 N2
+l
+l [cm]
+ove N è il numero di spire della bobina
+0,1
+1
+5
+10
+0
+2
+4
+6
+8
+10
+K
+D/l
+l [cm]
+D [cm]
+S [cm]
+Formula di progetto Hazeltime
+L = 0,08 
+N2 D2
+l + 0,45 D
+ove N è il numero di spire
+della bobina
+[H]
+La formula è utilizzabile per bobine corte
+l / D < 5
+
+[PAG 2015]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-143
+tica, non è costante: al variare dell’induzione varia infatti in maniera non lineare secondo 
+una curva detta curva di magnetizzazione.
+I materiali magnetici presentano il fenomeno dell’isteresi magnetica per il quale il 
+materiale dà luogo a cicli di magnetizzazione che dipendono dagli stati magnetici prece-
+denti. I cicli di isteresi sono simmetrici.Nella Fig. XIX.4.32 viene mostrato il ciclo di iste-
+resi di un materiale magnetico sottoposto ad un’eccitazione alternata in cui si evidenzia 
+che i valori di induzione magnetica durante il ciclo ascendente e quello discendente non si 
+sovrappongono.
+Quando un induttore con nucleo ferromagnetico è percorso da una corrente alternata 
+sovrapposta a una corrente continua, si determina una forte magnetizzazione del nucleo.
+Il ciclo di magnetizzazione si sposta, il ciclo di isteresi assume la forma mostrata nella 
+Fig. XIX.4.33.
+Il ciclo di isteresi è caratterizzato dal valore della permeabilità media, o permeabilità 
+incrementale µi, misurata in H/m, e così definita:
+(XIX.4.22)
+La permeabilità incrementale è proporzionale alla pendenza della linea che congiunge 
+le estremità del ciclo d’isteresi.
+Il valore dell’induttanza di una bobina è direttamente proporzionale alla permeabilità 
+magnetica incrementale, per cui anche il suo valore risente delle modificazioni del valore 
+di permeabilità magnetica indotte nel circuito magnetico dalla componente continua della 
+corrente circolante nell’induttore.
+La permeabilità magnetica di un nucleo ferromagnetico continuo è elevata quando si è 
+lontani dal punto di saturazione e diminuisce quando l’intensità di magnetizzazione H
+aumenta.
+Introducendo un traferro, la permeabilità magnetica del circuito magnetico dipende 
+dal contributo di quella incrementale e di quella del traferro. Se quest’ultima è sufficiente-
+mente elevata, si può fare in modo che il valore dell’induttanza della bobina dipenda solo 
+dalla permeabilità del traferro e diventi insensibile alle variazioni della permeabilità 
+incrementale dovuta alle variazioni di corrente.
+Fig. XIX.4.32  Ciclo di isteresi.
+Fig. XIX.4.33  Ciclo di isteresi di indut-
+tore percorso da corrente alternata.
+H
+H1
+-H1
+O
+A1
+A3
+A4
+A2
+Br
+B
+B
+H
+[Wb / m2]
+[A / m]
+H
+B
+Permeabilità incrementale
+i =
+i
+B
+H
+-------
+=
+
+[PAG 2016]
+XIX-144
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Il traferro viene realizzato distanziando fra loro i giunti delle lamine che compongono 
+il nucleo.
+La forma dei lamierini può variare in funzione del tipo di applicazione dell’induttore. 
+L’induttore toroidale viene realizzato avvolgendo uniformemente attorno ad un nucleo ad 
+anello una bobina. Poiché il circuito magnetico è chiuso, questo induttore non ha pratica-
+mente flusso disperso ed è poco sensibile ai campi magnetici esterni. Inoltre, realizzando 
+il nucleo utilizzando polvere di ferro sinterizzata, l’induttore presenta elevati valori del 
+coefficiente di merito Q.
+I nuclei ferromagnetici possono poi entro certi limiti variare il valore dell’induttanza 
+modificando la posizione del nucleo rispetto all’avvolgimento della bobina. Gli induttori 
+variabili vengono realizzati in modo tale che la posizione del nucleo possa essere modifi-
+cata utilizzando un albero di comando che agendo su una vite senza fine consenta la tra-
+slazione del nucleo lungo l’asse della bobina. In quasi tutte le realizzazioni la rotazione 
+dell’albero viene comandata attraverso una vite di regolazione.
+4.8.3  Schermatura degli induttori
+Durante il suo funzionamento un induttore provoca nello spazio circostante un campo 
+magnetico che induce disturbi e interferenze nel corretto funzionamento delle apparec-
+chiature adiacenti.
+L’annullamento del campo magnetico può essere ottenuto  impedendo al flusso 
+magnetico di disperdersi nello spazio circostante, oppure creando un campo magnetico 
+con la stessa intensità ma di segno opposto che ne annulli gli effetti.
+Tale risultato viene ottenuto racchiudendo l’induttore in un contenitore ermetico. Nei 
+circuiti magnetici che operano in bassa frequenza si ricorre al primo metodo costruendo lo 
+schermo utilizzando materiali ferromagnetici ad alta permeabilità iniziale, quali il permal-
+loy o il mumetal. Nei circuiti magnetici che operano in alta frequenza si adotta invece il 
+secondo metodo di schermatura utilizzando materiali ad alta conducibilità, quali il rame o 
+l’alluminio.
+Lo schermo in materiale ferromagnetico concentra le linee di flusso nel proprio 
+interno impedendone la dispersione all’esterno. Il circuito magnetico non deve presentare 
+interruzioni meccaniche e lo spessore dello schermo deve essere tale da garantire una 
+buona schermatura.
+Lo schermo ad alta conducibilità costituisce invece per il circuito magnetico una spira 
+cortocircuitata che si accoppia alla bobina generando nello spazio esterno un campo 
+magnetico avente la stessa intensità di quello generato dalla bobina, ma di segno opposto. 
+Lo schermo influenza il valore dell’induttanza e il fattore di merito della bobina, 
+facendoli diminuire. Tale effetto può essere minimizzato adottando accorgimenti costrut-
+tivi particolari, come quello di mantenere una distanza schermo-bobina almeno pari al 
+diametro della bobina e di utilizzare una lamiera di spessore adatto.
+BIBLIOGRAFIA
+BIONDO G. - SACCHI E., Manuale di elettronica e telecomunicazioni, 5a edizione, 
+Hoepli, Milano, 2005.
+BWIA G., Componenti elettronici passivi, CLUEP, Padova, 1973.
+FERRI F.M., TDP Tecnologia elettronica 1 e 2, Hoepli, Milano, 1998.
+FIGINI G. - TORELLI U,. Impianti elettrici per l’industria e le macchine operatrici, 
+manuale di applicazione delle norme CEI, Hoepli, Milano, 1995.
+FIGINI G. - TORELLI U., Impianti elettrici civili, manuale di applicazione delle norme 
+CEI, Hoepli, Milano, 2000.
+GRAY D. - SEARLE C., Principi di elettronica, Tamburini, Milano, 1973.
+
+[PAG 2017]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-145
+MILLMAN J., Microelectronics, McGraw Hill, Milano, 1979. 
+MILLMAN J. - HALKIAS C., Dispositivi e circuiti elettronici, Boringhieri, Torino, 
+1982.
+ORTOLANI G. - VENTURI E., Schemi e apparecchi negli impianti elettrici 1 e 2, Hoe-
+pli, Milano, 1995.
+ORTOLANI G. - VENTURI E., Esercitazioni pratiche vol. 1, Hoepli, Milano, 2005.
+ORTOLANI G. - VENTURI E., Esercitazioni pratiche vol. 2, Hoepli, Milano, 2006.
+SILVESTRONI P., Fondamenti di chimica, Lib. Eredi Veschi, Roma, 1982.
+SZE S.M., Fisica dei dispositivi a semiconduttore, Tamburini, Milano, 1973.
+CATALOGHI E PUBBLICAZIONI: 3F Filippi, Alcatel cavi, Alfacavi, Arno canali, Aros, 
+Ave, Beghelli, Bierrebrocca, Bremas, Breter, BTicino, Carlo Bezzi, CEAT cavi indu-
+strie, CEMP, Crouzet, Disano, Elcontrol, Elettrocondutture, Fabbrica Italiana Relè, 
+Finder, Fantini Cosmi, Gewiss, Intersil, Legrand, Lovato, Manuli cavi, Merlin Gerin, 
+Mondini cavi, Motorola, National Semiconductor, Oemer, Omron, Palazzoli, Philips, 
+Pirelli cavi, Siei Petrolongo, Scame, Schneider, Serai, SGS-Thomson, Siemens, 
+Telemecanique, Texas Instruments, Vantaggimauri, Weber, Vimar, Vortice.
+
+[PAG 2019]
+INDICE
+pag.
+1   PROGETTO DEGLI IMPIANTI ELETTRICI  . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.1   Obbligatorietà del progetto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.2   Livelli di progetto  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.3   Destinazione d’uso delle opere . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 5
+1.4   Documentazione di progetto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 5
+2   APPLICAZIONI ELETTRICHE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 8
+2.1   Impianto elettrico di abitazione civile . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 8
+2.1.1  Tipologie di impianti elettrici negli edifici civili  . . . . . . . . . . . . . . .
+9
+2.1.2  Dimensionamento dell’impianto elettrico di un appartamento . . . . .
+13
+2.1.3  Redazione dello schema unifilare dell’impianto . . . . . . . . . . . . . . . .
+35
+2.1.4  Capitolato e preventivo di spesa . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 41
+2.1.5  Collaudi e verifiche a termine lavori e documentazione finale . . . . .
+43
+2.2   Rifacimento dell’impianto elettrico di un capannone industriale. . . . . . . . .
+ 54
+2.2.1  Definizione della documentazione di progetto . . . . . . . . . . . . . . . . .
+54
+2.2.2  Relazione generale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 54
+2.2.3  Relazione specialistica sulla consistenza e tipologia dell’impianto
+ elettrico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 55
+2.2.4  Elaborati grafici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+60
+2.2.5  Calcoli esecutivi (relazione illustrativa)   . . . . . . . . . . . . . . . . . . . . .
+68
+2.2.6  Tabelle e diagrammi di coordinamento delle protezioni . . . . . . . . . .
+72
+2.2.7  Computo metrico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+74
+2.2.8  Computo metrico estimativo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+74
+2.2.9  Capitolato speciale d’appalto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+74
+2.3   Impianto elettrico industriale con cabina di trasformazione MT/BT . . . . . .
+74
+2.3.1  Definizione della documentazione di progetto . . . . . . . . . . . . . . . . .
+75
+2.3.2  Relazione generale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+75
+2.3.3  Relazione specialistica sulla consistenza e tipologia dell’impianto
+ elettrico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+75
+2.3.4  Elaborati grafici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+81
+2.3.5  Calcoli esecutivi (relazione illustrativa) . . . . . . . . . . . . . . . . . . . . . .
+ 86
+2.3.6  Tabelle e diagrammi di coordinamento delle protezioni . . . . . . . . . .
+94
+2.3.7  Computo metrico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+87
+2.3.8  Computo metrico estimativo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+87
+2.3.9  Capitolato speciale d’appalto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+96
+2.4   Gestione automatica del riscaldamento di una scuola tramite controllore a 
+logica programmabile (PLC) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 97
+2.4.1  Caratteristiche funzionali del sistema . . . . . . . . . . . . . . . . . . . . . . . .
+97
+2.4.2  Descrizione funzionamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+97
+2.5   Dimensionamento illuminotecnico di una sala lettura . . . . . . . . . . . . . . . . .
+ 106
+Sezione XX
+Progettazione elettrica 
+ed elettronica
+
+[PAG 2020]
+XX-2
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+2.5.1  Generalità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+106
+2.5.2  Scelta degli apparecchi illuminanti  . . . . . . . . . . . . . . . . . . . . . . . . . 
+106
+2.5.3  Calcolo illuminotecnico col metodo del flusso totale . . . . . . . . . . . . 
+ 107
+2.5.4  Preventivo sommario delle spese . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+110
+3   PROGETTO DEGLI IMPIANTI ELETTRONICI  . . . . . . . . . . . . . . . . . . . . . . . 
+111
+3.1   Metodi per la progettazione di apparecchiature elettroniche. . . . . . . . . . . . 
+ 112
+3.1.1  Limiti meccanici e termici di funzionamento delle apparecchiature . 
+ 114
+3.1.2  Affidabilità di un progetto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+114
+3.1.3  Stabilità . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 115
+3.1.4  Collegamento a massa delle apparecchiature elettroniche . . . . . . . . 
+ 115
+3.1.5  Collaudo e messa a punto di un’apparecchiatura elettronica . . . . . . 
+116
+3.1.6  Metodi per la realizzazione delle apparecchiature elettroniche  . . . . 
+118
+3.1.7  Documentazione di un’apparecchiatura elettronica . . . . . . . . . . . . . 
+123
+3.1.8  Categorie di rischio per il progetto di un impianto  . . . . . . . . . . . . . 
+124
+3.1.9  Valutazione dei costi per la determinazione del prezzo di vendita . . 
+ 126
+3.2   Metodi per l’assemblaggio delle apparecchiature elettroniche . . . . . . . . . . 
+ 128
+3.2.1  Montaggio di una scheda elettronica a circuito stampato . . . . . . . . . 
+ 128
+3.2.2  Saldatura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 130
+3.2.3  Tecniche di saldatura manuale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+131
+3.2.4  Tecniche di saldatura automatica . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 131
+3.2.5  Tecnica di montaggio superficiale . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 132
+3.3   Circuiti stampati. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 135
+3.3.1  Processi di fabbricazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 137
+3.3.2  Materiali per la realizzazione dei circuiti stampati . . . . . . . . . . . . . . 
+ 140
+3.3.3  Circuiti stampati flessibili . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 140
+4   APPLICAZIONI ELETTRONICHE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 141
+4.1   Dimensionamento dei dissipatori di calore. . . . . . . . . . . . . . . . . . . . . . . . . 
+ 141
+4.1.1  Calcolo dei dissipatori termici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 142
+4.2   Alimentatori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 147
+4.2.1  Alimentatori in corrente continua. . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 147
+4.2.2  Stabilizzatori integrati . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+161
+4.2.3  Regolatori a commutazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 162
+4.2.4  Confronto fra alimentatori convenzionali e a commutazione . . . . . . 
+ 167
+4.2.5  Alimentatore con regolatore a tre terminali . . . . . . . . . . . . . . . . . . . 
+167
+4.2.6  Alimentatore con regolatore a 3 terminali con tensione regolabile  . 
+172
+4.2.7  Alimentatore con regolatore a 4 terminali con tensione regolabile . . 
+ 175
+4.3   Cronometro   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+182
+4.3.1  Descrizione del problema . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 182
+4.3.2  Specifiche tecniche. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 185
+4.3.3  Analisi funzionale e schema a blocchi . . . . . . . . . . . . . . . . . . . . . . . 
+185
+4.4   Orologio digitale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 189
+4.4.1  Descrizione del problema . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 189
+4.4.2  Definizione delle specifiche di progetto . . . . . . . . . . . . . . . . . . . . . . 
+ 189
+4.4.3  Analisi delle soluzioni tecniche e scelta dei dispositivi elettronici . . 
+ 189
+4.5   Serratura elettronica a combinazione di 5 cifre . . . . . . . . . . . . . . . . . . . . . 
+196
+4.5.1  Descrizione del problema e specifiche di progetto  . . . . . . . . . . . . . 
+196
+
+[PAG 2021]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-3
+4.5.2  Analisi funzionale e schema a blocchi  . . . . . . . . . . . . . . . . . . . . . . .
+196
+4.5.3  Schema elettrico e dimensionamento . . . . . . . . . . . . . . . . . . . . . . . .
+198
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+211
+1  PROGETTO DEGLI IMPIANTI ELETTRICI
+1.1  Obbligatorietà del progetto
+Il Decreto Ministeriale n. 37 del 22/01/2008 che ha sostituito la legge 40/90 e il rela-
+tivo regolamento di attuazione (DPR n. 447 del 6-12-1991) “si applica agli impianti posti 
+al servizio degli edifici, indipendentemente dalla destinazione d’uso, collocati all’interno 
+degli stessi o delle relative pertinenze. Se l’impianto è connesso a reti di distribuzione si 
+applica a partire dal punto di consegna della fornitura”. Per quanto concerne il settore 
+elettrico, si faccia riferimento in particolare agli articoli 1, 2, 5 e 6 del decreto che preve-
+dono l’obbligatorietà del progetto, che deve essere redatto da un professionista iscritto 
+negli albi professionali secondo la specifica competenza, nei seguenti casi:
+a) Impianti di produzione, trasformazione, trasporto, distribuzione, utilizzazione 
+dell’energia elettrica, impianti di protezione contro le scariche atmosferiche, nonché gli 
+impianti per l’automazione di porte, cancelli e barriere, per tutte le utenze condominiali e 
+per utenze domestiche di singole unità abitative aventi potenza impegnata maggiore di 6 
+kW o per utenze domestiche di singole unità abitative di superficie superiore a 400 m2. Si 
+precisa che per impianti di produzione, trasformazione, trasporto, distribuzione, utilizza-
+zione dell’energia elettrica si intendono: i circuiti di alimentazione degli apparecchi utiliz-
+zatori e delle prese a spina con esclusione degli equipaggiamenti elettrici delle macchine, 
+degli utensili, degli apparecchi elettrici in genere. Nell’ambito degli impianti elettrici rien-
+trano anche quelli di autoproduzione di energia fino a 20 kW nominale, gli impianti per 
+l’automazione di porte, cancelli e barriere, nonché quelli posti all’esterno di edifici se gli 
+stessi sono collegati, anche solo funzionalmente, agli edifici.
+b) Impianti elettrici realizzati con lampade fluorescenti a catodo freddo, collegati ad 
+impianti elettrici, per i quali è obbligatorio il progetto e in ogni caso per impianti di 
+potenza complessiva maggiore di 1200 VA resa dagli alimentatori.
+c) Impianti relativi agli immobili adibiti ad attività produttive, al commercio, al terzia-
+rio e ad altri usi, quando le utenze sono alimentate a tensione superiore a 1000 V, inclusa 
+la parte in bassa tensione, o quando le utenze sono alimentate in bassa tensione aventi 
+potenza impegnata superiore a 6 kW o qualora la superficie superi i 200 m2.
+d) Impianti elettrici relativi ad unità immobiliari provviste, anche solo parzialmente, 
+di ambienti soggetti a normativa specifica del CEI, in caso di locali adibiti ad uso medico 
+o per i quali sussista pericolo di esplosione o a maggior rischio di incendio, nonché per gli 
+impianti di protezione da scariche atmosferiche in edifici di volume superiore a 200 mc;
+e) Impianti elettronici in genere quando coesistono con impianti elettrici con obbligo 
+di progettazione.
+Nei casi diversi da quelli elencati sopra, il progetto può essere redatto dal responsabile 
+tecnico dell’impresa installatrice.
+Lo stesso decreto prevede che i progetti degli impianti siano elaborati secondo la
