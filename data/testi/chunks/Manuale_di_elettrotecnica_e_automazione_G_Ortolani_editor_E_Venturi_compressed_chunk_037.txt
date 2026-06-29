@@ -1,0 +1,1552 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 37/116 ===
+Chars: 43,629 | Offset: 1,589,584
+
+
+
+[PAG 823]
+MISURE ELETTRICHE
+IX-55
+(IX.12.4)
+cioè l’elongazione è proporzionale alla carica. Kb è detta costante balistica.
+12.1.2  Misura della capacità di un condensatore
+Si realizza il circuito di Fig. IX.12.2 e, attraverso il deviatore, (1) si carica il conden-
+satore su una sorgente di tensione U nota, (2) si scarica il condensatore sul galvanometro 
+balistico e si misura la carica Q. Il valore di capacità è: C = QU.
+Fig. IX.12.2  Misura di capacità con galvanometro balistico.
+La misura di capacità può anche essere compiuta col metodo di confronto, disponendo 
+di un condensatore campione.
+12.1.3  Misura del flusso
+Occorre disporre di un nucleo toroidale, oppure rettilineo ma di lunghezza molto 
+grande rispetto allo spessore. Su di esso si realizzano due avvolgimenti, uno primario di 
+N1 spire, per l’azione magnetizzante, l’altro secondario di N2 spire localizzate su un breve 
+tratto centrale, per la misura (Fig. IX.12.3).
+Fig. IX.12.3  Misura di flusso mediante galvanometro balistico.
+Il primario viene alimentato da una sorgente tramite una resistenza di regolazione; il 
+secondario è chiuso sul galvanometro balistico attraverso una resistenza di protezione. 
+Alla chiusura dell’interruttore, sempre ammesso che la costante di tempo elettromagnetica 
+sia breve rispetto a quella meccanica, si sviluppa al secondario una fem indotta. Dalla 
+legge di induzione elettromagnetica è, in valore assoluto: d = e2 dtN2 = k i2 dt = k dq. 
+Integrando si ottiene:  = k Q e l’elongazione del galvanometro balistico, data dalla 
+
+Q
+Kb
+
+=
+Gb
+C
+U
++
+1
+2
+Gb
+R2
+R1
+N2
+N1
+I1
+t1
+U
++
+
+[PAG 824]
+IX-56
+MISURE ELETTRICHE
+IX.12.4 sarà proporzionale al flusso:
+(IX.12.5)
+12.2  Generatore di Hall
+È costituito da una piastrina rettangolare di piccolo spessore in materiale conduttore, 
+funzionante elettricamente sui due assi del rettangolo: uno principale, percorso dalla cor-
+rente IH, l’altro secondario che costituisce il lato di misura (Fig. IX.12.4).
+Fig. IX.12.4  Schema di principio del generatore di Hall.
+Quando la piastrina è immersa in un campo magnetico di induzione B agente in dire-
+zione normale ad essa, si determina fra i terminali di misura una tensione UH proporziona-
+le alla corrente e all’induzione:
+(IX.12.6)
+  
+Fig. IX.12.5  Impiego del generatore di Hall: a) per la misura di corrente; b) per la misura 
+di potenza.
+Lo strumento viene tarato in modo da determinare la costante KH e poi impiegato per 
+varie misure fra le quali citiamo le seguenti.
+a)  Se IH è nota e costante lo strumento può misurare un flusso.
+b)  Se B è nota e costante lo strumento può misurare una corrente. Data l’esiguità della 
+corrente IH, la misura di una corrente I anche rilevante si esegue normalmente impiegan-
+dola come magnetizzante del nucleo magnetico. Nota la dipendenza fra induzione e fmm, 
+dalla misura di B si risale a quella della corrente I (Fig. IX.12.5).
+
+
+k
+Kb
+
+
+
+
+=
+B
+UH
+IH
+
+
+UH
+KHIHB
+=
+G
+U
+IH
+I
+a)
+I
+G
+Rv
+b)
+U
+
+[PAG 825]
+MISURE ELETTRICHE
+IX-57
+c)  Lo strumento può misurare una potenza alimentandolo con due circuiti:
+–  uno amperometrico, in cui la corrente I viene utilizzata per ottenere l’induzione B, 
+come nel caso precedente;
+–  uno voltmetrico, di resistenza Rv, in cui è IH = U Rv.
+12.3  Fasometro
+Consente di misurare l’angolo di sfasamento fra la tensione e la corrente di un cir-
+cuito. È uno strumento logometrico (a rapporto) formato da una bobina fissa di tipo ampe-
+rometrico, connessa in serie al carico, entro il cui campo è posto l’equipaggio mobile, 
+privo di molla antagonista e costituito da due bobine solidali identiche e incrocia-te ad 
+angolo retto. Le due bobine mobili, la (1) in serie con una resistenza e la (2) in serie con 
+una reattanza induttiva, sono poi collegate in parallelo e costituiscono il circuito voltme-
+trico (Fig. IX.12.6).
+    
+Fig. IX.12.6  Fasometro logometrico: a) schema elettrico; b) diagramma vettoriale.
+Ogni bobina è soggetta ad una coppia elettrodinamica che dipende dalle correnti della 
+bobina fissa e mobile, dal coseno dell’angolo di fase  fra di esse e dall’angolo  che sus-
+siste fra i loro assi. In particolare le coppie risultano:
+In equilibrio è C1 = C2 e quindi:
+(IX.12.7)
+Per circuito resistivo lo strumento presenta l’indice al centro della scala mentre per 
+circuito induttivo o capacitivo l’indice ruota di 90° rispettivamente in senso orario o 
+antiorario.
+12.4  Frequenzimetri
+Sono strumenti che servono per la misura della frequenza di grandezze alternate. Sono 
+realizzati secondo diversi principi di funzionamento e possono essere: a risonanza mecca-
+nica, a risonanza elettrica, a rapporto.
+Il più diffuso è il frequenzimetro a risonanza meccanica. È costituito da una barra che 
+sostiene una successione di lamelle diversamente zavorrate in modo che abbiano una fre-
+quenza di risonanza propria diversa e in successione. La barra è parte di un circuito 
+magnetizzato dalla fmm generata da una bobina alimentata dalla sorgente elettrica.
+Per effetto della corrente alternata della bobina, la barretta è sollecitata a vibrare a fre-
+quenza doppia di quella della corrente, trascinando in vibrazione tutte le lamelle. Quelle 
+in risonanza o prossime vibrano più ampiamente e permettono la lettura della frequenza 
+su una scala tarata (Fig. IX.12.7).
+U
+I
+I1
+I2
+R
+X
+1
+2
+a)
+I
+I2
+I1
+U
+
+b)
+C1
+KII1cossen,
+=
+C2
+KII2sencos
+=
+tg
+KFtg
+=
+
+[PAG 826]
+IX-58
+MISURE ELETTRICHE
+          
+Fig. IX.12.7  a) Schema indicativo di un frequenzimetro a risonanza meccanica; b) 
+lamelle vibranti.
+12.5  Indicatori di senso ciclico
+Sono utilizzati per indicare la successione corretta delle fasi di un sistema trifase (L1, 
+L2, L3 oppure R, S, T). Possono essere a campo rotante o statici.
+I primi funzionano in base al principio del campo rotante prodotto da un sistema tri-
+fase di elettromagneti. Il rotore si riduce ad un disco di alluminio che si mette in rotazione 
+confermando o meno l’ordine ciclico delle fasi (Fig. IX.12.8).
+Fig. IX.12.8  Indicatore di senso ciclico a campo rotante.
+Gli indicatori statici sono semplicemente costituiti da un circuito trifase a stella, con 
+la fase 1 operante su un condensatore e le fasi 2 e 3 su lampade (Fig. IX.12.9).
+Fig. IX.12.9  Indicatore di senso ciclico a lampade.
+Lo spostamento del centro stella dovuto allo squilibrio del circuito è tale per cui la 
+tensione stellata della fase 2, successiva a quella del condensatore, risulta molto maggiore 
+di quella della fase 3 e la lampada corrispondente molto più accesa dell’altra.
+R
+a)
+b)
+f
+L1
+L2
+L3
+L1
+L2
+L3
+3
+1
+2
+
+[PAG 827]
+MISURE ELETTRICHE
+IX-59
+13  TRASFORMATORI DI MISURA
+Questi trasformatori hanno il compito di trasformare, secondo un rapporto fisso e con 
+molta precisione, uno dei due fattori della potenza elettrica, la tensione o la corrente. Sono 
+impiegati per ridurre le grandezze di linea a valori adatti per la connessione di strumenti 
+oppure di particolari dispositivi di regolazione e molti apparecchi ausiliari. Essi perse-
+guono anche lo scopo di isolare la rete dai circuiti secondari e devono avere sempre uno 
+dei terminali secondari connesso a terra. I trasformatori di misura si distinguono in: tra-
+sformatori di tensione (TV) e trasformatori di corrente (TA).
+13.1  Trasformatore di tensione
+13.1.1  Caratteristiche di impiego
+Il trasformatore di tensione ha il compito di ridurre una tensione elevata in una a 
+valore inferiore, adatta agli apparecchi da alimentare, tutti connessi in parallelo (Fig. 
+IX.13.1).
+Fig. IX.13.1  Schema di collegamento di un trasformatore di tensione.
+Si definisce prestazione il valore di potenza apparente Sn, oppure di ammettenza Y, 
+che un trasformatore è in grado di alimentare rimanendo nei limiti di errore ammessi dalla 
+classe di appartenenza:
+(IX.13.1)
+Per un trasformatore di tensione occorre distinguere,
+–  un rapporto teorico:
+(IX.13.2)
+–  un rapporto nominale:
+(IX.13.3)
+–  un rapporto reale:
+(IX.13.4)
+Il rapporto teorico interessa soltanto il progettista.
+Il rapporto reale, che il trasformatore esercita in funzionamento, può essere diverso da 
+quello nominale letto in targa, perché varia con la prestazione; ciò è dovuto principal-
+mente alla variazione della caduta di tensione interna.
+13.1.2  Errori e classi di precisione
+Gli errori insiti nell’impiego del trasformatore di tensione sono di due tipi: errore di 
+rapporto e errore d’angolo.
+U1
+U2
+V Y1
+Y2
+Y3
+Sn
+U2I2
+YU2
+2
+=
+=
+Kt
+N1
+N2
+
+E1
+E2
+
+=
+=
+Kn
+U1n
+U2n
+
+=
+K
+U1
+U2
+
+=
+
+[PAG 828]
+IX-60
+MISURE ELETTRICHE
+L’errore di rapporto () è dovuto alla differenza fra il rapporto nominale e quello 
+effettivo. In valore percentuale è:
+(IX.13.5)
+L’errore d’angolo () è l’angolo che può determinarsi fra la tensione primaria e quella 
+secondaria. Viene espresso comunemente in centiradianti (c.rad.).
+Le norme stabiliscono cinque classi di precisione dei TV, indicate in Tab. IX.13.1.
+I trasformatori di tensione sono unità monofasi; sulle reti trifasi se ne possono instal-
+lare due in collegamento a V oppure tre in collegamento a stella (Fig. IX.13.2).
+     
+Fig. IX.13.2  Collegamento trifase di TV: a) a V; b) a stella.
+13.2  Trasformatore di corrente
+13.2.1  Caratteristiche di impiego
+Il trasformatore di corrente ha il compito di ridurre una corrente elevata in una a 
+valore inferiore, adatta agli apparecchi da alimentare, tutti connessi in serie (Fig. IX.13.3).
+Fig. IX.13.3  Schema di collegamento di un trasformatore di corrente.
+Si definisce prestazione il valore di potenza apparente Sn, oppure di impedenza Z, che 
+un trasformatore è in grado di alimentare rimanendo nei limiti di errore ammessi dalla 
+Tab. IX.13.1   Classi di precisione dei TV
+classe
+0,1
+0.2
+0,5
+
+3
+ (%)
+
+
+
+
+
+(c.rad.)
+
+
+
+
+
+%
+100 Kn
+K
+–
+
+
+K
+
+=
+a)
+b)
+Z1
+Z2
+Z3
+
+[PAG 829]
+MISURE ELETTRICHE
+IX-61
+classe di appartenenza:
+(IX.13.6)
+Per un trasformatore di corrente occorre distinguere,
+–  un rapporto teorico:
+(IX.13.7)
+–  un rapporto nominale:
+(IX.13.8)
+–  un rapporto reale:
+(IX.13.9)
+Il rapporto teorico interessa soltanto il progettista.
+Il rapporto reale, che il trasformatore esercita in funzionamento, può essere diverso da 
+quello nominale letto in targa, perché varia con la prestazione; ciò è dovuto principal-
+mente alla variazione della incidenza della corrente a vuoto.
+13.2.2  Errori e classi di precisione
+Gli errori insiti nell’impiego del trasformatore di corrente sono di due tipi: errore di 
+rapporto e errore d’angolo.
+L’errore di rapporto (), come per il TV, è dato dalla formula IX.13.5.
+L’errore d’angolo () è l’angolo che può determinarsi fra la corrente primaria e quella 
+secondaria. Le norme stabiliscono sei classi di precisione dei TA, indicate in Tab. IX.13.2.
+I trasformatori di corrente sono unità monofasi; sulle reti trifasi se ne possono instal-
+lare due oppure tre in collegamento a stella (Fig. IX.13.4).
+ 
+Fig. IX.13.4.  Collegamento trifase di TA: a) con 2 TA; b) a stella.
+Tab. IX.13.2   Classi di precisione dei TA
+classe
+0,1
+0,2
+0,5
+
+3
+5
+ (%)
+
+
+
+
+
+
+(c.rad.)
+
+
+
+
+
+
+Sn
+U2I2
+ZI2
+2
+=
+=
+Kt
+N2
+N1
+
+I'
+I2
+
+=
+=
+Kn
+I1n
+I2n
+
+=
+K
+I1
+I2
+
+=
+A
+A
+A
+a)
+A
+A
+A
+b)
+
+[PAG 830]
+IX-62
+MISURE ELETTRICHE
+14  MISURE SULLE MACCHINE ELETTRICHE
+14.1  Misure delle perdite di un lamierino magnetico
+14.1.1  Apparecchio di Epstein
+Le perdite di un lamierino magnetico, per isteresi e correnti parassite (si veda la Sez. 
+VIII Macchine elettriche Cap.1), sono rappresentate dalla formula:
+(IX.14.1)
+Come indice di riferimento per valutare le caratteristiche del lamierino è stata definita 
+la cifra di perdita, cioè la perdita per kg di lamierino alla frequenza di 50 Hz e all’indu-
+zione massima di 1 T. Esistono anche altri riferimenti, che devono essere specificati (ad 
+esempio 60 Hz).
+La determinazione della cifra di perdita si esegue mediante l’apparecchio di Epstein. 
+Si tratta di una struttura quadrata preformata con quattro bobine, disposte sui quattro lati, 
+ciascuna munita di due avvolgimenti uguali di 150 spire. Il lamierino da sottoporre a 
+misura deve essere tagliato in strisce larghe 30 mm e lunghe 500 mm ed impaccato 
+all’interno delle bobine a formare il nucleo magnetico di un trasformatore di sezione netta 
+A. Collegati i lati delle bobine ordinatamente in serie si realizza un trasformatore con rap-
+porto di trasformazione unitario e con N = 600 spire (Fig. IX.14.1).
+Fig. IX.14.1  Struttura dell’apparecchio di Epstein.
+Il circuito elettrico di alimentazione (Fig. IX.14.2) comprende: al primario un ampero-
+metro e l’amperometrica del wattmetro, al secondario un voltmetro e la voltmetrica del 
+wattmetro di resistenza RW, commutabili mediante un deviatore; in questo modo si evita 
+l’errore di misura derivante dall’incidenza della caduta di tensione, sia pur piccola, dovuta 
+alla impedenza interna primaria.
+Fig. IX.14.2.  Schema elettrico di misura per l’impiego dell’apparecchio di Epstein.
+Per assicurare l’esattezza della misura occorre verificare che la frequenza e l’indu-
+zione massima siano quelle previste. La prima si misura al frequenzimetro mentre la 
+seconda è correlata ad un preciso valore di tensione (Sottopar. 2.2.1 della Sez. VIII):
+U = 4,44 f N BM A che, nel nostro caso, con f = 50 Hz, BM = 1 T, N = 600 spire, diviene:
+Pf
+Pi
+Pcp
++
+KifBM
+
+Kcpf2BM
+2
++
+=
+=
+A
+V
+W
+f
+1
+2
+
+[PAG 831]
+MISURE ELETTRICHE
+IX-63
+(IX.14.2)
+Effettuata la lettura della frequenza e della tensione prevista (deviatore in 1), si legge 
+la potenza P0 (deviatore in 2) e si ottiene:
+(IX.14.3)
+Noto il peso netto G del lamierino si ottiene la:
+(IX.14.4)
+14.1.2  Separazione delle perdite
+La separazione delle perdite di isteresi da quelle per correnti parassite si compie 
+facendo la prova a due frequenze diverse f e f’, sempre mantenendo costante BM. Appli-
+cando la IX.14.1 e indicando con A e C i due fattori costanti, si ottiene,
+per f: p = Pf f = A + C f;
+per f’: p’ = P’f f’ = A + C f’.
+Sviluppando il sistema risulta:
+(IX.14.5)
+da cui:
+(IX.14.6)
+(IX.14.7)
+Esempio 1.
+Un campione di lamierino è stato sottoposto a due prove per stabilirne le perdite, 
+entrambe all’induzione massima di 1 T, e ne sono derivati i valori seguenti:
+1)  per f = 50 Hz, P = 800 W;
+2)  per f’ = 25 Hz, P’ = 250 W.
+Si vogliono determinare le perdite per isteresi e quelle per correnti parassite alla fre-
+quenza di 50 Hz.
+Procedimento.
+Si calcola:
+–  p = P  f = 800  50 = 16 WHz e p’ = P’  f’ = 250  25 = 10 WHz.
+Dalla IX.14.5 risulta:
+–  C = (p  p’) (f  f’) = (16  10) 25 = 0,24 WHz2 e A = p  C f = 16  0,24  50 = 4 
+WHz
+e quindi:
+–  Pi = A f = 4  50 = 200 W; Pcp = P  Pi = 800  200 = 600 W.
+14.2  Misura della resistenza degli avvolgimenti
+La misura della resistenza degli avvolgimenti è comune a tutte le macchine. È fonda-
+mentale nel caso della prova indiretta, perché fornisce la possibilità di rilevare il parame-
+tro interno dissipativo che determina le perdite nel rame e, in parte, la caduta di tensione 
+interna. Trattandosi di resistenze di valore modesto si possono applicare alcuni metodi, 
+già indicati nel Cap. 7 che sono, in ordine di precisione: ohmmetro in serie (tester), 
+metodo voltamperometrico, metodo di confronto o a ponte. La misura è effettuata in cor-
+rente continua e, col metodo voltamperometrico, è consigliabile inserire nel circuito un 
+U
+13,32
+10 4
+–
+A
+
+=
+Pf
+P0
+U2
+–
+RW
+
+=
+cifra di perdita
+Pf
+G
+
+=
+C
+p
+p'
+–
+
+
+f
+f'
+–
+
+,
+
+=
+A
+p
+Cf
+–
+=
+le perdite per isteresi,
+Pi
+Af
+=
+le perdite per corrente parassite,
+Pcp
+Cf2
+=
+
+[PAG 832]
+IX-64
+MISURE ELETTRICHE
+reostato di regolazione e protezione. Data la variabilità termica della resistenza, è neces-
+sario associare al valore misurato, la temperatura alla quale si riferisce.
+Per gli avvolgimenti di macchine trifasi, quando le tre fasi sono accessibili singolar-
+mente in morsettiera, si eseguono tre misure e si assume come resistenza di fase il valore 
+medio.
+Quando invece si hanno a disposizione soltanto i tre morsetti della macchina, e si 
+ignora il tipo di collegamento, si può procedere effettuando la misura di resistenza Rm esi-
+stente fra due dei tre morsetti disponibili. Si verifica che nel collegamento a stella, con 
+resistenza di fase Rst, è Rm = 2 Rst, nel collegamento a triangolo, con resistenza di fase Rtr
+è Rm = 2 Rtr  3.
+In entrambi i casi le perdite nel rame risultano indipendenti dal collegamento e date da:
+(IX.14.8)
+Nelle prove indirette è richiesto che il valore di resistenza Ra, misurata alla tempera-
+tura ambiente Ta, venga ricondotto ad un valore convenzionale di temperatura, che nor-
+malmente è di 75 °C. In tal caso il riporto va fatto utilizzando la formula (si veda il Par. 
+1.1 Sez. VIII):
+(IX.14.9)
+Le prove dirette delle macchine devono essere condotte alla temperatura di regime ter-
+mico. In questo caso si può dedurre la temperatura della macchina nelle condizioni di fun-
+zionamento mediante due misure di resistenza sullo stesso avvolgimento, una Ra a 
+temperatura ambiente Ta e l’altra Rb alla temperatura di funzionamento Tb. Risulta:
+(IX.14.10)
+14.3  Prove di isolamento
+Sono eseguite per verificare l’integrità e la tenuta dei materiali impiegati. Sono 
+distinte in: misura della resistenza di isolamento, prova con tensione applicata, prova con 
+tensione indotta.
+La misura della resistenza di isolamento deve essere effettuata in corrente continua e 
+a tensione prescritta (almeno 250 V). La resistenza, misurata alla temperatura di regime, 
+deve risultare maggiore del valore minimo convenzionale:
+(IX.14.11)
+Per la misura si impiega generalmente il megaohmmetro a bobine incrociate (si veda il 
+Sottopar. 7.3.2).
+La misura con tensione applicata serve a produrre una sollecitazione elettrica degli 
+avvolgimenti e a verificarne eventuali cedimenti per difetti di isolamento. Le prove sono 
+condotte fra ogni avvolgimento e tutti gli altri connessi a massa e si sviluppano in due 
+fasi:
+–  una prova di lunga durata, richiesta generalmente solo per macchine a tensione nomi-
+nale maggiore di 500 V, in base alla quale si applica alla macchina una tensione 1,3 volte 
+maggiore di quella nominale per 40 minuti;
+–  una prova di breve durata, in generale 1 minuto, secondo modalità fissate dalle 
+Norme CEI. A titolo di esempio, per i trasformatori la tensione di prova richiesta è: Up = 2 
+E + 1000.
+Per questa prova si usano gli spinterometri (si veda il Sottopar. 3.4.3).
+Pcu
+3RmI2
+2
+
+=
+R75
+Ra 309,5
+234,5
+Ta
++
+
+
+
+
+
+=
+Tb
+Ta
+Rb
+Ra
+–
+
+
++
+234,5
+Ta
++
+
+
+Ra
+
+=
+Rmin
+U
+S in kVA
+1000
++
+
+
+
+=
+comunque >1 M
+
+[PAG 833]
+MISURE ELETTRICHE
+IX-65
+La prova con tensione indotta è una prova che sollecita gli avvolgimenti della mac-
+china facendola funzionare per breve tempo in sovralimentazione. Le Norme CEI stabili-
+scono, per ogni tipo di macchina, valori e modalità di misura.
+14.4  Prove dirette
+14.4.1  Generalità
+Le prove dirette consistono nel sottoporre la macchina alle sue condizioni di funziona-
+mento effettive e verificarne la rispondenza nelle varie condizioni di carico, tipicamente 
+per i quarti di carico (). La condizione  = 0 è la verifica a vuoto; la condizione  = 1,25 
+si riferisce ad un funzionamento in sovraccarico del 25%, in genere ancora tollerato dalla 
+macchina; la condizione a pieno carico,  = 1, costituisce il riferimento più comune per la 
+valutazione della macchina.
+Nella prova diretta la macchina deve essere caricata effettivamente e le misure devono 
+essere compiute alla temperatura di regime. Nel caso di macchine di grande potenza, que-
+sto può non essere possibile e si deve ricorrere necessariamente alle prove indirette.
+Dalle prove dirette si desume:
+–  il rendimento come rapporto diretto fra la potenza resa (Pr) e la potenza assorbita (Pa)
+(IX.14.12)
+–  la caratteristica esterna (per i generatori) U = f(I);
+–  la caratteristica meccanica (per i motori) C = f(n).
+14.4.2  Misura della potenza
+La misura della potenza, e di altre grandezze che dovessero interessare la macchina, 
+può essere di tipo elettrico o meccanico. Per le misure di tipo elettrico ci si avvale di 
+un’ampia strumentazione comprendente: voltmetri, amperometri, wattmetri, ed eventual-
+mente frequenzimetri od altri strumenti ausiliari, mediante la lettura dei quali si possono 
+calcolare gli elementi caratterizzanti la macchina.
+Per le misure meccaniche, un metodo di applicazione generale per la determinazione 
+della potenza è l’impiego di generatori o motori tarati. Si tratta di macchine delle quali sia 
+noto il rendimento nelle varie condizioni di carico e che perciò, misurata la potenza sul 
+lato elettrico, si possa determinare la potenza corrispondente sul lato meccanico. Inoltre, 
+effettuata la misura della velocità, si può risalire alla coppia all’albero: C = P / .
+Fig. IX.14.3  Freno elettromagnetico Pasqualini: a) circuito elettrico; b) bracci oscillanti.
+
+Pr
+Pa
+
+=
+A
+N
+N
+S
+S
++
+
+a)
+b)
+
+[PAG 834]
+IX-66
+MISURE ELETTRICHE
+14.4.3  Misura della coppia dei motori
+La misura diretta della coppia si può compiere con un particolare freno elettromagne-
+tico detto Pasqualini. È noto che nel freno elettromagnetico viene sfruttata l’azione fre-
+nante dovuta alle correnti indotte in un disco di materiale conduttore, rotante entro un 
+campo magnetico costante. Nel freno Pasqualini (Fig. IX.14.3) il campo è prodotto da un 
+elettromagnete eccitato da una corrente continua, regolabile mediante un reostato. L’elet-
+tromagnete è montato su un supporto oscillante coassiale con l’albero del motore.
+Per azione meccanica, il gruppo induttore viene sollecitato nel senso del movimento 
+del disco sbilanciandosi. Due bracci trasversali graduati, muniti di peso tarato e sposta-
+bile, permettono di bilanciare la coppia di trascinamento riportando il sistema in equili-
+brio, ad asse orizzontale. La misura si effettua in due tempi.
+Taratura. Posto a zero il peso di misura e avviato il motore a vuoto si stabilisce l’equi-
+librio del braccio agendo sul peso di taratura.
+Misura. Si carica il motore eccitando l’elettromagnete e, per ogni valore desiderato di 
+potenza si ripristina l’equilibrio agendo sul peso di misura (Fig. IX.14.4).
+Fig. IX.14.4  Equilibratura dei bracci.
+Noto il peso (p) di misura in kg e letto il braccio (b) in metri, la coppia è:
+(IX.14.13)
+Nota anche la velocità di rotazione n (giri 1’) con   = 2  n  60   si ha la potenza:
+(IX.14.14)
+Il freno elettromagnetico è adatto per motori di piccola potenza. Per potenze maggiori 
+si usa la dinamo-freno. È una particolare dinamo ad eccitazione indipendente, applicata 
+come carico meccanico al motore in prova, dotata di uno statore oscillante munito di 
+bracci trasversali. I bracci recano ciascuno un peso, uno di taratura e l’altro di misura ed il 
+sistema agisce come il freno Pasqualini, con le stesse formule risolutive (Fig. IX.14.5).
+Fig. IX.14.5  Schema della dinamo-freno.
+Effettuata la taratura, si carica la dinamo con un reostato esterno; per reazione di armatura 
+si origina una coppia di trascinamento che viene bilanciata mediante il peso di misura.
+C
+9,81pb Nm
+=
+P
+1,027pbn
+=
+
+[PAG 835]
+MISURE ELETTRICHE
+IX-67
+14.5  Prove indirette
+Le prove indirette di una macchina servono per la determinazione di tutte le perdite 
+dalla conoscenza delle quali, nota la potenza resa, si risale alla potenza assorbita e si cal-
+cola il rendimento convenzionale:
+(IX.14.15)
+Queste prove devono essere scelte in relazione al tipo di macchina ed essere atte a 
+determinare i parametri interni che interessano. Molte di esse sono fissate convenzional-
+mente dalle Norme, oppure dalle condizioni di capitolato, sia per le modalità di esecu-
+zione che per le condizioni ambientali ed i risultati da ottenere. Esse devono essere riferite 
+ad una temperatura convenzionale prefissata, in genere 75 °C.
+Le prove principali sono la prova a vuoto e la prova in cortocircuito.
+La prova a vuoto si esegue:
+–  per i generatori lasciando aperti i morsetti di uscita, I = 0;
+–  per i motori non applicando carico meccanico all’albero, C = 0.
+La prova in cortocircuito si esegue:
+–  per i generatori, chiudendo in cortocircuito i morsetti di uscita, U = 0;
+–  per i motori, tenendo bloccato l’albero, n = 0.
+15  PROVE SUL TRASFORMATORE
+Per la teoria sul trasformatore e le formule impiegate si veda il Cap. 2 della Sez. VIII.
+15.1  Prova diretta
+La prova su carico resistivo si esegue alimentando il trasformatore alla tensione nomi-
+nale Un e caricando la macchina con una resistenza variabile (Fig. IX.15.1 e IX.15.2).
+La strumentazione principale comprende al primario e al secondario: voltmetri, ampe-
+rometri e wattmetri adatti ai valori nominali.
+Il reostato deve essere dimensionato in relazione alla potenza nominale e deve consen-
+tire l’ottenimento dei quarti di carico.
+Fig. IX.15.1  Prova diretta di un trasformatore monofase.
+Fig. IX.15.2  Prova diretta di un trasformatore trifase.
+
+Pr
+Pr
+Pp
++
+
+
+
+=
+V
+A
+W
+R
+A
+W
+V
+U1
+W
+W
+A
+R
+V
+W
+W
+A
+f
+V
+
+[PAG 836]
+IX-68
+MISURE ELETTRICHE
+Si procede mantenendo costante la tensione primaria e variando il carico in modo da 
+ottenere i valori di corrente desiderati.
+Per ogni misura si rileva: I1, I2, U2, Pa, Pr, e si determina il rendimento  = Pr / Pa.
+Le misure consentono il tracciamento del rendimento e della caratteristica esterna 
+U2 = f(I2) (Fig. IX.15.3).
+Fig. IX.15.3  Caratteristica esterna di un trasformatore su carico resistivo.
+Inoltre, detta U20 la tensione secondaria a vuoto, si può calcolare,
+–  il rapporto di trasformazione:
+(IX.15.1)
+–  la variazione di tensione:
+(IX.15.2)
+15.2  Prove indirette
+15.2.1  Prova a vuoto
+Si esegue a circuito secondario aperto, alimentando il trasformatore alla tensione 
+nominale.
+La strumentazione principale comprende (Fig. IX.15.4 e IX.15.5):
+–  due voltmetri, rispettivamente al primario e al secondario;
+–  un amperometro (per il trifase tre) adatto ad una corrente I0  (5  10)% In;
+–  un wattmetro (per il trifase due wattmetri in inserzione Aron).
+Fig. IX.15.4  Prova a vuoto di un trasformatore monofase.
+Applicata la tensione nominale, dalla lettura degli strumenti si rileva:
+I0 [per il trifase I0 = (I01 + I02 + I03) / 3], P0, U20.
+Da queste grandezze si ricavano gli elementi che interessano e cioè,
+–  il fattore di potenza:
+(IX.15.3)
+(IX.15.4)
+0
+In
+I2
+U2
+U20
+U20
+U2
+U
+K
+U1
+U20
+
+=
+U%
+100 U20
+U2
+–
+
+
+U20
+
+=
+V
+A
+V
+W
+U1
+I0
+monofase
+cos0
+P0
+U1I0
+
+
+
+=
+trifase
+cos0
+P0
+3U1I0
+
+
+
+=
+
+[PAG 837]
+MISURE ELETTRICHE
+IX-69
+Fig. IX.15.5  Prova a vuoto di un trasformatore trifase.
+–  il rapporto di trasformazione: K = U1  U20;
+–  la corrente a vuoto percentuale: i0% = 100 I0  In;
+–  le perdite nel ferro: Pf = P0 e in valore percentuale pf% = 100 Pf  Sn.
+Se la prova, per necessità, è condotta ad una tensione Um diversa da quella nominale, 
+poiché le perdite nel ferro sono funzione del quadrato della tensione, per determinarle 
+occorre riportare la potenza letta P0 mediante la relazione:
+(IX.15.5)
+Esempio 1.
+Un trasformatore trifase da 120 kVA, rapporto a vuoto 3000 V / 400 V, è stato sotto-
+posto alla prova a vuoto con alimentazione sul lato bassa tensione ed ha fornito i seguenti 
+valori: I01 = 8 A, I02 = 6 A, I03 = 8 A, A = 3000 W, B =  1000 W. Si vogliono determinare 
+le perdite nel ferro, la corrente a vuoto ed il fattore di potenza.
+Procedimento.
+La corrente nominale è:
+–  In = Sn  (
+ Un) = 120.000  (
+  400) = 173,4 A
+Risulta:
+–  Pf = P0 = A + B = 2000 W;   I0 = (I01 + I02 + I03)  3 = 7,33 A;
+–  cos0 = P0  (
+ U I0) = 2000  (
+  400  7,33) = 0,394.
+15.2.2  Prova in cortocircuito
+Si esegue chiudendo un lato in cortocircuito ed alimentando l’altro lato del trasforma-
+tore alla corrente nominale.
+La strumentazione principale comprende (Fig. IX.15.6 e IX.15.7):
+–  un amperometro, adatto alla corrente nominale;
+–  un voltmetro, adatto alla tensione di cortocircuito Uk = (10  15)% Un;
+–  un wattmetro (per il trifase due wattmetri in inserzione Aron);
+–  un termometro, per la misura della temperatura ambiente.
+Fig. IX.15.6  Prova in cortocircuito di un trasformatore monofase.
+W
+W
+A
+A
+A
+V
+V
+f
+A
+B
+Pf
+P0 Un
+Um
+
+
+2
+=
+3
+3
+3
+3
+A
+W
+A
+V
+U
+Uk
+In
+
+[PAG 838]
+IX-70
+MISURE ELETTRICHE
+Fig. IX.15.7  Prova in cortocircuito di un trasformatore trifase.
+Applicata la tensione tramite un variatore, si regola l’alimentazione in modo che 
+scorra la corrente nominale e dalla lettura degli strumenti si rileva: Uk, Pk, I2.
+Da queste grandezze si ricavano gli elementi che interessano e cioè,
+–  il fattore di potenza,
+(IX.15.6)
+(IX.15.7)
+–  il rapporto di trasformazione: K = I2  I1;
+–  la tensione di cortocircuito percentuale: vk% = 100 Uk  Un;
+–  le perdite nel rame: Pcu = Pk e in valore percentuale pcu% = 100 Pcu  Sn.
+Attraverso i valori letti e calcolati si possono determinare i parametri equivalenti 
+serie,
+–  impedenza equivalente,
+(IX.15.8)
+(IX.15.9)
+di componenti:
+(IX.15.10)
+I parametri equivalenti sull’altro lato si potranno ricavare mediante il fattore K2.
+La resistenza deve essere riportata al valore convenzionale (75 °C) mediante la relazione:
+(IX.15.11)
+Esempio 2.
+Il trasformatore dell’esempio precedente è stato sottoposto alla prova di cortocircuito 
+con alimentazione sul lato alta tensione, alla temperatura ambiente di 20 °C, fornendo i 
+valori seguenti: Uk = 150 V, A = 3500 W, B =  500 W. Si vogliono determinare i parame-
+tri equivalenti sul lato alta tensione e le perdite nel rame a 75 °C.
+Procedimento.
+La corrente nominale è:
+–  I = Sn  (
+ Un) = 120  (
+  3) = 23,1 A.
+Risulta:
+–  Pk = A + B = 3500500 = 3000 W; cosk = Pk  (
+ Uk In) = 3000(
+  150  23,1) = 0,5
+A
+A
+W
+W
+V
+f
+monofase
+cosk
+Pk
+UkIn
+
+
+
+=
+trifase
+cosk
+Pk
+3UkIn
+
+
+
+=
+monofase
+Zeq
+Uk
+In
+
+=
+trifase
+Zeq
+Uk
+3In
+
+
+
+=
+Req
+Zeqcosk,
+=
+Xeq
+Zeqsenk
+=
+R'eq
+ReqKT
+=
+con
+KT
+309,5
+234,5
+Ta
++
+
+
+
+=
+3
+3
+3
+3
+
+[PAG 839]
+MISURE ELETTRICHE
+IX-71
+ed i parametri equivalenti sono:
+–  Zeq = Uk  (
+ In) = 150 / (
+  23,1) = 3,75 ; Req = Zeq cosk = 3,75  0,5 = 1,875 ; 
+Xeq = Zeq senk = 3,75  0,866 = 3,25 .
+A 75 °C è:
+–  KT = 309,5  (234,5 + 20) = 1,216 e R’eq = Req KT = 1,875  1,216 = 2,28 
+e quindi:
+–  Pcu = 3 R’eq In
+2 = 3  2,28  23,12 = 3650 W.
+15.2.3  Rendimento e variazione di tensione
+Sono eseguiti per due valori del fattore di potenza: cos = 1 e cos = 0,8 ind.
+Il rendimento convenzionale si ottiene applicando la formula:
+(IX.15.12)
+–  la potenza resa è: Pr = Un I cos (monofase); Pr = 
+ Un I cos (trifase);
+–  le perdite nel ferro si ricavano dalla prova a vuoto: Pf = P0,
+–  le perdite nel rame, determinate alla temperatura convenzionale (75 °C) valgono:
+Pcu = R’eq I2 (monofase), Pcu = 3 R’eq I2 (trifase).
+La variazione di tensione, rispettivamente per il monofase e il trifase, è data da:
+(IX.15.13)
+Esempio 3.
+Il trasformatore degli esempi precedenti (IX.15.2.1 e IX.15.2.2) funziona erogando, 
+alla tensione di 380 V, una corrente pari a 3/4 del valore nominale a cos = 0,8 ind. Si 
+vuole determinare il rendimento e la variazione di tensione percentuale.
+Procedimento.
+La corrente erogata è:
+–  I2 = 3 I2n  4 = 3  173,4  4 = 130 A
+che determina una potenza resa:
+–  Pr = 
+ U2 I2 cos = 
+  380  130  0,8 = 68,6 kW.
+I parametri equivalenti al primario si calcolano trasferendo quelli al secondario col 
+rapporto di trasformazione K2 = (3000  400)2 = 7,52 = 56,25 e divengono:
+–  R’eq2 = R’eq1  K2 = 2,28  56,25 = 40,5 m; Xeq2 = 3,25  56,25 = 57,8 m;
+Le perdite sono:
+–  Pf = 2 kW; Pcu=3 R’eq2 I2
+2= 3  0,0405  1302 = 2,05 kW; Pad = 0,005  68,6 = 0,34 kW 
+e in totale
+–  Pp = 2 + 2,05 + 0,34 = 4,39 kW.
+Il rendimento risulta quindi:
+–   = Pr  (Pr + Pp) = 68,6  (68,6 + 4,39) = 0,94.
+La variazione di tensione è:
+–  U2 = 
+ I2 (R’eq2 cos + Xeq2 sen) = 
+  130 (0,0405  0,8 + 0,0578  0,6) = 15 V 
+pari, in valore percentuale al 3,75%.
+16  PROVE SUL MOTORE ASINCRONO
+Per la teoria del motore asincrono e le formule impiegate si veda il Cap.4 Sez. VIII.
+16.1  Prova diretta
+Si esegue alimentando il motore alla tensione nominale e caricandolo con un disposi-
+tivo frenante misurabile (Fig. IX.16.1).
+3
+3
+
+Pr
+Pr
+Pf
+Pcu
+Pad
++
++
++
+------------------------------------------------------
+=
+3
+U
+I Req
+' cos
+Xeqsen
++
+
+,
+=
+U
+3I Req
+' cos
+Xeqsen
++
+
+
+=
+3
+3
+3
+3
+
+[PAG 840]
+IX-72
+MISURE ELETTRICHE
+Fig. IX.16.1  Prova diretta di un motore asincrono.
+La strumentazione principale comprende: un voltmetro, un amperometro, due wattme-
+tri in inserzione Aron, un frequenzimetro adatti ai valori nominali.
+Ad avviamento avvenuto, si procede mantenendo costante la tensione e variando la 
+coppia frenante in relazione ai quarti di carico prestabiliti. Per ogni misura si rilevano: n, 
+I, Pr, Pa, e si determinano il rendimento:  = Pr  Pa e la coppia motrice: C = Pr  .
+Le misure rilevate consentono il tracciamento del rendimento e della caratteristica 
+meccanica C = f(n) (Fig. IX.16.2).
+Fig. IX.16.2  Caratteristica meccanica del motore asincrono.
+16.2  Prove indirette
+16.2.1  Prova a vuoto
+Effettuato l’avviamento si mantiene in funzionamento il motore alla tensione nomi-
+nale e senza carico applicato (Fig. IX.16.3).
+Fig. IX.16.3  Prova a vuoto di un motore asincrono.
+La strumentazione principale comprende:
+–  un voltmetro, adatto alla tensione nominale;
+–  un amperometro, adatto ad una corrente I0 = (30  40)% In;
+–  due wattmetri in inserzione Aron;
+–  un frequenzimetro.
+W
+W
+A
+V
+M
+3
+F
+Cn
+C
+0
+n0
+n
+W
+W
+A
+V
+3M
+
+[PAG 841]
+MISURE ELETTRICHE
+IX-73
+È necessario, durante l’avviamento, cortocircuitare amperometri e amperometriche ad 
+evitare danni a seguito dell’elevata corrente di spunto.
+Dagli strumenti si rileva: I0; P0 = Pf + Pm + Pcu0; e si calcola cos0 = P0  (
+ Un I0).
+Misurata la resistenza Rm fra due morsetti della macchina, si calcolano le perdite nel 
+rame a vuoto: Pcu0 = 1,5 Rm I0
+2 e si detraggono da P0 ottenendo Pm + Pf.
+Per la separazione delle perdite meccaniche da quelle nel ferro è necessario effettuare 
+una seconda misura a tensione ridotta U’ e alla condizione che la velocità non vari apprez-
+zabilmente, ottenendo allo stesso modo (Pm + Pf)’. Poiché le perdite nel ferro sono fun-
+zione quadratica della tensione, possiamo scrivere:
+e, risolvendo il sistema:
+(IX.16.1)
+da cui: Pf = k U2 e per differenza Pm.
+Esempio 1.
+Un motore asincrono a 380 V, 50 Hz ha fornito alle prove a vuoto i risultati seguenti:
+–  a 380 V: P0 = 1200 W, I0 = 13 A;
+–  a 300 V: P’0 = 800 W, I’0 = 6 A.
+Nota la resistenza fra due morsetti di statore, Rm = 0,5  si vogliono determinare sepa-
+ratamente le perdite meccaniche e quelle nel ferro.
+Procedimento.
+A 380 V:
+–  Pcu0 = 1,5 Rm I0
+2 = 1,5  0,5  132 = 127 W;
+–  Pm + Pf = P0  Pcu0 = 1200  127 = 1073 W.
+A 300 V:
+–  P’cu0 = 1,5  0,5  62 = 27 W;
+–  (Pm + Pf)’ = 800  27 = 773 W.
+Dalla formula IX.16.1 si ha:
+–  k = (1073  773)  (3802  3002) = 0,00551 WV2
+e quindi:
+–  Pf = k U2 = 0,00551  3802 = 796 W e Pm = 1073  796 = 277 W.
+16.2.2  Prova in cortocircuito
+Si esegue mantenendo bloccato il rotore ed alimentando il motore ad una tensione 
+convenientemente ridotta in modo che scorra la corrente nominale (Fig. IX.16.4).
+Fig. IX.16.4  Prova in cortocircuito di un motore asincrono.
+La strumentazione principale comprende:
+–  un amperometro, adatto alla corrente nominale;
+–  un voltmetro, adatto alla tensione di cortocircuito Uk = (20  30)% Un;
+3
+Pm
+Pf
++
+Pm
+kU2
++
+=
+e
+Pm
+Pf
++
+
+'
+Pm
+kU'2
++
+=
+k
+Pm
+Pf
++
+
+
+Pm
+Pf
++
+
+'
+–
+
+
+U2
+U'2
+–
+
+
+
+=
+W
+W
+A
+V
+F
+3M
+
+[PAG 842]
+IX-74
+MISURE ELETTRICHE
+–  due wattmetri in inserzione Aron;
+–  un frequenzimetro;
+–  un termometro per la misura della temperatura ambiente.
+Applicata tensione mediante un variatore, si regola l’alimentazione in modo che 
+scorra la corrente nominale e dalla lettura degli strumenti si ricava: Uk, Pk, cosk = 
+Pk  (
+ Uk In).
+Da queste grandezze si ricavano, alla temperatura ambiente, gli elementi che interessano, 
+e cioè le perdite nel rame: 
+Pcu = Pk e la tensione di cortocircuito percentuale uk = 100 Uk  Un.
+Attraverso i valori letti e calcolati si possono determinare i parametri equivalenti 
+serie:
+di componenti:
+La resistenza deve essere riportata al valore convenzionale (75 °C) mediante la relazione:
+Segue che, a 75 °C sarà:
+(IX.16.2)
+16.3  Tracciamento del diagramma circolare
+Per il tracciamento del diagramma circolare si determinano anzitutto le scale di let-
+tura. Per la corrente si stabilisce un’unità convenzionale u (ad esempio 1 cm oppure 1 
+quadretto) e si assegna la corrispondenza: u = x (ampère). Le altre scale saranno
+–  per le potenze: u = 
+ U x = y (watt);
+–  per le coppie: u = y   = z (newton metri).
+Il tracciamento del diagramma è basato sulla individuazione di due punti fondamentali 
+che sono: A (a vuoto) e K (in cortocircuito).
+Dalla prova a vuoto si rileva I0 e 0 e si traccia il vettore I0 = OA.
+Dalla prova in cortocircuito si rileva il valore dell’impedenza del motore Zeqk (Z’eqk
+per il diagramma a 75 °C) e da essa la corrente di cortocircuito:
+(IX.16.3)
+indicata sul diagramma dal vettore Ik = OK.
+Fig. IX.16.5  Tracciamento del diagramma circolare.
+3
+Zeqk
+Uk
+3In
+
+
+
+=
+Reqk
+Zeqkcosk,
+=
+Xeqk
+Zeqksenk
+=
+R'eqk
+ReqkKT
+=
+con
+KT
+309,5
+234,5
+Ta
++
+
+
+
+=
+Z'eqk
+R'eqk
+2
+Xeqk
+2
++
+=
+e
+'k
+arc tg Xeqk
+R'eqk
+
+
+
+=
+3
+Ik
+Un
+3Zeqk
+
+
+
+=
+U
+M
+H
+P
+In
+
+D
+F
+E
+P’
+A
+I0
+O
+0
+k
+
+K
+Q
+L
+B
+base delle potenze
+assorbite
+base delle coppie
+base delle potenze rese
+retta dello scorrimento
+N
+Ik
+
+[PAG 843]
+MISURE ELETTRICHE
+IX-75
+L’asse del segmento AK interseca l’orizzontale per A in un punto che è il centro del 
+cerchio (Fig. IX.16.5).
+Sul diagramma si riporta da O un segmento OP = In corrispondente alla corrente nomi-
+nale e con esso si individua il punto di funzionamento a pieno carico e l’angolo di fase 
+corrispondente.
+Misurata la resistenza fra due morsetti statorici Rm, si valutano le perdite nel rame di 
+statore in cortocircuito:
+(IX.16.4)
+Tracciato in scala il segmento corrispondente Pcu1k = LQ, la retta AQ costituisce la 
+base di lettura delle coppie.
+Il segmento di lettura dello scorrimento si delinea su un segmento di retta parallelo ad 
+AQ e delimitato dai punti M ed N.
+Dalla costruzione del diagramma, sull’ordinata PP’ relativa al pieno carico si possono 
+leggere, nella scala delle potenze,
+–  la potenza resa: Pr = PD;
+–  la potenza assorbita: Pa = PP’;
+–  le perdite nel ferro e meccaniche: Pm + Pf = EP’;
+–  le perdite nel rame: Pcu = DE;
+–  la coppia: C = PF;
+–  lo scorrimento: s = MHMN.
+Da queste letture si può calcolare, il rendimento:  = PrPa e la velocità: n = n0(1  s).
+Le letture possono essere estese ai vari quarti di carico lungo l’arco AP.
+Esempio 2.
+Il motore dell’esempio precedente ha fornito alla prova in cortocircuito effettuata a 
+20 °C i valori seguenti: Uk = 80 V, A = 2000 W, B =  400 W. Si vogliono determinare i 
+parametri equivalenti per il tracciamento del diagramma circolare a 75 °C.
+Procedimento.
+Le potenze sono:
+–  Pk = A + B = 2000  400 = 1600 W; Qk = 
+ (A  B) = 
+  2400 = 4152 VAR;
+–  tgk = Qk  Pk = 4152  1600 = 2,6;
+e quindi la corrente della prova è:
+–  I = Pk  (
+ Uk cosk) = 1600  (
+  80  0,36) = 32,1 A.
+I parametri equivalenti risultano:
+–  Zeqk = Uk  (
+ I) = 80  (
+  32,1) = 1,44 ; Reqk = Zeqk cosk = 1,44  0,36 = 0,518 ; 
+Xeqk = Zeqk senk = 1,44  0,933 = 1,34 ;
+e a 75 °C, con KT = 309,5 / 254,5 = 1,216:
+–  R’eqk = 0,518  1,216 = 0,63 ; 
+–  tg’k = Xeqk  R’eqk = 1,34  0,63 = 2,13; 
+–  Z’eqk = R’eqk  cos’k = 0,63  0,425 = 1,48 .
+Gli elementi per il tracciamento del diagramma circolare sono:
+–  I0 = 13 A con cos0 = P0  (
+ U I0) = 1200  (
+  380  13) = 0,14 quindi sfasata di 
+0 = 82°;
+–  Ik = U  (
+ Z’eqk) = 380  (
+  1,48) = 149 A sfasata di ’k = 64,8°;
+–  Pcu1k = 1,5  0,5  1492 = 16,7 kW.
+17  PROVE SULLA MACCHINA SINCRONA
+Per la teoria della macchina sincrona e le formule impiegate si veda il Cap.5 Sez VIII.
+Pcu1k
+1,5RmIk
+2
+=
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+
+[PAG 844]
+IX-76
+MISURE ELETTRICHE
+17.1  Prova diretta dell’alternatore
+La prova diretta di un alternatore comporta l’impiego di un motore primo tarato, di 
+potenza adeguata. La strumentazione principale comprende (Fig. IX.17.1): un voltmetro, 
+un amperometro, due wattmetri in inserzione Aron e un frequenzimetro, adatti ai valori 
+nominali, oltre ad un amperometro per la misura della corrente di eccitazione.
+Fig. IX.17.1  Prova diretta di un alternatore.
+Trascinato l’alternatore in rotazione alla velocità sincrona, si eccita la macchina sino 
+ad ottenere la tensione a vuoto prestabilita. Successivamente, per la prova a carico resi-
+stivo, si carica la macchina con un reostato, mantenendo costante la corrente di eccita-
+zione, fornita da una sorgente esterna. Per ogni misura si rileva: I, U, Pr. Calcolate le 
+perdite di eccitazione: Pecc = Recc Iecc
+2 e nota la potenza assorbita all’albero P’a, fornita 
+dal motore tarato, si determina il rendimento:  = Pr   (P’a + Pecc).
+Le misure consentono il tracciamento del rendimento e della caratteristica esterna 
+U = f(I) (Fig. IX.17.2).
+Fig. IX.17.2  Caratteristica esterna di un alternatore su carico resistivo.
+Per ottenere la caratteristica di regolazione si opera in modo simile, mantenendo 
+costante la tensione e rilevando la corrente di eccitazione: Iecc = f(I) (Fig. IX.17.3).
+Fig. IX.17.3  Caratteristica di regolazione di un alternatore su carico resistivo.
+W
+W
+V
+A
+R
+3G
+n0
+A
+Iecc
++
+
+U
+E0
+0
+In
+I
+V
+Iecc
+0
+In
+I
+
+[PAG 845]
+MISURE ELETTRICHE
+IX-77
+17.2  Prove indirette dell’alternatore
+17.2.1  Prova a vuoto
+L’alternatore viene trascinato in rotazione alla velocità sincrona mediante un motore 
+primo, mantenendo i morsetti aperti (Fig. IX.17.4).
+Fig. IX.17.4  Prova a vuoto di un alternatore.
+La strumentazione principale comprende:
+–  un voltmetro, adatto alla tensione nominale;
+–  un amperometro sul circuito di eccitazione;
+–  un frequenzimetro.
+Eccitando gradualmente la macchina si rileva la tensione e la corrente di eccitazione 
+corrispondente, che consentono il tracciamento della caratteristica di eccitazione 
+U0 = f(Iecc) (Fig. IX.17.5).
+Fig. IX.17.5  Caratteristica di eccitazione di un alternatore.
+17.2.2  Prova in cortocircuito
+Si esegue sull’alternatore funzionante alla velocità sincrona e coi morsetti chiusi in 
+cortocircuito (Fig. IX.17.6).
+Fig. IX.17.6  Prova in cortocircuito di un alternatore.
+La strumentazione principale comprende:
+–  un amperometro sul circuito di macchina;
+V
+3G
+n0
+A
+Iecc
++
+
+U0
+0
+Iecc
+A
+3G
+n0
+A
+Iecc
++
+
+
+[PAG 846]
+IX-78
+MISURE ELETTRICHE
+–  un amperometro sul circuito di eccitazione;
+–  un frequenzimetro.
+Eccitando gradualmente la macchina, si aumenta la corrente di eccitazione sino ad 
+ottenere una corrente di macchina pari al valore nominale. La lettura dei due amperometri 
+consente il tracciamento della retta di cortocircuito Ik = f(Iecc) (Fig. IX.17.7).
+Fig. IX.17.7  Caratteristica di cortocircuito di un alternatore.
+Dal rapporto fra le ordinate delle due caratteristiche, a vuoto e in cortocircuito, si 
+ottiene la caratteristica dell’impedenza sincrona (Fig. IX.17.8):
+(IX.17.1)
+da cui deriva la reattanza sincrona:
+(IX.17.2)
+Fig. IX.17.8  Caratteristica dell’impedenza sincrona Zs = f(Iecc).
+17.2.3  Rendimento e variazione di tensione
+Il rendimento convenzionale dell’alternatore (si veda il Par. 14.5) si può calcolare 
+conoscendo le perdite della macchina che sono:
+–  Pm + Pf, determinate dalla prova a vuoto;
+–  Pcu = 1,5 Rm I2 con Rm resistenza misurata fra due morsetti;
+–  Pecc = Recc Iecc
+2;
+–  Pad = 0,5% Pr.
+La variazione di tensione è data da: U = 
+ I (Ri cos + Xs sen).
+17.3  Curva a V del motore sincrono
+Questa prova si può eseguire dopo aver effettuato il parallelo in rete (si veda il Sotto-
+par. 5.6.1 Sez. VIII), caricando il motore con un dispositivo frenante (Fig. IX.17.9).
+La strumentazione principale comprende: un voltmetro, un amperometro, due wattmetri in 
+inserzione Aron adatti ai valori nominali e un amperometro sul circuito di eccitazione.
+Ik
+In
+Iecc
+0
+Zs
+U0
+3Ik
+
+
+
+=
+Xs
+Zs
+2
+Ri
+2
+–
+=
+0
+Iecc
+Zs
+Ik
+U0
+U0
+Zs
+Ik
+3
