@@ -1,0 +1,1387 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 12/116 ===
+Chars: 44,643 | Offset: 485,289
+
+
+
+[PAG 261]
+FISICA
+III-43
+(III.13.1)
+La velocità di propagazione risulta:
+(III.13.2)
+dove  è la massa molare e p0 e 0 sono i valori a riposo di pressione e densità del gas.
+Il valore che si ricava in pianura è 332 m/s.
+13.3.  Intensità delle onde sonore
+Un’onda sonora trasporta energia, e l’intensità I(t) dell’onda rappresenta il flusso di
+energia per unità di area normale.
+(III.13.3)
+Se si considera un’onda sinusoidale,
+(III.13.4)
+Il valore medio nel periodo è detto intensità media ed è una quantità fisica caratteri-
+stica di un certo suono:
+(III.13.5)
+L’unità di misura dell’intensità è il watt su metro quadrato. L’orecchio umano è un
+rilevatore quadratico; non è in grado di percepire l’intensità istantanea di un suono, ma
+l’intensità media su un periodo che è proporzionale al quadrato dell’ampiezza A
+dell’oscillazione.
+Il limite inferiore di udibilità è di circa 10-12 W/m2. Al limite opposto la soglia del
+dolore è a circa 10 W/m2.
+Data l’enorme elasticità dell’orecchio umano, si utilizza una scala logaritmica e si
+dice che due suoni differiscono di k decibel se:
+K = 10 log10 (I2/I1)
+(III.13.6)
+Normalmente si definisce anche un’intensità assoluta ponendo I = I2 e prendendo I1
+pari al limite inferiore di udibilità dell’orecchio umano.
+14.  PROPAGAZIONE DELLA LUCE
+Si chiama luce quella parte della radiazione elettromagnetica che è percepibile
+dall’occhio umano. 
+14.1.  Sorgenti luminose
+Si chiamano sorgenti di luce calda o semplicemente sorgenti di luce gli oggetti che
+emettono luce propria a partire da altre forme di energia. Tra questi il Sole, la lampada ad
+incandescenza, il fuoco.
+Non sono sorgenti di luce gli oggetti più o meno luminosi che diffondono la luce che
+ricevono dalle sorgenti, come gli specchi o qualunque materiale chiaro e riflettente.
+Si chiamano invece sorgenti di luce fredda le lampade al neon, gli oggetti fosfore-
+scenti, le lucciole.
+14.2.  Energia radiante
+Luce e calore si propagano come radiazioni dal Sole alla Terra, attraverso 1,5  108
+pV
+costante
+=
+v
+RT
+
+----------
+p0
+0
+---------
+=
+=
+I t
+v0
+
+t
+------
+
+
+
+
+=
+z t
+
+
+A cos t - kz
+
+
+
+=
+I
+1
+2--02A2v
+=
+
+[PAG 262]
+III-44
+FISICA
+km di vuoto, senza necessità di un mezzo materiale che li trasmetta.
+Luce e calore trasportano energia radiante, che si manifesta in vari modi. Tutto il
+corpo è sensibile alla radiazione termica, mentre l’organo sensibile alla radiazione lumi-
+nosa è l’occhio. Le immagini, cioè ciò che viene visto, non sono altro che il risultato
+dell’elaborazione delle informazioni fornite da radiazioni che raggiungono i nostri occhi.
+14.3.  Riflessione della luce
+La riflessione della luce è il fenomeno che avviene quando un raggio di luce colpisce
+una superficie che non è in grado di assorbirlo, detta superficie riflettente. Il raggio viene
+deviato, formando un angolo di riflessione tra il raggio uscente e la normale alla superfi-
+cie uguale all’angolo di incidenza tra il raggio entrante e la normale alla superficie. Il rag-
+gio si comporta cioè come un’ideale pallina che urti in modo perfettamente elastico una
+superficie rigida.
+14.4.  Rifrazione della luce
+La rifrazione della luce è il fenomeno che avviene quando un raggio di luce nel suo
+percorso passa attraverso una superficie di separazione tra due mezzi trasparenti in cui la
+luce si propaga con velocità diverse. 
+Si chiama indice di rifrazione assoluto di una sostanza il rapporto tra la velocità della
+luce nel vuoto e la velocità della luce attraverso quella sostanza. 
+Nel passare da una sostanza più rifran-
+gente, cioè con indice di rifrazione più alto
+a una sostanza meno rifrangente, il raggio
+viene deviato e la sua direzione tende ad
+allontanarsi dalla normale alla superficie di
+separazione tra le due sostanze e viceversa
+nel caso opposto (Fig. III.14.1). La legge
+matematica è la seguente:
+(III.14.1)
+dove 1 e 2  sono rispettivamente gli
+indici di rifrazione della prima e della
+seconda sostanza attraversata e 1 e 2
+sono rispettivamente l’angolo di incidenza
+e l’angolo di rifrazione, cioè l’angolo for-
+mato dal raggio rifratto con la normale alla
+superficie di separazione.
+Fig. III.14.1  Riflessione e rifrazione di un
+fascio luminoso.
+14.5.  Angolo limite e riflessione totale
+Si consideri la situazione in cui un raggio di luce passa da un mezzo più rifrangente a
+uno meno rifrangente (2 > 1). Non tutto il raggio viene rifratto, ma una parte viene
+riflessa. Al crescere di 1, anche 2 crescerà, rimanendo sempre >1, fino a raggiungere i
+90°. Oltre questo limite il raggio rifratto non esiste più, cioè la luce viene completamente
+riflessa e non esce dal mezzo più rifrangente. Su questo principio si basano le fibre otti-
+che, sottili fili di materiale molto rifrangente ricoperti da uno strato di materiale meno
+rifrangente. L’angolo limite dipende dal rapporto dei due indici di rifrazione:
+(III.14.2)
+incidenza
+riflessione
+rifrazione
+aria
+acqua
+vo
+1sen1
+2sen2
+=
+sen1lim
+2
+1
+-----
+=
+
+[PAG 263]
+FISICA
+III-45
+14.6.  Interferenza
+Quando due sorgenti luminose concorrono a proiettare luce su di uno schermo, ci si
+potrebbe aspettare che in ogni punto dello schermo l’intensità della luce sia maggiore
+delle intensità che si avrebbe con una sola sorgente. Questo non è sempre vero, a causa del
+fenomeno dell’interferenza. 
+Fig. III.14.2  Esperienza di Young.
+L’interferenza è un fenomeno tipico delle onde e dimostra il carattere ondulatorio
+della luce. Il primo esperimento eseguito fu quello di Young, che viene mostrato in Fig.
+III.14.2. Prendendo come sorgenti due fenditure attraverso le quali passa luce proveniente
+da un’unica sorgente, si è sicuri di ottenere due sorgenti con una differenza di fase fissa.
+Sullo schermo posto dietro le due fenditure, compaiono delle strisce chiare e scure. Le
+zone più chiare sono quelle in cui la differenza di fase è < 90°, per cui l’interferenza è
+costruttiva, mentre le zone più chiare sono quelle in cui la differenza di fase è > 90°, per
+cui l’interferenza è distruttiva.
+14.7.  Diffrazione
+Quando un’onda incontra sul suo cammino un
+ostacolo, che ne assorbe una porzione, essa viene
+deformata e le traiettorie seguite da ciascuna porzione
+del fronte d’onda non sono rettilinee. Si tratta del feno-
+meno della diffrazione, che si presenta per tutti i tipi di
+onde.Un esempio è rappresentato dal frangimento
+delle onde del mare sulle scogliere artificiali, infatti se
+l’ostacolo incontrato dal fronte d’onda ha dimensioni
+paragonabili con la lunghezza dell’onda incidente, il
+fronte d’onda a valle dell’ostacolo subisce una varia-
+zione. Il principio di Huyghens - Fresnel afferma che,
+ogni punto della porzione d’onda che supera l’osta-
+colo, si comporta come fosse un punto sorgente d’onda
+avente la stessa lunghezza di quella incidente e per-
+tanto i nuovi fronti d’onda sono costituiti dall’invi-
+luppo dei fronti d’onda così costituiti, (Fig. III.14.3). 
+Fig. III.14.3  Esempio di diffrazione.
+14.8.  Dispersione della luce
+Quando un raggio di luce monocromatica colpisce un prisma, esso viene deviato,
+subendo una doppia rifrazione, in entrata e in uscita dal prisma. La deviazione è tanto
+maggiore quanto maggiore è la frequenza della radiazione luminosa.
+Se la luce in entrata è policromatica, come ad esempio la luce solare che è bianca,
+ogni sua componente verrà deviata con un angolo diverso, formando il cosiddetto spettro
+di emissione, che nel caso di luce solare è composto dall’intera gamma dei colori
+S
+Filtro
+Schermo
+Schermo
+Barriere artificiali
+Fronti d’onda
+difratti
+Fronti d’onda
+incidenti
+
+[PAG 264]
+III-46
+FISICA
+dell’arcobaleno. Tale fenomeno di scomposizione della luce nelle sue componenti croma-
+tiche è detto dispersione.
+14.9.  Colore dei corpi
+Si consideri un oggetto qualsiasi che non emetta luce propria, ma che riceva luce
+bianca dal Sole. Tale oggetto verrà visto dall’occhio umano di un colore piuttosto che di
+un altro a seconda di come la sua superficie assorba o diffonda le varie componenti di luce
+incidente.
+Un oggetto è di colore rosso perché assorbe le componenti diverse dal rosso e diffonde
+solo quella rossa. Un corpo di colore bianco non assorbe alcuna componente di radiazione
+visibile, mentre un corpo nero le assorbe tutte.
+15.  OTTICA GEOMETRICA
+La luce visibile all’occhio umano è costituita da onde elettromagnetiche di lunghezza
+d’onda dell’ordine di 10-7 metri, quindi molto piccola rispetto agli oggetti che ci circon-
+dano. Questo permette di descrivere mediante l’ottica geometrica i fenomeni di propaga-
+zione della luce. Si chiamano raggi luminosi le direzioni ortogonali al fronte di
+propagazione dell’onda. 
+15.1.  Immagine riflessa
+Quando un raggio di luce incontra una superficie liscia, viene riflesso formando un
+angolo, detto di riflessione, uguale all’angolo di incidenza, che è l’angolo formato dal rag-
+gio incidente con la normale alla superficie riflettente.
+Quando tutti i prolungamenti dei raggi riflessi di una stessa sorgente puntiforme si
+incontrano in un punto, si forma una immagine riflessa virtuale della sorgente luminosa;
+quando invece sono i raggi riflessi ad incontrarsi e non i loro prolungamenti, si parla di
+immagine riflessa reale.
+Riflessione su di una superficie piana
+L’immagine di una sorgente riflessa su uno specchio piano si forma alla stessa
+distanza dalla superficie della sorgente stessa. Questo fa sì che uno specchio piano pro-
+duca un’immagine perfettamente identica all’oggetto reale. In altre parole la sorgente e la
+sua immagine sono simmetriche rispetto alla superficie riflettente.
+Riflessione su di una superficie sferica e su di una superficie parabolica
+Uno specchio sferico è costituito da una calotta sferica riflettente. Uno specchio sfe-
+rico convesso dà sempre un’immagine rimpicciolita dell’oggetto. Uno specchio sferico
+concavo dà un’immagine ingrandita o rimpicciolita a seconda della posizione dell’oggetto
+rispetto allo specchio.
+In uno specchio sferico concavo, si chiama vertice V il vertice geometrico della calotta
+sferica, centro C il centro della sfera cui appartiene virtualmente la calotta e fuoco F il
+punto dell’asse ottico CV in cui convergono tutti i raggi riflessi dei raggi incidenti sullo
+specchio parallelamente all’asse ottico. In realtà questo avviene esattamente se lo spec-
+chio è parte di una superficie di paraboloide sferico e avviene solo approssimativamente
+se lo specchio è una calotta sferica, ma dato che è molto più semplice realizzare una
+superficie sferica che realizzare una superficie di paraboloide sferico, e che lo specchio
+sferico si comporta approssimativamente quasi come uno specchio parabolico. 
+Alcune trattazioni descrivono solamente il primo attribuendogli tutte le caratteristiche
+del secondo. 
+Quando l’oggetto reale detto sorgente si trova più lontano dallo specchio del centro C,
+si forma un’immagine reale, capovolta, rimpicciolita. Quando invece la sorgente si trova
+tra F e C, si forma un’immagine reale, capovolta, ingrandita. Se infine la sorgente si trova
+
+[PAG 265]
+FISICA
+III-47
+tra lo specchio e il fuoco F, si forma un’immagine virtuale, diritta, ingrandita.
+15.2.  Formula dei punti coniugati
+Esiste una relazione tra le posizioni dei punti S sorgente e S immagine, detta formula
+dei punti coniugati:
+(III.15.1)
+dove p e q sono le distanze rispettivamente di S e S dallo specchio, r è il raggio CV della
+sfera e f è la distanza del fuoco dallo specchio, detta distanza focale. 
+Da questa formula si ricava la proporzione:
+ d : f = f : d
+(III.15.2)
+dove d e d sono rispettivamente le distanze di S e S dal fuoco F. Quest’ultima formula
+permette, conoscendo la distanza focale, di determinare le dimensioni e la posizione
+dell’oggetto a partire da quelle dell’immagine.
+15.3.  Lenti
+Una lente è costituita da un elemento di materiale trasparente, come ad esempio il
+vetro, limitato da due calotte sferiche coassiali, di raggio R1 e R2. Ciascuna delle due
+superficie può essere concava, piana o convessa. 
+Lenti sottili
+Una lente si dice sottile se il suo spessore massimo è piccolo rispetto alle altre sue
+dimensioni, che sono il diametro e il raggio di curvatura. Le lenti sottili hanno la proprietà
+di fornire un’immagine ingrandita o rimpicciolita di un oggetto senza deformazioni sensi-
+bili. 
+La classificazione più importante è quella che distingue tra lenti convergenti e diver-
+genti. Le prime (Fig. III.15.1a) sono più spesse al centro e fanno convergere i raggi che le
+attraversano, le seconde (Fig. III.15.1b) sono più sottili al centro e fanno divergere i raggi
+che le attraversano.
+Fig. III.15.1  Lente convergente e lente divergente.
+Fuochi di una lente sottile
+Il punto in cui convergono i raggi nel caso di lente convergente o i loro prolungamenti
+in caso di lente divergente di chiama fuoco. 
+Una lente ha due fuochi, uno da una parte e uno dall’altra. In una lente non sottile i
+raggi non convergono in un unico punto.
+Asse di una lente
+Si chiama asse della lente la retta congiungente i centri delle due superficie sferiche.
+Se una delle due superficie è piana, l’asse è la perpendicolare alla superficie passante per
+il centro dell’altra.
+1
+p--
+1
+q--
++
+2
+r--
+1
+f--
+=
+=
+a)
+b)
+C
+F
+F
+C
+C
+F
+F
+C
+V
+V
+
+[PAG 266]
+III-48
+FISICA
+Potere diottrico di una lente
+Si definisce potere diottrico della lente l’inverso della distanza focale, cioè della
+distanza tra il fuoco e la superficie della lente e si esprime in diottrie = m-1. Minore è la
+distanza focale e maggiore è il potere diottrico della lente, cioè il potere di ingrandire o
+rimpicciolire un’immagine.
+Immagine fornita da una lente convergente
+A seconda della posizione dell’oggetto rispetto alla lente convergente, può essere for-
+nita una immagine ingrandita o rimpicciolita, diritta o capovolta, reale o virtuale. 
+Definita f  la distanza focale si possono analizzare in Tab. III.15.1 tutti i casi possibili. 
+Anche per le lenti sottili vale la formula dei punti coniugati (III.15.1).
+Tab. III.15.1  Analisi dell’immagine fornita da una lente convergente
+15.4.  Strumenti ottici
+Qualsiasi strumento ottico si compone essenzialmente di due elementi: l’obiettivo e
+l’oculare.
+L’obiettivo è un sistema ottico formato da una o più lenti che fornisce l’immagine di
+un oggetto.
+L’oculare è un sistema ottico formato da una o più lenti che permette l’osservazione
+dell’immagine fornita dall’obiettivo.
+Microscopio
+Il microscopio è composto da due lenti convergenti (obiettivo e oculare), disposte alle
+estremità di un tubo cilindrico. Le rispettive posizioni di obiettivo, oculare e oggetto sono
+regolabili tramite apposite viti. L’oggetto è posto al di là dell’obiettivo a distanza mag-
+giore di f e l’immagine che si ottiene è reale, capovolta, ingrandita. Tale immagine viene
+fatta cadere vicino all’oculare, a distanza minore di f; in questo modo esso ne restituisce
+Posizione 
+dell’oggetto
+Immagine 
+reale o 
+virtuale
+Immagine 
+diritta o 
+capovolta
+Immagine 
+ingrandita o 
+rimpicciolita
+Posizione dell’immagine
+Oggetto 
+distante più di 
+2f.
+Reale
+Capovolta
+Rimpicciolita
+Distante più di f e meno di 2f 
+dalla lente; dalla parte opposta 
+rispetto all’oggetto
+Oggetto 
+distante 
+esattamente 2f.
+Reale
+Capovolta
+Grande come 
+l’oggetto.
+Distante 2f dalla lente; dalla 
+parte opposta rispetto 
+all’oggetto
+Oggetto 
+distante più di f 
+e meno di 2f.
+Reale
+Capovolta
+Ingrandita
+Distante più di 2f dalla lente; 
+dalla parte opposta rispetto 
+all’oggetto.
+Oggetto 
+distante 
+esattamente f.
+Reale
+Capovolta
+Ingrandita del 
+massimo 
+ingrandimento 
+possibile.
+A distanza infinita (raggi 
+paralleli); dalla parte opposta 
+rispetto all’oggetto.
+Oggetto distante 
+meno di f.
+Virtuale
+Diritta
+Ingrandita
+Dalla stessa parte dell’oggetto.
+
+[PAG 267]
+FISICA
+III-49
+un’immagine virtuale, diritta e ancora ingrandita. L’ingrandimento complessivo è il pro-
+dotto degli ingrandimenti forniti dalle due lenti. Il microscopio ottico può arrivare a
+ingrandire un oggetto fino a 3.000 volte. Oltre questo limite fisico non si può andare per-
+ché la deformazione diventa così forte da togliere qualsiasi nitidezza all’immagine. Il
+microscopio consente inoltre di valutare le dimensioni dell’oggetto osservato.
+Cannocchiale
+Il cannocchiale è uno strumento concepito per l’osservazione degli oggetti lontani.
+L’ingrandimento I di un cannocchiale è dato dalla formula:
+(III.15.3)
+dove f1 e f2 sono rispettivamente le distanze focali di obiettivo e oculare.
+Per questo le lenti sono disposte in modo che la distanza focale dell’obiettivo sia
+grande e quella dell’oculare sia piccola. Per cui un buon cannocchiale deve essere molto
+lungo e avere un obiettivo di grande diametro. L’oggetto osservato è lontanissimo, cioè i
+suoi raggi sono paralleli e l’obiettivo ne fornisce un’immagine capovolta e rimpicciolita.
+Tale immagine viene fatta cadere vicino all’oculare, a distanza minore di f. L’oculare ne
+fornisce un’immagine virtuale, ingrandita e diritta (ma rovesciata rispetto all’oggetto).
+15.5.  Aberrazioni
+La lunghezza d’onda della luce visibile è di circa mezzo millesimo di millimetro;
+bastano quindi piccole imperfezioni della lente per causare differenze apprezzabili
+rispetto al caso ideale, dette aberrazioni.
+Aberrazione cromatica
+La luce incidente non è generalmente monocromatica e quindi le sue componenti
+hanno velocità diverse nel mezzo rifrangente che è il vetro della lente e quindi hanno
+anche una distanza focale diversa. In altri termini una lente ha un fuoco diverso per ogni
+lunghezza d’onda diversa.
+Aberrazione di sfericità
+L’onda uscente da una lente non è perfettamente sferica, ma le sue normali invilup-
+pano una curva chiamata caustica, che si discosta tanto più da una superficie sferica,
+quanto più la lente è convergente (o divergente).
+Astigmatismo
+Si presenta quando i fasci di raggi incidenti sulla superficie della lente hanno un
+grande angolo di incidenza e piccola apertura angolare. In questa situazione il fuoco anzi-
+ché essere un punto diventa un segmento.
+Irregolarità della lente
+Quando la superficie della lente o dello specchio non è perfettamente levigata,
+l’immagine risulta deformata. 
+La deformazione di una lente è irrilevante quando:
+(III.15.4)
+dove  è la dimensione dell’irregolarità, n l’indice del materiale (per il vetro 1,5) e  la
+lunghezza d’onda.
+La deformazione di uno specchio è invece irrilevante quando:
+(III.15.5)
+I
+f1
+f2
+---
+=
+
+
+4 n - 1
+
+
+-------------------
+
+
+
+8--
+
+
+[PAG 268]
+III-50
+FISICA
+16.  TERMOMETRIA
+La termometria si occupa della definizione e della quantificazione della temperatura.
+È comune esperienza che se un corpo viene scaldato questo tende ad aumentare le sue
+dimensioni e viceversa se raffreddato a diminuirle; ne sono un esempio, i giunti lasciati
+per consentire la dilatazione dei materiali per effetto delle variazioni climatiche stagio-
+nali, come la spaziatura fra due elementi di rotaia successivi, o i giunti che attraversano le
+carreggiate di un viadotto stradale.
+Analizzando il fenomeno da un punto di vista intermolecolare si osserva che a seguito
+del riscaldamento di un corpo, le molecole aumentano il loro movimento; più propria-
+mente si parla di agitazione termica, intendendo il moto vibrazionale caratteristico delle
+molecole di un corpo. Da questo dipende infatti la dilatazione termica dei materiali per
+effetto del loro riscaldamento, tale fenomeno è più evidente nei gas, anche se in molti casi
+è proprio la dilatazione dei liquidi e dei solidi a creare maggiori problemi.
+16.1.  Temperatura
+La temperatura di un corpo può essere definita come lo stato di agitazione delle mole-
+cole che lo compongono, tanto più è intenso il moto (agitazione termica) delle molecole e
+tanto più elevata è la temperatura, viceversa, minore è l’agitazione termica molecolare,
+tanto minore è la temperatura del corpo. 
+Per misurare la temperatura si utilizzano i termometri, che una volta tarati secondo una
+scala termometrica, permettono di confrontare lo stato di agitazione termica di un corpo, di
+cui si vuole conoscere la temperatura, con quello preso a riferimento per la graduazione
+dello strumento. Per misurare la temperatura e determinare una scala termometrica, è
+quindi necessario individuare alcuni punti fissi, caratterizzati da temperature ben definite
+(Fig. III.16.1).
+Si utilizzano infatti, la temperatura corrispondente al ghiaccio fondente, (miscela di
+ghiaccio ed acqua distillata) e la temperatura corrispondente al vapore di acqua distillata,
+alla pressione di 1 atm = 101,325 kpa.
+Fig. III.16.1  Scala Celsius, Fahrenheit e Kelvin.
+La scala centigrada o Celsius, largamente usata, divide in cento parti uguali l’intervallo
+esistente fra i due punti caratteristici sopra individuati, ai quali vengono rispettivamente
+attribuiti i valori di 0 °C e 100 °C, definendo in tal modo l’intervallo di temperatura corri-
+spondente ad 1 °C (grado centigrado o Grado Celsius).
+In molti paesi anglosassoni si utilizza la scala Fahrenheit, nel sistema tecnico interna-
+zionale si utilizza la scala assoluta o scala Kelvin.
+I termometri possono essere di diversa natura: alcuni sfruttano la dilatazione termica
+dei gas; altri la dilatazione termica dei liquidi o dei solidi; altri ancora utilizzano la varia-
+zione di resistenza nei conduttori metallici, è il caso dei termometri a resistenza e delle
+coppie termoelettriche, che si basano sulla misura di una forza elettromotrice, prodotta dal
+0
+32
+275,15
+100
+212
+375,15
+°C
+F
+K
+Scala Celsius
+Scala Fahrenheit
+Scala Kelvin
+
+[PAG 269]
+FISICA
+III-51
+gradiente termico di una saldatura fra metalli diversi.
+Un termometro molto usato è quello a mercurio
+che si avvale della buone caratteristiche del metallo
+da cui prende il nome. Il termometro a mercurio
+(Fig. III.16.2) è in genere costituito da:
+–  un bulbo in grado di contenere il metallo uti-
+lizzato;
+–  un capillare, all’interno del quale si espande il
+liquido contenuto nel bulbo a seguito dell’espan-
+sione termica;
+–  una camera di espansione, in grado di assicu-
+rare una espansione del metallo per temperature
+superiori a quelle stimate dalla graduazione. 
+Il capillare, con sezione costante, viene quindi
+opportunamente posizionato su un supporto gra-
+duato secondo la taratura richiesta.
+Fig. III.16.2  Termometro a mercurio.
+16.2.  Dilatazione termica
+Dilatazione termica nei gas
+Sperimentalmente si osserva che, gli effetti della variazione di temperatura, rispettiva-
+mente sulle variazioni di volume a pressione costante e sulle variazioni di pressione a
+volume costante, non dipendono dalla natura del gas utilizzato. Tale comportamento è
+tanto più evidente utilizzando i gas a temperature elevate e pressioni ridotte.
+Si definisce gas perfetto un gas ideale che, al variare della temperatura, verifica le
+seguenti leggi lineari, mantenendo costanti rispettivamente il volume e la pressione .
+(III.16.1)
+(III.16.2)
+dove:
+(III.16.3)
+ e vale per tutti i gas, con V0 e P0 che rappresentano il volume e la pressione del gas
+alla temperatura di 0 °C e   è la temperatura.
+Queste sono le leggi di Gay Lussac e rappresentano la dipendenza lineare del volume
+e della pressione di un gas perfetto al variare della temperatura.
+Sperimentalmente si verifica che non esiste un limite superiore per la temperatura,
+mentre esiste un limite inferiore; del resto, per analogia col modello microscopico mole-
+colare, si osserva che, essendo la temperatura correlata all’agitazione termica molecolare,
+non esiste teoricamente un limite superiore, mentre è fisicamente riscontrabile un limite
+inferiore che corrisponde all’assenza di agitazione termica. 
+Tale situazione corrisponde alla temperatura di 0 K o zero assoluto della temperatura
+e corrisponde a -273,15 °C.
+Dilatazione termica nei solidi
+La dilatazione termica di un solido rappresenta la variazione nelle dimensioni del
+corpo per effetto della variazione di temperatura. Nei corpi aventi una dimensione predo-
+Camera di
+espansione
+Scala
+graduata
+Capillare
+Bulbo
+V
+V0 1
+
++
+
+
+=
+P
+P0 1
+
++
+
+
+=
+
+1
+273 15
+
+----------------- C 1
+–
+
+
+=
+
+[PAG 270]
+III-52
+FISICA
+minante sulle altre, ad esempio le rotaie del treno oppure i cavi di un elettrodotto, si parla
+di dilatazione termica lineare.
+Sia L0 la lunghezza iniziale del corpo e  il coefficiente di dilatazione termica lineare,
+allora la lunghezza del corpo L, per effetto della variazione di temperatura  è:
+(III.16.4)
+Analogamente per quanto considerato nel caso lineare, un corpo di materiale isotropo
+subisce gli effetti della dilatazione termica in tutte le dimensioni e pertanto tutte le porzioni
+del corpo subiscono la stessa deformazione caratterizzata dal coefficiente di dilatazione .
+Ne consegue una variazione proporzionale delle dimensioni del corpo (Fig. III.16.3).
+Fig. III.16.3  Dilatazione o contrazione termica di un corpo materiale isotropo.
+La dilatazione termica superficiale in un corpo isotropo è doppia rispetto al coeffi-
+ciente  definito per la dilatazione lineare, pertanto:
+(III.16.5)
+Analogamente la dilatazione volumica di un corpo materiale isotropo è tripla rispetto
+al coefficiente  definito in precedenza, e vale:
+(III.16.6)
+Nella Tab. III.16.1 sono visualizzati i coefficienti di dilatazione termica lineare di
+alcuni materiali espressi con i valori medi nell’intervallo 0  100 °C.
+Tab. III.16.1  Coefficienti di dilatazione termica lineare in [°C-1]
+Dilatazione termica nei liquidi
+Anche per i liquidi si esperimenta la variazione di volume al variare della temperatura,
+tali variazioni sono comunque piuttosto piccole essendo poco superiori a quelle che si
+verificano per i solidi. 
+Solidi
+val. 
+(10-6)
+Solidi
+val. 
+(10-6)
+Solidi
+val. 
+(10-6)
+Acciaio inox
+9,6
+Ottone
+18,0
+Tungsteno
+4,3
+Alluminio
+24,0
+Piombo
+28,9
+Vetro comune
+27,0
+Argento
+19,0
+Platino
+8,9
+Vetro pyrex
+10,0
+Ferro
+11,0
+Rame
+17,0
+Vetro quarzo
+1,8
+Oro
+14,0
+Super invar
+0,3
+Zinco
+26,3
+L
+L0 1
+
++
+
+
+=
+A
+A0 1
+2
++
+
+
+=
+V
+V0 1
+3
++
+
+
+=
+
+[PAG 271]
+FISICA
+III-53
+Nello studio della dilatazione termica dei liquidi è necessario considerare gli effetti
+della pressione; nell’equazione III.16.7  rappresenta il coefficiente di dilatazione termica
+a pressione costante:
+(III.16.7)
+Nella Tab. III.16.2 sono visualizzati i valori del coefficiente di dilatazione termica di
+alcune sostanze, a pressione costante alla temperatura di 20 °C. 
+Tab. III.16.2  Coefficienti di dilatazione termica
+17.  CALORIMETRIA
+17.1.  Calore specifico e capacità termica
+Ponendo a contatto due corpi a diversa temperatura, si osserva che, dopo un certo pe-
+riodo di tempo, entrambe i corpi acquistano una temperatura di equilibrio, intermedia a
+quelle iniziali. In particolare si verifica che il corpo a temperatura più alta si è raffreddato
+viceversa quello a temperatura più bassa si è riscaldato, l’energia che è passata spontanea-
+mente dal corpo più caldo a quello a temperatura più bassa prende il nome di energia termica.
+Tale fenomeno è interpretato dalla:
+(III.17.1)
+dove m e m1 sono le masse dei corpi, e 1 le rispettive temperature iniziali, c1e c2 rap-
+presentano il calore specifico e sono valori caratteristici dei singoli corpi.
+La temperatura finale di equilibrio alla quale tendono i due corpi restando a contatto vale:
+(III.17.2)
+Noto il calore specifico di un elemento la III.17.1 e la III.17.2 possono essere utiliz-
+zate per calcolare il calore specifico di qualunque corpo.
+ Il calore specifico può essere considerato come l’attitudine che possiede un materiale
+ad aumentare o diminuire la sua temperatura per il rispettivo assorbimento o cessione di
+calore ed è specifico del materiale considerato.
+Si definisce capacità termica il prodotto della massa di un corpo per il suo calore specifico. 
+(III.17.3)
+La capacità termica si riferisce alla massa di una determinata sostanza e non solo al
+materiale di cui essa è composta. 
+Il calore scambiato da un corpo per l’aumento o la diminuzione della sua temperatura vale:
+(III.17.4)
+Tale calore si considera positivo se la temperatura finale è maggiore di quella iniziale,
+Liquidi
+val. (10-3)
+Acqua
+0,21
+Alcol etilico
+1,12
+Etere
+1,63
+Mercurio
+1,82
+Petrolio
+0,9
+V
+V0 1
+
++
+
+
+=
+m1c1  - 1
+
+
+m2c2 2 - 
+
+
+=
+
+m1c11
+m2c22
++
+m1c1
+m2c2
++
+--------------------------------------------
+=
+C
+mc
+=
+Q
+mc f  - i
+
+
+=
+
+[PAG 272]
+III-54
+FISICA
+viceversa, si considera negativo se la temperatura finale è minore di quella iniziale.
+L’unità di misura del calore è la caloria (o piccola caloria), definita come il calore
+(energia termica) necessario a far aumentare la temperatura di un grammo di acqua distil-
+lata da 14,5 a 15,5 °C, alla pressione di 1 atm.
+Per praticità si utilizza la kcal (chilocaloria), 1 kcal = 1000 cal
+In generale il calore specifico di una sostanza varia al variare dell’intervallo di tempe-
+ratura considerato, per questo motivo è stato necessario definire l’intervallo di riferimento
+per il calcolo della caloria. Nelle Tabb. III.17.1a,b,c sono visualizzati i valori del calore
+specifico di alcuni materiali solidi, liquidi e areiformi considerando il valore medio in un
+intervallo di temperatura 0  100 °C.
+Tab. III.17.1a  Calore specifico di alcuni corpi solidi
+Tab. III.17.1b  Calore specifico di alcuni corpi liquidi
+Tab. III.17.1c  Calore specifico di alcuni corpi aeriformi
+Corpi solidi [kcal/kg °C]
+Acciaio
+0,144 Oro
+0,032
+Alluminio
+0,217 Piombo
+0,031
+Argento
+0,056 Platino
+0,031
+Calcio
+0,170 Rame
+0,093
+Ferro
+0,114 Sodio
+0,295
+Ghiaccio
+0,492 Stagno
+0,054
+Grafite
+0,170 Vetro
+0,190
+Nikel
+0,108 Zinco
+0,092
+Liquidi [kcal/kg °C]
+Acetone
+0,528 Glicerina
+0,580
+Acqua (15 °C)
+1 Mercurio
+0,033
+Alcol etilico
+0,581 Olio d’oliva
+0,474
+Alcol metilico
+0,600 Oro (1100 °C)
+0,033
+Ammoniaca
+1,125 Petrolio
+0,498
+Benzolo
+0,406 Toluolo
+0,403
+Cloroformio
+0,226 Xilolo
+0,397
+Aeriformi [kcal/kg °C]
+Acetilene
+0,308 Cloro
+0,084
+Ammoniaca
+0,399 Elio
+0,747
+Argo
+0,099 Etere (25 °C)
+0,411
+Aria
+0,171 Idrogeno
+2,403
+Azoto
+0,176 Iodio 
+0,026
+Bromo
+0,041 Ossigeno
+0,155
+
+[PAG 273]
+FISICA
+III-55
+17.2.  Calorimetri
+I calorimetri sono gli strumenti che consentono di calcolare il calore specifico dei
+materiali; in Fig. III.17.1 è rappresentato il calorimetro delle mescolanze, o di Regnault.
+Esso è costituito da un recipiente adiabatico, un recipiente per mescolare l’acqua e un ter-
+mometro per misurare la temperatura all’interno dell’acqua.
+Fig. III.17.1  Calorimetro delle mescolanze.
+Note le temperature iniziali dell’acqua e del corpo, essendo noto il calore specifico
+dell’acqua, è possibile calcolare il calore specifico del corpo:
+(III.17.5)
+dove, m e c sono la massa e il calore specifico dell’acqua, m1 e c1 il calore specifico e la
+massa del corpo, meq rappresenta la massa equivalente in acqua del calorimetro, ,  e
+f  rappresentano rispettivamente le temperature iniziali dell’acqua, del corpo e la tempe-
+ratura finale di equilibrio. 
+17.3.  Cambiamenti di stato
+La stessa sostanza al variare della temperatura può trovarsi allo stato solido, liquido o
+areiforme. In generale il passaggio di una sostanza da uno stato all’altro dipende dalla
+temperatura, dal volume e dalla pressione. In Fig. III.17.2 sono schematizzati i passaggi
+di stato della materia.
+Fig. III.17.2  Passaggi di stato della materia.
+Agitatore
+Contenitore
+termoisolato
+Termometro
+Campione
+di prova
+Acqua
+c1
+c m
+meq
++
+
+f  - 
+
+
+m1 1 - f
+
+
+-------------------------------------------------
+=
+SOLIDO
+LIQUIDO
+AERIFORME
+Sublimazione
+Brinamento
+Solidificazione
+Fusione
+Evaporazione
+Liquefazione
+
+[PAG 274]
+III-56
+FISICA
+Fissata la pressione al valore di 1 atm, si sono definite le temperature alle quali le
+diverse sostanze presenti in natura si presentano allo stato solido, liquido ed areiforme. In
+questo modo è possibile determinare le temperature corrispondenti alla fusione/solidifica-
+zione e alla vaporizzazione/liquefazione. 
+Nella Tab. III.17.2 sono rappresentate la temperatura di fusione f  e di evaporazione
+e, di alcune sostanze.
+Tab. III.17.2  Temperature f  e e di alcune sostanze
+Analizzando il comportamento di un elemento di ghiaccio al quale viene fornita una
+determinata quantità di calore costante nel tempo, si osserva, che la temperatura sale al
+trascorrere del tempo, ma, in corrispondenza di 0 °C e di 100 °C, resta costante, fintanto-
+ché tutta la massa di ghiaccio non è completamente fusa (0 °C) e il liquido non è comple-
+tamente evaporato (100 °C). È evidente che in prossimità delle temperature che
+corrispondono ai passaggi di stato della materia, tutta l’energia fornita viene assorbita per
+sciogliere i legami intermolecolari che determinano lo stato fisico della sostanza conside-
+rata e la temperatura non cambia fino al completamento di tale processo. Si definiscono in
+tal senso i calori latenti di fusione e di evaporazione.
+Tab. III.17.3  Calore latente di fusione e di evaporazione di alcune sostanze
+La quantità di calore che è necessario fornire per fondere la massa unitaria di una sostanza
+rappresenta il calore latente di fusione; si indica con f  e si misura in kcal/kg o cal/g:
+(III.17.6)
+La quantità di calore che è necessario fornire per far evaporare la massa unitaria di una
+sostanza rappresenta il calore latente di evaporazione, si indica con e e si misura in cal/g.
+(III.17.7)
+Sostanza
+f [°C]
+e [°C]
+Alluminio
+660
+/
+Acqua
+0
+100
+Alcol etilico
+-114
+78
+Benzolo
+5
+80
+Elio
+/
+-269
+Ferro
+1535
+2740
+Idrogeno
+-259
+-253
+Ossigeno
+-219
+-183
+Rame
+1083
+2595
+Sostanza
+f [cal/g]
+e [cal/g]
+Sostanza
+f [cal/g]
+e [cal/g]
+Alluminio
+93
+2000
+Ferro
+65
+1620
+Acqua
+80
+539
+Idrogeno
+13,8
+106.7
+Alcol etilico
+25
+220
+Ossigeno
+3,3
+51
+Benzolo
+30
+94
+Rame
+50,6
+1760
+Q
+mf
+=
+Q
+me
+=
+
+[PAG 275]
+FISICA
+III-57
+Nella Tab. III.17.3 sono visualizzati i valori del calore latente di fusione  e di evapora-
+zione di alcune sostanze, alla pressione di 1 atm.
+17.4.  Potere calorifico
+Una reazione chimica che avviene con la produzione di calore si dice esotermica,
+viceversa si parla di reazione endotermica in assenza di produzione di calore. Una rea-
+zione esotermica di esperienza comune è la combustione delle sostanze che vengono a
+combinarsi con l’ossigeno.
+Ogni sostanza o composto ha uno specifico potere calorifico che è dato dalla quantità
+di calore che sviluppa una unità di massa di sostanza nella combustione completa con
+l’ossigeno.
+Nella Tab. III.17.4 sono riportati i valori del potere calorifico di alcune sostanze.
+Tab. III.17.4  Potere calorifico si alcune sostanze
+17.5.  Propagazione del calore
+Il calore si propaga spontaneamente passando da un corpo più caldo ad uno più
+freddo, o fra una porzione dello stesso a temperatura più elevata ad un’altra a temperatura
+meno elevata. Le modalità di propagazione del calore sono la conduzione, la convezione e
+l’irragiamento.
+La conduzione avviene quando il calore si propaga fra due corpi a contatto o
+all’interno dello stesso corpo, senza spostamento di materia; ne sono un esempio i metalli
+che sono anche ottimi conduttori grazie alla presenza di elettroni liberi che caratterizzano
+la loro struttura molecolare.
+Tab. III.17.5  Coefficiente di conducibilità termica K di alcune sostanze
+In generale vale la legge di Fourier, per la quale, la quantità di calore che si trasmette
+per contatto attraverso un materiale può calcolarsi con la seguente formula:
+(III.17.8)
+Sostanza:
+Potere calorifico
+[kcal/kg]
+Benzina
+7500
+Carbone coke
+7500
+Cherosene
+11200
+Idrogeno
+34300
+Metano
+210,80
+Sostanza
+K [kcal/°C cm s]
+Val. (10-3)
+Sostanza
+K [kcal/°C cm s]
+Val. (10-3)
+Acqua
+1,43 Ghiaccio (0 °C)
+5,3
+Argento 4
+1010 Marmo
+7,5
+Aria
+0,056 Rame
+920
+Ferro
+140 Vetro
+1,40
+Q
+KS
+2 - 1
+d
+------------------t
+=
+
+[PAG 276]
+III-58
+FISICA
+dove K è la costante che dipende dal tipo di materiale, S è la superficie di contatto,    2 -
+1 rappresenta la differenza di temperatura sulle facce esterne delle pareti, d lo spessore
+della parete e t è il tempo di esposizione. 
+Nella Tab. III.17.5 sono visualizzati i coefficienti di conducibilità termica di alcune
+sostanze alla temperatura di 20 °C.
+La propagazione del calore per convezione avviene con il riscaldamento della materia;
+è il caso dei fluidi, nei quali la formazione di correnti convettive determina la mescolanza
+del fluido a temperatura più elevata con quello a temperatura più bassa.
+In generale vale la formula di Newton, per la quale il calore ceduto nell’unità di tempo
+dall’unità di superficie di un corpo al fluido che lo circonda è proporzionale alla diffe-
+renza di temperatura fra il corpo e il fluido:
+(III.17.9)
+La propagazione per irragiamento avviene per mezzo di onde elettromagnetiche. Un
+corpo caldo che emette onde elettromagnetiche diminuisce la sua temperatura, viceversa
+un corpo più freddo che le assorbe aumenta la sua temperatura; un esempio è il riscalda-
+mento dell’acqua per irragiamento solare.
+Si chiama corpo nero un corpo che assorbe tutte le radiazioni elettromagnetiche inci-
+denti senza rifletterne alcuna. La radiazione emessa da un corpo nero vale: 
+(III.17.10)
+dove E è l’energia emessa nel tempo t, S e T rappresentano la superficie del corpo e la
+temperatura assoluta e = 5,57  10-8 W/m2 (K4) è la costante di Stefan.
+18.  TERMODINAMICA
+La termodinamica studia gli scambi energetici fra un sistema e l’ambiente circostante
+in relazione allo scambio e alla trasformazione fra calore e lavoro.
+Prima di studiare un sistema dal punto di vista termodinamico è necessario definire
+cosa si intende per equilibrio termodinamico di un sistema.
+Un sistema termodinamico, costituito da una determinata composizione chimica di
+elementi è in equilibrio termodinamico quando è contemporaneamente in equilibrio mec-
+canico, termico e chimico.
+18.1.  Trasformazioni reversibili ed irreversibili
+Una trasformazione è considerata reversibile quando le cause che la provocano sono
+infinitesimamente piccole e la trasformazione avviene così lentamente da poter essere
+considerata come una successione di stati di equilibrio e può essere invertito il verso della
+trasformazione con modifiche infinitesime dei fattori che la determinano. 
+Deve essere assicurato inoltre che le forze d’attrito che si sviluppano durante la tra-
+sformazione siano trascurabili; pertanto tutte le trasformazioni che avvengono in natura
+sono da considerarsi irreversibili.
+In relazione alle variabili che determinano lo stato fisico di un sistema si possono
+avere le seguenti trasformazioni (Fig. III.18.1):
+–  Trasformazione a volume costante, o isocora, quando la trasformazione avviene
+mantenendo il volume costante (Fig. III.18.1a).
+–  Trasformazione a pressione costante, o isobara, quando la trasformazione avviene
+mantenendo la pressione costante (Fig. III.18.1b).
+–  Trasformazione a temperatura costante, o isoterma, quando la trasformazione
+avviene mantenendo la temperatura costante (Fig. III.18.1c).
+Q
+hSt
+=
+W
+E
+ST
+------
+T4
+=
+=
+
+[PAG 277]
+FISICA
+III-59
+–  Trasformazione adiabatica, o isolata, quando la trasformazione avviene senza
+scambio di calore con l’esterno del sistema.
+Fig. III.18.1  Rappresentazione sul piano di Clapeyron delle trasformazioni.
+ 
+La convezione utilizzata dalla termodinamica (Fig.
+III.18.2) considera il calore positivo se ceduto
+dall’ambiente al sistema, viceversa è negativo se ceduto
+dal sistema all’ambiente. Il lavoro si considera positivo
+se prodotto dal sistema verso l’ambiente esterno, vice-
+versa si considera negativo se prodotto dall’ambiente sul
+sistema.
+Fig. III.18.2  Convenzione termodinamica.
+18.2.  Lavoro delle forze di pressione
+Sia P la pressione interna di un gas racchiuso in un
+recipiente e libero di espandersi come in Fig. III.18.3, e Pe
+la pressione esterna ad esso.
+Il lavoro compiuto per effetto dell’espansione del gas
+contenuto nel recipiente vale:
+(III.18.1)
+dove, se la trasformazione è reversibile Pe e P sono uguali
+e la (III.18.1) diventa:
+Fig. III.18.3  Espansione di un gas.
+(III.18.2)
+In Fig. III.18.4 è rappresentato il lavoro compiuto in
+una trasformazione reversibile che graficamente è indi-
+viduato dall’area sottesa alla curva che rappresenta la
+trasformazione compiuta dal sistema per andare dallo
+stato A(Pa, Va, Ta) allo stato B(Pb, Vb, Tb).
+Fig. III.18.4  Lavoro delle forze di pressione.
+a)
+b)
+c)
+P
+P
+P
+V0
+P0
+T = costante
+O
+O
+O
+V
+V
+V
+V0
+P0
+L(+)
+L(-)
+Q(-)
+Q(+)
+Sistema
+Ambiente
+esterno
+Pe
+Pe
+espansione
+L
+Pe V
+d
+v1
+v2
+
+=
+P
+Pa
+Pb
+Va
+Vb
+V
+O
+A
+B
+L
+L
+P V
+d
+v1
+v2
+
+=
+
+[PAG 278]
+III-60
+FISICA
+18.3.  Equazione di stato dei gas perfetti
+Le variabili che determinano lo stato di equilibrio di un gas sono: il tipo di gas, la sua
+massa, la pressione, il volume e la temperatura.
+Per semplificare la trattazione si utilizza molto frequentemente il concetto di gas per-
+fetto, in realtà la maggior parte dei gas reali, se considerati a temperature elevate e basse
+pressioni, cioè in condizioni sufficientemente rarefatte, soddisfano abbastanza bene le
+semplici leggi che regolano i gas perfetti.
+Un gas perfetto è un gas ideale che si comporta secondo le leggi di Gay Lussac e
+Boyle, in particolare soddisfa le seguenti relazioni lineari:
+(III.18.3)
+(III.18.4)
+(III.18.5)
+rispettivamente per trasformazioni isobare, isocore e isoterme. 
+Dalla combinazione delle tre equazioni si ottiene:
+(III.18.6)
+che rappresenta l’equazione di stato dei gas perfetti dove P, V e T  sono le variabili di
+stato, n è il numero di moli del gas considerato ed R è una costante, determinata conside-
+rando che, per la Legge di Avogadro, una mole di qualsiasi gas alla temperatura di  °C e
+alla pressione di 1 atm occupa un volume di 22,4 litri. Tale costante vale:
+(III.18.7)
+oppure, con le dovute trasformazioni: 
+(III.18.8)
+Esempio
+Una massa di ossigeno subisce una trasformazione che lo fa passare dallo stato ini-
+ziale, caratterizzato dalla pressione P0 = 200 kPa, V0 = 5 m3 e T0 = 360 K a quello finale,
+caratterizzato dalla pressione P1 = 220 kPa e V1  = 6 m3.
+Si vogliano ricavare la temperatura finale e la quantità di ossigeno, se questo si com-
+porta come un gas ideale.
+Dall’equazione di stato dei gas perfetti si ha:
+applicando nuovamente la stessa equazione si ricava la temperatura finale:
+18.4.  Primo Principio della Termodinamica
+Energia meccanica e calore
+L’esperienza comune insegna che è possibile trasformare l’energia meccanica in
+calore; ad esempio strofinando le mani si sviluppa calore per attrito fra i palmi trasfor-
+mando così l’energia meccanica in calore.
+Una quantificazione precisa del rapporto esistente fra l’energia meccanica e il calore è
+stata calcolata con l’esperienza messa a punto da Joule Fig. III.18.5.
+V 
+
+V0 1
+
++
+
+
+=
+P 
+
+P0 1
+
++
+
+
+=
+P1V1
+P2V2
+=
+PV
+nRT
+=
+R
+0 08205litri
+atm
+
+K
+mole
+
+-----------------------
+
+=
+R
+8 314
+J
+K
+mole
+
+---------------------
+
+=
+n
+P0V0
+RT0
+------------
+200000
+5
+
+8 314
+
+300
+
+-----------------------------
+401 moli
+=
+=
+=
+T2
+P2V2
+nR
+------------
+220000
+6
+
+401
+8 314
+
+
+-----------------------------
+396 K
+=
+=
+=
+
+[PAG 279]
+FISICA
+III-61
+Nell’esperienza si utilizza un recipiente
+adiabatico, contenente un sistema di palette,
+che immerse nell’acqua e azionate per
+caduta di due masse, riesce a trasformare
+l’energia meccanica in calore, che viene
+così misurato da un termometro predisposto
+a contatto con la massa d’acqua.
+In questo modo si è determinato l’equi-
+valente meccanico della caloria, che vale:
+4,4868 J = 1 cal
+Pertanto, lavoro meccanico e calore
+sono grandezze equivalenti e in qualunque
+modo si proceda, il rapporto fra lavoro mec-
+canico e calore sopra definito non varia.
+Fig. III.18.5  Esperienza di Joule.
+Primo principio della termodinamica
+Il primo principio della termodinamica afferma che, in qualsiasi trasformazione, la
+variazione di energia interna di un sistema termodinamico è uguale alla differenza fra il
+calore scambiato e il lavoro prodotto.
+(III.18.9)
+dove valgono le convenzioni definite nel Par. III.18.1.
+Ne consegue che in una trasformazione ciclica:
+Q = L
+(III.18.10)
+ Applicazioni del primo principio della termodinamica ai gas perfetti
+Dall’applicazione del primo principio della termodinamica ai gas perfetti seguono le
+seguenti importanti considerazioni:
+–  L’energia interna di un gas perfetto è funzione solo della temperatura, e quindi:
+(III.18.11)
+dove f e i  sono la temperatura finale e iniziale della trasformazione e Cv rappresenta la
+capacità termica molare a volume costante, che per un gas perfetto è sempre costante.
+–  Dall’applicazione del primo principio ad una trasformazione isobara, si ottiene:
+(III.18.12)
+pertanto, la variazione di energia interna è uguale alla differenza fra il calore scambiato e
+il lavoro prodotto e vale:
+(III.18.13)
+–  Dall’applicazione del primo principio ad una trasformazione isocora, si ottiene che
+V = costante ed L = 0, pertanto la variazione di energia interna è uguale al calore scam-
+biato dal sistema:
+(III.18.14)
+–  Dall’applicazione del primo principio ad una trasformazione isoterma reversibile,
+si ottiene:
+Termometro
+Acqua
+m
+m
+U
+Q - L
+=
+U
+n
+Cv 
+nCv f  - i
+
+
+=
+d
+i
+f
+
+=
+L
+Vf  - Vi
+
+
+nR Tf  - Ti
+
+
+=
+=
+U
+Q-nR Tf  - Ti
+
+
+=
+U
+Q
+=
