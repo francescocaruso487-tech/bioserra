@@ -1,0 +1,1923 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 86/116 ===
+Chars: 43,460 | Offset: 3,756,818
+
+
+
+[PAG 1738]
+XVII-138
+ELETTRONICA ANALOGICA E DIGITALE
+(XVII.22.4)
+Dalla XVII.22.4, per AV > 0, si deduce che X1 e X2, dovendo avere lo stesso segno, rap-
+presentano componenti reattivi dello stesso tipo, o capacità o induttanze. Dalla XVII.22.2
+segue che X3 deve avere segno opposto a X1 e a X2. In particolare, X3 deve essere un'indut-
+tanza, se X1 e X2 sono capacità, e il circuito complessivo è chiamato oscillatore Colpitts;
+X3 deve essere una capacità, se X1 e X2 sono induttanze, e il circuito complessivo è chia-
+mato oscillatore Hartley. Nella Fig. XVII.22.3 sono riportati i circuiti degli oscillatori
+Colpitts e Hartley con FET e BJT.
+Fig. XVII.22.3   Oscillatore a tre punti: a) Colpitts a FET; b) Colpitts a BJT; c) Hartley a
+FET; b) Hartley a BJT.
+22.2  Oscillatori a cristallo
+Gli oscillatori a cristallo sono oscillatori a tre punti in cui un componente reattivo è
+costituito da un cristallo. I cristalli negli oscillatori presentano l'effetto piezoelettrico; fra i
+cristalli più usati vi è il quarzo.
+Fig. XVII.22.4   Oscillatore Pierce a quarzo.
+A
+AV
+X1
+X2
+-----
+1
+=
+=
+RG
+RD
+C1
+CS
+C2
+L
++UDD
+a)
+CG
+RS
++UCC
+R1
+RC
+CA
+R2
+RE
+CE
+C1
+C2
+L
+b)
++UDD
+RD
+CA
+RG
+RS
+CS
+L1
+L2
+C
+c)
++UCC
+R1
+RC
+CA
+CB
+R2
+RE
+CE
+L1
+L2
+C
+d)
++UDD
+RD
+CG
+RG
+RS
+CS
+C1
+C2
+XTAL
+
+[PAG 1739]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-139
+In un quarzo opportunamente tagliato e con determinate dimensioni, l’effetto piezoe-
+lettrico si manifesta con una differenza di potenziale dovuta ad una deformazione del
+materiale, mentre una forza meccanica applicata in particolari punti fa sorgere una carica
+sulle superfici del quarzo.
+Applicando ad una piastrina di quarzo una opportuna tensione alternata, esso si mette
+a vibrare ad una frequenza per la quale il quarzo entra in risonanza elettrica; la risonanza
+dipende dal tipo di taglio e dalle dimensioni della piastrina. Negli oscillatori a quarzo lo
+scambio fra energia elettrica e meccanica avviene con bassissime perdite, il coefficiente
+di risonanza Q è molto elevato (alcune decine di migliaia) e nell'intorno della frequenza di
+risonanza la curva dell'impedenza ha un andamento molto ripido, ciò che permette
+un'ottima definizione della frequenza di oscillazione.
+Nella Fig. XVII.22.4 è riportato un esempio di oscillatore al quarzo, chiamato oscilla-
+tore Pierce, realizzato con un JFET Confrontando lo schema dell’oscillatore Pierce con
+quello della Fig. XVII.22.3a, si nota che la struttura dell’oscillatore Pierce è quella di un
+oscillatore Colpitts, con il quarzo inserito al posto dell’induttore L.
+23  GENERATORI DI FORME D'ONDA
+La generazione di forme d'onda rettangolari, triangolari, a dente di sega, impulsive,
+sinusoidali, con frequenze comprese fra 0,001 Hz a 1 MHz è realizzabile mediante: porte
+logiche integrate TTL o CMOS; amplificatori operazionali; generatori di funzioni inte-
+grati, fra cui uno dei più comuni è l'integrato 8038; i Timer.
+23.1  Generatori di forme d'onde rettangolari con porte TTL
+Il circuito per generare forme d'onde rettangolari con porte TTL è il multivibratore
+astabile, caratterizzato da due stati, tra i quali la tensione d'uscita oscilla, senza intervento
+di impulsi di comando esterni; la frequenza di oscillazione è determinata dai parametri del
+circuito. Nella Fig. XVII.23.1 sono riportati: in a) lo schema del generatore, realizzato con
+porte NOT TTL; in b) le forme d'onda della tensione di uscita uU e della tensione u2.
+Fig. XVII.23.1   Generatore di onde rettangolari: a) schema del circuito; b) forme d'onda
+relative al funzionamento.
+Gli inverter (porte NOT) presentano una tensione di soglia UT  1,5 V, che condiziona
+il livello della tensione d'uscita di ogni porta: se la tensione d’ingresso è minore della ten-
+sione di soglia, l'uscita è alta; se è maggiore, l'uscita è bassa. Inoltre, per ogni inverter si
+P1
+P2
+P3
+R
+C
+R’
+i’
+u1
+u2
+uC
+uU
+a)
+uU
+t
+t
+T1
+T2
+UT
+Umin
+u2
+b)
+
+[PAG 1740]
+XVII-140
+ELETTRONICA ANALOGICA E DIGITALE
+suppone che: la resistenza di ingresso sia dell'ordine di alcune migliaia di ohm; la corrente
+all'ingresso sia trascurabile, se le resistenze nel circuito sono dell'ordine delle centinaia di
+ohm; la resistenza di uscita sia Ru  100  (nella famiglia TTL standard); la tensione di
+uscita a livello basso sia di circa 0V e a livello alto sia UUM  4 V.
+La reazione positiva, con la carica e la scarica del condensatore C, determina l'anda-
+mento nel tempo del segnale d'uscita uU, che è approssimativamente un segnale rettango-
+lare (Fig. XVII.23.1b). Per un'analisi qualitativa si considera il circuito nella Fig.
+XVII.23.1a, si suppone il multivibratore a regime e si inizia l'analisi quando la tensione
+d’uscita è uU = 0; la tensione d’uscita u1 dell'inverter P1 è quindi a livello alto. Da questo
+istante il condensatore C tende a caricarsi, con la polarità indicata, alla tensione UUM  4 V
+e la corrente i' fluisce dall'uscita di P1 (alta) all'uscita di P3 (bassa). La tensione u2 ha per-
+ciò un andamento di crescita esponenziale, tendente a UUM; quando u2 raggiunge la ten-
+sione di soglia UT, l'uscita di P2 passa a livello basso, l'uscita di P3 diviene alta e determina,
+attraverso l'anello di reazione, la tensione d’uscita di P1, che passa a livello basso. La ten-
+sione sul condensatore non può variare istantaneamente e l'incremento di tensione di uU
+determina un incremento della tensione su R' e quindi di u2. A questo punto il condensatore
+si scarica, tendendo a caricarsi con polarità opposta, e u2 decresce con legge esponenziale;
+quando u2 raggiunge il valore di soglia UT, si ha una nuova commutazione, al termine della
+quale l'uscita di P2 passa a livello alto e l'uscita di P3 ritorna a livello basso, mentre u1 passa
+a livello alto; la tensione u2 cade bruscamente, data la tensione negativa sul condensatore.
+Il ciclo si ripete con una nuova fase di carica di C, che termina quando u2 = UT. Vi è da
+notare che, nelle due fasi di funzionamento descritte, le costanti di tempo di carica del con-
+densatore sono uguali; infatti, la carica avviene sempre attraverso R', R e Ru, dove Ru è la
+resistenza d’uscita in un caso di P1, nell'altro di P3.
+23.2  Generatori di onde rettangolari con amplificatore operazionali
+Il circuito di base dei generatori di onde rettangolari con amplificatore operazionali è
+il multivibratore astabile riportato nella Fig. XVII.23.2a; in b) sono disegnate le forme
+d'onda relative al circuito. Il circuito consiste essenzialmente in un comparatore, in cui
+l'uscita è riportata all'ingresso non invertente tramite un partitore resistivo ed all'ingresso
+invertente tramite un gruppo RC; sono la carica e la scarica del condensatore a determi-
+nare il comportamento oscillatorio del circuito.
+Fig. XVII.23.2   Multivibratore astabile generatore di onde quadre: a) schema del cir-
+cuito, b) forme d'onda delle tensioni di uscita e sul condensatore.
+Si suppone C inizialmente scarico, e quando il circuito è connesso all'alimentazione
+R
+R1
+R2
+u2
+uC
+uU
+C
+a)
+
+
+uU, uC
+uU
+uC
+t
+Usat
+Usat
+Usat
+Usat
+T1 = T2
+T2 = T2
+T
+b)
+
+[PAG 1741]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-141
+(generalmente duale), l'uscita passa a livello alto o basso, a causa di tensioni temporanee
+di rumore o disturbo presenti all'ingresso dell'operazionale. Si fa l'ipotesi che l'uscita sia a
+livello alto, corrispondente alla tensione di saturazione Usat, leggermente inferiore alla
+tensione di alimentazione positiva UCC; la tensione all'ingresso non invertente è
+u2 = Usat, con  = R2  (R1  R2). Il condensatore C inizia a caricarsi attraverso R, ten-
+dendo esponenzialmente alla tensione di saturazione Usat e, quando uC raggiunge la ten-
+sione u2 = Usat, si ha una commutazione, al termine della quale l'uscita dell'operazionale
+passa a livello basso, corrispondente alla tensione di saturazione Usat, leggermente supe-
+riore alla tensione di alimentazione negativa UEE; la tensione al terminale non invertente
+diviene u2 = Usat. Da questo istante il condensatore si scarica e, dopo avere raggiunto il
+valore di tensione uC = 0, tende a ricaricarsi con polarità opposta alla tensione di satura-
+zione Usat; non perviene, però, a tale valore, perché, quando uC = u2 = Usat, si ha una
+nuova commutazione. Le forme d'onda descritte, a regime, sono rappresentate nella Fig.
+XVII.23.2b; all'uscita si ha un’onda rettangolare e, per la simmetria delle condizioni di
+carica e scarica del condensatore, l'intervallo T1 in cui l'uscita è a livello alto è uguale
+all'intervallo T2 in cui l'uscita è a livello basso (T1 = T2 = T  2).
+23.3  Integrato 8038: generatore di funzioni
+L'integrato 8038 è un generatore di funzioni sinusoidali, di onde quadre e rettangolari.
+Nella Fig. XVII.23.3 è rappresentata la piedinatura dell'integrato 8038; di seguito sono
+descritte le funzioni dei terminali.
+Fig. XVII.23.3   Generatore di forme d'onda 8038: a) schema funzionale a blocchi; b) pie-
+dinatura.
+–  Sine wave adj. (pin 1): una rete esterna, collegata ai pin 1 e 12, consente la ridu-
+zione della distorsione della tensione sinusoidale ai valori minimi.
+–  Sine wave out (pin 2): uscita della forma d'onda sinusoidale.
+–  Triangle out (pin 3): uscita della forma d'onda triangolare.
+–  Duty cycle-Frequency adj (pin 4 e 5): la variazione della corrente di ingresso dei
+pin indicati consente di variare i due principali parametri delle forme d'onda generate:
+duty cycle e frequenza. I pin 4 e 5 sono connessi, tramite resistenze esterne, all'alimenta-
+zione. Il duty cycle è un parametro caratteristico dei segnali con forme d'onda rettangolari
+ed è dato dal rapporto fra l'intervallo di tempo tH, in cui il segnale è allo stato alto, e il
+periodo T = tH + tL, essendo tL l'intervallo di tempo in cui il segnale è allo stato basso.
+Generalmente è espresso in percentuale: dc% = (tH / T)  100. 
+–  UCC (pin 6): pin da connettere al terminale positivo dell'alimentazione.
+–  FM Bias (pin 7): pin che, connesso al pin 8, permette di applicare una tensione di
+polarizzazione, per il controllo della frequenza delle forme d'onda di uscita.
+14
+13
+12
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+Sine wave adj
+Sine wave out
+Triangle out
+Duty cycle
+Frequency adj
+UCC
+FM Bias
+NC
+NC
+Sine wave adj
+GND or UCC
+Timing capacitor
+Square wave out
+FM sweep input
+8038
+
+[PAG 1742]
+XVII-142
+ELETTRONICA ANALOGICA E DIGITALE
+–  FM sweep input (pin 8): pin a cui applicare la tensione di controllo esterna per otte-
+nere variazioni della frequenza delle forme d'onda generate.
+–  Square wave out (pin 9): uscita della forma d'onda rettangolare. È un'uscita di tipo
+open collector, per cui deve essere connessa ad una alimentazione, tramite un resistore
+detto di pull-up. Questa tensione di alimentazione può essere diversa dall'alimentazione
+dell'integrato e ciò permette che i livelli dell'uscita rettangolare siano indipendenti dalla
+tensione di alimentazione dell'integrato.
+–  Timing Capacitor (pin 10): pin a cui connettere il condensatore esterno C, la cui
+carica e scarica determinano la temporizzazione dei circuito.
+–  UCC or GND (pin 11): pin da connettere al terminale negativo dell'alimentazione
+(nel caso di alimentazione duale) o a massa (nel caso di alimentazione singola).
+–  Sine wave adj (pin 12): una rete esterna, collegata ai pin 1 e 12, consente la ridu-
+zione della distorsione della tensione sinusoidale ai valori minimi.
+–  NC (pin 13 e 14): pin non collegati.
+Le caratteristiche elettriche principali dell'8038 sono le seguenti.
+1)  Alimentazione
+–  Tensione di alimentazione: UCC  18 V o UCC  36 V totali (valori massimi).
+Valori comuni variano fra 5 V e 15 V, per l'alimentazione duale, e fra 10 V e 30 V, per
+l'alimentazione singola.
+–  Nessun terminale dell'integrato deve essere portato ad una tensione superiore
+all'alimentazione.
+–  Corrente di alimentazione massima 20 mA, con UCC  10 V.
+–  La corrente attraverso i terminali 4 e 5 (corrente di ingresso) e attraverso i terminali
+3 e 9 (corrente di sink di uscita) non deve superare 25 mA.
+–  Potenza dissipata massima: 750 mW.
+2)  Caratteristiche di frequenza
+–  Massima frequenza di oscillazione: 100 kHz (min). Nel campo di frequenze sono
+possibili sia la modulazione di frequenza (FM) sia la generazione di segnali la cui fre-
+quenza cresce linearmente nel tempo e la cui ampiezza rimane costante (generazione di
+segnali chiamata generazione di sweep).
+–  Frequenza di sweep del segnale FM: 10 kHz (tip). 
+–  Sweep FM Range: 40:1 (tip). Il dato indica che l'intervallo di frequenza, definito
+come il rapporto fra frequenza massima e frequenza minima dello sweep, è tipicamente di
+40; la tensione di sweep, per ottenere tale variazione di frequenza, è applicata al pin 8. 
+–  Linearità FM (con rapporto 10:1): 0,5% (tip). La curva che rappresenta l'andamento
+della frequenza, in funzione della tensione di controllo, si discosta dalla retta ideale; il
+dato indica il valore tipico della massima deviazione percentuale.
+3)  Caratteristiche di uscita dell'onda rettangolare
+–  Tempo di salita (con carico RL = 4,7 k): 100 ns (tip). È il tempo necessario perché
+l'onda rettangolare passi dal 10% al 90% del valore finale; è fortemente influenzato dal
+valore della resistenza di carico (ad esempio, per RL = 9 k, diviene circa 170 ns).
+–  Tempo di discesa (con carico RL = 4,7 k): 40 ns (tip). È il tempo necessario per-
+ché l'onda rettangolare passi dal 90% al 10% del valore iniziale; è poco influenzato da
+variazioni della resistenza di carico.
+–  Regolazione del duty cycle: può variare dal 2% al 98%.
+4)  Caratteristiche di uscita dell'onda triangolare (o dente di sega o rampa)
+–  Impedenza di uscita (IOUT = 5 mA); 200  (tip).
+
+[PAG 1743]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-143
+–  Ampiezza (con carico RT = 100 k): 0,33 Val (tip). È il valore tipico picco a picco
+dell'onda triangolare, quando la resistenza di carico RT, all'uscita del pin 3, è di 100 k.
+La tensione di alimentazione Val è 2UCC, nel caso di alimentazione duale.
+–  Linearità; 0,1% (tip). Indica il valore tipico del massimo scostamento, in percen-
+tuale, della forma d'onda triangolare generata, dall'andamento rettilineo ideale che più
+l'approssima; vengono considerate sia la parte crescente che la parte decrescente dell'onda
+triangolare.
+5)  Caratteristiche di uscita dell'onda sinusoidale
+–  Ampiezza (con carico RS = 100 k): 0,22 Val (tip). È il valore tipico picco a picco
+dell'onda sinusoidale, quando la resistenza di carico RS, all'uscita del pin 2, è di 100 k.
+La tensione di alimentazione Val è 2UCC , nel caso di alimentazione duale.
+–  THD (con carico RS = 1 M): 0,8% (tip). È il valore tipico della distorsione armo-
+nica totale della forma d'onda sinusoidale di uscita (l'indicazione THD deriva dalle iniziali
+di Total Harmonic Distortion).
+Nella Fig. XVII.23.4 sono riportati i circuiti di base per il controllo di frequenza e duty
+cycle. Nella Fig. XVII.23.4a il controllo avviene mediante i due resistori RA e RB variabili:
+RA permette di variare la frequenza delle forme d'onda triangolare e sinusoidale; RB con-
+sente di controllare l'intervallo di tempo tH in cui l'uscita rettangolare è a livello alto. Il
+circuito della Fig. XVII.23.4b ha un solo componente variabile, il potenziometro RV, con il
+quale è possibile variare il duty cycle; le variazioni possibili sono però limitate.
+Fig. XVII.23.4   Circuiti di base di impiego dell'integrato 8038: a) con RA e RB variabili;
+b) con potenziometro di regolazione.
+23.4  Timer 555
+I timer sono dispositivi impiegati per realizzare diversi circuiti quali ad esempio: mul-
+tivibratori monostabile ed astabile, generatori di forme d'onda, trigger di Schmitt, divisori
+di frequenza. In questo paragrafo è presentato il timer 555, circuito integrato con cui è
+possibile controllare le caratteristiche temporali dei segnali (timing–temporizzazione),
+con periodi da alcuni microsecondi a decine di minuti.
+Nella Fig. XVII.23.5 sono riportati lo schema a blocchi del circuito integrato del 555,
+in a), e la piedinatura, in b). Il 555 è composto: da un partitore resistivo, costituito da tre
+resistenze uguali, R = 5 k; da due comparatori Comp. 1 e Comp. 2; da un latch RS; da
+uno stadio d’uscita; da un transistor Q1 utilizzato come interruttore per la scarica di un
+condensatore inserito all'esterno. Il partitore resistivo fa in modo che la tensione U1,
+applicata all'ingresso invertente del comparatore Comp. 1, sia 2UCC3 e la tensione U2,
+C
+RA
+RB
+UCC
+RL
+RD
+UCC (GND)
+4
+5
+6
+9
+3
+2
+12
+11
+10
+8
+7
+8038
+a)
+C
+R’A
+R’B
+UCC
+RL
+RD
+UCC (GND)
+4
+5
+6
+9
+3
+2
+12
+11
+10
+8
+7
+8038
+Rv
+b)
+
+[PAG 1744]
+XVII-144
+ELETTRONICA ANALOGICA E DIGITALE
+applicata all'ingresso non invertente del comparatore Comp. 2, sia UCC3.
+Fig. XVII.23.5   Timer 555: a) schema funzionale a blocchi; b) piedinatura.
+Nel 555, quando la tensione all'ingresso di Trigger (pin 2) diviene minore di UCC3,
+l'uscita di Comp. 2 passa a livello alto; il latch è nello stato di set, con S = 1, Q = 1 e
+Q = 0; l'uscita Out del 555 (pin 3) è pertanto a livello alto, il transistor Q1 è interdetto e si
+comporta come un interruttore aperto. Tale situazione permane anche quando l'ingresso di
+Trigger ritorna al disopra di UCC3, purché l'ingresso di Threshold (pin 6) rimanga ad una
+tensione inferiore a 2UCC3.
+Il comparatore Comp. 1 ha la funzione di permettere il reset del latch. Infatti, quando
+la tensione di Threshold (soglia) supera 2UCC3, l'uscita di Comp. 1 passa a livello alto; il
+latch è nello stato di reset, con R  1, Q  0 e Q  1; l'uscita Out del 555 passa a livello
+basso; il transistor Q1 va in saturazione, si comporta come un interruttore chiuso e, se
+all'uscita discharge (scarica, pin 7) è collegato un condensatore carico, esso si scarica.
+Tale situazione permane quando la tensione di Threshold scende al disotto di 2UCC 3,
+data la presenza del latch.
+Il 555 ha due altri pin d’ingresso: il Control Voltage (pin 5) e il Reset (pin 4). Il Con-
+trol Voltage permette di variare dall'esterno la tensione del terminale invertente di Comp.
+1. L'ingresso di Reset, portato a livello basso, determina il reset del latch, indipendente-
+mente dal livello degli altri ingressi, e l'azzeramento dell'uscita Out.
+Lo stadio d’uscita consente di avere una corrente relativamente elevata all'uscita; ciò
+permette di alimentare il carico in molte applicazioni, senza ricorrere ad un amplificatore
+di corrente.
+La tensione d’alimentazione è: UCC  4,5 V (min)  16 V (max).
+23.5  Circuiti con il 555
+Si considera l'impiego del 555 nella realizzazione di un multivibratore monostabile, di
+un multivibratore astabile e di un trigger di Schmitt.
+A)  Multivibratore monostabile
+Con il timer 555 si possono realizzare multivibratori monostabili, dove un impulso
+negativo applicato all'ingresso TRIG, determina la generazione di un altro impulso
+U1
+UCC
+GND
+Control
+voltage
+Reset
+8
+5
+4
+Stadio
+uscita
+Out
+Discharge
+Threshold
+Trigger
+Comp. 1
+U2
+Comp. 2
+R
+S
+Q
+Q1
+3
+7
+1
+2
+6
+R=5 k
+R=5 k
+R=5 k
+Latch
+RS
+
+
+
+
+a)
+
+GND
+TRIG
+OUT
+RST
+UCC
+DISCH
+THR
+CTRL
+555
+1
+2
+3
+4
+8
+7
+6
+5
+b)
+VOLT
+
+[PAG 1745]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-145
+all'uscita OUT, con fronti molto ripidi e con durata T determinata dai parametri del cir-
+cuito. Nella Fig. XVII.23.6 sono riportati in a) lo schema del circuito e in b) le forme
+d'onda relative al funzionamento in condizione di regime.
+Con riferimento al circuito della Fig. XVII.23.6a, l'ingresso di TRIG è mantenuto ad
+una tensione uI superiore a UCC3. Un impulso negativo porta l'ingresso di TRIG a valore
+inferiore a UCC3, e il latch passa nella condizione di set, l'uscita Q diviene bassa e l'uscita
+OUT passa a livello alto. Il transistor di scarica del 555 è interdetto e il condensatore C,
+supposto scarico, tende a caricarsi a UCC tramite la resistenza R1. Essendo C connesso
+all'ingresso THR (threshold) del 555, appena vC raggiunge il valore 2UCC3, il latch passa
+nella condizione di reset, l'uscita Q diviene alta, l'uscita OUT passa a livello basso ed il
+transistor di scarica è saturato. Il condensatore C, essendo connesso all'ingresso DISCH
+(discharge) del 555, si scarica attraverso il transistor di scarica; l'uscita si riporta allo stato
+di riposo. All'uscita si ha pertanto un impulso di durata T, dipendente dai valori di R1 e C
+(si ha T = 1,1 R1C). Il condensatore C', connesso all'ingresso Control Voltage, ha un
+valore dell'ordine di 0,01F ed è inserito per evitare che disturbi all'ingresso stesso modi-
+fichino la durata dell'impulso. Si noti che, date le caratteristiche circuitali del 555, un
+nuovo impulso all'ingresso di Trigger ha effetto solo se si presenta dopo l'intervallo T.
+Il circuito monostabile della Fig. XVII.23.6a si può pertanto impiegare anche come
+divisore di frequenza. In questo caso, un impulso di trigger d’ampiezza opportuna fa sì
+che inizi la carica del condensatore C, durante la quale altri impulsi all'ingresso di TRIG
+sono senza effetto, fino a che il condensatore è scarico; il primo impulso allora presente
+determina l'inizio di un nuovo ciclo. Le forme d'onda del divisore di frequenza sono ripor-
+tate nella Fig. XVII.23.6c; da esse si deduce che, scegliendo opportunamente la durata
+Fig. XVII.23.6   Multivibratore monosta-
+bile con 555: a) schema del circuito; b)
+forme d'onda relative al funzionamento; c)
+forme d'onda relative ad un divisore di fre-
+quenza.
+GND
+TRIG
+OUT
+RST
+UCC
+DISCH
+THR
+CTRL
+VOLT
+555
+8
+4
+5
+6
+2
+3
+7
+1
+uC
+UCC
+C=10 nF
+R1
+C
+uI
+uU
+a)
+uI
+uC
+uU
+UCC3
+t
+0
+TI
+0
+0
+t
+t
+T
+T
+2UCC3
+UCC
+b)
+uI
+uC
+uU
+t
+t
+t
+UCC
+2UCC3
+c)
+
+[PAG 1746]
+XVII-146
+ELETTRONICA ANALOGICA E DIGITALE
+dell'intervallo di carica di C, si riesca a fare corrispondere, ad un gruppo di impulsi uI
+all'ingresso, un solo impulso uU all'uscita, realizzando così la divisione di frequenza
+(nell'esempio si ha una divisione per 4).
+B)  Multivibratore astabile
+Con il timer 555 si possono realizzare multivibratori astabili in cui, senza che un
+impulso esterno sia applicato all'ingresso TRIG, si ottengono impulsi all'uscita OUT, con
+fronti molto ripidi e con durata determinata dai parametri del circuito. Nella Fig.
+XVII.23.7 sono riportati in a) lo schema del circuito e in b) le forme d'onda relative al fun-
+zionamento in condizione di regime.
+Fig. XVII.23.7   Multivibratore astabile con 555: a) schema del circuito; b) forme d'onda
+relative al funzionamento.
+Il funzionamento del circuito della Fig. XVII.23.7a si basa sulla carica e scarica del
+condensatore C; si suppone che all'istante iniziale (t  0) il condensatore sia scarico. Il
+condensatore, da quell'istante, inizia a caricarsi alla tensione UCC attraverso le resistenze
+R1 e R2, ed essendo connesso all'ingresso THR (threshold) del 555, appena uC raggiunge il
+valore di soglia 2UCC3, il latch del 555 viene resettato, l'uscita OUT passa a livello basso
+ed il transistor di scarica entra in saturazione. Da quest'istante, il condensatore si scarica
+attraverso la resistenza R2 ed il transistor di scarica che fa capo al pin DISCH del 555. Il
+condensatore C è anche connesso all'ingresso di TRIG del 555 e la tensione di scarica del
+condensatore non raggiunge zero, perché, quando uC scende al disotto di UCC3, il latch
+del 555 viene settato, l'uscita OUT passa a livello alto, il transistor di scarica è interdetto
+ed inizia una nuova fase di carica del condensatore, ripetendosi il ciclo appena descritto.
+Le forme d'onda, a regime, sono riportate nella Fig. XVII.23.7b, in cui con T, T1 e T2 sono
+indicati, rispettivamente, il periodo di oscillazione dell'astabile, il tempo di carica e il
+tempo di scarica del condensatore. Si ha: T  T1  T2  0,693 (R1  2R2) C. 
+C)  Trigger di Schmitt
+Il trigger di Schmitt, realizzato con il 555, si basa sulle commutazioni determinate
+dalle tensioni di trigger e di threshold. Nella Fig. XVII.23.8 sono rappresentati lo schema
+di un trigger di Schmitt realizzato con 555 in a) e le forme d'onda relative al funziona-
+mento in b); queste ultime sono ottenute ipotizzando che R1  R2, con la conseguenza che
+gli ingressi THR e TRIG, collegati fra di loro, sono polarizzati alla tensione UM  UCC2.
+Il circuito nella Fig. XVII.23.8a funziona nel modo seguente. All'ingresso è applicata
+una tensione variabile uI, nell'istante in cui essa raggiunge e supera la tensione di soglia
+GND
+TRIG
+OUT
+RST
+UCC
+DISCH
+THR
+CTRL
+VOLT
+555
+8
+4
+5
+6
+2
+3
+7
+1
+uC
+UCC
+C’=10 nF
+R2
+C
+uU
+a)
+R1
+uC
+uU
+UCC3
+0
+0
+t
+t
+T1
+T2
+2UCC3
+UCC
+b)
+T
+
+[PAG 1747]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-147
+superiore USS (Fig. XVII.23.8b), l'uscita uU passa al livello basso; ciò avviene se USS  UM
+ 2UCC3. L'uscita uU ritorna al livello alto quando uI scende al disotto della tensione di
+soglia inferiore USI (Fig. XVII.23.8b) e ciò avviene se USI  UM  UCC3.
+Fig. XVII.23.8   Trigger di Schmitt realizzato col timer 555: a) schema del circuito; b)
+forme d'onda relative al funzionamento.
+24  FILTRI
+Un filtro è un doppio bipolo LTI (lineare tempo invariante), caratterizzato da una fun-
+zione di trasferimento (FdT) per la quale sono discriminati (filtrati) i segnali d'ingresso
+con frequenza non appartenente ad un insieme prestabilito; la discriminazione si manife-
+sta con un'attenuazione della risposta del filtro.
+In base al tipo di discriminazione, i filtri si classificano in: filtri passa basso (low-pass
+filter o LPF); filtri passa alto (high-pass filter o HPF); filtri passa banda (band-pass filter
+o BPF); filtri elimina banda (band-stop filter o BSF o notch filter); filtri equalizzatori
+d’ampiezza (gain equalizer filter); filtri equalizzatori di fase (phase equalizer filter). Que-
+sti ultimi due sono utilizzati per rendere lineare la risposta in frequenza di un trasduttore o
+di un sistema non lineare.
+Nella classificazione secondo il tipo di circuito, si distinguono i filtri in passivi ed
+attivi: quelli passivi si realizzano con soli condensatori, induttanze e resistori; quelli attivi
+si realizzano con condensatori, resistori e uno o più amplificatori, generalmente amplifi-
+catori operazionali.
+Nel progetto dei filtri si stabiliscono le specifiche di trasmissione, che comprendono i
+valori assegnati, per ottenere la risposta voluta. Le specifiche di trasmissione di un filtro
+si possono rappresentare con un grafico a fasce normalizzato a 0 dB, considerando il
+valore massimo del modulo della FdT come unitario. Si definiscono tre fasce in corrispon-
+denza di altrettanti intervalli di frequenze chiamati banda passante, banda oscura e banda
+di transizione. L'ampiezza delle rispettive fasce è stabilita assegnando due valori, F1 e 
+F2. Nella Fig. XVII.24.1, sono riportati i diagrammi a fasce delle specifiche di trasmis-
+sione per i filtri passa basso, passa alto, passa banda ed elimina banda.
+Con riferimento alla Fig. XVII.24.1, la fascia corrispondente alla banda passante ha
+ampiezza F1; la fascia corrispondente alla banda oscura ha solo il limite superiore di
+valore F2, con F2  F1. La fascia corrispondente alla banda di transizione è compresa
+GND
+TRIG
+OUT
+RST
+UCC
+DISCH
+THR
+CTRL
+VOLT
+555
+8
+4
+5
+6
+2
+3
+7
+1
+uI
+UCC
+C’=10 nF
+R2
+CA
+uU
+a)
+R1
+UM
+uI
+USS
+USI
+uU
+t
+t
+b)
+
+[PAG 1748]
+XVII-148
+ELETTRONICA ANALOGICA E DIGITALE
+fra i valori F1 e F2; la larghezza di questa fascia determina la maggiore o minore capa-
+cità del filtro di discriminare, rispetto alla frequenza, un segnale in ingresso e ciò si
+riflette sulla complessità del circuito.
+I diagrammi del modulo e della fase della FdT di un filtro spesso sono rappresentati
+con i diagrammi di Bode normalizzati in ampiezza e in frequenza (pulsazione) rispetto
+alla pulsazione di taglio. In questo paragrafo si considerano i filtri passa basso, passa alto
+e passa banda, passivi e attivi.
+24.1  Filtri passivi
+I filtri passivi sono realizzati con resistori e condensatori o induttori e sono usati alle
+alte frequenze. La costruzione di questi filtri è problematica quando sono utilizzati alle
+basse frequenze, in quanto sono necessarie induttanze di valore elevato; gli induttori risul-
+tano ingombranti e pesanti, hanno basso coefficiente di qualità Q, generano campi elettro-
+magnetici che producono interferenze. Questi filtri sono impiegati alle basse frequenze
+generalmente nei circuiti di potenza.
+A)  Filtri passa basso e passa alto del primo ordine
+I filtri passivi del primo ordine sono del tipo passa basso e passa alto. Considerandoli
+in regime sinusoidale, supponendo che siano pilotati da generatori di tensione ideali Ui e
+che la tensione Uu sia misurata all'uscita del filtro, la loro FdT è riconducibile a quella di
+un partitore di tensione formato da due impedenze Z1 e Z2. Si ha: F(j) = UuUi = Z2(Z1 
+Z2).
+Nella Tab. XVII.24.1, per ogni tipo di filtro sono riportati: i componenti del circuito;
+Fig. XVII.24.1   Diagrammi a fasce delle specifiche di tra-
+smissione per i filtri: a) passa basso; b) passa alto; c) passa
+banda; d) elimina banda.
+Banda
+passante
+Banda
+oscura
+Banda di
+transizione
+F2
+F1
+0
+1 2
+
+(rad/s)
+dB F(j)
+a)
+Banda
+oscura
+Banda
+passante
+Banda di
+transizione
+F2
+F1
+0
+1 2
+
+(rad/s)
+dB F(j)
+b)
+Banda
+oscura
+Banda
+passante
+Banda di
+transizione
+F2
+F1
+0
+12
+
+(rad/s)
+dB F(j)
+Banda
+oscura
+Banda di
+transizione
+0 34
+c)
+Banda
+passante
+Banda
+oscura
+Banda di
+transizione
+F2
+F1
+0
+12
+
+(rad/s)
+dB F(j)
+Banda
+passante
+Banda di
+transizione
+034
+d)
+
+[PAG 1749]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-149
+la FdT con i relativi parametri (il guadagno statico A0 = F(j0), la costante di tempo p
+associata ad un polo, la pulsazione di taglio p); le relazioni di ampiezza e fase.
+Dalle relazioni di fase risulta che: i filtri passa basso producono uno sfasamento in
+ritardo fra il segnale d'uscita e quello d'ingresso e per questo sono considerati reti ritarda-
+trici; i filtri passa alto producono uno sfasamento in anticipo fra il segnale d'uscita e
+quello d'ingresso e per questo sono considerati reti anticipatrici.
+Le impedenze Z1 e Z2 di un filtro possono essere realizzate con più di un elemento cia-
+scuno. Ad esempio, nel modello amplificatore di tensione alle alte frequenze della Tab.
+XVII.3.2, Z2 è formata dal parallelo di R e C (Ri e Ci dell'amplificatore).
+Le FdT dei filtri del primo ordine possono essere espresse in funzione della pulsa-
+zione di taglio p. Ad esempio, le FdT di un LPF possono essere scritte:
+(XVII.24.1)
+Tab. XVII.24.1   Filtri del primo ordine RC e RL
+Filtro
+F(j)
+arg[F(j)]
+Passa
+Basso
+Z1 = R
+Z2 = 1/(jC)
+p = CR      p = 1p
+A0 = F(j0) = 1
+arctanCR
+Z1 = jL
+Z2 = R
+p = LR     p = 1p
+A0 = F(j0) = 1
+Passa
+Alto
+Z1 = 1/(jC)
+Z2 = R
+p = CR      p = 1p
+A0 = F(j0) = 0
+Z1 = R
+Z2 = jL
+p = LR     p = 1p
+A0 = F(j0) = 0
+Z1
+Z2
+Ui
+Uu
+F j
+
+
+Z2
+Z1
+Z2
++
+-------------------
+=
+F j
+
+
+A0
+1
+jCR
++
+-------------------------
+=
+A0
+1
+CR
+
+2
++
+-----------------------------------
+F j
+
+
+A0
+1
+jL
+R
+
++
+-----------------------------
+=
+A0
+1
+L
+R
+-------
+
+
+
+2
++
+-------------------------------
+arctan
+–
+L
+R
+-------
+F j
+
+
+CR
+j
+1
+jCR
++
+-------------------------
+=
+CR
+1
+CR
+
+2
++
+-----------------------------------
+arctan
+1
+CR
+------------
+F j
+
+
+L
+R---
+j
+1
+jL
+R
+
++
+-----------------------------
+=
+1
+1
+R
+L
+-------
+
+
+
+2
++
+-------------------------------
+arctan R
+L
+-------
+F j
+
+
+A0
+1
+jCR
++
+-------------------------
+A0
+1
+jp
++
+----------------------
+A0
+1
+j 
+p
+------
++
+-------------------
+A0p
+j
+p
++
+--------------------
+=
+=
+=
+=
+F j
+
+
+A0
+1
+jL
+R
+
++
+-----------------------------
+A0
+1
+jp
++
+----------------------
+A0
+1
+j 
+p
+------
++
+-------------------
+A0p
+j
+p
++
+--------------------
+=
+=
+=
+=
+
+[PAG 1750]
+XVII-150
+ELETTRONICA ANALOGICA E DIGITALE
+B)  Filtro passa banda RC
+Il filtro passa banda (BPF) RC è del secondo ordine si può realizzare collegando in
+cascata due filtri del primo ordine. Nella Fig. XVII.24.2a è riportato lo schema del circuito
+ottenuto connettendo in cascata un filtro passa alto (HPF) del primo ordine, avente pulsa-
+zione di taglio pH, e un filtro passa basso (LPF) del primo ordine, avente pulsazione di
+taglio pL. Con questa connessione, affinché la FdT sia caratterizzata da un guadagno sta-
+tico A0 normalizzato a 0 dB e affinché la banda passante del filtro bassa banda sia uguale
+a BW = pL  pH, occorre che il circuito abbia le seguenti caratteristiche.
+–  I due filtri non devono interagire fra loro: il filtro a valle non deve caricare il filtro
+a monte.
+–  Indicando con pH = R1C1 la costante di tempo del filtro HPF, con pL = R2C2 quella
+del filtro LPF, deve essere H  100L.
+Se il filtro ha le caratteristiche suddette, considerando le FdT dei filtri HPF e LPF,
+indicate nella Tab. XVII.24.1, la FdT del filtro BPF è:
+(XVII.24.2)
+Nella Fig. XVII.24.1b è riportato il diagramma di Bode del modulo e della fase di
+F(j)BPF. Nel diagramma del modulo si osserva che, in corrispondenza delle pulsazioni di
+taglio pH pH e pL pL, si ha un'attenuazione pari a 3 dB rispetto alle frequenze
+intermedie, alle quali la FdT è costante e vale 0 dB; la banda passante è, quindi, BW = pL
+ pH (pL è la pulsazione di taglio superiore e pH è la pulsazione di taglio superiore
+dell’intero filtro). Inoltre, il diagramma è simmetrico rispetto ad un asse passante per la
+pulsazione 0 e parallelo all'asse delle ordinate, con 
+; in corrispondenza
+di 0 si ha F(j0)BPF 0 dB.
+Fig. XVII.24.2   Filtro passa banda: a) circuito; b) diagramma di Bode del modulo della
+FdT; c) diagramma di Bode della fase della FdT.
+C)  Filtri RC passa basso e passa alto del secondo ordine
+I filtri del secondo ordine hanno un'azione discriminatrice in frequenza maggiore di
+quella dei filtri del primo ordine; il diagramma del modulo della FdT di questi filtri ha una
+pendenza maggiore del corrispondente diagramma dei filtri del primo ordine.
+1)  Filtro passa basso del secondo ordine
+Collegando in cascata due filtri LPF del primo ordine, si ottiene un filtro LPF del
+secondo ordine. Se il filtro a valle non carica il filtro a monte, la FdT complessiva è:
+F j
+
+PBF
+F j
+
+PHFF j
+
+PLF
+jpH
+1
+jpH
++
+--------------------------
+1
+1
+jpL
++
+-------------------------
+
+=
+=
+F j
+
+PBF
+C1R1
+j
+j
+
+2C1R1C2R2
+jC1R1
+1
++
++
+---------------------------------------------------------------------------------
+
+0
+pHpL
+=
+UI
+UU
+C1
+C2
+R1
+R2
+a)
+0
+10
+20
+pH/10
+pH
+0
+pL
+pL
+ (rad/s)
+dB F(j)BPF
+b)
+pH/10 pH
+0
+pL pL
+ (rad/s)
+90°
+45°
+0°
+45°
+90°
+argF(j)BPF
+c)
+
+[PAG 1751]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-151
+(XVII.24.3)
+Con questa connessione si ha un circuito con due componenti reattivi (C1 e C2) e
+occorre che fra i due blocchi si abbia un buon disaccoppiamento; un modo per realizzarlo
+consiste nell'imporre C1 » C2. 
+Generalmente, inoltre, si fa in modo che i poli dei due filtri siano coincidenti, sce-
+gliendo i componenti in modo che sia verificata la relazione: C1R1  C2R2. Ad esempio, si
+considerino due filtri LPF del primo ordine, uno realizzato con R1  10 k e C1  100 nF,
+l'altro con R2  100 M e C2  10 pF; sono rispettate le condizioni indicate sopra (C1 » C2
+e C1R1  C2R2).
+Il filtro che si ottiene collegandoli in cascata ha la pendenza del diagramma del
+modulo della FdT maggiore di quella dei corrispondenti diagrammi dei LPF del primo
+ordine. Per la pulsazione  = 10.000 rads, il modulo della FdT, determinato in base alla
+XVII.24.3, vale 40 dB; alla stessa pulsazione, il modulo della FdT del filtro LPF del
+primo ordine, determinato in base alla relazione F (j) = 1(1  jCR), vale 20 dB.
+2)  Filtro passa alto del secondo ordine
+Analogamente al caso precedente, collegando in cascata due filtri HPF del primo
+ordine, si ottiene un filtro HPF del secondo ordine con:
+(XVII.24.4)
+Per avere un buon disaccoppiamento, deve essere R1 « R2; inoltre, affinché i poli siano
+coincidenti, deve essere C1R1  C2R2. Si può verificare che, come nel caso del filtro passa
+basso, anche nel filtro passa alto del secondo ordine la pendenza del diagramma del
+modulo della FdT è maggiore di quella del filtro del primo ordine.
+24.2  Filtri RLC con poli complessi coniugati
+I filtri RLC sono del secondo ordine, data la presenza dei due componenti reattivi,
+condensatore e induttore. I valori di R, L e C sono scelti in modo che la FdT del filtro
+abbia poli complessi coniugati. Si considerano i filtri LPF, HPF e BPF ottenuti da un
+unico circuito risonante serie, dove la caratteristica di filtro del circuito dipende dal punto
+di prelievo dell'uscita, come riportato nelle Fig. XVII.24.3a, b, c. I tre circuiti hanno la
+stessa ammettenza:
+(XVII.24.5)
+A)  Filtro passa basso
+Il filtro passa basso, riportato nella Fig. XVII.24.3a, ha FdT data da:
+(XVII.24.6)
+F j
+
+
+1
+j
+
+2C1R1C2R2
+jC1R1
+C2R2
++
+
+
+1
++
++
+-----------------------------------------------------------------------------------------------------------
+=
+F j
+
+
+jC1R1C2R2
+j
+
+2C1R1C2R2
+jC1R1
+C2R2
++
+
+
+1
++
++
+-----------------------------------------------------------------------------------------------------------
+=
+Y j
+
+
+I
+Ui
+-----
+1
+R
+jL
+1
+jC
+----------
++
++
+----------------------------------------
+1
+LC
+-------
+jC
+j
+
+2
+jR
+L---
+1
+LC
+-------
++
++
+------------------------------------------------
+=
+=
+=
+F j
+
+
+UC
+Ui
+-------
+UC
+I
+------- I
+Ui
+-----
+1
+jC
+----------
+Y j
+
+
+
+1
+LC
+-------
+1
+j
+
+2
+jR
+L---
+1
+LC
+-------
++
++
+------------------------------------------------
+
+=
+=
+=
+=
+
+[PAG 1752]
+XVII-152
+ELETTRONICA ANALOGICA E DIGITALE
+Fig. XVII.24.3   Filtri RLC: a) schema del filtro passa basso e diagrammi del modulo e
+dell'argomento della FdT; b) schema del filtro passa alto e diagrammi del modulo e
+dell'argomento della FdT; c) schema del filtro passa banda e diagrammi del modulo e
+dell'argomento della FdT.
+I poli p1 e p2 di F(j) sono ottenuti uguagliando a zero il denominatore della
+XVII.24.6; risolvendo l'equazione di secondo grado in j si ottiene:
+(XVII.24.7)
+Considerando il caso oscillatorio, i poli p1 e p2 devono essere complessi coniugati,
+quindi il discriminante della XVII.24.7 deve essere minore di zero; la condizione è verifi-
+cata per 
+. Posto R(2L)  , dove  è chiamata costante di smorzamento, e
+1(LC)  2
+p, dove p è chiamata pulsazione di taglio, la XVII.24.7 viene scritta:
+(XVII.24.8)
+Dalle relazioni XVII.24.8 e dalla Fig. XVII.24.4, in cui sono rappresentati i poli p1 e p2
+sul piano complesso, si rilevano le seguenti relazioni:
+R
+L
+C
+Uu
+Ui
+R
+C
+L
+Uu
+Ui
+C
+L
+R
+Uu
+Ui
+= 0,2
+= 0,5
+= 0,707
+5
+0
+5
+15
+25
+dB F(j)LPF
+p
+ (rad/s)
+= 0,2
+= 0,5
+= 0,707
+5
+0
+5
+15
+25
+dB F(j)HPF
+p
+ (rad/s)
+Q= 1
+Q= 2,5
+Q= 5
+0
+4
+8
+12
+18
+dB F(j)BPF
+0
+16
+ (rad/s)
+= 0,2
+= 0,5
+= 0,707
+0°
+90°
+180°
+argF(j)LPF
+p
+a
+180°
+90°
+0°
+argF(j)HPF
+p
+b
+= 0,2
+= 0,5
+= 0,707
+90°
+0°
+90°
+argF(j)BPF
+0
+c
+Q= 1
+Q= 2,5
+Q= 5
+60°
+30°
+30°
+60°
+p1 2
+
+R
+2L
+------
+–
+R2
+4L2
+--------
+1
+LC
+-------
+–
+
+=
+R
+2
+L
+C
+
+
+p1
+
+–
+j
+p
+2
+2
+–
++
+
+–
+j;
++
+=
+=
+p2
+
+–
+j
+p
+2
+2
+–
+–
+
+–
+j
+–
+=
+=
+
+[PAG 1753]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-153
+(XVII.24.9)
+dove  è chiamato fattore di smorzamento ed è 0    1.
+Fig. XVII.24.4   Rappresentazione dei poli complessi coniugati delle FdT.
+La FdT data dalla XVII.24.6, espressa in funzione del fattore di smorzamento e della
+pulsazione di taglio, diviene:
+(XVII.24.10)
+con: A0 =F(j0) 1 (A0 è detto guadagno statico del filtro);  = 0° per   p e  = 180°
+per  p.
+Nella Fig. XVII.24.3a sono riportati i diagrammi di F(j)e argF(j) in funzione
+di . Il modulo F(j) raggiunge il suo massimo alla pulsazione 0; è chiamato picco di
+risonanza ed è dato da:
+(XVII.24.11)
+La pulsazione 0 è chiamata pulsazione di risonanza ed è ottenuta derivando ed ugua-
+gliando a zero il modulo della FdT espresso nella XVII.24.10. Si ottiene:
+p1
+p2
+2
+2
++
+p;
+=
+=
+=
+arg p1
+
+
+;
+=
+arg p2
+
+
+
+–
+=
+cos
+cos
+
+–
+
+
+–
+p1
+----------
+
+–
+p2
+----------
+
+p
+------
+
+R
+2---
+C
+L---
+=
+=
+=
+=
+=
+=
+p1 p
+p2 p
+
+
+
+p1
+Im
+Re
+p2
+j
+j
+0
+F j
+
+
+A0p
+2
+j
+
+2
+j2p
+p
+2
++
++
+-----------------------------------------------------------
+=
+F j
+
+
+A0p
+2
+p
+2
+2
+–
+
+
+2
+2p
+
+2
++
+--------------------------------------------------------------------- ;
+=
+arg F j
+
+
+
+
+arctan 2p
+p
+2
+2
+–
+-----------------------
+
++
+–
+=
+F j0
+
+
+1
+2
+1
+2
+–
+---------------------------
+=
+con 
+1
+2
+------
+
+
+[PAG 1754]
+XVII-154
+ELETTRONICA ANALOGICA E DIGITALE
+(XVII.24.12)
+B)  Filtro passa alto
+Con la stessa procedura esposta per il filtro passa basso, dall'analisi del filtro passa
+alto riportato nella Fig. XVII.24.3b si ottiene:
+(XVII.24.13)
+Nella Fig. XVII.24.3b sono riportati il modulo e l'argomento della FdT. Il picco di
+risonanza è dato dalla XVII.24.11. La pulsazione di risonanza 0 è:
+(XVII.24.14)
+C)  Filtro passa banda
+Il filtro passa banda, riportato nella Fig. XVII.24.3c, ha FdT data da:
+(XVII.24.15)
+Il modulo e l'argomento della FdT data dalla XVII.24.15 sono:
+0
+p
+1
+22
+–
+=
+con
+
+1
+2
+------
+
+o anche:
+0
+1
+LC
+-------
+R2
+2L2
+--------
+–
+=
+per
+R
+2L
+C
+------
+
+F j
+
+
+UL
+Ui
+------
+UL
+I------ I
+Ui
+-----
+jL
+Y j
+
+
+j
+
+2
+j
+
+2
+jR
+L---
+1
+LC
+-------
++
++
+------------------------------------------------
+=
+
+=
+=
+=
+F j
+
+
+j
+
+2
+j
+
+2
+j2p
+p
+2
++
++
+--------------------------------------------------------
+=
+0
+p
+1
+22
+–
+-----------------------
+=
+per
+
+1
+2
+------
+
+o anche:
+0
+1
+LC
+R2C2
+2
+------------
+–
+---------------------------------
+=
+per
+R
+2L
+C
+------
+
+F j
+
+
+UR
+Ui
+------
+UR
+I------ I
+Ui
+-----
+RY j
+
+
+jCR
+j
+
+2LC
+jCR
+1
++
++
+------------------------------------------------------- 
+=
+=
+=
+=
+R
+L---
+j
+j
+
+2
+jR
+L---
+1
+LC
+-------
++
++
+------------------------------------------------
+j2p
+j
+
+2
+j2p
+p
+2
++
++
+--------------------------------------------------------
+=
+=
+
+[PAG 1755]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-155
+(XVII.24.16)
+con  = 0° per   p e  = 180° per   p
+Nella Fig. XVII.24.3c si nota che il modulo della FdT ha un picco, detto picco di riso-
+nanza, ad una pulsazione 0, chiamata pulsazione di risonanza; il picco corrisponde al
+modulo unitario della FdT, che è il valore massimo del modulo della FdT. Dalla
+XVII.24.16 si deduce che F(j) = 1 per 1CR) LR) = 0. Da quest'ultima ugua-
+glianza si ottiene:
+(XVII.24.17)
+Nella Fig. XVII.24.3c sono riportati il modulo e l'argomento della FdT, in funzione di
+. Dal diagramma del modulo si può determinare la banda passante BW, individuata da:
+(XVII.24.18)
+con L e H, ripettivamente, pulsazione di taglio inferiore e pulsazione di taglio supe-
+riore; esse sono definite come le pulsazioni a cui il modulo della FdT è uguale al valore
+massimo diviso per 
+, in questo caso, a 
+.
+Per determinare i valori L e H, si pone:
+ 
+.
+Da questa relazione, osservando che 1  1CRLR2  2, si ottiene:
+(XVII.24.19)
+D)  Fattore di merito Q
+Nelle FdT dei filtri del secondo ordine si introduce spesso il fattore di merito Q del
+circuito, detto anche fattore di qualità, al posto del fattore di smorzamento. Il fattore di
+merito è definito da: Q  p  12. Le FdT dei filtri del secondo ordine possono
+essere espresse in funzione del fattore di merito Q e della pulsazione di taglio p. Ad
+F j
+
+
+CR
+1 2LC
+–
+
+
+2
+CR
+
+2
++
+--------------------------------------------------------------
+1
+1
+1
+CR
+------------
+L
+R
+-------
+–
+
+
+
+2
++
+-----------------------------------------------------
+=
+=
+2p
+p
+2
+2
+–
+
+
+2
+2p
+
+2
++
+-------------------------------------------------------------------
+=
+arg F j
+
+
+
+
+90
+arctan
+CR
+1
+2LC
+–
+-------------------------
+
+
+
+
+
++
+–
+90
+arctan 2p
+p
+2
+2
+–
+-----------------------
+
++
+–
+=
+=
+0
+1
+LC
+-----------
+p
+=
+=
+BW
+H
+L
+–
+=
+2
+1
+2
+
+1
+1
+1
+CR
+
+
+
+
+
+L
+R
+
+
+
+–
+
+2
++
+
+1
+2
+
+=
+L
+R
+2L
+------
+–
+R2
+4L2
+--------
+1
+LC
+-------
++
++
+0
+1
+2
++
+
+–
+
+
+=
+=
+H
+R
+2L
+------
+R2
+4L2
+--------
+1
+LC
+-------
++
++
+0
+1
+2
++
+
++
+
+
+=
+=
+BW
+H
+L
+–
+20
+=
+=
