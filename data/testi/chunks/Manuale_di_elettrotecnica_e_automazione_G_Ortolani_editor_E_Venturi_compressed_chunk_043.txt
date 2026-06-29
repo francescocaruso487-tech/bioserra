@@ -1,0 +1,2141 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 43/116 ===
+Chars: 43,777 | Offset: 1,855,997
+
+caratteristica riguarda l'attitudine di un interruttore a interrompere la corrente
+in condizioni di corto circuito ed è riferita, salvo diverse indicazioni, al valore efficace
+
+[PAG 954]
+X-104
+  IMPIANTI ELETTRICI 
+della componente simmetrica. Inoltre, dato che l'intervento dell'interruttore modifica
+l'andamento e il valore della corrente di corto circuito a valle in quanto introduce l'impe-
+denza dell'arco elettrico che si sviluppa durante l'apertura, di valore ignoto e variabile, si
+considera la corrente presunta di corto circuito nel punto in cui è installato l'interruttore,
+ossia la corrente che si avrebbe se al posto dell'interruttore vi fosse un conduttore di impe-
+denza nulla.
+A seconda del tipo di interruttore le norme tecniche definiscono il potere nominale
+d'interruzione in vari modi.
+a)  Interruttori MT e AT a norma CEI 17-1
+Viene definito mediante la corrente d'interruzione nominale in corto circuito, pari al
+più elevato valore di corrente di corto circuito che l'interruttore è in grado di interrompere
+per tutte le tensioni inferiori a quella nominale. Essa è caratterizzata dalla componente
+simmetrica (detta corrente nominale di corto circuito) e dalla percentuale della compo-
+nente unidirezionale associata; quando questa non supera il 20% viene definito soltanto il
+primo termine. Valori normalizzati della corrente nominale di corto circuito sono i
+seguenti: 6,3 - 8 - 10 - 12,5 - 16 - 20 - 25 - 31,5 - 40 - 50 - 63 - 80 - 100 kA
+b)  Interruttori BT a norma CEI 17-5
+Viene definito il potere d'interruzione nominale su corto circuito corrispondente al
+valore efficace della componente simmetrica della corrente presunta di corto circuito che
+l'apparecchio è in grado di interrompere qualunque sia il valore della relativa componente
+unidirezionale. La norma specifica due valori del potere d'interruzione, precisamente il
+potere d'interruzione nominale estremo (o limite) Icu e il potere d'interruzione nominale di
+servizio Ics. Vengono stabiliti anche i valori del rapporto IcsIcu che può essere pari a 25 -
+50 - 75 - 100%. La differenza riguarda le modalità di prova e i requisiti richiesti dopo la
+sequenza d'intervento prevista: in particolare con corrente di prova Ics è richiesta anche la
+continuità di esercizio alla corrente nominale.
+Per esempio un interruttore con In = 400 A, Icu = 100 kA, Ics = 75 kA (75%) può inter-
+rompere correnti di corto circuito fino a 100 kA, però non è richiesto che dopo l'intervento
+possa condurre con continuità la sua corrente nominale di 400 A, condizione che è invece
+richiesta per l'interruzione di correnti fino a 75 kA.
+c)  Interruttori BT a norma CEI 23-3
+In questo caso (interruttori per uso domestico e similare) viene definito il potere di
+corto circuito nominale Icn che corrisponde al valore del potere di corto circuito estremo
+assegnato dal costruttore, in corrispondenza di una determinata tensione d'impiego.
+Il valore di quello di servizio Ics corrisponde a una percentuale fissa di Icn e i valori
+normalizzati di uso più frequente sono i seguenti:
+Potere di chiusura nominale su corto circuito
+Nel caso di un guasto preesistente alla chiusura di un interruttore, accade che la mano-
+vra avvenga in condizioni di cortocircuito e che l'interruttore sia interessato dal valore di
+cresta della relativa corrente. Si definisce potere di chiusura (o di stabilimento) nominale
+Icm il massimo valore di cresta della corrente di corto circuito presunta che l'interruttore è
+in grado di chiudere, alla frequenza nominale e in specificate condizioni di tensione e di
+fattore di potenza.
+Icn (kA)
+4,5
+6
+10
+15
+20
+25
+Ics (kA)
+4,5
+6
+7,5
+7,5
+10
+12,5
+
+[PAG 955]
+IMPIANTI  ELETTRICI                                               X-105
+Per gli interruttori a norma CEI 17-5 la tensione è quella nominale d'impiego e il fat-
+tore di potenza di corto circuito è riportato nella Tab. X.7.2, in cui è specificato pure il
+valore minimo da rispettare del rapporto tra potere di chiusura e di interruzione, corri-
+spondente al fattore di cresta della corrente di corto circuito.
+Corrente nominale di breve durata ammissibile Icw
+È una grandezza caratteristica che tiene conto del fatto che un interruttore, special-
+mente se munito di sganciatori di sovracorrente ritardati all'apertura, deve poter condurre
+la corrente di corto circuito per un determinato tempo, prima dell'interruzione.
+Viene definita come il valore di corrente che un interruttore è in grado di condurre,
+senza danneggiarsi, per una durata specificata e nelle condizioni di utilizzazione pre-
+scritte.
+Per gli interruttori MT un frequente valore di durata di riferimento è 3 s e il valore
+della corrente di breve durata è quello della corrente di interruzione nominale in corto cir-
+cuito. Per gli interruttori BT a norma CEI 17-5 la durata è di 1 s se il valore della corrente
+di breve durata è uguale a quello del potere nominale d'interruzione su corto circuito; se
+invece è inferiore il tempo deve essere specificato.
+7.3  Interruttori per media e alta tensione
+Questi interruttori vengono classificati in funzione della tensione nominale e del
+sistema impiegato per l'estinzione dell'arco elettrico che si sviluppa nelle manovre di
+apertura e chiusura. Si distinguono i seguenti tipi:
+–  interruttori a volume d'olio ridotto in cui l'arco si sviluppa nell'olio che riempie la
+zona dei poli e la sua estinzione avviene in virtù dei moti convettivi generati dal riscalda-
+mento dell'olio; il loro uso è sempre meno frequente, a causa di una certa pericolosità;
+–  interruttori ad aria compressa, usati prevalentemente nei sistemi AT e in cui
+l'estinzione dell'arco avviene mediante un getto d'aria di elevata pressione;
+–  interruttori in aria a deionizzazione magnetica (deion) in cui l'arco elettrico si svi-
+luppa in aria e viene estinto per effetto della forza elettromagnetica agente sull'arco
+stesso; per la loro robustezza vengono utilizzati nelle applicazioni MT più gravose, come
+gli impianti siderurgici e navali;
+–  interruttori a esafluoruro di zolfo che usano come mezzo isolante e per l'estinzione
+Tab. X.7.2   Fattori di potenza di corto circuito e rapporto tra potere di chiusura e di
+interruzione
+Potere nominale
+d'interruzione
+(kA)
+Fattore di potenza di
+corto circuito
+cos cc
+Potere di chiusura nominale 
+minimo
+(valore  Icn)
+Icn  1,5 
+0,95
+1,41
+1,5  Icn  3
+0,90
+1,42
+3  Icn  4,5
+0,80
+1,47
+4,5  Icn  6
+0,70
+1,53
+6  Icn  10
+0,50
+1,70
+10  Icn  20
+0,30
+2,00
+20  Icn  50
+0,25
+2,10
+50  Icn 
+0,20
+2,20
+
+[PAG 956]
+X-106
+  IMPIANTI ELETTRICI 
+dell'arco il gas SF6 dotato di ottime caratteristiche dielettriche e termiche; sono attualmen-
+mente quelli più usati nei sistemi MT;
+–  interruttori sotto vuoto detti così perché i poli sono posti in una camera in cui il
+mezzo dielettrico è molto rarefatto e l'arco elettrico si estingue in modo spontaneo al pas-
+saggio della corrente per lo zero.
+Tab. X.7.3   Caratteristiche tecniche di interruttori MT a esafluoruro di zolfo, per interno,
+serie HD4 (produzione ABB)
+Serie
+HD4 12
+HD4 17
+Tensione nominale e di isolamento (kV)
+12
+17,5
+Tensione di tenuta a 50 Hz (kV)
+28
+38
+Tensione di tenuta a impulso (kV)
+75
+95
+Frequenza nominale (Hz)
+50 - 60
+50 - 60
+Corrente termica nominale 40 °C (A)
+630
+1250
+1600
+1600
+2000
+2500
+3150
+3600
+630
+1250
+1600
+1600
+2000
+2500
+3150
+3600
+Potere di interruzione nominale e corrente 
+nominale ammissibile (kA)
+16
+25
+31,5
+25
+31,5
+40
+50
+25
+31,5
+40
+50
+16
+25
+31,5
+25
+31,5
+40
+50
+25
+31,5
+40
+50
+Potere di stabilimento (kA)
+40
+50
+80
+63
+80
+100
+125
+63
+80
+100
+125
+40
+50
+80
+63
+80
+100
+125
+63
+80
+100
+125
+Sequenza operazioni
+O-0,3 s-CO-15 s-CO
+O-0,3 s-CO-15 s-CO
+Serie
+HD4 24
+HD4 36
+Tensione nominale e di isolamento (kV)
+24
+36
+Tensione di tenuta a 50 Hz (kV)
+50
+70
+Tensione di tenuta a impulso (kV)
+125
+170
+Frequenza nominale (Hz)
+50 - 60
+50 - 60
+Corrente termica nominale 40 °C (A)
+630
+1250
+1600
+1600
+2000
+2500
+3150
+3600
+630
+1250
+1600
+1600
+2000
+2500
+3150
+3600
+Potere di interruzione nominale e corrente 
+nominale ammissibile (kA)
+16
+25
+31,5
+25
+31,5
+40
+50
+25
+31,5
+40
+50
+16
+25
+31,5
+25
+31,5
+40
+50
+25
+31,5
+40
+50
+Potere di stabilimento (kA)
+40
+50
+80
+63
+80
+100
+125
+63
+80
+100
+125
+40
+50
+80
+63
+80
+100
+125
+63
+80
+100
+125
+Sequenza operazioni
+O-0,3 s-CO-15 s-CO
+O-0,3 s-CO-15 s-CO
+O-0,3 s-CO-3 min-CO
+
+[PAG 957]
+IMPIANTI  ELETTRICI                                               X-107
+Nelle Tabb. X.7.3, X.7.4, X.7.5 sono riportate le caratteristiche principali di interrut-
+tori MT a esafluoruro di zolfo e sotto vuoto.
+Tab. X.7.4   Caratteristiche tecniche di interruttori MT a esafluoruro di zolfo serie HD4/R
+(produzione ABB) 
+Serie
+HD4/R 12
+HD4/R 17
+Tensione nominale e di isolamento (kV)
+12
+17,5
+Tensione di tenuta a 50 Hz (kV)
+28
+38
+Tensione di tenuta a impulso (kV)
+75
+95
+Frequenza nominale (Hz)
+50 - 60
+50 - 60
+Corrente termica nominale 40 °C (A)
+630
+800
+1250
+630
+800
+1250
+Potere di interruzione nominale
+e corrente nominale ammissibile
+di breve durata per 3 s (kA)
+12,5
+16
+20 (1)
+25
+16
+20
+25
+16
+20
+25
+12,5
+16
+20 (1)
+16
+20
+16
+20
+Potere di stabilimento (kA)
+31,5
+40
+50
+63
+40
+50
+63
+40
+50
+63
+31,5
+40
+50
+40
+50
+40
+50
+Sequenza operazioni
+O-0,3 min-CO-3 min-CO
+0-0,3 s-CO-15 s-CO
+O-0,3 min-CO-3 min-CO
+0-0,3 s-CO-15 s-CO
+Serie
+HD4/R 24
+HD4/R 36
+Tensione nominale e di isolamento (kV)
+24
+36
+Tensione di tenuta a 50 Hz (kV)
+50
+70
+Tensione di tenuta a impulso (kV)
+125
+170
+Frequenza nominale (Hz)
+50 - 60
+50 - 60
+Corrente termica nominale 40 °C (A)
+630
+800
+1250
+630
+800
+1250
+Potere di interruzione nominale
+e corrente nominale ammissibile
+di breve durata per 3 s (kA)
+12,5
+16
+20
+16
+20
+16
+20
+12,5
+16
+12,5
+16
+12,5
+16
+Potere di stabilimento (kA)
+31,5
+40
+50
+40
+50
+40
+50
+31,5
+40
+40
+40
+Sequenza operazioni
+O-0,3 min-CO-3 min-CO
+0-0,3 s-CO-15 s-CO
+O-0,3 min-CO-3 min-CO
+0-0,3 s-CO-15 s-CO
+(1) Corrente nominale ammissibile di breve durata per 1 s.
+
+[PAG 958]
+X-108
+  IMPIANTI ELETTRICI 
+7.4  Sezionatori e interruttori di manovra
+Questi apparecchi di manovra vengono usati su sistemi di categoria II e III; le loro
+caratteristiche sono stabilite dalle norme CEI EN 60265 (CEI 17-9), CEI EN 60694 (CEI
+17-21), CEI EN 62271-102 (CEI 17-83).
+I dati di targa relativi alle tensioni sono gli stessi degli interruttori, salvo che viene
+definita anche una tensione di tenuta tra i contatti aperti, a frequenza industriale e a
+impulso. Per quanto riguarda le correnti, invece, si distinguono varie grandezze caratteri-
+stiche.
+–  Corrente nominale di esercizio o corrente termica nominale: è il valore efficace
+della corrente che può circolare in modo continuativo senza che la temperatura dell'appa-
+recchio superi i limiti previsti. Valori normali per sezionatori MT sono 400, 630, 1250,
+1600, 2500 A.
+–  Corrente ammissibile nominale di breve durata: è il valore efficace della corrente
+simmetrica di corto circuito che l'apparecchio è in grado di sopportare per un tempo pre-
+fissato, generalmente 1 s. Per sezionatori MT assume valori da 12,5 a 60 kA, all'aumen-
+tare della corrente nominale.
+–  Corrente di cresta di breve durata: è il valore di picco della corrente totale di corto
+circuito che l'apparecchio è in grado di sopportare nel periodo transitorio per un tempo pre-
+fissato (dell'ordine dei millisecondi). Per sezionatori MT i valori vanno da 40 a 125 kA.
+–  Potere d'interruzione nominale: è definito per gli interruttori di manovra-seziona-
+tori e per i sezionatori sotto carico che possono effettuare manovre di apertura anche a
+carico; normalmente non supera il valore della corrente nominale dell'apparecchio.
+Tab. X.7.5   Caratteristiche tecniche di interruttori MT in vuoto, serie VD4 (produzione
+ABB)
+Serie
+VD4 12
+VD4 24
+Tensione nominale
+e di isolamento (kV)
+12
+24
+Tensione di tenuta
+a 50 Hz (kV)
+28
+50
+Tensione di tenuta
+a impulso (kV)
+75
+125
+Frequenza nominale (Hz)
+50-60
+50-60
+Corrente termica
+nominale 40 °C (A)
+630
+1250
+1600
+2000
+2500
+630
+1250
+1600
+2000
+2500
+Potere di interruzione
+nominale e corrente
+nominale ammissibile di
+breve durata per 3 s (kA)
+16
+20
+25
+31,5
+16
+20
+25
+31,5
+40
+20
+25
+31,5
+40
+20
+25
+31,5
+40
+20
+25
+31,5
+40
+16
+20
+25
+16
+20
+25
+16
+20
+25
+16
+20
+25
+25
+Potere di stabilimento (kA)
+40
+50
+63
+80
+40
+50
+63
+80
+100
+50
+63
+80
+100
+50
+63
+80
+100
+50
+63
+80
+100
+40
+50
+63
+40
+50
+63
+40
+50
+63
+40
+50
+63
+63
+Sequenza operazioni
+O-0,3 s-CO-15 s-CO
+O-0,3 s-CO-15 s-COa
+
+[PAG 959]
+IMPIANTI  ELETTRICI                                               X-109
+–  Potere di chiusura (o di stabilimento) nominale su corto circuito: è analogo a
+quello degli interruttori ed è definito solo per gli apparecchi che possono chiudersi anche
+sotto carico.
+Nella Tab. X.7.6 sono riportate le caratteristiche tecniche di sezionatori e interruttori
+MT isolati in aria.
+7.5  Interruttori automatici per bassa tensione
+Sono apparecchi di manovra e protezione formati dall'unione di un interruttore e di
+uno o più sganciatori di sovracorrente cosicché, oltre a effettuare le manovre di apertura e
+chiusura manuali, possono interrompere automaticamente il circuito in caso d'intervento
+dello sganciatore.
+In posizione di aperto la distanza di sezionamento tra i contatti è generalmente suffi-
+ciente ad assicurare loro anche la funzione di sezionatore.
+Tab. X.7.6   Caratteristiche tecniche di sezionatori e interruttori di manovra sezionatori
+MT isolati in aria, serie Airswitch (produzione ABB)
+Tipo di apparecchio
+Interruttore di
+manovra-sezionatore
+rotativo AM
+Sezionatore
+rotativo
+AR/AS
+Interruttore di
+manovra-sezionatore
+da parete GS-IMC
+Tensione nominale (kV)
+24
+24
+24
+Tensione di tenuta verso terra e tra
+le fasi (50/60 Hz, 1 min) (kV)
+50
+50
+50
+Tensione di tenuta tra i contatti aperti 
+(50-60 Hz, 1 min) (kV)
+
+
+
+Tensione di tenuta a impulso verso
+terra e tra le fasi (kV cresta)
+125
+125
+125
+Tensione di tenuta a impulso tra
+i contatti aperti (kV cresta)
+
+
+
+Frequenza nominale (Hz)
+50 - 60
+50 - 60
+50 - 60
+Corrente termica nominale (A)
+400/630
+400/630
+800/1250
+400
+Corrente nominale ammissibile
+di breve durata, 1 s (kA)
+12,5
+16
+12,5
+16
+20
+25
+12,5
+16
+Potere di stabilimento nominale
+su corto circuito (kA)
+31,5
+40
+
+
+
+
+Potere d'interruzione nominale (A)
+- su carichi prevalentemente attivi
+- su trasformatori a vuoto
+- su linee a vuoto
+- su cavi a vuoto
+- in circuiti ad anello
+400/630
+4 ... 16
+25
+25
+400/630
+
+
+
+
+
+
+
+
+
+
+
+[PAG 960]
+X-110
+  IMPIANTI ELETTRICI 
+Gli sganciatori più diffusi sono di tipo magnetotermico (interruttore automatico
+magnetotermico), formati dall'insieme di un relè magnetico e di uno termico, oppure elet-
+tronici; a volte gli interruttori vengono corredati anche di sganciatori di minima tensione.
+Costruttivamente gli interruttori automatici si possono dividere in tre tipi (Fig. X.7.1a,
+b, c): aperti, scatolati, modulari.
+Fig. X.7.1   Tipi di interruttore per bassa tensione: a) aperto; b) scatolato; c) modulare.
+Gli interruttori aperti hanno le varie parti isolate in aria, presentano notevoli dimen-
+sioni e sono destinati soprattutto agli usi industriali, come interruttori di macchina a valle
+di trasformatori MT/BT e di generatori e per le partenze di linee con correnti nominali
+maggiori di 1000  2000 A.
+Hanno elevate correnti nominali (orientativamente fino a 8 kA) e potere d'interruzione
+nell'ordine di 100 kA.
+Gli interruttori scatolati sono racchiusi in un involucro di plastica isolante, diviso in
+scomparti in modo da creare l'isolamento tra le fasi e verso massa. Hanno dimensioni più
+contenute di quelli aperti, ma prestazioni paragonabili, con correnti nominali fino a 4 kA e
+potere d'interruzione fino a 200 kA. 
+Vengono usati in impianti industriali e, in ambito civile e terziario, per impianti di una
+certa potenza, quando occorrono interruttori con prestazioni maggiori di quelli modulari.
+Gli interruttori modulari hanno il vantaggio di avere uno sviluppo in larghezza multi-
+plo di un modulo normalizzato, dimensioni principali unificate e un dispositivo di fissag-
+gio a scatto su guida DIN.
+Vengono costruiti con correnti nominali fino a 100  160 A e potere d'interruzione
+fino a 4,5  25 kA. Usati inizialmente in ambito civile si sono diffusi anche nei quadri
+industriali, per la protezione di circuiti di potenza non molto elevata.
+Le catarreristiche funzionali degli interruttori automatici per bassa tensione sono sta-
+bilite dalle rispettive norme di prodotto; in particolare si distinguono le due categorie
+seguenti:
+–  interruttori automatici soggetti alla norma CEI EN 60947-2 (CEI 17-5), usati preva-
+lentemente in ambito industriale o, comunque, per elevati valori di corrente;
+–  interruttori automatici per impianti domestici e similari, con correnti nominali fino
+a 125 A e rispondenti alla norma CEI EN 60898/1 (CEI 23-3/1).
+Nelle Tabb. X.7.7, X.7.8, X.7.9, X.7.10 sono riportate le principali caratteristiche tec-
+niche di interruttori aperti, scatolati e modulari.
+a)
+b)
+c)
+
+[PAG 961]
+IMPIANTI  ELETTRICI                                               X-111
+Tab. X.7.7   Caratteristiche tecniche di interruttori in aria aperti per bassa tensione, serie
+Emax (produzione ABB)
+Serie
+E1
+E2
+E3
+Livello di prestazione
+B
+B
+N
+L
+N
+S
+H
+L
+Corrente ininterrotta nominale
+40 °C (A)
+800
+1250
+1600
+2000
+1250
+1600
+2000
+1250
+1600
+2500
+3200
+1250
+1600
+2000
+2500
+3200
+1250
+1600
+2000
+2500
+3200
+2000
+2500
+Numero poli
+3-4 
+3-4
+3-4
+Frequenza nominale (Hz)
+50-60
+50-60
+50-60
+Tensione nominale d'impiego Ue
+in c.a. (V)
+690
+690
+690
+Tensione nom. d'isolamento Ui (V)
+1000
+1000
+1000
+Potere d'interruzione nominale limite
+Icu a 400/415 V c.a. (kA)
+40
+40
+65
+130
+65
+75
+100
+130
+Potere d'interruzione nominale di servi-
+zio Ics a 400/415 V c.a. (kA)
+40
+40
+65
+130
+65
+75
+85
+130
+Corrente ammissibile nominale di breve
+durata Icw per 1 s (kA)
+36
+40
+55
+10
+65
+75
+75
+15
+Corrente ammissibile nominale di breve
+durata Icw per 3 s (kA)
+
+40
+40
+
+65
+65
+65
+/
+Potere di chiusura nominale a
+400/415 V c.a. (kA)
+84
+84
+143
+286
+143
+165
+220
+286
+Sganciatori di massima corrente a
+microprocessori per appl. in c.a.
+
+
+
+
+
+
+
+
+Serie
+E4
+E6
+Livello di prestazione
+S
+H
+H
+V
+Corrente ininterrotta nominale (A)
+4000
+3200
+4000
+5000
+6300
+3200
+4000
+5000
+6300
+Numero poli
+3-4
+3-4
+Frequenza nominale (Hz)
+50-60
+50-60
+Tensione nominale d'impiego Ue in c.a. (V)
+690
+690
+Tensione nominale d'isolamento Ui (V)
+1000
+1000
+Potere d'interruzione nominale limite Icu a 400/415 V c.a. (kA)
+75
+100
+100
+150
+Potere d'interruzione nom. di servizio Ics a 400/415 V c.a. (kA)
+75
+100
+100
+125
+Corrente ammissibile nominale di breve durata Icw per 1 s (kA)
+75
+100
+100
+100
+Corrente ammissibile nominale di breve durata Icw per 3 s (kA)
+65
+65
+
+
+Potere di chiusura nominale a 400/415 V c.a. (kA)
+165
+220
+220
+330
+Sganciatori di massima corrente a microprocessori per appl. in c.a.
+
+
+
+
+
+[PAG 962]
+X-112
+  IMPIANTI ELETTRICI 
+Tab. X.7.9   Caratteristiche tecniche di interruttori in aria scatolati per bassa tensione da
+630 A a 3200 A, serie Compact NS (produzione Schneider Electric)
+Tab. X.7.8   Caratteristiche tecniche di interruttori in aria scatolati per bassa tensione fino
+a 630 A, serie Compact NS (produzione Schneider Electric)
+Serie
+NS160
+NS250
+NS400
+NS630
+Numero poli
+3-4
+3-4
+3-4
+3-4
+Corrente nominale
+40 °C (A)
+160
+250
+400
+630
+Tensione nominale
+d'isolamento (V)
+750(1)
+750
+750(1)
+750(1)
+Tensione nominale
+d'impiego c.a.
+50/60 Hz (V)
+690(2)
+690
+690(2)
+690(2)
+Livello di prestazione
+E
+NE
+N
+SX
+H
+L
+N
+SX
+H
+L
+NR
+N
+H
+L
+NR
+N
+H
+L
+Potere d'interruzione
+nominale esterno in
+c.a. 380/415 V (kA)
+16
+25
+36
+50
+70
+150
+36
+50
+70
+150
+36
+50
+70
+150
+36
+50
+70 150
+50%
+100%
+100%
+75%
+100%
+75%
+100%(3)
+(1) 500 V per NS160E; 690 V per NR400/630. (2) 440 V per NS160E; 500 V per NR400/630.
+(3) Per tensione d’impiego  500 V
+Serie
+NS630b
+NS800
+NS1000
+NS1250 NS1600 NS2000 NS2500 NS3200
+Numero poli
+3-4
+3-4
+3-4
+3-4
+3-4
+3-4
+3-4
+3-4
+Corrente nominale
+40 °C (A)
+630
+800
+1000
+1250
+1600
+2000
+2500
+3200
+Tensione nominale
+d'isolamento (V)
+750
+750
+750
+750
+750
+750
+750
+750
+Tensione nominale
+d'impiego c.a.
+50/60 Hz (V)
+690
+690
+690
+690
+690
+690
+690
+690
+Livello di
+prestazione
+N
+H
+L
+N
+H
+L
+N
+H
+L
+N
+H
+N
+H
+N
+H
+N
+H
+N
+H
+Potere d'interruzione
+nominale esterno in
+c.a. 380/415 V (kA)
+50
+70 150 50
+70
+150 50
+70 150
+50
+70
+50
+70
+70
+85
+70
+85
+70
+85
+Potere d'interruzione
+nominale di servizio
+(% Icu)
+75%
+50%
+100%
+75%
+50%
+100%
+75%
+50%
+100%
+75%
+50%
+75%
+50%
+100%
+75%
+100%
+75%
+100%
+75%
+Corrente nominale
+di breve durata
+ammissibile in c.a.
+50/60 Hz (kA)
+- per 0,5 s
+- per 1 s
+- per 3 s
+25
+17
+25
+17
+10
+7
+25
+17
+25
+17
+10
+7
+25
+17
+25
+17
+10
+7
+25
+17
+25
+17
+25
+17
+25
+17
+32
+32
+32
+32
+32
+32
+
+[PAG 963]
+IMPIANTI  ELETTRICI                                               X-113
+Le principali grandezze caratteristiche alle quali occorre fare riferimento sono:
+–  tensione nominale, distinta in tensione nominale d’impiego Ue e d’isolamento Ui;
+–  corrente nominale In;
+–  potere d’interruzione nominale su corto circuito Icn, riferito al valore efficace della
+componente simmetrica della corrente di corto circuito presunta; per gli interruttori a
+norma CEI 17-5 vengono specificati il potere d’interruzione nominale estremo Icu e quello
+di servizio Ics, a seconda delle condizioni di prova; i valori di Ics sono normalizzati in per-
+centuale rispetto a quelli di Icu e valgono 25%, 50%, 75%, 100%;
+–  potere di chiusura nominale Icm, riferito al valore di cresta della corrente di corto
+circuito presunta;
+–  numero di poli, distinguendo tra 1 (unipolare), 1N (bipolare con neutro non pro-
+tetto), 2 (bipolare con neutro protetto), 3 (tripolare), 3N (quadripolare con neutro non
+protetto), 4 (quadripolare con neutro protetto):
+–  caratteristica d’intervento tempo-corrente che, per alcuni tipi di interruttore, deve
+rispondere a valori normalizzati.
+Tab. X.7.10   Caratteristiche tecniche di interruttori magnetotermici modulari in bassa
+tensione System Pro M (produzione ABB) 
+Serie
+Numero di poli
+Corrente nominale (A) 
+Caratteristica
+d'intervento
+Potere di
+interruzione
+nominale (kA)
+S 200 L-C
+1, 1+N, 2, 3, 4
+6-8-10-13-16-20-25-32-40
+C
+4,5
+S 200-B
+1, 1+N, 2, 3, 3+N, 4
+6-8-10-13-16-20-25-32-40-50-63
+B
+6
+S 200-C
+1, 1+N, 2, 3, 3+N, 4
+0,5-1-1,6-2-3-4-6-8-10-13-16-20-
+25-32-40-50-63
+C
+6
+S 200-K
+1, 1+N, 2, 3, 3+N, 4
+0,5-1-1,6-2-3-4-6-8-10-16-20-25-
+32-40-50-63
+K
+6
+S 200 M-B
+1, 1+N, 2, 3, 3+N, 4
+6-8-10-13-16-20-25-32-40-50-63
+B
+10
+S 200 M-C
+1, 1+N, 2, 3, 3+N, 4
+0,5-1-1,6-2-3-4-6-8-10-13-16-20-
+25-32-40-50-63
+C
+10
+S 200 M-D
+1, 1+N, 2, 3, 4
+0,5-1-1,6-2-3-4-6-8-10-16-20-25-
+32-40-50-63
+D
+10
+S 200 M-K
+1, 1+N, 2, 3, 4
+0,5-1-1,6-2-3-4-6-8-10-16-20-25-
+32-40-50-63
+K
+10
+S 200 P-B
+1, 2, 3, 3+N, 4
+6-8-10-13-16-20-25-32-40-50-63
+B
+25 kA per In 
+15 kA per In 
+S 200 P-C
+1, 2, 3, 3+N, 4
+0,5-1-1,6-2-3-4-6-8-10-13-16-20-
+25-32-40-50-63
+C
+25 kA per In 
+15 kA per In 
+S 200 P-D
+1, 2, 3, 4
+0,5-1-1,6-2-3-4-6-10-16-20-25-32-
+40-50-63
+D
+25 kA per In 
+15 kA per In 
+S 200 P-K
+1, 2, 3, 3+N, 4
+0,5-1-1,6-2-3-4-6-8-10-16-20-25-
+32-40-50-63
+K
+25 kA per In 
+15 kA per In 
+S 200 P-Z
+1, 2, 3, 3+N, 4
+0,5-1-1,6-2-3-4-6-8-10-16-20-25-
+32-40-50-63
+Z
+25 kA per In 
+15 kA per In 
+S 200 P
+1, 2, 3, 4
+0,5-1-1,6-2,5-4-6,3-10-12,5-16-20-
+25-32-40-50-63
+solo
+sganciatore
+magnetico
+
+
+[PAG 964]
+X-114
+  IMPIANTI ELETTRICI 
+Caratteristiche di intervento degli sganciatori di sovracorrente
+La caratteristica d'intervento di uno sganciatore di massima corrente è il grafico che
+lega il tempo d'intervento dell'apparecchio al rapporto IIn tra la corrente agente e quella
+nominale (o di regolazione) dello sganciatore. Nel caso degli sganciatori magnetotermici
+accoppiati agli interruttori automatici impiegati per la protezione dalle sovracorrenti, la
+forma tipica della caratteristica d'intervento è quella mostrata nelle Figg. X.7.2 e X.7.3.
+Fig. X.7.2   Caratteristica d'intervento di un interruttore magnetotermico non regolabile.
+Fig. X.7.3   Caratteristica d'intervento di un interruttore magnetotermico con sganciatore
+magnetico regolabile da 10 a 15 volte In.
+In entrambi i casi il piano cartesiano può essere suddiviso in tre zone.
+–  Zona A: corrisponde alla zona di non intervento, in quanto la corrente agente è infe-
+riore alle soglie di intervento di ambedue gli sganciatori.
+–  Zona B: è la zona d'intervento dello sganciatore termico che presenta un tempo
+d'intervento che diminuisce all'aumentare della corrente agente (caratteristica a tempo
+inverso); il tempo a parità di corrente è maggiore nel caso di intervento a freddo, in quanto
+il relè parte da una temperatura minore. La regolazione va fatta in modo tale che l'inter-
+vento a tempo inverso corrisponda alla protezione contro i sovraccarichi.
+a
+a. sganciatore termico a freddo
+b. sganciatore termico a caldo
+c. sganciatore magnetico fisso
+b
+c
+A
+B
+C
+2000
+1000
+500
+200
+100
+50
+20
+10
+5
+2
+1
+0,5
+0,2
+0,1
+0,05
+0,02
+0,01
+0,005
+0,002
+200
+100
+50
+20
+10
+5
+2
+1,5
+1,2
+1
+0,5
+IIn
+t (s)
+a
+a. sganciatore termico a freddo
+b. sganciatore termico a caldo
+c. sganciatore magnetico fisso
+b
+c
+A
+B
+C
+2000
+1000
+500
+200
+100
+50
+20
+10
+5
+2
+1
+0,5
+0,2
+0,1
+0,05
+0,02
+0,01
+0,005
+0,002
+200
+100
+50
+20
+10
+5
+2
+1,5
+1,2
+1
+0,5
+IIn
+t (s)
+
+[PAG 965]
+IMPIANTI  ELETTRICI                                               X-115
+–  Zona C: è la zona d'intervento dello sganciatore magnetico, con tempo d'intervento
+costante al variare della corrente (caratteristica a tempo indipendente, con scatto istanta-
+neo) e con la possibilità di regolare oppure no la corrente di taratura. È la zona che corri-
+sponde alla protezione contro il corto circuito.
+La normativa CEI non fissa tutta la forma della caratteristica tempo-corrente degli
+interruttori automatici, ma indica degli intervalli sul piano t-I da rispettare (porte). Per gli
+interruttori per usi domestici e similari a norma CEI EN 60898 (CEI 23-3) sono previste
+tre caratteristiche normalizzate (Figg. X.7.4, X.7.5, X.7.6) per le quali la corrente che
+determina l'intervento istantaneo deve essere compresa nei campi seguenti:
+–  caratteristica B: maggiore di 3 e fino a 5 volte la corrente nominale; viene usata per
+circuiti con valori non elevati della corrente d'inserzione;
+–  caratteristica C: maggiore di 5 e fino a 10 volte la corrente nominale; è quella di
+produzione più comune;
+Fig. X.7.4   Caratteristica d'intervento di 
+tipo B (produzione Schneider Electric).
+Fig. X.7.5   Caratteristica d'intervento di 
+tipo C (produzione Schneider Electric).
+Fig. X.7.6   Caratteristica d'intervento di
+tipo D (produzione Schneider Electric).
+Secondo la norma CEI 23-3 l'intervento
+magnetico può arrivare fino a 20 In.
+2000
+1000
+500
+200
+100
+50
+20
+10
+5
+2
+1
+0,5
+0,2
+0,1
+0,05
+0,01
+0,005
+0,002
+0,001
+200
+100
+30
+20
+10
+5
+2
+1
+0,5
+IIn
+t (s)
+4
+3
+7
+50 70
+0,02
+10000
+5000
+1H
+2000
+1000
+500
+200
+100
+50
+20
+10
+5
+2
+1
+0,5
+0,2
+0,1
+0,05
+0,01
+0,005
+0,002
+0,001
+200
+100
+30
+20
+10
+5
+2
+1
+0,5
+IIn
+t (s)
+4
+3
+7
+50 70
+0,02
+10000
+5000
+1H
+2000
+1000
+500
+200
+100
+50
+20
+10
+5
+2
+1
+0,5
+0,2
+0,1
+0,05
+0,01
+0,005
+0,002
+0,001
+200
+100
+30
+20
+10
+5
+2
+1
+0,5
+IIn
+t (s)
+4
+3
+7
+50 70
+0,02
+10000
+5000
+1H
+
+[PAG 966]
+X-116
+  IMPIANTI ELETTRICI 
+–  caratteristica D: maggiore di 10 e fino a 20 volte la corrente nominale; viene usata
+per circuiti con elevati valori della corrente d'inserzione (motori, condensatori ecc.).
+Caratteristiche tecniche di alcuni sganciatori di massima corrente
+Sono riportate nelle Tabb. X.7.11, X.7.12. A differenza dei più semplici sganciatori
+magnetotermici, quelli elettronici a microprocessore consentono di attuare varie funzioni
+protettive.
+Tab. X.7.11   Sganciatori di massima corrente magnetotermici TM per interruttori con
+correnti nominali 160 A e 250 A Compact NS 160/250 (produzione Schneider Electric)
+Sganciatore
+Interruttore
+Sigla
+Corrente 
+nominale 
+In
+a 40 °C
+(A)
+NS 160
+NS 250
+Regolazione
+termica Ir (A)
+da 0,8 a 1 x In
+Regolazione
+magnetica Im
+(A)
+Regolazione
+termica Ir (A)
+da 0,8 a 1 x In
+Regolazione
+magnetica Im
+(A)
+TM16D
+TM25D
+TM32D
+TM40D
+TM50D
+TM63D
+TM80D
+TM100D
+TM125D
+TM160D
+TM200D
+TM250D
+TM16G
+TM25G
+TM40G
+TM63G
+16
+25
+32
+40
+50
+63
+80
+100
+125
+160
+200
+250
+16
+25
+40
+63
+12,8  16
+20  25
+25,6  32
+32  40
+40  50
+50,4  63
+64  80
+80  100
+100  125
+128  160
+
+
+12,8  16
+20  25
+32  40
+50,4  63
+190
+300
+400
+500
+500
+500
+1000
+1250
+1250
+1250
+
+
+63
+80
+80
+125
+12,8  16
+20  25
+25,6  32
+32  40
+40  50
+50,4  63
+64  80
+80  100
+100  125
+128  160
+160  200
+200  250
+12,8  16
+20  25
+32  40
+50,4  63
+190
+300
+400
+500
+500
+500
+1000
+1250
+1250
+1250
+1000  2000
+1250  2500
+63
+80
+80
+125
+Tab. X.7.12   Sganciatori di massima corrente elettronici STR per interruttori Compact
+NS 160/250/400/630 con correnti nominali 160  630 A (produzione Schneider Electric)
+Sganciatori elettronici STR
+STR22SE
+STR23SE
+Corrente nominale
+per interruttori Compact
+In    (A)
+NS  160
+NS  250
+NS  400
+NS  630
+40    80    100    160    250
+160      250      400      630
+Protezione contro i sovraccarichi
+(Lungo ritardo)
+Soglia d’intervento        Ir  In x
+0,4 ... 1
+regolabile (48 gradini)
+0,4 ... 1
+regolabile (48 gradini)
+Temporizzazione (s)
+(tempi d’intervento min ... max)
+a 1,5 x Ir      d
+a    6 x Ir      d
+a 7,2 x Ir      d
+fissa
+90 ... 180
+5 ... 7,5
+3,2 ... 5,0
+fissa
+90 ... 180
+5 ... 7,5
+3,2 ... 5,0
+
+[PAG 967]
+IMPIANTI  ELETTRICI                                               X-117
+Tab. X.7.12  Segue
+Corrente convenzionale di intervento e di non intervento
+Gli interruttori automatici corredati di sganciatori di sovracorrente sono caratterizzati
+da due valori tipici di corrente, così definiti.
+–  Corrente convenzionale di intervento If: è il valore di corrente che determina
+l'intervento entro un tempo limite specificato tc (tempo convenzionale).
+–  Corrente convenzionale di non intervento Inf: è il valore di corrente che l'apparec-
+chio può condurre per il tempo convenzionale senza che avvenga l'intervento.
+Il loro significato è rappresentato nella Fig. X.7.7. Per esempio un interruttore con
+In = 25 A per il quale si ha Inf = 28,25 A; If = 36,25 A; tc = 1 h, certamente interviene entro
+1 h se la corrente è almeno pari a 36,25 A, mentre non deve sicuramente intervenire per
+1 h se la corrente non supera i 28,25 A.
+Fig. X.7.7   Illustrazione grafica del significato di If e di Inf.
+I valori di If e di Inf e quelli di tc sono stabiliti dalle relative norme CEI e corrispon-
+dono a quelli della Tab. X.7.13.
+Energia specifica passante
+Per un interruttore automatico corredato di sganciatore di sovracorrente l’energia spe-
+cifica passante rappresenta l'energia termica specifica (integrale di Joule) che l'apparec-
+chio lascia fluire durante il corto circuito, prima che la corrente venga interrotta. I
+costruttori di interruttori forniscono dei grafici di tale energia in funzione del valore effi-
+cace della corrente di corto circuito simmetrica presunta Is, il cui andamento tipico è
+Sganciatori elettronici STR
+STR22SE
+STR23SE
+Protezione contro i corto circuiti
+(Corto ritardo)
+Soglia d’intervento        Isd  In x
+2 ... 10
+regolabile (8 gradini)
+2 ... 10
+regolabile (8 gradini)
+Temporizzazione (ms)
+- tempo d’intervento max senza
+sgancio
+- tempo max d’interruzione
+fissa
+ 40
+ 60
+fissa
+ 40
+ 60
+Protezione contro i corto circuiti
+(Istantanea)
+Soglia d’intervento        Ii  In x
+11
+fissa
+11
+fissa
+Protezione del neutro
+- neutro non protetto 4P 3r
+- neutro protetto al 50% 4P 3r + N/2
+- neutro protetto al 100% 4P 4r
+senza protezione
+0,5 x Ir
+1 x Ir
+senza protezione
+0,5 x Ir
+1 x Ir
+non interviene
+sicuramente
+interviene
+sicuramente
+può intervenire o meno
+entro il tempo
+In
+Inf
+If
+I
+t  tc
+t tc
+
+[PAG 968]
+X-118
+  IMPIANTI ELETTRICI 
+riportato nella Fig. X.7.8. Il primo tratto è relativo all’intervento del relè termico; il pro-
+dotto I2ti diminuisce a causa della riduzione del tempo d’intervento, salvo poi aumentare
+leggermente. Quando interviene il relè magnetico si riduce di colpo ti e, quindi, l’energia
+specifica, mentre all’aumentare della corrente di corto circuito aumenta anche I2ti, dato
+che non varia il tempo d’intervento.
+Fig. X.7.8  Curve dell'energia specifica passante per interruttori magnetotermici modulari
+serie S91, con correnti nominali da 6 A a 32 A (produzione ABB).
+La curva tipica è caratterizzata da un primo tratto con valori elevati dell'energia (inter-
+vento dello sganciatore termico a tempo inverso, con elevati valori di t nell'espressione
+I2t), da una brusca riduzione in corrispondenza dell'intervento dello sganciatore magne-
+tico a scatto istantaneo e da un aumento dipendente da I2 nel campo delle correnti di corto
+circuito più elevate.
+Tab. X.7.13   Valori delle correnti convenzionali di intervento e di non intervento e del
+tempo convenzionale
+Tipo di apparecchio
+Inf
+If
+tc
+Relè termici (accoppiati a contattori)
+1,05 In
+1,2 In
+2 h
+Interruttori automatici regolabili a
+norma CEI 17-5
+Ir  63 A
+1,05 Ir
+1,25 Ir
+1 h
+Ir > 63 A
+1,05 Ir
+1,25 Ir
+2 h
+Interruttori automatici non regolabili a norma
+CEI 23-3
+1,13 In
+1,45 In
+1 h
+Nota. Ir: corrente di regolazione dello sganciatore;
+In: corrente nominale dello sganciatore.
+102
+103
+104
+105
+106
+Energia specifica passante I2t (A2s)
+Corrente di corto circuito presunta (A)
+Energia specifica passante I2t (A2s)
+Corrente di corto circuito presunta (A)
+107
+10
+102
+103
+104
+105
+106
+107
+10
+10
+102
+103
+104
+10
+102
+103
+104
+Diagrammi del valore dell’energia specifica passante I2t
+C32
+C20
+C10
+C25
+C16
+C6
+
+[PAG 969]
+IMPIANTI  ELETTRICI                                               X-119
+Fig. X.7.9   Curve dell'energia specifica passante per interruttori magnetotermici modulari
+System pro M compact serie S 200, caratteristica d’intervento B-C (produzione ABB).
+Fig. X.7.10   Curve dell'energia specifica passante per interruttori magnetotermici modu-
+lari System pro M compact serie S 200, caratteristica d’intervento K (produzione ABB).
+102
+103
+104
+105
+106
+0,1
+1
+10
+100
+50/60 A
+32/40 A
+20/25 A
+13/16 A
+10 A
+6 A
+4 A
+3 A
+2 A
+1,6 A
+1 A
+S 200 L     S 200  S 200 M   S 200 P
+Energia specifica passante I2t (A2s)
+Corrente di corto circuito presunta (A)
+102
+103
+104
+105
+106
+0,1
+1
+10
+100
+50/60 A 40 A
+20 A
+13/16 A
+10 A
+6 A
+4 A
+3 A
+2 A
+1,6 A
+1 A
+S 200  S 200 M   S 200 P
+Energia specifica passante I2t (A2s)
+Corrente di corto circuito presunta (A)
+20/32 A
+
+[PAG 970]
+X-120
+  IMPIANTI ELETTRICI 
+Le Figg. X.7.9, X.7.10 riportano le curve dell'energia specifica passante per interrut-
+tori magnetotermici modulari le cui caratteristiche sono indicate nella Tab. X.7.10.
+Nella Fig. X.7.11 sono riportate, invece, le curve dell’energia specifiva passante per
+gli interruttori scatolati limitatori di corrente, indicati nelle Tabb. X.7.11 e X.7.12.
+Fig. X.7.11   Curve dell'energia specifica passante per interruttori scatolati Compact
+NS160-NS1600 (produzione Schneider Electric).
+7.6  Contattori
+Sono apparecchi di manovra (detti anche teleruttori) di comune impiego nei sistemi di
+categoria I per il comando di motori, di batterie di condensatori, di resistori; si producono
+anche contattori per sistemi MT. Le loro caratteristiche sono stabilite dalle norme del CT
+17 del CEI.
+Costruttivamente gli apparecchi ad azione elettromagnetica si dividono in contattori
+su barra e compatti (Fig. X.7.12), di cui i secondi sono i più usati; vi sono anche contat-
+I2t (A2s)
+NS630bH
+NS800H
+NS1000H
+NS1250H
+NS1600H
+NS630bN
+NS800N
+NS1000N
+NS1250N
+NS1600N
+NSA160
+NS160TM25
+NS160TM16
+NS1600L
+NS800L(1)
+NS630
+NS400
+NS250
+NS160
+2
+3
+5
+105
+2
+3
+4
+2
+3
+5
+106
+2
+3
+5
+107
+2
+3
+5
+108
+2
+3
+5
+109
+6
+10
+20
+30
+40
+60 70
+100
+150 200
+300
+kA eff
+E
+E
+E
+E
+NE
+NE
+NE
+NE
+N
+N
+N
+N
+N
+N
+N
+SX
+SX
+SX
+SX
+H
+H
+H
+H
+H
+H
+L
+L
+L
+H
+H
+L
+L
+L
+
+[PAG 971]
+IMPIANTI  ELETTRICI                                               X-121
+tori statici in cui l'apertura e la chiusura avvengono per commutazione di dispositivi elet-
+tronici, senza parti in movimento.
+Fig. X.7.12   a) Contattore a barra: 1) polo, 2) contatti ausiliari, 3) gruppo motore. b) Con-
+tattore compatto.
+ Nei contattori elettromagnetici è presente un nucleo magnetico, diviso in una parte
+fissa e una mobile, sul quale è montata una bobina che, attraversata da corrente, produce
+la forza elettromagnetica che determina lo spostamento del nucleo mobile e la commuta-
+zione dei contatti. A questa forza si oppone quella esercitata da una o più molle. Vi sono
+poi i contatti principali per i circuiti di potenza (di solito normalmente aperti) e i contatti
+ausiliari per i circuiti di comando e segnalazione, sia normalmente aperti che normal-
+mente chiusi.
+Categorie d'impiego
+A seconda della natura dei circuiti e delle caratteristiche dei carichi che sono in grado
+di manovrare, i contattori vengono classificati in diverse categorie di impiego (Tab.
+X.7.14).
+Tab. X.7.14   Categorie nominali di impiego dei contattori
+Sigla
+Applicazioni tipiche
+AC 1
+AC 2
+AC 3 
+AC 4
+AC 5a
+AC 5b
+AC 6a
+AC 6b
+AC 7a
+AC 7b
+AC 8a
+AC 8b
+DC 1
+DC 2
+DC 3
+Inserzione o disinserzione di carichi ohmici o debolmente induttivi (cos   0,95), forni a
+resistenza
+Avviamento, arresto e inversione di motori ad anelli
+Avviamento e arresto con distacco dell'alimentazione di motori a gabbia
+Avviamento, frenatura in controcorrente, inversione e manovra a impulsi di motori a gabbia
+Comando di lampade a scarica
+Comando di lampade a incandescenza
+Comando di trasformatori
+Comando di batterie di condensatori
+Carichi debolmente induttivi in applicazioni domestiche
+Carichi costituiti da motori in applicazioni domestiche
+Comando di motori per compressori ermetici di frigoriferi con ripristino manuale dello
+sganciatore di sovraccarico
+Comando di motori per compressori ermetici di frigoriferi con ripristino automatico dello
+sganciatore di sovraccarico
+Inserzione o disinserzione di carichi ohmici o debolmente induttivi, forni a resistenza
+Avviamento e arresto di motori a c.c. con eccitazione in parallelo
+Avviamento, frenatura in controcorrente e manovra a impulsi di motori a c.c. con eccita-
+zione in parallelo
+3
+2
+1
+a)
+b)
+
+[PAG 972]
+X-122
+  IMPIANTI ELETTRICI 
+Tab. X.7.14 Segue
+Caratteristiche e criteri di scelta
+Oltre alla categoria di impiego, per i contattori sono definite numerose altre grandezze
+caratteristiche, di cui le principali sono elencate di seguito.
+–  Tensione nominale d'isolamento Ui alla quale sono riferite le prove d'isolamento
+dell'apparecchio.
+–  Tensione nominale d'impiego Ue e corrente nominale d'impiego Ie: sono i valori di
+tensione e corrente che definiscono le prestazioni del contattore e ai quali sono riferiti i
+poteri di chiusura e di interruzione. Un contattore può avere diverse combinazioni di ten-
+sioni e correnti nominali di impiego; concettualmente questo si spiega considerando che il
+prodotto Ue Ie è una potenza, a parità della quale la corrente può aumentare al diminuire
+della tensione e viceversa; infatti, nel caso dei contattori per il comando di motori, la nor-
+mativa consente di indicare, invece della corrente di impiego, il valore della potenza cor-
+rispondente alla tensione nominale d’impiego considerata.
+–  Corrente nominale termica convenzionale Ith e corrente nominale termica in invo-
+lucro Ithe: analoghe alle omonime grandezze degli interruttori e relative alla conduzione
+per il servizio di otto ore con una temperatura ambiente specificata.
+–  Corrente ammissibile di breve durata, che l’apparecchio può condurre, in condi-
+zioni di guasto, per una durata specificata (1 s, 30 s).
+–  Tipo di servizio, oltre al servizio di otto ore e a quello interrotto, tipici degli inter-
+ruttori, si considerano anche il servizio intermittente periodico, con valori normali d’inter-
+mittenza pari al 15, 25, 40 e 60% e quello di durata limitata, con durate normali a contatti
+chiusi di 10, 30, 60, 90 min.
+–  Potere d'interruzione nominale, dichiarato dal costruttore, pari al valore della cor-
+rente che l'apparecchio è in grado di interrompere senza eccessivo deterioramento, per un
+prestabilito numero di volte e in condizioni specificate dalle prescrizioni normative di
+prova. Dato che il contattore è un apparecchio in grado di interrompere automaticamente
+(comandato dallo sganciatore termico) solo i sovraccarichi e non le correnti di corto cir-
+cuito, il suo potere d’interruzione è ridotto e pertanto deve essere impiegato insieme a
+fusibili interruttore automatico.
+–  Potere di chiusura nominale, dichiarato dal costruttore, pari al valore della corrente
+che l’apparecchio è in grado di stabilire durante la chiusura, senza saldatura dei contatti o
+altri deterioramenti, per un prestabilito numero di volte e in condizioni specificate dalle
+prescrizioni normative di prova
+–  Frequenza nominale, di immediato significato.
+–  Campo della temperatura ambiente per il quale è previsto il funzionamento, per
+esempio da 25 a 55 °C.
+–  Temperatura ambiente di riferimento (nelle immediate vicinanze dell’apparecchio),
+influente sulla corrente d’impiego; valori comuni sono 40, 55 e 70 °C.
+–  Grado di protezione dell’involucro, per esempio IP43.
+Per quanto riguarda la scelta del contattore idoneo a una determinata applicazione, si
+deve tener conto essenzialmente della categoria d’impiego (e quindi del tipo di carico),
+della potenza e della corrente del carico.
+Sigla
+Applicazioni tipiche
+DC 4
+DC 5
+DC 6
+Avviamento e arresto di motori a c.c. con eccitazione in serie
+Avviamento, frenatura in controcorrente e manovra a impulsi di motori a c.c. con eccita-
+zione in serie
+Comando di lampade a incandescenza
+
+[PAG 973]
+IMPIANTI  ELETTRICI                                               X-123
+Occorre, inoltre, tener presente che nel comando dei motori (o altri carichi fortemente
+induttivi) vi è il fenomeno della sovracorrente di spunto all’atto della chiusura del cir-
+cuito, per cui la corrente iniziale è maggiore del valore condotto a regime. Per la categoria
+AC4 la sovracorrente si ha anche all’apertura e durante le manovre a impulsi che non con-
+sentono al motore di arrivare al regime meccanico.
+Indicando quindi con I la corrente che all'atto della chiusura o dell’apertura, il rap-
+porto IIe diventa  1 a causa della sovracorrente che il contattore deve aprire o chiudere.
+Il valore IIe  1 è relativo a carichi ohmici o debolmente induttivi; al diminuire del
+fattore di potenza il suddetto rapporto aumenta, in quanto il carico diventa più induttivo e
+la sovracorrente di maggiore entità.
+La normativa CEI stabilisce dei valori normalizzati del rapporto IIe.
+La Tab. X.7.15 riporta i valori da rispettare per la verifica del numero di cicli a carico,
+con tensione pari a quella nominale d’impiego, per le principali categorie d’impiego.
+I valori del rapporto IIe e del cos  sono desunti dalle caratteristiche dei motori azio-
+nabili dai contattori per le varie categorie d’impiego, ritenendo per esempio che un
+motore a gabbia abbia una sovracorrente di spunto pari a 6 volte quella nominale, mentre
+un motore ad anelli (categoria AC2), essendo dotato di reostato di avviamento, abbia una
+sovracorrente minore, ritenuta uguale a 2,5 volte quella nominale.
+Dalla tabella si desume, per esempio, che un contattore con corrente d’impiego Ie = 10
+A in AC3 è in grado di stabilire, nei limiti di durata dichiarati dal costruttore, 60 A con
+cos   0,65 e in AC4 è anche in grado di interrompere 60 A.
+Nella Tab. X.7.16 sono riportate alcune caratteristiche tecniche di contattori BT, con
+indicate le correnti d'impiego per le categorie AC 1 e AC 3.
+Nella Tab. X.7.17, invece, sono riportate le caratteristiche di contattori MT sotto
+vuoto.
+Nota la corrente assorbita dal carico e la categoria d'impiego si può scegliere il contat-
+tore adatto. Per esempio se si deve comandare un m.a.t. a gabbia senza inversione di mar-
+cia e frenatura in controcorrente (categoria AC 3) che assorbe una corrente nominale di
+15,5 A con tensione 400 V, si deve scegliere un contattore almeno A16, che può condurre
+17 A dopo l'avviamento e 6  17 = 102 A all'inserzione.
+Lo stesso contattore, se impiegato per l'inserzione di carichi ohmici (AC 1) ammette
+una corrente di 30 A con temperatura ambiente non superiore a 40 °C.
+Tab. X.7.15   Rapporti IIe per la verifica del numero di cicli a carico
+Categoria 
+d'impiego
+Corrente nominale d'impiego
+Chiusura
+Apertura
+IIe
+cos 
+IIe
+cos 
+AC 1
+Tutti i valori
+1
+0,95
+1
+0,95
+AC 2
+Tutti i valori
+2,5
+0,65
+2,5
+0,65
+AC 3
+Ie  17 A
+Ie  17 A
+6
+6
+0,65
+0,35
+1
+1
+0,65
+0,35
+AC 4
+Ie  17 A
+Ie  17 A
+6
+6
+0,65
+0,35
+6
+6
+0,65
+0,35
