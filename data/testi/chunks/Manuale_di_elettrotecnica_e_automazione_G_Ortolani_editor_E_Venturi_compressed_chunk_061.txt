@@ -1,0 +1,797 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 61/116 ===
+Chars: 44,723 | Offset: 2,650,471
+
+
+
+[PAG 1278]
+XIII-48
+SENSORI E TRASDUTTORI
+XIII.5.1) e la variazione della loro resistenza è il fattore che provoca uno sbilanciamento 
+della misura eseguita con il ponte e conseguentemente una variazione del valore di ten-
+sione emesso.
+Fig. XIII.5.1  Alcune soluzioni con ponti di Wheastone con estensimetri.
+Essi, pur funzionando su un principio fisico di estrema semplicità, sono diventati con 
+l'attuale sviluppo tecnologico strumenti di rilevazione molto sofisticati.
+Le prime fondamentali caratteristiche che li contraddistinguono sono sintetizzabili in:
+–  costo relativamente basso;
+–  disponibilità in una differenziata varietà di configurazioni, dimensioni e materiali; 
+la Figura XIII.5.2 riporta la struttura di due estensimetri metallici per misurare deforma-
+zioni lungo un solo asse e su due;
+–  capacità di accontentare uno spettro molto vasto di esigenze, quali diversi valori di 
+temperatura e di condizioni di utilizzo.
+Fig. XIII.5.2  Estensimetri metallici.
+La scoperta del principio che la resistenza di un conduttore elettrico varia sotto defor-
+mazione risale al 1856 e fu dovuta agli studi di Lord Kelvin, ma bisogna aspettare fino al 
+1936 per vedere la nascita del primo estensimetro incollato a resistenza elettrica. Però in 
+quegli anni non fu data molta importanza commerciale a questo particolare tipo di trasdut-
+tore e così solo con l'avvento della seconda guerra mondiale esso cominciò ad essere lar-
+gamente utilizzato nel settore dell'industria aeronautica. Nel 1952, con l'invenzione dei 
+circuiti stampati, viene sviluppato e brevettato dalla compagnia britannica Saunders-Roe 
+l'estensimetro a trama pellicolare e questo evento lo consacra definitivamente quale tra-
+sduttore insostituibile nel campo dei trasduttori di elevata precisione.
+Ponte di Wheastone con un solo
+estensimetro nella misura della tensione
+e compressione monoassiale
+Ponte di Wheastone a due estensimetri
+con deformazione uguale e contrastante
+(controllo della flessione)
+Ponte di Wheastone a quattro estensimetri con
+le coppie soggette a uguale e contrastante
+deformazione (misura torsiometrica)
+U0
+U0
+U0
+U
+U
+U
+E
+E
+E
+E
+E
+E
+E
+
+[PAG 1279]
+SENSORI E TRASDUTTORI
+XIII-49
+Le prestazioni tecniche che rendono gli attuali estensimetri degli strumenti di misura 
+insostituibili si possono riassumere nei punti sottoelencati.
+–  Massa e dimensioni ridotte e facilità di produrli in svariate forme e dimensioni. I 
+trasduttori estensimetrici di norma infatti sono disponibili con dimensioni che variano in 
+lunghezza attiva da 0,2 mm a 100 mm, ma le lunghezze più diffuse vanno da 1 a 6 mm.
+–  Facile applicazione e utilizzo, associati a un buon grado di robustezza.
+–  Sensibilità alla deformazione e buona sensibilità lineare nella gamma delle defor-
+mazioni elastiche.
+–  Coefficiente di temperatura basso e controllabile e possibilità di essere utilizzati in 
+una larga gamma di temperature. Le gamme di temperatura coprono un'area vasta che si 
+estende dai 270 °C fino ai 300 °C. Tuttavia le temperature tipiche per i trasduttori di pre-
+cisione, che dipendono anche dal tipo di lega e dal supporto utilizzati, variano normal-
+mente dai 75 °C ai 150 °C.
+–  Buona resistenza alla fatica e ragionevole resistività. I valori di resistenza si esten-
+dono fino a coprire un area molto vasta (dai 120 ai 5000 ), ma si differenziano con valori 
+specifici in relazione alla particolare applicazione (120 e 350  per l'analisi delle solleci-
+tazioni, 350  per i trasduttori, 1000 e 5000  per applicazioni speciali). Con l'attuale tec-
+nologia si arriva a ottenere i valori più elevati di resistenza in griglie aventi i lati di 1,5 mm.
+Costruttivamente un estensimetro a trama pellicolare è formato da una griglia e da un 
+supporto (Fig. XIII.5.3).
+Fig. XIII.5.3  Struttura di un estensimetro a trama pellicolare.
+La griglia è costituita da una lega di metalli avente una resistenza appropriata; essa 
+inoltre ha una forma laminata con uno spessore che varia da 0,002 a 0,005 mm. Le leghe 
+utilizzate nella costruzione della griglia sono rame-nickel e nickel-cromo, aventi 
+un'aggiunta di alluminio e ferro (Karma). Tutti e due i tipi di leghe vengono inoltre trattati 
+per una autocompensazione termica, ottenuta da una messa a punto delle caratteristiche 
+della lega in modo che la deformazione dovuta alle variazioni della temperatura sia uguale 
+e opposta a quella meccanica provocata dalla differenza del coefficiente di espansione ter-
+mica della lega e del materiale di supporto.
+In concomitanza allo studio e allo sviluppo industriale e di ricerca nel controllo delle 
+proprietà meccaniche e metallurgiche delle leghe utilizzate per la fabbricazione delle resi-
+Larghezza
+griglia
+Supporto
+Griglia
+Terminali
+in rame
+Larghezza
+completa
+Larghezza
+matrice
+Lunghezza
+parte attiva
+Lunghezza
+completa
+Lunghezza
+matrice
+
+[PAG 1280]
+XIII-50
+SENSORI E TRASDUTTORI
+stenze, si è evoluto anche il settore di supporto, facendo sì che gli estensimetri divenissero 
+gli strumenti più usati per l'analisi delle sollecitazioni e per la fabbricazione dei trasduttori 
+per misure industriali e commerciali.
+I materiali utilizzati per il supporto sono principalmente epossidici, polymidi ed 
+epossi-fenolici, con rinforzo di fibra di vetro. Il loro spessore misura mediamente 25 mil-
+lesimi di millimetro. Le principali funzioni del supporto si possono riassumere nei 
+seguenti punti:
+–  permettere la manipolazione dell'estensimetro e formare un adeguato supporto alla 
+sottile griglia metallica;
+–  mettere a disposizione una superficie per poter incollare l'estensimetro al modello 
+di prova;
+–  poter avere un isolamento tra griglia metallica e modello di prova;
+–  poter trasmettere integralmente la deformazione dal modello di prova alla griglia 
+del trasduttore.
+Quando si utilizzano gli estensimetri è bene ricordare che è facile incorrere in errori, 
+che possono rendere inattendibili le misure eseguite, causati dai cavi di collegamento. 
+Infatti la resistenza di un qualsiasi cavo di una certa lunghezza, collegata in serie con un 
+estensimetro situato in un braccio di un ponte di Wheastone, provoca una riduzione del 
+segnale in uscita dello stesso ponte. Questo significa che in queste situazioni il valore 
+indicato dallo strumento di misura deve essere corretto con un opportuno fattore, dipen-
+dente dalla specifica resistenza del cavo.
+Le applicazioni degli estensimetri sono talmente numerose che è possibile affermare 
+che solo l'immaginazione può limitarne il loro impiego. I sensori estensimetrici trovano 
+applicazione nell'analisi delle sollecitazioni per la ricerca, lo sviluppo, la produzione, le 
+prove di certificazione e in servizio in ogni campo dell'ingegneristica: civile, elettrico, 
+meccanico, automobilistico, marino, nucleare, aeronautico, bio-ingegneristico e agricolo.
+Le applicazioni nel settore dei trasduttori invece coprono l'intero campo delle misure 
+di forza e della pesatura, includendo sistemi di pesatura per tutti i tipi di processi indu-
+striali, persone, animali, supermercati, posta e contenuto dei forni a microonde. Si arriva 
+infine ad applicazioni particolari, quali i sensori tattili in robotica e il controllo dell'alline-
+amento di sistemi di irrigazione in agricoltura.
+5.2  Celle di carico
+Le celle di carico rappresentano la parte principale di un sistema di pesatura elettro-
+nica. Esse possono utilizzare estensimetri, LVDT oppure celle piezoelettriche.
+La struttura di una cella di carico impiegante un sistema LVDT è riportata nella 
+Figura XIII.5.4.
+Fig. XIII.5.4  Cella di carico utilizzante un LVDT.
+In essa la forza F applicata alla piattaforma comprime la molla e sposta l’equipaggio 
+mobile del LVDT, che fornisce un’uscita proporzionale allo spostamento e quindi alla 
+F
+LVDT
+
+[PAG 1281]
+SENSORI E TRASDUTTORI
+XIII-51
+forza. Essendo infatti K la costante elastica della molla, x lo spostamento della piatta-
+forma, risulta
+(XIII.5.1)
+Le celle di carico che impiegano estensimetri sono costituite da una provetta di mate-
+riale elastico (acciaio o alluminio), il quale, a causa di una forza applicata, subisce una 
+deformazione lineare che risulta essere proporzionale alla forza stessa (legge di Hook o 
+dell'elasticità dei materiali). Alla provetta vengono incollati quattro estensimetri, collegati 
+a ponte di Wheastone, che ne seguono fedelmente la deformazione.
+Nella Fig. XIII.5.5 vengono raffigurati quattro estensimetri con collegamento a ponte 
+di Wheastone e i rispettivi terminali di collegamento. Come già è stato trattato nel para-
+grafo precedente, gli estensimetri sono in pratica delle resistenze elettriche che variano, in 
+modo lineare e proporzionale alla deformazione il loro valore, seguendo fedelmente la 
+legge di Ohm. In base a questa semplice tecnologia si trasforma la deformazione mecca-
+nica, provocata da una forza, in una variazione di resistenza elettrica lineare e proporzio-
+nale alla forza stessa.
+Fig. XIII.5.5  Cella di carico con quattro estensimetri a ponte di Wheastone e rispettivi 
+terminali.
+Le celle di carico vengono costruite per funzionare in flessione, trazione, compres-
+sione e taglio a seconda del tipo di forza applicata e del campo di misura. La Fig. XIII.5.6
+illustra i metodi di deformazione comunemente controllati dalle celle di carico.
+Fig. XIII.5.6  Metodi di deformazione comunemente controllati dalle celle di carico.
+A seconda dello specifico funzionamento delle celle di carico è possibile distinguere 
+diversi tipi di applicazioni a esse associati.
+F
+K
+– x
+=
+Output negativo (bianco)
+Input negativo (nero)
+Output positivo (verde)
+Input positivo (rosso)
+Schermo
+Funzionamento in flessione
+Funzionamento a taglio
+Funzionamento a trazione
+Funzionamento a compressione
+
+[PAG 1282]
+XIII-52
+SENSORI E TRASDUTTORI
+Le celle di carico cilindriche a compressione vengono utilizzate per impieghi generali 
+e trovano applicazione nella pesatura dei serbatoi, silos, tramogge, nella misura di forza in 
+generale su macchine e apparecchi, nelle pese a ponte e nelle prove di spinta su motori. 
+Esse si presentano in modo molto compatto e robusto; hanno una elevatissima precisione, 
+un'ottima protezione contro i getti di acqua e un costo molto contenuto.
+Le celle di carico a flessione si prestano in modo molto soddisfacente per il confezio-
+namento alimentare, per dosaggi industriali, bilance da banco, serbatoi, tramogge, con-
+tapezzi, piattaforme di pesatura, silos, tiraggi di bilici, convogliatori, misure di forza. 
+Inoltre si presentano come celle a basso profilo, ad altissima precisione, sigillate contro i 
+getti di acqua.
+Le celle bidirezionali per carichi fuori centro trovano applicazione nelle bilance da 
+banco, contapezzi, macchine confezionatrici alimentari, dosaggi a peso per prodotti chi-
+mici-farmaceutici-plastici, pesatura su nastri trasportatori, tramogge. Inoltre questo tipo 
+di celle di carico fornisce costantemente la stessa misura, con una elevatissima precisione, 
+anche se si sposta il punto di applicazione del peso.
+Le celle di carico a taglio trovano applicazione comunemente per la pesatura dei ser-
+batoi, silos, tramogge, per la pesatura su pulegge, carichi su funi, argani, nastri su rulli, 
+pese a ponte, piattaforme, reattori agitati e/o scaldati.
+Per quel che riguarda la realizzazione delle pese a ponte, la struttura, che può essere in 
+acciaio, cemento precompresso o mista, grava interamente su 4-6-8 celle di carico, a 
+seconda delle dimensioni e della portata.
+La pesa a ponte elettronica non necessita di manutenzione e permette di portare il 
+segnale a qualsiasi distanza. Le celle di carico in questa versione sono caratterizzate 
+dall'evitare il montaggio di aste di protezione e antiribaltamento attorno al serbatoio da 
+pesare; si montano anche sull'asse di rulli mediante cuscinetti a sfera oppure come perno 
+di pulegge.
+Le celle di carico a trazione trovano impiego nella pesatura di serbatoi, tramogge, 
+silos appoggiati e/o sospesi, pesatura su nastri trasportatori, monorotaie, dinamometri, 
+tiranti di pese a ponte per conversioni in bilance elettroniche, misure in trazione o com-
+pressione. Presentano un'ottima protezione contro i getti di acqua, un'altissima precisione 
+e delle dimensioni molto compatte.
+Nell'utilizzo delle celle di carico è opportuno considerare alcuni fattori molto impor-
+tanti per sfruttarne l'affidabilità. Innanzi tutto è necessario, nella progettazione, conside-
+rare:
+–  che peso si deve misurare e con quale tipo di materiale;
+–  le condizioni ambientali presenti durante la pesatura;
+–  oltre la lettura del peso, quali altre funzioni poter svolgere (allarmi, registrazione, 
+elaborazione ecc.);
+–  la precisione della misura.
+Nelle condizioni ambientali una particolare rilevanza è occupata dalle forze causate 
+dal vento. Se per esempio l'installazione è all'aperto, occorre considerare l'azione del 
+vento che può determinare una distribuzione ineguale delle forze sulle celle di carico. In 
+base a ciò dovrà essere prevista una incastellatura con degli appositi tiranti per annullare 
+le forze indesiderate.
+Anche la temperatura riveste un ruolo molto importante. Essa influenza negativa-
+mente le misure elettriche basate su resistenze, anche se di norma le celle di carico sono 
+compensate per variazioni di temperatura comprese tra 10 °C e 60 °C.
+A titolo di esempio si riporta che le temperature molto elevate provocano errori sulla 
+misura; per questo motivo è opportuno evitare di esporre direttamente le celle di carico a 
+radiazioni di forni, sole, riverbero o vapore.
+
+[PAG 1283]
+SENSORI E TRASDUTTORI
+XIII-53
+6  SENSORI PER IL CONTROLLO DI VELOCITÀ
+I sensori per il controllo della velocità hanno il principale compito di generare dei 
+segnali proporzionali alla velocità del motore sul quale sono montati. Di solito questi 
+segnali servono come messaggi retroattivi, o di feedback, per permettere all'apparecchio 
+di pilotaggio la gestione dell'impianto o un controllo più accurato delle variabili del 
+sistema.
+I sensori che controllano la velocità possono essere di tre tipi diversi:
+–  dinamo tachimetriche,
+–  ruote dentate con il sensore di prossimità,
+–  encoder ottici incrementali.
+Mentre la dinamo tachimetrica si presenta come una vera e propria macchina rotante, 
+un encoder ottico incrementale fonda la sua capacità di misurare la velocità nel fatto di 
+poter calcolare lo spostamento angolare moltiplicando la quantità di impulsi generati per 
+la quantità delle distanze che separano due settori contigui. In questa circostanza si analiz-
+zano i dati specifici della dinamo tachimetrica e della ruota dentata con sensore di prossi-
+mità, mentre per le informazioni riguardanti l'encoder ottico incrementale si rimanda il 
+lettore al Paragrafo 2.7.
+6.1  Dinamo tachimetrica
+Le dinamo tachimetriche si possono definire sensori analogici per misurare, regolare e 
+controllare la velocità, nelle applicazioni industriali a velocità variabile. La loro caratteri-
+stica e la loro funzione fondamentale sono quella di fornire un'accurata immagine della 
+rotazione indicando simultaneamente la velocità istantanea, la variazione di velocità, il 
+passaggio per il punto di zero e la direzione di rotazione. Le qualità principali, che una 
+dinamo tachimetrica deve avere, si possono riassumere come viene di seguito riportato:
+–  proporzionalità rigorosa tra la tensione di uscita e la velocità di rotazione in 
+entrambi i sensi di rotazione;
+–  stabilità del segnale nel tempo e al variare della temperatura;
+–  trascurabile tasso di ondulazione del segnale;
+–  trascurabile differenza di tensione nei due sensi di rotazione;
+–  robustezza elettrica e meccanica;
+–  possibilità di formare un assemblaggio delle dinamo con gli encoder o altri sensori.
+Costruttivamente una dinamo tachimetrica è costituita da uno statore che contiene 
+degli induttori a magnete permanente e un rotore composto di un circuito magnetico con 
+un elevato numero di cave rotoriche. Per avere un ottimo funzionamento, a livello di fab-
+bricazione, il collettore viene rifinito con utensili al diamante e le spazzole sono provate e 
+rodate prima della taratura, in modo da assicurare un buon e stabile contatto tra spazzola e 
+collettore.
+La Figura XIII.6.1 mostra il principio di funzionamento di una dinamo tachimetrica. Il 
+circuito elettrico è immerso in un campo magnetico fisso generato da un magnete perma-
+nente. Quando il circuito elettrico ruota si viene a generare una tensione ai capi di uscita 
+proporzionale alla velocità di rotazione del sensore con la relazione
+(XIII.6.1)
+Sempre per ottenere un sicuro funzionamento, nella fase di costruzione le dinamo 
+devono venire tarate su entrambi i sensi di rotazione e i rotori devono essere bilanciati 
+dinamicamente per ridurre al minimo le variazioni di segnale dovute alla rotazione.
+Commercialmente si possono trovare dinamo tachimetriche standard (cioè con flangia 
+di accoppiamento tradizionale), aventi cuscinetti autolubrificanti e spazzole in carboar-
+U
+K d
+dt
+------
+=
+
+[PAG 1284]
+XIII-54
+SENSORI E TRASDUTTORI
+gento per funzionamenti a bassa tensione e a basse velocità oppure in elettrografite per 
+elevate tensioni o alte velocità, e dinamo tachimetriche ad albero cavo, aventi la funzione 
+principale di rendere più semplice il loro montaggio e la loro manutenzione.
+Fig. XIII.6.1  Schema di funzionamento di una dinamo tachimetrica.
+Altre caratteristiche che condizionano la scelta di una dinamo tachimetrica sono:
+–  il modello specifico; standard, a esecuzione antideflagrante, pressurizzata ecc.;
+–  il numero dei collettori; a uno oppure a due;
+–  il tipo di esecuzione; a flangia, a piede, a flangia e piede, fluttuante ecc.;
+–  il grado di protezione;
+–  la costante di velocità;
+–  la deriva dalla forza elettromotrice;
+–  la qualità delle spazzole e le condizioni di uso;
+–  gli elementi aggiuntivi, quali la doppia uscita dell'albero, una seconda flangia per 
+encoder ecc.
+Infine è da sottolineare che per ottenere ottime prestazioni è importante effettuare il 
+montaggio, l'allineamento e l'accoppiamento con molta cura.
+Un allineamento o un accoppiamento difettosi possono determinare una ondulazione a 
+bassa frequenza, sul segnale di uscita dell'apparecchio, che risulta difficile da filtrare.
+Lo sforzo trasmesso all'albero inoltre deve essere ridotto al minimo, in quanto le 
+vibrazioni possono condurre a una usura prematura delle spazzole e del collettore.
+È da considerare poi che la presenza prossima di un campo magnetico può causare un 
+abbassamento della tensione erogata dalla dinamo.
+Normalmente la manutenzione ordinaria di una dinamo tachimetrica è limitata al con-
+trollo dell'usura delle spazzole e del collettore e alla sostituzione eventuale delle stesse 
+spazzole.
+6.2  Ruota dentata con sensore di prossimità
+I dispositivi con ruota dentata e con sensore di prossimità permettono di rilevare e 
+analizzare la velocità (Fig. XIII.6.2). 
+Fig. XIII.6.2  Rilevatore di prossimità con ruota dentata e con sensore di prossimità.
+In dettaglio essi consentono di controllare le velocità di rotazione superiori o inferiori 
+a quella prestabilita (rallentamento o sovravelocità), oppure rilevare le velocità di passag-
+gio degli oggetti, in riferimento a una soglia predefinita, oppure di costituire un contagiri 
+N
+
+
+S
+Ruota dentata
+Sensore di prossimità
+Riferimento montato
+sull’asse rotante
+
+[PAG 1285]
+SENSORI E TRASDUTTORI
+XIII-55
+elettronico. Il sistema è costituito da un sensore di prossimità di tipo induttivo, capacitivo, 
+magnetico a effetto Hall oppure optoelettronico, azionato da un riferimento (azionatore), 
+montato sull'asse rotante della macchina da controllare e da un dispositivo di rivelazione 
+della velocità.
+Se per esempio viene utilizzato un sensore magnetico a effetto Hall, il controllo della 
+velocità viene realizzato dalla gestione degli impulsi, generati in concomitanza alla varia-
+zione del campo magnetico effettuata dai denti della ruota.
+Da un lato in una cella di Hall, inserita in un campo magnetico a essa perpendicolare, 
+si fa passare una corrente elettrica e si genera una differenza di potenziale tra i bordi 
+opposti della stessa piastra.
+Dall'altro, i denti della ruota, passando nelle vicinanze della cella di Hall, modificano 
+il campo magnetico e determinano variazioni del valore della tensione generata.
+Lo specifico sensore di prossimità sarà scelto in base all'ingombro e alla distanza di 
+funzionamento. Il sistema, analogamente a quanto si è già detto nel paragrafo riguardante 
+i sensori di prossimità, è considerato ad alta affidabilità e durata nel tempo e non subisce 
+alterazioni alle proprie caratteristiche anche se viene usato in ambienti e funzioni gravose, 
+in quanto è privo di contatto fisico.
+Il funzionamento del dispositivo di rivelazione della velocità invece può essere sinte-
+tizzato nel seguente modo:
+–  il sensore di prossimità invia un treno di impulsi al dispositivo di rilevazione, che li 
+gestisce con una particolare frequenza, in modo che il periodo sia inversamente propor-
+zionale alla velocità di rotazione;
+–  il periodo generato viene comparato dal dispositivo di rivelazione con un periodo 
+prefissato (regolabile in funzione alla velocità da rilevare), facente parte della base dei 
+tempi interna;
+–  nelle condizioni di funzionamento normale finché la velocità di rotazione non 
+supera la soglia e quindi finché il periodo della base dei tempi interna risulta inferiore al 
+periodo generato, l'uscita del comparatore rimane allo 0 logico;
+–  quando la velocità di rotazione aumenta, superando quella prefissata, e quindi il 
+periodo della base dei tempi risulta superiore a quello degli impulsi, l'uscita del compara-
+tore passa allo stato logico 1;
+–  parallelamente a questo, con un allungamento del periodo degli impulsi generati, 
+l'uscita del comparatore determina un allungamento del periodo della base dei tempi 
+interna (sulla base di parametri noti);
+–  se la velocità di rotazione diminuisce fino a una soglia bassa, l'uscita del compara-
+tore riassume lo stato logico 0 e il periodo di riferimento ritorna con i valori di partenza;
+–  a seconda della specifica impostazione effettuata sull'apparecchio di rivelazione e 
+in relazione al rapporto tra la velocità da misurare e quella preselezionata, il relè in uscita 
+passa dallo stato di eccitazione a quello di diseccitazione o viceversa, provocando l'inver-
+sione dello stato del proprio contatto.
+Oltre che per il controllo sulla velocità, è opportuno ricordare che le ruote dentate con 
+sensore di prossimità sono particolarmente adatte per:
+–  il controllo di intasamento e di passaggio di oggetti,
+–  il controllo di tutti i movimenti rotativi o lineari di organi trascinanti,
+–  i trasportatori a nastro,
+–  gli elevatori a tazza,
+–  le pompe e turbine,
+–  i mescolatori e gli impastatori,
+–  le centrifughe e gli essiccatoi,
+–  i ventilatori.
+
+[PAG 1286]
+XIII-56
+SENSORI E TRASDUTTORI
+7  SENSORI PER IL CONTROLLO DI LIVELLO
+Una variabile fisica che necessita di un continuo controllo in molte applicazioni indu-
+striali è il livello. In altre parole, la quantità di un mezzo (liquido, solido, in polvere o gra-
+nulare), inserita in un contenitore, deve essere sempre sotto controllo in modo che 
+vengano garantiti generalmente due livelli, minimo e massimo, oltre ai quali subentra una 
+situazione non accettabile.
+I trasduttori impiegati in questo genere di controlli devono essere in grado di trasfor-
+mare i valori delle misure eseguite in opportuni segnali, in modo che con la loro elabora-
+zione possano comandare o meno gli azionatori presenti.
+A seconda della natura del prodotto da controllare, delle dimensioni del contenitore e 
+di quale materiale è composto il contenitore, si hanno a disposizione diverse tecniche. 
+Esse si possono differenziare a seconda dello specifico principio fisico impiegato, che può 
+essere:
+–  a galleggiante,
+–  a microonde,
+–  a lamelle vibranti,
+–  a ultrasuoni,
+–  ottico,
+–  a tasteggio di origine elettromeccanica,
+–  capacitivo,
+–  a pressione,
+–  a conduttività.
+Nei successivi sottoparagrafi vengono presi in considerazione alcuni trasduttori tra 
+quelli maggiormente impiegati; di ciascuno vengono messe in evidenza le caratteristiche 
+di funzionamento e di impiego più importanti, ricordando che alcuni di essi vengono 
+comunemente impiegati anche in tante altre applicazioni.
+7.1  Trasduttori a ultrasuoni
+Gli ultrasuoni sono onde sonore caratterizzate da una frequenza molto elevata (più di 
+20 000 cicli al secondo). Essi conservano tutte le caratteristiche del suono, e cioè presen-
+tano il fenomeno dell'eco, e si propagano con molta più rapidità nei materiali densi come 
+l'acqua e i metalli. Un trasduttore ultrasonico è formato essenzialmente da un sistema in 
+grado di emettere un treno di impulsi ultrasonici, rappresentato da un sensore a cristalli 
+piezoelettrici, e ricevere le onde riflesse da eventuali ostacoli (Fig. XIII.7.1). Se è nota la 
+velocità delle sue onde nel mezzo trattato, i segnali che lo stesso sistema riceve sono in 
+relazione al tempo che intercorre tra l'emissione dei segnali e il ricevimento della loro 
+eco. In base a questi parametri è possibile risalire al livello di materiale presente 
+all'interno del contenitore.
+Fig. XIII.7.1  Rilevamento del livello di un liquido tramite un sensore ultrasonico.
+Valvola per
+l’entrata del
+liquido
+Sensore a ultrasuoni
+Valvola per la
+fuoriuscita del
+liquido
+Bacino di emissione
+
+[PAG 1287]
+SENSORI E TRASDUTTORI
+XIII-57
+I trasduttori di livello ultrasonici, collegati alle loro unità di controllo, permettono il 
+rilevamento di quasi tutti i materiali, liquidi, solidi o in polvere, senza necessità di con-
+tatto fisico. Con le attuali tecniche e tecnologie è possibile utilizzare un solo sensore per 
+una regolazione del livello sia minimo sia massimo. È possibile utilizzare il trasduttore 
+per due diverse applicazioni, che però possono risolvere lo stesso problema: la regola-
+zione del livello e la misurazione della distanza.
+I trasduttori di livello ultrasonici presentano inoltre un’elevata resistenza e un'ottima 
+insensibilità ai disturbi esterni, come per esempio le vibrazioni e i rumori degli ambienti 
+industriali, e sono disponibili con due diversi tipi di uscite: ON/OFF (a relè) e analogica 
+in corrente (4  20 mA).
+I parametri tecnici, generalmente riscontrabili nei dati riportati dai costruttori di que-
+sto tipo di trasduttori, si possono individuare e riassumere in:
+–  tensione di alimentazione uguale a 110/220 V o 120/240 V in corrente alternata 
+( 10%) con frequenza di 50/60 Hz;
+–  assorbimento di 3,5 VA;
+–  frequenza ultrasonica uguale a 33 kHz ( 2 kHz);
+–  distanza di rilevamento compresa tra 0,2 e 3 metri (non comunque superiore ai 6 
+metri), come viene rappresentato nella Fig. XIII.7.2;
+–  minimo campo di regolazione tra livello minimo e livello massimo uguale a 0,5 
+metri con uscita analogica, e a 0,1 metri con uscita a relè;
+–  possibile predisposizione digitale (per esempio ogni passo corrisponde a 0,1 metri);
+–  precisione della predisposizione, riferita alla massima distanza di rilevamento, 
+uguale a  5%;
+–  massimo angolo direttivo, riferito a metà della pressione ultrasonica, uguale a 23° 
+( 4°).
+Fig. XIII.7.2  Distanza di rilevamento: limite minimo e massimo del campo.
+Un trasduttore di livello ultrasonico può generalmente essere preimpostato per una 
+visualizzazione del livello in metri oppure in percentuale. La differenza consiste nel fatto 
+che la prima indicazione rappresenta la distanza tra il sensore e il livello esistente nel ser-
+batoio, mentre la seconda visualizza sostanzialmente il volume relativo al livello esistente 
+nel serbatoio espresso in percentuale.
+È buona abitudine conoscere le principali regole per una adeguata installazione del 
+trasduttore, così da avere la massima certezza del suo buon funzionamento.
+Innanzi tutto occorre considerare che è possibile installare il sensore sopra una staffa 
+di montaggio. La differenza sta nel fatto che senza la staffa l'angolo di installazione è 
+fisso e non può essere regolato in caso di necessità. Con il sensore montato sulla staffa è 
+possibile regolare l'angolo di installazione a seconda della specifica esigenza.
+Inoltre, quando il sensore viene installato all'interno e nella parte alta di un conteni-
+Sensore a ultrasuoni
+Zona non operativa (0,2 m)
+Punto limite superiore
+Campo di rilevamento
+Punto limite inferiore
+(massimo 3 m dal sensore)
+
+[PAG 1288]
+XIII-58
+SENSORI E TRASDUTTORI
+tore, il diametro interno di quest'ultimo deve avere una misura minima e inoltre non deve 
+esserci nessun ostacolo all'interno dell'area di rilevamento. In caso contrario è indispensa-
+bile verificare la stabilità di funzionamento e dove risulta necessario è opportuno spostare 
+il sensore fino a quando si raggiunge un funzionamento stabile.
+Poi, tra il condotto di immissione del serbatoio e l'area di rilevamento del sensore, ci 
+deve essere una distanza sufficiente a garantire l'assenza di rilevamenti anomali e inter-
+venti inadeguati del sensore.
+Anche la temperatura di impiego, cioè quella a cui il sensore è sottoposto, ha la sua 
+importanza. Con valori inferiori a 50 °C il sensore funziona in modo stabile; con valori 
+compresi tra i 50 °C e i 60 °C occorre verificare la stabilità di funzionamento; con una 
+temperatura superiore ai 60 °C bisogna orientarsi verso un altro sistema di rilevamento.
+Infine un trasduttore a onde ultrasoniche non può essere impiegato per il rilevamento 
+del livello in serbatoi pressurizzati.
+7.2  Trasduttori a microonde
+Il trasduttore a microonde è un apparecchio di misura del livello di liquidi, materiali 
+pastosi e fanghi, racchiuso in serbatoi di immagazzinamento o di processo produttivo, che 
+non necessita di contatto con il materiale presente nel recipiente.
+Esso è progettato per effettuare la misura in modo continuativo e in condizioni anche 
+particolarmente difficili.
+Il trasduttore di livello a microonde è un apparecchio che fonda il proprio funziona-
+mento sull'emissione di onde elettromagnetiche a elevata frequenza ed è composto da due 
+elementi, l'emettitore e il ricevitore, che si possono trovare situati in custodie diverse 
+oppure inseriti nella medesima custodia. In questo secondo caso è obbligatorio utilizzare 
+o predisporre e allineare un adeguato riflettore.
+Nel caso in cui l'emettitore e il ricevitore siano divisi la loro operatività si traduce nel 
+formare una barriera invisibile (Fig. XIII.7.3).
+Fig. XIII.7.3  Rilevamento del livello del materiale contenuto in un silo tramite un sen-
+sore a microonde.
+L'emettitore genera impulsi a microonda a una frequenza di 1 kHz circa, che vengono 
+rilevati con la stessa frequenza dal ricevitore.
+Nel caso in cui del materiale da rilevare si interponga tra i due trasduttori, la frequenza 
+ricevuta risulta minore di quella emessa e questa differenza fa intervenire l'apparecchio di 
+rivelazione che determina la chiusura o l'apertura dei contatti elettrici o il loro scambio.
+Nel caso in cui invece l'emettitore e il ricevitore si trovino nella medesima custodia è 
+possibile ottenere un funzionamento del trasduttore come nel caso appena descritto, alli-
+neandolo con un pannello riflettente, oppure utilizzare una emissione di onde in modula-
+zione di frequenza, utilizzando il materiale da controllare come schermo riflettente (Fig. 
+XIII.7.4).
+Un segnale lineare a onde in modulazione di frequenza con un'ampiezza costante 
+viene cioè emesso da un’antenna e viene riflesso dall'oggetto da controllare. Il segnale 
+Ricevitore
+Emettitore
+
+[PAG 1289]
+SENSORI E TRASDUTTORI
+XIII-59
+dovuto alle microonde riflesse viene ricevuto dopo un certo tempo di ritardo e, nel tragitto 
+di ritorno, si mescola con una parte del segnale di trasmissione. La frequenza del segnale 
+misto risultante, che viene rilevata in uscita, risulta così essere direttamente proporzionale 
+al tempo di ritardo e conseguentemente costituisce l'esatta indicazione della distanza tra il 
+trasduttore e la superficie del materiale presente nel contenitore (livello).
+Fig. XIII.7.4  Rilevamento di un liquido con un trasduttore a modulazione di frequenza.
+Alcune delle numerose caratteristiche tecniche, che contraddistinguono questo tipo di 
+trasduttori di livello, si possono così identificare:
+–  il campo di misura, normalmente compreso tra i 2 e i 30 metri;
+–  i prodotti controllati, per esempio liquidi, paste o fanghi;
+–  la pressione di lavoro, dal vuoto a 25 bar massimo;
+–  la temperatura di lavoro, normalmente da 20 °C a 150 °C;
+–  la temperatura ambiente, da 20 °C a 60 °C;
+–  la tensione di alimentazione, 230 V in corrente alternata o in versioni particolari 
+24 V in corrente alternata o in continua;
+–  la corrente in uscita, 4  20 mA;
+–  il campo di frequenza, nella banda X (10 GHz);
+–  l'angolo di radiazione, 8°.
+È opportuno che l'emettitore, e quindi l'area coperta dall'emissione delle microonde, 
+fuoriesca dall'imbocco in cui viene fissato. Montare il trasduttore vicino alle pareti del 
+contenitore non comporta delle controindicazioni perché gli eventuali segnali di interfe-
+renza, dovuti a saldature del contenitore, incrostazioni o piccoli avvallamenti, non ven-
+gono rilevati. Non installare il trasduttore vicino a valvole di fuoriuscita, ma seguire 
+sempre la regola che predispone la minima distanza dalle pareti con valvole ad almeno 1/
+6 del diametro del contenitore.
+7.3  Trasduttori a lamelle vibranti
+Il trasduttore a lamelle vibranti è formato da una sonda contenente delle lamelle che 
+vengono messe in vibrazione. A differenza dei due trasduttori precedenti, questo è a 
+stretto contatto con il materiale da controllare.
+Questo tipo di trasduttore di livello si basa sulla presenza di una sonda di risonanza, 
+costituita da tre diaframmi accoppiati a delle lamelle che agiscono come un circuito di 
+risonanza. In questo modo si ottiene una bassa perdita di potenza e un'alta stabilità mecca-
+nica.
+Seguendo la Figura XIII.7.5, che rappresenta il trasduttore con un diagramma a bloc-
+chi, si ravvisa che il circuito di risonanza viene generato magneticamente da un oscillatore 
+(blocchi 1, 3, 4, 6).
+Il segnale di feedback viene dato da un’unità piezoelettrica (6). Quando la sonda viene 
+in contatto con il liquido, la massa effettiva delle lamelle viene accresciuta e questo causa 
+la caduta, cioè l’abbassamento, della frequenza di risonanza che viene raccolta dal rileva-
+
+[PAG 1290]
+XIII-60
+SENSORI E TRASDUTTORI
+tore di frequenza (2). Il cambio di stato del contatto interruttore viene predisposto sce-
+gliendo una soglia di frequenza, così che il trasduttore a lamelle vibranti inverte lo stato 
+del contatto se l’oscillatore smette di funzionare. Un apposito commutatore predispositore 
+interno permette a priori di scegliere se la commutazione passa da contatto NO a NC o 
+viceversa. Un LED incorporato lampeggia quando l’interruttore interno è aperto.
+Fig. XIII.7.5  Rappresentazione con diagramma a blocchi delle parti di un trasduttore di 
+livello a lamelle vibranti.
+Quando il trasduttore di livello a lamelle vibranti è inserito nell’acqua in posizione 
+orizzontale, il punto di interruzione è collocato sull’asse del trasduttore (Fig. XIII.7.6).
+Invece, quando il trasduttore è inserito nell’acqua in posizione inclinata o verticale, 
+l’unità scambia il punto X (Fig. XIII.7.7).
+I vantaggi che derivano da un trasduttore a lamelle vibranti si possono così indicare:
+Fig. XIII.7.6  Punto di interruzione di 
+un trasduttore di livello a lamelle vi-
+branti posizionato orizzontalmente.
+Fig. XIII.7.7  Punto di interruzione di 
+un trasduttore a lamelle vibranti posto 
+inclinato oppure in orizzontale.
+LED
+Carico
+Alimentazione
+5
+2
+3
+4
+1
+Sonda
+6
+Filtro
+Amplificatore
+dell’eccitazione
+Misuratore
+della
+frequenza
+Avvisatore
+Commutatore
+Interno
+Preamplificatore
+Convertitore
+elettromeccanico
+Punto di interruzione
+(in acqua)
+Punto di interruzione (in acqua)
+X
+X
+
+[PAG 1291]
+SENSORI E TRASDUTTORI
+XIII-61
+–  nessuna parte in movimento e, conseguentemente, nessun logorio e nessuna manu-
+tenzione;
+–  funzionamento sicuro nei liquidi con una viscosità superiore ai 10 000 mPa per 
+secondo;
+–  indicazione attendibile del livello indipendentemente dalla pressione, temperatura, 
+viscosità e proprietà elettriche del liquido;
+–  resistenza alle alte pressioni (superiori a 25 bar) e alle alte temperature (superiori ai 
+150 °C);
+–  installazione libera in ogni posizione, il corpo può essere girato per 360°;
+–  possibilità di inserimento per piccole profondità (100 mm come standard normale) 
+e quindi particolarmente indicato per piccoli recipienti o per misure all'interno di tubi;
+–  accuratezza della misura insensibile a forti correnti, turbolenze, corpi solidi, bolle 
+di gas e schiuma nel liquido;
+–  il corpo è fatto di policarbonato o di alluminio pressofuso con gradi di protezione 
+IP66, la sonda di risonanza di acciaio inossidabile;
+–  elettronica facilmente ricambiabile senza smontaggio della sonda di risonanza;
+–  corpo totalmente isolato;
+–  collegamento elettrico in configurazione a 2 fili con funzione di contatto NC o NO 
+e con tensione di alimentazione da 16 a 250 V in corrente alternata o in continua;
+–  collegamento elettrico in configurazione a 3 fili con uscite NPN o PNP e con ten-
+sione di alimentazione in corrente continua da 9 a 55 V.
+Infine si rileva che questo sistema è particolarmente indicato per le applicazioni 
+nell'industria alimentare.
+7.4  Trasduttori capacitivi
+Le sonde di livello che funzionano sul principio capacitivo vengono impiegate in tutti 
+quei luoghi nei quali è necessario controllare il livello di sostanze non conduttrici, liquide 
+o solide, in polvere, in granuli o in piccola pezzatura. Esse normalmente vengono inserite, 
+verticalmente o lateralmente, sulla parete di un serbatoio (Fig. XIII.7.8) e le applicazioni 
+più caratteristiche di questi trasduttori si riscontrano nei silos per il controllo del livello di 
+cereali, foraggi, nei mangimifici e pastifici, nelle fonderie e cementerie ecc.
+Fig. XIII.7.8  Posizionamento dei trasduttori capacitivi all’interno di un contenitore.
+Per poter controllare il livello di materiali così diversi ci si basa sulla variazione di 
+capacità, utilizzando un sensore come elettrodo, che può avere la forma di un'asta o di una 
+fune, inserito all'interno di un serbatoio. È il valore della capacità che si genera tra l'elet-
+trodo e la superficie interna del serbatoio vuoto, e che cambia in relazione al tipo di mate-
+Min
+Max
+Esecuzione standard ad asta
+Montaggio orizzontale
+Livello massimo e minimo
+Esecuzione standard ad asta (ma
+può essere anche a fune con peso
+tenditore. Montaggio verticale
+
+[PAG 1292]
+XIII-62
+SENSORI E TRASDUTTORI
+riale di riempimento, che viene misurata e che funge da variabile di controllo. Detto in 
+altri termini, la superficie interna del serbatoio, o silo, e l'elettrodo formano le armature di 
+un ipotetico condensatore, la cui capacità varia in funzione della sostanza di riempimento. 
+La capacità risultante dipenderà quindi sia dal tipo di materiale utilizzato sia dalla sua 
+quantità presente all'interno del serbatoio.
+La stabilità e la precisione del sistema sarà dipendente da alcuni parametri che 
+dovranno rimanere il più costanti possibile. Fattori infatti come umidità, temperatura ecc. 
+determinano errori sulla misura finale.
+In linea di massima ogni sistema per la misura del livello che si basa sul principio 
+capacitivo è composto da:
+–  una sonda a forma di asta o di fune, scelta in relazione alla specifica applicazione,
+–  un centralino amplificatore-convertitore, avente la funzione di alimentare la sonda e 
+di elaborare i segnali.
+La sonda è composta solitamente di tre parti:
+–  la testa, composta da un involucro protettivo e dal trasduttore;
+–  il raccordo formato dalla parte che serve per fissare la testa al serbatoio e dall'isola-
+tore dell'elettrodo;
+–  l'elettrodo, avente la funzione di sentire la presenza del materiale all'interno del ser-
+batoio.
+Nelle sonde a soglia di tipo ON/OFF per il controllo del livello l'elettrodo nella sua 
+configurazione standard è in un'asta in AISI 316 (un tipo di acciaio elaborato) di diametro 
+15 mm con una lunghezza totale, compreso l'attacco, di 250 mm.
+Le caratteristiche tecniche della sonda che si possono trovare su un comune catalogo 
+tecnico sono:
+–  la tensione di alimentazione, normalmente di 24 V in corrente continua;
+–  il campo di funzionamento, normalmente posto tra 0,85 e 1,1 della tensione di fun-
+zionamento;
+–  la potenza assorbita, circa 1 W a 24 V in corrente continua;
+–  il tipo di collegamento eseguito utilizzando un cavo tripolare con resistenza per 
+conduttore massima di 25 ;
+–  la temperatura di funzionamento posta tra i 20 °C e i 70 °C;
+–  la temperatura di stoccaggio posta tra i 30 °C e gli 80 °C;
+–  la protezione elettrica, contro i corto circuiti sull'uscita, le inversioni di polarità e 
+gli errori di collegamento, le extra tensioni istantanee e i disturbi sulla linea, le scariche 
+elettrostatiche sull'elettrodo;
+–  la sensibilità di commutazione, stimata in circa un milionesimo della capacità 
+dell'elettrodo;
+–  la deriva termica, valevole circa 0,01 pF/°C;
+–  la deriva della taratura al variare della tensione entro il 15% e il 10%, valevole 
+circa 0,01 pF/V;
+–  il campo di capacità, con misuratore capacitivo a media sensibilità (100  2500 pF 
+oppure 100  10.000) o ad alta sensibilità (10  100 pF).
+Per poter scegliere la sonda adatta al proprio tipo di applicazione, occorre considerare 
+i sottoelencati parametri fondamentali.
+Innanzi tutto è di importanza fondamentale il tipo di prodotto da rilevare. Infatti 
+quest'ultimo si può differenziare a seconda se è liquido, nelle varie densità, solido, dalla 
+polvere alle grosse pezzature, appiccicoso o aggressivo. Inoltre sempre legato alla natura 
+del prodotto è importante considerare se esiste turbolenza del prodotto; l'elettrodo del rile-
+vatore di livello deve essere sempre situato in un tubo di calma.
+Poi è da tenere in considerazione la dimensione del contenitore; questo aspetto serve
+
+[PAG 1293]
+SENSORI E TRASDUTTORI
+XIII-63
+per scegliere la lunghezza dell'elettrodo o la sua fisionomia, ad asta oppure a fune. È con-
+sigliato scegliere un elettrodo a fune con peso tenditore quando il silo ha una lunghezza 
+superiore ai 2-3 metri; su queste misure se si scegliesse un trasduttore ad asta sarebbe 
+opportuno fissarlo con adeguati anelli alla parete per ovviarne possibili ondeggiamenti.
+Bisogna poi considerare la natura del contenitore. Se il silo fosse in fibra di vetro 
+oppure in muratura, e quindi di natura isolante, è necessario creare l'elettrodo interno, cioè 
+l'armatura esterna. Soluzioni abbastanza semplici risultano essere l'applicazione di una 
+massa metallica sul terreno come punto di riferimento, oppure una bandella esterna appli-
+cata su tutta la lunghezza del contenitore e collegata alla massa della sonda.
+Infine è da tenere in considerazione anche lo spessore del contenitore. Se per esempio 
+questo fosse più spesso di 50 mm risulta opportuno allungare la parte non sensibile 
+dell'elettrodo.
+La struttura meccanica di una sonda per il controllo continuo non differisce da quella 
+per il controllo di tipo ON/OFF, se non nell'elettronica situata sulla testa delle sonde. 
+Oltre alle configurazioni standard è possibile trovare in commercio esecuzioni speciali, 
+che si differenziano nel tipo di attacco, nel tipo di elettrodo o nelle misure dimensionali 
+della sonda. Con molta facilità nel sistema con sonda capacitiva con misura continua la 
+fune sostituisce l'asta, in quanto il metodo viene applicato sovente a silos di medie e 
+grosse dimensioni con rilevanti altezze.
+7.5  Trasduttori a conduttività
+I trasduttori di livello a conduttività non hanno la necessità di possedere un galleg-
+giante. Essi sono trasduttori per il controllo di liquidi elettricamente conduttori; funzio-
+nano sulla resistività dei liquidi e rilevano il livello per mezzo di elettrodi annegati nel 
+liquido conduttivo. La presenza di liquido tra l'elettrodo, o gli elettrodi, e la superficie 
+metallica del serbatoio o l'elettrodo di massa (sonde rilevatrici), provoca il funzionamento 
+del circuito elettronico, situato nell'unità di controllo, e la conseguente commutazione dei 
+contatti del relè in uscita. Generalmente questo tipo di trasduttori trova applicazione nel 
+circuito di comando di sistemi di pompaggio, dove permette di mantenere il livello di 
+pozzi o serbatoi entro limiti prestabiliti, ma non è infrequente trovarlo inserito in sistemi 
+completamente diversi.
+Fig. XIII.7.9  Schema di collegamento di un trasduttore di livello a conducibilità a tre 
+sonde, per il comando di una pompa di riempimento di un serbatoio.
+P
+M
+3
+U VW
+RT
+K
+Regolatore
+OFF
+ON
+Serbatoio
+F1
+F2
+L1
+L2
+L3
+N
+Circuito
+relè
+24 V
+3
+4
+6
+5
+2
+E3
+E2
+E1
