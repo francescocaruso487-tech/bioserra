@@ -100,20 +100,35 @@ def mistral_singola(titolo, testo, estratto_raw):
     ha_testo = len(testo) > 100
     contenuto = testo[:4000] if ha_testo else '(testo non disponibile, analizza dal titolo)'
 
+    # Rileva lingua del testo
+    def _score(t, words): return sum(t.count(w) for w in words)
+    t1k = contenuto[:1000].lower()
+    lingua_scores = {
+        'it': _score(t1k,[' il ',' lo ',' la ',' gli ',' della ',' del ',' per ',' con ',' che ',' sono ']),
+        'en': _score(t1k,[' the ',' of ',' and ',' for ',' with ',' this ',' are ',' is ',' in ',' to ']),
+        'fr': _score(t1k,[' le ',' la ',' les ',' des ',' du ',' pour ',' dans ',' est ',' et ']),
+        'es': _score(t1k,[' el ',' los ',' las ',' de ',' del ',' para ',' con ',' que ',' es ']),
+        'de': _score(t1k,[' der ',' die ',' das ',' und ',' fur ',' mit ',' ein ',' ist ']),
+    }
+    lingua_det = max(lingua_scores, key=lambda k: lingua_scores[k]) if max(lingua_scores.values())>2 else 'altro'
+    lingua_nota = '' if lingua_det=='it' else f'NOTA: Il testo e in {lingua_det.upper()}. Rispondi comunque in italiano.\n'
+
     prompt = (
         'Sei un agronomo esperto di Living Soil, biodinamica ed elettrocultura per serra outdoor italiana.\n'
         'Analizza questo documento per la serra BioSerra Caserta (41N).\n'
-        'Tecniche attive: Lakhovsky, Fe-Cu, acqua magnetizzata, spirale rame, antenna terra, biodinamica.\n\n'
+        'Tecniche attive: Lakhovsky, Fe-Cu, acqua magnetizzata, spirale rame, antenna terra, biodinamica.\n'
+        + lingua_nota +
         f'Titolo: {titolo}\n'
         f'Testo estratto:\n{contenuto}\n\n'
-        'Rispondi SOLO con JSON valido:\n'
+        'Rispondi SOLO con JSON valido (tutti i campi in italiano):\n'
         '{"sommario":"3-4 frasi dettagliate sul contenuto reale",'
         '"tecniche_chiave":["max 5 tecniche specifiche menzionate"],'
         '"concetti_principali":["concetti teorici chiave del documento"],'
         '"consiglio_coltivazione":"azione pratica concreta e specifica",'
         '"consiglio_elettrocultura":"applicazione specifica delle tecniche elettrocultura",'
         '"tag":["4-6 tag specifici"],'
-        '"estratto_chiave":"frase o passaggio significativo max 200 char dal testo",'
+        '"estratto_chiave":"frase o passaggio significativo max 200 char",'
+        '"lingua":"codice lingua originale: it/en/fr/es/de/pt/altro",'
         '"applicabilita_serra":"alta/media/bassa - perche"}'
     )
 
