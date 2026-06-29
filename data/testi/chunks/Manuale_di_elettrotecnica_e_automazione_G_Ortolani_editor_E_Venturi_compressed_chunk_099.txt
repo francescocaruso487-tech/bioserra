@@ -1,0 +1,748 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 99/116 ===
+Chars: 45,000 | Offset: 4,331,800
+
+
+
+[PAG 1947]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-75
+negli ambienti chiusi. Già la legge n. 27 del 1975 “Norme per interventi straordinari di 
+emergenza per l’attività edilizia” prescriveva l’installazione, nei servizi igienici ubicati in 
+ambienti non direttamente aerati ed illuminati dall’esterno (bagni ciechi), di un adeguato 
+sistema di ventilazione forzata, che assicurasse un ricambio medio orario non inferiore a 5 
+volte la cubatura degli ambienti stessi.
+Il ricambio dell’aria in un ambiente si può effettuare aprendo la finestra oppure impie-
+gando un aspiratore. Il primo sistema comporta degli inconvenienti soprattutto nella sta-
+gione invernale dove un brusco raffreddamento dell’ambiente può portare conseguenze per 
+la salute e determina un maggior consumo di energia (e quindi una maggior spesa). Con il 
+secondo sistema il ricambio d’aria può essere ottenuto con aspiratori che possono essere:
+–  aspiratore da parete con scarico in canalizzazione; per vincere la resistenza data dalla 
+canalizzazione occorre installare un aspiratore centrifugo;
+–  aspiratore da parete con scarico all’esterno; nel caso di ventilazione a parete (scarico 
+diretto) è preferibile scegliere un elicoidale;
+–  aspiratore da vetro con scarico esterno; anche nel caso di installazione a finestra è pre-
+feribile indirizzarsi verso il modello elicoidale;
+–  aspiratore da cappa in canalizzazione;
+–  aspiratore da canalizzazione; deve essere lontano dalla bocca di aspirazione;
+–  aspiratore per impianti centralizzati, con o senza condotto.
+Gli aspiratori elicoidali aspirano l’aria da una parete e la convogliano verso quella 
+opposta, lungo la direzione del proprio asse. Le loro prestazioni sono in funzione del numero 
+delle pale e dell’inclinazione delle stesse rispetto l’asse. Questo tipo di aspiratore non è pos-
+sibile impiegarlo in canalizzazioni che presentano resistenza al passaggio dell’aria, ma è 
+particolarmente indicato per l’estrazione o l’immissione dell’aria a bocca libera.
+Gli aspiratori elicoidali sono abitualmente utilizzati come estrattori di aria viziata instal-
+lati sul vetro o in aperture praticate nei muri e comunicanti direttamente con l’esterno.
+Gli aspiratori centrifughi sono fondamentalmente composti da due parti: la ventola (o 
+turbina) e la coclea. Essi aspirano l’aria parallelamente al loro asse e la sospingono in 
+direzione perpendicolare all’asse stesso.
+La forma e il numero delle pale della ventola sono variabili in relazione alle presta-
+zioni richieste all’aspiratore. Per deboli pressioni le pale sono abitualmente inclinate 
+all’indietro in modo da muovere l’aria con poca velocità e quindi silenziosamente. Per 
+notevoli pressioni le pale sono inclinate in avanti e gli apparecchi possono fornire pres-
+sioni molto elevate per aspirare o indirizzare l’aria in canalizzazioni che producono una 
+notevole resistenza o in circuiti che prevedono l’impiego di filtri, batterie alettate ecc.
+Gli aspiratori centrifughi assiali presentano la caratteristica di provocare uno sposta-
+mento dell’aria lungo il proprio asse come gli aspiratori assiali, ottenendo contemporane-
+amente una elevata pressione. In questo modo possono essere installati direttamente sui 
+condotti di aspirazione in modo semplice e veloce.
+Sono costituiti da una coclea circolare, nella quale ha sede una ventola, e dei raddriz-
+zatori di flusso che convogliano l’aria in uscita in un moto laminare uniforme, così da 
+aumentarne notevolmente le prestazioni.
+2.15  Trasformatore monofase
+Il trasformatore monofase è formato da un avvolgimento primario collegato alla linea 
+di alimentazione, e da un avvolgimento secondario connesso al carico da alimentare, 
+avvolti entrambi su di un nucleo, sul quale si genera un flusso magnetico che si concatena 
+con entrambi i circuiti; il funzionamento si basa sul principio della mutua induzione. 
+Rimandando alla Sez. VIII Macchine elettriche per una completa trattazione dei prin-
+cipi fisici del trasformatore, in questa sede si ritiene più opportuno definire solamente i
+
+[PAG 1948]
+XIX-76
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+principali parametri e grandezze di interesse pratico:
+–  La tensione primaria rappresenta il valore della tensione di alimentazione stabilita in 
+fase di costruzione per un funzionamento specifico;
+–  La tensione secondaria nominale, stabilita in fase di costruzione, indica il valore di 
+tensione che si trova sui capi dell’avvolgimento secondario quando il trasformatore è col-
+legato alla linea di alimentazione e presenta tutti i dati nominali;
+–  La potenza nominale è data dal prodotto tra la tensione secondaria nominale e la cor-
+rente secondaria nominale; nel caso in cui il trasformatore sia in possesso di più di un 
+avvolgimento secondario o è a prese multiple, la potenza nominale è la somma dei pro-
+dotti della tensione secondaria nominale per la corrente secondaria nominale dei circuiti 
+che possono essere caricati contemporaneamente.
+–  La frequenza nominale viene assegnata dal costruttore per il suo funzionamento specifico.
+–  La corrente secondaria nominale, è la corrente, con tensione primaria nominale e con 
+frequenza nominale, assegnata dal costruttore per il suo funzionamento specifico; se essa 
+non viene dichiarata, può essere calcolata considerando la potenza nominale e la tensione 
+secondaria nominale.
+Si definisce trasformatore di isolamento l’apparecchiatura che ha gli avvolgimenti 
+primario e secondario separati da un isolamento doppio o rinforzato per limitare, nel cir-
+cuito alimentato dall’avvolgimento secondario, rischi dovuti a contatti accidentali simul-
+tanei con la terra e con le parti attive e con le masse che possono trovarsi sotto tensione in 
+caso di guasto all’isolamento. 
+Un trasformatore di sicurezza è invece un trasformatore destinato ad alimentare cir-
+cuiti a bassissima tensione di sicurezza (non superiore a 50 V in corrente alternata).
+Negli ambienti di tipo civile e similari i trasformatori che si incontrano con più facilità 
+sono quelli tradizionali, di isolamento e di sicurezza.
+Il trasformatore per rasoi è classificato come un trasformatore di isolamento, cioè i 
+suoi due avvolgimenti sono separati elettricamente. Questa particolare caratteristica ha la 
+funzione di minimizzare gli eventuali pericoli causati da un contatto accidentale tra la 
+massa, o le parti di metallo, e i conduttori interni. Normalmente di piccola potenza (20 ÷ 
+50 VA), è previsto per una installazione fissa, non deve alimentare più di una presa per 
+volta e il valore della tensione sugli avvolgimenti primario e secondario non deve supe-
+rare i 250 V in corrente alternata.
+Viene definito unità di alimentazione per rasoi un insieme composto da un trasforma-
+tore per rasoi e da una o più prese (funzionanti però una alla volta). Si inserisce sulla linea 
+di alimentazione solamente quando la spina del rasoio è innestata (particolare che con-
+sente una riduzione degli autoconsumi ed elimina fastidiosi ronzii) ed è protetto da un 
+clikson che disinserisce il circuito primario quando il prelievo di potenza supera quello 
+nominale. Trascorso il tempo necessario a far raffreddare il clikson, il trasformatore si 
+reinserisce automaticamente. Questo apparecchio trova applicazione in appartamenti di 
+abitazione, alberghi, pensioni e ambienti similari.
+I trasformatori monofase di sicurezza devono essere realizzati secondo le prescrizioni 
+delle norme CEI e in relazione ad esse si possono classificare come:
+–  trasformatori fissi per uso generale, con secondario a bassissima tensione di sicurezza 
+(SELV);
+–  trasformatori di classe II (a doppio isolamento).
+È opportuno ricordare che le masse degli utilizzatori alimentati con bassissima ten-
+sione di sicurezza (SELV) non necessitano e non devono essere collegate a terra. Inoltre 
+eventuali prese a spina (senza contatto di terra) devono essere incompatibili con quelle di 
+altri sistemi elettrici. Il trasformatore per giocattoli è un trasformatore di sicurezza. I tra-
+sformatori di sicurezza inoltre devono avere una tensione secondaria nominale non supe-
+
+[PAG 1949]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-77
+riore a 24 V in corrente alternata e una potenza nominale non superiore a 200 VA, mentre 
+la tensione primaria nominale non deve superare i 250 V.
+Il trasformatore per campanelli è un apparecchio classificabile come trasformatore di 
+sicurezza fisso destinato all’alimentazione di campanelli per uso domestico, relè, disposi-
+tivi di segnalazione e similari con carico applicato per brevissimi periodi e circuiti di 
+allarme. È consentita l’applicazione continuativa di un piccolo carico come quello di spie 
+luminose. La tensione nominale secondaria non deve essere superiore a 24 V in corrente 
+alternata (i valori standard sono 8, 10, 12, 16, 24 V in corrente alternata, 6, 12 V in cor-
+rente continua). I valori preferenziali della corrente secondaria nominale sono 0,5-1-1,5-2 
+A, mentre la tensione nominale e la potenza primaria nominale non devono essere supe-
+riori rispettivamente a 250 V e a 100 VA.
+Un trasformatore monofase di sicurezza fisso è costituito dai seguenti elementi:
+–  nucleo del tipo a mantello, in lamiera al silicio con perdita in W/kg molto ridotta che 
+determina una diminuzione sensibile delle perdite nel circuito magnetico causate dall’iste-
+resi magnetica e da correnti parassite;
+–  circuiti elettrici formati da rame isolato con smalto sintetico che permettono di sop-
+portare un campo più ampio di sovraccaricabilità;
+–  cartoccio (elemento di supporto per gli avvolgimenti) in materiale isolante impregnato 
+con elevata resistenza meccanica. 
+I trasformatori caratterizzati da questi elementi presentano perdite molto ridotte, pic-
+cole cadute di tensione e rendimento molto elevato. 
+Un’ultima versione è il trasformatore per apparecchi di illuminazione di Classe III che 
+è un trasformatore di sicurezza destinato all’alimentazione di uno o più apparecchi di illu-
+minazione di questa classe. I valori preferenziali della tensione secondaria nominale sono 
+6, 12, 24 V in corrente alternata, mentre la tensione a vuoto non deve superare 50 V anche 
+se avvolgimenti secondari indipendenti, che sono previsti per essere collegati in serie, 
+sono collegati in serie.
+2.16  Elettroserratura
+L’elettroserratura è un apparecchio che utilizza un elettromagnete per provocare 
+l’apertura di un portone di entrata o di un cancello; generalmente incorpora anche un mec-
+canismo per l’azionamento diretto dal posto di installazione dotato, a seconda dell’instal-
+lazione su cancello o su portone, di un pulsante o una leva di sbloccaggio oppure una 
+toppa per l’apertura con chiave. 
+Considerando poi la posizione di montaggio rispetto all’apertura della porta o can-
+cello si avranno elettroserrature destre e sinistre.
+Costruttivamente l’elettroserratura si presenta costituita da un corpo principale e da un 
+corpo secondario (non sempre però questo secondo corpo è presente).
+All’interno del corpo principale (gruppo cassa) sono alloggiati l’elettromagnete di 
+apertura, la molla di carica e tutti i vari meccanismi di bloccaggio e sbloccaggio, mentre 
+fuoriescono dal corpo due perni chiamati scrocco di carica e scrocco di tenuta.
+Il secondo corpo (chiamato gruppo controbocchetta), se presente, è munito di due 
+aperture delle stesse dimensioni dei due perni del corpo principale. Esso ha il compito, 
+trattenendo gli scrocchi di carica e di tenuta, di bloccare il portone o il cancello nella posi-
+zione di chiusura. 
+Occorre rilevare che in fase di installazione bisogna scegliere adeguatamente la 
+sezione dei conduttori da utilizzare, in quanto la bobina dell’elettromagnete, presentando 
+una elevata induttanza, assorbe una corrente relativamente alta (generalmente 1 A).
+Infine, sempre in fase di installazione è opportuno utilizzare conduttori flessibili e 
+proteggerli nel tratto di passaggio tra il muro e il battente della porta.
+
+[PAG 1950]
+XIX-78
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Un’altra soluzione adottata per le elettroserrature che vanno incassate nel telaio delle 
+porte degli edifici condominiali è quella di effettuare il collegamento tra la parte mobile e 
+la parte fissa mediante contatti mobili (provvisti di mollette che determinano il contatto 
+tra parte fissa e parte mobile). Infatti, i conduttori non sono, in questo modo, alloggiati 
+all’interno di una tubatura di tipo pesante che corre parallelamente alla fascia orizzontale 
+della porta, bensì corrono all’interno del telaio dell’anta. La continuità elettrica tra l’elet-
+troserratura e il resto dell’impianto avviene appunto mediante dei morsetti situati 
+nell’intercapedine del telaio della porta, dal lato dove sono posizionate le cerniere che sta-
+biliscono la movimentazione dell’uscio. Quando la porta è chiusa i contatti mobili stabili-
+scono tra loro il contatto, rendendo possibile l’azionamento dell’elettroserratura.
+3  APPARECCHIATURE DI COMANDO, SEGNALAZIONE, PROTEZIONE PER 
+AZIONAMENTI INDUSTRIALI
+Gli apparecchi che concorrono, con più o meno frequenza, alla formazione di un 
+impianto elettrico sono:
+–  Apparecchi di potenza; 
+–  Apparecchi ausiliari di comando;
+–  Apparecchi di protezione.
+3.1  Apparecchi di potenza
+Gli apparecchi di potenza sono generalmente rappresentati dai contattori e dai relè sta-
+tici; essi svolgono la funzione di collegare gli avvolgimenti dei motori elettrici alla linea di 
+alimentazione.
+Per maggiori informazioni sulla normativa vigente si suggerisce di consultare le norme 
+CEI che riguardano l’utilizzo dei contattori per la manovra dei circuiti, aventi una tensione 
+non superiore a 1000 V in corrente alternata e a 1200 V in corrente continua, oltre a quelle 
+concernenti gli avviatori per motori funzionanti con tensione non superiore a 1000 V 
+(avviatori diretti, avviatori stella/triangolo e avviatori rotorici). In particolare:
+–  CEI 17-41 del 1998 - Contattori elettromeccanici per usi domestici e similari 
+–  CEI 17-41;V2 del 2001 - Contattori elettromeccanici per usi domestici e similari.
+–  CEI 17-44 del 2008 - Apparecchiature a bassa tensione Parte 1: Regole generali. 
+–  CEI 17-50 del 2002 - Apparecchiature a bassa tensione Parte 4-1: Contattori e 
+avviatori - Contattori e avviatori elettromeccanici.
+–  CEI 17-50;V1 del 2004 - Apparecchiature a bassa tensione Parte 4-1: Contattori e 
+avviatori - Contattori e avviatori elettromeccanici.
+–  CEI 17-50;V2 del 2006 - Apparecchiature a bassa tensione Parte 4-1: Contattori e 
+avviatori - Contattori e avviatori elettromeccanici.
+–  CEI 17-69 del 2001 - Apparecchiature a bassa tensione Parte 4-2: Contattori e 
+avviatori - Regolatori e avviatori a semiconduttori in c.a.
+–  CEI 17-69;V1 del 2002 - Apparecchiature a bassa tensione Parte 4-2: Contattori e 
+avviatori - Regolatori e avviatori a semiconduttori in c.a.
+–  CEI 17-69;V2 del 2007 - Apparecchiature a bassa tensione Parte 4-2: Contattori e 
+avviatori - Regolatori e avviatori a semiconduttori in c.a.
+–  CEI 17-77 del 2001 - Apparecchiature a bassa tensione Parte 4-3: Contattori e 
+avviatori Regolatori a semiconduttori in c.a. e contattori per carichi diversi da motori.
+–  CEI 17-77;V1 del 2007 - Apparecchiature a bassa tensione Parte 4-3: Contattori e 
+avviatori - Regolatori a semiconduttori in c.a. e contattori per carichi diversi da motori.
+
+[PAG 1951]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-79
+3.1.1  Contattore
+Il contattore è un’apparecchiatura elettromeccanica che, aprendo e chiudendo i propri 
+contatti, determina la chiusura e l’apertura di circuiti elettrici e il funzionamento o l’arresto 
+di utilizzatori. Il suo funzionamento è legato all’eccitazione dell’elettromagnete che lo 
+compone, di conseguenza si classifica questa apparecchiatura tra quelle a comando indi-
+retto, cioè elettromagnetica. Un contattore può essere unipolare, bipolare, tripolare ecc., se 
+possiede un polo, due poli, tre poli ecc., tra loro isolati e collegati in modo da funzionare 
+sulla base di un movimento simultaneo. Strettamente connessa a quanto si è appena affer-
+mato, è la definizione di un polo considerato come una parte del contattore formata esclu-
+sivamente dagli elementi che distinguono una via conduttrice del suo circuito principale.
+Le parti che compongono un contattore (Fig. XIX.3.1) si possono così riassumere.
+–  Contatti di potenza o contatti principali, con il compito di collegare elettricamente gli 
+avvolgimenti dei motori elettrici o i terminali di altri utilizzatori con la linea di alimenta-
+zione; i contatti principali hanno sempre posizione aperta in stato di riposo.
+–  Contatti ausiliari, utilizzati per svolgere svariate funzioni; le utilizzazioni più classiche, 
+e che si riscontreranno negli esercizi proposti, comprendono l’autoalimentazione, l’inter-
+blocco tra due o più motori, la segnalazione e l’inserimento di altri circuiti nel funzionamento 
+più complesso di un impianto; si distinguono da quelli di potenza perché sono di dimensioni 
+più ridotte. I contatti ausiliari possono essere normalmente aperti o normalmente chiusi.
+–  Elettromagnete, composto da un nucleo magnetico e una bobina; che, quando è per-
+corsa da una corrente di eccitazione, crea un campo magnetico costante per mezzo del 
+quale il nucleo fisso attrae quello mobile. Con tale spostamento si ottiene anche lo sposta-
+mento delle parti mobili dei contatti, determinandone la chiusura o l’apertura.
+–  Separatori, con il compito di delimitare l’arco di apertura di ciascun contatto. Nor-
+malmente sono dei diaframmi situati fra le singole coppie dei contatti di potenza, oppure 
+sono strutture a forma di caminetto e formano corpo unico con le camere di estinzione.
+–  Molle antagoniste, che oppongono una certa resistenza al movimento dell’equipaggio 
+mobile e lo riportano nello stato di riposo alla diseccitazione dell’elettromagnete.
+Particolare interesse riveste la conoscenza dei dati tecnici dei contattori e delle parti 
+che li costituiscono. Si ricorda peraltro che i gradi di protezione sono stabiliti dalla norma 
+CEI 70-1 che viene applicata agli involucri per materiale elettrico la cui tensione nomi-
+nale non superi 72,5 kV. 
+I circuiti, riscontrabili in un impianto con contattori, si possono classificare in:
+–  Circuito principale. Insieme di parti conduttrici del contattore, collegate in serie con il 
+circuito che il contattore deve aprire o chiudere (per esempio, circuito di alimentazione di 
+un motore asincrono trifase).
+–  Circuito di comando. Particolare circuito elettrico che, distinto dal circuito principale, 
+ha il compito di effettuare l’operazione di apertura o di chiusura del contattore o entrambe 
+(comanda cioè l’elettromagnete del contattore).
+–  Circuito ausiliario. Insieme di parti conduttrici del contattore, non facenti parte del 
+circuito principale e di quello di comando, che assolve a funzioni diverse (per esempio, 
+circuito di segnalazione).
+Bisogna tenere presente che i circuiti principale, di comando e per funzioni ausiliarie 
+possono essere supportati da sistemi di alimentazione diversi, sia per valore di tensione 
+che per natura della corrente.
+A seconda dello specifico sistema si incontreranno perciò problemi di dimensiona-
+mento diversificati: per esempio, sul circuito principale la diversa natura della corrente 
+condizionerà la configurazione dei poli, dei dispositivi spegniarco e il potere di interru-
+zione; sul circuito di comando la diversa natura della corrente determinerà soprattutto la 
+specifica struttura del circuito magnetico.
+
+[PAG 1952]
+XIX-80
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+1. Coperchio
+2. Azionatore
+3. Corpo centrale
+4. Bobina
+5. Nucleo fisso
+6. Nucleo mobile
+7. Puntone per l’azionamento 
+dei contatti mobili
+8. Contatti ausiliari
+9. Castelletto
+10. Contatti mobili
+11. Chiavistello
+12. Ganci di chiusura
+13. Base
+14. Contatti fissi
+15. Contatti ausiliari
+16. Morsetti di ancoraggio con-
+duttori
+17. Diaframmi di separazione 
+morsetti.
+18. Fori di fissaggio
+Fig. XIX.3.1  Rappresentazione in vista esplosa di un contattore.
+L’individuazione dei morsetti di un apparecchio, in questo caso di un contattore, deve 
+essere precisa e inequivocabile. Ciò significa che ciascuna marcatura deve comparire in 
+un contattore una sola volta.
+Le normative di riferimento sono le seguenti:
+–  CEI 17-17/1 del 1998 - Apparecchiatura industriale a tensione non superiore a 1000 
+V in corrente alternata e a 1200 V in corrente continua. Individuazione dei morsetti e 
+numero caratteristico. Regole generali.
+–  CEI 17-17/2 del 1998 - Apparecchiatura industriale a tensione non superiore a 
+1.000 V in corrente alternata e a 1.200 V in corrente continua. Individuazione dei mor-
+setti, numero caratteristico e lettera caratteristica su particolari contattori ausiliari.
+–  CEI 17-17/3 del 1998 - Apparecchiatura industriale a tensione non superiore a 
+1.000 V in corrente alternata e a 1.200 V in corrente continua. Individuazione dei morsetti 
+e numero caratteristico per contatti ausiliari di particolari contattori.
+–  CEI 17-17/4 - CT 17 del 1998 - Apparecchiatura industriale a tensione non supe-
+riore a 1.000 V in corrente alternata e a 1.200 V in corrente continua. Individuazione dei 
+morsetti e numero caratteristico per particolari ausiliari di comando.
+–  CEI 17-28 del 1997 - Apparecchiatura industriale a bassa tensione. Marcatura dei 
+terminali per componenti elettronici e per contatti esterni associati.
+ Dalla lettura delle norme CEI 17-17 e 17-28 si possono evincere i principi sostanziali 
+che permettono una marcatura e una individuazione corretta dei morsetti negli apparecchi 
+industriali a bassa tensione (minore di 1000 V) che si possono riassume in:
+–  I morsetti delle bobine devono essere marcati con un sistema alfanumerico con carat-
+teri maiuscoli (per esempio, A1 e A2), che, a seconda dello specifico apparecchio, viene 
+distinto come in Fig. XIX.3.2a.
+–  I morsetti dei contatti vengono sempre marcati con un sistema numerico; il numero 
+inferiore dispari indica l’entrata, il numero immediatamente superiore pari indica l’uscita.
+–  I morsetti degli elementi principali di connessione (sia nei contattori che nei relè ter-
+mici) vengono sempre marcati con un numero ad una sola cifra, come viene esemplificato 
+in Fig. XIX.3.2b.
+–  I morsetti dei contatti ausiliari vengono marcati con un numero a due cifre; la prima
+
+[PAG 1953]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-81
+ delle quali indica il tipo di funzione, mentre la seconda indica il numero di sequenza, 
+come viene evidenziato in Fig. XIX.3.2c. In particolare, i numeri di funzione 1 e 2 indivi-
+duano contatti di apertura (normalmente chiusi), i numeri 3 e 4 contatti di chiusura (nor-
+malmente aperti), i numeri 5 e 6 contatti di apertura con funzione speciale (contatti 
+ausiliari ritardati), i numeri 7 e 8 contatti di chiusura con funzione uguale ai precedenti.
+–  Sull’apparecchio la numerazione viene effettuata da sinistra verso destra, iniziando 
+dal piano più vicino alla base di montaggio.
+I criteri per la scelta dei contattori devono tenere in considerazione anche le condi-
+zioni di esercizio, che si possono individuare in:
+–  servizio leggero;
+–  servizio normale; suddivisibile a sua volta nel servizio a otto ore, nel servizio conti-
+nuo, nel servizio intermittente o in quello di durata limitata;
+–  servizio gravoso;
+–  servizio gravosissimo.
+I vantaggi derivanti dall’uso del contattore sono attribuibili innanzitutto alla possibi-
+lità di comandarlo a distanza e da più punti. Un contattore, inoltre, è in grado di azionare 
+circuiti ausiliari di allarme, blocco, segnalazione ecc. In mancanza di tensione può servire 
+da protettore (funziona sostanzialmente da relè di minima tensione) oppure, adeguata-
+mente coordinato con un relè termico, assolve la funzione di relè di massima corrente. 
+La maggior parte dei contattori trova applicazione nell’avviamento di motori asin-
+croni trifasi per il comando di macchine operatrici come ad esempio: pompe, compressori, 
+macchine utensili, macchine da stampa, macchine per la lavorazione del legno, impianti 
+trasportatori ecc.
+Fig. XIX.3.2  Marcatura dei morsetti di un contattore.
+a)
+b)
+c)
+Bobina
+Bobina
+con due avvolgimenti
+ Bobina
+ con prese
+Sganciatore
+di tensione
+(a impulso)
+Elettromagneti
+di interblocco
+tensione
+Sganciatore
+di minima
+E1
+E2
+D1
+D2
+A1
+A2
+A1
+A3
+A3
+A1
+A2
+A1
+A2
+B1
+B2
+C1
+C2
+A2
+Contattore
+Relè termico
+1
+3
+5
+2
+4
+6
+1
+3
+5
+2
+4
+6
+13
+21
+13
+21
+31
+43
+14
+22
+32
+44
+55
+97
+56
+98
+95
+96
+67
+68
+14
+22
+
+[PAG 1954]
+XIX-82
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+3.1.2   Relè statico
+Il relè statico è un dispositivo di potenza senza elementi in movimento che permette di 
+commutare dei carichi anche rilevanti (fino a 90 A) in corrente alternata fino ad una tensione 
+di 415 V, oppure in corrente continua. Questa funzione di commutazione lo rende molto 
+simile al contattore, del quale possiede le principali caratteristiche. In commercio si possono 
+trovare relè statici di tipo unipolare, tripolare, invertitore del senso di marcia di un motore 
+trifase, per montaggio su circuito stampato e per applicazioni in corrente continua.
+Un relè statico è composto da tre specifici circuiti (Fig. XIX.3.3), distinti in:
+–  Circuito di ingresso. Assicura l’isolamento galvanico tra il circuito di comando e il 
+circuito di potenza. L’isolamento è dato da un accoppiamento ottico.
+–  Circuito di adattamento o di sincronizzazione. Permette l’analisi del segnale d’entrata 
+e assicura la commutazione del circuito di uscita. Nei tipi a commutazione con tensione 
+zero (illustrata in seguito) il circuito di adattamento assicura che la commutazione 
+avvenga nel ciclo successivo all’input, quando la tensione passa per lo zero.
+–  Circuito di uscita o di potenza. Formato da un organo di potenza. Il dispositivo di 
+potenza può essere un TRIAC o dei tiristori in antiparallelo. In condizioni di commuta-
+zione di carichi in corrente continua, l’elemento di potenza può essere un transistore 
+oppure un MOSFET.
+Fig. XIX.3.3  Circuiti costituenti un relè statico.
+I vantaggi che un relè statico può offrire, rispetto a un contattore, si possono elencare in:
+vita di funzionamento molto lunga;
+–  capacità di comandare circuiti di potenza anche in presenza di segnali di basso livello;
+–  elevata frequenza di commutazione;
+–  funzionamento totalmente silenzioso;
+–  buona resistenza alle vibrazioni;
+–  possibilità di commutare carichi rilevanti;
+–  notevole limitazione dei disturbi radioelettrici.
+I relè statici possono presentare due diversi tipi di commutazione: con tensione zero e 
+istantanea.
+La commutazione con tensione zero, denominata anche sincrona, si caratterizza per la 
+commutazione che avviene quando la tensione nel carico passa per lo zero (Fig. XIX.3.4a). 
+L’aspetto positivo di questo tipo di commutazione è dovuto alla possibilità di applicare pro-
+gressivamente la tensione ai capi del carico. Inoltre questo tipo di funzionamento limita le 
+perturbazioni in linea e i disturbi radioelettrici. È particolarmente indicata per i carichi resi-
+stivi (illuminazione, termoresistenze), determinando anche una durata maggiore della vita 
+delle lampade presenti nel circuito, e anche per quelli capacitivi. L’unica precauzione da 
+osservare è quella di non impiegarla quando il fattore di potenza è inferiore a 0,5.
+Nel caso di impiego di relè statici di tipo sincrono per il comando di resistenze 
+Tensione di
+ingresso
+Luce
+Organo di
+commutazione
+Carico
+Uscita
+Circuito di
+ingresso
+Circuito di
+adattamento
+Circuito di
+uscita
+
+[PAG 1955]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-83
+occorre impiegare anche un dissipatore di calore, scelto in base alla natura delle resi-
+stenze, alla corrente di impiego e alla temperatura dell’aria nelle vicinanze del relè.
+La commutazione istantanea, o commutazione asincrona, presenta la particolarità che 
+il circuito di uscita viene attivato dalla presenza del segnale di comando (Fig. XIX.3.4b) e 
+si dimostra particolarmente adatta per carichi di tipo induttivo (comando di motori). 
+Anche nel caso di impiego di relè statici di tipo asincrono per il comando di un motore 
+occorre impiegare un dissipatore di calore, la cui scelta sarà condizionata dalla categoria 
+di impiego del motore, dalla potenza del motore asincrono trifase e dalla temperatura 
+dell’aria nelle vicinanze del relè.
+I relè statici sono dispositivi che temono un riscaldamento eccessivo, per cui devono 
+essere sempre associati a un dissipatore di calore. Per ogni tipo di relè le case costruttrici 
+forniscono delle specifiche curve, nelle quali, partendo dall’intensità di corrente elettrica 
+commutata, intersecando l’appropriato valore di potenza dissipata e considerando la tem-
+peratura ambiente, è possibile individuare e scegliere un dissipatore con coefficiente di 
+dissipazione termica adeguato. Inoltre per ottenere uno scambio ottimale di calore tra relè 
+e dissipatore è necessario applicare nella zona di contatto un grasso termico speciale 
+(pasta di silicone e ossido di zinco).
+Fig. XIX.3.4  Commutazione con tensione zero o istantanea.
+Si elencano di seguito alcuni elementi specifici riguardanti funzionamento e composi-
+zione di un relè statico:
+–  La tensione di comando viene applicata a un accoppiatore optoelettronico (un led agisce 
+su un elemento fotosensibile) che opera da isolatore galvanico tra l’ingresso e i circuiti 
+interni del relè. Generalmente con alimentazione in corrente continua l’ingresso è protetto 
+contro l’inversione di polarità, mentre in corrente alternata esiste un circuito raddrizzatore 
+con filtro che stabilisce una tensione di comando continua sull’elemento optoisolatore.
+–  Un led elettroluminescente informa, sulla parte frontale del relè, della presenza dell’ali-
+mentazione sul circuito di comando.
+–  Il dispositivo è un semiconduttore posto solidalmente alla piastra metallica che costi-
+tuisce la parte posteriore del relè e che consente il fissaggio dell’apparecchio su un dissi-
+patore. Il circuito di sincronizzazione, quando riceve il segnale di comando, determina 
+l’ordine di conduzione all’elemento di potenza, in modo che la commutazione venga 
+effettuata sia dall’inizio dell’alternanza che segue l’applicazione del comando (versione 
+sincrona), che nel medesimo istante della ricezione del comando (versione asincrona).
+Tensioni
+Tensione di rete
+di ingesso
+Carico
+Punto di
+ripristino
+1
+1
+0
+0
+a)
+Tensioni
+1
+1
+0
+0
+Tensione di rete
+di ingesso
+Carico
+Punto di
+ripristino
+Tensioni
+1
+1
+0
+0
+Tensione di rete
+di ingesso
+Carico
+Punto di
+ripristino
+b)
+
+[PAG 1956]
+XIX-84
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+3.2  Apparecchi ausiliari
+Gli apparecchi ausiliari di comando sono quegli apparati che hanno il compito di gestire 
+il funzionamento di altre apparecchiature; vengono inoltre utilizzati per creare circuiti di 
+segnalazione, interblocco elettrico, controllare l’esecuzione di un lavoro ecc. Per un’ade-
+guata conoscenza normativa sull’argomento si consiglia di consultare le seguenti norme:
+–  CEI 17-11 del 2000 - Apparecchiatura a bassa tensione Parte 3: Interruttori di 
+manovra, sezionatori, interruttori di manovra-sezionatori e unità combinate con fusibili. 
+CEI 17-11;V1 del 2002, CEI 17-11;V2 del 2006.
+–  CEI 17-31 del 1997 - Apparecchiatura industriale a bassa tensione. Ausiliari di 
+comando - Interruttori di posizione 42,5 x 80 - Dimensioni e caratteristiche.
+–  CEI 17-33 del 1997 - Apparecchiatura industriale a bassa tensione. Ausiliari di 
+comando - Interruttori di posizione 30x55 - Dimensioni e caratteristiche.
+–  CEI 17-45 del 2005 Apparecchiature a bassa tensione Parte 5-1: Dispositivi per cir-
+cuiti di comando ed elementi di manovra - Dispositivi elettromeccanici per circuiti di 
+comando.
+–  CEI 17-47 del 2006 - Apparecchiature a bassa tensione Parte 6-1: Apparecchiature 
+a funzioni multiple - Apparecchiature di commutazione.
+–  CEI 17-51 del 2005 - Apparecchiature a bassa tensione Parte 6-2: Apparecchiatura 
+a funzioni multiple - Apparecchi integrati di manovra e protezione (ACP). CEI 17-51;V1 
+del 2008.
+–  CEI 17-53 del 2008 - Apparecchiature a bassa tensione Parte 5-2: Dispositivi per 
+circuiti di comando ed elementi di manovra - Interruttori di prossimità.
+–  CEI 17-66 del 1998 - Apparecchiature a bassa tensione Parte 5: Dispositivi per cir-
+cuiti di comando ed elementi di manovra. Sezione 5: Dispositivo elettrico di arresto di 
+emergenza con blocco meccanico.
+–  CEI 17-66;V1 del 2006 - Apparecchiature a bassa tensione Parte 5-5: Dispositivi 
+per circuiti di comando ed elementi di manovra - Dispositivo elettrico di arresto di emer-
+genza con blocco meccanico.
+–  CEI 17-76 del 2000 - Apparecchiature a bassa tensione Dispositivi per circuiti di 
+comando ed elementi di manovra. Interfaccia in corrente continua per sensori di prossi-
+mità e amplificatori di manovra (NAMUR).
+–  CEI 17-101 del 2007 - Apparecchiature a bassa tensione Parte 5-8: Dispositivi per 
+circuiti di comando ed elementi di manovra - Interruttori ausiliari a tre posizioni.
+Nel classificare i circuiti tipici di un impianto a contattori, si  definisce come circuito 
+ausiliario quell’insieme di parti conduttrici del contattore, non facenti parte del circuito 
+principale e di quello di comando, in grado di svolgere diversificate funzioni di servizio. 
+Questo circuito però non è normalmente composto da sole parti del contattore, ma con-
+tiene anche altre apparecchiature.
+Si definiscono perciò apparecchi ausiliari di comando tutti quegli apparecchi che si 
+trovano inseriti in tale circuito. Fanno normalmente parte di tale tipo di circuiti tutti i 
+dispositivi manuali di comando (pulsanti, commutatori rotativi ecc.), i dispositivi elettro-
+magnetici di comando sia del tipo istantaneo che ritardato (contattori ausiliari, relè ecc.) e 
+gli interruttori di posizione (per esempio gli interruttori di finecorsa).
+Tipicamente le apparecchiature di comando, segnalazione e ausiliarie in genere sono 
+parte integrante dell’equipaggiamento elettrico delle macchine e in particolare svolgono 
+la funzione di mettere in sicurezza i sistemi dei quali fanno parte. La normativa CEI al 
+rigurdo  è la seguente:
+–  CEI 44-5 del 2006 - Sicurezza del macchinario - Equipaggiamento elettrico delle 
+macchine Parte 1: Regole generali.
+–  CEI 44-7 del 1999 - Sicurezza del macchinario - Equipaggiamento elettrico delle
+
+[PAG 1957]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-85
+ macchine Parte 31: Prescrizioni particolari per macchine per cucire, unità e sistemi.
+–  CEI 44-8 del 2008 - Sicurezza del macchinario - Indicazione, marcatura e manovra. 
+Parte 1: Prescrizioni per segnali visivi, acustici e tattili.
+–  CEI 44-9 del 2008 - Sicurezza del macchinario - Indicazione, marcatura e manovra. 
+Parte 2: Prescrizioni per la marcatura.
+–  CEI 44-10 del 2005 - Sicurezza del macchinario - Apparecchi elettrosensibili di 
+protezione. Parte 1: Prescrizioni generali e prove. CEI 44-10;V1 del 2009.
+–  CEI 44-11 del 2009 - Sicurezza del macchinario - Equipaggiamento elettrico delle 
+macchine. Parte 3-2: Prescrizioni per le macchine di sollevamento.
+–  CEI 44-12 del 2008 - Sicurezza del macchinario - Indicazione, marcatura e mano-
+vra. Parte 3: Prescrizioni per il posizionamento e il senso di manovra degli attuatori.
+–  CEI 44-16 del 2005 - Sicurezza del macchinario - Sicurezza funzionale dei sistemi 
+di comando e controllo elettrici, elettronici ed elettronici programmabili correlati alla 
+sicurezza. CEI 44-16;V1 del 2008.
+–  CEI 44-17 del 2005 - Sicurezza del macchinario - Applicazione di sistemi di prote-
+zione per rilevare la presenza di persone.
+–  CEI 44-18 del 2007 - Sicurezza del macchinario - Apparecchi elettrosensibili di 
+protezione. Parte 2: Prescrizioni particolari per l'equipaggiamento che utilizza dispositivi 
+di protezione fotoelettrici attivi (AOPD).
+3.2.1  Relè
+Il relè può essere considerato l’apparecchiatura elettromeccanica per antonomasia 
+che, comandata da variazioni di grandezze fisiche, elettriche ecc., determina il funziona-
+mento di utilizzatori elettrici e non o la chiusura e l’apertura di ulteriori circuiti.
+Nella sua evoluzione il relè ha conosciuto ben tre diverse configurazioni o generazioni. 
+I relè della prima generazione funzionanti secondo i principi classici presentano la caratte-
+ristica di non essere facilmente miniaturizzabili e di richiedere una notevole energia per il 
+funzionamento. 
+Nella seconda generazione il relè ha conosciuto una sensibile miniaturizzazione, diffe-
+renziandosi nei tipi mono-bi e tristabili ad elevata efficienza. Questo tipo richiedeva una 
+energia quasi nulla per produrre elevate forze di contatto.
+Nella terza e ultima generazione il relè ha unito le caratteristiche della generazione 
+precedente con quelle dei circuiti integrati a semiconduttore.
+I tradizionali relè e quelli delle generazioni successive presentano delle funzioni parti-
+colarmente interessanti che li rendono adatti agli usi più disparati. Le principali funzioni 
+possono essere riassunte come segue:
+–  trasformazione di una corrente elettrica in un flusso magnetico;
+–  trasformazione di un flusso magnetico in una forza;
+–  trasporto dell’energia meccanica sui contatti;
+–  capacità di immagazzinare energia meccanica per l’apertura dei contatti dovuta alla 
+diseccitazione;
+–  conduzione della corrente elettrica attraverso i punti di contatto;
+–  compensazione della influenza della temperatura allo scopo di ottenere una tensione 
+di attrazione costante;
+–  capacità di impedire la formazione di impurità sui contatti;
+–  combinazione di diverse funzioni programmabili.
+In linea di massima, il relè è costituito da un sistema di azionamento e da un sistema 
+di comando esterno, tramite il quale svolge il compito assegnato.
+Per le sue caratteristiche costruttive esso ha un funzionamento analogo a quello del 
+contattore, cioè funziona sulla base dell’eccitazione di un elettromagnete. Le caratteristi-
+che e gli elementi essenziali di un relè possono essere così riassunti:
+
+[PAG 1958]
+XIX-86
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+–  Il modello e il tipo, a seconda dell’uso principale e del servizio svolto. Si trovano in 
+commercio relè per impieghi generali (relè base, miniatura, di potenza), relè a ritenuta 
+magnetica e meccanica, relè per circuiti elettronici (relè subminiatura, miniatura, cartolina 
+e relè reed). La costruzione del relè può essere in esecuzione a giorno o protetta.
+–  La bobina, caratterizzata dalla tensione, dalla frequenza e dal consumo nominali, dalla 
+resistenza e dall’induttanza.
+–  I contatti, contraddistinti in base al numero, al tipo (semplici, sdoppiati, crossbar) e ai 
+valori di corrente e di tensione massimi.
+–  Il tipo di collegamento del relè (a innesto, per circuito stampato, a saldare, faston) e 
+dello zoccolo (per circuito stampato, a saldare, a vite, wrapping).
+3.2.2  Temporizzatori
+I temporizzatori sono apparecchi elettromeccanici o elettronici usati per il controllo 
+delle sequenze di lavoro su macchine operatrici (norma CEI 17- 45). Normalmente lavo-
+rano senza l’intervento di altri organi, controllando e condizionando il funzionamento di 
+altri apparecchi in un arco di tempo prefissato, chiudendo o aprendo dei circuiti elettrici.
+L’applicazione del temporizzatore negli impianti industriali è vastissima e spazia 
+dagli avviatori automatici in genere (macchine utensili, quadri di comando per macchine 
+operatrici dove si rendono necessari automatismi ciclici e sequenziali, impianti di segna-
+lazione) fino ad arrivare agli elettrodomestici.
+La scelta di un temporizzatore dipende dal principio di funzionamento che si ritiene 
+più adatto all'uso specifico, dalla funzione di ritardo e dall’orientamento di montaggio. 
+Per quanto riguarda il principio di funzionamento, il ritardo di tempo può essere ottenuto 
+in modi diversi, per esempio per mezzo di azioni meccaniche, elettromeccaniche (com-
+prese le pneumatiche) o elettroniche. La funzione di ritardo può essere con ritardo alla 
+eccitazione, alla diseccitazione e ad entrambe. Nel primo tipo, alimentando la bobina, ini-
+zia la temporizzazione, al termine della quale si ha la commutazione dei contatti. La tem-
+porizzazione inizia quindi con l’alimentazione e solo alla fine del ritardo si ha la 
+commutazione dei contatti. Nel secondo tipo, invece, alimentando la bobina, si ha la com-
+mutazione immediata dei contatti e il ripristino avviene al termine della temporizzazione, 
+iniziata con l’interruzione dell’alimentazione. 
+I temporizzatori si possono differenziare per le caratteristiche di montaggio, essendo 
+prodotti in versione sporgente e incassata.
+Nei temporizzatori elettromeccanici ad un campo la temporizzazione si ottiene utiliz-
+zando un motore sincrono e diversi rinvii; in quelli a più campi è presente in aggiunta anche 
+una pluralità di rapporti di trasmissione per ogni rinvio. Questa tecnica di temporizzazione 
+è sempre stata quella tradizionalmente adottata nei temporizzatori di largo impiego e la sola 
+evoluzione verificatasi è stata la sostituzione delle parti metalliche con materiali plastici 
+pregiati, per limitare pesi e ingombri.
+Le caratteristiche più rilevanti di un temporizzatore elettromeccanico risiedono nella 
+diretta dipendenza dalla frequenza della rete, nella scala la cui esattezza è data anche da un 
+accoppiamento meccanico costante e lineare, nell'indipendenza sia dalle variazioni della 
+tensione di alimentazione che della temperatura e infine nel basso costo.
+Nei temporizzatori elettronici si riscontrano due diverse modalità per realizzare la tem-
+porizzazione: l’uso di un elemento RC (a resistenza e capacità) con comparatore e un cir-
+cuito oscillante con stadi di conteggio di impulsi. Il procedimento più noto da anni si basa 
+sulla carica e scarica di un condensatore nel quale, durante il processo, il valore di tensione 
+che varia nel tempo viene confrontato con quello di riferimento mediante un comparatore. 
+Quando viene raggiunta la tensione prefissata, viene attivata l’uscita. Nei temporizzatori 
+con elemento RC la regolazione del tempo di ritardo viene effettuata mediante una resi-
+
+[PAG 1959]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-87
+stenza variabile sull’elemento RC oppure mediante un circuito potenziometrico particolare. 
+In entrambi i casi non si ottiene una buona precisione, sia per tempi di conteggio lunghi che 
+per tempi di ripristino brevi, per cui, se sono richieste caratteristiche di elevata precisione 
+e di attendibile ritorno al riarmo del temporizzatore è preferibile optare per uno con circuito 
+oscillante e contatore di impulsi.
+Un primo modello di questa categoria di temporizzatori impiega un oscillatore RC nel 
+quale la scansione degli impulsi dell’oscillatore può essere regolata con un potenziome-
+tro; le uscite di questi dispositivi possono essere collegate direttamente in serie con il 
+carico oppure possono essere utilizzate come uscite del temporizzatore.
+Un secondo modello impiega un oscillatore al quarzo che fornisce una sequenza di 
+impulsi di elevata precisione; gli impulsi vengono contati e confrontati con il valore pre-
+impostato; quando i due valori sono uguali le uscite vengono attivate.
+Le caratteristiche rilevanti di un temporizzatore elettronico consistono in un breve 
+tempo di riazzeramento, una regolazione più ampia dei tempi all’interno del campo di 
+impiego, un grado di precisione indipendente dalle variazioni della frequenza di rete che 
+rende possibile il suo impiego nel campo delle alte frequenze.
+Devono essere citati, infine, i ritardatori pneumatici, applicabili a un contattore, di 
+cui utilizzano la bobina, non avendone una propria, in grado di svolgere appieno la fun-
+zione di apparecchio temporizzatore.
+3.2.3  Contaimpulsi
+Il contaimpulsi è una apparecchiatura elettronica in grado di contare e visualizzare i 
+segnali (impulsi) che giungono ai suoi ingressi e di generare segnali in uscita. Un partico-
+lare tipo di contaimpulsi, chiamato totalizzatore, è invece in grado solamente di visualiz-
+zare il numero totale dei segnali giunti ai propri ingressi (non è provvisto di uscite).
+La modalità di conteggio è caratteristica per ogni tipo di contaimpulsi e la sua scelta è 
+determinata dal settore di applicazione.
+Queste apparecchiature vengono classificate in base alla loro capacità di conteggio, 
+definibile come il valore massimo di conteggio; in linea generale questo valore massimo è 
+dato dal numero di cifre visualizzabili.
+In base invece al loro specifico funzionamento i contaimpulsi e i totalizzatori si pos-
+sono così differenziare:
+Addizionale (UP), apparecchio in grado di visualizzare i segnali che arrivano ai suoi 
+ingressi. Il modo di visualizzazione è dato dalla partenza dal valore 0 sino al raggiungi-
+mento del valore impostato.
+Sottraente (DOWN), in grado di visualizzare in modo decrescente gli impulsi che arri-
+vano ai suoi ingressi; la visualizzazione parte dal valore impostato sino ad arrivare allo 0.
+Bidirezionale (UP/DOWN), capace di dare una visualizzazione crescente o decre-
+scente in relazione al tipo di segnale presente agli ingressi.
+A preselezione, che fornisce un segnale in uscita, quando il numero degli impulsi agli 
+ingressi ra
