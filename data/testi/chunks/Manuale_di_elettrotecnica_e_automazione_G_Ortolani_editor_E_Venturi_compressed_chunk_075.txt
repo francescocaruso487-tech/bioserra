@@ -1,0 +1,822 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 75/116 ===
+Chars: 43,726 | Offset: 3,268,994
+
+
+
+[PAG 1551]
+SISTEMI
+XV-67
+In particolare, il comando di posizionamento viene inviato al controllore tramite una 
+delle porte di comunicazione. 
+Fig. XV.7.11   Schema a blocchi di servomeccanismo controllato da un sistema digitale.
+Conseguentemente il controllore comanderà attraverso la tensione in uscita dal DAC la 
+velocità e la direzione di movimento: ad una tensione positiva potrà corrispondere un movi-
+mento nel senso di aumento della quota e viceversa; inoltre l’ampiezza della tensione sta-
+bilirà la velocità di rotazione del motore, quindi la velocità di movimento del carro mobile.
+Il motore sarà comandato dall’azionamento e, quest’ultimo, onde garantire una velocità 
+corrispondente alla tensione applicata, sarà retroazionato da una dinamo tachimetrica.
+In particolare, se il sistema azionamento-motore ha caratteristiche secondo le quali alla 
+tensione di +10V di comando deve corrispondere una velocità dell’albero motore di 3000 
+giri/min, tra la tensione applicata e la velocità ci deve essere una relazione di proporzionalità 
+diretta: cioè, con una tensione di comando di 2 V l’albero dovrà girare ad una velocità di 
+600 giri/min.
+Il movimento del carro avviene tramite il motore che, mediante un riduttore meccanico 
+che diminuisce la velocità disponibile sull’albero e modifica la coppia meccanica disponibile 
+aumentandola, mette in movimento una vite senza fine (di solito a ricircolo di sfere per 
+aumentarne il rendimento) e questa, a sua volta, il carro.
+Ad ogni giro della vite senza fine corrisponde un movimento ben preciso del carro o in 
+un senso o nell’altro a seconda del movimento orario o antiorario impresso alla vite senza 
+fine. La vite senza fine è caratterizzata, tra l’altro, dal passo, cioè dall’ampiezza dello spo-
+stamento corrispondente ad un giro completo. La scelta del passo è legata alle caratteristiche 
+meccaniche del sistema che si vuole realizzare.
+All’estremo opposto della vite vi è posizionato il trasduttore di posizione che in questo 
+esempio, per semplicità, risulta essere un encoder incrementale. Ad un giro della vite cor-
+Terminale utente
+D.A.C.
+Azionamento
+Motore
+Segnale riferimento velocità
+Tachimetrica
+Vite senza fine
+Carro
+Encoder
+Mobile
+Segnale retroazione della posizione
+C
+
+[PAG 1552]
+XV-68
+SISTEMI
+risponderà un ben preciso spostamento del carro mobile, ma anche un giro del l’encoder, cioè 
+alla generazione e invio verso il microcontrollore di un ben determinato numero di impulsi.
+La relazione spostamento del carro e numero di impulsi inviati dall’encoder definisco-
+no la risoluzione del sistema, indicata comunemente come Impulsi/millimetro. Il numero di 
+impulsi inviati dall’encoder durante il movimento consente al controllore di definire istan-
+taneamente la posizione del carro, in quanto questi verranno sommati o sottratti a quelli già 
+memorizzati nel controllore, a seconda che il carro muova nella direzione positiva oppure 
+negativa.
+L’encoder, ruotando con la vite senza fine, invia al controllore due segnali ad onda quadra 
+sfasati tra loro di 90° che consentono di rilevare il verso di rotazione e, pertanto, di permettere 
+al controllore di sommare o sottrarre il numero di impulsi in ingresso alla quota attuale: 
+l’ampiezza del movimento viene determinata contando il numero di impulsi inviati 
+dall’encoder.
+Il compito del controllore è quello di tenere sempre sotto controllo la posizione del carro 
+e di opporsi a movimenti non desiderati, accelerare e decelerare il carro all’inizio e al termine 
+della movimentazione. Tutto il sistema, carro, vite senza fine, riduttore e il motore stesso 
+hanno una massa e quindi una loro inerzia e quindi sarà a carico del controllore evitare stress 
+dei componenti meccanici, ed evitare inoltre che, al raggiungimento della posizione desi-
+derata, questa non venga superata.
+L’accuratezza del posizionamento dipende dalla risoluzione del sistema meccanico: 
+accuratezza e risoluzione sono due termini comunemente usati per indicare lo stesso para-
+metro. Per esempio, se l’encoder è in grado di fornire ad ogni suo giro 1000 impulsi, ed un 
+giro corrisponde a 10 mm di spostamento, possiamo affermare che la risoluzione (accura-
+tezza di posizionamento) è di 0,01 mm e rappresenta la distanza minima che il controllore 
+può far eseguire al carro mobile.
+Tutte le distanze superiori dovranno essere multiple di questa. Quando si desidera far 
+muovere il carro è necessario informare il controllore di quanto deve essere la distanza da 
+raggiungere: poiché un impulso encoder è la distanza minima, che nell’esempio è di 0,01 
+mm, se si vuole fargli percorrere la distanza di 100 mm, sarà necessario dare informazione 
+al controllore che dall’encoder, per effetto del movimento del carro, dovranno arrivare (con 
+opportuna fase e quindi segno) 10.000 impulsi. 
+Il controllore digitale costituirà quindi il sistema di controllo digitale retroazionato: al 
+suo nodo sommatore (virtuale perché realizzato tramite la RAM e il software) compariranno 
+simultaneamente gli impulsi previsti (segnale di riferimento) e quelli provenienti dall’enco-
+der (segnale di retroazione).
+Ad intervalli di tempo regolari il microprocessore effettuerà la differenza tra gli impulsi 
+previsti e quelli pervenuti, ottenendo in questo modo il cosiddetto segnale di errore (di tipo 
+digitale); tale segnale, dopo essere stato moltiplicato per la costante KP detta costante di pro-
+porzionalità o guadagno del sistema, sarà convertito in un segnale analogico inviato a sua 
+volta all’azionamento.
+Il segnale di riferimento (i 10.000 impulsi) saranno sommati uno per volta alla quota 
+attuale presente nella RAM e, al nodo sommatore virtuale, sarà inviata la nuova quota desi-
+derata, con una frequenza che dipenderà dalla velocità con la quale si vuole far muovere il 
+carro mobile. Se per esempio i 10.000 impulsi vengono sommati (uno per volta) e presentati 
+al nodo sommatore in un tempo complessivo pari a 20 s, la velocità di movimento sarà di 
+5 mm/s. Per ottenere la velocità desiderata la quota da raggiungere viene aggiornata fino al 
+valore della quota desiderata finale ad intervalli di tempo regolari (generati da richieste perio-
+diche di interrupts provocati dal timer interno al microcontrollore). 
+Quanto appena visto rappresenta un sistema di controllo digitale di tipo Proporzionale: 
+il segnale di comando è direttamente proporzionale all’errore tra la quota desiderata e la
+
+[PAG 1553]
+SISTEMI
+XV-69
+quota attuale. La quota desiderata sarà di tipo dinamico in relazione all’accelerazione e alla 
+velocità che dovrà raggiungere il sistema per assumere infine il valore della quota da rag-
+giungere. La scelta del valore della costante di proporzionalità dipende essenzialmente da 
+due fattori:
+–  la stabilità del sistema,
+–  la necessità di inviare all’azionamento una adeguata tensione per far muovere il carro 
+anche in caso di piccoli spostamenti.
+ 
+(XV.7.2)
+Come la teoria insegna, all’aumentare di KP diminuisce l’errore; essendo quello consi-
+derato un controllo proporzionale puro, cioè un sistema di Tipo zero, l’errore è un errore di 
+posizione. Poiché non compaiono nel sistema azioni integrali, l’errore di posizione sarà sem-
+pre diverso da zero. In particolare se, per diminuire l’errore, viene aumentata eccessivamente 
+la costante di proporzionalità succede che il sistema diventa instabile.
+Per eliminare l’errore di posizione è necessario ricorrere all’azione integrale, e, per ren-
+dere il sistema più rapido nel rispondere ad eventuali disturbi o variazioni del carico applicato 
+al motore è conveniente inserire l’azione derivativa.
+Essendo il sistema di controllo di tipo digitale l’algoritmo adeguato potrà essere quello 
+visto in precedenza in occasione della trasformata Zeta e delle equazioni alle differenze 
+finite: nel caso dell’azione integrale si tratta di effettuare, ad intervalli di tempo regolari (nei 
+medesimi istanti nei quali viene richiesto l’interrupt dal timer interno al microcontrollore), 
+la somma algebrica tra l’errore attuale e quello accumulato in precedenza, moltiplicare il 
+risultato ottenuto per la costante integrativa ottimale per il sistema controllato K1 e sommare 
+infine il risultato ottenuto all’azione proporzionale.
+Se nei medesimi istanti di tempo si effettua la differenza tra l’errore attuale e quello 
+dell’istante precedente, sempre nell’ambito delle equazioni alle differenze finite, si può 
+interpretare tale risultato come la derivata dell’errore; moltiplicare tale valore per la costante 
+derivativa del sistema KD e sommare il risultato all’azione proporzionale-integrale ottenuta 
+precedentemente. Si è ottenuto in questo modo un sistema con regolazione P.I.D. di tipo digi-
+tale.
+7.2.2.  Realizzazione industriale del controllo di posizione
+ La figura seguente riporta lo schema a blocchi di un possibile sistema di controllo di 
+posizione e velocità realizzabile tramite una struttura (Fig. XV.7.12) governata da un mi-cro-
+controllore.
+Fig. XV.7.12  Controllo di posizione tramite azionamento e motore in corrente continua.
+Nella figura si evidenziano due anelli di retroazione: un anello costituito dal segnale pro-
+veniente dalla dinamo tachimetrica T verso l’azionamento, l’altro il segnale fornito 
+dall’encoder incrementale E direttamente calettato sull’asse del motore. Per la precisione, 
+anche se non evidenziato nella figura, è presente un ulteriore anello di retroazione, interno 
+velocità
+KP errore.
+
+=
+Generatore
+di
+profili
+Unità di
+conteggio
+Regolatore
+P.I.D.
+DAC
+Azionamento
+M
+T
+E
+
+
+
+[PAG 1554]
+XV-70
+SISTEMI
+all'azionamento, che interviene limitando l'uscita dell'azionamento stesso in caso di ecces-
+sivo assorbimento di corrente da parte del motore nell’evenienza di coppia richiesta ecces-
+siva.
+Si precisa che l’anello di velocità appena menzionato ha lo scopo di assicurare che, ad 
+un preciso valore di segnale in ingresso all’azionamento, corrisponda una esatta velocità del 
+motore; ciò perché anche l’azionamento è munito al suo interno di un proprio regolatore. I 
+segnali provenienti dall’encoder vengono inviati ad un blocco di conteggio di tipo UP/
+DOWN in modo da poter tenere conto, oltre che dell’entità dello spostamento, anche della 
+direzione del medesimo. Il circuito di conteggio, nel caso di microcontrollore è sovente con-
+tenuto nel chip stesso.
+L’uscita del blocco di conteggio rappresenta il segnale di retroazione, sotto forma digi-
+tale, quindi numerica, che, tramite il nodo di confronto (il nodo sommatore), viene confron-
+tata con il segnale, anch’esso numerico, proveniente dal generatore di profili.
+Un dispositivo software denominato appunto generatore di profili, permette di stabilire 
+la posizione da raggiungere, la velocità e l’accelerazione con la quale viene raggiunta tale 
+posizione: tipicamente necessita di alcuni parametri di inizializzazione quali la quota da rag-
+giungere, l’accelerazione e la decelerazione desiderate, la velocità di spostamento in rapido 
+e quella di avvicinamento, la prequota.
+Il compito del generatore di profili è quello di creare istante per istante il segnale di rife-
+rimento. Il segnale numerico in uscita dal nodo sommatore (la differenza tra il numero di 
+impulsi provenienti dal generatore di profili, e quindi la posizione teorica desiderata, e quelli 
+inviati dall’encoder al contatore di posizione, ovvero la posizione reale dell’asse meccanico), 
+rappresenta l’errore in quell’istante, errore che viene mandato in ingresso al filtro digitale.
+Se si fa riferimento alle equazioni alle differenze finite implementate su questo control-
+lore, ci si rende immediatamente conto che la differenza tra le due posizioni rappresenta una 
+differenza di spazio, ma anche una velocità, visto che i valori vengono registrati ad intervalli 
+di tempo regolari; se poi si tiene conto della differenza di velocità tra due istanti diversi, si 
+è in grado di definire anche il valore dell’accelerazione.
+Si può pertanto affermare che con questa tecnica si controlla in modo digitale sia il loop 
+di spazio, che quello di velocità e di accelerazione. Infatti, indicando con n1, n2, n3 i valori 
+provenienti dal blocco contatore nei rispettivi istanti t1, t2, t3, con T = t2 - t1 = t3 - t2 essendo 
+T l’intervallo di tempo tra un campionamento e l’altro, considerando T l’unità di misura fon-
+damentale, si ottiene:
+(XV.7.3)
+(XV.7.4)
+(XV.7.5)
+l’uscita, numerica, del regolatore viene inviata ad un DAC che provvede alla sua trasfor-
+mazione in segnale analogico adatto ad essere inviato all’azionamento. Anche il DAC, nel 
+caso di microcontrollore, risulta sovente integrato direttamente all’interno del chip del 
+microcontrollore stesso.
+La Fig. XV.7.13 evidenzia il legame tra i parametri programmati ed il segnale in uscita 
+dal generatore di profili.
+Dal punto di vista del programma, necessario al corretto funzionamento del microcon-
+trollore, è necessario ricordare che la programmazione in linguaggio assembly risulta senza 
+S
+n2n1
+=
+v
+dS
+dt
+-----
+n2n1
+T
+--------------
+=
+=
+a
+dv
+dt
+-----
+d2S
+dt2
+--------
+v2v1
+T
+-------------
+=
+=
+=
+
+[PAG 1555]
+SISTEMI
+XV-71
+dubbio quella più efficace dal punto di vista della velocità di esecuzione del programma, ma 
+anche la più onerosa e difficoltosa: ogni microcontrollore ha un suo set di istruzioni, ciascuna 
+delle quali rappresenta in forma diretta l’istruzione binaria eseguibile. 
+Fig. XV.7.13  Profilo delle velocità durante il posizionamento.
+Per limitare i disagi derivanti dalla programmazione in assembler sono stati sviluppati 
+programmi che consentono di scrivere gli applicativi in linguaggi ad alto livello. Il pregio 
+principale di questi ultimi sta nella loro indipendenza dall’architettura interna del micro-
+controllore. Le istruzioni ad alto livello vengono successivamente convertite in codice ese-
+guibile dal microcontrollore tramite un programma che prende il nome di compilatore. Il 
+risultato della compilazione viene indicato come codice oggetto o codice binario. Si precisa 
+che, in virtù dell’efficienza del compilatore, il codice oggetto generato risulta ridondante 
+nelle istruzioni da due a quattro volte: questo comporta un utilizzo di memoria superiore ed 
+una velocità di esecuzione inferiore. Uno dei linguaggi più efficienti, nono-stante sia di alto 
+livello, è il linguaggio C prodotto da Dennis e Ritchie.
+7.2.3.  Controllo di temperatura a microcontrollore
+Viene presentato ora un applicativo: un controllo di temperatura con uscita di tipo digi-
+tale, realizzato tramite un sistema a microcontrollore, programmato avvalendosi del lin-
+guaggio C. In particolare si desidera realizzare un sistema in grado di controllare e regolare 
+la temperatura di un forno ad un valore ben preciso, tant’è che se la temperatura rilevata nel 
+forno è inferiore al SET-POINT, indicato con SETP si attiva l’unità di riscaldamento, men-
+tre se la temperatura rilevata supera il SET-POINT viene attivata l’unità di raffreddamento. 
+La Fig. XV.7.14 illustra lo schema a blocchi del processo da controllare.
+Fig. XV.7.14  Regolazione della temperatura in un forno.
+Nella Tab. XV.7.5 viene riportato il programma, scritto in linguaggio C, necessario al 
+v
+velocità
+in rapido
+velocità di
+avvicinamento
+n
+velocità
+posizione
+Prequota
+Spostamento complessivo
+Riscaldatore
+Sonda di temperatura
+Refrigeratore
+Forno
+Rgolatore
+di
+temperatura
+
+[PAG 1556]
+XV-72
+SISTEMI
+corretto funzionamento del controllore per quanto riguarda l’accensione del riscaldatore, o 
+del refrigeratore.
+Tab. XV.7.5   Lista istruzioni programma in linguaggio C per il controllo di temperatura
+/* NOME: CALTEM  
+Parametri in uscita:FLRAFF = 00 = riscaldamento
+FLRAFF = 55 = raffreddamento
+FLRAFF = FF = spegnimento totale
+*/
+void CALTEM(void)
+{
+char SEGNO;
+long a,A;
+limsup= SETP1+EBANDA/2;
+liminf=SETP1- EBANDA/2;
+if (liminf <=0)liminf=0;
+if (TEMP == (SETP1)){
+FLCAR2=0x55;
+FINTE=0x55;
+FLRAFF=0xFF;/* Non riscalda, non raffredda */
+OUT &=0xFC;
+return;}/* Spegnimento riscaldamento e raffreddamento */
+if (TEMP >= (SETP1-EBANDA/2) && TEMP <= (SETP1+EBANDA/2))FINTE=0x55;
+if (TEMP < liminf){
+ONTIME = ETCICLO;
+SUM=0;
+FINTE=0;
+FLRAFF = 0x00;/* Riscaldamento */
+OUT &=0xFD;
+OUT |=0x01;/* Attivazione riscaldamento e disattivazione raffreddamento */
+return;
+}
+if(TEMP >= liminf && TEMP < SETP1){
+a =TEMP;
+ONTIME =((100-(((a-liminf )*100)/(SETP1-liminf)))*ETCICLO)/100;
+if (FINTE == 0x55){
+DTEMP=TEMP-SETP1;
+SUM=SUM+DTEMP;
+if (SUM > 769)SUM=769;
+if (SUM < -769)SUM=-769;
+if (SUM < 0){
+SUM = iabs (SUM);
+SEGNO=0x55;
+}
+else SEGNO=0;
+A=ETINT*SUM;
+DUTYC = (A*EKOSTI)/60000;
+INTIME = (ETCICLO*DUTYC)/127;
+if (SEGNO == 0x55)ONTIME=ONTIME+INTIME;
+else ONTIME=ONTIME-INTIME; 
+}
+if (ONTIME < 0)ONTIME=0;
+if (ONTIME > ETCICLO)ONTIME = ETCICLO;
+FLRAFF=0x00;
+}
+if(TEMP > limsup){
+ONTIME = ETCICLO;
+SUM=0;
+
+[PAG 1557]
+SISTEMI
+XV-73
+Da un esame sommario del programma riportato, si evidenzia la presenza di un regolatore 
+di tipo Proporzionale Integrativo; essendo un controllo con uscita digitale viene calcolato 
+l’intervallo di tempo, frazione di ETCICLO (Tempo di ciclo), durante il quale rimarrà attivo 
+il comando di riscaldamento o quello di raffreddamento.
+Questi ultimi individuati tramite il valore contenuto nella memoria FLRAFF. La banda 
+di intervento del regolatore vale EBANDA e consente di definire i limiti superiore e inferiore 
+entro i quali agirà sia l’azione proporzionale, che quella integrale del regolatore.
+La variabile SUM rappresenta il valore dell’integrale dell’errore: viene inizializzata al 
+valore nullo quando il controllo agisce esternamente ai limiti di temperatura, e viene limitata 
+in ampiezza per non eccedere sul valore di uscita. ETINT rappresenta la costante integrativa, 
+DTEMP rappresenta l’errore all’istante K-esimo.
+ Il risultato dell’azione proporzionale è disponibile sulla variabile indicata come 
+ONTIME, nella quale insiste, se all’interno della banda di regolazione definita da limsup 
+(limite superiore della temperatura) e liminf (limite inferiore della temperatura), anche il 
+risultato dell’azione integrale calcolata ad ogni ciclo nella variabile INTIME.
+Come si nota, il programma, risulta particolarmente leggibile e comprensibile, e con-
+sente, anche a distanza di tempo, o anche se eseguito da altri programmatori, di apportare 
+eventuali necessarie modifiche.
+BIBLIOGRAFIA
+BUFALINO D. - FRATANGELO P. - LEPANTO G., Corso di sistemi, automazione e orga-
+nizzazione della produzione, Hoepli, Milano, 2000.
+CARIOLARO G., Segnali Determinati, Patron, Padova, 1977.
+Tab. XV.7.5  Segue
+FINTE=0;
+FLRAFF = 0x55;/* Raffreddamento */
+OUT &=0xFE;
+OUT |=0x02;/* Attivazione raffreddamento e disattivazione riscaldamento */
+return;
+}
+if(TEMP <=limsup && TEMP > SETP1){
+a =TEMP;
+ONTIME = ((((a-SETP1)*100)/(limsup-SETP1))*ETCICLO)/100;
+if (FINTE == 0x55){
+DTEMP=MTEMP-SETP1;
+SUM=SUM+DTEMP;
+if (SUM > 769)SUM=769;
+if (SUM < -769)SUM=-769;
+if (SUM < 0){
+SUM= iabs (SUM);
+SEGNO=0x0;
+}
+else SEGNO=0x55;
+A=ETINT*SUM;
+DUTYC = (A*EKOSTI)/60000;
+INTIME = (ETCICLO*DUTYC)/127;
+if (SEGNO == 0x55)ONTIME=ONTIME+INTIME;
+else ONTIME=ONTIME-INTIME; 
+}
+if(ONTIME < 0)ONTIME=0;
+if (ONTIME > ETCICLO)ONTIME = ETCICLO;
+FLRAFF=0x55;
+}
+}
+
+[PAG 1558]
+XV-74
+SISTEMI
+DE SANTIS A. - CACCIAGLIA M. - SAGGESE C., Corso di Sistemi, Calderini, Bologna, 
+2000.
+DI STEFANO - STUBBERUD - WILLIAMS, Regolazione Automatica, Etas, Milano, 1974.
+DONELLI L. - SGORBANI F., Sistemi Automazione e Laboratorio, Jackson, Milano, 
+1994.
+FAGARAZZI R. - MIALICH R. - ROSSI G., Sistemi Automatici, Calderini, Bologna, 1999.
+LEPSCHY A. - RUBERTI A., Controlli Automatici, Sidera, Roma, 1979.
+MURRAY R. - SPIEGEL, Trasformate di Laplace, Etas, Milano, 1977.
+NALESSO G., Corso di metodi matematici per l’ingegnere, 1978.
+ORTOLANI G. - VENTURI E., Automazione, Hoepli, Milano, 1997.
+ORTOLANI G. - VENTURI E., PLC Telemecanique TSX 17, applicazioni ed esercitazioni, 
+Hoepli, Milano, 1997.
+PARIGI V., Sistemi Automatici, Paravia, Torino, 1993.
+TELEMECANIQUE, Manuale d’uso dei PLC TSX 17, Telemecanique, Torino, 1991.
+RIVISTE: Control Engineering Europe, Elettronica Oggi, Automazione, EDN Europe, 
+Automazione e Strumentazione, anni dal 1980 a 2002.
+
+[PAG 1559]
+Sezione XVI
+Tecnologie BUS
+INDICE
+pag.
+1    INTRODUZIONE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+2    CARATTERISTICHE DELLA TECNOLOGIA BUS  . . . . . . . . . . . . . . . . . . . .
+4
+2.1    Come funziona  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+2.2    Vantaggi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+2.3    Considerazioni ambientali ed economiche  . . . . . . . . . . . . . . . . . . . . . . . .
+8
+2.3.1    La domotica al servizio dei disabili e della casa sana  . . . . . . . . . .
+8
+2.3.2    Consumo e risparmio energetico  . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+2.3.3    Convenienza economica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+2.4    Applicazione dei sistemi bus . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+2.4.1    Utenti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+2.4.2    Settori tecnologici di applicazione . . . . . . . . . . . . . . . . . . . . . . . . .
+ 13
+3    SISTEMI BUS A LIVELLO MONDIALE: STANDARD E MERCATO  . . . . .
+18
+4    MERCATO E STANDARD EUROPEO DEL BUS . . . . . . . . . . . . . . . . . . . . . .
+ 20
+4.1    Il sistema BatiBUS. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+4.1.1    Apparecchi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 21
+4.1.2    Topologia . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 21
+4.1.3    Tecnica trasmissiva. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 21
+4.1.4    Indirizzamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 22
+4.2    Il sistema instabus EIB  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+4.2.1    Apparecchi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+4.2.2    Software di gestione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+4.2.3    Visualizzazione. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 24
+4.2.4    Instabus tp (twisted pair)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+4.2.5    Instabus pl (power line) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 26
+4.2.6    Instabus rf (radio frequency)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+27
+4.3    Il sistema HES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+27
+4.3.1    Apparecchi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 27
+4.3.2    Topologia . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 27
+4.3.3    Tecnica trasmissiva. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 27
+4.3.4    Indirizzamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+27
+4.4    Sistemi bus proprietari (My Home BTicino) . . . . . . . . . . . . . . . . . . . . . . .
+27
+4.4.1    Sicurezza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+28
+4.4.2    Gestione energia  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+4.4.3    Comfort . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+4.4.4    Comunicazione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+40
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+41
+
+[PAG 1560]
+XVI-2
+TECNOLOGIE BUS
+1  INTRODUZIONE
+Nell’impiantistica civile il primo approccio delle tecnologie bus si ha negli anni ’80; 
+l’obiettivo dichiarato è quello di soddisfare le esigenze di comfort, sicurezza e razionaliz-
+zazione delle risorse energetiche.
+Tecnologia bus in quattro direzioni:
+–  illuminazione;
+–  elettrotecnica;
+–  condizionamento;
+–  domotica per home e building automation.
+ 
+Un impianto elettrico realizzato con tecnologia bus è caratterizzato da:
+Linea di potenza. È la linea che alimenta gli apparecchi utilizzatori; è costituita dai tre 
+cavi della rete elettrica di alimentazione: fase, neutro e terra.
+Linea di comando e controllo (bus). La linea bus, può essere costituita da: un cavo 
+(doppino telefonico, coassiale o fibra ottica); la rete elettrica stessa, sulla quale convo-
+gliare un’onda a 110 o a 132 kHz; l'etere, attraverso il quale trasmettere una portante 
+modulata a radio frequenza (868 MHz) o all’infrarosso.
+Il significato di bus è esattamente quello dell'accezione corrente: autobus. La linea bus 
+non trasporta però delle persone, ma dei dati: è in sostanza un mezzo di comunicazione. 
+Tale tecnologia viene importata dall’ambito industriale e il percorso seguito è simile a 
+quello dei computer: in principio furono i sistemi di tipo centralizzato a farla da padroni, 
+per poi passare a sistemi dove, mediante l’impiego di microprocessori, ogni componente 
+del sistema viene dotato di “intelligenza” propria. Ogni apparecchiatura, anche la più 
+semplice come l’interruttore, è in grado di rilevare i segnali provenienti dal bus, gestire le 
+informazioni da esso inviate e quindi comandare il rispettivo attuatore.
+Fieldbus è il termine coniato per codificare questa tecnologia: fieldbus è il termine 
+che descrive una rete di comunicazione a bus di tipo seriale, multidrop, bidirezionale, 
+digitale, che consente di connettere dispositivi di vario genere (sensori, attuatori e con-
+trolli).
+I sistemi a bus (fieldbus) disponibili sul mercato si suddividono in:
+1) Bus proprietari. Questo genere di bus consente di collegare apparecchiature di un solo 
+produttore. Il sistema di comunicazione viene sviluppato dal produttore stesso ed è 
+chiuso, non accessibile ad altre apparecchiature di altri fornitori di materiale elettrico. È 
+tipicamente un sistema molto intuitivo, facile da usare anche da installatori che non hanno 
+competenze di tipo informatico.
+2) Bus multivendor. Questa tecnologia utilizza apparecchiature di produttori diversi che 
+impiegano lo stesso supporto per la comunicazione. Saranno quindi maggiori le potenzia-
+lità installative in quanto saranno a disposizione più prodotti di tipo diverso.
+3) Bus standardizzati. Il bus aperto viene adottato da più produttori che convergono in 
+una associazione di riferimento; tale associazione stabilisce le caratteristiche comuni che 
+soddisfano alla comunicazione tra i prodotti delle varie case costruttrici. Per questo tipo di 
+installazioni è richiesta una competenza specialistica inerente le procedure di programma-
+zione e di indirizzamento dei vari componenti del sistema. A livello europeo lo standard 
+di bus di campo ratificato di rilevanza internazionale è il EN 50170. Tale protocollo com-
+prende gli standard fieldbus europei più diffusi: Profibus, WorldFip e Pnet.
+4) LonWorks. Questo tipo di bus è molto impiegato nel building automation. Ogni appa-
+recchiatura è in grado di colloquiare con le altre senza l’impiego di un master che gestisca 
+la comunicazione. Il cablaggio avviene utilizzando le linee elettriche a corrente alternata 
+di alimentazione già esistenti: le apparecchiature (sensori, attuatori, controllori del
+
+[PAG 1561]
+TECNOLOGIE BUS
+XVI-3
+sistema) possono essere connesse alla rete di alimentazione senza bisogno di altri cavi di 
+cablaggio, aumentando in tal modo la versatilità e la flessibilità delle installazioni. La tec-
+nologia onde convogliate consiste nel sovrapporre alla tensione di alimentazione 230 V 
+50 Hz un segnale ad alta frequenza.
+5) Sistema ad onde radio. È questa la tipologia che impiega l’etere come mezzo trasmis-
+sivo; i due componenti sono il comando e l’attuatore, che possono essere installati ad una 
+certa distanza tra loro (dell’ordine di alcune centinaia di metri) e comunicano in Modula-
+zione di frequenza o di ampiezza ad una determinata frequenza (per esempio 868 MHz nel 
+My Home Bticino). L’apparecchiatura di un sistema di allarme che impiega tecnologia ad 
+onde radio in modulazione di frequenza, potrà anche dialogare, tramite un’interfaccia bus-
+ricevitore radio e trasmettere il segnale sul doppino telefonico e quindi al sistema bus.
+Le diverse soluzioni non sono alternative ma molto spesso sono integrate tra loro e 
+vengono impiegate nei diversi livelli della stessa automazione, sia nell’home che nel buil-
+ding automation. In particolare le tecnologie bus che utilizzano il doppino come mezzo 
+trasmissivo vengono impiegate in edifici nuovi o in fase di ristrutturazione, con esigenze 
+di automazione particolarmente elevate, dove si vogliono sfruttare tutte le potenzialità di 
+un impianto domotico.
+I sistemi a onde convogliate o via etere costituiscono l’alternativa nel momento in cui 
+non si voglia agire sui cablaggi esistenti; è il caso per esempio di edifici sottoposti a vin-
+coli da parte della Sovrintendenza ai beni ambientali, dove non è possibile intervenire 
+sulle infrastrutture.
+A livello europeo sono impiegati tre differenti supporti fisici:
+–  TP0 (Twisted Pair 0): Doppino telefonico di classe 0 impiegato nello standard BatiBus.
+–  TP1 (Twisted Pair 1): Doppino di classe 1 utilizzato nello standard EIB.
+–  PL132 (Power Line 132): sistema ad onde convogliate a 132 kHz impiegato dallo stan-
+dard EHS.
+La norma EN 50065-1 (1991) “Signalling on low-voltage electrical installations in 
+the frequency range 3  148,5 kHz” definisce i requisiti principali, le frequenze e i livelli 
+dei segnali ammessi per le trasmissioni; vengono definite le seguenti bande di frequenza:
+–  3  95 kHz ad uso dei distributori di energia elettrica (per esempio ENEL per la tele-
+lettura dei nuovi contatori elettronici domestici),
+–  95  148,5 kHz ad uso interno delle abitazioni. La banda è suddivisa in 3 sottobande 
+95  125 kHz, 125  140 kHz, 140  148,5 kHz.
+Nel 1987 viene costituito il Comitato Tecnico 205 “Home and Building Electronic 
+Systems, HBES”. Il CENELEC (European Committee for Electrotechnical Standardiza-
+tion) incarica tale suo comitato di preparare le norme europee che regolano la realizza-
+zione dei sistemi bus nella casa e negli edifici. Il suo corrispondente in Italia è il Comitato 
+Tecnico 205 del CEI (Comitato Elettrotecnico Italiano), “Sistemi bus per gli edifici”, che 
+partecipa direttamente ai lavori del CENELEC e trasferisce le Norme Europee (EN) in 
+norme nazionali. Le norme EN 50090 prodotte dal Comitato Tecnico 205 del CENELEC 
+hanno lo scopo di standardizzare tutti gli aspetti riguardanti i sistemi elettronici per la 
+casa e l’edificio (HBES) in relazione alla tecnologia dell’informazione, integrando tutte le 
+applicazioni di controllo automatico e gestione delle civili abitazioni e degli edifici, com-
+prese le comunicazioni con differenti mezzi di trasmissione e le interfacce con le reti pub-
+bliche; devono inoltre garantire gli aspetti riguardanti la compatibilità elettromagnetica e 
+la sicurezza elettrica e funzionale.
+Le principali norme del Comitato Tecnico 205 del CEI sono: 
+–  CEI EN 50090-3-2 - CEI 205-1 del 2004 - Sistemi elettronici per la casa e l’edificio
+(HBES) Parte 3-2: Aspetti dell’applicazione - Processo utente per HBES di Classe 1.
+
+[PAG 1562]
+XVI-4
+TECNOLOGIE BUS
+–  CEI 205-2 - CEI 205-2 - del 2005 - Guida ai sistemi bus su doppino per l’automazione 
+nella casa e negli edifici, secondo le Norme CEI EN 50090.
+–  CEI EN 50090-5-1 - CEI 205-3 - del 2005 - Sistemi elettronici per la casa e l’edificio 
+(HBES) Parte 5-1: Mezzi di trasmissione e livelli dipendenti dagli stessi - Trasmissione di 
+segnali su rete elettrica a bassa tensione per HBES classe 1.
+–  CEI EN 50090-4-2 - CEI 205-4 - del 2005 - Sistemi elettronici per la casa e l’edificio 
+(HBES) Parte 4-2: Livelli indipendenti dal mezzo - Livello di trasporto, livello di rete e 
+parti generali del livello di collegamento dati per HBES di Classe 1.
+–  CEI EN 50090-7-1 - CEI 205-5 - del 2005 - Sistemi elettronici per la casa e l’edificio 
+(HBES) Parte 7-1: Gestione del sistema - Procedure di gestione.
+–  CEI EN 50090-9-1 - CEI 205-6 - del 2005 - Sistemi elettronici per la casa e l’edificio 
+(HBES) Parte 9-1: prescrizioni di installazione - Cablaggio generico per sistemi HBES di 
+classe 1 su coppia ritorta.
+–  CEI EN 50090-2-3 - CEI 205-7 - del 2006 - Sistemi elettronici per la casa e l’edificio 
+(HBES) Parte 2-3: Panoramica del sistema - Requisiti generali di sicurezza funzionale per 
+prodotti destinati ad un sistema HBES.
+–  CEI EN 50090-5-2 - CEI 205-8 - del 2005 - Sistemi elettronici per la casa e l’edificio 
+(HBES) Parte 5-2: Mezzi e livelli dipendenti dai mezzi - Reti basate su HBES di Classe 1, 
+coppia ritorta.
+–  CEI EN 50090-4-1 - CEI 205-9 - del 2006 - Sistemi elettronici per la casa e l’edificio 
+(HBES) Parte 4-1: Livelli indipendenti dal mezzo - Livello applicazione per HBES di 
+Classe 1.
+–  CEI CWA 50487 - CEI 205-10 - del 2006 - SmartHouse Code of Practice.
+–  CEI EN 50090-5-3 - CEI 205-11 - del 2007 - Sistemi elettronici per la casa e l’edificio 
+(HBES) Parte 5-3: Mezzi e livelli dipendenti dai mezzi - Radio frequenza. 
+–  CEI EN 50090-4-3 - CEI 205-12 - del 2008 - Sistemi elettronici per la casa e l’edificio 
+(HBES) Parte 4-3: Livelli indipendenti dal mezzo - Comunicazione basata sul protocollo 
+IP (EN 13321-2:2006).
+–  CEI CLC/TR 50090-9-2 - CEI 205-13 - del 2009 - Sistemi elettronici per la casa e 
+l’edificio (HBES) Parte 9-2: Prescrizioni di installazione - Ispezione e prove di installa-
+zioni HBES.
+Inoltre, si deve considerare la norma: 
+–  CEI EN 50428 - CEI 23-86 - del 2009 - Apparecchi di comando non automatici per 
+installazione elettrica fissa per uso domestico e similare - Norma Collaterale - Apparecchi 
+di comando non automatici e relativi accessori per uso in sistemi elettronici per la casa e 
+l’edificio (HBES).
+2  CARATTERISTICHE DELLA TECNOLOGIA BUS
+Le caratteristiche di tale tecnologia innovativa si possono riassumere nel seguente modo.
+Le informazioni che servono ad azionare il sistema viaggiano su un cavo (doppino 
+schermato di tipo telefonico) interconnesso tra tutte le apparecchiature del sistema, dove, 
+grazie a delle particolari codificazioni, solo le apparecchiature interessate ricevono e tra-
+smettono messaggi che producono azioni o controlli sul sistema stesso. Il cablaggio si 
+riduce al solo doppino intrecciato, mentre la logica di gestione è in qualsiasi momento 
+riprogrammabile agendo solamente sugli indirizzi e le correlazioni delle apparecchiature. 
+Le modificazioni degli ambienti e delle destinazioni d’uso, degli edifici di abitazione ma 
+soprattutto del terziario, sono supportate dalla grande versatilità di questa tecnologia 
+impiantistica. Lo sforzo comune di molti produttori di apparecchiature elettriche sta favo-
+rendo uno standard di protocollo per la comunicazione, che consente l’impiego di compo-
+nenti di fornitori diversi.
+
+[PAG 1563]
+TECNOLOGIE BUS
+XVI-5
+2.1  Come funziona
+La caratteristica saliente della tecnologia bus è la tipologia del cablaggio.
+Negli impianti elettrici tradizionali il cablaggio è di tipo filato e caratterizzato da un 
+sistema punto-punto, dove ogni apparecchiatura di comando è fisicamente collegata al 
+proprio attuatore (Fig. XVI.2.1).
+Nella tecnologia bus si ha un cablaggio suddiviso su due linee (Fig. XVI.2.2):
+–  Una linea di potenza, 
+costituita da due conduttori 
+di alimentazione (alla ten-
+sione di rete 230 V), più il 
+conduttore di protezione, 
+che vanno a collegarsi a tutti 
+gli attuatori dell’impianto.
+–  Una linea alimentata in 
+bassissima tensione di sicu-
+rezza (SELV 20/30V) per i 
+segnali, costituita da un 
+doppino intrecciato, che si 
+collega a tutte le apparec-
+chiature; le informazioni 
+transitano su questa linea in 
+modo da far comunicare tra 
+loro apparecchiature di co-
+Fig. XVI.2.1   Impianto tradizionale.
+mando e attuatori, tramite una logica di gestione (centralina o microprocessore).
+ In sintesi il funzionamento di un sistema a bus è il seguente:
+–  Un sensore, un interrut-
+tore o un pulsante inviano una 
+informazione di comando sul 
+bus che interconnette tutte le 
+apparecchiature facenti parte 
+dell’impianto (telegramma).
+–  Il messaggio viene inter-
+cettato da un dispositivo che 
+si occupa di gestire il traffico 
+delle informazioni: questo 
+dispositivo elettronico, deno-
+minato BCU (Bus Coupling 
+Unit), ha il compito infatti di 
+tradurre l’informazione invia-
+ta dal sensore e di indirizzarla 
+all’attuatore destinatario (tra-
+mite il bus). 
+Fig. XVI.2.2   Impianto con sistema bus.
+–  Il messaggio viene recepito dall’attuatore interessato che riceverà l’ordine di esecu-
+zione dell’azione che coordina.
+La trasformazione del segnale di comando inviata dall’ingresso in un ordine per 
+l’attuatore, che viene effettuato dalla (BCU) è a tutti gli effetti la conversione di un 
+segnale analogico in uno digitale. La BCU opera infatti come una apparecchiatura infor-
+matica poiché è composta da:
+Sensore di luminosità
+Infrarosso
+Illuminazione
+Tastiera di
+comando
+Quadro di
+comando
+Conduttore di
+alimentazione
+Linea bus (doppino)
+
+[PAG 1564]
+XVI-6
+TECNOLOGIE BUS
+–  un microprocessore che controlla e gestisce lo scambio delle informazioni,
+–  una memoria (ROM) che contiene il sistema operativo,
+–  una EEPROM per memorizzare il programma da eseguire,
+–  delle memorie volatili (RAM) per ospitare i dati dei telegrammi scambiati tra le varie 
+apparecchiature, che vengono trasferiti tramite il bus.
+Il dispositivo di gestione del traffico può essere installato a bordo di ogni apparecchia-
+tura, oppure far parte di una vera e propria centralina, a seconda del tipo di sistema (bus 
+standardizzato o di tipo proprietario). 
+Preventivamente è stato stabilito un indirizzamento di tutti gli elementi che compon-
+gono il sistema; una volta definito tale indirizzamento, verrà stabilita una correlazione 
+logico-funzionale tra sensori e attuatori e la logica di gestione.
+La velocità di trasferimento delle informazioni (telegrammi) varia a seconda del 
+sistema che si prende in considerazione ed è misurata in bps (bit per secondo).
+Il protocollo di comunicazione, ovvero la modalità con cui le informazioni vengono 
+tradotte da un dispositivo all’altro, varia a seconda della ditta costruttrice o del consorzio 
+a cui la ditta è associata.
+La programmazione delle apparecchiature avviene tramite dei mattoncini colorati (cava-
+lieri situati sul dorso dell’apparecchiatura) o con software dedicato con l’ausilio di un PC.
+Fig. XVI.2.3   Topologia del sistema bus.
+Ogni componente dovrà rispondere a tre 
+domande principali:
+–  come si chiama ossia è necessario fornire al 
+dispositivo un indirizzo fisico (assegnazione di un 
+nome) unico in tutto il sistema;
+–  cosa deve fare e come ossia quale funzione deve 
+realizzare e secondo quali modalità (per esempio ad 
+un pulsante bisogna dire che deve accendere una 
+luce e che si deve comportare come un pulsante, o 
+come un invertitore, o come un deviatore, a seconda 
+dell’occorrenza);
+–  con chi lo deve fare cioè con quale compo-
+nente deve realizzare la funzione specifica (il pul-
+sante dell’esempio precedente deve sapere che per 
+accendere una determinata fonte luminosa deve 
+attivare un determinato relè di uscita).
+A seconda della tipologia si avranno gestioni 
+più o meno sofisticate con eventuali gestioni sof-
+tware tramite PC o direttamente su cablaggio 
+esclusivamente hardware.
+Dal punto di vista topografico (Fig. XVI.2.3) 
+il sistema è tipicamente costituito da campi che 
+sono a loro volta suddivisi in linee. Su ogni linea possono essere connessi un determinato 
+numero di dispositivi ed a ogni campo possono essere collegate un certo numero di linee. 
+Le linee e i campi sono collegati fra loro mediante dei dispositivi denominati accoppiatori 
+(di linea o di campo) che gestiscono il transito dei telegrammi provenienti o diretti da/ad 
+altri linee/campi.
+2.2  Vantaggi
+Il vantaggi che questa tipologia di impianto produce rispetto all’impiantistica tradizio-
+nale sono da verificarsi rispetto ai seguenti parametri:
+
+[PAG 1565]
+TECNOLOGIE BUS
+XVI-7
+Affidabilità
+Intesa come garanzia di buon funzionamento del sistema. Vengono previste funzioni 
+di autodiagnosi, e di autoistruzione per possibili interventi automatici in caso di eventuali 
+guasti; a tale riguardo si prevedono soluzioni o percorsi funzionali alternativi o ridon-
+danti, per aumentare il grado di affidabilità.
+Essendo il bus un sistema chiuso (doppino dedicato) risulta oggi il sistema più affida-
+bile, per quanto concerne il trasferimento dei dati, essendo immune dai disturbi che sono 
+tipici dei sistemi ad onde radio e ad onde convogliate.
+Amichevolezza
+Sensazione positiva nei confronti dell’impianto; l’utente finale deve percepire un 
+senso di facilità nell’uso dell’impianto, con la consapevolezza di poterlo gestire agevol-
+mente senza dover ricorrere alla consultazione dei manuali di istruzione.
+Una volta installato, il sistema è molto semplice da usare; vengono risolte, mediante 
+automazioni sollecitate dal semplice comando di un pulsante o di un telecomando, azioni 
+semplici (apertura e chiusura di tapparelle o tende da sole) e azioni complesse (scenari di 
+luce particolari, gestione di carichi ecc.) con la medesima disinvoltura.
+Facilità d’uso
+Semplicità di comprensione del funzionamento, riduzione del numero di comandi, 
+separazione tra funzioni d’uso comune e regolazioni iniziali. Risposta, chiara ed evidente, 
+ai diversi comandi/regolazioni effettuati dall’utente.
+Sia la realizzazione da parte dell’installatore, per quanto attiene al cablaggio dei con-
+duttori (notevolmente ridotto), sia l’eventuale modificazione del sistema, possono essere 
+effettuati senza particolari controindicazioni.
+L’utente finale non trova alcuna difficoltà nell’impiego dei vari comandi che non sia 
+quella di associarli ai rispettivi attuatori che vuole gestire.
+Sicurezza
+Sicurezza intrinseca dell’impianto, anche con funzioni autodiagnostiche, che assicu-
+rino il corretto funzionamento e l’integrità dell’impianto stesso; sicurezza estrinseca nei 
+confronti dell’utente, onde evitare qualsiasi situazione pericolosa che provochi danni alle 
+persone e alle cose. Tipicamente la gestione dei segnali avviene tramite un microproces-
+sore che invia e riceve segnali tramite il bus.
+Tutta una serie di funzioni autodiagnostiche e di controllo della gestione vengono 
+determinate dalla centrale a microprocessore senza alcun intervento da parte dell’utente. 
+Tali funzioni possono altresì essere remotate e gestite tramite supervisori o sinottici che 
+evidenziano il corretto funzionamento; al bisogno se richiesto è possibile l’eventuale 
+intervento tramite sistemi di controllo.
+Versatilità
+ Il cablaggio non viene fatto in funzione dei comandi e degli attuatori che vengono 
+installati, ma è sufficiente far passare il bus attraverso tutti i componenti e poi eventual-
+mente cambiare le soluzioni impiantistiche: il comando di una lampada può essere trasfe-
+rito in un’altra stanza soltanto cambiando la configurazione dell’apparecchiatura senza 
+aggiungere o modificare il collegamento dei conduttori.
+Comfort e risparmio
+Con un sistema bus l’abitat diviene più confortevole per chi lo vive e gradevole dal 
+punto di vista estetico: tramite telecomandi o automazioni preimpostate è possibile con-
+trollare l’intero edificio domestico.
+La gestione programmata dei carichi è volta al raggiungimento di un effettivo rispar-
+mio sul consumo di energia elettrica.
