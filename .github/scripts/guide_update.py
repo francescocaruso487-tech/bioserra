@@ -95,7 +95,11 @@ def trova_testi_per_fase(fase_info, pdf_knowledge, testi_disponibili, max_testi=
         tl = (a.get('titolo','') + ' ' + a.get('sommario','') + ' ' +
               ' '.join(a.get('tecniche_chiave',[])) + ' ' +
               ' '.join(a.get('tag',[]))).lower()
-        return sum(2 if kw in tl else 0 for kw in keywords) + len(a.get('connessioni',[]))*0.1
+        base = sum(2 if kw in tl else 0 for kw in keywords) + len(a.get('connessioni',[]))*0.1
+        # Boost forte per testi fusi pertinenti
+        if a.get('fonte_sito') == 'fuso' and base > 0:
+            base += 10
+        return base
 
     rilevanti = sorted(
         [a for a in analisi if score(a) > 0],
@@ -114,12 +118,17 @@ def trova_testi_per_fase(fase_info, pdf_knowledge, testi_disponibili, max_testi=
             })
             continue
         try:
-            # Prova prima in data/testi/, poi in data/testi/web/
+            # Cerca in ordine: fusi > data/testi/ > web/
             raw = ''
             try:
-                raw = gh_raw(f'data/testi/{safe_id}.txt')
+                raw = gh_raw(f'data/testi/fusi/{safe_id}.txt')
             except:
                 pass
+            if not raw:
+                try:
+                    raw = gh_raw(f'data/testi/{safe_id}.txt')
+                except:
+                    pass
             if not raw:
                 for sito_web in ['zamnesia', 'rqs']:
                     try:
@@ -229,7 +238,14 @@ def main():
                     testi_disp.add(f['name'].replace('.txt',''))
         except:
             pass
-    print(f'Testi disponibili (PDF+web): {len(testi_disp)}')
+    # Testi fusi per categoria
+    try:
+        for f in gh_list('data/testi/fusi'):
+            if f.get('type') == 'file' and f['name'].endswith('.txt'):
+                testi_disp.add(f['name'].replace('.txt',''))
+    except:
+        pass
+    print(f'Testi disponibili (PDF+web+fusi): {len(testi_disp)}')
 
     # Carica guide esistenti
     try:
@@ -284,4 +300,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
