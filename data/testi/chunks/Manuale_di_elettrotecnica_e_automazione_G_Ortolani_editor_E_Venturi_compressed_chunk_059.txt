@@ -1,0 +1,823 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 59/116 ===
+Chars: 45,000 | Offset: 2,562,335
+
+
+
+[PAG 1246]
+XIII-16
+SENSORI E TRASDUTTORI
+tipi con foro cieco e uscita con cavo, con attacchi a testina sferica, oppure aventi la parte 
+mobile meccanicamente guidata nel movimento e con una molla di richiamo.
+Le caratteristiche tecniche, generalmente riscontrate in questi trasduttori, si possono 
+elencare come segue:
+–  alimentazione 24 Vcc  3%,
+–  corrente assorbita 50 mA,
+–  tensione di uscita 0 ÷ 5 Vcc,
+–  resistenza di uscita minima 100 k
+–  ondulazione residua sull’uscita 20 mVeff,
+–  errore di linearità per la classe 4 (standard) < 1% Fondo Scala, per la classe 3 
+(opzionale) < 0,5% Fondo Scala, per la classe 2 (opzionale) < 0,3% Fondo Scala,
+–  isteresi 0,01% Fondo scala,
+–  temperatura di funzionamento 0 ÷ 60 °C e variazione con la temperatura 0,05% /°C,
+–  massima umidità relativa 99%,
+–  urti 200 g/2 ms,
+–  vibrazioni 2 ÷ 2000 Hz/100 g.
+2.4  Trasduttori synchro
+Un trasduttore synchro è essenzialmente un trasduttore di tipo elettromagnetico per la 
+misura della posizione angolare. Esso si può considerare un motore che funziona sul prin-
+cipio di un trasformatore rotante perché è in grado di mettere a disposizione in uscita dei 
+segnali di tipo analogico (valori di tensione) che variano e dipendono dalla posizione rag-
+giunta dal rotore rispetto al sistema fisso statorico. Questo particolare trasformatore, fun-
+zionante sulla variazione del flusso magnetico tra avvolgimento primario e secondario, è 
+nei fatti costituito da uno statore, avente tre avvolgimenti sfasati l’uno dall’altro di 120 
+gradi e collegati a stella, e da un rotore, composto da un unico avvolgimento (Fig. 
+XIII.2.14).
+Fig. XIII.2.14  Parti principali di un trasduttore synchro.
+Il suo funzionamento si può descrivere nel modo che segue:
+–  si applica al rotore una tensione alternata sinusoidale di frequenza costante;
+–  si induce in questo modo sugli avvolgimenti statorici una tensione sinusoidale che 
+risulta essere la stessa per tutti e tre gli avvolgimenti;
+–  essendo il rotore collegato con l'organo rotante della macchina, quando questo si 
+muove anche il rotore del synchro si sposta dello stesso angolo;
+–  la differenza di posizione si traduce in un diverso accoppiamento magnetico tra 
+l'avvolgimento rotorico e gli avvolgimenti statorici del synchro;
+–  a questo nuovo accoppiamento magnetico risulta associata una variazione di 
+ampiezza delle tensioni statoriche in uscita;
+primo
+avvolgimento
+statorico
+secondo
+avvolgimento
+statorico
+terzo
+avvolgimento
+statorico
+
+avvolgimento
+rotorico
+
+[PAG 1247]
+SENSORI E TRASDUTTORI
+XIII-17
+–  controllando e misurando queste variazioni di tensione in uscita è possibile risalire 
+all'angolo di spostamento, o nuova posizione angolare, che la macchina ha assunto.
+Di solito i synchro vengono utilizzati in coppia e con essi è possibile avere due diversi 
+tipi di funzionamento.
+Il primo tipo di funzionamento consiste nell'alimentare i due rotori insieme e collegare 
+le due terne di avvolgimenti statorici in parallelo. In questo modo si effettua quello che 
+viene definito un albero elettrico, cioè con i synchro in coppia quando il primo albero si 
+mette a ruotare, il secondo lo segue con la stessa rotazione.
+Il secondo funzionamento vede il rotore del primo synchro collegato alla rete di ali-
+mentazione e gli avvolgimenti statorici dei due collegati sempre in parallelo (Fig. 
+XIII.2.15). In questa configurazione si riscontra che, quando il rotore del primo synchro 
+gira, ai capi del rotore del secondo synchro si genera una tensione avente la stessa fre-
+quenza di quella di alimentazione e variabile in relazione allo spostamento angolare tra i 
+due alberi. In particolare la tensione indotta assume valore massimo quando i due alberi 
+presentano lo stesso angolo, e valore nullo quando tra i due c'è uno sfasamento di 90 
+gradi.
+Fig. XIII.2.15  Due trasduttori synchro collegati in coppia.
+Il trasduttore synchro generalmente viene impiegato nei servosistemi, laddove risulta 
+utile rilevare una specifica misura angolare oppure dove è importante, per un accurato 
+lavoro, avere dei segnali di feedback (cioè di ritorno verso il sistema pilota) per control-
+lare la differenza angolare tra due alberi motore.
+2.5  Trasduttori resolver
+Un resolver è anch'esso principalmente un trasformatore rotante. Il suo principio di 
+funzionamento si basa sulla variazione dell’accoppiamento (di tipo trasformatorico) tra 
+due sistemi di avvolgimenti elettrici ruotanti l’uno rispetto all’altro.
+Fig. XIII.2.16  Schema di funzionamento di un Resolver.
+alimentazione
+
+
+segnali in uscita
+Circuito generatore
+Circuito rivelatore
+Flusso concatenato
+con il Rivelatore
+Flusso impresso
+dal Generatore
+
+
+[PAG 1248]
+XIII-18
+SENSORI E TRASDUTTORI
+Sul primo sistema (il sistema Generatore) viene impressa una tensione sinusoidale 
+alternata che genera un flusso magnetico che, accoppiandosi con il circuito del secondo 
+sistema (il sistema Rivelatore), crea una tensione indotta dipendente dalla tensione 
+impressa sul primario e dalla posizione relativa  dei due sistemi (Fig. XIII.2.16).
+Il suo funzionamento può essere spiegato riducendo gli avvolgimenti a singole spire, 
+come nel modo sotto esposto.
+Si considerino due spire, denominate per semplicità A e B, e si alimenti la spira B con 
+una tensione alternata sinusoidale; in tale situazione si riscontra che, nella spira A, viene 
+generata (indotta) una tensione. Se poi si fa ruotare la spira B, si constata che la tensione 
+indotta raggiunge il suo valore massimo quando i piani, passanti per le due spire, sono 
+paralleli, mentre la stessa tensione ha valori minimi quando i due piani formano un angolo 
+retto.
+Anche la tensione indotta sulla spira A varia in modo sinusoidale con un rapporto 
+equivalente a
+(XIII.2.2)
+cioè dipendendo dal seno dell'angolo formato dalla variazione della posizione del piano, e 
+presenta una frequenza che corrisponde alla frequenza di rotazione della spira B. Se 
+adesso si introduce una terza spira C, avente il proprio piano a 90 gradi da quello della 
+spira A, quando la spira B ruota anche in essa si genera una tensione, ma il suo valore 
+varierà con il coseno dell'angolo , cioè con un rapporto equivalente a
+(XIII.2.3)
+Il passaggio alla realtà a questo punto è molto semplice. Si considerino che le spire A 
+e C siano gli avvolgimenti dello statore (aventi un angolo di sfasamento di 90° elettrici) e 
+la spira B sia l'avvolgimento rotorico del resolver (Fig. XIII.2.17): a ogni variazione ango-
+lare del rotore, corrisponderà una variazione dei campi magnetici i quali indurranno valori 
+di tensione diversificati sugli avvolgimenti statorici.
+Fig. XIII.2.17  Trasduttore resolver (misura di tipo induttivo).
+I valori di tensione, generati dai due avvolgimenti del resolver, generalmente vengono 
+convertiti da segnali analogici a segnali digitali per poter essere utilizzati nei sistemi digi-
+tali di posizionamento. Lo schema a blocchi (Fig. XIII.2.18) illustra la conversione di un 
+resolver in un apparato digitale.
+La principale caratteristica di questi sistemi è la loro capacità di emettere valori con 
+risoluzioni che superano i 65 536 conteggi per rivoluzione. Inoltre, in aggiunta all'infor-
+mazione di posizione, è possibile utilizzare questi trasduttori per ricavare importanti 
+informazioni riguardanti la velocità e la direzione.
+Quindi il resolver, assieme a un appropriato circuito di valutazione, rappresenta un 
+Ua
+Ubsen
+=
+Uc
+Ubcos
+=
+statore
+trasformatore
+rotore
+
+
+[PAG 1249]
+SENSORI E TRASDUTTORI
+XIII-19
+sistema di misura di tipo assoluto all'interno di ciascuna singola rivoluzione. L'applica-
+zione tipica del resolver la si riscontra nei controlli numerici.
+Fig. XIII.2.18  Conversione di un resolver in sistema digitale.
+Il resolver infine si può presentare sia nella versione con spazzole e contatti, sia in 
+quella senza spazzole e senza contatti. Nella prima configurazione la tensione induttiva (di 
+eccitazione) viene accoppiata all'avvolgimento rotante mediante anelli striscianti e spaz-
+zole. Questa soluzione però non si è dimostrata molto vantaggiosa, soprattutto quando il 
+resolver è combinato con un motore senza spazzole (Brushless). Nella seconda configura-
+zione, cioè quando il resolver non ha spazzole e contatti, esso presenta una tensione di 
+induzione accoppiata solo induttivamente con gli avvolgimenti rotorici (Fig. XIII.2.19). 
+Fig. XIII.2.19  Resolver senza spazzole.
+Questo fatto gli conferisce una vita molto più duratura, una manutenzione quasi 
+assente, una maggiore affidabilità e precisione e infine la possibilità di essere utilizzato in 
+situazioni ambientali più severe.
+2.6  Trasduttori inductosyn
+L'inductosyn è un trasduttore induttivo a uscita analogica che può essere visto come 
+un trasduttore resolver srotolato (linear resolver) per essere applicato nelle misure lineari. 
+Esso è composto da due parti principali, parallele tra loro e poste su supporti isolanti: la 
+resolver
+moltiplicatore
+di seno
+moltiplicatore
+di coseno
+contatore
+up - down
+uscita digitale (angolo dell’albero)
+oscillatore
+integratore
+comparatore
+di fase
+integratore
+segnale in corrente continua (velocità)
+statore
+statore
+(avvolgimento 1)
+(avvolgimento 2)
+rotore
+
+[PAG 1250]
+XIII-20
+SENSORI E TRASDUTTORI
+scala e il cursore.
+La scala dell'inductosyn è formata da un filamento a forma di greca, situata su un sup-
+porto isolante (similmente alle piste conduttrici di un circuito stampato) e può essere con-
+siderata come l'insieme delle spire di un avvolgimento (Fig. XIII.2.20).
+Fig. XIII.2.20  Scala di un trasduttore lineare inductosyn.
+Il cursore invece, funzionante come una slitta che si sposta idealmente sopra la scala, 
+riporta solo due piccoli avvolgimenti (Fig. XIII.2.21). Essi sono disposti in modo tale che 
+tra il primo e il secondo ci sia uno sfasamento di 1/4 del passo dell'avvolgimento della 
+scala (90 gradi elettrici).
+Fig. XIII.2.21  Cursore di un trasduttore lineare inductosyn.
+La scala (parte mobile) e il cursore (parte fissa) sono affacciati in modo tale che si rea-
+lizzi un ottimo concatenamento di flusso quando il cursore viene alimentato.
+Se gli avvolgimenti conformati a greche, sia della scala sia del cursore, si trovano col-
+locati esattamente di fronte, l'accoppiamento induttivo risulta essere al massimo; in questo 
+modo la corrente alternata che circola nell'avvolgimento della scala induce un massimo 
+segnale in corrente alternata negli avvolgimenti del cursore attraverso la frequenza por-
+tante. Se i conduttori del cursore invece sono situati esattamente tra gli spazi, che ci sono 
+tra i conduttori della scala, non viene indotto nessun segnale.
+Il cursore quindi possiede un avvolgimento addizionale, sempre a forma di greca, spo-
+stato di un quarto del periodo in modo tale che siano generati due segnali in uscita, aventi 
+uguale frequenza e ampiezza delle tensioni alternate in relazione al seno e al coseno 
+dell'angolo di fase, quando la scala è mossa.
+L'inductosyn può essere considerato un sistema di misura assoluto e ciclico. Esso 
+aveva trovato il massimo della accettazione agli inizi delle applicazioni e degli sviluppi 
+della tecnologia sui controlli numerici; attualmente viene sempre più sostituito dai sistemi 
+di misura fotoelettrici.
+2.7  Encoder ottici
+Encoder è un termine che significa trasduttore di posizione angolare. In stretta rela-
+zione con il significato del suo stesso nome, l'encoder si può definire un apparato elet-
+tromeccanico, azionato da un albero rotante, in grado di convertire la posizione angolare 
+del proprio asse rotante in un segnale elettrico analogico o digitale.
+La caratteristica di emettere segnali analogici o digitali è data dal fatto di non avere o 
+avere incorporata l'unità elettronica di elaborazione dei segnali.
+LINEAR INDUC
+
+[PAG 1251]
+SENSORI E TRASDUTTORI
+XIII-21
+L'encoder è capace di misurare spostamenti angolari, movimenti rettilinei o circolari, 
+velocità di rotazione e accelerazioni, quando è collegato a particolari circuiti elettronici e 
+presenta adeguate connessioni meccaniche.
+Questo trasduttore funziona sul principio della lettura fotoelettrica di specifici reticoli, 
+come già considerato nel paragrafo dedicato ai trasduttori a riga ottica. Un fascio di luce, 
+adeguatamente indirizzato, illumina due reticoli radiali (Fig. XIII.2.22) i quali si differen-
+ziano per essere l'uno fisso (diaframma) e l'altro mobile (disco).
+ 
+Fig. XIII.2.22  Principali componenti di un encoder ottico.
+La luce che riesce a oltrepassare i due reticoli colpisce e sensibilizza un gruppo di 
+fototransistori, posti subito dietro al diaframma, il quale la trasforma immediatamente in 
+segnale elettrico (impulsi di tensione).
+Le specifiche meccaniche ed elettriche, che normalmente accompagnano un encoder, 
+sono riassunte, e alcune di esse commentate, nei sottoindicati punti.
+Velocità massima di rotazione. La velocità massima di rotazione del trasduttore è con-
+dizionata dalla massima velocità di rotazione dal punto di vista meccanico, dalla massima 
+velocità di rotazione dal punto di vista elettrico e dalla minima distanza dei fronti dei due 
+segnali, o passo di misura (cioè dalla distanza che separa il passaggio a valore 1 del primo 
+segnale a onda quadra e il passaggio successivo, sempre a valore 1, del secondo segnale, 
+sfasato di 90 gradi elettrici dal primo). La massima velocità di rotazione dal punto di vista 
+meccanico la si riscontra nei valori tabellari, che caratterizzano ogni singolo apparecchio, 
+riportati nei cataloghi (per esempio si legge che un determinato encoder può raggiungere 
+la velocità massima di 6000 rpm). La massima velocità di rotazione dal punto di vista 
+elettrico invece risulta dipendere in misura diretta dalla massima frequenza di scansione 
+(oppure dalla massima frequenza di ingresso dell'elettronica di controllo, se quest'ultima è 
+esterna all'encoder) e in misura inversa dal numero di righe (o divisioni) del sistema.
+–  Coppia di avviamento riferita alla temperatura di 25 °C (per esempio si possono 
+riscontrare valori di coppia varianti dagli 8 ai 50 grammi per centimetro).
+–  Resistenza all'urto e resistenza alla vibrazione.
+–  Temperatura di funzionamento e temperatura di magazzinaggio.
+–  Massimo carico sull'albero, differenziato a seconda se è assiale oppure radiale.
+–  Precisione. La precisione degli encoder è legata essenzialmente agli errori direzio-
+nali della divisione, all'eccentricità di rotazione dei cuscinetti e all'errore di interpolazione 
+nella fase di elaborazione del segnale di misura.
+disco con
+il codice
+sorgente luminosa
+(LED)
+fase B
+fase Z
+fase A
+disco della fase
+(diaframma)
+elementi riceventi
+fotosensibili
+
+[PAG 1252]
+XIII-22
+SENSORI E TRASDUTTORI
+–  Grado di protezione. Il grado di protezione per gli encoder deve essere conforme 
+alle norme per proteggerli da polvere e spruzzi di acqua. Generalmente nei dati tecnici si 
+riscontrano gradi di protezione IP54, 64 e 65. Da osservare che la protezione deve essere 
+estesa anche all'avvitamento della carcassa, al cavo e all'entrata dell'albero.
+–  Peso.
+–  Sorgente luminosa. È l'elemento che genera un fascio di luce, indirizzandolo verso i 
+dischi graduati e i sensori. La sorgente luminosa è costituita da lampade in miniatura o da 
+LED fissi. Le lampade in miniatura si impiegano nei sistemi dove si registrano tempera-
+ture di esercizio particolarmente elevate. È molto diffuso l'impiego di LED all'arseniuro 
+di gallio.
+–  Sensori. Rappresentano gli elementi che ricevono la luce e che diventano conduttivi 
+a causa di essa, generando degli impulsi in uscita. Si possono impiegare fotodiodi, fotore-
+sistenze oppure, e sono questi ultimi a essere più frequentemente impiegati, fototransi-
+stori.
+–  Tensione di alimentazione e circuito elettronico in uscita. Si hanno a disposizione 
+gamme differenziate di tensioni di alimentazione (per esempio 5 V  5% oppure 8  24 
+V). Inoltre il tipo di circuito elettronico in uscita, a seconda se l'encoder è compatibile con 
+circuiti TTL e CMOS (l'uscita viene chiamata in tensione) oppure con circuiti a tensione 
+diversa da 5 V in corrente continua (chiamati a collettore aperto), si può differenziare in 
+vari modi (Figg. XIII.2.23, XIII.2.24 e XIII.2.25).
+Fig. XIII.2.23  Configurazioni del circuito elettronico in uscita di un encoder con circuito 
+elettronico standard e a collettore aperto.
+Fig. XIII.2.24  Configurazioni del circuito elettronico in uscita di un encoder con circuito 
+elettronico push-pull.
+–  Frequenza massima di scansione.
+–  Numero di passi. Il numero di passi di misura per giro è determinato dal numero di 
+linee di graduazione e dal fattore di valutazione del segnale utilizzato dall'unità elettro-
+nica.
+–  Il collegamento elettrico dell'encoder può essere effettuato tramite un cavo, uscente 
+dalla carcassa, oppure tramite un connettore, situato sulla carcassa. Nella prima soluzione 
+3,3 k
+ V (dc)
+0 V
+Out
+I max 10 mA
+Circuito elettronico standard
+Circuito elettronico a collettore aperto
+ V (dc)
+0 V
+Out
+I max 10 mA
+ V (dc)
+0 V
+Out
+I max 10 mA
+Circuito elettronico standard
+
+[PAG 1253]
+SENSORI E TRASDUTTORI
+XIII-23
+la funzione dei singoli conduttori del cavo viene identificata dallo specifico colore della 
+guaina isolante (Fig. XIII.2.26); nel secondo caso il connettore presenta una piedinatura 
+standard preimpostata che lega ogni singolo pin con uno specifico segnale.
+–  Consumo per canale (Fase).
+Fig. XIII.2.25  Configurazioni del circuito elettronico in uscita e valori di tensione di ali-
+mentazione di un encoder con circuito elettronico line driver.
+Le normali prestazioni di un encoder possono essere nettamente migliorate applicando 
+un sistema particolare di lettura denominato pushpull. Esso consiste nell'utilizzo per 
+ogni canale di due fototransistori, dei quali uno situato nella zona illuminata e l'altro nella 
+zona oscura. Il segnale che ne risulterà avrà un'ampiezza maggiore e quest'ultima, insieme 
+alla forma, presenterà caratteristiche di maggior stabilità, in particolar modo nelle situa-
+zioni di variazioni di tensione e temperatura.
+Fig. XIII.2.26  Relazione tra il colore delle guaine isolanti e i segnali di un encoder con 
+cavo di collegamento.
+Per quel che riguarda l'aspetto meccanico, è da osservare che il collegamento tra i tra-
+sduttori rotativi e l'albero di azionamento o la vite conduttrice è sempre effettuato con un 
+giunto (separato o integrato nel trasduttore, del tipo piatto o a elica o membrana). La sua 
+funzione è di compensare gli spostamenti assiali e gli allineamenti difettosi tra l'albero del 
+sistema di misura angolare e l'albero motore. Inoltre esso impedisce che i cuscinetti del 
+sistema siano sovraccaricati.
+Gli encoder possono essere di due tipi:
+–  encoder incrementali,
+–  encoder assoluti.
+Gli encoder si definiscono incrementali quando i segnali di uscita sono proporzionali 
+in modo incrementale allo spostamento effettuato. Questi trasduttori si trovano nelle con-
+figurazioni definite monodirezionale, bidirezionale, monodirezionale con lo zero e bidire-
+zionale con lo zero.
+L'encoder in configurazione monodirezionale genera segnali chiamati Fase A, che for-
+niscono l'informazione sufficiente per la gestione di rotazioni in un solo senso di marcia.
+Circuito elettronico line driver 88C30
+Circuito elettronico line driver 26LS31
+A
+A
+B
+B
+C
+C
+A
+A
+B
+B
+C
+C
+IC
+IC
+MM88C30
+AD26LS31
+giallo = uscita Fase Z
+bianco = uscita Fase A
+verde = uscita Fase B
+rosso = 5 V (c.c.)
+nero = 0 V
+Corpo completamente schermato
+(collegare lo schermo a 0 V o a massa)
+
+[PAG 1254]
+XIII-24
+SENSORI E TRASDUTTORI
+Aggiungendo un secondo elemento fotosensibile (configurazione bidirezionale), sfa-
+sato dal primo di 90 gradi, si genera anche la Fase B, la quale permette di determinare il 
+senso di rotazione, effettuando un controllo dei fronti di salita degli impulsi in uscita. 
+Detto in altre parole, i due gruppi di fotoresistori forniscono in uscita due treni di onda 
+quadra, sfasati tra loro di 90 gradi elettrici, i quali, rilevati dall'appropriata elettronica, 
+consentono il conteggio avanti e indietro di spostamenti angolari, rettilinei ecc.
+Se infine si aggiunge un segnale di riferimento o di zero (configurazione monodirezio-
+nale o bidirezionale con lo zero), che genera la Fase Z, è possibile determinare, oltre al 
+senso di rotazione, la posizione effettiva, assoluta, dell'albero dell'encoder (Fig. 
+XIII.2.27).
+Fig. XIII.2.27  Forme d’onda in uscita.
+I segnali emessi in uscita possono essere sinusoidali (se l'unità elettronica di elabora-
+zione non è integrata nel trasduttore) o a onda quadra, compatibili con le famiglie logiche 
+TTL e CMOS oppure a collettore aperto. L'encoder, di fatto, genera impulsi quasi sinusoi-
+dali, che vengono digitalizzati per eliminare possibili errori di interpretazione.
+Costruttivamente gli encoder si possono trovare nelle versioni con albero passante, 
+con albero passante cavo, bialbero e modulari.
+Nelle versioni modulari l'encoder è costituito da un disco graduato, con il mozzo 
+oppure con il tamburo, e dalla testina di lettura. I dischi graduati con il mozzo oppure con 
+il tamburo vengono montati direttamente sull'albero motore e la testina di lettura viene 
+tarata di conseguenza. Da rilevare che questi trasduttori non dispongono di un proprio 
+sistema di supporto (cuscinetti) e, nel loro caso, il grado di precisione che possono rag-
+giungere è legato all'eccentricità della divisione rispetto ai cuscinetti del sistema già 
+installato (motore) e dal loro gioco radiale.
+Gli encoder incrementali sono caratterizzati dal fatto di non mantenere l'informazione 
+all'accensione e allo spegnimento dell'alimentazione e richiedono perciò la ridetermina-
+zione del punto di zero (risolvibile mediante l'impiego di batterie tampone).
+In moltissimi recenti encoder, per poter disporre di un riferimento assoluto, la divi-
+sione incrementale è affiancata da una o più tacche di riferimento. La tacca di riferimento 
+è costituita da una divisione randomizzata (irregolare), la quale, all'atto della lettura con 
+un reticolo di scansione identico, genera un picco di segnale, unico e stretto, garantendo in 
+questo modo un riferimento assoluto per ogni angolazione. Ma nonostante questo strata-
+gemma spesso è molto difficile ristabilire il riferimento, soprattutto quando la macchina 
+deve percorrere grandi distanze dopo l'avviamento. La soluzione si è trovata inserendo sul 
+disco delle tacche di riferimento codificate. La divisione è formata da un reticolo radiale e 
+da una traccia concentrica per le tacche di riferimento. La distanza tra le singole tacche 
+differisce per consentire di distinguere la posizione assoluta di ogni tacca di riferimento. 
+Fase A
+Fase B
+Fase Z
+Fase A
+Fase B
+Fase Z
+H
+L
+H
+L
+H
+L
+H
+L
+H
+L
+H
+L
+T
+T
+T
+T
+T/4  T/8 (90°  45°)
+T  T/2
+T/4  T/8 (90°  45°)
+T  T/2
+Rotazione in senso orario
+(rotazione a destra, vista dalla superficie installata)
+Rotazione in senso antiorario
+(rotazione a sinistra, vista dalla superficie installata)
+
+[PAG 1255]
+SENSORI E TRASDUTTORI
+XIII-25
+È compito dell'elettronica associata conteggiare gli incrementi registrati tra le tacche con-
+finanti e, dal numero risultante, determinare la posizione assoluta.
+Gli encoder si definiscono assoluti quando a ogni posizione dell'albero corrisponde un 
+valore ben definito.
+Questo secondo tipo di trasduttori ottici rotativi, a differenza degli incrementali, pos-
+siede un disco codificato con più piste, le quali, lette simultaneamente, permettono ai 
+fototransistori di generare dei segnali paralleli in codice per ogni posizione angolare (Fig. 
+XIII.2.28). L'emissione di segnali paralleli non cambia né all'accensione né allo spegni-
+mento dell'alimentazione ed è immune dai disturbi elettrici; questo fa sì che gli encoder 
+assoluti trovino largo impiego in tutte quelle applicazioni nelle quali i dati di acquisizione 
+si svolgono in tempi molto lunghi e si vuole avere l'assoluta certezza dell'informazione.
+Fig. XIII.2.28  Principali componenti di un encoder ottico assoluto.
+Gli encoder ottici assoluti si possono trovare nella configurazione monogiro oppure 
+multigiro.
+Il tipo monogiro sviluppa una rotazione (da 0° a 360°) entro un determinato numero di 
+passi di misura, generando dei valori codificati. I valori di misura si ripetono dopo ogni 
+rotazione.
+Il tipo multigiro non rileva soltanto le posizioni dell'angolo all'interno di una rota-
+zione, bensì distingue anche rotazioni diverse. La caratteristica meccanica, riscontrabile 
+in esso, è la presenza di divisioni circolari codificate addizionali all'albero del trasduttore 
+per mezzo di riduttori.
+Ricordando che anche questo tipo di encoder è ottico, che vi è un certo numero prede-
+terminato di piste e di fototransistori e che, a seconda che la luce riesca a colpire il foto-
+transistore oppure no, questo genererà il valore 1 (quando è illuminato) e il valore 0 
+(quando non è illuminato), si intuisce come risulta abbastanza semplice dedurre la posi-
+zione angolare del rotore se si conosce il codice di cui ci si è serviti per disegnare le zone 
+trasparenti ed opache delle piste.
+I tipi di codice, abitualmente utilizzati nei dischi degli encoder assoluti, sono il BCD, 
+il Binario puro, il Gray oppure l'Eccesso Gray.
+Il codice BCD è un metodo di codificazione dei numeri decimali, nel quale una 
+sequenza di 0 e 1 corrisponde all'1 decimale, un'altra al 2 decimale, un'altra al 3 decimale, 
+e così via. Può essere composto da quattro bit, e in questo caso rappresenta i numeri deci-
+mali dallo 0 fino al 9, oppure da 8 bit, e in questo caso rappresenta i numeri decimali fino 
+al 99 compreso. Rapportato al sistema binario è meno efficiente in quanto richiede più 
+Uscite
+Amplificatori
+squadratori
+Disco codificato
+(rotore)
+Cuscinetti
+Albero
+trasduttore
+Base trasduttore
+(statore)
+Sorgente luminosa
+(Led)
+Fototransistori
+
+[PAG 1256]
+XIII-26
+SENSORI E TRASDUTTORI
+spazio in memoria e rallenta le operazioni matematiche. Esso è caratterizzato dal fatto di 
+ottenere risultati molto precisi e trova impiego soprattutto su visualizzatori.
+Il codice Binario puro rappresenta un sistema di numerazione posizionale a base 2. Le 
+sue cifre si definiscono bit. Esso usa esclusivamente le cifre 0 e 1 e la posizione, in un 
+numero di più cifre, indica una potenza di 2. Caratteristica propria del codice binario è 
+quella che, variando un valore di posizione in un altro valore, si modificano contempora-
+neamente diversi bit e questo può essere la causa di errori grossolani di lettura. Questo 
+ipotetico inconveniente si può spiegare nel modo seguente. I fototransistori, associati alle 
+piste di lettura, sono montati in fase tra loro all'interno del trasduttore. Però, per quanto 
+accurato possa essere il montaggio, la messa in fase perfetta non viene mai raggiunta e 
+quindi, ipotizzando che il rotore del trasduttore a quattro piste sia nella posizione della 
+Fig. XIII.2.29, è possibile che le combinazioni lette non siano necessariamente solo la 
+prima oppure la seconda. Infatti, se il fototransistore che legge la pista B commuta legger-
+mente in anticipo sugli altri il suo valore, appare in uscita il codice 1010, completamente 
+diverso da quello dell'effettiva commutazione. La lettura del codice quindi si può presen-
+tare inquinata da errori grossolani e questo è un sufficiente motivo per adottare il codice 
+che segue.
+Fig. XIII.2.29  Posizione angolare del rotore di un encoder ottico con piste a codice bina-
+rio puro.
+Il codice Gray rappresenta un sistema di numerazione derivato dal Binario puro e si 
+caratterizza essenzialmente per cambiare un solo bit alla volta. Esso trae questa sua uni-
+cità dal fatto di addizionare alla combinazione di bit letta la stessa combinazione, sfalsata 
+verso destra di una posizione, e di non considerare il riporto. Operando nel medesimo 
+modo su tutte le combinazioni del codice Binario puro si ottiene il codice Gray. È un 
+codice ciclico; cioè anche nel passaggio tra l'ultima sua configurazione (combinazione di 
+cifre) e la prima, esso conserva il cambiamento di un solo bit.
+Infine il codice Eccesso Gray è lo stesso codice Gray decurtato di alcuni valori. Esso 
+consente di avere un numero di valori possibili diverso da 2, pur mantenendo la caratteri-
+stica del codice Gray. Per esempio, osservando il codice Gray a quattro bit che genera 16 
+valori di posizione codificati, se si eliminano i primi e gli ultimi 3 valori, si ottiene un 
+codice Gray Eccesso 3 con 10 valori. Gli encoder assoluti, adottanti il codice Gray, 
+devono convertirlo in uscita per mettere a disposizione dell'elettronica successiva segnali 
+in codice Binario puro o in BCD e in queste situazioni viene comunemente utilizzata la 
+funzione OR esclusivo (XOR).
+I campi di applicazione degli encoder assoluti sono molteplici; di questi si citano:
+Zona limite
+Fototransistore C
+Fototransistore D
+Fototransistore A
+Fototransistore B
+Pista A
+Pista B
+Pista C
+Pista D
+Prima lettura
+1101
+Seconda lettura
+0011
+
+[PAG 1257]
+SENSORI E TRASDUTTORI
+XIII-27
+–  I robot industriali, cioè l'utilizzo degli encoder per l'indicazione dell'angolo e 
+dell'inclinazione di snodi multipli di robot.
+–  Le macchine utensili.
+–  I controlli del processo industriale.
+–  Gli strumenti di misura e pesatura, cioè l'utilizzo degli encoder per misurare dei 
+pesi. Mettendo un oggetto su una piastra ricevente, l'asta dentata si muove verso l'alto e 
+verso il basso e questa variazione del peso viene ricevuta dal trasduttore e, tramite un con-
+taimpulsi, ne viene misurato il valore.
+–  Le macchine tessili, laminatoi ecc.
+Unitamente alle sue importanti prestazioni, l'encoder si presenta come strumento 
+molto particolare e delicato; la sua durata e la qualità dei suoi segnali dipendono molto da 
+come è stato installato. Quanto è stato appena affermato consiglia di adottare dei partico-
+lari accorgimenti sia sul piano meccanico sia su quello elettrico.
+Innanzi tutto, essendo l'encoder costituito di componenti di precisione, si deve fare 
+attenzione che l'albero o il corpo non ricevano dei colpi, o che l'encoder cada.
+È fondamentale che la parte ruotante dell'encoder non sia sottoposta a carichi radiali e 
+assiali superiori a quelli massimi, indicati sulle sue specifiche tecniche. È da evitare che 
+esso riceva tensioni eccessive, deformazioni o piegature del cavo di uscita.
+È raccomandato che non venga installato in tutti quei luoghi nei quali vi siano vapore, 
+polveri, gas corrosivi o caduta di acqua o di olio. È bene accertarsi, prima di alimentarlo, 
+che tutti i collegamenti siano a posto, onde evitare danni al circuito interno.
+Se nelle vicinanze dei suoi collegamenti sono presenti cavi dell'alta tensione o di linee 
+di alimentazione, è bene avere chiaro che i disturbi causati da tali linee possono determi-
+nare errori del suo funzionamento oppure addirittura danneggiarlo.
+Per ovviare a disturbi, i collegamenti devono essere corti il più possibile; in caso con-
+trario bisogna ricorrere a degli opportuni circuiti per conformare la forma dell'onda.
+Se l'alimentazione è in corrente continua è bene installare un trasformatore di isola-
+mento. Non utilizzare mai un autotrasformatore, in quanto questo, essendo costituito da 
+un unico avvolgimento, non protegge l'encoder da danneggiamenti.
+Se sono presenti delle sovracorrenti nell'alimentazione, è necessario collegare al cir-
+cuito un assorbitore di sovracorrenti.
+3  SENSORI PER IL CONTROLLO DI PROSSIMITÀ
+I sensori utilizzati nei controlli di prossimità trovano impiego in moltissimi settori e in 
+svariate applicazioni. Si utilizzano nell'automazione industriale e nei servomeccanismi, 
+nell'automazione degli uffici e nei sistemi antifurto, nel settore automobilistico e nelle 
+periferiche dei computer.
+Essi fanno parte del rilevamento senza contatto fisico e per questo motivo si trovano 
+in una posizione di privilegio rispetto ad altri sensori con funzioni analoghe.
+Fig. XIII.3.1  Rappresentazione schematica dei componenti principali di un sensore di 
+prossimità.
+Parte
+Parte di
+Oscillatore
+Messa in
+forma
+Stadio di
+uscita
+operativa
+comando
+
+[PAG 1258]
+XIII-28
+SENSORI E TRASDUTTORI
+Un sensore di prossimità essenzialmente è composto di due parti (Fig. XIII.3.1) che 
+vengono definite parte operativa, l'oscillatore, e parte di comando, lo stadio di uscita. Le 
+due parti sono legate da uno squadratore (Trigger di Schmitt) che ha la funzione di gene-
+rare un corretto andamento impulsivo del segnale.
+Gli elementi che definiscono i singoli sensori possono basarsi su effetti:
+–  magnetici a soglia, a contatto reed, a effetto Hall,
+–  induttivi a fili Wiegand,
+–  capacitivi,
+–  ottici,
+–  a ultrasuoni.
+A prescindere per ora dal principio fisico specifico di funzionamento, in prima 
+approssimazione i sensori di prossimità si possono classificare in relazione ai diversi tipi 
+di stadi di uscita. Prendendo in oggetto un sensore di prossimità elettronico, esso si può 
+trovare nei tipi sottoelencati.
+Autoamplificato ON/OFF in corrente continua. Esso può avere la polarità di uscita 
+PNP oppure NPN e invece la funzione di uscita del tipo normalmente aperto (NA), nor-
+malmente chiuso (NC), scambio (S); la Figura XIII.3.2 mostra i circuiti nel collegamento 
+a tre fili in corrente continua. I dati che comunemente si possono riscontrare sulla targa di 
+tali sensori sono la tensione di alimentazione (10  30 V), la massima ondulazione residua 
+(10%), la massima corrente in uscita (150 mA), la caduta di tensione in relazione alla 
+massima corrente erogata ( 3 V), l'assorbimento di corrente a vuoto ( 5 mA) e, infine, le 
+protezioni contro le inversioni di polarità, i disturbi elettrici di origine induttiva e i corto-
+circuiti del carico.
+Autoamplificato ON/OFF in corrente alternata. Esso può avere la funzione di uscita 
+NA oppure NC; la Figura XIII.3.3 rappresenta il circuito di collegamento. In questo caso i 
+dati che comunemente si riscontrano nella targa dell'apparecchio sono la tensione di ali-
+mentazione (21  255 V), la frequenza di rete (45  65 Hz), il minimo carico induttivo 
+(2,5 VA) e il massimo carico induttivo (a seconda della tensione di alimentazione speci-
+fica 10  90 VA), la massima corrente di riposo (3 mA), l'isolamento tra il contenitore e le 
+Fig. XIII.3.2  Circuito di uscita in ver-
+sione ON/OFF di tipo PNP o NPN e non 
+polarizzato in corrente continua.
+carico
+
+
+Uscita PNP con il carico collegato al polo negativo
+dell’alimentatore 
+carico
+
+
+Uscita NPN con il carico collegato al polo positivo
+dell’alimentatore 
+()
+()
+Uscita a due fili non polarizzata
+carico
+
+[PAG 1259]
+SENSORI E TRASDUTTORI
+XIII-29
+parti in tensione (4000 V), la caduta di tensione alla massima corrente ( 5 V), la prote-
+zione contro i disturbi elettrici di origine induttiva e il diametro del conduttore di terra (in 
+questo caso presente nei tipi capacitivi e induttivi cilindrici).
+Fig. XIII.3.3  Circuito di uscita in versione ON/OFF di tipo a due fili in corrente alter-
+nata.
+Non amplificati NAMUR. I sensori di prossimità NAMUR sono degli apparecchi elet-
+tronici nei quali la corrente assorbita viene modificata dall'avvicinamento di un oggetto 
+metallico. Questo tipo di sensori sono in regola con le raccomandazioni NAMUR (dalle 
+quali prendono il nome), che è l'istituto tedesco di normalizzazione per le tecniche di 
+misura e di regolazione nell'industria chimica, e le norme DIN. I NAMUR sono di dimen-
+sioni più piccole dei normali sensori di prossimità, perché sono costituiti dal solo oscilla-
+tore. Essi infatti sono sprovvisti di stadi trigger e di amplificatore e devono essere 
+collegati con un relè di sicurezza intrinseca, se l'atmosfera è potenzialmente esplosiva, 
+oppure con appositi dispositivi di alimentazione e di amplificazione (Fig. XIII.3.4).
+Fig. XIII.3.4  Sensore di prossimità NAMUR con amplificatore completo di trigger e 
+uscita a relè.
+I NAMUR si utilizzano in molte situazioni e tra queste ci sono anche le atmosfere 
+potenzialmente esplosive. Questi tipi di sensori funzionano con grandezze elettriche di 
+valore molto basso e il loro funzionamento è assimilabile a un contatto meccanico in aper-
+tura, il quale è normalmente chiuso (interruttore passante) in assenza dell'azionatore e 
+normalmente aperto (interruttore non passante) in presenza dell'oggetto metallico. In que-
+sti apparecchi i dati che comunemente si riscontrano nella targa sono la tensione di ali-
+mentazione (che a seconda se sono cilindrici oppure a parallelepipedo può essere 6  12 V 
+o 6,5  9,5 V), la corrente in assenza di azionatore, alimentando il sensore con un genera-
+tore di tensione pari a 7,7 V in corrente continua e con resistenza interna uguale a 1100 , 
+(< 2,2 mA) e la corrente in presenza di azionatore, alimentando il sensore con un genera-
+tore di tensione uguale a 9 V in corrente continua e con resistenza interna pari a 550 , (< 
+1,1 mA).
+Analogici con uscita in tensione. I dati che comunemente caratterizzano questo tipo di 
+sensore sono la tensione di alimentazione (10  30 V in corrente continua), l'ondulazione 
+carico
+
+
+NAMUR
+
+[PAG 1260]
+XIII-30
+SENSORI E TRASDUTTORI
+massima residua (5%), la resistenza di carico minima (1 k) e l'assorbimento a vuoto (
+10 mA).
+Analogici con uscita in corrente 4  20 mA. I dati che lo caratterizzano sono la ten-
+sione di alimentazione (18  30 V in corrente continua), l'ondulazione massima residua 
+della tensione di alimentazione (5%), la resistenza di carico minima (400 ) e l'assorbi-
+mento a vuoto ( 35 mA).
+3.1  Sensori a induzione
+I sensori di prossimità induttivi vengono normalmente utilizzati per rilevare oggetti 
+metallici. Essi hanno al loro interno un oscillatore ad alta frequenza in grado di produrre 
+un campo elettromagnetico nelle immediate vicinanze del sensore.
+La presenza di un oggetto metallico (che svolge la funzione di azionatore) nell'area di 
+azione del sensore, determina una diminuzione dell'ampiezza dell'oscillazione, in quanto 
+parte dell'energia elettromagnetica viene trasferita dal sensore all'azionatore e su questo si 
+dissipa per effetto delle correnti parassite di Focault.
+La Figura XIII.3.5 riproduce l’impiego di un sensore di prossimità induttivo.
+Fig. XIII.3.5  Impiego di un sensore di prossimità induttivo.
+L'ampiezza dell'oscillazione risulta quindi decrescere con la distanza fra azionatore e 
+sensore e può pertanto fornire all'uscita del sensore un'informazione analogica sulla posi-
+zione dell'oggetto (sensore analogico) oppure può essere convertita tramite un trigger di 
+Schmitt in un segnale digitale (sensore ON/OFF). Nella versione in corrente continua, il 
+trigger di Schmitt pilota un transistore del tipo PNP oppure NPN, un diodo protegge il cir-
+cuito dalle inversioni di polarità e uno zener dai picchi di tensione; nella versione invece a 
+corrente alternata, il trigger pilota un transistore di potenza con un varistore collegato in 
+parallelo per la protezione dalle sovratensioni. Se la funzione dell'interruttore è in chiu-
+sura, il passaggio del materiale metallico nel campo induttivo determina il pilotaggio del 
+tiristore e l'alimentazione del carico. Diversamente, se la funzione è in apertura, l'inseri-
+mento determina l'interdizione del tiristore al primo passaggio della corrente per il punto 
+zero della sinusoide. Il sensore in corrente alternata può comandare direttamente bobine 
+di contattori, di relè oppure elettrovalvole.
+Essendo i sensori di prossimità degli apparecchi utilizzati per il rilevamento della pre-
+senza o dell'assenza di oggetti oppure per il rilevamento di passaggio o di sequenza, è 
+opportuno riportare i principali parametri che li vincolano all'oggetto da rilevare.
+Distanza di intervento. La distanza di intervento di un sensore di prossimità è quella 
+distanza alla quale l'avvicinamento di un azionatore provoca un cambiamento di stato del 
+segnale in uscita.
+Distanza nominale. La distanza nominale o portata nominale (Sn) viene utilizzata per 
+definire il tipo di apparecchio, trascurando le tolleranze di fabbricazione e gli eventuali 
+declassamenti provocati da condizioni diverse di tensione o temperatura.
+Sensore con circuito elettromagnetico
+Oggetto metallico
+Faccia del sensore
+
+[PAG 1261]
+SENSORI E TRASDUTTORI
+XIII-31
+Distanza effettiva. La distanza effettiva è definita come la distanza di intervento reale, 
+determinata con i valori nominali di temperatura e di tensione.
+Distanza di rilevamento utile. La distanza di rilevamento utile (S) di un sensore di 
+prossimità, denominata anche portata utile, è quella distanza che tiene in considerazione i 
+declassamenti della tensione e della temperatura; cioè in essa ogni apparecchio viene con-
+siderato singolarmente con la placchetta di misura nelle condizioni di temperatura e di 
+tensione specificate. Il suo valore deve essere 0,81 Sn < S < 1,21 Sn (Fig. XIII.3.6).
+Distanza di lavoro. La distanza di lavoro, o campo di funzionamento, è quello spazio 
+che garantisce un sicuro rilevamento della placchetta di misura alle condizioni di tempera-
+tura e tensione di utilizzo. Essa è definita fra 0 e l'81% della distanza nominale Sn.
+Fig. XIII.3.6  Distanza di rilevamento utile di un sensore di prossimità.
+Corsa differenziale. La corsa differenziale, o isteresi, viene definita come la diffe-
+renza tra il punto di inserzione del sensore di prossimità, all'avvicinarsi dell'azionatore, e 
+il punto di disinserzione, all'allontanarsi dell'azionatore dalla superficie sensibile (Fig. 
+XIII.3.7).
+Fig. XIII.3.7  Punti di inserzione e disinserzione di un sensore di prossimità (isteresi).
+Placchetta di misura. La placchetta per i sensori di forma cilindrica è in acciaio dolce 
+A37 e di forma quadrata. Possiede il lato di dimensione pari al diametro della superficie 
+sensibile e ha lo spessore di 1 mm. La placchetta per i sensori di forma rettangolare è 
+anch'essa in acciaio dolce A37 e di forma quadrata, ma il suo lato è pari a 3 volte Sn e ha 
+lo spessore di 1 mm.
+Fattore di riduzione. Nella pratica i pezzi da rilevare sono in acciaio e per assicurare 
+un sicuro controllo è opportuno rendere compatibili le dimensioni del pezzo e il campo di 
+funzionamento con le caratteristiche dell'apparecchio. Se gli oggetti da rilevare non sono 
+in acciaio A37, si devono applicare dei coefficienti correttivi, altrimenti il rischio è quello 
+di avere un sensore di prossimità meno sensibile.
+Azionatore
+(oggetto)
+Distanza di lavoro
+Sensore di
+prossimità
+
+
+Sensore di
+prossimità
+Isteresi
+Inserzione
+Disinserzione
+
+[PAG 1262]
+XIII-32
+SENSORI E TRASDUTTORI
+Precisione della ripetibilità di intervento. Esprime la tolleranza di ripetibilità in rap-
+porto alla distanza di rilevamento utile. Le norme ne prescrivono la misura entro un peri-
+odo di 8 ore, con la temperatura dell'involucro tra i 15 °C e i 30 °C e una tensione di 
+alimentazione con valore massimo variabile tra  5% del valore nominale.
+Frequenza di commutazione. È il numero massimo di oggetti che può essere rilevato 
+in un secondo. Dipende quasi esclusivamente dalla superficie nominale del sensore di 
+prossimità.
+Inoltre esistono dei parametri che vincolano il montaggio dei sensori di prossimità 
+induttivi in relazione ai seguenti fattori.
+Presenza di masse metalliche nelle adiacenze. Bisogna considerare che la vicinanza di 
+masse metalliche, diverse da quelle da rilevare, provoca la precarica dell'oscillatore con il 
+suo conseguente aumento di sensibilità a scapito della precisione di ripetibilità. A questo 
+scopo esistono delle distanze ben definite da rispettare.
+Possibili interferenze tra sensori. Anche il mancato rispetto della distanza tra più sen-
+sori può causare dei disturbi di funzionamento degli stessi.
+In riferimento a questi due parametri i dati di montaggio suggeriscono che i sensori di 
+prossimità in versione non schermata richiedono che la superficie attiva disti dalle parti 
+metalliche sui lati per una misura pari al diametro  e in altezza per una misura pari a 2 
+Sn. I sensori in versione schermata e disposti in linea, per non alterarsi a vicenda, richie-
+dono una distanza tra loro pari ad almeno il diametro  della superficie sensibile.
+Per quel che riguarda ora i parametri di natura elettrica bisogna considerare che nello 
+schema a due fili i sensori di prossimità vengono collegati come dei finecorsa meccanici. 
+Essi sono alimentati in serie al carico da comandare e sono soggetti quindi a una corrente 
+residua (stato di funzione aperta) e a una caduta di tensione (stato di funzione chiusa).
+Nello schema a tre fili invece i sensori di prossimità possiedono due fili per l'alimen-
+tazione dell'apparecchio e un filo per trasmettere il segnale di uscita.
+La lunghezza del cavo può raggiungere al massimo i 200 metri, dopodiché occorre 
+modificare gli apparecchi in quanto si verificano delle cadute di tensione.
+In quelle applicazioni in cui esistono grosse fonti di disturbo (motori, saldatrici ecc.) è 
+opportuno adottare alcune precauzioni quali: limitare la lunghezza dei cavi, collegare a 
+monte le fonti di disturbo, allontanare i cavi di potenza da quelli ausiliari, filtrare l'alimen-
+tazione e intrecciare e schermare i conduttori di segnali in uscita.
+Anche il tipo di cu
