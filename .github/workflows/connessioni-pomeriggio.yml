@@ -20,6 +20,7 @@ jobs:
 
       - name: Run connessioni pomeriggio
         env:
+          BIOSERRA_GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
         run: python .github/scripts/connessioni_update.py pomeriggio
