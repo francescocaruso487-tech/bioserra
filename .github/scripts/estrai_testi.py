@@ -285,13 +285,46 @@ def main():
     print(f'Rimanenti: {len(da_fare) - len(batch)}')
 
 if __name__ == '__main__':
-    import traceback
+    import traceback, sys
     try:
         main()
     except Exception as ex:
-        print(f'\n=== CRASH GLOBALE ===')
-        print(f'Tipo: {type(ex).__name__}')
-        print(f'Messaggio: {ex}')
-        traceback.print_exc()
-        raise
+        tb = traceback.format_exc()
+        log = f'CRASH: {type(ex).__name__}: {ex}\n\n{tb}'
+        print(log)
+        # Salva log su GitHub per diagnostica
+        try:
+            import base64, urllib.request, json, datetime
+            TOKEN_LOG = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
+            REPO_LOG = 'francescocaruso487-tech/bioserra'
+            oggi = datetime.date.today().isoformat()
+            path_log = 'data/estrai_crash_log.txt'
+            # SHA
+            try:
+                req_sha = urllib.request.Request(
+                    f'https://api.github.com/repos/{REPO_LOG}/contents/{path_log}',
+                    headers={'Authorization': f'token {TOKEN_LOG}',
+                             'Accept': 'application/vnd.github+json'})
+                with urllib.request.urlopen(req_sha) as r:
+                    sha_log = json.load(r)['sha']
+            except:
+                sha_log = None
+            body_log = json.dumps({
+                'message': f'crash: estrai_testi [{oggi}]',
+                'content': base64.b64encode(log.encode()).decode('ascii'),
+                'branch': 'main',
+                **({'sha': sha_log} if sha_log else {})
+            }).encode()
+            req_put = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO_LOG}/contents/{path_log}',
+                data=body_log,
+                headers={'Authorization': f'token {TOKEN_LOG}',
+                         'Content-Type': 'application/json',
+                         'Accept': 'application/vnd.github+json'},
+                method='PUT')
+            with urllib.request.urlopen(req_put) as r:
+                print('Log salvato su GitHub!')
+        except Exception as log_ex:
+            print(f'Non riesco a salvare log: {log_ex}')
+        sys.exit(1)
 
