@@ -1,0 +1,971 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 23/116 ===
+Chars: 43,449 | Offset: 972,222
+
+
+
+[PAG 476]
+VI-102
+CAD
+quando invece le misure non fanno cadere il punto sulla griglia di snap, è necessario usare 
+le coordinate relative polari.
+–  Copiare il perimetro ad una distanza di 9 unità in alto.
+–  Ricordare di commutare quando necessario il piano assonometrico, a seconda degli 
+elementi che si vogliono disegnare.
+–  Osservando le quote riportate, disegnare le linee rette 
+delle pareti verticali.
+–  Cambiare l’impostazione per il disegno delle ellissi, 
+impostando la variabile PELLIPSE a 1.
+–  Disegnare le ellissi come cerchi assonometrici, indicando 
+come centro il punto medio della linea di costruzione che 
+congiunge gli spigoli verticali come in Fig. VI.10.20 e di-
+gitando il raggio o il diametro.
+–  Usare il comando Taglia per eliminare le parti non visibili 
+che non servono più; non aspettare di tagliarle tutte alla fine, 
+poiché il disegno diverrebbe incomprensibile.
+Fig. VI.10.20  
+–  Raccordare le ellissi usando l’opzione di osnap Tangente.
+–  Per i fori svasati che si trovano sulla base della staffa conviene disegnare prima gli 
+assi di simmetria, per individuare il centro, disegnare i due cerchi assonometrici di 
+diverso diametro concentrici, poi spostare il cerchio più piccolo in basso di tre unità. 
+Dopo aver tagliato le parti non visibili, conviene copiare tutto alla distanza indicata e 
+tagliare la parte coperta dal lato verticale.
+–  Con il comando Editpl convertire gli oggetti in polilinee ed assegnare una larghezza di 
+0.5.
+Fig. VI.10.21  
+–  Per la quotatura valgono le 
+stesse considerazioni fatte per le 
+viste in proiezione ortogonale. 
+Poiché i lati sono inclinati, in 
+molti casi occorrerà usare la quota 
+allineata e non la quota lineare. È 
+inoltre da tener presente che nella 
+quotatura delle viste assonome-
+triche le linee di riferimento, 
+vanno disegnate prolungando gli 
+spigoli da quotare. Il programma 
+posiziona invece queste linee in 
+modo da formare un angolo di 90° 
+rispetto al lato da quotare, come si vede in Fig. VI.10.21 per le due quote 30 e 68. Per 
+posizionarle in modo corretto fare clic su Obliqua, nel menu a discesa Quotatura, selezio-
+nare con un clic la quota 68, premere Invio per concludere la selezione, digitare -30 
+seguito da Invio. Per la quota da 30 si dovrà assegnare un angolo obliquo di 210°.
+11  CASA A SCHIERA
+In questo capitolo verranno presentate solo alcune indicazioni di massima necessarie 
+per comprendere come sono stati assegnati i limiti per l’esecuzione del disegno. Inoltre 
+verranno presi in esame il comando Crea blocco e Inserisci blocco. Nel DVD allegato è
+
+[PAG 477]
+CAD
+VI-103
+comunque presente un file di testo in formato PDF che indica in modalità passo passo 
+tutte le strategie impiegate, anche se con i comandi finora utilizzati la realizzazione del 
+disegno dovrebbe essere abbastanza intuitiva.
+11.1  Scala del disegno
+Fino ad ora si sono realizzati i disegni immettendo sempre le dimensioni indicate dalle 
+quote, presupponendo quindi una scala di 1:1.
+In effetti, lavorando con AutoCAD, è in genere conveniente disegnare sempre in scala 
+1:1, assegnando poi, al momento della stampa, un fattore di scala opportuno.
+Scala 1:1 significa che 1 mm sulla carta equivale ad 1 mm dell’oggetto reale.
+L’impostazione dei limiti del disegno non può prescindere tuttavia dalle dimensioni 
+del foglio di stampa.
+Se si utilizza un foglio di formato A4 (297  210 mm) le dimensioni massime 
+dell’oggetto rappresentato in scala unitaria possono essere al massimo 297  210 mm, 
+ossia 0,297  0,210 m. Usando fattori di scala diversi è possibile rappresentare oggetti di 
+dimensione reale maggiore. Alcuni esempi sono riportati nella Tab. VI.11.1.
+Tab. VI.11.1  Fattori di scala e dimensioni relative di stampa
+Se si utilizzano plotter che stampano su formati più grandi, conoscendo le dimensioni 
+del foglio, è possibile costruire una tabella analoga.
+In generale, per calcolare il fattore di scala da utilizzare, basta eseguire per le dimen-
+sioni lungo gli assi X e Y le seguenti operazioni:
+Dei due valori calcolati si sceglie il maggiore e quindi si usa il fattore di scala norma-
+lizzato di valore immediatamente superiore.
+Ad esempio, nel disegno riportato nelle Figg. VI.11.1 e VI.11.2, la dimensione mas-
+sima lungo l’asse X è di circa 44 metri e quella lungo l’asse Y circa 26 metri. Volendo 
+stampare su un foglio A4 di dimensioni 0,297 metri per 0,210 metri, i due fattori di scala 
+risulterebbero rispettivamente 148,1 e 123,8; il fattore di scala normalizzato da utilizzare 
+risulta essere 1:200.
+Formato A4
+Formato A3
+Scala
+Dimensioni 
+MAX
+Scala
+Dimensioni 
+MAX
+1:10
+2,97  2,10 m
+1:10
+4,20  2,97 m
+1:20
+5,94  4,2 m
+1:20
+8,40  5,94 m
+1:50
+14,85  10,5 m
+1:50
+21  14,85 m
+1:100
+29,70  21 m
+1:100
+42  29,7 m
+1:200
+59,40  42 m
+1:200
+84  59,4 m
+1:500
+148,5  105 m
+1:500
+210  148,5 m
+1:1000
+297  210 m
+1:1000
+420  297 m
+Fattore di scala X
+Dimensione X oggetto
+Dimensione X foglio
+-----------------------------------------------------
+=
+Fattore di scala Y
+Dimensione Y oggetto
+Dimensione Y foglio (m)
+------------------------------------------------------------
+=
+
+[PAG 478]
+VI-104
+CAD
+Si dovrebbero allora impostare i Limiti del disegno a 0,0 e 297,210 e disegnare tutti gli 
+elementi in scala 1:200.
+In questo modo però occorrerebbe calcolare per ogni oggetto le nuove dimensioni in 
+scala 1:200 e impostare nello stile di quota la corretta scalatura.
+Per rendere le cose più semplici è possibile procedere nel modo seguente. Impostando 
+i limiti del disegno a 0,0 e 59.4,42 è possibile disegnare la dimensione massima di 42 
+metri come 42 unità di disegno (millimetri). In realtà la scala risulta 1:1000, perché 1 mm 
+sul disegno corrisponde a 1 m nella realtà, ma risulta veramente comodo poiché durante 
+l’esecuzione non si devono calcolare le varie dimensioni. 
+Fig. VI.11.1  
+25.5
+18.85
+43
+36
+LATO OVEST
+3.8
+6.2
+5.8
+CUCINA
+SOGG. PRANZO
+BAGNO
+1.3
+2.8
+LATO EST
+6.4
+R6.2
+
+[PAG 479]
+CAD
+VI-105
+ 
+Fig. VI.11.2  
+È come se si disegnasse in scala 1:1 e le quote che vengono inserite danno la misura 
+reale dell’oggetto. In fase di stampa lasciando l’impostazione della scala 1:1 il disegno 
+diventerebbe troppo piccolo. Sarà sufficiente stampare con una scala cinque volte più 
+grande per ottenere la scala 1:200. Infatti:
+Si vedrà che stampando da layout è possibile eseguire nello spazio modello affiancato 
+uno zoom x 5 ottenendo il risultato desiderato. Allo stesso modo, eseguendo uno zoom x 
+20 è possibile stampare una vista della pianta di un singolo appartamento più dettagliata 
+in scala 1:50.
+12.3
+5.4
+5.4
+0.3
+1.4
+2
+4.8
+0.7
+0.9
+1.7
+0.8
+1.5
+1.5
+0.8
+1.4
+3.3
+0.9
+1.9
+SOGG. PRANZO
+BAGNO
+0.1
+0.3
+0.1
+1.4
+3
+0.3
+CUCINA
+0.9
+1.4
+0.9
+1
+1000
+----------- 5
+
+1
+200
+--------
+=
+
+[PAG 480]
+VI-106
+CAD
+12  BLOCCHI
+È già evidente che, all’interno dello stesso disegno, non è necessario disegnare più 
+volte un oggetto ma, eseguito una volta, se ne possono inserire quante copie si desidera, 
+utilizzando ad esempio i comandi Copia o Serie.
+Un grosso punto a favore dell’utilizzo di AutoCAD rispetto alle tecniche tradizionali 
+di disegno è quello di poter riutilizzare interi disegni, o parte di essi, in altri progetti. 
+Quando un oggetto, magari piuttosto complesso, deve essere usato molte volte nello 
+stesso disegno, o in altri, è conveniente trasformarlo in un blocco.
+Un blocco è un insieme di oggetti, memorizzati con un nome, che vengono raggrup-
+pati in modo da costituire un unico oggetto. Può essere inserito in qualsiasi posizione del 
+disegno, ruotato e scalato, anche usando fattori di scala diversi per i due assi. Costituendo 
+un oggetto unico, può essere spostato o cancellato con un unico comando.
+L’uso dei blocchi è vantaggioso, non solo per il risparmio di tempo, ma anche perché 
+le dimensioni del file di disegno risultano ridotte, essendo la geometria del blocco definita 
+una sola volta nel disegno.
+Utilizzando i blocchi è possibile creare delle librerie di simboli e di particolari di uso 
+frequente. Se un blocco viene modificato, è possibile aggiornare alla nuova versione i di-
+segni che fanno riferimento a quel blocco. È possibile inoltre associare ad un blocco degli 
+attributi, cioè del testo che può essere visibile o meno. Se dopo aver inserito un blocco si 
+desidera modificarlo, è possibile e necessario esploderlo.
+12.1  Blocchi definiti nel disegno corrente
+–  Per creare una definizione di blocco da usare nel disegno corrente digitare:
+Blocco (seguito da Invio).
+Oppure, nel menu a discesa scegliere Disegna, Blocco, Crea. O ancora fare 
+clic sul pulsante Crea blocco, nel pannello Blocco della scheda Blocchi e riferi-
+menti.
+12.2  Blocchi da usare in un disegno qualsiasi
+Per utilizzare un blocco già definito in un altro disegno è possibile usare AutoCAD 
+Design Center, copiando la definizione di blocco da un disegno all’altro, in modo analogo 
+a quanto fatto per copiare uno stile di quotatura.
+Per creare un blocco accessibile direttamente da qualsiasi disegno, o per creare una 
+libreria, alla riga di comando digitare:
+Mblocco (seguito da Invio).
+Il blocco così creato diventa un file di disegno distinto.
+12.3  Blocchi e layers: l’arredamento
+Se un blocco è costituito da oggetti disegnati sul layer 0, con colore e tipo di linea 
+dalayer, quando viene inserito viene posizionato sul layer corrente e ne assume le caratte-
+ristiche di colore e tipo di linea.
+Se il blocco viene definito partendo da oggetti disegnati su layers diversi, con diversi 
+colori e tipi di linea, quando viene inserito vengono mantenute le caratteristiche originali 
+dei layers, colore e tipi di linea.
+Si desidera creare dei blocchi di oggetti di arredamento da inserire in posizione oppor-
+tuna nei locali delle villette a schiera. Si disegneranno questi oggetti sul layer 0 in modo 
+che, quando saranno inseriti, acquisiranno le caratteristiche del layer corrente. I blocchi 
+saranno definiti solo nel disegno corrente perché si userà il comando Blocco, o la sua 
+icona nella barra degli strumenti di disegno.
+Se si volessero definire questi blocchi in modo da creare una libreria, da usare con 
+qualsiasi disegno, si dovrebbe ricorrere al comando Mblocco.
+
+[PAG 481]
+CAD
+VI-107
+–  Aprire il disegno Schiera.dwg. Rendere corrente il layer 0.
+–  Dopo uno Zoom tutto, si esegua uno Zoom finestra nella zona centrale e in basso che 
+non è occupata da nessun elemento di disegno. Si potranno usare i punti 20,8 e 32,1 circa.
+Per i vari oggetti da realizzare non verranno specificati tutti i comandi, ma saranno 
+fornite solo le indicazioni di massima e i disegni quotati. 
+12.3.1  Arredo della cucina
+Lavello
+Si inizia il disegno dell’arre-
+damento dagli elementi della 
+cucina (Fig. VI.12.1). 
+–  Disegnare il contorno con il 
+comando Linea.
+–  Il 
+contorno 
+interno 
+può 
+essere ottenuto con il comando 
+Offset, sfalsato di 0.02, tagliando 
+poi le parti eccedenti e raccor-
+dando gli angoli.
+–  La rigatura è ottenuta con il 
+comando Serie, distanza tra le 
+righe 0.02.
+Fig. VI.12.1  Lavello.
+Piano cottura e frigorifero
+Per il disegno del piano cottura valgono le stesse indicazioni fornite per il lavello.
+–  Le linee interne sono sfalsate, con il comando Offset, di 0.02 su tre lati e di 0.06 sul quarto.
+–  Le manopole vanno realizzate con il comando Anello (Fig. VI.12.2).
+Per quanto concerne il frigorifero le operazioni da svolgere non hanno bisogno di ulte-
+riori commenti (Fig. VI.12.3).
+Tavolo e sedie della cucina
+L’arredamento della cucina si conclude con l’editazione del tavolo e delle sedie. Le 
+forme da disegnare sono abbastanza semplici e nella Fig. VI.12.4. sono visualizzate le 
+quote da rispettare.
+–  Si disegna tutto con il comando Linea.
+–  Il bordo interno della sedia è realizzato con Offset.
+–  Disegnare una sola sedia e poi lavorare con i comandi Copia, Specchio e Ruota per 
+editare le altre.
+Fig. VI.12.2  Piano cottura.
+Fig. VI.12.3  Frigorifero.
+
+[PAG 482]
+VI-108
+CAD
+Fig. VI.12.4  Tavolo e sedie cucina.
+12.3.2  Arredo del bagno
+Piatto doccia e bidet
+Per il bagno si andranno ad editare i sanitari a partire dalla doccia.
+–  Utilizzare sempre il comando Linea, sfalsare di 0.03 con Offset, tagliare le parti ecce-
+denti e raccordare con raggio 0.03.
+–  La rigatura è ottenuta con una Serie polare su un angolo di 90° (Fig. VI.12.5).
+–  Nel caso del bidet (Fig. VI.12.6) disegnare il contorno con il comando Linea.
+–  Sfalsare con Offset, tagliare e raccordare.
+–  Le manopole sono realizzate con il comando 
+Anello, con diametro interno 0 ed esterno 0.03.
+Fig. VI.12.6  Bidet.
+Fig. VI.12.5  Piatto doccia.
+
+[PAG 483]
+CAD
+VI-109
+WC e lavabo
+Per questi due sanitari (Figg. VI.12.7 e VI.12.8) seguire le avvertenze precedenti.
+Fig. VI.12.7  WC.
+Fig. VI.12.8  Lavabo.
+12.3.3  Arredo del soggiorno
+Il tavolo e le sedie del soggiorno
+Si seguano gli stessi suggerimenti dati per il tavolo e le sedie della cucina con il risul-
+tato di Fig. VI. 12.9.
+Fig. VI.12.9  Tavolo e sedie soggiorno.
+Divani a tre e quattro posti
+Si disegnino i contorni con il comando Linea seguendo le misure riportate in Fig. 
+VI.12.10. Per i braccioli e la testiera si raccordino le linee con raggio 0.05.
+
+[PAG 484]
+VI-110
+CAD
+Fig. VI.12.10  Divani a tre e quattro posti.
+12.4  Creare la definizione di blocco
+Sono stati disegnati gli oggetti di arredamento proposti, ma questi non sono ancora dei 
+blocchi. Per poterli usare come tali, bisogna prima definirli nel disegno.
+Ovviamente è possibile disegnare altri oggetti, o modificare quelli proposti.
+Per definire gli undici blocchi corrispondenti agli oggetti disegnati, sarà necessario 
+eseguire la stessa procedura per undici volte, sui differenti oggetti.
+Le uniche differenze saranno il nome da assegnare al blocco ed il punto di inseri-
+mento, contrassegnato nei disegni precedenti con una lettera, dalla A alla M.
+Verrà descritta in dettaglio, solo la definizione del primo blocco cioè il lavello.
+–  Utilizzare lo zoom per visualizzare al meglio il disegno del lavello.
+–  Fare clic sul pulsante Crea blocco, nella barra degli strumenti di disegno. In 
+alternativa è possibile scegliere, nel menu a discesa Disegna, Blocco, quindi Crea. 
+Si apre la finestra di dialogo Definizione di un blocco di Fig. VI.12.11.
+–  Digitare il nome del blocco lavello. Nella sezione Oggetti, fare clic sul pulsante Selez. 
+Oggetti. Viene chiusa la finestra di dialogo, per permettere di selezionare gli oggetti. 
+Selezionare con una finestra tutti gli oggetti che compongono il lavello e premere Invio
+per concludere la selezione. 
+–  Sempre nella sezione Oggetti, scegliere Elimina. In questo modo, dopo la definizione 
+di blocco, il disegno selezionato, viene cancellato. Nella sezione Punto base, fare clic sul 
+pulsante Seleziona punto. Nel disegno, fare clic, con Osnap attivato, sul punto A che 
+diventerà il punto di riferimento, quando il blocco verrà inserito. Controllare che sia sele-
+zionato Consenti esplosione, per avere la possibilità di esplodere negli elementi che lo 
+costituiscono il blocco stesso. Fare clic sul pulsante OK per concludere il comando.
+
+[PAG 485]
+CAD
+VI-111
+–  Ripetere la stessa procedura per 
+gli altri dieci elementi da trasfor-
+mare in blocchi, assegnando nomi 
+diversi e scegliendo il punto di inse-
+rimento indicato nelle figure.
+A questo punto nel disegno 
+sono memorizzate le definizioni 
+dei blocchi, che potranno essere 
+opportunamente inseriti quando e 
+dove necessitano.
+12.5  Inserimento dei blocchi
+È buona norma inserire i bloc-
+chi in un layer apposito, in modo 
+da poter decidere se visualizzarli o 
+no.
+–  Creare un nuovo layer con il 
+nome Arredo, assegnare il colore 
+verde e renderlo corrente. Eseguire 
+uno zoom sulla cucina della prima 
+villetta a sinistra.
+Fig. VI.12.11  Definizione di un blocco.
+12.5.1  Inserimento dei blocchi nella cucina
+–  Fare clic sul pulsante Inserisci, nel pannello Blocco della scheda Blocchi e 
+riferimenti. Si apre la finestra di Fig. VI.12.12. Fare clic sul pulsante con il trian-
+golino a destra della finestra Nome e scegliere lavello. Si controlli che, nella 
+sezione Punto di inserimento, sia evidenziato Specifica sullo schermo e che la Scala sia 
+impostata a 1. Fare clic sul pulsante OK. La finestra di dialogo si chiude e si ritorna 
+all’area di disegno, con il blocco richiamato collegato al puntatore. Nella riga di comando 
+viene chiesto il punto di inserimento del blocco con una serie di opzioni. Poiché si desi-
+dera allineare il lavello con la parete di destra digitare:
+R (che sta per Rotazione, seguito da Invio).
+90 (seguito da Invio).
+Ora il blocco è orientato 
+nella posizione corretta.
+–  Si desidera posizionare il 
+lavello ad una distanza di un 
+metro dalla parete orizzontale 
+superiore. Fare clic sul pul-
+sante Da, nella barra degli 
+strumenti di osnap. Fare clic 
+nell’angolo superiore sinistro, 
+punto X di Fig. VI.12.13. 
+Digitare:
+@1<90 (seguito 
+da Invio).
+Fig. VI.12.12  Menu Inserisci blocco.
+
+[PAG 486]
+VI-112
+CAD
+Fig. VI.12.13  
+Si inserisca ora il piano cottura lungo la parete 
+orizzontale in basso, alla distanza di 1.5 unità 
+dall’angolo sinistro della cucina.
+–  Attivare ancora il comando Inserisci. Selezio-
+nare il nome assegnato, fornello, e fare clic su OK. 
+Digitare:
+R (seguito da Invio).
+90 (seguito da Invio).
+Fare clic sul pulsante Da, nella barra degli stru-
+menti di osnap. Fare clic nell’angolo in basso a 
+sinistra, sul punto Y di Fig. VI.12.13. Digitare:
+@1.5<0 (seguito da Invio)
+–  Attivare ancora il comando Inserisci.
+–  Selezionare il nome assegnato, frigo, e fare clic 
+su OK. Digitare:
+R (seguito da Invio).
+180 (seguito da Invio).
+–  Fare clic sul pulsante Da, nella barra degli strumenti di osnap. Fare clic nello stesso 
+punto Y di Fig. VI.12.13. Digitare:
+@0.8<0 (seguito da Invio).
+–  Allo stesso modo inserire il tavolo in una posizione conveniente. Disegnare le due 
+linee mostrate in Fig. VI.12.13 per completare il piano di lavoro della cucina.
+12.5.2  Inserimento dei blocchi nel bagno
+Gli elementi del bagno vanno posizionati 
+lungo la parete superiore.
+–  Eseguire uno zoom sul bagno.
+–  Attivare il comando Inserisci, dal pannello 
+Blocco della scheda Blocchi e annotazioni. 
+Selezionare dall’elenco il blocco Doccia e fare 
+clic su OK. Poiché l’orientamento è già cor-
+retto, fare clic nel punto P di Fig. VI.12.14 per 
+posizionare il blocco.
+Fig. VI.12.14  
+–  Per gli altri blocchi, seguire la stessa procedura, posizionando il WC a 0.2 unità dal 
+lato sinistro della doccia, il bidet a 0.2 unità dal lato sinistro del WC, il lavabo a 0.1 unità 
+dal punto Q di Fig. VI.12.14.
+12.5.3  Inserimento dei blocchi nel soggiorno
+Il divano a 3 posti sarà posizionato lungo la parete orizzontale superiore, mentre quel-
+lo a quattro posti lungo la parete verticale a destra; il tavolo verrà posizionato in una zona 
+centrale in basso.
+–  Effettuare uno zoom sull’area del soggiorno.
+–  Attivare il comando Inserisci, dal pannello Blocco della scheda Blocchi e annotazioni. 
+Selezionare dall’elenco il blocco Divano3 e fare clic su OK. Fare clic sul pulsante Da, 
+nella barra degli strumenti di osnap. Fare clic nell’angolo in alto a destra, sul punto Z di 
+Fig. VI.12.15. Digitare:
+@.8<180 (seguito da Invio).
+
+[PAG 487]
+CAD
+VI-113
+–  Per il divano a quattro posti la procedura sarà identica e sarà sempre spostato di 0.8 
+unità dal punto Z, questa volta però verso il basso. 
+Fig. VI.12.15  
+–  Prima dell’inserimento sarà necessario 
+ruotarlo di 90°.
+–  Per finire inserire il tavolo in una posizione 
+conveniente (Fig. VI.12.5).
+Si potranno inserire i vari blocchi nelle 
+altre villette variandone la disposizione ed 
+eventualmente aggiungendone altri.
+12.6  Blocchi dell’impianto elettrico
+Si disegneranno ora i simboli di alcuni ele-
+menti dell’impianto elettrico, come interrutto-
+ri, deviatori, prese ecc. che saranno trasforma-
+ti poi in blocchi. Anche in questo caso i dise-
+gni saranno eseguiti sul layer 0, per fare acqui-
+sire ai blocchi le caratteristiche del layer di de-
+stinazione.
+–  Rendere corrente il layer 0. Dopo uno 
+Zoom tutto, eseguire uno Zoom finestra in una 
+zona in basso non occupata da nessun elemento di disegno.
+Si realizzino i seguenti semplici disegni, che rappresentano i simboli usati negli im-
+pianti elettrici, dei dispositivi specificati. Trattandosi di simboli non ha ovviamente senso 
+parlare di scala.
+I punti indicati dalle direttrici, indicano il punto di inserimento da usare nella defini-
+zione di blocco e le lettere il nome da usare per il blocco. 
+Come si potrà notare, uno dei simboli non è corretto, poiché viene disegnato seguendo 
+una normativa non più in vigore; si editi comunque il simbolo in questione come descritto 
+(Tab. VI.12.1), per poi poter verificare la ridefinizione del blocco.
+Tab. VI.12.1  Simboli da definire come blocchi
+Descrizione
+Simbolo
+Descrizione
+Simbolo
+Descrizione
+Simbolo
+Interruttore
+Punto luce 
+a parete
+Presa 
+da 10 A
+Deviatore
+Pulsante
+Presa 
+da 16 A
+Punto luce
+Pulsante 
+a tirante
+Suoneria
+
+[PAG 488]
+VI-114
+CAD
+12.6.1  Attributi
+Un attributo è un’etichetta che permette di associare un testo o dei dati ad un blocco.
+Nel caso specifico, si desidera associare agli organi di comando (interruttori, devia-
+tori, pulsanti) e ai punti luce delle lettere in modo da rendere chiaro da quale elemento è 
+comandato un determinato utilizzatore.
+–  Nel menu a discesa Disegna, scegliere Blocco e quindi Attributo. Si apre la finestra di 
+dialogo di Fig. VI.12.16. Nella casella Etichetta digitare Int; nella casella Messaggio digi-
+tare Nome?. Scegliere Mezzo come giustificazione del testo. Scegliere lo Stile di testo
+Standard ed assegnare una Altezza di 0.03. Fare clic sul pulsante Selez. punto; la finestra 
+di dialogo si chiude per permettere di indicare il punto: specificare il centro del cerchio 
+relativo all’interruttore. Fare clic sul pulsante OK per chiudere la finestra di dialogo.
+In questo modo, dopo aver 
+trasformato in blocco 
+l’interruttore, quando si 
+andrà ad inserirlo, verrà 
+richiesto il nome da asse-
+gnare, e questo nome sarà 
+posto nel centro del cerchio.
+Eseguire l’identica ope-
+razione sul deviatore, digi-
+tando Dev nella casella Eti-
+chetta come unica variante. 
+Eseguire la stessa opera-
+zione sul punto luce e sul 
+punto luce a parete digi-
+tando nella casella Etichetta
+rispettivamente L e LM e 
+selezionare un punto cen-
+trato sotto il simbolo.
+Fig. VI.12.16  Finestra Definizione attributo.
+Il risultato sarà quello di Fig. VI.12.17.
+Fig. VI.12.17  
+12.6.2  Definizione dei blocchi per l’impianto elettrico
+Per definire i blocchi da inserire nel disegno dell’impianto elettrico, si utilizzerà la 
+stessa procedura usata nella definizione dei blocchi di arredamento. Per quei blocchi ai 
+quali è associato un attributo, quando si selezionano gli oggetti che costituiscono il 
+blocco, è necessario selezionare anche l’etichetta dell’attributo.
+Sarà descritta a titolo di esempio solo la definizione di blocco dell’interruttore. 
+–  Fare clic sul pulsante Crea nel pannello Blocco della scheda Blocchi e attri-
+buti. Si apre la finestra di dialogo di Fig. VI.12.18. Nella casella Nome digitare Int. 
+Nella sezione Oggetti scegliere Elimina. Selezionare Consenti esplosione. Nella 
+casella Unità blocco scegliere Millimetri.
+
+[PAG 489]
+CAD
+VI-115
+–  Fare clic sul pulsante Selez. 
+oggetti, nel disegno selezionare con 
+una finestra il simbolo dell’interrut-
+tore, compreso l’attributo e premere 
+Invio.
+–  Fare clic sul pulsante Seleziona 
+Punto e nel disegno selezionare il 
+centro del cerchio relativo all'inter-
+ruttore. Fare clic su OK per conclu-
+dere.
+–  Eseguire le stesse operazioni per 
+gli altri simboli elettrici, assegnando 
+il nome ed il punto di inserimento 
+indicati nella Tab. VI.12.1.
+Fig. VI.12.18  Finestra Definizione di un blocco.
+12.6.3  Inserimento dei blocchi dell’impianto elettrico
+Per l’inserimento si faccia riferimento alla Fig. VI.12.20, ricordando che:
+a) Le prese da 16 A sono usate per gli elettrodomestici. 
+b) Nel bagno viene usato un pulsante a tirante che comanda la suoneria in cucina.
+c) Quando si inseriscono lampade e organi di comando, viene chiesto il nome. 
+d) Dovrà essere assegnata una lettera uguale, per specificare da quale elemento è 
+comandata una certa lampada.
+e) Tutti i blocchi possono essere ruotati dell’angolo desiderato, digitando R, seguito 
+da Invio e specificando l’angolo, prima dell’inserimento.
+–  Creare un layer di nome Elettr, assegnare il colore rosso e renderlo corrente. 
+Fare clic sul pulsante Inserisci, nel pannello Blocco della scheda Blocchi e attri-
+buti. Si apre la finestra di dialogo di Fig. VI.12.19. 
+Fig. VI.12.19  Finestra di dialogo Inserisci blocco.
+–  Digitare il nome del blocco, ad esempio Int, o sceglierlo tra quelli mostrati facendo 
+clic sul pulsante a destra della casella Nome (o su Sfoglia). Nell’area grafica il blocco sarà 
+collegato al puntatore e verrà richiesto il punto di inserimento. Se il blocco non deve 
+essere ruotato fare clic nel punto desiderato, aiutandosi eventualmente con l’osnap. Se è 
+necessario ruotarlo, prima di inserirlo digitare R, seguito da Invio; digitare l’angolo 
+seguito da Invio e quindi posizionarlo.
+
+[PAG 490]
+VI-116
+CAD
+–  Nel caso dell'interruttore, al quale era stato associato un attributo, alla riga di 
+comando comparirà la richiesta Nome? Digitare A per il primo elemento, ed il blocco 
+verrà posizionato con il suo attributo. Ripetere la stessa operazione per inserire tutti i 
+blocchi come in Fig. VI.12.20.
+Fig. VI.12.20  Inserimento dei blocchi elettrici.
+
+[PAG 491]
+CAD
+VI-117
+12.6.4  Aggiornamento della definizione di blocco
+Il simbolo usato per il blocco deviatore dell’impianto elettrico, è stato disegnato uti-
+lizzando una normativa sorpassata.
+Questa situazione può presentarsi spesso, sia per la variazione di norme, sia perché si 
+decide di apportare modifiche a blocchi definiti in precedenza. In questo caso non è 
+necessario sostituire tutti i blocchi già inseriti con quello modificato, ma ridefinendo il 
+blocco, AutoCAD aggiornerà automaticamente il disegno con i blocchi nella nuova ver-
+sione.
+–  Rendere corrente il layer 0, effettuare uno zoom in un’area libera qualsiasi.
+–  Fare clic sull’icona Inserisci, nel pannello Blocco della scheda Blocchi e attributi. 
+Selezionare dall’elenco il blocco Dev e fare clic sul pulsante OK. Posizionare sul disegno 
+il blocco del deviatore e dare Invio senza assegnare nessun attributo. Attivare il comando 
+Esplodi, dalla barra degli strumenti di modifica. 
+Fig. VI.12.21  
+–  Selezionare il blocco appena inserito e premere Invio, per concludere. Il 
+risultato sarà quello di Fig. VI.12.21. Poiché il blocco è stato esploso è pos-
+sibile modificarlo. Usare i comandi Cancella e Specchio, per aggiornare il 
+simbolo alla normativa attuale, come nella seguente Fig. VI.12.22.
+–  Fare clic sul pulsante Crea, nel pannello Blocco. Assegnare il nome Dev
+al blocco e seguire la procedura già vista per la creazione dei blocchi. Va 
+selezionato il nuovo simbolo, con il suo attributo. Dopo aver premuto OK
+compare una finestra che informa che il blocco Dev è già definito e viene 
+chiesto se si desidera ridefinirlo. Fare clic sul pulsante Si.
+Fig. VI.12.22  
+Andando ad osservare i blocchi inseriti dell’impianto elettrico, si vedrà che il vecchio 
+simbolo del deviatore è stato automaticamente sostituito da quello nuovo.
+12.7  Recinzione esterna
+I muretti esterni hanno sovrapposta una ringhiera metallica. Si desidera mostrare un 
+utilizzo del comando Misura, associato ad una definizione di blocco, per disegnare tale 
+ringhiera (Fig. VI.12.23).
+Fig. VI.12.23  
+–  Rendere 
+corrente 
+il 
+layer 
+esterno. Eseguire uno zoom nella 
+parte in basso a sinistra del disegno. 
+–  Fare clic sul pulsante Offset, 
+nella tavolozza degli strumenti 
+Edita. Digitare:
+0.1 (seguito da Invio).
+Fare clic sulla polilinea verti-
+cale esterna del muretto di destra, 
+per indicare l’oggetto da sfalsare. 
+Fare clic alla sua destra, per 
+indicare da quale parte sfalsare. 
+Fare clic sulla polilinea oriz-
+zontale più in basso. 
+Fare clic in un punto verso 
+l’alto. Premere Invio per conclu-
+dere il comando.
+
+[PAG 492]
+VI-118
+CAD
+12.7.1  Asta metallica della ringhiera
+Si disegnerà ora un cerchio pieno che rappresenta un’asta metallica di sostegno della 
+ringhiera.
+–  Attivare il comando Anello. Digitare:
+0 (e Invio, per specificare il diametro interno).
+0.05 (e Invio, per specificare il diametro esterno).
+Fare clic in un punto qualsiasi per posizionarlo. Premere Invio, per concludere il 
+comando. Fare clic sul pulsante Crea (blocco). Digitare il nome Asta. Fare clic sul pul-
+sante Selez. Oggetti e selezionare l’anello. Fare clic sul pulsante Seleziona punto e sce-
+gliere il punto centrale dell’anello. Fare clic sul pulsante OK, per concludere.
+12.7.2  Comando Misura
+Per attivare il comando digitare Misura seguito da Invio.
+Fig. VI.12.24  
+–  Selezionare la polilinea interna del muretto verti-
+cale a sinistra. Digitare:
+B (seguito da Invio, per indicare che si vuole specifi-
+care un Blocco). Digitare:
+Asta (seguito da Invio).
+Premere Invio per accettare di allineare il blocco. 
+Digitare:
+0.2 (seguito da Invio, per indicare la distanza tra i 
+blocchi).
+–  Ripetere le stesse operazioni sulla polilinea 
+interna dell’altro muretto perimetrale.
+–  Ingrossare le polilinee interne ai muretti usando il 
+comando Editpl assegnando una larghezza di 0.01.
+Il risultato è quello di Fig. VI.12.24.
+Eseguire le stesse operazioni sugli altri muretti perimetrali.
+12.8  Quotatura del disegno
+Il questo disegno si dovranno quotare sia elementi riguardanti l’intero complesso, sia 
+le dimensioni interne dei singoli alloggi, che dovranno essere rappresentati in scale 
+diverse. Sarà utile allora definire due stili di quote diversi da usare per la quotatura interna 
+e per quella esterna.
+Per non appesantire il disegno, sarà inoltre conveniente disegnare le quote su due 
+layer separati, in modo da rendere visibile solo quello sul quale sono poste le quote che 
+interessano.
+12.8.1  Stili di quota
+–  Fare clic su Stili di quota, nel menu a discesa Formato. Fare clic sul pulsante Nuovo, 
+per definire un nuovo stile, assegnare il nome Quote esterne e fare clic sul pulsante Conti-
+nua. Nella cartella Linee scegliere le impostazioni come in Fig. VI.12.25.
+–  Nella cartella Testo, scegliere Stile Standard con Altezza 0.4, Colore da layer, Posi-
+zionamento verticale Sopra, Orizzontale Centrato, Offset dalla linea di quota 0.2, alline-
+ato con linea di quota.
+–  Nella scheda Adatta, scegliere nelle Opzioni di adattamento Il testo o le frecce, nel 
+Posizionamento del testo Accanto alla linea di quota, Scala generale 1.
+–  Nella scheda Unità primarie, scegliere Formato decimale, Precisione 0.00, Separa-
+tore decimale punto, Fattore di scala 1, Soppressione dello zero finale.
+–  Fare clic sul pulsante OK.
+
+[PAG 493]
+CAD
+VI-119
+Fig. VI.12.25  Finestra di dialogo Nuovo stile di quote esterne.
+–  Fare ancora clic sul pulsante Nuovo, per definire un nuovo stile, assegnare il nome 
+Quote interne e fare clic sul pulsante Continua.
+–  Nella cartella Linee scegliere le impostazioni come in Fig. VI.12.26.
+–  Nella cartella Testo impostare una Altezza del testo 0.15 e un’Offset dalla linea di 
+quota di 0.05, lasciando invariate le altre voci. Le cartelle Adatta e Unità primarie riman-
+gono uguali a quelle dello stile precedente. Fare clic sul pulsante OK. Selezionare lo stile 
+Quote esterne, fare clic sul pulsante Imposta corrente e quindi su Chiudi.
+Fig. VI.12.26  Finestra di dialogo Nuovo stile di quote interne.
+
+[PAG 494]
+VI-120
+CAD
+12.8.2  Quote dell’area esterna
+–  Creare un nuovo layer dal nome quote esterne, assegnare il colore blu e renderlo cor-
+rente. Disegnare le principali quote esterne come in Fig. VI.12.27. 
+Fig. VI.12.27  Inserimento di quote esterne.
+12.8.3  Quote interne
+–  Creare un nuovo layer dal nome Quote interne, assegnare il colore blu e renderlo cor-
+rente. Richiamare Stile di quota dal menu a discesa Formato e rendere corrente lo stile 
+Quote interne.
+25.5
+18.85
+43
+36
+LATO OVEST
+6.2
+5.8
+3.8
+CUCINA
+BAGNO
+SOGG. PRANZO
+2.8
+1.3
+6.4
+LATO EST
+R6.2
+
+[PAG 495]
+CAD
+VI-121
+Conviene congelare i layer Arredo ed elettr per una maggior leggibilità.
+Fig. VI.12.28  Inserimento di quote interne.
+–  Effettuare degli zoom sulle parti interne desiderate e posizionare le quote, come 
+mostrato nella Fig. VI.12.28.
+Le quote sono state suddivise su due diverse villette per non appesantire troppo il 
+disegno in un’unica quotatura.
+
+[PAG 496]
+VI-122
+CAD
+13   SPAZIO CARTA
+Fino a questo punto si è sempre lavorato nello spazio modello, quello normalmente 
+attivato quando si apre AutoCAD. Si sarà notato che nella parte in basso a sinistra 
+dell’area grafica sono presenti tre cartelle: Modello, Layout1 e Layout2.
+Durante la creazione o la modifica del disegno il lavoro viene sempre svolto nella 
+scheda modello, nella quale è attivo lo spazio modello.
+Le schede di Layout, che utilizzano invece lo spazio carta, sono particolarmente utili 
+per impostare il disegno per la fase di stampa, permettendo di posizionare gli oggetti nel 
+modo più opportuno. Nella scheda di Layout viene mostrata un’area che rappresenta le 
+dimensioni del foglio di stampa utilizzato, e dei margini interni che delimitano l’area 
+effettivamente stampabile.
+Un vantaggio notevole dello spazio carta è che si possono posizionare più finestre 
+disposte a piacere, che possono essere stampate contemporaneamente. I contorni delle 
+finestre possono essere resi anche invisibili, in modo da stampare solo gli oggetti. È possi-
+bile congelare dei layer su alcune finestre, lasciandoli visibili in altre.
+Un ulteriore vantaggio è quello di poter assegnare due diverse scale allo spazio carta 
+ed allo spazio modello. Se gli oggetti disegnati sono abbastanza piccoli da essere conte-
+nuti nei limiti impostati per un foglio di formato A4, la stampa non presenta particolari 
+problemi, ma nel disegno di un edificio, si dovranno variare le dimensioni, per adattarlo 
+alle dimensioni del foglio. È quello che normalmente si fa quando si disegna in scala.
+ In realtà non è necessario calcolare tutte le dimensioni nella nuova scala. È conve-
+niente impostare i limiti del modello in modo da disegnare in scala reale, ed assegnare il 
+fattore di scala appropriato all’atto dell’impostazione del Layout.
+13.1  Preparazione dei Layout per la stampa della casa a schiera
+Per familiarizzare con lo spazio carta, si eseguirà la stampa di alcune viste del disegno 
+schiera.dwg, assegnando valori di scala precisi.
+Fig. VI.13.1  Finestra di dialogo Imposta pagina.
+–  Aprire il disegno schiera.dwg. Scongelare tutti i layer eccetto costruzioni; fare clic, 
+con il pulsante sinistro del mouse, sulla scheda Layout1.
+
+[PAG 497]
+CAD
+VI-123
+–  Fare clic sul menu a discesa File, e quindi su Gestione impostazioni pagina e ancora 
+sul pulsante Modifica della finestra di dialogo che appare. La finestra di Fig. VI.13.1 per-
+mette di assegnare le modalità di stampa.
+–  Controllare che il dispositivo di stampa sia quello effettivamente usato e le dimensioni 
+del foglio quelle desiderate, in questo caso il formato A4.
+–  Controllare che alla voce Area di stampa sia selezionata la casella millimetri; inoltre 
+controllare che l’Area di stampa sia il Layout. Impostare un Orientamento orizzontale, 
+una Scala di stampa 1:1. Assegnare come Nome di layout Pianta generale e fare clic sul 
+pulsante OK.
+Alla chiusura della finestra di dialogo verrà visualizzato un rettangolo bianco che rap-
+presenta il foglio con tratteggiati i margini dell’area di stampa.
+Si noti che l’icona visibile a sinistra in basso, non ha più l’aspetto consueto, ma rap-
+presenta una squadra, per indicare che si sta utilizzando lo spazio carta.
+13.2  Inserimento della squadratura
+Sarebbe possibile disegnare la squadratura nello spazio carta ma, poiché ne è già stata 
+disegnata una, delle dimensioni volute, si userà quella.
+–  Fare clic sul pulsante Inserisci blocco, nella barra degli strumenti di disegno. Si apre 
+la finestra di Fig. VI.13.2.
+Fig. VI.13.2   Finestra di dialogo Inserisci blocco.
+–  Fare clic sul pulsante Sfoglia, nella directory di lavoro, selezionare il file Squadra-
+tura.dwg e fare clic sul pulsante Apri. Trascinare la squadratura e fare clic quando risulta 
+centrata sull’area stampabile. Esplodere la squadratura e, usando il comando Ddedit, cam-
+biare il titolo e la data; nell’ultima riga della tabellina sostituire la stringa di testo esistente 
+con la scritta Pianta complessiva, scala 1:200.
+13.3  Creazione della finestra
+–  Definire un nuovo layer con il nome Finestre e renderlo corrente. 
+–  Fare clic su Visualizza, nel menu a discesa, e poi su Finestre, e quindi 1 finestra. Fare 
+clic vicino all’angolo della squadratura in alto a sinistra e trascinare il puntatore in basso a 
+destra. 
+–  Si apre una finestra che contiene tutto il disegno, con tutti gli oggetti presenti nei layer 
+non congelati.
+
+[PAG 498]
+VI-124
+CAD
+–  È come se si ritagliasse una finestra di quelle dimensioni, attraverso la quale è possi-
+bile vedere l’oggetto presente nello spazio modello.
+Si tenga presente però che, nello spazio carta, gli oggetti sono le finestre, non quello 
+che vi è contenuto. Digitando un comando di modifica, ad esempio cancella, si cancellerà 
+la finestra, non qualche elemento del disegno in essa contenuto.
+Le dimensioni degli oggetti rappresentati vengono inoltre adattati alle dimensioni 
+della finestra stessa. Desiderando visualizzarli con una determinata scala è necessario spe-
+cificarlo.
+13.4  Assegnare una scala agli oggetti nelle finestre
+–  È possibile conoscere la scala con cui il disegno di AutoCAD è visualizzato nella fine-
+stra. Fare clic su un contorno della finestra per selezionarla; fare clic sul pulsante Pro-
+prietà, nella barra degli strumenti standard. Nella finestra Proprietà, sotto la voce Scala 
+personalizzata, si leggerà il valore della scala che, come mostrato in Fig. VI.13.3, vale 
+5.26.
+Fig. VI.13.3   Finestra di dialogo Proprietà.
+Quando si sono impostati i limiti, si è supposto di far corrispondere ad una unità di 
+disegno un metro. Nell’impostazione di pagina si è specificata l’area di stampa in milli-
+metri. Dunque ad un millimetro nel disegno corrisponde un metro nelle dimensioni reali, 
+quindi una scala 1:1000. La scala con cui viene attualmente visualizzato il disegno è 
+quindi
+cioè una scala 1 a 190 circa.
+–  Volendo usare una scala normalizzata 1:200 sarà quindi necessario indicare una Scala 
+personalizzata di 5; ciò sarà possibile, andando a digitare il dato alla corrispondente voce 
+Scala personalizzata nella finestra Proprietà.
+–  Un’altra opportunità consiste nell’attivare lo spazio 
+modello affiancato, con un clic sul pulsante Carta, nella 
+barra di stato; il bordo della finestra apparirà ingrossato e il 
+5.26
+1
+1000
+-----------
+
+1
+190.1
+-------------
+=
+
+[PAG 499]
+CAD
+VI-125
+puntatore al suo interno avrà la forma consueta, mentre al di fuori assumerà la forma di 
+una freccia. Si è passati in questo modo allo spazio modello affiancato, pur se la visualiz-
+zazione sembra ancora quella dello spazio carta; sarà possibile con questa modalità agire 
+sugli elementi del modello. Digitare:
+Z (per Zoom, seguito da Invio)
+5XP (seguito da Invio).
+Il numero 5 seguito da X indica il fattore di scala, la lettera P indica che la scala viene 
+specificata rispetto allo spazio carta.
+–  Centrare il disegno rispetto alla squadratura utilizzando il comando Pan. Con questa 
+scala, le quote interne, i simboli elettrici e l’arredamento hanno poco significato e ren-
+dono poco comprensibile il disegno. È preferibile non visualizzarli. 
+–  Fare clic sul pulsante Proprietà Layer nel pannello Layer. Si noti che esistono due 
+nuove colonne che non erano presenti quando si apriva la finestra di gestione dei layer 
+dallo spazio modello. La penultima colonna, Congela finestra attiva, permette di conge-
+lare i layer specificati solo nella finestra che è attiva in questo momento. 
+–  Fare clic su Congela finestra attiva, in corrispondenza dei layer Arredo, Elett, Fine-
+stre, Quote interne, quindi fare clic sul pulsante OK.
+–  Ora il disegno è pronto per la stampa in scala 1:200.
+–  Fare clic su Imposta pagina, nel menu a discesa File e di nuovo sul pulsante Stampa.
+13.5  Stampa di un interno
+Si desidera preparare un layout per una stampa più dettagliata in scala 1:100 che 
+mostri le quote interne degli alloggi.
+–  Fare clic sulla cartella Layout 2. Controllare le impostazioni di pagina e assegnare al 
+layout il nome Pianta 1. Scegliere questa volta un Orientamento del disegno Verticale e 
+concludere con un clic su OK.
+–  Fare clic sul pulsante Inserisci (blocco), nel pannello Blocco. Fare clic sul pulsante 
+Sfoglia, selezionare il file Squadratura.dwg nella directory di lavoro e fare clic sul pul-
+sante Apri. Digitare:
+R (per Ruota, seguito da Invio)
+90 (e Invio, per ruotare la squadratura di 90°).
+Trascinare la squadratura e fare clic quando risulta centrata sull’area stampabile. 
+–  Esplodere la squadratura e, usando il comando Ddedit, cambiare il titolo e la data; nel-
+l’ultima riga della tabella cambiare il testo in Pianta, scala 1:100.
+–  Rendere corrente, se non lo è già, il layer Finestre. Fare clic su Visualizza, nel menu a 
+discesa, e quindi su Finestre e poi 1 finestra. Fare clic vicino all’angolo della squadratura 
+in alto a sinistra e trascinate il puntatore in basso a destra, senza sovrapporsi al blocco del 
+titolo. 
+–  Si otterrà il risultato di Fig. VI.13.4, dove la finestra mostra tutto il disegno in una 
+scala non precisata.
+–  Attivare lo spazio modello affiancato, con un clic sul pulsante Carta, nella barra di 
+stato. Digitare:
+Z (seguito da Invio).
+10XP (seguito da Invio).
+Ora la visualizzazione è ingrandita di dieci volte rispetto alle unità dello spazio carta, 
+quindi la scala di stampa sarà 1:100. Usare il comando Pan per visualizzare le prime due 
+villette a sinistra come nella Fig. VI.13.5.
+–  Congelare nella finestra corrente i layer Arredo, Elett, Finestre, Quote esterne. Tor-
+nare allo spazio carta e fare clic su Imposta pagina, nel menu a discesa File e fare clic sul 
+pulsante Stampa.
+
+[PAG 500]
+VI-126
+CAD
+Fig. VI.13.4  
+13.6  Layout della cucina
+Si desidera impostare un layout per la stampa della cucina, con arredo e dispositivi 
+elettrici, in scala 1:20. Si inserirà inoltre un particolare del lavello in scala 1:10
+–  Fare clic con il pulsante destro del mouse su una cartella di layout e scegliere Nuovo 
+Layout. Comparirà una nuova cartella contrassegnata con Layout 1. Aprire la finestra 
+Imposta pagina, se non si apre da sola; assegnare le solite impostazioni, con Orienta-
+mento del disegno Orizzontale, facendo attenzione all'area di stampa che in genere è 
+espressa in pollici, mentre si dovrà scegliere millimetri. Assegnare il nome Cucina.
+–  Inserire il blocco della squadratura e dopo averlo esploso, cambiare titolo e data. 
+Nell'ultima riga della tabella sostituire il testo con Arredo cucina, scala 1:20.
+–  Rendere corrente, se non lo è già, il layer Finestre. Fare clic su Visualizza, nel menu a 
+discesa, e quindi su Finestre, e poi 1 finestra. Fare clic vicino all'angolo della squadratura 
+in alto a sinistra e trascinare il puntatore in basso a destra, senza sovrapporsi al blocco del 
+titolo. 
+–  Si otterrà il risultato della Fig. VI.13.6, dove la finestra mostra tutto il disegno in una 
+scala non precisata. Attivare lo spazio modello affiancato, con un clic sul pulsante Carta, 
+nella barra di stato. Digitare:
+Z (seguito da Invio).
+50XP (seguito da Invio).
+
+[PAG 501]
+CAD
+VI-127
+Fig. VI.13.5
+
+[PAG 502]
+VI-128
+CAD
+Fig. VI.13.6
