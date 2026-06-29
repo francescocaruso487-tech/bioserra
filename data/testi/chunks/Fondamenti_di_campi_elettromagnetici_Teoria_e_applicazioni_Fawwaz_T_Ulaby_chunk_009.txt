@@ -1,0 +1,1152 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 9/23 ===
+Chars: 44,909 | Offset: 359,471
+
+
+
+dV = -E-dl (4.49)
+Per una funzione scalare V, la (3.73) fornisce
+dV = VV dl, (4.50)
+
+dove VY è il gradiente di V. Confrontando la (4.49) e la (4.50) si ottiene
+
+E=-VV. (4.51)
+
+Questa relazione tra V ed E in forma differenziale permette di determinare il campo
+E per una qualsiasi distribuzione di carica, calcolando prima V utilizzando le espres-
+sioni mostrate nei paragrafi precedenti (dal 4.5.1 al 4.5.3) e successivamente calco-
+Jando l’opposto del gradiente di V per determinare E. Le espressioni di V, in (4.47) e
+(4.486), comportano il calcolo di sommatorie e integrali scalari, che sono, general-
+mente, più semplici delle sommatorie e integrali vettoriali che compaiono nelle
+espressioni di E ottenute nel Paragrafo 4.3 sfruttando la legge di Coulomb. Quindi
+anche se il metodo del potenziale elettrico per determinare E è un processo che ri-
+chiede due passaggi, è dal punto di vista del calcolo più semplice da applicare rispet-
+to al metodo diretto basato sulla legge di Coulomb.
+
+Esempio 4.7 Campo elettrico di un dipolo elettrico
+
+Un dipolo elettrico consiste in due cariche puntuali aventi ugual modulo e polarità op-
+posta, separate da una piccola distanza come mostrato in Figura 4.13(a). Si calcoli il po-
+tenziale V e il campo E in ogni punto P dello spazio libero a una distanza R > d, dove
+d è la separazione tra le due cariche.
+
+Soluzione Il potenziale elettrico generato da una singola carica puntuale è dato dalla
+(4.45). Nel caso delle due cariche mostrate in Figura 4.13(a) applicando la (4.47) si ot-
+
+tiene
+pal È += 1 (RR)
+Arco (Ri | R Amey \ RR
+Poiché d « A le linee indicate con R; e R2 in Figura 4.13(a) sono approssimativamente
+parallele e in questo caso si possono considerare le seguenti approssimazioni:
+
+Ra -Ri=dcosì,  RBb&R.
+
+Quindi,
+Ve gd cos 9
+
+or (4.52)
+
+163
+
+[PAG 90]
+Capitolo 4 — Elettrostatica
+
+z PR, 0, $)
+
+dcos@
+
+(a) Dipolo elettrico (b) Linee di campo elettrico
+
+Figura 4.13 Dipolo elettrico con momento di dipolo p = gd (Esempio 4.7).
+
+Ii numeratore della (4.52) può essere scritto come prodotto scalare di qd, dove dè il
+vettore distanza tra la carica --q e la carica +g, e il versore R punta dal centro del dipo-
+lo al punto di osservazione P, .
+
+qdeost=q-R=p-È, (4.53)
+dove p = gd è chiamato il momento di dipolo del dipolo elettrico. Utilizzando la (4.53)
+nella (4.52) si ricava
+
+(dipolo elettrico). (4.54)
+
+4itegR?
+
+In coordinate sferiche, fa (4.51) è esprimibile come
+
+3 319, 1 a) 4.55
+n= vr = (REF tO Rae 36)? (4.55)
+
+dove si è utilizzata per VV l’espressione data nelle pagine finali del libro. Calcolando
+le derivate di V, espresso dalla (4.52), rispetto a R e @ e sostituendo i risultati nella
+(4.55) si ottiene
+
+qd
+
+Es TE (R2 cos 4+ 6 sin 6). (Vim). (4.56)
+
+Si deve, tuttavia, osservare che le espressioni di V ed E, date dalla (4.54) e dalia (4.56),
+sono valide solo quando R >> d. Per calcolare Y ed E nei punti in prossimità delle due
+cariche che formano il dipolo, è necessario ripetere i calcoli senza adottare l’approssi-
+mazione di campo lontano che ha permesso di scrivere la (4.52). La soluzione rigorosa
+per E consente di determinare le linee di campo come indicato in Figura 4.13(b).
+
+4.5.5 Equazione di Poisson
+Dato che D = ef, la forma differenziale della legge di Gauss data dalla (4.26) può
+anche essere scritta come
+ve=®. (4.57)
+Inserendo la (4.51) nella (4.57) si ha
+v.(7M)= =. (4.58)
+
+Noe BA) ee en _
+
+4.6 Proprietà elettriche dei materiali
+
+Sulla base della definizione del Laplaciano di una funzione scalare Y dato dalla
+
+OV BY BY
+VY =V-(VV) ae t o’ (4.59)
+
+la (4.58) può essere portata in forma compatta come segue
+
+VV = -£ (equazione di Poisson). . (4.60)
+
+Questa è nota come equazione di Poisson. Per un volume v’ che contiene una densità
+di carica volumetrica p, l’espressione di V ottenuta precedentemente ed espressa dal-
+la (4.48) come 1
+Pe 1
+V=—] d 4.61
+
+4ne Jy R id (4.6)
+soddisfa la (4.60). Se il mezzo che si sta considerando non contiene cariche libere, la
+(4.60) si riduce a
+
+VV =0 (equazione di Laplace),
+
+ed è indicata come equazione di Laplace. Le equazioni di Poisson e di Laplace sono
+utili per determinare il potenziale elettrostatico in zone ai cui bordi V è noto, come per
+esempio la zona tra le piastre di una capacità con una data differenza di potenziale.
+
+Domande di verifica
+
+4.10 Cos'è un campo conservativo?
+
+4.11. Perché il potenziale elettrico in un punto dello spazio è sempre definito in mo-
+do relativo rispetto a un altro punto assunto come riferimento?
+
+4.12. Si spieghi perché la (4.60) rappresenta una formulazione matematica della leg-
+ge di Kirchoff sulle tensioni.
+
+4.13 Perché di solito risulta più semplice calcolare il potenziale V per una data di-
+stribuzione di carica e poi determinare E dalla relazione E = ~VV piuttosto
+che calcolare E direttamente dalla legge di Coulomb?
+
+4.14. Cos'è un dipolo elettrico?
+
+Esercizio 4.10 Si determini il potenziale elettrico nell’origine generato da quattro cari-
+che ciascuna di 20 uC. Le cariche sono poste nel vuoto ai vertici di un quadrato che gia.
+ce nel piano x ~ y e centrato nell’origine. Il quadrato ha lato paria 2 m.
+
+SoLuzione V = 2 x 10-5/(xe9) (V).
+
+Esercizio 4.14 Un conduttore cavo sferico di raggio R ha una densità di carica superfi-
+ciale uniforme ps. Si calcoli il potenziale elettrico al centro del conduttore cavo.
+SoLuzione V = psR/e (V). .
+OR IAT MT TTT
+
+4.6 Proprietà elettriche dei materiali
+
+I parametri elettromagnetici costitutivi di un mezzo materiale sono la permittività
+elettrica e, la permeabilità magnetica ys e la conducibilità ¢. Un materiale è detto
+omogeneo se i suoi parametri costitutivi non variano con la posizione, mentre è detto
+isotropo se i parametri costitutivi sono indipendenti dalla direzione. La maggior parte
+
+165
+
+[PAG 91]
+166
+
+Capitolo 4 - Elettrostatica
+
+dei materiali presentano proprietà isotrope, tranne alcuni cristalli. In questo libro, tut-
+ti i materiali sono assunti omogenei e isotropi. In questo capitolo ci si occuperà sola-
+mente delle proprietà elettriche, ovvero quelle riguardanti e e o. Le proprieta magne-
+tiche descritte attraverso 4 verranno prese in considerazione nel Capitolo 5.
+
+La conducibilità di un materiale è la misura di quanto facilmente gli elettroni sono
+in grado di scorrere attraverso il materiale se sottoposti a un campo elettrico estemo.
+I materiali sono classificati come conduttori (metalli) o dielettrici (isolanti) a seconda
+della loro conducibilità. Un conduttore ha un numero elevato di elettroni degli orbita-
+li più esterni degli atomi che sono liberi di muoversi. In assenza di un campo elettri-
+co esterno questi elettroni liberi si muovono in direzione casuale e con diverse veloci-
+tà. Questo moto casuale produce una corrente che è complessivamente nulla all’inter-
+no del conduttore. Tuttavia, applicando un campo elettrico esterno, gli elettroni si
+spostano da un atomo all’altro in modo ordinato in direzione opposta a quella del
+campo. Il loro moto, che è caratterizzato da una velocità media chiamata velocità di
+deriva elettronica u,, dà origine a una corrente di conduzione.
+
+In un dielettrico gli elettroni sono legati saldamente agli atomi tanto che è difficile
+svincolarli anche sottoponendo il materiale all’azione di un campo elettrico molto in-
+tenso. Di conseguenza non vi sono flussi di corrente attraverso il materiale. Un dielet-
+trico perfetto è un materiale con o = 0, contrariamente ad a un conduttore perfetto in
+cui o = co. La conducibilità o nella maggior parte dei metalli varia nell’intervallo da
+10° a 107 S/m, mentre per buoni isolanti o è compreso tra 107!° e 10-!7 (Tabella 4.1).
+no detti semiconduttori. La conducibilità del germanio puro per esempio è 2.2 S/m.
+I valori tabulati di o per alcuni materiali comuni a temperatura ambiente (20°) sono ri-
+portati nell’ Appendice B; alcuni di questi sono indicati nella Tabella 4.1.
+
+La conducibilità di un materiale dipende da diversi fattori, compresa la temperatura
+e la presenza di impurità. In generale o nei metalli cresce al decrescere della tempera-
+tura e a temperature molto basse, prossime allo zero assoluto, alcuni conduttori di-
+ventano superconduttori poiché la loro conducibilità diventa praticamente infinita.
+
+Tabella 4.1 Conducibilità di alcuni materiali comuni a 20°.
+
+Materiale Conducibilità, 0 (S/m)
+Conduttori
+
+Argento 62x10”
+Rame 5.8 x 107
+Oro 4.1 x 10"
+Alluminio 3.5 x 107
+Ferro 107
+Mercurio 108
+Carbonio 3x 10%
+Semiconduttori
+
+Germanio puro 22
+
+Silicio puro 4.4.x 10-4
+Isolanti
+
+Vetro 10712
+Paraffina 10715
+Mica 10-18
+Quarzo fuso 10717
+
+Domande di verifica
+
+4.15 Cosa sono i parametri elettromagnetici costitutivi di un mezzo materiale?
+
+4.16 Cosa classifica un materiale come conduttore, semiconduttore o dielettrico?
+Cos'è un superconduttore?
+
+4.17 Quanto è la conducibilità di un dielettrico perfetto?
+
+47 Conduttori
+4.7 Conduttori
+
+La velocità di deriva degli elettroni u, in un materiale conduttore è legata al campo
+elettrico esterno applicato E attraverso
+
+Ue=—HeE (m/s), (4.62a)
+
+dove 4» è una proprietà del materiale chiamata mobilità elettronica con unità di misu-
+ra (m?/V-s). In un semiconduttore, il flusso di corrente è dovuto al moto sia di elettro-
+ni che di lacune, e poiché le lacune sono portatori di carica positiva, la velocità di de-
+riva delle lacune uy, ha la stessa direzione del campo E,
+
+Uy = E (m/s), (4.626)
+
+dove ju, è la mobilità delle lacune. La mobilità tiene conto della massa efficace della
+particella carica e del percorso medio lungo il quale il campo elettrico applicato è in
+grado di accelerarla prima che essa collida con un altro atomo, e il campo inizi ad ac-
+celerarla di nuovo. Dalla (4.11) la densità di corrente contenente una densità di carica
+volumetrica p, che si muove a una velocità u è J = pyu. Nel caso presente la densità
+di corrente consiste in una componente J, dovuta agli elettroni e un’altra J, dovuta
+alle lacune. Quindi la densità di corrente di conduzione è
+
+J=Je+In = pvetle + pain (A/m)?. (4.63)
+Utilizzando la (4.622) e la (4.62b) si ottiene ° .
+J = (Preble + Punta )E, (4.64)
+
+dove pre = —Nee e pyr = ~Nye, con N. € N; numero di elettroni e lacune libere per
+unità di volume, e e = 1.6 x 107! C è la carica assoluta di un singolo elettrone 0 di
+una lacuna. La quantità tra parentesi nella (4.64) è definita conducibilità del materia-
+le, o. Pertanto
+
+velle + Pvnitn = (Nette + Nupine (S/m) (semiconduttore), (4.65)
+
+e ia sua unità di misura è siemens per metro (S/m). Per un buon conduttore,
+Natth < Nefte € la (4.65) si riduce a
+
+o =~Pyefte = Noise (S/m) (conduttore). (4.66) |
+
+In entrambi i casi, la (4.64) diventa
+
+J=0E (Alm?) (Legge di Ohm) | (4.67)
+
+e viene detta legge di Ohm in forma puntuale. Si osservi che in un dielettrico perfetto
+cono = 0, J = 0 indipendentemente dal campo E, mentre in un conduttore perfetto
+cono = 00, E= J/o = 0 indipendentemente da J. Cioè,
+
+dielettrico perfetto: J=0
+
+conduttore perfetto: E=0
+
+Poiché o è dell’ordine di 10° S/m per la maggior parte dei metalli, come l'argento, il
+tame, l’oro e l’alluminio (Tabella 4.1), si assume che E = 0 nei conduttori metallici.
+
+167
+
+[PAG 92]
+168
+
+‘sò in ogni pinto del conduttore. Questa proprietà è una diretta conseguenza del fat
+
+Capitolo 4 — Elettrostatica
+Un conduttore perfetto è un mezzo equipotenziale, cioè il potenziale elettrico è lo stes-
+
+che Vy1, ia differenza di potenziale tra due punti interni del conduttore, è per definizio-
+ne uguale all’integrale di linea del campo E tra i due punti come indicato dalla (4.39).
+Dato che E = 0 in ogni punto di un conduttore perfetto, la differenza di potenziale
+Va; = 0. Il fatto che il conduttore sia un mezzo equipotenziale, tuttavia, non implica
+necessariamente che la differenza di potenziale tra il conduttore e un altro conduttore
+sia nulla. Ogni conduttore è un materiale equipotenziale, ma la presenza di differenti
+distribuzioni di carica sulla superficie può generare una differenza di potenziale.
+
+Esempio 4.8 Corrente di conduzione in un filo di rame
+
+Un filo di rame dal diametro di 2 mm con conducibilità 5.8 x 107 S/m e mobilità elet-
+tronica 0.0032 (m?/V - s) è soggetto a un campo elettrico di 20 (mV/m). Si determini
+(a) la densità di carica di volume degli elettroni liberi, (b) la densità di corrente, (c) la
+corrente che scorre nel filo, (d) la velocità di deriva degli elettroni e infine (e) la densità
+di volume degli elettroni liberi.
+
+Soluzione
+
+(a) pom Sn SSO 1a x 10° (C/m?).
+(>) J = GE =5.8 X10? x 20 x 1073 = 1.16 x 105 (A/m?).
+©) rain s() = LI6x jos) =3.64 A.
+@ Ue = — pieE = —0.0032 x 20 x 1073 = -6.4 x 1075 mvs.
+
+Il segno meno indica che u, ha direzione opposta rispetto al campo E.
+
+IO) N = — Pe = = 1.13 x 10” elettroni/m?.
+
+Esercizio 4.12 Si calcoli ia densità degli elettroni liberi nell’alluminio considerando che
+la sua conducibilità è 3.5 x 10” (S/m) e la sua mobilità elettronica è 0.0015 (m?/V - s).
+
+SoLuzione N, = 1.46 x 10° (elettroni/m?).
+
+EseRciZIO 4.13 La corrente che scorre attraverso un filo conduttore lungo 100 m e aven-
+te sezione uniforme ha una densità di 3 x 10° (A/m?). Si.caicoli la caduta di potenziale ai
+capi del filo se il materiale di cui è composto ha conducibiltà 2 x 107 (S/m).
+
+Soiuzione V = 1.5 (V).
+
+£.74 Resistenza
+
+Un modo di dimostrare l’utilizzo della legge di Ohm in forma puntuale è quello di
+sfruttarla per calcolare un’espressione della resistenza R di un conduttore di lunghez-
+za le sezione trasversa A, come mostrato in Figura 4.14. Il conduttore è orientato lun-
+go l’asse x e si estende tra i punti x) e x2, quindi / = x. — x1. Un potenziale V appli-
+
+47 Conduttori
+
+cato ai capi del conduttore genera un potenziale elettrico E = X£,; la direzione di E è
+dal punto con potenziale maggiore (punto | in Figura 4.14) al punto con potenziale
+minore (punto 2). La relazione tra V e E; si ottiene applicando la (4.39). Cioè,
+
+x i
+r=n-5=-/ -A--/ sE, -îdl=El (V). (4.68)
+x A
+Utilizzando la (4.67), la corrente che scorre attraverso la sezione A nel punto x2 è
+t= [t-as~ frids- ord (A). (4.69)
+‘A A
+
+Dalla relazione R = Y/I, il rapporto tra la (4.68) e la (4.69) fornisce
+
+L
+oA
+
+= (Q). (4.70)
+I risultati ottenuti per R possono essere generalizzati al caso di una resistenza qualsia-
+si avente forma arbitraria, osservando che la tensione ai capi della resistenza è
+uguale all’integrale di linea del campo E lungo un percorso / qualsiasi che collega i
+due punti specificati e che la corrente / è uguale al flusso di J attraverso la superficie
+S del resistore. Pertanto
+
+Mae LL fra (4.7)
+
+I [sa [oa
+Ss s
+
+La grandezza reciproca di R è chiamata conduttanza G e l’unità di misura di G è
+(Q75) o siemens (S). Per un resistore lineare,
+
+1 oA
+Gaze (S). (4.72)
+
+Esempio 4.9 Conduttanza di un cavo coassiale
+
+Il raggio interno ed esterno di un conduttore coassiale di lunghezza / sono a e è rispetti
+vamente (Figura 4.15). Il materiale isolante ha una conducibilità o. Si ricavi un’espres-
+sione per G’, la conduttanza per unità di lunghezza dello strato di isolamento.
+
+169
+
+Figura 4.14
+
+~ Resistore lineare avente ~~
+
+sezione A e lunghezza /
+collegato a un generatore
+di tensione V.
+
+[PAG 93]
+170
+
+Capitolo 4 — Elettrostatica
+
+Figura 4.15 Cavo coassiale dell’Esempio 4.9.
+
+Soluzione Si indichi con / la corrente totale che scorre dal conduttore interno a quel-
+lo esterno attraverso il materiale isolante. Ad una distanza r dall’asse del centro del con-
+duttore, l’area attraverso la quale scorre la corrente è A = 2771. Quindi,
+
+af. I
+J= Posto (4.73)
+e dalla relazione J = cE,
+I
+=f 4,74)
+Eat 2norl (4.74)
+
+In un resistore la corrente scorre dal poteziale maggiore a quello minore. Quindi, se J è
+in direzione f, il conduttore intemo deve essere a potenziale maggiore del conduttore
+intemo. Di conseguenza, la differenza di potenziale tra i conduttori è
+
+a © I fd I. (b
+Ya=- [ E-A=-f pitt - 52): (4.75)
+
+La conduttanza per unita di lunghezza risulta pari a
+
+g=fe1-j = Pro
+
+RI Val In(b/a)
+
+(S/m). (4.76)
+
+4.7.2. Legge di Joule
+
+Si consideri ora la potenza dissipata in un conduttore in presenza di un campo elettro-
+statico E. Il mezzo contiene elettroni e lacune libere con densità di carica di volume
+Pre € Pn rispettivamente. La carica degli elettroni e delle lacune contenute in un ele-
+mento di volume Av è ge = pyeAv e gx = pyxAy, rispettivamente. Le forze elettriche
+che agiscono su ge € g4 sono F. = geE = pyEAv e Fi = qE = paEAv. Il lavoro
+(energia) speso dal campo elettrico nel muovere gs di una distanza differenziale Al
+e qi di una distanza Al; è
+
+AW=F;- Aly +F Alb. {4.77)
+
+La potenza P, misurata in watts (W), è definita come la variazione di energia nell’u-
+nità di tempo. La variazione di potenza che corrisponde a AW è quindi
+
+AW _. Ak Al, | _
+apart Ap Pete + Fath = (478)
+
+= (0vE- Ue + Em) AV = E- J Ay
+
+AP= +F,
+
+48 Dielettrici
+
+dove u, = Al,/A¢ è la velocità di deriva degli elettroni, mentre u, = Aix/Ar è la
+velocità di deriva delle lacune. L'equazione (4.63) è-stata utilizzata: nell’uitimo -pas-
+saggio per la derivazione della (4.78). Per un volume v, la potenza totale dissipata è
+
+p= [e-sév (W) (Legge di Joule), (4.79)
+v
+
+e in base alla relazione data dalla (4.67),
+P= [ olEP ay (W). (4.80)
+L,
+
+L'equazione (4.79) è una formulazione matematica della legge di Joule. Nel caso del-
+la resistenza dell’esempio considerato prima, |E| = E; e il suo volume è v=/A.
+Riserivendo l’integrale di volume della (4.80) nel prodotto di un integrale di superfi-
+cie su A e di un integrale di linea lungo /, si ottiene
+
+= | olEPdv= = = .
+P= / EP dy / ob, ds / E,dl = (oE,A)(E) =1V (W) (481)
+
+dove si è fatto ricorso alla (4.68) per esprimere la tensione V e della (4.69) per la cor-
+rente J. Poiché V = JR si ottiene l’espressione nota
+
+P=PR (W). (4.82)
+
+Domande di verifica
+
+4.18 Qual é la differenza fondamentale tra un isolante, un semiconduttore e un con-
+duttore?
+
+4.19 Si dimostri che la potenza dissipata nel cavo coassiale di Figura 4.15 è
+P =F in(b/a)/(2xol).
+
+Esercizio 4.14 Un filo di rame lungo 50 m ha una sezione circolare con raggio r = 2
+cm. Dato che fa conducibilità del filo di rame è 5.8 x 10” (S/m), si calcoli (a) la resisten-
+za R del filo e (b) la potenza dissipata nel filo se la tensione applicata ai suoi capi è 1.5
+
+(mv).
+SOLUZIONE (a) R = 6.9 x 1040, (b) P= 3.3 (mW).
+
+Esercizio 4.45 Si ripeta la parte (b) dell’Esercizio 4.14 applicando la (4.80).
+
+4.8 Dielettrici
+
+Come è stato discusso precedentemente, la differenza fondamentale tra un conduttore
+e un dielettrico è il fatto che un conduttore ha elettroni debolmente legati ai nuclei
+(liberi) che possono muoversi all’interno della struttura cristallina dei materiale, men-
+tre gli elettroni degli orbitali più esterni di un dielettrico sono fortemente vincolati
+agli atomi. In assenza di un campo elettrico, gli elettroni di un qualsiasi materiale
+creano una nuvola elettronica attorno ai nuclei, il cui baricentro corrisponde approssi-
+mativamente con il baricentro dei nuclei, come indicato in Figura 4.16(a). Il campo
+elettrico generato dai nuclei carichi positivamente attrae e mantiene la nuvola elettro-
+nica in prossimità del centro; la forza di repulsione che agisce tra le nuovole elettro-
+
+II
+
+[PAG 94]
+72
+
+(@) Eu=0
+
+Capitolo 4 -- Elettrostatica
+
+Centro della
+nuvola elettronica
+
+(b) Bex #0 (c) Dipolo elettrico
+
+Figura 4.16 In assenza di un campo elettrico esterno Eex: il centro della nuvola elettronica si
+trova nella medesima posizione con il centro dei nuclei, ma quando un campo è applicato, i due
+centri sono separati di una distanza d.
+
+niche di atomi adiacenti dà la consistenza che è propria della materia. Quando un
+conduttore è sottoposto a un campo elettrico esterno, gli elettroni più esterni di ogni
+atomo essendo debolmente legati, possono facilmente spostarsi da un atomo all’altro,
+generando così una corrente elettrica. In un dielettrico; tuttavia, un campo elettrico
+applicato dall’esterno Ex; non può generare alcun spostamento delle cariche, poiché
+nessuna di queste è libera di muoversi liberamente, ma può polarizzare gli atomi o le
+molecole nel materiale, distorcendo il baricentro della nuovola elettronica e la posi-
+zione dei nuclei. Questo processo di polarizzazione è illustrato schematicamente in
+Figura 4.16(b). L’atomo o la molecola polarizzata può essere rappresentato come un
+dipolo elettrico formato da una carica +g nel centro dei nuclei e da una carica —gq nel
+centro della nuvola elettronica [4.16(c)]. Ognuno di questi dipoli genera un debole
+campo elettrico che punta dai nuclei carichi positivamente al centro della carica elet-
+tronica caricata negativamente. Questo campo elettrico indotto, chiamato campo di
+
+. polarizzazione, è più debole e ha direzione opposta al campo estemo applicato Fou.
+
+Di conseguenza, il campo elettrico complesivo presente in un materiale dielettrico è
+più piccolo di Ex. A livello macroscopico ogni dipolo possiede un momento di di-
+polo simile a quello descritto nell’Esempio 4.7. All’interno di un dielettrico i dipoli si
+allineano secondo una disposizione lineare, come mostrato in Figura 4.17. La dispo-
+sizione dei dipoli dà origine a una densità di carica superficiale positiva sulla superfi-
+cie superiore del materiale e negativa su quella inferiore.
+
+Le immagini schematizzate in Figura 4.16 e 4.17 si riferiscono a materiali non pola-
+ri, in cui le molecole non hanno momenti di dipolo permanenti. Molecole non polari
+diventano polarizzate solo quando viene applicato un campo estemo, ma appena il
+campo viene tolto le molecole ritomano nel loro stato originale imperturbato. In alcu-
+ni materiali, come l’acqua, la struttura molecolare è tale che le molecole possiedono
+momenti di dipolo permanenti che sono orientati casualmente in assenza di un campo
+elettrico applicato. Materiali composti da dipoli permanenti sono chiamati materiali
+polari. A causa delle loro orientazioni casuali i dipoli dei materiali polari non genera-
+no un momento di dipolo totale a livello macroscopico (a livello macroscopico ogni
+punto del materiale rappresenta un piccolo volume che contiene migliaia di moleco-
+le). Tuttavia sotto l’influenza di un campo applicato, i momenti di dipolo permanenti
+tendono a disporsi, in certa misura, parallelamente alla direzione del campo assumen-
+do una configurazione simile a quella mostrata in Figura 4.17 per materiali non polari.
+
+Mentre D e E sono legati da ep nello spazio libero, la presenza di questi dipoli mi-
+croscopici in un materiale dielettrico altera questa relazione che diventa
+
+D=aE+P, (4.83)
+
+48 Dielettrici
+
+Bex
+
+Carica superficiale negativa?
+
+dove P, chiamato campo di polarizzazione elettrica, tiene conto delle proprietà di po-
+larizzazione del materiale. Il campo di polarizzazione è generato dal campo elettrico
+E e dipende dalle proprietà del materiale.
+
+Un mezzo dielettrico è detto lineare se il modulo del campo di polarizzazione in-
+dotto è direttamente proporzionale al modulo di E, mentre è detto isotropo se il cam-
+po di polarizzazione ed E hanno la stessa direzione. In alcuni cristalli, la struttura pe-
+riodica del materiale fa si che la polarizzazione sia più intensa in alcune direzioni ri-
+spetto ad altre, come per esempio lungo l’asse del cristallo. In questi dielettrici aniso-
+tropi, E e D possono avere direzioni diverse. Un mezzo è detto omogeneo se i suoi
+parametri costitutivi (e, 4 e 0) sono costanti ovunque nel mezzo. I mezzi trattati in
+questo libro sono considerati lineari, isotropi e omogenei. Per questi mezzi il campo
+di polarizzazione è direttamente proporzionale a E ed è espresso come
+
+P=exE, . (4.84)
+
+dove xe è chiamata suscettibilità elettrica del materiale. Inserendo la (4.84) nella
+(4.83) si ottiene
+
+D= coE + coxeE = co(1+x)E = eE, (4.85)
+che definisce la permittività ¢ del materiale come
+: € = €9(1 + Xe). (4.86)
+
+Come è stato accennato precedentemente, spesso risulta conveniente indicare la per-
+mittività di un materiale relativamente a quella dello spazio libero ey; questo viene ot-
+tenuto attraverso la permittività relativa e, = £/&o. I valori di &, per alcuni materiali
+comuni sono elencati nella Tabella 4.2 e una lista più dettagliata è riportata
+nell’Appendice B. Nello spazio libero e, = 1 e per la maggior parte dei conduttori
+€, = 1. La costante dielettrica dell’aria è approssimativamente 1.0006 a livello del
+mare, e decresce avvicinandosi al valore unitario al crescere dell’altitudine. Eccetto
+in alcune circostanze particolari come, per esempio, quando si calcola la rifrazione
+(curvatura) di un’onda elettromagnetica attraverso l'atmosfera su grandi distanze, /’a-
+ria é trattata come se fosse spazio libero.
+
+Ji modello della polarizzazione dieiettrica presentato finora non ha fissato restrizio-
+ni sul limite massimo che l’intensità del campo elettrico applicato E può assumere.
+In realtà quando E supera un certo valore critico, noto come forza dielettrica del ma-
+teriale, il campo è in grado di liberare completamente gli elettroni dalle molecole e
+accelerarli attraverso il materiale, generando una sorta di corrente di conduzione.
+
+IB
+
+Figura 4.17
+Mezzo dielettrico.
+polarizzato da un campo
+elettrico esterno ex.
+
+[PAG 95]
+174
+
+Capitolo 4 ~ Elettrostatica
+
+Quando questo avviene, può anche scoccare una scintilla, e il materiale dielettrico
+
+-pud-arrivare a sostenere un.danno permanente dovuto alla collisione degli elettroni
+
+con la struttura molecolare. Questo improvviso cambiamento dei materiale è chiama-
+to rottura dielettrica. La forza dielettrica Ez, è la maggiore ampiezza di E che il ma-
+teriale può sostenere senza che si verifichi la rottura dielettrica. La rottura dielettrica
+può avvenire în gas, liquidi e dielettrici solidi. La forza del campo che è associata a
+questo evento dipende daila composizione dei materiale, così come da altri fattori co-
+me la temperatura e l'umidità. La forza dielettrica per l’aria è 3 (MV/m); per il vetro
+è compresa tra 25 e 40 (MV/m); mentre per la mica è 200 (MV/m) {si consulti la
+Tabella 4.2 per maggiori dettagli].
+
+Una nuvola carica con un potenziale elettrico V rispetto al suolo, induce un campo
+elettrico E = V /d nell’aria interposta tra il suolo e la nuvola, dove d è l’aitezza della
+base della nuvola rispetto alla superficie del suolo. Se V è sufficienemente grande
+che E supera la forza dielettrica dell’aria, si può assistere alla ionizzazione dell’aria
+seguita da una scarica (fulmine). La tensione di rottura Vy, di una capacità con pia-
+stre parallele verrà discussa nell’Esempio 4.11.
+
+Tabella 4.2 Permittività relativa (costante dielettrica) e forza dielettrica di alcuni materiali comuni.
+
+Materiale Permittivita Relativa, «, Forza Dielettrica, Ey, (MV/m)
+Aria (al livelio del mare) 1,0006 3
+
+Petrolio 21 12
+
+Polistirene 26 20
+
+Vetro 45-10 25-40
+
+Quarzo 3.8-5 30
+
+Bachelite 5 20
+
+Mica §.4-6 200
+
+Domande di verifica
+
+4.20 Cos'è un materiale polare? E uno non polare?
+
+4,21 I campi D e E puntano sempre nella stessa direzione? Nel caso di risposta ne-
+gativa, quando questo accade?
+
+4.22 Cosa succede quando si verifica la rottura dielettrica?
+
+4.9 Condizioni al contorno elettriche
+
+Un campo elettrico si dice essere spazialmente continuo se non presenta variazioni
+improvvise nel modulo o nella direzione in funzione della posizione. Anche se un
+campo elettrico può essere continuo in due materiali distinti, tuttavia può essere di-
+scontinuo sulla superficie di separazione dei due mezzi quando una carica è presente
+sul contorno. Le condizioni al contorno specificano in che modo sono legate le com-
+ponenti normali e tangenziali del campo sulla superficie di separazione di due mate-
+riali. Nei seguito verranno ricavate un insieme di relazioni applicabili sull’interfaccia
+di separazione tra due mezzi distinti, sia nel caso di due dielettrici che nel caso di un
+conduttore e un dielettrico. Inoltre, si include tra i materiali dielettrici anche lo spazio
+
+* libero. Anche se le condizioni al contorno verranno ricavate in condizioni elettrostati-
+
+che, esse rimangono valide anche per campi elettrici tempo varianti. La Figura 4.18
+mostra un'interfaccia tra un mezzo | con permittività e e un mezzo 2 con con per-
+mittivita e,. Nel caso generale la superficie di separazione può avere una densità di
+carica superficiale ps.
+
+43 Condizioni al contorno elettriche
+
+Figura 4.18 Interfaccia tra due mezzi dielettrici.
+
+Per ricavare le condizioni al contorno per le componenti tangenziali E e D, si consi-
+deri il percorso chiuso rettangolare abcda illustrato in Figura 4.18 e si applichi la pro-
+prietà conservativa del campo elettrico data dalla (4.40), la quale stabilisce che l’inte-
+grale di linea di un campo elettrostatico calcolato lungo un percorso chiuso è sempre
+nullo. Imponendo che Ah + 0, i contributi dei segmenti bc e da all’integrale di linea
+diventano nulli. Quindi,
+
+n d
+fra= [eas [ E -dl=0, (4.87)
+e a G
+
+dove E; e E, sono i campi elettrici nei mezzi 1 e 2 rispettivamente. Assumendo co-
+me componenti normali e tangenziali quelle mostrate in Figura 4.18,
+
+E, = Ey +E, (4.88)
+Ez = Ex + Ens. (4.88b)
+
+Lungo il segmenti ab, Ez, e di hanno ia stessa direzione, ma lungo il segmento cd,
+E; e di hanno direzioni opposte. Di conseguenza la (4.87) produce
+
+En Al -EyAl=0, (4.89)
+
+Ew=En (V/m). (490)
+
+Pertanto, la componente tangenziale del campo elettrico è continua nel passaggio
+tra due mezzi qualsiasi. Poiché Dy, = eEyu € Dz; = €2E, le condizioni al contomo
+sulla componente tangenziale della densità di flusso elettrica impongono che
+
+Pu _ Pa
+€
+
+x (4.91)
+
+Ora si applichi la legge di Gauss, espressa dalia (4.29), per determinare le condizioni
+al contomo sulle componenti normali di E e D. Secondo quanto espresso dalla legge
+di Gauss, il flusso totale uscente di D attraverso le tre superfici del piccolo cilindro
+mostrato in Figura 4.18 deve essere uguale alla carica totale racchiusa nel cilindro.
+Facendo ora tendere l'altezza del cilindro Ahk — 0, il contributo al flusso totale sulla
+superficie laterale tende a zero. Quindi, anche se entrambi i mezzi hanno densità di
+
+IB
+
+[PAG 96]
+176 Capitolo 4 — Elettrostatica
+
+carica volumetrica, l’unica carica che rimane nel cilindro collassato è è quella distribui |
+“ta sul contorno: Cosi, Q ="psAse sei
+
+frase [ Dy fads + f Di ity ds =p, As, (4.92)
+Ss ‘superiore ‘inferiore
+
+dove fù € fig sono rispettivamente i versori normali uscenti dalla superficie inferiore
+e superiore. E importante ricordare che il versore normale alla superficie di un qual-
+siasi materiale è sempre considerato uscente dal mezzo. Poiché i = —fig, la (4.92)
+si semplifica nel modo seguente
+
+fi (Di —D2) =p, (C/m’). (4.93)
+
+Indicando con D1, e Dz, le componenti normali di D; e D2 lungo iy, si ottiene
+
+Dia = Dn=Ps (C/m’). (4.94)
+
+Tabella 4.3. Condizioni al contorno per campi elettrici.
+
+Componente di campo Due mezzi qualsiasi Mezzo 1 Mezzo 2 Mezzo 1 Mezzo 2
+
+Dielettrico <2 Dielettrico e2 Dielettrico <, Conduttore
+E Tangenziale Ey = Ex Exp = Ea Ey = Ey =0
+D Tangenziale Da/er = Da/ez Du/es = Dafe2 Dit = Da =0
+E Normale Ai. (esEi — €2E) = ps e1E 1a — €2E1n = 08 Eta = ps/ts Eon =0
+D Normale fA (Dy — Da) = Dan — Don = ps Din = ps Om =0
+
+Note: (1) ps è la densità di.carica superficiale sul contomo; (2) le componenti normale di E1, Di, E» e Dz sono lungo fiz,
+il versore normale uscente del mezzo 2.
+
+Quindi /a componente normale di D sulla superficie di separazione tra due mezzi ca-
+richi cambia in modo brusco e questa variazione é uguale alla densita di carica pre-
+sente sulla superficie. La condizione al contorno che corrisponde al campo E è
+
+€1Ein — E2Emm (4.95)
+In conclusione, (1) la proprietà conservativa di E
+VxE=0 «> fra-o (4.96)
+c
+
+ha come conseguenza [a continuità della componente tangenziale di E all’interfaccia
+di separazione tra due mezzi, mentre (2) la proprietà di divergenza di D
+
+V.-D=pa = fp ao (4.97)
+
+S
+porta al risultato che la componente normale di D varia con ia densità di carica ps
+presente sul contorno di separazione tra due mezzi. Una sintesi delle condizioni al
+
+contomo tra diversi tipi di materiale è data nella Tabella 4.3.
+
+| Esempio 4.10 Applicazione delle condizioni al contorno
+
+Si consideri il caso in cui il piano x — y, non carico, è la superficie di separazione tra
+due mezzi dielettrici con permittività £) e £2, come mostrato in Figura 4.19. Se il campo
+elettrico nel mezzo 1 è E; = ££); + $E1y + 2E},, si determini (a) ii campo elettrico E,
+nel mezzo 2 e (b) gli angoli 6; e 0». x
+
+4,9 Condizioni al contorno elettriche
+
+z
+
+piano x-}
+
+Figura 4.19 Applicazioni delle condizioni al contomo all’interfaccia tra due mezzi dielettrici
+(Esempio 4.10).
+
+Soluzione (a) Si ponga E, = &£>, + $£2, + 2E2:. Si devono ora calcolare le com-
+ponenti di E, a partire da quelle note di E). La normale alla superficie di separazione è
+2. Quindi le componenti x e y dei campi sono parallele all’interfaccia, mentre le compo-
+nenti z sono normali all'interfaccia. Essendo la superficie di separazione priva di cari-
+che le componenti tangenziali di E e quelle normali di D sono continue. Ne deriva che
+
+Ex =Ey, Ey=Eyw
+e
+
+=D 0° Eye = EE ys.
+
+Quindi
+E) = 82, +95, + 1 Be. (4.98)
+
+(b) Le componenti tangenziali di Ei e Ez sono Ey, = /£?, + Ef, e By = JE +E}.
+
+Gli angoli @) e @2 sono dati da
+
+Ey Sit
+
+tan 9, = =
+and, = Fi Fx >
+fond SEI 2, VE+E,
+a ~Ce\/enE i’
+quindi i due angoli sono legati dalla relazione
+tan 8, _ a
+tend, Der (4.99)
+
+ui 4.16 Con riferimento alla Figura 4.19 si calcoli il campo E; se
+
+E, = î2 — $3423 (Vim), e = 2eo e €2 = 8eo. Si assuma che il contorno sia privo di
+carica.
+
+Sovuzione E = £2 — 33 + 212 (Vim).
+
+Esercizio 4.17 Si ripeta l’Esercizio 4.16 per un contorno con una densità di carica su-
+perficiale ps = 3.54 x 107!! (C/m?).
+
+SoLuzIONE E; = £2 — $3 +214 (Vim).
+— 6 — —mhwDo@@—1l@@O©©@M--I
+
+[PAG 97]
+178
+
+Lastra
+conduttrice
+
+Figura 4.21
+Sfera metallica posta in un
+campo elettrico esterno
+
+Eo.
+
+Capitolo 4 — Eleterostatica
+
+4.9.1 Interfaccia Dielettrico-Condutiore
+
+Si Consideri it caso in ui il mezzo 1 di Figura 4.18 è un dielettrico; mentre il mezzo
+
+2 è un conduttore perfetto. In un conduttore perfetto E = D = 0, ovunque all’intemno
+del conduttore.-Quindi E, = D) = 0 ovvero sia le componenti tangenziali che quelle
+normali di E) e D> sono nulle. Di conseguenza, dalla 4.90) e dalia (4.94), i campi
+nei mezzo dielettrico all'interfaccia con il conduttore sono dati da
+Ey =Dy=0,
+Din = Ein = Ps
+
+{4.1002)
+{4.100b)
+
+Queste due condizioni al contorno possono essere combinate in un ‘unica equazione
+come segue
+
+Di = eiEi = fig, (alla superficie del conduttore), (4.101)
+
+dove fi è un versore che indica la normale uscente dalla superficie del conduttore.
+Questo significa che /e linee del campo elettrico puntano fuori dalla superficie del
+conduttore quando ps é positiva, mentre verso il conduttore quando ps é negativa. |
+La Figura 4.20 mostra una lastra piana conduttrice infinitamente estesa posta in
+uno spazio dove è presente un campo elettrico Eo. Il mezzo sopra e sotto la Jastra ha
+permittività e. Poiché Eo è uscente dalla superficie superiore, induce una densità di
+carica positiva ps = €1|Eo| sulla superficie superiore della lastra piana. Sulla superfi-
+
+Figura 4.20 Quando una lastra conduttrice è posta în un campo elettrico esterno Eo, le cariche
+che si accumulano sulle superfici inducono un campo elettrico interno E; = —Ep.
+Conseguentemente il campo interno al conduttore è nullo.
+
+seni
+
+49 Condizioni al contorno elettriche
+
+cie inferiore Ep è entrante e induce una densità di carica — os. La presenza di queste
+cariche superficiali ai bordi della lastra crea un campo elettrico E; nel conduttore, co:
+sicchè il campo complessivo è E = Eo + E;. Per soddisfare la condizione di campo
+nullo in ogni punto all’interno del conduttore, E; deve essere uguale a —Eo.
+
+Se si pone una sfera metallica in un campo elettrostatico, come mostrato in Figura
+4.21, cariche negative si andranno ad accumulare sull’emisfero inferiore e cariche po-
+sitive si andranno ad accumulare sull’emisfero superiore. La presenza della sfera pro-
+voca una distorsione delle linee di campo affinché la condizione espressa dalla
+(4.101) sia soddisfatta. Cioè, il campo E e sempre normale alla superficie di contor-
+no del conduttore.
+
+4.9.2 Interfaccia Conduttore-Conduttore
+
+Si esamini ora il caso generale di un contorno tra due mezzi che non sono nè dielettri-
+ci perfetti nè conduttori perfetti. Iilustrati in Figura 4.22, il mezzo 1 ha permittività €)
+e conducibilità 0), mentre il mezzo 2 ha permittività e, e conducibilità 02.
+L'interfaccia tra i due mezzi possiede una densità di carica superficiale ps. Per i cam-
+pi elettrici, la (4.90) e Ia (4.95) danno
+Ey: = Ex,
+
+E1Em — €2Em = ps (4.102)
+
+Poiché sono stati presi in considerazione mezzi conduttori, i campi elettrici danno
+origine alle densità di corrente J, e Jz, dove J, è proporzionale a Dj e Jr è proporzio-
+nale a Ep. Dalla relazione J = of si ha
+
+Ti _ da Tin Jon
+=o Ei € = ps
+"1 92 (di 92
+
+(4.103)
+
+Le componenti tangenziali Jj, e 2, rappresentano correnti che scorrono nei due mez-
+zi in direzione parallela al contomo, e quindi non comportano nessun trasferimento
+di energia tra i due mezzi. Questo non è altrettanto vero per le componenti normali.
+Infatti se Jin # Jon la quantità di carica che arriva all’interfaccia è diversa da quella
+che parte. Sembrerebbe quindi che ps non rimanga costante nel tempo, situazione
+che però viola il pricipio fondamentale dell’elettrostatica che richiede che tutti i cam-
+pi e tutte le cariche rimangano costanti. Si deduce pertanto che Ja componente nor-
+male di J, in condizioni elettrostatiche, deve essere continua nel passaggio attraver-
+so la superficie di separazione di due materiali diversi. Fissando Jin = Jz, nella
+(4.103) si ricava
+
+Jin (a - 2) =ps (elettrostatica). (4.104)
+
+LL
+
+Figura 4.22
+Tnterfaccia tra due mezzi
+conduttori.
+
+9
+
+[PAG 98]
+180
+
+Figura 4.23
+
+Generatore di tensione in
+continua collegato a un
+condensatore composto da
+due materiali conduttori.
+
+Capitolo 4 ~ Elettrostatica
+
+Domande di verifica _
+
+4.23 Quali sono le condizioni al contomo per il campo elettrico su ‘una ‘interfaccia
+conduttore-dielettrico?
+
+4.24 In condizioni elettrostatiche si richiede che Ji, = Jo, sull’interfaccia tra due
+conduttori. Perché?
+
+410 Capacità
+
+Quando due corpi conduttori qualsiasi, indipendentemente dalla loro forma o dimen-
+sione, sono separati da un materiale isolante (dielettrico) si dice che essi formano un
+condensatore. Se un generatore di tensione continua é collegato a due conduttori, co-
+me illustrato in Figura 4.23 nel caso di due conduttori generici, una quantità di carica
+uguale e di polarità opposta viene trasferita alle superfici dei due mezzi. La carica po-
+sitiva +0 si accumula sulla superficie del conduttore connesso al lato positivo, men-
+tre la carica —Q si accumula sulla superficie dell’altro conduttore. Da quanto discus-
+so nel Paragrafo 4.7, quando un conduttore viene caricato, la carica viene distribuita
+sulla superficie in modo tale che il campo elettrico all’interno del conduttore risulti
+nullo. Questo assicura che un conduttore è un corpo equipotenziale, ovvero che il po-
+tenziale elettrico è io stesso in ogni punto del conduttore. La capacità di un conden-
+satore è definita come
+c=£ (C/V oF), (4.105)
+
+dove V è la differenza di potenziale (tensione) tra il conduttore caricato positivamen-
+te (+0) e quello caricato negativamente (~Q). La capacità si misura in farads (F),
+unità di misura equivalente ai coulombs su volt (C/V). .
+
+La presenza di cariche libere sulle superfici dei conduttori origina un campo elettri-
+co E, come raffigurato in Figura 4.23; le linee di campo hanno origine sulla superfi-
+cie caricata. positivamente e terminano sulla superficie caricata negativamente.
+Siccome fa componente tangenziale di E è sempre nulla sulla superficie di un condut-
+tore, E risulta sempre perpendicolare alla superficie di contomo. La componente nor-
+male in ogni punto della superficie di ciascun conduttore è data da
+
+(4.106)
+
+E,=f-E= (alla superficie del conduttore),
+€
+
+4.10 Capacità
+
+dove ps è ia densità di carica superficiale nel punto considerato, fi è il versore norma. _
+
+~~ "Te uscente nello stesso punto e e ta permittività del mezzo isolante interposto tra i due
+
+conduttori. La carica Q è uguale all’integrale di ps sulla superficie S [Figura 4.23]:
+
+O= [ads= f ci-was~ feed,
+Ss s s
+
+dove si è utilizzata la (4.107). La tensione V è legata al campo E dalla (4.39):
+
+(4.107)
+
+Pi
+V==- | E-d,
+P2
+
+(4.108)
+
+dove i punti P; e P, sono due punti qualsiasi sui conduttori 1 e 2, rispettivamente.
+Sostituendo la (4.107) e la (4.108).nella (4.105) si ottiene
+
+(E), (4.109)
+
+dove / è il percorso di integrazione dal conduttore 2 al conduttore 1. Per evitare errori
+di segno quando si applica la (4.109), è importante ricordare che la superficie S è
+quella caricata positivamente e che P; giace su S. Dato che il campo E compare sia a
+numeratore che a denominatore della (4.109), il valore di C ottenuto per un qualsiasi
+condensatore assegnato è sempre indipendente dal campo E. Infatti C dipende solo
+dalla geometria del condensatore (dimensioni, forma e posizione relativa dei due con-
+duttori) e dalla permittivita del materiale isolante.
+
+Se il materiale presente tra i due conduttori non è un dielettrico perfetto, ma possie-
+de per esempio una piccola conducibilità 0, allora una piccola corrente può scorrere
+tra i due conduttori attraverso il dielettrico e il materiale presenta una resitenza R.
+L'espressione generale di R per una resistenza di forma arbitraria è data dalla (4.71):
+
+ae ~ [ea ©
+
+[eas
+Ss
+
+Per un mezzo che possiede o e € unifonmi, il prodotto della (4.109) e della (4.110) da
+come risultato
+
+(4.110)
+
+(4.111)
+
+Re=£.
+o
+
+Questa semplice relazione consente di calcolare R se la capacità C è nota e viceversa.
+
+Esempio 4.11 Capacità e tensione di rottura di un condensatore a piastre pa-
+rallele
+
+Si ottenga un'espressione per la capacità C di un condensatore costituito da due piastre
+parallele ciascuna avente area A e separate da una distanza d. Il condensatore è riempito
+con un materiale dielettrico con permittività e. Si determini inoltre la tensione di rottura
+sed = 1 cme il mezzo dielettrico è quarzo.
+
+181
+
+[PAG 99]
+Capitolo 4 — Elettrostatica
+
+Soluzione In Figura 4.24 è illustrato il condensatore avente la piastra inferiore nel
+piano x — y e quella superiore nel piano z = @. A causa della differenza di potenziale
+applicata V, la carica +0 si accumula in maniera uniforme sui piatto superiore e -Qsu
+quelio inferiore. Nel mezzo dielettrico interposto tra le due piastre, le cariche generano
+un campo elettrico uniforme nella direzione —2 (dalla piastra positiva a quella negati
+va). Per una descrizione accurata sarebbe necessario considerare anche le linee di cam
+po che sono presenti ai bordi del condensatore, note come linee di bordo. Tuttavia il lo-
+10 effetto diventa trascurabile se le dimensioni delle piastre sono maggiori della distan-
+za d che le separa, poiché in tal caso la maggior parte delle Tinee di campo è concentra
+ta all’intemo del dielettrico tra le piastre. La densità di carica sul piatto superiore è
+
+ps = Q/A. Quindi,
+
+Piastra conduttrice
+
+SX N Linee di
+y T campo ai
+Sy! bordi
+
+Dielettrico ¢
+
+Figura 4.24 Generatore di tensione continua collegato a un condensatore a piastre parallele.
+
+e dalla (4.106), Vampiezza di E all'interfaccia conduttore-dielettrico è
+E = ps/e = Q/eA. Dalla (4.108) la tensione è
+
+di d
+v=-| k-d=- | (-2E) - tide = Ed, (4.412)
+0 0
+
+e ja capacità è
+
+dove si è fatto uso della relazione £ = Q/eA. _ .
+
+Da V = Ed, come ricavato nella (4.112), V = Vor quando E = Eu,, la forza dielettri-
+ca del materiale. Da quanto riportato in Tabella 4.2 Ey, = 30 (MV/m) per il quarzo.
+Quindi la tensione di rottura è
+
+Vor = Bagd = 30 x 105 x 1072 =3 x 10° V.
+
+} Esempio 4.12 Capacità di una linea coassiale a
+Si ottenga un'espressione per la capacità della linea coassiale mostrata in Figura 4.25.
+
+Soluzione Per una data tensione Y ai capi del condensatore (Figura 425), le cariche
++0 —Q si accumulano sulle supirfici del conduttore interno ed estero, rispettivamen-
+te. Si assume che queste cariche siano distribuite uniformemente sull’intera lunghezza
+
+i
+i
+
+4.11 Energia Potenziale Elettrostatica
+
+Pi
+
+Figura 4.25 Condensatore coassiale riempito con materiale isolante con permittività e
+
+(Esempio 4.12).
+
+dei conduttori, con una densità di carica lineare p; = Q/! sul conduttore esterno e —p;
+su quello intemo. Ignorando gli effetti di bordo in prossimità dei capi del cavo coassia-
+le, si può costruire una superficie Gaussiana cilindrica nel dielettrico che circonda il
+conduttore interno con raggio r tale che a < r < b. Il conduttore interno è una linea ca-
+rica simile a quella dell’Esempio 4.6, a eccezione del fatto che possiede carica negativa.
+Considerando un segno meno nell’espressione del campo E data dalla (4.33) si ottiene
+p= -i PL 7 2
+
+Qner © Qmerl”
+
+(4.114)
+
+La differenza di potenziale V tra il conduttore intemo ed esterno è
+
+v=-- fra [ (1595-0) Lr 0(2). (4.115)
+
+La capacità C è quindi data da
+
+Q__2 419
+
+VO In(6/a)
+La capacità per unità di lunghezza della linea coassiale è
+Cc 2re
+c=ta=
+T = Tn(é/a) (F/m). (4.117)
+
+Domande di verifica
