@@ -1,0 +1,1529 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 46/116 ===
+Chars: 44,950 | Offset: 1,988,362
+
+
+
+[PAG 1018]
+X-168
+  IMPIANTI ELETTRICI 
+Tab. X.10.11   Valori di K per conduttori di terra o di protezione (norma CEI 64-8/5)
+Materiale condut-
+tore
+Cavi unipolari o conduttori nudi in 
+contatto con il rivestimento esterno dei 
+cavi
+Anima di cavo multipolare
+Natura dell'isolante o del rivestimento
+Natura dell'isolante
+PVC
+0 = 30 °C
+f = 160 °C
+EPR-XLPE
+0 = 30 °C
+f = 250 °C
+PVC
+0 = 70 °C
+f = 160 °C
+EPR-XLPE
+0 = 90 °C
+f = 250 °C
+Rame
+Alluminio
+Ferro
+143
+95
+52
+176
+116
+64
+115
+76
+
+143
+94
+
+Tab. X.10.12   Valori di K per conduttori di terra o di protezione costituiti dal
+rivestimento metallico o dall'armatura di un cavo (norma CEI 64-8/5)
+Materiale conduttore
+Natura dell'isolante o dei rivestimenti
+PVC
+0 = 60 °C
+f = 160 °C
+EPR-XLPE
+0 = 80 °C
+f = 250 °C
+(Pb: 160 °C)
+Rame
+Alluminio
+Ferro
+Piombo
+122
+79
+42
+22
+149
+96
+51
+19
+Tab. X.10.13   Valori di K per conduttori di terra o di protezione nudi, quando non
+esistono pericoli di danneggiamento di materiali vicini per effetto della temperatura,
+0 = 30 °C (norma CEI 64-8/5)
+Materiale conduttore
+Condizioni di posa
+A
+B
+C
+Rame
+Alluminio
+Ferro
+228
+125
+82
+159
+105
+58
+138
+91
+50
+A: in vista, in locali accessibili solo a personale addestrato, f = 500 °C (alluminio 300 °C)
+B: in condizioni ordinarie, f = 200 °C
+C: in locali con pericolo di incendio, f = 150 °C
+
+[PAG 1019]
+IMPIANTI  ELETTRICI                                               X-169
+La norma CEI 64-8/5 consente di non effettuare la verifica della sezione minima con
+la X.10.8, a patto che la sezione dei conduttori di protezione sia non inferiore a quella che
+si ricava dalla Tab. X.10.14, approssimata alla sezione unificata più vicina.
+Per la scelta della sezione minima dei conduttori di terra vale, invece, la Tab. X.10.15.
+Collettore (o nodo) principale di terra
+È l'elemento dell'impianto di terra a cui vengono collegati i conduttori di terra, di pro-
+tezione, di equipotenzialità principali e, nel sistema TN, il neutro o il PEN. Viene di solito
+realizzato mediante una sbarra o un morsetto. Il collegamento del conduttore di terra deve
+essere smontabile con attrezzo, in modo da poter separare la parte disperdente dal resto
+dell'impianto di terra, in occasione di verifiche o misure. Si utilizza un morsetto imbullo-
+nato o un apposito sezionatore di terra.
+Tab. X.10.14   Relazione tra le sezioni dei conduttori di protezione e dei conduttori di
+fase (norma CEI 64-8/5)
+Sezione dei conduttori di fase S dell'impianto 
+(mm2)
+Sezione minima Sp del corrispondente conduttore 
+di protezione (mm2)
+S  16
+16 < S  35
+S > 35
+Sp = S
+16
+Sp = S/2
+Note.
+1.  Se i conduttori di fase e di protezione non sono costituiti dallo stesso materiale, Sp deve essere
+determinata in modo da avere una conduttanza equivalente a quella risultante dall'applicazione
+della tabella, moltiplicando la sezione ricavata per il rapporto tra le resistività p 
+2.  Se il conduttore di protezione non fa parte della stessa conduttura dei conduttori di fase, la sua
+sezione non deve essere inferiore a 2,5 mm2 se è protetto meccanicamente e 4 mm2 in caso con-
+trario
+3.  Quando un conduttore di protezione è comune a più circuiti, la sua sezione deve essere dimen-
+sionata in funzione del conduttore di fase avente la sezione più grande
+Tab. X.10.15   Sezioni convenzionali minime dei conduttori di terra (norma CEI 64-8/5)
+Protetti meccanicamente
+Non protetti meccanicamente
+Protetti contro la corrosione
+Sezioni minime come per
+i conduttori di protezione
+16 mm2 (rame)
+16 mm2 (ferro zincato)(*)
+Non protetti contro la corrosione
+ 25 mm2 (rame)
+50 mm2 (ferro zincato)(*)
+(*) Zincatura secondo la norma CEI 7-6 oppure con rivestimento equivalente
+
+[PAG 1020]
+X-170
+  IMPIANTI ELETTRICI 
+Conduttori equipotenziali
+Sono destinati ad assicurare, mediante collegamento elettrico, l'equipotenzialità fra le
+masse e/o le masse estranee. Si dividono in collegamenti equipotenziali principali (EQP)
+e supplementari (EQS). I primi collegano le masse estranee al collettore di terra, mentre i
+secondi collegano masse estranee al PE, masse tra loro, masse con masse estranee, masse
+estranee tra loro.
+Le sezioni minime convenzionali dei conduttori equipotenziali sono indicate nella
+Tab. X.10.16.
+Conduttore PEN
+Nei sistemi TN-C è quello combinato di protezione e di neutro. La norma CEI 64-8
+prescrive i requisiti che esso deve avere, tra cui:
+–  sezione non inferiore a 10 mm2 se in rame e 16 mm2 se in alluminio;
+–  posa fissa;
+–  divieto di installazione di dispositivi di sezionamento e comando, non potendo
+essere interrotto in quanto svolge anche la funzione di PE;
+–  isolamento previsto per la tensione più elevata alla quale può essere sottoposto.
+10.7  Formule e tabelle per il calcolo della resistenza di terra
+Resistività del mezzo disperdente
+La resistività E del mezzo disperdente (generalmente il terreno) ha notevole
+influenza sul valore della resistenza di terra: valori elevati della resistività, propri dei ter-
+reni rocciosi, fanno aumentare notevolmente la resistenza.
+Oltre al tipo di mezzo disperdente sul valore di E influiscono il contenuto di umidità,
+che fa diminuire la resistività, e la temperatura: sopra 0 °C la resistività può essere consi-
+derata abbastanza costante, mentre sotto tale valore, per effetto del congelamento,
+aumenta di 4  5 volte. Per evitare questo effetto è buona norma interrare i dispersori ad
+almeno 0,5 m sotto il piano di campagna.
+Nella Tab. X.10.17 sono riportati i valori medi della resistività di vari mezzi disper-
+denti, in condizioni normali di umidità e temperatura. Valori più precisi possono essere
+assunti, in sede di progetto, misurando la resistività del terreno nel punto in cui si deve
+installare l'impianto di terra.
+Tab. X.10.16   Sezioni minime convenzionali dei conduttori equipotenziali (norma CEI
+64-8/5)
+Conduttore
+Sezione minima
+EQP
+Non inferiore alla metà di quella del PE principale, con un
+minimo di 6 mm2.
+Per il rame non è richiesta una sezione superiore a 25 mm2; per
+gli altri materiali l'equivalente di 25 mm2 di rame
+EQS di connessione tra due masse Non inferiore a quella minima tra le sezioni dei PE delle due masse
+EQS di connessione tra massa e
+massa estranea
+Non inferiore alla metà della sezione del PE della massa
+EQS di connessione fra masse
+estranee tra loro o all'impianto di
+terra
+Non inferiore a 2,5 mm2 se il conduttore è protetto meccanica-
+mente e a 4 mm2 in caso contrario
+
+[PAG 1021]
+IMPIANTI  ELETTRICI                                               X-171
+Resistenza di terra per vari tipi di dispersore
+Nella Tab. X.10.18 sono riportate le formula di calcolo della resistenza di terra di
+alcuni dispersori di uso comune, in funzione delle loro dimensioni, della profondità di
+interramento e della resistività del terreno.
+Nella Tab. X.10.19, invece, sono riportati i valori della resistenza di terra nel caso di
+picchetti cilindrici, per diversi valori della lunghezza L, del diametro Ø e della resistività
+del terreno. I valori indicati valgono, con buona approssimazione, per ogni tipo di pic-
+chetto di pari lunghezza (profilati a "L", a "C", a croce, tubi).
+Tab. X.10.17   Valori della resistività per vari tipi di mezzo disperdente
+Mezzo disperdente
+E ( m)
+Acqua dolce
+Acqua marina
+Soluzioni saline
+Argilla, marne umide
+Terreni pietrosi con erba
+Sabbia umida
+Sabbia secca
+Rocce calcaree umide
+Rocce calcaree secche
+Torbiere umide
+Graniti, basalti, calcestruzzo
+Sabbia marina
+50  150
+1
+0,001  0,1
+30  150
+200  300
+200  300
+2000  5000
+30  100
+2000  5000
+200  300
+1000  5000
+0,3  3
+Tab. X.10.18   Espressioni per il calcolo della resistenza di terra
+Tipo
+Riferimento 
+figura
+Formula
+Dispersore cilindrico a pic-
+chetto infisso a filo del terreno
+Fig. X.10.18
+Dispersore cilindrico a pic-
+chetto infisso a profondità H
+Fig. X.10.19
+Dispersore cilindrico lineare
+(filo interrato)
+Fig. X.10.20
+Dispersore ad anello (condut-
+tore di raggio a)
+Fig. X.10.21
+Rete magliata con conduttori
+di lunghezza totale L e avente
+area equivalente a un cerchio
+di raggio r
+
+RE
+E
+2L
+----------
+2L
+a
+------
+
+
+
+
+ln
+=
+RE
+1
+2-- 1
+L
+L
+H
++
+--------------
++
+
+
+
+E
+2L
+----------
+2L
+a
+------
+
+
+
+
+ln
+=
+RE
+E
+2L
+----------
+2L
+a
+------
+
+
+
+
+ln
+l
++ n L
+H---
+
+
+
+
+2
+2H
+L
+-------
++
+–
+=
+RE
+E
+42r
+-----------
+8r
+a-----
+
+
+
+
+ln
+4r
+H
+-----
+
+
+
+
+ln
++
+=
+RE
+E
+4r
+-----
+E
+L
+-----
++
+=
+
+[PAG 1022]
+X-172
+  IMPIANTI ELETTRICI 
+Fig. X.10.18   Dispersore cilindrico a
+picchetto infisso a filo del terreno.
+Fig. X.10.19   Picchetto cilindrico
+infisso a profondità H.
+Fig. X.10.20   Dispersore cilindrico
+lineare (filo interrato).
+Fig. X.10.21   Dispersore ad anello,
+con conduttore di raggio a.
+Tab. X.10.19   Valori della resistenza di terra per dispersori a picchetto
+Dimensioni
+Resistività del terreno ( m)
+50
+65
+80
+100
+150
+200
+250
+300
+L (m)
+Ø (mm)
+Resistenza di terra ()
+1,5
+12
+18
+30
+28
+39,1
+36,4
+48,2
+44,7
+60,2
+55,9
+90,3
+83,9
+120
+112
+151
+140
+181
+168
+3
+12
+18
+17
+16
+22,1
+20,7
+27,2
+25,5
+34
+31,9
+51
+47,8
+68
+63,7
+85
+80
+102
+95,6
+6
+12
+18
+9,5
+8,9
+12,3
+11,6
+15,1
+14,3
+18,9
+17,9
+28,4
+26,8
+37,9
+35,7
+47,3
+44,6
+56,8
+53,6
+10
+12
+18
+6,1
+5,8
+7,9
+7,5
+9,8
+9,2
+12,2
+11,6
+18,3
+17,3
+24,4
+23,1
+30,5
+28,9
+36,6
+34,7
+12
+12
+18
+5,3
+4,9
+6,8
+6,4
+8,3
+7,9
+10,4
+9,9
+15,6
+14,8
+20,8
+19,7
+26
+24,7
+31,2
+29,6
+18
+12
+18
+3,7
+3,5
+4,7
+4,5
+5,8
+5,6
+7,3
+6,9
+11
+10,4
+14,6
+13,9
+18,3
+17,4
+21,9
+20,8
+L
+2a
+L
+H
+L
+H
+2a
+H
+r
+
+[PAG 1023]
+IMPIANTI  ELETTRICI                                               X-173
+Dispersori in parallelo
+Quando N dispersori di uguali caratteristiche vengono collegati in parallelo tra loro la
+resistenza di terra equivalente si può determinare con la relazione RE = RE1N, dove RE1 è
+la resistenza del singolo dispersore, solo se i dispersori sono elettricamente indipendenti,
+ossia se sono sufficientemente distanziati, in modo che le loro curve di tensione non si
+sovrappongano.
+In caso contrario l'efficacia dell'impianto di terra diminuisce e la resistenza RE risulta
+maggiore di quella ottenibile con la regola del parallelo. Per i dispersori a picchetto la
+distanza ottimale è circa 6  8 volte la lunghezza.
+10.8  Dimensionamento dell'impianto di terra per impianti con tensione superiore a
+1000 V
+In questo caso valgono le prescrizioni della norma CEI 11-1, applicabile agli impianti
+con propria cabina di trasformazione e alle officine elettriche.
+Corrente di guasto a terra IF e corrente di terra IE
+La corrente di guasto a terra IF è la massima corrente che fluisce verso terra, in occa-
+sione di un guasto monofase a terra sul sistema a tensione superiore 1000 V. La corrente
+di terra IE è, invece, la quota parte della corrente di guasto IF che l'impianto di terra
+disperde nel terreno (Fig. X.10.22). La differenza I' è la corrente che si richiude a terra
+direttamente, senza interessare l'impianto di terra, tramite la fune di guardia (alimenta-
+zione con linea aerea) o la guaina metallica del cavo.
+Fig. X.10.22   Distinzione tra corrente di guasto a terra IF e corrente di terra IE.
+Per determinare la corrente di guasto a terra si può effettuare la misura diretta del suo
+valore nel punto della rete in cui si deve installare l'impianto di terra oppure calcolarne un
+valore convenzionale, mediante formule stabilite dalla norma CEI 11-1; un metodo molto
+usato è quello di far riferimento al valore convenzionale IFC indicato dalla società distri-
+butrice dell'energia elettrica, che fornisce anche il valore del tempo di permanenza del
+guasto tF.
+Impianto con cabina propria
+La resistenza di terra si determina da rapporto RE = UEIE, scegliendo i valori nel
+modo seguente:
+–  non essendo normalmente nota la corrente IE si considera IE  IFC;
+–  si impone che la tensione di terra non sia superiore a quella di contatto ammissibile
+UTP corrispondente al tempo tF per il caso in esame (Tab. X.10.8);
+–  si calcola il valore limite della resistenza di terra che l'impianto non deve superare
+con la relazione:
+(X.10.9)
+Se per l'impianto di terra è soddisfatta la condizione X.10.9 non è richiesta la verifica
+I'
+IF
+IE
+RE
+RE
+UTP
+IFC
+----------
+
+
+[PAG 1024]
+X-174
+  IMPIANTI ELETTRICI 
+periodica delle tensioni di contatto e di passo, ma solo quella della tensione totale di terra,
+eseguibile mediante la misura della resistenza di terra.
+Esempio 1
+Si deve dimensionare l'impianto di terra di un impianto utilizzatore con cabina pro-
+pria, sapendo che IFC = 175 A e tF = 0,5 s. Poiché UTP = 220 V (Tab. X.10.8), la parte
+disperdente dovrà essere dimensionata in modo che sia:
+10.9  Interruttore differenziale
+L'interruttore differenziale è un dispositivo, formato da un apparecchio di manovra e
+da uno sganciatore differenziale di protezione, in grado di aprire un circuito quando si
+manifesta una differenza tra le correnti nei conduttori superiore a un determinato limite, in
+seguito a un guasto a terra. Il suo principio di funzionamento è illustrato nella Fig.
+X.10.23.
+Fig. X.10.23   Principio di funzionamento di un interruttore differenziale.
+In condizioni normali le correnti che circolano nelle bobine B sono percorse in senso
+opposto da correnti uguali e la loro azione magnetizzante sul nucleo toroidale è nulla.
+Quando si manifesta una corrente di guasto a terra IF le due correnti diventano diverse tra
+loro e nasce una f.m.m. differenziale che magnetizza il nucleo, creando un flusso magnetico
+variabile sinusoidalmente che, a sua volta, crea una tensione indotta nella bobina differen-
+ziale BD. All'aumentare della differenza tra le correnti aumenta anche tale tensione per cui,
+superato un valore limite, l'organo di comando C determina l'apertura dell'interruttore.
+Classificazione degli interruttori differenziali
+Oltre alla comune distinzione in base al numero dei poli, gli interruttori differenziali
+vengono classificati come riportato nella Tab. X.10.20.
+RE
+UTP
+IFC
+----------
+220
+175
+--------
+1,257 
+=
+=
+
+F
+N
+C
+BD
+B
+B
+M
+IF
+RE
+I
+IIF
+
+[PAG 1025]
+IMPIANTI  ELETTRICI                                               X-175
+Caratteristiche elettriche degli interruttori differenziali
+Sono stabilite dalle norme tecniche di prodotto, di cui le principali sono la norma CEI
+EN 61008-1 (CEI 23-42) per gli interruttori senza sganciatori di sovracorrente incorporati
+(puri) e la norma CEI EN 61009-1 (CEI 23-44) per quelli con sganciatori di sovracorrente
+incorporati (magnetotermici).
+–  Tensione nominale: è il valore di tensione per il quale l'interruttore è designato a
+funzionare.
+–  Corrente nominale In: è il valore di corrente che l'apparecchio è in grado di con-
+durre ininterrottamente. Valori normali sono: 6-10-16-20-25-32-40-50-63-100-125 A.
+–  Corrente differenziale nominale d'intervento Idn: è il minimo valore della corrente
+differenziale che determina l'apertura dei contatti entro il tempo specificato dalle norme. I
+differenziali si distinguono in: a bassa sensibilità (Idn  0,03 A) e ad alta sensibilità (Idn 
+0,03 A). I valori normali di uso più frequente sono: 0,01-0,03-0,1-0,3-0,5-1 A.
+–  Corrente differenziale nominale di non intervento Idn0: è il massimo valore della cor-
+rente differenziale che certamente non provoca l'apertura dei contatti dell'interruttore. In
+genere si ha: Idn0 = 0,5 Idn. Il comportamento del differenziale è illustrato nella Fig. X.10.26.
+Fig. X.10.26   Soglia d'intervento di un differenziale.
+Tab. X.10.20   Classificazione degli interruttori differenziali
+Classificazione in base a
+Azione espletata
+Forma d'onda della corrente
+Ritardo d'apertura
+Differenziali puri, dotati del
+solo sganciatore differenziale
+e in grado di intervenire solo
+per guasti a terra.
+Differenziali di tipo AC (Fig.
+X.10.24), adatti solo per il
+funzionamento con corrente
+differenziale alternata sinu-
+soidale.
+Differenziali di tipo generale (G),
+con caratteristica d'intervento senza
+ritardo intenzionale all'apertura.
+Differenziali magnetotermici,
+dotati anche di sganciatori di
+massima corrente e in grado di
+intervenire per guasti a terra e
+sovracorrenti.
+Differenziali di tipo A (Fig.
+X.10.25), adatti a funzionare
+anche con forme d'onda che
+presentano delle componenti
+pulsanti unidirezionali entro
+determinati limiti (apparati
+elettronici).
+Differenziali di tipo selettivo (S),
+con apertura ritardata intenzional-
+mente per esigenze di selettività
+d'intervento 
+tra 
+dispositivi 
+in
+cascata. Il tempo d'intervento è
+impostato dal costruttore. 
+Differenziali regolabili, con tempo
+d'intervento regolabile entro una
+certa gamma di valori.
+Fig. X.10.24   Simbolo dell'interruttore
+differenziale di tipo AC.
+Fig. X.10.25   Simbolo dell'interruttore
+differenziale di tipo A.
+certamente non
+interviene
+può o no
+intervenire
+sicuramente
+interviene
+0,5 Idn
+Idn
+Id
+
+[PAG 1026]
+X-176
+  IMPIANTI ELETTRICI 
+–  Tempo d'intervento: è l'intervallo di tempo che intercorre tra l'istante in cui la cor-
+rente differenziale assume il valore Idn e l'istante in cui avviene l'apertura dei contatti. Può
+anche essere riferito a una corrente di valore diverso, di solito multipla di Idn. I valori dei
+tempi d'intervento previsti dalle norme, per differenziali per uso domestico e similare,
+sono riportati nelle Tabb. X.10.21 e X.10.22.
+–  Tempo minimo di non intervento: è il minimo intervallo di tempo per il quale i con-
+tatti non si aprono anche se la corrente differenziale assume un valore atto a determinarne
+l'intervento. Sono stabiliti dalle norme (Tab. X.10.22).
+–  Caratteristica d'intervento: è la curva, tracciata sul piano cartesiano, che lega il
+tempo d'intervento del dispositivo alla corrente Id, individuata dal rapporto IdIdn. Nella
+Tab. X.10.21   Tempi massimi d'intervento degli interruttori differenziali di tipo generale G
+Tipo
+Idn (A)
+Tempi d'intervento (s) per Id pari a:
+AC
+qualsiasi
+Idn
+0,3
+2 Idn
+0,15
+5 Idn
+0,04
+It
+0,04
+A
+ 0,01
+2 Idn
+0,3
+4 Idn
+0,15
+10 Idn
+0,04
+2 It
+0,04
+ 0,03 
+1,4 Idn
+0,3
+2,8 Idn
+0,15
+7 Idn
+0,04
+1,4 It
+0,04
+Nota. Per gli interruttori differenziali puri il valore di It è pari a 500 A, mentre per quelli con sgan-
+ciatori di sovracorrente incorporati si tiene conto anche del campo d'intervento istantaneo per sovra-
+corrente, come indicato dalla normativa
+Tab. X.10.22   Tempi massimi d'intervento e minimi di non intervento degli interruttori
+differenziali di tipo S, con In  25 A e Idn > 0,03 A
+Tipo
+Tempi
+Tempi con Id pari a:
+Idn
+2 Idn
+5 Idn
+It
+AC
+massimo d'intervento 
+(s)
+0,5
+0,2
+0,15
+0,15
+minimo di non inter-
+vento (s)
+0,13
+0,06
+0,05
+0,04
+1,4 Idn
+2,8 Idn
+7 Idn
+1,4 It
+A
+massimo d'intervento 
+(s)
+0,5
+0,2
+0,15
+0,15
+minimo di non inter-
+vento (s)
+0,13
+0,06
+0,05
+0,04
+Nota. Per gli interruttori differenziali puri il valore di It è pari a 500 A, mentre per quelli con sgan-
+ciatori di sovracorrente incorporati si tiene conto anche del campo d'intervento istantaneo per sovra-
+corrente, come indicato dalla normativa
+
+[PAG 1027]
+IMPIANTI  ELETTRICI                                               X-177
+Fig. X.10.27 sono riportate le caratteristiche limite di differenziali AC di tipo G ed S; le
+caratteristiche d'intervento effettive devono stare completamente sotto le due spezzate.
+Fig. X.10.27   Caratteristiche d'intervento limite di interruttori differenziali AC, di tipo G
+e di tipo S.
+–  Potere d'interruzione differenziale Icnd: è il valore massimo della corrente che il
+dispositivo è in grado di interrompere quando si verifica un guasto verso terra che deter-
+mina l'intervento dell'interruttore differenziale. Valori normali sono: 500-1000-1500-
+3000-4500-6000 A.
+–  Potere di corto circuito della combinazione differenziale puro + dispositivo di pro-
+tezione contro il cortocircuito: è il valore della massima corrente di corto circuito che la com-
+binazione dei due dispositivi è in grado di interrompere. Valori normali sono: 4,5-6-10 kA.
+Caratteristiche tecniche di alcuni interruttori differenziali
+Sono riportate nelle Tabb. X.10.23 e X.10.24.
+Tab. X.10.23   Caratteristiche tecniche di interruttori differenziali magnetotermici con
+sganciatori di sovracorrente incorporati (ABB Elettrocondutture spa)
+Serie
+N. poli
+Tipo
+In (A)
+Idn (A)
+Icn (kA)
+DS 640
+1P+N
+AC
+6-8-10-13-16-20-25-32
+0,03-0,3
+4,5
+2P
+0,03
+DS 650
+1P+N
+AC
+6-8-10-13-16-20-25-32
+0,03-0,3
+6
+2P
+6-8-10-13-16-20-25-32-40-50-63
+0,03-0,3
+4P
+6-8-10-13-16-20-25-32-40-50-63
+0,03-0,3
+DS 670
+2P
+AC
+0,5-1-1,6-2-3-4-6-8-10-13-16-20-25
+32-40-50-63
+0,03-03
+10
+4P
+0,5-1-1,6-2-3-4-6-8-10-13-16-20-25
+32-40-50-63
+0,03-0,3
+DS 750
+1P+N
+A
+6-10-13-16-20-25-32
+0,03-0,3
+6
+DS 850
+2P
+AC
+10-16-20
+0,03/02 
+(variabile)
+6
+tipo S
+tipo G
+0,5
+0,4
+0,3
+0,2
+0,1
+0
+1 2 3 4 5 6 7 8 9
+t (s)
+Id/Idn
+
+[PAG 1028]
+X-178
+  IMPIANTI ELETTRICI 
+10.10  Gradi IP di protezione degli involucri
+I componenti e gli apparecchi elettrici sono normalmente contenuti entro involucri,
+aventi la duplice funzione di proteggere le parti interne dagli agenti esterni e di impedire i
+contatti accidentali degli operatori con le parti attive, in tensione (contatto diretto).
+La norma CEI EN 60529 (CEI 70-1) classifica gli involucri mediante una sigla com-
+posta dal codice IP (International Protection), da due cifre caratteristiche, da una lettera
+aggiuntiva e da una lettera supplementare, aventi il significato seguente:
+–  prima cifra caratteristica: indica sia il grado di protezione relativo al contatto con
+parti pericolose sia quello contro l'accesso di corpi solidi estranei;
+–  seconda cifra caratteristica: indica il grado di protezione contro la penetrazione di
+liquidi;
+–  prima lettera aggiuntiva: viene usata quando, a causa della presenza di ostacoli o
+barriere interne, il grado di protezione relativo al contatto diretto è superiore a quello ine-
+rente l'introduzione di corpi solidi;
+–  seconda lettera supplementare: viene usata per fornire ulteriori informazioni sul
+componente.
+Il grado di protezione di un involucro viene stabilito mediante prove convenzionali,
+usando attrezzi normalizzati (sfere, dito di prova, fili d'acciaio). Quando una delle cifre
+caratteristiche non viene utilizzata deve essere sostituita con la lettera X; le due lettere
+finali possono, invece, essere omesse. Il significato delle cifre e delle lettere è riportato
+nelle Tabb. X.10.25, X.10.26, X.10.27, X.10.28.
+Tab. X.10.24   Caratteristiche tecniche di interruttori differenziali puri, senza sganciatori
+di sovracorrente incorporati (ABB Elettrocondutture spa)
+Serie
+N. poli
+Tipo
+In (A)
+Idn (A)
+F 370
+2P
+A
+25-40-63-80
+0,03-0,3
+4P
+25-40-63
+0,03-0,3-0,5
+F 670
+2P
+A
+80-100
+0,03
+4P
+80-100-125
+0,03-0,3
+F 390
+2P
+S
+40-63
+0,3-0,5
+4P
+40-63
+0,3-0,5
+Tab. X.10.25   Gradi di protezione degli involucri: significato della prima cifra caratteristica
+Cifra
+Gradi di protezione contro corpi solidi
+estranei
+Gradi di protezione contro l'accesso a parti 
+pericolose
+Descrizione
+sintetica
+Descrizione
+completa
+Descrizione
+sintetica
+Descrizione
+completa
+0
+Non protetto
+
+Non protetto
+
+1
+Protetto contro corpi
+solidi estranei di dia-
+metro  50 mm
+Non deve penetrare
+completamente il ca-
+libro-oggetto, sfera di
+diametro 50 mm*
+Protetto contro l'ac-
+cesso a parti perico-
+lose col dorso della
+mano
+Il calibro di accessi-
+bilità di diametro 50
+mm deve rimanere a
+una adeguata distanza
+dalle parti pericolose
+
+[PAG 1029]
+IMPIANTI  ELETTRICI                                               X-179
+Tab. X.10.25 Segue
+Cifra
+Gradi di protezione contro corpi solidi
+estranei
+Gradi di protezione contro l'accesso a parti 
+pericolose
+Descrizione
+sintetica
+Descrizione
+completa
+Descrizione
+sintetica
+Descrizione
+completa
+2
+Protetto contro corpi
+solidi estranei di dia-
+metro  12,5 mm
+Non deve penetrare
+completamente il ca-
+libro-oggetto, sfera di
+diametro 12,5 mm *
+Protetto contro l'ac-
+cesso a parti perico-
+lose con un dito
+Il dito di prova artico-
+lato di diametro 12
+mm e di lunghezza 80
+mm deve rimanere a
+una adeguata distanza
+dalle parti pericolose
+3
+Protetto contro corpi
+solidi estranei di dia-
+metro  2,5 mm
+Non deve penetrare
+completamente il ca-
+libro-oggetto di dia-
+metro 2,5 mm *
+Protetto contro l'ac-
+cesso a parti perico-
+lose con un attrezzo
+(per es. cacciavite)
+Il calibro di accessi-
+bilità di diametro 2,5
+mm non deve pene-
+trare
+4
+Protetto contro corpi
+solidi estranei di dia-
+metro  1,0 mm
+Non deve penetrare
+affatto il calibro og-
+getto di diametro 1,0
+mm *
+Protetto contro l'ac-
+cesso a parti perico-
+lose con un filo
+Il calibro di accessi-
+bilità di diametro 1,0
+mm non deve pene-
+trare
+5
+Protetto contro la pol-
+vere
+La penetrazione di
+polvere non è com-
+pletamente 
+esclusa,
+ma la polvere non
+deve 
+penetrare 
+in
+quantità tale da nuo-
+cere al buon funzio-
+namento 
+dell'appa-
+recchiatura o da pre-
+giudicarne la sicu-
+rezza
+Protetto contro l'ac-
+cesso a parti perico-
+lose con un filo
+Il calibro di accessi-
+bilità di diametro 1,0
+mm non deve pene-
+trare
+6
+Totalmente 
+protetto
+contro la polvere
+Non è ammessa la pe-
+netrazione di polvere
+Protetto contro l'ac-
+cesso a parti perico-
+lose con un filo
+Il calibro di accessi-
+bilità di diametro 1,0
+mm non deve pene-
+trare
+Nota.
+* Il diametro massimo del calibro-oggetto non deve passare attraverso un'apertura dell'involucro
+Tab. X.10.26   Gradi di protezione degli involucri: significato della seconda cifra
+caratteristica
+Cifra
+Gradi di protezione
+Descrizione sintetica
+Descrizione completa
+0
+Non protetto
+
+1
+Protetto contro la caduta verticale
+di gocce d'acqua
+Le gocce d'acqua che cadono verticalmente non
+devono provocare effetti dannosi
+2
+Protetto contro la caduta verticale
+di gocce d'acqua con una inclina-
+zione dell'involucro fino a 15°
+Le gocce d'acqua che cadono verticalmente non
+devono provocare effetti dannosi quando l'involucro è
+inclinato fino a 15° rispetto alla sua posizione verticale
+
+[PAG 1030]
+X-180
+  IMPIANTI ELETTRICI 
+Tab. X.10.26 Segue
+Cifra
+Gradi di protezione
+Descrizione sintetica
+Descrizione completa
+3
+Protetto contro la pioggia
+L'acqua che cade a pioggia da una direzione formante
+con la verticale un angolo fino a 60° non deve provo-
+care effetti dannosi
+4
+Protetto contro gli spruzzi d'acqua L'acqua spruzzata sull'involucro da tutte le direzioni
+non deve provocare effetti dannosi
+5
+Protetto contro i getti d'acqua
+L'acqua proiettata con un getto sull'involucro da tutte
+le direzioni non deve provocare effetti dannosi
+6
+Protetto contro i getti d'acqua po-
+tenti
+L'acqua proiettata con getti potenti sull'involucro da
+tutte le direzioni non deve provocare effetti dannosi
+7
+Protetto contro gli effetti dell'im-
+mersione temporanea
+Non deve essere possibile la penetrazione d'acqua in
+quantità dannosa quando l'involucro è immerso tem-
+poraneamente in acqua in condizioni specificate di
+pressione e di durata
+8
+Protetto contro gli effetti dell'im-
+mersione continua
+Non deve essere possibile la penetrazione d'acqua in
+quantità dannosa quando l'involucro è immerso in
+acqua con continuità nelle condizioni concordate fra il
+costruttore e l'utente, ma che sono più severe di quelle
+previste per la seconda cifra caratteristica 7
+Tab. X.10.27   Gradi di protezione degli involucri: significato della lettera aggiuntiva
+Lettera 
+aggiuntiva
+Gradi di protezione
+Descrizione sintetica
+Descrizione completa
+A
+Protetto 
+contro 
+l'accesso
+con il dorso della mano
+Il calibro di accessibilità di diametro 50 mm deve
+mantenere un'adeguata distanza dalle parti pericolose
+B
+Protetto 
+contro 
+l'accesso
+con un dito
+Il dito di prova articolato di diametro 12 mm e di lun-
+ghezza 80 mm deve mantenere un'adeguata distanza
+dalle parti pericolose
+C
+Protetto 
+contro 
+l'accesso
+con un attrezzo
+Il calibro di accessibilità di diametro 2,5 mm e di lun-
+ghezza 100 mm deve mantenere un'adeguata distanza
+dalle parti pericolose
+D
+Protetto 
+contro 
+l'accesso
+con un filo
+Il calibro di accessibilità di diametro 1,0 mm e di lun-
+ghezza 100 mm deve mantenere un'adeguata distanza
+dalle parti pericolose
+Tab. X.10.28   Gradi di protezione degli involucri: significato della lettera supplementare
+Lettera supplementare
+Significato
+H
+Apparecchiatura ad alta tensione
+
+[PAG 1031]
+IMPIANTI  ELETTRICI                                               X-181
+Tab. X.10.28 Segue
+10.11  Definizioni relative alla protezione contro i contatti diretti e indiretti
+Isolamento
+In un apparecchio elettrico è possibile distinguere diversi tipi di isolamento (Fig. X.10.28).
+Fig. X.10.28   Illustrazione dei vari tipi di isolamento.
+–  Isolamento funzionale: è quello che rende possibile il funzionamento dell'apparec-
+chio, isolando tra loro le parti a diversa tensione.
+–  Isolamento principale: è quello che isola le parti normalmente in tensione e ha lo
+scopo di proteggere dalle tensioni di contatto. Non sempre l'isolamento funzionale e
+quello principale coincidono: per esempio in una linea aerea con conduttori nudi vi è l'iso-
+lamento funzionale (aria) ma non quello principale.
+–  Isolamento supplementare: è un isolamento indipendente, che viene aggiunto a
+quello principale per assicurare la protezione dalle tensioni di contatto nel caso di cedi-
+mento di quest'ultimo.
+–  Doppio isolamento: è costituito dall'insieme dell'isolamento principale e di quello
+supplementare.
+–  Isolamento rinforzato: è un isolamento unico, in grado di assicurare lo stesso grado
+di protezione del doppio isolamento.
+Classe dei componenti
+I componenti elettrici vengono classificati in modi diversi, a seconda del loro isola-
+mento.
+–  Componenti di classe 0: sono apparecchiature provviste solo dell'isolamento principale
+e non aventi alcun dispositivo per il collegamento delle masse a un conduttore di protezione.
+Questi componenti non possono essere collegati a terra: nel caso di guasto all'isolamento la
+protezione è affidata soltanto alle caratteristiche dell'ambiente in cui si trovano.
+–  Componenti di classe I: sono apparecchiature provviste solo dell'isolamento princi-
+pale e aventi un dispositivo per il collegamento delle masse a un conduttore di protezione.
+Vanno collegate all'impianto di terra quando il sistema di protezione adottato lo prevede.
+Lettera supplementare
+Significato
+M
+Provato contro gli effetti dannosi dovuti all'ingresso d'acqua, quando le
+parti mobili dell'apparecchiatura (per esempio rotore di una macchina
+rotante) sono in moto
+S
+Provato per gli effetti dannosi dovuti all'ingresso d'acqua, quando le parti
+mobili dell'apparecchiatura (per esempio rotore di una macchina rotante)
+non sono in moto
+W
+Adatto all'uso in condizioni atmosferiche specificate e dotato di misure o
+procedimenti protettivi addizionali
+isolamento supplementare
+isolamento principale
+parte attiva (normalmente in tensione)
+isolamento funzionale
+parte attiva
+
+[PAG 1032]
+X-182
+  IMPIANTI ELETTRICI 
+–  Componenti di classe II: sono apparecchiature provviste di isolamento doppio o rin-
+forzato e non aventi alcun dispositivo di collegamento a un conduttore di protezione. Il
+loro simbolo è rappresentato nella Fig. X.10.29. Non devono essere collegate all'impianto
+di terra, ma sono ammessi morsetti per conduttori di protezione passanti.
+–  Componenti di classe III: sono apparecchiature aventi isolamento ridotto in quanto
+destinate a essere alimentate solo da un sistema a bassissima tensione di sicurezza e in cui
+non si possono generare tensioni di valore superiore a quello di alimentazione.
+Parte attiva
+In un sistema elettrico sono parti attive tutti i conduttori o le parti conduttrici che sono
+in tensione durante il funzionamento normale, compreso il conduttore neutro. Si esclude,
+per convenzione, il conduttore PEN dei sistemi TN-C.
+Massa
+Si definiscono masse tutte le parti conduttrici, facenti parte di componenti elettrici e
+che possono essere toccate, che non sono in tensione in condizioni normali di funziona-
+mento, ma possono andare in tensione, in caso di guasto, se si verifica il cedimento
+dell'isolamento principale.
+Esempi tipici di masse sono le carcasse dei motori e gli involucri metallici degli appa-
+recchi di classe 0 e I, ma non quelli dei componenti di classe II, data la presenza dell'iso-
+lamento supplementare. Non è una massa la parte conduttrice che può andare in tensione
+perché è in contatto con una massa, come può essere un banco metallico sul quale sono
+poggiati componenti elettrici provvisti di masse.
+Massa estranea
+È una parte conduttrice, non facente parte dell'impianto elettrico, in grado di intro-
+durre un potenziale, generalmente quello di terra.
+Un caso tipico sono le condutture metalliche interrate che, essendo in intimo contatto
+col terreno, possono assumere un potenziale prossimo a quello del punto in cui si trovano
+quando nel terreno vengono disperse delle correnti elettriche, potenziale che può essere
+introdotto nell'impianto; per questa ragione le masse estranee vanno collegate all'impianto
+di terra mediante i conduttori equipotenziali. Per valutare se un corpo metallico a contatto
+col terreno è una massa estranea bisogna misurarne la resistenza verso terra: le norme
+considerano masse estranee quelle aventi una resistenza verso terra inferiore a 1000  per
+gli ambienti ordinari e 200  per gli ambienti e le applicazioni particolari, quando si
+assume una tensione di contatto limite convenzionale UL = 25 V.
+Contatto diretto e indiretto
+Il contatto diretto si ha quando una persona tocca una parte attiva, in tensione durante
+il funzionamento normale; il contatto indiretto, invece, si ha quando viene toccata una
+massa, durante un guasto che interessi l'isolamento principale.
+10.12  Protezione contro i contatti indiretti mediante interruzione automatica
+dell'alimentazione, sistema TT
+È il metodo più diffuso per la protezione contro i contatti indiretti e viene realizzato
+mediante la combinazione tra l'impianto di terra e un dispositivo che apre il circuito in
+occasione del guasto.
+Per capire come devono essere coordinate le caratteristiche dei due componenti, si
+Fig. X.10.29   Simbolo dei componenti di 
+classe II.
+
+[PAG 1033]
+IMPIANTI  ELETTRICI                                               X-183
+consideri il caso rappresentato nella Figura X.10.30a in cui si verifica un guasto d'isola-
+mento in un apparecchio la cui massa M è collegata all'impianto di terra, senza che alcuna
+persona sia a contatto con la massa stessa. Il circuito equivalente semplificato, in cui sono
+state supposte nulle le impedenze dei conduttori di collegamento e quella del guasto, è
+riportato nella Figura X.10.30b, dove:
+–  Eeq e Zeq rappresentano la tensione e l'impedenza del generatore equivalente di
+Thévenin della rete di alimentazione dell'apparecchiatura in cui si verifica il guasto;
+–  Zu è l'impedenza del carico;
+–  REN è la resistenza dell'impianto di terra del neutro in cabina;
+–  RA è la resistenza complessiva del collegamento a terra della massa, ossia la resi-
+stenza tra il punto M e quello convenzionale a potenziale zero.
+Fig. X.10.30   a) Circuito verso terra nel sistema TT; b) circuito equivalente.
+La resistenza RA (Fig. X.10.31) è data dalla somma RA  RE  RPE tra la resistenza
+totale di terra misurata sul collettore e quella del complesso dei conduttori di protezione
+che collegano la massa al collettore stesso.
+Fig. X.10.31   Illustrazione del significato della resistenza RA = RE + RPE
+In molti casi la resistenza del conduttore di protezione è trascurabile rispetto a quella
+di terra ed è possibile, senza commettere un apprezzabile errore, ritenere RA  RE.
+La tensione di contatto a vuoto, pari alla differenza di potenziale tra la massa e il
+punto convenzionale a potenziale zero, è data da:
+M
+L1
+L2
+L3
+N
+a)
+PE
+IF
+Iu
+b)
+L3
+M
+T0
+REN
+RA
+Eeq
+Zeq
+Zu
+Iu
+IF
+I
+N
+M
+PE
+C
+CT
+D
+RPE
+RE
+RA
+C
+Massa
+Conduttore
+PE
+Conduttore di protezione
+CT
+Conduttore di terra
+D
+Dispersore
+M
+
+[PAG 1034]
+X-184
+  IMPIANTI ELETTRICI 
+dove IF è la corrente di guasto a terra che percorre la resistenza RA.
+La protezione è efficace se la tensione di contatto a vuoto sulla massa non supera la
+tensione di contatto limite convenzionale UL in corrispondenza del valore della corrente
+di guasto che fa intervenire il dispositivo.
+Se si impiega un interruttore differenziale si ha certamente IF  Idn, mentre quando si
+usa un dispositivo con sganciatore di sovracorrente la corrente che fa intervenire l'inter-
+ruttore è quella totale I (Fig. X.10.30) e non quella di guasto IF; considerando però il caso
+più sfavorevole, in cui risulta trascurabile la corrente nel carico Iu rispetto a quella di gua-
+sto, si ha IF  I e quindi:
+L'ultima edizione della norma CEI 64-8/4 impone, per i sistemi TT l'uso di dispositivi
+di protezione a corrente differenziale, per i quali la relazione di coordinamento si ricava
+considerando IF  Idn, RA  RE e UST  UL; si ottiene:
+(X.10.10)
+Sostituendo a UL i valori indicati dalla curva di sicurezza, per gli impianti utilizzatori
+a corrente alternata con tensione nominale fino a 1000 V la relazione X.10.12 diventa:
+(X.10.11)
+per i luoghi ordinari, esenti da maggiori rischi in caso di contatto, e:
+(X.10.12)
+per alcuni ambienti e applicazioni particolari, precisamente:
+–  cantieri di costruzione e di demolizione;
+–  strutture adibite a uso agricolo e zootecnico, nei luoghi destinati alla custodia del
+bestiame;
+–  locali a uso medico.
+Applicando la X.10.13 con i valori normalizzati di Idn si ricavano i seguenti valori
+limite della resistenza di terra:
+Per gli ambienti e le applicazioni particolari i valori limite di RE vanno dimezzati.
+Il vantaggio dell'uso del differenziale risulta evidente: anche utilizzando differenziali
+a bassa sensibilità (Idn  0,03 A) si consegue una protezione adeguata alla normativa
+anche con elevati valori della resistenza di terra, facilmente realizzabili. In pratica, per la
+protezione contro i contatti indiretti, si usano differenziali con Idn da 0,1 a 1 A. L'utilizza-
+zione di differenziali ad alta sensibilità, con Idn  0,03 A, è giustificata solo quando
+l'impianto di terra ha una resistenza particolarmente elevata oppure quando il differen-
+Idn (A) 
+0,01
+0,03
+0,1
+0,3
+0,5
+1
+3
+5
+10
+RE () 
+5000
+1667
+500
+167
+100
+50
+16,7
+10
+5
+UST
+RAIF
+=
+UST
+RAI
+=
+REIdn
+UL
+
+REIdn
+50
+
+REIdn
+25
+
+
+[PAG 1035]
+IMPIANTI  ELETTRICI                                               X-185
+ziale serve anche come protezione contro i contatti diretti.
+Nel caso di utilizzazione di differenziali selettivi ritardati, la norma CEI 64-8/4
+ammette, nei circuiti di distribuzione, un tempo di interruzione non superiore a 1 s.
+Impianto di terra comune a più derivazioni
+È questo un caso molto frequente per gli impianti utilizzatori in bassa tensione: per
+esempio, in un edificio civile l'impianto di terra è unico per tutte le unità immobiliari pri-
+vate e per i servizi comuni dello stabile.
+Nel caso di un impianto comprendente più derivazioni protette da dispositivi differen-
+ziali con correnti d'intervento diverse e con l'impianto di terra comune avente resistenza di
+terra RE, la relazione RE Idn  UL deve essere soddisfatta per il dispositivo avente la cor-
+rente d'intervento più elevata.
+La ragione di questa disposizione risulta evidente considerando che le masse, essendo
+connesse allo stesso impianto di terra, assumono all'incirca il medesimo potenziale (tra-
+scurando le piccole cadute di tensione sui PE), in occasione di un guasto d'isolamento in
+una qualsiasi derivazione: il caso più sfavorevole si ha pertanto quando il guasto interessa
+la derivazione protetta dal dispositivo meno sensibile.
+Dispositivi di protezione in Cascata
+Si supponga che una derivazione sia protetta da due dispositivi in cascata, aventi cor-
+renti differenziali nominali di diverso valore. Se si verifica un guasto d'isolamento, la cor-
+rente interesserà entrambi i dispositivi in serie per cui interverrà quello avente corrente
+d'intervento minore.
+In questo caso la norma prescrive che la relazione RE Idn  UL deve essere soddisfatta
+per il dispositivo avente la corrente d'intervento minore.
+Esempio
+Verificare il corretto coordinamento delle misure di protezione contro i contatti indi-
+retti per un impianto utilizzatore in bassa tensione posto in un ambiente ordinario, alimen-
+tato col sistema TT e avente resistenza dell'impianto di terra pari a RE  18 ,
+considerando che dal quadro elettrico generale partono le seguenti linee:
+–  n. 3 linee per l'alimentazione di apparecchi illuminanti, protette da interruttori
+magnetotermici sulle singole linee e da un differenziale puro a monte, comune alle tre
+linee e avente Idn  0,03 A;
+–  n. 2 linee per l'alimentazione di macchine operatrici, ognuna protetta da un interrut-
+tore magnetotermico differenziale avente Idn  0,3 A;
+–  n. 1 linea di alimentazione di un compressore, protetta da un interruttore magneto-
+termico differenziale avente Idn  1 A;
+–  n. 2 linee per l'alimentazione di pannelli prese CEE, ognuna protetta da un interrut-
+tore magnetotermico differenziale selettivo con Idn  0,3 A; su ogni pannello è installato
+un differenziale puro avente Idn  0,03 A.
+Tutte le derivazioni sono protette da interruttori differenziali, come previsto dalla nor-
+mativa; per le linee di alimentazione delle prese sono installati dispositivi in cascata, per
+cui occorre considerare la corrente differenziale nominale minore, pari a 0,03 A. Trattan-
+dosi di più derivazioni con impianto di terra comune, per la verifica del coordinamento
+occorre considerare la Idn più elevata tra le diverse linee (1 A) e si ottiene;
+La verifica è positiva in quanto il risultato ottenuto è inferiore al valore di UL previsto
+nel caso di ambienti ordinari (50V).
+REIdn
+18
+1
+
+18 V
+=
+=
+
+[PAG 1036]
+X-186
+  IMPIANTI ELETTRICI 
+Selettività tra differenziali
+Si valuti (Fig. X.10.32) il caso di due derivazioni protette da differenziali, alimentate
+da una linea a monte anch'essa protetta da differenziale. Se il guasto interessa il disposi-
+tivo B vi è certamente selettività orizzontale tra i due differenziali divisionali B e C, nel
+senso che interviene solo l'interruttore B interessato dal guasto, mentre è da verificare la
+selettività verticale tra A e B, in quanto anche A potrebbe intervenire. Considerando i
+valori della Fig. X.10.32 si ha la situazione rappresentata nella Figura X.10.33.
+Fig. X.10.32   Selettività tra differenziali.
+Fig. X.10.33   Zone di selettività.
+Per aumentare la selettività occorre creare una zona dopo il valore 0,5 A in cui A non
+possa intervenire e questo si ottiene ponendo:
+(Idn) a monte  2 (Idn) a valle
+La norma CEI 64-8 prevede un rapporto 1:3 tra le correnti differenziali nominali del
+dispositivo a valle rispetto a quello a monte (per esempio, 0,3 A e 1 A).
+Occorre inoltre ritardare l'intervento di quello a monte, per ovviare alla selettività
+nulla nella zona in cui è Id  Idn a monte. Ciò si ottiene facendo in modo che il tempo
+d'intervento del dispositivo a valle sia inferiore al tempo limite di non risposta di quello a
+monte, inteso come il tempo massimo durante il quale si può applicare una Id  Idn senza
+provocare il funzionamento dell'interruttore. Ritardare però l'intervento del dispositivo a
+monte contrasta con le esigenze di sicurezza per guasti nei tratti AB o AC, per i quali
+interviene solo A. Questo rischio è accettabile e può essere ridotto curando particolar-
+mente l'isolamento nei tratti compresi tra l'interruttore generale e quelli divisionali.
+1 A
+Id
+Id
+Id
+0,5 A
+0,5 A
+A
+B
+C
+nessun
+intervento
+può
+intervenire
+B
+interviene
+B
+può
+intervenire
+A
+intervengono
+A e B
+0,25
+0,5
+1
+Id (A)
+
+[PAG 1037]
+IMPIANTI  ELETTRICI                                               X-187
+In pratica, per realizzare la selettività verticale su due livelli, basta installare a monte
+un differenziale selettivo (tipo S) e a valle uno generale (tipo G).
+Per conseguire, invece, la selettività su tre livelli, occorre usare anche differenziali
+con tempo d'intervento regolabile.
+10.13  Protezione contro i contatti indiretti mediante interruzione automatica
+dell'alimentazione, sistema TN
+In questo caso (Fig. X.10.34 per un sistema TN-S alimentato con cabina propria) il
+guasto d'isolamento in una apparecchiatura fa nascere una corrente di guasto IF che si
+richiude attraverso il PE, senza interessare il terreno, di valore IF = U0/ZS, dove U0 è il
+valore efficace della tensione di fase e ZS è l'impedenza dell'anello di guasto, compren-
+dente la sorgente, il conduttore di fase fino al punto di guasto e il conduttore di protezione
+tra il punto di guasto e la sorgente. A differenza del sistema TT il valore di IF può essere
+sufficientemente alto (quando ZS è di piccolo valore, dell'ordine dei milliohm) da far
+intervenire i dispositivi di massima corrente, oltre quelli differenziali.
+Fig. X.10.34   Circuito di guasto per il sistema TN-S.
+La relazione di coordinamento da rispettare è:
+(X.10.13)
+La corrente d'intervento Ia è:
+–  la corrente differenziale nominale Idn per i dispositivi differenziali;
+–  la corrente che provoca l'apertura automatica del dispositivo entro un tempo defi-
+nito (Tab. X.10.32) per gli interruttori con sganciatori di massima corrente o per i fusibili,
+valutabile dalla caratteristica d'intervento.
+Tab. X.10.29   Tempo d’interruzione per i sistemi TN
+Tensione di fase U0
+(V)
+Tempo d'interruzione (s)
+Condizioni ordinarie
+Condizioni particolari
+120
+230
+400
+> 400
+0,8
+0,4
+0,2
+0,1
+0,4
+0,2
+0,06
+0,02
+Nota. Per i circuiti di distribuzione (che alimentano quadri di distribuzione) e per quelli terminali
+che alimentano solo componenti elettrici fissi è ammesso un tempo d'interruzione convenzionale
+non superiore a 5 s.
+L1
+L2
+L3
+N
+PE
+IF
+U0
+ZsIa
+U0
+
