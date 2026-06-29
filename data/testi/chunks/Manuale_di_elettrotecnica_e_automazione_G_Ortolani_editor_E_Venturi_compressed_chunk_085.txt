@@ -1,0 +1,1089 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 85/116 ===
+Chars: 43,776 | Offset: 3,713,042
+
+ in avanti (up-counter) o all'indietro (down-counter) di un bit per volta. Nel conteg-
+gio in avanti, se il flip-flop è di tipo T attivo sul fronte negativo, l'uscita Q di ogni flip-
+flop è connessa all'ingresso di clock del flip-flop successivo; se invece è di tipo attivo sul
+fronte positivo, è l'uscita Q ad essere connessa al clock del flip-flop successivo.
+Nel conteggio all'indietro, se il flip-flop è di tipo T attivo sul fronte negativo, l'uscita
+Q di ogni flip-flop è connessa all'ingresso di clock del flip-flop successivo; se è di tipo
+attivo sul fronte positivo, è l'uscita Q di ogni flip-flop ad essere connessa all'ingresso di
+clock.
+Un parametro caratteristico dei contatori è il modulo M, definito come il numero degli
+stati del contatore. I contatori binari, con n flip-flop, hanno n bit di uscita; il numero di
+stati possibili è 2n e il modulo del contatore è 2n. Ad esempio, con 4 flip-flop, si hanno 4
+bit di uscita e il numero di stati attraverso cui può passare il contatore è 16, dallo stato
+0000 allo stato 1111; il modulo M del contatore è perciò M = 16. 
+A)  Contatori asincroni avanti
+Nella Fig. XVII.18.1a è rappresentato lo schema di un contatore asincrono binario a
+tre bit, con conteggio in avanti; i flip-flop sono di tipo JK in condizione di toggle (J = K =
+1), attivi sul fronte positivo. Si suppone che il contatore sia inizialmente azzerato (Q2 = Q1
+= Q0 = 0) e che il ritardo di propagazione di ogni flip-flop sia uguale a zero. Le uscite
+sono Q2, Q1, Q0, che, lette nell'ordine, forniscono in forma binaria il risultato del conteg-
+
+[PAG 1722]
+XVII-122
+ELETTRONICA ANALOGICA E DIGITALE
+gio. Con tre bit gli stati possibili sono 23 = 8 (da 000 a 111) e quindi il contatore ha
+modulo M = 8. Nelle Fig. XVII.18.1b e c, sono riportate le forme d'onda delle uscite
+dovute agli impulsi di clock e il risultato del conteggio.
+Considerando i ritardi di propagazione dei singoli flip-flop, le conseguenze sono due.
+Il valore del conteggio non è immediato, ma è dato con ritardo ntpd, dove tpd è il
+ritardo di propagazione di un singolo flip-flop e n è il numero dei flip-flop del contatore.
+La frequenza massima degli impulsi che si possono applicare all'ingresso è quindi data da:
+fmax = 1/ntpd. Ad esempio, se il tempo di propagazione è di 10 ns ed il numero di flip-flop
+è n = 3, per avere un conteggio corretto, la massima frequenza del segnale di clock è
+fmax = 1/(310109  33,3 MHz.
+Il circuito passa attraverso stati intermedi non desiderati che possono essere causa
+d'errore.
+Fig. XVII.18.1   Contatori asincroni binari a tre bit: a) schema del circuito di conteggio in
+avanti; b) diagramma temporale delle uscite del circuito a); c) risultati del conteggio nel
+circuito a); a') schema del circuito di conteggio all'indietro; b') diagramma temporale
+delle uscite del circuito a'); c') risultati del conteggio nel circuito a'). 
+B)  Contatori asincroni indietro
+Nella Fig. XVII.18.1a' è rappresentato lo schema di un contatore asincrono binario a
+tre bit, con conteggio all'indietro; i flip-flop sono di tipo JK in condizione di toggle (J = K
+= 1), attivi sul fronte positivo. Si suppone che il contatore sia inizialmente nello stato Q2 =
+Q1 = Q0 = 1 e che il ritardo di propagazione di ogni flip-flop sia uguale a zero. Le uscite
+sono Q2, Q1, Q0, che, lette nell'ordine, forniscono in forma binaria il risultato del conteg-
+gio. Con tre bit gli stati possibili sono 23 = 8 (da 111 a 000) e quindi il contatore ha
+modulo M = 8. Nelle Fig. XVII.18.1b' e c', sono riportate le forme d'onda delle uscite
+dovute agli impulsi di clock e il risultato del conteggio.
+C)  Contatori asincroni avanti/indietro
+Lo schema di contatore asincrono avanti/indietro è quello o di un contatore in avanti o
+di uno all'indietro, con in più un ingresso di controllo, il cui stato seleziona il tipo di con-
+Ck
+Ck
+FF0
+J
+Q
+K Q
+1
+Ck
+J
+Q
+K Q
+Ck
+J
+Q
+K Q
+FF1
+FF2
+Q0
+Q1
+Q2
+a)
+a')
+Ck
+Ck
+FF0
+J
+Q
+K Q
+1
+Ck
+J
+Q
+K Q
+Ck
+J
+Q
+K Q
+FF1
+FF2
+Q0
+Q1
+Q2
+1
+3
+Ck
+Q0
+Q1
+Q2
+0
+0
+0
+1
+1
+1
+2
+4
+5
+6
+7
+8
+9
+001 010 011 100 101 110 111 000 001
+000
+b)
+c)
+1
+3
+Ck
+Q0
+Q1
+Q2
+1
+1
+1
+0
+0
+0
+2
+4
+5
+6
+7
+8
+9
+110 101 100 011 010 001 000 111 110
+111
+b')
+c')
+
+[PAG 1723]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-123
+teggio (up/down). Supponendo che i flip-flop di un contatore avanti/indietro abbiano i
+clock attivi sul fronte di discesa, quando l'ingresso di controllo è, ad esempio, a livello
+basso, si ha la connessione dell'ingresso di clock di ogni flip-flop all'uscita Q del flip-flop
+precedente e il conteggio è in avanti; quando l'ingresso di controllo è a livello alto, si ha la
+connessione dell'ingresso di clock di ogni flip-flop all'uscita Q del flip-flop precedente e il
+conteggio è all'indietro.
+D)  Contatori asincroni BCD
+I contatori BCD hanno modulo M = 10, quindi M < 2n. Per bloccare il conteggio prima
+che raggiunge il valore 2n, s'impiega una porta NAND che decodifica il primo stato da
+non considerare; l'uscita della porta NAND è applicata all'ingresso di Clear dei flip-flop,
+che si suppone attivo basso (se il Clear è attivo alto, si utilizza una porta AND al posto
+della NAND). Nella decodifica, per ridurre il numero d'ingressi della porta NAND, si
+considerano solo le uscite il cui livello è 1 nel primo stato da non considerare; perché,
+essendo il contatore in avanti, la combinazione di 1 non può presentarsi prima. Il conta-
+tore BCD (Binary Coded Decimal) è un contatore asincrono binario di modulo M = 10 e
+fornisce il risultato del conteggio degli impulsi applicati all'ingresso di clock, sotto forma
+di numero decimale codificato in binario. Nella Fig. XVII.18.2 è rappresentato lo schema
+di un contatore BCD; in questo contatore la successione degli stati è da 0 = (0000)2 a 9 =
+(1001)2. Il contatore è realizzato con quattro flip-flop (10 < 24) e il primo stato da esclu-
+dere è Q3Q2Q1Q0 = 1010 (decimale 10); per ottenere ciò, le uscite Q3 e Q1 sono portate ad
+una porta NAND che azzera i flip-flop tramite l'ingresso di Clear.
+Fig. XVII.18.2   Contatore asincrono decimale (BCD).
+18.2  Espansione della capacità di conteggio nei contatori asincroni
+Per ottenere un contatore asincrono di modulo maggiore, si possono collegare più
+contatori asincroni in cascata con l'uscita di peso maggiore di ogni contatore collegata al
+clock del successivo. Un esempio di connessione di due contatori asincroni a due bit è
+riportato nella Fig. XVII.18.3a.
+Fig. XVII.18.3   Contatori asincroni in cascata: a) binari a due bit; b) a decadi.
+Ck
+Ck
+FF0
+J
+Q
+K Q
+1
+Ck
+J
+Q
+K Q
+Ck
+J
+Q
+K Q
+FF1
+FF2
+Q0
+Q1
+Q2
+J
+Q
+K Q
+FF3
+Ck
+Q3
+CLR
+CLR
+CLR
+CLR
+IN
+Ck
+J
+Q
+K
+Q
+Q0
+LSB
+Contatore 1
+Ck
+J
+Q
+K
+Q
+Q1
+Ck
+J
+Q
+K
+Q
+Q2
+Ck
+J
+Q
+K
+Q
+Q3
+Contatore 2
+MSB
+1
+a)
+Contatore
+IN
+Q0 Q1 Q2 Q3
+Unità
+a decade
+Contatore
+Q0 Q1 Q2 Q3
+Decine
+a decade
+b)
+
+[PAG 1724]
+XVII-124
+ELETTRONICA ANALOGICA E DIGITALE
+Nella Fig. XVII.18.3b è riportata la connessione di due contatori a decade in cascata,
+realizzata collegando l'uscita di peso maggiore del contatore delle unità all'ingresso di
+clock del contatore delle decine; in questo modo si ha il conteggio dal valore 00 al valore
+99. Con lo stesso criterio, aggiungendo in cascata altri contatori decimali, si ottengono
+contatori a più cifre decimali. Con la connessione in cascata si ha l'inconveniente che,
+aumentando il numero degli stadi, aumenta il ritardo di propagazione e quindi la fre-
+quenza degli impulsi da contare non può essere elevata. Ad esempio, supponendo che il
+singolo contatore a decade abbia tempo di propagazione di 50 ns, la frequenza massima
+degli impulsi applicabili è 20 MHz. Volendo realizzare un contatore a quattro cifre deci-
+mali, occorrono quattro contatori in cascata e il ritardo di propagazione complessivo è di
+200 ns; pertanto, la massima frequenza degli impulsi è 1/(200 109)  5 MHz.
+18.3  Contatori sincroni
+I contatori sincroni hanno tutti gli ingressi di clock connessi ad un unico ingresso di
+clock, pertanto tutti i flip-flop sono attivi contemporaneamente.
+Fig. XVII.18.4   Contatore sincrono binario a tre bit (modulo M = 8).
+Come per i contatori asincroni, si hanno i seguenti tipi di contatori sincroni.
+–  Contatori sincroni binari in avanti. Nella Fig. XVII.18.4 è disegnato lo schema di
+un contatore sincrono binario a tre bit (modulo M = 23 = 8); il valore di conteggio aumenta
+di una unità, ad ogni impulso di clock.
+–  Contatori sincroni binari a sequenza troncata. Sono caratterizzati da un modulo M
+< 2n, essendo n il numero dei flip-flop.
+–  Contatori sincroni binari all'indietro. In essi il valore di conteggio decresce di una
+unità, ad ogni impulso di clock.
+–  I contatori sincroni binari avanti/indietro. Contano in entrambe le direzioni con
+incremento o decremento del conteggio di una unità ad ogni impulso di clock, a seconda
+del livello di un ingresso di controllo.
+18.4  Espansione della capacità di conteggio nei contatori sincroni
+Per estendere la capacità di conteggio di un contatore, si realizza la connessione in
+cascata di contatori con capacità di conteggio più bassa e si ottiene un contatore sincrono
+di modulo M, con M uguale al prodotto dei moduli dei singoli contatori: M M1  M2  
+Mn. Per realizzare la connessione in cascata, i contatori integrati sono provvisti di
+un'uscita di conteggio finale e di un ingresso d'abilitazione al conteggio. L'uscita di con-
+teggio finale è indicata in diversi modi: con TC (Terminal Count); con RCO (Ripple Carry
+Output); con Carry Out o semplicemente con Carry. L'ingresso di abilitazione al conteg-
+gio è indicato con CTEN (Count Enable) o con E (Enable) o con ENT e ENP.
+Le connessioni possono essere di tipo asincrono o sincrono. Lo schema di principio
+della connessione di tipo asincrono è riportato in Fig. XVII.18.5a. In questa connessione
+Ck
+Ck
+FF0
+J
+Q
+K
+Q
+1
+Ck
+J
+Q
+K
+Q
+Ck
+J
+Q
+K
+Q
+FF1
+FF2
+Q0
+Q1
+Q2
+P
+
+[PAG 1725]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-125
+gli ingressi di clock non sono connessi fra loro, quindi i due contatori non sono attivati
+contemporaneamente. Lo schema di principio della connessione sincrona è riportato in
+Fig. XVII.18.5b; in questa connessione gli ingressi di clock sono connessi fra loro, quindi
+i due contatori sono attivati contemporaneamente.
+Fig. XVII.18.5   Connessione di contatori sincroni in cascata: a) asincrona; b) sincrona.
+18.5  Divisori di frequenza
+I contatori possono essere utilizzati come divisori di frequenza; nei contatori binari,
+l'uscita di peso più elevato ha frequenza f uguale a f = fCk/M, con fCk frequenza del segnale
+di clock e M modulo del contatore. Ad esempio, nella Fig. XVII.18.1b, si rileva che
+nell'intervallo di otto impulsi di clock, si hanno quattro impulsi all'uscita Q0, due all'uscita
+Q1 ed uno all'uscita Q2, con le frequenze:
+(fCk è la frequenza del segnale di clock).
+19  MEMORIE ROM E RAM
+Le memorie ROM e RAM sono dispositivi per memorizzare informazioni sotto forma
+binaria; in questo paragrafo si considerano le memorie integrate a semiconduttore.
+19.1  Caratteristiche generali delle memorie
+A)  Tipi di memorie
+Le memorie principali a semiconduttore sono di due tipi: ROM (Read Only Memory) e
+RAM (Random Access Memory). Nelle ROM le informazioni sono memorizzate (scritte)
+in modo permanente e possono essere solo lette (Read); per questo sono dette memorie a
+sola lettura. Nelle RAM le informazioni possono essere o scritte o lette (Read/Write o R/
+W); per questo sono dette anche Read Write Memories. Le RAM sono memorie volatili,
+perché l'informazione è persa quando si toglie l'alimentazione.
+Tab. XVII.19.1   Nomi e abbreviazioni delle unità di memoria
+Unità
+Dimensione in byte
+Indicazioni
+Kilobyte
+210 = 1 024
+1 kB o 1 k
+Megabyte
+220 = 1 048 576
+1 MB o 1 M
+Gigabyte
+230 = 1 073 741 824
+1 GB
+Terabyte
+240 = 1 099 511 627 776
+1 TB
+Q0 Q1 Q2 Q3
+Q0 Q1 Q2 Q3
+LSB
+MSB
+CTR1
+CTR2
+Up
+Down
+Carry
+Borrow
+Up
+Down
+Carry
+Borrow
+a)
+Q0 Q1 Q2 Q3
+Q0 Q1 Q2 Q3
+LSB
+MSB
+CTR1
+CTR2
+E
+Ck
+Carry
+E
+Ck
+Carry
+out
+out
+1
+b)
+fQ0
+fCk
+2;
+
+=
+fQ1
+fCk
+4;
+
+=
+fQ1
+fCk
+8
+
+=
+
+[PAG 1726]
+XVII-126
+ELETTRONICA ANALOGICA E DIGITALE
+B)  Capacità di una memoria
+L'elemento base delle memorie a semiconduttore è la cella di memoria dove è imma-
+gazzinato un bit; otto celle formano una locazione di memoria, dove è immagazzinato un
+byte (8 bit), indicato con la lettera B. Il numero di byte, che può contenere un insieme di
+celle, è detto capacità di memoria; è espressa in termini di multipli di byte. I multipli del
+byte sono potenze di due e indicati con prefissi derivati dal greco, scritti mediante abbre-
+viazioni, come riportato nella Tab. XVII.19.1.
+Nell'indicazione della capacità di memoria, si usa anche scrivere al posto della lettera
+B il numero di bit del byte; ad esempio, 65.536 B = 64KB = 64K8.
+C)  Indirizzi di memoria
+Un insieme di celle di memoria è chiamato sistema di memoria ed ogni singola loca-
+zione di memoria è individuata assegnandole un codice binario detto indirizzo. La dimen-
+sione del codice binario per l'indirizzo determina il numero di indirizzi univoci, e quindi
+le celle direttamente accessibili nel sistema di memoria; ad esempio, con un codice a 16
+bit si possono individuare 216 = 65.536 indirizzi. Ad un codice indirizzo corrisponde un
+insieme di linee chiamato linee di indirizzo, o bus indirizzi, su cui inviare i bit dell'indi-
+rizzo di memoria. Per un dato da memorizzare, i suoi bit sono inviati alla cella di memoria
+mediante linee chiamate linee dati, o bus dati.
+D)  Struttura di una memoria
+La disposizione delle celle costituisce la struttura di una memoria; nella Fig.
+XVII.19.1 sono riportati due schemi di principio di strutture. Nella Fig. XVII.19.1a è dise-
+gnata una memoria con struttura rettangolare a matrice 84, capace di contenere 8 dati di
+4 bit ciascuno. 
+Le linee orizzontali (righe) e verticali (colonne) individuano le celle, realizzate con
+latch e indicate con quadratini nella figura. Per la lettura, le linee d'indirizzo A2A1A0 sono
+collegate ad un decoder che attiva la riga corrispondente all'indirizzo; le celle ad essa con-
+nessa sono attive, e le loro uscite sono collegate alle colonne Q3Q2Q1Q0, che costitui-
+scono l'uscita della memoria.
+Fig. XVII.19.1   Struttura di una memoria: a) schema di principio a matrice rettangolare
+84; b) schema a matrice quadrata 3232, per una memoria 2564.
+Decoder di indirizzo
+Linee di indirizzo
+Cella
+Q0
+A2 A1 A0
+Q1
+Q2
+Q3
+X7
+X6
+X0
+a)
+Decoder di indirizzo
+Matrice di memoria 32x32
+(256x4)
+Linee di indirizzo
+MUX3
+MUX2
+MUX1
+MUX0
+Q0
+Q1
+Q2
+Q3
+A7A6
+A5
+A4
+A3
+A2
+A1
+A0
+X31
+X1
+X0
+Y7 Y6 Y0
+Y7 Y6 Y0
+Y7 Y6 Y0
+Y7 Y6 Y0
+b)
+
+[PAG 1727]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-127
+La struttura indicata è semplice, ma è conveniente solo per piccole memorie; infatti,
+per un numero di locazioni elevato, la struttura rettangolare è ingombrante e il decoder è
+complesso. Ad esempio, una memoria con 512 locazioni richiederebbe un decoder con
+512 linee d'uscita. 
+Per superare questo inconveniente è stata introdotta la struttura a matrice quadrata,
+come quella della Fig. XVII.19.1b, costituita da 256 locazioni di memoria di 4 bit
+(2564). Le celle di questa struttura sono 1024, disposte secondo una matrice quadrata
+con 32 righe e 32 colonne, e le linee d'indirizzo sono A7A6A5A4A3A2A1A0. 
+Il gruppo A4A3A2A1A0, è applicato al decoder che attiva una delle 32 righe della
+matrice, da X0 a X31, e costituisce l'indirizzo di riga. Le colonne sono divise in 4 gruppi,
+quanti sono i bit del dato d'uscita; ogni gruppo è applicato ad un multiplexer (MUX3 
+MUX0), detto decoder di colonna, e le uscite dei multiplexer costituiscono le linee
+d'uscita della memoria. 
+Il gruppo A7A6A5 di linee è applicato a tutti i multiplexer e forma l'indirizzo di
+colonna; si portano all'uscita i bit di una sola colonna per ogni multiplexer. 
+Ad esempio, per la lettura della memoria, se l'indirizzo è A7A6A5A4A3A2A1A0 =
+10100000, il gruppo A4A3A2A1A0 = 00000 è applicato al decoder d'indirizzo e attiva la
+linea X0, e tutte le celle ad essa collegate; il gruppo A7A6A5 = 101 è applicato ai multi-
+plexer, e solo i bit sulle linee Y5 sono trasmessi alle uscite Q3Q2Q1Q0.
+E)  Esempio di scrittura/lettura di una memoria
+Si considera il sistema a microprocessore (P) riportato nella Fig. XVII.19.2a.
+Il microprocessore è collegato al dispositivo di memoria con i seguenti bus (linee):
+con il bus dati, bidirezionale, per lo scambio dei dati fra microprocessore e memoria; con
+il bus indirizzi, unidirezionale, per la selezione dell'indirizzo della locazione di memoria;
+con il bus di controllo (linea di controllo), unidirezionale, per attivare la scrittura o la let-
+tura nella locazione di memoria indirizzata, unitamente a un decoder con l'uscita collegata
+all'ingresso di Chip Select (CS),
+Fig. XVII.19.2   Esempio di: a) memoria in un sistema a microprocessore; b) cicli di
+scrittura e lettura.
+Bus dati
+Dispositivo
+di memoria
+Dati
+Indirizzi
+R/W
+CS
+Decoder
+Bus indirizzi
+Bus controllo
+P
+a)
+Indirizzi
+Write
+(Scrittura)
+Read
+(Lettura)
+R/W
+CS
+Dati
+Tempo di
+scrittura
+Tempo di
+accesso
+b)
+
+[PAG 1728]
+XVII-128
+ELETTRONICA ANALOGICA E DIGITALE
+Le operazioni di scrittura e lettura, dette anche cicli di lettura e scrittura, sono illu-
+strate mediante i diagrammi degli stati dei segnali della Fig. XVII.19.2b.
+1)  L'operazione di scrittura in memoria (Write) consiste nell'immettere un dato in una
+locazione di memoria, corrispondente ad un determinato indirizzo. Per fare ciò il P deve
+operare sul dispositivo di memoria nel seguente modo: attivare l'indirizzo della locazione
+dove occorre memorizzare il dato, utilizzando il bus indirizzi; abilitare il dispositivo di
+memoria applicando un segnale all'ingresso CS (attivo a livello basso); dare il comando di
+scrittura, applicando un segnale all'ingresso R/W (attivo a livello basso); applicare
+all'ingresso dati la parola da memorizzare utilizzando il bus dati. 
+Dopo l'intervallo di tempo di scrittura, la parola è memorizzata nella locazione indiriz-
+zata. La scrittura cancella il dato eventualmente presente in precedenza.
+2)  L'operazione di lettura di memoria (Read) consiste nel portare all'uscita della
+memoria, sul bus dati, il dato di una locazione. Per fare ciò il P deve operare sul disposi-
+tivo di memoria nel seguente modo: attivare l'indirizzo della locazione dove è contenuto il
+dato che deve essere letto, utilizzando il bus indirizzi; abilitare il dispositivo di memoria
+applicando un segnale all'ingresso CS (attivo a livello basso); dare il comando di lettura,
+applicando un segnale all'ingresso R/W (attivo a livello alto). 
+Dopo un intervallo dovuto al tempo d'accesso, la parola della locazione indirizzata è pre-
+sente all'uscita della memoria, nell'esempio sul bus dati. La lettura non è distruttiva.
+I cicli di scrittura e lettura delle memorie sono rappresentati medianti diagrammi tem-
+porali, come quelli della Fig. XVII.19.2b; per disegnarli si seguono le seguenti conven-
+zioni.
+–  Una linea indica il livello del segnale nel tempo; i tratti inclinati indicano le com-
+mutazioni fra un livello e l'altro.
+–  Le combinazioni stabili di più segnali sono rappresentate con due linee parallele,
+una a livello alto ed una a livello basso, e le diverse linee possono essere singolarmente
+sia a livello basso sia alto; ad esempio, all'inizio del diagramma delle linee d'indirizzo
+nella Fig. XVII.19.2b, i tratti continui a livello 0 ed a livello1 dei segnali d'indirizzo indi-
+cano che sono presenti più segnali.
+–  Due linee che s'incrociano indicano che vi è una variazione di uno o più livelli dei
+segnali, che erano stabili prima della variazione e ritornano stabili dopo.
+–  Una linea singola posta fra il livello alto e quello basso indica che le linee d'uscita
+del dispositivo sono di tipo three-state, che si trovano nello stato di alta impedenza, e
+quindi non sono connesse al circuito esterno.
+F)  Tecnologie delle costruzioni di memorie integrate
+Le tecnologie delle costruzioni di memorie integrate impiegano o circuiti a BJT o cir-
+cuiti a MOS. Le memorie a BJT sono più veloci di quelle a MOS, però dissipano una
+potenza maggiore ed occupano più spazio.
+Le memorie a MOS dissipano poca potenza ed occupano poco spazio, soprattutto le
+CMOS; con questa tecnologia sono costruite le memorie di grande capacità e le memorie
+dinamiche.
+19.2  Classificazione ed impiego delle memorie ROM
+Le ROM si dividono nei tipi seguenti.
+–  ROM a maschera o Mask ROM. Sono costruite mediante processo di diffusione con
+maschere e i dati sono memorizzati in fase di costruzione del dispositivo.
+–  ROM programmabili o PROM. Sono programmate dall'utente con apparecchiature
+chiamate programmatori di PROM.
+
+[PAG 1729]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-129
+–  ROM riprogrammabili. In base al processo di cancellazione si dividono in: EPROM
+(Erasable PROM), cancellabili con luce ultravioletta; EEPROM (Electrically Erasable
+PROM) o E2PROM, cancellabili e riprogrammabili mediante impulsi elettrici.
+Le EPROM sono cancellate esponendo la memoria a radiazioni ultraviolette; in
+seguito possono essere riprogrammate. Sono indicate anche come PROM a cancellazione
+ottica o UVPROM (Ultraviolet PROM). Per la cancellazione, la parte superiore del dispo-
+sitivo presenta una finestra trasparente che permette la penetrazione di raggi ultravioletti
+all'interno del contenitore. La possibilità d'essere riprogrammate le rende particolarmente
+adatte alla realizzazione di prototipi sperimentali e di dispositivi per i quali si prevedono
+cambiamenti. Esistono algoritmi di programmazione che rendono veloce la programma-
+zione delle EPROM.
+Le ROM sono impiegate in svariati dispositivi, ad esempio: nei computer per memo-
+rizzare i programmi BIOS (Basic Input Output Services); per memorizzazione i pro-
+grammi di compilatori; nei generatori di forme d'onda; nei generatori di funzioni
+(trigonometriche, logaritmiche, esponenziali); nelle tabelle di linearizzazione della rispo-
+sta negli strumenti di misura; nei generatori di caratteri per terminali video e visualizza-
+tori; nei convertitori di codice.
+19.3  Classificazione delle memorie RAM
+Le RAM si dividono in statiche e dinamiche.
+–  RAM statiche o SRAM. Sono costituite da latch, costruiti con tecnologia bipolare o
+MOS. In ogni latch è memorizzato un bit e vi rimane finché non è scritto un nuovo bit o è
+tolta l'alimentazione.
+–  RAM dinamiche o DRAM. Come elementi di memoria, sfruttano la proprietà dei
+condensatori di accumulare cariche elettriche sulle proprie armature e di mantenerle; per
+memorizzare il bit 1, si carica il condensatore e l'informazione resta memorizzata finché
+le cariche permangono sulle sue armature. Al bit 0 corrisponde il condensatore scarico. Le
+DRAM memorizzano il bit nella capacità parassita C fra gate e substrato di un MOSFET.
+Per memorizzare un bit è sufficiente un transistor, ed è possibile realizzare memorie
+grandi con dimensioni relativamente piccole. Nel tempo il condensatore del MOSFET
+tende a scaricarsi; per reintegrare la carica, al MOSFET è collegato un circuito di refresh
+(rinfresco) che ripristina la carica, con un periodo da alcune decine di microsecondi ad
+alcuni millisecondi.
+20  DISPOSITIVI LOGICI PROGRAMMABILI
+I dispositivi logici programmabili, o PLD (Programmable Logic Devices), permettono
+la realizzazione di funzioni digitali o combinatorie o sequenziali o combinatorie e sequen-
+ziali con lo stesso integrato. Essi sono prodotti allo stato non programmato e le funzioni
+desiderate sono programmate dall'utente. La struttura di alcuni comuni dispositivi PLD è
+a forma di matrici, con una matrice AND, o piano AND, e una matrice OR, o piano OR. Le
+variabili d'ingresso sono applicate alla matrice AND e alle sue uscite si hanno i prodotti
+delle variabili; mediante programma si attivano delle connessioni fra le uscite della
+matrice AND e gli ingressi della matrice OR (le linee di connessione realizzate sono dette
+linee prodotto); alle uscite della matrice OR si ha la funzione Y desiderata.
+Data la struttura specifica e la complessità dei PLD, negli schemi si adottano notazioni
+particolari. Ad esempio, nella Fig. XVII.20.1a è riportato un buffer d’ingresso; esso per-
+mette di applicare alla matrice AND la variabile d’ingresso vera ed il suo complemento.
+Nella Fig. XVII.20.1b una sola linea fa capo all'ingresso della porta e le intersezioni
+con le linee I0  I7 indicano che ognuna delle linee I0  I7 può essere un fattore del pro-
+dotto logico; mediante la programmazione si fanno le connessioni desiderate, in figura
+
+[PAG 1730]
+XVII-130
+ELETTRONICA ANALOGICA E DIGITALE
+rappresentate mediante una crocetta ().
+Nella Fig. XVII.20.1b, come esempio, le variabili di ingresso I1 e I3 sono applicate
+all'ingresso della porta e la funzione che si ottiene è Y = I1 I3. Vi è da osservare che non
+esiste uniformità di indicazioni da parte dei costruttori.
+Fig. XVII.20.1   Notazioni negli schemi di dispositivi PLD: a) buffer di ingresso; b) nota-
+zione delle linee connesse ad una porta.
+Sono usate convenzioni diverse per indicare le connessioni; ad esempio, la connes-
+sione programmata può essere segnata con un punto, anziché con una crocetta, la connes-
+sione fissa può essere segnata con un cerchietto pieno e la connessione programmabile
+può essere segnata con un cerchietto vuoto.
+20.1  Dispositivi PAL
+I PLD più noti sono i PAL, così detti dalle iniziali di Programmable Array Logic
+(matrice logica programmabile). Nella Fig. XVII.20.2 è riportata la struttura di base di un
+PAL a quattro ingressi e quattro uscite, con la matrice AND programmabile e la matrice
+OR fissa. Dopo la programmazione del PAL, i prodotti Y, alle uscite della matrice AND,
+sono funzioni programmate di I0, I1, I2, I3; alle uscite della matrice OR si rilevano le fun-
+zioni logiche desiderate. Ad esempio, nella Fig. XVII.20.2, la funzione all'uscita O0 è O0 =
+Y0 + Y1 + Y2 + Y3.
+Per la programmazione dei dispositivi PAL si utilizzano software che permettono di
+simulare come funzionerà il PAL dopo la programmazione delle funzioni; questi software
+sono scritti in linguaggio ASSEMBLER.
+I dispositivi PAL sono individuati con sigle che forniscono informazioni sulle loro
+caratteristiche. Una sigla PAL ha generalmente la forma: PAL N1 CL N2 S. Il significato
+dei termini è il seguente.
+–  PAL indica il tipo di dispositivo; l'indicazione PALC indica che l'integrato è realiz-
+zato con tecnologia CMOS.
+–  N1 è il numero d’ingressi della matrice AND.
+–  CL è un codice letterale di una o più lettere, relativo ad alcune caratteristiche delle
+uscite. La lettera H indica che l'uscita è attiva alta. La lettera L indica che l'uscita è attiva
+bassa. La lettera P indica che la polarità dell'uscita è programmabile. La lettera C indica
+che ci sono uscite complementari. La lettera R indica che all'uscita ci sono registri. La
+sigla RA indica che i registri sono asincroni. La sigla RP indica che i registri contenuti
+sono con uscita programmabile.
+–  N2 è il numero delle uscite.
+I0
+I0
+I0
+a)
+I0
+I1
+I2
+I3
+I4
+I5
+I6
+I7
+Y
+b)
+
+[PAG 1731]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-131
+–  S è un suffisso riguardante la velocità e la potenza dissipata (ad esempio, nei PAL
+serie Medium 20, la lettera A significa 25 ns di tempo di propagazione e 180 mA di cor-
+rente assorbita).
+Fig. XVII.20.2   Struttura di base di un dispositivo PAL.
+IL PAL16L8 ha 16 ingressi e 8 uscite combinatorie. Le linee della matrice AND che
+forniscono i prodotti sono 64, suddivise in gruppi di 8; nella Fig. XVII.20.3 è rappresen-
+tata in modo semplificato parte della struttura del PAL16L8. Nella figura sono rappresen-
+tati due gruppi di 8 linee. La prima linea di ogni gruppo è utilizzata per comandare il
+buffer invertente three-state d’uscita; le altre 7 sono le line prodotto collegate agli ingressi
+della porta OR, la cui uscita, attiva bassa, è applicata all'ingresso del buffer. Le funzioni
+svolte dal PAL sono AND, OR e INVERT. Le variabili di ingresso sono applicate ai buf-
+fer di ingresso, le cui uscite danno le variabili d'ingresso vere e negate. Dopo la program-
+mazione, le variabili vere e negate sono applicate alle linee prodotto, i prodotti sono
+sommati dalle porte OR, le cui uscite sono infine negate dal buffer di uscita. Ad esempio,
+per realizzare le funzioni Y0 = A + B e Y1 = ABC + AC con il PAL16L8, con riferimento
+alla Fig. XVII.20.3, si procede nel seguente modo.
+–  Occorre realizzare Y0 e Y1 alle uscite delle porte OR, per ottenere le funzioni richie-
+ste, perché le uscite del PAL sono attive basse, data la presenza dei buffer invertenti.
+–  Da Y0 = A + B e Y1 = ABC + AC, per il teorema di De Morgan e semplificando con
+metodi algebrici, si deduce che Y0 e Y1 devono essere:
+Y0 = A + B; Y1 = ABC + AC = AB + AC + A C
+–  Si pone I0 = A, I1 = B e I2 = C. Utilizzando le uscite O0 per Y0 e O1 per Y1, alle
+uscite delle porte OR si deve avere Y0 = AB = I0I1 e Y1 = AB + AC + A C = I0I1 + I0I2 + I0I2.
+–  Con riferimento alla Fig. XVII.20.3, la colonna 0 della matrice AND ha il livello
+logico di I1 e la colonna 2 ha quello di I0. Realizzando le connessioni indicate con cro-
+cette, fra riga 1 e colonne 0 e 2, l'uscita della porta AND della riga 1 è a livello logico dato
+da I0I1; le altre linee sono a livello logico 0 essendo nulli i prodotti. All'uscita della porta
+OR si ha Y0 = I0I1 = AB e all'uscita O0 del buffer invertente si ottiene:
+O0 = Y0 = I0I1 = I0 + I1 = A  B
+Matrice AND
+Matrice OR
+I0
+I2
+I3
+O0
+O1
+O2
+O3
+Y0
+Y1
+Y2
+Y3
+I1
+
+[PAG 1732]
+XVII-132
+ELETTRONICA ANALOGICA E DIGITALE
+–  In modo analogo si procede per determinare l'uscita di O1. Le colonne 1 e 2 hanno
+rispettivamente il livello logico di I1 e I0; realizzando le connessioni indicate con crocette,
+l'uscita della porta AND della riga 9 è a livello logico dato da I0I1. L'uscita della porta
+AND della riga 10 è a livello logico dato da I0I2 e l'uscita della porta AND della riga 11 è
+a livello logico dato da I0I2. All'uscita della porta OR si ha Y1 = I0I1 + I0I2 + I0I2 e all'uscita
+O1 del buffer invertente si ha:
+O1 = Y1 = I0I1 + I0I2 + I0I2 = I0I1  I0I2  I0I2 =
+= (I0 + I1)(I0 + I2)(I0 + I2) = I0I2 + I0I1I2 = AC  ABC
+Fig. XVII.20.3   Schema logico semplificato del dispositivo PAL16L8 
+21  MICROPROCESSORE
+Il microprocessore è il dispositivo integrato principale in un computer. Nella Fig.
+XVII.21.1 è riportato lo schema semplificato di un microcomputer, costituito dal micro-
+processore, dal sistema di memoria ROM e RAM, dalla sezione d'interfaccia I/O (Input/
+Output) e da tre gruppi di linee di collegamento, detti bus. Alla sezione I/O sono connessi
+i dispositivi di collegamento con l'esterno controllati dal microprocessore, chiamati porti.
+Nella Fig. XVII.21.1 sono riportati il porto 3, che è un circuito per l'ingresso dati, e il
+I0I1
+O0
+O1
+I8
+I0 = A
+0....3
+4....7
+8....11 12....15 16....19 20....23 24....27 28....31
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+63
+I1 = B
+I2 = C
+Y0
+I0I1
+I0I2
+I0I2
+Y1
+I9
+I15
+
+[PAG 1733]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-133
+porto 4, che è un circuito per l'uscita dati; ad esempio, per l'ingresso e l'uscita dati del
+microcomputer, al porto 3 si collega una tastiera e al porto 4 un display o un motore.
+Fig. XVII.21.1   Struttura semplificata di un microcomputer.
+I Bus sono le linee di collegamento fra microprocessore, memorie, dispositivi I/O. Si
+hanno tre tipi di bus: per gli indirizzi di memoria, per i dati e per il controllo delle sezioni
+del computer. Tutti e tre i bus fanno capo al microprocessore.
+–  Il Bus indirizzi (address bus) è costituito da linee per portare i segnali utili o a
+comunicare l'indirizzo della locazione di memoria su cui si vuole leggere o scrivere, o ad
+attivare un porto d'ingresso o uscita.
+–  Il Bus dati (data bus) è costituito da linee che collegano in entrambe le direzioni le
+diverse sezioni del microcomputer per lo scambio di dati.
+–  Il Bus di controllo è costituito da linee per il controllo delle diverse sezioni del
+microcomputer, come, ad esempio, per abilitare la memoria ad operare in lettura o scrit-
+tura o per attivare i circuiti d'interfaccia per le operazioni d'ingresso e uscita dati.
+Le operazioni che il computer deve compiere sono indicate da una successione d'istru-
+zioni, che nel loro insieme costituiscono il programma. Un'istruzione di programma per il
+microprocessore è presenza o assenza di segnali elettrici continui ai suoi piedini; alla pre-
+senza del segnale elettrico si fa corrispondere il bit 1 e all'assenza il bit 0 (o viceversa).
+Ad un'istruzione corrisponde una specifica sequenza di raggruppamenti di 0 e 1 codificati,
+chiamati codice macchina. Il sistema numerico binario del codice macchina può essere
+convertito in altri sistemi numerici, e la conversione più usata è quella esadecimale. Le
+istruzioni che costituiscono un programma sono inviate al microprocessore in codice mac-
+china una alla volta.
+Non è necessario scrivere i codici macchina in forma numerica, è più semplice utiliz-
+zare il linguaggio assembler; esso è un insieme di parole di carattere mnemonico, che rap-
+presentano i codici macchina. Un programma scritto con questo linguaggio è convertito in
+codice macchina con uno speciale programma chiamato assemblatore. La maggior parte
+Microprocessore
+Memoria ROM
+Memoria RAM
+I/O
+Porto
+3
+Porto
+4
+Bus dati
+Bus indirizzi
+Bus di        controllo
+
+[PAG 1734]
+XVII-134
+ELETTRONICA ANALOGICA E DIGITALE
+delle istruzioni del linguaggio assembler comporta un'azione diretta sul microprocessore,
+di conseguenza ogni sua azione è programmata fin nei minimi termini. Ad esempio, consi-
+derando il microprocessore Z80, l'istruzione assembler LD A, (HL) è letta “LOAD (LD),
+ossia carica, nel registro semplice A il contenuto della cella di memoria il cui indirizzo è
+indicato nel registro doppio HL” e significa: “Lettura tramite registro puntatore”; il pro-
+gramma assemblatore la converte nel codice macchina 01111110 (7EH nel sistema esade-
+cimale).
+L'esecuzione dell'istruzione da parte del microprocessore avviene in tre fasi: prelievo
+dell'istruzione dalla memoria (fase di fetch); decodifica dell'istruzione (fase di decode);
+esecuzione dell'istruzione (fase di execute).
+21.1  Architettura del microprocessore 8080
+Per mostrare le funzioni e il modo di operare essenziali del microprocessore, si fa rife-
+rimento all'integrato 8080, la cui architettura è riportata nella Fig. XVII.21.2; le funzioni e
+i blocchi sono i seguenti.
+1)  La ALU è l'unità aritmetico-logica, per le funzioni di calcolo.
+2)  L'accumulatore è un registro a 8 bit, indicato generalmente con A, che ha lo scopo
+di contenere uno degli operandi su cui la ALU esegue le operazioni richieste; il risultato
+dell'operazione è immesso nell'accumulatore stesso, che sostituisce l'operando contenuto
+prima.
+3)  Il latch accumulatore è un registro che memorizza temporaneamente il contenuto
+del registro A, per renderlo disponibile poi alla ALU.
+4)  Il registro temporaneo è un registro a 8 bit, che ha la funzione di contenere il dato
+per la ALU.
+5)  Il flag è un registro, detto anche status register o registro di stato, che ha la fun-
+zione di indicare e memorizzare l'esistenza di particolari condizioni che si verificano in
+seguito alle operazioni della ALU.
+6)  Il Mux è un multiplexer che permette di inviare il dato, presente sul bus dati
+interno, al registro desiderato.
+7)  I registri a coppie sono formati dai registri W e Z, B e C, D e E, H e L. Ogni coppia
+costituisce un registro a 16 bit, le coppie sono denominate registri scratch-pad, perché
+memorizzano rapidamente le informazioni che devono essere conservate temporanea-
+mente.
+8)  Lo stack pointer è indicato con SP, è un registro a 16 bit che contiene l'indirizzo di
+una locazione di memoria.
+9)  Il program counter è indicato con PC, è il contatore di programma. È un registro a
+16 bit, che contiene l'indirizzo della locazione di memoria in cui si trovano o il codice
+macchina dell'istruzione da eseguire o il dato da utilizzare nell'istruzione. Il contenuto del
+PC è inviato alla memoria tramite il bus indirizzi.
+10)  Inc/Dec è un blocco che consente di incrementare o diminuire il contenuto dei
+registri a 16 bit.
+11)  Il Latch indirizzi e buffer indirizzi consentono di scegliere e memorizzare tempo-
+raneamente il contenuto di uno dei registri BC, DE, HL, SP, PC, per il tempo necessario al
+funzionamento del sistema di memoria.
+
+[PAG 1735]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-135
+12)  Il Registro istruzioni, indicato con IR (Instruction Register), ha la funzione di
+immagazzinare l'istruzione che proviene dal bus dati interno.
+Fig. XVII.21.2   Esempio di schema a blocchi di un microprocessore.
+13)  Il Decoder istruzioni è un circuito di decodifica delle istruzioni, le interpreta e
+genera i segnali opportuni perché siano eseguite.
+14)  Il Blocco di temporizzazione e di controllo ha la funzione di controllare la
+cadenza di funzionamento del sistema, stabilendo la sequenza delle operazioni da com-
+piere. Esso agisce su tutti i blocchi del microprocessore; nella Fig. XVII.21.2, per sempli-
+cità, non sono rappresentate le connessioni con i diversi circuiti.
+15)  Il Bus dati interno è formato da 8 linee realizzate nello stesso chip del micropro-
+cessore per connettere i blocchi del microprocessore.
+16)  L'Alimentazione ha le tensioni come indicato nella Fig. XVII.21.2.
+22  OSCILLATORI SINUSOIDALI
+Gli oscillatori sono circuiti utilizzati per generare forme d'onda sinusoidali. Nella Fig.
+XVII.22.1 è riportato lo schema a blocchi di un oscillatore, costituito da un amplificatore
+con guadagno A, reazionato positivamente con fattore di reazione ; il circuito, senza che
+sia applicato un segnale in ingresso, a regime, fornisce un segnale sinusoidale all'uscita.
+L'innesco delle oscillazioni è causato dal circuito di alimentazione dell’oscillatore e le
+oscillazioni a regime si hanno quando il guadagno d'anello A è unitario, con arg(A) = 0
+e A =1. Questa condizione è detta criterio di Barkhausen: alla frequenza di oscilla-
+zione, lo sfasamento introdotto dalla rete di reazione deve essere compensato dallo sfasa-
+mento prodotto dall'amplificatore; l'attenuazione della rete di reazione deve essere
+Segnali di controllo esterni
+Temporizzazione
+e controllo
+Segnali di
+controllo
+interni
+Alimentazione
+Bus indirizzi
+GND
+5V
+5V
+12V
+Buffer
+Indirizzi
+Decoder
+istruzioni
+IR
+(reg. istr.)
+Latch indirizzi
+Inc/Dec
+PC
+SP
+W
+B
+D
+H
+Z
+C
+E
+L
+MUX
+Bus dati interno (8 bit)
+ALU
+Flag
+Latch accu-
+mulatore
+Registro
+temporaneo
+Registro A
+(accumul.)
+Data bus
+Latch/buffer
+Bus dati
+D7  D0
+A15  A0
+
+[PAG 1736]
+XVII-136
+ELETTRONICA ANALOGICA E DIGITALE
+compensata dall'amplificazione dell’amplificatore.
+Per avere l’innesco delle oscillazioni, occorre che inizialmente A sia leggermente
+maggiore dell’unità; ad esempio, può essere A = 1,05. Con questa condizione, all'atto
+della connessione dell'amplificatore reazionato all'alimentatore, il rumore, i disturbi, le
+tensioni transitorie fanno sì che all'ingresso dell'amplificatore siano presenti segnali di
+piccola ampiezza e frequenze diverse (ad esempio, la tensione di rumore è la risultante di
+infinite componenti sinusoidali); tra di essi vi è un segnale con frequenza per il quale lo
+sfasamento complessivo della maglia formata dall'amplificatore e dal circuito di reazione
+è nullo; se A > 1 e arg(A) = 0, tale segnale è amplificato, è riportato all'ingresso con
+ampiezza maggiore, è nuovamente amplificato e la sua ampiezza continua a crescere. Le
+condizioni A > 1 e arg(A) = 0 consentono perciò l'innesco delle oscillazioni, anche se
+poi viene a mancare la componente originaria che ha innescato il processo.
+Innescate le oscillazioni, per limitare l'ampiezza del segnale, il circuito dell’oscilla-
+tore è dotato di elementi di controllo che riducono il valore di A fino a quando è verifi-
+cato il criterio di Barkhausen: (A) = 1. Il controllo si realizza in diversi modi, mediante
+dispositivi inseriti nella rete di reazione, che riducono il valore di  al crescere
+dell'ampiezza del segnale. Ad esempio, si può impiegare un circuito LC risonante con fat-
+tore di qualità Q elevato, oppure transistor operanti come resistori controllati in tensione;
+in altri casi si preferisce introdurre un controllo automatico del guadagno dell'amplifica-
+tore, ad esempio variando la polarizzazione dei dispositivi attivi in funzione dell'ampiezza
+del segnale d’uscita.
+Fig. XVII.22.1   Schema a blocchi di un oscillatore.
+Un oscillatore è considerato lineare quando la tensione d'uscita è un'unica e stabile
+sinusoide. La frequenza e l'ampiezza del segnale d'uscita dell’oscillatore, ad esempio a
+causa dell'invecchiamento dei componenti del circuito, delle variazioni di temperatura e
+della tensione di polarizzazione, possono subire variazioni nel tempo. Per stabilizzare la
+frequenza si ricorre ad accorgimenti come l'uso dei quarzi, caratterizzati da valori di Q
+molto alti e da ottima stabilità nei riguardi delle variazioni di temperatura. Per stabilizzare
+l'ampiezza delle oscillazioni, si polarizzano i dispositivi attivi in modo da ridurre l'ampli-
+ficazione al crescere dell'ampiezza del segnale o si impiegano circuiti di controllo auto-
+matico dei valori di A o .
+I tipi più comuni di oscillatori sono: gli oscillatori RC, in cui la rete di reazione è
+costituita da resistenze e capacità (appartengono a questa categoria gli oscillatori a ponte
+di Wien ed a sfasamento); gli oscillatori LC, in cui la rete di reazione è un circuito riso-
+nante LC (appartengono a questa categoria gli oscillatori a tre punti, fra cui sono molo dif-
+fusi gli oscillatori Colpitts e Hartley e gli oscillatori accordati di Meissner e Armstrong);
+gli oscillatori in cui è presente un circuito con cristallo di quarzo.
+Amplificatore
+Rete di
+reazione
+
+A
+Xi
+Xr
+Xu
+
+[PAG 1737]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-137
+22.1  Oscillatori LC
+Gli oscillatori LC hanno frequenza da alcune decine di kHz fino a valori dell'ordine di
+0,5 GHz, hanno una buona stabilità in frequenza, in particolare se il circuito risonante ha
+un elevato coefficiente di risonanza Q. L'amplificatore può essere realizzato utilizzando
+FET, BJT o amplificatori operazionali. I FET hanno, sui BJT, il vantaggio di una resi-
+stenza d’ingresso molto alta, e quindi non caricano la rete di reazione, facilitando il pro-
+getto e l'analisi dell'oscillatore. Gli amplificatori operazionali, pur avendo la resistenza
+d’ingresso quasi infinita, hanno l'inconveniente di limiti di frequenza relativamente bassi. 
+La struttura della maggior parte degli oscillatori LC si evidenzia trasformando la rete
+di reazione del circuito della Fig. XVII.22.1 in un circuito dove s’individuano tre punti, fra
+i quali sono disposte tre impedenze come nella Fig. XVII.22.2a. Fra i punti 1 e 3 vi è
+l'impedenza Z1; fra i punti 2 e 3 vi è l'impedenza Z2; fra i punti 2 e 1 vi è l'impedenza Z3. I
+punti indicati corrispondono, rispettivamente, all'ingresso dell'amplificatore, all'uscita
+dell'amplificatore ed al terminale comune ai circuiti d’ingresso e d’uscita. Le condizioni
+di oscillazione si ottengono applicando il criterio di Barkhausen (A = 1).
+Fig. XVII.22.2   Oscillatore a tre punti: a) schema del circuito; b) circuito equivalente per
+il calcolo dell'amplificazione A e del coefficiente di reazione .
+Considerando le impedenze nel circuito della Fig. XVII.22.2a come elementi pura-
+mente reattivi, si ha: Z1 = jX1; Z2 = jX2; Z3 = jX3. In base al circuito equivalente, riportato
+nella Fig. XVII.22.2b, si ricava A:
+(XVII.22.1)
+dove AV è l'amplificazione del blocco amplificatore e ru la resistenza d'uscita dell'amplifi-
+catore.
+Perché risulti A = 1 (condizione per le oscillazioni), al denominatore della XVII.22.1
+deve essere:
+(XVII.22.2)
+Con questa condizione la XVII.22.1 diviene:
+(XVII.22.3)
+Dalla XVII.22.2 si ricava X1 + X3 = X2, che sostituita nella XVII.22.3 comporta:
+Amplificatore
+1
+Ui
+Z1
+Uu
+Z2
+Z3
+2
+3
+a)
+Ui
+1
+2
+3
+ru
+Z2
+Z3
+Z1
+Ur
+AVUi
+b)
+A
+AV
+X1X2
+X2 X1
+X3
++
+
+
+j X1
+X2
+X3
++
++
+
+ru
+–
+---------------------------------------------------------------------------------------
+–
+=
+X1
+X2
+X3
++
++
+0
+=
+A
+AV
+X1X2
+X2 X1
+X3
++
+
+
+--------------------------------
+–
+1
+=
+=
