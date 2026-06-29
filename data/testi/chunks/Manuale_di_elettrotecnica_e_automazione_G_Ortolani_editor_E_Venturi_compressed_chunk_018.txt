@@ -1,0 +1,827 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 18/116 ===
+Chars: 44,184 | Offset: 751,558
+
+
+
+[PAG 378]
+VI-4
+CAD
+11    CASA A SCHIERA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+102
+11.1    Scala del disegno. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+103
+12    BLOCCHI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+106
+12.1    Blocchi definiti nel disegno corrente . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+106
+12.2    Blocchi da usare in un disegno qualsiasi . . . . . . . . . . . . . . . . . . . . . . . . . 
+106
+12.3    Blocchi e layers: l’arredamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+106
+12.3.1    Arredo della cucina . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+107
+12.3.2    Arredo del bagno . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+108
+12.3.3    Arredo del soggiorno . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+109
+12.4    Creare la definizione di blocco . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+110
+12.5    Inserimento dei blocchi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+111
+12.5.1    Inserimento dei blocchi nella cucina . . . . . . . . . . . . . . . . . . . . . . 
+111
+12.5.2    Inserimento dei blocchi nel bagno . . . . . . . . . . . . . . . . . . . . . . . . 
+112
+12.5.3    Inserimento dei blocchi nel soggiorno . . . . . . . . . . . . . . . . . . . . . 
+112
+12.6    Blocchi dell’impianto elettrico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+113
+12.6.1    Attributi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+114
+12.6.2    Definizione dei blocchi per l’impianto elettrico . . . . . . . . . . . . . . 
+114
+12.6.3    Inserimento dei blocchi dell’impianto elettrico . . . . . . . . . . . . . . 
+115
+12.6.4    Aggiornamento della definizione di blocco . . . . . . . . . . . . . . . . . 
+117
+12.7    Recinzione esterna. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+117
+12.7.1    Asta metallica della ringhiera. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+118
+12.7.2    Comando Misura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+118
+12.8    Quotatura del disegno . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+118
+12.8.1    Stili di quota. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+118
+12.8.2    Quote dell’area esterna. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+120
+12.8.3    Quote interne . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+120
+13    SPAZIO CARTA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+122
+13.1    Preparazione dei Layout per la stampa della casa a schiera . . . . . . . . . . . 
+122
+13.2    Inserimento della squadratura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+123
+13.3    Creazione della finestra . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+123
+13.4    Assegnare una scala agli oggetti nelle finestre . . . . . . . . . . . . . . . . . . . . 
+124
+13.5    Stampa di un interno . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+125
+13.6    Layout della cucina . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+126
+13.7    Aggiunta di testo sullo spazio carta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 129
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 130
+1  ELEMENTI FONDAMENTALI
+AutoCAD è il software in assoluto più diffuso per il disegno tecnico ed è per questo 
+che viene preso in esame in questa sezione, con una proposta di esercitazioni guidate che 
+vanno ad impiegare la maggior parte dei comandi.
+1.1  Avviare AutoCAD
+Per avviare il programma è sufficiente fare clic sull’icona AutoCAD 2009 del desk-
+top, oppure dopo aver aperto start nella barra delle applicazioni, scegliere Tutti i Pro-
+grammi e quindi AutoCad 2009.
+
+[PAG 379]
+CAD
+VI-5
+Verrà visualizzata la finestra iniziale di Fig. VI.1.1.
+Fig. VI.1.1  Finestra di avvio di un nuovo disegno di AutoCAD.
+L’ambiente di lavoro è costituito dallo spazio del disegno, dove si muove il puntatore 
+a croce, dalla barra di stato e dalla barra multifunzione; quest’ultima è composta da 
+Schede e Pannelli per accedere ai vari comandi. Inoltre è presente nella parte superiore 
+della finestra applicazione il Browser menu, la barra degli strumenti Accesso rapido e 
+InfoCenter.
+Tramite il Browser si accede ai vari menu e quindi ai vari comandi. Per una migliore 
+personalizzazione si attivi la scheda Strumenti e quindi il comando Tavolozza degli stru-
+menti del Pannello Personalizzazione: apparirà la finestra di disegno di Fig. VI.1.2.
+Fig. VI.1.2  Finestra di disegno di AutoCAD.
+Nell’area di disegno si nota il puntatore a croce che si sposta sullo schermo seguendo 
+i movimenti del mouse.
+Nell’angolo in basso a sinistra sono visualizzate le coordinate della posizione assunta 
+dal puntatore.
+Puntatore a croce
+Barra multifunzione
+Pannelli
+Schede
+Browser menu
+Barra di stato
+Coordinate X,Y,Z
+Barra strumenti accesso rapido
+InfoCenter
+Comunication center
+Preferiti
+Finestra riga di comando
+Tavolozza degli
+strumenti
+Browser
+
+[PAG 380]
+VI-6
+CAD
+Per poter dare un comando deve essere presente una riga vuota preceduta dalla stringa 
+Comando:. Significa che il programma attende l’immissione di un comando; se per qual-
+siasi motivo sulla riga di comando compare del testo, premere il tasto Esc per annullare.
+1.2  Attivazione di un comando
+Per eseguire un comando è possibile utilizzare la tastiera, digitando il nome o l’abbre-
+viazione prevista, oppure fare clic sull’icona corrispondente nella barra degli strumenti, o 
+ancora selezionando il comando dal menu a discesa.
+Ad esempio per disegnare una linea si possono usare le seguenti procedure:
+–  Cliccare col tasto sinistro del mouse sul corrispondente pulsante Linea nella 
+tavolozza degli strumenti Disegna.
+–  Dalla riga di comando con la seguente procedura:
+Comando: linea (Invio)
+Specificare primo punto:
+Comando: l (Invio)
+LINEA Specificare primo punto:
+–  Usando il menu a discesa dal Browser menu 
+come in Fig. VI.1.3.
+È da notare che anche usando i menu o le icone 
+sulla tavolozza degli strumenti appare: 
+Comando: _line specificare primo punto:
+Tale richiesta significa che il programma è in 
+attesa di ricevere le coordinate del punto di 
+partenza della linea, che potranno essere speci-
+ficate da tastiera in modo numerico, o posizio-
+nando il puntatore sull’area grafica muovendo 
+il mouse. Si ricordi che per poter essere ese-
+guito, un comando qualsiasi, deve sempre 
+essere seguito dal tasto Invio o Barra spazio.
+Fig. VI.1.3  Menu a discesa strumenti di disegno.
+1.3  Richiesta di aiuto
+Poiché i comandi con le loro varianti 
+sono alcune centinaia è utile poter chie-
+dere informazioni sul loro utilizzo spe-
+cialmente per quelli usati meno 
+frequentemente. Auto-CAD dispone di 
+un Help in linea per soddisfare queste 
+richieste. Anche in questo caso si pos-
+sono utilizzare più metodi.
+–  Sulla barra dei menu a discesa fare clic 
+sul punto di domanda e quindi su Guida 
+in linea.
+–  Nella riga di comando digitare:
+Comando: help (Invio)
+–  Premere F1.
+Verrà visualizzata la schermata di Fig. 
+VI.1.4a sulla quale scegliere il tipo di 
+aiuto desiderato.
+Fig. VI.1.4a  Finestra di dialogo Guida di AutoCAD.
+
+[PAG 381]
+CAD
+VI-7
+Fig. VI.1.4b   Help per il comando linea.
+Se si vuole un aiuto specifico su un par-
+ticolare comando, mentre lo si sta 
+usando, è possibile ottenerlo in modo 
+trasparente.
+Ad esempio alla linea di comando si 
+digiti
+Linea (seguita da Invio)
+comparirà la richiesta specificare primo 
+punto:. Premendo il tasto F1 comparirà 
+la schermata di aiuto sul comando linea. 
+Terminata la consultazione con un clic 
+sul pulsante di chiusura “X” si torna al 
+comando linea.
+1.4  Impostazione delle preferenze
+Con un clic su Strumenti della barra dei 
+menu a discesa, scegliendo poi Opzioni, 
+viene visualizzata la finestra di dialogo 
+di Fig. VI.1.5 comprendente molte altre sottofinestre che permettono di personalizzare 
+molte impostazioni del programma.
+Fig. VI.1.5  Menu Opzioni.
+È possibile ad esempio impostare la stampante, le cartelle dove salvare i disegni, lo 
+spessore predefinito della linea, i colori dello schermo, ecc.
+Se si desidera disegnare su schermo bianco, utile per copiare e incollare direttamente 
+disegni di AutoCAD in documenti di Word, si scelga la scheda Visualizzazione, quindi 
+con un clic sul pulsante Colori si aprirà una nuova finestra dove si imposta per lo spazio 
+modello il colore bianco. Per rendere attivi i cambiamenti fare clic su Applica.
+Un ulteriore esempio: può essere utile visualizzare per il puntatore le linee incrociate a 
+tutto schermo. Per ottenere questo si trascini il cursore relativo a Dimensioni puntatore a 
+croce fino a visualizzare 100 (% delle dimensioni dell’area grafica).
+
+[PAG 382]
+VI-8
+CAD
+1.5   Sistema di coordinate di AutoCAD
+Come si è già detto per il comando Linea, ma lo stesso vale per moltissimi altri 
+comandi, vengono richieste le coordinate di un punto. A volte è sufficiente indicare il 
+punto sull’area grafica mediante lo spostamento del mouse, con un clic del pulsante sini-
+stro. Ciò è però possibile solo quando non è richiesto un posizionamento estremamente 
+preciso o quando si tratta di un punto particolare (griglia, snap).
+Spesso è necessario fornire la posizione del punto in modo numerico. Si raggiunge 
+tale obiettivo utilizzando le coordinate cartesiane. 
+Un sistema di coordinate cartesiano è definito da due rette orientate, asse X e asse Y, 
+perpendicolari tra loro, che si intersecano in un punto chiamato origine. La coordinata 
+dell’origine vale 0 per ambedue gli assi.
+Ogni punto del piano di disegno è identificato da una coppia di numeri che aumentano 
+allontanandosi dall’origine, verso destra per l’asse X, verso l’alto per l’asse Y.
+In AutoCAD il punto va indicato digitando prima la coordinata lungo l’asse X poi 
+quella lungo l’asse Y separate da una virgola.
+Nell’esempio di Fig. VI.1.6 il punto A è individuato 
+dalle coordinate 10,20. Questo significa che il punto 
+stesso, si trova ad una distanza dall’origine di 10 
+unità di disegno lungo l’asse X e a 20 unità lungo 
+l’asse Y. Il punto B (60,50) si trova a 60 unità di 
+disegno lungo l’asse X e 50 lungo l’asse Y. Il seg-
+mento che va dal punto A al punto B sarà quindi una 
+linea dal punto (10,20) al punto (60,50). 
+Questo modo di indicare le coordinate, riferite sem-
+pre all’origine, viene detto inserimento mediante
+coordinate assolute. 
+Fig. VI.1.6  Coordinate assolute.
+Spesso, nel tracciare un disegno, è però più comodo indicare la posizione del secondo 
+punto relativa al primo e non all’origine. Questo secondo metodo è chiamato inserimento
+con coordinate relative.
+Nell’esempio seguente il punto B ha coordinate relative 50 lungo l’asse X e 30 lungo 
+l’asse Y. Si possono indicare ad AutoCAD le coordinate relative inserendo il simbolo @ 
+davanti al numero. La sintassi da usare è la seguente:
+Comando: linea (Invio)
+Specificare primo punto: 10,20 (Invio)
+Specificare punto successivo: @50,30 (Invio).
+Un terzo modo accettato dal programma per indi-
+care le coordinate, utile soprattutto con le coordi-
+nate relative, è quello dell’inserimento con
+coordinate polari.
+Usando le coordinate polari un punto viene indivi-
+duato dalla sua distanza dall’origine, nel caso di 
+coordinate assolute, o da un altro punto (coordi-
+nate relative) e dall’angolo formato dal segmento 
+con una direzione di riferimento, che general-
+mente è l’asse X.
+Fig. VI.1.7  Coordinate polari.
+
+[PAG 383]
+CAD
+VI-9
+Nell’esempio di Fig. VI.1.7 per disegnare partendo dal punto A il segmento lungo 60 
+unità con un angolo di 27° rispetto all’asse X, si userà la sintassi: Comando: linea (Invio)
+Specificare primo punto: 10,20 (Invio)
+Specificare punto successivo: @60<27 (seguito da Invio).
+Si noti che si è usato il simbolo @ per indicare coordinate relative ed il simbolo <27 
+per indicare l’angolo di 27° rispetto l’asse X.
+Nell’area grafica di AutoCAD, se non viene specificato diversamente, l’origine delle 
+coordinate si trova nell’angolo in basso a sinistra; l’asse X è rivolta verso destra, l’asse Y 
+verso l’alto. Poiché è possibile disegnare in tre dimensioni esiste anche un’asse Z che 
+passa per l’origine ed è rivolta verso l’osservatore. 
+Le coordinate di ogni punto sono perciò costituite da tre numeri separati da una vir-
+gola. Quando si lavora in due dimensioni non si digita il numero relativo alla coordinata 
+lungo l’asse Z che viene considerata zero.
+2  PREPARAZIONE DEL FOGLIO DI LAVORO
+In questo capitolo si imparerà ad eseguire alcuni comandi di AutoCAD, l’utilizzo 
+delle funzioni di Osnap e come impostare l’area grafica. In particolare saranno analizzati i 
+comandi Zoom, Ddunits, Limiti, Annulla, Linea, Polilinea, Salva, Apri, Cambia, Testo. Si 
+vedrà l’uso della Griglia e del modo Snap, realizzando poi la squadratura del foglio con 
+un blocco del titolo che sarà poi utilizzabile come modello per altri disegni.
+Si dovrà innanzitutto avviare il programma con un clic sull’icona di AutoCAD del 
+desktop o dentro Tutti i Programmi del menu start, nella barra delle applicazioni.
+Dalla Scheda Stumenti si passi al Pannello Utilità disegno e quindi si attivi il comando 
+Unità; si aprire la finestra di dialogo come in Fig. VI.2.1.
+Fig. VI.2.1  Attivazione della finestra di dialogo Unità disegno.
+La finestra di dialogo permette di impostare le unità di misura desiderate, la precisione 
+con cui si vogliono visualizzare le coordinate, la direzione zero del riferimento angolare, 
+il verso di rotazione da considerare positivo.
+Comando Unità
+Pannello
+Scheda Strumenti
+Utilità disegno
+
+[PAG 384]
+VI-10
+CAD
+–  Si selezioni Decimali sul tipo lunghezza, impostando la precisione di visualizzazione 
+con due cifre dopo la virgola. Questa operazione non influenza la precisione del disegno.
+–  Selezionare Gradi Decimali per il tipo angolo, con nessuna cifra dopo la virgola per 
+quanto concerne la precisione.
+–  Si selezioni la proprietà Millimetri per la scala di inserimento 
+–  Lasciare il verso Antiorario (opzione di default) per l’angolo di rotazione, non met-
+tendo la spunta sulla casella In senso orario.
+–  Cliccare sul pulsante Direzione e scegliere infine la direzione di riferimento per 
+l’angolo base Est. In questo modo l’angolo zero coincide con il verso positivo dell’asse X.
+Fig. VI.2.2   Limiti disegno.
+ Con il comando Ddunits, digitato sulla riga di 
+comando della barra di stato, si apre la stessa finestra 
+di dialogo che permette di impostare unità di misura e 
+precisione.
+Dal menu Formato, mediante il comando Limiti dise-
+gno si impostano le dimensioni dell’area grafica.
+Digitare 297 per la dimensione lungo l’asse X e 210 
+per quella lungo l’asse Y corrispondenti ad un foglio 
+di formato A4, quindi Invio. 
+A questo punto viene visualizzata l’area grafica. Spo-
+stando il puntatore vengono visualizzate le coordinate. 
+Basta premere il tasto F12 per la visualizzazione delle 
+coordinate in modalità dinamica, in modo che siano 
+visibili nell’area del disegno.
+Per poter visualizzare l’area grafica delle dimensioni 
+scelte si dovrà eseguire uno zoom su tutta l’area di 
+lavoro impostata. Come sempre ci sono più modi per dare questo comando. Per esempio si 
+usi la riga di comando:
+Comando: zoom (Invio)
+il programma risponderà mostrando una serie di opzioni disponibili:
+[Tutto/Centrato/Dinamico/…./Scala/Finestra] <tempo reale>:
+l’opzione compresa tra i due segni < > è quella predefinita e, per accettarla, basta dare 
+Invio.
+Per le altre opzioni si noti che alcune lettere sono scritte con caratteri maiuscoli; è suf-
+ficiente digitare il carattere riportato in maiuscolo. Nel nostro caso poiché si desidera 
+effettuare uno zoom su tutta l’area disponibile, si digiti:
+T (Invio)
+la finestra verrà rigenerata e conterrà solo i limiti impostati.
+Le impostazioni date al disegno mediante la finestra di dialogo iniziale possono essere 
+date o variate anche in seguito.
+Il comando che permette di impostare le dimensioni dell’area di disegno si può asse-
+gnare anche dalla riga di comando. Se ad esempio si volessero reimpostare le dimensioni 
+dell’area grafica a 210 per 140 si potrebbe usare la riga di comando digitando:
+Comando: limiti (Invio)
+Angolo in basso a sinistra o [on/off] < 0.00,0.00 > : (Invio)
+Angolo in alto a destra < 297.00,210.0) > : 210,140 (Invio)
+alla prima richiesta, angolo in basso a sinistra si risponde con un semplice Invio per accet-
+tare il valore proposto 0.00, 0.00. Se si è eseguita questa operazione, poiché si desidera 
+utilizzare i limiti di prima, sarà necessario annullare l’ultima operazione digitando:
+
+[PAG 385]
+CAD
+VI-11
+Comando: A (Invio)
+dove A sta per Annulla e vale sempre per annullare l’ultimo comando impartito.
+È possibile annullare qualsiasi operazione anche con un clic sul pulsante 
+Annulla della barra degli strumenti Accesso rapido.
+2.1  Griglia e Snap di AutoCAD
+Il programma permette di visualizzare una griglia di punti con la spaziatura desidera-
+ta, che può essere utilizzata come riferimento durante l’esecuzione del disegno. In pratica 
+è come disegnare su di un foglio quadrettato.
+La griglia può essere visualizzata o meno premendo il tasto F7, oppure con un clic sul 
+pulsante Griglia sotto la finestra della riga di comando.
+Anche con la griglia visualizzata si può notare che non è semplice posizionare il pun-
+tatore su coordinate ben precise. Per facilitare questa operazione il programma può for-
+zare i movimenti del puntatore in modo da posizionarsi solo su punti prestabiliti di una 
+griglia invisibile, della quale è possibile impostare la spaziatura.
+Questa utilità chiamata Snap, è attivata o disattivata dal tasto F9 o con un clic sul pul-
+sante Snap sotto la finestra della riga di comando.
+Si potrà notare che con il modo Snap attivato, durante il movimento del mouse, il pun-
+tatore non si muove più in modo continuo, ma a scatti saltando da un punto della griglia di 
+snap ad un altro.
+2.1.1  Modificare la spaziatura della Griglia e la risoluzione di Snap
+L’impostazione delle caratteristiche della griglia e dello snap possono essere effet-
+tuate dalla riga di comando mediante i comandi Griglia e Snap e relative opzioni.
+In questo caso si utilizzerà il menu a discesa.
+–  Nel menu Strumenti fare clic su Impostazioni disegno. Si aprirà la finestra di dialogo 
+di Fig. VI.2.3, nella quale è possibile impostare la spaziatura della griglia digitando un 
+numero nelle caselle della spaziatura secondo gli assi X e Y. 
+–  Si imposti per ambedue le spaziature un valore di 10. Nella sezione relativa allo Snap
+si digiti il valore 5. 
+–  Quando, come in questo caso, le spaziature secondo i due assi sono uguali, si può 
+introdurre il valore solo nella casella relativa alla spaziatura lungo l’asse X. 
+–  Le altre caselle, con impostato 
+il valore 0, servono per modificare 
+l’aspetto della griglia ruotandola di 
+un angolo voluto intorno ad un 
+punto specificato.
+–  Si selezionino le caselle Snap e 
+Griglia e poi si clicchi sul pulsante 
+OK. 
+–  Ritornati alla finestra di dise-
+gno si noti che la griglia ha una 
+spaziatura regolare di 10 unità e 
+che il puntatore si muove a scatti di 
+5 unità.
+È possibile in ogni momento 
+disattivare Griglia e Snap con i 
+tasti F7 e F9.
+Fig. VI.2.3  Finestra di dialogo Impostazioni disegno.
+
+[PAG 386]
+VI-12
+CAD
+2.2  Icona delle coordinate
+Nella parte in basso a sinistra dell’area grafica è presente una icona rappresentante 
+due frecce che indicano il verso positivo degli assi X e Y.
+Si tratta dell’icona del sistema di coordinate o icona UCS, molto utile per visualizzare 
+l’orientamento del disegno quando si modifica il punto di vista dell’oggetto nei lavori tri-
+dimensionali.
+Poiché ci si occuperà solo di disegni in due dimensioni è possibile disattivarla in 
+modo da avere un’area grafica più pulita. La procedura sarà la seguente:
+Comando: iconaucs (Invio)
+ON/OFF/Tutte/Non-sull’origine/Origine < ON > : off.
+Sarebbe stato possibile disattivarla con un clic sul menu a discesa Visualizza, quindi 
+su Visualizzazione, IconaUCS, e clic su ON per disinserirre l’UCS.
+2.3  Squadratura del foglio di lavoro
+Si desidera disegnare una cornice del foglio delle dimensioni di 270 per 190 usando il 
+comando Linea.
+Con dimensioni multiple di 10, è possibile usare il puntatore con l’aiuto della Griglia
+e dello Snap, ma in questo caso, per esercitarsi con i comandi da tastiera, si immetteranno 
+le coordinate appunto tramite tastiera.
+–  Se non lo sono già, si attivino la Griglia e lo Snap. 
+–  Si attivi il comando Linea:
+Comando: linea (seguito da Invio o Barra spazio).
+In alternativa si poteva digitare solo l oppure fare clic sull’icona del comando Linea, o 
+ancora con un clic su Linea nel menu a discesa Disegno. 
+–  Poiché lo snap è attivo il puntatore si muove a scatti di 5 unità.
+–  Lo si posizioni sul punto di griglia con coordinate 10.00,10.00. Premendo il pulsante 
+sinistro del mouse si fissa il primo punto della linea. Si disattivi il modo snap e si osservi 
+che muovendo il mouse, viene visualizzata una linea elastica collegata con il punto 10,10. 
+Bisogna ora indicare il punto al quale deve arrivare la linea.
+Poiché il lato orizzontale deve essere lungo 270, usando le coordinate polari si digiti: 
+Comando: @270<0 (seguito da Invio)
+la stringa editata significa che il punto finale della linea è ad una distanza di 270 unità dal 
+punto precedente e con angolo zero rispetto all’asse X.
+Lungo il lato inferiore dello schermo è ora visibile la linea appena tracciata, alla quale 
+è ancora collegata la linea elastica collegata al puntatore. Sulla riga di comando appare 
+scritto:
+Punto successivo: e non Comando: 
+questo perché il comando Linea è ancora attivo ed il programma sta attendendo l’immis-
+sione delle coordinate di un nuovo punto.
+Si vuole ora disegnare una linea verticale lunga 190 unità.
+–  Attivato lo Snap, si sposti il puntatore verso l’alto fino a visualizzare nel riquadro 
+delle coordinate 190<90.
+Se venissero visualizzate coordinate cartesiane, si può passare a quelle polari pre-
+mendo F10.
+–  Premendo il tasto sinistro del mouse viene disegnata la linea verticale.
+–  Bisogna ora tracciare la linea orizzontale superiore. Si disattivi il modo Snap e si digi-
+tino le coordinate polari relative:
+Comando: @270<180 (seguito da Invio o Barra spazio).
+–  Per l’ultima linea verticale, più semplicemente, si digiti:
+C (che sta per Chiudi, (seguito da Invio).
+
+[PAG 387]
+CAD
+VI-13
+In questo modo il programma disegna una linea dal punto attuale, al primo indicato 
+all’avvio del comando Linea.
+2.3.1  Assegnare una larghezza alle linee della squadratura
+Con AutoCAD 2009 è possibile assegnare uno spessore di visualizzazione anche alle 
+semplici linee.
+Per mantenere la compatibilità con le altre versioni del programma, ed anche perché 
+lo spessore assegnato alle normali linee è solo una utilità di stampa, ma non da l’esatta 
+larghezza degli oggetti, si userà il comando Editpl per aumentare la larghezza delle linee 
+della squadratura:
+Comando: editpl (seguito da Invio).
+Selezionare polilinea:
+Il puntatore è diventato un mirino di selezione a forma di piccolo quadrato. Si selezio-
+ni, la linea orizzontale in basso con un clic del pulsante sinistro. La linea diventa punteg-
+giata per indicare che è stata individuata.
+Il programma comunicherà che la linea individuata non è una polilinea e chiede se si 
+voglia convertirla.
+–  Si prema Invio per accettare il default < S >. Viene ora presentata una serie di opzioni 
+utili per modificare la polilinea. Per assegnare una larghezza digitare:
+Comando: L (seguito da Invio o Barra spazio)
+0.8 (seguito da Invio).
+Vengono riproposte le opzioni per la modifica di altre caratteristiche, si digiti:
+U (che sta per Unire, seguito da Invio)
+il puntatore diventa ancora un mirino di selezione.
+–  Selezionare con un clic le altre tre linee che costituiscono la squadratura. Premere 
+Invio o Barra spazio per concludere il comando.
+La squadratura è diventata così un oggetto unico con una larghezza di 0.8 unità.
+2.3.2  Realizzazione del blocco del titolo
+Si vuole ora aggiungere un riquadro in basso a destra dove inserire il nome dell’a-
+zienda, il titolo del disegno, la data e il nome del disegnatore. Alla fine si potrà registrare 
+il disegno in modo da poterlo usare come modello di partenza per qualsiasi altro disegno. 
+Volendo realizzare il riquadro con linee dello spessore di 0.6 si potrebbe usare come 
+prima il comando Linea e convertirla poi in Polilinea. Si disegnerà invece direttamente 
+una polilinea della larghezza voluta.
+–  Si faccia clic sul pulsante Polilinea nella tavolozza degli strumenti di disegno. 
+In alternativa si poteva digitare plinea alla riga di comando o anche pl seguito da 
+Invio. Compare la solita richiesta punto iniziale.
+–  Si attivi il modo Snap, si posizioni il puntatore alle coordinate 280,40 quindi si faccia 
+clic con il pulsante sinistro del mouse. Appare una linea elastica ed alla riga di comando 
+una serie di opzioni.
+–  Poiché si desidera ottenere una linea dello spessore di 0.6 unità si digiti:
+La (che sta per Larghezza, seguito da Invio)
+verrà richiesta la larghezza iniziale e quindi si digiti:
+0.6 (Invio).
+Viene richiesta la larghezza finale, con proposto 0.6 unità; premere Invio o Barra spa-
+zio per accettare il valore di default 0.6. Compare ora la richiesta punto successivo:. 
+Usando le coordinate polari relative digitare:
+@82<180 (seguito da Invio o Barra spazio)
+ricompare la richiesta punto successivo.
+Disegnata la linea superiore del blocco del titolo, bisogna tracciare la linea verticale
+
+[PAG 388]
+VI-14
+CAD
+che si congiunge esattamente con la squadratura. Il modo Snap non è di grande aiuto, per-
+ché il punto non si trova sulla griglia. Si userà allora una cosiddetta opzione di Osnap
+(Snap ad oggetto).
+–  Digitare quindi:
+Per (che sta per Perpendicolare, seguito da Invio).
+–  Il programma chiede a: cioè a quale oggetto deve collegarsi in modo perpendicolare. 
+–  Si faccia clic su un punto qualsiasi della linea di base della squadratura. La nuova 
+linea si collegherà a questa in modo perpendicolare. Premere Invio per concludere il 
+comando Polilinea.
+Si desidera ora ingrandire il riquadro disegnato per inserire le altre linee.
+–  Alla tastiera si digiti:
+Z (che sta per Zoom, seguito da Invio)
+F (che sta per Finestra, seguito ancora da Invio)
+fare clic con il sinistro del mouse nel punto 190,50, trascinare il puntatore verso destra e 
+in basso, fino a racchiudere tutto il riquadro, e premere il tasto sinistro. In questo modo 
+verrà visualizzata, ingrandita, l’area selezionata.
+In alternativa si poteva fare clic con il puntatore sul pulsante Zoom finestra, 
+nel Pannello Utilità della barra multifunzione in alto.
+Con lo stesso procedimento di prima indicare la finestra desiderata.
+2.3.3  Realizzazione delle linee interne
+Si vogliono disegnare tre linee orizzontali spaziate uniformemente ed una verticale 
+con larghezza 0.6, utilizzando la polilinea. Quando la larghezza della polilinea è stata 
+impostata, il valore rimane invariato fino a nuova modifica.
+Essendo l’altezza del rettangolo 30, la distanza tra le linee interne sarà 7.5.
+–  Si disattivi il modo snap e si digiti:
+Pl (che sta per Polilinea, seguito da Invio)
+compare la richiesta punto iniziale:. Il punto di partenza deve essere posizionato sulla 
+linea verticale del bordo a 7.5 unità sotto la linea orizzontale del riquadro. 
+–  Non è possibile selezionare esattamente questo punto con l’attuale griglia di 
+Snap. Si userà allora l’opzione di Osnap DA (richiamandola con il tasto dx del 
+mouse e contemporaneamente con il tasto shift). Compare la richiesta Da punto 
+base: e quindi si digiti: Int (che sta per Intersezione)
+e fare clic nell’intersezione tra la linea verticale del bordo e quella orizzontale del riqua-
+dro (punto A in Fig. VI.24).
+–  Viene ora richiesto l’offset, cioè lo spostamento rispetto al punto indicato. Si digiti:
+@7.5<-90 (seguito da Invio)
+la linea elastica parte dal punto desiderato e viene richiesto il punto successivo:. Ci si 
+vuole collegare esattamente alla linea verticale di sinistra del riquadro in modo perpendi-
+colare. Anche il punto di arrivo non sta sulla griglia di Snap si userà perciò l’opzione Per-
+pendicolare dello Snap ad oggetto:
+Per (seguito da Invio)
+alla richiesta a: fare clic con il mirino di selezione sulla linea verticale di sinistra. Premere 
+Invio o Barra spazio per concludere il comando Polilinea.
+Per realizzare le altre due linee orizzontali si potrebbe seguire lo stesso procedimento. 
+Si utilizzerà invece il comando Serie. Questo comando permette di eseguire copie multi-
+ple di un oggetto, equidistanti, ordinate in righe e colonne, nella serie rettangolare, o 
+disposte intorno ad un centro di rotazione nella serie polare.
+–  Fare clic sull’icona del comando Serie nel pannello Edita della barra multifun-
+zione;  viene richiesto di selezionare l’oggetto.
+
+[PAG 389]
+CAD
+VI-15
+–  Fare clic, con il mirino di selezione sulla polilinea appena disegnata, seguito da Invio
+per indicare che si è completata la selezione. Premere Invio per accettare la proposta di 
+default di serie rettangolare. Viene chiesto il numero di righe, digitare:
+3 (seguito da Invio)
+viene chiesto il numero di colonne; si confermi con Invio il numero proposto <1>. Viene 
+chiesta quindi la distanza tra le righe, si digiti:
+-7.5 (senza spazi seguito da Invio) 
+dove il segno meno serve ad indicare che la serie si estende verso il basso. Si noti che il 
+numero degli elementi deve includere anche l’originale.
+2.3.4  Linea verticale che divide il terzo rettangolo
+Si utilizzerà ancora la polilinea con la larghezza già impostata. Si osservi l’uso 
+dell’opzione di Osnap Vicino. Digitare:
+Plinea (Invio)
+ e alla richiesta primo punto si digiti l’opzione di Osnap:
+Vic (Invio)
+si porti il puntatore nel terzo rettangolo in modo da toccare la linea superiore vicino al 
+punto 254,24.5 e si prema il pulsante sinistro del mouse. Alla richiesta punto successivo: 
+si digiti l’opzione:
+Per (che sta per Perpendicolare, seguita da Invio)
+si porti il mirino di selezione a toccare la 
+linea orizzontale sottostante in un punto 
+qualsiasi e si faccia clic con il pulsante 
+sinistro del mouse. Si prema Invio per 
+completare il comando. 
+L’opzione usata Vic serve per colle-
+garsi esattamente ad un oggetto, in una 
+posizione non precisissima, bensì quella 
+che risulta più vicina alla posizione del 
+puntatore. Il disegno dovrebbe essere 
+come quello di Fig. VI.2.4.
+Fig. VI.2.4  
+2.4  Salvataggio del lavoro ed uscita dal programma
+Se si desidera prendere una pausa è utile registrare il disegno assegnando un nome. In 
+caso contrario, alla chiusura del programma viene chiesto se si desidera salvarlo con il 
+nome anonimo.dwg nella cartella di default. Conviene sempre salvare il file con un nome 
+significativo in una directory specifica, per poter ritrovare facilmente i lavori.
+Supponendo di voler salvare il disegno con il nome di squadratura.dwg nella directory 
+corsocad, che a sua volta si trova nella directory utenti, il procedimento è il seguente.
+–  Aprire il menu a discesa File e fare clic su Salva con nome. Si apre una finestra di dia-
+logo che mostra la struttura delle directory. 
+–  Fare doppio clic sulla directory utenti per aprirla. Fare ancora doppio clic sulla 
+directory corsocad. Nella casella nome file digitare squadratura, controllando che nella 
+casella sottostante compaia disegno AutoCAD 2007 (*.dwg). Fare clic su OK. A questo 
+punto è possibile uscire dal programma, con un clic su Esci, nel menu a discesa File.
+2.5  Apertura di un file esistente
+Se si era usciti da AutoCAD occorre riavviarlo nel solito modo. 
+Nella finestra di dialogo iniziale fare un clic sull’icona Documenti recenti. Nella fine-
+stra appaiono i nomi degli ultimi file di disegno utilizzati. Si selezioni squadratura.dwg e 
+A
+
+[PAG 390]
+VI-16
+CAD
+con un clic si aprirà il disegno.
+Il nome potrebbe non apparire se nel frattempo qualche utente avesse aperto molti file 
+diversi. In questo caso con un clic sul menu File e ancora su Apri si apre una nuova fine-
+stra nella quale ricercare e aprire con un doppio clic la directory utenti; quindi si aprirà 
+allo stesso modo la sottodirectory corsocad. A questo punto selezionato il file squadra-
+tura.dwg fare clic su Apri.
+2.6  Creazione di layer
+In AutoCAD è possibile lavorare su layer diversi. I layer si possono considerare come 
+fogli trasparenti sui quali disegnare. Ad esempio nel disegno della pianta di una casa, si 
+possono utilizzare vari layer: il primo per disegnare i muri, il secondo per l’impianto elet-
+trico, un terzo per l’impianto idraulico, un altro per l’arredamento e così via, con la possi-
+bilità di visualizzare tutto o solo quanto serve in quel momento. È importante il fatto che 
+ad ogni layer è possibile associare un colore ed un tipo di linea diverso.
+Fino a questo momento si è lavorato sempre nel layer 0 
+come si può vedere osservando nella barra degli strumenti 
+proprietà degli oggetti in alto a sinistra. 
+In linea di massima questo non è conveniente. Si creeranno ora alcuni layer sui quali 
+lavorare. Su uno andrà posizionata la squadratura, su un altro i caratteri di testo, su un 
+altro gli oggetti di disegno.
+–  Fare clic sull’icona Proprietà Layer, nel pannello Layer. In alternativa si poteva sce-
+gliere Layer, dal menu a discesa Formato, o digitare Layer alla riga di comando.
+Compare la finestra di dialogo di Fig. VI.2.5.
+Fig. VI.2.5  Finestra di dialogo Gestione proprietà layer.
+–  Nella finestra Gestore proprietà layer fare clic sul pulsante Nuovo. Verrà visualizzata 
+una riga con scritto layer1; digitare:
+Squad (per assegnare il nome al layer creato).
+–  Ancora con la stessa procedura (clic sul pulsante Nuovo) creare ed assegnare il nome 
+ai due nuovi layers Testo e Ogg.
+Nella finestra di gestione dei layer, per ogni piano è possibile impostare un colore, un 
+tipo di linea, la visibilità ecc. 
+–  Se ad esempio si vuole impostare per il piano Squad il colore rosso, fare un clic sulla 
+colonna del colore relativa al piano Squad.
+
+[PAG 391]
+CAD
+VI-17
+–  Si aprirà una nuova finestra dove si andrà a scegliere con un clic il colore rosso, con-
+fermando con un clic su OK. E poi ancora OK.
+2.7  Spostamento della squadratura sul proprio layer
+Si vuole ora portare la squadratura sul layer squad appositamente creato. Alla riga di 
+comando si proceda nel seguente modo:
+Cambia (Invio)
+verrà richiesto di selezionare gli oggetti. Con un clic del 
+mouse si racchiudano tutte le linee in una grande finestra. 
+Verrà richiesto se si desidera cambiare una proprietà o un 
+punto. Si digiti:
+P (che sta per Proprietà, seguito da Invio)
+viene chiesto quale proprietà cambiare visualizzando una 
+serie di opzioni. Si digiti:
+L (che sta per layer, seguito da Invio)
+si digiti il nome del nuovo layer:
+Squad (seguito da Invio)
+ e si prema ancora Invio per concludere il comando.
+In questo caso, poiché il colore assegnato al layer 
+squad è rosso si nota subito il cambiamento perché tutta la 
+squadratura ed il blocco del titolo diventano rossi.
+Lo stesso risultato si poteva ottenere, dopo aver sele-
+zionato le linee interessate, con un clic sul pulsante destro 
+e l’attivazione della finestra di dialogo Proprietà (Fig. 
+VI.2.6) che mostra le proprietà degli oggetti. Selezio-
+nando la squadratura si sarebbe visualizzato il layer 0. 
+Con un clic sulla freccia nella finestrella del layer, ven-
+gono visualizzati gli altri layer disponibili. Con un clic su 
+Squad viene cambiato il layer degli oggetti selezionati.
+Fig. VI.2.6  Finestra di dialogo Proprietà oggetti.
+2.8  Creazione di stili di testo
+Sono disponibili molti tipi e altezze di caratteri; è possibile scrivere in verticale, ca-
+povolto o da destra verso sinistra. Bisogna prima definire degli stili di testo. In questa 
+occasione si creeranno due diversi stili: uno stile per l’intestazione ed il titolo, l’altro per 
+in nome, la data ecc.
+Fig. VI.2.7  Finestra di dialogo Stile di testo.
+
+[PAG 392]
+VI-18
+CAD
+–  Fare clic sul menu a discesa Formato del browser e quindi di nuovo, su Stile di testo. 
+Si aprirà la finestra di dialogo di Fig. VI.2.7. 
+–  Si desidera creare uno stile di testo da usare per il titolo del disegno usando il tipo di 
+carattere Roman Complex assegnando una altezza del carattere di 5 unità e un secondo 
+stile con il carattere Roman Simplex di altezza 4. Nella casella appare scritto Standard e 
+non vi sono altri stili disponibili.
+–  Fare clic sul pulsante Nuovo. Si apre una nuova finestra dove si legge il nome predefi-
+nito dello stile: stile1. Digitare: 
+Nome (seguito da clic su OK).
+–  Selezionare Romanc.shx come nome del font e digitare 5 nella casella dell’altezza; 
+quindi fare clic sul pulsante Nuovo e digitare Titolo come nome dello stile e poi OK.
+–  Nella casella nome del font selezionare con un clic Romans.shx, mentre nella casella 
+altezza digitare 4. Fare clic su Chiudi.
+Sono ora disponibili gli stili di testo desiderati.
+2.9  Inserimento del testo
+–  Si renda corrente prima di tutto il layer testo con un clic 
+sulla finestra delle proprietà del layer.
+Si vuole inserire nella casella in alto il nome della ditta o 
+della scuola.
+–  Fare clic su Disegna, quindi Testo, poi Riga singola di 
+testo: viene visualizzato il messaggio punto di partenza o 
+[Giustificato/Stile].
+–  Il testo, per le sue dimensioni, uscirebbe dallo spazio assegnato. Per costringerlo 
+all’interno della casella bisogna assegnare una giustificazione. Digitare:
+G (che sta per Giustificato, seguito da Invio)
+viene presentata una serie di opzioni, tra le quali si scelga:
+T (che sta per adaTta, seguito da Invio) 
+Bisogna ora indicare la linea che costituisce la base del testo. Fare clic nel punto di 
+coordinate 199.4,33.7. 
+–  Attivare il modo orto con F8, per assicurarsi di indicare una linea orizzontale. Il modo 
+Orto è utile in generale ogni volta che si devono disegnare, utilizzando il puntatore, linee 
+o altre entità, esattamente orizzontali o verticali; non è possibile, in questa modalità, otte-
+nere linee inclinate.
+–  Spostare il puntatore fino a leggere le coordinate relative @79<0 e cliccare col 
+mouse. Il riquadro all’inizio della riga mostra l’ingombro dei caratteri. Digitare:
+Studio Tecnico Bianchi (seguito da due Invio)
+Il testo viene adattato allo spazio assegnato e si presenterà come in Fig. VI.2.8.
+Si vuole inserire il titolo del disegno 
+nella seconda casella in modo tale che 
+sia centrato rispetto allo spazio dispo-
+nibile; si tratta di un tipo di giustifica-
+zione.
+–  Selezionare Riga singola di testo
+alla voce Testo nel menu Disegna e 
+poi digitare:
+G (seguito da Invio)
+C (seguito da Invio)
+Fig. VI.2.8
+
+[PAG 393]
+CAD
+VI-19
+Appare la richiesta di indicare il punto centrale:; è ovviamente possibile indicare que-
+sto punto per mezzo delle sue coordinate X e Y ma risulta scomodo perché bisogna calco-
+larle. Sarebbe anche possibile individuare il punto con un clic del mouse, ma si avrebbe 
+scarsa precisione. 
+–  È conveniente far individuare questo punto al programma mediante i filtri. Digitare:
+.X (seguito da Invio, non dimenticando il punto davanti alla X).
+Alla richiesta di: digitare l’opzione di Osnap:
+med (seguito da Invio)
+e ancora alla richiesta di: fare clic con il tasto sinistro del mouse sulla seconda linea oriz-
+zontale del riquadro. 
+Il programma ci comunica che manca ancora la coordinata lungo l’asse Y. Digitare:
+Da (seguito da Invio).
+e alla richiesta punto base digitare:
+Int (seguito da Invio).
+e ancora alla richiesta di: fare clic con il puntatore all’intersezione tra la linea orizzontale 
+centrale del riquadro con la linea verticale della squadratura.
+Viene richiesto di indicare lo sfalsamento; digitare
+@1<90 (seguito da Invio).
+A questo punto il centro è stato individuato. Premere Invio per accettare l’angolo zero 
+per l’orientamento del testo e quindi digitare:
+BORDO (seguito da Invio due volte per concludere il comando).
+Questa procedura è molto utile in generale, per posizionare esattamente un punto in 
+relazione ad oggetti esistenti. Il filtro .X comunica al programma di considerare per il 
+momento solo la coordinata X del punto che sarà indicato. Viene quindi richiesto di 
+mostrare questo punto (nell’esempio era il punto medio della linea selezionata). Avendo 
+indicato solo la coordinata lungo l’asse X il programma chiede di dare anche la coordinata 
+lungo l’asse Y.
+Si è risposto dicendo che questa coordinata si trova ad una unità in alto relativamente 
+(@1<90) al punto di intersezione tra le linee indicate.
+Si vogliono ora inserire le altre scritte con il secondo stile di testo definito.
+–  Selezionare Riga singola di testo alla voce Testo del menu Disegna. Poiché si vuole 
+cambiare lo stile di testo digitare:
+S (che sta per Stile, seguito da Invio)
+viene richiesto di immettere il nome dello stile o ?
+–  Si supponga di aver dimenticato il nome dello stile desiderato e quindi digitare
+? (seguito da Invio).
+Alla nuova richiesta di fare una lista degli stili si risponda con Invio. Si aprirà una 
+finestra di testo con elencati gli stili e le loro caratteristiche. Digitare:
+S (seguito da Invio).
+alla richiesta di immissione del nome dello stile digitare:
+Nome (seguito da Invio).
+–  Si vuole inserire nella terza finestra il nome dell’autore adattandolo allo spazio dispo-
+nibile. Digitare:
+G (per Giustificato, seguito da Invio).
+T (seguito da Invio)
+viene richiesto di indicare la linea di base. Con il modo orto attivato fare clic, con il pun-
+tatore nel punto 199,18.5 e, dopo averlo trascinato, sul punto 253,18.5 circa. Digitare 
+quindi il nome, ad esempio:
+Dis. Rossi Mario (seguito da Invio due volte).
+Si vuole ora inserire la data nel riquadro a destra della terza riga.
+
+[PAG 394]
+VI-20
+CAD
+–  Premere Invio o Barra spazio per ripetere l’ultimo comando. Digitare:
+G (seguito da Invio).
+T (seguito da Invio).
+–  Con il modo Orto attivato fare clic con il mouse sui due punti che delimitano la linea 
+di base del testo. Digitare la data e premere Invio due volte per completare il comando.
+–  Per completare l’ultima riga con le eventuali annotazioni, premere Invio o Barra spa-
+zio per ripetere l’ultimo comando e poi digitare:
+G (seguito da Invio)
+T (seguito da Invio)
+–  Con il modo Orto attivato indicare con un clic del mouse i due punti che delimitano la 
+linea di base del testo, ad esempio i punti 199,11.5 e 278,11.5 e digitare:
+disegno complessivo versione 1 (Invio due volte per completare il comando).
+Il blocco del titolo dovrebbe presentarsi 
+come in Fig. VI.2.9.
+–  Per salvare il lavoro come file di dise-
+gno è sufficiente aprire con un clic il menu 
+a discesa File e fare un clic su Salva senza 
+indicare niente altro. Poiché il disegno era 
+stato aperto fornendo un percorso, verrà 
+salvato nella stessa posizione.
+Fig. VI.2.9  
+2.10  Salvataggio del disegno come modello
+È possibile salvare il disegno corrente come modello, in modo da poterlo utilizzare per 
+tutti gli altri disegni che verranno realizzati, senza ogni volta impostare limiti, unità di 
+misura, griglia, ecc. Il modello avrà inoltre la squadratura ed il blocco del titolo già dise-
+gnato. Per utilizzarlo come modello, si apra con un clic il menu a discesa File quindi fare 
+un clic su Salva con nome. Si aprirà la finestra di dialogo di Fig. VI.2.10.
+Fig. VI.2.10   Finestra di dialogo Salva con nome.
+Fare clic sul triangolino a destra del riquadro Salva come: e selezionare File modello di 
+disegno (*.dwt); verrà proposto il salvataggio nella directory Template. Ricercare la 
+directory usata per questi esercizi, ad esempio corsocad a sua volta dentro utenti, con un clic 
+sull’icona della cartella, in alto a destra della finestra Salva in. Aperta la cartella digitare il 
+nome e fare clic sul pulsante Salva. È possibile ora uscire dal programma aprendo il menu 
+a discesa File e facendo clic su Esci.
