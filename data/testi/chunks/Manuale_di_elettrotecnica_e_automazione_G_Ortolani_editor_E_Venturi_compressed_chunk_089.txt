@@ -1,0 +1,956 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 89/116 ===
+Chars: 43,972 | Offset: 3,888,545
+
+
+
+[PAG 1789]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-189
+bit B1 di peso 2 è portato a zero. In presenza di un offset di Q2 = 0,5 V, invece, l'uscita
+del convertitore D/A con ingresso 010 vale U = 2  0,5 = 1,5 V, minore della tensione di
+ingresso di 1,7 V. Il valore digitale 010 viene accettato, come deve essere, in quanto 1,7 V
+deve essere codificato con 010 in questo convertitore.
+Fig. XVII.26.8   Convertitore A/D ad approssimazioni successive: schema di principio.
+Esempio di conversione
+Come esempio, si consideri il caso che la tensione da convertire valga UI = 5,9 V e
+che il convertitore sia a 3 bit, con tensione di fondo scala UFS = 10 V. Il quanto vale
+Q = UFS2n = 108 = 1,25 V e perciò la tensione di offset del convertitore D/A vale 0,625
+V. Le tensioni di uscita di un convertitore D/A a tre bit con tensione di fondo scala di 10
+V, senza offset, si ricavano in base alla XVII.26.1; i valori corrispondenti agli ingressi
+digitali 000, 001, 010, 011, 100, 101, 110, 111 sono rispettivamente: 0 V; 1,25 V; 2,50 V;
+3,75 V; 5 V; 6,25 V; 7,50 V; 8,75 V. In presenza dell'offset di 0,625 V, le tensioni di
+uscita valgono rispettivamente: 0,625 V; 0,625V; 1,875 V; 3,125 V; 4,375 V; 5,625 V;
+6,875 V; 8,125 V.
+–  Dopo l'invio del segnale di inizio conversione SC, al primo impulso di clock, l'uscita
+del SAR è 100, a cui corrisponde U = 4,375 V  UI = 5,9 V; l'uscita del comparatore è a
+livello alto e il valore 1 del bit più significativo B2 viene memorizzato.
+–  Al secondo impulso di clock, viene provato il secondo bit; l'uscita del SAR diviene
+110, a cui corrisponde una tensione U = 6,875 V, che è superiore alla tensione UI = 5,9 V;
+l'uscita del comparatore è bassa, il bit viene portato a zero e l'uscita del SAR è 100.
+–  Viene successivamente provato il terzo bit (il bit meno significativo B0); l'uscita del
+SAR è 101, ed essendo ora U = 5,625 V  UI = 5,9 V, l'uscita del comparatore è alta, il
+valore 1 del terzo bit è memorizzato.
+–  La parola digitale di uscita è perciò 101. Il risultato è esatto, come si può verificare con
+il diagramma della Fig. XVII.26.4, in cui si nota che sono convertite nel valore digitale
+101 le tensioni analogiche comprese fra
+–  Si osservi come il risultato sarebbe errato se il convertitore D/A non avesse offset. Nel
+test del bit meno significativo, con l'uscita del SAR a 101, avremmo U = 6,25 V; essendo
+B0
+B1
+B2
+UI
+U'
+
+
+EOC
+SAR
+Clock
+Convertitore
+D/A
+con offset
+SC
+C
+5UFS
+8
+-------------
+Q
+2---
+–
+5
+10
+
+8
+--------------
+1,25
+2
+---------
+–
+5,625 V
+=
+=
+e
+5UFS
+8
+-------------
+Q
+2---
++
+5
+10
+
+8
+--------------
+1,25
+2
+---------
++
+6,875 V
+=
+=
+
+[PAG 1790]
+XVII-190
+ELETTRONICA ANALOGICA E DIGITALE
+U = 6,25 V  UI = 5,9 V, il bit meno significativo dovrebbe essere portato a 0 e quindi il
+dato digitale risultato della conversione sarebbe 100 e non 101.
+La relazione fra uscita digitale del convertitore ed ingresso analogico può essere
+determinata con riferimento alla Fig. XVII.26.8. La tensione di uscita U del convertitore
+D/A con offset vale:
+(XVII.26.11)
+con:
+essendo: N = intero, equivalente decimale della grandezza digitale di uscita; n = numero
+di bit o risoluzione del convertitore A/D; Q = quanto; UFS = tensione di fondo scala del
+convertitore A/D.
+L'uscita digitale relativa all'ingresso analogico UI corrisponde al valore massimo
+dell'intero N, compreso fra 0 e 2n  1, che soddisfa la relazione:
+(XVII.26.12)
+Le principali caratteristiche che interessano l'impiego dei convertitori A/D ad appros-
+simazioni successive sono le seguenti:
+–  Possono essere realizzati ad alta risoluzione (fino a valori dell'ordine di 16 bit), e con
+elevate velocità di conversione (tempi di conversione dell'ordine delle decine di microse-
+condi, che possono scendere a valori dell'ordine di 1 s); per queste proprietà sono larga-
+mente utilizzati.
+–  Per facilitare l'interfacciamento con i microprocessori, i dispositivi A/D integrati forni-
+scono i dati all'uscita tramite un buffer three-state. Quando questo non è abilitato, le sue
+uscite sono ad alta impedenza e quindi non influisce sul bus dati del microprocessore; è
+possibile, in questo modo, connettere più dispositivi allo stesso bus dati.
+–  Nell'analisi del funzionamento si è fatta l'ipotesi che la tensione da convertire rima-
+nesse costante durante l'intervallo di tempo di conversione; le considerazioni fatte val-
+gono anche se la grandezza analogica varia nel tempo, purché le variazioni siano
+sufficientemente lente. Nel caso di segnali variabili nel tempo, in generale, è inserito
+all'ingresso del convertitore un circuito di sample-hold che, in alcuni esempi, può fare
+parte dell'integrato stesso; esso ha la funzione di campionare il segnale all'inizio della
+conversione e mantenerlo costante fino a che il processo di conversione è terminato. In
+questo modo si è sicuri che la parola digitale di uscita sia la conversione corretta del
+valore della tensione analogica presente all'ingresso del convertitore nell'istante di cam-
+pionamento desiderato.
+27  OSCILLOSCOPIO E SUO IMPIEGO NELLE MISURE DI TENSIONE, COR-
+RENTE, FREQUENZA E FASE 
+Si è visto, nei capitoli precedenti della presente sezione, l'importanza che riveste lo
+studio delle grandezze elettriche nell'elettronica analogica e nell'elettronica digitale.
+Nell'esame del funzionamento dei circuiti, l'oscilloscopio si è rivelato uno strumento di
+importanza basilare, in quanto consente non solo di misurare i parametri dei segnali appli-
+cati al suo ingresso, ma di visualizzarne la forma d'onda. Si ha così la possibilità di valu-
+tare l'andamento del segnale nel tempo, di vedere se il segnale subisce modifiche e, in
+particolare, se presenta distorsione.
+U
+NQ
+Q
+2---
+–
+=
+0
+N
+2n
+1 ;
+–
+
+
+Q
+UFS
+2n
+---------
+=
+NQ
+Q
+2---
+–
+UI
+
+
+[PAG 1791]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-191
+In questo capitolo sono considerati il tubo a raggi catodici, la deflessione del fascio
+elettronico, lo schema a blocchi di un oscilloscopio e le caratteristiche dei blocchi, gli
+oscilloscopi a doppia traccia e a base dei tempi ritardata, gli oscilloscopi digitali e le
+sonde; si passa poi a studiare le principali misure che si possono fare con l'oscilloscopio,
+come le misure di tensione, corrente, frequenza e fase.
+27.1  Generalità
+La visualizzazione di un segnale è resa possibile dall'impiego del tubo a raggi cato-
+dici, sullo schermo del quale il segnale appare come una traccia luminosa.
+Fig. XVII.27.1   Elementi di base di un tubo a raggi catodici.
+Il tubo a raggi catodici ha, nelle linee essenziali, la struttura riportata nella Fig.
+XVII.27.1. Un cannone elettronico emette un fascio di elettroni che, opportunamente acce-
+lerato e focalizzato, colpisce un punto dello schermo ricoperto di fosfori, determinando
+l'illuminazione del punto colpito. Alle placchette di deflessione verticale è applicata la
+tensione corrispondente al segnale da visualizzare; il campo elettrico, determinato dalla
+differenza di potenziale fra le placchette, causa la deflessione del fascio di elettroni nella
+direzione verticale e, sullo schermo, il punto luminoso di impatto si sposta verticalmente,
+in misura tanto maggiore quanto più grande è la tensione applicata alle placchette. Alle
+placchette di deflessione orizzontale è applicata una tensione che cresce linearmente nel
+tempo; essa determina uno spostamento del fascio elettronico in direzione orizzontale, a
+velocità costante; sotto l'azione della tensione applicata alle placchette di deflessione oriz-
+zontale, il punto luminoso si muove perciò sullo schermo con velocità costante, e quindi
+lo spostamento è funzione lineare del tempo. Il movimento del punto luminoso è in defini-
+tiva la risultante di uno spostamento verticale proporzionale al segnale da visualizzare e di
+uno spostamento orizzontale proporzionale al tempo; ne risulta, sullo schermo, la visua-
+lizzazione del segnale in funzione del tempo.
+Per produrre un'adeguata deflessione, la tensione da visualizzare non è applicata diret-
+tamente alle placchette di deflessione verticale, ma tramite un amplificatore, detto ampli-
+ficatore verticale o amplificatore di deflessione verticale; mediante opportuni controlli, si
+può avere un'amplificazione o un'attenuazione del segnale, in modo da ottenere un dia-
+gramma di dimensioni soddisfacenti e disposto convenientemente sullo schermo.
+Il segnale da analizzare è generalmente una tensione, di cui si vuole controllare e
+valutare l'andamento nel tempo. Può essere, comunque, visualizzata qualunque grandezza
+Cannone
+elettronico
+Placchette di
+deflessione verticale
+Placchette di
+deflessione orizzontale
+Schermo
+
+[PAG 1792]
+XVII-192
+ELETTRONICA ANALOGICA E DIGITALE
+fisica che possa essere convertita in una tensione, impiegando opportuni dispositivi detti
+trasduttori, in grado di convertire una grandezza fisica di altro tipo in una tensione; ad
+esempio un fenomeno di natura sonora può essere visualizzato impiegando un microfono
+che, con un opportuno circuito di condizionamento, consente di ottenere una tensione pro-
+porzionale alla pressione dell'onda sonora nel punto in cui è posizionato il microfono.
+Generalmente gli oscilloscopi sono multicanale, ossia possono visualizzare più gran-
+dezze contemporaneamente e quindi permettono il confronto fra di esse (sono detti anche
+oscilloscopi multitraccia, però il fascio elettronico è uno solo). Ad esempio, un oscillosco-
+pio a due tracce consente di confrontare la tensione di uscita di un amplificatore con la
+tensione di ingresso, rendendo facile la valutazione dell'amplificazione e della distorsione
+dell'amplificatore.
+Vi è da osservare, inoltre, che il segnale da analizzare può essere ripetitivo, come
+un'onda sinusoidale, o non ripetitivo, come la tensione di scarica di un condensatore.
+La tensione applicata alle placchette di deflessione orizzontale è generata da circuiti
+interni all'oscilloscopio; il suo andamento può essere controllato, in modo da potere visua-
+lizzare fenomeni che si sviluppano in intervalli di tempo molto diversi: si può estendere
+opportunamente l'intervallo di visualizzazione, a seconda della rapidità del fenomeno e
+del tipo necessario di misura.
+Gli oscilloscopi si possono classificare in analogici e digitali. In quelli analogici, la
+rappresentazione del segnale sullo schermo deriva direttamente dal segnale applicato.
+Negli oscilloscopi digitali, invece, il segnale applicato subisce un processo di conversione
+analogico-digitale e di memorizzazione, prima di essere visualizzato sullo schermo; la
+loro realizzazione è stata possibile grazie ai notevoli progressi compiuti nella tecnologia
+dei convertitori e ha consentito di estendere il campo di utilizzo degli oscilloscopi (memo-
+rizzazione dei dati, possibilità di connessione in rete, facilità di condivisione dei dati
+stessi). Anche se tecnologicamente gli oscilloscopi analogici e gli oscilloscopi digitali
+sono diversi, hanno però in comune alcune caratteristiche di funzionamento di base; inol-
+tre, negli oscilloscopi digitali si è cercato di impostare molti controlli in modo che fossero
+simili a quelli degli oscilloscopi analogici, facilitandone così l'uso. Le considerazioni svi-
+luppate nei paragrafi che seguono valgono pertanto, in linea di massima, per entrambi i
+tipi di oscilloscopi; gli elementi caratteristici degli oscilloscopi digitali sono esaminati in
+un paragrafo specifico dedicato ad essi.
+Vi è da rilevare, infine, l'importanza dell'introduzione del microprocessore nell'oscil-
+loscopio; in particolare esso ha permesso di estendere le funzioni realizzabili e ha facili-
+tato l'uso da parte dell'operatore. Ad esempio, ha reso possibile la presentazione ed il
+controllo delle funzioni sotto forma di menu, l'effettuazione di operazioni sulle forme
+d'onda e la visualizzazione automatica sullo schermo dei risultati. Negli oscilloscopi digi-
+tali, poi, il processore, oltre a controllare il funzionamento del sistema, svolge un ruolo
+fondamentale nella ricostruzione dell'immagine a partire dai dati memorizzati.
+27.2  Tubo a raggi catodici
+Il tubo a raggi catodici, detto anche CRT dalle iniziali di Cathode Ray Tube, è rappre-
+sentato in modo schematico nella Fig. XVI1.27.2, con la rete di polarizzazione degli elet-
+trodi. È un contenitore di vetro, all'interno del quale è fatto il vuoto, in modo da ridurre gli
+urti fra elettroni del fascio elettronico e molecole del gas.
+Il CRT si compone essenzialmente di un cannone elettronico, di un sistema di defles-
+sione e di uno schermo. 
+A)  Cannone elettronico
+Il cannone elettronico ha la funzione di emettere gli elettroni, accelerarli e focalizzarli
+sullo schermo.
+
+[PAG 1793]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-193
+Fig. XVII.27.2   Tubo a raggi catodici e rete di polarizzazione.
+Gli elettroni sono emessi dal catodo K riscaldato dal filamento F e l'intensità del
+fascio è controllata dalla griglia di controllo G1; il suo potenziale è negativo rispetto al
+catodo e, modificandolo mediante il potenziometro RI, si riesce a variare l'intensità del
+fascio e perciò la luminosità della traccia. La griglia ha al centro un foro circolare attra-
+verso cui passano gli elettroni del fascio; essi sono successivamente accelerati dalla gri-
+glia pre-acceleratrice, o griglia schermo G2, e quindi passano attraverso gli anodi A1 e A2,
+detti rispettivamente anodo focalizzatore e anodo acceleratore. Gli elettrodi G2, A1 e A2
+sono superfici cilindriche aventi per asse l'asse del CRT; essi costituiscono un sistema di
+lenti elettroniche, il cui compito è di accelerare il fascio e focalizzarlo sullo schermo (Fig.
+XVII.27.3). Il controllo della focalizzazione è ottenuto variando il potenziale di A1, tramite
+il potenziometro RF . Si noti che l'anodo A2 è a potenziale di massa, mentre il catodo è ad
+alta tensione negativa (ad esempio UA = 1500 V); ciò consente di non avere differenza
+di potenziale fra placchette e anodo A2, differenza di potenziale che determinerebbe una
+sfocalizzazione del fascio.
+Fig. XVII.27.3   Le lenti elettroniche e la focalizzazione del fascio elettronico nel CRT.
+B)  Sistema di deflessione
+I sistemi di deflessione orizzontale e verticale si basano sul principio della deflessione
+elettrostatica; si preferisce la deflessione elettrostatica a quella magnetica, in quanto con
+essa è più semplice ottenere rapide variazioni del movimento del fascio elettronico.
+Con riferimento alla Fig. XVII.27.4, un fascio di elettroni che, con velocità v, entra
+nello spazio compreso fra le placchette di una coppia, viene deflesso verso la placchetta a
+potenziale più alto.
+G1
+UA
+F
+K
+G2 A1 A2
+G2
+Y
+X
+Y
+X
+Fasce
+post-acceleratrici
+Schermo
+RI
+RF
+R1
+UPA
+R2
+R3
+G1
+K
+A1
+A2
+G2
+
+[PAG 1794]
+XVII-194
+ELETTRONICA ANALOGICA E DIGITALE
+Fig. XVII.27.4   Principio della deflessione elettrostatica.
+Sullo schermo il fascio luminoso è spostato, rispetto all'asse del tubo, di un segmento
+Y dato dalla relazione:
+(XVII.27.1)
+con: Y = spostamento del fascio elettronico sullo schermo; l = lunghezza delle placchette;
+D = distanza del punto M, al centro delle placchette, dallo schermo; d = distanza fra le
+placchette; UA = potenziale acceleratore del fascio, pari alla differenza di potenziale fra
+anodo acceleratore e catodo; UY = tensione fra le due placchette.
+La XVII.27.1 può essere dimostrata considerando le leggi del movimento dell'elettrone
+fra le placchette e fra placchette e schermo. Il campo fra le placchette è costante e uguale
+a UYd; l'elettrone si muove quindi secondo l'asse y con un moto uniformemente accele-
+rato. L'accelerazione è uguale a Fm, con F forza agente sull'elettrone di massa m e carica
+e, e quindi vale:
+(XVII.27.2)
+La legge del moto secondo l'asse y è:
+(XVII.27.3)
+Secondo l'asse z, l'elettrone non è soggetto ad alcuna forza e pertanto procede con
+moto uniforme, con velocità costante v. La legge del moto secondo l'asse z è:
+(XVII.27.4)
+Dalle XVII.27.3  4 si deduce che la traiettoria seguita è una parabola, di equazione:
+(XVII.27.5)
+L'elettrone esce dalle placchette nel punto M e prosegue con moto rettilineo uni-
+forme; la traiettoria è tangente alla parabola in M e, per la proprietà della parabola, passa
+
+d
+
+M
+l
+D
+v
+y
+z
+Y
+Schermo
+
+M'
+Y
+lD
+2dUA
+------------- UY
+=
+a
+F
+m---
+e
+UY
+d
+
+m
+---------------
+eUY
+dm
+---------
+=
+=
+=
+y
+1
+2--at2
+1
+2-- eUY
+dm
+--------- t2
+=
+=
+z
+vt
+=
+y
+1
+2-- eUY
+dmv2
+------------- z2
+=
+
+[PAG 1795]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-195
+per il punto M, di ascissa z = l2. Dalla XVII.27.5 si ha:
+(XVII.27.6)
+e quindi, in base alla Fig. XVII.27.4, si ricava:
+(XVII.27.7)
+La velocità v, con cui l'elettrone entra nello spazio fra le placchette, è determinata
+dalla differenza di potenziale UA fra anodo acceleratore e catodo:
+(XVII.27.8)
+da cui:
+(XVII.27.9)
+La XVII.27.7 si può quindi scrivere:
+che è la XVII.27.1.
+Si definisce una sensibilità di deflessione s come il rapporto fra lo spostamento del
+fascio sullo schermo e la tensione fra le placchette che lo causa. Si ha:
+(XVII.27.10)
+Dalla XVII.27.10 si deduce che, per avere una buona sensibilità di deflessione, devono
+essere verificate le seguenti condizioni. Le placchette devono essere lunghe, ma ciò com-
+porta il problema dell'intercettazione del fascio da parte delle placchette stesse (si usano
+allora placchette incurvate, come si vede nella Fig. XVII.27.2); la distanza fra placchette e
+schermo deve essere grande, ma allora i tubi diventano troppo ingombranti; la distanza fra
+le placchette deve essere piccola, ma ciò può causare intercettazione del fascio alle estre-
+mità delle placchette, come nel caso di placchette lunghe; il potenziale acceleratore UA
+deve essere basso, ma ciò contrasta con l'esigenza di una buona luminosità. Per conciliare
+l'esigenza di una buona sensibilità di deflessione con una adeguata luminosità della trac-
+cia, si impiegano, fra sistema di deflessione e schermo, gli anodi post-acce1eratori, che
+accelerano il fascio dopo che è stato deflesso; essi fanno sì che gli elettroni colpiscano lo
+schermo con una energia tale da garantire una adeguata luminosità della traccia. Gli anodi
+post-acceleratori, detti anche fasce intensificatrici, sono strati di metallizzazione
+all'interno del tubo, ad alto potenziale, dell'ordine di 10 kV (sono disegnati tratteggiati
+nella Fig. XVII. 27.2).
+Nell'oscilloscopio le coppie di placchette sono due; a partire dal cannone, la prima
+coppia è per la deflessione verticale e la seconda per la deflessione orizzontale. La dispo-
+sizione indicata è conveniente, in quanto gli elettroni passano fra le placchette verticali
+con velocità inferiore che fra le placchette orizzontali, a causa della post-accelerazione; la
+tan
+dy
+dz
+-----
+
+
+
+
+M
+dy
+dz
+-----
+
+
+
+
+z
+l
+=
+eUY
+dmv2
+------------- z
+
+
+
+
+
+
+z
+l
+=
+eUYl
+dmv2
+-------------
+=
+=
+=
+=
+Y
+Dtan
+eUYl
+dmv2
+-------------
+=
+D
+=
+1
+2-- mv2
+eUA
+=
+v
+2eUA
+m
+-------------
+=
+Y
+lD
+2dUA
+------------- UY
+=
+s
+Y
+UY
+------
+lD
+2dUA
+-------------
+=
+=
+
+[PAG 1796]
+XVII-196
+ELETTRONICA ANALOGICA E DIGITALE
+sensibilità di deflessione verticale è quindi maggiore, e ciò è conveniente, dato che è alle
+placchette verticali che è applicata la tensione da visualizzare.
+Il movimento del fascio è pertanto determinato in senso verticale dalla tensione da
+visualizzare, applicata alle placchette di deflessione verticale; alle placchette di defles-
+sione orizzontale è comunemente applicata una tensione a dente di sega, per cui il movi-
+mento del fascio elettronico in senso orizzontale è uniforme. In definitiva, il fascio
+elettronico si muove secondo la combinazione dei due movimenti e descrive pertanto
+sullo schermo l'andamento nel tempo della tensione applicata alle placchette verticali.
+Il potenziale di entrambe le placchette di una coppia è bilanciato rispetto a massa ed è
+ottenuto mediante un amplificatore simmetrico: nessuna delle placchette è a massa, ma
+sono, in ogni istante, a potenziale opposto (ad esempio: 2 V e 2 V, equivalenti a
+UY = 4 V). In questo modo non si ha, mediamente, differenza di potenziale fra placchette
+e anodo acceleratore; diversamente, la differenza di potenziale provocherebbe una defor-
+mazione detta astigmatismo.
+C)  Schermo
+Lo schermo è ricoperto di fosfori che, colpiti dagli elettroni, emettono energia lumi-
+nosa. L'emissione persiste dopo che è cessata la causa che l'ha determinata; si indica con
+persistenza l'intervallo di tempo per cui la traccia rimane luminosa (sono usati fosfori a
+bassa, media o alta persistenza). La scelta del tipo di fosforo (persistenza, colore
+dell'emissione luminosa, efficienza dell'emissione) dipendono dal tipo di applicazione; ad
+esempio, per visualizzare fenomeni lenti occorrono fosfori ad elevata persistenza.
+Uno strato di alluminio viene depositato sulla superficie interna dello schermo, con un
+processo detto di alluminazione; lo strato deve essere molto sottile, così da non ridurre in
+maniera sensibile l'energia del flusso di elettroni. L'alluminazione ha la funzione, in primo
+luogo, di aumentare la luminosità dello schermo. In assenza di alluminazione, infatti,
+l'energia luminosa emessa dalle particelle di fosforo si diffonde in tutte le direzioni, come
+si vede nella Fig. XVII.27.5a; la parte emessa verso l'interno del tubo non viene utilizzata.
+In presenza dello strato di alluminio, invece, come si vede nella Fig. XVII.27.5b, l'energia
+luminosa diretta verso l'interno del tubo viene riflessa dallo strato di alluminio, che fa da
+specchio, e quindi contribuisce al flusso luminoso utile. La metallizzazione consente, poi,
+di evitare che si accumulino cariche sullo schermo e favorisce la dispersione di calore
+generato all'interno del tubo. I vantaggi indicati compensano largamente l'inconveniente
+dell'assorbimento di energia da parte dello strato di alluminio che gli elettroni devono
+attraversare prima di colpire le particelle di fosforo.
+Fig. XVII.27.5   L'energia luminosa emessa dalle particelle di fosforo: a) in assenza di
+alluminazione dello schermo; b) in presenza dello strato di alluminio, che fa da specchio. 
+Per facilitare le misure con l'oscilloscopio, sul display è disposta una griglia di linee
+e
+Fosfori
+e
+Fosfori
+Vetro
+Vetro
+Al
+a)
+b)
+
+[PAG 1797]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-197
+orizzontali e verticali, detta graticola o reticolo; si hanno spesso dieci divisioni in senso
+orizzontale, secondo l'asse dei tempi, e otto divisioni in senso verticale, secondo l'asse
+delle tensioni. Il reticolo è di solito riportato sullo superficie esterna dello schermo. Non
+essendo, però, il reticolo ed i fosfori sullo stesso piano, si ha un errore di parallasse, illu-
+strato nella Fig. XVII. 27.6; a seconda della posizione, m o n, da cui guarda l'osservatore,
+sembrano luminosi i punti M o N, corrispondenti a due diverse graduazioni del reticolo.
+Per evitare questo inconveniente, si impiega un reticolo interno, inciso sulla superficie dei
+fosfori, oppure si realizza il reticolo elettronicamente, nello stesso modo con cui si forma
+l'immagine.
+Fig. XVII.27.6   Reticolo ed errore di parallasse.
+27.3  Esempio di schema a blocchi di un oscilloscopio
+Un esempio di schema a blocchi di oscilloscopio è riportato nella Fig. XVII.27.7. Esso
+si compone essenzialmente di: un canale verticale, attraverso cui il segnale d'ingresso Y è
+applicato alle placchette di deflessione verticale; un canale orizzontale, attraverso cui è
+applicata alle placchette di deflessione orizzontale una tensione a dente di sega o un
+segnale esterno; circuiti di sincronismo, che consentono la sincronizzazione del segnale
+da visualizzare con la tensione a dente di sega.
+Funzioni e caratteristiche principali dei diversi blocchi e selettori sono esaminate nei
+sottoparagrafi seguenti.
+27.3.1  Circuito di ingresso e amplificatore verticale
+Il selettore di ingresso, l'attenuatore di ingresso e l'amplificatore verticale costitui-
+scono il canale verticale.
+A)  Selettore di ingresso
+Il segnale da visualizzare, presente all'ingresso Y, è applicato al commutatore S1. Esso
+ha generalmente tre posizioni: DC, AC, GND.
+–  Nella posizione DC, di accoppiamento diretto, si ha l'applicazione diretta del
+segnale all'attenuatore di ingresso. È il tipo di connessione più comune.
+–  Nella posizione AC, di accoppiamento in alternata, un condensatore blocca il pas-
+saggio della componente continua, che quindi non influisce sulla visualizzazione. È utile
+quando una forte componente continua nel segnale può rendere difficile l'esame di una
+piccola componente variabile. Ad esempio, si suppone di volere verificare il livello della
+tensione di ondulazione rimasta dopo il raddrizzamento di un segnale sinusoidale; se la
+tensione variabile è di 1 mV e la tensione continua raddrizzata è di 1 V, si hanno problemi
+di visualizzazione nel caso si impieghi l'accoppiamento DC. Infatti, se si pone l'amplifica-
+tore verticale nelle condizioni di massima sensibilità, ad esempio di 1 mV/divisione, la
+traccia della tensione continua va oltre lo schermo, in misura tale da non poter essere
+ricondotta entro lo schermo neppure con il controllo della posizione verticale della traccia
+e
+Fosfori
+Vetro
+Reticolo
+n
+m
+N
+M
+Osservatore
+
+[PAG 1798]
+XVII-198
+ELETTRONICA ANALOGICA E DIGITALE
+Y-Pos; perché la traccia rimanga sullo schermo, si deve ridurre la sensibilità, portandola,
+ad esempio, a 200 mV/divisione, ma questo rende non visibile la componente variabile.
+Se, invece, si impiega l'accoppiamento AC, la componente continua di 1 V è bloccata e
+solo la componente variabile di 1 mV è applicata all'amplificatore verticale; nelle condi-
+zioni di massima sensibilità di 1 mVdivisione, la traccia è visibile, corrispondendo ad
+una divisione verticale del reticolo.
+Fig. XVII.27.7   Esempio di schema a blocchi di un oscilloscopio.
+La posizione AC comporta, peraltro, i seguenti inconvenienti. In primo luogo non per-
+mette sempre la visualizzazione del segnale completo, come nel caso dell'esempio prece-
+dente. In secondo luogo, il condensatore C di blocco, con la resistenza di ingresso
+dell'attenuatore, costituisce un filtro CR passa alto e quindi si ha una limitazione inferiore
+della banda dei segnali visualizzabili; la frequenza di taglio è, comunque, molto bassa,
+dell'ordine di alcuni hertz, e quindi costituisce un limite solo nella visualizzazione di
+segnali a frequenze inferiori ad alcune decine di hertz.
+–  Nella posizione GND (Ground) l'ingresso dell'oscilloscopio è portato a massa,
+senza che il circuito esterno, collegato all'oscilloscopio, venga esso pure collegato a
+massa. L'operazione è utile se, nel corso di una misura, si vuole stabilire la posizione della
+traccia cui corrisponde la tensione di 0 V di ingresso, senza staccare l'oscilloscopio dal
+circuito di misura.
+B)  Attenuatore di ingresso
+L'attenuatore di ingresso ha la funzione di variare il fattore di deflessione verticale
+(volt/divisione), in modo da rendere possibile la visualizzazione di segnali in una vasta
+gamma di valori. Generalmente 1'attenuatore è composto da partitori resistivi, del tipo
+compensato, cioè tali che l'attenuazione sia indipendente dalla frequenza. Il fattore di
+Attenuatore
+Y
+d’ingresso
+Amplificatore
+verticale
+DC
+AC
+GND
+S1
+Voltdiv
+Y-Pos
+Z
+Amplificatore
+separatore
+Circuito di
+unblanking
+Circuito
+ di
+trigger
+Generatore
+base dei tempi
+Amplificatore
+orizzontale
+INT
+S2
+Slope Level
+Timediv
+X-Pos
+Mag
+Intens
+Astig
+Focus
+EXT
+LINE
+X
+INT
+S3
+EXT
+
+
+
+[PAG 1799]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-199
+deflessione varia comunemente da valori dell'ordine di 1 mVdiv a valori dell'ordine di
+50 Vdiv, a scatti di sequenze 1, 2, 5 (ad esempio, la sequenza degli scatti può essere:
+1 mVdiv, 2 mVdiv, 5 mVdiv, 10 mVdiv, 20 mVdiv, 50 mVdiv, 100 mVdiv, …).
+L'attenuatore è realizzato in modo che l'impedenza d'ingresso dello strumento sia
+costante, indipendente dal fattore di deflessione; generalmente l'impedenza d'ingresso
+consiste in una resistenza di 1 M o 10 M, con in parallelo una capacità dell'ordine di
+10 pF. L'alta resistenza e la piccola capacità fanno sì che la corrente assorbita dall'oscillo-
+scopio sia piccola, in continua o alle basse frequenze; lo strumento di misura carica debol-
+mente il circuito e quindi l'errore, causato dall'inserzione dello strumento, è in genere
+trascurabile. Alle frequenze alte, invece, l'impedenza di ingresso è bassa, la corrente
+assorbita è alta e l'influenza della presenza dell'oscilloscopio sul circuito di misura può
+essere notevole; questo inconveniente limita l'impiego dell'oscilloscopio a frequenze alte,
+a valori generalmente inferiori al gigahertz.
+C)  Amplificatore verticale
+L'amplificatore verticale ha essenzialmente lo scopo di amplificare il segnale da
+visualizzare, in modo che sia ampia la traccia sullo schermo; è costituito da più stadi di
+amplificazione.
+Fig. XVII.27.8   Schema a blocchi dell'amplificatore verticale.
+L'amplificatore verticale, Figura XVII.27.8, si compone essenzialmente di:
+–  Un convertitore di impedenza, con alta impedenza d'ingresso e bassa impedenza
+d'uscita. Esso ha lo scopo di pilotare lo stadio amplificatore propriamente detto e di evi-
+tare che lo stesso carichi l'attenuatore.
+–  Un preamplificatore. Questo è costituito da un amplificatore simmetrico, che fornisce
+un segnale bilanciato, cioè due tensioni simmetriche rispetto a massa; il segnale di comando
+delle placchette infatti deve essere bilanciato, per non provocare deformazione del fascio
+(Par. XVII.27.2). Il preamplificatore, inoltre, ha lo scopo di aumentare il livello del segnale
+e, mediante una resistenza variabile, si può regolare il guadagno dell'amplificatore (verniero
+di variazione fine della costante voltdiv). Sul preamplificatore, infine, agisce il comando
+di posizionamento della traccia in senso verticale sullo schermo (comando Y-Pos); tramite
+un potenziometro, si variano le polarizzazioni dei dispositivi attivi dell'amplificatore bilan-
+ciato e quindi si può modificare il potenziale continuo di una placchetta rispetto all'altra, con
+la conseguenza di una traslazione verticale della traccia sullo schermo.
+–  Una linea di ritardo. Essa ha la funzione di ritardare il segnale, in modo che non si
+abbia la perdita di una parte dell'informazione alle frequenze alte. Infatti è il segnale da
+visualizzare che comanda la deflessione orizzontale; essendo diversi i circuiti di sincroni-
+smo che devono essere attivati, risulta un certo ritardo fra il segnale da visualizzare e l'ini-
+Attenuatore
+di
+ingresso
+Convertitore
+di
+impedenza
+Pre-
+amplificatore
+Linea
+di
+ritardo
+Amplificatore
+di
+uscita
+Y
+Y
+Placchette
+
+[PAG 1800]
+XVII-200
+ELETTRONICA ANALOGICA E DIGITALE
+zio della scansione orizzontale. Tale ritardo, alle alte frequenze, può causare la perdita di
+parte dell'informazione; ad esempio, può accadere che la scansione orizzontale inizi
+quando ormai il fronte ripido di salita di un impulso è già passato. L'inserimento della
+linea di ritardo fa sì che il segnale da visualizzare venga ritardato e che giunga alle plac-
+chette verticali quando ha già avuto inizio la scansione orizzontale. Il ritardo introdotto è,
+comunemente, dell'ordine di 50 ns  300 ns. Ad esempio, se il ritardo della linea è di 100
+ns e la scansione orizzontale dello schermo inizia 40 ns dopo che il segnale verticale ha
+agito sul circuito di trigger, ne segue che il segnale appare sullo schermo 60 ns dopo l'ini-
+zio della scansione orizzontale e quindi è visibile sullo schermo.
+–  Un amplificatore di uscita. Esso è un amplificatore per ampi segnali, simmetrico,
+che fornisce alle placchette un segnale bilanciato, di ampiezza tale da consentire la visua-
+lizzazione; la sensibilità di deflessione delle placchette è bassa, dell'ordine delle decine di
+volt per centimetro, e quindi sono necessarie tensioni relativamente alte per una visualiz-
+zazione soddisfacente.
+Le principali caratteristiche che deve avere l'amplificatore verticale sono: buona line-
+arità (la forma d'onda visualizzata deve corrispondere al segnale applicato, senza subire
+alterazioni); ampia banda passante (l'oscilloscopio deve essere in grado di visualizzare
+segnali in un ampio campo di frequenze; nei tipi più comuni si arriva ad alcune decine di
+magahertz, mentre negli oscilloscopi per alte frequenze si raggiungono valori dell'ordine
+del gigahertz); bassi tempi di salita (l'oscilloscopio ad ampia banda passante è in grado di
+riprodurre segnali con fronti di salita ripidi; la relazione fra tempo di salita tr e banda pas-
+sante B è: tr = 0,35B); buona stabilità (se l'amplificazione varia nel tempo, cambia il rap-
+porto fra indicazione sullo schermo e segnale e quindi le misure non sono corrette;
+calibrazioni periodiche consentono peraltro di ridurre gli errori causati da instabilità).
+27.3.2  Circuito di sincronismo
+Il circuito di sincronismo ha lo scopo di fornire al generatore della base dei tempi un
+impulso che comanda l'inizio della deflessione del fascio elettronico in direzione orizzon-
+tale. Questo impulso deve essere in sincronismo con il segnale da visualizzare; in partico-
+lare deve essere generato quando il segnale di ingresso del circuito di sincronismo
+raggiunge un determinato valore, o nell'intervallo in cui la forma d'onda è crescente o
+nell'intervallo in cui è decrescente. Fanno parte del circuito di sincronismo l'amplificatore
+separatore, detto anche amplificatore di sincronismo, e il circuito di trigger, rappresentati
+nella Fig. XVII.27.7.
+A)  Amplificatore separatore e selettore di sincronismo
+L'amplificatore separatore, detto anche amplificatore di sincronismo, ha lo scopo di
+separare il circuito di trigger dall'amplificatore verticale, in modo che il primo non carichi
+il secondo (per questo deve avere alta impedenza d'ingresso e bassa impedenza d'uscita);
+inoltre, deve amplificare il segnale proveniente dal canale verticale, in modo che possano
+agire sul circuito di trigger anche segnali di livello basso.
+Il selettore di sincronismo S2 è un commutatore avente la funzione di scegliere il
+segnale di comando del circuito di trigger. Comunemente le possibilità sono tre:
+–  INT. È lo stesso segnale da visualizzare che agisce sul circuito di trigger e quindi
+comanda la scansione orizzontale; è il tipo di connessione più usato.
+–  EXT. Il segnale che agisce sul circuito di trigger è fornito da una sorgente esterna; è
+utile quando il segnale da visualizzare ha più componenti, e si desidera vedere solo la
+parte in relazione al segnale della sorgente esterna. Ad esempio, quando in un circuito si
+vuole seguire le trasformazioni subite da un segnale presente all'ingresso di un amplifica-
+tore, conviene applicare lo stesso segnale all'ingresso di trigger EXT; in questo modo si
+possono visualizzare le forme d'onda in diversi punti del circuito, determinate dal segnale
+
+[PAG 1801]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-201
+stesso, senza perdere il sincronismo dell'immagine, anche se le forme d'onda presentano
+distorsione.
+–  LINE. Il segnale che agisce sul circuito di trigger è fornito direttamente dalla linea
+interna di alimentazione e quindi la scansione avviene alla frequenza di rete (50 Hz). È
+utile quando si vuole esaminare un segnale la cui frequenza è la frequenza di rete o è in
+relazione ad essa, ad esempio nel caso in cui si vuole visualizzare la tensione di ripple
+rimasta dopo il raddrizzamento della tensione di rete.
+Fig. XVII.27.9   Circuito di trigger: a) schema a blocchi; b) forme d'onda delle tensioni
+presenti in alcuni punti del circuito, nel caso di sincronizzazione ad un livello positivo di
+trigger (Trigger level ) e sul tratto crescente del segnale da visualizzare (Trigger slope
+); c) forme d'onda delle tensioni presenti in alcuni punti del circuito, nel caso di sincro-
+nizzazione ad un livello positivo di trigger (Trigger level ) e sul tratto decrescente del
+segnale da visualizzare (Trigger slope ).
+Trigger level
+
+
+Selettore di
+sincronismo
+Trigger
+slope
+Trigger di
+Schmitt
+Amplificatore
+differenziale
+Derivatore
+Limitatore
+Generatore
+base dei tempi
+a)
+u3
+u4
+u5
+u1
+u1
+Ut
+Ut
+0
+0
+A
+A
+t1
+t
+t2
+t
+A'
+u2
+u2
+0
+0
+t1
+t
+t2
+t
+t'
+Uss
+Uss
+Usi
+Usi
+u3
+u3
+0
+0
+t
+t
+u4
+u4
+0
+0
+t
+t
+u5
+u5
+0
+0
+t
+t
+b)
+c)
+
+[PAG 1802]
+XVII-202
+ELETTRONICA ANALOGICA E DIGITALE
+B)  Circuito di trigger
+Il circuito di trigger ha il compito di fornire al generatore della base dei tempi un
+impulso tutte le volte che il segnale all'ingresso del circuito di trigger raggiunge un deter-
+minato valore in una determinata direzione (nella parte crescente o nella parte decrescente
+della forma d'onda).
+Un esempio di circuito di trigger è riportato nella Fig. XVII.27.9. Esso si compone di:
+–  Un amplificatore d'ingresso di trigger, costituito da un amplificatore differenziale,
+con i controlli di Trigger slope e Trigger level.
+–  Un trigger di Schmitt, con tensioni di soglia inferiore Usi e superiore Uss. Il circuito,
+comandato dal segnale d'uscita dell'amplificatore differenziale, genera una forma d'onda
+rettangolare con fronti ripidi; le commutazioni si hanno o quando u2 scende al di sotto
+della tensione di soglia inferiore Usi (e allora u3 passa a livello basso) o quando u2 sale al
+di sopra della tensione di soglia superiore Uss (e allora u3 passa a livello alto).
+–  Un circuito derivatore. Esso trasforma la tensione rettangolare d'uscita del trigger
+di Schmitt in una successione di impulsi, positivi e negativi.
+–  Un limitatore. Si tratta di un circuito a diodo che consente di ottenere solo impulsi
+negativi, in quanto comunemente il generatore della base dei tempi opera con impulsi
+negativi.
+Il funzionamento del circuito è il seguente. Si supponga di volere iniziare la scansione
+orizzontale all'istante t1, a cui corrisponde il punto A del segnale da visualizzare;
+nell'esempio della Fig. XVII.27.9b, è Ut  0 (Trigger level ) nel tratto crescente del
+segnale (Trigger slope ). La tensione Ut del Trigger level è applicata ad un ingresso
+dell'amplificatore differenziale, mentre all'altro ingresso è presente il segnale proveniente
+dal selettore di sincronismo S2 dello schema a blocchi della Fig. XVII.27.7; la tensione
+d'uscita del differenziale è applicata al trigger di Schmitt. All'ingresso del circuito di trig-
+ger è applicata una tensione di polarizzazione opportuna, in modo che, all'istante t1 in cui
+il segnale di sincronismo u1 diviene uguale al livello di trigger Ut, la tensione di ingresso
+del trigger u2 raggiunge e scende al di sotto della tensione di soglia inferiore Usi; in questo
+modo, all'istante t1, in cui u1 = Ut, il trigger di Schmitt commuta e la sua uscita u3 passa
+dal livello alto al livello basso. Successivamente, all'istante t', quando u2 supera la ten-
+sione di soglia superiore Uss, l'uscita del trigger passa nuovamente al livello alto. Si
+ottiene così un'onda rettangolare u3 che viene trasformata da un derivatore nella succes-
+sione di impulsi u4. Un diodo limitatore consente di ottenere una successione di impulsi
+solo negativi, ognuno dei quali si presenta in corrispondenza dei punti A. Questi impulsi
+agiscono sul generatore della base dei tempi, facendo iniziare la scansione orizzontale in
+corrispondenza solo di un punto come A; la traccia sull'oscilloscopio risulta pertanto sin-
+cronizzata e inizia in corrispondenza di A.
+Agendo sul potenziometro di comando di Trigger level, la tensione Ut varia con conti-
+nuità entro un intervallo prefissato, attorno al valore zero, e assume valori positivi o nega-
+tivi uguali a valori dalla tensione u1; il comando consente quindi di iniziare la scansione
+nel punto desiderato del segnale.
+L'inizio della scansione, però, in questo modo è limitato al tratto iniziale ascendente
+del segnale u1 (Slope ). Infatti, come si vede nella Fig. XVII.27.9b, quando u1 è decre-
+scente, u2 è crescente, e quindi si può avere solo un impulso positivo di u4, che non agisce
+sul generatore della base dei tempi. Per ovviare a questa limitazione, si impiega il commu-
+tatore Trigger slope, tramite il quale si scambiano gli ingressi del differenziale; la ten-
+sione d'uscita dell'amplificatore differenziale, rappresentata nella Fig. XVII.27.9c, è in
+opposizione al caso precedente b), e si hanno quindi impulsi negativi in u4 in corrispon-
+denza, e solo in corrispondenza, del tratto discendente del segnale u1 (punto A', all'istante
+
+[PAG 1803]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-203
+t2). Le due posizioni del commutatore Trigger slope consentono pertanto l'inizio della
+scansione rispettivamente nel tratto ascendente (Slope ) e nel tratto discendente (Slope 
+) della tensione u1.
+La presenza di isteresi rende il circuito meno sensibile a disturbi e tensione di rumore.
+Come si è visto con riferimento alla Fig. XVII.27.9b, quando la tensione di ingresso del
+trigger di Schmitt supera la tensione di soglia superiore Uss, l'uscita passa a livello alto.
+Se, però, si presenta subito dopo un disturbo negativo tale da portare l'ingresso nuova-
+mente al di sotto della tensione di soglia inferiore Usi, la tensione di uscita passa a livello
+basso; all'uscita del derivatore si ha un nuovo impulso negativo che può attivare nuova-
+mente la base dei tempi e causare una immagine indesiderata. Se, invece, vi è un inter-
+vallo adeguato fra le tensioni di soglia inferiore e superiore, disturbi e tensione di rumore
+non hanno ampiezza sufficiente a riportare l'ingresso del trigger da Uss ad un livello infe-
+riore a Usi e quindi a determinare una nuova commutazione.
+27.3.3  Generatore della base dei tempi
+Il generatore della base dei tempi, detto anche generatore di sweep, è indicato nella
+Fig. XVII.27.7 ed ha le seguenti caratteristiche:
+–  Deve generare una forma d'onda a dente di sega, con buona linearità; la tensione
+ottenuta, infatti, dopo essere stata amplificata, è applicata alle placchette di deflessione
+orizzontale e deve provocare uno spostamento orizzontale uniforme del fascio elettronico.
+–  La forma d'onda deve iniziare all'istante desiderato, in cui si presenta all'ingresso
+l'impulso proveniente dal circuito di trigger, e terminare quando il pennello elettronico ha
+raggiunto l'estremità destra dello schermo.
+–  Successivi impulsi, che si presentino all'ingresso del generatore della base dei
+tempi, non devono avere effetto, una volta che il dente di sega è iniziato e fino a che i cir-
+cuiti sono ritornati in posizione di riposo, dopo che il dente di sega è terminato. Diversa-
+mente, non si riuscirebbe a completare l'immagine sullo schermo.
+Un esempio di schema a blocchi di generatore della base dei tempi è riportato nella
+Fig. XVII.27.10, con le forme d'onda relative al funzionamento. Il generatore della base
+dei tempi si compone di:
+–  Un generatore di segnale di gate, che fornisce una forma d'onda rettangolare di
+comando del generatore di rampa; comunemente è costituito da un trigger di Schmitt, che
+consente di ottenere fronti ripidi.
+–  Un generatore di rampa, che fornisce la forma d'onda a dente di sega all'amplifica-
+tore orizzontale; comunemente è realizzato con un circuito integratore, a cui è applicata
+una tensione di ingresso costante. La pendenza della rampa è determinata dalla resistenza
+e dalla capacità dell'integratore, e può essere variata tramite la manopola con l'indicazione
+Time/div; mediante questa infatti si inseriscono diversi valori di capacità e di resistenza
+nell'integratore, in modo da ottenere la pendenza desiderata. Il fattore di deflessione può
+variare, ad esempio, da valori dell'ordine di 50 ns/div a valori dell'ordine di 1 sdiv, a
+scatti di sequenze 1, 2, 5 (ad esempio, la sequenza degli scatti può essere: 50 nsdiv, 100
+nsdiv, 200 nsdiv, 500 nsdiv, …). Deve essere inoltre prevista la possibilità di calibra-
+zione dell'asse orizzontale, in modo da essere in grado di effettuare misure precise nel
+tempo.
+–  Un circuito di hold-off, il quale, dopo la fine del dente di sega del generatore di
+rampa, fornisce al generatore di segnale di gate una tensione tale che gli impulsi prove-
+nienti dal circuito di trigger non abbiano effetto sul generatore di segnale di gate, fino a
+che tutti i circuiti siano ritornati in condizione di riposo. Generalmente esiste un controllo
+di “hold-off”, non indicato in figura, che permette di aumentare il tempo di hold-off ed
+evitare che impulsi non desiderati determinino la generazione di un nuovo dente di sega.
