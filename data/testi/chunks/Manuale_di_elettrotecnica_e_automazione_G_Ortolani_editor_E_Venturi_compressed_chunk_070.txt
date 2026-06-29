@@ -1,0 +1,2265 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 70/116 ===
+Chars: 43,661 | Offset: 3,048,058
+
+perpendicolare alla prima. 
+Nella via secondaria la successione dei tempi del semaforo è:
+–  18 s luce verde (H2);
+–  6 s luce gialla (H1);
+–  36 s + 3 s luce rossa (H0).
+0<%DRi.S<15. Parola contenente solo valore immediato
+0<%DRi.V<9999. Parola azzarata ad ogni passo
+Indica che ultimo passo definito è in corso
+(%DRi.F= 1 se %DRi.V= LEN-1)
+1 < LEN < 16 (16 per default)
+8 (da %DR0 a %DR7)
+Sul fronte di salita provoca avanzamento di un passo
+1 min, 1 sec, 100 msec, 10 msec. (1min per default)
+Allo stato 1 inizializza il drum al passo 0
+del programmatore ciclico i
+Parola che definisce gli stati del passo j
+%DRi.S
+Numero passo in corso
+Uscita
+Ingresso avanzamento
+Stato di un passo
+Ingresso ritorno passo 0
+F (FULL)
+R (Reset)
+U (UP)
+%DRi.Wj
+Numero programmatore
+Durata passo in corso
+Numero di passi
+Base tempi
+%DRi
+TB
+%DRi.V
+LEN
+
+[PAG 1440]
+XIV-128
+AUTOMAZIONE
+Nella via principale i tempi del semaforo sono:
+–  28 s luce verde (H5);
+–  8 s luce gialla (H4);
+–  24 s + 3 s luce rossa (H3).
+Fig. XIV.7.28  
+La figura esemplifica l’applicazione semaforica con un interruttore I1 (%I1.0) che 
+avvia il sistema (stato OFF). Lo stesso interruttore I1 allo stato ON, determina la commu-
+tazione del controllore di traffico in luce gialla lampeggiante per entrambi i semafori.
+Tab. XIV.7.8  
+La sequenza semaforica è del tipo in uso in Europa, 
+cioè con la luce gialla che si accende da sola e non in 
+contemporanea con la verde, prima di passare alla 
+segnalazione rossa; per ragioni di sicurezza, nel passag-
+gio del diritto di viabilità da una via all’altra vi è un 
+tempo di attesa di 3 s in cui non è consentito il transito 
+in nessuna delle due vie (segnalazione rossa per 
+entrambe le carreggiate).
+In modo configurazione è stata definita la tabella del 
+programmatore (Tab. XIV.7.8), che prevede l’attiva-
+zione delle uscite il cui bit corrispondente è messo ad 1, 
+nel passo specificato:
+PASSO 0 nessuna uscita attiva
+PASSO 1 attive uscite %Q2.2 - %Q2.3
+PASSO 2 attive uscite %M2 - %Q2.3
+PASSO 3 attive uscite %Q2.0 - %Q2.3
+PASSO 4 attive uscite %Q2.0 - %Q2.5
+PASSO 5 attive uscite %Q2.0 - %M3
+PASSO 6 attive uscite %Q2.0 - %Q2.3
+H5 (luce verde)
+H4 (luce gialla)
+H3 (luce rossa)
+H3 (luce rossa)
+H4 (luce gialla)
+H5 (luce verde)
+SEMAFORO 2
+SEMAFORO 2
+H0 (luce rossa)
+H1 (luce gialla)
+H2 (luce verde)
+SEMAFORO 1
+SEMAFORO 1
+H0 (luce rossa)
+H1 (luce gialla)
+H2 (luce verde)
+S1 (START)
+DRi.W1
+DRi.W2
+DRi.W3
+DRi.W4
+DRi.W5
+DRi.W6
+0   0   1   0   0   0   0   
+0   1   0   0   0   0   0   
+0   1   1   1   0   0   1   
+0   0   0   0   0   1   0   
+0   0   0   0   1   0   0   
+0   0   0   0   0   0   0   
+0   0   0   0   0   0   0   
+0   0   0   0   0   0   0   
+0   0   0   0   0   0   0   
+0   0   0   0   0   0   0   
+0   0   0   0   0   0   0   
+0   0   0   0   0   0   0   
+0   0   0   0   0   0   0   
+0   0   0   0   0   0   0   
+STEP:   0   1   2   3   4   5   6     OUT
+BIT
+0:
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+8:
+9:
+A:
+B:
+C:
+D:
+E:
+F:
+0   0   0   1   1   1   1   
+0   0   0   0   0   0   0   
+%Q2.0
+%M2
+%Q2.2
+%Q2.3
+%M3
+%Q2.5
+DRi.W0
+
+[PAG 1441]
+AUTOMAZIONE
+XIV-129
+Il cablaggio degli I/O dell’applicazione è visualizzato nella Tav. XIV.7.6.
+Tav. XIV.7.6  
+N L
+Q1
+24V
+0V
+100/240V
+0V
+Out DC
+Input AC
+Modicon
+TSX Micro
+TER
+AUX
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+2
+4
+6
+8
+10
+12
+14
+16
+18
+I
+N
+P
+U
+T
+21 22
+23 24
+25 26
+27 28
+29 30
+31 32
+33 34
+35
+O
+U
+T
+P
+U
+T
+Battery
+20
+14
+15
+7
+N
+3
+1
+I
+5
+4
+2
+6
+U 11
+P
+9
+T 13
+10
+8
+12
+28
+P
+T 27
+20
+19
+17 18
+16
+O 23
+21
+U 25 24
+22
+26
+35
+U
+T
+31
+29
+33
+30
+32
+34
+15 14
+N
+7
+I
+4
+3
+2
+1
+6
+5
+13
+11
+U
+P
+T
+10
+8
+9
+12
+27
+T
+P
+28
+20
+17
+19 18
+16
+25
+21
+23
+O
+U
+24
+22
+26
+35
+33
+29
+31
+T
+U
+30
+34
+32
+Q2
+L2
+L1
+S1
+S1 INTERRUTTORE START CICLO SEMAFORICO
+ASSEGNAZIONE I/O
+USCITE
+INGRESSI
+%Q2.2
+%Q2.4
+%Q2.3
+BIT
+%I1.0
+BIT
+%Q2.1
+%Q2.0
+%Q2.5
+H5 LAMPADA VERDE SEMAFORO 2
+H4 LAMPADA GIALLA SEMAFORO 2
+H0 LAMPADA ROSSA SEMAFORO 1
+H1 LAMPADA GIALLA SEMAFORO 1
+H2 LAMPADA VERDE SEMAFORO 1
+H3 LAMPADA ROSSA SEMAFORO 2
+H0
+H2
+H1
+H3
+H5
+H4
+
+[PAG 1442]
+XIV-130
+AUTOMAZIONE
+Fig. XIV.7.29  
+Il funzionamento dell’impianto secondo le specifiche del programma visualizzato in Fig. 
+XIV.7.29 è il seguente:
+Rung 3
+%M3
+%I1.0
+%S6
+Rung 5
+%M2
+%I1.0
+Rung 4
+%S6
+%DR0.S = 0
+COMPARE
+Rung 2
+COMPARE
+COMPARE
+%DR0.S = 6
+COMPARE
+%DR0.S = 4
+%DR0.S = 5
+COMPARE
+%DR0.V = 3
+COMPARE
+%DR0.V = 28
+%DR0.V = 8
+COMPARE
+%DR0.S = 2
+%DR0.S = 3
+COMPARE
+%DR0.S = 1
+COMPARE
+COMPARE
+%DR0.V = 6
+%DR0.V = 3
+COMPARE
+%DR0.V = 18
+COMPARE
+COMPARE
+%I1.0
+TB: 1s
+LEN: 7
+%M1
+U
+R
+F
+%DR0
+Rung 1
+%Q2.4
+OPERATE
+%Q2.1
+%M1
+%DR0.S:= 1
+
+[PAG 1443]
+AUTOMAZIONE
+XIV-131
+–  Nel rung 1 viene programmato il drum, al cui ingresso di reset è collegato %I1.0, mentre 
+l’ingresso di avanzamento del passo di programma, viene attivato dal bit interno %M1.
+–  Nel rung 2 sono programmati i tempi di permanenza nei vari passi di programma: se il 
+test delle due comparazioni in AND per ogni riga (della parola %DR0.S che contiene il 
+numero del passo e della parola %DR0.V che contiene il tempo di permanenza nel passo) 
+è vero, il bit M1 viene messo a 1 e determina l’avanzamento del drum.
+–  Quando il drum ritorna ciclicamente al passo 0 la comparazione del rung 3 è vera e 
+viene quindi attivata l’operate che porta il programmatore ciclico al passo 1.
+–  Le lampade gialle di entrambi i semafori non vengono programmate come le altre 
+all’interno della tabella di configurazione del drum perché devono essere comandate anche 
+tramite l’ingresso %I1.0 in modalità lampeggiante, quando il ciclo semaforico è disattivato.
+–  Le uscite %Q2.1 e %Q2.4, programmate nei rung 4 e 5, sono quindi comandate in 
+maniera lampeggiante tramite %I1.0 in AND con %S6 (bit sistema che fornisce un clock 
+del ciclo di 1 s) e normalmente tramite il bit interno %M2 o %M3 inseriti nella tabella di 
+configurazione del programmatore ciclico.
+7.6  Elaborazioni numeriche
+Con l’ausilio del PLC è possibile effettuare una serie di operazioni sui numeri tramite 
+le seguenti istruzioni:
+–  Istruzioni di confronto o comparazione;
+–  Istruzioni di assegnazione o trasferimento di numeri, bit, parole e tabelle di parole;
+–  Istruzioni aritmetiche;
+–  Istruzioni logiche;
+–  Istruzioni di scorrimento.
+Le operazioni si possono effettuare in vario modo su contenitori diversi: word di 
+interi, parole fluttuanti (virgola mobile), stringhe di caratteri e tabelle di parole.
+7.6.1.  Istruzioni di confronto o comparazione
+Le istruzioni di confronto possono essere effettuate con un blocco funzione verticale o 
+orizzontale. Qualunque sia la scelta, gli operatori di confronto tra due operandi sono i seguenti:
+–  Maggiore (>). Verifica se l’operando 1 è maggiore dell’operando 2;
+–  Maggiore-uguale (>=). Verifica se l’operando 1 è maggiore o uguale all’operando 2;
+–  Minore (<). Verifica se l’operando 1 è minore dell’operando 2;
+–  Minore-uguale (<=). Verifica se l’operando 1 è minore o uguale all’operando 2;
+–  Uguale (=). Verifica se l’operando 1 è uguale all’operando 2;
+–  Diverso (<>). Verifica se l’operando 1 è diverso dall’operando 2.
+Se il risultato del confronto è vero, l’azione che viene posta dopo questo test è a 1.
+La Tab. XIV.7.9 evidenzia la sintassi e le tipologie di operandi che è possibile impie-
+gare nella comparazione.
+Tab. XIV.7.9  Caratteristiche del blocco comparatore
+%SW51
+%MW10
+%KW13
+Esempio
+OPERANDO 2
+TIPO DI COMPARAZIONE
+Parola di blocco funzione
+Parola sistema
+Valore immediato
+Parola interna
+Parola costante
+Variabile
+OPERANDO 1
+OP1
+X
+X
+X
+X
+X
+X
+141
+X
+X
+%C1.P
+X
+X
+OP2
+Operando
+OP1
+OP2
+<   <=   >   >=   =   <>
+
+[PAG 1444]
+XIV-132
+AUTOMAZIONE
+Si ricorda che, per ogni tipologia di word a semplice lunghezza (16 bit), è possibile 
+manipolare inoltre, parole doppie (%MDi) flottanti (%MFi) e byte (%MBi).
+Il blocco viene programmato all’interno del rung nell’area destinata ai test.
+Esempi
+Negli esempi precedenti si sono già impiegate le istruzioni di comparazione; l’esempio 
+che viene analizzato di seguito vede l’utilizzo della funzione di comparazione per attivare 
+una sequenza di avviamento di più motori.
+La Fig. XIV.7.30 visualizza il programma da editare per tale applicazione.
+Fig. XIV.7.30  
+COMPARE
+%TM0.V = 10
+Rung 6
+S
+%Q2.3
+S
+%Q2.2
+TB: 1s
+COMPARE
+MODIF: Y
+Rung 5
+Rung 4
+IN
+MODE: TON
+Rung 3
+%Q2.0
+%TM0
+TM
+Q
+%I1.0
+Rung 2
+%I1.1
+Rung 1
+%Q2.1
+%Q2.1
+S
+R
+%Q2.3
+R
+%Q2.2
+R
+%Q2.0
+R
+%Q2.0
+S
+TM.P: 15
+%TM0.V = 5
+%TM0.Q
+
+[PAG 1445]
+AUTOMAZIONE
+XIV-133
+Il valore corrente di un timer viene comparato con dei valori immediati, per controllare 
+l’avviamento di quattro motori; le macchine vengono infatti movimentate con tempi diversi, 
+in modo da evitare delle troppo onerose cadute di tensione sulla linea di alimentazione.
+–  La messa a 1 del pulsante (NO) collegato all’ingresso %I1.0 determina l’avvio del 
+primo motore collegato tramite K1 all’uscita %Q2.0.
+–  La stessa uscita %Q2.0 avvia la temporizzazione del timer %TM0, che trascorsi 5 s 
+avvia il secondo motore comandato da %Q2.1 tramite K2 (essendo vera la comparazione 
+del valore corrente in evoluzione %TM0.V).
+–  Una seconda comparazione, nel rung 4 determina la attivazione di %Q2.2 trascorsi 
+ulteriori 5 s: il motore 3 comandato da K3 è anch’esso movimentato.
+–  Infine il motore 4 collegato a K4 viene avviato grazie alla attivazione dell’uscita 
+%Q2.3, dovuta alla messa a 1 del flag di fine conteggio %TM0.Q, trascorsi gli ultimi 5 s 
+di conteggio del timer.
+In Tav. XIV.7.7 è visualizzato il cablaggio degli I/O dell’applicazione.
+7.6.2.  Istruzioni di calcolo e assegnazione (trasferimento)
+Con questa istruzione si effettuano operazioni aritmetiche, logiche, di transcodifica, di 
+shift di dati, di trasferimento (assegnazione).
+ Le caratteristiche e la sintassi di tali operazioni, pur essendo differenziate nei dettagli 
+per ogni tipologia di macchina, mantengono comunque lo stesso significato funzionale 
+(Tab. XIV.7.10).
+Tab. XIV.7.10  Caratteristiche del blocco operazione
+OCCUR_ARR, LENGTH_ARW, LENGTH_ARD, LENGTH_ARR, LENGTH_ARX.  
+MAX_ARR, MAX_ARW, MIN_ARW, MIN_ARD, MIN_ARR, OCCUR_ARW, OCCUR_ARD, 
+FIND_GTR, FIND_LTR, FIND_EQWP, FIND_EQDP, MAX_ARW, MAX_ARD, MAX_ARW,
+ROR_ARW, ROR_ARD, SHORT_ARW, SHORT_ARD, SHORT_ARR, ROR1_ARB.
+DINT_TO_STRING, STRING_TO_INT, STRING_TO_DINT, REAL_TO_STRING,
+FIND_EQW, FIND_GTW, FIND_LTW, FIND_EQD, FIND_GTD, FIND_LTD, FIND_EQR,
++, -, *, /, REM, INC, DEC, SQRT, ABS, TRUNC, SUM, SUM_ARR, LOG, LN, EXP, EXPT.
+SHL, SHR, ROL, ROR, ROLW, RORW, ROLD, RORD, ROL_ARW, ROL_ARD, SWAP,
+Variabili word o bit a seconda di operazione
+Qualsiasi variabile parola, valore numerico o bit
+Qualsiasi variabile parola, valore numerico o bit
+Illimitate, programmabili in zona azioni
+INT_TO_REAL, DINT_TO_REAL, REAL_TO_INT, REAL_TO_DINT, BCD_TO_DINT,
+INT_TO_BCD, GRAY_TO_INT, DEG_TO_RAD, RAD_TO_DEG, INT_TO_STRING,
+: =
+Assegnazione (Trasferiemnto)
+CARATTERISTICHE
+Numero operazioni
+Operazione
+Risultato
+Secondo operando
+Primo operando
+Tipo operazione
+UTILIZZO PARAMETRI
+Assegnazione (Trasferimento)
+X
+: =
+OP1
+OP2
+OP
+OP1
+X
+OPERAZIONE
+X
+Codice operazione (+, -, *, /, ...)
+TIPI DI OPERAZIONE CONSENTITI
+Operazioni matematiche
+Transcodifica
+Operazioni logiche
+Shift lineare o circolare
+STRING_TO_REAL.
+AND, OR, XOR, NOT.
+SIN, COS, TAN, ASIN, ACOS, ATAN.
+di ricerca
+X
+X
+X
+X
+OP2
+X
+RISULTATO
+X
+Operazioni
+Complemento, transcodifica e shift
+trigonometriche
+
+[PAG 1446]
+XIV-134
+AUTOMAZIONE
+Tav. XIV.7.7  
+U
+P
+T
+10
+8
+9
+12
+27
+T
+P
+28
+20
+17
+19 18
+16
+25
+21
+23
+O
+U
+24
+22
+26
+35
+33
+29
+31
+T
+U
+30
+34
+32
+K1
+3
+M1
+K2
+3
+M2
+Q2
+L3
+L2
+L1
+S2 PULSANTE ARRESTO
+S1 PULSANTE MARCIA
+ASSEGNAZIONE I/O
+USCITE
+INGRESSI
+%Q2.2
+%Q2.3
+%I1.1
+BIT
+%I1.0
+BIT
+24V
+0V
+100/240V
+0V
+Out DC
+Input AC
+Modicon
+TSX Micro
+TER
+AUX
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+2
+4
+6
+8
+10
+12
+14
+16
+18
+I
+N
+P
+U
+T
+21 22
+23 24
+25 26
+27 28
+29 30
+31 32
+33 34
+35
+O
+U
+T
+P
+U
+T
+Battery
+20
+14
+15
+7
+N
+3
+1
+I
+5
+4
+2
+6
+U 11
+P
+9
+T 13
+10
+8
+12
+28
+P
+T 27
+20
+19
+17 18
+16
+O 23
+21
+U 25 24
+22
+26
+35
+U
+T
+31
+29
+33
+30
+32
+34
+15 14
+N
+7
+I
+4
+3
+2
+1
+6
+5
+13
+11
+K1 CONTATTORE DI COMANDO MOTORE 1
+K2 CONTATTORE DI COMANDO MOTORE 2
+%Q2.1
+%Q2.0
+S2
+S1
+K3 CONTATTORE DI COMANDO MOTORE 3
+K4 CONTATTORE DI COMANDO MOTORE 4
+3
+M3
+K3
+3
+M4
+K4
+N L
+Q1
+
+[PAG 1447]
+AUTOMAZIONE
+XIV-135
+Operazioni matematiche e trigonometriche
+Le operazioni che si possono effettuare sono:
+–  +: addizione di due operandi;
+–  : sottrazione di due operandi;
+–  : moltiplicazione di due operandi;
+–  /: divisione di due operandi;
+–  REM: resto della divisione di 2 operandi;
+–  INC: incremento di un operando;
+–  DEC: decremento di un operando;
+–  SQRT: radice quadrata di un operando;
+–  ABS: valore assoluto di un operando;
+–  TRUNC: parte intera di un valore a virgola mobile;
+–  SUM: somma di tutti gli elementi di una tabella di parole in formato singolo;
+–  SUM_ARR: somma di tutti gli elementi di una tabella di parole in virgola mobile;
+–  LOG: logaritmo in base 10;
+–  LN: logaritmo ln;
+–  EXP: esponenziale naturale;
+–  EXPT: messa in esponente di un reale con un intero;
+–  SIN: seno di un angolo espresso in radianti;
+–  COS: coseno di un angolo espresso in radianti;
+–  TAN: tangente di un angolo espresso in radianti;
+–  ASIN: arco seno;
+–  ACOS: arco coseno;
+–  ATAN: arco tangente.
+Regole di utilizzo
+–  Addizione: Se il risultato supera i limiti di 32768  +32767 per un operando a lun-
+ghezza semplice e 2 147 483 648  +2 147 483 647 per un operando a lunghezza doppia, 
+il bit %S18 (overflow) viene impostato a 1. Il risultato non è quindi significativo. La 
+gestione del bit %S18 viene effettuata con il programma utente.
+Presa ad esempio l’operazione %MW1 =23241 + %MW2=21853, il risultato reale 
+(45094) non potrà essere espresso in una parola di 16 bit, il bit %S18 verrà impostato a 1 
+e il risultato ottenuto (20442) sarà errato.
+–  Moltiplicazione: Se il risultato supera la capacità della parola di memorizzazione, il 
+bit %S18 (overflow) verrà impostato a 1 e il risultato non sarà significativo.
+–  Divisione/resto della divisione: Se il divisore è uguale a 0, non sarà possibile eseguire 
+la divisione e il bit di sistema %S18 verrà impostato a 1, quindi il risultato sarà errato. Se 
+il quoziente della divisione supera la capacità della parola di memorizzazione, il bit %S18 
+verrà impostato a 1.
+–  Estrazione della radice quadrata: L’estrazione della radice quadrata può essere eseguita 
+solo con valori positivi. Il risultato è quindi sempre positivo. Se l’operando della radice 
+quadrata è negativo, il bit di sistema %S18 verrà impostato a 1 e il risultato sarà errato.
+Se il risultato di una operazione non è un numero intero, (nel caso di una divisione o 
+dell’estrazione di una radice quadrata), il risultato verrà troncato (arrotondato al numero 
+intero inferiore più vicino).
+In generale per tutte queste operazioni, il bit sistema %S18 “vigila” sulla correttezza 
+dell’operazione stessa e il suo risultato. La gestione del bit di sistema %S18 spetta al pro-
+gramma utente. Viene impostato a 1 dal PLC e deve essere reimpostato a 0 dal programma.
+Operazioni logiche
+Le istruzioni associate consentono di eseguire una operazione logica tra due operandi
+
+[PAG 1448]
+XIV-136
+AUTOMAZIONE
+o su un operando.
+–  AND: AND (bit per bit) tra due operandi;
+–  OR: OR logico (bit per bit) tra due operandi;
+–  XOR: OR esclusivo (bit per bit) tra due operandi;
+–  NOT: complemento logico (bit per bit) di un operando.
+Operazioni di transcodifica
+Sono proposti vari tipi di istruzioni di conversione:
+–  INT_TO_REAL: conversione parola di numeri interi --> in virgola mobile;
+–  DINT_TO_REAL: conversione di parola doppia di interi --> in virgola mobile;
+–  REAL_TO_INT: conversione da virgola mobile --> in parola di interi (il risultato è il 
+valore intero inferiore più vicino);
+–  REAL_TO_DINT: conversione da virgola mobile --> in parola doppia di interi (il 
+risultato è il valore intero inferiore più vicino);
+–  BCD_TO_INT: conversione BCD --> Binario;
+–  INT_TO_BCD: conversione Binario --> BCD;
+–  GRAY_TO_INT: conversione di una parola in codice Gray --> in intero (puro codice 
+binario);
+–  DEG_TO_RAD: conversione da grado in radiante, il risultato è il valore dell’angolo 
+compreso tra 0 e 2 PI;
+–  RAD_TO_DEG: conversione da radiante in grado, il risultato è il valore dell’angolo 
+compreso tra 0 e 360 gradi;
+–  INT_TO_STRING: conversione di un valore numerico (parola di lunghezza singola) 
+in una stringa di caratteri ASCII;
+–  DINT_TO_STRING: conversione di un valore numerico (parola di lunghezza dop-
+pia) in una stringa di caratteri ASCII;
+–  STRING_TO_INT: converte una stringa di 6 caratteri ASCII rappresentante un 
+valore numerico compreso tra -32768 e +32767 in binario (risultato trasferito in una 
+parola di lunghezza singola).
+–  STRING_TO_DINT: converte una stringa di 6 caratteri ASCII rappresentante un 
+valore numerico compreso tra -32768 e +32767 in binario (risultato trasferito in una 
+parola di lunghezza doppia);
+–  REAL_TO_STRING: permette di convertire un valore numerico reale contenuto in 
+una parola di tipo virgola mobile in una stringa di caratteri ASCII.
+–  STRING_TO_REAL: permette di convertire in virgola mobile una stringa di carat-
+teri rappresentante un valore numerico reale (risultato trasferito in una parola di tipo vir-
+gola mobile).
+Operazioni di scorrimento (shift)
+Le istruzioni di scorrimento consistono nello spostare i bit di un operando parola o 
+parola doppia di un certo numero di posizioni verso destra o verso sinistra (il bit sistema 
+%S17 dà lo stato dell’ultimo bit uscita); si possono programmare i seguenti tipi di shift:
+–  SHL(op2,i): scorrimento logico a sinistra di i posizioni;
+–  SHR(op2,i): scorrimento logico a destra di i posizioni;
+–  ROL(op2,i): scorrimento circolare a sinistra di i posizioni;
+–  ROR(op2,i): scorrimento circolare a destra di i posizioni.
+Se l’operando da spostare è un operando semplice lunghezza, la variabile i è compresa 
+tra 1 e 16. Se l’operando da spostare è un operando doppia lunghezza, la variabile i sarà 
+compresa tra 1 e 32. Lo stato dell’ultimo bit uscito viene memorizzato nel bit sistema %S17.
+–  ROLW: scorrimento circolare verso sinistra su una parola con il numero di scorri-
+menti calcolato;
+
+[PAG 1449]
+AUTOMAZIONE
+XIV-137
+–  RORW: scorrimento circolare verso destra su una parola con il numero di scorrimenti 
+calcolato;
+–  ROLD: scorrimento circolare verso sinistra su una parola doppia con il numero di 
+scorrimenti calcolato;
+–  RORD: scorrimento circolare verso destra su una parola doppia con il numero di scor-
+rimenti calcolato;
+–  ROL_ARW: scorrimento ciclico di n posizioni dall’alto verso il basso di elementi di 
+una tabella di parole;
+–  ROL_ARD: scorrimento ciclico di n posizioni dall’alto verso il basso di elementi di 
+una tabella di parole doppie;
+–  ROR_ARW: scorrimento ciclico di n posizioni dal basso verso l’alto di elementi di 
+una tabella di parole;
+–  ROR_ARD: scorrimento ciclico di n posizioni dal basso verso l’alto di elementi di 
+una tabella di parole doppie;
+–  SORT_ARW: ordinamento per ordine crescente o decrescente degli elementi della 
+tabella di parole e ne memorizza il risultato nella stessa tabella;
+–  SORT_ARD: ordinamento per ordine crescente o decrescente degli elementi della 
+tabella di parole doppie e ne memorizza il risultato nella stessa tabella;
+–  SORT_ARR: ordinamento per ordine crescente o decrescente degli elementi della 
+tabella di virgole mobili e ne memorizza il risultato nella stessa tabella.
+–  ROR1_ARB: scorrimento ciclico a destra di un byte di una tabella di byte. Viene uti-
+lizzata dopo avere ricevuto una risposta ad alcune richieste UNI-TE (funzione SEND-REQ).
+–  SWAP: permette, in una tabella di parole, d’invertire tutti i byte di peso debole con quelli 
+di peso forte. Ciò consente, in particolare su Modbus, di facilitare la gestione dei messaggi.
+La chiamata della funzione scorrimento avviene su fronte di salita.
+Operazioni di ricerca
+–  FIND_EQW: ricerca della posizione in una tabella di parole del primo elemento 
+uguale a un valore dato;
+–  FIND_GTW: ricerca della posizione in una tabella di parole del primo elemento 
+superiore a un valore dato;
+–  FIND_LTW: ricerca della posizione in una tabella di parole del primo elemento infe-
+riore a un valore dato;
+–  FIND_EQD: ricerca della posizione in una tabella di parole doppie del primo ele-
+mento uguale a un valore dato;
+–  FIND_GTD: ricerca della posizione in una tabella di parole doppie del primo ele-
+mento superiore a un valore dato;
+–  FIND_LTD: ricerca della posizione in una tabella di parole doppie del primo ele-
+mento inferiore a un valore dato;
+–  FIND_EQR: ricerca della posizione in una tabella di virgole mobili del primo ele-
+mento uguale a un dato valore; 
+–  FIND_GTR: ricerca della posizione in una tabella di virgole mobili del primo ele-
+mento superiore a un dato valore; 
+–  FIND_LTR: ricerca della posizione in una tabella di virgole mobili del primo ele-
+mento inferiore a un dato valore;
+–  FIND_EQWP: ricerca della posizione in una tabella di parole del primo elemento 
+uguale a un dato valore da una posizione; 
+–  FIND_EQDP: ricerca della posizione in una tabella di parole doppie del primo ele-
+mento uguale a un dato valore da una posizione;
+Il risultato di queste istruzioni è uguale alla posizione del primo elemento trovato o a -
+1 se la ricerca è infruttuosa.
+
+[PAG 1450]
+XIV-138
+AUTOMAZIONE
+–  MAX_ARW: ricerca del valore massimo in un tabella di parole;
+–  MIN_ARW: ricerca del valore minimo in un tabella di parole;
+–  MAX_ARD: ricerca del valore massimo in un tabella di parole doppie;
+–  MIN_ARD: ricerca del valore minimo in un tabella di parole doppie;
+–  MAX_ARR: ricerca del valore massimo in una tabella di virgole mobili;
+–  MIN_ARR: ricerca del valore minimo in una tabella di virgole mobili.
+Il risultato di queste istruzioni è uguale al valore massimo (o minimo) trovato nella 
+tabella.
+–  OCCUR_ARW: ricerca in una tabella di parole del numero di elementi uguali ad un 
+valore dato;
+–  OCCUR_ARD: ricerca in una tabella di parole doppie del numero di elementi uguali 
+ad un valore dato;
+–  OCCUR_ARR: ricerca in una tabella di virgole mobili del numero di elementi uguali 
+a un dato valore.
+–  LENGTH_ARW: calcola la lunghezza di una tabella di parole in numero di elementi. 
+–  LENGTH_ARD: calcola la lunghezza di una tabella di parole doppie in numero di 
+elementi.
+–  LENGTH_ARR: calcola la lunghezza di una tabella di virgole mobili in numero di 
+elementi.
+–  LENGTH_ARX: calcola la lunghezza di una tabella di bit in numero di elementi.
+Istruzioni di assegnazione
+Effettuano il caricamento di un operando Op2 in un operando Op1; possono essere 
+realizzate sulle tabelle di bit, sulle parole o sulle parole doppie.
+Esempi
+Si propongono di seguito degli esercizi che, pur non comprendendo la totalità delle 
+istruzioni di operazione elencate, ne vede tuttavia alcune applicazioni significative.
+Nel Par. XIV.7.4 si sono viste le applicazioni per gli elementi grafici di base e in par-
+ticolare le possibili programmazioni per la marcia/arresto di un motore con le tradizionali 
+inserzioni con ritenuta e con set/reset. 
+Con l’ausilio dell’istruzione di incremento è possibile effettuare la stessa operazione 
+di marcia arresto di un motore, con la programmazione proposta in Fig. XIV.7.31. Il fronte 
+di salita effettuato sull’ingresso %I1.0 determina l’incremento di una unità della word 
+%MW0. Il bit meno significativo di questa parola passerà quindi alternativamente dallo 
+stato logico 0 ad 1 ad ogni pressione esercitata sul pulsante che è connesso a %I1.0.
+Ne consegue che tale bit estratto di parola (%MW0:X0) che serve da test sull’uscita 
+%Q2.0 attiverà o disattiverà il contattore che è connesso all’uscita stessa, determinando 
+così la movimentazione o l’arresto del motore collegato.
+Fig. XIV.7.31  
+%I1.0
+Rung 1
+%MW0:X0
+Rung 2
+%Q2.0
+INC %MW0
+OPERATE
+
+[PAG 1451]
+AUTOMAZIONE
+XIV-139
+Il secondo esempio di applicazione delle operazioni di calcolo vede gli ingressi %I1.0 
+e %I1.1 collegati rispettivamente ai pulsanti di marcia S1 (NO) e di arresto S2 (NC), che 
+movimentano il motore di controllo del nastro trasportatore, connesso all’uscita %Q2.0. 
+Le fotocellule B1 e B2 collegate ai rispettivi ingressi %I1.2 e %I1.3 rilevano gli oggetti 
+totali confezionati e quelli di scarto. La lampada H1 collegata all’uscita %Q2.1 sarà atti-
+vata quando la percentuale di scarto dei prodotti confezionati supererà quella consentita 
+dal supervisore della qualità, stimata nella misura massima del 10% (Fig. XIV.7.32).
+Fig. XIV.7.32  
+Il funzionamento dell’impianto secondo le specifiche del programma visualizzato in Fig. 
+XIV.7.33 è il seguente:
+Fig. XIV.7.33  
+–  Nel rung 1 viene attivato il bit interno %M1 e l’uscita %Q2.0 che avvia il nastro tra-
+sportatore. L’operazione viene effettuata sul fronte di salita e l’interruttore S1 collegato 
+all’ingresso %I1.0 può quindi rimanere chiuso, ma senza alcun ulteriore effetto sul pro-
+gramma.
+–  Nel rung 2 lo stesso ingresso sul fronte di discesa (quando l’interruttore S1 viene ria-
+perto) determina la disattivazione del bit %M1 e della stessa uscita %Q2.0 e il conse-
+guente arresto del nastro trasportatore.
+MOTORE
+COMANDO 
+CONTATTORE
+NASTRO 
+AZIONATORE
+K1
+M
+3
+B2
+DIFETTOSI
+PEZZI
+SENSORE
+TOTALI
+B1
+PEZZI
+SENSORE
+H1 SEGNALAZIONE ALLARME
+S1 START/ALT NASTRO E RESET REGISTRI
+S2 ATTIVAZIONE/DISATTIVAZIONE VISUALIZZAZIONE
+%Q2.0
+P
+S
+S
+Rung 2
+%I1.0
+N
+%Q2.0
+R
+%M1
+R
+%I1.0
+Rung 1
+%M1
+
+[PAG 1452]
+XIV-140
+AUTOMAZIONE
+1
+Fig. XIV.7.33   Segue.
+–  Nei rung 3 e 4 vengono incrementati i registri di conteggio sulle word %MW10 e 
+%MW20, per il conteggio, rispettivamente, dei prodotti totali confezionati la prima e di 
+quelli scarti la seconda. L’incremento avviene grazie ad un fronte di salita effettuato tra-
+mite i rilevatori connessi agli ingressi %I1.2 e %I1.3. Nel rung 5 gli stessi registri ven-
+gono “puliti” (viene trasferito il valore 0 nelle word) ad ogni avvio macchina effettuato 
+con un fronte di salita del bit %I1.0.
+–  Nel rung 6 viene effettuato il calcolo della percentuale di scarto prodotta: il valore 
+contenuto nel registro dei prodotti totali viene moltiplicato per 100 e trasferito nella word 
+%MW1; il risultato di tale operazione viene poi diviso per il contenuto del registro pezzi 
+scarti (%MW20) e il risultato dell’operazione assegnato alla word %MW2.
+–  La comparazione tra il valore contenuto in %WMW2 e il valore 10 con l’operando 
+maggiore-uguale (>=) significa che la comparazione sarà vera quando la percentuale di 
+scarto sarà uguale o superiore al 10% dei prodotti confezionati. A questo punto l’uscita 
+%Q2.1 sarà attiva in modo intermittente (è presente in AND il bit sistema di clock 1s 
+%S6), a comandare la lampada di segnalazione di allarme.
+–  Il valore percentuale di scarto potrà essere visibile sul display che correda il PLC, gra-
+zie alla visualizzazione programmata nei rung 8 e 9. Infatti il contenuto della word regi-
+stro destinazione del calcolo percentuale di scarti %MW0 viene codificata in BCD e 
+trasferita nella word %MW0. Nel rung 9 si ha la configurazione della visualizzazione di 
+tale parola con la messa a punto delle word sistema %SW67 %SW69 e il settaggio del 
+bit sistema %S69 che attiva la visualizzazione. 
+–  La %SW67 contiene il valore in esadecimale #0050 che corrisponde al valore 
+“01010000” in binario, il quale significa:
+–  bit X0  X3 con contenuto “0000” visualizza la word %MWi;
+–  bit X4 con contenuto “1” visualizzazione esadecimale;
+–  bit X5 con contenuto “0” incremento positivo delle parole;
+–  bit X6  X7 con contenuto “01” visualizza il byte basso.
+–  La %SW68 contiene il valore “0” e quindi significa che sia l’indice corrente che 
+quello massimo hanno valore 0.
+–  Infine la %SW69 indica il numero della prima word da visualizzare (la %MW0). 
+Rung 3
+%I1.2
+OPERATE
+INC %MW10
+P
+P
+%I1.3
+Rung 4
+INC %MW20
+OPERATE
+Rung 5
+%I1.0
+P
+%MW10:= 0
+OPERATE
+OPERATE
+%MW20:= 0
+
+[PAG 1453]
+AUTOMAZIONE
+XIV-141
+1
+Fig. XIV.7.33   Segue.
+–  Sempre nel rung 9 la “pulizia” della word %MW0 prima di accogliere i valori delle 
+operazioni di calcolo percentuale. Il set del bit sistema %S69, come già anticipato, serve 
+ad attivare la visualizzazione sul display, mentre il reset dello stesso (rung 10) disattiva la 
+funzione di visualizzazione. 
+In Tav. XIV.7.8 è visualizzato il cablaggio degli I/O dell’applicazione.
+Nell’esempio proposto in Fig. XIV.7.34 una stazione di produzione di manufatti pre-
+vede la punzonatura di un prodotto, che viene inviato alla stazione di lavorazione 
+mediante un nastro trasportatore. Appena il pezzo viene intercettato dal finecorsa, che 
+opera anche un conteggio dei manufatti manipolati, il prodotto viene imbracato in una 
+morsa per un tempo di 5 s.
+%I1.1
+P
+Rung 10
+P
+%I1.1
+Rung 9
+%S6
+COMPARE
+Rung 8
+P
+%M1
+P
+Rung 7
+Rung 6
+%M1
+%MW0:= 0
+R
+%S69
+S
+%S69
+%SW69:= 0
+%SW68:= 0
+%SW67:= 16#0050
+OPERATE
+OPERATE
+OPERATE
+OPERATE
+OPERATE
+OPERATE
+%Q2.1
+%MW0:= INT_TO_BCD(%MW2)
+OPERATE
+OPERATE
+OPERATE
+OPERATE
+%MW2:= %MW1/MW20
+%MW1:= %MW10*100
+%MW2 >= 10
+
+[PAG 1454]
+XIV-142
+AUTOMAZIONE
+Tav. XIV.7.8  
+35
+35
+35
+INGRESSI
+USCITE
+ASSEGNAZIONE I/O
+S1 INTERRUTTORE START/ALT  E RESET
+S2 INTERRUTTORE VISUALIZZAZIONE
+B1 FOTOCELLULA RILEVAMENTO PRODOTTI TOTALI
+B2 FOTOCELLULA RILEVAMENTO PRODOTTI SCARTI
+K1 CONTATTORE MOVIMENTAZIONE MOTORE NASTRO
+H1SEGNALAZIONE INTERMITTENTE ALLARME SCARTO
+100/240V
+TSX Micro
+Out DC
+Input AC
+24V
+Modicon
+Q1
+L
+N
+0V
+0V
+2
+2
+1
+2
+1
+1
+S2
+S1
+T
+U
+O
+T
+U
+19
+TER
+AUX
+10
+U 11
+I
+3
+5
+N
+P
+7
+9
+6
+4
+8
+15
+T 13
+17
+12
+14
+18
+16
+Battery
+26
+T 27
+21
+U
+O 23
+25
+22
+20
+24
+T
+31
+U
+P 29
+33
+28
+30
+32
+34
+19
+19
+U 11
+11
+U
+10
+6
+I
+3
+5
+4
+N
+P
+7
+9
+8
+I
+3
+5
+N
+P
+7
+9
+15
+13
+T
+12
+14
+17 18
+16
+15
+T 13
+17
+10
+6
+4
+8
+12
+14
+18
+16
+T 27
+27 26
+22
+21 20
+23
+25 24
+21
+U
+O 23
+25
+31
+29
+P
+28
+30
+33 32
+34
+T
+31
+U
+P 29
+33
+26
+22
+20
+24
+28
+30
+32
+34
+BIT
+BIT
+%I1.0
+%I1.3
+%I1.2
+%I1.1
+%Q2.0
+%Q2.1
+L1
+Q2
+H1
+Y1
+L2
+B2
+B1
+
+[PAG 1455]
+AUTOMAZIONE
+XIV-143
+Fig. XIV.7.34  
+Il prodotto deve avere determinate caratteristiche dimensionali, rilevate da tre fotocel-
+lule, per poter essere lavorato; nel caso in cui non vi siano tali requisiti, il manufatto pro-
+segue la sua marcia sul nastro trasportatore, senza che venga eseguita su di esso alcuna 
+lavorazione; altrimenti viene operata una lavorazione di punzonatura per la durata di 3 s. 
+Una segnalazione intermittente deve essere attivata nel caso una delle fotocellule segnali 
+la non presenza del manufatto (a livello logico 0); deve essere segnalato ulteriormente, 
+quale dei tre sensori ha rilevato una disfunzione dimensionale nel prodotto. Un pulsante di 
+reset azzera il conteggio dei prodotti manipolati durante un turno di lavoro.
+La Fig. XIV.7.34 evidenzia la struttura dell’automazione che comprende un pulsante di 
+avvio ciclo S1 ed uno di stop S2 per la movimentazione del nastro trasportatore. Il nastro 
+trasportatore è controllato dal motore M1, a sua volta comandato dal contattore K1, mentre 
+la punzonatrice è azionata da un cilindro a semplice effetto controllato dalla valvola elet-
+tropneumatica Y1: la valvola rimane attiva per 3 s per consentire l’operazione di punzona-
+tura; il cilindro grazie alla molla antagonista di cui è dotato, può poi tornare nella posizione 
+di riposo.
+La morsa che serra il pezzo a lo sposta nella corretta posizione di punzonatura è azio-
+nata dalla valvola Y2, comandata dal finecorsa S3, che serve inoltre a contare i pezzi. Il 
+manufatto rimane imbracato sulla morsa per 5 s e poi rilasciato e l’operazione di punzona-
+tura avviene ovviamente una volta che la morsa ha serrato il pezzo. L’apertura della 
+morsa si deve al ritorno della parte mobile sollecitata da una molla antagonista; il pezzo 
+quindi può proseguire sulla catena di trasporto dei manufatti;
+La punzonatrice viene attivata solo quando tutti a tre i sensori B1-B2-B3 rilevano la 
+presenza del pezzo, in modo da verificare l’esattezza della tre dimensioni stabilita 
+(altezza, larghezza, profondità); nell’eventualità che anche una sola di tali dimensioni sia 
+errata, l’operazione di punzonatura non viene eseguita e viene attivato un segnale inter-
+mittente di guasto della durata di 5 s, evidenziato dalla H1. Trascorsi i tre secondi di 
+segnalazione intermittente, per poter rilevare quale delle tre dimensioni errata ha caratte-
+rizzato lo scarto del manufatto, si attiveranno inoltre le eventuali corrispondenti segnala-
+zioni H2 (errata dimensione altezza), H3 (errata dimensione larghezza), H4 (errata 
+dimensione profondità) per un tempo di 2 s.
+S1 (START)
+S2 (STOP)
+S4 (RESET)
+B1
+B3
+PUNZONATRICE
+Y1
+H1
+H2
+H3
+H4
+S3
+Y2
+AZIONATORE
+NASTRO TRASPORTATORE
+3
+M1
+K1
+B2
+MORSA DI
+SERRAGGIO
+MANUFATTI
+
+[PAG 1456]
+XIV-144
+AUTOMAZIONE
+Tav. XIV.7.9  
+U
+P
+T
+10
+8
+9
+12
+27
+T
+P
+28
+20
+17
+19 18
+16
+25
+21
+23
+O
+U
+24
+22
+26
+35
+33
+29
+31
+T
+U
+30
+34
+32
+Y2 ELETTROVALVOLA MORSA SERRAGGIO PEZZI
+H4 SEGNALAZIONE DIFETTO PROFONDITA'
+K1 CONTATTORE COMANDO MOTORE NASTRO
+Y1 ELETTROVALVOLA PUNZONATRICE
+H1 SEGNALAZIONE PEZZO DIFETTOSO
+H2 SEGNALAZIONE DIFETTO ALTEZZA
+H3 SEGNALAZIONE DIFETTO LARGHEZZA
+B3 RILEVAMENTO ESATTA PROFONDITA'
+B2 RILEVAMENTO ESATTA LARGHEZZA
+USCITE
+%Q2.1
+%Q2.4
+%Q2.6
+%Q2.5
+%Q2.3
+%Q2.2
+%Q2.0
+BIT
+%I1.6
+%I1.5
+S1 START NASTRO
+S2 ALT NASTRO
+S3 FINECORSA CONTEGGIO PRODOTTI
+S4 RESET CONTEGGIO PEZZI
+ASSEGNAZIONE I/O
+B1 RILEVAMENTO ESATTA ALTEZZA
+INGRESSI
+BIT
+%I1.3
+%I1.4
+%I1.2
+%I1.0
+%I1.1
+K1
+H4
+Y2
+Y1
+H1 H2 H3
+Q2
+L1
+L2
+S3
+S2
+S1
+S4
+B3
+B1
+B2
+24V
+0V
+100/240V
+0V
+Out DC
+Input AC
+Modicon
+TSX Micro
+TER
+AUX
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+2
+4
+6
+8
+10
+12
+14
+16
+18
+I
+N
+P
+U
+T
+21 22
+23 24
+25 26
+27 28
+29 30
+31 32
+33 34
+35
+O
+U
+T
+P
+U
+T
+Battery
+20
+14
+15
+7
+N
+3
+1
+I
+5
+4
+2
+6
+U 11
+P
+9
+T 13
+10
+8
+12
+28
+P
+T 27
+20
+19
+17 18
+16
+O 23
+21
+U 25 24
+22
+26
+35
+U
+T
+31
+29
+33
+30
+32
+34
+15 14
+N
+7
+I
+4
+3
+2
+1
+6
+5
+13
+11
+N L
+Q1
+
+[PAG 1457]
+AUTOMAZIONE
+XIV-145
+La morsa, trascorsi i 5 s rilascerà il pezzo ed il nastro trasportatore si rimetterà in moto; 
+a questo punto tutte la eventuali segnalazioni verranno azzerate. Il pulsante S4 viene impie-
+gato per il reset del contatore di conteggio dei pezzi totali (sia buoni che scarti).
+Il cablaggio della apparecchiatura di ingresso a di uscita rispetto al PLC, è quello di 
+Tav. XIV.7.9.
+Il programma per questa applicazione è quello di Fig. XIV.7.35, che funziona nel 
+seguente modo:
+Fig. XIV.7.35  
+–  L’ingresso %I1.0 attiva il bit interno %M0, che si autoritiene con un contatto in OR 
+con lo stesso %I1.0, mentre con l’ingresso %I1.1 si opera la disattivazione di %M0.
+–  Il bit %M0 viene ripreso nel rung 20 per comandare l’uscita Q2.0 che controlla il 
+nastro trasportatore.
+–  Il nastro è dunque movimentato, ma viene fermato quando è attivo il timer monosta-
+bile %TM0, che tramite il proprio bit associato alla funzione running (%TM0.Q), inibisce 
+appunto il funzionamento dell’uscita %Q2.0.
+–  A dare il via al timer monostabile %TM0 è l’ingresso %I1.2, che è collegato al fine-
+corsa che intercetta il pezzo presente nella stazione di lavorazione.
+–  Quindi la morsa (uscita %Q2.2) serra il pezzo per consentire la lavorazione e contem-
+poraneamente si ferma il nastro trasportatore (apertura di contatto %TM0.Q NC in label 20).
+–  Solo se sono presenti tutti e tre i segnali che verificano l’esatta dimensione del pezzo 
+(%I1.4 altezza, %I1.5 larghezza, %I1.6 profondità), viene attivato il monostabile %TM1.
+Rung 3
+Rung 2
+%M0
+%Q2.0
+Rung 1
+%M0
+%I1.0
+%I1.1
+%M0
+%I1.4
+MODE: TP
+MODIF: Y
+TM.P: 3
+TB: 1s
+IN
+TM
+Q
+%TM1
+%TM0.Q
+MODE: TP
+%I1.2
+TB: 1s
+TM.P: 5
+MODIF: Y
+IN
+TM
+%TM0
+Q
+%Q2.2
+Rung 4
+%I1.5
+%I1.6
+%TM0.Q
+%Q2.1
+
+[PAG 1458]
+XIV-146
+AUTOMAZIONE
+Fig. XIV.7.35   Segue.
+–  Solo se la morsa ha imbracato il manufatto (monostabile %TM0 attivo e quindi bit 
+%TM0.Q allo stato logico 1), si attiva l’uscita %Q2.1 per la movimentazione della punzo-
+natrice.
+–  Se anche una sola della condizioni descritta non è vera, la punzonatrice non effettua la 
+lavorazione e, trascorsi i 5 s di serraggio del pezzo sulla morsa, la stessa lo rilascia a il 
+pezzo viene trasportato dal nastro che nel frattempo è ricominciato a funzionare.
+–  Sempre tramite l’ingresso %I1.2 si effettuano la operazioni di trasferimento e una 
+operazione logica di AND (rung 5).
+–  Viene trasferito il valore espresso in esadecimale 16#0007 nella “word di confronto” 
+%MW0 che avrà quindi la conformazione:
+e nella word %MW1 si trasferiscono gli stati logici degli input %I1.4  %I1.19 (ven-
+gono occupati i 16 bit disponibili nella word).
+–  Se per esempio lo stato logico degli ingressi utilizzati fosse per tutti 1 logico, la confi-
+gurazione della %MW1 sarebbe:
+–   Ovviamente non utilizzando gli ingressi %I1.7  %I1.19, si può effettuare una 
+“mascheratura” dei bit che non vengono utilizzati all’interno della parola “stato reale 
+input”, mediante una funziona logica di AND tra la parola stessa e il valore espresso in 
+esadecimale 16#0007 che in binario ha la conformazione 2#0000000000000111.
+–  Di conseguenza i bit %MW1:X3  %MW1:X15 saranno ignorati poiché il loro stato 
+logico sarà sempre 0 in ogni caso e quindi si eviteranno interferenze di tali bit, con quelli 
+che sono per l’operazione significativi, cioè che sono veramente l’immagine del processo 
+reale (ingressi %I1.4, %I1.5, %I1.6).
+%I1.2
+Rung 5
+OPERATE
+%MW1:= %MW1 AND 16#0007
+%MW0:= 16#0007
+OPERATE
+OPERATE
+%MW1:= %I1.4:16
+%MW0 16#0007
+bit
+15
+14
+13
+12
+11
+10
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+1
+1
+1
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+15
+bit
+%MW1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+1
+%I1.4
+%I1.5
+%I1.7
+%I1.6
+%I1.10
+%I1.11
+%I1.9
+%I1.8
+%I1.16
+%I1.17
+%I1.19
+%I1.18
+%I1.14
+%I1.15
+%I1.13
+%I1.12
+LOGICO
+INGRESSI
+STATO
+
+[PAG 1459]
+AUTOMAZIONE
+XIV-147
+Fig. XIV.7.35   Segue.
+–  Nel rung 6 la comparazione tra la word immagine degli input di processo %MW1 a la 
+word campione %MW0 è di disuguaglianza, per cui se tutti i bit che sono l’immagine 
+degli ingressi di controllo delle dimensioni del pezzo sono a 1, la conformazione delle due 
+word sarà: 
+–  Di conseguenza l’uscita %Q2.3 che segnala la presenza di un pezzo difettoso, non sarà 
+attiva.
+–  La %Q2.3 offrirà una segnalazione intermittente quando invece anche uno solo degli 
+ingressi, che formano i bit significativi della %MW1 sarà allo stato 0, cioè quando uno dei 
+sensori non rileva il pezzo e dunque trattasi di un pezzo difettoso per quella dimensione.
+–  Per esempio se l’ingresso %I1.5 non risulta allo stato 1 significa che vi è una disfun-
+zione nella dimensione larghezza del prodotto.
+–  L’immagine logica di tale ingresso è trasferita nel bit di rango 1 della parola %MW1 
+(bit %MW1:X1) e la conformazione della word sarà dunque:
+%MW1
+AND
+1
+16#0007
+=
+%MW1
+1
+0 AND 0 = 0
+0 AND 1 = 0
+1 AND 0 = 0
+1 AND 1 = 1
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+0
+0
+1
+1
+0
+1
+0
+0
+0
+0
+11
+14
+15
+13
+12
+09
+10
+08
+06
+07
+05
+01
+03
+04
+02
+00
+11
+14
+15
+13
+12
+09
+10
+08
+06
+07
+05
+01
+03
+04
+02
+00
+11
+14
+15
+13
+12
+09
+10
+08
+06
+07
+05
+01
+03
+04
+02
+00
+%MW0<>= %MW1
+Rung 6
+COMPARE
+%Q2.3
+%I1.2
+%M1
+%M0
+%S6
+%MW1
+bit
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+1
+%MW0
+bit
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+1
+11
+14
+15
+13
+12
+09
+10
+08
+06
+07
+05
+01
+03
+04
+02
+00
+11
+14
+15
+13
+12
+09
+10
+08
+06
+07
+05
+01
+03
+04
+02
+00
+%MW1
+bit
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+11
+14
+15
+13
+12
+09
+10
+08
+06
+07
+05
+01
+03
+04
+02
+00
+
+[PAG 1460]
+XIV-148
+AUTOMAZIONE
+–  Per cui %MW1 confrontata con la %MW0 renderà vera la comparazione di disugua-
+glianza, attivando l’uscita intermittente %Q2.3. La stessa uscita però è dipendente anche 
+dallo stato dei bit %I1.2 (presenza pezzo) e %M0 (start sistema).
+–  Contemporaneamente all’attivazione dell’uscita %Q2.3, si è attivato anche il bit 
+interno %M1, che comanda a sua volta il timer %TM2.
+–  Trascorsi 3 s dalla attivazione della segnalazione intermittente %Q2.3 (e dalla attiva-
+zione anche di %M1 e dunque del temporizzatore %TM2), il timer %TM2 cambia lo stato 
+del contatto ad esso associato (%TM2.Q), programmato per comandare la funziona logica 
+di OR esclusivo (XOR).
+–  A questo punto vengono confrontati la word %MW1 a il valore esadecimale 16#0007, 
+che corrisponde a 2#0000000000000111 ed il risultato posto nella word %MW2: 
+–  Di seguito il contenuto della word %MW2 viene trasferito nella stringa di bit %Q2.4 
+%Q2.19.
+–  Con questa operazione tutti i bit di uscita vengono messi a 0 tranne quelli che segna-
+lano la disfunzione dimensionale del manufatto (nel caso specifico l’uscita %Q2.5).
+–  Quando la morsa rilascia il pezzo (dopo i 5 s), passando il bit negato %I1.2 (collegato 
+al contatto del finecorsa S3) a livello logico ON, vengono resettate la eventuali segnala-
+zioni presenti.
+–  L’operazione di incremento effettuata sulla word %MW10 serve a contare i pezzi che 
+vengono manipolati (totale dei pezzi, compresi gli scarti), mediante l’ingresso %I1.2. 
+L’ingresso %I1.3 viene utilizzato per il reset della word stessa, con il trasferimento 
+appunto del valore 0 che manda a 0 tutti i bit della parola %MW10.
+%MW1
+XOR
+1
+16#0007
+=
+%MW2
+0
+0 X0R 0 = 0
+0 XOR 1 = 1
+1 XOR 0 = 1
+1 XOR 1 = 0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+1
+0
+1
+0
+0
+0
+0
+15
+14
+13
+12
+11
+10
+09
+08
+07
+04
+03
+02
+01
+00
+06
+05
+15
+14
+13
+12
+11
+10
+09
+08
+07
+04
+03
+02
+01
+00
+06
+05
+15
+14
+13
+12
+11
+10
+09
+08
+07
+04
+03
+02
+01
+00
+06
+05
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+15
+bit
+%MW2
+bit
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+%Q2.4
+%Q2.5
+%Q2.6
+%Q2.7
+%Q2.8
+%Q2.9
+%Q2.10
+%Q2.11
+%Q2.12
+%Q2.13
+%Q2.14
+%Q2.15
+%Q2.16
+%Q2.17
+%Q2.18
+%Q2.19
+
+[PAG 1461]
+AUTOMAZIONE
+XIV-149
+Fig. XIV.7.35   Segue.
+Una stazione di produzione è adibita al collaudo di un determinato manufatto. Un ope-
+ratore è addetto a tale compito di verifica; ha a disposizione un pulsante per segnalare che 
+un pezzo è difettoso e dunque non deve essere preso in considerazione nelle stazioni suc-
+cessive di assemblaggio. Nelle quattro postazioni che seguono, quando si presenta tale 
+manufatto scarto si deve accendere una segnalazione intermittente che avvisa che tale pro-
+dotto non deve essere lavorato. Sono presenti inoltre un finecorsa che segnala l’avanza-
+mento dei prodotti su di un nastro trasportatore, un pulsante di reset ed uno di start/alt 
+nastro. Vi sarà una perfetta corresponsione tra l’avanzamento dei pezzi sul nastro traspor-
+tatore e la loro posizione rispetto alle stazioni di assemblaggio, cioè la distribuzione sarà 
+di un manufatto per ogni stazione e i prodotti si sposteranno all’unisono.
+Nella Fig. XIV.7.36 sono evidenziate le apparecchiature utilizzate, e precisamente: il 
+pulsante S1 di avvio/stop del nastro trasportatore connesso all’ingresso %I1.0, il pulsante 
+S2 (%I1.1) a disposizione dell’operatore per segnalare un pezzo riscontrato inidoneo al col-
+laudo, il pulsante S3 (%I1.2) di reset dello shift register, il finecorsa S4 (%I1.3) che rileva 
+l’avanzamento dei prodotti. Il nastro trasportatore viene azionato dal motore M, a sua volta 
+controllato dal contattore K1 (%Q2.0), mentre le lampade di segnalazione intermittenti H1 
+­ H2 ­ H3 ­ H4 che evidenziano la presenza in un determinato istante del prodotto da scar-
+tare, rispettivamente nella stazione 1 ­ 2 ­ 3 ­ 4 sono connesse alle uscite %Q2.1  %Q2.4.
+La segnalazione H5 (%Q2.5) conferma l’operazione di discriminazione di pezzo scarto.
+%TM2
+MODIF: Y
+%M1
+MODE: TON
+TB: 1s
+TM.P: 3
+IN
+TM
+Rung 7
+Q
+%Q2.4:16:= %MW2
+%MW2:= %MW1 XOR 16#0007
+OPERATE
+OPERATE
+Rung 8
+%I1.2
+R
+%Q2.5
+%Q2.4
+R
+%Q2.6
+R
+OPERATE
+INC %MW10
+%I1.2
+Rung 9
+P
+P
+%MW10:= 0
+Rung 10
+%I1.3
+OPERATE
+
+[PAG 1462]
+XIV-150
+AUTOMAZIONE
+Fig. XIV.7.36  
+Il programma da immettere nel controllore è quello di Fig. XIV.7.37 che ha il seguente 
+funzionamento:
+–  Nelle prime righe di programma si effettua, tramite un relè passo-passo comandato da 
+%I1.0. il controllo dell’uscita %Q2.0 che comanda il nastro trasportatore.
+Fig. XIV.7.37  
+STAZIONE 2
+S1
+CONTATTORE
+PULSANTE START/ALT
+MOTORE
+COMANDO 
+PULSANTE DI SCARTO
+PULSANTE DI RESET
+STAZIONE DI
+COLLAUDO
+NASTRO 
+AZIONATORE
+3
+M
+S3
+S2
+STAZIONE 1
+H1
+PRESENZA SCATOLA
+MICROINTERRUTTORE
+S4
+STAZIONE 4
+STAZIONE 3
+H2
+H3
+H4
+K1
+Rung 3
+%M1
+%M3
+Rung 4
+%M2
+%M3
+P
+%M2
+S
+R
+%M3
+%Q2.0
+Rung 5
+%M3
+%M0
+Rung 2
+%M3
+%M1
+Rung 1
+%I1.0
+%M0
