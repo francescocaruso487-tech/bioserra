@@ -1,0 +1,1319 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 14/23 ===
+Chars: 44,659 | Offset: 583,282
+
+
+
+Si è detto in precedenza che il flusso di corrente in un conduttore si realizza mediante
+il movimento di elettroni scarsamente vincolati soggetti all’influenza di un campo
+elettrico applicato dall’estemo. Questi elettroni, tuttavia, non costituiscono una cari-
+ca in eccesso in quanto sono bilanciati da un’uguale quantità di carica positiva conte-
+nuta nei nuclei degli atomi. In altre parole, il materiale conduttore è elettricamente
+neutro e la densità di carica netta nel conduttore è zero (p, = 0). Cosa accade dunque
+se si introduce una carica in eccesso g in un punto all’interno del conduttore? La cari-
+ca in eccesso dà luogo a un campo elettrico, che provoca la ridistribuzione spaziale
+delle cariche del materiale ospite a essa adiacenti; ciò a sua volta causa lo spostamen-
+to di altre cariche e il processo continua fino al ristabilimento della neutralità all’in-
+terno del materiale conduttore, con il sorgere di una carica uguale a g sulla superficie
+del conduttore stesso.
+
+Con quale velocità si disperde la carica in eccesso? Per rispondere a questa doman-
+da si introduce una densità di carica volumetrica pyo all’intemo di un conduttore e si
+ricava la velocità con cui essa decade a zero. Dalla (6.54), l'equazione di continuità è
+data dalla
+
+dp,
+
+VALIGIE or
+
+(6.58)
+
+In un conduttore, la forma puntuale della legge di Ohm, data dalla (4.67), afferma
+che J = oE. Pertanto
+
+=_da
+oV- Ear. (6.59)
+
+In seguito si applica la (6.1), V - E = p,/e, per ottenere la seguente equazione diffe-
+
+renziale alle derivate parziali
+
+CLA
+or
+
++ 2 by = 0. (6.60)
+Sapendo che py = pyo all’istante ¢ = 0, la soluzione della (6.60) è
+
+peli) = poe 919" = pel (C/m’), (6.61)
+
+dove 7, = e/o è detta costante di tempo di rilassamento. Si nota dalla (6.61) che la
+carica in eccesso iniziale py. decade esponenzialmente con tasso 7;. Al tempo ¢ = 7;
+la carica iniziale py, risulta diminuita di 1/e = 37% del suo valore iniziale, e al tem-
+po t = 37; essa decade di e? & 5% del valore iniziale in t = 0. Nel caso del rame,
+con e = eg = 8.854 x 107? F/m e = 5.8 x 107 S/m, si ha 7, = 1.53 x 10719 s,
+pertanto ia dispersione della carica in un conduttore è un processo estremamente ve-
+loce. Per contro, il tasso di diminuzione è molto lento in un buon isolante: in un ma-
+feriale come la mica con e = 6€9 e o = 107! S/m, si ha 7; = 5.31 x 1048, vale a di-
+re circa 14.8 ore.
+
+263
+
+[PAG 140]
+264
+
+Capitolo 6 — Equazioni di Maxwell per campi tempo-varianti
+
+Domande di verifica
+
+611 Si spieghi come dall’equazione di continuità della carica si ricava la legge di si
+
+Kirchhoff per le correnti.
+6.12 Quanto vale la costante di tempo di rilassamento per la dispersione della carica
+in un conduttore perfetto? E in un dielettrico perfetto?
+
+ESERCIZIO 6.6 Si ricavino (a) la costante di tempo di rilassamento e (b) il tempo necessa-
+rio affinché la densità di carica decada all’1% del suo valore iniziale nel quarzo, per cui
+sihae, = Seo = 107! Sim.
+
+SOLUZIONE (a) 7, = $1.2 giorni, (b) 236 giorni.
+—T_——m__—_m_m—m————=c@cnu
+
+6.11 Potenziali elettromagnetici
+
+Con la trattazione delle leggi di Faraday e di Ampère sono stati esaminati due aspetti
+del legame esistente tra i campi elettrici e magnetici quando i campi sono varianti nel
+tempo. Si esàmineranno ora le conseguenze di questo legame per quanto riguarda il
+potenziale scalare elettrico V e il potenziale vettore magnetico A.
+
+Per d/8t = 0, la legge di Faraday si riduce a
+
+VxE=0 (elettrostatica) (6.62)
+
+che afferma che il campo elettrostatico E è conservativo. Secondo le regole del calco-
+lo vettoriale, se un campo vettoriale E è conservativo, può essere espresso come gra-
+diente di uno scalare. Pertanto nel Capitolo 4 si è definito E come
+
+E=-VV (elettrostatica) (6.63)
+Nel caso dinamico, la legge di Faraday è data da
+dB
+VxE= -& (6.64)
+e tenendo conto della relazione B=V «<A, la (6.64) diviene
+d
+VxE=-(VxA), (6.65)
+che si può riscrivere come
+dA VINO
+Vx (e + $) =0 (caso dinamico) (6.66)
+Definendo
+I dA
+P=E+s, (6.67)
+si ha che la (6.66) diviene
+VxE =0. (6.68)
+
+Seguendo lo stesso percorso logico usato per ricavare la (6.63) dalla (6.62), si defini
+sce
+
+E =-VY. (6.69)
+
+6.11 Potenziali elettromagnetici
+
+Sostituendo nella (6.69) la definizione di E‘ data dalla (6.67) e quindi ricavando E, si ha
+
+E=-Vy- a (caso dinamico) (6.70)
+
+Nel caso stazionario la (6.70) si riduce alla (6.63).
+Quando il potenziale scalare Y e-il potenziale vettore A sono noti, si può ricavare
+E dalla (6.70) e ottenere B dalla
+
+B=VxA. (6.71)
+
+Nel seguito si esamineranno le relazioni tra i potenziali Y e A e le loro sorgenti, le di-
+stribuzioni di carica py e di corrente J, nel caso tempo-variante.
+
+6.11.1 Potenziali ritardati
+
+Si consideri la situazione descritta in Figura 6.16: in un volume v’ centrato nell’ origi-
+ne di un sistema di riferimento esiste una distribuzione di carica py; il mezzo circo-
+stante è un dielettrico perfetto con permittività e. Dalla (4.48a) si ha che il potenziale
+elettrico Y(R) in un punto di osservazione nello spazio, che è definito dal vettore po-
+sizione R, è dato da
+
+ve [ER a (67)
+
+Distribuzione
+di carica py
+
+dove R; indica il vettore posizione di un elemento infinitesimo di volume Ay’ che
+contiene una densità di carica p, e R' = |R — R;| è la distanza tra Av’ e il punto di
+osservazione. Se la distribuzione di carica è descritta da una funzione tempo-varian-
+te, si può pensare di riscrivere la (6.72) per il caso dinamico nella forma
+
+AES Re (673)
+
+ma tale espressione non tiene conto del “tempo di reazione”: essendo V il potenzia»
+le dovuto a una certa distribuzione 0y1, se la distribuzione varia improvvisamente da
+pv 4 py, la variazione del potenziale da V; a V2 alla distanza R' avverrà con un ritar-
+do di tempo finito. In altre parole, Y(R, 1) non può variare istantaneamente. Il ritardo
+è uguale a # = R’/up, dove up è la velocità di propagazione nel mezzo compreso tra
+la distribuzione di carica e il punto di osservazione. Pertanto, V(R, 1) all'istante t cor-
+risponde a p, a un istante precedente, vale a dire (¢ — 1°). Dunque, la (6.73) deve es-
+sere riscritta nella forma
+
+265
+
+Figura 6.16
+
+Potenziale elettrico 7(R)
+dovuto a una distribuzione
+di carica py in un volume
+v'.
+
+[PAG 141]
+266
+
+Capitolo 6 - Equazioni di Maxwell per campi tempo-varianti
+
+VR!) = 7 | pre El) ay! (Y), (6.74)
+
+e V(R, t) è giustamente chiamato potenziale scalare ritardato. Se il mezzo di propa-
+gazione è il vuoto, up è uguale alla velocità della luce c.
+
+Analogamente, il potenziale vettore ritardato A(R, t) è legato alla distribuzione
+della densità di corrente J dalla
+
+AR) == [ Rat Blt) ay! (Wb/m). (6.75)
+
+Questa formula si ottiene estendendo al caso tempo-variante l’espressione del poten-
+ziale vettore magnetostatico A(R) data dalla (5.65).
+
+6.11.2 Potenziali in regime armonico
+
+Le espressioni dei potenziali scalare e vettore date dalla (6.74) e dalla (6.75) sono va-
+lide sia in condizioni statiche che dinamiche e per qualsiasi tipo di dipendenza dal
+tempo manifestata dalle funzioni sorgente p, e J. Nel caso dinamico, p, e J sono le-
+gate dalla relazione di continuità della carica data dalla (6.54), dunque entrambe le
+grandezze avranno in generale la stessa dipendenza funzionale dal tempo 1 e, per
+estensione, l'avranno anche i potenziali V e A e i campi E, D, B e H. Inoltre, dal mo-
+mento che V e A sono linearmente dipendenti, rispettivamente, da py e da J, e anche
+E e B sono linearmente dipendenti da V ¢ da A, le relazioni che legano tutte queste
+grandezze obbediscono alle regole dei sistemi lineari. Quando un sistema è lineare, si
+può determinare la risposta del sistema causata da una sorgente con dipendenza tem-
+porale di qualsiasi tipo, utilizzando funzioni con andamento temporale sinusoidale.
+Come si è visto nel Paragrafo 1.6, se la dipendenza dal tempo è descritta da una fun-
+zione periodica anche non sinusoidale, la si può sempre espandere in una serie di
+Fourier di componenti sinusoidali, mentre se la funzione del tempo non è periodica
+la si può rappresentare mediante un integrale di Fourier. In entrambi i casi, se la ri-
+sposta del sistema lineare è nota nel caso sinusoidale stazionario, si può sfruttare il
+principio di sovrapposizione degli effetti per ricavare la risposta alia funzione tempo-
+rale voluta. Pertanto, la risposta sinusoidale del sistema costituisce un elemento fon-
+damentale per determinare Ja risposta causata da una sorgente descritta da un’arbitra-
+ria funzione del tempo. In questo contesto si usa spesso l’espressione di regime ar-
+monico come sinonimo di ‘dipendenza dal tempo sinusoidale stazionaria”.
+
+In questo paragrafo si esamineranno le risposte in regime armonico dei potenziali
+Titardati scalare e vettore. Si suppone che p,(R;, ¢) sia una funzione del tempo, la cui
+dipendenza sinusoidale ha frequenza angolare w, data da
+
+Pr{Ri, t) = py(Ri) cos wt. (6.76)
+
+L’analisi fasoriale, introdotta nei Paragrafo 1.6 e usata spesso nel Capitolo 2 per stu-
+diare la propagazione delle onde nelle linee di trasmissione, é uno strumento utile per
+risolvere i problemi in regime armonico. Nella notazione fasoriale p,(Ri, 1) è scritta
+nella forma
+
+pr(Ri, 1) = Re[A,(R) 4], (6.77)
+
+dove 5,(Ri) è definita come la funzione fasoriale corrispondente alla funzione tem-
+
+porale p,(Ri, 1); la funzione fasoriale è sormontata dalla tilde (>) per renderla più ri-
+conoscibile. Confrontando la (6.76) e la (6.77) si ha che nel caso presente
+dv(Ri) = p(Ri).
+
+6.11 Potenziali elettromagnetici
+
+In seguito si esprime la densità di carica ritardata p,(Ri, ¢ — R'/up) in forma fasoriale
+sostituendo £ con (t — R'/up) nella (6.77):
+
+pe(Ri,1 — ug) = Re [Ay (Ri) oF!)
+= Re[5(Ri) nani (6.78)
+= Re [A(R e]
+
+dove
+
+k=— (6.79)
+ui Up
+è detto numero d'onda o costante di fase del mezzo in cui ha luogo la propagazione;
+in generale la costante di fase si indica con il simbolo ‘“6’’, ma nei mezzi dielettrici
+senza perdite di solito si indica con “4° ed è chiamata numero d’onda. Si definisce
+analogamente il fasore Y(R) associato alla funzione del tempo V(R, #) nel seguente
+modo:
+
+V(R,1) = Re[P(R) all . (6.80)
+Sostituendo la (6.78) e la (6.80) nella (6.74) si ottiene
+Re[7(R) e] =
+Ng 681)
+Lf BREA peg | (
+nel | Re eMdy'|,
+
+Uguagliando le quantita all’interno delle parentesi quadre nei due membri della
+(6.81) e semplificando e da entrambi, si ottiene l’espressione nel dominio fasoriale
+
+Specificata una qualsiasi distribuzione di carica, si può usare la (6.82) per calcolare
+Y(R) e quindi l’espressione risultante può essere inserita nella (6.80) per ricavare
+Y(R, t). Analogamente, l’espressione di A(R, #) data dalla (6.75) si può trasformare
+nella
+
+A(R, t) = Re (Ace) e] (6.83)
+
+con
+
+x wf IR |,
+fon = [SS a (684)
+
+dove J(R;) è la funzione fasoriale associata a J(Ri, ¢).
+Il fasore di campo magnetico H corrispondente ad A è dato da
+
+finlvxa (6.85)
+BK
+Ricordando che la derivazione nel dominio del tempo equivale alla moltiplicazione
+per jw nel dominio dei fasori, in un mezzo non conduttore (J= 0) la legge di
+Ampère data dalla (6.4) diviene
+
+267
+
+[PAG 142]
+268
+
+Capitolo 6 - Equazioni di Maxwell per campi tempo-varianti
+
+vxH= juef- oppure È sl Veli (686)| 7 7
+jue
+
+Dunque, data una distribuzione di densità di corrente descritta in regime armonico da
+un fasore ZL si possono usare in successione le equazioni dalla (6.84) alla (6.86) per
+determinare sia E che Hi. I fasori vettoriali È ¢ H sono in relazione anche tramite la
+forma fasoriale della legge di Faraday:
+
+VxÉ= ju oppure H= IL Vxf. (6.87)
+jup
+
+Esempio 6.8
+
+In un mezzo non conduttore con e = 160 € js = yo, l'intensità del campo elettrico di
+un’onda elettromagnetica è data da
+
+E(,) =£10sin(10!%~ dz) (V/m). (6.88)
+
+Si ricavi l’intensità di campo magnetico associata H e si calcoli il valore di k.
+
+Soluzione Si inizia ricavando il fasore ÉÉ(z) associato a E(z, i): dal momento che
+EG, t) è una funzione sinusoidale e che in questo libro i fasori sono definiti facendo ri-
+ferimento alla funzione coseno, si riscrive la (6.88) nella forma
+
+E(z,t)=£10cos(10!%-%-x/2) (V/m)
+= RefÉ(a) eo], (6.89)
+con w = 10! (rad/s) e
+È = 210 eH? = ge, (6.90)
+
+Per ricayare sia H(z) che & si usa un metodo circolare: dall’espressione data per E() si
+ticava Ha) mediante la legge di Faraday, quindi si inserisce H(z) nella legge di
+Ampère per ricavare nuovamente Ea). Si confronta poi quest’ultimo con l’espressione
+originale di E(z) e dal confronto si ottiene il valore di k. +. Applicando la (6.87) si ha
+
+1
+
+A(z) = --— VxE
+jo
+1 x y i
+=-——| 6/8 te)
+Ju ali Hey 8/8
+~jle* 0 0 (6.91)
+1 8 x
+=- —_ |9f —{-j wid
+sas È (ide |
+10k
+= pj ge
+eZ wp e
+
+A questo punto si è usata l’espressione di IDOL data dalla (6.90) per ricavare Ba), mak
+
+| è ancora incognita. Per ricavare x, si inserisce A) nella (6.86) per ottenere Eq):
+
+(6.92)
+
+| Uguagliando la (6: 90) e la (6. 92) s si ottiene
+
+Concetti fondamentali
+
+È Sepe,
+da cui :
+k=wype i
+= dovuto (6.93)
+do _ 4% 10 133. (rad/m).
+
+Te 3x1e
+Una volta noto &, i’intensità di campo magnetico istantanea è data dalla
+H(z, 1) = Re[H(z) e]
+10k Liù
+= Re|-gj Let 6.94)
+ve[ dj mm ee (6.94)
+
+=$0.11 sin (10!%- 1332) (A/m).
+
+Si noti che & ha la stessa espressione della costante di fase di una linea di trasmissione
+
+senza perdite data dalla (2.39).
+
+EseRciZiO 6.7 L'intensità del campo magnetico di un’onda elettromagnetica che si pro-
+paga in un mezzo senza perdite con e = 9eq € 4 = Lo è data da
+
+H(z, t) = £0.3 cos(10°—%+7/4) (A/m).
+Si ricavino E(z,4) ek.
+
+Sowuzione E(z, 1) = —$37.7 cos (108 — 2 + 2/4) (V/m); k = 1 (adm).
+TTI i ____ù
+
+Concetti fondamentali
+
+e La legge di Faraday afferma che sui terminali di una spira viene indotta una tensio-
+ne se il flusso magnetico concatenato alla sua superficie varia nel tempo.
+
+e In un trasformatore ideale, il rapporto tra tensione primaria e secondaria, come pu-
+re i rapporti tra correnti e impedenze, dipendono dal rapporto tra il numero di av-
+volgimenti del primario e quello del secondario.
+
+e La corrente di spostamento rende conto del fiusso ‘‘apparente’’ di cariche attraver-
+so un dielettrico. In realtà, cariche di polarità opposta si accumulano lungo le due
+estremità del dielettrico e danno l’impressione di un flusso di corrente attraverso di
+esso.
+
+e Le condizioni al contorno per i campi elettromagnetici all’interfaccia tra due mezzi
+diversi non variano passando da condizioni statiche a dinamiche.
+
+. L'equazione di continuità della carica è un'espressione matematica della legge di
+conservazione della carica elettrica.
+
+e La carica in eccesso all’interno di un buon conduttore si disperde molto veloce-
+mente: tramite un processo di riorganizzazione la carica in eccesso viene trasferita
+sulla superficie del conduttore.
+
+e Nel caso dinamico, il campo elettrico E è legato sia al potenziale scalare elettrico
+V che al potenziale vettore magnetico A.
+
+e I potenziali scalare e vettore ritardati in un determinato punto di osservazione ten-
+gono conto del ritardo di tempo finito necessario alla propagazione dalle sorgenti,
+vale a dire le distribuzioni di carica e di corrente, alla posizione del punto di osser-
+vazione.
+
+269
+
+[PAG 143]
+270 Capitolo 6 — Equazioni di Maxwell per campi tempo-varianti
+
+Glossario
+Si definiscano i seguenti termini, spiegandone il significato:
+
+legge di Faraday
+
+forza elettromotrice Vane
+induzione elettromagnetica
+emf di trasformazione VT,
+emf di movimento VT,
+legge di Lenz
+
+PROBLEMI
+
+Nota: Le risposte ai problemi contrassegnati da un asterisco si
+
+trovano nell’Appendice D.
+
+Paragrafi da 6.1 a 6.6 La legge di Faraday e le
+sue applicazioni
+
+*6.1 L’interruttore presente nella spira in basso in Figura 6.17
+viene chiuso all'istante # = 0 e quindi riaperto in un
+istante successivo #1. La direzione della corrente J nella
+Spira superiore in questi due istanti è rivolta in senso
+orario 0 antiorario?
+
+Ra
+
++
+Ri
+Figura 6.17 Spire del Problema 6.1. _
+
+6.2. La spira in Figura 6.18 è situata nel piano x-y e
+B = #8 sin wt con Bo positiva. Si dica se la direzione di /
+è rivolta lungo o lungo —¢ agli istanti:
+
+@ t1=0;
+(b) wt = 1/4;
+(0) wt = 7/2.
+
+Figura 6.18 Spira del Problema 6.1.
+
+Corrente di spostamento Zi
+equazione di continuità della carica
+legge di Kirchhoff per le correnti
+dispersione della carica
+
+costante di tempo di rilassamento
+numero d’onda &
+
+potenziale ritardato
+
+*6.3 Una bobina è formata da 100 avvolgimenti di filo su un
+
+supporto quadrato di lato pari a 0.25 m. La bobina è
+centrata nell’origine con i lati paralleli agli assi x e y. Si
+ricavi la emf indotta sui terminali aperti della bobina
+quando il campo magnetico è dato da
+
+(a) B= Zi0e (1);
+
+(b) B = 210 cos x cos 107+ (1);
+
+(©) B = 210 cos x sin 2y cos 1051 (T).
+
+6.4 Una spira conduttiva immobile con resistenza interna pari
+
+2.0.5 Q è immersa in un campo magnetico tempo-variante.
+
+Quando la spira è chiusa, in essa circola una corrente di
+2.5 A. Se si apre la spira creando una piccola internizione
+e vi si collega in serie una resistenza da 2 2, quale sarà il
+valore della corrente circolante?
+
+*6.5 Un’antenna TV formata da una spira circolare di area pari
+
+20.01 m? si trova in presenza di un segnale a 300 MHz di
+ampiezza uniforme. Quando è orientata per la massima
+risposta, la spira sviluppa una forza elettromotrice con
+valore di picco pari a 20 (mV). Qual è il valore di picco
+del modulo di B dell’onda incidente?
+
+6.6 La spira quadrata descritta in Figura 6.19 è coplanare a un
+. filo rettilineo di lunghezza elevata che è percorso da una
+corrente
+i(t)=2.5c0s27x 10% (A)
+
+z
+| pe 10cmAY
+© i
+
+10cm
+Sem
+
+i |
+a
+
+Figura 6.19 Spira coplanare a un filo di lunghezza elevata
+(Problema 6.6).
+
+(a) Supponendo di aver aperto una breve interruzione
+nella spira, si calcoli la emf indotta ai suoi terminali;
+
+(b) Si caicolino la direzione e il modulo della correnté che
+fluirebbe attraverso una resistenza da 4 2 collegata sui
+terminali, sapendo che la spira ha una resistenza interna di
+19.
+
+*6.7 La spira conduttiva rettangolare descritta in Figura 6.20
+ruota con una velocità di 6000 giri al minuto ed è immersa
+in un’induzione magnetica uniforme data da
+
+B=350 (mT)
+Si calcoli la corrente indotta nella spira se la sua resistenza
+intema è pari a 0.592.
+
+x
+
+Figura 6.20 Spira rotante immersa in un campo magnetico
+(Problema 6.7).
+
+6.8 Una spira conduttiva rettangolare di 5 cm x 10 cm con
+‘una breve interruzione in uno dei lati ruota a 7200 giri al
+minuto, Se il campo B è normale all’asse della spira e il
+suo modulo è pari a 5 x 1075 T, qual è il valore delia
+tensione di picco indotta ai capi dell’interruzione?
+
+*6.9 Una barra metallica lunga 50 cm ruota attorno all’asse z
+con una velocità di 180 giri al minuto, con l'estremità 1
+fissata nell’origine come descritto in Figura 6.21. Si
+calcoli ia emf indotta 712 quando B = 23 x 104 T.
+
+Figura 6.21 Barra rotante del Problema 6.9.
+
+6.10 La spira descritta in Figura 6.22 si allontana da un filo
+percorso da una corrente J; = 10 A a velocità costante
+
+Problemi mn
+
+u= 95 (m/s). Se R = 10 Qe & ha la direzione definite in
+figura, si ricavi / in funzione della distanza yy tra il filo e
+la spirà, trascurandone la resisténza interna,
+
+Figura 6.22 Spira in movimento del Problema 6.10.
+
+*6.11 Il cilindro conduttore descritto in Figura 6.23 ruota attorno
+al proprio asse a 1200 giri al minuto, immerso in un
+campo radiale dato da
+
+B=î6 (1)
+
+U cilindro, il cui raggio è di 5 em e la cui altezza è di 10
+cm, porta dei contatti striscianti alle estremità superiore e
+inferiore, collegati a un voltmetro. Si calcoli la tensione
+indotta.
+
+Contatto strisciante
+
+Figura 6.23 Cilindro rotante immerso in un campo
+magnetico (Problema 6.11).
+
+6.12 Hl generatore elettrico descritto in Figura 6.12 è collegato a
+una lampadina che ha una resistenza di 100 92. Se l’area
+della spira è pari a 0.1 m? ed essa ruota a 3600 giri al
+minuto in presenza di un’induzione magnetica uniforme
+Bo = 0.2 T, si calcoli ampiezza della corrente generata
+nella lampadina.
+
+*6.13 Il disco circolare descritto in Figura 6.24 giace nel piano
+x-y e ruota attomo all’asse z con velocità angolare costante
+w. Il disco ha raggio a ed è immerso in un’induzione
+
+[PAG 144]
+vizi Capitolo 6 - Equazioni di Maxwell per campi tempo-varianti
+
+magnetica uniforme B = 2Bp. Si ricavi l’espressione della
+emf indotta tra il bordo e il centro del disco.
+
+x
+
+Figura 6.24 Disco circolare rotante immerso in un campo
+magnetico (Problema 6.13).
+
+Paragrafo 6.7 Corrente di spostamento
+
+6.14 Le armature di un condensatore a facce piane e parallele
+hanno un’area di 10 cm? ciascuna e sono distanziate di 1
+em. Il condensatore è riempito di materiale dielettrico con
+€ = 4x0 e la tensione ai suoi capi è descritta da
+V(t) = 20 cos 2m x 10% (V). Si calcoli la corrente di
+spostamento.
+
+*6.15 Un condensatore coassiale di lunghezza / = 6 cm contiene
+un materiale dielettrico con er == 9. I raggi dei conduttori
+cilindrici sono di 0.5 cm e 1 cm. Se la tensione applicata
+al condensatore è
+
+V(t} = 100 sin (1201) (V) (155)
+qual è il valore della corrente di spostamento?
+
+6.16 Il condensatore a facce piane e parallele descritto in Figura
+6.25 è riempito con un materiale dielettrico con perdite di
+permittività relativa e, e conducibilità o. La distanza tra le
+armature è d e ogni armatura ha area A. Il condensatore è
+collegato a un generatore di tensione tempo-variante V(t).
+
+(@) Si ricavi l’espressione di X, la correnté di conduzione
+che scorre tra le armature del condensatore, in funzione
+delle grandezze date;
+
+(b) Si ricavi l’espressione di /4, la corrente di spostamento
+che scorre all’intemo del condensatore;
+
+(©) Basandosi sulle espressioni ricavate ai punti (a) e (b),
+si ricavi il circuito equivalente dei condensatore;
+
+(d) Si valutino i valori degli elementi circuitali per
+A=2em,d=0.50me=4,0=2.5(Sim)e
+
+V(t} = 10 cos (3 x 1036) (V).
+
+Figura 6.25 Condensatore a facce piane e parallele riempito
+con un materiale dielettrico con perdite (Problema 6.16).
+
+6.17 Il campo elettrico di un’onda elettromagnetica che si
+propaga nell’acqua marina ha variazione temporale
+descritta da E = ZE cos wt. Se la permittività dell’acqua è
+pari a 81eo e la sua conduttività è 4 (S/m), si ricavi il
+rapporto tra i moduli delle densità di corrente di
+conduzione e di spostamento per ciascuna delle seguenti
+frequenze:
+
+(a) | KHz;
+(b) 1 Mz;
+(©) 1 GHz;
+(d) 100 GHz.
+
+Paragrafi 6.9 e 6.10 Equazione di continuità e
+dispersione della carica
+
+6.18 All’istante ¢ = 0 la densità di carica po viene introdotta
+all’interno di un materiale con permittivita relativa er = 4.
+Se ali’istante ¢ = 1 ys Ja densità di carica si è dispersa fino
+a raggiungere un valore pari a 107? pyo, qual è la
+conducibilità del materiale?
+
+*6.19 Se la densità di corrente in un mezzo conduttore è descritta
+da
+
+Gey, 258) = (Re ~ BY? + 220) cost
+si ricavi la corrispondente distribuzione di carica
+P(X, ¥,% 2). °
+
+Propagazione delle
+onde piane
+
+Propagazione libera delle onde elettromagnetiche
+
+Si è visto nel Capitolo 6 che un campo elettrico E(t) variabile nel tempo produce un
+campo magnetico H(t) variabile nel tempo e, d’altra parte, un campo magnetico tem-
+po-variante produce un campo elettrico. Questo comportamento ciclico genera onde
+elettromagnetiche (EM) capaci di propagarsi nello spazio libero e nei mezzi materia-
+li. Quando la sua propagazione è guidata da strutture materiali, come una linea di tra-
+smissione, si dice che l’onda EM viaggia in un mezzo guidante. La superficie della
+terra e la ionosfera si possono considerare come confini paralleli di una struttura gui-
+dante naturale per la trasmissione radio a onde corte nella banda HF! (da 3 a 30
+MHz); a queste frequenze la ionosfera è un buon conduttore e permette quindi alle
+onde di propagarsi a zig-zag tra i due confini suddetti, come mostrato in Figura 7.1.
+Le onde EM si possono propagare anche nello spazio libero; le onde luminose emes-
+se dal sole e le trasmissioni radio tramite antenne ne sono un tipico esempio.
+
+Quando si è discussa la propagazione delle onde nelle linee di trasmissione nel
+Capitolo 2, si consideravano tensioni e correnti. Per questo tipo di circuiti, come
+quello mostrato in Figura 7.2, il generatore di tensione alternata eccita un’onda diret-
+ta che viaggia lungo la linea coassiale verso il carico e, a meno che il carico non sia
+opportunamente adattato alla linea, parte se non tutta l’onda incidente è riflessa verso
+il generatore. In qualsiasi punto z lungo la linea, la tensione totale istantanea v(z, #) è
+Ja somma delle onde diretta e riflessa, entrambe variabili in modo sinusoidale nel
+tempo. Alla differenza di potenziale tra il conduttore interno e quello esterno della li-
+nea coassiale è associato un campo elettrico radiale E presente nel dielettrico tra i
+conduttori, e poiché v(z, #) varia in modo sinusoidale nel tempo, altrettanto fa
+E(z, t). Inoltre, la corrente che fluisce nel conduttore interno induce un campo ma-
+gnetico azimutale H(z, t) nel materiale dielettrico che lo circonda. Questi campi ac-
+coppiati, E(z, :) e H(z, f), costituiscono delle onde elettromagnetiche. Pertanto, la
+propagazione delle onde in queste linee di trasmissione può essere descritta sia in ter-
+mini di tensioni attraverso la linea e correnti lungo i suoi conduttori, sia in termini di
+campi elettrici e magnetici nel materiale dielettrico tra i conduttori.
+
+1 Si veda la Figura 1.16.
+
+Figura 7.1
+
+La ionosfera
+superiormente e la
+superficie terrestre
+inferiormente formano
+‘una struttura guidante per
+la propagazione delle
+onde radio nella banda.
+HF.
+
+[PAG 145]
+274
+
+Figura 7.2
+
+Un’onda elettromagnetica-- -- -- -~
+
+guidata che viaggia in una
+linea di trasmissione
+costituita da un cavo
+coassiale è formata da un
+campo elettrico e un
+campo magnetico tempo-
+varianti che si propagano
+nel mezzo dielettrico tra il
+conduttore interno e
+quello esterno.
+
+Figura 7,3
+
+Le onde irradiate da una
+sorgente elettromagnetica,
+quale una lampadina o
+un’antenna, hanno fronti
+d'onda sferici (a).
+Ciononostante, il fronte
+d’onda in corrispondenza
+dell’apertura di un
+osservatore posto a grande
+distanza risulta
+approssimativamente
+piano (b), ./
+
+Capitolo 7 - Propagazione delle onde piane
+
+In questo capitolo l’attenzione sarà focalizzata sulla propagazione delle onde nello
+spazio libero. Si considereranno sia mezzi con perdite che senza. La propagazione
+delle onde in un mezzo senza perdite (dielettrico perfetto, come l’aria) è simile a quel-
+la in una linea di trasmissione senza perdite. In un mezzo con perdite caratterizzato
+da una conducibilità non nulla, come l’acqua, parte della potenza trasportata dall’on-
+da elettromagnetica viene convertita in calore, proprio come succede a un’onda che
+si propaga in una linea di trasmissione con perdite.
+
+Quando l’energia è emessa da una sorgente, come un’antenna, si espande esterna-
+mente alla sorgente sotto forma di onda sferica, come mostrato in Figura 7.3(a).
+Anche se l'antenna può irradiare più energia lungo alcune direzioni piuttosto che ai-
+tre, l’onda sferica viaggia alla stessa velocità in tutte le direzioni e pertanto si espan-
+de con velocità uniforme. A un osservatore posto molto lontano dalla sorgente, il
+fronte d'onda dell'onda sferica appare approssimativamente piano, come se facesse
+parte di un'onda piana uniforme, che presenta proprietà uniformi in tutti i punti del
+piano tangente al fronte d’onda [Figura 7.3(b)].
+
+Onda piana uniforme. i
+
+‘
+vr
+vi
+Agna Tone nt i
+radiante fi 74 14 Apertura
+ba _ 4 ' i 4
+a) | J“ Osservatore
+a ii
+ri
+ri
+rr
+si
+rad
+‘
+(a) Onda sferica (©) Approssimazione ad onda piana
+
+La propagazione delle onde piane può essere descritta in coordinate cartesiane in mo-
+do matematicamente più semplice di quanto si possa fare in coordinate sferiche, ne-
+cessarie per descrivere la propagazione delle onde sferiche. Perciò, anche se a rigore
+le onde piane uniformi non esistono, verranno comunque utilizzate in questo capitolo
+per comprendere il comportamento fisico delia propagazione delle onde in mezzi con
+e senza perdite. Successivamente, nel Capitolo 8, si analizzerà come le onde, sia pia-
+ne che sferiche, sono riflesse da e trasmesse attraverso superfici che separano mezzi
+diversi. Il processo di trasmissione e ricezione delle onde tramite le antenne sarà trat-
+tato nel Capitolo 9.
+
+7.4 Campi in regime armonico
+
+Nel caso tempo-variante, i campi elettrici e magnetici, E, D, B, e H, e le loro sorgen-
+ti, la densità di carica py e la densità di corrente J, sono tutte, in generale, funzione
+
+7.1 Campi in regime armonico
+
+delle coordinate spaziali (x, y, z) e della variabile temporale ¢. Se {fa loro variazione
+temporale è una funzione sinusoidale con frequenza angolare-w, -ciascuna di queste
+quantità può essere rappresentata da un fasore indipendente dal tempo e che dipende
+unicamente da (x, y, z). Perciò il fasore vettoriale E(x, y, z) corrispondente al campo
+istantaneo E(x, y, z; t) è definito come
+
+E(x, y, 2; 1) = Re [Ee yz) em], (11)
+
+e definizioni simili si applicano per gli altri campi e per p, e J. Per un mezzo lineare,
+isotropo e omogeneo, caratterizzato da una permittività elettrica e, una permeabilità
+magnetica 4 e una conducibilità 0, e ricordando che la derivazione nel dominio del
+tempo corrisponde alla moltiplicazione per jw nel dominio dei fasori, le equazioni di
+Maxwell date dalle equazioni (6.1)-(6.4) assumono la seguente forma nel dominio
+dei fasori:
+
+(7.2)
+(7.26)
+(7.2c)
+(7.24)
+
+dove si sono utilizzate le relazioni D = cE e B = pH. Questo insieme di equazioni
+definisce il punto di partenza per gli argomenti trattati in questo capitolo.
+
+7.1.1 Permittività complessa
+
+In un mezzo con conducibilità 0, la densità di corrente J è legata a E da J = oF. Di
+conseguenza la (7.2d) può essere riscritta come
+
+Vv x H=F+juck
+
+~ o\~ (7.3)
+= jwe)E = jufe-jT)E
+{o +jwe) ju(e 5
+Introducendo la permittivitd complessa €; definita come
+a oO
+8e-~j—, (74
+Eo Em] wu? (7.4)
+la (7.3) può essere riscritta come
+V x A= joe E. (7.5)
+
+La permittivita complessa e; data dalla (7.4) è spesso scritta in termini di parte reale
+é e parte immaginaria e”. Quindi,
+
+eee —jo Sel —je", (7.6)
+w
+con
+é =e, (7.7a)
+o
+a :
+=e (7.76)
+
+Per un mezzo senza perdite con o = 0, ne consegue che e” = Nee, =e =e.
+
+m5
+
+[PAG 146]
+276
+
+Capitolo 7 ~ Propagazione delle onde piane
+
+74.2 Equazione delle onde in un mezzo privo di cariche
+
+© Un mezzo è detto | privo di cariche se non contiene cariche ‘bere, cioè se e py = 20.
+Sostituendo la (7.2d) con la (7.5) e ponendo p, = 0 nella (7.2a), le equazioni di
+Maxwell per un mezzo privo di cariche libere diventano:
+
+V-E=0, (7.8a)
+VxE=~-jouH, (7.86)
+V-H=0, (7.80)
+
+Vxfi=jwe (784)
+
+Per descrivere la propagazione di un’onda EM in un mezzo privo di cariche è neces-
+sario ricavare le equazioni delle onde per E e H e poi risolverle per ottenere le
+espressioni esplicite di E e H in funzione delle variabili spaziali (x, y, z). A questo
+scopo, si inizia applicando il rotore a entrambi i membri della (7.8b), ottenendo
+
+Vx(VxÈ)= -juu(V x Hi). (7.9)
+Sostituendo la (7.8d) nella (7.9) si ha
+Vx(VxE)= ~jwu(jweeB) = w? peck. (7.10)
+
+Dalla (3.113), il rotore del rotore di 5 è dato da
+Vva(vxÈ)=v(v.E)-vÈ, (7.11)
+
+dove V?É è il Laplaciano di È che, in coordinate cartesiane, è dato da
+
+a_(P__P_P\x
+VE (Soper ii (7.12)
+Ricordando la (7.8a), ovvero V - B= 0, l'utilizzo della (7.11) nella (7.10) fornisce
+VE +uPpeE = 0, (7.13)
+
+che è chiamata equazione delle onde omogenea per È. Introducendo la costante di
+propagazione Y definita come
+
+Sw? pe, (7.14)
+
+Ja (7.13) può essere riscritta come
+
+WE-7E=0.. (7.15)
+
+Nel ricavare la (7.15) si è applicato l’operatore rotore a entrambi i membri della
+(7.8b) e poi si è usata la (7.8d) per ottenere un’equazione nella sola E. Procedendo in
+modo duale, ovvero applicando il rotore a entrambi i membri della (7.8d) e poi utiliz-
+
+zando la (7.8b), si ottiene l'equazione delle onde per H:
+
+VH-7H=0. (7.16)
+
+Dato che le equazioni delle onde per È e É hanno la stessa forma, anche le loro solu-
+zioni avranno la stessa forma.
+
+72 Propagazione: di onde piane in mezzi senza perdite
+
+1.2_ Propagazione di onde piane in mezzi senza perdite.
+
+Le proprietà di propagazione di un’onda elettromagnetica, quali la sua velocità di fa-
+se up € la lunghezza d’onda A, sono governate dalla frequenza angolare w e dai tre pa-
+rametri costitutivi del mezzo: €, xe o. Se il mezzo è non conduttivo (o = 0), Ponda
+non subisce alcuna attenuazione mentre viaggia attraverso il mezzo, e pertanto que-
+sto viene detto privo di perdite. Dalla Eq. (7.4), e, = € in un mezzo privo di perdite,
+nel qual caso la Eq. (7.14) diventa
+
+of = —u? pe. (7.17)
+
+Quando il mezzo è privo di perdite, si è soliti introdurre il numero d’onda k definito
+dalla
+
+k=wyfE. (7.18)
+—K e la Eq. (7.15) diventa
+VE +E =0. (7.19)
+
+Dalla Eq. (7.17), 7 =
+
+7.2.1 : Onde piane uniformi
+
+Dato il fasore campo elettrico in coordinate cartesiane
+
+E = 8, +98, +26, (7.20)
+dalla sostituzione della (7.12) nella (7.19) si ottiene
+er ® è
+(È oF’ fy) Ob + 98, +28) (721)
+
++P (38, + 96, + 7B) =0.
+
+Per soddisfare la (7.21), ogni componente vettoriale a primo membro deve essere
+
+nullo. Perciò,
+(+ Lib) =0, (7.22)
+
+ed espressioni simili si possono scrivere anche per £, ed £;.
+
+Un’ onda piana uniforme è è caratterizzata da campi elettrico e magnetico che hanno
+proprietà uniformi in tutti i punti su un piano infinito [Figura 7.3(b)]. Se questo è il
+piano x-y, allora E e H non variano con x e y. Pertanto OF, /Ox = 0 e d£,/0y=0
+nel qual caso la (7.22) si riduce a
+
+PE,
+
+de
+e simili espressioni si scrivono anche per È, He E, I componenti restanti di E e H
+sono nulli, cioè E, = H, = 0. Per dimostrare che E, = 0, si consideri il componente
+lungo z della (7.8d),
+
++E, =0, (7.23)
+
+,( 0H, OH.) og
+È (È - se) = ijweE,. (7.24)
+
+Poiché 08, | Ox = OH, /Oy = 0, ne segue che È, = 0. Un’analisi simile applicata al-
+la (7.8b) permette di mostrare che H, = 0. Questo significa che un’onda piana non
+
+m
+
+[PAG 147]
+278
+
+Figura 7.4
+
+Onda trasverso-
+elettromagnetica (TEM)
+che si propaga nella
+direzione k = 2. Per tutte
+le onde TEM k è parallelo
+aExH.
+
+Capitolo 7 — Propagazione delle onde piane
+
+ha componenti di campo elettrico 0 magnetico rivolti lungo la direzione di ‘propaga-
+
+. zione.
+
+Per la grandezza fasoriale È, la soluzione generale dell’equazione differenziale or-
+dinaria (7.23) è data da
+
+E,(2) = E37) +E @ = Ehe™ + Ege, (7.25)
+
+dove E¥, e Ex sono costanti da determinarsi a partire dalle condizioni al contomo.
+La soluzione data dalla (7.25) è formalmente simile alla soluzione del fasore di ten-
+sione (2) data dalla (2.44a) per linee di trasmissione senza perdite. Il primo termine
+della (7.25), contenente l’esponenziale negativo e, rappresenta un’onda di am-
+piezza E}; che viaggia nella direzione delle z positive, mentre il secondo termine, con
+eV, rappresenta un’onda di ampiezza Ex; che viaggia nella direzione delle z negati-
+ve. Si assuma ora che E abbia solo il componente lungo x, ovvero £, = 0 e che E,
+sia costituita dalla sola onda che viaggia nella direzione delle z positive, ovvero
+Ea = 0. Si ha
+
+(2) = 28 (2) = Eten. (7.26)
+Con È, =F, =0,si applichi la (7.8b) per ricavare il campo magnetico A):
+î y 2
+Vek d è 8
+xE=| > > >
+ox by de (727)
+Et) 0 0
+= ~joou(iit, + 9H, +21).
+
+Per un'onda piana che viaggia in direzione z,
+
+OE} (z)/Ox = OES (z)/Oy = 0.
+
+Perciò la (7.27) fornisce
+(7.28a)
+(7.28b)
+(7.28c)
+Inserendo la (7.26) nella (7.28b) si ottiene
+Ba = Lee = Hie, (7.29)
+
+7.2 Propagazione di onde piane in mezzi senza perdite
+
+dove Hye Vampiezza di AE) ed è data da
+k
+
+Hi =— Ei. 7.30
+30 Oy (7.30)
+Per un’onda in una linea di trasmissione che viaggia dalla sorgente verso il carico, le
+ampiezze dei fasori di tensione e di corrente, Vi e It, sono legate dall’impedenza ca-
+ratteristica della linea, Zy. Una relazione simile esiste anche tra i campi elettico e ma-
+gnetico dell’onda elettromagnetica. L’impedenza intrinseca di un mezzo senza perdi-
+te è definita come
+
+ave wh _ fe
+nie VE (731)
+
+ove si è utilizzata l’espressione di % data dalla (7.18). In base alla (7.31) si può riassu-
+mere l’espressione del campo elettromagnetico come segue:
+
+È) = 28 (2) = ghe, (7.32a)
+H(z) = yA. = yA em, (7.32b)
+
+I campi elettrico e magnetico sono tra loro perpendicolari e sono entrambi perpendi-
+colari alla direzione di propagazione dell’onda (Figura 7.4). Queste proprietà di dire-
+zione caratterizzano un’ onda trasverso-elettromagnetica (TEM). Altri esempi di onde
+TEM sono costituiti dalle onde cilindriche che viaggiano in una linea di trasmissione
+coassiale (E è rivolto lungo f, H lungo d e la direzione di propagazione lungo 2) e le
+onde sferiche irradiate da un’antenna.
+
+In generale, E}, può essere una quantità complessa composta da un’ampiezza |E%|
+e un’angolo di fase $*, ovvero
+
+EX = [Eblelt. (7.33)
+I campi elettrico e magnetico istantanei sono poi dati da
+E(z, )=Re [E@ et]
+
+= IE] cos(wt—e+¢*) (Vim), (7.34a)
+
+H(z, 1) = Re [ia ef]
+
+LES
+
+=jy cos(wt—iz+¢ot) (A/m). (7.34b)
+Poichè E(z, t) e H(z, t) presentano la stessa dipendenza funzionale daze t, sono det-
+ti in fase; quando l’ampiezza di uno dei campi è massima, lo è anche quella dell’al-
+tro. Questa proprietà di essere in fase è caratteristica delle onde che si propagano in
+mezzi senza perdite. La loro variazione nel tempo è definita dalla frequenza di oscil-
+lazione f = w/2x mentre le variazione spaziale è caratterizzata dalla lunghezza d’on-
+da A. Dalle proprietà del materiale in cui si propaga l’onda, descritte nel Paragrafo
+1.3, si deduce che la velocita di fase dell’ onda è data da
+
+w
+
+w i
+Ko wfe vue
+
+“= (m/s), (7.35)
+
+279
+
+[PAG 148]
+280
+
+Capitolo 7 - Propagazione delle onde piane
+
+e.la lunghezza d’onda è
+
+on _% (m). (7.36)
+
+le EaF
+
+Se il mezzo é lo spazio libero, e = € € = po, nel qual caso la velocità di fase up e
+l’impedenza intrinseca 7 data dalla (7.31) diventano
+
+1
+
+ty =O Ta” 3x 10° (m/s), (7.37)
+4 [Ho x
+n= 2 j= = 377 (Q) = 1207 (0), (7.38)
+
+dove c è la velocità della luce e n è detta impedenza intrinseca dello spazio libero.
+
+Esempio 7.1. Onda elettromagnetica piana in aria
+
+Questo esempio è analogo al problema ‘‘Onda acustica in acqua”’ descritto nell’Esem-
+pio 1.l.
+
+Il campo elettrico di un’onda piana a 1 MHz che viaggia nella direzione delle z positi-
+ve in aria è diretto lungo x. Se il valore di picco di E 5 1.27 we ed E è massimo
+per ¢ = 0 inz= 50 m, si ricavino le espressioni di E(z, t) e H(z, t) e se ne grafichi l’an-
+damento in funzione di z pert= 0.
+
+Soluzione Af = 1MHz, la lunghezza d’onda in aria è data da
+
+e il corrispondente numero d’onda è £ = (27/300) (rad/m). L'espressione generale per
+un campo elettrico diretto lungo x che viaggia nella direzione delle 2 positive è data dal-
+la (7.34a):
+
+E(z, t) = $]E}| cos (wt +)
+il 2az
+=k 6) +
+= £1.27 cos (ar x 10% 300 +¢ ) (avin).
+
+Ti campo E(z, 1) è massimo quando I’argomento del coseno è uguale a zero o multiplo
+di 2r. At= 0 inz = 50 m, questa condizione fornisce
+
+2rx 50. +
+30 +$*=0. oppure d* =
+Pertanto
+2n2. x
+=Î 6p ELE
+E(z, t)} = & 1.27. cos (2 x 10% 300 + 5) {mV/m),
+e dalla (7.34b) si ha:
+7 Fe DI
+H(z,
+at ae
+2az x
+=%$ bp. So
+=¥10cos (en 10% 300 + 5) (uA/m),
+
+dove si è utilizzata l’approssimazione ij = 1207 (Q).
+
+72 Propagazione di onde piane in mezzi senza perdite
+
+Pert=0,
+see “EG, 0) = #12: cos - 3) vi),
+2az n
+H(z, 0) = 910008 (455 -3) (pAf)
+
+I grafici di E(z, 0) e H(z, 0) sono riportati in Figura 7.5 in funzione diz.
+
+7.2.2 Relazione generale tra E eH
+
+Si può mostrare che, per le onde piani uniformi che viaggiano lungo una direzione ar-
+bitraria definita dal versore È, il fasore campo magnetico H è legato al fasore campo
+elettrico E da
+
+H= =i x, (7.39a)
+
+E = -nk x Hi. (7.39)
+
+Il prodotto vettoriale può essere descritto tramite la seguente regola della mano de-
+stra: quando si ruotano le quattro dita della mano destra dalla direzione di E a quel-
+la di I, il pollice punta verso la direzione di propagazione dell'onda, k. Le relazioni
+date dalle (7.39a e b) sono valide non solo per i mezzi senza perdite, ma anche per
+quelli con perdite. Come si vedrà più tardi nel Paragrafo 7.4, l’espressione di 7 in un
+mezzo con perdite è differente da quella data dalla (7.31). Fintantoché l’espressione
+di 7 è appropriata per il mezzo in cui si sta propagando l’onda, valgono sempre le re-
+lazioni date dalle (7.39a e b).
+
+Si applichi la (7.39a) all’onda data dalia (7.32a). La direzione di propagazione è
+k = Ze E = ££ (2). Pertanto,
+
+xE= je x DET) = see o ) (7.40)
+
+i=
+
+sin
+
+Bi
+
+Figura 7.5
+
+Andamento spaziale di E e
+Hat = 0perl’onda piana
+dell’Esempio 7.1.
+
+[PAG 149]
+SE
+
+$
+
+282
+
+Figura 7.6
+
+L'onda (E, H) è
+equivalente alla somma di
+due onde, una delle quali
+con campi (£4, H*)e
+l’altra con (E? > H }
+entrambe che si
+propagano in direzione
+Az.
+
+Capitolo 7 — Propagazione delle onde piane
+
+che è lo stesso risultato dato dalla (7.32b). Per un’onda che viaggia nella direzione
+
+; delle z negative con un campo elettrico dato da
+
+E=22-(2) = £8, (7.41)
+applicando la (7.39a) si ottiene
+~ 1 ne LE ER y
+H= (2x9) E@) =-9 e de (7.42)
+
+Perciò, in questo caso, H punta verso le y negative.
+In generale, un’onda piana uniforme che viaggia in direzione delle z positive pud
+avere sia il componente lungo x che quello lungo y, nel qual caso È è dato da
+
+E=s8@) +50), (7.43a)
+e il campo magnetico associato è
+fi=if +38. (7.43b)
+
+Applicando la (7.39a) si ha
+
+=—ixE=
+n n n (7.44)
+Uguagliando la (7.43b) alla (7.44) si ottiene
+~ MO) ~ i+
+H@=-42~, He= fa . (7.45)
+
+Questi risultati sono illustrati nella Figura 7.6. L’onda può essere considerata la som-
+ma di due onde, una con componenti (E*, H;}) e l’altra con componenti (E+, H+).
+In generale, un’onda TEM può avere il campo elettrico rivolto in qualsiasi direzione
+nel piano ortogonale alla direzione di propagazione dell’onda e il campo magnetico
+associato giace nello stesso piano con direzione definita dalla (7.392).
+
+Domande di verifica
+
+74 Che cosa è un'onda piana uniforme? Se ne descrivano le proprietà, sia in termini
+matematici che fisici. Sotto quali condizioni è appropriato trattare un’onda sferi-
+ca come un’onda piana?
+
+7.3 Polarizzazione delle onde
+
+7.2 Dato che È e H sono governate da equazioni delle onde formalmente simili
+[(7.15) e (7.16)], ne deriva che E = H? Si spieghi.
+
+7.3 Se un’onda TEM sta viaggiando nella direzione del versore 7, può il suo campo
+elettrico avere componenti lungo &, j e 2? Si spieghi.
+
+Esercizio 7.1 Un’onda piana uniforme a 10 MHz sta viaggiando in un mezzo non ma-
+gnetico con ps = po € €; = 9. Si trovi (a) la velocità di fase, (b) il numero d’onda, (c) la
+lunghezza d’onda nel mezzo e (d) l’impedenza intrinseca del mezzo.
+
+SOLUZIONE {a} up = 1 x 10% m/s, (b) # = 0.27 rad/m, (c) A = 10 m, (d) 9 = 125.672.
+
+Esercizio 7.2 Il fasore campo elettrico di un’onda piana uniforme che viaggia in un
+mezzo senza perdite con impedenza intrinseca di 188.5 Q è dato da E = 2 10 e/" (mV/
+mì). Si determini (a) il fasore del campo magnetico associato e (b) l’espressione del cam-
+po istantaneo E(y, t) se il mezzo è non magnetico (4 = so).
+
+SoLuzione (a) H = 253e% (wA/m), (6) E(y, 1) = 210cos(6m x 10% — 477) (mV/m).
+Esercizio 7.3 Se il fasore del campo magnetico di un’onda piana che viaggia in un mez-
+20 con impedenza intrinseca 7 = 100 9 è dato da H = ($10 + 220)e7** (mA/m), si rica-
+vi il fasore del campo elettrico associato.
+
+Sotuzione È = (-î+32)e?*®* (V/m).
+
+Esercizio 7.4 Si ripeta l'esercizio precedente per un campo magnetico dato da
+H = $(10e7* — 20e/**) (mA/m).
+
+SoLuzione È = ~2(e7* + 2e/*) (V/m).
+
+7.8. Polarizzazione delle onde
+
+La polarizzazione di un’onda piana uniforme caratterizza il luogo geometrico de-
+scritto dalla punta del vettore E nel piano ortogonale alla direzione di propagazio-
+ne, in un dato punto dello spazio in funzione del tempo. Nel caso più generale, il luo-
+go dei punti di E è un’ellisse e l’onda è detta polarizzata ellitticamente. In certe con-
+dizioni, l’ellisse può degenerare in un cerchio o in un segmento di linea retta e, in
+questi casi, lo stato di polarizzazione è detto rispettivamente circolare o lineare.
+Come mostrato nel Paragrafo 7.2, i componenti lungo z dei campi elettrici e magneti-
+ci di un’onda piana che si propaga lungo l’asse z sono entrambi nulli. Perciò il fasore
+del campo elettrico E(z) è costituito dal componente lungo x, E;(z), e dal componen-
+te lungo y, £,(z):
+
+E() = xE,@) + 92,0), (7.46)
+
+con i
+E,(2) = Ewe™, (7.47a)
+B,@) = Boe, (7.476)
+
+dove Ex € Ey sono le ampiezze complesse di £,(z) e £,(2), rispettivamente. Per
+semplicità si è tralasciato il segno più all’apice: il segno meno in e* è sufficiente
+per ricordare che l’onda si propaga nella direzione positiva dell’asse z.
+
+Le due ampiezze E,o e Eyo sono, in generale, quantità complesse entrambe caratte-
+rizzate da modulo e fase. La fase di un’onda è definita rispetto a una condizione di ri-
+
+283
+
+[PAG 150]
+va Za
+
+CS
+
+284
+
+Capitolo 7 ~ Propagazione delle onde piane
+
+ferimento comez = 0¢7=00 qualsiasi altra combinazione diz e £. La ‘polarizzazio-
+
+ne di un'onda dipende dalla fase relativa di Ey rispetto a Ex, ma non dai valori.as-—
