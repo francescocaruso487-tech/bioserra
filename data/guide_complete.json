@@ -1,6 +1,7 @@
 {
-  "lastUpdate": "2026-06-27",
-  "total": 10,
+  "lastUpdate": "2026-06-29T08:39:36.995688+00:00",
+  "versione": "2.0",
+  "testi_usati": 255,
   "guide": [
     {
       "fase": "germinazione",
@@ -32,7 +33,8 @@
       ],
       "fasi_app": [
         "germinazione"
-      ]
+      ],
+      "data_aggiornamento": "2026-06-29"
     },
     {
       "fase": "vegetazione",
@@ -64,7 +66,8 @@
       ],
       "fasi_app": [
         "vegetazione"
-      ]
+      ],
+      "data_aggiornamento": "2026-06-29"
     },
     {
       "fase": "fioritura",
@@ -96,39 +99,49 @@
       ],
       "fasi_app": [
         "fioritura"
-      ]
+      ],
+      "data_aggiornamento": "2026-06-29"
     },
     {
-      "fase": "harvest",
-      "categoria": "fase",
-      "titolo": "Raccolta (Taglio) — Guida Pratica Outdoor Caserta",
-      "quando": "Giugno-Dicembre (varia per tipo)",
-      "contenuto_completo": "La raccolta outdoor a Caserta, con clima mediterraneo e Living Soil, richiede attenzione ai tempi e alle tecniche per massimizzare qualità e resa. Per le autofiorenti (Epsilon F1, Milky Way F1), il taglio avviene in 8-10 settimane dal germoglio, mentre le fotoperiodiche (Astro Lemonade, Cosmic Cheddar) si raccolgono in base al fotoperiodo (12/12 ore di buio per 6-8 settimane). Monitora la maturazione dei tricomi con una lente 60x: opachi per THC, lattiginosi per equilibrio, trasparenti per CBD. In Living Soil, evita stress idrico 3-4 giorni prima del taglio per concentrare terpeni. Le tecniche di elettrocultura attive (Spirale in Rame, Circuito di Lakhovsky) possono potenziare la resistenza post-raccolta, mentre l’Acqua Magnetizzata riduce lo shock da taglio. Lavora nelle ore più fresche (mattina presto) per preservare i cannabinoidi. Dopo il taglio, appendi i rami in ambiente buio, umido (60-70%) e ventilato (15-20°C) per 7-14 giorni, evitando muffe.",
+      "fase": "pre_raccolta",
+      "titolo": "Guida Pratica alla Fase Pre-Raccolta in Living Soil Outdoor a Caserta: Ottimizzazione, Timing e Tecniche Avanzate",
+      "contenuto_completo": "La fase pre-raccolta rappresenta il momento cruciale in cui la pianta di cannabis outdoor, coltivata in Living Soil a Caserta (41°N, clima mediterraneo), conclude il suo ciclo vegetativo e si prepara alla fioritura finale. In questa fase, che tipicamente si verifica tra fine agosto e metà settembre per le varietà autofiorenti o tardive, la pianta concentra le sue energie nella produzione di resina e terpeni, mentre il suolo deve mantenere un equilibrio dinamico tra umidità, aerazione e attività microbica. Il Living Soil, ricco di micorrize e batteri benefici, richiede un monitoraggio costante del pH (idealmente tra 6.2 e 6.8) e dell’umidità (40-60%), evitando stress idrico che potrebbe compromettere la qualità finale del raccolto. Le tecniche di elettrocultura, come l’uso di spirali di rame o acqua magnetizzata, possono essere integrate per stimolare la vitalità del suolo e la resistenza delle piante agli stress ambientali tipici della Campania, come le brezze saline o le escursioni termiche notturne. La biodinamica, invece, suggerisce di sincronizzare le operazioni con i cicli lunari, preferendo la raccolta in fase di luna calante per favorire la concentrazione dei principi attivi. Un errore comune è interrompere prematuramente l’irrigazione, che deve invece essere ridotta gradualmente per evitare shock alle radici. Inoltre, è fondamentale evitare l’uso di fertilizzanti sintetici in questa fase, poiché potrebbero alterare il profilo aromatico e la potenza del prodotto finale. La valutazione dei trichomi con una lente di ingrandimento (10x) e l’osservazione dei pistilli (80% scuri) sono indicatori chiave per determinare il timing ottimale, mentre la tecnica del \"flushing\" con acqua pura nei 7-10 giorni precedenti la raccolta aiuta a eliminare eventuali eccessi di nutrienti dal suolo, garantendo un prodotto più pulito e aromatico.",
       "punti_chiave": [
-        "Taglia autofiorenti a 8-10 settimane, fotoperiodiche dopo 6-8 settimane di 12/12 ore di buio",
-        "Monitora tricomi con lente 60x: opachi = THC, lattiginosi = equilibrio, trasparenti = CBD",
-        "Evita stress idrico 3-4 giorni prima del taglio per concentrare terpeni",
-        "Lavora nelle ore più fresche (mattina presto) per preservare cannabinoidi",
-        "Appendi rami in ambiente buio, umido (60-70%) e ventilato (15-20°C) per 7-14 giorni"
+        "Monitorare costantemente il pH del Living Soil (6.2-6.8) e l’umidità (40-60%) per evitare stress alle piante e mantenere l’attività microbica ottimale.",
+        "Valutare la maturità dei trichomi (bianchi = THC massimo, ambrati = effetto rilassante) e il colore dei pistilli (80% scuri) per determinare il timing di raccolta, considerando la varietà (sativa più lenta, indica più rapida).",
+        "Integrare tecniche di elettrocultura come spirali di rame o acqua magnetizzata per stimolare la vitalità del suolo e la resistenza delle piante agli stress ambientali tipici di Caserta.",
+        "Applicare la tecnica del flushing con acqua pura nei 7-10 giorni precedenti la raccolta per eliminare eccessi di nutrienti e migliorare la qualità del prodotto finale.",
+        "Sincronizzare le operazioni con i cicli lunari (raccolta in luna calante) e evitare l’uso di fertilizzanti sintetici per preservare il profilo aromatico e la potenza della cannabis."
       ],
       "errori_comuni": [
-        "Tagliare troppo presto o troppo tardi, compromettendo potenza e sapore",
-        "Esposizione a luce durante l’essiccazione, degradando cannabinoidi",
-        "Ambiente troppo umido o ventilato durante l’essiccazione, favorendo muffe",
-        "Non monitorare la maturazione dei tricomi, rischiando raccolte premature o tardive"
+        "Interrompere prematuramente l’irrigazione: può causare stress idrico alle piante, compromettendo la qualità del raccolto. Ridurre gradualmente l’acqua invece.",
+        "Utilizzare fertilizzanti sintetici in fase pre-raccolta: altera il profilo aromatico e la potenza della cannabis, rendendo il prodotto meno pregiato.",
+        "Ignorare i segnali visivi dei trichomi e dei pistilli: raccogliere troppo presto o troppo tardi riduce la qualità e la potenza del prodotto finale."
+      ],
+      "tecniche_elettrocultura": [
+        "Applicare spirali di rame intorno alle piante (distanza di 30-50 cm dal fusto) per stimolare la vitalità del suolo e migliorare la resistenza agli stress ambientali. Le spirali devono essere posizionate a inizio fioritura e rimosse dopo la raccolta."
+      ],
+      "tecniche_biodinamica": [
+        "Sincronizzare la raccolta con la fase di luna calante per favorire la concentrazione dei principi attivi. Inoltre, utilizzare preparati biodinamici come il cornoletame (500) per rinforzare la vitalità del suolo nelle settimane precedenti la raccolta."
+      ],
+      "timeline_caserta": "La fase pre-raccolta si manifesta tipicamente tra fine agosto e metà settembre per le varietà autofiorenti o tardive, mentre per le varietà precoci può iniziare già a metà agosto. Le condizioni climatiche di Caserta, con estati calde e asciutte e autunni miti, permettono una raccolta prolungata fino a ottobre, a patto di monitorare attentamente l’umidità e prevenire muffe.",
+      "indicatori_visivi": [
+        "Trichomi: valutare con una lente di ingrandimento (10x). Trichomi bianchi indicano THC massimo, mentre quelli ambrati suggeriscono un effetto più rilassante.",
+        "Pistilli: almeno l’80% dei pistilli deve essere scuro per considerare la pianta matura."
       ],
       "tecniche_pdf": [
-        "Circuito di Lakhovsky",
-        "Acqua Magnetizzata",
-        "Spirale in Rame"
+        "Guida Fusa: Raccolta",
+        "Quando raccogliere le piante di cannabis",
+        "Come raccogliere le piante di cannabis",
+        "Il-Grande-Grimorio-Una-Raccolta-di-5-Lib"
       ],
-      "esperimenti_pdf": [
-        "Confrontare la resa e la qualità di raccolto tra piante trattate con Circuito di Lakhovsky vs piante controllo, misurando peso secco e analisi terpenica",
-        "Testare l’effetto dell’Acqua Magnetizzata sulla velocità di essiccazione e sulla conservazione dei cannabinoidi in condizioni di umidità variabile"
+      "pdf_fonti": [
+        "fuso_raccolta",
+        "web_zamn_503-quando-raccogliere-le-piante-di-cannabis",
+        "web_zamn_324-come-raccogliere-cannabis",
+        "pdf_32"
       ],
-      "fasi_app": [
-        "taglio"
-      ]
+      "data_aggiornamento": "2026-06-29"
     },
     {
       "fase": "essiccazione",
@@ -160,105 +173,124 @@
       ],
       "fasi_app": [
         "essiccazione"
-      ]
+      ],
+      "data_aggiornamento": "2026-06-29"
     },
     {
-      "fase": "curing",
-      "categoria": "fase",
-      "titolo": "Concia (Curing) — Guida Pratica Outdoor Caserta",
-      "quando": "20 giorni dopo essiccazione",
-      "contenuto_completo": "La fase di concia (curing) è cruciale per esaltare aromi, sapori e qualità delle cime, soprattutto in coltivazione outdoor a Caserta con clima mediterraneo. Dopo 20 giorni di essiccazione in ambiente controllato (18-22°C, 50-60% umidità), procedi con la concia in barattoli di vetro scuro, riempiendo per ¾ e lasciando spazio per l’ossigeno. Per le autofiorenti (Epsilon F1, Milky Way F1, ecc.), riduci la durata a 10-14 giorni per evitare perdita di terpeni, mentre le fotoperiodiche (Astro Lemonade, Royal Gorilla) possono beneficiare di 3-4 settimane. Durante il curing, utilizza tecniche di elettrocultura attiva per potenziare la vitalità delle cime: l’Acqua Magnetizzata (a 0.5-1 mT) può essere nebulizzata sulle cime per 2-3 minuti ogni 3 giorni, mentre il Circuito di Lakhovsky, posizionato vicino ai barattoli, emette frequenze benefiche per la stabilizzazione molecolare. Monitora umidità interna con igrometro digitale (obiettivo: 55-60%) e apri i barattoli 1-2 volte al giorno per 10-15 minuti per evitare muffe. Aggiungi 1-2 cucchiaini di compost maturo o micorrize (Rhizophagus intraradices) nel barattolo per arricchire il profilo microbiologico. Infine, conserva i barattoli in un armadio oscurato a temperatura costante (18-20°C) per preservare i cannabinoidi termolabili.",
+      "fase": "concia",
+      "titolo": "Guida pratica alla concia delle cime di cannabis in Living Soil outdoor a Caserta: tecniche biodinamiche ed elettrocultura per massima qualità",
+      "contenuto_completo": "La fase di concia rappresenta il passaggio cruciale tra l’essiccazione e la conservazione finale delle cime di cannabis, un processo che, se eseguito correttamente, può esaltare aroma, sapore e potenza delle infiorescenze. In un contesto di coltivazione outdoor in Living Soil a Caserta (41°N, clima mediterraneo), questa fase assume un’importanza ancora maggiore perché il substrato ricco di microrganismi vivi (funghi micorrizici, batteri benefici, lombrichi) continua a interagire con le cime anche dopo la raccolta. Il Living Soil, infatti, non è solo un mezzo di coltivazione, ma un ecosistema dinamico che, se gestito con attenzione, può migliorare ulteriormente la qualità delle cime durante la concia. \n\nA Caserta, con le sue estati calde e umide e gli autunni miti, la concia deve essere pianificata con precisione per evitare muffe o degradazione dei terpeni. Dopo la raccolta, le piante vengono tagliate e appese a testa in giù in un ambiente controllato (18-21°C, 50-60% di umidità) per 7-14 giorni, fino a quando i gambi si spezzano con un suono secco. A questo punto, le cime vengono potate (rimuovendo le foglie grandi) e poste in barattoli di vetro ermetici per la concia vera e propria. \n\nDurante la concia, che può durare da 2 a 4 settimane, è fondamentale monitorare l’umidità interna dei barattoli (evitando condensa) e praticare il 'burping' (apertura quotidiana per 10-15 minuti) per permettere lo scambio gassoso. In un sistema Living Soil, la concia può essere ulteriormente arricchita dall’uso di compost tea o micorrize liquide, che vengono spruzzati sulle cime prima di chiuderle nei barattoli. Questo approccio non solo preserva i terpeni, ma può anche stimolare una seconda fioritura microbica, migliorando la qualità finale. \n\nPer i coltivatori di Caserta, la concia rappresenta anche un’opportunità per integrare tecniche di elettrocultura e biodinamica. Ad esempio, l’uso di elettrocoltura con impulsi a bassa frequenza (50-100 Hz) durante la fase di essiccazione può accelerare la degradazione delle clorofille e migliorare la stabilità dei cannabinoidi. Allo stesso modo, la biodinamica suggerisce di conciare le cime in giorni di radice o fiore secondo il calendario lunare, quando l’energia della pianta è più favorevole alla conservazione delle proprietà aromatiche. \n\nIn sintesi, la concia in Living Soil outdoor a Caserta non è un semplice processo di asciugatura, ma un’arte che combina scienza del suolo, tecniche di conservazione e pratiche olistiche per ottenere cime di cannabis di qualità superiore, pronte per essere gustate o trasformate.",
       "punti_chiave": [
-        "Utilizza barattoli di vetro scuro da 500ml-1L, riempiendo per ¾ e lasciando spazio per l’ossigeno.",
-        "Durata differenziata: 10-14 giorni per autofiorenti, 3-4 settimane per fotoperiodiche.",
-        "Nebulizza Acqua Magnetizzata (0.5-1 mT) sulle cime ogni 3 giorni per potenziare terpeni.",
-        "Posiziona un Circuito di Lakhovsky vicino ai barattoli per frequenze stabilizzanti.",
-        "Aggiungi compost maturo o micorrize nel barattolo per arricchire il profilo microbiologico."
+        "Monitorare umidità (50-60%) e temperatura (18-21°C) durante l’essiccazione per evitare muffe e preservare terpeni, come indicato da Royal Queen Seeds e Zamnesia.",
+        "Utilizzare barattoli di vetro per la concia (burping) per 2-4 settimane, aprendo quotidianamente per 10-15 minuti per regolare l’umidità interna e prevenire condensa.",
+        "Integrare il Living Soil con compost tea o micorrize liquide durante la concia per stimolare una seconda fioritura microbica e migliorare la qualità delle cime.",
+        "Applicare tecniche di elettrocultura con impulsi a bassa frequenza (50-100 Hz) durante l’essiccazione per accelerare la degradazione delle clorofille e stabilizzare i cannabinoidi.",
+        "Seguire il calendario biodinamico per la concia, scegliendo giorni di radice o fiore per massimizzare la conservazione delle proprietà aromatiche delle cime."
       ],
       "errori_comuni": [
-        "Essiccare troppo velocemente con ventilatori diretti sulle cime, causando perdita di terpeni.",
-        "Superare il 60% di umidità nei barattoli, favorendo muffe e batteri.",
-        "Esporre i barattoli a luce diretta o sbalzi termici (evitare finestre o balconi).",
-        "Saltare la fase di curing per fretta, ottenendo cime aspre e poco aromatiche."
+        "Essiccare le cime in ambienti con umidità superiore al 60% o temperatura superiore ai 24°C, favorendo la formazione di muffe e la degradazione dei terpeni.",
+        "Non praticare il 'burping' durante la concia, causando accumulo di umidità nei barattoli e sviluppo di muffe o odori sgradevoli.",
+        "Utilizzare barattoli di plastica o contenitori non ermetici, che non permettono un controllo preciso dell’umidità e dell’ossigeno, compromettendo la qualità finale."
+      ],
+      "tecniche_elettrocultura": [
+        "Collegare elettrodi a bassa tensione (5-12V) a una griglia metallica posta sopra le cime appese durante l’essiccazione. Applicare impulsi di 50-100 Hz per 10 minuti al giorno per accelerare la degradazione delle clorofille e migliorare la stabilità dei cannabinoidi. Monitorare la risposta delle piante per evitare stress."
+      ],
+      "tecniche_biodinamica": [
+        "Conciare le cime in giorni di radice o fiore secondo il calendario biodinamico, quando l’energia della pianta è più favorevole alla conservazione delle proprietà aromatiche. Utilizzare preparati biodinamici (es. 500 o 501) spruzzati sulle cime prima di chiuderle nei barattoli per potenziare l’effetto."
+      ],
+      "timeline_caserta": "A Caserta, la fase di concia si manifesta tipicamente tra fine settembre e metà ottobre, quando le temperature notturne scendono sotto i 20°C e l’umidità relativa si stabilizza tra il 50% e il 70%. Le cime raccolte a fine settembre possono essere essiccate e concimate entro i primi 10 giorni di ottobre, sfruttando le condizioni climatiche ideali dell’autunno mediterraneo.",
+      "indicatori_visivi": [
+        "Le cime si spezzano con un suono secco quando piegate, segnale che l’essiccazione è completa e si può procedere alla concia.",
+        "La presenza di condensa sulle pareti interne dei barattoli durante la concia indica umidità eccessiva, richiedendo un prolungato 'burping' o l’aggiunta di materiale assorbente (es. riso o silica gel)."
       ],
       "tecniche_pdf": [
-        "Acqua Magnetizzata (0.5-1 mT, nebulizzata sulle cime ogni 3 giorni)",
-        "Circuito di Lakhovsky (posizionato vicino ai barattoli per frequenze stabilizzanti)",
-        "Micorrize (Rhizophagus intraradices, aggiunte nel barattolo per arricchimento microbiologico)"
+        "Guida Fusa: Essiccazione Concia",
+        "Come essiccare e conciare la cannabis: Consigli professionali per cime perfette",
+        "Come raccogliere le piante di cannabis",
+        "Come conciare la vostra cannabis"
       ],
-      "esperimenti_pdf": [
-        "Confrontare l’effetto dell’Acqua Magnetizzata vs acqua normale sul profilo terpenico dopo 14 giorni di curing (analisi olfattiva e GC-MS).",
-        "Testare l’impatto del Circuito di Lakhovsky vs assenza di frequenze sulla stabilità dei cannabinoidi (THC/CBD) tramite cromatografia su campioni prelevati settimanalmente."
+      "pdf_fonti": [
+        "fuso_essiccazione_concia",
+        "web_rqs_blog-consigli-su-come-essiccare-e-conciare-le-cime-di-cannabis-fresche-n682",
+        "web_zamn_324-come-raccogliere-cannabis",
+        "web_zamn_328-come-conciare-cannabis"
       ],
-      "fasi_app": [
-        "concia"
-      ]
+      "data_aggiornamento": "2026-06-29"
     },
     {
-      "fase": "living_soil",
-      "categoria": "tecnica",
-      "titolo": "Gestione Living Soil — Guida Pratica Outdoor Caserta",
-      "quando": "Tutto il ciclo",
-      "contenuto_completo": "In una serra outdoor a Caserta (clima mediterraneo con estati calde e inverni miti), la gestione del Living Soil richiede un approccio olistico che integri nutrizione bilanciata, umidità costante e stimolazione elettromagnetica. Per le autofiorenti (Epsilon F1, Milky Way F1, ecc.), priorità a substrati ricchi di micorrize e materia organica (30-40% compost maturo, 20% fibra di cocco, 10% perlite). Per le fotoperiodiche (Astro Lemonade, Royal Gorilla, ecc.), aggiungere 15% biochar per migliorare la struttura e la ritenzione idrica. L’elettrocultura attiva (acqua magnetizzata, spirali in rame, circuito di Lakhovsky) potenzia la fotosintesi e la resistenza agli stress termici tipici dell’area. Monitorare pH (6.2-6.8) e CE (1.2-1.8 mS/cm) settimanalmente, regolando con tè di compost o soluzioni di alghe. In estate, ombreggiatura al 30% e pacciamatura con paglia per ridurre l’evaporazione. In inverno, proteggere il suolo con tessuto non tessuto e applicare micorrize per stimolare l’attività radicale. Le autofiorenti beneficiano di applicazioni settimanali di tè di compost aerato (1:10) per accelerare la crescita vegetativa, mentre le fotoperiodiche richiedono un boost di fosforo (farina d’ossa) durante la fioritura. L’antenna di terra e gli elettrodi Fe-Cu vanno posizionati a 30 cm di profondità per ottimizzare la conducibilità del suolo.",
+      "fase": "suolo",
+      "titolo": "Guida Suolo",
+      "contenuto_completo": "Guida per la fase suolo. Consultare i manuali per dettagli.",
       "punti_chiave": [
-        "Mantenere umidità costante (40-60%) con irrigazione a goccia e pacciamatura per contrastare l’aridità estiva tipica di Caserta.",
-        "Applicare tè di compost ogni 7-10 giorni per arricchire il suolo di microrganismi benefici e nutrienti prontamente assimilabili.",
-        "Utilizzare spirali in rame e circuito di Lakhovsky per stimolare la crescita radicale e la fotosintesi, soprattutto durante i picchi termici.",
-        "Monitorare pH e CE settimanalmente, correggendo con soluzioni naturali (aceto di mele per abbassare pH, bicarbonato per alzarlo).",
-        "Proteggere il suolo in inverno con tessuto non tessuto e applicare micorrize per prevenire stress da freddo."
+        "Monitoraggio costante",
+        "Rispetta il suolo vivente"
       ],
       "errori_comuni": [
-        "Sovra-irrigare in estate, causando asfissia radicale e marciumi (evitare ristagni idrici anche in serra).",
-        "Usare fertilizzanti chimici di sintesi che uccidono la microbiologia del Living Soil.",
-        "Ignorare il calendario lunare per potatura e raccolta, perdendo opportunità di sincronizzare le fasi fenologiche.",
-        "Non bilanciare correttamente il rapporto C/N nel compost, portando a carenze o eccessi di azoto."
+        "Eccesso di intervento"
       ],
-      "tecniche_pdf": [
-        "Acqua Magnetizzata",
-        "Spirale in Rame",
-        "Tè di Compost"
+      "tecniche_elettrocultura": [
+        "Mantieni circuito Lakhovsky attivo"
       ],
-      "esperimenti_pdf": [
-        "Confrontare la crescita di piante trattate con acqua magnetizzata vs. acqua normale, misurando biomassa e resa a fine ciclo.",
-        "Testare l’efficacia del circuito di Lakhovsky su autofiorenti vs. fotoperiodiche, valutando la risposta in termini di resistenza a patogeni e produzione di terpeni."
+      "tecniche_biodinamica": [
+        "Segui calendario lunare"
       ],
-      "fasi_app": [
-        "vegetazione",
-        "fioritura"
-      ]
+      "timeline_caserta": "Variabile secondo stagione",
+      "indicatori_visivi": [
+        "Osservazione diretta"
+      ],
+      "tecniche_pdf": [],
+      "pdf_fonti": [],
+      "data_aggiornamento": "2026-06-29"
     },
     {
-      "fase": "nutrizione",
-      "categoria": "tecnica",
-      "titolo": "Nutrizione Organica — Guida Pratica Outdoor Caserta",
-      "quando": "Vegetazione e fioritura",
-      "contenuto_completo": "In un sistema Living Soil outdoor a Caserta (clima mediterraneo con estati calde e inverni miti), la nutrizione organica durante vegetazione e fioritura richiede un approccio bilanciato, adattato alle autofiorenti (Epsilon F1, Milky Way F1, ecc.) e fotoperiodiche (Astro Lemonade, Royal Gorilla, ecc.). Iniziamo con un substrato ricco di materia organica: 50% terra di campo setacciata, 30% compost maturo (2-3 anni), 10% perlite/vermiculite e 10% biochar. Durante la vegetazione (marzo-maggio), somministriamo ogni 10-15 giorni un tè di compost aerato (1:10) arricchito con alghe brune (Ascophyllum nodosum) per stimolare la crescita radicale e la resistenza allo stress idrico. In fioritura (giugno-luglio), riduciamo l’azoto e aumentiamo fosforo e potassio con emulsione di pesce (1:10) e cenere di legna setacciata (ricca in K e microelementi). Le tecniche di elettrocultura attiva, come l’Acqua Magnetizzata (flussi di 1-2 mT) o gli Elettrodi Fe-Cu (interrati a 20 cm), migliorano l’assorbimento dei nutrienti e la simbiosi micorrizica, fondamentale per piante in Living Soil. Monitoriamo il pH (6.0-6.5) e la CE (1.2-1.8 mS/cm) con strumenti portatili, evitando eccessi di sali che inibiscono i microrganismi benefici.",
+      "fase": "elettrocultura",
+      "titolo": "Guida Elettrocultura",
+      "contenuto_completo": "Guida per la fase elettrocultura. Consultare i manuali per dettagli.",
       "punti_chiave": [
-        "Usare compost maturo (2-3 anni) per evitare fitotossicità e garantire nutrienti a lento rilascio",
-        "Alternare tè di compost (vegetazione) ed emulsione di pesce (fioritura) per un apporto equilibrato di NPK",
-        "Integrare biochar (5-10% del substrato) per migliorare la ritenzione idrica e la vita microbica",
-        "Applicare Acqua Magnetizzata (1-2 mT) per aumentare la solubilità dei nutrienti e la resistenza delle piante",
-        "Controllare pH (6.0-6.5) e CE (1.2-1.8 mS/cm) con test regolari per evitare squilibri nutrizionali"
+        "Monitoraggio costante",
+        "Rispetta il suolo vivente"
       ],
       "errori_comuni": [
-        "Sovradosare fertilizzanti organici (es. emulsione di pesce) causando bruciature radicali e blocco della fioritura",
-        "Ignorare il pH del substrato, portando a carenze di microelementi (es. Fe, Mn) anche con nutrienti presenti",
-        "Utilizzare compost fresco (meno di 1 anno) che può competere con le piante per l’azoto",
-        "Non monitorare la CE, rischiando accumuli di sali che danneggiano la rizosfera"
+        "Eccesso di intervento"
       ],
-      "tecniche_pdf": [
-        "Acqua Magnetizzata (flussi di 1-2 mT per irrigazione)",
-        "Elettrodi Fe-Cu (interrati a 20 cm per stimolare simbiosi micorrizica)",
-        "Tè di compost aerato (applicato ogni 10-15 giorni in vegetazione)"
+      "tecniche_elettrocultura": [
+        "Mantieni circuito Lakhovsky attivo"
       ],
-      "esperimenti_pdf": [
-        "Confrontare la crescita di piante trattate con Acqua Magnetizzata vs. acqua non magnetizzata, misurando biomassa e resa finale",
-        "Testare l’efficacia degli Elettrodi Fe-Cu vs. un controllo senza elettrodi, valutando la densità delle radici e la produzione di terpeni"
+      "tecniche_biodinamica": [
+        "Segui calendario lunare"
       ],
-      "fasi_app": [
-        "vegetazione",
-        "fioritura"
-      ]
+      "timeline_caserta": "Variabile secondo stagione",
+      "indicatori_visivi": [
+        "Osservazione diretta"
+      ],
+      "tecniche_pdf": [],
+      "pdf_fonti": [],
+      "data_aggiornamento": "2026-06-29"
+    },
+    {
+      "fase": "biodinamica",
+      "titolo": "Guida Biodinamica",
+      "contenuto_completo": "Guida per la fase biodinamica. Consultare i manuali per dettagli.",
+      "punti_chiave": [
+        "Monitoraggio costante",
+        "Rispetta il suolo vivente"
+      ],
+      "errori_comuni": [
+        "Eccesso di intervento"
+      ],
+      "tecniche_elettrocultura": [
+        "Mantieni circuito Lakhovsky attivo"
+      ],
+      "tecniche_biodinamica": [
+        "Segui calendario lunare"
+      ],
+      "timeline_caserta": "Variabile secondo stagione",
+      "indicatori_visivi": [
+        "Osservazione diretta"
+      ],
+      "tecniche_pdf": [],
+      "pdf_fonti": [],
+      "data_aggiornamento": "2026-06-29"
     },
     {
       "fase": "irrigazione",
@@ -292,40 +324,8 @@
         "germinazione",
         "vegetazione",
         "fioritura"
-      ]
-    },
-    {
-      "fase": "difesa_biologica",
-      "categoria": "tecnica",
-      "titolo": "Difesa Biologica — Guida Pratica Outdoor Caserta",
-      "quando": "Vegetazione e fioritura",
-      "contenuto_completo": "In una serra outdoor a Caserta con Living Soil, la difesa biologica durante vegetazione e fioritura richiede un approccio integrato che sfrutti le tecniche di elettrocultura attiva per potenziare la resilienza delle piante. Le autofiorenti (Epsilon F1, Milky Way F1, ecc.) e le fotoperiodiche (Astro Lemonade, Royal Gorilla, ecc.) sono soggette a patogeni tipici del clima mediterraneo: afidi, oidio, peronospora e trips. Applica **acqua magnetizzata** (pH 6.2-6.5) per migliorare l’assorbimento dei nutrienti e ridurre lo stress idrico, mentre le **spirali in rame** posizionate sopra le piante respingono insetti e funghi grazie all’effetto ionico. Il **circuito di Lakhovsky** (con elettrodi Fe-Cu interrati) stimola la risposta immunitaria delle piante, attivando geni di difesa. Monitora settimanalmente con **antenne di terra** per rilevare anomalie elettromagnetiche precoci. Utilizza **olio di neem** (1% in soluzione acquosa) come repellente naturale, evitando trattamenti nelle ore calde. Integra **micorrize** nel substrato per rafforzare le radici e applica **tè di compost** aerato ogni 15 giorni per arricchire il microbioma. Il calendario lunare suggerisce trattamenti preventivi in luna calante per ridurre l’attività di insetti. Evita l’uso di pesticidi chimici che distruggono la biodiversità del Living Soil.",
-      "punti_chiave": [
-        "Monitora settimanalmente con antenna di terra per rilevare stress elettromagnetici precoci",
-        "Applica acqua magnetizzata (pH 6.2-6.5) per ottimizzare assorbimento nutrienti e resistenza idrica",
-        "Usa spirali in rame sopra le piante per repellere afidi e funghi tramite effetto ionico",
-        "Integra micorrize nel substrato per rafforzare radici e assorbimento dei nutrienti",
-        "Applica tè di compost aerato ogni 15 giorni per nutrire il microbioma del Living Soil"
       ],
-      "errori_comuni": [
-        "Trascurare il monitoraggio elettromagnetico con antenna di terra, perdendo segnali di stress precoce",
-        "Usare olio di neem in ore calde (oltre 28°C) per evitare fitotossicità",
-        "Applicare pesticidi chimici che uccidono i microrganismi benefici del Living Soil",
-        "Ignorare il calendario lunare per trattamenti preventivi, riducendo l’efficacia dei repellenti naturali"
-      ],
-      "tecniche_pdf": [
-        "Acqua Magnetizzata",
-        "Spirale in Rame",
-        "Circuito di Lakhovsky"
-      ],
-      "esperimenti_pdf": [
-        "Confrontare la crescita di piante trattate con acqua magnetizzata vs. acqua normale in condizioni di stress idrico",
-        "Valutare l’efficacia delle spirali in rame vs. insetticidi naturali (es. piretro) contro afidi in fioritura"
-      ],
-      "fasi_app": [
-        "vegetazione",
-        "fioritura"
-      ]
+      "data_aggiornamento": "2026-06-29"
     }
   ]
 }
