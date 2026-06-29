@@ -242,8 +242,8 @@ def main():
         print('Tutti estratti!')
         return
 
-    # 30 per run — completiamo 89 PDF in ~3 run
-    batch = da_fare[:30]
+    # DEBUG: 1 PDF per trovare il crash
+    batch = da_fare[:1]
     stats = {'ok': 0, 'digitale': 0, 'ocr': 0, 'vuoti': 0, 'chunks_totali': 0}
 
     for i, pdf_file in enumerate(batch):
@@ -251,14 +251,18 @@ def main():
         print(f'\n[{i+1}/{len(batch)}] {nome[:75]}')
         print(f'  Size: {pdf_file.get("size",0)/1024:.0f} KB')
 
+        print(f'  Step 1: scarico PDF...')
         try:
             pdf_bytes = scarica_pdf(nome)
             print(f'  Scaricato: {len(pdf_bytes)/1024:.0f} KB')
         except Exception as ex:
             print(f'  Download ERR: {ex}')
+            stats['vuoti'] += 1
             continue
 
+        print(f'  Step 2: estraggo testo...')
         testo, metodo, n_pagine = estrai_testo_totale(pdf_bytes, nome)
+        print(f'  Step 2 done: {len(testo)} chars, metodo={metodo}')
 
         if not testo or len(testo) < 50:
             # Salva placeholder vuoto per non ritentare
