@@ -1,0 +1,1310 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 19/23 ===
+Chars: 44,801 | Offset: 807,665
+
+
+
+Si noti che, mentre gli angoli piani si misurano in radianti e la misura angolare di un
+cerchio intero è pari a 2 (rad), gli angoli solidi si misurano in steradianti (sr) e la mi-
+sura angolare di una superficie sferica è pari a 2 = (4rR?)/R? = 47 (sr); l’angolo
+solido di una semisfera è 27 (st). 7
+
+Applicando la relazione d4 = R?dQ, si può riscrivere dP, come
+
+dPra = R° S(R,9,6) dA. (9.19)
+
+dA = R* sin 9 d0 dé
+=R dQ
+
+Piano di
+elevazione
+
+367
+
+[PAG 192]
+368
+
+Figura 9.9
+Diagramma
+tridimensionale di
+
+un’antenna a lobo stretto.
+
+Capitolo 9 — Radiazione e antenne
+
+La potenza totale irradiata da un’antenna attraverso una superficie sferica a una di-
+
+“°°° Stanza fissa R si ottiene integrando la (9:19):
+
+27 pr
+Pra = R° S(R, 0,9) sin 9 dO di
+oak [| sae nta
+
+27 7
+= RE Sar / / F(0,6) sin 8 de dò (9.20)
+'g=0 deo
+
+= Rem ff FOA)d (W),
+ite dr
+dove F(0, $) è l’intensità di radiazione normalizzata definita dalla (9.13). Il simbolo
+47 posto sotto il segno di integrale è un’abbreviazione usata per rappresentare i limiti
+indicati per 9 e ¢. Formalmente, Pag è chiamata potenza totale irradiata.
+
+9.2.1 Diagramma di radiazione
+
+Ogni combinazione di valori dell’angolo zenitale @ e dell’angolo azimutale ¢ indivi-
+dua una determinata direzione nel sistema in coordinate sferiche di Figura 9.8. L’in-
+tensità di radiazione normalizzata F(0, $) caratterizza il diagramma direzionale del-
+l'energia irradiata dall’antenna, e dal grafico di F(9, $) in funzione sia di 0 che di $
+si ottiene un diagramma tridimensionale, esemplificato in Figura 9.9.
+
+Spesso interessa caratterizzare la variazione di F(8,¢) mediante dei grafici bidi-
+mensionali su determinati piani del sistema in coordinate sferiche. I due piani più
+‘usati a tale scopo sono il piano di elevazione e quello azimutale. Il piano di elevazio-
+ne, anche detto “piano 6”, è il piano che corrisponde a valori costanti di ¢: per esem-
+pio, $ = 0 definisce il piano x — z e $ = 90° definisce il piano y — z, ed entrambi so-
+no piani di elevazione, come descritto -in Figura 9.8. Il grafico di F(9, $) in funzione
+di 4 in ciascuno di questi due piani costituisce un diagramma bidimensionale nel pia--
+no di elevazione, ma ciò non implica che in diagramma in elevazione sia lo stesso in
+
+0
+5
+
+-10
+
+Intensita di radiazione normalizzata (dB)
+
+9.2 Caratteristiche di radiazione di un'antenna
+
+tutti i piarii di elevazione. Ii piano azimutale, anche detto “piano ¢”’, è definito da
+
+--@ =-90° e corrisponde al piano-x — y. Ii piano di elevazione-e quello azimutale spes-
+
+so vengono chiamati piani principali del sistema in coordinate sferiche.
+
+Alcune antenne presentano diagrammi fortemente direttivi caratterizzati da lobi
+stretti, nel qual caso è conveniente tracciare il diagramma di radiazione in scala loga-
+ritmica, esprimendo F in decibel:
+
+F (dB) = 10 logF.
+
+Per esempio, i! diagramma di radiazione descritto in Figura 9.10(a) è tracciato su una
+scala logaritmica in coordinate polari, prendendo come variabile radiale l’intensità.
+Questo formato consente una facile interpretazione visiva della distribuzione direzio-
+nale dei lobi di radiazione. Un altro formato di uso comune per l’esame del diagram-
+ma di radiazione di antenne a lobo stretto è il grafico in forma cartesiana descritto in
+Figura 9.10(b), che permette di ingrandire facilmente il diagramma cambiando la sca-
+la dell’asse orizzontale. Questi grafici rappresentano le variazioni solo in un piano
+della sfera di osservazione, cioè il piano ¢ = 0. A meno che il diagramma non sia
+simmetrico rispetto a ¢, per definire la variazione di F(8, $) in funzione di 9 e di ¢
+sono necessari ulteriori diagrammi.
+
+A rigore l’angolo polare 8 è sempre positivo, essendo definito sull’intervallo com-
+preso tra 0° (direzione positiva dell’asse z) e 180° (direzione negativa dell'asse z),
+mentre l’asse @ in Figura 9.10(b) ha valori sia positivi che negativi. Ciò non rappre-
+senta una contraddizione, ma un modo diverso di tracciare i diagrammi di radiazione.
+La metà destra del grafico rappresenta la variazione di F (dB) in funzione di @ con @
+che aumenta in senso orario nel piano x — z [si veda l’inserto in Figura 9.10(b)] che
+
+10 20
+
+369
+
+»
+DI
+
+Angolo zenitale @ (Gradi)
+
+Intensità di radiazione normalizzata F(0), dB
+
+a
+È
+
+Ù
+
+140 150 160 170 180 170 160 150 140
+
+(a) Diagramma polare
+
+Figura 9.10 Grafici rappresentativi del diagramma di radiazione normatizzato di un’antenna
+per microonde: (a) forma polare e (b) forma cartesiana.
+
+-35
+-50 -40. -30 -20 -10 6,010 20- 30 40:50
+Angolo zenitale @ (Gradi) i
+
+(b) Diagramma cartesiano
+
+[PAG 193]
+370
+
+Figura 9.11
+
+L'angolo solido
+equivalente Q, definisce
+un cono equivalente
+all’interno del quale è
+concentrata tutta la
+radiazione dell’antenna
+reale, con intensità
+‘uniforme e uguale al
+massimo valore del
+diagramma reale.
+
+Capitofo 9 — Radiazione e antenne
+
+corrisponde a $ = 0, mentre la metà sinistra dei grafico rappresenta la variazione di
+¥ (dB) in funzione di 9. con @ che aumenta in senso antiorario per $ = 180°. Pertan-
+to, un valore negativo di @ indica semplicemente che la direzione (6, ¢) si trova nella
+metà sinistra del piano x — z.
+
+Il diagramma mostrato in Figura 9.10(a) indica che l'antenna ha una buona diretti-
+vità, dal momento che la maggior parte dell’energia è irradiata in un intervallo ristret-
+to chiamato /obo principale. Oltre al lobo principale, il diagramma è caratterizzato
+anche da diversi lobi laterali e lobi posteriori. Nella maggior parte delle applicazio-
+ni, questi lobi supplementari sono da considerarsi indesiderati, in quanto rappresenta-
+no-energia persa per le antenne trasmittenti e direzioni di potenziale interferenza per
+le antenne riceventi.
+
+9.2.2 Dimensioni del tobo
+
+Nel caso di un’antenna con un solo lobo principale, l’angolo solido equivalente Qy
+descrive l'ampiezza equivalente del lobo principale del diagramma di radiazione, co-
+me descritto in Figura 9.11 e si definisce come l’integrale dell’intensità di radiazione
+normalizzata F(8, ¢) su tutta la sfera:
+
+9, = ff regan (st). (9.21)
+
+Per. un’antenna isotropa con F(0, $) = 1 in tutte le direzioni, si ha che Q = 4x
+(sr). .
+
+L’angolo solido equivalente caratterizza le proprietà direttive del diagramma di ra-
+diazione tridimensionale. Per caratterizzare la dimensione del lobo principale in un
+dato piano, si considera l'ampiezza del lobo: l’ampiezza a meta potenza, detta più
+semplicemente ampiezza e indicata con #, è definita come l’ampiezza angolare del
+lobo principale compresa tra i due angoli per i quali il modulo di F(9, $) è pari a me-
+tà del suo valore di picco 0 a -3 dB su una scala in decibel. Per esempio, nel caso del
+diagramma descritto in Figura 9.10(b), 8 è data da
+
+B=h-6, (9.22)
+
+dove 0; e 9, sono gli angoli a meta potenza per i quali F(8,0) = 0.5; come descritto
+in figura, 0, indica l'angolo maggiore e 0 indica l'angolo minore. Se il diagramma è
+simmetrico e il valore di picco di F(9,$) si ha per 9= 0, allora 8 = 26). Nel caso
+del dipolo corto descritto in Figura 9.7(a), F(@) è massima per # = 90°, 62 è pari a
+135° e 0) a 45°. In tal caso, 8 = 135° — 45° = 90°. L'ampiezza f è anche detta am-
+piezza a 3 dB. Oltre all’ampiezza a metà potenza, per determinate applicazioni posso-
+no interessare altre dimensioni del lobo, come l'ampiezza tra gli zeri Bui, che è
+l’ampiezza compresa tra i primi zeri sui due lati del picco [Figura 9.10(b)].
+
+F=lall'intemo
+del cono
+
+(b) Angolo solido
+(a) Diagramma reale equivalente
+
+9.2 Caratteristiche di radiazione di un'antenna
+
+9.2.3 Direttivita
+
+La direttività D di un’antenna è definita come il rapporto tra la sua massima intensità
+di radiazione normalizzata Fnax, che per definizione è uguale a 1, e il valor medio di
+F(8, $) sull’angolo solido 47:
+
+D= Fon - >
+w — F(@,d) dQ
+4n Il, (0,9) (9.23)
+47
+=—— (adimensionale’
+= )
+
+dove Q, è l’angolo solido equivalente definito dalla (9.21). Perciò, più è stretto Oy
+nel diagramma di radiazione, maggiore è la direttività dell’antenna. Nel caso di
+un'antenna isotropa si ha Q, = 47, dunque la sua direttivita è Dio = 1.
+
+Sostituendo la (9.20) nella (9.23) si può esprimere D nella forma
+
+_ ARR'Syax — Smax
+Prod Sa |
+
+dove Say = Praa/(4mR?) è il valor medio della densità di potenza irradiata ed è ugua-
+le alla potenza totale irradiata dall’antenna Pra divisa per l’area della superficie sferi-
+ca di raggio R. Dato che Say = Siso, dove Sigo è la densità di potenza irradiata da
+un’antenna isotropa, D rappresenta il rapporto tra la massima densità di potenza irra-
+diata dall’antenna in esame e la densità di potenza irradiata da un’antenna isotropa,
+quando entrambe sono misurate alla stessa distanza R ed eccitate dallo stesso valore
+di potenza in ingresso. Di solito D si esprime in decibel:! D (dB) = 10logD.
+
+D (9.24)
+
+(a) Angolo solido equivalente (b) Ampiezza a metà
+
+potenza nel piano x-z
+
+Figura 9.12 L'angolo solido di un diagramma di radiazione unidirezionale è
+approssimativamente uguale al prodotto delle ampiezze a metà potenza nei due piani principali,
+
+cioè O = BeBe.
+
+! Nota: anche se spesso certe grandezze adimensionali si esprimono in decibel, il valore in
+decibel deve sempre essere convertito in un numero puro prima di essere applicato nelle re-
+lazioni trattate in questo capitolo.
+
+ee N
+
+(c) Ampiezza a meta
+potenza nel piano y-
+
+71
+
+[PAG 194]
++ 372
+
+Capitolo 9 ~- Radiazione è antenne
+
+Nel caso di un’antenna con un solo lobo principale che punita in direzione dell’asse z
+come descritto'in Figura 9.12, O, si può approssimare con il prodotto delle ampiezze
+a metà potenza fx e By, misurate in radianti:
+
+Ad = Be Byes (9.25)
+e dunque .
+
+4n an
+ho Baba
+Pur essendo un’approssimazione, questa relazione costituisce un utile metodo per sti-
+
+mare la direttività di un’antenna in base alla misurazione delle ampiezze a metà po-
+tenza nei due piani ortogonali la cui intersezione è l’asse del lobo principale.
+
+D= (9.26)
+
+Esempio 9.1 Proprietà di radiazione di un’antenna
+
+Si determinino (a) la direzione di massima radiazione, (b) l'angolo solido equivalente,
+(6) la direttività e (d) l'ampiezza a metà potenza dei lobo nel piano y — z nel caso di
+un'antenna che irradia solo nel semispazio superiore e la cui intensità di radiazione nor-
+malizzata è data da F(9, $) = cos?0.
+
+Soluzione L’ipotesi che l’antenna irradii solo lungo direzioni contenute ne! semispa-
+zio superiore si può esprimere mediante la seguente espressione matematica:
+
+cos? 6, per0<8< 7/2
+F(0,9) = F(0)= e0<$<27,
+0, altrimenti.
+
+(a) La funzione F(0) = cos?9 non dipende da $ ed è massima quando @ = 0°. La
+Figura 9.13 mostra il grafico di F(0).
+(b) Dalla (9.21), l’angolo solido equivalente O, è dato da
+
+a= ff F(0,6)d
+ale rando
+
+27 3972
+_ Di È cos ‘| dò
+3 Jo
+
+-[4 dp => (sr).
+
+Ai sro = cos? 6
+
+45° 45°
+
+Figura 9.13 Grafico di F(9) = cos? 6. x
+
+9.2 Caratteristiche di radiazione di un'antenna
+
+© Applicando ia 0. 23) si ottiene
+
+se 4r 3
+p=-E an |=
+% (x) 6
+
+che corrisponde a D (dB) = 10 log 6 = 7.78 dB.
+(@) Lampiezza a metà potenza si ottiene ponendo F(8) = 0.5. Cioè
+
+F(0)= cost 0 = 0.5,
+da cui si ottengono gli angoli a metà potenza 0, = —-45° e 0, = 45°. Dunque
+B=0-0=90°.
+
+Esempio 9.2 Direttività di un dipolo hertziano
+Si calcoli la direttività di un dipolo hertziano.
+Soluzione Applicando la (9.23) a F(9) = sin 9 ricavata dalla (9.15), si ottiene
+
+7 | we sin 0d0 dg
+(Ci
+4a
+
+Ls
+“FFE wv SI
+o=0 Gn
+
+che equivale a 1.76 dB.
+
+9.2.4 Guadagno
+
+Delia potenza complessiva P, trasferita dal trasmettitore all’antenna, una parte, Prad,
+viene irradiata nello spazio, mentre quella che rimane, Pioss, viene dissipata in calore
+nella struttura dell'antenna. Il rendimento È è definito come il rapporto tra Pra e Pt:
+
+(adimensionale) (9.27)
+
+Il guadagno di un’antenna è definito come
+_ 47R Saar
+an ae
+che è formalmente analoga all’espressione della direttività D data dalla (9.24) tranne
+
+per il fatto che fa riferimento alla potenza in ingresso all’antenna P invece che alla
+potenza irradiata Praq. In virtù della (9.27) si ha
+
+(9.28)
+
+G=€D (adimensionale) (9.29)
+
+fi guadagno tiene conto delle perdite ohmiche nel materiale con cui é realizzata l’an-
+tenna, mentre la direttività non le considera. Nel caso di un'antenna senza perdite si
+ha&= 1.
+
+9.2.5 Resistenza di radiazione
+
+Dal punto di vista della linea di trasmissione collegata ai suoi terminali, un’antenna è
+semplicemente un’impedenza. Se la linea di trasmissione è adattata all’impedenza
+
+373
+
+[PAG 195]
+Kei
+
+Capitolo 9 — Radiazione e antenne
+
+d’antenna, parte della potenza P. trasferita dal generatore viene irradiata neilo spazio
+circostante, mentre la rimanente viene dissipata in calore nell’antenna. La componen-
+te resistiva dell’impedenza d’antenna si può definire come somma di una resistenza
+di radiazione Raa € una resistenza di perdita Rios. La potenza media irradiata Prag e
+la potenza dissipata Pioss corrispondenti sono
+
+1
+
+Prod = First . (9.302)
+1
+
+Pass = 5 BR (9.30b)
+
+dove Jp è l'ampiezza della corrente sinusoidale che eccita l’antenna. Come si è defini-
+to in precedenza, il rendimento è pari al rapporto tra Prag e Pi:
+
+Prod Prod Riad (931)
+
+È Bi 3 Fra + Pics © Fa Rs”
+
+La resistenza di radiazione Rag si può calcolare integrando Ia densità di potenza in
+campo lontano su tutta la sfera per ricavare Prag, e quindi uguagliando il risultato alla
+(0.300).
+
+Esempio 9.3 Resistenza di radiazione e rendimento di un dipoio hertziano
+
+Un dipolo alimentato al centro e lungo 4 cm è utilizzato come antenna alla frequenza di
+75 MHz. L’antenna è realizzata con filo di rame di raggio a = 0.4 mm. Dalla (7.92a) e
+dalla (7.94) si ottiene che la resistenza di perdita di un filo a sezione circolare di lun-
+ghezza / è data da
+
+__ [af
+Ros = Sra ge (9.32)
+
+dove 4 € 0: sono rispettivamente la permeabilità magnetica e la conducibilità del filo.
+Si calcolino la resistenza di radiazione e il rendimento dell’antenna a dipolo.
+
+Soluzione A 75 MHz si ha
+
+© _ 3x108
+le * dm,
+ASPRI
+
+Il rapporto tra lunghezza fisica e lunghezza d’onda è 1/A = 4 cm/4 m = 10-?, dunque
+si tratta di un dipolo corto. Dalia (9.24), Prg è data da
+
+4nR?
+Prag = D
+
+Nel caso del dipolo hertziano, Sme, è data dalla (9.14) e nell’Esempio 9-2 si è dimostra-
+to che D = 1.5. Dunque
+
+Smex: (9.33)
+
+4nR? Salt (1\°
+Prat = 75 G)
+
+= 400° (3) .
+
+(9.34)
+
+Uguagliando questo risultato alia (9.30a) e quindi ricavando la resistenza di radiazione
+Rred Si ottiene .
+
+9.3 Dipolo a mezz'onda
+
+Raa=807(1/A)} (9). (9.35)
+
+Per i/A = 107, Rng = 0.08 0.
+
+Si deve ora calcolare la resistenza di perdita Rios. Nel caso del rame, facendo riferi-
+mento all’Appendice B si ha po po =47 x 1077 Him e 0, = 5.8 x 107 Sim.
+Pertanto
+
+bf afb.
+2ra e
+
+1/2
+
+rx 4x 10-4 5.8 x 107
+= 0.036 9,
+
+4x 107? E x 105 x 47 x 1077
+
+e dunque il rendimento è pari a
+
+Reed 0.08
+
+È Farhi © 00840056 >
+
+0.69,
+
+cioè il 69%.
+
+Domande di verifica
+
+9.5 Cosa rappresenta l’angolo solido equivalente?
+
+9.6 Qual è il modulo della direttività di un’antenna isotropa?
+
+9.7 Quali proprietà fisiche e dei materiali influenzano il rendimento di un’antenna a
+dipolo hertziano di lunghezza fissa?
+
+Esercizio 9.2 Un’antenna ha un diagramma di radiazione di forma conica, con intensità
+di radiazione normalizzata F(6) = 1 per @ compreso tra 0° e 45° e intensità zero per @
+compreso tra 45° e 180°. Il diagramma è indipendente dali’angolo azimutale . Si ricavi-
+no (a) l’angolo solido equivalente e (b) la direttività.
+
+SOLUZIONE (a) % =. 1.84 sr, (b) D = 6.83, equivalente a 8.3 dB.
+
+Esercizio 9.3 La massima densità di potenza irradiata da un dipolo corto alla distanza
+di i kmè pari a 60 (nW/m?). Se Jy = 10 A, si ricavi la resistenza di radiazione.
+
+SOLUZIONE Ras = 10 mQ.
+
+9.3 Dipolo a mezz’onda
+
+Nel Paragrafo 9.1 si sono ricavate le espressioni dei campi elettrico e magnetico irra-
+diati da un dipolo corto di lunghezza molto inferiore a A, che saranno ora utilizzate
+per costruire le espressioni dei campi irradiati da un dipolo a mezz’onda, così chia-
+mato perché la sua lunghezza è / = A/2. Come descritto in Figura 9.14, il dipolo a
+mezz’onda è costituito da un filo sottile alimentato al centro da un generatore colle-
+gato ai terminali dell'antenna tramite una linea di trasmissione. La corrente che scor-
+re nel filo ha una distribuzione simmetrica rispetto al centro del dipolo e la corrente
+deve essere zero alle estremità. Dal punto di vista matematico, i(#) è data da
+
+i(t) = Ir cos wt cos kz = Re[f cos ze], (9.36)
+
+375
+
+[PAG 196]
+se:
+
+Figura 9.14
+- Dipolo amezz’onda - --
+alimentato al centro.
+
+Capitolo.9 = Radiazione e antenne
+
+Distribuzione di corrente
+nie e = cos ke: i a= a
+
+Linea di
+
+trasmissione
+
+1= M2
+Antenna tito ‘
+a dipolo ue ’
+
+(a)
+
+Z
+
+DA DI A - 286,9)
+z= S
+NSA
+
+o 7
+9
+
+i
+i
+
+Z cos @
+
+()
+
+il cui fasore di corrente è
+
+I(2) = Ip cos kz, Ps: <
+ek=27/). La (9.9a) fornisce l’espressione di Es, il campo lontano a distanza R irra-
+diato dal dipolo corto di lunghezza / eccitato da una corrente J. Questa espressione
+si può adattare a un segmento del dipolo di lunghezza infinitesima dz, eccitato da una
+corrente /(z) e situato a una distanza s dal punto di osservazione, come descritto in
+Figura 9.14(b). Pertanto
+
+A
+| (9.37)
+
+~ im +, ed \
+dia = = Fee n ) sin 6, (9.389)
+e il campo magnetico associato è
+° 2 dé,
+dil(2) = de, . (9.38b)
+
+Il campo lontano dovuto alla radiazione da parte dell’intera antenna si ottiene inte-
+grando i campi emessi da tutti i dipoli hertziani che costituiscono l’antenna:
+
+~ paz
+= [ dB. (9.39)
+; M4
+
+Per calcolare il valore di questo integrale si applicano due approssimazioni. La prima
+riguarda il modulo, pari a 1/s, del fattore di propagazione sferica: in Figura 9.14(b),
+la distanza s tra l'elemento di corrente e il punto di osservazione Q è considerata mol-
+to grande rispetto alla lunghezza del dipoio, tanto che la differenza tra s e R si può
+
+9.3 Dipolo a mezz'onda
+
+trascurare dal punto di vista del suo effetto su 1/s. Pertanto si può considerare
+1/s-1/R e analogamente 0; = 0. L'errore A tra se R è massimo quando il punto di
+osservazione è situato lungo l’asse z, nel qual caso è pari a A/4, corrispondente a me-
+tà della lunghezza dell’antenna. Se.R > A, questo errore avrà conseguenze trascura-
+bili su 1/s. Per il fattore di fase e~ questo errore nella distanza corrisponde a un er-
+rore di fase KA = (27/A)(A/4) = 2/2. Come regola generale si considera maccetta-
+bile un errore di fase maggiore di 7/8, in quanto può comportare un errore significa-
+tivo nel calcolo del campo Es. Pertanto, l’approssimazione s = R è troppo grossolana
+per il fattore di fase e non è utilizzabile. Una scelta migliore consiste nell’applicare
+l’approssimazione di raggi paralleli data da
+
+s=eR-zcosì, (9.40)
+
+come descritto in Figura 9.14(b).
+Sostituendo la (9.40) al posto di s nel fattore di fase della (9.38a) e sostituendo s
+con Red; con? nel resto dell’espressione, si ha
+
+3 Jk x ed
+di = ity ( z
+
+) sin 6 eos? (9.41)
+
+Dopo aver (1) inserito la (9.41) nella (9.39), (2) applicato l’espressione di I (2) data
+dalla (9.37) e (3) eseguito l’integrazione, si ottengono le seguenti espressioni:
+
+È -;60%| cos [(/2) cos 4) (=): (9.424)
+
+sin @ R
+
+Hy=, (9.426)
+
+e la densità di potenza media corrispondente è
+
+|B?
+S(R, 6) = ——
+(8,0) Tm
+
+1558 [cos {(r/2) cos 6} I (9.43)
+
+TR? sin’
+cos ?((17/2) cos 6] 2
+= Sp ee (Whn?).
+Esaminando la (9.43) si nota che S(R, 0) è massimò per = 7/2 e il suo valore è
+_q_ 158
+
+Smax = So = GR)
+
+Pertanto l’intensità di radiazione normalizzata è
+
+F() = se4 _ cos eli ay (9.44)
+
+Il diagramma di radiazione del dipolo a mezz’onda ha all’incirca la stessa forma a
+ciambella descritta in precedenza in Figura 9.7 nel caso del dipolo corto. La sua diret-
+tività è leggermente maggiore (1.64 rispetto a 1.5 del dipolo corto), ma, come si ve-
+dra in seguito nel Paragrafo 9.3.2, la sua resistenza di radiazione è pari a 73 2, molto
+maggiore di quella del dipolo corto.
+
+UH
+
+[PAG 197]
+me
+
+Capitolo 9 ~ Radiazione e antenne
+
+9.3.1 Direttivita del dipolo }/2
+
+_ Per valutare sia la direttività D che la.resistenza di radiazione Risa del-dipolo a mez--
+
+2°onda è necessario calcolare la potenza totale irradiata Pag applicando la (9.20):
+: Pra = R? If S(R,6) dO :
+i RT fe OMS
+
+2 ple px 2
+_ 155 / [ = (@/2) =") sin 8d0.d¢.
+wT Jo Jo sin @
+
+(9.45)
+
+L'integrale su ¢ vale 27 e dall’integrazione per via numerica su 6 si ottiene il valore
+1.22. Di conseguenza
+
+Pra = 36.612 (W). (9.46)
+
+Dalla (9.43) si è ricavato Squx = 15/8/(1R°). Inserendo questo risultato nella (9.24)
+si ottiene il seguente valore della direttività D del dipolo a mezz’onda:
+
+4nR Sme — 478° (15 .
+De E om. 9) = 1. ;
+Prd 36.677 ( TR ) 1.64 (9.47)
+
+che equivale a 2.15 dB.
+
+9.3.2 Resistenza di radiazione del dipolo /2
+
+Applicando la (9.30a) per mettere in relazione la resistenza di radiazione Rrad € la po-
+tenza totale irradiata Prag si ottiene
+
+_ Pad _ 2x 36.613
+Ro
+
+Come si è visto in precedenza nell’Esempio 9.3, dal momento che la resistenza di ra-
+diazione di un dipolo corto è in modulo paragonabile alla resistenza di perdita Rios, il
+suo rendimento £ è abbastanza scarso. Nel caso del dipolo lungo 4 cm nell’Esempio
+9-3 si ha Ra = 0.08 2 a 75 MHz e Rios = 0.036 (2. Se si mantiene costante la fre-
+quenza e si aumenta la lunghezza del dipolo a 2 m, essendo \= 4 ma if = 75 MHz,
+Rrad diviene pari a 73 2 e Rios aumenta a 1.8 Q. Il rendimento cresce dal 69% del di-
+polo corto fino al 98% nel caso del dipolo a mezz’onda. Ancora più significativo è il
+fatto che è praticamente impossibile adattare una linea di trasmissione a un’antenna
+che abbia una resistenza dell’ordine di 0.1 92, mentre è abbastanza facile farlo quan-
+do Rad = 73 Q.
+
+Un'altra interessante caratteristica del dipolo a mezz’onda riguarda la sua reattan-
+za: dal punto di vista della linea di trasmissione, un’antenna è rappresentata da
+un’impedenza d’ingresso collegata alla linea in corrispondenza dei terminali dell’an-
+tenna. L’impedenza di ingresso Z;n è formata da una parte reale Ri, e da una parte im-
+maginaria Xp:
+
+Roa ~BA. (9.48)
+
+Zin = Rin +/Xa, (9.49)
+
+dove Rin è la somma della resistenza di radiazione Rna € della resistenza di perdita
+Ross
+
+x Rin = Raat Ris (9.50)
+
+Nel caso del dipolo a mezz’onda, Roy è molto minore di Rua © si può trascurare. Per-
+tanto
+
+Zin È Read +iXin- (9.51)
+
+9.3 Dipolo a mezz'onda
+
+Ricavare l’espressionè di Xj, per il dipolo a mezz’onda è abbastanza complicato ed
+esula dagli scopi di questo libro. Tuttavia, è importante notare che Xn dipende forte--
+mente da 1/A e diminuisce da 42 2 per !/A = 0.5 fino a zero per // = 0.48, mentre
+Rrg rimane approssimativamente costante. Dunque, riducendo la lunghezza del dipo-
+lo a mezz’onda del 4%, Zin diviene puramente reale e uguale a 73 2, consentendo di
+adattare if dipolo a una linea di trasmissione a 75 O. senza fare uso di reti di adatta-
+mento.
+
+9.3.3  Monopolo a quarto d'onda
+
+Quando viene posizionata su un piano conduttore di massa, un’antenna a monopolo
+lunga un quarto d’onda eccitata alla base da una sorgente [Figura 9.15(a)] presenta
+nella regione di spazio al di sopra del piano di massa lo stesso diagramma di radiazio-
+ne manifestato da un dipolo a mezz’onda nello spazio libero. Ciò accade in quanto,
+per la teoria delle immagini esposta nel Paragrafo 4.12, il piano conduttore può esse-
+re sostituito con l’immagine del monopolo A/4, come descritto in Figura 9.15(b).
+Pertanto il monopolo 4/4 irradierà un campo elettrico identico a quello dato dalla
+(9.42a) e la cui intensità di radiazione normalizzata è data dalla (9.44); tuttavia la ra-
+diazione è limitata al semispazio superiore definito da 0 < @ < 7/2, dunque il mono-
+polo irradia solo metà della potenza irradiata dal dipolo. Di conseguenza, per un mo-
+nopolo A/4 si ha che Prag = 18.3/7 e la sua resistenza di radiazione è Rag = 36.5 A.
+
+L'approccio impiegato nel caso del monopolo a quarto d’onda è valido anche per
+qualsiasi altra antenna filare verticale posta su un piano conduttore, compreso il mo-
+nopolo hertziano.
+
+Piano
+conduttore
+
+Domande di verifica
+
+9.8 Qual è la lunghezza fisica di un dipolo a mezz’onda funzionante alla frequenza
+di (a) 1 MHz (banda di radiodiffusione AM), (6) 100 MHz (banda di radiodif-
+fusione FM) e (c) 10 GHz (banda delle microonde)?
+
+378
+
+Figura 9,15
+
+Un monopolo a quarto
+d’onda al di sopra di un
+piano conduttore equivale
+a un dipolo a mezz’onda
+nello spazio libero.
+
+[PAG 198]
+Figura 9.16
+Distribuzione delle
+correnti per tre dipoli
+alimentati al centro.
+
+Capitolo 9 — Radiazione e antenne
+
+9.9 Cosa emerge dal confronto tra i diagrammi di radiazione di un dipolo a mez-
+
+di radiazione e i rendimenti? .
+9.10 Cosa emerge dal confronto tra il rendimento di un monopolo a quarto d'onda e
+
+quello di un dipolo a mezz’onda, ipotizzando che siano entrambi realizzati con
+1. Jo, stesso materiale e.abbiano la stessa sezione.trasversa?---
+
+Esercizio 9.4 Nel caso di un’antenna a dipolo a mezz’onda, si valuti F(9) in funzione
+di 4 e si determini l'ampiezza a metà potenza nel piano di elevazione, cioè il piano che
+contiene l’asse del dipolo.
+
+SoLuzione 6 = 78°.
+
+ESERCIZIO 9.5 Se la massima densità di potenza irradiata da un dipolo a mezz’onda è pa-
+ria %0 (W/m?) a una distanza di 1 km, qual è l’ampiezza Jp della corrente di alimenta-
+zione? »
+
+SOLUZIONE Jp = 3.244,
+il e rn" nMIISNIE
+
+9.4 Dipolo di lunghezza arbitraria
+
+Finora si sono esaminate le proprietà di radiazione del dipolo corto hertziano e del di-
+polo a mezz’onda; adesso si prenderà in considerazione il caso più generale di un di-
+polo rettilineo di lunghezza arbitraria / in rapporto a A. Nel caso del dipolo alimenta-
+to al centro, come descritto in Figura 9.16, le correnti che scorrono nei due semidipo-
+li sono simmetriche e devono annullarsi alle estremità, pertanto il fasore di corrente
+I(2) si oo sotto forma di una funzione seno il cui argomento si annulla
+perz= :
+
+~ {asa a per 0 <8<1/2,
+= (9.52)
+
+Ia)
+Isin {K(!/2+2)], per -1/2<0<0,
+
+(a) /=A/2 (b) f=2 (c) £=342
+
+.. Zonda e di un dipolo hertziano? E dal confronto tra le direttività, le resistenze.
+
+9.4 Dipolo di lunghezza arbitraria
+
+dove J è l'ampiezza della corrente. Il procedimento per il calcolo dei campi elettrico
+
+- .-e-magnetico e della densità di-potenza associata all’onda irradiata da-una tale antenna.
+
+è fondamentalmente uguale a quello usato in precedenza nel caso del dipolo.a mez-
+z’onda. L'unica differenza risiede nella distribuzione di corrente /(z). Se si sostitui-
+sce l’espressione di /(z) data dalla (9.52) nella (9.41), si ottiene la seguente espressio-
+ne del campo elettrico infinitesimo d£s dell’onda irradiata da un segmento infinitesi-
+mo dz situato nella posizione z lungo il dipolo:
+
+~ i AR ;
+di, = Home, (7) sin de® de
+
+47 R
+9.53
+sin(k(2/2-—2)], per 0<z<1/2, (9.53)
+x
+sin {K(2/2+2)}, per —1/2<z<0.
+Il campo totale irradiato dal dipolo è
+~ no _
+Ep = dE
+-i/2
+2 0
+=| d&j+]. db
+0 ~if2
+kool (e™\
+—r ( RB) sine (9.54)
+
+x | [ 1 geco sin fk /2.~2)] de
+
+0
++ fel? sin [k(I/2 +2) dz
+-H/2
+
+Applicando Videntiti di Bulero per esprimere e/#%? come [cos(kz cos 6) +
++ sin (kz cos 6)}, si possono svolgere i due integrati ottenendo come risultato
+
+= eR cos(# cos 9) — cos(4)
+= ji . 9.55
+Ee j6tie( R Je ind | (9.55)
+La corrispondente densita di potenza media irradiata dal dipolo é data da
+3,
+st = El.
+2m
+È 2 (9.56)
+_ 155 [| cos (4 cos 6) — cos(5)
+mR? | sin@ ,
+
+dove si sono applicate le relazioni 7 = 1207 (2) e k = 2x/X. Per / = A/2, la (9.56)
+si riduce all’espressione data dalla (9.43) per il dipolo a mezz’onda. I grafici dell’in-
+tensita di radiazione normalizzata F(@) = S(R,0)/Smax sono descritti in Figura 9.17
+per dipoli con lunghezze pari a 4/2, A e 34/2. I dipoli con/=/2 e = A hanno
+diagrammi di radiazione simili, con i massimi lungo la direzione @ = 90°, ma l’am-
+piezza a metà potenza del dipolo a onda intera è inferiore a quella del dipolo a mez-
+Zonda e Sax = 60/2 /(mR?) per il dipolo a onda intera, vale a dire quattro volte mag-
+giore di quello a mezz’onda. Il diagramma di radiazione dei dipolo con lunghezza
+7 = 34/2 presenta una struttura a lobi multipti e la sua direzione di massima radiazio-
+ne non è orientata verso @ = 90°.
+
+38
+
+[PAG 199]
+381
+
+Capitolo 9 ~ Radiazione e antenne
+
+piano
+ay
+
+(b) I=2 (©) 1= 34/2
+
+Figura 9.17 Diagrammi di radiazione di dipoli con lunghezze pari a A/2, Ae 34/2.
+
+9.5 Area efficace di un'antenna ricevente
+
+Finora si sono esaminate le caratteristiche di radiazione delle antenne considerandole
+come elementi che irradiano l'energia fornita da una sorgente. Si considererà ora il
+processo inverso, cioè il modo in cui un’antenna ricevente estrae energia da un’onda
+incidente e la trasferisce a tin carico. La capacità di un'antenna di catturare energia da
+un’onda incidente con densità di potenza S; (W/m?) e trasformarla in una potenza in-
+tercettata Pim (W) per trasferirla a un carico adattato è descritta dall'area efficace AL:
+
+Ae è comunemente chiamata anche apertura efficace e sezione ricevente. Il processo
+di ricezione da parte di un'antenna si può modellare mediante un circuito equivalente
+di Thévenin, come descritto in Figura 9.18, dove Veo è il fasore di tensione indotta a
+
+* circuito aperto nell’antenna ricevente da parte dell’onda incidente, Z;n è l’impedenza
+
+d’antenna e Z; è l’impedenza del carico a cui deve essere trasferita la potenza ricevu-
+ta. In generale, sia Ziq che Zz, sono valori complessi:
+
+Zia = Read +JXin, (8.582)
+Z.=R+/4, (9.58b)
+
+dove Ri indica la resistenza di radiazione dell’antenna e si presume che la resisten-
+za di perdita dell’antenna sia molto inferiore a Rag, in modo-da poterla trascurare.
+Come si vedrà in seguito nell’Esempio 9.4, per avere il massimo trasferimento di po-
+tenza bisogna scegliere l’impedenza di carico in modo che sia Z, = Zin 0 equivalen-
+temente RL = Rag eX, = ~Xiq, nel qual caso il circuito si Tiduce a una sorgente Voc
+collegata ai capi di una resistenza uguale a 2R,.g. Dal momento che Voc è un fasore di
+tensione sinusoidale, la potenza media trasferita al carico è
+
+- 2 ~
+Liz 1 | [Peel Fool?
+= /AP Rng = =} = ;
+PL 7 lil Pra 2 Ue Rrad Res (9.59)
+
+dove i = Pa /(2Rrd) è il fasore della corrente che scorre nel circuito. Essendo l’an-
+tenna senza perdite, tutta la potenza intercettata Pin finisce nella resistenza di carico
+RL ‘dunque
+Pook?
+Pig = Py = LL 6
+w= P= Fe (9.60)
+
+9.5 Area efficace di un’antenna ricevente
+
+Onda. - a ne
+
+:
+re
+Lincidente
+
+i —
+t
+
+'
+
+1
+
+(b) Circuito equivalente
+
+Per un’onda incidente con il campo elettrico È parallelo alla direzione di polarizza-
+zione dell’antenna, la densità di potenza trasportata dall’onda è
+
+a JEP ER (9.61)
+2m 2407
+Dal rapporto tra i risultati della (9.60) e della (9.61) si ottiene
+7 2
+307| Feel (9.62)
+
+RealEi?
+
+La tensione a circuito aperto 7, indotta nell’antenna ricevente è dovuta al campo in-
+cidente È, mia la relazione che intercorre tra essi dipende dalla ‘particolare antenna in
+esame. Si consideri per esempio il caso del dipolo corto descritto nel Paragrafo 9.1.
+Siccome la lunghezza / del dipolo corto è breve in rapporto a A, la corrente indotta
+dal campo incidente sarà uniforme lungo tutta la sua lunghezza e la tensione a circui-
+to aperto sarà semplicemente Vo, = El. Ricordando dalla (9.35) che
+Rea = 8072(1/A)? per il dipolo corto e applicando la Vo, = Ei, la (9.62) si semplifi-
+cain
+
+CN
+de = Gr (m*) (dipolo corto) (9.63)
+TT
+
+Nell’Esempio 9.2 si è dimostrato che il dipolo corto ha direttività D = 1.5: Ja (9.63)
+si può riscrivere in funzione di D come
+
+2
+=D (m?) (antenna qualsiasi) (9.64)
+i
+
+Nonostante si sia ricavata la relazione tra A, e D data dalla (9.64) nel caso del dipolo
+corto, si può dimostrare che essa vale anche per qualsiasi antenna in condizioni di
+adattamento di impedenza.
+
+383
+Figura 9.18
+Antenna ricevente
+rappresentata mediante un
+
+circuito equivalente.
+
+[PAG 200]
+384
+
+Capitolo 9 =-Radiazione:e:aritenne - x
+
+Esempio 9.4 Massimo trasferimento di potenza
+
+~jIrcircuito descritto in Figura 9.18(b)é Formato da un Generatore caratterizzato da un fa
+
+sore di tensione V,, e da un’impedenza interna Zi, collegato a un carico Z. Se
+
+Zin = Read + Xin;
+4=R +i,
+
+per quali valori di Ri e Xi si ottiene il massimo trasferimento di potenza dal generatore
+al carico?
+
+Soluzione . Il fasore della corrente che scorre nel circuito è
+
+7 Pa Par
+
+Lo scopo è specificare i parametri del carico, Rr e Xi, che massimizzano Pr; ciò si ot-
+tiene derivando l’espressione di PL rispetto a Ri,, uguagliando a zero la derivata e ripe-
+tendo quindi il procedimento rispetto a Xr. Dal primo passo si ha
+
+PL liz. 1 .
+oh a Mel Le + Re) + (Xn +)?
+—2Re (Ras +R.) zo
+[Rae +R.) + (Xin +X |
+da cui si ottiene il risultato
+
+(Xin +X)" — RF +24 = 0. (9.67)
+Applicando il secondo passo si ha
+
+op, _1
+dA. 2
+
+(Pal?
+
+~2Ri (Xin +X)
+(Ras +R) + Kin +41)?
+
+da cui si ottiene una seconda condizione: .
+Ri(Xn+4)=0. . (9.68)
+
+Per soddisfare queste condizioni deve essere RL = 0, il che non è accettabile perché si-
+gnifica che anche P; = 0, oppure
+
+= Xn (9.698)
+
+Inserendo la (9.69a) nella (9.67) si ottiene
+
+RL= Raa. (9.695)
+
+Questi due risultati si possono riassumere nella
+
+Z=Z,- (9.70)
+
+i= = -
+1° Zi tZ (Bmg Rt) Fi)? (9.65)
+€ la potenza media dissipata nella resistenza di carico Ry, è
+la Loe Ri
+Poa life => Rel? t .
+2 20% (Raa + Rt) + Kin +4) (9.66)
+
+9.6 Formula di trasmissione di Friis
+
+dove Zi, è il complesso coniugato di Zin. Pettanto, per avere il massimo trasferimento
+‘| di potenza; Fimpedenza di carico deve essere uguale al'complesso coniugato dell’impe=-
+denza del generatore.
+
+Esercizio 9.6 L’area efficace di un'antenna è 9 m?; Quanto vale la sua direttività in dB
+alla frequenza di 3 GHz? .
+
+Sotuzione D = 40.53 dB.
+
+Esercizio 9,7 Alla frequenza di 100 MHz, l’angolo solido equivalente di un'antenna è
+pari a 1.3 sr. Si calcolino (a) la direttività D dell’antenna e (b) la sua area efficace Ae.
+
+SOLUZIONE (a) D = 9.67, (b) Ae = 6.92 m.
+
+9.6 Formula di trasmissione di Friis
+
+Le due antenne descritte in Figura 9.19 fanno parte di un ponte radio nello spazio li-
+bero, con una distanza di separazione reciproca R abbastanza grande da situare cia-
+scuna antenna nella regione di campo lontano dell’altra. Le antenne trasmittente e ri-
+cevente hanno rispettivamente area efficace A: e A, e rendimenti & e &. L'obiettivo è
+ricavare una relazione tra la potenza P, trasferita dal trasmettitore all’antenna trasmit-
+tente e la potenza Prec trasferita al ricevitore dall’antenna ricevente; come al solito, si
+ipotizza che entrambe le antenne siano adattate alle rispettive linee di trasmissione.
+Si inizierà considerando il caso in cui le due antenne sono orientate in modo che il
+picco del diagramma di radiazione di ciascuna punti in direzione dell’altra.
+
+Come primo passo si considera l’antenna trasmittente come se fosse un radiatore
+isotropo senza perdite: in tal caso la densità di potenza incidente sull’antenna riceven-
+te a una distanza R dalla trasmittente isotropa è semplicemente uguale alla potenza
+trasmessa P, divisa per l’area di una superficie sferica di raggio R:
+
+Pi t
+Ark *
+La vera antenna trasmittente non è né priva di perdite né isotropa. Dunque, la densità
+di potenza S, dovuta all’antenna vera è data da
+
+(9.71)
+
+Siso =
+
+EDP, t
+4nR?2 ’
+dove, attraverso il guadagno G: = &Di, & rende conto del fatto che solo una parte
+delia potenza Pr trasferita all’antenna viene effettivamente irradiata nello spazio e Di
+rende conto della direttività dell'antenna trasmittente, nella direzione rivolta verso
+l’antenna ricevente. Applicando la (9.64), la (9.72) si può esprimere in termini dell’a-
+rea efficace A; dell’antenna trasmittente: :
+
+SAP
+Se VR
+Sull’altro lato del collegamento, la potenza intercettata dall’antenna ricevente è ugua-
+le al prodotto tra la densità di potenza incidente SS, e l’area efficace Ar:
+
+S, = GiSiso = &:DtSiso = (9.72)
+
+(0.73)
+
+GAAP
+Re”
+
+Pig = Ses = (9.74)
+
+385
+
+[PAG 201]
+386
+
+Figura 9.19
+
+Configurazione diun
+
+© ponte radio.
+
+Capitolo 9 — Radiazione e antenne
+
+Antenna trasmittente
+
+Antenna ricevente
+
+La potenza ricevuta Pree trasferita al ricevitore è uguale alla potenza intercettata Pn:
+moltiplicata per il rendimento & dell'antenna ricevente. Pertanto si ha che
+Pree = & Pim, da cui si ottiene il risultato >
+
+Pre _ &&rArde _ AN
+rainiep o ani Veg RZIO)
+
+Questa relazione è nota come formula di trasmissione di Friis, è Prec /Px è a volte
+chiamato tasso di trasferimento di potenza. Per ricavare la formula di Friis nella for-
+ma dipendente dai guadagni G, e G, dell’antenna trasmittente e di quella ricevente si
+è applicata la relazione GA: = &DA? /47 = GA? /4x, e un discorso analogo vale per
+l’antenna ricevente.
+
+Se le due antenne non sono orientate nella direzione di massimo trasferimento di
+potenza, la (9.75) si può riscrivere nella forma generale
+
+Pre - a6,(A.) r6 F(x 4, 9.76)
+PR sinti 4nR rl hy de) nn e), (CA
+
+dove F;(4,, d) è l’intensità di radiazione normalizzata dell'antenna trasmittente valu-
+tata nella direzione (6,, $i) rivolta verso la ricevente, dal punto di vista del diagram-
+ma di radiazione della trasmittente. Una definizione analoga si applica a F,(6,,6,)
+nel caso dell’antenna ricevente.
+
+Esempio 9.5 Sistema di comunicazione via satellite
+
+Un satellite per trasmissione televisiva alla frequenza di 6 GHz emette una potenza di
+100 W attraverso un’antenna parabolica di 2 m di diametro da una distanza approssima-
+tiva di 40 000 km al di sopra della superficie terrestre. Ogni canale TV occupa una ban-
+da di 5 MHz. A causa del rumore elettromagnetico captato dall’antenna e di quello ge-
+nerato dal circuito elettronico del ricevitore, una stazione ricevente TV domestica a ter-
+ra presenta un livello di rumore dato da
+
+P, =KTysB (W), (9.77)
+
+dove T.ys, misurata in Kelvin (K), è una cifra di merito detta temperatura di rumore del
+sistema, che caratterizza le prestazioni di rumorosità del sistema formato dal ricevitore
+e dall’antenna, X è la costante di Boltzmann, pari a 1.38 x 10-2 (UK) e B è la banda
+passante del ricevitore misurata in Hz.
+
+Il rapporto segnale-rumore Sy, da non confondere con la densità di potenza S, è defi-
+nito come il rapporto tra la potenza di segnale ricevuta Pree € Po:
+
+Sn = Pre/Pa (adimensionale) (9.78)
+
+Nel caso di un ricevitore con Tsys = 580 K, qual è il diametro minimo richiesto per
+un’antenna parabolica ricevente che garantisca un segnale televisivo di elevata qualità,
+caratterizzato da Sn = 40 dB? Si può presumere che le antenne sul satellite e a terra sia-
+no prive di perdite e le'loro aree efficaci si possono considerare uguali alle aree geome-
+triche delle loro aperture.
+
+9.6 Formula di trasmissione di Friis 387
+
+Soluzione Sono date le seguenti grandezze:
+"p= 100 W, 7=6GHz=6x10° Hz, S$, = 10%
+diametro_dell’antenna trasmittente d, = 2m
+Toys = 580 K,
+R= 40000 km =4 x 10’ m,
+B=5 MHz =$ x 10° Hz.
+
+La lunghezza d’onda \ = c/f = 5 x 107? me l’area dell’antenna trasmittente satellita-
+re è A: = (nd? /4) = n (m°). Dalla (9.77), la potenza di rumore ricevuta è
+Pr = KT ygB = 1.38 x 1072? x 580 x 5 x 108
+=4x 107" w.
+Applicando la (9.75) nel caso di assenza di perdite ( = £ = 1), la potenza di segnale
+ricevuta è
+_ PrAtdy _ 10074;
+me RE (5x 10-2)?(4 x 107)?
+
+= 7.85 x 107 4,.
+
+L’area A; deil’antenna ricevente si può ricavare uguagliando il rapporto Prec/Pn a
+Sy = 10%:
+106 = 285x107,
+
+4x10?
+
+da cui si ottiene il valore 4,=5.1 m’.
+
+di = /4Afr= 2.55 m.
+Domande di verifica
+
+9.11 Per un generatore di corrente alternata collegato a un carico, qual è la condizio»
+ne di massimo trasferimento di potenza verso il carico stesso?
+
+9.12. Se le due antenne di un sistema di comunicazione hanno rendimento e area ef-
+ficace costanti, come varia in funzione di A il tasso di trasferimento di potenza?
+Si spieghi questo fenomeno in relazione alla variazione in funzione di A dei lo-
+bi delle antenne.
+
+Il diametro minimo richiesto è
+
+Esercizio 9.8 Si supponga che Ja frequenza di funzionamento del sistema di comunica»
+zione descritto nell’Esempio 9.5 sia raddoppiata a 12 GHz. Quale sarebbe in tal caso il
+diametro minimo richiesto per l'antenna ricevente TV domestica?
+
+Sovuzione d, = 1.27 m.
+
+Esercizio 9.9 Un ponte radio a microonde alla frequenza di 3 GHz è formato da due anten-
+ne identiche, ciascuna delle quali ha un guadagno di 30 dB. Se la potenza in uscita dal tra- Se
+smettitore è pari a 1 kW e le due antenne sono distanti 10 km, si ricavi la potenza ricevuta. , “
+
+SOLUZIONE Prec = 6.33 x 1074 W.
+
+Esercizio 9.10 L’area efficace di un’antenna parabolica è approssimativamente uguale
+alia sua area geometrica. Se la direttività di un’antenna parabolica è 30 dB a 10 GHz,
+qual è la sua area efficace? Se la frequenza viene aumentata a 30 GHz, quale sarà il nuo-
+vo valore della direttività?
+
+SOLUZIONE 4. = 0.07 m?, D = 39.54 dB.
+
+i|rerereoma nitro eci
+
+Hf
+
+[PAG 202]
+Figura 9.20
+
+Antenna a tromba con
+distribuzione di campo
+sull’apertura F(x, ya).
+
+Capitolo 9 --Radiazione e antenne
+
+9.7. Radiazione emessa da antenne. a grande apertura
+
+Nelle antenne filari le sorgenti della radiazione sono gli elementi infinitesimi di cor-
+rente che formano la distribuzione di corrente lungo il filo e il campo totale irradiato
+in un dato punto dello spazio è uguale alla somma, o integrale, dei campi irradiati da
+tutti gli elementi. Uni discorso analogo si applica alle antenne ad apertura, tranne che
+in tal caso la sorgente della radiazione è la distribuzione del campo elettrico sull’aper-
+tura, Si consideri l'antenna a tromba descritta in Figura 9.20, che è collegata a una
+sorgente tramite una linea di trasmissione coassiale; il conduttore coassiale esterno è
+connesso al corpo metallico della tromba, mentre il conduttore intemo sporge per un
+breve tratto attraverso un piccolo foro all’interno dell’estremità stretta della tromba.
+Il conduttore sporgente si comporta come un’antenna a monopolo e genera onde che
+si irradiano verso l’esterno in direzione dell’apertura della tromba. Il campo elettrico
+dovuto all’energia che giunge sull’apertura varia in funzione delle coordinate x, € ya
+e prende il nome di distribuzione del campo elettrico d'apertura E.(x:,y2). All’inter-
+no della tromba la propagazione delle onde è guidata dalla geometria della tromba
+stessa, ma nel momento in cui Ponda compie la transizione dalla guida allo spazio li-
+bero, ogni punto del fronte d’onda agisce da sorgente di onde sferiche secondarie in-
+finitesime. L'apertura si può dunque rappresentare come una distribuzione di radiato-
+ri isotropi, ciascuno dei quali ha intensità proporzionale al campo elettrico £,(xa, Ya)
+presente nella sua posizione (x2,ya). In un punto lontano Q, la combinazione delle
+onde che giungono da tutti questi radiatori forma l'onda complessiva che viene osser-
+vata da un ricevitore situato in quel punto.
+
+Il processo di radiazione descritto per l’antenna a tromba si applica allo stesso mo-
+do a qualsiasi apertura che subisca l'incidenza di un’onda elettromagnetica. Per
+esempio, se una sorgente di luce illumina un'apertura in uno schermo opaco attraver-
+so una lente collimatrice, come descritto in Figura 9.21(a), l'apertura diviene sorgen-
+te di onde sferiche secondarie infinitesime, proprio come l’apertura dell’antenna a
+tromba. Nel caso del riflettore parabolico descritto in Figura 9.21(b), esso può essere
+descritto in termini di un’apertura immaginaria che rappresenta la distribuzione del
+campo elettrico in un piano situato di fronte allo specchio parabolico.
+
+Per il calcolo dei campi elettromagnetici delle onde emesse dalle aperture sono di-
+sponibili due tipi di formulazioni matematiche. Il primo tipo è una formulazione sca-
+lare basata sul lavoro di Kirchhoff e comunemente applicata ai problemi di diffrazio-
+ne ottica e alle antenne a grande apertura. Il secondo tipo è una formulazione vetto-
+riale basata sulle equazioni di Maxwell. Pur essendo superiore dal punto di vista teo-
+rico, l’approccio vettoriale è in genere più difficile da applicare. Pertanto lo si utilizza
+più che altro per studiare aperture la cui dimensione è paragonabile o inferiore alla
+lunghezza d’onda, in quanto in tal caso non si può applicare l’approccio scalare.
+
+In questo paragrafo la discussione sarà confinata all'approccio scalare, sia per la
+sua inerente semplicità, sia per la sua applicabilità a una vasta gamma di situazioni
+pratiche. / requisito fondamentale per la validita della formulazione scalare è che
+l'apertura dell’antenna abbia una lunghezza pari almeno a diverse lunghezze d'on-
+da su ciascuna delle sue dimensioni principali. Una caratteristica fondamentale di
+
+9.7 Radiazione emessa da antenne a grande apertura
+
+(a) Apertura in uno schermo opaco
+
+(b) Antenna parabolica
+
+una tale antenna è quella di avere un’elevata direttivita e di conseguenza un lobo
+stretto, il che la rende adatta per i radar e per i sistemi di comunicazione a microonde
+nello spazio libero. La banda di frequenze comunemente utilizzata per queste appli-
+cazioni si estende nelle microonde da 1 a 30 GHz. Dal momento che la corrisponden-
+te banda di lunghezze d’onda varia da 30 a 1 cm, antenne con dimensioni d’apertura
+pari a molte lunghezze d’onda in questa banda di frequenze non comportano difficol-
+tà pratiche proibitive nella costruzione e nell’uso.
