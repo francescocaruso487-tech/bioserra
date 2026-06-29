@@ -429,11 +429,19 @@ Genera JSON completo:
 Rispondi SOLO JSON valido. Nessun testo fuori dal JSON."""
 
     try:
-        risposta = mistral_chat(prompt, max_tokens=2500, temperatura=0.25)
+        risposta = mistral_chat(prompt, max_tokens=1500, temperatura=0.25)
         print(f'  Briefing raw ({len(risposta)}c): {risposta[:400]}')
         result = parse_json(risposta)
         if not result:
-            print('  parse_json fallito')
+            # Fallback: crea struttura minima dal testo
+            print(f'  parse_json fallito, uso testo diretto')
+            result = {
+                'briefing_mattutino': risposta[:600] if risposta else 'Briefing non disponibile',
+                'consigli_giorno': [risposta[:200]] if risposta else [],
+                'consigli_piante': {},
+                'piano_giornata': {'mattina': '', 'pomeriggio': '', 'sera': ''},
+                'avvisi_urgenti': []
+            }
         return result
     except Exception as ex:
         import traceback
