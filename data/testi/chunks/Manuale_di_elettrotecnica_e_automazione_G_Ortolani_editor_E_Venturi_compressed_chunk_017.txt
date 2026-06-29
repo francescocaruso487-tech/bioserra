@@ -1,0 +1,1903 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 17/116 ===
+Chars: 43,181 | Offset: 708,377
+
+
+
+[PAG 356]
+V-22
+SEGNI GRAFICI
+Giunzione raddrizzatrice
+(altra forma)
+Giunzione che influenza una 
+regione semiconduttrice per 
+mezzo di un campo elettrico.
+Regione P che influenza una 
+regione N
+Giunzione che influenza una 
+regione semiconduttrice per 
+mezzo di un campo elettrico.
+Regione N che influenza una 
+regione P
+Canale di tipo N con substrato 
+di tipo P 
+(per depositi a svuotamento)
+Canale di tipo P con substrato 
+di tipo N 
+(per depositi ad arricchimento)
+Elettrodo di comando isolato 
+(vedere elettrodi multipli)
+Emettitore P su una regione N 
+(il tratto obliquo con la freccia 
+rappresenta l’emettitore)
+Emettitore N su una regione P 
+(il tratto obliquo con la freccia 
+rappresenta l’emettitore)
+Effetto Schottky
+Effetto tunnel
+Diodo a semiconduttore 
+(segno generale)
+Diodo emettitore di luce 
+(segno generale)
+Diodo il cui impiego è legato 
+alla temperatura
+Diodo a capacità variabile
+Diodo tunnel
+Diodo Zener, unidirezionale
+Diodo regolatore di tensione
+Diodo Esaki
+Diodo Zener, bidirezionale
+Diodo unitunnel
+Diodo bidirezionale
+Diac
+Tiristore diodo bloccato nel 
+senso inverso di conduzione
+Tiristore diodo che conduce 
+nel senso inverso di 
+conduzione
+Tiristore diodo bidirezionale
+Tiristore triodo 
+(segno generale)
+Tiristore triodo bidirezionale
+Triac
+Transistore PNP
+Transistore NPN con collettore 
+collegato all’involucro
+Transistore NPN a valanga
+Transistore a giunzione unica 
+con base di tipo P
+Transistore a giunzione unica 
+con base di tipo N
+Transistore NPN con base 
+polarizzata trasversalmente
+Transistore PNIP con 
+connessione alla regione 
+intrinseca
+Transistore PNIN con 
+connessione alla regione 
+intrinseca
+Transistore ad effetto di campo 
+con elettrodo di comando 
+connesso al substrato e canale 
+di tipo N
+Transistore ad effetto di campo 
+con elettrodo di comando 
+connesso al substrato e canale 
+di tipo P
+
+
+[PAG 357]
+SEGNI GRAFICI
+V-23
+4.2  Elementi analogici
+Transistore ad effetto di campo 
+con un solo elettrodo isolato, 
+tipo ad arricchimento, canale 
+tipo P senza connessione al 
+substrato
+Transistore ad effetto di campo 
+con un solo elettrodo isolato, 
+tipo ad arricchimento, canale 
+tipo N senza connessione al 
+substrato
+Transistore ad effetto di campo 
+con un solo elettrodo isolato, 
+tipo ad arricchimento, canale 
+tipo P con substrato separato 
+collegabile all’esterno
+Transistore ad effetto di campo 
+con un solo elettrodo di 
+comando isolato, tipo a 
+svuotamento, canale tipo N 
+senza connessione al substrato
+Transistore PNP fotosensibile 
+(fototransistore PNP)
+Transistore ad effetto di campo 
+con un solo elettrodo di 
+comando isolato, tipo a 
+svuotamento, canale tipo P 
+senza connessione al substrato
+Transistore ad effetto di campo 
+con due elettrodi di comando, 
+isolato, tipo a svuotamento, 
+canale tipo N con substrato 
+collegabile all’esterno
+Fotoresistore
+Cellula conduttrice a 
+conducibilità simmetrica
+Diodo fotosensibile
+Cellula conduttrice a 
+conducibilità asimmetrica
+Cellula fotovoltaica
+Accoppiatore ottico, 
+rappresentato con diodo 
+emettitore di luce e 
+fototransistore
+Amplificatore per calcolo 
+analogico (segno generale)
+Amplificatore ad alto 
+guadagno con una amplifica-
+zione nominale 10 000 e due 
+uscite complementari
+Amplificatore invertitore con 
+amplificazione 1
+Amplificatore sommatore
+Amplificatore derivatore
+Amplificatore integratore
+Amplificatore logaritmico
+Generatore di funzione
+(segno generale)
+Moltiplicatore - divisore
+Funzione esponenziale
+f
+m
+w1
+a1
+wn
+an
+u1
+m1
+un
+kn
+
+
+104
+
+
+
+
+1
+a
+u
+10
+
+c
+a
+b
+d
+e
+0,1
+0,1
+0,2
+0,5
+1,0
+a
+b
+
+4
+u
+
+5
+d
+dt
+u
+
+80
+c
+a
+b
+f
+g
+2
+3
+I
+C
+S
+h
+H
+
+
+
+
+log
+u
+
+a
+b
+1
+2
+x1
+xn
+f(x1...xn)
+u
+a
+b
+c
+x
+y
+z
+xy
+z
+u
+a
+c
+x
+z
+u
+3xy
+
+[PAG 358]
+V-24
+SEGNI GRAFICI
+4.3  Elementi logici binari
+Convertitore di coordinate, da 
+polari a rettangolari
+Convertitore numerico 
+analogico (segno generale)
+Convertitore analogico 
+numerico (segno generale)
+Convertitore analogico 
+numerico che converte un 
+segnale analogico entrante 
+variabile nel campo 4-20 mA 
+in 4 uscite pesate binarie
+Commutatore a doppio senso, 
+duplex, a contatto di lavoro
+Esempio: il segnale analogico 
+può passare solo nel verso c-d, 
+finché l’entrata numerica e si 
+trova allo stato logico 1
+Commutatore a doppio senso, 
+duplex, a contatto a riposo 
+(segno generale)
+Esempio: il segnale analogico 
+può passare solo nel verso c-d, 
+finché l’entrata numerica e si 
+trova allo stato logico 0
+Elemento logico
+Blocco di controllo comune
+Elemento logico con funzione 
+di uscita comune
+Elemento OR (segno generale)
+Elemento AND
+(segno generale)
+Elemento “m” e solo “m”
+(segno generale)
+Elemento d’IDENTITÀ 
+LOGICA (segno generale)
+Elemento di DISPARITÀ
+Elemento di ADDIZIONE 
+MODULO 2 (segno generale)
+Elemento di PARITÀ
+(segno generale)
+Elemento OR esclusivo
+Elemento BUFFER senza 
+uscita amplificata
+Elemento INVERTITORE
+INVERTER
+Elemento INVERTITORE
+CONNESSIONE 
+DISTRIBUITA
+(segno generale)
+FUNZIONE PUNTO
+(segno generale)
+FUNZIONE 
+COLLEGAMENTO
+(segno generale)
+r1 x1y
+r
+a
+
+b
+u1
+x
+u2
+y
+4
+ 
+
+
+
+2
+1
+8
+4-20
+mA
+
+
+d
+c
+e 
+d
+c
+e 
+d
+c
+e 
+d
+c
+e 
+ 1
+&
+ m
+
+2k 1
+2k
+ 1
+1
+1
+1
+
+
+[PAG 359]
+SEGNI GRAFICI
+V-25
+AND con uscita negata 
+(NAND)
+OR con uscita negata (NOR)
+Combinazione di AND e OR 
+con uscita negata
+NAND con uscita a circuito 
+aperto di tipo L
+AND-OR con uscita negata ed 
+ingressi di espansione
+Esclusivo OR/NOR doppio
+Invertitore con uscita 
+amplificata, uscita a circuito 
+aperto di tipo L
+NAND con uscita amplificata
+Amplificatore con ingressi a 
+doppia soglia e uscite 3-stati, 
+quadruplo
+Emettitore/ricevitore 
+quadruplo
+Elemento con isteresi
+(segno generale)
+Convertitore di codice, 
+codificatore (segno generale)
+Convertitore di codice, da 
+BCD a decimale
+Convertitore di livello TTL in 
+livello MOS, doppio
+Multiplatore (segno generale)
+Demultiplatore
+(segno generale)
+Elemento bistabile tipo RS
+Elemento bistabile tipo D, 
+doppio
+-
+1
+&
+2
+13
+12
+3
+4
+5
+6
+ 1
+ 1
+&
+3
+4
+5
+6
+2
+&
+9
+10
+8
+ 1
+&
+13
+9
+10
+8
+1
+11
+12
+E
+ 1
+1
+5
+6
+3
+4
+2
+7
+2
+N2
+1
+2
+1
+3
+2
+&
+1
+2
+4
+6
+8
+EN
+18
+16
+14
+12
+/
+[4RTX]
+12
+EN2
+2
+1
+4
+3
+5
+6
+11
+10
+13
+14
+2
+7
+9
+15
+X/Y
+BCD/DEC
+2
+4
+8
+1
+1
+2
+3
+0
+5
+6
+7
+4
+8
+9
+2
+3
+4
+1
+6
+7
+9
+5
+10
+11
+14
+13
+12
+15
+4
+5
+&
+3
+6
+G1
+TTL/MOS
+2
+7
+1
+MUX
+DX
+S
+R
+6
+4
+7
+10
+11
+8
+9
+1D
+C1
+2D
+C2
+
+[PAG 360]
+V-26
+SEGNI GRAFICI
+5  RAPPRESENTAZIONE GRAFICA DELLE APPARECCHIATURE PNEUMA-
+TICHE
+I segni grafici che riguardano gli impianti pneumatici sono stati divisi per semplicità
+in base alle diverse trasformazioni dell’aria. Iniziando da quelli che indicano la sua tra-
+smissione e il suo trattamento, si propongono poi i segni grafici che indicano il tipo di
+comando, la sua distribuzione e regolazione, fino ad arrivare ai segni grafici che indicano
+i vari tipi di utilizzatore. Per approfondimenti, o per eventuali dubbi, si rimanda alle
+norme ISO 1219/76, UNI 6861/82 e alle raccomandazioni CETOP.
+5.1  Trasmissione e trattamento
+Elemento bistabile tipo JK 
+comandato sulla transizione 
+dei clock
+Elemento bistabile tipo JK 
+comandato per impulsi
+Elemento bistabile tipo JK 
+comandato sulla transizione 
+del clock con effetto differito 
+sulle uscite
+Elemento bistabile tipo RS con 
+ingresso complementare
+Elemento bistabile tipo D 
+comandato sulla transizione 
+del clock
+Memoria ad accesso casuale 
+(segno generale)
+Memoria di sola lettura 
+programmabile (PROM), 
+1024 x 4 bit
+Memoria di sola lettura
+(segno generale)
+Memoria di sola lettura
+programmabile
+(segno generale)
+Sorgente di pressione
+Sorgente di pressione 
+pneumatica
+Condotto di lavoro
+Condotto di pilotaggio
+Condotto con giunzione
+Condotto senza giunzione
+Scarico senza connessione
+Scarico con connessione
+Silenziatore
+Accumulatore pneumatico
+Variabilità delle caratteristiche
+Rubinetto di isolamento
+Diramazione chiusa
+Diramazione allacciata
+Separatore di condensa con 
+scarico manuale
+Separatore di condensa con 
+scarico automatico
+Filtro
+1
+12
+4
+13
+3
+2
+C1
+1J
+1K
+R
+1
+12
+4
+13
+3
+2
+C1
+1J
+1K
+R
+4
+5
+1
+3
+7
+6
+C1
+1J
+1K
+R
+2
+S
+3
+1
+2
+4
+R
+S
+S
+4
+2
+3
+1
+5
+6
+C1
+1D
+R
+S
+RAM
+ROM
+PROM
+6
+7
+4
+5
+2
+1
+17
+3
+16
+15
+8
+10
+14
+13
+12
+11
+A
+&
+EN
+PROM
+1k=4
+0
+9
+A
+0
+1023
+
+[PAG 361]
+SEGNI GRAFICI
+V-27
+5.2  Comando
+5.3  Distribuzione e regolazione
+Filtro con spurgo
+(scarico manuale)
+Filtro con spurgo
+(scarico automatico)
+Lubrificatore
+Essicatore mediante agenti 
+chimici
+Riduttore di pressione
+(senza foro di scarico)
+Riduttore di pressione
+(con foro di scarico)
+Manometro
+Inquadramento di più 
+apparecchi riuniti in una unità
+Innesto rapido collegato
+Innesto rapido non collegato
+(lato tubo aperto)
+Innesto rapido non collegato
+(lato tubo chiusi)
+Comando manuale
+(segno generale)
+Comando a pulsante
+Comando a leva
+Comando a pedale
+Comando a tastatore
+Comando a molla
+Comando a rullo
+Comando a rullo con effetto in 
+una sola direzione
+Comando con dispositivo di 
+scatto
+Comando con posizione fissa
+Comando diretto mediante 
+pressione
+Comando diretto mediante 
+depressione
+Comando con pressione 
+differenziale
+Comando indiretto mediante 
+pressione
+Comando indiretto mediante 
+depressione
+Comando indiretto mediante 
+bassa pressione
+Comando combinato (bassa 
+pressione e distributore pilota)
+Comando elettrico diretto
+Comando elettrico indiretto
+Comando elettrico indiretto
+Apparecchio di regolazione di 
+portata o di pressione
+(segno generale)
+Apparecchio di distribuzione 
+di portata o di pressione
+(segno generale)
+Simbolo semplificato di 
+apparecchio, in caso di 
+rappresentazione multipla. Il 
+numero si riferisce ad un 
+indice posto sul disegno nel 
+quale è riportata una 
+definizione dettagliata 
+dell’apparecchio
+2
+
+[PAG 362]
+V-28
+SEGNI GRAFICI
+5.4  Trasformazione
+1 via, 2 bocche
+2 bocche chiuse
+2 vie, 4 bocche
+2 vie, 5 bocche (1 chiusa)
+2 vie connesse 
+trasversalmente, 4 bocche
+1 via in posizione di by pass,
+4 bocche (2 chiuse)
+Distributore 2/2 normalmente 
+chiuso (NC)
+Distributore 2/2 normalmente 
+aperto (NO)
+Distributore 2/2 con comando 
+manuale
+Distributore 2/2 con comando 
+mediante pressione contro 
+molla di richiamo
+Distributore 3/2 con comando 
+a pressione dai due lati
+Distributore 3/2 con comando 
+elettromagnetico contro molla 
+di richiamo, con posizione 
+intermedia di passaggio
+Distributore 4/2 con comando 
+elettromagnetico contro molla 
+di richiamo
+Distributore 5/2 con comando 
+a pressione dai due lati
+Distributore 5/3 con posizione 
+intermedia chiusa
+Distributore 5/3 con posizione 
+intermedia con uscite allo 
+scarico
+Distributori senza posizioni 
+fisse
+Valvola di strozzamento (non 
+regolabile)
+Valvola di strozzamento
+(regolabile)
+Valvola unidirezionale
+Valvola di non ritorno
+Valvola di non ritorno 
+(sopprime la chiusura)
+Valvola di non ritorno 
+(sopprime l’apertura)
+Valvola selettiva di circuito
+Valvola di non ritorno con 
+strozzamento
+Valvola di scappamento rapido
+Valvola a due pressioni
+Valvola di sicurezza
+Valvola di sequenza
+Motore a cilindrata costante a 
+un senso di flusso
+Motore a cilindrata costante a 
+due sensi di flusso
+Motore oscillante (l’angolo di 
+rotazione è limitato)
+Motore elettrico
+Compressore
+Pompa per svuoto
+(scarico nell’atmosfera)
+1
+2
+1
+2 3
+3
+1 4
+2
+2
+5 4
+3
+M
+
+[PAG 363]
+SEGNI GRAFICI
+V-29
+6  CENTRALI DI PRODUZIONE ELETTRICA
+In questo capitolo vengono riportati tutti quei segni grafici che riguardano la produ-
+zione di energia elettrica. Essi spaziano dai segni generali che rappresentano centrali, sta-
+zioni e linee di trasporto, segni riguardanti elementi idraulici, tubazioni e valvole, fino a
+considerare segni per strumenti di misura e apparecchi di controllo.
+6.1  Centrali, stazioni e linee di trasporto
+Motore a semplice effetto con 
+corsa di ritorno mediante forza 
+indefinita
+Cilindro a semplice effetto con 
+corsa di ritorno mediante molla
+Cilindro a doppio effetto a 
+semplice stelo
+Cilindro a doppio effetto a 
+doppio stelo
+Cilindro a doppio effetto con 
+ammortizzatore non regolabile 
+agente da un solo lato
+Cilindro a doppio effetto con 
+ammortizzatore non regolabile 
+agente da ambedue i lati
+Cilindro a doppio effetto con 
+ammortizzatore regolabile 
+agente da un solo lato
+Cilindro a doppio effetto con 
+ammortizzatore regolabile 
+agente da ambedue i lati
+Cilindro con impulso continuo 
+(la corrente del pistone si 
+inverte automaticamente)
+Moltiplicatore di pressione a 
+un solo fluido (aria) che 
+trasforma la pressione 
+pneumatica da X a Y
+Moltiplicatore di pressione a 
+due fluidi (aria-liquido) che 
+trasforma la pressione 
+pneumatica X in una pressione 
+idraulica Y
+Centrale in progetto
+Centrale in costruzione
+Centrale in esercizio
+Centrale idroelettrica in 
+progetto
+L’asterisco può essere 
+sostituito con:
+G = centrale idroelettrica di 
+generazione
+P = centrale idroelettrica di 
+pompaggio
+G-P = Centrale idroelettrica di 
+generazione e pompaggio
+Centrale idroelettrica in 
+costruzione
+L’asterisco può essere 
+sostituito con:
+G = centrale idroelettrica di 
+generazione
+P = centrale idroelettrica di 
+pompaggio
+G-P = Centrale idroelettrica di 
+generazione e pompaggio
+Centrale idroelettrica in 
+esercizio
+L’asterisco può essere 
+sostituito con:
+G = centrale idroelettrica di 
+generazione
+P = centrale idroelettrica di 
+pompaggio
+G-P = Centrale idroelettrica di 
+generazione e pompaggio
+
+[PAG 364]
+V-30
+SEGNI GRAFICI
+6.2  Segni generali idraulici
+6.3  Segni generali per macchinario
+Centrale in progetto
+Centrale in costruzione
+Centrale in esercizio
+Linea a ... kV in costruzione
+(segno UCPTE)
+Linea a ... kV in esercizio
+(segno UCPTE)
+Linea a ... kV in corrente 
+continua (segno UCPTE)
+Opere di presa
+Griglia
+Griglia con sgrigliatore
+Dissabbiatore
+Traversa
+Serbatoio a diga
+Sfioratore
+Sifone
+Paratoia
+Canale a pelo libero
+Galleria a pelo libero
+Galleria in pressione
+Bacino o vasca di carico
+Pozzo piezometrico
+Valvola ingresso d’aria con 
+richiusura a galleggiante
+Valvola ingresso d’aria o 
+rompivuoto automatica
+Valvola ingresso d’aria o 
+rompivuoto automatica
+Valvola rompivuoto 
+comandata (se necessario 
+indicare l’attuatore)
+Valvola di sfiato d’aria
+Condotta forzata
+Condotta forzata blindata
+Condotta forzata metallica in 
+roccia
+Scarico (segno generale)
+Turbina idraulica generica ad 
+asse verticale
+Turbina idraulica generica ad 
+asse verticale
+Pompa generica ad asse 
+verticale
+Pompa generica ad asse 
+orizzontale
+T
+T
+P
+P
+
+[PAG 365]
+SEGNI GRAFICI
+V-31
+Turbina Pelton ad asse 
+orizzontale ad un introduttore
+Turbina Pelton ad asse 
+orizzontale a due o più 
+introduttori
+Turbina Pelton ad asse 
+verticale ad un introduttore
+Turbina Pelton ad asse 
+verticale a due o più 
+introduttori
+Turbina Francis in camera 
+forzata ad asse orizzontale
+(simbolo generale)
+Turbina Francis in camera 
+forzata ad asse verticale
+Turbina Francis in camera 
+libera ad asse orizzontale
+Turbina Francis in camera 
+libera ad asse verticale
+Turbina elica o Kaplan in 
+camera forzata ad asse 
+orizzontale
+Turbina elica o Kaplan in 
+camera forzata ad asse 
+verticale
+Turbina elica o Kaplan in 
+camera libera ad asse 
+orizzontale
+Turbina elica o Kaplan in 
+camera libera ad asse verticale
+Turbina bulbo
+Pompa turbina con girante 
+Francis ad asse orizzontale
+Pompa turbina con girante 
+Francis ad asse verticale ad 
+uno o più stadi
+Pompa turbina con girante 
+Kaplan ad asse orizzontale
+Pompa turbina con girante 
+Kaplan ad asse verticale
+Pompa a più stadi ad asse 
+verticale e aspirazione 
+inferiore
+Pompa a più stadi ad asse 
+orizzontale a doppia 
+aspirazione assiale e mandata 
+radiale
+Saracinesca
+Saracinesca (ammessa)
+Valvola a farfalla
+Valvola ad otturatore rotativo
+Valvola a fuso o ad otturatore 
+mobile
+G
+
+[PAG 366]
+V-32
+SEGNI GRAFICI
+6.4  Tubazioni ed accessori di collegamento
+Tubazione - Generico o 
+bidirezionale (segno generale)
+Tubazione - Direzionale
+Collegamento pneumatico
+(segno generale)
+Collegamento pneumatico - 
+Direzionale
+Collegamento ad acqua. 
+Generico o comando
+Collegamento ad acqua. 
+Generico o scarico
+Collegamento elettrico
+Collegamento con capillare
+Collegamento senza 
+connessione meccanico-
+elettromagnetico o acustico
+Collegamento oleodinamico
+Circuito di manovra a 
+pressione costante
+Collegamento oleodinamico
+Circuito di manovra a 
+pressione variabile
+Collegamento oleodinamico
+Circuito di manovra a scarico o 
+drenaggio
+Collegamento oleodinamico
+Circuito di comando o di 
+pilotaggio a pressione costante
+Collegamento oleodinamico
+Circuito di comando o di 
+pilotaggio a pressione variabile
+Collegamento oleodinamico
+Circuito di comando o di 
+pilotaggio in scarico o 
+drenaggio
+Collegamento meccanico.
+Alberi, leve, steli, pistoni
+Linea con fluido di processo
+Delimitazioni di apparecchi 
+riuniti in un solo gruppo o in 
+un solo insieme, o in un solo 
+sistema, o in una sola unità 
+funzionale
+Incrocio di tubi non collegati
+Incrocio di tubi non collegati 
+(ammesso)
+Tubi collegati - a croce
+Tubi collegati - a T
+Giunto a flangia
+Giunto a manicotto - Filettato
+Giunto a manicotto - Saldato
+Riduzione o aumento di 
+diametro nella tubazione 
+Concentrico
+Riduzione o aumento di 
+diametro nella tubazione 
+Eccentrico
+Flangia ad occhiale
+Tronchetto removibile
+Flangia cieca
+Fondello filettato
+Fondello saldato
+e
+e
+D
+L
+L < 5 D
+0,2 M
+D
+L
+L > 20 D
+D
+L
+L < 5 D
+0,1 M
+D
+L
+L > 20 D
+D
+L
+L < 5 D
+S  5 D
+d
+D
+d  5 D
+d
+D
+d  5 D
+
+[PAG 367]
+SEGNI GRAFICI
+V-33
+6.5  Valvole rappresentazione costruttiva
+Giunto di dilatazione
+Giunto flessibile
+Giunto rotante (raccordo di 
+tubazione che può ruotare in 
+servizio), a una via
+Giunto rotante (raccordo di 
+tubazione che può ruotare in 
+servizio), a n vie
+Giunto ad innesto rapido non 
+accoppiato, senza ritegno, 
+condotta aperta
+Giunto ad innesto rapido non 
+accoppiato, con ritegno, 
+condotta chiusa
+Giunto ad innesto rapido 
+accoppiato, senza ritegno
+Giunto ad innesto rapido 
+accoppiato, con ritegno
+Presa di pressione per misure, 
+chiusa
+Presa di pressione per misure 
+con tubazione allacciata
+Spurgo aria
+Collegamento allo scarico
+Libero
+Collegamento allo scarico
+Libero convogliato
+Collegamento allo scarico
+Collegato al serbatoio sopra il 
+livello
+Collegamento allo scarico
+Collegato al serbatoio sotto il 
+livello
+Sifone
+Valvola di isolamento aperta 
+(segno generale)
+Valvola di isolamento general-
+mente chiusa (segno generale)
+Valvola normalmente aperta
+Aperta in assenza di comando
+Valvola normalmente chiusa
+Chiusa in assenza di comando
+Valvola bloccata aperta
+Valvola bloccata aperta 
+(ammesso)
+Valvola bloccata chiusa
+Valvola bloccata chiusa 
+(ammesso)
+Valvola a saracinesca
+Valvola a saracinesca 
+(ammesso)
+Valvola a farfalla
+Valvola a farfalla (ammesso)
+Valvola a tappo
+Valvola a spillo
+Valvola a sfera
+Valvola a sfera (ammesso)
+Valvola (rubinetto) a maschio
+Valvola a membrana
+1
+2
+n
+d
+D
+d  5 D
+NC
+NO
+LO
+LC
+
+[PAG 368]
+V-34
+SEGNI GRAFICI
+6.6  Comandi valvole
+6.7  Comandi passivi per tubazioni
+Valvola con tenuta a soffietto
+Valvola con by-pass 
+incorporato
+Valvola ad angolo
+Valvola a tre vie
+Valvola a quattro vie
+Valvola di ritegno (direzione 
+del flusso da sinistra a destra)
+Valvola di ritegno (direzione 
+del flusso da sinistra a destra) 
+Ammesso
+Valvola di ritegno e di 
+intercettazione (bloccabile 
+chiusa)
+Valvola di sfioro o di sicurezza 
+a molla, diretta
+Valvola di sfioro o di sicurezza 
+a molla, ad angolo
+Valvola di sicurezza a 
+contrappeso
+Valvola di regolazione
+(segno generale)
+Valvola di regolazione,
+ad angolo
+Comando manuale generico
+Comando manuale rinviato a 
+distanza
+Comando a molla
+Comando a peso
+Comando a galleggiante
+Comando centrifugo
+Attuatore generico. All’interno 
+del segno può essere indicata 
+la natura del comando
+Comando a pistone
+Comando a membrana
+Comando a motore elettrico
+Comando a solenoide, a una 
+bobina ad azione tutto o niente
+Comando a solenoide, a due 
+bobine contrapposte ad azione 
+tutto o niente
+Comando a solenoide, a una 
+bobina ad azione 
+proporzionale
+Comando a solenoide, a due 
+bobine contrapposte ad azione 
+proporzionale
+Filtro generico
+Filtro con spurgo o scarico 
+condensa, comando manuale
+*
+M
+
+[PAG 369]
+SEGNI GRAFICI
+V-35
+Filtro con spurgo o scarico 
+condensa comando automatico
+Filtri a Y o raccoglitore di 
+impurità
+Filtro a lamelle
+Filtro a sabbia
+Filtro a cartuccia ceramica
+Filtro centrifugo
+Filtro magnetico
+Scaricatore di condensa o 
+decantatore, comando manuale
+Scaricatore di condensa o 
+decantatore, comando 
+automatico
+Demineralizzatore
+Essicatore
+Lubrificatore
+Scambiatore di calore, 
+raffreddamento
+Scambiatore di calore, 
+raffreddamento con 
+indicazioni della linea del 
+refrigerante
+Scambiatore di calore, 
+riscaldamento
+Scambiatore di calore, riscal- 
+damento con indicazioni della 
+linea del fluidi riscaldante
+Scambiatore di calore, 
+regolatore di temperatura
+Scambiatore di calore, a 
+serpentino (per serbatoi ecc.)
+Serbatoio a pressione 
+atmosferica
+Vaso di espansione o serbatoio 
+aperto o serbatoio sopraelevato
+Serbatoio in pressione
+Accumulatore di pressione 
+generico o per gas in pressione
+Accumulatore di pressione a 
+membrana
+Accumulatore di pressione, a 
+pistone e contropressione a 
+fluido
+Accumulatore di pressione, a 
+pistone e peso
+Accumulatore di pressione, a 
+pistone e molla
+Orifizio riduttore di pressione, 
+sensibile alla viscosità
+Orifizio riduttore di pressione, 
+non sensibile alla viscosità
+Orifizio riduttore di pressione, 
+ad apertura variabile
+Orifizio, diaframma o flangia 
+tarata
+Venturimetro
+Boccaglio
+Spruzzatore
+Spia di flusso a vetro
+Silenziatore
+Disco di rottura per serbatoio
+
+[PAG 370]
+V-36
+SEGNI GRAFICI
+6.8  Componenti attivi per tubazioni
+Pompa (segno generale)
+Pompa a due sensi di flusso
+Pompa dosatrice o a portata 
+variabile
+Pompa assiale a elica o a vite
+Pompa a palette scorrevoli
+Pompa a ingranaggi
+Pompa a capsulismo
+Pompa a stantuffo
+Pompa a diaframma
+Pompa centrifuga
+Pompa ad eiezione
+Pompa elettromagnetica a 
+fluidi conduttori
+Compressore (segno generale)
+Compressore centrifugo
+Compressore assiale
+Compressore a palette 
+scorrevoli
+Compressore a capsulismo
+Compressore a stantuffo
+Ventilatore (segno generale)
+Ventilatore centrifugo
+Ventilatore assiale
+Motore elettrico
+Motore termico
+Motore a turbina idraulica
+Motore idraulico a portata 
+costante
+Motore idraulico a due sensi di 
+flusso
+Motore idraulico a portata 
+variabile
+Motore pneumatico a portata 
+costante
+Motore pneumatico a portata 
+variabile
+M
+M
+M
+
+[PAG 371]
+SEGNI GRAFICI
+V-37
+6.9  Strumenti di misura
+6.10  Apparecchi di controllo
+Strumento di misura a indice
+Strumento di misura digitale
+Strumento di misura 
+registratore
+Strumento di misura 
+integratore
+Strumento di misura a indice 
+inserito localmente
+Strumento di misura a indice 
+inserito a distanza
+Strumento di misura digitale 
+inserito localmente
+Strumento di misura digitale 
+inserito a distanza
+Strumento di misura 
+registratore inserito localmente
+Strumento di misura 
+registratore inserito a distanza
+Strumento di misura 
+integratore inserito localmente
+Strumento di misura 
+integratore inserito a distanza
+Strumento di misura a indice 
+abbinato a una funzione logica
+Strumento di misura a indice 
+abbinato a una funzione 
+analogica (trasmissione di 
+segnale continuo)
+Strumento di misura digitale 
+abbinato a una funzione logica
+Strumento di misura digitale 
+abbinato a una funzione 
+analogica (trasmissione di 
+segnale continuo)
+Strumento di misura 
+registratore abbinato a una 
+funzione logica
+Strumento di misura 
+registratore abbinato a una 
+funzione analogica (trasmis-
+sione di segnale continuo)
+Strumento di misura 
+integratore abbinato a una 
+funzione logica
+Strumento di misura 
+integratore abbinato a una 
+funzione analogica (trasmis-
+sione di segnale continuo)
+Captatore di accelerazione
+Captatore di deformazione tipo 
+piezoelettrico
+Captatore di deformazione tipo 
+estensimetrico
+Captatore di inquinamento
+Captatore di livello a 
+galleggiante
+Captatore di livello a sonda 
+capacitiva
+Captatore di livello idrostatico 
+Captatore di portata a 
+mulinello
+*
+#
+*
+*
+#
+#
+#
+#
+#
+#
+#
+#
+
+
+
+
+Pianta
+Vista laterale
+
+[PAG 372]
+V-38
+SEGNI GRAFICI
+Captatore di portata a paletta
+Captatore di portata a tubo 
+pitot
+Captatore di portata a 
+ultrasuoni
+Captatore di rotazione 
+angolare a variazione di 
+capacità
+Captatore di rotazione 
+angolare a variazione di flusso
+Captatore di rotazione 
+angolare a variazione di 
+resistenza
+Captatore di rotazione 
+angolare a conteggio di 
+impulsi
+Captatore di pressione a 
+membrana
+Captatore di pressione 
+piezoelettrico
+Captatore di spostamento a 
+variazione di flusso magnetico
+Captatore di spostamento a 
+variazione di resistenza
+Sonda di temperatura a 
+dilatazione di fluido
+Sonda di temperatura a 
+resistenza
+Sonda termica a termocoppia
+Convertitore di segnale
+(segno generale)
+Convertitore di segnale con 
+separazione galvanica
+Convertitore di segnale con 
+uscita analogica senza separa-
+zione galvanica
+Convertitore di segnale con 
+uscita analogica senza separa-
+zione galvanica (ammesso)
+Convertitore di segnale con 
+uscita analogica e separazione 
+galvanica
+Convertitore di segnale con 
+uscita analogica e separazione 
+galvanica (ammesso)
+Convertitore di segnale con 
+uscita digitale senza 
+separazione galvanica
+Convertitore di segnale con 
+uscita digitale e separazione 
+galvanica
+Convertitore di segnale con 
+uscita in tensione senza 
+separazione galvanica
+Convertitore di segnale con 
+uscita in tensione e 
+separazione galvanica
+Convertitore di segnale con 
+uscita in corrente senza 
+separazione galvanica
+Convertitore di segnale con 
+uscita in corrente e separazione 
+galvanica
+Convertitore di segnale con 
+uscita tramite contatto privo di 
+tensione
+Trasduttore di accelerazione
+Trasduttore di deformazione
+Trasduttore di forza
+Trasduttore di frequenza
+Trasduttore di inquinamento
+X
+Y
+X//Y
+X
+
+X
+
+X//
+
+X//
+X
+
+X//
+X
+U
+X//U
+X
+I
+X// I
+X//
+a
+Y
+
+Y
+F
+Y
+f
+Y
+iq
+Y
+
+[PAG 373]
+SEGNI GRAFICI
+V-39
+7  LETTERE DI IDENTIFICAZIONE DELLE APPARECCHIATURE ELETTRI-
+CHE
+Per identificare le varie apparecchiature (e materiali) che vengono utilizzate per la ste-
+sura di uno schema di un circuito elettrico o elettronico si utilizzano delle sigle standar-
+dizzate secondo le raccomandazioni delle norme IEC 750 (riprese nella norma CEI 3-43).
+Trasduttore di livello
+Trasduttore di portata
+Trasduttore di pressione
+Trasduttore di prossimità
+Trasduttore di rumore
+Trasduttore di spostamento 
+angolare
+Trasduttore di spostamento 
+lineare
+Trasduttore di temperatura
+Trasduttore di velocità 
+angolare 
+Trasduttore di velocità lineare
+Trasduttore di vibrazione
+A
+ASSEMBLAGGI E SOTTOASSEMBLAGGI: amplificatori a componenti discreti,
+amplificatori magnetici, laser, masertelai, cassetti, rak, piastre a circuito stampato,
+assiemi di più componenti
+B
+TRASDUTTORI DA UNA GRANDEZZA NON ELETTRICA AD UNA GRAN-
+DEZZA ELETTRICA E VICEVERSA: termoelementi, termistori, cellule fotoelet-
+triche e termoconduttive, fotoelementi, fotodiodi, convertitori di misura,
+trasduttori di segnali, generatori di impulsi, iniziatori di prossimità, celle di carico,
+tachimetriche, sincro, generatori di Hall, microfoni, testine di lettura, altoparlanti,
+auricolari
+C
+CONDENSATORI
+D
+SISTEMI BINARI: equipaggiamenti binari e digitali di comando e regolazione,
+temporizzatori, regolatori digitali, elementi bistabili e monostabili, registratori,
+contatori di impulsi, memorie magnetiche, calcolatori
+E
+MATERIALI DIVERSI (apparecchiature elettriche non elencate sotto altre let-
+tere): illuminazione, riscaldamento, ventilazione, filtri per polvere, per fumi
+F
+DISPOSITIVI DI PROTEZIONE: fusibili, relè di protezione, di misura, di con-
+trollo, scaricatori
+G
+GENERATORI (dispositivi di alimentazione): dinamo, alternatori, accumulatori,
+carica batterie, convertitori, raddrizzatori, stabilizzatori di tensione
+H
+DISPOSITIVI DI SEGNALAZIONE: lampade di segnalazione, diodi luminosi,
+indicatori a cartellino e digitali, suonerie, sirene, segnali acustici e luminosi in
+genere
+L
+Y
+Q
+Y
+ps
+Y
+Al
+Y
+dB
+Y
+
+Y
+l
+Y
+T
+Y
+
+Y
+v
+Y
+vb
+Y
+
+[PAG 374]
+V-40
+SEGNI GRAFICI
+BIBLIOGRAFIA
+NORME CEI, Edizioni CEI Comitato Elettrotecnico Italiano, Milano.
+ORTOLANI G., VENTURI E., Impianti elettrici civili, Hoepli, Milano, 2007.
+ORTOLANI G., VENTURI E., Impianti elettrici industriali, Hoepli, Milano, 2008.
+ORTOLANI G., VENTURI E., Impianti elettrici automatici, Hoepli, Milano, 2009.
+K
+RELÈ E CONTATTORI: relè di comando, ausiliari, a tempo, reed, contattori di
+potenza, telesalvamotori
+L
+INDUTTANZE: reattanze e bobine di spianamento
+M
+MOTORI
+N
+SISTEMI ANALOGICI: apparecchiature analogiche per la tecnica dei comandi e
+della regolazione, regolatori e calcolatori analogici, circuiti integrati con funzioni
+analogiche, regolazione elettronica ed elettromeccanica, amplificatori operazionali
+P
+STRUMENTI DI MISURA, DISPOSITIVI DI PROVA: strumenti ad indice o
+lamelle, contatori, indicatori digitali, orologi programmatori, unità video, simula-
+tori, oscillatori, registratori, apparecchi di prova e controllo
+Q
+APPARECCHI PER CIRCUITI DI POTENZA: interruttori, sezionatori, avviatori,
+invertitori
+R
+RESISTENZE: resistenze regolabili, di precisione, di protezione, di avviamento, di
+frenatura, shunt
+S
+APPARECCHI PER CIRCUITI DI COMANDO: selettori, predispositori, commu-
+tatori, combinatori, finecorsa, pulsanti, tastiere, commutatori di misura, sensori di
+livello e di pressione
+T
+TRASFORMATORI: trasformatori di potenza, di comando ausiliari, di misura, di
+isolamento
+U
+MODULATORI, CONVERTITORI: discriminatori, demodulatori, convertitori di
+frequenza, codificatori convertitori, traslatori telegrafici
+V
+TUBI ELETTRONICI, SEMICONDUTTORI: tubi elettronici, tubi a scarica di
+gas, diodi, transistori, tiristori
+W
+MATERIALE DI TRASMISSIONE, GUIDE D'ONDA, ANTENNE: conduttori,
+cavi, sbarre, guide d'onda, accoppiatori direzionali in guida d'onda, dipoli, antenne
+paraboliche
+X
+TERMINALI, PRESE, SPINE: prese e spine di connessione e di misura, jack, pia-
+stre con terminali, strisce a saldare, raccordi, capicorda, connettori
+Y
+APPARECCHI MECCANICI AZIONATI ELETTRICAMENTE: valvole, freni,
+frizioni
+Z
+TRASFORMATORI ADATTATORI DI IMPEDENZA, EQUALIZZATORI, LIMI-
+TATORI DI BANDA, TERMINAZIONI: equilibratori di cavi, compressori espan-
+sori di segnale, filtri a cristalli
+
+[PAG 375]
+Sezione VI
+CAD
+INDICE
+pag.
+1    ELEMENTI FONDAMENTALI. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.1    Avviare AutoCAD . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.2    Attivazione di un comando. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+1.3    Richiesta di aiuto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+1.4    Impostazione delle preferenze . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+1.5    Sistema di coordinate di AutoCAD . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+2    PREPARAZIONE DEL FOGLIO DI LAVORO . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+2.1    Griglia e Snap di AutoCAD . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+2.1.1    Modificare la spaziatura della Griglia e la risoluzione di Snap . . . .
+11
+2.2    Icona delle coordinate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 12
+2.3    Squadratura del foglio di lavoro. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+2.3.1    Assegnare una larghezza alle linee della squadratura . . . . . . . . . . .
+13
+2.3.2    Realizzazione del blocco del titolo . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+2.3.3    Realizzazione delle linee interne. . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+2.3.4    Linea verticale che divide il terzo rettangolo . . . . . . . . . . . . . . . . .
+15
+2.4    Salvataggio del lavoro ed uscita dal programma . . . . . . . . . . . . . . . . . . . .
+15
+2.5    Apertura di un file esistente . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+2.6    Creazione di layer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+2.7    Spostamento della squadratura sul proprio layer . . . . . . . . . . . . . . . . . . . .
+17
+2.8    Creazione di stili di testo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+2.9    Inserimento del testo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+2.10    Salvataggio del disegno come modello . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+3     NUOVO DISEGNO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+3.1    Modifica del testo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+3.2    Disegnare delle linee . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+3.3    Uso del comando Annulla . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+3.4    Realizzazione di un cerchio . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+3.5    Salvataggio automatico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+4    SELEZIONE DEGLI OGGETTI. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+4.1    Aggiungere una linea al disegno precedente . . . . . . . . . . . . . . . . . . . . . . .
+25
+4.2    Selezione a puntamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+4.3    Selezione di oggetti già selezionati in precedenza . . . . . . . . . . . . . . . . . . .
+26
+4.4    Selezione con finestra . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+27
+4.5    Rimozione di oggetti dall’insieme di selezione . . . . . . . . . . . . . . . . . . . . .
+28
+4.6    Aggiunta di oggetti all’insieme di selezione. . . . . . . . . . . . . . . . . . . . . . . .
+28
+4.7    Selezione ad intersezione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+28
+4.8    Selezione con intercetta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+29
+
+[PAG 376]
+VI-2
+CAD
+4.9    Annullare il comando precedente . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+30
+5    DISEGNO DELLA STELLA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+30
+5.1    Costruzione del triangolo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+30
+5.2    Centratura del triangolo sul cerchio. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+31
+5.3    Creazione delle altre tre punte della stella . . . . . . . . . . . . . . . . . . . . . . . . . 
+32
+5.4    Spostamento del secondo triangolo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+32
+5.5    Centratura del disegno. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+33
+5.6    Snap ad oggetto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+33
+5.7    Taglio di entità . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+34
+5.8    Stampa del disegno . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+38
+6    SOLUZIONE DI UNA RETE TRIFASE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+38
+6.1    Presentazione del problema. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+39
+6.2    Preparazione del foglio . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+40
+6.3    Grafico delle tensioni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+41
+6.4    Correnti note . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+43
+6.5    Costruzioni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+43
+6.6    Correnti di linea . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+45
+6.7    Lettura dei risultati . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+45
+7    PROIEZIONI ORTOGONALI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+47
+7.1    Disegno in proiezione ortogonale di un supporto . . . . . . . . . . . . . . . . . . . 
+48
+7.2    Iniziare il nuovo disegno . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+48
+7.3    Aggiornamento delle impostazioni del foglio di lavoro. . . . . . . . . . . . . . . 
+49
+7.4    Disegno della vista dall’alto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+51
+7.4.1    Taglio dei due cerchi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+52
+7.4.2    Altri spigoli in vista . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+52
+7.5    Vista frontale. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+53
+7.5.1    Rilievo circolare. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+54
+7.5.2    Nervatura di rinforzo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+54
+7.5.3    Raccordo delle linee. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+54
+7.6    Vista dal lato sinistro. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+55
+7.6.1    Disegno della nervatura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+56
+7.6.2    Variabile Trimmode. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+56
+7.6.3    Rilievo circolare nella vista di fianco. . . . . . . . . . . . . . . . . . . . . . . 
+57
+7.7    Disegno delle linee nascoste . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+58
+7.7.1    Vista di fronte . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+58
+7.7.2    Vista dall’alto. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+59
+7.7.3    Vista da sinistra . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+60
+7.8    Ingrossare gli spigoli in vista. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+61
+7.9    Assi di simmetria. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+62
+7.10    Stampa del disegno . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+62
+8    VISTE IN SEZIONE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+63
+8.1    Disegno di una Flangia . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+63
+8.2    Impostazioni preliminari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+64
+8.3    Vista di fronte . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+65
+
+[PAG 377]
+CAD
+VI-3
+8.3.1    Taglio del cerchio . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+66
+8.3.2    Completamento del perimetro. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+67
+8.3.3    Completamento della vista frontale. . . . . . . . . . . . . . . . . . . . . . . . .
+68
+8.4    Traccia del piano di sezione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+68
+8.5    Vista di fianco in sezione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+69
+8.5.1    Disegno del contorno della vista di fianco in sezione . . . . . . . . . . .
+69
+8.5.2    Altre linee della vista di fianco . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+71
+8.5.3    Spigoli dei fori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+73
+8.5.4    Cimatura degli spigoli. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+74
+8.5.5    Linea nascosta. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+74
+8.6    Linee di sezione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+75
+8.7    Completare il disegno . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+76
+9    QUOTATURA DEI DISEGNI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+78
+9.1    Creazione di uno stile di quota (quotatura del supporto) . . . . . . . . . . . . . .
+79
+9.2    Visualizzare la barra degli strumenti di quotatura . . . . . . . . . . . . . . . . . . .
+83
+9.3    Quotatura della vista di fronte . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+83
+9.3.1    Quote lineari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+83
+9.3.2    Quota continua . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+84
+9.3.3    Quota lineare del diametro del rilievo circolare . . . . . . . . . . . . . . .
+84
+9.3.4    Quotatura dei raggi dei raccordi . . . . . . . . . . . . . . . . . . . . . . . . . . .
+85
+9.4    Quotatura della vista dall’alto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+85
+9.4.1    Quote continue . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+85
+9.4.2    Quote lineari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+86
+9.4.3    Quote dei cerchi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+86
+9.5    Quotatura della vista di fianco . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+86
+9.5.1    Quota da linea di base. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+87
+9.5.2    Quotare i raccordi della nervatura. . . . . . . . . . . . . . . . . . . . . . . . . .
+87
+9.6    Importare lo stile di quota A4 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+88
+10    PROIEZIONI ASSONOMETRICHE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+89
+10.1    Disegno del dado . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+90
+10.2    Impostazioni preliminari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+91
+10.3    Snap assonometrico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+91
+10.4    Disegno del cubo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+92
+10.4.1    Arrotondare i vertici del cubo . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+93
+10.4.2    Taglio delle ellissi e delle linee. . . . . . . . . . . . . . . . . . . . . . . . . . .
+94
+10.5    Cerchi interni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+96
+10.5.1    Motivo di tratteggio . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+97
+10.5.2    Altre linee di costruzione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+98
+10.5.3    Cerchi assonometrici. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+98
+10.5.4    Riempimento dei cerchi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+99
+10.6    Ingrossare le linee . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+100
+10.7    Stampa del disegno . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+101
+10.8    Precisazione sul comando Ellisse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+101
+10.9    Esercizio proposto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+101
