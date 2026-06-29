@@ -21,6 +21,7 @@ jobs:
 
       - name: Analisi PDF v13 (da testi pre-estratti)
         env:
+          BIOSERRA_GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
         run: python3 .github/scripts/analisi_pdf.py
