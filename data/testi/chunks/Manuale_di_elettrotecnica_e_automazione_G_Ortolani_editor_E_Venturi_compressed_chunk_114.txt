@@ -1,0 +1,1598 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 114/116 ===
+Chars: 44,130 | Offset: 4,998,698
+
+
+
+[PAG 2231]
+Contenuto DVD
+Il DVD allegato all’opera mette a disposizione argomenti, esercizi, schemi elettrici,
+schede tecniche e progetti che approfondiscono diversi contenuti del Manuale.
+Nello specifico il DVD è programmato con una interfaccia intuitiva che presenta un
+menù con voci in stretta relazione con la sezione omonima del Manuale. In quasi tutte le
+voci di menù si possono trovare indicazioni per documentazione, datasheet e software.
+Il materiale contenuto nel DVD è disponibile principalmente nei formati pdf, doc,
+dwg e altri per i quali è richiesto il relativo software di gestione.
+Nella sezione Matematica sono stati riportati esercizi leggibili e gestibili con Micro-
+soft Office Excel e sei software per la matematica e la geometria.
+Nella sezione Chimica sono presenti tre software per visualizzare dati riguardanti la
+Tavola periodica, il peso molecolare e gli isotopi.
+Nella sezione Fisica sono stati inseriti tre software per effettuare conversioni di unità
+di misura e calcolare le proprietà termodinamiche dei refrigeranti.
+Nel sezione Normativa è possibile consultare i testi dei Decreti legge, Decreti legisla-
+tivi, Decreti ministeriali, Decreti del Presidente delle Repubblica, Direttive e Leggi che
+hanno regolamentato o che regolamentano il comparto degli impianti elettrici e della sicu-
+rezza. Sono inclusi anche l’elenco dei Comitati tecnici e delle norme CEI attualmente in
+vigore, i simboli delle grandezze e delle unità di misura.
+Nella sezione Segni grafici è disponibile una raccolta di segni grafici CEI.
+Nella sezione CAD sono stati inseriti l’approfondimento di un esercizio, una raccolta
+di librerie in formato dwg e nove software per il disegno tecnico.
+Nella sezione Elettrotecnica generale si possono trovare un file di documentazione
+sui valori di resistenza, induttanza e suscettanza dei cavi elettrici e tre software per la con-
+versione di unità di misura e per il calcolo del consumo di vapore nelle turbine.
+Nella sezione Macchine elettriche è stata inserita una serie di documenti sui motori
+elettrici.
+Nella sezione Misure elettriche è presente un approfondimento sull’oscilloscopio e un
+software di una sua simulazione.
+Nella sezione Impianti elettrici è possibile consultare una nutrita serie di documenti
+tecnici e una raccolta di schemi in formato gif; sono disponibili due software riguardanti il
+dimensionamento dei cavi e il rischio di fulminazione.
+Nella sezione Illuminotecnica si trova un’ampia documentazione su prodotti Osram e
+Philips; sono inoltre presenti cinque software per il dimensionamento illuminotecnico di
+ambienti interni ed esterni.
+Nella sezione Trazione elettrica sono disponibili cataloghi di documentazione tecnica.
+Nella sezione Sensori e trasduttori sono riportati numerosi datasheets e un’abbon-
+dante documetazione sui principali sensori.
+Nella sezione Automazione sono presenti una serie di documenti tecnici, i file degli
+esercizi riportati sul Manuale e due software. L’esecuzione degli esercizi richiede la pre-
+senza del software per la programmazione del PLC Micro TSX37, prodotto dalla  Schnei-
+der Electric.
+Nella sezione Sistemi sono disponibili dei documenti che approfondiscono concetti
+teorici sviluppati nella omonima sezione del Manuale.
+
+[PAG 2232]
+Nella sezione Tecnologie BUS è possibile consultare una serie di documenti sui prin-
+cipali protocolli di comunicazione e è disponibile il software Tibus della BTicino.
+Nella sezione Elettronica A/D si trovano alcuni datasheets, una documentazione tec-
+nica sull’oscilloscopio e quattro software.
+Nella sezione Elettronica di potenza si trovano diversi datasheets.
+Nella sezione Tecnologie elettriche sono disponibili dei fascicoli sui cavi elettrici.
+Nella sezione Progettazione elettrica si possono trovare un prezzario, una serie di pro-
+getti elettrici ed elettronici e un software.
+I requisiti minimi del sistema sono:
+–  Processore: Pentium III o superiore
+–  Memoria di lavoro: 128 MB di RAM
+–  Sistema operativo: Windows XP o superiore
+–  Hard disk per installare il software allegato (il DVD non necessita di installazione)
+–  Scheda video: VGA o superiore con capacità di risoluzione 1280x1024, 65 536 colori
+(con risoluzioni inferiori si ha un peggioramento della qualità delle immagini)
+–  Mouse.
+Il testo, scritto in linguaggio DHTML, può essere letto correttamente solamente con le
+versioni 6.0 o superiori di Internet Explorer.
+–  Se Windows è installato sul computer ed è impostato per l’AUTORUN, il DVD, una
+volta inserito nel lettore, si avvierà automaticamente e presenterà la videata iniziale. Se,
+invece, la funzione AUTORUN è disabilitata, scegliere START (AVVIO), la voce di
+menù ESEGUI e digitare il comando X:\index.htm (X viene sostituito dalla lettera che
+identifica l’unità DVD).
+–  Se è installato Windows XP, occorre sbloccare la protezione per consentire l’esecu-
+zione degli Script o dei controlli ActiveX contenuti.
+–  La videata iniziale completa consente di scegliere l’argomento dal menù visualizzato
+a sinistra; in questo caso, è sufficiente posizionarsi con il mouse sulla voce principale
+della cartella desiderata per visualizzare le voci del sottomenù.
+–  Cliccando la voce desiderata (per esempio, documentazione, datasheet, software ecc.),
+appariranno nella finestra principale i file disponibili.
+–  Per vedere il contenuto di un file di documentazione, è sufficiente mandarlo in esecu-
+zione.
+–  Per installare un software allegato basta cliccare il file principale e, nel messaggio che
+compare, scegliere ESEGUI.
+–  È possibile anche installare il software allegato utilizzando RISORSE DEL COMPU-
+TER; in questo secondo caso, selezionare il disco MdEeA_2ed (X:), raggiungere la car-
+tella del software desiderato e seguire le indicazioni che compaiono a video.
+–  Per abbandonare il contenuto del DVD e chiudere il browser (per esempio Internet
+Explorer), scegliere ESCI del menu FILE.
+
+[PAG 2233]
+Indice analitico
+per sezioni
+INDICE
+pag.
+SEZIONE I - MATEMATICA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+SEZIONE II - CHIMICA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+SEZIONE III - FISICA  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+SEZIONE IV - NORMATICA, LEGISLAZIONE E SICUREZZA  . . . . . . . . . . . . .
+13
+SEZIONE V - SEGNI GRAFICI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+SEZIONE VI - CAD  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+SEZIONE VII - ELETTROTECNICA GENERALE  . . . . . . . . . . . . . . . . . . . . . . . .
+18
+SEZIONE VIII - MACCHINE ELETTRICHE . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+SEZIONE IX - MISURE ELETTRICHE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+SEZIONE X - IMPIANTI ELETTRICI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+29
+SEZIONE XI - ILLUMINOTECNICA  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+SEZIONE XII - TRAZIONE ELETTRICA  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+37
+SEZIONE XIII - SENSORI E TRASDUTTORI  . . . . . . . . . . . . . . . . . . . . . . . . . . .
+40
+SEZIONE XIV - AUTOMAZIONE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+43
+SEZIONE XV - SISTEMI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+44
+SEZIONE XVI - TECNOLOGIE BUS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+47
+SEZIONE XVII - ELETTRONICA ANALOGICA E DIGITALE . . . . . . . . . . . . . .
+48
+SEZIONE XVIII - ELETTRONICA DI POTENZA . . . . . . . . . . . . . . . . . . . . . . . . .
+52
+SEZIONE XIX - TECNOLOGIE ELETTRICHE ED ELETTRONICHE  . . . . . . . .
+55
+SEZIONE XX - PROGETTAZIONE ELETTRICA ED ELETTRONICA . . . . . . . .
+58
+
+[PAG 2234]
+2
+INDICE ANALITICO PER SEZIONI
+Sezione I
+Matematica
+Addizione e sottrazione di matrici, I-17
+Anomalia, I-46
+, di un numero complesso, I-64
+Apotema, I-42
+Archi associati, I-34
+Area del triangolo, I-39
+Argomento di un numero complesso, I-64
+Asintoti, obliqui, I-94
+, orizzontali, I-93
+, verticali, I-93
+Asse polare, I-46
+Bernoulli, equazioni differenziali di, I-151
+Biiettiva, funzione, I-69
+Biiezione, I-69
+Binet, teorema di, I-21
+Binomio, I-10
+Bolzano, teorema di, I-68
+Briggs, formule di, I-39
+Calcolo combinatorio, I-6
+Carnot, teorema di, I-38
+Cartesio, regola di, I-15
+, teorema di, I-30
+Cauchy, criterio di convergenza, I-127
+, serie prodotto di, I-130
+, teorema di, I-156
+Cerchio, I-42, 43
+Cilindro retto, I-44
+Circonferenza, I-42, 43, 50, 51
+Clairaut, equazioni differenziali di, I-155
+Codominio di una funzione, I-68
+Coefficiente angolare, I-49
+Coefficienti binomiali, I-8, 137
+Combinazioni, con ripetizione, I-8
+, semplici, I-7
+Componente di un vettore, I-57
+Componenti cartesiane di un vettore, I-59
+Coniche, I-50
+Coniugato di un numero complesso, I-63
+Cono retto, I-44
+Continuità delle funzioni inverse, I-91
+Coordinate, cartesiane, I-45
+, cartesiane nello spazio, I-55
+, cartesiane ortogonali, I-55
+, logaritmiche, I-47, 48
+, polari, I-46, 47
+Corrispondenza biunivoca, I-69
+Cosecante di un angolo, I-34
+, iperbolica, I-77
+Coseno, di un angolo, I-33
+, iperbolico, I-76
+Cotangente, di un angolo, I-33
+, iperbolica, I-76, 77
+Cramer, metodo di, I-28
+, regola di, I-22, 24
+, teorema di, I-23
+Criterio di, convergenza di Cauchy, I-127
+, convergenza di D’Alembert, I-128
+, Leibniz, I-129
+, Raabe, I-129
+Cubo, I-44
+Curva integrale, I-148
+, inviluppo, I-155
+Cuspidi, I-97, 116
+D’Alembert, criterio di convergenza, I-128
+, equazioni differenziali, I-156
+, teorema di, I-26
+Darboux-Bolzano, teorema di, I-91
+De L’Hospital, teorema di, I-103
+Derivata, significato geometrico, I-96
+, del prodotto di due funzioni, I-98
+, del quoziente di due funzioni, I-98
+, della funzione potenza ad esponente 
+reale, I-99
+, della potenza n-esima di una funzione, 
+I-98
+, della somma di due funzioni, I-98
+, delle funzioni inverse, I-99, 100
+, di una funzione, I-96
+, di una funzione composta, I-99, 108
+, di una funzione per una costante, I-98
+, logaritmica, I-99
+, parziale, I-106
+, prima, studio di, I-112
+, seconda, studio di, I-116
+Derivate delle funzioni più comuni, I-100
+
+[PAG 2235]
+SEZIONE I MATEMATICA
+3
+Derivate successive, I-102 
+Determinante di matrici di ordine supe-
+riore al 2°, I-19
+Determinante di una matrice del 1° ordine,
+I-19
+, del 2° ordine, I-19
+, quadrata, I-19
+Determinante Wronksiano, I-158, 161
+Determinanti, proprietà, I-20, 21
+Diagonale di una matrice, I-16
+Differenza di vettori, I-57, 58
+Differenziale, di una funzione, I-104
+, totale I-107
+Dilatazione di un grafico, I-72
+Dini, teorema di, I-108
+Direzione di un vettore, I-57
+Dirichelet, teorema di, I-126
+Discontinuità di, prima specie, I-89
+, seconda specie, I-89
+, terza specie, I-90
+Disequazioni, I-28
+, principi di equivalenza, I-28
+, proprietà, I-28
+, di 2° grado, I-30, 31
+, fratte, I-29
+Disposizioni, con ripetizione, I-6
+, semplici, I-6
+Distanza di, due punti, I-48, 55
+, un punto da una retta, I-50
+Divisibilità di due polinomi, I-12
+Divisione di due polinomi, I-13
+Dominio di una funzione, I-68, 71
+Ellisse, I-53
+Equazione, caratteristica (equazioni diffe-
+renziali), I-159
+, del piano, I-55
+, del piano passante per tre punti, I-56
+, del piano passante per un punto, I-56
+, della retta, I-48
+, della retta, forma esplicita, I-49
+, della retta, forma segmentaria, I-49
+, segmentaria del piano, I-56
+Equazioni, equivalenti, I-26
+, grado, I-26
+, impossibili, I-26
+, indeterminate, I-26
+, principi di equivalenza, I-26
+, radici, I-26
+, soluzioni, I-26
+Equazioni di 2° grado, I-30
+, discriminante, I-30
+, formula risolutiva, I-30
+, formula risolutiva ridotta, I-30
+, regola dei segni, I-30
+Equazioni di primo grado ad una inco-
+gnita, I-26
+Equazioni differenziali, I-148
+, integrale generale, I-148
+, integrale particolare, I-148
+, integrali singolari, I-149
+Equazioni differenziali a variabili, separa-
+bili, I-150
+, separate, I-149
+Equazioni differenziali del primo ordine, 
+I-149
+, in forma non normale, I-155
+Equazioni differenziali di, Bernoulli, I-151
+, Clairaut, I-155
+, D’Alembert, I-156
+, ordine superiore al secondo, I-160
+Equazioni differenziali lineari del primo 
+ordine, I-150
+Equazioni differenziali lineari di ordine n, 
+non omogenee, I-162
+, omogenee, I-160
+, omogenee a coefficienti costanti, I-161
+Equazioni differenziali omogenee, I-153
+Equazioni differenziali ordinarie del 2° 
+ordine, I-156, 157, 158
+, lineari complete, I-159
+, lineari omogenee, I-158
+, lineari omogenee a coefficienti costanti, 
+I-159
+, omogenee, I-158
+Equazioni frazionarie, I-27
+Erone, formula di, I-39
+Euclide, procedimento di,  I-14
+Euclide, teoremi, I-39
+Eulero, formule di, I-65, 66
+Eulero, formule di (rif.), I-160
+Eulero, numero di, I-124
+Fascio di rette passanti per un punto, I-50
+Fattoriale, I-6
+Forma, cartesiana di un vettore, I-59
+, trigonometrica dei numeri complessi, I-
+64
+Formula binomiale, I-12
+, di Erone, I-39
+
+[PAG 2236]
+4
+INDICE ANALITICO PER SEZIONI
+, di Liouville, I-159
+Formuladi MacLaurin, I-135
+, di Moivre (potenza di numeri com-
+plessi), I-65
+, di Newton rif., I-8
+, di Newton-Leibniz, I-144
+, di Stifel, I-8
+, di Taylor, I-134, 135
+Formule, di duplicazione, I-36
+, di addizione, I-36
+, di addizione e sottrazione (funzioni 
+iperboliche), I-78
+, di bisezione, I-36
+, di bisezione (funzioni iperboliche), I-79
+, di Briggs, I-39
+, di Eulero, I-65, 66
+, di Eulero (rif.), I-160
+, di moltiplicazione (funzioni iperboli-
+che), I-78
+, di prostaferesi, I-37
+, di Werner, I-37
+, parametriche, I-36
+, per somma, differenza e prodotto di 
+funzioni iperboliche, I-78
+Funzione, arcocoseno, I-75
+, arcoseno, I-75
+, arcotangente, I-75
+, biiettiva, I-69
+, composta, I-69
+, coseno, I-75
+, cotangente, I-75
+, dispari, I-69
+, esponenziale, I-74
+, esponenziale a esponente complesso, I-
+65
+, iniettiva, I-68
+, inversa, I-69
+, lineare, I-73, 74
+, logaritmica, I-74
+, omografica, I-54, 55
+, pari, I-69
+, seno, I-75
+, suriettiva, I-68
+, tangente, I-75
+Funzioni, codominio, I-68
+, dominio, I-68, 71
+, grafico, I-69
+, studio completo, I-111
+, algebriche, I-71
+, con moduli, I-73
+, continue, I-88
+, crescenti, I-70
+, decrescenti, I-70
+, di più variabili, I-105
+, goniometriche di angoli particolari, I-34
+, implicite, I-108
+, inverse, continuità, I-91
+, inverse delle funzioni trigonometriche,
+I-75
+Funzioni, iperboliche, I-76, 77, 78, 79
+, formule di addizione e sottrazione, I-78
+, formule di bisezione, I-79
+, formule di moltiplicazione, I-78
+, formule per somma, differenza e pro-
+dotto,  I-78
+, potenze di, I-78
+, relazioni tra, I-77
+Funzioni, irrazionali, I-71
+, monotòne, I-70
+, periodiche, I-70
+, polinomiali, I-11
+, razionali fratte, I-71
+, razionali intere, I-71
+, reali di una variabile reale, I-68
+, trascendenti, I-71
+, trigonometriche, I-75
+, trigonometriche, relazioni tra le, I-35, 
+36
+Gauss, metodo di risoluzione di un 
+sistema di equazioni, I-25
+Geometria, analitica nel piano, I-45
+, analitica nello spazio, I-55
+, piana, I-39
+, solida, I-43
+Grado, di un monomio, I-9
+, di un polinomio, I-10
+, sessagesimale, I-32
+Grafici di funzioni, I-73
+Grafico, dilatazione, I-72
+, di una funzione, I-69
+, trasformazioni, I-72
+, trasformazioni per simmetrie, I-73
+, traslazione, I-72
+Hessiano, I-110
+Immaginario, I-62
+Infinitesimi ed infiniti, I-86, 87
+Iniettiva, funzione, I-68
+
+[PAG 2237]
+SEZIONE I MATEMATICA
+5
+Insieme discreto, I-68
+Integrale, generale, I-148
+Integrale particolare, I-148
+Integrali, curvilinei, I-146
+, definiti, I-143
+, delle funzioni elementari, I-139
+, impropri, I-146
+, indefiniti, I-138, 139
+, singolari, I-149
+Integrazione, regole, I-140
+, di funzioni razionali fratte, I-142
+, per parti, I-141
+, per scomposizione, I-140
+, per sostituzione, I-140
+Intercetta, I-49
+Intervalli, I-66
+Intorni, circolari, I-67
+, di un numero, I-66, 67
+Intorno, destro, I-67
+, sinistro, I-67
+Iperbole, I-54
+, equilatera, I-54
+Kroneker, teorema di, I-21
+La retta nello spazio, I-56
+Lagrange, procedimento di, I-162
+, teorema di, I-102
+Laplace, 2° teorema, I-21
+, regola di, I-20
+Leibniz, criterio di, I-129
+Limite, di una successione, I-120
+, superiore di una successione, I-122
+, finito di una funzione, I-79
+, finito di una funzione per x che tende 
+all’infinito, I-80
+, infinito di una funzione, I-80
+, infinito di una funzione per x che tende 
+all’infinito, I-81
+, sinistro e destro finiti di una funzione, 
+I-80
+, sinistro e destro infiniti di una funzione,
+I-80
+Limiti, I-79
+, di successioni particolari, I-124
+, finiti, operazioni, I-82
+, infiniti, operazioni, I-83, 84, 85
+, notevoli, I-92, 93
+Liouville, formula di, I-159
+MacLaurin, formula di, I-135
+, serie di, I-134, 135
+, sviluppo di funzioni in serie, I-136, 
+137, 138
+Massimi e minimi di funzioni di più varia-
+bili, I-109
+Massimo comun divisore di, monomi, I-10
+, polinomi, I-14
+Massimo relativo, I-113
+Matrice, caratteristica di una, I-21
+, cofattore di un elemento di una,  I-19
+, complementare, I-17
+, complemento algebrico di un elemento 
+di una, I-19
+, diagonale, I-16
+, diagonale di una, I-16
+, minore complementare, I-19
+, minore di una, I-21
+, nulla, I-16
+, quadrata, I-16
+, rango di una, I-21
+, simmetrica, I-16
+, sottomatrice, I-21
+, triangolare alta, I-16
+, triangolare bassa, I-16
+, unità, I-16
+Matrici, I-15
+, addizione e sottrazione, I-17
+, prodotto, I-18
+, opposte, I-16
+, trasposte, I-16
+, uguali, I-16
+Mertens, teorema di, I-130
+Metodo di Cramer, I-28
+Minimo comune multiplo di, monomi, I-10
+, polinomi, I-14
+Minimo relativo, I-113
+Modulo, I-46
+, di un numero complesso, I-64
+, di un vettore, I-57
+Moivre, formula di, I-65
+Monomi, I-8
+, operazioni, I-9
+Monomio, grado di un, I-9
+Nepero, numero di, I-124
+Newton, formula di, I-8
+Newton-Leibniz, formula di, I-144
+Numeri complessi, I-61
+, anomalia, I-64
+
+[PAG 2238]
+6
+INDICE ANALITICO PER SEZIONI
+, argomento, I-64
+Numeri complessi, forma trigonom., I-64
+Numeri complessi modulo, I-64
+, operazioni, I-62, 63
+, rappresentazione geometrica, I-63
+Numero di, Eulero, I-124
+, Nepero, I-124
+Operazioni con i, limiti finiti, I-82
+, limiti infiniti, I-83, 84, 85
+, monomi, I-9
+, numeri complessi, I-62, 63
+, numeri complessi in forma trigonome-
+trica, I-65
+, polinomi, I-11
+Parabola, I-51, 52, 53
+Parallelepipedo rettangolo, I-43
+Parallelogramma, I-40
+Periodicità di una funzione, I-112
+Permutazioni, con ripetizione, I-7
+, semplici, I-6
+Piani, paralleli, I-56
+, perpendicolari, I-56
+Piramide, regolare, I-44
+, retta, I-44
+Pitagora, teorema di, I-39
+Poligoni, I-40
+Poligono regolare, I-41, 42
+, circoscritto ad una circonferenza, I-42
+, inscritto in una circonferenza, I-42
+Polinomi, divisibilità, I-12
+, divisione, I-12
+, massimo comun divisore, I-14
+, operazioni, I-11
+Polinomio, I-9
+, grado di un, I-10
+, radici, I-15
+, zeri di un, I-11, 13
+, completo, I-10
+, di Taylor, I-135
+, omogeneo, I-10
+, ordinato, I-10
+Potenze di, funzioni iperboliche, I-78
+, un binomio rif., I-8
+Primitiva di una funzione, I-138
+Prisma retto, I-44
+Procedimento di Euclide o delle divisioni 
+successive, I-14
+Prodotti notevoli, I-12
+Prodotto, di due matrici, I-18
+, di un numero per una matrice, I-18
+, di un vettore per uno scalare, I-58
+, scalare, I-60
+, vettoriale, I-61
+Progressione, aritmetica, I-120
+, geometrica, I-120
+, ragione di una, I-120
+Proprietà di ricorrenza, I-8
+Punti, angolosi, I-97, 114, 115 
+, di accumulazione, I-67
+Punto, di accumulazione di una succes-
+sione, I-120
+, di flesso orizzontale, I-113
+, di flesso verticale, I-97, 116
+, di intersezione di due rette, I-49
+, medio di un segmento, I-48
+Quadrato, I-40
+Quadrilatero, I-41
+, circoscritto ad una circonferenza, I-41
+, inscritto in una circonferenza, I-41
+Quadrinomio, I-10
+Raabe, criterio di, I-129
+Radiante, I-32
+Radici di un polinomio, I-15
+Raggio vettore, I-46
+Ragione di una progressione, I-120
+Rapporto incrementale, I-95
+Rappresentazione geometrica dei numeri 
+complessi, I-63
+Regola, dei segni, I-15
+, del parallelogramma (somma di vet-
+tori), I-57, 58
+, della poligonale (vettori), I-58
+, di Cartesio, I-15
+, di Cramer, I-22, 24
+, di Laplace (primo teorema di Laplace),
+I-20
+, di Ruffini, I-13
+, di Sarrus, I-20
+, punta-coda (somma di vettori), I-57
+, di derivazione, I-101, 102
+, di una serie numerica, I-125
+Retta, nello spazio in forma normale, I-56
+, nello spazio in forma parametrica, I-56
+, passante per due punti, I-50
+Rettangolo, I-40
+Rette, I-48
+, incidenti, I-49
+
+[PAG 2239]
+SEZIONE I MATEMATICA
+7
+, parallele, I-49
+, parallele (nello spazio), I-57
+Rette parallele agli assi, I-49
+, perpendicolari, I-50
+, perpendicolari (nello spazio), I-57
+Riemann-Dini, teorema di, I-127
+Rolle, teorema di, I-103
+Rombo, I-41
+Rotazione degli assi, I-46
+Rouchè-Capelli, teorema di, I-22, 24, 25
+Sarrus, regola di, I-20
+Scala logaritmica, I-47
+Scomposizione di un vettore, I-58
+Secante, di un angolo, I-34
+, iperbolica, I-77
+Segmento circolare, I-43
+Semifattoriale, I-6
+Seno, di un angolo, I-33
+, iperbolico, I-76
+Serie di funzioni, I-130
+, insieme di convergenza, I-131
+, teorema del limite, I-131
+, teorema della continuità, I-132
+, teorema di derivazione, I-132
+, teorema di integrazione, I-132
+Serie di potenze, I-132
+, intervallo di convergenza, I-132
+, proprietà, I-133
+Serie di Taylor e di MacLaurin, I-134, 135
+Serie numerica, I-124
+, alternante, I-129
+, assolutamente convergente, I-126
+, carattere, I-124
+, convergente, I-124, 125
+, divergente, I-124
+, incondizionatamente convergente, I-
+126
+, indeterminata, I-124
+, oscillante, I-124
+, proprietà, I-126, 127
+, resto di una, I-125
+, somma parziale di una, I-124
+, termine, I-124
+Serie numeriche, criteri di convergenza,
+I-127, 128, 129
+, operazioni aritmetiche elementari, I-129
+Serie prodotto di Cauchy, I-130
+Settore circolare, I-43
+Sfera, I-45
+Simmetrie di una funzione, I-112
+Sistema lineare, non omogeneo, I-22
+, omogeneo, I-22
+Sistemi di disequazioni, I-29
+, di equazioni di 1° grado, I-27
+, di equazioni di 1° grado, metodo di 
+Cramer, I-28
+, di equazioni di 2° grado, I-32
+, lineari, I-21
+, omogenei, I-24
+Somma, di una serie numerica, I-124
+, di vettori, I-57, 58
+Stifel, formula di, I-8
+Studio completo di una funzione, I-111
+Successione, convergente, I-121
+, crescente, I-122
+, decrescente, I-122
+, divergente, I-121
+, illimitata, I-122
+, indeterminata, I-121
+, limitata superiormente, I-122
+, limite di una, I-120
+, limite superiore, I-122
+, monotòna, I-122, 123
+, numerica, I-119
+, oscillante, I-123
+, periodica, I-123
+, punto di accumulazione di una, I-120
+Suriettiva, funzione, I-68
+Sviluppo di funzioni in serie di MacLau-
+rin, I-136, 137, 138
+Tangente, di un angolo, I-33
+, iperbolica, I-76, 77
+Taylor, formula di, I-134, 135
+, polinomio di, I-135
+, serie di, I-134, 135
+Teorema, dei seni, I-38
+, del confronto, I-81
+, del Dini, I-108
+, della corda, I-38
+, della media, I-144
+, della permanenza del segno, I-81
+, delle proiezioni, I-38
+, dell’esistenza degli zeri, I-91
+, dell’unicità del limite, I-81
+, di Binet, I-21
+, di Bolzano, I-68
+, di Carnot o del coseno, I-38
+, di Cartesio, I-30
+
+[PAG 2240]
+8
+INDICE ANALITICO PER SEZIONI
+, di Cauchy, I-156
+, di Cramer, I-23
+, di D’Alembert, I-26
+Teoremadi Darboux-Bolzano, I-91
+, di de L’Hospital, I-103
+, di Dirichelet, I-126
+, di Kroneker, I-21
+, di Lagrange, I-102
+, di Laplace, I-21
+, di Mertens, I-130
+, di Pitagora, I-39
+, di Riemann-Dini, I-127
+, di Rolle, I-103
+, di Rouchè-Capelli, I-22, 24, 25
+, di Ruffini, I-13
+, di Torricelli-Barrow, I-144
+, di Weierstrass, I-91, 143
+, fondamentale dell’algebra, I-13, 26
+, delle funzioni continue, I-90
+, di derivazione, I-98
+Teoremi, di Euclide, I-39
+, sui limiti di successioni, I-123
+, sulle successioni monotòne, I-123
+Termine noto, I-49
+Torricelli-Barrow, teorema di, I-144
+Trapezio, I-41
+Trasformazioni, di un grafico, I-72
+, di un grafico per simmetrie, I-73
+Traslazione, degli assi, I-45
+, di un grafico, I-72
+Triangolo, area, I-39
+, cerchio circoscritto, I-39
+, cerchio inscritto, I-39
+, equilatero, I-40
+Triangolo rettangolo, relazioni tra lati ed 
+angoli, I-37
+, teorema di Pitagora, I-39
+, teoremi di Euclide, I-39
+Trinomio, I-10
+Unità immaginaria, I-61
+Variabile, dipendente, I-68
+, indipendente, I-68
+Verso di un vettore, I-57
+Versore, I-57
+Vettore, I-16, 17
+, componente di un, I-57
+Vettori, I-57
+, componenti cartesiane, I-59
+, differenza, I-57, 58
+, direzione, I-57
+, forma cartesiana, I-59
+, modulo, I-57
+, prodotto per uno scalare, I-58
+, scomposizione, I-58
+, somma, I-57, 58
+, verso di un, I-57
+, componenti, I-58
+, nello spazio, I-60
+Volumi dei solidi di rotazione, I-145
+Weierstrass, Teorema di, I-91, 143
+Werner, Formule di, I-37
+Wronksiano, determinante, I-158, 161
+Zeri di un polinomio, I-11, 13
+
+[PAG 2241]
+SEZIONE II CHIMICA
+9
+Sezione II
+Chimica
+Atomo, II-2
+affinità elettronica, II-3
+configurazione elettronica, II-4
+, energia di ionizzazione, II-3
+guscio elettronico, II-3
+ione, II-2
+isotopi, II-2
+numero atomico, II-2
+numero di massa, II-2
+numeri quantici, II-4
+orbitale, II-4
+peso atomico, II-2
+peso molecolare, II-2
+principio di esclusione di Pauli, II-4
+tavola periodica degli elementi, II-6
+Chimica inorganica descrittiva, II-33
+Chimica organica, II-34
+classi principali, II-35
+classificazione composti, II-34
+ibridazione, II-34
+Elettrochimica, II-30
+elettrolisi, II-32
+elettroliti, II-30
+equazione di Nerst, II-30
+pila, II-30
+potenziali standard di riduzione, II-31
+Legame chimico, II-7
+covalente o omopolare, II-7
+covalente polarizzato, II-7
+covalente puro, II-7
+dipolo, II-8
+forze di Van der Waals, II-8
+idrogeno, II-8
+ionico, II-7
+metallico, II-8
+unità Pauling, II-7
+Reazioni chimiche, II-23
+acidi e basi, II-25
+di ossidazione, II-29
+entalpia, II-24
+numero di ossidazione, II-29
+pH, II-7
+soluzioni tampone, II-27
+velocità, II-3
+Struttura e trasformazioni della materia,  II-
+11
+concentrazione, II-12
+legge di Henry, II-12
+leggi dei gas, II-16
+leggi delle reazioni chimiche, II-18
+molalità, II-13
+molarità, II-12
+mole, II-18
+normalità, II-12
+numero di Avogadro, II-18
+numero di ossidazione, II-18
+sistemi eterogenei, II-11
+sistemi omogenei, II-11
+soluzioni, II-11
+stechiometria, II-17
+Teoria VSEPR, II-10
+Valenza, II-9
+
+[PAG 2242]
+10
+INDICE ANALITICO PER SEZIONI
+Sezione III
+Fisica
+Aberrazioni cromatiche, III-49
+Accelerazione, centripeta, III-16
+, di Coriolis, III-18
+, istantanea, III-12
+, media, III-12
+, tangenziale, III-16
+Amperometro, III-68
+Ampiezza delle oscillazioni, III-14
+Assi principali d’inerzia, III-30
+Baricentro, III-26
+Calore, latente di fusione, III-56
+, latente di vaporizzazione, III-56
+, specifico, III-53
+Caloria, III-54
+Calorimetro, III-55
+Campo, di forze conservativo, III-24
+, magnetico, int. magnetiche, III-69
+, legge di Biot-Savart, III-70
+, permeabilità magnetica nel vuoto, III-70
+Cannocchiale, III-49
+Capacità termica, III-53
+Capillarità, III-34
+Carrucola, III-28
+Caustica, III-49
+Circuiti elettrici, nodo, III-67
+, maglia, III-67
+Corpo rigido, III-29
+Corrente elettrica continua,
+, intensità, III-65
+, resistenza, III-65
+Densità, III-22
+Deviazione standard, III-5
+Diffrazione, III-45
+Dilatazione termica, nei gas, III-51
+, nei solidi, III-51
+, nei liquidi, III-52
+Dispersione, III-45
+Effetto, Doppler, III-41
+, Joule, III-67
+Elongazione, III-14
+Energia, cinetica, III-24
+, meccanica, III-25
+, potenziale gravitazionale, III-24
+, potenziale, III-24
+, radiante, III-44
+Equazione, d’onda, III-39
+, di continuità, III-36
+Fluido ideale o perfetto, III-36
+Forza, elettromotrice, III-67
+, di Lorenz, III-69
+, elettromagnetica, III-20
+, gravitazionale, III-20
+, nucleare debole, III-20
+Forze, conservative, III-23
+, di attrito, III-20
+, elastiche, III-21
+, fondamentali, III-20
+, nucleare forte, III-20
+, non conservative, III-20
+Frequenza, III-14
+Galleggiamento, III-33
+Gas, equazione di stato, III-60
+, legge di Avagadro, III-60
+, leggi di Gay Lussac, III-51
+, legge di Boyle, III-60
+, perfetti, III-60
+, perfetto, III-51
+Giroscopio, III-31
+Grandezze, scalari, III-5
+, vettoriali, III-5
+Immagine, reale, III-46
+, virtuale, III-46
+Impulso di una forza, III-23
+Interazioni el., legge di Coulomb, III-63
+, campo elettrico, III-63
+, potenziale elettrico, III-64
+, capacità elettrica, III-65
+, condensatori, III-65
+Interferenza, III-45
+Joule, equivalente meccanico della calo-
+ria, III-60
+
+[PAG 2243]
+SEZIONE III FISICA
+11
+Kirchhoff, primo principio, III-67
+, secondo principio, III-67
+Lavoro di una forza, III-23
+Legge, di Archimede, III-33
+, di Biot-Savart, III-70
+, di Coulomb, III-21
+, di gravitazione universale, III-21
+, di Ohm, III-66
+, di Pascal, III-32
+, di Stevino, III-32
+, oraria del moto, III-10
+Lenti, convergenti, III-47
+, divergenti, III-47
+, potere diottrico di una lente, III-48
+Linee di corrente, III-36
+Liquidi perfetti, III-31
+Massa, gravitazionale, III-20
+, inerziale, III-19
+Microscopio, III-48
+Momento, angolare, III-22
+, assiale, III-30
+, di una forza, III-22
+Moto, III-10
+, armonico semplice, III-13
+, circolare uniforme, III-14
+, circolare vario, III-15
+, di trascinamento, III-16
+, irrotazionale, III-36
+, rotazionale, III-36
+, stazionario, III-35
+, uniforme, III-10
+, rettilineo uniforme, III-12
+, uniformemente accelerato, III-12
+, vario, III-11
+Newton, (Principi della dinamica), III-18
+Onde, armoniche, III-39 
+, longitudinali, III-39
+, stazionarie, III-39
+, progressive, III-39
+, regressive, III-39
+, trasversali, III-39
+Ottica geometrica,
+, asse ottico, III-46
+, centro di una lente, III-46
+, fuoco di una lente, III-46
+, punti coniugati (formula), III-47
+Paranco, III-28
+Periodo, III-14
+Peso specifico, III-22
+Poligono delle forze, III-7
+Portata volumica, III-36
+Potenza sviluppata da una forza, III-24
+Potere calorifico, III-57
+Principio di relatività di Galileo, III-19
+Prodotto, scalare, III-8
+, vettoriale, III-9
+Propagazione del calore, III-57
+, convezione, III-57
+, conduzione (Legge di Fourier), III-57
+, irragiamento, III-58
+Quantità di moto, III-19
+Radiazioni, III-43
+Regola del parallelogramma, III-6
+Riflessione della luce, III-44
+Rifrazione della luce, III-44
+Semidispersione, III-4
+Sistema di riferimento, assoluto, III-16
+, relativo, III-16
+Sistemi di riferimento inerziali, III-18
+Sorgente di luce, calda, III-43
+, fredda, III-43
+Superconduttori, III-66
+Temperatura, III-50
+, di evaporazione, III-56
+, di fusione, III-56
+Tensione superficiale, III-34
+Teorema, delle forze vive, III-24
+, di Bernoulli, III-37
+, di Huygen Steiner, III-30
+, di Varignon, III-7
+Termodinamica, primo principio, III-61
+, secondo principio, III-62
+, ciclo di Carnot, III-62
+, rendimento di una macchina termica, 
+III-62
+Torricelli, barometro, III-33
+, teorema, III-37
+Traiettoria, III-10
+Trasformazioni termodinamiche, III-58
+, isocore, III-58
+, isobare, III-58
+, isoterme, III-58
+
+[PAG 2244]
+12
+INDICE ANALITICO PER SEZIONI
+Trasformazioni termodinamiche, adiabati-
+che, III-58
+Tubo, di flusso, III-36
+, di Venturi, III-38
+Urti, anelastici, III-26
+, elastici, III-25
+Valore medio, III-4
+Varianza, III-4
+Velocità, angolare, III-14
+, di fase, III-40
+, di gruppo, III-40
+, scalare, III-11
+, vettoriale, III-11
+Vettore risultante, III-6
+Vettori componenti, III-6
+Voltmetro, III-68
+
+[PAG 2245]
+SEZIONE IV NORMATIVA, LEGISLAZIONE E SICUREZZA
+13
+Sezione IV
+Normativa, legislazione e sicurezza
+Legislazione IV-26
+, direttiva comunitaria IV-26
+, direttiva BT IV-26
+, direttiva macchine IV-26
+, D.Lgs. 615/96 IV-31
+, D.Lgs. 626/94 IV-29
+, D.Lgs. 626/94 IV-29
+, D.Lgs. 626/96 IV-31
+, D.Lgs. 791/97 IV-31
+, D.P.R. 459/96 IV-31
+, D.P.R. 547/55 IV-29
+, legge 46/90
+, leggi e decreti IV-26
+, marcatura CE IV-26
+Normativa IV-1
+, CEI IV-3
+, CENELEC IV-2
+, CESI IV-13
+, comitati tecnici IV-1
+, comitati tecnici CEI IV-4
+, documento armonizzato IV-3
+, enti normatori IV-1
+, IEC IV-2
+, IENGF IV-13
+, IMQ IV-13
+, iter norma CENELEC IV-4
+, iter norma IEC IV-3
+, marchio CE IV-13
+, marchio di conformità IV-13
+, norma europea IV-3
+, norma internazionale IV-3
+, norme CEI IV-7
+Sicurezza IV-29
+, certificazione ISO 9000 IV-31
+, compatibilità elettromagnetica IV-31
+, direttiva BT IV-31
+, direttiva macchine IV-31
+, D.Lgs. 626/94 IV-29
+, D.P.R. 547/55 IV-29
+, ergonomia IV-30
+, servizio di prevenzione e protezione 
+IV-29
+Simbologia IV-13
+Sistemi di misura IV-13
+, cgs IV-13
+, fbfs IV-13
+, fps IV-13
+, fss IV-13
+, mks IV-13
+, SI IV-13
+, simboli grandezze IV-14
+Unità di misura IV-20
+, multipli IV-25
+, sottomultipli IV-26
+
+[PAG 2246]
+14
+INDICE ANALITICO PER SEZIONI
+Sezione V
+Segni grafici
+Apparecchi, di comando e manovra, V-12
+, di controllo nelle centrali elettriche, V-
+37
+, in derivazione, V-18
+, per impianti antifurto e antincendio, V-
+20
+, per la distribuzione dei segnali radio TV, 
+V-19
+, vari, V-19
+Apparecchiature pneumatiche, V-26
+, comando delle, V-27
+, distribuzione delle, V-27
+, regolazione delle, V-27
+, trasformazione delle, V-28
+, trasmissione delle, V-26
+, trattamento delle, V-26
+Centrali di produzione elettrica, V-29
+Comandi, passivi per tubazioni, V-34
+, valvole, V-34
+Componenti, attivi per tubazioni, V-36
+, passivi, V-11
+Conduttori, V-10
+Condutture, V-10
+Coppie termoelettriche, V-16
+Diagramma esplicativo, V-5
+Dispositivi, di comando e manovra, V-12
+, di connessione, V-11
+, di derivazione, V-10
+, di protezione, V-15
+Elementi, analogici, V-23
+, logici binari, V-24
+Lampade e apparecchi ausiliari, V-18
+Lettere di identificazione delle apparec-
+chiature elettriche, V-39
+Linee di trasporto elettriche, V-29
+Mappe di rete, V-3
+Motori, V-16
+Relè, di misura, V-14
+, elettromeccanici, V-14
+Schema, a blocchi, V-3
+, a blocchi e di flusso, V-7
+, dei circuiti equivalenti, V-4
+, dei conduttori, V-6
+, del riferimento alla posizione topogra-
+fica dei componenti, V-6
+, della disposizione dei segni grafici, V-6
+, di connessione, V-5, 7
+, di funzione, V-4
+, di manutenzione, V-5
+, di montaggio, V-7
+, di potenza, V-7
+, di sistema, V-3
+, di ubicazione, V-5
+, esplicativo, V-5
+, funzionale, V-6
+, sviluppato, V-6
+, topografico, V-5
+Segnalazioni, V-17
+Segni, di uso generale, V-9
+, generali idraulici, V-30
+, generali per macchinario, V-30
+Segno grafico, V-2
+, di funzione, V-2
+, distintivo, V-2
+, generale, V-2
+, tracciatura del, V-3
+Semiconduttori, V-21
+Stazioni di produzione elettrica, V-29
+Strumenti di misura, V-16
+, nelle centrali elettriche, V-37
+Trasduttori, V-19
+Trasformatori, V-16
+Tubazioni e accessori di collegamento, V-
+32
+Valvole rappresentazione costruttiva, V-
+33
+
+[PAG 2247]
+SEZIONE VI CAD
+15
+Sezione VI
+CAD
+Aiuto in linea, VI-6
+Angoli, immissione, VI-8
+Annulla, comando, VI-11, 23
+–, pulsante, VI-11, 23
+Annullare le modifiche, VI-30
+Anteprima di stampa, VI-38
+Anello, VI-52, 67
+Arco, VI-45
+Assegnare una scala agli, oggetti di una 
+finestra, VI-124
+Assonometria, VI-89
+–, commutazione piano assonometrico, VI-
+92
+–, snap assonometrico, VI-91
+Attivazione di un comando, VI-6
+Attributi, VI-114
+AutoCAD Design Center, VI-88
+Autosnap, VI-34
+Avvio del programma, apri file di disegno, 
+VI-16
+–, usa autocomposizione, VI-9
+–, usa un default, VI-5
+–, usa un modello, VI-21
+Blocchi, VI-106
+–, crea blocco con attributo, VI-114
+–, pulsante crea blocco, VI-106
+–, pulsante inserisci blocco, VI-111
+–, ridefinizione, VI-117
+Cambia, VI-17
+Cancella, VI-32
+Cen (opzione di snap ad oggetto), VI-32
+Cerchio, VI-23
+–, cerchio assonometrico, VI-93
+Cima, VI-74
+Colori, blocchi, VI-106
+–, area grafica, VI-7
+Commutazione del piano assonometrico, 
+VI-92
+Copia, VI-30
+–, multiplo, VI-97
+Coordinate, assolute, VI-8
+–, cartesiane, VI-8
+–, polari, VI-8
+–, relative, VI-8
+–, visualizzazione nella barra di stato, VI-
+12
+Da (opzione di snap ad oggetto), VI-14, 
+53
+Ddedit, VI-21
+Ddunits, VI-10
+Definizione di attributo, VI-114
+Disegno in scala, VI-103
+Editpl, assegnare una larghezza, VI-13
+–, unire, VI-13
+Ellisse, cerchio assonometrico, VI-93
+Esplodi, VI-40
+Estendi, VI- 37
+Filtri di coordinate .X, .Y, .Z, VI-19, 33, 
+57
+Fin (opzione di snap ad oggetto), VI-25
+Finestre, VI-123
+–, multiple, VI-128
+Griglia, VI-11
+–, assonometria, VI-91
+Iconaucs, VI-12
+Imposta pagina, VI-123
+Impostazione preferenze, VI-7
+–, colori dello schermo, VI-7
+–, dimensioni del puntatore, VI-7
+–, direzione di riferimento, VI-7
+–, precisione, VI-10
+–, unità di misura, VI-10
+–, verso di rotazione positivo, VI-10
+Inser, inserimento blocchi, VI-111
+–, inserimento di un intero disegno, VI-40, 
+123, 125
+Int (opzione di snap ad oggetto), VI-14, 
+32
+Larghezza della linea, VI-100
+Layer, VI-16
+
+[PAG 2248]
+16
+INDICE ANALITICO PER SEZIONI
+–, attivazione, VI-22
+–, colori, VI-16
+–,  creazione, VI-16
+Layer, tipi di linea, VI-49
+–, congelare, VI-75
+–, congela nella finestra attiva, VI-125
+Limiti, VI-10
+Linea, VI-8, 12
+–, tipi di linea, VI-49, 64
+–, di sezione, VI-75
+Lista, VI-26
+Lwdefault (variabile di sistema), VI-100
+Mblocco, VI-106
+Med (opzione di snap ad oggetto), VI-19
+Misura, VI-118
+Modelli di tratteggio, VI-76
+Modi, opuntamento, VI-50
+–, orto, VI-18
+–, osnap, VI-25
+–, snap, VI-11
+Offset, VI-56, 68
+Opuntamento, VI-50, 53, 70
+Osnap, VI-33
+Par (opzione di snap ad oggetto), VI-44
+Pellipse (variabile di sistema), VI-101
+Per (opzione di snap ad oggetto), VI-14, 
+31
+Polilinea, editazione, VI-13
+–, larghezza iniziale e finale diverse, VI-
+41, 69
+Proprietà, cambio scala del tipo di linea, 
+VI-62
+–, interrogazione geometria, VI-46
+–, modifica testo, VI-21
+–, scala della finestra, VI-124
+–, spostamento su altro layer, VI-17
+Qua (opzione di snap ad oggetto), VI-51
+Quotatura, VI-78
+–, allineata, VI-102
+–, barra degli strumenti, VI-83
+–, continua, VI-84, 85
+–, da linea di base, VI-87
+–, diametro, VI-86
+–, impostazione stile, VI-79
+–, modifica testo di quota, VI-85
+–, obliqua, VI-102
+–, raggio, VI-85
+Raccordo, VI-54, 59
+–, taglia/non taglia, VI-57
+Rifare, VI-23
+Rigen, VI-65
+Ruota, VI-30
+Salvataggio, VI-15
+–, come file di disegno/modello, VI-20
+Salvataggio automatico (savetime), VI-24
+Scalatl, VI-77
+Selezione oggetti, aggiungere a insieme di 
+selezione, VI-28
+–, finestra, VI-27
+–, intercetta, VI-29
+–, intersezione, VI-28
+–, puntamento, VI-26
+–, rimuovere da insieme di selezione, VI-
+28
+–, selezionato precedentemente, VI-26
+–, ultimo disegnato, VI-26
+Serie, polare, VI-41, 67
+–, rettangolare, VI-14
+Spazio carta, VI-122
+Spazio modello affiancato, passaggio, VI-
+125
+–, scala, VI-125
+Snap, VI-11
+Snap ad oggetto (osnap), VI-33
+–, autosnap, VI-34
+–, cen, VI-32
+–, da, VI-14, 53
+–, fin, VI-25
+–, int, VI-14, 32
+–, med, VI-19
+–, par, VI-44
+–, per, VI-14, 31
+–, qua, VI-51
+–, vic, VI-15
+Spezza, VI-35
+Taglia, VI-35
+Testo, VI-18
+–, adatta, VI-18
+–, centro, VI-18
+–, giustificato, VI-18
+–, mezzo, VI-37
+–, stile, VI-17
+Tipi di linea, VI-49, 64
+
+[PAG 2249]
+SEZIONE VI CAD
+17
+Tratteggio, VI-75
+–, anteprima, VI-76
+–, finestra di dialogo, VI-75
+–, solido, VI-98
+Trimmode (variabile di sistema), VI-57
+Unità di misura, comando ddunits, VI-10
+Zoom, finestra, VI-14
+–, tutto, VI-10
+–, scala, VI-125
+
+[PAG 2250]
+18
+INDICE ANALITICO PER SEZIONI
+Sezione VII
+Elettrotecnica generale
+Ammettenza del dipolo, R-L parallelo, 
+VII-127
+, R-C parallelo, VII-130
+, R-L-C parallelo, VII-132
+Ampere, VII-6
+Amperometro, VII-6
+Ancora, VII-95
+Angolo di perdita, VII-143
+Arco doppio, VII-23
+Atomo, VII-6
+Autoinduzione, VII-102
+Avvolgimento, di eccitazione, VII-95
+, indotto, VII-104
+, induttore, VII-104
+Banda passante, VII-138, 140, 142
+Bipoli, attivi, VII-13
+, collegamento in parallelo, VII-22
+, collegamento in serie, VII-21
+, ideali, VII-13, 14
+, lineari, VII-12   
+, non lineari, VII-12
+, passivi, VII-13
+, collegamento in parallelo, VII-23, 148
+, ammettenza equivalente, VII-148
+, partitore di corrente, VII-23, 148 
+, collegamento in serie, VII-21, 148
+, impedenza equivalente, VII-148
+, partitore di tensione, VII-148
+Bipolo elettrico, VII-12 
+Boucherot, teorema di, VII-151
+Campo elettrico, VII-49, 53
+, nei dielettrici, VII-53
+, vettore campo elettrico, VII-49, 53
+Campo magnetico, VII-73, 107
+, indotto, VII-96
+, induttore, VII-96
+, prodotto da una spina circolare, VII-75
+, prodotto da un solenoide, VII-76
+, prodotto da un solenoide toroidale, VII-
+76
+, origine del, VII-73
+Caratteristica, di magnetizzazione, VII-79
+, esterna del bipolo, VII-12
+, voltamperometrica del bipolo, VII-12
+Carica elettrica, VII-4
+Centro stella di un sistema, VII-159
+, spostamento del centro stella, VII-164
+Circuitazione magnetica legge, VII-82
+Circuito aperto ideale, VII-10
+Coefficiente, di temperatura, VII-9
+, di mutua induzione, VII-103
+Componente, attiva della corrente, VII-
+135
+, reattiva della corrente, VII-135
+Condensatore, VII-54
+Condensatori, VII55 
+, capacità, di un condensatore piano, VII-
+55, 59
+, di condensatori di altro tipo, VII-60
+, collegati a stella, VII-58
+, collegati a triangolo, VII-58
+, collegati in parallelo, VII-57
+, collegati in serie, VII-55
+, collegati in serie parallelo, VII-58
+, trasformazione stella-triangolo, VII-58
+, trasformazione triangolo-stella, VII-59
+Condizione di adattamento di un genera-
+tore, VII-18
+Conduttanza elettrica, VII-8
+Conduttività elettrica, VII-9
+Conduttore di neutro, VII-159
+Conduttori, VII-4
+Convenzione di segno, degli utilizzatori, 
+VII-12
+, dei generatori, VII-12
+Coppia di forze agente, su una spira, VII-92
+, su una bobina, VII-93
+Corpi conduttori, comportamento, VII-50
+Corrente, di corto circuito, VII-13
+, di fase, VII-162
+, di linea, VII-162
+, elettrica, VII-5
+, impressa, VII-14
+, indotta, VII-96
+Correnti, metodo delle correnti cicliche, 
+VII-33
+
+[PAG 2251]
+SEZIONE VII ELETTROTECNICA GENERALE
+19
+Correnti, di circolazione, VII-23
+Corto circuito ideale, VII-10
+Costante, dielettrica, VII-54
+, dielettrica del vuoto, VII-49
+, dielettrica relativa, VII-54
+, di tempo del sistema, VII-63, 107
+Coulomb, VII-5
+, legge di, VII-49
+Densità di corrente, VII-6, 61
+Differenza di potenziale elettrico, VII-7, 
+51
+Effetto schermante, VII-86
+Elettroni, VII-3
+Energia, elettrostatica, VII-61
+, magnetica, VII-82
+Faraday-Neumann, legge di, VII-96
+Fase, VII-115
+Fasore, VII-116
+Fattore, di accoppiamento, VII-104
+, di cresta, VII-115
+, di dissipazione (di un condensatore 
+reale), VII-144
+, di forma, VII-115
+, di merito (di un induttore reale), VII-
+143
+, di potenza, VII-135, 168
+Filtro, passa-alto, VII-139
+, passa-banda, VII-140, 142
+, passa-basso, VII-138
+Fleming, regola di, VII-98
+Flusso, concatenato, VII-83
+, disperso, VII-103
+, totale, VII-103
+, utile, VII-103
+Forza, agente su un conduttore elettrico, 
+VII-92
+, controelettromotrice, VII-16, 100
+, coercitiva, VII-80 
+, elettromotrice, VII-7, 13
+, magnetizzante, VII-77
+, magnetomotrice, VII-77
+, meccanica, VII-99
+, motrice, VII-99
+, resistente, VII-99
+Frequenza, di una grandezza periodica, 
+VII-113
+, di risonanza, VII-139
+Generatore, elettrico, VII-5
+, di corrente alternata monofase, VII-151
+, comportamento da generatore, VII-99
+, ideale di corrente, VII-14
+, ideale di tensione, VII-13
+, reale di corrente, VII-14
+, reale di tensione, VII-13
+Generatori dipendenti, VII-47
+Guadagno, di corrente, VII-138
+, di tensione, VII-142
+Gauss, teorema di, VII-52
+Henry, VII-81
+Hopkinson, legge di, VII-81
+Impedenza, VII-120, 122, 124, 126, 128, 
+131
+, equivalente, VII-148
+, trasformazione stella-triangolo, VII-
+149
+, trasformazione triangolo-stella, VII-
+149
+Induttanza, VII-83, 102
+Induttore, VII-83, 142
+Induzione, elettrica, VII-51
+, elettrostatica, VII-51
+, magnetica, VII-74
+, residua, VII-80
+Intensità della corrente elettrica, VII-6
+Ione, VII-4
+Isolanti, VII-4
+Isotopi, VII-4
+Isteresi, ciclo di, VII-80
+, magnetica, VII-80
+Joule, effetto, VII-10 
+, legge di, VII-10
+Kirchhoff, applicazione dei principi, VII-
+30 
+, legge delle correnti (primo principio 
+di), VII-20
+, legge delle tensioni (secondo principio 
+di), VII-20
+Larmor, precessione di, VII-78
+Lato di una maglia, VII-19
+Lenz, legge di, VII-96
+Linee, di campo, VII-49, 73
+, di forza, VII-49, 73
