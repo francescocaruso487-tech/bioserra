@@ -280,7 +280,7 @@ def sintetizza_kb(testi, piante_fasi, meteo):
 
     fasi_attive = list(set(p.get('fase','') for p in piante_fasi))
 
-    prompt = f"""Sei un agronomo esperto Living Soil, biodinamica ed elettrocultura.
+    prompt = f"""Sei un agronomo esperto Living Soil, biodinamica ed elettrocultura. Rispondi SEMPRE in italiano anche se i testi sono in inglese, francese o altre lingue.
 Hai letto {len(testi)} manuali della biblioteca BioSerra Caserta.
 Fasi attive in serra oggi: {', '.join(fasi_attive)}.
 Meteo: {meteo.get('temp_now')}C, umidita {meteo.get('umidita')}%, pioggia {meteo.get('pioggia_giorno')}mm.
@@ -355,7 +355,7 @@ Scoperta: {kb_sintesi.get('scoperta_del_giorno', '')}"""
 
     prompt = f"""Sei il cervello AI di BioSerra, una serra Living Soil outdoor a Caserta (41N).
 Hai studiato {89} manuali di elettrocultura, biodinamica e Living Soil.
-Oggi {oggi_data}. Rispondi in italiano. Sii SPECIFICO e PRATICO, cita i manuali quando possibile.
+Oggi {oggi_data}. Rispondi in italiano (anche se i PDF sono in altre lingue). Sii SPECIFICO e PRATICO, cita i manuali quando possibile.
 
 === PIANTE IN SERRA ===
 {ctx_piante}
