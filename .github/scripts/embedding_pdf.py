@@ -117,13 +117,32 @@ def main():
     gh_put('data/pdf_vectors.json', v_b64, sha_v, f'BioSerra vettori {oggi} (tot:{len(tutti_vettori)})')
     print(f'pdf_vectors.json salvato ({len(tutti_vettori)} vettori)')
     
+    # Preserva edge semantici (semantico_reale) scritti da connessioni_update.py:
+    # senza questo, embedding_pdf sovrascriverebbe il grafo semantico ogni notte.
+    edges_semantici = []
+    try:
+        graph_old = json.loads(gh_get_raw('data/pdf_graph.json'))
+        for e in graph_old.get('edges', []):
+            tp = e.get('tipo') or e.get('tipo_conn') or ''
+            if 'semantico' in str(tp):
+                edges_semantici.append(e)
+        if edges_semantici:
+            print(f'Preservati {len(edges_semantici)} edge semantici esistenti')
+    except Exception as ex:
+        print(f'  Nota: impossibile leggere edge semantici esistenti: {ex}')
+
+    # Marca gli edge embedding e fonde con i semantici preservati
+    for e in edges:
+        e['tipo'] = 'embedding'
+    edges_finali = edges_semantici + edges
+
     # Salva grafo
     nodi = [{'id': v['id'], 'titolo': v['titolo'], 'rilevanza': v['rilevanza']} for v in tutti_vettori]
-    grafo = {'lastUpdate': oggi, 'nodi': nodi, 'edges': edges}
+    grafo = {'lastUpdate': oggi, 'nodi': nodi, 'edges': edges_finali}
     g_b64 = base64.b64encode(json.dumps(grafo, ensure_ascii=False).encode()).decode()
     sha_g = gh_get_sha('data/pdf_graph.json')
-    gh_put('data/pdf_graph.json', g_b64, sha_g, f'BioSerra grafo {oggi} ({len(edges)} edges)')
-    print(f'pdf_graph.json salvato ({len(edges)} edges)')
+    gh_put('data/pdf_graph.json', g_b64, sha_g, f'BioSerra grafo {oggi} ({len(edges_finali)} edges, {len(edges_semantici)} semantici preservati)')
+    print(f'pdf_graph.json salvato ({len(edges_finali)} edges)')
 
 if __name__ == '__main__':
     main()
