@@ -1,0 +1,1426 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 4/23 ===
+Chars: 44,796 | Offset: 134,983
+
+
+
+Vg) = Vie + vie, (2.44a)
+2 VI 7 VO,
+IQ = 2 et — 19 ife
+
+(2) Z FA (2.446)
+
+Queste espressioni contengono due incognite, VF e V7, le ampiezze in tensione ri-
+spettivamente dell’onda incidente e dell’onda riflessa. Per determinare V;' e Vy" si
+deve considerare la linea di trasmissione senza perdite nel quadro del circuito com-
+pleto, che comprende un circuito generatore ai terminali di ingresso e un carico ai ter-
+minali di uscita, come descritto in Figura 2.9. La linea, che è di lunghezza /, è termi-
+nata su un’impedenza di carico Z, arbitraria. Per ragioni pratiche si sceglie il riferi-
+mento della coordinata spaziale z in modo che il punto  =-0 corrisponda alla posi-
+zione del carico. Sulla porta di trasmissione in z = —/, la linea è collegata a un gene-
+ratore di tensione sinusoidale caratterizzato da un fasore associato V, e da un’impe-
+denza interna Zy. Sul carico, il fasore di tensione ai suoi capi Vi e il fasore di corren-
+te che lo attraversa /, sono legati tramite l’impedenza di carico Z,, come segue:
+
+z=>. (2.45)
+
+La tensione 7 è uguale alla tensione complessiva sulla linea #(z) data dalla (2.442)
+ef, è uguale a /(z) data dalla (2.44b), entrambe valutate in z = 0:
+
+R=M=0)=Vt +. (2.462)
+k=( tot. (2.46b)
+Sostituendo queste espressioni nella (2.45) si ottiene il risultato:
+“a= Gat) (2.47)
+Ricavando V> si ha
+Vp = (23h (2.48)
+
+ra O Linea di trasmissione
+
+49
+
+Figura 2.9
+
+Linea di trasmissione di
+lunghezza / collegata a un
+circuito generatore su una
+‘porta e a un carico Zi
+sull'altra. Il carico è
+posizionato inz = 0ei
+terminali del generatore in
+z=-L
+
+[PAG 33]
+50
+
+Capitolo 2 — Linee di trasmissione
+
+JI rapporto tra l'ampiezza dell'onda di tensione riflessa e l'ampiezza dell'onda di
+tensione incidente al carico è noto come coefficiente di riflessione in tensione T.
+Considerando la (2.48), per questa definizione risulta
+
+palo ACQ
+VE Z+%
+_ Z/Zo-1
+
+= ZIZAI {adimensionale), (2.492)
+
+e ricordando la (2.28), il rapporto tra le ampiezze delle correnti è
+
+BR _ M _
+$7 Dr. (2.49)
+
+Si noti che I’ dipende da un solo parametro, cioè Pimpedenza di carico Zi, normaliz-
+zata all’impedenza caratteristica della linea Zy. Come indicato dalla (2.36), per una li-
+nea senza perdite Zy è un numero reale. Tuttavia, Z, in generale è una quantità com-
+plessa, come per esempio nel caso di un circuito RL serie, per il quale Z = R + jwh.
+Dunque in generale anche I può essere complesso:
+
+T=|Me®, (2.50)
+
+dove |] è il modulo di T e 6, è il suo angolo di fase. Si noti che |T| < 1.
+
+Un carico é detto adattato alla linea se Z, = Zo, perché in tal caso non si ha rifles-
+sione da parte del carico stesso (I = 0 e Vg = 0). D'altra parte, quando if carico è
+un circuito aperto (Zi = 00), si ha che = 1 e 77 = V*, mentre quando è un corto-
+
+circuito (Z, = 0), sibachel'=-1eVp=-V.
+
+Esempio 2.2 Coefficiente di riflessione di un carico RC serie
+
+Una linea di trasmissione a 100 9 è collegata a un carico formato da una resistenza da
+50 © in serie a un condensatore da 10 pF. Si ricavi il coefficiente di riflessione al carico
+per un segnale di frequenza pari a 100 MHz.
+
+Soluzione Sono date le seguenti quantità [Figura 2.10}:
+RL=502, C=10pF=10"F,
+Z=1000, f= 100 MHz= 10° Hz.
+
+L’impedenza di carico è
+Z=R-j/wC
+. 1 -
+= 50 cia = (50 ~ 7159) Q.
+Linea di trasmissione A
+
+RZ 509
+
+ZH= 1002
+ion T 10 pF
+
+Figura 2.10 Carico RC (Esempio 2.2).
+
+2.5 Linea di trasmissione senza perdite
+
+Dalla (2.492), il coefficiente di riflessione in tensione è dato da
+
+= Lul -1
+Z/Z+1
+
+_05-/1.59-1
+0.5-ji.59+1
+
+-0.5—-j1.59  -1.67e?*
+
+= —__—__- = = i j119.3*
+1.5-j1.59 2.19e86® 0.762"
+
+Questo risultato si può convertire nella forma in cui il modulo di T' è positivo sostituen-
+do il segno meno con e7!8""_ Perciò
+
+P= 0,7660193" el" — 0.760" = 0.76/--60.7°,
+
+oppure
+
+|P|=0.76, 6, = -60.7°.
+
+Esempio 2.3 {Ij per un carico puramente reattivo
+
+Si dimostri che |I'| = 1 per un carico puramente reattivo.
+
+Soluzione _Limpedenza di carico per un carico puramente reattivo è data da
+Zr = JX.
+Dalia (2.49a), il coefficiente di riflessione è
+Z-Z
+Dil
+Ik + Za
+
+dove @ = tan-!X /Zo. Dunque
+
+[P]=]- | = (ee)? = 1.
+
+Esercizio 2.7 Una linea di trasmissione senza perdite a 50 Q è terminata su un’impe-
+denza di carico Z, = (30 — j200) 2. Si calcoli il coefficiente di riflessione in tensione al
+carico.
+
+SoLuzione T = 0.93 /-27.5°.
+
+ESERCIZIO 2.8 Una linea senza perdite a 150 Q è terminata su di un condensatore fa cui
+impedenza è Z, = —j30 Q. Si calcoli D.
+
+Sovuzione T =1/-157.4°.
+
+SI
+
+[PAG 34]
+52
+
+Capitolo 2 — Linee di trasmissione “
+
+1.5.2. Onde stazionarie
+
+Sostituendo la relazione Vy = nella (2.442) e ‘nella (2.44b) si ottengono le
+espressioni
+
+Fa = Ve (e™ + ref), (2.51a)
+I®= x (e — Tei), (2.51b)
+
+in cui ora rimane una sola incognita da determinare, V;*. Prima di procedere oltre è
+opportuno esaminare il significato fisico di queste espressioni. Per prima cosa si rica-
+va l’espressione di |7/(z)|, il modulo di 7(z): sostituendo la (2.50) nella (2.512) e ap-
+plicando la relazione |7(z)| = (F(2)7*{z)|"”, in cui 7*(z) è il complesso coniugato
+di 7(2), si ha
+
+Pal= { [Pat (eo + rete]
+[OS® + [Pee
+= re i[t +(I?| (2.52)
++ [P| (e299 4 eX2A¥8))] n
+
+= [VG [{1+112|+21P]cos (262+0))}"?,
+
+dove si è usata l’identità
+eo +e = 2 cosx (2.53)
+
+per x reale arbitrario. Applicando gli stessi passaggi alla (2.51b), si può ricavare un’e-
+spressione simile per |/(z)|, il modulo delta corrente Z(z).
+
+Gli andamenti di |Y(2)| e \Z(2)| in funzione di 2, ovvero della loro posizione nella
+
+linea relativa alla sezione di carico in z == 0, sono illustrate in Figura 2.11 per una li-
+nea con |Y/y|= 1 V, |P] = 0.3, 8, = 30° e Z = 50 2. L'andamento sinusoidale è
+detto onda stazionaria ed è causato dall’interferenza delle due onde. Il valore massi-
+mo dell’andamento dell'onda stazionaria di |V(z)| corrisponde al punto della linea
+in cui l’onda incidente e l’onda riflessa sono in fase [262 + 6, = —2nr nella (2.52)]
+e dunque interferiscono costruttivamente e danno luogo a un valore uguale a
+(1+ [E)IV#|= 1.3 V. Il valore minimo di |}(z)| corrisponde all’interferenza di-
+struttiva, che si verifica quando l’onda incidente e l'onda riflessa sono in opposizione
+di fase (22+, = —(2n+1)n). In tal caso, |7(2)|=(1-{P){}{=07 v.
+Mentre il periodo di ripetizione spaziale dell’onda incidente e dell’onda riflessa prese
+individualmente è A, il periodo di ripetizione spaziale dell'andamento dell’onda sta-
+zionaria è 4/2. L'andamento dell’onda stazionaria descrive la variazione nello spa-
+zio del modulo di Y(z). in funzione di z. Se si osservano le variazioni della tensione
+istantanea in funzione del tempo in un punto z arbitrario, per esempio un punto di
+massimo dell’andamento dell’onda stazionaria, tale variazione avrà una dipendenza
+del tipo cos wt e avrà un’ampiezza pari a 1.3 V [vale a dire che v(t) oscillerà tra
+—13 Ve +1.3 V]. Analogamente, l'oscillazione nel tempo di v(z, #) in un punto z ar-
+bitrario avrà un’ampiezza pari a |V/(2}{ calcolata in quel punto z.
+* Un esame attento degli andamenti delle onde stazionarie di tensione e di. corrente
+mostrati in Figura 2.11 rivela che i due andamenti sono opposti in fase, vale a dire
+che quando uno è massimo, l’altro è minimo e viceversa. Ciò è dovuto al fatto che il
+secondo termine della (2.512) è preceduto dal segno più, mentre il secondo termine
+della (2.51b) è preceduto dal segno meno.
+
+2.5 Linea di trasmissione senza perdite
+
+_ SE VO
+Win - ~~ mene 1av
+10
+~ . 08
+Wainy + DE Tos n
+
+A 23a A fmi 2 Ienax ©
+4.2 a
+
+(a) VA) in, finziofe diz
+! Tal
+
+A 3A A A 0
+4 2 4
+(b) (gl in funzione di z
+
+Gli andamenti delle onde stazionarie descritte in Figura 2.11 riguardano una situazio-
+ne tipica in cui T = 0. 3e°. L'ampiezza picco-picco dell’andamento dipende da IT],
+
+che è sempre compreso tra 0 e 1. Nel caso particolare di linea adattata, in cui ~
+
+Zx = Zo, si ha [F}=0 e |V(z)| = |V#] per ogni 2, come mostrato in Figura 2.12(a).
+In assenza di onda riflessa, non si verifica interferenza e non sono presenti onde sta-
+zionarie. L’altro estremo dell’intervallo di valori di |P], vale a dire |F| = 1, corri-
+sponde al caso in cui il carico è un cortocircuito (L= —1) 0 un circuito aperto
+(© = 1). Gli andamenti delle onde stazionarie in questi due casi sono descritti nelle
+Figura 2.12(b) e (c): in entrambi i casi i massimi sono uguali a 2|V¢"| e i minimi sono
+‘uguali a 0, ma i due andamenti sono traslati in z l’uno rispetto all’altro di una distan-
+za pari a \/4.
+
+Si esamineranno ora i valori massimi e minimi del modulo della tensione. Dalla
+(2.52), |V(2)| è massimo quando l’argomento della funzione coseno è uguale a zero
+o a multipli di 27. Siccome il carico è posto in z = 0, un punto arbitrario della linea
+
+corrisponde sempre a un valore negativo di z, per cui se si indica con Imax = ~-z la di-
+stanza dal carico alla quale |Y:{z)] è massimo, allora
+
+7@I= Pm = VFM + ILI (2.54)
+e ciò si verifica quando
+
+202 +0 = ~2Blinax +O: = —2n7, (2.55)
+
+dove x è un numero intero maggiore o uguale a zero. Ricavando /nax dalla (2.55), si ha
+
+= ge = e IA IA
+
+ie RAVE
+n=1,2,... sed <0,
+rere. seg>o, (259)
+
+3B
+
+Figura 2.11 _
+Andamento dell'onda
+stazionaria (a) |'(z}| e
+(6) {F(2)| per una linea di
+trasmissione senza perdite
+di impedenza caratteristica
+Za = 50 O terminata su
+‘un carico con coefficiente
+di riflessione
+T'= 03e"" Il modulo
+dell’onda incidente è
+Wi} = 1V.
+TI rapporto d’onda
+stazionaria è è
+
+= [Plw/\P
+= bri 3/07 16
+
+[PAG 35]
+54
+
+Figura 2.12
+
+Andamenti dell’onda
+stazionaria di tensione per
+(&) un carico adattato, (b)
+una linea in cortocircuito e
+(€) una Linea in circuito
+aperto.
+
+Capitolo 2 — Linee di trasmissione
+
+Linea adattata
+
+da A A CN
+4 2 4
+@ Z.=Zo
+
+nN IVI
+h— 3 AA A
+VAN 21V9'1
+A Rk oh 0 *
+4 2 4
+
+(c) ZL =e (circuito aperto)
+
+in cui si è utilizzata la relazione 8 = 2n/A. L'angolo di fase del coefficiente di rifles-
+sione in tensione, 0,, è compreso tra — e 7r radianti. Se 6, > 0, il primo massimo di
+tensione si verifica per Imax = 9;A/4r, che corrisponde an=0, ma se, < 0, il pri-
+mo massimo significativo dal punto di vista fisico si ha per Imax = (@./4n) +4/2,
+che corrisponde a n = 1. I valori negativi di max corrispondono a punti che si trova-
+no “‘oltre”’ il carico all’estremita della linea e dunque non hanno significato fisico.
+Come già detto, i punti della linea corrispondenti ai massimi di tensione corrispon-
+dono anche ai minimi di corrente e viceversa.
+
+Analogamente, i minimi di |V(z)| si verificano per distanze /min = —z corrispon-
+denti ai punti in cui l'argomento del coseno nella (2.52) è uguale a —(2n + 1)7, da
+cui si ricava che
+
+(Plma = {VF I - IPI,
+
+dove (9; > 2Shnin) = —(2n + 1), (2.57)
+
+per —1 < 6, < w. Il primo minimo si ha per n = 0 e la distanza tra un massimo dna
+e il minimo adiacente nin è pari a A/4. Dunque il primo minimo si verifica per
+
+| ia = fi +4, se Imax < 1/4, (2:58)
+
+Imax — A/4, € Imax 2 N/A.
+
+Il rapporto tra IP max e {Pmi è detto rapporto d’onda stazionaria in tensione S e,
+considerando ia (2.54) e la (2.57), è dato da
+
+2.5 Linea di trasmissione senza perdite
+
+{adimensionale). (2.59)
+
+Questa grandezza, spesso indicata con l’acronimo ROS, rappresenta una misura del
+disadattamento tra il carico e la linea di trasmissione: per un carico adattato con
+T =0sihaS= 1, mentre per una linea con |P] = I sibaS = 00.
+
+Domande di verifica
+
+2.5 La costante di attenuazione a rappresenta le perdite ohmiche. Considerando il
+modello descritto in Figura 2.6(c), che valori devono avere R’ e G’ perché non ci
+siano perdite? Si verifichi la risposta tramite l’espressione di @ data dalla (2.252).
+
+2.6 Quale relazione lega la lunghezza d'onda A dell’onda che si propaga nella linea
+di trismissione e la lunghezza d’onda nello spazio libero Ao?
+
+2.7 In duale condizione un carico è adattato alla linea? Perché ciò è importante?
+
+2.8 Qual è l'andamento di un’onda stazionaria? Perché il suo periodo è \/2 e non X?
+
+2.9 Qual è la distanza sulla linea tra un punto di massimo di tensione e il massimo di
+corrente a esso adiacente?
+
+Esempio 2.4 Rapporto d'onda stazionaria
+
+Una linea di trasmissione a 50 2 é terminata su un carico Z, = (100 +750) Q. Si ricavi
+il coefficiente di riflessione in tensione e il rapporto d’onda stazionaria in tensione
+
+(ROS).
+
+Soluzione Dalla (2.49a), per T' si ha
+Zi - Ze _ (100+j50) 50 _ 50+j50
+
+© Zi +Z (100+j50) +50  150+j50
+Trasformando il numeratore e il denominatore in forma polare e poi semplificando si ot-
+tiene
+70.7¢4*
+
+= = 726.6"
+T= seein = 04525".
+
+Utilizzando la definizione di S data dalla (2.59), si ha
+
+1+] 140.45
+
+S= 171-045
+
+= 2.6.
+
+Esempio 2.5 Misura di ZL
+
+Una sonda a linea fessurata è uno strumento usato per misurare l’impedenza incognita
+Zi, di un carico. Una linea coassiale fessurata è caratterizzata da una stretta fessura lon-
+gitudinale praticata nel conduttore estemo. Una piccola sonda inserita nella fessura può
+essere usata per misurare il modulo del campo elettrico, e dunque il modulo [V|] della
+tensione sulla linea, come descritto in Figura 2.13. Spostando la sonda lungo la linea
+fessurata, è possibile misurare LAI € IVin| e le distanze dal carico in cui si verifica-
+no. Quindi, usando la (2.59) si ricava il rapporto d’onda stazionaria in tensione S.
+Misure effettuate con una linea fessurata a 50 © collegata a un carico di impedenza in-
+cognita hanno consentito di determinare che S = 3. Si è misurata una distanza tra due
+minimi di tensione successivi pari a 30 cm e il primo minimo di tensione è stato localiz-
+zato a 12 cm dai carico. Si determini l’impedenza di carico Zi.
+
+55
+
+[PAG 36]
+56
+
+Capitolo 2 — Linee di trasmissione
+
+a n Sonda scorrevole _
+Al rilevatore +—— Punta della
+
+Figura 2.13 Linea coassiale fessurata (Esempio 2.5).
+
+Soluzione Sono date le seguenti quantità:
+Zo=509, S=3, Imin = 12 cm.
+Siccome la distanza tra due minimi di tensione successivi é pari a A/2,
+A=2x0.3=0.6 m,
+
+e
+2r Qn 107
+B= T= 96773 (atm).
+Dalla (2.59), ricavando {I in funzione di S' si ha
+S-i 3-1
+Ple sar3x1 305
+
+In seguito si sfrutta la condizione sulla posizione dei minimi di tensione data dalla
+(2.57) per ricavare 6,:
+
+0,— 2Blmin = —T, for n = 0 (primo minimo),
+da cui si ottiene
+0 = 2Blinin — 7
+
+107
+=2 xx 0.12 — 7 = -0.27 (rad) = —36°.
+
+Dunque
+T=|T le" = 0.563 = 0.405 — 70.294.
+Ricavando Z;, tramite la (2.49a), si ha
+
+140
+a= 09[7 7 |
+
+— egf 140.405 — 0.294]
+= sol} = 0.405 + aa = (85 ~767) 9
+
+Esercizio 2.9 Sapendo che I = 0.5 /--60° e A = 24 cm, si ricavino le posizioni del
+massimo e del minimo di tensione più vicini al carico.
+
+SOLUZIONE Zmax = 10 em, nin = 40m.
+
+26 Impedenza di ingresso della linea senza perdite
+
+Esercizio 2.10 Una linea senza perdite a 140 Q è terminata su un’impédenza di carico
+Zi = (280 +7182)Q. Per A = 72 citi, si ritavino (a) il coefficiente di riflessione I, (b) il
+rapporto d’onda stazionaria in tensione $, (c) le posizioni dei massimi di tensione e (d) le
+posizioni dei minimi di tensione.
+
+SOLUZIONE (a) l'= 0.5 /29°, (b) S = 3.0, (c) mx = 2.9 om + nA/2,
+
+(4) Imin = 20.9 cm + nA/2, pern = 0,1,2,....
+
+2.6 Impedenza di ingresso della linea senza perdite
+
+Gli andamenti delle onde stazionarie indicano che in una linea disadattata i moduli
+delle tensioni e delle correnti oscillano in funzione della posizione lungo la linea e so-
+no in opposizione di fase tra loro. Dunque anche .il rapporto tra tensione e corrente,
+detto impedenza di ingresso Zin, dovrà variare in funzione della posizione. Sfruttando
+la (2.51a) e la (2.51b) per ricavare Zig, si ottiene
+NIRO
+Wu = 75
+_ Vile + ref]
+YF [et — Te “°
+1+ Te?
+A [ 1 —Terb
+
+(2.60)
+
+Si noti che Ziq € il rapporto tra la tensione complessiva dell’onda incidente e di quella
+riflessa e la corrente complessiva in un arbitrario punto z della linea, diversamente
+dall’impedenza caratteristica della linea Zo, che dipende dalla tensione e dalla cor-
+rente di ciascuna delle due onde prese individualmente: Z = Vf [If = —V7/I7-
+In molti problemi riguardanti le linee di trasmissione è di particolare. interesse l’im-
+pedenza all’ingresso della linea in z = —-/, che è data da
+efBl + Ted!
+Zl) = 2a
+14 De 29
+si
+
+(2.61)
+
+Sostituendo I° con la (2.492) e sfruttando le relazioni
+e! = cos 61 +jsin fl, (2.62a)
+e #8 = cos Bl — j sin Bl, (2.62b)
+
+la (2.61) si può riscrivere in funzione di Z, come
+
+(Ne Zi cos BI + jZ sin fl
+Zin(—D) -2(F cos BI + jZ, aa)
+_» { Z+i& tan fl
+
+G pee). (2.63)
+
+Dal punto di vista del circuito generatore, la linea di trasmissione può essere.sostitui-
+ta da un’impedenza pari a Z,, come mostrato in Figura 2.14. Il fasore di tensione ai
+capi di Z;n è dato da
+
+uv
+
+[PAG 37]
+58
+
+Figura 2.14
+
++ Nella sezione del
+generatore la linea di
+trasmissione terminata
+può essere sostituita con
+l’impedenza di ingresso
+della linea Zin-
+
+Capitolo 2 — Linee di trasmissione ~
+
+7 = hea, (2.64)
+a+ Za
+
+ma dal punto di vista della linea di trasmissione, la tensione ai capi della sua sezione
+di ingresso è data dalla (2.51a) calcolata in z = —/:
+
+B= 1) = Vle + De. (2.65)
+Uguagliando la (2.64) e la (2.65) e ricavando V; si ottiene
+
+) (are) (2.66)
+
+Questo completa la soluzione delle equazioni d'onda della linea di trasmissione, de-
+scritte dalla (2.21) e dalla (2.23) nel caso particolare di linea senza perdite. Partendo
+dalle soluzioni generali date dalla (2.262) e dalla (2.26b) in funzione delle quattro
+ampiezze incognite Voi, Vy, If’ e IT, si è poi trovato che Z = Vo /If = —Ve fly,
+riducendo in tal modo a due le ampiezze incognite. Applicando la condizione al con-
+torno nella sezione di carico, si sono messe in relazione 7 e Vf tramite I e infine,
+applicando la condizione al contorno nella sezione del generatore, si è ottenuta !’e-
+spressione di Vy.
+
+Esempio 2.6 Soluzione completa di v(z, t) e i(z, t)
+
+Un generatore a 1.05 GHz con impedenza interna Z, = 10 Q genera una tensione de-
+scritta dalla
+
+vg(i) = 10sin (wt + 30°) (V)
+
+ed è collegato a un carico Z, = (100 +50) 92 tramite una linea di trasmissione a 50 Q
+senza perdite lunga 67 cm. La velocità di fase nella linea è pari a 0.7c, dove c è la velo-
+cità della luce nello spazio libero. Si ricavino v(z, #) e i(z, 1) sulla linea.
+
+2.6 Impedenza di ingresso della finea senza perdite
+
+Soluzione Dalla relazione up = Hf, si ricava ia lunghezza d’onda:
+
+un 07x3x108
+aa te TI.
+77 10sx ie 702
+
+tan (61) = sa( 22 )
+
+Qn
+= wa x 067)
+= tan 6.7x = tan0.7a = tan 126°,
+
+in cui si sono sottratti i multipli di 27. Il coefficiente di riflessione in tensione al carico è
+
+Tat oe A = 0,45 27766",
+Z+Z (100 +750) +50
+
+Facendo riferimento alla Figura 2.14, Pimpedenza di ingresso della linea, data dalla
+(2.63), è
+
+Zin
+
+2a theme)
+
+% + ja, tan pl
+
+al Z,/ 2 +j tan pl
+1+/(Z/Zo) tan BI
+
+_ (2+jl) +jtan 126° | .
+
+= ag] © (194/174).
+
+i
+
+Riscrivendo l’espressione della tensione generata rispetto a un riferimento cosinusoida-
+le, si ha
+vg(:) = 10 sin (wt + 30°)
+= 10cos (1/2 — wt — 30°)
+= 10 cos (wt — 60°)
+= Re[10e7" e] = Re[Fze"]_(V).
+Dunque il fasore di tensione VA è dato da
+
+¥, = 109 (V)=10/-60° (V)
+Applicando la (2.66) si ottiene
+
+ve {Pala 1
+9 Zz tZin ]\ + Ce
+
+_ f10e¥" (21.9 + 17.4)
+| 10+219+/174
+. [ene + 0.4526 Ces] ni
+= 10.269 (y) = 102/159" (V).
+
+Il fasore di tensione sulla linea è
+Pa) = Vie + Te)
+= 10.26/85” (eH + 0.4507" elf),
+
+e la tensione istantanea v{z, t) è
+
+59
+
+[PAG 38]
+60
+
+Capitolo 2 — Linee di trasmissione DI
+
+v2, ) =
+= 10.2 cos (wt ~ Bz + 159°)
++4.55 cos (wt + z+ 185.6°) (¥).
+Analogamente, inserendo VF nella (2.51b) si ottiene
+T(z) = 0.206! (2 _ 0,4560268 pide),
+i(g, t) = 0.20 cos (wt — Bz + 159°)
++ 0.091 cos (wt + 82+5.6°) (A)
+
+2.7 Casi particolari di linea senza perdite
+
+Spesso si incontrano situazioni riguardanti linee di trasmissione senza perdite termina-
+te in modo particolare o linee che per la loro lunghezza presentano proprietà partico-
+larmente utili (nella pratica). Saranno ora considerati alcuni di questi casi particolari.
+
+2.7.1 Linea in cortocircuito
+
+La linea di trasmissione descritta in Figura 2.15(a) è terminata su un cortocircuito,
+dunque Z, = 0. Di conseguenza, il coefficiente di riflessione definito dalla (2.49a) è
+T= —1 e il rapporto d’onda stazionaria in tensione dato dalla (2.59) è S = co. Dalla
+(2.51) e (2.51b), la tensione e la corrente su una linea di trasmissione senza perdite
+chiusa su un cortocircuito sono date da
+
+Voo(z) = Vie? — ee] = —2jV¢ sin fz, (2.672)
+(o) = fer 4 cite) = IE cosa. (2.670)
+“ Za Zo
+
+La tensione V,(2) è nulla nella sezione di carico, cioè per z = 0, come è naturale per
+un cortocircuito, e la sua ampiezza è direttamente proporzionale a sin 6z, mentre la
+corrente J,-(z) è massima nella sezione di carico e la sua ampiezza è direttamente pro-
+porzionale a cos Gz. Entrambe queste grandezze sono graficate in Figura 2.15 in fun-
+zione di z negativa.
+
+L’impedenza di ingresso della linea in z = —/ è data dal rapporto tra TA De
+F(—1). Indicando con Zig l’impedenza di ingresso per una linea cortocircuitata, si ha
+
+Fe _
+® ED
+
+Il grafico di ZS° /jZx in funzione di z negativa è mostrato in Figura 2.15(d).
+Jn generale, l’impedenza di ingresso Zn consiste di una parte reale, detta resistenza
+di ingresso Rin, e di una parte immaginaria, detta reattanza di ingresso Xn:
+
+Zin = Rin + )Xin- (2.69)
+
+Nel caso della linea senza perdite cortocircuitata, l’impedenza di ingresso è puramen-
+te' reattiva (Rin = 0). Per tan G7 > 0 la linea manifesta un comportamento induttivo,
+modellabile mediante un’induttanza equivalente Leg ‘la cui impedenza sia uguale a
+Zz. Pertanto
+
+jZytan Bl. (2.68)
+
+jwleg =jZotan fl, se tan8120, (2.702)
+
+2.7 Casi particolari di linea senza perdite
+
+ali
+
+oppure
+Lay = 2 (E). (2.706)
+
+La minima lunghezza / che dia luogo a un’impedenza di ingresso Zi; equivalente a
+quella di un’induttanza Leg è :
+
+I, fol
+bay tan ! (3) {m). (2.700)
+
+Analogamente, per tan 8/ < 0 l’impedenza di ingresso è capacitiva, nel qual caso la
+linea è modellabile mediante un condensatore equivalente Coq tale che
+
+- = jZp tan fil, se tan fi <0, (2.7ia)
+JuCeg
+
+él
+
+Figura 2.15
+
+Linea di trasmissione
+terminata su un
+cortocircuito: (a)
+rappresentazione
+schematica, (b) tensioné
+normalizzata sulla linea,
+(€) corrente normalizzata e
+(d) impedenza di ingresso
+normalizzata.
+
+[PAG 39]
+62
+
+Capitolo 2 - Linee di trasmissione
+
+oppure
+1
+
+=== +f).
+Zow tan BI )
+Dato che / è un numero positivo, la minima iunghezza / per la quale tan fl < 0 corri-
+
+sponde all'intervallo 7/2 < $l < x. Dunque, la minima lunghezza / che dia luogo a
+un’impedenza di ingresso Zîî equivalente a quella di un condensatore Cog è
+
+i= E [: stan! a )] (m). (2.710)
+
+Coq ® (2.716)
+
+Questi risultati significano che, scegliendo opportunamente la lunghezza di una linea”
+
+cortocircuitata, si possono sostituire condensatori e induttanze con reattanza arbitra-
+ria. Tale pratica è infatti diffusa nella progettazione dei circuiti a microonde e dei cir-
+cuiti integrati ad alta velocità, perché realizzare praticamente un condensatore o
+un’induttanza è spesso più difficile che non realizzare una linea di trasmissione in
+cortocircuito.
+
+Esempio 2.7 Elementi reattivi equivalenti
+
+Si scelga la lunghezza di una linea di trasmissione a 50 senza perdite cortocircuitata
+(Figura 2.16) in modo che la sua impedenza di ingresso a 2.25 GHz sia equivalente alla
+reattanza di un condensatore di capacità Coq = 4 pF. La velocità dell’onda nella linea è
+pari a 0.756.
+
+bte—_____———_
+
+sc corto
+Zi > 4 circuito
+
+He
+
+se 1
+Zin om
+
+Zo=
+
+\,
+
+Figura 2.16 Linea in cortocircuito usata come condensatore equivalente (Esempio 2.7).
+
+Soluzione Si ha che
+up = 0.750 = 0.75 x 3 x 108 = 2.25 x 10° m/s,
+Z= 502,
+f = 2.25 GHz = 2.25 x 10° Hz,
+Ceq = 4 DF =4x 107? F.
+La costante di fase è
+20 _2nf _2nx225x 10°
+
+b= % 335x108 = 62.8 (rad/m).
+p
+Daila (2.7 1a) si ha
+tan Bi = — 1
+
+ZotwCeg
+1
+
+= = 0.354.
+
+— 50x27 x 2.25 x 109 x 4 x 107
+
+2.7 Casi particolari di linea senza perdite
+
+La funzione tangente è negativa quando il suo argomento ha valori nel secondo 0 nel
+quarto quadrante. La soluzione nel secondo quadrante è
+
+8_ 28
+
+Bh =2.8rad o h= = Gg 046 om,
+e la soluzione nel quarto quadrante è
+5.94
+Bh=5.9%rad o Ah "687 9.46 cm.
+
+In altemativa, il valore di /; si può ottenere applicando la (2.71c). La lunghezza 1 è
+maggiore di J; con una differenza esattamente pari a \/2. Infatti, qualsiasi lunghezza
+1 = 4.46 cm + nÀ/2, conn intero positivo, è soluzione del problema.
+
+2.7.2 Linea in circuito aperto
+
+Nel caso Z, = co, illustrato in Figura 2.17(a), si ha che T = 1, S = 00 e la tensione,
+la corrente e l’impedenza sono date da
+
+Pel) = Vi fed + ei] = 215 cos fz, (2.72a)
+> ye A UV .
+ele) = [et — elf] = =z sin Bz, (2.72b)
+
+—jZo cot fl. (2.73)
+
+I grafici di queste grandezze sono mostrati in Figura 2.17 in funzione di z negativa.
+
+2.7.3 Applicazioni delle misure in cortocircuito e in circuito aperto
+
+L’analizzatore di reti è uno strumento di misura a radiofrequenza (RF) in grado di mi-
+surare l’impedenza di qualsiasi carico collegato ai suoi terminali di ingresso. Quando
+viene usato per misurare l’impedenza di ingresso Z5° di una linea senza perdite termi-
+nata su un cortocircuito e anche l’impedenza di ingresso Z?° di una linea senza perdi-
+te terminata su un circuito aperto, dalla combinazione delle due misure si può deter-
+minare Pimpedenza caratteristica della linea Zp e la sua costante di fase 8. Dal pro-
+dotto tra la (2.68) e la (2.73) si ricava che
+
+%y = TET, (2.74)
+
+e dal rapporto tra le medesime equazioni si ha che
+
+tan Bl = (2.75)
+
+=z
+zo
+
+în
+
+A causa dell’ambiguita introdotta dal fatto che la funzione tangente è periodica di a,
+la lunghezza / deve essere minore o uguale a 4/2 per produrre un risultato univoco.
+
+8
+
+[PAG 40]
+a Capitolo 2 - Linee di trasmissione 27 Casi particolari di linea senza perdite
+
+Figura 27 ione ! coordinate polari, vale a dire. tra 0 e 1/2. Dunque l’unica soluzione accettabile dell’e-
+terminata su un circuito UT TTT A) Za e ee na | - -|-quazione precedente 81 = 1/6 radianti: Questo valore; tuttavia; non-comprende i mul-
+aperto: (a) j tipli di 27 associati ai multipli interi di A che definiscono la periodicità di /. Dunque il
+rappresentazione i valore effettivo di 87 è
+schematica, (b) tensione i T
+normalizzata sulla linea, Vola) H BI=6x+—=194 (rad),
+(©) corrente normalizzata e VIa | °
+(d) impedenza di ingresso nel qual caso A
+normalizzata. 19.4
+= 234. (rad/m).
+B= T5734 (rad/m)
+(b)
+2.7.4 Linea di lunghezza /=nv/2
+Se! = n\/2, con n intero, :
+tan Bi = tan [(27/A) (nA/2)] = tan nw = 0.
+Di conseguenza, la (2.63) si riduce a
+Zn =%, | per! =ndf/2, (2.76)
+(c) il che significa che una linea lunga mezza lunghezza d’onda, o qualsiasi multiplo in-
+gn
+
+tero di 4/2, non modifica l’impedenza di carico. Perciò un generatore collegato a un
+carico tramite una linea senza perdite lunga mezza lunghezza d'onda indurrà la stes-
+sa tensione ai capi del carico e la stessa corrente attraverso di esso che indurrebbe
+
+in assenza della linea.
+
+Zn 1
+Impedenza A a 2.7.5. Trasformatore a quarto d'onda
+
+Un altro caso interessante è quello in cui la lunghezza della linea è pari a un quarto
+d'onda, oppure \/4+nA/2 dove n= 0 o un intero positivo, che corrisponde a
+
+BI = (27/A)(A/4) = 1/2. Dalla (2.63), l’impedenza di ingresso diviene
+
+2
+a= per 1=)/44n/2. (2.77)
+L
+
+L'utilità di un tale trasformatore a quarto d’onda è illustrata dal problema
+
+7 . nell’Esempio 2.9.
+
+Esempio 2.8 Misura di Zo e di 8
+Si Ticavino Ze 6 di una linea di trasmissione senza perdite lunga 57 cm per cui si è mi- Esempio 2.9 Trasformatore a quarto d'onda
+surata un impedenza di ingresso Zi = j40.42 © in caso di terminazione con un corto- Una linea di trasmissione a 50 {2 senza perdite deve essere adattata a un’impedenza di
+circuito e Za = 7j121.24 Q in caso di terminazione con un circuito aperto. Dai risulta- carico resistiva Zi = 100 22 tramite un tratto dilinea a un quarto d’onda come descritto
+tidi altre misure si è determinato che la lunghezza della linea è compresa tra 3 e 3.5 lun- in Figura 2.18, eliminando in tal modo le riflessioni lungo Ia linea. Si ricavi l’impeden- _. -
+ghezze d'onda. za caratteristica del trasformatore a quarto d’onda_ — — i
+Soluzione Dalla (2.74) e dalla (2.75) si ha : Soluzione Per eliminare le riflessioni ai terminali 4°, l’impedenza di ingresso Zin
+
+_ aerea (F7 - che la linea a quarto d’onda presenta deve essere uguale a Zp1, l’impedenza caratteristi
+
+Za = 955 Ey = v(40.42)(-j121.24) = 709, ca della linea di alimentazione: perciò Zi, = 50 02. Dalla (2.77)
+tan l= . _ a,
+Za = zo
+
+Dato che / è compresa tra 3A e 3.5A, Bl = (271/A) è compreso tra 6m radianti e | oppure
+{13x/2) radianti. Perciò / è situato nel primo quadrante del sistema di riferimento in : Zon = VZnZi = V50 x 100 = 70.7 2.
+
+[PAG 41]
+66
+
+Capitolo 2 — Linee di trasmissione
+
+Linea di A
+alimentazione
+
+‘Trasformatore 2/4
+
+Zy=500 Zr> Zyp Z,= 1009
+
+Qua) A
+Le]
+Figura 2.18 Configurazione dell’Esempio 2.9.
+Ciò elimina le riflessioni sulla linea di alimentazione, ma non le elimina sulla linea a
+
+4/4. Tuttavia, dal momento che le linee sono senza perdite, tutta la potenza incidente fi-
+nirà comunque per essere trasferita al carico Zi.
+
+2.7.6 Linea di trasmissione adattata: Z, =Z
+
+Per una. linea di trasmissione senza perdite adattata con Zi = Zo, (1) l’impedenza di
+ingresso è Zin = Zp in tutti i punti z della linea, (2) [ = 0 e (3) tutta la potenza inci-
+dente viene trasferita al carico, a prescindere dalla lunghezza / della linea. La Tabella
+2.3 contiene un riassunto delle proprietà delle onde stazionarie.
+
+Tabella 2.3 Proprieta delle onde stazionarie su di una linea di trasmissione senza perdite.
+
+Massimo di tensione
+
+Minimo di tensione
+
+Posizioni dei massimi di tensione e dei minimi di corrente
+
+Posizione del primo massimo di tensione e del primo minimo di corrente
+
+Posizioni dei minimi di tensione e dei massimi di corrente
+
+Posizione del primo minimo di tensione e del primo massimo di corrente
+Impedenza di ingresso
+
+Punti in cui Zi è reale
+
+Zin nei massimi di tensione
+
+Zi, nei minimi di tensione
+
+Zin della linea in cortocircuito
+
+Za della linea in circuito aperto
+
+Zn della linea di lunghezza { = n/a
+
+Za della linea di iunghezza / = 1/4 + nn2
+Zp della linea adattata
+
+Wlan = VEU + IE
+[Whoa = [VE 10 ~ 101}
+
+ot nr _
+Ima = Artz, = 0,1,2,..
+DÀ. secca
+PRESO N)
+MT) 8 A
+vato: ® -7S6<0
+6 2n+1)A
+tin =p 4 COED n=0,1,2,...
+A È
+tan = 3 (1+)
+nl 2. +jZo tan pi
+n= 20( Fe an
+nei massimi e minimi di tensione
+a=z,{ittl
+t-z(15 7)
+(1-1
+zara)
+Ze = jZp tan gi
+Zoe = -jZo cot Bt
+
+Zq=Z, n=0,1,2,...
+Za=Z8/Z, 9=0,1,2,..
+Zn aZy
+
+Vg = ampiezza dell'onda incidente, I = [Pel per —1 < 6, < =; 4 in radiant.
+
+2.8 Trasferimento di potenza in una linea senza perdite
+
+Domande di verifica
+
+2.10 Qual è ta differenza tra l’impedenza caratteristica Zy e l’impedenza di ingresso
+Ziq? In che condizioni sono uguali?
+
+2.11 Cos'è un trasformatore a quarto d’onda? Come si usa?
+
+2.12. Una linea di trasmissione senza perdite di lunghezza / è terminata su un corto-
+circuito. Se / < 4/4, l’impedenza di ingresso è induttiva 0 capacitiva?
+
+2.13 Qual è l’impedenza di ingresso di una linea di lunghezza infinita?
+
+2.14 Se l’impedenza di ingresso di una linea senza perdite terminata su un cortocir-
+cuito è induttiva, sarà induttiva o capacitiva quando la linea è terminata su un
+circuito aperto?
+
+Esercizio 2.11 Una linea senza perdite a 50 2 è costruita con un materiale isolante che
+ha €, = 2.25. Se la linea è terminata su un circuito aperto, quanto deve essere lunga per-
+ché la sua impedenza di ingresso sia equivalente a quella di un condensatore da 10 pF al-
+la frequenza di 50 MHz?
+
+SoLuzione / = 9.92 cm.
+
+Esercizio 2.12 Una linea di alimentazione a 300 £ viene collegata a un tratto di linea a
+150 Q lunga 3 m e terminata su una resistenza di 150 2, Entrambe le linee sono senza
+perdite e utilizzano l’aria come materiale isolante; la frequenza di funzionamento è pari a
+50 MHz. Si determini (a) l’impedenza di ingresso della linea lunga 3 m, (b) il rapporto
+d’onda stazionaria in tensione sulla linea di alimentazione e (c) l’impedenza caratteristica
+di un trasformatore a quarto d’onda da interporre tra le due linee per ottenere S = 1 sulla
+linea di alimentazione.
+
+SOLUZIONE (a) Zin = 150 Q, (b) S = 2, (c) ZH = 212.12
+
+2.8 Trasferimento di potenza in una linea senza perdite
+
+Finora la discussione sulla propagazione delle onde in una linea di trasmissione è sta-
+ta incentrata sugli aspetti relativi a tensioni e correnti. Si esaminerà ora il flusso di po-
+tenza trasportato dall’onda incidente e dall’onda riflessa. Si riparte dalla (2.512) e
+dalla (2.51b), le espressioni generali dei fasori di tensione e di corrente su una linea
+di trasmissione senza perdite:
+
+Va = (e + Te), (2.782)
+i@= + (ei — rel). (2.786)
+
+In tali espressioni, i primi termini tra parentesi rappresentano la tensione e la corrente
+dell’onda incidente e i termini dipendenti da T' rappresentano la tensione e la corrente
+dell’onda riflessa. Nella sezione di carico, cioè per z = 0, le tensioni e le correnti in-
+cidenti e riflesse sono
+
+n _ +
+vi=vi, I di, (per z = 0), (2.79)
+o)
+jp + jr ve
+Berg, F=-r%,  (perz=0). (2.80)
+° x Za
+
+67
+
+[PAG 42]
+68
+
+Capitolo 2 — Linee di trasmissione
+
+2.8.1 Potenza istantanea
+
+“La po potenza istantanea trasportata dall’onda incidente quando arriva sul carico è
+
+uguale al prodotto tra la tensione istantanea v'(¢) e la corrente istantanea i'()
+Pi) =v) #0)
+= Re[Fie™] Re [Fie]
+= ++ | git gi LAN
+= Rel | Pf |e elt] - re] OE giù gi
+na (2.81)
+= [VE cos (wt + ot) el cos (wt + pt)
+
+Mil È cos? (wt+¢*) (W),
+
+dove si è usata la (2.31a) per esprimere Y* in termini del suo modulo |Y#] e dell’an-
+golo di fase gt.
+
+Analogamente, sostituendo I’ nella (2.80) con |I’ |e e seguendo lo stesso procedi-
+mento, si ottiene la seguente espressione della potenza istantanea riflessa dal carico:
+
+PH) =0"(t) (0)
+
+VI
+=p aL cos*(wt + ¢*+6,) (W). (2.82)
+
+Il segno meno nella (2.82) indica il fatto che la potenza riflessa fluisce in direzione
+delle z negative.
+
+2.8.2 Potenza media
+
+Da un punto di vista pratico, si è di solito più interessati a conoscere il flusso di po-
+tenza media nel tempo lungo la linea di trasmissione, P.y, piuttosto che la potenza
+istantanea P(t). Per calcolare Py si può usare un approccio nel dominio del tempo
+oppure un approccio con calcoli più semplici nel dominio fasoriale. Per completezza
+saranno considerati entrambi.
+
+Approccio nel dominio del tempo
+
+Il flusso di potenza media è uguale alla potenza istantanea mediata su un periodo
+temporale T = 1/f = 27/w. Per l’onda incidente, la potenza media è
+
+=-+f Pat == [re 2.83
+apf Pioa= 3 [Pipa (2:83) -
+
+Inserendo la (2.81) calcolata per la potenza incidente P(r) nella (2.83) e svolgendo
+l’integrale, si ottiene che
+
+i IP
+P= ay, (W) (289)
+
+La presenza del fattore moltiplicativo 1/2 è conseguenza dell’integrazione di
+
+cos? (wt + $*) su un periodo. Dall’analogo procedimento applicato all’onda riflessa
+
+si ha
+
+PI =p ll pri (2.85)
+a 2% w (2
+
+28 Trasferimento di potenza in una linea senza perdite
+
+Perciò il modulo della potenza media riflessa è uguale alla potenza media incidente
+
+* fidotta di un fattore moltiplicativo pari a 1}?
+
+La potenza media netta trasferita al carico descritta in Figura 2.19 è
+
+Py = Pi + PL = Wet ln] (Ww). (2.86)
+
+Approccio nel dominio fasoriale
+
+Per una qualsiasi onda propagante con fasori di tensione e di corrente ¥ ef, un'utile
+formula per calcolare la potenza media è
+
+Fi, (2.87)
+
+dove J* è il complesso coniugato di È. Applicando questa formula alla (2.79) e alla
+(2.80) si ottiene
+
++e 2
+Pi aL Re IVs: +. |- On (2.88)
+; mu
+ran emin (Sh)
+= pp ll A DL, (2.89)
+
+che sono identiche alle espressioni descritte rispettivamente dalla (2.84) e dalla
+(2.85).
+
+Esercizio 2.13 Per una linea senza perdite a 50 2 terminata su un’impedenza di carico
+Z, = (100 +50) Q, si determini la percentuale della potenza media incidente che viene
+riflessa dal carico.
+
+SOLUZIONE 20%.
+
+Esercizio 2.14 Per la linea dell’Esercizio 2.13, qual è il modulo della potenza media ri-
+flessa se |V}|=1V?
+
+Soluzione Pi, = 2 (mW).
+
+Linea di trasmissione
+eee roan
+
+Pi =P Pi
+
+Domande di verifica
+
+2.15 Secondo la (2.82), il valore istantaneo delia potenza riflessa dipende dalla. fase
+6, del coefficiente di riflessione, mentre la potenza media riflessa data dalla
+(2.85) non ne dipende. Si spieghi questo fatto.
+
+C)
+
+Figura 2.19
+
+La potenza media riflessa
+da uncarico collegato a
+‘una linea di trasmissione
+senza perdite è uguale alla
+‘potenza incidente
+moltiplicata per [F}?.
+
+[PAG 43]
+70
+
+Capitolo 2 — Linee di trasmissione
+
+2.16 Qual è la potenza media trasferita da una linea di trasmissione senza perdite a
+un carico reattivo? - .
+2.17 Quale frazione della potenza incidente viene trasferita a un carico adattato?
+
+2.18 Si verifichi che
+Lf? 4 f2nt 1
+F/ cos (Ea
+
+a prescindere dal valore di ¢.
+
+2.9 La carta di Smith
+
+Prima dell’era dei computer e delle calcolatrici programmabili, furono sviluppati di-
+versi tipi di diagrammi per agevolare la soluzione dei problemi riguardanti le linee di
+trasmissione. La carta di Smith, sviluppata da P.H. Smith nel 1939, è stata e continua
+a essere la tecnica grafica in assoluto più usata per l’analisi e il progetto dei circuiti a
+linea di trasmissione. Anche se l’intento originario del suo inventore era di fornire un
+utile strumento grafico per eseguire calcoli su impedenze complesse, la carta di Smith
+è divenuta un mezzo di presentazione fondamentale nei programmi di progettazione
+assistita dal computer (CAD) per descrivere le prestazioni dei circuiti a microonde.
+Come sarà dimostrato in questo paragrafo e nel successivo, l’uso delia carta di Smith
+non solo evita noiose elaborazioni con i numeri complessi, ma consente anche all’in-
+gegnere di progettare in modo relativamente facile circuiti di adattamento di impeden-
+za. La carta di Smith si può usare sia per linee di trasmissione con perdite che senza
+perdite. Questa discussione, tuttavia, sarà limitata al caso in assenza di perdite.
+
+2.9.1 Equazioni parametriche
+
+Il coefficiente di riflessione I’ è in generale una grandezza complessa composta da un
+modulo || e da un angolo di fase 9, oppure, allo stesso modo, da una parte reale T, e
+da una parte immaginaria I, vale a dire
+
+T=|Tle* =P, 450, (2.90)
+
+dove
+T, = |P| cos 4, (2.91a)
+T; =|T| sin @. (2.916)
+
+La carta di Smith si estende nel piano complesso di I’. In Figura 2.20, il punto A rap-
+presenta un coefficiente di riflessione P', = 0.3 +0.4 oppure, allo stesso modo
+
+IP] = {(0.3)° +. 0.4)? = 0.5
+
+6 = tan™!(0.4/0.3) = 53°.
+
+Analogamente, il punto B rappresenta I's = -0.5 — 0.2, oppure |I's| = 0.54 e
+6, = 202°; è equivalente esprimere 6, = (360° — 202°) = ~158°. Si noti che quan-
+do sia T, che I sono numeri negativi, 9, è nel terzo quadrante del piano Tj.
+Perciò, quando si usa la formula 9 = tan-!(T,/T;) per calcolare 9,, può essere neces-
+serio aggiungere o sottrarre 180° per ottenere il valore corretto di 6.
+
+Il cerchio unitario descritto in Figura 2.20 corrisponde a {I'| = 1. Dato che {PF} <1
+in una linea di trasmissione, ha significato fisico solo la parte del piano FT; che si
+trova all’interno del cerchio unitario. Dunque da ora in poi i grafici saranno limitati
+al dominio contenuto all’interno del cerchio unitario.
+
+29 La carta di Smith
+
+Carico in
+cortocircuito N
+Carico in
+
+circuito aperto
+
+Cerchio unitario
+
+0=270° or -90°
+
+Sulla carta di Smith le impedenze sono rappresentate in forma normalizzata, la cui
+costante di normalizzazione è Zo, l’impedenza caratteristica della linea. Le impedenze
+normalizzate sono indicate da lettere minuscole, come per esempio z= Z/2g.
+Dunque l’impedenza di carico normalizzata è data da
+
+2. =Z,/Z (adimensionale), (2.92)
+e il coefficiente di riflessione T’, definito dalla (2.492), si può scrivere come
+
+Albi an) (2.93)
+ Z/b+1 2+1
+
+La relazione inversa della (2.93) è
+
+2377. (99)
+
+L’impedenza di carico normalizzata zi è in generale una grandezza complessa forma-
+ta da una resistenza di carico normalizzata ri e da una reattanza di carico normaliz-
+zata x;
+
+a =r +a. (2.95)
+Inserendo la (2.90) e ia (2.95) nella (2.94), si ha
+(+P) 477i
+
+= i (2.96)
+TPL TT)
+
+che si può risolvere per ricavare le espressioni esplicite di ry e x, in funzione di Te
+di T;. Ciò si ottiene moltiplicando il numeratore e il denominatore del membro destro
+
+HI
+
+Figura 2,20
+
+Il piano complesso P. Il
+punto 4 rappresenta
+
+Ty = 0.3 +04 = 0,565”
+e il punto B rappresenta
+
+Ta = —0.5 ~ j0.2
+
+= |0.54}e?" Il cerchio
+unitario corrisponde a
+
+{I| = 1. Nel punto C siha
+T = 1, corrispondente a
+un carico a circuito aperto
+enel punto Dsi ha
+
+T = ~1, corrispondente a
+un cortocircuito.
+
+[PAG 44]
+Figura 2.21
+
+Gruppi di cerchi an,
+costante e x, costante
+all’interno del dominio
+Msi
+
+Capitolo 2 — Linee di trasmissione
+
+della (2.96) per il complesso coniugato del denominatore e quindi separando il risul-
+tato-in parte reale e parte immaginaria, Queste operazioni portano a ricavare
+
+n= on (2.97a)
+as .3 fa
+(1-1 +1?
+2T;
+x (2.976)
+
+(ET +1?"
+
+Queste espressioni dimostrano che a un dato insieme di valori di I’, e di I corrispon-
+de un insieme univoco di valori di n, e di x. Tuttavia, se si fissa il valore di r1, per
+esempio ponendolo uguale a 2, si possono assegnare a I e I’; molte possibili coppie
+di valori, ciascuna delle quali corrisponde allo stesso valore di ry. Per esempio,
+(DD) = (0.33,0) corrisponde a r, = 2, come pure la coppia (I, Pj) = (0.5, 0.29)
+e un numero infinito di altre coppie. Infatti, se si graficassero nel piano I’,-I;; tutte le
+possibili coppie di T, e di I‘; corrispondenti a r, = 2, si otterrebbe il cerchio indicato
+da ri, = 2 in Figura 2.21. Cerchi analoghi corrispondono agli altri valori di ri, e all’in-
+terno del dominio delimitato da |I'| = 1 tutti questi cerchi passano per il punto
+(I, Ti) = (I, 0). Con alcune operazioni algebriche si può riscrivere fa (2.97a) in mo-
+do da ottenere la seguente equazione parametrica nel piano T-T; del cerchio corri-
+spondente a un dato valore din:
+
+2 2
+__ 2 1
+fr) ao
+Ti
+i
+- |\ 5
+è \ XF
+\
+- “a=0.5 xy=l
+ci |
+
+29 La carta di Smith
+
+L'equazione canonica di un cerchio nel piano x-y di centro (xo, yo) e raggio a è data
+
+da
+(ex) + 7-0) = 2. (2.99)
+
+Confrontando la (2.98) e la (2:99) si ricava che il cerchio n, è centrato in
+T.=r1/(1+r) eT; = 0, con raggio pari a 1/(1+ 1). H cerchio massimo descrit-
+to in Figura 2.21, corrispondente a r, = 0, è il cerchio unitario associato a |[|= 1.
+Ciò non deve sorprendere, perché quando 7, = 0 si ha che [I] = 1 a prescindere dal
+valore del modulo di x.
+
+Da un analogo esame-dell’espressione di x, data dalla (2.97b) si ricava pure l’equa-
+zione di un cerchio data da
+
+(tr 1° + (ri -1). (2). (2.100)
+
+*L
+
+ma i cerchi a x, costante nel piano T,-T; hanno caratteristiche diverse da quelli a n,
+costante. Per prima cosa, la reattanza normalizzata xj, può assumere valori sia positi-
+vi che negativi, mentre la resistenza normalizzata non può essere negativa, in quanto
+le resistenze negative non hanno significato fisico. Dunque la (2.100) genera due
+gruppi di cerchi, uno corrispondente ai valori positivi di x, € l’altro corrispondente ai
+valori negativi di x. Inoltre, come descritto in Figura 2.21, ciascun cerchio si trova
+solo in parte entro i confini del cerchio unitario. I gruppi di cerchi relativi alle due
+equazioni parametriche (2.98) e (2.100), graficati per opportuni valori di ri, e di xz,
+costituiscono la carta di Smith mostrata in Figura 2.22. Un determinato punto sulla
+carta di Smith, come il punto P in Figura 2.22, rappresenta un’impedenza di carico
+normalizzata z, = 2 -- j1, corrispondente a un coefficiente di riflessione in tensione
+T = 0.45 exp(-j26.6°). Il modulo {I'| = 0.45 si ottiene dividendo la lunghezza del
+segmento che congiunge il centro della carta di Smith con il punto P per la lunghez-
+za del segmento che congiunge il centro della carta di Smith con il bordo del cerchio
+unitario, in quanto il raggio del cerchio unitario corrisponde a |I'| = 1. Il perimetro
+della carta di Smith contiene tre ghiere concentriche: la ghiera più interna è indicata
+con la dicitura angolo del coefficiente di riflessione in gradi ed è la ghiera su cui si
+misura 9. Come indicato in Figura 2.22, per il punto P si ha 9, = --26.6°. Il signifi-
+cato e l’utilizzo delle altre due ghiere saranno discussi in seguito.
+
+Esercizio 2.15 Si usi la carta di Smith per ricavare i valori di I corrispondenti alle se-
+guenti impedenze di carico normalizzate: (a) 4 =2+/j0, () ~=1~Jl, ©
+a, = 0.5 —j2, (4) = = —73, (©) 2 = 0 (cortocircuito), (f) z = oo (circuito aperto), (g)
+zi = I (carico adattato).
+
+SoLuzione (a) P'= 0.33, &)T = 0.45 /-63.49, (€) T = 0.83 /-50.9°,
+@P =1/-36.9, @T=-1,(9l=1,@T=0.
+
+2.9.2 Impedenza di ingresso
+Dalla (2.61), l’impedenza di ingresso della linea a una distanza / dal carico è data da
+
+1+ Pe? )
+
+Zn=Zo Ga (2.101)
+
+Per usare la carta di Smith si devono normalizzare ie impedenze rispetto all’impeden-
+za di carico Zy. Dunque l’impedenza di ingresso normalizzata è
+
+B
+
+[PAG 45]
+74
+
+Figura 2.22
+- Il punto P rappresenta
+un’impedenza di carico
+
+normalizzata z, =2-—jl.
+
+Il coefficiente di
+riflessione ha moduio
+(| = OP/OR = 0.456
+angolo @, = —26.6°. Il
+punto R è un punto
+arbitrario sul cerchio
+
+ry = 0, che coincide col
+cerchio {Tj = 1.
+
+Capitolo 2 — Linee di trasmissione
