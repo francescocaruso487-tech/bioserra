@@ -1,0 +1,1998 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 28/116 ===
+Chars: 44,701 | Offset: 1,193,885
+
+
+
+[PAG 597]
+ELETTROTECNICA GENERALE
+VII-93
+sti non sono paralleli alle linee di forza, non danno mai origine a coppia; la coppia invece
+agisce sui lati AD, BC paralleli all’asse di rotazione della spira.
+Indicando con h la lunghezza dei lati AD e BC e con  la permeabilità magnetica del
+mezzo circostante la spira, la forza F0 che sollecita ciascun lato vale F0  hHI  BIh.
+Con riferimento alla Fig. VII.6.3, se  è l’angolo formato dal piano contenente la spira
+con la direzione delle linee del campo magnetico, la coppia di forze vale
+(VII.6.2)
+La relazione permette di affermare che:
+–  la coppia assume il valore massimo quando  è uguale a zero, ossia quando il piano
+della spira è parallelo alle linee di campo e il braccio della coppia è massimo;
+–  la coppia assume il valore zero quando il piano della spira è perpendicolare alle
+linee di campo e il braccio della coppia è nullo;
+–  la coppia è proporzionale all’area della spira e ciò vale anche quando la spira non
+ha forma rettangolare. Nel caso di una spira di forma circolare e di un campo magnetico
+radiale (Fig. VII.6.4) la coppia è espressa dalla relazione
+(VII.6.3)
+Coppia agente su una bobina
+Se invece di una spira si considera una bobina di N spire, ogni lato sarà composto da N
+conduttori e quindi la forza agente su un lato sarà pari a N volte quella relativa ad una
+spira. Si avrà pertanto
+(VII.6.4)
+oppure
+(VII.6.5)
+a seconda che la coppia sia dovuta ad un campo di linee di forza parallele o radiali.
+6.2  Forze agenti fra conduttori paralleli (forze elettrodinamiche)
+Sono definite elettrodinamiche le forze che si manifestano fra circuiti elettrici percorsi
+da corrente; queste forze sono generate dal campo di induzione prodotto da un circuito ed
+agente sull’altro, e viceversa.
+Fig. VII.6.3   
+Fig. VII.6.4   Linee di forza di un
+campo magnetico radiale.
+Componente della forza
+che determina la coppia
+F0
+F0
+B
+
+
+
+C
+F0acos
+BIahcos
+BIScos
+=
+=
+=
+C
+BIS
+=
+C
+NBIScos
+=
+C
+NBIS
+=
+
+[PAG 598]
+VII-94
+ELETTROTECNICA GENERALE
+Forza agente su due conduttori rettilinei e paralleli.
+Con riferimento alla Fig. VII.6.5a, la forza che sollecita un tratto l di due conduttori
+lunghi, paralleli e distanti d, percorsi da corrente rispettivamente di intensità I1 e I2,
+immersi in un materiale di permeabilità magnetica , si determina nel seguente modo:
+–  si calcola il valore dell’induzione B1 determinata dal conduttore 1 nei punti in cui si
+trova il conduttore 2 (Fig. VII.6.5b); essa vale
+–  per la relazione VII.6.1, osservando che il vettore induzione B1 è perpendicolare
+all’asse del conduttore 2 (per cui  = 90°), la forza che sollecita un tratto lungo l di
+quest’ultimo vale
+(VII.6.6)
+La stessa espressione si ottiene considerando l’azione dell’induzione B2 sul conduttore 1.
+Fig. VII.6.5   Forze fra conduttori
+paralleli, percorsi da corrente.
+Fig. VII.6.6   Forze fra conduttori
+incidenti, percorsi da corrente.
+Fig. VII.6.7   Forze fra spire
+affacciate, percorse da cor-
+rente.
+B1
+
+I1
+2d
+---------
+=
+F
+lB1I2
+l
+2d
+--------- I1I2
+=
+=
+l
+
+
+F1
+B1
+F
+F
+I1
+I2
+I1
+I2
+d
+Linea di forza dovuta
+alla corrente I1
+a)
+b)
+F
+F
+I1
+I2
+F
+F
+I1
+I2
+a)
+b)
+F
+F
+I1
+I2
+F
+F
+I1
+I2
+
+[PAG 599]
+ELETTROTECNICA GENERALE
+VII-95
+La forza è perpendicolare ai due conduttori e giace nel piano che li contiene. Il suo
+verso sarà tale da:
+–  determinare attrazione fra i conduttori se le loro correnti sono equiverse;
+–  determinare repulsione fra i conduttori se le loro correnti hanno verso discorde.
+Nel caso di due conduttori percorsi dalla stessa corrente, come i due fili di andata e
+ritorno di un cavo elettrico, la forza si determina con la relazione
+(VII.6.7)
+Le Figg. VII.6.6a e b, rappresentano l’azione delle forze nel caso di conduttori rettili-
+nei incidenti fra loro e le Figg. VII.6.7a e b, rappresentano l’azione delle forze nel caso di
+due spire o bobine affacciate. In entrambi i casi le forze elettrodinamiche sono proporzio-
+nali al prodotto delle correnti che circolano nei conduttori.
+6.3  Forza portante di un elettromagnete
+L’elettromagnete (Fig. VII.6.8) è un dispositivo costituito da un nucleo di materiale
+ferromagnetico composto da una parte fissa, dove sono alloggiati gli avvolgimenti di ecci-
+tazione, e da una parte mobile chiamata àncora.
+Quando negli avvolgimenti circola una corrente di sufficiente intensità, l’àncora viene
+attratta verso la parte fissa con una determinata forza F. Se per effetto di questa forza
+l’àncora si sposta di una quantità dx, si produce il lavoro meccanico
+e, di conseguenza, diminuisce il volume del campo magnetico nei due traferri della quantità
+essendo S la sezione di ciascun polo.
+Poiché in ogni unità di volume del campo, caratterizzato nei traferri da induzione B e
+forza magnetizzante H, è accumulata l’energia
+è evidente che in seguito alla diminuzione del volume di campo dV si libera l’energia
+Fig. VII.6.8   Forze di un elet-
+tromagnete.
+F
+l
+2d
+--------- I2
+=
+Polo di
+F
+F
+P
+N
+S
+area S
+dx
+dL
+Fdx
+=
+dV
+2Sdx
+=
+w
+1
+2--BH
+=
+dW
+wdV
+1
+2--BH2Sdx
+=
+=
+
+[PAG 600]
+VII-96
+ELETTROTECNICA GENERALE
+Scrivendo l’uguaglianza
+si ricava l’espressione della forza F che vale
+(VII.6.8)
+Più comunemente si esprime la forza F esercitata da ciascun polo in una delle
+seguenti formule equivalenti:
+(VII.6.9)
+Per maggior chiarezza conviene ancora ricordare che se l’elettromagnete presenta due
+poli, la forza attrattiva è doppia di quella espressa dalla formula VII.6.9.
+Esprimendo l’induzione B in tesla e la forza magnetizzante in Am, si ottiene la forza
+misurata in newton (N).
+Si osservi che nelle relazioni VII.6.9 non compare esplicitamente lo spessore del tra-
+ferro. Giova però ricordare che se aumenta il traferro, per mantenere la stessa induzione è
+necessario aumentare la corrente magnetizzante oppure, se la corrente magnetizzante
+rimane costante, all’aumentare del traferro diminuisce l’induzione e quindi, in propor-
+zione al suo quadrato, la forza. In particolare, se la riluttanza del nucleo magnetico è tra-
+scurabile rispetto a quella del traferro, raddoppiando lo spessore di quest’ultimo
+l’induzione B si riduce a metà e la forza di attrazione ad un quarto; ciò permette di affer-
+mare che la forza di attrazione varia, in prima approssimazione, in ragione inversa del
+quadrato dello spessore del traferro.
+6.4  Induzione elettromagnetica
+Il fenomeno dell’induzione elettromagnetica consiste nelle generazione di tensioni
+indotte all’interno di circuiti elettrici, interessati da un campo magnetico variabile. La
+variabilità del campo magnetico, ma più precisamente del flusso magnetico concatenato al
+circuito, è la condizione indispensabile affinché nel circuito si generi una tensione indotta,
+per cui: se il circuito si concatena con un flusso costante nel tempo, non si crea alcuna
+tensione.
+Il valore della tensione indotta è direttamente proporzionale alla variazione del flusso
+concatenato e inversamente proporzionale al tempo in cui avviene tale variazione,
+secondo la relazione:
+(VII.6.10)
+L’espressione, che rappresenta la legge di Faraday-Neumann, indica che la tensione
+indotta è pari al rapporto incrementale fra le grandezze c e t e quindi dipende dalla pen-
+denza della curva che lega le due grandezze.
+Se il circuito elettrico che subisce il fenomeno dell’induzione elettromagnetica è
+chiuso e non vi è altro generatore in grado di far circolare corrente, la tensione indotta
+agisce da forza elettromotrice e genera una corrente indotta. La corrente indotta genera, a
+sua volta, un campo magnetico indotto che si oppone alle variazioni del campo magnetico
+induttore; per cui, se il flusso concatenato induttore tende a diminuire, il campo indotto ha
+un effetto magnetizzante concorde con quello induttore e viceversa. Queste osservazioni
+hanno portato alla formulazione della legge di Lenz secondo la quale: il verso della ten-
+sione indotta è sempre tale da opporsi alla variazione del flusso concatenato induttore.
+dW
+dL
+=
+F
+BHS
+=
+F
+1
+2--BHS
+1
+2-- B2S
+0
+---------
+1
+2--0H2S
+=
+=
+=
+E
+c
+t
+----------
+=
+
+[PAG 601]
+ELETTROTECNICA GENERALE
+VII-97
+Sulla base di questa opposizione, la relazione VII.6.10 diventa:
+(VII.6.11)
+che traduce matematicamente la legge di Faraday-Neumann-Lenz.
+Dalla relazione VII.6.10 si ricava:
+(VII.6.12)
+Il prodotto Et, pari alla variazione del flusso concatenato, è detto impulso di ten-
+sione; esso è misurato in weber o in volt per secondo e, sul grafico E = f(t), corrisponde
+all’area del rettangolo di altezza E e base t.
+Dalla legge dell’induzione elettromagnetica risulta che per generare in un circuito una
+f.e.m. costante, deve essere costante la velocità di variazione del flusso nel tempo; se
+invece essa cambia da un istante all’altro, anche la f.e.m. indotta cambia da istante a
+istante. L’applicazione della relazione VII.6.11, che utilizza la variazione complessiva di
+flusso in un intervallo finito di tempo, consente di calcolare il valore medio della f.e.m.
+indotta nell’intervallo di tempo considerato, ma non fornisce indicazioni dei valori istan-
+tanei che la f.e.m. assume nei singoli istanti successivi. Per avere informazioni sui valori
+istantanei della f.e.m. è necessario conoscere la legge di variazione del flusso nel tempo,
+che può essere data in forma grafica o analitica secondo una funzione  = f(t). Se si con-
+sidera un intervallo di tempo infinitamente piccolo dt nel quale si ha una variazione di
+flusso d, la relazione
+(VII.6.13)
+esprime ancora il valore medio della f.e.m. nell’intervallo dt ma essendo questo infinita-
+mente piccolo, il valore medio si confonde col valore istantaneo.
+Il valore della f.e.m. indotta così definito è rappresentato sulla curva di Fig. VII.6.9,
+dalla tangente trigonometrica (col segno cambiato) dell’angolo  compreso fra l’asse dei
+tempi e la tangente geometrica alla curva di variazione del flusso, nel punto che ha per
+ascissa l'istante t considerato. Si può perciò concludere che il valore istantaneo della
+f.e.m. è dato dalla derivata del flusso rispetto al tempo, calcolata nell’istante considerato
+e cambiata di segno.
+6.5  Tensione indotta in un conduttore in moto relativo nel campo magnetico
+In un conduttore elettrico che si muove secondo un moto rettilineo uniforme, con
+Fig. VII.6.9   Valore medio 
+ e
+valori istantanei 
+ delle f.e.m.
+indotte.
+E
+c
+t
+----------
+–
+=
+Et
+c
+=
+e
+d
+dt
+-------
+–
+tg
+–
+=
+=
+
+
+t
+
+A
+B
+C
+dt
+t
+t
+t1
+t2
+
+t dt
+1
+2
+d
+D
+
+t
+--------
+–
+tg
+–
+=
+d
+dt
+-------
+–
+tg
+–
+=
+
+[PAG 602]
+VII-98
+ELETTROTECNICA GENERALE
+velocità costante v, in un campo magnetico di induzione costante (Fig. VII.6.10), si induce
+una f.e.m. così determinabile:
+–  il conduttore che si muove con velocità v percorre in un tempo t lo spazio s 
+vt; esso taglia tutte le linee di forza che attraversano l’area S  ls, essendo l la lun-
+ghezza del tratto di conduttore immerso nel campo magnetico. Ciò significa che la varia-
+zione del flusso concatenato è stata pari a
+–  nel conduttore si genera una f.e.m. indotta determinata in valore (e cioè a parte il
+segno) dalla relazione
+–  poiché st  v, risulta
+(VII.6.14)
+La polarità della tensione indotta può essere determinata con la regola di Fleming o
+delle tre dita della mano destra (Fig. VII.6.11): disponendo il medio, l’indice, il pollice a
+90° fra loro, si ha la seguente corrispondenza:
+medio  verso della f.e.m. indotta;
+indice  verso del vettore induzione;
+pollice  verso del vettore velocità.
+Fig. VII.6.10   F.e.m. indotta in
+un conduttore che si muove in
+un campo magnetico.
+Fig. VII.6.11   Regola delle tre dita della
+mano destra (di Fleming).
+
+B
+v
+v
+e
+l
+s
+
+BS
+Bls
+=
+=
+E
+
+t
+--------
+Bls
+t
+------------
+=
+=
+E
+Blv
+=
+v
+90°
+90°
+90°
+B
+E
+pollice
+indice
+medio
+
+
+
+[PAG 603]
+ELETTROTECNICA GENERALE
+VII-99
+Comportamento da generatore elettrico
+Collegando il conduttore, mediante due guide conduttrici, ad un carico esterno di resi-
+stenza R, si ottiene un circuito elettrico chiuso. Per effetto della f.e.m. indotta circola nel
+conduttore, e quindi nel carico esterno, una corrente data da
+(VII.6.15)
+che determina l’insorgere di una forza meccanica, diretta secondo il moto, ma di verso
+opposto (Fig. VII.6.12). Tale forza, opposta alla direzione del moto, è da considerare resi-
+stente; per far muovere il conduttore con velocità v costante bisogna applicare una forza
+motrice uguale e opposta a quella resistente, in modo da avere
+L’uguaglianza a zero deriva dal fatto che essendo v costante, l’accelerazione è nulla.
+Quanto descritto corrisponde al comportamento da generatore elettrico, in quanto il
+sistema meccanico esterno fornisce la forza motrice necessaria al movimento della parte
+mobile e la f.e.m. indotta determina la circolazione della corrente elettrica verso l’utiliz-
+zatore esterno, come avviene nei bipoli generatori.
+Comportamento da motore elettrico
+Sostituendo nel circuito di Fig. VII.6.12 il carico esterno con un generatore di corrente
+costante (Fig. VII.6.13), si registrano fenomeni elettromagnetici che evolvono secondo la
+seguente sequenza:
+–  la corrente I, che circola nel conduttore determina una forza motrice Fm = BIl;
+–  se la forza motrice è contrastata da una uguale forza meccanica Fr applicata
+dall’esterno, il conduttore si muove di moto rettilineo uniforme verso destra;
+Fig. VII.6.12   Funzionamento da
+generatore.
+Fig. VII.6.13   Funzionamento da
+motore.
+I
+E
+R---
+Blv
+R
+--------
+=
+=
+Fm
+Fr
+–
+ma
+0;
+=
+=
+Fm
+Fr
+F
+BIl
+=
+=
+=
+L
+I
+I
+R
+s
+Fr
+v
+Fm
+B
+L
+I
+I
+s
+Fr
+v
+Fm
+B
+U
+
+[PAG 604]
+VII-100
+ELETTROTECNICA GENERALE
+–  a causa della diminuzione del flusso concatenato alla spira, determinata dal verso
+del moto, si origina nel conduttore una forza controelettromotrice E = Blv che genera
+nella spira una circolazione di corrente in senso tale da rinforzare il flusso concatenato
+che è diminuito.
+Quanto descritto corrisponde al comportamento da motore elettrico, in quanto il
+sistema elettromagnetico crea la forza motrice necessaria al movimento della parte
+mobile; al movimento si oppone il carico meccanico collegato al motore, mediante la
+forza resistente. Alla corrente elettrica fornita dal generatore esterno, si oppone la ten-
+sione indotta, come avviene negli utilizzatori attivi.
+Se il conduttore (Fig. VII.6.14) si muove nel campo magnetico in direzione non orto-
+gonale alle linee di forza, è necessario scomporre il vettore velocità secondo le seguenti
+componenti:
+–  componente tangenziale vt = vcos. Essa origina un movimento che non tagliando
+linee di flusso non determina alcuna variazione di flusso concatenato e, quindi, non pro-
+duce tensione indotta;
+–  componente normale vn = vsen. Essa origina un movimento che tagliando linee di
+flusso determina la variazione del flusso concatenato e, quindi, produce tensione indotta.
+L’espressione VII.6.14 diventa pertanto
+(VII.6.16)
+6.6  Tensione indotta in una spira rotante in un campo magnetico
+Una spira aperta di forma rettangolare (Fig. VII.6.15), di dimensioni l e d, che ruota
+con velocità angolare  costante all’interno di un campo magnetico di induzione B
+costante, con linee di forza perpendicolari all’asse della spira, con i lati lunghi l attivi e
+con i lati lunghi d posti fuori dal campo magnetico, è sede di tensione indotta determina-
+bile secondo il seguente ragionamento:
+–  con riferimento alla Fig. VII.6.16, che rappresenta lo schema su un piano perpendi-
+colare alla spira stessa, la velocità periferica v di ogni conduttore attivo è legata alla velo-
+cità angolare dalla relazione
+–  la componente della velocità che taglia le linee di forza è quella normale ed è data da
+–  in ogni conduttore attivo nasce una tensione indotta determinabile con l’espressione:
+Fig. VII.6.14  
+I
+
+F
+B
+vt
+vn
+v
+E
+Blvn
+Blvsen
+=
+=
+v
+r
+d
+2
+-------
+=
+=
+vn
+vsen
+rsen
+d
+2
+-------sen
+=
+=
+=
+
+[PAG 605]
+ELETTROTECNICA GENERALE
+VII-101
+le cui polarità, riportate nella Fig. VII.6.15, sono individuabili con la regola delle tre dita
+della mano destra. Le tensioni indotte hanno lo stesso valore in entrambi i conduttori e
+agiscono in modo concorde tra loro, per cui:
+(VII.6.17)
+–  considerando che il prodotto Bld rappresenta il flusso massimo M che si può con-
+catenare alla spira, e che  = t si ottiene, sostituendo nella relazione VII.6.17:
+(VII.6.18)
+dove con la lettera minuscola è evidenziata la variabilità nel tempo della tensione indotta.
+La tensione indotta varia con legge sinusoidale perché varia con la funzione sent.
+Indicando con EM = M il valore massimo della tensione sinusoidale, la relazione
+VII.6.18 diventa:
+(VII.6.19)
+L’andamento nel tempo della tensione è rappresentato in Fig. VII.6.17: la tensione
+Fig. VII.6.15   Polarità delle tensioni
+indotte.
+Fig. VII.6.16   Componenti normali e
+tangenziali della velocità.
+Fig. VII.6.17   Tensione indotta nella
+spira: andamento sinusoidale.
+Ec
+Blvsen
+Bl d
+2
+------- sen
+=
+=
+Es
+2Ec
+2Bl d
+2
+------- sen
+Bldsen
+=
+=
+=
+es
+Msent
+=
+
+B
+vn
+Ec
+Ec
+vn
+B
+
+Es
+l
+d
+
+
+B
+vn
+
+vn
+v
+vt
+v
+vt
+EM
+EM
+0
+2
+32
+52
+2
+t
+e
+
+es
+EMsen t
+
+
+=
+
+[PAG 606]
+VII-102
+ELETTROTECNICA GENERALE
+varia periodicamente, riprendendo gli stessi valori ad ogni giro della spira.
+Anche per la spira rotante si possono ripetere le considerazioni fatte per il conduttore
+in movimento traslatorio.
+6.7  Autoinduzione
+Qualsiasi circuito percorso da corrente è sempre concatenato almeno con il flusso di
+induzione che esso stesso genera. Ne risulta che ogni variazione di corrente in un circuito
+qualsiasi è sempre accompagnata da una variazione del flusso concatenato col circuito
+stesso; corrispondentemente in esso si genera una f.e.m. indotta, che per la legge di Lenz
+si oppone alla variazione della corrente che la induce. In questo consiste il fenomeno
+dell’autoinduzione, che rappresenta l’effetto di induzione elettromagnetica che ogni cir-
+cuito esercita su se stesso, in conseguenza delle sole variazioni della corrente che lo per-
+corre.
+Indicando con c la variazione del flusso concatenato nell’intervallo di tempo t,
+dovuto alla variazione I della corrente, si ha:
+e quindi:
+(VII.6.20)
+La formula evidenzia che il valore della tensione di autoinduzione è direttamente pro-
+porzionale all'induttanza della bobina e alla velocità di variazione della corrente It.
+Se si considera un intervallo infinitesimo di tempo dt, a cui corrisponde la variazione
+di corrente di, la relazione VII.6.20 assume la forma:
+(VII.6.21)
+Da quanto esposto risulta evidente che volendo esprimere la legge di Ohm per un cir-
+cuito percorso da corrente comunque variabile, si deve tenere conto in ciascun istante non
+solo della tensione u direttamente applicata al circuito, ma anche della f.e.m. di autoindu-
+zione. Si deve perciò scrivere:
+e quindi
+(VII.6.22)
+oppure
+(VII.6.23)
+Il calcolo del coefficiente di autoinduzione L o induttanza del circuito, può essere con-
+dotto anche in funzione delle caratteristiche geometriche del circuito e della permeabilità
+magnetica del materiale in cui si sviluppa il campo magnetico. Le relazioni sotto riportate,
+che si riferiscono ad alcune configurazioni comuni nella pratica, sono valide solamente
+quando la permeabilità magnetica del mezzo è costante; ciò esclude i circuiti con ferro.
+–  Induttanza di un avvolgimento toroidale composto da N spire avvolte su di un
+nucleo di permeabilità  e sezione S costanti e di lunghezza l:
+c
+L I
+=
+E
+L
+–
+I
+t
+-----
+=
+e
+L
+–
+di
+dt
+----
+=
+u
+e
++
+Ri
+=
+u
+L di
+dt
+----
+–
+Ri
+=
+u
+Ri
+=
+L di
+dt
+----
++
+
+[PAG 607]
+ELETTROTECNICA GENERALE
+VII-103
+(VII.6.24)
+–  induttanza di una spira circolare di diametro D grande rispetto al raggio r del con-
+duttore, immersa in un campo di permeabilità magnetica  costante:
+(VII.6.25)
+–  induttanza di due conduttori rettilinei, paralleli, lunghi l, distanti d e di raggio
+rispettivamente r1 e r2, immersi in un materiale di permeabilità  costante:
+(VII.6.26)
+L’induttanza si misura in henry (H).
+6.8  Mutua induzione
+Definizione del coefficiente di mutua induzione fra due circuiti
+Due bobine si dicono mutuamente accoppiate quando la circolazione di corrente in
+una delle due produce un flusso magnetico che va ad interessare, totalmente o parzial-
+mente l’altra bobina.
+La Fig. VII.6.18 riporta lo schema di due bobine mutuamente accoppiate, in quanto la
+circolazione di corrente in una delle due produce un flusso magnetico che va ad interes-
+sare, totalmente o parzialmente, l’altra bobina. I flussi magnetici che compaiono nello
+schema assumono il seguente significato:
+–  flusso utile u: è il flusso che, prodotto da una bobina, va ad interessare anche tutte
+le spire dell’altra bobina;
+–  flusso disperso d: è il flusso che, prodotto da una bobina, non si richiude entro
+nessuna spira dell’altra bobina;
+–  flusso totale t: è la somma del flusso utile e del flusso disperso.
+Quando la bobina 1 è percorsa dalla corrente I1, il flusso che essa produce e che si
+concatena con la bobina 2 è dato da:
+dove 1 è un coefficiente adimensionato, definito dal rapporto u/t e variabile tra 0
+(flusso utile nullo) e 1 (flusso utile uguale a quello totale e quindi flusso disperso nullo).
+Si definisce coefficiente di mutua induzione M il rapporto fra il flusso concatenato con
+la bobina 2 e la corrente della bobina 1 che l’ha prodotto; per cui:
+Fig. VII.6.18   Flusso utile e flusso
+disperso.
+L
+N2S
+l
+-------------
+=
+L
+D
+2
+-------
+1,75
+2,30log4D
+r
+-------
++
+–
+
+
+
+
+=
+L
+l
+2
+------ 0,50
+2,30log d2
+r1r2
+----------
++
+
+
+
+
+
+
+=
+N1
+d1
+I1
+N2
+u
+c2
+uN2
+1L1I1N2
+N1
+-------------------------
+=
+=
+
+[PAG 608]
+VII-104
+ELETTROTECNICA GENERALE
+(VII.6.27)
+Nel caso che sia la bobina 2 ad essere percorsa da corrente, si ripete il precedente
+ragionamento e il coefficiente di mutua induzione risulta:
+(VII.6.28)
+Moltiplicando le relazioni VII.6.27 e VII.6.28, si ottiene:
+Indicando con 
+ il coefficiente o fattore di accoppiamento fra le due bobine,
+si ha:
+(VII.6.29)
+Poiché k è un numero adimensionato, anche la mutua induzione si misura in henry
+(H); se le due bobine presentano la stessa induttanza L, si ha la relazione M  k L.
+Il valore di k indica il grado di accoppiamento fra le bobine: se k  0 si ha l’accoppia-
+mento nullo, se k  1 si ha l’accoppiamento perfetto.
+Tensione indotta per mutua induzione
+Con riferimento al circuito di Fig. VII.6.18, se la corrente I1 è variabile nel tempo, si
+verificano due casi di induzione elettromagnetica:
+–  nella bobina 1 nasce una tensione per autoinduzione;
+–  nella bobina 2 nasce una tensione di mutua induzione, dovuta alla variazione del
+flusso concatenato con la bobina stessa, conseguente alla variazione della corrente I1.
+L’avvolgimento 1 è detto induttore, in quanto produce la variazione di flusso; l’avvol-
+gimento 2 è detto indotto, in quanto subisce gli effetti di tale variazione.
+Indicando con I1 la variazione della corrente nell’intervallo di tempo t e suppo-
+nendo M costante, si ha:
+(VII.6.30)
+Fig. VII.6.19   Segno della mutua induttanza fra bobine.
+Mentre l’autoinduttanza è sempre positiva, la mutua induzione può essere positiva o
+negativa. In accordo con le convenzioni con cui si misurano tensioni e correnti ai morsetti
+M
+c2
+I1
+---------
+1L1N2
+N1
+-------------------
+=
+=
+M
+c1
+I2
+---------
+2L2N1
+N2
+-------------------
+=
+=
+M2
+12L1L2
+=
+k
+12
+=
+M
+k
+L1L2
+=
+E2
+c2
+t
+-------------
+M
+I1
+t
+--------
+=
+=
+
+I1
+I2
+I1
+I2
+senso orario
+senso orario
+senso orario
+senso antiorario
+M  0
+M  0
+a)
+b)
+
+
+
+
+[PAG 609]
+ELETTROTECNICA GENERALE
+VII-105
+dei circuiti, la mutua induzione risulta positiva se, fissati a piacere un morsetto per cia-
+scuna bobina e inviando in essi due correnti equiverse (entrambe entranti o uscenti), il
+vettore H ha il medesimo verso nelle due bobine. Poiché ciascuna bobina ha due morsetti
+e le spire possono essere avvolte in senso orario o antiorario (destrorso o sinistrorso),
+sono possibili i quattro casi illustrati nelle Figg. VII.6.19a e b, Figg. VII.6.20a e b.
+Fig. VII.6.20   Segno della mutua induttanza fra bobine.
+6.9  Induttori mutuamente accoppiati collegati in serie
+Due induttori sono collegati in serie quando sono attraversati dalla stessa corrente; se
+la corrente varia nel tempo i due induttori subiranno una variazione del flusso concate-
+nato. Si origineranno di conseguenza delle tensioni indotte, per auto e mutua induzione,
+tutte dovute alla stessa variazione di corrente I, essendo I l’unica corrente che percorre il
+circuito. Si avranno perciò le seguenti tensioni:
+–  una tensione per autoinduzione nell’induttore 1 data da L1 (It);
+–  una tensione per mutua induzione nell’induttore 1, dovuta alla variazione di cor-
+rente nell’induttore 2 e data da M (It);
+–  una tensione per autoinduzione nell’induttore 2 data da L2 (It);
+–  una tensione per mutua induzione nell’induttore 2, dovuta alla variazione di cor-
+rente nell’induttore 1 e data da M (It).
+Si definisce induttanza equivalente della serie il valore dell’induttanza che deve avere
+un induttore equivalente, perché la tensione autoindotta ai suoi capi sia uguale a quella
+totale della serie.
+Con riferimento alle Figg. VII.6.21 e VII.6.22, considerando nulle le resistenze delle
+bobine, si può scrivere:
+Fig. VII.6.21   Induttori in serie magneti-
+camente disaccoppiati.
+Fig. VII.6.22   Induttori in serie magneti-
+camente accoppiati.
+
+I1
+I2
+I1
+I2
+senso orario
+senso orario
+senso orario
+senso antiorario
+M  0
+M  0
+a)
+b)
+
+
+
+U
+I
+L1
+L2
+U1
+U2
+L1
+L2
+U1
+U2
+U
+U
+U1
+U2
++
+L1
+I
+t
+-----
+M I
+t
+-----
+L2
+I
+t
+-----
+M I
+t
+-----
++
++
++
+=
+=
+
+[PAG 610]
+VII-106
+ELETTROTECNICA GENERALE
+Considerando l’effetto della mutua induzione si possono presentare i seguenti tre casi:
+–  Bobine con mutua induttanza nulla
+(VII.6.31)
+L’induttanza equivalente è uguale alla somma delle induttanze delle singole bobine.
+–  Bobine con mutua induttanza positiva
+(VII.6.32)
+Il fenomeno di mutua induzione fa aumentare la tensione totale indotta.
+–  Bobine con mutua induttanza negativa
+(VII.6.33)
+Il fenomeno di mutua induzione fa diminuire la tensione totale indotta.
+6.10  Fenomeni transitori nei circuiti induttivi
+Transitorio di magnetizzazione
+Si consideri il circuito di Fig. VII.6.23, nel quale l’induttore presenta un’induttanza
+costante. La chiusura dell’interruttore S1 (con S2 aperto) determina l’applicazione di una
+tensione costante sull’induttore e la conseguente circolazione nel circuito di una corrente,
+che a regime sarà pari a I = UR. La corrente non assume istantaneamente il valore di
+regime perché ad un suo incremento corrisponde la generazione di una f.e.m. di autoindu-
+zione che ne contrasta l’aumento; in questo intervallo di tempo (transitorio di magnetizza-
+zione) l’equazione che lega la corrente alle altre grandezze del circuito è:
+Fig. VII.6.23   Circuito per la magnetizzazione e la smagnetizzazione di un induttore.
+Poiché la corrente inizialmente uguale a zero deve assumere il valore di regime,
+risulta che essa deve aumentare gradatamente in modo che la somma della caduta di ten-
+sione ohmica (Ri) e della tensione di autoinduzione (L  didt) sia sempre uguale al valore
+costante E.
+Per definire i grafici della corrente e della tensione si deve osservare che:
+–  nell’istante iniziale di chiusura dell’interruttore, la corrente è nulla e la tensione di
+autoinduzione assume il valore massimo pari a:
+Leq
+L1
+L2
++
+=
+Leq
+L1
+L2
+2M
++
++
+=
+Leq
+L1
+L2
+2M
+–
++
+=
+E
+Ri
+L di
+dt
+----
++
+=
+R
+S1
+L
+S2
+E
+
+
+[PAG 611]
+ELETTROTECNICA GENERALE
+VII-107
+e quindi
+Ne consegue che la curva di variazione della corrente inizia con una tangente inclinata
+all’origine rispetto all’asse dei tempi dell’angolo 0 definito dalla relazione:
+(VII.6.34)
+–  a transitorio concluso la corrente arriva al valore di regime e la tensione di autoin-
+duzione tende a zero.
+Fig. VII.6.24   Andamento della corrente e della tensione indotta durante la magnetizza-
+zione di un induttore.
+L’andamento della corrente e della tensione di autoinduzione è riportato nei grafici di
+Figg. VII.6.24a e b ai quali corrispondono, avendo indicato con uL la tensione di autoindu-
+zione, le relazioni:
+(VII.6.35)
+Il transitorio si considera concluso dopo un tempo pari a 4,6, dove  è la costante di
+tempo del sistema che ha le dimensioni del tempo ed è espressa dalla relazione:
+(VII.6.36)
+Fig. VII.6.25   Andamento nel tempo della corrente, con valore iniziale di I diverso da 0.
+E
+L di
+dt
+----
+=
+di
+dt
+----
+E
+L---
+=
+tg0
+di
+dt
+----
+E
+L---
+R
+L--- I
+=
+=
+=
+t
+i
+If =E/R
+0
+t
+0
+E = UL0
+uL
+a)
+b)
+i
+If 1
+e t
+–
+
+
+–
+
+
+=
+uL
+UL0 e t
+–
+
+
+=
+
+L
+R---
+=
+t
+i
+If
+0
+I0
+
+[PAG 612]
+VII-108
+ELETTROTECNICA GENERALE
+Se l’induttore è inizialmente magnetizzato con corrente iniziale I0, le leggi di varia-
+zione della corrente (Fig. VII.6.25) e della tensione, assumono la forma:
+(VII.6.37)
+Transitorio di smagnetizzazione
+Con riferimento al circuito di Fig. VII.6.23, la chiusura dell’interruttore S2 (con S1
+chiuso), determina l’abolizione istantanea della tensione applicata al circuito e la conse-
+guente diminuzione della corrente, che a transitorio esaurito assume il valore zero. La cor-
+rente non assume istantaneamente il valore zero, perché ad un suo decremento
+corrisponde la generazione di una f.e.m. di autoinduzione che tende a conservarla. In que-
+sto intervallo di tempo (transitorio di smagnetizzazione) l’equazione che lega la corrente
+alle altre grandezze del circuito è:
+Per definire i grafici della corrente e della tensione si deve osservare che:
+–  nell’istante iniziale di chiusura dell’interruttore S2, la corrente vale I0 e la tensione
+di autoinduzione assume il valore massimo UL0 = RI0, ma con verso opposto rispetto al
+processo di magnetizzazione;
+–  durante il transitorio, tensione e corrente decrescono con legge esponenziale, ten-
+dendo al valore finale zero secondo i grafici di Fig. VII.6.26, descrivibili con le relazioni:
+(VII.6.38)
+Se la smagnetizzazione non è completa, la corrente parte dal valore iniziale I0 fino al
+valore finale If con una diminuzione esponenziale della corrente, la cui equazione rientra
+nella formula generale VII.6.37 e il cui grafico è rappresentato nella Fig. VII.6.27. Per la
+tensione di autoinduzione vale la relazione VII.6.38.
+Fig. VII.6.26   Scarica di un induttore: andamento della corrente e della tensione.
+Fig. VII.6.27   Smagnetizzazione incom-
+pleta di un induttore.
+i
+If
+I0
+If
+–
+
+
++
+e t
+–
+
+
+;
+=
+uL
+ULf
+UL0
+ULf
+–
+
+
++
+e t
+–
+
+
+=
+0
+Ri
+L di
+dt
+----
++
+=
+i
+I0 e t
+–
+
+
+=
+uL
+UL0 e t
+–
+
+
+=
+t
+i
+uL
+0
+I0
+t
+0
+UL0
+t
+i
+0
+I0
+If
+
+[PAG 613]
+ELETTROTECNICA GENERALE
+VII-109
+6.11  Esempi
+Esempio 1
+Una spira circolare, in rame, di raggio r = 15 cm, è posta su un piano immerso in un
+campo magnetico di induzione uniforme (B = 0,3 T) ed è perpendicolare ad esso.
+Determinare la pressione e la tensione meccanica che sollecitano il conduttore,
+quando esso è percorso da una corrente di 30 A, nel verso indicato in Fig. VII.6.28a.
+Risoluzione
+Su un tratto infinitesimo dl della spira agisce una forza infinitesima dF, valutabile
+secondo la relazione:
+essendo sen= 1.
+Qualunque sia la posizione del tratto infinitesimo dl, la relativa forza è sempre conte-
+nuta nel piano della spira e presenta verso centrifugo (Fig. VII.6.28b); ciò permette di
+affermare che il rapporto dFdl è la pressione p di natura elettromagnetica che si esercita
+sul conduttore, che vale:
+Si supponga di tagliare idealmente la spira in due punti diametralmente opposti (Fig.
+VII.6.28c); ciascuna mezza spira non si stacca dall’altra per effetto della risultante della
+pressione P solo se nelle due sezioni di taglio agiscono delle forze F capaci di equilibrare
+P. Poiché P = p2r, risulta:
+Fig. VII.6.28   
+I
+dF
+dl
+a)
+dF
+b)
+F
+F
+P
+dF
+c)
+dF
+BIdl
+=
+p
+dF
+dl
+------
+BI
+0,3
+30
+
+9 N m
+
+=
+=
+=
+=
+F
+P
+2---
+pr
+9
+0,15
+
+1,35 N
+=
+=
+=
+=
+
+[PAG 614]
+VII-110
+ELETTROTECNICA GENERALE
+Esempio 2
+Con riferimento alle Figg. VII.6.29a e b, determinare la coppia che agisce su una
+bobina costituita da 30 spire di forma rettangolare (dimensioni 10 x 30 cm), libera di ruo-
+tare attorno al proprio asse, percorsa da una corrente di 10 A, per effetto del campo
+magnetico terrestre avente la componente orizzontale H0 = 18 Asp/m e direzione tale da
+formare un angolo di 30 gradi con il piano contenente la spira.
+Fig. VII.6.29   
+Risoluzione
+La coppia che agisce su una bobina di N spire è N volte più intensa di quella che agi-
+sce su una sola spira. Poiché la bobina è avvolta in aria, la coppia vale:
+Allo stesso risultato si può giungere considerando che la bobina percorsa da corrente e
+immersa in un campo magnetico, possiede un’energia, che a prescindere dal segno, vale:
+Quando la bobina compie una rotazione infinitesima d, la coppia compie un lavoro a
+spese dell’energia W posseduta dalla bobina, pari a Cd. Si può perciò scrivere dW  Cd
+e quindi:
+Ricordando che
+ risulta C = IcMcos
+Esempio 3
+Determinare in valore e segno la f.e.m. indotta in una barretta di rame lunga 20 cm che
+ruota attorno ad una estremità con una velocità pari a 3000 giri/minuto, ortogonalmente
+alle linee di forza di un campo di induzione uniforme di intensità pari a 0,5 T (Fig.
+VII.6.30).
+Risoluzione
+I tratti infinitesimi in cui si può pensare suddivisa la barretta, tagliano le linee di forza
+con velocità variabile a seconda della distanza dal centro di rotazione O. Si considererà
+perciò la velocità media, cioè quella corrispondente al punto medio della barretta, ovvero:
+a)
+B0
+I
+ 30°
+b)
+C
+N0H0Iahcos
+IcMcos
+17,63
+5
+–
+10
+Nm
+=
+=
+=
+W
+IcMsen
+=
+C
+dW
+d
+--------
+IcM
+d
+d
+------ sen
+=
+=
+d
+d
+------ sen
+cos
+=
+
+[PAG 615]
+ELETTROTECNICA GENERALE
+VII-111
+La f.e.m. indotta (il punto O ha segno positivo rispetto ad A) vale:
+La f.e.m. è costante nel tempo perché è costante la velocità di rotazione.
+Esempio 4
+Una barretta metallica di resistenza R = 5  si muove con moto rettilineo uniforme e
+velocità v = 3 m/s su due guide metalliche di resistenza trascurabile, distanti d = 20 cm e
+chiuse ad una estremità; il sistema insiste nel vuoto, su un campo magnetico costante la
+cui forza magnetica vale H0 = 20000 Asp/m e le cui linee di forza sono ortogonali al piano
+contenente le guide (Fig. VII.6.31).
+Trascurando le resistenze di attrito, determinare il valore della forza da applicare alla
+barretta e la potenza meccanica assorbita; si indichi inoltre in quale forma di energia si
+trasforma il lavoro meccanico compiuto dalla barretta durante il movimento.
+Risoluzione
+Ai capi della barretta si induce una f.e.m. costante pari a:
+per cui nel circuito circolerà una corrente costante:
+Fig. VII.6.30  
+Fig. VII.6.31  
+v
+l
+2--
+=
+con 
+23000
+60
+-----------
+314 rad/s
+=
+=
+0
+
+A
+e
+Blv
+Bl2
+2
+------------
+0,5
+4
+
+10 2
+–
+
+314
+
+2
+-------------------------------------------------------
+3,14 V
+=
+=
+=
+=
+Fm
+Fr
+I
+e
+0H0vd
+1,256
+6
+–
+10
+2
+4
+10
+
+3
+
+0,2
+
+15 mV
+
+=
+=
+I
+e
+R---
+15
+3
+–
+10
+5
+--------------------
+3
+3
+–
+10
+A
+=
+=
+=
+
+[PAG 616]
+VII-112
+ELETTROTECNICA GENERALE
+Conseguentemente sulla barretta agisce una forza che si oppone al moto di intensità:
+Il dispositivo meccanico che muove la barretta, dovrà imprimere una forza Fm = Fr e
+impegnare quindi una potenza:
+Questa potenza verrà dissipata nel circuito chiuso per effetto Joule secondo la rela-
+zione:
+D’altro canto, questa potenza elettrica è generata nel circuito per effetto della tensione
+indotta; è perciò verificata la relazione:
+Esempio 5
+Un circuito magnetico di lunghezza media lm = 30 cm e sezione 1 cm2, con traferro d
+= 0,1 mm, porta uniformemente distribuiti due avvolgimenti rispettivamente di 200 e 150
+spire. Nell’ipotesi che la permeabilità magnetica del nucleo sia costante (f = 300 0), che
+i flussi dispersi siano trascurabili e quindi che l’accoppiamento sia perfetto, si calcoli il
+coefficiente M di mutua induzione e l’induttanza dei due avvolgimenti.
+Risoluzione
+Applicando la legge di Hopkinson al circuito magnetico, e nell’ipotesi di flusso
+disperso nullo, si ha:
+essendo
+I coefficienti di autoinduzione dell’avvolgimento 1 e dell’avvolgimento 2, valgono
+rispettivamente:
+Si può verificare il valore ottenuto per la mutua induzione con la relazione:
+valore che corrisponde a quello precedentemente ottenuto.
+Esempio 6
+Con riferimento alla Fig. VII.6.23 dove E = 24 V, R = 4 , L = 800 mH, determinare:
+a)  con interruttori S1 chiuso e S2 aperto e induttore scarico
+–  il tempo necessario alla completa carica;
+Fr
+0H0Id
+15
+6
+–
+10
+N
+
+=
+Pm
+Fv
+15
+6
+–
+10
+3
+
+45
+6
+–
+10
+W
+=
+=
+=
+P
+RI2
+5
+3
+3
+–
+10
+
+
+2
+
+45
+6
+–
+10
+W
+=
+=
+=
+Pg
+eI
+15
+3
+–
+10
+3
+3
+–
+10
+
+45
+6
+–
+10
+W
+=
+=
+=
+M
+c2
+I1
+---------
+N2
+I1
+-----------
+N2N1I1
+I1
+------------------
+N1N2
+
+-------------
+3,43
+3
+–
+10
+H
+=
+=
+=
+=
+=
+
+f
+0
++
+lf
+fS
+--------
+
+0S
+---------
++
+8,76
+6
+10 H 1
+–
+=
+=
+=
+L1
+N1
+2
+
+--------
+4,57
+3
+–
+10
+H
+=
+=
+;
+L2
+N2
+2
+
+--------
+2,57
+3
+–
+10
+H
+=
+=
+M
+K
+L1L2
+
+1
+4,57
+2,57
+
+
+10 3
+–
+
+3,43
+3
+–
+10
+H
+
+=
+=
+
+[PAG 617]
+ELETTROTECNICA GENERALE
+VII-113
+–  i valori della corrente e della tensione indotta dopo un tempo pari a 0,6 s;
+b)  con interruttori S1 e S2 chiusi e induttore carico
+–  il valore della corrente dopo un tempo pari a 0,4 s;
+–  il valore dell’energia magnetica nell’induttore dopo un tempo pari a 0,4 s.
+Risoluzione
+Il transitorio di carica si considera terminato dopo un tempo pari a 4,6 , per cui sarà:
+I valori della corrente e della tensione indotta dopo un tempo di 0,6 s sono pari a:
+con la corrente di regime pari a Ir = ER = 6 A.
+La chiusura dell’interruttore S2 determina l’inizio del processo di scarica. La corrente,
+dopo un tempo pari a 0,4 s, vale:
+a cui corrisponde una energia magnetica immagazzinata nell’induttore pari a:
+7  CIRCUITI IN CORRENTE ALTERNATA MONOFASE
+7.1  Concetti introduttivi
+Gli argomenti riportati, pur non essendo strettamente inerenti all’elettrotecnica, sono
+fondamentali ai fini dello studio dei circuiti in corrente alternata, perché permettono di
+definire gli elementi caratteristici di alcune grandezze variabili nel tempo e di associare a
+una sinusoide un numero complesso, facilitando in tal modo il calcolo dei circuiti.
+–  Grandezze periodiche. Una grandezza y(t) che soddisfa la relazione:
+si dice periodica perché assume valori uguali ad intervalli di tempo uguali, a partire da
+qualsiasi istante. L’intervallo di tempo T dopo il quale la grandezza assume lo stesso
+valore nel tempo si chiama periodo e si misura in secondi (e nei suoi multipli o sottomul-
+tipli). La grandezza inversa:
+(VII.7.1)
+è la frequenza, e indica il numero di periodi (cicli) nell’unità di tempo; essa si misura in
+hertz (Hz).
+Le grandezze periodiche (Fig. VII.7.1) che soddisfano l’uguaglianza:
+t
+4,6
+4,6 L
+R---
+4,6 0,8
+4
+------
+4,6
+0,2
+
+0,92 s
+=
+=
+=
+=
+=
+I 0,6
+
+
+Ir 1
+e t
+–
+
+–
+
+
+6 1
+e 0,6
+–
+0,2
+
+–
+
+
+5,7 A
+=
+=
+=
+uL
+U0 e t
+–
+
+24 e 0,6
+–
+0,2
+
+1,195 V
+=
+=
+=
+I 0,4
+
+
+Ir e t
+–
+
+6 e 0,4
+–
+0,2
+
+0,813 A
+=
+=
+=
+W
+1
+2--LI2
+1
+2-- 0,8
+0,8132
+
+0,264 J
+=
+=
+=
+y t
+y t
+T
++
+
+
+y t
+2T
++
+
+
+
+y t
+nT
++
+
+
+
+=
+=
+=
+=
+=
+f
+1
+T--
+=
+
+[PAG 618]
+VII-114
+ELETTROTECNICA GENERALE
+si dicono alternate perché assumono, nei due semiperiodi, valori uguali in modulo ma di
+segno opposto.
+Le grandezze periodiche sono caratterizzate dai seguenti valori:
+–  valore medio nel periodo. Esso è espresso dalla relazione:
+e rappresenta il valore dell’altezza del rettangolo avente per base il periodo T in modo tale
+che l’area di questo sia uguale a quella della grandezza data nello stesso periodo T (Fig.
+VII.7.2).
+–  valore medio nel semiperiodo. Per una grandezza alternata il valore medio nel
+periodo è sempre nullo, dato che l'area negativa è uguale e opposta a quella positiva. In
+questo caso si definisce il valore medio nel semiperiodo, calcolabile con la formula:
+–  valore massimo. Si intende il valore massimo che la grandezza assume in un
+periodo; è chiamato anche ampiezza e si indica con il simbolo YM. Si distinguono un
+valore massimo positivo YM e un valore massimo negativo YM; nel caso di una gran-
+dezza alternata i due valori coincidono.
+–  valore picco-picco. È pari alla differenza:
+YPP  YM  YM
+e rappresenta la massima variazione della grandezza nel periodo; nel caso di una gran-
+dezza alternata, assume il valore 2YM.
+–  valore efficace. È espresso dalla relazione:
+cioè la radice quadrata del valore medio in un periodo dei quadrati dei valori istantanei.
+Fig. VII.7.1   Grandezza alternata.
+Fig. VII.7.2   Valore medio nel periodo
+di una grandezza periodica.
+y t1
+T
+2--
++
+
+
+
+
+y t1
+
+
+–
+=
+T2
+y
+t
+t1
+y(t1)
+T2
+T
+t1 T2
+y(t1 T2)
+y
+t
+T
+ym
+ym
+1
+T--
+y td
+t
+t
+T
++
+
+=
+ym
+1
+2
+T--
+y td
+0
+T 2
+
+
+=
+Y
+1
+T--
+y2 td
+t
+t
+T
++
+
+=
+
+[PAG 619]
+ELETTROTECNICA GENERALE
+VII-115
+Per il suo calcolo è perciò necessario:
+–  determinare l’andamento della grandezza y2;
+–  calcolare il valore medio di y2 nel periodo;
+–  estrarre la radice quadrata.
+–  fattore di forma. È definito, per una grandezza alternata, dal rapporto fra il valore
+efficace e il valore medio in un semiperiodo, cioè dalla relazione:
+–  fattore di cresta. È definito, per una grandezza alternata, dal rapporto fra il valore
+massimo e il valore efficace, cioè dalla relazione:
+Grandezze sinusoidali
+Una grandezza y è sinusoidale se la legge matematica che ne descrive l’andamento nel
+tempo ha la forma:
+(VII.7.2)
+Fig. VII.7.3   Grafico della funzione sinusoidale.
+Per definire completamente una sinusoide (Figg. VII.7.3a, b) è necessario conoscere i
+seguenti elementi:
+–  il valore massimo YM, detto anche ampiezza;
+–  la pulsazione  della sinusoide, espressa in rads, anche se nella realtà la sua unità
+di misura è il s1 essendo il radiante una grandezza adimensionata;
+–  la fase  della sinusoide, espressa in radianti, e ricavabile dalla relazione VII.7.2
+ponendo in essa t = 0. Risulterà perciò y(0) = YM sen e quindi:
+(VII.7.3)
+La funzione sinusoidale è periodica e alternata. Per determinare il periodo T, si deve
+considerare che il seno di un angolo si ripete ogni 2 radianti e che quindi vale l’ugua-
+glianza T +  = 2+ , dalla quale si ottiene:
+(VII.7.4)
+kf
+Y
+ym
+1
+--------
+=
+kf
+YM
+Y
+-------
+=
+y
+YMsen t
+
++
+
+
+=
+y
+t
+y(0) 0
+0
+T
+YM
+YM
+y YMsent
+Ypp 2Y
+a)
+y
+t
+y(0) YMsen
+0
+T
+YM
+YM
+y YMsent
+b)
+y0
+
+arcseny 0
+
+YM
+-----------
+=
+T
+2
+
+------
+=
+
+[PAG 620]
+VII-116
+ELETTROTECNICA GENERALE
+L’espressione mette direttamente in relazione il periodo e la pulsazione per cui nota
+una grandezza, l’altra risulta univocamente determinata e viceversa.
+Poiché la frequenza è la grandezza reciproca del periodo, si ha:
+(VII.7.5)
+per cui la pulsazione è legata alla frequenza dalla relazione:
+(VII.7.6)
+Le grandezze citate nel paragrafo precedente assumono, nel caso di una funzione sinu-
+soidale, i seguenti valori:
+–  valore medio nel semiperiodo:
+–  valore efficace:
+–  fattore di forma:
+–  fattore di cresta:
+Corrispondenza tra sinusoidi, fasori e numeri complessi
+Per facilitare l’esecuzione delle operazioni matematiche fra grandezze sinusoidali iso-
+frequenziali, è necessario ricorrere a particolari vettori, denominati fasori, che permettono
+di far corrispondere a una sinusoide un numero complesso.
+Si definisce fasore un vettore caratterizzato da un modulo  uguale, secondo una
+determinata scala, alla lunghezza del segmento che indica il vettore e da una posizione
+angolare, espressa dall’angolo  misurato rispetto al riferimento di 0°; l’angolo  è posi-
+tivo se misurato in senso antiorario rispetto al riferimento, negativo in caso contrario
+(Fig. VII.7.4).
+Fig. VII.7.4   Rappresentazione di un fasore.
+f
+
+2
+------
+=
+
+2f
+=
+ym
+1
+2
+-- YM
+0,637 YM
+=
+=
+Y
+YM
+2
+-------
+0,707 YM
+=
+=
+kf
+
+2
+2
+----------
+1,11
+
+=
+kc
+2
+1,414
+
+=
+
+0
+90
+180
+270
+
+
+
+
+[PAG 621]
+ELETTROTECNICA GENERALE
+VII-117
+Corrispondenza fra sinusoidi e fasori
+La distanza fra l’estremo di un fasore, che ruota con velocità angolare  costante, e
+l’asse orizzontale, riportata sul piano cartesiano in funzione dell’angolo , rappresenta
+graficamente (Fig. VII.7.5) una sinusoide, la cui ordinata è legata alle caratteristiche del
+vettore che la determina dalla relazione:
+(VII.7.7)
+Poiché il modulo  corrisponde al valore massimo YM della sinusoide e l’angolo  è
+legato alla velocità angolare  dalla relazione  = t, la relazione VII.7.7 diventa:
+Se si suppone che il fasore, all’istante t = 0 abbia una posizione angolare uguale a , si
+ha  = t +  e quindi la distanza dell’estremo del fasore rispetto all’asse orizzontale è
+pari a:
+(VII.7.8)
+L’espressione permette di stabilire, fra un vettore rotante in senso antiorario con velo-
+cità angolare  costante e una grandezza variabile nel tempo con legge sinusoidale, le
+seguenti corrispondenze:
+Modulo   Ampiezza YM
+Velocità angolare   Pulsazione 
+Posizione angolare iniziale   Fase 
+Spesso le sinusoidi sono rappresentate ponendo sull’asse delle ascisse il prodotto t in
+luogo di t; in questo modo, il periodo T corrisponde a 2 (360°).
+Fig. VII.7.5   Curva
+sinusoidale descritta da
+un fasore.
+Fig. VII.7.6   Sinusoidi sfasate; y(t)
+sfasata di 90° rispetto a x(t).
+y
+sen
+=
+y
+YMsent
+=
+90
+
+270
+0
+180
+45
+135
+315
+225
+
+0
+45
+90
+135
+180
+225
+270
+315
+360
+y
+YMsen t
+
++
+
+
+=
+x, y
+t
+x(t) XMsent 
+0°
+y(t) YMsent2
+90°
+x(t)
+y(t)
+A
+B
