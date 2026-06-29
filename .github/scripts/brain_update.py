@@ -304,9 +304,15 @@ Rispondi SOLO JSON valido."""
 
     try:
         risposta = mistral_chat(prompt, max_tokens=1200, temperatura=0.2)
-        return parse_json(risposta) or {}
+        print(f'  KB risposta ({len(risposta)}c): {risposta[:200]}')
+        result = parse_json(risposta)
+        if not result:
+            print(f'  KB parse_json fallito')
+        return result or {}
     except Exception as ex:
-        print(f'  sintetizza_kb ERR: {ex}')
+        import traceback
+        print(f'  sintetizza_kb ERR: {type(ex).__name__}: {ex}')
+        print(traceback.format_exc()[-300:])
         return {}
 
 # ── Genera briefing proattivo ────────────────────────────────────
