@@ -296,6 +296,10 @@ function cfgRefreshAIKeyStatus(id) {
   cfgApplyAIUI(id);
 }
 
+function aiGetEngine() {
+  return localStorage.getItem('bioserra_ai_attiva') || 'claude';
+}
+
 function cfgSaveAIKey() {
   const id = aiGetEngine();
   const inp = document.getElementById('cfg-ai-key-input');
@@ -361,7 +365,8 @@ function cfgResetCache() {
 function cfgAggiornaTutto() {
   if (typeof renderActivePlants === 'function') renderActivePlants();
   if (typeof loadWeather === 'function') loadWeather();
-  if (typeof updateMoon === 'function') updateMoon();
+  if (typeof renderLunarSection === 'function') renderLunarSection();
+  if (typeof loadLunaConsigli === 'function') loadLunaConsigli();
   if (typeof loadAIJSON === 'function') loadAIJSON();
   if (typeof loadLunaJSON === 'function') loadLunaJSON();
   // loadPianteJSON NON viene chiamata qui: gli alert sono calcolati localmente
@@ -391,3 +396,4 @@ function cfgToast(msg) {
 
 
 // renderBioCalendar viene chiamata da initApp()
+
