@@ -1,0 +1,1062 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 111/116 ===
+Chars: 45,000 | Offset: 4,866,334
+
+
+
+[PAG 2153]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-135
+Fig. XX.3.10  Assemblaggio di un circuito integrato DIL a inserzione e di un circuito a 
+montaggio superficiale.
+Anche i fori da eseguire sul circuito stampato si riducono drasticamente in quanto si 
+devono realizzare solo i fori di interconnessione dei segnali. 
+I terminali dei dispositivi SMD sono molto corti per cui le capacità e le induttanze 
+parassite assumono valori ridotti. Per questa ragione i dispositivi SMD sono in genere pre-
+feriti a quelli ad inserzione in tutte le applicazioni di tipo analogico che debbono utilizzare 
+segnali di alta frequenza. Nei dispositivi digitali il dispositivo SMD ha un tempo di propa-
+gazione più uniforme e più breve per tutti i suoi segnali di uscita.
+Un assemblaggio che utilizza questa tecnologia è meno sensibile all’effetto di urti e 
+vibrazioni e può essere schermato contro gli effetti dei disturbi elettromagnetici in modo 
+più semplice ed efficace. Per tale motivo questa tecnologia si è affermata soprattutto nelle 
+applicazioni aeronautiche e in quelle di tipo militare.
+Il contenitore dei componenti SMD sono molto piccoli per cui anche gli spazi sul cir-
+cuito stampato che li utilizza sono molto ridotti. Il montaggio manuale su una scheda di 
+componenti SMD è impraticabile per cui è sempre necessario automatizzare tutto il ciclo 
+di produzione SMT.
+Grazie a tale automazione si possono costruire le apparecchiature elettroniche con 
+tutti i benefici della produzione in grande serie e l’affidabilità e l’uniformità del prodotto 
+finale garantita dal processo automatico di produzione.
+La saldatura dei componenti SMD alla piastra del circuito stampato viene effettuata 
+depositando sulla superficie della stessa, nei punti di contatto, una pasta collante-saldante 
+che li mantiene fermi nella posizione desiderata; un successivo riscaldamento fonde la lega 
+saldante e li vincola alla piastra e li collega elettricamente alle piazzole del circuito stampato. 
+Anche questa tecnologia presenta però degli inconvenienti. Il principale è dato dal 
+fatto che una scheda prodotta con questa tecnologia costa molto di più rispetto ad un’ana-
+loga realizzata con componenti ad inserzione. Inoltre l’alta densità dei componenti sul cir-
+cuito stampato provoca una maggiore dissipazione di potenza, il calore prodotto viene poi 
+scambiato con l’ambiente circostante in modo meno efficiente rispetto ad un montaggio 
+tradizionale in quanto lo spazio esistente fra i vari dispositivi è estremamente ridotto. Il 
+problema della dissipazione del calore deve essere attentamente valutato quando si pro-
+getta il lay-out della scheda.
+Un altro problema è dato dalla normazione che non è stata ancora completamente defi-
+nita, per cui non sempre componenti identici, ma prodotti da differenti costruttori, sono 
+intercambiabili. Il problema deve essere valutato attentamente quando si disegnano i 
+master del circuito stampato infatti essendo tutto il ciclo di lavorazione automatico non 
+sono possibili interventi di adattamento se non modificando la programmazione delle 
+macchine operatrici. Ovviamente questi interventi hanno un costo che potrebbe essere 
+evitato o ridotto effettuando scelte oculate in sede di progettazione ed esecuzione dei dise-
+gni di fabbricazione.
+Anche il collaudo delle schede SMT è più difficoltoso a causa dello poco spazio 
+disponibile per la connessione delle sonde di misura.
+3.3  Circuiti stampati
+Il circuito stampato è costituito da un supporto isolante piano su cui sono incollati i
+
+[PAG 2154]
+XX-136
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+conduttori che realizzano i collegamenti elettrici fra i componenti elettronici richiesti 
+dalla configurazione circuitale realizzata.
+I componenti sono collegati ai conduttori infilando i reofori del dispositivo in appositi 
+fori praticati nel supporto della scheda. Il reoforo si fissa meccanicamente e si collega 
+elettricamente per mezzo di una saldatura.
+Prima della lavorazione, la scheda si presenta come una lastra di supporto, isolante e 
+piana, su cui aderiscono uno o due fogli di rame elettrolitico.
+I conduttori che attuano le connessioni desiderate si ricavano operando un’asporta-
+zione selettiva del rame. L’immagine delle connessioni da realizzare viene ottenuta utiliz-
+zando una tecnica di riproduzione fotografica con cui si consegue una grande uniformità 
+del prodotto finale grazie al processo di fabbricazione automatizzato e alla ripetitività del 
+processo di stampa. 
+L’uniformità del prodotto finale offre la possibilità di semplificare notevolmente le 
+procedure di collaudo dei circuiti elettronici e di adottare tecniche automatizzate di mon-
+taggio e di saldatura dei componenti.
+Per realizzare un circuito stampato occorre realizzare un certo numero di disegni di 
+fabbricazione (master) che riproducono esattamente, in negativo, i percorsi dei conduttori 
+che si vogliono realizzare sulla piastra. 
+L’asportazione selettiva dello strato di rame può essere effettuata con metodi mecca-
+nici usando opportune macchine operatrici, per fotoincisione, per deposizione, per stampa 
+serigrafica.
+I circuiti stampati possono essere: monofaccia, a due facce, multistrato (fino a 16 strati).
+Il circuito stampato monofaccia ha il foglio di rame depositato solo su un lato del sup-
+porto isolante. 
+Il collegamento elettrico dei componenti viene effettuato saldando i reofori dei com-
+ponenti ai conduttori. Se il collegamento deve essere riportato sul lato senza foglio di 
+rame occorre utilizzare rivetti o ponticelli realizzati con fili elettrici.
+Questo tipo di circuito stampato viene usato solo quando il circuito elettronico da rea-
+lizzare è molto semplice, con pochi componenti e con pochi o nessun riporto fra le due 
+facce della piastra; è quindi indicato soltanto per applicazioni elettroniche di tipo civile da 
+realizzare in grandissima serie e a basso costo.
+Il circuito stampato due facce ha il foglio di rame depositato su entrambe le facce e il 
+collegamento fra i due lati viene ottenuto per mezzo di una lavorazione particolare (metal-
+lizzazione) che - mediante un processo di deposizione elettrolitica - crea un percorso con-
+duttivo fra le due superfici; i fori così trattati sono detti fori metallizzati (via). 
+Questo tipo di circuito stampato viene utilizzato da tutte le utenze professionali e 
+industriali.
+Il circuito stampato multistrato consiste di più supporti isolanti separati fra loro da 
+fogli di rame. Le piste di connessione ricavate nei vari strati sono collegate e con quelle 
+degli altri strati con i reofori dei componenti mediante processi di metallizzazione. Per 
+poter realizzare questi circuiti stampati occorre disegnare una maschera per ogni strato. 
+I circuiti multistrato consentono di ottenere circuiti con un’elevata densità di compo-
+nenti sulla scheda e di collocare opportuni schermi elettrostatici fra le varie facce del cir-
+cuito stampato stesso. Poiché le tecniche di realizzazione sono molto complesse, a questa 
+tecnologia di fabbricazione dei circuiti stampati si ricorre solo in presenza particolari esi-
+genze di impiego.
+Il problema di realizzare prodotti industriali difficilmente copiabili è una delle specifi-
+che di progetto imposte in molti campi di applicazione. 
+Esistono infatti società specializzate in reverse engineering che, sfruttando vuoti legi-
+slativi, riproducono schede e apparati elettronici sviluppati da altre ditte senza neppure
+
+[PAG 2155]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-137
+preoccuparsi di modificarle, ma semplicemente copiandole. 
+Un modo per scoraggiare questa pratica è quello di realizzare il proprio circuito appli-
+cativo utilizzando una tecnologia costosa, in modo tale che l’alto costo del materiale renda 
+non remunerativo il prodotto copiato.
+Se, oltre al circuito multistrato, si utilizzano anche componenti elettrici custom (PAL, 
+EPL, GAL Gate array ecc.), cioè microcircuiti personalizzati, la convenienza dell’opera-
+zione di reverse engineering scompare completamente.
+Il costo di una piastra multistrato è molto più elevato di quello di una piastra a doppia 
+faccia e tende a crescere esponenzialmente con l’aumentare degli strati; il suo utilizzo può 
+essere imposto dalla necessità di rendere il prodotto realizzato difficilmente copiabile.
+Per i circuiti utilizzati in applicazioni professionali viene eseguita anche una placca-
+tura dei conduttori con una lega di stagno-piombo per migliorare la loro conducibilità e 
+saldabilità.
+Per i connettori ad innesto ricavati sullo stesso circuito stampato talvolta viene ese-
+guita una doratura, si deposita cioè sulle piste di rame un sottile strato d’oro che impedi-
+sce l’ossidazione dei contatti.
+Per poter utilizzare una tecnica di saldatura automatizzata ad onda di stagno viene 
+depositata una vernice protettiva di colore verde che ricopre tutta la superficie della 
+scheda, a esclusione delle piazzole dove si desidera effettuare la saldatura: in fase di sal-
+datura l’onda di stagno si depositerà solo in questi punti.
+Per facilitare il montaggio dei componenti elettronici, sul lato componenti della 
+scheda (sempre utilizzando il metodo serigrafico) si deposita una maschera che riproduce 
+il contorno degli ingombri e gli identificatori dei componenti che devono essere montati. 
+Questa maschera viene detta maschera del layout e in genere viene realizzata utilizzando 
+una vernice di colore bianco o giallo.
+3.3.1  Processi di fabbricazione
+Per costruire un circuito stampato esistono vari metodi riconducibili sostanzialmente a 
+due tecnologie: una, detta sottrattiva, con la quale si elimina la parte di superficie conduttiva 
+che non serve per la realizzazione dei conduttori, e una, detta additiva, con la quale i percorsi 
+conduttivi vengono realizzati per deposizione elettrochimica su un supporto isolante.
+Il metodo più diffuso per la realizzazione dei circuiti stampati è il metodo di tipo sot-
+trattivo, e precisamente la fotoincisione. Un altro metodo simile alla fotoincisione, ma 
+meno preciso, è quello dell’incisione con maschera.
+Fotoincisione
+Il processo di produzione (Fig. XX.3.11) inizia con la riduzione in scala 1:1 e riprodu-
+zione fotografica del disegno (pattern) realizzato con trasferibili e nastrini adesivi opachi 
+o con un sistema di riproduzione (plotter) guidato da un calcolatore (CAD). Il materiale 
+viene prelevato da un magazzino nel quale sia la temperatura che l’umidità sono attenta-
+mente controllate al fine di prevenire l’insorgere di difetti di fabbricazione durante il pro-
+cesso produttivo.
+Le lastre vengono poi tagliate in formati standard, che rispettando le specifiche del 
+cliente, ne permettono la manipolazione automatica e consentono l’impressione di più cir-
+cuiti stampati finali sulla stessa lastra (detta quadrotto); sui bordi della lastra viene 
+lasciata libera un’area che serve per effettuare controlli e collaudi successivi mentre si 
+effettuano le varie lavorazioni.
+Le piastre vengono poi sottoposte a timbratura (numero o sigla) in modo tale che 
+l’intero lotto di produzione sia facilmente individuabile e possa essere accompagnato 
+dalla documentazione relativa al ciclo di lavoro.
+Il materiale è poi sottoposto ad un processo di stabilizzazione termica in forni a tem-
+
+[PAG 2156]
+XX-138
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+peratura costante e a un processo di satinatura con il quale la superficie di rame della pia-
+stra viene meccanicamente ripulita dalle impurità superficiali dovute a depositi di grasso e 
+di ossidi.
+Fig. XX.3.11  Diagramma di flusso del processo di lavorazione di un circuito stampato.
+La sequenza delle successive lavorazioni è la seguente:
+1)  La piastra di rame viene forata seguendo le indicazioni fornite da un apposito dise-
+gno; in genere quest’operazione viene fatta su più schede contemporaneamente con 
+metodi manuali, semiautomatici o a controllo numerico.
+2)  Se richiesto, si esegue la metallizzazione dei fori con metodo elettrochimico. Dap-
+prima si attivano le superfici con palladio metallico in sospensione colloidale, poi si pro-
+cede con un bagno di rame chimico dove il sale di rame man mano che viene ridotto in 
+rame metallico, si deposita sulle pareti dei fori. Dall’esito di questa operazione dipende la 
+Magazzino
+dei materiali
+Taglio
+Timbratura
+delle lastre
+Stabilizzazione
+del materiale
+Satinatura
+Incisione
+Metallizzazione
+chimica e galvanica
+Laminazione
+del dry film
+Collaudo finale
+della scheda
+1
+Asportazione
+del dry film
+Deposizione
+galvanica dello
+strato di SnPb
+Doratura
+(se richiesta)
+Stampa della
+maschera del
+solder resist
+Stampa
+della maschera
+del layout
+Taglio e
+scontornatura
+della scheda
+Controllo elettrico
+della scheda
+Esposizione
+controllo e
+sviluppo
+Foratura
+1
+
+[PAG 2157]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-139
+capacità conduttiva dei vari strati e quindi il buon esito della lavorazione, per cui, appena 
+terminato il processo le piastre vengono subito sottoposte ad un verifica molto attenta. In 
+genere si effettua anche una deposizione elettrochimica per aumentare lo spessore dello 
+strato di metallo nei fori metallizzati.
+3)  Si esegue la laminazione del dry film, ossia si sensibilizza la piastra di rame depo-
+sitando sulla superficie di rame, in una camera ad aria filtrata, uno strato di un’emulsione 
+sensibile all’azione della luce ultravioletta (photoresist). Sulla superficie così trattata (una 
+volta essiccata) viene applicato il film fotografico negativo che riproduce il percorso dei 
+conduttori (fase di impressione). La superficie della piastra viene esposta - per un inter-
+vallo di tempo la cui durata dipende dal tipo di photoresist - all’azione di una radiazione 
+ultravioletta. L’emulsione fotosensibile che resta esposta reagisce e polimerizza, induren-
+dosi. La piastra viene quindi lavata in una soluzione a base di alcool che elimina la parte 
+non polimerizzata del photoresist lasciando quindi esposta la superficie di rame sotto-
+stante. Si crea così una maschera acido-resistente che riproduce esattamente sulla superfi-
+cie di rame della piastra la disposizione dei conduttori. Se il circuito è a due strati questa 
+operazione deve essere ripetuta anche per l’altro lato.
+4)  Si esegue la fase di incisione, immergendo la piastra in un bagno di cloruro ferrico 
+che corrode il rame rimasto scoperto. 
+5)  Si esegue la fase di strippaggio, levando la maschera di fotoresist con soda cau-
+stica.
+6)  Si lava la piastra.
+7)  Si effettua la deposizione elettrochimica di uno strato di un lega di stagno-piombo 
+sulla superficie della scheda per migliorarne la conducibilità e la saldabilità e aumentare 
+lo spessore dei fori metallizzati 25 m.
+8)  Se sono presenti e se la lavorazione è richiesta dal committente, si effettua la dora-
+tura dei connettori a innesto; protetta con materiali adesivi nelle parti estranee al tratta-
+mento, la piastra viene sottoposta a bagni chimici a base di sali di nichel e di oro.
+9)  Seguono le usuali operazioni di lavaggio e controllo.
+10)  Si provvede ad applicare lo strato di vernice epossidica protettiva (solder-resist). 
+Il solder mask è una pasta di colore verde, caratteristica dei circuiti stampati professionali, 
+che si usa per permettere la saldatura con mezzi automatici e per aumentare l’isolamento 
+elettrico fra le piste. Il metodo di applicazione più utilizzato è quello serigrafico; per 
+schede ad alta densità di componenti si utilizza invece il solder mask fotografico.
+11)  Si effettua la serigrafia del disegno riproducente lo schema di distribuzione dei 
+componenti su scheda, completi dei loro simboli di identificazione (maschera del layout).
+12)  Si effettuano le lavorazioni meccaniche finali: taglio e scontornatura della scheda.
+Le operazioni indicate da 8) a 12) non sono necessarie per cui, nelle applicazioni non 
+professionali, possono essere omesse; nel caso dei circuiti a doppia faccia le operazioni da 
+1) a 7) devono essere ripetute per entrambe le facce.
+Incisione con maschera
+Un’operazione simile al processo serigrafico consiste nell’applicare direttamente sulla 
+superficie di rame della scheda una pellicola protettiva simile ad uno smalto. Dopo 
+l’essiccazione la piastra viene immersa nell’acido che rimuove il rame non protetto dalla 
+vernice. La vernice protettiva viene eliminata con un’operazione di lavaggio. Questo 
+metodo di rapida esecuzione, è più economico della fotoincisione, ma è meno preciso e 
+fornisce circuiti di qualità inferiore.
+Metodo additivo
+Con il metodo additivo il percorso conduttivo viene realizzato sul supporto isolante 
+mediante un processo di deposizione elettrogalvanico.
+
+[PAG 2158]
+XX-140
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Questo processo implica costi di fabbricazione più elevati, ma consente di ottenere 
+alte densità di impacchettamento dei dispositivi sulla scheda. Vi si ricorre quando la 
+scheda deve essere impiegata in ambienti con un’alta percentuale di umidità.
+3.3.2  Materiali per la realizzazione dei circuiti stampati
+Supporto isolante
+Per poter essere impiegato come supporto per la realizzazione di un circuito stampato, 
+un materiale deve possedere le seguenti caratteristiche tecniche:
+–  buona lavorabilità, laminabilità e resilienza meccanica;
+–  buona resistenza meccanica alla compressione, alla trazione e al taglio; 
+–  non infiammabilità e, possibilmente, autoestinguibilità; 
+–  costante dielettrica bassa, per ridurre gli effetti capacitivi fra le facce opposte;
+–  elevata rigidità dielettrica, per garantire un buon isolamento fra le facce del circuito 
+stampato;
+–  insensibilità agli agenti chimici utilizzati nei processi di fabbricazione;
+–  resistente e inalterabile alle diverse temperature raggiunte durante le operazioni di sal-
+datura;
+–  elevata stabilità dimensionale.
+–  I materiali più frequentemente utilizzati sono:
+–  resine fenoliche, di colore giallo e di bassa qualità;
+–  vetronite (fibre di vetro impregnate in resine epossidiche) con buone caratteristiche 
+elettriche e meccaniche.
+Gli spessori dei supporti isolanti sono normalizzati: 0,2, 0,5, 0,8, 1,0, 1,2, 1,3, 1,6, 
+2,0, 2,4, 3,2, 5 mm. 
+Lo spessore normalmente utilizzato è di 1,6 mm. Viene fornito in lastre quadrate o ret-
+tangolari di 1÷1,5 m².
+Strato conduttivo
+Il rame elettrolitico che riveste la superficie del supporto isolante ha uno spessore, fis-
+sato dalle norme, di 35 m.
+Particolare importanza riveste il tipo di collante che viene utilizzato per far aderire il 
+foglio di rame al supporto isolante. 
+Le sue principali caratteristiche devono essere:
+–  resistenza all’azione degli agenti chimici che agiscono sulla piastra durante le opera-
+zioni di fabbricazione del circuito stampato;
+–  capacità di mantenere il suo potere adesivo anche quando la temperatura raggiunge 
+valori elevati durante le operazioni di saldatura.
+3.3.3  Circuiti stampati flessibili
+Un circuito flessibile comprende un insieme di conduttori realizzato su disegno del 
+progettista dell’apparecchiatura supportato da un sottile isolante flessibile. È quindi un 
+dispositivo di interconnessione adatto a collegare elettricamente tra loro vari sottoassiemi 
+e componenti di un apparato elettronico.
+Lo strato conduttivo è realizzato per elettrodeposizione o con nastri metallici. Il mate-
+riale più utilizzato è il rame ma vengono impiegati anche l’alluminio, il nichel o leghe 
+rame-nichel.
+Sulla superficie dei conduttori è applicato uno strato protettivo isolante lasciando sco-
+perte solo quelle aree che saranno usate per l’inserimento di ulteriori componenti. 
+Lo strato protettivo conferisce una maggiore robustezza meccanica al circuito, ricopre 
+i conduttori per dar loro una maggior protezione ambientale e - posizionando i conduttori 
+nella zona neutra tra la base isolante e lo strato protettivo - assicura la minimizzazione di
+
+[PAG 2159]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-141
+ogni tensione meccanica indotta dalle flessioni.
+Aree di applicazione 
+La costruzione sottile e laminare rende i circuiti flessibili particolarmente adatti per 
+l’impiego in applicazioni in cui i cavi di interconnessione sono soggetti a sollecitazioni 
+dinamiche, come accade ai collegamenti della testina di stampa di una stampante con la 
+piastra elettronica di comando nonché in tutte quelle in cui la flessibilità dell’interconnes-
+sione è richiesta durante le fasi di assemblaggio e di manutenzione.
+I vantaggi offerti da un’interconnessione realizzata con un circuito stampato flessibile 
+riguardano vari aspetti della progettazione di un apparecchiatura.
+Un vantaggio evidente consiste nella riduzione del peso e del volume occupato 
+rispetto a quelli di un’analoga connessione in cavo.
+La flessibilità della connessione consente inoltre un più agevole accesso ai vari com-
+ponenti del sistema, favorendo le operazioni di manutenzione delle apparecchiature.
+Il circuito stampato flessibile si presenta come un componente originale, progettato 
+per un’applicazione particolare e le cui proprietà e caratteristiche (capacità, impedenza, 
+diafonia ecc.), standardizzate e ripetibili, garantiscono la possibilità di eseguire cablaggi 
+altamente affidabili.
+Il circuito può essere realizzato in modo tale che sia possibile utilizzarlo con un solo 
+orientamento, evitando così errori di cablaggio facilitandone quindi il montaggio.
+Il cablaggio con i circuiti flessibili è più rapido, accurato e facile da eseguire di quello a filo.
+4  APPLICAZIONI ELETTRONICHE
+4.1  Dimensionamento dei dissipatori di calore
+I dissipatori di calore (heatsink) sono piastre metalliche che dissipano il calore gene-
+rato dai componenti elettronici montati su di esse; devono presentare un basso valore di 
+resistenza termica, affinché la resistenza termica complessiva dissipatore-componente sia 
+sufficientemente bassa da impedire che la temperatura della giunzione raggiunga valori 
+suscettibili di danneggiare il componente stesso.
+La resistenza termica di un materiale viene definita come:
+(XX.4.1)
+ove: Rth è la resistenza termica (°C/W); Tj  Ta è la variazione di temperatura dovuta alla 
+potenza dissipata (°C); Pd è la potenza dissipata (W).
+La resistenza termica del componente elettronico è una caratteristica che dipende dal 
+materiale e dalla tecnica costruttiva e non è modificabile dall’utilizzatore; nei fogli tecnici 
+essa viene indicata utilizzando vari simboli differenti fra loro: Rth, R, , K. 
+La resistenza termica del dissipatore e quella fra contenitore del dispositivo e dissipa-
+tore sono modificabili.
+La resistenza termica del complesso contenitore-dissipatore dipende dalle tecniche di 
+montaggio adottate, dalla presenza cioè di isolanti e di paste siliconiche, e della pressione 
+di serraggio fra le superfici. La resistenza del dissipatore dipende dalla sua area, dallo 
+spessore, dal materiale e dalla colorazione dello stesso.
+L’area del dissipatore viene aumentata adottando opportune forme che – a parità di 
+volume – massimizzano la superficie radiante. L’alluminio (per la sua leggerezza e lavora-
+bilità) è il materiale più usato. Talvolta i dissipatori vengono colorati in nero per incre-
+mentare il potere radiante.
+Occorre anche valutare attentamente le modalità di installazione scegliendo l’orienta-
+Rth
+Tj
+Ta
+–
+Pd
+----------------
+=
+
+[PAG 2160]
+XX-142
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+mento migliore, che di solito è quello in senso assiale.
+Le case costruttrici offrono dei dissipatori costruiti con i fori di fissaggio già predispo-
+sti per tutti i principali tipi di contenitori utilizzati dai vari dispositivi elettronici. La resi-
+stenza termica di questo tipo di contenitori è indicata dai relativi fogli tecnici.
+Talvolta queste realizzazioni standardizzate non soddisfano le esigenze del tecnico per 
+specifiche applicazioni: si ricorre allora a profilati di varia forma che possono essere 
+acquistati specificando la lunghezza desiderata; la resistenza termica per questi radiatori 
+viene ricavata da una curva caratteristica resistenza termica (°C/W) - lunghezza (mm), 
+come illustrato nella Fig. XX.4.1.
+Fig. XX.4.1  Curva caratteristica resistenza termica-lunghezza.
+Quando il dissipatore assume dimensioni considerevoli, il tecnico deve prendere con-
+siderare l’opportunità di utilizzare un ventilatore che sostituisca alla convezione naturale 
+dell’aria nel contenitore quella forzata.
+4.1.1  Calcolo dei dissipatori termici
+Il problema della dissipazione termica nei dispositivi elettronici, e soprattutto in quelli 
+a semiconduttore (diodi, tiristori, transistor a giunzione, JFET, circuiti integrati), va valu-
+tato sempre con grande attenzione.
+La dissipazione di calore avviene:
+–  per conduzione, mediante contatto con la parte riscaldata;
+–  per convezione, mediante l’aria che viene in contatto con la superficie calda;
+–  per irraggiamento nello spazio circostante.
+La potenza dissipata all’interno del semiconduttore si trasforma in calore e provoca un 
+innalzamento della temperatura delle giunzioni; per non danneggiare il componente, tale 
+aumento non deve superare un determinato valore massimo (per il silicio è compreso fra i 
+120 °C e i 200 °C).
+Per stabilire se un dispositivo è in grado di dissipare il calore prodotto è necessario:
+–  ricercare sui fogli tecnici il valore della resistenza termica interna giunzione-conteni-
+tore Rthjc e il valore della resistenza termica giunzione-ambiente Rthja;
+–  calcolare la resistenza termica giunzione-ambiente Rthja massima del dispositivo:
+(XX.4.2)
+Length [mm]
+0
+200
+300
+Thermal Resistance of
+(Heatsink @ 80 °C above ambient) [°C/W]
+0,5
+1
+1,5
+2
+2,5
+100
+98,4
+35,0
+117,5
+34,1
+15,0
+4,8
+(Flat surface)
+Rthja max
+
+
+Tj max
+
+
+Ta max
+
+
+–
+PD
+-------------------------------------------
+=
+
+[PAG 2161]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-143
+dove: PD è la potenza dissipata dal dispositivo, in W; Tj(max) è la temperatura massima che 
+la giunzione è in grado di sopportare senza distruggersi; Ta(max) è la temperatura ambiente 
+massima.
+Il componente è in grado di dissipare il calore che produce solo se Rthja(max) > Rthja
+del componente. In questo caso per i valori assegnati di temperatura ambiente e di potenza 
+dissipata, la temperatura della giunzione non può mai superare il valore massimo.
+Se invece la resistenza termica giunzione-contenitore (Rthjc) del dispositivo prescelto 
+supera la resistenza termica giunzione-ambiente massima, esso non può in alcun caso in 
+grado di dissipare il calore prodotto, per cui è necessario ricercare un dispositivo di mag-
+gior potenza caratterizzato da un valore di resistenza termica (Rthjc) più basso.
+Se invece il valore della resistenza termica Rthja(max) è superiore a quella giunzione-
+contenitore (Rthjc) del componente, ma inferiore a quella giunzione-ambiente Rthja, è 
+necessario aggiungere un dissipatore di calore (Fig. XX.4.2).
+I circuito elettro-termico che descrive il comportamento del sistema termico formato 
+dal chip di silicio e dal contenitore del dispositivo (case) è mostrato nella Fig. XX.4.3.
+Fig. XX.4.2  Tecnica di montaggio, in esploso, di un transistor incapsulato in un conteni-
+tore tipo TO-3 su un dissipatore di calore.
+Tab. XX.4.1  Resistenze termiche che caratterizzano i principali tipi di contenitori 
+utilizzati per i componenti a semiconduttori di tipo discreto
+Tipo di contenitore
+Rthjc
+[°C/W]
+min     max
+Rthja
+[°C/W]
+min      max
+TO 3
+0,8
+3
+30
+40
+TO 3P
+1
+2
+35
+45
+T0 5
+10
+60
+175
+220
+TO 126
+3
+15
+80
+100
+TO 220
+1,5
+4,2
+60
+70
+Dado
+Rondella
+Mica
+Dissipatore
+Isolante
+Terminale
+Vite
+
+[PAG 2162]
+XX-144
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+La resistenza termica giunzione-ambiente è formata da:
+–  Rthjc: resistenza termica giunzione-contenitore. È caratteristica del dispositivo e non 
+modificabile dall’utilizzatore se non sostituendo il componente con uno di potenza più 
+elevata (Tab. XX.4.1);
+–  Rthca: resistenza termica contenitore-ambiente. Dipende dalla superficie e dal mate-
+riale utilizzato per il contenitore. L’utente può modificare la superficie e le caratteristiche 
+dello scambio di calore applicando il contenitore su un dissipatore di calore che ne altera 
+le caratteristiche termiche. Il valore di questa resistenza non è mai riportato dai manuali in 
+quanto è ricavabile dalle due precedenti Rthca  = Rthja   Rthjc.
+Il circuito elettro-termico proposto nella Fig. XX.4.4 mostra in che modo l’introdu-
+zione del dissipatore di calore nel circuito termico del dispositivo elettronico riesce ad 
+abbassare la resistenza termica complessiva del circuito.
+–  Rthcd: resistenza termica contenitore-dissipatore. Dipende dal tipo di contenitore e dal 
+tipo di montaggio.
+Tab. XX.4.2  Valori della resistenza termica contenitore-dissipatore
+Fig. XX.4.3  Circuito equiva-
+lente elettro-termico di un 
+componente elettronico 
+Fig. XX.4.4  Circuito elettro-termico che mostra 
+l’azione esercitata dal dissipatore di calore sul circuito 
+termico di un dispositivo elettronico.
+Tipo di 
+contenitore
+Contatto 
+diretto
+Contatto 
+diretto
+con pasta
+siliconica
+Contatto
+con mica 
+interposta
+Contatto 
+con mica
+e pasta
+siliconica
+DO 4
+0,8÷1
+0,6÷0,8
+6,5÷7
+4,5÷5
+D0 5
+0,4÷0,6
+0,3÷0,5
+2,4÷2,6
+1,4÷1,6
+TO 3
+0,25
+0,12
+0,8
+0,4
+TO 3P
+0,4
+0,2
+1
+0,7
+TO 5
+1
+0,7
+TO 126
+1,4
+1
+2
+1,5
+TO 220
+0,8
+0,5
+1,4
+1,2
+PD
+Tj
+Tc
+Rthjc
+Rthca
+Ta
+PD
+Tj
+Tc
+Ta
+Td
+Rthjc
+Rthja
+Rthcd
+Rthda
+ Rthjc
+Alto valore
+ di resistenza
+termica
+Dissipatore
+ di resistenza
+termica
+di calore
+Basso valore
+
+[PAG 2163]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-145
+Il contatto fra contenitore e dissipatore può essere diretto, tramite una pellicola isolante 
+(mica o materiale plastico) oppure tramite un grasso termoconduttore al silicone. 
+La pellicola isolante viene utilizzata quando si desidera mantenere l’isolamento elettrico 
+fra contenitore del dispositivo e dissipatore di calore. Nella Tab. XX.4.2 sono mostrati alcuni 
+valori tipici della resistenza termica Rthcd per alcuni dissipatori di uso comune.
+–  Rthda: resistenza termica dissipatore-ambiente. È la resistenza caratteristica del dissi-
+patore di calore; viene indicata dal costruttore e la si può rilevare dal foglio tecnico. 
+I dissipatori di calore sono realizzati secondo dimensioni e forme standard adatte a 
+contenitori normalizzati di uso corrente, oppure in barre estruse di varie forme e dimen-
+sioni; la loro lunghezza viene calcolata, in funzione del valore della resistenza termica 
+desiderata, utilizzando una curva caratteristica fornita dal costruttore.
+Esempio
+Il regolatore a circuito integrato 7805 utilizzato nel circuito mostrato nella Fig. XX.4.5
+deve essere in grado di dissipare una potenza pari a: 
+Fig. XX.4.5  Alimentatore stabilizzato.
+Il regolatore presenta le seguenti caratteristiche:
+–  La temperatura di giunzione massima è di 150 °C; mentre quella ambiente è di 50 °C. 
+–  La resistenza termica giunzione-ambiente massima vale:
+La resistenza termica Rthja(max) risulta superiore a quella giunzione-contenitore (per 
+cui il dispositivo è in grado di dissipare il calore), ma è inferiore a quella giunzione-
+ambiente.
+Utilizzando il dispositivo con il contenitore plastico (Rthjc = 5 °C/W), e supponendo di 
+non impiegare né isolanti né grasso al silicone   (Rthcd = 0,8 °C/W), il dissipatore deve 
+essere caratterizzato da una resistenza termica Rthda  pari a:
+–  contenitore plastico
+Rthjc = 5    °C/W
+Rthja = 65 °C/W
+–  contenitore metallico
+Rthjc = 5,5 °C/W
+Rthja = 45 °C/W
+PD
+UO
+UI
+–
+
+
+IO
+
+12
+7
+–
+
+
+1
+
+7 W
+=
+=
+=
+U1
+7805
+Ui
+1 2 3
+T0 220
+Uo
+G
+N
+D
+Io
+Ui
+Uo
+1
+2
+3
+Rthja max
+
+
+150
+150
+–
+7
+-----------------------
+14 2 °C/W
+
+=
+=
+Rthjc
+Rthca
+Rthcd
+Rthda
++
+
+
+
++
+Tj
+Ta
+–
+PD
+----------------
+=
+Rthca
+Rthcd
+Rthda
++
+
+
+
+Rthja max
+
+
+Rthjc
+–
+=
+
+[PAG 2164]
+XX-146
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+ponendo:
+e dopo alcuni passaggi matematici e sostituendo i valori noti si ottiene:
+Utilizzando invece il dispositivo con il contenitore metallico, la resistenza termica del 
+dissipatore vale:
+Con i parametri elencati nella Tab. XX.4.2 si può selezionare il dissipatore di calore 
+che presenta un valore inferiore di resistenza termica inferiore a quello calcolato.
+Regime dinamico
+Il circuito elettro-termico proposto nella Fig. XX.4.4 si riferisce a un comportamento sta-
+tico del circuito: si suppone, cioè, che il calore sia tale da mantenere costante la temperatura; 
+in effetti, invece, la potenza dissipata sulla giunzione non è costante, per cui si verificano 
+fenomeni di accumulo di calore.
+Ciò è dovuto al fatto che ogni corpo accumula una quantità di calore proporzionale al 
+peso specifico e alla sua massa.
+Il passaggio del calore dal punto più caldo (la giunzione) al punto più freddo 
+(l’ambiente) avviene attraverso il contenitore e il dissipatore, cedendo parte del calore al 
+corpo freddo e parte all’ambiente per irraggiamento.
+L’accumulo di calore da parte del sistema diventa evidente quando togliendo l’alimen-
+tazione al dispositivo, il calore dissipato dalla giunzione si annulla ma il contenitore e il 
+dissipatore continuano a dissipare il calore accumulato per un certo tempo.
+Per tener conto di questo fenomeno il circuito elettro-termico viene modificato come 
+mostrato nella Fig. XX.4.6, introducendo in parallelo alle resistenze termiche le capacità 
+termiche Cth.
+Quando la potenza elettrica assorbita dal sistema è costante, le capacità termiche non 
+assorbono e cedono calore, per cui possono essere trascurate; quando invece la potenza 
+dissipata varia nel tempo, come, per esempio, accade se l’elemento opera in commuta-
+zione (tiristori, circuiti integrati monolitici digitali), l’effetto delle capacità termiche deve 
+essere attentamente valutato. 
+I fogli tecnici riportano talvolta dei diagrammi in cui viene mostrato l’andamento 
+dell’impedenza termica Zth.
+Nella Fig. XX.4.7 viene mostrato il grafico dell’impedenza termica di un transistor 
+bipolare di potenza; si noti che quando il duty cycle si avvicina al 100%, cioè ad una con-
+duzione piena, l’effetto della capacità termica tende ad annullarsi e l’impedenza termica 
+tende al valore della resistenza termica.
+Nella Fig. XX.4.8 è mostrato l’andamento dell’impedenza termica nel tempo di un 
+Triac, nonché le curve che pongono in relazione, in funzione dell’angolo di conduzione, la 
+potenza dissipata con la corrente efficace e con la temperatura.
+Noti il valore massimo della potenza dissipata dal dispositivo e il valore della tensione 
+di alimentazione si ricava il valore della corrente efficace circolante; si sceglie la condi-
+zione di conduzione peggiore (angolo di conduzione  = 180°); si ricava il valore della 
+potenza dissipata dal componente e, incrociandone il valore con quello della temperatura 
+A
+Rthja max
+
+
+Rthjc
+–
+=
+Rthda
+1
+1
+A---
+1
+Rthca
+------------
+–
+-----------------------
+Rthca
+10 19 °C/W
+
+
+–
+=
+Rthda
+10 5 °C/W
+
+
+
+[PAG 2165]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-147
+ambiente, sul grafico di destra, si legge il valore della resistenza termica.
+Il valore così ricavato tiene conto dei differenti angoli di conduzione, mentre il dia-
+gramma riportato in basso mostra come varia l’impedenza termica nel tempo
+ 
+Fig. XX.4.6   Circuito equivalente elettro-termico di un componente elettronico assem-
+blato su un dissipatore di calore in regime dinamico.
+Fig. XX.4.7  Diagramma che mostra la variazione dell’impedenza termica in funzione del 
+tempo su conduzione del transistor bipolare di potenza BY45 (Fonte: Telefunken).
+4.2  Alimentatori
+4.2.1  Alimentatori in corrente continua
+Gli alimentatori sono particolari assemblaggi di componenti elettronici che hanno il 
+compito di convertire l’energia ricevuta dalla rete di alimentazione in corrente alternata 
+nella forma richiesta dall’apparato elettronico che si desidera alimentare.
+La quasi totalità delle apparecchiature elettroniche richiede una tensione di alimenta-
+zione in corrente continua stabilizzata, cioè una tensione costante nel tempo che non cam-
+bia al variare (entro limiti precisi) della tensione di ingresso, della corrente assorbita dal 
+carico in uscita e della temperatura.
+Un tipico alimentatore c.a. - c.c. è formato dai seguenti elementi funzionali (Fig. XX.4.9):
+–  trasformatore di rete;
+–  circuito raddrizzatore;
+PD
+Tj
+Tc
+Ta
+Td
+Rthjc
+Rthja
+Rthcd
+Rthda
+ Rthjc
+Cthjc
+Cthcd
+Cthda
+Zthp
+[K/W]
+tp/T = 1
+= 0,5
+= 0,2
+= 0,1
+= 0,05
+= 0,02
+= 0,01
+0,01
+0,05
+0,1
+0,5
+1
+10-6
+10-5
+10-4
+10-3
+10-2
+10-1
+10-0
+tp [s]
+
+[PAG 2166]
+XX-148
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Fig. XX.4.8  Diagramma che pone in relazione la potenza dissipata con la massima tem-
+peratura ammissibile del Triac BT136, in alto, e diagramma che mostra la variazione 
+dell’impedenza termica in funzione del tempo, in basso.
+1
+2
+ = 1 = 2 = conduction angle per half cicle
+Free-air operation
+45
+30
+20 15
+Rth mb-a =0,3 K/W
+50
+0
+100
+120
+117
+114
+111
+108
+105
+102
+Tmb [°C]
+0
+1
+2
+3
+4
+5
+6
+P [W]
+IT(RMS) [A]
+Tamb [°C]
+The right -hand part shows the interrelationship between the power (derived from the left-hand  
+and the maximum permissible temperatures.
+10
+5 3
+1
+0
+1
+2
+3
+4
+ = 180°
+= 120°
+= 90°
+= 60°
+= 30°
+10-5
+10-4
+10-2
+10-2
+10-1
+1
+10
+10-1
+1
+10
+10-3
+Zthj-mb
+[K/W]
+Time [s]
+Unidirectional
+Bidirectional
+
+[PAG 2167]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-149
+–  filtro di livellamento;
+–  regolatore o stabilizzatore di tensione (voltage regolator).
+Fig. XX.4.9  Schema a blocchi rappresentante un alimentatore in corrente continua.
+Trasformatore
+Il trasformatore di rete provvede di norma ad abbassare il valore della tensione di 
+ingresso.
+La necessità di utilizzare un trasformatore nella realizzazione di un convertitore c.a. - 
+c.c. è imposta dalle norme legislative che prevedono, per ovvie ragioni di sicurezza, l’iso-
+lamento degli organi di comando delle apparecchiature elettroniche.
+Il trasformatore garantisce una separazione galvanica fra circuito di ingresso a c.a. e 
+circuito alimentato a c.c. con alti valori di isolamento.
+Oltre al tipico trasformatore con un avvolgimento primario e un avvolgimento secon-
+dario (Fig. XX.4.10a) vengono utilizzati anche trasformatori a più secondari (Fig. 
+XX.4.10b) per ottenere tensioni diverse e a presa centrale (Fig. XX.4.10c) caratterizzati da 
+due tensioni al secondario di uguale ampiezza ma di sfasamento opposto.
+Fig. XX.4.10  Tipi di trasformatori utilizzati per la realizzazione degli alimentatori.
+Raddrizzatore
+Un circuito raddrizzatore provvede a rendere unidirezionale la corrente in un carico, 
+generando così una tensione di uscita pulsante.
+Nelle applicazioni elettroniche viene usato come elemento raddrizzatore il diodo 
+semiconduttore, il quale ha la proprietà di condurre la corrente elettrica solo quando viene 
+polarizzato direttamente.
+Si ricorda che un diodo è polarizzato direttamente quando l’anodo si trova ad un 
+potenziale maggiore rispetto al catodo è ad un valore tale da superare il valore di soglia. 
+Nella (Fig. XX.4.11) vengono mostrate alcune configurazioni tipiche di circuiti raddrizza-
+tori monofase:
+Uac
+Uo
+Uo non
+stabilizzata
+stabilizzata
+Io
+Io
+t
+t
+t
+t
+t
+Trasformatore
+Raddrizzatore
+Filtro di
+livellamento
+Stabilizzatore
+Us1
+Us2
+Up
+Up
+Us
+Up
+Us1
+Us2
+a)
+b)
+c)
+1
+2
+3
+4
+5
+6
+7
+11
+10
+9
+8
+
+[PAG 2168]
+XX-150
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Fig. XX.4.11  Tipi di raddrizzatori con formule di dimensionamento dei diodi rettificatori.
+
+[PAG 2169]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-151
+–  a semionda: il diodo conduce solo per mezza semionda e la tensione inversa applicata 
+al diodo è pari al valore massimo della tensione di ingresso;
+–  a onda intera con presa centrale: il diodo D1 conduce per la semionda positiva, men-
+tre D2 conduce per la semionda negativa. La tensione inversa applicata ad ogni diodo è 
+pari al doppio della tensione massima di ingresso;
+–  a onda intera a ponte (ponte di Graetz): il diodo D1 e D4 conducono per la semionda 
+positiva, i diodi D2 e D3 conducono per quella negativa. La tensione massima inversa è 
+pari alla tensione massima. Questa configurazione circuitale viene realizzata anche in 
+forma integrata.
+I parametri caratteristici del raddrizzatore sono:
+–  tensione inversa massima di picco URM: è la massima tensione che può essere appli-
+cata al raddrizzatore quando viene polarizzato inversamente;
+–  corrente di picco non ripetitiva IFSM: è la corrente massima che il raddrizzatore può 
+fornire per un breve intervallo di tempo;
+–  corrente di picco ripetitiva IFRM: è la corrente impulsiva massima che il raddrizzatore 
+può fornire con continuità;
+–  corrente massima diretta IFM: è la corrente massima che può scorrere nel raddrizza-
+tore (dipende dal tipo di filtro di livellamento impiegato).
+–  corrente media raddrizzata IFM(AV): è il valore medio di corrente che può scorrere nel 
+raddrizzatore senza che si verifichino fenomeni di riscaldamento che ne alterino o danneg-
+gino il funzionamento; in genere il suo valore è posto uguale a quello della corrente mas-
+sima di uscita dell’alimentatore.
+Filtro di livellamento
+Il segnale generato all’uscita del raddrizzatore a ponte ha un andamento pulsante; 
+rispetto al valore medio presenta delle variazioni della forma d’onda dette ondulazioni 
+residue (ripple). negli alimentatori tale ondulazione viene valutata dal fattore di ondula-
+zione residua (fattore di ripple), dato dal rapporto fra il valore efficace della componente 
+alternata del segnale (Ur(eff)) e il valor medio in continua del segnale stesso (espresso in 
+percento).
+Il fattore di ripple r è dato da:
+Se è possibile linearizzare la forma d’onda della scarica esponenziale con un anda-
+mento triangolare, la tensione di ripple (Ur(eff)) vale:
+dove Urpp è la tensione di ripple picco-picco.
+Questo fenomeno negli alimentatori stabilizzati è indesiderato e deve essere ridotto il 
+più possibile mediante l’uso di un opportuno filtro di livellamento che accumula energia 
+quando la corrente aumenta, mentre quando questa diminuisce - non potendosi scaricare 
+verso il raddrizzatore - restituisce l’energia accumulata fornendo corrente al carico in 
+uscita, e smorzando quindi l’oscillazione della corrente in uscita.
+Il filtro di livellamento può essere ad ingresso induttivo o ad ingresso capacitivo. Il fil-
+tro ad ingresso induttivo (bobina di arresto) è formato da una rete L-C. Il filtro ad ingresso 
+capacitivo è formato da una rete R-C o solo da un condensatore.
+Il filtro di livellamento mostrato nella Fig. XX.4.12 è ad ingresso capacitivo; quando 
+r
+Ur eff
+
+
+Udc
+---------------
+=
+r
+Urpp
+2 3
+-----------
+=
+
+[PAG 2170]
+XX-152
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+viene applicata la tensione al primario del trasformatore il condensatore si carica e la cor-
+rente assume un valore inizialmente elevato che va poi decrescendo man mano che la 
+carica procede fino ad annullarsi. Si crea un picco di corrente la cui ampiezza dipende 
+dalla tensione, massima al secondario e dalla somma fra la resistenza differenziale del 
+diodo (rd) e la resistenza dell’avvolgimento secondario (Rds). La durata dell’impulso di 
+corrente si esaurisce più o meno rapidamente in funzione della quantità di cariche richie-
+ste dalla carica del condensatore.
+Fig. XX.4.12  Filtro di livellamento.
+Nella Fig. XX.4.13 viene mostrato in che modo le forme d’onda vengono modificate 
+quando l’alimentatore fornisce corrente al carico
+Inizialmente il condensatore si carica al valore massimo generando un picco di cor-
+rente non ripetitivo; successivamente la tensione pulsante diminuisce e il condensatore si 
+scarica con una costante di tempo = RL C e nei diodi - polarizzati inversamente - non 
+circola corrente. Quando la tensione sul condensatore diminuisce fino ad un valore tale da 
+ripolarizzare direttamente i diodi del ponte, questi entrano in conduzione e ricaricano il 
+condensatore al valore massimo, e il ciclo si ripete.
+Il picco di corrente ripetitivo generato in corrispondenza della fase di ricarica del con-
+densatore è di ampiezza tanto maggiore quanto minore è l’intervallo di carica (t) il quale 
+a sua volta è tanto più lungo quanto più è elevato il valore del condensatore; per ridurre 
+l’ampiezza del picco iniziale si può aggiungere un resistore addizionale realizzando un fil-
+tro R-C. Questa soluzione comporta un peggioramento del rendimento dell’alimentatore 
+ed è inoltre utilizzabile solo per valori della corrente di carico limitati in quanto la dissipa-
+zione di potenza della resistenza tende ad essere troppo elevata.
+Per ottenere bassi valori di ondulazione residua il valore del condensatore dovrebbe 
+essere molto elevato; ciò comporta però la generazione di picchi di corrente iniziale di 
+maggiore durata e di conseguenza i diodi dovranno essere caratterizzati da un valore di 
+corrente di picco non ripetitiva IFSM elevato. Per non essere costretti ad impiegare diodi 
+troppo costosi si accetta un valore di ondulazione residua più elevato e si lascia allo stadio 
+stabilizzatore dell’alimentatore il compito di ridurlo oppure si utilizza un filtro R-C.
+Per limitare l’ampiezza di questo picco si può utilizzare il filtro induttivo che però 
+richiede un’induttanza di valore elevata che può essere otten
