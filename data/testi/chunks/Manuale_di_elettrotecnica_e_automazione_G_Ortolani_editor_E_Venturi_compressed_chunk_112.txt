@@ -1,0 +1,1455 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 112/116 ===
+Chars: 44,356 | Offset: 4,911,334
+
+uta utilizzando induttori 
+avvolti su un nucleo ferromagnetico (bobina di arresto). Questi componenti sono pesanti, 
+ID
+Uc
+Uac
+Us
+C
+Uc
+ID
+t
+t
+IFS = Corrente di picco non ripetitiva
+A vuoto:
+IFS
+USmax
+rd
+Rds
++
+-------------------
+=
+IFS
+IFS del diodo
+
+
+[PAG 2171]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-153
+ingombranti e costosi. Nel filtro induttivo la corrente circola con continuità senza picchi 
+di corrente, la resistenza serie dell’induttanza causa una caduta di tensione che riduce il 
+valore della tensione di uscita sul carico rispetto a quella in uscita del raddrizzatore, ridu-
+cendo il rendimento dell’alimentatore.
+Il picco di corrente sovraccarica anche i diodi raddrizzatori, l’interruttore di rete posto 
+sul primario del trasformatore e il fusibile di protezione (quando è presente); se 
+quest'ultimo è del tipo rapido, si può interrompere come conseguenza della sola accen-
+sione dell’alimentatore. Il rimedio più sicuro, volendo mantenere massimo il rendimento 
+dell’alimentatore e non utilizzare bobine di arresto, è quello di sovradimensionare i vari 
+componenti e inserire un fusibile ritardato.
+I condensatori utilizzati come filtri di livellamento sono, al di sotto dei 400 V, sempre 
+del tipo elettrolitico. Il dimensionamento degli elementi del filtro di livellamento viene 
+effettuato utilizzando le formule elencate nella Fig. XX.4.14, imponendo il valore di ondu-
+lazione residua desiderato.
+In molti casi il dimensionamento del condensatore viene effettuato con una formula 
+empirica che moltiplica la corrente di uscita massima Iomax per un coefficiente:
+C = 2000  Iomax
+Il condensatore comunque non dovrebbe mai essere inferiore ai 1000 F.
+.
+Fig. XX.4.13   Forme d’onda di uscita del filtro di livellamento quando fornisce corrente 
+al carico.
+D4
+D1
+D2
+D3
+Us
+Uac
+RL
+Io
+Uo
+C1
+Upp
+Uo
+Uomax
+T
+T
+4
+t
+t
+ID
+IFS
+IFR
+t
+T = Periodo della tensione applicata al primario del trasformatore
+(alla frequenza di rete f = 50 Hz T = 20 ms)
+IFS = Corrente di picco non ripetitiva
+IFR = Corrente di picco ripetitiva
+Valore medio
+Resistenza di uscita
+Impedenza di uscita
+Corrente massima nei diodi
+Ripple
+r
+2900
+C
+RL
+
+---------------
+=
+IDmax
+Usmax
+
+t
+C
+
+RL
+----------
+
+
+=
+Ro
+1
+4
+f
+C
+
+
+------------------
+=
+Um
+Uomax
+Io
+4
+f
+C
+
+
+------------------
+–
+=
+Zo
+Xc
+1
+2
+
+f
+C
+
+
+
+--------------------------
+=
+=
+
+[PAG 2172]
+XX-154
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Fig. XX.4.14  Schema per il dimensionamento dei filtri di livellamento.
+
+[PAG 2173]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-155
+Stabilizzatore di tensione
+La stabilizzazione della tensione di rete viene ottenuta regolando la potenza trasferita 
+dall’alimentatore al carico in modo che in uscita la tensione rimanga costante per una 
+certa variazione - prestabilita - della corrente di uscita.
+Il regolatore di tensione assolve al suo compito assorbendo le variazioni di tensione 
+dovute alle variazioni delle condizioni di carico (regolazione di carico), alle fluttuazioni 
+della tensione di ingresso (regolazione di linea) e alle variazioni della temperatura (Tab. 
+XX.4.3).
+Tab. XX.4.3  Variazione della tensione di uscita in funzione delle variazioni 
+della tensione di ingresso, del carico e della temperatura
+La potenza assorbita dal regolatore è però una potenza dissipata non utile per cui più 
+basso è il suo valore più efficiente è la regolazione. 
+In qualche applicazione si desidera che sia la corrente di uscita costante e non la ten-
+sione, i circuiti che realizzano questa funzione sono detti regolatori a corrente costante e 
+sono ottenuti da quelli a tensione costante realizzando opportuni schemi di collegamento 
+(Fig. XX.4.15).
+Fig. XX.4.15  Regolatore di corrente.
+Gli alimentatori possono generare sia tensioni di uscite singole, positive o negative, 
+che duali di eguale o diverso valore. La regolazione della tensione di uscita si può ottenere 
+con due schemi di collegamento, uno serie e uno parallelo.
+Regolatori di tipo parallelo
+Quando l’elemento di regolazione è connesso in parallelo all’uscita, questi effettua la 
+regolazione assorbendo più o meno corrente cercando di opporsi alle variazioni di cor-
+rente avvenute nel circuito di carico o alle variazioni della tensione di ingresso.
+La Fig. XX.4.16 mostra un alimentatore stabilizzato che utilizza un diodo Zener come 
+elemento regolatore posto in parallelo al carico in uscita. L’elemento di regolazione deve 
+Uo = SU  Ui  Ro Io ST  T
+Fattore di stabilizzazione
+SU = Uo  Ui
+con T = cost e Io = cost
+Resistenza interna
+Ro = Uo  Io
+con T = cost e Ui = cost
+Coefficiente di temperatura
+ST = Uo  T
+con Ui = cost e Io = cost
+U1
+78XX
+Ui
+Uo
+Io
+R1
+Iout
+RL
+GN
+D
+1
+3
+2
+C1
+220nF
+Iout
+Uo
+R1
+------
+Io
++
+=
+Ui
+
+[PAG 2174]
+XX-156
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+essere progettato in modo tale da poter sopportare nel caso di funzionamento a vuoto, cioè 
+senza carico l’intera corrente di uscita.
+Fig. XX.4.16  Alimentatore stabilizzato con elemento di regolazione parallelo.
+Il diodo Zener deve essere mantenuto nella regione di breakdown facendo in modo che 
+la corrente che lo attraversa sia compresa fra il valore minimo (Izmin) e il valore massimo 
+(Iomax) mediante un opportuno dimensionamento della resistenza di limitazione R1.
+Nella Tab. XX.4.4 viene proposto lo schema di dimensionamento del regolatore paral-
+lelo realizzato con diodo Zener.
+La tensione di ingresso deve essere calcolata in modo tale da far sì che l’ondulazione 
+residua non porti la tensione di uscita dell’alimentatore al di sotto del valore desiderato. 
+La potenza del trasformatore deve essere aumentata di un coefficiente di sicurezza per 
+evitare di impiegarlo ai valori limite e, quindi, possa surriscaldarsi.
+Regolatori di tipo serie
+Gli alimentatori di tipo parallelo presentano l’inconveniente di poter erogare in uscita 
+solo bassi valori di corrente e quindi possono controllare solo escursioni del carico limi-
+tate; i regolatori serie non presentano questa limitazione.
+Con l’elemento di regolazione connesso in serie, la regolazione viene effettuata per 
+mezzo di opportune variazioni della caduta di tensione ai suoi capi.
+Il circuito di stabilizzazione misura il valore della tensione di uscita, lo confronta con 
+una tensione di riferimento costante e utilizza il segnale errore per modificare le caratteri-
+stiche di conduzione, e quindi la caduta di tensione ai capi dell’elemento di regolazione, 
+in modo tale da annullare la differenza fra la tensione di uscita e quella di riferimento.
+Questo tipo di stabilizzazione richiede che la tensione di ingresso sia sempre mag-
+giore della tensione di uscita.
+Nella Fig. XX.4.17 è mostrato lo schema tipico di un alimentatore stabilizzato lineare. 
+Lo schema a blocchi mostra anche una serie di blocchi di controllo che servono per 
+migliorare le prestazioni e l’integrità dello stabilizzatore in presenza di forti variazioni del 
+carico applicato in uscita, questi blocchi verranno discussi dopo la trattazione generale.
+Il regolatore di tensione confronta una porzione della tensione di uscita prelevata per 
+mezzo del partitore resistivo R2 - R3 con la tensione di riferimento. 
+RL
+Io
+I1
+T1
+D1
+C1
+C2
+Uo
+Ui
+Us
+Uac
+R1
+Iz
+Izmin
+Izmax
+Uz
+I
+U
+Izmax
+UDzmax  del diodo Zener
+Uz
+---------------------------------------------------
+
+PDzmax
+Uz
+Iomax
+Izmin
++
+
+
+
+
+
+[PAG 2175]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-157
+Tab. XX.4.4   Dimensionamento di un regolatore parallelo a diodo Zener
+Il segnale di uscita, in presenza di un segnale di errore (di una variazione, cioè del 
+segnale di uscita) aumenta o diminuisce la corrente di polarizzazione dei transistors di 
+regolazione Q1 e Q2. 
+Si ha quindi una variazione della caduta di potenziale fra collettore è emettitore del 
+transistor in serie con l’uscita, Q2, tale da provocare una diminuzione o un aumento della 
+tensione di uscita che si opponga alla variazione che aveva originato il segnale di errore.
+Il blocco limitazione di corrente campiona il valore della corrente di uscita sulla resi-
+stenza R1 e blocca, interdicendo i transistors Q1 e Q2, l’erogazione di potenza dall’alimen-
+tatore quando la corrente richiesta dal carico supera un valore massimo. Il modo con cui la 
+limitazione di corrente interviene viene di norma descritta attraverso la curva tensione-
+corrente di uscita. Vengono in genere scelte due soluzioni.
+
+[PAG 2176]
+XX-158
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Fig. XX.4.17  Schema a blocchi di un regolatore di tensione.
+Una soluzione è detta a corrente costante (Fig. 
+XX.4.18a), in presenza di un corto circuito in uscita 
+(resistenza di carico nulla) è quindi, con tensione di 
+uscita nulla fa circolare una corrente costante pari a 
+quella di intervento del circuito di limitazione (carat-
+teristica rettangolare). Il valore da assegnare alla cor-
+rente di limitazione deve sempre essere maggiore 
+della corrente massima di utilizzo specificata per 
+l’alimentatore che, essendo una specifica di progetto, 
+deve essere comunque erogabile.
+La seconda soluzione è detta di fold-back. Presenta 
+una caratteristica trapezoidale (Fig. XX.4.18b). Come 
+nel caso precedente la limitazione di corrente inter-
+viene ad un valore di corrente di uscita superiore a 
+quello massimo erogabile, ma in presenza di corto 
+circuito la corrente diminuisce ad un valore inferiore 
+rispetto a quella massima di funzionamento riducendo 
+quindi le perdite di potenza nel transistor di regola-
+zione.
+Fig. XX.4.18   Curve di limitazione di corrente: 
+a) caratteristica rettangolare; b) caratteristica trapezoidale.
+La resistenza R1 di shunt deve essere di basso valore per non alterare il rendimento 
+dell’alimentatore, che è dato dal rapporto fra la potenza disponibile in uscita e quella for-
+nita in ingresso. 
+Il circuito di protezione termica e il circuito di limitazione di potenza controllano, in 
+modo analogo al circuito di limitazione di corrente che non vengano raggiunti valori di 
+temperatura tali da danneggiare i componenti del circuito.
+Il regolatore serie proposto nella Fig. XX.4.19 effettua la regolazione della tensione di 
+uscita modificando la conduzione del transistor (connesso ad inseguitore - emitter fol-
+Limitazione
+di potenza
+Limitazione
+di corrente
+Rilevatore
+di errore
+Protezione
+termica
+Tensione di
+riferimento
+Regolatore
+Campionamento del
+segnale di uscita
+Uo
+Ui
+Q1
+Q2
+R1
+R2
+R3
+a)
+b)
+Uo
+U
+Io
+I
+Uo
+U
+Ic
+Im I
+Io
+
+[PAG 2177]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-159
+lower) in funzione delle variazioni della tensione Ube dovute alle variazioni della tensione 
+di uscita; il diodo Zener fornisce la tensione di riferimento. Il segnale errore che modula la 
+conduzione è quindi pari alla variazione del segnale di uscita. La variazione della tensione 
+di ingresso provoca una variazione della corrente di ingresso Ii che viene assorbita dal 
+ramo di regolazione parallelo R1- diodo Zener.
+Fig. XX.4.19  Regolatore di tensione serie con transistor bipolare.
+La resistenza R1 serve per polarizzare correttamente il diodo Zener nella zona di bre-
+akdown. Il condensatore C2 riduce l’ondulazione residua del segnale di ingresso applicato 
+al diodo Zener, il suo valore è di solito 1/10 del valore del condensatore di livellamento.
+Nella Tab. XX.4.5 viene proposto lo schema di dimensionamento dell’alimentatore 
+presentato nella Fig. XX.4.19.
+Se l’alimentatore serie deve erogare una corrente elevata il transistor di regolazione 
+può essere sostituito da due transistor in connessione Darlington (Fig. XX.4.20a) Il transi-
+stor di regolazione è sottoposto ad una forte dissipazione di potenza che difficilmente può 
+essere sopportata da un solo transistor. In Fig. XX.4.20b viene proposta una soluzione tec-
+nica che prevede la connessione in parallelo di più transistor che si suddividono la cor-
+rente circolante. Le resistenze R1 e R2 equalizzano le correnti nei due rami bilanciando le 
+eventuali differenze di tensione base emettitore Ube dei due transistor. Se un transistor 
+presenta una Ube maggiore tende a condurre una corrente maggiore, provocando un 
+aumento della caduta di tensione sulla resistenza di equalizzazione, causando una diminu-
+zione della Ube stessa.
+Nell’alimentatore serie proposto nella Fig. XX.4.21 il nodo di confronto fra tensione 
+di riferimento e tensione di uscita viene effettuato dal transistor Q2 che grazie alle sue 
+caratteristiche di amplificazione permette di ottenere in uscita una tensione variabile da un 
+valore minimo pari alla tensione di Zener fino ad un valore massimo regolabile con il 
+potenziometro R4.
+Il preregolatore è costituito da un generatore di corrente costante che assorbe le varia-
+zioni della tensione di ingresso, anche quelle dovute alla tensione di ripple.
+Il circuito è un generatore di corrente continua in quanto la corrente di collettore in 
+uscita - se la corrente di base è trascurabile (hFEQ1  > 50) - è uguale a quello della corrente 
+di emettitore è data da:
+Dal punto di vista della stabilizzazione termica il coefficiente di temperatura della 
+resistenze R3, R4, R5 deve essere identico e quello del diodo Zener deve essere positivo e 
+Uac
+Us
+Ui
+Ii
+Io
+Uce
+Iz
+Ib
+Ucb
+Ube
+Uo
+R1
+C1
+C2
+I1
+C3
+RL
+D5
+Q1
+D1
+D2
+D4
+D3
+T1
+IC
+Uz
+Ube
+–
+R2
+---------------------
+=
+
+[PAG 2178]
+XX-160
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+dello stesso valore (circa 2,5 mV/°C) di quello negativo della giunzione base-emettitore 
+del transistor Q2.
+Tab. XX.4.5   Dimensionamento di un regolatore serie
+Fig. XX.4.20  Regolatore di tensione serie per correnti elevate: a) connessione Darlin-
+gton; b) connessione con transistor in parallelo.
+Io
+Uo
+R1
+C1
+RL
+Q2
+C2
+Q1
+D1
+0,33 
+0,33 
+R1
+a)
+b)
+Q1
+Q2
+R3
+D1
+C1
+R2
+C2
+Uo
+RL
+Io
+Q3
+
+[PAG 2179]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-161
+Fig. XX.4.21  Regolatore di tensione serie con nodo di confronto realizzato con transistor 
+bipolare.
+A queste configurazioni fondamentali occorrerebbe ora aggiungere tutti i circuiti di 
+protezione già descritti precedentemente, ma non lo si ritiene utile in quando le moderne 
+tecnologie hanno reso obsoleto questo metodo di approccio al progetto degli alimentatori.
+L’alimentatore, così realizzato, avrà sicuramente un costo molto inferiore rispetto ad 
+una qualsiasi realizzazione a componenti discreti è una maggiore affidabilità. Lo stesso 
+schema a blocchi proposto nella Fig. XX.4.17 non è altro che lo schema interno di un rego-
+latore a tre terminali a tensione fissa. I circuiti di controllo che permettono di modificare 
+la conduzione del regolatore serie e di proteggere i vari elementi circuitali sono realizzati 
+ormai da due decenni con microcircuiti che hanno già risolto in modo ottimale tutte le 
+problematiche connesse al progetto degli alimentatori stabilizzati lineari. Il progettista, in 
+pratica, deve solo determinare le caratteristiche di ingresso, di uscita, di regolazione e di 
+ondulazione dell’alimentatore che desidera realizzare è quindi scegliere il microcircuito 
+più adatto.
+4.2.2  Stabilizzatori integrati
+I microcircuiti utilizzati per realizzare alimentatori stabilizzati lineari si possono sud-
+dividere in:
+–  regolatori positivi fissi a tre terminali;
+–  regolatori negativi fissi a tre terminali;
+–  regolatori positivi fissi regolabili a tre e quattro terminali;
+–  regolatori negativi fissi regolabili a tre e quattro terminali;
+–  regolatori multiterminali variabili di precisione;
+–  regolatori a commutazione (switching).
+I principali parametri che si devono definire per poter effettuare la scelta del tipo di 
+regolatore da utilizzare per realizzare un alimentatore sono:
+–  il campo di variazione della tensione di ingresso, cioè il campo di tensioni nel quale la 
+tensione di uscita deve mantenersi costante;
+–  il campo di variazione della tensione di uscita (se la tensione di uscita è regolabile) il 
+valore minimo e massimo;
+–  la tensione differenziale fra ingresso e uscita in cui il regolatore opera correttamente 
+detta tensione di dropout (~2 V);
+–  la variazione della tensione di uscita (line regulation) ammessa per una variazione della 
+tensione di ingresso, espressa in valore assoluto (mV) o in percentuale sul valore nominale;
+–  la variazione della tensione di uscita (load regulation) per una variazione della ten-
+sione di carico;
+–  la massima corrente di carico ammessa;
+R2
+D3
+Q1
+Q2
+Q3
+C1
+Io
+D4
+D2
+D1
+T1
+C2
+C3
+R5
+R4
+R3
+R6
+R1
+D3
+D4
+F
+N
+220 ac
+Uo
+GND
+
+[PAG 2180]
+XX-162
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+–  la minima corrente di carico alla quale il regolatore funziona correttamente;
+–  il valore della corrente di limitazione e il tipo di limitazione desiderata (rettangolare, 
+fold-back);
+–  l’ondulazione residua (ripple), è la componente alternata che è sovrapposta al segnale 
+in c.c. di uscita. Viene espressa come variazione percentuale rispetto alla tensione di uscita.
+Regolatori con tensione di uscita fissa e/o regolabile
+La Fig. XX.4.17 utilizzata per descrivere un generico alimentatore è anche lo schema a 
+blocchi di un alimentatore monolitico a tre terminali.
+Tutto lo schema, compreso il transistor di regolazione, si trova racchiuso in un unico 
+contenitore per cui al progettista non resta altro che aggiungere un paio di condensatori di 
+by-pass (Fig. XX.4.22).
+In ingresso il condensatore è richiesto solo se il regolatore viene posizionato sulla 
+scheda di montaggio lontano dal condensatore di filtro (maggiore di 5 cm). In uscita di 
+solito non sono richiesti condensatori di by-pass ma la loro presenta migliora il comporta-
+mento in transitorio del regolatore. Di norma si inseriscono in parallelo all’uscita del 
+regolatore due condensatori: uno di tipo elettrolitico e di capacità compresa fra i 10 ÷ 
+47µF e uno di tipo non elettrolitico di circa 0,1 µF.
+Fig. XX.4.22  Connessione con un punto di massa comune di un regolatore a tre terminali.
+Nella Fig. XX.4.23 sono mostrate le principali configurazioni con le relative formule 
+di dimensionamento.
+Nel circuito duale, quando i due regolatori vengono alimentati, raggiungono il valore 
+nominale di tensione in tempi differenti, in questo caso il più rapido potrebbe danneggiare 
+l’altro; l’inconveniente viene superato ponendo diodi polarizzati inversamente fra i termi-
+nali di uscita.
+Nel circuito duale, quando i due regolatori vengono alimentati, raggiungono il valore 
+nominale di tensione in tempi differenti, in questo caso il più rapido potrebbe danneggiare 
+l’altro; l’inconveniente viene superato ponendo diodi polarizzati inversamente fra i termi-
+nali di uscita.
+Affinché i regolatori funzionino correttamente è necessario che la tensione applicata dal 
+circuito alimentatore all’ingresso dello stabilizzatore integrato sia maggiore della tensione 
+di dropout e della tensione di uscita e non deve superare il valore massimo consentito.
+Le tensioni di uscita disponibili con questi dispositivi sono: 5, 6, 8, 10, 12, 15, 18, 24 Vdc.
+Le correnti di uscita dipendono dal tipo di contenitore e dal metodo scelto per lo smal-
+timento del calore sviluppato dal regolatore (conduzione, irraggiamento o convenzione).
+I regolatori utilizzano, in genere, i seguenti tipi di contenitori:
+–  contenitore plastico JEDEC TO-220, che erogano correnti da 100 mA fino ad 1,5 A
+–  contenitore metallico JEDEC TO-3, che erogano correnti da 3 ÷ 10 A
+Uout
+Uo
+Ui
+Uin
+Cin
+Cout
+Iout
+IQ
+1 Ui
+3
+3
+Unico punto
+2
+2
+1
+1
+GN
+D
+3 Uo
+di massa
+2 GND
+
+[PAG 2181]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-163
+Fig. XX.4.23  Regolatori a tre terminali a tensione fissa e variabile.
+
+[PAG 2182]
+XX-164
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+La sigla commerciale di identificazione dei regolatori fissi più` diffusa ha la seguente 
+struttura:
+–  due cifre: 
+78 regolatore a tensione di uscita positiva
+79 regolatore a tensione di uscita negativa
+–  una o due lettere:
+L corrente di uscita massima 100 mA
+M corrente di uscita massima 500 mA
+Nessuna lettera corrente di uscita massima 1.5 A
+H corrente di uscita massima 5 A
+P corrente di uscita massima 10 A
+HG corrente di uscita massima 5 A, regolabile
+–  due cifre, che indicano la tensione di uscita generata dal regolatore. Le tensioni di 
+uscita disponibili con questi dispositivi sono: 
+05, 06, 08, 10, 12, 15, 18, 24 Vdc
+Esempi
+7805: regolatore di tensione positivo con tensione di uscita di +5 V e corrente di uscita 
+massima di 1,5A se il contenitore è del tipo JEDEC TO-3
+79L12: regolatore di tensione negativo con tensione di uscita di 12 V e corrente di 
+uscita massima di 0,1 A
+4.2.3  Regolatori a commutazione
+I regolatori a commutazione (Fig. XX.4.24) funzionano in base al seguente principio: 
+un generatore di impulsi provoca periodicamente la chiusura e l’apertura di un interruttore 
+S e consente di trasferire l’energia elettrica dal filtro di ingresso verso il filtro di uscita che 
+la immagazzina. L’energia immagazzinata viene poi erogata al carico in uscita. La quan-
+tità di energia trasferita dipende dalla durata e dalla frequenza degli impulsi applicati 
+sull’interruttore S.
+Fig. XX.4.24  Schema a blocchi di un alimentatore a commutazione.
+Filtro di
+di errore
+riferimento
+impulsi PWM
+uscita
+Generatore di
+Dal
+raddrizzatore
+Filtro di
+ingresso
+Ii
+Ui
+Io
+Uo
+Amplificatore
+Tensione di
+S
+
+[PAG 2183]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-165
+Le frequenze di commutazione si trovano di norma al di là della soglia udibile per evi-
+tare fastidiosi ronzii che disturberebbero gli utenti delle apparecchiature. Sono normali 
+frequenze di commutazione comprese fra i 20 e i 50 kHz.
+Il generatore di impulsi modulati in durata viene nella letteratura tecnica identificato 
+dall’acronimo PWM (Pulse Width Modulator). Il filtro di uscita è in genere un filtro L-C. 
+Questi alimentatori possono generare sia tensioni inferiori a quella di ingresso (Step-
+Down switching regulator: regolatori a riduzione) che tensioni superiori (Step-Up 
+Switching Regulator: regolatori ad incremento). Inoltre la tensione di uscita può essere 
+positiva o negativa.
+Nella Fig. XX.4.25 sono proposti tre modelli che chiariscono il metodo di funziona-
+mento di un regolatore a commutazione.
+Fig. XX.4.25   Modelli teorici delle principali configurazioni degli alimentatori a commu-
+tazione: a) step-down switching regulator; b) step-up switching regulator; c) inverting 
+switching regulator.
+Tutti e tre i tipi di funzionamento si basano sull’accumulo di energia da parte 
+dell’induttanza durante la fase in cui l’interruttore è chiuso e sull’utilizzo di questa ener-
+gia liberata dall’induttanza quando l’interruttore si apre.
+Il primo modello descrive un alimentatore a commutazione con tensione di uscita 
+avente la stessa polarità di quella di ingresso ma di valore inferiore (Step-Down switching 
+regulator). L’interruttore è costituito da transistor a commutazione veloce comandati da 
+un oscillatore il cui periodo di oscillazione è controllato da un comparatore che fissa la 
+tensione di soglia superiore alla quale l’interruttore si deve aprire e la tensione di soglia 
+inferiore alla quale lo stesso si deve chiudere.
+Si suppone che sia l’induttanza che il condensatore siano inizialmente scarichi.
+Quando l’interruttore viene chiuso, la tensione non regolata applicata in ingresso pola-
+rizza inversamente il diodo D: la corrente non assume immediatamente il valore massimo, 
+ma, a causa della presenza dell’induttanza aumenta secondo una legge di variazione espo-
+nenziale caricando il condensatore C. La tensione di uscita aumenta seguendo la legge di 
+carica del condensatore. Quando questa tensione raggiunge il valore di soglia stabilito, 
+l’interruttore si apre. Il flusso di corrente fornito in ingresso si blocca, e l’induttanza resti-
+tuisce l’energia accumulata generando una corrente che ora scorre attraverso il diodo D, il 
+Ui
+Ui
+Ui
+Ui
+Ui
+RL
+Uo
+Uo
+Uo
+RL
+RL
+RL
+RL
+RL
+Uo
+IL
+Io
+IL
+IL
+IL
+IL
+IL
+IC
+IC
+IC
+Io
+Io
+Io
+ID
+ID
+ID
+IL
+Ui
+C
+C
+C
+C
+C
+C
+L
+L
+L
+L
+L
+L
+D
+D
+D
+D
+D
+D
+S
+S
+S
+S
+S
+S
+a)
+b)
+c)
+IC
+
+[PAG 2184]
+XX-166
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+condensatore continua a caricarsi e la corrente continua a fluire nel carico. Quando la cor-
+rente fornita dall’induttanza diventa inferiore a quella richiesta dal carico, è il condensa-
+tore a fornire la corrente necessaria al carico scaricandosi. La tensione di uscita perciò si 
+riduce e quando raggiunge il valore di soglia inferiore il comparatore fa richiudere l’inter-
+ruttore S ricominciando il ciclo. 
+Il secondo modello descrive un alimentatore a commutazione con tensione di uscita 
+avente la stessa polarità di quella di ingresso ma di valore superiore (Step-Up switching 
+regulator). 
+In questo tipo di regolatore a commutazione quando l’interruttore S è chiuso la corrente 
+non circola nel carico ma solo nell’induttanza L. Aprendo l’interruttore S, attraverso il 
+diodo D viene indotta una corrente che carica il condensatore C. Quando la tensione in 
+uscita ha raggiunto il valore voluto, l’interruttore S viene chiuso, l’induttanza si ricarica, 
+mentre la corrente al carico viene fornita dal condensatore che si scarica; quando la tensione 
+raggiunge un valore di soglia prefissato l’interruttore S si riapre e il ciclo ricomincia.
+Il terzo modello descrive un alimentatore a commutazione con tensione di uscita con 
+polarità invertita rispetto a quella di ingresso (Inverting switching regulator). 
+L’energia elettromagnetica viene immagazzinata nell’induttanza L quando l’interrut-
+tore S viene chiuso. Quando S viene aperto, l’energia accumulata viene restituita sotto 
+forma di corrente che aumenta con legge esponenziale. Il condensatore C viene caricato 
+ad una tensione negativa attraverso il diodo D.
+Quando la tensione sul condensatore raggiunge un valore di soglia impostato, l’inter-
+ruttore viene richiuso. La corrente al carico è fornita dal condensatore, che si scarica. 
+Quando la tensione di uscita raggiunge un valore di riferimento inferiore, l’interruttore 
+viene riaperto e il ciclo si ripete.
+Le prestazioni di un regolatore a commutazione sono strettamente correlate con le 
+proprietà dell’induttanza L. Infatti l’energia accumulata nell’induttanza si conserva nella 
+bobina, esattamente come avviene per il condensatore in funzione della bontà dell’indut-
+tore utilizzato, cioè del grado con cui l’induttore stesso approssima l’induttanza ideale.
+La realizzazione pratica di un alimentatore a commutazione richiede che le piste del 
+circuito stampato o i cavi di connessioni, se il circuito realizzato con un cablaggio a fili, 
+siano corti e che si utilizzi un solo punto di massa.
+Il condensatore di uscita serve per ridurre l’ondulazione residua (ripple) dell’alimen-
+tatore a livelli accettabili deve essere del tipo al tantalio in quanto fa un migliore compor-
+tamento rispetto a quelli in alluminio alle alte frequenze.
+Il diodo rettificatore e il transistor utilizzato come interruttore devono essere del tipo 
+ad alta velocità di commutazione. Ciò per ridurre la dissipazione di potenza durante le 
+commutazioni è incrementare l’efficienza del regolatore.
+Gli alimentatori a commutazione possono alimentare carichi che richiedono correnti 
+elevate (40 ÷ 50 A) e potenze dell’ordine del migliaio di W.
+Esistono molti circuiti integrati progettati da varie case costruttrici che permettono di 
+realizzare in modo semplice è economico regolatori a commutazione. Alcuni di questi 
+sono stati costruiti per realizzare solo alcuni tipi di regolatori, altri possono implementare 
+tutti e tre i tipi di regolatori descritti.
+Fra i dispositivi commerciali si possono citare:
+–  µA78S40 (Farchild); questo microcircuito può realizzare tutti e tre i tipi di alimenta-
+tori a commutazione;
+–  MAX 635 (MAXIM) Inverting Switching Regulator fisso;
+–  MAX 638 (MAXIM) Switching Regulator Step-Down;
+–  MAX 641 (MAXIM) Switching Regulator Step-Up fisso Ui = +1,2V Uo =+5V;
+–  MC 3420 (MOTOROLA) Switchmode Regulator Control Circuit.
+
+[PAG 2185]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-167
+Nella Fig. XX.4.26 viene proposto lo schema di un alimentatore a commutazione rea-
+lizzato utilizzando il microcircuito 78S40 nella configurazione Step-Down.
+Fig. XX.4.26  Alimentatore a commutazione in configurazione step-down.
+4.2.4  Confronto fra alimentatori convenzionali e a commutazione
+Negli alimentatori convenzionali, il transistor di controllo è posto in serie al carico e 
+viene polarizzato nella zona lineare della sua caratteristica.
+La regolazione della tensione di uscita è effettuata modulando la conducibilità del 
+transistor in funzione delle variazioni del carico controllato. 
+Il transistor si comporta, cioè, come una resistenza variabile. La dissipazione di 
+potenza richiesta è notevole e aumenta proporzionalmente all’aumentare del carico.
+Il transistor di controllo nell’alimentatore a commutazione (l’interruttore S nei 
+modelli teorici) invece opera passando dallo stato di interdizione a quello di saturazione; 
+cioè, o conduce pienamente o non conduce affatto. 
+La dissipazione di potenza risulta quindi alquanto limitata.
+Ciò permette di utilizzare trasformatori di potenza inferiore e di ingombro ridotto e di 
+impiegare dissipatori di potenza per il transistor di controllo più piccoli.
+Una misura del maggior rendimento di un regolatore a commutazione rispetto ad un 
+modello convenzionale è dato dal rapporto fra potenza ottenuta in uscita e potenza fornita 
+in ingresso, cioè dall’efficienza. Questo parametro, in genere espresso come valore per-
+centuale, è di circa il 50% per gli alimentatori convenzionali, mentre per quelli a commu-
+tazione è pari o maggiore al 75% ÷ 90%.
+I regolatori a commutazione presentano un ondulazione residua (ripple) in uscita 
+molto maggiore rispetto a quelli convenzionali (centinaia di mV). Inoltre l’elevata velo-
+cità di commutazione genera disturbi in radiofrequenza che devono essere soppressi con 
+opportune griglie di schermatura. Questi regolatori vengono utilizzati in apparecchiature 
+in cui il peso e le dimensioni ridotte (strumenti portatili) e l’efficienza dell’alimentatore 
+(alimentazione a batteria) sono di fondamentale importanza.
+4.2.5  Alimentatore con regolatore a tre terminali
+Il circuito mostrato nella Tav. XX.4.1 utilizza un microcircuito monolitico per generare 
+una tensione di uscita costante positiva.
+Le caratteristiche elettriche dell’alimentatore. sono riassunte nella Tab. XX.4.6
+insieme alla lista dei componenti.
+Modificando le caratteristiche del trasformatore lo stesso circuito può essere utilizzato 
+anche con regolatori che hanno valori di tensione e di corrente di uscita differente.
+La tensione di ingresso deve essere tale da:
+R3
+GND
+STEP DOWN VOLTAGE REGULATOR
+Tensione
+stabilizzata
+Tensione non
+stabilizzata
+R2
+39k
+10k
+ +5 V
+C2
+170 F
+L1
+U1
+UA78S40
+C1
+27 nF
+330 H
+R1
+0,33 
+ +25 V
+14
+12
+13
+8
+9
+10
+6
+7
+5
+11
+IPK
+CT
+VCC
+VREF
+CMP-NI
+CMP-I
+AO-NI
+AO-I
+AO-VCC
+GND
+DR-C
+SW-E
+SW-C
+D-K
+D-A
+AO-OUT
+15
+3
+16
+1
+2
+4
+GND
+
+[PAG 2186]
+XX-168
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tab. XX.4.6  Caratteristiche elettriche e lista dei componenti dell’alimentatore a tensione 
+di uscita singola realizzato con un regolatore a tre terminali
+ove: UIN(max) è la tensione di ingresso massima del dispositivo (si legge sul data sheet del 
+regolatore); UIN è la tensione di ingresso del regolatore sotto carico; UO(max) è la massima 
+tensione di dropout (si legge sul data sheet del regolatore per il 7805 vale 2V con una cor-
+rente di uscita di 1 A); UL è la massima variazione della tensione di rete (l’ente di distri-
+buzione garantisce la tensione di rete con una variazione del 10% del valore nominale); 
+UR(pk) è la tensione di ripple picco-picco (data dalle specifiche di progetto).
+Lo schema presentato nella Tav. XX.4.1 è uno schema di principio e deve essere modi-
+ficato per poter realizzare i disegni di fabbricazione del circuito stampato eliminando i 
+componenti che non devono essere montati sul circuito stampato. 
+Il disegno del circuito modificato con l’aggiunta di due connettori e con l’eliminazione 
+di tutta la parte di circuito a monte del raddrizzatore a ponte è mostrato nella Tav. XX.4.2.
+Lo sbroglio del circuito di questo circuito è stato effettuato in modo da realizzare tutte 
+le connessioni su un solo lato della piastra (circuito stampato monofaccia) in questo modo 
+si possono ridurre i costi di produzione riducendo il numero di lavorazioni da effettuare 
+sulla piastra. Questa soluzione viene ricercata in genere per circuiti stampati ad uso civile 
+che vengono prodotti in grandi quantità.
+La documentazione per la realizzazione del circuito stampato si compone dei seguenti 
+disegni raccolti tutti nella Tav. XX.4.3:
+SPECIFICHE DI PROGETTO
+Tensione di ingresso 220 V ac 
+Tensione di uscita +5 V dc 
+Corrente massima di uscita 500 mA
+N.
+Sigla
+Descrizione
+Scheda a circuito stampato
+1
+C1
+Condensatore 4700 F 25 V elettrolitico
+1
+C2
+Condensatore 230 F 16 V elettrolitico
+1
+C3
+Condensatore 100 F 400 V POLIESTERE
+4
+D1  D4
+Diodo al silicio 1N402
+1
+J1
+Connettore a due poli a inserzione maschio
+2
+J2
+Connettore a due poli a vite
+1
+U1
+IC LIN A 7805 voltage regulator case TO-220
+1
+Dissipatore per TO-220
+Apparecchiatura
+1
+F1
+Fusibile 250 V ac 30 mA
+1
+S1
+Interruttore 2 vie 1 posizione a levetta
+1
+T1
+Trasformatore 230/12 V 15 VA
+1
+Portafusibile da pannello
+UIN max
+
+
+UIN
+UO max
+
+
+UL
+UR pk
+
+
++
++
+
+
+
+[PAG 2187]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-169
+Tav. XX.4.1  Alimentatore con regolatore a tre terminali: schema di principio.
+
+[PAG 2188]
+XX-170
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.4.2  Alimentatore con regolatore a tre terminali: schema elettrico.
+
+[PAG 2189]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-171
+Tav. XX.4.3  Alimentatore con regolatore a tre terminali: disegni di fabbricazione del cir-
+cuito stampato.
+
+[PAG 2190]
+XX-172
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+–  disegno illustrante la posizione dei vari componenti sulla scheda;
+–  disegno del master del lato saldature;
+–  disegno del piano di foratura;
+–  disegno della maschera per il solder resist;
+–  disegno per la maschera serigrafica da imprimere sulla scheda;
+4.2.6  Alimentatore con regolatore a 3 terminali con tensione regolabile
+Nella Tav. XX.4.4 viene mostrato un circuito stabilizzatore che utilizza un regolatore a 
+tre terminali con possibilità di regolazione esterna della tensione di uscita, il microcircuito 
+LM 317K (Fig. XX.4.27).
+Fig. XX.4.27  Alimentatore a tensione di uscita singola realizzato con il regolatore 
+LM317K   a tre terminali.
+La tensione di uscita Uo è data dalla seguente equazione:
+ove: Uo è la tensione di uscita; Uref è tipicamente di 1,25 V; If è la corrente di fuga del 
+microcircuito che deve essere inferiore a 100 µA. 
+Nel caso che si verifichi un corto circuito in ingresso i diodi D1 e D2 impediscono che 
+i condensatori C2 e C3 si scarichino attraverso il microcircuito.
+Nella Tab. XX.4.7 viene fornita la lista dei componenti e le caratteristiche elettriche 
+del circuito proposto nella tavola.
+La letteratura tecnica consiglia di realizzare l’alimentatore utilizzando un unico punto 
+di massa coincidente con il terminale comune del regolatore, ciò al fine di evitare la crea-
+zione di anelli di massa o ricircolazioni di corrente, inoltre la sezione del conduttore di 
+massa o della pista deve essere tale da non provocare apprezzabili cadute di tensione. Que-
+ste indicazioni vengono talvolta segnalate disegnando il circuito come nella Fig. XX.4.22
+Il circuito proposto nella tavola prevede che il microcircuito lineare LM317K sia mon-
+tato sulla scheda insieme ad un dissipatore per TO-3 commerciale da 6°C/W; questa scelta 
+di progetto gli permette di erogare una corrente di 2A a 25 V dissipando una potenza di 
+6W; i calcoli di dimensionamento sono mostrati nella Tab. XX.4.8.
+TO 220
+TO 3
+3
+2
+1
+1
+2
+3
+1
+3
+2
+CONTROLLO
+INGRESSO
+USCITA
+TO3
+TO 220
+1 2 3
+1
+2
+3
+Uo
+Ui
+Uref
+R1
+R2
+Uo
+Ui
+If
+A
+D
+J
+GND
+U1
+LM317k
+UO
+Uref 1
+R2
+R1
+-----
++
+
+
+
+
+If
+R2
+
++
+=
+
+[PAG 2191]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-173
+Tab. XX.4.7  Caratteristiche elettriche e lista dei componenti dell’alimentatore a tensione 
+di uscita singola realizzato con il regolatore LM317K a tre terminali
+Le formule utilizzate per il dimensionamento sono le seguenti:
+Sono state scritte utilizzando il modello elettro-termico (statico) mostrato nella Fig. 
+XX.4.28, che è valido per tutti i componenti elettronici.
+Se si calcola la dissipazione di potenza nelle condizioni più sfavorevoli (tensione di 
+uscita minima e corrente di uscita massima a tensione di ingresso costante), si verifica che 
+la potenza dissipata diventa elevata e la temperatura della giunzione assume valori eleva-
+tissimi. In pratica ciò non avviene perché all’aumentare della corrente assorbita il circuito 
+termico interno di protezione del microcircuito interviene annullando la tensione di uscita.
+Lo schema presentato nella Tav. XX.4.4 è uno schema di principio e deve essere modi-
+ficato per poter realizzare i disegni di fabbricazione del circuito stampato eliminando i 
+componenti che non devono essere montati sul circuito stampato. Il circuito quindi con il 
+dissipatore previsto è in grado di fornire per ciascun valore delle tensioni di uscita valori 
+massimi di corrente differenti che  diminuiscono al diminuire della tensione di uscita.
+Il disegno del circuito modificato con l’aggiunta di due connettori  e con l’eliminazione 
+di tutta la parte di circuito a monte del raddrizzatore a ponte di diodi è mostrato nella Tav. XX.4.5.
+SPECIFICHE DI PROGETTO
+Tensione di ingresso > 28 V dc 
+Tensione di uscita +1,5 +25 V dc 
+Corrente massima di uscita 2 A (a 25 V dc)
+N.
+Sigla
+Descrizione
+Scheda a circuito stampato
+1
+C1
+Condensatore 2200 F 35 V elettrolitico
+1
+C2
+Condensatore 10 F 35 V elettrolitico
+1
+C3
+Condensatore 100 F 35 V elettrolitico
+2
+D1  D2
+Diodo al silicio 1N402
+2
+J1  J2
+Connettore a due poli a vite100 V 3A
+1
+R1
+Resistenza 120 1/4 W
+1
+R2
+Trimmer 1 k 1/4 W
+1
+U1
+IC LIN  voltage regulator case TO-220
+1
+Dissipatore per TO-220
+Apparecchiatura
+1
+F1
+Fusibile 250 V ac 250 mA
+1
+S1
+Interruttore 2 vie 1 posizione a levetta
+1
+T1
+Trasformatore 230/12 + 12 V 60 VA
+1
+Portafusibile da pannello
+Rthjc
+Rthca
++
+Rthcd
+Rthda
++
+
+
+
+Tj
+Ta
+–
+PD
+----------------
+=
+
+[PAG 2192]
+XX-174
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tab. XX.4.8   Dimensionamento del dissipatore di calore per il regolatore LM317K a 
+tre terminali
+Fig. XX.4.28  Modello elettro-termico statico che mostra l’azione esercitata dal dissipa-
+tore di calore sul circuito termico di un dispositivo elettronico.
+Lo sbroglio di questo circuito è stato effettuato attribuendo alle piste una larghezza tale 
+da garantire un  funzionamento della scheda anche in presenza delle correnti di valore elevato. 
+SPECIFICHE DI PROGETTO
+Potenza dissipata PD = 6 W  Temperatura ambiente Ta = 40 °C
+Descrizione
+Grandezza
+Valore
+Unità di 
+misura
+Resistenza termica giunzione-ambiente
+Rthja
+45
+°C/W
+Resistenza termica giunzione-contenitore
+Rthjc
+5,5
+°C/W
+Resistenza termica contenitore-ambiente
+Rthca
+39,5
+°C/W
+Temperatura giunzione massima
+Tj(max)
+150
+°C
+Verifica:         Rthjc < Rthja(max) < Rthja
+Resistenza termica giunzione-ambiente
+Rthja(max)
+18,33
+°C/W
+Resistenza termica giunzione-contenitore
+Rthcd
+0,25
+°C/W
+Coefficiente A = Rthja(max)  Rthjc 
+A
+12,83
+°C/W
+Caratteristica del dissipatore di potenza
+Resistenza termica dissipatore-ambiente massima
+Rthda(max)
+18,76
+°C/W
+Scelta del dissipatore di potenza
+Resistenza termica dissipatore-ambiente massima
+Rthda
+6,00
+°C/W
+Verifica della temperatura della giunzione
+Temperatura della giunzione
+Tj
+105,38
+°C
+PD
+Tj
+Tc
+Ta
+Td
+Rthjc
+Rthja
+Rthcd
+Rthda
+ Rthjc
+Alto valore
+ di resistenza
+termica
+Dissipatore
+ di resistenza
+termica
+di calore
+Basso valore
+Tj  = temperatura della giunzione 
+Tc  = temperatura del contenitore
+Td  = temperatura del dissipatore di calore
+Ta  = temperatura ambiente
+
+[PAG 2193]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-175
+La documentazione per la realizzazione del circuito stampato si compone dei seguenti 
+disegni:
+–  disegno illustrante la posizione dei vari componenti sulla scheda (Tav. XX.4.5)
+–  disegno del piano di foratura (Tav. XX.4.5)
+–  disegno del master del lato componenti (Tav. XX.4.6)
+–  disegno del master del lato saldature (Tav. XX.4.7)
+–  disegno per la maschera serigrafica da imprimere sulla scheda (Tav. XX.4.8)
+–  disegno della maschera per il solder resist (Tav. XX.4.8)
+4.2.7   Alimentatore con regolatore a 4 terminali con tensione regolabile
+Nella Fig. XX.4.29 sono mostrati due circuiti stabilizzatori che utilizzano dei regolatori 
+a quattro terminali la cui tensione di uscita è regolabile con componenti discreti esterni.
+Fig. XX.4.29  Regolatore di tensione a quattro terminali.
+La tensione di uscita nel regolatore a tensione di uscita positiva si calcola con la 
+seguente formula:
+ove: Ucntrl è la tensione di uscita nominale del regolatore, cioè +5V.
+La tensione di uscita nel regolatore a tensione di uscita negativa si calcola con la 
+seguente formula:
+ove: Ucntrl  è la tensione di uscita nominale del regolatore, cioè -2,23 V.
+I manuali tecnici raccomandano di limitare la corrente che circola in R2 a circa 1 mA, 
+per cui i valori tipici per la resistenza R2 sono:
+R2 = 5 kW (normalizzato a 4,7 kW) per il regolatore 78G
+R2 = 2,2 kW per il regolatore 79G
+Nella Tav. XX.4.9 viene mostrato un alimentatore che utilizza il regolatore 78HG che è 
+in grado di erogare correnti elevate fino a 5 A e nella Tab. XX.4.9 viene fornita la lista dei 
+componenti e le caratteristiche elettriche del circuito proposto.
++Ui
+-Ui
+U1
+UA78G
+Case TO-3
+U1
+UA79G
+Case TO-3
+-Uo
+GND
+GND
+GND
+GND
+C1
+C2
+C1
+C2
++Uo
+R1
+R1
+1
+2
+3
+4
+3
+2
+R2
+R2
+2,2k
+5k
+2 mA
+2 mA
+4
+1
+IQ
+IQ
+Uo
+Ui
+Uo
+Ui
+C
+C Cntrl
+Cntrl
+Uo
+R1
+R2
++
+R2
+------------------
+UCntrl
+
+=
+UCntrl  (nominale)
++5V  per il 78G
+IQ
+1 5 mA
+
+=
+IQ  Quiescent curent
+Uo
+R1
+R2
++
+R1
+------------------
+Ucntrl
+
+=
+Uo
+R1
+R2
++
+R1
+------------------
+Ucntrl
+
+=
+
+[PAG 2194]
+XX-176
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.4.4  Alimentatore con tensione di uscita regolabile: schema di principio.
+
+[PAG 2195]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-177
+Tav. XX.4.5  Alimentatore con tensione di uscita regolabile: schema elettrico.
+
+[PAG 2196]
+XX-178
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.4.6  Alimentatore con tensione di uscita regolabile: layout.
+
+[PAG 2197]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-179
+Tav. XX.4.7  Alimentatore con tensione di uscita regolabile: master.
+
+[PAG 2198]
+XX-180
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.4.8  Alimentatore con tensione di uscita regolabile: maschera per il solder resist 
+e piano di foratura.
+
+[PAG 2199]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-181
+Tab. XX.4.9  Caratteristiche elettriche e lista dei componenti dell’alimentatore che 
+utilizza il regolatore 78HG a quattro terminali
+Il trasformatore è stato scelto in modo da minimizzare la dissipazione di potenza e di 
+garantire un livello di tensione sufficiente al funzionamento del regolatore secondo le 
+indicazioni della formula di calcolo descritta nel paragrafo precedente.
+La tensione di ingresso vale, senza tener conto in prima approssimazione dell’ondula-
+zione e delle variazioni della tensione di ingresso:
+La tensione sul secondario Vs è data da:
+Il trasformatore utilizzato nel progetto ha una tensione di uscita di 12 Vac.
+La potenza massima dissipata PDmax dal regolatore 78HG è, quindi, data da:
+SPECIFICHE DI PROGETTO
+Tensione di ingresso > 220 V ac 
+Tensione di uscita +5 +12 V dc 
+Corrente massima di uscita 2 A 
+N.
+Sigla
+Descrizione
+Scheda a circuito stampato
+1
+R1
+Trimmer 3,3 k1/4 W 10% lineare
+1
+R2
+Resistenza 4,7 k1/4 W 5% a strato
+2
+C1, C2
+Condensatore 2200 F 35 V elettrolitico
+2
+C3, C4
+Condensatore 100 F 100 V poliestere
+1
+C5
+Condensatore 47 F 35 V elettrolitico
+2
+D1  D2
+Diodo al silicio BY252
+1
+J1
+Connettore a tre poli a vite100 V 3A
+1
+J2
+Connettore a quattro poli a vite100 V 3A
+1
+J3
+Connettore a tre poli a vite100 V 3A
+Apparecchiatura
+1
+U1
+IC LIN  A78HGA voltage regulator case TO-220
+1
+F1
+Fusibile 250 V ac 250 mA
+1
+S1
+Interruttore 2 vie 1 posizione a levetta
+1
+T1
+Trasformatore 230/12  V 40 VA
+1
+Portafusibile da pannello
+1
+Dissipatore per case TO-220, profilato estruso lungo 60 mm
+UIN
+12
+3
++
+15 V
+=
+=
+US
+UIN
+2
+---------
+15
+2
+------
+10 6 V
+
+=
+=
+=
+PDmax
+US
+2
+2
+Ud
+UO
+–
+
+–
+
+
+
+IOmax
+
+12
+1 41
+2
+0 7
+5
+–
+
+
+–
+
+
+
+
+2
+
+21 04 W
+
+=
+=
+=
