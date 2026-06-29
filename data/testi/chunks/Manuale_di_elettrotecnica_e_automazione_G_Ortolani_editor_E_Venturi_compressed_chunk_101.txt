@@ -1,0 +1,982 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 101/116 ===
+Chars: 45,000 | Offset: 4,420,896
+
+
+
+[PAG 1975]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-103
+3.3.4  Relè termici
+I relè termici consentono la protezione contro i sovraccarichi che si possono verificare 
+in un circuito elettrico. Sono dispositivi di protezione che controllano una grandezza elet-
+trica, la corrente, pilotando ulteriori dispositivi.
+Quando cioè la corrente raggiunge valori superiori a quelli nominali e li mantiene per 
+un tempo significativo, le lamine bimetalliche di un relè di questo tipo si deformano pro-
+vocando di conseguenza, direttamente o indirettamente, lo spostamento dello stato dei 
+contatti ausiliari (si veda la Fig. XIX.3.21); questi, opportunamente inseriti nel circuito, 
+sono utilizzati per diseccitare la bobina del contattore in esercizio determinando con ciò la 
+disinserzione del motore dalla linea di alimentazione.
+Prima della messa in servizio, si deve regolare il relè sul valore della corrente dell’uti-
+lizzatore da proteggere. 
+Tipicamente i relè termici hanno un 
+dispositivo per la compensazione della 
+temperatura; ciò permette loro di rimanere 
+insensibili alle variazioni di temperatura 
+ambiente e di mantenere immutata la loro 
+caratteristica di intervento. Sono inoltre 
+dotati di un dispositivo di reinserzione in 
+caso di intervento dovuto a sovraccarico. 
+La reinserzione può essere automatica 
+oppure manuale; in questo secondo caso, 
+dopo l’intervento del relè, l’utilizzatore 
+non può essere rimesso in funzione se 
+prima non si ripristina manualmente il 
+relè, premendo l’apposito tasto di reset.
+Fig. XIX.3.21  Spaccato di un relè termico.
+Sono commercializzati anche relè termici per avviamento pesante, adatti per la prote-
+zione di motori trifasi con tempi di avviamento particolarmente lunghi (centrifughe, ven-
+tilatori, nastri trasportatori avviati sotto carico, motori per mulini ecc.).
+Può essere interessante conoscere il funzionamento di un altro relè termico, basato 
+sull’elemento termico a lega fusibile. Esso ha come caratteristiche salienti il valore di 
+intervento e il ritardo di intervento a tempo inverso.
+–  Il valore di intervento si può definire come il più piccolo valore di corrente in grado di 
+provocare la fusione della lega (se perdura per un tempo ritenuto inaccettabile) e di conse-
+guenza l’intervento del relè termico. Da osservare però che il valore di intervento del relè 
+termico non è regolabile, di conseguenza bisogna sostituire l’elemento termico per avere 
+una regolazione diversa.
+–  L’intervento a tempo inverso è dato dal tempo necessario per portare la lega alla tem-
+peratura di fusione. Questo tempo è inversamente proporzionale alla variazione del valore 
+di corrente in riferimento al valore minimo. In altre parole questo tempo è tanto più pic-
+colo quanto più grande è l’aumento di valore rispetto a quello minimo. La caratteristica di 
+ritardo invece permette avviamenti di motori con piccoli sovraccarichi, pur mantenendo 
+inalterata la protezione.
+Questi relè, normalmente in esecuzione trifase, sono costituiti da tre circuiti di 
+potenza, percorsi dalla medesima corrente del motore, e da un elemento ausiliario normal-
+mente chiuso.
+Nel circuito di potenza viene inserito l’elemento termico che non è altro che una pic-
+cola vaschetta contenente la lega fusibile allo stato solido e una resistenza che ha la fun-
+95
+97
+96
+98
+Leva di
+sgancio
+Bimetallo
+Sgancio
+Curvatura del
+Ponte di sgancio
+I
+I
+Tasto di
+riarmo
+Selezionatore
+corrente
+bimetallo
+riarmo
+auto/man
+Contatto
+ausiliario
+(a scatto
+rapido)
+Regolazione
+
+[PAG 1976]
+XIX-104
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+zione di riscaldare la vaschetta. Sempre nel recipiente si trova un perno collegato ad una 
+rotella dentata, la quale è bloccata dalla lega allo stato solido. La rotella dentata a sua 
+volta, tramite uno scorrevole, mantiene il contatto ausiliario nella posizione di contatto 
+chiuso. Nella situazione di sovraccarico, fondendosi la lega, la rotella inizia a ruotare, 
+provocando lo sgancio dello scorrevole.
+Il contatto ausiliario in questo modo si apre e diseccita la bobina del contattore disin-
+serendo il motore.
+3.3.5  Protettore termico a contatti bimetallici miniaturizzati
+Il protettore termico è un dispositivo che consente di limitare la temperatura 
+dell’apparecchio su cui è installato o di una parte di esso, mediante l’apertura del circuito 
+elettrico oppure tramite la riduzione della corrente. La normativa di riferimento è la già 
+citata CEI 32-9. Al contrario dei termostati caratterizzati da un intervallo d’azione relati-
+vamente limitato, i protettori termici vengono prodotti con un elevato gradiente di tempe-
+ratura tra l’intervento e il ripristino in modo da garantire una interruzione più lunga e una 
+indicazione precisa.
+Il protettore termico bimetallico miniaturizzato 
+viene impiegato da anni dall’industria elettrica per il 
+controllo automatico della temperatura; esso garanti-
+sce un’alta affidabilità, un buon contatto tra i poli 
+anche con accelerazioni rapide, un intervento rapido 
+indipendente dalla corrente con tempi di apertura 
+estremamente brevi (meno di 1 ms), un’ottima sensi-
+bilità, grande resistenza meccanica alla pressione 
+anche se le dimensioni sono assai ridotte.
+Fig. XIX.3.22  Protettore termico.
+La Fig. XIX.3.22 rappresenta la struttura tipica di un protettore termico. In una solida 
+cassa metallica (1) sono alloggiati: una molla di contatto rotonda (2), un contatto 
+d’argento (3) e un disco metallico (4). Il coperchio metallico (5) con la superficie di con-
+tatto in argento, isolato dalla cassa da un anello isolante (6), chiude l’interruttore verso 
+l’alto. Le connessioni dei cavetti (7) sono isolate mediante uno strato di resina epossidica 
+(8). Il bimetallo è dimensionato in modo che quando la temperatura aumenta e raggiunge 
+il valore prestabilito, esso scatta repentinamente, passando da una configurazione con-
+vessa a una concava, provocando così l’allontanamento verticale del contatto dalla piastra 
+di contatto. Il circuito è ora aperto.
+Solo una notevole variazione della temperatura può riportare automaticamente il disco 
+bimetallico nella sua posizione originale e il contatto allora si richiude.
+Il ripristino quindi avviene automaticamente solo dopo che si è verificata una notevole 
+riduzione della temperatura. I termorivelatori con contatti normalmente chiusi aprono un 
+circuito elettrico quando viene raggiunta una determinata temperatura e lo richiudono solo 
+dopo una sensibile diminuzione; quelli con contatti normalmente aperti chiudono un cir-
+cuito elettrico ad una determinata temperatura (per esempio per attivare un allarme oppure 
+per far partire una ventola di raffreddamento) e lo riaprono dopo una sensibile diminu-
+zione della stessa.
+Per la protezione dei motori elettrici contro le sovratemperature, i protettori termici 
+vengono assemblati direttamente dentro le testate degli avvolgimenti, a intimo contatto 
+con le loro spire, che successivamente vengono formate e impregnate.
+Nei motori monofasi il protettore viene collegato direttamente con l’alimentazione e 
+interrompe istantaneamente la corrente. In condizioni di rotore bloccato, l’elevata cor-
+rente di cortocircuito provoca un aumento di temperatura estremamente rapido. Il protet-
+1
+2
+3
+4
+5
+6
+7
+8
+
+[PAG 1977]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-105
+tore apre in tempo il circuito senza che venga superata la massima temperatura ammessa 
+per gli avvolgimenti.
+Nei motori trifasi e in altre applicazioni il protettore termico viene invece usato come 
+sensore e comanda l’intervento di un contattore.
+3.3.6  Termorilevatori per protezione termica a termistori
+I termorilevatori controllano in modo permanente la temperatura delle macchine elet-
+triche e di altri dispositivi da proteggere tramite sonde a termistore PTC (coefficiente di tem-
+peratura positivo). Un dispositivo di protezione a termistori, costituito in sostanza da un 
+apparecchio di sgancio e da termosonde a termistori, può essere caratterizzato da riarmo auto-
+matico oppure manuale; può essere, inoltre, anche del tipo con memorizzazione del difetto.
+La sonda a termistori è un elemento semiconduttore nel quale la resistenza è funzione 
+non lineare della temperatura. Se si raggiunge la temperatura nominale di funzionamento 
+delle sonde, esse convertono l’aumento brusco di resistenza in una funzione di commuta-
+zione utilizzabile in allarme o in disinserzione.
+I termoprotettori a termistori completano opportunamente la protezione del motore 
+operata dai bimetalli. Essi possono essere impiegati in collegamento con numerose termo-
+sonde (fino a 6) per il controllo diretto della temperatura di macchine in esecuzione anti-
+deflagrante.
+La protezione con termosonde a termistori può essere realizzata sulle macchine con 
+tensione nominale fino a 660 V e sui motori a gabbia di grandezza normalizzata principal-
+mente fino alla potenza di 132 kW a 1500 giri/min con raffreddamento superficiale e fino 
+alla potenza di 200 kW a 1500 giri /min con raffreddamento interno.
+Nei motori contro il rischio di blocco del rotore, in aggiunta alla protezione a termi-
+stori, dovrebbe essere previsto anche un relè termico, poiché la protezione del motore 
+mediante termosonda potrebbe risultare insufficiente dato che la velocità di riscaldamento 
+del motore, partendo dalla condizione a freddo, è maggiore della velocità di riscaldamento 
+della termosonda a termistori. I motori di potenza superiore a 2 kW con frequenti avvia-
+menti e frenature possono essere protetti con sonde a termistori inserite nell’avvolgi-
+mento, da sole o congiuntamente a dispositivi di protezione contro i sovraccarichi inseriti 
+nel circuito di alimentazione. In caso di avviamenti e frenature molto frequenti con motori 
+di potenza superiore è raccomandabile il loro impiego combinato con relè termici in 
+quanto il relè termico protegge il motore contro il sovraccarico in caso di rotore bloccato 
+con partenza a freddo, la sonda a termistori invece protegge il motore in caso di frequenza 
+di manovre molto elevata.
+3.3.7  Fusibili
+Negli ultimi anni è aumentata l’esigenza di una più chiara regolamentazione 
+nell’impiego dei fusibili. In sede internazionale si è cercato di unificare nel modo migliore 
+le caratteristiche e le prove a cui devono sottostare i fusibili, in modo da permettere agli 
+utenti di operare una scelta più sicura e mirata alle loro esigenze. Le norme attualmente in 
+vigore nel nostro Paese sono le già citate CEI 32-1, CEI 32-3, CEI 32-6, CEI 32-7, CEI 
+32-11, CEI 32-12, CEI 32-13, CEI 32-14, CEI 32-15, CEI 32-17, CEI 32-18.  
+Esistono poi altre pubblicazioni internazionali ed europee che considerano particolari 
+tipi di fusibili e portafusibili.
+Occorre però precisare che tutte queste pubblicazioni considerano i fusibili sotto 
+l’aspetto funzionale e non dettano regole sulle loro dimensioni. 
+Va precisato inoltre che certe caratteristiche, quali la forma che deve avere il fusibile e 
+il relativo portafusibile e l’indirizzo verso certe dimensioni invece che altre, non sono 
+state unificate in sede internazionale. Resta quindi all’utente o all’operatore scegliere, per 
+esempio, tra fusibili con forma cilindrica e fusibili con forma a coltello.
+
+[PAG 1978]
+XIX-106
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+I fusibili (Fig. XIX.3.23) sono apparecchiature che svolgono il compito di proteggere i 
+circuiti elettrici dai cortocircuiti e dai sovraccarichi.
+Le norme CEI definiscono i fusibili come dispositivi di interruzione che aprono il cir-
+cuito sul quale sono inseriti.
+L’operazione viene svolta mediante la fusione di una o più loro parti (dimensionate a 
+tale fine) le quali provocano l’interruzione della corrente nel caso questa superi un deter-
+minato valore per un tempo sufficientemente lungo.
+Le caratteristiche generali dei fusibili si possono riassumere nel seguente modo:
+–  Il potere di interruzione o di cortocircuito è il massimo valore di corrente che il fusi-
+bile è capace di interrompere in determinate condizioni di circuito.
+–  La corrente nominale è quel valore di corrente che un fusibile può sopportare senza 
+provocare la fusione o il riscaldamento eccessivo della cartuccia.
+–  La tensione nominale di un fusibile rappresenta il valore massimo di tensione di eser-
+cizio alla quale il fusibile può essere sottoposto.
+–  Il campo di intervento o di funzionamento, stabilito strettamente dalle norme, dà la 
+possibilità all’operatore di scegliere il tempo di intervento del fusibile a seconda del 
+valore della corrente che circola nel circuito.
+–  Il tempo di intervento di un fusibile è l’intervallo di tempo compreso tra il raggiungi-
+mento del valore massimo della corrente nominale, senza fusione dell’elemento, e il 
+momento in cui si verifica la fusione.
+Fig. XIX.3.23  Vari tipi di fusibili.
+I fusibili sono divisi in due classi: fusibili di classe gI e fusibili di classe aM. I fusibili 
+di classe gI proteggono il circuito elettrico dai cortocircuiti e dai sovraccarichi deboli e 
+forti. Normalmente vengono marcati dal colore nero. I fusibili aM sono progettati per un 
+uso combinato; proteggono i circuiti dai cortocircuiti e dai sovraccarichi di elevata inten-
+sità, cioè non fondono in situazioni di sovraccarico di limitata intensità. Sono perciò i più 
+adatti in quelle situazioni in cui sia da evitare un intervento intempestivo del fusibile, 
+come durante i ripetuti avviamenti di motori elettrici; trovano utilizzo in combinazione 
+con i relè termici e sono contrassegnati dalla colorazione verde. 
+I tipi di fusibili più utilizzati sono:
+–  fusibili tipo Diazed a cartuccia;
+–  fusibili a maniglia;
+–  fusibili o valvole a patrona;
+–  fusibili cilindrici.
+I fusibili di tipo Diazed con portacartuccia avvitabile vengono di norma usati in 
+Lama
+Segnalino
+Elemento di fusione
+Segnalino
+Quarzo
+Corpo
+Segnalino
+Quarzo
+Capsula superiore
+Corpo
+Capsula inferiore
+Elemento di fusione
+Segnalino
+Capsula superiore
+Quarzo
+Elemento di fusione
+Corpo
+            Capsula inferiore
+
+[PAG 1979]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-107
+impianti di potenza limitata e sono composti da una base, un tappo di chiusura e da una 
+cartuccia fusibile.
+La base è costituita da porcellana o steatite e contiene i morsetti per il collegamento in 
+linea del fusibile. Uno di questi è collegato al contatto centrale della base, l’altro è colle-
+gato alla virola. Il tappo di chiusura, formato da una calotta di porcellana, contiene inter-
+namente la parte metallica sulla quale va ad inserirsi la parte superiore della cartuccia. 
+Sulla superficie superiore un’apertura, protetta da un vetrino, permette di vedere il colore 
+del dischetto del dispositivo indicatore e quindi la portata del fusibile. La cartuccia fusi-
+bile risulta composta da un involucro di forma cilindrica, cavo internamente. Ai capi si 
+trovano delle capsule, di materiale conduttore, collegate internamente tra loro, con il filo 
+o la lamina fusibile. L’interno dell’involucro viene riempito di sabbia silicea al fine di 
+spegnere l’arco che si forma nel momento della fusione.
+I fusibili cilindrici industriali e simili sono formati da un corpo in ceramica o in stea-
+tite e sono costruiti per sopportare elevati sbalzi termici. L’elemento di fusione è costitu-
+ito da una lamina di rame, ricoperta da argento. La sabbia di quarzo, inserita all’interno, 
+assicura nel momento della fusione lo spegnimento dell’arco e il mantenimento del corpo 
+ad una bassa temperatura. I fusibili possono infine essere provvisti di indicatore di avve-
+nuta fusione.
+3.3.8  Relè magnetotermici
+Il relè magnetotermico, chiamato anche salvamotore magnetotermico, è composto da 
+due sezioni: una parte funziona secondo un principio termico e l’altra secondo un princi-
+pio magnetico. Mentre la parte termica è regolabile nell’ambito di un intervallo compreso 
+fra un valore minimo e un valore massimo di corrente, lo sgancio magnetico avviene solo 
+ad un valore fisso.
+Il relè magnetotermico può essere impiegato in sostituzione dell’associazione interrut-
+tore automatico e fusibili e inoltre può funzionare come sganciatore di minima tensione in 
+mancanza di tensione. Per esempio se viene a mancare la tensione sulla linea di alimenta-
+zione, il motore inserito si arresta; successivamente, se la tensione viene ripristinata, il 
+motore ritorna improvvisamente a funzionare, creando in particolari casi situazioni peri-
+colose.
+In queste situazioni, se il salvamotore è corredato di uno sganciatore di sicurezza in 
+mancanza di tensione, viene inibito il funzionamento intempestivo del motore.
+I relè magnetotermici sono corredati di contatti ausiliari per eventuali segnalazioni 
+luminose sullo stato di funzionamento.
+4  COMPONENTI PASSIVI IMPIEGATI NEI CIRCUITI ELETTRONICI
+4.1  Resistori
+I resistori (chiamati anche resistenze, nel gergo tecnico) sono dispositivi che hanno la 
+proprietà di opporsi alla circolazione della corrente elettrica e di degradare in calore 
+l’energia elettrica assorbita.
+Un resistore si presenta come un dispositivo, provvisto di due morsetti, il cui compor-
+tamento elettrico, in corrente continua, soddisfa la legge di ohm:
+(XIX.4.1)
+ove: R è la resistenza del dispositivo, misurata in Ohm (); U è la caduta di tensione ai 
+suoi capi (Volt); I è la corrente che attraversa il resistore (Ampere).
+L’inverso della resistenza, la conduttanza G si esprime in A/V, in  -1, in mho, in Siemens.
+In un conduttore, di composizione omogenea, la resistenza dipende dalla resistività 
+del materiale  (una sua proprietà intrinseca), dalla sua sezione S, e dalla sua lunghezza l
+U
+R I
+
+=
+
+[PAG 1980]
+XIX-108
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+secondo la relazione espressa dalla seguente equazione:
+(XIX.4.2)
+La resistività elettrica e, quindi, anche la resistenza dipendono dalle variazioni della 
+temperatura del conduttore e dalla pressione a essa applicata.
+La legge di variazione della resistività del materiale con la temperatura è approssima-
+tivamente lineare e viene espressa dalla seguente relazione:
+(XIX.4.3)
+ove:R0 e R1 sono i valori di resistenza che il conduttore presenta, rispettivamente, alle 
+temperature T0 e T1;  è il coefficiente di temperatura (TC - Temperature Coefficient).
+Nei metalli il coefficiente di temperatura  è positivo e la resistenza cresce al crescere 
+della temperatura. L’aumento della resistività con la temperatura è sostanzialmente 
+dovuto ad un incremento dell’agitazione termica del reticolo, che fa aumentare la probabi-
+lità che un elettrone di conduzione venga deviato dal suo cammino e quindi non contribu-
+isca più alla conduzione.
+Nei semiconduttori, come il silicio o il germanio, il coefficiente di temperatura  è 
+negativo. 
+La resistenza cresce al diminuire della temperatura e diventa molto grande alle basse 
+temperature; vicino allo zero assoluto il semiconduttore si comporta come un isolante.
+Caratteristiche elettriche
+I principali parametri elettrici sono:
+–  valore nominale della resistenza, espressa in ohm;
+–  tolleranza di fabbricazione;
+–  potenza nominale dissipabile;
+–  coefficiente di temperatura;
+–  tensione massima di lavoro;
+–  coefficiente di tensione;
+–  fattore di rumore;
+–  comportamento in frequenza;
+–  temperatura massima di lavoro.
+–  stabilità;
+Fig. XIX.4.1  Curva di dissipazione di un resistore di potenza.
+La tolleranza di fabbricazione indica lo scostamento che il valore effettivo di resi-
+stenza può avere rispetto al valore nominale (resistori di precisione: 0,5%, 1%, 2%; 
+R
+
+l
+S--
+
+=
+R1
+R0 1
+T1
+T0
+–
+
+
++
+
+
+=
+  25 25 40 70
+ 155
+ 275
+  50 0
+ 50
+ 150 200 250 300
+ 0
+ 20
+ 40
+ 60
+ 80
+ 100
+ 100
+Temperatura ambiente °C
+Carico nominale %
+2W-5W
+2W
+7W-10W
+15W-20W
+
+[PAG 1981]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-109
+resistori comuni: 5%, 10%, 20%).
+La potenza nominale dissipabile per effetto Joule, ad una data temperatura ambiente, 
+indica la massima potenza che il dispositivo può dissipare senza deteriorarsi.
+Una corretta valutazione della potenza dissipabile da parte di un resistore viene effet-
+tuata analizzando il diagramma della Fig. XIX.4.1, che mostra l’andamento della potenza 
+dissipabile in funzione della temperatura ambientale (curva di derating). 
+Il dispositivo è in grado di dissipare una potenza costante fino ad un valore d’angolo 
+di temperatura; al di sopra dei questo valore la potenza dissipabile dal resistore decresce 
+rapidamente.
+Il movimento degli elettroni nella resistenza provoca lo sviluppo, per effetto Joule, di 
+energia termica. 
+Se il resistore presenta una superficie sufficientemente estesa da permettere una dissi-
+pazione abbastanza rapida del calore che in essa si produce, l’elemento conduttore non 
+raggiunge valori di temperatura tali da danneggiare o distruggere il resistore. 
+Siccome sia la superficie di un resistore attraverso la quale viene dissipato il calore, sia 
+il suo valore resistivo sono entrambi riferiti alla lunghezza e alla superficie della sezione 
+trasversale del resistore esiste sicuramente una correlazione che li lega. 
+Per esempio, se una resistenza di 1  presenta un rapporto superficie della sezione tra-
+sversale lunghezza di 1 a 10 è evidente che la dissipazione può essere raddoppiata (2 W) se 
+viene raddoppiata la lunghezza oppure la superficie della sezione trasversale del resistore. 
+Tuttavia, se si raddoppia la sezione trasversale del corpo della resistenza, il suo valore 
+resistivo si riduce della metà rispetto a quello originale. Se ne viene raddoppiata la lun-
+ghezza (a parità di sezione) il valore resistivo risulta raddoppiato. In pratica è possibile 
+raddoppiare la potenza di una resistenza moltiplicando sia la lunghezza che la superficie 
+della sezione trasversale per 1,414. Inoltre la resistenza e la dissipazione di potenza dipen-
+dono anche dalle dimensioni fisiche dell’elemento resistivo.
+Se si richiede una grande stabilità termica il progettista dovrà moltiplicare la dissipazione 
+di potenza presunta (ricavata con i calcoli di dimensionamento) per un certo fattore di sicu-
+rezza, in genere da 1 a 2, che in alcune applicazioni critiche può essere aumentato fino a 5.
+La scelta di resistori di elevata potenza nominale, dovuta a un coefficiente di sicu-
+rezza elevato comporta un inevitabile aumento dei costi dell’apparecchiatura per cui il 
+loro dimensionamento deve essere attentamente valutato.
+La potenza massima dissipabile di un resistore viene indicata utilizzando le frazioni di 
+Watt o il Watt (1/8 W, 1/4 W, ½ W, 1 W, 2 W, 5 W, 10 W).
+Il coefficiente di temperatura fornisce lo scostamento dal valore nominale della resi-
+stenza in funzione della temperatura, è misurato in parti per milione al grado centigrado 
+(p.p.m./°C) oppure i percentuale al grado centigrado (%/°C), differisce a seconda del tipo 
+di resistori e dipende dalle loro caratteristiche tecnologiche.
+La tensione massima di funzionamento rappresenta un limite per il valore di tensione 
+applicabile al resistore e dipende dalle caratteristiche dielettriche dei materiali che costi-
+tuiscono sia il substrato del resistore sia l’elemento conduttivo, per i resistori comuni 
+varia fra i 250 e i 750 V.
+Il fattore di rumore è un indice della rumorosità della resistenza dovuta all’agitazione 
+termica (moto vibrazionale) degli atomi che compongono l’elemento resistivo. Viene 
+espressa dalla tensione di rumore che rappresenta la variazione di tensione misurabile ai 
+capi di un resistore dovuta al moto caotico degli elettroni causato dall’agitazione termica. 
+Questo effetto è detto effetto Johnson ed è definito dalla seguente relazione:
+(XIX.4.4)
+ove: Un è la tensione di rumore (current noise), misurata in µV/V; k è la costante di Boltz-
+Un
+4 k T R f
+
+
+
+
+=
+
+[PAG 1982]
+XIX-110
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+man  k = 1,38  10-23 J/K; T è la temperatura in gradi Kelvin, del resistore; R è la resi-
+stenza nominale in ; f è la banda di frequenza in cui opera il resistore in Hz. Questo 
+parametro è significativo quando il resistore viene impiegato in circuiti che operano a 
+bassa frequenza.
+Il comportamento in frequenza viene descritto fornendo il 
+valore della banda di frequenza nella quale il comporta-
+mento del resistore è assimilabile ad una resistenza. Per fre-
+quenze superiori la resistenza risente delle capacità 
+parassite interne e delle induttanze che si creano interna-
+mente. Questo parametro è influenzato in modo determi-
+nante dai materiali e dal metodo di fabbricazione impiegato 
+per la realizzazione del resistore.
+Il comportamento elettrico di un resistore reale a filo e a 
+impasto è descritto dal circuito equivalente mostrato nella 
+Fig. XIX.4.2, dove si può notare che l’effetto induttivo nel 
+tipo ad impasto è inesistente. Il dispositivo presenta una 
+resistenza che caratterizza il componente e un induttanza e 
+una capacità parassite dovute ai metodi e ai materiali impie-
+gati per la sua costruzione.
+Le varie tecnologie di fabbricazione tendono a minimiz-
+zare gli effetti delle componenti reattive, in modo tale da 
+migliorare le prestazioni in frequenza del resistore.
+Fig. XIX.4.2  Resistori.
+Infatti, all’aumentare della frequenza di utilizzo di un resistore, le sue componenti 
+reattive fanno sentire la propria influenza facendo deviare sensibilmente al di fuori dei 
+valori di tolleranza il valore della resistenza del resistore e modificando in modo sostan-
+ziale il comportamento dei circuiti che li utilizzan.
+La variazione del valore resi-
+stivo di un resistore in fun-
+zione della frequenza viene 
+mostrata nella Fig. XIX.4.3. Si 
+noti l’andamento della parte 
+reale dell’impedenza per un 
+resistore da 1 M al variare 
+della frequenza.
+Le caratteristiche fisiche delle 
+resistenze sono influenzate dal 
+campo elettrico generato dalla 
+tensione applicata.
+Fig. XIX.4.3  Variazione di R al variare di f.
+Il coefficiente di tensione KU (p.p.m./V) esprime l’entità della variazione della resi-
+stenza rispetto al valore nominale al variare della tensione applicata:
+(XIX.4.5)
+ove: U è la tensione applicata; U0 è la tensione alla quale si è misurato il valore della resi-
+stenza nominale.
+La temperatura massima di lavoro indica il campo di variazione massimo entro il 
+Resistore a filo
+R
+L
+C
+Resistore a impasto
+R
+C
+Z =
+R  jL
+1  2LC  L
+Z =
+R
+1  RC
+R
+[M]
+f
+[MHz]
+0,01
+0,1
+1
+10
+100
+1000
+0,00
+0,25
+0,50
+0,75
+1,00
+KU
+R
+R0
+–
+R0 U
+U0
+–
+
+
+----------------------------
+=
+
+[PAG 1983]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-111
+quale il resistore non viene danneggiato, di solito varia da –55 °C a +155 °C.
+La temperatura massima Tmax viene valutata mediante la seguente relazione:
+(XIX.4.6)
+ove: TA è la temperatura ambiente (°C); RA è la resistenza termica resistenza-ambiente 
+(°C/W); Pdmax è la massima potenza dissipabile dal resistore (W).
+Nella figura Fig. XIX.4.4 viene mostrato un diagramma che consente di valutare il 
+comportamento di resistori di tipo diverso in funzione della temperatura.
+Fig. XIX.4.4  Curve di variazione percentuale-temperatura di una resistenza dello stesso 
+valore realizzata con materiali differenti: a) a impasto, b) a filo; c) a strato.
+Anche in caso di uso corretto rispettando tutte le limitazioni tecniche prescritte, il 
+valore del resistore tende a variare nel tempo; l’entità di tale possibile variazione viene 
+definita dalla stabilità. 
+Questo parametro viene misurato dal costruttore facendo operare il resistore in condi-
+zioni di prova controllate per 10.000 ore e valutandone poi lo scostamento di valore 
+rispetto al valore nominale.
+Altri parametri che possono essere importanti in alcune applicazioni sono gli indici di 
+stabilità del valore resistivo rispetto a vari fattori ambientali o in fenomeni di invecchia-
+mento. Sono dati come variazioni percentuali del valore resistivo rispetto al particolare 
+parametro che si vuole evidenziar (Fig. XIX.4.5).
+Il progettista, che ha inserito un resistore in un ramo di un circuito che opera a fre-
+quenze elevate, deve accertarsi che il valore nominale dichiarato dal costruttore rimanga 
+– nel campo di frequenza utilizzata –  nelle tolleranze previste.
+Fig. XIX.4.5  Curva della prova di vita di 
+un resistore.
+Fig. XIX.4.6  Simbolo grafico del 
+resistore: a) simbolo generale; b) 
+simbolo per il  disegno manuale.
+Tmax
+TA
+RA Pdmax
+
++
+=
+20
+40
+60
+80
+100
+5
+10
+5
+20
+40
+t [°C]
+R/R [%]
+a
+a
+b
+c
+b
+c
+-4
+500
+800
+1000
+-2
+0
+2
+4
+200
+Tempo [h]
+10  1 M
+a)
+b)
+Variazione [%]
+
+[PAG 1984]
+XIX-112
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Rappresentazione grafica
+Il simbolo grafico rappresenta la resistenza mediante un percorso spezzato o con un 
+semplice rettangolo (Fig. XIX.4.6).
+I valori nominali delle resistenze sono normalizzati e la scala di valori possibili 
+dipende dalla tolleranza di lavorazione ammessa.
+Le serie delle resistenze sono catalogate utilizzando una sigla composta dal carattere 
+“E” seguito da un numero che indica il numero di valori di ogni decade.
+Le serie principali sono : E6 (±20%), E12 (±10%), E24 (±5%), E48 (±2%), E96 
+(±1%), E192 (±0,5%, ±0,25%, ±0,1%)
+Nella Tab. XIX.4.1 vengono proposti i valori normalizzati delle serie E6, E12 (la più uti-
+lizzata) e E24. Questi valori sono quelli fondamentali; la serie si estende da 1  a 10 M.
+L’indicazione del valore nominale della resistenza viene fornita in due modi: in 
+chiaro, con una stampigliatura sul contenitore, oppure utilizzando un codice a colori.
+Il primo metodo viene utilizzato per le resistenze di potenza e per quelle di precisione 
+sufficientemente estese da poter accogliere le scritte.
+Le resistenze sono considerate di precisione quando hanno tolleranze sul valore nomi-
+nale dello ±0,1%, ±0,25%, ±0,5%, ±1%, ±2%.
+Le resistenze di potenza, oltre al valore nominale, hanno anche l’indicazione della 
+potenza massima dissipabile.
+Il codice a colori, mostrato nella Tab. XIX.4.2, è utilizzato per tutte le resistenze di 
+tipo commerciale, è composto da tre fasce colorate ugualmente spaziate e da una quarta 
+fascia più staccata.
+Le prime due fasce indicano il valore significativo della resistenza, la terza il fattore 
+moltiplicativo per potenza di 10, la quarta la tolleranza rispetto al valore nominale.
+Tab. XIX.4.1  Valori normalizzati dei resistori della serie E
+E 6 20% 10
+15
+22
+33
+47
+68
+E 12 10% 10
+12
+15
+18
+22
+27
+33
+39
+47
+56
+68
+82
+E 24 5% 10 11 12 13 15 16 18 20 22 24 27 30 33 36 39 43 47 51 56 62 68 75 82 91
+Tab. XIX.4.2  Codice colori dei resistori
+Colore
+Nero
+Marrone
+Rosso
+Arancio
+Giallo
+Verde
+Blu
+Violetto
+Grigio
+Bianco
+Oro
+Argento
+Nessuno
+Cifra
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Moltiplicatore 1
+10
+102
+103
+104
+105
+106
+107
+0,1
+Tolleranza
+±1% ±2%
+±0,5%
+±5% ±10% ±20%
+1 2 3    4
+1) Prima cifra significativa
+2) Seconda cifra significativa
+3) Moltiplicatore
+4) Tolleranza
+
+[PAG 1985]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-113
+Esempi:
+marrone - verde - giallo - oro          R = 150 k 5%
+rosso - rosso - marrone - argento    R = 220  10% 
+Tipicamente il resistore viene incapsulato in un contenitore di forma cilindrica e con i 
+terminali disposti sullo stesso asse per permettere un montaggio assiale del dispositivo.
+Il contenitore delle resistenze di potenza ha in genere la forma di un parallelepipedo; 
+questa particolare forma geometrica permette di ottenere una migliore dissipazione del 
+calore generato nel componente.
+L’indicazione del valore nominale viene effettuata utilizzando un numero a tre cifre, 
+ove le prime due indicano il valore della resistenza e la terza il peso del moltiplicatore. 
+Una resistenza marcata con il numero 102, ha un valore nominale di 10102 , cioè di 
+1.000 .
+Applicazioni
+Il resistore viene inserito in un circuito per limitare il valore di corrente che scorre in 
+un ramo del circuito o per generare una caduta di tensione.
+4.1.1  Tecnologie di fabbricazione
+I resistori vengono realizzati utilizzando vari tipi di tecnologie e di materiali. I tipi più 
+diffusi sono: ad impasto, a strato e a filo.
+Le principali caratteristiche e campi di impiego tipici dei vari tipi di resistori sono 
+riassunti nella Tab. XIX.4.3, mentre la Tab. XIX.4.4 consente la comparazione di alcuni 
+parametri fra resistori di tipo diverso.
+Tab. XIX.4.3  Tabella riepilogativa delle caratteristiche e degli impieghi dei vari resistori
+Tipo di resistore
+Caratteristiche
+Impiego
+Resistori agglomerati o a 
+impasto
+•  Dimensioni ridotte
+•  Economici
+•  Stabilità mediocre
+•  Coefficiente di temperatura alto e 
+non lineare
+•  Fattore di rumore molto alto
+Circuiti digitali in cui non è 
+richiesto un alto valore di 
+stabilità
+Resistori a strato
+•  Buona stabilità
+•  Costosi
+•  Coefficiente di tensione trascura-
+bile
+•  Coefficiente di temperatura basso
+•  Comportamento in AF buono
+•  Amplificatori
+•  Divisori di tensione
+•  Circuiti AF
+Resistori a filo di precisione
+•  Buona stabilità
+•  Coefficiente di tensione trascura-
+bile
+•  Coefficiente di temperatura tra-
+scurabile
+• Protezione di stadi di potenza
+•  Circuiti di calibrazione
+Resistori a filo di 
+dissipazione elevata
+•  Buona stabilità
+•  Coefficiente di tensione trascura-
+bile
+• Coefficiente di temperatura medio
+•  Fattore di rumore molto basso
+•  Comportamento in AF mediocre
+•  Circuiti di alimentazione in 
+c.c. o a bassa frequenza
+•  Attenuatori di potenza
+•  Ponti di misura
+
+[PAG 1986]
+XIX-114
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+4.1.2  Resistori a impasto
+L’elemento resistivo dei resistori a impasto è un agglomerato di carbone (o grafite), 
+talco, argilla e di resine sintetiche (fenoliche) in differenti proporzioni alle quali corri-
+spondono differenti valori di resistività.
+Alle estremità, durante la fase di preformazione (a caldo), vengono applicati due con-
+tatti muniti di terminali (reofori), attraverso i quali si realizza il collegamento della resi-
+stenza con il circuito esterno; il tutto viene successivamente incapsulato in una custodia 
+isolante di bachelite o di ceramica e rivestito con vernici al silicone. I resistori a impasto 
+sono largamente utilizzati nelle applicazioni elettroniche in quanto hanno un costo conte-
+nuto e dimensioni ridotte.
+Presentano però lo svantaggio che quando vengono sottoposti e una dissipazione di 
+calore eccessivo si danneggiano in modo permanente.
+Le potenze generalmente disponibili sono: 1/8 W, 1/4 W, 1/2 W, 1 W, 2 W, con valori 
+compresi tra una frazione di ohm ed un massimo di 22 M.. I coefficienti di temperatura 
+sono alti (circa 500 p.p.m./°C). 
+La variazione percentuale di tolleranza rispetto al valore nominale della resistenza 
+ammessa per questo tipo di dispositivo varia fra un minimo di 1 e un massimo di 20.
+4.1.3  Resistori a strato
+Nei resistori a strato o a film l’elemento resistivo viene ottenuto depositando su un 
+supporto cilindrico isolante (in ceramica o allumina ad alta purezza) uno strato sottile 
+(pochi micron) di ossidi metallici o di carbone, un sottile film metallico al Ni-Cr, uno 
+strato spesso di una miscela di ceramica e metallo (cermet).
+Il valore della resistenza è determinato dallo spessore e dalla lunghezza dello strato. In 
+alcune realizzazioni si incide sul deposito una scanalatura a spirale che taglia lo strato fino 
+al supporto isolante. Questa lavorazione aumenta la lunghezza dello strato conduttivo 
+variando la resistenza del dispositivo. 
+Controllando il passo della spirale è possibile realizzare resistenze con valori di tolle-
+ranza molto piccoli. Questa tecnica costruttiva induce però una componente induttiva che 
+si manifesta quando il dispositivo viene inserito in circuiti ad alta frequenza.
+La lavorazione del resistore viene conclusa ricoprendolo con una vernice isolante, con 
+un rivestimento plastico o con una lacca siliconica per eliminare le tensioni resistive fra il 
+film a forma di spirale e il rivestimento esterno e per fornirgli una protezione meccanica.
+Tab. XIX.4.4  Tabella comparativa delle principali caratteristiche elettriche dei 
+resistori
+Resistori
+Caratteristiche
+A filo
+A strato
+A impasto
+Valori nominali []
+0,1 ÷ 6 M
+10 ÷ 5 M
+10 ÷ 10 M
+Tolleranza [%]
+± 0,02 ÷ ±1
+± 0,1 ÷ ±5
+± 5 ÷ ±20
+Tensione nominale max.[V]
+350 ÷ 2.000
+350 ÷ 750
+350 ÷ 750
+Coefficiente di temperatura 
+[p.p.m./°C]
+-20 ÷ +180
+-200 ÷ +200
+Frequenza di impiego [kHz]
+< 100
+< 10.000
+<10.000
+
+[PAG 1987]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-115
+La lacca protettiva di rivestimento ha eccellenti proprietà di isolamento elettrico e 
+resistenza all’umidità e ai solventi.
+I resistori a strato si rivelano particolarmente adatti all’impiego negli amplificatori di 
+bassa frequenza e nei circuiti caratterizzati da un basso livello del rumore. Sono utilizzati 
+nei computer, nelle telecomunicazioni, negli apparecchi di misura.
+Possono correttamente operare con temperature che variano da -55 °C a +155 °C. Il 
+coefficiente di temperatura è di 20 p.p.m./°C per i resistori a film metallico e fino a 200 
+p.p.m./°C per gli altri tipi.
+Il valore resistivo è indicato mediante la stampigliatura con codice a bande colorate 
+secondo le norme internazionali.
+4.1.4  Resistenze a filo (wide-wound resistors)
+L’elemento resistivo è formato da un filo avvolto su un supporto cilindrico in fibra di 
+vetro sinterizzato ad alta temperatura, in ceramica o in bachelite. Il tutto è sigillato 
+all’interno di una custodia ceramica tramite uno speciale agglomerato cementato che fa da 
+protezione e permette una più elevata dissipazione termica.
+Il valore della resistenza è in funzione della forma geometrica del filo utilizzato. 
+L’isolamento del dispositivo dall’ambiente esterno viene talvolta ottenuto utilizzando uno 
+strato di smalto vetrificato che gli permette di raggiungere temperature elevate, fino a 
+150°C. 
+L’elemento resistivo viene realizzato utilizzando leghe a base di nichel che si adattano 
+a particolari tipologie o esigenze costruttive: nichel-cromo, per le alte temperature; nichel-
+cromo-alluminio, per alti valori di resistenze; nichel-rame, per resistenze di alta precisione.
+Le resistenze di questo tipo sono in grado di dissipare potenze elevate per cui questa 
+tecnologia è la più utilizzata per la realizzazione dei resistori di potenza.
+La tecnica costruttiva impiegata fa sì che questo componente presenti un valori di 
+induttanza notevole. È pertanto sconsigliabile utilizzarlo nei circuiti elettronici che ope-
+rano nel campo delle frequenze audio più alte e nelle radiofrequenze.
+Alcuni tipi vengono realizzati adottando particolari accorgimenti costruttivi, avvol-
+gendo i fili in modo tale che si creino due flussi magnetici contrapposti che si compensino 
+a vicenda (avvolgimento Ayrton-Perry, bifilare).
+Alcune versioni di questo tipo di resistenze sono provviste di uno o più contatti mobili 
+che permettono di ricavare anche valori intermedi della resistenza globale.
+I resistori a filo presentano una bassa caratteristica di rumorosità ed un basso coeffi-
+ciente di temperatura (20 p.p.m./°C), rispetto ai tipi chimici.
+I resistori a filo sono disponibili con una potenza minima di 1 W, fino ad un massimo 
+di circa 50 W, e con valori compresi fra un minimo di 0,22  ed un massimo di 100 k, 
+solitamente con una tolleranza del 5 %.
+Il valore nominale della resistenza a filo viene di norma stampigliato direttamente 
+sullo stato isolante che lo protegge.
+4.2  Potenziometri
+I potenziometri sono costituiti da un elemento resistivo accessibile attraverso due con-
+nessioni e da un contatto mobile (cursore), che striscia sull’elemento resistivo.
+La resistenza misurata ai capi dell’elemento resistivo è costante. La resistenza misu-
+rata fra uno dei due morsetti dell’elemento resistivo e il cursore dipende dalla posizione 
+relativa di quest’ultimo.
+Sono possibili due configurazioni circuitali: a resistenza variabile e ad inserzione 
+potenziometrica.
+Una resistenza variabile (Fig. XIX.4.7) può essere ottenuta utilizzando un solo mor-
+setto e il cursore; l’inserzione potenziometrica utilizzando tutti e tre i morsetti.
+
+[PAG 1988]
+XIX-116
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Fig. XIX.4.7  Connessione per potenziometri: a)resistenze variabili; b) potenziometro.
+Caratteristiche elettriche e meccaniche
+I principali parametri elettrici sono:
+–  valore ohmico nominale di fondo scala;
+–  tensione di lavoro massima;
+–  potenza massima dissipabile;
+–  minima resistenza effettiva;
+–  resistenza di contatto;
+–  coefficiente di temperatura (TCR);
+–  temperatura d’impiego;
+–  legge di variazione resistenza - spostamento (lineare, logaritmico, esponenziale);
+–  tipo di movimento del cursore (lineare, rotatorio, elicoidale);
+–  metodo di regolazione meccanica (con albero, con utensile);
+–  angolo di rotazione;
+–  coppia di azionamento e coppia di arresto;
+–  potere risolutore;
+–  linearità e conformità;
+–  vita del resistore.
+Il valore nominale di un resistore variabile è dato dal valore massimo di resistenza 
+ottenibile 
+I valori nominali disponibili sono gli stessi utilizzati per classificare le serie normaliz-
+zate delle resistenze. Il valore più basso disponibile è di 100 ; per valori di resistenza 
+bassi la potenza dissipata diventa molto elevata anche se si utilizzano tensioni di alimen-
+tazione modeste.
+I valori di potenza dissipabile sono bassi, in genere frazioni di watt (da 100 mW a 200 
+mW per i trimmer e da 100 mW a 500 mW per i potenziometri rotativi).
+I potenziometri a filo possono dissipare potenze più elevate fino ad una decina di watt. 
+La potenza può essere espressa anche in frazioni di watt, 1/4W, 1/2W, come per le resi-
+stenze.
+La minima resistenza effettiva è data dalla resistenza residua tra cursore e terminale 
+iniziale e la resistenza di contatto è data dalla resistenza presente fra cursore e avvolgi-
+mento.
+La curva della caratteristica del potenziometro indica la resistenza in funzione del 
+movimento angolare del rotore (Fig. XIX.4.8). La caratteristica lineare contrassegnata con 
+1 nella figura, segnala variazioni uguali di resistenza per identici spostamenti angolari. La 
+caratteristica logaritmica indicata con 2 nella figura mostra, per identici spostamenti 
+angolari in senso orario, variazioni minime di resistenza all’inizio della corsa ed un varia-
+zione assai rapida verso l’estremità della rotazione. Un potenziometro logaritmico inverso 
+(esponenziale) evidenzia il fenomeno contrario: la variazione di resistenza è massima 
+all’inizio della rotazione in senso orario, e minima all’estremità (curva indicata con 3 
+nella Fig. XIX.4.8). I potenziometri logaritmici vengono di solito usati come controlli di 
+volume negli amplificatori a bassa frequenza. 
+A
+B
+A
+B
+N.C.
+a)
+b)
+
+[PAG 1989]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-117
+La sensibilità dell’orecchio umano, 
+nei confronti dei diversi livelli sonori, 
+varia infatti secondo una curva logarit-
+mica.
+Il controllo di volume di questo tipo 
+comporta che ad eguali spostamenti 
+angolari del cursore corrispondano eguali 
+variazioni di intensità di suon.
+Il potere risolutore rappresenta il più 
+piccolo angolo di rotazione dell’albero di 
+comando che provoca una variazione 
+significativa della resistenza misurata fra 
+il cursore ed uno dei due terminali fissi.
+La linearità (per i potenziometri li-
+neari) e la conformità (per i potenziome-
+tri non lineari) definiscono lo scarto mas-
+simo (espresso in percentuale) tra 
+l’effettivo valore della resistenza inserita 
+tra cursore e terminale iniziale e il valore 
+teorico corrispondente rispetto al valore 
+nominale.
+La vita di un resistore variabile è 
+definita dal numero di giri che in deter-
+minate condizioni di funzionamento il 
+cursore può effettuare rimanendo entro 
+limiti di linearità o di conformità prefis-
+sati.
+Fig. XIX.4.8  Curva di variazione della resistenza
+in funzione  dell’angolo di rotazione del cursore.
+L’albero del rotore può essere corto o lungo. L’albero lungo consente l’applicazione 
+di una manopola che permette un’agevole regolazione del valore resistivo. Viene usato 
+nelle apparecchiature in cui l’utilizzatore deve intervenire per modificarne frequente-
+mente una caratteristica di funzionamento, per esempio il volume di un amplificatore.
+L’albero corto è munito di una scanalatura che consente la regolazione mediante un 
+cacciavite. Viene usato solo quando il circuito richiede una regolazione di messa a punto 
+di alcune variabili circuitali che in seguito non verranno poi modificate.
+I potenziometri possono essere eventualmente accoppiati tra loro meccanicamente, in 
+modo da ottenere la rotazione del cursore di due o più unità con un unico albero, oppure i 
+relativi perni di comando possono essere coassiali, ossia concentrici uno rispetto all’altro, 
+per ottenere la possibilità di regolazione indipendente delle unità multiple.
+Negli amplificatori stereo si usa spesso questo tipo o assemblaggio di potenziometri 
+per realizzare i controlli di volume di ciascun canale, le regolazioni del tono e il bilancia-
+mento. In pratica viene utilizzato lo stesso comando meccanico per controllare due ampli-
+ficatori contemporaneamente. 
+Un’altra realizzazione abbina al potenziometro un interruttore che viene comandato 
+dall’albero del cursore.
+L’interruttore in genere mette in funzione l’apparecchiatura chiudendo il circuito di 
+alimentazione. L’elemento resistivo dei potenziometri può essere realizzato utilizzando 
+molti materiali differenti: carbone deposita
