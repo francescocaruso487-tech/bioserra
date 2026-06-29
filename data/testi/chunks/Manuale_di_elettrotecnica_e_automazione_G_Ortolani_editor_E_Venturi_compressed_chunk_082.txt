@@ -1,0 +1,1386 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 82/116 ===
+Chars: 45,000 | Offset: 3,578,042
+
+ C2 sono i condensatori d'accoppiamento. Il condensatore C3
+gm
+id
+ugs
+-------
+=
+uds
+0
+=
+ 
+iD
+uGS
+-------------
+
+uDS
+cost
+=
+rd
+uds
+id
+-------
+=
+ugs
+0
+=
+ 
+uDS
+iD
+-------------
+
+uGS
+cost
+=
+
+[PAG 1668]
+XVII-68
+ELETTRONICA ANALOGICA E DIGITALE
+è inserito affinché, per le componenti alternate, il gate sia connesso a massa; esso è scelto
+in modo tale che, alle frequenze intermedie, la sua reattanza sia trascurabile, e quindi
+equivalga ad un cortocircuito.
+Le principali caratteristiche dell'amplificatore a gate comune sono le seguenti: alta
+amplificazione di tensione, con uscita in fase con l'ingresso; bassa resistenza d'ingresso;
+alta resistenza d'uscita. La bassa resistenza d'ingresso e l'alta resistenza d'uscita limitano
+le possibilità d'impiego dell'amplificatore a gate comune alle frequenze basse. È utilizzato
+alle frequenze alte, perché l'amplificazione è meno influenzata dalle capacità parassite che
+non gli amplificatori a source comune e a drain comune. È impiegato, comunque, come
+adattatore fra un generatore a bassa resistenza ed un carico ad alta resistenza.
+10   TRANSISTOR NEI CIRCUITI DIGITALI
+Nei sistemi digitali si fa riferimento a due stati, lo stato logico 1 e lo stato logico 0,
+indicati anche con vero (true) o falso (false). Essi possono essere espressi come livelli di
+tensione o di corrente; nella maggior parte dei casi si considerano le tensioni. In un dispo-
+sitivo logico i valori di tensione all'ingresso ed all'uscita del dispositivo sono compresi fra
+la tensione d’alimentazione (UCC) e la tensione di massa (0 V); per esprimere gli stati
+logici, i valori di tensione sono divisi in due fasce, come indicato nella Fig. XVII.10.1. Per
+i valori di tensione dell'ingresso (Fig. XVII.10.1a), la fascia compresa fra 0 V e UIL(MAX) è
+detta livello basso, ed indicata con L (Low); la fascia compresa fra UIH(MIN) e UCC è detta
+livello alto, ed indicata con H (High). L'intervallo fra UIL(MAX) e UIH(MIN) che separa la
+fascia alta da quella bassa, è detto regione di transizione. Si possono fare analoghe consi-
+derazioni per quanto riguarda l'uscita (Fig. XVII.10.1b). Il significato dei termini indicati
+è il seguente.
+–  UIL(MAX): è il valore massimo della tensione di ingresso che è considerata dal disposi-
+tivo logico come stato logico 0. Il pedice MAX indica valore massimo; il pedice I (dall'ini-
+ziale di Input) indica ingresso; il pedice L indica che la tensione applicata all'ingresso
+corrisponde al livello basso.
+Fig. XVII.9.9   Amplificatore a JFET:
+a) a source comune; b) a drain
+comune; c) a gate comune.
+R1
+RD
+C1
+R2
+RS
+CS
+C2
+rs
+ui
+uS
+uu
+RL
++UDD
+a)
+R1
+C1
+R2
+RS
+C2
+rs
+ui
+uS
+uu
+RL
++UDD
+b)
+R1
+RD
+C1
+R2
+RS
+C2
+rs
+ui
+uS
+uu
+RL
++UDD
+C3
+c)
+
+[PAG 1669]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-69
+–  UIH(MIN): è il valore minimo della tensione di ingresso che è considerata dal disposi-
+tivo logico come stato logico 1. Il pedice MIN indica valore minimo; il pedice I (dall'ini-
+ziale di Input) indica ingresso; il pedice H indica che la tensione applicata all'ingresso
+corrisponde al livello alto.
+–  UOL(MAX): è il valore massimo della tensione che si ha all'uscita del dispositivo logico,
+quando è allo stato logico 0; il pedice MAX indica valore massimo; il pedice O (dall'ini-
+ziale di Output) indica uscita; il pedice L indica che la tensione all'uscita è a livello basso.
+–  UOH(MIN): è il valore minimo della tensione che si ha all'uscita del dispositivo logico,
+quando è allo stato logico 1. Il pedice MIN indica valore minimo; il pedice O (dall'iniziale
+di Output) indica uscita; il pedice H indica che la tensione all'uscita è a livello alto.
+La relazione fra ingresso e uscita in un circuito logico è rappresentata dalla caratteri-
+stica di trasferimento; un esempio è riportato nella Fig. XVII.10.1c. 
+Nella Fig. XVII.10.1, la fascia corrispondente al livello basso dell'ingresso è più ampia
+della fascia corrispondente al livello basso dell'uscita (UIL(MAX)  UOL(MAX)). La differenza
+fra UIL(MAX) e UOL(MAX) è detta margine d’errore o margine di rumore a livello basso; a
+livello alto, è UIH(MIN)  UOH(MIN), la differenza fra UOH(MIN) e UIH(MIN) è il margine
+d’errore o margine di rumore a livello alto.
+La tensione d'uscita di un dispositivo può avere valore al di fuori dei margini indicati
+a causa di disturbi; in questo caso diviene importante la conoscenza del margine d’errore,
+in particolare quando si realizza il collegamento in cascata fra due dispositivi: il margine
+di errore indica quale può essere il valore massimo dello scostamento del valore d'uscita
+del dispositivo a monte, affinché il dispositivo collegato a valle consideri lo stato logico
+corretto, come se non vi fosse disturbo.
+Essendo i segnali d’ingresso e d’uscita binari, i transistor BJT e FET nei circuiti digi-
+tali funzionano essenzialmente come interruttori; nel seguito, per illustrare quest'equiva-
+lenza, si utilizza come riferimento il circuito invertente a transistor, che implementa la
+funzione logica NOT (si veda il Par. 14.2). I dispositivi digitali sono realizzati mediante
+circuiti integrati; le configurazioni possibili sono diverse e sono dette famiglie logiche,
+ognuna caratterizzata da propri valori degli intervalli di tensione corrispondenti ai livelli
+alto e basso.
+Fig. XVII.10.1   Livelli di tensione nei dispositivi logici: a) all'ingresso; b) all'uscita;
+c) caratteristica di trasferimento di un dispositivo digitale (circuito invertitore).
+10.1  BJT nei circuiti digitali
+Il circuito invertente con BJT, le caratteristiche di collettore, la retta di carico e i punti
+UCC
+UIH(MIN)
+UIL(MAX)
+0 V
+Ingresso
+Uscita
+Regione di
+transizione
+Regione di
+transizione
+H
+H
+L
+L
+UCC
+UOH(MIN)
+UOL(MAX)
+0 V
+a)
+b)
+UOHmin
+UOHmax
+UOLmax
+UILmax UIHmin
+0
+uU
+uI
+c)
+
+[PAG 1670]
+XVII-70
+ELETTRONICA ANALOGICA E DIGITALE
+di funzionamento sono riportati nella Fig. XVII.10.2. Si rileva che il BJT è o nella condi-
+zione d’interdizione o in quella di saturazione, e il suo comportamento è di un interrut-
+tore. Nella Fig. XVII.10.2a, il BJT si comporta come un interruttore aperto (OFF), perché
+la corrente di base è nulla ed il punto di funzionamento Q2 è nella regione d'interdizione
+(Fig. XVII.10.2c). Nella Fig. XVII.10.2b, la corrente di base porta il BJT in saturazione
+(ON); il punto di funzionamento, Q1, è nella regione di saturazione (Fig. XVII.10.2c), e il
+BJT si comporta come un interruttore chiuso. Ai due punti di funzionamento Q1 e Q2, cor-
+rispondono gli stati basso (L) e alto (H): nella Fig. XVII.10.2a, uI è allo stato L e uU è allo
+stato H, nella Fig. XVII.10.2b, uI è allo stato H e uU è allo stato L.
+Fig. XVII.10.2   Circuito invertente con BJT: a) condizione del BJT come interruttore
+aperto (OFF); b) condizione del BJT come interruttore chiuso (ON); c) caratteristiche di
+collettore, retta di carico e punti di funzionamento.
+Con il BJT in saturazione la corrente di saturazione è ICsat = (UCC  UCEsat) RC
+ UCCRC e ad essa corrisponde la corrente di base IB = ICsat . Nel caso di BJT di tipo
+npn al silicio, in saturazione si ha UBEsat  0,7 V  0,8 V e UCEsat  0,2 V  0,3 V. Con il
+BJT all'interdizione è UBE  0 V e la corrente di base è uguale a zero.
+10.2  Famiglie logiche TTL ed ECL
+I circuiti integrati della famiglia TTL, così detta da Transistor-Transistor Logic, sono
+realizzati con BJT e sono caratterizzati da rapidità di risposta e relativa bassa potenza dis-
+sipata. La famiglia ECL, così detta da Emitter - Coupled Logic, utilizza anch'essa BJT. I
+circuiti di questa famiglia hanno i punti di funzionamento corrispondenti agli stati 0 e 1
+nella regione attiva. Gli integrati ECL si basano sulle caratteristiche degli amplificatori
+differenziali. La famiglia ECL è caratterizzata da alta velocità di risposta, non essendo
+mai i BJT in saturazione, con la potenza dissipata relativamente elevata.
+10.3  FET nei circuiti digitali
+A)  MOSFET Enhancement nei circuiti digitali
+In questo paragrafo sono presi in considerazione gli NMOS. L'analisi del comporta-
+mento dei PMOS, cambiando solo le polarità delle grandezze elettriche, è analoga. Si con-
+sidera il circuito invertente con NMOS; le caratteristiche di drain, la retta di carico e i
+punti di funzionamento sono riportati nella Fig. XVII.10.3.
+Si scelgono i punti di funzionamento estremi della retta di carico: Q2 è nella regione
+d'interdizione (Fig. XVII.10.3c, FET nello stato OFF), e Q1 è nella regione lineare (Fig.
+XVII.10.3d, FET nello stato ON). A questi punti corrispondono gli stati 1 e 0, come per i
+BJT. Con il FET in saturazione nella regione di linearità, la corrente ID(ON) è circa uguale
+al valore dell'ordinata del punto di intersezione della retta di carico con l'asse delle ordi-
+nate. Con il FET nello stato ON, la potenza dissipata uDS iD è piccola, essendo uDS
+UCC
+RC
+UCC
+RC
+uU
+uU
+UCE
+IC = 0
+OFF
+uI
+IB = 0
+a)
+UCC
+RC
+UCC
+RC
+uU
+uU
+UBE
+IC
+ON
+uI
+IB > 0
+b)
+iC
+Q1
+Q2
+uCE
+uCC
+0
+UCC
+RC
+c)
+
+[PAG 1671]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-71
+dell'ordine di alcuni decimi di volt. Per UGS  0,25 UT  0,50 UT (si veda il Par. 9.2) il
+FET è all'interdizione e la potenza dissipata è UDD iD  0.
+Fig. XVII.10.3   Circuito invertente con FET: a) struttura di principio del circuito; b) ca-
+ratteristiche di drain, retta di carico e punti di funzionamento; c) condizione del FET come
+interruttore aperto (OFF); d) condizione del FET come interruttore chiuso (ON).
+La tecnologia NMOS, ha avuto ampia diffusione nella realizzazione di circuiti inte-
+grati complessi, come i microprocessori, soprattutto quando il carico resistivo è stato
+simulato con un altro MOSFET di tipo Depletion. L'inconveniente della potenza dissipata
+a riposo, relativamente alta, ha fatto sì che la tecnologia NMOS fosse sostituita dalla tec-
+nologia CMOS. 
+B)  CMOS nei circuiti digitali
+I circuiti integrati CMOS sono caratterizzati dalla presenza di NMOS Enhancement e
+PMOS Enhancement nello stesso dispositivo. Il circuito invertente con CMOS è riportato
+nella Fig. XVII.10.4a; esso implementa una porta NOT (si veda il Par. 18.4) ed è utiliz-
+zato per illustrare le caratteristiche dei circuiti CMOS. Per ipotesi i due MOS sono sim-
+metrici ed hanno le stesse caratteristiche. Nel circuito i due terminali di gate dei MOS
+sono connessi al terminale d'ingresso. Il MOS Q2, a canale p, simula il carico, e il MOS
+Q1, a canale n, ha funzioni invertenti e di driver. Nella Fig. XVII.10.4a sono riportate le
+indicazioni delle tensioni e delle correnti; la corrente di drain è la stessa nei due MOS,
+perché i circuiti di drain sono in serie nei confronti della tensione d’alimentazione UDD.
+Fig. XVII.10.4.   Circuito invertente con CMOS: a) schema; b) circuito equivalente
+quando l'ingresso è allo stato logico 0; c) circuito equivalente quando l'ingresso è allo
+stato logico 1.
+UDD
+RD
+uU
+UGS
+ID
+uI
+a)
+UDS
+iD
+Q1
+Q2
+uDS
+UDD
+0
+UDD
+RD
+uGS1
+uGS2
+uGS3
+uGS4
+uGS5
+b)
+UDD
+RD
+uU
+UDD
+RD
+uU
+RON
+RON
+OFF
+ON
+c)
+d)
+UDD
+uU
+uGS2
+iD2
+uI
+uDS2
+uGS1
+uDS1
+iD1
+Q2
+Q1
+PMOS
+NMOS
+a)
+UDD
+uU
+Q2
+Q1
+ON
+OFF
+RON2
+RON1
+b)
+UDD
+uU
+Q2
+Q1
+OFF
+ON
+RON2
+RON1
+c)
+
+[PAG 1672]
+XVII-72
+ELETTRONICA ANALOGICA E DIGITALE
+Con la tensione d'ingresso uI uguale a zero (stato logico 0), Q1 è interdetto (OFF) e Q2
+conduce (ON), e la situazione è rappresentata nella Fig. XVII.10.4b, in cui i MOS si com-
+portano come interruttori con in serie le resistenze dei rispettivi canali, quando i MOS
+conducono. Essendo Q1 equivalente ad un interruttore aperto e Q2 ad un interruttore
+chiuso, si ha: iD1  iD2  0, uU  UDD  RON2 (iD2)  UDD, e l'uscita è a livello alto (stato
+logico 1). Con uI  UDD, l'ingresso è allo stato logico 1, Q1 conduce (ON), Q2, è interdetto
+(OFF), e la situazione è rappresentata in Fig. XVII.10.4c. Essendo equivalenti Q1 ad un
+interruttore chiuso e Q2 ad un interruttore aperto, si ha: iD1  iD2  0, uU  RON1 iD1  0
+V, e l'uscita è a livello basso (stato logico 0). 
+I circuiti CMOS sono molto usati perché richiedono poca potenza. Nell'esempio
+descritto, quando l'ingresso è sia nello stato 0 sia nello stato1, la corrente nel circuito è
+zero, e la potenza fornita dall'alimentazione è UDD 
+ iD  0. Si ha assorbimento di potenza
+solo durante le commutazioni degli stati logici, perché i MOS possono essere, per brevi
+intervalli, entrambi in conduzione (ON, interruttori chiusi), e quindi la corrente di drain è
+diversa da zero.
+10.4  Tempi di commutazione
+Relativamente alle forme d'onda della tensione d'ingresso e della tensione d'uscita ide-
+alizzate di un circuito digitale, riportate nella Fig. XVII.10.5, si definiscono: i tempi di
+salita e di discesa ed i ritardi di propagazione.
+Fig. XVII.10.5   Forme d'onda idealizzate d'ingresso e d'uscita di un circuito digitale, con
+indicati i tempi di salita, di discesa e di propagazione.
+–  Tempo di salita tr (rise time). È il tempo di transizione perché il segnale passi dal
+10% dell'escursione massima al 90% dell'escursione massima. Per escursione massima si
+intende la differenza fra i valori massimi e minimi del segnale, corrispondenti agli stati
+logici 1 e 0. Il tempo di salita è indicato nella Fig. XVII.10.5, sia per il segnale d'ingresso,
+in cui l'escursione massima è UI, sia per il segnale d'uscita, in cui l'escursione massima è
+UU.
+–  Tempo di discesa tf (fall time). È il tempo di transizione perché il segnale passi dal
+90% dell'escursione massima al 10% dell'escursione massima. Il tempo di discesa è indi-
+cato nella Fig. XVII.10.5, sia per il segnale d'ingresso, in cui l'escursione massima è UI,
+sia per il segnale d'uscita, in cui l'escursione massima è UU.
+UIH
+ui
+tr
+tf
+UIL
+10%UI
+50%UI
+90%UI UI
+t
+0
+UOH
+uu
+tf
+tr
+UOL
+10%UU
+50%UU
+90%UU UU
+0
+tpHL
+tpLH
+t
+UOH + UOL
+2
+
+[PAG 1673]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-73
+–  Ritardo di propagazione tp (propagation delay). È il tempo che intercorre fra il pas-
+saggio del segnale d'ingresso per il valore corrispondente al 50% dell'escursione massima
+ed il passaggio del segnale d'uscita per il valore corrispondente al 50% dell'escursione
+massima. Si definiscono, in particolare: il ritardo di propagazione tpHL, come il ritardo di
+propagazione riferito alla transizione del segnale d'uscita dallo stato logico alto allo stato
+logico basso; il ritardo di propagazione tpLH, come il ritardo di propagazione riferito alla
+transizione del segnale d'uscita dallo stato logico basso allo stato logico alto; il ritardo di
+propagazione medio tpm, come media fra tpHL e tpLH. 
+–  Prodotto potenza per ritardo di propagazione. È un parametro, legato al ritardo di
+propagazione ed alla potenza dissipata dalla porta, utilizzato come figura di merito, nel
+confronto fra le diverse famiglie logiche.
+11  AMPLIFICATORI OPERAZIONALI
+Gli amplificatori operazionali sono dispositivi usati ampiamente nei circuiti elettro-
+nici. Il nome deriva dal fatto che sono utilizzati per svolgere operazioni di calcolo come,
+ad esempio, la somma e l'integrazione. Sono indicati anche con le sigle: AO, dalle iniziali
+di Amplificatori Operazionali; Op-Amp, dalle iniziali di Operational Amplifiers. In que-
+sto paragrafo sono esaminati: le caratteristiche, il modello di AO ideale e i principali cir-
+cuiti lineari e non lineari con AO.
+11.1  Caratteristiche di base degli AO
+A)  Struttura degli AO
+La struttura di un AO è formata da tre blocchi collegati in cascata: il blocco d'ingresso
+è un amplificatore differenziale; il blocco intermedio è un amplificatore di tensione, con
+amplificazione elevata, dell'ordine di 106; il blocco d'uscita è un amplificatore di potenza
+che fornisce al carico sufficiente corrente, anche con piccoli valori della resistenza RL.
+L'amplificatore differenziale (AD) è formato da due amplificatori di tensione LTI: il
+primo è chiamato blocco non invertente, il secondo è chiamato blocco invertente. Indi-
+cando con A1 e A2 i guadagni di tensione dei rispettivi blocchi, il segnale d'uscita uU
+dell'AD è uU  A2u2  A1u1. La tensione u1 è applicata all'ingresso del primo blocco, e u2 è
+applicata all'ingresso del secondo blocco. L'ingresso del primo blocco è chiamato
+ingresso non invertente, indicato con , quello del secondo blocco è chiamato ingresso
+invertente, ed è indicato con .
+Per A2  A1  Ad, si ha un AD ideale, e la tensione d'uscita è uU  Ad(u2  u1)  Ad ud,
+con ud tensione differenziale. La condizione ideale A2  A1  Ad è solo teorica, ma può
+essere utilizzata per l'analisi di un AD reale. Si definisce la media aritmetica delle tensioni
+d'ingresso u1 e u2 come tensione di modo comune e si indica con Ucm; è quindi Ucm = (u2 
+u1)2. Esprimendo le tensioni d'ingresso u1 e u2 in funzione di ud e Ucm, la tensione
+d'uscita uU dell'AD reale è:
+(XVII.11.1)
+con AVd guadagno differenziale e AVcm guadagno di modo comune.
+Il rapporto CMRR = AVdAVcm è detto rapporto di reiezione al modo comune (la sigla
+CMRR deriva da Common Mode Rejection Ratio) ed esprime quanto è amplificato il
+segnale differenziale Ud, rispetto al segnale di modo comune Ucm.
+Ponendo u1 =u2 si ha: Ucm =0, e guadagno differenziale AVd =uUud, mentre, per
+uU
+A2u2
+A1u1
+–
+A2 Ucm
+ud
+2-----
++
+
+
+
+
+A1 Ucm
+ud
+2-----
+–
+
+
+
+=
+–
+=
+=
+A2
+A1
++
+2
+------------------- ud
+A2
+A1
+–
+
+Ucm
++
+AVdud
+AVcmUcm
++
+=
+=
+
+[PAG 1674]
+XVII-74
+ELETTRONICA ANALOGICA E DIGITALE
+u1 =u2, si ha: ud =0, e guadagno di modo comune AVcm =uUUcm.
+B)  Modello di AO
+Un esempio di modello di AO è riportato nella Fig. XVII.11.1a.
+Fig. XVII.11.1   Amplificatore operazionale: a) esempio di modello; b) simbolo con cir-
+cuiti di alimentazione e d'ingresso.
+Lo stadio d'ingresso è equivalente ad una resistenza d'ingresso ri, con valore minimo
+di 1 M. Le tensioni rispetto a massa dei terminali d'ingresso sono indicate con u+ e u e
+i corrispondenti ingressi sono indicati con  e con . Ciò sta a significare che, se si applica
+una tensione u (positiva o negativa rispetto a massa) all'ingresso non invertente , la ten-
+sione d'uscita uU dell'amplificatore, rispetto a massa, ha la stessa polarità o fase di u.
+Invece, se si applica una tensione u (positiva o negativa rispetto a massa) all'ingresso
+invertente , la tensione d'uscita uU dell'amplificatore, rispetto a massa, ha la polarità
+opposta di u. La tensione uId = u u è la tensione differenziale d'ingresso. Il generatore
+dipendente ha tensione AOuId. L'amplificazione AO è indicata come amplificazione ad
+anello aperto (open loop), ed ha valore elevato, dall'ordine di 104 all'ordine di 106. La
+denominazione di AO è dovuta al fatto che la maggior parte dei circuiti con AO sono rea-
+zionati, e AO è definita come l'amplificazione che si ha quando non vi è connessione di
+reazione fra uscita ed ingresso dell'amplificatore. La resistenza ru è la resistenza d'uscita
+dell'AO; il suo valore è dell'ordine delle decine di ohm. L'alimentazione è fornita da due
+generatori di tensione continua, indicati con UCC e UEE, le tensioni sono una positiva e
+l'altra negativa: quando hanno lo stesso valore assoluto, l'alimentazione è detta duale, ed è
+la più usata (alcuni valori comuni sono: 5 V, 10 V, 15 V, 18 V); quando i valori
+assoluti sono diversi l'alimentazione è detta asimmetrica. Infine, con alcuni AO è possi-
+bile usare un'alimentazione singola, con opportuni circuiti esterni.
+C)  Caratteristica di trasferimento
+La caratteristica di trasferimento rappresenta l'andamento della tensione d'uscita uU
+dell'AO in funzione della tensione differenziale d'ingresso uId, andamento illustrato nella
+Fig. XVII.11.2a. Nella figura sono disegnate la parte di caratteristica lineare e quella di
+saturazione. Nella parte lineare uU = AOuId, con UEE /AO uId = u u UCC /AO; per
+uId UEE / AO o uId UCC / AO, la tensione d'uscita rimane costante, uguale a UEE nel
+primo caso, e a UCC nel secondo, e si ha saturazione dell'AO.
+D)  Risposta in frequenza
+La risposta in frequenza dell'AO ad anello aperto è riportata nella Fig. XVII.11.2b, in
+cui, come esempio, è rappresentato il modulo dell'amplificazione dell'AO A741C, in
+funzione della frequenza. Il guadagno d'amplificazione è AV0  200.000 in continua (f 
+0), e diminuisce al crescere della frequenza. La frequenza di taglio è fH  5 Hz. All'aumen-
+tare della frequenza, l'amplificazione diminuisce: la curva è una retta che ha pendenza di
+AO
+ru
+ri
+u
+u
+uId
+uU
+AOuId
+a)
+u
+u
+UCC
+UCC
+UEE
+AO
+uU
+UEE
+
+
+b)
+
+[PAG 1675]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-75
+20 dB/decade L'andamento descritto è causato dalla presenza del condensatore nello sta-
+dio di amplificazione dell'AO, condensatore inserito per stabilizzare l'AO. La frequenza di
+transizione fT è la frequenza a cui l'amplificazione diviene AV  1 e, nell'esempio di
+figura, vale fT  1 MHz. Il prodotto guadagno per banda passante, GBW, è costante. Ciò
+significa che se si raddoppia l'amplificazione, la banda passante si riduce alla metà. Ad
+esempio, se per fT si ha GBW  1 MHz, a 10 kHz corrisponde un'amplificazione di 100,
+mentre a 20 kHz si ha un'amplificazione uguale a 50.
+Fig. XVII.11.2   L'amplificazione negli AO: a) caratteristica di trasferimento idealizzata
+di un AO; b) curva di risposta ad anello aperto dell'AO A741C.
+E)  Tempi di risposta al transitorio
+In generale, in un amplificatore i tempi di risposta al transitorio sono riferiti all'anda-
+mento nel tempo della sua tensione d'uscita quando all'ingresso si applica un segnale a
+gradino. Per un AO le grandezze che caratterizzano la risposta al transitorio sono: il
+tempo di salita, il tempo di assestamento, l'overshoot e lo slew rate; esse sono determinate
+utilizzando il circuito voltage-follower, che è un amplificatore con guadagno unitario for-
+mato da un AO reazionato, a cui si applica un segnale a gradino uI di ampiezza UI.
+Con riferimento alla Fig. XVII.11.3, si considerano le seguenti grandezze.
+–  Il tempo di salita tr (Rise Time) è definito come il tempo che impiega la tensione
+d'uscita dell'AO a passare dal 10% al 90% del suo valore finale (il valore finale è uguale a
+UI, dato il guadagno unitario dell’amplificatore). Per l'AO A741C si ha come valore
+tipico tr  0,3 s.
+Fig. XVII.11.3   Esempio di rispo-
+sta al gradino di un AO.
+Saturazione
+Regione
+lineare
+Saturazione
+uU
+UCC
+UEEAO
+UCCAO
+UEE
+uu
+a)
+120
+106
+100
+105
+80
+104
+60
+103
+40
+102
+20
+10
+0
+1
+1
+10
+102
+103
+104
+105
+106
+3 dB
+20 dB/dec
+AV0 = 200000
+fH
+fT
+AVdB
+f (Hz)
+b)
+uU
+uU, uI
+uI
+uu, valore a regime
+tr
+ts
+t
+UI
+90% UI
+10% UI
+0
+
+[PAG 1676]
+XVII-76
+ELETTRONICA ANALOGICA E DIGITALE
+–  Il tempo di assestamento ts (Settling Time) è definito come il tempo necessario per-
+ché la tensione d'uscita entri e rimanga in una fascia di ampiezza prefissata, nelle sue
+oscillazioni smorzate attorno al valore a regime. La fascia corrisponde comunemente allo
+0,1% o allo 0,01% del valore di regime, in corrispondenza di un gradino d'ingresso con
+ampiezza di 10 V.
+–  L'overshoot o sovraelongazione è definita come la differenza fra il valore massimo
+raggiunto dalla tensione d'uscita e il valore finale a regime. Generalmente è dato in per-
+centuale del valore a regime. Per l'AO A741C si ha come valore tipico 5%.
+–  Lo slew rate indica la rapidità della risposta in uscita, quando all'ingresso è appli-
+cato un segnale a gradino di ampiezza relativamente alta. Quando l'ampiezza del gradino
+supera un certo livello, la tensione d'uscita cresce linearmente. Ciò è causato dalla pre-
+senza del condensatore di compensazione nel circuito dell'AO, la cui carica e scarica
+avvengono con velocità limitata. La rapidità di risposta è valutata mediante lo slew rate.
+Esso è definito come la velocità di variazione della tensione d'uscita, misurata in V/s.
+Valori comuni sono dell'ordine di 1 V/s. Per l'AO A741C si ha come valore tipico
+0,5 V/s; ciò significa che per ogni microsecondo si ha un aumento della tensione d'uscita
+di 0,5 V.
+11.2  Amplificatore operazionale ideale
+Per l'analisi e il progetto dei circuiti con AO, spesso si utilizza il modello ideale di AO,
+rappresentato nella Fig. XVII.11.4, che ha le seguenti caratteristiche: amplificazione infi-
+nita, AO  ; resistenza d'ingresso infinita, ri  ; resistenza d'uscita uguale a zero; banda
+passante infinita; slew rate infinito; possibilità di fornire corrente infinita al carico; CMRR
+infinito. Si consideri la Fig. XVII.11.4. Dalla relazione uU  AOuId, si ha uId  uUAO, e per
+AO   la tensione differenziale d'ingresso dell'AO tende a zero, uId  0. La resistenza
+d'ingresso dell'AO infinita comporta che le correnti assorbite dai terminali d'ingresso siano
+uguali a zero: i  0 e i  0.
+11.3  Circuiti lineari con amplificatori operazionali
+In questo paragrafo sono descritti i principali circuiti lineari in cui sono impiegati AO:
+l'amplificatore invertente; l'amplificatore non invertente; il voltage follower; l'amplifica-
+tore delle differenze; l'amplificatore sommatore; il circuito integratore; il circuito deriva-
+tore. In tutti questi circuiti è presente la reazione negativa, si considera l'AO ideale, la
+tensione di alimentazione è duale (UCC) e la tensione d'ingresso è limitata in valore asso-
+luto per non portare in saturazione l'AO.
+A)  Amplificatore invertente
+Lo schema dell'amplificatore invertente è riportato nella Fig. XVII.11.5a, l'amplifica-
+zione di tensione AV è indipendente dall'AO, ma dipende solo dalle resistenze R1 e R2 del
+circuito esterno di reazione ed è:
+(XVII.11.2)
+Fig. XVII.11.4   Modello dell'AO ideale.
+AO
+i
+i
+uId
+u
+u
+AOuId
+uU
+AV
+uU
+uI
+------
+R
+–
+2iI
+R1iI
+-------------
+R2
+R1
+-----
+–
+=
+=
+=
+
+[PAG 1677]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-77
+B)  Amplificatore non invertente
+Lo schema dell'amplificatore non invertente è riportato nella Fig. XVII.11.5b, l'ampli-
+ficazione di tensione AV è indipendente dall'AO, ma dipende solo dalle resistenze R1 e R2
+del circuito esterno di reazione ed è:
+(XVII.11.3)
+C)  Voltage follower
+Lo schema del voltage follower, detto anche inseguitore di tensione o buffer ad ampli-
+ficazione unitaria, è riportato nella Fig. XVII.11.5c. In questo circuito l'uscita è connessa
+direttamente all'ingresso invertente e si ha:
+(XVII.11.4)
+Il voltage follower con AO ideale non assorbe corrente, ha la resistenza d'ingresso
+infinita, e la resistenza d'uscita è quella di un AO ideale, e quindi è uguale a zero. Il cir-
+cuito serve come adattamento fra un generatore d'ingresso di elevata impedenza ad un
+carico di bassa impedenza. In termini di potenza, il voltage follower è in grado di fornire
+al carico potenza senza assorbirne dal generatore d'ingresso, in quanto la corrente
+all'ingresso dell'AO è i+  0.
+D)  Amplificatore delle differenze
+Lo schema dell'amplificatore delle differenze, detto anche amplificatore sottrattore, è
+riportato nella Fig. XVII.11.6a. Il segnale d'uscita vale:
+(XVII.11.5)
+La XVII.11.5 indica che l'amplificatore fa la differenza delle tensioni agli ingressi
+pesandole diversamente; il coefficiente di u1 è diverso da quello di u2. Imponendo il rap-
+porto   R4R3  R2R1, la XVII.11.5 diviene uU  (R2R1)(u1u2), dove è evidente che
+la tensione d'uscita è proporzionale alla differenza delle tensioni d'ingresso.
+Fig. XVII.11.5   Amplificatori con AO:
+a) amplificatore invertente; b) amplificatore
+non invertente; c) voltage follower.
+AV
+uU
+uI
+------
+R1i
+R2i
++
+R1i
+------------------------
+R1
+R2
++
+R1
+-------------------
+1
+R2
+R1
+-----
++
+=
+=
+=
+=
+R1
+R2
+iI
+uI
+iI
+uU
+i = 0
+i = 0
+uId = 0
+
+
+a)
+b)
+R1
+R2
+i
+uI
+i
+uU
+i = 0
+i = 0
+uId = 0
+
+
+c)
+uI
+uU
+i = 0
+i = 0
+uId = 0
+
+
+uU
+uI
+=
+e quindi
+AV
+1
+=
+uU
+uU1
+uU2
++
+1
+R2
+R1
+-----
++
+
+
+
+
+R4
+R3
+R4
++
+------------------- u1
+R2
+R1
+----- u2
+–
+=
+=
+
+[PAG 1678]
+XVII-78
+ELETTRONICA ANALOGICA E DIGITALE
+E)  Amplificatore sommatore
+L'amplificatore sommatore può essere di due tipi: amplificatore sommatore invertente
+e amplificatore sommatore non invertente. Lo schema dell'amplificatore sommatore
+invertente con AO è riportato nella Fig. XVII.11.6b, nel caso di tre ingressi. La tensione
+d'uscita è uguale alla somma delle tensioni d'ingresso pesate, ed è:
+(XVII.11.6)
+Nella XVII.11.6, il segno meno indica che il sommatore è invertente. Se si pone R1 =
+R2 = R3 = R', si ha uU  (RR')(u1u2 + u3), dove è evidente che la tensione d'uscita è
+uguale alla somma amplificata delle tensioni d'ingresso. Ponendo R1 = R2 = R3 = R, si ha
+uU  (u1u2 + u3), e la tensione d'uscita è uguale alla somma, cambiata di segno, delle
+tensioni d'ingresso.
+Il sommatore invertente è più utilizzato in quanto nel sommatore non invertente vi è
+interazione fra i diversi generatori d'ingresso.
+Fig. XVII.11.6   Amplificatori con AO: a) amplificatore delle differenze; b) amplificatore
+sommatore invertente.
+F)  Circuito integratore con AO
+Lo schema dell'integratore con AO è riportato nella Fig. XVII.11.7a. Il circuito ha la
+configurazione di amplificatore invertente con la reazione negativa dovuta al parallelo Rf,
+C. Supponendo inizialmente (t = 0) il condensatore C carico alla tensione U0, la tensione
+d'uscita uU è:
+(XVII.11.7)
+avendo indicato con fc la frequenza critica; per frequenze al di sopra di 10fc il circuito si
+comporta come un integratore. Il valore della frequenza critica è: fc = 1  (2RfC).
+Nel circuito della Fig. XVII.11.7a, l'effetto d'integrazione è dovuto ai componenti R, C
+e all'AO. La resistenza Rf ha la funzione di evitare la saturazione dell'AO, dovuta a
+disturbi lentamente variabili nel tempo, assimilabili a sinusoidi a basse frequenze. Infatti,
+alle basse frequenze si ha 1  (2fC) » Rf, e l'apporto di reazione del parallelo Rf, C è
+dovuto essenzialmente a Rf; il circuito, pertanto, si comporta come un amplificatore inver-
+tente con amplificazione Rf R, e quindi un disturbo sommato al segnale d'ingresso non
+satura l'amplificatore e la tensione d'uscita è quella prevista dalla XVII.11.7.
+G)  Circuito derivatore con AO
+Lo schema del derivatore con AO è riportato in Fig. XVII.11.7b. Il circuito ha la con-
+uU
+Ri
+–
+R
+–
+i1
+i2
+i3
++
++
+
+
+R
+–
+u1
+R1
+-----
+u2
+R2
+-----
+u2
+R3
+-----
++
++
+
+
+
+
+=
+=
+=
+R1
+R2
+uU
+u
+u
+
+R3
+R4
+u2
+u1
+a)
+R1
+R2
+R3
+R
+uU
+u1
+u2
+u3
+
+
+i
+b)
+uU
+1
+RC
+-------
+uI td
+U0
++
+0
+t
+
+–
+=
+per f
+10fc
+
+
+[PAG 1679]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-79
+figurazione di amplificatore invertente. Si supponga il condensatore C all'istante ini-
+ziale    (t 0) scarico; la tensione d'uscita del circuito è:
+(XVII.11.8)
+avendo indicato con fc la frequenza critica; per frequenze al di sotto di 0,1 fc il circuito si
+comporta come derivatore. Il valore della frequenza critica è: fc = 1 / (2RC).
+Fig. XVII.11.7   Circuiti con AO: a) circuito integratore; b) circuito derivatore.
+Nel circuito della Fig. XVII.11.7b, l'effetto di derivazione è dovuto ai componenti Rf,
+C e all'AO. La resistenza R ha la funzione di evitare la saturazione dell'AO, dovuta a
+disturbi con frequenze elevate, assimilabili a sinusoidi ad alte frequenze. Infatti, si sup-
+ponga che con il segnale utile si presenti all'ingresso una piccola tensione di disturbo UIn,
+ad andamento sinusoidale e di pulsazione n alta. Se non si inserisce nel circuito la resi-
+stenza R, alle alte frequenze il circuito si comporta come un amplificatore invertente, la
+cui FdT è AV(j) = Zf  ZC =jRf C) =jCRf. La tensione d'uscita dovuta al solo
+disturbo è UUn = jnCRfUIn, il cui valore aumenta al crescere di n, quindi l'AO si satura.
+Se si inserisce R, alle alte frequenze è 1 / (2RC) « R, e l'apporto della serie R, C è dovuto
+essenzialmente a R; il circuito si comporta come un amplificatore invertente con amplifi-
+cazione Rf R, e quindi un disturbo sommato al segnale d'ingresso non satura l'amplifica-
+tore e la tensione d'uscita è quella prevista dalla XVII.11.8.
+11.4  Circuiti non lineari con amplificatori operazionali
+Nei circuiti non lineari con AO non si utilizza la reazione negativa, e quindi gli AO si
+saturano, lavorando fra le tensioni di saturazione positiva e negativa. Sono esaminati: i
+circuiti comparatori, il trigger di Schmitt e i circuiti raddrizzatori di precisione.
+A)  Comparatore di tensioni
+Un esempio di comparatore realizzato con AO ideale è riportato nella Fig. XVII.11.8a.
+La tensione d'ingresso uI viene confrontata con la tensione di riferimento URIF; le tensione
+di alimentazione sono UCC e UEE. La caratteristica di trasferimento del comparatore, il
+cui andamento è riportato nella Fig. XVII.11.8b, presenta una regione lineare e due regioni
+di saturazione. L'intervallo di linearità è compreso fra i valori della tensione d'ingresso di
+UEE  AO e UCC  AO; dato che l'amplificazione ad anello aperto AO è molto elevata, si ha
+linearità in un intervallo di poche decine di microvolt della tensione d'ingresso e la parte
+lineare della caratteristica ha pendenza quasi infinita. Si può ritenere pertanto che: per uI
+ URIF, prevale l'ingresso invertente, quindi è uU   UEE (l'uscita è bassa); per uI   URIF
+prevale l'ingresso non invertente, quindi è uU   UCC (l'uscita è alta).
+Un problema posto dai comparatori è la risposta in presenza di disturbi o di rumore. Si
+uU
+RfC
+duI
+dt
+-------
+–
+=
+per f
+0,1fc
+
+R
+Rf
+uU
+
+
+a)
+uI
+C
+b)
+R
+Rf
+uU
+
+
+uI
+C
+
+[PAG 1680]
+XVII-80
+ELETTRONICA ANALOGICA E DIGITALE
+consideri, ad esempio, il caso di una tensione uI avente l'andamento indicato nella Fig.
+XVII.11.8c, risultante di una tensione d'ingresso a cui è sovrapposta una tensione di
+disturbo. Per valori della tensione risultante che intercettano e poi superano o scendono al
+di sotto della tensione di riferimento, si hanno transizioni dell'uscita del comparatore.
+Fig. XVII.11.8   Circuito comparatore con AO: a) schema di principio del circuito;
+b) curva caratteristica di trasferimento; c) esempio dell'andamento della tensione d'uscita
+del comparatore quando la tensione d'ingresso è variabile.
+Un comparatore è utilizzato come interfaccia fra un dispositivo analogico e uno digi-
+tale. Per questo scopo esistono particolari comparatori realizzati in forma di circuiti inte-
+grati, chiamati comparatori di tensione; tali dispositivi hanno una tensione d'uscita che
+assume solo due livelli asimmetrici di saturazione stabili, compatibili con i livelli logici
+delle famiglie di integrati digitali.
+B)  Trigger di Schmitt
+Il trigger di Schmitt è sostanzialmente un comparatore in cui la tensione di riferimento
+non è fissa. Un esempio di trigger di Schmitt è riportato nella Fig. XVII.11.9a. La tensione
+di riferimento con cui è confrontata uI è applicata all'ingresso invertente. Considerando
+che l'AO ideale non assorbe corrente, in R2 e R1 circola la stessa la corrente, le due resi-
+stenze sono in serie, e la tensione all'ingresso non invertente è u+  uUR1(R2  R1).
+Fig. XVII.11.9   Trigger di Schmitt: a) circuito; b) ciclo d'isteresi della caratteristica di
+trasferimento del trigger; c) esempio dell'andamento della tensione d'uscita del trigger in
+cui la tensione d'ingresso è variabile.
+uI
+uU
+UCC
+UEE
+URIF
+
+
+a)
+uU
+uI
+UCC
+UEE
+URIF
+0
+b)
+uI
+uU
+URIF
+UCC
+UEE
+0
+0
+t
+t
+c)
+uI
+uU
+R2
+u
+a)
+R1
+
+uU
+uI
+UCC
+UEE
+0
+US1
+US2
+b)
+uI
+uU
+US2
+US1
+0
+UCC
+UEE
+0
+t
+t
+c)
+
+[PAG 1681]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-81
+Con riferimento alla Fig. XVII.11.9a e alla Fig. XVII.11.9b, si supponga che uI  u+; le
+tensioni d'uscita e di riferimento sono: uU  UCC e u+  UCC R1(R2  R1) = US2, con US2
+indicata anche come tensione di soglia superiore. Da questo punto al variare di uI si pos-
+sono fare le seguenti considerazioni.
+–  Al crescere di uI, la tensione d'uscita rimane costante fino a quando la tensione
+d'ingresso non diviene uguale e supera la tensione di riferimento US2.
+–  Per uI  US2  u+, si ha una commutazione, le tensioni d'uscita e di riferimento
+divengono: uU   UEE e u+  UEER1(R2  R1) = US1, dove US1, indicata anche come
+tensione di soglia inferiore, è la nuova tensione di riferimento.
+–  Al crescere ulteriore di uI, si ha pertanto ancora uU   UEE.
+–  A partire da uI  US2, se uI diminuisce, la tensione d'uscita rimane uU   UEE, fino
+a quando la tensione d'ingresso non diviene uguale e inferiore alla tensione di riferimento
+US1.
+–  Per uI  US1  u+, si ha una commutazione, e le tensioni d'uscita e di riferimento
+sono: uU  UCC e u+  UCCR1(R2  R1) = US2.
+–  Al crescere di uI, il ciclo descritto, rappresentato nella Fig. XVII.11.9b, si ripete.
+Dal diagramma della Fig. XVII.11.9b, si deduce che l'andamento della tensione
+d'uscita, in funzione della tensione d'ingresso, segue un ciclo, detto ciclo di isteresi, in
+analogia al ciclo di isteresi nei materiali ferromagnetici. Il comportamento è diverso, a
+seconda che si parta da tensioni d'ingresso basse e si aumenti la tensione, oppure si parta
+da tensioni d'ingresso alte e si diminuisca la tensione all'ingresso. Si nota che, nella
+regione di funzionamento fra US1 e US2, a parità di tensione d'ingresso, sono possibili due
+valori della tensione d'uscita del trigger di Schmitt, UCC e UEE; il valore dipende
+dall'andamento della tensione d'ingresso e quindi del tratto di curva interessato dal funzio-
+namento.
+Il trigger di Schmitt ha il vantaggio di eliminare le commutazioni multiple del compa-
+ratore, come illustrato nella Fig. XVII.11.9c.
+C)  Raddrizzatori di precisione
+I circuiti raddrizzatori di precisione con AO hanno il vantaggio di non presentare i
+problemi posti dalla tensione di soglia e dalla caduta di tensione che si hanno nei raddriz-
+zatori a diodo a giunzione. Nella Fig. XVII.11.10 sono riportati lo schema di un raddrizza-
+tore di precisione in a) e la forma d'onda d'uscita in b), nel caso di segnale di ingresso
+sinusoidale.
+Nel circuito della Fig. XVII.11.10a, quando è uI  0, il diodo D1 è polarizzato diretta-
+mente e conduce; l'uscita dell'AO uU1 è negativa. Questa tensione polarizza inversamente
+il diodo D2 che si comporta come un circuito aperto, di conseguenza la corrente in R2 è
+nulla e la tensione d'uscita uU è uguale alla tensione dell'ingresso invertente. Essendo l'AO
+ideale la tensione differenziale è uId = 0, l'ingresso invertente dell'AO è allora a potenziale
+zero o a massa virtuale, pur non essendo collegato a massa, e quindi la tensione d'uscita
+uU vale zero.
+Quando è uI  0, l'uscita dell'operazionale è positiva; il diodo D1 è interdetto e si com-
+porta come un circuito aperto, mentre il diodo D2 conduce e si comporta come un corto-
+circuito. Il circuito quindi diviene un amplificatore operazionale invertente con uU   (R2
+R1)uI. Per R2 = R1, si ha che uU = uI.
+Nella Fig. XVII.11.10 sono riportati in c) lo schema e in d) le forme d'onda delle tensioni
+d'ingresso e d'uscita di un raddrizzatore di precisione ad onda intera. Il circuito è costituito
+da un raddrizzatore di precisione ad una semionda e di un sommatore. Per R1  R2  R3 
+R e R4  R5  2R, la tensione d'uscita del sommatore è uU   (R5R4)uI (R5R3)uU1, con
+uI non amplificata, essendo R5R4  1, mentre uU1 è amplificata, in quanto R5R3  2.
+
+[PAG 1682]
+XVII-82
+ELETTRONICA ANALOGICA E DIGITALE
+Per uI  0, la tensione uU1 è uguale a zero e l'uscita del sommatore è uU  uI. Per  uI  0,
+l'uscita del raddrizzatore di precisione ad una semionda è uU1  uI, quindi l'uscita uU è:
+Fig. XVII.11.10   Raddrizzatori di precisione: a) schema del raddrizzatore ad una
+semionda; b) forma d'onda d'uscita del raddrizzatore ad una semionda; c) schema del rad-
+drizzatore ad onda intera; d) forme d'onda d'ingresso e d'uscita del raddrizzatore ad onda
+intera.
+12  SISTEMI DI NUMERAZIONE E CODICI NUMERICI E ALFANUMERICI
+In questo paragrafo sono esaminati i principali sistemi di numerazione, i metodi di
+conversione fra i diversi sistemi, ed i codici numerici e alfanumerici più usati nei circuiti
+digitali.
+12.1  Sistemi numerici
+I1 più comune sistema di rappresentazione dei numeri è posizionale - pesato, per il
+quale il valore corrispondente ad una cifra (digit) è determinato dalla cifra stessa e dalla
+posizione che questa occupa nella sequenza di cifre del numero. Per base o radice di un
+sistema numerico s'intende il numero di cifre distinguibili. I numeri con parte frazionaria,
+posizionali-pesati, hanno la struttura: (N)r  dn1dn2...d2d1d0,d1d2...d(m1)dm. In essa si
+indica con: r la radice o base del sistema di numerazione; (N)r il numero considerato
+espresso in base r; di, essendo m  i  n 1, la cifra appartenente all'insieme di valori defi-
+niti sulla base r.
+La virgola separa la parte intera dalla parte frazionaria, ed il peso di una cifra è deter-
+minato dalla posizione che la cifra stessa occupa in relazione alla posizione della virgola.
+Il numero di cifre è n  m: la parte intera ha n cifre e la parte frazionaria ne ha m. La cifra
+più significativa è dn1 ed è indicata con MSD (Most Significant Digit); dm è la cifra meno
+significativa, indicata con LSD (Least Significant Digit). Il valore di un numero con parte
+frazionaria in un sistema in base r, (N)r, è dato dalla relazione:
+uU
+R5
+R4
+-----
+–
+
+
+
+uI
+R5
+R3
+-----
+–
+
+
+
+uU1
++
+u
+– I
+2
+uI
+–
+
+
+–
+uI
+=
+=
+=
+R2
+D2
+R1
+D1
+uU
+uU1
+a)
+uI
+
+
+uU
+uI
+uU
+b)
+d)
+0
+0
+0
+t
+t
+t
+uI
+uU
+R2
+
+c)
+R1
+
+R4
+R3
+R5
+uU1
+D1
+D2
+
+
+
+[PAG 1683]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-83
+(XVII.12.1)
+Nel sistema decimale si ha: r  10, e le cifre sono 0, 1, 2, 3, 4, 5, 6, 7, 8 e 9. Ad esem-
+pio, per 1953,248 si ha: n  4 (parte intera), m  3 (parte frazionaria), d3  1, d2  9, d1 
+5, d0  3, d1  2, d2  4, d3  8; il valore numerico è:
+1953,248 = 1  103 + 9  102 + 5  101 + 3  100 + 2  101 + 4  102 + 8  103
+12.2  Sistema di numerazione binario naturale
+Nel sistema di numerazione binario posizionale - pesato ogni cifra può assumere solo
+due valori, 0 e 1; la radice o base r vale 2. Le cifre sono dette bit, da binary digit (cifra
+binaria). Ad esempio, con la XVII.12.1, il valore decimale corrispondente al numero bina-
+rio (N)2  11011,01 è: N10 = 1  24 + 1  23 + 0  22 + 1  21 + 1  20 + 0  21 + 1  22 16 
+8  2  1 0,25  27,25. Il sistema descritto è detto binario naturale. 
+Tab. XVII.12.1   Equivalenze nei sistemi decimale, binario, ottale, esadecimale
+Sistema decimale
+Sistema binario  
+naturale
+Sistema Ottale
+Sistema esadecimale
+0
+0000
+000
+0
+1
+0001
+001
+1
+2
+0010
+010
+2
+3
+0011
+011
+3
+4
+0100
+100
+4
+5
+0101
+101
+5
+6
+0110
+110
+6
+7
+0111
+111
+7
+8
+1000
+8
+9
+1001
+9
+10
+1010
+A
+11
+1011
+B
+12
+1100
+C
+13
+1101
+D
+14
+1110
+E
+15
+1111
+F
+N
+
+r
+diri
+i
+m
+–
+=
+n
+1
+–
+
+=
+dn
+1
+– rn
+1
+–
+dn
+2
+– rn
+2
+–
+
+d2r2
+d1r1
+d0r0+
++
++
++
++
++
+=
++d 1
+– r 1
+–
+d 2
+– r 2
+–
+
+d
+m
+1
+–
+
+
+–
+r
+m
+1
+–
+
+
+–
+d m
+– r m
+–
++
++
++
++
+
+[PAG 1684]
+XVII-84
+ELETTRONICA ANALOGICA E DIGITALE
+Gruppi di bit hanno denominazioni particolari: nibble (quattro bit); byte (otto bit);
+word (trentadue bit); double word (sessantaquattro bit). La numerazione secondo il
+sistema binario naturale in nibble è riportata nella Tab. XVII.12.1.
+12.3  Sistemi di numerazione ottale ed esadecimale
+I sistemi ottale ed esadecimale sono usati per avere una scrittura più compatta dei
+numeri binari, facilitandone così il trattamento.
+A)  Sistema ottale
+Nel sistema di numerazione ottale posizionale – pesato, la radice vale 8 e le cifre sono
+0, 1, 2, 3, 4, 5, 6, 7. La corrispondenza fra il sistema esadecimale e quello decimale è
+riportata nella Tab. XVII.12.1. Ad esempio si ha: 56,28 = 5  81 + 6  80 + 2  81 = 40 + 6 +
+0,25  46,2510.
+B)  Sistema esadecimale
+Nel sistema di numerazione esadecimale (Hexadecimal) posizionale – pesato, la
+radice è 16, indicata anche con H, e le cifre sono 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E,
+F. La corrispondenza fra il sistema esadecimale e quello decimale è riportata nella Tab.
+XVII.12.1. Ad esempio, si ha: B38,48H = 11  162 + 3  161 + 8  160 + 4  161 + 8  162 =
+2872,2812510.
+12.4  Conversione di un numero binario naturale nei sistemi ottale ed esadecimale
+A)  Conversione di un numero binario naturale nel sistema ottale
+Dato un numero binario, lo si suddivide in gruppi di tre cifre partendo dalla virgola,
+considerando sia la parte intera sia quella frazionaria, e si converte in cifra ottale ogni
+gruppo. In corrispondenza dei bit più significativi e meno significativi, se il gruppo di bit
+è inferiore a tre, ci si riporta a tre mediante l'aggiunta di zeri; questi si pongono all'inizio
+del numero, se la parte intera è incompleta, e alla fine del numero, se è incompleta la parte
+frazionaria. 
+Infine, le terne di bit sono convertite in cifre ottali (si veda la Tab. XVII.12.1). Ad
+esempio: (1101110,01)2  001 101 110, 010  156,28; sono stati aggiunti due zeri all'ini-
+zio ed uno zero alla fine, per suddividere il numero binario in gruppi di tre bit.
+B)  Conversione di un numero binario naturale nel sistema esadecimale
+Il procedimento di conversione di un numero binario in esadecimale è analogo a
+quello esposto in precedenza. Si suddivide il numero binario in gruppi di quattro cifre par-
+tendo dalla virgola, considerando sia la parte intera sia quella frazionaria. Ad esempio:
+(1101110,01)2  0110 1110, 0100  (6E,4)H, dove si sono aggiunti uno zero all'inizio e
+due zeri alla fine, per suddividere il numero binario in gruppi di quattro bit.
+12.5  Operazioni aritmetiche con numeri interi binari
+Nel sistema binario le operazioni aritmetiche sono eseguite come nel sistema deci-
+male, tenendo conto, però, che le cifre sono due: 0 e 1. Ad esempio, l'addizione di due
+numeri binari si esegue sommando ordinatamente le cifre dello stesso ordine ed al risul-
+tato è aggiunto l'eventuale r
