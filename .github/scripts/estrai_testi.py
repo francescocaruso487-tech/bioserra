@@ -16,8 +16,10 @@ RAW_BASE = f'https://raw.githubusercontent.com/{REPO}/main/'
 CHUNK_SIZE = 45000  # chars per chunk — sotto il limite GitHub 50MB per file
 
 def gh_get(path):
+    import urllib.parse
+    path_encoded = '/'.join(urllib.parse.quote(p, safe='') for p in path.split('/'))
     req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
+        f'https://api.github.com/repos/{REPO}/contents/{path_encoded}', headers=HEADERS_GH)
     with urllib.request.urlopen(req) as r:
         return json.load(r)
 
@@ -29,8 +31,11 @@ def gh_put(path, content_bytes, sha, message):
     encoded = base64.b64encode(content_bytes).decode('ascii')
     body = {'message': message, 'content': encoded, 'branch': 'main'}
     if sha: body['sha'] = sha
+    # Encode path per gestire caratteri non-ASCII nei nomi file
+    import urllib.parse
+    path_encoded = '/'.join(urllib.parse.quote(p, safe='') for p in path.split('/'))
     req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}',
+        f'https://api.github.com/repos/{REPO}/contents/{path_encoded}',
         data=json.dumps(body).encode(),
         headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
     with urllib.request.urlopen(req) as r:
@@ -64,7 +69,11 @@ def scarica_pdf(nome_file):
         raise
 
 def titolo_safe(nome_file):
+    import unicodedata
+    # Normalizza unicode → ASCII (es. á→a, ã→a)
     base = nome_file.replace('.pdf', '').strip()
+    base = unicodedata.normalize('NFKD', base)
+    base = base.encode('ascii', errors='ignore').decode('ascii')
     safe = re.sub(r'[^\w\-]', '_', base)
     safe = re.sub(r'_+', '_', safe).strip('_')
     return safe[:80]
@@ -285,46 +294,4 @@ def main():
     print(f'Rimanenti: {len(da_fare) - len(batch)}')
 
 if __name__ == '__main__':
-    import traceback, sys
-    try:
-        main()
-    except Exception as ex:
-        tb = traceback.format_exc()
-        log = f'CRASH: {type(ex).__name__}: {ex}\n\n{tb}'
-        print(log)
-        # Salva log su GitHub per diagnostica
-        try:
-            import base64, urllib.request, json, datetime
-            TOKEN_LOG = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
-            REPO_LOG = 'francescocaruso487-tech/bioserra'
-            oggi = datetime.date.today().isoformat()
-            path_log = 'data/estrai_crash_log.txt'
-            # SHA
-            try:
-                req_sha = urllib.request.Request(
-                    f'https://api.github.com/repos/{REPO_LOG}/contents/{path_log}',
-                    headers={'Authorization': f'token {TOKEN_LOG}',
-                             'Accept': 'application/vnd.github+json'})
-                with urllib.request.urlopen(req_sha) as r:
-                    sha_log = json.load(r)['sha']
-            except:
-                sha_log = None
-            body_log = json.dumps({
-                'message': f'crash: estrai_testi [{oggi}]',
-                'content': base64.b64encode(log.encode()).decode('ascii'),
-                'branch': 'main',
-                **({'sha': sha_log} if sha_log else {})
-            }).encode()
-            req_put = urllib.request.Request(
-                f'https://api.github.com/repos/{REPO_LOG}/contents/{path_log}',
-                data=body_log,
-                headers={'Authorization': f'token {TOKEN_LOG}',
-                         'Content-Type': 'application/json',
-                         'Accept': 'application/vnd.github+json'},
-                method='PUT')
-            with urllib.request.urlopen(req_put) as r:
-                print('Log salvato su GitHub!')
-        except Exception as log_ex:
-            print(f'Non riesco a salvare log: {log_ex}')
-        sys.exit(1)
-
+    main()
