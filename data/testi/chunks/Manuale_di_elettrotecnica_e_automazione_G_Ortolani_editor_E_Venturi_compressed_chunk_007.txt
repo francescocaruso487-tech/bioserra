@@ -1,0 +1,2895 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 7/116 ===
+Chars: 43,398 | Offset: 265,975
+
+
+
+[PAG 158]
+I-142
+MATEMATICA
+L’integrale del prodotto di un fattore finito f per un fattore differenziale dg è uguale al 
+prodotto del fattore finito f per l’integrale g del fattore differenziale, diminuito dell’inte-
+grale del prodotto dell’integrale trovato g per il differenziale del fattore finito.
+Esempio 1
+Esempio 2
+17.2.4  Integrazione di funzioni razionali fratte
+Dato l’integrale
+(I.17.9)
+con f(x) e g(x) polinomi nella variabile x, se il grado di f(x) non è minore del grado di  g(x) 
+si può eseguire la divisione, dove q(x) e r(x) indicano quoziente e resto:
+Il calcolo dell’integrale viene ricondotto all’integrazione di un polinomio intero e di 
+una funzione razionale propria: è quindi sufficiente risolvere il problema dell’integra-
+zione di una funzione razionale propria.
+ Se il polinomio g(x) ha tutti zeri reali e distinti 1, 2, ..., n è sempre possibile deter-
+minare n costanti k1, k2, ..., kn tali che:
+e l’integrale I.17.9 è la somma degli n integrali:
+Se g(x) ha tutti zeri reali ma non tutti distinti, ad esempio se lo zero i ha molteplicità 
+r, si ha la scomposizione:
+e l’integrale I.17.9 si scompone nella somma degli integrali, con in particolare:
+Se si deve calcolare l’integrale
+xsenx x
+d
+
+xcosx
+–
+cosx
+–
+x
+d
+
+–
+xcosx
+–
+senx
+c
++
++
+=
+=
+x2lnx x
+d
+
+1
+3-- lnx x
+
+3
+x3 1
+x--
+
+x
+d
+
+–
+
+
+
+
+1
+3-- lnx x
+
+3
+x3
+3----
+–
+
+
+
+
+c
++
+=
+=
+f x
+
+g x
+
+---------- x
+d
+
+f x
+
+g x
+
+----------
+q x
+
+r x
+
+g x
+
+----------
++
+=
+f x
+
+g x
+
+----------
+k1
+x
+1
+–
+--------------
+k2
+x
+2
+–
+--------------
+...
+kn
+x
+n
+–
+--------------
++
++
++
+=
+ki
+x
+i
+–
+------------- x
+d
+
+kiln x
+i
+–
+c
++
+=
+i
+1 2 ... n
+
+
+=
+f x
+
+g x
+
+----------
+k1
+x
+1
+–
+--------------
+k2
+x
+2
+–
+--------------
+...
+ki1
+x
+i
+–
+-------------
+ki2
+x
+i
+–
+
+2
+--------------------
+...
+kir
+x
+i
+–
+
+r
+--------------------
+...
+kn
+x
+n
+–
+--------------
++
++
++
++
++
++
++
++
+=
+k
+x
+
+–
+
+p
+------------------- x
+d
+
+k
+p
+1
+–
+-----------
+–
+1
+x
+
+–
+
+p
+1
+–
+--------------------------
+c
++
+=
+ax
+b
++
+x2
+px
+q
++
++
+-------------------------- x
+d
+
+
+[PAG 159]
+MATEMATICA
+I-143
+dove il denominatore ha zeri complessi coniugati, si ha:
+Esempio
+17.3  Integrali definiti
+Si consideri una funzione y = f(x) in un riferimento cartesiano ortonormato Oxy e si 
+supponga tale funzione continua e non negativa in un intervallo chiuso e limitato [a, b]. 
+Per determinare l’area sottesa dalla funzione si suddivide tale l’intervallo in n sottointer-
+valli di ampiezza:
+Per il teorema di Weierstrass in ciascuno di questi intervalli la funzione ammette un 
+valore massimo Mi e un valore minimo mi.
+Fig. I.17.1  Suddivisione del grafico di f(x).
+Si considerino le due somme integrali:
+sn = x  m1 +  x  m2 + ... + x  mn
+Sn = x  M1 +  x  M2 + ... + x  Mn
+Esse rappresentano rispettivamente la somma delle aree dei rettangoli inscritti e la 
+somma delle aree dei rettangoli circoscritti al grafico di f(x). L’area A sottesa dalla fun-
+zione (detta area del trapezoide) è compresa fra le due:
+sn  A    Sn
+Nell’ipotesi che la funzione f(x) sia continua e non negativa in [a, b] la due successioni:
+s1, s2, ..., sn
+ e 
+S1, S2, ..., Sn
+sono convergenti e convergono allo stesso limite:
+(I.17.1)
+ax
+b
++
+x2
+px
+q
++
++
+-------------------------- x
+d
+
+a
+2--ln x2
+px
+q
++
++
+
+
+b
+ap
+2-----
+–
+q
+p2
+4----
+–
+------------------arctg
+x
+p
+2--
++
+q
+p2
+4----
+–
+------------------
+c
++
++
+=
+3x
+5
++
+x2
+x
+2
++
++
+----------------------- x
+d
+
+3
+2--ln x2
+x
+2
++
++
+
+
+7arctg2x
+1
++
+7
+--------------
+c
++
++
+=
+x
+xi
+xi
+1
+–
+–
+b
+a
+–
+n
+-----------
+=
+=
+x
+O
+y
+a
+b
+sn
+n
+
+
+lim
+Sn
+n
+
+
+lim
+=
+
+[PAG 160]
+I-144
+MATEMATICA
+Tale limite è l’area del trapezoide ed è l’integrale definito della funzione f(x) esteso 
+all’intervallo [a, b], che si indica con il simbolo:
+(I.17.2)
+Il calcolo di tale area viene ricondotto alla determinazione della funzione F(x) primi-
+tiva di f(x); l’area è data dalla formula di Newton – Leibniz: nelle ipotesi che f(x) sia con-
+tinua in [a, b] e F(x) sia una sua primitiva, allora:
+(I.17.3)
+Proprietà dell’integrale definito
+–  
+–  
+–  
+–  
+–  
+–  Se f(x)  g(x) per ogni x  [a, b], allora 
+.
+–  Teorema fondamentale del calcolo integrale (Torricelli-Barrow). Se la funzione inte-
+granda f(x) è continua in [a, b], la funzione integrale
+è derivabile in [a, b] e F(x) = f(x) per ogni x  [a, b].
+–  Teorema della media. Se f(x) è continua in [a, b], allora esiste c  [a, b] tale che
+Esempio
+Calcolare l’area della parte di piano compresa tra la curva y = x3  1 e l’asse x
+nell’intervallo [1, 3].
+Poiché la funzione interseca l’asse x nel punto (1, 0) dove cambia di segno, il calcolo 
+dell’integrale deve essere suddiviso in due: tra –1 e 1 e tra 1 e 3:
+f x
+x
+d
+a
+b
+
+f x
+x
+d
+a
+b
+
+F b
+
+F a
+
+–
+=
+f x
+x
+d
+a
+b
+
+f x
+x
+d
+b
+a
+
+–
+=
+kf x
+x
+d
+a
+b
+
+k
+f x
+x
+d
+a
+b
+
+=
+f x
+
+g x
+
+
+
+x
+d
+a
+b
+
+f x
+x
+d
+a
+b
+
+g x
+x
+d
+a
+b
+
+
+=
+f x
+x
+d
+a
+a
+
+0
+=
+f x
+x
+d
+a
+b
+
+f x
+x
+d
+a
+c
+
+f x
+x
+d
+c
+b
+
++
+=
+con c
+a b
+[ , ]
+
+f x
+x
+d
+a
+b
+
+g x
+x
+d
+a
+b
+
+
+F x
+
+f ttd
+a
+x
+
+=
+f x
+x
+d
+a
+b
+
+b
+a
+–
+
+f c
+
+
+=
+A
+x3
+1
+–
+
+x
+d
+1
+–
+1
+
+x3
+1
+–
+
+x
+d
+1
+3
+
++
+F 1
+
+F
+1
+–
+
+
+–
+F 3
+
+F 1
+
+–
++
+=
+=
+
+[PAG 161]
+MATEMATICA
+I-145
+17.4  Volumi dei solidi di rotazione
+Sia AB un arco di curva di equazione y = f(x) e siano a e b le ascisse rispettivamente di 
+A e B. Considerati i punti C(b, 0) e D(a, 0), il trapezoide ABCD, delimitato dalla curva y, 
+dall'asse x e dalle rette x = a e x = b, ruotando di un giro completo attorno all'asse x genera 
+un solido di rotazione. Sezionando tale solido con un piano perpendicolare all'asse x si 
+ottiene, come sezione, un cerchio col centro sull'asse x e raggio f(x). Considerando un 
+numero sufficientemente grande di tali sezioni, poste ad una distanza dx una dall’altra, il 
+solido verrà decomposto in tanti piccoli solidi che possono essere assimilati a dei cilindri 
+infinitesimi di altezza dx.
+Fig. I.17.3   Costruzione del solido di rotazione.
+Si consideri un generico cilindro di raggio di base r = f(x) e altezza dx. Il suo volume 
+è dato da:
+dV =   [f(x)]2dx
+Fig. I.17.2   Grafico di y = x3  1.
+dove
+F x
+
+x4
+4----
+x
+–
+c
++
+=
+e quindi
+A
+3
+4--
+–
+5
+4--
+–
+69
+4-----
+3
+4--
+–
+
+
+
+
+–
++
+20
+=
+=
+x
+0
+y
+1
+1
+3
+1
+x
+0
+y
+A
+B
+C
+b
+D
+a
+dx
+
+[PAG 162]
+I-146
+MATEMATICA
+Il volume di tutto il solido è uguale alla somma dei volumi di tutti gli infiniti cilindri 
+infinitesimi e si trova mediante l'integrale definito:
+(I.17.4)
+17.5  Integrali curvilinei
+Data la curva  di equazione y = f(x) si consideri l’arco di estremi A e B, rispettiva-
+mente di ascisse a e b con a < b. Inscritta una poligonale di vertici P0 = A, P1, P2, ..., Pn = 
+B, siano x0 = a, x1, x2, ..., xn = b le ascisse dei vertici e yi = f(xi) le ordinate. La lunghezza 
+di tale spezzata approssima per difetto la lunghezza l dell'arco AB di curva, che è pari al 
+limite della lunghezza ln della spezzata di n lati inscritta al tendere di n all'infinito.
+Si dimostra:
+(I.17.5)
+Se la curva  è rappresentata con le sue equazioni parametriche x = x(t), y = y(t) con t 
+variabile nell’intervallo [t0, t1], la lunghezza l di  è data dalla formula:
+(I.17.6)
+La curva  ruotando attorno all’asse x genera una superficie di rotazione. Si dimostra 
+che l’area S di tale superficie è data da:
+(I.17.7)
+Esempio
+Si calcoli la lunghezza della circonferenza di raggio r.
+Le equazioni parametriche della circonferenza sono:
+Quindi x(t) = rsent, y(t) = rcost da cui:
+17.6  Integrali impropri
+Sia y = f(x) una funzione definita e continua nell’intervallo [a, +); l’integrale
+esiste qualunque sia  reale con  > a. Se esiste il limite
+(I.17.8)
+ed è un numero determinato e finito, la funzione f(x) è integrabile in [a, +) e, per definizione:
+(I.17.9)
+V
+
+f x
+
+
+2 x
+d
+a
+b
+
+
+=
+l
+1
+fx
+
+
+2
++
+x
+d
+a
+b
+
+=
+l
+xt
+
+2
+yt
+
+2
++
+td
+t0
+t1
+=
+S
+2
+f x
+1
+fx
+
+
+2
++
+x
+d
+a
+b
+
+=
+oppure
+S
+2
+y t
+xt
+
+2
+yt
+
+2
++
+td
+t0
+t1
+=
+x
+rcost
+=
+y
+rsent
+=
+
+
+
+con 0
+t
+2
+
+l
+r2sen2t
+r2cos2t
++
+td
+0
+2
+
+r2 sen2t
+cos2t
++
+
+td
+0
+2
+
+r2 td
+0
+2
+
+r td
+0
+2
+
+2r
+=
+=
+=
+=
+=
+I 
+
+f x
+x
+d
+a
+
+=
+I 
+
+
++
+lim
+f x
+x
+d
+a
++
+
+f x
+x
+d
+a
+
+
++
+lim
+=
+
+[PAG 163]
+MATEMATICA
+I-147
+Se invece il limite I.17.8 non esiste o è infinito, f(x) non è integrabile in [a, ).
+Analogamente si può considerare il comportamento della funzione negli intervalli 
+(, a], (, ).
+Gli integrali estesi ad intervalli illimitati sono un esempio di integrali impropri.
+Esempio 1
+L’integrale è perciò divergente, la funzione non è integrabile in [1, ).
+Esempio 2
+L’integrale perciò esiste, la funzione è integrabile in [0, ).
+17.7  Integrabilità delle funzioni discontinue
+Si consideri la funzione f(x) definita e continua nell’intervallo [a, b), cioè non definita 
+o definita ma non continua nell’estremo b. Se  è un qualunque numero reale minore di b, 
+l’integrale
+esiste ed è una funzione di . Se esiste ed è finito il limite
+(I.17.10)
+si dice che f(x) è integrabile in [a, b), e per definizione:
+(I.17.11)
+Se invece il limite I.17.10 non esiste o è infinito, f(x) non è integrabile in [a, b).
+Analogamente si può considerare il caso in cui la funzione sia continua in (a, b].
+Se la funzione f(x) presenta un punto di discontinuità x0 interno all’intervallo [a, b] e 
+la funzione è integrabile sia in [a, x0) che in (x0, b], si pone:
+(I.17.12)
+Esempio
+Calcolare l’integrale:
+La funzione non è definita nel punto x = 1, ma è calcolabile l’integrale con 1 <   2:
+1
+x-- x
+d
+1
++
+
+1
+x-- x
+d
+1
+
+
++
+lim
+ln
+ln1
+–
+
+
+
++
+lim
+ln
+
++
+lim
+
+=
+=
+=
+=
+1
+1
+x2
++
+------------- x
+d
+0
++
+
+1
+1
+x2
++
+-------------- x
+d
+0
+
+
++
+lim
+arctg
+arctg0
+–
+
+
+
++
+lim
+arctg
+
++
+lim
+
+2--
+=
+=
+=
+=
+I 
+
+f x
+x
+d
+a
+
+=
+I 
+
+
+b
+
+lim
+f x
+x
+d
+a
+b
+f x
+x
+d
+a
+
+
+b
+
+lim
+=
+f x
+x
+d
+a
+b
+f x
+x
+d
+a
+x0
+f x
+x
+d
+x0
+b
++
+=
+1
+x
+1
+–
+--------------- x
+d
+1
+2
+1
+x
+1
+–
+--------------- x
+d
+
+2
+
+[PAG 164]
+I-148
+MATEMATICA
+Allora si ha:
+La funzione data è integrabile e tale integrale vale 2.
+18  EQUAZIONI DIFFERENZIALI
+18.1  Definizioni
+Si chiama equazione differenziale un’equazione che mette in relazione le variabili x e 
+y e le derivate y, y, ..., y(n) di y rispetto ad x:
+F(x, y, y, y, ..., y(n)) = 0
+(I.18.1)
+Se y = f(x) è una funzione di una sola variabile indipendente x, l'equazione I.18.1 si 
+dice ordinaria.
+Se nella I.18.1 compaiono solo derivate prime, essa si dice equazione differenziale del 
+primo ordine e si presenta nella forma F(x, y, y) = 0; se ci sono derivate seconde si dice 
+del secondo ordine ed è del tipo F(x, y, y, y) = 0; in generale l’ordine è il più alto ordine 
+di derivazione che compare esplicitamente.
+Si chiama soluzione (o integrale particolare) dell’equazione differenziale I.18.1 una 
+qualsiasi funzione y = f(x) che la soddisfa. Geometricamente la soluzione rappresenta una 
+curva piana a cui si dà il nome di curva integrale.
+Se la funzione differenziale è del primo ordine e y = f(x) è una soluzione, deve valere:
+F(x, f(x), f (x)) = 0
+Considerando l’equazione di primo ordine y = f(x) con f(x) continua in un intervallo I, 
+la funzione y = y(x) è una primitiva di f(x), quindi:
+(I.18.2)
+dove c è una costante arbitraria. Un’equazione differenziale del primo ordine ha quindi 1
+soluzioni che dipendono da c.
+In generale un'equazione differenziale ha una infinità di soluzioni che dipendono da 
+un numero di costanti arbitrarie pari all’ordine n dell’equazione stessa; le soluzioni sono 
+espressioni del tipo:
+y = f(x, c1, c2, ..., cn)
+(I.18.3)
+con c1, c2, ..., cn costanti arbitrarie. La funzione I.18.3 si chiama integrale generale
+dell’equazione differenziale, mentre ogni soluzione dedotta da esso attribuendo partico-
+lari valori numerici alle costanti si dice integrale particolare dell’equazione.
+Esempio
+Integrando l’equazione y = x2 si ottiene l’integrale generale:
+Assegnando a c valori numerici si ottengono integrali particolari dell'equazione.
+Per determinare univocamente dalla soluzione generale un integrale particolare è 
+necessario associare all'equazione differenziale delle condizioni supplementari, dette con-
+1
+x
+1
+–
+--------------- x
+d
+
+2
+
+1+
+
+lim
+2 1
+
+1
+–
+–
+
+
+
+1+
+
+lim
+2
+=
+=
+y x
+
+f x
+x
+d
+
+c
++
+=
+y
+x2 x
+d
+
+1
+3--x3
+c
++
+=
+=
+
+[PAG 165]
+MATEMATICA
+I-149
+dizioni iniziali. Nello studio di un processo che si sviluppa nel tempo, le condizioni ini-
+ziali rappresentano l'espressione matematica dello stato iniziale del processo. Nel caso 
+generale I.18.1 le condizioni iniziali si ottengono assegnando un valore fissato x0 alla 
+variabile x, da cui:
+y = f(x0), y = f (x0), ..., y(n) = f (n)(x0)
+Poiché l’integrale generale I.18.3 contiene n costanti arbitrarie, le n condizioni poste 
+sono sufficienti per determinare queste costanti e per trovare così una soluzione partico-
+lare. Geometricamente una condizione iniziale rappresenta la richiesta che la curva 
+(ovvero in grafico della funzione) passi per un punto specifico del piano. Se sono note la 
+legge differenziale che regola il processo di sviluppo di un fenomeno e le condizioni ini-
+ziali, il processo è pienamente definito.
+Gli integrali particolari che non possono essere ricavati dall'integrale generale sono 
+detti integrali singolari.
+18.2  Equazioni differenziali del primo ordine
+Un’equazione differenziale ordinaria del primo ordine si dice in forma normale
+quando è data in forma esplicita rispetto alla derivata:
+y = f(x, y)
+(I.18.4)
+La I.18.4 si può scrivere anche come
+e quindi si può presentare nella forma più generale
+M(x, y)dx + N(x, y)dy = 0
+(I.18.5)
+Equazioni differenziali a variabili separate
+Un’equazione differenziale del primo ordine si dice a variabili separate quando il 
+coefficiente di dx è funzione solo di x ed il coefficiente di dy è funzione solo di y:
+M(x)dx + N(y)dy = 0
+(I.18.6)
+L’integrale generale di tale equazione si ottiene integrando ambo i membri:
+M(x)dx + N(y)dy = c
+(I.18.7)
+Esempio 1
+Data l’equazione xdx + ydy = 0 calcolare il suo integrale particolare con la condizione 
+iniziale y(6) = 8.
+L’integrale generale è dato da x2 + y2 = c, e graficamente rappresenta l’insieme delle 
+circonferenze con il centro nell’origine; per ogni punto del piano passa una ed una sola 
+curva integrale, tranne nell’origine dove i coefficienti di dx e dy si annullano simultanea-
+mente. La curva integrale particolare ottenuta sostituendo nell’integrale generale la condi-
+zione iniziale 62 + 82 = c, da cui c = 100, è la circonferenza con centro nell’origine e 
+raggio r = 10.
+Esempio 2
+Data l’equazione xsenxdx + ydy = 0, si ottiene:
+dy
+f x y
+
+
+dx
+–
+0
+=
+con
+y
+dy
+dx
+-----
+=
+xsenx x
+d
+
+y y
+d
+
++
+c
+=
+
+[PAG 166]
+I-150
+MATEMATICA
+Equazioni differenziali a variabili separabili
+Un’equazione differenziale del primo ordine si dice a variabili separabili quando i 
+coefficienti di dx e dy sono entrambi prodotti di una funzione della sola x per una funzione 
+della sola y:
+N(x)  M(y)dx + N1(x)  M1(y)dy = 0
+(I.18.8)
+Dividendo entrambi i membri per M(y)  N1(x) ci si riconduce al caso precedente di 
+equazione differenziale a variabili separate:
+(I.18.9)
+Esempio
+Data l’equazione
+ysenxcosxdx + (1 + cos2x)dy = 0
+una sua soluzione è y = 0; posto y  0  e dividendo per y  (1 + cos2x) si ottiene:
+da cui integrando
+Ponendo c = lnk e passando dai logaritmi ai numeri:
+Equazioni lineari del primo ordine
+Un’equazione differenziale del primo ordine si dice lineare quando l’incognita y e la 
+sua derivata y figurano al massimo con esponente 1:
+y + p(x)  y = q(x)
+(I.18.10)
+dove p(x) e q(x) sono funzioni della variabile x continue in un intervallo (a, b).
+Se q(x) = 0 l’equazione si dice lineare omogenea; se q(x)  0 si dice lineare non omogenea.
+L’integrale generale della  I.18.10 è dato da:
+(I.18.11)
+xcosx
+–
+senx
+y2
+2----
++
++
+c
+=
+y
+2xcosx
+2senx
+c
++
+–
+
+=
+N x
+
+N1 x
+
+------------- dx
+M1 y
+
+M y
+
+-------------- dy
++
+0
+=
+senxcosx
+1
+cos2x
++
+----------------------dx
+dy
+y-----
++
+0
+=
+1
+2--ln 1
+cos2x
++
+
+
+–
+ln y
++
+c
+=
+y
+1
+cos2x
++
+--------------------------
+k
+=
+y
+k 1
+cos2x
++
+=
+y
+e
+p x
+x
+d
+
+–
+q x
+e
+p x
+x
+d
+
+
+x
+c
++
+d
+
+=
+
+[PAG 167]
+MATEMATICA
+I-151
+Esempio 1
+Risolvere l’equazione lineare non omogenea y + 2xy = x determinando l’equazione 
+della curva integrale passante per il punto P(0, 3).
+Applicando la I.18.11:
+Sostituendo le coordinate di P nell’integrale generale si determina il valore di c:
+Esempio 2
+Risolvere l’equazione lineare non omogenea y + y = senx.
+Applicando la I.18.11:
+Equazioni di Bernoulli
+Prendono questo nome le equazioni del tipo:
+y + p(x)y = q(x)yn
+(I.18.12)
+dove p(x) e q(x) sono funzioni continue e n  R  {0, 1} (altrimenti si ricadrebbe nel caso 
+delle equazioni lineari).
+La I.18.12 si può trasformare in un’equazione lineare ponendo z = y1  n e operando nel 
+seguente modo:
+y
+e
+2x x
+d
+
+–
+xe
+2x x
+d
+
+x
+c
++
+d
+
+=
+y
+e x2
+–
+xex2
+x
+c
++
+d
+
+=
+y
+e x2
+–
+1
+2--ex2
+c
++
+=
+y
+c e
+
+x2
+–
+1
+2--
++
+=
+3
+c
+1
+2--
++
+=
+c
+5
+2--
+=
+y
+e
+x
+d
+–
+senx e
+
+x
+d
+x
+c
++
+d
+
+=
+y
+e x
+–
+senx e
+
+x x
+c
++
+d
+
+
+
+=
+y
+e x
+–
+ex senx
+cosx
+–
+2
+---------------------------
+c
++
+
+=
+y
+senx
+cosx
+–
+2
+---------------------------
+c e x
+–
+
++
+=
+y
+z
+1
+1
+n
+–
+-----------
+=
+y
+1
+1
+n
+–
+----------- z
+
+n
+1
+n
+–
+-----------
+z
+
+=
+
+[PAG 168]
+I-152
+MATEMATICA
+(I.18.13)
+Ad ogni integrale z(x) della I.18.13 corrisponde l’integrale
+Va poi considerato separatamente l’integrale y = 0.
+Esempio
+Data l’equazione
+si ha: p(x) = 2tgx,  q(x) = 2,  n = 1/2.
+2zz2tgx  z2 = 2z
+ztgx  z = 1
+Applicando la I.18.11:
+L’integrale generale della funzione iniziale risulta perciò:
+L’integrale y = 0 non si può ottenere da esso per nessun valore di c, quindi è un inte-
+grale singolare.
+Equazioni del tipo y = f(ax + by)
+Data l’equazione
+y = f(ax + by)
+(I.18.14)
+con f funzione continua ed a e b costanti diverse da zero, si assuma come nuova incognita 
+la funzione
+1
+1
+n
+–
+-----------z
+n
+1
+n
+–
+-----------
+z
+p x
+z
+1
+1
+n
+–
+-----------
++
+
+q x
+z
+n
+1
+n
+–
+-----------
+=
+da cui dividendo per 
+1
+1
+n
+–
+-----------z
+n
+1
+n
+–
+-----------
+z
+1
+n
+–
+
+p x
+z
++
+1
+n
+–
+
+q x
+
+=
+y x
+
+z x
+
+
+
+1
+1
+n
+–
+-----------
+=
+y
+2tgx y
+
+–
+2 y
+=
+Posto z
+y
+1
+1
+2--
+–
+y
+1
+2--
+ si ha y
+z2 y
+
+2zz da cui: 
+=
+=
+=
+=
+z
+e
+tgx x
+d
+
+1 e
+tgx x
+d
+
+–
+x
+c
++
+d
+
+
+=
+z
+1
+cosx
+----------
+cosx x
+c
++
+d
+
+
+
+=
+z
+tgx
+c
+cosx
+----------
++
+=
+y
+tgx
+c
+cosx
+----------
++
+
+
+
+2
+=
+
+[PAG 169]
+MATEMATICA
+I-153
+z = ax + by
+da cui si ricavano
+La I.18.14 si trasforma in
+cioè z = a + bf(z) che è un’equazione a variabili separabili.
+Ad ogni integrale z(x) corrisponde l’integrale della I.18.14:
+Esempio
+Data l’equazione y = (x + y)2, posto z = x + y, si ricava y = z  x, da cui y = z1. 
+Inoltre z1 + y, z1 + z2. Separando le variabili e integrando:
+arctgz = x + c
+z = tg(x + c)
+L’integrale generale della funzione data risulta essere perciò:
+y = tg(x + c)  x
+Equazioni omogenee
+Un’equazione differenziale del primo ordine si dice omogenea quando il secondo 
+membro è funzione continua omogenea di grado zero:
+(I.18.15)
+Se l’equazione è scritta nella forma:
+M(x, y)dx + N(x, y)dy = 0
+è omogenea quando M(x, y) e N(x, y) sono funzioni omogenee dello stesso grado:
+ed in tal caso il secondo membro è di grado zero. Per risolverle si assume come nuova 
+incognita
+da cui si ricavano y = xz e y = z + xz.
+Quindi la I.18.15 è ricondotta ad un’equazione a variabili separabili:
+z + xz= f(z)
+y
+z
+ax
+–
+b
+-------------
+=
+y
+z
+a
+–
+b
+------------
+=
+f z
+z
+a
+–
+b
+------------
+=
+y x
+
+z x
+
+ax
+–
+b
+---------------------
+=
+1
+1
+z2
++
+-------------dz
+dx
+=
+y
+f
+y
+x--
+
+
+=
+y
+M x y
+
+
+
+N x y
+
+
+
+-----------------
+–
+=
+z
+y
+x--
+=
+
+[PAG 170]
+I-154
+MATEMATICA
+Ad ogni integrale z(x) corrisponde l’integrale della I.18.15 y(x) = xz(x).
+Esempio
+Data l’equazione omogenea
+si pone
+quindi l’equazione diventa:
+z + xz= z2 + z + 1
+xz= z2 + 1
+Separando le variabili e integrando:
+arctgz = lnx + c
+z = tg(lnx + c)
+Pertanto l’integrale generale è y = xtg(lnx + c).
+Equazioni del tipo 
+Data l’equazione
+(I.18.16)
+siano f continua ed a, b, c, a1, b1, c1 costanti tali che ab1  a1b  0 e c, c1 non entrambe 
+nulle. In tali ipotesi le due rette ax + by + c = 0 e a1x + b1y + c1 = 0 hanno in comune un 
+punto (, ) diverso dall’origine. Determinato tale punto si pongono x = u +  e y = v + , 
+dove u e v sono due nuove variabili, e si ottiene:
+(I.18.17)
+ax + by + c = au + bv a1x + b1y + c1 = a1u + b1v
+La I.18.16 è pertanto riconducibile ad un’equazione omogenea:
+(I.18.18)
+z
+f z
+z
+–
+x
+----------------
+=
+y
+y
+x--
+
+2
+y
+x--
+1
++
++
+=
+z
+y
+x--
+=
+1
+1
+z2
++
+-------------dz
+1
+x--dx
+=
+y
+f
+ax
+by
+c
++
++
+a1x
+b1y
+c1
++
++
+----------------------------------
+
+
+
+
+=
+y
+f
+ax
+by
+c
++
++
+a1x
+b1y
+c1
++
++
+----------------------------------
+
+
+
+
+=
+y
+dy
+dx
+-----
+d v
+
++
+
+
+d u
+
++
+
+
+--------------------
+dv
+du
+-----
+=
+=
+=
+dv
+du
+-----
+f
+au
+bv
++
+a1u
+b1v
++
+-----------------------
+
+
+
+
+f
+a
+bv
+u--
++
+a1
+b1
+v
+u--
++
+--------------------
+
+
+
+
+
+
+
+
+
+
+=
+=
+
+[PAG 171]
+MATEMATICA
+I-155
+Ad ogni integrale v = v(u) corrisponde l’integrale y =  + v(x  ) dell’equazione data.
+18.3  Equazioni differenziali del primo ordine in forma non normale
+Equazioni nella forma x = f(y)
+Sia la funzione f(y) dotata di derivata prima continua; posto y = p si ha
+dy = pdx x = f(p)
+da cui differenziando si ottiene dx = f (p)dp. Da ciò segue dy = pf (p)dp e quindi inte-
+grando:
+L’integrale generale dell’equazione è dato in forma parametrica da:
+(I.18.19)
+Equazioni nella forma y = f(y)
+Sia la funzione f(y) dotata di derivata prima continua; posto y = p con p  0 si ottiene:
+y = f(p)
+Differenziando e tenendo conto che dy = pdx si ha dy = f (p)dp, da cui pdx = f (p)dp.
+Integrando quindi si ha
+Anche in questo caso l’integrale generale è dato in forma parametrica da:
+(I.18.20)
+Equazione di Clairaut
+Si chiama equazione di Clairaut un’equazione del tipo
+y = xy + f(y)
+(I.18.21)
+il cui integrale generale è
+y = cx + f (c)
+(I.18.22)
+La I.18.21 ammette inoltre un integrale singolare che si ottiene risolvendo il sistema 
+dato dall’equazione iniziale e da quella ottenuta derivando rispetto ad y, cioè:
+(I.18.23)
+Al variare di c l’integrale generale è rappresentato graficamente da una famiglia di 
+rette tangenti alla curva integrale singolare che si chiama curva inviluppo.
+Esempio
+Data l’equazione di Clairaut
+y
+pf p
+p
+c
++
+d
+
+=
+x
+f p
+
+=
+y
+pf p
+p
+c
++
+d
+
+=
+x
+f p
+
+p
+----------- p
+c
++
+d
+
+=
+y
+f p
+
+=
+x
+f p
+
+p
+----------- p
+c
++
+d
+
+=
+y
+xy
+f y
+
+
++
+=
+0
+x
+fy
+
+
++
+=
+
+
+
+y
+xy
+ey
+–
+=
+
+[PAG 172]
+I-156
+MATEMATICA
+il suo integrale generale è y = cx  ec, mentre l’integrale singolare si ottiene eliminando y
+fra le equazioni:
+e quindi y = x(lnx  1).
+Equazione di D’Alembert
+Prende tale nome un’equazione che si presenta nella forma
+y = xf(y) + g(y)
+(I.18.24)
+Posto y = p si ricava y = xf(p) + g(p) e differenziando:
+dy = xf (p)dp + f(p)dx + g(p)dp
+Poichè dy = pdx l’equazione precedente diventa
+(f(p)  p)dx + xf (p)dp = g(p)dp
+e supponendo f(p)  p  0 si ha
+(I.18.25)
+18.4  Equazioni differenziali ordinarie del secondo ordine
+Le equazioni differenziali ordinarie del secondo ordine sono equazioni del tipo:
+F(x, y, y, y) = 0
+(I.18.26)
+e la loro risoluzione comporta difficoltà notevolmente maggiori rispetto a quelle del 
+primo ordine. Un’equazione differenziale del secondo ordine si dice in forma normale
+quando è:
+y = f(x, y, y)
+(I.18.27)
+Si dimostra, sotto determinate ipotesi, che l’integrale generale di un’equazione diffe-
+renziale del secondo ordine è una funzione x contenente due costanti arbitrarie (teorema 
+di Cauchy).
+Equazioni nella forma y = f(x)
+Se nell’espressione di f compare esplicitamente solo x, la risoluzione si effettua attra-
+verso due successive integrazioni:
+(I.18.28)
+Esempio 1
+Data y = senx, con una prima integrazione si ha:
+e integrando ancora si arriva all’integrale generale dell’equazione data:
+y
+xy
+ey
+–
+=
+0
+x
+ey
+–
+=
+
+
+
+y
+xy
+x
+–
+=
+ey
+x
+=
+
+
+
+y
+xlnx
+x
+–
+=
+y
+lnx
+=
+
+
+
+dx
+dp
+-----
+f p
+
+f p
+
+p
+–
+------------------x
++
+gp
+
+f p
+
+p
+–
+------------------
+–
+=
+y
+f x
+x
+d
+
+
+x
+c1x
+c0
++
++
+d
+
+=
+y
+senx x
+d
+
+cosx
+–
+c1
++
+=
+=
+y
+cosx
+–
+c1
++
+
+x
+d
+
+senx
+–
+c1x
+c0
++
++
+=
+=
+
+[PAG 173]
+MATEMATICA
+I-157
+Esempio 2
+Data l’equazione y = x2  4, l’integrale di y si calcola integrando due volte si seguito:
+Equazioni nella forma y = f(x, y)
+Nelle equazioni del tipo
+y = f(x, y)
+(I.18.29)
+non compare l’incognita y. Per ricondurle ad equazioni differenziali del primo ordine si 
+pone y = p(x), da cui si ottengono y = p(x) e p(x) = f(x, p(x)). Calcolato l’integrale gene-
+rale di quest’ultima si integra nuovamente e si trova l’integrale dell’equazione data.
+Esempio
+Data l’equazione
+e posto y(x) = p da cui y(x) = p, l’equazione precedente diventa a variabili separabili:
+Integrando si ottiene ln3 + p = lnc1x, p = c1x  3 = y. Integrando nuovamente si 
+ha l’integrale generale dell’equazione data:
+Equazioni nella forma y = f(y, y)
+Nelle equazioni di questo tipo non compare la variabile indipendente x. Si procede 
+ponendo y = z(y), quindi derivando entrambi i membri:
+(I.18.30)
+Anche in questo caso si procede con due integrazioni e si calcola l’integrale generale.
+Esempio
+Data l’equazione yy = y2  4 si pongono y = z(y), y = z(y)z(y) e si ottiene:
+yzz = z2  4
+Quest’ultima è un’equazione a variabili separate del primo ordine ed integrandola si ha:
+y
+x2
+4
+–
+
+x
+d
+
+1
+3--x3
+4x
+–
+c1
++
+=
+=
+y
+1
+3--x3
+4x
+–
+c1
++
+
+
+
+x
+d
+
+1
+12
+-----x4
+2x2
+–
+c1x
+c0
++
++
+=
+=
+y
+3
+y
++
+x
+-------------
+=
+p
+3
+p
++
+x
+-----------
+=
+dp
+3
+p
++
+-----------
+dx
+x-----
+=
+y
+c1
+2----x2
+3x
+–
+c0
++
+=
+y
+dz
+dx
+-----
+dz
+dy
+-----dy
+dx
+-----
+zy
+zz
+=
+=
+=
+=
+con z
+dz
+dy
+-----
+=
+z
+z2
+4
++
+-------------dz
+1
+y--dy
+=
+1
+2--ln z2
+4
++
+
+
+ln y
+c1
++
+=
+
+[PAG 174]
+I-158
+MATEMATICA
+Ponendo c1 = lnh:
+si ottiene cioè un’equazione a variabili separabili il cui integrale generale è
+Equazioni omogenee
+Se F(x, y, y, y) = 0 è un’equazione omogenea di grado m rispetto alle variabili y, y, 
+y, ponendo y = yp(x) si ha y = yp(x) + yp(x), e sostituendo si ottiene y = yp2 + yp, 
+equazione del primo ordine in p.
+Esempio
+Data l’equazione yy  xy2 = 0, posto y = yp(x) e quindi y = yp2 + yp, sostituendo si 
+ottiene:
+y2(p2 + p)  xy2p2 = 0
+Per y  0 si ha p2 + p  xp2 = 0, da cui p = (x 1)p2 che è un’equazione a variabili 
+separabili:
+da cui integrando
+il cui integrale è
+Equazioni lineari omogenee
+L’equazione del tipo
+p0(x)y + p1(x)y + p2(x)y = 0
+(I.18.31)
+si risolve nei seguenti due modi.
+–  Se si conoscono due integrali particolari y1 e y2, l’integrale generale è dato da
+y0(x) = c1y1 + c2y2
+(I.18.32)
+–  Se si conosce un solo integrale particolare y1, da questo se ne può determinare un altro 
+y2 linearmente indipendente. Infatti, se y1 e y2 sono indipendenti, il determinante Wron-
+skiano non è nullo:
+z2
+4
++
+hy
+
+2
+=
+z
+hy
+
+2
+4
+–
+=
+y
+hy
+
+2
+4
+–
+=
+x
+y
+d
+h2y2
+4
+–
+-----------------------
+c0
++
+
+
+=
+dp
+p2
+-----
+x
+1
+–
+
+dx
+=
+1
+p--
+–
+x2
+2----
+x
+–
+c1
++
+=
+con p
+y
+y---
+=
+y
+y---
+x2
+2x
+–
+2c1
++
+2
+-------------------------------
+–
+=
+dy
+y-----
+2dx
+x2
+2x
+–
+2c1
++
+-------------------------------
+–
+=
+ln y
+2
+dx
+x2
+2x
+–
+2c1
++
+-------------------------------
+c0
++
+
+–
+=
+
+[PAG 175]
+MATEMATICA
+I-159
+(I.18.33)
+Per la formula di Liouville si ha:
+dove W0 è il valore di W(y1, y2) nel punto iniziale x0. Da ciò si ottiene:
+che è un’equazione lineare completa del primo ordine; integrando:
+Data la I.18.32, l’integrale generale è dato da:
+(I.18.34)
+Equazioni lineari complete
+Data l’equazione nella forma
+p0(x)y + p1(x)y + p2(x)y = b(x)
+(I.18.35)
+si risolve l’equazione lineare omogenea ottenibile ponendo b(x) = 0 (equazione omogenea 
+associata); l’integrale generale è quindi:
+y(x) = y0(x) + yp(x)
+(I.18.36)
+dove y0(x) è l’integrale dell’equazione omogenea e yp(x) è un integrale particolare 
+dell’equazione completa.
+Equazione lineare omogenea a coefficienti costanti
+Un’equazione lineare omogenea a coefficienti costanti è del tipo
+y + py + qy = 0
+(I.18.37)
+dove p e q sono costanti reali. L’equazione
+2 + p + q = 0
+(I.18.38)
+ottenuta dalla precedente introducendo una nuova incognita  al posto di y, con esponente 
+pari all’ordine di derivazione, si chiama equazione caratteristica.
+W y1 y2
+
+
+
+y1 y2
+y1 y2
+0
+
+=
+W
+W0e
+p1
+p2
+---- x
+d
+x0
+x
+
+–
+=
+y2
+y1
+y1
+------y2
+–
+W0
+e
+p1
+p0
+---- x
+d
+
+–
+y1
+----------------
+=
+y2
+y1 W0
+x
+d
+y1
+2
+-----e
+p1
+p0
+---- x
+d
+
+–
+c
++
+
+=
+y0 x
+
+y1 c1
+c2
+e
+p1
+p0
+---- x
+d
+
+–
+y1
+2
+---------------- x
+d
+
++
+=
+
+[PAG 176]
+I-160
+MATEMATICA
+Si dimostrano le seguenti proprietà.
+–  Se 1 e 2 (1  2) sono soluzioni reali dell’equazione caratteristica, allora
+sono integrali particolari dell’equazione data e l’integrale generale è:
+–  Se  = 1 = 2, cioè se l’equazione caratteristica ha due soluzioni reali coincidenti, 
+allora
+sono integrali particolari, mentre l’integrale generale è dato da:
+–  Se l’equazione caratteristica non ha soluzioni reali, indicando con a + ib, a  ib le 
+sue radici complesse coniugate, gli integrali particolari sono (si vedano le formule di 
+Eulero cap. I.10.4):
+L’integrale generale è
+Esempio 1
+Data l’equazione y  5y + 6y = 0, la sua equazione caratteristica è 2  5 + 6 = 0 
+che ha radici reali 2 e 3; due integrali particolari sono quindi y1 = e2x, y2 = e3x; di conse-
+guenza l’integrale generale è
+y = c1e2x + c2e3x
+Esempio 2
+L’equazione y  2y + 5y = 0 ha come equazione caratteristica 2  2 + 5 = 0, le cui 
+radici sono 1 = 1 + 2i, 2 = 1  2i. Gli integrali particolari sono y1 = excos2x, 
+y2 = exsen2x, mentre quello generale è
+y = ex(c1cos2x + c2sen2x)
+18.5  Equazioni differenziali di ordine superiore al secondo
+Equazioni differenziali lineari di ordine n omogenee
+Data l’equazione differenziale di ordine n omogenea:
+y(n) + a1(x)y(n  1) + ... + an  1(x)y + an(x)y = 0
+(I.18.39)
+se y1(x), y2(x), ..., yp(x) sono p integrali particolari di tale equazione, allora, prese c1, c2, 
+..., cp costanti arbitrarie, anche la funzione
+c1y1(x) + c2y2(x) + ... + cpyp(x)
+è un integrale della I.18.39.
+y1
+e
+1x
+=
+y2
+e
+2x
+=
+y
+c1e
+1x
+c2e
+2x
++
+=
+y1
+ex
+=
+y2
+xex
+=
+y
+c1ex
+c2xex
++
+=
+y1
+e a
+ib
++
+
+x
+eaxcosbx
+=
+=
+y2
+e a
+ib
+–
+
+x
+eaxsenbx
+=
+=
+y
+c1e a
+ib
++
+
+x
+c2e a
+ib
+–
+
+x
++
+eax c1cosbx
+c2senbx
++
+
+
+=
+=
+
+[PAG 177]
+MATEMATICA
+I-161
+Dati n integrali particolari y1(x), y2(x), ..., yn(x) (dove n è l’ordine dell’equazione), si 
+chiama Wronskiano di tali integrali il determinante di ordine n:
+(I.18.40)
+Quando risulta W(x)  0 gli n integrali particolari considerati si dicono linearmente 
+indipendenti e formano un sistema fondamentale di soluzioni dell’equazione. In tal caso 
+l’integrale generale è dato da:
+y = c1y1(x) + c2y2(x) + ... + cnyn(x)
+Equazioni differenziali lineari di ordine n omogenee a coefficienti costanti
+Presa l’equazione
+y(n) + a1y(n  1) + ... + an  1y + any = 0
+(I.18.41)
+con a1, a2, ..., an costanti, si procede in modo analogo a quanto visto per le equazioni del 
+secondo ordine dello stesso tipo; considerata l’equazione caratteristica
+n + a1n  1 + ... + an  1 + an = 0
+(I.18.42)
+e ricordando che un’equazione algebrica di grado n ammette sempre n radici, si distin-
+guono i seguenti casi.
+–  Se l’equazione caratteristica ha n radici reali distinte 1, 2, ..., n, allora le funzioni
+sono n integrali particolari dell’equazione iniziale. Si dimostra che il Wronskiano costru-
+ito con tali integrali è diverso da zero, per cui l’integrale generale dell’equazione è
+–  Se i coefficienti dell’equazione caratteristica sono reali e tale equazione ammette una 
+radice complessa a + ib, essa ammette anche la radice complessa coniugata a  ib. In tal 
+caso agli integrali e(a + ib)x e e(a  ib)x si possono sostituire gli integrali eaxcosbx, eaxsenbx.
+–  Se l’equazione caratteristica ha radici multiple (siano ad esempio 1, 2 e 3 rispetti-
+vamente di molteplicità p, q e r), si dimostra che le funzioni
+formano un sistema fondamentale di soluzioni dell’equazione differenziale e quindi con 
+esse si costruirà l’integrale generale.
+W x
+
+y1 x
+
+y2 x
+
+...
+yn x
+
+y1 x
+
+y2 x
+
+...
+yn x
+
+...
+...
+...
+...
+y1
+n
+1
+–
+
+x
+y2
+n
+1
+–
+
+x
+...
+yn
+n
+1
+–
+
+x
+
+=
+y1
+e
+1x
+=
+y2
+e
+2x
+=
+...
+yn
+e
+nx
+=
+y
+c1e
+1x
+c2e
+2x
+...
+cne
+nx
++
++
++
+=
+e
+1x
+xe
+1x
+x2e
+1x
+...
+xp
+1
+– e
+1x
+e
+2x
+xe
+2x
+x2e
+2x
+...
+xq
+1
+– e
+2x
+e
+3x
+xe
+3x
+x2e
+3x
+...
+xr
+1
+– e
+3x
+
+[PAG 178]
+I-162
+MATEMATICA
+Equazioni differenziali lineari di ordine n non omogenee
+In questa categoria rientrano le equazioni del tipo:
+y(n) + a1(x)y(n  1) + ... + an  1(x)y + an(x)y = f(x)
+(I.18.43)
+e la I.18.39 è l’equazione omogenea ad essa associata.
+L’integrale generale dell’equazione non omogenea si ottiene sommando all’integrale 
+generale dell’equazione omogenea associata un integrale particolare qualunque dell’equa-
+zione non omogenea. Quindi prese y1(x), y2(x), ..., yn(x) tali che formino un sistema fonda-
+mentale di soluzioni dell’equazione omogenea, e se (x) è un integrale particolare 
+qualunque dell’equazione non omogenea, l’integrale generale è dato da:
+y = c1y1(x) + c2y2(x) + ... + cnyn(x) + (x)
+In particolare se l’equazione differenziale lineare non omogenea è a coefficienti 
+costanti, cioè del tipo:
+y(n) + a1y(n  1) + ... + an  1y + any = f(x)
+(I.18.44)
+per ricavare l’integrale generale dell’equazione omogenea associata si procede come 
+esposto nel paragrafo precedente; per determinare un integrale particolare dell’equazione 
+non omogenea si applica il procedimento di Lagrange o della variazione delle costanti 
+arbitrarie: se y1(x), y2(x), ..., yn(x) costituiscono un sistema fondamentale di soluzioni 
+dell’equazione omogenea associata, si pone:
+(x) = 1(x)y1(x) + 2(x)y2(x) + ... + n(x)yn(x)
+(I.18.45)
+e si determinano le funzioni incognite 1(x), 2(x), ..., n(x) in modo che (x) soddisfi 
+l’equazione I.18.44. Si dimostra che ciò equivale a risolvere il sistema
+In questo modo si determinano le funzioni 1(x), 2(x), ..., n(x) che integrate danno 
+le funzioni da sostituire nella I.18.45.
+BIBLIOGRAFIA
+ADAM R. A., Calcolo differenziale 1 e 2, Casa Editrice Ambrosiana, Milano, 2007.
+BOURBAKI N., Elements of mathematics, Paris, Reading, Hermann, Mass, 1989.
+DODERO N., BARONCINI P., MANFREDI R., Itinerari di Matematica, Ghisetti e Corvi, 
+Milano, 1993.
+LANG S., Algebra lineare, Boringhieri, Torino, 1970.
+C. D. PAGANI, S. SALSA, Analisi Matematica, Voll. I, II, Zanichelli, Bologna, 1991.
+SANSONE G., Equazioni differenziali, Zanichelli, Bologna, 1963.
+TONOLINI L., TONOLINI F., MANENTI CALVI A., Corso superiore di matematica, 
+Minerva Italica, Milano, 1997.
+ZWIRNER G., Lezioni di analisi matematica. Parte I e Parte II. CEDAM, Padova, 1976.
+ZWIRNER G., SCAGLIANTI L., BRUSAMOLIN MANTOVANI A., Matematica, CEDAM, 
+Padova,1997.
+y1 x
+1 x
+
+y2 x
+2 x
+
+...
+yn x
+n x
+
++
++
++
+0
+=
+y1 x
+1 x
+
+y2 x
+2 x
+
+...
+yn x
+n x
+
++
++
++
+0
+=
+y1 x
+1 x
+
+y2 x
+2 x
+
+...
+yn x
+n x
+
++
++
++
+0
+=
+...
+y1
+n
+1
+–
+
+x
+1 x
+
+y2
+n
+1
+–
+
+x
+2 x
+
+...
+yn
+n
+1
+–
+
+x
+n x
+
++
++
++
+0
+=
+
+
+
+
+
+
+
+
+
+
+[PAG 179]
+Sezione II
+Chimica
+INDICE
+pag.
+1    INTRODUZIONE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+1.1    Atomo e molecole . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+1.2    Energia di ionizzazione e affinità elettronica. Distribuzione degli elettroni
+(primi 18 elementi) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.3    Caratteristiche periodiche delle proprietà fisiche e chimiche degli elementi
+4
+1.4    Uso della Tavola periodica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+1.5    Legame chimico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+1.6    Interazioni tra molecole . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+1.7    Valenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+1.8    Forma geometrica delle molecole e teoria VSEPR  . . . . . . . . . . . . . . . . . .
+10
+2    STRUTTURA E TRASFORMAZIONI DELLA MATERIA . . . . . . . . . . . . . . .
+11
+2.1    Sistemi omogenei ed eterogenei: principali tecniche di separazione . . . . .
+11
+2.2    Soluzioni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+2.3    Concetto di sostanza pura  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+2.4    Stati di aggregazione e passaggi di stato . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+2.5    Trasformazioni chimiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+2.6    Principi che regolano le trasformazioni chimiche  . . . . . . . . . . . . . . . . . . .
+17
+2.7    Numero di Avogadro e concetto di mole . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+2.8    Nomenclatura e classificazione dei composti chimici . . . . . . . . . . . . . . . .
+18
+3    GOVERNO DELLE REAZIONI CHIMICHE . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+3.1    Velocità di reazione ed equilibrio chimico. Grandezze termodinamiche . .
+23
+3.2    Acidi e basi: definizioni ed equilibri in soluzione. pH . . . . . . . . . . . . . . . .
+25
+3.3    Reazioni di ossidoriduzione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+29
+3.4    Elettrochimica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+30
+4    CHIMICA INORGANICA DESCRITTIVA . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+33
+4.1    Chimica inorganica descrittiva per alcuni elementi . . . . . . . . . . . . . . . . . .
+33
+5    PRINCIPI GENERALI DI CHIMICA ORGANICA . . . . . . . . . . . . . . . . . . . . . .
+34
+5.1    Legami ed ibridazioni del carbonio in chimica organica . . . . . . . . . . . . . .
+34
+5.2    Classificazione dei composti organici . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+40
+
+[PAG 180]
+II-2
+CHIMICA
+1   INTRODUZIONE
+La materia ci appare suddivisa in un numero straordinariamente grande di sostanze, 
+anche molto diverse l’una dall’altra, tuttavia esiste tra tutte una base comune. L’ipotesi 
+che la materia consistesse di particelle distinte ed indivisibili dette atomi, dal greco 
+atomé, affacciata nell’antichità dai filosofi Leucippo e Democrito su basi puramente spe-
+culative, era stata ripresa in tempi più recenti ed ha ricevuto all’inizio del secolo XIX una 
+precisa formulazione quantitativa. Secondo la “Teoria atomica” di J. Dalton, ciascun ele-
+mento era formato da particelle indivisibili chiamate atomi, ciascuna delle quali caratteriz-
+zati da proprietà chimiche ben definite.
+1.1  Atomo e molecole.
+La struttura dell’atomo è costituita da tre particelle subatomiche fondamentali chia-
+mate protoni, neutroni ed elettroni, di dimensioni assai ridotte che, a seconda del modo in 
+cui sono capaci di aggregarsi e del loro numero, determinano la differenza tra una 
+sostanza e un’altra.
+I protoni, di carica positiva, e i neutroni, privi di carica elettrica, si trovano nella parte 
+centrale dell’atomo chiamata nucleo.
+Gli elettroni, di carica negativa, si muovono ad una certa distanza dal nucleo.
+Nonostante tale suddivisione, l’atomo è la più piccola parte della materia che rimane 
+inalterata nelle reazioni chimiche. 
+Il numero di protoni contenuti nel nucleo di un atomo viene detto numero atomico e 
+indicato con Z; mentre la somma dei protoni più i neutroni costituisce il numero di massa 
+A. Le particelle che costituiscono il nucleo sono definite nucleoni. Un atomo caratteriz-
+zato da un determinato numero atomico e di massa è chiamato nuclide. Gli atomi di uno 
+stesso elemento che hanno differente numero di massa sono detti isotopi. In natura posso-
+no esistere 92 tipi diversi di atomi che differiscono uno dall’altro per il valore del numero 
+atomico.
+Una sostanza è un insieme di atomi. Si distinguono sostanze costituite da atomi della 
+stessa specie, dette elementi, ciascuno con un nome e indicati con un simbolo internazio-
+nale, e sostanze costituite da atomi di specie diverse dette composti o molecole e indicate 
+con le formule che precisano quali e quanti atomi sono presenti nel composto.
+Le formule contengono dei numeri, detti indici, posti in basso a destra del simbolo per 
+indicare le proporzioni nelle quali gli elementi si trovano nella molecola. Il numero posto 
+davanti ai simboli e alle formule viene detto coefficiente e indica il numero di atomi o di 
+molecole considerate. Per caratterizzare un elemento, a fianco del numero atomico, è 
+necessario un altro parametro il peso atomico, determinato sperimentalmente per tutti gli 
+elementi. Questa scala ha come unità di misura l’uma, cioè unità di massa atomica. Essa è 
+definita come un dodicesimo della massa dell’atomo di Carbonio 12, ossia 1,66·1024 g. 
+Nel caso dei composti, per ottenere il peso della molecola detto peso molecolare (PM) si 
+sommano i pesi atomici di tutti gli atomi della molecola. Se un atomo, normalmente privo 
+Tab. II.1.1   Particelle subatomiche fondamentali
+Particelle
+Massa
+Carica
+Simbolo
+protone
+1,67·1024g
+1
+p
+elettrone
+9,11·1028g
+1
+e
+neutrone
+1,675·1024g
+0
+n
+
+[PAG 181]
+CHIMICA 
+II-3
+di carica poiché il numero di protoni è uguale a quello degli elettroni, perde o acquista uno 
+o più elettroni, diventa una particella dotata di carica elettrica: uno ione. Se acquista uno o 
+più elettroni diventa un anione, ione negativo; se perde uno o più elettroni diventa un
+catione, ione positivo.
+1.2  Energia di ionizzazione e affinità elettronica. Distribuzione degli elettroni (primi 
+18 elementi)
+Per allontanare uno o più elettroni da un atomo occorre fornire energia, detta energia 
+di ionizzazione che viene misurata in kilojoule per mole (kj/mol), in chilocalorie per mole 
+(kcal/mol) oppure in elettrovolt (eV):
+Se l’elettrone allontanato è il primo elettrone esterno si parla di energia di prima ioniz-
+zazione, altrimenti di energie di ionizzazione seconda, terza e così via.
+Le energie di ionizzazione, come molte altre proprietà degli elementi, sono periodiche 
+e, come si vede nella tavola periodica degli elementi, tale energia tende ad aumentare con 
+il crescere del numero atomico in qualsiasi periodo, viceversa in qualsiasi gruppo.
+Questi stessi fattori influenzano anche l’affinità elettronica, ovvero l’attrazione eser-
+citata da un atomo nei confronti di elettroni supplementari (energia che si ottiene quando 
+un atomo acquista elettroni). Da vari esperimenti sull’energia di ionizzazione si può 
+dedurre che non solo essa varia da un elemento all’altro ma che, all’interno di uno stesso 
+elemento, tale energia si raggruppa in “fasce”. Ciò ha portato alla conclusione che ogni 
+gruppo o “fascia” di energia di ionizzazione corrisponde ad un determinato livello energe-
+tico o guscio elettronico.
+Tab. II.1.2   Fattori influenzanti l’energia di ionizzazione
+Fattore
+Effetto
+carica nucleare
+maggiore è la carica nucleare maggiore è l’energia di ionizzazione
+effetto di schermo
+maggiore è l’effetto di schermo, dovuto agli elettroni sottostanti, 
+minore è l’energia di ionizzazione
+raggio
+maggiore è la distanza tra il nucleo e gli elettroni di un atomo 
+minore è l’energia di ionizzazione
+sottolivello
+l’allontanamento di un elettrone da un sottolivello completo o semi 
+completo richiede più energia
+Tab. II.1.3   Disposizione elettronica dei primi 18 elementi
+Numero atomico
+Elemento
+1° guscio
+2° guscio
+3° guscio
+1
+H
+1
+2
+He
+2
+3
+Li
+2
+1
+4
+Be
+2
+2
+5
+B
+2
+3
+1 cal = 4,18 J        1 eV = 1,6·1019 joule = 23,06 kcal/mol
