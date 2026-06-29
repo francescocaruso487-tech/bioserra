@@ -1,0 +1,1942 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 27/116 ===
+Chars: 44,153 | Offset: 1,149,732
+
+
+
+[PAG 574]
+VII-70
+ELETTROTECNICA GENERALE
+Per il collegamento in serie si può scrivere
+da cui 4C1 = C2
+Scrivendo C in funzione dei parametri geometrici, si ha:
+da cui S2 = 12,5S1
+Esempio 5
+In un condensatore piano di superficie S = 100 cm2, sottoposto alla tensione di 300 V,
+isolato con due dielettrici aventi rispettivamente spessore d1 = 1 mm, d2 = 2 mm e
+costante dielettrica relativa r1 = 3, r2 = 7, determinare il valore della forza che sollecita
+ciascuna armatura.
+Risoluzione
+Con riferimento alla Fig. VII.4.28, ciascun dielettrico è sottoposto alle tensioni
+da cui
+La differenza fra le due forze, pari a 2  103 N, agisce sulla superficie di separazione
+fra i due dielettrici.
+Fig. VII.4.28  
+d1
+U1
+Er1
+6
+
+-----------------
+9,6 mm
+=
+=
+d2
+U2
+Er2
+6
+
+-----------------
+12 mm
+=
+=
+U2
+U
+------
+C1
+C1
+C2
++
+---------------------
+=
+4r0
+S1
+d1
+-----
+0
+S2
+d2
+-----
+=
+U1
+
+
+U2
+d1
+d2
+F1
+F2
+U1
+C2
+C2
+C1
++
+---------------------U
+r2
+d2
+-------
+r1
+d1
+-------
+r2
+d2
+-------
++
+------------------------U
+161,54 V
+=
+=
+=
+U2
+U
+U1
+–
+138,46 V
+=
+=
+F1
+1
+2--r10
+S
+d1
+2
+------- U1
+2
+3,5
+10 3
+–
+
+N
+=
+=
+F2
+1
+2--r20
+S
+d2
+2
+------- U2
+2
+1,5
+10 3
+–
+
+N
+=
+=
+
+[PAG 575]
+ELETTROTECNICA GENERALE
+VII-71
+Esempio 6
+Con riferimento alla Fig. VII.4.29, il condensatore C1 di capacità 2 F, al termine del
+processo di carica, è sottoposto alla tensione Uc pari a 200 V. Determinare:
+–  il valore della tensione ai capi dei condensatori quando C1 viene staccato dal gene-
+ratore e collegato al condensatore scarico C2 avente capacità 1 F;
+–  l’energia immagazzinata dal condensatore C1 durante la carica;
+–  l’energia del sistema al termine del processo di scarica.
+Risoluzione
+Durante la carica il condensatore C1 ha accumulato una quantità di elettricità Q e
+l’energia elettrostatica:
+al termine del processo di scarica, la tensione ai capi dei condensatori Uc12 e l’energia
+accumulata dal sistema risultano:
+la differenza Wc  Wsc = 1,34  102 J rappresenta l’energia persa per effetto Joule nel pro-
+cesso di scarica.
+4.12  Risoluzione delle reti capacitive nel periodo transitorio
+Per risolvere una rete capacitiva durante il periodo transitorio di carica e scarica, è
+necessario tener presente che:
+–  le grandezze elettriche di tensione e corrente variano nel tempo con andamento
+esponenziale;
+–  per determinare le leggi di variazione della tensione e della corrente è importante
+calcolare il valore iniziale, il valore finale e la costante di tempo;
+–  la tensione e la corrente raggiungono i valori di regime dopo un tempo pari a 4,6 ;
+–  se nella rete sono presenti elementi diversi dai condensatori, occorre valutare se il
+loro comportamento sia o no influenzato dai condensatori.
+Esempio 1
+Dato il circuito di Fig. VII.4.30 dove E1 = 240 V, R1 = 300 , R2 = 2 k, C = 100 nF,
+determinare l’andamento nel tempo della tensione e della corrente nel lato contenente la
+capacità e della corrente nel lato contenente la resistenza R2, date le seguenti condizioni:
+–  il selettore è posto nella posizione 1 e vi rimane per un tempo t pari a 31;
+–  trascorso il tempo 31 il selettore viene spostato permanentemente nella posizione 2.
+Fig. VII.4.29  
+C1
+
+Ri
+C2
+E
+Q
+C1Uc
+4
+10 4
+–
+
+C
+=
+=
+Wc
+1
+2--QUc
+4
+10 2
+–
+
+J
+=
+=
+Uc12
+Q
+Ceq
+--------
+Q
+C1
+C2
++
+---------------------
+133V
+=
+=
+=
+Wsc
+1
+2--QUc12
+2,66
+10 2
+–
+
+J
+=
+=
+
+[PAG 576]
+VII-72
+ELETTROTECNICA GENERALE
+Risoluzione
+1° periodo di funzionamento
+Le grandezze caratteristiche della legge esponenziale di carica sono:
+Poiché la carica è parziale, la tensione al termine del processo assumerà il valore
+e la corrente il valore
+2° periodo di funzionamento
+Le grandezze caratteristiche della legge esponenziale di scarica sono:
+Poiché la scarica è completa, la tensione varia con legge:
+e la corrente con legge
+Fig. VII.4.30  
+R1
+
+R2
+E1
+C
+per la tensione
+U0
+0;
+=
+Uf
+240V;
+=
+1
+R1C
+30s
+=
+=
+per la corrente
+I0
+E
+R1
+-----
+0,8A;
+=
+=
+If
+0;
+=
+1
+30s
+=
+uc
+Uf 1
+e
+t
+–
+1
+
+–
+
+
+228V
+=
+=
+i
+I0 e
+t
+–
+1
+
+40 mA
+=
+=
+per la tensione
+U0
+228V;
+=
+Uf
+0;
+=
+2
+R2C
+200s
+=
+=
+per la corrente
+I0
+U0
+R2
+------
+–
+0,114A;
+–
+=
+=
+If
+0;
+=
+2
+200s
+=
+uc
+U0 e
+t
+–
+1
+
+=
+i
+I0 e
+t
+–
+1
+
+=
+
+[PAG 577]
+ELETTROTECNICA GENERALE
+VII-73
+Le Figg. VII.4.31a, VII.4.31b, VII.4.31c, rappresentano la legge di variazione rispetti-
+vamente della tensione, della corrente nel condensatore e della corrente nella resistenza R2.
+5  GRANDEZZE MAGNETICHE E LORO LEGAMI, CIRCUITI MAGNETICI
+5.1  Richiami di magnetismo
+–  Campo magnetico. Una regione di spazio è sede di un campo magnetico quando un
+magnete di prova, posto in un qualsiasi punto di quello spazio, è soggetto a forze che ten-
+dono a farlo ruotare fino a disporlo in direzione parallela al campo magnetico.
+–  Magnete di prova. È una piccola calamita a forma di ago, che può ruotare attorno ad
+un perno centrale; essa è provvista, come tutti i magneti, di due poli magnetici indicati
+con N (nord) e S (sud).
+–  Origine del campo magnetico. Un campo magnetico è sempre generato da cariche
+elettriche in movimento. Nel caso dei magneti permanenti, il movimento di cariche è
+dovuto al moto degli elettroni dei loro atomi, mentre per gli elettromagneti è la corrente
+elettrica che circola nel conduttore a produrre il campo magnetico.
+–  Linee di campo o linee di forza. Sono linee orientate che consentono di rappresen-
+tare graficamente l’andamento del campo magnetico. Esse sono individuate dal magnete
+di prova che punta sempre nella direzione tangente alle linee di forza; il loro verso va dal
+polo S al polo N.
+–  Polarità di un magnete. Le polarità di un magnete di qualunque tipo sono determi-
+nate dal verso delle linee di forza; all’esterno del magnete le linee di forza escono dal polo
+nord ed entrano nel polo sud. A differenza delle cariche elettriche che possono essere
+positive o negative, non è possibile avere un magnete con una sola polarità.
+Fig. VII.4.31   
+0
+t
+U
+228
+240
+a)
+0
+t
+i (mA)
+40
+800
+114
+b)
+0
+t
+i (mA)
+114
+c)
+
+[PAG 578]
+VII-74
+ELETTROTECNICA GENERALE
+5.2  Campo magnetico prodotto da un conduttore rettilineo, vettore induzione
+magnetica
+Un conduttore rettilineo percorso da corrente produce nello spazio circostante un
+campo magnetico. Le linee di forza del campo sono rappresentabili, per ogni piano per-
+pendicolare al conduttore, mediante circonferenze con centro nel punto di intersezione fra
+il conduttore e il piano considerato.
+Rappresentando secondo convenzione comune la corrente uscente dal piano con la
+punta di una freccia e quella entrante nel piano con la coda della freccia, l’orientamento
+delle linee di forza può essere determinato in base alla regola della vite destrorsa per cui:
+il verso delle linee di forza coincide con quello di rotazione della vite, quando il verso di
+avanzamento della stessa coincide con il verso della corrente (Fig. VII.5.1a e b).
+Fig. VII.5.1  
+L’intensità del campo magnetico è definita dal vettore induzione B, che ha direzione
+tangente alle linee di forza e verso coincidente con quello delle linee di forza (Fig.
+VII.5.2a).
+Fig. VII.5.2  
+Nel caso in esame, l’intensità del vettore B, in un punto distante r dal conduttore, vale:
+(VII.5.1)
+L’induzione si misura in tesla (simbolo T) e la relazione evidenzia che essa:
+–  è direttamente proporzionale al valore della corrente I e alla grandezza ;
+–  è inversamente proporzionale alla distanza r (Fig. VII.5.2b).
+Il fattore  è denominato permeabilità magnetica e rappresenta, a parità di altre condi-
+zioni, un indice dell’attitudine del materiale a farsi magnetizzare.
+La permeabilità magnetica del vuoto, detta permeabilità assoluta, è indicata col sim-
+bolo 0 ed ha un valore costante pari a:
+I
+I
+N  S
+S  N
+a) I esce dal piano
+b) I entra nel piano
+B1
+B2
+B1
+B2
+B
+r1
+r2
+r
+0
+a)
+b)
+B
+I
+2r
+---------
+=
+
+[PAG 579]
+ELETTROTECNICA GENERALE
+VII-75
+Per l’aria, i gas e in generale per tutti i materiali non ferromagnetici, il valore della
+permeabilità è praticamente uguale a quella del vuoto.
+5.3  Configurazione di alcuni campi magnetici
+Campo magnetico prodotto da una spira circolare
+Nel caso in cui il circuito elettrico percorso da corrente sia di forma perfettamente cir-
+colare (spira circolare), le linee di forza del campo sono rappresentabili mediante cerchi
+giacenti su piani perpendicolari al conduttore, ma eccentrici rispetto al suo asse e il loro
+verso è individuato dalla regola della vite destrorsa (Fig. VII.5.3a e b).
+Fig. VII.5.3   
+L’intensità del campo magnetico varia a seconda del punto dello spazio considerato; il
+valore maggiore si ha nel centro O della spira dove assume il valore:
+(VII.5.2)
+L’intensità del campo magnetico in un punto P qualsiasi dell’asse della spira vale:
+(VII.5.3)
+dove d è la distanza del punto dal centro della spira.
+Campo magnetico prodotto da un solenoide
+Il solenoide è un circuito elettrico costituito da più spire contigue; nella pratica
+quando la sua lunghezza assiale supera di sette volte il diametro delle spire, si ha un sole-
+noide lungo, in caso contrario il solenoide è corto.
+La Fig. VII.5.4 rappresenta l’andamento delle linee di forza per un solenoide corto e la
+Fig. VII.5.5 l’andamento delle linee di forza per un solenoide lungo. La differenza consi-
+ste essenzialmente nel fatto che all’interno di un solenoide lungo, il campo magnetico rag-
+giunge intensità maggiori e che le linee di forza hanno un andamento più rettilineo e
+costante rispetto ad un solenoide corto. Il verso delle linee di forza si può determinare in
+base alla regola della vite destrorsa.
+0
+1,257
+10 6
+–
+
+H
+m----
+=
+B
+r
+P
+I
+a)
+b)
+O
+B
+I
+2r
+-----
+=
+B
+I
+r2
+2 r2
+d2
++
+
+
+3
+2
+
+-------------------------------------
+=
+
+[PAG 580]
+VII-76
+ELETTROTECNICA GENERALE
+Ricordando che N è il numero totale di spire, I la corrente che percorre il circuito e l la lun-
+ghezza assiale, l’intensità del campo magnetico di un solenoide è espressa dalle relazioni:
+per i punti dello spazio interno a un solenoide lungo
+(VII.5.4)
+per i punti all’esterno di un solenoide lungo il campo si può considerare con buona
+approssimazione nullo;
+per i punti sull’asse interno a un solenoide corto (Fig. VII.5.4)
+(VII.5.5)
+per i punti sull’asse esterni a un solenoide corto (Fig. VII.5.6)
+(VII.5.6)
+Campo magnetico prodotto da un solenoide toroidale
+Un solenoide si dice toroidale quando il suo asse è circolare; la sua proprietà fonda-
+mentale consiste nel determinare linee di forza di forma circolare tutte confinate di fatto
+all’interno dello spazio racchiuso fra le spire (Fig. VII.5.7).
+Per il calcolo dell’intensità del campo magnetico nello spazio compreso fra le spire,
+vale la relazione:
+(VII.5.7)
+Fig. VII.5.4   
+Fig. VII.5.5   
+Fig. VII.5.6   
+B
+P
+2
+1
+B
+l
+l
+B
+P
+1
+2
+
+
+B
+NI
+l
+----------
+=
+B
+NI
+2l
+---------- cos1
+cos2
++
+
+
+=
+B
+NI
+2l
+---------- cos2
+cos1
+–
+
+
+=
+B
+NI
+2r
+----------
+=
+
+[PAG 581]
+ELETTROTECNICA GENERALE
+VII-77
+dove r è il raggio della linea di forza passante per il punto considerato.
+5.4  Forza magnetomotrice e forza magnetizzante
+Con il termine forza magnetomotrice si intende la grandezza che produce la magne-
+tizzazione di un circuito. Essa è espressa dal prodotto:
+(VII.5.8)
+dove N è il numero di spire e I l’intensità della corrente magnetizzante. La sua unità di
+misura è l’ampère anche se in pratica, per mettere in risalto la funzione di N, si usa l’unità
+di misura ampèrspire (Asp).
+Con il termine forza magnetizzante si intende la forza magnetomotrice per unità di
+lunghezza della linea di forza. Essa è espressa dal rapporto:
+(VII.5.9)
+dove l è la lunghezza della linea di forza sulla quale agisce la forza magnetomotrice. La
+sua unità di misura è l’ampère su metro (Am) anche se nella pratica si usa spesso
+l’ampèrspira su metro (Aspm).
+Sostituendo il valore di H nella relazione VII.5.4 si ottiene:
+(VII.5.10)
+L’espressione ha validità generale ed esprime la relazione fra l’induzione magnetica e
+la forza magnetizzante per ogni punto del campo magnetico; il rapporto fra le due gran-
+dezze dipende solo dal tipo di materiale entro il quale si sviluppa il campo magnetico.
+Si può perciò affermare che:
+–  la forza magnetizzante H non dipende dal materiale entro cui si sviluppa il campo
+magnetico;
+–  il vettore induzione B, che rappresenta l’intensità del campo magnetico generato,
+dipende invece, in modo direttamente proporzionale, dalla permeabilità del materiale
+magnetico. Ciò significa che la stessa forza magnetizzante produce effetti diversi a
+seconda del materiale magnetico interessato dal campo.
+Al fine di evitare equivoci, si precisa che alcuni trattati sull’elettromagnetismo consi-
+derano la grandezza H come l’intensità del campo magnetico, ruolo che in questo testo è
+stato attribuito al vettore induzione B. La scelta è motivata dal fatto che il campo magne-
+tico che si crea in un materiale sottoposto ad un’azione magnetizzante, dipende anche
+dalla permeabilità del mezzo, fattore che influisce sul valore di B e non di H.
+Fig. VII.5.7   
+r
+P
+
+r1
+r2
+
+Fm
+NI
+=
+H
+NI
+l-----
+=
+B
+H
+=
+
+[PAG 582]
+VII-78
+ELETTROTECNICA GENERALE
+La forza magnetizzante H è un vettore con le seguenti caratteristiche:
+–  direzione e verso coincidenti con quelle del vettore B;
+–  intensità legata a quella di B dalla relazione
+(VII.5.11)
+5.5  Permeabilità magnetica relativa, classificazione dei materiali magnetici
+Riferendo la permeabilità magnetica di un materiale a quella del vuoto, si ottiene la
+permeabilità magnetica relativa definita dal rapporto:
+(VII.5.12)
+La permeabilità magnetica relativa è una grandezza senza dimensioni e indica quante
+volte la permeabilità del materiale considerato è maggiore di quella del vuoto.
+L’induzione magnetica B in un materiale di permeabilità  e l’induzione magnetica B0
+nel vuoto sono legate, a parità di forza magnetizzante H, dalla relazione:
+(VII.5.13)
+Le proprietà magnetiche della materia dipendono dalle proprietà magnetiche degli
+atomi che formano le molecole; queste proprietà sono dovute al movimento orbitale degli
+elettroni periferici e al momento magnetico degli elettroni stessi.
+Nella realtà si possono presentare due casi:
+–  la molecola è magneticamente neutra perché ad una certa distanza dal nucleo, i sin-
+goli elettroni determinano campi magnetici che si compensano;
+–  la molecola possiede un proprio momento magnetico che permette di rappresentarla
+come un magnete elementare; nel suo complesso però il corpo non manifesta caratteristi-
+che magnetiche perché l’agitazione termica delle molecole determina un’azione risultante
+nulla.
+Perciò, quando un corpo è sottoposto all’azione di un campo magnetico, si indivi-
+duano due diversi comportamenti:
+–  le molecole magneticamente neutre generano un debole campo magnetico (preces-
+sione di Larmor) di segno opposto a quello magnetizzante;
+–  le molecole dotate di un momento magnetico, subiscono sia il fenomeno della pre-
+cessione di Larmor che il fenomeno della polarizzazione per orientamento.
+I materiali magnetici sono classificati a seconda del valore di r in:
+–  materiali diamagnetici, per i quali si ha solamente la polarizzazione per precessione
+di Larmor e che si oppongono, in modo non vistoso, alla magnetizzazione. Sono materiali
+caratterizzati da un valore di r  1 cui appartengono l’acqua, l’argento, il rame ecc;
+–  materiali paramagnetici, dotati di un piccolo momento magnetico e che favoriscono,
+in modo non vistoso, la magnetizzazione. Sono caratterizzati da un valore di r  1 cui
+appartengono l’aria (per la quale si considera comunque  = 0), l’alluminio, il platino ecc;
+–  materiali ferromagnetici, per i quali si ha r  1. In questi materiali il comporta-
+mento paramagnetico è molto accentuato essendo dotati di un momento magnetico pro-
+prio molto elevato. Hanno valori di permeabilità migliaia di volte più elevati di quello del
+vuoto per cui si ottengono induzioni molto intense con limitati valori di H e quindi di cor-
+rente magnetizzante. Il metallo più importante della categoria è il ferro, anche se presen-
+tano questo comportamento pure il nichel e il cobalto; nelle applicazioni pratiche non
+sono utilizzati metalli allo stato puro, ma numerose leghe generalmente a base di ferro e
+materiali particolari chiamati ferriti.
+H
+B
+---
+=
+r
+
+0
+-----
+=
+B
+r B0
+=
+
+[PAG 583]
+ELETTROTECNICA GENERALE
+VII-79
+5.6  Caratteristica di magnetizzazione, ciclo di isteresi
+L’azione di una forza magnetomotrice di valore variabile su un nucleo di materiale
+magnetico determina, all’interno del nucleo stesso, la generazione di un campo magnetico
+di induzione B legato, oltre che ai valori assunti da H, anche a quelli di .
+Poiché i materiali hanno comportamenti magnetici differenti, si possono presentare i
+seguenti due casi:
+–  per i materiali paramagnetici e diamagnetici la permeabilità magnetica si mantiene
+costante al variare di H. La legge B  H, analoga all’equazione y  mx, è rappresentabile
+mediante una retta passante per l’origine degli assi e avente ascissa H e ordinata B;
+–  per i materiali ferromagnetici la permeabilità magnetica non è costante al variare
+del campo; il legame tra B e H non è più lineare.
+Il grafico che descrive l’andamento dell’induzione magnetica al variare della forza
+magnetizzante prende il nome di caratteristica di magnetizzazione; nei materiali con 
+costante si ha l’andamento di Fig. VII.5.8 mentre, per i materiali ferromagnetici, si ha la
+curva tipica di Fig. VII.5.9 denominata curva di prima magnetizzazione. Della curva si
+segnala:
+–  il tratto AB ad andamento complessivamente rettilineo, caratterizzato da elevati
+valori di permeabilità magnetica;
+–  il tratto CD, raccordato al tratto AB dal ginocchio (tratto BC), caratterizzato da un
+basso valore di permeabilità magnetica decrescente al crescere di H; in questa zona il
+materiale è in saturazione.
+Lo stato di saturazione, caratteristico solo dei materiali magnetici, si presenta quando
+il campo magnetico raggiunge l’intensità necessaria ad orientare tutte le molecole nella
+direzione del campo; oltre questo valore, non correntemente raggiungibile in pratica,
+l’induzione nel materiale aumenta secondo la legge B = 0H.
+L’esame della caratteristica di magnetizzazione permette un’interpretazione geome-
+trica della permeabilità magnetica. Con riferimento alla Fig. VII.5.10, il rapporto:
+rappresenta la permeabilità magnetica del materiale quando è magnetizzato nel punto P.
+Considerando altri punti della caratteristica di magnetizzazione, il valore di tg varia
+raggiungendo un valore massimo e poi decrescendo, secondo l’andamento riportato in
+Fig. VII.5.10.
+Va precisato che un materiale ferromagnetico segue la curva di Fig. VII.5.9 solamente
+quando esso è allo stato di completa smagnetizzazione e il campo magnetizzante viene
+incrementato, partendo dal valore iniziale zero, sempre nello stesso senso.
+Fig. VII.5.8   
+Fig. VII.5.9   
+H
+B
+0
+B  H
+H
+B
+0
+A
+B
+C
+D
+tg
+PF
+OF
+-------
+B
+H---
+
+=
+=
+=
+
+[PAG 584]
+VII-80
+ELETTROTECNICA GENERALE
+Nella Fig. VII.5.11 è riportata la curva chiusa che esprime la relazione fra B e H,
+quando il materiale è sottoposto ad un campo magnetico variabile periodicamente fra due
+valori uguali, ma di segno opposto; la curva rappresenta in questo caso il ciclo di isteresi,
+denominando con isteresi magnetica il complesso dei fenomeni che accompagnano la
+magnetizzazione ciclica dei materiali ferromagnetici.
+Della curva si evidenziano i punti:
+–  a, d, che rappresentano i valori massimi positivi (HM, BM) e negativi (HM, BM),
+raggiunti rispettivamente dalla forza magnetizzante e dall’induzione;
+–  b, e, che evidenziano la permanenza di una induzione residua (Br, Br), dipen-
+dente dal tipo di materiale, nonostante l’annullamento della forza magnetizzante;
+–  c, f, caratterizzati da induzione nulla; i valori Hc e Hc della forza magnetizzante
+che producono l’annullamento dell’induzione prendono il nome di forza coercitiva.
+La forma del ciclo di isteresi dipende dal tipo di materiale ferromagnetico, di cui
+costituisce una caratteristica importante. In particolare sono chiamati duri i materiali con
+elevata forza coercitiva e teneri i materiali che si smagnetizzano facilmente.
+5.7  Flusso magnetico
+Le definizioni di flusso di un vettore attraverso una superficie S, oppure dS se il
+campo non è uniforme, e di tubo di flusso date al Par. 4.1, rimangono perfettamente
+valide anche per il vettore induzione magnetica B. Si può perciò assumere:
+(VII.5.14)
+oppure
+(VII.5.15)
+se l’induzione non è costante sulla superficie. L’unità di misura del flusso  è il weber
+(Wb).
+Con riferimento alla Fig. VII.5.12, il flusso attraverso la superfici 1 e 2 perpendicolari
+alle linee di flusso, è uguale, per cui si può scrivere:
+Fig. VII.5.10   
+Fig. VII.5.11   
+0
+F
+P
+
+H
+B
+0
+H
+B
+HM
+c
+Forza coercitiva
+a
+b
+d
+e
+Forza coercitiva
+Induzione residua
+Induzione residua
+BM
+f
+BM
+HM
+
+BS
+=
+
+i
+i
+1
+=
+n
+
+BiSi
+i
+1
+=
+n
+
+=
+=
+B1S1
+B2S2
+=
+
+[PAG 585]
+ELETTROTECNICA GENERALE
+VII-81
+Se la superficie non è perpendicolare alle linee di flusso (Fig. VII.5.13) il flusso
+magnetico sarà dato da:
+(VII.5.16)
+5.8  Riluttanza e permeanza, legge di Hopkinson, legge della circuitazione magnetica
+Il flusso magnetico che si crea in un nucleo costituito da un materiale di permeabilità
+magnetica , avente sezione S costante e perpendicolare alle linee di flusso, lunghezza
+media l, sul quale è avvolta una bobina di N spire percorse da corrente, vale:
+Il fattore
+(VII.5.17)
+definisce la permeanza magnetica del nucleo, espressa in henry (H), e indica la facilità di
+magnetizzazione di un nucleo magnetico.
+La grandezza inversa
+(VII.5.18)
+rappresenta la riluttanza magnetica del nucleo che si misura in H1 e indica l’opposizione
+di un nucleo a farsi magnetizzare.
+Le relazioni appena indicate, sostituite nell’espressione del flusso, consentono di
+esprimere in forma matematica la legge di Hopkinson o legge di Ohm per i circuiti
+magnetici secondo la relazione:
+(VII.5.19)
+oppure:
+(VII.5.20)
+Fig. VII.5.12   
+Fig. VII.5.13   
+B
+S1
+S2
+
+B
+
+BSsen
+=
+
+BS
+HS
+
+Fm
+l------ S
+=
+=
+=
+
+S
+l------
+=
+
+1
+
+-----
+l
+S
+------
+=
+=
+
+Fm
+=
+
+Fm
+
+------
+=
+
+[PAG 586]
+VII-82
+ELETTROTECNICA GENERALE
+Fra le grandezze dei circuiti magnetici ed elettrici esiste la seguente corrispondenza:
+flusso   corrente I
+f.m.m. Fm  tensione U
+riluttanza   resistenza R
+permeanza   conduttanza G
+legge di Hopkinson   Fm  Fm  legge di Ohm I  GU  UR
+Dalla relazione H  NIl, si ricava l’espressione:
+(VII.5.21)
+Se si considera una linea di forza chiusa scomponibile in tratti elementari di lunghezza
+dli, per ognuno dei quali il vettore H agisce nella direzione della linea di forza, con inten-
+sità Hi, la precedente relazione assume la forma:
+(VII.5.22)
+L’espressione rappresenta la formulazione matematica della legge della circuitazione
+magnetica e consente di calcolare la f.m.m. necessaria per ottenere un determinato valore
+della forza magnetizzante, nei vari tratti del circuito magnetico. La f.m.m. totale si calcola
+tenendo conto del segno dei vari contributi magnetici per cui, se una bobina esercita
+un’azione magnetizzante opposta a quella assunta come positiva, la sua f.m.m. va consi-
+derata negativa.
+5.9  Energia del campo magnetico
+La creazione di un campo magnetico comporta uno scambio di energia; il circuito
+elettrico, durante la fase di magnetizzazione fornisce l’energia necessaria, che rimane
+immagazzinata nello spazio interessato dal campo magnetico come energia potenziale.
+Per valutare analiticamente l’energia del campo magnetico, si considera un volume
+infinitesimo dv dello spazio interessato dove l’induzione assume il valore B; nel volume è
+racchiusa un’energia dW esprimibile con una delle seguenti relazioni:
+(VII.5.23)
+L’energia totale si ottiene sommando (integrando) l’energia dei volumi infinitesimi.
+Nella pratica però spesso si ricorre alla suddivisione in volumi piccoli ma non infinite-
+simi, dello spazio dove il campo magnetico assume valori apprezzabili; in questo caso
+l’energia accumulata per unità di volume (energia magnetica specifica), espressa in J/m3,
+si può determinare con una delle seguenti formule:
+(VII.5.24)
+Al termine del processo di magnetizzazione, cioè quando nel circuito elettrico cessa la
+circolazione di corrente, l’energia accumulata viene interamente restituita al circuito se il
+materiale interessato ha permeabilità costante (materiali paramagnetici o diamagnetici)
+mentre nel caso dei materiali ferromagnetici l’energia viene restituita solo in parte.
+A tale scopo, con riferimento alla Fig. VII.5.14, si possono fare le seguenti osserva-
+zioni:
+–  l’area racchiusa fra i punti OP1B1O rappresenta l’energia fornita dal circuito elet-
+trico e immagazzinata dal materiale durante la fase di magnetizzazione;
+Fm
+NI
+Hl
+=
+=
+Hi li
+d
+
+NI
+=
+dW
+1
+2--HBdv
+1
+2--H2dv
+1
+2-- B2
+
+----- dv
+=
+=
+=
+W
+1
+2--HB
+1
+2--H2
+1
+2-- B2
+
+-----
+=
+=
+=
+
+[PAG 587]
+ELETTROTECNICA GENERALE
+VII-83
+–  l’area racchiusa fra i punti P1B1BrP1 rappresenta l’energia restituita al circuito
+esterno quando la corrente vale zero;
+–  l’area racchiusa fra i punti P1BrOP1 rappresenta l’energia trattenuta dal materiale
+quando la corrente vale zero.
+Considerando l’intero ciclo di isteresi, si dimostra che per ogni ciclo la differenza fra
+l’energia specifica fornita dal circuito elettrico magnetizzante e quella restituita a tale
+circuito, corrisponde all'area del ciclo di isteresi ed è tanto più elevata quanto maggiore è
+l’area del ciclo stesso. Questa energia si trasforma in calore producendo il riscaldamento
+del nucleo magnetico.
+Il valore dell’energia specifica persa (misurata i J/m3), nel caso di induzione uniforme
+di valore massimo BM, può essere calcolato per un circuito simmetrico con la formula
+empirica:
+(VII.5.25)
+dove  è un coefficiente dipendente dal tipo di materiale e n è pressoché costante e di
+valore inferiore ma vicino a 2. Moltiplicando la precedente relazione per il volume del
+materiale, si ottiene l’energia totale persa per isteresi magnetica, che sarà misurata in
+Joule. Il valore dell’energia persa nell’unità di tempo corrisponde a una potenza detta per-
+dita per isteresi magnetica.
+5.10  Induttanza
+Si definisce induttore un bipolo costituito da una bobina elettrica di N spire, avvolta
+su un nucleo magnetico, che può essere costituito anche da materiale non ferromagnetico
+come ad esempio l’aria. L’induttore, di cui il solenoide rettilineo è un tipico esempio, è
+caratterizzato dal parametro induttanza.
+Un induttore percorso da corrente di intensità costante I, produce un campo magnetico
+le cui linee di forza si concatenano con le spire della bobina; il prodotto fra il flusso
+magnetico e il numero di spire
+(VII.5.26)
+è detto flusso concatenato.
+Si definisce induttanza il rapporto
+(VII.5.27)
+Fig. VII.5.14  
+0
+H
+B
+Energia restituita
+Energia non restituita
+Br
+P1
+B1
+Wi
+BM
+n
+=
+c
+N
+=
+L
+c
+I------
+=
+
+[PAG 588]
+VII-84
+ELETTROTECNICA GENERALE
+tra il flusso concatenato e l’intensità della corrente che lo ha prodotto; l’equazione caratte-
+ristica dell’induttore diventa perciò
+(VII.5.28)
+Applicando la legge di Hopkinson si può ancora scrivere:
+(VII.5.29)
+e sostituendo l’espressione della permeanza:
+(VII.5.30)
+L’espressione VII.5.30, che lega l’induttanza di una bobina alle sue caratteristiche
+costruttive, permette di concludere che: un induttore si comporta da bipolo lineare (indut-
+tanza costante), solo quando il valore della permeabilità magnetica del nucleo è costante,
+cioè quando il materiale utilizzato non è di tipo ferromagnetico o, se ferromagnetico, solo
+quando funziona nella parte rettilinea della caratteristica di magnetizzazione.
+L’unità di misura dell’induttanza è l’henry (H).
+L’introduzione delle definizioni di flusso concatenato e di induttanza, permette di cal-
+colare l’energia totale che, in seguito alla magnetizzazione del volume dell’induttore,
+resta immagazzinata nel componente con le relazioni:
+(VII.5.31)
+Utilizzando le leggi che legano le grandezze magnetiche, si ottengono altre utili
+espressioni dell’energia del campo magnetico:
+(VII.5.32)
+5.11  Corpi ferromagnetici in campi magnetici, schermi
+Quando un corpo è sottoposto all’azione di campi magnetici si hanno diversi compor-
+tamenti a seconda della natura del materiale costituente il corpo stesso.
+Materiali diamagnetici e paramagnetici
+I corpi costituiti con questi materiali, comunque sia la loro forma ed estensione, non
+modificano sensibilmente con la loro presenza l’andamento delle linee di forza e l’inten-
+sità del campo magnetico preesistente. Pertanto i fenomeni e le leggi studiate, nel caso il
+campo magnetico interessi il vuoto assoluto, sono valide anche quando il campo magne-
+tico interessa corpi diamagnetici e paramagnetici. In particolare le linee di forza del vet-
+tore induzione non subiscono modificazioni e rifrazioni apprezzabili nel passaggio
+dall’aria ad un mezzo dia o paramagnetico e viceversa.
+Materiali ferromagnetici
+I corpi formati da materiali ferromagnetici sottoposti all’azione di un campo magne-
+tico, si magnetizzano determinando un’alterazione dell’andamento delle linee di forza e
+una variazione dell’intensità del campo magnetico preesistente.
+Infatti le linee di forza, passando da un mezzo omogeneo di permeabilità relativa r1
+ad un altro, pure omogeneo ma con permeabilità relativa r2, subiscono una rifrazione
+esprimibile con la seguente relazione
+c
+LI
+=
+L
+N2
+N2
+
+------
+=
+=
+L
+N2S
+l
+-------------
+=
+W
+cI
+2
+---------
+1
+2--LI2
+=
+=
+W
+Fm
+2
+-----------
+1
+2--2
+1
+2-- 2
+
+------
+=
+=
+=
+
+[PAG 589]
+ELETTROTECNICA GENERALE
+VII-85
+(VII.5.33)
+La legge della rifrazione delle linee di forza magnetica sopra determinata e schema-
+tizzata nella Fig. VII.5.15, ha validità generale; nel caso in cui uno dei due mezzi sia l’aria
+(r2 = 1), la precedente relazione assume la forma:
+(VII.5.34)
+Le Fig. VII.5.16a e b, illustrano l’andamento delle linee di forza nel caso appena illustrato.
+Le Fig. VII.5.17a e b illustrano il percorso delle linee di forza nel caso in cui un corpo di
+materiale ferromagnetico sia totalmente immerso in un campo magnetico. Dal loro esame
+Fig. VII.5.15  
+Fig. VII.5.16   
+Fig. VII.5.17  
+tg1
+tg2
+-----------
+r1
+r2
+-------
+=
+tg1
+tg2
+-----------
+r1
+=
+1
+1
+2
+2
+1
+2
+Ferro
+Aria
+a)
+Ferro
+Aria
+b)
+N
+S
+a)
+b)
+
+[PAG 590]
+VII-86
+ELETTROTECNICA GENERALE
+si nota che le linee di forza si concentrano nel corpo mentre subiscono una rarefazione
+nello spazio immediatamente circostante. Il fenomeno si può spiegare ricordando che il
+materiale, per effetto del campo magnetico, subisce una magnetizzazione; esso si com-
+porta perciò come un magnete, capace a sua volta di produrre un proprio campo magnetico.
+La composizione vettoriale dei due campi magnetici evidenzia un’intensificazione delle
+linee di forza nello spazio in cui è posto il corpo ed una rarefazione delle stesse nello spa-
+zio circostante. La Fig. VII.5.17b mostra ancora l’effetto schermante dei corpi cavi che
+consiste nel fatto che le linee di forza non attraversano la parte cava del corpo. Ciò vale per
+corpi chiusi di qualsiasi forma, formati da materiale con permeabilità non troppo bassa e di
+spessore non troppo piccolo.
+5.12  Risoluzione di semplici circuiti magnetici
+Un circuito magnetico è generalmente composto da tratti (tronchi) elementari, colle-
+gati fra loro in vari modi (serie, parallelo, misto), che possono essere formati da materiali
+diversi, sia di tipo ferromagnetico che non (traferri di aria o di materiale non ferromagne-
+tico) con diversi gradi di magnetizzazione dipendente dal valore dell’induzione magnetica
+presente in ogni tratto.
+Ricordando che:
+–  il collegamento serie si ha quando due o più tratti sono interessati dallo stesso flusso;
+–  il collegamento in parallelo si ha quando due o più tratti hanno lo stesso valore
+della f.m.m. Hl;
+–  il collegamento misto si ha quando sono presenti, nello stesso circuito magnetico,
+entrambi i precedenti collegamenti;
+–  nel caso di collegamento in parallelo si possono individuare nodi magnetici a cui si
+può applicare una legge analoga al primo principio di Kirchhoff, considerando i flussi
+magnetici che interessano il nodo in esame.
+Nella risoluzione dei circuiti magnetici si presentano, in genere, due tipi di problemi:
+–  problemi diretti per i quali, note la forma e le dimensioni geometriche del nucleo
+magnetico e il materiale dei vari tronchi elementari, si deve calcolare la f.m.m. necessaria
+a produrre una determinata induzione o un determinato flusso;
+–  problemi inversi per i quali, note la f.m.m., la forma e le dimensioni geometriche
+del nucleo magnetico e il materiale, si deve calcolare il flusso o l’induzione magnetica dei
+tratti elementari.
+Si deve anche tenere conto che, a causa della probabile presenza di materiali ferroma-
+gnetici che presentano riluttanza variabile, risolvere un circuito magnetico può risultare,
+in determinati casi, talmente laborioso da dover ricorrere a calcoli iterativi e quindi a pro-
+grammi di calcolo numerico per rendere più veloce la soluzione.
+A tale scopo è consuetudine distinguere due casi:
+–  circuiti magnetici formati da materiali non ferromagnetici o da materiali ferroma-
+gnetici con punto di lavoro sul tratto lineare della caratteristica. In questo caso la cono-
+scenza della permeabilità semplifica il problema, perché consente il facile calcolo delle
+riluttanze o delle forze magnetizzanti H corrispondenti a determinati valori di induzione B;
+–  circuiti magnetici con almeno un tratto con punto di lavoro sulla parte della caratte-
+ristica di magnetizzazione non lineare. In questo caso, si incontrano difficoltà nella risolu-
+zione dei problemi indiretti per i quali, non essendo noti i valori di B e H, non è possibile
+ricavare il corrispondente valore della permeabilità magnetica. È necessario perciò ricor-
+rere alla risoluzione per tentativi, che consiste nell’assegnare un determinato valore di
+induzione e calcolare il corrispondente valore della f.m.m.; sulla scorta del risultato otte-
+nuto si “aggiusta” il valore di B, si ripetono i calcoli, e si procede in questo modo fino ad
+arrivare al valore di f.m.m. data.
+
+[PAG 591]
+ELETTROTECNICA GENERALE
+VII-87
+I metodi da utilizzare per la risoluzione dei circuiti magnetici sono la legge di Hopkin-
+son (o metodo delle riluttanze magnetiche) e la legge della circuitazione magnetica. Per
+l’applicazione di tali metodi è spesso necessario conoscere la caratteristica di magnetizza-
+zione dei materiali utilizzati; la Tab. VII.5.1 riporta a tale scopo le caratteristiche di
+magnetizzazione dei materiali ferromagnetici di più comune impiego e dell’aria.
+Esempio 1
+Con riferimento alla Fig. VII.5.18, determinare la lunghezza di un solenoide rettilineo
+Tab. VII.5.1   Caratteristiche di magnetizzazione di alcuni materiali ferromagnetici e
+dell’aria
+Materiale
+Acciaio fuso
+e ferro fucinato
+Ghisa
+Lamiere
+normali
+Lamiere
+al silicio
+Lamiere
+a cristalli
+orientati
+Aria
+B
+[T]
+H
+[A/m]
+r
+H
+[A/m]
+r
+H
+[A/m]
+r
+H
+[A/m]
+r
+H
+[A/m]
+r
+0,10
+70
+1140
+200
+400
+45
+1770
+80
+1000
+
+
+80 000
+0,20
+90
+1770
+450
+350
+50
+3180
+100
+1590
+
+
+160 000
+0,30
+100
+2390
+800
+300
+60
+4980
+125
+1910
+
+
+240 000
+0,40
+120
+2650
+1300
+245
+70
+4550
+145
+2200
+
+
+320 000
+0,50
+150
+2840
+2000
+200
+90
+4420
+160
+2500
+
+
+400 000
+0,60
+170
+2810
+2800
+170
+130
+3670
+180
+2650
+
+
+480 000
+0,70
+220
+2530
+4000
+140
+170
+3280
+200
+2800
+
+
+560 000
+0,80
+270
+2360
+5500
+115
+230
+2770
+250
+2550
+
+
+640 000
+0,90
+320
+2240
+8000
+90
+330
+2170
+310
+2310
+
+
+720 000
+1,00
+400
+1990
+11000
+72
+470
+1700
+400
+2000
+40
+20000
+800 000
+1,10
+500
+1750
+15000
+58
+630
+1390
+500
+1750
+58
+15100
+880 000
+1,20
+620
+1540
+20000
+48
+800
+1200
+700
+1360
+75
+12700
+960 000
+1,30
+850
+1220
+
+
+1050
+990
+1200
+860
+88
+11800
+1 040 000
+1,40
+1200
+930
+
+
+1350
+830
+2300
+480
+100
+11140
+1 120 000
+1,50
+2000
+600
+
+
+1800
+660
+4000
+300
+140
+8500
+1 200 000
+1,60
+3500
+365
+
+
+3100
+410
+7500
+170
+450
+1830
+1 280 000
+1,70
+6000
+225
+
+
+5200
+260
+14000
+100
+1600
+850
+1 360 000
+1,80
+10000
+140
+
+
+9000
+160
+24000
+60
+
+
+1 440 000
+1,90
+16000
+95
+
+
+14800
+100
+
+
+
+
+1 520 000
+2,00
+25000
+64
+
+
+30000
+53
+
+
+
+
+1 600 000
+H
+B
+0
+------
+=
+
+[PAG 592]
+VII-88
+ELETTROTECNICA GENERALE
+a spire serrate, avvolto in aria, di sezione circolare avente raggio 15 mm, tale che la forza
+magnetizzante nel punto centrale differisca del 5% dal valore che avrebbe nello stesso
+punto se il solenoide fosse di lunghezza infinita.
+Risoluzione
+La forza magnetizzante H al centro di un solenoide di lunghezza elevata (infinita) vale
+la forza magnetizzante H1 al centro di un solenoide non molto lungo è espressa, ponendo
+1 = 2 = , dalla relazione
+per i dati del problema
+sostituendo le relazioni precedenti e semplificando si ha
+e quindi
+Esempio 2
+Determinare i valori assunti dai flussi di induzione nei lati del circuito magnetico di
+Fig. VII.5.19, essendo noti: S1 = S3 = 3 cm2; S2 = 6 cm2; l1 = 15 cm; l2 = 7,5 cm; r = 7960
+0; N1I1 = 20 Asp; N2I2 = 30 Asp.
+Risoluzione
+Applicando le equivalenze fra le grandezze elettriche e magnetiche, si può schematiz-
+zare la struttura magnetica data con il circuito equivalente di Fig. VII.5.20. Si possono
+perciò scrivere le equazioni
+Fig. VII.5.18  
+1
+2
+r
+l
+H
+NI
+l-----
+=
+H1
+NI
+2l
+------2cos
+NI
+l----- cos
+=
+=
+H
+H1
+–
+H
+------------------
+0,05
+=
+1
+cos
+–
+1
+----------------------
+0,05 ;
+=
+cos
+0,95 ;
+=
+
+18° 12
+=
+l
+2rcotg
+91mm
+
+=
+1
+2
+3
++
+–
+0
+=
+nodo B
+11
+22
++
+N1I1
+=
+maglia ABEDA
+22
+33
++
+N3I3
+=
+maglia BCFEB
+
+[PAG 593]
+ELETTROTECNICA GENERALE
+VII-89
+Poiché la permeabilità del ferro vale f = r 0 = 102 H/m, le riluttanze dei lati del
+circuito magnetico risultano
+Introducendo nelle equazioni i valori delle f.m.m e delle riluttanze si ha
+Risolvendo il sistema si ottengono, per i flussi di induzione nei lati, i seguenti valori
+L’esercizio può essere risolto anche con il metodo di Millman applicato alla rete di
+Fig. VII.5.20; infatti
+sostituendo i valori e risolvendo si ottiene: FmBE = 8,33 Asp.
+I flussi di induzione risultano perciò
+Fig. VII.5.19   
+Fig. VII.5.20   
+l2
+l2
+S3
+S2
+l1
+N1I1
+N2I2
+S1
+1
+2
+3
+Fm1
+Fm3
+1
+2
+3
+A
+B
+C
+D
+E
+F
+1
+3
+l1
+S1
+---------
+0,3
+10 2
+–
+3
+10 4
+–
+
+
+-----------------------------------------
+105H 1
+–
+=
+=
+=
+=
+per i lati BADE e BCFE
+2
+l2
+S2
+---------
+0,15
+10 2
+–
+6
+10 4
+–
+
+
+-----------------------------------------
+0,25
+105
+
+H 1
+–
+=
+=
+=
+per i lato BE
+1
+2
+3
++
+–
+0
+=
+1051
+0,25
+105
+
+2
++
+20
+=
+0,25
+105
+
+2
+1053
++
+30
+=
+1
+11,66
+10 5
+–
+
+Wb;
+=
+2
+33,33
+10 5
+–
+
+Wb;
+=
+3
+21,67
+10 5
+–
+
+Wb
+=
+FmBE
+N1I1
+1
+-----------
+N2I2
+3
+-----------
++
+1
+1
+------
+1
+2
+------
+1
+3
+------
++
++
+----------------------------------------
+=
+2
+FmBE
+2
+-------------
+33,33
+10 5
+–
+
+Wb;
+=
+=
+1
+N1I1
+FmBE
+–
+1
+---------------------------------
+11,66
+10 5
+–
+
+Wb;
+=
+=
+
+[PAG 594]
+VII-90
+ELETTROTECNICA GENERALE
+Esempio 3
+Un nucleo toroidale in ferro (Fig. VII.5.21), di sezione costante S = 3 cm2 e di lun-
+ghezza media lm = 50 cm, con traferro di spessore  = 0,5 mm, porta uniformemente
+distribuito un avvolgimento di 100 spire. Determinare, con i dati della curva di magnetiz-
+zazione del ferro riportati in tabella, il valore della corrente di eccitazione affinché l’indu-
+zione nel ferro assuma il valore B = 0,5 T.
+Risoluzione
+Il circuito magnetico è costituito da due tronchi in serie: il lato di ferro di lunghezza l
+ 50 cm e quello in aria di lunghezza  = 0,5 mm. Indicando con Hf e H0 rispettivamente
+la forza magnetizzante nel ferro e nel traferro, per la legge della circuitazione si scriverà
+Per i dati della tabella, la forza magnetica Fm per il circuito in ferro vale
+Essendo il nucleo di forma torica e per le condizioni poste dal problema, l’induzione
+nel traferro vale 0,5 T, per cui la forza magnetica risulta
+Sono perciò necessarie
+cui corrisponde nell’avvolgimento una corrente di 2,29 A.
+B (T)
+0,1
+0,2
+0,3
+0,4
+0,5
+0,6
+0,8
+1,00
+H (Asp/m)
+25
+35
+45
+50
+60
+70
+110
+180
+Fig. VII.5.21  
+3
+N2I2
+FmBE
+–
+3
+---------------------------------
+21,67
+10 5
+–
+
+Wb
+=
+=
+Dm
+
+I
+I
+N
+Hflf
+H0
++
+NI
+=
+Hflf
+60
+0,50
+
+30Asp
+=
+=
+Fm0
+H0
+B
+0
+------
+0,5
+0,5
+10 3
+–
+
+
+1,256
+10 6
+–
+
+------------------------------------------
+199 Asp
+=
+=
+=
+=
+NI
+Fmf
+Fm0
++
+229 Asp
+=
+=
+
+[PAG 595]
+ELETTROTECNICA GENERALE
+VII-91
+Esempio 4
+Si determini il valore assunto dall’induzione nel nucleo toroidale dell’esempio prece-
+dente, quando la corrente nell’avvolgimento ha l’intensità di 4 ampère.
+Risoluzione
+Per i dati del problema la f.m.m. è pari a
+Il problema non può essere risolto direttamente perché è nota la f.m.m e incognita
+l’induzione magnetica; si deve perciò ricorrere al calcolo iterativo, assegnando dei valori
+arbitrari a B e risalendo a Fm, fino ad arrivare al valore dato, pari in questo caso a 400
+Asp. In realtà si determinerà una coppia di valori della f.m.m. tra cui è compreso quello
+dato e si risalirà al valore effettivo della B mediante l’interpolazione lineare.
+Usando il metodo della circuitazione magnetica e ripetendo i calcoli, si ricava la
+tabella sotto riportata, nella quale B viene fissata, H0 si calcola come rapporto B0; Hf si
+legge sulla tabella dell’esempio precedente; Fm si calcola come somma fra H0 e Hflf.
+Il valore di induzione richiesto è compreso fra 0,8 e 1 T; per determinarlo si ricorre
+all’interpolazione lineare, supponendo che la variazione di B in funzione di Fm sia lineare
+nell’intervallo considerato (Fig. VII.5.22).
+Dalla similitudine dei triangoli OCD e OEF si ricava
+DC  FE  OC  OE; (Bx  0,8)  (1  0,8)  (400  373)  (488  373)
+da cui
+Riducendo l’intervallo entro cui è compreso il valore cercato, migliora la precisione
+del calcolo perché si riduce l’incertezza legata all’ipotesi di andamento lineare.
+Fig. VII.5.22  
+B (T)
+H0 (Asp/m)
+Hf (Asp/m)
+H0 (Asp)
+Hf lf (Asp)
+Fm (Asp)
+0,5
+398 089
+60
+199
+30
+229
+0,6
+477 704
+70
+239
+35
+274
+0,8
+636 943
+110
+318
+55
+373
+1,00
+796 178
+180
+398
+90
+488
+FmX
+O
+373 Asp
+D
+F
+C
+E
+488 Asp
+Bx
+1 T
+0,8 T
+Fm
+NI
+100
+4
+
+400 Asp
+=
+=
+=
+Bx
+0,8
+–
+0,2
+27
+
+115
+---------------------
+0,047 T;
+=
+=
+Bx
+0,847T
+=
+
+[PAG 596]
+VII-92
+ELETTROTECNICA GENERALE
+6  INTERAZIONI TRA CIRCUITI ELETTRICI E CAMPI MAGNETICI
+6.1  Forze di natura elettromagnetica
+Sono definite elettromagnetiche le forze che si manifestano fra conduttori percorsi da
+corrente e campi magnetici.
+Forza agente su un conduttore elettrico
+Un conduttore percorso da corrente di intensità I ed immerso in un campo magnetico
+di induzione uniforme B, è soggetto ad una forza esprimibile con la relazione
+(VII.6.1)
+dove  è l’angolo che l’asse del conduttore forma con la direzione del vettore B (Fig.
+VII.6.1). La forza si misura in newton (N) quando l’induzione è misurata in tesla (T), la
+corrente in ampère (A) e la lunghezza in metri (m).
+La lunghezza da considerare è quella interessata dalle linee di forza del campo magne-
+tico, mentre la parte di conduttore estranea all’azione del campo magnetico non è soggetta
+ad alcuna forza.
+A seconda del valore di  la forza varierà, assumendo il valore massimo F = BIL
+quando   90° ed il valore zero quando   0°; quindi un conduttore immerso in un
+campo magnetico avente la stessa direzione della corrente non è soggetto ad alcuna forza.
+La forza F, che sollecita il conduttore, risulta sempre perpendicolare al piano conte-
+nente il conduttore e le linee di induzione che interessano lo stesso conduttore; il verso
+della forza è individuato dal pollice della mano sinistra disposta lungo il conduttore nel
+verso della corrente, con le linee di forza entranti nel palmo della mano.
+Se la corrente ha intensità variabile e/o l’induzione magnetica presenta intensità, dire-
+zione e verso variabili, la relazione VII.6.1 esprime il valore istantaneo della forza che
+agisce sul conduttore. In particolare, se l’induzione non è costante, bisogna dividere il
+conduttore in tanti tratti elementari, di lunghezza l1, l2, …, li, …, ln, su ognuno dei
+quali l’induzione magnetica, supposta perpendicolare al tratto del conduttore, vale B1, B2,
+…, Bi, …, Bn, calcolare le forze elementari su ognuno dei tratti con la legge Fi = BiIli, e
+sommare vettorialmente le varie forze, ottenendo in tal modo la risultante.
+Coppia agente su una spira
+Si consideri (Fig. VII.6.2) una spira elettrica rettangolare, percorsa dalla corrente I,
+posta in un campo magnetico di induzione costante, con linee di forza parallele, il cui asse
+di rotazione sia perpendicolare alle linee di forza.
+Le forze Fv (Fv  aBIsen) che sollecitano i lati AB, DC (di lunghezza a) quando que-
+Fig. VII.6.1   Forza agente su un condut-
+tore.
+Fig. VII.6.2   Coppia agente su una spira
+rettangolare.
+F
+BILsen
+=
+B
+F
+I
+
+A
+B
+C
+D
+I
+B
+Fv
+Fv
+F0
+F0
