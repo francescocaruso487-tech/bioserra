@@ -1304,21 +1304,33 @@ async function loadLunaConsigli6() {
   // Aggiorna preview luna-piante
   const prev=document.getElementById('luna-piante-preview');
   if(prev) prev.textContent=phase.emoji+' '+phase.name+' · '+advice.detail.split('.')[0]+'. Tocca per analisi per ogni pianta.';
-  // Prova JSON
+  // Prova JSON — luna_consigli.json: wrapper .data, campo consigli = STRING numerata
   try {
-    const data=await fetchGHJson('luna_consigli.json');
-    if(!data) return;
+    const raw=await fetchGHJson('luna_consigli.json');
+    if(!raw) return;
+    const d = raw.data || raw;
     const meta=document.getElementById('luna-json-meta');
-    if(meta) meta.textContent='JSON: '+fmtJsonDate(data.aggiornato||data.updated_at||data.data);
-    const items=data.consigli||data.items||data.consigli_lunari||[];
-    if(!items.length) return;
-    const find=(keys)=>{for(const k of keys){const f=items.find(i=>(i.titolo||'').toLowerCase().includes(k)||(i.testo||'').toLowerCase().includes(k));if(f)return(f.titolo?f.titolo+': ':'')+( f.testo||f.body||'');}return null;};
-    const a=find(['attivit','oggi']);if(a)setVal('lc-attivita',a);
-    const ir=find(['irrig','acqua']);if(ir)setVal('lc-irrigazione',ir);
-    const nu=find(['nutriz','fertil','melassa','ortic']);if(nu)setVal('lc-nutrizione',nu);
-    const el=find(['elettro','rame','lakhovsky','pila']);if(el)setVal('lc-elettro',el);
-    const av=find(['avvis','alert']);if(av)setVal('lc-avviso',av);
-    const pr=find(['previs','prossim']);if(pr)setVal('lc-previsione',pr);
+    if(meta) meta.textContent='JSON: '+fmtJsonDate(raw.lastUpdate||raw.aggiornato||raw.updated_at);
+    const testo = d.consigli;
+    if(typeof testo !== 'string' || !testo.trim()) return;
+    // Sezioni numerate: "1. ATTIVITA... 2. IRRIGAZIONE..." separate da doppia newline
+    const blocchi = testo.split(/\n\n+/).map(b=>b.trim()).filter(Boolean);
+    const pick=(keys)=>{
+      for(const b of blocchi){
+        const up=b.toLowerCase();
+        if(keys.some(k=>up.includes(k))){
+          // rimuove prefisso "N. ETICHETTA:" lasciando il contenuto
+          return b.replace(/^\d+\.\s*[A-Za-z0-9 ']+:\s*/,'').trim();
+        }
+      }
+      return null;
+    };
+    const a=pick(['attivit','oggi']);if(a)setVal('lc-attivita',a);
+    const ir=pick(['irrigazione','acqua']);if(ir)setVal('lc-irrigazione',ir);
+    const nu=pick(['nutrizione','fertil','melassa','ortic']);if(nu)setVal('lc-nutrizione',nu);
+    const el=pick(['elettrocultura','rame','lakhovsky','pila','galvanic']);if(el)setVal('lc-elettro',el);
+    const av=pick(['avviso','alert']);if(av)setVal('lc-avviso',av);
+    const pr=pick(['prossimi','previs']);if(pr)setVal('lc-previsione',pr);
   } catch(e) { /* usa dati locali */ }
 }
 
@@ -1811,8 +1823,13 @@ function renderCalOggi() {
     // Prova a caricare da brain.json per aggiornare
     fetchGHJson('brain.json').then(d => {
       if (!d) return;
-      const txt = d.consiglio_giornaliero || d.oggi || d.summary || '';
-      if (txt) ai.innerHTML = `<em style="color:var(--text3);font-size:11px;">🤖 Brain AI:</em><br>${txt.substring(0,300)}${txt.length>300?'…':''}`;
+      const c = d.cervello || d;
+      let txt = c.briefing_mattutino || '';
+      if (!txt) {
+        const cg = c.consigli_giorno || d.consigli_giorno || [];
+        if (Array.isArray(cg) && cg.length) txt = (typeof cg[0]==='string') ? cg[0] : (cg[0].testo || cg[0].consiglio || '');
+      }
+      if (txt) ai.innerHTML = `<em style="color:var(--text3);font-size:11px;">🤖 Brain AI:</em><br>${String(txt).substring(0,300)}${String(txt).length>300?'…':''}`;
     }).catch(()=>{});
   }
 }
@@ -2950,5 +2967,6 @@ function getIrrigOggi(today, sun) {
     runInit();
   }
 })();
+
 
 
