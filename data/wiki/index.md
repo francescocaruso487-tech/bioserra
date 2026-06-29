@@ -1,22 +1,23 @@
 # BioSerra Wiki — Indice
 
-> Aggiornato: 2026-06-28 | 15 concetti | Knowledge base Living Soil + Elettrocultura
+> Aggiornato: 2026-06-29 | 16 concetti | Knowledge base Living Soil + Elettrocultura
 
 ## Panoramica
 - [Overview generale](sintesi/overview.md)
 
 ## Elettrocultura
-- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Applica acqua sottoposta a campi magnetici per migliorare l'assorbimento radical
-- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Collega un conduttore metallico al terreno per captare e trasmettere energie tel
-- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Posiziona una spirale di rame intorno alla pianta per generare campi elettromagn
-- [Circuito Oscillante Lakhovsky](concetti/circuito_lakhovsky.md) *(in 10 PDF)* — Applica un circuito oscillante a onde multiple per stimolare la rigenerazione ce
-- [Sinergia Ferro-Rame (Fe-Cu)](concetti/sinergia_ferro_rame.md) *(in 10 PDF)* — Utilizza elettrodi o fili di ferro e rame per creare differenze di potenziale e 
+- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Utilizza acqua sottoposta a campi magnetici per migliorare l'assorbimento dei nu
+- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Collega un conduttore metallico al terreno per bilanciare le cariche elettriche 
+- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Avvolgi una spirale di rame intorno al fusto o ai rami per generare campi elettr
+- [Circuito Oscillante Lakhovsky](concetti/circuito_lakhovsky.md) *(in 10 PDF)* — Costruisci un circuito oscillante a forma di anello per emettere frequenze benef
+- [Oscillatori a Onde Multiple Lakhovsky](concetti/multi_onde_lakhovsky.md) *(in 10 PDF)* — Utilizza più circuiti oscillanti di dimensioni diverse per coprire un'ampia gamm
+- [Elettrodo Ferro-Rame (Fe-Cu)](concetti/elettrodo_ferro_rame.md) *(in 10 PDF)* — Inserisci un elettrodo composto da ferro e rame nel terreno per creare una diffe
 
 ## Suolo
 - [Suolo Vivente](concetti/gestione_suolo_vivente.md) *(in 2 PDF)* — Mantenimento microbioma del suolo attivo.
-- [Compostaggio Organico](concetti/compostaggio_organico.md) *(in 1 PDF)* — Produzione compost di qualita per ammendare il substrato.
+- [Compostaggio Organico](concetti/compostaggio_organico.md) *(in 2 PDF)* — Produzione compost di qualita per ammendare il substrato.
 - [Inoculazione Micorrize](concetti/inoculazione_micorrize.md) — Introduzione funghi micorrizici per simbiosi radicale.
-- [Te di Compost](concetti/te_di_compost.md) *(in 1 PDF)* — Infuso aerobico di compost per applicazione fogliare o radicale.
+- [Te di Compost](concetti/te_di_compost.md) *(in 2 PDF)* — Infuso aerobico di compost per applicazione fogliare o radicale.
 - [Gestione pH Suolo](concetti/gestione_ph_suolo.md) *(in 2 PDF)* — Mantenimento pH ottimale 6.0-7.0 per biodisponibilita nutrienti.
 
 ## Nutrizione
