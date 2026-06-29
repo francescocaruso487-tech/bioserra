@@ -1,63 +1,49 @@
 {
-  "lastUpdate": "2026-06-29T13:17:48.000Z",
+  "lastUpdate": "2026-06-29T13:20:42.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Fase luna: Gibbosa Crescente. Controlla stato piante.",
-      "Verifica irrigazione e umidita substrato.",
-      "Controlla tecniche elettrocultura attive."
+      "```json\n{\n  \"consigli_giorno\": [\n    \"Applicare elettrocoltura DC a 6V tramite elettrodi di rame/zinco (metodo Christofleau [pdf_13]) su Milky Way F1, Titan F1 e Medusa F1 in fioritura per stimolare f"
     ],
-    "briefing_mattutino": "Sistema in modalita fallback. Controlla connessione Mistral.",
-    "consigli_piante": {
-      "autofiorenti": "Monitora crescita e avvisi raccolta.",
-      "femminizzate": "Verifica vegetazione.",
-      "per_pianta": []
-    },
+    "briefing_mattutino": "```json\n{\n  \"consigli_giorno\": [\n    \"Applicare elettrocoltura DC a 6V tramite elettrodi di rame/zinco (metodo Christofleau [pdf_13]) su Milky Way F1, Titan F1 e Medusa F1 in fioritura per stimolare fotosintesi e assorbimento idrico in condizioni di siccità (umidità 28%, 35.6°C) [pdf_17 PAG 51].\",\n    \"Integrare 200g/mq di biochar nel letto di coltivazione di Epsilon F1 (essiccazione) per migliorare ritenzione idrica e conducibilità elettrica del suolo, sfruttando le proprietà magnetiche del carbone vegetale [pdf_28 PAG 34].\",\n    \"Effettuare raccolta serale (19:00-20:00) di Medusa F1 e Titan ",
+    "consigli_piante": {},
     "tecniche_nuove": [],
     "scoperte": [],
-    "avvisi": [
-      "Epsilon F1: essiccazione in corso, concia il 2026-07-25",
-      "Milky Way F1: raccolta prevista tra 3 giorni (2026-07-02)",
-      "Titan F1: raccolta prevista tra 2 giorni (2026-07-01)"
-    ],
+    "avvisi": [],
     "piano_giornata": {
-      "mattina": "Controlla piante",
-      "pomeriggio": "Riposo ore calde",
-      "sera": "Irrigazione"
+      "mattina": "",
+      "pomeriggio": "",
+      "sera": ""
     },
     "kb_sintesi": {
       "principi_attivi": [
-        "Elettrocoltura naturale: utilizzo di energie armoniche libere per promuovere lo sviluppo sano delle piante",
-        "Uso di campi elettromagnetici a bassa intensità per stimolare la crescita radicale e la fioritura",
-        "Applicazione di correnti continue (DC) al suolo tramite elettrodi per migliorare l'assorbimento dei nutrienti",
-        "Integrazione di principi magnetici terrestri e celesti per armonizzare la crescita delle piante",
-        "Utilizzo di fili carbonici o tungsteno per creare campi elettromagnetici controllati"
+        "Elettrocoltura naturale: utilizzo di energie armoniche libere per promuovere la salute delle piante",
+        "Uso di campi magnetici e correnti elettriche a basso voltaggio per stimolare la crescita radicale e la fotosintesi",
+        "Sincronizzazione con le energie telluriche e celesti (es. antenna parafulmine magnetica di Christofleau)",
+        "Applicazione di correnti continue (DC) direttamente al suolo tramite elettrodi per migliorare l'assorbimento nutrizionale",
+        "Utilizzo di materiali conduttivi (rame, zinco) per creare campi elettromagnetici benefici"
       ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a bassa tensione (1-12V) tramite elettrodi in rame o zinco posizionati vicino alle radici, seguendo il metodo descritto nel manuale [pdf_17] 'ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-' (PAG 28). Questo stimola l'attività microbica e l'assorbimento dei nutrienti, cruciale in condizioni di caldo estremo (35.6°C) e bassa umidità (28%).",
-      "consiglio_suolo_da_testi": "Integrare nel suolo polveri di carbone vegetale o biochar per migliorare la struttura e la capacità di trattenere umidità, come suggerito da Ighina nel manuale [pdf_28] 'Ighina_El_Atomo_Magnetico_text' (PAG 34). Questo aiuta a contrastare lo stress idrico in serra durante la fase di fioritura.",
-      "consiglio_biodinamica_da_tesi": "Evitare lavorazioni profonde del suolo durante la luna calante per non disturbare l'attività microbica, come indicato nei manuali biodinamici della biblioteca BioSerra Caserta. In fase di fioritura, privilegiare interventi leggeri e applicazioni di preparati biodinamici (es. 500 o 501) nelle ore serali per ridurre l'evaporazione.",
-      "scoperta_del_giorno": "L'applicazione di un campo magnetico a due polarità (ferro con avvolgimenti di filo carbonico) può generare un effetto simile a un 'atomo magnetico' che armonizza le energie del suolo e delle piante, come descritto da Ighina in [pdf_28] (PAG 34). Questo potrebbe essere utile per contrastare lo stress da caldo in serra.",
+      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (1-12V) direttamente al suolo tramite elettrodi di rame/zinco posizionati vicino alle radici, seguendo il metodo descritto in [pdf_17] (PAG 28). Questo stimola la crescita radicale e la fotosintesi, soprattutto in condizioni di stress idrico (umidità 28%, 35.6°C).",
+      "consiglio_suolo_da_testi": "Integrare nel suolo polveri di carbone vegetale o biochar per migliorare la struttura e la capacità di trattenere nutrienti, come suggerito indirettamente nei lavori di Ighina sull'atomo magnetico [pdf_28] (PAG 34), che enfatizzano l'uso di materiali carboniosi per la conduzione elettrica nel suolo.",
+      "consiglio_biodinamica_da_testi": "Sfruttare le energie telluriche e solari durante la fase di fioritura (attuale in serra) applicando tecniche di elettrocoltura sincronizzate con i cicli lunari, come proposto da Christofleau [pdf_13] (PAG 1), che collegava le energie celesti alla crescita vegetale tramite dispositivi magnetici.",
+      "scoperta_del_giorno": "L'elettrocoltura può essere particolarmente efficace in condizioni di siccità (0.0mm pioggia, umidità 28%) perché le correnti elettriche a basso voltaggio migliorano l'assorbimento idrico e minerale delle piante, compensando lo stress idrico [pdf_17] (PAG 51).",
       "tecnica_da_provare": {
-        "nome": "Sistema di elettrocoltura a corrente continua con elettrodi in rame/zinco",
-        "descrizione": "Posizionare due elettrodi (anodo in rame e catodo in zinco) a 10-15 cm di profondità nel letto di coltivazione, distanziati di 30-50 cm. Collegarli a una batteria da 9V o pannello solare da 12V tramite un resistore da 1kΩ per limitare la corrente a 5-10mA. Mantenere l'impianto attivo per 4-6 ore al giorno, preferibilmente nelle ore più fresche (mattina presto o sera). Monitorare la risposta delle piante (vigore, fioritura) dopo 7-10 giorni.",
-        "fonte": "[pdf_17] 'ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-' (PAG 28) e [pdf_28] 'Ighina_El_Atomo_Magnetico_text' (PAG 34)",
+        "nome": "Sistema di elettrocoltura a corrente continua con elettrodi di rame/zinco",
+        "descrizione": "Posizionare due elettrodi (uno di rame e uno di zinco) nel suolo a 10-15 cm di profondità, distanti 20-30 cm tra loro, collegandoli a una batteria da 9V o pannello solare. Mantenere la corrente per 4-6 ore al giorno, preferibilmente nelle ore più fresche (mattina presto o sera), per stimolare la crescita radicale e la fioritura. Monitorare la risposta delle piante (es. aumento di turgore fogliare) entro 3-5 giorni.",
+        "fonte": "[pdf_17] (PAG 28, 78)",
         "materiali": [
-          "Elettrodi in rame (anodo)",
-          "Elettrodi in zinco (catodo)",
-          "Batteria 9V o pannello solare 12V",
-          "Resistore da 1kΩ",
-          "Cavi elettrici isolati",
-          "Strumenti per misurare la corrente (multimetro opzionale)"
+          "Elettrodi in rame e zinco (diametro 3-5 mm, lunghezza 20 cm)",
+          "Batteria da 9V o pannello solare miniaturizzato",
+          "Cavi elettrici isolati con connettori",
+          "Multimetro per monitorare la corrente (opzionale)",
+          "Guanti isolanti per sicurezza"
         ]
       }
     }
   },
   "agenti": {
     "piante": {
-      "stato_generale": "monitoraggio",
-      "irrigazione": "Valuta al mattino",
-      "nutrizione": "Water-only",
       "piante_critiche": [
         {
           "id": 1,
@@ -75,33 +61,11 @@
           "giorni_a_raccolta": 1
         }
       ]
-    },
-    "ambiente": {
-      "luna": {
-        "fase": "Gibbosa Crescente",
-        "emoji": "🌔",
-        "illuminazione_pct": 50,
-        "consiglio": ""
-      },
-      "ore_luce": 14
-    },
-    "elettro": {
-      "verifica_oggi": [
-        "Controlla circuito Lakhovsky",
-        "Verifica spirale rame"
-      ],
-      "ottimizzazione": ""
     }
   },
   "tecniche_nuove": [],
-  "avvisi": [
-    "Epsilon F1: essiccazione in corso, concia il 2026-07-25",
-    "Milky Way F1: raccolta prevista tra 3 giorni (2026-07-02)",
-    "Titan F1: raccolta prevista tra 2 giorni (2026-07-01)"
-  ],
+  "avvisi": [],
   "consigli_giorno": [
-    "Fase luna: Gibbosa Crescente. Controlla stato piante.",
-    "Verifica irrigazione e umidita substrato.",
-    "Controlla tecniche elettrocultura attive."
+    "```json\n{\n  \"consigli_giorno\": [\n    \"Applicare elettrocoltura DC a 6V tramite elettrodi di rame/zinco (metodo Christofleau [pdf_13]) su Milky Way F1, Titan F1 e Medusa F1 in fioritura per stimolare f"
   ]
 }
