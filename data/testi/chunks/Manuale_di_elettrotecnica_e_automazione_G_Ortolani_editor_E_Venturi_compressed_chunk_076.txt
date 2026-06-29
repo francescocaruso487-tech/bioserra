@@ -1,0 +1,728 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 76/116 ===
+Chars: 44,181 | Offset: 3,312,720
+
+
+
+[PAG 1566]
+XVI-8
+TECNOLOGIE BUS
+2.3  Considerazioni ambientali ed economiche
+Da più parti si conviene che il futuro del pianeta è sempre più correlato al tipo di svi-
+luppo che l’uomo si darà.
+La presa di coscienza da parte di progettisti e costruttori della salvaguardia 
+dell’ambiente e quindi della salute dell’uomo è oramai assodata; sempre più nell’edilizia 
+privata e pubblica, nella progettazione degli impianti elettrici, vengono adottati accorgi-
+menti volti a ridurre l’inquinamento elettromagnetico. Contemporaneamente vi è l’indica-
+zione e la valorizzazione ad un parsimonioso utilizzo delle risorse energetiche e 
+all’impiego di fonti rinnovabili.
+2.3.1  La domotica al servizio dei disabili e della casa sana
+Per le persone che in qualche modo, a seguito di un evento accidentale, patologico o 
+fisiologico, hanno conseguito una limitazione delle capacità di deambulazione, per le per-
+sone disabili, per la cosiddetta “utenza ampliata”, i sistemi a bus contribuiscono a far loro 
+condurre una vita normale, o quanto meno a farli vivere meglio.
+Aprire una porta, alzare una persiana o ancora rispondere al citofono, sembrano essere 
+azioni semplicissime da compiere, ma non lo sono probabilmente per l’utenza disabile. 
+Per poter condurre una vita autonoma e sicura l’home automation offre sicuramente un 
+ausilio insostituibile a queste persone: un esempio per tutti potrebbe essere l’impiego di 
+strumenti quali la console a comando vocale, che permette in un sistema a bus EIB di con-
+figurare fino a 64 funzioni di comando vocale, per il controllo delle varie utenze (apertura 
+porte, serrande, accensione luci o apparecchi televisivi ecc.).
+La seconda direzione di sviluppo riguarda la sicurezza: sempre tramite sistemi a bus si 
+possono attivare segnalazioni di allarme per pericolo di allagamenti, fughe di gas o incen-
+dio in modo da rendere più serena la permanenza dei disabili in locali dimensionati per le 
+loro esigenze specifiche.
+Un secondo aspetto che va considerato nel computo di pregi e difetti di un impianto a 
+bus è la correlazione tra questo tipo di installazione e la mutata sensibilità dei committenti 
+rispetto alla cosiddetta “casa sana”, cioè la casa dove vengono prese le dovute precauzioni 
+rispetto all’inquinamento elettrico.
+La Bioedilizia che opera nel settore delle costruzioni con una particolare sensibilità 
+rispetto all’inquinamento, sembra guardare con interesse crescente all’impiego della 
+Domotica come tecnica installativa degli impianti elettrici.
+L’impiego dell’energia elettrica porta inevitabilmente i corpi viventi all’esposizione 
+ai campi elettrici o magnetici.
+Le conclusioni di studi intrapresi da vari ricercatori rilevano una forte correlazione tra 
+l’esposizione a campi elettrici, magnetici e radiazione ad alta frequenza con disturbi 
+sull’uomo quali l’insonnia, il nervosismo, l’enuresi notturna ecc. Studi longitudinali 
+potranno altresì dimostrare effetti più devastanti sull’uomo, soprattutto nei soggetti cosid-
+detti “elettrosensibili”, quali la leucemia o tumori al seno e al cervello; pur tuttavia la rile-
+vazione di questi effetti è ancora in misura statisticamente così esigua, da non poter 
+sensibilizzare l’utenza ad un uso più consapevole degli apparecchi elettrici che fanno 
+parte integrante della vita quotidiana.
+Una attenzione particolare viene riposta quindi alla progettazione, nella realizzazione 
+degli impianti elettrici, in modo da avere dei bassi valori di campo elettrico e magnetico e 
+di campo ad alta frequenza. Per ottemperare a ciò si dovranno:
+–  evitare impianti o apparecchi non strettamente necessari,
+–  staccare l’alimentazione ai carichi quando non utilizzati, soprattutto nei luoghi di riposo,
+–  mantenere debite distanze da apparecchi e linee elettriche,
+–  schermare impianti e apparecchi elettrici.
+
+[PAG 1567]
+TECNOLOGIE BUS
+XVI-9
+2.3.2  Consumo e risparmio energetico
+Il consumo familiare (quattro persone) annuale di energia elettrica viene stimato in 
+7200 kWh. Nella Fig. XVI.2.4 è visualizzata la suddivisione dell’utenza elettrica.
+Gran parte del consumo di energia si deve all’impiego di resistenze per il riscalda-
+mento dell’acqua di elettrodomestici quali la lavatrice e la lavastoviglie o per i sanitari.
+Fig. XVI.2.4   Ripartizione del consumo di energia. 
+ 
+Tab. XVI.2.1   Potenza convenzionale in un moderno edificio civile
+ILLUMINAZIONE
+Descrizione
+Potenza 
+[W]
+Descrizione
+Potenza 
+[W]
+Cucina
+     150
+Soggiorno
+     500
+Camera da letto
+     200
+Bagno + bagno servizio
+     300
+Seconda camera
+     150
+Ingresso
+     100
+ELETTRODOMESTICI
+Descrizione
+Potenza 
+[W]
+Descrizione
+Potenza 
+[W]
+Televisore, 
+videoregistratore
+     300
+Frigo e congelatore
+     500
+Scalda acqua
+   1200
+Lavatrice
+   2200
+Computer, Hi-Fi
+     500
+Lavastoviglie
+   2300
+Riscaldamento
+     300
+Asciugatrice
+   2000
+Condizionamento
+   2000
+Forno elettrico
+   1500
+Altri servizi
+     200
+Piccoli elettrodomestici
+     200
+Televisione e piccoli 
+elettrodomestici
+9%
+Riscaldamento e 
+condizionamento
+7%
+Lavatrice e asciugatrice
+28%
+Illuminazione
+7%
+Frigorifero e congelatore
+24%
+Cucina e forno
+12%
+Altre utenze
+13%
+
+[PAG 1568]
+XVI-10
+TECNOLOGIE BUS
+Solo nel locale cucina di un appartamento medio si ritrovano una schiera di elettrodo-
+mestici (lavatrice, asciugatrice, forno elettrico e a microonde, frigo e congelatore, oltre ad 
+una serie di piccoli elettrodomestici); si aggiungano a questi il consumo di energia per 
+pompe o fancoil per il riscaldamento e il condizionamento, l’illuminazione e i servizi 
+ausiliari, si arriva a potenze convenzionali di circa 15 kW (Tab. XVI.2.1), che sono i con-
+sumi di una piccola azienda artigianale.
+Considerando un fattore di contemporaneità pari a 0,4 ne risulta comunque una 
+potenza contrattuale di quasi 6 kW.
+Tipicamente la potenza contrattuale fornita ai contatori domestici dall’ENEL è 1,5 - 3 
+- 4,5 - 6 - 10 - 15 kW.
+Se negli anni ‘60 una sola lampadina e una presa per locale erano la dotazione neces-
+saria, oggi il consumo di energia è molto aumentato e quindi in un appartamento medio 
+non bastano neanche più le potenze contrattuali di 3 kW ma ci si rivolge sempre più ad 
+una installazione di 4,5 kW per uso civile.
+Dal sintetico quadro che è stato presentato ne consegue che una riduzione o quanto 
+meno una ottimizzazione del consumo di energia elettrica è diventata necessaria.
+Anche in questo caso la tecnologia bus può servire da supporto per la gestione più cor-
+retta del consumo energetico, tramite apparecchiature che programmino e ottimizzino 
+l’accensione o il distacco dei carichi.
+2.3.3  Convenienza economica
+Quando un sistema home, building o factory automation possa dirsi economicamente 
+vantaggioso dipende da molti fattori. 
+Un buon impianto di riscaldamento e una buona coibentazione delle pareti dell’edifi-
+cio non sono sufficienti a risparmiare energia, se il committente utilizza in modo impro-
+prio la funzione di aerazione dei locali (finestre spesso spalancate durante il periodo di 
+riscaldamento). Non serve avere un superprogrammatore per la caldaia se l’utente non lo 
+sa impiegare correttamente.
+La filosofia che attiene ai sistemi domotici afferma che la tecnica deve essere al servi-
+zio dell’uomo e quindi supportare l’utente di un edificio nei suoi comportamenti, non 
+determinarli. Peraltro sistemi complicati devono essere gestiti da opportuni controlli e 
+regolazioni, in modo che il comando finale sia semplice e adatto all’utente.
+Verificata quindi l’accettazione da parte dell’utente dei comportamenti corretti, che si 
+devono attuare per una corretta gestione di un impianto a bus, occorre verificare inoltre se 
+il comfort e il risparmio energetico che la nuova tecnologia apporta siano sufficiente-
+mente vantaggiosi, rispetto al costo iniziale dell’impianto che è, allo stato dell’arte, 
+ancora piuttosto oneroso rispetto ad un impianto tradizionale.
+Nella Fig.XVI.2.5 è visualizzato il grafico dell’ammortamento di due diverse solu-
+zioni impiantistiche, risultato da uno studio comparato dei costi; nel grafico si evidenzia 
+che tra un impianto tradizionale ed uno che impiega tecnologia bus EIB il punto di pareg-
+gio si può ottenere dopo almeno 5 anni di attività dell’impianto stesso.
+Secondo tale studio, dopo tale periodo la soluzione che impiega il bus diviene econo-
+micamente più vantaggiosa, pur se si deve comunque tenere in debito conto il plus che un 
+sistema bus ha rispetto alla tradizionale tecnologia; determinate funzioni di controllo, 
+regolazione o supervisione dei processi non sono possibili se non con la sola tecnologia 
+bus e inoltre, in caso di espansione o ristrutturazione dell’ambiente, l’impianto elettrico o 
+l’insieme degli impianti interconnessi al sistema bus deve soltanto essere riprogrammato, 
+mentre un sistema tradizionale deve essere riprogettato e riconfezionato.
+Ne consegue quindi, da un’analisi sommaria, che rispetto ad un costo iniziale più alto 
+l’home automation a lungo andare è conveniente rispetto alla tradizionale tecnologia cab-
+
+[PAG 1569]
+TECNOLOGIE BUS
+XVI-11
+lata, sia in termini di risparmio energetico, che di manutenzione e di gestione degli 
+impianti e naturalmente di comfort: più funzioni e più applicazioni vengono integrate con 
+il sistema a bus e più conveniente è la sua realizzazione.
+Fig. XVI.2.5   Analisi comparativa ammortamento tra impianto tradizionale e bus EIB.
+Nei grandi complessi del terziario i vantaggi del sistema domotico vengono ulterior-
+mente apprezzati:
+–  progettazione ed esecuzione più semplificate,
+–  acquisizione di maggiore visibilità nelle installazioni più complesse,
+–  cablaggio significativamente ridotto,
+–  carico infiammabile (cavi) notevolmente ridotto e quindi maggiore sicurezza,
+–  costo di esercizio minore che nell’impiantistica tradizionale.
+In conclusione si può affermare che i sistemi bus rappresentano il futuro molto pros-
+simo degli impianti elettrici che diventeranno così più sicuri più flessibili e con molte 
+potenzialità; il costo iniziale dell’impianto potrebbe essere leggermente superiore a quello 
+tradizionale, ma se si fa un confronto tenendo in considerazione le prestazioni ottenibili, 
+la possibilità di successive modifiche a costo nullo, il risparmio derivante dalla manuten-
+zione preventiva, dall’integrazione dei sistemi e dalla semplicità del cablaggio, i sistemi 
+BUS risultano decisamente più vantaggiosi.
+2.4  Applicazione dei sistemi bus
+L’avvento della Domotica (dalla parola greca domos e dalla francese automatique), 
+cioè dell’applicazione dei sistemi bus negli edifici, si ha dopo una lunga esperienza 
+nell’automazione delle fabbriche (factory automation). È improponibile pensare oggi-
+giorno ad una industria manufatturiera che non impieghi il PLC e le linee robotizzate.
+Ma è dalla ricerca in questo ambito e dalle innumerevoli applicazioni nella fabbrica 
+automatica che viene mutuata la tecnologia bus per l’edificio. 
+Negli edifici in genere (home automation), ma in particolare nel terziario (building 
+automation), si è in presenza di vari impianti tecnologici che sono gestiti da sistemi auto-
+matici che pur tuttavia presiedono al singolo impianto.
+Pertanto un edificio di questo genere avrà diversi sistemi, che non saranno però capaci 
+di passare informazioni in modo integrato e quindi di parlare la stessa lingua e di capirsi.
+Con i sistemi integrati che sfruttano la tecnologia bus è possibile gestire insieme i vari 
+impianti tecnologici, conseguendo una ottimizzazione del funzionamento e un notevole 
+risparmio energetico (Fig. XVI.2.6).
+
+[PAG 1570]
+XVI-12
+TECNOLOGIE BUS
+Fig. XVI.2.6   Sistema bus che integra diversi impianti tecnologici.
+2.4.1  Utenti
+Da indagini di mercato effettuate sull’utenza dei sistemi domotici ne consegue che la 
+richiesta di prestazioni automatizzate riguarda soprattutto la sicurezza; in secondo ordine 
+viene richiesto il comfort ambientale seguito dalla possibilità di regolare l’illuminazione.
+Nella Fig. XVI.2.7 sono visualizzati i risultati di una ricerca sulle motivazioni 
+all’acquisto di un sistema home automation.
+Fig. XVI.2.7   Motivazione all’acquisto di un sistema bus (fonte Sistema Casa).
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+70%
+80%
+90%
+100%
+Sicurezza Risparmio
+energetico
+Status
+symbol
+Facilità
+d'uso
+Professionista
+Donna che lavora
+Single
+Anziano
+
+[PAG 1571]
+TECNOLOGIE BUS
+XVI-13
+Sono stati configurati diversi profili di potenziali utenti.
+1) Imprenditori e professionisti con reddito alto. Si tratta di proprietari di ville (300 
+600 m2), interessati alla nuova tecnologia in ordine al comfort e al prestigio che essa com-
+porta. Le prestazioni richieste sono:
+–  Security, videosorveglianza, telecontrollo.
+–  Riscaldamento e climatizzazione.
+–  Dimmerizzazione luce e azionamento serrande e box.
+–  Scenari di luce.
+2) Professionisti e impiegati con reddito medio-alto. L’esigenza primaria è quella di una 
+maggiore sicurezza e della possibilità di controllo a distanza della propria abitazione. 
+Negli appartamenti di proprietà (100  m2) vengono installati i seguenti sistemi:
+–  Impianti antintrusione e antincendio con controllo mediante cellulare.
+–  Riscaldamento e climatizzazione.
+–  Gestione carichi e consumi per evitare black-out.
+–  Dimmerizzazione luce.
+3) Persone anziane e disabili. Sono coloro che intendono con questa tecnica installativa 
+aumentare la loro autonomia o quanto meno migliorare la qualità della loro vita, mediante 
+la gestione automatica dell’ambiente domestico. Le richieste sono in ordine a:
+–  Impianti antintrusione e antincendio.
+–  Teleassistenza.
+–  Automazione degli accessi e degli apparecchi mediante telecomandi o con-
+sole a riconoscimento vocale.
+4) Costruttori e progettisti. Gli operatori edili (imprenditori coadiuvati da progettisti 
+high-tech), che operano nel segmento residenziale medio-alto, prendono atto della neces-
+sità di offrire un maggior comfort e pregio alle loro produzioni, predisponendo negli 
+appartamenti, nei residences, negli hotels dei sistemi a cablaggio strutturato per applica-
+zioni domotiche. L’accresciuta sensibilità civile e istituzionale rispetto ai problemi degli 
+anziani e dei disabili ha portato i progettisti di edifici pubblici e di luoghi di cura ad 
+apprezzare le potenzialità che l’home automation può introdurre nella vita quotidiana. 
+2.4.2  Settori tecnologici di applicazione
+Vi sono svariate funzioni che si possono configurare in un sistema domotico:
+–  Calendario. Si possono definire programmi su base giornaliera, settimanale o annuale 
+per il funzionamento automatico di utenze (riscaldamento o raffrescamento).
+–  Comando a distanza. Mediante un telecomando portatile a raggi infrarossi si ha la 
+possibilità di regolare l’illuminazione, comandare carichi, variare la temperatura o richia-
+mare uno scenario.
+–  Comando di tapparelle, tende, avvolgibili. Si possono gestire tutti gli azionamenti 
+motorizzati di un’abitazione (abbassare e sollevare tapparelle, tende e veneziane, schermi 
+di protezione, lucernari e finestre motorizzate).
+–  Comando in funzione di presenza-movimento. Nelle zone di passaggio (corridoi, 
+rampe scale, camminamenti esterni) si può prevedere il comando automatico dell’illumi-
+nazione in funzione del movimento di persone. In taluni ambienti è opportuno attivare 
+automaticamente illuminazione, riscaldamento o ventilazione solo se viene rilevata la pre-
+senza di persone (per esempio per i bagni di luoghi pubblici, di esercizi commerciali, 
+ristoranti, scuole ecc.).
+–  Comando vocale. Tutti gli impianti di casa possono essere controllati facilmente per 
+mezzo di semplici comandi vocali. Per le persone disabili, azioni quotidiane quali accen-
+dere la luce o alzare una tapparella diventano difficoltà a volte insormontabili; grazie alla 
+domotica viene loro consentito di compiere tali azioni in autonomia.
+
+[PAG 1572]
+XVI-14
+TECNOLOGIE BUS
+–  Controllo in funzione della luminosità. È possibile regolare l’intensità luminosa 
+emessa dagli apparecchi d’illuminazione in funzione della luce naturale disponibile e con-
+testualmente provvedere all’abbassamento in automatico di tende o veneziane.
+–  Controllo mediante PC. Con un personal computer è possibile gestire l’intera abita-
+zione mediante pagine grafiche.
+–  Controllo serrature. Si possono gestire gli accessi all’abitazione, controllandone lo 
+stato ed aumentando il comfort (per esempio attivando automaticamente scenari che com-
+prendono l’accensione delle luci dell’ingresso quando si apre la porta di casa o provve-
+dendo allo spegnimento delle luci, all’abbassamento delle tapparelle e all’inserimento 
+dell’impianto antintrusione quando si esce).
+–  Controllo via telefono. È possibile attivare e disattivare utenze domotiche via telefono 
+fisso o cellulare o controllare lo stato di attivazione di un allarme. Con particolari sof-
+tware caricati su iPhone è possibile gestire completamente la casa domotica.
+–  Controllo via touch-panel. Mediante un touch-panel è possibile gestire l’intera abita-
+zione, con la semplice pressione di un dito sulla superficie del pannello.
+–  Crepuscolare. È possibile gestire l’illuminazione esterna in funzione dell’intensità 
+della luce o il controllo di carichi quali tapparelle o saracinesche.
+–  Illuminazione. Si possono controllare i vari punti luce della casa, accendendo, spe-
+gnendo o regolando la luminosità di un singolo apparecchio o di un gruppo. Con un unico 
+comando centralizzato si possono spegnere tutti gli apparecchi quando si lascia l’abita-
+zione o accendere le luci dell’entrata quando si entra.
+–  Monitoraggio aperture. Si possono controllare gli stati di porte e finestre di casa per 
+attivare allarmi ottici ed acustici o per coordinare l’apertura e la chiusura con l’impianto 
+di riscaldamento o raffrescamento, evitando così di sprecare inutilmente energia.
+–  Rilevazione allarmi tecnologici. L’allagamento di ambienti, le fughe di gas, la pre-
+senza di fumi o incendi possono essere rilevate e tempestivamente segnalate, evitando 
+situazioni potenzialmente pericolose, mediante allarmi ottici ed acustici e a distanza 
+mediante chiamata telefonica. Si può ulteriormente intervenire chiudendo le corrispon-
+denti elettrovalvole di comando di afflusso dei liquidi e dei gas.
+–  Rilevazione parametri meteo. La rilevazione dei parametri meteo come pioggia, vento 
+o temperatura consente di programmare azioni atte a prevenire disagi, con l’eventuale 
+protezione e controllo di parti della casa come tende, lucernari o tapparelle.
+–  Riscaldamento e climatizzazione. Si può gestire la temperatura di ogni singolo 
+ambiente in modo da soddisfare le preferenze individuali, consentendo opportunità di 
+risparmio energetico, e comfort ambientale, coordinando l'impianto con l'apertura/chiu-
+sura delle finestre durante il ricambio d’aria nei locali.
+–  Scenari. Sono possibili combinazioni di stati e regolazioni dei diversi impianti di casa 
+(per esempio lo scenario “serale” per la lettura che prevede illuminazione indiretta, tem-
+peratura comfort (22°C) e tapparelle abbassate).
+–  Segnalazione. Su display particolarmente compatti è possibile essere informati in ogni 
+momento dello stato o del valore di regolazione di utenze e dello stato di allarmi (allaga-
+mento, fughe gas, presenza fumi). 
+–  Simulazione presenza. Ripetizione automatica programmata delle azioni compiute 
+quotidianamente, come alzare ed abbassare le tapparelle o accendere e spegnere le luci, 
+possono simulare la normale presenza in una casa abitata.
+–  Temporizzazione. La definizione di programmi temporizzati per tutte le utenze colle-
+gate può servire per gestire fasce orarie, l’accensione e lo spegnimento del riscaldamento, 
+l’irrigazione del prato.
+–  Ventilazione. Nell’evenienza di rilevazione di fumi, umidità o aria di cattiva qualità 
+può essere attivata automaticamente la ventilazione degli ambienti.
+
+[PAG 1573]
+TECNOLOGIE BUS
+XVI-15
+I settori tecnologici in cui applicare i sistemi bus possono essere i seguenti.
+Impianto di illuminazione
+Si possono comandare o dimmerizzare (variare la luminosità) delle sorgenti luminose 
+da vari punti, creando addirittura degli scenari, cioè delle configurazioni particolari di 
+illuminazione.
+Si pensi per esempio ad un museo dove sarà possibile attivare un comando per accen-
+dere tutte le lampade di una certa zona o settore, oppure le sole lampade dei corridoi o 
+quelle dei sevizi, asservendo lo spegnimento e l’accensione dei carichi a dei sensori ad 
+infrarosso, che rilevano la presenza o meno delle persone.
+Altra modalità operativa sarà quella di controllare le stesse lampade tramite funzioni 
+di temporizzazione, aggiungendo nel quadro un comando timer, connesso allo stesso bus.
+A questo punto non ci si preoccuperà più di accendere e spegnere le luci poiché auto-
+maticamente si accenderanno solo in presenza di visitatori e nelle fasce orarie stabilite.
+Impianto antintrusione e gestione accessi
+La sicurezza intesa come “security” comprende l’antintrusione, l’antifurto, l’antira-
+pina e l’antiaggressione. L’impianto d’allarme è parte integrante delle dotazioni di un 
+impianto elettrico civile e la sua gestione tramite un bus consente di integrarlo con il resto 
+dei sistemi tecnologici esistenti in un edificio domestico, pubblico o del terziario. Si pos-
+sono installare sensori di ogni genere (puntuali, volumetrici, perimetrali, per tapparelle 
+ecc.) la cui rilevazione è attivata tramite telecomandi o tastiere a codice o lettori di badge.
+Oltre ai sistemi di rilevamento antintrusione si possono configurare sistemi per il con-
+trollo degli accessi: tramite carte magnetiche sarà possibile aprire porte o accedere a zone 
+circoscritte, riservate a personale qualificato, preventivamente individuato.
+Un esempio di applicazione è l’apertura della stanza d’albergo, dell’ufficio o della 
+casa di abitazione, non più con le tradizionali chiavi, bensì con una carta magnetica.
+Non è da escludere un prossimo futuro dove una sola carta debitamente codificata serva 
+a tutte le funzioni della vita quotidiana: fare la spesa, timbrare la presenza in ufficio e acce-
+dervi, richiedere certificazioni personali, verificare il pagamento di cartelle esattoriali ecc.
+Impianto F.M. e carichi
+Le prese da cui si derivano gli utilizzatori in una abitazione o in un edificio in genere, 
+possono essere sezionate e attivate secondo delle procedure di priorità di gestione 
+dell’energia o secondo l’impiego riferito a fasce orarie; i carichi vengono o meno alimentati 
+anche in funzione della massima potenza erogabile, rispetto alla potenza contrattuale dispo-
+nibile. In questo modo non si avranno più sgradevoli black-out dovuti all’intervento 
+dell’interruttore automatico, inserito nel contatore della ditta fornitrice dell’energia elet-
+trica. Tramite sistemi a bus è possibile controllare la movimentazione di tapparelle box. 
+Riscaldamento, ventilazione e climatizzazione
+Il potenziale più alto di risparmio in un edificio è costituito dal sistema riscaldamento-
+climatizzazione, se si considera che la diminuzione di 1 °C di temperatura ambiente 
+incide sul risparmio energetico nella misura del 6%.
+Tipicamente il controllo della temperatura avviene tramite termostati ambiente loca-
+lizzati in diversi punti dell’edificio, sia esso di abitazione civile o adibito ad uffici o ter-
+ziario in genere; la regolazione può avvenire sulle valvole di zona o sulle pompe o sui 
+fancoil a seconda della tipologia di impianto che si assume (a radiatori, a pavimento, a 
+parete).
+Con un sistema bus è possibile remotare a distanza la monitorizzazione e il comando 
+dell’impianto di riscaldamento, senza essere presenti nell’abitazione. Gli avvolgibili pos-
+sono essere aperti o chiusi a seconda dei valori climatici esterni (temperatura, umidità, vento)
+
+[PAG 1574]
+XVI-16
+TECNOLOGIE BUS
+o del grado di illuminazione dell’ambiente e quindi contribuire al risparmio energetico.
+La ventilazione controllata può anch’essa ridurre gli sprechi di calore dovuti all’apertura 
+inconsulta delle finestre e migliorare, con l’ausilio di opportuni sensori, la qualità dell’aria 
+all’interno degli ambienti. Si potrà pertanto dotare ogni fonte di calore (termosifone o ter-
+moconvettore) di una valvola, che potrà essere chiusa dal sistema, nel momento in cui in quel 
+locale, un microinterruttore verificasse che la finestra o la porta verso l’esterno è aperta.
+Il coordinamento tra riscaldamento e condizionamento apporta ulteriori risparmi ener-
+getici. La gestione della temperatura ambiente viene ottimizzata predisponendo eventual-
+mente un impianto di riscaldamento più piccolo, che sarà eventualmente coadiuvato dal 
+condizionatore (pompa di calore).
+Rilevazione di allarmi (fughe di gas, fumo, acqua)
+L’esigenza di sicurezza intesa come “safety” comprende l’antincendio, la rilevazione 
+di fughe di gas e degli allagamenti e di altri eventi dannosi.
+In particolare nelle strutture residenziali dedicate ad anziani o disabili con ristretta 
+autonomia, si usa installare dei sensori antiallagamento, dei rilevatori di fuoco o fumo con 
+lo scopo di attuare una sicura prevenzione e una corretta rilevazione degli allarmi.
+Se l’anziano o il disabile lascia il rubinetto aperto del lavandino o della vasca verrà 
+immediatamente rilevato l’allarme e l’attuatore situato a monte dell’impianto di addu-
+zione dell’acqua attiverà la valvola che inibirà l’accesso dell’acqua.
+Così pure se ci si dimentica il gas aperto o l’acqua della pentola ha spento la fiamma, 
+la valvola posizionata subito dopo il contatore del gas di città sulla tubatura di mandata, 
+chiudendosi, eviterà l’espansione del gas stesso nell’ambiente.
+Per quanto concerne i sensori di fumo, essi stessi provvederanno a comandare, tramite 
+il bus, l’apertura delle finestre o delle porte e l’attivazione della segnalazione di allarme.
+Telefonia e comunicazione
+Il ruolo della telefonia domestica è correlato allo sviluppo del mercato dei teleservizi. 
+La diffusione crescente dei PC nelle abitazioni è un fattore positivo per lo sviluppo 
+dell’Home Automation, per quanto concerne l’alfabetizzazione informatica e il conse-
+guente potenziale che il personal computer acquisisce, quale concentratore di controllo 
+intelligente di eventuali automazioni.
+Nel settore audio-video l’affermazione delle tecnologie digitali costituisce una ulte-
+riore possibilità di integrazione con i sistemi a bus. La comunicazione negli edifici ha 
+visto l’integrazione tra citofono, videocitofono e telefono; con l’avvento della telefonia 
+mobile, il campo si è ulteriormente allargato comprendendo inoltre il PC, il MODEM, 
+Internet, Intranet. Da ogni punto è possibile ora controllare lo stato degli allarmi dome-
+stici e gestire il funzionamento di luci, carichi, elettrodomestici.
+Controllo elettrodomestici
+Il controllo degli elettrodomestici è possibile grazie a sistemi bus che vengono super-
+visionati da PC. Gli elettrodomestici vengono equipaggiati con una scheda elettronica di 
+comunicazione che consente il trasferimento di dati ed informazioni da e verso il sistema 
+bus. Il forno della cucina può essere programmato in ordine ai tempi di cottura e alle tem-
+perature previste per i diversi cibi che si vogliono confezionare. Si può gestire l’avvio 
+della lavastoviglie o della lavatrice verificando il livello del sale o del detersivo, impo-
+stando i programmi di lavaggio a seconda delle stoviglie o dei panni da lavare. Nel frigo-
+rifero vengono consigliati dal supervisore il giusto caricamento dei vari piani e la 
+disposizione del cibo all’interno, fornendo ovviamente allarmi relativi ad eventuali situa-
+zioni anomale (innalzamento di temperatura o sovracongelamento), con la possibilità di 
+remotare via MODEM tali messaggi.
+
+[PAG 1575]
+TECNOLOGIE BUS
+XVI-17
+Nella Tab. XVII.2.2 si propone una panoramica delle applicazioni, nel settore residen-
+ziale e del terziario, dei sistemi che impiegano la tecnologia bus e wireless. Sono raggrup-
+pate secondo le diverse tipologie: sicurezza, comunicazione, videocitofonica, comfort, 
+controllo remoto e risparmio.
+Tab. XVI.2.2   Tabella applicazioni dei sistemi bus e wireless
+
+[PAG 1576]
+XVI-18
+TECNOLOGIE BUS
+3  SISTEMI BUS A LIVELLO MONDIALE: STANDARD E MERCATO
+Esistono attualmente numerosi standard utilizzati nel campo dell’automazione dome-
+stica; pur se numerose ditte produttrici hanno sviluppato prodotti ed investito fondi in 
+questo settore, la crescita della tecnologia bus è stata rallentata dall’incertezza su quale, 
+tra quelli disponibili, prevarrà e diventerà lo standard di mercato. Pur tuttavia vi sono 
+degli standard che sono più diffusi di altri (Fig. XVI.3.1).
+Fig. XVI.3.1   Standard bus più diffusi nel mondo.
+Per il mercato europeo gli standard più diffusi sono i seguenti.
+BatiBUS (www.batibus.com)
+Fondato da Airlec, EDF, Landys & Gir, Merlin Gerin, è stato adottato da circa 80 
+aziende ed è uno standard di comunicazione aperto, con oltre 5.000 sistemi installati in 
+edifici del terziario. Ha una velocità di trasmissione di 4.800 bps e, come mezzi di tra-
+smissione, prevede il doppino, la radiofrequenza e i raggi infrarossi. Aderisce assieme ad 
+EIB ed EHS al progetto “Convergenza”.
+EIB (www.eibaitalia.it)
+EIB (European Installation BUS) è lo standard europeo della EIBA (European Instal-
+lation bus Association) ed è disponibile per le 100 aziende affiliate, tra cui ABB, Gewiss, 
+Philips, Siemens, Vimar ecc. È adottato in oltre 15.000 sistemi installati nell’ambito della 
+building automation e tende ad espandersi verso l’Home Automation. Prevede vari mezzi 
+di trasmissione: il doppino, la radiofrequenza e i raggi infrarossi e Ethernet. La velocità è 
+di 4.800 bps e vi si possono collegare fino a 61.455 dispositivi.
+Aderisce assieme a BatiBUS ed EHS al progetto “Convergenza”.
+EHS (www.hesa.com)
+Lo standard EHS (European Home System) è stato sviluppato nell’ambito dei pro-
+grammi europei Eureka ed Esprit. Può essere utilizzato da chiunque ed è prevista una cer-
+tificazione dei prodotti per garantire la conformità allo standard. Ogni rete può gestire 
+fino a 256 componenti e ogni sistema fino a 1012 indirizzi. Come mezzi di trasmissione 
+prevede il doppino, le onde convogliate, il cavo coassiale, la radiofrequenza e i raggi 
+infrarossi. La velocità è di 2,4 kbps 9,6 kbps. Si tratta di uno standard aperto e molto 
+flessibile, applicabile a tutti i principali mezzi di comunicazione, con funzionalità Plug & 
+Play. Partecipa insieme a BatiBUS ed EIB al progetto “Convergenza”, per la creazione di 
+una piattaforma europea per l’Home Automation.
+Le associazioni europee dei produttori di sistemi bus (EIB, BatiBUS e EHS) stanno 
+X-10
+CEBus
+Bati Bus
+EIB
+European Home System
+EBS
+Lon Works
+HES
+
+[PAG 1577]
+TECNOLOGIE BUS
+XVI-19
+ricercando tramite il progetto “Convergenza” di trovare una linea comune di condotta in 
+modo da ottenere una piattaforma che sia utilizzabile da più sistemi di più produttori che 
+faciliti la diffusione della domotica.
+Le associazioni europee che si interessano di sistemi bus sono:
+Associazione EIBA Italia (www.eibaitalia.it): espressione nazionale di EIBA Inter-
+national, l’Associazione europea dei costruttori leader di materiale e componenti per 
+l’installazione elettrica che impiegano tecnologia EIB.
+BatiBUS Club International (www.konnex-knx.com): si pone come obiettivo la rea-
+lizzazione e la diffusione di prodotti basati sui protocolli BatiBUS.
+Associazione EHSA (www.ehsa.it): associazione che raggruppa i costruttori che 
+impiegano la tecnologia EHS.
+Associazione Konnex (www.konnex-knx.com): frutto della convergenza tra le tre 
+tecnologie bus europee fino ad oggi impiegate per la Home and Building Automation: 
+BatiBUS, EHSA ed EIB. Nel 2002 è stata costituita anche l’Associazione Konnex Italia 
+con membri fondatori le aziende ABB, BTicino, Gewiss, Hager, Siemens e Vimar.
+Nel continente americano gli standard impiegati sono i seguenti.
+CEBus Consumer Electronics Bus (www.cebus.org)
+Sviluppato dall’associazione americana EIA (Electronic Industries Association), il 
+Consumer Electronic Bus è uno standard integrato multimediale per sistemi Home Auto-
+mation che ha caratteristiche di flessibilità e modularità. Si avvale dei seguenti mezzi tra-
+smissivi: doppino intrecciato (twisted-pair wires), cavo coassiale, fibre ottiche, onde 
+convogliate, segnali infrarossi, segnali radio. A seconda del mezzo trasmissivo si possono 
+trasportare segnali analogici e digitali audio-video, con una velocità di 8000 bit per 
+secondo. Non presenta una topologia particolare.
+Lon Works (www.echelon.com)
+È uno standard Echelon, che produce, tramite Motorola e Toshiba, un particolare 
+dispositivo denominato chip neuronale. Chiunque può sviluppare prodotti con questo 
+standard, vi sono già esperienze soprattutto nel terziario, con una presenza di 3.500 
+aziende in 20 nazioni e ne stanno nascendo anche nel domestico. Come mezzi di trasmis-
+sione prevede il doppino, le onde convogliate, il cavo coassiale, la radiofrequenza, i raggi 
+infrarossi e le fibre ottiche. La velocità di trasmissione è di 2  10 kbps e possono essere 
+gestiti fino a 32 indirizzi. 
+X-10 (www.x10.com)
+È lo standard più diffuso negli Stati Uniti; prodotti X-10 sono presenti in 5 milioni di 
+case americane. La produzione è effettuata prevalentemente dall’azienda X-10, ma vi 
+sono altre aziende che sviluppano prodotti con questo standard, per cui vi sono innumere-
+voli periferiche disponibili sul mercato. Il basso costo ne ha favorito l’uso per applica-
+zioni domestiche anche con un approccio “fai da te”. Il mezzo trasmissivo usato sono le 
+onde convogliate su rete elettrica; è possibile una configurazione di un massimo di 256 
+indirizzi con una velocità di trasmissione di 50 bps. La gestione del sistema può essere 
+controllata da un PC mediante apposito software, oppure pilotato a distanza grazie a tele-
+comandi ad infrarosso. Il sistema si compone di trasmettitori e ricevitori; i trasmettitori 
+inviano segnali di comando ON/OFF o dimmer ai ricevitori dotati di unità di controllo. Il 
+ricevitore è collegato ad una determinata unità ID e controlla solo i comandi ad essa indi-
+rizzati. Vi sono trasmettitori con semplici funzioni comandate da pulsanti, trasmettitori
+
+[PAG 1578]
+XVI-20
+TECNOLOGIE BUS
+temporizzati e trasmettitori speciali con funzione di crepuscolare, sensore di presenza o di 
+comando attraverso codificazioni telefoniche. Il ricevitore è collegato alle prese elettriche 
+o direttamente ai carichi.
+Per il mercato giapponese e internazionale gli standard impiegati sono i seguenti.
+HBS Home BUS System (www.at-net.ip/RandD)
+Nato nel settembre 1988 come risposta all’europeo EHS e all’americano CEBus, 
+L’Home Bus System è la soluzione proposta da un consorzio di società giapponesi 
+(l’Electronic Industries Association of Japan) al problema della standardizzazione, con il 
+contributo di agenzie governative ed associazioni commerciali. Utilizza un cablaggio for-
+mato da due cavi coassiali e da otto coppie di cavo twisted-pair a cui vengono collegate 
+apparecchiature audio/video, telefoni ed altri dispositivi. È allo studio l’allargamento dei 
+mezzi trasmissivi alle onde convogliate e alla radiofrequenza. 
+HES Home Electronic System (www.sc25wg1.metrdik.com).
+L'Home Electronic System (HES) è uno standard internazionale per automazione 
+domestica, che viene attualmente sviluppato da un gruppo di esperti provenienti da varie 
+Nazioni (Canada, Francia, Italia, Giappone, Olanda, Norvegia, Svezia, Regno Unito e 
+Stati Uniti). Gli esperti sono organizzati in un gruppo di lavoro (ISO/IECJTC1/SC25/
+WG1) che ha il compito di definire uno standard che appronti le seguenti questioni:
+–  Command Language: definire un linguaggio per la comunicazione tra gli apparecchi 
+che sia indipendente dal mezzo trasmissivo.
+–  Universal Interface: progettazione di un modulo tipo che equipaggi ogni dispositivo, 
+per poter comunicare su vari sistemi home automation.
+–  Home Gate: approntare un gateway residenziale per collegare la rete domestica con la 
+rete di servizio degli enti fornitori.
+Altri standard, associazioni e consorzi presenti a livello mondiale sono:
+–  Bluetooth (www.bluetooth.com).
+–  ETI Extend The Internet Alliance (www.emware.com).
+–  HAVI Home Audio Visual Interoperability (www.havi.org).
+–  HomeAPI.
+–  Home Connex (www.peracom.com).
+–  Home Plug and Play (www. cebus.org).
+–  HomePlug Alliance (www.omeplug.com).
+–  HomePNA Home Phoneline Network Alliance (www.homepna.org).
+–  HomeRF Home Radio Frequency Working Group (www.homerf.org).
+–  Jini (www.jini.org).
+–  LonMark Interoperability Association (www.lonmark.org).
+–  No New Wires (www.intellon.com).
+–  OSGI Open Service Gateway Initiative (www.osgi.org).
+–  Sharewave (www.sharewave.com).
+–  UPnP Universal Plug and Play (www.upnp.org).
+–  VESA Video Electronics Standards Association (www.vesa.org).
+–  WECA Wireless Ethernet Compatibility Alliance (www.wirelessethernet.org).
+4  MERCATO E STANDARD EUROPEO DEL BUS
+I tre sistemi europei che si suddividono il mercato dei sistemi a bus sono: BatiBUS, 
+EIB, HES.
+Le associazioni BatiBUS Club International (per BatiBUS), EIB Association (per EIB)
+
+[PAG 1579]
+TECNOLOGIE BUS
+XVI-21
+ed European Home Systems Association (per EHS) che fanno capo ai relativi sistemi bus 
+europei convergono alla fine degli anni ’90 nella nuova associazione Konnex Association. 
+Lo standard KNX di questa nuova associazione permetterà di connettere allo stesso field-
+bus apparecchiature prodotte da più di 200 costruttori.
+Lo standard KNX individua tre categorie installative:
+–  Grande impianto. Comprende il terziario avanzato e l’industria, che richiedono la pro-
+gettazione di soluzioni che impiegano strumenti e competenze informatiche.
+–  Medio impianto. Comprende il segmento del terziario e delle applicazioni domestiche 
+che non necessariamente impiegano strumenti informatici.
+–  Piccolo impianto. Si fa riferimento all’impianto che può essere installato dallo stesso 
+utente finale, per semplici applicazioni domestiche.
+A grandi linee tale convergenza dovrebbe impiegare la tecnologia EIB a livello di 
+controllo e di montante del sistema, lo standard BatiBUS per l’impianto d’appartamento o 
+di piano e le onde convogliate del sistema HES per le applicazioni domestiche diretta-
+mente installate a cura dell’utente finale.
+4.1  Sistema BatiBUS
+4.1.1  Apparecchi
+Gli elementi che compongono un sistema BatiBUS sono i seguenti:
+–  un alimentatore dedicato alla comunicazione che eroga 14,5 V dc 300 mA SELV;
+–  un alimentatore ausiliario per alimentare gli attuatori collegati alle uscite dei ricevi-
+tori e per i sensori attivi che, per il carico che assorbono, non possono essere alimentati 
+dal bus (la linea BatiBUS può alimentare la parte ricetrasmittente dei trasmettitori e dei 
+ricevitori BatiBUS ma non i dispositivi esterni ad essi collegati);
+–  trasmettitori (Tx), che fungono da interfaccia tra i datori dei segnali e il bus;
+–  ricevitori (Rx), che fungono da interfaccia tra il bus e gli attuatori.
+Ogni dispositivo BatiBUS sia esso un Tx (trasmettitore) o un Rx (ricevitore), è corre-
+dato di predispositori per assegnare l’indirizzo e la funzione che devono svolgere; lo stan-
+dard BatiBUS prevede 32 tipologie di dispositivi, che vengono contraddistinti in fase di 
+fabbricazione tramite 5 bit memorizzati nel processore che correda l’apparecchiatura.
+4.1.2  Topologia
+La topologia permessa in questo tipo di standard è la solita consentita in tutti i sistemi: 
+lineare (a bus), a stella, ad anello o mista. L’architettura è libera, ma deve garantire la 
+massima disponibilità del sistema; l’eventualità di un guasto in un settore non deve pre-
+giudicare il funzionamento degli altri dispositivi connessi al bus. La lunghezza della linea 
+e la distanza di interconnessione dei vari punti e l’alimentatore dipendono dal numero di 
+punti collegati, che determinano i valori di capacità e resistenza del bus. Ragionevolmente 
+si può dire in sintesi che la distanza tra due punti (dispositivi) può variare nell’intervallo 
+600  1200 m, con una lunghezza massima di linea di 2500 m.
+4.1.3  Tecnica trasmissiva
+Il mezzo trasmissivo è il doppino twistato schermato, ma si possono collegare varie 
+tipologie mediante opportuni adattatori (infrarosso, onde convogliate, radiofrequenza). 
+Lo schermo deve essere collegato, insieme al conduttore negativo del bus e al nega-
+tivo di ogni dispositivo BatiBUS; la posa del cavo può essere condivisa con la linea di ali-
+mentazione 230 V, nelle medesime canalizzazioni.
+La linea bus è polarizzata ed effettua la trasmissione dei segnali ad una velocità di 
+4800 bps; viene effettuata una trasmissione asincrona di stringhe composte da 8 bit + start 
++ parità dispari + stop, per un totale di 11 bit. la lunghezza del messaggio è di 32 caratteri 
+(26 per i dati e 6 per il controllo degli errori).
+
+[PAG 1580]
+XVI-22
+TECNOLOGIE BUS
+L’accesso al bus è del tipo CSMA/CA (Carrier Sense Multiple Access with Collision 
+Avoidance) bidirezionale, half duplex, distribuita (senza necessità di centrali di controllo). 
+Il dispositivo che rileva lo stato di quiete della trasmissione può iniziare a “parlare” e 
+rimane in stato di trasmissione fino al termine del messaggio, mentre gli altri punti che 
+hanno rilevato la collisione arrestano la trasmissione e si pongono in ricezione.
+4.1.4  Indirizzamento
+L’indirizzamento delle apparecchiature prevede l’identificazione univoca mediante 
+tre codici così definiti:
+–  Indirizzo. Si possono indirizzare fino a 240 dispositivi dello stesso tipo (medesima 
+funzione).
+–  Tipo. Si possono realizzare 32 tipi di punto (dispositivi).
+–  Estensione. Ogni dispositivo (punto) può avere un indirizzo con estensione o meno.
+Il messaggio può essere indirizzato con varie modalità:
+–  Diretta (point to point). Inviato da un punto a un altro punto.
+–  Di gruppo (multicast). Inviato da un punto a più punti definiti come gruppo (massimo 
+15), dove ogni gruppo è costituito da 16 dispositivi (punti). 
+–  Generale (broadcast). Inviato da un punto a tutti i punti della rete aventi codice esten-
+sione specificato nel messaggio.
+–  Esteso (extended): Trasmesso da un punto con codice estensione 04 ad un altro punto 
+con estensione 04.
+La massima configurazione prevede l’impiego di 75 punti, pur tuttavia con alimenta-
+zione ausiliaria dei punti, si possono interconnettere fino a 1000 dispositivi.
+È disponibile il software BaSiCa per la progettazione e la supervisione dei sistemi 
+BatiBUS.
+4.2  Sistema instabus EIB
+All’interno dello standard EIB, molte ditte produttrici facenti parte del consorzio 
+EIBA hanno sviluppato un set di prodotti che mette a disposizione tutti i dispositivi neces-
+sari per la realizzazione di sistemi bus: a titolo di esempio viene analizzato il sistema 
+instabus EIB, che prevede diverse tipologie di impianti che impiegano diversi mezzi tra-
+smissivi (doppino twistato, onde convogliate e radiofrequenza).
+Il sistema instabus EIB, come tutti i sistemi bus EIB, è decentralizzato cioè non abbi-
+sogna di una centrale che contenga tutti i dati di configurazione del sistema; ogni compo-
+nente è autosufficiente poiché dotato di un microprocessore, che viene istruito mediante 
+un programma, per apprendere le caratteristiche del funzionamento dell’apparecchiatura.
+Il sistema è alimentato in bassissima tensione di sicurezza (SELV) da un alimentatore 
+certificato EIBA.
+4.2.1  Apparecchi
+L’alimentatore fornisce una tensione al bus di 28 V dc (le apparecchiature possono 
+funzionare ad una tensione minima di 21 V assorbendo una potenza 150  200 mW) ed è 
+protetto contro i corto circuiti. Ogni dispositivo deve essere in grado di separare l’alimen-
+tazione dal segnale in quanto entrambi impiegano il medesimo supporto trasmissivo (dop-
+pino). Viene fornito tipicamente in esecuzione per barra DIN; sul supporto DIN viene 
+incollata, mediante autoadesivo, una barra dati.
+Tramite un dispositivo denominato collegatore, il cavo bus viene connesso alle varie 
+barre dati e quindi alle apparecchiature ad essa collegate.
+Una seconda modalità di collegamento tra apparecchiature e cavo bus prevede 
+l’impiego di appositi morsetti di connessione che garantiscono la continuità del circuito 
+anche in assenza del dispositivo e contemporaneamente quindi la sostituzione del disposi-
+tivo senza interrompere la linea.
