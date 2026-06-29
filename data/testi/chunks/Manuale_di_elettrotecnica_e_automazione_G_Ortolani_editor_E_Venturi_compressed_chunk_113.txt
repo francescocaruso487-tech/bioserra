@@ -1,0 +1,1355 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 113/116 ===
+Chars: 43,008 | Offset: 4,955,690
+
+
+
+[PAG 2200]
+XX-182
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Il valore della resistenza termica giunzione-ambiente Rthja del contenitore TO-3 usato 
+dal dispositivo è di 32 °C/W e la resistenza termica giunzione-contenitore Rthjc (2,5 °C/W). 
+L’elaborazione dei dati con il programma di calcolo (Tab. XX.4.10) ci indica che il dis-
+sipatore di calore deve possedere una resistenza termica dissipatore - ambiente minore di 2,76 
+°C/W. I dissipatori di calore di tipo commerciale possiedono valori di resistenza termica più 
+elevata del valore richiesto per cui in questo caso si ricorre a dei profilati di alluminio estruso 
+(venduti in barre) la cui resistenza termica è funzione della lunghezza del profilato. 
+Tab. XX.4.10   Dimensionamento del dissipatore di calore per il regolatore 78HG 
+Per il dissipatore dimensionato, scegliendo una resistenza termica di 1,8 °C/W  la tem-
+peratura della giunzione raggiunge i 132,9°C; valore inferiore a quello massimo (150°C). 
+Il dissipatore è di notevoli dimensioni e peso per cui non dovrebbe essere posizionato sul 
+circuito stampato ma montato separatamente.
+La Tav. XX.4.10 mostra lo schema elettrico della piastra a circuito stampato che evi-
+dentemente contiene solo pochi elementi circuitali. I componenti devono essere però 
+scelti con cura in quanto la corrente circolante è molto intensa.
+4.3  Cronometro 
+4.3.1  Descrizione del problema
+Si progetti un cronometro che effettua misure di intervalli di tempo con risoluzione di 
+un centesimo di secondo. Il circuito è in grado di rilevare degli intertempi e di mantenerli 
+visualizzati per alcuni secondi.
+SPECIFICHE DI PROGETTO
+Potenza dissipata PD = 21,4 W  Temperatura ambiente Ta = 40 °C
+Descrizione
+Grandezza
+Valore
+Unità di 
+misura
+Resistenza termica giunzione-ambiente
+Rthja
+32
+°C/W
+Resistenza termica giunzione-contenitore
+Rthjc
+2,5
+°C/W
+Resistenza termica contenitore-ambiente
+Rthca
+29,5
+°C/W
+Temperatura giunzione massima
+Tj(max)
+150
+°C
+Verifica:         Rthjc < Rthja(max) < Rthja
+Resistenza termica giunzione-ambiente
+Rthja(max)
+5,23
+°C/W
+Resistenza termica giunzione-contenitore
+Rthcd
+0,25
+°C/W
+Coefficiente A = Rthja(max)  Rthjc 
+A
+2,73
+°C/W
+Caratteristica del dissipatore di potenza
+Resistenza termica dissipatore-ambiente massima
+Rthda(max)
+2,76
+°C/W
+Scelta del dissipatore di potenza
+Resistenza termica dissipatore-ambiente massima
+Rthda
+1,80
+°C/W
+Verifica della temperatura della giunzione
+Temperatura della giunzione
+Tj
+132,93
+°C
+
+[PAG 2201]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-183
+Tav. XX.4.9   Alimentatore con tensione di uscita regolabile: schema di principio.
+
+[PAG 2202]
+XX-184
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.4.10  Alimentatore con tensione di uscita regolabile: schema elettrico.
+
+[PAG 2203]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-185
+Nella Fig. XX.4.30 è mostrato il lay-out del pannello frontale dell’apparecchiatura.
+Fig. XX.4.30  Pannello frontale dell’apparecchiatura.
+4.3.2  Specifiche tecniche
+Il cronometro è in grado di misurare intervalli di tempo fino a 99,99 secondi.
+4.3.3  Analisi funzionale e schema a blocchi
+Nella Fig. XX.4.31 viene mostrato lo schema a blocchi dell’apparecchiatura.
+Fig. XX.4.31  Schema a blocchi.
+Il problema proposto viene affrontato partendo dalla soluzione del problema; nelle 
+Tavv. XX.4.11 e XX.4.12 viene proposto lo schema elettrico dell’apparecchiatura con 
+l’obiettivo di analizzare lo stesso e di ricavarne le particolarità progettuali.
+Tale approccio è giustificato dal fatto che non sempre il tecnico deve progettare appa-
+recchiature ma spesso deve riparare guasti o effettuare tarature su schede commerciali.
+È essenziale quindi acquisire la capacità di analizzare le caratteristiche tecnologiche e 
+circuitali impiegate nella realizzazione di apparecchiature elettroniche partendo dalla 
+capacità di interpretare correttamente le informazioni che il costruttore fornisce con la 
+documentazione tecnica di supporto all’apparecchiatura stessa ma anche quella di trarre 
+informazioni direttamente dalla lettura dello schema elettrico.
+La base tempi è ricavata da un oscillatore a rilassamento (multivibratore astabile) rea-
+lizzato con un microcircuito lineare, il temporizzatore 555.
+START
+STOP
+PAUSE
+RESET
+START
+STOP
+PAUSE
+CRONO
+ON
+OFF
+Unità di
+Unità di visualizzazione
+Blocco di
+consenso al
+conteggio
+condizionamento
+dei segnali
+Unità di
+conteggio
+Clock
+Reset
+Stop
+tempi
+Base
+Start
+S
+R
+Q
+Intertempo
+7
+
+[PAG 2204]
+XX-186
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.4.11  Cronometro digitale: blocco di controllo.
+
+[PAG 2205]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-187
+Tav. XX.4.12  Cronometro digitale: blocco di conteggio e di visualizzazione.
+
+[PAG 2206]
+XX-188
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+La lista dei componenti è mostrata nella Tab. XX.4.11.
+Tab. XX.4.11   Lista dei componenti del cronometro digitale
+Questa sorgente di riferimento per la frequenza di conteggio non risente delle varia-
+zioni della tensione di alimentazione, mentre è influenzata dalle variazioni di temperatura. 
+Il generatore del segnale di clock deve essere regolato in modo da generare un’onda qua-
+dra che abbia una frequenza di 100 Hz. Per favorire le operazioni di calibrazione è previ-
+sto il montaggio, nel circuito cablato, di un ancora (TEST POINT - TP1) che faciliti il 
+collegamento dei cavi dello strumento di misura.
+Utilizzando le formule di dimensionamento del circuito astabile si verifica che la fre-
+quenza dell’oscillatore sia di 100 Hz (1/100 s).
+Con i valori della rete di temporizzazione (R6, R7, R8, C2) adottati nello schema la fre-
+quenza dell’onda quadra in uscita varia fra 92,5 e 106,1 Hz, per cui, previa una taratura 
+del trimmer, è possibile ottenere i 100 Hz richiesti dalle specifiche.
+Il contatore utilizzato è un componente a larga scala di integrazione che contiene 4 
+contatori, il circuito integrato MM74C926.
+CRONOMETRO DIGITALE LISTA COMPONENTI
+Item
+N
+Sigla
+Descrizione
+1
+1
+ C1
+Condensatore     10 F 25 V elettrolitico
+2
+2
+C2, C3
+Condensatore    0,1 F 100 V ceramico
+3
+4
+DS1, DS2, DS3, DS4
+Display FND500 o equiv.   a catodo comune   
+4
+3
+J1, J2, J3
+Connettore prese a jack femmina
+5
+4
+Q1, Q2, Q3, Q4
+Transistor NPN2N1711   contenitore TO-5
+6
+4
+R1, R2, R3, R4
+Resistenza 10 k    ¼ W  ± 5%   a strato 
+7
+1
+R5
+Resistenza 1 M    ¼ W  ± 5%   a strato
+8
+1
+R6
+Resistenza 100 k    ¼ W  ± 5%   a strato
+9
+1
+R7
+Resistenza 10 k    trimmer lineare; regolazione verticale
+10
+1
+R8
+Resistenza 18 k    ¼ W  ± 5%   a strato
+11
+1
+R9
+Resistenza 390     ¼ W  ± 5%   a strato 
+12
+4
+S1, S2, S3, S4
+Pulsante N.C.  1 via 
+13
+1
+U1
+IC C-MOS 4011 Porte NAND a 2 ingressi
+14
+1
+U2
+IC C-MOS 4528 Doppio multivibratore monostabile
+15
+1
+U3
+IC C-MOS 555 Temporizzatore
+16
+1
+U4
+IC C-MOS 74C926 Contatore, decoder multiplexer
+f
+1
+T--
+1 443
+
+R6
+2
+R7
+R8
++
+
+
+
++
+
+
+C2
+
+--------------------------------------------------------------
+=
+=
+
+[PAG 2207]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-189
+I segnali di ingresso sono quelli di clock, di reset e di memorizzazione (latch).
+Il progetto dell’interfaccia di visualizzazione dei dati risulta estremamente semplice e 
+veloce. Infatti la decodifica del codice BCD di uscita dei vari contatori viene compiuta nel 
+microcircuito stesso, il quale provvede poi, con un’apposita circuiteria di comando, a 
+generare in uscita le cifre decodificate mediante la tecnica di comando dei display a mul-
+tiplexer: i numeri da visualizzare cioè non sono forniti separatamente a singoli decodifica-
+tori, ma sono forniti in sequenza a ciascun display a una velocità tale da far apparire, 
+all’occhio umano, le cifre tutte contemporaneamente presenti, come in un normale 
+display.
+La sequenza di conteggio è controllata con due pulsanti di comando che agiscono 
+sugli ingressi di Set e di Reset di una memoria (U2). Il segnale di uscita della memoria 
+disattiva, quando si trova a livello logico alto, l’ingresso di Reset (pin 4-U1) del microcir-
+cuito 555, permettendo quindi al multivibratore astabile di entrare in oscillazione e così di 
+fornire gli impulsi di clock al contatore.
+Il circuito è provvisto anche di un pulsante per l’azzeramento dei contatori.
+La visualizzazione degli intertempi viene ottenuta agendo sull’ingresso di memorizza-
+zione (pin 5-U4). 
+Quest’ingresso, è attivo al livello logico alto, memorizza il valore contenuto nei quat-
+tro contatori nell’istante di applicazione della transizione positiva e lo mantiene finché 
+l’ingresso rimane al livello logico alto. Naturalmente durante questo intervallo di tempo il 
+contatore continua a contare gli impulsi che riceve all’ingresso di clock, in quanto la parte 
+latch agisce sulla decodifica e non sul contatore.
+Nello schema proposto la durata della pausa di intertempo è definita da un circuito 
+monostabile (U3). 
+La resistenza R9 provvede ad accendere il punto decimale per separare i secondi dai 
+decimi e dai centesimi di secondo.
+4.4  Orologio digitale
+4.4.1  Descrizione del problema
+Viene proposto suddiviso in quattro tavole il progetto di un orologio digitale in grado 
+di visualizzare ore, minuti e secondi. La regolazione dell’orologio viene effettuata modifi-
+cando la frequenza di clock.
+4.4.2  Definizione delle specifiche di progetto
+L’orologio si compone di varie unità funzionali (Fig. XX.4.32):
+–  una base tempi che fornisce la frequenza di riferimento e le frequenze necessarie per 
+una rapida regolazione dell’orologio;
+–  un selettore di frequenze che permette di scegliere la frequenza da inviare all’unità di 
+conteggio;
+–  un’unità di conteggio;
+–  un’unità di visualizzazione che decodifica l’uscita in codice BCD dei contatori in un 
+codice a sette segmenti adatto per pilotare dei display;
+–  un alimentatore che fornisce la tensione di alimentazione al circuito.
+Nella Fig. XX.4.33 viene mostrato il pannello frontale dell’apparecchiatura
+4.4.3  Analisi delle soluzioni tecniche e scelta dei dispositivi elettronici
+I segnali necessari per far avanzare il contatore a differenti velocità viene ricavato 
+dalla tensione di rete. 
+Il segnale sinusoidale che caratterizza la tensione di rete viene ridotto in ampiezza per 
+mezzo di un trasformatore e raddrizzato mediante un ponte a diodi (raddrizzatore ad onda 
+intera).
+
+[PAG 2208]
+XX-190
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Fig. XX.4.32  Schema a blocchi di un orologio digitale con segnali di preselezione per la 
+correzione dell’orario.
+.
+Fig. XX.4.33  Pannello frontale dell’apparecchiatura.
+Il segnale ottenuto in uscita è una tensione pulsante che ha una frequenza doppia 
+rispetto a quella di rete, 100 Hz (T = 1/f = 0,01s).
+Con un partitore resistivo, il segnale viene ridotto in ampiezza in modo da renderlo 
+compatibile con i livelli logici caratteristici della famiglia micrologica utilizzata. La porta 
+con ingressi a trigger di Schmitt squadra il segnale ottenuto dalla tensione di rete.
+Il segnale, così modificato, viene inviato a due circuiti divisori per 10 collegati in 
+cascata (Fig. XX.4.34). Da questi si ricavano due segnali, uno caratterizzato da una fre-
+quenza di 10 Hz (T = 0,1 s) e l’altro da una frequenza di 1 Hz (T = 1 s).
+I divisori di frequenza sono stati realizzati utilizzando il contatore 74LS90.
+Per poter agire da divisore di frequenza il contatore 74LS90 deve essere connesso, 
+secondo le indicazioni tratte dal manuale tecnico, in una particolare configurazione. Il cir-
+cuito che realizza la funzione circuitale descritta è quello proposto nella Tav. XX.4.14.
+Ore
+Minuti
+Secondi
+Unità di conteggio
+e di visualizzazione
+Selettore
+dei tempi
+Base
+tempi
+Clock
+Fast
+Slow
+Normal
+0,01 s
+0,1 s
+1 s
+7
+7
+7
+ON
+OFF
+SLOW
+FAST
+TIME WAITS NOBODY
+
+[PAG 2209]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-191
+Fig. XX.4.34   Schema a blocchi di un divisore di frequenza.
+I segnali della base tempi sono poi collegati agli ingressi di un selettore dati, il multi-
+plexer 74LS153, da 4 a 1, che provvede, in funzione della parola di selezione, a fornire un 
+opportuno segnale di clock.
+La selezione del dato viene effettuata tramite due pulsanti secondo la tabella riportata 
+nella Tav. XX.4.14.
+Quando nessun pulsante viene azionato, entrambi gli ingressi di selezione del multi-
+plexer sono al livello logico basso per cui viene selezionato il segnale di clock che ha una 
+frequenza 1 Hz (un impulso al secondo).
+Azionando il pulsante denominato Fast, l’ingresso di selezione più significativo si 
+porta al livello logico alto, per cui viene selezionato il segnale di clock che ha una fre-
+quenza di 100 Hz (un impulso ogni centesimo di secondo).
+Azionando il pulsante denominato Slow, l’ingresso di selezione meno significativo si 
+porta al livello logico alto, per cui viene selezionato il segnale che ha una frequenza di 10 
+Hz (un impulso ogni decimo di secondo).
+Azionando i due pulsanti contemporaneamente si ottiene la selezione del segnale di 
+clock che ha una frequenza di 1 Hz. Non si ha, quindi, alcuna modifica della frequenza del 
+segnale di clock, per cui un’eventuale falsa manovra non altera, l’orario impostato. 
+In alternativa si può connettere quest’ingresso al positivo o a massa, ottenendo così la 
+possibilità di arrestare il conteggio.
+Il modulo di conteggio è formato da un gruppo di contatori collegati in cascata (Tav. 
+XX.4.15).
+I contatori che effettuano il conteggio dei secondi e dei minuti sono contatori modulo 
+60, mentre quello delle ore ha modulo 24.
+Per realizzare il contatore modulo 60 sono stati utilizzati due contatori asincroni BCD 
+in incremento 74LS90. 
+Il conteggio modulo 60 (0 ÷ 59) viene ottenuto limitando il conteggio delle decine a 6. 
+Una porta AND riconosce al sessantesimo impulso, la presenza di un 6 sulle uscite del 
+contatore e immediatamente azzera il contatore.
+La porta AND mantiene la sua uscita al livello logico basso fino al 59-esimo impulso (59), 
+quando viene fornito il 60-esimo impulso l’uscita si porta al livello logico alto. Essendo 
+quest’ultima collegata con gli ingressi di reset del contatore che sono attivi alti si ha l’imme-
+diato azzeramento del contatore. L’uscita della porta AND ritorna, dopo l’azzeramento del 
+contatore, al livello logico basso, generando, quindi in corrispondenza del 60-esimo impulso 
+una transizione negativa. Quest’ultima viene usata per propagare il conteggio al modulo che 
+conta i minuti.
+Il conteggio dei minuti è analogo a quello dei secondi, in quanto utilizza un contatore 
+con lo stesso modulo.
+Il conteggio delle ore impiega un contatore modulo 24 (0 ÷ 23). Il segnale di clock 
+viene fornito dal contatore dei minuti per mezzo della porta AND U13A in corrispon-
+denza del 60-esimo impulso.
+Base
+tempi
+Divisore
+per dieci
+Divisore
+per dieci
+100 Hz
+10 Hz
+1Hz
+
+[PAG 2210]
+XX-192
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.4.13  Orologio digitale: alimentatore.
+
+[PAG 2211]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-193
+Tav. XX.4.14  Orologio digitale: divisore e selettore di frequenza.
+
+[PAG 2212]
+XX-194
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.4.15  Orologio digitale: unità di conteggio e di visualizzazione.
+
+[PAG 2213]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-195
+Nella Tab. XX.4.12 viene fornita la lista dei componenti dell’orologio digitale.
+Tab. XX.4.12   Lista dei componenti dell’orologio digitale
+OROLOGIO DIGITALE: LISTA COMPONENTI
+Item
+N
+Sigla
+Descrizione
+1
+1
+C1
+Condensatore 2200 F 35 V elettrolitico
+2
+1
+C2
+Condensatore    220 nF 100 V poliestere
+3
+1
+C3
+Condensatore    100 nF 100 V poliestere
+4
+1
+C4
+Condensatore    220 F 25 V elettrolitico
+5
+6
+DS1, DS2, DS3, DS4,
+DS5, DS6
+Display FND500 a catodo comune
+6
+1
+D1
+Ponte di diodi W01 50/500 mA
+7
+1
+D2
+Ponte di diodi BYW21 100 V/4 A
+8
+2
+D3, D4
+Diodo al silicio 1N4002
+9
+1
+F1
+Diodo al silicio 200 mA/230 V
+10
+1
+J1
+Connettore a morsetto a due poli
+11
+1
+R1
+Resistenza 120 k    ¼ W  ± 5%
+12
+1
+R2
+Resistenza 33 k    ¼ W  ± 5%
+13
+2
+R3, R4
+Resistenza 10 k    ¼ W  ± 5%
+14
+1
+R5
+Trimmer 25 k    ½ W  ± 5%
+15
+1
+R6
+Resistenza 4,7 k    ¼ W  ± 5%
+16
+2
+S1, S2
+Pulsante NC
+17
+1
+S3
+Interruttore unipolare 1 posizione 1 via
+18
+1
+T1
+Trasformatore 230 V/12 V 10 VA - 12 V 100 VA
+19
+1
+U1
+IC TTL-LS 74LS14 5 porte NOT
+20
+8
+U2, U3, U6, U8
+U10, U12, U14
+U16
+IC TTL-LS 74LS90 contatore BCD
+21
+1
+U4
+IC TTL-LS 74LS153 doppio multiplexer
+22
+1
+U5
+IC TTL-LS 74LS08 quadrupla porta AND a due ingressi
+23
+6
+U7, U9, U11
+U13, U15, U17
+IC TTL-LS 74LS48 decodificatore BCD a 7 segmenti
+24
+1
+U18
+IC LIN 78HGA regolatore di tensione regolabile
+25
+1
+Dissipatore per contenitore TO-3
+26
+1
+Isolatore mica TO-3
+27
+1
+Portafusibile per circuito stampato
+
+[PAG 2214]
+XX-196
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Il modulo richiesto viene ottenuto riconoscendo sulle uscite del contatore delle unità il 
+4 e sul contatore delle ore il 2. Quando la porta AND U13C rivela la presenza del 24 
+azzera il contatore.
+La Tav. XX.4.13 mostra lo schema di un alimentatore per l’orologio realizzato utiliz-
+zando un regolatore a 4 terminali.
+I diodi D1 e D2 sono stati aggiunti per proteggere il regolatore da eventuali corto cir-
+cuiti in ingresso.
+La frequenza di rete, in tutta Europa, è mantenuta entro i seguenti limiti 50 Hz ± 0.1 
+Hz, cioè può deviare dal valore nominale dello 0,2%.
+Se per un’intera giornata la frequenza di rete si mantenesse a 50,1 Hz, l’errore globale 
+presentato dall’orologio sarebbe di circa 3 minuti.
+In pratica però le deviazioni di frequenza, nell’arco della giornata, tendono a compen-
+sarsi per cui l’errore finale, in genere, è di circa 1 minuto.
+4.5  Serratura elettronica a combinazione di 5 cifre
+4.5.1  Descrizione del problema e specifiche di progetto
+L’utente imposta in sequenza le cinque cifre del codice di accesso all’ambiente con-
+trollato; se la combinazione è corretta, la serratura si attiva. Se invece anche una sola cifra 
+impostata è errata viene attivato un segnalatore acustico (per 3 minuti) e l’apparecchiatura 
+si disattiva. L’utente può ancora operare sugli organi di impostazione, ma essi non hanno 
+più effetto per circa 50 minuti, trascorsi i quali l’apparecchiatura si riabilita. Ogni cifra è 
+impostata per mezzo di un pulsante che fa scorrere su un display una sola cifra decimale. 
+L’inserzione del codice avviene tramite un pulsante a chiave. Dopo cinque impostazioni 
+(nessuna correzione è prevista) l’apparecchiatura controlla il dato acquisito e effettua 
+l’attuazione delle uscite in funzione dell’esito di tale operazione. 
+Un pulsante di ripristino permette di sospendere l’impostazione del codice segreto e 
+contemporaneamente disabilita l’apparecchiatura per 50 minuti. In pratica questo ingresso 
+interrompe l’impostazione del codice, attua come una condizione di errore ma non fa suo-
+nare l’attuatore acustico.
+L’apparecchiatura deve essere alimentata dalla tensione di rete e da una batteria tam-
+pone che ne prolunga l’intervento per un intervallo di tempo di almeno 50 minuti.
+Nella Fig. XX.4.35 viene mostrato un esempio di lay-out del pannello anteriore e del 
+pannello posteriore dell’apparecchiatura.
+Fig. XX.4.35  Pannelli frontale e posteriore dell’apparecchiatura.
+4.5.2  Analisi funzionale e schema a blocchi
+Il circuito deve acquisire le cifre del codice in forma decimale e confrontarle con il 
+FRONT
+REAR
+OUT
+SET
+CLEAR
+KEY
+220 V ac 50Hz
+
+[PAG 2215]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-197
+codice segreto impostato sulla scheda; dopo la quinta impostazione effettua il confronto 
+fra il codice impostato e quello interno, e in base al suo esito effettua l’attuazione voluta.
+Il confronto fra il codice interno e il codice impostato può essere effettuato in vari 
+modi. Si noti che l’impostazione del codice avviene secondo una scansione temporale, per 
+cui è necessario ricordare le cifre che di volta in volta sono state impostate. Il confronto 
+fra i codici può essere effettuato solo quando è terminata la fase di impostazione. Questa 
+operazione richiederebbe l’utilizzo di una memoria temporanea (D-latch, RAM) che 
+memorizzasse le cinque cifre impostate. Un diverso approccio al problema richiede, 
+invece, la possibilità di memorizzare non le cifre impostate ma l’esito di ogni singolo con-
+fronto fra le corrispondenti cifre che compongono i due codici. Per effettuare questa ope-
+razione è sufficiente un registro a scorrimento a 5 bit. Dopo aver acquisito e confrontato le 
+cinque cifre del codice, è sufficiente esaminare il contenuto del registro e attivare nel 
+modo previsto gli attuatori di uscita.
+Nella Fig. XX.4.36 è mostrato lo schema a blocchi funzionale dell’apparecchiatura. Il 
+codice esterno viene confrontato quando si aziona la chiave con la cifra del codice interno 
+corrispondente, e l’esito del confronto viene memorizzato nel registro a scorrimento.
+Fig. XX.4.36  Schema a blocchi.
+Il segnale di scorrimento deve essere quindi fornito al registro soltanto dopo che sia 
+stato effettuato il confronto fra due codici. È pertanto necessario introdurre un ritardo, 
+superiore alla somma dei tempi di propagazione degli elementi logici interessati.
+Le cifre del codice interno sono impostate con dei microinterruttori selezionati 
+mediante un selettore dati che in funzione del codice di selezione preleva la cifra corri-
+spondente. 
+Il codice di selezione è ricavato da un contatore che ricorda quante cifre sono state 
+acquisite e confrontate.
+Il controllo del codice può essere effettuato utilizzando una porta logica che verifichi 
+l’informazione logica memorizzata nel registro a scorrimento. Tale verifica deve essere 
+effettuata soltanto quando è stata completata l’acquisizione e il confronto del codice. Que-
+Codici
+identici
+Codici
+differenti
+Inibizione
+Temporizzazione
+50 minuti
+Attuatore per
+il segnalatore
+acustico
+Attuatore per
+la serratura
+Selettore
+dati
+Selettore e contatore
+delle cifre del codice
+Cifre del
+codice
+interno
+Codice
+esterno
+sequenziale
+Memoria
+Comparatore
+Valutazione
+dei cinque
+esiti dei
+confronti
+KEY
+CLEAR
+IN
+OK
+=
+
+[PAG 2216]
+XX-198
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+sta funzione può essere realizzata interponendo un flip-flop di tipo D che acquisisca 
+l’esito globale del confronto dei codici solo quando sono state effettuate le cinque sele-
+zioni del codice e che si siano esauriti i transitori dovuti ai ritardi di propagazione dei vari 
+dispositivi logici. È quindi necessario introdurre un ritardo per impedire che la memoriz-
+zazione avvenga prima che questi transitori siano esauriti.
+Se i due codici coincidono è necessario generare un impulso che abiliti l’attuatore di 
+uscita. Se i due codici non coincidono, si devono effettuare due operazioni: emettere una 
+segnalazione acustica per tre minuti e disattivare la parte di attuazione dell’apparecchia-
+tura per circa cinquanta minuti.
+4.5.3  Schema elettrico e dimensionamento
+Lo schema elettrico del progetto è suddiviso nelle Tavv. XX.4.16, XX.4.17, XX.4.18, 
+XX.4.19, XX.4.20, XX.4.21 e nella Tab. XX.4.13 è fornito l’elenco dei componenti elettro-
+nici ed elettromeccanici necessari alla realizzazione dell’apparecchiatura.
+L’impostazione della cifra del codice esterno viene effettuata inviando un treno di 
+impulsi generati attraverso la pressione del pulsante di Set. Il contenuto del contatore rap-
+presenterà la cifra impostata.
+Il contatore deve essere un contatore in avanti che conta in BCD modulo 10. Il segnale 
+di ingresso agisce su un ingresso dinamico, per cui si deve interporre un filtro che elimini 
+i rimbalzi del pulsante.
+Il codice interno deve essere codificato usando lo stesso codice BCD utilizzato per 
+formare il codice interno, che può essere fisso o variabile. L’adozione di un codice varia-
+bile permette la produzione di serie dell’apparecchiatura.
+L’impostazione del codice interno può essere effettuata, in modo economico, gene-
+rando i livelli logici con dei ponticelli. Questa soluzione prevede che per mettere in opera 
+l’apparecchiatura l’utilizzatore intervenga sulla scheda a circuito stampato con apposite 
+attrezzature, in modo da adattarla alle esigenze dell’applicazione. L’operazione di salda-
+tura può essere evitata adottando, come previsto in questo progetto, dei microinterruttori 
+normali (dip-switch) oppure dei microinterruttori codificati.
+Il circuito deve poi leggere, in sequenza, tutte queste cifre e confrontarle con quelle 
+impostate esternamente.
+Un selettore dati (U1-4) provvede a leggere il codice di selezione di ciascuna cifra, 
+codificata in codice BCD, e inviarlo al comparatore (Tav. XX.4.17).
+La selezione della cifra del codice è effettuata con un contatore (U5B) controllato dal 
+pulsante a chiave. La condizione iniziale imposta dal segnale di autozero fa sì che la prima 
+cifra sia presentata al comparatore solo dopo che sia stata impostata la prima cifra del 
+codice esterno e sia stata azionata la chiave di conferma (Tav. XX.4.18).
+Il segnale di autozero (Tav. XX.4.19) è un segnale che viene generato automaticamente 
+alimentando l’apparecchiatura e serve per imporre agli elementi sequenziali del progetto 
+uno stato iniziale.
+Un circuito che può generare questo segnale è mostrato nella Fig. XX.4.37. 
+La tecnica di impostazione del codice esterno richiede l’adozione di un’interfaccia 
+con l’utente che consenta la visualizzazione del dato. Questa funzione viene ottenuta con 
+un decodificatore BCD-7 segmenti (Tav. XX.4.18). La nostra scelta è caduta sul microlo-
+gico 4511 (U6) che pilota un display a catodo comune (DS1).
+La comparazione dei due codici entrambi di 4 bit può agevolmente essere effettuata 
+con il micrologico 4585. In questo caso la scelta è quasi obbligata in quanto è l’unico 
+comparatore MSI commercializzato.
+
+[PAG 2217]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-199
+Tav. XX.4.16  Serratura elettronica a 5 cifre: schema a blocchi.
+
+[PAG 2218]
+XX-200
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.4.17  Serratura elettronica a 5 cifre: generatore del codice numerico.
+
+[PAG 2219]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-201
+Tav. XX.4.18  Serratura elettronica a 5 cifre: blocco di controllo.
+
+[PAG 2220]
+XX-202
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.4.19  Serratura elettronica a 5 cifre: uscite.
+
+[PAG 2221]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-203
+Tav. XX.4.20  Serratura elettronica a 5 cifre: temporizzatore.
+
+[PAG 2222]
+XX-204
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.4.21  Serratura elettronica a 5 cifre: alimentatore.
+
+[PAG 2223]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-205
+Fig. XX.4.37   Circuito per la generazione del segnale di autozero.
+Tab. XX.4.13   Lista dei componenti della serratura elettronica
+SPECIFICHE DI PROGETTO
+Item
+N
+Sigla
+Descrizione
+1
+2
+C1, C2
+Condensatore     1 F 25 V elettrolitico al tantalio
+2
+9
+C3, C4, C5, C8, C10
+C11, C12, C14,C16
+Condensatore    0,1 F 100 V ceramico
+3
+1
+C6
+Condensatore    0,022 F 100 V ceramico
+4
+2
+C7, C13
+Condensatore     10 F 25 V elettrolitico
+5
+2
+C15, C18
+Condensatore     2200 F 25 V elettrolitico verticale
+6
+1
+C9
+Condensatore     100 F 16 V elettrolitico
+7
+1
+C17
+Condensatore     100 F 25 V elettrolitico
+8
+3
+D1, D5, D6
+Diodo al silicio 1N4007
+9
+1
+D2
+Ponte di diodi 50 V/2 A
+10
+1
+D3
+Diodo al silicio BY252
+11
+1
+D4
+Ponte di diodi 50 V/0,2 A
+12
+1
+DS1
+Display FND500 o equivalente   a catodo comune   
+13
+1
+K1
+Relè 4,5 Vdc 1 scambio
+14
+1
+Q1
+Transistor NPN TIP110 Darlington
+15
+3
+R1, R2, R3
+Rete resistiva 100 k   ¼ W  ± 5%   contenitore SIL
+16
+3
+R4, R6, R29
+Resistenza 100 k   ¼ W  ± 5%   a strato
+17
+5
+R5, R7, R8, R9, R31
+Resistenza 5,6 k   ¼ W  ± 5%   a strato
+18
+5
+R10, R18, R24, R27, R28 Resistenza 56 k   ¼ W  ± 5%   a strato
+t
+t
+t
+t
+Uc
+UIH
+Uo
++Ucc
+Uc
+Uc
+Uo
+Uo
+Uc
+UIL
+Uo
+C
+C
+R
+R
+
+[PAG 2224]
+XX-206
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tab. XX.4.13   Segue
+SPECIFICHE DI PROGETTO
+Item
+N
+Sigla
+Descrizione
+19
+7
+R11, R17
+Resistenza 330 k   ¼ W  ± 5%   a strato
+20
+1
+R19
+Resistenza 120 k   ¼ W  ± 5%   a strato
+21
+3
+R20, R21, R28
+Resistenza 10 k   ¼ W  ± 5%   a strato
+22
+1
+R22
+Resistenza 68 k   ¼ W  ± 5%   a strato
+23
+1
+R23
+Resistenza 100 k trimmer lineare; regolazione verticale
+24
+1
+R25
+Resistenza 18 k   ¼ W  ± 5%   a strato
+25
+2
+R27
+Resistenza 47 k   ¼ W  ± 5%   a strato
+26
+3
+R30
+Resistenza 27 k   ¼ W  ± 5%   a strato
+27
+5
+S1, S2, S3, S4, S5
+Interruttori dipswitch a 8 pin contenitore DIL
+28
+2
+S6, S8
+Pulsante NC  1 via 
+29
+1
+S7
+Pulsante NC  1 via a chiave
+30
+1
+T1
+Trasformatore 220 V/10 V 2 A
+31
+4
+U1, U2, U3, U4
+IC C-MOS 4051 multiplexer
+32
+1
+U5
+IC C-MOS 4018 doppio contatore BCD
+33
+1
+U6
+IC C-MOS 4011 decodificatore BCD a 7 segmenti
+34
+1
+U7
+IC C-MOS 4085 comparatore
+35
+1
+U8
+IC C-MOS 4015 doppio registro a scorrimento
+36
+3
+U9, U12, U18
+IC C-MOS 4038 doppio multivibratore monostabile
+37
+1
+U10
+IC C-MOS 14174 quintuplo D flip-flop
+38
+1
+U11
+IC C-MOS 4011 4 porte NAND a 2 ingressi
+39
+1
+U13
+IC C-MOS 4068 1 porta Nand a 8 ingressi
+40
+1
+U14
+IC C-MOS 4013 doppio D flip-flop
+41
+1
+U15
+IC C-MOS 4081 4 porte AND a 2 ingressi
+42
+1
+U16
+IC C-MOS 4541 temporizzatore
+43
+1
+U17
+IC LIN 555 temporizzatore
+44
+1
+U19
+IC C-MOS 4023 3 porte NAND a 3 ingressi
+45
+1
+U20
+IC C-MOS 4093 4 porte NAND a 2 ingressi a soglia
+46
+1
+U21
+IC C-MOS 4040 contatore binario
+47
+1
+U22
+IC LIN 7805 regolatore di tensione 1,5 A TO-3
+48
+1
+U23
+IC LIN 78L05 regolatore di tensione 100 mA TO-5
+49
+1
+Dissipatore per contenitore TO-220
+
+[PAG 2225]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-207
+Un’altra possibile soluzione è quella di utilizzare la rete mostrata nella Fig. XX.4.38
+realizzata con porte SSI che richiede l’uso di due micrologici.
+Fig. XX.4.38  Comparatore a componenti discreti.
+L’intervallo di tempo che deve intercorrere fra l’istante in cui si applica il comando per 
+il confronto (SW4 - KEY) e l’istante in cui si ottiene l’esito del confronto viene generato 
+dal monostabile U9A, attivato dal fronte negativo prodotto dall’attivazione del pulsante.
+Trascorso il tempo imposto dai tempi di propagazione dei segnali nei vari elementi logici, 
+di selezione dei dati e di confronto, con il ritorno dell’uscita nello stato stabile viene generato 
+un fronte positivo che applicato al segnale di clock fa scorrere i dati nel registro (U8).
+Il registro a scorrimento deve: permettere il caricamento seriale dei dati e la lettura in 
+parallelo del dato memorizzato, memorizzare 5 bit di informazione, poter essere azzerato. 
+Una ricerca sui fogli dei dati tecnici (data sheet) ci permette di individuare il micrologico 
+4515 che contiene due registri a scorrimento di 4 bit ciascuno con linea di reset che per-
+mette di azzerarli. Il modulo di memorizzazione richiesto è ottenibile collegando i due 
+registri in cascata.
+Le uscite sono da inviare al flip flop di tipo D che provvede a sincronizzare questa 
+parte del circuito con quella che deve controllare gli attuatori. Durante la fase di acquisi-
+zione del codice esterno non viene effettuata nessuna lettura del dato memorizzato.
+Questa lettura deve essere eseguita, secondo quanto prescritto dalle specifiche soltanto 
+dopo che sono state acquisite tutte e cinque le cifre del codice, per cui sarà il contatore 
+modulo 6 a contare il numero di volte che la chiave è stata azionata a fornire l’impulso che 
+attiverà il monostabile U9B.
+Quest’ultimo fornirà, dopo un intervallo di tempo pari al tempo necessario alla crea-
+zione, al caricamento e alla stabilizzazione del dato sulle uscite parallele del registro a 
+scorrimento, un fronte positivo che permetterà al flip-flop a 5 sezioni di tipo D 14174 di 
+memorizzare l’esito complessivo di tutti e cinque i confronti (Tav. XX.4.18).
+Le uscite della memoria sono inviate ad una porta NAND che genera un segnale al 
+livello logico basso solo se i codici sono identici. Questo bit viene a sua volta memoriz-
+zato in una memoria di tipo D la quale viene attivata da un segnale proveniente dal mono-
+stabile U12A (Tav. XX.4.18) che produce un ritardo che tiene conto del tempo di 
+propagazione della porta NAND utilizzata. Tale porta potrebbe essere sostituita da due 
+porte poste in cascata che non alterino il livello logico ma che ritardino il segnale di un 
+tempo pari alla somma dei loro tempi di propagazione. Nel nostro progetto si ha la possi-
+bilità di utilizzare un monostabile in quanto è presente in un micrologico utilizzato solo 
+parzialmente, per cui non si ha alcun aumento del costo dell’apparecchiatura.
+U = 1 se A0 = B0 e A1 = B1 e A2 = B2 e A3 = B3
+U
+A0
+B0
+A1
+B1
+A2
+B2
+A3
+B3
+
+[PAG 2226]
+XX-208
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Per progettare la parte del circuito che, in funzione dell’esito del confronto dei codici, 
+deve effettuare le attuazione in uscita, ci serviamo di uno schema a blocchi che evidenzia 
+le relazioni fra le uscite e gli ingressi di comando.
+Nella Fig. XX.4.39 compare, oltre allo schema a blocchi anche il diagramma tempo-
+rale che mostra le relazioni esistenti fra i vari segnali.
+Fig. XX.4.39   Schema a blocchi e diagramma delle temporizzazioni della sezione di con-
+trollo dell’apparecchiatura.
+Il segnale di controllo IN-MEM distribuisce, grazie al selettore dati a 2 bit realizzato 
+con componenti discreti, l’impulso di comando. Se i codici sono identici (livello logico 
+basso) l’impulso viene inviato alla serratura, altrimenti viene avviato il temporizzatore dei 
+50 minuti di inibizione dell’apparecchiatura.
+Il comando dell’elettroserratura viene attivato pilotando, per un breve intervallo di 
+tempo, un relè che possiede un solo contatto di scambio. Tale temporizzazione è ottenibile 
+utilizzando un circuito monostabile, e la sua durata dipende dalle caratteristiche dell’elet-
+troserratura. Il circuito permette tramite il trimmer R23 un aggiustamento di tale parame-
+tro. La resistenza fissa R24 realizza comunque una temporizzazione anche in assenza 
+dell’operazione di taratura.
+La corrente di base necessaria per ottenere la commutazione del transistor Darlington
+viene fornita dalle due porte AND non utilizzate del micrologico 4081 connesse in confi-
+gurazione buffer (sono usati come amplificatori di corrente).
+Il blocco funzionale che nello schema a blocchi rappresenta il generatore di un 
+impulso rappresenta un dispositivo o una configurazione circuitale che deve generare un 
+impulso completo, formato cioè da un fronte di salita seguito da un fronte di discesa 
+quando viene attivato da un impulso di comando. Questo blocco funzionale viene utiliz-
+zato per comandare il temporizzatore contenuto nel micrologico 4541 (Fig. XX.4.40) che è 
+in grado di generare ritardi di alcuni minuti. 
+START-TIMER
+IN-MEM
+START-SERRATURA
+PULSE
+CLOCK
+IN
+IN
+CLOCK
+IN-MEM
+PULSE
+START-TIMER
+START-SERRATURA
+CODICI
+CODICI
+COINCIDENTI
+DIFFERENTI
+MONO
+D
+Q
+> CK
+t
+t
+t
+t
+t
+t
+
+[PAG 2227]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-209
+Fig. XX.4.40  Oscillatore temporizzatore, 4541 (Fonte: Motorola).
+Per generare un impulso che abbia le caratteristiche volute è necessario collegare due 
+monostabili in cascata nella configurazione mostrata nella Fig. XX.4.26.
+Fig. XX.4.41  Generatore di impulsi ritardati in ingresso e in uscita.
+Una volta attivato, il temporizzatore 4511 genera in uscita un impulso che viene 
+inviato ad un multivibratore astabile comandato realizzato con il temporizzatore 555. 
+Quest’ultimo pilota un buzzer o un altoparlante che emette una nota di bassa potenza. 
+Le specifiche del progetto prevedono però che in caso siano stato inserito un codice 
+errato l’apparecchiatura si disabiliti per circa 50 minuti. La temporizzazione richiesta è ele-
+vata, ed è difficilmente ottenibile a costi contenuti utilizzando una rete di multivibratori in 
+cascata. Un approccio più interessante è quello di utilizzare una base tempi in grado di gene-
+rare un intervallo di tempo di riferimento, per esempio 1 secondo, e poi contare un numero 
+di impulsi tale da ottenere la temporizzazione desiderata. La temporizzazione richiesta dal 
+OSCILLATORE-TEMPORIZZATORE
+U1
+14541
+RtC
+CtC
+Rs
+se  1kHz < f < 100 kHz
+e  Rs  2  RtC   dove Rs > 10 k
+f
+1
+2,3  RtC  CtC
+12
+13
+5
+10
+9
+1
+2
+3
+A
+B
+AR
+MO_
+Q/Q
+RTC
+CTC
+RS
+R
+Q
+8
+6
+B
+A
+n
+2n
+0
+0
+8192
+0
+1
+10
+1024
+13
+1
+0
+256
+8
+1
+1
+65536
+16
+Sigla
+Descrizione
+Stato 0
+Stato 1
+AR
+Autoreset
+Abilitato
+Disabilitato
+R
+Master reset
+Temporizzatore
+ON
+attivo
+Q/Q
+Uscita dopo
+Basso
+Alto
+il reset
+MO
+Modo
+Un ciclo solo
+Astabile
+INGRESSO
+USCITA
+A
+INGRESSO
+USCITA
+A
++5 V
++5 V
++5 V
++5 V
+R24
++5 V
++5 V
+56k
+R23
+56k
+C11
+0,1 F
+C12
+0,1 F
+U18A
+4538
+U18A
+4538
+6
+2
+1
+4
+5
+7
+Q
+Q
+R
+3
+T
+T
+CX
+RC
+Q
+Q
+R
+T
+T
+CX
+RC
+10
+14
+15
+12
+11
+13
+9
+t
+t
+t
+
+[PAG 2228]
+XX-210
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+nostro problema richiede il conteggio di 3000 impulsi, se si utilizza la base tempi di 1 
+secondo. Il conteggio può essere effettuato in binario o in BCD e in avanti o indietro.
+Effettuando una breve ricerca sul catalogo dei fogli tecnici dei micrologici C-MOS si 
+può prendere in considerazione il micrologico 4029, contatore BCD/binario in avanti/
+indietro presettabile, che ci permetterebbe di realizzare qualsiasi configurazione circui-
+tale. Se si adotta il conteggio BCD servono 4 dispositivi sia che si conti in avanti che 
+indietro; se si conta in binario ne servono 3, in quanto per rappresentare il numero 3000 in 
+binario sono sufficienti 12 bit. Si opta quindi per il conteggio binario. 
+Consultando il catalogo dei dati tecnici si scopre che esiste un contatore binario modulo 
+4096 con ingresso di reset che conta in avanti, il micrologico 4040. Questo dispositivo ci per-
+mette di realizzare utilizzando un solo dispositivo il modulo di conteggio richiesto, conse-
+guendo un contenimento del costo dell’apparecchiatura e una maggiore affidabilità (minor 
+numero di dispositivi, minor possibilità di guasto). Il modulo di conteggio richiesto viene 
+ottenuto utilizzando una porta logica NAND che lo limita a 3072 e contemporaneamente 
+genera il segnale di fine temporizzazione che sarà utilizzato dall’apparecchiatura. Il limite 
+è stato posto a 3072 per semplificare la rete combinatoria del contatore e per ottimizzare 
+l’uso dei micrologici SSI; l’errore introdotto nella temporizzazione è trascurabile.
+La base tempi è stata ottenuta utilizzando un multivibratore astabile che sfrutta la carat-
+teristica dello stadio di ingresso a due soglie della porta logica NAND del micrologico 4093.
+Nella Fig. XX.4.42 viene mostrato lo schema a blocchi del temporizzatore a lunga 
+durata. Il segnale di autozero provvede a stabilire la condizione iniziale, all’accensione 
+dell’apparecchiatura: oscillatore bloccato, contatore resettato, uscita abilitata. Quando si 
+fornisce il comando di ingresso, l’oscillatore genera gli impulsi che vengono contati e 
+l’uscita viene disabilitata. Contati i 3072 impulsi l’oscillatore viene bloccato e l’uscita 
+viene riabilitata.
+Fig. XX.4.42  Schema a blocchi del temporizzatore a lunga durata.
+Il funzionamento di questo temporizzatore può essere meglio descritta utilizzando il 
+diagramma temporale mostrato nella Fig. XX.4.43 che mostra le interrelazioni esistenti fra 
+i vari segnali interni ed esterni scambiati dai vari elementi logici. Il segnale di abilitazione 
+e disabilitazione generato in questo blocco funzionale viene utilizzato (Tav. XX.4.19) per 
+disabilitare gli elementi logici che effettuano il controllo dei due codici (U13, U14A).
+Il comando CLEAR agisce sul circuito nello stesso modo del segnale di errore 
+START-60MIN ma attiva solo il circuito temporizzatore di 50 minuti, che a sua volta 
+provvede a inibire l’attuazione delle uscite.
+L’alimentatore proposto nella Tav. XX.4.21 è il classico alimentatore a tensione fissa 
+realizzato utilizzando il regolatore integrato, 7805. La batteria viene caricata a corrente 
+costante di 7,5 mA. Il generatore di corrente costante è ottenuto utilizzando una particolare 
+configurazione circuitale utilizzante il regolatore di tensione a tensione fissa. La corrente 
+generata dipende dalla resistenza R. 
+START - 60 min
+END-COUNT
+OSCILLATORE
+COMANDATO
+           1s
+ENABLE
+ENABLE
+CONTATORE
+MODULO 3072
+RESET
+CLEAR
+AUTOZERO
+PR
+Q
+Q
+R
+S
+Q
+Q
+R
+S
+
+[PAG 2229]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-211
+La formula di dimensionamento è la seguente:
+ove: Uo è la tensione di uscita del regolatore; I è la corrente di uscita costante.
+I diodi D3 e D5 provvedono, in assenza della tensione di rete, a collegare la batteria al 
+circuito alimentatore. Il diodo D6 invece fa sì che la carica della batteria durante il nor-
+male funzionamento avvenga soltanto attraverso il generatore di corrente.
+Fig. XX.4.43  Diagramma temporale del temporizzatore a lunga durata.
+Nel CD di approfondimento allegato sono presenti i file di tutti i progetti elettronici 
+elaborati con OrCad 4, oltre ai vari dimensionamenti fatti con il foglio elettronico Excel. 
+In particolare nel file readme.txt si possono trovare le informazioni per l’utilizzo del 
+materiale proposto.
+  BIBLIOGRAFIA
+BIONDO G. - SACCHI E., Manuale di elettronica e telecomunicazioni, 5a edizione, 
+Hoepli, Milano, 2005.
+CONTE G., Manuale di Impianti elettrici, Hoepli, Milano, 2009.
+GRAY D. - SEARLE C., Principi di elettronica, Tamburini, Milano, 1973.
+FERRI F.M., TDP Progettazione elettronica 1 e 2, Hoepli, Milano, 1998.
+FIGINI G. - TORELLI U., Impianti elettrici civili, manuale di applicazione delle norme 
+CEI, Hoepli, Milano, 2000.
+FIGINI G. - TORELLI U,. Impianti elettrici per l’industria e le macchine operatrici, 
+manuale di applicazione delle norme CEI, Hoepli, Milano, 1995.
+MILLMAN J., Microelectronics, McGraw Hill, Milano, 1979. 
+I
+Uo
+R
+------
+=
+AUTOZERO
+START 60 min
+RESET
+END-CONT
+ENABLE
+START-PULSE
+DISABLE
+CLOCK
+IMPONE LA CONDIZIONE
+INIZIALE AL CIRCUITO
+IMPULSI PER LA 
+ESITO DELLA COMPARAZIONE
+DEI CODICI
+RESETTA IL TEMPORIZZATORE
+RIVELA LA FINE DELLA
+TEMPORIZZAZIONE
+USCITA DI ABILITAZIONE
+DI 50 min
+ABILITA E DISABILITA
+IL GENERATORE
+DI IMPULSI
+ABILITA E DISABILITA
+L’ATTIVAZIONE DELL’USCITA
+TEMPORIZZAZIONE
+t
+3
+2
+1 - ACCENSIONE DELL’APPARECCHIATURA
+1
+2 -  ERRORE NELLA COMPARAZIONE DEI CODICI
+3 -  Q11 = Q12 = 1 FINE DEL CONTEGGIO DOPO 3072 IMPULSI (50’)
+
+[PAG 2230]
+XX-212
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+MILLMAN J. - HALKIAS C., Dispositivi e circuiti elettronici, Boringhieri, Torino, 
+1982.
+ORTOLANI G. - VENTURI E., PLC Telemecanique TSX17 Applicazione ed esercita-
+zioni, Hoepli, Milano, 1999.
+ORTOLANI G. - VENTURI E., PLC Modicon TSX 37 Micro Telemecanique, Hoepli, 
+Milano, 2007.
+ORTOLANI G. - VENTURI E., Esercitazioni pratiche 1, Hoepli, Milano, 2005.
+ORTOLANI G. - VENTURI E., Esercitazioni pratiche 2, Hoepli, Milano, 2006.
+ORTOLANI G. - VENTURI E., Schemi e apparecchi negli impianti elettrici 1, Hoepli, 
+Milano, 1995.
+ORTOLANI G. - VENTURI E., Impianti elettrici civili - Schemi e apparecchi nei locali 
+domestici e del terziario, Hoepli, Milano, 2007.
+SZE S.M., Fisica dei dispositivi a semiconduttore, Tamburini, Milano, 1973.
+VEZZANI P., Elementi di progettazione elettrica, Edizioni TNE, Torino, 2002.
+Norme CEI, Edizioni CEI (Comitato Elettrotecnico Italiano), Milano.
+CATALOGHI E PUBBLICAZIONI: ABB Elettrocondutture, ABB Sace, BTicino, Intersil, 
+Motorola, National Semiconductor, OrCad IV, Schneider, SGS-Thomson, Telemeca-
+nique, Texas Instruments.
