@@ -364,16 +364,34 @@ def main():
     coppie_processate = 0
 
     # Scegli coppie prioritarie: PDF con molti concetti in comune sui temi rilevanti
-    TEMI_RILEVANTI = ['lakhovsky', 'spirale', 'rame', 'magnetiz', 'antenna',
-                      'suolo', 'compost', 'micorriz', 'luna', 'biodinamic',
-                      'frequenz', 'risonanz', 'tesla', 'ighina', 'elettro']
+    # Temi rilevanti: elettrocultura/biodinamica E coltivazione base
+    TEMI_PRIORITARI = ['lakhovsky', 'spirale', 'rame', 'magnetiz', 'antenna',
+                       'suolo', 'compost', 'micorriz', 'luna', 'biodinamic',
+                       'frequenz', 'risonanz', 'tesla', 'ighina', 'elettro']
+    TEMI_COLTIV = ['radici', 'substrato', 'irrigaz', 'germinaz', 'fiorit',
+                   'vegetat', 'nutrient', 'fertil', 'ph', 'outdoor',
+                   'harvest', 'raccolt', 'essiccat', 'coltivaz', 'guida']
+    CAT_ESCLUSE_FASE2 = {'esoterismo', 'filosofia', 'spiritualita'}
 
     def rilevanza_pdf(entry):
-        concetti = entry[1].get('concetti', [])
+        pid, dati = entry
+        # Escludi categorie non pertinenti
+        cat = dati.get('categoria', '')
+        if cat in CAT_ESCLUSE_FASE2:
+            return -1
+        concetti = dati.get('concetti', [])
         tl = ' '.join(concetti).lower()
-        return sum(1 for t in TEMI_RILEVANTI if t in tl)
+        score = sum(2 for t in TEMI_PRIORITARI if t in tl)
+        score += sum(1 for t in TEMI_COLTIV if t in tl)
+        # Boost per articoli web (fonte nota e pertinente)
+        if pid.startswith('web_'):
+            score += 3
+        return score
 
     pdf_ordinati = sorted(pdf_con_concetti, key=rilevanza_pdf, reverse=True)
+    # Escludi PDF con score negativo (esoterismo)
+    pdf_ordinati = [(pid, dati) for pid, dati in pdf_ordinati
+                    if rilevanza_pdf((pid, dati)) >= 0]
 
     # Set di coppie già analizzate semanticamente (per non rifare)
     edges_semantici_set = set()
@@ -413,7 +431,7 @@ def main():
 
         for conn in connessioni:
             peso = float(conn.get('peso', 0.5))
-            if peso < 0.1: continue
+            if peso <= 0: continue  # accetta anche pesi bassi, esclude solo 0
             chiave = f'{id_a}|{id_b}'
             tipo_conn = conn.get('tipo_conn', conn.get('tipo', 'sinergia'))
             edges_esistenti[chiave] = {
@@ -463,5 +481,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
