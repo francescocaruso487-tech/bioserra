@@ -1,0 +1,2530 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 4/116 ===
+Chars: 44,332 | Offset: 133,467
+
+
+
+[PAG 69]
+MATEMATICA
+I-53
+–  Vertice: 
+;
+–  Asse di simmetria: 
+;
+–  Fuoco: 
+;
+–  Direttrice: 
+.
+7.8.3  Ellisse
+Si dice ellisse il luogo geometrico dei punti del piano per i quali è costante la somma 
+delle distanze da due punti assegnati detti fuochi. Si indica con 2a tale somma.
+La retta passante per i fuochi F1 ed F2 (asse focale) e l’asse del segmento F1F2 sono 
+assi di simmetria della curva; il punto medio del segmento F1F2 è centro di simmetria 
+dell’ellisse e ad esso si dà il nome di centro dell’ellisse.
+Equazione canonica dell’ellisse con i fuochi appartenenti all’asse x
+Dati i fuochi F1(c, 0) ed F2(c, 0), detti A1A2 = 2a asse maggiore e B1B2 = 2b asse 
+minore dell’ellisse, con b < a, si ha:
+(I.7.24)
+In questo caso (Fig. I.7.10) l’asse focale è l’asse x.
+Equazione canonica dell’ellisse con i fuochi appartenenti all’asse y
+Dati i fuochi F1(0, c) e F2(0, c), detti A1A2 = 2a asse minore e B1B2 = 2b asse mag-
+giore dell’ellisse, con a < b, si ha:
+(I.7.25)
+In questo caso (Fig. I.7.11) l’asse focale è l’asse y.
+Si chiama eccentricità dell’ellisse il rapporto 
+.
+Fig. I.7.10   Grafico dell’ellisse con i 
+fuochi sull’asse x.
+Fig. I.7.11   Grafico dell’ellisse con i 
+fuochi sull’asse y.
+V
+
+4a
+-----
+–
+b
+2a
+-----
+–
+
+
+
+
+
+=
+y
+b
+2a
+-----
+–
+=
+F
+1
+
+–
+4a
+------------
+b
+2a
+-----
+–
+
+
+
+
+
+=
+x
+1
+
++
+4a
+------------
+–
+=
+x2
+a2
+----
+y2
+b2
+----
++
+1
+=
+con b2
+a2
+c2
+–
+=
+x2
+a2
+----
+y2
+b2
+----
++
+1
+=
+con a2
+b2
+c2
+–
+=
+e
+distanza focale
+asse maggiore
+-----------------------------------
+=
+y
+x
+A1
+A2
+F1
+F2
+B2
+B1
+(0, b)
+(c, 0)
+(c, 0)
+(a, 0)
+(a, 0)
+(0, b)
+F1
+F2
+A1
+A2
+B1
+x
+B2
+y
+
+[PAG 70]
+I-54
+MATEMATICA
+7.8.4  Iperbole
+L’iperbole è il luogo geometrico dei punti del piano per i quali è costante il valore 
+assoluto della differenza delle distanze da due punti assegnati detti fuochi. Sia 2a tale dif-
+ferenza.
+La retta passante per i fuochi F1 ed F2 (asse focale) e l’asse del segmento F1F2 sono 
+assi di simmetria della curva; il punto medio del segmento F1F2 è centro di simmetria 
+dell’iperbole e ad esso si dà il nome di centro dell’iperbole.
+Dati i fuochi F1(c, 0) ed F2(c, 0), detti A1A2 = 2a asse trasverso e B1B2 = 2b asse non 
+trasverso, si ha:
+(I.7.26)
+Quando i due assi sono uguali, cioè a = b, si ha un’iperbole equilatera, la cui equa-
+zione è:
+x2  y2 = a2
+(I.7.27)
+I due asintoti hanno equazione rispettivamente x = y e x = y.
+Equazione dell’iperbole equilatera riferita ai propri asintoti
+xy = k
+(I.7.28)
+–  se k > 0 l’iperbole giace nel I e III quadrante (Fig. I.7.12);
+–  se k < 0 l’iperbole giace nel II e IV quadrante (Fig. I.7.13).
+Funzione omografica
+Una funzione di equazione:
+(I.7.29)
+Fig. I.7.12  
+Fig. I.7.13  
+x2
+a2
+----
+y2
+b2
+----
+–
+1
+=
+con 
+b2
+c2
+a2
+–
+=
+B1
+B2
+A1
+y
+x
+F1
+F2
+O
+A2
+y
+b
+a--x
+=
+e
+y
+b
+a--x
+–
+=
+I due asintoti hanno equazioni:
+y
+O
+x
+y
+O
+x
+y
+ax
+b
++
+cx
+d
++
+--------------
+=
+
+[PAG 71]
+MATEMATICA
+I-55
+con c  0 e ad  bc  0 è detta funzione omografica ed il suo grafico è un’iperbole equila-
+tera con gli asintoti paralleli agli assi cartesiani e con il centro di simmetria nel punto 
+.
+8  GEOMETRIA ANALITICA NELLO SPAZIO
+8.1  Coordinate cartesiane ortogonali
+Siano fissate nello spazio tre rette numeriche, ciascuna ortogonale al piano indivi-
+duato dalle altre due e tra loro incidenti in un punto comune O; si stabiliscano su ciascuna 
+di esse un sistema di ascisse, con origine comune O, la stessa unità di misura ed orienta-
+mento come in figura:
+Fig. I.8.1   Riferimento cartesiano ortonormato nello spazio.
+Il sistema così ottenuto è un sistema di riferimento cartesiano ortonormato nello spazio.
+8.2  Distanza di due punti
+Siano P(x1, y1, z1) e Q(x2, y2, z2) due punti dello spazio; la loro distanza si calcola nel 
+seguente modo:
+(I.8.1)
+8.3  Il piano
+Equazione generale
+ax + by + cz + d = 0
+(I.8.2)
+Se d = 0, il piano passa per l’origine degli assi; se manca una variabile, il piano è 
+parallelo al corrispondente asse; se ne mancano due il piano è parallelo al piano indivi-
+duato dalle due variabili mancanti.
+O
+d
+c-- a
+c--
+
+–
+
+
+
+
+=
+y
+x
+y'
+x'
+O
+O'
+a_
+c
+d_
+c
+y
+x
+z
+PQ
+x1
+x2
+–
+
+2
+y1
+y2
+–
+
+2
+z1
+z2
+–
+
+2
++
++
+=
+
+[PAG 72]
+I-56
+MATEMATICA
+Equazione segmentaria
+(I.8.3)
+dove p, q, r sono le intercette del piano con gli assi.
+Equazione del piano passante per un punto P (x1, y1, z1)
+a(x  x1) + b(y  y1) + c(z  z1) = 0
+(I.8.4)
+Equazione del piano passante per tre punti
+Dati tre punti P(x1, y1, z1), Q(x2, y2, z2) e R(x3, y3, z3) non allineati, l’equazione del 
+piano passante per essi è data da:
+(I.8.5)
+Parallelismo e perpendicolarità tra piani
+Dati i due piani:
+ax + by + cz + d = 0
+ 
+ax + by + cz + d = 0
+essi sono:
+–  paralleli se 
+;
+–  perpendicolari se aa + bb + cc = 0.
+8.4  La retta
+Ogni retta è sostegno di un fascio F di piani. La retta può quindi rappresentarsi come 
+intersezione di due qualsiasi piani del fascio:
+(I.8.6)
+L’equazione di una retta r passante per il punto P(x0, y0, z0) e non parallela agli assi si 
+può scrivere in forma normale:
+(I.8.7)
+oppure in forma parametrica:
+(I.8.8)
+dove t è un parametro reale.
+x
+p--
+y
+q--
+z
+r-
++
++
+1
+=
+x
+y
+z
+1
+x1 y1 z1 1
+x2 y2 z2 1
+x3 y3 z3 1
+0
+=
+a
+a
+----
+b
+b
+----
+c
+c---
+=
+=
+a1x
+b1y
+c1z
+d1
++
++
++
+0
+=
+a2x
+b2y
+c2z
+d2
++
++
++
+0
+=
+
+
+
+x
+x0
+–
+a
+-------------
+y
+y0
+–
+b
+-------------
+z
+z0
+–
+c
+------------
+=
+=
+x
+x0
+at
++
+=
+y
+y0
+bt
++
+=
+z
+z0
+ct
++
+=
+
+
+
+
+
+
+[PAG 73]
+MATEMATICA
+I-57
+Parallelismo e perpendicolarità tra rette
+Date le due rette:
+(I.8.9)
+esse sono:
+–  parallele se 
+;
+–  perpendicolari se aa + bb + cc = 0.
+9  VETTORI
+Si chiama vettore l’insieme di tutti i segmenti orientati aventi la stessa direzione, lo 
+stesso verso e la stessa lunghezza. Un vettore è quindi individuato da un numero reale 
+positivo (modulo), una direzione, un verso.
+Per indicarlo si usano i simboli: u, u,  , u. Il modulo si indica con |u| oppure con u.
+Graficamente un vettore viene rappresentato con un segmento orientato, cioè con una 
+freccia. Il modulo del vettore è uguale al numero che esprime la misura del segmento, la 
+direzione è quella della retta a cui appartiene il segmento, il verso è quello indicato dalla 
+freccia. Se A e B sono gli estremi di tale segmento si usa anche scrivere: u = B A con A
+punto iniziale (origine) e B punto finale.
+Due vettori sono uguali (u = v) se hanno uguali direzione, verso e modulo, mentre in 
+generale non ha senso stabilire relazioni di maggiore e minore.
+Un vettore di modulo unitario si chiama versore.
+Dati un vettore v ed una retta orientata r (asse), se  è l’angolo del vettore con l’asse r, 
+si chiama componente di  v secondo l’asse r lo scalare:
+(I.9.1)
+9.1  Somma di vettori
+Dati due vettori u e v consecutivi, si chiama somma u  v = w il vettore che ha origine 
+nell’origine del primo vettore u e secondo estremo nel secondo estremo di v. Se i due vettori 
+non sono consecutivi si riporta il vettore v parallelamente a se stesso in modo che la sua coda 
+coincida con la punta di u. La differenza di due vettori equivale alla somma dei vettori u e 
+v. Questa regola di somma dei vettori è detta punta-coda.
+Fig. I.9.1   Regola punta-coda.
+La regola del parallelogramma dà lo stesso risultato: si riportano i vettori u e v con le 
+origini coincidenti in O. Si costruisce il parallelogramma di lati u e v; il vettore somma è 
+dato dalla diagonale uscente dall’origine comune O. La differenza è il vettore corrispon-
+dente all’altra diagonale, con verso opportuno a seconda che l’operazione da eseguire sia 
+u  v oppure v  u.
+r: 
+x
+x0
+–
+a
+-------------
+y
+y0
+–
+b
+-------------
+z
+z0
+–
+c
+------------
+=
+=
+s: 
+x
+x0
+–
+a
+---------------
+y
+y0
+–
+b
+---------------
+z
+z0
+–
+c
+--------------
+=
+=
+a
+a
+----
+b
+b
+----
+c
+c---
+=
+=
+u
+vr
+v cos
+
+=
+u
+v
+v
+u
+w = u + v
+v
+v
+uv
+u
+
+[PAG 74]
+I-58
+MATEMATICA
+Fig. I.9.2   Regola del parallelogramma.
+Con la regola della poligonale la somma di più vettori è data dal vettore che unisce 
+l’origine del primo vettore con l’estremo della linea poligonale ottenuta tracciando 
+nell’ordine i singoli vettori consecutivamente l’uno all’altro. La somma così definita è 
+commutativa e associativa.
+Fig. I.9.3   Regola della poligonale.
+9.2  Prodotto di un vettore per uno scalare
+Siano u un vettore non nullo, a un numero reale diverso da zero.
+Si chiama prodotto dello scalare a per il vettore u e si indica con au, il vettore che ha:
+–  la stessa direzione del vettore u;
+–  verso concorde a quello di u se a è positivo, discorde se a è negativo;
+–  modulo uguale al prodotto del modulo di u per il valore assoluto di a.
+9.3  Scomposizione di un vettore secondo due direzioni
+Date due rette r ed s incidenti in O e complanari al vettore w = P O, si conducano da 
+P le rette parallele ad r ed s. Siano A e B le intersezioni di tali parallele rispettivamente 
+con r ed s; posti u = A O e v = B O, si osserva che w = u + v. I due vettori u e v si 
+dicono vettori componenti del vettore w secondo le direzioni di r ed s.
+Fig. I.9.4   Scomposizione di un vettore.
+O
+v
+u
+u+v
+v
+u
+uv
+O
+O
+A1
+A2
+A3
+A4
+u
+v
+w
+z
+u+v+w+z
+A
+B
+P
+r
+s
+O
+u
+v
+w
+
+[PAG 75]
+MATEMATICA
+I-59
+9.4  Componenti cartesiane di un vettore
+Dato un sistema di assi cartesiani ortogonali Oxy, indichiamo con i il versore che ha la 
+stessa direzione e lo stesso verso dell’asse x, con j il versore che ha la stessa direzione e lo 
+stesso verso dell’asse y, come illustrato nella Fig. I.9.5.
+Fig. I.9.5  
+Per quanto appena visto sulla scomposizione di un vettore, ogni w = P O si può scom-
+porre in due vettori u e v, aventi rispettivamente le direzioni dell’asse x dell’asse y. Se a è 
+il modulo di u e b quello di v, si avrà: u = ai e v = bj, da cui w = ai + bj.
+I due numeri a e b sono le componenti del vettore w rispetto al sistema cartesiano con-
+siderato. In un sistema cartesiano Oxy le componenti di un vettore w = P O coincidono con 
+le coordinate cartesiane del punto P. Se P(x, y)  è un punto del piano Oxy, si può scrivere:
+P  O = xi + yj
+(I.9.2)
+Dati i due punti P1(x1, y1) e P2(x2, y2) estremi di un vettore w, si ha:
+P2  O = x2i + y2 j 
+P1  O = x1i + y1j
+(I.9.3)
+Sottraendo membro a membro si ottiene:
+w = P2  P1 = (x2  x1)i + (y2  y1)j
+(I.9.4)
+Fig. I.9.6  
+I numeri (x2x1) e (y2y1) si chiamano ancora componenti del vettore w e la I.9.4 è 
+la forma cartesiana del vettore. Per il teorema di Pitagora il modulo del vettore w è dato da:
+(I.9.5)
+O
+i
+j
+u
+v
+w
+P
+y
+x
+O
+i
+j
+y
+x
+w
+P1(x1, y1)
+P2(x2, y2)
+w
+x2
+x1
+–
+
+2
+y2
+y1
+–
+
+2
++
+=
+
+[PAG 76]
+I-60
+MATEMATICA
+9.5  Prodotto scalare
+Presi due vettori non nulli, si chiama prodotto scalare il numero reale che si ottiene mol-
+tiplicando il prodotto dei moduli dei due vettori per il coseno dell’angolo formato dai due.
+u v = uv cos
+(I.9.6)
+Il termine scalare indica che il risultato di tale prodotto è un numero reale. Tale pro-
+dotto è positivo se l’angolo tra i due vettori è acuto, negativo se l’angolo è ottuso, nullo se 
+l’angolo è retto.
+Il prodotto scalare gode delle seguenti proprietà.
+–  Commutativa: u v = v u. Il prodotto infatti non dipende dal segno dell’angolo tra i 
+due vettori, in quanto cos = cos().
+–  Associativa mista: (u) v = uv) = (u v).
+–  Condizione di ortogonalità: due vettori non nulli u e v sono ortogonali se e solo se 
+u v = 0.
+–  Distributiva rispetto alla somma di vettori: w (u + v) = w u + w v.
+Espressione analitica del prodotto scalare
+Dati i due vettori u e v nella loro forma cartesiana:
+u = ai + bj
+e 
+v = ci + dj
+il loro prodotto scalare è dato da:
+u v = (ai + bj) (ci + dj) = aci2bdj2 + (ad + bc)i j
+Poiché i2j2 = 1 e i j = 0, si ottiene:
+u v = ac + bd
+(I.9.7)
+Quindi il prodotto scalare di due vettori è dato dalla somma del prodotto delle prime 
+coordinate con il prodotto delle seconde coordinate dei vettori.
+9.6  Vettori nello spazio
+Fissato un sistema di coordinate cartesiane Oxyz nello spazio, ed indicati con:
+–  i il versore che ha la stessa direzione e lo stesso verso dell’asse x,
+–  j il versore che ha la stessa direzione e lo stesso verso dell’asse y,
+–  k il versore che ha la stessa direzione e lo stesso verso dell’asse z,
+il vettore u = P O si può scrivere nella forma:
+u = xi + yj + zk
+(I.9.8)
+Fig. I.9.7  
+A
+B
+C
+O
+x
+y
+z
+i
+k
+j
+
+[PAG 77]
+MATEMATICA
+I-61
+9.7  Prodotto vettoriale
+Si chiama prodotto vettoriale di due vettori u e v, e si indica con w = u v, il vettore 
+w che ha:
+–  direzione perpendicolare al piano individuato dai due vettori;
+–  verso tale che, dal punto terminale di w, è visto positivo (rotazione antioraria) 
+l’angolo da u a v.
+–  modulo pari al prodotto dei moduli dei due vettori per il seno del minore dei due 
+angoli formati dai vettori dati:
+|u v| = u v sen
+Se u e v sono paralleli si ha: |u v| = 0.
+Se i vettori sono dati mediante le loro componenti cartesiane, il prodotto vettoriale 
+può essere definito anche come:
+w = (uyvzuzvy)i + (uzvxuxvz)j + (uxvyuyvx)k
+(I.9.9)
+Questa espressione coincide col risultato del calcolo del determinante della matrice 
+così costruita:
+(I.9.10)
+(I.9.11)
+Il prodotto vettoriale gode delle seguenti proprietà:
+–  è anticommutativo: u v =  v u;
+–  è nullo quando u è parallelo a v: sen0 = sen = 0;
+–  è distributivo rispetto alla somma: (u + v) w = u w + v w;
+–  u v = u v = u v);
+–  non è associativo; si può infatti calcolare il doppio prodotto vettore come:
+u (v w) = (u w)v (u v)w
+(u v) w = (u w)v (v w)u
+10  NUMERI COMPLESSI
+Si chiama numero complesso ogni coppia ordinata (a, b) di numeri reali, cioè ogni 
+coppia (a, b) R  R.
+Al numero complesso (0, 1) si dà il nome di unità immaginaria e si indica con la let-
+tera i:
+(0, 1) = i
+(I.10.1)
+Due numeri complessi (a, b) e (c, d) si dicono uguali se e solo se a = c e b = d. La rela-
+zione di uguaglianza definita per i numeri complessi è riflessiva, simmetrica e transitiva, 
+ossia è una relazione di equivalenza.
+A
+i
+j
+k
+ux uy uz
+vx vy vz
+=
+w
+i
+j
+k
+ux uy uz
+vx vy vz
+=
+
+[PAG 78]
+I-62
+MATEMATICA
+10.1  Operazioni con i numeri complessi
+Addizione e moltiplicazione
+Sui numeri complessi sono definite le operazioni di addizione e moltiplicazione, i cui 
+risultati si dicono rispettivamente somma e prodotto, indicati con gli usuali simboli  e  e 
+così definiti:
+(a, b)  (c, d) = (a  c, b  d)
+(I.10.2)
+(a, b)  (c, d) = (acbd, adbc)
+(I.10.3)
+L’addizione è commutativa, associativa e dotata di elemento neutro individuato dal 
+complesso (0, 0), cioè il reale 0.
+La moltiplicazione è commutativa, associativa, distributiva rispetto all’addizione e 
+dotata di elemento neutro individuato dal complesso (1, 0), cioè il reale 1.
+Considerando le definizioni di somma e prodotto e utilizzando l’unità immaginaria i, 
+si può giungere ad una forma più semplice per scrivere i numeri complessi; un qualsiasi 
+numero (a, b) può essere infatti scomposto come segue:
+(a, b) = (a, 0)  (0, b)
+Inoltre si osserva che:
+(0, 1)(b, 0) = (0 b1 0, 0 0  1 b) = (0, b)
+e quindi, per la proprietà simmetrica dell’uguaglianza:
+(0, b) = (0, 1)(b, 0)
+In conclusione:
+(a, b) = (a, 0) (0, 1)(b, 0)
+(a, b) = a  ib
+(I.10.4)
+Nel binomio a ib il termine a è la parte reale, mentre ib è la parte immaginaria; se 
+b = 0 il complesso viene identificato con il reale a, mentre se a = 0 il numero complesso si 
+dice immaginario puro.
+Un’altra importante osservazione è che nell’insieme C dei numeri complessi il qua-
+drato di un numero può essere negativo, infatti:
+i2 = (0, 1)(0, 1) = (0 01 1, 0 1  1 0) = (1, 0)
+e quindi, poiché (1, 0) è il reale 1:
+i2 = 1
+(I.10.5)
+Le prime potenze di i risultano pertanto essere:
+i 0 = 01 
+i 1 =  
+i 2 =  
+i 3 = i2i = i
+Le operazioni di addizione e moltiplicazione tra numeri reali si possono eseguire con 
+le stesse regole dell’ordinario calcolo letterale, con l’unica precisazione di sostituire 1 al 
+posto di i2 ogni volta che tale simbolo compare.
+
+[PAG 79]
+MATEMATICA
+I-63
+Coniugato di un numero complesso
+Si chiama coniugato del numero z = a ib il numero complesso z = a  ib.
+Dalla definizione seguono alcune significative conseguenze:
+–  il coniugato di un numero reale a = (a, 0) è il numero stesso;
+–  se due numeri complessi e coniugati z = a ib ez= a  ib sono uguali, allora i due 
+coincidono con il numero reale a;
+–  la somma di z ezè pari al doppio della parte reale di ciascuno di essi:
+(a ib) + (a  ib) = 2a
+(I.10.6)
+–  il prodotto di due numeri complessi e coniugati è un numero reale non negativo:
+(a ib)  (a  ib) = a2 + b2
+(I.10.7)
+Al numero reale a2 + b2 si dà il nome di norma del numero complesso a ib. Due 
+numeri complessi e coniugati hanno pertanto la stessa norma.
+Sottrazione e divisione
+Si chiama differenza di due numeri complessi z1 = a ib e z2 = c id presi nell’ordine, 
+il numero complesso che aggiunto a z2 dà come risultato z1; la differenza esiste, è unica e 
+si ottiene nel seguente modo:
+(a ib)  (c  id) = a  c  i(b d)
+(I.10.8)
+Si definisce opposto di a ib il numero complesso a ib.
+Si chiama quoziente di due numeri complessi z1 = a ib e z2 = c id, con z2  0, il 
+numero complesso che moltiplicato per z2 dà come risultato z1:
+(I.10.9)
+Si definisce inverso o reciproco di z = a ib il numero complesso:
+(I.10.10)
+10.2  Rappresentazione geometrica dei numeri complessi
+Dato un sistema cartesiano Oxy, il numero complesso z = a ib può essere rappresen-
+tato sul piano dal punto P(a, b), come nella Fig. I.10.1:
+Fig. I.10.1  
+In questo modo si stabilisce una corrispondenza biunivoca tra punti del piano e 
+z1
+z2
+----
+a
+ib
++
+c
+id
++
+-------------
+ac
+bd
++
+c2
+d2
++
+------------------
+i bc
+ad
+–
+c2
+d2
++
+-----------------
+
++
+=
+=
+1
+z--
+1
+a
+ib
++
+-------------
+a
+ib
+–
+a2
+b2
++
+----------------
+=
+=
+x
+y
+b
+a
+P(a, b)
+O
+z = a ib
+
+[PAG 80]
+I-64
+MATEMATICA
+numeri complessi; in particolare ad ogni punto dell’asse x corrisponde un numero reale, 
+poiché per tutti i punti appartenenti a tale asse si ha b = 0, mentre ad ogni punto dell’asse 
+y corrisponde un numero immaginario puro, poiché per i punti su tale asse a = 0.
+Congiungendo P(a, b) con l’origine O si ottiene il vettore OP, con cui spesso viene 
+identificato il complesso z. Si chiama modulo  di z = a ib la lunghezza del segmento OP:
+(I.10.11)
+10.3  Forma trigonometrica dei numeri complessi
+Dato il numero complesso z = a ib e considerato nel piano il punto P(a, b), siano 
+l’angolo che il segmento OP forma con l’asse delle ascisse e  il modulo di z; si hanno le 
+seguenti relazioni:
+(I.10.12)
+Il numero complesso z = a ib si può pertanto scrivere in forma trigonometrica:
+a ib =  cos  isen = (cos  isen)
+(I.10.13)
+L’angolo  definito a meno di 2k è detto anomalia o argomento del numero complesso.
+Fig. I.10.2  
+Osservando nella Fig. I.10.2 il triangolo rettangolo OPA e tenendo presente la I.10.11, 
+si ricavano le seguenti formule che permettono di passare dalla forma algebrica di un 
+numero complesso a quella trigonometrica e viceversa:
+(I.10.14)
+(I.10.15)
+Esempio
+Trasformazione della forma algebrica di un numero complesso z in forma trigonome-
+trica, con z = 1 + i:
+
+a2
+b2
++
+=
+a
+cos
+=
+b
+sen
+=
+x
+y
+P (a, b)
+O
+
+
+A
+sen
+b
+a2
+b2
++
+---------------------
+=
+cos
+a
+a2
+b2
++
+---------------------
+=
+tg
+b
+a--
+=
+
+1
+1
++
+2
+=
+=
+tg
+1
+=
+
+
+4--
+=
+z
+2
+cos
+4--
+isen
+4--
++
+
+
+
+
+
+=
+
+[PAG 81]
+MATEMATICA
+I-65
+10.4  Operazioni con i numeri complessi in forma trigonometrica
+La forma trigonometrica risulta utile per eseguire in modo più rapido operazioni con i 
+numeri complessi quali prodotto, quoziente e radici. Per quanto riguarda somma e sottra-
+zione invece, è consigliabile mantenere la forma algebrica.
+Prodotto
+Il prodotto di due numeri complessi in forma trigonometrica è il numero complesso 
+che ha per modulo il prodotto dei moduli e per argomento la somma degli argomenti:
+z1 = 1(cos1 isen1)
+ 
+z2 = 2(cos2 isen2)
+(I.10.16)
+Quoziente
+Il quoziente di due numeri complessi in forma trigonometrica in cui il divisore non sia 
+nullo, è il numero complesso che ha per modulo il rapporto dei moduli e per argomento la 
+differenza degli argomenti; considerati ancora z1 e z2, con z2  0, si ha:
+(I.10.17)
+Elevamento a potenza
+La potenza n-esima di un numero complesso in forma trigonometrica è il numero 
+complesso che ha come modulo la potenza n-esima del modulo e come argomento il pro-
+dotto tra l’argomento della base e l’esponente. Riconducendo l’elevamento a potenza al 
+prodotto di n fattori, si ottiene infatti la formula di Moivre, valida per qualsiasi n intero, 
+sia esso positivo, negativo, nullo:
+zn = n(cos(n) isen(n))
+(I.10.18)
+Estrazione di radice
+Si chiama radice n-esima, con n intero positivo, di un numero complesso z ogni 
+numero complesso w tale che si abbia:
+wn = z
+(I.10.19)
+ Ogni numero complesso non nullo z = (cos + isen) ammette n e solo n radici n-
+esime, che sono date dalla formula:
+(I.10.20)
+Funzione esponenziale a esponente complesso e formule di Eulero
+Dato il numero complesso in forma trigonometrica z = (cos + isen), esso si può 
+scrivere in forma esponenziale:
+z = ei
+(I.10.21)
+dove  è il modulo di z e  l’argomento a meno di multipli interi di 2.
+I legami tra la funzione esponenziale ad esponente immaginario e la funzione trigono-
+metrica sono espressi dalle formule di Eulero:
+–  ei = cos + isen
+–  ei = cos  isen
+z1 z2
+
+12 cos 1
+2
++
+
+
+isen 1
+2
++
+
+
++
+
+
+=
+z1
+z2
+----
+1
+2
+----- cos 1
+2
+–
+
+
+isen 1
+2
+–
+
+
++
+
+
+=
+z
+n
+
+n
+cos
+2k
++
+n
+-------------------
+isen
+2k
++
+n
+-------------------
++
+=
+
+[PAG 82]
+I-66
+MATEMATICA
+–  
+–  
+Esempio
+Sia z = 2  2i; si ha:
+da cui:
+11  FUNZIONI  REALI
+11.1  Intervalli
+Si chiama intervallo di estremi a e b, con a e b numeri reali, l’insieme
+I =x R a  x  b
+(I.11.1)
+L’intervallo I si indica con il simbolo [a, b] e si dice chiuso poiché gli estremi appar-
+tengono all’insieme. Esistono le seguenti altre possibilità:
+–  I intervallo aperto:
+I = (a, b) = x R a x  b
+(I.11.2)
+–  I intervallo aperto a sinistra e chiuso a destra:
+I = (a, b] = x R a x  b
+(I.11.3)
+–  I intervallo chiuso a sinistra e aperto a destra:
+I = [a, b) = x R a x  b
+(I.11.4)
+Sono intervalli illimitati gli insiemi:
+–  (a, ) = x R x a
+–  [a, ) = x R x a
+–  (, a) = x R x a
+–  (, a] = x R x a
+dove a è un qualsiasi numero reale.
+Graficamente gli intervalli limitati e illimitati si rappresentano rispettivamente con 
+segmenti e semirette sull’asse reale. L’unico intervallo illimitato sia superiormente che 
+inferiormente è l’insieme R definito come:
+R = (, )
+11.2  Intorni di un numero
+Preso un numero reale c, si chiama intorno completo di c ogni intervallo aperto che lo 
+cos
+ei
+e i
+– 
++
+2
+-----------------------
+=
+sen
+ei
+e i
+– 
+–
+2i
+----------------------
+=
+
+a2
+b2
++
+2 2
+=
+=
+cos
+a
+--
+1
+2
+------
+2
+2
+------
+=
+=
+=
+sen
+b
+--
+1
+2
+------
+–
+2
+2
+------
+–
+=
+=
+=
+
+7
+4------
+=
+z
+2 2
+cos7
+4
+------
+isen7
+4------
++
+
+
+
+
+
+2 2 e
+i 7
+4
+------
+
+
+=
+=
+
+[PAG 83]
+MATEMATICA
+I-67
+contiene, e si indica con I(c). Si osservi come ogni punto possieda infiniti intorni.
+Si chiama intorno circolare (o simmetrico) di c ogni intervallo di cui c sia il punto 
+medio, cioè ogni intervallo del tipo:
+I(c, ) = (c, c)
+(I.11.5)
+I(c, ) = x R c   x  cx R x  c 
+dove  è un numero positivo detto raggio che rappresenta la semiampiezza dell’intorno; il 
+punto c prende invece il nome di centro.
+Fig. I.11.1   Intorno circolare di c.
+–  Si dice intorno destro di un punto c ogni intervallo chiuso a sinistra in cui c coincida 
+con il primo estremo.
+–  Si dice intorno sinistro di un punto c ogni intervallo chiuso a destra in cui c coincida 
+con il secondo estremo.
+Fig. I.11.2   Rappresentazione di intorno destro (a) e sinistro (b) di c.
+11.3  Punti di accumulazione
+Dati un punto c e un insieme A  R, si dice che c è punto di accumulazione di A se in 
+ogni intorno di c cade almeno un punto di A distinto da c.
+Se l’intorno è soltanto sinistro o soltanto destro, il punto di accumulazione si dice 
+rispettivamente destro o sinistro.
+Un punto di un insieme che non sia di accumulazione si dice isolato.
+Osservazioni
+–  Se c è un punto di accumulazione di A, in ogni intorno di c cadono sempre infiniti 
+punti di A. Se per assurdo così non fosse, si potrebbe considerare la minima distanza  di 
+questi punti da c; in ogni intorno circolare di c di raggio r, con r < , non cadrebbe in que-
+sto modo nessun punto di A diverso da c e c sarebbe isolato e non di accumulazione come 
+supposto.
+–  Un punto di accumulazione di un insieme può appartenere o meno all’insieme, un 
+punto isolato di un insieme appartiene sempre all’insieme.
+–  Un punto di un insieme o è di accumulazione o è isolato.
+Esempio 1
+Tutti i punti dell’insieme Q dei numeri razionali sono di accumulazione per Q. Tutti i 
+punti dell’insieme dei numeri reali R sono di accumulazione per Q. Tutti i punti di R sono 
+di accumulazione.
+c
+c
+c
+x
+c
+c
+x
+a)
+c
+c
+x
+b)
+
+[PAG 84]
+I-68
+MATEMATICA
+Esempio 2
+Tutti i punti interni di un intervallo, sia esso chiuso o aperto, limitato o illimitato, sono 
+di accumulazione. In particolare gli estremi inferiore e superiore dell’intervallo sono 
+rispettivamente punto di accumulazione sinistro e destro.
+Un insieme che non possiede punti di accumulazione si dice discreto. Tutti i punti di 
+un insieme discreto sono isolati, mentre in generale non è vero il viceversa: esistono 
+insiemi di punti isolati che ammettono punti di accumulazione.
+Esempio
+Gli insiemi N e Z sono discreti poiché tutti i loro punti sono isolati.
+Teorema di Bolzano
+Ogni insieme limitato e infinito di numeri reali ammette almeno un punto di accumu-
+lazione.
+11.4  Funzioni reali di una variabile reale
+Dati due insiemi X e Y non vuoti, si chiama funzione o applicazione di X in Y una qua-
+lunque relazione che associa ad ogni elemento x  X uno e un solo elemento y  Y.
+Fig. I.11.3   Funzione da X in Y.
+L’insieme X è chiamato dominio della funzione mentre l’insieme degli elementi di Y
+che sono corrispondenti di elementi di X si chiama codominio. Si usa la scrittura:
+f: X Y
+L’elemento y  Y associato a x  X tramite f è l’immagine di x e si indica con f(x):
+y = f(x)
+(I.11.6)
+Ogni elemento del dominio deve avere una ed una sola immagine, elementi distinti 
+possono avere la stessa immagine. Indicato con f(X) il codominio, si osservi:
+f(X)  Y
+(I.11.7)
+Gli elementi x e y, con y = f(x), sono detti rispettivamente variabile indipendente e 
+variabile dipendente.
+Una funzione si dice:
+–  suriettiva quando non esistono elementi di Y che non siano immagini di alcun ele-
+mento di X, cioè quando f(X) = Y;
+–  iniettiva quando gli elementi di Y sono immagini al più di un solo elemento di X;
+X
+Y
+x
+y = f(x)
+f(X)
+
+[PAG 85]
+MATEMATICA
+I-69
+–  biiettiva quando è sia iniettiva che suriettiva, cioè quando ad ogni elemento di X
+corrisponde uno ed un solo elemento di Y e, viceversa, ogni elemento di Y è immagine di 
+uno ed un solo elemento di X. Un’applicazione di questo tipo si chiama anche biiezione o 
+corrispondenza biunivoca.
+Date due funzioni f: X Y e g: Y Z, la loro applicazione successiva porta alla fun-
+zione composta h: X Z così definita:
+h = g  f 
+con h(x) = g(f(x))
+(I.11.8)
+Sia f una funzione biiettiva tra X e Y. Si definisce funzione inversa di f l’applicazione 
+g da Y in X che ad ogni y  Y associa l’unico x  X tale che:
+g(y) = g(f(x)) = x
+La funzione inversa si denota con il simbolo f 1, x = f 1(y). Scambiando le due varia-
+bili otteniamo y = f 1(x), che viene chiamata ancora funzione inversa della f(x).
+Quando dominio e codominio sono sottoinsiemi di R, la funzione è detta funzione 
+reale di una variabile reale.
+Si chiama grafico di una funzione f  l’insieme:
+graf(f) = {(x, y)  X  Y: y = f(x)}
+(I.11.9)
+Una funzione y = f(x) avente per dominio D e tale che x  D  x  D, si definisce 
+rispettivamente:
+–  pari se  x  D, f(x) = f(x)
+–  dispari se  x  D, f(x) = f(x)
+Il grafico di una funzione pari è simmetrico rispetto all’asse y, il grafico di una fun-
+zione dispari è simmetrico rispetto all’origine.
+Il grafico della funzione x = f 1(y) è lo stesso di y = f(x), mentre quella di y = f 1(x) è 
+il simmetrico rispetto alla bisettrice del primo e del terzo quadrante.
+Esempio 1
+Data la funzione f: y = x3, questa è biunivoca, è dispari e la sua inversa è 
+. I 
+grafici di f e f 1 sono illustrati nella Fig. I.11.4.
+Fig. I.11.4   Grafico di y = x3 (a) e di 
+ (b).
+Esempio 2
+La funzione y = x2 non è biunivoca perché due elementi distinti del dominio possono 
+y
+x
+3
+=
+x
+y
+O
+a)
+b)
+y
+x
+3
+=
+
+[PAG 86]
+I-70
+MATEMATICA
+avere la stessa immagine: ad esempio f(2) = f(2) = 4. Se si restringe il dominio della fun-
+zione a D = x R: x 0si ottiene una biiettività di cui è possibile considerare l’inversa 
+. I grafici sono riportati in Fig. I.11.5.
+Fig. I.11.5   Grafico di y = x2 per x 0 (a) e di 
+ (b).
+Funzioni monotòne
+Una funzione y = f(x) definita in un insieme D si dice crescente (non decrescente) in D
+se, comunque si scelgano due punti x1 e x2 di D, con x1 < x2, risulta:
+f(x1) < f(x2)
+ [f(x1)  f(x2)]
+Se invece, per x1 < x2, risulta:
+f(x1) > f(x2)
+ [f(x1)  f(x2)]
+la funzione si dice decrescente (non crescente).
+Le funzioni crescenti, non decrescenti, decrescenti, non crescenti in D si dicono 
+monotòne in D. Una funzione può non essere monotòna in tutto l’insieme D, più spesso è 
+possibile suddividere tale insieme in intervalli all’interno dei quali la funzione assume 
+uno dei caratteri di montonia.
+Esempio
+La funzione y = x2 è crescente per x 0, decrescente per x 0 (si veda il grafico in Fig. 
+I.11.5a).
+La funzione y = x3 è crescente per ogni x reale (Fig. I.11.4a).
+Funzioni periodiche
+La funzione y = f(x) è periodica di periodo t se esiste un numero t tale che, per ogni x
+appartenente al dominio, risulta:
+f(x) = f(x + t)
+Se esistono più numeri reali positivi t1, .., tn tali che f(x) = f(x + ti), si chiama periodo
+il più piccolo dei numeri ti.
+Se k è un numero intero, quindi k  Z, si ha:
+f(x) = f(x + kt)
+Siano  l’arco del grafico di una funzione periodica corrispondente ad un qualunque 
+intervallo di ampiezza pari al periodo t, P1 e P2 due punti di ascisse rispettivamente x1 e x2
+y
+x
+=
+x
+y
+O
+a)
+b)
+y
+x
+=
+
+[PAG 87]
+MATEMATICA
+I-71
+tali che f(x1) = f(x2) = y con x2 = x1 + t. Il grafico si costruisce unendo tutti gli archi otte-
+nuti da  con le traslazioni individuate dal vettore kP1P2, con k  Z .
+Fig. I.11.6   Costruzione del grafico di una funzione periodica.
+11.5  Classificazione delle funzioni matematiche
+Le funzioni reali di una variabile reale espresse mediante un’espressione analitica di 
+solito si classificano come segue.
+–  Funzioni algebriche
+Il valore della variabile dipendente si ottiene con un numero finito di operazioni alge-
+briche; se tali operazioni sono solo di addizione, sottrazione, moltiplicazione ed eleva-
+mento a potenza con esponente intero positivo, si hanno le funzioni razionali intere. Se 
+compare anche l’operazione di divisione, si hanno le funzioni razionali fratte; se vi sono 
+radici  n-esime si hanno le funzioni irrazionali.
+Esempio
+Funzione razionale intera: f(x) = 2x3 + 4x  1
+Funzione razionale fratta: 
+Funzioni irrazionali: 
+, 
+–  Funzioni trascendenti
+Sono tutte le funzioni che non sono algebriche.
+Esempio
+Sono trascendenti le funzioni esponenziali, logaritmiche e goniometriche, come:
+ f(x) = cosx, 
+11.6  Determinazione del dominio di una funzione
+In base alla classificazione di una funzione, e quindi al tipo di operazioni presenti 
+nella sua definizione analitica, essa può non essere definita per tutti i valori reali. Per 
+prima cosa nello studio di una funzione bisogna quindi determinare il dominio.
+–  Le operazioni di addizione, sottrazione e moltiplicazione sono sempre possibili: le 
+funzioni razionali intere hanno per dominio R.
+–  La divisione non ha significato se il divisore è nullo, dal dominio si devono escludere 
+tutti i numeri reali che annullano il denominatore.
+–  La radice di indice pari ha senso solo se il radicando è positivo o nullo.
+–  La radice di indice dispari ha senso purché esista il radicando.
+–  Le funzioni goniometriche y = senx e y = cosx sono definite su tutto l’asse reale men-
+tre y = tgx e y = cotgx esistono rispettivamente per x  /2 + k e x  k, con k  Z.
+x
+y
+O
+x1
+x2
+t
+P1
+P2
+
+f x
+
+2x
+1
++
+x2
+1
+–
+--------------
+=
+f x
+
+x2
+1
+–
+=
+f x
+
+2x
+1
++
+
+
+2
+3--
+x
+----------------------
+=
+f x
+
+ex
+1
+–
+x
+-------------
+=
+
+[PAG 88]
+I-72
+MATEMATICA
+–  Le funzioni y = arcsenx e y = arccosx sono definite per 1  x  1, mentre y = arctgx e 
+y = arccotgx esistono per qualunque valore reale di x.
+–  L’esponenziale con base costante positiva esiste purché esista l’esponente.
+–  La potenza con base ed esponente variabili si considera solo per valori positivi della base.
+–  Il logaritmo ha significato se l’argomento è positivo e purché la base sia un numero 
+positivo diverso da 1.
+11.7  Trasformazioni del grafico di funzioni
+La costruzione del grafico di alcune funzioni si può ottenere da grafici di funzioni più 
+semplici, come indicato di seguito.
+–  Traslazioni parallele agli assi
+Il grafico della funzione y = f(x + h) si costruisce traslando di un vettore v di modulo h
+il grafico della funzione y = f(x) parallelamente all’asse x (verso destra o verso sinistra a 
+seconda che h sia negativo o positivo) (Fig. I.11.7a).
+Il grafico della funzione y = f(x)  k si costruisce traslando di un vettore v di modulo k
+il grafico della funzione y = f(x) parallelamente all’asse y (verso l’alto o verso il basso a 
+seconda che k sia positivo o negativo) (Fig. I.11.7b).
+Fig. I.11.7  
+–  Dilatazione di grafici
+Il grafico della funzione y = f(hx) si costruisce contraendo o dilatando di un fattore h il 
+grafico della funzione y = f(x) parallelamente all’asse x (Fig. I.11.8a).
+Il grafico della funzione y = kf(x) si costruisce contraendo o dilatando di un fattore k il 
+grafico della funzione y  f(x) parallelamente all’asse y (Fig. I.11.8b).
+Fig. I.11.8  
+x
+y
+O
+h
+h
+y = f(x  h), h > 0
+y = f(x  h), h < 0
+y = f(x)
+a)
+x
+y
+O
+k
+k
+y = f(x)  k, k > 0
+y = f(x)  k, k < 0
+y = f(x)
+b)
+x
+y
+O
+2b
+b
+b2
+a2
+a
+2a
+y = f(x)
+y = f(2x)
+y = f(x2)
+a)
+x
+y
+O
+y = 2f(x)
+y = f(x)
+y = 12f(x)
+b)
+
+[PAG 89]
+MATEMATICA
+I-73
+–  Trasformazioni per simmetrie
+Il grafico della funzione y = f(x) è il simmetrico rispetto all’asse x di quello della fun-
+zione y = f(x) (Fig. I.11.9a).
+Il grafico della funzione y = f(x) è il simmetrico rispetto all’asse y di quello della fun-
+zione y = f(x) (Fig. I.11.9b).
+Il grafico della funzione y = f(x) è il simmetrico rispetto all’origine di quello della 
+funzione y = f(x) (Fig. I.11.9c).
+Fig. I.11.9  
+–  Funzioni con moduli
+La funzione y = f(x) ha il grafico coincidente con quello di y = f(x) per x 0; per 
+ottenere la parte di grafico rimanente si simmetrizza il ramo già ottenuto rispetto all’asse y
+(Fig. I.11.10a).
+La funzione y = f(x)ha lo stesso grafico di y = f(x) per i valori di x tali che f(x) 0, 
+mentre per i valori di x tali che f(x) 0 coincide con quello della funzione y = f(x), ossia 
+è il simmetrico rispetto all’asse x del grafico di y = f(x) (Fig. I.11.10b).
+Fig. I.11.10  
+11.8  Grafici di funzioni
+–  Funzione lineare: y = mx +q
+x
+y
+O
+y = f(x)
+y = f(x)
+a)
+x
+y
+O
+y = f(x)
+y = f(x)
+b)
+x
+y
+O
+y = f(x)
+y = f(x)
+c)
+x
+y
+O
+y = f(x)
+y = f(x)
+a)
+x
+y
+O
+y = f(x)
+y = f(x)
+b)
+
+[PAG 90]
+I-74
+MATEMATICA
+Fig. I.11.11   Grafico di funzione lineare con m > 0 (a), m < 0 (b), m = 0 (c).
+–  Funzione esponenziale e funzione logaritmica
+La funzione esponenziale y = ax si definisce per a numero reale positivo diverso da 1; 
+il dominio è l’insieme R e il codominio l’insieme R+
+0 dei numeri reali positivi escluso lo 
+zero.
+Fig. I.11.12   Grafico della funzione esponenziale per a > 1 (a) e per 0 < a < 1 (b).
+La funzione logaritmica y = logax è l’inversa della funzione esponenziale e ha perciò 
+come dominio l’insieme R+
+0 e come codominio R. Nel caso in cui a = e, dove e è il numero 
+di Eulero (e = 2,7182818284...), la funzione prende il nome di logaritmo naturale y = lnx.
+Fig. I.11.13   Grafico della funzione logaritmica per a > 1 (a) e per 0 < a < 1 (b).
+x
+y
+O
+a)
+x
+y
+O
+b)
+x
+y
+O
+c)
+x
+y
+O
+a)
+1
+x
+y
+O
+b)
+1
+x
+y
+O
+a)
+1
+x
+y
+O
+b)
+1
+
+[PAG 91]
+MATEMATICA
+I-75
+–  Funzioni trigonometriche
+Fig. I.11.14   Grafico delle funzioni y = senx (a), y = cosx (b), y = tgx (c), y = cotgx (d).
+–  Funzioni inverse delle funzioni trigonometriche
+Fig. I.11.15   Grafico delle funzioni y = arcsenx (a), y = arccosx (b), y = arctgx (c), 
+y = arcotgx (d).
+x
+y
+O
+a)
+x
+y
+O
+b)
+x
+y
+O
+c)
+/2
+
+/2
+3/2
+
+x
+y
+O
+d)
+/2
+
+/2
+3/2
+2
+x
+y
+O
+1
+1
+90°
+90°
+a)
+x
+y
+O
+1
+1
+90°
+180°
+b)
+x
+y
+O
+/2
+/2
+c)
+x
+y
+O
+
+/2
+d)
+
+[PAG 92]
+I-76
+MATEMATICA
+11.9  Funzioni iperboliche
+Si chiama seno iperbolico di x la funzione:
+(I.11.10)
+il cui grafico è riportato nella Fig. I.11.16.
+Si chiama coseno iperbolico di x la funzione:
+(I.11.11)
+il cui grafico è riportato nella Fig. I.11.17.
+La tangente iperbolica di x è la funzione:
+(I.11.12)
+La cotangente iperbolica di x è la funzione:
+(I.11.13)
+I grafici di y = tghx e y = cotghx sono illustrati rispettivamente nelle Fig. I.11.18 e Fig. 
+I.11.19.
+Fig. I.11.16  
+Fig. I.11.17  
+senhx
+ex
+e x
+–
+–
+2
+-----------------
+=
+x
+y
+O
+coshx
+ex
+e x
+–
++
+2
+------------------
+=
+x
+y
+O
+1
+tghx
+ex
+e x
+–
+–
+ex
+e x
+–
++
+------------------
+=
+cotghx
+ex
+e x
+–
++
+ex
+e x
+–
+–
+------------------
+=
+
+[PAG 93]
+MATEMATICA
+I-77
+Le funzioni secante e cosecante iperboliche di x sono nell’ordine:
+(I.11.14)
+(I.11.15)
+i cui grafici sono rappresentati nelle Fig. I.11.20 e Fig. I.11.21.
+Fig. I.11.18  
+Fig. I.11.19  
+Fig. I.11.20  
+Fig. I.11.21  
+Tab. I.11.1   Relazioni tra le funzioni iperboliche
+cosh2x  senh2x = 1
+senh(x) = senhx
+coshx + senhx = ex
+cosh(x) = coshx
+coshx  senhx = ex
+tgh(x) = tghx
+x
+y
+O
+1
+1
+x
+y
+O
+1
+1
+sechx
+2
+ex
+e x
+–
++
+------------------
+=
+cosechx
+2
+ex
+e x
+–
+–
+-----------------
+=
+x
+y
+O
+1
+x
+y
+O
+
+[PAG 94]
+I-78
+MATEMATICA
+Tab. I.11.2   Formule di addizione e sottrazione
+cosh(x y) = coshx  coshy  senhx  senhy
+senh(x y) = senhx  coshy  coshx  senhy
+Tab. I.11.3   Formule di moltiplicazione
+senh2x = 2senhx  coshx
+cosh2x = cosh2x  senh2x
+Tab. I.11.4   Formule per somma, differenza e prodotto di funzioni iperboliche
+Tab. I.11.5   Potenze di funzioni iperboliche
+tgh x
+y
+
+
+
+tghx
+tghy
+
+1
+tghx tghy
+
+
+----------------------------------
+=
+cotgh x
+y
+
+
+
+1
+cotghx cotghy
+
+
+cotghx
+cotghy
+
+---------------------------------------------
+=
+tgh2x
+2tghx
+1
+tgh2x
++
+----------------------
+=
+cotgh2x
+1
+cotgh2x
++
+2cotghx
+---------------------------
+=
+senhx
+senhy
++
+2senhx
+y
++
+2
+----------- coshx
+y
+–
+2
+----------
+
+=
+coshx
+coshy
++
+2coshx
+y
++
+2
+----------- coshx
+y
+–
+2
+----------
+
+=
+senhx
+senhy
+–
+2senhx
+y
+–
+2
+----------
+coshx
+y
++
+2
+-----------
+
+=
+coshx
+coshy
+–
+2senhx
+y
++
+2
+----------- senhx
+y
+–
+2
+----------
+
+=
+senhx senhy
+
+1
+2-- cosh x
+y
++
+
+
+cosh x
+y
+–
+
+
+–
+
+
+=
+senhx coshy
+
+1
+2-- senh x
+y
++
+
+
+senh x
+y
+–
+
+
++
+
+
+=
+coshx coshy
+
+1
+2-- cosh x
+y
++
+
+
+cosh x
+y
+–
+
+
++
+
+
+=
+senh2x
+1
+2-- cosh2x
+1
+–
+
+
+=
+senh3x
+1
+4-- senh3x
+3senhx
+–
+
+
+=
+cosh2x
+1
+2-- cosh2x
+1
++
+
+
+=
+cosh3x
+1
+4-- cosh3x
+3coshx
++
+
+
+=
+
+[PAG 95]
+MATEMATICA
+I-79
+11.10  Limiti
+11.10.1  Definizioni di limite
+Data una funzione f: D R con D R, per costruire il suo grafico ed avere un’infor-
+mazione completa sulla funzione si dovrebbe avere la possibilità di conoscere il valore di 
+y = f(x) per ogni x nel dominio D. Tuttavia ciò risulta impossibile non essendo possibile 
+calcolare gli infiniti valori della funzione ma solamente un numero finito; inoltre non 
+sempre si può calcolare il valore dell’ordinata y di un generico punto x0 appartenente o 
+meno al dominio, poiché la funzione può non essere definita in tale punto. Per questi 
+motivi è importante conoscere l’andamento della funzione “nelle vicinanze di x0”, ossia in 
+opportuni intorni di x0 escluso il punto stesso.
+Limite finito di una funzione
+Data una funzione f: D R, con D R, siano x0 e l due numeri reali. Si dice che il 
+limite di f(x) per x che tende a x0 è l (o che f(x) tende al limite l quando x tende a x0), e si 
+scrive:
+quando, comunque si fissi un intorno I(l) di l, è sempre possibile trovare in sua corrispon-
+denza un intorno I(x0) di x0 tale che:
+In simboli:
+(I.11.16)
+Definizione equivalente
+Si dice che il limite di f(x) per x che tende a x0 è l, con l  R, e si scrive:
+Tab. I.11.6   Formule di bisezione
+ 
+senhx
+2--
+coshx
+1
+–
+2
+----------------------
+=
+se x
+0
+
+senhx
+2--
+coshx
+1
+–
+2
+----------------------
+–
+=
+se x
+0
+
+coshx
+2--
+coshx
+1
++
+2
+----------------------
+=
+tghx
+2--
+coshx
+1
+–
+coshx
+1
++
+----------------------
+senhx
+coshx
+1
++
+----------------------
+coshx
+1
+–
+senhx
+----------------------
+=
+=
+=
+se x
+0
+
+tghx
+2--
+coshx
+1
+–
+coshx
+1
++
+----------------------
+–
+senhx
+coshx
+1
++
+----------------------
+coshx
+1
+–
+senhx
+----------------------
+=
+=
+=
+se x
+0
+
+f x
+
+l
+=
+x
+x0
+
+lim
+oppure
+f x
+
+l
+
+per x
+x0
+
+x
+D
+x0
+
+
+–
+
+
+risulti:
+f x
+
+I l
+
+se x
+I x0
+
+
+
+f x
+
+l
+=
+x
+x0
+
+lim
+I l
+I x0
+
+: x
+D
+x0
+
+: x
+I x0
+
+
+f x
+
+I l
+
+
+
+–
+
+
+
+
+
+f x
+
+l
+=
+x
+x0
+
+lim
+
+[PAG 96]
+I-80
+MATEMATICA
+se, comunque si fissi un numero reale  > 0, è sempre possibile trovare in sua corrispon-
+denza un numero reale  > 0 tale che per ogni x  D  {x0} risulti:
+In simboli:
+(I.11.17)
+Limite sinistro e destro finiti di una funzione
+Il limite sinistro (destro) della funzione f(x) per x che tende a x0 è l, con l  R, e si 
+scrive:
+se, comunque si fissi un numero reale  > 0, è sempre possibile trovare in sua corrispon-
+denza un numero reale  > 0 tale che, per ogni x appartenente all’intervallo (x0 , x0), (x
+appartenente all’intervallo (x0, x0 )), f(x) appartiene all’intervallo (l , l ), cioè:
+Limite infinito di una funzione
+Data una funzione f: D R, con D R, illimitata superiormente (inferiormente), il 
+limite di f(x) per x che tende a x0 è più infinito (meno infinito, infinito), e si scrive:
+quando, fissato arbitrariamente un numero reale M > 0, è possibile individuare in sua cor-
+rispondenza un numero reale  > 0 tale che risulti:
+Limiti sinistro e destro infiniti di una funzione
+Si possono definire i limiti sinistro e destro per f(x) che tende a in modo analogo al 
+caso del limite finito. Si avranno i seguenti casi:
+Limite finito di una funzione per x che tende all’infinito
+Data una funzione f: D R, con D illimitato superiormente (inferiormente), il limite 
+di f(x) per x che tende a più infinito (meno infinito), è l, con l  R, e si scrive:
+f x
+
+l
+–
+
+
+se
+x
+x0
+–
+
+
+f x
+
+l
+=
+x
+x0
+
+lim
+
+0
+
+0: x
+D
+x0
+
+: x
+x0
+–
+
+f x
+
+l
+–
+
+
+
+
+–
+
+
+
+
+
+
+
+f x
+
+l
+=
+x
+x0
+
+
+lim
+f x
+
+l
+=
+x
+x0
++
+
+lim
+
+
+
+
+f x
+
+l
+–
+
+
+se
+x0
+
+–
+x
+x0
+
+
+x0
+x
+x0
+
++
+
+
+
+
+f x
+
++
+=
+x
+x0
+
+lim
+f x
+
+
+–
+=
+x
+x0
+
+lim
+
+
+f x
+
+
+=
+x
+x0
+
+lim
+
+
+x
+D
+x0
+
+: x
+x0
+–
+
+f x
+
+M
+
+
+
+–
+
+
+f x
+
+M
+–
+
+
+
+f x
+
+M
+
+
+f x
+
++
+=
+x
+x0
+
+
+lim
+f x
+
++
+=
+x
+x0
++
+
+lim
+f x
+
+
+–
+=
+x
+x0
+
+
+lim
+f x
+
+
+–
+=
+x
+x0
++
+
+lim
+f x
+
+l
+=
+x
++
+lim
+f x
+
+l
+=
+x
+
+–
+lim
+
+
+
+[PAG 97]
+MATEMATICA
+I-81
+se, comunque si fissi un numero reale  > 0, è possibile individuare in sua corrispondenza 
+un numero reale N > 0 tale che risulti:
+Limite infinito di una funzione per x che tende all’infinito
+Data una funzione f: D R illimitata superiormente e con D illimitato superiormente, 
+il limite di f(x) per x che tende a più infinito è più infinito, e si scrive:
+se si verifica che:
+Analogamente si definiscono i seguenti casi:
+11.10.2  Teoremi sui limiti
+Teorema dell'unicità del limite
+Se una funzione f(x) per x che tende a x0 ammette un limite l, questo è unico.
+Teorema della permanenza del segno
+Siano f: D R, con D R, e l  R. Se
+e l  0, allora esiste almeno un intorno I(x0) di x0 tale che per ogni x  D  {x0}, f(x) 
+assume lo stesso segno di l se x  I(x0). Il teorema vale anche nel caso in cui l sia uno dei 
+simboli + e  .
+Teorema del confronto per il limite finito
+Siano f(x), g(x), h(x) tre funzioni di D in R. Se
+con x0  R oppure x0 uguale a uno dei simboli + e  e l  R, e se esiste un intorno I(x0) 
+tale che per ogni x  D  {x0} risulti:
+allora
+Teorema del confronto per il limite infinito
+Siano f(x), g(x) due funzioni di D in R. Se
+x
+D: 
+
+
+x
+N
+f x
+
+l
+–
+
+
+
+
+x
+N
+–
+f x
+
+l
+–
+
+
+
+
+
+
+f x
+
++
+=
+x
++
+lim
+M
+0
+
+
+N
+0: 
+
+
+x
+D: 
+
+
+x
+N
+f x
+
+M
+
+
+
+f x
+
+
+–
+=
+x
++
+lim
+f x
+
+
+–
+=
+x
+
+–
+lim
+f x
+
++
+=
+x
+
+–
+lim
+f x
+
+l
+=
+x
+x0
+
+lim
+f x
+
+x
+x0
+
+lim
+h x
+
+x
+x0
+
+lim
+l
+=
+=
+x
+I x0
+
+
+f x
+
+g x
+
+h x
+
+
+
+
+
+g x
+
+x
+x0
+
+lim
+l
+=
+f x
+
++
+=
+x
+x0
+
+lim
+
+–
+
+
