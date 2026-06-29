@@ -1,0 +1,1013 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 102/116 ===
+Chars: 45,000 | Offset: 4,465,896
+
+to con le tecniche del film sottile e del film 
+R
+R1
+R2
+R = R1 + R2
+R2/R
+ / max
+ = Angolo di rotazione del cursore
+max = Angolo di rotazione max del cursore
+0,5
+1
+0,5
+1
+0
+1
+2
+3
+
+[PAG 1990]
+XIX-118
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+spesso, carbone stampato a caldo, plastica conduttiva, a strato tipo cermet, strati metallici, 
+filo metallico.
+Nella Tab. XIX.4.5 viene mostrato un prospetto che permette di valutare le differenti 
+caratteristiche dei vari tipi di potenziometri.
+Rappresentazione grafica
+Il simbolo grafico riproduce il simbolo della generica resistenza con l’aggiunta del 
+cursore, se l’inserzione è di tipo potenziometrico; altrimenti il simbolo è attraversato da 
+una freccia o da una linea per indicare che il parametro, in questo caso la resistenza, è 
+variabile (Fig. XIX.4.9)
+Fig. XIX.4.9  Simboli grafici: a) potenziometro; b) e c) resistenze variabili.
+Non esiste una vera e propria normalizzazione per indicare le caratteristiche dei poten-
+ziometri e dei trimmer. Nei potenziometri, oltre al valore nominale in ohm, in genere viene 
+indicata la legge di variazione spostamento-resistenza. Tale indicazione può essere data in 
+modo esplicito (linear, log.) oppure in modo codificato (A: lineare; B: logaritmico; C, D, 
+E: esponenziale). Se non vi è nessuna indicazione, è lineare. Oltre ai potenziometri a spo-
+Tab. XIX.4.5  Tabella comparativa delle principali caratteristiche elettriche dei vari 
+tipi di potenziometro
+Potenziometro
+Caratteristiche
+A carbone
+A ossido 
+di metallo
+Cermet
+A filo
+Resistenza 
+nominale []
+100   5 M
+10   10 k
+10   1 M
+10   100 k
+Tolleranza
+± 20
+± 10
+± 20
+± 10
+Potenza 
+dissipabile [W]
+1/4, 1/2, 1,2
+1/4, 1/2, 1,2 1/4, 1/2, 1,2
+1   100
+Coefficiente di 
+temperatura 
+[p.p.m./°C]
+500   1.000 
+10   50 
+100   500 
+20   100 
+Minima 
+resistenza
+5
+5
+5
+5
+Potere risolutivo 
+medio [%]
+2
+1
+1
+1
+a)
+b)
+c)
+
+[PAG 1991]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-119
+stamento angolare vengono realizzati anche potenziometri a spostamento rettilineo (slider).
+Applicazioni
+I potenziometri sono usati nei circuiti per ottenere una resistenza variabile oppure per 
+ripartire una tensione con un fattore di proporzionalità.
+Di solito sono utilizzati per il montaggio sui pannelli sinottici che costituiscono l’inter-
+faccia dell’utente con l’apparecchiatura e sono dotati generalmente di un albero che per-
+mette di far scorrere, ruotandolo, il cursore sull’elemento resistivo. Esistono anche 
+realizzazioni in cui, il movimento del cursore non è rotatorio ma è rettilineo (slider): questi 
+potenziometri trovano impiego nelle apparecchiature di amplificazione audio. I trimmer 
+differiscono  dai potenziometri solo dal come sono fabbricati, cioè materiali e forme, 
+potenza dissipabile.
+I trimmer possono essere montati direttamente sul circuito stampato dell’apparecchia-
+tura, vengono regolati utilizzando un cacciavite o utensili particolari. In genere sono uti-
+lizzati quando il circuito richiede operazioni di taratura e di calibrazione.
+Quando il cursore si trova in prossimità di una delle due estremità fisse  la resistenza 
+assume valori molto bassi. È necessario che la corrente che circola nell’elemento resi-
+stivo, e quindi la potenza dissipata, resti nei limiti prescritti.
+Fig. XIX.4.10  Configurazione circuitale  con limitazione di corrente.
+Una configurazione circuitale che permette di mantenere la corrente nel circuito entro 
+limiti accettabili è quella illustrata nella Fig. XIX.4.10.
+4.2.1  Tipi di potenziometri
+Potenziometri a base di carbone
+I potenziometri a grafite sono il tipo più diffuso; possono essere classificati in tre 
+famiglie in funzione del come viene realizzato l’elemento resistivo: per deposizione, per 
+stampaggio a caldo, con plastica conduttiva. La gamma dei valori va da 100  a 5 M, 
+con tolleranze di ± 10% e del ± 20%.
+Potenziometri a filo
+Nei potenziometri a filo l’elemento resistivo consiste in una resistenza a filo avvolta 
+su di un anello di materiale isolante a struttura piatta; il cursore consiste in un braccio iso-
+lato dal perno, che consente di spostare un contatto mobile lungo lo sviluppo anulare.
+Le leghe resistive in uso (nichel-cromo, rame-nichel) conferiscono a questi elementi 
+caratteristiche quali l’ottima stabilità del valore resistivo nel tempo e al variare della tem-
+peratura (il coefficiente di temperatura di norma è compreso fra ± 20 e 150 p.p.m./°C), un 
+elevato rapporto potenza/superficie, un esteso campo di temperatura di esercizio (com-
+preso fra – 65 °C e +160 °C).
+Elementi resistivi cermet
+I potenziometri cermet utilizzano come elemento base un supporto in materiale cera-
+mico (allumina o steatite) sul quale, mediante stampa serigrafica, vengono depositati 
+strati di composti resistivi o conduttivi a base di metalli nobili o loro ossidi e di leganti 
+vetrosi o ceramici, dispersi in un veicolo organico resinoso, poi cotto a temperatura ele-
+vata (circa 1.000 °C). Questa tecnologia viene anche definita a film spesso. 
+Le principali caratteristiche di questo tipo di potenziometri sono: eccellente rapporto 
+R2
+R3
+R1
+R1
+
+[PAG 1992]
+XIX-120
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+potenza dissipabile/superficie; esteso campo di temperature di esercizio, compresa fra i -55 
+°C e i 160 °C; ottime caratteristiche di stabilità dei vari parametri elettrici in presenza di varia-
+zioni termiche e igrometriche; ottimo comportamento in alta frequenza (fino a 100 MHz); 
+ampia gamma di valori ohmici (da 10  a 10 M) con tolleranze del ±10% e del ±20%.
+Elementi resistivi a film metallico sottile
+Se si opera sotto vuoto è possibile effettuare la deposizione su un opportuno substrato 
+leghe metalliche in strati molto sottili (100÷1000 Å). Il processo viene poi concluso da un 
+trattamento termico di stabilizzazione.
+I potenziometri così ottenuti rivelano un eccellente comportamento alla alte frequenze, 
+una rumorosità molto bassa e coefficienti di temperatura ridotti (10÷50 p.p.m./°C).
+La potenza specifica dissipata è bassa e la durata della rotazione è fra le più basse tra 
+quelle offerte dai vari tipi di potenziometri. Anche la gamma dei valori della resistenza 
+totale è alquanto limitata (da 10  a 50 k).
+Elemento resistivo a strato metallico
+Lo strato metallico di questo tipo di potenziometri è più spesso di quelli a film; viene 
+depositato su supporti particolari in modo tale da ottenere una compensazione tra le pro-
+prietà termiche dei costituenti, per esempio, eseguendo una placcatura seguita da un’inci-
+sione foto-chimica per ricavare la pista conduttiva.
+Sono caratterizzati da un coefficiente di temperatura molto basso (circa 10 p.p.m./°C) 
+e da ottime caratteristiche in alta frequenza. La gamma di valori varia da 10  a 20 k.
+Elementi resistivi ibridi
+Questo tipo di potenziometro utilizza un elemento resistivo ottenuto combinando una 
+o più dei materiali o delle tecniche di fabbricazione descritte. Per esempio, l’elemento 
+resistivo è formato da una pellicola in plastica conduttiva avvolta su supporti cermet.
+4.2.2  Trimmer
+In genere sono di piccole dimensioni e racchiusi in un contenitore di tipo plastico.
+I valori resistivi possono essere ottenuti effettuando una sola rotazione o più rotazioni 
+dell’albero del cursore.
+I modelli a più giri utilizzano un contatto scorrevole che viene fatto funzionare 
+mediante una vite senza fine. Il contatto scorre su un elemento resistivo a struttura elicoi-
+dale rettilinea.
+I terminali di accesso sono adatti all’installazione su circuito stampato.
+4.3  Reti resistive
+Le reti resistive sono dispositivi che contengono un gruppo di resistenze, che possono 
+essere indipendenti oppure già connesse secondo particolari configurazioni di uso fre-
+quente. Questo componente trova larga applicazione nelle schede digitali, e in particolare 
+in quelle che utilizzano dispositivi a larga scala di integrazione. Questi ultimi in genere 
+richiedono di essere collegati con pochissimi componenti passivi e in configurazioni ripe-
+titive. L’uso di questo componente velocizza e semplifica le operazioni di montaggio 
+della scheda, consente di sfruttare in modo ottimale lo spazio disponibile, e migliora, 
+dimi-nuendo il numero dei componenti, l’affidabilità dell’apparecchiatura. Può essere 
+impiegato in alcune configurazioni circuitali che utilizzato come elemento attivo in un 
+amplificatore operazionale, e richiede l’uso di resistenze  di uguale valore e tolleranza 
+(1%) e con le stesse caratteristiche di deriva termica.
+4.4  Termoresistenze
+Le termoresistenze (RTD – Resistence Temperature Detector) sono componenti di 
+natura metallica che presentano un valore di resistenza molto stabile nel tempo; il loro
+
+[PAG 1993]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-121
+coefficiente di temperatura a è positivo e la resistenza dipende dalla temperatura secondo 
+la seguente relazione:
+(XIX.4.7)
+ove: RT è la resistenza alla temperatura T; RT0 è la resistenza alla temperatura T0 di riferi-
+mento, in genere a 0 °C; T0 è la temperatura di riferimento;  è il coefficiente di tempera-
+tura del materiale che costituisce la termoresistenza misurato alla temperatura  T0.
+Il coefficiente di temperatura non è però costante, ma varia al variare della tempera-
+tura come mostrato dalla relazione:
+(XIX.4.8)
+e viene misurato in °C-1.
+Il coefficiente medio di temperatura viene calcolato utilizzando la variazione resistiva 
+misurata a 100 °C e a 0 °C.
+La costante di tempo termica è il tempo di risposta dell’elemento alle variazioni di 
+temperatura. I suoi valori tipici sono dell’ordine dei 100 ms, ma in alcuni dispositivi può 
+essere anche di alcuni secondi.
+I materiali utilizzati per realizzare termoresistenze deve possedere un elevato coeffi-
+ciente di temperatura, un’elevata resistività elettrica, una buona riproducibilità della carat-
+teristica resistenza-temperatura e deve mantenere inalterate le sue caratteristiche chimico-
+fisiche. I materiali più utilizzati sono il platino, il rame, il nichel e il tungsteno (per le alte 
+temperature). Le loro caratteristiche tecniche e di impiego sono riassunte nella Tab. 
+XIX.4.6.
+Nella Fig. XIX.4.15 è mostrata la curva caratteristica resistenza-temperatura delle ter-
+moresistenze più comuni. Le termoresistenze più utilizzate sono quelle al platino grazie 
+alla loro eccellente riproducibilità.
+I valori di resistenza (misurati a 0 °C) più utilizzati sono: 25  per i termometri cam-
+pioni e 100  per quelli industriali. 
+Nella Fig. XIX.4.16 viene proposto il simbolo grafico della termoresistenza.
+Dal punto di vista costruttivo la termoresistenza può assumere la forma di un filo 
+avvolto oppure di un film metallico depositato su un supporto isolante. Il tipo a film, 
+rispetto al tipo avvolto, è caratterizzato da un più basso tempo di risposta, un minor costo 
+e un valore resistivo più elevato.
+La sigla utilizzata per marcare le termoresistenze (norma UNI 7937) deve compren-
+dere le seguenti informazioni: il numero di termoelementi, il simbolo chimico dell’ele-
+mento metallico, il valore di resistenza misurato a 0°C, il grado di tolleranza, il numero di 
+Tab. XIX.4.6  Coefficienti di temperatura a di alcune termoresistenze
+Tipo
+Coefficiente di 
+temperatura [°C-1]
+Campo di variazione
+ delle temperature [°C]
+min
+MAX
+Platino Pt
+0,000385
+-200
++850
+Rame Cu
+0,00426
+-50
++150
+Nichel NI
+0,00617
+-50
++150
+RT
+RT0 1
+
+T
+T0
+–
+
+
+
++
+
+
+=
+
+RT
+RT0
+–
+RT0
+T
+T0
+–
+
+
+
+---------------------------------
+=
+
+[PAG 1994]
+XIX-122
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+terminali per termoelemento, il campo di temperature misurato.
+Per esempio, la sigla:
+1 Pt 100 G 2 – 2/100/300
+definisce una termoresistenza formata da un solo elemento che presenta una resistenza di 
+100  a 0 °C con una tolleranza di grado 2 con 2 terminali con temperatura di impiego tra 
+i 100 °C e i 300°C.
+I gradi di tolleranza ammessi per le termoresistenze sono: 
+grado 1 (G 1) ± 0,15 °C + 0,002 |t|
+grado 2 (G 2) ± 0,30 °C + 0,005 |t|
+ove |t| è il valore assoluto della temperatura in gradi centigradi.
+4.5  Termistori
+I termistori (thermally sensitive resistor) sono resistori che presentano valori elevati 
+del coefficiente di temperatura () per cui sono molto sensibili alle variazioni di tempera-
+tura. Sono composti da materiali semiconduttori sinterizzati che hanno la proprietà di for-
+nire grandi variazioni di resistenza anche con piccole variazioni di temperatura.
+Se la variazione di temperatura comporta un aumento del valore di resistenza elettrica 
+si è in presenza di una termoresistenza a coefficiente di temperatura positivo (PTC – Posi-
+tive Temperature Coefficient). Se invece la resistenza diminuisce, la termoresistenza ha 
+un coefficiente di temperatura negativo (NTC – Negative Temperature Coefficient) com-
+preso fra i –6%/°C e i –2%/°C.
+Caratteristiche elettriche
+I parametri caratteristici dei termistori sono:
+–  resistenza nominale;
+–  resistenza a potenza zero;
+–  coefficiente di temperatura;
+–  campo di temperature nel quale il suo comportamento è lineare;
+–  temperatura massima di lavoro;
+–  potenza massima dissipabile;
+–  costante di tempo termica.
+La resistenza a potenza zero è il valore in continua della resistenza quando la potenza 
+dissipata è tale da non determinare variazioni di resistenza entro lo 0,1%.
+La resistenza nominale è la resistenza a potenza zero misurata alla temperatura di 
+25°C con variazioni entro un decimo di grado. 
+Il campo di valori dei termistori va da qualche centinaio a qualche milione di ohm.
+Il coefficiente di temperatura viene letto su una curva caratteristica.
+La costante di tempo termica esprime il tempo di risposta dell’elemento alle variazioni 
+Fig. XIX.4.11  Caratteristica resistenza-
+temperatura di vari tipi di termoresistenze.
+Fig. XIX.4.12  Simbolo grafico della
+termoresistenza.
+t [°C]
+-200
+200
+0
+400 600 800
+0
+2
+4
+6
+8
+RT / RT0
+Nichel
+Rame
+Platino
+R1
+1PT1000
+o
+
+[PAG 1995]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-123
+di temperatura. I valori tipici di questo parametro sono dell’ordine dei millisecondi, per cui 
+il dispositivo è particolarmente adatto a misurare temperature che variano rapidamente.
+Il campo di temperatura in cui operano i termistori varia fra i 40 °C e i +300 °C.
+Il comportamento del termistore viene descritto per mezzo di alcune curve caratteristiche:
+–  diagramma temperatura-resistenza, che permette di valutare il coefficiente di tempera-
+tura del termistore; è espresso come variazione percentuale della resistenza rispetto al suo 
+valore nominale per grado centigrado;
+–  diagramma tensione-corrente: viene utilizzata per valutare la potenza dissipata nel ter-
+mistore;
+–  diagramma della variazione della resistenza nel tempo durante la fase di raffredda-
+mento, che consente di ricavare la costante di tempo termica del termistore, cioè l’inter-
+vallo di tempo necessario per far diminuire la temperatura del termistore rispetto a quella 
+ambientale del 63,2%.
+La curva caratteristica resistenza-temperatura dei termistori NTC presenta un anda-
+mento approssimativamente esponenziale con esponente negativo; in prima approssima-
+zione può essere espressa dalla seguente relazione:
+R = A e-t
+(XIX.4.9)
+ove:  è il coefficiente di temperatura del termistore; A è un coefficiente che dipende 
+dalle caratteristiche del materiale che compone il termistore NTC.
+La curva caratteristica dei PTC mostra un andamento del coefficiente fortemente non 
+lineare pertanto il campo di applicazione di questo tipo di termistore è alquanto limitato 
+fra 0 °C e 150 °C.
+La pendenza della curva è molto accentuata per cui i PTC sono componenti molto sen-
+sibili alle variazioni di temperatura. I PTC vengono fatti operare nel tratto ascendente 
+della curva caratteristica ove presenta un coefficiente di temperatura molto elevato (fino a 
+35%/°C). La temperatura oltre la quale la resistenza aumenta rapidamente è detta switch 
+temperature (Ts).
+I termistori NTC sono costruiti utilizzando un impasto di ossidi del manganese, bario, 
+vanadio, cromo o nichel miscelati con impurità droganti quali il titanio (tipo N) o il litio 
+(tipo P). L’impasto viene preformato a caldo e sinterizzato ad alta temperatura (circa 
+1.400 °C) formando dischi o barrette alle quali sono applicati due terminali e racchiu-
+dendo il tutto in contenitori metallici o plastici. Il campo di temperature rilevabili con gli 
+NTC varia da 40 a +300 °C.
+Applicazioni
+I termistori sono utilizzati come trasduttori nelle misure di temperatura. La variazione 
+di resistenza viene rivelata inserendo la termoresistenza in un partitore resistivo o in un 
+ramo di un ponte di Wheatstone.
+I termistori NTC vengono utilmente impiegati anche come elemento di compensa-
+zione in temperatura negli alimentatori stabilizzati per compensare grazie al suo coeffi-
+ciente di temperatura negativo gli effetti di deriva dovuti al coefficiente di temperatura 
+positivo di un altro componente presente nel circuito e nei dispositivi di limitazione della 
+corrente di riposo dei transistor di potenza, sostituendo i comuni fusibili.
+I termistori infatti al cessare della causa del sovraccarico, ripristinano la loro funzione 
+in modo normale, un fusibile invece richiede un intervento di sostituzione.
+Grazie alla loro inerzia termica, i termistori possono essere utilizzati per realizzare 
+delle resistenze variabili senza contatto scorrevole o di simulare relè ritardati.
+I PTC sono utilizzati come sensori nei controlli di temperatura in un campo di misura 
+molto stretto, nei circuiti di protezione contro il surriscaldamento dei dispositivi e come 
+elemento di compensazione termica  di dispositivi circuitali che presentano effetti di deriva
+
+[PAG 1996]
+XIX-124
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+termica a coefficiente di temperatura negativo.
+4.6  Resistori variabili
+Esistono anche dispositivi elettronici che modificano la loro resistenza in funzione 
+della quantità di luce, dell’entità della pressione incidente o dell’intensità del campo 
+magnetico applicato.
+4.6.1  Fotoresistenze (LDR)
+La sigla LDR, l’acronimo di Light Dependent Resistor, viene utilizzato per identifi-
+care un dispositivo che modifica il suo valore resistivo in funzione della quantità di luce 
+incidente.
+Le fotoresistenze sono costituite da materiale semiconduttore di tipo N composto, 
+quali il solfuro di cadmio CdS o il solfuro di piombo PbS oppure da materiali fotosensibili 
+quali l’ossido di zinco o di selenio. Un sottile strato sinterizzato viene depositato fra due 
+elettrodi metallici a forma di pettine in modo da ottenere la massima superficie sensibile 
+possibile.
+Quando una radiazione luminosa colpisce un materiale fotosensibile, l’energia dei 
+fotoni incidenti viene assorbita dagli elettroni degli atomi , producendo un passaggio di 
+questi a livelli di maggiore energia. Questo fenomeno genera un maggior numero di elet-
+troni liberi che si rendono disponibili per la conduzione.
+Caratteristiche elettriche
+La resistenza dell’elemento dipende dalla superficie dell’elemento fotosensibile, dalla 
+quantità di flusso L (lux) incidente sull’unità di area e da una costante adimensionale a e 
+dalla costante K (/lux) caratteristiche di ogni materiale e della tecnica costruttiva adot-
+tata (per una fotoresistenza al CdS la costate a è compresa fra 0,7 e 0,9).
+La relazione che esprime tale legame è la seguente:
+R = K   L-a
+(XIX.4.10)
+ove K è la resistenza presentata dalla fotoresistenza quando su di essa incide una quantità 
+di flusso luminoso unitaria.
+I manuali tecnici descrivono il funzionamento del fotoresistore per mezzo di alcune 
+curve caratteristiche: il diagramma illuminazione-resistenza e la caratteristica tensione 
+corrente che ha un comportamento quasi lineare. La sensibilità spettrale di una fotoresi-
+stenza viene determinata dalla composizione del materiale impiegato per costruirla. Il 
+picco di sensibilità per le fotoresistenze al solfuro di cadmio si ha intorno al rosso, mentre 
+per quelle al solfuro di piombo nel campo dell’infrarosso. 
+Le fotoresistenze sono robuste ed economiche, presentano una buona sensibilità, ma 
+manifestano una risposta lenta alle variazioni di intensità luminosa e possono operare cor-
+rettamente solo per bassi valori di temperatura. 
+La resistenza varia da oltre 1 M  (fino a 10 M) in condizioni di oscurità a poche 
+decine di ohm con un’illuminazione di 1000 lux (per esempio, luce emessa da una lam-
+pada ad incandescenza da 100 W a 30 cm). 
+Le fotoresistenze possono essere alimentate sia in corrente continua che in alternata. 
+Il principale difetto delle fotoresistenze è dato dalla loro limitatissima banda passante, 
+dovuta all’alto tempo di ricombinazione delle coppie elettrone-lacuna. Una fotoresistenza 
+che viene oscurata dopo essere stata illuminata può impiegare anche qualche secondo per 
+riassumere il valore posseduto in condizioni di oscurità. Questo comportamento viene 
+indicato dalle ditte costruttrici mediante la valutazione del tempo di recupero (recovery 
+time). Il dispositivo non è quindi adatto ad essere impiegato in tutte quelle applicazioni, 
+quali la trasmissioni dati, ove è richiesta un’elevata velocità di commutazione. 
+Le caratteristiche dinamiche della fotoresistenza utilizzata in commutazione viene
+
+[PAG 1997]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-125
+definita nella letteratura tecnica da due parametri: il tempo di salita (rise time) e il tempo 
+di discesa (fall time). Questi tempi vengono misurati valutando il comportamento della 
+variazione di corrente che scorre nel circuito di prova in risposta ad un impulso luminoso. 
+Valori tipici dei due tempi sono compresi fra i 15 ms e i 200 ms.
+Applicazioni
+Le fotoresistenze sono utilizzate per realizzare apparecchiature per il controllo della 
+fiamma nei bruciatori a gas; come elementi rivelatori di presenza negli allarmi antintru-
+sione; per la misura della temperatura a distanza; per la misura dell’intensità luminosa.
+4.6.2  Magnetoresistenze
+Le magnetoresistenze (MDR - Magnetic Dependent Resistor) sono dispositivi che 
+sfruttano l’effetto magnetoresistivo, ossia la proprietà di un materiale magnetico condut-
+tore di corrente di modificare la sua resistività in presenza di un campo magnetico esterno. 
+Questo cambiamento è provocato dalla rotazione della magnetizzazione del materiale, 
+dovuta al campo magnetico esterno, rispetto alla direzione della corrente elettrica. Per 
+esempio, nel caso del permalloy (lega contenente il 20% di ferro e il 80% di nichel) una 
+rotazione di 90° della magnetizzazione, causata da un campo magnetico applicato in dire-
+zione normale alla direzione della corrente, provoca una variazione dal 2% al 3% della 
+resistività. La struttura tipica di una magnetoresistenza consiste in uno strato semicondut-
+tore del tipo Sb/NiSb, avente lo spessore di circa 25µm. In questo caso la resistività può 
+variare tra pochi ohm e parecchi k mediante la scelta di sagome appropriate.
+ Vengono commercializzati sensori magnetici tipo 
+il KMZ10 della Philips, che sono composti di un 
+dispositivo che contiene 4 strisce di permalloy 
+disposte secondo una traiettoria tortuosa su un sub-
+strato di silicio e connesse in modo da formare i 
+rami di un ponte di Wheatstone. Il grado di sbilan-
+ciamento del ponte viene usato per valutare l’inten-
+sità del campo magnetico o, più precisamente, la 
+variazione nel campo magnetico nel piano delle 
+strisce di permalloy normale alla direzione della 
+corrente. A seconda del tipo di applicazione la 
+magnetoresistenza viene montata sia su base 
+magnetica, sia su una base di materiale isolato e 
+non magnetico, come potrebbe essere la ceramica o 
+la plastica. Nella Fig. XIX.4.13 viene illustrata la 
+variazione del valore resistivo di una magnetoresi-
+stenza in funzione dell’induzione di un campo 
+magnetico.
+I sensori di questo tipo sono utilizzati nella stru-
+mentazione di misura e nelle apparecchiature di 
+controllo per:
+–  effettuare misure di corrente senza intervenire 
+sui conduttori;
+–  rilevare spostamenti lineari ed angolari (entro 
+un’area di una decina di millimetri dal sensore);
+–  effettuare misure di velocità angolari;
+–  realizzare interruttori di prossimità;
+Fig. XIX.4.13  Diagramma tensione-campo
+magnetico della magnetoresistenza KMZ10B (Philips).
+0
+5
+10
+15
+-5
+-10
+-15
+-3
+-2
+-1
+0
+1
+2
+3
+Operating range
+Uout 
+[mV/V]
+[kA/m]
+Hy 
+Tamb 
+25 °C
+75 °C
+125 °C
+- 25 °C
+
+[PAG 1998]
+XIX-126
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+–  eseguire misure di intensità dei campi magnetici;
+–  realizzare trasduttori di pressione.
+Pressoresistori
+I pressoresistori sono dispositivi nei quali l’elemento resistivo aumenta la sua resi-
+stenza all’aumentare della pressione dell’ambiente in cui si trova.
+Aumentando la pressione le distanze interatomiche si riducono; di conseguenza 
+aumenta la frequenza delle collisioni degli elettroni liberi, e quindi anche la resistenza 
+opposta al passaggio della corrente elettrica.
+Sono utilizzati nelle apparecchiature di misura e di controllo di pressione in ambienti chiusi.
+4.6.3  Varistori
+I varistori (VDR - Voltage Dependent Resistor) sono dispositivi la cui resistenza si 
+riduce all’aumentare della tensione applicata ai suoi capi.
+Nei varistori l’elemento resistivo è formato da polveri di carburo di silicio (o polveri 
+di ossido di zinco o di titanio) mescolate con un legante ceramico. Il processo produttivo è 
+simile a quello già descritto per le resistenze ad impasto. La struttura è quindi costituita di 
+un gran numero di parti conduttrici disperse nell’isolante (granuli). La resistenza globale 
+del varistore dipende dal contributo delle varie resistenze di contatto esistenti fra granulo 
+e granulo del materiale conduttore, il quale a sua volta dipende – in modo non lineare – 
+dalla tensione applicata.
+Caratteristiche elettriche
+La caratteristica tensione-corrente dei VDR è, quindi, non lineare e segue, in prima 
+approssimazione, la seguente legge:
+I = K  U     con  >1
+(XIX.4.11)
+ove K e  sono due coefficienti che caratterizzano il varistore e che dipendono dal mate-
+riale impiegato; K è costante, dipende dalle dimensioni del dispositivo e dal processo pro-
+duttivo adottato, è espresso in A/V; il coefficiente  è un esponente non lineare.
+La caratteristica tensione - resistenza  del varistore  è data da:
+(XIX.4.12)
+La dissipazione di potenza nel varistore è data da:
+(XIX.4.13)
+Alle alte frequenze i VDR presentano un effetto capacitivo 
+significativo (qualche decimo di microfarad) tanto maggiore quanto 
+maggiore è la tensione applicata. Tale effetto è sintetizzato nel cir-
+cuito equivalente mostrato nella Fig. XIX.4.14.
+Fig. XIX.4.14  Circuito equi-
+valente di un varistore.
+I varistori sono classificati in funzione della tensione nominale di lavoro e dell’ener-
+gia dissipabile.
+Applicazioni
+Il loro campo di impiego è molto ristretto in quanto questi dispositivi non presenta 
+buone caratteristiche di affidabilità; sono essenzialmente utilizzati come elementi di pro-
+tezione contro le sovratensioni e per eliminare gli archi voltaici (per esempio, negli inter-
+ruttori  e nei contatti dei relè) in quanto possiedono tempi di intervento rapidi (dell’ordine 
+C
+R
+R
+U
+I---
+U
+K U
+
+---------------
+1
+K--- U1
+
+–
+
+=
+=
+=
+P
+U I
+
+K U
+1
++
+
+=
+=
+
+[PAG 1999]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-127
+dei ns) e possono assorbire - senza danneggiarsi - grandi quantità di energia; trovano 
+impiego nei regolatori di tensione.
+Le forme costruttive tipiche di un varistore sono quelle a tubetto e a disco.
+4.7  Condensatori
+Il condensatore è un dispositivo a due terminali, costituito da due armature metalliche 
+separate da un materiale dielettrico.
+Il dispositivo presenta quindi come sua proprietà principale quella di poter accumulare 
+sulle armature una carica elettrica quando fra di esse viene applicata una tensione. Questa 
+proprietà viene quantificata per mezzo di un parametro, detto capacità elettrica, che 
+esprime il rapporto fra la carica elettrica accumulata sulle armature e la tensione applicata:
+(XIX.4.14)
+ove: Q è la carica elettrica accumulata (Coulomb); U è la tensione applicata (Volt); C è la 
+capacità (Farad)
+Un condensatore piano (Fig. XIX.4.15) è costituito da due 
+superfici conduttive (armature) separate da un dielettrico e la 
+sua capacità dipende dalle caratteristiche geometriche delle 
+armature e dal tipo di dielettrico usato:
+(XIX.4.15)
+ove: S è la superficie della faccia di un’armatura;  è la 
+costante dielettrica del materiale isolante interposto fra le 
+armature; d è la distanza fra le armature.
+Fig. XIX.4.15  Condensatore.
+La costante dielettrica di un materiale è data da:
+  =  o   r
+(XIX.4.16)
+ove: o è la costante dielettrica relativa del  vuoto o = 8,85  10-12 F/m; r è la costante 
+dielettrica relativa del materiale.
+Un condensatore costituito da  armature con caratteristiche geometriche fisse e con un 
+dielettrico con proprietà costanti ha una capacità costante.
+La presenza del dielettrico fra le due armature non consente il passaggio della corrente 
+elettrica.
+Un condensatore si dice carico quando ha accumulato carica elettrica e scarico quando 
+ne è privo. Quando è carico, su un’armatura vi è una quantità di carica positiva e sull’altra 
+la stessa quantità di carica, ma negativa.
+Caratteristiche elettriche
+–  I principali parametri elettrici sono:
+–  capacità nominale del condensatore (Farad);
+–  tolleranza nominale di fabbricazione;
+–  tensione nominale (Volt);
+–  tensione di picco (Volt);
+–  temperatura di impiego (gradi centigradi);
+–  corrente di fuga (Ampere);
+–  resistenza di isolamento (Ohm);
+–  angolo o fattore di perdita;
+–  coefficiente di temperatura (p.p.m./°C)
+–  stabilità nel tempo del valore capacitivo. 
+C
+Q
+U---
+=
+Costante
+dielettrica
+
+Superficie
+S
+d
+Superficie
+C
+S
+d--
+
+=
+
+[PAG 2000]
+XIX-128
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+La capacità nominale del condensatore viene espresso in frazioni di Farad, tipica-
+mente in µF (micro) , nF (nano) o kpF (Kilopico), pF (pico).
+La tolleranza di fabbricazione, espressa in percentuale, è riferita al valore nominale 
+della capacità; valori tipici sono ±2,5%, ±5%, ±10%, ±20%. Per impieghi speciali ven-
+gono fabbricati condensatori aventi tolleranze ridotte fino a valori dello ±0,1%,
+La tensione nominale di lavoro in corrente continua (Ul c.c.) è il valore di tensione che 
+si può applicare al condensatore con continuità senza alterarlo dal punto di vista fisico-
+chimico e senza perforare il dielettrico; dipende dalla rigidità dielettrica del materiale 
+interposto fra le armature.
+Il valore della tensione di lavoro dei condensatori segue una scala normalizzata, 
+espressa in Volt, in corrente continua:
+4; 5; 6,3; 10; 16; 25; 35; 40; 50; 63; 100; 125; 160; 200; 250; 350; 400; 630.
+Vengono definite in modo analogo anche una tensione nominale di lavoro in corrente 
+alternata (Ul a.c.) e  una tensione di prova (Up c.c.).
+La resistenza di isolamento tiene conto delle perdite nel dielettrico in continua. È un 
+indice della qualità del condensatore: quanto più è elevata migliore è la qualità del con-
+densatore; è espressa in M.
+La temperatura di lavoro e il coefficiente di temperatura del condensatore sono para-
+metri molto importanti per valutare il comportamento del condensatore al variare della 
+temperatura.
+Il coefficiente di temperatura, espresso come valore percentuale o in p.p.m./°C (parti per 
+milione al grado centigrado), consente di stabilire l’entità della deviazione dal valore nomi-
+nale del condensatore al variare della temperatura, può essere positivo (P) o negativo (N). 
+La variazione della capacità C con la temperatura è calcolata con la seguente formula:
+C  =   10-6  C
+(XIX.4.17)
+ove: è un coefficiente che varia fra 0 e 750; C è la capacità espressa in pF.
+Viene indicato mediante sigle normalizzate stampigliate sul contenitore; per esempio: 
+P100 = + 100  10-6  [pF/°C] 100 =  0,01   [%/°C]
+indica una variazione di capacità pari ad un aumento dello 0,01%  per ogni aumento di 1 
+°C di temperatura;
+N750 =  750  10-6  [pF/°C]  100 =  0,075  %/°C]
+indica una variazione di capacità pari ad una diminuzione dello 0,075%  per ogni aumento 
+di 1 °C di temperatura;
+PN0 indica che non vi è nessuna variazione di capacità con la temperatura.
+I condensatori con coefficiente di temperatura NP0 vengono utilizzati nei circuiti in 
+cui è richiesto un’assoluta invarianza del valore capacitivo con la temperatura (per esem-
+pio, negli oscillatori ad alta frequenza).
+I condensatori sono in genere costruiti per operare nel campo di temperature compreso 
+fra i 20 °C e i +75 °C.
+La relazione capacità/temperatura è di tipo non lineare, per cui, per valutare le conse-
+guenze di una variazione di temperatura sulla capacità, occorre analizzare una curva 
+caratteristica reperibile sui fogli tecnici del componente.
+Il condensatore reale rispetto alla capacità ideale è sede di perdite, per cui la relazione 
+tensione-corrente non è perfettamente in quadratura (sfasamento 90°). 
+Il modello presentato nella Fig. XIX.4.16 evidenzia la resistenza serie e l’induttanza 
+dei reofori posti in serie alla capacità del condensatore e un resistenza posta in parallelo
+
+[PAG 2001]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-129
+fra le armature.
+L’induttanza parassita limita supe-
+riormente la frequenza di impiego 
+dell’induttore, che alle alte frequenze si 
+comporta come un circuito risonante e per 
+frequenze superiori a quelle di risonanza 
+manifesta un comportamento induttivo.
+Alle normali frequenze di lavoro 
+l’induttanza può essere trascurata. 
+Le perdite resistive, R dovuta ai reo-
+fori  e R dovuta alla conduttività non 
+nulla del dielettrico, sono sostituite nel 
+circuito equivalente serie o parallelo da 
+una sola resistenza Rs o Rp.
+L’angolo  di Fig. XIX.4.16 viene 
+detto angolo di perdita, mentre la tg è 
+definita fattore di perdita. Il condensatore 
+approssimerà tanto meglio la capacità 
+quanto più piccolo sarà il suo angolo di 
+perdita (Rp >> Xc per il circuito parallelo 
+oppure Rs << Xc). Il fattore di perdita 
+misurato a 1 kHz vale – nei condensatori 
+non elettrolitici – 0,01 ÷ 0,001, per cui in 
+genere il fattore e l’angolo di perdita 
+coincidono (tg = ). Alcuni manuali tec-
+nici definiscono in alternativa ai 2 para-
+metri descritti il coefficiente di merito o 
+di bontà Q del condensatore che è dato 
+dal reciproco del fattore di merito (varia 
+quindi da 100 a 1.000).
+Fig. XIX.4.16  Angolo di perdita di un condensatore.
+Il fattore di perdita varia al variare della temperatura con l’andamento non lineare 
+mostrato nella Fig. XIX.4.17. Ciascuno dei 3 parametri consente attraverso un valore nume-
+rico adimensionale, di classificare con quale approssimazione un dato condensatore reale 
+approssima quello ideale.
+Fig. XIX.4.17  Andamento del fattore di perdita.
+Il comportamento in frequenza del condensatore viene descritto mediante una curva 
+che mostra l’andamento dell’impedenza del condensatore al variare della frequenza (Fig. 
+Circuito
+R
+L
+C
+R
+I
+IC
+IR
+U
+U
+UR
+UC
+
+RS
+C
+equivalente
+parallelo
+Circuito
+equivalente
+serie
+Fattore di perdita
+tgXC
+Rp
+
+1
+CRp
+tg
+RS
+XC
+CRS
+Q
+Coefficente di merito
+1
+tg
+Condensatore reale
+-40
+-20
+0
+20
+40
+60
+80
+0,01
+0,1
+1
+10
+Tangente dell’angolo di perdita
+Temperatura [°C]
+tg 
+
+[PAG 2002]
+XIX-130
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX.4.18). 
+Fig. XIX.4.18  Andamento dell’impedenza del condensatore in funzione della frequenza.
+Fig. XIX.4.19  Campo di frequenza utile per i principali tipi di condensatori.
+La Fig. XIX.4.19 visualizza i campi di frequenza nei quali i vari tipi di condensatori 
+operano correttamente.
+Simbolo grafico
+La forma del simbolo deriva dal metodo costruttivo fondamentale, cioè mostra le due 
+armature come due superfici piane affacciate. 
+63 V
+10 F
+16 V
+33 F
+10 V
+100 F
+35 V
+470 F
+101
+102
+103
+104
+105
+106
+107
+0,01
+0,1
+ 1
+10 
+100
+Frequenza [Hz]
+Impedenza []
+Ceramici (alte perdite)
+Ceramici (basse perdite), vetro, mica
+Carta
+Elettrolitici all’alluminio
+Elettrolitici al tantalio
+Pellicola sintetica
+0
+101
+102
+103
+104
+105
+106
+107
+108
+109
+1010 f [Hz]
+
+[PAG 2003]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-131
+Se il condensatore si è polarizzato specifica l’armatura positiva 
+aggiungendo il segno “+” e caratterizzandolo con una forma o 
+un tratto differente (Fig. XIX.4.20). La forma e le dimensioni 
+dei condensatori dipendono dai materiali utilizzati per la realiz-
+zazione del componente. Il montaggio può essere assiale o ver-
+ticale. Nella realizzazione verticale esistono valori standard di 
+interasse fra i terminali (2,54 mm, 5 mm, 10 mm). Questi dispo-
+sitivi sono particolarmente adatti per tecniche di montaggio 
+automatizzato.
+Le custodie possono essere di tipo metallico, ceramico, pla-
+stico.
+Fig. XIX.4.20  Simbolo grafico di un condensatore: 
+a) non polarizzato; b) polarizzato.
+Applicazioni
+I condensatori sono in grado di accumulare energia elettrostatica, di presentare 
+un’impedenza infinita in c.c. (per cui bloccano il flusso di corrente continua), di avere un 
+valore di reattanza che varia in funzione della frequenza (per cui consentono il passaggio 
+della corrente alternata).
+Le principali applicazioni dei condensatori sono:
+–  condensatori di filtro: sono utilizzati negli alimentatori per filtrare la tensione; il 
+valore della capacità è elevato (da 1 a 10.000 F) e il tipo è quello elettrolitico;
+–  condensatori di by-pass: cortocircuitano i segnali di disturbo e i segnali in alta fre-
+quenza dovuti alle commutazione dei circuiti verso massa; il valore della capacità è di 
+solito medio (1 nF a 1.000 nF) e sono del tipo ceramico o plastico;
+–  condensatori di accoppiamento: uniscono o trasferiscono segnali a.c. da un circuito ad 
+un altro;
+–  condensatori di disaccoppiamento: eliminano l’interazione in c.c. fra due circuiti.
+4.7.1  Tecnologie costruttive
+I condensatori possono essere fissi o variabili, polarizzati o non polarizzati.
+I condensatori fissi hanno il valore nominale di 
+capacità assegnatogli durante la costruzione. Quelli 
+variabili, invece, hanno la possibilità di modificare 
+l’area delle superfici delle armature, e quindi di variare 
+la capacità fra un valore minimo e uno massimo.
+I condensatori, in genere, possono accumulare sia 
+cariche positive che negative, indifferentemente su cia-
+scuna armatura.
+I condensatori elettrolitici debbono invece accumu-
+lare le cariche positive e negative su armature predeter-
+minate. L’armatura che deve essere collegata con il 
+potenziale più elevato viene indicata con il segno “+”, 
+l’altra con il segno “”.
+Anche i condensatori polarizzati possono essere sot-
+toposti ad una tensione alternata utilizzando delle ver-
+sioni non polarizzate che però sono di difficile 
+reperibilità, oppure – in alternativa – realizzando uno 
+dei collegamenti proposti nella Fig. XIX.4.21.
+Fig. XIX.4.21  Collegamento dei condensatori  polariz-
+zati per realizzare un condensatore non polarizzato.
+a)
+b)
++
++
++
++
+C
+C
+C
+C
+D2
+D1
+C2
+C1
+Ctot = C1 = C2
+Ctot = C
+2
++
++
++
++
++
++
+
+[PAG 2004]
+XIX-132
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Per separare le superfici conduttrici si impiegano vari materiali e differenti tecnologie 
+di fabbricazione, per cui  i condensatori di  eguale capacità ma costruiti con materiali aventi 
+proprietà elettriche diverse presentano delle caratteristiche elettriche molto differenti.
+Le caratteristiche elettriche dei condensatori sono quindi molto varie, in quanto 
+migliorando un parametro talvolta se ne peggiorano altri.
+I condensatori sono classificati in base al tipo di dielettrico che ne condiziona le 
+dimensioni, il valore della capacità, le tensioni e le temperature di lavoro e tutti gli altri 
+parametri che stabiliscono il suo campo di impiego.
+I materiali più utilizzati come dielettrici sono: il film plastico metallizzato (poliestere, 
+polistirolo ecc.), la carta, la carta e olio, la ceramica, il vetro, la mica e depositati  elettro-
+litici di varia natura.
+I condensatori a film plastico sono costituiti da un nastro di materiale plastico (polie-
+stere, policarbonato, tereftalato di polietilene, teflon, polistirolo) metallizzato e avvolto a 
+cartuccia.
+Presentano una buona risposta in frequenza, basse perdite, una buona stabilità nel 
+tempo e in temperatura e, infine, un elevato valore di capacità per unità di volume; sono 
+utilizzati per applicazioni a bassa frequenza. 
+I condensatori ceramici e in mica possiedono buone caratteristiche elettriche, sono 
+caratterizzati da un basso angolo di perdita e, grazie all’elevato valore della costante die-
+lettrica del materiale utilizzato, possono essere realizzati di piccole dimensioni; presen-
+tano, inoltre, un basso valore dell’impedenza parassita, per cui si rivelano particolarmente 
+adatti per tutti i circuiti elettronici che operano in radiofrequenza.
+I condensatori ceramici non presentano notevoli caratteristiche di stabilità, per cui si 
+utilizzano solo nelle applicazioni che prevedono campi di variazione di temperatura e di 
+frequenza limitate.
+I condensatori a mica argentata (silver mica condensers) sono molto stabili nei con-
+fronti delle basse temperature per cui sono particolarmente adatti ad essere utilizzati nei 
+circuiti oscillatori.
+La caratteristica principale dei condensatori elettrolitici è l’elevata capacità per unità 
+di volume, mentre tutte le altre caratteristiche elettriche sono modeste. I valori di capacità 
+sono compresi fra 0,25 µF e 10.000 µF, con tensioni di lavoro comprese fra  2,5 V e 600 V 
+unidirezionali.
+Il fattore di perdita, misurato a 100 Hz, è molto elevato (10-1) rispetto a quello dei 
+condensatori realizzati con le altre tecnologie. Talvolta i fogli tecnici, invece di definire il 
+fattore di perdita, definiscono la resistenza equivalente serie (ESR = tg /wC).
+La tensione di lavoro, sempre rispetto a quella degli altri tipi di condensatori è relati-
+vamente bassa (400 V per quelli in alluminio e 100 V per quelli al tantalio). La tolleranza 
+di fabbricazione rispetto al valore nominale non è simmetrica come accade per le resi-
+stenze (per esempio ± 5%) ma può raggiungere valori compresi fra 10% e + 50% (in 
+alcuni casi anche il + 100%).
+La corrente di perdita nel dielettrico è significativa (dell’ordine di qualche microam-
+pere).
+Le armature sono realizzate in alluminio o in tantalio. I condensatori elettrolitici con 
+armature al tantalio possiedono rispetto a quelli con armature in alluminio, migliori carat-
+teristiche elettriche e – a parità di valore capacitivo – utilizzano un contenitore molto più 
+piccolo.
+Condensatori elettrolitici in alluminio
+Due fogli di alluminio, dello spessore di pochi centesimi di millimetro, perfettamente 
+puliti, separati fra loro da un materiale imbevuto di soluzione elettrolitica sotto forma di
+
+[PAG 2005]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-133
+pasta, vengono arrotolati in modo da costituire un cilindro. Questi due fogli sono però leg-
+germente spostati uno rispetto l’altro, e ciascuno di essi è munito di linguette (applicate 
+mediante un sistema di saldatura a punti) che costituiscono i terminali di collegamento.
+Il rotolo così costituito viene sigillato in un involucro di alluminio, dopo che le lin-
+guette sono state saldate ai rispettivi terminali.
+In tali condizioni l’oggetto realizzato presenta un certo valore capacitivo, ma molto 
+esiguo ed abbinato ad un’elevata corrente di dispersione.
+Per trasformare questo rotolo in un condensatore elettrolitico è necessario applicare 
+tra le sue armature una tensione continua. Il valore di questa tensione, detta di formatura, 
+determina poi quello della tensione di lavoro del condensatore finito. 
+Il potenziale positivo viene collegato al terminale isolato, che costituirà in seguito il 
+polo positivo (+) del condensatore.
+La tensione applicata fa sì che attorno all’armatura positiva del condensatore si formi 
+uno strato d’ossido, il cui spessore determina la capacità del condensatore e anche la sua 
+tensione di lavoro di sicurezza.
+I condensatori predisposti a lavorare in bassa tensione hanno uno strato d’ossido sot-
+tile, per cui la capacità può essere maggiore, in quanto gli elettrodi risultano meno distan-
+ziati fra loro.
+Questi condensatori presentano quindi una polarità ben definita. Il terminale positivo 
+deve essere collegato con una tensione di polarità positiva. Se tale polarità viene invertita, 
+il passaggio di corrente che si manifesta attraverso il condensatore distrugge lo strato 
+d’ossido che si dissolve nella soluzione elettrolitica; è quindi indispensabile non applicare 
+mai ad un condensatore elettrolitico una tensione inversa.
+La superficie utile degli elettrodi determina il valore della capacità; un modo per 
+aumentarla senza aumentare il volume del componente consiste nel rendere la superficie 
+degli elettrodi rugosa, in modo tale da aumentare la superficie effettiva dell’armatura e 
+quindi la capacità del condensatore.
+Nei condensatori elettrolitici, a meno che non si tratti di realizzazioni particolari, il 
+terminale isolato corrisponde sempre al polo positivo e l’involucro al polo negativo. 
+I condensatori elettrolitici non polarizzati, consistenti in due capacità elettrolitiche di 
+valore doppio rispetto a quello nominale, co
