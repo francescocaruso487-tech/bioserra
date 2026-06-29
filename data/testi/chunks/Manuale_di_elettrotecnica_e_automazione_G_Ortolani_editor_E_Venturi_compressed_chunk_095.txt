@@ -1,0 +1,835 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 95/116 ===
+Chars: 43,507 | Offset: 4,153,487
+
+tà diamagnetiche.
+Una sostanza quando viene posta in un campo magnetico, può essere più o meno per-
+meabile alle linee di flusso rispetto al vuoto; all’interno della sostanza le linee di flusso si 
+distribuiscono in modo differente rispetto a quelle che si trovano all’esterno.
+
+[PAG 1889]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-17
+Il campo magnetico interno B è legato al 
+campo magnetico nel vuoto Ho, dalla relazione: 
+(XIX.1.8)
+ L’intensità di magnetizzazione I è, a sua 
+volta proporzionale all’intensità del campo 
+magnetico H° :
+(XIX.1.9)
+La costante di proporzionalità K è detta 
+suscettibilità magnetica per unità di volume ed è 
+una proprietà caratteristica di ogni sostanza.
+Il rapporto B/H° è detto permeabilità magne-
+tica della sostanza: 
+Fig. XIX.1.8  Curva di prima 
+magnetizzazione e ciclo di isteresi.
+(XIX.1.10)
+è misurata in Henry al metro (H/m).
+Il comportamento di una sostanza magnetica sottoposta all’azione di un campo 
+magnetico viene descritta tramite una curva detta di magnetizzazione (Fig. XIX.1.8).
+Il tratto OA della curva, detto di prima magnetizzazione, mostra l’andamento della 
+magnetizzazione nel caso che il materiale non sia inizialmente magnetizzato. Al di sopra 
+di un certo valore di magnetizzazione H1 il valore della magnetizzazione varia di pochis-
+simo anche in presenza di forti variazioni del campo magnetico: si è cioè raggiunta la con-
+dizione di saturazione. Diminuendo l’intensità del campo magnetico applicato la curva di 
+magnetizzazione presenta un fenomeno di isteresi e per valori di campo nullo l’induzione 
+magnetica non è nulla (magnetismo residuo). Per poter annullare l’induzione è necessario 
+applicare un campo nella direzione opposta (campo coercitivo). Aumentando ulterior-
+mente il campo inverso si raggiunge la stessa condizione di saturazione già descritta. 
+Diminuendo il campo inverso fino ad annullarlo si manifesta ancora il fenomeno del 
+magnetismo residuo e aumentando il campo ci si riporta alla condizione di annullamento 
+dell’induzione quando il campo è pari al valore del campo coercitivo;  ulteriori aumenti 
+del campo ricreano la condizione di saturazione. La curva ottenuta è detta curva di 
+magnetizzazione ed evidenzia un ciclo di isteresi. La forma del ciclo caratterizza le pro-
+prietà ferromagnetiche del materiale se l’area del ciclo è grande il materiale è un materiale 
+duro caratterizzato da un elevato campo coercitivo e da una magnetizzazione residua suf-
+ficientemente elevata; mentre invece se l’area del ciclo è stretta il materiale è ferromagne-
+tico dolce ed è caratterizzato da un campo coercitivo è basso.
+In una sostanza paramagnetica il magnetismo indotto da un campo magnetico esterno 
+ha la stessa direzione di quello del campo per cui nella sostanza e nelle sue vicinanze 
+aumenta il campo magnetico B così come la permeabilità della sostanza, mentre la suscet-
+tibilità magnetica di quest’ultima è positiva. In una sostanza diamagnetica accade 
+l’inverso: la direzione del campo magnetico indotto è opposta rispetto a quella del campo 
+magnetico esterno, per cui il campo magnetico nella sostanza e nelle sue vicinanze dimi-
+nuisce, la permeabilità magnetica diminuisce e la suscettibilità è negativa.
+Oltre alla permeabilità definita in precedenza viene definita anche la permeabilità 
+relativa µr che esprime il valore della permeabilità del materiale µ rapportata a quella del 
+vuoto che vale e che praticamente coincide con quella dell’aria:
+H
+H1
+-H1
+O
+A1
+A3
+A4
+A2
+Br
+B
+B
+H
+4I
++
+=
+I
+K H
+
+=
+B
+H
+------
+1
+4 K
+
+
++
+
+=
+=
+
+[PAG 1890]
+XIX-18
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+(XIX.1.11)
+ove la permeabilità magnetica del vuoto vale µo = 1,256 · 10-6 H/m.
+In alcune applicazioni è importante conoscere anche altri due parametri la permeabi-
+lità differenziale µd e la permeabilità incrementale µi. La permeabilità differenziale viene 
+valutata utilizzando il tratto di prima magnetizzazione o di magnetizzazione iniziale della 
+curva; la permeabilità incrementale viene presa in esame quando ad un campo magnetico 
+continuo si sovrappone un campo magnetico alternato di ampiezza molto minore.
+L’area del ciclo di isteresi rappresenta l’energia dissipata dal materiale per compiere il 
+ciclo; per cui più è stretto minori sono le perdite per isteresi.
+Un materiale magnetico quando viene attraversato da un campo magnetico variabile è 
+sede di correnti parassite (dette di Foucault). Tali correnti dipendono direttamente dal 
+flusso di induzione magnetica, dalle dimensioni del materiale, dalla frequenza della pulsa-
+zione del campo magnetico e inversamente dalla resistività del materiale. Le perdite nel 
+materiale magnetico possono, quindi, essere ridotte agendo sulla resistività e sulle dimen-
+sioni geometriche del materiale.
+1.3  Materiali per le tecnologie elettriche e elettroniche
+In base alle caratteristiche descritte in precedenza i materiali possono essere suddivisi 
+in alcune grandi categorie: materiali conduttori, materiali isolanti, materiali semicondut-
+tori, materiali magnetici e materiali piezoelettrici.
+1.3.1  Materiali conduttori
+I materiali conduttori utilizzati in applicazioni elettroniche sono i metalli e le loro 
+leghe, le soluzioni elettrolitiche e le plastiche conduttive.
+I materiali metallici, puri o leghe, vengono utilizzati per trasportare la corrente elet-
+trica nei circuiti (cavi, fili elettrici, contatti dei commutatori ecc.), per costruire i vari par-
+ticolari che formano i dispositivi elettronici ed elettromeccanici (involucri, leve ecc.).
+I metalli più utilizzati sono: il rame, l’argento, l’oro, l’alluminio. 
+Il rame è un metallo duttile, tenero, malleabile, ottimo conduttore elettrico e termico. 
+Si ossida difficilmente in aria secca. Viene utilizzato nell’industria elettrica per la realiz-
+zazione di conduttori elettrici.
+L’argento e l’oro sono duttili e malleabili, ma sono estremamente costosi. L’oro, in 
+particolare, è un materiale notevolmente stabile dal punto di vista delle proprietà fisiche e 
+non si ossida; viene perciò utilizzato per rivestire i contatti mobili dei commutatori elet-
+tromeccanici o i terminali dei connettori. Anche l’industria microelettronica impiega l’oro 
+per effettuare le connessioni fra il circuito integrato realizzato sul semiconduttore e i ter-
+minali del contenitore.
+L’alluminio è un metallo molto leggero che esposto all’aria si copre di una patina di 
+ossido che lo protegge da ulteriori attacchi degli agenti atmosferici. È largamente usato 
+nelle costruzioni elettroniche per realizzare la maggior parte degli accessori: contenitori 
+per apparecchiature elettroniche, schermi elettrostatici, manopole, contenitori per compo-
+nenti elettronici (armature dei condensatori, diodi, transistor) ecc.
+Lo stagno è molto utilizzato per formare leghe metalliche, per ricoprire metalli (ferro 
+stagnato o latta), per le leghe dei fili di saldatura.
+1.3.2  Materiali isolanti
+L’isolamento elettrico viene ottenuto quando un materiale impedisce lo scambio di 
+energia fra conduttori.
+L’attitudine di un materiale a svolgere tale funzione viene valutata attraverso i seguenti 
+parametri: la resistività elettrica di massa, di volume e di superficie, la rigidità dielettrica, 
+r
+
+o
+-----
+=
+
+[PAG 1891]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-19
+il fattore di perdita, i coefficienti che descrivono le variazioni con la temperatura dei suoi 
+principali parametri caratteristici, la resistenza agli agenti chimici, l’igroscopicità, la resi-
+stenza meccanica e la lavorabilità meccanica.
+La rigidità dielettrica è il valore massimo del campo elettrico applicabile ad un materiale 
+senza che si verifichi una scarica elettrica che lo danneggi. Equivale al rapporto fra la ten-
+sione del campo elettrico limite e lo spessore del materiale isolante. Si misura in kV/mm.
+La rigidità dielettrica dipende dalla natura del materiale; aumenta all’aumentare della 
+temperatura; varia con l’umidità, e dipende dalla durata di applicazione del campo elet-
+trico e dal tipo di tensione (continua o alternata).
+La capacità del materiale di assorbire particelle d’acqua è espressa dall’igroscopicità; 
+quanto più essa è elevata minore è la qualità isolante del materiale.
+In base al loro stato fisico alla temperatura ambiente i materiali isolanti possono essere 
+classificati in gassosi, liquidi e solidi.
+Negli isolanti gassosi, a pressione superiore a quella atmosferica, difficilmente si 
+genera il fenomeno della scarica in quanto presentano un’elevata rigidità dielettrica, supe-
+riore a quella degli isolanti liquidi e solidi.
+Qualora si verifichi una scarica i gas presentano l’importante caratteristica di ripristi-
+nare rapidamente le condizioni precedenti. Ciò avviene in quanto i gas – al contrario di 
+quanto avviene per molti dielettrici solidi o liquidi – non vengono modificati permanente-
+mente da un’eventuale scarica che vi si produce. Cessata l’azione elettrica, causa del 
+fenomeno, i gas riprendono le loro precedenti proprietà isolanti. 
+L’isolante gassoso più comune è l’aria che ci circonda e la sua più tipica applicazione 
+sono gli interruttori in aria utilizzati in qualsiasi impianto civile per comandare elettrodo-
+mestici o impianti di illuminazione.
+Altri isolanti gassosi utilizzati in applicazioni particolari sono l’azoto, l’idrogeno, 
+l’anidride carbonica, il tetraclorometano.
+Nella Tab. XIX.1.4 sono riportate le principali caratteristiche di alcuni gas.
+Tab. XIX.1.4   Caratteristiche elettriche di alcuni materiali isolanti gassosi
+Gli isolanti liquidi più utilizzati sono vernici, oli minerali e ai siliconi, apiroli.
+Gli oli manifestano un’elevata conducibilità termica e un’elevata rigidità dielettrica 
+(< 150 kV/cm), non sono corrosivi e possono operare a temperature elevate (circa 200 °C) 
+in quanto manifestano proprietà refrigeranti grazie ai moti molecolari e convettivi. Questo 
+tipo di materiale viene impiegato nei sezionatori delle linee in alta tensione.
+Le proprietà che caratterizzano gli oli sono il peso specifico, la viscosità, la tempera-
+tura di infiammabilità e la rigidità dielettrica.
+La viscosità misura, in senso assoluto, la resistenza allo scorrimento di un fluido, è 
+funzione decrescente della temperatura. Gli oli isolanti devono essere sufficientemente 
+fluidi alle diverse temperature di esercizio per poter smaltire il calore ceduto dagli ele-
+Tipo di gas
+Densità
+a 0 °C e 1 atm
+[kg/m]
+Densità relativa
+Rigidità dielettrica
+a 0 °C e 1 atm
+[kV/cm]
+Anidride carbonica
+1,91
+1,530
+29
+Aria
+1,25
+1,000
+32
+Azoto
+1,38
+1,100
+29
+Idrogeno
+0,08
+0,069
+19
+Teraclorometano
+6,25
+5,310
+180
+
+[PAG 1892]
+XIX-20
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+menti dell’apparecchiatura elettrica (per esempio: dagli avvolgimenti dei trasformatori, 
+dall’arco elettrico prodotto degli interruttori) in un tempo molto breve in modo tale che la 
+temperatura non superi i valori limite imposti dalle caratteristiche dell’apparecchiatura.
+La temperatura di infiammabilità (e punto di infiammabilità) è la temperatura alla 
+quale un olio emette una quantità di vapori tale che, a contatto di una fiamma, si accen-
+dono rapidamente, per poi spegnersi. Per evitare che il problema si presenti è necessario 
+che l’olio utilizzato come elemento isolante venga fatto operare ad una temperatura molto 
+inferiore alla temperatura di infiammabilità. Le norme CEI prescrivono che il punto di 
+infiammabilità di un olio isolante non deve essere inferiore a 140 °C.
+ Le vernici sono soluzioni di resine naturali o sintetiche mescolate con opportuni sol-
+venti e con l’eventuale aggiunta di oli essiccanti, che conferiscono la caratteristica elasti-
+cità alle pellicole di vernice essiccata.
+Oltre alle proprietà relative alla funzione di isolamento devono possedere anche altre 
+proprietà, quali:
+–  una buona conducibilità termica e sufficiente resistenza al calore;
+–  la protezione della parte rivestita dai fenomeni di corrosione degli agenti atmosferici e 
+chimici in generale;
+–  un potere di penetrazione tale da riempire i pori e gli interstizi dei materiali ricoperti o 
+impregnati: in questo modo si riesce ad eliminare l’umidità e l’aria inclusa e quindi a 
+migliorare le proprietà dielettriche e meccaniche del complesso;
+–  l’inerzia chimica verso il rame; 
+–  l’assenza di azioni tossiche.
+Di solito una vernice isolante non possiede tutti i requisiti richiesti, ma poiché a 
+seconda del tipo di applicazione alcuni requisiti sono di primaria importanza e altri secon-
+dari è possibile reperire in commercio vernici adatte alla generalità delle esigenze di isola-
+mento e di protezione.
+Le vernici sono utilizzate per rivestire i cavi utilizzati per realizzare bobine per relè, 
+avvolgimenti per induttori o avvolgimenti statorici o rotorici delle macchine elettriche. 
+Gli isolanti solidi sono di due tipi: inorganici o organici e vengono classificati in base 
+alla loro attitudine ad operare ad un certo valore di temperatura. La classificazione è stata 
+curata dall’ente di normazione CEI attraverso la pubblicazione di norme che hanno rag-
+gruppato i materiali isolanti in 7 classi di isolamento (Tab. XIX.1.5).
+Le resine sono costituite da miscele solide o semisolide, amorfe, composte da sostanze 
+organiche aventi punto di fusione non ben definito e che non tendono a cristallizzare.
+Le plastiche sono materiali che diventano pastosi col calore e possono essere model-
+lati per formare oggetti; col raffreddamento induriscono e mantengono la forma ricevuta.
+I materiali plastici sono costituiti da leganti, riempitivi, plastificanti, acceleranti o 
+ritardanti, coloranti.
+I leganti sono resine naturali o artificiali, che caratterizzano la materia plastica e in 
+genere danno il nome commerciale al prodotto.
+I riempitivi (polvere di mica, fibre di amianto, farina di legno) riducono la fragilità 
+propria del materiale, conferiscono le proprietà meccaniche desiderate e talvolta sostitui-
+scono in parte – per realizzare economie – il legante.
+I plastificanti (sostanze oleose più o meno dense) conferiscono alla massa maggiore 
+fluidità; sono utili quando l’oggetto da costruire viene formato per stampaggio e deve pre-
+sentare, un volta formato, una certa flessibilità.
+Gli acceleranti o ritardanti svolgono essenzialmente un’attività chimica agendo sui 
+processi di polimerizzazione accelerando o ritardando i processi di indurimento dei pezzi 
+sottoposti a pressioni e temperature stabilite.
+
+[PAG 1893]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-21
+Tab. XIX.1.5  Classi di isolamento
+I coloranti, nella composizione di un materiale plastico, hanno una funzione evidente: 
+conferiscono al materiale plastico la colorazione desiderata.
+Un oggetto in materiale plastico viene ottenuto per stampaggio a caldo partendo da 
+polveri da stampaggio. Queste si ottengono macinando e mescolando i componenti in dosi 
+opportune con calandre mantenute ad un’adatta temperatura. La pasta così ottenuta viene 
+fatta essiccare e poi macinata al fine di ottenere la polvere da stampaggio.
+I materiali plastici sono classificati in elastomeri, termoplastici e termoindurenti.
+Gli elastomeri presentano caratteristiche elastiche e sono utilizzati in quelle parti 
+soprattutto meccaniche che richiedono questa proprietà.
+Le materie plastiche termoplastiche (nylon, policarbonato, polietilene, bakelite, ecc.) 
+presentano il normale comportamento delle sostanze solide fusibili: assumono cioè lo 
+stato liquido quando vengono riscaldate ad opportuna temperatura e ritornano rigide col 
+raffreddamento, conservando la proprietà di ritornare plastiche per azione del calore qua-
+lora siano nuovamente riscaldate. Sono inoltre solubili e poco rigide. 
+Le materie plastiche termoindurenti (fenoplasti, siliconi, poliestere, poliuretani, epos-
+sidiche) presentano un comportamento al calore del tutto particolare: esse dapprima fon-
+dono ma poi, col prolungarsi del riscaldamento, riassumono lo stato solido e divengono 
+infusibili. Le tecniche di stampaggio sfruttano questa proprietà; le resine termoplastiche 
+assumono la forma degli stampi in cui vengono introdotte, mentre a lavorazione ultimata, 
+forniscono oggetti indeformabili al riscaldamento. Sono inoltre insolubili e molto rigide. 
+Classe
+Materiale isolante
+Impregnazione del  
+conduttore ricoperto di  
+materiale isolante
+Trattamento  
+dell’avvolgimento
+Temperatura 
+massima
+[°C]
+Y
+Cotone
+Carta
+Seta
+90
+A
+Cotone
+Carta
+Seta
+Vernici a base di resine 
+naturali di olio
+105
+E
+Smalti e resine 
+formal-polivinile
+Vernici a base di asfalto o 
+di resine sintetiche
+120
+B
+Fibra di vetro
+Fibra di amianto
+Mica
+Vernici a base di resine
+Asfalti
+Poliesteri
+Vernici a base di asfalto o 
+di resine sintetiche classi 
+F e H
+130
+F
+Fibra di vetro
+Fibra di amianto
+Mica
+Resine alchidiche
+Poliesteri
+Resine alchidiche-polies-
+teri
+Vernici classe H
+155
+H
+Fibra di vetro
+Fibra di amianto
+Mica
+Resine ai siliconi
+Elastomeri di silicone
+180
+C
+Porcellana
+Vetro
+Mica
+Quarzo
+con o senza leganti 
+inorganici
+>180
+
+[PAG 1894]
+XIX-22
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Se vengono riscaldate non rammolliscono, ma anzi diventano più dure a causa delle ulte-
+riori condensazioni che, per azione del calore, avvengono fra le molecole più semplici.
+La grande diffusione delle materie plastiche è dovuta alle seguenti proprietà: facilità 
+di lavorazione (gli oggetti vengono ottenuti con una sola operazione di stampaggio che 
+dura pochi secondi); resistenza alla corrosione; isolamento elettrico e termico; chimica-
+mente inerte; discrete proprietà meccaniche; leggerezza.
+Le plastiche presentano di contro anche svantaggi: sono fragili alle basse temperature, 
+possono essere attaccate da prodotti chimici di uso comune (alcool), si degradano quando 
+sono soggette a fonti di calore.
+Altri materiali utilizzati nelle applicazioni elettroniche sono la carta e i suoi derivati, le 
+fibre tessili, il legno, il vetro, le fibre di vetro, la mica e i suoi derivati, i prodotti ceramici.
+La carta è costituita da fibre di cellulosa, più o meno lunghe. Per poter essere utiliz-
+zata come isolante nelle applicazioni elettriche, la carta deve possedere buone proprietà 
+igroscopiche e non deve essere utilizzata se si opera a temperature superiori agli 80 °C per 
+quelle a secco e i 100 °C per quelle impregnate in olio.
+I materiali ceramici presentano le seguenti caratteristiche: buona conducibilità ter-
+mica, un elevato punto di fusione, una costante dielettrica medio alta, sagomabilità in 
+varie forme. I materiali ceramici più utilizzati sono la porcellana, la steatite, le allumine, i 
+composti di titanio e berillio; sono utilizzati nella costruzione degli isolatori delle linee 
+elettriche aeree, dei condensatori e dei contenitori per le applicazioni ad alta temperatura 
+dei circuiti integrati.
+Durata degli isolanti
+Molti fattori contribuiscono a degradare le caratteristiche elettriche e meccaniche di 
+un materiale isolante, ma è soprattutto la permanenza di temperature elevate che provoca 
+un rapido peggioramento. Anche operando alla normale temperatura di esercizio, i mate-
+riali isolanti subiscono comunque un degrado delle loro caratteristiche meccaniche e die-
+lettriche a causa di un processo di naturale invecchiamento.
+Nel valutare le caratteristiche di un materiale isolante si deve tener conto oltre della capa-
+cità del materiale di sopportare shock elettrici (sovracorrenti ecc.) o meccanici (vibrazioni, 
+urti ecc.) anche della durata dell’isolante compatibilmente con la durata della macchina, in 
+modo tale da dover richiedere il minor numero possibile di sostituzioni o riparazioni.
+1.3.3  Materiali semiconduttori
+Esistono molte sostanze che manifestano proprietà semiconduttrici e - in base alla loro 
+struttura interatomica - possono essere classificate in sostanze: cristalline (germanio Ge, 
+silicio Si, selenio Se, boro B, stagno Sn), intermetalliche binarie (composte da elementi 
+appartenenti a gruppi differenti quali: arseniuro di gallio GaAs, arseniuro di indio AsIn, anti-
+moniuro di gallio GaSb, fosfuro di indio InP ), polari (solfuro di piombo PbS, solfuro di Cad-
+mio CdS), organiche (antracene), composte da miscele di leghe binarie dei III e del V gruppo 
+(GaAsP, GalnAsP) e da alcuni tipi di ossidi (ossido di zinco ZnO, biossido di rame Cu2O).
+Il materiale semiconduttore più utilizzato è il silicio. In precedenza aveva avuto una 
+discreta utilizzazione anche il germanio, ma negli ultimi anni questo elemento (e la rela-
+tiva tecnologia) è stata abbandonata.
+Spinta da un intenso lavoro di ricerca, si sta affermando anche l’utilizzazione di nuovi 
+semiconduttori composti quali l’arseniuro di gallio.
+Il silicio è uno dei materiali più abbondanti in natura sotto forma di silice; il materiale 
+utilizzato per la produzione della componentistica elettronica viene estratto dal biossido 
+di silicio (SiO2) e dai silicati. 
+Il gallio viene estratto dalla germanite. Dopo il mercurio è il metallo a punto di 
+fusione più basso che si conosca: fonde a 29,8 °C.
+
+[PAG 1895]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-23
+Tab. XIX.1.6  Tabella di raffronto dei principali parametri del silicio e dell’arseniuro di gallio
+Il gallio presenta però una tensione di vapore molto ridotta fino a temperatura elevata 
+per cui bolle a 2403 °C. Questa sua proprietà di mantenersi liquido in una gamma di tem-
+peratura così elevata (da 29,8 ÷ 2403 °C) è stata sfruttata per realizzare termometri a let-
+tura diretta per temperature molto elevate. L’arseniuro di gallio è caratterizzato da una 
+grande mobilità degli elettroni, superiore di molti ordini di grandezza rispetto a quella che 
+caratterizza il silicio; questa caratteristica è estremamente importante sia nel settore delle 
+microonde sia in quello dei sistemi digitali a velocità elevate.
+I chip all’arseniuro di gallio possono funzionare ottimamente a temperature molto più 
+elevate di quelle del silicio; questa caratteristica consente di impiegarli nei motori per 
+auto e nel settore industriale ove i chip al silicio non possono essere utilizzati. 
+I dispositivi all’arsenico di gallio tollerano le radiazioni per questo motivo trovano 
+larga applicazione nei dispositivi impiegati in campo militare e in quello aerospaziale.
+Le caratteristiche dei due materiali, il silicio e l’arseniuro di gallio, portano alla realiz-
+zazione di componenti complementari con competitivi, nel senso che alcune applicazioni 
+richiedono il silicio più che l’arseniuro di gallio; altre possono essere soddisfatte solo con 
+componenti all’arseniuro di gallio; altre invece sfruttano contemporaneamente le partico-
+lari caratteristiche dei due materiali.
+Per esempio sia il silicio che l’arseniuro di gallio hanno proprietà fotovoltaiche nel 
+senso che riescono a trasformare energia solare in energia elettrica; le caratteristiche di 
+efficienza sono però differenti (Tab. XIX.1.6): il silicio ha un rendimento del 10% e l’arse-
+niuro di gallio del 20%, mentre se si fa crescere su un cristallo puro di silicio dell’arse-
+niuro di gallio si ottiene un composto che - dal punto di vista fotovoltaico - manifesta un 
+Caratteristiche
+Unità di  
+misura
+Silicio (Si)
+Arseniuro di  
+gallio (GaAs)
+Struttura
+diamante
+zinco blenda
+Costante reticolare
+nm
+0,543
+0,5654
+Densità
+g/cm²
+2,329
+5,316
+Punto di fusione
+°C
+1410
+1238
+Pressione parziale al punto di fusione
+atm
+10-7
+1
+Costante dielettrica
+12
+11,1
+Gap
+eV
+1,106
+1,40
+Resistività intrinseca
+ · cm
+2,3 · 105
+3,8 · 108
+Concentrazione intrinseca
+cm-3
+1,5 · 1010
+1,8 · 106
+Mobilità elettronica 
+cm²/V· s
+1900
+8800
+Mobilità delle lacune
+cm²/V· s
+425
+450
+Calore specifico
+cal/g
+0,167
+0,086
+Coefficiente di dilatazione termica
+cm/°C
+22,33 · 10-6
+5,93 · 10-6
+Conducibilità termica
+W/cm·K
+0,24
+0,08
+Coeff. di trasferimento di calore relativo
+cm-1
+0,18
+0,034
+Clivaggio (taglio del cristallo)
+non facile
+facile
+Piano di clivaggio
+(111)
+(110)
+
+[PAG 1896]
+XIX-24
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+rendimento del 28%, cioè pari alla somma di quello ottenibile dai singoli materiali.
+1.3.4  Materiali magnetici
+Le sostanze magnetiche sono classificate in sostanze diamagnetiche, paramagnetiche 
+e ferromagnetiche.
+Le sostanze diamagnetiche si magnetizzano in direzione opposta rispetto a quella del 
+campo magnetico applicato. Presentano un valore minore di suscettibilità magnetica (infe-
+riore a zero) e una permeabilità relativa inferiore a 1; la caratteristica di magnetizzazione 
+è lineare. 
+Le sostanze paramagnetiche si magnetizzano in direzione parallela e proporzionale al 
+campo magnetico applicato. Presentano un valore minore di suscettibilità magnetica supe-
+riore a zero e una permeabilità relativa appena superiore a 1; la sua caratteristica di magne-
+tizzazione è lineare.
+Le sostanze ferromagnetiche al di sotto della temperature di Curie possiedono momenti 
+magnetici atomici paralleli e orientati in una medesima direzione. Al di sopra della tempe-
+ratura di Curie si comporta come un materiale paramagnetico. Se il momento magnetico 
+totale è diverso da zero si ha un magnete naturale. La sua caratteristica di magnetizzazione 
+non è lineare. la permeabilità relativa è molto maggiore di 1.
+I materiali ferromagnetici possono essere suddivisi in due categorie: dolci e duri.
+1)  I materiali ferromagnetici dolci sono caratterizzati da una bassa forza coercitiva, 
+alta permeabilità magnetica per elevati valori di induzione e bassa cifra di perdita, nonché 
+da cicli di isteresi stretti per limitare le perdite. Tipici materiali ferromagnetici dolci sono 
+leghe di nichel-ferro con aggiunte di manganese, cromo, rame, mobildeno (Permalloy A, 
+Permivar, Mumetal, Megapern).
+2)  I materiali ferromagnetici duri sono caratterizzati da una elevata valore di forza 
+coercitiva, relativamente bassa permeabilità magnetica e da un elevato magnetismo 
+residuo. Sono utilizzati prevalentemente per la costruzione dei magneti permanenti. Tipici 
+materiali ferromagnetici duri sono gli acciai duri ad elevato valore di carbonio, acciai al 
+cobalto, acciai al tungsteno, Cunico, Cumalloy, Alcnico 5. 
+I materiali magnetici presentano la caratteristica di variare con facilità la loro distribu-
+zione di magnetizzazione. Per questa loro caratteristica, in dipendenza di certi segnali 
+elettrici, una risposta magnetica può restare immagazzinata e successivamente riletta 
+senza subire alterazioni.
+I materiali magnetici che vengono più frequentemente utilizzati come materiali per 
+l’industria elettronica sono gli ossidi di cromo, CrO2.
+La gamma di composizioni chimiche dei materiali utilizzati per le registrazioni sonore 
+e visive sono piuttosto ristrette, mentre per magneti dolci, memorie e dispositivi a micro-
+onde, sono disponibili molte sostanze a strutture e composizioni chimiche molto differen-
+ziate raggruppate sotto il generico nome di ferriti.
+I materiali magnetici possono essere utilizzati in molteplici stati cristallografici: 
+monocristalli, policristalli con grani di diverse dimensioni, film con orientamento prefe-
+renziale più o meno marcato.
+Soltanto di recente sono state sfruttate altre proprietà dei materiali magnetici quali gli 
+effetti magneto ottici e magneto resistivi. La principale caratteristica dei materiali magne-
+tici e degli ossidi (in particolare per quanto riguarda la risposta ad un campo magnetico 
+esterno) consiste nell’alto numero di gradi di libertà che possono essere variati allo scopo 
+di ottimizzare le prestazioni in relazione al tipo d’impiego e al contenimento dei costi di 
+produzione. 
+I materiali magnetici sono utilizzati nella costruzione degli induttori, dei relè, dei 
+motori e in tutte le macchine elettriche rotanti.
+
+[PAG 1897]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-25
+1.3.5  Materiali piezoelettrici
+I principali materiali piezoelettrici sono il quarzo, i sali di Rochelle, alcuni materiali 
+ceramici quali il niobato di sodio e potassio, il titanato di bario.
+Il quarzo è fra i materiali piezoelettrici quello più utilizzato. Ha una struttura prisma-
+tica trapezoedica trigonale a simmetria ternaria. Il quarzo presenta un asse ottico, tre assi 
+elettrici posti a 120° fra loro e tre assi meccanici a 120°.
+I sali di Rochelle sono strutture cristalline che possiedono buone qualità piezoelettriche. 
+Sono fragili e risentono fortemente delle variazioni di temperatura e umidità. A 25 °C mani-
+festano un buon comportamento piezoelettrico, a 53 °C il reticolo cristallino si disgrega.
+I materiali ceramici piezoelettrici manifestano buone proprietà meccaniche sono chi-
+micamente inerti, conservano le proprietà piezoelettriche anche a temperature elevate. Le 
+direzioni di polarizzazione possono essere scelte liberamente modificando la composi-
+zione chimica.
+1.4  Il processo di conduzione nei solidi conduttori di elettricità 
+1.4.1  Metalli
+La corrente elettrica è una manifestazione del movimento delle cariche entro il mate-
+riale. Per comprendere il processo della conduzione bisogna analizzare l’origine e il com-
+portamento della carica mobile.
+I metalli sono buoni conduttori poiché contengono forti concentrazioni di elettroni 
+liberi o mobili. Gli elettroni sono mobili nel senso che non sono legati agli atomi del 
+metallo, ma sono liberi di muoversi entro il volume del metallo stesso.
+Ogni atomo del metallo libera solo gli elettroni di valenza (uno o due elettroni) mentre 
+gli altri elettroni sono legati con i nuclei dei vari atomi che costituiscono il materiale.
+Poiché che gli atomi di ogni solido hanno una concentrazione dell’ordine del numero 
+di Avogadro (circa 6 ·1023 cm3) ne deriva che gli elettroni liberi siano dell’ordine 1023
+per centimetro cubo. Il metallo è elettronicamente neutro, quando un atomo fornisce 1 
+elettrone al gas elettronico e l’atomo stesso rimane fisso nella propria posizione come 
+ione positivo, con una carica uguale in valore, ma di segno opposto rispetto a quella elet-
+tronica.
+Gli ioni metallici, cariche positive fisse, non contribuiscono in nessun modo alla con-
+duzione elettrica. La conduzione nei metalli è quindi un processo a portatore singolo. La con-
+centrazione degli elettroni liberi è regolata dalla sola concentrazione degli atomi di metallo.
+1.4.2  Semiconduttori
+Gli elettroni di valenza di un atomo di semiconduttore (germanio, silicio) non sono 
+liberi di muoversi attraverso il volume del materiale; formano invece un legame covalente 
+che lega l’insieme degli atomi del semiconduttore in una struttura cristallina periodica 
+(Fig. XIX.1.9). 
+Per la descrizione della struttura cristallina del semiconduttore può essere utile impie-
+gare un modello a legame bidimensionale (Fig. XIX.1.10) nel quale ogni atomo è circondato 
+da altri quattro atomi e i quattro elettroni di valenza sono condivisi con i quattro atomi adia-
+centi. Tutti gli elettroni di valenza sono trattenuti nei legami covalenti e non esistono elet-
+troni liberi, per cui – non essendoci portatori di carica liberi di muoversi – non è possibile la 
+conduzione; il materiale, in queste condizioni, si comporta come un isolante. La forma cri-
+stallina del carbonio, il diamante, presenta proprio le seguenti caratteristiche.
+Al di sopra dello zero assoluto (-273 °C) alcuni legami covalenti sono incompleti e gli 
+elettroni sottratti al legame sono liberi di muoversi all’interno del cristallo.
+Alcuni elettroni di valenza, alla temperatura ambiente (circa 25 °C), acquistano un’ener-
+gia sufficiente a rompere il legame covalente e diventare liberi (Fig. XIX.1.11).
+Nel germanio, a temperatura ambiente, ci sono solo 1013 legami rotti per centimetro
+
+[PAG 1898]
+XIX-26
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+cubo: considerando che la struttura cristallina contiene circa 1023 atomi, si può affermare 
+che esiste un atomo che ha un legame rotto ogni miliardo di atomi. 
+Queste poche cariche elettriche disponibili alla 
+conduzione conferiscono al materiale semicondut-
+tore le sue particolari proprietà elettriche.
+Nel semiconduttore, per effetto della rottura dei 
+legami covalenti, si originano due tipi di portatori di 
+carica in grado di sostenere correnti elettriche.
+Un tipo di portatore è costituito dagli elettroni 
+che vengono liberati quando un elettrone di valenza 
+si sgancia da un legame covalente.
+Questi elettroni liberi sono dotati di carica nega-
+tiva e possono muoversi nel semiconduttore, nello 
+stesso modo già descritto per i metalli, producendo 
+così una corrente elettrica. 
+Fig. XIX.1.11  Elettrone libero e lacuna creati 
+dalla temperatura in un semiconduttore.
+L’altro tipo di portatore è associato agli elettroni di valenza che, dopo la rottura del 
+legame covalente, restano legati all’atomo. Nella zona del legame rotto si crea una zona 
+localizzata a carica positiva generata dalla carica ionica positiva dell’atomo privato 
+dell’elettrone di legame. Tale zona di carica positiva viene chiamata lacuna, poiché 
+dipende dal difetto presente nella struttura del legame.
+La carica positiva contribuisce alla conduzione in quanto crea una nuova zona a carica 
+positiva ogniqualvolta un elettrone di valenza presente in un legame prossimo alla lacuna 
+rompe il proprio legame, si sposta e va a ricostruire il legame covalente annichilendo la 
+zona a carica positiva. In pratica è l’elettrone di valenza che, non acquistando un’energia 
+sufficiente a liberarsi dalla struttura dei legami, migra da legame a legame dando 
+l’impressione che la carica positiva si sposti. Ovviamente la direzione del moto delle 
+lacune è contrario a quello degli elettroni di legame.
+Il movimento delle lacune nella struttura del semiconduttore non interessa il movi-
+mento degli elettroni liberi.
+Fig. XIX.1.9  Struttura cristallina 
+periodica di un semiconduttore.
+Fig. XIX.1.10  Modello a legame bidimensionale 
+di una struttura cristallina di un semiconduttore.
++4
++4
++4
++4
++4
++4
++4
++4
++4
+elettrone libero
+lacuna
++4
++4
++4
++4
++4
++4
++4
++4
++4
+
+[PAG 1899]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-27
+La descrizione del moto delle lacune ha importanti limitazioni: la lacuna non può 
+essere localizzata con la precisione suggerita dal modello meccanicistico classico; il mec-
+canismo di movimento descritto come semplice spostamento degli elettroni di legame non 
+può essere utilizzato per spiegare fenomeni quali l’effetto Hall in un semiconduttore.
+La lacuna è un artificio che permette di descrivere in modo semplice il complesso 
+moto degli elettroni di valenza legati. Il moto della lacuna può essere descritto nei termini 
+della meccanica classica qualora la lacuna sia vista come una particella carica positiva-
+mente che si sposta nel cristallo semiconduttore. In realtà il moto degli elettroni di 
+valenza legati dovrebbe essere descritto utilizzando i concetti della meccanica quantistica.
+In seguito utilizzeremo i concetti di lacuna e di elettroni di conduzione per descrivere, 
+in modo semplice il comportamento fisico dei semiconduttori.
+Nei riguardi del modello elettrico utilizzato per la descrizione le lacune e gli elettroni 
+possono essere considerati come portatori mobili indipendenti di cariche di segno oppo-
+sto. Il modello del materiale semiconduttore proposto è detto modello a legami di valenza. 
+In un materiale semiconduttore puro le lacune e gli elettroni liberi sono di numero iden-
+tico in quanto costituiscono il risultato della rottura dei legami covalenti. Se nel materiale 
+sono presenti impurità, queste provocano uno squilibrio tra le concentrazioni dei porta-
+tori; queste impurità, o droganti, vengono aggiunte intenzionalmente nel semiconduttore 
+all’atto della fabbricazione. Le impurità possono essere di due tipi: donatrici o accettrici.
+Le impurità donatrici possiedono cinque elettroni di valenza invece dei quattro che 
+caratterizzano i semiconduttori. Gli elementi utilizzati sono l’antimonio, il fosforo e 
+l’arsenico. La loro struttura atomica fa sì che possano facilmente entrare nella struttura 
+cristallina periodica del semiconduttore. Quattro elettroni dell’impurità si legano con i 
+quattro atomi degli atomi vicini del semiconduttore e un elettrone privo del legame cova-
+lente può facilmente essere allontanato dal suo nucleo atomico e aggiungersi agli elettroni 
+liberi del semiconduttore (Fig. XIX.1.12). Si crea così uno squilibrio della concentrazione 
+dei portatori di carica in favore degli elettroni liberi rispetto alle lacune. L’atomo di impu-
+rezza si ionizza positivamente, poiché i cinque protoni del nucleo non sono più bilanciati 
+dagli elettroni di valenza. Questa carica positiva è localizzata e immobile nella struttura 
+cristallina. Un semiconduttore che presenta questa caratteristica è detto di tipo N. 
+Le impurità accettrici hanno la caratteristica di possedere tre elettroni di valenza 
+invece dei quattro che caratterizzano i semiconduttori.
+Gli elementi utilizzati sono l’alluminio, il boro, l’indio.
+Fig. XIX.1.12  Generazione di un 
+elettrone libero.
+Fig. XIX.1.13  Generazione di una lacuna.
+atomo
+donatore
+elettrone
+ libero
++4
++4
++4
++5
++4
++4
++4
++4
++4
+atomo
+accettore
+legame
+incompleto
++4
++4
++4
++3
++4
++4
++4
++4
++4
+
+[PAG 1900]
+XIX-28
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+La loro struttura atomica è tale per cui possono facilmente entrare nella struttura cri-
+stallina periodica del semiconduttore. L’atomo accettore possiede soltanto tre elettroni di 
+valenza che si legano con gli elettroni di valenza di  tre atomi vicini del semiconduttore, 
+mentre il quarto atomo non completa il legame covalente (Fig. XIX.1.13). Nella struttura 
+cristallina del legame si crea una lacuna.
+L’atomo di impurità accetta un elettrone di valenza proveniente da qualche altra zona 
+del cristallo, contribuendo in questo modo al fenomeno di conduzione prodotto dagli elet-
+troni legati (o lacune).
+La presenza nel cristallo semiconduttore di impurità trivalenti crea uno squilibrio 
+della concentrazione dei portatori di carica in favore delle lacune rispetto agli elettroni 
+liberi.
+L’atomo di impurezza, acquistando l’elettrone di legame, si ionizza negativamente, in 
+quanto i tre protoni del nucleo non sono più bilanciati dagli elettroni di valenza. Questa 
+carica negativa è localizzata e immobile nella struttura cristallina e non partecipa alla con-
+duzione. Un semiconduttore che presenta questa caratteristica è detto di tipo P.
+1.4.3  Deriva di un campo elettrico
+In un semiconduttore i portatori di carica (elettroni e lacune) sono in costante movi-
+mento, anche a temperatura costante, a causa dell’agitazione termica degli atomi e degli 
+elettroni. Il movimento degli elettroni è casuale e irregolare e vi sono frequenti collisioni 
+cogli atomi del semiconduttore e delle impurità. Gli elettroni cambiano di continuo la pro-
+pria energia cinetica aumentandola o diminuendola. In condizioni di equilibrio dal moto 
+termico casuale non si crea una corrente elettrica media, in quanto il moto degli elettroni è 
+tale che per ogni elettrone che si muove in una direzione, ne esistono altrettanti che si 
+muovono nella direzione opposta. 
+Per modificare e ordinare il moto dei portatori di carica si può applicare un campo 
+elettrico oppure rendere non uniforme la distribuzione dei portatori.
+Un campo elettrico influenza il moto termico delle particelle fornendo ad ognuna di 
+esse – durante gli intervalli fra le collisioni – una piccola accelerazione nella direzione del 
+campo stesso. Le collisioni dei portatori non cessano ma l’effetto netto del campo elet-
+trico è un movimento dei portatori nella direzione del campo. Questo effetto viene chia-
+mato deriva (drift). 
+1.4.4  Diffusione in un gradiente di concentrazione
+La diffusione del moto termico casuale delle particelle appare ogniqualvolta delle par-
+ticelle mobili sono distribuite non uniformemente in un sistema.
+Il fenomeno della diffusione consiste nel movimento delle cariche dalla zona a più 
+alta concentrazione verso quello a più bassa concentrazione.
+Il fenomeno di diffusione si verifica perché il numero di portatori che hanno compo-
+nenti di velocità dirette dalla regione ad alta concentrazione verso quella a bassa concen-
+trazione è maggiore del numero di portatori dotati di componenti di velocità dirette nel 
+senso opposto.
+La densità del flusso di particelle che risulta dalla diffusione dipende dal gradiente 
+della concentrazione dei portatori e non dal valore della concentrazione stessa. La diffu-
+sione dipende non dal valore assoluto delle concentrazioni ma dallo squilibrio delle con-
+centrazioni fra le due zone.
+2  ELEMENTI UTILIZZATI NEGLI IMPIANTI ELETTRICI CIVILI
+Gli elementi impiegati negli impianti civili e similari comprendono un insieme molto 
+diversificato di componenti che possono essere di tipo elettrico e non. I componenti non 
+elettrici di un impianto servono per contenere e proteggere meccanicamente gli apparecchi
+
+[PAG 1901]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-29
+elettrici. I componenti elettrici di un impianto si differenziano essenzialmente in apparec-
+chi e cavi. Mentre i primi svolgono funzioni di comando, segnalazione, trasformazione, 
+derivazione e protezione, i secondi servono per collegare gli apparecchi tra loro, con la 
+linea di alimentazione e il carico. 
+Gli apparecchi di comando servono per stabilire, mantenere, modificare o interrompere 
+la corrente di alimentazione degli utilizzatori.
+Essi sono parte dell’impianto elettrico quando si trovano posti a monte dell’utilizzatore, 
+inseriti in contenitori singoli o in quadri di comando; sono progettati per svolgere un 
+numero molto elevato di manovre e sono denominati con termini diversi a seconda che il 
+meccanismo di manovra sia a tasto (Fig. XIX.2.1a), a levetta (Fig. XIX.2.1b), a pulsante 
+(Fig. XIX.2.1c), a slitta (Fig. XIX.2.1d) ecc.
+I dati nominali, caratterizzanti un apparecchio di comando, sono fondamentalmente:
+–  La tensione nominale è il valore di tensione per il quale l’apparecchio è stato costru-
+ito; non deve essere superata durante l’impiego.
+–  La corrente nominale è il valore di corrente per la quale l’apparecchio è stato costru-
+ito; non deve essere superata durante l’impiego.
+–  Il potere di chiusura è il massimo valore di corrente che un apparecchio può soppor-
+tare per un tempo molto breve e prestabilito senza danneggiarsi.
+La corrente di breve durata è il massimo valore di corrente che un apparecchio è in 
+grado di sopportare, per il tempo che intercorre tra una situazione di guasto o di corto cir-
+cuito e l’intervento dell’apparecchiatura di protezione. 
+Fig. XIX.2.1  Azionamenti per apparecchi di comando.
+I tre valori che si possono riscontrare immediatamente sul corpo dell’apparecchio 
+sono la tensione nominale, la corrente nominale e il tipo di corrente (alternata o conti-
+nua).Gli apparecchi di comando, a seconda del particolare tipo di frutto, possono essere:
+–  modulari (componibili) da incasso (Fig. XIX.2.2a);
+–  monoblocco da incasso (Fig. XIX.2.2b);
+–  da parete (Fig. XIX.2.2c);
+–  volanti (Fig. XIX.2.2d).
+Gli apparecchi di segnalazione hanno il compito di comunicare con un segnale una richie-
+sta effettuata da una seconda persona. Si possono dividere in prima istanza in apparecchi di 
+segnalazione acustica (suonerie in genere) e in apparecchi di segnalazione luminosa.
+Questi ultimi a loro volta si possono suddividere in apparecchi sui quali l’indicazione 
+della chiamata viene specificata mediante un numero significativo (quadri indicatori) e in 
+apparecchi molto più complessi sui quali sono presenti anche dei segnali di direzione 
+(guida luce). È da tenere in considerazione che negli apparecchi di segnalazione luminosa 
+è sempre presente (o quasi) un ronzatore che associa al segnale luminoso anche una segna-
+lazione acustica. I trasformatori sono macchine elettriche che svolgono il compito di tra-
+sferire l’energia elettrica da un circuito ad un altro.
+a)
+b)
+c)
+d)
