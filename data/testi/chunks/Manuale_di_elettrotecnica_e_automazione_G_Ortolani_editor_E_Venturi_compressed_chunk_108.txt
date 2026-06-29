@@ -1,0 +1,1452 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 108/116 ===
+Chars: 45,000 | Offset: 4,731,988
+
+Campo di regolazione dello sganciatore 
+differenziale (corrente)
+Assente
+(0,03-0,3-1-3) A (0,03-0,3-1-3) A
+Taratura dello sganciatore differenziale 
+(corrente)
+/
+1 A
+1 A
+Campo di regolazione dello sganciatore 
+differenziale (tempo)
+Assente
+(0-0,3-1-3) s
+(0-0,3-1-3) s
+Taratura dello sganciatore differenziale (tempo)
+/
+1 s
+1 s
+
+[PAG 2105]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-87
+valore praticamente pari alla potenza totale massima a disposizione prevista per la fornitura.
+Considerando un fattore di potenza globale convenzionale pari a 0,9 (impianto provvi-
+sto di rifasatore automatico centralizzato), la potenza apparente convenzionale totale è 
+pari a:
+Tav. XX.2.27   Cabina elettrica di trasformazione MT/BT, schema unifilare della sezione 
+MT a 23kV.
+Sct
+Pct
+cos
+-----------
+399
+0 9
+--------
+443 3kVA
+
+=
+=
+=
+
+
+
+
+[PAG 2106]
+XX-88
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tav. XX.2.28   Cabina elettrica di trasformazione MT/BT, schema unifilare del quadro 
+elettrico bassa tensione.
+Tutta la potenza verrà raggruppata in un’unica unità di trasformazione, avente potenza 
+apparente nominale pari a: 
+Sn = 500 kVA
+
+[PAG 2107]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-89
+Tab. XX.2.23  Dati dei carichi da alimentare
+ottenendo una ulteriore riserva di potenza rispetto al funzionamento a pieno carico di 67 kVA 
+circa.
+c)  Determinazione della sezione delle linee principali
+Le due linee uscenti dalla cabina elettrica sono state denominate, come indicato nella 
+Tab. XX.2.23, linea 1 e linea 2 e dovranno essere collegate, rispettivamente, al quadro di 
+bordo della sabbiatrice 1 e al quadro QE1 esistente. Il tracciato delle due condutture elet-
+triche è indicato sulla planimetria generale (Tav. XX.2.23).
+Per il loro calcolo è stato utilizzato il metodo della caduta di tensione unitaria, par-
+tendo dai dati di progetto riportati nella Tab. XX.2.24.
+I risultati ottenuti dal calcolo elettrico delle due condutture sono riassunti nella Tab. 
+XX.2.25. I valori della portata sono stati desunti dalle tabelle CEI-UNEL 35026 CEI 20 
+per le portate dei cavi elettrici in bassa tensione per posa interrata (valori indicati nelle 
+tabelle della Sez. X Impianti elettrici Cap. X.4.), assumendo i seguenti valori dei fattori di 
+correzione, per entrambe le linee:
+–  K1 = 1 per temperatura del terreno 20 °C;
+–  K2 = 0,90 nel caso di due tubi adiacenti sullo stesso piano (uno per linea) con distanza 
+0,25 m;
+–  K3 = 1 per profondità di posa 0,8 m;
+Tab. XX.2.24  Dati di progetto per il dimensionamento delle linee principali
+Denominazione
+N° 
+fasi
+Un 
+[V]
+Pc 
+[kW]
+cos 
+Ib 
+[A]
+Linea 1: alimentazione sabbiatrice 1
+3+N
+400
+132
+0,76
+250
+Riserva di potenza per l’alimentazione della futura sabbiatrice 2
+3+N
+400
+76
+0,76
+145
+Linea 2: alimentazione del quadro QE1 dell’impianto 
+preesistente
+3+N
+400
+186
+0,76
+353
+Prese di servizio nel locale cabina utente
+3+N
+400
+4,5
+0,76
+8,6
+Illuminazione cabina
+1+N
+230
+0,5
+0,9
+2,5
+ Nota Un è la tensione nominale di alimentazione del circuito; Pc è la potenza attiva assorbita convenzionale; 
+cos  è il fattore di potenza convenzionale del circuito; Ib è la corrente d’impiego della conduttura elettrica.
+Elenco dato di progetto
+Linea 1
+Linea 2
+Numero fasi e tensione d’esercizio Un
+3F+N / 400 V
+3F+N / 400 V
+Corrente d’impiego Ib
+250 A
+353 A
+Lunghezza delle linee l 
+60 m
+50 m
+Tipo di cavo e tensioni nominali U0/U
+FG7R 0,6/1 kV
+FG7R 0,6/1 kV
+Temperatura di servizio delle condutture
+90 °C
+90 °C
+Ambiente d’installazione
+Normale
+Normale
+Tipo di posa
+Entro tubo interrato 
+Entro tubo interrato
+Numero di circuiti per tubo
+Cavi unipolari con n. 
+1 circuito per tubo
+Cavi unipolari con n. 
+1 circuito per tubo
+Temperatura ambiente del terreno
+20 °C
+20 °C
+Profondità di posa
+0,8 m
+0,8 m
+Resistività termica del terreno
+1,5 Km/W
+1,5 Km/W
+Caduta di tensione ammessa
+2% (8 V)
+2% (8 V)
+
+[PAG 2108]
+XX-90
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Tab. XX.2.25  Risultati ottenuti per il dimensionamento delle linee principali
+–  K4 = 1 per resistività termica del terreno 1,5 Km/W;
+–  portata I0 valutata sulla tabella relativa a cavi unipolari in un unico tubo interrato, iso-
+lamento in EPR, 3 conduttori caricati.
+Le caratteristiche elettriche sono state desunte dalle tabelle della Sez. X Impianti elet-
+trici Cap. X.4, riportando i valori della resistenza a 90 °C e considerando un fattore mag-
+giorativo pari a 1,1.
+d)  Determinazione della sezione delle linee secondarie
+Per le linee di alimentazione delle prese e degli apparecchi illuminanti interni alla 
+cabina, data la ridotta estensione e la c.d.t. trascurabile, la scelta è stata fatta solo in base 
+al criterio della portata, che dovrà essere maggiore della corrente d'impiego, ottenendo le 
+caratteristiche riportate nella Tab. XX.2.26.
+Tab. XX.2.26  Caratteristiche delle linee secondarie
+e)  Determinazione della sezione della linea di collegamento tra il trasformatore e 
+il quadro BT
+Data la ridotta lunghezza della linea e il trascurabile valore della caduta di tensione, la 
+sua scelta può essere fatta solo in funzione della portata che dovrà essere superiore alla 
+corrente nominale secondaria del trasformatore, pari a 722 A.
+Si ottengono i risultati seguenti:
+–  tipo di cavo e tensioni nominali: unipolare con guaina FG7R, 0,6/1 kV;
+–  temperatura di servizio: 90 °C;
+–  tipo di posa: entro il cunicolo portacavi sotto il pavimento della cabina;
+–  sezione scelta per le fasi: 2  240 mm2 (due cavi unipolari per fase, in parallelo);
+–  portata delle fasi: 796 A;
+–  sezione scelta per il neutro: 1  240 mm2 (SN = SF / 2).
+Elenco risultati
+Linea 1 
+Linea 2
+Sezione calcolata per le fasi
+185 mm2
+300 mm2
+Sezione assunta per il neutro (SN   SF / 2)
+95 mm2
+150 mm2
+Portata nominale delle fasi
+291 A
+386 A
+Caduta di tensione effettiva
+0,94% (3,76 V)
+0,82% (3,28 V)
+Resistenza elettrica unitaria a 90 °C
+0,136 /km
+0,0827 /km
+Reattanza induttiva unitaria a 50 Hz
+0,0907 /km
+0,0895 /km
+Caratteristiche
+Linea prese cabina
+Linea luce cabina
+Numero fasi e tensione d’esercizio Un
+3F+N / 400 V
+F+N /230 V
+Corrente d’impiego Ib
+8,6 A
+2,6 A
+Tipo di cavo e tensioni nominali U0/U
+Unipolari N07V-K 450/750 V Unipolari N07V-K 450/750 V
+Temperatura di servizio delle condutture
+70 °C
+70 °C
+Ambiente d’installazione
+Normale
+Normale
+Tipo di posa
+Entro tubo in aria
+Entro tubo in aria
+Numero di circuiti per tubo
+1
+1
+Sezione scelta per le fasi
+4 mm2
+2,5 mm2
+Sezione assunta per il neutro (SN  = SF)
+4 mm2
+2,5 mm2
+Portata nominale 
+27 A
+23 A
+
+[PAG 2109]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-91
+f)  Corrente di corto circuito lato MT
+È uno dei dati di progetto (Par. XX.2.3.3b) ed è pari a Icc1 = 16 kA, a cui corrisponde 
+la potenza apparente di corto circuito Scc1 = 665 MVA, con tensione massima di riferi-
+mento per l’isolamento pari a 24 kV.
+g)  Determinazione della corrente di corto circuito sul lato BT del trasformatore
+Tab. XX.2.27  Sequenza per il calcolo della corrente di corto circuito sul lato BT
+Per il calcolo di questo valore si determinano i parametri dell’impedenza della rete 
+MT a monte riportata al secondario e quelli dell'impedenza del trasformatore, partendo 
+dai seguenti dati di targa della macchina, ricavati dalla tabella delle caratteristiche di tra-
+sformatori in resina, in base alla potenza precedentemente scelta:
+–  potenza apparente nominale: Sn = 500 kVA
+–  tensione secondaria nominale a vuoto: U20 = 400 V
+Grandezze 
+Formule
+Risultati
+Corrente nominale primaria 
+12,6 A
+Corrente nominale secondaria
+722 A
+Impedenza della rete MT riportata al secondario
+0,24 m
+Resistenza della rete MT riportata al secondario
+trascurabile
+0
+Reattanza della rete MT riportata al secondario
+0,24 m
+Impedenza equivalente secondaria del 
+trasformatore
+19,2 m
+Resistenza equivalente secondaria del 
+trasformatore
+3,64 m
+Reattanza equivalente secondaria del trasformatore
+18,85 m
+Resistenza totale del circuito di guasto
+3,64 m
+Reattanza totale del circuito di guasto
+19,09 m
+Impedenza totale del circuito di guasto
+19,43 m
+Corrente di corto circuito lato BT
+11,9 kA
+I1n
+Sn
+3U1n
+----------------
+=
+I2n
+Sn
+3U20
+----------------
+=
+ZR
+U2
+20
+Scc1
+-----------
+=
+XR
+ZR
+=
+Ze
+U2
+20 U %
+cc
+100Sn
+--------------------------
+=
+Re
+Pccn
+3I2n
+2
+------------
+=
+Xe
+Ze
+
+2
+Re
+
+2
+–
+=
+Rt2
+Re
+=
+Xt2
+XR
+Xe
++
+=
+Zt2
+R2
+t2
+X2
+t2
++
+=
+Icc2
+U20
+3Zt2
+--------------
+=
+
+[PAG 2110]
+XX-92
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+–  tensione di corto circuito percentuale: Ucc% = 6%
+–  perdita di corto circuito nominale: Pccn = 5700 W
+Si ottengono i risultati riportati nella Tab. XX.2.27.
+A un valore sostanzialmente uguale si perviene trascurando l’impedenza di rete e 
+applicando la formula semplificata: 
+Questo valore verrà usato per la scelta del potere d’interruzione degli apparecchi del 
+quadro BT, trascurando la piccola diminuzione della corrente di corto circuito dovuta alla 
+linea di collegamento tra il trasformatore e il quadro elettrico, a causa della ridotta lun-
+ghezza della linea (10 m circa) e della sua elevata sezione.
+h)  Determinazione delle correnti di corto circuito massime e minime per le con-
+dutture elettriche uscenti dalla cabina
+Le correnti di corto circuito massime nei punti terminali delle linee 1 e 2 si calcolano 
+considerando il guasto trifase simmetrico, con relazioni del tipo:
+essendo Zt3 l’impedenza di una fase del circuito rete-trasformatore-linea. Esse non sono 
+strettamente necessarie per il presente progetto, dato che servirebbero per scegliere il 
+potere d’interruzione di eventuali apparecchi di protezione dal corto circuito da inserire in 
+quadri secondari posti al termine delle linee.
+Le correnti di corto circuito minime a fondo linea servono, invece, per il coordina-
+mento delle protezioni dal corto circuito delle linee stesse e si determinano convenzional-
+mente con la relazione stabilita dalla Norma CEI 64-8:
+I dati di progetto e i risultati ottenuti sono riportati nella Tab. XX.2.28.
+Per la linea 2 la corrente di corto circuito minima è circa uguale a quella massima, a 
+causa dell’elevato valore della sezione di fase.
+i)  Dimensionamento dell’impianto di terra
+Anche se l’impianto di terra della ditta è già esistente se ne prevede l’ampliamento, 
+per soddisfare alle esigenze della cabina di trasformazione da installare. 
+Dalle misure effettuate si è visto che l’impianto di terra attuale, nelle normali condi-
+zioni di esercizio, ha una resistenza di terra piuttosto ridotta per i numerosi dispersori 
+intenzionali e di fatto (pilastri delle tettoie e basamenti delle macchine) collegati, pari a 
+RE = 1,5 . In base a quanto indicato nel Par. XX.2.3.3f3, la resistenza dovrà essere non 
+superiore al valore:
+per evitare la verifica periodica delle tensioni di passo e contatto. 
+Collegando l’impianto esistente a una ulteriore sezione disperdente, indipendente da 
+quella attuale, la resistenza di terra della nuova sezione dovrà essere non superiore al 
+valore R"E = 1,714 , come si può ricavare applicando la regola del parallelo. 
+Icc2
+100
+I
+
+2n
+U %
+cc
+--------------------
+100
+722
+
+6
+------------------------
+12 kA
+=
+=
+=
+Icc3
+U20
+3Zt3
+--------------
+=
+Iccmin
+0 8
+ESK
+
+
+1 5
+201
+m
++
+
+l
+
+----------------------------------------------
+=
+RE
+UTP
+IFC
+---------
+
+220
+275
+--------
+0,8 
+=
+=
+
+[PAG 2111]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-93
+Tab. XX.2.28  Dati e risultati per il calcolo delle correnti di corto circuito max e minime 
+Per ottenere il valore voluto si prevede l’installazione di una corda interrata in rame 
+nudo, con un solo picchetto verticale in corrispondenza dell’entrata in cabina, di lun-
+ghezza 134 m e collegata all’impianto preesistente in due punti. La struttura dell’impianto 
+di terra è riportata nella Tav. XX.2.24. Le dimensioni della corda, in base ai valori minimi 
+delle dimensioni degli elementi disperdenti previsti dalla Norma CEI 11-1 e dalla Norma 
+CEI 64-8, saranno pari a:
+–  sezione trasversale: 50 mm2;
+–  diametro dei fili elementari: 1,8 mm.
+Per i conduttori di terra e per i conduttori di protezione la sezione non deve essere 
+inferiore a quella che si ricava con l'espressione: 
+dove, per l’impianto in esame, si ha:
+k = 143 (conduttori di protezione in rame con isolamento in PVC); 
+I = 275 A (corrente di guasto a terra)
+t = 0,5 s (tempo di eliminazione del guasto).
+Si ottiene A = 1,36 mm2, valore estremamente ridotto e non utilizzabile in pratica. 
+Tenuto conto dei valori minimi previsti dalla normativa, si potranno adottare i seguenti 
+valori:
+–  50 mm2 per i conduttori di terra (cavi unipolari in rame con isolamento in PVC);
+–  50 mm2 per i conduttori di protezione principali interni alla cabina e al servizio delle 
+linee 1 e 2 (cavi unipolari in rame con isolamento in PVC);
+–  sezione uguale a quella di fase per i circuiti luce e f.m. della cabina (cavi unipolari 
+N07V-K distribuiti con quelli di linea o anime giallo-verdi di cavi multipolari).
+Dati di progetto e risultati
+Linea 1
+Linea 2
+Resistenza rete-trasformatore
+3,64 m
+3,64 m
+Reattanza rete-trasformatore
+19,09 m
+19,09 m
+Resistenza unitaria e totale della linea
+0,136 /km; 8,16 m
+0,0827 /km; 4,14 m
+Reattanza unitaria e totale della linea
+0,0907 /km; 5,44 m
+0,0895 /km; 4,48 m
+Resistenza totale del circuito di guasto
+11,80 m
+7,78 m
+Reattanza totale del circuito di guasto
+24,53 m
+23,57 m
+Impedenza totale del circuito di guasto
+27,22 m
+24,82 m
+Tensione a vuoto 
+400 V
+400 V
+Corrente di corto circuito simmetrica massima
+8,48 kA
+9,30 kA
+Tensione di fase E
+230 V
+230 V
+Sezione delle fasi
+185 mm2
+300 mm2
+Sezioni del neutro
+95 mm2
+150 mm2
+Fattore K per sezioni da 120 mm2 in poi
+0,8
+0,7
+Resistività  del rame a 20 °C
+0,0178 mm2/m
+0,0178 mm2/m
+Coefficiente m (rapporto SF / SN)
+1,947
+2
+Lunghezza l della linea
+60
+50
+Corrente di corto circuito minima
+5,77 kA
+9,65 kA
+A
+1
+k--
+I2t
+=
+
+[PAG 2112]
+XX-94
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+2.3.6  Tabelle e diagrammi di coordinamento delle protezioni
+Sono documenti alternativi o complementari tra loro che contengono i dati per defi-
+nire le caratteristiche significative dei dispositivi di protezione, dei circuiti e degli appa-
+recchi utilizzatori. 
+Per l’impianto in oggetto verranno forniti sotto forma di tabelle.
+a)  Coordinamento delle protezioni contro i contatti indiretti
+Per soddisfare la relazione di coordinamento di cui al Par. XX.2.3.3f3 si decide di 
+installare interruttori con sganciatori differenziali nel quadro BT, tarati con Idn = 1 A per 
+le linee 1 e 2.
+Dovendo essere: 
+il coordinamento sarà senza dubbio soddisfatto, dato che l’impedenza Zs, avente come 
+componenti la resistenza e la reattanza della rete a monte, del trasformatore, del condut-
+tore di fase e del conduttore di protezione, ha valori dell’ordine delle decine di milliohm. 
+Per le linee luce e f.m. interne alla cabina, per le quali si prevede l’uso di differenziali 
+con Idn = 0,03 A, la protezione sarà, a maggior ragione, coordinata.
+b)  Coordinamento delle protezioni contro i sovraccarichi
+Per rispettare la condizione di cui al Par. XX.2.3.3f4 si prevede di installare interruttori 
+con sganciatore termico regolabile per la linea trasformatore-quadro e per le linee 1 e 2 e 
+fisso per le utenze della cabina, scegliendo i valori come riportato nella tabella di coordi-
+namento Tab. XX.2.29.
+Tab. XX.2.29  Coordinamento delle protezioni contro i sovraccarichi
+c)  Coordinamento delle protezioni contro i corto circuiti
+Per la verifica delle condizioni indicati al Par. XX.2.3.3f5 si scelgono le apparecchiature 
+lato MT con potere d'interruzione (fusibili) e corrente di breve durata simmetrica (seziona-
+tori) non inferiore a 16 kA (Icc1), mentre per gli interruttori del quadro BT, in base alle 
+caratteristiche degli apparecchi in commercio, verranno scelti con potere d'interruzione 35 
+kA per quelli delle linee 1 e 2 e 15 kA per le linee f.m. e luce cabina, di taglia minore.
+Circuito
+Ib 
+[A]
+In (o Irt) 
+[A]
+Iz 
+[A]
+Ib  In  Iz
+Conclusione
+Linea contatore-quadro
+722
+750
+796
+722  750  
+796 
+Protezione
+coordinata
+Linea 1: alimentazione sabbiatrice 
+1
+250
+256
+291
+250  256  
+291 
+Protezione
+coordinata
+Linea 2: alimentazione del quadro 
+QE1 dell’impianto preesistente
+353
+360
+386
+353  360  
+386 
+Protezione
+coordinata
+Prese di sevizio nel locale cabina 
+utente
+8,6
+16
+27
+8,6  16  27 
+Protezione
+coordinata
+Illuminazione cabina
+2,6
+10
+23
+2,6  10  23 
+Protezione
+coordinata
+Zs
+U0
+Idn
+------
+
+230
+1
+--------
+230 
+=
+=
+
+[PAG 2113]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-95
+Per le caratteristiche d'intervento si prevedono i seguenti valori della corrente di rego-
+lazione magnetica Irm:  
+–  linea 1 (sabbiatrice 1): regolabile da 5 a 10 volte In;
+–  linea 2 (quadro QE1): regolabile da 5 a 10 volte In;
+–  linea f.m. cabina: caratteristica “C”, con Irm = 10 In = 160 A al massimo;
+–  linea luce cabina: caratteristica “C”, con Irm = 10 In = 100 A al massimo.
+Tab. XX.2.30  Coordinamento delle protezioni contro i corto circuiti
+Le condizioni di coordinamento sono riportate nella Tab. XX.2.30. I valori della cor-
+rente di corto circuito minima per le linee interne alla cabina sono state valutate con lo 
+stesso criterio adottato per le linee principali.
+La verifica dell’ultima condizione, in particolare, indica che l’interruttore interviene 
+su corto circuito per qualsiasi valore della Icc possibile in linea.
+Per la verifica dell'energia specifica passante per le due linee uscenti dal quadro BT 
+della cabina si determina il valore K2S2 dell’energia specifica delle due condutture e lo si 
+confronta con le curve dell’energia specifica passante degli interruttori, riferendosi a 
+interruttori con termiche aventi corrente nominale 400 A e 320 A rispettivamente.
+I risultati della verifica sono riportati nella Tab. XX.2.31.
+2.3.7  Computo metrico
+Viene generalmente redatto sotto forma di tabella, riportando le quantità dei diversi 
+componenti installati (apparecchi di manovra e di protezione, prese, quadri elettrici, cavi 
+ecc.). Le quantità vengono indicate, a seconda degli articoli, come numero o come lun-
+ghezze.
+Per i quadri elettrici non c’è bisogno di specificare le diverse parti che li costituiscono, 
+in quanto ogni quadro viene considerato come un unico componente avente una determi-
+nata configurazione, risultante dagli elaborati grafici di progetto.
+Sul computo metrico devono essere poi indicate le quantità di lavorazioni, riportando 
+le ore previste per le diverse operazioni necessarie per l’installazione degli impianti e spe-
+cificando le figure professionali alle quali si riferiscono.
+Nel caso in esame non si ritiene significativo riportare tale computo. Per le quantità di 
+materiale può essere ricavato dai documenti di progetto precedenti.
+2.3.8  Computo metrico estimativo
+Anche il computo metrico estimativo viene di solito redatto sotto forma di tabella, 
+applicando alle quantità indicate nel computo metrico i prezzi unitari dedotti da prezzari e 
+listini. I prezzi unitari dei materiali vanno riferiti all’unità numerica di componente o 
+all’unità di lunghezza, a seconda dei casi.
+Per la manodopera ci si riferisce al costo orario.
+Nel caso in esame non si ritiene significativo riportarlo, anche perché i prezzi unitari 
+sono soggetti a continui aggiornamenti.
+Circuito
+Icu
+[kA]
+Iccmax
+[kA]
+Iccmin
+[kA]
+Irm
+[kA]
+Verifica
+Icu  
+Iccmax
+Verifica
+Iccmin  Irm
+Linea 1: alimentazione sabbiatrice 1
+35
+12
+5,77
+2,56
+SI 
+SI
+Linea 2: alimentazione del quadro QE1
+35
+12
+9,65
+3,2
+SI
+SI
+Prese di servizio locale cabina utente
+15
+12
+3,45
+0,16
+SI
+SI
+Illuminazione cabina
+15
+12
+1,78
+0,10
+SI
+SI
+
+[PAG 2114]
+XX-96
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+2.3.9  Capitolato speciale d’appalto
+Il capitolato speciale d’appalto è un documento che, pur essendo previsto dalla guida 
+CEI 0-2 nella generalità dei casi, viene di solito prodotto su esplicita richiesta del commit-
+tente, per definire tutte le caratteristiche, non solo tecniche, dell’appalto. Per l’impianto in 
+oggetto questo documento non è stato redatto.
+Tab. XX.2.31  Verifica dell’energia specifica passante
+Dati di verifica e risultati
+Linea 1
+Linea 2
+Valori di K per cavi isolati in EPR
+143
+143
+Sezione delle condutture 
+185 mm2
+300 mm2
+Valore dell'energia specifica K2S2 sopportabile 
+dalle condutture
+7108 A2s
+18,4108 A2s
+Intervallo di valori della corrente di corto 
+circuito nel quale la conduttura risulta protetta 
+(rilevato sulle curve)
+da 400 A a infinito
+(punto d’intersezione 
+non rilevabile)
+Da 500 A a infinito
+(punto d’intersezione 
+non rilevabile)
+Intervallo di valori della corrente di corto 
+circuito che può aversi sulla linea
+Iccmin = 5,77 kA
+Iccmax = 12 kA
+Iccmin = 9,65 kA
+Iccmax = 12 kA
+Conclusioni
+La verifica è positiva in 
+quanto l’intervallo delle 
+possibili correnti di 
+corto circuito è interno 
+a quello di protezione
+La verifica è positiva in 
+quanto l’intervallo delle 
+possibili correnti di 
+corto circuito è interno 
+a quello di protezione
+1010
+109
+108
+107
+106
+105
+104
+103
+102
+101
+100
+250
+320
+400
+MAMH
+ML
+101
+102
+103
+104
+105
+100
+Icc [A]
+I2t [A2s]
+
+[PAG 2115]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-97
+2.4  Gestione automatica del riscaldamento di una scuola tramite controllore a logica 
+programmabile (PLC)
+La seguente applicazione prevede l’impiego di un PLC Telemecanique TSX-17 20 
+corredato di ingressi digitali a 24 V c.c. e di uscite a relè 230 V a.c.; si prevede inoltre 
+l’impiego di un modulo di espansione analogico a 4 ingressi in corrente 4 20 mA. Un 
+personal computer sarà collegato alla presa terminale del PLC e, dopo aver scaricato sulla 
+macchina il programma e mandato in esecuzione il software GWBasic, si potranno moni-
+torare sul video del PC gli eventuali segnali di allarme provenienti dal sistema. Nella Fig. 
+XX.2.5 viene proposto il cablaggio del PLC ai vari input e output del sistema.
+2.4.1  Caratteristiche funzionali del sistema
+Con l’impiego di un PLC si vuole provvedere alla gestione dell’impianto di riscalda-
+mento di una scuola. Le caratteristiche funzionali sono le seguenti:
+–  Accensione della caldaia ogni giorno dalle ore 7:00 alle ore 21:30, tranne il sabato e la 
+domenica.
+–  La domenica non entra in funzione, mentre il sabato il riscaldamento è acceso dalle 
+ore 7:00 alle 12:30.
+–  In ogni caso, se la temperatura scende al di sotto degli 8 °C, la caldaia entra in fun-
+zione, per poi spegnersi quando sono stati raggiunti i 10 °C di temperatura ambiente.
+–  In funzionamento normale, la caldaia si accende al di sotto dei 15 °C e si disattiva alla 
+temperatura di 18 °C.
+–  Si deve prevedere una segnalazione di allarme intermittente, se la temperatura rimane 
+al di sotto di 15 °C per più di 30 s.
+–  La lettura analogica sarà effettuata a condizione che:
+1)   rimanga entro il range del sensore (4÷20 mA);
+2)   il sensore sia collegato;
+3)   non vi siano difetti di modulo.
+–  Un messaggio contenente data e ora correnti verrà inviato ad una periferica (video o stam-
+pante), ogni qualvolta la caldaia venga attivata perché la temperatura è scesa sotto gli 8 °C.
+Nella Fig. XX.2.6 è visualizzato tale programma applicativo.
+2.4.2  Descrizione funzionamento
+Nella label 10 tramite I0,1 e I0,2 viene dato l’avvio o lo stop all’impianto; infatti il bit 
+B30 verrà impiegato successivamente in tutte le righe di programma che devono essere 
+condizionate dalla funzione di “avvio programma”.
+Nella label 20 viene programmato il blocco orodatario che attiverà i bit B1 e B2 nei 
+giorni e nelle ore stabilite.
+In particolare il primo blocco orodatario comprende l’intervallo dalle ore 07:00 alle ore 
+21:29 dal lunedì al venerdì (indicati con i numeri 1, 2, 3, 4, 5 all’interno del blocco fun-
+zione); il secondo blocco orodatario prevede l’attivazione del bit B2 dalle ore 07:00 alle 
+12:29 della sola giornata di sabato (indicato col numero 6 all’interno del blocco funzione).
+Nella label 30 viene elaborata la configurazione della parola registro di uscita. Tramite 
+il bit sistema SY1 automaticamente ad ogni ripresa, per una scansione, si provvede alla 
+configurazione del modulo analogico.
+Tale funzione può essere effettuata anche manualmente tramite I0,3. La configura-
+zione data, tramite l’immissione del valore esadecimale H’0011’ nella word-registro 
+OW1,7, ha il significato di configurare la lettura di una sola via (la IW1,0 collegata 
+all’ingresso 0 del modulo analogico indirizzato geograficamente come estensione 1), con 
+una predisposizione della scala a 4/20 mA.
+Si richiama per maggior chiarezza il funzionamento del modulo di estensione di 
+ingresso analogico che viene impiegato.
+
+[PAG 2116]
+XX-98
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+.
+Fig. XX.2.5  Cablaggio PLC ad input-output.
+ENTREES ANALOG
+
+[PAG 2117]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-99
+Fig. XX.2.6  Programma da caricare nella memoria del PLC.
+I0,2
+I0,1
+Label 10
+B0
+B0
+S
+R
+Label 20
+B0
+B2
+B1
+B0
+WEEK
+12345--
+begin
+end
+21:29
+07:00
+E
+<
+=
+>
+end
+begin
+-----6-
+WEEK
+E
+12:29
+07:00
+>
+=
+<
+Label 30
+I0,3
+SY1
+B0
+H'0011'
+OW1,7
+OPERATE
+Label 40
+S1,0
+I1,4
+B4
+B0
+B3
+Label 50
+B4
+IW1,0
+OPERATE
+W0
+I0,4
+Label 60
+B3
+B3
+I1,0
+S1,0
+W0 > 1000
+COMPAR
+B0
+B0
+S
+R
+Label 70
+B2
+B1
+B4
+O0,1
+W0 < 250
+COMPAR
+COMPAR
+W0 > 375
+O0,1
+S
+R
+B4
+Label 80
+B3
+B2
+B1
+COMPAR
+W0 > 875
+W0 < 687
+COMPAR
+O0,1
+R
+O0,1
+S
+R
+O0,2
+O0,1
+T0
+T,P: 30
+TB: 1s
+B2
+Label 90
+B1
+E
+MODIF: Y
+D
+R
+O0,3
+B0
+Label 100
+B5
+TER
+LOCAL
+W0
+B5
+T,S:
+T,L: 30
+E
+Label 110
+SY1 R
+TXT0
+D
+B6
+O0,1
+COMPAR
+W0 <= 687
+C
+SY6
+CW0[3]
+W1[3]
+OPERATE
+COMPAR
+W0 < 250
+W15
+CW3
+OPERATE
+W4[11]
+DT
+OPERATE
+S
+O
+I
+Label 120
+W22
+W21
+W20
+W0 * 16
+W21 + 4
+W20 / 1000
+OPERATE
+OPERATE
+OPERATE
+IO,5
+I0,5
+Label 130
+SY14
+SW16
+BCD W22
+OPERATE
+
+[PAG 2118]
+XX-100
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Al controllore TSX17_20 possono essere collegati dei moduli di espansione di 
+ingresso e di uscita analogici. Sono disponibili moduli in tensione (10 +10 V) ed in 
+corrente (420 mA) costituiti da un dispositivo A/D o D/A con risoluzione a 12 bit (11 
+bit + il segno). Sono provvisti di led indicatori di difetto sul bus e per quanto riguarda le 
+uscite analogiche, sono equipaggiate con un dispositivo di limitazione di corrente in caso 
+di corto circuito.
+I moduli di ingresso sono costituiti da 4 punti di input il cui valore analogico viene 
+acquisito in successione. Appena il valore analogico di una via viene convertito dal dispo-
+sitivo A/D, il valore numerico corrispondente viene messo a disposizione sul bus, per 
+poter essere letto dalla CPU; quando la CPU ha elaborato tale valore, viene lasciato libero 
+il bus e lanciata la conversione dell’altra via. Il tempo che viene impiegato per la conver-
+sione dei valori, dipende chiaramente dal numero delle vie che la CPU deve scrutare.
+Vi sono quattro registri di ingresso (IWx,0 - IWx,1 - IWx,2 - IWx,3), che contengono 
+rispettivamente il valore analogico dei quattro ingressi disponibili nel modulo.
+Mediante la parola registro di ingresso OWx,7 (dove x corrisponde al numero di 
+modulo) è possibile configurare il modulo:
+dove i bit da 8 a 15 non vengono utilizzati e i bit da 0 a 3 determinano il modo di esecu-
+zione della lettura:
+mentre i bit da 4 a 7 contengono la configurazione della scala di valori. Nei dispositivi in 
+corrente, il range dei valori di ingresso può essere configurato in 020 mA oppure 4
+20 mA. Tale configurazione corrisponderà a:
+Se viene utilizzato un modulo configurato a 4 20 mA, sono disponibili dei partico-
+lari bit denominati bit “tutto o niente”.
+I bit “tutto o niente” Ix,0 -Ix,1 - Ix,2 - Ix,3 (dove x è sempre il numero dell’indirizzo 
+geografico del modulo) sono normalmente allo stato logico 0, ma vengono posti allo stato 
+logico alto quando la corrente del segnale che arriva al modulo risulta essere inferiore a 
+0,5 mA. In tal modo essi possono segnalare la rottura o il distacco del trasduttore colle-
+gato al rispettivo ingresso, in quanto in condizioni normali la corrente varia da 4 a 20 mA. 
+Ovviamente con ingressi analogici in corrente 020 mA, non è possibile l’utilizzo di tali 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+OWx,7
+bit
+OWx,7
+OWx,7
+OWx,7
+OWx,7
+OWx,7
+1
+2
+3
+0
+Valore 0: tutte le vie scrutate (default combinazione)
+Valore 1: scrutamento permanente di via 0
+Valore 2: scrutamento vie 0 e 1 alternativamente
+Valore 3: scrutamento vie 0, 1 e 2 alternativamente
+Valore 4: scrutamento vie 0, 1, 2, 3 alternativamente
+(uguale a valore 0)
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+0
+1
+1
+0
+0
+0
+0
+1
+0
+bit
+OWx,7
+OWx,7
+5
+6
+7
+4
+Valore 0: scala 020 mA
+0
+0
+0
+0
+1
+0
+0
+0
+Valore 1: scala 420 mA
+bit
+
+[PAG 2119]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-101
+bit, poiché‚nel caso di ricezione di un segnale con un valore di corrente di 0 mA non si 
+riesce a determinare se tale segnale sia dovuto a rottura del captatore o ad un valore reale 
+al minimo dell’escursione che la scala permette.
+Il bit “tutto o niente” Ix,4 serve invece a 
+convalidare la misura; esso viene infatti 
+messo ad 1 solo se tutte le misure delle 
+vie configurate sono state effettuate 
+regolarmente; se entro un tempo pari ad 
+1 s non viene effettuata alcuna misura, 
+tale bit va a 0; viene posto allo stato 
+basso anche da un INIT o da un boot-
+strap a caldo o a freddo della macchina.
+Sono disponibili inoltre, analogamente 
+ai moduli digitali, dei bit di difetto (Si,0 
+ Si,6) che possono essere utilizzati nel 
+programma utente.
+Fig. XX.2.7  Corresponsione tra 
+valori decimali e valori analogici.
+Un’ultima notazione deve essere fatta sui valori decimali che vengono convertiti; sul 
+loro significato, relativamente al valore analogico che il trasduttore invia come segnale 
+all’ingresso del modulo analogico. 
+Nella Fig. XX.2.7 si ha il grafico della corrispondenza tra i valori decimali che vengono 
+presi in carico dal convertitore A/D, contenuti nella word IWx,7 (sull’asse delle ascisse X) 
+e i valori analogici presenti ai capi degli ingressi (sull’asse delle ordinate Y). Essendo il 
+dispositivo ad 11 bit più il segno, consente la codifica di un valore da +204 a 2048 
+(potendo disporre di 211 combinazioni = 2048 possibilità, da 0 a 2047). Come si può 
+dedurre dalla tabella di corresponsione (Tab. XX.2.32), il range, per un modulo in corrente 
+420 mA varia nell’intervallo da 0 a 1000.
+Tab. XX.2.32  Conversione valori analogici e valori decimali in un modulo di 
+ingressi analogico Telemecanique TSX AEG 4111 0 o 4  20 mA
+La formula di conversione è derivata da una operazione di interpolazione espressa dal 
+grafico di Fig. XX.2.7:
+IWx,i
+Valore decimale
+Scala 0  20 mA
+Scala 4  20 mA
+2047
+32,752
+-
+1797
+28,752
+32,752
+1000
+16,00
+20,00
+1
+0,016
+4,016
+0
+0,00
+4,000
+-250
+-4,00
+0,00
+-1000
+-16,00
+-12,000
+-2047
+-32,752
+-28,752
+-2297
+-
+-32,752
+(In) X
+20
+0
+500
+1000
+(Ia) Y
+ 4
+Y
+Y1
+–
+Y2
+Y1
+–
+-----------------
+X
+X1
+–
+X2
+X1
+–
+------------------
+=
+75
+
+[PAG 2120]
+XX-102
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+da cui:
+dove:
+intendendo per In il valore di corrente nominale codificato in decimale, dopo aver conver-
+tito il valore analogico Ia. Dunque il valore analogico esterno che si misura, sia esso 
+espresso in gradi di temperatura, in corrente, in tensione, in qualsiasi altra grandezza che 
+varia analogicamente, può essere trasformato tramite la formula di conversione, in un 
+valore decimale che è quello che si deve manipolare all’interno del programma utente.
+È anche vero che si può ricavare la formula inversa e determinare a quale valore analo-
+gico corrisponde il contenuto in evoluzione delle parola registro di ingresso. Nell’esempio 
+quindi attraverso una serie di operazioni viene tradotto il valore contenuto nella word 
+IW1,0 (trasferito a sua volta in W0), in modo che la lettura della word W22 fornisca il 
+valore analogico esterno. La formula di conversione Da valore digitale in analogico si 
+ricava dalla solita interpolazione:
+Ia = (0,016 In) + 4
+per cui i valori assoluti 250, 375, 687, 875, che vengono comparati per l’attivazione dell’uscita 
+O0,1, equivarranno rispettivamente al valore analogico espresso in mA:
+Ia = (0,016 250) + 4 = 8
+Ia = (0,016 375) + 4 = 10
+Ia = (0,016 678) + 4 = 14,992 = 15
+Ia = (0,016 875) + 4 = 18
+Tornando quindi all’esempio, nella label 120 la word W0 viene moltiplicata dapprima 
+per il valore 16, poi divisa per 1000 e sommata al valore decimale 4. La W22 che contiene 
+il risultato di tale operazione, esprimerà il valore della grandezza analogica esterna che si 
+sta controllando, cioè il valore reale che la sonda termometrica ravvisa come valore di 
+temperatura ambiente.
+Nella label 130, con l’attivazione dell’ingresso I0,5 tale valore viene visualizzato, tra-
+mite SW16, sul display accessorio del PLC in formato decimale, grazie alla messa a 1 del 
+bit sistema SY14.
+Tornando quindi alla label 40, il test dell’AND tra i contatti S1,0 - I1,4 - B3 - B0, se 
+vero, attiva il trasferimento della parola registro IW1,0 (label 50), che contiene il valore 
+del segnale analogico, disponibile sull’ingresso 0, convertito in valore decimale.
+Il test effettuato si spiega in tale modo:
+–  Se non vi è alcun guasto sul modulo, dovuto a difetti di alimentazione o di collega-
+mento (S1,0 = 0 e quindi il contatto NC è allo stato logico 0);
+–  Se non vi sono disfunzioni sulla via scrutata, bensì la misura è stata esattamente effet-
+tuata (I1,4 = 1 e quindi il contatto NO è allo stato logico alto);
+–  Se non viene effettuato il set della bobina B3, dovuto a reset manuale o automatico 
+(B3 NC è allo stato logico basso);
+–  Se è stato settato il bit di avviamento impianto B0;
+–  Se il risultato del test dei vari contatti in AND tra loro è vero, la lettura del valore ana-
+logico, convertito in decimale, viene posta nella word W0.
+Nella label 60 la prima riga di programma serve a settare il bit B3 e quindi si rientra in 
+Y
+X
+4
+–
+0 016
+--------------
+=
+In
+Ia
+4
+–
+0 016
+--------------
+=
+
+[PAG 2121]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-103
+uno dei casi di non effettuazione della lettura del valore analogico; tale eventualità è 
+determinata dalla fuoriuscita del valore dal range (oltre il valore decimale #1000), oppure 
+perché è stato individuato un guasto di collegamento del trasduttore all’ingresso analo-
+gico, mediante la messa a 1 del bit I1,0, o infine perché si è riscontrato un difetto di 
+modulo che ha messo a 1 il bit S1,0.
+Mediante il bit di ingresso I0,4 si determina il reset del guasto. L’uscita O0,1, che per-
+mette l’azionamento dell’impianto di riscaldamento, viene attivata quando il valore deci-
+male convertito è minore di 250 (pari a 8 °C), mentre viene resettata quando il valore è 
+maggiore di 375 (pari a 10 °C). Questo azionamento viene denominato “antigelo”, cioè 
+interviene l’attivazione della caldaia condizionata dalla sola temperatura, scesa sotto un 
+certo limite.
+Nella Fig. XX.2.7 si è visto quale sia la corresponsione tra i valori decimali che ven-
+gono presi in carico dal convertitore A/D, contenuti nella word IWx,i e i valori analogici 
+presenti ai capi degli ingressi; nella tabella di corresponsione (Tab. XX.2.32) si ricorda 
+essere visualizzato l’intervallo di variazione, per un modulo in corrente 420 mA che ha 
+un’escursione da 0 a 1000.
+I valori assoluti 687 e 875 che vengono comparati per l’attivazione dell’uscita O0,1 
+(label 80) equivarranno rispettivamente ai valori analogici di 15 °C e di 18 °C.
+L’uscita O0,1 sarà resettata dal bit B3 in una delle evenienze di difetto già citate; a tale 
+reset corrisponderà anche una segnalazione (tramite l’uscita O0,2) di interruzione di fun-
+zionamento della caldaia, data appunto da una situazione di difetto. Una seconda segnala-
+zione verrà attivata in modo intermittente, quando, sebbene l’orodatario dia il consenso di 
+avvio dell’impianto e la temperatura ambiente sia inferiore a 15 °C, il riscaldamento non 
+si attiva; tale segnalazione (label 90), sarà funzionante dopo 30 s dal blocco dell’impianto.
+Nelle label 100 e 110 viene programmato il blocco testo per l’invio all’esterno di un 
+messaggio.
+A tale proposito si rammentano le caratteristiche del blocco funzione testo che per-
+mette la comunicazione tra il controllore ed il mondo esterno. I tipi di scambio ammessi 
+nel PLC TSX17_20 sono:
+–  TER: scambio tra CPU e periferica tramite presa terminale.
+–  CPL: scambio tra CPU e periferica tramite moduli intelligenti di comunicazione 
+con BUS UNI-TELWAY.
+Sono presenti 8 blocchi funzione di questo tipo (da TXT0 a TXT7) nel controllore 
+preso in considerazione. Le funzioni caratteristiche del blocco sono:
+–  L’ingresso R che resetta la tabella di scambio del blocco testo.
+–  L’ingresso S è quello di start che da l’avvio alla trasmissione del messaggio.
+–  L’ingresso O (Out) è l’ingresso che, attivato in contemporanea con quello di start, con-
+sente l’emissione della tabella di comunicazione del blocco testo; tale ingresso quindi 
+posiziona il blocco in scrittura.
+–  L’ingresso I (Input), attivato in contemporanea allo start, consente la ricezione di un 
+messaggio preconfezionato nella tabella di trasmissione; tale ingresso posiziona il blocco 
+in lettura.
+–  L’uscita D (Done) segnala, con la messa a 1 del bit associato TXTi,E che lo scambio è 
+stato ultimato. In condizioni normali tale bit è a 1, per poter consentire di inviare o rice-
+vere messaggi da parte del controllore.
+–  L’uscita E (Error), associata al bit TXTi,E indica che la trasmissione non ha avuto 
+esito positivo in quanto errata.
+–  Le word TXTi,L e TXTi,S contengono rispettivamente la lunghezza della tabella di 
+emissione (in numero di caratteri) ed il resoconto codificato dell’avvenuta trasmissione
+
+[PAG 2122]
+XX-104
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+dei dati. Occorre inoltre definire in configurazione il tipo di blocco testo utilizzato (TER o 
+CPL) e l’indirizzo della prima word della tabella di trasmissione.
+Si rammenta che nel software di gestione del PLC, nel menu CONFIGURAZIONE - 
+APPLICAZIONE occorre settare il tipo di comunicazione (CAR o UTW), che nel caso 
+del sistema preso in esame è del tipo caratteri (CAR), poiché eseguita mediante la presa 
+terminale. Inoltre nella configurazione del blocco testo bisogna definire:
+–  TXTi: il numero del blocco testo utilizzato.
+–  Type: il tipo di scambio, se in modo TER (tramite presa terminale), o con modalità 
+CPL (con l’ausilio di un modulo intelligente mediante il BUS UNI-TELWAY).
+–  ADD BUF (address buffer): l’indirizzo della prima word del buffer di trasmissione, 
+seguita tra parentesi quadra dal numero di caratteri del buffer di ricezione (max 30).
+–  L: lunghezza del buffer di trasmissione (max 30 caratteri, equivalenti a 15 word).
+Nel caso specifico il messaggio che verrà inviato al monitor del PC, tramite porta 
+seriale, conterrà ora e data dell’avvio impianto, dovuto a situazione “antigelo”.
+Affinché il messaggio possa essere trasferito, il cavo di interconnessione TSX17 
+ACC8 tra il controllore e il personal computer (Fig. XX.2.8) deve avere il selettore posi-
+zionato in modalità ASCII e non in posizione TSX7, come è invece quando si vuole 
+comunicare tra PC e PLC in modo terminale, per la programmazione e la supervisione dei 
+processi. Sul PC è stato nel frattempo lanciato il programma in GWBasic (Tab. XX.2.33) 
+che permette di leggere e visualizzare sul monitor i dati che vengono inviati; a seconda 
+della porta seriale che viene utilizzata (COM1 o COM2) utilizzerà l’una o l’altra versione 
+del programma.
+Fig. XX.2.8   Collegamento PC-PLC.
+Nella Tab. XX.2.34 viene evidenziato il contenuto delle constant-word (CW0 - CW3), 
+scrittura che viene trasferita in 4 delle 15 word che configurano il messaggio da inviare. Si 
+rammenta che il byte più basso accoglie il carattere a sinistra della stringa, sicché per 
+esempio, il messaggio H’2644’ verrà codificato come D&, dove “D” corrisponde a “44” e 
+“&” corrisponde a “26”. 
+Quindi quando la temperatura sarà inferiore a 8 gradi (corrispondenti al valore asso-
+luto 250) e sarà stato dato l’avvio all’impianto (B0 a livello logico 1) verranno effettuati 
+una serie di trasferimenti:
+–  Il contenuto della constant-word CW0 (sigla D&T:) viene trasferito in 3 word a partire 
+da W1.
+–  Il contenuto della constant-word CW3 (caratteri ASCII “LF” e “CR”) viene trasferito 
+nella word W15.
+PLC Telemecanique TSX 17_20 
+TSX17ACC8
+Collegato alla porta seriale
+ASCII
+TSX 7
+RS 232C del PC
+
+[PAG 2123]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-105
+Tab. XX.2.34  Valori da inserire nelle constant word
+–  La codifica DT viene trasferita in 11 tabelle a partire da W0.
+Quindi, tramite il bit B5 (programmato nella label 100), attivo quando la temperatura 
+scende al di sotto degli 8 °C, la tabella di emissione viene inviata - tramite la presa termi-
+nale - per via seriale, al PC che è ad essa collegato.
+Tab. XX.2.33   Lista istruzioni programma in linguaggio GWBasic per la comunicazione 
+PLC - PC via seriale tramite porta terminale
+10’
+20 REM *** PROGRAMMA LETTURA WORD INVIATE DA PLC TELEMECANIQUE A COM1
+30’
+40 CLS
+50 G=O
+60 OPEN “COM1:9600,O,7,1,RS,CS,DS,CD”AS#1:’       APERTURA COM1=9600
+70 OUT &H3FB,INP(&H3FB) OR 1:’                               FORZATURA COM1
+80 IF LOC(1) = 0 THEN 80:’                                            VERIFICA SE BUFFER VUOTO
+90 WHILE LOC(1)<>0
+100 R$=INPUT$(1,#1)
+110 PRINT R$;
+120 WEND
+130 GOTO 80
+10’
+20 REM *** PROGRAMMA LETTURA WORD INVIATE DA PLC TELEMECANIQUE A COM2
+30’
+40 CLS
+50 G=O
+60 OPEN “COM2:9600,O,7,1,RS,CS,DS,CD”AS#1:’       APERTURA COM2=9600
+70 OUT &H3FB,INP(&H2FB) OR 1:’                               FORZATURA COM2
+80 IF LOC(1) = 0 THEN 80:’                                            VERIFICA SE BUFFER VUOTO
+90 WHILE LOC(1)<>0
+100 R$=INPUT$(1,#1)
+110 PRINT R$;
+120 WEND
+130 GOTO 80
+Parole costanti (Constant Word)
+Indirizzo
+Codifica 
+ASCII 
+esadecimale
+Codifica 
+messaggio
+Significato
+CW0
+2644
+D&
+Stringa D; stringa &
+CW1
+5420
+   T
+Stringa T; carattere spazio (SP)
+CW2
+003A
+    :
+Carattere nullo (NUL); carattere due punti
+CW3
+0D0A
+Carattere va a capo (CR), carattere a sinistra (LF)
+D&T
+SS AA-M M- GG -h h : mm : s s-
+dN
+Nota 
+SS: secolo; AA: anno; -M M-: mese; GG: giorno; -h h: mm :ss-: ora, minuti, secondi;
+dN: decimi e codice difetto arresto
+W10
+W9
+W8
+W7
+W6
+W5
+W4
+W3
+W2
+W1
+W0
+
+[PAG 2124]
+XX-106
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+2.5  Dimensionamento illuminotecnico di una sala lettura
+2.5.1  Generalità
+Il progetto che si va ad esaminare è il dimensionamento illuminotecnico della sala let-
+tura di una scuola. La scelta del corpo illuminante, secondo i criteri generali dell’illumi-
+notecnica, deve essere effettuata su basi che tengano conto della distribuzione del flusso 
+luminoso, del rendimento degli apparecchi, del comfort visivo nella utilizzazione e del 
+contributo che si apporta all’estetica dell’arredamento.
+Si rammenta che il dimensionamento illuminotecnico si effettua mediante due diffe-
+renti metodologie:
+–  metodo punto a punto; 
+–  metodo del flusso totale.
+Il metodo punto a punto permette di misurare il valore dell’illuminamento in ogni punto 
+della superficie da illuminare; si serve principalmente delle tavole di indicazione fotome-
+trica, riferite a ciascun apparecchio illuminante e fornite dal costruttore. Nel caso in cui 
+all’illuminamento concorrano più lampade, viene valutato ogni singolo contributo e poi 
+vengono sommati i risultati. Il metodo punto a punto viene utilizzato principalmente per il 
+calcolo dell’illuminazione di superfici all’aperto, mentre non risulta adatto per lo studio 
+dell’illuminazione degli interni. Le ragioni di tale scelta vengono motivate dal fatto che 
+negli interni si deve realizzare una distribuzione diffusa del flusso luminoso, per cui anche 
+il soffitto, le pareti e il pavimento diventano sorgenti secondarie che contribuiscono all’illu-
+minazione richiesta; inoltre dati i bassi valori di illuminamento considerati e le brevi 
+distanze da coprire, nella pratica diventano fondamentali anche le dimensioni della sor-
+gente luminosa che nel metodo punto a punto dovrebbe risultare puntiforme.
+Il metodo del flusso totale (chiamato anche metodo del coefficiente di utilizzazione) è 
+di gran lunga il più usato per il calcolo illuminotecnico degli ambienti interni; si presenta 
+come un metodo pratico e semplice sia per i calcoli di progetto (definito l’illuminamento e 
+il tipo del corpo illuminante se ne ricava il numero), che per i calcoli di verifica (definito il 
+numero e il tipo di corpi illuminanti si ricava l’illuminamento medio).
+2.5.2  Scelta degli apparecchi illuminanti
+Nella scelta e nell’installazione dei vari componenti elettrici verranno rispettate le 
+seguenti norme tecniche CEI:
+–  CEI 64-8 per l’impianto nel suo complesso;
+–  CEI 34-21 per gli apparecchi d’illuminazione.
+Inoltre, pur non essendo delle norme tecniche vere e proprie, si devono tenere in con-
+siderazione anche le raccomandazioni della CIE (Commission Internationale de l’Eclairage).
+Per i corpi illuminanti è prevista l’installazione a incasso in controsoffitto con lam-
+pade fluorescenti di classe I con un grado di protezione IP20.
+L’apparecchio illuminante designato (art. L 45258 2S) della ditta 3F Filippi, è costi-
+tuito da un tubo fluorescente lineare 1 58 W, provvisto 
