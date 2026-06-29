@@ -1,0 +1,1502 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 11/116 ===
+Chars: 43,304 | Offset: 441,985
+
+
+
+[PAG 242]
+III-24
+FISICA
+6.3.  Potenza sviluppata da una forza
+La potenza sviluppata da una forza è il lavoro compiuto dalla forza nell’unità di
+tempo.
+(III.6.7)
+La sua unità di misura è il watt (W). Un watt è la potenza sviluppata da una forza che
+compie un lavoro di un Joule in un secondo.
+6.4.  Energia
+L’energia è la capacità di un sistema di produrre lavoro. Ha la stessa unità di misura
+del lavoro (Joule) e si presenta in molteplici forme.
+Energia cinetica e teorema delle forze vive
+Si chiama energia cinetica di un punto materiale la quantità di energia dovuta alla sua
+velocità:
+(III.6.8)
+Il teorema delle forze vive afferma che il lavoro compiuto da una forza il cui punto di
+applicazione si sposti da A a B è uguale e opposto alla variazione di energia cinetica subita
+dal punto. In formula:
+(III.6.9)
+Energia potenziale della forza peso
+L’energia potenziale gravitazionale di un punto materiale di massa m che si trovi ad
+altezza h sulla superficie terrestre è:
+(III.6.10)
+se il punto viene lasciato cadere al suolo da altezza h con velocità iniziale nulla, le sue
+energie cinetica e potenziale a un istante t durante la caduta saranno rispettivamente:
+(III.6.11)
+e
+(III.6.12)
+Energia potenziale elastica
+L’energia potenziale elastica è l’energia meccanica immagazzinata da un corpo elea-
+stico, per effetto della deformazione generata da una forza esterna. Si scrive:
+(III.6.13)
+dove k è una caratteristica intrinseca del materiale considerato, essa è costante se il mate-
+riale è linearmente elastico e s è la deformazione.
+6.5.  Campi di forza conservativi
+Un campo di forza si dice conservativo se il lavoro compiuto dalla forza il cui punto di
+applicazione si sposti non dipende dal percorso compiuto, ma solo dal punto di partenza e
+da quello di arrivo.
+In questo caso si può definire l’energia potenziale U(P) del punto materiale, cioè la
+P
+dL
+dt
+------
+F ds
+dt
+-----
+
+F v
+
+=
+=
+=
+T
+1
+2--mv2
+=
+LAB
+TB
+TA
+–
+1
+2--mvB
+2
+1
+2--
+– mvA
+2
+=
+=
+U
+mgh
+=
+T t
+1
+2--m v t
+
+
+=
+1
+2--mg2t2
+=
+U t
+mgh t
+mg h-1
+2--gt2
+
+
+
+
+mgh-1
+2--mg2t2
+mgh-T t
+=
+=
+=
+=
+E
+1
+2--ks2
+=
+
+[PAG 243]
+FISICA
+III-25
+quantità di energia dovuta alla sua posizione rispetto a un sistema di riferimento arbitrario.
+6.6.  Conservazione dell’energia meccanica
+Per il teorema delle forze vive la variazione di energia cinetica passando da A a B è
+uguale e opposta al lavoro compiuto.
+In un campo conservativo il lavoro compiuto per spostarsi da A a B è U(B) – U(A).
+Allora la somma dell’energia cinetica T e dell’energia potenziale U, detta energia mecca-
+nica E si mantiene costante. 
+E = T + U = costante
+(III.6.14)
+Esempio
+Se una pallina viene lasciata cadere con
+velocità iniziale nulla da un’altezza h dal
+suolo, essa cadendo trasformerà gradualmente
+l’energia potenziale iniziale mgh in energia
+cinetica. Un momento prima di toccare il suolo
+tutta la sua energia sarà trasformata in energia
+cinetica. Nel breve istante dell’impatto al
+suolo, la pallina viene compressa e l’energia
+cinetica viene trasformata in energia elastica;
+subito dopo la pallina riprende la sua forma
+originale e rimbalza con velocità uguale ed
+opposta (ora l’energia è cinetica) risalendo
+fino a un’altezza h e con velocità finale nulla
+(energia potenziale iniziale ripristinata). 
+Fig. III.6.1  Rimbalzi elastici di una palla.
+Tutto questo naturalmente accade in una situazione ideale (Fig. III.6.1) senza l’attrito
+viscoso dell’aria e senza che nell’impatto venga dissipata energia, considerando il com-
+portamento della pallina, perfettamente elastico. 
+Nella realtà, parte dell’energia viene dissipata in queste due forme e l’altezza rag-
+giunta dalla pallina è < h.
+6.7.  Urti elastici ed anelastici
+Si parla di urto quando vengono in contatto due corpi con velocità vettoriali diverse.
+Durante l’urto si sviluppa una forza impulsiva, cioè molto intensa, ma di durata molto
+breve. È interessante analizzare il moto dei due corpi prima e dopo l’urto, facendo riferi-
+mento in particolare alle quantità di moto e alle energie cinetiche.
+(III.6.15)
+cioè
+(III.6.16)
+Quello che vale sempre è la conservazione della quantità di moto totale.
+Urti elastici
+L’urto si dice perfettamente elastico se l’energia cinetica totale si conserva.
+(III.6.17)
+cioè:
+(III.6.18)
+U
+T
+v
+v
+q1
+i
+q2
+i
+q1
+f
+q2
+f
++
+=
++
+m1v1
+i
+m2v2
+i
+m1v1
+f
+m2v2
+f
++
+=
++
+T1
+i
+T2
+i
+T1
+f
+T2
+f
++
+=
++
+1
+2--m1 v1
+i
+
+
+2
+1
+2--m2 v2
+i
+
+
+2
+1
+2--m1 v1
+f
+
+
+2
+1
+2--m2 v2
+f
+
+
+2
++
+=
++
+
+[PAG 244]
+III-26
+FISICA
+Urti anelastici
+All’estremo opposto l’urto si dice perfettamente anelastico se i due corpi proseguono
+dopo l’urto attaccati, cioè con la stessa velocità.
+Questo è il caso in cui la quantità massima possibile di energia cinetica viene dissi-
+pata, compatibilmente con quanto descritto nel principio di conservazione della quantità
+di moto totale.
+(III.6.19)
+quindi:
+(III.6.20)
+Cioè la velocità finale dei due corpi attaccati coincide con la velocità iniziale del cen-
+tro di massa tra i due corpi.
+7.  STATICA DEI SISTEMI RIGIDI
+La statica è la disciplina che studia le condizioni di equilibrio dei sistemi.
+7.1.  Statica del punto materiale
+Una certa posizione dello spazio si dice di equilibrio per un punto materiale, se, posto
+in quella posizione con velocità nulla, esso permane nel suo stato di quiete.
+Poiché questo succede se e solo se la risultante delle forze applicate al punto materiale
+è nulla, si può affermare che un punto materiale è in equilibrio se e solo se la risultante delle
+forze applicate è nulla.
+7.2.  Statica del corpo rigido, baricentro, momento risultante
+Quando si ha a che fare con un corpo rigido esteso e non più con un punto materiale,
+la condizione che la risultante delle forze sia nulla non è più sufficiente perché il corpo sia
+in equilibrio.
+In generale, qualunque sistema di forze applicate a un
+corpo rigido è equivalente a un sistema composto da una
+forza applicata in un punto (Fig. III.7.1) detto baricentro
+del sistema di forze, detto anche centro delle forze paral-
+lele o anche centro di forza, pari alla risultante delle forze
+e una coppia di forze parallele e discordi che ha come
+momento la somma vettoriale dei momenti di tutte le forze
+del sistema, detta momento risultante.
+Fig. III.7.1  Baricentro di un
+corpo rigido.
+Condizione necessaria e sufficiente per l’equilibrio di un sistema rigido è che siano
+contemporaneamente nulli la forza risultante e il momento risultante 
+F = 0        e      M = 0
+(III.7.1)
+Considerando il caso particolare di un sistema di forze parallele applicate in diversi
+punti di uno stesso corpo rigido, esso avrà esattamente lo stesso effetto sul moto del corpo
+della forza risultante applicata nel baricentro del sistema di forze.
+In Fig. III.7.2 vengono rappresentate alcune figure geometriche piane delle quali
+viene intercettato il punto di baricentro G.
+m1v1
+i
+m2v2
+i
+m1
+m2
++
+
+v f
+=
++
+v f
+m1v1
+i
+m2v2
+i
++
+m1
+m2
++
+------------------------------
+=
+G
+
+[PAG 245]
+FISICA
+III-27
+Fig. III.7.2  Baricentri di alcune figure geometriche piane.
+7.3.  Macchine semplici: leve e carrucole
+Una macchina semplice è un dispositivo che permette di trasferire energia da un punto
+a un altro tramite una forza attiva applicata e una forza passiva in uscita.
+In una macchina semplice, il lavoro compiuto dalla forza attiva è pari a quello della
+forza passiva. In sostanza quello che si guadagna (perde) in intensità della forza si perde
+(guadagna) in spostamento.
+Si dice che una macchina è vantaggiosa quando la forza applicata è minore di quella
+in uscita; si dice che una macchina è svantaggiosa quando la forza applicata è maggiore di
+quella in uscita; si dice che una macchina è indifferente quando la forza applicata è uguale
+a quella in uscita.
+La leva è un sistema composto da un’asta rigida incernierata in un punto detto fulcro
+soggetta a due forze parallele applicate in due punti diversi.
+Una delle due forze, quella attiva, si chiama forza motrice, l’altra, quella passiva forza
+resistente.
+In generale la leva è in equilibrio quando i momenti delle due forze sono uguali ed
+opposti, poiché l’asta è libera di ruotare attorno al fulcro, ma non di traslare e quindi la forza
+risultante è sempre compensata dalla reazione vincolare del fulcro. Quale delle due si defi-
+nisca motrice e quale resistente, dipende solo dal contesto di utilizzo della leva.
+Ad esempio in uno schiaccianoci è naturale considerare come forza motrice quella
+applicata dalla mano dell’uomo e come forza resistente la reazione vincolare della noce.
+A
+B
+C
+G
+A
+B
+C
+D
+G
+B
+C
+D
+G
+E
+B
+D
+C
+B
+A
+D
+G
+2
+4
+1
+3
+A E
+TRIANGOLO
+PARALLELOGRAMMO
+TRAPEZIO
+QUADRILATERO
+G è il punto di intersezione delle tre
+mediane
+G è il punto di intersezione delle due 
+diagonali
+G è il punto di intersezione della me- 
+diana dei lati paralleli con BD, dove
+BB= DC e DD = AB
+G è il punto di intersezione delle con-
+giungenti i baricentri dei triangoli in cui 
+è diviso il quadrilatero dalle diagonali
+
+[PAG 246]
+III-28
+FISICA
+Quando il momento della forza della mano supera quello massimo possibile generato dalla
+reazione vincolare del guscio della noce, l’equilibrio si rompe e anche la noce.
+Anche una bilancia a piatti è un esempio di leva con due forze peso che generano due
+momenti contrapposti; in questo caso è evidente che le definizioni di forza motrice e resi-
+stente sono puramente convenzionali.
+Leve di primo, secondo e terzo genere
+Una leva si dice di primo, secondo o terzo genere a seconda delle posizioni relative
+dei tre punti fondamentali: 
+–  Il fulcro;
+–  Il punto di applicazione della forza motrice;
+–  Il punto di applicazione della forza resi-
+stente.
+In particolare (Fig. III.7.3):
+1)  1° genere: il fulcro è tra i due punti di appli-
+cazione;
+2)  2° genere: il punto di applicazione della
+forza resistente è tra gli altri due;
+3)  2° genere: il punto di applicazione della
+forza motrice è tra gli altri due.
+Una leva è vantaggiosa, svantaggiosa o indiffe-
+rente a seconda che il fulcro si trovi rispettiva-
+mente più vicino al punto di applicazione della
+forza resistente, più vicino al punto di applica-
+zione della forza motrice o equidistante dai
+punti di applicazione. 
+In particolare una leva di primo genere può
+essere vantaggiosa, svantaggiosa o indifferente,
+una leva di secondo genere è sempre vantag-
+giosa e una leva di terzo genere è sempre svan-
+taggiosa.
+Fig. III.7.3  Leve di 1°, 2° e 3° genere.
+Carrucola
+La carrucola è un sistema composto da una corda non esten-
+sibile libera di scorrere attorno ad un disco vincolato. Agli
+estremi della corda vengono applicate forze di trazione (ad
+esempio la forza peso). La carrucola è una macchina indiffe-
+rente: trasferisce invariata a un estremo la forza applicata
+all’altro estremo. In Fig. III.7.4 è rappresentata una partico-
+lare composizione di carrucole: una fissa e una mobile.
+Fig. III.7.4   Carrucole.
+Paranco
+Una particolare applicazione di carrucole è rap-
+presentata dal paranco (Fig. III.7.5), costituito da
+una serie di dischi solidali fra loro e incernierati nel
+centro. Il rapporto delle forze applicate F1 e F2 è
+inversamente proporzionale ai dischi cui sono appli-
+cate. 
+Fig. III.7.5  Paranco.
+1)
+2)
+3)
+fulcro
+fulcro
+fulcro
+F
+F/2
+F1
+F2
+r1
+r2
+F1  r1 = F2  r2
+
+[PAG 247]
+FISICA
+III-29
+8.  CORPO RIGIDO
+Un sistema di particelle tale che le distanze relative si mantengono costanti nel tempo
+si dice corpo rigido. 
+8.1.  Movimenti rigidi
+Il moto di un corpo rigido si dice traslatorio quando tutte le sue particelle si muovono
+con la stessa velocità. In questo caso lo studio del moto del suo baricentro è identico a
+quello di un punto materiale.
+Si dice che il corpo rigido ruota attorno a una retta detta asse fisso quando ogni sua
+particella si muove lungo una circonferenza con centro sulla retta. Il rapporto tra il
+modulo della velocità di una particella e la sua distanza dall’asse fisso è lo stesso per ogni
+punto del corpo rigido. Si chiama velocità angolare o di rotazione il vettore  che ha per
+modulo questo rapporto, come direzione l’asse fisso e verso dato dalla regola della vite.
+Qualunque sia il moto di un corpo rigido, in ogni istante è la somma di un moto trasla-
+torio e di un moto rotatorio.
+8.2.  Momento d’inerzia rispetto ad un asse
+Il momento d’inerzia (Fig. III.8.1) rispetto ad un determinato asse è una quantità
+caratteristica del corpo rigido che si indica con il simbolo I.
+Fig. III.8.1  Momenti d’inerzia di alcune figure geometriche regolari.
+Se il corpo rigido è composto da n punti materiali il suo valore è:
+(III.8.1)
+dove mi è al massa dell’i-esimo punto materiale e ri la sua distanza dall’asse.
+Nel caso di corpo rigido continuo la sua espressione diventa:
+QUADRATO
+I = B4/4
+B
+B
+B
+B
+x
+x
+y
+y
+y
+y
+x
+x
+ROMBO
+I = B4/4
+RETTANGOLO
+Ix = BH3/12
+B
+H
+x
+x
+y
+y
+y
+y
+x
+x
+y
+y
+x
+x
+x
+x
+x
+y
+y
+R
+r
+R
+B
+H
+CERCHIO
+CORONA
+I = (R4-r4)/4
+ELLISSE
+CIRCOLARE
+I = R4/4
+Ix = BH3/64
+I
+miri
+2
+i
+1
+=
+n
+
+=
+
+[PAG 248]
+III-30
+FISICA
+(III.8.2)
+dove r è la distanza dall’asse dell’elemento infinitesimo di massa dm e (x,y,z) è la den-
+sità dell’elemento infinitesimo di volume dV.
+Nel caso particolare di corpo omogeneo (densità  costante), la III.8.2 diventa:
+(III.8.3)
+L’aver definito il momento d’inerzia rispetto ad un asse permette di scrivere in una
+forma sintetica l’energia cinetica del corpo rigido:
+(III.8.4)
+8.3.  Momento assiale della quantità di moto
+Anche il momento totale M della quantità di moto rispetto all’asse di rotazione, detto
+anche momento assiale,  assume una espressione particolarmente compatta:
+(III.8.5)
+8.4.  Assi principali di inerzia
+La relazione precedente è una relazione tra moduli e non tra vettori. Non è sempre
+vero che la direzione del vettore M momento della quantità di moto coincide con l’asse di
+rotazione. Le direzioni per le quali questo è vero si chiamano assi principali d’inerzia.
+Per ogni corpo rigido, esiste almeno una terna di assi principali d’inerzia mutuamente
+ortogonali. Quando il corpo rigido ruota attorno a un asse principale d’inerzia vale la rela-
+zione vettoriale:
+(III.8.6)
+8.5.  Teorema di Huygen-Steiner
+Il momento d’inerzia IP di un corpo rispetto a un asse
+passante per un punto P qualsiasi (Fig. III.8.2) è dato dal
+momento d’inerzia Io rispetto all’asse oo parallelo al
+primo (pp) e passante per il centro di massa O, som-
+mato al prodotto della massa m del corpo per il quadrato
+della distanza r fra gli assi.
+(III.8.7)
+Fig. III.8.2  Momento 
+d’inerzia di un corpo.
+8.6.  Conservazione del momento della quantità di moto rispetto a un asse
+Dal terzo principio della dinamica (azione e reazione) segue che in un sistema di rife-
+rimento inerziale, la quantità di moto e il momento angolare, rispetto a un polo qualsiasi
+di un sistema di particelle isolato, si mantengano costanti nel tempo. 
+Questo vale in particolare anche per il corpo rigido.
+I
+r2 m
+r2x y z
+
+
+V
+d
+C
+=
+d
+C
+=
+I
+r2 V
+d
+C
+=
+T
+1
+2--I2
+=
+M
+miri
+2
+i
+1
+=
+n
+
+
+
+
+
+
+
+
+
+
+I
+=
+=
+M
+I
+=
+r
+m
+p
+p
+o
+o
+O
+IP
+I0
+mr2
++
+=
+
+[PAG 249]
+FISICA
+III-31
+Esempio 1
+Si consideri un corpo rigido vincolato a ruotare senza attrito attorno a un asse verticale,
+rispetto al quale il suo momento d’inerzia è I e con velocità angolare iniziale nulla (Fig.
+III.8.3). Un proiettile di massa m urta il corpo nel punto P distante OP = r dall’asse, con velo-
+cità v perpendicolare all’asse e a OP in modalità perfettamente anelastica, cioè rimanendovi
+attaccato al termine dell’urto. 
+Si voglia calcolare la velocità angolare  del corpo
+rigido dopo l’urto. Applicando il principio di conserva-
+zione del momento della quantità di moto si ha:
+rmv = I + mr2
+(III.8.8)
+per cui:
+(III.8.9)
+Fig. III.8.3  Corpo vincolato all’asse oo.
+Esempio 2
+Il giroscopio è un corpo rigido libero di muoversi comunque attorno al suo centro di
+massa, unico punto fisso. 
+Si supponga di applicare a un giroscopio che ruoti con un’elevata velocità angolare ,
+una coppia di forze perpendicolare all’asse di rotazione.
+Contrariamente a quanto potrebbe suggerire l’intuizione, il giroscopio avrà una rota-
+zione sul piano perpendicolare alla direzione delle forze. 
+Questo si giustifica notando che, se la rotazione prodotta avesse una componente
+parallela alle forze non nulla, si avrebbe una variazione del momento della quantità di
+moto del giroscopio parallela alle forze e quindi una componente del momento della cop-
+pia delle forze parallela alle forze stesse, cosa assurda essendo il momento di una forza il
+prodotto vettore della distanza del punto di applicazione con la forza stessa e quindi sem-
+pre ortogonale alla forza.
+9.  STATICA DEI FLUIDI
+Le sostanze che si presentano allo stato areiforme o liquido, vengono chiamate fluidi,
+poiché, a differenza dei corpi solidi che hanno volume e forma propria, i liquidi assumono
+la forma del recipiente che li contiene mentre gli areiformi non possiedono ne forma ne
+volume propri.
+Per semplicità di trattazione si parlerà di liquidi perfetti, schematizzando in tal modo i
+liquidi reali, considerandoli incomprimibili, indilatabili e privi di attrito interno.
+I liquidi e gli areiformi sono pertanto assimilabili, infatti l’assenza di attrito interno
+che li accomuna consente di definire per entrambi le medesime leggi meccaniche.
+9.1.  Variazione di pressione all’interno di un fluido in quiete, legge di Stevino
+All’interno di un fluido in quiete la pressione è diretta perpendicolarmente all’ele-
+mento considerato e non dipende dal suo orientamento.
+Tale fenomeno è evidente, ad esempio, affondando un palloncino in acqua, infatti si
+può osservare come il palloncino diminuisce il suo volume senza modificare la propria
+forma, in quanto la pressione idrostatica che subisce sulle pareti è perpendicolare alle
+stesse in ogni punto. Allo stesso modo si può osservare che aumentando la profondità di
+immersione del palloncino all’interno del fluido le sue dimensioni diminuiscono in pro-
+porzione alla profondità raggiunta.
+m
+o
+o
+
+rmv
+I
+mr2
++
+-----------------
+=
+
+[PAG 250]
+III-32
+FISICA
+Fig. III.9.1  Pressione interna ad un
+fluido in quiete, Legge di Stevino.
+La differenza di pressione esistente fra due punti immersi
+in un fluido in quiete è pari al peso della colonna di fluido
+avente altezza uguale alla differenza di immersione fra
+gli elementi considerati. 
+Quindi:
+(III.9.1)
+Questa uguaglianza prende il nome di legge di Stevino
+(Fig. III.9.1), da colui che l’ha originariamente formu-
+lata.
+9.2.  Pressione all’interno di un fluido in quiete
+Se il fluido considerato avesse peso trascurabile, come
+avviene con buona approssimazione per i gas, allora P1 =
+P2 e la pressione risulterebbe uguale in tutti i punti.
+Fig. III.9.2  Vasi comunicanti contenenti lo stesso liquido, legge di Pascal.
+In generale la legge di Pascal afferma che in un fluido in quiete la pressione è costante
+in tutti i punti che si trovano alla stessa quota rispetto al suolo (Fig. III.9.2). 
+Se più recipienti vengono collegati fra loro e riempiti
+dello steso liquido la superficie libera si disporrà in tutti
+alla stessa altezza, mentre, se i recipienti vengono riem-
+piti con liquidi aventi diverso peso specifico, le superfici
+libere si disporranno secondo altezze inversamente pro-
+porzionali alle densità dei liquidi:
+(III.9.2)
+Fig. III.9.3  Vasi comunicanti.
+9.3.  Legge di Archimede
+Le spinte di pressione idrostatica esercitate da un liquido
+su di un corpo immerso, evidenziano che, le spinte oriz-
+zontali si trovano sempre in equilibrio, mentre le spinte
+verticali che sono rivolte verso il basso sono sempre
+minori di quelle rivolte verso la superficie; per questo
+motivo la risultante delle forze di pressione è sempre
+rivolta verso l’alto. Pertanto un fluido in quiete esercita
+una forza su un corpo immerso in esso, diretta dal basso
+verso l’alto, pari al peso del fluido spostato dal corpo. 
+(III.9.3)
+Fig. III.9.4  Forza di Archimede.
+A
+A
+h
+P1
+P2
+P2-P1
+gh
+=
+h
+a)
+b)
+c)
+h1
+h2
+1h1 = 2h2
+1h1
+2h2
+=
+F
+-mf g
+=
+
+[PAG 251]
+FISICA
+III-33
+Tale spinta è detta forza di Archimede ed è pari al peso della massa del fluido spostato
+(Fig. III.9.4).
+9.4.  Equilibrio di galleggiamento
+Sia G il baricentro della forza peso di un corpo galleggiante e sia A il punto di applica-
+zione della risultante delle forze di pressione che lo sostengono il corpo.
+In generale può accadere che i due punti
+coincidano, non coincidano, oppure che il
+centro delle spinte si trovi sopra il baricentro,
+o viceversa che G stia sopra ad A.
+Nel caso particolare che i due punti coin-
+cidano si ha un equilibrio indifferente, in
+quanto non può aversi, né un momento ribal-
+tante, né un momento stabilizzante.
+L’equilibrio risulta stabile, quando G si
+trova al di sotto del centro di spinta, oppure,
+restando G al di sopra del centro di spinta,
+questo si trovi in una posizione per cui la
+risultante della spinta incontri la verticale per
+G in un punto M, detto metacentro, posto al
+di sopra di G, come in Fig III.9.5.
+Fig. III.9.5  Equilibrio di galleggiamento.
+9.5.  Barometro di Torricelli
+Ideato da Evangelista Torricelli per misurare la pressione atmosferica, consiste di un
+tubo di vetro, rettilineo, lungo circa un metro e chiuso ad una estremità. Una volta riem-
+pito di mercurio e capovolto, avendo cura che non entri aria all’interno, il liquido conte-
+nuto si dispone ad una altezza tale che il peso della colonna di mercurio equilibria la
+pressione atmosferica che agisce sul liquido versato nel recipiente alla base del tubo.
+Vale pertanto:
+(III.9.4)
+dove Hgè la densità del mercurio a 0° C e vale 13595,5 g/dm3.
+In questo modo, misurando h è possibile calcolare la pressione atmosferica. L’altezza
+che si misura è indipendente dalla sezione di tubo utilizzato poiché la pressione esprime il
+rapporto fra la componente della forza perpendicolare all’unità di superficie considerata.
+Nel SI si misura in (Pa) Pascal, dove 1Pa = 1N/m2.
+Un’unità di misura frequentemente usata nel sistema pratico per misurare la pressione
+è l’atmosfera (atm). 1atm = 101325 Pa e corrisponde alla pressione esercitata alla base
+della colonna di mercurio alta 760 mm nel barometro di Torricelli a 0° C dove g =
+9,80665 m/s2.
+Tab. III.9.1  Unità di misura della pressione
+1 atm
+=
+101.325 Pa
+1 bar
+=
+10.000 Pa
+1 Tor
+=
+1 mmHg
+1/760 atm
+mmHg
+=
+1,33 Pa
+A
+A
+A
+A
+G
+G
+G
+G
+instabile
+stabile
+M
+P
+Hggh
+=
+
+[PAG 252]
+III-34
+FISICA
+Nella Tab. III.9.1 sono visualizzate le corrispondenze tra le unità di misura più fre-
+quentemente usate per la misura della pressione.
+10.  FENOMENI DI SUPERFICIE
+Detti fenomeni possono essere spiegati considerando le forze esistenti in natura fra le
+molecole, esse hanno origine elettrica e magnetica. La coesione è la forza che tende a
+tenere unite le molecole della stessa specie, mentre l’adesione è la forza che si sviluppa
+fra molecole diverse. Il prevalere dell’adesione sulla coesione, o viceversa, della coesione
+sull’adesione, determina il fatto che ad esempio una barra di vetro immersa in acqua si
+ricopre di un velo d’acqua, mentre, immergendo la stessa nel mercurio, si ricopre di goc-
+cie, senza bagnarsi.
+10.1.  Tensione superficiale
+La tensione esistente sulla superficie di un liquido impedisce a una molecola che si
+trova all’interno della massa fluida di portarsi in superficie, aumentando così la superficie
+della massa liquida. 
+In Fig. III.10.1 si può osservare tale fenomeno
+schematizzato: la risultante delle forze intermole-
+colari agenti su una molecola posta sulla superficie
+è rivolta verso l’interno della massa liquida, men-
+tre per le molecole interne la risultante è nulla.
+Nella Tab. III.10.1  è visualizzato il valore della
+tensione superficiale di alcune sostanze.
+Fig. III.10.1  Schema delle forze intermolecolari.
+10.2.   Capillarità
+Tale fenomeno si osserva nel contatto fra i
+solidi ed i liquidi, in particolare all’interno di
+tubi aventi diametro molto piccolo, paragona-
+bile a quello di un capello. Immergendo un
+tubo sufficientemente piccolo in acqua, si
+osserva l’acqua risalire all’interno del tubo per
+capillarità. 
+Allo stesso modo un panno, parzialmente
+immerso in acqua tende ad assorbire  per capil-
+larità l’acqua che risale anche verticalmente
+lungo il panno fino a saturare l’intero tessuto.
+Fig. III.10.2  Tubi capillari immersi in fluidi diversi.
+Tab. III.10.1  Tensione superficile di alcune sostanze
+Sostanza
+ N/m]
+Acqua
+23,70 10-3
+Glicerina
+64,30 10-3
+Mercurio
+48,00 10-3
+Olio d’oliva
+35,40 10-3
+Linea di superficie
+a)
+b)
+
+[PAG 253]
+FISICA
+III-35
+Immergendo dei tubicini, prima in acqua e poi nel mercurio, si osserva che, mentre
+l’acqua risale all’interno del tubicini, il livello del mercurio all’interno del tubicino si
+abbassa. In Fig. III.10.2 vengono evidenziati i due fenomeni: nella figura a) il tubicino è
+immerso nell’acqua mentre nella figura b) nel mercurio.
+Tale fenomeno dipende dalla conforma-
+zione dei menischi, ovvero dalla conformazione
+delle linee di contatto che si formano fra il tubo
+ed il liquido. In particolare avviene che, se la
+tensione fra solido e areiforme è maggiore di
+quella fra solido e liquido, il menisco ha la con-
+cavità rivolta verso l’alto, in tal caso si dice che
+il liquido bagna il tubo, viceversa, si dice che il
+liquido non bagna il tubo. In Fig. III.10.3a il
+liquido bagna il recipiente, mentre in Fig.
+III.10.3b il liquido non bagna il recipiente.
+Fig. III.10.3  Menischi di contatto.
+Esempio
+Si consideri una bolla di liquido immersa in un liquido di diversa natura. Affinché la
+calotta superiore possa restare in equilibrio sulla calotta inferiore deve accadere che le forze
+di pressione esterne trovino equilibrio con quelle interne alla bolla. La pressione interna è:
+(III.10.1)
+dove p è la pressione interna e  è la tensione esistente sul contorno della bolla. Il tutto
+deve trovare equilibrio con la pressione esistente del liquido che vale: 
+(III.10.2)
+da cui:
+(III.10.3)
+La differenza fra la pressione interna ed esterna diventa:
+(III.10.4)
+La III.10.4 evidenzia come la differenza fra le pressioni interna ed esterna in una bolla
+dipende dal raggio di curvatura. In particolare ne segue che, più piccola è la bolla e mag-
+giore deve essere la pressione interna, viceversa tanto più grande è la bolla, tanto minore
+risulta la differenza fra le pressioni interna ed esterna.
+Si osserva infatti che dall’unione di due bolle di dimensioni diverse, si forma un’unica
+bolla, con raggio di curvatura più grande.
+11.  DINAMICA DEI FLUIDI
+La dinamica dei fluidi studia i fluidi in movimento. Essa si distingue in idrodinamica,
+per lo studio dei liquidi, ed aerodinamica per lo studio del moto dei corpi nell’aria.
+Data la complessità del problema da affrontare si adottano determinate semplifica-
+zioni. Si parla infatti di moto stazionario o moto a regime, intendendo che il moto del
+fluido è tale da non variare la sua velocità nel tempo. Con ciò non si intende che durante il
+moto il fluido abbia la stessa velocità in ogni punto, ma, fissato un qualunque punto dal
+quale osservare il moto, la velocità del fluido rimane costante nel tempo. Il moto può
+a)
+b)
+r2p
+2r
++
+r2P
+r2p
+2r
+r2P
+=
++
+P
+P-p
+2
+r-----
+=
+=
+
+[PAG 254]
+III-36
+FISICA
+avvenire in modo rotazionale od irrotazionale; se si considera un elemento interno alla
+massa del fluido in movimento, questo può in generale, ruotare anche attorno a se stesso,
+è quanto si verifica per moti turbolenti.
+I fluidi presenti in natura possiedono inoltre una propria viscosità, od attrito interno;
+l’attrito interno di un olio è assai diverso da quello dell’acqua o dell’alcol.
+Per semplificare ulteriormente la trattazione si considerano fluidi ideali o perfetti, tali
+da essere non viscosi ed incomprimibili. Fra le due approssimazioni, la non viscosità è la
+più importante in quanto, mentre tutti i fluidi reali sono dotati di una caratteristica visco-
+sità, ad esempio i lubrificanti sono utilizzati proprio per tale caratteristica, tutti fluidi e gli
+areiformi, se considerati a velocità inferiori a quella del suono, sono praticamente incom-
+primibili. Nella trattazione si considerano pertanto fluidi ideali cioè non viscosi ed incom-
+primibili, in moto stazionario ed irrotazionale.
+11.1.  Tubo di flusso ed equazione di continuità
+Il flusso di un fluido ideale in moto stazionario e
+irrotazionale si sviluppa secondo linee continue
+immaginarie, dette linee di corrente, lungo le quali
+le velocità del fluido sono tangenti in ogni punto.
+L’unione di tutte le linee di corrente racchiuse
+all’interno di una linea chiusa prende il nome di
+tubo di flusso (Fig. III.11.1).
+ Data l’incomprimibilità del fluido considerato, si
+verifica che, la massa di fluido idea-le che
+nell’unità di tempo attraversa un tubo di flusso, in
+moto stazionario ed irrotazionale, rimane la stessa
+in qualsiasi sezione (Fig. III.11.2).
+Fig. III.11.1  Tubo di flusso.
+Siano S1 ed S2, due sezioni normali al tubo di flusso e v1, v2, le velocità del fluido per-
+pendicolari alle sezioni considerate, allora la massa del fluido che nell’unità di tempo
+attraversa le due sezioni è la stessa,
+dm1 = dm2 = costante
+(III.11.1)
+questa prende anche il nome di equazione di coninuità per i fluidi, ed essendo:
+dm1 = v1dtds1   e  dm2 = v2dtds2
+(III.11.2)
+si ottiene: 
+v1ds1 = v2ds2
+(III.11.3)
+Si definisce portata volumica la massa che
+attraversa il tubo nell’unità di tempo, che, per il
+moto considerato, è costante nel tempo e indi-
+pendente dalla superficie della sezione perpen-
+dicolare al tubo S considerata, e vale:
+(III.11.4)
+Fig. III.11.2  Velocità in un tubo di flusso.
+pertanto:
+v1S1 = v2S2
+(III.11.5)
+da cui si verifica che la velocità media in una qualsiasi sezione normale al tubo di flusso è
+inversamente proporzionale all’area della sezione considerata.
+v1
+v2
+S1
+S2
+Q
+v s
+d
+s
+=
+
+[PAG 255]
+FISICA
+III-37
+11.2.  Teorema di Bernoulli
+Il teorema di Bernoulli considera
+l’equilibrio dal punto di vista energetico,
+di un fluido perfetto in movimento attra-
+verso un tubo di flusso, fra due generiche
+sezioni (Fig. III.11.3). 
+Si considerino P1 e P2 le pressioni
+esercitate sul fluido considerato rispetti-
+vamente nelle sezioni S1 ed S2, le forze
+peso del fluido che nell’istante conside-
+rato attraversa le due sezioni, rispettiva-
+mente gz1 e gz2 e la massa che
+attraversa le due sezioni, che per conti-
+nuità rimane la stessa, rispettivamente
+v1ds1dt = v2ds2dt. Per il teorema delle
+forze vive il lavoro compiuto delle forze
+esterne sul sistema è pari alla variazione
+della sua energia cinetica e quindi:
+Fig. III.11.3  Moto di un fluido attraverso
+due sezioni di un tubo di flusso. 
+(III.11.6)
+Semplificando i termini comuni si può scrivere:
+(III.11.7)
+e quindi la somma delle energie di posizione, di pressione e cinetica, di un fluido perfetto
+in moto stazionario, è costante, non dipende infatti, ne dalle sezioni considerate, ne
+dall’istante di tempo considerato.
+11.3.  Teorema di Torricelli
+Una interessante applicazione del teorema di Bernoulli è rappresentata dal teorema di
+Torricelli. Si consideri un fluido contenuto in un recipiente come in Fig. III.11.4, scri-
+vendo l’equilibrio energetico di Bernoulli fra due sezioni, posizionate rispettivamente,
+sulla superficie libera e in corrispondenza dell’orifizio dal quale il liquido è lasciato libero
+di uscire, si ottiene:
+(III.11.8)
+dove P rappresenta la pressione atmosferica
+e v la velocità del liquido in corrispondenza
+della sezione S2. Dalla III.11.5 si ottiene:
+(III.11.9)
+pertanto, la velocità di uscita dal liquido
+dall’orifizio del recipiente dipende solo dalla
+differenza di quota esistente fra il livello rag-
+giunto dal liquido nel recipiente e il foro di
+uscita.
+Fig. III.11.4  Contenitore per l’applicazione 
+del Teorema di Torricelli.
+x
+y
+z
+Z1
+Z2
+S1
+S2
+v1
+v2
+P1
+P2
+P1 - P2
+
+v1ds1dt
+z1 - z2
+
+gv1ds1dt
++
+1
+2--v2
+2 - v1
+2
+
+v1ds1dt
+=
+P1
+gz1
+1
+2--v1
+2
++
++
+P2
+gz2
+1
+2--v2
+2
+costante
+=
++
++
+=
+P
+gz1
++
+P
+gz2
+1
+2--v2
++
++
+=
+z
+S1
+Z2
+O
+S2
+Z1
+v
+2g z1 - z2
+
+
+2gh
+=
+=
+
+[PAG 256]
+III-38
+FISICA
+Non va dimenticato che la velocità calcolata in questo modo è puramente teorica, viste
+le ipotesi su cui si fonda la trattazione fatta, nella pratica, in particolare per modesti salti
+di quota e ridotte portate in uscita dal foro, le forze viscose e di contatto risultano di gran
+lunga preponderanti sulle variabili considerate in questo capitolo.
+11.4.  Tubo di Venturi
+Il tubo di Venturi permette di misurare la portata all’interno di un condotto. Il sistema
+è schematizzato in Fig. III.11.5 e consiste di una tubazione principale, orizzontale, a
+sezione variabile, nella quale scorre il liquido del quale si vuole conoscere la portata, e da
+un manometro differenziale, che opportunamente innestato nel precedente, consente il con-
+fronto delle pressioni esistenti in due diverse sezioni attraversate dal liquido in movimento.
+Applicando il Teorema di Bernoulli fra le sezioni S1 ed S2, vale la seguente:
+(III.11.10)
+dove v1S1 =  v2S2 e quindi:
+(III.11.11)
+ed essendo la portata Q = v2S2, vale la seguente:
+(III.11.12)
+la quale, con l’adeguata scelta delle sezioni S1 e S2 in funzione della viscosità del liquido
+considerato, consente di calcolare la portata di un liquido che scorre attraverso un con-
+dotto con buona approssimazione rispetto quanto previsto per un liquido perfetto.
+Fig. III.11.5  Tubo di Venturi.
+12.  ONDE MECCANICHE
+La definizione più comune di onda è quella di una perturbazione che si propaga nello
+spazio. Il concetto di onda è strettamente legato al concetto di oscillazione, poiché sono
+molti i fenomeni naturali in cui un sistema oscilla attorno alla sua posizione di equilibrio
+stabile e questa oscillazione provoca appunto una perturbazione che si propaga nello spa-
+zio. Questi fenomeni, che possono essere della natura più disparata, sono accomunati
+dalla descrizione matematica sotto forma di equazioni differenziali che sono simili indi-
+P1- P2
+1
+2--v2
+2 - v1
+2
+
+
+=
+P1- P2
+1
+2--v2
+2
+1-
+S2
+2
+S2
+2
+-------
+
+
+
+
+
+
+=
+Q
+2 P1 - P2
+
+
+1 S
+
+2
+2 - 1 S
+
+2
+2
+
+
+------------------------------------------
+=
+P1
+P2
+S1
+S2
+v1
+v2
+
+[PAG 257]
+FISICA
+III-39
+pendentemente dal fatto che si tratti di oscillazioni meccaniche, acustiche, elettromagneti-
+che o altro. 
+L’equazione differenziale di una corda vibrante omogenea è l’equazione delle onde:
+(III.12.1)
+Onde trasversali e onde longitudinali
+Oltre a classificare le onde in base alla natura del fenomeno, lo si fa anche in base al
+modo in cui esse si propagano. 
+Quando la direzione di propagazione dell’onda è perpendicolare alla perturbazione, si
+parla di onde trasversali. Nel caso opposto in cui la perturbazione è parallela alla dire-
+zione di propagazione si parla di onde longitudinali.
+Appartengono alla prima categoria le onde elettromagnetiche e alla seconda le onde
+acustiche.
+Onde stazionarie
+Se la corda vibrante è fissata rigidamente ai due estremi, si ha un caso molto partico-
+lare di onda che non si propaga nello spazio. Qualsiasi sia il moto (z, t) della corda, esso
+si può esprimere come sommatoria delle cosiddette onde stazionarie:
+(III.12.2)
+dove i sono le frequenze proprie del sistema e ki = i/ sono i rispettivi numeri d’onda.
+Onde progressive
+La situazione diametralmente opposta a quella delle onde stazionarie si presenta
+quando il sistema è privo di contorni. Questo avviene quando si sollecita una corda di lun-
+ghezza infinita, o quando un sasso cade in uno specchio d’acqua infinitamente esteso,
+oppure quando si ha una sorgente sonora che emette in uno spazio sconfinato.
+Naturalmente queste situazioni sono ideali e non riproducibili in natura, ma quello che
+conta realmente non è tanto l’assenza di confini o di pareti, quanto l’assenza di riflessioni.
+Una parete perfettamente assorbente assolve la stessa funzione di uno spazio infinito, cioè
+permette all’onda di propagarsi senza deformazione.
+Un’onda che avanza nello spazio senza deformarsi si chiama onda progressiva.
+Sono onde progressive tutte e sole quelle che hanno una funzione d’onda del tipo:
+(III.12.3)
+dove la costante v rappresenta la velocità di propagazione dell’onda.
+Analogamente si chiama onda regressiva un’onda la cui funzione sia del tipo:
+(III.12.4)
+La soluzione più generale è:
+(III.12.5)
+che si può scrivere anche:
+(III.12.6)
+Una soluzione particolare, molto importante, è data dall’onda progressiva armonica o
+monocromatica:
+(III.12.7)
+2z t
+
+
+2t
+--------------------- - v22z t
+
+
+2z
+---------------------
+0
+=
+z t
+
+
+Fcos it
+i
++
+
+senkiz
+i
+1
+=
+n
+
+=
+z t
+
+
+f z - vt
+
+
+=
+z t
+
+
+f z
+vt
++
+
+
+=
+z t
+
+
+f z - vt
+
+
+g z
+vt
++
+
+
++
+=
+z t
+
+
+f t - z v
+
+
+
+g t
+z v
+
++
+
+
++
+=
+z t
+
+
+A cos
+
+t
+z v
+
++
+
+
+
+
+=
+
+[PAG 258]
+III-40
+FISICA
+12.1.  Velocità di fase
+Si può riscrivere la funzione dell’onda armonica nella forma:
+(III.12.8)
+dove k = /v.
+Si definisce fase la funzione:
+(III.12.9)
+La sua velocità si chiama velocità di fase ed è la velocità con cui si muove un punto
+qualsiasi dell’onda.
+Annullando il differenziale totale di  si ottiene che la velocità di fase è / k, cioè v.
+12.2.  Riflessione di un’onda progressiva
+Quando un’onda progressiva f(z  vt) che si propaga su una corda incontra un estremo
+perfettamente riflettente, l’onda riflessa è: 
+-f(z+vt)
+(III.12.10)
+che sommata a quella originaria dà:
+(z, t) = f(z - vt) - f(-z - vt)
+(III.12.11)
+Nel caso particolare di onda sinusoidale:
+(z, t) = f(z - vt) = A  cos(t - kz)
+(III.12.12)
+l’onda riflessa è:
+(z, t) = -f(z - vt) = -A  cos(t - kz) = A  cos(t - kz + )
+(III.12.13)
+e l’effetto totale, sommatoria delle due onde è:
+(z, t) = A  [cos(t - kz) - cos(t + kz)] = 2A  sen(kz)  sen(t)
+(III.12.14)
+che è un’onda stazionaria.
+12.3.  Dispersione, velocità di gruppo
+Per studiare le onde progressive non monocromatiche è necessario definire il concetto
+di velocità di gruppo, che è la velocità con cui si propaga l’onda e che nel caso di onda
+monocromatica sinusoidale coincide con la velocità di fase. 
+Nel caso più generale è la velocità con cui si muove il gruppo di creste d’onda. Per
+un’onda non armonica non è definita la fase e quindi nemmeno la velocità di fase. 
+Si consideri il caso più semplice di due onde armoniche sovrapposte con uguali
+ampiezza e costante di fase. 
+(z, t) = A  cos(t - k1z) + A  cos(t - k2z
+(III.12.15)
+Ponendo:
+(III.12.16)
+è possibile riscrivere l’equazione nella forma dove:
+f(z, t) = 2A  cos(t - kz)
+(III.12.17)
+si chiama funzione modulante e:
+g(z, t) = cos(t - k0z)
+(III.12.18)
+si chiama funzione portante.
+La portante è un’onda ad alta frequenza con velocità di fase vf = 0/k0, che è la 
+(z, t) = f (z, t)  g(z, t) 
+(III.12.19)
+velocità con cui si spostano le creste. La modulante modula l’ampiezza di queste creste e
+z t
+
+
+A cos
+
+t - kz
+
+
+=
+z t
+
+
+t - kz
+=
+0
+2
+1
++
+2
+-------------------;
+=
+
+2-1
+2
+---------------;
+=
+k0
+k2
+k1
++
+2
+----------------;
+=
+k
+k2-k1
+2
+------------;
+=
+
+[PAG 259]
+FISICA
+III-41
+la velocità della modulazione è la velocità con cui si propaga l’informazione ed è quindi
+molto importante dal punto di vista fisico, in quanto un’onda non modulata, cioè perfetta-
+mente sinusoidale non porta alcuna informazione.
+La velocità della modulante si chiama velocità di gruppo. Nel caso di modulazione
+sinusoidale il suo valore è:
+(III.12.20)
+12.4.  Effetto doppler
+Quando la sorgente che emette le onde e lo strumento che le rileva sono in moto rela-
+tivo la frequenza misurata è diversa che nel caso di quiete. 
+Si considerino i due casi limite di sorgente in moto rispetto al mezzo in cui si propaga
+l’onda e strumento rilevatore fermo e viceversa sorgente ferma rispetto al mezzo e rileva-
+tore in moto. 
+Questa distinzione ha importanza in acustica, poiché le onde si propagano attraverso
+un mezzo fisico che è l’aria, mentre non ne ha nel caso di onde elettromagnetiche, poiché
+il mezzo non c’è e non esiste quindi un sistema di riferimento privilegiato; conta solo la
+velocità relativa sorgente/rilevatore.
+Nel caso di onde sonore, quando è la sorgente che si muove si avrà:
+–  con la sorgente che si avvicina, la frequenza rilevata è:
+v = v0 /(1 - v/c)
+(III.12.21)
+–  con la sorgente che si allontana, la frequenza rilevata è:
+v = v0 /(1 + v/c)
+(III.12.22)
+dove v è la velocità della sorgente e c la velocità del suono nel mezzo considerato.
+Le rispettive lunghezze d’onda sono:
+–  con la sorgente che si avvicina:
+ = 0(1 - v/c)
+(III.12.23)
+–  con la sorgente che si allontana:
+ = 0(1 + v/c)
+(III.12.24)
+Nel caso opposto, quando è il rilevatore che si muove si avrà:
+–  con il rilevatore che si avvicina, la frequenza rilevata è:
+v = v0 /(1 + v/c)
+(III.12.25)
+–  con il rilevatore che si allontana, la frequenza rilevata è:
+v = v0 /(1 - v/c)
+(III.12.26)
+dove v e c è sono ancora rispettivamente la velocità del rilevatore e la velocità del
+suono nel mezzo considerato.
+Le rispettive lunghezze d’onda sono:
+–  con il rilevatore che si avvicina:
+ = 0(1 + v/c)
+(III.12.27)
+–  con il rilevatore che si allontana:
+ = 0(1 - v/c)
+(III.12.28)
+Esempio 1
+Per la misura della velocità della luce valgono le seguenti considerazioni:
+–  Il campo elettromagnetico nel vuoto soddisfa l’equazione delle onde.
+–  Il vuoto è un mezzo non dispersivo.
+vg
+d
+dk
+------
+=
+
+[PAG 260]
+III-42
+FISICA
+–  La costante c che compare nell’equazione delle onde è velocità di fase e di gruppo e
+non dipende dalla lunghezza d’onda. Il valore di c che si ricava sperimentalmente è
+2,998 x 108 m/s.
+Esempio 2
+Nel caso di onde in acqua profonda e in acqua poco profonda (rispetto alla lunghezza
+d’onda) le considerazini sono:
+–  Le onde sulla superficie dell’acqua non sono né trasversali, né longitudinali.
+–  Le particelle d’acqua in un’onda progressiva percorrono un’ellisse.
+Trascurando l’attrito dell’acqua con il terreno sottostante, la relazione di dispersione
+risulta essere 2 = kg  tgh(kh).
+Poiché k = h/, nella relazione compare il rapporto tra la profondità dell’acqua e la
+lunghezza d’onda.
+Si considerino i due casi limite:
+–  acqua molto profonda dove 2 = kg
+–  velocità di fase:
+(III.12.29)
+–  velocità di gruppo:
+(III.12.30)
+–  acqua poco profonda con 2 = k2gh il sistema è non dispersivo e quindi:
+(III.12.31)
+13.  ACUSTICA
+Un esempio particolare di onda, molto importante, è quello delle onde sonore
+nell’atmosfera.
+Un oggetto che vibri con una certa frequenza produce una serie di compressioni e
+decompressioni del gas intorno a lui. Queste variazioni di pressione e densità si trasmet-
+tono alle parti di gas circostante e così la perturbazione si propaga assumendo le caratteri-
+stiche tipiche di un’onda.
+13.1.  Onde sonore in un gas omogeneo
+Perché un gas si possa considerare un mezzo omogeneo è necessario assumere la con-
+dizione che la quantità di molecole sia pressoché la stessa in ogni porzione di volume di
+gas; il che significa, nel caso specifico, che la lunghezza d’onda deve essere grande
+rispetto alla distanza media tra le molecole. Questa condizione è sempre verificata per
+lunghezze d’onda dell’ordine dei centimetri.
+Una seconda condizione perché si possa parlare di onde sonore e definire in modo
+sensato la frequenza e la lunghezza d’onda è che la variazione dei parametri fondamentali,
+densità e pressione, sia piccola rispetto ai valori di equilibrio. Questa seconda condizione
+non viene rispettata durante un’esplosione o il passaggio di un aereo supersonico.
+Le onde sonore si dicono longitudinali, poiché le variazioni di pressione e densità
+hanno la stessa direzione della propagazione.
+13.2.  Propagazione e velocità del suono in un gas perfetto
+Il processo di generazione delle onde sonore è descritto dall’equazione delle adiabati-
+che reversibili:
+vf
+
+k---
+g
+2
+------
+=
+=
+vg
+d
+dk
+------
+1
+2--vf
+=
+=
+vf
+vg
+gh
+=
+=
