@@ -1,0 +1,1183 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 1/23 ===
+Chars: 44,996 | Offset: 0
+
+[PAG 1]
+Fawwaz T. Ulaby
+
+Fondamenti di campi
+elettromagnetici
+
+Teoria e applicazioni
+
+edizione italiana
+a cura di Stefano Selleri
+Università degli Studi di Parma
+
+McGraw-Hill
+
+Milano +. New York « San Francisco » Washington D.C. « Auckland
+Bogotà + Lisboa «+ London + Madrid « Mexico City + Montreal
+New Delhi - San Juan +» Singapore « Sydney + Tokyo « Toronto
+
+[PAG 2]
+Indice
+
+Prefazione all'edizione italiana XI
+Prefazione all’edizione americana XIII
+Capitolo 1 Introduzione: onde e fasori 1
+Generalità 1
+
+1.1 Dimensioni, unità di misura e notazione 2
+1.2 La natura dell’elettromagnetismo 3
+1.2.1 La forza gravitazionale: un’utile analogia 4
+
+1.2.2 Campielettrici 5
+
+1.23. Campi magnetici 8
+
+1.24 Campi statici e dinamici 9
+
+1.3 Onde progressive 11
+1.3.1 Onde sinusoidali in un mezzo senza perdite 12
+
+1.3.2 Onde sinusoidali in un mezzo con perdite 16
+
+1.4 Lo spettro elettromagnetico 18
+1.5 Richiami sui numeri complessi 21
+1.6 Richiami sui fasori 24
+Concetti fondamentali 29
+Problemi 30
+Capitolo 2 Linee di trasmissione 33
+2.1 Generalità . 33
+2.1.1 Il molto della lunghezza d’onda 34
+2.1.2 Modi propaganti 36
+
+2.2. Modello a costanti concentrate 37
+2.3 Equazioni della linea di trasmissione 4l
+2.4. Propagazione delle onde in una linea di trasmissione 43
+2.5 Linea di trasmissione senza perdite 46
+2.5.1 Coefficiente di riflessione in tensione 49
+2.5.2 Onde stazionarie 52
+
+2.6 Impedenza di ingresso della linea senza perdite 57
+. 2.7 Casi particolari di linea senza perdite 60
+2.7.1 Linea in cortocircuito 60
+2.7.2. Linea in circuito aperto 63
+2.13. Applicazioni delle misure in cortocircuito e in circuito aperto 63
+2.74 Linea di lunghezza] = nA/2 65
+2.7.5. Trasformatore a quarto d’onda 65
+2.7.6 Linea di trasmissione adattata: Z, = Zo 66
+
+[PAG 3]
+vi Indice
+
+2.8 Trasferimento di potenza in una linea senza perdite
+2.8.1 Potenza istantanea
+2.8.2 Potenza media
+2.9 La carta di Smith
+2.9.1 Equazioni parametriche
+2.9.2 Impedenza di ingresso
+2.9.3 ROS, massimi e minimi di tensione
+2.94 Trasformazione da impedenza ad ammettenza
+2.10 Adattamento di impedenza
+2.11 Transitori in una linea di trasmissione
+2.11.1 Risposta in transitorio
+i, 2.44.2 Diagrammi a rimbalzo
+Problemi
+
+Capitolo 3 Analisi vettoriale
+
+Generalità
+3.1 Leggi fondamentali dell’algebra vettoriale
+3.1.1 Uguaglianza tra vettori
+3.1.2 Addizione e sottrazione tra vettori
+#‘3/1,3°.. Vettore posizione e distanza
+Moltiplicazionie tra vettori
+© Triplo prodotto scalare e vettoriale
+Sistemi di riferimento ortogonali
+3.2.1’ > Coordinate cartesiane
+.- 3.2.2. Coordinate cilindriche
+3.2.3. Coordinate sferiche
+Trasformazioni tra sistemi di riferimento
+3.3.1 Trasformazioni da coordinate cartesiane a cilindriche
+3.3.2. Trasformazioni da coordinate cartesiane a sferiche
+3.3.3 Trasformazioni da coordinate cilindriche a sferiche
+3.34 Distanza tra due punti
+3.4. Gradiente di un campo scalare
+3.4.1 Operatore gradiente in coordinate cilindriche e sferiche
+3.42 Proprietà dell’operatore gradiente
+3.5. Divergenza di un campo vettoriale
+3.5.1 Teorema della divergenza
+3.5.2 Considerazioni sulla notazione
+3.6 Rotore di un campo vettoriale
+3.6.1 Identità vettoriali caratteristiche del rotore
+3.6.2 Teorema di Stokes
+‘3.7. Operatore Laplaciano
+*«Problemi
+
+< Capitolo 4 Elettrostatica
+
+1.7.4 Equazioni di Maxwell
+n 42. Distribuzioni di carica e di corrente
+4.2.1 Densità di carica
+4.2.2 Densità di corrente
+
+67
+68
+68
+70
+70
+
+76
+78
+83
+87
+88
+91
+
+103
+
+103
+103
+104
+105
+105
+106
+110
+lil
+112
+113
+116
+119
+119
+122
+124
+124
+125
+127
+128
+129
+132
+133
+134
+137
+137
+
+139
+
+145
+
+145
+146
+146
+148
+
+43 Legge di Coulomb
+43.1 Campo elettrico generato da molteplici cariche puntuali
+4.3.2 Campo elettrico generato da una distribuzione di carica
+4.4 Legge di Gauss
+4.5 Potenziale scalare elettrico
+4.5.1 Potenziale elettrico come finzione del campo elettrico
+4.5.2 Potenziale elettrico generato da cariche puntuali
+4.5.3. Potenziale elettrico generato da distribuzioni continue
+454 Campo elettrico come funzione del potenziale elettrico
+4.5.5 Equazione di Poisson
+4.6 Proprietà elettriche dei materiali
+4.7 Conduttori
+4.7.1 Resistenza
+4.7.2 Legge di Joule
+4.8 Dielettrici
+4.9 Condizioni al contorno elettriche
+4.9.1 Interfaccia Dielettrico-Conduttore
+4.92 Interfaccia Conduttore-Conduttore
+4.10 Capacità
+4.11 Energia Potenziale Elettrostatica
+4.12 Metodo delle Immagini
+Problemi
+
+Capitolo 5 Magnetostatica
+
+Generalità
+5.1 Forze e coppie magnetiche
+5.1.1 Forza magnetica agente su un conduttore percorso da corrente
+5.1.2 Coppia magnetica agente su una spira percorsa da corrente
+5.2. Legge di Biot-Savart
+5.2.1 Campo magnetico generato da distribuzioni di correnti
+superficiali e volumetriche
+5.2.2 Campo magnetico generato da un dipolo magnetico
+5.3 Forza magnetica tra due conduttori paralieli
+5.4 Equazioni magnetostatiche di Maxwell
+5.4.1 Legge del magnetismo di Gauss
+5.4.2 Legge di Ampère
+5.5 Potenziale vettore magnetico
+5.6 Proprietà magnetiche dei materiali
+5.6.1 Momento magnetico orbitale e di spin
+5.6.2 Permeabilità magnetica
+5.6.3 Isteresi magnetica nei materiali ferromagnetici
+5.7. Condizioni al contomo magnetiche
+5.8 Induttanza
+5.8.1 Campo magnetico generato da un solenoide
+5.8.2 Autoinduttanza
+5.8.3 Induttanza mutua
+5.9 Energia magnetica
+Problemi
+
+Indice
+
+150
+151
+152
+156
+159
+160
+162
+162
+163
+164
+165
+167
+168
+170
+171
+174
+178
+179
+180
+183
+186
+189
+
+195
+
+195
+196
+197
+201
+204
+
+205
+209
+210
+211
+211
+212
+217
+219
+220
+221
+222
+224
+226
+226
+228
+230
+231
+234
+
+Mi
+
+[PAG 4]
+Indice
+
+Capitolo 6 Equazioni di Maxwell per campi tempo-varianti
+Campi Dinamici
+6.1. Legge di Faraday
+6.2 Circuito stazionario in un campo magnetico tempo-variante
+6.3 Trasformatore ideale
+6.4 Conduttore in moto in un campo magnetico statico
+6.5 Generatore elettrico
+6.6 Conduttore in moto in un campo magnetico tempo-variante
+6.7 Corrente di spostamento
+6.8 Condizioni al contorno elettromagnetiche
+6.9 Relazione di continuità carica-corrente
+6.10 Dispersione delle cariche libere in un conduttore
+6.11 Potenziali elettromagnetici
+6.11.1 Potenziali ritardati
+6.11.2 Potenziali in regime armonico
+Problemi
+
+Capitolo 7 Propagazione delle onde piane
+
+Propagazione libera delle onde elettromagnetiche
+7.1. Campi in regime armonico
+
+7.11 Permittivita complessa
+
+7.1.2. Equazione delle onde in un mezzo privo di cariche
+7.2. Propagazione di onde piane in mezzi senza perdite
+
+-7.2.1 Onde piane uniformi
+
+7.2.2 Relazione generale tra E e H
+7.3. Polarizzazione delle onde
+
+7.3.4 Polarizzazione lineare
+
+7.3.2. Polarizzazione circolare
+
+7.3.3 Polarizzazione ellittica
+7.4. Propagazione di onde piane in mezzi con perdite
+
+7.4.1 Dielettrico a basse perdite
+
+74.2. Buon conduttore
+7.5 . Flusso di corrente in un buon conduttore
+7.6 Densità di potenza elettromagnetica
+
+7.6.1. Onda piana in un mezzo senza perdite
+
+7.6.2. Onda piana in un mezzo con perdite
+
+7.6.3 Scala in decibel peri Tapporti tra potenze
+
+Problemi
+
+Capitolo 8 Riflessione e trasmissione delle onde e ottica geometrica
+
+Onde elettromagnetiche all’interfaccia tra mezzi diversi
+8.1 Riflessione e trasmissione delle onde con incidenza normale
+8.1.1 Interfaccia tra mezzi senza perdite
+8.1.2 Analogia con la linea di trasmissione
+8.1.3. Flusso di potenza nei mezzi senza perdite
+8.14 Interfaccia tra mezzi con perdite
+8.2 Leggi di Snell
+8.3. Fibre ottiche
+
+241
+
+241
+242
+244
+248
+250
+254
+257
+257
+260
+261
+263
+264
+265
+
+270
+
+273
+
+273
+274
+275
+276
+277
+277
+281
+283
+284
+285
+288
+291
+
+293
+
+294
+
+296
+
+300
+301
+
+302
+303
+305
+
+309
+310
+311
+314
+315
+318
+322
+325
+
+8.4. Riflessione e trasmissione delle onde con incidenza obliqua
+8.4.1 Polarizzazione perpendicolare
+8.42 Polarizzazione parallela
+8.4.3 Angolo di Brewster
+8.5 Riflettività e trasmittivita
+8.6 Ottica geometrica
+8.7. Immagini formate da specchi
+8.7.1 Immagini formate da specchi piani
+8.7.2. Immagini formate da specchi sferici
+8.8 Immagini formate da lenti sferiche
+Problemi
+
+Capitolo 9 Radiazione e antenne
+
+Generalità
+Reciprocità
+Sorgenti della radiazione
+Regione di campo lontano
+Schiere di antenne
+9.1 Dipolo corto
+9.1.1 Approssimazione di campo lontano
+9.1.2 Densità di potenza
+9.2 Caratteristiche di radiazione di un’antenna
+9.2.1 Diagramma di radiazione
+9.2.2 Dimensioni del lobo
+9.2.3 Direttività
+9.2.4 Guadagno
+9.2.5 Resistenza di radiazione
+9.3 Dipolo a mezz’onda
+9.3.1 Direttività del dipolo A/2
+9.3.2 Resistenza di radiazione del dipolo 4/2
+9.3.3 Monopolo a quarto d’onda
+9.4. Dipolo di lunghezza arbitraria
+9.5 Area efficace di un’antenna ricevente
+9.6 . Formula di trasmissione di Friis
+9.7 Radiazione emessa da antenne a grande apertura
+9.8 Apertura rettangolare con distribuzione di campo uniforme
+9.8.1 Ampiezza del lobo
+9.8.2 . Direttività e area efficace
+9.9 Schiere di antenne
+9.10 Schiera di N elementi con distribuzione di fase uniforme
+9.11 Schiere a scansione elettronica
+9.11.1 Eccitazione ad ampiezza uniforme
+9.11.2 Alimentazione della schiera
+Problemi
+
+Capitolo 10 Sistemi di comunicazione via satellite e radar
+
+Esempi applicativi
+10.1 Sistemi di comunicazione via satellite
+
+Indice
+
+327
+328
+333
+335
+337
+340
+342
+342
+343
+346
+354
+
+359
+
+359
+
+360
+
+361
+
+361
+
+362
+
+362
+364
+365
+367
+368
+370
+371
+
+373
+373
+375
+378
+378
+379
+380
+382
+385
+388
+391
+392
+394
+395
+402
+405
+406
+407
+412
+
+415
+
+415
+415
+
+[PAG 5]
+x Indice
+
+10.2 Transponder satellitari 418 ;
+10.3 Bilancio di potenza del collegamento radio . 421 — : si - - p f
+10.4 Antenne 422 re azione
+10.5 Sensori radar 424 I 11 1 . .
+10.5.1 Principi di funzionamento dei sistemi radar 424 ” all edizione italiana
+10.5.2 Distanza non ambigua 425
+10.5.3 Risoluzione radiale e angolare 426
+10.6 Rivelazione del bersaglio 427
+10.7 Radar doppler 430
+10.8 Radar monoimpulso 432
+Problemi 436 si .
+Quando negli ultimi decenni del XIX secolo James Clerk Maxwell sviluppò e presen-
+Appendice A_Simboli, grandezze e unità di misura 437 td la sua teoria unificata dell’elettromagnetismo, certamente nessuno potè prefigurare
+
+l’impatto che tale teoria avrebbe avuto, e tuttora ha, sullo sviluppo tecnologico e, sen-
+Appendice B Parametri costitutivi di materiali di uso comune 439 . za paura di scadere nella retorica, certamente anche sugli usi e costumi delle nostre
+società. Da allora l’elettromagnetismo applicato ha vissuto una costante crescita che
+
+Appendice C Formule matematiche 441 Jo ha visto protagonista nei campi più disparati: prima di tutto le telecomunicazioni e
+Appendice D Risposte ai problemi di numero dispari 443 l'elettronica, ovviamente la fisica e l’astronomia, ma anche la medicina, per non par-
+
+dn . lare degli sviluppi applicativi nel campo della sicurezza, dei controlli, della sensori-
+Bibliografia 451 stica o in nuove discipline emergenti quali la domotica, la biofotonica o le biotecno-
+Indice analitico 453 logie in generale.
+
+Sin dagli inizi, questo cammino è stato accompagnato, o addirittura preceduto, da
+uno studio teorico sempre più rigoroso e approfondito, che ha portato a un sostanzia-
+le assestamento della teoria, ora ampiamente verificata e accettata.
+
+La maggior parte dei libri di testo per corsi universitari in ingegneria, con le dovute
+differenze in ambito nazionale o internazionale, parte proprio da questo punto, pre-
+sentando le Equazioni di Maxwell per via assiomatica e derivando da esse i concetti
+delia propagazione guidata e libera delle onde elettromagnetiche e le conseguenti ap-
+plicazioni. Questo approccio, pur necessitando di un pesante formalismo matematico
+che risulta sovente ostico allo studente, permette la descrizione dei fenomeni in mo-
+do compiuto e rigoroso.
+
+Ii presente testo costituisce una discontinuità rispetto a questo approccio tradiziona-
+le in quanto introduce lo studente ai fenomeni elettromagnetici attraverso l’immedia-
+ta presentazione delle linee di trasmissione e rimandando lo studio e la risoluzione
+delle Equazioni di Maxwell a capitoli successivi. Il motivo di tale scelta è spiegato
+dall’autore stesso nella sua prefazione.
+
+La novità espositiva del testo, ovvero il diverso modo di condurre il lettore e gli
+studenti alla comprensione dei contenuti, rimasti comunque immutati e derivati sem-
+pre con il necessario rigore scientifico, costituisce un tentativo interessante anche per
+il panorama universitario italiano. Il testo, con la sua originale impostazione e i nu-
+
+> merosissimi spunti applicativi, potrà costituire un indubbio stimolo e un utile stru-
+mento per l’organizzazione dei nuovi corsi di Laurea e di Laurea Specialistica nel set-
+tore dell’Ingegneria dell’informazione.
+
+La soddisfazione nel completare l’opera di traduzione di questo testo porta a espri-
+mere i più sentiti ringraziamenti all’Ing. Lorenzo Rosa per la puntualità e la profes-
+sionalità mostrate nell’affrontare il lavoro e all’Ing. Matteo Fuochi e all’Ing. Federica
+Poli per la pronta disponibilità nei momenti di maggior bisogno.
+
+A nome dell’Editore desidero inoltre ringraziare i professori Costantino De
+Angelis, Michele D'Amico e Maurizio Zoboli per il loro gentile contributo alla rea-
+lizzazione del progetto.
+
+Stefano Selleri
+Dipartimento di Ingegneria dell’informazione
+Università degli Studi di Parma
+
+[PAG 6]
+o SE Prefazione | - ~~
+all'edizione americana
+
+Perché un altro libro sull’elettromagnetismo
+
+L'insegnamento dell’elettromagnetismo agli studenti di ingegneria elettronica può at-
+tualmente appoggiarsi a diversi libri di testo. Perché dunque c'è bisogno di scriverne
+un altro? La risposta è semplice: (1) il curriculum dei corsi di laurea in ingegneria
+elettronica sta subendo modifiche radicali sia nella presentazione che nel contenuto,
+forse più radicali di tutte le modifiche che si sono viste nel corso dei decenni passati
+e (2) i libri di testo disponibili sono incompatibili con la filosofia del nuovo curricu-
+lum proposto per il ventunesimo secolo!.
+
+Contenuti del corso
+
+Dati questi obiettivi e le relative condizioni al contorno, quali devono essere dunque
+i contenuti di un corso semestrale o annuale di elettromagnetismo e quali testi sono
+adatti allo scopo? Per rispondere a queste domande bisogna considerare l’approccio
+tradizionale impiegato negli ultimi vent'anni. La maggior parte dei libri di elettroma-
+gnetismo hanno un’impostazione comune: iniziano con uno 0 più capitoli sul calcolo
+vettoriale e sui sistemi di riferimento, seguiti da due o più capitoli sulla statica, divisa
+in elettrostatica e magnetostatica. Questi argomenti di solito formano metà del mate-
+riale complessivo, con la seconda metà a coprire la dinamica, cioè i campi tempo-va-
+rianti, la propagazione e riflessione delle onde, le guide d’onda, i risuonatori e le an-
+tenne. Un’organizzazione dei contenuti di questo tipo presenta due problemi: prima
+di tutto, iniziare un corso con una dose pesante di matematica tende a spegnere l’en-
+Li . tusiasmo degli studenti; secondo, per quanto l’elettrostatica e la magnetostatica siano
+argomenti di per sé interessanti e abbiano molte applicazioni pratiche, la loro impor-
+| tanza impallidisce a confronto delle molte applicazioni dei campi tempo-varianti nel-
+Il l’ambito di sistemi di telecomunicazioni, radar, ottica, computer ed elettronica a stato
+i solido. Perciò, se nei corsi obbligatori del curriculum di un corso di laurea triennale
+| fosse insegnata solo la statica, gli studenti di ingegneria elettronica rimarrebbero con
+if
+
+i
+
+i
+
+|
+
+delle lacune pesanti nella capacità di trattare ia maggior parte dei fenomeni elettroma-
+gnetici.
+
+A causa della forte enfasi sulla matematica dei calcolo vettoriale e il carattere relati-
+vamente arido dell’elettrostatica e della magnetostatica, lo studente che completa un
+primo corso semestrale di questo tipo difficilmente sceglie di seguire il secondo cor-
+so della serie, dove invece vengono trattati molti degli argomenti importanti per la
+pratica ingegneristica. Chiaramente, l’insegnamento basato su un libro organizzato
+con questa successione tradizionale di argomenti non è più compatibile con il pro-
+gramma del nuovo curriculum proposto per il ventunesimo secolo.
+
+Negli anni passati, professori di varie università hanno provato a insegnare la dina-
+mica dell’elettromagnetismo senza farla precedere dallo studio della statica. Questi
+tentativi non hanno avuto molto successo, principalmente perché nell’ambito della
+
+| -
+Î
+|
+
+1 Director et al., Proceedings of the IEEE, settembre 1995.
+
+[PAG 7]
+i fedizi i ione. all'edizione americana xv
+XV Prefazione all'edizione americana Prefazi
+
+con una presentazione generale di due esempi di sistemi: i sistemi di telecomuni-
+
+dinamica gli studenti devono gestire contemporaneamente diversi parametri fonda- ; i zione ù
+cazione via satellite e i sensori radar.
+
+mentali, che comprendono le coordinate spaziali che definiscono ia posizione, i vet-
+
+x ° “tori che definiscono la direzione, il tempo e il collegamento tra i campi elettrici e ma- Scrivendo questo libro ho evitato di includere lunghe dimostrazioni esplicite di teore-
+seus), - gnetici. Nell'ambito della statica, invece, i campi elettrici e magnetici sono indipen- mi, specialmente di quelli che fanno largo uso del calcolo vettoriale. Il mio scopo è
+pri ii udenti gli uni dagli altri e il tempo non è una variabile del problema, riducendo in tal . stato quello di aiutare gli studenti a maturare competenze nell’applicazione del calco-
+no modo il numero dei parametri da quattro a due. Avendo prima studiato l’elettrostatica : lo vettoriale alla soluzione di problemi elettromagnetici di interesse pratico. A mio
+€ la magnetostatica, lo studente riesce ad affrontare con molta più sicurezza le situa- parere, il calcolo vettoriale e la matematica in genere sono un utile strumento e non
+
+zioni che riguardano i campi tempo-varianti. uno scopo di per sé. All’interno del materiale l’accento è posto sull’uso della mate-
+
+matica al fine di spiegare e rendere chiara la fisica dei problemi, con l’uso di esempi
+
+Questo libro pratici allo scopo di dimostrare ia rilevanza ingegneristica dei concetti fisici. Credo
+
+» Pa x ci da che l’approccio impiegato nella presentazione del materiale, l’organizzazione degli
+
+Viste la situazione descritta, qual è il programma più opportuno per un corso seme- argomenti affrontati. dal libro e la relativa enfasi in favore della dinamica costituisca-
+
+strale o una successione di due corsi sull’elettromagnetismo? La mia risposta a que-
+
+è ita i i insii turi laureati con solide basi nel
+sta domanda è definita in questo libro dalle seguenti considerazioni: no nell’insieme un metodo efficace per preparare fu
+
+campo dell’elettromagnetismo applicato.
+1 Ho voluto iniziare legando il materiale sull’elettromagnetismo ad argomenti fami-
+
+liari per gli studenti del terzo anno di ingegneria elettronica: prima di affrontare i Sito web
+orsi sul elettromagnetismo, lo studente medio ha già seguito uno o più corsi che Materiale di supporto al testo è reperibile all'indirizzo web www.ateneonline.itulaby. Il
+ia teoria det circuiti, pertanto ha familiarità con | analisi dei circuiti, la contenuto del CD-ROM allegato all’edizione americana è ora disponibile al medesi-
+legge di Ohm, le leggi di Kirchhoff per le tensioni e le correnti e altri argomenti mo indirizzo.
+analoghi. Le linee di trasmissione costituiscono un legame naturale tra i circuiti ”
+elettrici e P'elettromagnetismo, in quanto lo studente non deve avere a che fare Ringraziamenti
+con vettori o campi, ma sfrutta concetti già noti per studiare la propagazione delle . Lu . .
+onde, la riflessione e la trasmissione della potenza, i fasori, l'adattamento di impe- Durante la scrittura di questo libro ho avuto la fortuna di ricevere aiuto prezioso da
+denza e molte altre proprietà della propagazione delle onde all’interno delle strut- parte di molte persone di talento. Prima di tutto vorrei porgere i miei più sinceri rin-
+ture guidanti. Tutti questi nuovi concetti si dimostrano molto utili per lo studio graziamenti a Roger DeRoo, Richard Cares e Jim Ryan. Sono in debito con Roger
+dei Capitoli 7, 8 e 9 e rendono più facile lo studio della propagazione delle onde DeRoo non solo per i numerosi scambi di opinioni sul modo migliore di presentare i
+piane nello spazio libero e nei mezzi materiali. Le linee di trasmissione sono trat- concetti elettromagnetici e le loro applicazioni senza perdersi nei dettagli matematici,
+tate nel Capitolo 2 e sono precedute nel Capitolo 1 da richiami sui numeri com. ma anche per la revisione scrupolosa delle numerose bozze del manoscritto. Richard
+plessi e sull’analisi fasoriale. Cames è senza dubbio il miglior tipografo tecnico con cui io abbia mai lavorato: la
+2 La parte successiva del libro, che comprende i Capitoli 3, 4 e 5, copre l’analisi sua conoscenza di IXTFX unita alla sua attenzione per i dettagli sono state fondamen-
+vettoriale, l’elettrostatica e la magnetostatica. Rispetto alla maggior parte dei libri tali per impaginare il materiale in un formato chiaro e lineare. Le illustrazioni sono
+di testo per la laurea triennale, questo libro presenta tali argomenti con due impor- opera di Jim Ryan, che ha trasformato con maestria i miei schizzi approssimativi in
+tanti differenze: per prima cosa questi argomenti occupano circa il 30% del nume- disegni professionali nell’aspetto e piacevoli nell’estetica. .
+ro di pagine del libro, rispetto al 50% a essi solitamente dedicato. Inoltre. il capi- Vorrei ringraziare i miei colleghi del Radiation Laboratory della University of
+tolo sull’elettrostatica inizia con Pesposizione delle equazioni di Maxwell nel ca- Michigan per i loro consigli e il loro appoggio. Sono particolarmente grato a Linda
+So tempo-variante, di cui vengono poi ricavati i casi particolari relativi all’elettro- Katehi, Chen-To Tai e Kamal Sarabandi per i loro generosi consigli e il costante in-
+statica e alla magnetostatica. In tal modo viene presentata agli studenti la struttura coraggiamento. Ringrazio anche i miei studenti, che hanno sopportato due semestri
+generale degli argomenti successivi, esponendo i motivi per cui l’elettrostatica e con un testo disponibile solo sotto forma di appunti e che hanno fornito molti sugge-
+fa magnetostatica sono casi particolari del caso generale tempo-variante. rimenti per migliorare e rendere più chiara la presentazione. Inoltre sono grato ai se-
+3 Al contrario della maggior parte dei libri di testo, questo libro non contiene un ca- guenti dottorandi per aver riletto in tutto o in parte il manoscritto e per avermi aiutato
+pitolo riguardante le guide d’onda e i risuonatori. Questa scelta è stata dettata da a compilare il manuale con le soluzioni degli esercizi: Bryan Hauck, Yanni
+motivi di spazio e dal fatto che le guide d’onda non hanno più l’utilizzo tanto dif- Kouskoulas e Paul Siqueira.
+fuso che avevano prima del 1980. : Sono grato ai revisori per i loro importanti commenti e suggerimenti. Essi com-
+4 Il Capitolo 6 si occupa dei campi tempo-varianti e prepara la strada per i Capitoli prendono Constantine Balanis della Arizona State University, Harold Mott della
+7,8 e9. Il Capitolo 7 copre la propagazione delle onde piane nei mezzi dielettrici University of Alabama, David Pozar della University of Massachusetts, S. N. Prasad
+. € ‘conduttori e il Capitolo 8 riguarda la riflessione e la trasmissione delle onde al- della Bradley University, Robert Bond del New Mexico Institute of Technology,
+l interfaccia tra mezzi diversi e presenta agli studenti le fibre ottiche e le proprietà Mark Robinson della University of Colorado a Colorado Springs e Raj Mittra della
+ottiche di specchi e lenti. Nel Capitolo 9 vengono esposti agli studenti i principi University of Illinois. Ho apprezzato gli sforzi del personale della Prentice Hall e so-
+3 della radiazione da parte di correnti in movimento nei fili conduttori e della radio. no grato per il loro aiuto nella conduzione puntuale della fase di pubblicazione di
+zione da parte delle aperture, come nel caso di un’antenna a tromba o di un’aper- questo progetto. Vorrei ringraziare anche Ralph Pescatore per la preparazione alla
+tura in uno schermo opaco illuminata da una sorgente di luce, stampa del manoscritto.
+} $ Per dare agli studenti un assaggio dell’ampio spettro di applicazioni dell’elettro- Fawwaz T. Ulaby
+Mmagnetismo nella modema società tecnologica, if Capitolo 10 conclude il libro Ann Arbor, Michigan
+i
+
+[PAG 8]
+CAPITOLO) 1
+i Introduzione: onde e fasori |
+
+Generalità
+
+L'argomento di questo libro è l’elettromagnetismo applicato, che comprende lo stu-
+dio dei fenomeni elettrici e magnetici e le loro applicazioni nell’ingegneria, sia in
+condizioni statiche che dinamiche. L'attenzione è dedicata principalmente alle pro-
+prietà fondamentali dei campi elettromagnetici dinamici, anche detti tempo-varianti,
+in virtà della loro maggiore rilevanza pratica in molte discipline dell'ingegneria, tra
+cui si possono citare le comunicazioni ottiche e a microonde, i sistemi radar, il bioe-
+lettromagnetismo e la microelettronica ad alta velocità. Si studieranno la propagazio-
+ne delle onde nelle strutture guidanti, come le linee di trasmissione coassiali e le fibre
+ottiche, la riflessione e la trasmissione delle onde all’interfaccia tra mezzi diversi, le
+proprietà ottiche di specchi e lenti, la radiazione da parte delle antenne e molti altri
+argomenti associati. Il capitolo conclusivo intende illustrare alcuni aspetti dell’elet-
+tromagnetismo applicato attraverso l’esame di considerazioni progettuali legate all’u-
+so e al funzionamento dei sensori radar e dei sistemi di comunicazione via satellite.,
+Per esempio, si consideri la rete di telecomunicazioni descritta in Figura 1.1. Il sa-
+tellite utilizza un’antenna @ lobo multiplo in modo da comunicare simultaneamente
+con diverse stazioni di terra. Il segnale trasmesso dalla stazione di terra. 1 alla fre-
+quenza fi = 6 GHz! viene amplificato e convertito a una frequenza inferiore fy = 4
+GHz per essere ritrasmesso alla stazione di terra 2. La conversione di frequenza è
+agevolata da un dispositivo a stato solido per microonde detto mixer, il quale in que-
+st’applicazione converte la frequenza di ingresso fi alla porta Mi in una frequenza fp
+alla porta Mp, tale che f = fi ~ fo, dove fa è la frequenza dell’oscillatore montato sul
+satellite; in questo caso fo = 2 GHz. Per i segnali di uplink e di downlink si usano
+frequenze diverse per evitare che ci sia interferenza reciproca. Il circolatore collegato
+all’antenna del satellite consente di utilizzarla contemporaneamente in trasmissione e
+in ricezione: il circolatore trasferisce il segnale ricevuto dalla porta Ci al ricevitore
+sulla porta C2 ed è anche in grado di trasferire il segnale dalla porta C; alla porta C;
+affinché sia trasmesso da parte dell’antenna. Anche se nella configurazione mostrata
+in Figura 1.1 un lobo dell’antenna è usato per la ricezione e un altro è usato per la tra-
+smissione, in realtà sia un lobo che l’altro possono svolgere entrambe le funzioni.
+i La stazione di terra 1 è collegata a più terminali tramite vari tipi di linee di trasmis-
+! sione, come cavi coassiali e fibre ottiche. Le informazioni veicolate su queste linee
+H comprendono la voce per le comunicazioni telefoniche, il video e la voce per la TV e
+Ì : i flussi di dati numerici. Uno dei terminali è collegato a un ponte radio terrestre a mi-
+croonde.
+i In questo libro saranno esaminati diversi elementi di questo sistema di telecomuni-
+| cazioni, tra cui la trasmissione delle onde sulle linee coassiali, i fondamenti delle fi-
+i : bre ottiche, la propagazione nello spazio libero tra le antenne, il progetto delle anten-
+i : ne e molti altri argomenti. Lo scopo è aiutare il lettore a sviluppare la comprensione
+
+i 11GHz= 10° Hz.
+
+[PAG 9]
+Stazione di terra 1
+
+Circolatore
+
+Trasmettitore]
+
+Capitolo | — Introduzione: onde e fasori
+
+Mixer Osciliatore
+=6 GHz Mi =
+Eco _ A ATEI A )
+o Ma f =4 GHz
+
+Satellite
+
+Z| N
+
+Uplink a 6 GHz
+
+Downlink a 4 GHz
+
+jcoass. ee
+Ponte radio
+terrestre a microonde
+
+Figura 1.1 Rete di comunicazione a microonde.
+
+delle leggi fisiche fc i dell’ i i
+doo asi f sich tet dell’elettromagnetismo e inoltre a conoscere le loro
+Questo capitolo inizia con la descrizione del sistema di unità di misura e della nota-
+zione simbolica usati nel libro.-In seguito saranno introdotte le grandezze fondamen-
+tali del campo elettrico e del campo magnetico usate nell’elettromagnetismo, le loro
+relazioni reciproche € quelle con cariche e correnti elettriche, e i parametri fondamen-
+tali in base a cui si caratterizzano le proprietà elettromagnetiche dei materiali. Le leg-
+gi che governano queste relazioni costituiscono l’infrastruttura di base che si ‘utilizza.
+
+rà nello studio dei fenomeni elettromagnetici i i i
+n ignetici. Infine, in preparazi:
+sara presentato nel Capitolo 2, si illustre; richiami sue ampolle che
+
+i F : ‘ranno dei brevi richiami su tre argomenti: on-
+del progressive, numeri complessi e analisi fasoriale. Anche se molto probabilmente il
+
+ettore ha già affrontato questi argomenti nell’ambito dell’analisi dei circuiti o di altre
+discipline dell’ingegneria, brevi richiami sulle proprietà delle onde progressive e sul-
+la convenienza insita nella notazione fasoriale si riveleranno utili per la soluzione dei
+problemi in regime armonico. P wee’
+
+1.1. Dimensioni, unità di misura e notazione
+Ji Sistema Internazionale di
+
+francese Systéme Internatio
+scientifica contemporanea
+
+Unita di Misura, abbreviato con SI dalla denominazione
+nale, è il sistema normalizzato in uso nella letteratura
+per esprimere le unità di misura delle grandezze fisiche.
+
+Stazione di terra 2
+
+1.2 La natura dell'elettromagnetismo
+
+La lunghezza è una dimensione e il metro è l’unità in base alla quale la si esprime in
+relazione a un campione di riferimento. Il SI è basato sulle unità relative alle sei di-
+mensioni fondamentali elencate in Tabella 1.1. Le unità relative a tutte le altre dimen-
+sioni sono considerate secondarie in quanto sono basate sulle sei unità fondamentali
+e si possono esprimere in termini di esse. L’appendice A contiene un elenco delle
+grandezze usate in questo libro, con i loro simboli e unità.
+
+Quando si manipolano grandezze il cui valore è compreso tra 10-!5 e 10!8, per
+esprimere i multipli e i sottomultipli delle unità si usa comunemente un insieme di
+
+prefissi, organizzati a passi di 10°. Questi prefissi, che derivano tutti da parole gre-
+che, latine, spagnole e danesi, sono elencati in Tabella 1.2. Per esempio, una lunghez-
+za di 5 x 107° msi può scrivere come 5 nm.
+
+Tabella 1.4. Unità fondamentali del SI. Tabella 1.2 Prefissi relativi a multipli e sottomuttipli.
+Dimensione Unità | Simbolo Prefisso Simbolo Madulo
+Lunghezza metro m exa E 1098
+Massa kilogrammo kg peta P 1015
+Tempo secondo s tera T 1012
+Corrente elettrica ampere A giga G 10°
+Temperatura kelvin K mega M 108
+Quantità di sostanza mole mol kilo k 10°
+
+mill m 108
+micro nm 1078
+nano n 10-9
+pico p forte
+femto f 10718
+atto a 10-18
+
+Neil’elettromagnetismo si lavora con grandezze scalari e vettoriali: in questo libro si
+userà il corsivo per i simboli, eccetto le lettere greche, che indicano grandezze scala-
+ri, per esempio R per la resistenza, mentre si userà il grassetto per i simboli che indi-
+cano vettori, per esempio È per il vettore campo elettrico. Un vettore consiste di un
+modulo, che è uno scalare, e di una direzione, di solito espressa da un versore. Per
+
+esempio,
+E=£E, (11)
+
+dove E è il modulo di E e X è la sua direzione. I versori sono scritti in grassetto e sor-
+montati dall’accento circonflesso (*).
+
+Nel libro sarà spesso utilizzata la rappresentazione fasoriale nella soluzione di pro-
+blemi in cui compaiono grandezze elettromagnetiche varianti nei tempo con legge si-
+nusoidale. Le lettere che indicano grandezze fasoriali sono sormontate da una tilde
+(©). Perciò E è il fasore del vettore campo elettrico corrispondente al vettore campo
+elettrico istantaneo E(¢). Questa notazione è discussa più in dettaglio nel Paragrafo 1.6.
+
+1.2. La natura dell’elettromagnetismo
+
+L’universo fisico è governato da quattro forze fondamentali della natura:
+
+® La forza nucleare, che è la più intensa delle quattro, ma il cui raggio d’azione è li-
+mitato ai sistemi submicroscopici, come i nuclei degli atomi.
+
+« La forza da interazione debole, la cui intensità è solo 10! volte quella della forza
+nucleare. Il suo ruolo principale si esprime nelle interazioni che coinvolgono deter-
+minate particelle elementari radioattive.
+
+# La forza elettromagnetica, che esiste tra tutte le particelle cariche. Essa è la forza
+dominante nei sistemi microscopici, come atomi e molecole, e la sua intensità è
+dell’ordine di 10-? volte quella della forza nucleare.
+
+[PAG 10]
+Capitolo. 1 —. Introduzione: onde e fasori
+
+* La forza gravitazionale, che è la più debole delle quattro forze, avendo un'intensità
+dell'ordine di 10~*! volte quella della forza nucleare. Tuttavia, essa è la forza do-
+x ante nei sistemi macroscopici, come il sistema solare.
+
+o esse di questo libro è rivolto alla forza elettromagnetica e alle sue conseguen-
+---~-26Anche-se la forza elettromagnetica agisce su scala atomica, i suoi effetti possono
+essere trasmessi sotto forma di onde elettromagnetiche, che possono propagarsi sia
+attraverso lo spazio libero che attraverso i mezzi materiali. Lo scopo di questo para-
+grafo è di illustrare i fondamenti della struttura dell'elettromagnetismo, che è forma-
+ta da determinate leggi fondamentali che governano i campi elettrici e magnetici in-
+dotti nispettivamente da cariche elettriche statiche e in movimento, le relazioni tra i
+campi elettrici e magnetici e le modalità con cui questi campi interagiscono con la
+materia. Tuttavia, in via preliminare si trarrà vantaggio dalla familiarità con la forza
+gravitazionale per descrivere alcune delle sue proprietà, in quanto esse costituiscono
+un’utile analogia rispetto a quelle della forza elettromagnetica.
+
+1.2.1 La forza gravitazionale: un'utile analogia
+
+Secondo la legge della gravitazione universale di Newton, la forza gravitazionale
+
+Fs che agi i tanza
+8a igisce su una massa m per la presenza di una massa my a una di
+da mp, come descritto in Figura 1.2, è data da ! a ds Rn
+
+=. Gum
+F,,, = Rpg N
+2a R, (N), (1.2)
+
+dove G è la costante di gravitazione universale, Ry. è un verso!
+ma, € l’unità di misura della forza è il newton o. segno posato
+k° eppresenta il Ba che la forza gravitazionale è attrattiva. Al contrario,
+Biz = Fg,» dove F,,, è la forza che agisce sulla massa my a c: ¢ ione
+gravitazionale esercitata dalla massa mz. Si noti che il primo pede di “indica la
+massa che subisce la forza, mentre il secondo pedice indica la sorgente della forza.
+{ La forza gravitazionale agisce a distanza, vale a dire che non è necessario che i
+: due oggetti Si trovino a diretto contatto perché ciascuno subisca l’attrazione esercitata
+: dall altro: questo fenomeno di azione diretta a distanza ha portato a formulare il con-
+i cetto di campo. Un oggetto di massa my induce un campo gravitazionale W, (Fi;
+1.3) che non emana fisicamente dall’oggetto, ma la cui influenza esiste in ogni var
+dello spazio in modo che se un altro oggetto di massa m esistesse 2 una distanza R
+dall oggetto mi, allora questo secondo oggetto my subirebbe una forza agente su di
+se con Intensità uguale a quella espressa dalla (1.2).
+
+Figura 1.2 Forze gravitazionali tra due masse. Figura 1.3 Campo gravitazionale
+
+W; indotto da una massa my.
+
+1.2 La natura dell'elettromagnetismo
+
+A una distanza R da my, il campo WY; è un vettore definito come
+
+~ Gm
+wy =-R RR N/kg, (1.3)
+dove È è un versore che punta in direzione radiale uscente dall’oggetto m), e dunque
+—R punta verso m). La forza dovuta all'azione di Wj su una massa m a una distan-
+za R = Riz lungo la direzione R = Ry è
+
+~ Gmm
+Fg, = Wim = Ri R
+12
+
+(1.4)
+
+Il concetto di campo si può generalizzare definendo il campo gravitazionale W in
+ogni punto dello spazio in modo tale che, quando una massa di prova m è posta in
+quel punto, la forza F, che agisce su m sia legata a Y dalla
+
+watt, . (1.5)
+
+La forza F, può essere dovuta a una massa singola o a una distribuzione di più masse.
+
+1.2.2 Campi elettrici
+
+La forza elettromagnetica consiste di una forza elettrica F. e di una forza magnetica
+Fm. La forza elettrica F, è simile alla forza gravitazionale, ma con un’importante dif-
+ferenza: la sorgente del campo gravitazionale è la massa, mentre la sorgente del
+campo elettrico è la carica elettrica; entrambi i tipi di campo variano inversamente
+con il quadrato della distanza dalle proprie rispettive sorgenti, ma la carica elettrica
+può avere polarità positiva o negativa, mentre la massa non possiede tale proprietà.
+
+Sappiamo dalla fisica atomica che tutta la materia contiene un miscuglio di neutro-
+ni, protoni a carica positiva ed elettroni a carica negativa, con una quantità di carica
+fondamentale pari alla carica di un singolo elettrone, di solito indicata con la lettera
+e. L'unità di misura della carica elettrica è il coulomb (C), in onore dello scienziato
+francese del diciottesimo secolo Charles Augustin de Coulomb (1736-1806). Ii mo-
+dulo di e è :
+
+16x 1 Cc. (1.6)
+
+La carica dell’elettrone è ge = —e e quella del protone è uguale in modulo ma di po-
+larità opposta: g, = e. Gli esperimenti di Coulomb dimostrarono che
+
+1. due cariche dello stesso segno si respingono a vicenda, mentre due cariche di po-
+larità opposta si attraggono,
+
+2. la forza agisce lungo la linea che congiunge le cariche,
+
+3. l'intensità é proporzionale al prodotto dei moduli delle due cariche e inversamen-
+te proporzionale al quadrato della distanza tra esse.
+
+Queste proprietà costituiscono quella che oggi è chiamata legge di Coulomb, che si
+può esprimere matematicamente con la seguente equazione:
+
+92
+
+> ‘nello spazio libero), (1.7
+Ire hl, (N) (nello sp: ), (1.7)
+
+Fa = Rv
+
+dove F,,, è la forza elettrica che agisce sulla carica gz dovuta alla carica g1, Ry è la
+distanza tra le due cariche, Riz è un versore che punta dalla carica q; alla carica qo
+(Figura 1.4) e eo è una costante universale detta permittivitd elettrica dello spazio li-
+bero {ea = 8.854 x 107!° farad al metro (F/m)]. Si presume che le due cariche si
+
+[PAG 11]
+Capitolo | — Introduzione: onde e fasori
+
+»frovino nello spazio libero, 0 vuoto, e isolate da tutte le altre cariche. La forza F.,,
+‘che agisce sulla carica q, dovuta alla carica gy è uguale in modulo alta forza F.,,, ma
+‘coti ‘direzione opposta: Fo, = —F.,,.
+
+L'espressione data dalla (1.7) per la forza elettrica è analoga a quella data dalla
+la forza gravitazionale e si può estendere ulteriormente l’analogia definendo
+
+di campo elettrico E dovuta a una carica g arbitraria come
+
+E=R_!
+
+RTP (Vim) (nello spazio libero), (1.8)
+
+dove R bi fa distanza tra a carica e il punto di osservazione e È è il versore radiale
+carica po vu carica La Figura xs descrive le linee di campo elettrico dovute a una
+
+i sitiva. Per ragioni che diverranno evidenti nei capitoli ivi, l’unità di
+misuradi E è il voltae (vin) nei capitoli successivi, l’unità di
+
+Fey, x
+
+Fe,
+
+Figura 1.4 Forze elettriche tra due cariche
+
+puntuali positive nello spazio libero. Figura 1.5 Campo elettrico E
+
+dovuto alla carica g.
+
+La carica elettrica possiede due i i ieta
+ahi È i Importanti proprietà. La prima è la legge di conserva-
+i zione della carica elettrica, la quale dichiara che la carica elettrica Sera non si può
+
+‘ creare né distruggere. Se un volume conti è ¢
+ca totale è contiene rp protoni e ne elettroni, allora la cari-
+
+qurnpe-ne=(1-rm)e  (C). (1.9)
+Anche se alcuni protoni si combinassero con un uguale numero di elettroni
+Sue vata aire particelle elementari, la carica netta q rimarrebbe invariata.
+materia, le leggi della meccanica quantistica ch i rtam )
+dei protoni all’interno del nucle i i elettroni al di hor enn
+0 dell’atomo e d ial di i di
+permettono che essi si combinino. avi stro al di fici di sso non
+La seconda Importante proprietà della carica
+‘one degli effetti, il quale dichiara che if vettoi
+ale aon spazio dovuto @ un sistema di cariche puntuali è uguale alla somma vet
+mpi elettrici in quel punto dovuti alle singole carich 5
+Apparentemente semplice permetterà nei capitoli ivi di calol nieuwe mpo ele.
+ap semplice pi | capitoli successivi di calcolare il elet
+aper dorato a distribuzioni coruplesse di carica senza doversi preoccupare delle forze
+* ogni singola carica a causa dei campi di tutte le altre cariche.
+espressione data dalla (1.8) descrive il campo indotto da una carica elettrica
+
+Ù } a en
+quando si trova nello spazio libero. Si consideri ora ciò che accade quando si pone
+
+una carica puntuale positiva all’interno di i
+È 0 di un materiale i i
+della carica puntuale il material cc ogni too he wn
+
+1 ; [e è elettricamente neutro e ogni
+
+c° ‘punt i gni atomo ha un nucl
+sini positiva circondato da una nuvola di elettroni di polarità uguale in modulo ma
+segno. Quindi, in ogni punto del materiale che non sia occupato da un ato-
+
+per pro-
+
+elettrica è il principio di Sovrapposi-
+re campo elettrico complessivo in un
+
+12 La natura del’elettromagnetismo
+
+mo il campo elettrico E è zero. Ponendo una carica puntuale nel materiale, come mo-
+strato in Figura 1.6, gli atomi subiscono forze che ne provocano la distorsione: il cen-
+tro di simmetria della nuvola elettronica si sposta rispetto al nucleo e in un polo del-
+l’atomo diventa maggiore la carica positiva, mentre nell’altro polo diventa maggiore
+la carica negativa. Il processo di distorsione è detto polarizzazione e un atomo pola-
+rizzato in questo modo è detto dipolo elettrico. Ii grado di polarizzazione dipende
+daila distanza tra l’atomo e la carica puntuale isolata e l’orientazione del dipolo è tale
+che il suo asse, cicè la retta che passa per i suoi due poli, sia diretto verso la carica
+puntuale, come è illustrato schematicamente in Figura 1.6. Il risultato netto del pro-
+cesso di polarizzazione è che i dipoli elettrici degli atomi o delle molecole tendono a
+neutralizzare il campo dovuto alia carica puntuale. Di conseguenza, il campo elettri-
+co in un punto qualsiasi del materiale sarà differente dal campo che sarebbe stato in-
+dotto dalla carica puntuale in assenza del materiale. Per estendere la validità della
+(1.8) dal caso dello spazio libero a quello di un mezzo qualsiasi, si sostituisce la per-
+mittivita dello spazio libero eo con €, dove € ora rappresenta la permittività del mate-
+riale all’interno del quale si misura il campo elettrico e dunque è caratteristica di quel
+particolare materiale. In questo modo
+
+_p_4
+ERG W/m) (1.19)
+
+00669000090
+@00 000 €00
+@ee vl 000
+@Q@@See22 OOO
+QG@@Il%*DOO
+@Q@@ 89 SOO
+C8 @ 698 SOO
+
+Spesso si esprime e nella forma .
+e=eéo  (F/m) (1.11)
+
+dove e; è una grandezza adimensionale detta permittività relativa o costante dielettri-
+ca relativa del materiale. Nel caso del vuoto si ha €, = 1, nel caso dell’aria in prossi-
+mità della superficie della Terra si ha e; = 1.0006 e nel caso dei materiali che avremo
+occasione di utilizzare ii questo libro, i valori di ¢, sono tabulati nell’ Appendice B.
+
+In aggiunta all’intensità di campo elettrico E, sarà spesso utile usare una grandezza
+a essa legata detta spostamento elettrico D, data dalla
+
+D=cE  (C/a°), (1.12)
+
+la cui unità di misura è il coulomb al metro quadrato (C/m?). Queste due grandezze
+elettriche, E e D, costituiscono una delle due coppie fondamentali dei campi elettro-
+magnetici. La seconda coppia è formata dai campi magnetici che verranno discussi di
+
+seguito.
+
+Figura 1.6
+
+Polarizzazione degli atomi
+di un materiale dielettrico
+da parte di una carica
+positiva g.
+
+[PAG 12]
+Capitolo | ~ introduzione: onde e fasori
+
+1.2.3 Campi magnetici
+- Gia nell’800 aC. i}
+una fc i di
+a forza che attme pezzi di ferro. Queste rocce ora sono dette magnetiti (Fe3O4) e il
+frances! sci ni 10 è detto magnetismo. Nel tredicesimo secolo, scienziati
+naturale steso, l'ago . quando ie seo viene posato sulla superficie di un magnete
+a > ita lungo direzioni diverse in punti diversi magn
+racciando un grafico delle direzioni assunte dall’ago, si determinò che la ee pai
+neta ‘ome linee di campo magnetico che circondano la sfera e sembrano attraver-
+ae fue punt diametralmente opposti l’uno rispetto all’altro. Si scoprì che questi
+» detti polo nord e polo sud del magnete, esistono in ogni magnete, a prescinde-
+
+re dalla sua forma. La configurazione del campo magnetico attorno a una barra ma-
+
+tica è fsi | :
+7 ene sping mostrata in Figura LI. Si osservò anche che poli uguali di magneti diversi
+Adi tes no a vicenda e poli opposti si attraggono l’uno con l’altro. Questa proprie-
+the tranne che pena è simile alla forza elettrica che agisce tra cariche letti
+
+> ne chi importante differenza: le carich i iso.
+
+late, ma i poli magnetici esistono sempre a coppie, $ o eletriche possono essere iso-
+
+tagliato a pezzetti, per quanto pi rea Se un magnete permanente viene
+, iccolo 3
+e un polo sud. P Sia ciascun pezzetto avrà sempre un polo nord
+
+Figura 1.7 Configurazione delle
+linee di campo ‘magnetico attorno
+a una barra magnetica,
+
+Figura 1.8 Campo magnetico indotto da una
+‘corrente continua che scorre in direzione
+dell’asse z.
+
+Le linee magnetiche che circondano un magn
+
+n È ete it i i
+co e costituiscono la rappresentazione di wo moat di campo magneti
+
+e € di un campo magnetico detto induzione ma-
+gnetica B. Il campo magnetico non esiste solo attorno ai magneti permanent, ma può
+ly
