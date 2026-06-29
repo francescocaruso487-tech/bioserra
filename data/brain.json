@@ -1,61 +1,76 @@
 {
-  "lastUpdate": "2026-06-27T17:50:20.000Z",
-  "versione": "5.0",
+  "lastUpdate": "2026-06-29T08:36:46.000Z",
+  "versione": "6.0",
+  "testi_pdf_letti": 4,
   "cervello": {
     "consigli_giorno": [
-      "Monitora l'umidità del suolo per le piante in essiccazione, evitando ristagni d'acqua.",
-      "Raccogli manualmente le foglie secche intorno alle piante in fioritura per prevenire malattie.",
-      "Proteggi le piante auto da stress idrico nelle ore più calde (12:00-15:00)."
+      "Fase luna: Gibbosa Crescente. Controlla stato piante.",
+      "Verifica irrigazione e umidita substrato.",
+      "Controlla tecniche elettrocultura attive."
     ],
+    "briefing_mattutino": "Sistema in modalita fallback. Controlla connessione Mistral.",
     "consigli_piante": {
-      "autofiorenti": "Ridurre l'irrigazione per Epsilon F1 in essiccazione, mantenendo solo umidità residua.",
-      "femminizzate": "Fornire supporto strutturale a Cosmic Cheddar e Orbital Banana per evitare cedimenti."
+      "autofiorenti": "Monitora crescita e avvisi raccolta.",
+      "femminizzate": "Verifica vegetazione.",
+      "per_pianta": []
     },
-    "tecniche_nuove": [
-      {
-        "nome": "Elettro-irrigazione a impulsi",
-        "descrizione": "Applicare brevi impulsi elettrici (5V) al terreno per migliorare l'assorbimento idrico e nutritivo.",
-        "materiali": [
-          "generatore 5V DC",
-          "elettrodi in rame",
-          "cavi isolati"
-        ],
-        "difficoltà": "media"
-      }
-    ],
-    "scoperte": [
-      "La fase di gibbosa crescente (73% illuminazione) potrebbe favorire la sintesi di terpeni nelle piante in fioritura."
-    ],
+    "tecniche_nuove": [],
+    "scoperte": [],
     "avvisi": [
-      "Raccolta imminente per Gaia F1 tra 6 giorni (30/06/2026) - prepara materiali.",
-      "Temperature massime prossime a 36°C: ombreggiatura consigliata tra 11:00 e 16:00."
-    ]
+      "Epsilon F1: essiccazione in corso, concia il 2026-07-25",
+      "Milky Way F1: raccolta prevista tra 4 giorni (2026-07-02)",
+      "Titan F1: raccolta prevista tra 3 giorni (2026-07-01)"
+    ],
+    "piano_giornata": {
+      "mattina": "Controlla piante",
+      "pomeriggio": "Riposo ore calde",
+      "sera": "Irrigazione"
+    },
+    "kb_sintesi": {
+      "principi_attivi": [
+        "Coltivare in armonia con la propria natura intrinseca (Aforismi Esoterici di Crowley)",
+        "L'importanza dell'equilibrio tra individuo e ambiente naturale (Upanishad)",
+        "L'osservazione attenta dei fenomeni naturali come chiave per la crescita (Biodinamica)",
+        "L'uso di tecniche energetiche per stimolare la vitalità del suolo (Elettrocultura)",
+        "La consapevolezza che ogni essere vivente ha una rotta propria da seguire (Aforismi Esoterici)"
+      ],
+      "consiglio_elettro_da_testi": "Applicare impulsi elettrici a bassa frequenza (1-10 Hz) sulle radici delle piante in fioritura per stimolare la produzione di terpeni e resine, citando il principio di 'attivazione dell'energia vitale' da [pdf_84] 'Activating The Inner Eye' di Harry B. Joseph.",
+      "consiglio_suolo_da_testi": "Mantenere il suolo in condizioni di 'Living Soil' con alta attività microbica, aggiungendo micorrize e batteri benefici per supportare la fioritura delle piante, ispirato dai principi di equilibrio naturale delle Upanishad [pdf_0].",
+      "consiglio_biodinamica_da_testi": "Eseguire preparati biodinamici (es. 500 e 501) durante la fase di luna crescente per favorire la fioritura, come suggerito nei principi di sincronizzazione con i ritmi cosmici delle Upanishad [pdf_0].",
+      "scoperta_del_giorno": "La temperatura di 31.3°C e l'umidità del 33% sono ideali per la fioritura se accompagnate da un'adeguata umidità del suolo e da una buona ventilazione, come indicato nei principi di equilibrio termico delle Upanishad.",
+      "tecnica_da_provare": {
+        "nome": "Elettrocultura a impulsi variabili",
+        "descrizione": "Applicare un campo elettrico debole (5-15V) con impulsi di 5 secondi on/5 secondi off per 2 ore al giorno sulle piante in fioritura, utilizzando elettrodi in rame o acciaio inox posizionati a 10 cm di profondità nel suolo.",
+        "fonte": "[pdf_84] 'Activating The Inner Eye' di Harry B. Joseph",
+        "materiali": [
+          "Generatore di impulsi DC (5-15V)",
+          "Elettrodi in rame o acciaio inox",
+          "Cavi isolati",
+          "Timer digitale"
+        ]
+      }
+    }
   },
   "agenti": {
     "piante": {
       "stato_generale": "monitoraggio",
-      "irrigazione": "Irrigare leggermente le piante in fioritura al tramonto (19:00), evitando le auto in essiccazione.",
-      "nutrizione": "Sospendere fertilizzazione per le auto; per le foto, applicare un booster di potassio (0.5g/L) domani.",
+      "irrigazione": "Valuta al mattino",
+      "nutrizione": "Water-only",
       "piante_critiche": [
         {
           "id": 1,
           "nome": "Milky Way F1",
-          "giorni_a_raccolta": 13
+          "giorni_a_raccolta": 4
         },
         {
           "id": 2,
           "nome": "Titan F1",
-          "giorni_a_raccolta": 12
+          "giorni_a_raccolta": 3
         },
         {
           "id": 3,
           "nome": "Medusa F1",
-          "giorni_a_raccolta": 11
-        },
-        {
-          "id": 8,
-          "nome": "Gaia F1",
-          "giorni_a_raccolta": 6
+          "giorni_a_raccolta": 2
         }
       ]
     },
@@ -63,38 +78,28 @@
       "luna": {
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
-        "illuminazione_pct": 73,
-        "consiglio": "Ottimo momento per potature leggere e raccolta di materiale vegetale per compost."
+        "illuminazione_pct": 50,
+        "consiglio": ""
       },
-      "ore_luce": 15.1
+      "ore_luce": 14
     },
     "elettro": {
       "verifica_oggi": [
-        "Controlla il funzionamento degli elettrodi in rame per la tecnica di elettro-irrigazione.",
-        "Verifica la carica delle batterie del sistema di monitoraggio ambientale."
+        "Controlla circuito Lakhovsky",
+        "Verifica spirale rame"
       ],
-      "ottimizzazione": "Regola la frequenza degli impulsi elettrici a 10Hz per ottimizzare l'assorbimento radicale."
+      "ottimizzazione": ""
     }
   },
-  "tecniche_nuove": [
-    {
-      "nome": "Elettro-irrigazione a impulsi",
-      "descrizione": "Applicare brevi impulsi elettrici (5V) al terreno per migliorare l'assorbimento idrico e nutritivo.",
-      "materiali": [
-        "generatore 5V DC",
-        "elettrodi in rame",
-        "cavi isolati"
-      ],
-      "difficoltà": "media"
-    }
-  ],
+  "tecniche_nuove": [],
   "avvisi": [
-    "Raccolta imminente per Gaia F1 tra 6 giorni (30/06/2026) - prepara materiali.",
-    "Temperature massime prossime a 36°C: ombreggiatura consigliata tra 11:00 e 16:00."
+    "Epsilon F1: essiccazione in corso, concia il 2026-07-25",
+    "Milky Way F1: raccolta prevista tra 4 giorni (2026-07-02)",
+    "Titan F1: raccolta prevista tra 3 giorni (2026-07-01)"
   ],
   "consigli_giorno": [
-    "Monitora l'umidità del suolo per le piante in essiccazione, evitando ristagni d'acqua.",
-    "Raccogli manualmente le foglie secche intorno alle piante in fioritura per prevenire malattie.",
-    "Proteggi le piante auto da stress idrico nelle ore più calde (12:00-15:00)."
+    "Fase luna: Gibbosa Crescente. Controlla stato piante.",
+    "Verifica irrigazione e umidita substrato.",
+    "Controlla tecniche elettrocultura attive."
   ]
 }
