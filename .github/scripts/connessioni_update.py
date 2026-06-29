@@ -272,7 +272,14 @@ def main():
         for f in gh_list(f'data/testi/web/{sito}'):
             if f.get('type') == 'file' and f['name'].endswith('.txt'):
                 testi_disp.add(f['name'].replace('.txt',''))
-    print(f'Testi disponibili (PDF+web): {len(testi_disp)}')
+    # Aggiungi testi fusi per categoria
+    try:
+        for f in gh_list('data/testi/fusi'):
+            if f.get('type') == 'file' and f['name'].endswith('.txt'):
+                testi_disp.add(f['name'].replace('.txt',''))
+    except:
+        pass
+    print(f'Testi disponibili (PDF+web+fusi): {len(testi_disp)}')
 
     # FASE 1: Estrai concetti da PDF rilevanti non ancora processati
     CATEGORIE_RILEVANTI = {
@@ -288,6 +295,9 @@ def main():
             return True
         tags = ' '.join(a.get('tag',[])).lower()
         if any(t in tags for t in TAG_RILEVANTI):
+            return True
+        # Testi fusi: massima priorità
+        if a.get('fonte_sito') == 'fuso':
             return True
         # Web sempre rilevante
         if a.get('fonte_sito'):
@@ -321,12 +331,17 @@ def main():
         safe_id = titolo_safe(titolo)
         print(f'\n  {titolo[:60]}')
 
-        # Per voci web usa path specifico
-        if a.get('fonte_sito'):
-            slug = a.get('testo_id', safe_id)
-            sito = a.get('fonte_sito','')
+        # Per voci fuse usa path dedicato, per web usa path web
+        fonte_sito = a.get('fonte_sito','')
+        slug = a.get('testo_id', safe_id)
+        if fonte_sito == 'fuso':
             try:
-                testo = gh_raw(f'data/testi/web/{sito}/{slug}.txt')
+                testo = gh_raw(f'data/testi/fusi/{slug}.txt')
+            except:
+                testo = ''
+        elif fonte_sito:
+            try:
+                testo = gh_raw(f'data/testi/web/{fonte_sito}/{slug}.txt')
             except:
                 testo = ''
         else:
@@ -482,6 +497,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 
