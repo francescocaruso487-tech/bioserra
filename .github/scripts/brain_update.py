@@ -603,4 +603,37 @@ def main():
         print(f'Briefing: {brain_out["cervello"]["briefing_mattutino"][:150]}')
 
 if __name__ == '__main__':
-    main()
+    import traceback, sys
+    try:
+        main()
+    except Exception as ex:
+        tb = traceback.format_exc()
+        log = f'BRAIN CRASH: {type(ex).__name__}: {ex}\n\n{tb}'
+        print(log)
+        try:
+            import datetime
+            oggi = datetime.date.today().isoformat()
+            tok = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
+            path_log = 'data/brain_crash_log.txt'
+            req_sha = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path_log}',
+                headers={'Authorization': f'token {tok}', 'Accept': 'application/vnd.github+json'})
+            try:
+                with urllib.request.urlopen(req_sha) as r: sha_log = json.load(r)['sha']
+            except: sha_log = None
+            body_log = json.dumps({
+                'message': f'crash: brain_update [{oggi}]',
+                'content': base64.b64encode(log.encode()).decode('ascii'),
+                'branch': 'main',
+                **({'sha': sha_log} if sha_log else {})
+            }).encode()
+            req_put = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path_log}',
+                data=body_log,
+                headers={'Authorization': f'token {tok}', 'Content-Type': 'application/json',
+                         'Accept': 'application/vnd.github+json'},
+                method='PUT')
+            with urllib.request.urlopen(req_put): print('Log salvato!')
+        except Exception as log_ex:
+            print(f'Log ERR: {log_ex}')
+        sys.exit(1)
