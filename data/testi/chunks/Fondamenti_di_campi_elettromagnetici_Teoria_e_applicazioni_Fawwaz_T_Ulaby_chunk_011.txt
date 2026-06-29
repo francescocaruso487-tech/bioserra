@@ -1,0 +1,1174 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 11/23 ===
+Chars: 44,929 | Offset: 448,973
+
+
+
+dove |dj = r, che è il raggio del disco, e F = |F|. Dalla (5.14) si nota che una coppia
+rivolta lungo la direzione delle z positive corrisponde alla tendenza del disco a ruota-
+Te in senso antiorario e viceversa una coppia negativa corrisponde a una rotazione in
+senso orario. Queste direzioni soddisfano la seguente regola della mano destra:
+quando il pollice della mano destra punta in direzione della coppia, le quattro dita
+indicano la direzione in cui la coppia sta cercando di ruotare il corpo.
+
+Verrà ora considerata la coppia magnetica che si esercita su una spira conduttrice
+sotto l'influenza di forze magnetiche. Partendo dal caso semplice in cui il campo B
+giace nel piano della spira, si estenderà in seguito l’analisi al caso generale in cui B
+forma un angolo @ con la normale alla superficie della spira.
+
+Asse di
+rotazione
+
+Campo magnetico nel piano della spira
+
+La spira conduttrice rettangolare descritta in Figura 5.6(a) è realizzata da un filo rigi-
+do in cui scorre una corrente /. La spira giace nel piano x-y ed è imperniata lungo
+l’asse descritto. Sotto l'influenza di un campo uniforme generato esternamente
+B = $Bo, i lati 1 e 3 della spira sono soggetti rispettivamente alle forze F; e F3, con
+
+= I(-9b) x (£Bo) = 2/bBo, (5.15)
+
+Fy = 1(35) x (&Bo) = —21bBo. (5.150)
+
+Questi risultati derivano dall’applicazione della (5.12). Sui lati 2 e 4 non si esercita
+alcuna forza magnetica in quanto B è parallelo alla direzione della corrente che flui-
+sce in essi.
+
+Quando si applica una forza a un corpo rigido imperniato su un asse fissato, il corpo
+
+208
+
+Figura 5.5
+
+La forza F agente su un
+disco circolare imperniato
+sull’asse z genera una
+coppia T = d x F che
+provoca la rotazione del
+disco.
+
+[PAG 109]
+202
+
+Figura 5.6
+
+Spira rettangolare
+imperniata lungo l’asse y:
+(a) vista frontale e (b) vista
+dal basso. La
+combinazione delle forze
+F; e Fs agenti sulla spira
+genera una coppia che
+tende a ruotare la spira in
+senso orario, come
+descritto in (b).
+
+Capitolo 5 - Magnetostatica
+
+La vista dall’estremita della spira, descritta in Figura 5.6(b), mostra che le forze F; e
+F; producono una coppia attorno all’origine O, facendo ruotare la spira in senso ora-
+rio. Il braccio è pari a a/2 per entrambe le forze, ma d; e ds hanno direzione oppo-
+sta, ottenendo una coppia magnetica complessiva
+
+T= di x Fi + d3 xk
+
+= (i 5) x (2IbBo) + (È 5) x (-HIbB.) = Faby = 714B, 19)
+dove A = ab è l’area della spira. Per la regola della mano destra, la rotazione avviene
+in senso orario. Il risultato della (5.16) vale solo quando il campo B è parallelo al piano
+della spira. Non appena la spira inizia a ruotare, la coppia T inizia a descrescere, e do-
+po una rotazione di un quarto di giro la coppia diviene zero, come si vedrà in seguito.
+
+Campo magnetico perpendicolare all'asse di una spira rettangolare
+
+Nella situazione descritta in Figura 5.7, dove B = Bp, il campo è ancora perpendico-
+lare all’asse di rotazione della spira, ma la sua direzione può formare un angolo @ con
+la normale fi alla superficie della spira, pertanto una forza diversa da zero può agire
+su tutti e quatiro-i lati della spira rettangolare. Tuttavia, le forze F) e Fy sono uguali
+in modulo, opposte in direzione e rivolte lungo l’asse di rotazione: dunque la coppia
+netta ottenuta dalla loro combinazione è zero. Le direzioni delle correnti nei lati 1 e 3
+sono sempre perpendicolari a B a prescindere dal modulo di #, dunque F; e F3 hanno
+le stesse espressioni date in precedenza dalla (5.15a) e dalla (5.15b) e il loro braccio
+è {a/2) sin 6, come descritto in Figura 5.7(b). Di conseguenza, il modulo della cop-
+pia netta esercitata dal campo magnetico attomo all’asse di rotazione è uguale a quel-
+lo dato dalla (5.16), moltiplicato però per sin 6:
+
+T = IABo sin. (5.17)
+
+5.1 Forze e coppie magnetiche
+
+Asse di
+Totazione
+
+{a)
+
+Secondo la (5.17) la coppia è massima quando il campo magnetico è parallelo al pia-
+no della spira (6 = 90°) ed è zero quando il campo è perpendicolare a esso (9 = 0).
+Se la spira è formata da N avvoigimenti, ciascuno dei quali genera una coppia pari a
+quella data dalla (5.17), la coppia complessiva è
+
+T = NIABg sin 0. (5.18)
+
+La quantita NIA è detta momento magnetico m della spira, e si può rappresentare con
+un vettore m di direzione fi, dove fi è la normale alla superficie della spira che soddi-
+sfa la seguente regola della mano destra: quando le quattro dita della mano destra
+avanzano in direzione della corrente I, la direzione del pollice definisce la direzione
+di fì. Vale a dire
+
+maNIA (A-m), (5.19)
+
+e il vettore coppia T si può scrivere in funzione di m come
+
+T=mxB (N-m). (5.20)
+
+Anche se il procedimento che ha portato a ricavare la (5.20) è stato ottenuto nel caso
+in cui B è perpendicolare ail’asse di rotazione di una spira rettangolare, l’espressione
+risultante è valida per qualsiasi orientazione di B e per una spira di forma arbitraria.
+
+Domande di verifica
+
+5.3 Come è definita la direzione del momento magnetico di una spira?
+
+5.4 Si prendono due fili di uguale lunghezza, realizzando una spira chiusa quadrata
+con uno dei due e una spira chiusa circolare con l’altro. Se i fili sono sede di cor-
+renti uguali ed entrambe le spire giacciono in piani paralleli a un campo magneti-
+co uniforme, quale spira subisce ia coppia maggiore?
+
+203
+
+Figura 5.7
+
+Spira rettangolare -
+immersa in un campo
+magnetico uniforme con
+induzione B, la cui
+direzione è perpendicolare
+all’asse di rotazione della
+spira, ma forma un angolo
+9 con la normale fi alla
+superficie della spira.
+
+[PAG 110]
+204
+
+Figura 5.8
+
+Campo magnetico dH
+generato da un elemento
+di corrente Idt.
+
+La direzione del campo
+indotto nel punto P
+
+è opposta a quella del
+campo indotto nel
+punto P’.
+
+Capitolo 5 - Magnetostatica
+
+- Esercizio 5.5 Una-bobina quadrata formata-da 100 avvolgimenti e cori lati lunghi-0.5 -
+
+m è posta in una regione di spazio immersa in un’induzione magnetica uniforme pari a
+0.2 T. Se la coppia magnetica massima esercitata sulla bobina è di 4 x 107? (N - m), qual
+è l'intensità della corrente che scorre nella bobina?
+
+Sotuzione J = 8 mA.
+
+5.2 Legge di Biot-Savart
+
+Nel paragrafo precedente si è scelto di utilizzare l’induzione magnetica B per indica-
+re la presenza di un campo magnetico in una determinata regione dello spazio, ora in-
+vece si prenderà in considerazione l'intensità di campo magnetico H. Questa scelta
+ha in parte lo scopo di rimarcare il fatto che per la maggior parte dei materiali esiste
+una relazione lineare tra B e H data da B = pH, e pertanto conoscere una delle due
+equivale a conoscere l’altra, se jz è noto.
+
+Attraverso i suoi esperimenti sulla deflessione di un ago di bussola da parte di fili
+percorsi da corrente, Hans Oersted dimostrò che le correnti inducono campi magneti-
+ci che formano anelli chiusi attorno ai fili, come già detto nel Paragrafo 1.2.3.
+Partendo dai risultati ottenuti da Oersted, Jean Biot e Felix Savart giunsero a ricavare
+un’espressione che mette in relazione il campo magnetico H in ogni punto dello spa-
+zio con la corrente / che genera H. La legge di Biot-Savart afferma che il campo ma-
+gnetico differenziale dH generato da una corrente continua J che scorre per una lun-
+ghezza differenziale dl è data da
+
+I dxR
+
+dH = mR (A/m), (5.21)
+dove R= RR è il vettore distanza tra dle il punto di osservazione P descritto in
+Figura 5.8. L’unita di misura di H nel SI è ampere: m/m? = (A/m) ed è importante ri-
+cordare che la direzione del campo magnetico è definita in modo che dl sia rivolto
+lungo la direzione della corrente. / e il versore È punti a partire dall’elemento di cor-
+rente verso il punto di osservazione. Secondo la (5.21), dH varia proporzionalmente
+a R-?, il che assomiglia alla dipendenza dalla distanza del campo elettrico indotto da
+‘una carica elettrica. Tuttavia, diversamente dal vettore campo elettrico E, la cui dire-
+zione è parallela al vettore distanza R che congiunge la carica con il punto di osser-
+vazione, il campo magnetico H è ortogonale al piano che contiene la direzione dI
+dell’elemento di corrente e il vettore distanza R. Nel punto P in Figura 5.8, la direzio-
+ne di dH è a uscire dalla pagina, mentre nel punto P’ la direzione di dH è a entrare
+nella pagina.
+
+(dH uscente dalla pagina)
+
+Pea
+(dH entrante nella pagina)
+
+5.2 Legge di Biot-Savart
+
+Per determinare il campo magnetico complessivo H generato da un conduttore di di-
+merisione finita, si devono sommaré i contributi dovuti a tutti gli elementi di corrente
+che compongono il conduttore: dunque la legge di Biot-Savart diviene
+
+ln I [AR (A/m), (5.22)
+
+“al, R
+
+dove / è il percorso lineare lungo il quale scorre /.
+
+5.2.1 Campo magnetico generato da distribuzioni di correnti
+superficiali e volumetriche
+
+La legge di Biot-Savart si può anche esprimere in termini di sorgenti distribuite di
+corrente (Figura 5.9) come la densità volumetrica di corrente J, misurata in (A/m?),
+oppure la densità superficiale di corrente Js, misurata in (A/m). La densità superfi-
+ciale di corrente J, descrive le correnti che fluiscono sulla superficie dei conduttori,
+sotto forma di strati che hanno spessore praticamente nullo. Quando le sorgenti della
+corrente sono specificate in termini di J, su una superficie S o in termini di J su un
+volume 7, si può applicare la relazione di equivalenza data dalla
+
+Id\ = J;ds= Jdv (5.23)
+
+per esprimere la legge di Biot-Savart come segue:
+
+LR, (per una corrente superficiale), (5.242)
+
+{per una corrente volumetrica).. (5.24b)
+
+(a) Densità volumetrica di corrente J in (A/m?)
+
+{b) Densità superficiale di corrente J, in (A/m)
+
+205
+
+Figura 5.9
+
+(a) La corrente
+complessiva che
+attraversa la sezione
+trasversa S del cilindro è
+I= f,J-ds.)La
+corrente complessiva che
+fluisce sulla superficie del
+conduttore é7 = fj J,di.
+
+[PAG 111]
+206
+
+Figura 5.10
+
+Conduttore rettilineo di
+junghezza / che porta una
+corrente /. (a) Il campo
+dH nel punto P dovuto
+all’elemento infinitesimo
+di corrente di. (b) Angoli
+limite @; e 62, misurati tra
+il vettore /dI e il vettore
+congiungente la rispettiva
+estremità del conduttore
+con il punto P
+
+(Esempio 5.2).
+
+Capitolo 5 — Magnetostatica
+
+Esempio 5.2 Campo magnetico generato da un conduttore lineare
+
+Un conduttore rettilineo di lunghezza / sede di una corrente / è allineato all’asse z, co-
+me descritto in Figura 5.10.
+
+Si ricavi l’induzione magnetica B in un punto P situato a una distanza r nel piano x-y
+nello spazio libero.
+
+Soluzione Dalla Figura 5.10, elemento di corrente dl=24 e dix R=
+a2 x R) = $ sin @dz, dove è è il versore in direzione azimutale e @ è l’angolo com-
+preso tra dl e R. Pertanto, applicando la (5.22) si ha
+
+I [PAR 51 |" sin.
+
+H= =
+4m Josip R Jap R
+
+dz. (5.25)
+
+Per comodità si trasforma la variabile di integrazione da z a 9 applicando le seguenti re-
+lazioni:
+
+R=resc, (5.262)
+z= ~rcotd, (5.26b)
+dz =r csc” 040. {5.26c)
+
+Sostituendo la (5.262) e la (5.26c) nella (5.25) si ha
+
+I zf sin @ r esc? 040
+
+a= 47 re csc? @
+
+È
+
+. Be
+$+ |” sinodo (5.27)
+4nr Jo,
+
+= 32 (4, — cos 62),
+
+dove 81 e @ sono gli angoli limite, rispettivamente in z=--//2 e in z= 1/2.
+Considerando i triangoli rettangoli in Figura 5.10(b)
+
+1/2
+
+così = > (5.28a)
+P+ (1/2)?
+
+cos 8, = - così = ae (5.28b)
+
+7 + (1/2)?
+Dunque
+
+TI boll
+
+B= joH = ¢ ————_ (1). 5.2!
+
+MPa 0 02)
+
+5.2 Legge di Biot-Savart
+
+Per un filo di lunghezza infinita tale che / > r, la (5.29) si riduce alla
+
+B= gel 5 bal (flo di lunghezza infinita) 6. 40)
+
+Esempio 5.3 Campo magnetico generato da una spira a forma di settore cir-
+colare
+
+Si determini il campo magnetico al vertice O della spira a forma di settore circolare de-
+
+scritta in Figura 5.11. Si ignorino i contributi al campo dovuti alla corrente nei piccoli
+archi attorno a O.
+
+x
+
+Figura 5.11 Spira a forma di settore circolare di raggio a percorsa da una corrente 7
+
+(Esempio 5.3).
+
+Soluzione Per quanto.riguarda i segmenti rettilinei OA e OC, il campo magnetico
+generato in O è identicamente nullo, perché in tutti i punti appartenenti a questi segmen-
+ti si ha che dl è parallelo o antiparallelo a Re dunque dl x R = 0. Nel caso del segmen-
+to AC, di è perpendicolare a È e di x È = 2dl = gad. Di conseguenza, dalla (5.21) si
+ottiene
+
+1 [fado _, 1
+
+47 da 7 ana
+
+aah
+
+dove ¢ é espresso in radianti.
+Esempio 5.4 Campo magnetico generato da una spira circolare
+
+Una spira circolare di raggio a è percorsa da una corrente continua /. Si determini il
+campo magnetico H in un punto arbitrario sull’asse della spira.
+
+Soluzione Si consideri una spira che giace nel piano x-y, come descritto in Figura
+5.12: si vuole calcolare l’espressione di H nel punto P(0, 0, z).
+
+Si noti per prima cosa che ogni elemento dl della spira circolare è perpendicolare al
+vettore distanza R e che tutti gli elementi che formano la spira si trovano alla stessa di-
+stanza R da P, con R = Va? +22. Dalla (5.21) si ha che il modulo di dH dovuto all’ele-
+mento di è dato daila
+
+Idi
+
+Gna sd) (531)
+
+I A
+4nR? [al x Rl =
+
+207
+
+[PAG 112]
+Capitolo 5 ~ Magnetostatica
+
+e la direzione di dH è perpendicolare al piano che contiene R e dl. Come descritto in
+Figura 5.12, dHgiace nel. piano r-z e dunque ha.componenti-dH,-e dH.. Se si considera
+Pelemento dl' in posizione diametralmente opposta a dl, si osserva che i componenti
+lungo z dei campi magnetici dovuti a dl e dl’ si sommano in quanto sono rivolti nella
+stessa direzione, ma i componenti lungo r si annullano in quanto sono rivolti in direzio-
+ni opposte. Pertanto, il campo magnetico netto è rivolto esclusivamente lungo z, vale a
+dire che
+
+dB = 2dH, = èdH 9088 a (8.32)
+
+= £dH, = idH cos ua) . .
+
+Nel caso di un punto fissato P(0, 0, z) sull’asse della spira, tutte le grandezze presenti
+nella (5.32) sono costanti, tranne d?. Dunque, integrando la (5.32) su un cerchio di rag-
+gio a si ottiene
+
+H=7
+
+I cos? Icos?
+=% . 5.33
+4n(a? +22) fa 2 4r(a +22) (210) (5.33)
+
+Applicando la relazione cos @ = a/(a? +22)! si ottiene l’espressione finale:
+
+Ia?
+
+H=i——
+2a? +23?
+
+(A/m). (5.34)
+
+AI centro della spira (z = 0), la (5.34) si riduce alla
+
+H=e3- (in z = 0), (5.35)
+e in un punto a grande distanza dalla spira, tale che 2° > a’, la (5.34) si può approssi-
+mare ottenendo
+
+la
+H=2——~ (per |z| > a). (5.36)
+2
+
+Figura 5.12 Spira circolare percorsa da una corrente / (Esempio 5.4).
+
+n limi
+
+5.2 Legge di Biot-Savart
+
+5.2.2 Campo magnetico generato da un dipolo magnetico
+
+Considerando la definizione del momento magnetico m di una spira di corrente data
+dalla (5.19), si ha che una spira formata da un solo avvolgimento che giace nel piano
+xy, come quella descritta in Figura 5.12, ha momento magnetico m= 2m; con
+m = Ina”. Di conseguenza la (5.36) si può esprimere nella forma
+
+H=î- (per [z| > a). (5.37)
+2nlz| .
+Questa espressione vale per un punto P a grande distanza dalla spira, situato sull’asse
+della spira. Se il problema fosse stato risolto per ricavare M in un punto a grande di-
+stanza P’(R’, 6’, ’) nel sistema di riferimento in coordinate sferiche, dove R’ è la di-
+stanza tra il centro della spira e il punto P’, si sarebbe ottenuta l’espressione
+
+H “rr cos +6sin@) (5.38)
+
+(a) Dipolo elettrico (c) Barra magnetica
+
+(b) Dipolo magnetico
+
+per R' > a. Una spira di corrente che abbia dimensione molto minore della distanza
+tra la spira e il punto di osservazione è detta dipolo magnetico, in quanto l’andamen-
+to del suo campo magnetico è simile a quello di un magnete permanente, come pure
+all'andamento del campo elettrico generato da un dipolo elettrico, come descritto
+nell’Esempio 4.7. La somiglianza è evidente negli andamenti descritti in Figura 5.13.
+
+Domande di verifica
+
+5.5 Due fili paralleli di lunghezza infinita sono percorsi da correnti uguali in modulo.
+Qual è il valore del campo magnetico risultante generato in un punto a metà stra-
+da tra i due fili, paragonato al campo magnetico generato da un solo filo, se le
+correnti hanno (a) la stessa direzione e (b) direzioni opposte?
+
+5.6 Si definisca una regola della mano destra che consenta di ricavare la direzione
+del campo magnetico generato da un conduttore rettilineo percorso da corrente.
+
+5.7 Cos'è un dipolo magnetico? Si descriva la distribuzione del campo magnetico da
+esso generato.
+
+Esercizio 5.6 Un conduttore rettilineo semiinfinito si estende da z = 0'az = co sull’as-
+sez. Se la corrente J nel conduttore fluisce in direzione delle z positive, si ricavi H in un
+punto sul piano x--y a una distanza radiale r dal conduttore.
+
+Sotuzione H=¢ L (Am).
+Cod
+
+209
+
+Figura 5.13
+
+Andamenti del (a) campo
+elettrico generato da un
+dipolo elettrico, (b) campo
+‘magnetico generato da un
+dipolo magnetico e (c)
+campo magnetico
+generato da una barra
+magnetica. A grande
+distanza dalle sorgenti, i
+campi hanno andamenti
+simili in tutti e tre i casi.
+
+[PAG 113]
+210
+
+Figura 5.14
+
+Forze magnetiche agenti
+su conduttori paralleli
+‘percorsi da corrente.
+
+Capitolo 5 — Magnetostatica
+
+Esercizio 5.7 Un filo percorso da una corrente di 4 A è ripiegato a formare una spira
+circolare; Se il campo magnetico al centro della spira è pari a 20 Alm; qual è il raggio del-
+la spira se essa è formata da (a) un solo avvolgimento e (b) 10 avvolgimenti?
+
+SOLUZIONE (a)a = 10 cm, (b)a= im.
+
+Esercizio 5.8 Un filo è ripiegato a formare una spira quadrata ed è posto nel piano x-y
+con il centro nell’ origine e i lati paralleli all’asse x 0 all’asse y. Ogni lato è luogo 40cme
+il filo è percorso da una corrente di 5 A, la cui direzione è rivolta in senso orario quando
+la spira è vista dall’alto. Si calcoli il campo magnetico al centro della spira.
+
+Soluzione H = —Z = —2)1.25 A/m.
+
+4l
+V2al
+
+5.3 Forza magnetica tra due conduttori paralleli
+
+Nel Paragrafo 5.1.1 si è presa in considerazione la forza magnetica Fm agente su un
+conduttore percorso da corrente quando il conduttore è immerso in un campo magne-
+tico esterno; tuttavia anche la corrente nel conduttore genera un proprio campo ma-
+gnetico. Pertanto, se due conduttori percorsi da corrente sono posti uno accanto al
+l’altro, ciascuno dei due eserciterà una forza magnetica sull’altro. Si considerino due
+fili rettilinei paralleli molto lunghi, approssimabili con fili di junghezza infinita, sepa-
+rati nello spazio da una distanza d e percorsi da due correnti Jj e / Tivolte nella stes-
+sa direzione, come descritto in Figura 5.14. La corrente /; è situata in y —4/2, h é
+situata in y = d/2 ed entrambe sono rivolte in direzione delle z positive. Si indica
+con B, il campo magnetico generato dalla corrente /;, definito nella posizione in cui
+si trova il filo percorso dalla corrente J, e analogamente By è il campo generato da h
+nella posizione del filo percorso dalla corrente /1. Dalla (5.30), con/=/,r=de
+$ = —$ nella posizione di J, il campo B, è
+
+ee (5.39)
+
+5.4 Equazioni magnetostatiche di Maxwell
+
+La forza F, esercitata su un tratto di lunghezza / dei filo 4 a causa della presenza del
+
+“campo By si pùò ricavare applicando la (5.12):
+
+E = hit xB, = hlax coll
+
+_ soli (5.40)
+0 2ad ?
+e la corrispondente forza per unità di lunghezza è
+_F:_ _g 40h
+E = Toa (5.41)
+
+Un’analisi simile svolta per determinare ia forza per unità di lunghezza esercitata sul
+filo percorso da J, porta a ottenere
+
+_g Mh
+VY rd
+Pertanto F| = —F%, il che significa che i due fili si attraggono a vicenda con forze
+
+uguali. Se le correnti fossero rivolte in direzioni opposte, i fili si respingerebbero a vi-
+cenda con forze uguali.
+
+(5.42)
+
+5.4 Equazioni magnetostatiche di Maxwell
+
+Nei paragrafi precedenti si è definito il significato dell’induzione magnetica B e del
+campo magnetico associato H, si è introdotta la formulazione della legge di Biot-
+Savart per ricavare i campi B e H generati da una distribuzione arbitraria di correnti
+elettriche e si è esaminato il modo in cui i campi magnetici possono esercitare forze
+magnetiche sulle particelle cariche in movimento e sui conduttori percorsi da corren-
+te. Verranno ora esaminate due ulteriori proprietà fondamentali dei campi magneto-
+statici, quelle descritte dal punto di vista matematico dalla (5.1a) e dalla (5.1b).
+
+5.4.1 Legge del magnetismo di Gauss
+
+Nel Capitolo 4 si è dimostrato che il flusso netto uscente dello spostamento elettrico,
+o densità di flusso elettrico, D, attraverso una superficie chiusa che racchiude una ca-
+rica netta Q, è uguale a Q. Questa proprietà è stata chiamata legge dell’elettricità di
+Gauss e la si è espressa in forma differenziale e in forma integrale come
+
+V-D=p «> fosso. (5.43)
+s
+
+La trasformazione dalla forma differenziale alla forma integrale é stata eseguita appli-
+cando il teorema della divergenza a un volume y racchiuso da una superficie S e con-
+tenente una carica Q = f, pydv (Paragrafo 5.15). L’analogo magnetico di una carica
+puntuale è un polo magnetico, ma mentre le cariche elettriche possono esistere isola-
+te, non è così per i poli magnetici, che esistono sempre a coppie: per quante volte si
+suddivida un magnete permanente, ogni nuovo pezzo avrà sempre un polo nord e un
+polo sud, anche se la suddivisione si spinge fino a livello atomico. Pertanto non esi-
+ste alcun equivalente magnetico alla carica Q o alla densità di carica Py, € dunque
+non è sorprendente che la legge del magnetismo di Gauss sia definita come
+
+V-B=0 + f Bao. (5.44)
+s
+
+ANI
+
+[PAG 114]
+212
+
+Capitolo 5 — Magnetostatica
+
+La forma differenziale è una delle quattro equazioni di Maxwell e ia forma integrale _
+
+si ottiene con l’ausilio del teorema delle divergenza. Formalmente, il nome-di ‘legge
+di Gauss” si riferisce al caso elettrico, anche quando non viene fatto esplicito riferi-
+mento all’elettricità. La proprietà descritta dalla (5.44) è stata chiamata in diversi
+modi, cioè ‘legge di inesistenza dei monopoli isolati", “legge di conservazione del
+flusso magnetico”’ e ‘’legge del magnetismo di Gauss" L'ultimo nome è da preferir-
+si, in quanto ricorda il parallelismo, e anche le differenze, tra le proprietà elettriche e
+magnetiche della natura. .
+La differenza tra la legge dell'elettricità di Gauss e la sua omologa per il magneti
+smo si può considerare in termini di linee di campo. Le linee di campo elettrico han-
+no origine dalle cariche elettriche positive e terminano sulle cariche negative.
+Dunque, nel caso delle linee di campo elettrico descritte in Figura 5.15(a), il flusso
+elettrico attraverso una superficie chiusa che racchiuda una delle cariche è diverso da
+zero. Al contrario, le linee di campo magnetico formano sempre circuiti chiusi conti-
+nui. Come si è visto nel Paragrafo 5.2, le linee di campo magnetico generate da cor-
+renti non iniziano e non terminano in nessun punto; ciò è vero per il conduttore retti
+lineo in Figura 5.10 e la spira circolare in Figura 5.12, come pure per qualsiasi distri-
+buzione di correnti. Questo è vero anche per un magnete, come descritto in Figura
+5.15) nel caso di una barra magnetica. Dal momento che le linee di campo magneti-
+co formano anelli chiusi, il flusso magnetico netto attraverso una superficie chiusa
+che circondi il polo sud del magnete, o anche una qualsiasi altra superficie chiusa, è
+sempre zero, a prescindere dalla forma della superficie.
+
+(2) Dipolo elettrico (b) Barra magnetica
+
+Figura 5.15 Mentre in (a) il flusso elettrico netto attraverso una superficie chiusa che racchiuda
+una carica è diverso da zero, in (b) il flusso magnetico netto attraverso una superficie chiusa che
+circondi uno dei poli di un magnete è zero.
+
+5.4.2 Legge di Ampère
+Verrà ora esaminata la proprietà descritta dalla (5.1b):
+VxH=IJ, (5.45)
+
+che è la seconda equazione della coppia di equazioni di Maxwell che caratterizzano i
+. campi magnetostatici B e H. La forma integrale della (5.45) è detta legge della cir-
+
+wuitazione di Ampere, o più semplicemente legge di Ampère, in condizioni magneto-
+
+statiche, vale a dire per correnti continue. Essa si ottiene integrando entrambi i mem-
+
+bri della (5.45) su una superficie aperta S
+
+[o xB) -ds= [54 (5.46)
+
+i
+i
+i
+
+5.4 Equazioni magnetostatiche di Maxwell
+
+e applicando quindi il teorema di Stokes dato dalla (3.107) per ottenere ©
+
+fai (legge di Ampère) (5.47)
+c
+
+dove C è il contorno chiuso che delimita la superficie Se J = fJ-ds è la corrente
+complessiva che scorre attraverso S. Per la direzione di C si sceglie un verso conven-
+zionale tale che I e H soddisfino la regola della mano destra definita in precedenza
+nella trattazione della legge di Biot-Savart. Vale a dire che se la direzione di J è alli-
+neata con il pollice della mano destra, si deve scegliere la direzione del contorno C in
+modo che sia concorde con quella delle altre quattro dita. In altre parole, la legge del-
+la circuitazione di Ampere afferma che l'integrale di linea di H su un contorno chiu-
+so è uguale alla corrente che attraversa la superficie delimitata dal contorno. Per
+comprendere ciò, si consideri che per entrambe le configurazioni mostrate in Figura
+5.16(a) e 5.16(b), l'integrale di linea di H è uguale alla corrente 7, anche se i contomi
+hanno forme molto diverse e il modulo di H nella configurazione (b) non è uniforme
+lungo il contorno. Allo stesso modo, dal momento che in contorno in Figura 5.16(c)
+non racchiude la corrente J, l'integrale di H su di esso è zero, anche se H è diverso
+da zero lungo il contorno.
+
+Quando si è esaminata la legge di Gauss nel Paragrafo 4.4, si è scoperto che la sua
+utilità pratica per il calcolo dello spostamento elettrico D è limitata alle distribuzioni
+di carica che possiedono un certo grado di simmetria e che il procedimento di calcolo
+è subordinato a una scelta oculata della superficie gaussiana che racchiude le cariche.
+La legge di Ampère è soggetta a considerazioni analoghe: ia sua utilità è limitata a di-
+stribuzioni simmetriche di corrente che consentano la scelta di ‘opportuni contorni
+amperiani attomo a esse, come illustrato dagli Esempi 5.5, 5.6 e 5.7.
+
+H
+H
+H H
+al
+HI c i
+Hl €
+(a) (b) (c)
+
+Esempio 5.5 Campo magnetico generato da un filo di Junghezza elevata
+
+Un filo rettilineo di lunghezza elevata, al limite infinita, di raggio a è percorso da una
+corrente continua / uniformemente distribuita sulla sezione trasversa del filo. Si calcoli
+il campo magnetico H a una distanza r dall’asse del filo, sia (a) all’interno del filo
+(r < a) sia (b) all’estemo del filo (r > a).
+
+Soluzione (a) Si sceglie / in modo che sia rivolta verso le z positive, come descritto
+in Figura 5.17(a). Per calcolare Hy a una distanza r; < a, si sceglie come contorno am-
+periano Ci un cerchio di raggio r,, come descritto in Figura 5.17(b). In questo caso, la
+legge di Ampère assume ia forma
+
+Hi -dh =i,
+Ct
+
+dove /, è la frazione che scorre attraverso C, della corrente complessiva J. Per simme-
+tria, H; deve avere modulo costante ed essere parallelo al contorno in ogni suo punto.
+
+213
+
+Figura 5.16
+
+La legge di Ampére
+afferma che l'integrale di
+linea di Hsu un contorno
+chiuso C'è uguale alla
+corrente che attraversa la
+superficie delimitata dal
+contorno. Cid è vero peri
+contomi (a) e (b), ma
+l’integrale di linea di H è
+zero nel caso del contorno
+în (c), perché la corrente J,
+indicata dal simbolo ©,
+non è circondata dal
+contorno C.
+
+[PAG 115]
+214
+
+Capitolo 5 — Magnetostatica
+
+(b) Sezione trasversa del filo
+
+Figura 5.17 Filo di lunghezza infinita di raggio @ percorso da una corrente uniforme / in
+direzione delle z positive: (a) configurazione generica dei contomi C1 e C2, (b) sezione
+trasversa e (c) grafico di H in funzione di r (Esempio 5.5).
+
+Inoltre, essendo J rivolta in direzione dell’asse z, per soddisfare la regola della mano de-
+stra Hj deve essere rivolto in direzione delle ¢ positive nel sistema in coordinate cilin-
+driche, dunque Hy = $H,. Con dl, = $ridé, dal membro sinistro della legge di
+Ampère si ottiene
+
+Qn
+funa=f Hd -d)rd6= 2a.
+CQ 0
+
+La corrente 7, che scorre attraverso l’area delimitata da C, è uguale alla corrente com-
+plessiva / moltiplicata per il rapporto tra l’area delimitata da Ci e l’area totale della se-
+
+zione trasversa del filo:
+an _ ny?
+he (i) Ge
+
+Uguagliando i due membri della legge di Ampére e ricavando Hy, si ottiene È
+
+H=$H=$ I (per rj <a). (5.48)
+
+n
+2na?
+(b) Perri > a, si sceglie il contorno C2, che racchiude l’intera corrente J. Pertanto si ha
+
+Hy - db = 2arnH = 1,
+(21
+
+H = oH) = jo (per 72 > a) (5.49)
+
+5.4 Equazioni magnetostatiche di Maxwell
+
+Si osserva che se si trascura il pedice 2, dalla (5.49) si ottiene fa stessa espressione di
+B = 4oH data dalla (5:30); che era stata ricavata partendo dalla legge di Biot-Savart.
+
+L'andamento del modulo di H in funzione di r è graficato in Figura 5.17(c): H au-
+menta linearmente all’interno del conduttore tra r= 0 e r = a, quindi decresce in pro-
+porzione a 1/r al di fuori del conduttore.
+
+Esercizio 5.9 La corrente J scorre nel conduttore interno di un lungo cavo coassiale e
+ritorna attraverso il conduttore esterno. Qual è il valore del campo magnetico nella regio-
+ne esterna al cavo coassiale e perché?
+
+SoLuzionE H = 0 all’esterno del cavo coassiale, in quanto la corrente netta racchiusa al-
+l’interno del contorno amperiano è zero.
+
+Esercizio 5.10 Il metallo niobio diviene superconduttore e presenta resistenza elettrica
+nulla quando viene raffreddato al di sotto di 9 K, ma il suo comportamento supercondut-
+tivo cessa quando l’induzione magnetica sulla sua superficie supera 0.12 T. Si calcoli la
+massima corrente che un filo di niobio di 0.1 mm di diametro può sostenere rimanendo
+in regime di superconduttività.
+
+SoLuzionE /=30A.
+LT n I: este
+
+Esempio 5.6 Campo magnetico all’interno di una bobina toroidale
+
+Una bobina toroidale, anche detta toroide, è formata da una struttura a forma di ciambel-
+la, detta nucleo, con un filo avvolto strettamente attorno, come descritto in Figura 5.18.
+Per maggiore chiarezza gli avvolgimenti in figura sono distanziati tra loro, ma nella pra-
+tica il filo è avvolto fittamente in modo da formare anelli approssimativamente circolari.
+Il toroide è usato per accoppiare circuiti tra di loro per via magnetica e per misurare le
+proprietà magnetiche dei materiali, come descritto in seguito in Figura 5.30. Per un toroi-
+de con N avvolgimenti percorsi da una corrente /, si determini il campo magnetico H nel
+piano azimutale del toroide nelle tre regioni seguenti: r < a,a <r< der > bd.
+
+Soluzione Per simmetria è chiaro che H ha proprietà azimutali uniformi. Se si co-
+struisce un contomo amperiano circolare centrato nell'origine e di raggio r < a, attra-
+verso la superficie delimitata dal contorno non scorrerà alcuna corrente, pertanto H = 0
+per r < a. Analogamente, per un contorno amperiano di raggio r > b, la corrente netta
+che scorre attraverso la sua superficie è zero in quanto gli anelli di corrente attraversano
+la superficie in uguale numero in entrambe le direzioni. Pertanto, H = 0 nella regione
+esterna alla bobina toroidale.
+
+Per la regione all’interno del nucleo, si costruisce un contomo di raggio r, come de-
+scritto in Figura 5.18. Per ogni avvolgimento, è noto dali’Esempio 5.4 che il campo H
+al centro dell’avvolgimento è rivolto iungo il suo asse, che in questo caso è in direzione
+di @, e considerando la direzione della corrente / descritta in Figura 5.18, la regola della
+mano destra afferma che H deve essere rivolto in direzione delle $ negative, dunque
+H = —$H. La corrente complessiva che attraversa la superficie del contomo di raggio
+r é pari a NY e la sua direzione è entrante nella pagina. Secondo la regola della mano de-
+stra associata alla legge di Ampère, la corrente è positiva se attraversa la superficie del
+contorno in direzione delle quattro dita della mano destra, quando il pollice è rivolto
+lungo la direzione del contorno C, pertanto nel caso in esame la corrente è —MI.
+Applicando la legge di Ampère si ottiene
+
+2a
+fra = [ (-64)-èrdé = -2nrH = —-NI.
+c 0
+
+215
+
+[PAG 116]
+216
+
+Capitoto 5 — Magnetostatica
+
+Figura 5.18 Bobina toroidale di raggio interno a e raggio esterno b. Gli avvolgimenti di filo
+sono solitamente molto più fitti di quanto mostrato in figura (Esempio 5.6).
+
+Pertanto si ha che H = NI/(2mr) e
+
++ M
+H=-$H= 337 (pera <r < b) (5.50)
+
+Esempio 5.7 Campo magnetico generato da una superficie di corrente di
+estensione infinita
+
+Ul piano x-y in Figura 5.19 contiene una superficie di corrente con densità di corrente su-
+perficiale J; = &/,. Si ricavi il campo magnetico H.
+
+Soluzione Per considerazioni di simmetria e per la regola della mano destra, H deve
+essere rivolto nella direzione indicata in figura, vale a dire
+
+H= ~jH, perz>0,
+“| IH, perz <0.
+
+Per valutare l’integrale di linea presente nella legge di Ampère, scegliamo un contomo
+amperiano rettangolare di dimensioni / e w attorno alla superficie, come descritto in
+Figura 5.19. Ricordando che J, rappresenta la corrente per unità di lunghezza lungo la
+direzione dell’asse y, la corrente complessiva che attraversa la superficie delimitata dal
+contorno rettangolare è / = J;/. Pertanto, applicando Ja legge di Ampère al contorno e
+notando che H è zero lungo i lati di lunghezza w, si ha
+
+Hal = 2H = J
+c
+
+da cui si ottiene il risultato
+-3} 4, perz>0,
+H= ; (5.51)
+3 > perz<0.
+
+Si noti che il campo magnetico è uniforme in tutto lo spazio e parallelo alla superficie
+di corrente.
+
+5.5 Potenziale vettore magnetico
+
+Js (uscente dalla pagina)
+
+Figura 5.19 Superficie di corrente sottile giacente nel piano x-y, che sostiene una densità di
+corrente superficiale J; = £/; uscente dalla pagina (Esempio 5.7).
+
+Domande di verifica
+
+5.8 Qual è una differenza fondamentale tra le linee di campo elettrico e le linee di
+campo magnetico?
+5.9 Se l’integrale di linea di H su un contomo chiuso è zero, ne consegue che
+H= 0 su ogni punto del contorno? Se non è così, quale ne è la conseguenza?
+5.10 Si confronti l'utilità di applicare la legge di Biot-Savart rispetto ad applicare la
+legge di Ampère per calcolare il campo magnetico generato da conduttori per-
+corsi da corrente.
+5.11 Cos'è un toroide? Qual è il valore del campo magnetico nei punti all’esterno
+del toroide? _
+
+5.5 Potenziale vettore magnetico
+
+Nel corso delia trattazione dei campi elettrostatici nel Capitolo 4, si è introdotto il po-
+tenziale elettrostatico V e lo si è definito in termini dell’integrale di linea del campo
+elettrico E. Si è scoperto che, in forma differenziale, la relazione tra V ed E è data da
+E = —VY. Questa relazione si è dimostrata utile per mettere in relazione la distribu-
+zione del campo elettrico negli elementi circuitali come resistenze e condensatori con
+le differenze di potenziale ai loro capi, ma è anche risultato comodo in certi casi de-
+terminare dapprima il potenziale Y generato da una specifica distribuzione di cariche
+e quindi applicare la E = —VY per ottenere E, piuttosto che ricavare E direttamente
+dalla legge di Coulomb. Verrà ora esaminato un approccio analogo applicato all’in-
+duzione magnetica B.
+
+Secondo la (5.44), V - B= 0. Si vuole a questo punto definire B in funzione di un
+potenziale magnetico, con il vincolo che tale definizione garantisca che la divergenza
+di B sia sempre uguale a zero. Ciò si può ottenere sfruttando l’identità vettoriale data
+dalla (3.106b), che afferma che, per un vettore arbitrario A, si ha
+
+V.(Vx A)=0. ‘ (5.52)
+
+Pertanto, definendo il potenziale vettore magnetico A in modo che
+
+B=VxA (Wb/m), (5.53)
+
+si ha la garanzia che V - B = 0. Nel SI, B si misura in tesla (T) e nella letteratura scien-
+tifica è anche misurata in modo equivalente in weber per metro quadrato (Wb/m?). Di
+conseguenza, nel SI si ha che A si misura in (Wb/m).
+
+2.7
+
+;
+
+[PAG 117]
+218
+
+Capitoto 5 - Magnetostatica
+
+Essendo B = pH, ia forma differenziale della legge di Ampère data dalia (5.45) si
+
+può scrivere come +
+VxB=yJ, (5.54)
+
+dove J indica fa densità di corrente dovuta alle cariche libere in moviménto.
+Sostituendo la (5.53) nella (5.54), si ha
+
+Vx(VxA)= 44. (5.55)
+
+Per un vettore A arbitrario, il laplaciano di A soddisfa l’identità vettoriale data dalla
+(3.113), vale a dire
+
+VA=V(V-A)-Vx (Vx A), (5.56)
+
+dove, per definizione, V7A in coordinate cartesiane è dato da
+
+VA = (Et)
+
+Or © OP d2 (5.57)
+VA +IVA, + 2V7A,.
+Sostituendo la (5.55) nella (5.56), si ottiene
+V(V-A)-VA= pd. (5.58)
+
+Quando con la (5.54) si è introdotta la definizione del potenziale vettore magnetico
+A, il solo vincolo posto su A è stato che la sua definizione soddisfacesse la condizio-
+ne V-B=0. La (5.58) contiene un termine dipendente da V - A e le regole del cal-
+colo vettoriale lasciano un’ampia libertà di scelta nello specificare il valore o la for-
+ma funzionale di V - A senza che si vada in conflitto con il vincolo rappresentato dal-
+la (5.52). La scelta più semplice tra quelle consentite è
+
+V-A=0. (5.59)
+
+Sostituendo questa espressione nella (5.58) si ottiene l'equazione vettoriale di
+Poisson
+
+VA
+
+(5.60)
+
+Sfruttando la definizione di V7A data dalla (5.57), l’equazione vettoriale di Poisson
+si può dividere in tre equazioni scalari di Poisson:
+
+VA = uh, (5.612)
+VA, = 49), (5.616)
+WA, = ple (5.61c)
+
+Nell’elettrostatica, l’equazione di Poisson relativa al potenziale scalare Y è data dalla
+(4.60) nella forma
+
+VY = È. (5.62)
+
+xe la sua soluzione relativa a una distribuzione volumetrica di carica p, che occupa un
+
+volume 1/ è data dalla (4.61) come
+
+1 Pe
+“aa | av’. (5.63)
+
+5.6 Proprieta magnetiche dei materiali
+
+Le equazioni di Poisson relative ad 4,, A, e 4, sono formalmente identiche dal punto
+di vista matematico alla (5.62). Dunque, per una densità di corrente J il cui compo-
+nente lungo x è 4, distribuita su un volume v’, la soluzione della (5.61a) è
+
+BL
+A= ta Je = dy' (Wb/m), (5.64)
+
+e soluzioni analoghe si possono ottenere per A, in funzione di J, e per A, in funzione
+di J;. Le tre soluzioni si possono combinare in un’unica equazione vettoriale nella
+forma
+
+-È tz dv’ (Wb/m). (5.65)
+
+Secondo la (5.23), se la distribuzione di corrente è data sotto forma di una densità su-
+perficiale di corrente J, su una superficie S’, allora si deve sostituire Jdv’ con J,ds’, e
+v' con S’. Analogamente, per una distribuzione lineare si deve sostituire Jdv’ con
+Idl' e l’integrazione deve essere eseguita sul contomo associato J’.
+
+Il potenziale vettore magnetico si aggiunge alla legge di Biot-Savart e alla legge di
+Ampère nel fornire un terzo approccio per calcolare il campo magnetico generato da
+conduttori percorsi da corrente. Per una determinata distribuzione di corrente, si può
+usare la (5.65) per ricavare A e quindi la (5.53) per ricavare B. Eccettuate le distribu-
+zioni semplici di corrente con simmetrie geometriche che si prestano ad applicare la
+legge di Ampère, tipicamente la scelta dell’approccio da impiegare è tra la legge di
+Biot-Savart e il potenziale vettore magnetico; il secondo dei due è di solito più facile
+da applicare, perché è più facile eseguire l’integrale presente nella (5.65) che non
+quello presente nella (5.22).
+
+Il flusso magnetico ® concatenato a una superficie S è definito come l'induzione
+magnetica complessiva che passa attraverso $, vale a dire
+
+b= [ Beds (Wb). (5.66)
+Ss
+Sostituendo la (5.53) nella (5.66) e applicando il teorema di Stokes, si ha
+a= [(vxajas= fd (Wb), (5.67)
+s c
+
+dove C è il contorno che delimita la superficie S. In questo modo si può determinare
+© dalia (5.66) oppure dalla (5.67) a seconda di quale delle due è più facile da integra-
+re nell’ambito del particolare problema in esame.
+
+5.6 Proprietà magnetiche dei materiali
+
+Secondo la precedente discussione, dal momento che l’andamento del campo magne-
+tico generato da una spira di corrente è simile a quello dovuto a un magnete perma-
+nente, la spira è considerata un dipolo magnetico dotato di un polo nord e di un polo
+sud, come si è visto nel Paragrafo 5.2.2 e in Figura 5.13. Il momento magnetico m di
+una spira di area A ha modulo m = ZA, e la direzione di m è normale al piano della
+spira in ottemperanza alla regola della mano destra. La magnetizzazione di un mezzo
+materiale è associata a spire di corrente di dimensioni atomiche generate da due mec-
+canismi fondamentali: (1) i movimenti orbitanti degli elettroni attorno al nucleo e si-
+mili movimenti dei protoni l’uno attorno all’altro all’interno del nucieo e (2) la rota-
+zione, o spin, dell’elettrone. Il momento magnetico di un eletirone è dovuto alla com-
+
+29
+
+[PAG 118]
+20
+
+Capitolo 5 — Magnetostatica
+
+binazione del suo movimento orbitante e del suo movimento di spin attomo al pro-
+prio asse. Come si vedrà.in seguito, il momento-magnetico del nucleo è molto infe-
+riore a quello di un elettrone e dunque il momento magnetico complessivo di un ato-
+mo è dominato dalla somma dei momenti magnetici dei suoi elettroni. Il comporta-
+mento magnetico di un materiale è determinato dall’interazione dei momenti di dipo-
+lo magnetico dei suoi atomi con il campo magnetico esterno. Su questo comporta-
+mento, che dipende dalla struttura cristallina del materiale, è basata la classificazione
+dei materiali in tre classi: diamagnetici, paramagnetici e ferromagnetici. Gli atomi di
+un materiale diamagnetico non hanno alcun momento di dipolo magnetico permanen-
+te. Al contrario, sia i materiali paramagnetici che quelli ferromagnetici hanno atomi
+con momenti di dipolo magnetico permanenti, ma, come sarà chiaro in seguito, gli
+atomi dei materiali che appartengono a queste due classi sono organizzati in strutture
+molto differenti.
+
+5.6.1 Momento magnetico orbitale e di spin
+
+Per mantenere la presentazione a livello semplice, la discussione partirà dal modello
+classico dell’atomo, nel quale si ipotizza che gli elettroni si muovano attomo al nu-
+cleo con traiettoria circolare e i risultati saranno poi estesi incorporando le caratteri-
+stiche previste con maggiore correttezza dal modello della materia dato dalla mecca-
+nica quantistica. Un elettrone con carica —e in moto con velocità costante su un’or-
+bita circolare di raggio r [Figura 5.20(a)] compie una rivoluzione completa attorno al
+nucleo nel tempo T = 277/u. Questo movimento circolare dell’elettrone costituisce
+und minuscola spira di corrente percorsa da una corrente J data da
+è eu
+
+"7°: (5.68)
+
+Il modulo del momento magnetico orbitale associato my è
+
+my = IA = (A)
+
+eur e
+are (a
+
+dove L, = mur è il momento angolare dell’elettrone e m. è la sua massa. Secondo la
+fisica quantistica, il momento angolare orbitale è quantizzato: nello specifico, Le è
+sempre un multiplo intero di i = 4/27, dove h è la costante di Planck, vale a dire
+che L: = 0,%,2%,... Di conseguenza, il modulo del più piccolo momento magnetico
+orbitale diverso da zero di un elettrone è
+
+(5.69)
+
+eh
+2m. °
+
+My =— (5.70)
+Nonostante tutte le sostanze contengano elettroni e gli elettroni manifestino dei mo-
+menti di dipolo magnetico, la maggior parte delle sostante sono a tutti gli effetti non
+magnetiche. Ciò avviene iti quanto, in assenza di un campo magnetico esterno, gli ato-
+mi della maggior parte dei materiali sono orientati casualmente, con il risultato che il
+momento magnetico netto generato dai loro elettroni è zero oppure molto piccolo.
+
+In aggiunta al momento magnetico generato dal suo movimento orbitante, un elet-
+trone genera un momento magnetico di spin my dovuto al suo movimento di rotazio-
+ine attorno al proprio asse [Figura 5.20(b)]. Il modulo di m, previsto dalla teoria quan-
+tistica è
+eh
+2m,’
+
+m= —
+
+(5.71)
+
+5.6 Proprietà magnetiche dei materiali
+
+(b) Elettrone rotante
+
+(a) Elettrone orbitante
+
+che è uguale al momento magnetico orbitale minimo m,. In un atomo con un numero
+pari di elettroni, essi di solito esistono a coppie e i membri di ciascuna coppia hanno
+direzioni di spin opposte, e in tal modo annullano vicendevolmente il proprio mo-
+mento magnetico di spin. Se il numero di elettroni è dispari, l’atomo avrà un momen-
+to magnetico di spin diverso da zero dovuto all’elettrone spaiato.
+
+Secondo la (5.71), il momento'magnetico di spin di un elettrone è inversamente
+proporzionale alla massa dell’elettrone n. Anche il nucleo dell’atomo manifesta un
+movimento rotatorio, ma dal momento che la sua massa è molto più grande di quella
+di un elettrone, il suo momento magnetico è dell’ordine di 10-* volte quello di un
+elettrone.
+
+5.6.2. Permeabilità magnetica
+
+Il vettore magnetizzazione M di un materiale è definito come la somma vettoriale dei
+momenti di dipolo magnetico degli atomi contenuti in un’unità di volume del mate-
+riale. L’induzione magnetica corrispondente a M è Bn = oM. In presenza di un
+campo magnetico applicato dall’esterno H, l’induzione magnetica complessiva nel
+materiale è
+
+B = poH + 4 M = po(H +M), (5.72)
+dove il primo termine rappresenta il contributo del campo esterno e il secondo termine
+
+rappresenta il contributo della magnetizzazione del materiale. In generale, un materia-
+le si magnetizza in risposta al campo estemo H. Dunque M si può esprimere come
+
+M = XmH, (5.73)
+dove ym è una grandezza adimensionale detta suscettibilità magnetica del materiale.
+Per i materiali diamagnetici e paramagnetici, Xm è costante a temperatura costante,
+da cui si ottiene una relazione lineare tra M e HI. Ciò non si verifica per i materiali
+ferromagnetici: la relazione tra M.e H non solo è non lineare, ma dipende anche dai-
+
+la ‘‘storia” precedente del materiale, come sarà descritto nel prossimo paragrafo.
+Ricordando questo fatto, si combinano insieme la (5.72) e la (5.73) per ottenere
+
+B= po(H + XmH) = Holl + Xm)H, (5.74)
+oppure
+B= uH, (5.75)
