@@ -2,7 +2,7 @@
 id: gestione_ph_suolo
 label: Gestione pH Suolo
 categoria: suolo
-aggiornato: 2026-06-28
+aggiornato: 2026-06-29
 pdf_count: 2
 ---
 
@@ -12,30 +12,26 @@ pdf_count: 2
 # Gestione pH Suolo
 
 ## Descrizione
-Il **pH del suolo** rappresenta la misura dell'acidità o basicità del substrato, influenzando direttamente la **biodisponibilità dei nutrienti** per le piante. In un sistema **Living Soil** outdoor a Caserta (41°N), mantenere un pH compreso tra **6.0 e 7.0** è fondamentale per garantire un equilibrio ottimale tra macro e micronutrienti. Un pH troppo basso (<5.8) limita l'assorbimento di fosforo (P), calcio (Ca) e magnesio (Mg), mentre un pH troppo alto (>7.2) riduce la disponibilità di ferro (Fe), manganese (Mn) e zinco (Zn). La gestione del pH non è statica: variazioni stagionali, piogge acide, lisciviazione e attività microbica possono alterarlo rapidamente. In serra, dove il substrato è spesso confinato e soggetto a stress idrici, il monitoraggio costante diventa ancora più critico.
+Il **pH del suolo** rappresenta la misura dell'acidità o basicità del substrato, influenzando direttamente la **biodisponibilità dei nutrienti** per le piante. In un sistema **Living Soil** come quello della serra outdoor a Caserta (41°N), mantenere un pH compreso tra **6.0 e 7.0** è fondamentale per garantire un equilibrio ottimale tra microrganismi benefici, attività enzimatica e assorbimento radicale. Un pH troppo basso (<5.8) limita l'assimilazione di fosforo, calcio e magnesio, mentre un pH eccessivo (>7.2) riduce la disponibilità di ferro, manganese e zinco. La gestione del pH non è statica: variazioni stagionali, apporti di materia organica e attività microbica richiedono monitoraggi costanti. In particolare, durante la **fase di vegetazione**, un pH leggermente acido (6.2-6.5) favorisce la crescita radicale, mentre in **fioritura** un pH neutro (6.5-7.0) ottimizza l'assorbimento dei nutrienti necessari per la produzione di biomassa e resina.
 
-Il meccanismo d'azione del pH si basa sulla **solubilità dei composti chimici**: a pH neutro, la maggior parte dei nutrienti è in forma ionica prontamente assimilabile dalle radici. Ad esempio, il fosforo è più disponibile a pH 6.5-7.0, mentre il ferro diventa critico sotto pH 6.0. Inoltre, un pH equilibrato favorisce la proliferazione di **batteri benefici** (es. *Pseudomonas*) e funghi micorrizici, essenziali per la struttura del suolo e la resilienza delle piante. In un contesto di **elettrocultura**, il pH interagisce con i campi elettromagnetici del suolo: un substrato troppo acido o basico può alterare la conduzione degli impulsi elettrici generati da spirali di rame o antenne di terra, compromettendo la stimolazione radicale.
+Il meccanismo d'azione del pH si basa sulla **solubilità dei minerali**: a pH basso, i metalli pesanti possono diventare tossici, mentre a pH alto si formano precipitati insolubili di fosfati e micronutrienti. In un suolo vivo, la **resilienza del pH** è sostenuta dalla presenza di microrganismi (batteri, funghi micorrizici) che producono acidi organici (es. citrico, malico) in grado di tamponare le variazioni estreme. L'uso di **farine di rocce** (come basalti o calcari) non solo corregge il pH, ma arricchisce il suolo di minerali essenziali, migliorando la struttura e la capacità di scambio cationico (CEC). Inoltre, in combinazione con tecniche di **elettrocultura**, il pH può essere influenzato indirettamente attraverso la stimolazione della vita microbica e la riduzione dello stress ossidativo.
 
 ---
 
 ## Come si applica in serra
 
-1. **Strumentazione necessaria**:
-   - **pH-metro digitale** (precisione ±0.1) o **kit a reagenti liquidi** (es. pH Test Kit LaMotte).
-   - **Acqua distillata** per la calibrazione e la misurazione (evitare acqua del rubinetto, che può alterare i risultati).
-   - **Materiali correttivi**:
-     - **Calce agricola** (CaCO₃ o Ca(OH)₂) per aumentare il pH (dose: 1-2 kg/10 m², da distribuire in modo uniforme e incorporare con una forca).
-     - **Zolfo elementare** (S) o **torba acida** per abbassare il pH (dose: 0.5-1 kg/10 m², da mescolare al substrato umido).
-     - **Farina di rocce** (es. basalto o dolomite) come correttivo lento e fonte di minerali [pdf_2, pdf_49].
+1. **Strumentazione**:
+   - Utilizzare un **pH-metro digitale** (preferibilmente con sonda a penetrazione per suolo) o kit a reagenti (es. pH test kit per terreno).
+   - Effettuare la misurazione **al mattino**, prima dell'irrigazione, prelevando campioni a **10-15 cm di profondità** in 3-4 punti diversi della serra.
 
-2. **Frequenza di misurazione**:
-   - **Ogni settimana** durante la fase di **vegetazione** (marzo-giugno) e **fioritura** (luglio-settembre), con maggiore attenzione dopo piogge intense o irrigazioni.
-   - **Procedura**:
-     - Prelevare 3-4 campioni di suolo a 10-15 cm di profondità (zona radicale).
-     - Mescolare i campioni in un secchio pulito, rimuovere sassi e radici.
-     - Sciogliere 1 parte di suolo in 2 parti di acqua distillata, agitare per 30 secondi e attendere 1 minuto.
-     - Leggere il pH con il pH-metro o il kit.
+2. **Frequenza**:
+   - Misurare il pH **ogni settimana** durante le fasi attive di crescita (vegetazione e fioritura).
+   - In caso di apporti massicci di compost o fertilizzanti organici, aumentare la frequenza a **2 volte/settimana**.
 
-3. **Correzione rapida**:
-   - **pH < 5.8**:
-     - Distribuire **calce dolomitica** (1
+3. **Correzione**:
+   - **pH < 5.8 (acido)**:
+     - Applicare **calce agricola** (carbonato di calcio, CaCO₃) o **calce dolomitica** (CaMg(CO₃)₂) a **100-200 g/m²**, distribuendola uniformemente e incorporandola con una leggera zappatura.
+     - Alternativa: **cenere di legna** (pH ~10-12) a **50-100 g/m²**, ma usarla con cautela per evitare eccessi di potassio.
+   - **pH > 7.2 (alcalino)**:
+     - Applicare **zolfo elementare** (S) a **20-50 g/m²**, mescolato al substrato o sciolto in acqua per irrigazione.
+     - Alternativa: **torba
