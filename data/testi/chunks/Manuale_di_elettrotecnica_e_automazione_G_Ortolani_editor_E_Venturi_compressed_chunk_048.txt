@@ -1,0 +1,1611 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 48/116 ===
+Chars: 44,576 | Offset: 2,076,981
+
+
+
+[PAG 1061]
+IMPIANTI  ELETTRICI                                               X-211
+La configurazione della rete di distribuzione dipende da numerosi fattori, tra cui lo
+sviluppo planimetrico dell'impianto, le esigenze di continuità di esercizio, la selezione dei
+guasti, la potenza e il modo di funzionamento degli utilizzatori, la taratura delle prote-
+zioni, il costo dell'impianto.
+Escludendo la distribuzione ad anello, poco usata per le reti BT, i sistemi di distribu-
+zione si dividono in:
+–  distribuzione radiale (Fig. X.11.24), in cui ogni utilizzatore è alimentato da una
+propria linea partente dal quadro generale;
+–  distribuzione dorsale (Fig. X.11.25), quando tutti i carichi sono alimentati con un
+solo circuito di distribuzione, a cui fanno capo tutti i circuiti terminali;
+–  distribuzione mista (Fig. X.11.26, riferita a un piccolo impianto per i servizi
+comuni di uno stabile), in cui alcuni carichi vengono alimentati singolarmente e altri in
+gruppo; è, in pratica, il sistema più usato.
+I vantaggi, gli svantaggi e gli usi della distribuzione radiale e di quella dorsale sono
+riassunti nella Tab. X.11.7. Per la distribuzione mista le valutazioni vanno riferite, separa-
+tamente, alle parti con struttura radiale e a quelle di tipo dorsale.
+Per quanto riguarda le soluzioni costruttive, legate alle modalità di posa delle condut-
+ture elettriche, si possono avere varie soluzioni:
+–  impianti con conduttori entro tubi protettivi, installati sotto traccia (tubi in mate-
+riale plastico) nelle pareti o nei pavimenti, oppure a vista (tubi in plastica o metallici), di
+utilizzazione generale;
+–  impianti entro canaline a vista, in materiale plastico, applicate alle pareti, normal-
+mente impiegati in ambito civile e terziario;
+–  impianti sottopavimento, realizzati con canaline installate nell'intercapedine di
+pavimenti sopraelevati e torrette contenenti prese e altri apparecchi fissate al pavimento,
+usati in uffici con ampi spazi e utilizzatori lontani dalle pareti;
+–  impianti entro canaline metalliche, fissate a parete, sospese a soffitto o chiuse nel
+controsoffitto, utilizzati in ambito industriale e nelle strutture del terziario di vaste dimen-
+sioni e densamente elettrificate;
+Tab. X.11.7   Vantaggi e svantaggi della distribuzione radiale e dorsale
+Criteri di valutazione
+Distribuzione
+Radiale
+Dorsale
+Vantaggi
+Maggiore continuità di esercizio;
+facilità di calcolo delle correnti di
+impiego; individuazione immediata
+del guasto; taratura precisa delle
+protezioni
+Ridotto sviluppo delle linee; neces-
+sità di pochi apparecchi di manovra
+e protezione; scelta adeguata del
+cavo della dorsale; minore comples-
+sità del quadro di distribuzione;
+minor costo
+Svantaggi
+Elevato numero di linee; elevato
+numero di apparecchi di manovra e
+protezione; 
+scarsa 
+utilizzazione
+della sezione dei cavi; maggiore
+complessità del quadro di distribu-
+zione
+Minore continuità di esercizio; pos-
+sibile difficoltà di calcolo della cor-
+rente 
+d'impiego 
+della 
+dorsale;
+difficile ricerca dei guasti; taratura
+imprecisa delle protezioni
+Convenienza d'uso
+Adatta per l'alimentazione di pochi
+carichi di elevata potenza
+Adatta per l'alimentazione di molti
+carichi di piccola potenza aventi
+funzionamento contemporaneo
+
+[PAG 1062]
+X-212
+  IMPIANTI ELETTRICI 
+–  distribuzione mediante condotti sbarre (blindosbarre), usata prevalentemente in
+ambito industriale, per l'alimentazione di molti carichi posti vicini tra loro.
+11.9  Sezionamento e comando degli impianti utilizzatori
+Negli impianti utilizzatori BT, oltre all'interruzione automatica di un circuito in occa-
+sione di condizioni anomale di funzionamento, sono previste varie manovre, ognuna delle
+quali ha un determinato obiettivo e deve rispondere a requisiti previste dalle norme. Nella
+Tab. X.11.8 sono riassunte le varie manovre previste.
+Sezionamento
+I principali requisiti richiesti per l'effettuazione di questa manovra sono:
+–  interruzione anche del conduttore neutro dei sistemi TT e IT; per il sistema TN-C la
+sua interruzione è vietata essendo anche conduttore di protezione (PEN); nel sistema
+TN-S il sezionamento del neutro è richiesto solo per i circuiti fase-neutro protetti da
+dispositivi in cui è possibile l'interruzione anche di un solo polo;
+–  nei circuiti trifasi con neutro del sistema TT e nei circuiti fase-neutro del sistema IT
+l'apertura del neutro non deve avvenire mai prima di quella delle fasi e la chiusura mai
+dopo;
+–  il dispositivo usato deve assicurare specificate distanze di sezionamento tra i contatti;
+–  la posizione di "aperto" deve essere visibile oppure ci deve essere una segnalazione
+chiara e affidabile della stessa;
+–  non deve essere possibile la chiusura accidentale del dispositivo;
+–  è preferibile l'uso di dispositivi onnipolari, in grado di sezionare tutti i poli con una
+sola manovra.
+I dispositivi maggiormente utilizzati per il sezionamento sono: sezionatori (con o
+senza fusibili), interruttori di manovra (con o senza fusibili), sezionatori sotto carico,
+interruttori automatici, interruttori differenziali, prese a spina per alcuni circuiti terminali.
+Tab. X.11.8   Manovre previste per gli impianti utilizzatori BT
+Manovra
+Descrizione
+Sezionamento (o inter-
+ruzione per motivi elet-
+trici)
+È la manovra che serve a mettere fuori tensione un impianto o una sua
+parte, separandola da ogni sorgente di energia elettrica, al fine di garan-
+tire la sicurezza delle persone che devono operare su parti attive o in vici-
+nanza di esse
+Interruzione per manu-
+tenzione non elettrica
+È l'interruzione dell'alimentazione elettrica di macchine o altri apparecchi
+utilizzatori (o parti di essi), avente lo scopo di prevenire i pericoli, diversi
+da quelli elettrici, dovuti all'alimentazione elettrica (per es. in occasione
+della manutenzione di scale mobili)
+Comando di emergenza
+È il comando avente lo scopo di eliminare rapidamente i pericoli imprevi-
+sti relativi a componenti o a impianti elettrici (per es. l'interruzione di
+emergenza dell'impianto di una centrale termica)
+Arresto di emergenza
+È il comando che serve ad arrestare i movimenti pericolosi di organi mec-
+canici (per es. l'arresto del movimento di un cancello elettrico)
+Comando funzionale
+È il comando che serve alla chiusura, all'apertura o alla variazione
+dell'alimentazione di un componente elettrico o di una qualsiasi parte
+dell'impianto, per il funzionamento ordinario (per es. l'azionamento di un
+pulsante per l'avvio di un motore elettrico)
+
+[PAG 1063]
+IMPIANTI  ELETTRICI                                               X-213
+Non possono essere usati interruttori statici in cui non vi è separazione di contatti
+meccanici. Se si usano dispositivi azionabili solo a vuoto, come i sezionatori non sotto
+carico, il circuito deve essere preventivamente interrotto con un altro apparecchio.
+Interruzione per manutenzione non elettrica
+Per questa manovra è richiesta la possibilità di poter interrompere il circuito anche in
+condizioni di pieno carico; non è obbligatoria, anche se è consigliabile, l'interruzione
+onnipolare. Inoltre non è prescritta alcuna distanza di sezionamento e il dispositivo
+d'interruzione deve essere accessibile anche a persone non addestrate.
+Vengono generalmente usati interruttori di manovra o automatici, sezionatori sotto
+carico, contattori con segnalazione dell'avvenuta apertura.
+Comando e arresto di emergenza
+Per queste manovre, data l'urgenza dell'intervento, i dispositivi devono essere facil-
+mente accessibili e azionabili con una sola manovra da posizione sicura e devono essere
+identificabili dal colore convenzionale rosso su sfondo di contrasto; inoltre devono poter
+interrompere anche la corrente di pieno carico. Vengono usati interruttori di manovra e
+automatici, sezionatori sotto carico, contattori.
+Fig. X.11.27   Circuito di comando a mancanza di tensione: con il pulsante non azionato la
+bobina tiene chiuso l'interruttore; se si interrompe il circuito di comando l'interruttore si apre.
+Fig. X.11.28   Circuito di comando a lancio di corrente: con il pulsante non azionato
+l'interruttore è chiuso (la corrente nel led non ha intensità tale da azionare la bobina); se si
+chiude il circuito di comando l'interruttore si apre.
+circuito
+circuito
+di comando
+di potenza
+NC
+circuito
+circuito
+di comando
+di potenza
+
+[PAG 1064]
+X-214
+  IMPIANTI ELETTRICI 
+Nel caso di comando a distanza (per es. mediante un pulsante agente sulla bobina di
+comando di un contattore o di un interruttore), il circuito di comando può essere del tipo a
+mancanza di tensione (Fig. X.11.27) oppure a lancio di corrente (Fig. X.11.28). In
+quest'ultimo caso va posto un diodo luminoso ad alta impedenza in parallelo al pulsante,
+in modo da segnalare l'integrità del circuito di comando.
+Comando funzionale
+Per l'effettuazione di questa manovra si possono usare interruttori di manovra o auto-
+matici, contattori, relè ausiliari, prese a spina (fino a 16 A), dispositivi statici (non è
+richiesta la separazione meccanica dei poli). I dispositivi devono essere previsti per
+l'interruzione a pieno carico e, se unipolari, non devono essere inseriti sul conduttore neu-
+tro.
+Tabelle riassuntive
+Nelle Tabb. X.11.9 e X.11.10 sono stati riassunti i requisiti richiesti per le varie mano-
+vre e l'idoneità di alcuni apparecchi di comune impiego a svolgere una certa funzione.
+Tab. X.11.9   Requisiti richiesti per le varie manovre
+Requisito
+Funzione
+Sezionamento
+Interruzione per 
+manutenzione 
+non elettrica
+Comando e 
+arresto d'emer-
+genza
+Comando
+funzionale
+Interruzione onnipolare
+Richiesto
+Consigliabile 
+Richiesto(1)
+Non richiesto
+Distanza di sezionamento
+Richiesto
+Non richiesto
+Non richiesto
+Non richiesto
+Contatti visibili
+(2)
+Non richiesto
+Non richiesto
+Non richiesto
+Identificazione 
+affidabile
+della avvenuta manovra
+Richiesto
+Richiesto
+Richiesto
+Richiesto
+Chiara identificazione del
+dispositivo
+Richiesto
+Richiesto
+Richiesto
+Richiesto
+Accessibilità immediata
+Non richiesto
+Non richiesto
+Richiesto
+Non richiesto
+Accessibilità a personale non
+addestrato
+Non richiesto
+Richiesto
+Richiesto(3)
+Richiesto
+Manovrabilità nelle più gra-
+vose condizioni di carico
+Non richiesto
+Richiesto
+Richiesto
+Richiesto
+Accorgimenti 
+contro 
+la
+richiusura intempestiva
+Richiesto(4)
+Richiesto(4)
+Non richiesto
+Richiesto(5)
+(1) Non è richiesto se il comando di emergenza serve a rimuovere pericoli non elettrici.
+(2) Se i contatti non sono visibili è richiesto un affidabile dispositivo di segnalazione.
+(3) A patto che il suo azionamento intempestivo non causi inconvenienti alle persone o alle cose.
+(4) A meno che il dispositivo non rimanga sotto il controllo diretto dell'operatore.
+(5) Non è richiesto se l'azionamento intempestivo non causa pericolo per le persone e per le cose.
+
+[PAG 1065]
+IMPIANTI  ELETTRICI                                               X-215
+11.10  Rifasamento degli impianti elettrici
+Il rifasamento di un carico, di un gruppo di carichi o di un intero impianto serve a
+ridurre (al limite ad annullare) l'angolo di sfasamento della corrente rispetto alla tensione.
+Dato che in genere i carichi sono di tipo ohmico-induttivo, il rifasamento viene effettuato
+mediante l'installazione di condensatori in parallelo (Fig. X.11.29a, b, c).
+Le principali cause che determinano lo sfasamento in ritardo della corrente rispetto
+alla tensione in un impianto sono la presenza di motori elettrici a induzione, di trasforma-
+tori, di impianti di saldatura elettrica, di forni a induzione, di lampade a scarica nei gas (se
+non rifasate), di impianti di conversione a.c.-d.c.
+Con il rifasamento si ottengono diversi vantaggi, di cui i principali sono:
+–  riduzione, a parità di potenza attiva, della potenza apparente S delle macchine di
+produzione e di trasformazione, essendo S = Pcos inversamente proporzionale al f.d.p.
+dell'impianto;
+Tab. X.11.10   Idoneità di alcuni dispositivi a svolgere la funzione indicata
+Dispositivo
+Funzione
+Sezionamento
+Interruzione per 
+manutenzione non 
+elettrica
+Comando e arre-
+sto d'emergenza
+Comando funzio-
+nale
+Sezionatore
+Idoneo
+Non idoneo(1)
+Non idoneo
+Non idoneo
+Interruttore di ma-
+novra
+Idoneo(2)
+Idoneo
+Idoneo
+Idoneo
+Interruttore-sezio-
+natore
+Idoneo
+Idoneo
+Idoneo
+Idoneo
+Interruttore auto-
+matico e/o diffe-
+renziale
+Idoneo(2)
+Idoneo
+Idoneo
+Idoneo
+Interruttore di ma-
+novra con fusibili
+Idoneo
+Idoneo
+Idoneo
+Idoneo
+Sezionatore 
+con
+fusibili o fusibile
+sezionatore
+Idoneo
+Non idoneo(1)
+Non idoneo
+Non idoneo
+Contattore
+Idoneo(2) (3)
+Idoneo(3)
+Idoneo(4)
+Idoneo
+Presa a spina
+Idoneo
+Idoneo per
+In  16 A
+Idoneo per
+In  16 A
+Idoneo per
+In  16 A
+Fusibile
+Idoneo
+Non idoneo
+Non idoneo
+Non idoneo
+Barretta 
+Idoneo
+Non idoneo
+Non idoneo
+Non idoneo
+Morsetto
+Non idoneo(5)
+Non idoneo
+Non idoneo
+Non idoneo
+(1) Idoneo se è interbloccato con un dispositivo di manovra sotto carico. (2) Per gli interruttori auto-
+matici per uso industriale (CEI 17-5) l'idoneità deve essere indicata dal costruttore. (3) Purché la
+segnalazione dell'avvenuta manovra sia affidabile. (4) Il circuito di comando deve essere del tipo
+indicato. (5) Sono idonei solo particolari morsetti che assicurano la distanza di sezionamento.
+
+[PAG 1066]
+X-216
+  IMPIANTI ELETTRICI 
+–  riduzione, a parità di potenza persa in linea, della sezione dei conduttori;
+–  riduzione della caduta di tensione in linea.
+Fig. X.11.29   a) Rifasamento di un carico monofase; b) diagramma vettoriale del rifasa-
+mento totale (Ic  I sen ); c) diagramma vettoriale del rifasamento parziale (Ic  I sen ).
+Calcolo della potenza reattiva capacitiva
+Indicando con P la potenza attiva dell'impianto o della parte di impianto da rifasare, con
+0 l'angolo di sfasamento iniziale e con r quello che si vuole ottenere con il rifasamento
+(di solito non inferiore a 0,9), la potenza reattiva Qc della batteria di condensatori è data da:
+(X.11.7)
+La X.11.7 può essere scritta come:
+(X.11.8)
+Il coefficiente Kr è riportato nella Tab. X.11.11, in funzione dei valori di cos0 e cosr.
+Tab. X.11.11   Valori di Kr (kvar/kW)
+cos r
+ cos 0
+0,90
+0,92
+0,94
+0,96
+0,98
+1
+0,40
+0,42
+0,44
+0,46
+0,48
+0,50
+0,52
+0,54
+0,56
+0,58
+0,60
+0,62
+0,64
+0,66
+0,68
+0,70
+0,72
+0,74
+0,76
+0,78
+1,805
+1,681
+1,558
+1,446
+1,343
+1,248
+1,160
+1,075
+0,996
+0,921
+0,849
+0,781
+0,716
+0,654
+0,595
+0,536
+0,479
+0,425
+0,371
+0,319
+1,861
+1,738
+1,614
+1,502
+1,400
+1,303
+1,215
+1,130
+1,051
+0,976
+0,905
+0,836
+0,771
+0,709
+0,650
+0,591
+0,534
+0,480
+0,426
+0,374
+1,924
+1,800
+1,677
+1,567
+1,464
+1,369
+1,281
+1,196
+1,117
+1,042
+0,971
+0,902
+0,837
+0,775
+0,716
+0,657
+0,600
+0,546
+0,492
+0,440
+1,998
+1,874
+1,751
+1,636
+1,534
+1,441
+1,353
+1,268
+1,189
+1,114
+1,043
+0,974
+0,909
+0,847
+0,788
+0,729
+0,672
+0,618
+0,564
+0,512
+2,085
+1,961
+1,837
+1,725
+1,623
+1,529
+1,441
+1,356
+1,277
+1,202
+1,131
+1,062
+0,997
+0,935
+0,876
+0,811
+0,754
+0,700
+0,652
+0,594
+2,288
+2,164
+2,041
+1,929
+1,826
+1,732
+1,644
+1,559
+1,480
+1,405
+1,334
+1,265
+1,200
+1,138
+1,079
+1,020
+0,963
+0,909
+0,855
+0,803
+I
+Ic
+It
+U
+C
+Carico
+U
+U
+I
+I
+It
+It
+Ic
+Ic
+
+
+'
+a)
+b)
+c)
+Qc
+P tg0
+tgr
+–
+
+
+=
+Qc
+P Kr
+=
+
+[PAG 1067]
+IMPIANTI  ELETTRICI                                               X-217
+Tab. X.11.11 Segue
+Esempio 2
+Per rifasare un carico da cos0 = 0,50 a cosr = 0,96 (Kr = 1,441) occorrono
+1,441 kvar di potenza reattiva per 1 kW di potenza attiva. La potenza reattiva totale si
+ottiene moltiplicando per P.
+Calcolo della capacità
+Si effettua con le formule seguenti:
+–  batteria monofase in un sistema con tensione U e frequenza f:
+(X.11.9)
+–  batteria trifase a stella in un sistema con tensione concatenata U e frequenza f:
+(X.11.10)
+–  batteria trifase a triangolo in un sistema con tensione concatenata U e frequenza f:
+(X.11.11)
+A parità di altre condizione si ha Cd = Cy3; per questo motivo vengono usate batterie
+a triangolo nel caso del rifasamento di impianti BT.
+Modalità di rifasamento
+A seconda di come viene realizzato si distinguono vari tipi di rifasamento.
+–  Rifasamento distribuito (Fig. X.11.30): si attua rifasando singolarmente i vari carichi.
+È adatto al rifasamento di pochi carichi di notevole potenza ed è la soluzione che offre i
+maggiori vantaggi sul dimensionamento dell'impianto.
+Fig. X.11.30   Schema del rifasamento distribuito.
+cos r
+ cos 0
+0,90
+0,92
+0,94
+0,96
+0,98
+1
+0,80
+0,82
+0,84
+0,86
+0,88
+0,90
+0,266
+0,214
+0,162
+0,109
+0,054
+0,321
+0,269
+0,217
+0,167
+0,112
+0,058
+0,387
+0,335
+0,283
+0,230
+0,175
+0,121
+0,459
+0,407
+0,355
+0,301
+0,246
+0,192
+0,541
+0,489
+0,437
+0,390
+0,335
+0,281
+0,750
+0,698
+0,645
+0,593
+0,538
+0,484
+C
+Qc
+2fU2
+---------------
+=
+Cy
+Qc
+2fU2
+---------------
+=
+Cd
+Qc
+3
+2fU2
+
+--------------------------
+=
+M
+U
+kvarh
+kWh
+>
+
+[PAG 1068]
+X-218
+  IMPIANTI ELETTRICI 
+–  Rifasamento per gruppi (Fig. X.11.31): con un'unica batteria di condensatori viene
+rifasato un gruppo di carichi, aventi caratteristiche di funzionamento omogenee. Per il
+calcolo della Qc di ogni gruppo occorre valutare la potenza attiva e il f.d.p. dell'intero
+gruppo, tenendo conto dell'utilizzazione e della contemporaneità dei vari carichi.
+Fig. X.11.31   Schema del rifasamento per gruppi.
+–  Rifasamento centralizzato a potenza costante (Fig. X.11.32): l'intero impianto viene
+rifasato con un'unica batteria di condensatori, posta a monte dell'impianto stesso. La bat-
+teria deve essere dimensionata in base alla potenza media e al f.d.p. medio mensile
+dell'impianto da rifasare. Questa soluzione, semplice e poco costosa, può essere adottata
+quando l'impianto funziona con potenza e f.d.p. pressoché costanti, altrimenti non si rie-
+sce a calcolare un valore di Qc che possa andar bene per i vari modi di funzionamento.
+Non comporta vantaggi sul dimensionamento dell'impianto a valle.
+Fig. X.11.32   Schema del rifasamento centralizzato.
+Fig. X.11.33   Schema elettrico di un impianto di rifasamento centralizzato automatico.
+kvarh
+kWh
+>
+gruppo da rifasare
+kvarh
+kWh
+>
+impianto da rifasare
+regolatore
+- -  - - 2  1
+1
+2
+ai carichi
+L1
+L2
+L3
+N
+
+[PAG 1069]
+IMPIANTI  ELETTRICI                                               X-219
+–  Rifasamento centralizzato a potenza modulabile: si usa quando la variabilità della
+potenza attiva e del f.d.p. non rendono praticabile la soluzione a potenza costante. Viene
+installato un regolatore automatico che comanda un certo numero di batterie di condensa-
+tori, inserendole o disinserendole a seconda delle necessità dell'impianto. La potenza reat-
+tiva capacitiva totale si determina in funzione delle condizioni di carico più gravose. Nella
+Fig. X.11.33 è riportato lo schema elettrico esemplificativo.
+–  Rifasamento misto (Fig. X.11.34): si ha quando vengono utilizzati tutti o parte dei
+metodi precedentemente indicati. Nella figura il carico 1 è rifasato singolarmente da C1,
+con la batteria C2 si rifasa un gruppo di carichi e, infine, C3 è una batteria di rifasamento
+centralizzato che verrà calcolata dopo aver valutato il f.d.p. ottenuto con l'inserzione di C1
+e C2.
+Fig. X.11.34   Schema del rifasamento misto.
+Tabelle per la scelta dei condensatori
+Nelle Tabb. X.11.12 e X.11.13 sono riportate le caratteristiche commerciali di batterie
+di condensatori per il rifasamento, monofasi e trifasi, e di regolatori automatici della
+potenza reattiva, con l'indicazione della potenza reattiva massima, del numero di batterie
+costituenti, della potenza delle singole batterie e del numero delle possibili combinazioni.
+Tab. X.11.12   Valori commerciali delle batterie di condensatori per il rifasamento di
+sistemi di categoria I (f = 50 Hz)
+Tipo
+Potenza nominale (kvar)
+Tensione nominale (V)
+Corrente nominale (A)
+Monofase
+2,5
+5
+10
+15
+20
+25
+230
+230
+230
+230
+230
+230
+6,5
+13
+25
+38
+50
+63
+Trifase
+1
+2
+3
+5
+10
+15
+20
+30
+40
+50
+400
+400
+400
+400
+400
+400
+400
+400
+400
+400
+1,5
+3
+4,5
+7
+14
+21
+29
+43
+58
+72
+kvarh
+kWh
+>
+C1
+C2
+C3
+1
+
+[PAG 1070]
+X-220
+  IMPIANTI ELETTRICI 
+Esempio 3
+Se dal calcolo del rifasamento è risultato Qc = 28,5 kvar, è possibile scegliere un rego-
+latore automatico con potenza massima 30 kvar. Usando 12 moduli da 2,5 kvar, si otten-
+gono 12 combinazioni (2,5-5-7,5-10-12,5-15-17,5-20-22,5-25-27,5-30 kvar). Meno
+costosa è la soluzione con 3 moduli di potenza 6-12-12 kvar, con la quale si ottengono 5
+combinazioni (6-12-18-24-30 kvar). La scelta andrà fatta in base alla variabilità del
+carico.
+Apparecchi di manovra e protezione
+Le batterie di condensatori sono, di solito, già corredate di resistenze di scarica, di
+fusibili per la protezione dal corto circuito, di dispositivi antiscoppio e, per quelle usate
+nei sistemi di categoria II e III, di resistenze o di reattanze di smorzamento per la limita-
+zione della corrente d'inserzione.
+Per il dimensionamento dei dispositivi di manovra e protezione esterni bisogna calco-
+lare, se non è nota, la corrente nominale Inc assorbita dalla batteria, in funzione della sua
+potenza nominale Qcn e della tensione nominale Un, con le relazioni:
+(X.11.12)
+(X.11.13)
+a seconda che si tratti di un impianto monofase o trifase.
+In funzione di Inc e tenendo conto della sovracorrente d'inserzione e della tolleranza
+sul valore nominale della capacità, si determina la corrente nominale In del dispositivo di
+manovra e protezione con le relazioni:
+Tab. X.11.13   Valori commerciali di regolatori automatici di potenza reattiva per sistemi
+di categoria I, tensione nominale 230-400 V, f = 50 Hz
+Potenza massima (kvar)
+Moduli
+Combinazioni
+n.
+potenze (kvar)
+n.
+7,5
+12,5
+15
+22,5
+30
+37,5
+45
+30
+40
+50
+60
+75
+90
+110
+120
+150
+180
+225
+3
+5
+6
+9
+12
+15
+18
+3
+3
+3
+3
+3
+4
+5
+5
+5
+5
+5
+2,5
+2,5
+2,5
+2,5
+2,5
+2,5
+2,5
+6-12-12
+7,5-12,5-20
+12,5-12,5-25
+12-24-24
+15-30-30
+10-20-30-30
+12,5-25-25-25-25
+10-20-30-30-30
+20-30-30-30-40
+20-40-40-40-40
+20-50-50-50-50
+3
+5
+6
+9
+12
+15
+18
+5
+5
+5
+5
+5
+7
+9
+9
+9
+9
+9
+Inc
+Qcn
+Un
+---------
+=
+Inc
+Qcn
+3Un
+--------------
+=
+
+[PAG 1071]
+IMPIANTI  ELETTRICI                                               X-221
+–  apparecchi di manovra:
+(X.11.14)
+–  sganciatori magnetici:
+(X.11.15)
+–  fusibili:
+(X.11.16)
+11.11  Costi e tariffe dell'energia elettrica
+Le tariffe dell'energia elettrica sono attualmente di competenza dell'Autorità per
+l'energia elettrica e il gas, ente istituito nel 1995 e operativo dall'aprile 1997.
+La struttura delle tariffe tiene conto dei costi di produzione e di fornitura dell'energia,
+classificabili in costi fissi e costi proporzionali. I primi sono quelli che si devono soste-
+nere indipendentemente dal consumo di energia elettrica e sono dovuti al fatto stesso di
+mettere a disposizione dell'utente una certa potenza (spese di potenza), un'organizzazione
+commerciale, un servizio di assistenza ecc. (spese di utenza). I costi proporzionali, invece,
+sono legati a tutte quelle spese, come quella per l'approvvigionamento del combustibile
+per le centrali, che aumentano al crescere del consumo di energia elettrica.
+Nelle tariffe si tiene anche conto del fattore di potenza dell'impianto, in quanto un basso
+valore del cos comporta maggiori costi alla società fornitrice, dato che aumenta la cor-
+rente da erogare a parità di potenza attiva richiesta dall'utente. Viene pertanto addebitata,
+oltre all'energia attiva consumata, anche una certa quota di energia reattiva, precisamente:
+–  se il f.d.p. medio mensile non è inferiore a 0,9 non vi è alcun addebito di potenza
+reattiva;
+–  la quota di consumo di energia reattiva compresa tra il 50% (cos = 0,89) e il 75%
+(cos = 0,8) dell'energia attiva viene addebitata con un certo costo unitario;
+–  la quota di consumo di energia reattiva superiore al 75% (cos < 0,8) di quella
+attiva viene addebitata con un costo unitario superiore a quello precedente.
+Tariffa binomia
+È quella finora maggiormente praticata. La spesa S relativa a un certo periodo di forni-
+tura viene espressa come somma di due termini, uno proporzionale alla potenza installata
+P (costo fisso) e l'altro dipendente dall'energia W consumata (costo proporzionale):
+(X.11.17)
+Le costanti A e B rappresentano, rispettivamente, il costo per unità di potenza (euro/
+kilowatt) e quello per unità di energia (euro/kilowattora), i cui valori dipendono dalle con-
+dizioni contrattuali e di mercato.
+Tariffa trinomia
+Si applica alle utenze domestiche e assimilate ed è entrata formalmente in vigore dal
+gennaio 2000, ma diventerà obbligatoria solo dal 1° gennaio 2003.
+Secondo questa tariffa, la spesa annua S che l'utente dovrà pagare, suddivisa nelle
+varie bollette a seconda dei periodi di fatturazione, è data dalla somma di tre termini:
+(X.11.18)
+In
+1,5
+2
+
+
+Inc
+=
+In
+5
+10
+
+
+Inc
+=
+In
+2,5 Inc
+
+S
+AP
+BW
++
+=
+S
+A
+BP
+CW
++
++
+=
+
+[PAG 1072]
+X-222
+  IMPIANTI ELETTRICI 
+dove:
+–  A è il corrispettivo fisso, indipendente dalla potenza impegnata e dall'energia con-
+sumata, destinato a coprire i costi fissi annuali di vendita;
+–  BP è il corrispettivo di potenza, proporzionale alla potenza impegnata, che serve a
+coprire i costi fissi di trasmissione e di distribuzione; B è il costo unitario, per 1 kW di
+potenza;
+–  CW è il corrispettivo di energia, proporzionale all'energia consumata e commisu-
+rato alla quota proporzionale dei costi di trasporto e distribuzione, ai costi di generazione
+dell'energia e a quelli necessari per il funzionamento del sistema elettrico nazionale; C è il
+costo unitario di 1 kWh di energia.
+Tariffa multioraria
+Si applica in alcuni casi per tenere conto del fatto che in determinati periodi del giorno
+(per es. di notte), della settimana (giorni festivi) e dell'anno (periodi di ferie) vi è minore
+richiesta di energia da parte degli utenti e, di conseguenza, maggiore disponibilità di ener-
+gia prodotta, che può essere venduta a prezzi inferiori. Con la tariffa multioraria i costi
+unitari vengono adeguati al periodo di consumo, risultando minori in determinati giorni e
+fasce orarie.
+Tariffa a forfait
+La somma da pagare per la fornitura di energia elettrica in un certo periodo è commi-
+surata soltanto alla potenza a disposizione dell'utente, indipendentemente dal consumo.
+La sua applicazione non richiede l'installazione di contatori per la misura dell'energia.
+Si applica nelle forniture temporanee (per es. fiere e manifestazioni) e quando è noto
+con una certa precisione il periodo di funzionamento dei carichi (per es. lampade votive e
+tombali).
+11.12  Alimentazione dei servizi di sicurezza
+La mancanza improvvisa di energia elettrica dalla rete di alimentazione richiede, in
+taluni casi, la presenza di un'alimentazione indipendente che entri in funzione immediata-
+mente o entro un tempo prefissato e che abbia una certa durata.
+Per alimentazione dei servizi di sicurezza si intende il sistema elettrico, comprendente
+la sorgente, i circuiti e gli altri componenti elettrici, avente lo scopo di garantire l'alimen-
+tazione di apparecchi utilizzatori o di altre parti dell'impianto necessari per la sicurezza
+delle persone (per es. l'illuminazione di luoghi affollati o con difficoltà di evacuazione). È
+detta anche alimentazione di sicurezza.
+Quando, invece, i motivi per i quali occorre garantire l'alimentazione sono diversi
+dalla sicurezza delle persone (per es. per mantenere la continuità della produzione in uno
+stabilimento), si parla di alimentazione di riserva.
+La dicitura alimentazione di emergenza è una denominazione generica che comprende
+sia l'alimentazione di sicurezza che quella di riserva.
+I requisiti previsti per l'alimentazione di sicurezza nel caso degli impianti utilizzatori
+con tensione nominale non superiore a 1000 V c.a. e 1500 V c.c. sono stabiliti dalla norma
+CEI 64-8.
+Classificazione
+L'alimentazione di sicurezza viene definita non automatica o automatica, a seconda
+che per la sua messa in servizio sia richiesto o meno l'intervento di un operatore. L'ali-
+mentazione automatica è classificata, in funzione del tempo entro cui diventa disponibile,
+come riportato nella Tab. X.11.14.
+
+[PAG 1073]
+IMPIANTI  ELETTRICI                                               X-223
+Sorgenti di alimentazione
+Per l'alimentazione dei servizi di sicurezza, oltre alla soluzione (poco usata in pratica)
+di predisporre una linea di alimentazione sussidiaria, esterna all'impianto e indipendente
+da quella ordinaria, si possono usare pile, accumulatori e generatori indipendenti dall'ali-
+mentazione ordinaria.
+Le pile possono essere usate quando non è richiesta un'elevata affidabilità, come nei
+casi più semplici di illuminazione di sicurezza.
+Le batterie di accumulatori (al piombo o al nickel-cadmio) sono caricati in tampone
+dalla rete e forniscono energia al carico privilegiato in mancanza della tensione di rete.
+Gli schemi possibili sono vari, a seconda del tipo di carico e delle caratteristiche richieste
+(Figg. X.11.35, X.11.36, X.11.37, X.11.38).
+Tab. X.11.14   Classificazione dell'alimentazione dei servizi di sicurezza
+Denominazione 
+Descrizione
+Di continuità (no break)
+È assicurata la continuità dell'alimentazione, entro condizioni specifi-
+cate durante il periodo transitorio, relativamente, per esempio, alle
+variazioni di tensione e di frequenza
+A interruzione brevissima L'alimentazione è disponibile entro un tempo non superiore a 0,15 s
+A interruzione breve
+L'alimentazione è disponibile in un tempo superiore a 0,15 s ma non
+superiore a 0,5 s
+A interruzione media
+L'alimentazione è disponibile in un tempo superiore a 0,5 s ma non
+superiore a 15 s
+A interruzione lunga
+L'alimentazione è disponibile in un tempo superiore a 15 s
+Fig. X.11.35   Raddrizzatore con batte-
+ria in tampone (per carichi funzionanti
+in c.c.)
+Fig. X.11.36   Raddrizzatore con com-
+mutazione rete-batteria (per carichi fun-
+zionanti in c.c. e in c.a.).
+rete
+al carico
+
+rete
+al carico
+
+[PAG 1074]
+X-224
+  IMPIANTI ELETTRICI 
+I gruppi statici di continuità sono detti soccorritori o UPS (Uninterruptible Power
+System). Essi si dividono in due tipi:
+–  on line se il carico è alimentato in condizioni ordinarie attraverso l'inverter;
+–  off line se il carico è alimentato in condizioni ordinarie dalla rete e viene commu-
+tato all'occorrenza sull'inverter.
+Nella Tab. X.11.15 sono riportate le caratteristiche tecniche di alcuni di essi.
+Fig. X.11.37   Gruppo raddrizzatore R
+invertitore I.
+Fig. X.11.38   Gruppo statico di conti-
+nuità (UPS). La commutazione tra la rete
+e la batteria avviene in brevissimo tempo
+mediante il commutatore statico IS.
+Tab. X.11.15   Caratteristiche tecniche di gruppi di continuità statici (G. Bargellini & C. spa)
+Potenza apparente 
+nominale (kVA)
+Potenza attiva
+(kW)
+Tensione d'ingresso
+(V)
+Autonomia
+(h)
+Batterie
+(n.)
+2
+2
+4
+4
+6
+6
+8
+8
+10
+10
+1,6
+1,6
+3,2
+3,2
+4,8
+4,8
+6,4
+6,4
+8
+8
+230 monofase
+230 monofase
+230 monofase
+230 monofase
+230 monofase
+230 monofase
+400 trifase
+400 trifase
+400 trifase
+400 trifase
+1
+3
+1
+3
+1
+3
+1
+3
+1
+3
+8;
+14;
+8;
+18;
+9;
+27;
+18;
+27;
+18;
+36;
+12 V;
+12 V;
+12 V;
+12 V;
+12 V;
+12 V;
+6 V;
+12 V;
+6 V;
+6 V;
+38 Ah
+38 Ah
+65 Ah
+56 Ah
+85 Ah
+65 Ah
+105 Ah
+85 Ah
+140 Ah
+160 Ah
+Tipo di funzionamento:
+Tempo di intervento in emergenza:
+Forma d'onda in uscita:
+Tensione d'uscita in emergenza:
+Distorsione armonica:
+Sovraccarico delle uscite in emergenza:
+Tempo di ricarica delle batterie:
+Collegamento a terra:
+Temperatura di funzionamento:
+on line doppia conversione
+zero
+sinusoidale
+230 V  1%
+< 2%
+110% per 10 min, 120% per 1 min
+12 h
+sistema IT
+ 5 °C … + 40 °C
+rete
+al carico
+R
+I
+rete
+al carico
+R
+I
+IS
+
+[PAG 1075]
+IMPIANTI  ELETTRICI                                               X-225
+Il generatore indipendente dalla rete è costituito, di solito, da un gruppo elettrogeno
+con motore diesel, che può entrare in funzione dopo 5  10 s dall'interruzione della rete.
+Se si vuole l'assoluta continuità di esercizio occorre alimentare il carico sempre col
+gruppo elettrogeno, il cui alternatore sarà tenuto in rotazione da un motore elettrico nel
+funzionamento normale.
+Circuito di sicurezza
+È il circuito, indipendente da quelli ordinari, per il collegamento della sorgente di
+sicurezza e l'apparecchio o la parte di impianto da alimentare. Per questi circuiti sono pre-
+visti numerosi requisiti, tra cui:
+–  un guasto elettrico, un intervento o una modifica sul circuito ordinario (o su altri
+circuiti) non deve impedire il corretto funzionamento del circuito di sicurezza;
+–  il punto di commutazione tra il circuito ordinario e quello di sicurezza deve essere
+il più vicino possibile all'utenza privilegiata, per rendere trascurabile la probabilità di gua-
+sto sul tratto in comune;
+–  è consigliabile omettere la protezione contro il sovraccarico del circuito di sicu-
+rezza, per evitarne l'interruzione;
+–  il circuito di sicurezza potrebbe essere destinato a funzionare per un tempo prefis-
+sato durante un incendio; si possono usare allo scopo condutture incassate, cavi a isola-
+mento minerale, cavi resistenti al fuoco;
+–  i circuiti di sicurezza non devono attraversare luoghi con pericolo di esplosione ed è
+preferibile che non attraversino luoghi a maggior rischio in caso di incendio;
+–  i circuiti di sicurezza vanno contraddistinti in modo da poter essere individuabili
+con facilità.
+11.13  Illuminazione di emergenza
+La norma CEI EN 60598-2-22 (CEI 34-22) definisce l'illuminazione di emergenza
+come quella destinata a funzionare quando l'illuminazione ordinaria viene a mancare; essa
+comprende l'illuminazione di sicurezza e quella di riserva.
+L'illuminazione di sicurezza è quella necessaria alla sicurezza delle persone e che con-
+sente, per esempio, un sufficiente illuminamento delle vie di esodo per permettere un
+ordinato sfollamento dell'ambiente in caso di pericolo.
+L'illuminazione di riserva è quella che consente di terminare o continuare l'attività
+ordinaria e riguarda, quindi, la continuità di servizio e non la sicurezza delle persone.
+La necessità che sia presente o meno e i requisiti richiesti all'illuminazione di sicu-
+rezza sono sanciti da varie leggi e norme e per diversi ambienti, lavorativi e no. Nella Tab.
+X.11.16 sono riportati alcuni esempi.
+Tab. X.11.16   Esempi di luoghi in cui è obbligatoria l'illuminazione di sicurezza
+Luoghi
+Disposizioni legislative 
+e norme tecniche
+Caratteristiche
+Strutture ricettive turi-
+stico alberghiere (oltre 25
+posti letto)
+DM Interno 9.4.1994
+Tempo d'intervento
+Autonomia
+Illuminamento
+Tempo di ricarica
+0,5 s
+1 h
+5 lx
+12 h
+Autorimesse e autosili
+(con oltre 300 posti)
+DM Interno 1.2.1986
+Guida CEI 64-50
+Tempo d'intervento
+Autonomia
+Illuminamento
+Tempo di ricarica
+Immediato
+Non precisata
+5 lx
+Non precisato
+
+[PAG 1076]
+X-226
+  IMPIANTI ELETTRICI 
+Tab. X.11.16 Segue
+12  AMBIENTI E APPLICAZIONI PARTICOLARI
+Gli ambienti e le applicazioni particolari riportati in questo capitolo, eccetto i luoghi
+con pericolo di esplosione, sono trattati, insieme con altri, nella parte 7a della norma CEI
+64-8, relativa agli impianti elettrici utilizzatori con tensione nominale non superiore a
+1000 V c.a. e 1500 V c.c.
+A essi si applicano, pertanto, sia le prescrizioni generali contenute nelle altre parti
+della norma sia le prescrizioni particolari previste dalle sezioni della parte 7a dedicate ai
+diversi ambienti. 
+Luoghi
+Disposizioni legislative 
+e norme tecniche
+Caratteristiche
+Edifici civili (con altezza
+superiore a 32 m)
+DM Interno 16.5.1987
+Tempo d'intervento
+Autonomia
+Illuminamento
+Tempo di ricarica
+Non precisato
+Tempo di sfollamento
+Adeguato
+Non precisato
+Impianti sportivi
+DM Interno 18.3.1996
+Tempo d'intervento
+Autonomia
+Illuminamento
+Tempo di ricarica
+0,5 s
+1 h
+5 lx
+12 h
+Luoghi di pubblico spetta-
+colo
+DM Interno 19.8.1996
+DM Interno 8.3.1985
+Tempo d'intervento
+Autonomia
+Illuminamento
+Tempo di ricarica
+0,5 s
+1 h 
+2/5 lx
+12 h
+Norma CEI 64-8/7
+Tempo d'intervento
+Autonomia
+Illuminamento
+Tempo di ricarica
+0,5 s
+1 h 
+2/5 lx
+intervallo di chiusura
+Metropolitane
+DM Trasporti 11.1.1988
+Tempo d'intervento
+Autonomia
+Illuminamento
+Tempo di ricarica
+3 s
+2 h
+5 lx 
+Non precisato
+Negozi e grandi magaz-
+zini di vendita o esposi-
+zione (oltre 400 m2)
+DM Interno 8.3.1985
+Tempo d'intervento
+Autonomia
+Illuminamento
+Tempo di ricarica
+Non precisato
+Tempo di sfollamento
+Adeguato
+Non precisato
+Ospedali
+DM Interno 8.3.1985
+Tempo d'intervento
+Autonomia
+Illuminamento
+Tempo di ricarica
+Non precisato
+Tempo di sfollamento
+Adeguato
+Non precisato
+Scuole, accademie, col-
+legi ecc.
+DM Interno 8.3.1985
+Tempo d'intervento
+Autonomia
+Illuminamento
+Tempo di ricarica
+Non precisato
+Tempo di sfollamento
+Adeguato
+Non precisato
+DM Interno 26.8.1992
+Tempo d'intervento
+Autonomia
+Illuminamento
+Tempo di ricarica
+Non precisato
+30 min
+5 lx
+12 h
+
+[PAG 1077]
+IMPIANTI  ELETTRICI                                               X-227
+12.1  Locali contenenti bagni o docce
+Gli impianti elettrici in questi locali devono soddisfare le prescrizioni particolari della
+sezione 701 della norma CEI 64-8/7. Il maggior rischio elettrico rispetto agli ambienti
+ordinari è essenzialmente dovuto alla minore resistenza elettrica presentata dal corpo e
+alla minore resistenza verso terra della persona.
+L'orientamento normativo è quello di limitare le installazioni elettriche e di richiedere
+requisiti di sicurezza sempre più severi quanto più si è vicini al punto di maggior rischio,
+che è la vasca da bagno o la doccia. Vengono a tale scopo definite quattro zone convenzio-
+nali di pericolosità, indicate con i numeri da 0 a 3 (Fig. X.12.1a, b). Se, rispetto alla
+figura, al posto della vasca c'è una doccia, le zone vengono determinate in modo analogo.
+La presenza di geometrie diverse da quella rappresentata e di pareti divisorie modificano
+le linee che delimitano le varie zone di rispetto, fermo restando le distanze riportate.
+Fig. X.12.1   Zone convenzionali di pericolosità per locali da bagno: a) vista in pianta; b)
+vista di prospetto.
+Protezione contro i contatti diretti e indiretti
+Viene effettuata come per gli ambienti ordinari, ma con le seguenti differenze:
+–  è obbligatorio un collegamento equipotenziale supplementare che deve collegare tutte
+le masse estranee (per es. tubazioni metalliche in grado di introdurre potenziale elettrico)
+delle zone 1, 2 e 3 con i conduttori di protezione di tutte le masse situate in queste zone;
+–  non è ammessa la protezione contro i contatti diretti mediante ostacoli o distanziamento;
+–  non è ammessa la protezione contro i contatti indiretti mediante locali non condut-
+tori e per mezzo di collegamenti equipotenziali non connessi a terra;
+–  quando si utilizzano circuiti SELV deve essere prevista la protezione contro i con-
+tatti diretti qualunque sia il valore della tensione, mediante barriere o involucri con grado
+di protezione non inferiore a IPXXB oppure mediante isolamento delle parti attive con
+tensione di prova di 500 V per un minuto.
+Installazione degli impianti
+Premesso che nella zona 0 è vietato installare condutture elettriche (salvo quelle
+incassate con profondità superiore a 5 cm), dispositivi di protezione, sezionamento e
+0,6 m
+0
+2
+1
+3
+2,4 m
+0,6 m
+2,4 m
+0
+2
+1
+3
+2,25 m
+a)
+b)
+
+[PAG 1078]
+X-228
+  IMPIANTI ELETTRICI 
+comando, prese a spina e apparecchi utilizzatori di qualsiasi tipo, nella Tab. X.12.1 sono
+riportate le principali regole di installazione previste della norma CEI 64-8 sez. 701 per le
+zone di pericolosità 1, 2 e 3.
+12.2  Piscine
+Gli impianti elettrici in questi luoghi devono soddisfare le prescrizioni particolari
+della sezione 702 della norma CEI 64-8/7. Il maggior rischio elettrico rispetto agli
+ambienti ordinari è dovuto alla minore resistenza elettrica presentata dal corpo, alla
+minore resistenza verso terra della persona e all'eventuale maggior tempo necessario per
+staccarsi dal contatto.
+L'orientamento normativo è quello di limitare le installazioni elettriche e di richiedere
+requisiti di sicurezza sempre più severi quanto più si è vicini al punto di maggior rischio
+(vasca della piscina). Vengono a tale scopo definite tre zone convenzionali di pericolosità,
+indicate con i numeri 0, 1 e 2 (Figg. X.12.2 e X.12.3).
+Tab. X.12.1   Regole d'installazione nei locali contenenti bagni o docce
+Prescrizioni relative a:
+Zona 1
+Zona 2
+Zona 3
+grado minimo di pro-
+tezione IP (1)
+IPX4
+IPX4
+IPX1
+condutture in vista o
+incassate a meno di 5
+cm di profondità
+Ammesse per i soli
+apparecchi 
+installati
+nelle zone 1 e 2, senza
+rivestimento metallico e
+di classe II
+Ammesse per i soli appa-
+recchi installati nelle zone
+1 e 2, senza rivestimento
+metallico e di classe II
+Ammesse
+cassette di derivazio-
+ne e di giunzione
+Vietate
+Vietate
+Ammesse
+apparecchi di prote-
+zione, sezionamento e
+comando
+Ammessi gli interruttori
+dei circuiti SELV 12 V
+c.a. e 30 V c.c.
+Ammessi gli interruttori
+dei circuiti SELV 12 V c.a.
+e 30 V c.c.
+Ammessi
+prese a spina
+Vietate
+Ammesse con trasforma-
+tore di isolamento di classe
+II incorporato 
+Ammesse se protette
+con circuito SELV o
+trasformatore d'isola-
+mento individuale o
+interruttore differen-
+ziale con Idn  30 mA
+apparecchi utilizzatori Ammessi: scaldacqua e
+apparecchi SELV
+Ammessi: scaldacqua, ap-
+parecchi SELV, apparec-
+chi classe I (2), apparecchi
+clas-se II (3)
+Ammessi
+Note
+(1) Nel caso di bagni pubblici o destinati a comunità, per la cui pulizia sia previsto l'uso di getti
+d'acqua, è richiesto il grado minimo IPX5 per tutte le zone.
+(2) Solo apparecchi per illuminazione, riscaldamento e idromassaggio se protetti da interruttore dif-
+ferenziale con Idn  30 mA.
+(3) Solo apparecchi per illuminazione, riscaldamento e idromassaggio
+
+[PAG 1079]
+IMPIANTI  ELETTRICI                                               X-229
+Fig. X.12.2   Sezione verticale e indicazione delle zone convenzionali di pericolosità per
+una piscina con trampolino e pediluvio di accesso.
+Fig. X.12.3   Sezione verticale e indicazione delle zone convenzionali di pericolosità per
+una vasca non incassata.
+Protezione contro i contatti diretti e indiretti
+Viene effettuata come per gli ambienti ordinari, ma con le seguenti differenze:
+–  è obbligatorio un collegamento equipotenziale supplementare che deve collegare
+tutte le masse estranee (per es. tubazioni metalliche in grado di introdurre potenziale elet-
+trico) delle zone 0, 1 e 2 con i conduttori di protezione di tutte le masse situate in queste
+zone;
+–  non è ammessa la protezione contro i contatti diretti mediante ostacoli o distanzia-
+mento;
+–  non è ammessa la protezione contro i contatti indiretti mediante locali non condut-
+tori e per mezzo di collegamenti equipotenziali non connessi a terra;
+–  quando si utilizzano circuiti SELV deve essere prevista la protezione contro i con-
+tatti diretti qualunque sia il valore della tensione, mediante barriere o involucri con grado
+di protezione non inferiore a IPXXB oppure mediante isolamento delle parti attive con
+tensione di prova di 500 V per un minuto;
+1,5 m
+0
+1,5 m
+2,5 m
+2,5 m
+1,5 m
+2 m
+2 m
+1,5 m
+0
+1
+1
+1
+2
+2
+1,5 m
+2 m
+2 m
+1,5 m
+2,5 m
+1
+1
+2
+2
+0
+h
+h
+2,5 m
+
+[PAG 1080]
+X-230
+  IMPIANTI ELETTRICI 
+–  nelle zone 0 e 1 i circuiti SELV devono avere tensione nominale non superiore a
+12 V c.a. o 30 V c.c., con sorgente di sicurezza fuori delle zone 0, 1 e 2.
+Installazione degli impianti
+Nella Tab. X.12.2 sono riportate le principali regole di installazione previste della
+norma CEI 64-8 sez. 702 per le zone di pericolosità 0, 1 e 2.
+12.3  Cantieri di costruzione e di demolizione
+Gli impianti elettrici in questi luoghi sono soggetti alle prescrizioni particolari della
+norma CEI 64-8/7, sezione 704, che si applica agli impianti temporanei destinati ai lavori
+di costruzione di nuovi edifici, ai lavori di riparazione, trasformazione, ampliamento o
+Tab. X.12.2   Regole d'installazione per le piscine
+Prescrizioni rela-
+tive a:
+Zona 0
+Zona 1
+Zona 2
+grado 
+minimo 
+di
+protezione IP 
+IPX8
+IPX5 (IPX4 per pic-
+cole piscine all'inter-
+no di edifici)
+IPX2 per piscine al coperto;
+IPX4 per piscine all'aperto;
+IPX5 nel caso di pulizia con
+getti d'acqua
+condutture in vista o
+incassate a meno di
+5 cm di profondità
+Ammesse 
+per 
+gli
+apparecchi 
+installati
+nelle zone 0 e 1, senza
+guaina o tubo metal-
+lico
+Ammesse 
+per 
+gli
+apparecchi 
+installati
+nelle zone 0 e 1, senza
+guaina o tubo metal-
+lico
+Senza rivestimenti metallici 
+accessibili
+cassette di deriva-
+zione e di giunzione
+Vietate
+Vietate
+Ammesse
+apparecchi di prote-
+zione, sezionamen-
+to e comando
+Vietati
+Vietati
+Ammessi se protetti con cir-
+cuito SELV o con trasforma-
+tore d'isolamento individuale
+(posto fuori dalle zone 0, 1 e
+2) o con interruttore differen-
+ziale avente Idn  30 mA
+prese a spina
+Vietate
+Vietate (1)
+Ammesse se protette con cir-
+cuito SELV o con trasforma-
+tore d'isolamento individuale
+(posto fuori dalle zone 0, 1 e
+2) o con interruttore differen-
+ziale avente Idn  30 mA
+apparecchi utilizza-
+tori
+Solo apparecchi fissi
+previsti per l'uso nelle
+piscine
+Solo apparecchi fissi
+previsti per l'uso nelle
+piscine
+Apparecchi illuminanti fissi: 
+di classe II; 
+di classe I protetti con diffe-
+renziale avente 
+Idn  30 mA;
+di classe I con trasformatore
+d'isolamento
+Note
+(1) Nelle piccole piscine è consentita l'installazione di prese a spina a più di 1,25 m dal bordo della
+vasca se alimentate con circuito SELV o con trasformatore d'isolamento individuale oppure se pro-
+tette da un interruttore differenziale con Idn  30 mA.
