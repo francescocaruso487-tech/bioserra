@@ -1,0 +1,1415 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 47/116 ===
+Chars: 43,669 | Offset: 2,033,312
+
+
+
+[PAG 1038]
+X-188
+  IMPIANTI ELETTRICI 
+Esempio 4
+Per un circuito con U0 = 230 V protetto da differenziale con Idn = 1 A, l'impedenza
+dell'anello di guasto deve essere non superiore a 230  per rispettare la condizione
+X.10.11; essa è, in pratica, sempre verificata, anche per un guasto nel punto più lontano
+dal trasformatore.
+Se invece del differenziale ci fosse un interruttore con sganciatori di massima cor-
+rente, con Ia = 100 A, si avrebbe Zs  230/100 = 2,3 . Anche questa condizione è, in pra-
+tica, facilmente realizzabile.
+10.14  Protezione contro i contatti indiretti mediante interruzione automatica
+dell'alimentazione, sistema IT
+Per un sistema con neutro isolato (Fig. X.10.35) il guasto a terra determina la circola-
+zione di una corrente esigua, limitata principalmente dagli accoppiamenti capacitivi verso
+massa dei conduttori di linea.
+Fig. X.10.35   Guasto a terra nel sistema IT.
+La tensione di contatto a vuoto sulla massa, data da UST = RE IF, è sempre molto pic-
+cola a causa del ridotto valore di IF e può permanere senza che vi siano pericoli e senza
+dover interrompere la continuità di esercizio, che costituisce il maggior vantaggio del
+sistema IT.
+Per la protezione contro i contatti indiretti occorre collegare a terra le masse, rispet-
+tando la condizione seguente:
+(X.10.14)
+dove Id è la corrente che si manifesta, al primo guasto di impedenza trascurabile, tra un
+conduttore di fase e la massa; UL è la tensione di contatto limite convenzionale e vale 50
+V per gli ambienti ordinari e 25 V per gli ambienti e le applicazioni particolari.
+Per evitare l'insorgere di un secondo guasto a terra, che farebbe intervenire le prote-
+zioni, occorre installare un dispositivo di controllo dell'isolamento. La norma CEI 64-8
+stabilisce le condizioni di interruzione da rispettare nel caso di secondo guasto.
+10.15  Protezione contro i contatti indiretti senza interruzione automatica dell'ali-
+mentazione
+I metodi di protezione che non prevedono l'uso di un dispositivo di apertura del cir-
+cuito sono i seguenti.
+–  Impiego di componenti di classe II o con isolamento equivalente: i componenti con
+isolamento doppio o rinforzato non devono essere collegati all'impianto di terra; il cedi-
+L1
+L2
+L3
+N
+IF
+M
+RE
+REId
+UL
+
+
+[PAG 1039]
+IMPIANTI  ELETTRICI                                               X-189
+mento dell'isolamento principale non provoca una tensione di contatto indiretto, dato che
+vi è l'isolamento supplementare.
+–  Separazione elettrica: viene utilizzato un trasformatore d'isolamento per separare la
+sorgente, collegata al primario, dagli utilizzatori connessi al secondario. Le masse del cir-
+cuito separato vanno collegate tra loro mediante un conduttore equipotenziale, ma non
+devono essere in alcun modo collegate all'impianto di terra. Indicando con Lt la lunghezza
+totale dei conduttori del circuito separato e con Un la sua tensione nominale, la norma CEI
+64-8 impone il rispetto della condizione Un  500 V e raccomanda il soddisfacimento
+delle condizioni Lt  500 m e Lt Un  100 000 Vm.
+–  Locali isolanti: è detta anche protezione mediante luoghi non conduttori e deve
+avvenire sotto il controllo di personale addestrato. È soggetta a varie prescrizioni norma-
+tive.
+–  Locali resi equipotenziali e non connessi a terra: si basa sul principio dell'equipo-
+tenzialità interna ed è una misura da applicare sotto il controllo di personale addestrato.
+10.16  Protezione contro i contatti diretti
+Per gli impianti utilizzatori con tensione nominale non superiore a 1000 V c.a. e
+1500 V c.c. le misure previste dalla norma CEI 64-8 nei riguardi del contatto con parti
+attive sono sintetizzate nella Tab. X.10.33.
+10.17  Protezione combinata contro i contatti diretti e indiretti mediante sistemi a
+bassissima tensione
+Sono sistemi di categoria 0 con tensione nominale non superiore a 50 V in c.a. e 120
+V in c.c.; vengono distinti in tre categorie:
+Tab. X.10.30   Misure di protezione contro i contatti diretti
+Misure di protezione 
+Descrizione
+Totale
+(applicabile
+in tutti i casi)
+Isolamento delle parti atti-
+ve
+Le parti normalmente in tensione devono essere comple-
+tamente ricoperte da un isolamento non rimovibile,
+rispondente ai requisiti richiesti dalle norme di fabbrica-
+zione del componente
+Involucri o barriere
+L'accesso alle parti attive che non possono essere isolate
+deve essere impedito mediante involucri o barriere con
+grado di protezione minimo IP2X o IPXXB, aumentato a
+IP4X o IPXXD per le superfici superiori di involucri e
+barriere orizzontali a portata di mano
+Parziale
+(applicabile
+solo in luo-
+ghi accessi-
+bili a perso-
+nale 
+adde-
+strato)
+Mediante ostacoli
+Gli ostacoli devono impedire l'avvicinamento acciden-
+tale del corpo a parti attive e il contatto accidentale
+durante lavori sotto tensione. Non devono poter essere
+rimossi accidentalmente
+Mediante distanziamento
+Il distanziamento deve impedire che parti simultanea-
+mente accessibili siano a portata di mano (Fig. X.10.36),
+in modo da impedire il contatto con parti a diversa ten-
+sione
+Addizionale
+Mediante interruttore dif-
+ferenziale
+Si devono usare differenziali ad alta sensibilità (Idn  30
+mA). È una misura obbligatoria solo per condizioni am-
+bientali particolarmente gravi (per esempio locali a uso
+medico). Può integrare ma non sostituire le misure di
+protezione parziale o totale.
+
+[PAG 1040]
+X-190
+  IMPIANTI ELETTRICI 
+–  SELV (Safety Extra-Low Voltage, bassissima tensione di sicurezza);
+–  PELV (Protection Extra-Low Voltage, bassissima tensione di protezione);
+–  FELV (Functional Extra-Low Voltage, bassissima tensione funzionale).
+In particolari i sistemi FELV sono sistemi a bassissima tensione che non possono
+essere classificati come SELV o PELV in quanto non soddisfano tutte le prescrizioni pre-
+viste per questi ultimi.
+Fig. X.10.36   Parti convenzionalmente a portata di mano (dimensioni in metri).
+Sorgenti di alimentazione
+Nei sistemi SELV e PELV per l'alimentazione del circuito a bassissima tensione deve
+essere impiegata una delle seguenti sorgenti di sicurezza:
+–  trasformatori di sicurezza conformi alle norme CEI del CT 96;
+–  sorgenti aventi separazione elettrica equivalente a quella del trasformatore di sicu-
+rezza (per es. gruppo motore-generatore con avvolgimenti isolati in modo equivalente);
+–  sorgenti elettrochimiche (batterie di pile o accumulatori) o indipendenti da circuiti a
+tensione più elevata (gruppi elettrogeni);
+–  alimentatori elettronici con tensione di uscita non superiore a 50 V in c.a. e 120 V
+c.c. anche nel caso di guasto interno.
+Per i sistemi FELV è, invece, ammesso l'uso di sorgenti non di sicurezza, come tra-
+sformatori normali e autotrasformatori.
+Condizioni di installazione e di collegamento
+Per i sistemi SELV e PELV devono essere rispettate le seguenti prescrizioni:
+–  le parti attive dei circuiti dei sistemi SELV e PELV devono risultare separati tra
+loro e rispetto agli altri circuiti, con isolamento non inferiore a quello previsto tra il pri-
+mario e il secondario di un trasformatore di sicurezza;
+–  devono essere separate le prese a spina, in modo che non ci sia la possibilità di inse-
+rire le spine di un sistema nelle prese di un altro;
+–  le parti attive dei circuiti SELV non devono essere collegate a terra e neppure a
+parti attive o a conduttori di protezione facenti parte di altri circuiti;
+–  le masse dei circuiti SELV non devono essere intenzionalmente collegate a terra, a
+conduttori di protezione o a masse di altri circuiti e a masse estranee, tranne quando il po-
+1,25
+1,25
+1,25
+limite del volume
+S
+0,75
+2,5
+S
+S
+0,75
+2,5
+
+[PAG 1041]
+IMPIANTI  ELETTRICI                                               X-191
+tenziale immesso dalle masse estranee sia inferiore a 50 V in c.a. e 120 V in c.c.;
+–  le prese a spina dei circuiti SELV non devono avere il polo di terra.
+Lo schema esemplificativo di un sistema SELV è riportato nella Fig. X.10.37.
+Fig. X.10.37   Schema esemplificativo del sistema SELV.
+Per il sistema PELV, invece, non vi è il divieto di collegamento a terra delle masse e
+di eventuali punti del circuito di protezione (Fig. X.10.3).
+Fig. X.10.38   Schema esemplificativo del sistema PELV.
+Le masse del sistema FELV vanno obbligatoriamente collegate a terra.
+Protezione contro i contatti indiretti
+Per i sistemi SELV e PELV la protezione contro i contatti indiretti è sempre assicurata
+e non bisogna mettere in atto ulteriori sistemi di protezione, dato i ridotti valori della tensione
+di alimentazione e le caratteristiche di collegamento delle masse proprie di questi sistemi.
+Per il sistema FELV occorre considerare la possibilità di un gusto interno al trasfor-
+matore di alimentazione (non di sicurezza) e di un secondo guasto interno al componente.
+Le misure di protezione possono essere:
+–  collegamento delle masse del circuito FELV al conduttore di protezione del circuito
+primario, a patto che tale circuito sia protetto contro i contatti indiretti mediante interru-
+zione automatica dell'alimentazione (Fig. X.10.39);
+–  collegamento delle masse del circuito FELV al conduttore equipotenziale isolato
+non connesso a terra, nei sistemi in cui viene praticata la misura di protezione mediante
+separazione elettrica.
+Protezione contro i contatti diretti
+Per i circuiti SELV vanno rispettate le seguenti prescrizioni:
+230 V
+50 V
+PE
+230 V
+50 V
+PE
+
+[PAG 1042]
+X-192
+  IMPIANTI ELETTRICI 
+–  negli ambienti ordinari con tensione nominale non superiore a 25 V c.a. e 60 V c.c.
+la protezione è assicurata senza altre misure protettive;
+–  negli altri casi si deve effettuare la protezione mediante involucri o barriere con
+grado di protezione non inferiore a IP2X o IPXXB oppure isolando le parti attive con un
+isolamento in grado di sopportare una tensione di prova di 500 V per un minuto.
+Fig. X.10.39   Protezione contro i contatti indiretti nel sistema FELV. Il collegamento a
+terra delle masse fa intervenire il differenziale al secondo guasto.
+Per i circuiti PELV valgono le stesse prescrizioni, ma con i seguenti limiti di tensione:
+25 V c.a. e 60 V c.c. se il componente è utilizzato solo in luoghi asciutti e non si prevedono
+contatti estesi delle parti attive con il corpo umano; 6 V c.a. e 15 V c.c. negli altri casi.
+Per i circuiti FELV la protezione contro i contatti diretti deve essere sempre effettuata,
+con una delle seguenti modalità:
+–  uso di barriere o involucri con grado di protezione minimo IP2X o IPXXB, aumen-
+tato a IP4X o IPXXD per le superfici orizzontali superiori a portata di mano;
+–  isolamento delle parti attive, con un livello corrispondente alla tensione minima di
+prova richiesta per il circuito primario o che possa resistere a una tensione di prova a fre-
+quenza industriale almeno pari a 1500 V per un minuto.
+11  IMPIANTI PER LA DISTRIBUZIONE E L'UTILIZZAZIONE DELL'ENER-
+GIA ELETTRICA
+11.1  Cabine elettriche
+Una cabina elettrica è, in genere, un'officina elettrica connessa a sistemi di I e/o II
+categoria e destinata ad almeno una delle seguenti funzioni: trasformazione, conversione,
+regolazione, smistamento dell'energia elettrica.
+La cabina di trasformazione è il complesso dei conduttori, delle apparecchiature e
+delle macchine atte a trasformare la tensione fornita dalle linee di distribuzione MT ai
+valori di alimentazione delle linee BT.
+La cabina di smistamento consente di derivare da una o più linee in arrivo un maggior
+numero di linee in partenza, senza effettuare alcuna trasformazione; essa costituisce un
+nodo di diramazione dell'energia. In genere le cabine di trasformazione espletano anche la
+funzione di smistamento dell'energia tra più linee BT.
+230 V
+Id
+REN
+RE
+Id
+PE
+50 V
+FELV
+1 guasto
+2 guasto
+
+[PAG 1043]
+IMPIANTI  ELETTRICI                                               X-193
+Un'altra distinzione riguarda le cabine pubbliche e quelle private (o cabine di utente):
+le prime sono di proprietà dell'ente distributore dell'energia elettrica e servono per l'ali-
+mentazione delle utenze private BT con tensione 230 V monofase e 400 V trifase; le
+seconde sono di proprietà dell'utente e servono per l'alimentazione di impianti privati di
+grandi dimensioni (orientativamente oltre i 200 kW di potenza installata), con fornitura
+dell'energia elettrica in media tensione.
+Nel caso delle cabine private l'utente deve mettere a disposizione del distributore degli
+appositi locali per l'installazione del gruppo di misura e delle apparecchiature di compe-
+tenza del fornitore (Fig. X.11.1).
+Fig. X.11.1   Vista in pianta dei locali costituenti una cabina utente.
+11.2.  Connessione delle cabine MT/BT alla rete di distribuzione
+Il collegamento di una utenza dotata di cabina elettrica MT/BT alla rete di distribu-
+zione deve essere effettuato rispettando determinate regole tecniche di connessione, in
+modo da non compromettere il corretto funzionamento del sistema elettrico a monte.
+Le modalità di connessione degli utenti alimentati in alta e media tensione sono stabi-
+lite dalla norma CEI 0-16 "Regola tecnica di riferimento per la connessione di Utenti
+attivi e passivi alle reti AT ed MT delle imprese distributrici di energia elettrica", di cui è
+attualmente in vigore la seconda edizione pubblicata in data 1/7/2008 (fasc. 9404) ed
+entrata in vigore l'1 settembre 2008.
+Tale norma, che si applica integralmente agli utenti attivi (ossia che possono anche
+immettere energia attiva sulla rete) e passivi (che prelevano soltanto energia attiva dalla
+rete) che richiedono una nuova connessione dopo l'1 settembre 2008, è stata voluta
+dall'AEEG (Autorità per l'Energia Elettrica e il Gas) al fine di uniformare le regole tecni-
+che di connessione applicate dai vari distributori di energia elettrica, ognuno dei quali ne
+aveva una propria; per esempio, nel caso di Enel Distribuzione vigevano le prescrizioni
+del documento DK 5600. Per i distributori che, a causa di peculiarità della loro rete o per
+il livello di tensione diverso da quelli previsti dalla norma (15 kV e 20 kV), non possono
+recepire integralmente la norma CEI 0-16 è prevista la possibilità di comunicare all'AEEG
+gli adattamenti che intendono adottare oppure richiedere all'Autorità una deroga tempora-
+nea all'applicazione della norma, richiesta che deve essere approvata dall'AEEG, la quale
+indicherà anche la durata della deroga.
+La norma CEI 0-16, integrata con gli adattamenti e le deroghe eventualmente con-
+cesse dall'AEEG, costituisce la Regola Tecnica di Connessione (RTC) a cui devono atte-
+nersi tutti gli utenti di quel distributore.
+Nel caso di utenti di media tensione passivi, lo schema generale di collegamento tra la
+rete di distribuzione e l'impianto dell'utente è indicato nella Figura X.11.2.
+La linea MT dell'impresa di distribuzione arriva nel locale di consegna, nel quale ven-
+A
+B
+C
+MT
+MT
+TR
+BT
+A 
+Locale ente fornitore
+B 
+Locale misure
+C 
+Locale utente
+TR Trasformatore
+MT Apparecchiature di media tensione
+BT Quadro di bassa tensione
+
+[PAG 1044]
+X-194
+  IMPIANTI ELETTRICI 
+gono installati l'interruttore di manovra-sezionatore di linea con coltelli di terra interbloc-
+cati per la messa a terra della linea in caso di lavori sulla stessa e i trasformatori di misura
+TA e TV per l’alimentazione del gruppo di misura, posto nell’adiacente locale misure.
+Fig. X.11.2   Schema di collegamento tra la rete di distribuzione e la cabina utente.
+Il gruppo di misura riportato nella Figura X.11.2 comprende:
+–  il contatore dell'energia attiva (Wh), con l'indicatore del senso di direzione della
+stessa; per gli utenti passivi l'energia attiva va sempre dalla rete di distribuzione
+all'impianto utente;
+–  l'indicatore della potenza massima prelevata (Pmax);
+–  il contatore dell'energia reattiva (varh).
+Nel punto di consegna C deve essere attestato il cavo di collegamento allestito
+dall'utente, da portare nel locale utente fino al punto di risalita sbarre. Al fine di ridurre la
+probabilità di un guasto sul cavo di collegamento che si ripercuoterebbe sulla cabina pri-
+maria del distributore, tale cavo deve essere il più corto possibile e avere sezione ade-
+guata: la norma CEI 0-16 prescrive una lunghezza massima di 20 m e una sezione di 95
+mm2. È ammessa una lunghezza maggiore in casi particolari in cui i locali del distributore
+e dell'utente non sono adiacenti, a patto di avere il consenso del distributore e di impie-
+gare un cavo in tratta unica, senza giunzioni, e con protezione meccanica addizionale.
+Nella Figura X.11.2 all'ingresso del locale utente è stato indicato un sezionatore di
+terra bloccabile con chiave per la messa a terra e in corto circuito del cavo di collega-
+mento. Questa manovra è necessaria per eseguire lavori elettrici a monte del dispositivo di
+sezionamento generale dell'utente. La messa fuori tensione e in sicurezza del cavo di col-
+legamento va richiesta al distributore e per evitare manovre intempestive il sezionatore di
+terra utente deve essere chiudibile solo con una chiave consegnata dall'utente al distribu-
+tore, la quale viene liberata e data all'utente solo dopo la chiusura del sezionatore di terra
+del distributore, in modo che la chiusura del sezionatore di terra lato utente sia possibile
+solo dopo che il distributore ha messo fuori tensione e in sicurezza il cavo di collega-
+mento nel punto a monte.
+Il sezionatore di terra dell'utente può essere omesso se la messa a terra e in sicurezza
+del cavo di collegamento avviene con mezzi mobili, pur rispettando sempre la procedura
+Locale di consegna
+Locale
+Locale utente
+misure
+Linea MT
+Cavo di collegamento (utente)
+All’impianto utente
+TA
+TV
+C
+Wh
+Pmax
+varh
+TO
+TV
+TA
+PG
+DG
+TA = Trasformatore di corrente di fase
+TV = Trasformatore di tensione
+TO = Trasformatore di corrente omopolare
+CD = Punto di consegna
+PG = Protezione generale
+DG = Dispositivo generare
+
+[PAG 1045]
+IMPIANTI  ELETTRICI                                               X-195
+indicata; l'applicazione di questa soluzione può risultare problematica se la testa del cavo
+di collegamento è difficilmente accessibile.
+Nel locale utente viene installato il dispositivo generale (DG) dell'impianto, avente il
+compito di separare l'impianto utilizzatore dalla rete e consentire il coordinamento selet-
+tivo tra le protezioni del distributore e quelle dell'utente.
+Nello schema della Figura X.11.2 esso consiste in un sezionatore di linea con coltelli
+di terra interbloccati e in un interruttore automatico. È consentita anche una soluzione più
+economica, consistente nel realizzare il dispositivo generale mediante un interruttore di
+manovra-sezionatore (IMS) di nuova generazione con fusibili associati, per utenti passivi
+con un solo trasformatore di potenza fino a 400 kVA e corrente nominale dei fusibili fino
+a 25 A, rispettando una serie di condizioni previste dalla norma CEI 0-16.
+L'interruttore automatico del DG interviene, in caso di guasto nell'impianto utilizza-
+tore, su comando dei relè di protezione che, nel loro insieme, costituiscono la protezione
+generale (PG) della cabina, mentre con la sigla SPG viene indicato il sistema di prote-
+zione generale, comprendente l'insieme della PG, dei TA e dei TV per l'alimentazione
+indiretta dei relè e dei relativi circuiti di protezione e di sgancio. Per consentire ai costrut-
+tori di usare dispositivi innovativi costruiti con componenti elettronici, la norma CEI 0-16
+consente di realizzare in maniera integrata l'intero SPG, oppure alcune sue parti.
+Fig. X.11.3   Schema del lato MT di una cabina utente con due montanti.
+Nel caso di cabine con più trasformatori veniva in passato sempre installato un inter-
+ruttore generale a monte di tutti i montanti MT di alimentazione dei trasformatori. La
+norma CEI 0-16 consente invece la sostituzione dell'interruttore generale con un seziona-
+tore interbloccato con i DG dei singoli montanti, nel caso di due soli montanti e nel
+rispetto di alcune condizioni indicate dalla norma stessa. È possibile quindi adottare lo
+schema di Figura X.11.3.
+11.3.  Schemi tipici lato MT
+La configurazione del lato MT di una cabina di trasformazione privata dipende da
+numerosi fattori.
+TA
+TV
+C
+TO
+TV
+TA
+PG
+DG
+TA = Trasformatore di corrente di fase
+TV = Trasformatore di tensione
+TO = Trasformatore di corrente omopolare
+PG = Protezione generale
+DG = Dispositico generale
+1-2 = Montanti MT cabina utente
+TO
+PG
+DG
+TA
+1
+2
+
+[PAG 1046]
+X-196
+  IMPIANTI ELETTRICI 
+–  Tipo di alimentazione: la cabina può essere alimentata con una linea terminale che non
+prosegue oltre la cabina stessa o essere inserita in una linea ad anello; in quest'ultimo caso
+bisogna installare un entra-esci formato da due sezionatori sotto carico, in modo da ali-
+mentare la cabina con una o entrambe le linee e di mantenere la continuità dell'anello
+anche quando la cabina è scollegata. Le soluzioni costruttive riguardano la parte MT
+dell'ente distributore (Fig. X.11.4, X.11.5). I sezionatori di terra servono per collegare a
+terra la linea in caso di lavori sulla stessa.
+–  Tipo di apparecchio di protezione e manovra lato MT: per le cabine di potenza non
+elevata (orientativamente fino a 400 kVA e 40 A di corrente) è possibile usare sezionatori
+sotto carico con fusibili (Fig. X.11.6), mentre per potenze maggiori occorre installare un
+sezionatore munito di coltelli di terra interbloccati e un interruttore automatico (Fig.
+X.11.7). L'intervento dei fusibili, anche su una sola fase, deve far aprire il sezionatore.
+Fig. X.11.4   Alimentazione di una
+cabina utente con linea terminale.
+Fig. X.11.5   Alimentazione di una cabina
+utente con linea ad anello.
+Fig. X.11.6   Installazione di un seziona-
+tore sotto carico con fusibili sul lato MT.
+Fig. X.11.7  Installazione di un sezionatore
+e di un interruttore automatico sul lato MT.
+Linea MT
+Gruppo di
+misura
+TA
+TV
+alla cabina utente
+Gruppo di
+misura
+Linee MT in ingresso
+alla cabina utente
+TA
+TV
+Ente di distribuzione
+Utente
+Ente di distribuzione
+Utente
+
+[PAG 1047]
+IMPIANTI  ELETTRICI                                               X-197
+–  Numero di trasformatori: determina il numero delle apparecchiature di manovra e pro-
+tezione sul lato MT.
+Nella Fig. X.11.8 è rappresentato lo schema di una cabina modulare realizzata con scom-
+parti componibili, tali da adeguarne la configurazione alle esigenze. 
+Fig. X.11.8   Schema del lato MT di una cabina posta in scomparti modulari metallici.
+1-2: celle delle linee di alimentazione.
+3: cella del gruppo di misura.
+4: cella del gruppo sezionatore-interruttore generale.
+5: cella con l'apparecchiatura di manovra e protezione per un trasformatore posto fuori dal
+quadro protetto.
+6: cella di partenza della linea MT per l'alimentazione di un'altra cabina dello stabili-
+mento.
+7: cella del trasformatore.
+È previsto l'uso di un interruttore generale MT di cabina e di sezionatori con fusibili
+per le varie derivazioni.
+Schemi tipici lato BT
+La configurazione del lato BT di una cabina di trasformazione e smistamento privata
+dipende da vari fattori, tra cui il numero dei trasformatori, il numero e la disposizione dei
+carichi, il tipo di distribuzione BT, i valori delle correnti di corto circuito.
+Nelle Figg. X.11.9, X.11.10, X.11.11 e X.11.12 sono riportati alcuni schemi tipici.
+Il primo si usa quando vi è una sola linea BT, mentre il secondo prevede più linee, con
+distribuzione radiale.
+Nello schema di Fig. X.11.11 le sbarre BT sono normalmente sezionate, con carichi
+separati tra i due trasformatori; quando uno dei due è in avaria o in manutenzione viene
+chiuso il congiuntore di sbarra CS ed è possibile alimentare tutti o parte dei carichi con
+un solo trasformatore, a seconda della potenza delle macchine.
+Nello schema di Fig. X.11.12 (caso particolare della configurazione n  1) i carichi
+sono normalmente separati, ma è possibile, chiudendo gli interruttori NA e aprendo gli
+NC, alimentarli tutti o in parte mediante il trasformatore ausiliario TRA, a seconda della
+Ente fornitore
+Utente
+MT
+MT
+BT
+1
+2
+3
+4
+5
+6
+7
+8
+
+[PAG 1048]
+X-198
+  IMPIANTI ELETTRICI 
+potenza di quest'ultimo.
+Va detto, infine, che quando i trasformatori funzionano in parallelo la corrente di
+corto circuito sul lato BT è maggiore rispetto al funzionamento separato: il potere d'inter-
+ruzione delle apparecchiature BT va scelto in base alla corrente di corto circuito più ele-
+vata.
+Trasformatore MT/BT
+Nelle cabine di trasformazione vengono usati trasformatori in liquido isolante (in
+olio) e a secco inglobati in resina.
+Il primo tipo ha le parti attive (nucleo magnetico e avvolgimenti elettrici) poste
+all'interno di un cassone pieno di olio minerale, avente la duplice funzione di isolante e di
+liquido di raffreddamento.
+Se il trasformatore è del tipo con cassa stagna a riempimento integrale (trasformatore
+sigillato) non vi è il conservatore dell'olio, dato che le variazioni di volume dell'olio ven-
+gono compensate dall'elasticità della cassa in lamiera d'acciaio.
+I trasformatori a secco attualmente impiegati hanno gli avvolgimenti elettrici inglobati
+in blocchi cilindrici di resina epossidica che li isola e li protegge dagli agenti esterni.
+Fig. X.11.9   Lato BT con una sola linea
+in partenza.
+Fig. X.11.10   Schema radiale semplice.
+Fig. X.11.11   Schema radiale doppio
+(CS: congiuntore di sbarra).
+Fig. X.11.12   Schema 2+1 (TRA: tra-
+sformatore ausiliario).
+M
+20/0,4 kV
+1,6 MVA
+Ucc% = 6%
+400 V
+M
+6/0,4 kV
+1,6 MVA
+Ucc% = 6%
+NC
+NC
+commutazione
+automatica
+CS
+NA
+400 V
+NA
+NA
+NA
+NC
+NC
+TRA
+400 V
+
+[PAG 1049]
+IMPIANTI  ELETTRICI                                               X-199
+Vengono classificati in varie classi, in funzione delle condizioni di installazione (Tab.
+X.11.1).
+I trasformatori vengono anche classificati in funzione dei modi di raffreddamento,
+usando una sigla di quattro lettere (Tab. X.11.2), di cui le prime due indicano la natura e il
+tipo di circolazione del fluido refrigerante in contatto con gli avvolgimenti, mentre la
+terza e la quarta lettera indicano la natura e il modo di circolazione del refrigerante
+esterno all'involucro, se esistente.
+Per i trasformatori da cabina vengono adottati di solito il raffreddamento AN (aria natu-
+rale) per quelli a secco, ONAN (circolazione naturale dell'olio interno e dell'aria esterna al
+cassone) e ONAF (circolazione naturale dell'olio e forzata dell'aria) per quelli in olio, a
+seconda che vengano usate o meno ventole di raffreddamento applicate sul cassone.
+Altre caratteristiche elettriche dei trasformatori, il cui significato è noto dall'Elettro-
+tecnica, sono:
+–  potenza apparente nominale: per i trasformatori impiegati nelle cabine arriva fino a
+3000  3500 kVA;
+–  rapporto di trasformazione a vuoto: normalmente per l'alimentazione degli impianti
+BT si usa la tensione secondaria a vuoto nominale U20n = 400 V;
+–  collegamenti degli avvolgimenti: il più usato è il triangolo-stella con neutro;
+–  gruppo CEI di collegamento: deve essere lo stesso per i trasformatori destinati a
+funzionare in parallelo;
+–  tensione di corto circuito percentuale: i valori usati vanno dal 4 al 6%;
+–  perdite di potenza: vengono distinte le perdite nel ferro e quelle nel rame, queste
+ultime riportate alla temperatura di funzionamento; dal loro valore dipende quello del ren-
+dimento della macchina;
+Tab. X.11.1   Classificazione dei trasformatori a secco (norma CEI 14-8)
+Classificazione
+in funzione di:
+Classe
+Descrizione
+Condizioni di umidità e
+di inquinamento
+E0
+Trasformatore non soggetto a condensa e con inquinamento tra-
+scurabile
+E1
+Trasformatore soggetto a condensa occasionale e inquinamento
+modesto; è la classe normalmente scelta per installazioni
+all'interno di edifici
+E2
+Trasformatore soggetto a condensa consistente e/o a intenso
+inquinamento (installazione esterna)
+Temperatura minima
+C1
+ 5 °C, installazione all'interno
+C2
+ 25 °C, installazione all'esterno
+Comportamento al fuoco
+F0
+Non è richiesta una particolare limitazione dell'infiammabilità
+F1
+È richiesta una ridotta infiammabilità e una minima emissione
+di sostanze tossiche e fumi opachi
+F2
+Alle caratteristiche della classe F1 viene aggiunta la capacità del
+trasformatore di funzionare per un certo tempo, anche se inve-
+stito da un incendio esterno
+
+[PAG 1050]
+X-200
+  IMPIANTI ELETTRICI 
+–  corrente a vuoto: per trasformatori da cabina varia dal 2,5 all'1% della corrente
+nominale, all'aumentare della potenza.
+Nelle Tabb. X.11.3 e X.11.4 sono riportate le caratteristiche tecniche di trasformatori
+trifasi di potenza normalizzata, in olio e a secco inglobati in resina.
+Tab. X.11.2   Lettere per l'indicazione dei modi di raffreddamento dei trasformatori
+Prima lettera
+Seconda lettera
+Terza lettera
+Quarta lettera
+O
+Olio
+N
+Naturale
+O
+Olio
+N
+Naturale
+L
+Liquido isolante 
+non infiamma-
+bile
+F
+Forzata
+L
+Liquido isolante 
+non infiamma-
+bile
+F
+Forzata
+G
+Gas
+D
+Forzata e guidata 
+(1)
+G
+Gas
+D
+Forzata e guidata (1)
+W
+Acqua
+W
+Acqua
+A
+Aria
+A
+Aria
+Nota.  (1) Per circolazione forzata e guidata si intende che il flusso refrigerante viene in parte incana-
+lato entro condotti di raffreddamento, in modo da passare attraverso gli avvolgimenti.
+Tab. X.11.3   Caratteristiche principali di trasformatori MT/BT trifasi in olio (serie TO,
+Schneider Electric spa)
+Tensione di riferimento primaria  24 kV
+Regolazione lato MT  2  2,5%
+Tensione di riferimento secondaria  1,1 kV
+Potenza nominale (kVA)
+100
+160
+250
+315
+400
+500
+630
+Perdite a vuoto (W)
+320
+460
+650
+770
+930
+1100
+1300
+Perdite a pieno carico (W)
+1750
+2350
+3250
+3900
+4600
+5500
+6500
+Tensione di corto circuito (%)
+4
+4
+4
+4
+4
+4
+4
+Corrente a vuoto (%)
+2,5
+2,3
+2,1
+2
+1,9
+1,9
+1,8
+C.d.t. a pieno
+carico (%)
+cos   = 1
+1,81
+1,54
+1,37
+1,31
+1,22
+1,17
+1,11
+cos   = 0,8
+3,57
+3,43
+3,33
+3,30
+3,25
+3,22
+3,17
+Rendimento (%)
+cos   = 1
+carico 100%
+97,97
+98,27
+98,46
+98,54
+98,64
+98,70
+98,78
+cos   = 0,8
+carico 100%
+97,48
+97,85
+98,09
+98,18
+98,30
+98,38
+98,48
+
+[PAG 1051]
+IMPIANTI  ELETTRICI                                               X-201
+Tab. X.11.3 Segue
+Tensione di riferimento primaria  24 kV
+Regolazione lato MT  2  2,5%
+Tensione di riferimento secondaria  1,1 kV
+Potenza nominale (kVA)
+800
+1000
+1250
+1600
+2000
+2500
+3000
+Perdite a vuoto (W)
+1500
+1700
+2100
+2600
+3200
+3800
+4400
+Perdite a pieno carico (W)
+9000
+10500
+13100
+17000
+22000
+26500
+30500
+Tensione di corto circuito (%)
+6
+6
+6
+6
+6
+6
+6
+Corrente a vuoto (%)
+1,7
+1,5
+1,4
+1,3
+1,2
+1,1
+1
+C.d.t. a pieno
+carico (%)
+cos   = 1
+1,29
+1,22
+1,22
+1,21
+1,20
+1,20
+1,19
+cos   = 0,8
+4,52
+4,46
+4,46
+4,46
+4,46
+4,46
+4,46
+Rendimento (%)
+cos   = 1
+carico 100%
+98,69
+98,76
+98,77
+98,78
+98,75
+98,78
+98,82
+cos   = 0,8
+carico 100%
+98,36
+98,46
+98,47
+98,48
+98,45
+98,49
+98,55
+Tab. X.11.4   Caratteristiche principali di trasformatori MT/BT trifasi inglobati in resina
+(serie TRIHAL, Schneider Electric spa)
+Tensione di riferimento primaria 17,5 kV - 24 kV
+Tensione nominale primaria 15 kV - 20 kV - 22 kV - 23 kV
+Regolazione lato MT  2  2,5%
+Tensione nominale secondaria a vuoto 400/231 V
+Collegamenti triangolo stella con neutro (Dyn11)
+Potenza nominale (1) (kVA)
+(con raffreddamento AN)
+100
+160
+250
+315
+400
+500
+630
+Perdite a vuoto (W)
+460
+650
+880
+1030
+1200
+1400
+1650
+Perdite a pieno carico (a 75 °C) (W)
+1800
+2300
+3400
+4000
+4800
+5700
+6800
+Perdite a pieno carico (a 120°C) (W)
+2050
+2700
+3800
+4600
+5500
+6500
+7800
+Tensione di corto circuito (%)
+6
+6
+6
+6
+6
+6
+6
+Corrente a vuoto (%)
+2,5
+2,3
+2
+1,8
+1,5
+1,5
+1,3
+C.d.t. a pieno carico a 75 °C (%)
+con cos  = 0,8
+4,94
+4,72
+4,67
+4,61
+4,57
+4,53
+4,49
+
+[PAG 1052]
+X-202
+  IMPIANTI ELETTRICI 
+Tab X.11.4 Segue
+11.4  Criteri di scelta e di dimensionamento dei componenti delle cabine elettriche
+Potenza apparente di progetto
+La determinazione della potenza da installare va fatta valutando la potenza convenzio-
+C.d.t. a pieno carico a 120 °C (%)
+con cos  = 0,8
+5,08
+4,87
+4,77
+4,73
+4,68
+4,63
+4,59
+Rendimento a pieno carico (%)
+a 75 °C, con cos  = 0,8
+97,25
+97,75
+97,90
+98,04
+98,16
+98,26
+98,35
+Rendimento a pieno carico (%)
+a 120 °C, con cos  = 0,8
+96,96
+97,45
+97,71
+97,81
+97,95
+98,06
+98,16
+(1) La potenza nominale può essere aumentata del 40% con l'applicazione di ventilatori di raffredda-
+mento forzato (AF).
+Tensione di riferimento primaria 17,5 kV - 24 kV
+Tensione nominale primaria 15 kV - 20 kV - 22 kV - 23 kV
+Regolazione lato MT  2  2,5%
+Tensione nominale secondaria a vuoto 400/231 V
+Collegamenti triangolo stella con neutro (Dyn11)
+Potenza nominale  (1) (kVA)
+(con raffreddamento AN)
+800
+1000
+1250
+1600
+2000
+2500
+3150
+Perdite a vuoto (W)
+2000
+2300
+2800
+3100
+4000
+5000
+6300
+Perdite a pieno carico (a 75 °C) (W)
+8200
+9600
+11500
+14000
+17500
+20000
+23000
+Perdite a pieno carico (a 120°C) (W)
+9400
+11000
+13100
+16000
+20000
+23000
+26000
+Tensione di corto circuito (%)
+6
+6
+6
+6
+6
+6
+7
+Corrente a vuoto (%)
+1,3
+1,2
+1,2
+1,2
+1,1
+1
+1
+C.d.t. a pieno carico a 75 °C (%)
+con cos  = 0,8
+4,45
+4,41
+4,38
+4,35
+4,35
+4,30
+4,89
+C.d.t. a pieno carico a 120 °C (%)
+con cos  = 0,8
+4,55
+4,50
+4,47
+4,44
+4,44
+4,38
+4,96
+Rendimento a pieno carico (%)
+a 75 °C, con cos  = 0,8
+98,43
+98,53
+98,59
+98,68
+98,67
+98,77
+98,85
+Rendimento a pieno carico (%)
+a 120 °C, con cos  = 0,8
+98,25
+98,36
+98,43
+98,53
+98,52
+98,62
+98,73
+(1) La potenza nominale può essere aumentata del 40% con l'applicazione di ventilatori di raffredda-
+mento forzato (AF).
+
+[PAG 1053]
+IMPIANTI  ELETTRICI                                               X-203
+nale dei carichi mediante i fattori di utilizzazione e contemporaneità.
+Si può anche effettuare una valutazione globale, introducendo un fattore di riduzione
+complessivo F e calcolando la potenza attiva contrattuale Pcont. con la relazione:
+(X.11.1)
+dove Pi sono le potenze di targa degli utilizzatori installati. La valutazione di F va fatta in
+modo oculato; in genere si pone F = 0,4  0,7.
+Tenendo conto di una potenza di margine Pmarg. per future esigenze e introducendo un
+f.d.p. convenzionale 0,9 (per valori inferiori è generalmente presente un impianto di rifa-
+samento), si ottiene la potenza apparente di progetto:
+(X.11.2)
+Conduttori lato MT
+Sul lato MT si usano cavi isolati in EPR o XLPE oppure conduttori nudi in rame o in
+alluminio. Il loro dimensionamento va fatto in funzione della corrente nominale del lato
+MT, corrispondente alla potenza di progetto. Per la valutazione della portata dei cavi vale
+quanto riportato al Par. 4.13; per i conduttori nudi si può far riferimento alla Tab. X.11.5.
+Apparecchi di manovra e protezione lato MT
+Sul lato MT si effettua la protezione dalle sovratensioni secondo le modalità viste nel
+Cap. 9 e quella contro i corto circuiti, mentre la protezione contro i sovraccarichi riguarda
+il lato BT.
+Si usano fusibili MT (Par. 7.7) per potenze fino a 400 kVA e interruttori automatici
+MT (Par. 7.3) per le potenze maggiori, dotati di sganciatori di massima corrente a doppia
+soglia d'intervento (Fig. X.11.13), con apertura ritardata per correnti inferiori a 500  750
+A.
+Per la scelta delle caratteristiche si deve tener conto delle seguenti, principali, gran-
+dezze elettriche:
+–  tensione nominale del sistema MT;
+–  correnti nominali dei circuiti MT (linea e montanti dei trasformatori);
+–  corrente di corto circuito lato MT, generalmente indicata dall'ente distributore.
+Tab. X.11.5   Intensità di corrente ammissibile in tondi di rame e di alluminio
+Diametro (mm)
+Intensità di corrente (A)
+rame
+alluminio
+3
+5
+8
+10
+12
+16
+18
+20
+25
+40
+75
+140
+185
+235
+345
+410
+475
+630
+30
+60
+110
+145
+185
+275
+325
+375
+505
+Pcont.
+F
+Pi
+i
+1
+=
+n
+
+=
+Sn
+Pcont.
+Pm
+.
+arg
++
+0,9
+---------------------------------------
+=
+
+[PAG 1054]
+X-204
+  IMPIANTI ELETTRICI 
+Fig. X.11.13   Caratteristica d'intervento di un relè di massima corrente a doppia soglia.
+La Tab. X.11.6 consente di effettuare la scelta della corrente nominale dei fusibili, in
+funzione della tensione nominale primaria e della potenza del trasformatore.
+Protezione dai guasti interni del trasformatore
+Si attua con il relè Buchholz a sviluppo di gas per trasformatori in olio e con relè dif-
+ferenziali a squilibrio di corrente per macchine di potenza superiore, da 1000  2000 kVA
+e oltre (Figg. X.11.14 e X.11.15).
+Fig. X.11.14   Schema di principio della protezione differenziale.
+Tab. X.11.6   Scelta della corrente nominale (A) dei fusibili MT
+Tensione nominale 
+(kV)
+Potenza nominale (kVA)
+50
+75
+100
+160
+250
+315
+400
+6/7,2
+10/12
+15/17,5
+20/24
+30/36
+10
+6
+6
+6
+6
+16
+10
+6
+6
+6
+25
+16
+10
+6
+6
+40
+25
+16
+10
+10
+63
+40
+25
+16
+10
+63
+40
+25
+25
+16
+100
+40
+40
+25
+16
+t (s)
+t1  0,6
+0
+I1
+I2
+I (A)
+MT
+BT
+TA
+TA
+I1
+I2
+Id
+
+[PAG 1055]
+IMPIANTI  ELETTRICI                                               X-205
+Fig. X.11.15   Indicazione della protezione combinata differenziale più Buchholz.
+Apparecchi di manovra e protezione lato BT
+Sul lato BT devono essere previste le protezione dal corto circuito e dal sovraccarico
+per le varie linee (Paragrafo 8). Vengono utilizzati normalmente interruttori automatici
+con sganciatori di sovracorrente. Le grandezze da considerare per la scelta sono le
+seguenti:
+–  tensione nominale delle linee: normalmente pari a 230/400 V;
+–  correnti d'impiego dei circuiti;
+–  correnti di corto circuito nei punti di installazione degli interruttori (Par. 6.7).
+La protezione contro i contatti indiretti mediante l'interruzione automatica dell'ali-
+mentazione viene fatta coordinando l'impianto di terra e i dispositivi d'interruzione, con le
+modalità previste per il sistema TN (Par. 10.13).
+11.5  Quadri elettrici per bassa tensione
+Un quadro elettrico (detto anche apparecchiatura assiemata di protezione e di mano-
+vra per bassa tensione) è un componente dell'impianto costituito dall'insieme di un invo-
+lucro e delle varie apparecchiature di protezione, di manovra, di comando, di regolazione,
+di misura in esso contenute, che vengono montate sotto la responsabilità del costruttore,
+con tutte le interconnessioni meccaniche ed elettriche interne, compresi gli elementi strut-
+turali di supporto.
+A seconda delle loro caratteristiche i quadri si dividono in:
+–  apparecchiature di serie (AS) e non di serie (ANS), soggette alla norma CEI EN
+60439-1 (CEI 17-13/1);
+–  apparecchiature accessibili a personale non addestrato (quadri di distribuzione
+ASD), soggetti alla norma CEI EN 60439-3 (CEI 17-13/3);
+–  apparecchiature assiemate per cantiere (ASC), soggetti alla norma CEI EN 60439-4
+(CEI 17-13/4);
+–  quadri di distribuzione per installazioni fisse per uso domestico e similare (CEI 23-
+51).
+In funzione della segregazione delle parti interne i quadri possono assumere una delle
+seguenti quattro forme (Fig. X.11.16):
+–  forma 1 in cui non vi è nessun elemento di separazione;
+–  forma 2 quando le sbarre di collegamento sono separate dalle unità funzionali;
+MT
+Id
+
+[PAG 1056]
+X-206
+  IMPIANTI ELETTRICI 
+–  forma 3 se vi è la separazione delle sbarre dalle unità funzionali e di tutte le unità
+l'una dall'altra, con l'eccezione dei terminali di uscita;
+–  forma 4 se sono separati anche i terminali di uscita.
+Fig. X.11.16   Separazione delle parti interne di un quadro elettrico.
+In base alla forma dell'involucro esterno vengono distinti i quadri ad armadio (Fig.
+X.11.17), i quadri a parete, esterni o incassati (Fig. X.11.18) e i quadri a leggio (Fig. X.11.19).
+Fig. X.11.17   Quadri ad armadio, senza e con porta frontale.
+11.6  Baricentro elettrico di un impianto
+Il baricentro elettrico di un impianto costituito da carichi di potenza apparente S1,
+S2 … Sn è, rispetto a un sistema di assi cartesiani (Fig. X.11.20, nel caso di tre carichi), il
+punto individuato dalle coordinate (xG, yG) di equazioni:
+Fig. X.11.18   Quadri a parete.
+Fig. X.11.19   Quadro a leggio.
+forma 1
+forma 2
+forma 3
+forma 4
+
+[PAG 1057]
+IMPIANTI  ELETTRICI                                               X-207
+(X.11.3)
+(X.11.4)
+Fig. X.11.20   Baricentro elettrico.
+Se tutti i carichi sono dello stesso tipo (monofase o trifase) e alimentati alla stessa ten-
+sione, le coordinate del baricentro elettrico si possono calcolare in funzione delle correnti
+assorbite, con le relazioni:
+(X.11.5)
+(X.11.6)
+Il baricentro elettrico è il punto in cui si può supporre concentrata tutta la potenza elet-
+trica dell'impianto ed è quello in cui risulta più conveniente installare la cabina di trasfor-
+mazione (quando è possibile) o il quadro di distribuzione, in modo da ottimizzare le
+distanze dai carichi. Nel caso di due soli carichi il baricentro si trova sempre sulla loro
+congiungente, a distanza minore dal carico di potenza maggiore.
+Esempio 1
+È facile verificare, per esempio, che il baricentro elettrico di due carichi distanti tra
+loro 100 m, che assorbono le correnti I1 = 400 A e I2 = 100 A si trova a 20 m di distanza
+dal primo carico.
+11.7  Distribuzione in media tensione
+Nel caso di impianti privati la distribuzione in media tensione riguarda l'alimentazione
+con linee MT delle cabine di trasformazione MT/BT presenti nell'impianto. Il problema si
+xG
+S1x1
+S2x2
+
+Snxn
++
++
++
+S1
+S2
+
+Sn
++
++
++
+---------------------------------------------------------------
+=
+yG
+S1y1
+S2y2
+
+Snyn
++
++
++
+S1
+S2
+
+Sn
++
++
++
+---------------------------------------------------------------
+=
+S1
+S2
+S3
+O1
+O2
+O3
+x1
+x2
+x3
+xG
+G
+yG
+y1
+y2
+y3
+y
+x
+O
+xG
+I1x1
+I2x2
+
+Inxn
++
++
++
+I1
+I2
+
+In
++
++
++
+------------------------------------------------------------
+=
+yG
+I1y1
+I2y2
+
+Inyn
++
++
++
+I1
+I2
+
+In
++
++
++
+------------------------------------------------------------
+=
+
+[PAG 1058]
+X-208
+  IMPIANTI ELETTRICI 
+pone quando viene effettuata la distribuzione a centri di carico, ossia quando vengono
+installate più cabine poste in diversi punti dell'impianto, ognuna alimentante, con la pro-
+pria rete di distribuzione BT, un certo gruppo di carichi. Quando, invece, la distribuzione
+MT/BT viene concentrata in un'unica cabina si parla di distribuzione centralizzata.
+La scelta tra i due diversi sistemi è condizionata, principalmente, dal valore della
+potenza installata, dall'estensione della zona di ubicazione dei carichi, dalle esigenze di
+continuità di servizio e dal costo dell'impianto.
+Distribuzione a centri di carico con rete MT radiale
+È rappresentata nella Fig. X.11.21. I vari centri di carico (cabine) e gli eventuali utiliz-
+zatori MT sono alimentati radialmente dalle sbarre MT poste a valle dell'entra-esci di sta-
+bilimento. Un guasto su una linea MT esclude il relativo centro di carico e tutta la zona
+servita dallo stesso.
+Fig. X.11.21   Distribuzione a centri di carico con rete MT radiale.
+Distribuzione a centri di carico con rete MT ad anello
+È rappresentata nella Fig. X.11.22. I vari centri di carico (cabine) e gli eventuali utiliz-
+zatori MT sono alimentati dalle sbarre MT mediante una linea ad anello. Il vantaggio
+rispetto allo schema radiale è quello di poter alimentare i vari centri di carico anche in
+presenza di un guasto su un tratto dell'anello MT, manovrando in modo opportuno i sezio-
+natori e gli interruttori alla partenza dell'anello (Fig. X.11.23).
+M
+entra - esci di
+agli altri centri
+di carico
+centro
+di carico
+stabilimento
+
+[PAG 1059]
+IMPIANTI  ELETTRICI                                               X-209
+Fig. X.11.22   Distribuzione a centri di carico con rete MT ad anello.
+Fig. X.11.23   Configurazione del sistema MT per un guasto nel tratto compreso tra le
+cabine A e B.
+entra - esci di
+altro centro
+di carico
+stabilimento
+altro centro
+di carico
+sbarre MT
+anello MT
+centro
+di carico
+centro
+di carico
+con relativo
+entra - esci
+A
+B
+alla cabina A
+alla cabina B
+
+[PAG 1060]
+X-210
+  IMPIANTI ELETTRICI 
+11.8  Distribuzione in bassa tensione
+Per gli impianti privati la rete di distribuzione BT serve per l'alimentazione delle
+utenze, monofasi e trifasi, funzionanti a 230/400 V. Essa si sviluppa a partire dal conta-
+tore per gli impianti alimentati dalla rete pubblica in bassa tensione e dai quadri BT di
+cabina per gli impianti dotati di cabina propria. I sistemi maggiormente utilizzati sono
+quello TT nel primo caso e TN-S nel secondo, entrambi a cinque fili (L1, L1, L3, N, PE).
+Fig. X.11.24   Distribuzione radiale.
+Fig. X.11.25   Distribuzione dorsale.
+Fig. X.11.26   Distribuzione mista.
+1
+2
+3
+servizi centralizzati
+L1
+L2
+L3
+luce scale
+ascensore
+centrale
+idrica
+centrale termica
