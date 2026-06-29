@@ -3,12 +3,12 @@ name: scraping-siti
 on:
   schedule:
     - cron: "0 23 * * 0"   # Ogni domenica alle 23:00 UTC
-  workflow_dispatch:         # Avvio manuale
+  workflow_dispatch:
 
 jobs:
   scraping:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 90
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -18,9 +18,13 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Run scraping
+      - name: Run scraping Zamnesia + RQS
         env:
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
         run: python .github/scripts/scraping_siti.py
 
+      - name: Fusione testi per categoria
+        env:
+          GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+        run: python .github/scripts/fusione_siti.py
