@@ -1,0 +1,1395 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 96/116 ===
+Chars: 45,000 | Offset: 4,196,994
+
+
+
+[PAG 1902]
+XIX-30
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Fig. XIX.2.2  Diverse esecuzioni di apparecchi per installazioni civili. 
+Negli impianti elettrici civili si trovano in genere trasformatori per campanelli, per 
+apparecchi di illuminazione e per rasoi. Tranne l’ultimo, gli altri servono per alimentare 
+apparecchi a bassissima tensione ( 50 V).     
+Gli apparecchi di derivazione sono dispositivi che permettono la realizzazione di col-
+legamenti tra i vari apparecchi utilizzatori e la linea di alimentazione (senza dover utiliz-
+zare attrezzi particolari) mediante la semplice inserzione di una spina in una presa. Le 
+prese e le spine utilizzate negli impianti elettrici civili possono essere sottoposte ad una 
+tensione nominale massima di 380 V e sopportare una corrente nominale massima di 25 A.
+Gli apparecchi di protezione utilizzati negli impianti civili sono di due tipi. 
+–  Interruttori automatici (magnetotermici) che hanno la funzione di proteggere i carichi 
+presenti (elettrodomestici in particolare) dai sovraccarichi e dai cortocircuiti.
+–  Interruttori differenziali che hanno la funzione primaria di proteggere gli impianti da 
+contatti accidentali (formatisi tra le parti in tensione e la massa) e la funzione secondaria 
+di proteggere le persone contro i contatti diretti e indiretti.  
+2.1  Montante
+Il montante viene definito dalle norme come quel tronco di conduttura a percorso 
+generalmente verticale, che mette in collegamento il contatore dell’Ente distributore 
+(punto di consegna dell’energia elettrica) con il quadro di distribuzione (centralino) 
+all’interno dell’abitazione; la sua estensione si snoda quindi tra il punto di consegna e il 
+centralino. Ricordando che le norme 64-8/5 limitano al 4% il valore massimo della caduta 
+di tensione tra il punto di consegna e un qualsiasi punto dell’impianto utilizzatore, il 
+dimensionamento del cavo della colonna montante deve essere eseguito considerando la 
+potenza da trasportare e quindi la corrente di impiego, in modo da non superare la portata 
+termica dei cavi, e la stessa caduta di tensione, quest’ultima in modo particolare con linee 
+montanti di lunghezza superiore ai 15 ÷ 20 m.
+A titolo di esempio si raffrontino in Tab. XIX.2.1 i dati essenziali per il dimensiona-
+mento delle linee montanti, ammettendo una caduta di tensione sul montante pari al 1,5% 
+nelle situazioni peggiori e all’interno dell’appartamento una c.d.t. pari al 2,5%.
+Anche il montante, in quanto parte dell’impianto utilizzatore dell’utente, deve essere 
+protetto dalle sovracorrenti. 
+a)
+b)
+c)
+d)
+pressofuso
+con fissaggio dal retro
+Apparecchio modulare
+Placca in metallo
+Supporto isolante
+in policarbonato
+antiurto
+
+[PAG 1903]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-31
+Per i cortocircuiti è possibile proteggerlo con lo stesso limitatore di corrente dell’Ente 
+di distribuzione, ma solamente se questo è accessibile all’utente e se il montante è stato 
+realizzato in modo da rendere minimo il rischio del corto circuito. In questi casi, la sua 
+protezione contro i sovraccarichi viene effettuata mediante l’interruttore automatico gene-
+rale posto all’interno del centralino dell’appartamento, avente una corrente nominale di 
+16 A per potenze contrattuali di 3 kW o di 32 A per potenze di 6 kW.
+Negli ultimi anni, per gli impianti nuovi, è frequente assistere all’installazione di un 
+altro interruttore automatico, con la stessa portata di quello presente nel centralino, alla 
+base del montante. Esso si rende necessario per proteggere contro i sovraccarichi la parte 
+del montante posta a monte di una eventuale derivazione (fatta sullo stesso montante) che 
+porta l’alimentazione ai circuiti elettrici del garage e della cantina. 
+Nella progettazione del montante si possono considerare modalità diverse di esecuzione:
+–  si possono utilizzare cavi unipolari o multipolari,
+–  il conduttore di protezione può essere singolo o comune.
+Se viene impiegata una tubazione per ogni montante e se il conduttore di protezione è 
+singolo, si possono utilizzare cavi unipolari per i conduttori di fase, neutro e di prote-
+zione, oppure un cavo tripolare, inseriti in tubi separati per ogni montante.
+Se viene impiegata una tubazione per ogni montante e se il conduttore di protezione è 
+comune, si possono utilizzare cavi unipolari per i conduttori di fase e neutro, o un cavo 
+bipolare, inseriti in tubi separati per ogni montante. Il conduttore di protezione comune 
+deve essere inserito in tubo e cassette autonomi.
+Se viene impiegata una tubazione comune per tutti i montanti e se il conduttore di pro-
+tezione è singolo, si devono obbligatoriamente utilizzare cavi tripolari.
+Se viene impiegata una tubazione comune per tutti i montanti e se il conduttore di pro-
+tezione è anch’esso comune, si devono utilizzare esclusivamente cavi bipolari e il condut-
+tore di protezione comune deve essere inserito in tubo e cassette autonomi.
+La sola eccezione nell’impiego di cavi unipolari in canali comuni è tollerata quando 
+sono presenti specifici locali per contatori, per il solo tratto che va dai contatori all’inizio 
+della colonna montante e per lunghezze non superiori a 3 m.
+Infine i singoli montanti porteranno una targhetta fascettata, in corrispondenza almeno 
+del loro inizio e della loro fine, che identifichi in modo inequivocabile il numero 
+dell’appartamento e il relativo piano.
+Tab. XIX.2.1  Sezione dei montanti di utenze monofasi
+Potenza max impegnata 
+[kW]
+Lunghezza max L del 
+montante [m]
+Sezione del cavo [mm2]
+3
+L   18
+  4
+18 <  L   27
+  6
+27 <  L   45
+10
+45 <  L   71
+16
+6
+L   22
+10
+22 <  L   35
+16
+35 <  L   56
+25
+
+[PAG 1904]
+XIX-32
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+2.2  Cavi
+I cavi sono gli elementi che determinano il collegamento elettrico tra i vari apparecchi 
+che compongono un impianto elettrico.
+A livello costruttivo il cavo elettrico può essere un insieme di conduttori vicini ma 
+isolati tra loro, oppure un unico conduttore isolato. In ogni caso il cavo è costituito da 
+alcune parti che rimangono comuni in gran parte delle sue diverse versioni e cioè: 
+l’anima, l’isolante, il materiale di riempimento e lo schermo. Un cavo elettrico è defini-
+bile come un conduttore, o un insieme riunito di conduttori, uniformemente isolato che si 
+sviluppa in lunghezza e che può avere uno o più rivestimenti di protezione. Il conduttore
+viene definito a sua volta come un filo o una corda di rame o di alluminio destinato a con-
+durre una corrente elettrica. L’anima invece rappresenta una parte del cavo elettrico e 
+viene definita come un conduttore con il proprio isolante.
+I cavi si possono classificazione in vari modi, a seconda dell’elemento specifico che si 
+prende in esame.
+Se è il valore della tensione di esercizio l’elemento sostanziale, essi si classificano in:
+–  cavi per alta tensione, impiegati nella terza categoria dei sistemi di distribuzione;
+–  cavi per media tensione, usati nella seconda categoria dei sistemi di distribuzione;
+–  cavi per bassa tensione, utilizzati nelle categorie zero e prima dei sistemi di distribu-
+zione.
+Se la distinzione viene effettuata considerando il numero delle anime che compon-
+gono il cavo, quest’ultimo può essere unipolare, bipolare, tripolare, multipolare.
+Una terza discriminazione viene operata considerando se è presente oppure no il con-
+duttore di protezione per il collegamento a terra.
+Una quarta distinzione viene fatta a seconda che il cavo sia armonizzato oppure no; se 
+il cavo è armonizzato esso ha caratteristiche corrispondenti alle direttive CENELEC e 
+quindi ha un riconoscimento europeo, altrimenti fa parte di quell’insieme di cavi che 
+seguono solamente le direttive nazionali.
+Una quinta classificazione dei cavi prende in esame il tipo di isolante che viene utilizzato.
+Infine, in relazione al loro comportamento al fuoco, i cavi si possono distinguere in:
+–  Senza alcun requisito particolare di comportamento al fuoco.
+–  Non propaganti la fiamma; vengono denominati anche cavi autoestinguenti e seguono 
+le norme CEI 20-35 (prova di non propagazione della fiamma sul singolo cavo verticale). 
+Da considerare che i cavi rientranti in questa categoria non propagano il fuoco e si autoe-
+stinguono a breve distanza solamente se sono presi singolarmente (è una caratteristica 
+cioè che garantisce il singolo cavo); nella condizione di raggruppamento in fasci, essi pos-
+sono tuttavia divenire veicolo pericoloso di propagazione dell’incendio.
+–  Non propaganti l’incendio; sono cavi che devono superare una prova molto più restrit-
+tiva della precedente, prevista dalle norme CEI 20-22 ed eseguibile presso il CESI.
+–  Resistenti al fuoco; sono cavi che superano la prova di resistenza al fuoco prevista 
+dalle norme CEI 20-35. Questo tipo di cavi ha la proprietà di assicurare il funzionamento 
+per un certo periodo di tempo durante e dopo l’incendio. Essi possono al tempo stesso 
+essere anche non propaganti la fiamma e non propaganti l’incendio.
+I colori distintivi delle anime dei cavi isolati in gomma o polivinilcloruro per energia 
+o per comandi e segnalazioni, destinati in sistemi con tensioni fino a 0,6/1 kV, devono 
+seguire le indicazioni redatte nella tabella UNEL 00722, in particolare:
+–  Il colore giallo/verde è riservato esclusivamente all’isolante del conduttore di prote-
+zione contro le tensioni di contatto nei circuiti comportanti tale conduttore, circuiti per i 
+quali devono essere impiegati cavi equipaggiati con conduttore di protezione. 
+–  Il colore blu chiaro è di norma riservato all’isolante del conduttore di neutro.
+
+[PAG 1905]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-33
+Nei cavi non comportanti detto conduttore neutro o nei quali esso è identificato per la sua 
+forma (per esempio conduttore concentrico) l’anima di colore blu chiaro può essere utiliz-
+zata per altre funzioni, escluso quella di conduttore di protezione.
+–  I colori nero, marrone e grigio sono riferiti all’isolante dei conduttori di fase o equiva-
+lenti, esclusi i conduttori di protezione e di neutro.
+–  Se i cavi sono unipolari, senza guaina di protezione e vengono utilizzati all’interno di 
+quadri, sono consentiti i colori nero, marrone, grigio, blu chiaro, arancione, rosso, rosa, 
+turchese, violetto e bianco.
+Per identificare un cavo le norme hanno stabilito delle sigle ben precise con lo scopo 
+di informare l’installatore in maniera inequivocabile circa la configurazione del cavo, le 
+sue caratteristiche fondamentali e la descrizione dei materiali che lo compongono. Queste 
+sigle sono contenute nelle norme CEI 20-27, in linea con i dettami del documento di 
+armonizzazione CENELEC HD 361, e nella tabella CEI UNEL 35011. Occorre precisare 
+che il sistema di designazione secondo le norme CEI 20-27 è attualmente obbligatorio 
+solamente per i cavi armonizzati, mentre quello secondo la tabella CEI UNEL 35011 è in 
+uso per i cavi nazionali non armonizzati.
+Le norme CEI a cui fare riferimento riguardo alle prove sui cavi e alla loro siglatura 
+sono le seguenti:
+–  CEI 20-22/0 del 2006 - Prove d’incendio su cavi elettrici Parte 0: Prova di non pro-
+pagazione dell’incendio - Generalità.
+–  CEI 20-22/2 del 2006 - Prove di incendio su cavi elettrici Parte 2: Prova di non pro-
+pagazione dell’incendio.
+–  CEI 20-22/3;Ec del 2002 - Metodi di prova comuni per cavi in condizioni di incen-
+dio - Prova di propagazione della fiamma verticale di fili o cavi montati verticalmente a 
+fascio.
+–  CEI 20-22/3-0 del 2001 - Metodi di prova comuni per cavi in condizioni di incendio 
+- Prova di propagazione della fiamma verticale di fili o cavi montati verticalmente a 
+fascio Parte 1: Apparecchiatura.
+–  CEI 20-22/3-1 del 2002 - Metodi di prova comuni per cavi in condizioni di incendio 
+- Prova di propagazione della fiamma verticale di fili o cavi montati verticalmente a 
+fascio Parte 2-1: Procedure: Categoria A F/R.
+–  CEI 20-22/3-2 del 2002 - Metodi di prova comuni per cavi in condizioni di incendio 
+- Prova di propagazione della fiamma verticale di fili o cavi montati verticalmente a 
+fascio Parte 2-2: Procedure: Categoria A.
+–  CEI 20-22/3-3 del 2002 - Metodi di prova comuni per cavi in condizioni di incendio 
+- Prova di propagazione della fiamma verticale di fili o cavi montati verticalmente a 
+fascio Parte 2-3: Procedure: Categoria B.
+–  CEI 20-22/3-4 del 2002 - Metodi di prova comuni per cavi in condizioni di incendio 
+- Prova di propagazione della fiamma verticale di fili o cavi montati verticalmente a 
+fascio Parte 2-4: Procedure: Categoria C.
+–  CEI 20-22/3-5 del 2002 - Metodi di prova comuni per cavi in condizioni di incendio 
+- Prova di propagazione della fiamma verticale di fili o cavi montati verticalmente a 
+fascio Parte 2-5: Procedure: Cavi di piccole dimensioni - Categoria D.
+–  CEI 20-22/4 del 1997 - Prove d’incendio su cavi elettrici Parte 4: Metodo per la 
+misura dell’indice di ossigeno per i componenti non metallici.
+–  CEI 20-22/5 del 1997 - Prove d’incendio su cavi elettrici Parte 5: Metodo per la 
+misura dell’indice di temperatura per i componenti non metallici.
+–  CEI 20-27 del 2000 - Cavi per energia e per segnalamento-Sistema di designazione.
+–  CEI 20-27;V1 del 2001 - Cavi per energia e segnalamento-Sistema di designazione.
+–  CEI 20-27;V2 del 2007 - Cavi per energia e segnalamento-Sistema di designazione.
+
+[PAG 1906]
+XIX-34
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+–  CEI 20-35/1-1 del 2006 - Prove su cavi elettrici e ottici in condizioni d’incendio 
+Parte 1-1: Prova per la propagazione verticale della fiamma su un singolo conduttore o 
+cavo isolato - Apparecchiatura.
+–  CEI 20-35/1-2 del 2006 - Prove su cavi elettrici e ottici in condizioni d’incendio 
+Parte 1-2: Prova per la propagazione verticale della fiamma su un singolo conduttore o 
+cavo isolato - Procedura per la fiamma di 1 kW premiscelata.
+–  CEI 20-35/1-3 del 2006 - Prove su cavi elettrici e ottici in condizioni d’incendio 
+Parte 1-3: Prova per la propagazione verticale della fiamma su un singolo conduttore o 
+cavo isolato - Procedura per la determinazione di particelle/gocce incandescenti.
+–  CEI 20-35/2-1 del 2006 - Prove su cavi elettrici e ottici in condizioni d’incendio 
+Parte 2-1: Prova per la propagazione verticale della fiamma su un piccolo singolo condut-
+tore o cavo isolato - Apparecchiatura.
+–  CEI 20-35/2-2 del 2006 - Prove su cavi elettrici e ottici in condizioni d’incendio 
+Parte 2-2: Prova per la propagazione verticale della fiamma su un piccolo singolo condut-
+tore o cavo isolato - Procedura per la fiamma diffusa.
+Nella sezione X Impianti elettrici vengono trattate in modo più approfondito le carat-
+teristiche dei cavi per quanto concerne la siglatura e il loro impiego.
+2.3  Cavi a fibre ottiche
+Negli ultimi anni, con la straordinaria evoluzione della moderna tecnologia, le applica-
+zioni delle fibre ottiche nel campo delle comunicazioni hanno raggiunto risultati notevoli, 
+a tal punto che i cavi ottici ora competono sia tecnicamente che economicamente con i con-
+venzionali cavi in rame. Le fibre ottiche quindi rappresentano oggi l’elemento rivoluzionario 
+nel concetto di trasmissione delle informazioni: cioè l’uso della luce per trasmettere dati.
+Si possono impiegare cavi a fibra ottica sia per la trasmissione di dati che per le tele-
+comunicazioni; in entrambi i casi l’elemento principale è costituito da un filamento di 
+vetro o di altro materiale molto sottile e con elevata trasparenza che costituisce la via di 
+transito delle radiazioni luminose di lunghezza d’onda compresa nel campo della luce 
+visibile e dell’infrarosso.
+Le fibre ottiche vengono chiamate anche guide di luce perché possiedono la caratteri-
+stica di poter guidare i raggi luminosi anche in percorsi curvi.
+Un sistema di trasmissione con fibre ottiche, nella 
+sua essenza, si può immaginare come costituito da una 
+sorgente di segnali digitali (a titolo di curiosità si ricorda 
+che la trasmissione analogica è generalmente utilizzata 
+da emittenti TV che coprono distanze molto brevi), un 
+convertitore trasmettitore elettro-ottico, una linea di cavi 
+a fibre ottiche, una linea ripetitrice per la rigenerazione 
+dei segnali, un convertitore ricevitore ottico-elettrico, un 
+ricevitore digitale.
+Fig. XIX.2.3  Elementi costituenti una fibra ottica.
+Una fibra ottica è formata da due elementi coassiali denominati core (nucleo) e clad-
+ding (rivestimento o mantello), come è schematizzato nella Fig. XIX.2.3.
+ Il core e il cladding sono costituiti dallo stesso materiale che però presenta indici di 
+rifrazione diversi: maggiore nel primo e minore nel secondo. La propagazione di un rag-
+gio di luce nelle fibre ottiche segue le leggi della rifrazione e della riflessione; tali leggi 
+regolano i fenomeni di propagazione di un'onda luminosa attraverso la superficie di sepa-
+razione di due materiali trasparenti, ma con indici di rifrazione diversi. Il raggio di luce, 
+perciò, si riflette ripetutamente sulla superficie che divide il core dal cladding e, a seconda 
+dello specifico angolo sotto cui il fenomeno avviene, si possono definire diversi modi di 
+Core
+Cladding
+
+[PAG 1907]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-35
+propagazione (o profili dell’indice di rifrazione) e diversi percorsi della luce.
+Si possono avere, quindi, profili:
+–  monomodo (single mode), 
+–  multimodo:
+- a gradino (step index), 
+- graduato (graded index).
+La Fig. XIX.2.4 indica le diverse modalità di propagazione della luce nelle fibre otti-
+che con i relativi profili. La differenza sostanziale tra i due principali tipi di profilo risiede 
+nel fatto che nelle fibre monomodo si propaga un solo raggio, mentre in quelle multimodo 
+si propagano più raggi. Nelle fibre multimodo a gradino è presente, quando l’indice del 
+core è costante, il fenomeno della dispersione modale, a causa del quale si riceve un 
+impulso di durata maggiore di quella con cui era stato trasmesso. Il rimedio, in questo 
+caso, consiste nell’utilizzare una fibra con indice di rifrazione del core variabile (mag-
+giore nel centro e minore nella periferia), in modo da effettuare continue deviazioni. È 
+questa in sostanza la funzione svolta dalle fibre multimodo graduate.
+I principali elementi caratterizzanti un cavo a fibra ottica sono:
+–  la distanza di trasmissione, 
+–  la capacità, 
+–  il tipo di posa.
+Fig. XIX.2.4  Modi di propagazione della luce nelle fibre ottiche e relativi profili.
+Mentre i primi due fattori identificano le caratteristiche ottiche, il terzo regola le carat-
+teristiche meccaniche. Infatti un primo importante parametro ottico che si riscontra nei mate-
+riali trasparenti è l’attenuazione, cioè la perdita di energia luminosa in funzione della 
+distanza. In relazione a questo elemento, sicuramente negativo per le fibre ottiche, sono state 
+individuate tre lunghezze d’onda ottimali, chiamate finestre di utilizzo, per le quali si riscon-
+tra un valore di attenuazione molto basso. Esse sono state definite semplicemente come:
+–  Prima Finestra (First Window), 
+–  Seconda Finestra (Second Window), 
+–  Terza Finestra (Third Window),
+aventi valori di lunghezza d’onda rispettivamente di 850, 1300 e 1550 nm.
+Una seconda grandezza ottica importante è rappresentata dalla larghezza di banda che 
+indica la capacità di trasmissione della fibra. Questa grandezza è dipendente però da più 
+fattori, riassumibili in:
+–  modo di propagazione, 
+Graded index
+Step index
+Single mode
+
+[PAG 1908]
+XIX-36
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+–  grado di accuratezza di fabbricazione, 
+–  dimensioni fisiche della fibra.
+Risulta intuitivo che tanto più elevata è la larghezza di banda e tante più informazioni 
+è possibile trasmettere. Le fibre ottiche possono trasmettere teoricamente in più campi di 
+lunghezze d’onda, ma in pratica il loro impiego risulta ottimale in uno solo di essi. La 
+Tab. XIX.2.2 riassume le caratteristiche delle fibre monomodo e multimodo.
+In relazione alle sopraindicate caratteristiche è opportuno considerare che le fibre 
+multimodo a gradino (step index) sono convenienti per brevi distanze, mentre le altre due 
+sono ideali per lunghe distanze in quanto caratterizzate da perdite molto basse e da 
+un’ampia larghezza spettrale.
+I cavi a fibre ottiche hanno configurazioni diverse a seconda della specifica applica-
+zione; oltre ai cavetti monofibra e bifibra, vengono attualmente impiegati in modo mas-
+siccio cavetti con più fibre singole o con più fibre riunite in ciascun canale.
+Quest’ultima tecnica di assemblaggio, denominata anche cordata, viene impiegata nei 
+cavi con valori di capacità superiori a 18; le fibre con la loro protezione vengono intrec-
+ciate all’interno di una guaina concentrica.
+In genere ogni gruppo è composto da 10 o 12 fibre, mentre un elemento appropriato 
+(di acciaio, vetro, plastica rinforzata, o di filati altamente resistenti) viene poi aggiunto 
+come struttura portante nella parte centrale del cavo o nella parte periferica sotto la 
+guaina. In fase di rivestimento si adottano due tecniche diverse:
+1)  Inguainamento di tipo lasco (loose); nella versione base un rivestimento seconda-
+rio di polipropilene (o equivalente) viene applicato attorno ad una singola fibra con dia-
+metri risultanti da 1 a 2 mm circa. I tubi così ottenuti vengono riempiti con materiali 
+Tab. XIX.2.2  Caratteristiche tecniche delle fibre monomodo e multimodo
+Caratteristiche tecniche
+Tipo di fibra
+Multimodo
+Monomodo
+Diametro del nucleo 
+[m]
+50 ± 3
+Diametro del mantello
+[m]
+125 ± 3
+125 ± 3
+Diametro del campo modale
+[m]
+10 ± 1
+Apertura numerica
+0,2 ± 0,02
+Lunghezza onda di taglio
+[nm]
+1100 ÷ 1280
+Attenuazione max a:
+850 nm
+[dB/km]
+2,4 ÷ 3,0
+Attenuazione max a:
+1300 nm
+[dB/km]
+0,6 ÷ 1,0
+0,38 ÷ 0,48
+Attenuazione max a:
+1550 nm
+[dB/km]
+0,3
+Larghezza di banda min. a:
+850 nm
+[MHz · km]
+200 ÷ 1000
+Larghezza di banda min. a:
+1300 nm
+[MHz · km]
+400 ÷ 1600
+Dispersione cromatica max. a: 850 nm
+[ps/(nm · km)]
+100
+Dispersione cromatica max. a: 1285 ÷ 1330 nm
+[ps/(nm · km)]
+6
+3,5
+Dispersione cromatica max. a: 1550 nm
+[ps/(nm · km)]
+20
+
+[PAG 1909]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-37
+tixotropici. Questo tipo di cavi presenta eccellenti proprietà meccaniche che garantiscono 
+la loro totale insensibilità alle operazioni di messa in opera.
+Nel tipo a singola fibra ogni tubetto lasco viene cordato intorno a un sostegno cen-
+trale. Nel tipo a piccolo fascio (bundle), invece, più fibre (da 4 a 10) con guaina propria 
+sono raggruppate insieme.
+Una seconda guaina viene poi applicata, estendendo il diametro di altri 3 mm. Il fascio 
+ottenuto può essere tamponato. Più fasci possono essere assemblati insieme e cordati 
+intorno a un sostegno centrale, associando quindi alle notevoli proprietà meccaniche 
+un’alta densità di fibre e quindi espandendo enormemente la capacità del cavo risultante. 
+In sostanza questa seconda versione di cavo si differenzia dalla prima solamente per avere 
+più fibre raggruppate all’interno di ciascun tubetto lasco.
+Da ricordare che le fibre vengono distinte colorando i tubetti che le contengono con 
+un sistema pilota - direzionale; nel caso di tubetti contenenti più fibre, le fibre nello stesso 
+tubetto hanno differenti colori. Le Figg. XIX.2.5 e XIX.2.6 rappresentano la configura-
+zione classica e le varianti di questi cavi.
+Fig. XIX.2.5  Sezioni di cavo a singole fibre ottiche con rivestimento lasco.
+ I cavi a fibre ottiche con inguainamento lasco si possono trovare nelle versioni 
+seguenti:
+–  cavo completamente dielettrico, 
+–  con il nucleo del cavo dielettrico, 
+–  di cavo metallico.
+Le Tabb. XIX.2.3 e XIX.2.4 riassumono le strutture standard nelle versioni dielettrica e 
+con nucleo dielettrico, adottate per ottimizzare la densità del cavo.
+2)  Inguainamento di tipo aderente (tight); nella versione base la fibra viene rinforzata 
+da un rivestimento di filati aramidici, cui segue una guaina esterna di poliammide (o 
+equivalente). Il diametro che ne risulta è molto piccolo. I cavi a fibre ottiche con rivesti-
+mento aderente possono presentare aspetti diversi a seconda del tipo di guaina, dell’appli-
+cazione e delle condizioni di lavoro richieste.
+La fibra può essere di silice o di vetro. I cavi con fibra in silice vengono utilizzati per 
+le lunghe distanze, mentre quelli con fibre in vetro sono usati per brevi distanze.
+Guaina esterna
+Filati
+Sostegno centrale
+Fasciatura
+Tubo lasco
+Riempimento
+Fibra ottica
+Guaina interna
+Configurazione tipica
+Nastro acciaio corrugato
+Guaina esterna
+Sostegno centrale
+Fasciatura
+Tubo lasco
+Riempimento
+Fibra ottica
+Guaina interna
+Nastro acciaio
+Guaina esterna
+Sostegno centrale
+Fasciatura
+Tubo lasco
+Riempimento
+Fibra ottica
+Guaina interna
+Configurazioni particolari
+
+[PAG 1910]
+XIX-38
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Fig. XIX.2.6  Sezioni di cavo a piccolo fascio con rivestimento lasco.
+ 
+Tab. XIX.2.3  Caratteristiche tecniche dei cavi con rivestimento lasco
+Caratteristiche tecniche
+Cavo a singole fibre
+Dielettrico
+Con nucleo dielettrico
+Numero di fibre ottiche 
+2 ÷ 6
+8
+10
+12
+2 ÷ 6
+8
+10
+12
+Diametro nominale esterno [mm] 11,7
+13
+13,8
+14,7
+12,2
+13,6
+14,3
+15,2
+Peso indicativo [kg/km]
+115
+150
+171
+201
+134
+173
+195
+227
+Sforzo max. di trazione [kg]
+300
+392
+459
+566
+252
+326
+381
+471
+Minimo raggio di curvatura [mm] 131
+145
+153
+162
+137
+151
+158
+168
+Lunghezza standard, pezzatura
+1050
+1050 1050
+1050
+1050
+1050
+1050
+1050
+Caratteristiche tecniche
+Cavo a piccolo fascio
+Dielettrico
+Con nucleo dielettrico
+Numero di fibre ottiche 
+24
+36
+48
+24
+36
+48
+Diametro nominale esterno [mm] 12,5
+13,9
+16,4
+13,1
+14,5
+16,9
+Peso indicativo [kg/km]
+132
+173
+254
+153
+194
+277
+Sforzo max. di trazione [kg]
+213
+303
+566
+205
+294
+520
+Minimo raggio di curvatura [mm] 140
+155
+180
+145
+160
+186
+Lunghezza standard, pezzatura
+1050
+1050
+1050
+1050
+1050
+1050
+Guaina esterna
+Filati
+Sostegno centrale
+Fasciatura
+Tubo lasco
+Riempimento
+Fibre ottiche
+Guaina interna
+Configurazione tipica
+Configurazioni particolari
+Nastro acciaio corrugato
+Guaina esterna
+Sostegno centrale
+Fasciatura
+Tubo lasco
+Riempimento
+Fibre ottiche
+Guaina interna
+Nastro acciaio
+Guaina esterna
+Sostegno centrale
+Fasciatura
+Tubo lasco
+Riempimento
+Fibre ottiche
+Guaina interna
+
+[PAG 1911]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-39
+I cavi o corde a singola fibra vengono impiegati per posa interna su passerella o in 
+tubazioni, in collegamenti tra apparecchi o equipaggiamenti, tra dispositivi in edifici, 
+navi, aerei ecc. e come terminazioni di apparati. Quando è necessario viene utilizzato 
+anche un cavetto bifibra piatto o tondo. Nella versione piatta le due singole corde sono 
+strutturate a forma di “8”.
+La Fig. XIX.2.7 schematizza la sezione 
+tipica di questi cavi, mentre la Tab. XIX.2.4
+ne riporta i dati tecnici. È possibile trovare 
+anche cavi metallici e non metallici, assem-
+blati con singole fibre, e cavi misti compo-
+sti da un numero variabile di fibre ottiche e 
+di coppie isolate in politene. 
+La struttura dei cavi, inoltre, può essere 
+classificata a seconda che l’elemento del 
+supporto centrale sia liscio oppure scana-
+lato; in quest’ultimo caso, le fibre vengono 
+inserite in adeguate cave ricavate sopra un 
+elemento coassiale al supporto. Il diametro 
+degli elementi è circa 7 mm e in ogni sca-
+nalatura vengono inserite 10 o 12 fibre.
+Fig. XIX.2.7  Sezione di cavi con rivestimento aderente.
+In generale per le fibre ottiche vengono utilizzate le seguenti protezioni:
+–  contro l’umidità, una barriera in alluminio politenato; 
+–  per i cavi dielettrici, una doppia guaina plastica; 
+–  un nastro di alluminio poliplaccato termosaldato longitudinalmente alla guaina termo-
+plastica esterna; 
+–  per uso aereo, un elemento di sospensione, incorporato in una guaina di plastica con la 
+forma ad “8”, oppure una struttura concentrica periferica; 
+–  contro la penetrazione dell’acqua, riempimenti con adeguati materiali, come grassi 
+sintetici o silicone.
+Infine occorre tenere presente che per garantire una facile manipolabilità, una mas-
+sima affidabilità di posa e una trasmissione stabile durante l’esercizio, i cavi a fibra ottica 
+devono presentare le seguenti caratteristiche:
+–  assenza di elementi metallici per evitare interferenze elettromagnetiche e folgora-
+zioni; 
+Tab. XIX.2.4  Caratteristiche tecniche dei cavetti con rivestimento aderente
+Caratteristiche tecniche
+Singola fibra
+Bifibra 
+piatto a “8”
+Diametro nominale esterno [mm]
+2,5 ÷ 3
+2,5 ÷ 3   5 ÷ 6
+Peso indicativo [kg/km]
+7 ÷ 8
+14 ÷ 16
+Sforzo max. di trazione [kg]
+30
+60
+Minimo raggio di curvatura [mm]
+20
+20
+Lunghezza standard, pezzatura [m]
+multiplo di 250
+multiplo di 250
+Fibre aramidiche
+Cavo bifibra piatto
+Cavo a singola fibra
+Guaina esterna
+Fibra rivestita
+di nylon
+Guaina esterna
+Fibre aramidiche
+Fibra rivestita
+di nylon
+
+[PAG 1912]
+XIX-40
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+–  assenza di sollecitazioni meccaniche sulle fibre sia durante la posa che l’esercizio, fino 
+ai valori limite di sovraccarico, anche se applicato per periodi prolungati e ciclicamente; 
+–  nucleo tamponato con grassi sintetici per evitare la propagazione dell’acqua lungo il 
+cavo in caso di danneggiamento delle protezioni esterne; 
+–  stabilità dell’attenuazione in un largo intervallo di temperature 30 ÷ +60 °C); 
+–  elevata resistenza alla degradazione atmosferica (esposizione alla luce e alle radia-
+zioni ultraviolette); 
+–  lunghezza elevata delle pezzature per ridurre il numero dei giunti in linea.
+Nei cavi metallici non tamponati sono generalmente inclusi uno o due doppini di rame 
+con isolamento perforato con lo scopo di comandare un eventuale sistema di allarme.
+2.4  Tubi e canali
+I tubi e i canali sono quelle parti di un impianto elettrico che vengono utilizzate come 
+elementi di canalizzazione dei conduttori; possono essere di tipo chiuso o aperto, di 
+sezione circolare o rettangolare o altro profilo, con la finalità di assicurare una affidabile 
+protezione meccanica dei conduttori e dei cavi che contengono. Quando viene richiesto, 
+essi devono fornire anche un adeguato isolamento elettrico.
+La normativa riguardante i tubi protettivi per impianti elettrici e i loro accessori è 
+molto articolata ed è attualmente definita dalle norme:
+–  CEI 23-19 1983 - Canali portacavi in materiale plastico e loro accessori ad uso bat-
+tiscopa.
+–  CEI 23-26 2008 - Diametri esterni dei tubi per installazioni elettriche e filettature 
+per tubi e accessori.
+–  CEI 23-46 del 1997 - Sistemi di canalizzazione per cavi Sistemi di tubi Parte 2-4: 
+Prescrizioni particolari per sistemi di tubi interrati.
+–  CEI 23-46;V1 del 2001 - Sistemi di canalizzazione per cavi Sistemi di tubi Parte 2-
+4: Prescrizioni particolari per sistemi di tubi interrati.
+–  CEI 23-58 del 1997 - Sistemi di canali e di condotti per installazioni elettriche Parte 
+1: Prescrizioni generali.
+–  CEI 23-58;V1 del 1999 - Sistemi di canali e di condotti per installazioni elettriche 
+Parte 1: Prescrizioni generali.
+–  CEI 23-58 del 2006 - Sistemi di canali e di condotti per installazioni elettriche Parte 
+1: Prescrizioni generali.
+–  CEI 23-76 del 2007 - Sistemi di canalizzazioni e accessori per cavi - Sistemi di pas-
+serelle porta cavi a fondo continuo e a traversini.
+–  CEI 23-77 del 2004 - Sistemi di alimentazione a binario elettrificato Parte 1: Pre-
+scrizioni generali.
+–  CEI 23-80 del 2008 - Sistemi di tubi e accessori per installazioni elettriche Parte 1: 
+Prescrizioni generali.
+–  CEI 23-81 del 2005 - Sistemi di tubi e accessori per installazioni elettriche Parte 2-
+1: Prescrizioni particolari per sistemi di tubi rigidi e accessori.
+–  CEI 23-82 del 2005 - Sistemi di tubi e accessori per installazioni elettriche Parte 2-
+2: Prescrizioni particolari per sistemi di tubi pieghevoli e accessori.
+–  CEI 23-83 del 2005 - Sistemi di tubi e accessori per installazioni elettriche Parte 2-
+3: Prescrizioni particolari per sistemi di tubi flessibili e accessori.
+–  CEI 23-93 del 2007 - Sistemi di canali e di condotti per installazioni elettriche Parte 
+2-1: Sistemi di canali e di condotti per montaggio a parete e a soffitto.
+–  CEI 23-104 del 2009 - Sistemi di canali e di condotti per installazioni elettriche 
+Parte 2-2: Prescrizioni particolari per sistemi di canali e di condotti per montaggio sotto-
+pavimento, a filo pavimento o soprapavimento.
+Le norme sopraccitate si applicano ai tubi protettivi rigidi di materiale termoplastico
+
+[PAG 1913]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-41
+(PVC) destinati a ricevere al loro interno cavi nelle installazioni elettriche fisse e agli 
+accessori di tali tubi come manicotti e curve. Tali norme indicano le prescrizioni riguar-
+danti la costruzione, le verifiche e l’installazione. I tubi e gli accessori devono garantire 
+una efficace protezione meccanica ai cavi in essi contenuti e resistere agli sforzi nelle 
+condizioni di trasporto, di immagazzinamento e di installazione.
+In base a quanto dettato dalle norme è possibile reperire tubi: rigidi, pieghevoli, flessi-
+bili, cavidotti. I tubi rigidi, pieghevoli e flessibili possono essere sia metallici che isolati; 
+quelli isolati si possono differenziare a loro volta per essere leggeri, pesanti, filettati, alo-
+gen free, autorinvenenti, spiralati, lisci (liquid tight). I cavidotti invece possono essere 
+solamente isolati del tipo rigido oppure pieghevole (Tab. XIX.2.5).
+I termini usati per designare i vari tipi di tubo ne definiscono le caratteristiche mecca-
+niche o fisiche. Per tubo rigido si intende un tipo di tubo che può essere piegato solamente 
+con l’aiuto di un mezzo meccanico, con o senza trattamenti speciali. Esso, normalmente 
+disponibile nelle esecuzioni leggera, pesante ed extrapesante in relazione ai diversi livelli 
+di resistenza meccanica, viene impiegato nella realizzazione di impianti elettrici a vista ad 
+un’altezza superiore a 2,5 m dal piano di calpestio.
+Le sue dimensioni normalizzate sono riportate nella Tab. XIX.2.6, mentre la sua con-
+formazione fisica viene riportata nella Fig. XIX.2.8a. Il tubo pieghevole viene definito 
+come quel tipo di tubo che può essere piegato a mano con una forza ragionevole ma senza 
+altra assistenza.
+Con gli aggettivi liscio e corrugato vengono definiti quei tubi che presentano un pro-
+filo della sezione longitudinale rispettivamente piano o ondulato; con il termine filettabile
+Tab. XIX.2.5  Tipi di canalizzazioni in tubo
+Tubi rigidi
+Metallici
+Isolanti
+Leggeri
+Pesanti
+Filettabili
+Alogen free
+Tubi pieghevoli
+Metallici
+Isolanti
+Leggeri
+Pesanti
+Autorinvenenti
+Spiralati
+Tubi flessibili
+Metallici
+Isolanti
+Spiralati
+Lisci (liquid tight)
+Cavidotti
+Isolanti
+Rigidi
+Pieghevoli
+
+[PAG 1914]
+XIX-42
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+si identificano i tubi che si possono congiungere con altri elementi mediante filettatura 
+(che può essere realizzata durante la messa in opera).
+Un tubo viene definito autorinvenente quando, al cessare della forza che lo ha defor-
+mato per un breve periodo, è in grado di ripristinare la sua forma originaria.
+Un tubo viene definito flessibile quando può essere piegato a mano con una forza rela-
+tivamente debole e quando è destinato a frequenti piegamenti in uso ordinario. Esso trova 
+impiego normalmente negli impianti elettrici sottotraccia o per posa sotto pavimento e 
+viene fabbricato nelle esecuzioni leggera (identificato con la lettera L) e pesante (identifi-
+cato con la lettera P), con diverso grado di resistenza allo schiacciamento.
+Le sue dimensioni normalizzate sono riportate nella Tab. XIX.2.6, mentre la sua con-
+formazione fisica viene riportata nella Fig. XIX.2.8b.
+Un tubo realizzato esclusivamente in metallo viene, ovviamente, chiamato metallico; un 
+tubo non propagante la fiamma può prendere fuoco se sottoposto all’azione di una fiamma, 
+ma non la propaga e si autoestingue in breve tempo dopo che la fiamma viene rimossa.
+Le caratteristiche generali di un tubo si possono riassumere nel seguente modo:
+Tab. XIX.2.6  Dimensioni per tubi isolanti rigidi e flessibili L e P
+Tubo rigido
+Tubo flessibile
+Dimensioni (ø )
+[mm]
+D [mm]
+d - L 
+[mm]
+d - P 
+[mm]
+D [mm]
+d [mm]
+16
+16
++0 ÷ -0,3
+13,3
+13,0
+16
++0 ÷ -0,3
+10,7
+20
+20
++0 ÷ -0,3
+17,2
+16,9
+20
++0 ÷ -0,3
+14,1
+25
+25
++0 ÷ -0,4
+21,7
+21,4
+25
++0 ÷ -0,4
+18,3
+32
+32
++0 ÷ -0,4
+28,3
+27,8
+32
++0 ÷ -0,4
+24,3
+40
+40
++0 ÷ -0,4
+35,9
+35,4
+40
++0 ÷ -0,4
+31,2
+50
+50
++0 ÷ -0,5
+45,3
+44,3
+50
++0 ÷ -0,5
+39,6
+63
+63
++0 ÷ -0,6
+50,6
+Fig. XIX.2.8  Tubo isolante PVC. 
+D
+d
+a)
+D
+d
+b)
+
+[PAG 1915]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-43
+–  le superfici interne ed esterne non devono danneggiare i cavi specialmente durante la
+loro introduzione ed estrazione;
+–  devono possedere una adeguata resistenza allo schiacciamento e all’urto; la Tab. 
+XIX.2.7 a tale proposito indica i valori della forza di compressione e di energia che pos-
+sono essere sopportati dai diversi tubi;
+–  occorre che possiedano una adeguata resistenza al calore e al fuoco;
+–  per i tubi in metallo che possono venire impiegati, in una installazione elettrica, anche 
+come conduttori equipotenziali o di protezione, occorre avere una buona continuità elettrica;
+–  occorre abbiano buone proprietà isolanti (devono avere un’appropriata tenuta alla ten-
+sione applicata e alla resistenza di isolamento);
+–  è indispensabile una appropriata protezione contro le influenze esterne (penetrazione 
+di corpi solidi o liquidi), una adeguata resistenza alle sostanze corrosive o inquinanti o 
+alla esposizione ai raggi solari.
+Sia i tubi metallici che quelli isolati devono obbligatoriamente essere siglati con un 
+codice che, nel caso dei metallici, indica solamente la loro resistenza meccanica e, nel caso 
+degli isolati, anche la resistenza alla temperatura.
+Inoltre gli stessi tubi possono portare una marcatura addizionale che informa circa altre 
+loro caratteristiche. La Tab. XIX.2.8 riporta la struttura e il significato dei vari codici di 
+marcatura dei tubi.
+Ai tubi si associano generalmente vari accessori, quali:
+–  il manicotto, cioè quell’elemento tubolare ad asse rettilineo che serve per congiungere 
+due tubi e avente un diametro pari a quello dei tubi che deve collegare;
+–  la curva, cioè quell’elemento tubolare ad asse curvilineo che serve per congiungere 
+due tubi e con un diametro uguale a quello dei tubi che deve collegare;
+–  la giunzione a bicchiere, cioè quel tipo di giunzione per ricoprimento, ottenuta 
+mediante l’allargamento a caldo dell’estremità di uno dei tubi;
+–  le clips a scatto, cioè quei dispositivi utilizzati per il fissaggio dei tubi rigidi.
+Un tubo viene designato con un diametro nominale che corrisponde al valore del dia-
+metro esterno.
+In relazione al diametro nominale e al tipo di tubo è possibile individuare, mediante la 
+consultazione di tabelle, quanti cavi è possibile inserire all’interno dei tubi prescelti. La 
+Tab. XIX.2.9, a titolo di esempio, indica quanti cavi è possibile infilare nei tubi flessibili, 
+rigidi di tipo L e di tipo P e filettabili. In ogni caso le norme prescrivono che il diametro 
+interno dei tubi deve essere pari almeno a 1,3 volte il diametro del cerchio circoscritto al 
+fascio dei cavi che essi devono contenere, con un minimo di 10 mm. Inoltre all’interno dei 
+tubi e dei condotti non devono esserci giunzioni o morsetti.
+I canali e i loro accessori fanno riferimento alla già citate norme CEI 23-58, CEI 23-
+76, CEI 23-77 e CEI 23-104.
+Tab. XIX.2.7  Resistenza allo schiacciamento e all’urto dei tubi
+Tubo
+Forza di compressione 
+[N]
+Energia
+[J]
+Molto leggero
+125
+0,5
+Leggero
+320
+1,0
+Medio
+750
+2,0
+Pesante
+1250
+6,0
+Molto pesante
+4000
+20,0
+
+[PAG 1916]
+XIX-44
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+ 
+Tali norme forniscono tutte le prescrizioni per la realizzazione di sistemi di canalizza-
+zioni in materiale plastico isolante, destinati alla posa e alla protezione dei cavi elettrici, 
+nella realizzazione di impianti nell’ambito di sistemi di tensione di categoria 0 (zero) e di 
+categoria I. A tale riguardo si sottolinea che un sistema di canalizzazione è l’insieme del 
+Tab. XIX.2.8  Codici di classificazione della marcatura dei tubi
+CODICE DI MARCATURA 
+OBBLIGATORIO
+Prima cifra
+Resistenza 
+meccanica
+1
+2
+3
+4
+5
+Molto leggero
+Leggero
+Medio
+Pesante
+Molto pesante
+Seconda e 
+terza cifra
+Resistenza 
+alla 
+temperatura
+05
+25
+45
+90
+95
+-5
+-25
+-45
++90
++90 ÷ -25
+CODICE DI MARCATURA ADDIZIONALE
+Prima cifra 
+addizionale
+Attitudine 
+alla 
+curvatura
+1
+2
+3
+4
+Rigidi
+Pieghevoli
+Autorinvenenti
+Flessibili
+Seconda cifra 
+addizionale
+Proprietà 
+elettriche
+1
+2
+3
+Con continuità elettrica
+Per isolamento supplementare
+Con continuità elettrica e per 
+isolamento supplementare
+Terza cifra 
+addizionale
+Protezione 
+contro 
+l’ingresso 
+dell’acqua
+3
+4
+5
+6
+7
+8
+Pioggia
+Spruzzi
+Getti
+Ondate
+Immersione
+Sommersione
+Quarta cifra 
+addizionale
+Protezione 
+contro 
+l’ingresso di 
+corpi solidi
+3
+4
+5
+6
+Più grandi di 2,5 mm
+Più grandi di 1 mm
+Polvere
+Stagni alla polvere
+Quinta cifra 
+addizionale
+Protezione 
+contro la 
+corrosione
+3
+4
+5
+6
+7
+8
+Esterna
+Interna
+Debole
+Media
+Media
+Alta
+Alta
+Alta
+Debole
+Debole
+Media
+Debole
+Media
+Alta
+Sesta cifra 
+addizionale
+Resistenza 
+alle 
+radiazioni 
+solari
+1
+2
+3
+Debole
+Media
+Alta
+
+[PAG 1917]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-45
+ 
+canale e degli accessori necessari per effettuare la giunzione di tratti di canali in tutti i 
+modi previsti. Inoltre si intende con installazione a parete quella eseguita a partire da 10 
+mm dal pavimento finito, mentre con installazione a soffitto si intende anche quella inse-
+rita nelle controsoffittature.
+Per canale portacavi si intende un elemento la cui funzione è quella di contenere i cavi 
+e il relativo coperchio di chiusura a protezione dei cavi stessi. Esso può essere distinto 
+come semplice canale portacavi, quando svolge funzioni generiche, e canale porta appa-
+recchi, quando permette il fissaggio di apparecchi elettrici.
+Un sistema di canalizzazione completo comprende i seguenti accessori principali:
+–  giunzione (deviazione, derivazione o giunzione),
+–  testata,
+–  raccordo,
+–  membrane,
+–  diaframmi separatori,
+–  elementi di fissaggio.
+Tab. XIX.2.9  Numero dei cavi unipolari contenibili dai tubi in base al diametro
+Tubi rigidi serie L
+50
+65
+47
+28
+20
+13
+8
+6
+5
+Tubi rigidi serie L
+50
+56
+43
+23
+16
+11
+7
+6
+5
+40
+56
+42
+30
+17
+12
+8
+5
+3
+40
+51
+33
+26
+15
+16
+7
+5
+3
+2
+32
+48
+35
+24
+19
+11
+7
+5
+3
+32
+44
+38
+29
+20
+15
+9
+5
+4
+2
+25
+37
+32
+29
+20
+14
+10
+6
+4
+25
+29
+26
+21
+16
+10
+8
+5
+3
+20
+23
+20
+17
+13
+9
+6
+3
+20
+18
+16
+14
+11
+7
+5
+3
+16
+14
+12
+10
+7
+5
+3
+16
+9
+7
+6
+5
+3
+2
+Tubi flessibili
+63
+60
+34
+24
+17
+10
+8
+6
+Tubi flessibili
+50
+48
+37
+22
+14
+11
+6
+5
+3
+50
+65
+46
+27
+19
+13
+8
+6
+5
+40
+57
+44
+29
+22
+14
+9
+6
+4
+3
+40
+56
+41
+30
+17
+11
+8
+5
+3
+32
+40
+34
+27
+17
+7
+5
+3
+2
+32
+46
+34
+23
+18
+10
+6
+5
+3
+25
+27
+22
+19
+14
+10
+7
+4
+3
+2
+25
+37
+31
+28
+20
+13
+10
+5
+3
+20
+15
+14
+11
+8
+6
+4
+2
+20
+23
+19
+16
+11
+8
+5
+3
+16
+8
+7
+6
+5
+3
+2
+16
+14
+11
+10
+7
+5
+3
+Diametro esterno
+ max [mm]  
+2,6
+2,8
+3
+3,5
+4,2
+4,8
+6,3
+7,6
+8,8
+11,2
+12,5
+14,5
+Diametro esterno
+max [mm]
+2,6
+2,8
+3
+3,5
+4,2
+4,8
+6,3
+7,6
+8,8
+11,2
+12,5
+14,5
+Sezione Nominale  
+[mm2]
+0,5
+0,75
+1
+1,5
+2,5
+4
+6
+10
+16
+25
+35
+50
+Sezione Nominale
+[mm2]
+0,5
+0,75
+1
+1,5
+2,5
+4
+6
+10
+16
+25
+35
+50
+ Portata di  
+base [A]
+7,5
+10
+11,5
+15
+20
+27
+35
+49
+66
+87
+108
+131
+Portata di
+base [A]
+7,5
+10
+11,5
+15
+20
+27
+35
+49
+66
+87
+108
+131
+
+[PAG 1918]
+XIX-46
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Inoltre in un canale si distingue la sezione geometrica (sezione delimitata dalle pareti 
+interne del canale e che caratterizza la massima quantità di cavi installabile nel canale 
+stesso) dalla sezione utile (sezione geometrica ridotta mediante un opportuno coefficiente 
+di riempimento definito). A tale riguardo le norme prescrivono che la sezione occupata 
+dai cavi non debba superare il 50% della sezione del canale. La norma riguardante i canali 
+portacavi ad uso battiscopa deve essere applicata ai sistemi di canalizzazione per la distri-
+buzione con tensione nominale non superiore a 380 V. Il battiscopa portacavi viene defi-
+nito come un componente costituito da un canale da fissare a parete, in prossimità del 
+pavimento, destinato a contenere i cavi dell’impianto elettrico, telefonico e dell’impianto 
+TV e da un coperchio di chiusura a protezione dei cavi stessi e completamento del canale.
+Le cornici per soffitto e per stipite sono invece dei componenti costituiti da un canale 
+con le stesse caratteristiche del canale precedente, ma da non fissare in prossimità del 
+pavimento. 
+Nella normativa viene prescritto che il canale battiscopa, una volta installato, assicuri 
+che i cavi siano posizionati ad almeno 10 mm dal pavimento. Inoltre la posizione dello 
+scomparto per la distribuzione dell’energia elettrica non deve coincidere con quello pros-
+simo al pavimento. Le scatole destinate all’installazione di prese di corrente, prese TV, 
+interruttori e simili devono essere installate in modo che l’asse orizzontale della scatola 
+sia posizionato 70 mm sopra il pavimento. Per le scatole telefoniche detta dimensione 
+viene elevata a 120 mm. Gli accessori per l’installazione di apparecchi elettrici devono 
+essere fissati in modo indipendente dal battiscopa e consentire l’installazione degli appa-
+recchi esternamente al battiscopa.
+Gli accessori comunemente utilizzati per completare il sistema sono:
+–  i separatori, necessari per garantire la separazione dei cavi contenuti nei diversi scomparti;
+–  le giunzioni, che assicurano l
