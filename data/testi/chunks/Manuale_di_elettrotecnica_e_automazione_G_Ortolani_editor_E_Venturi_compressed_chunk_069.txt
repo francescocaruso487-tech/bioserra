@@ -1,0 +1,2280 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 69/116 ===
+Chars: 45,000 | Offset: 3,003,058
+
+
+
+[PAG 1413]
+AUTOMAZIONE
+XIV-101
+Fig. XIV.7.7   Elaborazione su riavvio a caldo.
+Condizioni di un riavvio a caldo:
+a ) quando il sistema è di nuovo sotto tensione senza perdita del contesto;
+b ) quando con il programma si imposta a 1 il bit %S1;
+c ) quando viene emesso un comando da PC avvio a caldo.
+–  Se la durata dell’interruzione è inferiore al tempo di filtro dell’alimentazione (circa 7 
+ms), questa non viene sentita dal programma, che viene eseguito normalmente.
+7.4  Elementi grafici di base
+Sono elementi di test, di azione e di collegamento (Tab. XIV.7.3).
+Elementi test
+Sono i contatti normalmente aperti o chiusi; a seconda del loro stato logico, determi-
+nano l’attivazione o meno dell’azione che controllano nella riga (rung) di programma. 
+Possono essere ripetuti in numero infinito all’interno del programma e sono associati a 
+qualsiasi oggetto bit o bit estratto di parola.
+Lettura
+ingressi
+Esecuzione del programma
+SI   %S1 = 1
+elaborazione eventuale
+del riavvio a freddo
+Interruzione
+alimentazione
+> microinterruzioni
+BOTTOM
+TOP
+Arresto del processore
+Salvataggio contesto
+applicazione
+Ritorno alimentazione
+Autotest configurazione
+Impostazione a 1 del bit %S1
+Fine dell’esecuzione
+del programma senza
+aggiornamento delle uscite
+Impostazione a 0 del bit %S1
+Aggiornamento delle uscite
+NO
+SI
+
+[PAG 1414]
+XIV-102
+AUTOMAZIONE
+Tab. XIV.7.3  Elementi grafici di base
+Elementi di azione
+Sono le bobine (diretta, inversa o negata, set, reset) che assumono il valore dello stato 
+logico del test che le precede. Oltre alle normali bobine, il cui stato logico viene a essere 
+sempre 0 al primo ciclo di scansione dopo la messa in funzione del PLC, vi sono anche le 
+bobine protette; queste mantengono il loro dato (stato logico) anche in mancanza di ali-
+mentazione; alla ripresa del funzionamento, nel primo ciclo di scansione il dato rimane 
+quello precedentemente memorizzato. Lo stato logico di queste bobine è alloggiato nella 
+memoria programma, che è supportata dalla pila tampone o dalla memoria EEPROM e 
+che quindi mantiene in ogni caso le informazioni.
+Elementi di collegamento
+Sono dei tratti verticali e orizzontali che permettono il collegamento in serie e in 
+parallelo degli elementi di test e azione.
+Esempi
+Nella Fig. XIV.7.8 viene presentato un esempio di marcia arresto che impiega due 
+ingressi, %I1.0 (marcia NO) e %I1.1 (arresto NC), con la tecnica dei pulsanti in AND e la 
+ritenuta dell’uscita %Q2.0 in OR con il pulsante di marcia.
+DESCRIZIONE
+Elementi test
+Contatto NO
+(diretto)
+Contatto NC
+(indiretto)
+Elementi azione
+Bobina diretta
+Bobina inversa
+Bobina di set
+Bobina di reset
+S
+R
+SIMBOLO
+FUNZIONI
+Elementi di
+collegamento
+Collegamento
+orizzontale
+Collegamento
+verticale
+Contatto in conduzione quando elemento bit di
+controllo = 1
+Variabile associata assume valore risultato logico
+di zona test
+Variabile associata assume valore inverso risultato
+logico zona test
+Variabile associata è posta a 1 e mantiene tale
+risultato quando risultato zona test =1
+Permette di collegare in serie elementi grafici
+di test e azione
+Fronte positivo
+Fronte negativo
+Contatto in conduzione per una scansione quando
+oggetto bit che lo controlla passa da stato logico 0
+a stato logico 1 (fronte di salita)
+Contatto in conduzione quando elemento bit di
+controllo = 0
+Contatto in conduzione per una scansione quando
+oggetto bit che lo controlla passa da stato logico 1
+a stato logico 0 (fronte di discesa)
+Variabile associata è posta a 0 e mantiene tale
+risultato quando risultato zona test =1
+Permette di collegare in parallelo elementi grafici
+di test e azione
+P
+N
+
+[PAG 1415]
+AUTOMAZIONE
+XIV-103
+Fig. XIV.7.8  
+Nella Fig. XIV.7.9 viene presentato sempre un esempio di marcia arresto che impiega 
+due ingressi, %I1.2 (marcia NO) e %I1.3 (arresto NC) con la tecnica delle bobine di set 
+(S) e reset (R) sull’uscita %Q2.1.
+Fig. XIV.7.9  
+Nella Fig. XIV.7.10 viene presentato l’esempio di due ingressi, %I1.4 (interruttore 1) e 
+%I1.5 (interruttore 2) che comandano l’uscita %Q2.2. Si immagini l’uscita come la lampada 
+che illumina un locale che viene comandata da due punti (gli interruttori %I1.4 e %I1.5).
+Fig. XIV.7.10  
+Un ultimo esempio dell’utilizzo degli elementi grafici di base è quello che vede l’impiego 
+del PLC per il comando di un motore nei due sensi di marcia. In Fig. XIV.7.11 viene evidenziato 
+lo schema elettrico del circuito, mentre il rispettivo programma da editare per il PLC è quello 
+di Fig. XIV.7.12. Si noti l’impiego dei bit interni (%M) per memorizzare degli stati logici 
+intermedi. I bit interni sono infatti assimilabili a dei relè ausiliari che compiono delle azioni 
+che non sono però fisicamente delle uscite, bensì delle “uscite interne”. Nel caso preso in 
+esame, il funzionamento è il seguente:
+–  L’ingresso %I1.0 è connesso ai pulsanti (NO) di comando marcia avanti, mentre 
+%I1.1 è collegato ai pulsanti (NO) di marcia indietro. I pulsanti di comando dell’arresto 
+(NC) sono collegati al punto di ingresso %I1.2, che arresta la movimentazione del motore 
+in entrambi i sensi. Il contatto del relè termico (NC) è collegato all’input %I1.3.
+–  %Q2.0 (contattore marcia avanti), in OR con l’uscita%Q2.2 (lampada marcia avanti) 
+vengono comandate dal merker %M0;
+–  %Q2.1 (contattore marcia indietro), in OR con %Q2.3 (lampada marcia indietro), ven-
+gono comandate dal bit %M1.
+–  Nel caso intervenga il relè termico, sarà attiva la rispettiva segnalazione, azionata 
+dall’uscita %Q2.4
+Il cablaggio degli I/O è visualizzato nella Tav. XIV.7.1. 
+%Q2.0
+%I1.0
+%Q2.0
+%I1.1
+Rung 1
+%I1.2
+%I1.3
+Rung 3
+Rung 2
+%Q2.1
+%Q2.1
+R
+S
+%I1.4
+%Q2.2
+%I1.5
+Rung 4
+%I1.5
+%I1.4
+
+[PAG 1416]
+XIV-104
+AUTOMAZIONE
+Fig. XIV.7.11  
+Fig. XIV.7.12  
+L1
+L2
+L3
+RT
+S1
+S2
+S
+4
+S
+5
+S
+6
+K
+2
+K
+1
+S
+3
+K2
+K1
+K1
+K2
+K
+1
+K
+2
+H
+1
+H
+2
+H
+3
+K1
+K2
+RT
+F1
+RT
+3M
+F2
+%I1.3
+%I1.2
+%I1.0
+%M0
+Rung 1
+%M1
+%M0
+%M1
+%I1.3
+Rung 2
+%I1.1
+%I1.2
+%M0
+%M1
+%M0
+Rung 3
+%Q2.2
+%Q2.0
+%M1
+Rung 4
+%Q2.3
+%Q2.1
+Rung 5
+%I1.3
+%Q2.4
+
+[PAG 1417]
+AUTOMAZIONE
+XIV-105
+Tav. XIV.7.1  
+S2
+S1
+S3
+S5
+H1
+INGRESSI
+S3/S4 PULSANTI DI MARCIA AVANTI MOTORE
+S5/S6 PULSANTI DI MARCIA INDIETRO MOTORE
+S1/S2 PULSANTI DI ARRESTO MOTORE
+RT CONTATTO NC RELE TERMICO
+%I1.0
+%I1.1
+%I1.2
+%I1.3
+USCITE
+BIT
+BIT
+ASSEGNAZIONE I/O
+K1 CONTATTORE MARCIA ORARIA MOTORE
+K2 CONTATTORE MARCIA ANTIORARIA MOTORE
+H1 SEGNALAZIONE MARCIA ORARIA MOTORE
+H2 SEGNALAZIONE MARCIA ANTIORARIA MOTORE
+H3 SEGNALAZIONE INTERVENTO RELE TERMICO
+%Q2.0
+%Q2.1
+%Q2.2
+%Q2.3
+%Q2.4
+Q2
+L1
+L2
+H2
+H3
+L3
+M
+K2
+K1
+3
+S6
+S4
+RT
+N L
+Q1
+U V W
+24V
+0V
+100/240V
+0V
+Out DC
+Input AC
+Modicon
+TSX Micro
+TER
+AUX
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+2
+4
+6
+8
+10
+12
+14
+16
+18
+I
+N
+P
+U
+T
+21 22
+23 24
+25 26
+27 28
+29 30
+31 32
+33 34
+35
+O
+U
+T
+P
+U
+T
+Battery
+20
+14
+15
+7
+N
+3
+1
+I
+5
+4
+2
+6
+U 11
+P
+9
+T 13
+10
+8
+12
+28
+P
+T 27
+20
+19
+17 18
+16
+O 23
+21
+U 25 24
+22
+26
+35
+U
+T
+31
+29
+33
+30
+32
+34
+15 14
+N
+7
+I
+4
+3
+2
+1
+6
+5
+13
+11
+U
+P
+T
+10
+8
+9
+12
+27
+T
+P
+28
+20
+17
+19 18
+16
+25
+21
+23
+O
+U
+24
+22
+26
+35
+33
+29
+31
+T
+U
+30
+34
+32
+
+[PAG 1418]
+XIV-106
+AUTOMAZIONE
+7.5  Blocchi funzione predefiniti (FB)
+7.5.1.  Temporizzatore
+Funzionamento
+Il temporizzatore dispone di tre modalità di funzionamento:
+–  TON: con questa configurazione consente di gestire i ritardi all’eccitazione.
+–  TOF: è questa la modalità che consente di gestire i ritardi alla diseccitazione.
+–  TP: è questa la modalità di funzionamento che consente di elaborare un impulso e di 
+stabilirne l’esatta durata, il cosiddetto timer monostabile.
+Nella Tab. XIV.7.4 sono sintetizzate le caratteristiche di questo blocco funzione.
+Tab. XIV.7.4  Caratteristiche del blocco temporizzatore
+Casi specifici
+–  Incidenza di un riavvio a freddo: (%S0 = 1), reimposta a 0 il valore corrente, a 0 il 
+valore di output %TMi.Q e reinizializza il valore di preselezione al valore definito durante 
+la configurazione.
+–  Incidenza di un riavvio a caldo: (%S1=1) non ha incidenza sul valore corrente del 
+temporizzatore, né sul valore di preselezione. Il valore corrente non aumenta durante il 
+periodo di interruzione dell’alimentazione.
+–  Incidenza di un passaggio in interruzione, disattivazione di un task o esecuzione di un 
+punto di interruzione: non blocca il valore corrente.
+–  Incidenza di un salto di programma: se non si ricercano le istruzioni nelle quali è pro-
+grammato il blocco del temporizzatore, non verrà bloccato il valore corrente %TMi.V, 
+che continua ad aumentare verso %TMi.P. Allo stesso modo, il bit %TMi.Q associato 
+all’output Q del blocco del temporizzatore continua a ad essere eseguito normalmente e 
+può essere quindi testato da un’altra istruzione. L’output direttamente collegato all’output 
+del blocco non viene invece attivato in quanto non ricercato dal PLC.
+–  Test del bit %TMi.Q: si consiglia di testare il bit %TMi.Q una sola volta nel programma.
+–  Incidenza della modifica della preselezione %TMi.P: la modifica del valore di prese-
+lezione tramite istruzione o in regolazione viene accettata alla successiva attivazione del 
+temporizzatore; la modifica del valore di preselezione nell’editor delle variabili (configu-
+razione) viene accettata solo dopo una ripresa a freddo (%S0=1).
+Ritardo all'eccitazione (predefinito)
+Monostabile
+Ritardo alla diseccitazione
+Avvia il temporizzatore sul fronte di salita (modalità TON o TP)
+o sul fronte di discesa (modalità TOF)
+Bit associato a %TMi.Q. L'impostazione a 1 dipende dalla funzione
+(TON, TOF, TP)
+NO = non accessibile in modo REGOLAZIONE
+Y = modifica valore in modo REGOLAZIONE
+testata e scritta da programma. La durata del ritardo è %TMi.P × TB
+TMi.P     9999. Valore default = 9999. Parola che può essere letta,
+1 min (predefinito), 1 s, 100 ms, 10 ms
+64 (da TM0 a TM63)
+IN
+Input "Attivazione"
+Output "temporizzatore"
+Modalità
+TP
+Q
+TOF
+TON
+Base dei tempi
+Modifica MODIF
+Valore corrente
+Valore di preselezione
+Numero temporizzatore
+%TMi.V
+%TMi.P
+YES/NO
+0 
+TB
+%TMi
+
+Parola che incrementa da 0 a TMi.P
+
+[PAG 1419]
+AUTOMAZIONE
+XIV-107
+Esempi
+In Fig. XIV.7.13 vengono presentati alcuni esempi applicativi con diversi tipi di tem-
+porizzatore.
+–  Nel rung 1 viene utilizzato un temporizzatore di tipo TON (ritardo all’eccitazione). 
+Quando il test del bit di ingresso %I1.0 è vero (= 1) il temporizzatore incrementa il suo 
+valore corrente (contenuto nella word %TM0.V) fino ad arrivare al valore di preselezione 
+stabilito in configurazione (memorizzato nella parola %TM0.P = 5); quindi trascorsi i 5 s 
+dall’avvio della temporizzazione, quando %TM0.V = %TM0.P si attiva l’uscita Q e di 
+conseguenza la bobina di uscita %Q2.0. Nel caso venisse a mancare il segnale 
+sull’ingresso IN del timer, il valore corrente ritorna a 0, cioè il temporizzatore si resetta.
+ 
+Fig. XIV.7.13  
+%I1.0
+%Q2.0
+Rung 1
+TM.P: 5
+MODIF: Y
+TB: 1s
+%TM0
+MODE: TON
+Q
+IN
+TM
+TM.P: 5
+MODIF: Y
+%I1.1
+Rung 2
+TM
+IN
+TB: 1s
+MODE: TOF
+%TM1
+%Q2.1
+Q
+TM.P: 5
+MODIF: Y
+%I1.2
+Rung 3
+TM
+IN
+TB: 1s
+MODE: TP
+%TM2
+%Q2.2
+Q
+Rung 4
+TM.P: 5
+MODIF: Y
+%I1.3
+MODE: TP
+TB: 1s
+IN
+TM
+%TM3
+%Q2.3
+Q
+P
+
+[PAG 1420]
+XIV-108
+AUTOMAZIONE
+–  Nel rung 2 viene impiegato un temporizzatore di tipo TOF (ritardo alla diseccitazione). 
+Quando il test del bit di ingresso %I1.1 è vero (= 1) il segnale sull’uscita Q è anch’esso a 
+1 e quindi l’uscita %Q2.1 è attiva. Nel passaggio da 1 a 0 dell’ingresso %I1.1si avvia la 
+temporizzazione; il temporizzatore incrementa il suo valore corrente (%TM1.V) fino ad 
+arrivare al valore di preselezione stabilito in configurazione (%TM1.P = 5); quindi trascorsi 
+i 5 s dall’avvio della temporizzazione, quando il contenuto delle due word %TM1.V e 
+%TM1.P è uguale, si disattiva l’uscita Q e di conseguenza la bobina di uscita %Q2.1.
+–  Nel rung 3 viene utilizzato un temporizzatore di tipo TP (timer monostabile). Quando 
+il test del bit di ingresso %I1.2 è vero (= 1), con uno solo colpo (one shot) il temporizza-
+tore incrementa il suo valore corrente (%TM2.V) fino ad arrivare al valore di preselezione 
+stabilito in configurazione (%TM2.P = 5); l’uscita Q e di conseguenza la bobina di uscita 
+%Q2.2 rimangono attive per tutto il tempo di running (tempo di temporizzazione attiva). 
+Quando le due word %TM2.V e %TM2.P contengono lo stesso valore numerico l’uscita si 
+disattiva; per una nuova evoluzione del temporizzatore occorre portare a 0 l’ingresso IN e 
+successivamente il timer è pronto per un’altro ciclo. Nel caso venisse a mancare il segnale 
+sull’ingresso IN del timer, il valore corrente continua ad evolvere, poiché il timer si attiva 
+con un solo fronte di salita.
+–  Pertanto potrebbe essere più giusta, dal punto di vista logico, la programmazione pre-
+vista nel rung 4, dove l’ingresso IN del timer %TM3 viene attivato con un bit fronte posi-
+tivo cioè con un contatto che è in conduzione per una sola scansione, quando il segnale 
+dell’oggetto bit che lo controlla (%I1.3) passa dal livello logico basso a quello alto.
+L’esempio applicativo che segue impiega istruzioni di base e un temporizzatore TON. 
+Si tratta dell’avviamento stella/triangolo di un motore, di cui in Fig. XIV.7.14 è visualiz-
+zato lo schema elettrico.
+Fig. XIV.7.14  
+ In Fig. XIV.7.15 il programma per il PLC, il cui funzionamento è il seguente:
+–  L’ingresso %I1.0 è collegato al pulsante di marcia (NO), %I1.1 è il pulsante di arresto 
+(NC), mentre %I1.2 è connesso al contatto NC del relè termico che correda l’impianto.
+–  Anziché impiegare direttamente le uscite, la prima riga di programma si appoggia ad 
+un bit interno (merker M0), che viene poi richiamato nei rung successivi.
+L1
+L2
+L3
+F1
+F2
+K1
+K3
+K4
+RT
+K1
+K2
+K3
+K4
+H
+K4
+K3
+K2
+K2
+RT
+RT
+S1
+S2
+K1
+
+[PAG 1421]
+AUTOMAZIONE
+XIV-109
+–  L’avviamento del motore avviene con l’attivazione di %I1.0, che determina la messa a 
+1 del bit %M0 e conseguentemente di %Q2.0 e %Q2.1 che sono cablate con i contattori 
+che configurano il collegamento a stella della morsettiera del motore.
+–  Si attiva inoltre il timer %TM0, che trascorsi i 10 s prestabiliti determinerà lo scambio 
+del collegamento del motore da stella a triangolo (attivando i contattori connessi alle 
+uscite %Q2.0 e %Q2.2).
+–  Nel rung 5 il bit negato di %I1.2 determina l’accensione della lampada di segnala-
+zione connessa all’uscita %Q2.3 nel momento in cui un sovraccarico provochi l’inter-
+vento del relè termico.
+–  Nel rung 1 si determina la diseccitazione di %M0 e quindi dell’intero impianto, sem-
+pre nel caso di sovraccarico rilevato da %I1.2, mentre con l’attivazione del pulsante di 
+arresto connesso all’ingresso %I1.1 si ferma il motore.
+–  
+Fig. XIV.7.15  
+Il cablaggio degli I/O è visualizzato nella Tav. XIV.7.2. 
+%I1.2
+Rung 5
+%Q2.3
+%Q2.1
+MODE: TON
+%Q2.2
+%I1.2
+%TM0
+Rung 3
+Rung 4
+%M0
+%M0
+%TM0.Q
+%TM0.Q
+TB: 1s
+TM.P: 10
+MODIF: Y
+IN
+TM
+Rung 2
+%I1.0
+%M0
+%I1.1
+Rung 1
+%Q2.2
+%Q2.1
+Q
+%Q2.0
+%M0
+%M0
+
+[PAG 1422]
+XIV-110
+AUTOMAZIONE
+Tav. XIV.7.2  
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+2
+4
+6
+8
+10
+12
+14
+16
+18
+I
+N
+P
+U
+T
+21 22
+23 24
+25 26
+27 28
+29 30
+31 32
+33 34
+35
+O
+U
+T
+P
+U
+T
+Battery
+20
+14
+15
+7
+N
+3
+1
+I
+5
+4
+2
+6
+U 11
+P
+9
+T 13
+10
+8
+12
+28
+P
+T 27
+20
+19
+17 18
+16
+O 23
+21
+U 25 24
+22
+26
+35
+U
+T
+31
+29
+33
+30
+32
+34
+15 14
+N
+7
+I
+4
+3
+2
+1
+6
+5
+13
+11
+U
+P
+T
+10
+8
+9
+12
+27
+T
+P
+28
+20
+17
+19 18
+16
+25
+21
+23
+O
+U
+24
+22
+26
+35
+33
+29
+31
+T
+U
+30
+34
+32
+S2
+S1
+RT
+N L
+Q1
+24V
+0V
+100/240V
+0V
+Out DC
+Input AC
+Modicon
+TSX Micro
+TER
+AUX
+K3
+RT
+K1
+K4
+H
+Q2
+L3
+L2
+L1
+H SEGNALAZIONE INTERVENTO RELE TERMICO
+K4 CONTATTORE COLLEGAMENTO TRIANGOLO
+K3 CONTATTORE COLLEGAMENTO STELLA
+K1 CONTATTORE DI LINEA
+ASSEGNAZIONE I/O
+RT CONTATTO NC RELE TERMICO
+S1 PULSANTE DI ARRESTO
+S2 PULSANTE DI START AVVIAMENTO Y/D
+USCITE
+INGRESSI
+%Q2.3
+%Q2.2
+%Q2.1
+%Q.0
+BIT
+%I1.2
+%I1.1
+%I1.0
+BIT
+V2
+U2
+W2
+U1
+V1
+W1 M
+3
+
+[PAG 1423]
+AUTOMAZIONE
+XIV-111
+7.5.2.  Contatore
+Il blocco funzione Contatore avanti/indietro consente di eseguire il conteggio avanti o 
+indietro degli eventi. Le due operazioni possono essere eseguite contemporaneamente.
+Funzionamento
+–  Conteggio in avanti: quando si verifica un fronte di salita sull’input conteggio CU, il 
+valore corrente viene incrementato di un’unità. Quando il valore è uguale al valore di pre-
+selezione %Ci.P, il bit di output %Ci.D “preselezione raggiunta” associato all’output D 
+passa allo stato 1. Il bit di output %Ci.F (overflow conteggio) passa allo stato 1 quando 
+%Ci.V passa da 9999 a 0, viene impostato a 0 se il contatore continua il conteggio.
+–  Conteggio indietro: quando si verifica un fronte di salita sull’input “conteggio indie-
+tro” CD, il valore corrente %Ci.V viene decrementato di un’unità. Il bit di output %Ci.E 
+(overflow conteggio indietro) passa allo stato 1 quando %Ci.V passa da 0 a 9999, viene 
+impostato a 0 se il contatore continua il conteggio indietro.
+–  Conteggio avanti/indietro: per utilizzare contemporaneamente le funzioni di conteg-
+gio avanti e indietro, è necessario controllare i due input corrispondenti CU e CD. Se 
+entrambi gli input sono impostati a 1, il valore corrente non verrà modificato.
+–  Azzeramento: alla messa a 1 dell’input R, il valore corrente %Ci.V viene forzato a 0, 
+gli output %Ci.E, %Ci.D e %Ci.F sono impostati a 0. L’input “azzeramento” è prioritario.
+–  Preselezione: se l’input S “preselezione” è impostato a 1 e l’input R “azzeramento” è 
+impostato a 0, il valore corrente %Ci.V assumerà il valore %Ci.P e l’output %Ci.D assu-
+merà il valore 1.
+Nella Tab. XIV.7.5 sono sintetizzate le caratteristiche di questo blocco funzione.
+Tab. XIV.7.5  Caratteristiche del blocco contatore
+Casi specifici
+–  Incidenza di un riavvio “a freddo”: (%S0=1)
+impostazione a 0 del valore corrente %Ci.V.
+impostazione a 0 dei bit di output %Ci.E, %Ci.D e %Ci.F.
+inizializzazione del valore di preselezione tramite il valore definito dalla configurazione.
+Parola che incrementa o decrementa in funzione di CU e CD
+32 (da %C0 a %C31)
+%Ci.V passa da 9999 a 0
+Il bit associato %Ci.F = 1 quando il conteggio
+Il bit associato %Ci.D = 1 quando %Ci.V = %Ci.P
+%Ci.V passa da 0 a 9999
+Il bit associato %Ci.E = 1 quando il deconteggio
+Decrementa %Ci.V sul fronte di salita
+Incrementa %Ci.V sul fronte di salita
+Allo stato 1 %Ci.V = %Ci.P
+Allo stato 1 il valore corrente %Ci.V = 0
+0 < %Ci.P < 9999. Valore default 9999
+N = non accessibile in modo REGOLAZIONE
+Y = modifica valore in modo REGOLAZIONE
+P (Preset)
+Ingresso "Preselezione"
+raggiunta"
+Uscita "Superamento"
+in corso"
+Ingresso "Deconteggio"
+Ingresso "Conteggio"
+Uscita "Preselezione
+Uscita "Superamento"
+F (Full)
+CD (Down)
+E (Empty)
+D (Done)
+CU (Up)
+Ingresso "Azzeramento"
+Modifica MODIF
+Valore di preselezione
+Valore corrente
+Numero contatore
+R (Reset)
+%Ci.P
+YES/NO
+%Ci.V
+%Ci
+
+[PAG 1424]
+XIV-112
+AUTOMAZIONE
+–  Incidenza di un di un riavvio a caldo (%S1=1), di un passaggio in interruzione, disat-
+tivazione di un task o esecuzione di un punto di interruzione: non ha alcuna incidenza sul 
+valore corrente del contatore (%Ci.V).
+–  Incidenza della modifica della preselezione %Ci.P: la modifica del valore di presele-
+zione tramite istruzione o in regolazione viene eseguita dall’applicazione durante la 
+gestione del blocco (attivazione di un input).
+Esempi
+Il programma che viene proposto si riferisce alla gestione di un piccolo parcheggio 
+automatico. In Fig. XIV.7.16 è visualizzato lo schema di principio dell’applicazione.
+Fig. XIV.7.16  
+Il programma editato (Fig. XIV.7.17) funziona secondo le seguenti specifiche: 
+–  Nel rung 1 il fronte di salita effettuato con il pulsante avvio/reset sistema %I1.0 deter-
+mina l’attivazione del bit %M0 per una scansione.
+–  Nel rung 2 l’one shot di %M0 attiva sempre per una scansione %M1, che a sua volta 
+setta il merker %M3 (nel rung 3). Un ulteriore fronte di salita dato tramite %I1.0 resetta 
+%M3 (rung 4) e quindi l’intero sistema.
+–  L’elaborazione delle prime 4 righe di programma serve alla costruzione del cosiddetto 
+“passo-passo”, che consente di attivare o resettare un merker con il comando di un solo 
+pulsante. Tale merker sarà successivamente impiegato nelle righe significative del pro-
+gramma dove necessita un consenso iniziale per poter far funzionare l’applicazione.
+–  Nella riga 5 viene programmato il contatore. Sull’ingresso R del blocco contatore è 
+connesso un contatto negato di %M3, in modo che il counter non possa essere messo in 
+funzione se non è stato preventivamente dato lo start al sistema tramite %I1.0. Gli ingressi 
+%I1.1 e %I1.2, rispettivamente, incrementano o decrementano il valore corrente %C0.V. 
+In AND con tali input vi sono degli interblocchi (il bit %M4 e il bit %M5) che non con-
+sentono l’avanzamento del conteggio al di fuori del range 010.
+–  Nei rung 6 e 7 una comparazione tra il valore corrente del contatore (%C0.V) e il 
+valore immediato <= 9 e = 0 determinano l’attivazione dei merker %M4 e %M5 di inter-
+blocco conteggio. Le auto che possono essere parcheggiate sono 10, pertanto sia il conteg-
+S2
+RILEVATORE
+PRESENZA AUTO
+(MAGNECTOR)
+ENTRATA
+PARCHEGGIO
+USCITA
+PARCHEGGIO
+COMPLETO
+LIBERO
+S1 (START E RESET SISTEMA)
+B2
+B1
+H1 (SEGNALAZIONE)
+H2 (SEGNALAZIONE)
+Y1 (VALVOLA APERTURA INGRESSO)
+Y2 (VALVOLA CHIUSURA INGRESSO)
+Y3 (VALVOLA APERTURA USCITA)
+Y4 (VALVOLA CHIUSURA USCITA)
+S3
+PULSANTE
+APERTURA USCITA
+SENSORE
+CHIUSURA INGRESSO
+SENSORE
+CHIUSURA USCITA
+
+[PAG 1425]
+AUTOMAZIONE
+XIV-113
+gio che le sbarre di ingresso e uscita dovranno essere condizionate dal consenso prodotto 
+dal risultato delle rispettive comparazioni che determinano l’afflusso al parcheggio.
+–  Nel rung 8 vengono programmate le uscite connesse alle lampade di segnalazione di 
+parcheggio pieno (%Q2.4) e di parcheggio con posti disponibili (%Q2.5)
+–  Infine, nel rung 9 vengono programmati i vari input di attivazione delle elettrovalvole 
+che controllano le rispettive barriere di ingresso e uscita al parcheggio: 
+–  %I1.1 magnector che intercetta le auto in ingresso (NO);
+–  %I1.3 fotocellula (NO) che determina la chiusura della barra di ingresso una 
+volta entrata l’auto;
+–  %I1.2 pulsante a chiave (NO) attivato dal custode per aprire la barriera di 
+uscita;
+–  %I1.4 fotocellula (NO) che determina la chiusura della barriera una volta che 
+l’auto ha oltrepassato la zona d’uscita.
+Fig. XIV.7.17  
+%C0
+E
+R
+C
+Rung 5
+%M3
+%M3
+%M0
+Rung 2
+%M3
+%M1
+Rung 1
+%I1.0
+%M0
+Rung 3
+%M1
+%M3
+Rung 4
+%M2
+%M3
+P
+%M2
+S
+R
+D
+F
+%I1.1
+%M4
+%I1.2
+%M5
+S
+CU
+CD
+MODIF: Y
+C.P: 10
+
+[PAG 1426]
+XIV-114
+AUTOMAZIONE
+Fig. XIV.7.17   Segue.
+Il cablaggio degli I/O è visualizzato nella Tav. XIV.7.3. 
+Un secondo esempio di applicazione delle istruzioni analizzate fin d’ora è quello di 
+una sequenza di tapis roulant per il confezionamento (Fig. XIV.7.18). 
+Fig. XIV.7.18  
+Rung 6
+%M4
+Rung 7
+%M5
+%I1.1
+%M3
+%I1.2
+Rung 9
+%Q2.0
+%Q2.2
+%C0.D
+%Q2.5
+Rung 8
+%M3
+%C0.D
+%Q2.4
+%I1.4
+%Q2.3
+%I1.3
+%Q2.1
+COMPARE
+%C0.V<= 9
+%C0.V= 0
+COMPARE
+%M4
+S1 (START)
+S2 (STOP)
+B2
+M2
+3
+K2
+AZIONATORE
+NASTRO 2
+NASTRO 1
+AZIONATORE
+K1
+3
+M1
+B1
+NASTRO 3
+AZIONATORE
+K3
+3
+M3
+B3
+
+[PAG 1427]
+AUTOMAZIONE
+XIV-115
+Tav. XIV.7.3  
+U
+P
+T
+10
+8
+9
+12
+27
+T
+P
+28
+20
+17
+19 18
+16
+25
+21
+23
+O
+U
+24
+22
+26
+35
+33
+29
+31
+T
+U
+30
+34
+32
+S1
+N L
+Q1
+24V
+0V
+100/240V
+0V
+Out DC
+Input AC
+Modicon
+TSX Micro
+TER
+AUX
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+2
+4
+6
+8
+10
+12
+14
+16
+18
+I
+N
+P
+U
+T
+21 22
+23 24
+25 26
+27 28
+29 30
+31 32
+33 34
+35
+O
+U
+T
+P
+U
+T
+Battery
+20
+14
+15
+7
+N
+3
+1
+I
+5
+4
+2
+6
+U 11
+P
+9
+T 13
+10
+8
+12
+28
+P
+T 27
+20
+19
+17 18
+16
+O 23
+21
+U 25 24
+22
+26
+35
+U
+T
+31
+29
+33
+30
+32
+34
+15 14
+N
+7
+I
+4
+3
+2
+1
+6
+5
+13
+11
+B1
+S3
+S2
+B2
+H2
+Y1
+Y3
+Y2
+Y4 H1
+Q2
+L1
+L2
+%I1.1
+S3 PULSANTE APERTURA SBARRA DI USCITA
+B1 FOTOCELLULA CHIUSURA SBARRA INGRESSO
+H2 SEGNALAZIONE POSTI PARCHEGGIO DISPONIBILI
+B2 FOTOCELLULA CHIUSURA SBARRA USCITA
+Y1 VALVOLA APERTURA SBARRA INGRESSO
+Y2 VALVOLA CHIUSURA SBARRA INGRESSO
+Y3 VALVOLA APERTURA SBARRA USCITA
+Y4 VALVOLA CHIUSURA SBARRA USCITA
+H1 SEGNALAZIONE PARCHEGGIO COMPLETO
+USCITE
+%Q2.3
+%Q2.5
+%Q2.4
+%Q2.2
+%Q2.1
+%I1.4
+%Q2.0
+BIT
+%I1.3
+%I1.2
+S1 PULSANTE START E RESET SISTEMA
+S2 RILEVATORE PRESENZA AUTO
+ASSEGNAZIONE I/O
+INGRESSI
+%I1.0
+BIT
+
+[PAG 1428]
+XIV-116
+AUTOMAZIONE
+La linea automatizzata comprende tre motori: il primo (M1) è sempre in funzione ed 
+aziona il primo nastro trasportatore della catena di produzione; gli altri due (M2 e M3) azio-
+nano i rispettivi tapis roulant solo in presenza di prodotti nel loro spazio d’azione. In questo 
+modo viene attivato il solo tratto di linea di trasporto necessario. Il controllo di M2 e M3 è 
+affidato ad un sistema di fotocellule e timer che rilevano la presenza dei prodotti e determinano 
+la sequenza di avvio e fermata dei nastri corrispondenti. Il funzionamento dell’impianto 
+secondo le specifiche del programma visualizzato in Fig. XIV.7.19 è il seguente:
+–  Quando si aziona l’ingresso %I1.0 (pulsante di marcia NO) si attiva l’uscita %Q2.0 
+(tramite il bit interno %M0), la quale mette sotto tensione la bobina del contattore K1. 
+Viene avviato il motore M1, che movimenta la prima sezione del nastro trasportatore.
+–  Se un prodotto entra nella zona di influenza del sensore B1 si attiva l’ingresso %I1.2 
+che setta il relè d’uscita %Q2.1. La bobina del contattore K2 viene in questo modo ali-
+mentata e chiudendo i propri contatti principali determina l’avviamento del motore M2 e 
+la conseguente movimentazione del secondo nastro trasportatore.
+–  Quando il prodotto viene intercettato dal sensore B2 si attiva l’ingresso %I1.3 il quale, 
+attraverso il settaggio dell’uscita %Q2.2 eccita la bobina del contattore K3 che determina 
+a sua volta l’avviamento del motore M3.
+–  Lo stesso ingresso %I1.3, precedentemente azionato, setta il bit interno %M1 che 
+avvia la temporizzazione del timer %TM0.
+Fig. XIV.7.19  
+%I1.3
+Rung 4
+%Q2.2
+S
+%Q2.1
+%I1.2
+S
+Rung 3
+Rung 2
+%M0
+%Q2.0
+Rung 1
+%M0
+%I1.0
+%I1.1
+%M0
+Rung 5
+%I1.3
+%M1
+S
+%M1
+MODE: TON
+MODIF: Y
+TM.P: 5
+TB: 1s
+IN
+TM
+Q
+Rung 6
+%TM0
+
+[PAG 1429]
+AUTOMAZIONE
+XIV-117
+Fig. XIV.7.19   Segue.
+–  Trascorsi i 5 secondi di preset, tempo necessario a far transitare il prodotto sull’altro 
+spezzone di nastro, il flag di fine temporizzazione %TM0.Q resetta la bobina %Q2.1, il bit 
+%M1 e quindi lo stesso temporizzatore.
+–  La disattivazione dell’uscita %Q2.1 determina la diseccitazione della bobina del con-
+tattore K2, l’arresto del motore M2 e la conseguente fermata della sezione di nastro associata.
+–  Nel frattempo, il prodotto trasportato arriva alla stazione finale, nella quale il rivela-
+tore B3, rilevandone la presenza, aziona l’ingresso %I1.4.
+–  Questo ingresso a sua volta setta il relè interno %M2. Un contatto del relè interno 
+%M2 attiva il temporizzatore %TM1, il quale, trascorso il tempo di preset, mediante i due 
+bit ad esso associati, resetta l’uscita %Q2.2 e il bit interno %M2.
+–  Si disattivano contemporaneamente quindi l’uscita %Q2.2, con il conseguente arresto 
+del motore M3 ed il bit interno %M2 con il conseguente reset del timer %TM1 stesso.
+–  A questo punto rimane in funzione il solo motore M1, fintantoché il rivelatore B1 non 
+percepisca la presenza di un altro prodotto e termini il riavvio del ciclo. Nel rung 1, tra-
+mite il pulsante di stop cablato sull’ingresso %I1.1 è possibile fermare l’impianto.
+Da notare che i timer non vengono attivati direttamente dalle fotocellule, in quanto i 
+prodotti, una volta fuori dal raggio d’azione di rilevamento delle stesse, non mantengono 
+il segnale sui rispettivi ingressi %I1.3 e %I1.4.
+La rilevazione del prodotto è quindi memorizzata nel settaggio di un bit interno (%M1 
+e %M2) che tiene alto il segnale sul timer per poi essere resettato dal timer stesso, termi-
+nata la temporizzazione.
+Rung 10
+%TM1.Q
+TM.P: 5
+MODIF: Y
+%Q2.2
+R
+Rung 9
+%M2
+TM
+IN
+TB: 1s
+MODE: TON
+%TM1
+Rung 8
+%I1.4
+%TM0.Q
+Rung 7
+%M2
+%M1
+Q
+S
+R
+%Q2.1
+R
+%M2
+R
+
+[PAG 1430]
+XIV-118
+AUTOMAZIONE
+Il cablaggio degli I/O è visualizzato nella Tav. XIV.7.4. 
+Tav. XIV.7.4  
+3
+3
+3
+L2
+L3
+B3
+B2
+S2
+B1
+S1
+1
+2
+B3 RIVELATORE PRODOTTI STOP NASTRO 3
+K2 CONTATTORE DI COMANDO MOTORE NASTRO 2
+K1 CONTATTORE DI COMANDO MOTORE NASTRO 1
+B2 RIVELATORE PRODOTTI AVVIO NASTRO 3
+B1 RIVELATORE PRODOTTI AVVIO NASTRO 2
+S2 PULSANTE STOP NASTRO TRASPORTATORE 1
+S1 PULSANTE START NASTRO TRASPORTATORE 1
+K3 CONTATTORE DI COMANDO MOTORE NASTRO 3
+INGRESSI
+ASSEGNAZIONE I/O
+1
+2
+1
+2
+USCITE
+%I1.3
+BIT
+%I1.1
+%I1.0
+%I1.2
+%Q2.0
+%Q2.1
+%Q2.2
+BIT
+%I1.4
+Q2
+L1
+Battery
+34
+N L
+Q1
+TSX Micro
+Modicon
+TER
+AUX
+U 11 12
+N
+8
+7
+I
+5
+4
+6
+P
+9 10
+15 16
+13
+T
+14
+17
+19 18
+100/240V
+Out DC
+24V
+0V
+Input AC
+0V
+T
+26
+U
+22
+21 20
+23
+25
+O
+24
+U
+30
+27
+29
+P
+28
+31
+33
+T
+32
+35
+34
+34
+U 11 12
+N
+I
+P
+8
+7
+5
+4
+6
+9 10
+17
+15
+13
+19
+T
+16
+14
+18
+U 11 12
+N
+8
+7
+I
+5
+4
+6
+P
+10
+9
+15 16
+13
+T
+14
+17
+19 18
+T
+U
+26
+23
+21
+25
+O
+22
+20
+24
+27
+29
+31
+33
+U
+P
+T
+30
+28
+32
+26
+T
+U
+22
+21 20
+23
+25
+O
+24
+U
+30
+27
+29
+P
+28
+31
+33
+T
+32
+K1
+K2
+3
+M1
+35
+35
+K3
+M3
+3
+3
+M2
+
+[PAG 1431]
+AUTOMAZIONE
+XIV-119
+7.5.3.   Registro
+Il blocco registro è una pila, un incolonnamento di dati, strutturato in una memoria orga-
+nizzata a word ­ dove ogni parola è costituita da 16 bit ­ la cui lunghezza varia da 1 a 255 
+word. La pila può essere del tipo FIFO (First In First Out) oppure LIFO (Last In First Out), 
+secondo la regola rispettivamente di “primo ad entrare/primo a uscire” oppure “ultimo 
+entrato/ultimo a uscire”, dei dati che vengono manipolati tramite il registro. Sono associate 
+al registro due parole: una parola registro di ingresso %Ri.I ed una di uscita %Ri.O contenenti 
+rispettivamente il valore (word) da inserire e quello ultimo estratto. Sono presenti nella fun-
+zione due ingressi: per il deposito del contenuto della parola di ingresso %Ri.I si agisce con 
+un fronte di salita tramite l’ingresso I (In); l’uscita di un dato avviene tramite la parola di 
+uscita %Ri.O quando si presenta un segnale alto sull’ingresso O. L’ingresso R (Reset) serve 
+a resettare il registro cioè a pulire il contenuto della memoria. Associati alle uscite F ed E 
+vi sono i bit: %Ri.F (Full), l’uscita che va a 1 quando il registro è pieno; %Ri.E (Empty), 
+l’uscita che va allo stato logico alto quando il registro è vuoto. Nella Tab. XIV.7.6 sono sin-
+tetizzate le caratteristiche di questo blocco funzione.
+Tab. XIV.7.6  Caratteristiche del blocco registro
+Le parole vengono accatastate e memorizzate con l’ordine in cui entrano nel registro 
+(Fig. XIV.7.20), mentre escono ­ a seconda della configurazione del registro ­ con l’ordine 
+di prima entrata (FIFO), o di ultima entrata (LIFO).
+Dal punto di vista funzionale l’organizzazione dei dati avviene nel seguente modo:
+Pila LIFO 
+–  L’inserimento di una nuova word avviene ponendo il contenuto di %Ri.I nella loca-
+zione di memoria 4, tramite il registro puntatore P ­ che contiene tale parola oltre all’indi-
+rizzo di puntamento della parola stessa e che incrementa di una posizione rispetto a prima 
+dell’inserimento, portandosi sul campo 4 (Fig. XIV.7.21).
+–  L’estrazione avviene leggendo il contenuto del registro puntatore P e trasferendolo nella 
+word %Ri.O; la pila decrementa di un campo e si aggiorna anche la posizione del registro 
+puntatore. La lunghezza del registro (LEN) viene definita in modo CONFIGURAZIONE e 
+varia da un minimo di 1 word a un massimo di 255 parole. Quando tutti i campi sono occupati 
+il bit %Ri.F va a 1, mentre va a 1 il bit %Ri.E, quando la catasta è vuota. Con la messa a 1 
+del bit %Ri.E non sarà più possibile estrarre word in quanto ovviamente la catasta è vuota.
+Numero registro
+Tipo
+Lunghezza
+Uscita "prelievo"
+Ingresso "azzeramento"
+Uscita "registro pieno"
+%Ri
+FIFO
+LEN
+O (Out)
+R (Reset)
+F (Full)
+4 (da %R0 a %R3)
+Lista di attesa (First In, First Out)
+Pila (Last In, First Out)
+Numero parole da 16 bit 1 <= LEN <= 255
+Provoca il prelievo dal registro e la scrittura
+in Ri.O di una word accatastata precedentemente
+Allo stato 1 inizializza il registro
+Parola "ingresso"
+%Ri.I
+Parola di accesso al registro
+Parola "uscita"
+%Ri.O
+Parola di uscita dal registro
+Ingresso "deposito"
+I (In)
+Provoca deposito di %Ri.I in registro, su fronte Up
+Il bit associato %Ri.F = 1 quando il registroo è pieno
+LIFO
+Uscita "registro vuoto"
+E (Empty)
+Il bit associato %Ri.E = 1 quando il registro è vuoto
+
+[PAG 1432]
+XIV-120
+AUTOMAZIONE
+Fig. XIV.7.20   Funzionamento del blocco registro.
+Fig. XIV.7.21   Accatastamento delle word nella pila LIFO.
+Pila FIFO
+La coda FIFO è gestita tramite un registro puntatore di lettura PR (Read) ed uno di 
+scrittura PW (Write). Il registro puntatore di lettura contiene i dati e gli indirizzi del 
+campo da estrarre, che verranno trasferiti in %Ri.O quando sarà messo ad 1 l’ingresso O; 
+nel registro puntatore di scrittura sono alloggiati i dati e l’indirizzo del campo in cui inse-
+rire la nuova word, che viene trasferita dalla parola registro di ingresso %Ri.I, quando il 
+rispettivo ingresso I sarà posto allo stato logico alto (Fig. XIV.7.22). Quando il registro è 
+pieno (%Ri.F = 1) non è più possibile archiviare dati nella catasta; altresì non è possibile 
+prelevare contenuti da un registro il cui bit %Ri.E = 1 (registro vuoto).
+Esempi
+Nel primo esempio (Fig. XIV.7.23) il registro viene configurato come catasta FIFO e 
+serve a distinguere in una linea di prodotti, i “buoni” dagli “scarti” per una determinata 
+lavorazione.
+30
+%Ri.I
+30
+60
+60
+30
+REGISTRO
+FIFO
+LIFO
+%Ri.O
+%Ri.O
+30
+60
+60
+60
+60
+30
+30
+30
+30
+30
+60
+60
+30
+REGISTRO
+CAMPI DEFINIBILI
+DA 1 A 255 WORD
+30
+30
+P
+%Ri.I
+%Ri.O
+LIFO
+
+[PAG 1433]
+AUTOMAZIONE
+XIV-121
+Fig. XIV.7.22   Accatastamento in un registro FIFO.
+Fig. XIV.7.23  
+Il funzionamento dell’impianto secondo le specifiche del programma visualizzato in Fig. 
+XIV.7.24 è il seguente:
+–  Il nastro trasportatore comandato da M1 tramite K1 (%Q2.0) viene messo in funzione 
+dall’ingresso S1 (%I1.0) e fa transitare davanti alle fotocellule B1 e B2 (%I1.2 e %I1.3) i 
+prodotti.
+–  La pila FIFO viene attivata mediante gli ingressi S2 (%I1.1) ­ B1 (%I1.2) ­ B3 (%I1.4) 
+rispettivamente il reset, l’input di accatastamento nel registro e l’input di prelievo dalla 
+pila di dati.
+–  L’ingresso S2 (%I1.1) viene inoltre utilizzato per resettare la parola %R0.O che con-
+tiene il valore dell’ultima word estratta dal registro.
+30
+30
+60
+60
+30
+REGISTRO
+DA 1 A 255 WORD
+30
+30
+PR
+%Ri.O
+PW
+FIFO
+CAMPI DEFINIBILI
+%Ri.I
+30
+B1
+B2
+B3
+Y1
+B3
+B2
+B1
+CONTENITORE
+SCARTI
+ESPULSORE
+SCARTI
+RILEVATORI
+AZIONATORE
+TAPIS ROULANT 1
+60 cm
+30 cm
+S1 (START)
+S2 (RESET)
+Vista di fianco
+Vista in pianta
+3
+M1
+K1
+K2
+3
+M2
+AZIONATORE
+TAPIS ROULANT 2
+
+[PAG 1434]
+XIV-122
+AUTOMAZIONE
+Fig. XIV.7.24  
+–  Ad ogni segnale, dato tramite la fotocellula B1 collegata all’ingresso %I1.2, si inseri-
+sce nel registro una rilevazione di oggetto “scarto” delle dimensioni di 30 cm, tramite la 
+%I1.1
+Rung 7
+%I1.4
+%I1.2
+Rung 6
+%I1.1
+LEN: 10
+O
+TYP: FIFO
+I
+F
+%R0
+R
+E
+OPERATE
+%R0.O:= 0
+Rung 4
+COMPARE
+Rung 5
+%R0.F
+%R0.E
+%I1.4
+%I1.3
+Rung 3
+%Q2.1
+%Q2.2
+OPERATE
+%R0.I:= 60
+Rung 2
+%I1.2
+%I1.0
+Rung 1
+%I1.3
+%Q2.0
+OPERATE
+%R0.I:= 30
+%R0.O = 30
+
+[PAG 1435]
+AUTOMAZIONE
+XIV-123
+word %R0.I; la fotocellula B2 collegata all’ingresso %I1.3 non rileva alcun oggetto poi-
+ché è posizionata come in Fig. XIV.7.24.
+–  Se l’oggetto che transita misura 60 cm, la rilevazione viene eseguita simultaneamente 
+dalle due fotocellule collegate agli ingressi %I1.2 e %I1.3; la scrittura sulla word %R0.I 
+sarà allora di oggetto “buono”, (rilevato dal sensore collegato a %I1.3) poiché misura 60 
+cm, mentre il segnale dato tramite %I1.2 incrementerà di un campo l’occupazione della 
+pila FIFO.
+–  Quando il registro sarà riempito con le 10 word, tramite il bit %R0.F (che si porta ad 
+1) verrà messo in moto il secondo spezzone di nastro trasportatore comandato dal motore 
+M2 tramite K2 (uscita %Q2.1); il nastro si fermerà quando il registro, non essendo incre-
+mentato ulteriormente dall’arrivo di altri prodotti, metterà a 0 il bit %R0.F.
+–  Quando i prodotti saranno intercettati dal sensore B3 (%I1.4) verranno eseguite due 
+operazioni: da un lato l’ingresso O del registro preleverà dalla pila di dati il primo dato 
+accatastato e lo trasferirà nella parola di uscita %R0.O; in un secondo tempo (in succes-
+sione scandita dal ciclo del programma), lo stesso %I1.4 attiverà o meno l’elettrovalvola 
+Y1 (uscita %Q2.2) che preleva tramite un cilindro pneumatico i prodotti “scarto”.
+–  L’attivazione dell’uscita %Q2.2 di scarto, dipenderà dal contenuto della parola 
+%R0.O, cioè dalla codificazione data all’oggetto che sta transitando intercettato da %I1.4; 
+se il contenuto di %R0.O rende vera la comparazione (oggetto che misura 30 cm) e se il 
+registro non è vuoto, si attiverà la funzione di “scarto”, altrimenti sarà identificato come 
+prodotto “buono”.
+Nel secondo esempio (Fig. XIV.7.25) il registro viene configurato come pila LIFO e 
+serve sempre a distinguere in una linea di prodotti, i “buoni” dagli “scarti” per una deter-
+minata lavorazione; a differenza della precedente applicazione, in questo esempio vi è una 
+diversa distribuzione delle linee di assemblaggio, per cui è necessario configurare il regi-
+stro in modo LIFO. Il funzionamento è comunque identico al precedente, con la sola dif-
+ferenza che non sarà il primo prodotto accatastato a dover essere prelevato, bensì l’ultimo 
+memorizzato nel registro.
+Fig. XIV.7.25  
+Il funzionamento dell’impianto secondo le specifiche del programma visualizzato in Fig. 
+XIV.7.26 è il seguente:
+–  La pila LIFO viene attivata mediante gli ingressi S3 (%I1.5) ­ B4 (%I1.6) ­ B6 (%I1.8) 
+rispettivamente il reset, l’input di accatastamento nel registro e l’input di prelievo dalla pila 
+di dati. 
+Y3
+B6
+B5
+B4
+CONTENITORE
+SCARTI
+ESPULSORE
+SCARTI
+RILEVATORI
+4 3 2 1
+PEDANA
+ROTANTE Y2
+RILEVATORE
+ROTAZIONE 90°
+S3 (RESET)
+
+[PAG 1436]
+XIV-124
+AUTOMAZIONE
+Fig. XIV.7.26  
+–  L’ingresso S3 (%I1.5) viene inoltre utilizzato per resettare la parola %R1.O che con-
+tiene il valore dell’ultima word estratta dal registro.
+–  Ad ogni segnale dato tramite la fotocellula B4 collegata all’ingresso %I1.6, si inseri-
+sce nel registro una rilevazione di oggetto “scarto” delle dimensioni di 30 cm, tramite la 
+word %R1.I; la fotocellula B5 collegata all’ingresso %I1.7 non rileva alcun oggetto poi-
+ché posizionata come in Fig. XIV.7.25.
+–  Se l’oggetto che transita misura 60 cm, la rilevazione viene eseguita simultaneamente 
+dalle due fotocellule B4 e B5 collegate agli ingressi %I1.6 e %I1.7; la scrittura sulla word 
+%I1.5
+%I1.6
+Rung 13
+O
+%I1.8
+LEN: 10
+I
+Rung 12
+%I1.5
+R
+%R0
+OPERATE
+%R1.O:= 0
+F
+E
+%R1.E
+%I1.7
+Rung 11
+%R1.O = 30
+COMPARE
+%R1.F
+Rung 10
+%I1.7
+%I1.6
+Rung 9
+Rung 8
+OPERATE
+%Q2.4
+%R1.I:= 60
+%Q2.3
+%I1.8
+%R1.I:= 30
+OPERATE
+TYP: LIFO
+
+[PAG 1437]
+AUTOMAZIONE
+XIV-125
+%R1.I sarà allora di oggetto “buono” (rilevato dal sensore B5 collegato a %I1.7) poiché 
+misura 60 cm, mentre il segnale dato tramite %I1.6 incrementerà di un campo l’occupa-
+zione della pila LIFO.
+–  Quando il registro sarà riempito con le 10 word, tramite il bit %R1.F (che si porta ad 1) 
+verrà messo in moto la piastra rotante comandata dall’elettrovalvola Y2 (uscita %Q2.3). 
+–  Quando i prodotti saranno intercettati dal sensore B6 (%I1.8), saranno stati capovolti 
+nella loro disposizione, per cui l’ultimo prodotto accatastato è il primo ad essere estratto 
+come valore di identificazione tramite la parola %R1.O. Verranno quindi eseguite due 
+operazioni: da un lato l’ingresso O del registro preleverà dalla pila di dati l’ultimo dato 
+accatastato e lo trasferirà nella parola di uscita %R1.O; in un secondo tempo (in succes-
+sione scandita dal ciclo del programma), lo stesso %I1.8 attiverà o meno l’elettrovalvola 
+Y3 (uscita %Q2.4) che preleva, tramite un cilindro pneumatico, i prodotti “scarto”.
+–  L’attivazione dell’uscita Y3 (%Q2.4) di scarto, dipenderà dal contenuto della parola 
+%R1.O, cioè dalla codificazione data all’oggetto che sta transitando, intercettato da B6 
+(%I1.8); se il contenuto di %R1.O rende vera la comparazione (oggetto che misura 30 cm) 
+e se il registro non è vuoto, si attiverà la funzione di “scarto”, altrimenti sarà identificato 
+come prodotto “buono” e potrà proseguire per le eventuali lavorazioni.
+Il cablaggio degli I/O dei due esercizi è visualizzato nella Tav. XIV.7.5. 
+7.5.4.  Programmatore a tamburo
+Il blocco programmatore ha un funzionamento simile a quello di un programmatore 
+elettromeccanico a camme, che cambia di passo in funzione di un evento esterno. Lo si 
+immagini fisicamente costituito da un rullo che continua a girare ciclicamente, come il rullo 
+di un carillon, dove ciascun passo è costituito da una parola e ogni camma di questa parola 
+è rappresentata da un bit che può essere allo stato logico alto o basso (Fig. XIV.7.27).
+Fig. XIV.7.27  
+Sono presenti nel PLC preso in considerazione, otto Drum da %DR0 a %DR7 con un 
+numero di passi che varia da 1 a 16 (configurabili a piacere, come lunghezza della tabella 
+del programmatore). Ogni passo (word) è costituito da 16 bit.
+STEP:   0   1   2   3   4   5   6   7   8   9  10 11 12 13 14 15    OUT
+BIT
+0:
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+8:
+9:
+A:
+B:
+C:
+D:
+E:
+F:
+1   1   1   0   0   0   1   1   1   1   1   0   0   1   1   0
+1   1   0   1   1   1   0   0   0   1   1   0   0   1   1   0
+1   0   0   0   1   1   0   0   1   1   0   0   1   0   0   1
+0   0   0   0   1   1   1   1   1   0   0   1   1   1   0   0
+0   0   0   0   1   1   0   1   1   1   1   0   0   0   1   1
+0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+0   0   0   0   0   1   1   0   1   0   1   1   1   0   0   1
+%Q2.0
+%Q2.1
+%M0
+%Q2.3
+%M1
+%M2
+DRi.W0
+   STEP 1
+   STEP 2
+   STEP 3
+   STEP 4
+   STEP 5
+   STEP 6
+0
+1
+1
+1
+1
+1
+1
+1
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+1
+1
+1
+0
+1
+1
+1
+1
+0
+0
+1
+0
+1
+0
+0
+1
+0
+0
+0
+0
+1
+1
+0
+0
+1
+0
+1
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+1
+0
+0
+1
+0
+1
+1
+1
+1
+1
+1
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+0
+0
+1
+1
+0
+0
+0
+1
+1
+0
+1
+0
+1
+1
+0
+0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+DRi.W1
+DRi.W2
+DRi.W3
+DRi.W4
+DRi.W5
+DRi.W6
+DRi.W7
+DRi.W8
+DRi.W9
+DRi.W10
+DRi.W11
+DRi.W12
+DRi.W13
+DRi.W14
+DRi.W15
+
+[PAG 1438]
+XIV-126
+AUTOMAZIONE
+Tav. XIV.7.5  
+L2
+2
+2
+2
+B6
+B4
+B5
+S3
+S2
+B3
+B2
+B1
+S1
+1
+ASSEGNAZIONE I/O
+Y3 ELETTROVALVOLA ESPULSORE SCARTI 2
+Y2 ELETTROVALVOLA PEDANA MOBILE
+Y1 ELETTROVALVOLA ESPULSORE SCARTI 1
+B3 RIVELATORE PRODOTTI PER SCARTO
+B3 RIVELATORE PRODOTTI PER SCARTO
+K2 CONTATTORE DI COMANDO MOTORE NASTRO 2
+K1 CONTATTORE DI COMANDO MOTORE NASTRO 1
+S1 INTERRUTTORE START NASTRO TRASPORTATORE 1
+INGRESSI
+B1 RIVELATORE PRODOTTI h = 30cm
+S2 PULSANTE RESET REGISTRO R0
+B4 RIVELATORE PRODOTTI h = 30 cm
+S3 PULSANTE RESET REGISTRO 1
+B2 RIVELATORE PRODOTTI h = 60 cm
+1
+1
+B2 RIVELATORE PRODOTTI h = 60 cm
+USCITE
+%I1.0
+BIT
+%I1.1
+%I1.2
+%I1.3
+%I1.4
+%I1.5
+%I1.6
+%I1.8
+%I1.7
+BIT
+%Q2.0
+%Q2.2
+%Q2.1
+%Q2.3
+%Q2.4
+Q2
+L1
+34
+33
+N L
+Q1
+19
+TSX Micro
+Modicon
+TER
+AUX
+10
+U 11
+N
+7
+I
+6
+4
+3
+5
+P
+8
+9
+15 14
+13
+T
+12
+17 16
+18
+0V
+Out DC
+24V
+100/240V
+Input AC
+0V
+U 25
+21 20
+23
+O
+22
+24
+U
+29
+P
+27
+T
+26
+28
+31
+T
+30
+32
+Battery
+35
+M2
+34
+33
+34
+33
+19
+19
+10
+U 11
+N
+I
+P
+7
+6
+4
+3
+5
+8
+9
+17
+13
+15
+T
+14
+12
+16
+18
+10
+11
+U
+7
+N
+I
+6
+4
+3
+5
+P
+8
+9
+15 14
+13
+T
+12
+17 16
+18
+U 25
+21
+23
+O
+20
+22
+24
+29
+31
+27
+U
+P
+T
+T
+26
+28
+30
+32
+25
+U
+21 20
+23
+O
+22
+24
+29
+U
+P
+27
+T
+26
+28
+31
+T
+30
+32
+K1
+K2
+3
+M1
+35
+35
+Y2
+Y1
+Y3
+3
+L3
+
+[PAG 1439]
+AUTOMAZIONE
+XIV-127
+Il passo può essere attivo per un determinato tempo (controllato dal temporizzatore di 
+controllo permanenza passo), che viene assegnato tramite la parola %DRi.V, con una base 
+tempi variabile (TB = 1 min, 1 s, 100 ms, 10 ms); la parola %DRi.S contiene invece un 
+valore immediato compreso tra 0 e 15, equivalente al numero di passo in corso.
+Gli ingressi R (Reset) e U (Up), sono rispettivamente adibiti al reset del programmatore 
+cioè al suo ritorno al passo 0, mentre il secondo ingresso determina l’avanzamento dei passi 
+di programma del Drum, ad ogni fronte di salita che viene fornito all’ingresso stesso.
+L’uscita F (Full) associata al bit %DRi.F segnala con la sua messa a 1 che l’ultimo 
+passo definito è in corso.
+La word %DRi.Wj contiene lo stato dei 16 bit che costituiscono il passo di programma 
+(j) del drum (i). Tale parola può essere letta e verificata, ma definita solo in configura-
+zione (configurazione tabella drum).
+Una ripresa a freddo determina il reset del programmatore al passo 0, mentre sia una 
+ripresa a caldo che un jump non determinano variazioni dei dati e dello stato delle varia-
+bili controllate.
+Nella Tab. XIV.7.7 sono sintetizzate le caratteristiche di questo blocco funzione.
+Tab. XIV.7.7  Caratteristiche del blocco programmatore ciclico (Drum)
+La programmazione del drum viene compilata in modo configurazione e assume la 
+forma visualizzata nella tabella di Fig. XIV.7.27.
+Possono essere assegnati sia bit interni che bit di uscite, alle 16 allocazioni (da 0 a F in 
+codice esadecimale) che costituiscono il passo; la lunghezza della tabella varia da un 
+minimo di 1 passo ad un massimo di 16 (da passo 0 a passo 15). Ogni bit di ogni passo 
+può essere configurato a 0 o a 1, determinando la attivazione o meno, in un dato passo 
+delle uscite o dei bit interni corrispondenti.
+Esempio
+L’esempio che segue (Fig. XIV.7.28) servirà a chiarire ulteriormente l’operatività del 
+blocco; si tratta della gestione del traffico in un incrocio tramite un sistema semaforico. 
+Un semaforo controlla una via (semaforo 1) ed un altro (semaforo 2) la strada principale 
