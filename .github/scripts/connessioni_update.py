@@ -211,24 +211,14 @@ Rispondi con JSON:
 Peso da 0 (debole) a 1 (fortissima). Max 5 connessioni. Solo JSON."""
 
     risposta = mistral_chat(prompt, max_tokens=800)
-    if not risposta:
-        print(f'  [DEBUG] Mistral ha restituito None')
-        return []
-    print(f'  [DEBUG] Risposta Mistral ({len(risposta)} chars): {risposta[:200]}')
+    if not risposta: return []
     try:
         s, e = risposta.find('{'), risposta.rfind('}')
         if s >= 0 and e > s:
             data = json.loads(risposta[s:e+1])
-            conns = data.get('connessioni', [])
-            print(f'  [DEBUG] Connessioni parsate: {len(conns)}')
-            for c in conns:
-                print(f'  [DEBUG]   peso={c.get("peso",0)} tipo={c.get("tipo","?")}')
-            return conns
-        else:
-            print(f'  [DEBUG] JSON non trovato nella risposta')
-    except Exception as ex:
-        print(f'  [DEBUG] Parse ERR: {ex}')
-        print(f'  [DEBUG] Risposta completa: {risposta[:500]}')
+            return data.get('connessioni', [])
+    except:
+        pass
     return []
 
 def main():
