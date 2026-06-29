@@ -2,37 +2,35 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-06-28
-pdf_count: 1
+aggiornato: 2026-06-29
+pdf_count: 2
 ---
 
 # Te di Compost
 
 ```markdown
-# Te di Compost
+# Tè di Compost
 
 ## Descrizione
-Il **Te di Compost** (o *compost tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei microrganismi benefici, nutrienti e sostanze umiche presenti nel compost maturo. Questo processo, se eseguito correttamente, trasforma il compost in un biostimolante liquido ricco di batteri aerobici, funghi micorrizici, protozoi e sostanze organiche complesse, capaci di migliorare la salute del suolo e delle piante. Il meccanismo d'azione si basa sulla **riattivazione della vita microbica del suolo**, che a sua volta favorisce la disponibilità di nutrienti, la struttura del terreno e la resistenza delle piante agli stress biotici e abiotici. In particolare, i batteri presenti nel tea competono con i patogeni per lo spazio e le risorse, mentre i funghi micorrizici estendono l'apparato radicale delle piante, migliorando l'assorbimento idrico e minerale.
+Il **Tè di Compost** (o *compost tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo, trasformandolo in un biostimolante liquido pronto per applicazioni fogliari o radicali. Questo processo, se eseguito correttamente, estrae batteri, funghi, protozoi, nematodi benefici e sostanze umiche, oltre a macro e microelementi, creando un "cocktail microbico" che rigenera il suolo e stimola la salute delle piante. Il meccanismo d'azione si basa sulla **bioattivazione del suolo**: i microrganismi del tè colonizzano la rizosfera, competono con patogeni, migliorano la struttura del suolo tramite aggregazione delle particelle e aumentano la biodisponibilità dei nutrienti attraverso processi di mineralizzazione e solubilizzazione.
 
-L'efficacia del te di compost dipende strettamente dalla qualità del compost di partenza (maturo, privo di patogeni e ricco di diversità microbica) e dalle condizioni di preparazione (aerazione, temperatura, tempo di estrazione). In serra outdoor a Caserta, dove il clima mediterraneo può stressare le piante con caldo e umidità elevati, l'applicazione di questo infuso aiuta a mantenere un suolo vivo e resiliente, soprattutto durante le fasi di vegetazione e fioritura, quando la domanda di nutrienti è massima.
+In serra outdoor a Caserta (41°N), dove il clima mediterraneo può stressare le piante con caldo e siccità, il tè di compost agisce come **adattogeno biologico**, rafforzando le difese naturali delle colture (es. cannabis) e riducendo la necessità di input esterni. La presenza di **melassa** (fonte di carbonio semplice) nel processo di preparazione favorisce la proliferazione di batteri aerobici, mentre l’ossigenazione costante (tramite aeratore) previene la formazione di condizioni anaerobiche, che potrebbero generare composti tossici come l’ammoniaca o il metano. Studi dimostrano che applicazioni regolari migliorano la resilienza delle piante a stress idrici e attacchi di insetti, grazie all’induzione di resistenza sistemica acquisita (ISR).
 
 ---
 
 ## Come si applica in serra
 
-### Preparazione (per 100L di soluzione)
-1. **Selezione del compost**: Utilizza compost maturo (3-6 mesi), privo di odori sgradevoli, con rapporto C/N tra 15:1 e 25:1 e ricco di diversità microbica (evita compost con eccesso di letame fresco o materiali non decomposti).
-2. **Estrazione aerobica**:
-   - Riempi un contenitore con **10L di acqua non clorata** (puoi usare acqua piovana o lasciar riposare l'acqua del rubinetto 24h per far evaporare il cloro).
-   - Aggiungi **1kg di compost** in un sacchetto di tela o una retina (evita il contatto diretto con l'acqua per facilitare la filtrazione).
-   - Immergi il sacchetto e agita leggermente per distribuire i microrganismi.
-   - Collega un **aeratore per acquario** (pompa + pietra porosa) per mantenere l'ossigenazione costante (DO > 6 ppm). In alternativa, usa un sistema a goccia con ossigenazione forzata.
-3. **Nutrizione microbica**:
-   - Aggiungi **100g di melassa di canna** (o zucchero di canna) come fonte di carbonio per i batteri.
-   - Opzionale: aggiungi **50g di solfato di magnesio** (sale di Epsom) per supportare la fotosintesi e la sintesi di clorofilla.
-4. **Tempo di estrazione**: Lascia aerare per **24-48h** a temperatura ambiente (18-25°C). Evita temperature superiori a 30°C, che favoriscono lo sviluppo di batteri anaerobici.
-5. **Filtrazione e applicazione**:
-   - Filtra il liquido con una retina fine (100-200 micron) per rimuovere i residui solidi.
-   - Applica **entro 4 ore** dalla preparazione per massimizzare la vitalità microbica.
-   - **Dosi**:
-     - **Radicale**: 10-20L/100m², diluito al 50% con acqua, ogni 15-20 giorni
+**Preparazione (per 10L di tè):**
+1. **Seleziona il compost**: Usa compost maturo (3-6 mesi), privo di patogeni e con rapporto C/N equilibrato. Evita compost fresco o con residui di metalli pesanti.
+2. **Immersione**: Metti **1-2 kg di compost** in un sacchetto di tela (o calza di nylon) e immergilo in **10L di acqua non clorata** (pioggia o acqua decantata per 24h). Usa un **aeratore per acquario** (2-3L/min) per mantenere condizioni aerobiche.
+3. **Nutrizione microbica**: Aggiungi **20-50g di melassa** (o zucchero di canna) per alimentare i batteri. Opzionale: **1 cucchiaio di humus di lombrico** per aumentare la diversità microbica.
+4. **Tempo di estrazione**: Lascia aerare per **24-48h** a temperatura ambiente (18-25°C). Evita l’esposizione diretta al sole.
+5. **Filtraggio**: Rimuovi il sacchetto e filtra il tè con una retina fine (maglia <0.5mm) per eliminare particelle grossolane.
+6. **Applicazione**: Usa entro **4-6h** dalla preparazione per massimizzare la vitalità microbica. Applica **radicale** (irrigazione) o **fogliare** (irrorazione a bassa pressione) nelle ore serali per evitare evaporazione.
+
+**Frequenza e dosi (serra outdoor Caserta):**
+- **Vegetazione**: 1 applicazione ogni 7-10 giorni (dose: 50-100mL/m²).
+- **Fioritura**: Ridurre a 1 applicazione ogni 15 giorni (evitare eccesso di azoto).
+- **Post-raccolta**: Applicare per rigenerare il suolo (dose: 150mL/m²).
+
+**Avvertenze:**
