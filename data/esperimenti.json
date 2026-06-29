@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-06-23T22:04:16.068Z",
-  "versione": "1.0",
+  "lastUpdate": "2026-06-29T08:37:56.454217+00:00",
+  "versione": "3.0",
   "esperimenti_disponibili": [
     {
       "id": "exp_001",
@@ -1673,8 +1673,49 @@
       "durata_giorni": 21,
       "data_proposta": "2026-06-16",
       "attivo": false
+    },
+    {
+      "nome": "Effetto della germinazione con Kit Smart Start su varietà miste in Living Soil outdoor: ottimizzazione della crescita e resa finale",
+      "ipotesi": "Utilizzando confezioni miste di semi (Manuale A) e il Kit Smart Start (Manuale B) per la germinazione, si ottiene una maggiore uniformità, velocità di crescita e resa finale rispetto alla germinazione tradizionale in Living Soil. Questo perché il Kit Smart Start garantisce una germinazione ottimale (Manuale B), mentre le confezioni miste permettono di selezionare le varietà più adatte al Living Soil outdoor (Manuale A). L'ipotesi si basa sulla sinergia tra germinazione controllata e ambiente di crescita ricco di microrganismi.",
+      "protocollo": [
+        "Preparare 4 vasi da 10L con Living Soil (compost maturo, micorrize, lombrichi) identico per composizione, distribuiti in modo casuale in serra outdoor. Ogni vaso riceve 1L di acqua piovana filtrata (pH 6.5) per umidificare il substrato.",
+        "Seminare in ogni vaso 5 semi di una confezione mista (es. 2 femminizzati THC alto, 2 autofiorenti CBD, 1 regolare ibrido F1) secondo due metodi: 2 vasi con germinazione tramite Kit Smart Start (Manuale B) e 2 vasi con germinazione diretta in Living Soil (Manuale A).",
+        "Monitorare giornalmente la germinazione (giorni 3-7) e registrare tasso di germinazione, tempo medio di emergenza e uniformità. Dopo 7 giorni, trapiantare le piantine più vigorose (2 per vaso) in vasi da 20L con lo stesso Living Soil, mantenendo la stessa distribuzione.",
+        "Irrigare solo con acqua piovana (water-only) per 30 giorni, registrando consumo idrico, altezza delle piante, numero di foglie e salute generale ogni 5 giorni. A fine periodo, misurare biomassa fresca e secca (radici + parte aerea) per valutare la resa."
+      ],
+      "materiali": [
+        "4 vasi in terracotta (10L e 20L)",
+        "Living Soil (compost, micorrize, lombrichi)",
+        "Kit Smart Start per germinazione",
+        "Confezioni miste di semi di cannabis (es. Zamnesia 'Mix Outdoor')",
+        "pHmetro, acqua piovana filtrata, bilancia di precisione",
+        "Cronometro, righello, quaderno di campo"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Tasso di germinazione (%) e tempo medio di emergenza (giorni)",
+        "Altezza media (cm), numero di foglie, salute visiva (scala 1-5)",
+        "Consumo idrico (L/giorno/vaso), biomassa fresca e secca (g)",
+        "Uniformità delle piante (deviazione standard dell'altezza)"
+      ],
+      "variabili_controllo": "Stesso Living Soil, stessa esposizione solare, stessa irrigazione (solo acqua piovana), stesso numero di piante per vaso (2), stessa temperatura e umidità ambientale (serra outdoor controllata).",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "Come Innaffiare Le Piante Di Cannabis",
+      "fonte_b": "Come Far Germinare I Semi Di Cannabis Con Il Kit Smart Start",
+      "originalita": "L'esperimento combina due approcci normalmente trattati separatamente: l'uso di confezioni miste per la biodiversità genetica (Manuale A) e la germinazione ottimizzata con Kit Smart Start (Manuale B). Nessun manuale suggerisce di testare l'interazione tra questi due elementi in un sistema Living Soil outdoor, né di misurare l'impatto sulla resa finale. L'originalità sta nell'integrazione di germinazione controllata e selezione varietale in un contesto di agricoltura rigenerativa.",
+      "id": "esp_conn_2026-06-29_001",
+      "data_proposta": "2026-06-29",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
-  "aggiornato": "2026-06-19 09:38"
+  "aggiornato": "2026-06-19 09:38",
+  "ultima_generazione": {
+    "data": "2026-06-29",
+    "nuove_proposte": 1,
+    "pdf_analizzati": 19,
+    "connessioni_usate": 5
+  }
 }
