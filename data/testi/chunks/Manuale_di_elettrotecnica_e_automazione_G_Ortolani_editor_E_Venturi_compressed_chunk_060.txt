@@ -1,0 +1,792 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 60/116 ===
+Chars: 43,136 | Offset: 2,607,335
+
+stodia ha la propria rilevanza, che si differenzia a seconda della 
+specifica applicazione o a seconda delle condizioni ambientali e lavorative presenti.
+Una custodia in ottone placcato cromo trova applicazione su una vasta gamma di mac-
+chine di controllo, di processo e di costruzione, macchine tessili, trasportatori a nastro, 
+macchine per la lavorazione della plastica, del legno, nella robotica, per la maggior parte 
+dei sistemi automatizzati. Una custodia in acciaio inossidabile trova impiego principal-
+mente nelle industrie alimentari, chimiche e farmaceutiche nelle quali sono richiesti mate-
+riali antiruggine ed elevato valore di robustezza.
+Una custodia in plastica trova applicazione nei settori simili a quelli dove viene utiliz-
+zata quella in ottone. La decisione viene presa dall'utilizzatore in relazione alla specifica 
+applicazione e allo specifico inquinamento ambientale.
+Infine una custodia in teflon è molto utilizzata nelle industrie alimentari e chimiche. 
+Essa si presenta come molto resistente agli acidi, alle sostanze caustiche e agli olii e grassi 
+corrosivi.
+Le caratteristiche generali dei sensori di prossimità induttivi si possono riassumere 
+come segue:
+–  esecuzione in contenitore metallico cilindrico, metallico o plastico a parallelepi-
+pedo, plastico a forcella;
+
+[PAG 1263]
+SENSORI E TRASDUTTORI
+XIII-33
+–  numero illimitato di operazioni;
+–  resistenza agli urti 40 g di durata 10 ms, secondo le norme IEC 68.2.27;
+–  resistenza alle vibrazioni 25 g (1 a 55 Hz) con ampiezza  2 mm, secondo norme 
+IEC 68.2.6;
+–  grado di protezione IP67 o IP65;
+–  campo di temperatura per funzionamento 25 60 °C; variabile a seconda dei tipi.
+Le caratteristiche di intervento dei sensori di prossimità induttivi con uscita a due 
+livelli si possono riassumere in:
+–  distanza di intervento frontale da 0,8 mm a 15 mm, a seconda dei tipi;
+–  tolleranza sulla distanza di intervento frontale  10%;
+–  corsa differenziale, in% della distanza di intervento e con valori  10%;
+–  ripetibilità in % della distanza di intervento  10%;
+–  frequenza di commutazione 25  3000 Hz, a seconda dei casi.
+Le caratteristiche di intervento dei sensori di prossimità induttivi con uscita analogica 
+in tensione sono le seguenti:
+–  il campo di sensibilità con il sensore di diametro 12 mm è di 1  2 mm, mentre con 
+sensore di diametro 18 mm è di 3  5 mm;
+–  la tensione di uscita tipica a 20 °C all'estremo inferiore del campo di linearità è di 
+130 mV, mentre all'estremo superiore del campo di linearità è di 1050 mV;
+–  la sensibilità tipica del sensore di diametro 12 mm alla temperatura di 20 °C è di 
+900 mV/mm, mentre quella del sensore di diametro 18 mm, sempre alla stessa tempera-
+tura, è di 450 mV/mm;
+–  l'errore caratteristico di linearità è  0,07 mm.
+Le caratteristiche di intervento dei sensori di prossimità induttivi con uscita analogica 
+in corrente si possono riassumere in:
+–  il campo di sensibilità con il sensore del diametro 8 mm è di 0,1  1,5 mm, con il 
+sensore del diametro di 12 mm è di 0,1  3 mm, con il sensore del diametro di 18 mm è di 
+0,1  6 mm e con il sensore del diametro di 30 mm è di 0,5  10 mm;
+–  la corrente di uscita alla minima distanza di azionamento è pari a 20 mA; la cor-
+rente di uscita alla massima distanza di azionamento è pari a 4 mA (per corrente di uscita 
+è intesa la corrente massima che il sensore può sopportare in funzionamento continuo);
+–  la variazione massima della corrente di uscita al variare della temperatura (in riferi-
+mento al suo valore a 20 °C) è fissata a  5%, mentre quella al variare della tensione di 
+alimentazione (in riferimento al suo valore a 24 V in corrente continua) è fissata a  0,5%;
+–  la dispersione massima della curva distanza/corrente al variare della temperatura 
+(sempre in riferimento a 20 °C) è di  5%.
+I sensori di prossimità induttivi svolgono essenzialmente funzioni di controllo di pre-
+senza, assenza e fine corsa. Si aggiungono a queste anche le funzioni di rilevamento di 
+passaggio, di cadenza e di sequenza, posizionamento, codifica e conteggio pezzi. Con 
+queste capacità essi sono particolarmente indicati quando la velocità di attacco e di fun-
+zionamento è particolarmente elevata oppure quando l'ambiente esterno presenta polveri, 
+agenti chimici, umidità e vibrazioni.
+Ulteriori utilizzi si riscontrano nelle situazioni di rilevamento di pezzi di piccole 
+dimensioni oppure di materiali verniciati di fresco.
+L'abituale impiego industriale comprende macchine di assemblaggio, macchine uten-
+sili, confezionatrici, impianti di movimentazione e di trasporto.
+
+[PAG 1264]
+XIII-34
+SENSORI E TRASDUTTORI
+3.2  Sensori a effetto Hall
+I sensori di prossimità a effetto Hall sono dei rilevatori magnetici e funzionano sul 
+fenomeno fisico che denomina lo stesso sensore. Se in una piastra metallica, chiamata 
+cella di Hall, si fa passare una corrente elettrica I e la piastra è inserita in un campo 
+magnetico a essa perpendicolare, si genera una differenza di potenziale, definita tensione 
+di Hall UH, tra i bordi opposti della stessa piastra (Fig. XIII.3.8).
+Fig. XIII.3.8  Cella di Hall.
+La tensione di Hall UH varia a seconda dei valori della corrente I e del campo magne-
+tico con la relazione
+(XIII.3.1)
+dove KH è la costante di Hall,  la densità del flusso magnetico, I la corrente che transita 
+nel conduttore e z lo spessore del conduttore.
+Normalmente i contenitori di questo particolare tipo di sensore di prossimità sono a 
+forcella e la cella di Hall, insieme all'elettronica di condizionamento, si trova su uno dei 
+due rami della forcella, mentre nel secondo ramo viene inserito un magnete.
+Ora se tra i due rami della forcella transita un oggetto di natura ferromagnetica, il 
+campo magnetico subisce una deformazione e la cella di Hall non viene più interessata dai 
+valori del campo magnetico precedente. Questo fa sì che si generi in uscita una variazione 
+di stato elettrico.
+Questi trasduttori trovano applicazioni molto diversificate, per esempio sono utilizzati 
+per rilevare la commutazione delle fasi dei motori elettrici oppure, nelle tastiere, per rile-
+vare la pressione che si esercita su un tasto e quindi il suo abbassamento.
+Le caratteristiche generali dei sensori di prossimità a effetto Hall si possono riassu-
+mere come segue:
+–  esecuzione in contenitore in materiale plastico, rinforzato con fibre di vetro;
+–  numero illimitato di operazioni;
+–  sensibilità a tutti i materiali ferromagnetici;
+–  grado di protezione IP67;
+–  campo di temperatura di funzionamento 20 ÷ 70 °C.
+Le caratteristiche elettriche comunemente riscontrabili si possono riassumere in:
+–  tensione di alimentazione 5 ÷ 24 V in corrente continua;
+–  massima ondulazione residua ammessa pari a 5%;
+–  massima corrente di uscita 25 mA;
+–  caduta di tensione alla massima corrente di uscita uguale o minore di 0,5 V;
+–  assorbimento a vuoto uguale o inferiore a 9 mA;
+–  polarità di uscita del tipo NPN;
+–  funzione di uscita di tipo NC;
+–  frequenza di commutazione pari a 5 kHz.
+Campo magnetico
+Corrente (I)
+Tensione
+(UH)
+UH
+KHI
+z
+------------
+=
+
+[PAG 1265]
+SENSORI E TRASDUTTORI
+XIII-35
+3.3  Sensori magnetici a contatto reed
+I sensori di prossimità magnetici a contatto reed fondano il loro funzionamento sulla 
+presenza di contatti speciali, denominati reed, azionati da un campo magnetico esterno, 
+generato da un magnete permanente.
+Un contatto reed, denominato anche ampolla reed (linguetta), è formato da due bar-
+rette flessibili di materiale ferromagnetico (per esempio ferro-nichel), piatte, di bassa 
+riluttanza ed ermeticamente sigillate, inserite all'interno di un tubo di vetro avente 
+un'atmosfera di gas inerte (Fig. XIII.3.9).
+Le barrette sono posizionate in modo che le parti terminali si contrappongano l'una 
+all'altra, senza però toccarsi. Le barrette inoltre si prolungano oltre l'involucro e sono 
+placcate con metallo altamente conduttivo, come rodio oppure oro. 
+Fig. XIII.3.9  Nomenclatura delle principali parti di un contatto reed.
+I sensori magnetici a contatti reed entrano in funzione col manifestarsi di un campo 
+magnetico, generato da un magnete permanente o da una bobina montata vicino o intorno 
+al contatto reed. Quando il contatto viene influenzato da un campo magnetico, le estremità 
+delle barrette assumono polarità magnetica di segno opposto e, quando viene raggiunta 
+una sufficiente intensità del campo magnetico, la forza di attrazione degli opposti poli 
+magnetici vince la rigidità delle barrette, flettendole l'una sull'altra, determinando il con-
+tatto. Al termine dell'influsso del campo magnetico, l'effetto a molla del materiale delle 
+barrette provoca la separazione del contatto e riporta le condizioni elettriche nella situa-
+zione precedente. L'operazione può essere ripetuta milioni di volte anche a elevatissime 
+frequenze.
+La Figura XIII.3.10 schematizza un contatto reed utilizzato nei sensori magnetici con 
+il relativo azionatore a magnete permanente.
+Fig. XIII.3.10  Polarizzazione delle lamelle del contatto reed.
+Le principali caratteristiche di un'ampolla reed si possono riassumere come segue.
+Bassa e stabile resistenza del contatto. Le ampolle reed hanno una resistenza di con-
+tatto nell'ordine dei milliohm. La resistenza di contatto non è soggetta alla temperatura, e 
+quindi non varia, e questo le rende ideali per applicazioni di misura a basso livello di 
+segnale.
+Sigillatura ermetica. La sigillatura ermetica dei contatti in atmosfera di gas inerte li 
+Distanza
+Contatto
+Gas inerte
+Terminale
+Involucro
+sigillato
+Lamella reed
+N
+N
+N
+S
+S
+S
+
+[PAG 1266]
+XIII-36
+SENSORI E TRASDUTTORI
+protegge dalla polvere, dalla corrosione e dalla ossidazione.
+Lunga vita. Non avendo parti in movimento o striscianti come altri tipi di contatto, le 
+ampolle reed presentano una vita meccanica illimitata.
+Velocità di funzionamento. Le ampolle reed sono caratterizzate da una velocità di 
+intervento molto più elevata di quella dei normali relè e questo le rende adeguate per 
+applicazioni con elevate velocità di commutazione.
+Leggerezza e compattezza. Si possono inserire in spazi molto ridotti e quindi si pre-
+stano molto bene per applicazioni in apparecchiature miniaturizzate.
+I sensori di prossimità con contatti reed possono essere comandati da un magnete per-
+manente o da un elettromagnete.
+Fig. XIII.3.11  Differenti modalità di comando per avvicinamento di un contatto reed, uti-
+lizzando un magnete permanente.
+Il metodo più comunemente impiegato è quello del magnete permanente, che può 
+essere eseguito per avvicinamento oppure per rotazione. Il metodo di comando per avvici-
+namento consiste nell'avvicinare un magnete permanente all'ampolla reed secondo le 
+modalità perpendicolare, parallela, trasversale e a perno (Fig. XIII.3.11). L'entità 
+dell'avvicinamento dipende dalla sensibilità dell'ampolla reed e dalla forza del magnete. 
+Quando il magnete è sufficientemente vicino, il contatto si chiude (fase di pull-in, cioè di 
+eccitazione) e quando il magnete si è sufficientemente allontanato, il contatto si riapre 
+(fase di drop-out, cioè di diseccitazione).
+Il metodo invece rotatorio consiste nel ruotare il magnete sul proprio asse, tenendolo 
+in prossimità del contatto reed (Fig. XIII.3.12). Quando, per effetto della rotazione, l'asse 
+longitudinale del magnete sarà parallelo a quello dell'ampolla reed, si otterrà la chiusura 
+del contatto.
+Fig. XIII.3.12  Comando per rotazione di un contatto reed, utilizzando un magnete per-
+manente.
+Oltre a questi due metodi, è possibile azionare il contatto di un sensore magnetico reed 
+per polarizzazione oppure per schermatura.
+Perpendicolare
+Parallelo
+Trasversale
+A perno (angolare)
+N
+S
+N
+S
+N
+S
+N
+S
+N
+S
+N
+S
+
+[PAG 1267]
+SENSORI E TRASDUTTORI
+XIII-37
+Nel primo caso il metodo consiste nel mantenere fisso, accanto all'ampolla, un 
+magnete, in modo che il contatto del sensore sia costantemente chiuso, e successivamente 
+avvicinare un secondo magnete, di polarità opposta al primo, in modo che la perdita di 
+polarizzazione causi l'apertura del contatto.
+Nel secondo caso si fissa un magnete permanente vicino al sensore, in modo che 
+quest'ultimo risulti costantemente chiuso, e successivamente si fa transitare un corpo fer-
+romagnetico tra l'ampolla e il magnete. Questo passaggio esercita la funzione di schermo 
+e provoca l'apertura del contatto (Fig. XIII.3.13).
+Fig. XIII.3.13  Comando per polarizzazione e per schermatura di un contatto reed, utiliz-
+zando un magnete permanente.
+La versione con l'elettromagnete infine prevede una bobina posta in prossimità del 
+sensore magnetico: il contatto reed viene influenzato quando le spire della bobina ven-
+gono percorse da una corrente e la bobina genera un campo magnetico. Le principali con-
+figurazioni di questa versione possono essere per scopi generali, per polarizzazione e 
+bistabile (Fig. XIII.3.14).
+In commercio è possibile trovare un sensore di prossimità magnetico con contatti reed 
+di diverso formato (per esempio standard oppure miniatura), ma è anche possibile trovarlo 
+con differenti funzioni d'uscita.
+Fig. XIII.3.14  Tipi diversi di comando di un contatto reed, utilizzando un elettroma-
+gnete.
+Quelle comunemente realizzate si possono riassumere in:
+Normalmente aperto. Il contatto risulta essere aperto quando il magnete di aziona-
+mento è a una distanza tale da non poterlo influenzare; il contatto si chiude quando il 
+magnete si avvicina.
+Normalmente chiuso. Il contatto risulta già chiuso a causa di un elettromagnete 
+interno a contatto con il bulbo di vetro del reed; l'avvicinamento del magnete di aziona-
+mento, avente polarità opposta, determina l'annullamento del campo magnetico preesi-
+stente e fa aprire il contatto. Occorre considerare che, per questo tipo di sensori, esiste una 
+S
+N
+N
+S
+N
+S
+Polarizzazione
+Schermatura
+N
+S
+N
+S
+Alimentazione
+Scopi generali
+S
+N
+S
+N
+N
+S
+N
+S
+Alimentazione
+Alimentazione
+Alimentazione
+Polarizzazione
+Bistabile
+
+[PAG 1268]
+XIII-38
+SENSORI E TRASDUTTORI
+distanza minima, tra l'involucro del sensore e l'unità magnetica, sotto la quale il contatto 
+potrebbe richiudersi. La distanza minima varia a seconda del formato del sensore reed 
+impiegato e a seconda dell'unità magnetica di azionamento scelta.
+Scambio. All'interno del bulbo di vetro vengono realizzate, in fase di costruzione, le 
+funzioni di contatto normalmente aperto e normalmente chiuso. L'avvicinamento o 
+l'allontanamento dell'unità magnetica provoca la commutazione di queste due funzioni.
+Bistabile. Il contatto bistabile viene ottenuto inserendo un magnete all'interno del sen-
+sore, in modo che lo prepolarizzi ma senza chiudere il contatto. L'avvicinamento di un 
+magnete con polarità concorde rinforza il campo magnetico esistente e provoca la chiu-
+sura del contatto, che permane anche quando il magnete esce dall'area di influenza. 
+Occorre un secondo magnete con opposta polarità per provocare l'apertura del contatto. È 
+possibile trovare la funzione bistabile applicata anche a un contatto di scambio.
+I sensori di prossimità magnetici a contatto reed si possono trovare in contenitore pla-
+stico con forma cilindrica, parallelepipeda e a forcella. A seconda delle loro dimensioni e 
+delle dimensioni dell'ampolla reed in essi contenuta è possibile differenziarli in:
+–  Sensori magnetici in versione micro miniatura e miniatura. I primi si trovano in un 
+contenitore parallelepipedo con dimensioni molto ridotte e in genere presentano in uscita 
+le funzioni di contatto normalmente aperto e di scambio. I secondi sono costruiti in un 
+contenitore parallelepipedo, contenente contatti reed in versione miniatura. Si possono 
+scegliere con funzioni d'uscita di contatto normalmente chiuso, normalmente aperto e 
+scambio.
+–  Sensori magnetici in versione frontale miniatura e frontale standard. Tutti e due i 
+tipi si presentano in un contenitore cilindrico con contatti reed miniatura, il primo, e con 
+contatti reed standard, il secondo. In entrambi sono disponibili le funzioni di uscita nor-
+malmente aperto, normalmente chiuso e scambio.
+–  Sensori magnetici in versione standard. Si presentano inseriti in un contenitore di 
+forma parallelepipeda e con contatti reed di tipo standard. Le funzioni disponibili in uscita 
+coprono tutte le possibili soluzioni.
+–  Sensori magnetici in versione standard con connessione a faston. Vengono costru-
+iti in un contenitore plastico rinforzato da fibre di vetro e schermato lateralmente per 
+ridurre le interferenze magnetiche in caso di montaggio in batteria. Presentano in uscita 
+solo la funzione bistabile.
+Nella differenziazione appena svolta è possibile anche riscontrare sensori magnetici 
+con uscita a triac, che vengono impiegati su carichi particolarmente induttivi e in corrente 
+alternata. In questo particolare tipo di sensori magnetici, il contatto reed pilota un raddriz-
+zatore controllato (triac), il quale è posizionato all'interno del sensore e comanda a sua 
+volta il carico. È possibile in questo modo operare su carichi induttivi con alta corrente di 
+spunto e di regime (contattori, elettrovalvole). Il loro funzionamento è esclusivamente in 
+corrente alternata, con una tensione di alimentazione tra i 24 e i 230 volt.
+Infine il tipo a forcella utilizza una lamina ferromagnetica, che svolge la funzione di 
+schermo, per effettuare il comando. Anch'esso si differenzia per la forma, le dimensioni 
+del contenitore e il formato del contatto reed. La qualità principale di questi sensori è la 
+garanzia di elevate prestazioni e sicurezza. Normalmente il contatto reed e il magnete per-
+manente sono annegati in resina poliuretanica, la quale garantisce ermeticità alle polveri, 
+all'acqua e una elevata resistenza agli urti.
+3.4  Sensori capacitivi
+I rilevatori di prossimità capacitivi sono dei sensori di tipo passivo che fanno leva per 
+il loro funzionamento sulla variazione della capacità parassita che si forma tra il sensore e 
+l'oggetto da rilevare.
+
+[PAG 1269]
+SENSORI E TRASDUTTORI
+XIII-39
+Condizionatamente alla distanza che esiste tra l'oggetto da rilevare e la faccia sensi-
+bile del sensore, entra in oscillazione un particolare circuito e questa oscillazione, a 
+seconda che si generi oppure no, determina l'intervento di un rilevatore a soglia, il quale 
+comanda un amplificatore per l'azionamento del carico esterno.
+Il sensore di prossimità capacitivo può essere impiegato per rilevare oggetti metallici 
+oppure non metallici, come per esempio il legno, la plastica, i liquidi ecc. Normalmente il 
+sensore è provvisto di regolatore a vite della distanza di rilevamento, in modo da poterlo 
+adattare alla specifica applicazione.
+Le caratteristiche generali dei sensori di prossimità capacitivi si possono riassumere 
+come segue:
+–  esecuzione in contenitore metallico cilindrico liscio o filettato;
+–  numero illimitato di operazioni;
+–  resistenza agli urti 40 g di durata 10 ms, secondo le norme IEC 68.2.27;
+–  resistenza alle vibrazioni 25 g (1 a 55 Hz) con ampiezza  2 mm, secondo norme 
+IEC 68.2.6;
+–  grado di protezione IP65;
+–  campo di temperatura per funzionamento 10 ÷ 60 °C.
+Le caratteristiche di intervento dei sensori di prossimità capacitivi si possono riassu-
+mere in:
+–  distanza di intervento frontale da 3 mm a 20 mm, a seconda dei tipi;
+–  tolleranza sulla distanza di intervento frontale 15%;
+–  corsa differenziale in % della distanza di intervento  15%;
+–  ripetibilità in % della distanza di intervento  10%;
+–  frequenza di commutazione pari a 10 ÷ 200 Hz, a seconda dei tipi.
+3.5  Sensori pneumatici
+Anche nel campo della pneumatica è possibile ritrovare dei sensori che, per la loro 
+particolare struttura, possono essere utilizzati per rilevare degli oggetti nelle immediate 
+vicinanze. Questo consente ovviamente di consolidare sempre di più l'unione tra la pneu-
+matica e l'elettronica nel campo dell'automazione.
+I diversi tipi di sensori pneumatici si possono dividere in due gruppi:
+–  di prossimità,
+–  a interruzione di getto.
+La loro comune caratteristica è di utilizzare, se alimentati a bassa pressione, degli ele-
+menti di amplificazione, in quanto anche il segnale in uscita risulta essere di insufficiente 
+pressione. Gli elementi utilizzati per l'amplificazione dei segnali sono gli amplificatori, se 
+il segnale risulta di valore maggiore di quello della pressione atmosferica (segnale posi-
+tivo) e i vacuometri, se il segnale risulta inferiore (segnale negativo).
+Il primo tipo di sensori, denominato di prossimità o a riflessione, funziona sull'emis-
+sione di un getto d'aria che, in condizioni di assenza dell'oggetto da rilevare, determina 
+una depressione nel condotto di rilevamento dello stesso sensore. A questa condizione 
+viene associata una mancanza di segnale e quindi, in termini elettrici, una condizione di 
+contatto aperto (OFF). Se il getto d'aria invece trova come ostacolo la presenza 
+dell'oggetto da rilevare, viene riflesso dall'oggetto e provoca un aumento della pressione 
+nel condotto di rilevamento. A questa seconda condizione viene associata la presenza di 
+segnale e quindi, in termini elettrici, una condizione di contatto chiuso (ON).
+La Fig. XIII.3.15 rappresenta in modo semplificato la struttura e il principio di funzio-
+namento di un sensore pneumatico a riflessione.
+Occorre precisare che in questo tipo di sensori sono importanti sia la pressione di ali-
+mentazione sia la distanza dell'oggetto; entrambi condizionano il valore del segnale in
+
+[PAG 1270]
+XIII-40
+SENSORI E TRASDUTTORI
+uscita.
+Ha poca importanza la superficie degli oggetti da controllare, mentre è indispensabile, 
+per un corretto rilevamento, che detti oggetti abbiano una superficie con un'area adeguata.
+Fig. XIII.3.15  Elementi principali e principio di funzionamento di un sensore pneuma-
+tico a riflessione.
+Il secondo tipo di sensori, denominati a interruzione di getto, possono essere nelle 
+versioni:
+–  a getto diretto (o a forcella),
+–  a getti contrapposti,
+–  a getti combinati.
+Vengono chiamati anche barriere pneumatiche, in analogia con i sensori optoelettro-
+nici.
+La versione a getto diretto è formata da un ugello emittente e da uno ricevente, ovvia-
+mente allineati. Nella situazione di riposo l'ugello ricevente viene colpito dall'aria emessa 
+dall'altro ugello, determinando per mezzo dell'amplificatore un segnale di uscita. Quando 
+invece per la presenza di un oggetto il flusso d'aria viene interrotto, il segnale in uscita 
+viene annullato.
+La versione a getti contrapposti vede la presenza di una fuoriuscita d'aria sia 
+nell'ugello emettitore sia in quello ricevente. Nel secondo però essa ha una pressione infe-
+riore e l'alimentazione viene derivata dalla stessa dell'ugello emittente. In condizioni di 
+non presenza dell'azionatore la differenza di pressione tra i due crea un fronte d'impatto 
+vicino all'uscita dell'ugello a minor pressione, generando una certa resistenza all'uscita 
+della sua aria. È questa resistenza che provoca un ritorno di pressione con la conseguente 
+emissione del segnale nel condotto di rilevamento. Se invece si interpone tra i due flussi 
+di aria un oggetto, il flusso a maggior pressione fuoriesce liberamente, non si crea il fronte 
+d'impatto e, senza la resistenza alla libera uscita dell'aria dell'ugello ricevitore, viene 
+annullato il segnale in uscita.
+La versione a getti combinati è normalmente composta da un sensore a forcella e da 
+un ugello ausiliario, di disturbo. In condizioni di assenza dell'oggetto da rilevare, l'ugello 
+ausiliario disturba con il suo getto d'aria il flusso costante che l'emettitore e il ricevitore 
+del sensore a forcella vorrebbero stabilire. Il segnale in uscita in questa situazione non esi-
+ste. Quando un oggetto passa, si determina una interruzione del getto ausiliario e, conse-
+guentemente, si ripristina il flusso tra i due ugelli del sensore a getto diretto. In questo 
+modo si ottiene un segnale in uscita.
+3.6  Sensori a ultrasuoni
+I sensori di prossimità ultrasonici si basano sul fenomeno dell'emissione di impulsi 
+sonori a elevata frequenza per saggiare la presenza di oggetti situati nelle loro immediate 
+vicinanze. Il loro funzionamento sfrutta il segnale di ritorno (eco) che gli oggetti aziona-
+tori riflettono. È principalmente questa caratteristica che li rende idonei per rilevare 
+oggetti di qualsiasi natura, anche a distanza elevata.
+Getto di aria
+Getto di aria
+Azionatore
+Alimentazione
+a bassa pressione
+Alimentazione
+a bassa pressione
+Contatto di rilevamento
+(in depressione)
+Contatto di rilevamento
+(in pressione)
+
+[PAG 1271]
+SENSORI E TRASDUTTORI
+XIII-41
+Nota la velocità di propagazione delle onde acustiche Vc e l’angolo  tra la direzione 
+di propagazione e la perpendicolare alla superficie riflettente (angolo di incidenza), la 
+relazione che lega la distanza al tempo di ritardo Tr è la seguente:
+(XIII.3.2)
+Ovviamente, se l’oggetto è sufficientemente distante dalla coppia emettitore/ricevi-
+tore l’angolo di incidenza è prossimo allo zero (cos   1).
+L'elemento principale di trasduzione può essere:
+–  un elemento piezoelettrico,
+–  un condensatore.
+Nel caso piezoelettrico un cristallo di quarzo, posto in vibrazione, emette un treno di 
+impulsi a elevata velocità. A seconda del tipo, l'elemento ricevente può essere nello stesso 
+trasduttore oppure no. In questo secondo caso i due elementi devono essere opportuna-
+mente allineati. Se il sensore a ultrasuoni possiede l'elemento emettitore e quello rice-
+vente nel medesimo contenitore e se nel campo di intervento non c'è nulla, il treno di 
+impulsi si perde nell'aria e non viene generato nessun segnale elettrico. Se risulta presente 
+un oggetto nel campo di intervento, il treno di impulsi viene riflesso e ritorna verso la 
+fonte d'emissione. Viene rilevato dal ricevitore, che lo converte in segnale elettrico.
+Se il sensore ad ultrasuoni è formato dagli elementi emettitore e ricevente posti in 
+contenitori diversi e se nel campo di intervento non c'è nulla, il treno di impulsi arriva 
+senza nessuna interruzione all'elemento ricevente che genera un segnale elettrico conti-
+nuo. Se risulta presente un oggetto nel campo di intervento, il treno di impulsi viene inter-
+rotto con la conseguente cessazione del segnale elettrico emesso in uscita.
+Nel caso dell'utilizzo di un condensatore, una delle sue armature viene messa in vibra-
+zione per effetto elettrostatico. Se tra le due armature transita l'oggetto da rilevare, cambia 
+il campo elettrico e quindi anche la frequenza di vibrazione. È questo cambiamento che 
+determina l'interruzione del segnale.
+Un aspetto rilevante che contraddistingue i sensori di prossimità ad ultrasuoni è la 
+possibilità di selezionare un'area ben precisa come campo di intervento: essi risultano sen-
+sibili solo agli oggetti che transitano in essa.
+Fig. XIII.3.16  Alcuni esempi di utilizzo dei sensori di prossimità ad ultrasuoni.
+Il sensore di prossimità a ultrasuoni può essere impiegato per rilevare oggetti metallici 
+oppure non metallici, come per esempio il legno, la plastica, i liquidi, cioè materiali che 
+riflettono in modo ineccepibile gli ultrasuoni; per quei materiali che assorbono gli ultra-
+suoni, come per esempio la gommapiuma, e nel caso di impiego di sensori in un'unica 
+custodia, viene installato nella zona opposta al sensore uno schermo riflettente: in assenza 
+di oggetti è lo stesso schermo a essere rilevato; quando passa un oggetto gli impulsi sonori 
+non vengono più ricevuti.
+d
+1
+2--VcTr
+
+cos
+=
+
+[PAG 1272]
+XIII-42
+SENSORI E TRASDUTTORI
+In ambito industriale essi trovano impiego come rilevatori di presenza, conteggio dei 
+pezzi e come rilevatori di profilo (Fig. XIII.3.16).
+In conclusione, le loro caratteristiche generali si possono riassumere in:
+–  esecuzione in contenitore metallico filettato;
+–  numero illimitato di operazioni;
+–  resistenza agli urti 40 g di durata 10 ms, secondo le norme IEC 68.2.27;
+–  resistenza alle vibrazioni 25 g (1 a 55 Hz) con ampiezza  2 mm, secondo norme 
+IEC 68.2.6;
+–  grado di protezione IP65;
+–  campo di temperatura per funzionamento 10 ÷ 60 °C.
+Le loro caratteristiche di intervento invece si possono riassumere in:
+–  distanza minima di intervento pari a 20 cm;
+–  distanza massima di intervento pari a 100 cm (regolabile);
+–  tolleranza sulla massima distanza di intervento  10%;
+–  ripetibilità  2 mm;
+–  frequenza massima di commutazione pari a 4 Hz;
+–  superficie minima da rilevare 4 cm2;
+–  massima inclinazione consentita alla superficie più piccola rilevabile, posta alla 
+massima distanza (in relazione a un piano parallelo alla superficie sensibile), pari a 3°.
+3.7  Sensori optoelettronici
+I sensori optoelettronici, o fotoelettrici, fondano il loro funzionamento sulle capacità 
+fisiche degli elementi fotosensibili impiegati a cambiare le loro caratteristiche elettriche 
+in relazione all'intensità luminosa della luce che li colpisce.
+La variazione dell'intensità luminosa della sorgente di luce che investe l'elemento 
+ricevitore, condizionata dalla presenza o dalla assenza dell'oggetto da rilevare, fa sì che 
+quest'ultimo emetta un segnale elettrico. Esso, opportunamente elaborato, sarà l'elemento 
+di pilotaggio di uno stadio finale amplificatore in grado di azionare un carico esterno (Fig. 
+XIII.3.17).
+Fig. XIII.3.17  Rappresentazione schematica dei componenti principali di un sensore di 
+prossimità optoelettronico.
+Normalmente, per poter operare fino alla soglia ambientale di 2000 lux e per ottenere 
+elevate distanze di intervento con limitati consumi energetici, si opta per una sorgente di 
+luce di tipo infrarosso modulata. Come per gli altri sensori di prossimità, anche il sensore 
+optoelettronico non ha nessun contatto fisico con l'oggetto da rilevare e conseguentemente 
+è immune da qualsiasi reazione fisica. Esso può rilevare oggetti di qualsiasi natura, con 
+distanze che variano da pochi millimetri sino a diversi metri.
+In commercio è possibile trovare sensori optoelettronici nelle sotto indicate versioni 
+base.
+Il primo tipo viene definito con termini diversi, quali a diffusione, a riflessione diretta, 
+a tastatore oppure di prossimità, a seconda dello specifico contesto oppure a seconda di 
+come l'operatore vede il suo funzionamento.
+Parte
+Parte di
+Ricevitore
+Messa in
+forma
+Stadio di
+uscita
+operativa
+comando
+emettitore
+
+[PAG 1273]
+SENSORI E TRASDUTTORI
+XIII-43
+Esso si caratterizza dal fatto che l'emettitore e il ricevitore sono fisicamente alloggiati 
+nel medesimo contenitore, insieme all'elettronica di controllo. Il funzionamento si basa 
+sulla luce riflessa da un qualsiasi oggetto (azionatore) posto in prossimità. Il fascio lumi-
+noso viene generato dall'emettitore e, quando riflesso da un oggetto, ritorna verso l'involu-
+cro, sensibilizzando il ricevitore (Fig. XIII.3.18). 
+Fig. XIII.3.18  Sensore optoelettronico a riflessione diretta.
+Questa versione di sensori optoelettronici è adatta per rilevamenti di piccola portata 
+ed è particolarmente impiegata per il rilevamento di oggetti trasparenti o traslucidi (per 
+esempio bottiglie vuote) o per il rilevamento di riferimenti e contrassegni. Una ulteriore 
+caratteristica che la contraddistingue riguarda la portata, che dipende dal potere riflettente 
+e dal colore dell'oggetto da rilevare.
+Un secondo tipo viene denominato a retroriflessione o più semplicemente a rifles-
+sione. Esso funziona sull'interruzione del fascio di luce da parte dell'azionatore e in questa 
+versione il fascio di luce generato dall'emettitore viene riflesso da un catarifrangente 
+verso il ricevitore. L'emettitore e il ricevitore, come nel precedente tipo, si trovano fisica-
+mente alloggiati nel medesimo contenitore, insieme all'elettronica di controllo (Fig. 
+XIII.3.19). 
+Fig. XIII.3.19  Sensore optoelettronico a riflessione.
+È la soluzione più idonea per effettuare il rilevamento da un solo lato; permette una 
+facile e rapida messa in opera, consentendo l'inclinazione del riflettore (circa 15 gradi) 
+rispetto alla perpendicolare del fascio luminoso. Le sue particolari caratteristiche lo ren-
+dono il sistema più utilizzato per il convogliamento di scatole, cartoni ecc. Presenta però 
+il vincolo di non poter essere utilizzato quando gli oggetti da controllare sono di piccole 
+dimensioni, lisci o riflettenti, oppure quando l'ambiente è inquinato.
+Il terzo tipo di sensori optoelettronici si chiama a sbarramento e funziona sullo stesso 
+principio dell'interruzione del fascio di luce, riscontrato nel modello precedente. In questa 
+versione però il fascio di luce viene convogliato dall'emettitore verso il ricevitore da un 
+sistema ottico e i due elementi si trovano fisicamente alloggiati in contenitori diversi (Fig. 
+XIII.3.20).
+Risulta efficacemente impiegato per rilevare oggetti opachi e riflettenti, in ambienti 
+nei quali sono presenti polveri oppure gocce di acqua e per lunghe distanze. Anche questa 
+versione presenta dei vincoli, per esempio l'emettitore e il ricevitore devono essere scru-
+Oggetto
+E
+R
+Oggetto
+E
+R
+
+[PAG 1274]
+XIII-44
+SENSORI E TRASDUTTORI
+polosamente allineati e non possono essere impiegati per materiali trasparenti.
+Fig. XIII.3.20  Sensore optoelettronico a sbarramento.
+Inoltre è importante sapere che in applicazioni con commutazione in chiaro (raggio 
+libero) il sensore commuta quando il raggio emesso viene ricevuto dal fototransistore. La 
+maggior parte dei sensori a diffusione viene impiegata con questa funzione, mentre i sen-
+sori a sbarramento e a retroriflessione vengono impiegati con commutazione in scuro 
+(raggio interrotto).
+La distanza di attuazione è uno dei parametri più importanti per una corretta scelta di 
+un sensore optoelettronico. Più elevata è la distanza di attuazione e più potente deve 
+essere il sensore. Per assicurare un ottimo funzionamento il raggio della luce deve essere 
+molto concentrato, specialmente per le lunghe distanze.
+La frequenza di commutazione è il numero massimo di interventi che un sensore può 
+realizzare in un secondo, in relazione al tempo di attuazione e di disattuazione. Ciò signi-
+fica che durante la lettura è necessario avere un rapporto 1:2 tra lettura e pausa, con la 
+conseguenza che, per una corretta rilevazione, le dimensioni degli oggetti e la loro 
+distanza devono essere in relazione alla velocità di intervento.
+Le caratteristiche generali di questo tipo di sensori di prossimità si possono riassu-
+mere in:
+–  il contenitore è normalmente metallico;
+–  l'emissione del fascio di luce avviene nell'infrarosso e viene modulata;
+–  generalmente le parti ottiche sono in policarbonato;
+–  è garantita una mancanza di interferenza con la luce ambiente fino a valori di 2000 
+lux;
+–  il grado di protezione che si riscontra è generalmente pari a IP67;
+–  sono presenti protezioni contro le inversioni di polarità, i disturbi elettrici di natura 
+induttiva e il corto circuito del carico.
+Le loro caratteristiche di funzionamento si possono elencare nei seguenti punti:
+–  la vita media dell'emettitore si aggira su 100 000 ore;
+–  il campo di temperatura varia da 0 °C a 60 °C;
+–  la tolleranza sulla distanza di intervento è pari a  10%;
+–  tensione di alimentazione di 10 ÷ 30 V in corrente continua;
+–  la massima corrente in uscita è di 150 mA;
+–  la massima ondulazione residua è pari al 10%;
+–  la caduta di tensione alla massima corrente erogata è pari a  3 V;
+–  l'assorbimento a vuoto riscontrato è uguale o minore a 12 mA;
+–  la frequenza massima di commutazione è pari a 200 Hz.
+In riferimento al tipo di segnali disponibili in uscita è possibile scegliere tra uno 
+schema a due fili, a tre fili, su relè invertitore e su relè invertitore temporizzato.
+Nel tipo a due fili il sensore si comporta come un interruttore di fine corsa elettromec-
+canico. Questi sensori vengono inseriti in serie con il carico e alimentati con esso. In que-
+Oggetto
+E
+R
+
+[PAG 1275]
+SENSORI E TRASDUTTORI
+XIII-45
+sto modo sono sottoposti a una corrente residua (stato di funzione aperta) e a una tensione 
+residua (stato di funzione chiusa). Essi sono disponibili con contatti normalmente chiusi e 
+normalmente aperti.
+Il tipo a tre fili utilizza due fili per la propria alimentazione e un filo per emettere i 
+segnali. Anche questo tipo di sensori sono disponibili con contatti normalmente chiusi e 
+normalmente aperti.
+Il modello con segnali su relè invertitore non è altro che un sensore optoelettronico 
+con uscita a scambio. Ha a disposizione cinque fili, due dei quali per l'alimentazione e tre 
+per l'uscita dei segnali.
+L'ultima versione, con uscita su relè invertitore temporizzato, è uguale alla versione 
+precedente, ma con il contatto di scambio temporizzato e programmabile in funzione dei 
+fronti di salita o di discesa della luce.
+4  SENSORI PER IL CONTROLLO DI VIBRAZIONI
+Il trasduttore che per eccellenza rappresenta gli apparecchi per il controllo della vibra-
+zione prende il nome di accelerometro.
+Esso è un sistema elettromeccanico che trasforma energia meccanica in energia elet-
+trica. L'accelerometro ideale dovrebbe conformarsi completamente con la definizione 
+appena data e dovrebbe essere sensibile solamente alle vibrazioni. Ciò significa che esso 
+dovrebbe essere insensibile a perturbazioni estranee, quali deformazioni della base o della 
+custodia, accelerazioni trasversali, pressioni statiche o transienti, campi magnetici, acu-
+stici o altri fenomeni presenti in un normale ambiente.
+Infatti la parte critica nella misura delle vibrazioni deriva probabilmente dal sensore 
+stesso; in effetti la trasformazione di uno stimolo meccanico in un segnale elettrico può 
+creare il maggiore errore di misura. In certe situazioni è lo stesso montaggio del sensore a 
+creare problemi. È quindi necessario scegliere in fase di dimensionamento e progettazione 
+il sensore che presenta le migliori caratteristiche per ogni applicazione e sia di semplice 
+montaggio.
+I parametri elettrici che giocano un ruolo importante in questo tipo di sensori sono la 
+quantità delle cariche elettriche, la sensibilità dell'elemento di deformazione e l'entità 
+delle vibrazioni.
+I sensori utilizzati per il controllo delle vibrazioni impiegano normalmente trasduttori 
+piezoelettrici oppure capacitivi.
+4.1  Accelerometri
+Un trasduttore piezoelettrico funziona su fenomeni strettamente legati alla struttura 
+molecolare di alcuni cristalli, come per esempio il quarzo (Fig. XIII.4.1).
+Fig. XIII.4.1  Effetto piezoelettrico in un cristallo di quarzo.
+O2
+Si
+Si
+Si
+O2
+O2
+
+
+
+
+
+
+0
+0
+0
+0
+
+
+
+
+
+
+Fx
+Fx
+0
+0
+
+
+Fx
+Fx
+0
+0
+
+
+
+
+
+
+
+
+
+[PAG 1276]
+XIII-46
+SENSORI E TRASDUTTORI
+Al manifestarsi di una pressione o, come in questo contesto, di una vibrazione, la 
+struttura molecolare si deforma e genera delle cariche elettriche che, opportunamente trat-
+tate da amplificatori elettronici, determinano dei segnali in uscita. L'accelerazione che ne 
+deriva risulta direttamente proporzionale alla variazione della velocità e inversamente 
+proporzionale al tempo.
+Un accelerometro ideale di questo tipo non è facile costruirlo, ma le moderne tecnolo-
+gie si sono notevolmente perfezionate.
+Un accelerometro piezoelettrico utilizza un cristallo di quarzo polarizzato, che risulta 
+essere il materiale piezoelettrico più stabile, il quale può essere tagliato secondo due 
+diverse configurazioni per minimizzare gli elementi perturbatori sopra menzionati.
+La prima configurazione prende il nome di configurazione a compressione (Fig. 
+XIII.4.2) ed è particolarmente sensibile alle deformazioni della base e alle temperature 
+transienti. Di conseguenza esso risulta particolarmente idoneo in quelle applicazioni nelle 
+quali non predominano tali caratteristiche.
+Fig. XIII.4.2  Sezione di un accelerometro con configurazione a compressione.
+La seconda configurazione viene definita a taglio (Fig. XIII.4.3) e risulta meno sensi-
+bile della precedente alle deformazioni della base, ai movimenti trasversali e ai transienti 
+termici.
+Fig. XIII.4.3  Sezione di un accelerometro con configurazione a taglio.
+Il trasduttore accelerometrico capacitivo produce un segnale di uscita a elevato livello 
+in corrente continua proporzionale all'accelerazione. Questo segnale viene realizzato per 
+mezzo di un sensore capacitivo e un circuito elettronico miniaturizzato, contenuto nella 
+stessa custodia del sensore.
+Il sensore del tipo a capacità variabile è composto da un disco metallico molto fine, 
+montato tra due elettrodi fissi e isolati (Fig. XIII.4.4).
+La posizione del disco sismico, in rapporto ai due elettrodi, è proporzionale al vettore 
+dell'accelerazione perpendicolare agli elettrodi. L'aria presente internamente viene utiliz-
+zata come elemento attenuatore per ottenere una risposta in ampiezza costante su un 
+ampio intervallo di temperatura. I circuiti di alimentazione e di uscita segnale sono 
+entrambi in corrente continua, a bassa corrente. L'elevato segnale che si ha in uscita gene-
+ralmente è di per sé sufficiente per una eliminazione dei disturbi dovuti ai cavi e alle 
+Cristallo
+di quarzo
+Cristallo
+di quarzo
+
+[PAG 1277]
+SENSORI E TRASDUTTORI
+XIII-47
+interferenze.
+Fig. XIII.4.4  Parti principali di un accelerometro capacitivo.
+I tipici valori che caratterizzano un sensore di questo tipo si possono riassumere in:
+–  circuito a tre terminali con tensione di alimentazione del valore di 10  24 V in cor-
+rente continua;
+–  caratteristiche di non linearità inferiori a 1%;
+–  sensibilità assi trasversali inferiore a 1%;
+–  isteresi molto contenuta.
+5  SENSORI PER IL CONTROLLO DI PESO E DI DEFORMAZIONE
+I sensori per il controllo del peso e della deformazione, ma più generalmente per il 
+controllo della forza, si fondano sul principio dell'alterazione provocata da uno sforzo su 
+uno o più resistori, facenti parte di un ponte di misura di tipo estensimetrico. Questi sen-
+sori possono essere rappresentati da fogli plastici o da sottili placche di vetro con serigra-
+fati dei resistori metallici (in inglese chiamati strain gauges, cioè misuratori di tensione o 
+estensimetri) oppure da celle di carico, poste in opportuni contenitori, capaci di misurare 
+sforzi molto intensi.
+Le celle di carico adottano tecniche di misura molto diverse che vanno dai metodi 
+estensimetrici (in versione metallica o a semiconduttore) a quelli capacitivi, ottici o 
+magnetici.
+Le applicazioni che maggiormente adottano i sensori per il controllo della forza, 
+riguardano i sistemi di allarme, gli azionamenti industriali in genere, i comandi oleodina-
+mici, i sistemi di pesatura automatica, la misura delle deformazioni dei materiali nelle 
+prove strutturali.
+5.1  Sensori estensimetrici
+Si definiscono trasduttori estensimetrici quei sensori che hanno la caratteristica di tra-
+sformare una deformazione meccanica (o sollecitazione meccanica) in una variazione di 
+resistenza.
+In commercio se ne trovano di diverso tipo:
+–  a semiconduttore,
+–  a resistenza.
+Un estensimetro a semiconduttore, chiamato piezoresistivo, si basa sulla variazione di 
+resistività di un elemento di silicio con drogaggio p oppure n.
+Un estensimetro a resistenza invece si fonda sulla variazione della resistenza di una 
+griglia metallica incollata su un supporto.
+Normalmente questi trasduttori formano uno o più lati di un ponte di Wheastone (Fig. 
+Elettrodo
+Spaziatore
+Elemento sismico
+Spaziatore
+Elettrodo
