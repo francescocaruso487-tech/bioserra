@@ -163,22 +163,42 @@ function labRenderDigest() {
   if (!d || !d.consiglio_integrato) {
     var brain = labBrainData;
     if (brain && brain.cervello && brain.cervello.briefing_mattutino) {
-      var briefing = brain.cervello.briefing_mattutino;
+      var briefing = brain.cervello.briefing_mattutino || '';
+      // Pulizia backtick residui (failsafe)
+      if (briefing.indexOf('```') >= 0) {
+        briefing = briefing.replace(/```json|```/g,'').trim();
+        // Se è JSON, prova a estrarre briefing_mattutino
+        try {
+          var s=briefing.indexOf('{'), e=briefing.lastIndexOf('}');
+          if(s>=0&&e>s){ var parsed=JSON.parse(briefing.substring(s,e+1)); briefing=parsed.briefing_mattutino||briefing; }
+        } catch(ex) { briefing = briefing.substring(0,300); }
+      }
+      // Mostra consigli del giorno se briefing non disponibile
+      if (!briefing || briefing.length < 10) {
+        var cg = brain.cervello.consigli_giorno || brain.consigli_giorno || [];
+        briefing = Array.isArray(cg) ? cg.filter(function(c){ return typeof c==='string' && !c.startsWith('{') && !c.startsWith('```'); }).join(' | ').substring(0,300) : '';
+      }
+      // lastUpdate brain
+      var brainDate = (brain.lastUpdate||'').substring(0,10);
+      var dateLabel = brainDate ? ' <span style="opacity:0.4;font-size:9px">' + brainDate + '</span>' : '';
       el.innerHTML = '<div style="display:flex;align-items:flex-start;gap:10px">'+
         '<span style="font-size:20px;flex-shrink:0">⚡</span>'+
-        '<div><div style="font-size:9px;color:rgba(0,180,255,0.5);font-weight:700;letter-spacing:1px;margin-bottom:4px">BRIEFING MATTUTINO</div>'+
-        '<div class="lab-digest-compact" style="margin:0">' + labEsc(briefing.substring(0,200)) + '...</div></div></div>';
+        '<div><div style="font-size:9px;color:rgba(0,180,255,0.5);font-weight:700;letter-spacing:1px;margin-bottom:4px">BRIEFING MATTUTINO' + dateLabel + '</div>'+
+        '<div class="lab-digest-compact" style="margin:0">' + labEsc(briefing.substring(0,250)) + (briefing.length>250?'...':'') + '</div></div></div>';
       return;
     }
     el.innerHTML = '<div class="lab-digest-compact" style="opacity:0.4">Digest in preparazione…</div>';
     return;
   }
   // Mostra data aggiornamento
-  var dataStr = d.data || d.lastUpdate || '';
+  // Usa lastUpdate da brain.json per la data (più affidabile di digest)
+  var dataStr = (labBrainData && labBrainData.lastUpdate) ? labBrainData.lastUpdate.substring(0,10) :
+                (d.data || d.lastUpdate || '');
   if (dataStr) {
     var oggi = new Date().toISOString().substring(0,10);
     var isOld = dataStr < oggi;
-    if (isOld) el.setAttribute('title', 'Digest del '+dataStr+' - aggiornamento stanotte');
+    if (isOld) el.setAttribute('title', 'Aggiornato il '+dataStr);
+    else el.setAttribute('title', 'Aggiornato oggi');
   }
   var ora = new Date().getHours();
   var campi = [];
@@ -284,13 +304,50 @@ function labCatColor(cat) {
 // Costruisce lista pratiche unificata ordinata per rilevanza contestuale
 function labBuildPratiche() {
   var oggi = new Date();
-  var ora = oggi.getHours();
+  var dayIndex = Math.floor(oggi.getTime() / 86400000); // cambia ogni giorno
   var pratiche = [];
+
+  // Estrai parole chiave da brain (consigli_giorno + piano_giornata)
+  var brainKeywords = [];
+  if (labBrainData) {
+    var cerv = labBrainData.cervello || {};
+    var consigli = cerv.consigli_giorno || labBrainData.consigli_giorno || [];
+    // consigli_giorno può essere array di stringhe o array con 1 elemento JSON stringa
+    var consigliTxt = '';
+    if (Array.isArray(consigli)) {
+      consigli.forEach(function(c) {
+        if (typeof c === 'string' && !c.startsWith('{') && !c.startsWith('```')) {
+          consigliTxt += ' ' + c;
+        }
+      });
+    }
+    // piano_giornata
+    var piano = cerv.piano_giornata || {};
+    ['mattina','pomeriggio','sera'].forEach(function(k) {
+      if (piano[k] && typeof piano[k] === 'string') consigliTxt += ' ' + piano[k];
+    });
+    // kb_sintesi principi
+    var kb = cerv.kb_sintesi || {};
+    if (Array.isArray(kb.principi_attivi)) {
+      kb.principi_attivi.forEach(function(p) { consigliTxt += ' ' + (p.principio||'') + ' ' + (p.tecnica||''); });
+    }
+    // Tokenizza in parole significative (>4 chars)
+    brainKeywords = consigliTxt.toLowerCase().match(/[a-zÀ-ɏ]{4,}/g) || [];
+  }
+
+  function brainBoost(testo) {
+    if (!brainKeywords.length || !testo) return 0;
+    var t = testo.toLowerCase();
+    var hits = 0;
+    brainKeywords.forEach(function(kw) { if (t.indexOf(kw) >= 0) hits++; });
+    return Math.min(hits * 4, 20); // max +20 punti
+  }
 
   // 1. Esperimenti attivi (priorità massima)
   if (labEspData) {
     var attivi = labEspData.esperimenti_attivi || labEspData.attivi || [];
     attivi.forEach(function(e, i) {
+      var boost = brainBoost((e.nome||'') + ' ' + (e.descrizione||'') + ' ' + (e.obiettivo||''));
       pratiche.push({
         id: 'esp_att_' + i,
         nome: e.nome || '',
@@ -298,7 +355,7 @@ function labBuildPratiche() {
         descrizione: e.obiettivo || e.descrizione || '',
         badge: 'ATTIVA',
         badgeColor: 'var(--green3)',
-        rilevanza: 95,
+        rilevanza: 95 + boost,
         tipo: 'esp_attivo',
         data: e,
         idx: i
@@ -306,12 +363,12 @@ function labBuildPratiche() {
     });
   }
 
-  // 2. Tecniche da concetti_index (con rilevanza + contesto fase piante)
+  // 2. Tecniche da concetti_index (con rilevanza + contesto fase piante + brain boost)
   var fasePiante = labGetFaseAttuale();
   labElTecniche.forEach(function(t, i) {
     var ril = t.rilevanza || 5;
-    // Boost se la tecnica è rilevante per la fase attuale
     if (t.fasi_guida && t.fasi_guida.some(function(f){ return f===fasePiante; })) ril += 3;
+    ril += brainBoost((t.nome||t.label||'') + ' ' + (t.descrizione||t.desc||'') + ' ' + (t.categoria||''));
     pratiche.push({
       id: 'tec_' + i,
       nome: t.nome || t.label || '',
@@ -326,18 +383,22 @@ function labBuildPratiche() {
     });
   });
 
-  // 3. Esperimenti proposti (ordinati per rilevanza)
+  // 3. Proposte — rotazione giornaliera + brain boost
   if (labEspData) {
-    var proposte = labEspData.proposte || labEspData.esperimenti_disponibili || [];
-    proposte.slice(0, 8).forEach(function(e, i) {
+    var tutte = labEspData.proposte || labEspData.esperimenti_disponibili || [];
+    // Ruota: ogni giorno parte da un offset diverso, prende 12
+    var offset = dayIndex % Math.max(tutte.length, 1);
+    var ruotate = tutte.slice(offset).concat(tutte.slice(0, offset));
+    ruotate.slice(0, 12).forEach(function(e, i) {
+      var boost = brainBoost((e.nome||'') + ' ' + (e.descrizione||'') + ' ' + (e.obiettivo||'') + ' ' + (e.categoria||''));
       pratiche.push({
         id: 'esp_prop_' + i,
         nome: e.nome || '',
         categoria: e.categoria || 'tecnica di coltivazione',
         descrizione: e.obiettivo || e.descrizione || '',
-        badge: 'SUGGERITA',
-        badgeColor: 'rgba(0,180,255,0.5)',
-        rilevanza: 40,
+        badge: boost > 0 ? '⚡ CONSIGLIATA' : 'SUGGERITA',
+        badgeColor: boost > 0 ? 'var(--green3)' : 'rgba(0,180,255,0.5)',
+        rilevanza: 40 + boost,
         tipo: 'esp_proposta',
         data: e,
         idx: i
