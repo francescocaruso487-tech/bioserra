@@ -1,0 +1,1250 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 8/23 ===
+Chars: 44,947 | Offset: 314,524
+
+
+
+Rappresentare anche il profilo della sezione.
+*3.25 Un campo vettoriale in coordinate cilindriche è dato da
+E= fr cos$ + $rsin +22
+Tl punto P(4, 7, 2) è situato sulla superficie del cilindro
+descritto da r = 4. Nel punto P trovare:
+(a) la componente del vettore E perpendicolare al cilindro;
+(®) la componente del vettore E tangente al cilindro.
+
+3.26 In un dato punto dello spazio i vettori A e B sono dati in
+
+coordinate sferiche da
+
+A=R4+62-$
+
+B=-È2+$3
+Trovare:
+(a) la componente scalare, o proiezione, di B nella
+direzione di A; .
+(b) la componente vettoriale di B nelia direzione di A;
+(©) la componente vettoriale di B perpendicolare ad A.
+
+*3.27 Dati i vettori
+
+A= i(cos¢ + 3z) — d(2r+4sing) + (7 — 22)
+B=-fsingé+Zcosé
+
+cen a) Pas ind, af2 0): -
+
+trovare
+
+(») il versore perpendicolare sia ad A che a B in
+(2, «/3, 1).
+
+3.28 Trovare la distanza tra le seguenti coppie di punti:
+a) P;(1, 2, 3) e P.(--2, — 3, 2) in coordinate cartesiane;
+(b) P;(1, 7/4, 2) e P4(3, 17/4, 4) in coordinate
+cilindriche;
+(©) Ps(2, 1/2, 0) e Ps(3, #, 0) in coordinate sferiche.
+
+*3.29 Determinare la distanza tra le seguenti coppie di punti:
+(@) Pi(1, 1, 2) e 2,(0, 2,2);
+(b) Ps(2, 1/3, 1) e Pa(4, 7/2, 0);
+(©) Ps(3, 7, 7/2) e Pel4, 1/2, 7).
+
+3.30 Trasformare i seguenti vettori in coordinate cilindriche e
+valutarli successivamente nei punti indicati:
+@ A=î(x+y) inPi(1, 2, 3);
+®) B= ky ~x) +9(x—y) in Pa(1, 0, 2);
+© CHP +P) - jw //P +7) +i in
+P(1,- 1,2); .
+@ D=Rsind + 6cos8 + dcos*¢ in
+Pa(2, 1/2, 3/4); — _
+© E=R cosò + sing + $sin°0 in Ps(3, 7/2, 7).
+
+*3.31 Trasformare i seguenti vettori in coordinate sferiche e
+valutarli successivamente nei punti indicati:
+(a) A= iy’ +$x2+24inP;(1,-1,2);
+®) B= 3° +¥ +2) ~ 202 +) in P2(-1, 0, 2);
+(€) C=fcoosd-Gsingt+Zcos¢sin¢g in
+P3(2, «/4, 2);
+@) D=87/(P +) - H/F +7) +H in
+P,(1, ~ 1, 2).
+
+Paragrafi da 3.4 e 3.7 Operatori di gradiente,
+divergenza e rotore
+
+3.32 Trovare il gradiente delle seguenti funzioni scalari:
+(a) T=2/(2 +2);
+
+0) V =x72;
+
+© U=zooso/(1 +7);
+@W=e sing,
+
+© S=xrer+y;
+
+© N=? cos$;
+(g) M = Rcos@sing.
+*3.33 Il gradiente della funzione scalare 7 è dato da
+VI = de”
+T=10inz=0, trovare 7(z).
+3.34 Seguire una procedura simile a quella che porta alla (3.82)
+
+per derivare l’espressione di V data dalla (3.83) in
+coordinate sferiche.
+
+#3.35 Perla funzione scalare Y = xy — 2° determinare la
+derivata direzionale lungo la direzione del vettore
+A = (&— jz) e valutaria successivamente in P(1, — 1, 2).
+
+Problemi 14
+
+3.36 Per la funzione scalare T = e~*/ cos $ determinare fa
+
+derivata direzionale lungo ia direzione radiale è e valutarla. __ __ ._
+
+successivamente in P(2, 1/4, 3).
+
+*3.37 Per la funzione scalare U = + sin?@ determinare la
+derivata direzionale lungo {a direzione distanza R e
+valutarla successivamente in P(4, 7/4, 7/2).
+
+3.38 Il campo vettoriale E è caratterizzato dalle seguenti
+proprietà: (a) E è diretto lungo R; (b) 1 modulo di E è
+funzione solo della distanza dall’origine; (c) E si annulla
+nell’origine e (d) V - E = 6 ovunque, Trovare
+‘un'espressione per E che soddisfi queste proprietà.
+
+#3.39 Per il campo vettoriale E = &xz — $y22 — day verificare il
+teorema della divergenza calcolando
+(a) il flusso totale uscente attraverso la superficie di un
+cubo centrato nell’origine e con i lati uguali a 2 nità e
+paralleli agli assi cartesiani;
+(b) l'integrale di V - E sul volume del cubo.
+
+3.40 Per il campo vettoriale E = fe! — 232 verificare il
+teorema della divergenza per la regione cilindrica
+racchiusa dar = 2,z=0ez=4.
+
+*3.41 Un campo vettoriale D = fr? esiste nella regione tra due
+superfici cilindriche concentriche definite da r = 1 e
+r = 2, che si estendono entrambe traz=0ez= 5.
+Verificare il teorema della divergenza valutando
+
+3.42 Per il campo vettoriale D = RGR? valutare entrambi i
+membri del teorema della divergenza per la regione
+racchiusa tra le calotte sferiche definite da R= 1 eR =2.
+
+*3.43 Per il campo vettoriale E = &xy — ¥(x* + 2)7) calcolare:
+@ f XE - dl lungo il contorno triangolare mostrato in
+Figura 3.26(4);
+
+(b) Jo x E) - ds sull’area del triangolo.
+
+y >
+| 1
+0 x
+° i 1 2
+)
+
+(a (b)
+
+Figura 3.26 Contorni per (a) il Problema 3.43 e (b) il
+Problema 3.44.
+
+3.44 Ripetere il Problema 3.43 per il contorno mostrato in
+Figura 3.260).
+
+[PAG 80]
+44 Capitolo 3 - Analisi vettoriale
+
+*3.45 Verificare il teorema di Stokes per il campo vettoriale 3.46 Ripetere il Problema 3.45 per il contorno mostrato in A P | ; F -©- L- LA
+nes - cee Figura. 2@). 9 a ce creer my pi | -
+
+B= (frcos$+@siné) ee
+valutando: 3.47 Verificare il teorema di Stokes per il campo vettoriale .
+A=Rcos@+ dé sin? valutandolo sull’emisfero di raggio
+
+@ fs - di lungo il contorno semicircolare mostrato in unitario, | x Elettrostatica
+
+Figura 3.27); #3.48 Determinare se ciascuno dei seguenti campi vettoriali è
+(b) / (V x B) - ds sulla superficie del semicerchio. solenoidale, conservativo o entrambi:
+. (@) A= iy Hs
+4 (0) B= ie ~ pi + 22x
+2 © C= (sin $)/r + $(cos $)/P;
+d) D=R/R; È MIRI
+È E= a oie) +s 4.1. Equazioni di Maxwell
+ar 5
+$x)/(2 +99); . x Luc . Her
+2 0 2 * 0 î = er eye a i 2+ +2); L'elettromagnetismo moderno è basato su un insieme di quattro relazioni fondamen-
+(a) (h) H=R(Re?). tali note come equazioni di Maxwell:
+3.49 Trovare il Laplaciano delle seguenti funzioni scalari:
+} @V7=92;
+0) V=xyptye tax
+2 © V=1/0 +):
+1 (d) V = Se” cos ¢;
+(e) Y = 1067 sind.
+0! x
+(b)
+Figura 3.27 Contomi per (2) il Problema 3.45 e (b) il dove E e D sono campi elettrici legati dalla relazione D = eX, dove e è la permittivi-
+
+tà elettrica del materiale; B e H sono campi magnetici legati dalla relazione D = 4H,
+dove 4 è la permeabilità magnetica del materiale; p, è la densità di carica elettrica
+per unità di volume e J è la densità di corrente per unità d’area. I campi E, D, Be H
+sono stati introdotti nel Paragrafo 1.2, mentre p, e J saranno definiti nel Paragrafo
+4.2. Queste equazioni sono valide in qualsiasi materiale, compreso lo spazio libero
+(vuoto), e in ogni posizione spaziale (x, y, 2). In generale, tutte le grandezze nelle
+equazioni di Maxwell possono essere funzione del tempo ¢. Dalla formulazione di
+queste equazioni, pubblicate nel 1873 in un trattato classico, James Clerk Maxwell
+dimostrò la prima teoria unificata di elettricità e magnetismo. Queste equazioni, che
+egli dedusse dalle osservazioni sperimentali riportate da Gauss, Ampère, Faraday e
+altri studiosi, non solo esprimono la connessione tra campo elettrico e carica elettrica
+e tra campo magnetico e corrente elettrica, ma definiscono anche l'accoppiamento tra
+il campo elettrico e. magnetico. Insieme ad altre relazioni ausiliarie, le equazioni di
+Maxwell costituiscono i fondamenti della teoria dell’elettromagnetismo.
+
+Nel caso statico, nessuna delle quantità che compaiono nelle equazioni di Maxwell
+è funzione del tempo (cioè 0/0? = 0). Questo accade quando tutte le cariche sono
+fissate in modo permanente nello spazio, 0, se si muovono, lo fanno a una velocità
+costante in modo tale che p, e J siano costanti nel tempo. Sotto queste ipotesi, le de-
+rivate di B e D nelle equazioni (4.1b) e (4.1d) sono nulle, e le equazioni di Maxwell
+si riducono a:
+
+Elettrostatica
+
+V-D=~, (422)
+VxE=0. (425)
+
+[PAG 81]
+146
+
+Capitolo 4 — Elettrastatica
+
+Magnetostatica
+
+V.B=0, (432)
+VxH=J. (436)
+
+Le quattro equazioni di Maxwell si separano quindi in due sistemi di equazioni non
+più accoppiati, il primo dei quali riguarda i campi elettrici E e D, mentre il secondo i
+campi magnetici B e H. I! campo elettrico e magnetico non sono pit legati uno al-
+l'altro nel caso statico. Questo consente di studiare elettricità e magnetismo come
+due fenomeni distinti e separati, fino a quando Ia distribuzione spaziale di carica e il
+flusso rimangono costanti nel tempo. Lo studio dei fenomeni elettrici e magnetici in
+condizioni statiche viene indicato con i termini elettrostatica e magnetostatica rispet-
+tivamente. L’elettrostatica è l'argomento trattato in questo capitolo mentre il Capitolo
+5 si occuperà della magnetostatica. L'esperienza ottenuta trattando con situazioni re-
+lativamente semplici di elettrostatica e magnetostatica si dimostrerà molto utile per
+affrontare gli argomenti più complessi dei capitoli successivi, che riguardano campi
+elettromagnetici tempo-varianti, densità di carica e correnti.
+
+L’elettrostatica viene studiata non solo come mezzo per la comprensione dei campi
+elettromagnetici tempo-varianti, ma anche perché essa stessa rappresenta un’area di
+studio molto importante. Infatti molti sistemi e dispositivi elettronici sono basati sui
+principi di elettrostatica. Le applicazioni comprendono macchine a raggi x, oscillo-
+scopi, stampanti a getto d’inchiostro, schermi a cristalli liquidi, tastiere a capacità e
+molti dispositivi di controllo a stato solido. L’elettrostatica è inoltre utilizzata nel pro-
+getto di sensori medici di diagnostica, come per esempio l’elettrocardiogramma (per
+la registrazione del tracciato dei battito cardiaco) e l’elettroencefalogramma (per la
+registrazione dell’attività cerebrale), così come in numerose applicazioni industriali.
+
+4.2. Distribuzioni di carica e di corrente
+
+Nell’eiettromagnetismo si possono incontrare diverse forme di distribuzione di carica
+elettrica, e se le cariche sono in movimento esse rappresentano una distribuzione di
+corrente. La carica può essere dustribuita in un volume di spazio, sopra una superfi-
+cie o lungo una linea.
+
+4.2.1 Densità di carica
+
+Su scala atomica la distribuzione di carica in un materiale è discreta, ovvero ia carica
+esiste unicamente nelle posizioni în cui si trovano gli elettroni e i nuclei: Tuttavia nel-
+l’elettromagnetismo di solito si è interessati a studiare fenomeni su dimensioni molto
+più ampie, che arrivano a essere dell’ordine di tre o più ordini di grandezza maggiori
+della distanza tra due atomi adiacenti. Su queste dimensioni macroscopiche è possibi-
+le trascurare la natura discreta della distribuzione di carica e trattare la carica netta
+contenuta in un elemento di volume Ay come se fosse uniformemente distribuita al
+suo interno. Di conseguenza si definisce la densita di carica volumetrica come:
+
+Aq _ dq
+
+PS oto Ay dy (C/m’), (44)
+
+- dove Ag indica la carica contenuta nel volume Av. In generale p, è definita in un
+
+punto preciso nello spazio, individuato dalle coordinate Cartesiane (x, y, z), e in un
+determinato istante di tempo #. Quindi py = p,(x, y, z, ¢). Fisicamente o, rappresenta
+la carica media per unità di volume per un volume Ay centrato in (x, y, z), essendo
+Av largo abbastanza da contenere un numero elevato di atomi e tuttavia piccolo ab-
+
+42 Distribuzioni di carica e di corrente
+
+bastanza da poter essere trattato come un punto suila scala macroscopica presa in
+
+= considerazione. La variazione-di Ay con-la-posizione spaziale:è chiamata distribuzio-
+ne spaziale o semplicemente distribuzione. La Carica totale contenuta in un dato vo-
+Tume è quindi data da —
+
+Q= / prdv (C). (4.5)
+
+In alcuni casi, in particolare quando si ha a che fare con conduttori, ia carica elettrica
+può essere distribuita sulla superficie di un materiale e in questo caso la grandezza di
+interesse diventa la densità di carica superficiale p, definita come
+
+_ rim da _ Ma 2
+anast (Im), (49)
+dove Aq è la carica presente su un elemento di superficie As. In modo analogo, se
+la carica è distribuita lungo una linea, la quale non è necessariamente diritta, la di-
+strubuzione viene caratterizzata in termini della densita di carica lineare pi, defini-
+ta come ~
+
+Ps
+
+a= lim === (C/m). (4.7)
+
+Esempio 4.1 Distribuzione di carica lineare
+
+Si calcoli la carica totale Q contenuta in un tubo cilindrico caricato e orientato lungo
+l’asse z come illustrato in Figura 4.1(a). La densità di carica lineare è p = 22, dove z è
+la distanza in metri dalla base del tubo. La lunghezza del tubo è 10 cm.
+
+10cm
+Pi
+
+x
+
+{a) Distribuzione di carica lineare {b) Distribuzione di carica superficiale
+
+Figura 4.1 Distribuzioni di carica per gli Esempi 4.1 e 4.2,
+Soluzione La carica totale Q è
+0. 0.5 ol
+o- [ nde = [ 2ede=2|h'= 107 C.
+0
+
+Esempio 4.2 Distribuzione di carica superficiale
+
+Il disco circolare caricato elettricamente mostrato in Figura 4.1(b) è caratterizzato da
+
+una densità di carica superficiale avente simmetria azimutale che cresce linearmente
+
+con r partendo da 0 al centro fino a 6 C/m? per r = 3 cm. Si calcoli la carica totale pre
+sente sul disco.
+
+147
+
+[PAG 82]
+Capitoto 4 - Elettrostatica
+
+Soluzione Dato che p; risulta simmetrico rispetto all'angolo azimutale ¢, la sua
+
+espressione dipende solo da r ed è data da”
+
+6r
+
+a= 7702? 2x 10% (C/m*),
+
+è mi i i i i lemento d’area è ds = rdrdò e per
+dove r è misurato in metri. In coordinate polari, un e Pet
+il disco mostrato in Figura 4.1(b) i limiti di integrazione vanno da 0 a 2x (rad) per l’an-
+golo @, mentre da 0 a 3 x 107? m per r. Quindi,
+
+27 p3x10? ° Jrdrd
+= ds = / 2x 10°r}rdr
+Q fas LI {
+
+3x10
+=11.31 (mC).
+
+=2rx2x 10°
+3 lo
+
+i io definito dalle
+10 4.1 Una lastra quadrata nel piano x —y occupa uno spazi
+aa -3m<x<3 we -3m<y<3m. Si calcoli la carica totale presente sulla
+
+ws 2
+piastra sapendo che la densità di carica superficiale è data da ps = 4} (uCim?).
+SoLuzione Q = 0.432 (mC).
+
+Esercizio 4.2 Un conduttore cavo sferico è centrato nell’origine e si estende nello spa-
+zio tra R=2 cme R=3 cm. Se l’espressione della densità di carica volumetrica è
+py =3R x 1074 (4C/m?), si determini la carica totale contenuta nel conduttore.
+
+y =
+
+Sovuzione Q = 0.61 (nC).
+
+4.2.2 Densità di corrente
+
+ili i i ità di cari lumetrica py, co-
+i ideri un cilindro carico elettricamente con densità di carica vo! ca 0
+one iat in Figura 4.2(a). Le cariche si stanno muovendo con una velocità media
+u lungo l’asse del cilindro. In un periodo Ar le cariche si muovono di una distanza
+pari a AJ = uAt. La quantità di carica che attraversa la sezione As’ del cilindro ne!
+tempo At è quindi
+Aq! = py Av = py Al As' = pyu As’ At. (4.8)
+
+Ora si consideri il caso pit generale in cui le cariche stanno scorrendo attraverso ue
+superficie As il cui versore normale alla superficie i non è necessariament Paral lo
+a u, come mostrato in Figura 4.2(b). In questo caso la quantità di carica Ag che sco)
+re-attraverso As è :
+
+Ag = pyu- As At, (4.9)
+e la corrente corrispondente è
+Ar= 59 = pu As=3-As, (4.10)
+At
+
+dove
+
+J=pu (A/m’). (4.11)
+
+4.2 Distribuzioni di carica e di corrente
+
+4g = pu-AsAr
+= pyt AsAt cos @
+
+(b)
+
+è defininita densità di corrente ed è misurata in ampere su metro quadro. Data una
+superficie arbitraria 5, la cortente totale che vi scorre attraverso è data da
+
+t= [aa (A). (4.12)
+
+Quando la corrente è generata da un movimento effettivo di materia elettricamente
+carica, viene indicata come corrente di convezione, e J è chiamata densità di corren-
+te di convezione. Una nuvolà carica che viene spostata dal vento, per esempio, dà ori-
+gine a una corrente di convezione. In alcuni casi la materia carica che origina la cor-
+rente di convezione consiste semplicemente di particelle cariche, come gli elettroni di
+un fascio elettronico in un tubo a raggi catodici (il tubo catodico di un televisore o
+dello schermo di un computer).
+
+Questa corrente è differente dalla ‘corrente di conduzione, dove gli atomi del mezzo
+conduttore non si muovono. In un filo metallico, per esempio, ci sono un numero
+uguale di cariche positive (nei nuclei atomici) e di cariche negative (nelle nubi di
+elettroni che circondano gli atomi). Tutte le cariche positive e la maggior parte di
+quelle negative non possono muoversi; soltanto quegli elettroni che si trovano nei li-
+velli energetici più estemi possono essere facilmente spostati da un atomo all’altro se
+una tensione elettrica viene applicata alle estremità del filo. Questo movimento di
+elettroni da un’atomo all’altro crea una corrente di conduzione. Gli elettroni che fuo-
+riescono da un capo del filo non sono necessariamente gli stessi che sono entrati dal
+capo opposto.
+
+Poiché i due tipi di corrente sono generati da meccanismi fisici differenti, la corren-
+te di conduzione obbedisce alla legge di Ohm, che invece non è valida nel caso di
+corrente di convezione. La corrente di conduzione verrà discussa più in dettaglio nel
+
+Paragrafo 4.7.
+
+Domande di verifica
+
+4.1 Cosa accade alle equazioni di Maxwell in condizioni statiche? Perchè questo è
+importante?
+
+4.2 Come è legata la densità di corrente J alla densità di carica volumetrica p,?
+
+4.3 Qual è la differenza tra corrente di conduzione e corrente di convezione?
+
+© Figura 4.27
+
+149
+
+Cariche con velocità u che
+si muovono attraverso
+una sezione As’ in (a)e
+Asin (b).
+
+[PAG 83]
+450
+
+Figura 4.3
+Linee di campo elettrico
+dovute a una carica q.
+
+Capitolo 4 - Elettrostatica
+
+-4:3 -Legge-di-Coulomb.. ... .- ....
+
+Uno degli scopi principali di questo capitolo è individuare delle espressioni che met-
+tano in relazione l'intensità di campo elettrico E e il corrispondente spostamento
+elettrico D per una qualsiasi distribuzione di carica. Queste discussioni, comunque,
+saranno limitate ai campi elettrostatici, indotti cioè da distribuzioni di carica statiche.
+Si consideri nuovamente il modo in cui il campo elettrico era stato introdotto e de-
+finito nel Paragrafo 1.2.2 sulla base dei risultati sperimentali che Coulomb ottenne
+sulle forze elettriche che agiscono tra corpi carichi elettrostaticamente. La legge di
+Coulomb che fu introdotta inizialmente per cariche elettriche in aria e successiva-
+
+mente estesa a materiali generici afferma che
+
+1. una carica isolata q induce un campo elettrico E in ogni punto dello spazio e in
+un dato punto P l’espressione di E è data da
+
+y 4
+E=R Taek (V/m), (4.13)
+dove È è un versore che punta da q al punto P (Figura 4.3), R è la loro distanza, e
+e la permittività elettrica del mezzo che contiene il punto di osservazion P; e che
+2. in presenza di un campo elettrico E in un dato punto dello spazio, che può essere
+originato da una singola carica 0 da una distribuzione di più cariche, la forza che
+‘agisce su una carica di test q’, quando la carica è posta in quel determinato punto, è
+
+F=gE (N). (4.14)
+La forza F è misurata in newtons (N) e 9‘ in coulombs (C), mentre l’upità di misura
+
+di E è (N/C), che è equivalente ai volt per metro (V/m) come verrà mostrato successi»
+
+vamente nel Paragrafo 4.5.
+Per un materiale con permittivita elettrica ¢, i campi elettrici D ed E sono legati dal-
+
+la relazione
+
+D=éE, (4.15)
+con
+
+E = £0, (4.16)
+
+dove
+€y = 8.85 x 10°! = (1/36) x 107° (F/m)
+
+è la permittività elettrica dello spazio libero, e € = e/eo è chiamata permittività rela-
+È tiva (0 costante dielettrica) del materiale. In molti materiali e nella maggiore parte
+delle condizioni, e del materiale ha un valore costante independente sia dal modulo
+(valore assoluto) che dalla direzione di E. Se e € indipendente dal modulo di E, allo-
+ra il materiale viene definito lineare perche D ed E sono legati da una relazione li-
+neare; se € è indipendente dalla direzione di E, il materiale si dice essere isotropo. I
+materiali di solito non presentano una permittività non lineare, eccetto quando l’in-
+
+4.3 Legge di Coulomb
+
+densità del campo. è molto ale (per livelli che sono prossimi alle condizioni di rottura
+- t iscusso-nel-Paragrafo 4.8), e l’anisotropia è ui jeta i
+solo di certi materiali con particolare strut 4 salina, Quindi a pate rta
+d D ttura cristallina. Quindi, a parte i iali
+che rientrano in queste casistiche parti i, @ soo ia effet
+fr c particolari, le grandezze D ed E sono in effetti ri-
+dondanti; per una materiale del quale ¢ è noto, la conoscenza di D è sufficient n
+determinare E e viceversa. “pe
+
+4.3.1 Campo elettrico generato da molteplici cariche puntuali
+
+L'espressione fornita dalla (4.13) per il campo E generato da una singola carica, può
+score este al caso di rie da più cariche puntuali. Si consideri ini-
+e 0 i 1 © 92 che giacciono nelle posizioni indivi-
+nate dai vettori Ri e R; rispetto all’origine di un dato sistema di PNE
+Visualizzato in ‘gna 4.4. Il campo elettrico E viene valutato nel punto P che ha po-
+si if vettore R. Nel punto P il campo elettrico E; creato dalla sola ca-
+ica gi è dato dalla (4.13) dove ia distanza R tra la carica g; e P è sostituita
+|R — Ri| mentre il versore R è sostituito da (R — R,)/|R — Ri | Quindi, Sita da
+
+qi(R-R)
+
+E = OIL
+1 dre[R RiP (V/m). (4.17a)
+In modo analogo il campo elettrico dovuto alla presenza della sola carica ne
+R-R»)
+E) = 22 2,
+“GreR OR, TRA (V/m). (4.17b)
+
+Il campo elettrico ubbidisce al principio di izi i
+a 1 principio di sovrapposizione lineare. Di conseguen-
+za, il campo elettrico totale E in ogni punto dello spazio è uguale al vetiore som:
+
+ma delle com ti di ico i i gra ole
+in questo enna di campo elettrico indotte dalle cariche individuali presenti.
+
+- 1 [q(R-R) _
+E=E+E,=— |£ 1) , 2(R-R2)
+Ge [RR RR (4.18)
+
+Generalizzando il risultato i il
+
+precedente al caso di N cariche puntuali, il cam i
+o il risultat , o elettri-
+co E nella posizione indicata dal vettore R causato dalle cariche g1, 92 P posi
+zionate nei punti individuati attraverso Ri, Ro, ..., Ry è dato da Bee Qn PS
+
+1 Sh g(RoR)
+
+— 4re = IR-R; (V/m). (4.19)
+
+i E
+
+151
+
+Figura 4.4
+
+Il campo elettrico E nel
+punto P generato dalle due
+cariche è pari al vettore
+somma dei campi E; e Ep.
+
+[PAG 84]
+152
+
+Capitolo 4 - Elettrostatica
+
+Esempio 4 3 Campo el elettrico generato da due cariche puntuali
+
+Due cariche puntuali a=
+bero rispettivamente nei punti (1, 3, —1) è (—3, 1, —2) di un sistema di coordinate carte-
+siane. Si determini (a) il campo elettrico E nel punto (3, 1, —2) e (b) la forza che agisce
+su una carica di 8 x 1075 C collocata in questo punto.
+
+Soluzione (a) Dalla (4.18) il campo elettrico E.con e = eq (spazio libero).è dato da
+
+1 (R-R:) (R-R2)
+= Ci] + 3
+ane |” R-RIl iR—-Ral
+
+(V/m)
+
+I vettori Ry, Ro e R sono dati da
+
+R=î+593-3,
+R= -B+ 5-2,
+R=849-2.
+Quindi,
+1 [2G2-j2-2) 446]. , £-34-2 4
+- _ = 105 (V/m).
+ae 27 216 |<! 108m) * (V/m)
+(b)
+= pent x torte RISB o A gto gy
+F=q@E=8 x 10 x“, — x.10 Te x. (N).
+
+Esercizio 4.3 Quattro cariche, ognuna di 10 uC, si trovano nello spazio libero nei punti
+(-3,0, 0), (3, 0, 0), (0,—3, 0) e (0, 3, 0) di un sistema di coordinate cartesiane. Si deter-
+mini la forza che agisce su una carica di 20 uC posizionata nel punto (0, 0, 4). Tutte le di-
+stanze sono in metri.
+
+SoLUzionE F = Z = 0.23 (N).
+
+Esercizio 4.4 Due cariche identiche sono poste sull’asse x nei punti x = 3 ¢ x = 7. In
+che punto dello spazio il campo elettrico totale risulta nullo?
+
+SoLuzione Nel punto (5, 0, 0).
+
+Esercizio 4.5 In un atomo di idrogeno gli elettroni e i protoni sono separati da una di-
+stanza media di 5.3 x 107!! m. Si calcoli il modulo della forza elettrica F, tra le due par-
+ticelle e la si confronti con quella gravitazione Fy.
+
+SOLUZIONE F, = 8.2 x 10°? Ne F, = 3.6x 107 N.
+
+n ie a eel
+
+i 4.3.2 Campo elettrico generato da una distribuzione di carica
+
+I risultati ottenuti nel caso di un campo generato da cariche puntuali discrete possono
+essere estesi al caso di distribuzioni di carica continue. Si consideri il volume v’ mo-
+strato in Figura 4.5. Esso contiene una distribuzione di carica elettrica caratterizzata
+da una densità di carica volumetrica p,, il cui modulo può variare con la posizione al-
+
+x 105 Ce gr = —4 x 1075 C si trovano nello spazio li- —— dg = pydv'tontenuta nell’ eleriiénto infinitesimo di volume av è
+
+43 Legge di Coulomb
+
+l’intemo di v’ Il campo elettrico nel punto P generato da una carica infinitesimale
+
+A dv'
+dE =f’ — ply :
+aa R 4neR?” (4.20)
+dove R’ è il vettore che punta dali’elemento infinitesimo di volume dv’ al punto P.
+Applicando il principio di sovrapposizione lineare il campo elettrico totale E può es-
+sere ottenuto integrando tutti i contributi infinitesimi di campo generati dalle cariche
+che costituiscono la distribuzione. Si ricava così
+
+dy’
+E= [ a=. Re
+4ne Re (4.21a)
+(distribuzione volumetrica).
+
+È importante osservare che, in generale, sia R' che R' variano in funzione della posi-
+zione all’interno del volume di integrazione v’.
+
+Se la carica è distribuita su una superficie S’ con densità di carica superficiale ps
+allora dg = psds', oppure se la carica è distribuita lungo una linea J’ con densità di
+carica lineare allora dq = pidl'. Allora si ha rispettivamente,
+
+1 A
+E “Te / pad (distribuzione superficiale), (4.21b)
+"= #[t% R od {distribuzione lineare). (4.21c)
+È
+
+Esempio 4.4 Campo elettrico di un anello carico
+
+Un aneilo caricato elettrostaticamente avente raggio b è caratterizzato da una densità di
+carica lineare uniforme con polarità positiva py. L’anello è collocato nello spazio libero
+sul piano x — y, come mostrato in Figura 4.6. Si determini l’intensità del campo elettri-
+co nel punto P(0, 0, 4) sull’asse dell’anello a una distanza & dal suo centro.
+
+Soluzione Si consideri innanzitutto il campo elettrico generato da un segmento infi-
+nitesimo dell’aneilo, come per esempio il segmento 1 posto nel punto (6,¢,0) in
+Figura 4.6(a). Il segmento considerato ha lunghezza di = bdé e contiene la carica
+dq = pidl = pibdé. Il vettore Ri che definisce la distanza dal segmento 1 al punto
+P(0, 0, A) è
+
+Ri = rb +2,
+
+153
+
+Figura 4.5
+
+Campo elettrico creato
+da una distribuzione di
+carica volumetrica.
+
+[PAG 85]
+ar
+
+4
+
+Capitolo 4 ~ Elettrostatica
+
+* @ ®
+
+Figura 4.6 Anello carico avente densità lineare pr. (2) Campo elettrico dE; dovuto al
+segmento infinitesimale | e (b) campi elettrici dE, e dE dovuti a segmenti diametralmente
+opposti (Esempio 4.4).
+
+dal quale si ottiene
+
+A R, —îb + 2h
+
+=IR= ETRE i Rie E
+
+Rella vit RTRT VET
+Ti campo elettrico nel punto P(0, 0, 4) prodotto dalla carica del segmento 1 è
+_ 1 grad _ pb {tb + ih)
+Amen RP 4ne0 (b+ RY?
+
+dEi dé.
+
+Il campo dE; ha componente dF, lungo —î e dE); lungo î. Da considerazioni di sim-
+metria si ricava che il campo d¥ generato dal segmento 2, che giace in posizione dia-
+metralmente opposta rispetto al segmento 1 come mostrato in Figura 4.6(b), è identico
+a dE a eccezione della componente radiale (è) di dE, che è ha segno opposto a quella
+di dE;. Quindi le componenti radiali del campo sommandosi si cancellano, mentre
+quelle lungo £ effettivamente si‘ sommano. La somma complessiva dei due contributi di
+campo risulta pertanto
+
+3 pibh dé
+
+e. 4.22)
+‘ren (4 (422)
+
+dE = dE; + dE; =
+
+Dato che per ogni segmento dell’anello che si trova nel semicerchio definito dalPinter-
+vallo angolare 0 < $ <7 (la metà destra dell’anello completo) c’è un segmento com-
+spondente diametralmente opposto (con coordinata angolare $ + n), è possibile ottene-
+re il campo totale generato dallfanello, integrando la (4.22) sul semicerchio come se-
+
+gue:
+pibh [ * dé
+2reo(6 +12)? So
+pibh
+2eo(b? + 12)?
+h
+4eq( + pyP 2
+
+dove Q = 2xbp; è la carica totale contenuta nell’anello.
+
+E
+
+Il
+~
+
+It
+»
+
+(4.23)
+
+iù
+»
+
+ci
+|
+|
+|
+
+43 Legge di Coulomb
+
+Esempio 4.5 Campo elettrico di un disco carico
+
+Si calcoli-il campo elettrico nel punto P(0; 0, 2) dello spazio libero a un'altezza h sul-
+l’asse z dovuto a un distribuzione circolare di carica nel piano x — y con densità di cati-
+ca uniforme ps, come mostrato in Figura 4.7. Successivamente si valuti il campo E nel
+caso di un piano infinito ponendo a — co.
+
+x
+
+Figura 4.7 Disco carico con densità di carica superficiale ps. Il campo elettrico nel punto
+P(0, 0, 4) è diretto lungo la direzione z (Esempio 4.5).
+
+Soluzione Rifacendosi all’espressione ottenuta nell’Esempio 4.4 per un campo elet-
+trico generato da una distribuzione di carica anulare, è possibile individuare il campo
+dovuto al disco trattandolo come un insieme di tanti anelli concentrici. Un anello di rag-
+gio r e larghezza dr ha un’area ds=2rdr e contiene la quantità di carica
+dq = psds = 2xpsrdr. Utilizzando questa espressione nella (4.23) e sostituendo 6 con r
+si ottiene la seguente espressione per il campo dovuto all’anello:
+
+A h
+i
+4meg(? +h?)
+
+Tl campo totale nel punto P è ottenuto integrando questa espressione sull’intervallo da
+r=0ar=a:
+
+(2rpyrdr).
+
+_ af ti rdr
+"269 So (2 +)?
+(4.24)
+= 122 lA ]
+2e0 Va +
+
+dove il segno più corrisponde al caso A > 0, mentre il segno meno al caso è < 0 (al di
+sotto del disco).
+Nel caso di un piano carico infinitamente esteso si ha a = 00 e quindi,
+
+E=%—— (piano carico infinito). (4.25)
+2e0 .
+
+Si può osservare che per un piano carico infinitamente esteso E ha lo stesso valore in
+ogni punto del piano x — y. Peri punti posizionati al di sotto del piano x — y il versore %
+nella (4.25) deve essere rimpiazzato da —2.
+
+15
+
+[PAG 86]
+ere nnt
+
+156
+
+Capitolo 4 ~ Elettrostatica
+
+Domande di verifica
+
+4:4 Quando si afferma che una carica elettrica induce um campo elettrico in ogni pun: >>> —-
+
+to dello spazio, significa che la carica “‘irradia’’ il campo elettrico?
+
+4.5 Se un campo elettrico è nullo in un dato punto dello spazio questo implica l’as-
+senza di cariche elettriche?
+
+4.6 Si enunci il principio di sovrapposizione lineare nel caso di campo elettrico pro-
+dotto da una distribuzione di carica elettrica.
+
+Esercizio 4.6 Un piano infinitamente esteso posto nel punto z = 0 del piano x — y è ca-
+ricato uniformemente con una densità di carica superficiale ps. Un secondo piano infinito
+con densità --ps è posto nel punto z = 2 m. Entrambi i piani si trovano nello spazio libe-
+ro. Si calcoli i campo E in ogni punto dello spazio.
+
+SoLuzione E = 0 perz < 0;E=Zps/eo per0 <z<2mE=0perz>2m.
+
+4.4. Legge di Gauss
+
+Si consideri di nuovo la (4.12)
+
+V.D=p (Legge di Gauss), (4.26)
+
+che viene indicata come forma differenziale della legge di Gauss. L'aggettivo
+“differenziale” si riferisce al fatto che l'operatore divergenza comporta delle deriva-
+te spaziali. Come sarà mostrato tra breve, la (4.26) può essere convertita in forma in-
+tegrale. Quando si devono risolvere problemi elettromagnetici, spesso è nessario pas-
+sare da una forma differenziale a una integrale delle equazioni e viceversa, a seconda
+delle forma che risulta più adatta in ogni passo della soluzione. Per. convertire la
+(4.26) in una forma integrale, si moltiplicano entrambi i lati per Av e si calcola l’inte-
+grale complessivo su un volume arbitrario y. Si ottiene così
+
+[v-pa= [ na=0, (4.27)
+v v
+
+dove Q è la carica totale contenuta nei volume y. Il teorema della divergenza dato
+dalla (3.98) afferma che l’integrale della divergenza di un generico vettore sul volu-
+
+me v è uguale al flusso uscente del vettore considerato attraverso la superficie che
+racchiude y. Quindi per il vettore D
+
+V-Ddv= 9 D- ds. (4.28)
+[ven f
+
+Confrontando la (4.27) con la (4.28) si ottiene che
+
+gp -ds=Q (Legge di Gauss). (4.29)
+Ss
+
+La forma integrale della legge di Gauss è illustrata in modo schematico in Figura 4.8;
+per ogni elemento di superficie infinitesimo ds, D-ds rappresenta il flusso.del campo
+elettrico che fuoriesce passando attraverso ds, e il flusso totale attraverso la superfi-
+cie S è uguale alla carica in essa racchiusa. La superficie S viene chiamata superficie
+Gaussiana.
+
+44 Legge di Gauss
+
+Carica totale
+- all'intemo-----  —.-. --
+div
+
+> D-ds
+
+Superficie Gaussiana S
+che racchiude il volume.v
+
+Quando le dimensioni di un elemento di volume Ay contenente una carica totale ¢
+sono molto più piccole della distanza tra Av e il punto nel quale la densità totale di
+corrente viene calcolata, allora g può essere considerata come una carica puntuale.
+La forma integrale della legge di Gauss può essere utilizzata per determinare il cam-
+po D dovuto a una carica singola isolata 4, costruendo una superficie sferica
+Gaussiana S centrata in g che racchiude la carica e avente raggio arbitrario R, come
+mostrato in Figura 4.9. °
+
+Attraverso considerazioni di simmetria e assumendo che g sia positiva, la direzione
+del vettore D deve essere radiale lungo il versore R e puntante verso l’esterno, men-
+tre De, il modulo del vettore D, deve essere uguale in tutti i punti della superficie
+Gaussiana S. Quindi per ogni punto sulla superficie, la cui posizione è definita dal
+vettore R,
+
+D(R) = RDz, (4.30)
+e ds =Rds. Applicando la legge di Gauss si ottiene
+
+fv-ds~ f ao; Ras
+s Ss
+
+(4.31)
+= f Daas = Da(4nR°)=q.
+s
+Ricavando da questa espressione Dr e inserendolo nella (4.30) si ottiene la seguente
+espressione per il campo elettrico E indotto da una carica puntuale isolata in un mez-
+zo con permittività e:
+
+E(R) = =R—“_ (V/m. (4.32)
+
+Superficie Gaussiana
+
+157
+
+Figura 4.8
+
+~~ Lalegge di Gaussafferma ---- —
+
+che il flusso uscente del
+vettore D attraverso una
+superficie è proporzionale
+alla carica Q in essa
+racchiusa.
+
+Figura 4.9
+
+Campo elettrico D
+generato dalla carica
+puntuale q.
+
+[PAG 87]
+dee
+
+158
+
+Capitolo 4 ~ Elettrostatica
+
+Questa espressione è identica a quella della (4.13) ottenuta dalla legge di Coulomb.
+
+In questo semplice caso di una carica puntuale isolata l’applicazione della legge di _
+
+Gauss o di quella di Coulomb per determinare l’espressione di E non comporta al-
+cuna differenza sostanziale. Al contrario, quando si considerano distribuzioni for-
+mate da diverse cariche puntuali o distribuzioni di carica continue, il metodo segui-
+to può influire sulla complessità dei calcoli necessari per trovare il campo. Infatti
+anche se la legge di Coulomb può essere utilizzata per calcolare il campo E per una
+qualsiasi distribuzione di carica assegnata, la legge di Gauss è più semplice da ap-
+plicare rispetto a quella di Coulomb se le distribuzioni di carica possiedono una
+simmetria.
+
+La legge di Gauss, data dalla (4.29), fornisce un modo semplice per determinare la
+densità di flusso elettrostatico D quando la distribuzione di carica possiede proprietà
+di simmetria. In queste condizioni, infatti, si possono fare delle ipotesi sulla variazio-
+ne del modulo e della direzione di D in funzione della posizione. Poiché in ogni pun-
+to sulla superficie la direzione di un elemento ds è normale alla superficie e verso Pe-
+stemo, solo la componente di D normale alla superficie contribuisce all’integrale del-
+la (4.29). Per utilizzare con successo la legge di Gauss, la superficie S deve essere
+scelta in modo tale che, dalle condizioni di simmetria, il modulo del vettore D sia co-
+stante e la sua direzione sia normale o tangente in ogni punto appartenente a ognuna
+delle sotto-superfici di S (una superficie cubica, per esempio, possiede sei sotto-su-
+perfici). Questi aspetti sono illustrati nell’Esempio 4.6.
+
+Esempio 4.6 Campo elettrico di un filo carico infinito
+
+Si utilizzi ta legge di Gauss per calcolare il campo E nello spazio libero generato da un
+filo carico infinitamente lungo, caratterizzato da una densità di carica p; lungo l’asse z.
+
+Soluzione Dato che il filo carico è infinitamente esteso lungo l’asse z, Ie particolari
+condizioni di simmetria suggeriscono che D deve avere direzione radiale individuata
+dal versore # e non deve dipendere da $ o z. Pertanto D = #D,. In Figura 4.10, è indica-
+ta una superficie Gaussiana cilindrica di raggio r, concentrica attomo al filo carico. La
+carica totale contenuta all’intemo del cilindro è Q = pik, dove h è l’altezza del cilindro.
+Poiché D giace lungo f, le superfici superiori e inferiori del cilindro non danno alcun
+contributo all’integrale che compare al lato sinistro della (4.29). Pertanto l’unico contri-
+buto effettivo deriva dalla superficie laterale, ovvero
+
+ple
+[ | ED, -trdddz = pih
+a0 Jo
+
+cioè
+2ahD,r = pih,
+
+da cui si ottiene l’espressione del campo
+
+(filo carico infinito). (4.33)
+
+Si osservi che la (4.33) è valida per qualsiasi filo carico infinito, indipendentemente
+dalla sua posizione o direzione, avendo definito opportunamente ¢ come versore ra-
+diale che punta dal filo carico ai punto di osservazione (cioè # è perpendicolare al fi-
+lo carico).
+
+4.5 Potenziale scalare elettrico
+
+>= Filo comecarica == me
+uniforme 0;
+
+\
+
+—— >_<
+
+Figura 4.10 Superficie Gaussiana attomo a un filo carico con lunghezza infinita (Esempio
+4.6).
+
+Domande di verifica
+
+4.7 Si spieghi la legge di Gauss. In quali circostanze è utile?
+4.8 Come si dovrebbe scegliere una superficie Gaussiana?
+4.9 Quando è ragionevole considerare una distribuzione di carica come puntuale?
+
+Esercizio 4.7 Due fili carichi infiniti, ognuno avente densità di carica lineare pr, sono
+paralleli all’asse z e sono posti inx = 1 ex = —-1. Si determini il campo E in un punto ar-
+bitrario dello spazio libero lungo l’asse y.
+
+SoLuzione E = Jpyy/{reo? + 1)).
+
+Esercizio 4.8 Una sfera carica sottile avente raggio @ porta una densità di carica super-
+ficiale uniforme ps. Si usi la legge di Gauss per determinare E.
+
+SoLuzionE E = 0 perR <a
+E = Ropsa?/(eR?) perR > a:
+
+Esercizio 4.9 Un volume sferico di raggio a contiene una densità di carica volumetrica
+uniforme py. Si utilizzi la legge di Gauss per determinare il campo D per (a) R < a e (b)
+R>a.
+
+SoLuzionE (a) D = Rp,R/3
+(0) D = Roya /(3R”).
+
+4.5 Potenziale scalare elettrico
+
+Nei circuiti elettrici si lavora con tensioni e correnti. La tensione V tra due punti al-
+l’interno di un circuito rappresenta la quantita di lavoro, o l’energia potenziale, che è
+richiesta per muovere un’unita di carica tra i due punti. Il termine ‘‘tensione’’ è usato
+come sinonimo di differenza di potenziale elettrico. Anche se quando si risolve un
+problema circuitale i campi elettrici presenti nel circuito di solito non vengono presi
+in considerazione, di fatto è l’esistenza di un campo elettrico che crea una differenza
+di potenziale tra due punti, come ai capi di una resistenza o di una capacità. La rela-
+
+159
+
+[PAG 88]
+160
+
+Figura 4.11
+
+T lavoro svolto contro il
+campo elettrico E per
+‘muovere una carica g di
+‘una distanza dy è
+
+dW = qEdy.
+
+Capitolo 4 ~ Elettrostatica
+
+zione tra il campo elettrico E e il potenziale elettrico V è l’argomento trattato in que-
+sto paragrafo... ......-. ..... eni _
+
+4.5.1 Potenziale elettrico come funzione del campo elettrico
+
+Si consideri il semplice caso di una carica positiva g che si trova in presenza di un
+campo elettrico uniforme E = —y£, in direzione —y, come mostrato in Figura 4.11.
+
+. La presenza del campo E esercita una forza F. = gE sulla carica nella direzione delle
+
+y negative. Se si tenta di muovere la carica nella direzione delle y positive (contro
+Fe), è necessario esercitare una forza Fe, che agisce in opposizione a F, e questa
+azione richiede una spesa di energia.
+
+Per muovere la carica q senza accelerazione (cioè a velocità costante), è necessario
+che la forza netta che agisce sulla carica sia nulla, che equivale a imporre che
+
+Fext + Fe = 0, ovvero
+Fea =-F, = —qE. (4.34)
+
+Il lavoro svolto, cioè l'energia spesa, nel muovere un qualsiasi oggetto di una distan-
+za infinitesima dl sotto l’azione di una forza esterna Fey è
+dW =Fey-d =~—gk-di (J). (4.35)
+
+Il lavoro e Penergia vengono misurati in joules (J). Nel caso qui considerato, se la ca-
+rica viene mossa di una distanza dy lungo J, risulta che
+
+dW = —q(-S£) Jdy = gEdy.
+
+L'energia potenziale elettrica infinitesima dW per unità di carica viene chiamata po-
+tenziale elettrico differenziale (0 tensione differenziale) dV, ovvero
+
+a (/C 0 V).
+
+(4.36)
+
+(437)
+
+L’unità di misura di V è il volt (V), essendo 1 vALICe poiché V è misurato in
+volt, il campo elettrico viene espresso in volt al metro (V/m).
+
+La differenza di potenziale tra due punti qualsiasi P, e P; (Figura 4.12) è ottenuta
+integrando la (4.37) lungo un percorso qualsiasi che connette i due punti. Quindi
+
+Pa ‘Pa
+dr=- I E-dl, (4.38)
+Pi Pi
+0
+Pa
+Wi=V-N --f E-dl, (4.39)
+Pi
+y
+
+45 Potenziale scalare elettrico
+
+dove Yi e Y sono i potenziali elettrici nei punti P; e P) rispettivamente. Il risultato
+dell’integrale di linea del membro destro della (4.39) è indipendente dal particolare
+percorso di integrazione che è scelto tra i punti P; e P2. Questa proprietà è una conse-
+guenza dei vincoli imposti dalla legge di conservazione dell’energia. Per spiegare ciò
+con un esempio, si consideri una particella che si trova nel campo gravitazionale ter-
+restre. Se la particella dall’altezza h, rispetto alla superficie terrestre viene spostata a
+un’altezza maggiore ha, guadagna una quantità di energia potenziale proporzionale a
+(hz — hy). Se, invece, la particella fosse prima portata da un’altezza A, a un'altezza
+hs superiore a ho € successivamente riportata ‘all'altezza fp, essa subirebbe inizial-
+mente un incremento della sua energia potenziale proporzionale a (43 — 41) per poi
+perdeme una quantità proporzionale a (h3 — hz). Alla fine la sua energia potenziale
+risulterebbe di nuovo proporzionale a (hz — hy). Lo stesso principio può essere appli-
+cato all’energia potenziale elettrica W e alla differenza di potenziale (Vz — 1). La
+differenza di potenziale tra due nodi di un circuito elettrico ba lo stesso valore indi-
+pendentemente dal percorso che è seguito all’interno del circuito per collegare i due
+nodi. Inoltre, la legge di Kirchoff sulle tensioni afferma che la caduta di potenziale
+netta in un percorso chiuso è nulla. Se ci si muove dal punto P; al punto P, seguendo
+il percorso | in Figura 4.12, e poi si ritoma dal punto P2 al punto P; attraverso il per-
+corso 2, la parte destra della (4.39) diventa l’integrale fatto su un percorso chiuso
+mentre la parte sinistra è zero.
+
+Infatti l’integrale di linea del campo elettrostatico E su un qualsiasi percorso chiuso
+C è nullo:
+
+¢ E-d=0 (elettrostatica). (4.40)
+(e
+Un campo vettoriale il cui integrale di linea calcolato su un qualsiasi percorso chiuso
+è nullo, è detto campo conservativo o irrotazionale. Quindi il campo elettrostatico E
+è conservativo. Come verrà mostrato nel Capitolo 6, se il campo E è tempo variante,
+non è più conservativo e il suo integrale di linea calcolato su un percorso chiuso non
+è necessariamente nullo.
+La proprietà conservativa del campo elettrostatico può anche essere dedotta dalla
+seconda equazione di Maxwell (4.1b). Se 0/01 = 0 allora
+VxE=0. (4.41)
+
+Se si considera l’integrale di superficie di V x E su una superficie aperta S, applican-
+do il teorema di Stokes dato dalla (3.107), l’integrale di superficie è convertito in in-
+tegrale di linea, cioè
+
+(4.42)
+
+[0a frana,
+
+dove C é un percorso chiuso che circonda Ja superficie S. Quindi la (4.41) è la forma
+differenziale equivalente della (4.40).
+
+16
+
+Figura 4.12
+
+— Inelettrostatica; a” > » > + >>
+
+differenza di potenziale tra
+Pre Pi è lastessa
+indipendentemente dal
+percorso seguito per
+calcolare l’integrale di
+linea del campo elettrico
+tra i punti.
+
+[PAG 89]
+162
+
+Capitolo 4 — Elettrostatica
+
+Verrà ora definito il concetto di potenziale elettrico V in un punto dello spazio.
+
+...Prima di fare ciò. comunque viene ripresa in esame l’analogia circuitale elettrica. La
+
+tensione assoluta in un punto di 'un circuito non ha un significato preciso così come it
+potenziale elettrico assoluto in un punto dello spazio. Quando si parla di tensione Y
+di un punto all’interno di un circuito, la si considera come valore di tensione rispetto
+a un punto di riferimento, opportunamente scelto, al quale si attribuisce tensione nul-
+la. Questo punto è chiamato terra. Lo stesso principio si applica al potenziale elettri-
+co V. Di solito, il punto di riferimento del potenziale è scelto all’infinito. Pertanto,
+nella (4.39) si assume che sia 7} = 0 quando P; è all’infinito, e perciò il potenziale
+elettrico V in un qualsiasi puto P è dato da
+
+r=-fea Mm. (443)
+
+Co)
+
+4.5.2 Potenziale elettrico generato da cariche puntuali
+
+Per una carica puntuale g posta nell’origine di un sistema di coordinate sferiche, il
+campo elettrico a distanza R è dato dalla (4.32)
+5 9
+=R-—— (V/m. 4.44
+
+E=R- 4 (V/m) (4.44)
+Come è stato indicato precedentemente, la scelta del percorso d’integrazione tra i due
+punti estremi nella (4.43) è arbitraria. Quindi verrà scelto un percorso conveniente
+che si trova in direzione radiale È, poiché in questo caso dl = RAR e
+
+R
+> q A q
+=e _I_\ RaR= Vv). 4.45
+v [@ Tek) Rak 4neR ™) (445)
+
+Se la carica g è posta in una posizione diversa dall’origine, specificata da un vettore
+Rj, allora Y nel punto di osservazione dei vettore R diventa
+
+1
+= (V) 4.46
+rR "Tara (4.46)
+dove |R--R;| indica la distanza tra il punto di osservazione e la posizione della carica
+q. Il principio di sovrapposizione degli effetti, che è stato precedentemente applicato
+al campo elettrico E, può essere applicato anche al potenziale elettrico V. Quindi da-
+te N cariche discrete puntuali qi, 42, ..-, gx le cui posizioni sono specificate dai vet-
+tori Ri, Ra, ..., Ry, il potenziale elettrico è
+
+1% i
+VR) = RR a wr 44
+
+4.5.3 Potenziale elettrico generato da distribuzioni continue
+
+Per distribuzioni di cariche continue, presenti in un dato volume v’, su una superficie
+S’, o lungo una linea 1’, è necessario: (1) sostituire g; rispettivamente con pydy’,
+psdS! e pidl' nella (4.47); (2) cambiare l'operatore sommatoria con un integrale; (3)
+‘definire R’ = |R-R;| come Ja distanza tra i punti d'integrazione e il punto d’osserva-
+zione. Questi passi portano alle seguenti espressioni:
+
+VR) = e / 4 dv' (distribuzione volumetrica), (4.482)
+
+45 Potenziale scalare elettrico
+
+7 ly È ds’ (distribuzione superficiale), (4.48b)
+__l Pt oy seep .
+V(R)= Te Re dl’ (distribuzione lineare). (4.486)
+
+4.5.4 Campo elettrico come funzione del potenziale elettrico
+
+Nel Paragrafo 4.5.1 V è stato espresso in termini di un integrale di linea del vettore
+E. Ora si analizzerà la relazione inversa, esaminando la forma differenziale di V data
+dalla (4.37):
