@@ -1,0 +1,1370 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 20/23 ===
+Chars: 44,950 | Offset: 852,466
+
+
+
+Il piano x, — ya in Figura 9.22, indicato come piano A, contiene un’apertura con di-
+stribuzione di campo elettrico £,(xa, ya), di solito detta campo d'apertura. Per como-
+dita si è scelta un’apertura rettangolare, con dimensione /, lungo l’asse x, e J, lungo
+l’asse ya, anche se la formulazione che si andrà a discutere è abbastanza generale da
+potersi applicare a qualsiasi campo d’apertura bidimensionale, compresi quelli asso-
+ciati ad aperture circolari o ellittiche. Alla distanza z dal piano di apertura 4 in Figura
+9.22 è situato il piano di osservazione O che contiene gli assi (x,y). I due piani han-
+no assi paralleli e sono separati da una distanza z abbastanza grande da fare in modo
+che qualsiasi punto Q nel piano di osservazione si trovi nella regione di campo lonta-
+no dell'apertura. Per soddisfare la condizione -di campo lontano è necessario che
+
+|R>2d°/A, (9.79)
+
+dove d è la dimensione rettilinea massima dell’apertura radiante.
+
+w
+
+Figura 9.21
+
+-. Radiazione emessa-da ~--—-—------
+
+aperture: (a) apertura in
+uno schermo opaco
+ifluminata da una sorgente
+di luce attraverso una lente
+collimatrice e (b) riflettore
+parabolico illuminato da
+una piccola antenna a
+tromba.
+
+[PAG 203]
+Capitolo 9 — Radiazione e antenne
+
+Piano
+d’osservazione O
+
+Figura 9.22 Radiazione emessa da un’ apertura nel piano x, — Ya Situato inz = 0.
+
+La posizione del punto di osservazione Q è specificata dalla distanza R dal centro del-
+l’apertura e dagli angoli 0 e $ descritti in Figura 9.22, che insieme definiscono la di-
+rezione del punto di osservazione relativamente al sistema di riferimento dell’apertu-
+ra. Il fasore campo elettrico dell’onda incidente sul punto Q è indicato con E(R, 9, ¢).
+La teoria scalare della diffrazione di Kirchhoff enuncia la seguente relazione tra il
+campo irradiato E(R,9, $) e il campo d’apertura Fa (xa, ya):
+
+~ j fe FRY W
+88,8) = () 0,0) (9.80)
+
+dove
+
+W(@,8)= [f_ Elsa) - oan
+.= exp{jk sin (x cos $ + y, sin $)\drady,.
+
+In seguito si farà riferimento a 4(9, 4) come al fattore di forma di E(R, 6, 6). I limiti
+di integrazione si estendono all’infinito, presumendo che F.(xa,ya) sia indenticamen-
+te zero fuori dall’apertura. Il fattore di propagazione sferica (e~**/R) rende conto
+della propagazione dell’onda tra il centro dell'apertura e il punto di osservazione,
+mehtre h(0, $) rappresenta l’integrazione del campo di eccitazione Ez(xa, ya) sull’e-
+stensione dell’apertura tenendo conto, mediante la funzione esponenziale presente
+nella (9.81), dell’approssimazione che comporta la differenza di distanza tra R e s,
+dove s è la distanza da un qualsiasi punto (x,,ya) nel piano di apertura, , come descrit-
+to in Figura 9.22. La direzione di polarizzazione del campo irradiato E(R,9,$) é la
+
+9.8 Apertura rettangolare con distribuzione di campo uniforme
+
+stessa del campo d'apertura E,(xa,ya), e la densità di potenza dell’onda irradiata è
+data da _
+IER,0,9 _ Oe?
+
+= ee =e. 9.82
+S{R, 6, 0) Zm Tm ERE (9.82)
+
+9.8 Apertura rettangolare con distribuzione di campo
+uniforme
+
+Per illustrare la tecnica scalare di diffrazione, si consideri un'apertura rettangolare di
+altezza J, e larghezza /,, entrambe pari almeno ad alcune lunghezze d’onda. L’apertu-
+ra è eccitata da una distribuzione di campo uniforme data da
+
+Î Eq, per —k/2<x%x <h/2
+
+È. (xy) = e-1/2<% <1/2, (9.83)
+
+0, altrimenti.
+Per mantenere la trattazione matematica a livello semplice, ci si limita a esaminare il
+
+diagramma di radiazione a una distanza fissa R nel piano x — z, corrispondente a
+$ = 0. In tal caso la (9.81) si semplifica e diviene
+
+~ 4/2 &f2 .
+Ko = / Ey exp [ja sin 6ldrady,. (9.84)
+
+wal? Ixy=—t/2
+Per eseguire l'integrazione della (9.84), si introduce Ia variabile di sostituzione u de-
+finita come
+
+2m sin
+
+u=ksing= ~
+
+(9.85)
+
+nel qual caso fa (9.84) diviene
+
+n 4/2 1/2
+(0) = Bp |" etna. [ da
+“LP f2
+gii? — gf?
+= Ei | -
+DI ja J
+2Eoly | giel2 ent
+
+(9.86)
+
+u 2j
+= sio. sin (ul,/2).
+
+Sostituendo u con la sua definizione si ha
+xp 2Eody
+
+Ot)
+
+sin (ai, sin 6/A)
+al, sin 8/A
+= EoA, sinc (al, sin 6/4),
+
+sin (wi, sin 8/4)
+
+(9.87)
+= El,
+
+dove A, = Lil, è l’area geometrica dell’apertura e dove si è applicata la definizione
+
+391
+
+[PAG 204]
+392
+
+Figura 9.23
+
+Diagramma di radiazione
+normalizzato per
+un’apertura rettangolare
+illuminata uniformemente
+nel piano x ~ z(¢ = 0).
+
+Capitolo 9 — Radiazione e antenne
+
+canonica della funzione sinc, che per ogni valore dell’argomento ¢ è definita come
+
+Applicando la (9.82), si ottiene la seguente espressione della densità di potenza del-
+
+T'onda irradiata nel punto di osservazione:
+
+S(R, @) = Sp sinc? (nl, sin 0/1) (piano x —z) (9.89)
+
+dove Sy = E$A3/(2m0A°R?). La funzione sinc è massima quando il suo argomento è
+‘uguale a Zero, nel qual caso il suo valore è pari a uno; ciò accade quando @ = 0. Per-
+tanto, a una distanza fissa R, Smax = S(0 = 0) = So. L’intensita di radiazione norma-
+lizzata è dunque
+SRI
+
+Smax
+
+= sino? (ml, sin 6/2) (9.90)
+
+= sinc2(ry) (piano x —z)
+
+F(0) =
+
+ed è graficata in scala logaritmica in Figura 9.23 in funzione della variabile
+bi n (4/4) sin 9, Il diagramma presenta dei nulli quando y assume valori interi diver-
+si da zero.
+
+9.8.1 Ampiezza del lobo
+
+L'intensità di radiazione normalizzata F(9) è simmetrica nel piano x — z ed è massi-
+ma nella direzione di allineamento, in questo caso per @ = 0. La sua ampiezza a metà
+potenza è 8 =  — 01, dove 01 e 4 sono i valori di @ per cui F(0,0) = 0.5 0 -3
+dB in scala logaritmica, come descritto in Figura 9.23. Di
+
+y= (4/2) sin 0 —
+
+‘ (0.88)
+
+9.8 Apertura rettangolare con distribuzione di campo uniforme
+
+Dal momento che il diagramma è simmetrico rispetto alla direzione 9=0, si ha
+- di= +62 e Bz = 205. L'angolo 05 si può ottenere risolvendo. sese
+
+F(62) = sine?(al, sin 0/2) = 0.5. (9.91)
+- Dai valori tabulati della funzione sine si ricava che il risultato della (9.91) è
+ui sin 6 = 1.39, (9.92)
+oppure
+sin 6 = 0444. (9.93)
+le
+
+Dal momento che A/l < 1, in quanto una condizione fondamentale per la validità
+della teoria scalare della diffrazione è che le dimensioni dell'apertura siano molto più
+grandi della lunghezza d’onda A, l’angolo 62 è piccolo, nel qual caso si può applicare
+Papprossimazione sin 6 = @,. Pertanto
+
+Ba=2022sin0= oss (rad). (9.94a)
+hk
+
+Da un procedimento analogo nel piano y — z ($ = 2/2) si ottiene
+
+(rad). (9.94)
+
+Si noti che con una distribuzione uniforme sull’apertura, caratterizzata da 1 = Ep
+sull’apertura stessa, si ottiene un diagramma di radiazione in campo lontano con
+l'ampiezza del lobo più stretta possibile. Il livello del primo lobo laterale è 13.2 dB al
+di sotto del picco, come si può vedere in Figura 9.23, equivalente al 4.8% del valore
+del picco. Se l’applicazione richiesta necessita di un diagramma con un più basso li
+vello dei lobi laterali, per evitare interferenze da partè di segnali emessi da sorgenti
+situate lungo direzioni esteme al lobo principale del diagramma, ciò si può ottenere
+utilizzando una distribuzione d'apertura rastremata, tale da essere massima al cen-
+tro dell’apertura e diminuire in direzione del bordo. Una distribuzione rastremata ge-
+nera un diagramma con lobi laterali inferiori, ma il lobo principale diviene più am-
+pio. Più rapida è la diminuzione, più bassi sono i lobi laterali e più ampio è quello
+principale. In generale, l’ampiezza del lobo in un dato piano, per esempio il piano
+x—z,é data da
+
+À
+
+Bex = kas
+
+(9.95) 5
+
+dove k, è una costante legata alla rapidità della diminuzione. Per una distribuzione
+uniforme si ha 4, = 0.88 e per una distribuzione fortemente rastremata si ha A 22;
+tipicamente k, = 1.
+
+Per illustrare la relazione che intercorre tra le dimensioni dell’antenna e la corri-
+spondente forma del lobo principale, in Figura 9.24 sono descritti i diagrammi di ra-
+diazione di un riflettore circolare e di uno cilindrico. Il riflettore circolare ha un dia-
+gramma circolarmente simmetrico, mentre il diagramma del riflettore cilindrico pre-
+senta un lobo stretto nel piano azimutale in corrispondenza della propria dimensione
+maggiore e largo nel piano di elevazione in corrispondenza della propria dimensione
+minore. Per un’antenna con un diagramma a simmetria circolare, l'ampiezza # del lo-
+bo è legata al diametro d dalla relazione approssimata 6 = A/d.
+
+[PAG 205]
+394
+
+Figura 9.24
+
+Diagrammi di radiazione
+* di(a)unriflettore
+circolare e (b) un riflettore
+cilindrico (in questo caso
+‘non sono mostrati i lobi
+secondari); -
+
+Capitolo 9 Radiazione e antenne
+
+Lobi secondari
+
+= pet
+
+Direzione di
+Ba 4 — massima radiazione
+
+(b) Lobo a ventaglio
+
+9.8.2 Direttività e area efficace
+
+Nel Paragrafo 9.2.3 si è ricavata la (9.26), che costituisce un’es i i
+grafo 9.2 r a (9.26), pressione approssima-
+ta della direttività D dell’antenna in funzione delle ampiezze a metà potenza Bee Br
+
+per antenne caratterizzate da un solo lobo principale allineato lungo la direzione del-
+zi
+
+dr
+Da .
+ZA: (9.96)
+Applicando le relazioni approssimate 8 ~ Mk e Ba = XI, si ha
+2 fr, _ And; ‘
+Da y= (9.97)
+
+oon qualsiasi antenna, il legame tra direttività e area efficace A, è dato dalla
+
+47h
+ie (9.98)
+
+Dunque, le antenne ad apertura hanno area efficace approssimativamente uguale al-
+l’area geometrica dell'apertura, vale a dire che Ae Ap
+
+D=
+
+Esercizio 9.11 Si verifichi che fa (9.92) è soluzione della (9.91) calcolando sincÈ? per
+
+ESERCIZIO 912 Per un’apertura quadrata con la direzione di massima radiazione allinea-
+ta all asse Z $1 Sono osservate ampiezze a metà potenza pari a 3° in entrambi i pianix—z
+ey z. Si calcoli fa direttività in dB.
+
+SOLUZIONE D = 4583.66 = 36.61 dB.
+
+ESERCIZIO 9.13 Quale condizione deve essere soddisfatta per poter applicare la diffra-
+zione scalare al calcolo del campo irradiato da un’antenna ad apertura? Si può applicaria
+
+9.9 Schiere di antenne
+
+per calcolare il diagramma di radiazione della pupilla dell'occhio (d = 0.2 cm) nella ban-
+da visibile dello spettro per A variabile da 0.35. a 0.7 am? Quale sarebbe l’ampiezza del
+lobo del diagramma di radiazione dell’occhio per A = 0.5 um se si ipotizza che la pupilla
+sia uniformemente illuminata?
+
+Soruzione 6 = 0.88\/d = 2.2 x 107* rad = 0.76" (minuti d'arco, tali che 60’ = 1°).
+
+9.9 Schiere di antenne
+
+Le stazioni di radiodiffusione AM trasmettono nella banda da 535 a 1605 KHz e le
+antenne che impiegano sono sostanzialmente dei dipoli verticali montati lungo alti
+tralicci. L'altezza delle antenne varia da 4/6 a 5A/8, in relazione alle caratteristiche
+di funzionamento desiderate e ad altre considerazioni. La loro altezza fisica varia da
+46 m a 274 m; la lunghezza d’onda a 1 MHz, all’incirca a metà della banda AM, è
+pari a 300 m. Siccome il campo irradiato da un dipolo singolo è uniforme nel piano
+orizzontale, come discusso nei Paragrafi 9.1 e 9.3, è necessario impiegare più di un
+traliccio radiante per dirigere il diagramma orizzontale dell’antenna lungo una dire-
+zione di interesse, per esempio verso una città, e per minimizzarlo lungo le direzioni
+dove ia densità di popolazione è bassa o che corrispondono ad aree coperte da un’al-
+tra stazione che trasmette sulla stessa frequenza, per evitare interferenze indesiderate.
+Quando si impiegano insieme due o più antenne, la combinazione è detta schiera
+d'antenne.
+
+La schiera d’antenne per la radiodiffusione AM è solo un esempio applicativo: le
+schiere sono ampiamente utilizzate anche in numerosi sistemi di comunicazione e
+nelle applicazioni radar. Le schiere d’antenne offrono flessibilità al progettista, con-
+sentendo di ottenere elevata direttività, lobi stretti, bassi lobi laterali e la possibilità di
+orientare il lobo e variare la forma del diagramma di radiazione. La Figura 9.25 mo-
+stra la fotografia di un sistema radar di grandi dimensioni, che comprende una schie-
+ra trasmittente formata da 5184 elementi a dipolo singolo e una schiera ricevente for-
+mata da 4660 elementi. Il sistema radar, che fa parte dello Space Surveillance Net-
+work gestito dalla U.S. Air Force, funziona a una frequenza di 442 MHz e trasmette
+una potenza di picco complessiva di 30 MW!
+
+395
+
+Figura 9.25
+
+Impianto radar con schiere
+a sfasamento AN/FPS-85
+situato nel nord-ovest
+della Florida, vicino alla
+città di Freeport, Una zona
+interdetta al traffico aereo
+ampia diversi chilometri
+circonda l’impianto radar,
+per garantire la sicurezza
+dei dispositivi esplodenti
+comandati
+elettronicamente, come
+seggiolini eiettabili e
+munizioni, che si trovano
+a bordo degli aerei
+militari.
+
+[PAG 206]
+Figura 9.26
+Configurazione a schiera
+rettifinea e geometria
+relativa.
+
+Capitolo 9— Radiazione e antenne
+
+Anche se non è necessario che una schiera sia formata da elementi radianti simili, la
+
+«maggior parte di-esse impiegano elementi uguali tra loro, come dipoli, fessure; anten-~
+
+ne a tromba o paraboliche, eccitati dallo stesso tipo di corrente o di distribuzione di
+campo. Gli elementi che formano una schiera possono essere disposti in molte confi-
+gurazioni diverse, ma le più comuni sono la configurazione morodimensionale retti-
+linea, nella quale gli elementi sono disposti in linea fetta, è la configurazione bidi-
+mensionale a matrice, in cui gli elementi formano una griglia rettangolare. La forma
+del diagramma di radiazione in campo lontano si può sintetizzare controllando le am-
+piezze relative applicate agli elementi della schiera. Inoltre, mediante l’uso di sfasato-
+ri a stato solido e a controllo elettronico, la direzione del lobo della schiera si può
+orientare elettronicamente controllando gli sfasamenti relativi tra gli elementi della
+schiera. Questa flessibilità delle antenne a schiera ha condotto a numerose applicazio-
+ni che comprendono l’orientamento del lobo e la generazione di lobi multipli.
+
+Lo scopo di questo Paragrafo e dei prossimi due è di introdurre i principi fonda-
+mentali della teoria delle schiere e le tecniche progettuali impiegate per modellare il
+diagramma di radiazione e orientare il lobo principale. La discussione sarà limitata al
+caso della schiera rettilinea monodimensionale con elementi equispaziati.
+
+Una schiera formata da N radiatori identici è disposta lungo l’asse z come descritto
+
+in Figura 9.26. I radiatori sono alimentati da un oscillatore singolo mediante una rete ©
+
+di derivazione. In ciascun ramo della rete sono inseriti in serie un attenuatore o un
+amplificatore e uno sfasatore, per controllare ampiezza e fase del segnale che alimen-
+ta l’elemento dell’antenna collegato a quel ramio.
+
+Sfasatori Amplificatori
+(o attenuatori) x
+Elementi
+
+(a) Elementi della schiera controllati individualmente
+in ampiezza e in fase
+
+QRo, 0, 9)
+
+T I Elemento N-]
+Elemento N-2
+
+y
+
+(©) Geometria della schiera relativamente
+al punto di osservazione
+
+9.9 Schiere di antenne
+
+Nella regione di campo lontano di un:qualsiasi elemento, il fasore intensità di campo
+
+elettrico E.(R;9, 6) si può esprimere: come il prodotto di dué funzioni: il fattore di” ©
+
+propagazione sferica e /R, che tiene conto della dipendenza dalla distanza R, e
+Je(0, @), che tiene conto della dipendenza dalla direzione del campo elettrico irradiato
+dall’elemento. Pertanto, per un elemento singolo isolato, il campo irradiato è
+
+GR
+
+E.(R, 0,6) ==> f(0,9); (9.99)
+
+e la corrispondente densità di potenza S, è
+
+log 2
+Se(R, 0,9) = Tp lf 9, $)| 0100)
+
+= sag heey’.
+
+In riferimento agli elementi della schiera descritta in Figura 9.26(b), il campo lontano
+dovuto all’elemento i a distanza R; dal punto di osservazione Q si può dunque scrive-
+re nella forma
+
+I 70,8), (2.101)
+
+E(R;,0,6) = A;
+
+dove 4; = aie” è un coefficiente complesso di alimentazione che rappresenta Pam-
+piezza a; e la fase y; dell’eccitazione che produce £;, relativamente a un’eccitazione
+di riferimento; in pratica si usa come riferimento l'eccitazione di uno degli elementi.
+Si noti che R; e A; possono essere diversi per elementi diversi della schiera, ma
+(8, $) è uguale per tutti gli elementi in quanto si presume che essi siano tutti uguali
+e dunque presentino io stesso diagramma di radiazione. .
+
+Il campo totale nel punto di osservazione O(Ro, 8, $) è la somma dei campi dovuti
+agli N elementi:
+
+N-1
+E(Ro, 8,6) =) E(R;,0,9)
+=
+
+sa
+7 i= Ri
+
+dove Ro indica la distanza di Q dal centro del sistema di riferimento, che si è scelto
+coincidente con la posizione dell’elemento di indice zero della schiera. Per soddisfa-
+re la condizione di campo lontano data dalia (9.79) per una schiera di lunghezza
+1=({N — 1)d, dove d è la distanza reciproca tra gli elementi, la distanza Ro deve es-
+sere sufficientemente grande da soddisfare la seguente condizione:
+
+2(N — 1)°d?
+
+x .
+In questo caso é possibile trascurare le differenze nella distanza dei singoli elementi
+da Q, per quanto conceme il valore del modulo del campo irradiato. Pertanto si può
+porre R; = Ro al denominatore della (9.102) per ogni i. Per quanto riguarda la com-
+ponente di fase del fattore di propagazione, si può applicare l’approssimazione di rag-
+gi paralleli data da
+
+(9.102)
+
+(0, 4),
+
+Ro> ca = (9.103)
+
+Ri Ro — 7; 008 0 = Ry ~ id così, (9.104)
+
+dove z; = id é la distanza tra Pi-esimo elemento e l’elemento zero, come descritto in
+Figura 9.27.
+
+397
+
+[PAG 207]
+398
+
+Figura 9.27
+I raggi emessi dagli
+
+elementi verso un punto di__
+
+osservazione a grande
+
+distanza sono
+
+approssimativamente
+
+paralleli, dunque si ha che
+“la distanza
+
+Ri & Ro ~ id cos 8.
+
+Capitoto 9 — Radiazione e antenne
+
+Ue)
+
+Elemento i
+
+id
+
+Elemento 1
+
+Elemento 0
+
+Applicando queste due approssimazioni nella (9.102) si ottiene
+
+E(Ro, 0,6) =f(0, 4) ( De)
+
+hea (9.105)
+x DI ama |
+
+130
+
+e la corrispondente densità di potenza della schiera è data da
+
+los
+S(Ro, 6,8) = 5 -|E(Ro, 8,6)?
+
+Nat 2
+SO Ajelldose
+
+iO
+
+toe,
+= Fore lio, Oli (9.106)
+
+2
+= Se(Ro, 8, 6)
+
+’
+
+v=1
+> Arelticso
+#0
+
+dove si è applicata la (9.100). Questa espressione è il prodotto di due fattori: il primo
+fattore, Se(Ro, 9, 6), è la densità di potenza dell'energia irradiata dal singolo elemen.
+to della schiera, mentre il secondo, di solito chiamato fattore di schiera, è funzione
+della posizione dei singoli elementi e dei loro coefficienti di alimentazione, ma è in-
+dipendente dal particolare tipo di radiatori utilizzati nella schiera. /7 fattore di schiera
+rappresenta l'intensità di radiazione in campo lontano degli N elementi nel caso in
+cui ciascun elemento sia un radiatore isotropo. Indicando il fattore di schiera con
+
+NI
+DÒ Azeltkd cost
+id
+
+la densità di potenza della schiera d’antenne si può riscrivere come
+
+2
+F,(0) = | (9.107)
+
+; S(Ro, 9, $) = Se(Ro, 8, 6) F(8). (9.108)
+
+Questa equazione è detta principio di moltiplicazione dei diagrammi, in quanto con-
+sente di ricavare la densità di potenza emessa dalla schiera in campo lontano calco-
+lando dapprima il diagramma di potenza in campo lontano sostituendo dei radiatori
+
+9.9 Schiere di antenne 399
+
+isotropi al posto degli elementi, da cui si ottiene il fattore di schiera F.(0), e quindi
+
+- moltiplicando il risultato per la-densità di potenza Si(Ro, 8,6) del singolo elemento,
+che deve essere uguale per tutti gli elementi.
+
+In generale, il coefficiente 4; rappresenta un’ampiezza complessa formata da un
+fattore di ampiezza a; e un fattore di fase di
+
+(9.109)
+
+(9.110)
+
+Il fattore di schiera è definito da due funzioni di ingresso: la distribuzione di ampiez-
+za della schiera data dagli a; e la distribuzione di fase della schiera data dagli di.
+La distribuzione di ampiezza serve per controllare la forma del diagramma di radia-
+zione della schiera, mentre la distribuzione di fase si può sfruttare per orientarne la
+direzione.
+
+Esempio 9.6 Schiera formata da due dipoli verticali
+
+Una stazione di radiodiffusione AM impiega due dipoli a mezz’onda orientati vertical
+mente e separati da una distanza pari a \/2, come descritto in Figura 9.28(a). Il vettore
+che parte dalla posizione del primo dipolo e termina nella posizione del secondo punta
+verso est. I due dipoli sono alimentati con eccitazioni di uguale ampiezza e il dipolo più
+a est viene eccitato con uno sfasamento di —7/2 rispetto all’altro. Si ricavi e si grafichi
+il diagramma di radiazione della schiera nel piano orizzontale.
+
+F(0)
+
+Yo=0 v=-72 7 (Sud)
+y
+(c) Diagramma di radiazione
+
+(a) Schiera di dipoli ; .
+nel piano orizzontale
+
+(b) Piano di osservazione
+
+Figura 9.28 Schiera formata da due dipoli a mezz’onda nell’Esempio 9.6.
+
+Soluzione Il fattore di schiera dato dalla (9.110) è stato ricavato nel caso di radiatori
+disposti lungo l’asse z. Per mantenere lo stesso sistema di riferimento si sceglie di orien-
+tare l’asse z verso est, come descritto in Figura 9.28(b) e si pone il primo dipolo in
+z=-A/4eil secondo in z = A/4. Un dipolo a mezz’onda irradia uniformemente nel
+piano perpendicolare ai proprio asse, che in questo caso è il piano orizzontale. Dunque
+Se = So per ogni angolo @ in Figura 9.28(b), dove Sp è il valore massimo della densità
+di potenza imadiata da ciascun dipolo preso singolarmente. Di conseguenza, la densità
+di potenza irradiata dalla schiera di due dipoli è
+
+S(R,@) = SoF.(0).
+
+[PAG 208]
+Capitolo-9 » Radiazione e antenne
+
+Per due elementi spaziati di d = \/2 ed eccitati con ampiezze uguali (ay = == De e
+con angoli-di fase by = 0 ey =-=r/2, dalla (9.110) sha ul TLT
+
+2
+F.(0)= Speen .
+i=0 -
+
+=|1+ IAP gla] N02 0502
+
+= 1p elltonb-s/2)2,
+Una funzione nella forma |} + e]? si può valutare raccogliendo e#/2 a fattor comune
+da entrambi i termini:
+|L + e%? = Je (e 4 e8/2)[?
+= eA? eR? 4 2?
+
+ne
+=jeorp [tem el]
+
+Il valore assoluto di e#/? è uguale a I, e si può riconoscere nell’espressione all’interno
+delle parentesi quadre la funzione cos {x/2). Pertanto
+
+i+ =4008°(3).
+Applicando questo risultato nell’ espressione di F.(9) si ha
+i = 40092 (T cos — 2
+F,(8) = 4 cos (5 così +):
+La densità di potenza irradiata dalla schiera è dunque
+S(R, 0) = SoFi(0) = 454 cos” F cos? — 4).
+
+Ti massimo valore di questa funzione è Sinax = 450 € si verifica quando l’argomento del-
+la funzione coseno è uguale a zero. Perciò
+
+T Li
+7 così — 7 0,
+da cui si ricava la soluzione 0 = 60°. Normalizzando S(R, 9) rispetto al massimo, si ot-
+tiene l’intensità di radiazione normalizzata data da
+S(R, 8) )
+Smax 4/°
+
+Il diagramma di F(0)è graficato in Figura 9.28(c).
+
+F(0) = = cos? (3 così —
+
+Esempio 9.7 Sintesi del diagramma di radiazione
+
+Nell’Esempio 9.6 si è partiti dai parametri di schiera ap, a1, Yo, i € d per determinare
+il diagramma di radiazione della schiera di dipoli a due elementi. Si considera ora il pro-
+blema inverso: partendo dalle specifiche sul diagramma voluto, si dovranno definire i
+parametri di schiera che le soddisfano.
+
+‘Dati due dipoli, come indicato in Figura 9.28(b), si specifichino i parametri di schiera
+in’modo che la schiera presenti massima radiazione verso est e nessuna radiazione ver-
+so nord e verso sud.
+
+Soluzione Nell’Esempio 9.6 si è dimostrato che, siccome ciascun dipolo irradia uni-
+
+formemente lungo tutte le direzioni nel piano y — z, il diagramma di radiazione della
+
+9.9 Schiere di antenne
+
+| schiera di due dipoli in quel piano è imposto esclusivamente dal fattore di schiera __
+
+F.(6). La forma del diagramma del fattore di schiera dipende da tre parametri: il rappor-
+to tra le ampiezze 41/20, la differenza di fase 41 — % e la spaziatura d [Figura
+9.29(a)]. Per comodità si scegliè ap = | e. = 0 e di conseguenza la (9.107) risulta
+
+= ]1 + aye! gil0rd/ coso,
+
+Si consideri ora la specifica data, che richiede che F. sia uguale a zero quando # = 90°,
+cioè nelle direzioni nord e sud in Figura;9.29(a). Per un punto di osservazione situato
+sull’asse y, le distanze Ro e R; indicate in Figura 9.29(a) sono uguali, il che significa
+che le variazioni di fase associate al tempo di propagazione delle onde irradiate dai due
+dipoli verso quel punto sono identiche. Dunque, per soddisfare la condizione fissata si
+devono scegliere a} = ao € 4 = +a. Con queste scelte i segnali irradiati dai due dipoli
+avranno ampiezze uguali e fasi opposte, perciò interferiranno distruttivamente. Questa
+conclusione si può confermare valutando il fattore di schiera per @ = 90° con
+q=a=led=tr:
+
+F.(0=90°) = |i +1e**? =|1-1{=0.
+
+3 (Nord)
+
+(a) Geometria della schiera
+
+F(0)
+
+y
+. (©) Diagramma di radiazione della schiera
+Figura 9.29 (a) Due dipoli verticali separati da una distanza d lungo l’asse z; (b) diagramma
+
+di radiazione normalizzato della schiera nel piano y — zperao = a) = 1,%; — Yo = —7e
+d=)/2.
+
+i
+|
+Ì
+
+i
+|
+i
+i
+
+[PAG 209]
+402
+
+Capitolo 9 — Radiazione e antenne
+
+I due valori accettabili di 41, x e —r, portano alla stessa soluzione per il valore di d
+quando si considera la specifica che impone al diagramma di radiazione della schiera di’ ©
+avere un massimo verso est, corrispondente a @ = 0°. Scegliendo 4, = — e valutando
+il fattore di schiera per @ = 0° si ha
+
+F,(0 = 0) = [b+ ee?
+
+= [b+ eee.
+
+Perché F,(@ = 0) sia massimo, si impone che l’angolo di fase del secondo termine sia
+zero o un multiplo di 27:
+
+It ond =2n7,
+EA
+
+oppure
+d= (+13, n=0,1,2,...
+In conclusione, la schiera di due dipoti soddisfa le specifiche richieste se ay = ay,
+bd — Uo = ~wed = (2n+1)d/2.
+Nel caso in,cui d = \/2, il fattore di schiera in funzione dell'angolo 6 è dato da
+Fx(0) = [1 +e #refreos0?
+=|1- ereosoy?
+2
+
+ajeritn2} es elle /2)e036 _ g-i(n/2)e6s0
+je GI
+
+=Asin? (F.
+
+= 4 sin’ (E cos 8).
+Il fattore di schiera ha valore massimo pari a 4, che è il livello massimo ottenibile da
+una schiera di due elementi alimentati con ampiezze unitarie. Le direzioni lungo le qua- »
+li F.(9) è massimo sono quelle corrispondenti a 9 = 0 (est) e 9 = 180° (ovest), come ‘
+indicato in Figura 9.29(b).
+
+Esercizio 9.14 Si ricavi l’espressione del fattore di schiera nel caso di una schiera for- .
+mata da due elementi eccitati in fase con ap = 1 e a, = 3. Gli elementi sono posizionati
+lungo l’asse z e sono spaziati di 4/2.
+
+SoLUZIONE F,(9) = {10 + 6 cos (zr cos@)).
+
+Esercizio 9.15 Gli N elementi equispaziati di una schiera disposta lungo l’asse z sono
+alimentati con ampiezze e fasi uguali, cioè A; = 1 per i= 0,1,... aN-1. Qual è il mo-
+dulo del fattore di schiera nella direzione trasversale?
+
+SOLUZIONE F.(9 = 90°) = N?.
+
+9.10 Schiera di N elementi con distribuzione di fase
+uniforme
+
+Si consideri una schiera di N elementi con uguale spaziatura d ed eccitati in fase,
+cioè Yj = bo per i = 1,2,...,N — 1. Una schiera di questo tipo, formata da elementi
+in fase tra loro, è a volte denominata schiera a radiazione trasversale, in quanto il lo-
+bo principale del diagramma di radiazione del suo fattore di schiera è sempre diretto
+
+9.10 Schiera di N elementi con distribuzione di fase uniforme
+
+trasversalmente all’asse della schiera stessa. Dalla (9.110), il fattore di schiera è
+
+N-1
+S ayeltttoos0
+i=0
+oI 2
+= fe? [NO ajelitcas9 (9.111)
+ind
+2
+agi coso).
+La differenza di fase tra i campi irradiati da elementi adiacenti è
+= hd cost = È c0s0. (9.112)
+
+À
+Scritta in funzione di +, la (9.111) assume la forma compatta
+
+2
+
+FA(y) = (fase uniforme) (9.113)
+
+N=1
+> ajel
+id
+
+Nel caso di distribuzione di ampiezza uniforme con a; = 1 peri= 0, 1,...,N-1,
+la (9.113) diviene
+
+Fal) = [Lt elt +e 4 pp. (9.114)
+
+Questa serie geometrica si può riscrivere in forma più compatta applicando il seguen-
+te procedimento: per prima cosa si definisce
+
+AQ) = AQP, (9.115)
+con
+fil) = (Le + PT + I (9.116)
+In seguito si moltiplica f,(7) per e’7, ottenendo
+Alye = (e + el +. + e), (9.117)
+Sottraendo la (9.117) dalla (9.116) si ha
+A) =e = 1 e, (0.118)
+da cui risulta n
+fly) = =
+
+eil (RNA _ 2)
+eh (eR — e)
+ef? Sn (N7/2) .
+
+sin (7/2)
+
+Dopo aver moltiplicato f.(7) per il complesso coniugato, si ottiene il risultato:
+
+(9.119)
+
+E = sui (fase e ampiezza uniforme) (9.120)
+
+40:
+
+[PAG 210]
+‘404
+
+_ Figura 9.90. _ .
+
+Diagramma del fattore di ©
+
+schiera normalizzato per
+
+una schiera di sei elementi
+
+con spaziatura uniforme
+——d=df2-—
+
+Capitolo 9-— Radiazione e antenne
+
+Direzione
++ trasversale (9 = 90°)
+
+Si può dimostrare che il massimo valore di F,(0) si ha pery = 0 (00 = 1/2) ed è pa-
+ri a N, il che si verifica facilmente valutando la (9.114) per y 20, Dake fattore
+di schiera normalizzato è dato da
+
+Fay) _ sin (N7/2)
+
+Fama N° sin°(1/2)
+
+sin? ae cos o (9.121)
+
+F)=
+
+N? sin? E cos
+
+In Figura 9.30 è mostrato il diagramma polare di Fan(0) per N = 6 e d = 4/2. Si ri-
+cordi che questo grafico rappresenta il diagramma di radiazione del solo fattore di
+Schiera: il diagramma della schiera di antenne è uguale al prodotto tra questo dia-
+gramma € quello del singolo elemento, come si è discusso in precedenza in relazione
+al principio di moltiplicazione dei diagrammi.
+
+Esempio 9.8 Schiera a lobi multipli
+
+Si ricavi l’espressione del fattore di schiera nel caso di una schiera formata da due ele-
+menti con uguale eccitazione e spaziatura d = 7\/2 e si tracci il diagramma
+di radiazione. / sii grafico det
+Soluzione Il fattore di schiera nei caso di due elementi (N = 2) con uguale eccita-
+zione (ao = a; = 1) è dato da
+
+1 2
+Vaie “Il +e?
+=O
+=e (HP + gf)?
+= [eR eH? LP
+= 4c0s?(y/2),
+
+Fi) =
+
+9.11 Schiere a scansione elettronica
+
+«| dove. = (2md/2).cos @. Il diagramma di radiazione normalizzato, graficato in Figura _
+
+9.31, è formato da sette lobi con lo stesso valore di picco, ma di ampiezza angolare di-
+versa. Il numero di lobi nell’intervallo angolare tra’? = 0 e @ = 7 è uguale alla spaziatu-
+tad tra gli elementi della schiera espressa in multipli di 4/2.
+
+Direzione
+trasversale (6 = 90°)
+
+Figura 9.31 Diagramma del fattore di schiera normalizzato per una schiera di due elementi
+con spaziatura d = 74/2. .
+
+9.11 Schiere a scansione elettronica
+
+Nel Paragrafo precedente, la trattazione ha riguardato le schiere a fase uniforme, per
+le quali le fasi da vo a Yy_1 dei coefficienti di alimentazione sono uguali. In questo
+Paragrafo si considera l’applicazione di un ritardo di fase tra elementi adiacenti come
+mezzo per orientare elettronicamente il lobo principale della schiera dalla direzione
+trasversale in cui @ = 90° verso qualsiasi angolo 9. Oltre a rendere non più necessa-
+rio l'orientamento meccanico dell'antenna per variame la direzione del lobo, l’orien-
+tamento elettronico consente velocità di scansione del lobo molto elevate.
+
+L'orientamento elettronico si ottiene applicando ritardi di fase che variano da un
+elemento all’altro in progressione lineare lungo la schiera, come descritto in Figura
+9,32. La fase dell’i-esimo elemento si può esprimere in funzione di quella dell’ele-
+mento di indice zero nella forma
+
+d=-i6, (9.122)
+dove 6 è lo sfasamento progressivo tra elementi adiacenti. Applicando la (9.122) nel-
+
+la (9.110) si ottiene
+2
+
+La sud 6 “i
+Ss a6 Hi git coso
+i=0
+
+F,(0) =
+
+(9.123)
+
+12 2
+
+N-1
+YO quest 0os8-0 EAC);
+
+id
+
+rat
+1 ae?
+=
+
+405
+
+[PAG 211]
+Applicazione di un ritardo
+di fase if progressione
+
+Capitolo 9 — Radiazione e antenne _
+
+dove
+
+y' = kd cos? — 6. (9.124)
+
+Ba region che saranno chiare in seguito, si definisce lo sfasamento 6 in funzione del-
+angolo @, che sarà chiamato angolo di scansione, come segue:
+
+6 = kd cos do. (9.125)
+
+Y = kd(cos @ ~ cos 6p). (9.126)
+
+it fattore di schiera dato dalla (9.123) è formalmente uguale al fattore di schiera rica-
+vato in precedenza nel caso della schiera a fase uniforme con fa (9.113), tranne per la
+presenza di val posto diy. Dunque per qualsiasi distribuzione di ampiezza lungo la
+schiera, il fattore di schiera in caso di eccitazione con distribuzione di fase lineare si
+può ottenere dall'espressione calcolata nel caso di distribuzione di fase uniforme,
+sostituendo 7 con Y. In caso di distribuzione di ampiezza simmetrica rispetto al ce .
+tro della schiera, il fattore di schiera F,(/) è massimo quando Y = 0. Quando la fa
+se è ‘uniforme 6 = 0), questa condizione corrisponde alla direzione 0 =90° e
+questo motivo in caso di fase uniforme la schiera è detta a radiazione trasversale. Se
+condo la (9.126), nel caso più generale di una schiera a sfasamento lineare, y' 20
+corrisponde ad = 9%, Pertanto, applicando uno sfasamento lineare lungo la schiera, il
+‘seroma di radiazione viene traslato lungo l’asse cos di una quantità pati a
+ele d e 3 direzione di massima radiazione viene orientata dalla direzione trasversa-
+i = 9 ) verso la direzione 9 = 6. Per orientare il lobo principale in direzione
+longitudinale (9 = 0), lo sfasamento progressivo 6 deve essere uguale a kd radianti.
+
+In tal caso -y’ diviene
+
+9.11.1 Eccitazione ad ampiezza uniforme
+
+Fer illustrare il procedimento con un esempio, si consideri il caso di una schiera a N
+‘ementi eccitata con distribuzione di ampiezza uniforme. Il suo fattore di schiera
+
+- normalizzato è dato dalla 9.121). Sostituendo y con 77’ si ha
+
+9.11 Schiere a scansione elettronica
+
+Fao(1)= set (0.127)
+
+© Nsin?(y’/2)"
+
+dove +y' è definito dalla (9.126). L’espressione data dalla (9.127) ora caratterizza il
+fattore di schiera in caso di eccitazione con ampiezze uguali (a; = 1, peri=0, 1,
+... N — 1) e fasi a incremento progressivo (+; = —i8).
+
+Per N = 10 ed = 3/2, in Figura 9.33 sono descritti i grafici del lobo principale di
+Fan(8) nei casi in cui @ = 0°, 45° e 90°. Si noti che l'ampiezza a metà potenza cresce
+man mano che il lobo viene ruotato dalia direzione trasversale a quella longitudinale.
+
+Direzione longitudinale & = 0°
+
+Direzione
+trasversale (60 = 90°)
+
+Figura 9.33 Diagramma del fattore di schiera normalizzato per una schiera di dieci elementi
+con spaziatura uniforme d = )/2. Tutti gli elementi sono eccitati con ampiezza uniforme.
+Applicando agli elementi della schiera una fase linearmente variante, il lobo principale può
+essere deviato dalla direzione trasversale (90 = 90°) verso qualsiasi angolo di scansione 6. in
+caso di eccitazione equifase si ha A = 90°.
+
+9.11.2 Alimentazione della schiera
+
+Secondo la precedente discussione, per orientare il lobo dell’antenna verso un angolo
+8a si devono soddisfare due condizioni: (1) la distribuzione di fase deve essere linear-
+mente variante lungo la schiera e (2) il modulo dello sfasamento progressivo 6 deve
+soddisfare la (9.125). La combinazione di queste due condizioni produce la necessa-
+ria traslazione dei fronti di fase da 6 = 90° (trasversale) a 9 = @. Ciò si può ottenere
+controllando individualmente l’eccitazione di ciascun elemento mediante l’uso di sfa-
+satori a controllo elettronico. In alternativa si può applicare la tecnica detta a scansio-
+ne di frequenza che consente il controllo simultaneo delle fasi di tutti gli elementi. La
+Figura 9.34 mostra un esempio di un semplice dispositivo di alimentazione impiega-
+to nelle schiere a scansione di frequenza. Un nodo di alimentazione comune è colle-
+gato agli elementi radianti tramite linee di trasmissione di lunghezza diversa. Relati-
+vamente all’elemento di indice zero, ii percorso tra il nodo comune e l'elemento ra-
+
+[PAG 212]
+408 Capitolo-9 - Radiazione e antenne
+
+diante è più lungo di /‘per.il primo elemento, di 27 per i i i
+, per il secondo e di 3/ per il terzo.
+_ Pertanto la lunghezza del percorso:verso l'elemento i-esimo è a
+G=il+l, (9.128)
+
+dove ly è la lunghezza del percorso verso l’elemento zero. La propagazione delle on-
+—- de alla frequenza if su una linea di trasmissione di lunghezza }; è caratterizzata da un
+fattore di fase ei, fove B ; 2rf [up è la costante di fase della linea e Up è la veloci
+propagazione. Pertanto lo sfasamento progressivo dell’elemento i-esi i-
+vamente alla fase dell’elemento zero è osimo ret
+
+UM) = Bll b) = - 2744 =)
+Up
+
+2ri
+Up
+
+(9.129)
+
+Si supponga di scegliere l'incremento i i i
+progressivo / di lunghezza
+data frequenza di riferimento fy si abbia i Pa modo che a uma
+
+= Polo
+
+l= rali (9.130)
+dove no è un determinato intero positivo. In tal caso lo sfasamento (fo) diviene
+= ap f
+wh) = (4 = ~2not (9.131)
+
+e analogamente si ha che Ya) = —4now e W(f)= iò signi
+
+Sib 2 )) = —6non. Ciò significa che alla
+frequenza fo tutti gli elementi hanno la stessa fase a meno di multipli di 2x e la schie-
+ra irradia in direzione trasversale. Se f viene variata fino a fi + Af, il nuovo sfasa-
+mento del primo elemento rispetto a quello di indice zero è
+
+Vile + Of) =~ B+ api
+P
+_ 270! (#)o
+=e (Yay
+
+Up Up (9.132)
+= ~2not — nor (4)
+fo
+
+= —2nor — 6,
+Figura 9.34
+Esempio di sistema di
+alimentazione per una
+schiera a scansione di
+frequenza,
+
+dove si è applicata la (9.130) e si è definito 6 come
+
+9.1] Schiere a scansione elettronica
+
+s= amn( SF). (9.133)
+
+Analogamente, (fn + Af) = 241 e os(fo + Af) = 3%1. A meno di multipli di 27,
+che non hanno influenza sulle differenze di fase dei campi irradiati, si nota che gli
+sfasamenti progressivi sorio direttamente proporzionali alla deviazione relativa di fre-
+quenza (Af/fo). Perciò, in una schiera a N elementi il controllo su Af si traduce in
+un controllo diretto su 6, che a sua volta controlla l’angolo di scansione @ secondo la
+(9.125). Uguagliando la (9.125) e la (9.133) e quindi ricavando cos @ si ottiene
+
+cos 6 = Pros (7). (9.134)
+
+Variando f da fo a fo + Af, anche k = 27/) = 2af/c varia con la frequenza. Tutta-
+via, se Af /fp è piccola, si può considerare X costante e uguale a 27fo/c: l’errore nel
+calcolo di cos 99 dovuto all'applicazione di questa approssimazione nella (9.134) è
+dell’ordine di Af /fo. .
+
+Esempio 9.9 Scansione elettronica
+Si progetti una schiera a scansione formata da sei elementi con le seguenti specifiche:
+
+1. Gli elementi sono eccitati con ampiezza uniforme;
+
+2. Alla frequenza fo = 10 GHz la schiera irradia in direzione trasversale e la spaziatura
+tra gli elementi è pari a d = Ap/2, dove Ao = c/fa = 3 cm;
+
+3. H diagramma di radiazione della schiera deve essere orientabile elettronicamente nel
+piano di elevazione sull’intervalio angolare compreso tra 0) = 30° = 150°;
+
+4. La schiera di antenne viene alimentata da un oscillatore controllato in tensione la cui
+frequenza può essere variata sull’intervallo tra 9.5 e 10.5 GHz;
+
+5. La schiera impiega un dispositivo di alimentazione del tipo mostrato in Figura 9.34
+e le linee di trasmissione presentano una velocità di fase up = 0.8c.
+
+8 = 90 (Direzione
+trasversale)
+
+% = 150
+
+Figura 9.35 Schiera a scansione formata da sei elementi (Esempio 9.9).
+
+[PAG 213]
+Capitolo 9 = Radiazione e antenne
+
+Soluzione La schiera deve essere orientabile da 80 = 30° a 8o = 150° (Figura 9.35).
+| Pet 9 = 30° e kd = (21/X0)(A0/2) = 7, dalla (9.134) si ottiene.
+
+yom). (9.135)
+
+Dalle specifiche si ha che fg = 10 GHz e che la frequenza dell’oscillatore può essere va-
+riata tra (/ — 0.5 GHz) e (fr +0.5 GHz), perciò Afnox = 0.5 GHz. Per soddisfare la
+(9.135) bisogna scegliere mp in modo che Af sia più vicina possibile a Afua, ma non
+maggiore di essa. Ricavando ro dalla (9.135) con Af = Afmax, Si ottiene
+
+ha 10 GHz
+
+n=
+
+A Dfx 4X05 GHz >
+
+Siccome no è intero, non è necessario modificare il suo valore, altrimenti lo si deve ar-
+Totondare per eccesso all’intero successivo.
+Applicando la (9.130) si ricava il modulo della lunghezza progressiva /:
+pa 29% 5x 0.8 x3 x 108
+
+% = n 0-12 m = 12 om.
+
+In conclusione, con N = 6 e kd = x, dalla (9.127) si ottiene la seguente espressione del
+diagramma di radiazione normalizzato della schiera:
+| 2/4 yt
+sin°(3
+Fal) = SOT
+36 sin*(7’/2)
+dove, secondo la (9.126)
+
+Y' = kd(cos 8 — cos 80) = (cos 8 — cos 9),
+
+e, dalla (9.134),
+2nor { Af ‘f — 10 GHz
+O=—{]a _
+cos do td (5) 10( 10 GHz ). (9.136)
+
+La forma del diagramma di radiazione è analoga a quella descritta in Figura 9.30 e Ia di-
+rezione del suo lobo principale è rivolta lungo 6 = 9. Per f = fo = 10 GHz si ha
+9 == 90° (direzione trasversale), per f = 10.5 GHz si ha 9 = 30° e perf = 9.5 GHz si
+ha 9% = 150°. Per qualsiasi altro valore di 4 compreso tra 30° e 150°, la (9.136) fomi-
+sce il mezzo per calcolare il valore richiesto della frequenza f dell’oscillatore.
+
+Domande di verifica
+
+9.13 Perché sono utili le schiere di antenne? Si portino esempi di applicazioni tipi-
+che.
+
+9.14 Si Spieghi la modalità di applicazione del principio di moltiplicazione dei dia-
+grammi per calcolare il diagramma di radiazione di una schiera d’antenne.
+
+9.15 Nel caso di una schiera rettilinea, quali sono gli effetti legati alle ampiezze e al-
+le fasi lungo la schiera?
+
+9.16 Si spieghi come si realizza la scansione elettronica del lobo.
+
+9.17 Perché la scansione di frequenza è una tecnica interessante per orientare il lobo
+di una schiera d’antenne?
+
+Concetti fondamentali
+
+ L’antenna è un trasduttore tra un'onda guidata che si propaga in una linea di tra-
+
+smissione e un’onda elettromagnetica che si propaga in un mezzo illimitato, o vice-
+versa,
+
+|
+
+Glossario
+
+® Tranne che per alcune antenne a stato solido formate da semiconduttori non lineari
+
+- - 0 ferriti; le-antenne sono-dispositivi-reciproci; pertanto presentano gli stessi dia-
+
+grammi di radiazione sia in trasmissione che in ricezione.
+
+e Nella regione di campo lontano di un’antenna l’energia irradiata approssima un’on-
+da pianà.
+
+e Ii campo elettrico irradiato dalle antenne di corrente, per esempio le antenne filari,
+è uguale alla somma dei campi elettrici irradiati da tutti i dipoli hertziani che forma-
+no l’antenna.
+
+e La resistenza di radiazione Ryaq di un dipolo a mezz’onda è pari a 73 Q, valore che
+può essere facilmente adattato a una linea di trasmissione.
+
+© Le proprietà direttive di un’antenna sono descritte dal diagramma di radiazione,
+dalla direttività, dall’angolo solido equivalente e dall’ampiezza a metà potenza.
+
+© La formula di trasmissione di Friis mette in relazione la potenza ricevuta da un’an-
+tenna con quella trasmessa da un’altra antenna posta a una certa distanza.
+
+© Il campo elettrico irradiato nella zona di campo lontano da un’apertura grande in
+rapporto alla lunghezza d’onda è legato alla distribuzione di campo sull’apertura
+tramite la teoria scalare della diffrazione di Kirchhoff. Una distribuzione d’apertura
+uniforme produce un diagramma in campo lontano con la minima ampiezza possi-
+bile del lobo principale.
+
+e Controllando le ampiezze e le fasi dei singoli elementi di una schiera d’antenne è
+possibile modellare il diagramma di radiazione e orientare elettronicamente la dire-
+zione del lobo principale.
+
+¢ Il diagramma di radiazione di una schiera formata da elementi identici è uguale al
+prodotto tra il fattore di schiera e il diagramma del singolo elemento dell’antenna.
+
+Glossario
+Si definiscano i seguenti termini, spiegandone il significato: direttività D
+guadagno G
+‘antenna rendimento £
+antenna isotropa resistenza di radiazione Rrad
+diagramma di radiazione resistenza di perdita Rios
+impedenza d’antenna area efficace A,
+regione di campo lontano formula di trasmissione di Friis
+dipolo corto 0 dipolo hertziano temperatura di rumore del sistema Ty.
+fattore di propagazione sferica rapporto segnale-rumore Sn
+densità di potenza S{9, $) distribuzione d’apertura
+direzione trasversale schiera d’antenne
+angolo solido scansione elettronica
+coefficiente di alimentazione
+
+intensità di radiazione (normalizzata) F
+piano di elevazione e piano azimutale
+
+lobi di radiazione fattore di schiera F; (0, 6)
+angolo solido equivalente 2, direzione longitudinale
+‘ampiezza del lobo principale 8 scansione di frequenza
+
+principio di moltiplicazione dei diagrammi
+
+all
+
+[PAG 214]
+Capitolo 9 — Radiazione e antenne
+
+PROBLEMI. Li
+
+Nota: Le risposte ai problemi contrassegnati da un asterisco si
+
+trovano nellAppendice D.
+
+Paragrafi 9.1 e 9.2 Dipolo corto e
+caratteristiche di radiazione
+delle antenne
+
+*9.1 Un dipolo hertziano alimentato al centro viene eccitato da
+una corrente Jy = 10 A. Se il dipolo è lungo 4/50, si
+ricavi la massima densità di potenza irradiata alla distanza
+di 1 km.
+
+9.2 Un dipolo lungo 1 m viene eccitato da una corrente con
+una frequenza di 1 MHz e un'ampiezza di 12 A. Qual è il
+valore della densità di potenza media irradiata dal dipolo a
+una distanza di 5 km in una direzione inclinata di 30°
+rispetto all'asse del dipolo?
+
+*93 Si calcolino:
+
+(a) la direzione di massima radiazione,
+
+(b) la direttivita,
+
+©) Pangolo solido equivalente, .
+
+@ Vampiezza a metà potenza del lobo nel piano x — z,
+ne} caso di un’antenna la cui intensità di radiazione
+normalizzata è data da
+
+Fee= {0 per 0565 6 e05$<27
+
+0, altrimenti.
+
+Suggerimento: si disegni il diagramma di radiazione prima
+di calcolare le grandezze richieste. i
+
+94 si solve nuovamente il Problema 9.3 per un’antenna che
+
+abbia
+
+sin’ Gos? 6 per 0<0<7
+FO) = e ~a/2So<n/2
+0 altrimenti.
+
+*9.9 a diagramma di radiazione di un’antenna parabolica
+circolare è formato da un lobo principale circolare con
+ampiezza a metà potenza di 2° e alcuni lobi secondari.
+Trascurando i lobi secondari, si ricavi una stima della
+direttività dell’antenna in dB.
+
+9.10 L'intensità di radiazione normalizzata di una determinata
+antenna è data da
+F(0)=exp(-20#) per0<8<7
+dove 8 è espresso in radianti. Si calcolino:
+(@) l'ampiezza a metà potenza;
+(b) l'angolo solido equivalente;
+(©) la direttività dell’antenna.
+
+Paragrafi 9.3 e 9.4 Antenne a dipolo
+
+*9.11 Si risolva nuovamente il Problema 9.5 per un dipolo a
+
+mezz’onda lungo 1 m che funziona nella banda di
+radiodiffusione FM/TV alla frequenza di 150 MHz.
+
+9.12 Supponendo che la resistenza di perdita di un dipolo a
+mezz’onda sia trascurabile e ignorando la componente
+reattiva della sua impedenza d'antenna, si calcoli il
+rapporto d'onda stazionaria su una linea di trasmissione a
+60 © collegata a tale antenna.
+
+ee)
+
+i
+n
+‘
+Y
+2
+Ù
+
+Figura 9.36 Distribuzione di corrente con legge triangolare
+su un dipolo corto (Problema 9.13).
