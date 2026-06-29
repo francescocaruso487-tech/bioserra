@@ -366,7 +366,7 @@ function cfgAggiornaTutto() {
   if (typeof renderActivePlants === 'function') renderActivePlants();
   if (typeof loadWeather === 'function') loadWeather();
   if (typeof renderLunarSection === 'function') renderLunarSection();
-  if (typeof loadLunaConsigli === 'function') loadLunaConsigli();
+  if (typeof loadLunaConsigli6 === 'function') loadLunaConsigli6();
   if (typeof loadAIJSON === 'function') loadAIJSON();
   if (typeof loadLunaJSON === 'function') loadLunaJSON();
   // loadPianteJSON NON viene chiamata qui: gli alert sono calcolati localmente
