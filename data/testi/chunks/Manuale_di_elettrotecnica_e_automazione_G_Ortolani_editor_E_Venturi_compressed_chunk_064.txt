@@ -1,0 +1,981 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 64/116 ===
+Chars: 43,658 | Offset: 2,783,238
+
+stica, la produzione e tutti 
+gli uffici possano “parlare” tra loro. Tali funzioni vengono svolte da calcolatori connessi 
+in rete. SCADA (Supervisory Control And data Acquisition) è il sistema che si occupa di 
+controllare e supervisionare i sistemi distribuiti a livello di reparto e di cella.
+È una architettura che consta di più stazioni client che impiegano un unico server che: 
+raccoglie e memorizza in tempo reale i dati provenienti dal campo; opera da interfaccia 
+con l’operatore; consente la comunicazione tra le varie apparecchiature di una stessa cella 
+o macchina. Si basa su un Host computer che supporta software di visualizzazione e 
+mediante LAN si connette ai sistemi superiori (ERP) e tramite bus di cella ai vari PLC.
+Livello 6 (Azienda/società). È il livello più alto della gerarchia dove hanno luogo i 
+processi decisionali e gestionali che condizionano i livelli inferiori. Una rete di comunica-
+zione connette i vari siti dislocati anche in località diverse che fanno capo alla medesima 
+azienda, mediante svariate workstation connesse al mainframe aziendale.
+Il sistema gestionale dell’azienda ERP/MES (Enterprise Resource Planning/Manufactu-
+ring Execution System) si occupa di finanza, amministrazione, pianificazione della produ-
+zione, manutenzione delle sovrastrutture e gestione della qualità dei prodotti: in sintesi 
+come e cosa produrre. Si connette mediante LAN al sistema SCADA. In particolare il 
+sistema MES è focalizzato sulla ottimizzazione delle attività a partire dall’ordine fino alla 
+evasione della commessa.
+3.2  Comunicazione
+In ambito industriale, le configurazioni distribuite sono preferite rispetto ai vecchi 
+sistemi di controllo centralizzati: si ha una versatilità di gestione maggiore e in caso di 
+guasto si ha la fermata di una sola isola o di un reparto o di una macchina, anziché 
+dell’intero processo.
+
+[PAG 1324]
+XIV-12
+AUTOMAZIONE
+Per poter attivare dei processi distribuiti occorre però poter interconnettere le varie 
+parti che formano l’applicazione, in modo che possano comunicare tra loro; ecco allora 
+che cresce, nel mondo industriale, il bisogno di configurazioni che utilizzano reti di 
+comunicazione.
+3.2.1  Tipi di rete di comunicazione
+I primordi della normalizzazione delle reti di comunicazione si ebbero alla fine degli 
+anni ‘70, quando Digital, Xerox e Intel produssero uno sforzo comune per la realizzazione 
+di una rete ad alta velocità. Tale rete, la più utilizzata per applicazioni d’ufficio e indu-
+striali, fu denominata Ethernet; la sua velocità di trasmissione di 10 Mbit/s ne costituiva 
+la caratteristica saliente.
+In seguito, la Ethernet fu normalizzata a livello internazionale e divenne la norma 
+IEEE 802.3 e un secondo requisito che favorì tale enorme diffusione fu quello di essere 
+una rete aperta ad altri prodotti; la sua compatibilità infatti non è solo rivolta alle ditte 
+produttrici (Digital, Xerox, Intel), per cui si possono interfacciare, mediante tale rete, pro-
+dotti fra i più disparati di fornitori diversi.
+Oltre al 63% del mercato mondiale detenuto da Ethernet, vengono utilizzate altre reti 
+standard, quali la Token Ring per le applicazioni di interconnessione di personal computer 
+(28%), la rete Token Pass (5%) e la rete MAP (4%).
+In ambito industriale oltre alla rete di comunicazione si impiegano anche bus di 
+campo (fieldbus), che consentono a sensori, attuatori, interfaccia operatore e PC di inter-
+connettersi mediante un solo cavo (bus). I più utilizzati sono i bus di campo PROFIBUS e 
+CAN. Il bus PROFIBUS è lo standard più orientato all’automazione industriale poiché 
+supportato dai maggiori produttori di PLC, PC, DCS, I/O, azionamenti, encoder, valvole 
+ecc. Il CAN (Control Area Network) è un bus di comunicazione seriale introdotto da 
+Bosch fin dal 1986 che consente la comunicazione tra controllori, sensori e attuatori ad 
+una velocità di 1 Mbit/s; la particolarità di questo standard è quella di poter lavorare in 
+presenza di disturbi elettromagnetici e di vibrazioni, tipiche del “campo”.   
+Le reti si classificano principalmente per il tipo di collegamento (Fig. XIV.3.2), che si 
+effettua tra le varie stazioni:
+–  Collegamento stella (star).
+–  Collegamento ad anello (ring).
+–  Collegamento mediante bus (multipoint bus).
+–  Collegamento ibrido.
+Fig. XIV.3.2   Tipi di rete di comunicazione.
+Collegamento a stella
+Collegamento ad anello
+Collegamento a bus
+Collegamento ibrido
+
+[PAG 1325]
+AUTOMAZIONE
+XIV-13
+Il collegamento a stella prevede l’accentramento del traffico in un nodo centrale che 
+colloquia con i nodi periferici. La nota dolente per tale tipologia di rete è la indisponibilità 
+totale della linea, qualora si effettui un guasto al nodo principale.
+In una struttura ad anello, ogni stazione del ring deve far proseguire il passaggio dei 
+dati alla successiva; la messa fuori uso di una stazione si risolve con la riconfigurazione 
+del sistema, che prevede il non utilizzo dell’apparecchiatura che si è guastata.
+La tipologia ottimale è però quella che utilizza il bus. Con tale modalità ogni stazione 
+della rete è indipendente e non condiziona il buon funzionamento del resto dell’impianto. 
+Infine il collegamento ibrido è l’insieme delle varie tipologie costruttive.
+Una seconda suddivisione viene fatta riguardo al tipo di standard e alla velocità di tra-
+smissione.
+Oltre alle reti omologate agli standard internazionali, sono utilizzate le reti proprieta-
+rie. Le seconde saranno caratterizzate da protocolli definiti dalla ditta dei prodotti, che 
+vengono interfacciati tra loro.
+Per esempio, se vengono acquistati prodotti di una determinata ditta, le apparecchia-
+ture dello stesso produttore saranno perfettamente compatibili tra loro; potranno essere tra 
+loro interfacciate, tramite una rete costruita appositamente dalla stessa ditta (rete di tipo 
+proprietario).
+Il vantaggio è quello che i prodotti (della stessa casa costruttrice) sono perfettamente 
+compatibili tra loro per ciò che concerne lo standard e il protocollo di comunicazione; 
+sono reti che non necessariamente possono interfacciare prodotti di altre case costruttrici; 
+questo è senz’altro uno svantaggio.
+Per quanto concerne la velocità di trasmissione, si arriva a trasmettere dati a una velo-
+cità 10 MBit/s con la rete Ethernet; il passaggio di dati tra personal computer e PLC si 
+compie con l’utilizzo di reti FDDI (Fiber Distributed Data Interface), a 100 Mbit/s.
+La trasmissione dei dati tramite la linea deve essere fatta in modo che tutte le stazioni 
+possano comunicare con le altre.
+Nella Fig. XIV.3.3 è schematizzato un esempio di struttura CIM che utilizza reti di 
+vario tipo per interconnettere le varie apparecchiature (Schneider).
+3.2.2  Modalità operative
+Vi sono due modalità operative per il transito dei dati:
+Token passing
+Con la modalità a gettone o testimone passante, l’accesso alla comunicazione viene 
+dato dal possesso del Token da parte della stazione. Il testimone passa da una stazione 
+all’altra, dando il diritto d’intervento per un tempo prestabilito a ogni PLC della rete. Per 
+poter trasmettere bisogna attendere il turno di possesso del gettone, inviare il proprio mes-
+saggio, per poi passare a un’altra stazione il diritto a intervenire. È un funzionamento che 
+può andar bene per un numero ristretto di stazioni, poiché ovvia-mente più PLC vi sono, 
+più risulta essere ritardato l’accesso alla trasmissione; eventuali problemi di passaggio del 
+testimone provocano la fermata dell’intera linea di comunicazione.
+CSMA/CD (Carrier Sense Multiple Access with Collision Detection)
+Con il metodo ad accesso multiplo, ogni stazione può in ogni momento inviare un suo 
+messaggio, previa verifica che nessuno stia trasmettendo. Un’eventuale altra stazione che 
+nel frattempo volesse intervenire viene bloccata e deve attendere la fine della trasmissione 
+precedente. Con questa modalità di trasmissione, essendo l’accesso alla rete distribuito su 
+vari nodi, si possono aggiungere o togliere tali nodi, senza nulla togliere alla funzionalità 
+della linea di comunicazione.
+
+[PAG 1326]
+XIV-14
+AUTOMAZIONE
+Fig. XIV.3.3  Esempio di struttura CIM con relative apparecchiature.
+Livello 4
+Livello 3
+Livello 2
+Livello 1
+Ethernet
+Ethernet TCP/IP (Modbus, Uni-TE)
+TSX Micro
+TSX ETZ
+ATV 28
+ATV 58
+Magelis
+Bus Modbus
+Bus Uni-Telway
+TSX Micro
+MODEM
+MODEM
+TSX ETZ
+Monitor Pro
+TSX Premium
+Ethernet TCP/IP
+(Modbus, Uni-TE)
+Fipway/Modbus Plus
+TSX Micro
+TSX Micro
+TSX Nano
+TSX Nano
+TSX Nano
+TSX Nano
+Bus AS
+TSX N
+interface
+Pulsantiera
+         XAL
+Sensore
+intelligente
+
+[PAG 1327]
+AUTOMAZIONE
+XIV-15
+Fig. XIV.3.3  Segue.
+Ethernet
+Magelis IPC
+Servizio Global Data
+Ethernet TCP/IP (Modbus)
+Digital HP
+TSX Quantum + server Web
+TSX Premium + server Web
+TSX Quantum
+Ethernet
+Magelis PC
+TSX Premium
+Rack estensione I/O
+TSX Premium
+Bus AS
+interface
+Partenza motore
+Servizio
+I/O Scanning
+TSX Premium
+ATV 58
+Magelis XBT F
+Momentum
+Rack estensione I/O
+TSX Premium
+Bus X
+Pulsantiera
+         XAL
+Sensore
+intelligente
+Pulsantiera
+         XAL
+Partenza motore
+Bus AS
+interface
+Sensori
+TSX Quantum
+TSX Micro TSX Premium
+Bridge
+Modbus Plus
+
+[PAG 1328]
+XIV-16
+AUTOMAZIONE
+3.2.3  Collegamento tra reti
+Quando si vogliono collegare più reti tra loro, anche di diverso tipo, si hanno tre pos-
+sibilità operative: gateway, router, bridge.
+Gateway (passaggio)
+Si possono connettere con tale modalità reti diverse, tramite la conversione dei diversi 
+protocolli, secondo il modello ISO/OSI.
+Si ricorda che il modello ISO/OSI è la normalizzazione fatta dall’International Standard 
+Organization, mediante la quale, attraverso 7 livelli, si definiscono le modalità con cui 
+due apparecchiature collegate a una rete comunicano tra loro.
+Router (instradamento)
+È il metodo con il quale si definisce un nodo, dove due reti diverse riescono, tramite 
+l’instradamento e la traduzione dei dati, a comunicare.
+Bridge (ponte)
+Si utilizza per collegare due reti uguali tra loro; talora è impiegata questa modalità per 
+collegare tra loro reti che presentano cavi di interconnessione diversi.
+3.2.4  Vantaggi dati dall’impiego delle reti
+L’utilizzo delle reti in ambito industriale produce un miglioramento delle prestazioni 
+dei sistemi automatici, in quanto:
+–  A ogni controllore della rete viene affidato uno specifico compito; si hanno tante pic-
+cole applicazioni controllate ciascuna da un PLC.
+–  La possibilità da parte di ciascun controllore di scambiare dati tramite la rete di inter-
+connessione.
+–  L’innovazione tecnologica e la manutenzione delle singole applicazioni distribuite è 
+economicamente più vantaggiosa, rispetto a un’automazione centralizzata.
+–  Si migliora il rapporto segnale-disturbo, poiché i sensori e gli attuatori risultano essere 
+più vicini alle singole applicazioni.
+–  Si riduce inoltre il costo dei cablaggi.
+–  Avere molte CPU, rispetto a un’unica gestione dei programmi, riduce notevolmente il 
+tempo di scansione.
+–  Lo scambio dei dati tra PLC e i vari livelli gerarchici della piramide CIM permette di 
+gestire il sistema automatico direttamente dal livello di decisione e pianificazione.
+–  Si possono raccogliere statistiche sulla produzione, gestire lo scaricamento o la 
+memorizzazione di ricette di produzione, monitorare l’intero sistema a distanza.
+–  Si effettua un collegamento orizzontale tra i vari reparti di lavorazione, e verticale tra 
+i vari livelli di gestione della Factory Automation.
+Non si tratta di decentramento degli ingressi e delle uscite soltanto, ma di elabora-
+zione e intelligenza distribuite, in grado di autogestirsi e di inferire su altre apparecchia-
+ture, prendendo determinate decisioni a seconda dei dati che vengono scambiati.
+3.2.5  Comunicazione parallela
+I bus, che permettono il trasferimento dei dati all’interno dei sistemi a microproces-
+sore, svolgono il loro compito facendo comunicare i dispositivi ad esso collegati in modo 
+parallelo.
+Vale a dire che un pacchetto di informazioni viene trasferito in contemporanea tramite 
+il numero n di linee disponibili: per un bus composto da 8 linee si possono trasferire sola-
+mente 8 bit simultaneamente (i dispositivi sono in questo caso dotati di capacità di memo-
+ria di 8 bit).
+La trasmissione con interfaccia parallela è caratterizzata da un’elevata velocità di tra-
+sferimento delle informazioni, però comporta l’utilizzo di un congruo numero di condut-
+tori per effettuare la comunicazione. Per tale motivo, è utilizzata generalmente per il
+
+[PAG 1329]
+AUTOMAZIONE
+XIV-17
+collegamento degli organi integrati all’interno della CPU, oppure per percorsi brevi 
+esterni ai sistemi a microprocessore (interfacciamento con stampanti, plotters), dove la 
+velocità influisce notevolmente sul funzionamento dell’apparecchiatura.
+3.2.6  Comunicazione seriale
+La comunicazione a lunghe distanze viene invece effettuata con modalità di interfac-
+ciamento seriale, che abbisogna di un numero limitato di linee di collegamento (si arriva a 
+due soli conduttori).
+La velocità risulta però essere di molto inferiore a quella che si ottiene con le inter-
+facce parallele.
+La comunicazione seriale avviene generalmente tramite interfacce collegate al bus del 
+sistema a microprocessore, oppure per via software, attraverso un programma che prov-
+vede alla generazione, al campionamento e all’invio del segnale bit per bit, da un trasmet-
+titore a un ricevitore.
+È stato necessario normalizzare la comunicazione seriale a livello internazionale, per 
+poter far comunicare apparecchiature di diverso tipo: il formato dei messaggi, la codifica 
+degli stessi e la velocità con cui vengono trasmessi hanno definito livelli di comunica-
+zione standard.
+Le caratteristiche delle varie modalità di trasmissione seriale sono normalizzate da 
+vari enti:
+–  CCITT: Comité Consultatif International Télégraphique et Téléphonique.
+–  EIA: Electronic Industries Association.
+–  ISO: International Standard Organization.
+Le principali norme in ordine ai dispositivi d’interfaccia seriale riguardano caratteri-
+stiche elettriche, funzionali e di collegamento, e sono in parte evidenziate nella Fig. 
+XIV.3.4. riguardo a distanza di copertura e velocità di trasferimento dei messaggi.
+ 
+Fig. XIV.3.4   Corrispondenza tra velocità di trasmissione e lunghezza di linea di alcuni 
+protocolli di comunicazione seriale.
+Si deve quindi distinguere in primo luogo tra comunicazione fra due dispositivi (point 
+to point) e fra più stazioni collegate in rete (multi drop).
+Velocità di 
+trasferimento
+Lunghezza linea
+in metri
+in baud (bit per secondo)
+1000
+15
+20K
+100K
+10M
+RS232C
+Loop corrente
+20mA
+RS422A/RS485
+
+[PAG 1330]
+XIV-18
+AUTOMAZIONE
+Nella comunicazione tra due apparecchiature si possono avere diverse modalità di tra-
+smissione (Fig. XIV.3.5):
+Simplex. Quando la comunicazione è 
+univoca tra un trasmettitore e un ricevi-
+tore.
+Half duplex. È il caso di comunica-
+zione bidirezionale tra due elementi ma 
+non in contemporanea: le apparecchiature 
+si scambiano invece alternativamente le 
+funzioni di trasmettitore e ricevitore.
+Full duplex. Con questa modalità, la 
+comunicazione è bidirezionale ed i mes-
+saggi possono essere trasferiti contempo-
+raneamente dalle due stazioni.
+Con le stesse modalità di trasmissione 
+si svolge la comunicazione tra più sta-
+zioni (Fig. XIV.3.6), dove generalmente 
+si ritrovano un’apparecchiatura padrone 
+(master) e le altre schiavo (slave). 
+Fig. XIV.3.5   Tipi di trasmissione.
+A seconda dei moduli di comunicazione utilizzati, si potranno avere master fissi o 
+flottanti all’interno della rete.
+La procedura di comunicazione prevede la serializzazione dei dati, per poter essere 
+inviati dal trasmettitore attraverso la linea seriale; una operazione di parallelizzazione
+delle informazioni avviene a opera del ricevitore, che trasforma i dati in arrivo nella tipica 
+configurazione interpretabile dalla CPU, di un qualsiasi sistema a microprocessore. 
+Nella trasmissione deve essere inequivo-
+cabile il riconoscimento da parte del rice-
+vitore di ogni bit trasmesso (se bit di 
+ridondanza, di start, di stop o facente 
+parte del codice del carattere).
+Si distingue dunque tra trasmissione 
+asincrona e sincrona: la prima modalità 
+prevede l’invio dei bit di sincronismo a 
+ogni dato trasmesso, mentre, nella tra-
+smissione seriale sincrona, le informa-
+zioni di controllo vengono inviate solo in 
+determinate posizioni, intervallando i 
+vari pacchetti di dati.
+Fig. XIV.3.6   Trasmissione Multi Drop.
+Comunicazione seriale asincrona
+Tipicamente in ambito industriale, per scambi tra PLC e PLC e tra controllore e termi-
+nali, viene utilizzata l’interfaccia seriale asincrona RS232C.
+Per ogni carattere inviato vengono aggiunti due segnali: un bit di start e uno o due bit 
+di stop, che delimitano l’invio di ogni carattere del messaggio (Fig. XIV.3.7).
+Le caratteristiche della trasmissione seriale asincrona sono:
+–  Velocità di trasmissione: variabile a seconda delle periferiche.
+TRASMISSIONE SIMPLEX
+TRASMETTITORE
+RICEVITORE
+UNITA' 1
+UNITA' 2
+UNITA' 1
+UNITA' 2
+TRASMISSIONE HALF DUPLEX
+TRASMISSIONE FULL DUPLEX
+MASTER
+SLAVE
+SLAVE
+SLAVE
+SLAVE
+TRASMISSIONE MULTI DROP
+
+[PAG 1331]
+AUTOMAZIONE
+XIV-19
+–  Formato del carattere: ogni scambio di informazioni avviene con formato di 8 bit per 
+poter trasferire un carattere ASCII (7 bit per il carattere alfanumerico + 1 bit per il con-
+trollo di parità), oppure una stringa di otto bit in binario puro.
+Fig. XIV.3.7   Formato del messaggio nella trasmissione di tipo asincrono di un carattere 
+ASCII.
+–  Controllo di parità. Per rilevare eventuali errori nella trasmissione dei caratteri ASCII, 
+il bit di rango 7 della stringa di bit trasferiti viene utilizzato per il controllo di parità (parity 
+even o parity odd). Nel controllo di tipo pari (even) il bit di parità sarà messo a 0 o a 1, in 
+modo che il numero degli stati logici 1 del codice sia appunto pari; il controllo di tipo 
+dispari (odd) si avrà con il bit di parità messo a 1 o a 0, in modo che il numero di bit a livello 
+alto della stringa sia dispari. Il bit di parità viene calcolato ed emesso dal trasmettitore, per 
+poi essere confrontato dal ricevitore con quello risultante dal calcolo fatto sulla stringa di 
+bit trasmessa, per rilevare l’esattezza della comunicazione dei dati avvenuta.
+–  Bit di start. Ogni carattere alfanumerico trasmesso viene preceduto da un bit di li-
+vello 0 che varia lo stato di non trasmissione (quando non si trasmette il livello logico del 
+segnale è high cioè 1), indicando in tale modo l’inizio della comunicazione della stringa 
+di bit che formano il codice del carattere.
+–  Bit di stop. Si hanno tipicamente uno o due segnali alti (livello logico 1) alla fine di 
+ogni stringa di bit della codifica di ogni carattere; in tale modo si riconoscerà l’eventuale 
+nuovo bit di start che avrà livello logico opposto.
+Comunicazione seriale sincrona
+Con la metodologia asincrona si ha una efficiente comunicazione nello scambio di 
+caratteri ASCII, ma quando si devono inviare dati formati da stringhe di bit tutti significa-
+tivi, questa procedura è insufficientemente affidabile.
+Si ricorre quindi alla comunicazione di tipo sincrono: i caratteri di controllo non ven-
+gono mandati per ogni carattere inviato (ad ogni byte), bensì ad intervalli regolari e con 
+una procedura diversa dalla asincrona. Il messaggio inviato risulterà essere strutturato 
+secondo lo schema della Fig. XIV.3.8.
+–  L’intestazione. Composta da un carattere di controllo che indica l’inizio del frame di 
+comunicazione (nell’esempio il carattere chiocciola “@”), dal numero di dispositivo al 
+CODICE CARATTERE
+STATO DI
+RIPOSO
+LIVELLO "1"
+LIVELLO "0"
+bit di "START"
+bit di "STOP"
+TRASMISSIONE DI UN CARATTERE
+(7 bit codice ASCII + 1 bit
+per il controllo di parità)
+(8 bit binario puro)
+
+[PAG 1332]
+XIV-20
+AUTOMAZIONE
+quale si vuole inviare il messaggio – nel caso di configurazione di rete di comunicazione 
+multidrop con varie stazioni intercomunicanti – (Device n.), e da un carattere di comando 
+(Header) di definizione dell’area di memoria a cui il messaggio che segue si riferisce.
+–  Il messaggio. Il testo vero e proprio del messaggio (Text) può essere costituito da una 
+stringa di n caratteri (tipicamente 128).
+Fig. XIV.3.8   Formato del messaggio per trasmissioni di tipo sincrono.
+Fig. XIV.3.9   Esempio di calcolo del codice di ridondanza di un frame.
+TEXT
+HEADER
+DEVICE n°
+@
+FCS
+CR
+FCS calculation range
+@
+CR
+1
+0
+R
+H
+0
+0
+3
+1
+0
+0
+0
+1
+5
+8
+n° unità
+testo
+FCS
+termi-
+natore
+codice
+coman-
+do
+@    0100    0000
+XOR
+1    0011    0001
+XOR
+0    0011    0001
+R    0101    0010
+0    0011    0000
+XOR
+1    0011    0001
+XOR
+conversione 
+in ASCII
+00110101
+00111000
+0101
+1000
+codice ASCII
+numero 5
+numero 8
+codice ASCII
+58
+FCS
+
+
+[PAG 1333]
+AUTOMAZIONE
+XIV-21
+–  La coda. La parte finale del protocollo di comunicazione comprende il codice di 
+ridondanza FCS (Frame Check Sequence) e il carattere finale di sincronismo (nell’esem-
+pio il carattere “”), con un carattere di CR (Carriage Return) per far tornare a capo la 
+scrittura del nuovo codice (ASCII 13).
+–  Il codice di ridondanza (FCS) viene elaborato effettuando una complessa operazione 
+di divisione polinomiale, che è in grado di tenere in conto l’ordine di disposizione di ogni 
+bit inviato e, conseguentemente, correttamente ricevuto. Tale procedura risulta essere 
+molto più efficace e meno dispendiosa rispetto alla comunicazione asincrona; viene infatti 
+inviato per ogni messaggio un solo codice di controllo di 16 bit, indipendentemente dalla 
+lunghezza del messaggio comunicato.
+La Fig. XIV.3.9 evidenzia l’esempio di calcolo del codice di ridondanza di un frame: 
+tale codice si ricava dall’operazione logica di OR esclusivo, di tutti i caratteri del frame, 
+compresi tra il carattere @ (AT) e l’ultimo carattere del campo testo. Il risultante codice 
+ASCII dell’operazione viene convertito in un numero esadecimale di due cifre.Con inter-
+facce di comunicazione seriale si possono collegare reti di apparecchiature, che possono 
+dialogare tra loro con lunghezze di linea che arrivano a 1000 m (2 km utilizzando fibre 
+ottiche al posto dei normali cavi schermati). Per lunghezze superiori si ricorre al 
+MODEM, che è una apparecchiatura in grado di modulare opportunamente il segnale, in 
+modo che possa essere trasferito a distanza, tramite linea telefonica.
+Nella Fig. XIV.3.10 è rappresentato il collegamento di una tipica configurazione di 
+PLC, che tramite interfaccia seriale asincrona RS232/C viene connesso a un MODEM. Il 
+MODEM sarà poi collegato, tramite linea telefonica, a un uguale dispositivo posto in un 
+qualsiasi luogo destinatario delle informazioni inviate dal PLC; il secondo MODEM ela-
+borerà il segnale in modo che sia interpretabile, per esempio da un Personal Computer a 
+esso interfacciato, sul quale verranno elaborati i dati e successivamente scambiate ulte-
+riori informazioni con il sistema controllato.
+Fig. XIV.3.10   Schema a blocchi dell’interfacciamento a distanza tra PC e PLC tramite 
+MODEM.
+3.3  Storia del PLC
+Nella moderna fabbrica automatica il PLC può essere considerato il punto di interme-
+diazione tra elettromeccanica ed elettronica: esso è infatti uno strumento con base elet-
+tromeccanica, che si avvale di un linguaggio di colloquio e gestione (ladder diagram) 
+interpretabile e familiare nell’ambiente dei progettisti e degli installatori elettrici; è nel 
+contempo uno strumento con un cuore elettronico che elabora, diagnostica e interviene, in 
+modo molto più evoluto di una logica cablata di tipo elettromeccanico.
+PLC
+MODEM
+MODEM
+PERSONAL 
+COMPUTER
+INTERFACCIA
+SERIALE
+COMUNICAZIONE
+DI
+LINEA TELEFONICA
+SCAMBIO INFORMAZIONI
+
+[PAG 1334]
+XIV-22
+AUTOMAZIONE
+Il PLC segue infatti l’evoluzione tecnologica e il processo di integrazione che accom-
+pagna i microprocessori, sempre più veloci nell’eseguire le operazioni, i quali vengono 
+prodotti con costi sempre più vantaggiosi.
+Il PLC (Programmable Logic Controller) nasce intorno agli anni ‘70 del secolo scorso 
+come sistema di controllo nelle fabbriche produttrici di materiali e apparecchiature 
+pesanti, in sostituzione dei sistemi a logica cablata che utilizzano tradizionali relè. Si trat-
+tava di un sistema denominato MODICON (MOdular DIgital CONtroller) che utilizzava 
+una CPU silice-based che elaborava e controllava una logica digitale interfacciata con 
+ingressi e uscite ON/OFF.
+Oggigiorno tale apparecchiatura ha in gran parte soppiantato i tradizionali quadri di 
+logica cablata e vince ancora la battaglia per la supremazia nel controllo di fabbrica 
+rispetto al microcontroller, apparecchio più sofisticato e più potente ma che abbisogna di 
+una forte componente di tipo software.
+L’aspetto che rende il PLC molto competitivo è quello della facilità di gestione e della 
+flessibilità che accompagna tale strumento: la logica programmabile fornisce un cablag-
+gio che può essere in qualsiasi momento modificato, in base alle esigenze del sistema pro-
+duttivo che governa; inoltre, non è da trascurare l’immediatezza dell’intervento 
+manutentivo, in quanto il PLC offre una diagnostica tale da consentire una veloce analisi e 
+ricerca dei guasti, nel sistema di automazione che controlla. Nell’ambito industriale il 
+PLC trova la sua sede naturale, in quanto concepito per funzionare in ambienti con pre-
+senza di disturbi elettrici, con alte temperature, con vibrazioni e colpi meccanici e con ali-
+mentazioni non sempre lineari.
+La norma IEC 1131 sui PLC sviluppata dal Working Group 7 dell’IEC Technical 
+Commitee TC65 definisce così il PLC: “sistema elettronico a funzionamento digitale, 
+destinato all’uso in ambito industriale, che utilizza una memoria programmabile per 
+l’archiviazione interna di istruzioni orientate all’utilizzatore per l’implementazione di 
+funzioni specifiche, come quelle logiche, di sequenziamento, di temporizzazione, di con-
+teggio e calcolo aritmetico, e per controllare, mediante ingressi ed uscite sia digitali che 
+analogici, vari tipi di macchine”.
+La tecnologia PLC si è evoluta negli ultimi anni e include ingressi e uscite analogici 
+oltre a quelli digitali, comunicazione tramite reti e programmazione standardizzata, 
+grande capacità di calcolo e memorizzazione dati. Ciò nonostante le caratteristiche di 
+impiego delle logiche programmabili sono ad oggi:
+–  l’80% dei PLC viene impiegato in applicazioni di piccole dimensioni (da 1 a 128 punti 
+di I/O),
+–  il 78% di punti di I/O è digitale,
+–  l’80% di applicazioni PLC sono sviluppate con un massimo di 20 istruzioni in ladder 
+diagram.
+4  L’HARDWARE NEI PLC
+Il PLC è un’apparecchiatura a base informatica che ha le seguenti caratteristiche di 
+funzionamento:
+1)  acquisisce dalla memoria interna (memoria di programma e memoria dati) i segnali 
+provenienti dai sensori sul campo e dalle periferiche di dialogo uomo-macchina;
+2)  dalla sua memoria interna eroga le uscite per il comando degli attuatori e il dialogo 
+con le periferiche;
+3)  la sua gestione e programmazione si presta all’utilizzo da parte di qualsiasi opera-
+tore, avendo le funzioni di controllo di un qualsiasi sistema tradizionale, ma non le limita-
+zioni di quest’ultimo;
+
+[PAG 1335]
+AUTOMAZIONE
+XIV-23
+4)  la sequenza di comando del processo non si basa su un cablaggio, bensì si svolge 
+secondo un programma prestabilito.
+Le due prime caratteristiche fanno sì che il controllore a logica programmabile possa 
+essere direttamente installato sul campo, senza alcuna precauzione riguardo eventuali pro-
+tezioni che si rendono necessarie per altri strumenti di tipo informatico.
+La terza caratteristica del PLC permette a qualsiasi operatore di avvicinarvisi senza 
+rinunciare alle proprie competenze: il progettista elettromeccanico si baserà sulle cono-
+scenze possedute in ordine alla realizzazione di schemi elettrici funzionali, operando con 
+il programma del PLC redatto in ladder diagram; l’operatore meccatronico svilupperà i 
+suoi progetti con linguaggio grafcet; l’esperto informatico si avvarrà delle proprie compe-
+tenze specifiche per programmare in linguaggio letterale.
+L’ultima caratteristica menzionata riguarda la flessibilità del PLC, che può far parte di 
+un sistema ristrutturabile completamente sulla base di un programma, intervenendo quindi 
+prevalentemente sul software anziché sull’hardware del processo automatico.
+4.1  Architettura del PLC
+Vi sono varie tipologie di PLC, che soddisfano le esigenze più svariate in ordine alle 
+esigenze dell’applicazione (sistema di alimentazione, complessità delle operazioni da 
+svolgere, velocità di elaborazione ecc.) e conformemente alle esigenze economiche che 
+entrano in gioco. L’offerta si differenzia quindi in tre tipi di soluzioni costruttive.
+PLC compatti
+La loro struttura è di ridotte dimensioni e comprende pochi punti di I/O disponibili 
+(max 10 punti I/O non espandibili). Sono impiegati nelle applicazioni a basso costo dove 
+la componente economica di queste apparecchiature (un centinaio di euro) è determinante.
+Si tratta di applicazioni a livello civile come l’apertura del cancello carraio o della 
+bascula del box o l’irrigazione del giardino; nel comparto industriale si limitano al 
+comando di semplici macchine.
+PLC espandibili
+Sono apparecchiature più evolute dei PLC compatti, con una dotazione di istruzioni 
+pari a quella del segmento superiore (modulari), ma sono equipaggiati con un’unica CPU. 
+La loro programmazione viene eseguita con semplici linguaggi (ladder o lista istruzioni).
+Le applicazioni riguardano il segmento intermedio cioè quello che abbisogna di una 
+certa flessibilità nella configurazione hardware (intorno al centinaio di I/O) e di presta-
+zioni più complesse. Tipicamente la configurazione prevede il modulo base equipaggiato 
+con CPU e alimentatore e dei moduli aggiuntivi di espansione di Input/Output.
+PLC modulari
+La loro struttura (Fig. XIV.4.1) è simile a quella dei PLC espandibili ma con notevoli 
+possibilità di espansione. Sono equipaggiati con moduli (schede) alloggiati in un conteni-
+tore (rack) con una configurazione (fino a migliaia di I/O) che può essere variabile a 
+seconda del sistema e consente eventuali varianti successive.
+È inoltre previsto un funzionamento multitasking grazie alla disponibilità di più pro-
+cessori alloggiati nel modulo CPU.
+Sono le apparecchiature che consentono la più elevata capacità di elaborazione e nel 
+contempo anche ovviamente i più costosi. Le applicazioni in cui vengono impiegati sono 
+quelle del segmento industriale, per il quale, la flessibilità di questi PLC permette di con-
+figurare delle architetture dove, a seconda del bisogno, vengono inseriti o aggiunti i 
+moduli di I/O o speciali che servono.
+I moduli CPU possono essere diversi a seconda della complessità del sistema che 
+andranno a comandare.
+
+[PAG 1336]
+XIV-24
+AUTOMAZIONE
+Fig. XIV.4.1  Esempio di PLC di tipo modulare.
+Scelta tra le varie tipologie di PLC
+In sintesi una valutazione che fa propendere per una tipologia o l’altra è sicuramente il 
+numero di I/O che si devono gestire.
+I PLC compatti sono poco costosi ma hanno il limite di non essere espandibili; si può 
+fare affidamento sui soli punti di I/O presenti sul modulo (in genere qualche decina di 
+punti). Il pannello frontale è equipaggiato con un connettore denominato porta terminale
+che consente la comunicazione tra PLC e PC, per lo scaricamento e il debug del pro-
+gramma applicativo.
+Le configurazioni espandibili possono supportare tipicamente un massimo di tre 
+moduli di espansione e si raggiungono quindi al massimo un centinaio di I/O. Il collega-
+mento delle espansioni avviene tramite connettore, localizzato sul frontale della mac-
+china, che si connette tramite apposito cavo.
+Le versioni modulari possono equipaggiare fino a migliaia di I/O controllati da una 
+CPU multitasking o da un gestore multiprocessore. La connessione tra le varie schede 
+avviene tramite un bus alloggiato sul fondo del rack che le contiene.
+Le tipologie di PLC si possono inoltre distinguere in base alla taglia:
+Micro PLC. Sono equipaggiati con un massimo 
+di 64 punti di I/O di tipo ON/OFF e una memoria di 
+1 o 2 kb (Fig. XIV.4.2).
+Piccoli PLC. Con un massimo di 512 punti di I/O 
+digitali e analogici, possono essere collegati in rete 
+ed equipaggiati con una memoria di 4 kb.
+Medi PLC. Corredati di memoria di alcune 
+decine di kb, con moduli fino ad un massimo di 2048 
+punti di I/O digitali, analogici e con moduli speciali, 
+il tutto con la possibilità di collegamento in rete con 
+altre unità.
+Grandi PLC. Si contraddistinguono per l’elevata 
+capacità di calcolo e di memorizzazione ed elabora-
+zione di dati e per la gestione di grandezze analogi-
+che oltre che per controlli particolari.
+Fig. XIV.4.2  Micro PLC.
+
+[PAG 1337]
+AUTOMAZIONE
+XIV-25
+4.2  Parti costituenti
+I PLC sono attualmente prodotti da numerose case costruttrici in svariati modelli e 
+configurazioni; con l’introduzione della normativa IEC 1131 si è definito uno standard 
+che unifica le caratteristiche costruttive e di funzionamento, per cui risultano essere simili 
+nella loro dotazione di base. Ogni PLC è infatti essenzialmente costituito da:
+–  unità alimentatore;
+–  unità centrale o CPU (Central Processing Unit);
+–  unità di memoria (dei dati e dei programmi);
+–  unità di ingresso e uscita I/O;
+Fig. XIV.4.3   Schema a blocchi di un PLC.
+Il controllore a logica programmabile, di cui la Fig. XIV.4.3 presenta uno schema a 
+blocchi, è costituito da questo insieme di schede, e da altre di tipo speciale, collegate tra 
+loro tramite un canale di comunicazione dedicato chiamato bus interno; il tutto è allog-
+giato in un contenitore chiamato rack. L’organizzazione modulare di queste schede confe-
+risce al PLC una notevole flessibilità di configurazione, in base alle esigenze 
+dell’applicazione industriale che si vengono a creare. 
+Generalmente le unità alimentatore, CPU e memoria fanno parte di un unico modulo o 
+scheda; sono forniti moduli in varie versioni che soddisfano le più svariate esigenze di 
+gestione e di elaborazione.
+In particolare l’alimentatore avrà delle caratteristiche proporzionate al tipo e numero 
+di I/O che verranno configurati nel sistema automatico.
+SENSORI
+(INPUT)
+ATTUATORI
+(OUTPUT)
+INTERFACCIA
+DI USCITA
+CPU
+ALIMENTATORE
+INTERFACCIA
+DI INGRESSO
+PERIFERICHE
+MEMORIA
+DATI
+PROGRAMMA
+
+[PAG 1338]
+XIV-26
+AUTOMAZIONE
+Il modello di CPU che verrà adottato dipenderà anch’esso dal numero di I/O configu-
+rabili ma anche dal genere di ingressi e uscite che dovranno essere gestiti (digitali, analo-
+gici, speciali) e dal tipo di elaborazione (multitasking, multiprocessore, ad evento, ad 
+interrupt) prevista dal programma di gestione.
+La taglia e la tipologia di memoria che supporterà la CPU nell’archivio dei dati e del 
+programma sarà scelta in base a caratteristiche di funzionalità e di salvaguardia del pro-
+gramma e dei dati stessi.
+4.2.1  Alimentatore
+L’alimentatore viene impiegato per convertire la tensione di rete in tensione (in cor-
+rente continua) che possa essere utilizzata per il funzionamento della CPU; generalmente 
+il modulo è inoltre destinato all’alimentazione delle varie schede che compongono il PLC, 
+delle eventuali estensioni o moduli remoti, di datori di segnali e attuatori. Tipicamente 
+vengono impiegati alimentatori a commutazione (switching) che hanno la prerogativa di 
+un minore peso e ingombro e maggiore rendimento, rispetto agli altri tipi di alimentatori.
+Le caratteristiche di un alimentatore sono:
+–  la tensione di rete, in genere 115/230 V, che viene trasformata dall’alimentatore in 
+una tensione di 5, 12 o 24 V in corrente continua; la configurazione della tensione di ali-
+mentazione avviene generalmente in modo automatico, o tramite un selettore o un connet-
+tore jumper;
+–  la corrente di uscita, che varia a seconda dei modelli in base alla quantità di moduli 
+che deve supportare, va dai 0,1 ai 15 A;
+–  la separazione galvanica tra entrata e uscita dell’apparecchio, che evita disturbi prove-
+nienti dalla rete di alimentazione;
+–  una protezione per i corto circuiti costituita generalmente da un fusibile di tipo rapido;
+–  la segnalazione attraverso un led del funzionamento o meno dell’unità.
+Un qualsiasi alimentatore è sostanzialmente costituito da una serie di componenti (Fig. 
+XIV.4.4), ciascuno utilizzato per un compito ben preciso.
+Fig. XIV.4.4   Schema a blocchi di un alimentatore switching.
+Tensione
+di ingresso
+(alternata)
+Circuito di
+raddrizzamento
+e filtraggio
+Circuito di
+commutazione
+ad alta frequenza
+Trasformatore
+di potenza
+Rettificazione
+di uscita e filtro
+Controllo del
+duty cycle
+PWM
+Oscillatore
+U rif.
+Convertitore c.c./c.c.
+
+[PAG 1339]
+AUTOMAZIONE
+XIV-27
+Circuito di raddrizzamento e filtraggio
+Ha il compito di convertire la corrente da alternata in continua: tale dispositivo è 
+costituito da circuiti che utilizzano diodi a semiconduttore. Tipicamente vengono impie-
+gati raddrizzatori a ponte di Graetz. Successivamente la tensione viene livellata mediante 
+un condensatore di livellamento.
+Convertitore
+La sezione ad alta frequenza è denominata convertitore: la tensione in ingresso (ten-
+sione continua) viene convertita in una tensione ad onda quadra tramite un processo di 
+parzializzazione. Questo circuito è costituito da un dispositivo Mosfet, fatto lavorare in 
+commutazione (ON/OFF) a frequenze elevate (20 kHz); in questo modo è possibile assi-
+curare limitate potenze dissipate dal dispositivo a semiconduttore e contemporaneamente 
+evitare disturbi alle frequenze audio (generalmente inferiori a 20 kHz).
+Il trasformatore converte l’onda quadra così ottenuta in un’altra che, raddrizzata e fil-
+trata, viene prelevata in uscita. La funzione del trasformatore è quella di isolare la ten-
+sione d’ingresso da quella di uscita e di avere in uscita più di un valore di tensione.
+Un circuito di controllo di tipo PWM (Pulse Width Modulation) interviene sulla durata 
+dell’impulso attivo del semiconduttore; la regolazione della tensione in uscita è quindi 
+gestita tramite un sistema retroazionato dove il segnale errore, inteso come differenza tra 
+la tensione di riferimento e quella in uscita, interviene direttamente sul valore del duty cycle
+stesso. Pertanto, ferma restando la frequenza di commutazione, la tensione d’uscita viene 
+mantenuta stabile al variare del carico applicato e della tensione in ingresso.
+In caso di interruzioni momentanee di alimentazione da parte della rete, alcuni tipi di 
+PLC hanno una protezione che opera in tale modo: se l’interruzione è inferiore ai 10 ms 
+non si ha alcun malfunzionamento; se l’interruzione supera un tempo in genere di 200 ms 
+vengono messe a zero le uscite tramite un bit sistema. Succede infatti che in alcuni casi lo 
+stato logico degli ingressi possa essere confuso (0 o 1) se manca l’alimentazione, mentre 
+il PLC sta ancora elaborando e quindi erogando delle uscite; è conveniente quindi, onde 
+evitare malfunzionamenti, asservire lo stato logico delle uscite a un bit sistema che ne ini-
+bisca il funzionamento (messa a zero), in caso di mancanza di alimentazione.
+Oltre all’alimentatore il PLC è tipicamente provvisto di una batteria tampone che ne 
+salvaguarda l’autonomia di alimentazione in caso di black-out. A seconda della tipologia 
+del PLC, la pila supporta la sola area di memoria sistema, o anche l’area di memoria dedi-
+cata al programma (se esso è scritto su dispositivi RAM); la durata di tale batteria tam-
+pone varia dai due ai cinque anni, a seconda delle funzioni che vengono ad essa asservite.
+4.2.2  CPU (Central Processing Unit)
+Il cuore del PLC è costituito da un microprocessore (Fig. XIV.4.5), la cui evoluzione 
+tecnologica segue quella di tutte le macchine a base informatica.
+Sono in commercio infatti PLC che utilizzano microprocessori della prima genera-
+zione (Z80 della Zilog, 8051 della INTEL), fino agli attualissimi processori ad alto grado 
+di integrazione e alte velocità di elaborazione. Nella CPU vengono eseguite le istruzioni 
+del programma che, in base ai segnali che arrivano dai rilevatori sul campo, generano le 
+uscite corrispondenti.
+In particolare le funzioni della CPU sono:
+–  eseguire l’acquisizione dei segnali di ingresso, creandone una immagine negli appositi 
+registri della memoria dati;
+–  controllare la sequenza con cui le istruzioni del programma prestabilito vengono lette 
+nella memoria programma, interpretate secondo i loro codici operativi e infine eseguite 
+secondo lo stato logico assegnato agli ingressi;
+
+[PAG 1340]
+XIV-28
+AUTOMAZIONE
+–  interrompere la sequenza normale del programma in presenza di salti, di richiami a 
+sottoprogrammi e interruzioni;
+–  generare le uscite abilitate dall’elaborazione delle varie istruzioni del programma, 
+aggiornandole di volta in volta a ogni ciclo di scansione.
+Fig. XIV.4.5  Schema a blocchi di un microprocessore.
+Nella Fig. XIV.4.6 si può vedere l’architettura di un microprocessore; esso sarà l’inte-
+grazione, in uno spazio paragonabile a quello occupato da un scatola di fiammiferi, di una 
+serie di dispositivi: ALU (Aritmetic Logic Control), UC (Unit Control), Logica di 
+gestione dei bus, Logica di Interrupt e DMA, Bus di comunicazione.
+ALU (Arithmetic Logic Unit)
+L’Unità Logico Aritmetica è il dispositivo atto alla elaborazione dei dati; essa è costi-
+tuita da una rete combinatoria che è in grado di compiere in parallelo su un certo numero 
+di bit, delle operazioni logiche e aritmetiche.
+Il numero di bit che riesce a gestire contemporaneamente determina la struttura della 
+memoria interna, dei registri e del bus di comunicazione. Tipicamente i PLC operano su 
+gruppi di 8, 16 o 32 bit, l’informazione è contenuta in una stringa di bit chiamata general-
+mente word.
+Le porte logiche sono i circuiti elettronici integrati nell’ALU, che consentono di ese-
+guire le operazioni logiche (di tipo booleano) e le operazioni aritmetiche necessarie per la 
+programmazione del PLC. Queste operazioni saranno prese in considerazione nella parte 
+che riguarda le istruzioni del PLC. Per operare al meglio, l’Unità Aritmetico Logica si 
+avvale di particolari registri chiamati accumulatori, sui quali vengono memorizzati i dati 
+delle operazioni e il loro risultato finale. Inoltre vengono utilizzati dei flag (carry, over-
+flow, zero, signal, parity) alloggiati nel Registro di Stato (Status Register), che consen-
+tono di far operare in un certo modo il processore, una volta che il loro contenuto viene 
+letto dalla UC (Unità di Controllo).
+CONTROL BUS
+ADDRESS BUS
+DATA BUS
+INTERRUPT
+DMA LOGIC
+ADDRESS
+REGISTER
+TIMING
+REGISTER
+ALU
+Aritmetic
+Logic
+Control
+UC
+Unit
+Control
+BUS
+INTERFACE
+
+[PAG 1341]
+AUTOMAZIONE
+XIV-29
+Fig. XIV.4.6  Architettura di un microprocessore Intel 8051.
+Vi sono poi il Registro Istruzioni e il Registro Indirizzi che servono per decodificare 
+l’istruzione di programma e rilevarla nella posizione di memoria in cui è alloggiata.
+Un’ultima notazione merita di essere fatta riguardo al Registro Contatore di Pro-
+gramma che ha la funzione di tenere il segno del punto in cui il programma è arrivato a 
+essere scandito: infatti, tale registro memorizza l’indirizzo della allocazione di memoria, 
+che contiene l’istruzione di programma che dovrà essere via via successivamente ese-
+guita, con un ciclo ripetitivo denominato ciclo di scansione.
+S
+S
+V
+C
+C
+V
+D
+P
+V
+/
+T
+S
+R
+P1
+P2
+P0
+PORT 0
+PORT 2
+PORT 3
+PORT 1
+P1
+N
+E
+S
+P
+G
+O
+R
+P
+/
+E
+L
+A
+D
+D
+V
+/
+A
+E
+2
+L
+A
+T
+X
+1
+L
+A
+T
+X
+CIRCUITY
+TIMING
+&
+OSC
+DRIVERS
+ROM
+4K X 8
+PROGRAM MEMORY ADDRESS DECODER
+CONTROL
+DECODER
+INSTRUCTION
+ENGINE
+CONTROL
+PLA
+CONTROL 
+PCL
+PCH
+PROGRAM CONTROL
+CONTROL
+TIMER 
+PORT
+SERIAL
+CONTROL
+INTERRUPT
+ROTATE CONTROL
+SPECIAL FUNCTION REGISTER ADDRESS DECODER
+RAM ADDRESS DECODER
+DRIVERS
+REGISTER BANK 0
+REGISTER BANK 1
+REGISTER BANK 2
+REGISTER BANK 3
+RAM
+128 X 8
+SP
+DPL
+DPH
+TCON
+TMOD
+TL0
+TH0
+TL1
+TH1
+SCON
+SBUF
+IEC
+IPC
+B
+ACC
+P
+OV
+FO
+AC
+CY
+PARITY
+U
+L
+A
