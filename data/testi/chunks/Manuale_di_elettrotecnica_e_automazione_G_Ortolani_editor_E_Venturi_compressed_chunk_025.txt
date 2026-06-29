@@ -1,0 +1,2962 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 25/116 ===
+Chars: 44,780 | Offset: 1,060,030
+
+
+
+[PAG 522]
+VII-18
+ELETTROTECNICA GENERALE
+2.6  Andamento della potenza al variare del carico
+L’analisi si conduce normalmente rappresentando la potenza in funzione della cor-
+rente erogata, ricordando che la condizione di carico del generatore può variare fra il fun-
+zionamento a vuoto e il funzionamento in corto circuito.
+Con riferimento alla relazione VII.2.9
+–  la potenza generata Pg = EI, con E costante, è rappresentabile mediante una retta
+passante per l’origine (y = mx), con estremi Pg = 0 (funzionamento a vuoto) e Pg = EIcc
+(funzionamento in corto circuito);
+–  la potenza persa Pp = RiI2, con Ri costante, è rappresentabile mediante una parabola
+con concavità verso l’alto (y = ax2, a > 0), con asse coincidente con quello delle ordinate e
+con vertice nell’origine;
+–  la potenza utile Pu = Pg – Pp, coincide con la differenza fra le ordinate delle curve
+precedenti.
+La potenza utile è esprimibile anche con la relazione
+(VII.2.16)
+che è analoga all’equazione di una parabola y = ax2 + bx con concavità verso il basso
+(a < 0) e passante per l’origine (c = 0) (Fig. VII.2.16).
+Fig. VII.2.16   Generatore reale di tensione: a) variazione della potenza generata e persa
+al variare della corrente; b) variazione della potenza utile al variare della corrente.
+La condizione di adattamento del generatore coincide col vertice della parabola per
+cui la massima potenza utile si ha per
+(VII.2.17)
+e quindi per Ru = Ri.
+La massima potenza utile del generatore è pari a
+(VII.2.18)
+e il rendimento
+(VII.2.19)
+Nei circuiti elettrici, dove in genere le potenze in gioco sono elevate, non conviene la
+condizione di massima potenza utile perché la potenza persa è molto elevata (50% della
+Pu
+RiI2
+–
+EI
++
+=
+Pg, Pp
+I
+Pp = RI2
+Pu
+Icc
+Pg = EI
+a)
+Pu
+I
+PuM
+Icc
+b)
+Icc/2
+I
+Icc
+2
+------ ;
+=
+E
+2Ri
+--------
+PUM
+E2
+4Ri
+--------
+=
+
+E
+2
+
+E
+------------
+1
+2--
+0,5
+=
+=
+=
+
+[PAG 523]
+ELETTROTECNICA GENERALE
+VII-19
+potenza generata); nei circuiti elettronici invece, dove le potenze sono modeste, tale con-
+dizione di funzionamento non comporta fenomeni dissipativi importanti.
+2.7  Equivalenza fra i generatori reali di tensione e di corrente
+Un generatore reale di energia, purché lineare, può essere rappresentato indifferente-
+mente come un generatore di tensione o come un generatore di corrente.
+Fig. VII.2.17   Equivalenza fra generatore reale di tensione e generatore ideale di corrente.
+La perfetta equivalenza delle due schematizzazioni (Fig. VII.2.17) si basa sul fatto che
+un qualsiasi generatore di energia presenta un’unica e determinata tensione a vuoto E =
+U0 e una unica e determinata corrente di corto circuito I0 = Icc legate dalle relazioni
+(VII.2.20)
+per cui
+–  un generatore reale di tensione è equivalente a un generatore reale di corrente
+avente la stessa resistenza interna e corrente impressa pari alla corrente di cortocircuito
+del generatore di tensione;
+–  un generatore reale di corrente è equivalente a un generatore reale di tensione
+avente la stessa resistenza interna e f.e.m. pari alla tensione a vuoto del generatore di cor-
+rente.
+La rappresentazione di un circuito elettrico con l’uno o l’altro schema dipende solo da
+ragioni di praticità anche se in realtà un generatore sarà di tensione se la caduta di ten-
+sione interna, dovuta alla corrente di carico, risulterà una piccola percentuale della ten-
+sione a vuoto mentre sarà di corrente se la caduta di tensione interna sarà molto grande e
+la corrente di carico differirà assai poco dalla corrente di corto circuito.
+2.8  Leggi o principi di Kirchhoff
+I circuiti elettrici non sempre sono formati da elementi collegati in modo tale da essere
+percorsi dalla stessa corrente (struttura senza biforcazioni), ma possono risultare di strut-
+tura più complessa, cioè formati dall’unione di più circuiti semplici in modo da costituire
+una rete elettrica.
+Una rete elettrica è formata da:
+–  maglie; il termine maglia sta ad indicare una successione di bipoli scelti in modo da
+formare un circuito chiuso;
+–  nodi; il termine nodo sta ad indicare un qualsiasi punto della rete al quale sono con-
+nessi più di due bipoli;
+–  lati (elementi costituenti le maglie); il termine lato sta ad indicare una parte di cir-
+cuito che collega fra loro due nodi adiacenti, caratterizzato da una unica corrente e in
+grado di comprendere anche più bipoli.
+E
+
+Ri
+I0
+Gi
+U0
+E
+RiI0;
+=
+=
+I0
+E
+Ri
+----
+GiE
+=
+=
+
+[PAG 524]
+VII-20
+ELETTROTECNICA GENERALE
+Fig. VII.2.18   Esempio di maglia, nodo, lato.
+Nella Fig. VII.2.18 si distinguono tre maglie (percorsi ABCDA, ABDA, BCDB), due
+nodi (punti B e D) e tre lati (percorsi DAB, BD, BCD).
+Ai nodi e alle maglie di una rete elettrica si applicano le leggi di Kirchhoff delle cor-
+renti e delle tensioni, detti anche primo e secondo principio di Kirchhoff.
+Legge di Kirchhoff delle correnti, KLC (primo principio di Kirchhoff)
+Essa afferma che: la somma delle correnti dirette verso (entranti in) un nodo di una
+rete elettrica è uguale alla somma delle correnti che si allontanano (escono) dal nodo; o
+in modo del tutto equivalente che: la somma algebrica delle correnti che confluiscono in
+un nodo deve essere nulla; naturalmente si dovrà attribuire arbitrariamente un segno alle
+correnti che entrano (ad esempio ) e un segno contrario alle correnti che escono (ad
+esempio ).
+Fig. VII.2.19   Legge di Kirchhoff ai nodi.
+Con riferimento alla Fig. VII.2.19, le relazioni analitiche che esprimono la legge sono:
+(VII.2.21)
+Legge di Kirchhoff delle tensioni, KLV (secondo principio di Kirchhoff)
+Essa afferma che: la somma algebrica delle tensioni che agiscono in una qualsiasi
+maglia di una rete elettrica è uguale a zero.
+La Fig. VII.2.20 rappresenta una maglia formata da quattro lati, ciascuno contenente
+un bipolo, sui quali sono state indicate le polarità delle tensioni. Scegliendo arbitraria-
+mente un senso di percorrenza della maglia (per esempio quello orario) e considerando
+positive le tensioni dei bipoli che presentano, in base al senso di percorrenza scelto, come
+punto d’ingresso il morsetto positivo e come punto d’uscita quello negativo (convenzione
+di segno), si ha:
+(VII.2.22)
+A
+B
+C
+D
+I1
+R1
+R2
+R3
+R4
+I2 I3
+I4
+I1
+I2
+I3
+I4
++
+;
++
+=
+I1
+I2
+–
+I3
+–
+I4
+–
+0
+=
+U1
+U2
+U3
+U4
+–
++
+–
+0
+=
+
+[PAG 525]
+ELETTROTECNICA GENERALE
+VII-21
+Scegliendo un verso di percorrenza contrario (antiorario), l’equazione diventa:
+(VII.2.23)
+La scelta della convenzione di segno e del senso di percorrenza della maglia è inin-
+fluente sulle equazioni.
+Fig. VII.2.20   Legge di Kirchhoff delle tensioni.
+2.9  Collegamento in serie, in parallelo, in serie parallelo
+Un circuito elettrico è composto da una successione di bipoli attivi e passivi. Si dicono
+collegati in serie quei bipoli che sono percorsi dalla stessa corrente. In un circuito senza
+derivazioni tutti i bipoli sono in serie tra loro così come lo sono i bipoli che costituiscono
+un lato della rete elettrica.
+I bipoli collegati in serie godono delle seguenti proprietà:
+–  elementi attivi (generatori): più generatori in serie sono equivalenti, per gli effetti
+esterni, ad un solo generatore (equivalente) la cui f.e.m. è la somma algebrica delle singole
+f.e.m. e la cui resistenza interna è la somma delle singole resistenze interne (Fig. VII.2.21)
+(VII.2.24)
+–  elementi passivi (resistori): più resistori collegati in serie sono equivalenti, per gli
+effetti esterni, ad un resistore (equivalente) la cui resistenza è la somma delle resistenze
+dei singoli resistori (Fig. VII.2.22)
+Fig. VII.2.21   Bipoli attivi in serie.
+Fig. VII.2.22   Bipoli passivi in serie.
+U4
+U3
+U2
+U1
+–
++
+–
+0
+=
+A
+B
+C
+D
+U1
+U2
+U3
+U4
+1
+2
+3
+4
+
+
+
+
+
+
+
+
+E1
+E2
+E3
+Ri1
+Ri2
+Ri3
+
+
+
+Eeq
+Rieq
+Eeq  E1E2E3
+Rieq  Ri1Ri2Ri3
+A
+B
+UAB
+U1
+U2
+Un
+R1
+R2
+Rn
+UAB
+Req
+A
+B
+Req  R1R2...Rn
+Eeq
+Ei ;
+
+i
+1
+=
+n
+
+=
+Rieq
+Ri
+i
+1
+=
+n
+
+=
+
+[PAG 526]
+VII-22
+ELETTROTECNICA GENERALE
+(VII.2.25)
+Se invece delle resistenze si considerano le conduttanze, si ha la relazione
+(VII.2.26)
+Con riferimento alla Fig. VII.2.22, se si desidera calcolare la tensione ai capi di un
+qualsiasi resistore, si può applicare la regola del partitore di tensione così esprimibile: la
+tensione su un qualsiasi resistore facente parte di un gruppo di resistori collegati in serie,
+è pari alla tensione totale moltiplicata per un coefficiente di riduzione, dato dal rapporto
+fra la resistenza del resistore considerato e la resistenza totale (equivalente) della serie.
+(VII.2.27)
+Si può notare, applicando la relazione VII.2.27 ad ogni resistore della serie, che il resi-
+store di resistenza maggiore è soggetto alla tensione maggiore e viceversa, e quindi la
+tensione si ripartisce in maniera direttamente proporzionale alle resistenze dei vari ele-
+menti della serie.
+Si dicono collegati in parallelo quei bipoli che sono derivati dagli stessi nodi e quindi
+soggetti tutti alla stessa tensione.
+Le proprietà di cui godono i bipoli in parallelo sono:
+–  elementi attivi: i generatori elettrici di tensione possono essere collegati in paral-
+lelo, con i poli dello stesso segno tutti collegati fra loro, con lo scopo di fornire al circuito
+esterno una corrente maggiore di quella erogabile da ciascun generatore. Più generatori
+(n) uguali in parallelo sono equivalenti, agli effetti esterni, ad un generatore avente per
+f.e.m. la forza elettromotrice di un generatore e per resistenza interna 1/n quella di un
+generatore (Fig. VII.2.23).
+Fig. VII.2.23   Bipoli attivi in parallelo.
+Fig. VII.2.24   Bipoli passivi in parallelo.
+Fig. VII.2.25   Arco doppio.
+Req
+Ri
+i
+1
+=
+n
+
+=
+Geq
+1
+1
+G1
+
+1
+G2
+
+
+1
+Gn
+
++
++
++
+-------------------------------------------------------------------------------
+=
+Ui
+U
+Ri
+R1
+R2
+
+Rn
++
++
++
+--------------------------------------------------
+=
+I1
+R1
+I2
+I3
+I
+E
+R2
+R3
+E
+E
+I
+Req
+
+
+
+I1
+R1
+I2
+I3
+R2
+Rn
+I
+I
+Req
+UAB
+UAB
+A
+Req 
+B
+B
+A
+1/R11/R2...1/Rn 
+1
+I
+R1
+R2
+I1
+I2
+I1  I 
+R2
+R1R2
+I2  I 
+R1
+R1R2
+
+[PAG 527]
+ELETTROTECNICA GENERALE
+VII-23
+(VII.2.28)
+Qualora si collegassero in parallelo generatori differenti, si avrebbero al loro interno,
+anche in assenza di un carico esterno, correnti di circolazione che sono assai dannose per
+l’integrità degli stessi generatori.
+–  elementi passivi: più resistori collegati in parallelo (Fig. VII.2.24) sono equiva-
+lenti, per gli effetti esterni, ad un resistore (equivalente) la cui resistenza è data dalla
+relazione:
+(VII.2.29)
+Nel caso particolare di due resistori in parallelo, la Req assume il valore:
+Se invece delle resistenze si considerano le conduttanze, si ha la relazione
+(VII.2.30)
+Con riferimento alla Fig. VII.2.24, se si desidera calcolare la corrente di un qualsiasi
+resistore, si può applicare la regola del partitore (derivatore) di corrente così esprimibile:
+la corrente in un qualsiasi resistore facente parte di un gruppo di resistori collegati in
+parallelo, è pari alla corrente totale moltiplicata per un coefficiente di riduzione, dato dal
+rapporto fra la conduttanza del resistore considerato e la conduttanza totale (equiva-
+lente) del parallelo.
+(VII.2.31)
+Si può notare che essendo la corrente proporzionale alla conduttanza, il resistore di
+conduttanza maggiore (e quindi di minor resistenza) è attraversato dalla corrente mag-
+giore e viceversa.
+Un caso particolare di collegamento in parallelo di resistori è costituito dall’arco doppio
+(due resistori in parallelo, Fig. VII.2.25); per esso vale la regola che la corrente in uno dei
+due rami è data dalla corrente totale per il rapporto di riduzione fra la resistenza
+dell’altro ramo e la somma delle due resistenze. La regola si esprime analiticamente con
+le relazioni
+(VII.2.32)
+Per risolvere una rete elettrica composta da più bipoli collegati sia in serie che in
+parallelo, cioè determinare le correnti e le tensioni di ogni singolo bipolo, può risultare
+utile adottare un algoritmo di calcolo scandito come segue:
+–  analisi della rete per individuare i bipoli collegati in serie e in parallelo;
+–  riduzione al bipolo equivalente per quei bipoli per i quali è stato individuato il col-
+legamento, fino ad arrivare ad un circuito molto semplice;
+–  schematizzazione dei circuiti derivanti dalle varie riduzioni effettuate;
+Eeq
+E ;
+=
+Rieq
+Ri
+n----
+=
+Req
+1
+1
+R1
+
+1
+R2
+
+
+1
+Rn
+
++
++
++
+-----------------------------------------------------------------------------
+=
+Req
+R1
+R2
+
+R1
+R2
++
+--------------------
+=
+Geq
+Gi
+i
+1
+=
+n
+
+=
+Ii
+I
+Gi
+G1
+G2
+
+Gn
++
++
++
+----------------------------------------------------
+=
+I1
+I
+R2
+R1
+R2
++
+-------------------- ;
+=
+I2
+I
+R1
+R1
+R2
++
+--------------------
+=
+
+[PAG 528]
+VII-24
+ELETTROTECNICA GENERALE
+–  calcolo delle correnti e delle tensioni per i vari circuiti equivalenti schematizzati,
+partendo da quello più semplice, fino a risolvere completamente la rete.
+2.10  Resistori collegati a stella e a triangolo
+Nelle reti elettriche i bipoli possono essere collegati in vari modi. Nel caso di tre
+bipoli resistivi, sono interessanti i collegamenti:
+–  a stella: i resistori hanno tre dei loro terminali collegati fra loro in modo da formare
+il centro stella e gli altri tre sono connessi a tre diversi nodi di una rete elettrica (Fig.
+VII.2.26);
+–  a triangolo: i resistori hanno i terminali connessi uno di seguito all’altro a formare
+un circuito chiuso a tre lati (triangolo), i cui vertici sono collegati a tre diversi nodi della
+rete (Fig. VII.2.27).
+È sempre possibile sostituire tre resistenze che collegano a triangolo tre nodi di una
+rete elettrica, con altre tre resistenze fra loro collegate a stella facenti capo agli stessi
+punti, e viceversa, senza alterare il regime di funzionamento della rete elettrica restante;
+in questo caso ogni triangolo di resistenze può essere trasformato in una e una sola stella
+di resistenze e viceversa.
+Fig. VII.2.28   Equivalenza fra i collegamenti a stella e triangolo.
+Con riferimento alla Fig. VII.2.28, le relazioni analitiche che permettono di determi-
+nare i valori di resistenza sono:
+–  trasformazione da triangolo a stella:
+(VII.2.33)
+Fig. VII.2.26   Resistori collegati a stella. Fig. VII.2.27   Resistori collegati a triangolo.
+A
+RA
+RB
+RC
+B
+C
+0
+0
+RA
+RB
+RC
+A
+B
+C
+A
+B
+C
+RAB
+RBC
+RCA
+A
+B
+C
+RAB
+RBC
+RCA
+A
+B
+C
+RAB
+RBC
+RCA
+0
+RA
+RB
+RC
+RA
+RCA
+RAB
+
+RAB
+RBC
+RCA
++
++
+------------------------------------------------;
+=
+RB
+RAB
+RBC
+
+RAB
+RBC
+RCA
++
++
+------------------------------------------------;
+=
+RC
+RBC
+RCA
+
+RAB
+RBC
+RCA
++
++
+-----------------------------------------------
+=
+
+[PAG 529]
+ELETTROTECNICA GENERALE
+VII-25
+La resistenza relativa a un nodo della stella è data dal rapporto fra il prodotto delle
+resistenze dei lati del triangolo equivalente che confluiscono in quel nodo e la somma
+delle resistenze del triangolo.
+–  trasformazione da stella a triangolo:
+(VII.2.34)
+La resistenza di un lato del triangolo è data dal rapporto tra la somma dei prodotti
+delle coppie di resistenze della stella equivalente e la resistenza del ramo della stella che
+fa capo al vertice opposto al lato in esame.
+2.11  Esempi
+Esempio 1
+Della rete elettrica resistiva di Fig. VII.2.29, i cui dati sono E = 150 V; Ri = 0,5 ; R1=
+50 ; R2= 10 ; R3= 30 ; R4= 120 ; R5= 120 ; R6= 40 ; R7= 80 calcolare i valori
+delle correnti, delle tensioni, delle potenze dei vari bipoli e il rendimento del generatore.
+1a semplificazione (Fig. VII.2.30)
+–  i resistori R6 e R7 sono in serie perché attraversati dalla stessa corrente I67;
+–  i resistori R4 e R5 sono in parallelo perché derivati fra i punti C e D e quindi sotto-
+posti alla tensione UCD, dove
+2a semplificazione (Fig. VII.2.31)
+–  i resistori R3 e R45 sono in serie perché attraversati dalla stessa corrente I3, dove
+3a semplificazione (Fig. VII.2.32)
+–  i resistori R3-5 e R67 sono in parallelo perché derivati fra i punti B e D e quindi sot-
+toposti alla tensione UBD, dove
+Fig. VII.2.29   Rete elettrica dell’esempio 1. Fig. VII.2.30   Rete elettrica dell’esempio 1
+- 1a semplificazione.
+RAB
+RARB
+RBRC
+RARC
++
++
+RC
+------------------------------------------------------------;
+=
+RBC
+RARB
+RBRC
+RARC
++
++
+RA
+------------------------------------------------------------;
+=
+RCA
+RARB
+RBRC
+RARC
++
++
+RB
+------------------------------------------------------------
+=
+A
+B
+D
+R1
+D
+D
+I
+I2
+R2
+I67
+U2
+
+
+I1
+I3
+E
+
+Ri
+U1
+
+
+R3
+U3
+
+
+C
+R4
+U4
+
+
+R5
+U5
+
+
+R6
+U6
+
+
+R7
+U7
+
+
+I4
+I5
+A
+B
+D
+R1
+D
+I
+I2
+R2
+I67
+U2
+
+
+I1
+I3
+E
+
+Ri
+U1
+
+
+R3
+U3
+
+
+R45
+U45
+
+
+R67
+U67
+
+
+R67
+R6
+R7
++
+40
+80
++
+120 ;
+=
+=
+=
+R45
+R4
+R5
+
+R4
+R5
++
+--------------------
+120
+120
+
+120
+120
++
+-------------------------
+60
+=
+=
+=
+R3-5
+R3
+R45
++
+30
+60
++
+90 
+=
+=
+=
+
+[PAG 530]
+VII-26
+ELETTROTECNICA GENERALE
+4a semplificazione (Fig. VII.2.33)
+–  i resistori R3-7 e R2 sono in serie perché attraversati dalla corrente I2, dove
+5a semplificazione (Fig. VII.2.34)
+–  i resistori R1 e R2-7 sono in parallelo perché derivati fra i punti A e D e quindi sotto-
+posti alla tensione UAD, dove
+Applicando la legge di Ohm, le regole del partitore di tensione e dell’arco doppio, le
+relazioni della potenza elettrica e del rendimento, si ricavano:
+–  dallo schema di Fig. VII.2.34, la corrente totale I, la tensione UAD, la potenza gene-
+rata Pg, la potenza utile Pu e il rendimento ,
+Fig. VII.2.31   Rete elettrica dell’esempio 1
+- 2a semplificazione.
+Fig. VII.2.32   Rete elettrica dell’esempio 1
+- 3a semplificazione.
+Fig. VII.2.33   Rete elettrica dell’esempio 1
+- 4a semplificazione.
+Fig. VII.2.34   Rete elettrica dell’esempio 1
+- 5a semplificazione.
+R3-7
+R3-5
+R67
+
+R3-5
+R67
++
+--------------------------
+90
+120
+
+90
+120
++
+----------------------
+51,43 
+=
+=
+=
+R2-7
+R3-7
+R2
++
+51,43
+10
++
+61,43 
+=
+=
+=
+Req
+R1
+R2-7
+
+R1
+R2-7
++
+------------------------
+50
+61,43
+
+50
+61,43
++
+---------------------------
+27,56 
+=
+=
+=
+A
+B
+D
+R1
+D
+I
+I2
+R2
+I67
+U2
+
+
+I1
+I3
+E
+
+Ri
+U1
+
+
+R3-5
+U3-5
+
+
+R67
+U67
+
+
+A
+D
+R1
+I
+I2
+R2
+U2
+
+
+I1
+E
+
+Ri
+U1
+
+
+R3-7
+U3-7
+
+
+A
+D
+R1
+I
+I2
+I1
+E
+
+Ri
+U1
+
+
+R2-7
+U2-7
+
+
+A
+D
+Req
+I
+E
+
+Ri
+I
+E
+Ri
+Req
++
+----------------------
+150
+0,5
+27,56
++
+----------------------------
+5,35A ;
+=
+=
+=
+
+[PAG 531]
+ELETTROTECNICA GENERALE
+VII-27
+–  dallo schema di Fig. VII.2.33, le correnti I1 e I2, la potenza del resistore R1
+–  dallo schema di Fig. VII.2.32, le tensioni U2, U3-7, la potenza del resistore R2
+–  dallo schema di Fig. VII.2.31, la tensione UBD, le correnti I3 e I67
+–  dallo schema di Fig. VII.2.30, le tensioni U3, U45, la potenza del resistore R3
+UAD
+E
+RiI
+–
+150
+0,5
+5,35
+
+
+
+–
+147,33 V;
+=
+=
+=
+Pg
+E
+I
+
+150
+5,35
+
+802,5 W
+=
+=
+=
+Pu
+UAD
+I
+
+147,33
+5,35
+
+788,22 W
+=
+=
+=
+
+Pu
+Pg
+-----
+788,22
+802,5
+---------------
+0,982 ;
+=
+=
+=
+
+98,2 %
+=
+UAD
+U1 ;
+=
+I1
+U1
+R1
+------
+147,33
+50
+---------------
+2,95 A;
+=
+=
+=
+P1
+U1
+I1
+
+147,33
+2,95
+
+434,6 W;
+=
+=
+=
+I2
+UAD
+R2-7
+----------
+147,33
+61,43
+---------------
+2,4 A
+=
+=
+=
+U2
+R2
+I2
+
+10
+2,4
+
+24 V;
+=
+=
+=
+U3-7
+UAD
+U2
+–
+147,33
+24
+–
+123,33 A;
+=
+=
+=
+P2
+R2
+I2
+2
+
+10
+2,42
+
+57,6 W
+=
+=
+=
+UBD
+U3-7 ;
+=
+I3
+UBD
+R3-5
+----------
+123,33
+90
+---------------
+1,37 A ;
+=
+=
+=
+I67
+UBD
+R67
+----------
+123,33
+120
+---------------
+1,03 A
+=
+=
+=
+U3
+R3
+I3
+
+30
+1,37
+
+41,1 V;
+=
+=
+=
+U45
+UBD
+U3
+–
+123,33
+41,1
+–
+82,23 V;
+=
+=
+=
+P3
+U3
+2
+R3
+---------
+41,12
+30
+------------
+56,31 W
+=
+=
+=
+
+[PAG 532]
+VII-28
+ELETTROTECNICA GENERALE
+–  dallo schema di Fig. VII.2.29, le tensioni UCD, U4, U5, U6, U7, le correnti I4, I5; le
+potenze dei resistori R4, R5, R6, R7
+Esempio 2
+Della rete elettrica resistiva di Fig. VII.2.35, i cui dati sono E1 = 50 V; Ri1 = 0,5 ; R1
+= 10 ; I02 = 25 A; Gi2 = 0,4 S, calcolare il valore della corrente che circola nel resistore
+R1.
+Applicando la regola della trasformazione del generatore reale di corrente nell’equi-
+valente generatore reale di tensione si ha lo schema di Fig. VII.2.36, dove
+Fig. VII.2.35   Rete elettrica dell’esempio 2. Fig. VII.2.36   Rete elettrica equivalente
+dell’esempio 2.
+UCD
+U45
+U4
+U5 ;
+=
+=
+=
+U6
+R6
+I6-7
+
+40
+1,03
+
+41,2 V;
+=
+=
+=
+U7
+UBD
+U6
+–
+123,33
+41,2
+–
+82,13 V;
+=
+=
+=
+I4
+I3
+R5
+R4
+R5
++
+--------------------
+1,37
+120
+120
+120
++
+-------------------------
+0,685 A;
+=
+=
+=
+I5
+UCD
+R5
+-----------
+82,23
+120
+------------
+0,685 A ;
+=
+=
+=
+P4
+P5
+R4
+I4
+2
+
+120
+0,6852
+
+56,3 W;
+=
+=
+=
+=
+P6
+R6
+I67
+2
+
+40
+1,032
+
+42,4 W;
+=
+=
+=
+P7
+R7
+I67
+2
+
+80
+1,032
+
+84,8 W
+=
+=
+=
+R1
+Ri1
+I02
+E1
+Gi2
+
+R1
+Ri1
+E1
+
+E2
+
+Ri2
+E2
+I02
+Gi2
+--------
+25
+0,4
+------
+62,5 V;
+=
+=
+=
+Ri2
+1
+Gi2
+--------
+1
+0,4
+------
+2,5 
+=
+=
+=
+
+[PAG 533]
+ELETTROTECNICA GENERALE
+VII-29
+Utilizzando la legge generale di Ohm e fissando per la corrente il verso antiorario si
+ha
+da cui
+Esempio 3
+Della rete elettrica resistiva di Fig. VII.2.37, i cui dati sono R1 = 1 ; R2 = 3 ;
+R3 = 5 ; R4 = 1 ; R5 = 2 , determinare il valore della Req fra i morsetti A-C.
+1a semplificazione (Fig. VII.2.38)
+–  l’analisi della rete elettrica evidenzia che i resistori R1, R2, R5 sono collegati a trian-
+golo (naturalmente anche R3, R4, R5 sono collegati a triangolo); per determinare la Req
+conviene operare la trasformazione da triangolo a stella di uno dei due collegamenti, dove
+Fig. VII.2.37   Rete elettrica dell’esempio 3. Fig. VII.2.38   Rete elettrica dell’esempio 3
+- 1a riduzione.
+Fig. VII.2.39   Rete elettrica dell’esempio 3
+- 2a riduzione.
+Fig. VII.2.40   Rete elettrica dell’esempio 3
+- 3a riduzione.
+Fig. VII.2.41   Rete elettrica dell’esempio 3
+- 4a riduzione.
+E2
+E1
+–
+Ri1
+Ri2
+R1
++
++
+
+
+I
+
+=
+I
+E2
+E1
+–
+Ri1
+Ri2
+R1
++
++
+---------------------------------------
+62,5
+50
+–
+0,5
+2,5
+10
++
++
+-------------------------------------
+0,96 A
+=
+=
+=
+R2
+R1
+R3
+R4
+R5
+A
+B
+C
+D
+RB
+RC
+R3
+R4
+A
+B
+C
+D
+0
+RA
+RB3
+A
+C
+0
+RA
+RC4
+RBC34
+A
+C
+0
+RA
+A
+C
+Req
+RA
+R1
+R2
+
+R1
+R2
+R5
++
++
+-----------------------------------
+1
+3
+
+1
+3
+2
++
++
+-------------------------
+0,5 
+=
+=
+=
+RB
+R2
+R5
+
+R1
+R2
+R5
++
++
+-----------------------------------
+3
+2
+
+1
+3
+2
++
++
+-------------------------
+1 
+=
+=
+=
+
+[PAG 534]
+VII-30
+ELETTROTECNICA GENERALE
+2a semplificazione (Fig. VII.2.39)
+–  i resistori RB e R3 e i resistori RC e R4 sono collegati in serie, dove
+3a semplificazione (Fig. VII.2.40)
+–  i resistori RB3 e RC4 sono collegati in parallelo perché derivati fra gli stessi punti 0-
+C, dove
+4a semplificazione (Fig. VII.2.41)
+–  il resistore RA e il resistore RBC34 sono collegati in serie, per cui
+Naturalmente il calcolo della Req fra altri punti, esempio B-D, porta a risultati diversi.
+3  METODI DI RISOLUZIONE DELLE RETI LINEARI
+I metodi di risoluzione di seguito riportati, si riferiscono alle reti composte da ele-
+menti attivi e passivi, tutti lineari.
+La risoluzione di una rete lineare composta da l lati, implica di solito il calcolo della
+corrente e della tensione di ogni lato. Anche se i casi che si possono presentare sono mol-
+teplici, normalmente si distinguono due tipi di problemi e precisamente:
+–  caso in cui è richiesta la risoluzione completa della rete: è necessario scrivere 2l
+equazioni; di queste l sono le equazioni caratteristiche Ui = f(Ii) dei singoli lati;
+–  caso in cui è richiesta la risoluzione parziale della rete: si calcolano le tensioni e le
+correnti in uno o più lati senza curarsi del resto della rete.
+3.1  Applicazione dei principi di Kirchhoff
+L’applicazione dei due principi di Kirchhoff permette di individuare l equazioni che,
+unite alle l equazioni caratteristiche dei lati, consentono la risoluzione completa di una
+rete, ossia il calcolo delle correnti e delle tensioni sconosciute.
+Per la scrittura delle l equazioni, indicando con n il numero dei nodi, si procede nel
+modo seguente:
+–  degli n nodi della rete se ne scelgono n1, e dopo aver fissato in modo arbitrario i
+versi delle correnti, si applica ad ogni nodo il primo principio di Kirchhoff, ottenendo in
+tal modo n1 equazioni;
+–  si scelgono ln1 maglie, e dopo aver fissato in modo arbitrario i versi di percor-
+renza, si applica ad ogni maglia il secondo principio di Kirchhoff, ottenendo in tal modo
+ln1 equazioni aventi come incognite le sole correnti;
+–  si ottiene un sistema di l equazioni risolto il quale sono note le l correnti dei lati. Si
+valutano i segni dei risultati ottenuti, tenendo presente che il segno negativo indica che il
+verso effettivo della corrente è opposto a quello inizialmente prefissato;
+–  qualora sia richiesto anche il calcolo delle tensioni, si applicano le equazioni carat-
+teristiche dei singoli bipoli.
+RC
+R1
+R5
+
+R1
+R2
+R5
++
++
+-----------------------------------
+1
+2
+
+1
+3
+2
++
++
+-------------------------
+0,33 
+=
+=
+=
+RB3
+1
+5
++
+6 ;
+=
+=
+RC4
+RC
+R4
++
+0,33
+1
++
+1,33 
+=
+=
+=
+RBC34
+RB3
+RC4
+
+RB3
+RC4
++
+---------------------------
+6
+1,33
+
+6
+1,33
++
+---------------------
+1,1 
+=
+=
+=
+Req
+RA
+RBC34
++
+0,5
+1,1
++
+1,6 
+=
+=
+=
+
+[PAG 535]
+ELETTROTECNICA GENERALE
+VII-31
+Esempio
+Calcolare le correnti in ogni lato della rete elettrica lineare di Fig. VII.3.1 in cui
+E1 = 15 V, R1 = 3 , R2 = 1 , R3 = 1,5 , R4 = 3 , R5 = 5 .
+Considerazioni
+La rete è formata da 6 lati e 4 nodi. È necessario ricercare 6 equazioni delle quali,
+n1  3 sono relative ai nodi e le rimanenti 3 alle maglie; si considereranno 3 nodi qualsi-
+asi e 3 maglie contigue qualunque.
+Con riferimento alle notazioni e ai versi delle correnti e di percorrenza delle maglie
+segnati in figura, fissati arbitrariamente, si può scrivere ad esempio:
+Il sistema è completo perché formato da tante equazioni indipendenti quanti sono i lati
+della rete e non è possibile scrivere alcun’altra equazione che non sia diretta conseguenza
+delle precedenti. A titolo di esempio, l’equazione al nodo D (I5 = I3  I2), corrisponde alla
+somma delle 3 equazioni ai nodi A, B, C; oppure l’equazione alla maglia ABCDA è la
+somma delle equazioni alle maglie ABDA e BCDB.
+Risoluzione
+La risoluzione di un sistema di 6 equazioni può essere condotta per successive sostitu-
+zioni; si ottiene per ogni sostituzione la riduzione di una equazione. L’ultima sostituzione
+determina una equazione con una sola incognita la cui risoluzione permette di calcolare
+tutte le altre grandezze incognite.
+Sostituendo i valori numerici si ottengono le equazioni:
+I0 = I1  I2
+I1 = I3  I4
+I5  I4 = I0
+0 = 3I1  1,5I3  1I2
+15 = 1I2  5I5
+0 = 3I4  5I5  1,5I3
+Fig. VII.3.1   
+nodo A
+I0 = I1  I2
+nodo B
+I1 = I3  I4
+nodo C
+I5  I4 = I0
+maglia ABDA
+0 = R1I1  R3I3  R2I2
+maglia ADCA
+E = R2I2  R5I5
+maglia BCDB
+0 = R4I4  R5I5  R3I3
+
+R1
+R2
+R3
+R4
+R5
+I1
+I2
+I4
+I5
+I3
+A
+B
+C
+D
+I0
+
+
+
+E1
+
+
+
+
+
+
+
+[PAG 536]
+VII-32
+ELETTROTECNICA GENERALE
+1a sostituzione I0 = I1  I2
+I1 = I3  I4
+I5  I4 = I1  I2
+0 = 3I1  1,5I3  I2
+15 = I2  5I5
+0 = 3I4  5I5  1,5I3
+2a sostituzione I1 = I3  I4
+I5  I4 = I3  I4  I2
+0 = 3(I3  I4)  1,5I3  I2
+15 = I2  5I5
+0 = 3I4  5I5  1,5I3
+riordinando e semplificando si ha
+I5 = I2  I3
+0 = I2  4,5I3  3I4
+15 = I2  5I5
+0 =  1,5I3  3I4  5I5
+3a sostituzione I5 = I2  I3
+0 = I2  4,5I3  3I4
+15 = I2  5(I2  I3)
+0 =  1,5I3  3I4  5(I2  I3)
+riordinando e semplificando si ha
+0 = I2  4,5I3  3I4
+15 = 6I2  5I3
+0 =  5I2  6,5I3  3I4
+4a sostituzione I2 = 4,5I3  3I4
+15 = 6(4,5I3  3I4)  5I3
+0 =  5(4,5I3  3I4)  6,5I3  3I4
+riordinando e semplificando si ha
+15 = 32I3  18I4
+0 =  29I3  12I4
+5a sostituzione I4 =  2912I3
+15 = 32I3  18( 2912)I3
+Individuata la corrente I3, si determinano, in base alle sostituzioni, tutte le rimanenti
+correnti
+I3 =
+1,3
+A
+I4 =
+3,14 A
+I2 =
+3,57 A
+I5 =
+2,27 A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[PAG 537]
+ELETTROTECNICA GENERALE
+VII-33
+Il risultato dei calcoli segnala che il verso corretto della corrente I3 è contrario rispetto
+a quello indicato in figura.
+3.2  Metodo di Maxwell
+Il metodo, detto anche delle correnti cicliche, permette di risolvere completamente
+una rete elettrica di l lati, mediante la scrittura di ln1 equazioni alle maglie, e offre
+quindi il vantaggio di operare con un minor numero di equazioni rispetto al metodo di
+Kirchhoff.
+Per la scrittura delle ln1 equazioni si procede nel seguente modo:
+–  si individuano ln1 maglie adiacenti, fra loro indipendenti;
+–  si suppone che ogni maglia sia interessata da una unica corrente Ji, naturalmente fit-
+tizia, che viene introdotta solo per ragioni legate al metodo di risoluzione adottato;
+–  si stabilisce un verso di percorrenza delle maglie, uguale a quello delle correnti
+cicliche. È consigliabile scegliere versi di percorrenza fra loro uguali, tutti orari o tutti
+antiorari;
+–  si scrivono, in funzione delle correnti cicliche, ln1 equazioni alle maglie e si
+risolvono determinando le correnti cicliche;
+–  si determinano per ogni lato le correnti reali mediante la somma algebrica delle cor-
+renti cicliche che interessano il lato.
+Esempio
+Calcolare le correnti in ogni lato della rete elettrica lineare di Fig. VII.3.2 in cui E1 =
+15 V, R1= 3 , R2 = 1 , R3 = 1,5 , R4 = 3 , R5 = 5 .
+Risoluzione
+Anche in questo caso, per la risoluzione del sistema, si procederà per successive sosti-
+tuzioni.
+Si scriverà il sistema
+R1J1 + R3(J1  J2)  R2(J1  J3) = 0
+R4J2 + R5(J2  J3)  R3(J2 J1) = 0
+R2(J3  J1)  R5(J3  J2) = 15
+I1 =
+1,84 A
+I0 =
+5,41 A
+Fig. VII.3.2   
+Fig. VII.3.3   
+R1
+R2
+R3
+R4
+R5
+J1
+J2
+J3
+A
+B
+B
+D
+I0
+
+E1
+R1
+R2
+R3
+R4
+R5
+I1
+I2
+I4
+I5
+I3
+A
+B
+B
+D
+I0
+
+E1
+
+
+
+
+
+
+
+[PAG 538]
+VII-34
+ELETTROTECNICA GENERALE
+sostituendo i valori numerici e moltiplicando, si ottengono le equazioni:
+3J1 + 1,5J1  1,5J2  1J1  1J3 = 0
+3J2 + 5J2  5J3  1,5J2 1,5J1 = 0
+1J3  1J1  5J3  5J2 = 15
+raccogliendo si ha
+5,5J1  1,5J2  J3 = 0
+ 1,5J1  9,5J2 5J3 = 0
+ J1  5J2  6J3 = 15
+1a sostituzione J3 = 5,5J1  1,5J2
+ 1,5J1  9,5J2 5(5,5J1  1,5J2) = 0
+ J1  5J2  6(5,5J1  1,5J2) = 15
+raccogliendo si ottiene
+ 29J1  17J2= 0
+32J1  14J2 = 15
+2a sostituzione J2 = 2917J1; J2 = 1,7J1
+32J1  14(1,7J1) = 15
+da cui
+J1 = 1,83 A
+La determinazione del valore di J1, consente di calcolare le rimanenti correnti cicliche
+e, di conseguenza, le correnti reali in ogni lato che risultano (Fig. VII.3.3)
+3.3  Metodo del potenziale ai nodi
+Il metodo consente di risolvere completamente una rete elettrica, scrivendo solamente
+n1 equazioni ai nodi indipendenti. Le incognite sono i potenziali dei nodi prescelti, cal-
+colati rispetto a quello del nodo non considerato, preso come riferimento e perciò a poten-
+ziale 0.
+Esempio
+Calcolare le correnti in ogni lato della rete di Fig. VII.3.4 in cui E1 = 20 V, E2 = 10 V,
+R1 = R2 = 20 , R3 = R4 = R5 = 40 .
+J2 =
+3,11 A
+J3 =
+5,4
+A
+e quindi
+I0 = J3
+= 5,4
+A
+I1 = J1
+= 1,83 A
+I2 = (J3  J1) = 3,57 A
+I3 = (J2  J1) = 1,28 A
+I4 = J2
+= 3,11 A
+I5 = (J3  J2) = 2,29 A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[PAG 539]
+ELETTROTECNICA GENERALE
+VII-35
+Risoluzione
+Poiché sono presenti tre nodi, sarà consentito scrivere solo due equazioni; si sceglie il
+punto C come nodo di riferimento, e quindi a potenziale 0.
+Applicando il primo principio di Kirchhoff ai nodi A e B e trasformando i bipoli attivi
+di tipo serie negli equivalenti tripoli attivi di tipo parallelo si ottiene il sistema:
+ICC1  I1  I3  I4
+ICC 2  I2  I5  I4
+e quindi
+G1E1  UA(G1  G3  G4)  UBG4
+G2E2  UB(G2  G4  G5)  UAG4
+sostituendo i valori numerici nel sistema e risolvendo si ottiene:
+1  0,1UA  0,025UB
+0,5  0,1UB  0,025UA
+da cui
+UA  12 V; UB  8 V
+e quindi
+UAC  12 V; UBC  8 V
+Le correnti nei lati con i versi indicati nella Fig. VII.3.4 si ricavano dalle equazioni
+caratteristiche dei vari lati e dall’applicazione del primo principio di Kirchhoff:
+3.4  Teorema di Millmann
+È un metodo efficace per risolvere reti che presentano solo due nodi, perché permette
+in modo immediato di calcolare la tensione fra i due nodi, nota la quale è facile determi-
+nare le correnti dei vari lati.
+Il teorema afferma che: la tensione fra i nodi di una rete binodale è data da un rap-
+porto, il cui denominatore è la somma aritmetica delle conduttanze di tutti i lati, mentre il
+numeratore si calcola come somma algebrica delle correnti di corto circuito dei bipoli
+Fig. VII.3.4   
+R1
+R2
+R3
+R4
+R5
+I1
+I4
+I2
+I5
+I3
+A
+B
+C
+
+E1
+
+E2
+1
+20
+-----20
+UA
+1
+20
+-----
+1
+40
+-----
+1
+40
+-----
++
++
+
+
+
+
+UB
+1
+40
+-----
+–
+=
+1
+20
+-----10
+UB
+1
+20
+-----
+1
+40
+-----
+1
+40
+-----
++
++
+
+
+
+
+UA
+1
+40
+-----
+–
+=
+
+
+
+
+
+
+I3
+UAC
+R3
+----------
+12
+40
+-----
+0,3 A
+=
+=
+=
+I1
+E1
+UAC
+–
+R1
+-------------------------
+20
+12
+–
+20
+-------------------
+0,4 A
+=
+=
+=
+I5
+UBC
+R5
+----------
+8
+40
+-----
+0,2 A
+=
+=
+=
+I4
+I1
+I3
+–
+0,4
+0,3
+–
+0,1A
+=
+=
+=
+I2
+I5
+I4
+–
+0,2
+0,1
+–
+0,1A
+=
+=
+=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[PAG 540]
+VII-36
+ELETTROTECNICA GENERALE
+attivi di tensione più la somma algebrica delle correnti impresse dai bipoli attivi di cor-
+rente.
+Esempio
+Calcolare la differenza di potenziale UAB fra i punti A e B della rete elettrica lineare di
+Fig. VII.3.5 in cui E1 = 50 V, E2 = 70 V, R1 = R2 = 5 , R3 = R4 = R5 10 .
+Risoluzione
+Semplificando il circuito (Fig. VII.3.6) si potrà scrivere
+R13  R1  R3  5  10  15 R25  R2  R5  5  10  15 
+applicando la regola di Millmann si scriverà
+sostituendo i valori numerici si ottiene per UAB
+3.5  Sovrapposizione degli effetti
+Il metodo, valido per tutti i sistemi fisici lineari, anche non elettrici, consente di calco-
+lare la corrente o la tensione di un qualsiasi bipolo di una rete lineare, scomponendo il cir-
+cuito complessivo in tanti circuiti elementari, nei quali agisce un solo generatore essendo
+gli altri disattivati.
+La regola generale di applicazione prevede:
+–  la scomposizione del circuito generale in n circuiti parziali in ciascuno dei quali
+agisce un solo bipolo attivo, avendo sostituito i generatori di corrente con circuiti aperti
+ideali e i generatori di tensione con corto circuiti ideali;
+Fig. VII.3.5  
+Fig. VII.3.6  
+R1
+R2
+R3
+R4
+R5
+I1
+I2
+I
+A
+B
+
+E1
+
+E2
+
+E1
+
+E2
+A
+B
+R4
+R13
+R25
+UAB
+G13E1
+G25E5
++
+G13
+G4
+G25
++
++
+------------------------------------------
+=
+UAB
+50
+1
+5
+10
++
+
+
+
+
+70
+1
+5
+10
++
+
+
+
+
++
+1
+5
+10
++
+
+
+
+1 10
+
+1
+5
+10
++
+
+
+
++
++
+-------------------------------------------------------------------------------------------------
+34,3 V
+=
+=
+
+[PAG 541]
+ELETTROTECNICA GENERALE
+VII-37
+–  il calcolo della grandezza incognita in ogni circuito parziale; i vari risultati ottenuti
+sono da considerare come il contributo di ciascun generatore alla grandezza incognita
+effettiva;
+–  la somma algebrica degli n risultati parziali, tenendo conto dei versi delle correnti
+parziali e delle polarità delle tensioni parziali.
+Esempio
+Calcolare la corrente in ogni lato della rete di Fig. VII.3.7 in cui E1 = 15 V, E2 = 9 V,
+R1 = R2 = 2 , R3 = R4 = 4 .
+Fig. VII.3.7  
+Fig. VII.3.8   
+Fig. VII.3.9  
+
+E1
+
+E2
+A
+B
+R4
+R1
+R3
+R2
+I1
+I2
+I3
+I4
+
+E1
+A
+B
+R4
+R1
+R3
+R2
+I1A
+I2A
+I3A
+I4A
+
+E1
+A
+B
+R4
+R1
+R3
+R2
+I1B
+I2B
+I3B
+I4B
+
+[PAG 542]
+VII-38
+ELETTROTECNICA GENERALE
+Risoluzione
+1° circuito parziale (circuito nel quale agisce il solo generatore 1, Fig. VII.3.8)
+2° circuito parziale (circuito nel quale agisce solo il generatore 2, Fig. VII.3.9)
+Considerando i versi delle correnti parziali e sommando algebricamente i risultati
+ottenuti si ha
+I1 = I1A I1B = 5 1,5 = 3,5 A
+I2 =  I2A I2B =  2,5 3 = 0,5 A
+I3 = I3A I3B = 1,25 0,75 = 2 A
+I4 = I3= 2 A
+3.6  Generatore equivalente (teorema) di Thevenin
+Il teorema del generatore equivalente di Thevenin afferma che: data una rete comun-
+que complessa, formata da bipoli attivi e passivi lineari, ai fini del calcolo della corrente
+che circola in un lato o della tensione ai suoi capi, è sempre possibile schematizzare la
+restante parte di rete, con un generatore reale di tensione di f.e.m. Eth avente in serie una
+resistenza Rth. La f.e.m. Eth corrisponde alla differenza di potenziale fra i due punti della
+rete tra i quali è derivato il lato considerato, quando però questo è stato tolto; la resi-
+stenza Rth rappresenta la resistenza interna della rete vista dai punti precedentemente
+considerati, con i generatori ideali di tensione cortocircuitati e i generatori ideali di cor-
+rente aperti. Ciò significa che il lato in oggetto può essere considerato alimentato da un
+solo generatore reale di tensione avente f.e.m. Eth e resistenza interna Rth.
+Esempio
+Calcolare la corrente del lato BD della rete elettrica lineare di Fig. VII.3.10 in cui E1 =
+15 V, R1 = 3 , R2 = 1 , R3 = 1,5 , R4 = 3 , R5 = 5 .
+R34
+R3
+R4
+
+R3
+R4
++
+--------------------
+2;
+=
+=
+R234
+R2
+R34
+
+R2
+R34
++
+-----------------------
+1;
+=
+=
+R1234
+R1
+R234
++
+3;
+=
+=
+I1A
+E1
+R1234
+------------
+5A ;
+=
+=
+UAB
+E1
+R1I1A
+–
+5V ;
+=
+=
+I2A
+UAB
+R2
+----------
+2,5A ;
+=
+=
+I3A
+UAB
+R3
+----------
+1,25A ;
+=
+=
+I4A
+UAB
+R4
+----------
+1,25A
+=
+=
+R34
+R3
+R4
+
+R3
+R4
++
+--------------------
+2;
+=
+=
+R134
+R1
+R34
+
+R1
+R34
++
+-----------------------
+1;
+=
+=
+R1234
+R2
+R134
++
+3;
+=
+=
+I2B
+E2
+R1234
+------------
+3A ;
+=
+=
+UAB
+E2
+R2I2B
+–
+3V ;
+=
+=
+I1B
+UAB
+R1
+----------
+1,5A ;
+=
+=
+I3B
+UAB
+R3
+----------
+0,75A ;
+=
+=
+I4B
+UAB
+R4
+----------
+0,75A
+=
+=
+
+[PAG 543]
+ELETTROTECNICA GENERALE
+VII-39
+Risoluzione
+La corrente nel lato BD risulterà dalla risoluzione del circuito ridotto secondo Theve-
+nin di Fig. VII.3.11.
+La Fig. VII.3.12 rappresenta il circuito per determinare Eth (differenza di potenziale
+fra i punti BD), da esso si ricava:
+La Fig. VII.3.13 rappresenta il circuito per determinare Rth, da esso si ricava che R1 e
+R4 come R2 e R5 sono collegate in parallelo perché derivate fra gli stessi punti (A coincide
+con C) per cui
+Fig. VII.3.10   
+Fig. VII.3.11   
+Fig. VII.3.12   
+Fig. VII.3.13   
+
+E1
+A
+B
+R4
+R1
+R3
+R2
+I3
+R5
+D
+C
+B
+R3
+D
+
+Eth
+Rth
+R4
+R1
+R2
+R5
+A
+B
+D
+C
+I1
+I2
+
+E1
+UBD = Eth
+I0
+R4
+R1
+R2
+R5
+A
+B
+D
+C
+Rth
+R14
+R1
+R4
++
+6 
+=
+=
+R25
+R2
+R5
++
+6 
+=
+=
+I0
+E
+R1245
+------------
+5A
+=
+=
+UD
+E
+R2I2
+–
+12,5V
+=
+=
+R1245
+R14
+R25
+
+R14
+R25
++
+-------------------------
+3
+=
+=
+I1
+I2
+I0
+2
+
+2,5A
+=
+=
+=
+UB
+E
+R1I1
+–
+7,5V
+=
+=
+Eth
+UBD
+UB
+UD
+–
+5
+– V
+=
+=
+=
+R25
+R2
+R5
+
+R2
+R5
++
+--------------------
+0,83;
+=
+=
+Rth
+R14
+R25
++
+2,33
+=
+=
+R14
+R1
+R4
+
+R1
+R4
++
+--------------------
+1,5 ;
+=
+=
+e quindi
+
+[PAG 544]
+VII-40
+ELETTROTECNICA GENERALE
+Con riferimento alla Fig. VII.3.11 la corrente richiesta vale
+Il segno negativo indica che la corrente sarà diretta dal punto D al punto B.
+3.7  Generatore equivalente (teorema) di Norton
+Il teorema del generatore equivalente di Norton afferma che: data una rete comunque
+complessa, formata da bipoli attivi e passivi lineari, ai fini del calcolo della corrente che
+circola in un lato o della tensione ai suoi capi, è sempre possibile schematizzare la
+restante parte di rete, con un generatore ideale di corrente In, avente in parallelo una
+resistenza Rn. La corrente In corrisponde alla corrente circolante in un collegamento
+privo di resistenza che sostituisce il lato; In è quindi la corrente di cortocircuito fra i due
+punti della rete tra i quali è derivato il lato considerato. La resistenza Rn rappresenta la
+resistenza interna della rete vista dai punti precedentemente considerati, con i generatori
+ideali di tensione cortocircuitati e i generatori ideali di corrente aperti. Ciò significa che
+il lato in oggetto può essere considerato alimentato da un solo generatore di corrente In
+con in parallelo la resistenza Rn.
+Esempio
+Calcolare la corrente del lato AB della rete elettrica lineare di Fig. VII.3.14 in cui I1 =
+2 A, I2 = 3 A, R1 = 0,5 k, R2 = 1,5 k, R3 = 100 .
+Fig. VII.3.14   
+Fig. VII.3.15   
+Fig. VII.3.16   
+Fig. VII.3.17   
+IBD
+Eth
+R3
+Rth
++
+----------------------
+5
+–
+1,5
+2,33
++
+-------------------------
+1,3 A
+–
+=
+=
+=
+R3
+R1
+R2
+A
+B
+I1
+I2
+R3
+A
+B
+In
+Rn
+R1
+R2
+I1
+I2
+A
+B
+In
+R1
+R2
+A
+B
+Rn
+
+[PAG 545]
+ELETTROTECNICA GENERALE
+VII-41
+Risoluzione
+La corrente nel lato AB, risulterà dalla risoluzione del circuito ridotto secondo Norton
+di Fig. VII.3.15. La Fig. VII.3.16 rappresenta il circuito per determinare In; applicando il
+principio della sovrapposizione degli effetti si avrà:
+La Fig. VII.3.17 rappresenta il circuito per determinare Rn, dal quale risulta:
+Rn = R1 R2 = 2 k
+Con riferimento alla Fig. VII.3.15 la corrente richiesta vale
+3.8  Teorema di Miller
+Mediante il teorema di Miller, che può essere formulato nelle versioni delle tensioni e
+delle correnti, si può suddividere una rete elettrica con determinate caratteristiche, in due
+sottoreti indipendenti aventi un solo punto in comune.
+Teorema di Miller delle tensioni
+Esso afferma che: una rete elettrica, come ad esempio quella di Fig. VII.3.18, è equi-
+valente alle due sottoreti S1 e S2 di Fig. VII.3.19, aventi in comune il punto C, a patto che
+la corrente I4 e le tensioni UAC e UBC rimangano le stesse.
+Fig. VII.3.18  
+Fig. VII.3.19   
+In1
+I1
+R1
+R1
+R2
++
+--------------------
+0,5A ;
+=
+=
+In
+In1
+In2
++
+2,75A
+=
+=
+In2
+I2
+R2
+R1
+R2
++
+--------------------
+2,25 A;
+=
+=
+I3
+In
+Rn
+Rn
+R3
++
+--------------------
+2,62A
+=
+=
+R1
+R2
+R3
+R4
+R5
+I1
+I4
+I2
+I5
+I3
+A
+B
+C
+
+E1
+
+E2
+R1
+R2
+R3
+R5
+I1
+I2
+I5
+I3
+A
+B
+C
+
+E1
+
+E2
+RA
+RB
+I
+I
+S1
+S2
+
+[PAG 546]
+VII-42
+ELETTROTECNICA GENERALE
+Per determinare RA e RB si utilizzeranno le relazioni:
+(VII.3.1)
+È importante precisare che RA o RB potranno risultare di valore negativo; questa con-
+dizione, in pratica non realizzabile, va considerata puramente teorica e mantenuta nel pro-
+cedere della soluzione, rispettando i segni ottenuti.
+Esempio
+Data la rete elettrica di Fig. VII.3.18 nella quale E1 = 15 V, R1 = R2 = 20 , R3 = R4 =
+R5 = 40 , determinare il valore che deve assumere E2 affinché UBC = 2/3 UAC.
+Risoluzione
+Esaminando la Fig. VII.3.19 e applicando le relazioni VII.3.1 si ha:
+RA = 120 RB = 80 Kv = 23con R= R4
+applicando alla sottorete S1 la regola del partitore di tensione si ha:
+e quindi
+Risolvendo la sottorete S2:
+UBC = 23UAC= 6 V
+da cui
+E2 = UBC  R2I2 = 7,5 V
+Teorema di Miller delle correnti
+Esso afferma che: una rete elettrica, come ad esempio quella di Fig. VII.3.18, è equi-
+valente alle due sottoreti S1 e S2 di Fig. VII.3.20, aventi in comune il punto C, a patto che
+rimangano invariate le correnti I4 e I2 e se per le tensioni vale la relazione UBC = UEC =
+UDC.
+Fig. VII.3.20   
+RA
+R
+1
+1
+Kv
+–
+---------------- ;
+=
+RB
+R
+1
+1
+1
+Kv
+
+–
+--------------------------;
+=
+Kv
+UBC
+UAC
+----------
+=
+R3A
+R3
+RA
+
+R3
+RA
++
+---------------------
+30
+=
+=
+UAC
+E1
+R3A
+R1
+R3A
++
+------------------------
+9 V
+=
+=
+I
+UBC
+RB
+----------
+–
+6
+–
+80
+–--------
+0,075A ;
+=
+=
+=
+I2
+I5
+I
+–
+0,075A
+=
+=
+I5
+UBC
+R5
+----------
+–
+6
+40
+-----
+0,15A ;
+=
+=
+=
+R1
+R2
+R3
+I1
+I2
+E
+D
+C
+
+E1
+
+E2
+RA
+RB
+R4
+I4
+S1
+S2
+
+[PAG 547]
+ELETTROTECNICA GENERALE
+VII-43
+Per determinare RA e RB si utilizzeranno le relazioni:
+(VII.3.2)
+Esempio
+Data la rete elettrica di Fig. VII.3.18 nella quale E1 = 15 V, R1 = R2 = 20 , R3 = R4 =
+R5 = 40 , determinare il valore che deve assumere E2 affinché sia I4 = I2.
+Risoluzione
+Esaminando la Fig. VII.3.20 e applicando le relazioni VII.3.2 si ha:
+RA = 80 RB = 80 KA = 1con R= R5
+Applicando alla sottorete S1 la regola del partitore di corrente si ha:
+Risolvendo la sottorete S2 si ha:
+I2 = I4 = 0,075 A
+da cui
+E2 = (RB  R2)I2 = 7,5 V
+3.9  Principio di sostituzione e compensazione
+Quando in una rete elettrica, sede di un definito regime di correnti, viene a cambiare il
+valore di una resistenza, si ha una variazione delle correnti in ogni lato. Per determinare le
+variazioni risulta comodo l’utilizzo del principio di sostituzione e compensazione; esso
+assicura che è sempre possibile sostituire una resistenza Rn, percorsa da una corrente In,
+con un generatore avente f.e.m. pari a RnIn e polarità coincidente con la caduta di ten-
+sione della resistenza stessa.
+Per il calcolo delle variazioni si può procedere in due modi:
+–  si considerano le variazioni di corrente provocate da un generatore di f.e.m. pari a
+RnIn avente in serie la resistenza Rn; In è la corrente che viene a circolare dopo la varia-
+zione di resistenza;
+oppure
+–  si considerano le variazioni di corrente provocate da un generatore di f.e.m. pari a
+RnIn avente in serie la resistenza Rn  Rn; In è la corrente che circolava prima della
+variazione di resistenza.
+L’applicazione di uno dei metodi determina un circuito contenente solo il generatore
+equivalente, avendo rispettivamente cortocircuitato o aperto, i generatori esistenti di ten-
+sione e di corrente.
+Esempio
+Data la rete elettrica di Fig. VII.3.21 nella quale E1 = 110 V, R1 = 2 , R2 = 40 , R3
+= R4 = 20 , determinare il valore delle nuove correnti che si instaurano dopo la chiusura
+del tasto T.
+RA
+R 1
+KA
++
+
+;
+=
+RB
+R 1
+1
+KA
+------
++
+
+
+
+;
+=
+KA
+I2
+I4
+----
+=
+R4A
+R4
+RA
++
+120 
+=
+=
+R34A
+R4A
+R3
+
+R4A
+R3
++
+------------------------
+30
+=
+=
+R134A
+R1
+R34A
++
+50 
+=
+=
+I4
+I 1
+R3
+R3
+R4A
++
+------------------------
+0,075A
+=
+=
+I1
+E1
+R134A
+-------------
+0,3A
+=
+=
+
+[PAG 548]
+VII-44
+ELETTROTECNICA GENERALE
+Risoluzione
+La rete di Fig. VII.3.22, ottenuta applicando il secondo modo di procedere e cortocir-
+cuitando il generatore E1, permette il calcolo delle variazioni di corrente.
+Per determinare E* è necessario risolvere la rete originaria di Fig. VII.3.21 ottenendo:
+e quindi
+per la regola del derivatore di corrente si ha
+per cui
+I2 = I1  I3 = 2,5 A
+e quindi
+E* = RnIn = 50 V
+Risolvendo la rete di Fig. VII.3.22 si ha:
+Fig. VII.3.21  
+Fig. VII.3.22   
+R1
+R2
+I1
+
+E1
+I3
+R3
+R4
+I2
+T
+R1
+A
+B
+R3
+
+E*
+I1
+1
+I2
+1
+I3
+1
+R2
+R34
+R3
+R4
++
+40 ;
+=
+=
+R1234
+R1
+R234
++
+22 ;
+=
+=
+R234
+R2
+R34
+
+R2
+R34
++
+----------------------
+20;
+=
+=
+I1
+E1
+R1234
+------------
+5 A
+=
+=
+I3
+I1
+R2
+R2
+R34
++
+----------------------
+2,5 A
+=
+=
+R12
+R1
+R2
+
+R1
+R2
++
+--------------------
+1,9 ;
+=
+=
+R123
+R12
+R3
++
+21,9;
+=
+=
+I3
+1
+E
+R123
+----------
+2,28 A
+=
+=
