@@ -1,17 +1,16 @@
 # BioSerra Wiki — Indice
 
-> Aggiornato: 2026-06-29 | 16 concetti | Knowledge base Living Soil + Elettrocultura
+> Aggiornato: 2026-06-29 | 15 concetti | Knowledge base Living Soil + Elettrocultura
 
 ## Panoramica
 - [Overview generale](sintesi/overview.md)
 
 ## Elettrocultura
 - [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Utilizza acqua sottoposta a campi magnetici per migliorare l'assorbimento dei nu
-- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Collega un conduttore metallico al terreno per bilanciare le cariche elettriche 
-- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Avvolgi una spirale di rame intorno al fusto o ai rami per generare campi elettr
-- [Circuito Oscillante Lakhovsky](concetti/circuito_lakhovsky.md) *(in 10 PDF)* — Costruisci un circuito oscillante a forma di anello per emettere frequenze benef
-- [Oscillatori a Onde Multiple Lakhovsky](concetti/multi_onde_lakhovsky.md) *(in 10 PDF)* — Utilizza più circuiti oscillanti di dimensioni diverse per coprire un'ampia gamm
-- [Elettrodo Ferro-Rame (Fe-Cu)](concetti/elettrodo_ferro_rame.md) *(in 10 PDF)* — Inserisci un elettrodo composto da ferro e rame nel terreno per creare una diffe
+- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Collega un conduttore metallico al terreno per captare e trasmettere energie tel
+- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Avvolgi un filo di rame intorno al fusto o ai rami per creare un campo elettroma
+- [Circuito Oscillante Lakhovsky](concetti/circuito_lakhovsky.md) *(in 10 PDF)* — Applica un circuito a forma di spirale o anello di rame per emettere frequenze b
+- [Sinergia Ferro-Rame (Fe-Cu)](concetti/sinergia_ferro_rame.md) *(in 10 PDF)* — Utilizza elettrodi o fili di ferro e rame per creare un campo galvanico che stim
 
 ## Suolo
 - [Suolo Vivente](concetti/gestione_suolo_vivente.md) *(in 2 PDF)* — Mantenimento microbioma del suolo attivo.
