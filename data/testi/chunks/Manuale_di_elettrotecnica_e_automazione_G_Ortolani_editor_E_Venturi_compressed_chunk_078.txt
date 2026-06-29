@@ -1,0 +1,1214 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 78/116 ===
+Chars: 44,142 | Offset: 3,401,404
+
+
+
+[PAG 1598]
+XVI-40
+TECNOLOGIE BUS
+Fig. XVI.4.15   Esempio di sistema a bus in un centro commerciale.
+4.4.4  Comunicazione
+My Home rende la comunicazione più facile proponendo soluzioni multifunzionali 
+per trasmettere voce, immagini e dati.
+Video audio digitale e telefonia integrata
+Le soluzioni della comunicazione My Home consentono con un unico apparecchio, il 
+videocitofono, di comunicare e di visualizzare le immagini da una stanza all’altra della 
+casa, di telefonare e di rispondere al citofono.
+Rete dati domestica
+Il sistema Btnet consente di predisporre una rete informatica domestica. La LAN 
+domestica prevede un centro stella localizzato all’interno di centralini da parete o da 
+incasso, equipaggiati con uno o più permutatori DIN con porte RJ45, e di una struttura di 
+cablaggio tipicamente a stella verso tutti i punti di utilizzo predisposti.
+Ogni punto di utilizzo deve essere predisposto con almeno 2 connettori RJ45 (per i 
+collegamenti dati e telefonico) e una presa TV, o in alternativa con un connettore RJ45, un 
+connettore ottico e una presa TV.
+La predisposizione di un punto utenza in ogni locale dell’abitazione consente di colle-
+gare in rete i PC della casa e di impiegare le risorse condivise dalla LAN.
+Comando, controllo, supervisione
+I dispositivi che consentono di comandare, controllare e supervisionare l’impianto in 
+modalità remota sono:
+–  l’attuatore telefonico, che consente di comandare carichi attraverso normali telefoni 
+fissi o mobili;
+–  il centralino telefonico, che oltre alle normali funzioni telefoniche consente di coman-
+dare dei carichi da telefoni interni ed esterni;
+Alimentatore
+Centrale con
+monitor LCD
+Comando luci con pulsante semplice
+Luce
+vetrina B
+Luce
+vetrina A
+Luce
+vetrina C
+Luce
+vetrina D
+IN/OUT
+     1
+IN/OUT
+     2
+BUS
+Attuatore
+Rilevatore IR
+Comando luci
+Attuatore
+Comando luci
+Comando motori
+Luce
+1
+Luce
+2
+Luce
+3
+Luce
+4
+Luce
+bagni
+Sinottico
+Fontana
+Diffusione
+sonora
+
+[PAG 1599]
+TECNOLOGIE BUS
+XVI-41
+–  il comunicatore telefonico, che permette di comunicare in modo bidirezionale, 
+inviando messaggi vocali sulla linea telefonica in caso di eventi (intrusione, allarmi tec-
+nici, manomissione) rilevati dal sistema antifurto e ricevendo dall’esterno comandi di 
+attuazione;
+–  il web server, connesso alla rete LAN o ad Internet consente di accedere al proprio 
+impianto, attraverso pagine web visualizzabili su computer, con un programma di naviga-
+zione (browser) commerciale.
+Nella Fig. XVI.4.16 si propone una applicazione del sistema bus in una palazzina 
+uffici dove ci sono degli spazi condivisi: la portineria, le parti condominiali e di disimpe-
+gno, i corridoi, il vano scale e ascensore. Si potranno cablare con un sistema bus anche le 
+singole parti di pertinenza di ogni azienda, pur prevedendo dei comandi generali per lo 
+spegnimento delle luci e la chiusura delle tapparelle di tutto l’edificio, con attivazione 
+dalla portineria.
+Fig. XVI.4.16   Esempio di sistema a bus in una palazzina uffici.
+Rilevatori IR
+Unità ausiliaria
+Unità di back-up
+Chiave a
+tranponder
+Inseritore
+Attuatore
+Centrale LCD
+Sirena da
+esterno
+Combinatore
+BUS 1
+BUS 2
+Alimentatore
+Alimentatore
+Termostati
+Alimentatore
+Modulo
+vivavoce
+Citofono vivavoce
+16
+8
+5
+10
+Accoppiatore
+di linea
+Targa
+esterna
+Comando OFF
+generale
+Attuatori a 4 uscite
+Comandi a pulsante semplice
+Risc.
+Luce
+Termoregolazione
+Tapparelle
+entrata
+Tapparelle
+uscita
+Tapparelle
+sala riunioni
+N.B.
+La dotazione del
+BUS 2 si ripete
+per ogni altro
+insieme di uffici
+di altre aziende.
+
+[PAG 1600]
+XVI-42
+TECNOLOGIE BUS
+BIBLIOGRAFIA
+ABB ELETTROCONDUTTURE, Corso di formazione sistemi in tecnica bus, ABB Elet-
+trocondutture, Milano, 1997.
+ANIE, Convergenza - manuale di progettazione e installazione dei sistemi bus -, 
+ANIE, Milano, 1999.
+ERLACHER P - KÖNIG H., L’impianto elettrico nella casa sana, Edicom edizioni, 
+Monfalcone (GO), 2000.
+CONTE G.-ERBOGASTO M.-MONASTERO E,-ORTOLANI G.-VENTURI E., Corso di elet-
+trotecnica elettronica e applicazioni - Circuiti, macchine e impianti elettrici, applica-
+zioni elettroniche e sistemi bus, Hoepli, Milano, 2004.
+GRUPPO MATERIALE DA INSTALLAZIONE, I sistemi bus per gli edifici, ANIE, Milano,
+1997.
+ORTOLANI G.-VENTURI E., Impianti elettrici civili - Schemi e apparecchi nei locali 
+domestici e del terziario, HOEPLI, Milano, 2007.
+SCUOLA DI FORMAZIONE EIBA ITALIA, Bus europeo di installazione - manuale di pro-
+gettazione-, EIBA Italia, Milano, 1995.
+SEIP G.G., EIB: lo standard per la gestione e il controllo degli edifici, Tecniche 
+nuove, Milano, 2002.
+SIEMENS, Sistema di controllo degli edifici instabus EIB, Siemens, Milano.
+TRISCIUOGLIO D., Introduzione alla domotica, Tecniche nuove, Milano, 2002.
+RIVISTE: Automazione, Automazione e Strumentazione, bt magazine, Il giornale 
+dell’installatore elettrico, anni dal 1980 a 2002.
+SITI VISITATI: www.at-net.ip/RandD; www.batibus.com; www.bluetooth.com; 
+www.bticino.it; www.cebus.org; www.domotica.it, www.echelon.com; www.ehsa.it; 
+www.eibaitalia.it; www.emware.com; www.havi.org; www.hesa.com; www.home-
+pna.org; www.homerf.org; www.konnex-knx.com; www.jini.org; www.intellon.com; 
+www.lonmark.org; www.mapeborgo.it; www.omeplug.com; www.osgi.org; 
+www.peracom.com; www.sc25wg1.metrdik.com; www.sharewave.com; www.sistemi-
+bus.it; www.x10.com; www.upnp.org; www.vesa.org; www.wirelessethernet.org.
+
+[PAG 1601]
+Sezione XVII
+Elettronica analogica e digitale
+INDICE
+pag.
+1    GENERALITÀ  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2    ELEMENTI DI TEORIA DELLE RETI ELETTRICHE LINEARI  . . . . . . . . . .
+7
+2.1    Definizioni  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+2.2    Bipolo LTI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+2.3    Teoremi delle reti lineari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+2.4    Quadripoli . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+2.5    Funzioni di trasferimento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+2.6    Risposta in frequenza di un circuito RLC  . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+2.7    Parametri dei quadripoli  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+3    AMPLIFICATORI LINEARI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+3.1    Accoppiamento generatore, amplificatore e carico  . . . . . . . . . . . . . . . . . .
+24
+3.2    Analisi nel dominio della frequenza  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+3.3    Analisi nel dominio del tempo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+30
+3.4    Amplificatori reazionati negativamente  . . . . . . . . . . . . . . . . . . . . . . . . . .
+31
+4    MATERIALI SEMICONDUTTORI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+37
+4.1    Legami covalenti, elettroni e lacune libere nei semiconduttori  . . . . . . . . .
+37
+4.2    Corrente nei semiconduttori  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+38
+4.3    Semiconduttori drogati  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+38
+4.4    Giunzione pn . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+38
+5    DIODI A GIUNZIONE PN  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+39
+5.1    Diodi a giunzione pn . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+39
+5.2    Analisi grafica di un circuito resistivo con diodo  . . . . . . . . . . . . . . . . . . .
+41
+5.3    Modelli del diodo a giunzione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+41
+5.4    Diodi Zener . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+43
+5.5    Altri tipi di diodi: diodi Schottky e diodi LED  . . . . . . . . . . . . . . . . . . . . .
+44
+6    CIRCUITI CON DIODI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+44
+6.1    Circuiti di raddrizzamento con diodi a giunzione  . . . . . . . . . . . . . . . . . . .
+44
+6.2    Circuiti con diodi Zener  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+48
+7    TRANSISTOR BIPOLARI A GIUNZIONE E CIRCUITI DI POLARIZZAZIONE 49
+7.1    Caratteristiche di funzionamento dei BJT . . . . . . . . . . . . . . . . . . . . . . . . .
+49
+7.2    Tipi di connessione dei BJT e curve caratteristiche tensione-corrente . . . .
+50
+7.3    Polarizzazione e stabilità del punto di funzionamento dei BJT . . . . . . . . .
+52
+7.4    Circuiti di polarizzazione e stabilizzazione . . . . . . . . . . . . . . . . . . . . . . . .
+52
+8    AMPLIFICATORI A BJT  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+54
+8.1    Amplificazione e distorsione negli amplificatori a BJT . . . . . . . . . . . . . . .
+54
+
+[PAG 1602]
+XVII-2
+ELETTRONICA ANALOGICA E DIGITALE
+8.2    Modello di BJT per piccoli segnali . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+57
+8.3    Tipi di connessione negli amplificatori a BJT  . . . . . . . . . . . . . . . . . . . . . 
+58
+9    TRANSISTOR AD EFFETTO DI CAMPO  . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+59
+9.1    Transistor ad effetto di campo a giunzione (JFET) . . . . . . . . . . . . . . . . . . 
+59
+9.2    Transistor MOSFET . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+62
+9.3    Circuiti di polarizzazione dei JFET  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+64
+9.4    Circuiti di polarizzazione dei MOSFET . . . . . . . . . . . . . . . . . . . . . . . . . . 
+65
+9.5    Modelli dei FET per piccoli segnali . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+66
+9.6    Amplificatori a FET . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+67
+10   TRANSISTOR NEI CIRCUITI DIGITALI  . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+68
+10.1    BJT nei circuiti digitali . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+69
+10.2    Famiglie logiche TTL ed ECL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+70
+10.3    FET nei circuiti digitali  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+70
+10.4    Tempi di commutazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+72
+11   AMPLIFICATORI OPERAZIONALI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+73
+11.1    Caratteristiche di base degli AO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+73
+11.2    Amplificatore operazionale ideale  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+76
+11.3    Circuiti lineari con amplificatori operazionali  . . . . . . . . . . . . . . . . . . . . 
+76
+11.4    Circuiti non lineari con amplificatori operazionali . . . . . . . . . . . . . . . . . 
+79
+12   SISTEMI DI NUMERAZIONE E CODICI NUMERICI E ALFANUMERICI  
+82
+12.1    Sistemi numerici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+82
+12.2    Sistema di numerazione binario naturale  . . . . . . . . . . . . . . . . . . . . . . . . 
+83
+12.3    Sistemi di numerazione ottale ed esadecimale  . . . . . . . . . . . . . . . . . . . . 
+84
+12.4    Conversione di un numero binario naturale in sistemi ottale ed esadecimale 84
+12.5    Operazioni aritmetiche con numeri interi binari . . . . . . . . . . . . . . . . . . . 
+84
+12.6    Numeri binari con segno  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+85
+12.7    Addizione e sottrazione con numeri binari con segno . . . . . . . . . . . . . . . 
+85
+12.8    Notazioni a virgola fissa ed a virgola mobile . . . . . . . . . . . . . . . . . . . . . 
+87
+12.9    Codici numerici e alfanumerici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+87
+13   ELEMENTI DI ALGEBRA BOOLEANA . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+89
+13.1    Elementi dell'algebra booleana . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+90
+13.2    Funzioni booleane e tabelle di verità  . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+90
+13.3    Semplificazione di funzioni  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+90
+13.4    Mappe di Karnaugh  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+93
+13.4.1    Semplificazione delle mappe . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+94
+13.4.2    Condizione di indifferenza nelle mappe di Karnaugh  . . . . . . . . . 
+96
+14   CIRCUITI LOGICI DI BASE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+97
+14.1    Tipi di logiche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+97
+14.2    Porte logiche di base  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+97
+14.3    Simboli rettangolari normalizzati delle porte logiche di base . . . . . . . . . 
+100
+14.4    Esempi di impiego delle porte logiche di base  . . . . . . . . . . . . . . . . . . . . 
+100
+14.5    Porte con uscita three-state . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+101
+15   CIRCUITI COMBINATORI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+102
+15.1    Circuiti per operazioni aritmetiche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+102
+
+[PAG 1603]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-3
+15.2    Comparatori  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+104
+15.3    Circuiti di codifica e decodifica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+105
+15.4    Multiplexer e demultiplexer  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+109
+16   DISPOSITIVI SEQUENZIALI: LATCH E FLIP-FLOP . . . . . . . . . . . . . . . . . .
+111
+16.1    Latch SR . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+111
+16.2    Latch con abilitazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+112
+16.3    Caratteristiche di commutazione dei latch . . . . . . . . . . . . . . . . . . . . . . . .
+113
+16.4    Flip-flop  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+114
+16.4.1    Flip-flop edge-triggered . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+114
+16.4.2    Caratteristiche di commutazione dei flip-flop  . . . . . . . . . . . . . . .
+117
+17   REGISTRI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+118
+17.1    Memorizzazione dei dati nei registri . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+118
+17.2    Registri a scorrimento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+119
+18   CONTATORI E DIVISORI DI FREQUENZA . . . . . . . . . . . . . . . . . . . . . . . . .
+121
+18.1    Contatori asincroni binari  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+121
+18.2    Espansione della capacità di conteggio nei contatori asincroni . . . . . . . .
+123
+18.3    Contatori sincroni  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+124
+18.4    Espansione della capacità di conteggio nei contatori sincroni . . . . . . . . .
+124
+18.5    Divisori di frequenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+125
+19   MEMORIE ROM E RAM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+125
+19.1    Caratteristiche generali delle memorie  . . . . . . . . . . . . . . . . . . . . . . . . . .
+125
+19.2    Classificazione ed impiego delle memorie ROM  . . . . . . . . . . . . . . . . . .
+128
+19.3    Classificazione delle memorie RAM . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+129
+20   DISPOSITIVI LOGICI PROGRAMMABILI  . . . . . . . . . . . . . . . . . . . . . . . . . .
+129
+20.1    Dispositivi PAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+130
+21   MICROPROCESSORE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+132
+21.1    Architettura del microprocessore 8080  . . . . . . . . . . . . . . . . . . . . . . . . . .
+134
+22   OSCILLATORI SINUSOIDALI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+135
+22.1    Oscillatori LC  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+137
+22.2    Oscillatori a cristallo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+138
+23   GENERATORI DI FORME D'ONDA  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+139
+23.1    Generatori di forme d'onde rettangolari con porte TTL . . . . . . . . . . . . . .
+139
+23.2    Generatori di onde rettangolari con amplificatore operazionali . . . . . . . .
+140
+23.3    Integrato 8038: generatore di funzioni  . . . . . . . . . . . . . . . . . . . . . . . . . .
+141
+23.4    Timer 555  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+143
+23.5    Circuiti con il 555 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+144
+24   FILTRI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+147
+24.1    Filtri passivi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+148
+24.2    Filtri RLC con poli complessi coniugati  . . . . . . . . . . . . . . . . . . . . . . . . .
+151
+24.3    Filtri attivi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+156
+25   AMPLIFICATORI DI POTENZA, TIRISTORI, COMANDO DI ATTUATORI 162
+25.1    Generalità sull'amplificazione di potenza in bassa frequenza  . . . . . . . . .
+162
+25.2    BJT di potenza  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+163
+
+[PAG 1604]
+XVII-4
+ELETTRONICA ANALOGICA E DIGITALE
+25.3    MOSFET di potenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+164
+25.4    Bilancio energetico degli amplificatori . . . . . . . . . . . . . . . . . . . . . . . . . . 
+164
+25.5    Amplificatori di potenza in bassa frequenza in classe A . . . . . . . . . . . . . 
+166
+25.6    Amplificatori di potenza in bassa frequenza in classe B . . . . . . . . . . . . . 
+168
+25.7    Tiristori  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+169
+25.7.1    SCR . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+170
+25.7.2    TRIAC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+173
+25.7.3    DIAC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+175
+25.8    Comando degli attuatori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+176
+26   INTRODUZIONE ALLE CONVERSIONI A/D E D/A . . . . . . . . . . . . . . . . . . 
+180
+26.1    Caratteristiche e tipi di convertitori D/A  . . . . . . . . . . . . . . . . . . . . . . . . 
+180
+26.2    Conversione analogico-digitale  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+183
+26.3    Esempi di schemi di convertitori: il convertitore D/A a resistori pesati e il con-
+vertitore A/D ad approsimazioni successive  . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+186
+27   OSCILLOSCOPIO E SUO IMPIEGO NELLE MISURE DI TENSIONE, 
+CORRENTE, FREQUENZA E FASE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+190
+27.1    Generalità . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+191
+27.2    Tubo a raggi catodici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+192
+27.3    Esempio di schema a blocchi di un oscilloscopio . . . . . . . . . . . . . . . . . . 
+197
+27.3.1    Circuito di ingresso e amplificatore verticale  . . . . . . . . . . . . . . . 
+197
+27.3.2    Circuito di sincronismo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+200
+27.3.3    Generatore della base dei tempi . . . . . . . . . . . . . . . . . . . . . . . . . . 
+203
+27.3.4    Amplificatore orizzontale  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+205
+27.3.5    Controlli sul tubo a raggi catodici . . . . . . . . . . . . . . . . . . . . . . . . 
+205
+27.4    Oscilloscopi a doppia traccia  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+206
+27.5    Oscilloscopi con base dei tempi ritardata . . . . . . . . . . . . . . . . . . . . . . . . 
+208
+27.6    Oscilloscopi digitali . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+209
+27.7    Sonde . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+211
+27.8    Misure di tensione, corrente, frequenza e fase con l’oscilloscopio . . . . . 
+213
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+217
+
+[PAG 1605]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-5
+1  GENERALITÀ
+In questa sezione si presentano i concetti generali e i componenti dei dispositivi elet-
+tronici analogici e digitali.
+Nei sistemi analogici, in particolare, si considera l’amplificazione dei segnali di cor-
+rente o di tensione detti analogici, che variano con continuità, caratterizzati dalla proprietà
+che, fra due valori diversi di un medesimo segnale, si hanno infiniti valori.
+Nei sistemi digitali si considerano i dispositivi combinatori e sequenziali. Nei disposi-
+tivi combinatori, l’uscita, in un dato istante, è funzione solo dei segnali d’ingresso pre-
+senti in quell'istante. Nei dispositivi sequenziali l’uscita non dipende solo dagli ingressi,
+ma anche dai valori precedenti; essi hanno una memoria.
+Nei sistemi digitali sono presenti correnti e tensioni detti segnali digitali. Questi
+segnali sono a valori discreti, compaiono solo due valori indicati con "0" e "1", chiamati
+bit (binary digit o cifre binarie); un bit indica se qualcosa di fisico esiste o no. I circuiti e i
+sistemi digitali operano su grandezze digitali, e i bit sono utilizzati applicando l’aritmetica
+binaria. In un sistema digitale elettronico, 1 e 0 sono chiamati alto (High) e basso (Low),
+o vero e falso (True e False). Il valore 1 è il valore logico vero corrispondente ad un
+segnale elettronico a livello alto, 0 è il valore logico falso corrispondente ad un segnale
+elettronico a livello basso; talvolta, si utilizza la relazione inversa.
+Nei reali circuiti elettrici digitali si definiscono i segnali alto e basso come intervalli
+di tensione. Alto corrisponde ad un intervallo di tensione prossimo alla massima tensione
+accettata dal circuito, ed è indicato con H (High), mentre basso corrisponde ad un valore
+prossimo (ma non necessariamente uguale) a zero, ed è indicato con L (Low). Fra i valori
+H e L si ha una gamma di valori di tensioni non corrispondenti ad uno stato logico defi-
+nito. I valori di tensione di quest’intervallo sono inferiori al limite superiore, ma superiori
+al limite inferiore.
+Ad esempio, nello standard TTL, acronimo di Transistor-Transistor Logic, un segnale
+logico basso (L) ha una tensione compresa fra 0 V e 0,8 V, mentre, un segnale logico alto
+(H) ha una tensione compresa fra 2 V e 5 V. All’intervallo di tensioni compreso tra 0,8 V
+e 2,0 V non corrisponde uno stato logico definito.
+I sistemi digitali sono realizzati prevalentemente con circuiti integrati. Un circuito
+integrato è realizzato inserendo più circuiti elettronici in un apposito contenitore e il cir-
+cuito risultante è chiamato circuito integrato, o IC (Integrated Circuit). I circuiti integrati
+sono classificati in funzione del numero degli elementi circuitali integrati: SSI (Small
+Scale Integration), che contengono un numero di componenti inferiore a 100; MSI
+(Medium Scale Integration), che contengono da 100 a 1000 componenti; LSI (Large Scale
+Integration), che contengono da 1000 a 10.000 componenti; VLSI (Very Large Scale Inte-
+gration), con più di 10.000 componenti.
+       
+Fig. XVII.1.1   Contenitore DIP a 14 pin: a) vista superiore; b) vista laterale.
+I contenitori dei circuiti integrati (package) sono generalmente plastici, provvisti di
+pin (piedini). La forma più comune dei package è rettangolare, come nella Fig. XVII.1.1,
+chiamata DIP (Dual In Line Package). L'individuazione dei pin avviene mediante numeri
+e simboli. Il pin 1 è individuato prendendo come riferimento l'incavo a forma di U inciso
+1 2 3 4 5 6 7
+14 13 12 11 10 9 8
+a)
+b)
+
+[PAG 1606]
+XVII-6
+ELETTRONICA ANALOGICA E DIGITALE
+su un solo lato del contenitore. Tenendo l'incavo a forma di U rivolto verso sinistra, come
+nella Fig. XVII.1.1a, il pin 1 è posto in basso e i rimanenti pin sono numerati in sequenza
+antioraria. Per realizzare particolari circuiti, vi sono altri tipi di contenitori come la serie
+piatta chiamata SOP (Small Outline Package).
+Un integrato è identificato da una sigla, formata da lettere e numeri, stampata sul con-
+tenitore. Ad esempio, le sigle MM74HC14N e CD4011BCN, della National Semicon-
+ductor, hanno il seguente significato:
+Gli integrati sono raggruppati in famiglie. Le famiglie più comuni d'integrati sono: la
+TTL (Transistor-Transistor Logic: logica transistor transistor) e la CMOS (Complemen-
+tary Metal-Oxide-Semiconductor).
+Le differenze fondamentali, che esistono fra gli integrati delle due famiglie, riguar-
+dano la tensione d'alimentazione, la massima frequenza del segnale da elaborare, il valore
+dei livelli logici. 
+Nella Tab. XVII.1.1 sono riportati i valori della tensione d'alimentazione e i valori
+indicativi della frequenza massima di lavoro di alcune serie di integrati TTL e CMOS.
+Tab. XVII.1.1   Valori della tensione di alimentazione e valori massimi indicativi delle
+frequenze di lavoro di alcune serie di integrati TTL e CMOS.
+Le caratteristiche di ogni singolo integrato sono riportate in manuali, redatti dalle case
+costruttrici degli integrati, chiamati data book; le pagine con le caratteristiche di un inte-
+grato sono chiamate data sheets.
+MM
+74
+HC
+14
+N
+Sigla data dalla 
+casa costruttrice
+Serie
+Frequenza 
+massima 
+(indicativa)
+Funzione
+Contenitore Serie 74
+MM = MOS 
+Monolithic
+74 Commerciale
+54 Militare
+55 MHz
+14 = 
+Schmitt 
+trigger
+N = Contenitore DIP in 
+plastica
+W = Contenitore SOP in 
+ceramica
+CD
+4011
+B
+C
+N
+Sigla data dalla 
+casa costruttrice
+Funzione
+Tipo
+Serie
+Contenitore
+CD = CMOS 
+Digital
+4011 = 4 porte 
+NAND a 2 
+ingressi
+B = Buffered
+UB = Unbuf-
+fered
+C = Com-
+merciale
+M = Mili-
+tare
+N = Contenitore DIP in 
+plastica
+W = Contenitore SOP in 
+ceramica
+Famiglia
+CMOS
+74HC
+CMOS
+CD40
+TTL
+74
+TTL
+74LS
+TTL
+74S
+TTL
+74AS
+TTL
+74F
+Tensione di alimentazione
+5 V
+18 V 
+(max)
+5 V
+5 V
+5 V
+5 V
+5 V
+Frequenza di lavoro (valore 
+massimo indicativo)
+55
+MHz
+4
+MHz
+25 
+MHz
+33 
+MHz
+100 
+MHz
+160 
+MHz
+125 
+MHz
+
+[PAG 1607]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-7
+2  ELEMENTI DI TEORIA DELLE RETI ELETTRICHE LINEARI
+In questo paragrafo sono riportati alcuni argomenti della teoria delle reti elettriche
+lineari utilizzate nei circuiti elettronici.
+2.1  Definizioni
+A)  Rappresentazione degli elementi circuitali
+In un circuito elettrico gli elementi che dissipano energia elettrica in calore, o che la
+immagazzinano sotto forma di campi elettrici o magnetici, sono classificati come compo-
+nenti passivi; gli elementi che forniscono energia elettrica sono chiamati generatori e sono
+classificati come componenti attivi. I componenti di un circuito elettrico sono considerati
+come singolarità puntuali, sono idealizzati come elementi concentrati quando le dimensioni
+fisiche sono trascurabili in confronto alla lunghezza d'onda corrispondente alla loro normale
+frequenza di funzionamento. Un circuito elettrico concentrato è idealizzato con un modello
+a forma di rete costituita da nodi e lati, che descrive le proprietà elettriche del circuito.
+Le tensioni e le correnti presenti nella rete costituiscono le variabili di rete o variabili
+del circuito. Le tensioni e le correnti presenti nella rete hanno una polarità; nelle variabili
+questa è espressa assegnando per ogni lato delle direzioni di riferimento: una per la cor-
+rente ed una per la tensione.
+B)  Rete LTI
+Un circuito elettrico, che presenta all'esterno due morsetti, è lineare se la caratteristica
+tensione-corrente rilevata ai capi dei due morsetti è rappresentata da una linea retta pas-
+sante per l'origine; lo stesso circuito è tempo invariante quando la caratteristica non cam-
+bia nel tempo. Un circuito con queste caratteristiche è detto lineare tempo invariante
+(LTI). Spesso al circuito si assegna il nome di rete LTI.
+C)  Generatori indipendenti
+Per l'analisi di un circuito, i generatori sono visti o come generatori di tensione o come
+generatori di corrente. Possono essere di due tipi: indipendenti e dipendenti. I generatori
+indipendenti sono dispositivi con due morsetti che forniscono energia elettrica al circuito
+al quale sono collegati e sono considerati elementi attivi. I segnali dei generatori indipen-
+denti, us(t) o is(t), costituiscono i segnali d'ingresso dei circuiti.
+D)  Generatori dipendenti
+Un generatore dipendente LTI è un elemento a quattro morsetti con due lati separati,
+un lato è costituito o da un generatore di tensione o da un generatore di corrente, l'altro
+lato è o un circuito aperto o un cortocircuito.
+Negli schemi circuitali i generatori dipendenti sono rappresentati con una losanga.
+Sono possibili quattro combinazioni di generatori dipendenti, illustrati nella Fig.
+XVII.2.1: generatore di tensione pilotato in tensione (Fig. XVII.2.1a), generatore di ten-
+sione pilotato in corrente (Fig. XVII.2.1b), generatore di corrente pilotato in tensione (Fig.
+XVII.2.1c), generatore di corrente pilotato in corrente (Fig. XVII.2.1d).
+i1=0
+i2
+1
+1'
+2
+2'
+u1
+u2
+u1
+a)
+i1
+i2
+1
+1'
+2
+2'
+u1=0
+u2
+rmi1
+b)
+
+[PAG 1608]
+XVII-8
+ELETTRONICA ANALOGICA E DIGITALE
+Fig. XVII.2.1   Schemi dei generatori dipendenti LTI: a) generatore di tensione pilotato in
+tensione; b) generatore di tensione pilotato in corrente; c) generatore di corrente pilotato
+in tensione; d) generatore di corrente pilotato in corrente; e) circuito per mostrare che i
+generatori dipendenti sono elementi attivi.
+Il segnale del generatore, nel lato indicato con 2-2', è funzione o della tensione ai capi
+del circuito aperto del lato 1-1', o della corrente quando il lato 1-1' è in cortocircuito; il
+lato 1-1' è considerato lato d’ingresso e il lato 2-2' è considerato lato d’uscita. I generatori
+del lato 2-2' costituiscono i generatori pilotati.
+I generatori dipendenti sono LTI, quando il segnale del generatore nel lato 2-2' è otte-
+nuto dal prodotto di una costante per la tensione del lato 1-1', o di una costante per la cor-
+rente del lato 1-1'. Con riferimento alla Fig. XVII.2.1, le quattro costanti di
+proporzionalità rappresentano: un rapporto di tensione u2  u1 =  (Fig. XVII.2.1a); una
+resistenza di trasferimento u2 / i1 = rm (Fig. XVII.2.1b); una conduttanza di trasferimento
+i2 / u1 = gm (Fig. XVII.2.1c); un rapporto di corrente i2 / i1 =  (Fig. XVII.2.1d). Le
+costanti sono indicate con i simboli , rm, gm, , quando sono usate per realizzare i
+modelli d'analisi dei dispositivi elettronici.
+Alle tensioni e alle correnti presenti nei lati dei generatori dipendenti, si assegnano
+direzioni di riferimento associate e poiché il lato 1-1' è o un cortocircuito o un circuito
+aperto, la potenza istantanea che entra in un generatore dipendente è p(t) = u2(t)i2(t). I
+generatori dipendenti sono considerati elementi attivi. Si consideri il circuito della Fig.
+XVII.2.1e, in base alle direzioni di riferimento per u2 e i2 si ricava che la potenza istanta-
+nea che entra nel generatore dipendente è negativa, p(t)u2(t)i2(t)i2(t)Rci2(t)i2
+2(t)Rc;
+per il principio di conservazione dell'energia, il generatore dipendente, controllato dalla
+tensione d'ingresso us, fornisce potenza al resistore Rc, data da i2
+2(t)Rc.
+I circuiti LTI possono contenere sia generatori indipendenti sia generatori dipendenti.
+I generatori indipendenti sono elementi attivi che generano segnali d'ingresso e rappresen-
+tano l'azione dell'ambiente esterno sul circuito, i generatori dipendenti sono utilizzati
+come elementi d'accoppiamento.
+i1=0
+i2
+1
+1'
+2
+2'
+u1
+u2
+c)
+gmu1
+i1
+i2
+1
+1'
+2
+2'
+u1=0
+u2
+d)
+i1
+i1=0
+i2
+1
+1'
+2
+2'
+us
+u2
+e)
+gmus
+i2
+Rc
+
+[PAG 1609]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-9
+2.2   Bipolo LTI
+Si consideri un circuito costituito da elementi LTI, dove non vi sono generatori indi-
+pendenti e tutti i componenti che immagazzinano energia all'istante iniziale sono scarichi.
+Questo circuito, collegato ad un generatore indipendente esterno mediante due morsetti, è
+chiamato circuito ad una porta o bipolo, quando in ogni istante la corrente che entra nel
+morsetto 1 (Fig. XVII.2.2a) è uguale a quella che esce dal morsetto 1'; la tensione e la cor-
+rente ai morsetti del bipolo sono chiamate tensione e corrente di porta. Il termine circuito
+ad una porta indica che si conoscono solo le variabili tensioni di porta e corrente di porta.
+La porta è vista come un paio di conduttori isolati uscenti da una scatola nera, si veda la
+Fig. XVII.2.2a. Due bipoli sono equivalenti se le loro caratteristiche in funzione della ten-
+sione di porta e della corrente di porta sono uguali.
+A)  Impedenza ai capi di un bipolo LTI
+Nella Fig. XVII.2.2b il bipolo LTI N è collegato ad un generatore di corrente sinusoi-
+dale is = I cos(t + ). La corrente is è considerata segnale d'ingresso del bipolo, la ten-
+sione u = U cos(t + ) è il segnale d'uscita ed è considerata come risposta del bipolo in
+regime sinusoidale. Indicando con Is = Iej il vettore o fasore della corrente is e con
+U = Uej il vettore o fasore della tensione u, si definisce autoimpedenza del bipolo N alla
+frequenza angolare , o impedenza d’ingresso del bipolo o impedenza, il rapporto fra il
+vettore della tensione d'uscita e il vettore della corrente d'ingresso:
+(XVII.2.1)
+con Z(j) misurata in ohm [].
+Il modulo e la fase dell'impedenza Z(j) sono:
+(XVII.2.2)
+Fig. XVII.2.2   Bipoli LTI: a) rappresenta-
+zione di un bipolo LTI; b) bipolo LTI colle-
+gato ad un generatore di corrente sinusoidale
+e sua impedenza d'ingresso; c) bipolo LTI
+collegato ad un generatore di tensione sinu-
+soidale e sua ammettenza d'ingresso.
+Bipolo N
+(Rete LTI senza
+generatori indipendenti)
+(Rete LTI senza
+Generatore
+1
+1'
+i(t)
+i(t)
+u(t)
+a)
+Bipolo N
+1
+1'
+u
+is = I cos(t+)
+Z(j) = U
+Is
+b)
+Bipolo N
+1
+1'
+us = I cos(t+)
+Y(j) = I
+Us
+i
+c)
+Z j
+
+
+U
+Is
+---
+=
+Z j
+
+
+U
+I---
+Z
+=
+=
+e
+arg Z j
+
+
+
+
+arg U
+
+
+arg Is
+
+
+–
+
+
+–
+=
+=
+
+[PAG 1610]
+XVII-10
+ELETTRONICA ANALOGICA E DIGITALE
+B)  Ammettenza ai capi di un bipolo LTI
+Nella Fig. XVII.2.2c il bipolo LTI N è collegato ad un generatore di tensione sinusoidale
+us = U cos(t+). La tensione us è considerata segnale d'ingresso del bipolo e la corrente i
+= I cos(t+) è il segnale d'uscita o risposta del bipolo in regime sinusoidale. Indicando con
+Us = Uej il fasore della tensione us e con I = Iej il fasore della corrente i, si definisce auto-
+ammettenza del bipolo N alla frequenza , o ammettenza d’ingresso del bipolo o ammet-
+tenza, il rapporto fra il vettore corrente e il vettore della tensione d'ingresso:
+(XVII.2.3)
+con Y(j) misurata in siemens [S] o [1].
+Il modulo e la fase dell’ammettenza Y(j) sono:
+(XVII.2.4)
+Si dimostra che la relazione fra l'autoimpedenza e l'autoammettenza del bipolo N (Fig.
+XVII.2.2a) è:
+(XVII.2.5)
+Osservazione: in molte equazioni l'impedenza e l'ammettenza sono scritte senza
+mostrare la dipendenza da j.
+2.3  Teoremi delle reti lineari
+I teoremi delle reti lineari semplificano l'analisi dei circuiti, e si applicano solo
+quando le condizioni iniziali e gli ingressi determinano in modo univoco tutte le tensioni e
+le correnti di lato dei circuiti.
+A)  Teorema di sostituzione
+In un circuito costituito da elementi bipolari passivi e da generatori indipendenti, noti
+i segnali di corrente e tensione dei suoi lati, sostituendo un lato qualunque con un genera-
+tore indipendente di tensione con segnale uguale alla tensione di lato, i rimanenti lati del
+circuito mantengono le stesse tensioni e correnti. Si ha lo stesso risultato se il lato è sosti-
+tuito da un generatore indipendente di corrente, il cui segnale è quello della corrente di lato.
+B)  Teorema di sovrapposizione
+All'uscita di una rete lineare con condizioni iniziali nulle, con segnali d'ingresso
+dovuti contemporaneamente ad un certo numero di generatori, la risposta a tali ingressi
+simultanei è uguale alla somma delle risposte dovute a ciascun ingresso agente da solo.
+L'azione di un solo ingresso è ottenuta azzerando i rimanenti generatori ideali: i rimanenti
+generatori ideali di tensione sono sostituiti con cortocircuiti, e i rimanenti generatori ide-
+ali di corrente sono tolti lasciando circuiti aperti.
+C)  Teoremi di Thévenin e Norton
+Questi teoremi sono utilizzati con bipoli lineari contenenti elementi attivi: se ai mor-
+setti del bipolo si collega direttamente un carico arbitrario, si veda la Fig. XVII.2.3a,
+allora la tensione e la corrente sul lato del carico non cambiano se si eseguono l'una o
+l'altra delle seguenti sostituzioni, che costituiscono i teoremi di Thévenin e Norton.
+1) Teorema di Thévenin
+Il bipolo originario N nella Fig. XVII.2.3a è sostituito con la serie costituita da un
+generatore di tensione uT(t) e da un bipolo Neq ottenuti nel seguente modo.
+–  Il bipolo originario N deve essere in condizioni di regime permanente.
+Y j
+
+
+I
+Us
+-----
+=
+Y j
+
+
+I
+U---
+Y
+=
+=
+arg Y j
+
+
+
+
+arg I
+arg Us
+
+
+–
+
+
+–
+=
+=
+Z j
+
+
+1
+Y j
+
+
+---------------
+=
+
+[PAG 1611]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-11
+–  Si scollega il carico, e ai morsetti del bipolo N si rileva la tensione u0(t). Questa ten-
+sione è considerata come segnale del generatore di tensione equivalente (uT(t) = u0(t)), si
+veda la Fig. XVII.2.3b.
+–  Si azzerano i soli generatori indipendenti del bipolo N, e s’impongono condizioni
+iniziali nulle; si ottiene così la rete equivalente Neq della Fig. XVII.2.3c. Se il bipolo N è in
+regime permanente sinusoidale, la rete equivalente Neq è un'impedenza Zeq, detta impe-
+denza equivalente di Thévenin, Zeq.
+–  Si realizza il bipolo equivalente di Thévenin, formato dalla rete equivalente Neq con
+in serie il generatore di tensione equivalente uT(t), con la polarità indicata nella Fig.
+XVII.2.3c.
+2) Teorema di Norton
+Il bipolo originario N nella Fig. XVII.2.4a, è sostituito con il parallelo costituito da un
+generatore di corrente iN(t) e da un bipolo Neq ottenuti nel seguente modo.
+–  Il bipolo originario N deve essere in condizioni di regime permanente.
+–  Si cortocircuita il carico e si rileva la corrente di cortocircuito i0(t). Questa corrente
+è considerata come segnale del generatore di corrente equivalente (iN(t) = i0(t)), si veda la
+Fig. XVII.2.4b.
+Fig. XVII.2.3   Bipolo equivalente di Thévenin: a) bipolo lineare N contenente elementi
+attivi; b) condizioni del bipolo N per determinare il segnale del generatore di tensione
+equivalente uT (t); c) rete equivalente di Thévenin.
+–  Si azzerano i soli generatori indipendenti del bipolo N e s’impongono condizioni
+iniziali nulle; si ottiene così la rete equivalente Neq della Fig. XVII.2.4c. Se il bipolo N è in
+regime permanente sinusoidale, la rete equivalente Neq è un'ammettenza Yeq, detta
+ammettenza equivalente di Norton, Yeq.
+–  Si realizza il bipolo equivalente di Norton formato dalla rete equivalente Neq con in
+parallelo il generatore di corrente equivalente iN(t), con la polarità indicata nella Fig.
+XVII.2.4c.
+N
+Rete
+lineare
+A
+A'
+i(t)
+u(t)
+Carico
+a)
+N
+Rete
+lineare
+A
+A'
+u0(t)
+b)
+N
+Rete
+lineare
+A
+A'
+i(t)
+u(t)
+Carico
+Neq
+Rete
+equi-
+A
+A'
+i(t)
+u(t)
+Carico
+valente
+Bipolo equivalente
+di Thévenin
+c)
+N
+uT(t)
+
+[PAG 1612]
+XVII-12
+ELETTRONICA ANALOGICA E DIGITALE
+Fig. XVII.2.4   Bipolo equivalente di Norton: a) bipolo lineare N contenente elementi
+attivi; b) condizioni del bipolo N per determinare il segnale del generatore di corrente
+equivalente iN (t); c) bipolo equivalente di Norton.
+2.4  Quadripoli
+In una rete N con quattro morsetti di collegamento con l'esterno, come nella Fig.
+XVII.2.5a, con tutti i suoi elementi LTI, senza generatori indipendenti, e con tutti i com-
+ponenti che immagazzinano energia all'istante iniziale (t  0) scarichi (stato iniziale zero),
+se per qualsiasi t > 0 si ha i1'  i1, i2'  i2, la rete può essere considerata come un doppio
+bipolo o quadripolo. Le uniche variabili prese in considerazione in un quadripolo sono le
+variabili delle porte: u1, u2, il e i2, e il quadripolo è rappresentato come nella Fig.
+XVII.2.5b. In questa configurazione, la porta individuata da 1 e 1' è chiamata porta
+d'ingresso, ed ha tensione u1 e corrente il; la porta individuata da 2 e 2' è chiamata porta
+d'uscita, ed ha tensione u2 e corrente i2. Solo a queste porte possono essere collegati gene-
+ratori indipendenti.
+Fig. XVII.2.5   Rappresentazione: a) di una rete LTI a quattro morsetti; b) di un doppio
+bipolo; c) di un dispositivo a tre morsetti come doppio bipolo.
+Alcuni dispositivi a tre morsetti, come i transistor, in condizioni opportune, si compor-
+tano come quadripoli. Ad esempio, per il transistor a base comune della Fig. XVII.2.5c, il
+morsetto di base (nodo 3) è collegato all'ingresso ed all'uscita dal cortocircuito 1', 2'.
+N
+Rete
+lineare
+A
+A'
+i(t)
+u(t)
+Carico
+a)
+N
+Rete
+lineare
+A
+A'
+i0(t)
+b)
+Rete
+lineare
+A
+A'
+i(t)
+u(t)
+Carico
+Neq
+Rete
+equi-
+A
+A'
+i(t)
+u(t)
+Carico
+valente
+Bipolo equivalente
+di Norton
+c)
+N
+iN(t)
+N
+1
+1'
+2
+2'
+u21
+u2'1'
+u11'
+u22'
+i1
+i1'
+i2
+i2'
+a)
+N
+1
+1'
+2
+2'
+u1
+u2
+i1
+i1
+i2
+i2
+b)
+1
+1'
+2
+2'
+u1
+u2
+i1
+i1
+i2
+i2
+c)
+3
+ib
+
+[PAG 1613]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-13
+2.5  Funzioni di trasferimento
+A)  Definizione
+In una rete LTI, con condizioni iniziali nulle (ovvero, all'istante t  0, gli elementi
+induttivi e capacitivi del circuito non hanno immagazzinato energia), si scelgono quattro
+nodi della rete in modo che possa essere considerata un doppio bipolo (quadripolo). Si
+collegano alla porta d'ingresso del doppio bipolo un generatore indipendente di tensione o
+di corrente in regime sinusoidale a frequenza variabile (0   ), e si considera la
+risposta allo stato zero della rete (tensione o corrente alla porta di uscita). Sperimental-
+mente si determina la funzione di trasferimento (FdT) definita come il rapporto fra la
+risposta allo stato zero della rete e il segnale d'ingresso (FdT = risposta della rete /
+segnale d'ingresso). Correnti e tensioni, a causa della frequenza variabile dei generatori,
+non si esprimono con fasori, ma con opportune funzioni dipendenti dalla frequenza com-
+plessa s, chiamate trasformate di Laplace. In regime sinusoidale, si indicano le trasfor-
+mate di Laplace delle tensioni e delle correnti alle porte di ingresso e di uscita,
+rispettivamente, con: Ui(j), Ii(j), Uu(j), Ii(j). Si hanno i seguenti quattro tipi di FdT.
+(XVII.2.6)
+(XVII.2.7)
+(XVII.2.8)
+(XVII.2.9)
+La FdT Av(j) è chiamata guadagno di tensione; la FdT Zm(j) è chiamata transimpe-
+denza o impedenza di trasferimento o impedenza mutua; la FdT Ym(j) è chiamata tran-
+sammettenza o ammettenza di trasferimento o ammettenza mutua; la FdT Ai(j) è
+chiamata guadagno di corrente.
+Esempio
+Determinare la FdT Ai(j), guadagno di corrente, del circuito RLC parallelo della Fig.
+XVII.2.6, considerando come risposta la corrente nel resistore.
+Fig. XVII.2.6   Circuito RLC parallelo.
+I nodi 1 e 1', individuano la porta di ingresso, mentre i nodi 2 e 2', individuano la porta
+di uscita.
+Av j
+
+
+Uu j
+
+
+Ui j
+
+
+------------------
+=
+Zm j
+
+
+Uu j
+
+
+Ii j
+
+
+------------------
+=
+Ym j
+
+
+Iu j
+
+
+Ui j
+
+
+-----------------
+=
+Ai j
+
+
+Iu j
+
+
+Ii j
+
+
+----------------
+=
+1
+1'
+2
+2'
+iS
+iR
+R
+uR
+C
+L
+iS = I cos(t +)
