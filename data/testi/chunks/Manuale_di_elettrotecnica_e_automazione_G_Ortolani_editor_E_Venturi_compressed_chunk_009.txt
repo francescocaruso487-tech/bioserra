@@ -1,0 +1,1795 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 9/116 ===
+Chars: 45,000 | Offset: 352,922
+
+
+
+[PAG 201]
+CHIMICA 
+II-23
+–  sali doppi: sono formati dall’unione di due sali semplici
+Esempi.
+NaKSO4 = solfato di sodio e di potassio
+CaMg(CO3)2 = carbonato doppio di calcio e magnesio
+3   GOVERNO DELLE REAZIONI CHIMICHE
+3.1  Velocità di reazione ed equilibrio chimico. Grandezze termodinamiche
+La velocità di una reazione è la misura della variazione della concentrazione dei rea-
+genti o dei prodotti nell’unità di tempo
+(II.3.1)
+dove k = costante di velocità.
+La velocità di una reazione può dipendere da:
+–  natura dei reagenti: le reazioni ioniche avvengono quasi istantaneamente. L’ener-
+gia di attivazione è l’energia richiesta per la formazione del complesso attivato; 
+–  concentrazione: l’aumento di concentrazione fa aumentare il numero di collisioni 
+fra i reagenti;
+–  pressione: solo se le sostanze della reazione sono gassose;
+–  superficie: aumentando la superficie aumenta il numero delle molecole superficiali;
+–  temperatura: un aumento di temperatura fa aumentare gli urti fra i reagenti;
+–  catalisi: il catalizzatore abbassa l’energia di attivazione della reazione, rimanendo 
+chimicamente immutato.
+La legge dell’azione di massa o legge dell’equilibrio chimico afferma che ad una data 
+temperatura costante il rapporto tra il prodotto delle concentrazioni molari dei prodotti 
+della reazione elevate ai propri coefficienti stechiometrici, e il prodotto delle concentra-
+zioni molari, elevate anch’esse ai propri coefficienti stechiometrici, è costante.
+Se la reazione è in equilibrio:
+con v1 = v2 
+(II.3.2)
+Se Ke 1 la concentrazione dei prodotti è maggiore della concentrazione dei reagenti; 
+la reazione è spostata verso destra;
+velocità = k · concentrazione
+mA
+nB
+sC
+rD
+
+
+
+v1
+k1
+A
+m
+B
+n
+
+
+=
+v2
+k2
+C
+
+s
+D
+
+
+
+
+r
+=
+k1
+A
+m
+B
+
+
+n
+
+k2
+C
+
+s
+D
+
+
+
+
+r
+=
+k1
+k2
+----
+C
+
+s
+D
+
+
+
+A
+m
+B
+n
+
+----------------------------
+r
+=
+k1
+k2
+----
+Ke
+costante di equilibrio
+=
+=
+
+[PAG 202]
+II-24
+CHIMICA
+Se Ke 1 la concentrazione dei prodotti è minore della concentrazione dei reagenti, la 
+reazione è spostata verso sinistra;
+Il principio dell’equilibrio mobile di Le Chatelier afferma che, se ad un sistema chiuso 
+in equilibrio viene applicata una perturbazione, l’equilibrio si sposta in modo da contrap-
+porsi alla perturbazione stessa.
+La termodinamica fornisce i criteri generali per stabilire il verso di una trasformazio-
+ne chimica, in base ad alcune grandezze macroscopiche, dette funzioni di stato: energia 
+interna (U), entalpia (H), entropia (S), ed energia libera (G).
+L’energia interna si ottiene sommando l’energia cinetica e potenziale delle particelle 
+che costituiscono il sistema ed è la quantità di calore scambiata a volume costante in una 
+reazione chimica. 
+L’entalpia è la quantità di calore scambiata a pressione costante in una reazione chi-
+mica.
+H°f = entalpia di formazione in condizioni standard (p = 1 atm; T = 298 K)
+Esempio. Calcolare la variazione di entalpia per la reazione di decomposizione di 
+BaCO3 in BaO e CO2 e precisare il tipo di reazione.
+Tab. II.3.1   Entalpie di formazione composti inorganici (H°f)
+H2O gas
+57,79
+AgCl solido
+30,36
+H2O liquido
+68,32
+AgBr solido
+23,8
+H2O2 gas
+32,53
+AgI   solido
+14,9
+O3 gas
+ 34,0
+CaO  solido
+151,8
+HCl gas
+22,06
+Ca(OH)2solido
+235,6
+HBr gas
+8,66
+CaCO3   solido
+288,4
+HI gas
+6,2
+BaO       solido
+133,5
+SO2 gas
+70,96
+BaCO3   solido
+290,8
+So3 gas
+94,45
+BaSO4   solido
+345,3
+H2S gas
+4,81
+Fe2O3    solido
+196,5
+N2O gas
+19,49
+Al2O3    solido
+399,1
+NO gas
+21,6
+SiO2      solido
+209,9
+NO2 gas
+8,09
+CuO      solido
+37,6
+NH3 gas
+11,04
+Cu2O     solido
+40,4
+CO gas
+26,41
+ZnO       solido
+83,2
+CO2 gas
+94,05
+ZnS        solido
+48,5
+H = H prodotti - H reagenti
+
+[PAG 203]
+CHIMICA 
+II-25
+Risoluzione. Dalla tabella precedente i valori di entalpia di formazione sono:
+BaCO3 = 290,8 kcal/mol
+BaO = 133,5 kcal/mol
+CO2 = 94,05 kcal/mol
+Si ha H reazione = (133,5 94,05)  (290,8) = + 63,25 kcal.
+Il valore positivo indica che la reazione è endotermica.
+L’entropia è la quantità di calore scambiata reversibilmente dal sistema ad una data 
+temperatura.
+In unità entropiche (ue) cioè cal/K o J/K.
+Esprime il grado di disordine di un sistema.
+L’energia libera è il lavoro massimo effettuabile da un sistema.
+G < 0: reazione spontanea,
+G = 0: reazione all’equilibrio,
+G > 0: reazione non spontanea.
+3.2  Acidi e basi: definizioni ed equilibri in soluzione. pH.
+Nel 1923 Broensted e Lowry affermarono che in una reazione chimica gli acidi sono 
+sostanze capaci di donare protoni H+, mentre le basi sono sostanze capaci di accettare pro-
+toni H+. Sempre secondo questa teoria non esistono in assoluto sostanze a comportamento 
+unico, ma tutto dipende dalla maggiore o minore affinità per gli ioni H+ delle varie specie 
+chimiche che vengono ad incontrarsi nel corso delle reazioni.
+Non tutti gli acidi e non tutte le basi si trovano completamente ionizzati in soluzione 
+acquosa:
+Tab. II.3.2   Entalpie di formazione composti organici (H°f)
+metano CH4(g)
+17,89
+etilene C2H4(g)
+12,5
+etano C2H6(g)
+20,24
+acetilene C2H2(g)
+54,19
+propano C3H8(g)
+24,82
+1-butene C4H8(g)
+0,28
+n-butano C4H10(g)
+29,81
+cis-2-butene C4H8(g)
+1,36
+isobutano C4H10(g)
+31,45
+trans-2-butene C4H8(g)
+2,4
+n-pentano C5H12(g)
+35,0
+isobutene C4H8(g)
+3,34
+isopentano C5H12(g)
+36,92
+1,3-butadiene C4H6(g)
+26,75
+neopentano C5H12(g)
+39,67
+cloruro di metile CH3Cl
+19,6
+metanolo CH3OH(l)
+57,02
+etanolo C2H5OH(l)
+66,35
+acido acetico CH3COOH(l)
+116,4
+benzene C6H6(l)
+11,72
+cloroformio CHCl3(l)
+31,5
+tetracloruro di carbonio CCl4(l)
+33,3
+S = entropia prodotti  entropia reagenti
+G = H  TS
+
+[PAG 204]
+II-26
+CHIMICA
+–  gli acidi e le basi forti in soluzione acquosa sono completamente ionizzati;
+–  gli acidi e le basi deboli in soluzione acquosa sono parzialmente ionizzati.
+Il grado di dissociazione, indicato con  è il rapporto tra il numero di molecole disso-
+ciate e il numero di molecole iniziali ed è sempre compreso fra 0 (elettrolita debole) e 1 
+(elettrolita forte). Un acido che contiene più di un atomo di H ionizzabile viene detto 
+acido poliprotico.
+Quando l’acido o la base sono deboli, fra forma indissociata e forma dissociata si viene a 
+stabilire un equilibrio per il quale esiste una costante detta costante di ionizzazione: 
+per gli acidi deboli  
+per le basi deboli
+Tab. II.3.3   Costanti di ionizzazione di acidi e basi
+Acidi
+Acidi
+Basi
+HCOOH
+1,69·104
+HF
+3,53·104
+NH4OH
+1,77·105
+CH3COOH
+1,76·105
+HNO2
+4,60·104
+NH20H
+1,07·108
+CH2ClCOOH
+1,40·103
+H3PO4
+7,52·103
+C6H5NH2
+4,60·1010
+CHCl2COOH
+3,32·102
+H2PO4
+
+6,23·108
+NH2NH2
+1,70·106
+CCl3COOH
+2,00·101
+HPO4
+
+2,20·1013
+C2H5NH2
+5,61·104
+HOOCCOOH
+5,90·102
+H3PO3
+1,00·102
+HOOCCOO
+6,40·105
+H2PO3
+
+2,60·107
+CH3CH2COOH
+1,34·105
+H3PO2
+7,94·102
+C6H5COOH
+6,46·105
+H2S
+1,32·107
+H3BO3
+7,30·1010
+HS
+1,10·1013
+H2BO3
+
+1,80·1013
+HSO4
+
+1,20·102
+HBO3
+2
+1,60·1014
+H2SO3
+1,54·102
+H2CO3
+4,30·107
+HSO3
+
+1,02·107
+HCO3
+
+5,61·1011
+HBrO
+2,06·109
+HCN
+4,93·1010
+HClO  
+2,95·105
+Ka
+H+
+
+
+A
+
+
+
+HA
+
+
+-----------------------------
+=
+Kb
+BH+
+
+
+OH
+
+
+
+B
+
+--------------------------------------
+=
+
+[PAG 205]
+CHIMICA 
+II-27
+L’acqua pura si ionizza debolmente, secondo questa reazione:
+(II.3.3)
+Il prodotto [H+][OH] è chiamato prodotto ionico dell’acqua Kw e a temperatura 
+ambiente Kw = 1·1014.
+In acqua pura [H+] = [OH] = 10 7M.
+Per stabilire una scala di acidità si ricorre, per comodità, al pH, definito come il loga-
+ritmo decimale dell’inverso della concentrazione degli ioni H+.
+(II.3.4)
+Per [H+] = 101 si ha pH = 0: soluzione è acida.
+Per [H+] = 107 si ha pH = 7: soluzione è neutra.
+Per [H+] = 1014si ha pH = 14: soluzione è basica. 
+Gli indicatori sono coloranti organici di origine naturale, acidi o basi deboli che assu-
+mono colori diversi nella forma associata e dissociata. Disciolti in piccolissime quantità in 
+una soluzione, sono in grado, assumendo colorazioni precise, di indicare i valori di pH 
+della soluzione stessa.
+Le soluzioni tampone hanno la proprietà di non modificare significativamente il pH 
+della soluzione quando vengono loro aggiunte piccole quantità di acido o di base. 
+Esempio. Come funziona il sistema tampone.
+CH3COOH/CH3COONa
+Tab. II.3.4   Indicatori e loro campo di viraggio
+Indicatore
+Campo di viraggio e colorazione
+violetto di metile
+0,2 (giallo) - 3,2 (blu-viola)
+blu timolo
+1,2 (rosso) - 2,8 (giallo
+metilarancio
+3,1 (rosso) - 4,4 (giallo)
+verde bromocresolo
+3,8 (rosso) - 5,4 (blu)
+rosso di metile
+4,2 (rosso) - 6,3 (giallo)
+rosso bromofenolo
+5,3 (giallo) - 6,9 (rosso)
+tornasole
+5,0 (rosso) - 8,0 (blu)
+blu di bromotimolo
+6,1 (giallo) - 7,5 (blu)
+rosso fenolo
+6,9 (giallo) - 8,4 (rosso)
+rosso cresolo
+7,3 (giallo) - 8,9 (rosso)
+blu timolo
+8,1 (giallo) - 9,5 (blu)
+fenolftaleina
+8,3 (incolore) - 10 (rosso)
+timolftaleina
+9,3 (incolore) - 10,6 (blu)
+giallo alizarina
+10 (giallo) - 12 (viola)
+2
+H O
+H
+OH
+
+
+
+
+pH = -log[H+]
+
+[PAG 206]
+II-28
+CHIMICA
+a) aggiunta di un acido
+b) aggiunta di una base
+Nello stesso anno della teoria di Broensted-Lowry, Lewis definì acido una sostanza in 
+grado di accettare un doppietto di elettroni, mentre una base è una sostanza in grado di 
+cedere un doppietto di elettroni.
+Gli acidi di Lewis vengono comunemente usati nella reazione di Friedel-Croft per sin-
+tetizzare alcuni composti organici (cloruro di alluminio, cloruro di ferro, cloruro di 
+zinco).
+In una soluzione satura si stabilisce un equilibrio fra gli ioni in soluzione e il solido 
+presente come corpo di fondo.
+(II.3.5)
+(II.3.6)
+Il termine Ke[AgBr] è costante ed è detto costante del prodotto di solubilità indicato 
+con Kps.
+Tab. II.3.5   Costanti del prodotto di solubilità (a 25 °C)
+AgBr
+7,70·1013
+CaCrO4
+2,57·109
+AgCl
+1,56·1010
+CuS
+1,00·1035
+AgI
+1,50·1016
+Fe(OH)3
+1,00·1035
+Ag2CO3
+6,15·1012
+FeS
+3,70·1019
+Ag2CrO4
+9,00·1012
+Mg(OH)2
+1,80·1011
+Al(OH)3
+1,26·1033
+PbCl2
+1,62·105
+BaCO3
+8,10·1010
+PbS
+8,40·1028
+BaSO4
+1,08·1010
+PbSO4
+1,90·108
+CaCO3
+8,70·109
+ZnS
+1,20·1023
+CH3COONa
+H+
+CH3COOH
+Na+
++
+
++
+CH3COOH
+OH
+CH3COO
+H2O
++
+
++
+ N       +    H     O     H       N     H   +  OH   
+base di Lewis
+H
+H
+H
+acido di Lewis
+H
+H
+H
++
+( )s
+AgBr
+Ag
+Br
+
+
+
+
+Ke
+Ag+
+
+
+Br-
+
+
+
+AgBr
+
+
+---------------------------------
+=
+Ke AgBr
+
+
+Ag+
+
+
+Br-
+
+
+
+=
+
+[PAG 207]
+CHIMICA 
+II-29
+3.3  Reazioni di ossidoriduzione
+In generale si definisce ossidoriduzione un processo in cui vi è una specie chimica che 
+acquista elettroni a spese di un’altra specie chimica che li perde. In particolare, per ossi-
+dazione si intende un processo di cessione di elettroni e al contrario, per riduzione si 
+intende un acquisto di elettroni. Chi acquista elettroni (specie ridotta) è definito ossidante, 
+mentre chi dona elettroni (specie ossidata) è definito riducente.
+Si definisce numero di ossidazione la carica che, in un composto, ha un atomo quando 
+si assegnano gli elettroni di legame all’elemento più elettronegativo.
+–  In una reazione di ossidoriduzione il numero di elettroni acquistati nella riduzione 
+deve essere uguale al numero di elettroni ceduti nell’ossidazione.
+–  La specie chimica che cede elettroni, cioè riducente, aumenta il suo numero di 
+ossidazione, mentre la specie chimica che acquista elettroni, cioè ossidante, diminuisce il 
+suo numero di ossidazione.
+Le reazioni di ossidazione e di riduzione non possono avvenire separatamente, risulta 
+necessario quindi bilanciare non solo le masse dei reagenti e dei prodotti, ma anche le ca-
+riche coinvolte.
+La tabella seguente riporta le sequenze dei due metodi utilizzati per il bilanciamento 
+delle reazioni redox.
+Esempio. L’Ag reagisce con l’HNO3 per produrre AgNO3, NO e H2O. Scrivere e bilan-
+ciare la reazione redox.
+Risoluzione:.
+Tab. II.3.6   Metodi per il bilanciamento di reazioni REDOX
+Metodo del numero di ossidazione
+–  Scrivere i numeri di ossidazione sopra i simboli degli elementi che cambiano il 
+loro numero di ossidazione.
+–  Prendere quantità tali di riducenti e ossidanti che gli elettroni perduti dagli uni 
+siano acquistati dagli altri.
+–  Bilanciare gli ioni metallici che non cambiano il numero di ossidazione.
+–  Bilanciare gli anioni che non cambiano il numero di ossidazione.
+–  Bilanciare gli idrogenioni che non cambiano il numero di ossidazione.
+Metodo delle semireazioni
+–  Scrivere le reazioni in forma ionica.
+–  Considerare le reazioni senza gli ioni che non partecipano all’ossidoriduzione.
+–  Considerare le semi-reazioni cioè le due parti che riguardano il processo di 
+ossidazione e quello di riduzione.
+–  Bilanciare i membri di ogni semi-reazione aggiungendo H+ e H2O se l’ambiente è 
+acido oppure H e H2O se l’ambiente è basico.
+–  Bilanciare le cariche di ogni semi-reazione.
+–  Moltiplicare le semi-reazioni per coefficienti che rendono uguali il numero di 
+elettroni ceduti e acquistati.
+–  Sommare le due semi-reazioni eliminando algebricamente le specie che com-
+paiono in entrambi i membri.
+–  Completare l’equazione introducendo le specie ioniche non coinvolte.
+Ag
+HNO3
+AgNO3
+NO
+H2O
++
++
+
++
+0        +5           +1           +2
+
+[PAG 208]
+II-30
+CHIMICA
+La semi-reazione di riduzione è:
+La semi-reazione è:
+Il minimo comune multiplo degli elettroni è 3:
+Combinando e semplificando le due semi-reazioni si ottiene:
+Talvolta può accadere che una stessa sostanza si ossidi e si riduca contemporanea-
+mente: tale reazione è detta dismutazione.
+3.4  Elettrochimica
+Gli elettroliti sono sostanze che in soluzione acquosa conducono corrente.
+In teoria ogni reazione redox può essere utilizzata per produrre elettricità. Tutti i me-
+talli a contatto con la soluzione di un loro sale, mandano in soluzione ioni positivi, cari-
+candosi negativamente. Il fenomeno avviene in maniera diversa per i diversi metalli e 
+quindi le lastre dei metalli assumono una quantità di carica negativa diversa, detta poten-
+ziale elettrico differente.
+Una pila è un’apparecchiatura all’interno della quale si svolge una reazione redox, 
+dove le due semi-reazioni sono tenute separate in due diversi semielementi. Il ponte 
+salino è il sistema che consente il collegamento elettrico fra due soluzioni separate evi-
+tando che esse si mescolino.
+Fig. II.3.1   Pila Daniell.
+Ogni elettrodo di una pila ha una sua propria capacità di catturare gli elettroni detta poten-
+ziale di riduzione. Per confrontare questi potenziali è necessario costruire una scala di 
+riferimento, ottenendo così i potenziali standard, che, come si vede nella tabella che 
+segue, sono riferiti a condizioni particolari. Tuttavia grazie all’equazione di Nernst si può 
+mettere in relazione il voltaggio di una cella con le condizioni in cui la cella opera: 
+(II.3.7)
+NO3
+
+3e
+4H+
+NO
+2H2O
++
+
++
++
+Ag
+Ag+
+e
++
+
+3Ag
+3Ag+
+3e
++
+
+NO3
+
+4H+
+3Ag
+NO
+2H2O
+3Ag+
++
++
+
++
++
+V
+voltmetro
+rame
+zinco
+soluzione ZnSO4
+soluzione CuSO4
+_
++
+ponte salino KCl
+lo zinco si ossida
+il rame si riduce
+2
+2
+Zn
+Zn
+e
+
+
+
+
+2
+2
+Cu
+e
+Cu
+
+
+
+
+E
+E
+RT
+nF
+------
+rid
+
+a
+ox
+
+b
+--------------
+ln
+–
+=
+
+[PAG 209]
+CHIMICA 
+II-31
+Tab. II.3.7   Potenziali standard di riduzione E° (concentrazione ionica 1M in acqua a 
+25°C e 101,325 kPa)
+Li++eLi
+3,040 SO4
+2+4H++2e H2SO3+H2O
+0,158
+K++eK
+2,924 Cu2++eCu+
+0,159
+Cs++eCs
+2,923 HAsO2+3H++3eAs+2H2O
+0,248
+Ba2++2eBa
+2,92 Bi3++3eBi
+0,3172
+Sr2++2eSr
+2,89 Cu2++2eCu
+0,340
+Ca2++2eCa
+2,84 O2+2H2O+4e4OH
+0,401
+Na++eNa
+2,713 Cu++eCu
+0,520
+Mg2++2eMg
+2,356 I2+2e2I
+0,5355
+Ce3++3eCe
+2,34 H3AsO4+2H++2eHAsO2+2H2O
+0,560
+H2+2e2H
+2,25 O2+2H++2eH2O2
+0,695
+Al3++3eAl
+1,676 Fe3++eFe2+
+0,771
+Ti2++2eTi
+1,63 NO3-+2H++eNO2+H2O
+0,775
+Mn2++2eMn
+1,18 Hg2
+2++2e2Hg
+0,796
+Cr2++2eCr
+0,90 Ag++eAg
+0,799
+2H2O+2eH2+2OH
+0,828 O2+4H++4e2H2O
+0,815
+Zn2++2eZn
+0,762 NO3
++2H++2eNO2
++H2O
+0,835
+Cr3++3eCr
+0,74 Hg2++2eHg
+0,8535
+2CO2+2H++2eH2C2O4
+0,475 2Hg2++2eHg2
+2+
+0,911
+S+2eS2
+0,447 NO3
++4H++3eNO+2H2O
+0,957
+Fe2++2eFe
+0,44 Br2+2e2Br
+1,0652
+Cr3++eCr2+
+0,424 O2+4H++4e2H2O
+1,229
+2H2O+2eH2+2OH
+0,414 Cl2+2e2Cl
+1,358
+Cd2++2eCd
+0,402 Au3++2eAu+
+1,36
+PbI2+2ePb+2I
+0,365 Cr2O7
+2+14H++6e2Cr3++7H2O
+1,36
+PbSO4+2ePb+2SO4
+2
+0,350 MnO4
++8H++5eMn2++4H2O
+1,51
+Co2++2eCo
+0,277 Au3++3eAu
+1,52
+H3PO4+2H++2eH3PO3+H2O
+0,27 2HBrO+2H++2eBr2+2H2O
+1,604
+
+[PAG 210]
+II-32
+CHIMICA
+Tab. II.3.7 Segue
+–  R è la costante universale dei gas;
+–  T è la temperatura assoluta;
+–  n è il numero di elettroni in gioco nella semi - reazione;
+–  F è la quantità di carica di una mole di elettroni.
+Alla temperatura di 25°C i valori di R, T, F si possono inglobare in un’unica costante 
+e il fattore di conversione da logaritmo naturale a quello decimale, pertanto:
+(II.3.8)
+Si indica con il nome elettrolisi la serie di fenomeni che si verificano in una soluzione 
+acquosa contenente elettroliti oppure in un liquido formato da elettroliti fusi, quando ci 
+sia un passaggio di corrente attraverso tali liquidi, con trasformazione di energia elettrica 
+in energia chimica.
+Deve esistere una rigorosa proporzionalità tra le quantità di sostanze trasformate e la 
+quantità di elettricità che ha attraversato la superficie degli elettrodi e la soluzione. 
+Questa relazione è stabilita dalle due leggi di Faraday.
+1° legge di Faraday: la quantità di sostanza ossidata o ridotta ad un elettrodo è propor-
+zionale alla quantità di elettricità consumata.
+2° legge di Faraday: il passaggio di un faraday (96.500 coulomb) causa l’ossidazione 
+o la riduzione di 1 mole di una sostanza, divisa per il numero di elettroni scambiati nella 
+reazione.
+In un conduttore metallico l’intensità della corrente è sempre proporzionale alla diffe-
+renza di potenziale d.d.p. applicata ai suoi estremi.
+Le soluzioni di elettroliti presentano un comportamento diverso ed è quindi necessario 
+conoscere il potenziale o tensione di decomposizione, che dipende da vari fattori (natura 
+dell’elettrolita, sua concentrazione ecc.), e può essere considerato la somma del poten-
+ziale reversibile di decomposizione Er e la sovratensione Es.
+Il potenziale reversibile di decomposizione è il massimo valore f.e.m. di polarizzazio-
+ne (contro forza elettromotrice, che tende ad annullare la d.d.p., impedendo la circolazio-
+ne di corrente nel circuito).
+La sovratensione è la quantità di d.d.p. in eccesso, necessaria affinché il processo elet-
+trolitico possa avvenire.
+L’elettrolisi rappresenta una importante tecnica analitica e preparativa, anche su scala 
+industriale.
+Ni2++2eNi
+0,257 PbO2+SO4
+2+4H++2ePbSO4+2H2O
+1,6
+Sn2++2eSn
+0,136 H2O2+2H++2e2H2O
+1,763
+Pb2++2ePb
+0,125 Au++eAu
+1,83
+Hg2I2+2e2Hg+2I
+0,040 Co3++eCo2+
+1,92
+Fe3++3eFe
+0,04 S2O8
+2+2e2SO4
+2
+1,96
+2H++2eH2
+0,000 F2+2e2F
+2,87
+Sn4++2eSn2+
+0,154
+E
+E
+0 059
+
+n
+---------------
+rid
+
+a
+ox
+
+b
+--------------
+log
+–
+=
+
+[PAG 211]
+CHIMICA 
+II-33
+Esempi. Preparazione acqua ossigenata, ipoclorito di sodio, sodio, purificazione del rame 
+e altro.
+4    CHIMICA INORGANICA DESCRITTIVA
+4.1  Chimica inorganica descrittiva per alcuni elementi
+–  Elementi e composti del gruppo IA: Li, Na, K, Rb, Cs, Fr.
+Sono metalli molto reattivi, si presentano come solidi bianco-argentei, teneri, che 
+imbruniscono facilmente all’aria; hanno la più bassa elettronegatività ed altissima condu-
+cibilità elettrica.
+Il sodio è uno degli elementi più diffusi in natura; i suoi composti più importanti sono 
+i cloruri; viene impiegato nell’industria alimentare, per l’alimentazione dell’uomo e degli 
+animali domestici. È usato nell’industria della carta, dei saponi, dei detersivi, dei vetri.
+Il potassio, anch’esso molto abbondante in natura, è presente soprattutto nei silicati.
+–  Elementi e composti del IIA: Be, Mg, Ca, Sr, Ba, Ra.
+Sono molto leggeri, reattivi e caratterizzati da bassa elettronegatività. Non esistono 
+liberi in natura ma combinati in composti, in gran parte costituiti da ioni.
+Il magnesio è relativamente abbondante nella crosta terrestre; viene impiegato per la 
+produzione di leghe metalliche leggere ad alta resistenza, utilizzate nell’industria aero-
+nautica. Le lampadine dei flash contengono spesso un filamento di magnesio.
+–  Elementi e composti del IIIA: B, Al, Ga, In, Tl.
+Presentano proprietà chimiche intermedie tra quelle dei metalli e quelle dei non metalli.
+L’alluminio è l’elemento più importante del gruppo, è estremamente leggero, tenero, 
+pieghevole, ottimo conduttore di elettricità e di calore e resistente all’attacco di agenti 
+atmosferici; viene utilizzato nella formazione di leghe estremamente leggere e resistenti.
+–  Elementi e composti del IVA: C, Si, Ge, Sn, Pb.
+Carbonio e silicio tendono a reagire formando legami covalenti. Stagno e piombo pre-
+sentano invece, caratteri decisamente metallici. 
+Per il carbonio si veda il Cap. 5.
+Il silicio è il secondo elemento in ordine di abbondanza presente sulla crosta terrestre; 
+viene utilizzato in moltissime industrie, dall’elettronica a quelle delle porcellane e dei 
+vetri.
+–  Elementi e composti del VA: N, P, As, Sb, Bi.
+Presentano carattere non metallico.
+L’azoto si trova soprattutto nell’aria atmosferica; in natura esiste un solo minerale di 
+azoto, il nitrato di sodio, utilizzato come concime. Viene usato per la sintesi di composti 
+di interesse industriale: dall’ammoniaca ai fertilizzanti.
+Il fosforo è un elemento estremamente reattivo; sotto forma di fosfati viene utilizzato 
+come fertilizzante.
+–  Elementi e composti del VIA: O, S, Se, Te, Po.
+Hanno spiccato carattere di non metalli.
+L’ossigeno è l’elemento più abbondante della crosta terrestre; è uno degli elementi più 
+elettronegativi e più reattivi. 
+Lo zolfo non è un elemento molto abbondante in natura, serve per produrre acidi e sali 
+con numerosi utilizzi: dalla radioscopia ai fertilizzanti.
+–  Elementi e composti del VIIA: F, Cl, Br, I, At.
+Hanno caratteristiche non metalliche e formano facilmente sali.
+
+[PAG 212]
+II-34
+CHIMICA
+Il fluoro è l’elemento chimico più elettronegativo e più reattivo; trova applicazione 
+nella preparazione dei composti organici sintetici come il freon.
+Il cloro, molto solubile in acqua, permette di produrre acido cloridrico impiegato 
+dall’industria tessile a quella dei prodotti organici.
+–  Elementi e composti dell’ VIIIA: He, Ne, Ar, Kr, Xe, Rn.
+Per la loro configurazione elettronica sono molto stabili; possono essere utilizzati sia 
+per riempire i bulbi delle lampadine sia per riempire gli aerostati.
+–  Elementi di transizione.
+Tendono a comportarsi come metalli; quasi tutti hanno una rilevante importanza indu-
+striale.
+Il rame presenta elevata conducibilità elettrica e termica.
+Il mercurio scioglie quasi tutti i metalli.
+Il cromo è un costituente dell’acciaio inossidabile.
+Il ferro è il più importante dal punto di vista industriale.
+5    PRINCIPI GENERALI DI CHIMICA ORGANICA
+5.1  Legami ed ibridazioni del carbonio in chimica organica
+La chimica organica viene definita come la chimica dei composti del carbonio. I com-
+posti organici, a differenza di quelli inorganici, hanno proprietà simili e il loro costituente 
+principale è un elemento molto versatile. È infatti in grado di ibridare i propri orbitali. 
+L’ibridazione è il mescolamento di orbitali per ottenerne altri con uguale forma ed ener-
+gia.
+La configurazione elettronica del carbonio è
+I tipi di ibridazione sono:
+–   ibridazione sp3: molecola satura, presenza di legami semplici;
+–   ibridazione sp2: molecola insatura, presenza di un doppio legame;
+–   ibridazione sp: molecola insatura, presenza di un triplo legame.
+Una successione di atomi di carbonio legati tra loro prende il nome di catena, che può 
+contenere legami semplici, doppi o tripli; si possono avere catene aperte e chiuse; le 
+prime si distinguono in dritte e ramificate, nel secondo caso si creano delle configurazioni 
+ad anello o cicliche. 
+Nei composti organici perciò la formula di struttura è fondamentale. Infatti questi 
+composti possono essere isomeri, cioè sostanze che hanno la stessa formula bruta, ma 
+diversa formula di struttura. 
+Il modo migliore per descrivere le molecole organiche è la formula razionale, che evi-
+denzia il punto caratteristico della molecola.
+5.2   Classificazione dei composti organici
+I composti organici si possono classificare secondo tre criteri:
+–   tenendo conto degli elementi: sostanze binarie (C, H); sostanze ternarie (C, H, O); 
+sostanze quaternarie (C, H, O e un altro elemento);
+–  tenendo conto della forma della molecola: composti alifatici o della serie grassa, 
+possono essere ciclici o aciclici; aromatici con struttura ad anello; eterociclici con, 
+nell’anello, un atomo diverso da quello del carbonio;
+–   tenendo conto del  gruppo funzionale che li caratterizza.
+1s2 2s2 2p2
+
+[PAG 213]
+CHIMICA 
+II-35
+Tab. II.5.1   Classi principali dei composti organici
+Classe
+Caratteristiche principali
+1. Paraffine, o idrocarburi saturi, o alcani CnH2n+2
+Composti scarsamente reattivi. 
+Vengono usati come combusti-
+bili. Si trovano nel petrolio. Gli 
+omologhi superiori si ottengono 
+sostituendo atomi di idrogeno 
+con radicali metile CH3. La rea-
+zione di combustione con ossi-
+geno porta alla formazione di 
+CO2 e H2O.
+CH4 metano
+C2H6 etano
+       
+2. Idrocarburi ciclici saturi o cicloparaffine CnH2n
+Si trovano nel petrolio e ser-
+vono per aumentare il numero 
+di ottani nelle benzine. I cicloal-
+cani danno reazioni analoghe a 
+quelle degli alcani.
+C5H10 ciclopentano
+    
+3. Idrocarburi insaturi: olefine o alcheni Cn H2n e idrocarburi 
+acetilenici CnH2n-2
+Le olefine servono per ottenere 
+polimeri, l’acetilene serve nella 
+saldatura ossiacetilenica. Non 
+sono composti molto stabili. Gli 
+omologhi superiori si ottengono 
+sostituendo un idrogeno con un 
+radicale CH3.
+C2H4 etilene o etene
+       
+4. Dieni
+Servono soprattutto per ottenere 
+polimeri, in particolare gomme 
+sintetiche.
+C4H6 butadiene
+5. Idrocarburi aromatici
+Contengono 
+il 
+caratteristico 
+anello del benzene. Sono pre-
+senti nei carboni fossili e ser-
+vono come carburanti e come 
+solventi. Il benzene è di grande 
+importanza industriale, perché 
+impiegato in molte sintesi.
+C6H6 benzene
+   
+6. Composti organici alogenati
+ bromobenzene
+ cloruro di metile
+ cloroformio
+Sono reagenti molto versatili. 
+Rivestono una notevole impor-
+tanza come insetticidi, refrige-
+ranti, erbicidi ed estintori.
+C
+H
+H
+H
+H
+C
+H
+H
+C
+H
+H
+H
+H
+CH2
+CH2
+CH2
+CH2
+CH2
+C
+H
+H
+C
+H
+H
+CH2
+CH
+CH
+CH2
+CH
+CH
+CH
+CH
+CH
+CH
+C6H5
+Br
+CH3Cl
+CHCl3
+
+[PAG 214]
+II-36
+CHIMICA
+Tab. II.5.1 Segue
+Classe
+Caratteristiche principali
+7. Alcooli 
+ 
+R è un radicale alchilico o un radicale insaturo
+Possono essere considerati co-
+me prodotti di sostituzione del-
+l’acqua. 
+Sono molto meno volatili degli 
+idrocarburi, presentano punti di 
+fusione più elevati ed una mag-
+giore solubilità in acqua. 
+Sono usati in molti tipi di indu-
+strie (esplosivi, materie plasti-
+che, industrie farmaceutiche).
+alcool metilico           
+alcool etilico              
+glicerolo                     
+8. Fenoli 
+     R è un radicale aromatico
+Sono più polari degli alcooli e 
+quindi capaci di formare dei 
+forti legami ad idrogeno. 
+Si ossidano facilmente. 
+Sono importanti nell’industria 
+farmaceutica e nelle industrie di 
+materie plastiche. 
+Il fenolo è usato in così grandi 
+quantità che è stato necessario 
+disporre di molti metodi di sin-
+tesi.
+C6H5OH fenolo
+   
+9. Eteri 
+R1 e R2 sono radicali alchilici o aromatici
+Epossidi 
+Sono 
+composti 
+nei 
+quali 
+entrambi gli idrogeni della 
+molecola dell’acqua sono stati 
+sostituiti con gruppi alchilici o 
+arilici. 
+Sono più volatili degli alcooli. 
+Sono particolarmente inerti. 
+Sono molto utilizzati come ane-
+stetici e come solventi.
+etere dietilico     
+10. Ammine
+Sono associate attraverso lega-
+mi di idrogeno relativamente 
+deboli e quindi sono più volatili 
+degli alcooli, ma meno degli 
+idrocarburi.
+Sono molto importanti nell’in-
+dustria farmaceutica.
+ (primarie)
+ (secondarie)
+ (terziarie)
+    
+R       O
+H
+CH3
+OH         
+CH3
+CH2
+OH    
+CH2
+OH
+CH
+OH
+CH2
+OH
+R       O
+H
+CH
+C
+CH
+CH
+CH
+CH
+OH
+R1       O
+ R2
+R
+ R’
+O
+CH3
+CH2
+O
+CH2
+CH3
+R1
+NH2
+R1
+NH
+R2
+R1
+N
+R3
+R2
+CH3
+NH2
+metilammina
+
+[PAG 215]
+CHIMICA 
+II-37
+Tab. II.5.1 Segue
+Classe
+Caratteristiche principali
+11. Aldeidi                 
+Il gruppo carbonile è un gruppo 
+funzionale estremamente im-
+portante per la chimica organica 
+sintetica per la facilità di rea-
+zioni di addizione.
+Sono molto usate nell’industria 
+farmaceutica.
+                        
+  
+ aldeide formica                             aldeide acetica
+12. Chetoni              
+Contengono anch’essi il gruppo 
+carbonile. A differenza delle 
+aldeidi, i chetoni si ossidano 
+con maggiore difficoltà.
+Sono usati soprattutto come sol-
+venti organici.
+   acetone (dimetilchetone)
+13. Chinoni
+  
+  1,4 benzochinone
+A rigor di termini sono dei 
+dichetoni ciclici coniugati. La 
+più caratteristica e importante 
+reazione è la riduzione dei cor-
+rispondenti idrossidurati aroma-
+tici.
+Un’applicazione pratica si ha in 
+fotografia. Molte sostanze natu-
+rali posseggono strutture di tipo 
+chinonico (vitamina K1).
+Sono tutti colorati e infatti ser-
+vono come coloranti naturali.
+14. Acidi carbossilici     
+           
+Presentano punti di fusione ed 
+ebollizione più elevati di quelli 
+degli alcooli. I loro sali sono 
+solubili in acqua. Gli acidi a 
+basso peso molecolare hanno un 
+caratteristico odore pungente, 
+quelli da C4 a C8 sgradevole.
+Sono molto usati nelle industrie 
+farmaceutiche e alimentari.
+acido formico
+acido acetico
+C
+O
+H
+R
+C
+O
+H
+H
+C
+O
+H
+CH3
+R1
+C
+R2
+R1
+O
+CH3
+C
+CH3
+O
+CH
+C
+CH
+CH
+C
+O
+O
+CH
+C
+O
+H
+R
+C
+O
+OH
+H
+C
+O
+OH
+CH3
+
+[PAG 216]
+II-38
+CHIMICA
+Tab. II.5.1 Segue
+Una caratteristica di certe molecole organiche è quella di unirsi in gran numero per 
+formare lunghe catene di peso molecolare molto elevato dette macromolecole o polimeri. 
+I polisaccaridi e le proteine sono due esempi di polimeri naturali. La polimerizzazione 
+può essere eseguita anche in laboratorio, ottenendo dei polimeri artificiali.
+I campi di applicazione di questi nuovi materiali vanno dalle tecnologie nucleari, ai 
+componenti per elettrotecnica, dalle telecomunicazioni all’informatica, dall’aeronautica 
+all’edilizia non tradizionale.
+Classe
+Caratteristiche principali
+15. Esteri
+Si ottengono dalla reazione di 
+un acido carbonilico con un 
+alcool.
+In ambiente basico subiscono il 
+processo di saponificazione. I 
+grassi sono gli esteri della glice-
+rina con gli acidi grassi.
+  acetato di metile
+16. Ammidi
+Hanno punti di fusione ed ebol-
+lizione molto elevati come con-
+seguenza dei forti legami di 
+idrogeno.
+Sono utilizzate come fertiliz-
+zanti e nelle industrie di materie 
+plastiche.
+Le proteine, sostanze fonda-
+mentali per la vita, sono delle 
+poliammidi.
+  formammide
+Tab. II.5.2   Principali Polimeri e loro caratteristiche
+Nome 
+(nomi commerciali)
+Formule del monomero e del 
+polimero
+Caratteristiche
+1.  Polietilene                                
+ 
+Viene utilizzato per imbal-
+laggi, come isolante per cavi, 
+per nastri adesivi e rive-
+stimenti vari.
+2.  Propilene (moplen)                 
+ 
+Ha ottime proprietà mecca-
+niche e ha gli stessi impieghi 
+del polietilene.
+C
+O
+O
+R
+R’
+CH3C
+OCH3
+O
+C
+O
+NH2
+R
+H
+NH2
+O
+C
+C
+H
+H
+H
+H
+C
+CH2
+CH2
+CH2
+CH3
+CH
+CH2
+CH
+CH2
+CH2
+CH2
+CH3
+CH3
+
+[PAG 217]
+CHIMICA 
+II-39
+Tab. II.5.2 Segue
+Nome 
+(nomi commerciali)
+Formule del monomero e del 
+polimero
+Caratteristiche
+3.  Polistirolo                               
+ 
+Si usa come isolante, soprat-
+tutto in forma espansa.
+4.  Polivinilcloruro                          
+ 
+Si usa nel settore dell’isola-
+mento elettrico, in edilizia, 
+per imballaggi.
+5.  Polimetilacrilato (plexiglas)  
+ 
+Materiale molto resistente, u-
+tilizzato in meccanica, per fi-
+bre sintetiche, per film.
+6.  Poliammidi (nylon) 
+oppure  
+Materiale molto resistente; ha 
+lo stesso uso del polimetila-
+crilato.
+7.  Resine epossidiche 
+bisfenolo A + -epicloridrine
+Sono molto resistenti all’ac-
+qua e a molti reattivi chimici. 
+Si usano per rivestimenti, iso-
+lanti e per preparare adesivi.
+C6H5
+CH
+CH2
+CH
+CH2
+CH
+CH2
+C6H5
+C6H5
+C
+H
+H
+H
+Cl
+C
+CH
+CH2
+CH
+CH2
+Cl
+Cl
+CH2
+CH3
+COO CH3
+C
+CH2
+C
+CH2
+COO CH3
+CH3
+N
+(CH2)n
+C
+H
+O
+N
+H
+N
+(CH2)n
+C
+H
+O
+N
+H
+(CH2)n
+C
+O
+C6H4
+C
+C6H4
+CH3
+CH3
+O
+OCH2
+CH
+O
+CH2
+
+[PAG 218]
+II-40
+CHIMICA
+Tab. II.5.2 Segue
+BIBLIOGRAFIA
+ALTIERO R., Obiettivo Chimica, Editrice La Scuola, Brescia, 1988.
+AMORE C., DI DIO M., SILVESTRO L., Un percorso per la Chimica, Cedam, 1996.
+CACACE F., CISATTO N., Istituzioni di chimica, Università di Roma e Università di 
+Padova, 1974.
+ROBERTS J., STEWART R., CASERIO M., Chimica organica, InterEuropean Editions, 
+Amsterdam, 1975.
+SMOOT R., PRICE J., SMITH R., CACCIATORE D., Corso di chimica moderna, Le Mon-
+nier, Firenze, 1995.
+Nome 
+(nomi commerciali)
+Formule del monomero e del 
+polimero
+Caratteristiche
+8.  Nitrocellulosa (celluloide)      
+Ha una alta resistenza mecca-
+nica e un vasto utilizzo.
+9.  Policarbonati 
+      
+Materiali molto resistenti agli 
+agenti chimici; vengono uti-
+lizzati nel campo dell’elettro-
+nica; serve per vetri di sicu-
+rezza.
+10. Poliuretani 
+Utilizzati 
+per 
+costruzioni 
+meccaniche, come isolanti, 
+come colle, fibre sintetiche.
+11. Resine siliconiche 
+Sono usate come lubrificanti, 
+idrorepellenti ed anche come 
+materiale plastico nell’indu-
+stria elettrica.
+12. Gomma naturale   
+Ha un uso vastissimo.
+13. Polimeri e copolimeri dienici (gomme sintetiche) 
+Si utilizzano nell’industria 
+dei pneumatici e delle calza-
+ture.
+Estere di cellulosa + HNO3
+C6H4
+C
+C6H4OH
+R
+R
+HO
+H2CO3
+C6H4
+C
+C6H4
+R
+R
+O
+O
+C
+O
+R
+O
+R’
+O
+N
+H
+C
+O
+C
+N
+H
+O
+O
+Si
+O
+Si
+O
+CH2
+C
+CH3
+CH
+CH2
+CH2
+CH
+CH
+CH2
+CH2
+CH
+CH
+CH2
+
+[PAG 219]
+Sezione III
+Fisica
+INDICE
+pag.
+1.   ERRORI DI MISURA. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 3
+2.   VETTORI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2.1.   Grandezze fisiche scalari e vettoriali . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 5
+2.2.   Componenti cartesiane di un vettore . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+3.   CINEMATICA, IL MOTO DEI CORPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 10
+3.1.   Moto uniforme  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+3.2.   Moto vario . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+3.3.   Moto rettilineo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+3.4.   Moto armonico semplice . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 13
+3.5.   Moto circolare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 14
+4.   MOTI RELATIVI, MOVIMENTI COMPOSTI . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+4.1.   Cinematica dei moti relativi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+4.2.   Movimenti composti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+5.   PRINCIPI DELLA DINAMICA, FORZE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+5.1.   Massa inerziale e massa gravitazionale . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+5.2.   Classificazione delle forze fondamentali della natura . . . . . . . . . . . . . . . .
+ 20
+5.3.   Forza peso . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+5.4.   Forze di attrito . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+5.5.   Forze gravitazionali: legge di gravitazione universale . . . . . . . . . . . . . . . .
+21
+5.6.   Tipi di forze  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+5.7.   Densità, peso specifico. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 22
+5.8.   Misurazione statica delle forze. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 22
+5.9.   Dinamica del punto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+6.   IMPULSO, LAVORO ED ENERGIA  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+6.1.   Impulso e quantità di moto  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+6.2.   Lavoro di una forza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+6.3.   Potenza sviluppata da una forza  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+6.4.   Energia  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+6.5.   Campi di forza conservativi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+6.6.   Conservazione dell’energia meccanica  . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+6.7.   Urti elastici ed anelastici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+7.   STATICA DEI SISTEMI RIGIDI. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 26
+7.1.   Statica del punto materiale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+7.2.   Statica del corpo rigido, baricentro, momento risultante . . . . . . . . . . . . . .
+ 26
+7.3.   Macchine semplici: leve e carrucole . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+27
+
+[PAG 220]
+III-2
+FISICA
+8.   CORPO RIGIDO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 29
+8.1.   Movimenti rigidi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+29
+8.2.   Momento d’inerzia rispetto ad un asse . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+29
+8.3.   Momento assiale della quantità di moto . . . . . . . . . . . . . . . . . . . . . . . . . . 
+30
+8.4.   Assi principali di inerzia . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 30
+8.5.   Teorema di Huygen-Steiner  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+30
+8.6.   Conservazione del momento della quantità di moto rispetto a un asse . . . 
+30
+9.   STATICA DEI FLUIDI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 31
+9.1.   Variazione di pressione all’interno di un fluido in quiete, legge di Stevino 
+31
+9.2.   Pressione all’interno di un fluido in quiete . . . . . . . . . . . . . . . . . . . . . . . . 
+32
+9.3.   Legge di Archimede . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+32
+9.4.   Equilibrio di galleggiamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+33
+9.5.   Barometro di Torricelli . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+33
+10.   FENOMENI DI SUPERFICIE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+34
+10.1.   Tensione superficiale  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+34
+10.2.    Capillarità. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 34
+11.   DINAMICA DEI FLUIDI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+35
+11.1.   Tubo di flusso ed equazione di continuità  . . . . . . . . . . . . . . . . . . . . . . . 
+36
+11.2.   Teorema di Bernoulli. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 37
+11.3.   Teorema di Torricelli  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+37
+11.4.   Tubo di Venturi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 38
+12.   ONDE MECCANICHE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+38
+12.1.   Velocità di fase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 40
+12.2.   Riflessione di un’onda progressiva . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+40
+12.3.   Dispersione, velocità di gruppo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+40
+12.4.   Effetto doppler . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 41
+13.   ACUSTICA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 42
+13.1.   Onde sonore in un gas omogeneo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 42
+13.2.   Propagazione e velocità del suono in un gas perfetto . . . . . . . . . . . . . . . 
+ 42
+13.3.   Intensità delle onde sonore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 43
+14.   PROPAGAZIONE DELLA LUCE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+43
+14.1.   Sorgenti luminose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 43
+14.2.   Energia radiante . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+43
+14.3.   Riflessione della luce . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 44
+14.4.   Rifrazione della luce . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 44
+14.5.   Angolo limite e riflessione totale. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 44
+14.6.   Interferenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 45
+14.7.   Diffrazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 45
+14.8.   Dispersione della luce . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 45
+14.9.   Colore dei corpi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+46
+15.   OTTICA GEOMETRICA. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 46
+15.1.   Immagine riflessa . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+46
+15.2.   Formula dei punti coniugati  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+47
+15.3.   Lenti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+47
+
+[PAG 221]
+FISICA
+III-3
+15.4.   Strumenti ottici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+48
+15.5.   Aberrazioni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+49
+16.   TERMOMETRIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 50
+16.1.   Temperatura  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+50
+16.2.   Dilatazione termica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 51
+17.   CALORIMETRIA  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+53
+17.1.   Calore specifico e capacità termica . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+53
+17.2.   Calorimetri  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+55
+17.3.   Cambiamenti di stato . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+55
+17.4.   Potere calorifico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+57
+17.5.   Propagazione del calore  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+57
+18.   TERMODINAMICA  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+58
+18.1.   Trasformazioni reversibili ed irreversibili . . . . . . . . . . . . . . . . . . . . . . . .
+58
+18.2.   Lavoro delle forze di pressione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+59
+18.3.   Equazione di stato dei gas perfetti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+60
+18.4.   Primo Principio della Termodinamica . . . . . . . . . . . . . . . . . . . . . . . . . . .
+60
+18.5.   Secondo principio della termodinamica  . . . . . . . . . . . . . . . . . . . . . . . . .
+62
+19.   INTERAZIONI ELETTRICHE. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 63
+19.1.   Legge di Coulomb . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 63
+19.2.   Campo elettrico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 63
+19.3.   Potenziale elettrico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+64
+19.4.   Capacità elettrica di un conduttore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 65
+20.   CORRENTE ELETTRICA CONTINUA . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+65
+20.1.   Conduzione elettrica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+65
+20.2.   Intensità di corrente  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+65
+20.3.   Resistenza elettrica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
