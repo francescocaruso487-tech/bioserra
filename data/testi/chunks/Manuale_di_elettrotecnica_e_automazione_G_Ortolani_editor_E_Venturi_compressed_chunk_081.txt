@@ -1,0 +1,1419 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 81/116 ===
+Chars: 45,000 | Offset: 3,533,042
+
+
+
+[PAG 1651]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-51
+ghi circuiti si possono fare per il transistor pnp.
+ 
+ 
+Fig. XVII.7.3   Tipi di connessione dei BJT: a) connessione ad emettitore comune;
+b) connessione a base comune; c) connessione a collettore comune.
+B)  Curve caratteristiche tensione-corrente dei BJT
+Il comportamento del BJT è descritto dalle caratteristiche tensioni-correnti. Si consi-
+dera la connessione più comune del BJT, quella ad emettitore comune; in Fig. XVII.7.4a è
+riportato il circuito di principio per determinare sperimentalmente le caratteristiche.
+Fig. XVII.7.4   Caratteristiche di un BJT ad emettitore comune: a) schema di principio
+per la determinazione delle curve caratteristiche; b) caratteristica di ingresso o di base;
+c) caratteristiche approssimate di uscita o di collettore; d) caratteristiche reali di uscita di
+un BJT.
+La caratteristica di ingresso o di base del BJT è ottenuta variando la tensione UBB appli-
+cata all'ingresso del circuito di Fig. XVII.7.4a, e riportando l'andamento di iB in funzione di
+uBE; si ottiene la curva della Fig. XVII.7.4b. Dato che la giunzione base-emettitore è pola-
+B
+E
+E
+E
+C
+a)
+B
+B
+B
+E
+C
+b)
+C
+C
+C
+B
+E
+c)
+RC
+UCC
++
+uCE
+iC
+UBE
+UBB
++
+iB
+a)
+iC (mA)
+Regione di saturazione
+Regione attiva
+Regione d’interdizione
+8
+6
+4
+2
+0
+1 2 3 4 5 6 7 8 9 10
+IB = 60 A
+IB = 50 A
+IB = 40 A
+IB = 30 A
+IB = 20 A
+IB = 10 A
+(IB = 0 A)
+uCE (V)
+c)
+iB (A)
+uCE = Costante
+100
+uBE (V)
+50
+0
+0,2 0,6
+1
+b)
+iC
+0
+IB
+uCE
+d)
+
+[PAG 1652]
+XVII-52
+ELETTRONICA ANALOGICA E DIGITALE
+rizzata direttamente, essa si comporta come un diodo polarizzato direttamente. Accanto
+alla curva è segnato uCE = costante, per fare notare che l'andamento della curva dipende dal
+valore prefissato di uCE; al variare di uCE, la curva non cambia apprezzabilmente, trasla
+solo leggermente nel verso positivo dell'asse delle tensioni, al crescere di uCE.
+Le caratteristiche di uscita o di collettore del BJT si ottengono mantenendo fissa la
+corrente di base e aumentando l'alimentazione UCC. Ad ogni corrente di base corrisponde
+una curva nel piano uCEiC; si ha una famiglia di caratteristiche, e ad ogni valore di iB
+corrisponde un valore di iC. Nel piano delle caratteristiche si possono distinguere tre
+regioni in cui può operare il transistor, indicate nella Fig. XVII.7.4c. La regione tratteg-
+giata è detta regione di saturazione; essa è caratterizzata da un andamento rapidamente
+crescente di iC e da valori di uCE di alcuni decimi di volt (da 0,1V a 0,3 V nei transistor al
+silicio) e, quando il BJT opera in essa, si dice che il transistor è in saturazione o ON. La
+regione di interdizione o di cutoff è quella in cui è iB = 0, e corrisponde all'asse delle
+ascisse; nel transistor non vi è corrente di collettore, e si dice che il transistor è interdetto
+o OFF. La regione centrale delle caratteristiche è detta regione attiva o regione a corrente
+costante. Le caratteristiche di collettore della Fig. XVII.7.4c, nella regione attiva, sono
+parallele, equidistanti e la corrente di collettore non varia con uCE. In effetti, la corrente di
+collettore aumenta ed in misura maggiore quanto più alta è la corrente di base. Un BJT
+con le caratteristiche della Fig. XVII.7.4c è considerato ideale; esso approssima un BJT
+reale, che ha le caratteristiche di uscita del tipo riportato nella Fig. XVII.7.4d.
+7.3  Polarizzazione e stabilità del punto di funzionamento dei BJT 
+Polarizzare un BJT significa applicare un'opportuna alimentazione, in modo che il
+BJT lavori con le tensioni e le correnti desiderate ottenute determinando il punto di fun-
+zionamento Q = (UCE, IC), nella regione voluta delle caratteristiche di collettore, e il punto
+di funzionamento QB = (UBE, IB) sulla caratteristica di base. I principali parametri caratte-
+ristici dei BJT, che riguardano la polarizzazione, sono generalmente riportati dai data
+book delle ditte costruttrici.
+Stabilita la polarizzazione del BJT di un circuito, il punto di funzionamento può cam-
+biare. Nei BJT al silicio, le principali cause di modifica del punto di funzionamento sono:
+la dispersione delle caratteristiche; la variazione di  con la temperatura e con l'invecchia-
+mento del dispositivo; la variazione di uBE con la temperatura. Si ha dispersione delle
+caratteristiche, quando transistor dello stesso tipo, aventi la stessa sigla, non hanno iden-
+tiche caratteristiche di base e di collettore, ma queste variano in un intervallo di valori.
+Generalmente si fa riferimento a  del transistor, e le sue variazioni sono espresse dai
+valori minimo, tipico e massimo. Per ovviare all'inconveniente della dispersione, si realiz-
+zano circuiti, detti circuiti di polarizzazione e stabilizzazione, in cui è ridotta l'influenza
+delle variazioni di  e di uBE.
+7.4  Circuiti di polarizzazione e stabilizzazione del punto di funzionamento dei BJT
+Il circuito della Fig. XVII.7.4a è un esempio di polarizzazione di un BJT. La polariz-
+zazione è ottenuta fissando le tensioni e le correnti del BJT mediante i generatori UBB e
+UCC e opportune resistenze. In pratica i circuiti di polarizzazione sono realizzati con un
+solo generatore di tensione e con alcune resistenze. Di seguito sono riportati i circuiti di
+polarizzazione più usati.
+A)  Circuiti di polarizzazione di un BJT npn
+Il circuito di polarizzazione più usato è a partitore di base, riportato nella Fig.
+XVII.7.5a. Esso è a quattro resistenze, e la base è alimentata tramite un partitore resistivo.
+Supponendo che la corrente di base IB sia trascurabile rispetto alla corrente I1 nel partitore
+R1, R2, l'analisi di questo circuito si può sviluppare come segue.
+–  In R2 la corrente è I2 I1.
+
+[PAG 1653]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-53
+–  La tensione su R2 vale: UR2 = UCCR2(R1  R2).
+–  Essendo UR2 = UBE  URE (Fig. XVII.7.5a), si può ricavare la tensione sulla resi-
+stenza RE: URE = UR2  UBE).
+–  Essendo generalmente IB « IC, si può ritenere che la corrente in RE sia circa uguale a
+IC, e quindi si ha: IC IRE = URE/RE.
+–  Determinata la corrente IC, si può ricavare la corrente di base IB = IC / , e verificare
+che sia IB « UCC(R1  R2); se la relazione non è verificata, l'analisi approssimata non è
+applicabile.
+–  Infine si determina UCE: UCE = UCC  (RC RE)IC.
+Fig. XVII.7.5   Circuiti di polarizzazione di BJT: a) a partitore di base con transistor npn
+(schema per analisi semplificata); b) a partitore di base con transistor pnp; c) schema a
+due resistenze; d) schema due resistenze con reazione di collettore; e) schema a tre resi-
+stenze con resistenza di emettitore; f) schema a tre resistenze con reazione di collettore e
+resistenza sull'emettitore.
+Dall'analisi sviluppata si traggono le seguenti considerazioni. Il partitore di base
+determina la tensione UR2, quindi il valore di URE, indipendentemente dal  di BJT. Per 
+» 1, ciò che in genere accade, la corrente di collettore IC è indipendente da . Si deduce
+pertanto che, nei limiti delle ipotesi fatte nell'analisi approssimata, la corrente di collettore
+è determinata unicamente dal partitore di base e non dalle caratteristiche del BJT. Il para-
+metro  può avere ampie variazioni, senza che il punto di lavoro cambi in modo determi-
+nante per il funzionamento del circuito.
+Altri circuiti di polarizzazione di un BJT sono riportati nella Fig. XVII.7.5.
+–  Nella Fig. XVII.7.5c è riportato il circuito con due resistenze.
+–  Nella Fig. XVII.7.5d è riportato il circuito con due resistenze dove tramite la resi-
+stenza RB il collettore è collegato alla base. Vi è una connessione di reazione fra il circuito
+di uscita (di collettore) ed il circuito di ingresso (di base).
+–  Nella Fig. XVII.7.5e è riportato il circuito a tre resistenze.
+I1
+R1
+R2
+IC
+RC
+UCC
+UR2 RE
+URE
+IB
+I2I1
+UBE
+IREIC
+a)
+RB
+IC
+RC
+UCC
+UCE
+IB
+UBE
+c)
+RB
+IC
+RC
+UCC
+UCE
+IB
+UBE
+RE
+IBIC
+e)
+R1
+R2
+IC
+RC
+UCC
+RE
+UEC
+IB
+UBE
+IE
+b)
+IC
+RC
+UCC
+UCE
+IB
+UBE
+ICIB
+RB
+d)
+IC
+RC
+UCC
+UCE
+IB
+UBE
+ICIB
+RB
+ICIB
+RB
+f)
+
+[PAG 1654]
+XVII-54
+ELETTRONICA ANALOGICA E DIGITALE
+–  Nella Fig. XVII.7.5f è riportato il circuito a tre resistenze, con reazione di collettore
+e resistenza sull'emettitore. In esso, tramite la resistenza RB il collettore è collegato alla
+base e quindi vi è una connessione di reazione fra il circuito di uscita (di collettore) ed il
+circuito di ingresso (di base). La resistenza di emettitore RE, inoltre, stabilisce un'ulteriore
+reazione fra i due circuiti suddetti.
+B)  Circuito di polarizzazione di un BJT pnp
+La polarizzazione dei BJT pnp è analoga a quella dei BJT npn, però occorre cambiare
+la polarità delle tensioni di alimentazione: la giunzione base-emettitore deve essere
+ancora polarizzata direttamente, però, essendo la base di tipo n e l'emettitore di tipo p, la
+tensione di alimentazione fra base ed emettitore deve avere il terminale positivo connesso
+all'emettitore ed il terminale negativo connesso alla base. Analogamente, la giunzione
+collettore-base deve essere polarizzata inversamente, quindi il collettore, di tipo p, deve
+essere connesso al terminale negativo dell'alimentazione. Il circuito di polarizzazione a
+partitore di base è riportato nella Fig. XVII.7.5b. Analogamente, si possono impiegare,
+nella polarizzazione dei BJT pnp, le strutture dei circuiti riportati nelle Fig. XVII.7.5cf.
+8  AMPLIFICATORI A BJT
+Si esamina il funzionamento del BJT impiegato come amplificatore LTI. Negli ampli-
+ficatori BJT lineari, mediante polarizzazione, si determina il punto di funzionamento nella
+regione attiva delle caratteristiche di collettore, e da questo si determinano le caratteristi-
+che dell'amplificatore: i parametri del modello del BJT; l'amplificazione di tensione; le
+resistenze d'ingresso e d'uscita; il consumo di potenza; l'ampiezza massima dei segnali
+d'ingresso e d'uscita; la distorsione.
+8.1  Amplificazione e distorsione negli amplificatori a BJT
+Si considera l'amplificatore ad emettitore comune della Fig. XVII.8.1a, in cui la pola-
+rizzazione è ottenuta con i generatori di tensione continua UCC = 9 V e UBB = 1,4 V. In
+serie al circuito di base è inserito un generatore di tensione sinusoidale uS con valore mas-
+simo USM = 0,46 V e valore picco a picco di 0,92 V. 
+Fig. XVII.8.1   Analisi grafica dell'amplificatore a BJT: a) schema del circuito; b) trasla-
+zione della retta di polarizzazione, spostamento del punto di funzionamento nel piano
+della caratteristica di base del BJT e andamento della corrente di base, al variare della ten-
+sione del segnale uS.
+Nella Fig. XVII.8.1a, sono indicati i valori delle resistenze RB e RC. Il transistor ha
++UCC = 9 V
+RC = 1,5 k
+RB = 23,3 k
+UBB = 1,4 V
+uS
+uCE
+iB
+iC
++
+a)
+70
+60
+A
+100
+90
+80
+50
+40
+30
+20
+10
+0
+0,2
+0,4
+0,6
+0,8
+1
+1,2
+1,4
+1,6
+1,8
+2
+0
+1
+1
+U = 0,92 V
+iB = 40 A
+IB (A)
+50
+40
+30
+20
+10
+uBE (V)
+IB (A)
+uS
+t
+t
+b)
+B
+Q
+C
+D
+
+[PAG 1655]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-55
+ = 100. Di seguito, utilizzando le caratteristiche di base e di collettore, si mostrano i
+modi di amplificazione e distorsione dell'amplificatore in esame.
+A)  Analisi grafica dell'amplificatore con la caratteristica di base del BJT
+La polarizzazione del circuito di base nella Fig. XVII.8.1a è ottenuta dall'equazioni
+alla maglia d'ingresso:
+(XVII.8.1)
+Nell'analisi grafica, al variare di uS, l'equazione XVII.8.1 rappresenta una famiglia di
+rette parallele nel piano della caratteristica uBE e iB; esse sono tracciate determinando
+l'intersezione delle rette con gli assi uBE e iB. I punti di funzionamento, riportati nella Fig.
+XVII.8.1b, sono ottenuti dall'intersezione delle rette stesse con la caratteristica di base del
+BJT e, nell'esempio, sono: Q (0,7 V; 30 A), A (0,7 V; 40 A), B (0,7 V; 50 A),
+C (0,7 V; 20 A), D (0,7 V; 10 A). Nella stessa figura è riportato l'andamento di iB al
+variare di uS; per la XVII.8.1 la corrente è sinusoidale, con variazione d'ampiezza di 40
+mA picco a picco, e costituisce il segnale d'ingresso del BJT. Con uS = 0 stabilmente, il
+punto di funzionamento Q (0,7 V; 30 A) è detto punto di riposo. I valori UBE 0,7 V e
+IB = 30 A, sono detti valori di riposo. L'individuazione del punto di riposo costituisce
+l'analisi statica del BJT, mentre l'analisi descritta in precedenza è detta analisi dinamica
+del BJT.
+Fig. XVII.8.2   Analisi grafica dell'amplificatore a BJT: a) schema del circuito; b) sposta-
+mento del punto di funzionamento nel piano della caratteristica di collettore e andamento
+della corrente di collettore e della tensione fra collettore ed emettitore, al variare della ten-
+sione del segnale e quindi della corrente di base.
+UBB
+uS
++
+RBiB
+uBE
++
+=
++UCC = 9 V
+RC = 1,5 k
+RB = 23,3 k
+UBB = 1,4 V
+uS
+uCE
+iB
+iC
++
+a)
+iB = 40 A
+iB (A)
+50
+40
+30
+20
+10
+uBE (V)
+iC (mA)
+t
+t
+5
+4
+3
+2
+1
+iC = 4 mA
+iC (mA)
+5
+4
+3
+2
+1
+6
+7
+0
+t
+1
+2
+3
+4
+5
+6
+7
+8
+9 10
+3,5
+2,5
+1,5
+4,5 5,5 6,5 7,5
+uCE (V)
+uCE
+A
+B
+Q
+C
+D
+iB = 70 A
+iB = 60 A
+iB = 50 A
+iB = 40 A
+iB = 30 A
+iB = 20 A
+iB = 10 A
+b)
+
+[PAG 1656]
+XVII-56
+ELETTRONICA ANALOGICA E DIGITALE
+B)  Analisi grafica dell'amplificatore con le caratteristiche di collettore del BJT
+La polarizzazione del circuito di collettore nella Fig. XVII.8.2a si ottiene dalla equa-
+zione alla maglia d'uscita:
+(XVII.8.2)
+Nell’analisi grafica, l'equazione XVII.8.2 rappresenta la retta di carico nel piano delle
+caratteristiche uCE e iC, individuata dalle coordinate dei punti (uCE, iC) d'intersezione della
+retta con gli assi; nell'esempio del circuito della Fig. XVII.8.2a, i punti hanno coordinate
+(9 V; 0 mA) e (0 V; 6 mA). Nell'analisi statica, per iB = 30 A sempre (uS = 0), l'interse-
+zione della retta di carico con la caratteristica di collettore, relativa ad iB = 30 A, indivi-
+dua il punto di riposo Q. Nell'analisi dinamica (uS  0), varia la corrente di base iB (Fig.
+XVII.8.2b); supponendo le caratteristiche di collettore del BJT parallele, si ha una varia-
+zione lineare di uCE, riportata nella Fig. XVII.8.2b, e della corrente iC, riportata nella
+stessa Fig. XVII.8.2b. La corrente iC è sinusoidale come iB, e ad una variazione della cor-
+rente di base iB = 40 A corrisponde una variazione della corrente di collettore iC =
+4 mA. I valori UCE = 4,5 V e IC = 3mA, sono detti valori di riposo.
+C)  Amplificazione
+Dall'equazione XVII.8.2, si ottiene uCE = UCC  RCiC, la tensione d'uscita uCE è sinu-
+soidale (Fig. XVII.8.2b), come us (Fig. XVII.8.1b), e a variazioni della tensione us, corri-
+spondono variazioni della tensione uCE. Il modulo dell'amplificazione di tensione Avt (si
+veda il Par. 3.2), è dato dal rapporto fra la variazione della tensione d'uscita uCE e la
+variazione della tensione di segnale us. Nell'esempio considerato si ha:
+Il modulo dell'amplificazione di corrente AI è dato dal rapporto fra la variazione della
+corrente d'uscita iC, e la variazione della corrente d'ingresso iB. Nell'esempio si ha
+D)  Distorsione
+L'analisi grafica permette di valutare la presenza di distorsione nel segnale d'uscita
+degli amplificatori a BJT, e vedere come la polarizzazione influisce sulla distorsione. A
+questo scopo si considera il circuito di Fig. XVII.8.3a, con UBB = 1,865 V e uS il genera-
+tore di segnale sinusoidale del caso precedente. Dalla XVII.8.1, per uS = 0, si ha iB = (UBB
+ uBE) / RB = (1,865  0,7) / (23,3 . 103)  50 mA. Con la XVII.8.2, nel piano delle caratte-
+ristiche di collettore, si determina il punto di funzionamento Q (UCE = 1,5 V; IC = 5 mA),
+riportato nella Fig. XVII.8.3b. Al variare di uS, varia la corrente di base iB, il punto di fun-
+zionamento si sposta sulla retta di carico, e si ottiene la corrente iC riportata nella Fig.
+XVII.8.3b. Dall'esame dell'andamento di iC, si vede che essa non è più sinusoidale e lo
+stesso accade per la tensione uCE: si ha distorsione causata dal fatto che il punto di funzio-
+namento a riposo è vicino alla regione di saturazione.
+E)  Vantaggi ed inconvenienti dell'analisi grafica
+L'analisi grafica ha il vantaggio di dare una visione del funzionamento del BJT e di
+permettere una valutazione della forma dei diagrammi delle tensioni e delle correnti. Pre-
+senta, d'altra parte, alcuni inconvenienti: richiede le curve caratteristiche, che in genere
+non sono fornite dalle ditte produttrici, e che quindi devono essere ricavate sperimental-
+mente; non permette analisi precise, tanto più quanto il segnale è piccolo. Per superare gli
+inconvenienti suddetti, si fa ricorso a modelli lineari dei BJT per piccoli segnali, con essi
+si costruiscono circuiti equivalenti degli amplificatori.
+UCC
+RCiC
+uCE
++
+=
+AUS
+uCE
+uS
+
+6
+0,92
+
+6,52
+=
+=
+=
+AI
+iC
+iB
+
+4
+10-3
+
+40
+10-6
+
+
+100
+=
+=
+=
+
+[PAG 1657]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-57
+Fig. XVII.8.3   Analisi grafica di un amplificatore a BJT, che mette in evidenza la pre-
+senza di distorsione nelle grandezze di uscita: a) schema del circuito; b) andamento di iB,
+iC e uCE al variare di uS.
+8.2  Modello di BJT per piccoli segnali
+Il modello di BJT per piccoli segnali è utilizzato nell'analisi dinamica incrementale di
+un amplificatore. In questo modello il BJT può essere considerato un quadripolo LTI, con
+un terminale comune ad ingresso e uscita (si veda il Par. 2.4); le configurazioni possibili
+sono tre e sono rappresentate nella Fig. XVII.7.3. Tra i diversi modelli possibili, è preso in
+esame il modello a parametri ibridi h (si vedano le equazioni XVII.2.29). Per la connes-
+sione CE (ad emettitore comune), le equazioni XVII.2.29 divengono:
+(XVII.8.3)
+con:
+(XVII.8.4)
+In queste definizioni i due pedici sono letterali: la prima lettera è in relazione con la
+caratteristica elettrica del parametro, il secondo è in relazione al tipo di configurazione in
+esame. Per la prima lettera si ha: i, impedenza di ingresso (input); f, guadagno di corrente
+diretto (forward); r, amplificazione di tensione inversa (reverse); o, ammettenza di uscita
+(output). Per la seconda lettera si ha: e, connessione ad emettitore comune (CE); b, con-
+nessione a base comune (CB); c, connessione a collettore comune (CC).
++UCC = 9 V
+RC = 1,5 k
+RB = 23,3 k
+UBB = 1,865 V
+uS
+uCE
+iB
+iC
++
+a)
+iB (A)
+70
+60
+50
+40
+30
+uBE (V)
+iC (mA)
+t
+t
+7
+6
+5
+4
+3
+iC (mA)
+5
+4
+3
+2
+1
+6
+7
+0
+t
+1
+2
+3
+5
+6
+7
+8
+9 10
+0,75
+0,5
+1,5
+1,5
+2,5
+3,5
+4,5
+uCE (V)
+A=B
+Q
+C
+D
+iB = 70 A
+iB = 60 A
+iB = 50 A
+iB = 40 A
+iB = 30 A
+iB = 20 A
+iB = 10 A
+b)
++
+4
+ube
+hieib
+hreuce
++
+=
+ic
+hfeib
+hoeuce
++
+=
+
+
+
+hie
+ube
+ib
+-------
+=
+uce
+0
+=
+;hfe
+ic
+ib
+---
+=
+uce
+0
+=
+;hre
+ube
+uce
+-------
+=
+ib
+0
+=
+;hoe
+ic
+uce
+-------
+=
+ib
+0
+=
+
+[PAG 1658]
+XVII-58
+ELETTRONICA ANALOGICA E DIGITALE
+Le tensioni e correnti ube, uce, ib, ic sono componenti variabili, e possono essere rap-
+presentate con piccole variazioni dei valori istantanei uBE, uCE, iB, iC attorno ai valori di
+riposo UBE, UCE, IB, IC; le relazioni XVII.8.4 possono pertanto essere scritte nel seguente
+modo:
+Nella Fig. XVII.8.4a è riportato il BJT con connessione ad emettitore comune, e il cir-
+cuito equivalente con parametri ibridi è rappresentato nella Fig. XVII.8.4b. Questo cir-
+cuito equivalente è utilizzato nell'analisi di un amplificatore.
+ 
+Fig. XVII.8.4   Connessione ad emettitore comune: a) circuito elettrico; b) circuito equi-
+valente con parametri h.
+8.3  Tipi di connessione negli amplificatori a BJT
+A)  Amplificatori ad emettitore comune
+Lo schema dell'amplificatore ad emettitore comune, detto anche amplificatore con
+emettitore a massa, è riportato nella Fig. XVII.8.5a. È costituito dal circuito di polarizza-
+zione a partitore di base. I condensatori C1 e C2 sono inseriti per bloccare le componenti
+continue. Il condensatore CE in parallelo alla resistenza RE è detto condensatore di fuga o
+di by-pass; esso cortocircuita a massa le componenti alternate e quindi consente amplifi-
+cazioni più elevate rispetto al caso in cui non è presente. Le caratteristiche principali sono
+riportate nella tabella della Fig. XVII.8.5d.
+B)  Amplificatore a collettore comune
+Lo schema dell'amplificatore a collettore comune, detto anche amplificatore con col-
+lettore a massa, è riportato nella Fig. XVII.8.5b. È costituito dal circuito di polarizzazione
+a partitore di base, in cui però è RC = 0. Il segnale di ingresso è applicato alla base, mentre
+il segnale di uscita è preso sulla resistenza di emettitore; il collettore è connesso diretta-
+mente all'alimentazione, e attraverso essa a massa. Le caratteristiche principali sono ripor-
+tate nella tabella della Fig. XVII.8.5d. Questo amplificatore è usato come buffer
+(separatore), e consente di adattare un circuito con alta impedenza ad un carico a bassa
+impedenza, trasferendo interamente la tensione uS al carico RL.
+C)  Amplificatore a base comune
+Lo schema dell'amplificatore a base comune, detto anche amplificatore con base a
+massa, è riportato nella Fig. XVII.8.5c. È costituito dal circuito di polarizzazione a parti-
+hie
+uBE
+iB
+-------------
+
+
+
+
+uCE
+UCE
+cost
+=
+=
+=
+hfe
+iC
+iB
+--------
+
+
+
+
+uCE
+UCE
+cost
+=
+=
+=
+hre
+uBE
+uCE
+-------------
+
+
+
+
+iB
+IB
+cost
+=
+=
+=
+hoe
+iC
+uCE
+-------------
+
+
+
+
+iB
+IB
+cost
+=
+=
+=
+B
+E
+E
+C
+ic
+ib
+ie
+ube
+uce
+a)
+B
+E
+E
+C
+ic
+ib
+ube
+uce
+hreuce
+hie
+hfeib
+1/hoe
+b)
+
+[PAG 1659]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-59
+tore di base. Il segnale di ingresso è applicato all'emettitore, mentre il segnale di uscita è
+preso sul collettore. Il condensatore C è inserito affinché, per le componenti alternative, la
+base sia connessa a massa; esso è scelto in modo tale che, alle frequenze intermedie, la
+sua reattanza sia trascurabile, e quindi equivalga ad un cortocircuito. Le caratteristiche
+principali sono riportate nella tabella della Fig. XVII.8.5d. La bassa resistenza di ingresso
+e l'alta resistenza di uscita limitano le possibilità di impiego dell'amplificatore a base
+comune alle frequenza basse; è invece utilizzato alle frequenze alte, in quanto l'amplifica-
+zione è meno influenzata dalle capacità parassite che non gli amplificatori ad emettitore
+comune e a collettore comune.
+Fig. XVII.8.5   Amplificatori a BJT: a) ad emettitore comune; b) a collettore comune; c) a
+base comune; d) tabella con le caratteristiche degli amplificatori a BJT nelle diverse con-
+nessioni.
+9  TRANSISTOR AD EFFETTO DI CAMPO
+In questo paragrafo si considerano i transistor ad effetto di campo o FET (Field-Effect
+Transistor). Sono considerati i JFET, transistor a giunzione, e i MOSFET, transistor con
+struttura metallo-ossido-semiconduttore, realizzati a canale p e a canale n.
+9.1  Transistor ad effetto di campo a giunzione (JFET) 
+A)  Struttura
+I transistor JFET sono dispositivi con tre terminali di collegamento con l'esterno chia-
+mati: gate (G), source (S) e drain (D). I JFET a canale n, la cui struttura è riportata nella
+Fig. XVII.9.1a, sono costituiti da una barretta di semiconduttore di tipo n, con due regioni
+fortemente drogate di tipo p, indicate con p+, collegate tra loro ed alla metallizzazione del
+terminale di gate (G). Alle estremità della barretta sono disposte le metallizzazioni che
+R1
+RC
+C1
+R2
+RE
+CE
+C2
+rs
+ui
+uS
+uu
+RL
++UCC
+a)
+R1
+C1
+R2
+RE
+C2
+rs
+ui
+uS
+uu
+RL
++UCC
+b)
+C2
+C
+R1
+R2uS
+rs
+ui
+C1
+RE
+RC
+uu
+RL
++UCC
+c)
+Grandezza
+CE
+CC
+CB
+Amplificazione di 
+corrente Ai
+Alta
+Alta
+Bassa
+(1)
+Amplificazione di 
+tensione Av
+Alta
+Bassa
+(1)
+Alta
+Resistenza di 
+ingresso Ri
+Media
+Alta
+Bassa
+Resistenza di 
+uscita Ru
+Alta
+Bassa
+Alta
+d)
+
+[PAG 1660]
+XVII-60
+ELETTRONICA ANALOGICA E DIGITALE
+costituiscono i terminali di source (S) e di drain (D). All'interno della barretta si trovano
+due giunzioni pn; in corrispondenza di ognuna di esse si forma una regione di svuota-
+mento, che è disegnata tratteggiata nella Fig. XVII.9.1a e che si trova sia nel semicondut-
+tore di tipo p sia nel semiconduttore di tipo n. La regione della barretta che si trova fra le
+due regioni di svuotamento è chiamata canale. La corrente nel JFET a canale n è costituita
+da un flusso di elettroni che parte dal terminale di source e, attraverso il canale, arriva al
+terminale di drain; essa può essere controllata con opportune polarizzazioni, che consen-
+tono di variare le ampiezze delle regioni di svuotamento delle due giunzioni, e di conse-
+guenza l'ampiezza del canale.
+Fig. XVII.9.1   JFET a canale n: a) struttura; b) larghezza del canale dovuta alla sola ten-
+sione di polarizzazione con uGS > UP; c) chiusura del canale per uGS = UP; d  f) larghezza
+e forma del canale dovute a tensioni di polarizzazione uGS e uDS diverse.
+Si supponga di applicare una tensione uGS collegando il terminale negativo dell'ali-
+mentazione al gate e il terminale positivo al source; in questo modo si polarizza inversa-
+mente la giunzione pn, e di conseguenza le regioni di svuotamento si allargano e il canale
+si restringe (Fig. XVII.9.1b). Diventando uGS più negativa, il canale si restringe sempre di
+più, fino a chiudersi completamente quando uGS diventa uguale ad una tensione UP, detta
+tensione di pinch-off. In Fig. XVII.9.1c si vede il JFET con il canale completamente
+chiuso (canale in condizione OFF). Con uGS  UP (canale aperto, in condizione ON), si
+supponga di applicare una tensione positiva di polarizzazione uDS fra drain e source, con il
+terminale positivo collegato al drain come nella Fig. XVII.9.1d. Il campo elettrico fra
+drain e source determina una corrente dal drain al source, detta corrente di drain. L'inten-
+sità della corrente di drain dipende dalla larghezza del canale, determinata dalla tensione
+di gate uGS. La forma del canale, nelle Fig. XVII.9.1d  f, è dovuta alla tensione di polariz-
+zazione uDS lungo il canale: alla regione di drain corrisponde un potenziale uguale a uDS,
+mentre alla regione di source il potenziale è zero, a causa della connessione a massa.
+Nella regione di drain, alle giunzioni pn è applicata una polarizzazione inversa uguale a
+uGS  uDS, quindi minore di uGS. Nella regione di source, invece, ad ogni giunzione pn è
+applicata la tensione di polarizzazione uGS. La regione di svuotamento non ha quindi la
+stessa larghezza, ma è più larga in corrispondenza del drain e decresce, passando dal drain
+al source. Al variare delle tensioni uGS e uDS, variano le caratteristiche elettriche del JFET.
+Gate (G)
+Source (S)
+Canale n
+Drain
+(D)
+p+
+p+
+a)
+Canale n
+p+
+p+
+S
+G
+D
+uGS
++
+b)
+p+
+p+
+S
+G
+D
+uGS=Up
++
+c)
+p+
+p+
+S
+G
+D
+uGS
++
+uDS
++
+n
+d)
+p+
+p+
+S
+G
+D
+uGS
++
+uDS
++
+n
+e)
+p+
+p+
+S
+G
+D
+uGS
++
+uDS
++
+n
+f)
+
+[PAG 1661]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-61
+B)  Simboli dei JFET
+Nella Fig. XVII.9.2 sono riportati alcuni esempi di simboli dei JFET, a canale n ed a
+canale p. Si noti come la freccia contraddistingua il tipo di canale.
+Fig. XVII.9.2   Esempi di simboli di JFET: a) JFET a canale n, con indicazione sul gate;
+b) JFET a canale p, con indicazione sul gate; c) JFET a canale n, con indicazione sul
+source; d) JFET a canale p, con indicazione sul source.
+C)  Caratteristiche dei JFET a canale n
+I FET, come i BJT, possono essere considerati quadripoli, assegnando uno dei termi-
+nali sia al circuito di ingresso sia al circuito di uscita. Si hanno pertanto tre possibilità di
+configurare il quadripolo ed i corrispondenti circuiti sono detti connessioni: connessione a
+source comune, connessione a gate comune, connessione a drain comune.
+Con riferimento al JFET a canale n, configurato come nella Fig. XVII.9.3a (configura-
+zione a source comune), si determinano le caratteristiche: di drain o d'uscita, d'ingresso e
+di trasferimento, riportate nella Fig. XVII.9.3.
+1)  Caratteristiche di drain o d'uscita dei JFET a canale n
+Un esempio di famiglia di caratteristiche d'uscita o di drain è riportato in Fig.
+XVII.9.3b. L'intensità di corrente iD, dipende dalla tensione uDS e dalla resistenza del
+canale; quest'ultima dipende dalla sezione del canale, e quindi dalla tensione uGS. Nel
+piano delle caratteristiche si distinguono tre regioni:
+–  regione lineare, compresa fra l'asse delle ordinate iD e la curva uGS  uDS  UP; in
+questa regione, se la tensione uDS è piccola, ID cresce linearmente al crescere della ten-
+sione uDS;
+–  regione di saturazione o regione di pinch-off, a destra della curva uGS  uDS = UP, in
+corrispondenza della quale il canale incomincia a chiudersi;
+–  regione di interdizione, in corrispondenza della quale la corrente iD è nulla o molto
+bassa, e in questa regione il JFET è interdetto.
+2)  Caratteristica d'ingresso 
+La giunzione gate-canale polarizzata si comporta come un diodo, e la caratteristica
+d'ingresso è riportata in Fig. XVII.9.3c. Quando la tensione di polarizzazione della giun-
+zione gate-canale è uGS  0, la corrente iG attraverso di essa è nulla o estremamente pic-
+cola, e rimane trascurabile per 0  uGS  U, con U tensione di soglia della giunzione. Per
+uGS >U, la corrente iG aumenta notevolmente al crescere di uGS.
+3)  Caratteristica di trasferimento
+La caratteristica di trasferimento, detta anche caratteristica mutua o transcaratteri-
+stica, rappresenta come varia iD al variare di uGS e si ottiene graficamente ponendo nelle
+caratteristiche d'uscita uDS = costante e riportando i valori letti di iD in funzione di uGS. La
+curva della Fig. XVII.9.3d, che rappresenta la caratteristica di trasferimento, è ricavata per
+un determinato valore di uDS, e si può ritenere che rimanga la stessa al variare di uDS, dato
+che iD è sensibilmente costante, al variare di uDS.
+G
+D
+S
+G
+D
+S
+G
+D
+S
+G
+D
+S
+Canale n
+Canale p
+Canale n
+Canale p
+a)
+b)
+c)
+d)
+
+[PAG 1662]
+XVII-62
+ELETTRONICA ANALOGICA E DIGITALE
+D)  Caratteristiche dei JFET a canale p
+I JFET a canale p hanno una struttura analoga a quelli a canale n, con la differenza che
+i tipi di semiconduttore sono scambiati: ora il gate è realizzato con un semiconduttore di
+tipo n, fortemente drogato, e la barretta è un semiconduttore di tipo p. Le caratteristiche
+sono simili a quelle dei JFET a canale n.
+9.2  Transistor MOSFET
+I MOSFET sono transistor ad effetto di campo, con struttura a metallo-ossido-semi-
+conduttore. Si dividono in: MOSFET Enhancement, o a riempimento e MOSFET Deple-
+tion, o a svuotamento. Entrambi i tipi, enhancement e depletion, sono realizzati a canale n
+o a canale p, e sono spesso indicati come NMOS o PMOS.
+A)  Struttura dei MOSFET Enhancement a canale n
+I MOSFET Enhancement a canale n, la cui struttura è riportata nella Fig. XVII.9.4a,
+sono costituiti da un semiconduttore di tipo p, detta substrato o corpo, con due regioni
+fortemente drogate di tipo n+, chiamate: Source (S) una e Drain (D) l'altra. Lo spazio fra
+le regioni di source e drain è detto canale e, quando il MOSFET conduce, si ha un flusso
+d'elettroni attraverso il canale. La regione del canale è ricoperta da un sottile (1 m) strato
+isolante di biossido di silicio (SiO2), che è, a sua volta, ricoperto da una metallizzazione,
+cui fa capo il terminale di Gate (G). Lo strato isolante fa sì che la corrente di gate, fra il
+terminale di gate e il substrato, sia molto bassa, dell'ordine di millesimi di picoampere
+(1015 A). L'assorbimento di corrente, nei confronti del circuito a monte del MOSFET, è
+pertanto trascurabile.
+B)  Caratteristiche di drain e di trasferimento dei MOSFET Enhancement a canale n
+I MOSFET, avendo tre terminali, si configurano nei circuiti come i JFET: connessione
+ 
+Fig. XVII.9.3   Caratteristiche di un JFET: a) simbolo del
+JFET a canale n, con le grandezze elettriche per la determina-
+zione delle caratteristiche; b) caratteristiche di uscita o di
+drain; c) caratteristica di ingresso o di gate; d) caratteristica di
+trasferimento.
+G
+S
+iG
+iD
+uGS
+uDS
+D
+S
+a)
+Regione d’interdizione
+Regione 
+lineare
+Regione di saturazione 
+(pinch-off)
+4
+2
+6
+8
+10
+0
+5
+10
+15
+iD (mA)
+uDS (V)
+uGS = 3 V
+uGS = 2 V
+uGS = 1 V
+Up = 4 V
+uGS =  V
+UGS  UDS = Up
+b)
+iG
+0
+uGS
+c)
+iD (mA)
+4
+2
+6
+8
+10
+0
+1
+2
+3
+4
+uGS (V)
+uDS = costante 
+Up
+IDSS
+d)
+
+[PAG 1663]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-63
+a source comune, connessione a gate comune, connessione a drain comune. Con riferi-
+mento al MOSFET a canale n della Fig. XVII.9.4b (configurazione a source comune), si
+determinano le caratteristiche: di drain o d'uscita (Fig. XVII.9.4c), d'ingresso e di trasferi-
+mento (Fig. XVII.9.4d).
+1)  Caratteristiche di drain o di uscita
+Il comportamento dei MOSFET è simile a quello dei JFET, ed è rappresentato nel
+piano tensione-corrente dalle caratteristiche d'uscita o di drain. Un esempio di famiglia di
+caratteristiche è riportato nella Fig. XVII.9.4c; tensioni e correnti si riferiscono alla confi-
+gurazione NMOS con source comune corrispondente alla Fig. XVII.9.4b. Come per i
+JFET, la corrente di drain è indicata con iD; con uGS e uDS sono chiamate, rispettivamente,
+la tensione fra gate e source e la tensione fra drain e source. Nel piano delle caratteristiche
+si distinguono tre regioni, indicate nella Fig. XVII.9.4c. Per piccoli valori di uDS si ha la
+regione lineare. 
+La zona centrale delle caratteristiche è detta regione di saturazione, in quanto in essa
+la corrente non aumenta al crescere di uDS, a parità di uGS. La regione di saturazione, detta
+anche regione di pinch-off, è delimitata dalla curva uGS  uDS = UT, essendo UT la tensione
+di soglia (si veda il punto 3). Nella regione d'interdizione, la corrente è nulla o molto
+bassa e il MOSFET è interdetto.
+2)  Caratteristica di ingresso 
+Nei MOSFET, essendo la corrente di gate è IG  0, non si ha caratteristica d'ingresso.
+3)  Caratteristica di trasferimento
+Nei MOSFET, come per i JFET, si considera la caratteristica di trasferimento, detta
+anche caratteristica mutua o transcaratteristica, e operando come nei JFET, si ottiene la
+curva della Fig. XVII.9.4d, in cui è riportata la tensione di soglia UT (Threshold Voltage o
+tensione d'interdizione). Al disotto di UT la corrente è nulla.
+Fig. XVII.9.4   MOSFET Enhance-
+ment a canale n: a) struttura; b) sim-
+bolo del MOSFET, con le principali
+grandezze elettriche che interessano
+nell'analisi; c) caratteristiche di
+uscita o di drain; d) caratteristica di
+trasferimento.
+Regione di
+svuotamento
+Ossido di
+silicio
+Metallo
+B (Substrato)
+Punto di pinch-off
+Canale
+Substrato di tipo p
+uGS
+uDS
+n+
+n+
+S
+G
+D
+a)
+uGS > UT
+uDS = uGS  UT
+iD (mA)
+UT = 1 V
+Regione di saturazione
+Regione d’interdizione
+uDS (V)
+uGS = 3 V
+0
+1 2
+1
+2
+3 4 5 6 7 8 9 10
+15
+Regione
+lineare
+uGS = 2 V
+uGS = 4 V
+uGS = 5 V
+c)
+uGS (V)
+uDS (V)
+iD
+G
+D
+S
+b)
+iD (mA)
+2
+1
+0
+uGS (V)
+UT
+d)
+
+[PAG 1664]
+XVII-64
+ELETTRONICA ANALOGICA E DIGITALE
+C)  MOSFET Enhancement a canale p
+I MOSFET a canale p hanno una struttura analoga a quelli a canale n, con la diffe-
+renza che i tipi di semiconduttore sono scambiati: ora source e drain sono realizzati con
+semiconduttore di tipo p, molto drogato, e il substrato è un semiconduttore di tipo n.
+D)  MOSFET Depletion
+I MOSFET Depletion possono essere a canale n o a canale p. Un MOSFET Depletion
+a canale n è costituito da un substrato, realizzato con un semiconduttore di tipo p, e da due
+regioni molto drogate, di tipo n, che costituiscono il source ed il drain. Ciò che caratte-
+rizza il MOSFET Depletion è la presenza del canale, già formato, sotto lo strato di ossido.
+Fig. XVII.9.5   Esempi di simboli di MOSFET: a) MOSFET Enhancement a canale n, con
+indicazione sul substrato; b) MOSFET Enhancement a canale p, con indicazione sul sub-
+strato; c) MOSFET Depletion, a canale n, con indicazione sul substrato; d) MOSFET
+Depletion a canale p, con indicazione sul substrato; e) MOSFET Enhancement a canale n,
+con indicazione sul source (il simbolo è usato quando non esiste terminale corrispondente
+al substrato); f) MOSFET Enhancement a canale n, con indicazione sul substrato (si noti il
+diverso disegno del gate).
+E)  Simboli dei MOSFET
+Nella Fig. XVII.9.5 sono riportati alcuni esempi di simboli dei MOSFET, Enhance-
+ment e Depletion, a canale n ed a canale p. Si noti come la freccia contraddistingua il tipo
+di canale.
+F)  Precauzioni nell'uso dei MOSFET
+I MOSFET hanno il gate isolato (si veda il punto A), la carica elettrostatica che si può
+accumulare su di esso non ha possibilità di scaricarsi, e il potenziale di gate può assumere
+valori tali da provocare una scarica fra gate e substrato, con perforazione dello strato di
+ossido e distruzione del dispositivo. Per evitare il danneggiamento dei MOSFET, occorre
+prendere alcune precauzioni nel trasporto e nel maneggiare i MOSFET. Occorre tenere
+presente, in particolare, che il contatto con i polpastrelli delle dita o con la punta del sal-
+datore può determinare un eccessivo accumulo di elettricità statica sul gate; soprattutto se
+l'ambiente è secco, la tensione può essere alta, tale da determinare la perforazione dello
+strato di ossido.
+9.3  Circuiti di polarizzazione dei JFET
+Per i circuiti di polarizzazione dei JFET si fa riferimento alla connessione a source
+comune. Impiegando il JFET come amplificatore, generalmente il punto di funzionamento
+è nella zona centrale della regione di saturazione delle caratteristiche; in questo modo è
+possibile ottenere ampie tensioni d'uscita, con bassa distorsione. Impiegando il FET in
+circuiti digitali, il punto di funzionamento è nella regione d'interdizione o nella regione di
+linearità. L'analisi grafica per determinare il punto di funzionamento è sviluppata o con la
+caratteristica di trasferimento e la retta di polarizzazione, o con le caratteristiche di drain e
+D
+B
+S
+G
+a)
+D
+B
+S
+G
+b)
+D
+B
+S
+G
+c)
+D
+B
+S
+G
+d)
+D
+S
+G
+e)
+D
+B
+S
+G
+f)
+
+[PAG 1665]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-65
+la retta di carico. Il punto di funzionamento a riposo di un JFET è individuato dalle tre
+grandezze ID, UDS e UGS. ed è determinato: dall'equazione alla maglia d'ingresso;
+dall'equazione alla maglia d'uscita e dalle caratteristiche di drain.
+Per i JFET a canale p sono validi gli stessi tipi di circuiti dei JFET a canale n; cam-
+biano, però, le polarità di correnti e tensioni, in quanto il gate deve essere a potenziale
+positivo rispetto al source, ed il drain deve essere a potenziale negativo rispetto al source.
+Fig. XVII.9.6   Circuiti di polarizzazione dei JFET a canale n: a) con polarizzazione fissa
+di gate; b) con polarizzazione automatica; c) con polarizzazione automatica a partitore.
+A)  Circuito di polarizzazione di un JFET a canale n, con polarizzazione fissa di gate
+Il circuito con polarizzazione fissa di gate UGG è riportato nella Fig. XVII.9.6a. Il cir-
+cuito è poco usato, perché non si ha stabilizzazione del punto di funzionamento; inoltre,
+richiede due alimentazioni distinte, UDD e UGG.
+B)  Circuito di polarizzazione automatica
+Il circuito di polarizzazione automatica o di self bias è riportato nella Fig. XVII.9.6b.
+Esso non richiede una alimentazione specifica per il gate; è la resistenza di source RS che,
+con la tensione su di essa, determina la polarizzazione di gate. Il circuito tende a stabiliz-
+zare il punto di funzionamento, grazie alla presenza della resistenza RS. Essa ha la stessa
+funzione di RE nei circuiti di polarizzazione dei BJT.
+C)  Circuito di polarizzazione automatica, a partitore di gate
+Il circuito di polarizzazione automatica dei JFET a partitore di gate ha lo schema
+riportato nella Fig. XVII.9.6c. Il circuito è detto di polarizzazione automatica, perché non
+richiede una alimentazione specifica per il gate; come nel circuito della Fig. XVII.9.6b, è
+la resistenza di source RS che, con la tensione su di essa, determina la polarizzazione di
+gate e stabilizza il punto di funzionamento. La tensione fissa di gate è determinata dal par-
+titore di gate.
+9.4  Circuiti di polarizzazione dei MOSFET
+Per i circuiti di polarizzazione si considerano i MOSFET a riempimento (Enhance-
+ment) e a svuotamento (Depletion) a canale n; le stesse considerazioni valgono per i
+MOSFET a canale p, cambiando i segni di correnti e tensioni. Si hanno tre circuiti di con-
+nessione: a source comune, a gate comune e a drain comune. Il punto di funzionamento a
+riposo di un MOSFET è individuato dalle tre grandezze ID, UDS e UGS; si determina con le
+equazioni alle maglie d'ingresso e d'uscita, e con le caratteristiche di drain.
+A)  Circuito di polarizzazione con polarizzazione fissa di gate
+Lo schema del circuito a polarizzazione fissa di gate è riportato nella Fig. XVII.9.7a. Il
+UDD
+RD
+ID
+UDS
+UGS
+UGG
+
+a)
+UDD
+RD
+ID
+UDS
+UGS
+RG
+URS
+RS
+b)
+UDD
+RD
+ID
+UDS
+UGS
+R2
+URS
+RS
+R1
+UR2
+c)
+
+[PAG 1666]
+XVII-66
+ELETTRONICA ANALOGICA E DIGITALE
+circuito è semplice, però ha l'inconveniente di non essere stabilizzato.
+B)  Circuito di polarizzazione con polarizzazione a partitore di gate e resistenza di source
+Lo schema del circuito è riportato nella Fig. XVII.9.7b. Il circuito è stabilizzato, grazie
+alla presenza della resistenza di source; la sua funzione è analoga a quella di RE nei BJT.
+Fig. XVII.9.7   Circuiti di polarizzazione dei MOSFET a canale n: a) con polarizzazione
+fissa di gate; b) con polarizzazione automatica a partitore.
+9.5  Modelli dei FET per piccoli segnali
+I FET sono caratterizzati da una regione di saturazione, nella quale la corrente di drain
+è in pratica indipendente dalla tensione fra drain e source, e dipende solo dalla tensione
+fra gate e source. In questa regione, per piccole variazioni del punto di funzionamento
+attorno al punto di riposo, si può ritenere che il comportamento dei FET sia approssimati-
+vamente lineare. Si possono allora introdurre, come per i BJT, dei modelli che simulino il
+comportamento dei FET (JFET e MOSFET) per piccoli segnali. Ad esempio, il circuito
+del modello dei FET per piccoli segnali è riportato nella Fig. XVII.9.8a, ed ha equazione:
+(XVII.9.1)
+con: id = variazione della corrente di drain; ugs = variazione della tensione fra gate e
+source; gm = conduttanza mutua o transconduttanza; rd = resistenza di drain.
+Fig. XVII.9.8   Circuiti equivalenti di un FET per piccoli segnali: a) modello con genera-
+tore di corrente; b) modello con generatore di tensione.
+In questo modello, per l'impedenza d'ingresso elevata del gate, il circuito d'ingresso
+del segnale ugs può essere considerato un circuito aperto e quindi ig = 0. La conduttanza
+mutua e la resistenza di drain sono definite in base alla relazione XVII.9.1. Per quanto
+riguarda la conduttanza mutua gm, tenendo conto che id, ugs e uds rappresentano variazioni
+UDD
+RD
+ID
+UDS
+UGS
+R2
+R1
+a)
+UDD
+RD
+ID
+UDS
+UGS
+R2
+R1
+b)
+UR2
+RS
+id
+gmugs
+uds
+rd
+-------
++
+=
+rd
+uds
+ugs
+G
+S
+D
+S
+gmugs
+id
+a)
+uds
+ugs
+G
+S
+D
+S
+ugs
+id
+b)
+rd
+
+[PAG 1667]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-67
+delle rispettive grandezze iD, uGS e uDS, si ha:
+(XVII.9.2)
+Dalla XVII.9.2 si deduce che, nell'ipotesi di piccoli segnali, gm rappresenta il rapporto
+fra una variazione di iD, attorno al punto di riposo, e la variazione di uGS che lo ha pro-
+dotta, con uDS costante. La resistenza di drain rd è:
+(XVII.9.3)
+Dalla XVII.9.3 si deduce che, nell'ipotesi di piccoli segnali, rd rappresenta il rapporto
+fra una variazione di uDS attorno al punto di funzionamento, e la variazione corrispon-
+dente di iD, per uGS costante. La resistenza di drain rd ha valori compresi fra 10 k e 100
+k, con i MOSFET caratterizzati da resistenze di drain minori dei JFET.
+Nella Fig. XVII.9.8a è riportato il modello a generatore di corrente. Applicando il teo-
+rema di Thévenin al modello a generatore di corrente, si ottiene il modello a generatore di
+tensione della Fig. XVII.9.8b, con  = gmrd ( è detto coefficiente di amplificazione).
+9.6  Amplificatori a FET
+Si considerano gli amplificatori a FET prendendo come riferimento i casi di amplifi-
+catori JFET.
+A)  Amplificatori a FET a source comune
+Lo schema dell'amplificatore a source comune, detto anche amplificatore con source
+a massa, è riportato nella Fig. XVII.9.9a, in cui si è considerato un JFET a canale n. Il cir-
+cuito di polarizzazione è a partitore di gate e resistenza di source. I condensatori C1 e C2
+sono i condensatori d'accoppiamento. Il condensatore CS in parallelo alla resistenza RS è
+detto condensatore di fuga o di by-pass; esso cortocircuita a massa le componenti alter-
+nate che non attraversano RS e ciò consente di ottenere amplificazioni più elevate.
+L'amplificatore a source comune ha, in linea di massima, le seguenti caratteristiche: alta
+amplificazione di tensione, con uscita in opposizione di fase con l'ingresso; resistenza
+d'ingresso molto alta; alta resistenza d'uscita.
+B)  Amplificatori a FET a drain comune
+Lo schema dell'amplificatore a drain comune, detto anche amplificatore con drain a
+massa, è riportato nella Fig. XVII.9.9b, nel caso di JFET a canale n; il circuito di polariz-
+zazione è a partitore di gate ed è RD = 0. Il segnale d'ingresso è applicato al gate, attra-
+verso il condensatore C1, mentre il segnale d'uscita è preso sulla resistenza di source,
+attraverso C2; il drain è connesso direttamente all'alimentazione. I condensatori C1 e C2
+sono i condensatori d'accoppiamento. Le principali caratteristiche dell'amplificatore a
+drain comune sono: bassa amplificazione di tensione, perché l'uscita è minore o uguale
+all'ingresso, con uscita in fase con l'ingresso; alta resistenza d'ingresso; bassa resistenza
+d'uscita. Per queste caratteristiche è usato come separatore (buffer) che consente di adat-
+tare un circuito ad alta resistenza ad un carico a bassa resistenza.
+C)  Amplificatori a FET a gate comune
+Lo schema dell'amplificatore a gate comune, riportato nella Fig. XVII.9.9c, detto
+anche amplificatore con gate a massa, è costituito dal circuito di polarizzazione a parti-
+tore di gate. Il segnale d'ingresso è applicato al source, mentre il segnale d'uscita è preso
+sul drain. I condensatori C1 e
