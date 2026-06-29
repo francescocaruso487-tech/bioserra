@@ -1,0 +1,1178 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 13/116 ===
+Chars: 44,804 | Offset: 529,932
+
+
+
+[PAG 280]
+III-62
+FISICA
+(III.18.15)
+ed essendo U = 0, poiché si tratta di un gas perfetto, si ha:
+(III.18.16)
+–  Dall’applicazione del primo principio ad una trasformazione adiabatica, essendo Q
+= 0, allora:
+(III.18.17)
+18.5.  Secondo principio della termodinamica
+Il secondo principio della termodinamica (enunciato da Lord Kelvin) afferma che non
+è possibile realizzare una macchina ciclica che funzioni con una sola sorgente di calore e
+sia in grado di produrre lavoro. Una macchina ciclica funzionante con una sola sorgente di
+calore non può che ricevere lavoro dall’ambiente esterno e cedere calore.
+Ciclo di Carnot
+Il ciclo di Carnot rappresenta il ciclo reversibile di una macchina termica ideale in
+grado di trasformare calore in lavoro meccanico. Il ciclo utilizza due distinte sorgenti di
+calore, a temperatura T1 < T2 con le quali scambia le quantità di calore  Q1 e Q2.
+La macchina di Carnot utilizza un gas perfetto e il suo ciclo si articola in quattro fasi
+(Fig. III.18.5):
+1° fase: Espansione isoterma reversibile.
+Il gas racchiuso nel cilindro, dotato di pistone di espansione, si espande isotermica-
+mente assorbendo il calore Q2 dalla sorgente a temperatura T2 e sviluppando lavoro passa
+dallo stato A(P1, V1, T1) allo stato B(P2, V2, T1).
+2° fase: Espansione adiabatica reversibile.
+Una volta isolato il sistema, si lascia espandere ulteriormente il gas che, producendo
+lavoro, passa allo stato C(P3, V3, T2). 
+3° fase: Compressione isoterma reversibile.
+Il sistema cede il calore Q1 alla sorgente a temperatura
+T1, mentre l’ambiente esterno compie lavoro sulla mac-
+china per portare il sistema allo stato D(P4, V4, T2).
+4° fase: Compressione adiabatica reversibile.
+Isolato il sistema, l’ambiente esterno compie lavoro sul
+sistema per comprimere il gas e riportare il sistema allo
+stato iniziale A(P1, V1, T1).
+Rendimento della macchina di Carnot
+Il rendimento per la macchina di Carnot è espresso dal
+rapporto fra il lavoro prodotto e il calore assorbito, per-
+tanto:
+Fig. III.18.6  Ciclo di Carnot.
+(III.18.18)
+Essendo un ciclo la variazione di energia interna U = 0 e quindi il lavoro prodotto è
+L
+P V
+d
+
+nRT
+dV
+V
+------
+nRTloge
+Vf
+Vi
+----
+
+
+
+
+=
+Vi
+Vf
+
+=
+=
+Q
+nRTloge
+Vf
+Vi
+----
+
+
+
+
+=
+U
+-
+= L
+nCv Tf  - Ti
+
+
+=
+P
+V
+Q1
+Q2
+L
+O
+A
+B
+C
+D
+
+L
+Q2
+------
+=
+
+[PAG 281]
+FISICA
+III-63
+uguale al calore scambiato:
+L = Q2 - Q1
+(III.18.19)
+da cui il rendimento:
+(III.18.20)
+inoltreQ2> Q1ed avendo  Q1 eQ2 segni opposti, ne segue che il rendimento è:
+(III.18.21)
+Si verifica inoltre che:
+(III.18.22)
+da cui:
+(III.18.23)
+Sostituendo si ottiene:
+(III.18.24)
+Pertanto, il rendimento di tutte le macchine termiche reversibili, che funzionano con
+due diverse sorgenti di calore, dipende solo dalla differenza fra le temperature T1 e T2 con
+T1 < T2. Dalla III.18.24 si riscontra che essendo T1 < T2, deve essere  < 1, da cui il Teo-
+rema di Carnot: Il rendimento di una macchina termica che funziona con due sorgenti di
+calore è  < 1.
+19.  INTERAZIONI ELETTRICHE
+Esistono due tipi diversi di interazione elettrica che si esplicano rispettivamente con
+una forza repulsiva o attrattiva; queste due distinte interazioni sono legate all’esistenza di
+due diverse cariche, la positiva e la negativa. L’unità di misura della carica elettrica è il
+Coulomb. 
+19.1.  Legge di Coulomb
+La forza con cui si attraggono o si respingono due particelle cariche è data dalla legge
+di Coulomb:
+(III.19.1)
+dove 0 è la costante dielettrica del vuoto e vale 8,859 10-12 N m2/C2.
+19.2.  Campo elettrico
+La presenza di un sistema di cariche in una regione dello spazio determina quello che
+si chiama campo elettrico. La sua espressione matematica è:
+(III.19.2)
+dove F è la forza qui è soggetta una carica q posta in questa regione dello spazio.
+
+Q2 - Q1
+Q2
+-------------------
+1
+Q1
+Q2
+------
++
+=
+=
+0
+
+1
+
+
+L
+L
+=
+AB
+LCD
++
+nR T2 - T1
+
+loge
+VB
+VA
+------
+
+
+
+
+=
+QAB
+nRT2loge
+VB
+VA
+------
+
+
+
+
+=
+
+T2 - T1
+T2
+-----------------
+1-
+T1
+T2
+-----
+=
+=
+F
+1
+40r
+----------------
+q1q2
+r2
+----------
+
+=
+E
+F
+q---
+=
+
+[PAG 282]
+III-64
+FISICA
+Campo elettrico generato da una o più cariche
+Il modulo del campo elettrico generato da una carica puntiforme Q si ricava partendo
+dalla legge di Coulomb (III.19.1) ed è visualizzato nella Fig. III.19.1a.
+Il campo elettrico generato da due o più cariche puntiformi è dato dalla somma vetto-
+riale dei campi generati dalle singole cariche:
+(III.19.3)
+In Fig. III19.1b sono visualizzati i campi elettrici generati da due cariche puntiformi
+uguali e concordi, mentre in Fig. III.19.1c i campi generati da due cariche puntiformi
+uguali e opposte.
+Fig. III.19.1  Campo elettrico generato da una e da due cariche puntiformi.
+19.3.  Potenziale elettrico
+Il potenziale elettrico in un punto dello spazio è definito come: 
+(III.19.5)
+dove Ep è l’energia potenziale della carica di prova q. Così come l’energia potenziale,
+anche il potenziale elettrico è definito a meno di una costante additiva, per cui è più signi-
+ficativo parlare di differenza di potenziale U tra due punti. L’unità di misura del poten-
+ziale è il volt = joule / coulomb. Tra due punti esiste una differenza di potenziale di un
+volt se la forza elettrica compie il lavoro di un joule per portare la carica elettrica di 1 cou-
+lomb da un punto all’altro.
+E
+F
+q---
+1
+40r
+----------------
+Q
+r2
+----
+
+=
+=
++
++
++
++
+-
+Linee di forza
+Linee equipotenziali
+Linee di forza
+Linee equipotenziali
+Linee di forza
+Linee equipotenziali
+a)
+b)
+c)
+U
+Ep
+q-----
+=
+
+[PAG 283]
+FISICA
+III-65
+19.4.  Capacità elettrica di un conduttore
+Si chiama capacità elettrica di un conduttore il rapporto (o costante di proporziona-
+lità) tra la carica Q e il potenziale U del conduttore stesso. 
+(III.19.6)
+La sua unità di misura è il farad = coulomb / volt. Un conduttore ha la capacità elet-
+trica di 1 farad se, caricato con la carica di un coulomb, assume il potenziale di un volt.
+Condensatore
+Si dice condensatore o anche capacitore un sistema di conduttori progettato per avere
+una grossa capacità. Il sistema più semplice è costituito da due conduttori a forma di pia-
+stra posti uno di fronte all’altro a breve distanza. La capacità di un condensatore di questa
+forma è definita come: 
+(III.19.7)
+dove U1 e U2 sono i potenziali delle due piastre, dipende dalla geometria del condensatore
+stesso ed è data dalla formula:
+(III.19.8)
+dove 0 e r sono le costanti dielettriche nel vuoto e nel mezzo che separa le due piastre, d
+è la distanza tra le piastre e S è la superficie di ciascuna piastra.
+20.  CORRENTE ELETTRICA CONTINUA
+20.1.  Conduzione elettrica
+Nei metalli gli atomi sono talmente vicini che qualche elettrone esterno viene a tro-
+varsi nel campo elettrico dell’atomo più vicino. Per questo uno o due elettroni per atomo
+sono liberi di muoversi da un atomo all’altro.
+Questi elettroni liberi di chiamano elettroni di conduzione; la velocità media di questi
+elettroni è nell’ordine di 105 m/s. In situazione normale, di equilibrio elettrostatico, il loro
+moto è disordinato e non costituisce conduzione elettrica. Ma se si applica agli estremi di
+un filo metallico una differenza di potenziale, ogni elettrone subisce una forza diretta in
+verso opposto al campo (poiché la carica dell’elettrone è negativa). In questa situazione,
+gli elettroni di conduzione assumono un moto ordinato che si sovrappone al normale moto
+disordinato. La velocità di questo moto, detta velocità di deriva, è dell’ordine di 104 m/s.
+Quando esiste un moto di elettroni ordinato, si dice che il conduttore è attraversato da una
+corrente elettrica. Per convenzione si indica come verso della corrente, quello opposto al
+movimento effettivo degli elettroni.
+20.2.  Intensità di corrente
+Si definisce intensità di corrente il rapporto I = Q/t, cioè la quantità di carica elettrica
+che attraversa una sezione di conduttore nell’unità di tempo. L’unità di misura dell’inten-
+sità elettrica nel SI è l’ampere = coulomb/secondo. Si dice che un conduttore è attraver-
+sato da una corrente di intensità 1A (= 1 ampere) se attraverso una sua qualsiasi sezione
+passa la carica di un coulomb ogni secondo. Una corrente la cui intensità non varia nel
+tempo si dice corrente continua.
+20.3.  Resistenza elettrica
+La resistenza elettrica di un conduttore è definita dal rapporto R = U/I tra la differenza
+di potenziale applicata ai due estremi e l’intensità della corrente generata. L’unità di
+C
+Q
+U---
+=
+C
+Q
+U2-U1
+---------------
+=
+C
+0r
+S
+d--
+
+=
+
+[PAG 284]
+III-66
+FISICA
+misura della resistenza è l’ohm = volt/ampere. Si dice che un conduttore ha resistenza di 1
+ (=1 ohm) se, applicando ai suoi estremi una differenza di potenziale di 1 volt, esso
+viene attraversato da una corrente con intensità 1 ampere. 
+20.4.  Legge di Ohm e resistività elettrica dei materiali
+Il fatto che il rapporto R = U/I rimanga costante variando la differenza di potenziale
+vale per la maggior parte dei conduttori metallici a temperatura costante. Questo fatto,
+osservato sperimentalmente, si chiama prima legge di Ohm. I conduttori che vi obbedi-
+scono sono detti conduttori ohmici.
+La resistenza elettrica di un materiale, dipende i generale dalle sue caratteristiche fisi-
+che. Se si considera un conduttore filiforme, a sezione costante, vale la relazione:
+(III.20.1)
+dove l e S sono rispettivamente la lunghezza e la sezione del conduttore, mentre  è la
+resistività del materiale ed è caratteristica di ogni conduttore. In Tab. III.20.1 sono visua-
+lizzati i valori di resistività di alcuni materiali alla temperatura di 20 °C.
+Tab. III.20.1  Resistività di alcuni materiali
+Oltre che dalle caratteristiche fisiche del materiale considerato, la resistività varia con
+la temperatura. Ad una temperatura elevata corrisponde un maggiore stato di agitazione
+termica degli elettroni il quale contrasta il flusso migratorio generato dalla d.d.p. (diffe-
+renza di potenziale) ai capi del conduttore. Al contrario, le basse temperature favoriscono
+la conduzione elettrica, si verifica infatti che tale dipendenza è di tipo lineare:
+(III.20.2)
+dove  è il coefficiente di temperatura che è caratteristico del materiale considerato (Tab.
+III.20.2).
+Sperimentalmente si è osservato che in prossimità dello zero assoluto la resistività di
+alcuni materiali è praticamente nulla, si parla in questo caso di superconduttori.
+Recenti studi hanno riscontrato le proprietà di alcune leghe composte da ossidi di
+Materiale
+[m]
+Argento
+1,62 10-8
+Ferro
+10 10-8
+Mercurio
+95,78 10-8
+Piombo
+22 10-8
+Rame
+1,72 10-8
+Acqua distillata
+0,5 10-8
+Olio da trasformatori
+5 1011
+Porcellana
+3 1012
+Quarzo
+2 1016
+Vetro
+1 1011
+R
+l
+S--
+=
+t
+0 1
+t
++
+
+
+=
+
+[PAG 285]
+FISICA
+III-67
+Rame e Bismuto o Rame e Tallio, che si comportano da superconduttori già alla tempera-
+tura di 120 K.
+Tab. III.20.2  Coefficiente di temperatura di alcuni materiali
+20.5.  Effetto Joule
+L’applicazione di una d.d.p. ai capi di un conduttore genera l’accelerazione delle cari-
+che, che dopo un periodo transitorio, raggiungono una condizione di equilibrio, corrispon-
+dente a quella determinata d.d.p. Una parte dell’energia cinetica delle cariche accelerate
+viene trasmessa al conduttore che acquista energia termica aumentando la sua temperatura.
+Allo stesso modo, la resistenza del filamento di una lampadina percorso da corrente
+elettrica, supera facilmente la temperatura di 2000 °C e diventando incandescente emette
+radiazioni luminose.
+20.6.  Circuiti elettrici
+Un circuito elettrico è un sistema di conduttori filiformi connessi tra loro. In ogni
+parte di esso sono presenti una resistenza R, una capacità C e un induttanza L che ha
+effetto nel caso di corrente non continua. In un circuito ideale si usa rappresentare il filo
+come conduttore perfetto e concentrare gli elementi fondamentali in singoli punti del filo.
+Si chiama nodo qualunque punto del circuito in cui convergono due o più fili. Si chiama
+maglia qualunque cammino chiuso del circuito.
+20.7.  Forza elettromotrice
+Per far sì che un circuito sia attraversato da corrente continua, cioè con intensità
+costante, è necessario mantenere costante la differenza di potenziale tra i vari punti del
+circuito stesso, a dispetto del fatto che il flusso di carica tenderebbe ad annullare la d.d.p.
+Occorre perciò inserire un elemento detto generatore di d.d.p. o anche generatore di forza
+elettromotrice. Si chiama forza elettromotrice la differenza di potenziale che si ha tra i
+poli del generatore quando il circuito è aperto ed è una caratteristica del generatore stesso
+e non dipende dal circuito. Quando il circuito viene chiuso, la d.d.p. è inferiore alla f.e.m.
+(forza elettromotrice).
+20.8.  Principio di Kirchhoff
+Primo principio di Kirchoff
+La somma delle correnti che entrano in un nodo del circuito è uguale alla somma delle
+correnti che vi escono. Un enunciato equivalente del primo principio di Kirchhoff dice
+che la somma algebrica delle correnti in un nodo è nulla.
+Secondo principio di Kirchhoff o teorema della maglia
+La differenza di potenziale tra due punti qualsiasi di un circuito elettrico è indipen-
+dente dal cammino scelto per andare da un punto all’altro. Un enunciato equivalente del
+secondo principio di Kirchhoff dice che la differenza di potenziale totale che si ottiene
+percorrendo un cammino chiuso (maglia) di un circuito elettrico, cioè tornando al punto di
+Materiale
+ [°C-1]
+Argento
+0,0038
+Ferro
+0,0055
+Mercurio
+0,00089
+Piombo
+0,0043
+Rame
+0,0039
+
+[PAG 286]
+III-68
+FISICA
+partenza, è sempre nulla indipendentemente dal cammino scelto.
+20.9.  Elementi in serie e in parallelo
+Due elementi di un circuito si dicono in serie se sono disposti in modo da essere attra-
+versati consecutivamente dalla stessa intensità di corrente. Due elementi di un circuito si
+dicono in parallelo se sono disposti in modo da collegare in modo alternativo la stessa
+coppia di punti del circuito.
+Fig. III.20.1  Resistenze in serie e in parallelo.
+In particolare se gli elementi in serie sono due resistenze R1e R2 , la resistenza risul-
+tante sarà la somma:
+R = R1+ R2
+(III.20.3)
+mentre quando due resistenze sono disposte in parallelo, la resistenza risultante è data
+dalla formula:
+(III.20.4)
+Esempio
+Considerando lo schema di Fig. III.20.1c dove R = 10  si voglia calcolare il valore
+della resistenza equivalente. Per la legge di Ohm la tensione tra A e B è nulla, pertanto la
+resistenza equivalente vale Req  = 20 ..
+20.10.  Strumenti di misura
+L’amperometro è lo strumento che misura l’intensità di corrente che attraversa un cir-
+cuito (un resistore). Deve essere inserito in serie con il resistore (Fig. III.20.2a) perché sia
+attraversato dalla stessa intensità di corrente.
+Il voltmetro è lo strumento che misura la differenza di potenziale tra due punti di un cir-
+cuito (di un resistore) attraversato da corrente elettrica. Deve essere inserito in parallelo con
+il resistore (Fig. III.20.2a) perché ai suoi capi ci sia la stessa d.d.p. che ai capi del resistore.
+21.  CAMPO MAGNETICO
+Interazioni di tipo magnetico
+Si chiama magnete, o anche ago magnetico o calamita qualsiasi corpo che possiede la
+proprietà della magnetite di attirare la limatura di ferro. 
+a)
+b)
+c)
+R
+R
+R
+R
+R
+R
+R
+R
+R
+R
+R
+A
+B
+R
+1
+1
+R1
+-----
+1
+R2
+-----
++
+------------------
+=
+
+[PAG 287]
+FISICA
+III-69
+Fig. III.21.1  Inserzione di strumenti.
+I magneti sono dotati di due poli detti polo nord e polo
+sud. Non si conosce un procedimento che permetta di costru-
+ire magneti con un solo polo.
+Campo magnetico
+In analogia con il campo elettrico l’interazione tra due
+magneti si interpreta come azione su un magnete del campo
+magnetico generato da un altro magnete.
+Più in generale si può affermare che in una certa regione
+dello spazio è presente un campo magnetico, se un ago
+magnetico è soggetto ad azioni meccaniche dovute al
+momento della coppia di forze agenti sui suoi poli, che sarà
+comunque nullo nelle posizioni di equilibrio.
+Un ago magnetico libero di ruotare attorno a un punto
+fisso è in posizione di equilibrio quando è parallelo al campo
+magnetico in quel punto.
+Il vettore campo magnetico o induzione magnetica
+Il vettore campo magnetico o induzione magnetica è il
+vettore B definito dalla formula:
+(III.21.1)
+dove F è la forza cui è soggetta la carica q che si muove con velocità v nella regione in cui
+è presente il campo magnetico.
+Se in un punto dello spazio sono presenti contemporaneamente un campo elettrico e un
+campo magnetico la forza cui è soggetta la particella con carica elettrica q diventa:
+(III.21.2)
+espressione detta forza di Lorenz. 
+L’unità di misura del campo magnetico è il Tesla (T). Un tesla corrisponde al campo
+magnetico che produce una forza di un newton su una carica di un coulomb in moto per-
+pendicolare al campo con una velocità di un metro al secondo.
+Poiché la forza dovuta al campo magnetico è sempre perpendicolare alla velocità, il
+lavoro sviluppato dal campo magnetico è sempre nullo. La forza magnetica non è conser-
+vativa, cioè non è possibile definire un’energia potenziale magnetica che dipenda dal
+punto del campo.
+Esempio
+Si voglia anlizzare il moto di una carica in un campo magnetico uniforme. 
+–  Si consideri una particella con carica q libera di muoversi in un campo magnetico
+uniforme con velocità iniziale v.
+–  Si scompone la velocità iniziale nelle componenti parallela e perpendicolare al
+campo magnetico. 
+–  Poiché la forza è perpendicolare al campo, la prima componente resta invariata nel
+tempo. Poiché la forza è anche perpendicolare alla velocità, la seconda componente varia
+continuamente in direzione, ma non in modulo.
+–  Il moto della particella risulta quindi essere la combinazione di un moto rettilineo
+uniforme e di un moto circolare uniforme con velocità angolare:
+(III.21.3)
+
++
+
++
+R
+A
+V
+R
+a)
+b)
+F
+qv
+B
+
+=
+F
+q E
+v
+B
+
++
+
+
+=
+
+mv
+qB
+------
+=
+
+[PAG 288]
+III-70
+FISICA
+21.1.  Campo magnetico e correnti elettriche
+Azione di un campo elettrico su un filo percorso da corrente
+Un filo percorso da corrente immerso in un campo magnetico uniforme subisce una
+forza data dalla formula:
+(III.21.4)
+dove I è l’intensità della corrente, L la lunghezza del filo e il versore u è tangente al filo e
+indica il verso della corrente.
+Interazione magnetica tra due fili paralleli percorsi da corrente
+Tra due conduttori percorsi da corrente si genera una forza attrattiva se il verso della
+corrente è lo stesso e repulsiva nel caso di verso opposto (Fig. III.21.1).
+Il modulo della forza è dato
+dalla formula:
+(III.21.5)
+dove I1 e I2 sono le intensità di
+corrente, d è la distanza tra i fili
+e  è una costante detta perme-
+abilità magnetica nel vuoto.
+Fig. III.21.2  Conduttori paralleli.
+Legge di Biot – Savart
+Un conduttore attraversato da una corrente elettrica genera
+nello spazio circostante un campo magnetico che in ogni
+punto è perpendicolare al filo stesso e la cui intensità è
+direttamente proporzionale all’intensità di corrente e inver-
+samente proporzionale alla distanza dal filo (Fig. III.21.2).
+Il modulo del campo magnetico generato da un filo rettili-
+neo indefinitamente lungo è espresso dalla legge di Biot-
+Savart:
+(III.21.6)
+Per ottenere un campo magnetico uniforme si può utilizzare
+un solenoide (conduttore composto da una serie di spire). 
+Fig. III.21.3  Campo magnetico generato da un conduttore rettilineo.
+Inserendo all’interno del solenoide una trave costituita da sostanza ferromagnetica, si
+moltiplica enormemente l’intensità del campo magnetico e si ottiene quello che si chiama
+elettromagnete o elettrocalamita.
+  BIBLIOGRAFIA
+ARRI E., SARTORI S., La misura delle grandezze fisiche, Paravia, Torino, 1984
+CAFORIO A., Ferilli A., Fisica sperimentale. Per le scuole superiori, Le Monnier,
+Firenze, 1996
+MORRISON H., Nobel P., Fisica sperimentale. Per le scuole superiori, Ferraro,
+Napoli, 1995
+RUFFO G., Fisica per moduli unico, Zanichelli, Bologna, 2000
+RUFFO G., Fisica per moduli 2, Zanichelli, Bologna, 2000
+F
+ILu
+B
+
+=
+I2
+I1
+I2
+I1
+F
+F
+F
+F
+d
+d
+F
+I1I2L
+2d
+----------------
+=
+B
+I
+B
+0I
+2d
+---------
+=
+
+[PAG 289]
+Sezione IV
+Normativa, legislazione e sicurezza
+INDICE
+pag.
+1    NORMATIVA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+1.1    Enti normatori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+1.1.1    IEC  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+1.1.2    Iter Norma IEC  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.1.3    CENELEC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.1.4    Iter Norma CENELEC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.1.5    CEI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+1.2    Comitati Tecnici CEI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+1.3    Controllo di qualità e collaudo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+1.4    Simbologia e unità di misura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+1.5    Multipli e sottomultipli . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+2    LEGISLAZIONE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+2.1    Leggi e decreti che hanno regolamentato il settore elettrico  . . . . . . . . . . .
+35
+2.2    Direttiva Sicurezza macchine  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+37
+2.3    Direttiva Bassa Tensione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+39
+2.4    Direttiva compatibilità elettromagnetica . . . . . . . . . . . . . . . . . . . . . . . . . .
+41
+2.5    Tutela della salute e della sicurezza nei luoghi di lavoro . . . . . . . . . . . . . .
+42
+2.6    Installazione impianti elettrici negli edifici . . . . . . . . . . . . . . . . . . . . . . . .
+43
+2.6.1    Certificazione ISO 9000  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+45
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+46
+1.  NORMATIVA
+1.1  Enti normatori
+In campo normativo valgono le prescrizioni che contengono gli elementi di conce-
+zione e di progettazione degli impianti. Inizialmente le norme avevano un ambito di appli-
+cazione prettamente nazionale, ma dall’ultimo dopoguerra in poi l’incremento degli
+scambi internazionali ha reso necessaria una loro armonizzazione. Attualmente le norme
+vengono elaborate da Comitati Tecnici Nazionali, riuniti in associazioni nazionali, che
+collaborano tra loro in sede europea e internazionale.
+Gli organismi normativi nell’ambito elettrico-elettronico (Fig. IV.1.1) possono essere
+presenti a livello mondiale, europeo o nazionale, e sono:
+–  IEC,
+–  CENELEC,
+–  CEI.
+
+[PAG 290]
+IV-2
+NORMATIVA, LEGISLAZIONE E SICUREZZA
+Fig. IV.1.1   Organismi normatori.
+1.1.1  IEC
+A livello mondiale opera la IEC (International Electrotechnical Commission, Com-
+missione Elettrotecnica Internazionale) che è l’organismo responsabile della normazione
+nel settore elettrotecnico ed elettronico.
+La commissione è stata fondata nel 1906 e, attualmente, è composta da 56 Stati piena-
+mente membri e 20 Stati associati, mentre la sua struttura operativa conta 94 Commissioni
+tecniche e 80 Sottocommissioni. La sua sede attuale è a Ginevra, in Svizzera.
+A titolo di esempio si riportano le sigle e la descrizione del campo tecnico di alcune
+commissioni.
+–  TC 1 - Terminologia.
+–  TC 2 - Macchine rotanti.
+–  TC 3 - Strutture di informazione, documentazione e simboli grafici.
+–  TC 13 - Misurazione di energia elettrica, controllo delle tariffe e del carico.
+–  TC 14 - Trasformatori di potenza.
+–  TC 15 - Materiali insolati elettrici solidi.
+–  TC 16 - Principi fondamentali e principi di sicurezza per l’interfaccia uomo-mac-
+china, la marchiatura e l’identificazione.
+–  TC 17 - Apparecchiatura.
+–  TC 20 - Cavi elettrici.
+–  TC 21 - Accumulatori.
+–  TC 23 - Accessori elettrici.
+–  TC 27 - Equipaggiamento elettrico industriale.
+–  TC 32 - Fusibili.
+–  TC 34 - Lampade e relativi equipaggiamenti.
+–  TC 79 - Sistemi di allarme.
+–  TC 93 - Automazione.
+–  TC 101 - Elettrostatica.
+IEC
+emette norme
+internazionali
+CENELEC
+emette norme
+europee
+CEI
+emette norme
+nazionali
+Organismi
+nazionali di
+normazione
+
+[PAG 291]
+NORMATIVA, LEGISLAZIONE E SICUREZZA
+IV-3
+Il compito della IEC è quello di produrre ed aggiornare un insieme di norme, da tra-
+sferire a livello nazionale, che contengono le specifiche tecniche e le modalità di prova
+dei prodotti.
+Attraverso i suoi membri, quindi, la Commissione Elettrotecnica Internazionale pro-
+muove la cooperazione internazionale su tutte le questioni tecniche riguardanti la standar-
+dizzazione elettrotecnica, come l’accertamento alla conformità agli standard. In questa
+ottica, le pubblicazioni IEC facilitano la libera circolazione e la commercializzazione dei
+prodotti di qualità.
+1.1.2  Iter Norma IEC
+L’iter per la redazione di una nuova Norma Internazionale è il seguente:
+–  un Comitato Tecnico Nazionale propone, in sede internazionale, la redazione di una
+nuova norma o la modifica di una esistente;
+–  in caso di nuova norma, la proposta sarà  votata dai vari Comitati Nazionali e, in caso
+di accettazione, sarà redatta una prima bozza della norma, denominata CD (Committee
+Draft, Bozza di Comitato);
+–  dopo essere circolata fra i vari Comitati per raccogliere eventuali proposte di emenda-
+mento, la bozza si trasformerà  in documento definitivo che, se approvato a votazione
+dalla maggioranza dei commissari, assume il nome di DIS (Draft International Standard,
+Bozza di Norma Internazionale);
+–  quest’ultima bozza a sua volta dovrà essere votata entro 6 mesi e, in caso di esito
+favorevole, sarà emanata come IS (International Standard, Bozza Internazionale);
+–  durante il periodo della votazione, i vari Comitati possono ancora proporre degli
+emendamenti (messi ai voti per un periodo di 2 mesi) che, se accettati, verranno inseriti
+nel DIS, redatto infine come Norma Internazionale definitiva.
+1.1.3  CENELEC
+A livello europeo opera il CENELEC (Comité Européen de Normalisation Electrote-
+chnique, Comitato Europeo di Normalizzazione Elettrotecnica). Questo organismo è stato
+creato nel 1973 come risultato dell’unione di due precedenti organizzazioni europee:
+CENELCOM e CENEL. Oggi, il CENELEC è un’organizzazione tecnica no-profit con
+sede a Bruxelles composta dai Comitati Tecnici nazionali di 30 Paesi europei (Austria,
+Belgio, Bulgaria, Cipro, Repubblica Ceca, Danimarca, Estonia, Finlandia, Francia, Ger-
+mania, Grecia, Ungheria, Islanda, Irlanda, Italia, Lettonia, Lituania, Lussemburgo, Malta,
+Norvegia, Olanda, Polonia, Portogallo, Romania, Spagna, Slovacchia, Slovenia, Svezia,
+Svizzera e Inghilterra. Sono inoltre affiliati i Comitati Elettrotecnici di Cecoslovacchia,
+Polonia, Romania, Ungheria, Turchia.
+In aggiunta, partecipano ai lavori del CENELEC le Commissioni tecniche nazionali di
+10 Paesi affiliati (Albania, Bosnia e Erzegovina, Croazia, Macedonia, Israele, Montene-
+gro, Serbia, Tunisia, Turchia e Ucraina).
+I membri del CENELEC hanno iniziato a lavorare insieme nell'interesse dell'armoniz-
+zazione europea fin dagli anni Cinquanta, creando gli standard richiesti dal mercato e le
+norme armonizzate in sostegno della legislazione europea. Il loro lavoro ha contribuito
+alla formazione del mercato interno europeo, determinando il continuo aumento del mer-
+cato, l’incoraggiamento allo sviluppo tecnologico e garantendo la sicurezza e salute dei
+consumatori e dei lavoratori.
+Una delle principali aree di lavoro del CENELEC riguarda i prodotti compresi nella
+“Direttiva di Bassa Tensione” (direttiva del consiglio delle Comunità Europee n. 73/23/
+CEE, attuata in Italia con la Legge n. 791) e cioè tutti i prodotti per uso domestico e indu-
+striale con tensione compresa tra i 50 V e i 1000 V, in corrente alternata, e tra i 75 V e i
+1500 V, in corrente continua.
+
+[PAG 292]
+IV-4
+NORMATIVA, LEGISLAZIONE E SICUREZZA
+Il CENELEC produce la documentazione che segue.
+–  Norme europee (EN).
+–  Documenti di armonizzazione (HD).
+–  Specifiche tecniche (TS).
+–  Relazioni tecniche (TR).
+–  Guide (G).
+–  Lavori di Seminari CENELEC (CWA).
+Una norma europea EN è un documento normativo disponibile, in linea di principio,
+nelle tre lingue ufficiali del CENELEC (inglese, francese e tedesco) e che non può essere
+in conflitto con nessun’altra norma CENELEC. È una delle più importanti pubblicazioni
+di questo organismo e il suo sviluppo è governato sia dai principi di consenso, apertura,
+trasparenza e impegno che ogni paese Membro dimostra, sia dalla sua coerenza tecnica
+nazionale ed europea. Prima della sua attuazione, una norma EN deve seguire le seguenti
+fasi: stesura da parte di un Comitato tecnico o gruppo di lavoro CENELEC, inchiesta a
+livello nazionale, voto formale seguito da una pausa a livello nazionale e approvazione
+definitiva da parte del consiglio tecnico prima della sua attuazione in tutti i paesi membri.
+Un documento armonizzato HD rappresenta una prima fase di unificazione della
+norma; in esso i Comitati Nazionali emettono una norma comune nella sostanza, ma
+diversa nei particolari inerenti le specifiche problematiche nazionali. Di fatto, esso pre-
+senta le stesse caratteristiche di una norma EN ma con l’eccezione che non vi è alcun
+obbligo di pubblicare una identica norma nazionale per i paesi membri (la pubblicazione
+può essere fatta con diversi documenti/parti). Il contenuto tecnico del HD, però, deve
+essere recepito in modo uguale ovunque.
+Una specifica tecnica TS è un documento normativo prodotto e approvato da un
+Comitato tecnico (non dal CENELEC), il quale nella sua stesura non segue i requisiti che
+sono obbligatori per l’emanazione di una norma. Una TS deve solo essere prodotta in una
+delle lingue ufficiali e la sua vita è al massimo di due o tre anni.
+Le specifiche tecniche hanno l’obiettivo di sostenere il mercato europeo e orientare
+l’evoluzione e la sperimentazione tecnologica. Esse vengono revocate quando entrano in
+conflitto con una pubblicazione EN.
+Una relazione tecnica TR è un documento informativo sul contenuto tecnico di lavori
+di normazione. Esso può essere redato solo in una dei tre lingue ufficiali, viene approvato
+dal consiglio tecnico o da un comitato tecnico per semplice maggioranza e non presenta
+limiti di durata.
+Le guide CENELEC G sono documenti informativi relative al "sistema interno". Esse
+possono indicare i principi da seguire per la normazione e orientare la stesura scritta delle
+norme CENELEC. Le guide devono essere approvate dall’Assemblea generale o dal Con-
+siglio tecnico. Non hanno limitazioni di durata.
+I lavori dei seminari del CENELEC CWA sono il risultato di incontri tematici, svilup-
+pati e approvati dalle persone e dalle organizzazioni partecipanti. Essi devono essere pub-
+blicati in almeno una delle lingue ufficiali e la loro revisione è sempre possibile.
+1.1.4  Iter Norma CENELEC
+Una norma europea può  essere redatta come documento iniziale proveniente da una
+pubblicazione IEC, oppure come documento iniziale nato in un Comitato Tecnico del
+CENELEC, oppure ancora come prima bozza di documento proveniente da uno dei Paesi
+aderenti.
+La prima modalità si verifica nel 90% dei casi in quanto la maggior parte delle norme
+ha una validità che travalica i confini europei per assumere una connotazione internazio-
+nale, consentendo ai produttori europei di poter diffondere i loro materiali ovunque senza
+
+[PAG 293]
+NORMATIVA, LEGISLAZIONE E SICUREZZA
+IV-5
+incontrare particolari ostacoli.
+Nel caso in cui la prima bozza del documento provenga da uno dei Paesi aderenti, se
+riveste un particolare interesse, può essere fatta propria dal CENELEC.
+Tutte le iniziative del CENELEC vengono proposte alla IEC per costruire un gruppo
+di lavoro internazionale; se la IEC non è interessata all’iniziativa, il lavoro prosegue a
+livello europeo. Dopo un iter simile a quello delle bozze internazionali, la bozza appro-
+vata diventerà Norma Europea e, una volta ratificata, dovrà obbligatoriamente essere
+recepita in tutti i Paesi come unica norma nazionale valida.
+I Paesi membri sono a questo punto obbligati al ritiro delle norme nazionali in con-
+flitto con quelle europee.
+1.1.5  CEI
+Nel nostro Paese l’organismo che si occupa della normativa e dell’unificazione in
+campo elettrico ed elettronico è il CEI (Comitato Elettrotecnico Italiano).
+Fondato nel 1909 e legalmente riconosciuto nel 1967, svolge la funzione di definire i
+requisiti dei materiali, delle macchine, delle apparecchiature e degli impianti e di stabilire
+i criteri mediante i quali tali requisiti devono essere controllati.
+I compiti statutari del CEI si possono riassumere in:
+–  stabilire i requisiti che devono avere i materiali, le macchine,  i processi affinché pos-
+sano considerarsi rispondenti alla regola dell’arte;
+–  studiare i problemi di carattere scientifico e tecnologico connessi alle esigenze di
+impiego, funzionamento e sicurezza nel settore elettrico;
+–  fissare criteri, metodi di prova e limiti finalizzati al raggiungimento di adeguati livelli
+di sicurezza, affidabilità e qualità dei prodotti o dei processi;
+–  promuovere a livello internazionale l’armonizzazione delle norme tecniche;
+–  promuovere e favorire l’attività di certificazione.
+Il riconoscimento legale del CEI come persona giuridica è stato sancito dal D.P.R. n.
+822 del 11.7.67; inoltre la Legge n. 186 del 1.3.68 stabilisce che i materiali, le apparec-
+chiature, gli impianti elettrici ed elettronici devono essere eseguiti a regola d’arte consi-
+derando tali quelli realizzati secondo le norme CEI.
+Con il D.M. del 15.12.1978 e, successivamente, in ambito europeo, mediante la diret-
+tiva del Consiglio delle Comunità Europee il CEI è stato designato Organismo normativo
+italiano in campo elettrotecnico avente l’incarico di partecipare ai lavori comunitari per
+elaborare norme tecniche armonizzate.
+In base a queste normative il materiale elettrico di bassa tensione, se rispondente ai
+criteri fissati, può circolare liberamente nei paesi della Comunità.
+Il CEI pubblica i seguenti documenti normativi:
+–  Norme CEI.
+–  Norme CEI sperimentali.
+–  Guide CEI.
+–  Fogli di interpretazione.
+–  Varianti.
+–  Norme CEI-UNEL.
+Inoltre, pubblica i seguenti documenti non normativi:
+–  Rapporti tecnici.
+–  Dizionari.
+–  Opere editoriali varie (manuali, commentari, istruzioni CEI, studi di carattere scienti-
+fico).
+1.2  Comitati Tecnici CEI
+Il CEI è suddiviso in vari Comitati Tecnici (CT) e Sottocomitati (SC), ciascuno dei quali
+
+[PAG 294]
+IV-6
+NORMATIVA, LEGISLAZIONE E SICUREZZA
+segue una specifica categoria di prodotti; nei Comitati Tecnici sono rappresentati tutti gli
+Enti e le organizzazioni interessati (costruttori, ministeri, laboratori di prova, installatori,
+consumatori ecc.).
+I Comitati tecnici sono suddivisi in tre categorie:
+–  Comitati impiantistici.
+–  Comitati di prodotto.
+–  Comitati orizzontali.
+Rientrano nei Comitati impiantistici, per esempio, quelli che trattano gli impianti uti-
+lizzatori in bassa tensione (CT 64), gli impianti elettrici di potenza con tensione maggiore
+a 1 kV (CT 99), la protezione contro i fulmini (CT 81), i sistemi di rilevamento e segnala-
+zione per incendio, intrusione, furto, sabotaggio e aggressione (CT 79).
+Rientrano, diversamente, nei Comitati di prodotto, quelli che studiano i cavi per
+l’energia (CT 20), le fibre ottiche (CT 86), i trasformatori (CT 14), le lampade e le rela-
+tive apparecchiature (CT 34).
+Infine, i Comitati orizzontali sviluppano argomenti quali la terminologia, le grandezze
+e le unità (CT 1/25), le strutture delle informazioni, documentazioni e segni grafici (CT
+3), i fluidi isolanti (CT 10), gli aspetti ambientali di prodotti elettrici ed elettronici (CT
+111), le prove relative ai rischi da fuoco (CT 89).
+Tra i lavori e le pubblicazioni dei Comitati impiantistici risulta fondamentale la norma
+CEI 64-8 VI edizione che contiene le necessarie definizioni in materia elettrica e le pre-
+scrizioni di progetto, di montaggio e di verifica riguardanti gli impianti utilizzatori con
+tensione nominale fino a 1000 V in corrente alternata e a 1500 V in corrente continua.
+Per assicurare l’incolumità di persone e cose e per garantire il buon funzionamento
+degli impianti risulta indispensabile l’impiego di apparecchi rispondenti a ulteriori e ben
+precise norme (norme di prodotto), che ne definiscano i criteri costruttivi (dimensioni,
+prestazioni elettriche e meccaniche) e le modalità di installazione.
+In questo campo si ritrovano norme per gli impianti alimentati dalla rete pubblica in
+bassa tensione e norme per gli impianti di tipo industriale.
+Inoltre, particolare rilevanza nell’ambito industriale ricopre la norma CEI 44-5 che
+deriva da norme internazionali (IEC) e dalla direttiva CEE 89/32 meglio conosciuta come
+“Direttiva macchine” che riguarda gli equipaggiamenti delle macchine operatrici.
+Nella Tab. IV. 1.1. sono riportati i codici e le denominazioni dei Comitati Tecnici che
+lavorano nel CEI, mentre nella Tab. IV.1.2 viene riportato l’elenco delle Norme CEI attual-
+mente in vigore di alcuni Comitati Tecnici.
+Tab. IV.1.1  Comitati Tecnici del CEI
+CODICE CT
+Denominazione Comitato Tecnico CEI
+CT 0
+Applicazione delle Norme e testi di carattere generale
+CT 1/25
+Terminologia, grandezze e unità (ex CT 1/24/25)
+CT 2
+Macchine rotanti
+CT 3/16
+Strutture delle informazioni, documentazioni, segni grafici, contrassegni e altre 
+identificazioni (ex CT 3, ex CT 16)
+CT 4/5
+Motori primi idraulici e turbine a vapore (Ex CT 4, CT 5)
+CT 8/28
+Aspetti di sistema per la fornitura di energia elettrica (Ex CT 8, ex CT 28)
+
+[PAG 295]
+NORMATIVA, LEGISLAZIONE E SICUREZZA
+IV-7
+Tab. IV.1.1  segue 
+CT 9
+Sistemi e componenti elettrici ed elettronici per trazione
+CT 10
+Fluidi isolanti
+CT 11/7
+Linee elettriche aeree e materiali conduttori (ex CT 7, SC 11B)
+CT 13
+Apparecchi per la misura dell'energia elettrica e per il controllo del carico
+CT 14
+Trasformatori
+CT 15/112
+Materiali isolanti - Sistemi di isolamento (ex CT 15/98)
+CT 17
+Grossa apparecchiatura
+CT 18
+Impianti elettrici di navi ed unità fisse/mobili fuori costa (offshore)
+CT 20
+Cavi per energia
+CT 21/35
+Accumulatori e pile
+CT 22
+Elettronica di potenza
+CT 23
+Apparecchiatura a bassa tensione
+CT 26
+Macchine ed apparecchiature per saldatura elettrica
+CT 27
+Elettrotermia
+CT 29/87
+Elettroacustica/Ultrasuoni (ex CT 29)
+CT 31
+Materiali antideflagranti
+CT 32
+Fusibili
+CT 33
+Condensatori
+CT 34
+Lampade e relative apparecchiature
+CT 36
+Isolatori
+CT 37
+Scaricatori
+CT 38
+Trasformatori di misura
+CT 42
+Tecnica delle prove ad alta tensione
+CT 44
+Equipaggiamento elettrico delle macchine industriali
+CT 45/345
+Strumentazione nucleare (ex CT 45, CT 345)
+CT 46
+Cavi simmetrici e coassiali, cordoni, fili, guide d'onda, connettori per radiofre-
+quenza
+
+[PAG 296]
+IV-8
+NORMATIVA, LEGISLAZIONE E SICUREZZA
+Tab. IV.1.1  segue
+CT 48
+Componenti elettromeccanici per apparecchiature elettroniche
+CT 55
+Conduttori per avvolgimenti
+CT 56
+Fidatezza
+CT 57
+Scambio informativo associato alla gestione dei sistemi elettrici di potenza
+CT 59/61
+Apparecchi utilizzatori elettrici per uso domestico e similare (ex CT 107)
+CT 62
+Apparecchiature elettriche per uso medico
+CT 64
+Impianti elettrici utilizzatori di bt (fino a 1000 V in c.a. e a 1500 V in c.c.)
+CT 65
+Misura, controllo e automazione nei processi industriali
+CT 69
+Macchine elettriche dei veicoli stradali elettrici
+CT 70
+Involucri di protezione
+CT 76
+Apparecchiature laser
+CT 78
+Lavori elettrici sotto tensione (ex SC 11C)
+CT 79
+Sistemi di rilevamento e segnalazione per incendio, intrusione, furto, sabotag-
+gio e aggressione
+CT 80
+Apparati e sistemi per la navigazione e le radiocomunicazioni marittime
+CT 81
+Protezione contro i fulmini
+CT 82
+Sistemi di conversione fotovoltaica dell'energia solare
+CT 85/66
+Strumentazione di misura, di controllo e da laboratorio (ex CT 85, CT 66)
+CT 86
+Fibre ottiche
+CT 88
+Sistemi di generazione a turbina eolica
+CT 89
+Prove relative ai rischi di incendio
+CT 90
+Superconduttività
+CT 94
+Relé elettrici a tutto o niente (ex CT 94/95, ex CT 41)
+CT 95
+Relé di misura e dispositivi di protezione
+CT 96
+Trasformatori di sicurezza ed isolamento (ex SC 14D)
+CT 97
+Impianti elettrici per gli aiuti visivi luminosi degli aeroporti ed eliporti
+CT 99
+Impianti elettrici di potenza con tensioni nominali superiori a 1 kV in corrente 
+alternata (ex SC 11A)
+
+[PAG 297]
+NORMATIVA, LEGISLAZIONE E SICUREZZA
+IV-9
+Tab. IV.1.1  segue 
+CT 100
+Sistemi e apparecchiature audio, video e multimediali (ex CT 84/60, SC 12A, 
+SC 12G)
+CT 101
+Elettrostatica
+CT 103
+Radiotrasmissioni (ex SC 103)
+CT 104
+Condizioni ambientali. Classificazioni e metodi di prova (ex CT 50, CT 75)
+CT 105
+Celle a combustibile
+CT 106
+Esposizione umana ai campi elettromagnetici (ex CT 211)
+CT 108
+Sicurezza delle apparecchiature elettroniche per tecnologia audio/video, 
+dell'informazione e delle telecomunicazioni (ex CT 74, CT 92)
+CT 109
+Coordinamento degli isolamenti per apparecchiature a bassa tensione (ex SC 
+28A)
+CT 111
+Aspetti ambientali di prodotti elettrici ed elettronici (ex CT 308)
+CT 113
+Nanotecnologie per sistemi e prodotti elettrici ed elettronici
+CT 205
+Sistemi bus per edifici (ex CT 83)
+CT 210
+Compatibilità elettromagnetica (ex CT 110)
+CT 214
+Sistemi e tecnologie elettrotecniche, elettroniche e telematiche per la gestione 
+ed il controllo del traffico e dei trasporti stradali (ex CT 114)
+CT 216
+Rivelatori di gas (ex CT 116)
+CT 301/22G
+Azionamenti elettrici (ex CT 301, SC 22G)
+CT 304
+Interferenze elettromagnetiche
+CT 305
+Apparati e sistemi terminali di telecomunicazioni (ex SC 303B, 303E/F)
+CT 306
+Interconnessione di apparecchiature di telecomunicazione (ex SC 303L)
+CT 307
+Aspetti ambientali degli impianti elettrici
+CT 309
+Componentistica elettronica (ex CT 40, 47, 52/91)
+CT 310
+Power Line Communications
+CT 311
+Generazione, microgenerazione ed efficienza energetica
+CT 500
+Metrologia Generale
+CT 501
+Valutazione, Attestazione e Certificazione della Conformità
+
+[PAG 298]
+IV-10
+NORMATIVA, LEGISLAZIONE E SICUREZZA
+Tab. IV.1.2  Norme di alcuni CT del CEI 
+Comitato Tecnico 0
+Norma It. CEI 0-1 - Class. CEI 0-1 - CT 0 - Fascicolo 3359 H - Anno 1997 - Edizione Prima
+Adozione di nuove norme come base per la certificazione dei prodotti nei paesi membri del CENE-
+LEC
+Norma It. CEI 0-2 - Class. CEI 0-2 - CT 0 - Fascicolo 6578 - Anno 2002 - Edizione Seconda
+Italiano Guida per la definizione della documentazione di progetto degli impianti elettrici
+Norma It. CEI 0-4/1 - Class. CEI 0-4/1 - CT 0 - Fascicolo 4465 - Anno 1998 - Edizione Prima
+Italiano Documenti CEI normativi e non normativi
+Parte 1: Tipi, definizioni e procedure 
+Norma It. CEI 0-5 - Class. CEI 0-5 - CT 0 - Fascicolo 3953 - Anno 1997 - Edizione Prima
+Italiano Dichiarazione CE di conformità
+Guida all'applicazione delle Direttive Nuovo Approccio e della Direttiva Bassa Tensione (Memoran-
+dum CENELEC N°3) 
+Norma It. CEI CLC/TS 50439 - Class. CEI 0-6 - CT 0 - Fascicolo 9296 - Anno 2008 - Edizione 
+Seconda Inglese - Italiano Qualificazione delle imprese di installazione di impianti elettrici 
+Norma It. CEI UNI EN 45510-1 - Class. CEI 0-7 - CT 0 - Fascicolo 5219 - Anno 1999 - Edizione 
+Prima
+Inglese - Italiano Guida per l'approvvigionamento di apparecchiature destinate a centrali per la pro-
+duzione dell'energia elettrica Parte 1: Clausole comuni 
+Norma It. CEI 0-10 - Class. CEI 0-10 - CT 0 - Fascicolo 6366 - Anno 2002 - Edizione Prima
+Italiano Guida alla manutenzione degli impianti elettrici 
+Norma It. CEI 0-11 - Class. CEI 0-11 - CT 0 - Fascicolo 6613 - Anno 2002 - Edizione Prima
+Italiano Guida alla gestione in qualità delle misure per la verifica degli impianti elettrici ai fini della 
+sicurezza 
+Norma It. CEI 0-12 - Class. CEI 0-12 - CT 0 - Fascicolo 6683 - Anno 2002 - Edizione Prima
+Italiano Approccio per processi e indicatori della qualità per le aziende del settore elettrotecnico ed 
+elettronico Linee guida generali all'applicazione delle Norme ISO 9000: 2000 
+Norma It. CEI EN 61140 - Class. CEI 0-13 - CT 0 - Fascicolo 7298 - Anno 2004 - Edizione Prima
+Inglese - Italiano Protezione contro i contatti elettrici - Aspetti comuni per gli impianti e le apparec-
+chiature 
+Norma It. CEI EN 61140/A1 - Class. CEI 0-13;V1 - CT 0 - Fascicolo 8994 - Anno 2007 - Edizione 
+Inglese - Italiano Protezione contro i contatti elettrici - Aspetti comuni per gli impianti e le apparec-
+chiature 
+Norma It. CEI 0-14 - Class. CEI 0-14 - CT 0 - Fascicolo 7528 - Anno 2005 - Edizione Prima
+Italiano DPR 22 ottobre 2001, n.462
+Guida all'applicazione del DPR 462/01 relativo alla semplificazione del procedimento per la denun-
+cia di installazioni e dispositivi di protezione contro le scariche atmosferiche, di dispositivi di messa 
+a terra degli impianti elettrici e di impianti elettrici pericolosi
