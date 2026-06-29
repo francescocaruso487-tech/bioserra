@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-29T13:10:13.000Z",
+  "lastUpdate": "2026-06-29T13:14:20.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
@@ -26,7 +26,31 @@
       "pomeriggio": "Riposo ore calde",
       "sera": "Irrigazione"
     },
-    "kb_sintesi": {}
+    "kb_sintesi": {
+      "principi_attivi": [
+        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere la salute delle piante, agendo come un parafulmine terro-celeste (Brevetto n. 529202 di Christofleau, [pdf_13]).",
+        "L'applicazione di correnti continue (DC) a basso voltaggio vicino alle radici stimola la crescita e la salute delle piante, migliorando l'assorbimento dei nutrienti (ELECTROCULTURE FOR BEGINNERS, [pdf_17]).",
+        "L'uso di fili di ferro a due polarità avvolti da spirali di tungsteno o carbonio può generare campi magnetici utili per la crescita vegetale (Pier Luigi Ighina, L'ATOMO MAGNETICO, [pdf_28]).",
+        "La biodinamica e l'elettrocoltura possono essere integrate per armonizzare le energie del suolo e delle piante, seguendo principi di equilibrio naturale (Christofleau, [pdf_13]).",
+        "L'elettrocoltura si basa su principi di fisica naturale, come quelli studiati da Nikola Tesla, per ottimizzare la crescita senza ricorrere a sostanze chimiche (Nikola Tesla, LE MIE INVENZIONI, [pdf_45])."
+      ],
+      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (1-5V) tramite elettrodi in rame/zinco posizionati vicino alle radici delle piante in vegetazione/fioritura. Questo metodo, descritto in ELECTROCULTURE FOR BEGINNERS ([pdf_17], pag. 28), stimola la crescita e la resistenza delle piante in condizioni di caldo estremo (36°C).",
+      "consiglio_suolo_da_testi": "Utilizzare un apparecchio magnetico terro-celeste (asta in ferro con spirali di tungsteno) per armonizzare le energie del suolo e ridurre lo stress da calore. Questo dispositivo, brevettato da Christofleau ([pdf_13], Brevetto n. 529202), aiuta a mantenere l'equilibrio elettromagnetico del terreno, essenziale in condizioni di siccità (umidità 26%).",
+      "consiglio_biodinamica_da_testi": "Seguire i principi di Pier Luigi Ighina sull'ATOMO MAGNETICO ([pdf_28], pag. 34) per armonizzare le energie del suolo e delle piante. In particolare, avvolgere un nucleo di ferro con spirali di tungsteno e posizionarlo vicino alle piante per creare un campo magnetico benefico, soprattutto durante le fasi di vegetazione e fioritura.",
+      "scoperta_del_giorno": "L'elettrocoltura può essere un valido alleato in condizioni di caldo estremo (36°C) e bassa umidità (26%), poiché le correnti a basso voltaggio stimolano la resistenza delle piante allo stress idrico e termico, come suggerito da Christofleau ([pdf_13]) e confermato da ELECTROCULTURE FOR BEGINNERS ([pdf_17]).",
+      "tecnica_da_provare": {
+        "nome": "Elettrocoltura con elettrodi DC a basso voltaggio",
+        "descrizione": "Posizionare elettrodi in rame e zinco nel terreno vicino alle radici delle piante in vegetazione/fioritura. Collegare gli elettrodi a una batteria da 1.5-9V (ad esempio, una pila AA o una batteria da 9V) per applicare una corrente continua a basso voltaggio. Mantenere la corrente per 4-6 ore al giorno, preferibilmente nelle ore più fresche (mattina presto o sera).",
+        "fonte": "[pdf_17] ELECTROCULTURE FOR BEGINNERS, pag. 28",
+        "materiali": [
+          "Elettrodi in rame e zinco (o altri metalli compatibili)",
+          "Batteria da 1.5-9V (pila AA, batteria da 9V, ecc.)",
+          "Fili elettrici con connettori",
+          "Strumenti per posizionare gli elettrodi nel terreno",
+          "Timer o interruttore per regolare la durata dell'applicazione"
+        ]
+      }
+    }
   },
   "agenti": {
     "piante": {
