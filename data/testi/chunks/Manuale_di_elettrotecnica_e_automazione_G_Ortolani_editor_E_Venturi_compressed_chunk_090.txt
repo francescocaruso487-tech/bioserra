@@ -1,0 +1,751 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 90/116 ===
+Chars: 43,303 | Offset: 3,932,517
+
+
+
+[PAG 1804]
+XVII-204
+ELETTRONICA ANALOGICA E DIGITALE
+Generalmente sono previste due possibilità di funzionamento della base dei tempi,
+indicate come di tipo Trigger e di tipo Auto.
+1)  Funzionamento di tipo Trigger
+Gli impulsi provenienti dal circuito di trigger sono applicati al generatore di segnale
+di gate, che, come si è detto, è un trigger di Schmitt. Un impulso negativo, applicato
+all'ingresso del trigger di Schmitt, fa scendere la tensione di ingresso al di sotto della ten-
+sione di soglia inferiore e pertanto l'uscita u2 del trigger passa dal livello alto al livello
+basso. L'abbassamento della tensione u2 determina, attraverso un circuito interruttore,
+l'inizio della rampa del generatore di rampa. La tensione d'uscita dell'integratore, u3, è
+inviata all'amplificatore orizzontale, la cui uscita è applicata, a sua volta, alle placchette di
+deflessione orizzontale. Altri impulsi negativi, che si possono presentare all'ingresso del
+trigger, non hanno effetto e quindi la rampa continua fino a quando il pennello elettronico
+raggiunge l'estremità destra dello schermo. Il trigger di Schmitt allora commuta, la sua
+uscita u2 passa al livello alto e determina la fine della rampa di u3. Il circuito di hold-off
+fornisce all'uscita un segnale che blocca il generatore del segnale di gate; in questo modo
+un nuovo impulso di trigger non agisce prima che il fascio elettronico non sia ritornato
+all'estremità sinistra dello schermo. Inoltre, spesso l'intervallo di hold-off può essere
+esteso dall'operatore, in modo da evitare immagini multiple; nel caso, infatti, di forme
+d'onda complesse, un impulso subito dopo la fine della rampa, può causare l'inizio di una
+nuova rampa e quindi la visualizzazione di un porzione di forma d'onda non desiderata,
+prima che si presenti nuovamente all'ingresso Y la parte di segnale voluta.
+Un inconveniente del funzionamento di tipo Trigger è che, in assenza di impulsi di
+trigger, non vi è tensione di rampa e quindi non compare traccia sullo schermo; ciò impe-
+disce, ad esempio, di posizionarla a livello zero prima di iniziare una misura. Inoltre,
+l'operatore, non vedendo nessuna traccia sullo schermo, non è in grado di valutare imme-
+diatamente le cause della mancanza della traccia, ad esempio quando il livello di trigger
+non è posizionato correttamente. Per evitare questo inconveniente, è previsto e normal-
+mente è utilizzato il funzionamento di tipo Auto.
+Fig. XVII.27.10   Generatore della base dei tempi.
+2)  Funzionamento di tipo Auto
+Quando il generatore della base dei tempi è commutato nella posizione Auto, il trigger
+di Schmitt viene trasformato in un multivibratore astabile, generando una forma d'onda
+rettangolare. Si hanno due casi:
+–  In assenza di segnale d'ingresso, 1'astabile oscilla spontaneamente alla frequenza di
+alcune decine di hertz, e quindi si ha una successione di denti di sega all'uscita del genera-
+tore della base dei tempi; il fascio elettronico si muove, con la stessa periodicità, orizzon-
+talmente sullo schermo. In questo modo, a differenza del funzionamento di tipo Trigger,
+Circuito di
+trigger
+Circuito di
+hold-off
+Generatore
+di rampa
+Generatore
+del segnale
+di gate
+All’amplificatore
+orizzontale
+Timediv
+u3
+u1
+u4
+u5
+u2
+
+[PAG 1805]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-205
+si ha sullo schermo una traccia orizzontale in assenza di segnale e quindi si può stabilire
+un corretto riferimento dei valori dell'asse Y, agendo con il controllo Y-Pos.
+–  In presenza di segnale, gli impulsi di trigger sincronizzano il multivibratore astabile
+e quindi l'immagine del segnale da visualizzare risulta stabile sullo schermo. Nel tipo di
+funzionamento Auto si ha però l'inconveniente che, se la frequenza del segnale da visua-
+lizzare è bassa, inferiore ad alcune decine di hertz, l'astabile non è più sincronizzabile;
+allora, per visualizzare il segnale, occorre impiegare il funzionamento di tipo Trigger.
+27.3.4  Amplificatore orizzontale
+L'amplificatore orizzontale, riportato nello schema della Fig. XVII.27.7, ha lo scopo di:
+–  Amplificare il dente di sega fornito dal generatore della base dei tempi o il segnale
+esterno applicato all'ingresso X.
+–  Fornire all'uscita alle due placchette di deflessione orizzontale due tensioni simme-
+triche, bilanciate rispetto a massa, per le stesse ragioni viste al Par. XVII.27.3.1, esami-
+nando l'amplificatore verticale.
+–  Permettere il posizionamento orizzontale della traccia. Tramite la manopola X-Pos,
+si agisce su un potenziometro, mediante il quale si varia il potenziale continuo di una plac-
+chetta rispetto all'altra (il principio è analogo a quello visto per l'amplificatore verticale).
+–  Permettere la moltiplicazione del guadagno per un fattore costante, generalmente
+uguale a cinque o a dieci; peraltro, non tutti gli oscilloscopi presentano questa possibilità.
+Il comando, indicato con Mag da Magnification, consente di espandere la base dei tempi
+di una quantità fissa, in modo da rendere possibile l'esame più accurato di una parte della
+forma d'onda visualizzata.
+–  Consentire di applicare all'amplificatore orizzontale o il dente di sega proveniente
+dal generatore della base dei tempi o un segnale esterno, proveniente dall'ingresso X. Nel
+primo caso si visualizza la forma d'onda applicata all'ingresso Y; nel secondo si ha la com-
+posizione dei due segnali applicati agli ingressi X e Y, con possibilità di ottenere, ad esem-
+pio, le figure di Lissajous. Come si vede nella Fig. XVII.27.7, il selettore S3 permette la
+scelta fra i due tipi di funzionamento.
+27.3.5  Controlli sul tubo a raggi catodici
+I principali controlli sul tubo a raggi catodici sono riportati nello schema della Fig.
+XVII.27.7. Si notano:
+–  Il controllo di intensità del fascio (Intensity). Mediante la manopola corrispon-
+dente, si regola la polarizzazione della griglia di controllo e quindi la luminosità della
+traccia; se il potenziale della griglia diviene più negativo, minore è il numero di elettroni
+che costituiscono il fascio elettronico e quindi più bassa è la luminosità della traccia.
+–  Il controllo della focalizzazione del fascio (Focus). Mediante la manopola corri-
+spondente, si regola la polarizzazione dell'anodo focalizzatore, in modo da focalizzare il
+fascio elettronico sullo schermo.
+–  Il controllo dell'astigmatismo (Astigmatism). Mediante la manopola corrispon-
+dente, si regola la polarizzazione dell'anodo acceleratore, in modo che il punto luminoso
+sia circolare e non presenti difetti di astigmatismo.
+–  Il circuito di unblanking. Detto anche circuito di intensificazione, ha lo scopo di
+portare la griglia di controllo del tubo a raggi catodici al disopra dell'interdizione,
+nell'intervallo in cui viene tracciata la forma d'onda, e di interdire il tubo nell'intervallo di
+ritorno del fascio elettronico; in questo modo la traccia di ritorno non disturba l'osserva-
+zione della forma d'onda.
+–  Il controllo dell'asse Z. L'ingresso indicato con asse Z è posto comunemente nella
+parte posteriore dell'oscilloscopio; non tutti gli oscilloscopi, però, ne sono provvisti. Nella
+Fig. XVII.27.7 il segnale all'ingresso Z risulta applicato alla griglia di controllo del tubo a
+
+[PAG 1806]
+XVII-206
+ELETTRONICA ANALOGICA E DIGITALE
+raggi catodici e quindi modula il fascio elettronico, aumentando o diminuendo la lumino-
+sità a seconda che la tensione all'ingresso Z aumenti o diminuisca. Un esempio di impiego
+dell'asse Z è nella misura di frequenza.
+27.4  Oscilloscopi a doppia traccia
+Gli oscilloscopi hanno generalmente due o più canali, in modo da permettere la visua-
+lizzazione di due o più forme d'onda contemporaneamente. In questo modo è possibile il
+confronto fra segnali in uno stesso circuito; ad esempio, si possono visualizzare la ten-
+sione di ingresso e la tensione di uscita di un amplificatore e quindi valutare le caratteri-
+stiche di amplificazione e distorsione del circuito.
+Essendo unico il cannone elettronico, è necessario commutare il fascio elettronico fra
+i segnali; un commutatore elettronico fa sì che i segnali stessi siano applicati in tempi suc-
+cessivi alle placchette di deflessione verticale ed il fascio elettronico descriva le diverse
+forme d'onda in intervalli successivi. Un esempio di schema a blocchi di oscilloscopio a
+doppia traccia è riportato nella Fig. XVII.27.11, limitatamente alle parti che riguardano la
+formazione della doppia traccia.
+I tipi più comuni di funzionamento sono i seguenti.
+A)  Modo Alternate
+In questo tipo di funzionamento il fascio elettronico descrive sullo schermo il segnale
+applicato al canale A durante una scansione. Al termine della scansione, quando il fascio
+elettronico ritorna a sinistra, alla posizione iniziale, il commutatore elettronico commuta e
+all'amplificatore verticale è applicato il segnale presente all'ingresso del canale B; nella
+scansione successiva il fascio elettronico descrive pertanto sullo schermo il segnale del
+canale B. Al termine di questa seconda scansione si ha una nuova commutazione e quindi,
+durante la successiva scansione, sullo schermo è descritto il segnale del canale A. In
+sostanza i due segnali sono tracciati alternativamente sullo schermo, prima uno e poi
+l'altro, ognuno in un periodo di scansione orizzontale, e da ciò deriva la denominazione di
+alternato (Alternate) di questo modo di funzionamento; grazie alla persistenza dei fosfori
+dello schermo, i due segnali sono visibili contemporaneamente Un esempio di visualizza-
+zione di due segnali con il modo Alternate è riportato nella Fig. XVII.27.12a.
+Fig. XVII.27.11   Schema a blocchi di un oscilloscopio a doppia traccia, limitatamente
+alle parti relative alla formazione della doppia traccia.
+Attenuatore
+Preamplifi-
+catore
+YA
+YB
+Attenuatore
+Preamplifi-
+catore
+Multivi-
+bratore
+Commutatore
+elettronico
+Amplifica-
+tore finale
+verticale
+Al CRT
+placchette Y
+Trigger A
+S1
+Trigger B
+S2
+Chop
+Alt
+Al CRT
+placchette X
+Amplifica-
+tore finale
+orizzontale
+Circuito
+di trigger
+Generatore
+base dei
+tempi
+
+[PAG 1807]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-207
+Il circuito della Fig.XVII.27.11 permette di realizzare il tipo di funzionamento
+descritto. Si consideri l'interruttore S2 chiuso (posizione Alt). Il multivibratore è un cir-
+cuito bistabile, avente cioè due stati stabili in cui può rimanere indefinitamente; esso è
+comandato dagli impulsi di trigger attraverso il circuito della base dei tempi e la sua uscita
+commuta fra due livelli di tensione, ad ognuno dei quali corrisponde uno stato del com-
+mutatore. Quest'ultimo è costituito da due circuiti porta, che funzionano alternativamente
+e permettono di connettere all'uscita o solo il canale A o solo il canale B; in questo modo
+sono applicati alle placchette di deflessione verticale alternativamente i segnali dei canali
+A e B. Si osservi inoltre il comando del circuito di sincronizzazione: il circuito di trigger
+può essere comandato o dal canale A (trig A) o dal canale B (trig B). Se, ad esempio, la
+sincronizzazione è comandata dal segnale A (trig A), la traccia del segnale B è sincroniz-
+zata dal segnale A, quindi gli oscillogrammi dei due segnali sullo schermo mantengono le
+stesse relazioni di fase dei segnali applicati all'oscilloscopio e possono essere perciò con-
+frontati per valutare le relazioni di fase. Vi è da rilevare, però, che, se il segnale del canale
+B non ha frequenza uguale o multipla di quella del segnale del canale A, l'immagine di B
+non è stabile.
+Il funzionamento di tipo Alternate è molto usato; ha, però, un inconveniente, nella
+visualizzazione dei segnali alle basse frequenze. Data la bassa persistenza dei fosfori,
+quando il fascio elettronico inizia la traccia del secondo segnale, la parte iniziale del
+primo potrebbe già essere scomparsa, rendendo impossibile il confronto fra i due segnali.
+Per superare questo inconveniente è stato introdotto il modo di funzionamento di tipo
+Chopped.
+Fig. XVII.27.12   Esempi di immagini in un oscilloscopio a doppia traccia, nel caso di
+funzionamento di tipo: a) Alternate; b) Chopped.
+B)  Modo Chopped
+In questo modo di funzionamento, i segnali sono applicati alle placchette di defles-
+sione verticale in rapida alternanza; il fascio elettronico descrive prima una breve por-
+zione di un segnale, poi una breve porzione del secondo, poi torna a tracciare un breve
+tratto del primo e così via. I segnali sono rappresentati a tratti, come si vede nella Fig.
+XVII.27.12b; nell'intervallo di tempo in cui il fascio passa da un segnale all'altro, il cir-
+cuito di unblanking determina lo spegnimento del fascio; in questo modo, la visualizza-
+zione non è disturbata dalla traccia, disegnata tratteggiata in figura, che si ha durante la
+commutazione.
+Il funzionamento può essere spiegato con lo schema a blocchi della Fig. XVII.27.11.
+L'interruttore S2 è nella posizione di apertura (Chop). Il multivibratore ha ora un funziona-
+mento di tipo astabile, oscillando fra i due stati ad una frequenza elevata, ad esempio di 1
+MHz, e quindi i segnali sui due canali di ingresso sono applicati all'amplificatore verticale
+in rapida alternanza; si ha il diagramma della Fig. XVII.27.12b.
+Per avere una buona visualizzazione dei segnali, senza avvertire la presenza della seg-
+mentazione della traccia, la commutazione deve essere a frequenza elevata, ma ciò non è
+a)
+b)
+
+[PAG 1808]
+XVII-208
+ELETTRONICA ANALOGICA E DIGITALE
+sempre possibile, a causa dei limiti della risposta in frequenza dell'amplificatore verticale.
+Segnali con rapide commutazioni, come quelli riportati nella Fig. XVII.27.12b, richiedono
+amplificatori con buona risposta alle alte frequenze, perché non si abbiano distorsioni;
+comunemente, è conveniente che la frequenza di commutazione non superi fs 100,
+essendo fs la frequenza dei taglio superiore dell'amplificatore verticale.
+C)  Altri modo di funzionamento
+Gli oscilloscopi a doppia traccia prevedono, comunemente, altri tipi di funziona-
+mento, oltre a quelli descritti; consentono, ad esempio, la visualizzazione della somma dei
+segnali sui canali A e B (modo AB) e della differenza dei segnali sui canali A e B (modo
+AB).
+27.5  Oscilloscopi con base dei tempi ritardata
+Gli oscilloscopi possono presentare una doppia base dei tempi: la base dei tempi prin-
+cipale (Main Timebase) e la base dei tempi ritardata (Delayed Timebase). La base dei
+tempi principali funziona nel modo descritto nel Par. 23.3 e permette di vedere la forma
+d'onda del segnale di ingresso sullo schermo; la base dei tempi ritardata consente di visua-
+lizzare una parte della stessa forma d'onda su tutta l'ampiezza dello schermo. La parte può
+essere scelta dall'operatore: sono regolabili sia il ritardo del suo inizio a partire dal
+segnale di trigger sia la durata della porzione esaminata.
+Il funzionamento della base dei tempi ritardata è il seguente. La rampa generata dalla
+base dei tempi principale è applicata ad un comparatore, in cui è confrontata con una ten-
+sione continua, regolabile con un potenziometro, indicato spesso con Delay. Quando la
+tensione di rampa eguaglia la tensione di confronto, il comparatore genera un impulso che
+comanda la base dei tempi ritardata. Questa ha caratteristiche analoghe alla base dei tempi
+principali e pertanto genera una rampa di pendenza regolabile mediante un commutatore
+Delayed Timediv; maggiore è la pendenza, più rapidamente la traccia è descritta sullo
+schermo, minore è la porzione rappresentata su tutto lo schermo e quindi, in definitiva,
+può essere più accurata l'analisi del segnale. Il ritardo t con cui inizia la rampa ritardata
+può essere regolato variando la tensione continua applicata al comparatore; aumentando
+la tensione continua, aumenta il tempo necessario perché la rampa principale raggiunga il
+valore della tensione continua stessa e quindi aumenta il ritardo t fra l'inizio della rampa
+ritardata e l'inizio della rampa principale.
+Fig. XVII.27.13   Forme d'onda relative al funzionamento della base dei tempi ritardata:
+a) esempio di forma d'onda visualizzata con la base dei tempi principale; b) tensione a
+rampa della base dei tempi principale; c) tensione a rampa della base dei tempi ritardata;
+d) forma d'onda che si vede sullo scherma con la base dei tempi ritardata.
+A
+B
+t
+t
+a)
+b)
+t
+c)
+t
+d)
+t
+
+[PAG 1809]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-209
+Nella Fig. XVII.27.13 è riportato un esempio che illustra il funzionamento dell'oscillo-
+scopio con base dei tempi ritardata. In a) è disegnato il segnale che si vuole visualizzare.
+La rampa della base dei tempi principale, riportata in b), fa sì che l'immagine che si vede
+sullo schermo sia la parte compresa fra i punti A e B. Per vedere nei particolari un
+impulso, si utilizza la base dei tempi ritardata. La rampa ritardata, disegnata in c), parte
+con un ritardo t rispetto all'inizio della rampa principale ed è visualizzato solo un
+impulso del segnale; l'impulso, rappresentato in d), occupa tutto lo schermo e quindi può
+essere esaminato nei particolari. 
+27.6  Oscilloscopi digitali 
+Gli oscilloscopi digitali hanno caratteristiche analoghe a quelle degli oscilloscopi ana-
+logici, per quanto riguarda le funzioni di base; le differenze consistono, in particolare, nel
+modo di acquisizione dei segnali e nel modo di rappresentarli.
+Fig. XVII.27.14   Esempio di schema a blocchi di un oscilloscopio digitale.
+A)  Principio di funzionamento
+Un esempio di schema a blocchi di oscilloscopio digitale a due canali è riportato nella
+Fig. XVII.27.14. Le funzioni dei principali blocchi sono le seguenti.
+–  Campionamento, quantizzazione e codifica.
+I segnali sui due canali, tramite gli amplificatori/attenuatori di ingresso, sono applicati a
+convertitori analogico-digitali (AD), esaminati nel Par.XVII.26.2. In essi il segnale viene
+campionato ad intervalli costanti di tempo, ad una frequenza fs detta frequenza di campio-
+namento (sample frequency); il campionamento è comandato dalla base dei tempi, la cui
+precisione in frequenza è controllata da un oscillatore al quarzo. La frequenza di campio-
+namento fs deve essere sufficientemente alta. Infatti, in base al teorema del campiona-
+mento o teorema di Shannon, fs deve essere maggiore del doppio della frequenza massima
+fmax contenuta nel segnale; se è verificata la condizione fs > 2fmax, è possibile ricostruire il
+segnale originario utilizzando i valori campionati, senza perdere informazione. Per quanto
+Convertitore
+AD
+YA
+Attenuatore e
+amplificatore
+di ingresso
+Convertitore
+AD
+Attenuatore e
+amplificatore
+di ingresso
+YB
+Memoria di
+acquisizione
+Memoria di
+acquisizione
+Circuito
+di trigger
+Circuito
+di ritardo
+Base dei
+tempi
+Processore
+di controllo
+Display
+Oscillatore
+al quarzo
+A
+B
+Ext-Trig
+
+[PAG 1810]
+XVII-210
+ELETTRONICA ANALOGICA E DIGITALE
+riguarda la quantizzazione, vi è da osservare che essa è necessaria, in quanto il segnale
+all'ingresso è analogico, quindi può assumere infiniti valori fra due estremi; per conver-
+tirlo in una serie discreta di valori, e quindi codificarlo, occorre quantificarlo, ossia suddi-
+videre il campo di valori di tensione in un numero finito di fasce, ad ognuna delle quali si
+fa corrispondere un valore codificato, ad esempio in binario; i valori campionati compresi
+in una stessa fascia sono convertiti nello stesso valore digitale. Ciò permette la conver-
+sione degli infiniti valori che può assumere il segnale di ingresso in una serie discreta di
+valori digitali, ma, come si è visto nel Par.XVII.26.2, il processo comporta un errore, detto
+errore di quantizzazione. Per avere buona risoluzione, i livelli di quantizzazione devono
+essere di numero elevato, in modo che la variazione di tensione da un livello quantizzato
+di tensione a quello adiacente sia piccola; se n è il numero di bit della parola codificata, i
+livelli distinguibili sono 2n. Ad esempio, se il convertitore A/D è a 8 bit, si dice che la
+risoluzione è di 8 bit ed i livelli di tensione codificabili sono 28 = 256.
+–  Memorizzazione.
+I campioni ottenuti sono memorizzati nelle memorie di acquisizione, controllate anch'esse
+dalla base dei tempi. La memorizzazione è in sequenza e, quando la memoria è completa,
+viene riscritta, a partire dal dato memorizzato più lontano nel tempo. Maggiore è il
+numero di celle di memoria, più lunga è la porzione di forma d'onda che può essere
+memorizzata e quindi visualizzata; se N sono i byte della memoria e fs è la frequenza di
+campionamento, la porzione di segnale visualizzabile è Nfs. Ad esempio, una memoria di
+64 K, può contenere 64 000 campioni; se la frequenza di campionamento è di 1 GHz, la
+porzione di segnale memorizzabile è di durata uguale a 64 000/109= 64 s.
+–  Circuiti di trigger e di ritardo.
+Il circuito di trigger genera un segnale di trigger, comandato da uno dei due canali di
+ingresso o da un circuito esterno. Diversamente dagli oscilloscopi analogici, l'impulso di
+trigger è applicato ad una linea di ritardo, prima di agire sulla base dei tempi; l'operatore
+può controllare il tempo di ritardo. Se il ritardo è posto uguale a zero, il campionamento e
+la memorizzazione si arrestano in corrispondenza dell'impulso di trigger. La porzione di
+segnale memorizzato, dipendente dalla quantità di memoria dell'oscilloscopio, è quella
+che precede l'impulso di trigger e, per questo, si dice che gli oscilloscopi digitali permet-
+tono di valutare segnali in tempi negativi. La funzione può essere utile nel caso in cui la
+forma d'onda presenta un errore e si vuole osservare l'andamento del segnale negli istanti
+precedenti, per cercare di individuare la causa: si regola l'impulso di trigger in modo che
+si presenti in corrispondenza dell'istante in cui si manifesta l'errore e, sullo schermo, com-
+pare l'andamento del segnale negli istanti precedenti. Aumentando il ritardo, si possono
+visualizzare porzioni di segnale che si sviluppano parte prima e parte dopo l'impulso di
+trigger, e che perciò lo comprendono; per valori ancora maggiori di ritardo, si rappresen-
+tano porzioni del segnale che seguono l'impulso di trigger.
+–  Visualizzazione del segnale.
+Per visualizzare il segnale sullo schermo (display), è necessario ricostruirlo dai campioni
+memorizzati; per questo si utilizza un processore, come il processore di controllo della
+Fig. XVII.27.14. La forma d'onda viene ricostruita a partire dai valori codificati, letti nelle
+memorie, con un algoritmo di interpolazione; per ottenere il valore della forma d'onda in
+un dato istante, si tiene conto di un determinato numero di valori adiacenti, opportuna-
+mente pesati.
+B)  Vantaggi ed inconvenienti degli oscilloscopi digitali
+Gli oscilloscopi digitali presentano i seguenti vantaggi, deducibili dalle caratteristiche
+di funzionamento descritte:
+
+[PAG 1811]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-211
+–  L'immagine è memorizzata e quindi può essere ripresa successivamente, anche in
+assenza del segnale di ingresso; in particolare è facile l'acquisizione di segnali non ripeti-
+tivi, come i transitori, in quanto l'immagine rimane memorizzata.
+–  È possibile, grazie alla presenza del microprocessore, automatizzare le misure. In
+particolare, l'oscilloscopio digitale è in grado di fornire automaticamente alcune gran-
+dezze, come il tempo di salita di un segnale o il valore efficace di una forma d'onda; con-
+sente di eseguire operazioni sui dati, come la moltiplicazione dei valori sui due canali; è
+in grado di cambiare automaticamente la scala dell'immagine, in modo da permettere la
+visualizzazione ottimale del segnale; consente di eseguire un processo di calibrazione
+automatica.
+–  Possono essere connessi ad un bus dati, e quindi si è in grado di trasmettere i dati
+memorizzati; in particolare, possono essere collegati a periferiche, come stampanti, o ad
+una rete di computer con cui i dati possono essere condivisi.
+–  La forma d'onda può essere analizzata anche per valori negativi del tempo.
+–  L'acquisizione dei dati sui due canali è simultanea, dato che i convertitori sono due
+e operano contemporaneamente. Negli oscilloscopi analogici, invece, i segnali sui diversi
+canali sono catturati in intervalli di tempo differenti, sia nel modo Alternate sia nel modo
+Chopped.
+Gli inconvenienti degli oscilloscopi digitali sono principalmente i seguenti:
+–  Il costo è più alto.
+–  La visualizzazione è meno immediata che negli oscilloscopi digitali. Prima della
+visualizzazione, infatti, la forma d'onda deve essere campionata, convertita in digitale,
+memorizzata ed infine elaborata da un processore per essere ricostruita.
+–  L'immagine visualizzata può presentare errori, dovuti all'aliasing. Si è visto, infatti,
+che la ricostruzione della forma d'onda applicata è possibile, senza perdere informazione,
+se la frequenza di campionamento fs è maggiore del doppio della frequenza massima con-
+tenuta nel segnale. Se la forma d'onda applicata all'ingresso presenta fronti ripidi, o
+comunque componenti a frequenze elevate, maggiori di fs2, si ha il fenomeno detto
+dell'aliasing; la frequenza fs2 è indicata con fc ed è detta frequenza critica di Nyquist.
+L'aliasing consiste nella comparsa, nella forma d'onda ricostruita e visualizzata, di com-
+ponenti non presenti nel segnale originario; ad esempio, si può verificare che, se il segnale
+applicato all'oscilloscopio ha una componente a frequenza (fs2)  f, essa causa la gene-
+razione di una componente a frequenza fs  [(fs2)  f ]  (fs2)  f. L'inserimento di un
+filtro passa basso, all'ingresso, non è conveniente, in quanto riduce la banda ma elimina
+anche rapidi cambiamenti nella forma d'onda, che spesso costituiscono oggetto di analisi;
+d'altra parte, la banda risulta limitata dalla frequenza di taglio superiore dell'amplificatore
+di ingresso.
+27.7  Sonde
+Le sonde sono state introdotte per ridurre gli inconvenienti della connessione diretta
+dell'oscilloscopio con il circuito di misura.
+A)  Caratteristiche delle sonde
+Si consideri lo schema della Fig. XVII.27.15a, in cui il circuito di misura, visto dai ter-
+minali dell'oscilloscopio, è sostituito dal circuito equivalente, costituito da una resistenza
+equivalente Req in serie ad un generatore di tensione ideale Ueq; Ci è la capacità di
+ingresso dell'oscilloscopio, dell'ordine di 10 pF; Ri è la resistenza di ingresso dell'oscillo-
+scopio, in molti casi uguale a 1 M. La connessione diretta ha i seguenti inconvenienti: il
+circuito presenta le caratteristiche di un filtro passa basso e quindi il taglio delle frequenze
+superiori del segnale ne impedisce una corretta visualizzazione; il connettore, non scher-
+
+[PAG 1812]
+XVII-212
+ELETTRONICA ANALOGICA E DIGITALE
+mato, può captare dall'ambiente disturbi, che compaiono sullo schermo; l'impedenza di
+ingresso dell'oscilloscopio non sempre è sufficientemente alta nei confronti del circuito di
+misura, la corrente assorbita dal circuito non è quindi trascurabile e l'influenza dell'oscil-
+loscopio sul circuito di misura è allora causa di errori.
+Fig. XVII.27.15   Sonde: a) connessione di un oscilloscopio a un circuito di misura senza
+l'impiego di una sonda; b) connessione di un oscilloscopio a un circuito di misura con
+l'impiego di una sonda; c) partitore compensato.
+Per superare o comunque ridurre questi inconvenienti sono state introdotte le sonde.
+Nella sua realizzazione più semplice, riportata nella Fig. XVII.27.15b, la sonda (probe)
+consiste di una resistenza R1 e un condensatore C1 in parallelo, posti entro un contenitore
+schermato; da esso escono, da un lato un puntale, che viene applicato al punto del circuito
+in cui si vuole effettuare la misura, e dall'altro lato un cavo schermato, connesso
+all'ingresso dell'oscilloscopio. I componenti R1 e C1, con la resistenza Ri e la capacità Ci
+d'ingresso dell'oscilloscopio, costituiscono un partitore, come si vede nella Fig.
+XVII.27.15c; con R2 si è indicata la resistenza di ingresso Ri dell'oscilloscopio, mentre C2
+è la somma della capacità di ingresso Ci dell'oscilloscopio e della capacità del cavo scher-
+mato. Agendo su C1, che è variabile, si fa in modo che il partitore sia compensato, cioè
+che il comportamento non dipenda dalla frequenza: il circuito di ingresso dell'oscillosco-
+pio non ha più le caratteristiche di un filtro passa basso e quindi le frequenze più alte del
+segnale non sono più attenuate. Si dimostra che il partitore è compensato, e quindi UiU
+non dipende dalla frequenza, se è verificata la condizione: R1C1  R2C2; la resistenza di
+ingresso dello strumento diviene R1  R2 e la capacità di ingresso è C1. C2(C1C2). Si ha
+pertanto, oltre ad un miglioramento della risposta in frequenza, un aumento di impedenza;
+il sistema sonda-oscilloscopio è perciò caratterizzato da un'impedenza più alta di quella
+offerta dal solo oscilloscopio, è più basso l'assorbimento di corrente dal circuito in cui si
+effettua la misura e quindi in definitiva diminuisce l'influenza dell'oscilloscopio sul cir-
+cuito di misura.
+Infine, la sonda è connessa all'oscilloscopio con un cavo schermato, che rende il colle-
+gamento non influenzato da disturbi ambientali.
+Req
+Ueq
+Ci
+Ri
+Oscilloscopio
+a)
+U
+c)
+Ui
+R1
+C1
+C2
+R2
+Req
+Ueq
+R1
+C1
+Ui
+Ci
+Ri
+b)
+
+[PAG 1813]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-213
+Per effettuare in pratica la calibrazione, si applica alla sonda una forma d'onda rettan-
+golare e si varia la capacità C1 fino a quando sullo schermo appare la forma d'onda rettan-
+golare senza deformazioni.
+B)  Esempi di sonde
+–  Un tipo di sonda molto usata è la sonda 10:1 (10:1 probe). Essa ha la struttura rap-
+presentata nella Fig. XVII.27.15b; se Ri = 1 M, si ha: R1 = 9Ri = 9 M; C1 = C29. Il
+valore di C1 è determinato sperimentalmente, come si è visto precedentemente. L'impe-
+denza di ingresso è ora 10 volte quella dell'oscilloscopio senza sonda. Il partitore compen-
+sato determina, però, un'attenuazione di 10:1 del segnale di ingresso.
+–  Tipi di sonde analoghi alla precedente sono caratterizzati da valori maggiori di R1.
+Ad esempio, con R1 = 99 M si ha un'impedenza di ingresso di 100 M, però con l'incon-
+veniente di un'attenuazione 100:1; l'amplificatore di ingresso dell'oscilloscopio deve
+avere amplificazione elevata, perché l'ampiezza del segnale sullo schermo sia adeguata. 
+–  Le sonde adattate sono usate nelle misure in alta frequenza. Sono costituite da un
+cavo coassiale avente impedenza caratteristica di 50 , chiuso su un carico avente una
+impedenza di 50 , uguale alla impedenza caratteristica del cavo. Il cavo di collegamento
+fra sonda e oscilloscopio si comporta coma una linea di trasmissione adattata, quindi può
+funzionare bene fino a frequenze molto alte, dell'ordine di alcuni gigahertz; occorre osser-
+vare che il carico della sonda è costituito dall'impedenza di ingresso dell'oscilloscopio,
+quindi questo tipo di sonda si può usare solo quando l'oscilloscopio è provvisto di un
+ingresso a 50  oppure quando è possibile inserire, fra ingresso e massa, una resistenza di
+50  (in pratica la resistenza inserita si trova in parallelo alla resistenza di ingresso
+dell'oscilloscopio, ma essendo quest'ultima di 1 M, la resistenza di ingresso risultante è
+circa uguale a 50 ). Inconveniente di questo tipo di sonda è l'impedenza di ingresso
+bassa, uguale a 50 ; la corrente assorbita dal circuito di misura può essere elevata, con
+conseguenti errori di misura. Si ovvia in parte all'inconveniente inserendo, come
+nell'esempio della Fig. XVII.27.15b, una resistenza R1 = 450 . In questo modo la resi-
+stenza di ingresso della sonda diviene uguale a 500 , con un minore assorbimento di cor-
+rente. L'inconveniente di questa soluzione sta, però, nel fatto che la resistenza di 450 
+causa una caduta di tensione; si ha un partitore di tensione all'ingresso dell'oscilloscopio,
+con attenuazione 10:1 del segnale.
+–  Se i segnali da analizzare sono piccoli e sono richieste alte impedenze di ingresso
+delle sonde, si impiegano le sonde attive, che contengono un amplificatore; esse hanno,
+però, l'inconveniente di esser più ingombranti, pesanti e costose delle sonde non amplifi-
+cate.
+–  Nel caso di misure in circuiti con tensioni elevate, si impiegano sonde specifiche
+per alte tensioni, con elevato rapporto di attenuazione.
+27.8  Misure di tensione, corrente, frequenza e fase con l'oscilloscopio
+L'oscilloscopio è uno strumento molto usato nelle misure elettroniche; in questo para-
+grafo vengono considerate le misure di tensione, corrente, frequenza e fase.
+A)  Misure di tensioni continue
+Nella misura delle tensioni continue, occorre portare la traccia orizzontale al centro
+dello schermo, posizione che deve occupare quando la tensione di ingresso è di 0 V; si
+può, peraltro, assumere una qualunque linea orizzontale del reticolo come linea di riferi-
+mento, attribuendo ad essa il valore di 0 V. Per questo, il selettore di ingresso viene posto
+nella posizione GND (tensione d'ingresso uguale a 0 V) e il generatore della base dei
+tempi è commutato nella posizione AUTO. Sullo schermo compare la traccia di riferi-
+mento, che viene portata a coincidere con l'asse X del reticolo, o comunque con una qua-
+lunque linea orizzontale del reticolo stesso, mediante il controllo Y-Pos. Si applica poi la
+
+[PAG 1814]
+XVII-214
+ELETTRONICA ANALOGICA E DIGITALE
+tensione continua, che si vuole misurare, portando il selettore d'ingresso nella posizione
+DC; la traccia orizzontale si sposta verso l'alto o il basso, a seconda che la tensione sia
+positiva o negativa. Si ruota il selettore voltdiv, in modo da ottenere un ampio sposta-
+mento della traccia sullo schermo, così che l'errore di lettura abbia piccola influenza sulla
+misura. Il numero di divisioni di cui si è spostata la traccia, moltiplicato per il valore indi-
+cato dal selettore voltdiv, dà la misura della tensione continua.
+Fig. XVII.27.16   Misure di tensione e frequenza con l'oscilloscopio.
+B)  Misure di tensione di segnali variabili nel tempo
+Se la tensione del segnale è ripetitiva, si visualizza la forma d'onda, in modo che
+l'immagine sia stabile, e la si posiziona opportunamente sullo schermo, così da potere leg-
+gere con precisione il numero di divisioni relative alla grandezza da misurare. Ad esem-
+pio, se si vuole misurare il valore picco a picco della tensione u della Fig. XVII.27.16,
+conviene posizionarla, con il controllo Y-Pos, in modo che il minimo coincida con una
+linea orizzontale del reticolo, e con il controllo X-Pos, in modo che il massimo sia in cor-
+rispondenza dell'asse Y del reticolo, così da sfruttare le divisioni più fitte dell'asse Y. Il
+numero di divisioni nl, moltiplicato per l'indicazione del selettore volt/div, dà il valore
+picco a picco del segnale u.
+Se il segnale non è ripetitivo, è conveniente utilizzare un oscilloscopio digitale, che
+memorizza la forma d'onda e consente quindi una visualizzazione successiva, per le ope-
+razioni di misura.
+C)  Misure di corrente
+Le misure di corrente si possono effettuare facendo passare la corrente incognita attra-
+verso una resistenza nota e determinando il valore della tensione ai capi della resistenza
+con l'oscilloscopio. Il resistore deve essere di precisione e di sufficiente potenza, in rela-
+zione alla massima corrente da determinare. La misura della tensione si effettua come ai
+precedenti paragrafi; dividendo il valore di tensione trovato per la resistenza, si ottiene la
+corrente incognita.
+D)  Misure di frequenza di segnali periodici
+Le misure di frequenza comunemente sono ricondotte a misure di periodo; possono,
+però, essere effettuate utilizzando le figure di Lissajous.
+1)  Misure di frequenza ricondotte a misure di periodo
+Le misure di frequenza possono essere ricondotte alle misure di periodo, determi-
+nando l'intervallo di tempo fra due valori successivi del segnale, distanti un ciclo com-
+A
+B
+u
+n1
+n2
+
+[PAG 1815]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-215
+pleto; in genere si utilizza il passaggio per lo zero del segnale, dato che il tratto a
+pendenza massima della forma d'onda consente una più facile individuazione dell'interse-
+zione con le linee orizzontali del reticolo.
+Un esempio è riportato nella Fig. XVII.27.16. La forma d'onda u viene visualizzata
+sullo schermo. I punti di inizio A e di fine B sono localizzati sull'asse X, agendo col con-
+trollo Y-Pos; successivamente, col controllo X-Pos, il punto di inizio A è portato in corri-
+spondenza di una linea verticale della graticola. In questo modo è possibile effettuare una
+lettura precisa, utilizzando le suddivisioni dell'asse X del reticolo. Moltiplicando il
+numero n2 di divisioni per il valore dell'indicazione del selettore Timediv, si ottiene il
+valore del periodo di u.
+2)  Misure di frequenza con il metodo delle figure di Lissajous
+Le figure di Lissajous sono oscillogrammi che si ottengono quando all'ingresso verti-
+cale dell'oscilloscopio è applicato un segnale sinusoidale di frequenza fv e all'asse orizzon-
+tale è applicato un segnale sinusoidale di frequenza fo, nel caso in cui il rapporto delle
+frequenze fv/ fo è quello di numeri interi. Nella Fig. XVII.27.17a è riportato un esempio di
+figura di Lissajous, che si ottiene quando all'ingresso verticale dell'oscilloscopio è appli-
+cato un segnale a frequenza fv = 2fo. In generale, il rapporto fra il numero di punti di tan-
+genza con le due rette orizzontale e verticale, n e m, dà il rapporto fra le frequenze dei due
+segnali applicati all'ingresso verticale e orizzontale; nell'esempio della Fig.XVII.27.17b, è
+fv f0 = 52.
+Nel caso di frequenze uguali, cioè quando fv = fo, si ottiene sullo schermo una retta o
+un'ellisse (si vedano le misure di fase).
+Fig. XVII.27.17   Figure di Lissajous nei casi in cui le frequenze dei segnali sinusoidali
+applicati agli ingressi verticale e orizzontale hanno rapporto: a) 2:1; b) 5:2.
+La misura di frequenza si effettua applicando ad esempio all'ingresso verticale il
+segnale di frequenza incognita fx e all'ingresso orizzontale un segnale proveniente da un
+oscillatore campione, tarato, a frequenza variabile fo. Si varia la frequenza dell'oscillatore
+tarato fino ad ottenere sullo schermo un'ellisse o un cerchio; la frequenza incognita è
+allora data dalla frequenza dell'oscillatore campione. Il campo di misura di fx può essere
+esteso oltre la banda di frequenza dell'oscillatore, utilizzando le diverse figure di Lis-
+sajous. Infatti variando fo, quando fx /fo è un rapporto fra numeri interi, sullo schermo com-
+pare una figura di Lissajous, da cui è possibile risalire al rapporto fx /fo e quindi a fx. Ad
+esempio, se la figura è quella indicata nella Fig. XVII.27.17b e fo = 2 MHz, si ottiene
+fx /fo = 5/2 e quindi fx = 5 MHz.
+Il metodo delle figure di Lissajous ha l'inconveniente della difficoltà di interpreta-
+zione delle figure, quando il rapporto fra le due frequenze è elevato.
+1
+2
+1
+1
+2
+3
+4
+5
+1
+2
+n
+n
+m
+m
+a)
+b)
+
+[PAG 1816]
+XVII-216
+ELETTRONICA ANALOGICA E DIGITALE
+E)  Misure di fase
+Le misure di fase comunemente sono ricondotte a misure di intervalli di tempo, utiliz-
+zando un oscilloscopio a doppia traccia; possono, però, essere effettuate utilizzando le
+figure di Lissajous.
+1)  Misure di fase ricondotte a misure di intervalli di tempo
+La relazione di fase fra due segnali aventi la stessa frequenza può essere determinata
+impiegando un oscilloscopio a doppia traccia e applicando i segnali ai due canali. Si
+regola l'attenuazione di ingresso in modo che l'ampiezza dei segnali sullo schermo sia la
+stessa e si misura il ritardo t fra le due tracce (Fig. XVII.27.18a). Lo sfasamento  è dato
+dalla relazione:
+(XVII.27.11)
+con: t = ritardo fra gli istanti di passaggio per lo zero delle due tracce; T = periodo dei
+due segnali; n1 = numero di divisioni fra i punti di passaggio per lo zero delle due tracce;
+n2: numero di divisioni corrispondenti a un periodo.
+La misura è semplice e rapida, però è poco precisa nel caso di piccoli sfasamenti. Si
+può, allora, impiegare, quando esiste, il controllo Magnifier, con il quale si espande l'asse
+dei tempi dell'oscilloscopio; se, ad esempio, si espande di 10 volte l'asse dei tempi, la
+distanza fra i punti di passaggio per lo zero risulta moltiplicata per 10 e quindi la sua
+misura diventa più precisa.
+Fig. XVII.27.18   Misure di fase con l'oscilloscopio: a) misura di fase ricondotta a misura
+di intervallo di tempo; b) misura di fase con l'ellisse di Lissajous.
+2)  Misure di fase con il metodo dell'ellisse di Lissajous
+Il metodo dell'ellisse di Lissajous consente misure di sfasamento con discreta preci-
+sione; ha l'inconveniente di essere relativamente laborioso.
+La misura di fase si basa sull'ellisse visualizzata sullo schermo di un oscilloscopio. Se,
+infatti, si applicano agli ingressi orizzontale e verticale dell'oscilloscopio due segnali
+aventi la stessa frequenza, l'oscillogramma che si ottiene sullo schermo è un'ellisse, o, al
+limite, una retta, se i due segnali sono in fase o in opposizione di fase; dai parametri
+dell'ellisse si può risalire allo sfasamento fra i due segnali. Con riferimento alla Fig.
+XVII.27.18b, si ha:
+(XVII.27.12)
+Il valore di  non è, però, immediatamente determinabile, in quanto hanno lo stesso
+
+360
+t
+T-----
+
+360
+n1
+n2
+-----
+
+=
+=
+a)
+b)
+T
+t
+A
+B
+x
+y
+t
+sen
+B
+A---
+=
+
+[PAG 1817]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-217
+seno sia l'angolo  che l'angolo 180°  . L'indeterminazione della misura viene eliminata
+in base a considerazioni sulle caratteristiche del circuito su cui si effettua la misura, se
+sono note; altrimenti, si può inserire nel circuito una rete ritardatrice che aggiunge uno sfa-
+samento noto e, dalla alterazione che subisce l'ellisse, si risale allo sfasamento originario.
+BIBLIOGRAFIA
+BIONDO G., SACCHI E., Manuale di Elettronica e Telecomunicazioni, 5a edizione,
+Hoepli, Milano, 2005.
+CUNIBERTI E., DE LUCCHI L., Elettronica 1, componenti e sistemi digitali, Petrini Edi-
+tore, Torino, 1996.
+CUNIBERTI E., DE LUCCHI L., DE STEFANO B., Elettronica 2, componenti e tecniche
+circuitali, Petrini Editore, Torino, 1997.
+CUNIBERTI E., DE LUCCHI L., DE STEFANO B., Elettronica, dispositivi e sistemi,
+Petrini Editore, Torino, 1992. 
+DAUGHERTY K.M., Analog-to-Digital Conversion, McGraw-Hill, Inc, 1995.
+DORF R.C., Introduction to Electric Circuits, John Wiley & Sons, Inc., 1993.
+DORF R.C., The Electrical Engineering Handbook, CRC Press, Boca Raton, USA,
+1993.
+FRANCO S., Design with Operational Amplifiers and Analog Integrated Circuits,
+WCB/McGraw-Hill, 1998.
+GIACOLETTO L.J., Electronics Designers' Handbook, McGraw-Hill, Inc, 1977.
+HORENSTEIN M.N., Microelectronic Circuits and Devices, Prentice-Hall, Inc.,
+Englewood Cliffs, New Jersey, 1996.
+JAEGER R.C., Microelectronic Circuit Design, Irwin McGraw-Hill, 1997.
+HOROWITZ P., HILL W., The Art of Electronics, Cambridge University Press, 1989.
+HUELSMAN L.P., Active and Passive Analog Filter Design, McGraw-Hill, Inc, 1993.
+MALVINO A.P., Electronic Principles, McGraw-Hill Book Company, 1984.
+MILLMAN J., GRABEL A., Microelectronics, McGraw-Hill Book Company, New York,
+1987.
+NELSON V.P., NAGLE H.T., CARROL B.D., IRWIN J.D., Digital logic circuit analysis
+and design, Prentice-Hall, Inc., Englewood Cliffs, New Jersey, 1995.
+SACCHI E., BIONDO G., Elettronica digitale, Ulrico Hoepli Editore, Milano, 2000.
+SACCHI E., BIONDO G., Elettronica analogica, Ulrico Hoepli Editore, Milano, 2001.
+SACCHI E., BIONDO G., Elettronica applicata, Ulrico Hoepli Editore, Milano, 2002.
+SANDIGE R.S., Modern Digital Design, McGraw-Hill, Inc., New York, 1990.
+SCHUBERT T., KIM E., Active and Non-Linear Electronics, John Wiley & Sons, Inc.,
+1996.
+TAUB H., SCHILLING D., Digital Integrated Electronics, McGraw-Hill Book Com-
+pany, New York, 1977.
