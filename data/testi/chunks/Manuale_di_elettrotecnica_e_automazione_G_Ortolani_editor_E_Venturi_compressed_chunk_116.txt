@@ -1,0 +1,1512 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 116/116 ===
+Chars: 39,425 | Offset: 5,086,780
+
+
+
+[PAG 2273]
+SEZIONE XIII SENSORI E TRASDUTTORI
+41
+, ottico, XIII-9
+, di Archimede, XIII-65
+Pulsazione di taglio, XIII-6
+Resistori, di tipo NTC, XIII-78
+, di tipo PTC, XIII-79
+Rippli, XIII-6
+Risposta del trasduttore, nel dominio dei 
+tempi, XIII-6
+, nel dominio delle frequenze, XIII-6
+Rivelatori RTD, XIII-79
+Ruota dentata con sensore di prossimità, 
+XIII-54
+Seconda legge di Newton, XIII-73
+Sensibilità, XIII-5
+Sensori, XIII-3
+, a induzione, XIII-30
+, a effetto Hall, XIII-34
+, a ultrasuoni, XIII-40
+, a ultrasuoni con condensatore, XIII-41
+, a ultrasuoni piezoelettrici, XIII-41
+, analogici con uscita in corrente, XIII-30
+, analogici con uscita in tensione, XIII-29
+, autoamplificato ON/OFF in corrente 
+alternata, XIII-28
+, autoamplificato ON/OFF in corrente 
+continua, XIII-28
+, capacitivi, XIII-38
+, di prossimità, XIII-28
+, di prossimità induttivi, XIII-30
+, di prossimità ultrasonici, XIII-40
+, di tipo analogico, XIII-3
+, estensimetrici, XIII-47
+, fattore di proporzionalità, XIII-3
+, fotoelettrici, XIII-42
+, LVDT, XIII-14
+, magnetici a contatto reed, XIII-35
+, non amplificato NAMUR, XIII-29
+, optoelettronici, XIII-42
+, optoelettronici a diffusione, XIII-42
+, optoelettronici a retroriflessione, XIII-43
+, optoelettronici a sbarramento, XIII-43
+, per il controllo di livello, XIII-56
+, per il controllo di peso e di deformazione, 
+XIII-47
+, per il controllo di portata, XIII-67
+, per il controllo di posizione e di sposta-
+mento, XIII-7
+, per il controllo di prossimità, XIII-27
+, per il controllo di temperatura, XIII-78
+, per il controllo di velocità, XIII-53
+, per il controllo di vibrazioni, XIII-45
+, pneumatici, XIII-39
+, pneumatici a interruzione di getto, XIII-
+33
+, pneumatici a interruzione di getto com-
+binati, XIII-40
+, pneumatici a interruzione di getto con-
+trapposto, XIII-40
+, pneumatici a interruzione di getto diretto, 
+XIII-40
+, pneumatici a riflessione, XIII-39
+, pneumatici di prossimità, XIII-39
+, RVDT, XIII-14
+Sistemi di misura, secondo il principio della 
+diffrazione e dell’interferenza, XIII-11
+, secondo il principio della luce riflessa, 
+XIII-10
+Slew-rate, XIII-6
+Sonde di livello, XIII-61
+Strozzamenti a pressione variabile, XIII-71
+Struttura di un estensimetro a trama pelli-
+colare, XIII-49
+Tempo, di assestamento, XIII-6
+, di salita, XIII-6
+, morto, XIII-6
+Tensione di Hall, XIII-34
+Termistori, XIII-78
+Termocoppie, XIII-79
+, tipi di, XIII-80
+Termoresistenze, XIII-79
+Trasduttori, XIII-2
+, a conduttività, XIII-63
+, a lamelle vibranti, XIII-59
+, a massa reale mediante l’effetto Coriolis, 
+XIII-73
+, a microonde, XIII-58
+, a riga ottica, XIII-9
+, a risoluzione lineare, XIII-14
+, a tasteggio elettromeccanico, XIII-65
+, a ultrasuoni, XIII-56, 71
+, ad effetto Coriolis, XIII-73
+, capacitivi, XIII-61, 76
+, caratteristica dinamica, XIII-6
+, caratteristica statica, XIII-3
+, di portata ad area variabile, XIII-70
+, di portata di massa, XIII-68
+, di portata volumetrici, XIII-68
+
+[PAG 2274]
+42
+INDICE ANALITICO PER SEZIONI
+, di posizione angolare, XIII-20
+, digitali assoluti, XIII-3
+, digitali incrementali, XIII-3
+, estensimetrici, XIII-47, 76
+, flussometrici di tipo magnetoinduttivo, 
+XIII-69
+, inductosyn, XIII-19
+, magneto-induttivi, XIII-69
+, per il controllo di pressione, XIII-74
+, piezoelettrici, XIII-45, 77
+, potenziometrici, XIII-77
+, resolver, XIII-17
+, synchro, XIII-16
+, volumetrici a vortice, XIII-70
+Trasformatore differenziale, XIII-14
+Tubo di Bourdon, XIII-77
+Valori nominali dei termistori NTC, XIII-
+79
+
+[PAG 2275]
+SEZIONE XIV AUTOMAZIONE
+43
+Sezione XIV
+Automazione
+CIM, XIV-9
+CPU (Central Processing Unit), ALU 
+(Arithmetic Logic Unit), XIV-28
+, UC (Unità di Controllo), XIV-30
+Indirizzamento del PLC, XIV-95
+, elementi bit, XIV-96
+, elementi parola, XIV-96
+Istruzioni del PLC, XIV-94
+, contatore, XIV-111
+, drum (programmatore a tamburo), XIV-
+125
+, elementi grafici di base, XIV-101
+, registro (LIFO, FIFO), XIV-120
+, temporizzatore, XIV-106
+Linguaggi di programmazione per PLC, 
+XIV-64
+, function block diagram (FBD), XIV-76
+, grafici, XIV-67
+, instruction list (IL), XIV-82
+, ladder diagram (LD), XIV-69
+, sequential function chart (SCF), XIV-
+76
+, structured text (ST), XIV-85
+Logica cablata, XIV-5
+Logica programmabile, XIV-5
+Operazioni con il PLC, XIV-131
+, calcolo e assegnazione, XIV-111, 138
+, comparazione, XIV-131
+, controllo del programma, XIV-153
+, gestione del tempo, XIV-106
+, logiche, XIV-136
+, matematiche e trigonometriche, XIV-
+135
+, ricerca, XIV-137
+, scorrimento, XIV-136
+, transcodifica, XIV-136
+PLC (Programmable Logic Controller), 
+alimentatore, XIV-26
+, CPU, XIV-27
+, ingressi analogici, XIV-35
+, ingressi binari, XIV-34
+, modalità operative, XIV-99
+, moduli di comunicazione, XIV-46
+, moduli di conteggio veloce, XIV-45
+, moduli di posizionamento assi, XIV-46
+, moduli intelligenti, XIV-43
+, moduli I/O, XIV-32
+, moduli I/O remoti, XIV-48
+, moduli per termocoppie, XIV-46
+, moduli PID, XIV-43
+, moduli speciali, XIV-18
+, moduli web, XIV-49
+, monotask, bitask, multitask, XIV-70
+, task (master, fast, evento), XIV-76
+, uscite analogiche, XIV-35
+, uscite binarie, XIV-35
+, unità di memoria, XIV-31
+Programmazione del PLC, XIV-62
+, fasi della, XIV-62
+Scansione del PLC, XIV-87
+, asincrona I/O, XIV-92
+, ciclo di, XIV-87
+, sincrona I, asincrona O, XIV-91
+, sincrona I/O, XIV-91
+, tempo di, XIV-87
+Trasmissione, XIV-17
+, CSMA/CD, XIV-13
+, seriale asincrona, XIV-18
+, seriale sincrona, XIV-19
+, reti di, XIV-12
+, Token passing, XIV-13
+
+[PAG 2276]
+44
+INDICE ANALITICO PER SEZIONI
+Sezione XV
+Sistemi
+ADC, XV-44
+Algoritmi di controllo, XV-49
+Analogie, XV-4
+, di Maxwell, XV-6
+, di Firestone, XV-6
+Antitrasformata di Laplace, XV-17, 21
+, metodo delle frazioni parziali, XV-21
+, sviluppo di Heaviside, XV-21
+Antitrasformata Zeta, XV-48
+Banda di proporzionalità, XV-51
+Blocco, di azione diretta, XV-9
+, di controreazione, XV-9
+, schema a blocchi, XV-7
+Bode, analisi di, XV-26
+, diagramma delle ampiezze, XV-27, 30
+, diagramma delle fasi, XV-27, 30
+, guadagno statico, XV-27
+, diagrammi asintotici, XV-28, 30
+, margine di fase, XV-35
+, margine di guadagno, XV-35
+Cammino di Nyquist, XV-25
+Cerchi M, XV-31
+Cerchi N, XV-32
+Classificazione dei Sistemi, XV-37
+Coefficiente, di errore, XV-37, 38
+, di sensibilità, XV-37
+, di smorzamento, XV-13
+Controllore di Posizione, XV-66
+, costante di proporzionalità, XV-68
+, generatore di profili, XV-70
+, guadagno del sistema, XV-68
+, risoluzione del sistema, XV-68
+, segnale di errore, XV-68
+Controllore Proporzionale a Rapporto di 
+Tempo, XV-51
+, duty cycle, XV-52
+, set-point, XV-52
+Controllore Proporzionale a Sfasamento, 
+XV-51
+Convertitore ADC, XV-44
+Coprocessore matematico, XV-64
+Costante di tempo, XV-12
+Diagramma/i, asintotici di Bode, XV-28
+, di Bode, XV-25, 26
+, di Nichols, XV-31
+, di Nyquist, XV-25
+, luogo delle radici, XV32
+Digital Signal Processor DSP, XV-66
+Dominio di , XV-17, 22
+Dominio di s, XV-17
+Equazioni alle differenza finite, XV-43, 46
+Errori di un sistema, XV-37
+, a regime, XV-37
+, deviazione statica, XV-43
+, di accelerazione, XV-37
+, offset, XV-43
+, di posizione, XV-37
+, transitorio, XV-39
+, di velocità, XV-37
+Feedback, XV-3
+Feedforward, XV-3
+Frequenza, di crossover, XV-37
+, di taglio, XV-37
+Funzione/i, caratteristica nel cammino di 
+Nyquist, XV-26
+, delta, XV-44
+, di trasferimento, XV-21
+, impulsiva, XV-44
+, impulso unitario, XV-14
+, per lo studio dei sistemi, XV-14
+, proprietà di screening, XV-15
+, rampa, XV-15
+, scalino unitario, XV-14
+Gradino, XV-37
+Guadagno statico, XV-27
+Indici di qualità, XV-40
+Linearità, XV-10
+, sovrapposizione degli effetti, XV-10
+Luogo delle radici, XV-32
+, condizione di modulo, XV-33
+, condizione di fase, XV-34
+
+[PAG 2277]
+SEZIONE XV SISTEMI
+45
+, margine di fase, XV-36
+, margine di guadagno, XV-36
+, spirule, XV-34
+Memoria, XV-53
+, dati, XV-53
+, programma, XV-53
+Microcontrollore, XV-64
+, codice binario, XV-71
+, codice oggetto, XV-71
+, compilatore, XV-71
+, controllore di posizione a microcontrol-
+lore, XV-66
+, controllore di temperatura a microcon-
+trollore, XV-71
+, coprocessore matematico, XV-64
+, digital signal processor DSP, XV-66
+, comando di motori a corrente continua, 
+XV-66
+, comando di motori brushless, XV-66
+, linguaggio ad alto livello, XV-71
+, linguaggio assembly, XV-70
+, linguaggio C, XV-71, 72
+Modello, XV-4
+, matematico di un sistema, XV-4
+Modi aperiodici, XV-11
+, costante di tempo, XV-12
+Modi pseudoperiodici, XV-11, 13
+, coefficiente di smorzamento, XV-13
+, pulsazione naturale, XV-13
+Nichols, carta di, XV-31
+, cerchi M, XV-31
+, cerchi N, XV-32
+, diagramma ampiezza-fase, XV-31, 32
+, margine di fase, XV-36
+, margine di guadagno, XV-36
+, picco di risonanza, XV-31
+Nodi sommatori, XV-7
+Nyquist, cammino di, XV-25
+, diagramma di, XV-25
+, funzione caratteristica, XV-26
+, margine di fase, XV-35
+, margine di guadagno, XV-35
+, teorema dell’argomento di Cauchy, 
+XV-26
+Omogenea associata, XV-11
+Parabola, XV-37
+P.I.D., XV-42
+, costante di proporzionalità, XV-43
+, costante di integrazione, XV-43
+, costante derivativa, XV-43
+, deviazione statica, XV-43
+, offset, XV-43
+, regolatori con i PLC, XV-55
+Picco di risonanza, XV-31
+PLC, XV-53
+, blocco di scala, XV-58
+, ladder diagram, XV-53
+, memoria dei PLC, XV-53
+, passaggio dei parametri, XV-58
+, regolatori P.I.D. con i, XV-55
+, sintonizzazione del filtro, XV-58
+, subroutine, XV-54
+, tempo di ciclo, XV-54
+Pulsazione naturale, XV-13
+Proprietà di screening, XV-15
+Punto di diramazione, XV-8
+Rampa, XV-37
+Rappresentazione asintotica, XV-22
+Rappresentazione delle funzioni, di Bode, 
+XV-22, 25, 26
+, diagrammi polari, XV-24
+, luogo delle Radici, XV-32
+, Nichols, XV-22
+, Nyquist, XV-22, 25
+Regolatore ON-OFF, XV-50
+, banda, XV-50
+, isteresi, XV-50
+, set-point, XV-50
+, soglia inferiore, XV-50
+, soglia superiore, XV-50
+Regolatori, XV-3, 42, 49
+, controllo adattativo, XV-42
+, controllore P.I.D., XV-42, 55, 57
+, regolatore ON-OFF, XV-50
+, sintonizzazione del filtro, XV-58
+, tecniche di compensazione, XV-42
+, tunning costant, XV-42
+Reti correttrici, XV-40
+Reti di compensazione, XV-40
+, a sella, XV-40, 41
+, anticipatrice, XV-40
+, ritardatrice, XV-40, 41
+Risposta, a regime, XV-14, 15
+, alla rampa, XV-15
+, canonica, XV-15
+
+[PAG 2278]
+46
+INDICE ANALITICO PER SEZIONI
+, forzata, XV-11
+Risposta, impulsiva, XV-15
+, indiciale, XV-15, 39
+, libera, XV-10
+, sovraelongazione, XV-16
+, tempo di assestamento, XV-15
+, tempo di ritardo, XV-15
+, tempo di salita, XV-15
+, temporale dei sistemi, XV-15
+, totale del sistema, XV-14
+, transitoria, XV-14, 15
+, velocità di risposta, XV-37
+Sample and Hold, XV-45
+Scalino unitario, XV-14
+Schemi, XV-7
+, a blocchi, XV-7
+, a blocchi di sistema retroazionato, XV-9
+, funzionale, XV-7
+, nodo sommatore, XV-7
+, punto di diramazione, XV-8
+, strutturale, XV-7
+Segnale Campionato, XV-43
+Servosistemi, XV-3, 49
+Sintonizzazione del filtro, XV-58
+Sistema/i, XV-2
+, a catena aperta, XV-2
+, a catena chiusa, XV-2
+, a tempo discreto, XV-43
+, analogici, XV-3
+, classificazione, XV-37
+, coefficiente di errore, XV-37
+, coefficiente di sensibilità, XV-37
+, controllante, XV-3
+, controllato, XV-3
+, di asservimento, XV-3
+, di regolazione, XV-2
+, digitali, XV-3, 52
+, errori, XV-37
+, fondamentale di integrali, XV-11
+, indici di qualità, XV-40
+, lineari, XV-10
+, non stazionari, XV-3
+, numerici, XV-3
+, risposta a regime, XV-14
+, risposta temporale, XV-15
+, risposta totale, XV-14
+, risposta transitoria, XV-14
+, segnale agente, XV-4
+, segnale errore, XV-4
+, sensibilità del sistema, XV-3, 37
+, stabilità, XV-14, 22
+, stazionari, XV-3, 10
+, tipo di sistema, XV-37
+Sistemi, a tempo discreto, XV-43
+, a logica programmabile (PLC), XV-43
+, algoritmi di controllo, XV-49
+, azione derivativa, XV-69
+, azione integrale, XV-69
+, circuiti di campionamento Sample and 
+Hold, XV-44
+, convertitori ADC, XV-44
+, equazioni alle differenze finite, XV-43, 
+45, 46
+Sovraelongazione massima, XV-16
+Sovrapposizione degli effetti, XV-10
+, di un sistema lineare, XV-10
+Spirule, XV-34
+, tracciamento del Luogo delle Radici, 
+XV-34
+Stabilità e criteri di stabilità, XV-22
+, criterio di Hurwitz, XV-23
+, criterio di Routh, XV-23
+, limite di stabilità, XV-23
+, margine di fase, XV-35
+, margine di guadagno, XV-35
+, metodi numerici, XV-24
+, relativa, XV-35
+Stazionarietà, XV-10
+Subroutine, XV-54
+Tecniche Digitali, XV-52
+Tempo di assestamento, XV-15
+Tempo di ciclo, XV-54, 55
+Tempo di ritardo, XV-15
+Tempo di salita, XV-15
+Teorema, di Cauchy, XV-26
+, di Shannon, XV-45
+Trasformata di Fourier, XV-45
+Trasformata di Laplace, XV-17, 18
+, proprietà, XV-18
+, teorema del valore iniziale, XV-20
+, teorema del valore finale, XV-20
+Trasformata Zeta, XV-43, 46, 47, 48
+, equazioni alle differenze finite, XV-46
+, proprietà, XV-46
+, teorema del valore finale, XV-47
+, teorema del valore iniziale, XV-47
+Velocità di risposta XV-37
+
+[PAG 2279]
+SEZIONE XVI TECNOLOGIE BUS
+47
+Sezione XVI
+Tecnologie BUS
+Domotica, XVI-8, 11
+, consumo e risparmio, XVI-9
+, convenienza, XVI-10
+, disabili, XVI-8
+Sistema BatiBUS, XVI-21
+, apparecchi, XVI-21
+, indirizzamento, XVI-22
+, tecnica trasmissiva, XVI-21
+, topologia, XVI-21
+Sistema Instabus EIB, XVI-22
+, apparecchi, XVI-22
+, instabus pl (power line), XVI-26
+, instabus tp (twisted pair), XVI-24
+, instabus rf (radio frequency), XVI-27
+, software gestione, XVI-24
+, visualizzazione, XVI-24
+Sistemi BUS, accoppiatore, XVI-23
+, applicazioni, XVI-13, 17
+, BatiBUS, XVI-18, 21
+, BCU, XVI-5
+, CEBus, XVI-19
+, configuratore, XVI-35, 41
+, EHS, XVI-18
+, funzionamento, XVI-3
+, funzione filtro, XVI-21
+, EIB, XVI-18, 22
+, funzionamento, XVI-4
+, funzione filtro, XVI-24
+, funzione routing-counter, XVI-24
+, HBS, XVI-20
+, HES, XVI-20, 27
+, indirizzo fisico, XVI-24, 26
+, indirizzo di gruppo, XVI-26
+, lon works, XVI-2, 19
+, multivendor, XVI-2
+, proprietari, XVI-2, 27
+, radio frequenza, XVI-3
+, scenario, XVI-35
+, standardizzati, XVI-2
+, telegramma, XVI-25
+utenti, XVI-12
+vantaggi, XVI-6
+Sistemi BUS proprietari (My Home BTi-
+cino), XVI-27
+, comfort, XVI-35
+, comunicazione, XVI-40
+, gestione energia, XVI-34
+, sicurezza, XVI-28
+, X-10, XVI-19
+
+[PAG 2280]
+48
+INDICE ANALITICO PER SEZIONI
+Sezione XVII
+Elettronica analogica e digitale
+Algebra booleana, XVII-89
+, forma canonica POS, XVII-92
+, forma canonica SOP, XVII-91
+, funzioni booleane, XVII-90
+, mappe di Karnaugh, XVII-93
+, maxtermini, XVII-91
+, mintermini, XVII-91
+, postulati, XVII-89
+, semplificazione di funzioni, XVII-90
+, teoremi, XVII-89
+Ammettenza, bipoli, XVII-9
+Amplificatori, a JFET, XVII-67
+, bilancio energetico, XVII-164
+, delle differenze con AO, XVII-77
+, invertenti con AO, XVII-76
+, non invertenti con AO, XVII-77
+, rendimento di conversione, XVII-166
+, sommatori con AO, XVII-78
+, tipi, XVII-24
+, tipi di accoppiamento, XVII-24
+Amplificatori a BJT, XVII-54
+, a base comune, XVII-58
+, a collettore comune, XVII-58
+, ad emettitore comune, XVII-58
+, amplificazione, XVII-54
+, analisi grafica, XVII-55
+, distorsione, XVII-56
+, modelli, XVII-57
+, tipi di connessioni, XVII-58
+Amplificatori di potenza, in classe A, XVII-
+166, 167
+, in classe B, XVII-168
+, push-pull a simmetria complementare,
+XVII-169
+, push-pull a simmetria quasi complemen-
+tare, XVII-169
+Amplificatori operazionali, XVII-73
+, amplificatore delle differenze, XVII-77
+, amplificatore invertente, XVII-76
+, amplificatore non invertente, XVII-77
+, amplificatore sommatore, XVII-78
+, caratteristica di trasferimento, XVII-74
+, circuiti lineari, XVII-76
+, circuiti non lineari, XVII-79
+, circuito derivatore, XVII-78
+, circuito integratore, XVII-78
+, comparatori, XVII-79
+, ideali, XVII-76
+, modello, XVII-74
+, raddrizzatori di precisione, XVII-81
+, risposta al transitorio, XVII-75
+, risposta in frequenza, XVII-74
+, slew rate, XVII-76
+, trigger di Schmitt, XVII-80
+, voltage follower, XVII-77
+Amplificatori, reazionati, XVII-31
+Analisi in frequenza, amplificatori, XVII-
+24
+Analisi nel dominio del tempo, amplifica-
+tori, XVII-30
+AND, porte, XVII-98
+Angolo di circolazione, XVII-162
+ASCII, codice, XVII-88
+Attuatori, circuiti di comando a ponte, 
+XVII-177
+, comando di motore passo-passo, XVII-
+179
+, sovratensioni, XVII-178
+, tempi di risposta, XVII-179
+Banda passante, XVII-29
+Barkhausen, criterio, XVII-135
+Base, sistemi numerici, XVII-82
+Bilancio energetico, amplificatori, XVII-
+164
+Bipoli, XVII-9
+Bit, XVII-4
+BJT, XVII-49
+, caratteristiche, XVII-51
+, circuiti digitali, XVII-69
+, connessioni, XVII-50
+, modelli per piccoli segnali, XVII-57
+, npn, XVII-49
+, parametri a e b, XVII-50
+, pnp, XVII-49
+, polarizzazione, XVII-52
+, principio di funzionamento, XVII-49
+, stabilizzazione, XVII-52
+
+[PAG 2281]
+SEZIONE XVII ELETTRONICA ANALOGICA E DIGITALE
+49
+, struttura, XVII-49
+, di potenza, XVII-163
+Bode, diagrammi, XVII-28
+Breakdown, diodi, XVII-41
+Circuiti, lineari, XVII-6
+, tempo invarianti, XVII-6
+, antirimbalzo, XVII-112
+, combinatori, XVII-102
+, risonante, XVII-20
+Classi di amplificazione, XVII-162
+CMOS circuiti digitali, XVII-71
+Codice ASCII, XVII-88
+Codici, alfanumerici, XVII-88
+, numerici, XVII-87
+, pesati, XVII-87
+Codifica, circuiti, XVII-105
+Comparatori di tensione, con AO, XVII-79
+Comparatori digitali, XVII-104
+Complemento a due, numeri binari, XVII-
+85
+Componenti, attivi, XVII-6
+, passivi, XVII-6
+Contatori, XVII-121
+, asincroni binari avanti, XVII-121
+, asincroni binari avanti-indietro, XVII-
+122
+, asincroni binari indietro, XVII-122
+, asincroni decimali (BCD), XVII-123
+, espansione, XVII-123, 124
+, modulo, XVII-121
+, sincroni, XVII-124
+Conversione, A/D, XVII-183
+, D/A, XVII-180
+Convertitore, A/D ad approssimazioni suc-
+cessive, XVII-188
+, D/A a resistori pesati, XVII-186
+De Morgan, teorema, XVII-89
+Decodifica, circuiti, XVII-107
+Demultiplexer, XVII-110
+Derivatori, circuiti con AO, XVII-78
+DIAC, XVII-175
+Diodi, a giunzione, XVII-39
+, caratteristiche, XVII-40
+, circuiti, XVII-44
+, LED, XVII-44
+, modelli, XVII-41
+, Schottky, XVII-44
+, Zener, XVII-43
+DIP, XVII-5
+Display a LED, XVII-108
+Distorsione, XVII-56
+, armonica, XVII-162
+, di cross-over, XVII-168
+, di non linearità, XVII-162
+Divisori di frequenza, XVII-125
+ECL, XVII-70
+Elementi concentrati, XVII-6
+Elettroni liberi, XVII-37
+Famiglie, integrati, XVII-6
+FdT, XVII-12
+Filtri, XVII-147
+, attivi, XVII-156
+, attivi a reazione multipla, XVII-158
+, attivi del primo ordine, XVII-156
+, attivi del secondo ordine, XVII-159
+, attivi passa alto, XVII-158, 159
+, attivi passa banda, XVII-159, 160
+, attivi passa basso, XVII-156, 157, 159
+, classificazioni, XVII-147
+, passivi, XVII-148
+, RLC, XVII-151
+, specifiche di trasmissione, XVII-148
+Flip-flop, XVII-114
+, caratteristiche di commutazione, XVII-
+117
+, di tipo D edge-triggered, XVII-116
+, di tipo JK edge-triggered, XVII-116
+, di tipo SR edge-triggered, XVII-115
+, di tipo T edge-triggered, XVII-116
+, edge-triggered, XVII-114
+Forma canonica, FdT, XVII-14
+Frequenza di transizione, XVII-35
+Funzioni, booleane, XVII-90
+, di trasferimento, XVII-12
+GBW, XVII-36
+Generatori, di forme d'onda rettangolari, 
+XVII-139, 140
+, di forme d'onda, XVII-139
+, di funzioni, XVII-141
+, dipendenti, XVII-7
+, indipendenti, XVII-7
+Giunzioni, XVII-38
+Guadagno, amplificatori, XVII-26
+Guadagno, d'anello, XVII-17
+Impedenza, bipoli, XVII-9
+
+[PAG 2282]
+50
+INDICE ANALITICO PER SEZIONI
+Integrati, circuiti, XVII-4
+Integrato 555, timer, XVII-143
+Integrato 8038, generatore di funzioni, 
+XVII-141
+Integratori, circuiti con AO, XVII-78
+JFET, XVII-59
+, amplificatori, XVII-67
+, caratteristiche, XVII-61
+, funzionamento, XVII-60
+, modelli, XVII-66
+, polarizzazione, XVII-65
+Karnaugh, mappe, XVII-93
+Lacune, XVII-37
+Latch, XVII-111
+, caratteristiche di commutazione, XVII-
+113
+, di tipo D, XVII-112
+, di tipo SR, XVII-111
+, di tipo SR con abilitazione, XVII-112
+Limitatori, con diodi, XVII-48
+Lissajous, figure, XVII-215
+Livelli, circuiti digitali, XVII-68
+Logica, negativa, XVII-97
+, positiva, XVII-97
+LSI, XVII-5
+LTI, circuiti, XVII-6
+Margine di rumore, XVII-69
+Maxtermini, XVII-91
+Memorie, XVII-125
+, capacità, XVII-126
+, classificazione, XVII-128
+, EEPROM, XVII-129
+, EPROM, XVII-129
+, indirizzi, XVII-126
+, PROM, XVII-128
+, RAM, XVII-125, 129
+, ROM, XVII-125, 128
+, scrittura/lettura, XVII-127
+, struttura, XVII-126
+, tecnologia, XVII-128
+, tipi, XVII-125
+Microprocessore, XVII-132
+, 8080, XVII-134
+, assembler, XVII-133
+, bus, XVII-133
+, programmi, XVII-133
+, struttura, XVII-132
+Mintermini, XVII-91
+Modelli, amplificatori, XVII-25, 27
+Modulo, contatori, XVII-121
+MOSFET, XVII-62
+, circuiti digitali, XVII-71
+, Depletion, XVII-64
+, Enhancement, XVII-62
+, modelli, XVII-66
+, di potenza, XVII-164
+MSI, XVII-5
+Multiplexer, XVII-110
+Multivibratore monostabile, con 555, 
+XVII-144
+Multivibratori astabili, XVII-139, 140, 146
+NAND, porte, XVII-98, 99
+NOR, porte, XVII-98, 100
+Norton, teorema, XVII-10
+NOT, porte, XVII-98
+Notazione, a virgola fissa, XVII-87
+, a virgola mobile, XVII-87
+Numerazione, binaria, XVII-83
+, esadecimale, XVII-84
+, ottale, XVII-84
+Numeri binari, con segno, XVII-85
+, operazioni aritmetiche, XVII-84, 85
+OR, porte, XVII-98
+Oscillatori, XVII-135
+, a cristallo, XVII-138
+, a tre punti, XVII-137
+, Colpitts, XVII-138
+, criterio di Barkhausen, XVII-135
+, Hartley, XVII-138
+, LC, XVII-137
+, Pierce, XVII-139
+Oscilloscopio, XVII-190
+, a doppia traccia, XVII-206
+, base dei tempi, XVII-203
+, circuiti di sincronismo, XVII-200
+, con base dei tempi ritardata, XVII-208
+, deflessione elettrostatica, XVII-193
+, digitale, XVII-209
+, figure di Lissajous, XVII-216
+Oscilloscopio, generalità, XVII-191
+, misure di corrente, XVII-214
+, misure di fase, XVII-216
+, misure di frequenza, XVII-214
+, misure di tensione, XVII-213
+
+[PAG 2283]
+SEZIONE XVII ELETTRONICA ANALOGICA E DIGITALE
+51
+, schema a blocchi, XVII-197
+, sonde, XVII-211
+, tubo a raggi catodici, XVII-192
+PAL, XVII-130
+Parametri, ammettenza, XVII-21
+, ibridi g, XVII-23
+, ibridi h, XVII-22
+, impedenza, XVII-20
+Piastre di raffreddamento, XVII-163
+PLD, XVII-129
+Poli, XVII-14
+Ponte di Graetz, XVII-46
+Porte logiche di base, XVII-97
+, simboli, XVII-99
+, simboli normalizzati, XVII-100
+Porte universali, XVII-99
+Pulsazioni di taglio, XVII-29
+Q, fattore di qualità, XVII-19
+Quadripoli, XVII-12
+Quantizzazione, XVII-183
+Quanto, XVII-183
+Raddrizzamento, circuiti, XVII-44
+Raddrizzatori di precisione, con AO, XVII-
+81
+RAM, XVII-125, 129
+Reazione, XVII-17
+Registri, XVII-118
+, a scorrimento, XVII-119
+, a scorrimento, tipi, XVII-121
+Rendimento di conversione, amplificatori, 
+XVII-166
+Resistenza termica, XVII-163
+Ripple, XVII-46
+Risoluzione, XVII-184
+Ritardi di propagazione, XVII-73
+Ritardi di propagazione, latch, XVII-113
+RLC, circuito, XVII-18
+ROM, XVII-125, 128
+Rumore di quantizzazione, XVII-184
+Sag, XVII-31
+Schemi a blocchi, algebra, XVII-15
+Schmitt, trigger con AO, XVII-80
+, trigger con 555, XVII-146
+SCR, XVII-170
+SCR caratteristiche, XVII-170
+, circuiti di controllo, XVII-172
+, disinnesco, XVII-172
+Semiconduttori, XVII-37
+Shift register, XVII-119
+Sistemi numerici, XVII-82
+Sommatori binari, XVII-102
+SOP, XVII-5
+Sottrattori binari, XVII-103
+SSI, XVII-5
+Stabilizzatori, XVII-48
+Tabelle di verità, XVII-90
+Tempo, di commutazione, XVII-72
+, di discesa, XVII-72
+, di salita, XVII-31, 72
+Teorema, di Norton, XVII-10
+, di sostituzione, XVII-10
+, di sovrapposizione, XVII-10
+, di Thévenin, XVII-10
+THD, XVII-162
+Thévenin, teorema, XVII-10
+Three-state, porte, XVII-101
+Timer 555, XVII-143
+, multivibratore astabile, XVII-146
+, multivibratore monostabile, XVII-144
+Timer 555, schema a blocchi, XVII-143
+, trigger di Schmitt, XVII-146
+Tiristori, XVII-169
+Transistor ad effetto di campo (FET), XVII-
+59
+, bipolari a giunzione (BJT), XVII-49
+TRIAC, XVII-173
+, circuiti di controllo, XVII-174
+, principio di funzionamento, XVII-173
+Trigger di Schmitt, con 555, XVII-146
+, con AO, XVII-80
+TTL, XVII-70
+Variabili di rete, XVII-6
+VLSI, XVII-5
+Voltage follower, con AO, XVII-77
+XNOR, porte, XVII-99
+XOR, porte, XVII-99
+Zeri, XVII-14
+
+[PAG 2284]
+52
+INDICE ANALITICO PER SEZIONI
+Sezione XVIII
+Elettronica di potenza
+Alimentatori, a commutazione, XVIII-35
+, lineare, XVIII-35
+, switching, XVIII-49
+Alimentazione, monofase, XVIII-23
+, trifase, XVIII-25
+Automantenimento, corrente di, XVIII-5, 
+9, 31, 46
+Armoniche, XVIII-13, 19, 49
+Breakdown, tensione di, XVIII-4, 5, 14
+Breakover, tensione di, XVIII-7, 10
+Bridge Converter, XVIII-37
+Bobina di assorbimento, XVIII-27
+Boost, convertitore, XVIII-37, 38
+Buck, convertitore, XVIII-37
+Buck-Boost, convertitore, XVIII-39, 41
+Choppers, convertitori, XVIII-45
+Cicloconverter, XVIII-53
+Circuiti invertitori, XVIII-33
+Circuito monofase, XVIII-30
+, a semionda, XVIII-23, 30
+, a ponte, XVIII-24
+, a onda intera, XVIII-23, 24, 31
+Circuito snubber, XVIII-10
+Circuito trifase, XVIII-25, 31
+, a doppia stella, XVIII-27
+, a semionda, XVIII-25
+, a ponte, XVIII-26
+, semicontrollato, XVIII-32
+Conduzione discontinua, XVIII-32
+Controllo a tempo proporzionale, XVIII-
+48
+, asincrono, XVIII-48
+, sincrono, XVIII-48
+Controllo di potenza nella conversione 
+c.a-c.c., XVIII-30
+, circuiti monofase, XVIII-30
+, circuiti trifase, XVIII-31
+, monofase a onda intera, XVIII-31
+, monofase a semionda, XVIII-30
+, ponte trifase semicontrollato, XVIII-32
+, ponte trifase totalmente controllato, 
+XVIII-33
+Conversione della corrente elettrica, 
+XVIII-22
+, c.a.-c.c., XVIII-22
+, c.c.-c.c., XVIII-45
+Conversione diretta, XVIII-53
+Conversione frequenza- frequenza, XVIII-
+53
+Convertitori, asimmetrici, XVIII-40
+, boost, XVIII-37, 38
+, buck, XVIII-37
+, buck-boost, XVIII-39, 41
+, chopper, XVIII-45
+, con tiristori a spegnimento forzato, 
+XVIII-50
+, con trasformatori, XVIII-39
+, c.c.-c.c., XVIII-36
+, flyback, XVIII-37, 39, 40, 41
+, forward, XVIII-37, 40, 42, 43
+, lineari, XVIII-35
+, non isolati, XVIII-37
+, push-pull, XVIII-37, 44
+, simmetrici, XVIII-40
+, statici, XVIII-22, 35
+, step down, XVIII-37, 38
+, step up, XVIII-37, 38
+Coppia costante, XVIII-33
+Corrente, da anodo a catodo, XVIII-5
+, di automantenimento, XVIII-5, 9, 31, 
+46
+, di fuga, XVIII-5
+Diac, XVIII-7
+Diodo, XVIII-2
+, ad una semionda, XVIII-3
+, controllato al silicio, XVIII-4
+, di libera circolazione, XVIII-6, 23
+, di ricircolo, XVIII-6, 23, 52
+, di tipo p-n, XVIII-2
+, raddrizzatore, XVIII-2
+Dissipatori di calore, XVIII-19, 20
+Duty cycle, XVIII-36, 37, 49
+Effetto, dU/dt, XVIII-7, 10
+, valanga, XVIII-7
+
+[PAG 2285]
+SEZIONE XVIII ELETTRONICA DI POTENZA
+53
+Equilibrio termico, XVIII-20
+Filtri, XVIII-19
+, passa basso, XVIII-20>
+Flyback, convertitore, XVIII-37, 39, 40, 
+41
+Forward, convertitore, XVIII-37, 40, 41, 
+42, 43
+Frenatura con recupero di energia, XVIII-
+33
+Funzionamento, in modo continuo, XVIII-
+38, 39, 41, 42
+, in modo discontinuo, XVIII-38, 39, 41
+Gate, XVIII-5, 11
+Giunzione, p-n, XVIII-2
+, p-n-p-n, XVIII-4, 9
+Gradini di tensione, XVIII-49
+GTO (Gate Turn Off), XVIII-10
+IGBT (Insulated Gate Bipolar Transistor), 
+XVIII-10, 14
+Induttanza di livellamento, XVIII-30
+Interruttori allo stato solido, XVIII-48
+Inverter, XVIII-19, 22, 35, 48, 53
+, a mezzo ponte, XVIII-52
+, a quattro quadranti, XVIII-50
+, a transistor, XVIII-50
+, a tiristori, XVIII-50
+, ad un quadrante, XVIII-50
+, parallelo, XVIII-50, 51
+, reversibili, XVIII-50
+, serie, XVIII-50, 52
+, trifase, XVIII-52
+, unidirezionali, XVIII-50
+Invertitore, XVIII-33
+, parallelo, XVIII-50, 51
+, serie, XVIII-50, 52
+Isolamento galvanico, XVIII-40
+Lacune, XVIII-14
+Loop rigenerativo, XVIII-11
+Modulazione di conduttività, XVIII-14
+Mosfet, XVIII-14, 15, 35, 49, 50
+MosIgbt, XVIII-14
+Normativa, EMC, XVIII-19
+, VDE 0530, XVIII19
+Piastre di raffreddamento, XVIII-20
+Ponte, di Graetz, XVIII-24
+, trifase semicontrollato, XVIII-32
+, trifase totalmente controllato, XVIII-33
+Porta, XVIII-5
+P.R.M. (Pulse Rate Modulation), XVIII-
+46
+P.W.M. (Pulse Width Modulation), 
+XVIII-36, 45
+Push-pull, convertitore, XVIII-37, 44
+Raddrizzatori, XVIII-22
+, a una semionda, XVIII-3
+, controllati, XVIII-22
+, normali, XVIII-22
+Recupero di energia in rete, XVIII-35, 50
+Regime termico, XVIII-20
+Regolazione in corrente alternata, XVIII-
+47
+, a controllo continuo, XVIII-47
+, a parzializzazione di fase, XVIII-47
+, a tempo proporzionale, XVIII-48
+, con numero intero di cicli, XVIII-47, 
+48
+Regolazione, P.R.M., XVIII-45
+, P.W.M., XVIII-45
+Rendimento, XVIII-22, 49
+Resistenza termica, XVIII-20
+Reti snubber, XVIII-18
+Ripple, XVIII-22, 36, 38, 39, 41, 42, 43
+SCR (Silicon Controlled Rectifier), XVIII-
+4
+Semionda, negativa, XVIII-3
+, positiva, XVIII-3
+Semiconduttori, per convertitori a com-
+mutazione, XVIII-15
+Slew rate, XVIII-10, 13, 20
+Snubber, XVIII-10, 18
+Snubberless Triac, XVIII-10
+Switch, XVIII-37
+Switching, alimentatori, XVIII-49
+Tensione, di breakdown, XVIII-4, 5, 14
+, di breakover, XVIII-7, 10
+Termico, equilibrio, XVIII-20
+, regime, XVIII-20
+Tiristori, XVIII-49
+Transistor, bipolari, XVIII-15, 50
+, di potenza, XVIII-10, 49, 50
+
+[PAG 2286]
+SEZIONE XVIII ELETTRONICA DI POTENZA
+54
+Transitorio di tensione, XVIII-18
+Triac, XVIII-9
+, snubberless, XVIII-10
+Utilizzatori, ohmico-induttivi, XVIII-22
+Valore di automantenimento, XVIII-31
+Vibratori elettromagnetici, XVIII-53
+Zero crossing, XVIII-30
+
+[PAG 2287]
+SEZIONE XIX TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+55
+Sezione XIX
+Tecnologie elettriche ed elettroniche 
+Angolo di perdita, XIX-129, 138
+Aspiratore, XIX-74
+Calore, di fusione, XIX-11
+, specifico, XIX-11
+Campo coercitivo, XIX-17
+Capacità, elettrica, XIX-127
+, termica, XIX-11
+Caratteristiche termiche, XIX-11
+Carico unitario di rottura, XIX-9
+Cassette, tubi attestabili nelle, XIX-48
+Cavi, classificazione, XIX-32
+, colori distintivi delle anime, XIX-32
+Cavi a fibre ottiche, generalità, XIX-34
+, tipi di, XIX-36
+Centralino, XIX-48
+Ciclo di isteresi, XIX-17, 143
+Codice colori, dei condensatori, XIX-135, 
+136
+, degli induttori, XIX-140
+, dei resistori, XIX-112
+Coefficiente di, bontà, XIX-129
+, conducibilità termica interna, XIX-11
+, dilatazione lineare, XIX-11
+, temperatura, XIX-13, 108, 122, 123, 127
+, merito, XIX-129, 144
+, tensione, XIX-109
+Commutatore, XIX-53
+Condensatori, XIX- 127, 137
+, variabili, XIX-136
+Contaimpulsi, XIX-87
+Contattore, XIX-79
+Corrente di fuga, XIX-133
+Corrosione, XIX-13
+Costante dielettrica, XIX-127
+Curva di magnetizzazione, XIX-17, 143
+Densità, XIX-7
+Deriva di un campo elettrico, XIX-28
+Deviatore, XIX-52
+Diamagnetismo, XIX-16
+Dielettrico, XIX-15
+Diffusione in un gradiente di concentra-
+zione, XIX-28
+Durata degli isolanti, XIX-22
+Durezza, XIX-10
+Duttilità, XIX-11
+Effetto pelle, XIX-13
+Elastomeri, XIX-21
+Elettrone libero, XIX-26, 27
+Elettroserratura, XIX-77
+Fattore di, merito, XIX-138
+, perdita, XIX-129
+, rumore, XIX-109
+Fotocellula, XIX-92
+Fotoresistenze, XIX-124, 125
+Fusibile, XIX-105
+Fusibilità, XIX-10
+Induttanza, XIX-137
+Induttori, XIX-137, 144
+, con nucleo ferromagnetico, XIX-142, 
+144
+, in aria, XIX-140
+, schermatura degli, XIX-144
+Impurità, accettrici, XIX-27
+, donatrici, XIX-27
+Interruttore, XIX-52
+, crepuscolare, XIX-71
+, di prossimità (connessioni), XIX-91
+, finecorsa, XIX-91
+Interruttore automatico magnetotermico, 
+XIX-49, 93
+, caratteristiche di intervento, XIX-94
+, sequenze cinematiche di funzionamento, 
+XIX-95
+Interruttore differenziale, XIX-50, 96
+, tipi di, XIX-97
+, selettività, XIX-101
+, sensibilità, XIX-98
+, sequenze cinematiche di funzionamento, 
+XIX-100
+Invertitore, XIX-53
+Isolanti, gassosi, XIX-18
+
+[PAG 2288]
+56
+INDICE ANALITICO PER SEZIONI
+, liquidi, XIX-18
+Isolanti, durata degli, XIX-22
+Lacuna, XIX-26
+Lampade di segnalazione, XIX-89
+, codice colori, XIX-90
+Leghe, XIX-5
+Magnetismo residuo, XIX-17
+Magnetoresistenze, XIX-125
+Malleabiltà, XIX-10
+Massa volumetrica, XIX-7
+Materiali, XIX-3
+, ceramici, XIX-4, 6
+, conduttori, XIX-18
+, isolanti, XIX-18, 24
+, magnetici, XIX-24
+, metallici, XIX-4, 6, 25
+, piezoelettrici, XIX-24, 25
+, plastici, XIX-4, 6, 20, 22
+, semiconduttori, XIX-22, 23, 25, 28
+Metalli, XIX-3, 6, 25
+Modelli a legame di valenza, XIX-27
+Modulo di, compressibilità, XIX-9
+, elasticità, XIX-9
+, Poisson, XIX-9
+Montante, sezione del, XIX-31
+Orologio programmatore, XIX-67
+Ossidazione, XIX-13
+Permeabilità magnetica, XIX-17, 18, 143
+Peso specifico, XIX-7
+Piegabilità, XIX-11
+Piezoelettricità, XIX-16
+Potenziometri, XIX-115, 120
+Potere risolutore, XIX-117
+Presa e spina di corrente, XIX-54
+, ad uso industriale (CEE), XIX-60
+, apparecchi speciali, XIX-59
+, a ricettività multipla del, XIX-58
+, tipi di, XIX-57, 58
+Pressoresistori, XIX-126
+Proprietà, fisico-chimiche dei materiali, 
+XIX-6, 17
+, chimiche, XIX-12
+, elettriche, XIX-12, 16
+, fisiche, XIX-7, 8
+, magnetiche, XIX-16, 18
+, meccaniche, XIX-8, 10
+, tecnologiche, XIX-10, 11
+Protettore termico, XIX-104
+Prove di fatica, XIX-10
+Pulsante, XIX-54, 87
+, codice colori, XIX-89
+Relè, XIX-69, 85
+, magnetotermico, XIX-102
+, passo-passo, XIX-70
+, statico, XIX-82
+, termico, XIX-103
+Regolatore di livello, XIX-90
+Resilienza, XIX-10
+Resine, XIX-20
+Resistenza, XIX-107
+, di isolamento, XIX-128
+, termica, XIX-111
+Resistività, XIX-13, 14, 108
+Resistori, XIX-107
+, a filo, XIX-113, 115
+, a impasto, XIX-113, 114
+, a strato, XIX-113, 115
+, variabili, XIX-115
+Reticolo cristallino, XIX-4, 5
+Rigidità dielettrica, XIX-15, 19
+Ritiro di fusione, XIX-11
+Rotture per fatica, XIX-10
+Rivelatore, di fughe d’acqua, XIX-74
+, di fumo, XIX-72
+, di gas e ossido di carbonio, XIX-72
+Saldabilità, XIX-11
+Saturazione, XIX-17
+Segnalazioni, quadro indicatore a cartellini, 
+XIX-65
+, quadro indicatore luminoso, XIX-65
+, ronzatore, XIX-62
+, suoneria, XIX-62
+Semiconduttori, XIX-22, 23, 25, 28
+Serie normalizzate delle resistenze, XIX-
+112
+Simboli grafico del, condensatore, XIX-
+131
+, induttore, XIX-139
+, potenziometro, XIX-116
+, resistore, XIX-111
+Sostanze, diamagnetiche, XIX-16
+, ferromagnetiche, XIX-16
+, paramagnetiche, XIX-16
+Stabilità, XIX-111
+
+[PAG 2289]
+SEZIONE XIX TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+57
+Suscettibilità magnetica, XIX-17
+Tecnologie di fabbricazione dei, condensa-
+tori, XIX-131, 134
+Tecnologie di fabbricazione dei, condensa-
+tori elettrolitici, XIX-132, 133
+, induttori, XIX-140
+, resistori, XIX-113, 115
+, varistori, XIX-126
+Temperatura di Curie, XIX-16
+Temprabilità, XIX-11
+Temporizzatore, XIX-86
+, luci scale, XIX-66
+Termistori, XIX-122, 124
+Termoresistenze, XIX-120, 122
+Termorivelatore, XIX-105
+Termostato ambiente, XIX-67
+Trasformatore, tipi di, XIX-75
+Trimmer, XIX-120
+Tubi e canali, XIX-40
+, dimensioni dei, XIX-42
+, marcatura dei, XIX-44
+, tipi di, XIX-41
+Variatore di luminosità, XIX-65
+Varistori, XIX-126, 128
+Vernici, XIX-20
+Viscosità, XIX-19
+
+[PAG 2290]
+58
+INDICE ANALITICO PER SEZIONI
+Sezione XX
+Progettazione elettrica ed elettronica
+Affidabilità, XX-114
+Alimentatore, XX-147-182
+, in corrente continua, XX-147
+Angolo di conduzione, XX-146
+Bagnabilità, XX-131
+Bread-boarding, XX-121
+Cablaggio delle apparecchiature elettroni-
+che, XX-120
+Calcoli, esecutivi, XX-8, 68, 86
+, preliminari, XX-7
+Capacità termica, XX-146
+Capitolato speciale d’appalto, XX-8, 44, 
+72, 96
+Categorie di rischio, XX-124÷126
+Certificazione, conformità impianto alla 
+regola dell’arte, XX-44
+, reazione impianto, XX-44
+, relazione materiali, XX-44
+, requisiti tecnico-professionali, XX-44
+Circuito, di autozero, XX-205
+, elettro-termico, XX-142, 147
+Circuiti stampati, XX-110, 120, 135÷137
+, a due facce, XX-136
+, flessibili, XX-140, 141
+, materiali per i, XX-140
+, metodi per l’assemblaggio dei, XX-
+128÷130
+, monofaccia, XX-136
+, multistrato, XX-136, 137
+, processi di fabbricazione dei, XX-
+133÷140
+Coefficiente di sicurezza, XX-115
+Collaudi e verifiche a termine lavori, 
+esami a vista, XX-43
+, misure e prove strumentali, XX-43
+Collaudo, XX-116
+Collegamenti a massa, XX-115, 116
+Computo metrico, XX-7, 74, 95
+, estimativo, XX-7, 74, 95
+Connessione, Darlington, XX-159, 160, 
+208
+, in parallelo dei transistor, XX-159, 160
+Cronometro, XX-182÷188
+Cronoprogramma, XX-8
+Diagrammi, di coordinamento delle prote-
+zioni, XX-8, 92
+Diodo Zener, XX-157, 159
+Dissipatori termici, XX-141, 174, 182
+, dimensionamento dei, XX-142÷144
+Dissipazione del calore, XX-119
+Documentazione, del progetto definitivo, 
+XX-7
+, del progetto esecutivo, XX-7
+, del progetto preliminare, XX-5
+, di progetto, XX-4, 5
+, di un’apparecchiatura elettronica, XX-
+123
+, finale d’impianto, XX-5
+, finale di progetto, XX-5
+Duty cycle, XX-146
+Elaborati grafici, XX-7, 8, 60, 81
+Filtri di livellamento, XX-151÷154
+Fori metallizzati, XX-136
+Fotoincisione, XX-137÷139
+Impedenza termica, XX-146
+Incisione con maschera, XX-139
+Layout, XX-104, 137
+Limitazione di corrente negli alimentatori, 
+XX-157, 159
+Lista di connessione, XX-121
+Marchio CE, XX-124
+Maschera, del layout, XX-137
+, per il solder resist, XX-139
+Master, XX-136, 175, 179
+Metallizzazione dei fori, XX-136, 138
+Metodi per l’assemblaggio delle apparec-
+chiature elettroniche, XX-128÷135
+Metodo per la realizzazione dei circuiti
+
+[PAG 2291]
+SEZIONE XX PROGETTAZIONE ELETTRICA ED ELETTRONICA
+59
+stampati, additivo, XX-139, 140
+, sottrattivo, XX-137÷139
+Ondulazione residua, XX-151, 152, 166
+Orologio digitale, XX-189÷196
+Photoresist, XX-139
+Piano, di manutenzione, XX-8
+, di sicurezza, XX-8
+Planimetria generale, XX-7
+Preventivo di spesa, XX-128
+Progetto, definitivo, XX-4
+, documentazione di, XX-4, 5
+, esecutivo, XX-4
+, preliminare, XX-4
+Prove, per apparecchiature militari, XX-
+117
+, per reazione al fuoco, XX-117
+, sul modello, XX-116
+, sul prodotto finito, XX-116
+, sul prototipo, XX-116
+PWM, XX-165
+Quadro, dell’incidenza della manodopera, 
+XX-8
+, economico, XX-7
+Quote d’installazione, delle apparecchia-
+ture, XX-11
+, eliminazione barriere architettoniche, 
+XX-11
+Raddrizzatore, XX-149
+, tipi di, XX-150, 151
+Regolatori, a commutazione, XX-
+164÷167
+, a quattro terminali, XX-164÷167
+, a tre terminali, XX-160÷164, 167÷175
+, di tipo parallelo, XX-155, 156
+, di tipo serie, XX-166÷161
+Relazione, descrittiva, XX-7
+, generale, XX-7, 54, 75
+, illustrativa, XX-5, 68, 86
+, specialistica, XX-7, 55, 75
+, tecnica, XX-6
+Resistenza termica, XX-141÷146, 173, 
+174
+, contenitore-ambiente, XX-144
+, contenitore-dissipatore, XX-144, 145
+, dissipatore-ambiente, XX-145
+, giunzione-ambiente, XX-142
+, giunzione-contenitore, XX-142
+Ricerca dei guasti, XX-118
+Ripple, XX-151, 152, 166
+Saldatura, XX-130÷134
+, a onda, XX-134
+Schede eurocard, XX-123
+Schema, dell’impianto elettrico, XX-8
+, di contratto, XX-8
+, elettrico generale, XX-7
+Serratura elettronica, XX-196÷211
+SMD, XX-134, 135
+SMT, XX-134, 135
+Stabilità, XX-115
+Stabilizzatore di tensione, XX-155
+Stabilizzatori integrati, XX-161÷164
+Tabelle, di coordinamento delle prote-
+zioni, XX-8, 72, 94
+Tecnica di montaggio superficiale, XX-
+134
+Tecniche di saldatura, automatica, XX-
+133, 134
+, manuale, XX-133
+Temporizzatore, 555 XX-185÷187
+Tensione di dropout, XX-161
+Trasformatore, XX-149
+Valutazione dei costi, XX-126÷128
+Wrap, XX-121
+
+[PAG 2304]
+ORTOLANI-VENTURI
+Manuale di elettrotecnica
+e automazione
+Hoepli
+978-88-203-4456-6
+Questo volume sprovvisto del talloncino a fronte, o
+altrimenti contrassegnato, è da considerarsi copia
+di SAGGIO-CAMPIONE GRATUITO NON IN COM-
+MERCIO (vendita e altri atti di disposizione vietati:
+art. 17, c. 2, I. 633/1941), esente da  I.V.A.  (DPR
+26.10.1972, n. 633, art. 2, lett. d) ed esente da bolla di
+accompagnamento (DPR 6.10.1978, n. 627, art. 4, n. 6).
