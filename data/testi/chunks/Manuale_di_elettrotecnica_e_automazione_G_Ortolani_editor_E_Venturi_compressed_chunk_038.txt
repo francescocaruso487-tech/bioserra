@@ -1,0 +1,1150 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 38/116 ===
+Chars: 43,267 | Offset: 1,633,213
+
+
+
+[PAG 847]
+MISURE ELETTRICHE
+IX-79
+Fig. IX.17.9  Prova diretta del motore sincrono.
+A parallelo effettuato si procede caricando il motore per una potenza resa predetermi-
+nata; mantenendola costante, si varia poi la corrente di eccitazione rilevando la corrispon-
+dente corrente assorbita. Queste due grandezze riportate su un diagramma cartesiano 
+I = f(Iecc) delineano una tipica curva a V. Il procedimento viene ripetuto per vari valori di 
+potenza attiva (Fig. IX.17.10).
+Fig. IX.17.10  Curva a V di un motore sincrono.
+18  PROVE SULLE MACCHINE A CORRENTE CONTINUA
+Per la teoria della macchina a corrente continua e le formule impiegate si vedano i 
+Cap.6 e 7 Sez. VIII.
+18.1  Prova diretta della dinamo ad eccitazione indipendente
+Questa prova comporta l’impiego di un motore primo tarato, di potenza adeguata (Fig. 
+IX.18.1).
+Fig. IX.18.1  Prova diretta di una dinamo ad eccitazione indipendente.
+La strumentazione principale comprende un voltmetro ed un amperometro adatti alle 
+grandezze nominali. Trascinata la dinamo in rotazione a velocità nominale costante, la si 
+eccita sino a raggiungere la tensione nominale. Successivamente, mantenendo l’eccita-
+zione costante, si carica la dinamo. Per ogni misura si rileva la corrente erogata e la ten-
+sione. Calcolate poi le perdite di eccitazione: Pecc = Recc Iecc
+2 e nota la potenza resa Pr e la 
+potenza assorbita all’albero P’a, si determina il rendimento  = Pr  (P’a + Pecc).
+Le misure consentono il tracciamento del rendimento e della caratteristica esterna 
+U = f(I) (Fig. IX.18.2).
+A
+W
+W
+V
+A
+B
+3
+F
+M
+A
+Iecc
++
+
+I
+In
+Iecc
+0
+A
+A
+V
+G
+n
+Iecc
++
+
+
+[PAG 848]
+IX-80
+MISURE ELETTRICHE
+Fig. IX.18.2  Caratteristica esterna di una dinamo ad eccitazione indipendente.
+18.2  Prove indirette della dinamo
+18.2.1  Prova a vuoto
+La dinamo è trascinata in rotazione, alla velocità nominale, mediante un motore 
+primo, mantenendo i morsetti aperti (Fig. IX.18.3).
+Fig. IX.18.3  Prova a vuoto di una dinamo ad eccitazione indipendente.
+La strumentazione comprende un voltmetro ai morsetti di macchina ed un amperome-
+tro sul circuito di eccitazione.
+Eccitando gradualmente la macchina si rileva la tensione e la corrente di eccitazione, 
+valori che consentono il tracciamento della caratteristica di eccitazione U0 = f(Iecc). È 
+bene procedere nei due sensi ed assumere poi la caratteristica media (Fig. IX.18.4).
+Fig. IX.18.4  Caratteristica di eccitazione di una dinamo.
+La potenza applicata all’albero è la somma delle perdite meccaniche e di quelle nel 
+ferro.
+18.2.2  Le perdite nel rame e il rendimento
+Il rendimento convenzionale (si veda il Par. 14.5) si può calcolare conoscendo le per-
+dite. Le perdite meccaniche e nel ferro derivano dalla prova a vuoto.
+Misurata la resistenza interna Ri, comprensiva delle eventuali resistenze dei poli ausi-
+liari e degli avvolgimenti compensatori, le perdite nel rame si ottengono da: Pcu = Ri I2. 
+Per le piccole macchine esse sono comprensive delle perdite alle spazzole. Per macchine 
+U
+E0
+In
+0
+I
+A
+Iecc
+n
+V
+G
+U0
+Iecc
+0
+
+[PAG 849]
+MISURE ELETTRICHE
+IX-81
+di maggiore potenza occorre aggiungere alle perdite nel rame proprie le perdite alle spaz-
+zole valutate da: Psp = Usp I con Usp = 1 V per spazzole in grafite e 0,6 V per spazzole con 
+componenti metallici.
+18.3  Prova diretta del motore a corrente continua
+Ci riferiamo ad un motore ad eccitazione parallelo ma il procedimento si applica a 
+tutti i tipi. La prova si esegue avviando il motore e portandolo a funzionare alla tensione 
+nominale su un carico costituito da un dispositivo frenante misurabile.
+La strumentazione principale comprende un voltmetro ed un amperometro sul circuito 
+di alimentazione (Fig. IX.18.5).
+Fig. IX.18.5  Prova diretta di un motore a corrente continua ad eccitazione parallelo.
+Si procede mantenendo costante la tensione e variando la coppia frenante in relazione 
+ai valori di carico prestabiliti. Per ogni misura si rileva: la velocità n e la corrente I e da 
+queste misure si calcola,
+–  la potenza assorbita: Pa = U I;
+–  il rendimento: = Pr  Pa;
+–  la coppia motrice: C = Pr  .
+Le misure consentono il tracciamento del rendimento e della caratteristica meccanica 
+(Fig. IX.18.6).
+Fig. IX.18.6  Caratteristica meccanica di un motore a corrente continua ad eccitazione 
+parallelo.
+BIBLIOGRAFIA
+MENDOLIA I., Misure elettriche, Fabbri editori, 1969.
+PFLIER P. M., JAHN H., Electrische messgeräte und messverfahren, Springer Verlag, 
+Berlino, 1964.
+V
+A
+A
+Ravv
+Recc
++
+F
+M
+C
+0
+n0
+n
+
+[PAG 851]
+INDICE 
+pag.
+1    DEFINIZIONI E CLASSIFICAZIONI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.1    Definizioni relative agli impianti e ai circuiti  . . . . . . . . . . . . . . . . . . . . . .
+4
+1.2    Tensione nominale e classificazione dei sistemi elettrici  . . . . . . . . . . . . .
+5
+1.3    Classificazione degli impianti secondo la funzione . . . . . . . . . . . . . . . . . .
+6
+1.4    Classificazione dei sistemi elettrici in base al collegamento a terra  . . . . .
+7
+2    CALCOLO DELLA POTENZA CONVENZIONALE E DELLA CORRENTE 
+D’IMPIEGO DELLE CONDUTTURE ELETTRICHE  . . . . . . . . . . . . . . . . . . .
+10
+2.1    Potenza convenzionale e corrente d’impiego . . . . . . . . . . . . . . . . . . . . . . .
+10
+2.2    Fattore di utilizzazione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+2.3    Fattore di contemporaneità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+2.4    Valutazione della potenza convenzionale dei gruppi di prese  . . . . . . . . . .
+13
+2.5    Valutazione della potenza convenzionale dei motori elettrici  . . . . . . . . . .
+14
+2.6    Valutazione della potenza convenzionale totale di un impianto  . . . . . . . .
+15
+2.7    Corrente d’impiego termicamente equivalente  . . . . . . . . . . . . . . . . . . . . .
+18
+3    PARAMETRI ELETTRICI E CIRCUITI EQUIVALENTI DELLE LINEE 
+ELETTRICHE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+3.1    Parametri elettrici di una linea  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+3.2    Resistenza elettrica di linea . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+3.3    Induttanza e reattanza di servizio  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+3.4    Capacità e suscettanza di servizio . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+3.5    Conduttanza di dispersione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+3.6    Rappresentazione con parametri distribuiti e concentrati  . . . . . . . . . . . . .
+25
+3.7    Linee con parametri trasversali trascurabili (circuito R-L)  . . . . . . . . . . . .
+26
+3.8    Rendimento e variazione di tensione per le linee R-L  . . . . . . . . . . . . . . . .
+27
+3.9    Linee a parametri trasversali non trascurabili, schema a T e a  . . . . . . . .
+29
+4    CONDUTTURE ELETTRICHE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+31
+4.1    Conduttori per linee aeree . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+31
+4.2    Confronto tra conduttori diversi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+36
+4.3    Isolatori per linee aeree . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+37
+4.4    Sostegni per linee aeree . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+37
+4.5    Condotti sbarre  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+38
+4.6    Classificazione e struttura dei cavi elettrici . . . . . . . . . . . . . . . . . . . . . . . .
+39
+4.7    Caratteristiche funzionali dei cavi elettrici  . . . . . . . . . . . . . . . . . . . . . . . .
+40
+4.8    Sigle di designazione e altri contrassegni  . . . . . . . . . . . . . . . . . . . . . . . . .
+43
+4.9    Parametri elettrici dei cavi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+46
+4.10    Modalità di posa delle condutture elettriche  . . . . . . . . . . . . . . . . . . . . . .
+48
+4.11    Portata dei cavi per bassa tensione posati in aria . . . . . . . . . . . . . . . . . . .
+58
+4.12    Portata dei cavi per bassa tensione posati entro tubi interrati  . . . . . . . . .
+67
+4.13    Portata dei cavi per media tensione . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+71
+4.14    Sezioni minime delle condutture elettriche . . . . . . . . . . . . . . . . . . . . . . .
+72
+Sezione X
+Impianti elettrici
+
+[PAG 852]
+X-2
+  IMPIANTI ELETTRICI 
+5    METODI PER IL DIMENSIONAMENTO E LA VERIFICA DELLE 
+CONDUTTURE ELETTRICHE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+73
+5.1    Calcolo di progetto e di verifica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+73
+5.2    Metodo della perdita di potenza ammissibile . . . . . . . . . . . . . . . . . . . . . . 
+73
+5.3    Metodo della temperatura ammissibile . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+74
+5.4    Metodo della caduta di tensione ammissibile . . . . . . . . . . . . . . . . . . . . . . 
+76
+5.5    Metodo della caduta di tensione unitaria  . . . . . . . . . . . . . . . . . . . . . . . . . 
+77
+5.6    Metodo dei momenti amperometrici: linea con carico di estremità  . . . . . 
+78
+5.7    Metodo dei momenti amperometrici: linea con carichi distribuiti  . . . . . . 
+80
+5.8    Metodo dei momenti amperometrici: linea con carichi diramati . . . . . . . . 
+81
+5.9    Metodo dei momenti amperometrici: linea alimentata alle due estremità 
+con carico concentrato  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+82
+6    SOVRACORRENTI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+83
+6.1    Sovraccarico e corto circuito  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+83
+6.2    Sollecitazione termica per sovraccarico . . . . . . . . . . . . . . . . . . . . . . . . . . 
+83
+6.3    Corrente di corto circuito . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+84
+6.4    Fattore di cresta  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+88
+6.5    Integrale di Joule  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+88
+6.6    Sforzi elettrodinamici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+90
+6.7    Calcolo della corrente di corto circuito nelle linee di bassa tensione  . . . . 
+92
+6.8    Tabelle e diagrammi per valutazione rapida corrente di corto circuito . . . 
+97
+6.9    Corrente di corto circuito minima convenzionale . . . . . . . . . . . . . . . . . . . 
+99
+7    APPARECCHI DI MANOVRA E PROTEZIONE  . . . . . . . . . . . . . . . . . . . . . . 
+100
+7.1    Classificazione degli apparecchi di manovra e di protezione dalle 
+sovracorrenti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+100
+7.2    Caratteristiche funzionali degli interruttori  . . . . . . . . . . . . . . . . . . . . . . . 
+102
+7.3    Interruttori per media e alta tensione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+105
+7.4    Sezionatori e interruttori di manovra  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+108
+7.5    Interruttori automatici per bassa tensione . . . . . . . . . . . . . . . . . . . . . . . . . 
+109
+7.6    Contattori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+120
+7.7    Fusibili . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+125
+8    PROTEZIONE DALLE SOVRACORRENTI . . . . . . . . . . . . . . . . . . . . . . . . . . 
+130
+8.1    Protezione delle condutture contro il sovraccarico . . . . . . . . . . . . . . . . . . 
+130
+8.2    Protezione delle condutture contro il corto circuito  . . . . . . . . . . . . . . . . . 
+134
+8.3    Particolarità dei sistemi di protezione dalle sovracorrenti  . . . . . . . . . . . . 
+137
+8.4    Selettività delle protezioni contro le sovracorrenti . . . . . . . . . . . . . . . . . . 
+138
+8.5    Protezione dei motori asincroni contro le sovracorrenti . . . . . . . . . . . . . . 
+140
+9    PROTEZIONE DALLE SOVRATENSIONI . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+143
+9.1    Sovratensioni di origine interna  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+143
+9.2    Sovratensioni di origine esterna . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+144
+9.3    Coordinamento dell'isolamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+145
+9.4    Scaricatori di sovratensione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+146
+9.5    Caratteristiche e installazione degli SPD  . . . . . . . . . . . . . . . . . . . . . . . . . 
+148
+9.6    Protezione delle strutture ordinarie contro le fulminazioni atmosferiche  . 
+150
+10   PROTEZIONE CONTRO I CONTATTI DIRETTI E INDIRETTI  . . . . . . . . . 
+153
+10.1    Effetti della corrente elettrica circolante nel corpo umano . . . . . . . . . . . 
+153
+10.2    Curve di pericolosità della corrente  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+156
+10.3    Resistenza elettrica del corpo umano  . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+157
+10.4    Curve di sicurezza della tensione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+159
+
+[PAG 853]
+IMPIANTI  ELETTRICI                                               X-3
+10.5    Impianto di terra  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+162
+10.6    Costituzione dell'impianto di terra  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+164
+10.7    Formule e tabelle per il calcolo della resistenza di terra  . . . . . . . . . . . . .
+170
+10.8    Dimensionamento dell’impianto di terra per impianti con tensione 
+superiore a 1000 V  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+173
+10.9    Interruttore differenziale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+174
+10.10   Gradi IP di protezione degli involucri  . . . . . . . . . . . . . . . . . . . . . . . . . .
+178
+10.11   Definizioni relative alla protezione contro i contatti diretti e indiretti  . .
+181
+10.12   Protezione contro i contatti indiretti mediante interruzione automatica 
+dell'alimentazione, sistema TT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+182
+10.13   Protezione contro i contatti indiretti mediante interruzione automatica 
+dell'alimentazione, sistema TN  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+187
+10.14   Protezione contro i contatti indiretti mediante interruzione automatica 
+dell'alimentazione, sistema IT  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+188
+10.15   Protezione contro i contatti indiretti senza interruzione automatica 
+dell'alimentazione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+188
+10.16   Protezione contro i contatti diretti  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+189
+10.17   Protezione combinata contro i contatti diretti e indiretti mediante sistemi 
+a bassissima tensione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+189
+11   IMPIANTI PER LA DISTRIBUZIONE E L'UTILIZZAZIONE DELL'ENERGIA 
+ELETTRICA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+192
+11.1    Cabine elettriche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+192
+11.2    Connessione delle cabine MT/BT alla rete di distribuzione  . . . . . . . . . .
+193
+11.3    Schemi tipici lato MT  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+195
+11.4    Criteri di scelta e di dimensionamento dei componenti delle cabine
+elettiche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+202
+11.5    Quadri elettrici per bassa tensione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+205
+11.6    Baricentro elettrico di un impianto  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+206
+11.7    Distribuzione in media tensione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+207
+11.8    Distribuzione in bassa tensione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+210
+11.9    Sezionamento e comando degli impianti utilizzatori . . . . . . . . . . . . . . . .
+212
+11.10    Rifasamento degli impianti elettrici  . . . . . . . . . . . . . . . . . . . . . . . . . . .
+215
+11.11    Costi e tariffe dell'energia elettrica  . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+221
+11.12    Alimentazione dei servizi di sicurezza  . . . . . . . . . . . . . . . . . . . . . . . . .
+222
+11.13    Illuminazione di emergenza  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+225
+12   AMBIENTI E APPLICAZIONI PARTICOLARI . . . . . . . . . . . . . . . . . . . . . . .
+226
+12.1    Locali contenenti bagni o docce  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+227
+12.2    Piscine . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+228
+12.3    Cantieri di costruzione e di demolizione . . . . . . . . . . . . . . . . . . . . . . . . .
+230
+12.4    Strutture adibite a uso agricolo e zootecnico . . . . . . . . . . . . . . . . . . . . . .
+231
+12.5    Locali a uso medico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+232
+12.6    Ambienti a maggior rischio in caso d'incendio  . . . . . . . . . . . . . . . . . . . .
+237
+12.7    Luoghi di pubblico spettacolo e di intrattenimento . . . . . . . . . . . . . . . . .
+241
+12.8    Luoghi con pericolo di esplosione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+243
+13   VERIFICHE DEGLI IMPIANTI ELETTRICI UTILIZZATORI  . . . . . . . . . . .
+247
+13.1    Generalità e definizioni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+247
+13.2    Obbligatorietà e periodicità delle verifiche . . . . . . . . . . . . . . . . . . . . . . .
+248
+13.3    Esami a vista . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+250
+13.4    Prove   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+250
+
+[PAG 854]
+X-4
+  IMPIANTI ELETTRICI 
+13.5    Misura della resistenza di terra . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+252
+13.6    Misura dell'impedenza dell'anello di guasto . . . . . . . . . . . . . . . . . . . . . . 
+254
+13.7    Verifica dell’impianto di terra per impianti utilizzatori con cabina propria 254
+14   CENTRALI ELETTRICHE DI PRODUZIONE E STAZIONI ELETTRICHE  
+255
+14.1    Produzione dell'energia elettrica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+255
+14.2    Centrali idroelettriche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+258
+14.3    Centrali termoelettriche  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+261
+14.4    Centrali nucleotermoelettriche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+266
+14.5    Metodi integrativi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+269
+14.6    Alternatore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+271
+14.7    Stazioni elettriche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+272
+14.8    Servizi ausiliari delle centrali e delle stazioni  . . . . . . . . . . . . . . . . . . . . 
+274
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+278
+1  DEFINIZIONI E CLASSIFICAZIONI
+1.1  Definizioni relative agli impianti e ai circuiti
+Impianto elettrico
+È un insieme di componenti elettrici, aventi caratteristiche coordinate, fra di loro elet-
+tricamente associati al fine di soddisfare a scopi specifici. Fanno parte dell’impianto elet-
+trico tutti i componenti elettrici non alimentati mediante prese a spina e anche gli
+apparecchi utilizzatori fissi alimentati tramite prese a spina destinate soltanto alla loro ali-
+mentazione.
+Rientrano nella definizione precedente, per esempio, l’impianto per l’illuminazione e
+l’alimentazione delle prese di una abitazione, compresi gli apparecchi illuminanti ed
+esclusi gli utilizzatori collegati alle prese a spina, e l’impianto per l’alimentazione degli
+utilizzatori fissi (ascensori, pompe, apparecchi illuminanti ecc.) e delle prese a spina dei
+servizi comuni di uno stabile condominiale.
+Impianto utilizzatore
+È l’impianto elettrico costituito unicamente dai circuiti di alimentazione degli appa-
+recchi utilizzatori e delle prese a spina, comprese le relative apparecchiature di manovra,
+protezione ecc. I due esempi precedenti si riferiscono a impianti utilizzatori.
+Origine di un impianto utilizzatore
+Corrisponde al punto di consegna dell’energia elettrica all’impianto. Quando la conse-
+gna viene effettuata da una rete di distribuzione pubblica, il punto di consegna è quello in
+cui vengono installati i contatori dell’energia elettrica. Nel caso degli autoproduttori di
+energia elettrica, l’origine dell’impianto utilizzatore corrisponde ai morsetti di uscita del
+generatore elettrico o del trasformatore.
+Circuito elettrico
+È la parte di un impianto elettrico alimentata da uno stesso punto e protetta contro le
+sovracorrenti da uno stesso dispositivo di protezione (Fig. X.1.1).
+La corrente che può fluire in un circuito durante il servizio ordinario è detta corrente
+d’impiego del circuito stesso.
+
+[PAG 855]
+IMPIANTI  ELETTRICI                                               X-5
+Esistono due tipi di circuito elettrico (Fig. X.1.1):
+–  circuito terminale, direttamente collegato agli apparecchi utilizzatori o alle prese a 
+spina;
+–  circuito di distribuzione, che alimenta un quadro di distribuzione; tutti i circuiti di
+potenza che non siano terminali sono di distribuzione.
+Fig. X.1.1  Illustrazione della definizione di impianto e di circuito elettrico.
+1.2  Tensione nominale e classificazione dei sistemi elettrici
+Tensione nominale
+È la tensione per cui un impianto o una sua parte è progettato. Essa costituisce il
+valore di riferimento con il quale il sistema è denominato e al quale sono riferite le sue
+caratteristiche. Nel caso della corrente alternata si considera il valore efficace e, per i
+sistemi trifasi, quello della tensione concatenata.
+Durante il normale esercizio di un impianto la tensione reale può differire da quella
+nominale, principalmente a causa delle cadute di tensione e della variabilità dei carichi. I
+limiti di tolleranza permessi, precisati dalla norma CEI 8-6, sono pari a 10% nelle condi-
+zioni ordinarie di esercizio.
+Sistema elettrico
+È la parte di un impianto elettrico costituita dall’insieme dei componenti elettrici
+aventi tutti una determinata tensione nominale. Per esempio, in un impianto utilizzatore si
+può distinguere un sistema a 230 V per l’alimentazione degli apparecchi e delle prese
+monofasi e uno a 400 V per gli apparecchi trifasi.
+Classificazione dei sistemi elettrici in relazione alla tensione nominale
+I sistemi elettrici vengono classificati in funzione della loro tensione nominale in
+quattro categorie, come indicato nella Tab. X.1.1. Questa classificazione non esclude che,
+nelle diverse categorie, possano essere introdotti limiti di tensione intermedi, per ragioni
+particolari.
+Circuito di
+distribuzione
+Circuito
+terminale
+Circuito
+terminale
+Wh
+Impianto elettrico
+
+[PAG 856]
+X-6
+  IMPIANTI ELETTRICI 
+Bassa, media e alta tensione
+Nella pratica corrente i sistemi e gli impianti elettrici sono classificati a bassa, media
+o alta tensione secondo il criterio seguente.
+–  Sistemi a bassa tensione (BT): quelli di categoria 0 e I, ossia con tensione nominale 
+fino a 1000 V in corrente alternata e 1500 V in corrente continua;
+–  Sistemi a media tensione (MT): quelli di categoria II, con tensione nominale supe-
+riore ai limiti precedenti e fino a 30 kV;
+–  Sistemi ad alta tensione (AT): quelli di categoria III, con tensione nominale supe-
+riore a 30 kV.
+1.3  Classificazione degli impianti secondo la funzione
+Per classificare gli impianti elettrici in base alla funzione a cui sono destinati, è oppor-
+tuno definire innanzitutto cosa si intende per officina elettrica. 
+Una officina elettrica è il complesso delle installazioni destinate ad almeno una delle
+seguenti funzioni: produzione, conversione, trasformazione, regolazione o smistamento
+dell’energia elettrica. L’insieme delle apparecchiature deve essere contenuto in uno o più
+locali o aree all’aperto racchiuse in un’unica recinzione.
+In base alla loro funzione le officine elettriche si suddividono in:
+–  centrali elettriche, destinate alla produzione dell’energia elettrica;
+–  stazioni elettriche, officine connesse a sistemi di cui almeno uno di III categoria e
+destinate ad almeno una delle funzioni seguenti: trasformazione, conversione, regola-
+zione, smistamento dell’energia elettrica;
+–  cabine elettriche, officine connesse a sistemi di I o II categoria e destinate ad
+almeno una delle seguenti funzioni: trasformazione, conversione, regolazione, smista-
+mento dell’energia elettrica; rientrano nella definizione di cabine anche i posti di trasfor-
+mazione realizzati con apparecchiature prefabbricate, anche se non sono contenuti in un
+apposito locale o in un’area recintata.
+Nella definizione precedente compaiono le funzioni seguenti, attribuibili agli impianti
+elettrici:
+–  produzione dell’energia elettrica mediante la trasformazione in elettrica di forme di 
+energia di altro tipo, attuata nelle centrali di produzione (idroelettriche, termoelettriche
+ecc.);
+Tab. X.1.1   Classificazione dei sistemi elettrici in categorie
+Denominazione
+Valori limite della tensione nominale
+Sistemi di categoria 0 (zero)
+Corrente alternata
+Un  50 V
+Corrente continua
+Un  120 V
+Sistemi di I categoria
+Corrente alternata
+50 V < Un  1000 V
+Corrente continua
+120 V < Un  1500 V
+Sistemi di II categoria
+Corrente alternata
+1000 V < Un  30 000 V
+Corrente continua
+1500 V < Un  30 000 V
+Sistemi di III categoria
+Corrente alternata
+Un  30 000 V
+Corrente continua
+Un  30 000 V
+
+[PAG 857]
+IMPIANTI  ELETTRICI                                               X-7
+–  trasformazione, intesa come variazione del livello di tensione ottenuta con
+l’impiego di trasformatori, al fine di avere in ogni punto della rete elettrica il valore di
+tensione più adatto allo scopo; la trasformazione avviene nelle stazioni e nelle cabine di
+trasformazione e non interessa la forma d’onda delle grandezze elettriche, che rimangono
+alternate sinusoidali, e la loro frequenza; la variazione del valore della tensione comporta
+sempre la variazione inversa di quello della corrente;
+–  conversione dell’energia elettrica, con variazione della forma d’onda della stessa; 
+le conversioni più comuni sono quelle da corrente alternata in continua (a.c.-d.c.)
+mediante raddrizzatori e quella opposta (d.c.-a.c.) tramite invertitori;
+–  regolazione delle grandezze elettriche o di altro tipo (tensione, potenza, frequenza, 
+numero di giri ecc.), al fine di fare assumere loro dei valori prefissati oppure un determi-
+nato andamento;
+–  smistamento dell’energia elettrica da una o più linee in arrivo a una o più linee in
+partenza, senza operare alcuna trasformazione sul livello di tensione; spesso le due fun-
+zioni, di smistamento e trasformazione, vengono svolte nella stessa stazione o cabina elet-
+trica.
+Vi sono poi altre funzioni tipiche degli impianti elettrici, non comprese nell’elenco
+precedente:
+–  utilizzazione dell’energia elettrica, consistente nella trasformazione di tale energia
+in altra forma adatta a essere utilizzata nelle varie applicazioni (illuminazione di ambienti,
+movimentazione di organi meccanici ecc.);
+–  trasmissione dell’energia elettrica, consistente nel trasferimento di notevoli quan-
+tità di energia a grandi distanze e con elevati valori di tensione, mediante linee aeree o in
+cavo;
+–  distribuzione dell’energia elettrica alle utenze, dalle stazioni o dalle cabine; può
+avvenire in media o in bassa tensione ed è realizzata con linee, prevalentemente in cavo,
+di lunghezza, potenza e tensione inferiori rispetto a quelle adibite alla trasmissione.
+1.4  Classificazione dei sistemi elettrici in base al collegamento a terra
+I sistemi di distribuzione di categorie 0 e I in corrente alternata vengono alimentati dal
+circuito BT delle cabine di trasformazione che, essendo dotate di uno o più trasformatori
+con l’avvolgimento secondario collegato a stella, rendono disponibili le tre fasi e il neu-
+tro, corrispondente al centro stella del sistema.
+Durante il normale esercizio dell’impianto tale punto può essere direttamente colle-
+gato a terra o isolato da terra; quest’ultima condizione è equivalente al collegamento a
+terra tramite impedenza.
+Inoltre le masse degli utilizzatori fissi e i poli di terra delle prese possono essere colle-
+gate direttamente a terra oppure connesse al punto del sistema collegato a terra, general-
+mente il neutro per gli impianti in corrente alternata.
+La designazione delle diverse condizioni di funzionamento viene effettuata mediante
+una sigla letterale (Tab. X.1.2), i cui simboli principali hanno il significato seguente.
+Prima lettera, indicante la situazione del sistema di alimentazione verso terra:
+–  T: collegamento diretto a terra di un punto (il neutro in c.a.);
+–  I: isolamento da terra oppure collegamento a terra di un punto (il neutro in c.a.)
+mediante un’impedenza.
+Seconda lettera, indicante la situazione delle masse rispetto a terra:
+–  T: collegamento diretto a terra delle masse mediante il conduttore di protezione
+(PE);
+–  N: collegamento delle masse al punto connesso a terra (il neutro in c.a.) del sistema
+di alimentazione; questa situazione è possibile solo quando la prima lettera è T.
+
+[PAG 858]
+X-8
+  IMPIANTI ELETTRICI 
+Eventuali lettere successive indicano se le funzioni di conduttore neutro (N) e di con-
+duttore di protezione (PE) sono separate (lettera S) o combinate (lettera C) in un unico
+conduttore, denominato PEN.
+Le possibili configurazioni per i sistemi in corrente alternata sono illustrate nelle
+Figg. X.1.2, X.1.3, X.1.4.
+Fig. X.1.2   Sistema di distribuzione a) TT, b) IT (neutro non distribuito).
+Fig. X.1.3   Sistema di distribuzione a) TN-C, b) TN-S.
+Tab. X.1.2   Classificazione dei sistemi di distribuzione in relazione al collegamento a
+terra
+Sistema
+Stato del neutro della rete
+Collegamento delle masse
+TT
+Collegato direttamente a terra
+nella cabina di trasformazione
+A un impianto di terra indipendente da quello
+del neutro, mediante il conduttore di prote-
+zione PE
+TN
+TN-S
+Collegato direttamente a terra
+nella cabina di trasformazione
+Allo stesso impianto di terra del neutro,
+mediante il conduttore di protezione PE
+TN-C
+Al conduttore combinato di protezione e neu-
+tro PEN
+TN-C-S
+In parte al PEN e in parte al PE
+IT
+Isolato o collegato a terra
+mediante impedenza
+A un impianto di terra indipendente dal neutro
+L1
+L2
+L3
+N
+T1
+T2
+a)
+PE
+L1
+L2
+L3
+N
+T1
+T2
+b)
+PE
+L1
+L2
+L3
+PEN
+T1
+a)
+L1
+L2
+L3
+N
+T1
+b)
+PE
+
+[PAG 859]
+IMPIANTI  ELETTRICI                                               X-9
+Fig. X.1.4  Sistema di distribuzione TN-C-S.
+Fig. X.1.5  Sistema monofase a) con collegamento a terra di un punto terminale, b) di
+quello centrale.
+Fig. X.1.6  Sistema a corrente continua con collegamento a terra a) di un punto terminale,
+b) di quello centrale.
+Nel caso dei sistemi monofasi (Fig. X.1.5a, b) e di quelli in corrente continua (Fig.
+X.1.6a, b) può essere collegato a terra un punto terminale oppure quello centrale.
+Nel caso dei sistemi di categoria superiore alla I, la condizione del neutro è la
+seguente:
+–  reti MT (categoria II): vengono fatte funzionare con il neutro isolato, per limitare le
+correnti di guasto a terra, che possono così richiudersi solo attraverso gli accoppiamenti
+capacitivi a elevata impedenza, e per ridurre le conseguenti tensioni di passo e di contatto;
+–  reti AT (categoria III): il neutro viene collegato direttamente a terra, in modo da
+ridurre il livello di isolamento delle macchine e delle apparecchiature, che dovrà essere
+proporzionato per la tensione di fase e non per quella concatenata; l’elevato valore della
+corrente di guasto a terra impone l’adozione, per le stazioni elettriche, di impianti di terra
+molto estesi.
+Tensione nominale verso terra
+La tensione nominale verso terra di una sistema dipende dallo stato del neutro ed è
+definita come indicato nella Tab. X.1.3.
+PE
+N
+L1
+L2
+L3
+PEN
+T1
+TN-C
+TN-S
+a)
+b)
+a)
+b)
+
+
+
+
+
+[PAG 860]
+X-10
+  IMPIANTI ELETTRICI 
+2  CALCOLO DELLA POTENZA CONVENZIONALE E DELLA CORRENTE
+D’IMPIEGO DELLE CONDUTTURE ELETTRICHE
+2.1  Potenza convenzionale e corrente d’impiego
+La potenza convenzionale di un circuito elettrico è la potenza attiva per la quale deve
+essere dimensionato il circuito, determinata non in base al suo effettivo funzionamento,
+ma tenendo conto della potenza di targa degli utilizzatori fissi alimentati, della potenza
+massima dei gruppi di prese a spina collegati al circuito e di opportuni coefficienti, valu-
+tati statisticamente oppure in base al funzionamento degli utilizzatori, mediante i quali si
+tiene conto della potenza mediamente richiesta dai singoli carichi elettrici collegati al cir-
+cuito in esame e della contemporaneità di funzionamento ipotizzabile nel caso dell’ali-
+mentazione di più carichi. Il calcolo della potenza convenzionale è necessario quando non
+è nota la potenza effettivamente erogata dal circuito in esame oppure quando tale potenza
+può variare nel tempo e bisogna far riferimento a una potenza presunta, tenendo conto
+delle condizioni di carico più gravose, in modo da determinare la massima potenza che
+può interessare il circuito.
+La corrente d’impiego Ib è definita dalla norma CEI 64-8/2 come la corrente che può
+fluire in un circuito nel servizio ordinario, escludendo quindi il funzionamento con sovra-
+correnti dovute a sovraccarichi e corto circuiti.
+Per la sua determinazione si fa riferimento alla potenza attiva P (effettiva o conven-
+zionale) del circuito, alla tensione U di alimentazione e al fattore di potenza cos ,
+secondo le relazioni seguenti:
+(X.2.1)
+Tab. X.1.3   Tensione nominale verso terra di un sistema
+Tipo di sistema
+Tensione nominale verso 
+terra
+Motivazione
+Trifase con neutro iso-
+lato o connesso a terra
+tramite impedenza
+Uguale 
+alla 
+tensione
+nominale Un del sistema
+(valore 
+della 
+tensione
+concatenata)
+Nel caso del guasto a terra di una fase si
+annulla la d.d.p. tra quella fase e terra (il centro
+stella del sistema si sposta su uno dei vertici
+del triangolo delle tensioni) e la d.d.p. tra le
+altre due fasi e terra diventa uguale a Un
+Trifase con neutro diret-
+tamente a terra
+Uguale al valore di fase
+corrispondente alla ten-
+sione nominale Un/
+Il neutro collegato a terra assume il potenziale
+del centro stella del sistema; le d.d.p. tra le fasi
+e la terra coincidono con le tensioni stellate
+Monofase o a corrente
+continua, senza punto di
+messa a terra
+Uguale 
+alla 
+tensione
+nominale Un del sistema
+Nel caso del guasto a terra di un conduttore si
+annulla la d.d.p. tra questi e terra e la tensione
+tra l’altro conduttore e terra diventa uguale a
+quella nominale
+Monofase o a corrente
+continua, con il punto di
+mezzo messo a terra
+Uguale alla metà (Un/2)
+della tensione nominale
+del sistema
+La d.d.p. tra ognuno dei due terminali e terra è
+uguale a quella di ogni terminale rispetto al
+punto centrale e quindi è pari alla metà della
+d.d.p. totale
+Monofase o a corrente
+continua, con un termi-
+nale messo a terra
+Uguale 
+alla 
+tensione
+nominale Un del sistema
+La d.d.p. tra il terminale non connesso a terra e
+la terra è uguale a quella tra i due terminali
+3
+corrente continua
+Ib
+P
+U---
+=
+
+[PAG 861]
+IMPIANTI  ELETTRICI                                               X-11
+(X.2.2)
+(X.2.3)
+2.2  Fattore di utilizzazione
+Si consideri un apparecchio utilizzatore e si indichi con Pan la potenza attiva assorbita
+nominale che l’apparecchio richiede alla rete di alimentazione nel funzionamento secondo
+i dati di targa e con P la potenza attiva assorbita durante il regime di funzionamento con-
+siderato.
+Si definisce fattore (o coefficiente) di utilizzazione il rapporto tra le due potenze:
+(X.2.4)
+Trattandosi del rapporto fra due grandezze omogenee, il valore di Ku è espresso da un
+numero adimensionato, decimale o percentuale (Ku% = 100 Ku). La sua conoscenza per-
+mette di calcolare la potenza mediamente assorbita nelle condizioni di esercizio in fun-
+zione di quella di targa, con la relazione:
+(X.2.5)
+A seconda dei valori assunti da Ku si possono avere le tre condizioni di carico
+seguenti:
+–  Ku < 1 (P < Pan) quando il funzionamento avviene con carico ridotto;
+–  Ku = 1 (P = Pan) quando il funzionamento avviene con carico nominale;
+–  Ku > 1 (P > Pan) quando il funzionamento avviene con carico superiore a quello
+nominale (sovraccarico).
+I valori del fattore di utilizzazione da assumere nei calcoli possono essere dedotti nei
+due modi seguenti:
+–  se è noto il diagramma di carico dell’utilizzatore (Fig. X.2.1) si possono attribuire a
+Ku e P i valori effettivi per una determinata condizione di funzionamento;
+–  in assenza di indicazioni precise sul regime di funzionamento del carico alimentato
+si ricorre a valori empirici dettati dall’esperienza, come quelli riportati nella Tab. X.2.1.
+Fig. X.2.1  Esempio di diagramma di carico a gradini.
+corrente alternata monofase
+Ib
+P
+Ucos
+----------------
+=
+corrente alternata trifase
+Ib
+P
+3Ucos
+------------------------
+=
+Ku
+P
+Pan
+--------
+=
+P
+KuPan
+=
+P
+0
+t1
+t2
+t3
+t
+Pan
+P1
+P2
+P3
+Ku1
+P1
+Pan
+----------
+=
+Ku2
+P2
+Pan
+----------
+=
+Ku3
+P3
+Pan
+----------
+=
+
+[PAG 862]
+X-12
+  IMPIANTI ELETTRICI 
+Esempio 1
+La potenza convenzionale di una macchina utensile avente potenza assorbita nominale
+Pan = 8 kW, se si assume Ku = 0,7, è pari a:
+2.3  Fattore di contemporaneità
+Quando un circuito elettrico alimenta più utilizzatori occorre considerare che non
+sempre tutti funzioneranno contemporaneamente. La valutazione esatta della potenza
+totale assorbita richiede la conoscenza di tutte le combinazioni di carico possibili ed è
+alquanto difficoltosa, specialmente nel caso di molti utilizzatori con caratteristiche
+diverse. Per calcolare la potenza media totale assorbita si considera che essa sarà minore
+(al limite uguale) della somma delle potenze dei singoli utilizzatori:
+(X.2.6)
+Si definisce fattore di contemporaneità il rapporto adimensionato:
+(X.2.7)
+Il caso limite Kc = 1 si ha quando tutte le utenze funzionano sempre contemporanea-
+mente. Stabilito il valore di Kc si ricava la potenza totale convenzionale con la relazione:
+Tab. X.2.1   Fattore di utilizzazione
+Tipo di utilizzatore
+Ku
+Lampade
+1
+Motori elettrici con potenza nominale da 0,5 a 2 kW
+0,7
+Motori elettrici con potenza nominale da 2 a 10 kW
+0,75
+Motori elettrici con potenza nominale oltre 10 kW
+0,8
+Forni a resistenza e a induzione
+1
+Raddrizzatori
+1
+Saldatrici
+0,7 1
+Stufe elettriche
+1
+Macchine utensili, nastri trasportatori
+0,6 
+Ascensori, montacarichi, impianti di sollevamento
+0,8 1
+Pompe, ventilatori
+1
+P
+8
+0 7
+5,6
+=
+
+
+kW
+=
+Pt
+P1
+P2
+...
+Pn
++
++
++
+
+
+Pi
+i
+1
+=
+n
+
+=
+
+Kc
+Pt
+Pi
+i
+1
+=
+n
+
+----------------
+1
+
+=
+
+[PAG 863]
+IMPIANTI  ELETTRICI                                               X-13
+(X.2.8)
+I valori del fattore di contemporaneità da assumere nei calcoli possono essere dedotti
+nei due modi seguenti:
+–  se è noto il regime di funzionamento dell’impianto e le combinazioni possibili dei
+vari carichi si possono attribuire a Kc i valori effettivi per i diversi gruppi di utilizzatori;
+–  in mancanza di indicazioni precise si fa ricorso a valori empirici dettati dall’espe-
+rienza, come quelli riportati nella Tab. X.2.2.
+Esempio 2
+La potenza convenzionale di un gruppo di otto macchine utensili impieganti motori
+elettrici aventi potenza assorbita 3 kW, assumendo Kc = 0,7, è pari a:
+2.4  Valutazione della potenza convenzionale dei gruppi di prese
+La potenza assorbita dagli utilizzatori collegati alle prese, civili o industriali, è di dif-
+ficile valutazione, in quanto dipende dal numero di prese contemporaneamente funzio-
+nanti e dalla corrente erogata al carico tramite ciascuna presa. Per la sua determinazione si
+può procedere nel seguente modo.
+Tab. X.2.2   Fattore di contemporaneità
+Tipo di utilizzatore
+Numero
+Kc
+Forni elettrici
+fino a 2
+1
+Motori elettrici con potenza nominale da 0,5 a 2 kW
+fino a 10
+fino a 20
+fino a 50
+0,6
+0,5
+0,4
+Motori elettrici con potenza nominale da 2 a 10 kW
+fino a 10
+fino a 20
+fino a 50
+0,7
+0,6
+0,45
+Motori elettrici con potenza nominale da 10 a 30 kW
+fino a 5
+fino a 10
+fino a 50
+0,8
+0,65
+0,5
+Motori elettrici con potenza nominale oltre 30 kW
+fino a 2
+fino a 5
+fino a 10
+0,9
+0,7
+0,6
+Raddrizzatori
+fino a 10
+0,8
+Saldatrici elettriche
+fino a 10
+0,4
+Ascensori e montacarichi in uffici e industrie
+fino a 4
+fino a 10
+0,75
+0,6
+Illuminazione
+0,8
+Pt
+Kc
+Pi
+i
+1
+=
+n
+
+=
+P
+8
+3
+
+0,7
+
+16,8 kW
+=
+=
+
+[PAG 864]
+X-14
+  IMPIANTI ELETTRICI 
+–  Si valuta la potenza massima che tramite una presa può essere trasferita all’utilizza-
+tore collegato, riferita alla tensione nominale Un del sistema, alla corrente nominale In
+della presa e a un f.d.p. convenzionale cos n pari a 0,8  0,9 (salvo casi particolari di uti-
+lizzatori fortemente sfasati), con le relazioni seguenti, valide per prese monofasi (X.2.9) e
+trifasi (X.2.10):
+(X.2.9)
+(X.2.10)
+–  Si introduce un fattore Kp di riduzione complessivo, in modo da tener conto
+dell’utilizzazione e della contemporaneità, a cui possono essere attribuiti i valori medi
+seguenti:
+•  da 0,05 a 0,2 per prese monofasi installate in ambienti a destinazione civile;
+•  da 0,15 a 0,4 per prese monofasi e trifasi installate in impianti industriali o del
+settore terziario.
+–  Si determina la potenza convenzionale delle N prese con la relazione:
+(X.2.11)
+Nel caso di prese destinate unicamente all’alimentazione di un determinato carico, la
+potenza da considerare è quella del carico stesso.
+Esempio 3
+La potenza massima che può essere erogata tramite una presa trifase, 400 V, 16 A, a
+un carico funzionante con f.d.p. 0,8 è data da:
+La potenza convenzionale del circuito che alimenta un gruppo di 10 prese del tipo
+indicato varierà, in base al valore assunto dal coefficiente di riduzione: 
+a seconda del grado di utilizzazione delle prese stesse.
+2.5  Valutazione della potenza convenzionale dei motori elettrici
+Per un motore elettrico la potenza nominale (di targa) è quella utile. Indicando con Pn
+tale potenza e con n il rendimento nominale, la potenza assorbita nominale è data da: 
+(X.2.12)
+A tale potenza corrisponde la corrente nominale assorbita che, per un motore trifase, è
+data da:
+(X.2.13)
+PM
+UnIn
+n
+cos
+=
+PM
+3UnIn
+n
+cos
+=
+P
+NPMKp
+=
+PM
+1,732
+400
+
+16
+
+0,8
+
+8867,84 W
+8,9 kW
+
+=
+=
+da
+P
+10
+8,9
+
+0,15
+
+13,35 kW
+=
+=
+a
+P
+10
+8,9
+
+0,4
+
+35,6 kW
+=
+=
+Pan
+Pn
+n
+-----
+=
+In
+Pan
+3Un
+n
+cos
+------------------------------
+Pn
+3Unn
+n
+cos
+-------------------------------------
+=
+=
