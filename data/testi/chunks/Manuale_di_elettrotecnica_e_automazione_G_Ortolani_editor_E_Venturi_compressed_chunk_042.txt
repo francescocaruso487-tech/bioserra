@@ -1,0 +1,2058 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 42/116 ===
+Chars: 45,000 | Offset: 1,810,997
+
+
+
+[PAG 933]
+IMPIANTI  ELETTRICI                                               X-83
+–  si considerano separatamente i due tratti A-C e B-C, per i quali devono essere
+uguali le cadute di tensione e i momenti amperometrici e, quindi, anche le sezioni
+Sac = Sbc = S; poiché Mr = la Ira = lb Irb e Ml = la Ila = lb Ilb la sezione della linea può essere
+ricavata con una delle seguenti espressioni, derivate dalla relazione generale:
+(X.5.43)
+–  si sceglie la sezione commerciale effettiva e se ne valuta la portata Iz: essa dovrà
+essere non inferiore alla corrente maggiore tra Ia e Ib.
+6  SOVRACORRENTI
+6.1  Sovraccarico e corto circuito
+Le apparecchiature elettriche sono caratterizzate dal valore nominale della corrente,
+riferito al funzionamento nelle condizioni specificate dai dati di targa.
+Il funzionamento in condizioni di sovracorrente si ha tutte le volte che l'apparecchia-
+tura, per cause varie, è interessata da un valore di corrente maggiore di quello nominale.
+Nel caso delle condutture elettriche la sovracorrente va riferita al valore della portata dei
+conduttori.
+Solitamente le sovracorrenti vengono divise in due categorie: sovracorrenti dovute a
+sovraccarichi e sovracorrenti dovute a corto circuiti.
+Il sovraccarico è tipico di un circuito elettricamente sano, interessato da una corrente
+non troppo maggiore di quella nominale (generalmente fino a un massimo di 6  8 volte),
+che può essere sopportata per un determinato tempo e produce essenzialmente sollecita-
+zioni termiche. Esempi tipici sono la corrente di spunto di un motore elettrico e il funzio-
+namento di un cavo con corrente superiore alla propria portata.
+Nel caso del corto circuito la sovracorrente è dovuta a un guasto, ossia al contatto tra
+due parti a diversa tensione che, facendo diminuire l'impedenza totale del circuito, fa
+aumentare in modo significativo l'intensità di corrente, producendo sollecitazioni termi-
+che, di caratteristiche diverse da quelle del sovraccarico, sollecitazioni meccaniche per
+sforzi elettrodinamici e archi elettrici che possono innescare incendi ed esplosioni.
+6.2  Sollecitazione termica per sovraccarico
+Nel caso di una conduttura elettrica funzionante in condizioni nominali alla sua tem-
+peratura di servizio s, il manifestarsi di un sovraccarico, facendo aumentare la corrente e,
+di conseguenza, la potenza termica prodotta per effetto Joule, determina l'ulteriore riscal-
+damento della conduttura. Pur con una certa approssimazione si può considerare che
+l'aumento della temperatura  avvenga secondo la legge esponenziale di equazione:
+(X.6.1)
+tendendo alla temperatura finale di regime termico r data da:
+(X.6.2)
+dove a è la temperatura ambiente, Pc è la potenza termica sviluppata dalla sovracorrente,
+ è il coefficiente globale di trasmissione termica, A è la superficie di scambio termico,
+ = Ct/(A) è la costante di tempo termica del sistema e Ct è la capacità termica di tutte le
+parti interessate alla trasmissione del calore.
+S
+laIra
+Uf
+xllaIla
+–
+---------------------------------
+=
+;
+S
+lbIrb
+Uf
+xllbIlb
+–
+---------------------------------
+=
+
+r
+r
+a
+–
+
+
+–
+e
+t
+--
+–
+=
+r
+a
+Pc
+A
+------
++
+=
+
+[PAG 934]
+X-84
+  IMPIANTI ELETTRICI 
+Nella Fig. X.6.1 è riportato l'andamento delle curve di riscaldamento in condizioni di
+sovraccarico relative a due diversi valori dell'intensità di corrente, a cui corrispondono
+due valori della potenza e della temperatura di regime termico: si nota il maggior valore di
+temperatura che si ha nel caso di sovraccarico più intenso. Indicando con M la massima
+temperatura ammissibile durante il sovraccarico e con tM la massima durata ammissibile
+dello stesso, dopo la quale deve intervenire la protezione, si deduce che all'aumentare
+dell'entità del sovraccarico si riduce la durata ammissibile e deve diminuire il tempo
+d'intervento del dispositivo di protezione.
+Fig. X.6.1   Confronto tra sovraccarichi di diversa entità.
+6.3  Corrente di corto circuito
+Nella Fig. X.6.2 è rappresentato un circuito monofase (o una fase di un circuito tri-
+fase), alimentato da un generatore, di f.e.m. E e impedenza interna Zi, a cui è collegato un
+carico di impedenza Zc mediante una linea sulla quale si sviluppa un corto circuito.
+Fig. X.6.2   Corto circuito su una linea monofase.
+Nei casi in cui si possono trascurare i parametri trasversali di linea (conduttanza e
+capacità), le caratteristiche e i valori della corrente di corto circuito dipendono dai
+seguenti fattori:
+–  valore efficace E e fase iniziale  della f.e.m. del generatore, il cui valore istantaneo
+si può scrivere nella forma:
+(X.6.3)
+–  resistenza Rcc e reattanza induttiva Xcc del circuito in cui si sviluppa la corrente di
+corto circuito e che comprende il generatore, la linea fino al punto di guasto e l'eventuale
+impedenza del guasto; quando quest'ultima è trascurabile si parla di guasto franco;
+–  fase cc del circuito suddetto, data da:
+(X.6.4)
+0'
+Pc2 > Pc1
+tM1
+tM2
+t
+2
+1
+r2
+r1
+M
+s
+
+r2 > r1 
+tM2 < tM1
+Zi
+E
+Zc
+e t
+2Esen t
+
++
+
+
+=
+cc
+arctg
+Xcc
+Rcc
+--------
+=
+
+[PAG 935]
+IMPIANTI  ELETTRICI                                               X-85
+–  costante di tempo  = LccRcc, dove Lcc è l'induttanza del circuito in cui si sviluppa
+la sovracorrente.
+Trascurando la corrente istantanea transitante nel circuito nel regime di funzionamento
+precedente il guasto, che può assumere valori da zero a quello massimo della corrente
+d'impiego del circuito, la corrente di corto circuito può essere considerata come la somma
+di due componenti, una permanente e l'altra transitoria. La corrente di corto circuito per-
+manente è detta anche simmetrica in quanto, avendo andamento sinusoidale nel tempo, ha
+forma d'onda simmetrica rispetto all'asse dei tempi. Essa è espressa dalla relazione:
+(X.6.5)
+Il suo andamento è sinusoidale, con pulsazione  = 2f dipendente dalla frequenza
+della tensione di alimentazione, fase   cc e valore efficace Is dato da:
+(X.6.6)
+La componente transitoria della corrente di corto circuito è così denominata in quanto
+si estingue dopo un tempo pari a circa 5, periodo dopo il quale rimane solo la compo-
+nente permanente della corrente. La sua espressione è data da:
+(X.6.7)
+Fig. X.6.3   Andamento della componente transitoria.
+L'andamento è di tipo esponenziale decrescente (Fig. X.6.3) e il suo segno dipende dai
+valori di cc e di . In particolare si possono avere tre casi:
+–  cc   ; cc     0; sen (cc  )  0; corrente positiva;
+–  cc   ; cc     0; sen (cc  )  0; corrente negativa;
+–  cc   ; cc     0; sen (cc  )  0; corrente costantemente nulla.
+Poiché la componente transitoria conserva sempre lo stesso segno, essa è detta anche
+componente unidirezionale della corrente di corto circuito.
+Sommando le due componenti si ottiene l'espressione della corrente totale di corto circuito:
+(X.6.8)
+il cui andamento generale è rappresentato nella Fig. X.6.4; quando la componente transitoria
+diventa trascurabile la corrente di corto circuito coincide con la sua componente simmetrica.
+ip t
+2Issen t
+
+cc
+–
++
+
+
+=
+Is
+E
+Zcc
+-------
+E
+Rcc
+2
+Xcc
+2
++
+----------------------------------
+=
+=
+it t
+2Issen cc
+
+–
+
+e
+t
+--
+–
+=
+it
+cc > 
+cc = 
+cc < 
+t
+0
+i t
+2Is sen t
+
+cc
+–
++
+
+
+e
+t
+--
+–
+sen cc
+
+–
+
+
++
+=
+
+[PAG 936]
+X-86
+  IMPIANTI ELETTRICI 
+Fig. X.6.4   Corrente di corto circuito e sue componenti.
+Circuito puramente ohmico (cc = 0)
+Quando è trascurabile l'induttanza del circuito in cui si sviluppa il corto circuito
+(Lcc  0), la costante di tempo del circuito è nulla e l'esponenziale presente nella X.6.7
+assume valore nullo. In questo caso non si sviluppa la componente transitoria e la corrente
+di corto circuito è data da:
+(X.6.9)
+Per qualsiasi valore dell'angolo  l'andamento della corrente è sinusoidale, con valore
+efficace Is e valore massimo (corrente di cresta) Icr = 
+ Is; il valore di  influisce solo sul
+valore iniziale della corrente: per   = 0 la curva parte dall'origine degli assi (Fig. X.6.5).
+Fig. X.6.5   Andamento della corrente di cortocircuito per cc = 0 (caso  = 0).
+Circuito puramente induttivo (cc = 2)
+Quando è trascurabile la resistenza del circuito in cui si sviluppa il corto circuito
+(Lcc  0), la costante di tempo del circuito tende a un valore infinito e l'esponenziale pre-
+sente nella X.6.7 assume valore unitario. In questo caso la componente unidirezionale non
+è più transitoria in quanto non si annulla mai e le espressioni di questa componente e della
+corrente di corto circuito sono date da:
+(X.6.10)
+(X.6.11)
+Solo nel caso particolare  = 2 la componente unidirezionale è nulla.
+L'andamento della corrente (Fig. X.6.6) corrisponde alla somma di un termine costante e
+di uno sinusoidale e risulta parzialmente asimmetrico rispetto all'asse dei tempi.
+i(t)
+t
+it(t)
+i(t)
+ip(t)
+i(t)  ip(t)
+0
+i t
+2Issen t
+
++
+
+
+=
+2
+i(t)
+0
+i(t)  ip(t)
+t
+it(t)  0
+Is
+2
+Is
+2
+–
+it t
+2Issen 
+2--
+
+–
+
+
+
+
+=
+i t
+2Is sen t
+
+
+2--
+–
++
+
+
+
+
+sen 
+2--
+
+–
+
+
+
+
++
+=
+
+[PAG 937]
+IMPIANTI  ELETTRICI                                               X-87
+Fig. X.6.6   Andamento della corrente di corto circuito per cc = 2 e 0    2.
+Caso   0
+È il caso più sfavorevole che si può verificare quando il circuito di guasto è puramente
+induttivo. La componente unidirezionale e la corrente di corto circuito sono date da:
+(X.6.12)
+(X.6.13)
+L'andamento della corrente di cortocircuito è rappresentato nella Fig. X.6.7: la compo-
+nente unidirezionale non si annulla mai e assume il suo valore massimo; la corrente di
+corto circuito risulta totalmente asimmetrica e valore di cresta diventa massimo, pari a
+Icr = 2
+ Is.
+Fig. X.6.7   Andamento della corrente di corto circuito per cc = 2 e  = 0.
+Caso  = 2
+È il caso più favorevole che si può verificare quando il circuito di guasto è puramente
+induttivo. La componente unidirezionale si annulla e la corrente di corto circuito è data da:
+(X.6.14)
+Fig. X.6.8   Andamento della corrente di corto circuito per cc = 2 e  = 2.
+i(t)
+t
+i(t)
+it(t)
+0
+Icr
+it t
+2Is
+=
+i t
+2Is sen t
+
+2--
+–
+
+
+
+
+1
++
+=
+2
+i(t)
+0
+i(t)
+it(t)
+2
+2
+–
+Is
+Is
+2 2 Is
+t
+2
+
+2-
+3
+2- 
+
+
+ip(t)
+i t
+2Issen t
+
+
+=
+i(t)
+0
+2
+–
+Is
+Is
+2
+i(t)  ip(t)
+t
+it(t)  0
+
+[PAG 938]
+X-88
+  IMPIANTI ELETTRICI 
+Il suo andamento è rappresentato nella Fig. X.6.8: poiché la componente unidirezio-
+nale è sempre nulla la corrente di corto circuito risulta totalmente simmetrica e il valore di
+cresta diventa minimo, pari a Icr = 
+ Is.
+6.4  Fattore di cresta
+Il fattore di cresta della corrente di corto circuito è dato dal rapporto tra la corrente di
+cresta (valore massimo più elevato della corrente totale) e la corrente simmetrica (valore
+efficace della componente permanente):
+(X.6.15)
+Poiché la corrente di cresta, nei casi in cui l'angolo di fase  della tensione determina
+le situazioni più sfavorevoli, può assumere valori compresi tra 
+ Is (cc = 0) e 2
+ Is
+(cc = 2), a seconda dell'angolo di corto circuito cc, il valore del fattore di cresta è com-
+preso tra 
+ (1,414) e 2
+ (2,828) e varia secondo il grafico di Fig. X.6.9, sulle cui ordi-
+nate è stato considerato il rapporto Icr 
+, variabile tra 1 e 2. Sulle ascisse è riportato
+anche il valore del rapporto Rcc/Xcc legato al fattore di potenza dalla relazione:
+(X.6.16)
+Fig. X.6.9   Grafico del fattore di cresta.
+I casi più significativi sono stati riportati nella Tab. X.6.1.
+6.5  Integrale di Joule
+Durante il corto circuito la corrente i sviluppa energia termica per effetto Joule, calore
+che in parte rimane immagazzinato nel conduttore e ne determina il riscaldamento e in
+Tab. X.6.1   Espressioni della corrente di cresta e del fattore di cresta
+cc
+
+Icr
+Kcr
+Kcr/
+0
+qualsiasi
+ Is
+1
+2
+0
+2
+ Is
+2
+2
+2
+ Is
+1
+2
+Kcr
+Icr
+Is
+------
+=
+2
+2
+2
+2
+2
+coscc
+Rcc
+Xcc
+
+Rcc
+Xcc
+
+
+2
+1
++
+---------------------------------------------
+=
+1
+Kcr/ 2
+1,2
+1,4
+1,6
+1,8
+2
+0
+0,2
+0,4
+0,6
+0,8
+1
+1,2
+Rcc/Xcc
+0,196
+0,371
+0,514
+0,625
+0,707 0,768
+coscc
+2
+2
+2
+2
+2
+2
+2
+
+[PAG 939]
+IMPIANTI  ELETTRICI                                               X-89
+parte viene ceduto all'ambiente circostante. Per lo studio semplificato del fenomeno si
+ammette che il riscaldamento sia di tipo adiabatico, ossia senza scambio di calore con
+l'esterno. Questa ipotesi è giustificata quando la durata del corto circuito, la cui corrente
+viene interrotta dal dispositivo di protezione, è sufficientemente piccola (dell'ordine delle
+decine di millisecondi) da poter trascurare il calore ceduto all'esterno.
+La relazione di equilibrio termico che si ottiene è la seguente:
+(X.6.17)
+dove ti è il tempo di interruzione, s è la temperatura iniziale del conduttore, posta uguale
+a quella di servizio del cavo, f è la temperatura finale, d è la variazione infinitesimale di
+temperatura nel tempo dt, c è il calore specifico per unità di volume del materiale condut-
+tore,  è la sua resistività elettrica ed S la sezione del conduttore.
+Il primo termine della X.6.17 è detto integrale di Joule o energia specifica o energia
+passante e si misura in A2s. Esso rappresenta l'energia termica sviluppata dalla corrente di
+cortocircuito circolante in un resistore di resistenza unitaria.
+Il secondo termine della X.6.17 rappresenta invece l'energia termica unitaria che resta
+immagazzinata nel conduttore e che dipende dalle caratteristiche fisiche e geometriche del
+conduttore stesso; con opportune approssimazioni e introducendo una costante K dipen-
+dente dal tipo di cavo, è possibile ridurre tale termine alla forma K2S2.
+La protezione dal corto circuito è efficace quando l'energia termica prodotta dalla cor-
+rente non supera quella sopportabile dal cavo, ossia quando è verificata la condizione:
+(X.6.18)
+Il coefficiente K si determina con la relazione:
+(X.6.19)
+dove 0 è la resistività elettrica del materiale conduttore a 0 °C e  è il coefficiente di
+temperatura della resistività, supposto costante.
+I valori delle caratteristiche fisiche del rame e dell'alluminio che compaiono
+nell'espressione di K sono riportati nella Tab. X.6.2, mentre nella Tab. X.6.3 compaiono i
+valori del coefficiente K per cavi con conduttori in rame e in alluminio e per diversi tipi di
+materiale isolante.
+I valori dell'energia specifica sopportabile da cavi con conduttori di rame, isolati in
+PVC ed EPR (o XLPE), sono riportati nella Tab. X.6.4.
+Tab. X.6.2   Valori di , c e 0 per conduttori in rame e in alluminio
+Materiale
+
+c
+0
+Rame
+0,00425 °C1
+0,00345 J/(°C mm3)
+15,9  106   mm
+Alluminio 
+0,00438 °C1
+0,00250 J/(°C mm3)
+26,0  106   mm
+i2dt
+0
+ti
+
+cS2
+
+--------d
+s
+f
+
+=
+i2dt
+0
+ti
+
+K2S2
+
+K
+c
+0
+--------- ln
+1
+f
++
+1
+s
++
+-------------------
+
+
+
+
+=
+
+[PAG 940]
+X-90
+  IMPIANTI ELETTRICI 
+6.6  Sforzi elettrodinamici
+Tra due conduttori rettilinei e paralleli posti in aria a distanza d e percorsi dalle cor-
+renti I1 e I2 (Fig. X.6.10a, b) nascono, a causa delle azioni elettromagnetiche, delle forze
+elettrodinamiche di repulsione (correnti discordi) o di attrazione (correnti concordi), la
+cui intensità è data da:
+(X.6.20)
+dove l è la lunghezza dei conduttori e   0 = 4  107 H/m è la permeabilità magnetica
+dell'aria, che si può ritenere circa uguale a quella assoluta del vuoto.
+Tab. X.6.3   Valori del coefficiente K (da norma CEI 64/8-4)
+Tipo di isolante
+Temperatura (°C)
+Valori di K
+Iniziale s
+finale f
+rame
+alluminio
+Polivinilcloruro (PVC)
+70
+160
+115
+74
+Gomma ordinaria
+60
+200
+135
+87
+Gomma etilenpropilenica (EPR) e polieti-
+lene reticolato (XLPE)
+90
+250
+143
+87
+Presenza di giunzioni o terminazioni sal-
+date a stagno
+70
+160
+115
+Tab. X.6.4   Valori dell'energia specifica K2S2 (A2s) per cavi con conduttori di rame,
+isolati in PVC ed EPR (o XLPE)
+S (mm2)
+Tipo di isolante
+S (mm2)
+Tipo di isolante
+PVC
+EPR (o XLPE)
+PVC
+EPR (o XLPE)
+1,5
+29,8  103
+46,0  103
+50
+33,1  106
+51,1  106
+2,5
+82,7  103
+127,8  103
+70
+64,8  106
+100,2  106
+4
+211,6  103
+327,2  103
+95
+119,4  106
+184,6  106
+6
+476,1  103
+736,2  103
+120
+190,4  106
+294,5  106
+10
+1,32  106
+2,04  106
+150
+297,6  106
+460,1  106
+16
+3,39  106
+5,23  106
+185
+452,6  106
+699,9  106
+25
+8,27  106
+12,8  106
+240
+761,8  106
+1,18  109
+35
+16,2  106
+25,1  106
+300
+1,19  109
+1,84  109
+F
+lI1I2
+2d
+---------------
+=
+
+[PAG 941]
+IMPIANTI  ELETTRICI                                               X-91
+Fig. X.6.10   Sforzi elettrodinamici: a) correnti di verso opposto; b) correnti nello stesso
+verso.
+Corrente continua
+La forza provocata da una corrente di intensità I è costante nel tempo; il suo valore,
+riferito alla lunghezza unitaria (l = 1 m), è dato da:
+(X.6.21)
+Corrente alternata monofase
+La forza prodotta da una corrente alternata sinusoidale di valore efficace I e valore
+massimo IM è variabile nel tempo da zero al valore massimo FM; tale valore massimo,
+riferito alla lunghezza unitaria (l = 1 m), è dato da una delle due seguenti espressioni, a
+seconda che si usi il valore efficace o quello massimo della corrente:
+(X.6.22)
+(X.6.23)
+Corrente alternata trifase, con conduttori disposti in piano (Fig. X.6.11)
+Anche in questo la forza prodotta su ogni conduttore è variabile da zero a FM, anche se
+non ha contemporaneamente lo stesso valore su tutti i conduttori. Le formule di calcolo
+sono le seguenti:
+(X.6.24)
+(X.6.25)
+Fig. X.6.11   Linea trifase con conduttori disposti su un piano.
+I1
+I2
+I1
+I2
+F
+F
+F
+F
+d
+d
+b)
+a)
+F
+2
+10 7
+– I2
+
+d
+--------------------------
+N
+m----
+=
+FM
+4
+10 7
+– I2
+
+d
+-------------------------- N
+m----
+=
+FM
+2
+10 7
+– IM
+2
+
+d
+------------------------------ N
+m----
+=
+FM
+3
+10 7
+– I2
+
+d
+-------------------------- N
+m----
+=
+FM
+1,5
+10 7
+– IM
+2
+
+d
+----------------------------------- N
+m----
+=
+d
+d
+
+[PAG 942]
+X-92
+  IMPIANTI ELETTRICI 
+Corrente alternata trifase, con conduttori disposti ai vertici di un triangolo equilatero
+(Fig. X.6.12)
+La forza prodotta su ogni conduttore è ancora variabile da zero a FM e non ha contem-
+poraneamente lo stesso valore su tutti i conduttori. Le formule di calcolo sono le seguenti:
+(X.6.26)
+(X.6.27)
+Fig. X.6.12   Linea trifase con conduttori disposti ai vertici di un triangolo equilatero.
+Esempio 1
+Per una linea trifase con conduttori in piano posti a distanza d = 0,15 m, interessata da
+una corrente di corto circuito di cresta Icr = 40 kA, la forza elettrodinamica è data da:
+Dopo il periodo transitorio, supponendo che sia Kcr = 2, la corrente di cortocircuito si
+ridurrà alla sola componente simmetrica, di valore efficace Is = Icr/2 = 20 kA, che pro-
+durrà una forza pari a:
+6.7  Calcolo della corrente di corto circuito nelle linee di bassa tensione
+Per la valutazione della corrente di corto circuito bisogna tener conto dell'impedenza
+presentata dai seguenti elementi: rete di alimentazione fino al punto di origine
+dell'impianto, presenza di eventuali trasformatori nel caso di impianti dotati di cabina pro-
+pria, linea elettrica fino al punto di guasto. Occorre inoltre distinguere il tipo di guasto, in
+relazione al sistema di alimentazione.
+Valutazione dell'impedenza di rete
+La rete di alimentazione a monte del punto di origine dell'impianto può essere vista,
+per ogni fase, come un generatore di f.e.m. E0 con in serie la sua impedenza interna ZR di
+tipo ohmico-induttivo (Fig. X.6.13). Il valore E0 corrisponde alla tensione di fase a vuoto
+U0/
+, essendo U0 la tensione concatenata a vuoto. Nel caso di corto circuito nel punto di
+origine si sviluppa la corrente Icc0 data da:
+FM
+2
+3
+10 7
+– I2
+
+d
+----------------------------------
+=
+N
+m----
+FM
+3
+10 7
+– IM
+2
+
+d
+----------------------------------- N
+m----
+=
+d
+d
+d
+FM
+1,5
+10 7
+– Icr
+2
+
+d
+-----------------------------------
+1,5
+40
+103
+
+
+
+2
+
+10 7
+–
+
+0,15
+----------------------------------------------------------------
+1600
+=
+=
+N
+m----
+=
+FM
+3
+10 7
+– Is
+2
+
+d
+----------------------------
+3
+10 7
+–
+20
+103
+
+
+
+2
+
+0,15
+----------------------------------------------------
+800
+=
+=
+N
+m----
+=
+3
+
+[PAG 943]
+IMPIANTI  ELETTRICI                                               X-93
+(X.6.28)
+Fig. X.6.13   Circuito equivalente per un corto circuito nel punto di origine.
+Se è nota la corrente di corto circuito (fornita dall'Ente distributore dell'energia elet-
+trica), l'impedenza della rete a monte è data da:
+(X.6.29)
+Noto l'angolo di corto circuito cc0 della rete, i parametri dell'impedenza sono pari a:
+(X.6.30)
+Per il fattore di potenza di corto circuito si possono adottare i seguenti valori, dipen-
+denti da Icc0:
+Se invece della corrente è noto il valore della potenza apparente di corto circuito Scc0
+l'impedenza di rete è data da:
+(X.6.31)
+Esempio 2
+Per una rete in bassa tensione con U0 = 400 V in cui la corrente di corto circuito nel
+punto di origine è 16 kA e coscc0 = 0,28 l'impedenza di rete e i suoi parametri sono
+uguali a:
+Icc0 (kA)
+4,5
+6
+10
+20
+50
+coscc0
+0,7
+0,5
+0,3
+0,25
+0,2
+Icc0
+U0
+3 ZR
+-------------
+=
+ZR
+Icc
+E0
+ZR
+U0
+3 Icc0
+-----------------
+=
+RR
+ZRcoscc0 ;
+=
+XR
+ZRsencc0
+=
+ZR
+U0
+2
+Scc0
+----------
+=
+ZR
+U0
+3 Icc0
+-----------------
+400
+3
+16
+
+103
+
+-------------------------------------
+14,4 m
+=
+=
+=
+RR
+ZRcoscc0
+14,4
+0,28
+
+4,03 m
+=
+=
+=
+XR
+ZRsencc0
+14,4
+0,96
+
+13,8 m
+=
+=
+=
+
+[PAG 944]
+X-94
+  IMPIANTI ELETTRICI 
+Presenza di trasformatori MT/BT
+La presenza di un trasformatore di potenza apparente Sn, tensione secondaria nomi-
+nale a vuoto (lato BT) U20, tensione di cortocircuito percentuale nominale alla tempera-
+tura di funzionamento Ucc%, potenza di corto circuito percentuale nominale alla
+temperatura di funzionamento pcc%, comporta la presenza nel circuito di guasto di una
+impedenza riportata sul lato BT di valore:
+(X.6.32)
+I parametri dell'impedenza sono dati da:
+(X.6.33)
+(X.6.34)
+Esempio 3
+Per un trasformatore con Sn = 250 kVA, U20 = 400 V, Ucc% = 6%, Pcc = 3400 W si ha:
+Linea monofase
+In questo caso (Fig. X.6.14) si può avere solo il corto circuito tra i due conduttori
+(guasto monofase), alimentato dalla tensione di fase a vuoto E0. Se si trascura l'impedenza
+del guasto (corto circuito franco) il circuito equivalente è riportato nella Fig. X.6.15, dove
+RF e XF sono la resistenza e la reattanza della fase fino al punto di guasto e RN e XN gli
+analoghi parametri del neutro.
+Fig. X.6.14   Corto circuito monofase.
+Ze
+
+U20
+2 Ucc%
+100 Sn
+--------------------------
+=
+Re
+
+U20
+2 pcc%
+100 Sn
+-------------------------
+=
+Xe
+
+Ze
+
+
+
+2
+Re
+
+
+
+2
+–
+=
+pcc%
+100 Pcc
+Sn
+-----------------
+100
+3400
+
+250
+103
+
+----------------------------
+1,36 %
+=
+=
+=
+Re
+
+U20
+2 pcc%
+100 Sn
+-------------------------
+4002
+1,36
+
+100
+250
+
+103
+
+-----------------------------------------
+8,7 m
+=
+=
+=
+Ze
+
+U20
+2 Ucc%
+100 Sn
+--------------------------
+4002
+6
+
+100
+250
+
+103
+
+-----------------------------------------
+38,4 m
+=
+=
+=
+Xe
+
+Ze
+
+
+
+2
+Re
+
+
+
+2
+–
+38,42
+8,72
+–
+37,4 m
+=
+=
+=
+F
+N
+rete
+a monte
+
+[PAG 945]
+IMPIANTI  ELETTRICI                                               X-95
+Fig. X.6.15   Corto circuito monofase: circuito equivalente.
+Il valore efficace della corrente di corto circuito simmetrica è data da:
+(X.6.35)
+Linea trifase, senza trasformatore MT/BT
+In questo caso si può avere il guasto trifase (Fig. X.6.16a), che interessa i tre condut-
+tori di fase, e il guasto monofase che può essere fase-fase (Fig. X.6.16b) o fase-neutro
+(Fig. X.6.16c).
+Fig. X.6.16   Corto circuito: a) trifase; b) fase-fase; c) fase-neutro.
+Per il corto circuito trifase occorre considerare il circuito equivalente relativo a una
+fase, alimentato dalla tensione di fase a vuoto E0 = U0
+ (Fig. X.6.17a); nel caso del
+corto circuito fase-fase il circuito equivalente (Fig. X.6.17b) comprenderà i parametri
+relativi a due fasi, con tensione di alimentazione di valore concatenato U0, mentre
+nell'ultimo caso (Fig. X.6.17c) verranno considerati i parametri relativi a una fase e al
+neutro, con tensione di alimentazione E0 = U0
+.
+Fig. X.6.17   Circuiti equivalenti per corto cir-
+cuiti: a) trifase; b) fase-fase; c) fase-neutro.
+RR
+E0
+XR
+RF
+XF
+XN
+RN
+Icc
+Icc
+E0
+RR
+RF
+RN
++
++
+
+2
+XR
+XF
+XN
++
++
+
+2
++
+----------------------------------------------------------------------------------------------------
+=
+L1
+N
+L2
+L3
+L1
+L2
+L3
+L1
+L2
+L3
+a)
+b)
+c)
+3
+3
+RR
+E0
+XR
+RF
+XF
+Icc
+a)
+2RR
+E0
+2XR
+RF
+XF
+Icc
+RF
+XF
+3
+b)
+RR
+E0
+XR
+RF
+XF
+Icc
+RN
+XN
+c)
+
+[PAG 946]
+X-96
+  IMPIANTI ELETTRICI 
+Le formule di calcolo per la corrente di corto circuito sono le seguenti:
+–  corto circuito trifase
+(X.6.36)
+–  corto circuito fase-fase
+(X.6.37)
+–  corto circuito fase-neutro
+(X.6.38)
+La corrente maggiore è quella che si ha nel cortocircuito trifase; seguono il fase-fase e
+il fase-neutro. Nella valutazione della corrente di corto circuito massima occorrerà consi-
+derare pertanto il guasto trifase a inizio linea, mentre per il calcolo della corrente di corto
+circuito minima si considererà il guasto monofase a fine linea.
+Linea trifase, con trasformatore MT/BT
+In questo caso bisogna tener conto dei parametri del trasformatore, calcolati con le
+relazioni X.6.33 e X.6.34. Per il calcolo della corrente di corto circuito valgono ancora le
+espressioni X.6.36, X.6.37 e X.6.38 purché si considerino come valori di RR e XR i parame-
+tri totali della rete MT e del trasformatore, riportati sul lato BT e dati da:
+(X.6.39)
+Normalmente i parametri RR e XR sono trascurabili rispetto a quelli del trasformatore e
+le espressioni X.6.36, X.6.37 e X.6.38 si possono applicare tenendo conto solo della resi-
+stenza e della reattanza del trasformatore e non di quelli della rete a monte.
+Calcolo approssimato della corrente di corto circuito sul lato BT
+Nel caso di guasto trifase ai morsetti BT del trasformatore la corrente di corto circuito
+è limitata solo dall'impedenza della rete MT e da quella interna del trasformatore. Se si
+trascura l'impedenza di rete è possibile calcolare la corrente in modo approssimato, con la
+relazione:
+(X.6.40)
+dove I2n è la corrente secondaria nominale del trasformatore.
+Esempio 4
+La corrente di corto circuito per guasto trifase al termine di una linea di lunghezza l =
+0,1 km, avente U0 = 400 V, RR = 3,6 m, XR = 13,9 m, con conduttori di fase e neutro di
+sezione 50 mm2 aventi parametri unitari
+r = 0,461 /km (RF = RN = 0,461  0,1 = 0,0461  = 46,1 m)
+Icc
+U0
+3
+
+RR
+RF
++
+
+2
+XR
+XF
++
+
+2
++
+----------------------------------------------------------------------
+=
+Icc
+U0
+2
+RR
+RF
++
+
+2
+XR
+XF
++
+
+2
++
+--------------------------------------------------------------------------
+=
+Icc
+U0
+3
+
+RR
+RF
+RN
++
++
+
+2
+XR
+XF
+XN
++
++
+
+2
++
+----------------------------------------------------------------------------------------------------
+=
+RR
+
+RR
+Re
+;
++
+=
+XR
+
+XR
+Xe
+
++
+=
+Icc
+I2n
+100
+Ucc%
+--------------
+=
+
+[PAG 947]
+IMPIANTI  ELETTRICI                                               X-97
+x = 0,082 /km (XF = XN = 0,082  0,1 = 0,0082  = 8,2 m),
+calcolata con la relazione X.6.36, è uguale a:
+6.8  Tabelle e diagrammi per la valutazione rapida della corrente di corto circuito
+Linee monofasi con sezioni da 2,5 a 10 mm2
+La Tab. X.6.5 consente di valutare la corrente di corto circuito Icc1 al termine di una
+linea monofase di lunghezza l e sezione S, in funzione della corrente Icc0 nel punto di ori-
+gine, assunta come dato di partenza. Può servire, per esempio, per determinare la corrente
+di corto circuito sul centralino d'utente, nota quella al contatore (fornita dall'Ente distribu-
+tore) e le caratteristiche del montante (Fig. X.6.18).
+Fig. X.6.18   Correnti di corto circuito per il montante di un'utenza monofase.
+Tab. X.6.5   Corrente di corto circuito per linee monofasi, 230 V, 50 Hz
+Icc0
+(kA)
+Corrente di corto circuito Icc1
+(kA)
+4
+3,5
+3,3
+3,0
+2,7
+2,3
+2,0
+1,7
+1,4
+1,0
+0,9
+0,7
+4,5
+3,9
+3,6
+3,4
+3,3
+2,7
+2,3
+1,9
+1,5
+1,2
+0,9
+0,7
+5
+4,4
+4,2
+3,8
+3,4
+3,0
+2,5
+2,0
+1,6
+1,3
+1,0
+0,7
+6
+5,0
+4,8
+4,3
+3,8
+3,2
+2,7
+2,2
+1,7
+1,3
+1,0
+0,7
+8
+6,7
+6,2
+5,5
+5,3
+3,9
+3,1
+2,4
+1,8
+1,4
+1,0
+0,8
+10
+9,0
+7,2
+6,2
+5,9
+4,2
+3,3
+2,5
+1,9
+1,4
+1,0
+0,8
+12
+10,8
+8,2
+6,9
+6,5
+4,6
+3,4
+2,5
+1,9
+1,4
+1,0
+0,8
+S
+(mm2)
+Lunghezza l della linea
+(m)
+2,5
+0,7
+0,9
+1,3
+1,8
+2,5
+3,5
+4,5
+6,5
+9
+12,5
+17
+4
+1,1
+1,5
+2
+3
+4
+5,5
+7,5
+10,5
+14,5
+20
+27
+6
+1,6
+2,2
+3
+4,3
+6
+8
+11,5
+15,5
+21,5
+30
+41
+10
+2,6
+3,7
+5,2
+7
+10
+13,5
+19
+26
+36
+50
+68
+Icc
+400
+3
+
+3,6
+46,1
++
+
+2
+13,9
+8,2
++
+
+2
++
+-------------------------------------------------------------------------------
+4,25 kA
+=
+=
+kWh
+Icc0
+Icc1
+l
+S
+
+[PAG 948]
+X-98
+  IMPIANTI ELETTRICI 
+Esempio 5
+La corrente di corto circuito al termine di una linea di sezione 4 mm2 e lunghezza
+10,5 m è pari a 1,7 kA quando Icc0 = 6 kA.
+Linee trifasi con sezioni da 1,5 a 50 mm2
+La Tab. X.6.6 consente di valutare la corrente di cortocircuito trifase Icc1 al termine di
+una linea di lunghezza l e sezione S (con valori compresi tra 4 e 25 mm2), in funzione
+della corrente Icc0 nel punto di origine A della linea (Fig. X.6.19). Il valore Icc0 può essere,
+per esempio, quello all'uscita del contatore, fornito dall'Ente distributore, oppure quello
+calcolato a valle del trasformatore, nel caso di impianti con cabina propria.
+Fig. X.6.19   Correnti di corto circuito per una linea trifase.
+Tab. X.6.6   Corrente di corto circuito per linee trifasi, 400 V, 50 Hz
+Icc0
+(kA)
+Corrente di corto circuito Icc1
+(kA)
+4
+3,5
+3,5
+3,5
+3,5
+3
+3
+2,5
+2,5
+2
+1,5
+1,5
+4,5
+4
+4
+4
+3,5
+3,5
+3
+3
+2,5
+2
+2
+1,5
+5
+5
+4,5
+4,5
+4
+4
+3,5
+3
+3
+2,5
+2
+1,5
+6
+5,5
+5,5
+5
+5
+4,5
+4
+3,5
+3
+2,5
+2
+1,5
+8
+7,5
+7
+7
+6,5
+6
+5
+4,5
+3,5
+3
+2
+2
+10
+10
+8,5
+8
+7,5
+7
+5,5
+5
+4
+3
+2
+2
+12
+10,5
+10
+9,5
+8,5
+7,5
+6,5
+5
+4
+3
+2,5
+2
+14
+12
+11,5
+10,5
+9,5
+8
+6,5
+5,5
+4
+3
+2,5
+2
+17
+14,5
+13,5
+12
+10,5
+9
+7
+5,5
+4
+3,5
+2,5
+2
+20
+16
+15
+13
+11
+9,5
+7,5
+5,5
+4,5
+3,5
+2,5
+2
+25
+19
+17,5
+15
+12,5
+10
+8
+6
+4,5
+3,5
+2,5
+2
+S
+(mm2)
+Lunghezza l della linea
+(m)
+4
+1
+1,3
+1,8
+2,4
+3,2
+4,4
+6
+8,4
+11
+15
+20
+6
+1,5
+2
+2,7
+3,6
+4,8
+6,6
+9
+12,6
+16,5
+22,5
+30
+10
+2,5
+3,3
+4,5
+6
+8
+11
+15
+21
+28
+37,5
+50
+16
+4
+5,2
+7,1
+9,5
+12,5
+17,5
+24
+33,5
+44
+60
+80
+25
+6,3
+8,1
+11,3
+15
+20
+27,5
+37,5
+52,5
+70
+94
+125
+A
+Icc0
+Icc1
+l
+S
+B
+
+[PAG 949]
+IMPIANTI  ELETTRICI                                               X-99
+Dalla tabella si ricava, per
+esempio, che la corrente di corto
+circuito al termine di una linea di
+sezione 16 mm2 e lunghezza 12,5
+m è 9,5 kA quando Icc0 = 20 kA.
+Il diagramma di Fig. X.6.20
+serve per valutare graficamente la
+corrente di corto circuito trifase in
+funzione della sezione e della lun-
+ghezza del cavo fino al punto di
+guasto, per linee trifasi di sezione
+da 1,5 a 50 mm2. Per esempio con
+l = 20 m e S = 16 mm2 (punto P) si
+ha una Icc1 = 6,3 kA se Icc0 = 15 kA
+(punto P1).
+Fig. X.6.20   Grafico per la deter-
+minazione della corrente di corto
+circuito per una linea trifase, 400 V,
+50 Hz.
+6.9  Corrente di corto circuito minima convenzionale
+La corrente di corto circuito minima Iccmin in una conduttura è quella che si produce tra
+fase e neutro (oppure tra fase e fase se il neutro non è distribuito), nel punto più lontano della
+conduttura rispetto alla sorgente di energia o al dispositivo di protezione da dimensionare.
+La sua conoscenza è richiesta per il progetto o per la verifica delle protezioni dal corto circuito.
+La norma CEI 64-8/5 consente di calcolare la Iccmin in modo semplificato, facendo
+ricorso a formule convenzionali che si basano sulle seguenti ipotesi:
+–  si trascurano tutte le impedenze a monte del punto di partenza della linea, ritenendo
+pari al 20% la caduta di tensione globale prodotta da tali impedenze in condizioni di corto
+circuito e moltiplicando, quindi, per 0,8 la tensione nominale; nel caso si conosca il valore
+dell'impedenza del circuito a monte il coefficiente 0,8 deve essere sostituito da un valore
+più preciso;
+–  si trascura la reattanza della linea rispetto alla sua resistenza; per elevati valori della
+sezione si tiene conto del suo effetto limitativo moltiplicando i risultati ottenuti per i
+seguenti fattori di riduzione: 0,90 per S = 120 mm2; 0,85 per S = 150 mm2; 0,80 per
+S = 185 mm2; 0,75 per S = 240 mm2;
+–  si tiene conto dell'aumento di resistività dei conduttori per il riscaldamento dovuto
+al corto circuito moltiplicando per il fattore 1,5 la resistività a 20 °C.
+Linee con conduttore neutro non distribuito
+Nel caso di linee trifasi senza neutro la corrente di corto circuito minima a fondo linea
+è riferita al guasto fase-fase e si calcola con la relazione:
+30
+20
+15
+10
+6
+5
+4
+3
+2
+1
+1,5
+2
+3
+4
+5
+10
+20
+30
+40
+50
+300
+200
+150
+100
+1
+2
+3
+4
+5
+6
+7
+4
+50 mm2
+2,5 mm2
+4 mm2
+6 mm2
+10 mm2
+16 mm2
+25 mm2
+35 mm2
+1,5 mm2
+l/S
+P
+P1
+correnti presunte di corto circuito Icc (kA)
+lunghezza l della linea (m)
+sezione S della linea
+
+[PAG 950]
+X-100
+  IMPIANTI ELETTRICI 
+(X.6.41)
+dove U è la tensione concatenata di alimentazione in volt, 20° è la resistività a 20 °C
+(0,018  mm2/m per il rame, 0,028  mm2/m per l'alluminio), l è la lunghezza della linea
+(m), S è la sezione del conduttore (mm2).
+Sostituendo il valore della resistività e raggruppando tutte le costanti numeriche si
+ottiene:
+–  conduttori in rame:
+(X.6.42)
+–  conduttori in alluminio:
+(X.6.43)
+Linee con conduttore neutro distribuito
+Nel caso di linee monofasi e trifasi con neutro la corrente di cortocircuito minima a
+fondo linea è riferita al guasto fase-neutro e si calcola con la relazione:
+(X.6.44)
+dove Uf è la tensione di fase di alimentazione in volt ed m = RNRF è il rapporto tra la resi-
+stenza del conduttore di neutro e quella del conduttore di fase. Nel caso che i due condut-
+tori siano costituiti dallo stesso materiale esso è uguale al rapporto inverso tra le sezioni
+SFSN ed è pari a 1 se fase e neutro hanno la stessa sezione.
+Esempio 6
+La corrente di corto circuito minima per una linea trifase con neutro distribuito, con
+l = 100 m, SF = 120 mm2, SN = 70 mm2 (m = 120/70 = 1,714), con conduttori in rame e
+funzionante con tensione 400 V (Uf = 230 V), è data da:
+7  APPARECCHI DI MANOVRA E PROTEZIONE
+7.1  Classificazione degli apparecchi di manovra e di protezione dalle sovracorrenti
+Un apparecchio di manovra è un dispositivo in grado di eseguire manovre di apertura
+e di chiusura di un circuito.
+Le manovre possono avvenire a carico, ossia in presenza di corrente nel circuito,
+oppure a vuoto, in assenza di corrente in quanto il circuito è interrotto in un altro punto.
+L'apertura a carico interrompe la corrente, mentre la chiusura a carico stabilisce la cor-
+rente nel circuito. Le manovre possono anche avvenire in condizioni di normale esercizio
+oppure in condizioni di funzionamento anormale, a causa di guasti sull'impianto. In rela-
+Iccmin
+0,8 U
+1,5 20
+2l
+S----
+------------------------
+=
+Iccmin
+14,8 US
+l
+------------------
+=
+Iccmin
+9,5 US
+l
+---------------
+=
+Iccmin
+0,8 Uf
+1,5201
+m
++
+
+l
+S--
+-------------------------------------------
+=
+Iccmin
+0,9
+0,8 Uf
+1,5201
+m
++
+
+l
+S--
+-------------------------------------------
+0,9
+0,8
+230
+
+1,5
+0,018
+
+1
+1,714
++
+
+100
+120
+--------
+--------------------------------------------------------------------
+2712 A
+=
+=
+=
+
+[PAG 951]
+IMPIANTI  ELETTRICI                                               X-101
+zione al tipo di comando si distingue il comando manuale, effettuato dall'operatore, dal
+comando automatico, determinato dall'intervento di un dispositivo di protezione o da un
+sistema di controllo.
+Accoppiando apparecchi di manovra e dispositivi di protezione dalle sovracorrenti
+(fusibili, sganciatori di massima corrente) si ottengono apparecchiature di manovra e pro-
+tezione contro sovraccarichi e corto circuiti.
+In funzione delle operazioni che sono in grado di compiere si distinguono vari tipi di
+apparecchi.
+–  Interruttore: è un apparecchio in grado di condurre in modo continuativo corrente
+fino a un determinato valore, in condizioni di funzionamento normale; di aprire e chiudere
+il circuito sia in condizioni normali che di guasto, in quest'ultimo caso fino a determinati
+valori della corrente di guasto. Se l'interruttore viene corredato da sganciatori di sovracor-
+rente (interruttore automatico) diventa anche un apparecchio di protezione contro i
+sovraccarichi e i corto circuiti.
+–  Interruttore di manovra: è un apparecchio in grado di stabilire (chiudendo il cir-
+cuito), condurre in modo continuativo e interrompere correnti in condizioni di normale
+esercizio fino a un determinato valore, comprese eventuali condizioni di sovraccarico spe-
+cificate. Rispetto all'interruttore non è costruito per intervenire in caso di corto circuito.
+–  Sezionatore: è un apparecchio in grado di condurre in modo continuativo un deter-
+minato valore della corrente di normale funzionamento e, per un tempo specificato, un
+definito valore della corrente di funzionamento anormale; è, inoltre, in grado di aprire e
+chiudere il circuito in presenza di correnti di intensità trascurabile. Nella posizione di
+"aperto" deve interrompere la continuità metallica del circuito, assicurando una distanza
+di sezionamento tra i contatti che assicuri specificate condizioni.
+–  Interruttore di manovra-sezionatore (o sezionatore sotto carico): è un interruttore
+di manovra che possiede i requisiti di sicurezza d'interruzione propri del sezionatore.
+–  Interruttore estraibile: è un interruttore che possiede, oltre alle posizioni di aperto e
+chiuso, quella di "estratto" con requisiti conformi alla funzione di sezionatore.
+–  Sezionatore con fusibili: è un apparecchio costituito in un unico insieme da un sezio-
+natore con uno o più poli aventi in serie un fusibile per la protezione dalle sovracorrenti.
+–  Interruttore di manovra con fusibili: è un interruttore di manovra provvisto di fusi-
+bili in serie per ogni polo per la protezione dalle sovracorrenti.
+–  Interruttore con fusibili incorporati: è la combinazione, in un unico insieme, di un
+interruttore automatico con fusibili in serie a ogni polo; viene usato quando le prestazioni
+nei riguardi delle sovracorrenti del solo interruttore non sono sufficienti.
+–  Contattore (o teleruttore): è un apparecchio destinato ad aprire e chiudere un cir-
+cuito in condizioni normali fino a un determinato valore di corrente ed, eventualmente, a
+compiere tali manovre in condizioni di sovraccarico (ma non di guasto). È caratterizzato
+da una elevata frequenza di manovra e ha come unica posizione stabile di funzionamento
+dei contatti principali quella di aperto. Nella posizione di chiuso può permanere solo in
+presenza dell'azione di comando, generalmente di tipo elettromagnetico.
+–  Interruttore automatico: è un apparecchio in grado di stabilire, condurre e interrom-
+pere correnti in condizioni normali e, inoltre, di stabilire, condurre per una durata specifi-
+cata e interrompere automaticamente correnti in condizioni anormali specificate, per
+esempio in corto circuito.
+Una classificazione particolare riguarda l'insieme dei dispositivi per l'inserzione, la
+disinserzione e la protezione dalle sovracorrenti dei motori elettrici, reperibili in commer-
+cio in un unico contenitore. Con il termine avviatore si definisce l'insieme di tutti i dispo-
+sitivi di manovra necessari per avviare e arrestare il motore, in combinazione con quelli di
+protezione dal sovraccarico. Gli avviatori si distinguono in:
+
+[PAG 952]
+X-102
+  IMPIANTI ELETTRICI 
+–  avviatore diretto quando in un'unica operazione inserisce direttamente il motore
+sulla linea e applica la tensione di linea ai morsetti del motore;
+–  avviatore-invertitore: è un insieme di apparecchi che, oltre alle funzioni proprie di
+avviatore, effettua anche l'inversione del senso di rotazione durante la marcia del motore;
+–  avviatore stella-triangolo: consente l'avviamento dei motori a induzione con le fasi
+statoriche connesse a stella e la commutazione a triangolo delle stesse fasi durante la mar-
+cia.
+7.2  Caratteristiche funzionali degli interruttori
+Gli interruttori sono caratterizzati da un certo numero di grandezze elettriche a cui
+bisogna fare riferimento per la scelta e l'ordinazione e che sono indicate dalle normative
+tecniche specifiche, di cui le principali sono:
+–  norma CEI 17-1 per gli interruttori per c.a. a tensione superiore a 1000 V;
+–  norma CEI-EN 60947-2 (CEI 17-5) per gli interruttori automatici dei sistemi con
+tensione nominale non superiore a 1000 V c.a. e 1500 V c.c. (impianti BT  industriali o
+per il terziario, di elevata potenza);
+–  norma CEI-EN 60898 (CEI 23-3) relativa agli interruttori automatici per la prote-
+zione dalle sovracorrenti degli impianti domestici e similari, ossia interruttori per sistemi
+BT dell'impiantistica civile, in c.a. 50/60 Hz, tensione nominale tra le fasi non superiore a
+440 V, corrente nominale non superiore a 125 A e potere d'interruzione nominale non
+superiore a 25 000 A;
+–  norma CEI-EN 60934 (CEI 23-33) che si applica agli interruttori automatici  desti-
+nati alla protezione contro le sovracorrenti dei circuiti interni delle apparecchiature, per
+tensioni non superiori a 440 V c.a. e 250 V c.c. e corrente nominale non superiore a 125 A.
+Tensione nominale
+La tensione nominale è il valore di tensione a cui sono riferite le prestazioni dell'inter-
+ruttore in fase di chiusura e di interruzione su corto circuito; per i circuiti polifasi ci si
+riferisce alla tensione fra le fasi.
+Per gli interruttori a norma CEI 17-5 si distingue tra la tensione d'impiego nominale
+Ue e la tensione d'isolamento nominale Ui. La prima si riferisce alle prestazioni dell'appa-
+recchio e corrisponde alla tensione nominale. A uno stesso apparecchio possono essere
+assegnati più valori di tale tensione, facendo corrispondere a ognuno diverse prestazioni
+su corto circuito. La seconda tensione corrisponde al valore che identifica l'interruttore e
+al quale sono riferite le prove e il dimensionamento dell'isolamento dell'apparecchio.
+Deve essere maggiore o uguale al più elevato valore della tensione d'impiego.
+Tab. X.7.1   Tensioni nominali e relativi livelli d'isolamento
+Tensione nominale del 
+sistema
+(kV eff.)
+Tensione massima per 
+il componente
+(kV eff.)
+Tensione nominale di 
+tenuta a 50 Hz di breve 
+durata
+(kV eff.)
+Tensione nominale di 
+tenuta a impulso
+atmosferico
+(kV di cresta)
+3
+6
+10
+15
+20
+30
+66
+132
+220
+380
+3,6
+7,2
+12
+17,5
+24
+36
+72,5
+145
+245
+420
+10
+20
+28
+38
+50
+70
+140
+275/230
+460/395
+610
+40
+60
+75
+95
+125
+170
+325
+650/550
+1050/950
+1425
+
+[PAG 953]
+IMPIANTI  ELETTRICI                                               X-103
+Tensioni per il coordinamento dell'isolamento
+L'isolamento degli interruttori deve essere previsto per resistere alle sovratensioni che
+possono crearsi nell'impianto in cui sono installati. I valori di riferimento sono i seguenti
+(Tab. X.7.1):
+–  valore efficace della tensione massima per il componente, riferito alla tensione
+nominale;
+–  valore efficace della tensione nominale di tenuta a frequenza industriale di breve
+durata, relativa alla prova con sovratensione sinusoidale a 50 Hz di durata 1 min;
+–  valore di cresta della tensione nominale di tenuta a impulso atmosferico, relativa
+alla prova con sovratensione impulsiva di forma d'onda 1,2/50 s, ossia che impiega
+1,2 s per arrivare al valore massimo e 50 s per ritornare al 50% dell'ampiezza.
+Corrente nominale
+La corrente nominale rappresenta il valore di corrente che l'interruttore può condurre
+in assegnate condizioni di tensione, di impiego e ambientali e a cui sono riferite le caratte-
+ristiche dell'apparecchio.
+Per gli interruttori automatici di bassa tensione a norma CEI 17-5 vengono definite
+due correnti.
+–  Corrente termica nominale Ith: è il valore di corrente che l'interruttore può condurre
+senza che le sovratemperature delle varie parti superino i valori stabiliti dalla norma. È
+riferita al servizio di otto ore, durante il quale i contatti principali dell'apparecchio riman-
+gono chiusi, percorsi da una corrente costante per un periodo di tempo sufficiente a rag-
+giungere l'equilibrio termico, ma non superiore a 8 ore senza interruzione, con temperatura
+ambiente specificata (generalmente 40 °C), in aria libera e senza involucro, se non quello
+fornito dal costruttore, costituente parte integrante dell'interruttore. Nel caso l'interruttore
+venisse posto all'interno di un involucro (per es. un quadro elettrico), la corrente che
+l'apparecchio può condurre diminuisce, a causa del ridotto scambio termico e della pre-
+senza delle altre apparecchiature. Occorre allora considerare la corrente termica nominale
+in involucro Ithe che deve essere valutata e specificata dal costruttore, in determinate con-
+dizioni di involucro, di ventilazione e di servizio.
+–  Corrente ininterrotta nominale In: è relativa al servizio ininterrotto di durata superiore
+a 8 ore, senza manovre intermedie e temperatura ambiente specificata, generalmente 40 °C.
+Per gli interruttori BT per usi domestici e similari a norma CEI 23-3 è definita soltanto
+la corrente nominale, concettualmente simile alla corrente ininterrotta nominale e per la
+quale sono previsti i seguenti valori preferenziali:
+6 - 10 - 13- 16 - 20 - 25 - 32 - 40 - 50 - 63 - 80 - 100 - 125 A
+Per gli interruttori MT e AT a tensione superiore a 1000 V c.a. rispondenti alla  norma
+CEI 17-1 è definita solo la corrente termica nominale.
+Sequenza di operazioni
+Alcune prestazioni degli interruttori vengono verificate sperimentalmente adottando
+delle sequenze di operazioni normalizzate, del tipo:
+ - t - C - t' - C
+C - t'' - C
+dove la lettera  indica una sola operazione di apertura automatica dell'interruttore, le let-
+tere C significano due operazioni in successione, una di chiusura e l'altra di apertura
+automatica, t, t' e t'' indicano i tempi di attesa tra una operazione e l'altra.
+Potere nominale d'interruzione
+Questa 
