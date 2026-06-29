@@ -1,0 +1,2127 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 72/116 ===
+Chars: 44,922 | Offset: 3,136,566
+
+
+
+[PAG 1487]
+SISTEMI
+XV-3
+I due tipi di controllo citati non sono esaurienti di tutti i possibili sistemi di controllo: 
+si può pensare di realizzare controlli dove una parte di essi è a catena aperta, l’altra a catena 
+chiusa. In questo caso la prima parte del sistema è una azione di controllo in avanti (fee-
+dforward), l’altra è l’azione di controllo all’indietro, o di controreazione (feedback). 
+La particolarità che distingue i sistemi a catena chiusa da quelli a catena aperta è la sen-
+sibilità alle variazioni parametriche. In ogni sistema alla variazione di un suo parametro, 
+quale può essere per esempio la variazione dell’amplificazione, corrisponde una modifica 
+delle funzioni che legano l’uscita con l’ingresso. La sensibilità è il rapporto tra la variazione 
+percentuale della funzione che lega l’uscita con l’ingresso e la variazione percentuale del 
+parametro che ha subìto il cambiamento. Se si considera un sistema a catena aperta si nota 
+che la modifica di uno dei suoi parametri interviene con una variazione dell’uscita di una 
+eguale percentuale. Al contrario, per i sistemi retroazionati, la variazione dell’uscita, dovuta 
+a modifica di qualche loro parametro, è percentualmente tanto minore quanto maggiore è 
+il guadagno complessivo della catena diretta e quanto minore è il guadagno della catena di 
+retroazione. Ne scaturisce che nei sistemi a catena chiusa è possibile ottenere prestazioni ele-
+vate anche con componenti soggetti a variazioni parametriche. Il discorso vale anche per i 
+disturbi che agiscono sul sistema: questi sono segnali che possono essere considerati al pari 
+delle variazioni parametriche e pertanto i sistemi a catena chiusa sono meno sensibili ai 
+disturbi di quelli a catena aperta. In conclusione si può affermare che le caratteristiche prin-
+cipali dei sistemi a catena chiusa sono:
+–  minore sensibilità alle variazioni parametriche;
+–  aumento della precisione;
+–  riduzione degli effetti delle distorsioni e delle non linearità dei dispositivi;
+–  minori variazioni dovute alle grandezze di disturbo;
+–  aumento della banda passante;
+–  tendenza all’oscillazione e all’instabilità.
+Una ulteriore distinzione all’interno dei sistemi a catena chiusa si ha tra regolatori e ser-
+vosistemi, questi ultimi detti anche sistemi di asservimento o semplicemente asservimenti. 
+Per regolatori intendiamo quei dispositivi che sono in grado di mantenere la grandezza di 
+uscita al livello desiderato; nei servosistemi invece, l’azione di controllo viene continua-
+mente modificata affinché la grandezza di uscita vari in corrispondenza di quella in ingresso.
+I sistemi si suddividono in merito ai legami matematici tra le grandezze in gioco: si 
+dicono sistemi lineari quelli per i quali vale il principio di sovrapposizione degli effetti, tant’è 
+che i concetti di linearità e sovrapposizione degli effetti sono equivalenti. I sistemi lineari 
+possono essere rappresentati tramite equazioni differenziali lineari. Si può inoltre distin-
+guere tra sistemi stazionari e non stazionari. Un’altra distinzione è quella tra sistemi ana-
+logici e sistemi digitali (questi ultimi detti anche numerici) legati al tipo di rappresentazione 
+delle grandezze del sistema. In particolare i sistemi numerici sono un sottoinsieme di quelli 
+analogici, derivati da questi ultimi per effetto della rappresentazione numerica di una loro 
+grandezza.
+In ogni catena di controllo si individua un sistema controllante e un sistema controllato
+anche se talvolta la distinzione è legata al tipo di analisi effettuata. Nel controllo dei processi 
+si indica come sistema controllato l’impianto nel quale avviene il processo. Per esempio se 
+si considera il caso del posizionamento di una gru rotativa, si può indicare come sistema con-
+trollato la gru stessa, e come sistema controllante il motore ed i meccanismi necessari alla 
+sua rotazione. Però è anche possibile considerare come sistema controllato l’insieme gru e 
+motore e come sistema controllante il dispositivo che comanderà l’insieme.
+I sistemi a catena chiusa (retroazionati) sono in grado di svolgere tutte le funzioni di quelli 
+a catena aperta, pertanto di seguito vengono individuati per un sistema controllante tutte le 
+funzioni tradizionali dell’azione di controllo.
+
+[PAG 1488]
+XV-4
+SISTEMI
+La funzione principale svolta da un sistema retroazionato è quella di eseguire un con-
+fronto tra il segnale di riferimento ed il segnale proveniente dall’uscita (segnale di retro-
+azione). Il segnale ottenuto dal confronto tra il riferimento e la retroazione è indicato come 
+segnale errore o segnale agente: è questo il segnale che è amplificato e reso disponibile tal-
+volta come segnale di potenza. Sovente è necessario ricorrere a trasduttori per convertire 
+grandezze di diversa natura in grandezze elettriche o comunque omogenee.
+Effettuare l’analisi di un sistema consiste nell’individuare i segnali in uscita corrispon-
+denti a quelli in ingresso. Per riuscire nell’intento sarà necessario conoscere una descrizione 
+matematica del comportamento del sistema stesso, avere cioè conoscenza del suo modello 
+matematico.
+1.2  Modelli matematici
+È fondamentale disporre di modelli matematici attendibili, in quanto, tali modelli, con-
+sentono di effettuare lo studio, senza ricorrere a modelli fisici, anche in presenza di problemi 
+complessi. I modelli fisici vengono realizzati in scala con le regole della similitudine, quelli 
+matematici costruiti con le regole dell’analogia. Il primo tipo viene tuttora impiegato in 
+campi dell’ingegneria quale quello idraulico, quello delle costruzioni, ecc.; il secondo con-
+sente di realizzare modelli descritti da equazioni differenziali che sono in grado di fornire 
+un preciso schema di interpretazione, in particolare nel caso di sistemi a parametri concen-
+trati.
+Un modello che spesso viene utilizzato nell’analisi sistematica è quello che utilizza gli 
+schemi a blocchi, in ciascuno dei quali vengono messe in rilievo le risposte fornite dal sistema 
+in relazione agli ingressi dai quali viene sollecitato. Tramite l’impiego di tale metodologia 
+è possibile individuare i parametri del sistema e il proprio comportamento quando sottoposto 
+a disturbi. In particolare il blocco è un dispositivo che trasforma i segnali presenti in ingresso 
+in segnali di uscita: il blocco è la rappresentazione funzionale tra ingresso e uscita.
+1.3  Basi delle analogie
+L’importanza delle analogie è fondamentale; vengono indicati di seguito alcuni tipi di 
+analogie elettromeccaniche, tenendo presente che valgono le corrispondenze seguenti:
+–  Vi è corrispondenza biunivoca tra il primo principio di Kirchhoff ed il principio di 
+D’Alambert.
+–  Vi è corrispondenza biunivoca tra il secondo principio di Kirchhoff e la legge dei moti 
+relativi.
+Date tali premesse si può affermare che un qualunque sistema lineare, stazionario e a 
+parametri concentrati, può essere rappresentato da un adeguato numero di condensatori, resi-
+stori, induttori e generatori ideali. Resistori, induttori e condensatori sono bipoli passivi per 
+i quali indicando con e la differenza di potenziale tra i loro terminali e con i la corrente che 
+li percorre, è possibile per ognuno di loro scrivere:
+(XV.1.1)
+(XV.1.2)
+(XV.1.3)
+(XV.1.4)
+(XV.1.5)
+e
+R i,
+
+=
+i
+e
+R
+------,
+=
+e
+L di
+dt
+----,
+
+=
+i
+1
+L-- e t,
+d
+
+=
+e
+1
+C--- i t,
+d
+
+=
+
+[PAG 1489]
+SISTEMI
+XV-5
+(XV.1.6)
+dove con R, L, C si sono indicate rispettivamente resistenza, induttanza e capacità.
+Pertanto, per ogni elemento, considerare la corrente o la differenza di potenziale è indif-
+ferente. I generatori, siano essi di tensione o di corrente, sono, invece, dispositivi utilizzati 
+per ottenere i segnali e le condizioni di eccitazione che necessitano.
+Analogamente per i sistemi meccanici in grado di svolgere traiettorie rettilinee quali per 
+esempio masse, molle ed elementi di attrito, si possono trovare elementi fisici fondamentali 
+individuati prevalentemente da un unico parametro. Nel caso delle molle e degli elementi 
+di attrito si individuano semplicemente due terminali in movimento relativo, l’uno rispetto 
+all’altro. Per le masse si individuano pure due elementi in movimento relativo se si pensa 
+che il loro movimento avviene rispetto al punto di partenza (quello nel quale la velocità è 
+nulla), che costituisce quindi un primo terminale; l’altro terminale è rappresentato da un 
+punto appartenente alla massa stessa. Indicando con v la velocità relativa dei due terminali, 
+con f la forza presente sull’elemento considerato, con F, M, K rispettivamente il coefficiente 
+di attrito viscoso, la massa ed il coefficiente di elasticità, si ottengono le seguenti relazioni:
+(XV.1.7)
+(XV.1.8)
+(XV.1.9)
+(XV.1.10)
+(XV.1.11)
+(XV.1.12)
+Anche per il caso meccanico si tratta di aggiungere elementi generatori di forza o di velo-
+cità in modo tale da avere elementi attivi a due terminali. 
+Premesso che due fenomeni fisici di diversa natura si dicono analoghi quando sussiste 
+una identità formale tra le leggi che li governano, si nota subito che vi sono due diverse ana-
+Tab. XV.1.1  Elementi e analogie secondo Maxwell
+Reti con componenti elettrici
+Reti con componenti meccanici
+Tipo
+Grandezza
+Simbolo
+Tipo
+Grandezza
+Simbolo
+Resistore
+Resistenza
+R = F
+Smorzatore
+Coefficiente 
+attrito
+F = R
+Condensatore
+Capacità
+C = 1/K
+Molla
+Coefficiente 
+elasticità
+K = 1/C
+Induttore
+Induttanza
+L = M
+Corpo
+Massa
+M = L
+i
+C de
+dt
+---------,
+
+=
+f
+Fv;
+=
+v
+f
+F---;
+=
+f
+Mdv
+dt
+---------;
+=
+v
+1
+M
+---- f t;
+d
+
+=
+f
+K v t;
+d
+
+=
+v
+1
+K--- df
+dt
+----
+
+.
+=
+
+[PAG 1490]
+XV-6
+SISTEMI
+logie a seconda che si considerino la corrispondenza tra la differenza di potenziale e la forza 
+che si esercita su un elemento, oppure l’analogia tra la differenza di potenziale e la variazione 
+di velocità dell’elemento medesimo.
+Prende il nome di analogia di Maxwell l’analogia tra le differenze di potenziale, le forze 
+e le correnti, mentre prende il nome di analogia di Firestone l’analogia tra le differenze di 
+potenziale e le velocità relative, nonché l’analogia tra le correnti e le forze. 
+Le Tabb. XV.1.1 e XV.1.2 riportano le analogie tra parametri e simboli di elementi elet-
+trici e meccanici. 
+Si consideri ad esempio il circuito di Fig. XV.1.2, secondo l’analogia di Maxwell, dove 
+una rete RLC serie viene alimentata da un generatore di tensione.
+Fig. XV.1.2  Analogia di Maxwell.
+Fig. XV.1.3  Analogia di Firestone.
+L’analogia di Maxwell comporta la presenza di un 
+elemento dissipatore, una molla e una massa colle-
+gati in parallelo. I loro estremi liberi si muovono alla 
+stessa velocità, mentre la forza applicata si ripartisce 
+in modo inversamente proporzionale all’impedenza 
+meccanica offerta. In questa analogia non è possibile 
+individuare grandezze analoghe ai potenziali dei 
+punti P1, P2 e P3. Se si considera invece il medesimo 
+circuito secondo l’analogia di Firestone, si ottiene 
+il circuito della Fig. XV.1.3, nella quale abbiamo una 
+corrispondenza diretta tra le velocità degli elementi meccanici e i succitati potenziali. Non 
+sempre è possibile determinare con immediatezza una rete meccanica analoga ad una rete 
+elettrica; talvolta è necessario ricorrere ad artifici.
+Tab. XV.1.2  Elementi e analogie secondo Firestone
+Reti con componenti elettrici
+Reti con componenti meccanici
+Tipo
+Grandezza
+Simbolo
+Tipo
+Grandezza
+Simbolo
+Resistore
+Resistenza
+R = 1/F
+Smorzatore
+Coefficiente 
+attrito
+F = 1/R
+Condensatore
+Capacità
+C = M
+Molla
+Coefficiente 
+elasticità
+M = C
+Induttore
+Induttanza
+L = 1/K
+Corpo
+Massa
+K = 1/L
+P1 R P2
+L
+P3 C
+i
+e
+f = e
+v = i
+F = R
+M = L
+K = 1/C
+f = i
+v = e
+P2
+P3
+F = 1/R
+K = 1/L
+M = C
+
+[PAG 1491]
+SISTEMI
+XV-7
+1.4  Schemi a blocchi
+Un sistema è un dispositivo nel quale ad uno o più segnali in ingresso corrisponde un 
+segnale in uscita. Risulta particolarmente agevole effettuare lo studio dei sistemi di controllo 
+tramite rappresentazioni dei medesimi con schemi o diagrammi. In particolare è possibile 
+rappresentare in modo semplice e comprensibile anche sistemi complessi. Si può distinguere 
+tra due tipi di schemi: 
+–  schema strutturale,
+–  schema funzionale.
+Lo schema strutturale è una rappresentazione semplificata e convenzionale del sistema 
+fisico, mentre lo schema funzionale rappresenta l’astrazione matematica del sistema stesso. 
+Fig. XV.1.4  Schema strutturale.
+Un esempio di schema strutturale può essere il gruppo 
+Ward Leonard (Fig. XV.1.4) che è rappresentato da 
+due blocchi corrispondenti rispettivamente alla 
+dinamo e al motore, e da segmenti che rappresentano nell’ordine: i morsetti della dinamo, 
+il collegamento elettrico tra le due macchine e l’albero meccanico d’uscita.
+Fig. XV.1.5  Schema funzionale.
+Nella Fig. XV.1.5 si ha un esempio di schema funzio-
+nale: gli elementi sono infatti orientati e rappresen-
+tano rispettivamente la tensione di eccitazione della 
+dinamo, la tensione generata da quest’ultima, la velo-
+cità angolare dell’albero motore.
+Caratteristica peculiare delle due rappresentazioni è che nello schema funzionale la gran-
+dezza intermedia tra i due blocchi dipende esclusivamente dalla grandezza precedente e non 
+da quella successiva, mentre ciò non si verifica nello schema strutturale.
+Fig. XV.1.6  Schema a blocchi.
+La struttura più semplice di uno schema a blocchi è costi-
+tuita da un blocco che presenta una grandezza in ingresso 
+ed una uscita. 
+Tipicamente dentro il rettangolo rappresentante il blocco 
+vi è l’operatore matematico che mette in relazione l’ingresso con l’uscita; mediante frecce 
+viene rappresentato il verso di percorrenza del segnale (Fig. XV.1.6).
+Fig. XV.1.7  Nodo sommatore.
+Fig. XV.1.8  Punti di diramazione.
+Nel caso di operazioni di somma o sottrazione i 
+blocchi assumono una rappresentazione circolare, 
+prendono il nome di nodi sommatori ed i segnali, al loro ingresso, sono contraddistinti dal 
+segno di somma o sottrazione (i segnali in ingresso possono essere in numero maggiore di 
+D
+M
+ve
+vd
+m
+ingresso
+blocco
+uscita
+W
+y
+x
+w
+x  y  w
+
+
+
+X
+X
+X
+X
+X
+X
+X
+
+[PAG 1492]
+XV-8
+SISTEMI
+due): l’uscita è la somma algebrica degli ingressi. (Fig. XV.1.7). Esiste inoltre una rappre-
+sentazione che assume il nome di punto di diramazione che viene usata ogni qual volta lo 
+stesso segnale deve essere inviato a diverse destinazioni. (Fig. XV.1.8).Vi sono delle regole 
+fondamentali (Tab. XV.1.3) che consentono di ridurre e semplificare la presenza di più bloc-
+chi comunque tra loro connessi.
+Tab. XV.1.3  Operazioni per la semplificazione degli schemi a blocchi
+Operazione
+Espressione
+Schema a blocchi
+Schema a blocchi 
+equivalente
+Modifica di blocchi 
+in cascata
+Modifica di blocchi 
+in parallelo
+Eliminazione di un 
+blocco da una linea
+Blocco equivalente 
+di un anello di retro-
+azione
+Eliminazione di un 
+blocco da un anello 
+di retroazione
+Modifica di nodi 
+sommatori
+Modifica di nodi 
+sommatori
+Spostamento di un 
+nodo sommatore a 
+monte di un blocco
+Spostamento di un 
+nodo sommatore a 
+valle di un blocco
+Spostamento di un 
+punto di diramazio-
+ne a valle di un 
+blocco
+Y
+G1G2
+
+X
+=
+X
+G1
+G2
+Y
+X
+Y
+G1G2
+Y
+G1X G2X
+
+=
+X
+Y
+-+
++
+G1
+G2
+X
+Y
+G1  G2
+-
+Y
+G1X G2X
+
+=
+X
+Y
+G2
+G1/G2 +
++-
+Y
+G1 X G2Y
+
+
+
+=
+X
+Y
+G1
+G2
++
++-
+X
+Y
+G1
+
+1   G1G2
+Y
+G1 X G2Y
+
+
+
+=
+1/G2
+G1/G2
+X
+Y
++
+-+
+Y
+X Z
+
+W
+
+=
+X
+Z
+W
+Y
+-+
++
++
+-+
+X
+W
+Z
+Y
+-+
+-+
+
+
+Y
+X Z
+
+W
+
+=
+X
+W
+Y
+-+
++
++
+-+
+Z
+X
+Z
+W
+Y
++
+-+
++
+-+
+Y
+G1X Z
+
+=
+X
+Y
+Z
+G1
++
+-+
+X
+Y
+Z
+G1
+1/G1
++
+-+
+Y
+G1 X Z
+
+
+
+=
+X
+Y
+Z
+G1
++
+-+
+X
+Y
+Z
+G1
+G1
++
+-+
+Y
+G1X
+=
+X
+Y
+Z
+G1
+X
+Y
+1/G1
+G1
+
+[PAG 1493]
+SISTEMI
+XV-9
+Tab. XV.1.3  Segue
+1.5  Schema a blocchi di un sistema di controllo retroazionato
+Il tipico schema a blocchi di un sistema a catena chiusa (retroazionato) con lo schema 
+equivalente associato è quello della Fig. XV.1.9.
+Fig. XV.1.9  Sistema retroazionato e sistema equivalente.
+Questo è costituito da un blocco detto blocco di azione diretta avente trasferenza G ed 
+un blocco di controreazione avente trasferenza H. Il segnale in uscita da H viene sottratto 
+dall’ingresso X onde fornire il segnale A in ingresso al blocco di azione diretta. L’uscita com-
+plessiva del sistema è il segnale Y. La funzione complessiva equivalente al sistema dato, W, 
+si ottiene risolvendo il seguente sistema matematico:
+(XV.1.13)
+Risulta:
+(XV.1.14)
+pertanto è possibile sostituire ad uno schema retroazionato un blocco unico caratterizzato 
+dalla trasferenza W. La soluzione era anche ottenibile aprendo la catena in un punto qualsiasi, 
+determinando il valore del segnale fino a quel punto, richiudendo la catena, ripetendo quindi 
+il calcolo del segnale in questa circostanza e determinando infine la trasferenza, ricordando 
+Operazione
+Espressione
+Schema a blocchi
+Schema a blocchi 
+equivalente
+Spostamento di un 
+punto di diramazio-
+ne a valle di un 
+blocco
+Spostamento di un 
+punto di diramazio-
+ne a monte di un 
+nodo sommatore
+Spostamento di un 
+punto di diramazio-
+ne a valle di un nodo 
+sommatore
+Y
+G1X
+=
+X
+Y
+Z
+G1
+X
+Y
+1/G1
+G1
+Y
+X Z
+
+=
+X
+Y
+Z
+W
++
+-+
+X
+Y
+Z
+W
++
+-+
++
+-+
+Y
+X W
+
+=
+X
+Y
+W
++
+-+
+Z
+X
+Y
+Z
+W
++
+-+
+
+-+
+G
+H
+Y
+X
+W
+Y
+X
+A
+B
+
+
+Y
+G A
+
+=
+A
+X
+B
+–
+=
+B
+H Y
+
+=
+
+
+
+
+
+W
+G
+1
+G H
+
++
+---------------------
+=
+
+[PAG 1494]
+XV-10
+SISTEMI
+che il suo valore risulta dal rapporto tra il segnale in uscita e quello in ingresso.
+In particolare nell’esempio precedente il denominatore della funzione W risulta la 
+somma di due termini, ciò deriva dal fatto che si è considerata una retroazione negativa. In 
+caso di retroazione positiva, cioè con segno di somma del segnale indicato con B, la funzione 
+W avrebbe presentato il segno meno al denominatore.
+Un caso particolare sono i sistemi 
+detti a retroazione diretta o retroazione 
+unitaria: in questo caso il segnale di 
+retroazione, quello indicato con B nella 
+Fig. XV.1.10, è identico al segnale 
+dell’uscita Y.
+Fig. XV.1.10  Sistema a retroazione unitaria.
+1.6  Linearità, sovrapposizione degli effetti e stazionarietà
+Un sistema è lineare quando valgono le seguenti proprietà:
+–  ad un ingresso x1(t) corrisponde l’uscita y1(t)
+–  ad un ingresso x2(t) corrisponde l’uscita y2(t)
+–  all’ingresso a1x1(t)a2x2(t) corrisponde l’uscita a1y1(t)a2y2(t) con a1 e a2 costanti 
+qualsiasi.
+La condizione di linearità altro non è che la condizione di applicabilità del principio di 
+sovrapposizione degli effetti: il concetto di linearità e di sovrapposizione degli effetti sono 
+principi equivalenti.
+ L’importanza della linearità è in particolar modo evidente nello studio di sistemi aventi 
+più segnali simultanei in ingresso: la risposta sarà la somma delle risposte dovute ai singoli 
+ingressi che agiscono separatamente.
+La condizione di stazionarietà di un sistema vale per i sistemi nei quali ad un ingresso 
+del tipo x(tT), ovvero traslato nel tempo di T, gli corrisponde un’uscita del tipo y(t-T), cioè 
+traslata anch’essa di T.
+2  STUDIO NEL DOMINIO DEL TEMPO
+2.1  Risposta libera e forzata
+ I sistemi lineari e stazionari con una sola variabile di ingresso ed una sola variabile in 
+uscita possono essere rappresentati da equazioni differenziali lineari a coefficienti costanti 
+del tipo: 
+(XV.2.1)
+dove si intende con y(t) l’uscita, x(t) l’ingresso, i coefficienti ai e bi numeri reali e dove 
+.
+L’equazione XV.2.1 è valida solo nel caso in cui non siano presenti elementi aventi para-
+metri distribuiti, ovvero per sistemi privi di dispositivi che generano un ritardo finito quali 
+linee ed elementi pneumatici; il risultato di tale equazione risulta essere la soluzione del 
+sistema, e rappresenterà l’andamento dell’uscita al variare del segnale in ingresso. Tale solu-
+zione si compone di due termini:
+–  risposta libera,
+–  risposta forzata.
+La risposta di un sistema non dipende unicamente dal segnale in ingresso ma anche dalle 
+sue condizioni iniziali: in particolare la risposta libera del sistema si ottiene considerando 
+X
+A
+Y
+G
+B
+
+
+ai t
+i
+0
+=
+n
+
+diy
+dti
+------
+
+bi t
+i
+0
+=
+m
+
+dix
+dti
+------
+
+=
+m
+n
+
+
+[PAG 1495]
+SISTEMI
+XV-11
+nullo il segnale in ingresso ma tenendo in considerazione le condizioni iniziali del sistema. 
+La risposta forzata è quella ottenuta applicando in ingresso un segnale, ma con condizioni 
+iniziali nulle. La linearità del sistema, e quindi l’applicabilità della sovrapposizione degli 
+effetti consente di ottenere la risposta complessiva come somma delle due.
+ In particolare la risposta libera altro non è che l’integrale generale dell’omogenea asso-
+ciata: 
+(XV.2.2)
+la cui soluzione è una combinazione lineare di n integrali particolari indipendenti che 
+costituiscono il cosiddetto sistema fondamentale di integrali. Se l’equazione caratteristica 
+ha radici distinte (indicate con D1, D2, ecc.), allora un sistema fondamentale per l’omogenea 
+associata è l’insieme di funzioni:
+(XV.2.3)
+mentre se l’equazione caratteristica ha radici multiple, per ogni radice Di di molteplicità n, 
+vi sono elementi del sistema fondamentale:
+(XV.2.4)
+La risposta forzata è la soluzione dell’equazione differenziale quando tutte le condizioni 
+iniziali sono nulle: 
+(XV.2.5)
+Questo significa che la risposta è unicamente legata alla funzione ingresso x(t) e, nel caso 
+di equazione lineare a coefficienti costanti, è ottenibile tramite l’integrale di convoluzione: 
+(XV.2.6)
+dove 
+ viene chiamata funzione peso dell’equazione differenziale e può essere deter-
+minata con l’espressione:        
+(XV.2.7)
+(XV.2.8)
+con, c1, c2, …, ci costanti e, y1(t), y2(t), …,yn(t) funzioni costituenti un sistema fondamentale 
+dell’equazione differenziale.
+I termini che corrispondono alle radici reali o a quelle complesse coniugate prendono 
+il nome di modi della risposta; in particolare si indicano con modi aperiodici quelli corri-
+spondenti alle radici reali, e modi pseudoperiodici quelli in relazione alle radici complesse 
+coniugate.
+2.2   Modi aperiodici
+Sono modi corrispondenti alle espressioni: 
+ con ai reale, e talvolta indicati con:
+ai t
+i
+1
+=
+n
+
+diy
+dti
+------
+
+0
+=
+y1
+e
+D1t
+=
+,
+y2
+e
+D2t
+=
+,
+ecc.,
+e
+Dit,
+te
+Dit,
+...,
+t
+ni-1e
+Dit.
+y t
+0,
+=
+dy t
+dt
+------------
+0,
+=
+...,
+dn-1y t
+dtn-1
+-------------------
+0
+=
+per t
+0.
+=
+y t
+w t-
+
+
+0
+t
+
+bi
+dix 
+
+di
+--------------
+i
+0
+=
+m
+
+d
+=
+w t
+
+
+y t
+ciyi t
+t
+0
+
+i
+1
+=
+m
+
+=
+w t
+0
+=
+t
+0
+
+tke
+ait
+
+[PAG 1496]
+XV-12
+SISTEMI
+(XV.2.9)
+dove
+prende il nome di costante di tempo. Nel caso in cui k vale 0, l’espressione si riduce 
+alla forma 
+ ed in funzione del valore di a, si ottiene l’andamento della Fig. XV.2.1.
+Fig. XV.2.1  Modi aperiodici etal variare della costante di tempo.
+Fig. XV.2.2  Modi aperiodici tket al variare della costante di tempo e dell’esponente k.
+Particolare rilievo assume il valore
+con ai < 0, in quanto rappresenta l’intervallo di 
+tempo dopo il quale la funzione si riduce a 1/e del valore iniziale. Per 
+ si possono fare 
+le seguenti osservazioni:
+–  per 
+ la risposta tende a infinito se 
+, tende a zero se 
+.
+–  per 
+ la risposta parte dall’origine.
+–  a tempi intermedi, se
+la funzione è monotona crescente, se
+ la funzione 
+risulta inizialmente crescente, poi decrescente, risultando nulla la sua derivata prima per 
+ (Fig. XV.2.2).
+tke
+- t
+i
+---
+dove
+ai
+1
+i
+---
+=
+i
+eait
+et
+ = 1
+t
+ = 0
+ = 1
+ = 1/
+3
+2
+1
+0
+1
+2
+3
+
+
+ 
+tet
+t2et
+= 1
+= 0
+= 1
+= 1
+= 0
+= 1
+0
+1
+2
+3
+4
+1
+2
+3
+4
+1
+2
+3
+4
+0
+1
+2
+3
+4
+t
+t
+
+k
+0
+
+t
+
+
+ai
+0
+
+ai
+0
+
+t
+0
+=
+ai
+0
+
+ai
+0
+
+t
+k
+ai
+
+=
+
+[PAG 1497]
+SISTEMI
+XV-13
+2.3  Modi pseudoperiodici
+Sono modi dove le radici sono complesse del tipo: 
+, e la coniugata 
+. In questo caso tramite le relazioni di Eulero si può scrivere:
+(XV.2.10)
+(XV.2.11)
+Una combinazione lineare dei precedenti, e con k = 0, è la seguente:
+(XV.2.12)
+(XV.2.13)
+Queste sono funzioni che si annullano ad intervalli costanti, di ampiezza crescente o 
+decrescente a seconda se ai ha valore positivo, negativo o nullo. In particolare gli esponen-
+ziali 
+ rappresentano gli inviluppi della funzione. Talvolta, per ragioni di visibilità le 
+espressioni precedenti vengono presentate nella forma: 
+(XV.2.14)
+in modo da evidenziare il periodo del fattore sinusoidale nonché il fattore di smorzamento. 
+Fig. XV.2.3  Modi pseudoperiodici al variare della costante di tempo e dell’esponente k.
+Nella Fig. XV.2.3 è riportato l’andamento della funzione 
+ per tre valori di ai.
+Importanti sono le costanti che prendono il nome di pulsazione naturale ni ed il coef-
+ficiente di smorzamento i espressi rispettivamente da:
+(XV.2.15)
+p1
+a1
+j1
++
+=
+pi
+1
++
+a1-j1
+=
+tke
+ai
+ji
++
+
+t
+tke
+ait
+i
+cos
+t
+jsenit
++
+
+
+=
+tke
+ai-ji
+
+t
+tke
+ait
+i
+cos
+tjsenit
+
+.
+=
+e
+ait
+i
+cos
+t
+e
+aitsenit
+eait
+e
+-t
+
+i
+sen2
+Ti
+------t
+t2etsent
+ = 1
+t
+t
+t
+t2etsent
+t2etsent
+0
+1
+2
+3
+4
+1
+2
+4
+1
+2
+1
+2
+0
+1
+2
+3
+4
+0
+1
+2
+3
+4
+3
+ = 0
+ = 1
+t2e
+aitsenit
+ni
+ai
+2
+i
+2
++
+=
+
+[PAG 1498]
+XV-14
+SISTEMI
+(XV.2.16)
+Si può affermare che la risposta del sistema tende a zero per t sufficientemente grandi 
+tanto più rapidamente quanto più  è piccolo e che ni rappresenta la pulsazione naturale 
+non smorzata del sistema.
+La pulsazione naturale ed il coefficiente di smorzamento consentono di scrivere una 
+equazione differenziale lineare a coefficienti costanti del secondo ordine nel modo 
+seguente: 
+(XV.2.17)
+Lo studio dei modi consente di individuare la loro tendenza a zero al tendere di t all’infi-
+nito; precisamente vale la seguente regola:
+–  condizione necessaria e sufficiente affinché un modo tenda a zero per t che tende a 
+infinito è che la parte reale della radice dell’equazione caratteristica sia negativa.
+L’importanza di tale affermazione è in particolar modo legata al concetto di stabilità del 
+sistema; infatti un sistema è stabile se ad un segnale in ingresso di durata limitata corrisponde 
+un’uscita anch’essa di durata limitata. 
+Un sistema è stabile se la sua risposta libera è di tipo transitorio, poiché la risposta forzata 
+è dello stesso tipo del segnale in ingresso, mentre quella libera dipende solo dalle sue carat-
+teristiche.
+2.4  Risposte transitorie e a regime
+La risposta totale del sistema si ottiene anche come somma di risposte transitorie e rispo-
+ste a regime (a transitorio esaurito), in quanto la risposta a regime è la parte della risposta 
+totale che non tende a zero per t che tende a infinito; al contrario la risposta transitoria è quella 
+che si annulla per t che tende a infinito.
+2.5  Funzioni impulso, scalino, rampa
+Sovente, per lo studio dei sistemi di controllo tramite le equazioni differenziali che li 
+descrivono, si ricorre a dei particolari segnali (funzioni) in ingresso che sono: lo scalino uni-
+tario, la funzione impulso unitario e la rampa. Ciascuno di questi segnali (fig. XV.2.4) è otte-
+nibile dagli altri tramite funzioni di integrazione o derivazione.
+Fig. XV.2.4  Funzioni a) scalino, b) impulso, c) rampa.
+La funzione scalino unitario è una funzione indicata con u(t -t0) definita nel seguente 
+modo:
+(XV.2.18)
+(XV.2.19)
+La funzione impulso unitario è definita dal seguente limite:
+i
+ai
+ni
+-------.
+=
+d2y
+dt2
+-------
+2ini
++
+dy
+dt
+-----
+ni
+2y
++
+ni
+2x.
+=
+u(t)u(tt)
+t
+1
+1
+1/t
+t
+t0
+t
+t
+t
+t0
+0
+1
+0
+0
+a)
+b)
+c)
+u tt0
+
+
+1
+=
+per
+t
+t0
+
+u tt0
+
+
+0
+=
+per
+t
+t0.
+
+
+[PAG 1499]
+SISTEMI
+XV-15
+(XV.2.20)
+Infine, la funzione rampa è l’integrale dello scalino unitario e vale:                                 
+(XV.2.21)
+(XV.2.22)
+La proprietà principale della funzione impulsiva è la proprietà di screening: l’integrale 
+del prodotto della funzione impulso unitario (t  t0) per una funzione continua in t = t0, in 
+un intervallo che contiene t0, coincide con il valore della funzione calcolata in t0, cioè:
+(XV.2.23)
+Per risposta impulsiva di un sistema lineare deve intendersi la funzione uscita y(t) del 
+sistema quando l’ingresso vale x(t) = (t); la risposta indiciale è la risposta del sistema 
+quando l’ingresso vale x(t) = u(t); la risposta alla rampa è la risposta del sistema quando 
+l’ingresso vale x(t) = t per t > 0 e x(t) = 0 per 
+, tutto questo con condizioni iniziali nulle. 
+Le precedenti sono indicate come risposte canoniche: essendo esse combinazioni di modi, 
+si possono utilizzare per determinare la risposta forzata del sistema sottoposto ad un segnale 
+x(t). In particolare, dalla risposta impulsiva è possibile ottenere un sistema di integrali fon-
+damentali dell’omogenea e quindi, a partire dalle condizioni iniziali, ottenere anche l’evo-
+luzione libera.
+2.6  Specifiche della risposta temporale dei sistemi
+La risposta temporale di un sistema dipende, come già visto, dalla somma, istante per 
+istante, della risposta transitoria e della risposta a regime. È possibile affermare che la rispo-
+sta complessiva viene raggiunta in un tempo che, tipicamente, è pari a 4 ÷ 5 volte la costante 
+di tempo  del sistema. La costante di tempo è definita come il tempo necessario affinché 
+l’uscita del sistema raggiunga il 63% del suo valore finale.
+ In particolare, per un sistema del primo ordine sollecitato in ingresso da un gradino di 
+ampiezza unitaria, si individuano i seguenti parametri temporali:
+–  Tempo di ritardo Td. Rappresenta l’intervallo di tempo necessario affinché la risposta 
+del sistema raggiunga il 50% del suo valore finale (tipicamente Td = 0,7).
+–  Tempo di salita Tr. È l’intervallo di tempo affinché il valore della risposta passi dal 
+10% al 90% del suo valore finale (tipicamente Tr = 2,2).
+–  Tempo di assestamento Ts. È il tempo richiesto affinché il valore della risposta del 
+sistema si differenzi dal valore finale richiesto, entro una percentuale specificata (tipica-
+mente il 2% o il 5%).
+Nella Fig. XV.2.5a sono visualizzati i parametri temporali di un sistema del primo ordine 
+sottoposto in ingresso ad un segnale a gradino.
+Per i sistemi del secondo ordine sollecitati in ingresso da un segnale a gradino di ampiezza 
+unitaria aventi fattore di smorzamento 0 <  < 1, oltre i parametri precedentemente indicati, 
+si considera anche l’ampiezza dell’oscillazione conseguente al segnale in ingresso.
+t
+u tu tt
+
+
+t
+--------------------------------
+t
+0
+
+lim
+=
+con
+t
+0.
+
+u t0
+
+
+d
+-
+t
+
+per
+t
+t0
+
+0
+per
+t
+t0.
+
+f
+-
++
+
+ttt0
+
+dt
+f t0
+
+
+=
+t
+0
+
+
+[PAG 1500]
+XV-16
+SISTEMI
+Fig. XV.2.5  Parametri temporali di un sistema del primo ordine.
+Con riferimento alla Fig. XV.2.5b, si definisce sovraelongazione massima la differenza 
+tra il valore finale della risposta e il massimo valore raggiunto dalla medesima per effetto 
+di un segnale a gradino in ingresso. Spesso viene espressa in percentuale del valore finale 
+della risposta a regime ed è un indice della stabilità relativa del sistema.
+Indicando con YM ed Yf rispettivamente il valore massimo raggiunto dalla risposta del 
+sistema e il suo valore finale, si esprime la sovraelongazione percentuale massima del 
+sistema come segue:
+(XV.2.24)
+Y(t)%
+
+100
+90
+50
+10
+0
+Tr
+Td
+Ts
+t
+a)
+b)
+Y(t)%
+t
+Tr
+Td
+Ts
+Tp
+inviluppo esponenziale
+della risposta transitoria
+YM
+Yf
+200
+100
+90
+50
+50
+0
+MMax%
+YM
+Yf
+–
+Yf
+-----------------
+100.
+
+=
+
+[PAG 1501]
+SISTEMI
+XV-17
+Inoltre, tra il valore del fattore di smorzamento  e la percentuale massima di sovrae-
+longazione MMax %, vi è il seguente legame matematico:
+(XV.2.25)
+Dall’analisi della formula si evince che, in caso di smorzamento nullo, = 0, la sovra-
+elongazione è pari al 100% della risposta finale e, quest’ultima, risulta essere una oscilla-
+zione continua.
+Il valore massimo della sovraelongazione viene raggiunto dopo un tempo Tp calcolabile 
+tramite l’espressione seguente:
+(XV.2.26)
+Il denominatore della formula XV.2.26 rappresenta la cosiddetta pulsazione smorzata, 
+ovvero la pulsazione che corrisponde ad un sistema avente uno o più elementi dissipativi; 
+se non sono presenti elementi dissipativi, il sistema continua ad oscillare. Un sistema nel 
+quale risulti rilevante il valore assunto dalla sovraelongazione, ed inoltre presenti oscilla-
+zioni, è un sistema tendenzialmente instabile in quanto predisposto ad oscillare. Diversa-
+mente, affinché un sistema risulti avere un comportamento stabile è necessario che presenti 
+un coefficiente di smorzamento  maggiore di 0,707; in quest’ultimo caso, infatti, la per-
+centuale di sovraelongazione risulta minore del 5%, risultando quindi di entità trascurabile.
+Per un sistema con smorzamento 0 <  < 1, il tempo di assestamento Ts, misurato quando 
+il valore della risposta è di circa il 95% del valore finale, si approssima con la seguente for-
+mula:
+(XV.2.27)
+Il tempo di ritardo Td, e quello di salita Ts, aumentano all’aumentare del fattore di smor-
+zamento , e vengono approssimati con le rispettive seguenti formule:
+(XV.2.28)
+(XV.2.29)
+3  STUDIO NEL DOMINIO DI S E DI 
+Studiare un sistema nel dominio del tempo non sempre è agevole; per ovviare a queste 
+difficoltà si ricorre sovente ad un operatore matematico: la trasformata di Laplace (Fig. 
+XV.3.1). 
+La trasformata di Laplace (L.T.), consente di trasformare una funzione del tempo in una 
+funzione di variabile complessa dipendente dalla frequenza; effettuata la trasformata, lo stu-
+dio prosegue agevolmente nel dominio di s.
+Una volta ottenuta la risposta si torna nel dominio del tempo mediante l’operatore 
+inverso, l’antitrasformata di Laplace (L.T.-1).
+MMax%
+100 e
+-
+1-2
+--------------
+.
+
+=
+Tp
+
+n 12
+-----------------------.
+=
+Ts
+3
+n
+--------.
+=
+Td
+1
+0 73
+
+
++
+n
+-----------------------------,
+=
+Ts
+1
+1 1
+1 42
+
++
+
++
+n
+------------------------------------------.
+=
+
+[PAG 1502]
+XV-18
+SISTEMI
+Fig. XV.3.1  Metodi per l’analisi dei sistemi.
+3.1  Trasformata di Laplace
+Sia s la variabile complessa definita come s =  + j, si definisce trasformata di Laplace
+della funzione reale di variabile reale f(t), se esiste, l’integrale:
+(XV.3.1)
+Dalla soluzione del sistema trasformato nel dominio di s, per tornare nel dominio del 
+tempo si ricorre all’antitrasformata tramite l’operatore seguente: 
+(XV.3.2)
+dove  è un numero reale qualsiasi, tale che se f(t) è ad un solo valore, ed esiste per 
+, 
+ è assolutamente convergente:
+(XV.3.3)
+L’operazione di trasformata ed antitrasformata non sempre è agevole, quindi è conve-
+niente e preferibile effettuare le trasformazioni tramite la conoscenza di teoremi fondamen-
+tali e mediante tabelle. 
+3.2  Proprietà della trasformata
+Definite F1(s) e F2(s) rispettivamente le L.T. di f1(t) e di f2(t), e a1, a2 due costanti qual-
+siasi, si assume quanto segue.
+–  La trasformata di Laplace è una trasformazione lineare tra funzioni definite nel domi-
+nio del tempo e funzioni definite nel dominio di s, quindi:
+(XV.3.4)
+–  L’antitrasformata di Laplace è una trasformazione lineare tra funzioni definite nel 
+dominio di s e funzioni definite nel dominio del tempo, pertanto:
+Modello di sistema
+dominio del tempo
+nel
+dominio di s
+Trasformata
+ di Laplace
+Antitrasformata
+di  Laplace
+x(t)
+y(t)
+X(s)
+Y(s)
+nel
+Modello di sistema
+L.T. f t
+
+
+F s
+f t
+
+T
+
+T
+
+
+
+0
+
+lim
+e-stdt
+f
+0+
+
+
+te-stdt
+=
+=
+=
+0
+
+T
+
+
+L.T. -1 F s
+
+
+f t
+1
+2j
+--------
+F s
+c-j
+c
+j
++
+
+estds
+=
+=
+c
+0
+
+t
+0
+
+F 
+
+F s
+ft
+0+
+
+
+=
+e
+-0tdt
++
+
+.
+L.T. a1f1 t
+a2f2 t
++
+
+
+a1F1 s
+a2F2 s
++
+.
+=
+
+[PAG 1503]
+SISTEMI
+XV-19
+(XV.3.5)
+–  La trasformata di Laplace della derivata della funzione f(t) risulta:
+(XV.3.6)
+con f(0+) il valore della funzione calcolato per t che tende a zero da valori positivi. Più in 
+generale:
+(XV.3.7)
+con fn(0) derivata n’esima di f(t)  calcolata in 0.
+–  La trasformata di Laplace dell’integrale della funzione f(t) è:
+(XV.3.8)
+–  La trasformata di Laplace della funzione f(t/a) è:
+(XV.3.9)
+–  L’antitrasformata di Laplace della funzione F(s/a) è:
+(XV.3.10)
+–  La trasformata di Laplace della funzione f(t - T) è:
+(XV.3.11)
+–  La trasformata di Laplace della funzione e-atf(t) è:
+(XV.3.12)
+–  La trasformata di Laplace del prodotto delle funzioni f1(t) ed f2(t) risulta:
+(XV.3.13)
+–  L’antitrasformata di Laplace del prodotto di due trasformate F1(s) ed F2(s) è:
+(XV.3.14)
+–  Se f(t) è continua o presenta al limite una discontinuità a gradino per t = 0, cioè la fun-
+zione F(s) è una frazione propria, allora:
+L.T. -1 a1F1 s
+a2F2 s
++
+
+
+a1f1 t
+a2f2 t
++
+.
+=
+L.T. df t
+dt
+-----------
+sF sf 0+
+
+
+
+
+=
+L.T. dnf t
+dtn
+-------------
+snF ssn-1f 0
+sn-2f1 0
+...sfn-2 0
+fn-1 0
+
+=
+L.T. 
+f 
+
+d
+0
+t
+
+F s
+s
+----------.
+=
+L.T. f t
+a--
+
+
+aF as
+
+.
+=
+L.T.-1 F s
+a--
+
+
+af at
+
+.
+=
+L.T. f tT
+
+
+
+
+e-sTF s.
+=
+L.T. e-atf t
+
+
+F s
+a
++
+
+.
+=
+L.T. f1 tf2 t
+
+
+
+1
+2j
+--------
+F1
+c-j
+c
+j
++
+
+
+
+F2 s
+
+d.
+=
+L.T.-1 F1 sF2ts
+
+
+
+f1
+0+
+t
+
+
+f2 t
+
+d
+f2
+0+
+t
+
+
+f1 t
+
+d.
+=
+=
+
+[PAG 1504]
+XV-20
+SISTEMI
+(XV.3.15)
+e rappresenta il teorema del valore iniziale.
+–  Se F(s) ha poli a parte reale negativa o di valore nullo, allora:
+(XV.3.16)
+e rappresenta il teorema del valore finale.
+Nella Tab. XV.3.1 sono visualizzate le trasformate di Laplace di alcune funzioni.       
+Tab. XV.3.1  Tabella trasformate di Laplace di alcune funzioni
+Funzione
+Funzione trasformata
+1
+oppure
+u(t)
+f t
+t
+0
+
+lim
+sF s
+s
+
+
+lim
+=
+f t
+t
+
+
+lim
+sF s
+s
+0
+
+lim
+=
+f t
+F s
+t
+1
+t
+a
+–
+
+
+e-as
+1
+s--
+u ta
+
+
+e-as
+s
+--------
+t
+1
+s2
+----
+tn-1
+n1
+
+!
+----------------;
+0!
+1
+=
+1
+sn
+----
+n
+1 2 3, ...
+
+=
+eat
+1
+sa
+--------
+senat
+a
+------------
+1
+s2
+a2
++
+----------------
+cosat
+s
+s2
+a2
++
+----------------
+ebtsenat
+a
+--------------------
+1
+sb
+
+2
+a2
++
+----------------------------
+ebt
+at
+cos
+sb
+sb
+
+2
+a2
++
+----------------------------
+tsenat
+2a
+--------------
+s
+s2
+a2
++
+
+
+2
+-----------------------
+tcosat
+s2a2
+s2
+a2
++
+
+
+2
+-----------------------
+
+[PAG 1505]
+SISTEMI
+XV-21
+3.3  Antitrasformata di Laplace
+Talvolta eseguire l’antitrasformata può risultare più facile qualora si utilizzi il metodo 
+delle frazioni parziali: ogni funzione razionale del tipo N(s)/D(s) col numeratore di grado 
+inferiore a quello del denominatore può essere scritta come somma di funzioni razionali 
+(chiamate frazioni parziali) del tipo:
+(XV.3.17)
+dove a1…a2 sono i residui, p1…pn sono i poli della funzione F(s). Per calcolare i residui:
+(XV.3.18)
+ In particolare, tramite lo sviluppo di Heaviside, se il denominatore oltre a radici di mol-
+teplicità unitaria ne ha, per esempio, una di molteplicità m, si ottiene:
+(XV.3.19)
+ con:
+(XV.3.20)
+ed infine:
+(XV.3.21)
+3.4  Funzione di trasferimento
+Se lo studio di un sistema consente di stabilire che al momento dell’applicazione del 
+segnale in ingresso le sue condizioni iniziali siano nulle, diventa significativo l’uso delle tra-
+sformate di Laplace sul segnale in ingresso ed in uscita; infatti il rapporto tra la trasformata 
+di Laplace del segnale in uscita e quella del segnale in ingresso prende il nome di funzione 
+di trasferimento (f.d.t.) e rappresenta la trasformata di Laplace della funzione del sistema 
+nel dominio del tempo. Prendono il nome di zeri i valori che annullano il numeratore della 
+f.d.t., mentre si chiamano poli i valori che annullano il denominatore della f.d.t.:
+(XV.3.22)
+In particolare G(s) altro non è che un rapporto di polinomi: la trasformata della risposta 
+forzata (a partire da condizioni iniziali nulle), e la trasformata del segnale in ingresso; inoltre 
+esso presenta gli stessi poli della risposta libera. I poli sono fondamentali per lo studio del 
+comportamento di un sistema. La risposta libera dipende dai poli della funzione di trasfe-
+rimento, mentre la risposta forzata dipende dai poli della trasformata del segnale in ingresso 
+e per la stabilità di un sistema è fondamentale lo studio della risposta libera. Lo studio degli 
+zeri nella f.d.t. consente di determinare i valori di frequenza per i quali l’uscita vale zero.
+F s
+N s
+D s
+-----------
+a1
+sp1
+-----------
+a2
+sp2
+-----------
+...
+an
+s-pn
+---------
++
++
++
+=
+=
+an
+s-pn
+
+
+s
+pn
+
+lim
+F s.
+=
+F s
+N s
+D s
+-----------
+A1
+sa
+
+m
+-----------------
+A2
+sa
+
+m-1
+---------------------
+...
+Am
+sa
+
+
+-------------
+B1
+sb1
+-----------
+C1
+sc1
+----------
+...
++
++
++
++
++
++
+=
+=
+Ak
+1
+k 1
+–
+
+!
+---------------
+s
+a
+
+lim
+dk
+dsk
+-------
+s a
+–
+
+mf s
+
+=
+k
+1,2, ...,m
+=
+L.T.-1 F s
+
+
+eat
+A1tm-1
+m1
+
+!
+----------------- +
+A2tm-2
+m2
+
+!
+----------------- +...+Am
+
+
+
+
+
++B1e
+b1t+C1e
+c1t+...
+=
+G s
+Y s
+X s
+----------.
+=
+
+[PAG 1506]
+XV-22
+SISTEMI
+3.5  Rappresentazione nel dominio di  
+Poiché per i sistemi lineari, stazionari a parametri concentrati di maggior diffusione, G(s) 
+è una funzione di tipo razionale fratta propria, e l’estensione agli altri sistemi è immediata, 
+ci si occuperà in seguito solo di questo tipo di funzioni e della loro rappresentazione. In par-
+ticolare la risposta a regime di un sistema sollecitato da un segnale sinusoidale sarà pure essa 
+un segnale sinusoidale, avente però ampiezza e fase diversi dal segnale in ingresso. È da 
+ricordare inoltre, che un qualsiasi segnale periodico può essere rappresentato dalla somma 
+di più segnali sinusoidali; pertanto lo studio dei sistemi sollecitati da segnali sinusoidali con-
+sente di analizzare anche i sistemi sollecitati da segnali periodici non sinusoidali. 
+Lo studio nel dominio di  è una semplificazione in quanto G(j) = G(s) con  = 0. Una 
+volta ricavata la G(j) si tratta di determinare il suo valore per  che varia da zero a più infi-
+nito. G(j) è una funzione complessa che può essere rappresentata da una coppia di gran-
+dezze; parte reale e parte immaginaria oppure modulo e fase si definiscono nel modo 
+seguente:
+(XV.3.23)
+con le seguenti relazioni:                           
+(XV.3.24)
+(XV.3.25)
+(XV.3.26)
+(XV.3.27)
+La G(j) ha la particolarità di essere una funzione razionale fratta con grado del nume-
+ratore minore o al più uguale a quello del denominatore; ha il modulo M e la parte reale R
+che sono funzioni pari di , mentre la parte immaginaria I e la faseche sono funzioni 
+dispari. Questo consente di effettuare lo studio solo per valori di  positivi. La G(j) può 
+essere rappresentata graficamente in diversi modi, i più comuni sono i seguenti: 
+–  Diagramma polare di Nyquist nel quale la funzione viene riportata come ascissa e ordi-
+nata di un punto rappresentante l’estremo del vettore applicato nell’origine e che ha per 
+modulo l’ampiezza M e per argomento la fase . Qui il parametro corrente è proprio .
+–  Diagramma cartesiano di Nichols dove la funzione viene rappresentata come 
+ampiezza del modulo espressa in dB (decibel) sull’ordinata e sull’ascissa la fase. Anche in 
+questo caso il parametro corrente è  .
+–  Diagrammi R ed I oppure M e  in funzione di .
+–  Diagrammi logaritmici o di Bode dove si riportano valori legati al logaritmo del 
+modulo e alla fase in funzione del logaritmo di . Quest’ultimo metodo ha il vantaggio di 
+consentire la rappresentazione asintotica della funzione.
+4  STABILITÀ E CRITERI DI STABILITÀ
+La risposta di un sistema agli ingressi e ai disturbi definisce la stabilità del sistema stesso. 
+Nel dominio del tempo, condizione necessaria e sufficiente affinché un sistema lineare, sta-
+zionario e a parametri concentrati sia stabile, è che tutte le radici della sua equazione carat-
+G j
+
+
+R j
+
+
+jI j
+
+
++
+M j
+
+jj
+
+
+=
+=
+R
+M
+;
+cos
+=
+I
+Msen;
+=
+M
+R2
+I2
++
+;
+=
+
+arctg I R
+
+
+.
+=
+
+[PAG 1507]
+SISTEMI
+XV-23
+teristica abbiano parte reale negativa; nel dominio di s la condizione necessaria e sufficiente 
+perché lo stesso tipo di sistema sia stabile è che tutti i poli della sua funzione di trasferimento 
+abbiano parte reale negativa.
+Se qualche radice ha parte reale nulla, ma non ve ne sono a parte reale positiva, la risposta 
+impulsiva non va a zero e resta limitata; si afferma allora che il sistema è al limite della sta-
+bilità. Si ricorda che, per i sistemi al limite della stabilità, vi possono essere ingressi che pro-
+ducono uscite non limitate e che quindi tali sistemi siano instabili.
+4.1  Criterio di stabilità di Routh
+È un criterio applicabile ad equazioni caratteristiche di ennesimo ordine del tipo:
+(XV.4.1)
+Per verificarne la stabilità si ricorre alla tabella di Routh creata nel seguente modo:
+(XV.4.2)
+dove i coefficienti an, an-1, ..., a0 sono i coefficienti dell’equazione caratteristica, mentre i 
+rimanenti sono calcolati nel modo seguente:
+(XV.4.3)
+(XV.4.4)
+(XV.4.5)
+(XV.4.6)
+L’equazione caratteristica ha solo radici a parte reale negativa se gli elementi della prima 
+colonna della tabella hanno tutti lo stesso segno. Se vi sono cambiamenti di segno, il numero 
+dei cambiamenti corrisponde al numero di radici a parte reale positiva.
+4.2  Criterio di stabilità di Hurwitz
+È un altro metodo che consente di verificare se tutte le radici dell’equazione caratteristica 
+hanno parte reale negativa; viene applicato utilizzando i determinanti formati dai coefficienti 
+dell’equazione caratteristica. Assunto positivo il primo coefficiente an, i determinanti i con 
+i = 1, 2, 3,..., n - 1 sono i minori principali del seguente determinante:
+ansn+an-1sn-1+...+a1s+a0
+0.
+=
+sn
+sn-1
+.
+.
+.
+an
+an-1
+b1
+c1
+...
+an-2
+an-3
+b2
+c2
+...
+an-4
+an-5
+b3
+c3
+...
+...
+...
+...
+...
+...
+b1
+an1an-2anan3
+an-1
+------------------------------------------,
+=
+b2
+an1an-4anan
+5
+–
+an-1
+-------------------------------------------,
+=
+c1
+b1an3an1b2
+b1
+-------------------------------------,
+=
+c2
+b1an5an1b3
+b1
+-------------------------------------
+=
+ecc.
