@@ -228,7 +228,9 @@ function getEffectiveFlorStart(p) {
    florStart resta data fissa (fotoperiodo); il poco sole allunga la durata. */
 function femmFlorDays(p, days) {
   const base = (typeof days === 'number') ? days : p.harvestMin;
-  const m = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
+  let m = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
+  if (m > 1.6) m = 1.6;   // cap: evita stime irrealistiche con sole molto basso
+  if (m < 1)   m = 1;     // il sole non accorcia mai la fioritura
   return Math.round(base * m);
 }
 
