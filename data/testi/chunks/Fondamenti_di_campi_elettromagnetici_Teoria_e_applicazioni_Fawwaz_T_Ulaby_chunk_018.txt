@@ -1,0 +1,1232 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 18/23 ===
+Chars: 44,880 | Offset: 762,785
+
+
+
+s= sp th (8.98)
+Inserendo la (8.98) nella (8.96) e quindi sommando la (8.95) e la (8.96), si ha
+Pm Mm 1 _ 1 nyt
+si + 4 = (n ra) (Ze i) tes (8.99)
+
+Superficie S, con R; Superficie S, con R,
+
+Pm
+
+349
+
+Figura 8.29
+L’immagine b
+dell’oggetto O si può
+determinare localizzando
+dapprima l’immagine /1
+formata dalla superficie S;
+della lente e quindi
+utilizzando /; come
+oggetto per la superficie
+Sr
+
+[PAG 183]
+vo 350
+
+Cai
+
+Figura 8.30
+
+Rotazione tra oggetto e
+immagine da parte di una
+lente sottile.
+
+Capitolo 8 — Riflessione e trasmissione delle onde e ottica geometrica
+
+Per una lente sottile di spessore ¢ sufficientemente piccolo da consentire di trascurare
+l’ultimo termine, si ottiene l'equazione della lente sottile data da
+
+fim Mm 7 fl) °
++e = yma) (7-- x): (8.100)
+
+Si noti ‘che, per le convenzioni sui segni, R, > 0 € Ry <0 perla lente biconvessa de-
+scritta in Figura 8.29. I raggi di curvatura delle lenti con varie combinazioni di super-
+fici concave, convesse e piane sono date in Figura 8.25.
+
+Se il mezzo circostante è l’aria (rm = 1), la (8.100) si riduce alla formula dei co-
+struttori di lenti:
+
+lil mon) q i
+prgn UE (lente sottile) (8.101)
+
+dove si sono omessi i pedici di s1, 5) € ny nella (8.100). Dal momento che ¢ è trascura-
+bile, as es vengono ora attribuiti rispettivamente i nomi di distanza oggetto e distan-
+za immagine e vengono misurate a partire dal centro della lente, come descritto in
+Figura 8.30.
+
+Nel Paragrafo 8.7.2 si è definita la distanza focale f di uno specchio riflettente co-
+me la distanza immagine che si ottiene quando l’oggetto si trova all’infinito.
+Applicando la stessa definizione per la lente si ha
+
+1 -D( LL
+Fee Da x): (8.102)
+
+nel qual caso la (8.101) si può riscrivere come
+
+1
+=— (formula di Gauss) (8.103)
+
+che è nota come formula di Gauss e ha la stessa forma della (8.88) nel caso degli
+specchi. Le convenzioni dei segni per le lenti sottili sono uguali a quelle elencate in
+Tabella 8.5 per fe superfici riflettenti sferiche. Le lenti convesse hanno distanza foca-
+le positiva, mentre le lenti concave hanno distanza focale negativa. Secondo la
+(8.103), se l’oggetto è all'infinito (s = 00) allora s’ = f; ciò significa che i raggi che
+giungono dall’infinito, e che dunque sono paralleli all’asse ottico, vengono rifratti
+dalla lente e si intersecano nel fuoco F, come descritto in Figura 8.31(a) per una len-
+te convessa a distanza focale positiva e in Figura 8.31(b) per una iente concava a di-
+stanza focale negativa. La lente convessa è una lente convergente, mentre la lente
+concava è una lente divergente.
+
+8.8 Immagini formate da lenti sferiche
+
+La formula di Gauss espressa dalla (8.103) afferma anche che se l’oggetto si trova
+nel fuoco (s = f) allora #' = 00; la corrispondente rappresentazione a raggi è illustra-
+ta in Figura 8.31(c) e 8.31(d). Queste due proprietà si dimostreranno utili per localiz-
+zare l’immagine di un oggetto e ottenere la relazione tra la dimensione dell’immagi-
+ne e quella dell’oggetto. In Figura 8.30, l’oggetto situato nel punto O ha altezza h e
+la sua cima è indicata dal punto Y.
+
+L’immagine nel punto J è capovolta, ha altezza 4' che in questo caso è negativa, e
+la sua cima si trova nel punto Y”. Il punto Y’ si trova all’intersezione dei raggi 1, 2 e
+3. Il raggio 1 giunge sulla lente con direzione parallela all’asse ottico, viene rifratto
+dalla lente ed emerge con una direzione che attraversa il fuoco F; in caso di lente di-
+vergente, il raggio 1 sembrerebbe provenire dal fuoco a sinistra della lente. Il raggio
+3, tracciato dal punto Y attraverso il fuoco F a sinistra della lente, viene rifratto ed
+emerge in direzione parallela all’asse ottico. Una terza proprietà utile delle lenti sotti-
+li riguarda il raggio tracciato attraverso il centro della jente. Un tale raggio, indicato
+con 2 in Figura 8.30, emerge dalla lente senza subire deviazione alcuna, perciò i pun-
+ti Y e ¥’ sono uniti da un segmento che passa per il centro della lente.
+
+Per i raggi emanati da un oggetto a sinistra della lente, le proprietà delle lenti sottili
+nei loro confronti si possono riassumere come segue:
+
+(1) Per una lente convergente, il raggio che giunge sulla lente con direzione parallela
+all’asse ottico, come il raggio 1 in Figura 8.30, viene diffratto ed emerge con una
+direzione che attraversa ii fuoco F a destra della lente. Nel caso di una lente di-
+vergente, il raggio rifratto sembrerebbe provenire dal fuoco a sinistra della lente,
+come descritto in Figura 8.31(b).
+
+(2) Per lenti sia convergenti che divergenti, il raggio diretto verso il centro della len-
+te, come il raggio 2 in Figura 8.30, emerge con direzione inalterata.
+
+(3) Per una lente convergente, il raggio che giunge sulla lente attraversando il fuoco
+a sinistra della lente, come il raggio 3 in Figura 8.30, viene rifratto ed emerge in
+direzione paralleia all’asse ottico. Per una lente divergente, il raggio che si propa-
+ga in direzione del fuoco a destra della lente, come i raggi descritti in Figura
+8.31(d), viene diffratto in modo da sembrare che provenga dal lato sinistro della
+lente con direzione parallela all’asse ottico.
+
+L’ingrandimento trasversale di una lente sottile è definito come il rapporto tra l’al-
+tezza h’ dell'immagine e l’altezza A deli’oggetto. Dalla Figura 8.30 si ha
+
+;
+mal A. (8.104)
+
+2.351
+
+Figura 8.31
+Aunoggetto all’infinito.
+corrisponde un’ inimagine
+nel fuoco, come si.vede in
+(a) e in (6), mentre se
+l'oggetto è nel fuoco,
+come si vede in (c)ein
+(d), la sua immagine è
+all’infinito.
+
+[PAG 184]
+i
+t
+Ì
+
+se NW
+
+Capitolo 8 — Riflessione e trasmissione delle onde e ottica geometrica
+
+Nell’esempio mostrato in Figura 8.30, M è negativo in quanto /' è negativa e, per le
+convenzioni sui segni, sia s che s’ sono positive. Dunque, affinché M sia positivo e
+l’immagine sia diritta, presumendo che l’oggetto sia reale con s positiva,’si ha che s’
+deve essere negativa, il che significa che l’immagine è virtuale. Pertanto una lente
+può generare un immagine reale capovolta alla propria destra oppure un’immagine
+virtuale diritta alla propria sinistra. Le proprietà .dell’immagine sono riassunte in
+Tabella 8.6 sia per lenti concave che convesse. Il processo di formazione delle imma-
+gini si può estendere a sistemi visuali formati da più lenti. Per esempio, in un sistema
+con due lenti l’immagine di un oggetto formata dalla prima lente serve da oggetto per
+la seconda lente.
+
+Tabella 8.6 Immagini di oggetti reali formate da lenti sottili.?
+
+Lente convessa
+Oggetto Immagine _
+Posizione Tipo Posizione Orientazione —Dimensione relativa
+a<s<oo Reale Qos >of Capovolta Rimpicciolita
+s=2f Reale gy =2f Capovolta Uguale
+f<s<2f Reale 0>S > 2 Capovolta Ingrandita
+s=f =a
+#=00 Virtuale Is|>s Diritta Ingrandita
+Lente concava
+_ Oggetto Immagine
+Posizione Tipo Posizione Orientazione —Dimensione relativa
+Ovunque Virtuale Si <i Diritta Rimpicciolita
+s>|s|
+
+“ Adattata da E. Hecht, Optics, seconda edizione, Addison-Wesley Publishing Co., 1990.
+
+Esempio 8.9 Immagine formata da una lente biconvessa
+
+Una matita alta 5 cm è posta a una distanza di 25 cm di fronte a una lente biconvessa
+con raggi di curvatura di 50 cm e 12.5 om. Se l’indice di rifrazione della lente è 1.5, si
+ricavi la posizione dell’immagine e si descrivano le sue proprietà.
+
+Soluzione Una lente biconvessa ha distanza focale positiva f, corrispondente ai rag-
+gi Ri > 0 e R7<0 [vedere ia Figura 8.25]. Si possono scegliere R; = 50 cm e
+Ry = -12.5 cm oppure Ri = 12.5 cm e Ry = —50 cm. Entrambe le scelte danno lo
+stesso valore dif quando si applica la (8.102): Dalia prima scelta si ottiene
+
+1 xf 1 1
+- L.5-)( LL
+falls IC Te)
+da cui si ricava f = 0.2 m. Dalla (8.103) si ha
+it if 1
+
+025 7 = 02”
+da cui si ottiene s’ = 1 m. L’ingrandimento trasversale è
+it g 1
+
+h s) 025.
+
+Perciò l’immagine della matita è capovolta, in quanto M è negativo, e la sua altezza è
+hi=-4x5cm=-20cm.
+
+Glossario
+
+Domande di verifica
+
+8.8 A quali condizioni è applicabile l’ottica geometrica?
+8.9 Cosa sono i raggi parassiali e quale approssimazione consentono?
+8.10 Cos'è l’approssimazione di lente sottile?
+
+Esercizio 8.10 Si dimosiri che per una superficie riflettente piana la (8.94) si riduce a
+$=-(m/m)s.
+
+Esercizio 8.11 Si calcoli la distanza focale di una lente piano-concava con raggio di
+curvatura pari a 10 cm e indice di rifrazione pari a 1.5.
+
+SoLuzioneE f = —20 cm.
+
+Concetti fondamentali
+
+e Le relazioni che descrivono il comportamento in riflessione e in trasmissione di
+un’onda elettromagnetica piana all’interfaccia tra due mezzi diversi sono una con-
+seguenza dell’applicazione delle condizioni di continuità dei componenti tangenti
+di E e H attraverso l’interfaccia.
+
+® Le leggi di Snell affermano che 6; = 6, e
+
+sin A = (n1/n2) sin 6.
+
+Per mezzi con m2 < ni, l’onda incidente viene totalmente riflessa dall’interfaccia
+quando 6; > 4, dove 0, è l’angolo critico dato da 8, = sin"! (2/1).
+
+® La luce può essere guidata lungo le fibre ottiche mediante riflessioni multiple suc-
+cessive. La massima velocità di trasmissione degli impulsi numerici che si può rag-
+giungere per una tratta in fibra ottica è limitata dalla dispersione modale.
+
+© In corrispondenza dell’angolo di Brewster per una data polarizzazione, l’onda inci-
+dente viene interamente trasmessa al di là dell’interfaccia. Per i materiali non ma-
+gnetici l'angolo di Brewster esiste solo per la polarizzazione parallela.
+
+© Qualsiasi onda piana incidente su un'interfaccia piana si può rappresentare come
+somma di un’onda con polarizzazione perpendicolare e di un’onda con polarizza-
+zione parallela. .
+
+¢ I modelli equivalenti a linea di trasmissione si possono usare per caratterizzare la
+propagazione delle onde, la riflessione e la trasmissione da parte di un’interfaccia
+tra mezzi diversi.
+
+® Nell’ottica geometrica, le onde sono rappresentate da raggi che si propagano in li-
+nea retta. L’ottica geometrica, che può essere applicata per costruire le immagini
+formate da specchi e lenti, è valida nella misura in cui gli oggetti con cui fe onde
+interagiscono hanno dimensione molto maggiore della lunghezza d’onda e la loro
+superficie è abbastanza liscia in rapporto a À.
+
+Glossario
+
+Si definiscano i seguenti termini, spiegandone il significato: angoli di incidenza, riflessione e trasmissione
+angolo di rifrazione
+
+raggio indice di rifrazione n
+
+fronte d'onda mezzo. denso
+
+coefficiente di riflessione I° onda superficiale
+
+coefficiente di trasmissione 7 angolo eritico È,
+
+rapporto d’onda stazionaria $ riflessione totale interna
+
+leggi di Snell angolo di accettazione 9,
+
+to)
+
+[PAG 185]
+354 Capitolo 8 — Riflessione e trasmissione delle onde e ottica geometrica
+
+dispersione modale
+
+‘polarizzazione parallela
+polarizzazione perpendicolare
+
+piano di incidenza
+
+polarizzazione trasverso-elettrica (TE)
+
+polarizzazione trasverso-magnetica (TM)
+
+condizione di phase-matching
+angolo di Brewster 9g
+
+angolo di polarizzazione
+incidenza radente
+
+riflettività (riflettanza) R
+trasmittività (trasmittanza) 7°
+ottica fisica (ottica ondulatoria)
+ottica geometrica (ottica a raggi)
+effetti di interferenza
+
+PROBLEMI
+
+Nota: Le risposte ai problemi contrassegnati da un asterisco si
+trovano nell’Appendice D.
+
+Paragrafo 8.1 Riflessione e trasmissione con
+incidenza normale
+
+*8.1 Un’onda piana in aria con un campo elettrico di ampiezza
+pari a 10 V/m incide norraalmente sulla superficie di un
+mezzo senza perdite, non magnetico con €, = 25. Si
+determinino:
+
+(a) i coefficienti di trasmissione e riflessione;
+
+(b) il rapporto d’onda stazionaria nell’aria;
+
+(©) le densità di potenza media delle onde incidente,
+riflessa e trasmessa.
+
+8.2. Un'onda piana che viaggia nel mezzo | con e, = 2.25
+incide normalmente sul mezzo 2 con é,2 = 4. Entrambi i
+mezzi sono non magnetici e non conduttori. Se il campo
+elettrico dell’onda incidente è dato da
+
+Ki = 34 008 (6m x 10% — 307%) (Vm)
+
+(a) si calcolino le espressioni nel dominio del tempo dei
+campi elettrico e magnetico in ognuno dei due mezzi;
+
+(b) si determininino te densità di potenza media delle onde
+diretta, riflessa e trasmessa.
+
+#83. Un’onda piana che viaggia un mezzo con €,, = 9 incide
+normalmente su un secondo mezzo con e, = 4. Entrambi
+i mezzi sono non magnetici e non conduttori. Se il campo
+elettrico dell’onda incidente è dato da
+
+Hi = 22 cos (2m x 10%— ky) (Alm)
+
+(a) si calcolino le espressioni nel dominio del tempo dei
+campi elettrico e magnetico in ognuno dei due mezzi;
+
+(b) si determinino le densità di potenza media delle onde
+diretta, riflessa e trasmessa.
+
+8.4. Un’onda piana in aria, a 200 MHz, polarizzata
+circolarmente in senso sinistrorso e con il modulo del
+campo elettrico di 10 V/m incide normalmente su un
+
+diffrazione
+
+distanza oggetto e distanza immagine
+immagini reali e virtuali
+
+centro e raggio di curvatura
+
+asse principale dello specchio o della lente
+ingrandimento trasversale Mf
+
+superfici convesse € concave
+
+equazione dello specchio
+
+distanza focale dello specchio o della lente f
+fuoco dello specchio o della lente F
+
+lato frontale e posteriore dello specchio o della lente
+raggi parassiali
+
+equazione della lente sottile
+
+formula dei costruttori di lenti
+
+formula di Gauss
+
+mezzo con €, = 4 e che occupa la regione di spazio
+definita da z > 0.
+
+(a) Si scriva l’espressione del fasore campo elettrico
+dell'onda incidente considerando che il campo presenta un
+massimo positivo inz = Oat = 0.
+
+(©) Si calcolino i coefficienti di trasmissione e riflessione.
+(c) Si scriva l’espressione del fasore campo elettrico
+dell’onda riflessa e di quella trasmessa e il campo totale
+nella regione  < 0.
+
+(d) Si determini la frazione di potenza media incidente che
+viene riflessa dalla superficie e quella che viene trasmessa
+nel secondo mezzo.
+
+*8.5 Si ripeta il Problema 8.4 sostituendo ii mezzo dielettrico
+con un debole conduttore caratterizzato da ¢, = 2.25,
+4&=leo= 10 Sim.
+
+8.6 Un’onda piana a 50 MHz con ampiezza del campo
+elettrico di 30 V/m incide normalmente dali’aria su un
+mezzo dielettrico perfetto semi infinito con e, = 36. Si
+determini:
+
+@) T;
+
+(©) la densità di potenza media delle onde incidente e
+riflessa;
+
+(©) la distanza dalia superficie, nell’aria, del più vicino
+minimo dell’intensità di campo elettrico |E}.
+
+*8.7 Qual è l'ampiezza massima, nell'aria, del campo elettrico
+totale del Problema 8.6 e a quale distanza minima dalla
+superficie si verifica?
+
+8.8 Si ripeta il Problema 8.6 sostituendo il mezzo dielettrico
+con un conduttore caratterizzato dae, = 1, uy = le
+9 =2.78 x 1073 Sim.
+
+#8.9 Le tre regioni mostrate in Figura 8.32 sono costituite da’
+materiali dielettrici perfetti. Per un’onda nel mezzo 1 che
+incide normalmente sulla superficie inz = —d, quale
+combinazione di 2,2 e d non produce riflessione? Si
+esprima la risposta in termini di ¢,1, ¢,3 e della frequenza
+Ff di oscillazione deil’onda. i
+
+Figura 8.32 Strati di materiale dielettrico per i Problemi da
+8.9a8.11,
+
+8.10 Per ja configurazione mostrata in Figura 8.32, si usino le
+equazioni delle linee di trasmissione, o la carta di Smith,
+per calcolare l’impedenza di ingresso in z
+€1=1,€2=9,€3=4,d=12mef
+determini inoltre la frazione della densità di potenza media
+incidente che viene riflessa dalla struttura. Si assumano
+tutti i materiali senza perdite e non magnetici.
+
+*8.11 Si ripeta il Problema 8.10 scambiando tra loro €, € 6,3.
+
+8.12 Un fascio di luce arancione alla lunghezza d'onda di 0.61
+um in aria entra in un blocco di vetro con e, = 2.25. Di
+quale colore apparirà il fascio a un sensore immerso nel
+vetro? Gli intervalli di lunghezza d’onda dei colori sono
+viola (da 0.39 um a 0.45 um), blu (da 0.45 pm a 0.49
+um), verde (da 0.49 um a 0.58 um), giallo (da 0.58 uma
+0.60 um), arancione (da 0.60 um a 0.62 yum) e rosso (da
+0.62 pm a 0.78 um).
+
+*8.13 Un’onda piana in aria a frequenza sconosciuta incide
+normalmente sulla superficie di un conduttore perfetto.
+Usando un misuratore di campo elettrico, si è determinato
+che il campo elettrico totale nell’aria è sempre nullo se
+misurato a una distanza di 2.5 m dalla superficie del
+conduttore. Inoltre, nessun altro nullo è stato osservato a
+distanze minori dal conduttore. Qual è la frequenza
+dell’onda incidente?
+
+8.14 Si consideri un sottile strato di sapone in aria illuminato da
+luce gialla con A = 0.6um. Considerando lo strato come
+una lastra piana dielettrica con e, = 1.72, circondato da
+aria su entrambi i lati, quale spessore dello strato
+produrrebbe una forte riflessione della luce gialla nel caso
+di incidenza normale?
+
+*8.15 Un’onda piana in aria a 5 MHz con ampiezza del campo
+elettrico di 20 V/m incide normalmente sulla superficie
+piana di un materiale conduttore semi infinito con €,
+4 = leo = 100 S/m. Si determini la potenza media
+dissipata per unità di area sulla sezione considerando una
+penetrazione nel mezzo conduttore di 2 mm.
+
+8.16 Un’antenna a 0.5 MHz trasportata da un aeroplano che
+vola sopra la superficie dell’oceano genera un'onda che si
+avvicina alla superficie dell’acqua sottoforma di onda
+
+Probleri
+
+piana normalmente incidente con ampiezza del campo
+elettrico di 3000 Vim. L'acqua del mare è caratterizzata
+&=7,pr=leoc=4Sfm. L'aeropiano sta dercarido
+trasmettere un messaggio a un sottomarino immierso a ini
+profondità d sotto la superficie dell’acqua. Se il ricevitore”.
+del sottomarino richiede un'ampiezza minima del segnale.
+di 0.1 2V/m, qual è la massima profondità d alla quale 8 ©
+ancora possibile comunicare con successo?
+
+Paragrafi 8.2 e 83 Leggi di Snell e fibre ottiche
+
+*8.17 Un raggio di luce in aria incide su un prisma con un
+angolo @ come mostrato in Figura 8.33. Il raggio è rifratto
+dalla prima superficie e di nuovo dalla seconda Si
+determini il valore più piccolo di 9 per il quale il raggio
+può emergere dall’altro Jato, in funzione dell’angolo di
+apertura ¢ del prisma e del suo indice di rifrazione ». Si
+trovi il valore minimo di # per = 1:5e ¢ = 60°.
+
+Figura 8.33 Prisma del Problema 8.17.
+
+8.18 Per alcuni tipi di vetro indice di rifrazione varia con la
+lunghezza d’onda. Un prisma, fatto di materiale avente
+
+4 .
+n=L71 -35 Ao, (Ag in um)
+dove Ap è la lunghezza d’onda nel vuoto, è utilizzato per
+diffondere la luce bianca come mostrato in Figura 8.34, La
+fuce incide con un angolo di 50°, fa lunghezza d'onda Ao
+della luce rossa è 0.7 zm e quella della luce viola 0.4 um,
+Si determini la dispersione angolare in gradi.
+
+Figura 8.34 Prisma dei Problema 8.18.
+
+*8.19 i due prismi di Figura 8.35 sono fatti di vetro con indice
+
+n= 1.52, Quale frazione della densità di potenza
+trasportata dal raggio incidente sul prisma superiore
+emerge da quello inferiore? Si trascurino le riflessioni
+multiple interne.
+
+[PAG 186]
+356 Capitolo 8 ~ Riflessione e trasmissione delle onde e ottica geometrica
+
+Figura 8.35 Prismi periscopici del Problema 8.19.
+
+8.20 Un raggio di luce incidente a 45° passa attraverso due
+materiali dielettrici con indice di rifrazione e spessore dati
+
+in Figura 8.36. Se il raggio colpisce la superficie del primo
+
+dielettrico a un'altezza di 2 cm, a quale altezza colpirà lo
+schermo?
+
+3cm dem Sem
+
+Figura 8.36 Luce incidente su uno schermo attraverso un
+dielettrico multistrato (Problema 8.20).
+
+*8,21 La Figura 8.37 mostra un bicchiere contenente un blocco
+di vetro sul fondo e ricoperto d'acqua. Il vetro contiene
+una piccola bolla d’aria a una profondità ignota sotto la
+superficie dell’acqua. Vista dall’alto, con un angolo di
+60°, fa bolla d’aria sembra trovarsi a una profondità di
+6.81 cm. Qual è fa sua vera profondità?
+
+8.22 Un semicilindro di vetro con n = 1.5 è posizionato in
+modo tale che la sua faccia piana sia orizzontale e
+sostenga una goccia d’olio, come mostrato in Figura 8.38.
+Quando la luce è diretta radialmente verso l'olio, si
+verifica riflessione totale interna se @ supera 60°. Qual è
+Vindice di rifrazione dell'olio?
+
+Figura 8,37 Posizione apparente della bolla d’aria nel
+Problema 8.21. :
+
+Figura 8.38 Goccia d'olio sulla superficie piatta di un vetro
+semicilindrico (Problema 8.22).
+
+48.23 Una monetina da un penny giace sul fondo di una fontana
+d’acqua a una profondità di 30 cm. Si determini il
+diametro di un foglio di carta che, posto sulla superficie
+dell’acqua esattamente sopra il penny, nasconde
+completamente la vista della moneta. Si consideri il penny
+puntiforme e l’indice di rifrazione dell’acqua n = 1.33.
+
+8,24 Si supponga che la fibra ottica dell’Esempio 8.5 sia
+immersa nell’acqua (con x = 1.33) invece che in aria. Si
+determinino in questo caso 8 € fp-
+
+*8.25 L'equazione (8.45) è stata ottenuta nel caso in cui la luce
+incidente sull’estremità della fibra ottica si distribuisca
+sull'intero cono di accettazione, come mostrato in Figura
+8.12(b). Si supponga che la luce incidente sia costretta in
+un intervallo più stretto che si estende tra l’angolo di
+incidenza normale e #, con? < 6. È
+(a) Si ottenga un'espressione per la massima velocità di
+trasmissione dati fp in termini di #.
+
+() Si calcoli f, perla fibra dell’Esempio 8.5 quando
+3°
+
+#=3.
+
+Paragrafi 8.4 e 8.5 Riflessione e trasmissione
+con incidenza obliqua
+
+8.26 Un’onda piana in aria con
+È = 3106/84). (vim)
+
+incide sulla superficie piana di un materiale dielettrico con
+€, = 4 che occupa il semispazio z > 0. Si determini:
+
+(a) la polarizzazione dell’onda incidente;
+
+(©) l’angolo di incidenza;
+
+© l'espressione nel dominio dei tempo dei campi elettrico
+e magnetico riflessi; :
+
+(@) l’espressione nel dominio del tempo dei campi elettrico
+‘e magnetico trasmessi;
+
+(€) la densità di potenza media trasportata dall’onda nel
+mezzo dielettrico.
+
+8.27 Si ripeta il Problema 8.26 per un'onda in aria con
+B= 52x 10%eE*) (A/m)
+
+incidente sopra una superficie piana di un materiale
+dielettrico (z > 0) cone, = 9.
+
+8.28 La luce naturale é polarizzata in modo casuale, il che
+significa che, mediamente, meta dell’energia luminosa è
+polarizzata lungo una certa direzione (nel piano ortogonale
+alla direzione di propagazione) e l’altra metà dell’energia è
+polarizzata lungo ia direzione ortogonale alla prima.
+Pertanto, quando si tratta Ja luce naturale incidente su una
+superficie piana, si può considerare metà della sua energia
+associata a onde polarizzate parallelamente e l’altra metà a
+onde polarizzate perpendicolarmente. Si determini la
+frazione della potenza incidente riflessa dalla superficie
+piana di un pezzo di vetro con n = 1.5 se illuminata da
+luce naturale con un angolo di 70°.
+
+#8.29 Un’onda piana polarizzata parallelamente in aria incide su
+un materiale dielettrico con e, = 9 con un angolo pari
+all’angolo di Brewster. Qual è l’angolo di rifrazione?
+
+8.30 Un’onda polarizzata perpendicolarmente in aria incide
+obliquamente su un'interfaccia piana vetro-aria con un
+angolo di incidenza di 30°. La frequenza dell’onda è 600
+THz (1 THz = 10' Hz), che corrisponde alla luce verde, e
+Yindice di rifrazione del vetro è 1.6. Se l'ampiezza del
+campo elettrico dell’onda incidente è 50 V/m, si
+
+(a) i coefficienti di trasmissione e riflessione;
+(%) le espressioni istantanee per E e H nel vetro.
+
+8.31 Si dimostri che il coefficiente di riflessione I", può essere
+
+scritto nella seguente forma:
+__sin(® ~ 4)
+2 sin (0+ 8)
+
+8.32 Si dimostri che per mezzi non magnetici il coefficiente di
+riflessione I può essere scritto nella seguente forma:
+
+_ tan (&- 6)
+1 tan (6+ 8)
+
+Problemi 37
+
+*8.33 Un fascio di luce in aria, polarizzato parallelamente cou
+un'ampiezza del campo elettrico di 20 V/m, incide sul
+polistirene con ¢, = 2.6 e ur = 1. Se l’angolo di
+incidenza all'interfaccia aria-polistirene è 50°, si
+determinino:
+
+@) la riflettività e la trasmittività;
+
+(b) la potenza trasportata dai fasci incidente, riflesso e
+trasmesso se la zona illuminata dal fascio incidente’
+sull’interfaccia ha un’area di 1 m?.
+
+Paragrafi da 8-6 a 8-8 Ottica geometrica
+
+8.34. Un uomo è alto 2 m, Quanto dovrebbe essere lungo uno
+specchio, posizionato di fronte all’uomo a una distanza d,
+perchè questi possa vedere completamente la sua
+immagine riflessa? Si dica se la risposta è funzione di d.
+
+*8,35 Una fiamma a gas si trova a 2 m da uno schermo, come
+mostrato in Figura 8.39. Uno specchio concavo è
+utilizzato per produrre un’immagine reale della fiamma,
+ingrandita quattro volte, su uno schermo, Si determini s e
+la distanza focale dello specchio.
+
+Specchio
+concavo Schermo
+
+psn
+
+Figura 8.39 Situazione descritta nel Problema 8.35.
+
+8.36 Un dentista usa uno specchio concavo con un raggio di
+curvatura di 6 cm per vedere un’otturazione in un dente,
+Se lo specchio è posizionato a 2 cm dal dente, di quante
+volte è ingrandita l’immagine dell’otturazione?
+
+*8.37 Un fiore è a 20 cm da uno specchio sferico concavo. Se
+l’immagine del fiore si forma a una distanza di 80 cm
+dallo specchio, si determini:
+
+(a) il raggio di curvatura dello specchio;
+(b) l'ingrandimento trasversale.
+
+8,38 Una candela in aria è posizionata a una distanza di 25 cm
+alla sinistra di un vetro con una superficie sferica concava
+caratterizzata da un raggio di curvatura di 50 cm. Se
+l'indice di rifrazione del vetro è 1.5, si determini la
+posizione dell’iramagine della candela.
+
+*8.39 Una sottile lente biconvessa con indice di rifrazione 1.6 ha
+raggi di curvatura di 20 cm e 30 cm. Si determini la
+
+[PAG 187]
+358 Capitolo 8 — Riflessione e trasmissione delle onde e ottica geometrica
+
+posizione, l'ingrandimento e l’orientamento di un oggetto
+posizionato a 20 cm dalla lente.
+
+8.40 Si ripeta il Probleraa 8.39 per un oggetto posizionato a 50
+cm da una lente piano-concava con raggio di curvatura di
+15 cm.
+
+841 La faccia curva di ‘una lente piano-convessa ha un raggio
+di curvatura di 3 cm e l’indice di rifrazione del materiale
+della lente è 1.5. Si determini ja distanza focale della lente
+quando;
+
+(a) la superficie piana della lente è di fronte alla iuce;
+(b) la superficie convessa della lente è di fronte alla luce.
+
+8.42 L’inamagine formata da una lente convessa si muove di 1
+cm quando l’oggetto viene spostato da molto lontano (al
+limite dall’infinito) a soli 42 cm dalla lente. Qual è la
+distanza focale della lente?
+
+*8.43 L'equazione (8.102) definisce la distanza focale di una
+lente sottile in aria,
+(a) Si ricavi un'espressione per f per il caso generale di
+una lente sottile con indice di rifrazione n, immersa in un
+mezzo con indice di rifrazione nm.
+(b) Si determini la distanza focale di una lente biconcava
+con raggi di curvatura di 10 cm e 15 cme un’indice di
+rifrazione di 1,5 quando è posta (i) in aria, (ii) nell'acqua
+(con indice di rifrazione pari a 1.33). >
+
+8.44 Una lente positiva è utilizzata per vedere un oggetto
+posizionato a 50 cm di fronte a essa su uno schermo posto
+a l m di distanza dietro la lente. Qual è fa distanza focale
+della lente?
+
+*8.45 Un sistema di visualizzazione consiste di due lenti sottili -
+positive con distanze focali di 15 cm per la prima lente e 5
+om per la seconda. Se le due lenti sono separate da una
+distanza di 50 crn, si localizzi l’immagine di un oggetto
+posto a 25 cm di fronte alla prima lente, rispetto alla
+posizione della seconda lente.
+
+8,46 Due lenti sottili con distanze focali fi e f; si toccano, come
+descritto in Figura 8.40. Si mostri che F, la distanza focale
+del sistema di lenti, è data da
+
+fi fr
+
+Figura 8.40 Due lenti in contatto tra loro. Le lenti sono
+talmente sottili che si possono considerare nella stessa
+posizione (Probiema 8.46).
+
+#8,47 Due lenti sottili con distanze focali fi =5cmef = —10
+cm sono separate di 5 cm come descritto in Figura 8.41. Si
+determini la posizione dell’oggetto.
+
+Figura 8.41 Situazione descritta nel Problema 8.47.
+
+CAPITOLO, 9
+
+Radiazione e antenne
+
+Generalità
+
+L’antenna si può definire come un trasduttore tra un’onda guidata che si propaga in
+una linea di trasmissione e un’onda elettromagnetica che si propaga in un mezzo il-
+limitato, che di solito è lo spazio libero, o viceversa. La Figura 9.1 mostra il modo
+in cui un’onda viene irradiata da un’antenna a tromboncino, con la parte svasata
+che agisce da transizione tra la guida d’onda e lo spazio libero. Anche se questa
+funzione può essere svolta da qualsiasi struttura conduttiva o dielettrica, un’antenna
+viene progettata per irradiare o ricevere energia elettromagnetica con proprietà diret-
+tive e di polarizzazione specifiche per l'applicazione in cui viene usata. Inoltre, per
+minimizzare la riflessione nel punto di collegamento tra la linea di trasmissione e
+l’antenna, è importante conoscere l’impedenza dell’antenna e adattarla alla linea di
+trasmissione.
+
+Linee di campo elettrico Figura 9.1
+dell onda irradiata L’antenna come
+x trasduttore tra un'onda
+Antenna elettromagnetica guidata e
+
+un’ onda nello spazio
+libero, sia in trasmissione
+> che in ricezione.
+
+Linea di trasmissione
+
+Generatore Onda EM guidata
+
+Regione di
+transizione
+Onda irradiata
+nello spazio
+(a) Trasmissione libero
+
+Rivelatore Onda EM guidata |
+o ricevitore
+
+Regione di
+transizione “= ‘~’
+Onda
+incidente
+
+(b) Ricezione
+
+[PAG 188]
+(a) Dipolo sottile
+
+5
+
+(f) Riflettore a specchio
+
+Capitoto 9 ~ Radiazione e antenne
+
+A Riflettore |
+Ed . iu.
+
+piano
+circolare
+
+(b) Dipolo biconico (©) Spira (d) Elica (e) Log-periodica
+Alimentazione :
+Striscia radiante  ©Oassiale Substrato Sfasatori
+dielettrico
+Punto
+di
+alimentazione
+(8) Tromba Piano metallico
+di massa
+(h) Microstriscia
+(i) Schiera
+d’antenne
+
+Figura 9.2 Vari tipi di antenne.
+
+Le antenne vengono costruite con una grande varietà di forme e dimensioni, come
+esemplificato in Figura 9.2, e si usano nella trasmissione e ricezione di segnali radio-
+televisivi, nei sistemi di comunicazione via radio, nei telefoni cellulari, nei sistemi ra-
+dar, nei sensori anticollisione per automobili e in molte altre applicazioni. Le proprie-
+tà di radiazione e di impedenza di un’antenna sono dettate dalla sua forma e dimen-
+sione e dal tipo di materiale con cui è realizzata. Le dimensioni di un’antenna sono di
+solito misurate in rapporto alla lunghezza d’onda della radiazione che essa trasmette
+0 riceve: un’antenna a dipolo lunga 1 m che funziona a una lunghezza d’onda di 2 m
+presenta le stesse proprietà di un dipolo lungo 1 cm che funziona a A = 2 cm. Pertan-
+
+_ to, nel seguito della trattazione svolta in questo capitolo si farà spesso riferimento al-
+le dimensioni dell’antenna in unità di lunghezza d’onda.
+
+Reciprocità
+
+La funzione dipendente dalla direzione che caratterizza la distribuzione relativa della
+potenza irradiata da un'antenna è detta diagramma di radiazione dell'antenna. L’an-
+tenna isotropa è un’antenna virtuale che irradia uniformemente in tutte le direzioni, e
+viene spesso usata come antenna di riferimento quando si descrivono le proprietà di
+radiazione delle antenne reali. La maggior parte delle antenne sono dispositivi reci-
+proci, ovvero presentano lo stesso diagramma di radiazione sia in trasmissione che in
+ricezione. Ciò significa che se in trasmissione una data antenna irradia nella direzio-
+ne A una potenza 100 volte superiore rispetto alla direzione B, quando viene usata in
+ricezione essa risulta 100 volte più sensibile alla radiazione elettromagnetica che inci-
+de dalia direzione A rispetto alla B. Tutte le antenne descritte in Figura 9.2 rispettano
+la legge di reciprocità, ma non tutte le antenne sono dispositivi reciproci: la reciproci-
+tà può non essere rispettata nei casi di determinate antenne a stato solido costruite
+ton semiconduttori non lineari o feriti. Lo studio di tali antenne esula dagli scopi di
+questo capitolo, per cui nel prosieguo si presumerà che la reciprocità sia rispettata.
+La proprietà di reciprocità è molto utile in quanto permette di calcolare il diagramma
+di radiazione di un’antenna in condizioni di trasmissione, anche quando l’antenna è
+pensata per funzionare in ricezione.
+
+Generalità
+
+Le prestazioni di un'antenna si valutano sotto due aspetti: le sue proprietà di radiazio-
+
+~ tie e la sua impedenza. Le proprietà di radiazione compréndoni la direttività del suo
+
+diagramma di radiazione e lo stato di polarizzazione associato all’onda irradiata
+quando l’antenna è usata in trasmissione. Questo stato di polarizzazione è detto pola-
+rizzazione dell’antenna: essendo un dispositivo reciproco; un'antenna che opera in ri-
+cezione può estrarre dal campo incidente solo il componente dell’onda il cui campo
+elettrico è parallelo alla direzione di polarizzazione dell’antenna stessa. Il secondo
+aspetto, l’impedenza d'antenna, descrive il trasferimento di potenza dal generatore
+all’antenna quando essa è usata in trasmissione, e dall’altra parte il trasferimento di
+potenza dall’antenna al carico quando essa è usata in ricezione, come si discuterà più
+avanti nel Paragrafo 9.5. Si noti che nella trattazione contenuta nel presente capitolo
+si presumera che l’antenna sia opportunamente adattata alla linea di trasmissione col-
+legata ai suoi terminali, evitando in tal modo le riflessioni e i problemi associati.
+
+Sorgenti della radiazione
+
+Le sorgenti deila radiazione si dividono in due gruppi: le correnti e i campi d’apertu-
+ra. Il dipolo e la spira, indicati in Figura 9.2(a) e 9.2(c), sono esempi di sorgenti di
+corrente: le correnti tempo-varianti che scorrono nei fili conduttori danno origine al
+campo elettromagnetico irradiato. L’antenna a tromba, descritta in Figura 9.2(g), è un
+esempio del secondo gruppo, in quanto i campi elettrici e magnetici nel piano dell’a-
+pertura della tromba servono da sorgenti per il campo irradiato. I campi d'apertura
+sono a loro volta indotti da correnti tempo-varianti che scorrono sulle superfici metal-
+liche della tromba, perciò in ultima analisi la radiazione è in tutti i casi dovuta a cor-
+renti tempo-varianti. La scelta di considerare come sorgenti le correnti o le aperture è
+dettata soltanto dalla maggiore o minore semplicità di calcolo in relazione alla strut-
+tura dell’antenna. Per ciascuno di questi due tipi di sorgente si esamineranno le meto-
+dologie di base per il calcolo del diagramma di radiazione.
+
+Regione di campo lontano
+
+L’onda irradiata da una sorgente puntiforme è di forma sferica e i suoi fronti d’onda
+si espandono verso l’esterno con una rapidità pari alla velocità di fase up, 0 alla velo-
+cità della luce c se il mezzo è lo spazio libero. Se la distanza R tra Fantenna trasmit-
+tente e quella ricevente è sufficientemente grande da poter considerare il fronte d’on-
+da sulla superficie d’apertura ricevente come un’onda piana [Figura 9.3], si dice che
+l'apertura ricevente è situata nella regione di campo lontano della sorgente trasmit-
+tente puntiforme. Questa regione è di particolare importanza in quanto, nella maggior
+parte delle applicazioni, la regione di osservazione che interessa si trova proprio nella
+regione di campo lontano dell’antenna. L’approssimazione di onda piana in campo
+lontano permette l’introduzione di determinate approssimazioni matematiche che
+semplificano il calcolo del campo irradiato e, dall’altra parte, forniscono delle tecni-
+che utili per la sintesi della struttura di antenna adatta a dare origine al diagramma di
+radiazione voluto in campo lontano.
+
+Cor Li
+
+ya R Antenna
+A ricevente
+Antenna
+trasmittente Onda sferica
+
+Approssimazione
+
+ad onda piana
+
+361
+
+Figura 9.3
+Approssimazione di onda
+piana in campo tontano.
+
+[PAG 189]
+362
+
+Figura 9.4
+
+Dipolo corto situato
+nell’origine di un sistema
+in coordinate sferiche.
+
+Capitolo 9 — Radiazione e antenne
+
+Schiere di antenne
+
+Quando varie aritennié sono collegate insieme, la combinazione è detta schiera di an-
+tenne [Figura 9.2(i)], e la schiera nel suo insieme si comporta come un'antenna sola.
+Controllando il modulo e la fase del segnale che alimenta ciascuna antenna, è possi-
+bile modellare il diagramma di radiazione della schiera e orientare elettronicamente
+il lobo. Questi argomenti sono trattati nei Paragrafi da 9.9 a 9.11.
+
+9.1 Dipolo corto
+
+Considerando un’antenna rettilinea come se fosse formata da un numero molto gran-
+de di elementi conduttori di lunghezza infinitesima posti in successione, ciascuno dei
+quali è talmente corto da poter considerare uniforme su tutta la sua lunghezza la cor-
+rente che lo percorre, il campo generato da tutta l’antenna si può ottenere integrando
+i campi prodotti da tutte le antenne infinitesime, tenendo nel dovuto conto le rispetti-
+ve ampiezze e fasi. Si esamineranno dapprima le proprietà di radiazione di una tale
+antenna infinitesima, nota come-dipolo corto, quindi nel Paragrafo 9.3 si estenderan-
+no i risultati ottenuti al calcolo dei campi irradiati da un dipolo a mezz’onda, che è
+comunemente utilizzato come antenna di riferimento in molte applicazioni.
+
+Il dipolo corto, anche detto dipolo hertziano, è formato da un sottile conduttore ret-
+tilineo la cui lunghezza / è molto breve in rapporto alla lunghezza d’onda A: per sod-
+disfare l’ipotesi di corrente uniforme / non deve essere maggiore di \/50. Il filo, che
+è orientato in direzione dell’asse z come descritto in Figura 9.4, è percorso da una
+corrente che varia con legge sinusoidale data da
+
+i(t) = Incoswt= Rebel] (A), (9.1)
+
+dove Jp è l'ampiezza della corrente. Dalla (9.1) si ha che il fasoré della corrente è
+1 = Jy, Anche se la corrente deve annullarsi alle due estremità del dipolo, la si consi-
+dererà costante su tutta la sua lunghezza.
+
+L'approccio usuale per ricavare i campi elettrico e magnetico in un punto Q dello
+spazio [Figura 9.4] dovuti alla radiazione da parte di un elemento di corrente compor-
+ta il calcolo del potenziale vettore ritardato A. Dalla (6.84), il fasore A(R) associato
+al potenziale vettore ritardato a una distanza vettoriale R da un volume v’ che contie-
+ne una distribuzione di corrente con fasore associato J è dato da
+
+~ Jew
+A(R) = = [em (9.2)
+
+dove uo è la permeabilità magnetica dello spazio libero, dal momento che il punto di
+osservazione è nell’aria, e k = w/c = 2/2 è il numero d’onda. Nel caso del dipolo
+
+9.) Dipolo corto
+
+la densità di corrente è semplicemente J = 2(/0/5), dove s è l’area della sezione tra-
+sversa del filo con cui è realizzato il dipolo, dv’ = s dz e Vintervallo di integrazione è
+compreso tra z = —//2 ez = 1/2. In Figura 9.4, la distanza R' tra il punto di osserva-
+zione e un determinato punto lungo il dipolo non è uguale alla distanza R dal centro,
+ma essendo il dipolo molto corto, si può porre R’ ~ R. Dunque
+
+2 RR pif2
+A = si È ipdz
+nen 03)
+al
+7%%î iat R ),
+
+La funzione (eW**/R), detta fattore di propagazione sferica, rende conto del decadi-
+mento del campo con la distanza in ragione di 1/R e anche della variazione di fase
+rappresentata da e AR. La direzione di A è legata alla direzione in cui scorre la cor-
+rente, in questo caso lungo z.
+
+Dal momento che lo scopo della trattazione è di caratterizzare le proprietà direttive
+della potenza irradiata a una distanza fissa R dall’antenna, il sistema in coordinate
+sferiche descritto in Figura 9.5 è considerato il più adatto per presentare i grafici dei
+diagrammi di radiazione dell’antenna; le variabili R, @ e ¢ sono chiamate rispettiva-
+mente distanza, angolo zenitale e angolo azimutale. A tale scopo è necessario scrive-
+re A in termini dei suoi componenti in coordinate sferiche, il che si ottiene con l’ausi-
+lio della (3.65c) esprimendo £ in termini dei versori del sistema in coordinate sferi-
+che:
+
+z= Ros 0 ~ 6siné. (9.4)
+Sostituendo la (9.4) nella (9.3), si ha
+
+~ A n I (RR
+A= (Ros @ — 6sin 6) Halo (>)
+
+4 \R (9.5)
+= RAp +645 + 345,
+9=0°
+È .
+4 G
+
+Direzione(@, d)
+
+Figura 9.5
+Sistema in coordinate
+sferiche.
+
+363
+
+[PAG 190]
+364
+
+Capitolo 9 - Radiazione e antenne
+
+dove :
+~ Jol HR °
+Fy = Hol eos a(S ), (9.62) -
+~ 1 HR
+Jy = — Hh sino ), 0.6)
+Ag =0.
+
+Una volta noti i componenti in coordinate sferiche di A, il passo successivo è sempli-.
+
+ce: si applicano le relazioni nello spazio libero date dalla (6.85) e dalla (6.86),
+f=-—-vxA, (0.72)
+È=- —vxfI, (9.76)
+
+ottenendo le espressioni
+
+= ok sei if.
+Hg =e ee sin 0 (9.8a)
+En 2100 me FR Ioni così : (9.8b)
+dr. (RR) (KR) .
+= RO eli 1 il.
+= _ - =| sin, 9.8
+E] dr Moe KR (RP (RR) in ( 0)
+
+dove 70 = Vuo/eo = 1207 (2) è l'impedenza intrinseca dello spazio libero. I com-
+ponenti che rimangono (Hp, He e Ey) sono ovunque pari a zero. La Figura 9.6 descri-
+ve le linee di campo elettrico dell’ onda irradiata dal dipolo corto.
+
+9.1.1 Approssimazione di campo lontano
+
+Come si è detto in precendenza, nella maggior parte delle applicazioni ciò che inte-
+ressa principalmente è il diagramma di radiazione dell’antenna a grande distanza dal-
+la sorgente. Nel caso del dipolo elettrico, questo corrisponde a distanze R tali che
+R> Ao, allo stesso modo, kR = 2rR/A > 1, Questa condizione consente di trascu-
+rare i termini che variano in ragione di 1/(&R)’ e 1/(kR)" nelle equazioni dalla (9.8a)
+alla (9:8c) in favore di quelli che variano in ragione di 1/kR, da cui si ottengono le
+espressioni in campo lontano
+
+~ fi a ”
+
+ian (1 ) sind (Vi), (9.92)
+
+fi, = =* (aim), (9.98)
+No
+
+Sed Ep è trascurabile. Nel punto di osservazione Q in Figura 9.4, l’onda appare ora si-
+mile a un’onda piana uniforme, con i campi elettrico e magnetico in fase nel tempo,
+legati dall’impedenza intrinseca 70 del mezzo e ortogonali l’uno all’altro e alta dire-
+zione di propagazione (R). Entrambi i campi sono proporzionali a sin? e indipen-
+denti da $, come ci si aspetta in base a considerazioni di simmetria.
+
+Ki
+
+9.1 Dipolo corto
+
+wee ee ‘Asse del dipolo
+
+l
+
+I È Yy)
+
+9.1.2 Densità di potenza
+
+Dati É e H in forma fasoriale, il vettore di Poynting medio dell’onda irradiata, anche
+detto densità di potenza, si può ottenere applicando la (7.101), vale a dire
+
+Sw = $Re(E x ir) (Wim). (9.10)
+
+Nel caso del dipolo corto, applicando la (9.9a) e la (9.9b) si ha
+Sw = RS(R, 8), (9.11)
+
+dove
+
+RP)
+S(R,0) = (=e ) sin?0
+= Spsin20 (W/m’). (9.12)
+
+i diagramma di radiazione di una qualsiasi antenna è descritto in termini dell’inten-
+sità di radiazione normalizzata F(0, $), definita come il rapporto fra la densita di po-
+tenza S(R, 6, 6) e Smax, il massimo valore di S(R, 0, $) a una data distanza R:
+
+S(R, 0,9)
+
+(adimensionale) (9.13)
+Stax
+
+F(0,6)=
+
+365
+
+Figura 9.6
+
+Linéè di'campo elettrico” “>
+che circondano un dipolo
+oscillante in un
+
+determinato istante del
+tempo.
+
+[PAG 191]
+366
+
+Figura 9.7
+Diagrammi di radiazione
+di un dipolo corto.
+
+Capitolo 9 + Radiazione e antenne
+
+Nel caso del dipolo hertziano, la dipendenza da sin? 6 nella (9.12) indica che la radia-
+zione è massima nella direzione trasversale (9 = 7/2) corrispondente al piano dell’a-
+zimuth ed è data da
+
+men
+327? R2
+
+sai (1\?
+= = (3) (Win?),
+
+Smax = So =
+(0:14)
+
+dove si sono applicate le relazioni k = 2x/A ed 70 = 1207. Si noti che Smax è diretta-
+mente proporzionale a J3 e a /?, con / espresso in rapporto alla lunghezza d’onda,
+mentre decade con la distanza in ragione di 1/R2.
+
+(a) Diagramma in elevazione (b) Diagramma azimutale
+
+Dalia definizione di intensità di radiazione normalizzata data dalla (9.13), segue che
+F(0,6) = F(0) = sin? 6. (9.15)
+
+In Figura 9.7 sono tracciati i grafici di F(0) sia nel piano di elevazione, detto anche
+piano 9, che nel piano azimutale, detto piano ¢. Il dipolo non irradia energia lungo la
+direzione del proprio asse e if massimo di radiazione (F = 1) si verifica nella direzio-
+ne trasversale. Dal momento che F'(9) non dipende da ¢, il diagramma ha la forma di
+una ciambella nello spazio 6 — ¢.
+
+Domande di verifica
+
+9.1 In quali condizioni l'antenna è un dispositivo reciproco?
+
+9.2 Quali sono le caratteristiche dell'onda irradiata nella regione di campo lontano
+dell’antenna?
+
+9.3 Quanto breve deve essere la lunghezza di un’antenna filare affinché possa essere
+considerata un dipolo hertziano? Quale ipotesi si formula riguardo alla corrente
+che scorre nel filo?
+
+9.4 Si delineino i passi principali da seguire per mettere in relazione la corrente nel
+filo con la densità di potenza irradiata.
+
+Esercizio 9,1 Un dipolo della lunghezza di 1 m viene eccitato da una corrente di am-
+piezza pari a 5 A alla frequenza di 5 MHz. Qual è il valore della densità di potenza ima-
+diata dail’antenna in direzione trasversale a una distanza di 2 km?
+
+9.2 Caratteristiche di radiazione di un'antenna
+
+9.2 Caratteristiche di radiazione di un'antenna
+
+1l diagramma di radiazione descrive le proprietà direttive in campo lontano di un’an-
+tenna, misurate a una distanza fissa dall’antenna. In generale, il diagramma di radia-
+zione è un grafico tridimensionale che descrive l’intensità del campo irradiato o la
+densità di potenza in funzione della direzione, che viene specificata dall'angolo zeni-
+tale è e dall’angolo azimutale @. In virtù del teorema di reciprocità, un'antenna rice-
+vente ha lo stesso diagramma di radiazione che presenta quando è usata come tra-
+smittente.
+
+Si consideri un’antenna trasmittente posta nell’origine della sfera di osservazione
+descritta in Figura 9.8. La potenza infinitesima irradiata dall’antenna attraverso un’a-
+rea infinitesima dA è
+
+dPrd = Say» dA = Sy 'RdA=SdA (W), (9.16)
+dove S è il componente radiale del vettore di Poynting medio Sy. Nella regione di
+campo lontano di una qualsiasi antenna, Sy è sempre rivolto in direzione radiale. Nel
+sistema di coordinate sferiche si ha
+
+dA = R sin 9d0d$, (9.17)
+
+e l’angolo solido dQ associato a dA, definito come l’area sottesa divisa per R°, è dato
+da
+
+dA
+
+dQ ind0dd (st). (9.18)
+
+R
