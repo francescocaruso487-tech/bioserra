@@ -1,0 +1,1231 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 13/23 ===
+Chars: 44,576 | Offset: 538,706
+
+
+
+In questo capitolo verrano inizialmente esaminate le leggi di Faraday e di Ampère
+e alcune loro applicazioni pratiche. Successivamente si combineranno tra loro le
+equazioni di Maxwell per ottenere delle relazioni tra le cariche e le correnti, p,e J, i
+potenziali scalare e vettore, V e A, e i campi elettromagnetici, E, D, H e B nella si-
+tuazione genericamente tempo-variante e nel caso particolare in cui la dipendenza
+temporale delle grandezze è sinusoidale.
+
+6.1 Legge di Faraday
+
+La stretta connessione tra elettricità e magnetismo fu per la prima volta dimostrata da
+Oersted, il quale mostrò che un filo attraversato da una corrente esercita una forza
+sull’ago di una bussola e che l’ago si orienta sempre nella direzione data dai versore
+È quando la corrente scorre lungo 2: la forza che agisce sull’ago della bussola è dovu-
+ta al campo magnetico generato dalla corrente all’interno del filo. Sulla base di que-
+sta scoperta, Michael Faraday propose la seguente ipotesi: se una corrente è in grado
+di produrre un campo magnetico, allora anche il contrario dovrebbe essere vero, cioé
+un campo magnetico dovrebbe produrre una corrente in un filo.
+
+Per verificare questa ipotesi egli condusse numerosi esperimenti nel suo laboratorio
+a Londra per un periodo di circa 10 anni. Tutti questi esperimenti cercavano di dimo-
+strare che un campo magnetico poteva indurre ina corrente in un filo elettrico. Un la-
+voro simile fu condotto anche da Joseph Henry ad Albany, New York. Furono svolti
+esperimenti posizionando fili in prossimità di magneti permanenti di diverse dimen-
+sioni, oppure facendo scorrere corrente elettrica attraverso un filo mentre un altro filo
+era posto parallelo a esso. L’idea era che il campo magnetico generato dal filo percor-
+so da corrente potesse indurre una corrente nell’altro filo, ma sfortunatamente il risul-
+tato fu negativo. Dopo numerosi tentativi, questi esperimenti diedero il risultato cor-
+retto e sia Faraday che Henry arrivarono alla soluzione pressoché allo stesso tempo
+(1831), anche se indipendentemente l’uno dall’altro. Infatti entrambi scoprirono che
+un campo magnetico puo generare una corrente elettrica in un circuito chiuso solo
+se il flusso magnetico concatenato con la superficie racchiusa dal circuito varia nel
+tempo: la chiave nel processo di induzione è la variazione. Per spiegare come il pro-
+cesso di induzione funzioni si consideri la situazione mostrata in Figura 6.1: una spi-
+ra quadrata è collegata a un galvanometro, che è uno strumento molto sensibile utiliz-
+zato nell’Ottocento per misurare flussi di corrente. La spira è posta in prossimità di
+una bobina collegata a una batteria.
+
+La corrente che scorre nella bobina produce un campo magnetico B le cui linee
+passano attraverso la spira come descritto in Figura 6.1. Nel Paragrafo 5.5 si è defini-
+to il flusso magnetico ® attraverso un circuito come l’integrale del componente nor-
+male del vettore induzione magnetica attraverso l’area racchiusa dal circuito S:
+
+a= [nds (Wb). (6.5)
+
+In condizioni stazionarie la corrente continua nella bobina produce un campo magne-
+tico costante B, il quale a sua volta produce un flusso costante attraverso la spira
+adiacente. Quando ii flusso è costante il galvanometro non misura nessuna corrente.
+Tuttavia, quando la batteria viene scollegata, interrompendo così la corrente nella bo-
+
+6.1 Legge di Faraday
+
+bina, il campo magnetico si riduce a zero e la variazione del flusso magnetico che ne
+consegue provoca una momentanea deflessione dell’ago del galvanometro. Quando
+la batteria è ricollegata il galvanometro rileva nuovamente un momentaneo passaggio
+di corrente, ma in direzione opposta. Pertanto la corrente viene indotta nella spira
+ogni volta che il flusso magnetico varia e la direzione della corrente indotta dipende
+da come varia il flusso, cioè se il flusso è crescente (quando la batteria viene collega-
+ta) o decrescente (quando Ia batteria viene scollegata). Si scopri che una corrente può
+scorrere nel circuito, mentre la batteria è collegata alla bobina, se la spira viene im-
+provvisamente inclinata oppure avvicinata e allontanata dalla bobina. Il movimento
+della spira fa infatti variare il flusso concatenato alla sua superficie S, anche se il
+campo B generato dalla bobina non è cambiato.
+
+Il galvanometro è lo strumento di misura antesignano dei voltmetri e degli ampero-
+metri. Quando un galvanometro rileva un flusso di corrente nella bobina significa
+che è stata indotta una tensione sui terminali dello strumento. Questa tensione è chia-
+mata forza elettromotrice, comunemente abbreviata in ‘‘fem’’ o ‘‘emf’’ e indicata
+con Vemî, € il processo è chiamato induzione elettromagnetica. La forza elettromotri-
+ce in una spira conduttiva chiusa formata da N avvolgimenti è data da:
+
+Vent = N = ve B-ds (V). (6.6)
+
+Per quanto i risultati che portano alla (6.6) siano stati scoperti anche da Henry in mo-
+do indipendente, la formulazione della (6.6) è storicamente attribuita a Faraday ed es-
+sa è nota come legge di Faraday. Il significato del segno meno nella (6.6) verrà spie-
+gato in dettaglio nel prossimo paragrafo.
+
+Si osservi che la derivata nella (6.6) è una derivata totale rispetto al tempo del cam-
+po magnetico B così come della superficie d’area infinitesima ds. Di conseguenza,
+una forza elettromotrice può essere generata in un circuito chiuso conduttore se si è
+in presenza di una delle tre seguenti condizioni:
+
+1. Un campo magnetico tempo-variante concatenato con un circuito stazionario; la
+forza elettromotrice indotta è chiamata emf di trasformazione, V& e.
+
+2. Un circuito mobile con un'area tempo-variante rispetto al componente normale
+di B in un campo statico B; la forza elettromotrice indotta è chiamata emf di movi-
+mento, Ving.
+
+3. Un circuito mobile in un campo magnetico tempo-variante B.
+
+La forza elettromotrice totale è quindi
+
+Vent = Veut + Vento (6.7)
+
+Galvanometro Batteria
+
+43
+
+Figura 6.1
+
+Ti galvanometro indica un
+passaggio di corrente ogni
+volta che il flusso
+magnetico che attraversa
+la spira quadrata cambia
+nel tempo.
+
+[PAG 130]
+244
+
+Figura 6.2
+
+(a) Spira in condizioni
+stazionarie in presenza di
+‘un campo magnetico B(r)
+e (b) circuito equivalente.
+
+Capitolo 6 — Equazioni di Maxwell per campi tempo-varianti
+
+con V2", = 0 se il circuito è stazionario nel caso (1) e Vi; = 0 se B è statico nel ca-
+
+sò © nel terzo Cas6 itéssiiio "dei die termini è nullo. Ognuno di questi casi verrà
+
+preso in esame separatamente nei prossimi paragrafi.
+
+6.2 Circuito stazionario in un campo magnetico
+tempo-variante
+
+Il circuito conduttore formato da un singolo avvolgimento e avente contorno C e area
+S, mostrato in Figura 6.2(a), si trova in presenza di un campo magnetico tempo-va-
+riante B(t). Secondo quanto è stato stabilito precedentemente, la forza elettromotrice
+quando S$ è stazionaria e.il campo è tempo-variante viene chiamata emf di trasforma-
+zione ed è indicata come VE £. Poiché il circuito è stazionario, d/dt nella (6.6) agisce
+solo rispetto al campo B(#). Quindi,
+
+yes = [5 2B as, (68)
+
+dove la derivata totale 4/dt è stata portata all’interno dell’integrale e indicata come
+derivata parziale 9/0, a significare che agisce solo rispetto a B. La forza elettromo-
+trice di trasformazione è la differenza di potenziale che appare sull’apertura tra i ter-
+minali 1 e 2, anche in assenza della resistenza R. Quindi VE = Vi2, dove Viz è la
+tensione a circuito aperto tra i terminali della spira; in condizioni statiche VT, = 0.
+Per il circuito mostrato in Figura 6.2(a) e con la definizione di VE; data dalla (6.8),
+la direzione di ds, che rappresenta la normale alla superficie della spira, può essere
+scelta diretta verso l’alto o verso il basso. Le due scelte corrispondono a designazioni
+opposte delle polarità dei terminali I e 2 in Figura 6.2(a). La relazione tra la direzio-
+ne di ds e la polarità di VT, è governata dalla seguente regola della mano destra: se
+ds punta nella direzione del pollice della mano destra, allora la direzione del contor-
+no C indicata dalle quattro dita è tale da attraversare l’apertura dirigendosi dal termi-
+nale positivo a quello negativo di VE s.
+
+B(1) Crescente
+
+Bind
+
+{a) Spira in un campo B variante
+R
+1 i
+Ay
+la
+R Vert(t)
+
+2
+
+(b) Circuito equivalente
+
+6.2 Circuito stazionario in un campo magnetico tempo-variante
+
+. Se la spira ha resistenza intema R;, il circuito in Figura 6.2(a) può essere ‘Tappresenta-
+
+‘to dal Circuito equivalente mostrato in Figura 6.2(b) € di conseguenza fa corrente che
+scorre attraverso il circuito è
+ye
+
+emf
+~ R+R (6.9)
+
+Per un buon conduttore, R; di solito è molto piccola e può essere trascurata rispetto a
+R, tranne quando R = 0, cioè le estremità della spira sono poste in cortocircuito.
+
+La polarità di V& 5 e quindi la direzione di J è governata dalla legge di Lenz, la qua-
+le afferma che /a corrente nella spira scorre sempre nella direzione tale da opporsi
+alla variazione del flusso magnetico ®{t) che l'ha prodotta. La corrente I induce es-
+sa stessa un campo magnetico Bing a cui corrisponde il flusso Ding. La direzione di
+Bing è governata dalla regola della mano destra: se 7 scorre in senso orario, allora
+Bing punta verso il basso attraverso S e viceversa se J scorre in senso antiorario allora
+Bina punta verso l’alto attraverso S. Se il campo iniziale B(t) è crescente, ovvero
+d®/dt > 0, allora secondo la legge di Lenz J deve avere la direzione indicata in
+Figura 6.2(a) affinché Bing sia in direzione opposta a B(t). Di conseguenza il termina-
+le 2 si troverà a un potenziale maggiore rispetto al terminale 1 eV; avrà valore ne-
+gativo. Tuttavia, se B(t) dovesse rimanere nella stessa direzione ma decrescere in
+modulo, allora d@/dt diventerebbe negativa e la corrente avrebbe verso opposto.
+Allo stesso modo anche il campo indotto Bing avrebbe la stessa direzione di B(‘) in
+modo tale da opporsi alla sua riduzione. In questo caso VE. risulterebbe positiva. È
+importante ricordare che Bigg si oppone alla variazione di B(t) e non necessariamen-
+te a B() stesso.
+
+Nonostante la presenza della piccola apertura tra i terminali 1 e 2 del circuito di
+Figura 6.2(a), la spira verrà considerata come un percorso chiuso avente contorno C.
+Si considera questa approssimazione per poter stabilire un legame tra il campo B e il
+campo elettrico E associato alla forza elettromotrice indotta, vale a dire VZ,¢. In ogni
+punto della spira il campo E è legato alla corrente J che scorre nel circuito. Per un
+contorno C, Vii, è legata a E dalla: relazione
+
+Va, - fra (6.10)
+c
+
+Quando N = 1, cioè per un avvolgimento singolo, uguagliando la (6.8) e la (6.10) si
+
+ottiene
+dB
+Beata ~ [FP ds, 6.11
+f . s Ot (61)
+
+la quale è la forma integrale della legge di Faraday riportata in Tabella 6.1. Si deve
+sempre ricordare che la direzione del contorno C e la direzione di ds sono legate dal-
+la regola della mano destra.
+
+Applicando il teorema di Stokes al membro sinistro della (6.11) si ricava
+
+[ox a= - [Fea 4, (6.12)
+
+ed affinché i due integrali risultino uguali è necessario che gli integrandi siano ugua-
+li, ovvero
+
+VxE= È {legge di Faraday) (6.13)
+
+4S
+
+[PAG 131]
+246
+
+Capitolo 6 - Equazioni di Maxwell per campi tempo-varianti
+
+Questa forma differenziale della legge di Faraday stabilisce che un campo magnetico
+tempo-variante induce un-campo elettrico E il cui rotore è uguale alla derivata tempo-
+rale di B presa con il segno meno. Anche se per ricavare la legge di Faraday si è partiti
+dall’ipotesi della presenza di un circuito fisico, la (6.13) si applica in ogni punto dello
+spazio, indipendentemente dalla presenza di un circuito reale nel punto considerato.
+
+Esempio 6.1. Induttanza in un campo magnetico variante
+
+Un’induttanza è realizzata avvolgendo per N volte un filo conduttore sottile attomo a
+un percorso circolare di raggio a. L’avvolgimento dell’induttanza così ottenuta giace
+nel piano x-y, centrata nell’origine, ed è collegata a una resistenza R, come descritto in
+Figura 6.3. In presenza del campo magnetico B = Bp($2 + 23) sin wt, dove w è la fre-
+quenza angolare, si determini
+
+(a) Il flusso magnetico concatenato a un avvolgimento singolo dell’induttanza;
+
+(©) la emf di trasformazione, quando N = 10, By =0.2T,a=10cmew= 10? rad/s;
+(© la polarità di VT, all’istante t = 0;
+
+(d) la corrente indotta nel circuito per R = 1 kQ, trascurando la resistenza del filo.
+
+VA Ww avvolgimenti
+
+Figura 6.3 Spira circolare formata da N avvolgimenti nel piano x-y. Il campo magnetico è
+B = Bo(92 + 23) sin wt (Esempio 6.1).
+
+Soluzione (a) Il flusso magnetico concatenato con ciascun avvolgimento dell’indut-
+
+tanza è
+a= [Bas
+s
+
+= fo + #3) sinwt] - 2ds = 3a”Bo sin wt.
+S
+(b) Per determinare Vi, si può applicare ia (6.8) oppure applicare direttamente l’e-
+spressione generale data dalla (6.6). Quest'ultima produce
+d®
+Vent = “N=
+=- 4 (3mNa?By sin wt) = —37Nwa? Bo cos wt.
+Per N = 10,@ = 0.1 m,w = 10° rad/s € Bo = 0.2 T siha
+VE = 188.5 cos 10% (V).
+
+(c) AlPistante ¢ = 0, d@/dt > 0 e VE = ~188.5 V. Poiché il flusso è crescente, fa
+corrente J deve avere il verso indicato in Figura 6.3 affinché venga soddisfatta la legge
+di Lenz. Di conseguenza il punto 2 è a un potenziale maggiore del punto 1 e
+
+Vig = Vy Vo = - 188.5 (V).
+
+|
+
+6.2 Circuito stazionario in un campo magnetico tempo-variante
+
+(d) La corrente 7 è data da
+
+Vo — Vr > 188. ; 5
+= ee 88S 09108 = 0.19 60s 10%? (A).
+
+! R 103
+
+Esercizio 6.1 Per la spira mostrata in Figura 6.3, quanto vale VE; se B = 380 cos wt?
+Si giustifichi la risposta.
+
+SOLUZIONE VE; = 0 perché B è ortogonale alla normale ds alla superficie della spira.
+Esercizio 6.2 Si supponga che la spira dell’Esempio 6.1 sia sostituita con una spira
+quadrata formata da 10 avvolgimenti, centrata nell’origine e avente i lati lunghi 20 cm e
+orientati parallelamente agli assi x e y. Se B =: 2Byx” cos 10°? e By = 100 T si calcoli Ja
+corrente che scorre nel circuito.
+
+SOLUZIONE J = —133 sin 10%: (mA).
+
+Esempio 6.2 Legge di Lenz
+
+Si determinino le tensioni 7) e V2 ai capi delle resistenze da 2 2 e 4 2 mostrate in
+Figura 6.4. Il circuito si trova nel piano x-y e ha area pari a 4 m?. L’induzione magneti-
+caè B = —20.3¢ (T) e la resistenza intera del filo può essere trascurata.
+
+Soluzione Il flusso attraverso il circuito è
+
+a= [Bas [(-103) 26
+s s
+034 = -1.2t (Wb),
+
+e la corrispondente emf di trasformazione risulta
+
+ri ei m.
+
+Figura 6.4 Circuito per l’Esempio 6.2.
+
+Poiché il flusso magnetico attraverso il circuito è rivolto lungo la direzione delie z nega-
+tive, cioè a entrare nella pagina, e il suo modulo cresce nel tempo, la legge di Lenz af-
+ferma che la corrente indotta J deve essere rivolta in direzione tale che l’induzione ma-
+gnetica Bing generata da J si contrapponga alla direzione di variazione di ®. Pertanto /
+deve avere il verso mostrato in figura, poiché il campo Bing è rivolto lungo la direzione
+delle z positive nella regione racchiusa dal circuito. Ciò a sua volta significa che V; e
+V2 sono tensioni positive.
+
+247
+
+[PAG 132]
+248
+
+Figura 6.5
+
+In un trasformatore le
+direzioni di /, eZ, sono
+tali che il flusso È
+generato da una delle due
+correnti è opposto a quello
+generato dall'altra. La
+direzione
+dell’avvolgimento in (b) è
+opposta a quella in (a) e
+così risultano anche la
+direzione di J e la polarità
+di 72.
+
+Capitolo 6 - Equazioni di Maxwell per-campi tempo-varianti
+
+La tensione totale pari a 1.2 V è distribuita tra i due resistori in serie. Di conseguenza,
+
+Wy = IR, =0.2x2=04(V),
+V = IR, = 0.2x4=0.8 (V).
+
+Domande di verifica
+
+6.1 Si spieghi la legge di Faraday e la funzione della legge di Lenz.
+
+6.2 In quali circostanze la tensione netta attorno a un circuito chiuso è nulla?
+
+6.3 Si supponga che l’induzione magnetica concatenata al circuito in Figura 6.4
+(Esempio 6.2) sia B= —20.3e”' (T). Quale sarebbe la direzione della corrente,
+relativamente a quella mostrata in Figura 6.4, per > 0? Si giustifichi la risposta.
+
+6.3 Trasformatore ideale
+
+Il trasformatore mostrato in Figura 6.5(a) è formato da due bobine avvolte attomo a
+un nucleo magnetico comune. La bobina del circuito primario ha N avvolgimenti,
+mentre quella del secondario ne ha N». Il circuito primario è collegato a un generato-
+re di tensione altemata V;(t), mentre il secondario a una resistenza di carico Ry. In
+un trasformatore ideale il nucleo magnetico ha permeabilità infinita (4 = co) el flus-
+so magnetico rimane confinato all’interno del nucleo. Le direzioni delle correnti che
+scorrono nei due avvolgimenti, J; e 4, sono definite in modo tale che quando /; eh
+sono entrambe positive il flusso generato da / è opposto a quello generato da h.Il
+trasformatore ha questo nome perché è utilizzato per trasformare correnti, tensioni e
+impedenze tra il circuito primario e quello secondario.
+
+(b)
+
+|
+|
+|
+
+6.3 Trasformatore ideale
+
+Nel circuito primario del trasformatore la sorgente di tensione Vj genera una corrente
+
+1, la quale dà origine a un flusso © nel nucleo magnetico. Tl flusso magnetico ® e la
+tensione V sono legati dalla legge di Faraday:
+
+da
+=-M—_- 6.14
+A=-M de” (6.14)
+e in modo simile nel circuito secondario
+do
+=-N,—. 6.15
+ham, (6.15)
+La combinazione della (6.14) e della (6.15) produce
+Vi N
++=. (6.16
+nam (619
+
+In un trasformatore ideale privo di perdite tutta la potenza istantanea fornita dalla $0r-
+gente connessa al primario è trasferita al carico sul secondario. Pertanto non c’è per-
+dita di potenza nel nucleo e
+
+Pi =P. (6.17)
+Dato che P, = 1, Vi e P = LV, € per quanto espresso dalla (6.16), si ottiene
+
+Cosi, mentre il rapporto tra le tensioni dato dalla (6.16) risulta proporzionale al corri-
+spondente rapporto tra il numero di avvolgimenti, quello tra le correnti è uguale al-
+l’inverso di questo rapporto. Se Ni /Nz = 0.1, V2 dei secondario risulterà pari a 10
+volte V; del primario, ma al tempo stesso / sarà soltanto J, /10.
+
+Il trasformatore mostrato in Figura 6.5(b) è identico a quello in Figura 6.5(a) a ee
+cezione della direzione di avvolgimento del secondario. A causa di questo cambia-
+mento la direzione di / e la polarità di Y in Figura 6.5(b) sono inverse a quelle in
+Figura 6.5(a).
+
+La tensione e la corrente nel circuito secondario di Figura 6.5(a) sono legate dalla
+relazione ¥z = Ry. Visto dal circuito di ingresso, il trasformatore può essere rap-
+presentato da una resistenza di ingresso equivalente R;;, come illustrato in Figura 6.6,
+definita come
+
+a
+"7:
+Utilizzando la (6.16) e la (6.18) si ottiene
+
+VW (N\? my
+a(S). (I) RL 6.20
+Rin = Ge) (È 1 (6.20)
+
+Rin (6.19)
+
+249
+
+Figura 6,6
+
+Circuito equivalente per il
+circuito primario del
+trasformatore.
+
+[PAG 133]
+(i
+
+n°
+Bri
+
+250
+
+Figura 6.7
+
+Filo conduttore che si
+muove in presenza di un
+campo magnetico.
+
+Capitolo 6 - Equazioni di Maxwell per campi tempo-varianti
+
+Quando il carico è un’impedenza Z, e V è una sorgente sinusoidale, la rappresenta-
+zione mediante resistenza di'ingresso può essere estesa a un’impedenza di ingresso
+equivalente Zin, data da
+
+Zin = (ya (6.21)
+
+2
+
+6.4 Conduttore in moto in un campo magnetico statico
+
+Si consideri un filo di lunghezza / che si muove all’intemo di un campo magnetico
+statico B = #8; a velocità costante u, come mostrato in Figura 6.7. Il filo conduttore
+contiene elettroni liberi. Dalla (5.3) la forza magnetica Fm che agisce su una qualsiasi
+particella g che si sposta con velocità u in un campo magnetico B è data da
+
+Fr = 9(u x B). (6.22)
+
+Questa forza magnetica pud essere vista come una forza elettrica equivalente che sa-
+rebbe esercitata sulla particella da un campo elettrico Em dato da
+
+n= cub. (6.23)
+
+Il campo Em generato dal moto delle particelle cariche è chiamato campo elettrico di
+movimento ed è rivolto in direzione perpendicolare al piano che contiene u e B. Per il
+filo mostrato in Figura 6.7, En è rivolto lungo —$. La forza magnetica che agisce su-
+gli elettroni nel filo li fa muovere nella direzione di —Em, cioè verso l’estremità indi-
+cata con | in Figura 6.7.
+
+Questo a sua volta induce una differenza di potenziale tra le estremità 1 e 2, es-
+sendo l’estremità 2-a potenziale maggiore. La tensione indotta è chiamata emf di
+movimento, V3, ed è definita come l’integrale di linea di Em tra le estremità 2 e 1
+del filo,
+
+1 1
+Ving = “ir =/ En di -[ (ux B)- di (6.24)
+2 2
+
+Per il filo conduttore si ha u x B = îu x 280 = —9uBo e dl = $dl. Quindi,
+Ving = Vin = -uBol. (6.25)
+
+© : © 1
+
+En a LL
+
+1 © @|jO © , x
+È u
+| © (o) (0) ©, Linea di campo
+si CERERE a pagine)
+le i te
+movimeno © © ©
+
+64 Conduttore in moto in un campo magnetico statico
+
+In generale, se un qualsiasi segmento di un circuito avente contomo C si muove a ve-
+locità u in una regione di spazio dove è presente un campo magnetico statico B, allo-
+ra la emf di movimento indotta è data da
+
+VB, = fo xB)-d (6.26)
+
+Solo i segmenti del circuito che attraversano le lince di campo magnetico contribui-
+scono a Vine.
+
+Esempio 6.3 Barra scorrevole
+
+Il circuito rettangolare mostrato in Figura 6.8 ha larghezza costante / mentre la sua lun-
+ghezza xo cresce al variare del tempo poiché una barra conduttrice scivola spostandosi a
+velocità costante u in un campo magnetico statico B = 280x; si osservi che B cresce li-
+nearmente con x. La barra parte da x = 0 all’istante ¢ = 0. Si determini la emf di movi-
+mento tra le estremità 1 e 2 e la corrente J che scorre attraverso il resistore R. Si assuma
+che la resistenza del circuito sia R; « R.
+
+Soluzione Questo problema può essere risolto utilizzando l’espressione della emf di
+movimento data dalla (6.26) o applicando la formula generale data dalla legge di
+Faraday. Si dimostrerà che entrambi i metodi portano allo stesso risultato.
+
+La barra scorrevole, essendo l’unica parte del circuito che attraversa le linee del cam-
+po B, è anche l’unica porzione dei contorno 2341 che contribuisce a VT ;. Pertanto, nel
+punto x = Xo,
+
+4
+Ving =Vi2=Vo3 -[ (u x B)-dl
+3
+4
+= [ (3u x ZBoxo) - Hdl = —uBoxol.
+3
+
+La lunghezza del circuito è legata a u dalla relazione xp = ut. Quindi,
+Ving = Boll (V). (6.27)
+
+Siccome B è statico, VT = 0 e si ha Vem = VAI. Per verificare che lo stesso risultato
+può essere ottenuto dalla formulazione generale della legge di Faraday, si parte determi-
+nando il flusso È attraverso la superficie del circuito. Quindi,
+
+= [ (Box) - adxdy (6.28)
+
+Sostituendo xp = ut nella (6.28) e calcolando la derivata rispetto al tempo cambiata di
+segno si ottiene
+
+Vent = == GAT
+
+= Bolt (V),
+
+da a (Bet) (639)
+
+la quale è identica alla (6.27). Dato che Vj è negativa, la corrente / = Byw7lt/R scorre
+nella direzione mostrata in Figura 6.8.
+
+25
+
+[PAG 134]
+252
+
+Capitolo 6 - Equazioni di Maxwell per campi tempo-varianti
+
+&. Oqo ©
+CT == = a y .
+LL.
+
+i R
+Campo
+
+©*+7 magnetico B
+
+7. è olo o
+
+pf_—_—eAA
+
+Figura 6.8 Barra scorrevole in un campo magnetico che cresce linearmente lungo x, cioé
+B = 2Box (Esempio 6.3).
+Esempio 6.4 Spira in moto
+
+La spira rettangolare mostrata in Figura 6.9 si trova nel piano x-y e si allontana dall’ori-
+gine a una velocità u = 95 (m/s) in un campo magnetico la cui espressione è
+
+B(9)= 20.267” (1).
+
+Se R=5 9, si calcoli la corrente / all’istante in cui i lati della spira si trovano in
+Vi =2me ya = 2.5 m. La resistenza della spira è trascurabile.
+
+x R
+Figura 6.9 Spira dell’Esempio 6.4.
+
+Soluzione Poiché u x B è rivolto lungo î, le tensioni vengono indotte solo sui lati
+della spira orientati lungo , cioè il lato tra i punti 1 e 2 e il lato tra i punti 3 e 4. SeB
+fosse uniforme le tensioni indotte sarebbero le stesse su entrambi i lati della spira e la
+tensione netta ai capi della resistenza risulterebbe zero. Nel caso presente, tuttavia, B
+decresce esponenzialmente con y, perciò assume un valore differente sul lato 1-2 rispet-
+to al lato 3-4. Il lato 1-2 è nel punto y; = 2 me il campo magnetico corrispondente è
+
+B(y;) = 20.267!" = 20.2e°°? (1).
+
+La tensione indotta 1, è quindi data da
+
+Va = fiaxB0n) «di
+
+1/2
+= / (95 x 20.2072) - Rae
+ip
+
+= —e794] 267% = -1.637 (V).
+
+64 Conduttore in moto in un campo magnetico statico
+
+In modo analogo,
+Mg nu By) = —5-x 0.2€ 8S x 2-
+=-1.558 (V).
+
+Di conseguenza la corrente ha il verso indicato nella figura e la sua ampiezza è
+
+Vis — Via _ 0.079
+= LO 158 (mA).
+I Zz 5 (mA)
+
+Esempio 6.5 Barra in moto in prossimità di un filo
+
+Ii filo mostrato in Figura 6.10 è situato nello spazio libero e trasporta una corrente
+I= 10 A. Una barra di metallo lunga 30 cm si muove a velocità costante u = 25 m/s.
+Si determini V;2.
+
+BO i ©B
+Figura 6.10 Barra mobile dell’ esempio 6-5.
+Soluzione La corrente / induce un campo magnetico
+= glo
+Bao
+dove r è la distanza radiale dal filo e, sul lato del filo dove è situata la barra metallica, è
+
+è rivolto a entrare nella pagina. Il movimento della barra in presenza del campo B indu-
+ce una emf di movimento data da
+
+10em
+va= / (ux B)-dI
+4
+
+0 cm
+10cm
+-[ (5x32) fdr
+40 om 2ar
+_ Spol oem dr
+27 Saoem 1
+Sx 4a x 1077 x 10 10
+= 77 (45) = 13.9 (nV).
+
+Esercizio 6.3 Si calcoli la corrente / per la spira di Figura 6.9 nell'istante in cui i lati
+paralleli all’asse x si trovano ay, = 4 m e y = 4.5 m. Inoltre si inverta la direzione del
+moto in modo tale che u = —¥5 (m/s).
+
+SoLuzioneE J = ~13 (mA).
+
+253
+
+[PAG 135]
+254
+
+Capitolo 6 ~ Equazioni di Maxwell per campi tempo-varianti
+
+Esercizio 6.4 Si supponga che la spira di Figura 6.9 venga girata in modo tale che la
+sua superficie risulti parallela al piano x-z. Quanto sarebbe / in quel caso?
+
+Sotuzione /=0.
+
+Domande di verifica
+
+6.4 Si supponga che la barra conduttrice di Figura 6.8 scorra senza attrito e che i due
+lati orizzontali del circuito siano molto lunghi. Pertanto, se si imprime una spinta
+iniziale alla barra, essa dovrebbe continuare a muoversi a velocità costante e il
+suo moto dovrebbe generare energia elettrica sotto forma di una emf indotta, sen-
+za soluzione di continuità. Questo ragionamento è valido? In caso di risposta ne-
+gativa, perché no? Come è possibile generare energia elettrica senza dover fomi-
+re un’uguale quantita di energia con altri mezzi?
+
+6.5 La corrente che scorre nella barra di Figura 6.10 è una corrente continua? Si esa-
+minino le forze che agiscono sulla carica g alle estremità 1 e 2 e si faccia il con-
+fronto.
+
+6.5 Generatore elettrico
+
+Un generatore elettrico è l’esatto opposto di un motore elettrico. Il principio di fun-
+zionamento di entrambi questi strumenti può essere spiegato con l’aiuto della Figura
+6.11. Un magnete permanente è utilizzato per generare un campo magnetico statico
+B nello spazio tra i suoi due poli. Quando attraverso la spira conduttrice si fa scorrere
+una corrente come mostrato in Figura 6.11(a), essa scorre in direzioni opposte nei
+segmenti 1-2 e 3-4 della spira. Le forze magnetiche indotte sui due segmenti sono
+quindi opposte, generando una coppia che mette in rotazione la spira attorno al suo
+asse. Pertanto, in un motore l'energia elettrica prodotta da un generatore di tensione è
+convertita in energia meccanica mediante la rotazione di una spira, la quale potrebbe
+essere accoppiata a pulegge, ingranaggi o altri oggetti mobili.
+
+Se invece di far scorrere una corrente all’interno di una spira per farla ruotare, la
+spira è messa in moto da una forza esterna, il suo movimento nel campo magnetico
+genera una forza elettromotrice di movimento VT e, come mostrato in Figura 6.11(b).
+Quindi il motore è stato trasformato in un generatore e l'energia meccanica viene
+convertita in energia elettrica.
+
+Ora verrà esaminato in maggior dettaglio il principio di funzionamento del genera-
+tore elettrico utilizzando il sistema di riferimento mostrato in Figura 6.12. Il campo
+magnetico è dato da
+
+B=, (6.30)
+
+e l’asse di rotazione della spira conduttrice giace lungo l’asse x. I segmenti 1-2 e 3-4
+della spira hanno entrambi lunghezza / e intersecano le linee di flusso magnetico
+mentre la spira ruota. Gli altri due segmenti hanno entrambi larghezza w e non attra-
+versano mai le linee di campo mentre la spira ruota. Pertanto solo i segmenti 1-2 e 3-
+4 contribuiscono alla generazione della emf di movimento, V®;.
+
+Mentre la spira ruota con velocità angolare w attorno al suo asse, il segmento 1-2 si
+sposta con una velocità u la cui espressione è
+
+=»
+
+a=
+
+w
+wa (6.31)
+
+dove ii, la normale alla superficie della spira, forma un angolo a con l’asse z. Quindi
+
+»
+
+ixZ=îsina. (6.32)
+
+|
+|
+|
+
+6.5 Generatore elettrico 255
+
+Figura 6.11
+
+Schema di funzionamento
+di un motore in c.a. e di un
+generatore in c.a. In (a)la
+coppia magnetica sui fili
+mette in rotazione la spira,
+mentre in (b) il circuito
+rotante genera una forza
+elettromotrice.
+
+Asse di
+
+rotazione (a) Motore in c.a.
+
+rotazione
+
+(b) Generatore in c.a.
+
+z Figura 6.12
+
+Une spira rotante in un
+campo magnetico genera
+una forza elettromotrice.
+
+Anelli di
+contatto
+Normale aila
+superficie
+della spira
+
+[PAG 136]
+256
+
+Capitolo 6 — Equazioni di Maxwell per campi tempo-varianti
+
+Il segmento 3-4 si muove a velocità —u. Applicando la (6.26), in conformità con la
+scelta di fi, si ottiene - i
+
+1 3
+Ving = Fu = f (nxB)-41+ f (uxB)-al
+2 4
+
+= [ (aw) x 2Bo| i (633)
+
+12
+
+—1p2
++ É, (cis) x 28] “Ede.
+Inserendo la (6.32) nella (6.33) si ha
+va = wlwBo sina = AwBo sina, (6.34)
+dove A = wi è la superficie della spira. L’angolo a è legato a w dalla relazione
+a=wt + Co (6.35)
+
+dove Cp è una costante determinata dalle condizioni iniziali. Per esempio, se a = 0
+all’istante 1 = 0 allora Co = 0. In generale
+Vine = AwBo sin (wt +Co) (V). (6.36)
+
+emi
+
+Questo risultato può anche essere ottenuto applicando la formulazione generale della
+legge di Faraday data dalla (6.6). Il flusso concatenato con la superficie della spira è
+
+a= [pas | 2B ds
+Ss s
+
+= Bod cos a (6.37)
+= BoA cos (wt + Co),
+e
+db d
+Vent = alta [Bod cos (wt + Co)] (6.38)
+
+= AwBx sin (wt + Co),
+
+che è identica al risultato ottenuto dalla (6.36).
+
+Domande di verifica
+
+6.6 Si confronti il principio di funzionamento di un motore in c.a. con quello di un
+generatore in c.a.
+
+6.7 La spira in rotazione di Figura 6.12 è formata da un solo avvolgimento. Quale sa-
+rebbe la forza elettromotrice generata da una spira formata da 10 avvolgimenti?
+
+6.8 Il flusso magnetico concatenato con la spira descritta in Figura 6.12 è massimo
+quando a = 0 (spira nel piano x-y) eppure, secondo la (6.34), la forza elettromo-
+trice indotta è nulla quando a = 0. AI contrario, quando a =-90° il flusso conca-
+tenato con la spira è nullo, ma VI; è massima. Questo comportamento è confor-
+me alle attese? Perché?
+
+6.7 Corrente di spostamento
+
+6.6. Conduttore in moto in un campo magnetico
+tempo-variante
+
+Nel caso generale di una spira conduttiva ad avvolgimento singolo in moto in un
+
+campo magnetico tempo-variante, la forza elettromotrice indotta è la somma di una
+
+componente di trasformazione e di una componente di movimento. Pertanto, dalla
+somma della (6.8) e della (6.26) si ottiene
+
+Vent = Vine + Vert
+
+= fe a (6.39)
+
+dB
+=- [Frode fu) dl
+
+Vemg si può ottenere anche dall’espressione generale della legge di Faraday:
+
+dd
+Vege = == Ff Bods, (6.40)
+
+Si può infatti dimostrare matematicamente che il membro destro della (6.39) è equi-
+valente al membro destro della (6.40). Per uno specifico problema, la scelta di usare
+Ja (6.39) oppure la (6.40) dipende di solito da quale delle due è più facile da applica-
+re. Se la spira è formata da N avvolgimenti, i termini ai membri destri della (6.39) e
+della (6.40) vanno moltiplicati per N.
+
+Esempio 6.6 Generatore elettrico
+
+Si ricavi la tensione indotta quando la spira rotante del generatore elettrico nel
+Paragrafo 6.5 è immersa in un campo magnetico B = 280 cos wt, supponendo che
+a = Oall’instante = 0.
+
+Soluzione In questo caso il flusso ® è dato dalla (6.37), sostituendo. By con
+Bo cos wt. Pertanto
+
+© = BoA cos*ut,
+
+_ 52
+dt
+
+a 2
+=", (Bod cos *wr)
+= 2BoAw cos wt sin wt = BoAw sin 2wt.
+
+Vemt =
+
+6.7 Corrente di spostamento
+
+Dalla Tabella 6.1, la legge di Ampére-in forma differenziale è data da
+
+vxn=z+4
+dt
+
+(legge di Ampère). (6.41)
+
+257
+
+[PAG 137]
+258
+
+Figura 6.13
+
+La corrente di
+spostamento Jog nel
+materiale isolante del
+condensatore è uguale alla
+corrente di conduzione i,
+nel filo.
+
+Capitolo 6 — Equazioni di Maxwell per campi tempo-variantî
+
+Svolgendo l’integrale di superficie di entrambi i membri della (6.41) su un’arbitraria
+superficie aperta S delimitata dal contorno C, si ha
+
+(om a (1-44 Dias. (6.42)
+Ss S is Ot
+
+L’integrale di superficie di J è uguale alla corrente di conduzione /, che score attra-
+verso S e l'integrale di superficie di V x H si può trasformare in un integrale di linea
+di H sul contorno C sfruttando il teorema di Stokes. Dunque
+
+fa -d=L+ / Dos (legge di Ampère) (6.43)
+C is Ot
+
+Il secondo termine al membro destro della (6.43) deve essere espresso in ampere per
+essere dimensionalmente omogeneo alla corrente /.. La corrente dovuta a questo ter-
+mine, essendo proporzionale alla derivata nel tempo dello spostamento elettrico D,
+anche detto densità di flusso elettrico, è chiamata corrente di spostamento ed è indi-
+cata con Jy. Vale a dire
+
+58 fwd [2 as, (6.44)
+Is is Ot
+
+dove Ja = OD/dt rappresenta la densità di corrente di spostamento. Inserendo la
+(6.44), si ottiene
+
+frazsib=i, (6.45)
+c
+
+dove / è la corrente complessiva. Nell’elettrostatica si ha OD/Ot = 0 e dunque
+Ia = 0e/ = L. Il concetto di corrente di spostamento fu introdotto per la prima volta
+da James Clerk Maxwell nel 1873 nell’ambito del suo tentativo, coronato da succes-
+so, di formulare una teoria unificata sul collegamento tra campi elettrici e magnetici
+in condizioni tempo-varianti.
+
+Per illustrare il significato fisico della corrente di spostamento Jy si usa di solito co-
+me esempio il condensatore a facce piane e parallele: il semplice circuito descritto in
+Figura 6.13 è formato da un condensatore e da un generatore in c.a. la cui tensione
+V(t) è data da
+
+V:(t) = Vocoswt (V). (6.46)
+
+h=he
+
+Superficie
+immaginaria $;
+LAG)
+PES Superficie
+
+| immaginaria $y
+
+y
+
+6.7 Corrente di spostamento
+
+Secondo la (6.45), la corrente complessiva che scorre attraverso una superficie arbi-
+traria è formata in generale da una corrente di conduzione £, e da una corrente di spo-
+stamento Jy. Per ricavare J, e Za si considerano le due seguenti superfici immaginarie:
+(1) la sezione trasversa S; del filo conduttore e (2) la sezione trasversa Sp del conden-
+satore in Figura 6.13. Le correnti di conduzione e di spostamento nel filo sono indica-
+te rispettivamente con Jj, € Zia, mentre quelle attraverso il condensatore sono indicate
+con Jo. € bhe
+
+All’intemo di un conduttore perfetto si ha D = E = 0, dunque per la (6.44) si ha
+Jig = 0 nel filo. Per quanto riguarda /1c, è noto dalla teoria dei circuiti che essa è le-
+gata alla tensione Y, ai capi del condensatore dalla
+
+dV.
+dt
+
+dove si è applicata la condizione V, = V,(t). Essendo Zia = 0, ia corrente complessi-
+va nel filoè J; = Ae = —CVow sin wt.
+
+Saranno ora considerate le correnti che scorrono attraverso la superficie Sz in
+Figura 6.13, che è un’immaginaria superficie aperta parallela alle armature del con-
+densatore e situata tra di esse. Lo spazio tra le due armature, ciascuna delle quali ha
+area A, è riempito con un materiale dielettrico perfetto di permittività e. Dal momen-
+to che le cariche elettriche non possono muoversi fisicamente attraverso un mezzo
+dielettrico, tra le armature del condensatore non può verificarsi conduzione e dunque
+bo = 0. Per ricavare La si applica la (6.44): per la trattazione esposta nell’Esempio
+4.11, il campo elettrico E all’intemo del dielettrico è legato alla tensione V, ai capi
+del condensatore dalla
+
+qe =C
+
+=C Lom cos wt) = —CVw sin wt, (6.47)
+
+gle _ 2M
+=j-=jy— , 6.48
+E=y at cosas (6.48)
+dove d è la distanza tra le armature e $ è la direzione che va dall’armatura a potenzia-
+le maggiore a quella a potenziale minore. La corrente di spostamento Ly nella dire-
+zione mostrata in Figura 6.13 si ottiene applicando la (6.44) con ds = fds:
+
+aD
+= [Spas
+
+= [ È (0 cos ut)| * (¥ds) (6.49)
+
+‘A ,
+= -> Vow sin wt = —CVow sin wt,
+
+dove si è sfruttata la relazione C = ¢A/d per calcolare la capacità del condensatore a
+facce piane e parallele. L'espressione di L4 nella regione di dielettrico compresa tra
+le armature è identica a quella data dalla (6.47) per la corrente di conduzione J), nel
+filo. Il fatto che queste due correnti siano uguali garantisce la continuità del flusso di
+corrente attraverso il circuito. Anche se la corrente di spostamento in concreto non
+trasporta carica, tuttavia si comporta come una corrente reale.
+
+Nell'esempio del condensatore, si è considerato il filo come un conduttore perfetto
+e si è ipotizzato che tra le armature del condensatore ci fosse un dielettrico perfetto.
+Se il filo ha conducibilità finita 0,,, allora D nel filo è diversa da zero e dunque la cor-
+rente J; è formata da una corrente di conduzione /;, e da una corrente di spostamento
+Ia, vale a dire che J) = [ie + Zia. Analogamente, se il materiale dielettrico ha condu-
+cibilità ca diversa da zero, allora le cariche sono in grado di scorrere tra un’armatura
+e l’altra e 4, è diversa da zero. In tal caso, la corrente complessiva che scorre attra-
+verso il condensatore è 1 = Ig + fa ed è uguale alla corrente complessiva nei filo,
+cioè = Db.
+
+289
+
+[PAG 138]
+260
+
+Capitolo 6 - Equazioni di Maxwell per campi tempo-varianti
+
+Esempio 6.7 Densità di corrente di spostamento
+
+La Corrente di conduzione che scorre attraverso ua filo con conducibilità o = 2 x 107°”
+S/m e permittività relativa ¢, = 1 è data da I, = 2 sinwt (mA). Sew = 10° rad/s, si rica-
+vi la corrente di spostamento.
+
+Soluzione La corrente di conduzione è J, = JA = GEA, dove A è la sezione trasver-
+sa del filo. Dunque
+
+i _ 2x10 sino
+
+B= 4 Fxi0A
+-10
+LI since (V/m).
+A
+Applicando la (6.44) con D = é£, si ottiene
+Ig = A
+= eA0E/0t
+d (1x10)
+
+= A, (E) sinwt
+
+= ew x 107? cos wt = 0.885 x 107 coswt (A),
+
+dove si sono inseriti i valori di w = 10° rad/s e di e = eo = 8.85 x 107? F/m. Si noti
+che J, e Za sono in quadratura di fase, cioè sono sfasate di-90° l’una rispetto all’altra.
+Inoltre, /1.è inferiore a J di circa nove ordini di grandezza, ragione per cui di solito si
+trascura la corrente di spostamento nei conduttori.
+
+Esercizio 6.5 Un conduttore -di bassa qualità è caratterizzato da una conducibilità
+a = 100 (S/m) e una permittività e = 4e0. A quale frequenza angolare w l'ampiezza del-
+la densità di corrente di conduzione J è uguale all’ampiezza della densità di corrente di
+spostamento Ja?
+
+SOLUZIONE w = 2.82 x 10! (rad/s).
+
+6.8. Condizioni al contorno elettromagnetiche
+
+Nei Capitoli 4 e 5 si è applicata la forma integraie delle equazioni di Maxwell in con-
+dizioni stazionarie per ottenere le condizioni al contorno che i componenti tangenti e
+normali di E, D, B e H devono soddisfare all’interfaccia tra due mezzi adiacenti.
+Queste condizioni sono date nel Paragrafo 4.9 per E e per D, e nel Paragrafo 5.7 per
+B e per H. Nel caso dinamico, le equazioni di Maxwell (Tabella 6.1) comprendono
+due termini nuovi, 0B/dt nella legge di Faraday e 0D/0t nella legge di Ampère.
+Nonostante ciò, le condizioni al contorno derivate in precedenza per l’elettrostatica
+e la magnetostatica rimangono valide anche per i campi tempo-varianti. Ciò accade
+in quanto, se si applicano i procedimenti delineati nei paragrafi prima menzionati, si
+scopre che fe combinazioni dei nuovi termini si annullano quando le aree delle spire
+wrettangolari in Figura 4.18 e in Figura 5.24 tendono a zero.
+
+Per facilitamne l’uso, l’insieme completo delle condizioni al contorno elettromagne-
+tiche è dettagliato in Tabella 6.2. x
+
+|
+
+6.9 Relazione di continuità carica-corrente
+
+Tabella 6.2 Condizioni al contomo per i campi elettrici e magnetici.
+
+Componente di campo —Forma generale Mezzo1  Mezzo2 Mezzo1 Mezzo2
+Dielettrico Dielettrico Dielettrico Conduttore
+
+E tangente fin x (Ei E2)=0 En = Ea Ey = Ex =0
+D normale fiz «(Dy — Da) = ps Din — Dan = ps Din=ps Don =O
+H tangente fia x (Hy — Ha) = ds Fy = Hor Hy sds Ha <0
+B normale fig - (By — Bz) = 0 Bin = Bon Bin = Be, = 0
+
+Note: (1) as è la densità superficiale di carica sul contomo; (2) J, è la densità superficiale di corrente sul
+contomo; (3) i componenti normali di tutti i campi sono rivolti lungo if, il versore uscente dal mezzo 2;
+(4) En = Ea implica che i componenti tangenti sono uguali in modulo e paralleli in direzione; (5) la dire-
+zione di J; è ortogonale a (Hi — Hz).
+
+Domande di verifica
+
+6.9 Quando una corrente di conduzione scorre attraverso un materiale, un certo nu-
+mero di cariche entrano nel materiale a una estremità e un numero uguale esco-
+no dall’altra estremità. Nel caso di una corrente di spostamento attraverso un
+dielettrico perfetto, qual è la situazione?
+
+6.10 Si verifichi che la forma integrale della legge di Ampère data dalla (6.43) im-
+plica la condizione al contomo di continuità del componente tangente di H sul
+confine tra due mezzi dielettrici.
+
+6.9 Relazione di continuità carica-corrente
+
+In condizioni stazionarie, la densità di carica p, e la densità di corrente J in un deter-
+minato punto del materiale sono del tutto indipendenti l’una dall’altra, mentre ciò
+non è vero nel caso tempo-variante. Per dimostrare la relazione tra py e J, si conside-
+ra dapprima un volume arbitrario v delimitato da una superficie chiusa 5, come de-.
+scritto in Figura 6.14; la carica positiva netta contenuta in v è pari a Q. Dal momento
+che, per la legge di conservazione della carica elettrica (Paragrafo 1.2.2) la carica non
+può essere né creata né distrutta; l’unico modo in cui Q può aumentare è in virtù di
+un flusso netto entrante di carica positiva nel volume v e; analogamente, perché Q di-
+minuisca deve esistere un flusso netto uscente di carica positiva dal volume v. I flussi
+entranti e uscenti di carica formano correnti che scorrono rispettivamente dentro e
+fuori da v attraverso la superficie S, e si definisce con / la corrente netta uscente da v
+attraverso S. Di conseguenza, / è uguale al tasso di variazione negativa di Q:
+
+dQ d
+[=- =a |, ped, (6.50)
+
+dove py è la densità volumetrica di carica all’interno di v. Secondo la (4.12), la cor-
+rente è definita anche come il flusso -del vettore densità di corrente J uscente attraver-
+so la superficie S, dunque i
+
+i d
+frs- - 5 [ oa. (6.51)
+
+Applicando il teorema della divergenza dato dalla (3.98), si può trasformare l’integra-
+le di superficie di J nell’integrale di volume della sua divergenza V - J, da cui si ot-
+
+tiene
+fis [v-adv=—% | ad (6.52)
+8 ly di fy
+
+Mi
+
+[PAG 139]
+262
+
+Figura 6.14
+
+La corrente complessiva
+che scorre fuori dal
+volume v è uguale al
+flusso della densità di
+corrente J attraverso la
+superficie S, che a sua
+volta è uguale al tasso di
+diminuzione della carica
+contenuta in v.
+
+Figura 6.15
+
+La legge di Kirchhoff per
+le correnti afferma che la
+somma algebrica di tutte
+de correnti uscenti da un
+nodo è zero.
+
+Capitolo 6 — Equazioni di Maxwell per campi tempo-varianti
+
+Perun volume v stazionario nel tempo, la derivata temporale si applica solo a py, per-
+tanto può essere portata sotto il segno di integrale, esprimendola come derivata par-
+
+ziale di py:
+py
+V-Idy = —
+/ ly / Di dy. (6.53)
+
+Affinché gli integrali di volume nei due membri della (6.53) siano uguali per qualsia-
+si volume v, i loro integrandi devono essere uguali in ogni punto di v, pertanto
+
+_ 5m
+V-J=-Fe, (6.54)
+
+che è nota come relazione di continuita carica-corrente 0 più semplicemente come
+equazione di continuita della carica.
+
+Se la densità volumetrica di carica contenuta in un volume infinitesimo Av, per
+esempio un piccolo cilindro, non è funzione del tempo (cioè dp,/0t = 0), ciò signifi
+ca che la corrente netta uscente da Ay è zero, oppure analogamente che la corrente
+entrante in Ay è uguale alla corrente uscente da esso. In tal caso la (6.54) diviene
+
+V.J=0, (6.55)
+e la sua forma integrale equivalente, dalia (6.51), è
+
+fra =0 (Legge di Kirchhoff per le correnti) (6.56)
+
+u significato della (6.56) si può esaminare considerando un nodo che collega due o
+più rami di un circuito elettrico. Per quanto piccolo sia, il nodo ha un volume v deli-
+mitato da una superficie S. Il nodo descritto in Figura 6.15 è stato disegnato a forma
+di cubo e le sue dimensioni sono state volutamente esagerate per facilitare la presente
+trattazione. Il nodo ha sei facce, o superfici, che insieme formano la superficie chiusa
+5 associata all’integrale dato dalla (6.56); l'integrale su ciascuna faccia rappresenta la
+corrente uscente da essa. Pertanto la (6.56) si può riscrivere come
+
+> l;=0 (Legge di Kirchhoff per le correnti) (6.57)
+
+6.10 Dispersione delle cariche libere in un conduttore
+
+dove J; è la corrente uscente attraverso la faccia i-esima. Nel caso del nodo in Figura
+6.15, la (6.57) si traduce nella (; +4 +7) = 0. La forma generale della (6.57)
+esprime la legge di Kirchhoff per le correnti, che afferma che in un circuito elettrico
+la somma algebrica di tutte le correnti uscenti da un nodo é zero.
+
+6.10 Dispersione delle cariche libere in un conduttore
