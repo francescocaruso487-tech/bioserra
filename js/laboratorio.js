@@ -1112,8 +1112,11 @@ async function cervBuildSystem(queryKeywords) {
       if (pList.length) {
         sys += '=== PIANTE IN COLTIVAZIONE ===\n';
         pList.forEach(function(p) {
-          sys += p.nome + ': fase ' + (p.fase||'?') + ', giorno ' + (p.giorno_ciclo||'?');
-          if (p.giorno_raccolta_stimato) sys += ', raccolta stimata ' + p.giorno_raccolta_stimato;
+          var gg = (p.giorni_vita != null) ? p.giorni_vita : (p.giorno_ciclo || '?');
+          sys += p.nome + ': fase ' + (p.fase||'?') + ', giorno ' + gg;
+          var racc = p.data_raccolta || p.giorno_raccolta_stimato;
+          if (racc) sys += ', raccolta stimata ' + racc;
+          if (typeof p.giorni_a_raccolta === 'number') sys += ' (tra ' + p.giorni_a_raccolta + ' gg)';
           sys += '\n';
         });
         sys += '\n';
@@ -2150,5 +2153,6 @@ function labSbCosine(a, b) {
   var denom = Math.sqrt(normA) * Math.sqrt(normB);
   return denom === 0 ? 0 : dot / denom;
 }
+
 
 
