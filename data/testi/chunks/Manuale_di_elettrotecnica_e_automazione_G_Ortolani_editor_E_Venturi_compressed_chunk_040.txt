@@ -1,0 +1,2121 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 40/116 ===
+Chars: 44,874 | Offset: 1,721,145
+
+
+
+[PAG 885]
+IMPIANTI  ELETTRICI                                               X-35
+Le loro caratteristiche tecniche sono riportate nelle Tab. X.4.3 e X.4.4, tratte dalle
+norme CEI-UNEL 01435 e 01436.
+Corde di alluminio-acciaio
+Sono le uniche utilizzate per le linee di alta tensione, avendo un elevato valore della
+resistenza a trazione e un valore contenuto del peso unitario. Le loro caratteristiche tecni-
+che sono riportate nella Tab. X.4.5, tratta dalla norma CEI UNEL 01434.
+Riporto alla temperatura di funzionamento
+Il riporto della resistenza unitaria dal valore r20 a 20 °C al valore r relativo alla tempe-
+ratura di funzionamento  si effettua con la relazione seguente:
+(X.4.1)
+Il fattore di riporto K si calcola nel modo seguente:
+–  per conduttori e corde di rame:
+(X.4.2)
+–  per conduttori e corde d'alluminio o di lega di alluminio:
+(X.4.3)
+Tab. X.4.5   Caratteristiche tecniche dei conduttori a corda di alluminio-acciaio per linee
+elettriche aeree (CEI-UNEL 01434)
+Grandezza
+Formazione
+(numero fili  diame-
+tro)
+[n°  mm]
+Sezione teorica totale
+[mm2]
+Diametro 
+della  
+corda
+[mm]
+Massa 
+teorica 
+totale
+[kg/km]
+Resistenza 
+elettrica teo-
+rica 
+a 20 °C
+[/km]
+alluminio
+acciaio
+all.
+  acc.
+  tot.
+42/6+1
+63,00
+13,00
+42,41
+7,069
+49,48
+9
+171,5
+0,6766
+68/12+7
+122,68
+72,68
+67,69
+39,49
+107,2
+13,4
+496,3
+0,4266
+128/26+7
+262,50
+71,95
+127,6
+20,90
+148,5
+15,85
+516,2
+0,2261
+191/26+7
+263,06
+72,38
+191,2
+31,14
+222,3
+19,38
+772,0
+0,1509
+212/30+7
+303,00
+73,00
+212,0
+49,48
+261,5
+21
+973,7
+0,1362
+265/26+7
+263,60
+72,80
+264,6
+43,10
+307,7
+22,8
+1068
+0,1090
+349/30+19
+303,85
+192,30
+349,2
+78,94
+428,1
+26,9
+1586
+0,08274
+382/54+7
+543,00
+73,00
+381,7
+49,48
+431,2
+27
+1443
+0,07573
+416/30+19
+304,20
+192,50
+415,6
+93,26
+508,9
+29,3
+1881
+0,06952
+434/54+7
+543,20
+73,20
+434,2
+56,29
+490,5
+28,8
+1641
+0,06656
+520/54+19
+543,50
+192,10
+519,5
+65,80
+585,3
+31,5
+1953
+0,05564
+629/54+19
+543,85
+192,30
+628,6
+78,94
+707,5
+34,6
+2358
+0,04598
+748/54+19
+544,20
+192,50
+748,1
+93,26
+841,4
+37,7
+2801
+0,03864
+1657/150 +37
+1503,75
+372,68
+1657
+208,7
+1866
+56,26
+6269
+0,01758
+r
+r20K
+=
+K
+234,5
+
++
+234,5
+20
++
+--------------------------
+=
+K
+232,5
+
++
+232,5
+20
++
+--------------------------
+=
+
+[PAG 886]
+X-36
+  IMPIANTI ELETTRICI 
+Esempio 1
+Un conduttore a corda di rame crudo di sezione nominale 50 mm2 ha una resistenza
+unitaria a 20 °C di 0,3663 /km. Supponendo che il conduttore funzioni alla temperatura
+di 40 °C, la sua resistenza elettrica sarà uguale a:
+4.2  Confronto tra conduttori diversi
+Due conduttori della stessa lunghezza l, di sezione S1 ed S2 e di resistività 1 e 2 pre-
+sentano la stessa resistenza elettrica quando il rapporto tra le loro sezioni è uguale a quello
+tra le resistività:
+(X.4.4)
+Indicando con d i diametri, con p i pesi per unità di lunghezza, con  i pesi specifici,
+con  i carichi di rottura a trazione unitari e con F quelli totali, valgono le seguenti rela-
+zioni, a parità di resistenza elettrica:
+(X.4.5)
+(X.4.6)
+(X.4.7)
+Nella Tab. X.4.6 sono riportati i valori dei rapporti calcolati confrontando fra loro le
+seguenti coppie di conduttori: alluminio crudo e lega di alluminio rispetto al rame crudo,
+lega di alluminio rispetto all'alluminio crudo.
+Dai valori dei rapporti si nota che, a parità di resistenza elettrica, un conduttore in
+alluminio deve avere una sezione maggiore del 58% rispetto al rame, però ha un peso di
+circa la metà; lo svantaggio consiste nel fatto che presenta una resistenza a trazione
+minore, pari a circa il 67% di quella del rame.
+Si vede anche la convenienza dell'uso della lega di alluminio rispetto alle corde in
+alluminio: la maggiorazione di sezione e di peso è trascurabile, mentre aumenta a più del
+doppio la resistenza a trazione.
+Tab. X.4.6   Confronto tra conduttori diversi
+Coppie a confronto
+S2S1
+d2d1
+p2p1
+F2F1
+Alluminio crudo (2) - rame crudo (1)
+1,58
+1,26
+0,480
+0,671
+Lega di alluminio (2) - rame crudo (1)
+1,82
+1,35
+0,553
+1,47
+Lega di alluminio (2) - alluminio crudo (1)
+1,15
+1,07
+1,15
+2,18
+r
+r20K
+0,3663 234,5
+40
++
+234,5
+20
++
+--------------------------
+0,3951 
+km
+-------
+=
+=
+=
+S2
+S1
+-----
+2
+1
+-----
+=
+d2
+d1
+-----
+2
+1
+-----
+=
+p2
+p1
+-----
+2 2
+1 1
+-----------
+=
+F2
+F1
+-----
+2 2
+1 1
+-------------
+=
+
+[PAG 887]
+IMPIANTI  ELETTRICI                                               X-37
+4.3  Isolatori per linee aeree
+Nelle linee aeree con conduttori nudi gli isolatori servono a collegare meccanicamente
+i conduttori al sostegno, assicurando inoltre l'isolamento elettrico tra le parti a diversa ten-
+sione. Le caratteristiche degli isolatori e le prove di collaudo sono stabilite dalle norme
+CEI emanate dal CT 36.
+In funzione del modo di attacco al sostegno gli isolatori si dividono in rigidi e a
+sospensione. I primi sono formati da un unico elemento fissato rigidamente al sostegno e
+vengono impiegati per linee aeree con tensioni non superiori a 20  30 kV. Quelli a
+sospensione, utilizzati per le linee in alta tensione, sono formati da una o due catene di
+singoli elementi, agganciati tra loro, del tipo a cappa e perno (Fig. X.4.1), costituiti da
+una cappa in ghisa malleabile a cui è fissato l'elemento isolante, in vetro.
+Fig. X.4.1   Isolatore a cappa e perno.
+Ogni isolatore ha una cavità superiore, detta orbita, e un perno inferiore che si innesta
+nell'orbita dell'isolatore sottostante. I due elementi estremi della catena sono fissati,
+rispettivamente, al sostegno e al conduttore, realizzando così un collegamento abbastanza
+flessibile che resiste bene agli sforzi meccanici. Il numero degli elementi impiegati è fun-
+zione della tensione: catene di 8  10 elementi sono adatti per linee a 132 kV; per linee a
+380 kV ne occorrono 20  24.
+Per la costruzione degli isolatori si impiega vetro o porcellana: il primo per gli isola-
+tori sospesi, entrambi per quelli rigidi.
+Grandezze caratteristiche degli isolatori a cappa e perno sono l'altezza H e il diametro
+D di ogni elemento, le tensioni che provocano l'arco elettrico a secco o sotto pioggia, la
+tensione di perforazione dell'elemento, il carico di rottura a trazione.
+4.4  Sostegni per linee aeree
+I sostegni usati per le linee aeree possono essere di vario tipo: pali in legno, pali in
+cemento armato centrifugato, pali tubolari in acciaio a stelo unico, pali in acciaio a tralic-
+cio, di cui i primi sono poco usati in Italia.
+I pali in cemento armato centrifugato vengono usati per le linee di media tensione;
+hanno un rapporto peso/altezza piuttosto elevato e presentano difficoltà di trasporto; in
+compenso richiedono una minima manutenzione.
+Per le linee di bassa e media tensione e per quelle di contatto di ferrovie e tranvie ven-
+gono usati i pali tubolari a stelo unico, costruiti con acciaio ad alta resistenza con sezione
+decrescente dalla base alla cima. Vengono prodotti con altezze fino a circa 18 m, con peso
+unitario da 120 a 1000 N/m, a seconda del diametro. I pali in acciaio a traliccio sono gli
+unici usati in Italia per le linee a 380, 220 e 132 kV. Hanno una struttura reticolare, realiz-
+zata con profilati di acciaio zincato con sezione a L, formata da quattro montanti che
+costituiscono un tronco di piramide a base quadrata, dai tralicci di collegamento e dalle
+mensole a cui sono sospesi gli isolatori. I principali vantaggi del loro impiego consistono
+nella notevole altezza a cui si può arrivare, nella possibilità di ottenere la forma deside-
+D
+H
+
+[PAG 888]
+X-38
+  IMPIANTI ELETTRICI 
+rata, nella facilità di trasporto (si montano sul posto), nel favorevole rapporto peso/
+altezza; hanno bisogno di essere verniciati ogni 8  10 anni.
+4.5  Condotti sbarre 
+I condotti sbarre (detti anche blindosbarre) sono apparecchiature prefabbricate di
+serie, formate da barre conduttrici isolate tra loro e verso l'esterno, che servono per costi-
+tuire condutture elettriche per sistemi di bassa tensione, in sostituzione dei cavi elettrici
+(Fig. X.4.2). Vengono montati orizzontalmente e hanno in dotazione delle cassette di deri-
+vazione coordinate, provviste di fusibili o di interruttori automatici di protezione dalle
+sovracorrenti, poste a intervalli regolari e dalle quali si effettuano le discese agli utilizza-
+tori, mediante cavi elettrici.
+Fig. X.4.2   Costituzione e parti componenti un condotto sbarre (Schneider Electric spa).
+I condotti sbarre vengono utilizzati prevalentemente in ambito industriale per l'ali-
+mentazione di carichi trifasi con elevato assorbimento di corrente; sono anche molto dif-
+fuse le canalizzazioni prefabbricate per l'alimentazione di apparecchi illuminanti
+(blindolux), con ridotti valori della corrente nominale (25, 40 A).
+Nella Tab. X.4.7 sono riportate le caratteristiche elettriche principali di condotti sbarre
+da 25 a 800 A.
+Tab. X.4.7   Principali caratteristiche elettriche di condotti sbarre da 25 a 800 A (Schnei-
+der Electric spa, serie Canalis KBA, Canalis KN e Canalis KS)
+Conduttori
+[numero]
+Corrente 
+nominale
+[A]
+Tensione 
+nominale 
+d'isolamento
+[V]
+Resistenza per condut-
+tore con corrente nomi-
+nale e a = 35 °C
+[m/m]
+Reattanza per 
+conduttore
+[m/m]
+Impedenza per 
+conduttore
+[m/m]
+2 e 4
+25
+660
+8,45
+0,21
+8,45
+2 e 4
+40
+660
+3,60
+0,18
+3,66
+4
+40
+500
+5,55
+0,2
+5,55
+4
+63
+500
+2,24
+0,2
+2,25
+4
+100
+500
+0,94
+0,2
+0,96
+4
+100
+660
+1,395
+0,457
+1,468
+4
+160
+660
+0,661
+0,233
+0,701
+4
+250
+660
+0,294
+0,192
+0,351
+4
+400
+660
+0,190
+0,112
+0,221
+4
+500
+660
+0,123
+0,116
+0,170
+4
+630
+660
+0,101
+0,070
+0,123
+4
+800
+660
+0,061
+0,071
+0,094
+2
+1
+3 4
+5
+6
+1. involucro in lamiera
+2. barre conduttrici in alluminio
+3. isolatore in poliestere rinforzato
+con fibra di vetro
+4. conduttore di protezione (PE)
+5. presa di derivazione
+6. blocco di giunzione
+
+[PAG 889]
+IMPIANTI  ELETTRICI                                               X-39
+4.6  Classificazione e struttura dei cavi elettrici
+Per cavo elettrico si intende un insieme di conduttori riuniti tra loro (può anche essere
+uno solo), ciascuno isolato rispetto agli altri e verso l'esterno. Ogni conduttore con il pro-
+prio isolante costituisce un'anima del cavo.
+I cavi elettrici per energia sono normalizzati dal CT 20 del CEI; le prescrizioni per le
+linee in cavo sono contenute nella norma CEI 11-17.
+I cavi vengono distinti in funzione della tensione di esercizio del sistema in cui pos-
+sono essere impiegati (cavi per bassa, media e alta tensione), in base al numero di anime
+(cavi unipolari e multipolari), a seconda del tipo di isolante impiegato (termoplastico, ela-
+stomerico, minerale, carta impregnata) e se sono conformi o meno ai documenti di armo-
+nizzazione del CENELEC (cavi armonizzati e non armonizzati).
+La struttura di un cavo varia a seconda del numero delle anime e della tensione; nella
+Fig. X.4.3 è rappresentata la sezione di un cavo tripolare, con evidenziate le varie parti
+che lo costituiscono, anche se non tutte le parti sono contemporaneamente presenti in tutti
+i tipi di cavo.
+Fig. X.4.3   Struttura di un cavo tripolare con conduttori rotondi o settoriali.
+Conduttori
+Sono in rame (più raramente in alluminio), a filo unico oppure a corda, di forma
+rotonda o settoriale. I conduttori di rame possono essere nudi o rivestiti con uno strato di
+metallo (stagno, lega di stagno o lega di piombo).
+A seconda della loro flessibilità vengono classificati in conduttori di classe 1 (per cavi
+a installazione fissa, rigidi a filo unico), di classe 2 (per cavi a installazione fissa, rigidi a
+corda), di classe 5 (per cavi a installazione fissa o mobile, a corda, flessibili), di classe 6
+(per cavi a installazione fissa o mobile, a corda, molto flessibili).
+Isolante
+Ha la funzione di isolare i conduttori tra loro e verso massa e dalle sue caratteristiche
+dipendono in larga parte le prestazioni del cavo. I principali materiali utilizzati sono i
+seguenti:
+–  resine termoplastiche, quali il polivinilcloruro (PVC) e il polietilene reticolato
+(XLPE), usati per cavi di bassa tensione e di media tensione (solo l'XLPE);
+–  elastomeri sintetici, come la gomma etilenpropilenica (EPR), usata per cavi di
+bassa e media tensione, e quella siliconica; non viene più usata la gomma naturale;
+–  isolanti minerali a base di ossido di magnesio, usati in impianti di bassa tensione
+quando sono necessarie buone caratteristiche di resistenza al fuoco;
+–  carta impregnata per i cavi da usare nei sistemi in media e alta tensione, distinti a
+loro volta in base al tipo di impregnante usato (normali, a olio fluido, a pressione di gas).
+Materiale di riempimento
+È presente solo nei cavi multipolari di elevata sezione e serve per riempire gli inter-
+stizi tra le anime, conferendo al cavo la forma rotonda.
+conduttore
+settoriale
+conduttore
+isolante
+schermo
+materiale di riempimento
+isolante esterno (cintura)
+eventuale armatura metallica
+guaina esterna
+
+[PAG 890]
+X-40
+  IMPIANTI ELETTRICI 
+Schermo
+Lo schermo serve a modificare il campo elettrico che si forma nello strato di isolante,
+facendo in modo che le linee di forza del campo assumano un andamento radiale attorno
+ai conduttori (cavi a campo radiale), in modo da limitare le sollecitazioni dielettriche
+sull'isolante.
+Viene realizzato mediante un sottile nastro di rame che può essere avvolto
+sull'insieme delle anime o singolarmente su ogni anima; la seconda soluzione è più effi-
+cace.
+Isolante esterno, armatura metallica, guaina esterna
+L'isolante esterno (cintura) serve per aumentare l'isolamento verso massa oppure fa da
+guaina per proteggere la schermatura.
+L'armatura metallica viene usata per i cavi che, a causa del tipo di posa, sono soggetti
+a elevate sollecitazioni meccaniche; può essere formata da un tubo metallico in piombo o
+alluminio e da fili o nastri d'acciaio. La guaina esterna ha il compito di proteggere il cavo
+dagli agenti ambientali (luce, agenti chimici, umidità ecc.); può essere sia metallica o, più
+comunemente, in resine o elastomeri sintetici.
+4.7  Caratteristiche funzionali dei cavi elettrici
+Le caratteristiche principali dei cavi elettrici riguardano le tensioni d'isolamento, le
+temperature caratteristiche, la portata e il comportamento in caso d'incendio.
+Tensioni nominali d'isolamento
+Ogni cavo è caratterizzato dalle seguenti tensioni:
+–  U0 è la tensione nominale di riferimento per l'isolamento a frequenza di esercizio
+tra ogni conduttore isolato e la terra, espressa in kilovolt efficaci;
+–  U è la tensione nominale di riferimento per l'isolamento a frequenza di esercizio tra
+due conduttori isolati qualsiasi del cavo, espressa in kilovolt efficaci;
+–  Up è la tensione di tenuta a impulso atmosferico, espressa in kilovolt di cresta; essa
+deve essere superiore al massimo valore delle sovratensioni a impulso atmosferico che
+possono presumibilmente verificarsi in esercizio nel cavo stesso.
+Le tensioni U0 e U sono convenzionalmente denominate tensioni di isolamento e i loro
+valori sono normalizzati. Esse sostituiscono il grado di isolamento del cavo, utilizzato
+nella precedente designazione. I valori delle tensioni di isolamento del cavo adatto a una
+determinata installazione devono essere scelti in funzione della tensione nominale del
+sistema (e della corrispondente tensione massima di riferimento per l'isolamento per i
+sistemi con Un da 3 kV in poi) e tenendo presente la possibilità che nel sistema si verifichi
+il funzionamento, a causa di guasti, con una fase a terra, nel qual caso aumenta la tensione
+verso terra delle altre due fasi.
+A questo proposito la norma CEI 11-17 divide i sistemi elettrici in due categorie.
+–  Categoria A: sistemi per i quali il funzionamento con una fase a terra è permesso
+solo per breve tempo, generalmente non superiore a 1 h. In circostanze eccezionali e a
+patto che si usino cavi con anime schermate singolarmente o con cintura rinforzata, si può
+tollerare una durata superiore per ogni guasto, con un massimo di otto ore. I casi di fun-
+zionamento con una fase a terra devono comunque essere poco frequenti e avere una
+durata annuale complessiva non superiore a 20 h.
+–  Categoria B: comprende i sistemi che non rientrano nella categoria A, per i quali il
+funzionamento anormale con una fase a terra, pur non prolungandosi per tempi illimitati,
+può durare più di alcune ore per volta e più di 20 h in un anno.
+La scelta delle tensioni d'isolamento dei cavi, in base alla norma CEI 11-17, va fatta
+secondo quanto indicato nelle Tabb. X.4.8 e X.4.9, rispettivamente per sistemi trifase con
+
+[PAG 891]
+IMPIANTI  ELETTRICI                                               X-41
+tensione massima fino a 52 kV e superiore a 52 kV. In quest'ultimo caso si presuppone
+che i relativi sistemi possano funzionare con una fase a terra solo per tempi brevissimi e
+che siano quindi assimilabili a quelli della categoria A.
+Tab. X.4.8   Scelta dei cavi per sistemi trifase con tensione massima fino a 52 kV (norma
+CEI 11-17)
+Caratteristiche dei sistemi trifase
+Tensioni d'isolamento dei cavi da usare
+Tensione 
+nominale
+[kV]
+Tensione 
+massima
+[kV]
+Categoria
+Durata massima 
+per ogni singolo 
+caso di funziona-
+mento con fase a 
+terra
+Con schermo sulle 
+singole anime
+U0
+[kV]
+Senza schermo sulle 
+singole anime
+U0/U
+[kV]
+ 0,3
+/
+B
+oltre 8 h
+/
+0,3/0,3
+0,5
+/
+A
+B
+breve tempo
+oltre 8 h
+/
+/
+0,3/0,5
+0,45/0,75
+0,75
+/
+A
+B
+breve tempo
+oltre 8 h
+/
+/
+0,45/0,75
+0,6/1
+1
+/
+B
+oltre 8 h
+0,6
+0,6/1
+3
+3,6
+B
+oltre 8 h
+2,3
+2,3/3
+6
+7,2
+A
+B
+fino a 1 h
+fino a 8 h
+oltre 8 h
+3,6
+3,6
+6
+3,6/6
+6/6
+6/6
+10
+12
+A
+B
+fino a 1 h
+fino a 8 h
+oltre 8 h
+6
+6
+8,7
+6/10
+8,7/10
+8,7/10
+15
+17,5
+A
+B
+fino a 1 h
+fino a 8 h
+oltre 8 h
+8,7
+8,7
+12
+8,7/15
+12/15
+12/15
+20
+24
+A
+B
+fino a 8 h
+oltre 8 h
+12
+15
+/
+/
+30
+36
+A
+B
+fino a 8 h
+oltre 8 h
+18
+26
+/
+/
+45
+52
+A
+B
+fino a 1 h
+oltre 1 h
+26
+36
+/
+/
+Tab. X.4.9   Scelta dei cavi per sistemi trifase con tensione massima superiore a 52 kV
+(norma CEI 11-17)
+Caratteristiche dei sistemi trifase
+Tensione d'isolamento dei cavi da usare
+Tensione nominale 
+[kV]
+Tensione massima 
+[kV]
+U0
+[kV]
+66
+132
+150
+220
+380
+72,5
+145
+170
+245
+420
+36
+76
+87
+130
+230
+
+[PAG 892]
+X-42
+  IMPIANTI ELETTRICI 
+Temperature caratteristiche
+In funzione del tipo di isolante usato si definiscono due temperature caratteristiche dei
+cavi elettrici, intese come valori massimi ammissibili della temperatura che possono assu-
+mere i conduttori, precisamente:
+–  temperatura massima ammissibile in regime permanente (o temperatura di servi-
+zio), riferita al funzionamento in condizioni ordinarie con corrente pressoché costante,
+escludendo il funzionamento durante il transitorio termico o in regime ciclico;
+–  temperatura massima di corto circuito, riferita al funzionamento in condizioni di
+corto circuito, prima che intervengano le protezioni e durante il quale si ha un riscalda-
+mento intenso ma di breve durata del cavo.
+I valori di queste temperature influiscono sulle prestazioni del cavo e sono stabilite
+dalla normativa (Tab. X.4.10).
+Portata in regime permanente
+La portata Iz di un cavo in regime permanente è la massima intensità di corrente che
+può circolare in ogni conduttore, in determinate condizioni di posa, senza che la tempera-
+tura superi quella massima ammissibile dall'isolante.
+In generale la portata è espressa dalla relazione:
+(X.4.8)
+dove a e b sono dei coefficienti dipendenti dalle caratteristiche del cavo e da quelle
+dell'ambiente in cui il cavo è posato. In particolare il fattore a rappresenta il valore della
+Tab. X.4.10   Valori massimi ammissibili delle temperature di servizio e di corto circuito,
+in funzione del tipo di isolante del cavo (norma CEI 11-17)
+Isolante del cavo
+Massima temperatura 
+di servizio
+[°C]
+Massima temperatura 
+di corto circuito
+[°C]
+Carta impregnata con olio fluido
+90 (1)
+220 (1)
+Carta impregnata 
+50  80 (2)
+200 (1)
+Gomma ordinaria, G1, EI1
+60
+200
+Gomma etilenpropilenica (G5, G7 e G10)
+90
+250 (4)
+PVC di qualità R, R2, TI1
+70 (5)
+160 (3) (5)
+PVC di qualità Rf, TI2
+70 (5)
+150 (3) (5)
+Polietilene reticolato
+90
+250 (4)
+Gomma siliconica (G4, EI2)
+180
+350
+Gomma G9
+90 (5)
+250
+(1) Valori provvisori in quanto non specificati da norme CEI.
+(2) In funzione della tensione nominale e del tipo di miscela impregnante.
+(3) Per sezioni  240 mm2 queste temperature devono essere ridotte a 140 °C.
+(4) Per sezioni > 240 mm2 e tensioni nominali 0,6/1 kV questa temperatura deve essere ridotta a
+220 °C se il cavo è munito di una guaina di PVC.
+(5) Quando si adottano provvedimenti per limitare i danni da incendio di cavi, per i cavi isolati in
+PVC privi di rivestimento protettivo la temperatura di servizio va ridotta a 55 °C e quella mas-
+sima di corto circuito a 140 °C. Per i cavi isolati in gomma G9 privi di rivestimento protettivo la
+temperatura di servizio va ridotta a 70 °C.
+Iz
+aSb
+=
+
+[PAG 893]
+IMPIANTI  ELETTRICI                                               X-43
+portata riferita alla sezione unitaria (per S = 1 mm2 si ha Iz = a).
+Sul valore della portata influiscono i seguenti fattori:
+–  sezione del conduttore: al suo aumentare la portata aumenta, anche se in misura
+meno che proporzionale; di conseguenza la densità di corrente diminuisce con la sezione;
+–  tipo di isolante: influisce sul valore della temperatura di servizio, aumentando la
+quale diventa maggiore la portata in quanto è possibile aumentare la potenza persa per
+effetto Joule;
+–  temperatura ambiente: al suo aumentare la portata diminuisce in quanto si riduce il
+salto termico sfruttabile, cioè la differenza fra la temperatura di servizio e quella
+ambiente;
+–  resistività termica del mezzo: la portata diminuisce al suo aumentare, dato che
+diventa più difficoltoso lo smaltimento del calore prodotto nel cavo;
+–  resistività elettrica del conduttore: una maggiore resistività corrisponde a una
+minore portata in quanto tende a far aumentare la quantità di calore prodotto; indicando
+con Iz1 e Iz2 le portate relative a due cavi con conduttori di resistività 1 e 2, a parità di
+altre condizioni vale la relazione:
+(X.4.9)
+–  numero di conduttori del cavo o di cavi raggruppati: all'aumentare del numero dei
+conduttori facenti parte dello stesso cavo o del numero dei cavi posti vicini tra loro
+occorre diminuire la portata, per tener conto dell'effetto di prossimità, dovuto al fatto che
+ogni conduttore o cavo si scalda sia per effetto della propria corrente sia per il calore rice-
+vuto dai conduttori o dai cavi vicini;
+–  profondità di posa: per i cavi interrati l'aumento della profondità di posa fa diminui-
+re la portata in quanto rende più difficoltoso lo smaltimento del calore.
+Comportamento in caso d'incendio
+Nei riguardi del comportamento in caso d'incendio, i cavi elettrici vengono sottoposti
+a numerose prove, le cui modalità operative sono stabilite dalle relative norme CEI. In
+particolare si distinguono:
+–  cavi non propaganti la fiamma, per i quali le modalità di prova riguardano il sin-
+golo cavo o conduttore isolato e sono stabilite dalla norma CEI 20-35;
+–  cavi non propaganti l'incendio, per i quali le prove vengono effettuate su un fascio
+di spezzoni dello stesso cavo, di specificata lunghezza e quantità di materiale non metal-
+lico, secondo quanto specificato dalla norma CEI 20-22;
+–  cavi resistenti al fuoco, provati secondo le modalità stabilite dalla norma CEI 20-
+36; devono conservare inalterate le loro caratteristiche d'isolamento per un tempo specifi-
+cato;
+–  cavi a basso sviluppo di fumi e gas tossici e corrosivi, le cui modalità di prova sono
+stabilite dalla norma CEI 20-37; le quantità di prodotti emessi vanno confrontati con i
+valori di riferimento indicati dalla norma CEI 20-38.
+4.8  Sigle di designazione e altri contrassegni
+Le caratteristiche costruttive e funzionali dei cavi elettrici per energia vengono indi-
+cate con sigle alfanumeriche, composte cioè da lettere e numeri secondo un ordine presta-
+bilito, distinguendo tra i cavi armonizzati, unificati nell'ambito della Comunità Europea
+secondo i documenti di armonizzazione del CENELEC, e i cavi non armonizzati, ossia
+non normalizzati a livello europeo.
+Iz2
+Iz1
+------
+1
+2
+-----
+=
+
+[PAG 894]
+X-44
+  IMPIANTI ELETTRICI 
+Cavi armonizzati
+Per questi cavi le sigle sono stabilite dalla norma CEI 20-27. I simboli principali e la
+loro sequenza sono riportati nella Tab. X.4.11. Queste sigle si applicano anche ai cavi che,
+pur normalizzati a livello europeo, non rispondono integralmente ai criteri di armonizza-
+zione del CENELEC, come i tipi A, N e J.
+(1) CC sta per il codice del paese di origine (IT per l'Italia)
+Tab. X.4.11   Sigle di designazione dei cavi armonizzati (da norma CEI 20-27)
+Sequenza
+Simboli
+Riferimento alle
+norme
+H:
+A:
+CC-N(1):
+J:
+tipo armonizzato,  rispondente integralmente ai criteri di armoniz-
+zazione del CENELEC
+tipo nazionale autorizzato
+tipo nazionale
+tipo conforme alle norme IEC
+Tensioni nominali
+00:
+01:
+03:
+05:
+07:
+1:
+U0/U minori di 100 V
+U0/U compresi tra 100 e 300 V
+U0/U = 300/300 V
+U0/U = 300/500 V
+U0/U = 450/750 V
+U0/U = 600/1000 V
+Isolanti e guaine
+non metalliche
+R:
+B:
+S:
+V:
+V2:
+M:
+N:
+E:
+T:
+X:
+elastomero generico
+gomma etilenpropilenica
+gomma siliconica
+polivinilcloruro (PVC)
+PVC per temperatura di 90 °C
+isolante minerale
+policloroprene
+polietilene
+treccia tessile
+polietilene reticolato
+Armature metalli-
+che
+L:
+Z2; Z4;
+Z6:
+Y2; Y3:
+A:
+F:
+K:
+lega di piombo
+fili, nastri, trecce d'acciaio
+fili, piattine di alluminio
+conduttore concentrico di alluminio
+guaina d'acciaio
+guaina di zinco
+Costruzioni spe-
+ciali
+Niente:
+H:
+H2:
+D3:
+D4:
+cavo rotondo
+cavo piatto divisibile
+cavo piatto non divisibile
+organo portante al centro del cavo
+cavo auto portante
+Materiale del con-
+duttore
+Niente:
+ A:
+ Z:
+rame
+alluminio
+materiale speciale
+Forma del condut-
+tore
+ F:
+ H:
+ K:
+ R:
+ S:
+ U:
+corda flessibile (servizio mobile)
+corda molto flessibile (servizio mobile)
+corda flessibile di cavo per installazione fissa
+corda rigida rotonda
+corda rigida settoriale
+filo unico rotondo
+Numero e sezione
+dei conduttori
+:
+G:
+Numero delle anime
+simbolo moltiplicativo per cavo senza conduttore di protezione
+con conduttore di protezione
+Sezione del conduttore in mm2
+
+[PAG 895]
+IMPIANTI  ELETTRICI                                               X-45
+Esempi di designazione
+H07RNF 3G1,5: cavo armonizzato, 450/750 V, isolato in gomma, guaina in policloroprene, con-
+duttori di rame a corda flessibile, 3 anime con sezione del conduttore 1,5 mm2, con conduttore di pro-
+tezione per il collegamento a terra. ITN1VVK 5G6: cavo nazionale (Italia), 600/1000 V, con
+isolante e guaina in PVC, conduttore di rame a corda flessibile per installazione fissa, 5 anime con
+conduttore di sezione 6 mm2, con conduttore di protezione
+Cavi non armonizzati
+La designazione per i cavi non normalizzati in ambito europeo è stabilita dalla norma
+CEI-UNEL 35011 e prevede la sequenza e i principali simboli riportati nella Tab. X.4.12.
+Tab. X.4.12   Sigle di designazione dei cavi non armonizzati (da norma CEI-UNEL
+35011)
+Sequenza
+Simboli
+Formazione del
+cavo
+Numero anime  sezione dei conduttori in mm2; la lettera G, in
+sostituzione del segno , indica la presenza del conduttore di prote-
+zione per il collegamento a terra
+Materiale e flessi-
+bilità dei condut-
+tori
+Niente:
+A:
+U:
+S:
+R:
+M:
+F:
+FF:
+rame
+alluminio (questa lettera precede la formazione)
+filo unico rotondo
+corda settoriale
+corda rigida rotonda
+corda semirigida rotonda
+corda flessibile rotonda
+corda molto flessibile rotonda
+Tipo di isolante
+C:
+G:
+G7:
+G9:
+G10:
+R:
+R2:
+M:
+E4:
+carta impregnata
+gomma comune (naturale e/o sintetica)
+gomma etilenpropilenica (qualità G7)
+elastomero reticolato qualità G9
+elastomero reticolato qualità G10
+polivinilcloruro (PVC) di qualità comune
+PVC di qualità R2
+isolante minerale
+polietilene reticolato di qualità E4
+Schermo
+H:
+H1:
+H2:
+AC:
+ carta metallizzata
+ nastro di rame
+ treccia o calza di rame
+ conduttore concentrico di alluminio
+Forma e struttura
+del cavo
+Niente:
+D:
+O:
+X:
+W:
+cavo unipolare
+anime affiancate parallele
+anime riunite, cavo rotondo
+anime a elica visibile
+anime parallele con solco intermedio
+Guaine e rivesti-
+menti protettivi
+G:
+K:
+R:
+E:
+T:
+A:
+L:
+P:
+gomma
+policloroprene
+polivinilcloruro
+polietilene
+treccia tessile
+alluminio
+tubo in lega di piombo
+tubo in piombo
+Grado di isola-
+mento, tensioni
+nominali
+È indicato preceduto dalla barretta
+Per i cavi con U0  0,6 kV vengono indicate le tensioni U0U pre-
+cedute da un trattino
+
+[PAG 896]
+X-46
+  IMPIANTI ELETTRICI 
+Esempi di designazione
+3  70  RG7H1OR32: cavo tripolare senza conduttore di protezione, conduttori di rame di sezione
+70 mm2 a corda rigida, isolamento in gomma etilenpropilenica di qualità G7, con schermo in rame, di
+forma rotonda, guaina in PVC, grado di isolamento 32. 5G10RR2OR0,61 kV: cavo con cinque
+anime con conduttore di protezione, conduttori di rame di sezione 10 mm2, a corda rigida rotonda,
+isolato in PVC di qualità R2, di forma rotonda, guaina in PVC, con tensioni nominali 0,61 kV.
+Altri contrassegni
+Altre caratteristiche dei cavi si possono desumere da ulteriori segni convenzionali.
+–  Colori delle anime: per cavi multipolari aventi U0/U  0,6/1 kV le norme CEI rac-
+comandano i colori marrone e nero per le fasi, blu chiaro per il neutro, giallo-verde per il
+conduttore di protezione. La Tab. X.4.13 riporta i colori distintivi delle anime; per i cavi
+unipolari la dicitura altri colori indica i seguenti dieci: nero, blu chiaro (neutro), marrone,
+grigio, arancione, rosa, rosso, turchese, violetto, bianco.
+–  Contrassegno IMQ: è indicato dall'etichetta IMQ o da un filo di cotone incorporato
+sotto l'isolante e riportante, in alfabeto Morse, la sigla IMQ.
+–  Conformità alle norme armonizzate: può essere comprovata da un filo tessile con la
+successione ripetuta dei colori nero-rosso-giallo o dalla sigla HAR preceduta da quella
+nazionale (IEMMEQU < HAR > per l'Italia).
+4.9  Parametri elettrici dei cavi
+Sono la resistenza elettrica, la reattanza induttiva e la suscettanza capacitiva, dato che
+la conduttanza è normalmente trascurabile. I loro valori unitari, riferiti a 1 km di linea, si
+Tab. X.4.13   Colori distintivi delle anime dei cavi (da norma CEI-UNEL 00722)
+1
+2
+3
+4
+Numero delle anime del cavo
+Colori distintivi delle anime
+Totale
+Progressivo
+Cavi con conduttore
+di protezione
+Cavi senza conduttore
+di protezione
+1
+
+giallo/verde
+altri colori
+2
+I
+II
+
+
+blu chiaro
+marrone o nero (1)
+3
+I
+II
+III
+giallo/verde
+marrone o nero (1)
+blu chiaro
+blu chiaro
+marrone
+nero
+4
+I
+II
+III
+IV
+giallo/verde
+nero
+blu chiaro
+marrone
+blu chiaro
+marrone
+nero
+nero
+5
+I
+II
+III
+IV
+V
+giallo/verde
+nero
+blu chiaro
+marrone
+nero
+blu chiaro
+marrone
+nero
+nero
+nero
+n. > 5
+I
+II e rimanenti
+giallo/verde
+nero
+con numerazione progressiva
+oppure (invariante)
+blu chiaro o nero
+ o blu chiaro
+nero
+con numerazione progressiva
+oppure (invariante)
+marrone o nero
+Nota (1) il colore marrone è riservato ai cavi flessibili; il colore nero è riservato ai cavi per posa
+fissa con conduttori rigidi e flessibili
+
+[PAG 897]
+IMPIANTI  ELETTRICI                                               X-47
+possono desumere dalle Tabb. X.4.14, X.4.15, X.4.16, X.4.17, X.4.18 oppure, con mag-
+giore precisione, da quelle fornite dai costruttori. Per cavi distanziati l'induttanza unitaria
+è, a parità di sezione dei conduttori, abbastanza indipendente dal diametro del cavo e
+quindi dalla sua tensione d'isolamento dalla quale dipende lo spessore dell'isolante e, di
+conseguenza, il diametro.
+Tab. X.4.14   Resistenza unitaria di conduttori unificati per cavi, a 20 °C
+Sezione 
+nominale
+[mm2]
+Filo unico
+Corda
+Rame
+Alluminio
+Rame
+Alluminio
+[/km]
+[/km]
+numero fili
+[/km]
+numero fili
+[/km]
+1,5
+2,5
+4
+6
+10
+16
+25
+35
+50
+70
+95
+120
+150
+185
+240
+300
+11,9
+7,14
+4,47
+2,97
+2,94
+1,85
+1,17
+7
+7
+7
+7
+19
+19
+19
+37
+37
+37
+61
+61
+1,77
+1,12
+0,710
+0,514
+0,379
+0,262
+0,189
+0,150
+0,122
+0,097
+0,074
+0,059
+7
+7
+19
+19
+37
+37
+37
+37
+37
+0,840
+0,628
+0,435
+0,313
+0,248
+0,202
+0,161
+0,122
+0,097
+Nota. Il riporto della resistenza alla temperatura di servizio si effettua utilizzando il fattore K cal-
+colato con le relazioni X.4.2 (rame) e X.4.3 (alluminio).
+Tab. X.4.15   Induttanza unitaria di servizio per cavi tripolari BT e MT
+U0/U [kV]
+0,6/1
+2,3/3
+3,6/6
+6/10
+8,7/15
+12/20
+15/20
+Sezione
+[mm2]
+Induttanza di servizio per fase [10 - 3 H/km]
+1,5
+2,5
+4
+6
+10
+16
+25
+35
+50
+70
+95
+120
+150
+185
+240
+300
+0,376
+0,347
+0,322
+0,304
+0,274
+0,260
+0,259
+0,249
+0,248
+0,242
+0,239
+0,236
+0,236
+0,236
+0,235
+0,235
+0,398
+0,376
+0,354
+0,334
+0,318
+0,303
+0,287
+0,283
+0,277
+0,274
+0,264
+0,258
+0,255
+0,424
+0,408
+0,389
+0,366
+0,344
+0,322
+0,306
+0,296
+0,287
+0,280
+0,274
+0,264
+0,436
+0,414
+0,382
+0,357
+0,338
+0,322
+0,309
+0,296
+0,287
+0,280
+0,274
+0,471
+0,436
+0,404
+0,389
+0,366
+0,347
+0,331
+0,318
+0,309
+0,302
+0,487
+0,455
+0,436
+0,420
+0,395
+0,382
+0,363
+0,344
+0,325
+0,312
+0,506
+0,484
+0,462
+0,446
+0,420
+0,398
+0,382
+0,350
+0,345
+0,341
+Nota. La reattanza di servizio unitaria, in /km, si calcola moltiplicando i valori della tabella per la
+pulsazione  = 2 f.
+
+[PAG 898]
+X-48
+  IMPIANTI ELETTRICI 
+4.10  Modalità di posa delle condutture elettriche
+Le condutture elettriche, realizzate sia con conduttori nudi sia con cavi, possono
+essere installate in vari modi, a seconda del tipo di impianto, del percorso, della tensione
+di esercizio.
+Per gli impianti utilizzatori con tensione nominale fino a 1000 V in c.a. e a 1500 V in
+c.c. la norma CEI 64-8/5 considera come fattori che influiscono sulla scelta del tipo di
+posa i seguenti: natura dei luoghi; natura delle pareti e delle altre parti dell'edificio che
+sostengono i conduttori; possibilità che le condutture siano accessibili alle persone e agli
+animali; tensione di esercizio; sollecitazioni termiche ed elettromeccaniche che si possono
+produrre in caso di corto circuito; sollecitazioni alle quali le condutture possono prevedi-
+bilmente venire sottoposte durante la realizzazione dell'impianto elettrico o in servizio.
+I tipi di posa previsti dalla norma CEI 64/8-5 si possono raggruppare nelle categorie
+riportate nella Tab. X.4.19.
+Tab. X.4.16   Induttanza unitaria di servizio per cavi unipolari BT e MT accostati a trifo-
+glio
+U0/U [kV]
+0,6/1
+2,3/3
+3,6/6
+6/10
+8,7/15
+12/20
+15/20
+Sezione
+[mm2]
+Induttanza di servizio per fase [10-3 H/km]
+1,5
+2,5
+4
+6
+10
+16
+25
+35
+50
+70
+95
+120
+150
+185
+240
+300
+0,561
+0,510
+0,455
+0,430
+0,395
+0,357
+0,338
+0,322
+0,318
+0,307
+0,303
+0,298
+0,296
+0,289
+0,287
+0,285
+0,424
+0,395
+0,373
+0,357
+0,338
+0,322
+0,312
+0,306
+0,303
+0,299
+0,293
+0,287
+0,446
+0,414
+0,389
+0,369
+0,354
+0,338
+0,325
+0,315
+0,312
+0,309
+0,299
+0,293
+0,471
+0,436
+0,404
+0,385
+0,369
+0,350
+0,338
+0,328
+0,325
+0,318
+0,309
+0,303
+0,519
+0,484
+0,449
+0,436
+0,414
+0,395
+0,376
+0,366
+0,357
+0,347
+0,334
+0,322
+0,529
+0,497
+0,468
+0,446
+0,424
+0,404
+0,389
+0,379
+0,369
+0,357
+0,344
+0,334
+0,541
+0,510
+0,478
+0,455
+0,433
+0,417
+0,404
+0,392
+0,382
+0,369
+0,360
+0,344
+Nota. La reattanza di servizio unitaria, in /km, si calcola moltiplicando i valori della tabella per la
+pulsazione  = 2 f. 
+Tab. X.4.17   Induttanza unitaria di servizio per cavi unipolari BT e MT disposti in piano
+a distanza di 5  10 cm
+Sezione
+[mm2]
+Induttanza
+per fase
+[10-3 H/km]
+Sezione
+[mm2]
+Induttanza
+per fase
+[10-3 H/km]
+Sezione
+[mm2]
+Induttanza
+per fase
+[10-3 H/km]
+1,5
+2,5
+4
+6
+10
+16
+1,178
+1,083
+0,987
+0,908
+0,866
+0,854
+25
+35
+50
+70
+95
+120
+0,796
+0,780
+0,752
+0,713
+0,685
+0,662
+150
+185
+240
+300
+400
+500
+0,650
+0,624
+0,605
+0,586
+0,567
+0,548
+Nota. La reattanza di servizio unitaria, in /km, si calcola moltiplicando i valori della tabella per la
+pulsazione  = 2 f.
+
+[PAG 899]
+IMPIANTI  ELETTRICI                                               X-49
+Non tutti i tipi di posa sono permessi per tutti i tipi di conduttore o di cavo. La Tab.
+X.4.20, tratta dalla norma CEI 64/8-5, indica la corrispondenza tra i diversi tipi di condut-
+tore e di cavo e le varie modalità di posa, distinguendo tra quelle permesse, non permesse
+e non applicabili (o, in genere, non usate nella pratica).
+La Tab. X.4.21, tratta anch'essa dalla norma CEI 64/8-5, indica invece la corrispon-
+denza tra l'ubicazione della conduttura (entro cunicoli, incassata, interrata ecc.) e il tipo di
+posa, indicato con il numero attribuito allo stesso sugli esempi presentati nella Tab. X.4.22.
+Tab. X.4.18   Suscettanza capacitiva unitaria di servizio per cavi tripolari a campo radiale
+BT e MT, alla frequenza di 50 Hz
+U0/U [kV]
+0,6/1
+2,3/3
+3,6/6
+6/10
+8,7/15
+12/20
+15/20
+Sezione
+[mm2]
+Suscettanza capacitiva di servizio per fase [10-6 S/km]
+1,5
+2,5
+4
+6
+10
+16
+25
+35
+50
+70
+95
+120
+150
+185
+240
+300
+50,2
+56,5
+69,1
+78,5
+97,3
+129
+135
+157
+168
+176
+179
+201
+201
+204
+204
+207
+40,8
+44,0
+53,4
+66,0
+75,4
+88,0
+97,3
+113
+122
+135
+144
+163
+170
+182
+37,7
+47,1
+53,4
+60,0
+69,1
+75,4
+87,9
+94,2
+104
+110
+122
+132
+144
+44,0
+50,2
+56,5
+62,8
+69,1
+78,5
+87,9
+97,3
+104
+113
+126
+138
+37,7
+47,1
+50,2
+56,5
+62,8
+72,2
+78,5
+81,6
+91,1
+97,3
+110
+34,5
+40,8
+44,0
+47,1
+56,5
+59,7
+65,9
+72,2
+75,4
+84,8
+94,2
+37,7
+40,8
+44,0
+50,2
+53,4
+59,7
+62,8
+65,9
+72,2
+78,5
+Tab. X.4.19   Tipi di posa previsti dalla norma CEI 64/8-5
+Tipo
+Descrizione
+Posa senza fissaggi
+I conduttori non hanno sistemi di fissaggio e vengono posati utiliz-
+zando cavità di strutture, cunicoli o interrando direttamente i cavi
+Posa con fissaggio diretto
+su parete
+Il cavo è fissato direttamente sulla parete mediante graffette o altro,
+senza l'interposizione di tubi, canalette o altri sistemi di protezione
+meccanica
+Posa entro tubi protettivi
+(di forma circolare)
+Vengono utilizzate tubazioni metalliche o in materiale plastico. I tubi,
+a loro volta, possono essere esterni, annegati nella muratura, interrati
+Posa entro canali (anche
+incassati nel pavimento)
+Si usano canaline metalliche o in materiale plastico, fissate general-
+mente a parete o a soffitto. In alcuni casi le canaline possono essere
+fissate nel controsoffitto o incassate nei pavimenti
+Posa entro tubi protettivi
+(di forma non circolare)
+Queste tubazioni, normalmente di sezione rettangolare, possono
+essere esterne, poste entro cunicoli, annegate nella muratura
+Posa su passerelle e su
+mensole
+Si usano generalmente passerelle metalliche esterne, sulle quali ven-
+gono posati cavi con guaina, unipolari o multipolari
+Posa su isolatori
+Viene normalmente utilizzata per conduttori nudi, fissati a isolatori
+che hanno il compito di distanziare i conduttori e isolarli verso massa
+Cavo sospeso (con filo o
+corda di supporto)
+Il cavo, del tipo con guaina, viene fissato a un filo o a una corda por-
+tante che ne assicura l'ancoraggio
+
+[PAG 900]
+X-50
+  IMPIANTI ELETTRICI 
+Per esempio la posa indicata con i numeri 3 e 3A sulla Tab. X.4.22 (cavi entro tubi
+protettivi circolari posati o distanziati da parete) corrisponde al montaggio sporgente
+entro tubi protettivi di forma circolare (Tab. X.4.21); essa è consentita per i cavi senza
+guaina e per quelli con guaina, sia unipolari che multipolari, mentre non è permessa per i
+conduttori nudi (Tab. X.4.20).
+ 
+Tab. X.4.20   Scelta dei conduttori e dei cavi in funzione del tipo di posa (Tab. 52A della
+norma CEI 64-8/5)
+Conduttori e cavi
+Tipo di posa
+Senza fissaggi
+Fissaggio diretto a parete
+Entro tubi protettivi (di
+forma circolare)
+Entro canali (anche incassati
+nel pavimento)
+Entro tubi protettivi (di
+forma non circolare)
+Su passerelle e su mensole
+Su isolatori
+Cavo sospeso (con filo o 
+corda di supporto)
+Conduttori nudi
+
+
+
+
+
+
+
+
+Cavi senza guaina
+
+
+
+
+
+
+
+
+Cavi con guaina
+Multipolari
+
+
+
+
+
+
+
+
+Unipolari
+
+
+
+
+
+
+
+
+Legenda: + permesso;   non permesso;   non applicabile o in genere non usato nella pratica
+Tab. X.4.21   Messa in opera delle condutture (Tab. 52B della norma CEI 64-8/5)
+Ubicazione
+Tipo di posa
+Senza fissaggi
+Fissaggio diretto
+a parete
+Entro tubi protettivi
+(di forma circolare)
+Entro canali (anche
+incassati nel pavimento)
+Entro tubi protettivi 
+(di forma non circolare)
+Su passerelle
+e su mensole
+Su isolatori
+Cavo sospeso (con filo
+o corda di supporto)
+Entro cavità di
+strutture accessibili
+25
+21-25
+22
+31-32
+75
+23
+12-13 
+14-15
+16
+
+
+Entro cavità di
+strutture non acces-
+sibili
+21-25
+73-74
+
+2
+73-74
+
+23
+
+
+
+Entro cunicoli
+43
+43
+41-42
+
+
+12-13 
+14-15
+16
+
+
+
+[PAG 901]
+IMPIANTI  ELETTRICI                                               X-51
+Tab. X.4.21 Segue
+Ubicazione
+Tipo di posa
+Senza fissaggi
+Fissaggio diretto
+a parete
+Entro tubi protettivi
+(di forma circolare)
+Entro canali (anche
+incassati nel pavimento)
+Entro tubi protettivi 
+(di forma non circolare)
+Su passerelle
+e su mensole
+Su isolatori
+Cavo sospeso (con filo
+o corda di supporto)
+Interrata
+62-63
+
+61
+
+61
+
+
+
+Incassata nella
+struttura
+52-53
+51
+1-2-5
+33-75
+24
+
+
+
+Montaggio spor-
+gente
+
+11
+3
+31-32
+71-72
+4
+12-13
+14-15
+16
+18
+
+Aerea
+
+
+
+34
+
+12-13
+14-15
+16
+18
+17
+Immersa
+81
+81
+
+
+
+
+
+
+Legenda: numeri: permesso;   non permesso;   non applicabile o in genere non usato nella pra-
+tica. Per gli esempi indicati con un numero e una lettera nella Tab. X.4.22 (per es. 4A) valgono le
+condizioni indicate per gli esempi con il solo numero (per es. 4).
+Tab. X.4.22   Tipi di posa delle condutture (Tab. 52C della norma CEI 64-8/5)
+Esempio
+Descrizione
+Rif.
+Cavi senza guaina in tubi protettivi circolari
+posati entro muri termicamente isolati
+1
+Cavi multipolari in tubi protettivi circolari
+posati entro muri termicamente isolati
+2
+Cavi senza guaina in tubi protettivi circolari
+posati su o distanziati da pareti
+Cavi multipolari in tubi protettivi circolari
+posati su o distanziati da pareti
+3
+3A
+
+[PAG 902]
+X-52
+  IMPIANTI ELETTRICI 
+Tab. X.4.22 Segue
+Esempio
+Descrizione
+Rif.
+Cavi senza guaina in tubi protettivi non circo-
+lari posati su pareti
+Cavi multipolari in tubi protettivi non circo-
+lari posati su pareti
+4
+4A
+Cavi senza guaina in tubi protettivi annegati
+nella muratura
+5
+Cavi multipolari in tubi protettivi annegati
+nella muratura
+5A
+Cavi multipolari (o unipolari con guaina), con
+o senza armatura, e cavi con isolamento
+minerale:
+–  posati su o distanziati da pareti
+11
+–  fissati su soffitti oppure
+–  distanziati da soffitti
+11A
+11B
+–  su passerelle non perforate
+12
+–  su passerelle perforate
+13
+
+[PAG 903]
+IMPIANTI  ELETTRICI                                               X-53
+Tab. X.4.22 Segue
+Esempio
+Descrizione
+Rif.
+–  su mensole
+14
+–  fissati da collari
+15
+–  su passerelle o traversini
+16
+Cavi unipolari con guaina (o multipolari)
+sospesi o incorporati in fili o corde di sup-
+porto
+17
+Conduttori nudi o cavi senza guaina su isola-
+tori
+18
+Cavi multipolari (o unipolari con guaina) in
+cavità di strutture
+21
+Cavi unipolari senza guaina in tubi protettivi
+circolari posati in cavità di strutture
+22
+
+[PAG 904]
+X-54
+  IMPIANTI ELETTRICI 
+Tab. X.4.22 Segue
+Esempio
+Descrizione
+Rif.
+Cavi multipolari (o unipolari con guaina) in
+tubi protettivi circolari posati in cavità di
+strutture
+22A
+Cavi unipolari senza guaina in tubi protettivi
+non circolari posati in cavità di strutture
+23
+Cavi unipolari senza guaina in tubi protettivi
+non circolari annegati nella muratura
+24
+Cavi multipolari (o unipolari con guaina) in
+tubi protettivi non circolari annegati nella
+muratura
+24A
+Cavi multipolari (o unipolari con guaina)
+posati in:
+–  controsoffitti
+–  pavimenti sopraelevati
+25
+Cavi senza guaina e cavi multipolari (o uni-
+polari con guaina) in canali posati su parete:
+–  con percorso orizzontale
+31
+
+[PAG 905]
+IMPIANTI  ELETTRICI                                               X-55
+Tab. X.4.22 Segue
+Esempio
+Descrizione
+Rif.
+Cavi senza guaina e cavi multipolari (o uni-
+polari con guaina) in canali posati su parete:
+–  con percorso verticale
+32
+Cavi senza guaina posati in canali incassati
+nel pavimento
+33
+Cavi multipolari posati in canali incassati nel
+pavimento
+33A
+Cavi senza guaina in canali sospesi
+Cavi multipolari (o unipolari con guaina) in
+canali sospesi
+34
+34A
+Cavi senza guaina e cavi multipolari (o cavi
+unipolari con guaina) in tubi protettivi circo-
+lari posati entro cunicoli chiusi, con percorso
+orizzontale o verticale
+41
+Cavi senza guaina in tubi protettivi circolari
+posati entro cunicoli ventilati incassati nel
+pavimento
+42
+Cavi unipolari con guaina e multipolari posati
+in cunicoli aperti o ventilati con percorso
+orizzontale o verticale
+43
+
+[PAG 906]
+X-56
+  IMPIANTI ELETTRICI 
+Tab. X.4.22 Segue
+Esempio
+Descrizione
+Rif.
+Cavi multipolari (o cavi unipolari con guaina)
+posati direttamente entro pareti termicamente
+isolanti
+51
+Cavi multipolari (o cavi unipolari con guaina)
+posati direttamente nella muratura senza pro-
+tezione meccanica addizionale
+52
+Cavi multipolari (o cavi unipolari con guaina)
+posati direttamente nella muratura con prote-
+zione meccanica addizionale
+53
+Cavi unipolari con guaina e multipolari in
+tubi protettivi interrati o in cunicoli interrati
+61
+Cavi multipolari (o unipolari con guaina)
+interrati senza protezione meccanica addizio-
+nale
+62
+
+[PAG 907]
+IMPIANTI  ELETTRICI                                               X-57
+Tab. X.4.22 Segue
+Esempio
+Descrizione
+Rif.
+Cavi multipolari (o unipolari con guaina)
+interrati con protezione meccanica addizio-
+nale
+63
+Cavi senza guaina posati in elementi scanalati
+71
+Cavi senza guaina (o cavi unipolari con
+guaina o cavi multipolari) posati in canali
+sprovvisti di elementi di separazione
+* Circuiti per cavi per comunicazione o per
+elaborazione dati
+72
+Cavi senza guaina in tubi protettivi o cavi
+unipolari con guaina (o multipolari) posati in
+stipiti di porte
+73
+Cavi senza guaina in tubi protettivi o cavi
+unipolari con guaina (o multipolari) posati in
+stipiti di finestre
+74
+Cavi multipolari immersi in acqua
+81
+*
+*
