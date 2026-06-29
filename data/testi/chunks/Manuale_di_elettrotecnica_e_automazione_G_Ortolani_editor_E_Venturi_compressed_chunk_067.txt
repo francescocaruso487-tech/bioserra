@@ -1,0 +1,823 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 67/116 ===
+Chars: 43,230 | Offset: 2,915,336
+
+to ad un impianto, molto importante risulta la perfetta cono-
+scenza del manufatto che si va a ispezionare. Si è già fatta menzione dell’utilità dei led di 
+segnalazione che equipaggiano il modulo base di ogni PLC, della loro importanza nella 
+definizione di una prima diagnosi della situazione in cui l’impianto si trova.
+Sono disponibili inoltre i vari bit di difetto che, opportunamente utilizzati nel pro-
+gramma utente, aiutano nel diagnosticare le specifiche procedure di intervento da assu-
+mere; tramite le console di programmazione, si visualizzano dei codici di errore, ai quali 
+ci si può riferire per poter intervenire nell’eliminazione del guasto.
+La filosofia di intervento è comunque quella di isolare l’anomalia e di intervenire tem-
+
+[PAG 1373]
+AUTOMAZIONE
+XIV-61
+pestivamente, con l’immediata sostituzione del modulo o dell’apparecchiatura difettosa, 
+onde ridurre al minimo il fermo-macchina; si provvede successivamente a meglio inter-
+pretare l’accaduto e la causa che ha dato luogo al fermo dell’impianto, dopo che il sistema 
+è stato rimesso in funzione.
+Sono utili a tale proposito le tabelle diagnostiche che molte case costruttrici di logiche 
+programmabili forniscono: per ogni tipo di guasto o malfunzionamento vengono fornite, 
+tramite tabelle o diagrammi di flusso, le procedure opportune per poter intervenire corret-
+tamente.
+Mediante procedure informatiche, con l’ausilio di computer portatili che possono 
+essere interfacciati al PLC, viene fornita una serie di informazioni utili all’individuazione 
+del guasto direttamente sul campo: tramite software dedicati, viene offerta una completa 
+diagnostica dell’impianto e la monitorizzazione degli eventi tramite animazioni on-line, 
+con addirittura gli storici del processo. In questo caso le informazioni che tali pacchetti 
+software offrono, subito consentono di individuare dove si è inceppato il programma e 
+dove quindi possa risiedere la eventuale causa del malfunzionamento.
+Un esempio di questi software è il Unity SFC View di Schneider che è integrato nelle 
+applicazioni di dialogo uomo/macchina (HMI) per il monitoraggio delle applicazioni 
+sequenziali Unity Pro scritte in linguaggio sequenziale funzionale (diagramma funzionale 
+sequenziale SFC o Grafcet) eseguito da un controllore programmabile. Il pacchetto è 
+comprensivo di uno strumento di gestione delle videate operatore, progettate in modo da 
+facilitare l’esecuzione dei processi automatizzati in fase di debug, avvio e manutenzione. 
+Le videate operatore offrono un set di informazioni (test esplicativi, visualizzazione valori 
+dinamici, pulsanti e mimic) che permettono all’operatore di agire in modo rapido e molto 
+semplice per modificare e monitorare in modo dinamico le variabili controllore.
+L’editor di videate operatore offre tutti gli elementi di dialogo HMI (Human Machine 
+Interface) necessari per la progettazione e la visualizzazione animata dei processi.
+Installato su una stazione di dialogo il software controlla in tempo reale lo stato dei 
+diagrammi SFC fornendo dati di diagnostica dettagliati. In caso di errore Unity Pro ana-
+lizza le sezioni programma interessate, aprendo una seconda finestra che visualizza le 
+cause e le probabili origini del guasto.
+In modalità on-line, si può accedere ai dati di diagnostica del controllore, consentendo 
+in tal modo di conoscerli e di registrare il verificarsi del primo guasto e dei guasti succes-
+sivi. I tempi di fermo macchina risultano notevolmente ridotti dal momento che il sof-
+tware consente ai tecnici addetti alla manutenzione di individuare l’origine del problema 
+molto più velocemente.
+Si presentano all’operatore tre tipi di viste:
+–  Un panorama per la selezione dei diagrammi SFC
+–  Due viste dettagliate che presentano i dati di stato e di diagnostica del diagramma SFC 
+selezionato.
+La visualizzazione panorama mostra una vista generale di tutti i diagrammi SFC del 
+progetto. La videata mostra in tempo reale dati quali il passo corrente, i passi simultanei, 
+gli errori del diagramma con indicazione dello stato del diagramma SFC. La vista panora-
+mica facilita la navigazione attraverso i diagrammi SFC e il passaggio rapido alla vista 
+dettagliata del diagramma SFC desiderato dell’applicazione di programmazione.
+La vista semplice dettagliata visualizza i dati elementari del passo attivo (o del passo 
+selezionato) del diagramma SFC in tempo reale. I dati visualizzati possono comprendere 
+nome, commento, diagramma e stato del passo, oltre ai tempi di attività (min, max, cor-
+rente). È inoltre possibile attivare la funzione di navigazione nel diagramma. La dimen-
+sione ridotta della vista semplice dettagliata consente di posizionare più istanze di 
+un’unica videata HMI legata ad una certa parte del processo.
+
+[PAG 1374]
+XIV-62
+AUTOMAZIONE
+La vista dettagliata visualizza i dettagli di un diagramma SFC in tempo reale. La vide-
+ata mostra il passo corrente, la transizione in attesa di attivazione e il passo successivo. 
+Vengono visualizzate le azioni associate ai passi oltre alle selezioni della sequenza o ai 
+rami paralleli.
+I dati di diagnostica dettagliati comprendono l’analisi delle cause del guasto a livello 
+della transizione. In base alla modalità di diagnostica, la griglia di errore indica le cause 
+degli errori o tutte le variabili assegnate alla logica di transizione. Lo stato corrente delle 
+diverse variabili e degli errori selezionati sono identificati da colori diversi.
+6  PROGRAMMAZIONE DEL PLC
+Per eseguire la progettazione di un sistema automatico, bisogna aver chiaro soprat-
+tutto ciò che il sistema di controllo deve gestire: devono essere evidenziate le specifiche 
+del sistema.
+Si dovranno quindi seguire un certo numero di passi gerarchicamente correlati, che 
+formano una sorta di algoritmo della programmazione:
+–  determinare ciò che il sistema deve eseguire ed in quale ordine;
+–  determinare il numero e il tipo di I/O (ingressi/uscite) che necessitano per il collega-
+mento dei sensori e degli attuatori;
+–  determinare quindi la configurazione hardware che dovrà avere il PLC e le caratteri-
+stiche della CPU che supporterà i vari moduli;
+–  effettuare l’indirizzamento degli I/O;
+–  approntare uno schema (elettrico, diagramma di flusso, elenco di azioni) che chiarisca 
+inequivocabilmente la successione delle operazioni da svolgere, comprese eventuali situa-
+zioni di allarme;
+–  codificare lo schema redatto in un programma editabile e trasferibile nella CPU tra-
+mite console di programmazione o personal computer;
+–  inserire nel PLC il programma con i relativi parametri di lavoro;
+–  ricercare eventuali errori di programmazione per quanto concerne la sintassi del pro-
+gramma o gli errori di esecuzione;
+–  testare a tavolino il programma editato con l’ausilio di una stazione di simulazione 
+(PLC, simulatore degli ingressi, personal computer per il monitoraggio);
+–  collegare il PLC al sistema da controllare e verificarne il corretto funzionamento, con 
+il relativo salvataggio in forma definitiva del programma.
+6.1  Fasi della programmazione
+La progettazione di un sistema automatico si effettua seguendo gerarchicamente una 
+tassonomia di fasi.
+Definire le specifiche del sistema
+Significa chiarire cioè in che ambito, in quali situazioni ambientali, un processo deve 
+essere collocato. Si devono determinare quelle che saranno le operazioni che il processo 
+automatico deve compiere e la struttura che deve avere tale sistema. Si deve decidere il 
+tipo e la quantità dei sensori e degli attuatori che devono essere utilizzati, e le caratteristi-
+che funzionali degli stessi.
+Configurare numero e genere di I/O 
+È necessario stabilire che tipo e la quantità di punti di ingresso/uscita siano necessari, 
+in base al tipo ed al numero di sensori e di attuatori che si dovranno collegare al PLC.
+Conseguentemente si decide quale modello di logica programmabile utilizzare e la 
+configurazione hardware da approntare (se con soluzione compatta o modulare). Sarà 
+deciso a questo punto anche il tipo di CPU da utilizzare in base al tipo di gestione di I/O e
+
+[PAG 1375]
+AUTOMAZIONE
+XIV-63
+alle velocità di esecuzione richieste.
+Effettuare l’indirizzamento I/O
+Si deve assegnare ad ogni ingresso e uscita (ogni sensore e attuatore) il proprio codice 
+di indirizzo, in modo che, nel programma che verrà successivamente elaborato, ad ogni 
+punto di I/O corrisponda una specifica ed inequivocabile allocazione di memoria.
+Approntare una bozza di programma
+Con le competenze proprie di ogni programmatore, occorre stabilire la gerarchia di 
+operazioni che l’automazione deve compiere.
+Generalmente la stesura di un progetto è fatta a più mani, cioè contribuiscono alla sua 
+realizzazione operatori competenti in diversi ambiti: occorre risolvere problemi di ordine 
+elettrico, elettronico, meccanico, pneumatico ecc. Succede quindi che l’abbozzamento di 
+un programma viene redatto, a seconda delle competenze degli operatori, in forma di 
+schema elettrico, di diagramma di flusso, o di lista di operazioni da svolgere in base a 
+determinati eventi che accadono.
+Codificare il programma in linguaggio macchina
+Deciso quali sono le operazioni che l’automazione svolge, e la gerarchia con la quale 
+si succedono o interferiscono tra loro i vari eventi, si deve codificare il programma con un 
+linguaggio che sia interpretabile dalla CPU, che lo dovrà elaborare ed eseguire.
+A seconda sempre delle competenze degli operatori che si occupano della programma-
+zione, si sceglie il tipo di linguaggio da utilizzarsi per editare il programma. Con l’ausilio 
+di un personal computer e di un software dedicato (che ogni casa costruttrice vende 
+assieme al PLC) risulta essere semplificata l’operazione di stesura del programma.
+Inserire il programma nel PLC
+Si possono utilizzare un personal computer o delle console di programmazione per 
+trasferire il programma approntato nella memoria (memoria di programma) del PLC. Que-
+sta operazione di trasferimento si fa su dispositivi RAM o EPROM, in quanto il program-
+ma è ancora suscettibile di cambiamenti e di messe a punto, prima di diventare definitivo.
+Ricerca degli errori
+Nell’editazione del programma si possono commettere degli errori in ordine alla sin-
+tassi di esecuzione o in ordine allo svolgimento delle varie operazioni. È quindi prevista 
+una verifica inerente la congruità del programma in ordine a quanto stabilito precedente-
+mente nell’abbozzare il sistema automatico.
+Testare il programma
+È molto utile allo scopo avvalersi di una stazione di simulazione che possa emulare a 
+tavolino, cioè ancora in fase di progettazione, il funzionamento del sistema. Collegando 
+quindi ad un personal computer il PLC ed ancora ad un sinottico di I/O, è possibile moni-
+torare il processo e testarne il funzionamento, apportando al programma le dovute modifi-
+che e gli aggiustamenti necessari.
+Questo è reso possibile inoltre anche da console di programmazione evolute (workma-
+ster), le quali sommano caratteristiche funzionali tipiche dei PC a soluzioni strutturali 
+(affidabilità maggiore in ambiente industriale, leggerezza, esecuzione portatile) più con-
+sone all’operabilità sul campo.
+Messa in servizio
+Rilevati eventuali errori di programmazione e di messa a punto, apportate le dovute 
+modifiche, stabiliti gli appositi set point del processo, si può salvare il programma in 
+forma definitiva su dispositivi EEPROM o EPROM. Infine si collega definitivamente il 
+PLC alle varie periferiche e alle varie unità che lo compongono.
+
+[PAG 1376]
+XIV-64
+AUTOMAZIONE
+Soltanto una precisa e gerarchicamente ordinata subordinazione alle procedure 
+descritte può dar luogo a una corretta ed efficiente programmazione dei PLC.
+6.2  Linguaggi utilizzati
+I linguaggi di programmazione utilizzati nell’ambito delle logiche programmabili 
+sono svariati e soddisfano in genere le necessità di qualsiasi operatore che si avvicini a 
+tale ambiente.Tale filosofia di adattabilità è sostenuta dal fatto che l’introduzione dei PLC 
+nelle aziende deve avvenire nel modo più naturale possibile, senza sconvolgere le meto-
+dologie di impiego delle apparecchiature che vanno a sostituire; infatti, se nelle fabbriche 
+di nuova concezione e costruzione il PLC è elemento essenziale nella gestione dei pro-
+cessi, molti sono ancora i reparti lavorativi e le macchine dove potenzialmente il PLC può 
+essere impiegato, per rimpiazzare vecchie apparecchiature con logica a relè.
+Anche in questo settore però si è sentita l’esigenza in questi ultimi anni di uniformare 
+i linguaggi utilizzati. È questo sostanzialmente lo spirito della norma IEC 1131 la quale, par-
+tendo da un’analisi dei linguaggi impiegati dalle varie ditte produttrici di PLC, indica nel 
+fascicolo 3 quali sono quelli che d’ora in avanti rappresenteranno lo standard di progetto. 
+I linguaggi normalizzati secondo la IEC 1131-3 (CEI 65-40, CEI EN 61131-3) sono:
+–  Ladder Diagram (LD) o diagramma a contatti.
+–  Instruction List (IL) o lista di istruzioni.
+–  Structured Text (ST) o testuale strutturato.
+–  Sequential Function Chart (SFC) o diagramma funzionale in sequenza.
+–  Function Block Diagram (FBD) o diagramma a blocchi funzionale. 
+La rappresentazione dei dati, nei diversi linguaggi di programmazione dei controllori 
+programmabili, è composta da:
+–  Letterali numerici. Vengono impiegati nella programmazione del PLC due tipi di let-
+terali numerici: i letterali interi e i letterali reali. Un letterale numerico può essere di tipo 
+decimale o un numero espresso mediante una base. I valori interi possono essere rappre-
+sentati secondo la notazione binaria, ottale o esadecimale.
+–  Letterali di stringa di caratteri. Un letterale di stringa di caratteri è una sequenza di nes-
+suno o di più caratteri, che iniziano e che terminano con il carattere apostrofo (’).
+–  Letterali di data. Si possono rappresentare due distinti tipi di dati temporali: il tempo 
+che intercorre tra due eventi o la durata di un evento e i dati relativi all’ora del giorno per 
+sincronizzare l’inizio o la fine di un evento di comando in rapporto ad un riferimento di 
+tempo assoluto. I letterali di durata e di ora del giorno, devono essere delimitati a sinistra 
+da parole chiave. La rappresentazione dei dati relativi alla durata o all’ora del giorno può 
+essere espressa in termini di giorni, ore, minuti, secondi e millisecondi, o combinazione di 
+essi. La rappresentazione delle informazioni relative all’ora del giorno e alla data deve 
+essere conforme alle specifiche della Norma ISO 8601.
+Due elementi importanti della programmazione dei PLC sono rappresentati dalle 
+variabili e dalle unità di organizzazione di programma.
+Le variabili si possono definire come i mezzi per identificare gli oggetti dei dati in un 
+contenuto che può variare. Per esempio, i dati associati agli ingressi, alle uscite, alla 
+memoria del controllore.
+Una variabile può essere dichiarata come appartenente ad uno dei tipi elementari o 
+derivati di dati, inoltre essa viene rappresentata simbolicamente con degli identificatori.
+Una variabile a singolo elemento è formata dall’associazione del segno di percentuale 
+(%) con un prefisso di locazione, un prefisso di taglia e con uno o più interi senza segno, 
+separati da un punto (.).
+La Tab. XIV.6.1 elenca le caratteristiche dei prefissi di locazione e di taglia delle 
+variabili rappresentate direttamente.
+
+[PAG 1377]
+AUTOMAZIONE
+XIV-65
+Tab. XIV.6.1   Caratteristiche dei prefissi e loro taglia secondo IEC 1131-3 (CEI 65-40)
+Per esempio:
+%IW53 parola della zona degli ingressi
+%MW30 parola della zona della memoria
+%MX41 oppure %M41 (la X può essere omessa) bit della zona della memoria 
+%MD48 doppia parola della zona della memoria 
+%MW4:8 tabella di 8 parole 
+%MW0:X4 bit di rango 4 della parola interna %MW0 
+%QX21 oppure %Q21 (la X può essere omessa) bit della zona delle uscite 
+È necessario che il costruttore del PLC specifichi la corrispondenza tra la rappresenta-
+zione diretta della variabile e la locazione fisica o logica dell’elemento indirizzato in 
+ingresso, in uscita o in memoria. 
+Se degli interi sono separati da punti, la rappresentazione deve essere letta come un 
+indirizzo gerarchico fisico o logico, nel quale la parte a sinistra indica il livello più ele-
+vato della gerarchia, mentre quella destra l’inferiore.
+Per esempio, la variabile %IW1.6.4.1 
+indicherà:
+.1 il primo canale (parola) di ingressi (%IW) 
+.6 del sesto modulo 
+.4 del quarto rack 
+.1del primo bus di I/O 
+di un sistema a controllore programmabile. L’uso dell’indirizzamento gerarchico che 
+permette al programma l’accesso ai dati di un secondo controllore programmabile si deve 
+considerare un’estensione di linguaggio.
+Le variabili rappresentate direttamente sono consentite solamente nei programmi 
+(cioè quegli insiemi logici composti da tutti gli elementi e costruzioni del linguaggio di 
+programmazione che permettono di gestire ed elaborare i segnali per il comando di una 
+Prefisso
+Descrizione
+I 
+Locazione di ingresso 
+Q 
+Locazione di uscita 
+M 
+Locazione di memoria 
+X 
+Taglia di un solo bit 
+nessuno 
+Taglia di un solo bit 
+B 
+Taglia di un byte (8 bit) 
+W 
+Taglia di una parola (16 bit) 
+D 
+Taglia di una parola doppia (32 
+bit) 
+L 
+Taglia di una parola lunga (64 bit)
+
+[PAG 1378]
+XIV-66
+AUTOMAZIONE
+macchina o di un processo mediante un PLC), nelle configurazioni (cioè negli elementi di 
+linguaggio che corrispondono ad un sistema a controllore programmabile) e nelle risorse 
+(cioè in quegli elementi di linguaggio che corrispondono ad una funzione di trattamento di 
+segnale, alle sue funzioni di interfaccia uomo-macchina e alle eventuali funzioni di inter-
+faccia di sensori e attuatori).
+Le variabili a molti elementi sono invece rappresentate da:
+–  Tabelle. Insieme di elementi di dati che appartiene allo stesso tipo di dato, indicizzati 
+da uno o più indici racchiusi tra parentesi e separati da virgole;
+–  Strutture. Un tipo di dato formato da un insieme di elementi nominati, rappresentato 
+da almeno due identificatori separati da un punto (.), il primo dei quali indica il nome 
+dell’elemento strutturato, mentre i successivi rappresentano la sequenza di nomi che per-
+mettono l’accesso ad un elemento particolare nella struttura di dati.
+Le unità di organizzazione di programma sono costituite dalle funzioni, dai blocchi 
+funzionali e dai programmi. Esse si possono trovare precostituite (dal costruttore) o pos-
+sono essere programmate dall’utilizzatore. Le unità di organizzazione di programmi non 
+possono invocare altre unità dello stesso tipo (cioè non devono essere ricorsive).
+Le funzioni sono delle unità di organizzazione di programma che, quando vengono 
+eseguite, forniscono esattamente un elemento di dato (che può avere diversi valori) la cui 
+invocazione può essere utilizzata, nei linguaggi testuali, come operando di un’espres-
+sione. Le funzioni e le loro invocazioni possono essere rappresentate sia testualmente sia 
+graficamente. Quando le funzioni vengono rappresentate graficamente mediante blocchi, 
+si devono osservare delle regole ben precise; alcune di queste sono:
+–  i blocchi devono essere di forma rettangolare o quadrata;
+–  la taglia e le proporzioni sono relazionate al numero di ingressi e alle informazioni da 
+indicare;
+–  gli ingressi devono essere a sinistra e le uscite a destra;
+–  il nome o il simbolo della funzione deve essere interna al blocco;
+–  i collegamenti reali tra i parametri devono essere indicati con delle linee di flusso dei 
+segnali;
+–  la negazione di segnali booleani deve essere rappresentata da un cerchio vuoto subito 
+prima dell’ingresso o subito dopo l’uscita dal blocco (il segno grafico normalizzato è la o 
+maiuscola (O).
+I blocchi funzionali sono delle unità di organizzazione che una volta eseguite forni-
+scono uno o più valori. È possibile creare più copie del blocco funzionale, ciascuna iden-
+tificata da un nome e contenente una struttura di dati con le sue variabili interne, di uscita 
+e i riferimenti relativi ai suoi parametri di ingresso (a seconda dell’implementazione).
+I blocchi funzionali standard comuni a tutti i linguaggi di programmazione del PLC sono:
+–  elementi bistabili,
+–  rilevazione di fronti,
+–  contatori,
+–  temporizzatori,
+–  di comunicazione.
+I programmi sono degli insiemi logici composti da tutti gli elementi e costruzioni del 
+linguaggio di programmazione che permettono di gestire ed elaborare i segnali per il 
+comando di una macchina o di un processo mediante un PLC. La dichiarazione e l’utiliz-
+zazione dei programmi sono identiche a quelle dei blocchi funzionali; richiedono inoltre:
+–  PROGRAM...END_PROGRAM, parola chiave per separare le dichiarazione dei pro-
+grammi;
+–  VAR_ACCESS...END_VAR, costruzione che permette di specificare variabili nomi-
+nate, accessibili con servizi di comunicazione;
+
+[PAG 1379]
+AUTOMAZIONE
+XIV-67
+–  di essere istanziati (copiati) solamente all’interno di risorse. 
+I linguaggi definiti in questa Norma si possono dividere in:
+–  Linguaggi grafici;
+–  Linguaggi testuali.
+6.3  Linguaggi grafici
+Gli elementi comuni a tutti i linguaggi grafici impiegati per la programmazione ven-
+gono disegnati con elementi lineari che appartengono alla lista di caratteri ISO/IEC 646 
+oppure impiegando degli elementi grafici o semigrafici. La Tab. XIV.6.2 rappresenta le 
+linee e i blocchi standard normalmente impiegati.
+     Nella stesura dei programmi con linguaggio grafico occorre avere presenti alcune 
+semplici regole, riassumibili in:
+4)  Le etichette associate nelle continuazioni di linee connesse (vedere Tab. XIV.6.3) 
+non devono avere nomi uguali a quelli di altri elementi nominati nella medesima fun-
+zione, blocco funzionale o programma.
+5)  È possibile prevedere, associata ad una rete o ad un gruppo di reti, una etichetta di 
+rete delimitata sulla destra da due punti (:). Essa deve essere un identificatore (una combi-
+nazione di lettere, numeri e caratteri di sottolineamento che obbligatoriamente deve ini-
+ziare con una lettera o con un carattere di sottolineamento) con o senza un numero 
+decimale senza segno. Per esempio RUNG10:, AVVIO:, QX75, _PRIMO_22V ecc.
+Tab. XIV.6.2   Caratteri impiegati per il disegno degli elementi grafici
+    Segno
+Descrizione
+                    
+Linee orizzontali (carattere “meno” ISO/IEC 646 o elemento 
+grafico o semigrafico).
+                            
+Linee verticali (carattere “linea verticale” ISO/IEC 646 o 
+elemento grafico o semigrafico).
+                         
+Connessione linee orizzontali e verticali (Carattere “+” ISO/IEC 
+646 o elemento grafico o semigrafico).
+                    
+Incrocio di linee senza connessione (caratteri ISO/IEC 646 o 
+elemento grafico o semigrafico).
+                         
+Angoli collegati e non collegati (caratteri ISO/IEC 646 o 
+elemento grafico o semigrafico).
+                    
+Blocco con linee collegate (caratteri ISO/IEC 646 o elemento 
+grafico o semigrafico).
+Connettori che utilizzano caratteri ISO/IEC 646: connettore, 
+continuazione di linea connessa, collegamento grafico o 
+semigrafico.
+-----
+|
+|
++
+--
+|
+--
+---------
+| |
+|
+| |
+---------
+---------
+|
+|
+---------
+|
+|
++
++
+|
++ +|
+---------
+---------
++
+-
+|
+---------- |
+|
+----------
+|
+|
+|
++
++
++
++
+---
+---
+---
+---
+--------->STOP>
+>STOP>---------
+
+[PAG 1380]
+XIV-68
+AUTOMAZIONE
+Tab. XIV.6.3   Simbologia segni grafici per comandi di trasferimento
+Segno
+Descrizione
+1---->>ETICHET_A
+Salto incondizionato (FDB).
+|
++---->>ETICHET_A
+|
+Salto incondizionato (LD).
+X---->>ETICHET_B
++-----+
+  %IX10---|   &   |--->>SUCCESS
+         %MX30---|         |
+                            +-----+
+                    SUCCESS.
+                           +------+
+          %IX15--- | > =1  |--->>%QX90
+         %MX50---|           |
+                           +------+
+Salto condizionato (FDB).
+Esempio: 
+Condizione di salto
+Obiettivo del salto
+|  X
+                +-| |--->>ETICHET_B
+            |
+|
+| %IX10  %MX30
++---| |---------| |--->>SUCCESS
+|
+|
+SUCCESS.
+|     %IX15                             %QX90  |
++-----| |-----+--------------------( )----+
+|   %MX50  |                                         |
++-----| |-----+                                        |
+|
+Salto condizionato (LD).
+Esempio:
+Condizione di salto
+Obiettivo del salto
+  |    X
+  +--| |---- <RETURN>
+  |
+Ritorno condizionato (LD).
+X---- <RETURN>
+Ritorno incondizionato 
+(FBD).
+END_FUNCTION  
+Ritorno incondizionato da 
+FUNCTION.
+END_FUNCTION_BLOCK
+Ritorno incondizionato da 
+FUNCTION_BLOCK.
+ |
++----<RETURN>
+ |
+Altre rappresentazioni 
+possibili (LD).
+
+[PAG 1381]
+AUTOMAZIONE
+XIV-69
+6)  La rete e l’etichetta hanno valore locale, cioè il loro campo di applicazione è circo-
+scritto all’unità di organizzazione di programma (funzione, blocco funzionale) nella quale 
+sono associate.
+7)  I linguaggi grafici hanno la funzione di rappresentare concettualmente il flusso vir-
+tuale che scorre all’interno dello schema progettato; questo flusso viene accomunato ad 
+un flusso di “energia” per il diagramma a contatti, ad un flusso di “segnale” per i dia-
+grammi a blocchi funzionali e ad un flusso di “attività” per i diagrammi funzionali 
+sequenziali.
+8)  A seconda del linguaggio utilizzato, il flusso deve circolare lungo le linee e tra gli 
+elementi della rete da sinistra a destra (LD), dall’uscita destra all’ingresso sinistro di fun-
+zioni o di blocchi funzionali connessi (FBD), dal basso di un passo all’alto del passo o dei 
+passi successivi correlati (SFC).
+9)  La valutazione delle reti con gli elementi che le compongono non segue necessa-
+ria-mente l’ordine delle loro etichette. E non è necessario che tutte siano testate prima che 
+la valutazione di una rete possa essere ripetuta.
+10)  Nessun elemento di una rete deve essere valutato finché gli stati del suo o di tutti 
+i suoi ingressi non sono stati valutati.
+11)  La valutazione di un elemento della rete non si può concludere finché gli stati di 
+tutte le uscite non sono stati valutati.
+12)  La valutazione di un elemento di rete non si considera terminata finché le uscite 
+di tutti i suoi elementi non sono state valutate, anche se la rete contiene dei comandi di 
+salto.
+13)  L’ordine di valutazione delle reti viene diversificato in relazione allo specifico 
+linguaggio grafico adoperato.
+14)  Nelle reti possono esistere dei percorsi di retroazione determinati quando l’uscita 
+di una funzione o di un blocco funzionale viene impiegata come ingresso in una funzione 
+o in un blocco funzionale che la precede sulla stessa rete.
+15)  Il trasferimento del comando nei linguaggi grafici si distingue in salto e in 
+ritorno, condizionato e incondizionato. I salti devono essere rappresentati con una linea di 
+segnale booleano che termina con una doppia freccia. Il trasferimento avviene quando il 
+valore booleano della linea di segnale è 1.
+La Tab. XIV.6.3 elenca gli elementi grafici dei comandi di trasferimento.
+6.3.1  Ladder diagram (LD)
+Il Diagramma a contatti (Ladder Diagram) rientra nei cosiddetti linguaggi grafici ed è 
+il primogenito tra i linguaggi utilizzati per la programmazione dei PLC. Questo si deve al 
+fatto che, inizialmente, il PLC andava a sostituire i normali quadri a logica cablata che uti-
+lizzavano relè.
+Il Diagramma a contatti possiede le seguenti caratteristiche:
+1)  I segni grafici vengono strutturati in reti (una rete viene definita un insieme mas-
+simo di elementi grafici) analogamente ai pioli di una scala e le barre delimitatrici sinistra 
+e destra vengono chiamate barre di alimentazione (la barra di destra può essere omessa). 
+La Tab. XIV.6.4 rappresenta degli esempi di barre di alimentazione.
+2)  Le linee (elementi) di collegamento dei segni grafici possono essere orizzontali o 
+verticali e il loro stato di collegamento può essere “ON” o “OFF”, che corrisponde ai 
+valori booleani “1” e “0”.
+3)  Lo stato di collegamento deve essere considerato come sinonimo di flusso di ener-
+gia: se è ON il flusso transita, se è OFF il flusso non transita.
+4)  La barra di sinistra deve essere sempre considerata ON, mentre quella di destra non 
+ha uno stato predefinito.
+
+[PAG 1382]
+XIV-70
+AUTOMAZIONE
+Tab. XIV.6.4   Simbologia segni grafici per barre di alimentazione
+5)  Una linea orizzontale trasmette lo stato dell’elemento alla sua sinistra a quello 
+situato alla sua destra.
+6)  Una linea verticale deve essere sempre collegata a una linea orizzontale e può 
+incrociare uno o più elementi di collegamento orizzontale. Essa rappresenta lo stato 
+logico OR ed è ON se almeno un elemento orizzontale che incrocia è ON, oppure OFF se 
+tutti gli elementi orizzontali sono OFF.
+7)  Lo stato di un collegamento verticale deve essere assunto da tutti gli elementi di 
+collegamento che stanno alla sua destra e da nessun elemento di collegamento orizzontale 
+che sta alla sua sinistra.
+8)  Un contatto può essere definito come quell’elemento che trasmette alla linea di 
+collegamento orizzontale alla sua destra lo stato logico risultante da un’operazione di 
+AND tra lo stato logico della linea di collegamento orizzontale alla sua sinistra e la fun-
+zione di un ingresso, di una uscita o di una variabile di memoria che gli è stata associata. 
+La Tab. XIV.6.5 riassume i tipi di contatti.
+Tab. XIV.6.5   Simbologia segni grafici per contatti
+9)  Una bobina assume lo stato dell’elemento di collegamento situato alla sua sinistra, 
+senza modificarlo, e memorizza una funzione appropriata (avente lo stato transitorio 
+dell’elemento di collegamento sinistro) nella variabile booleana che gli è stata destinata. 
+La Tab. XIV.6.6 riassume i simboli standardizzati di bobine.
+Segno
+Descrizione
+ |
++------ 
+ | 
+Barra di alimentazione sinistra con collegamento orizzontale connesso.
+         | 
+------+
+         |
+Barra di alimentazione destra con collegamento orizzontale connesso.
+Segno
+Descrizione
+       ***                   *** 
+      --| |--  oppure  --! !--   
+Contatto normalmente aperto (NO). Lo stato della linea alla 
+sinistra viene preso dalla linea alla destra solamente se lo stato 
+della variabile booleana del contatto è ON.
+       ***                   *** 
+      --|/|--  oppure  --!/!--   
+Contatto normalmente chiuso (NC). Lo stato della linea alla 
+sinistra viene preso dalla linea alla destra solamente se lo stato 
+della variabile booleana del contatto è OFF.
+     ***                    *** 
+    --|P|--  oppure  --!P!--   
+Contatto rilevatore di transizione positiva. Lo stato della linea 
+alla destra è ON, tra due valutazioni successive, quando viene 
+rilevato un passaggio da OFF a ON dello stato della variabile 
+booleana associata al contatto e con la linea di sinistra ON.
+      ***                    *** 
+    --|N|--  oppure  --!N!--   
+Contatto rilevatore di transizione negativa. Lo stato della linea 
+alla destra è ON, tra due valutazioni successive, quando viene 
+rilevato un passaggio da ON a OFF dello stato della variabile 
+booleana associata al contatto e con la linea di sinistra ON.
+ *** sostituisce la variabile booleana associata al contatto.
+
+[PAG 1383]
+AUTOMAZIONE
+XIV-71
+Tab. XIV.6.6   Simbologia segni grafici per bobine
+10)   Ogni riga circuitale è divisa in due parti:
+–  zona dei test (con le variabili di ingresso o interne), contenente le condizioni necessa-
+rie per l’esecuzione di un’azione;
+–  zona delle azioni (comprende le bobine di uscita e interne oltre a determinati blocchi 
+funzione), contenente l’uscita o l’operazione risultante dai test ad essa collegati.
+11)  Ogni rete può comprendere al massimo 7 linee e 11 colonne di programma (Fig. 
+XIV.6.1) e la sua stesura inizia dalla cella in alto a sinistra.
+Nella lettura del programma la CPU segue una scansione ciclica che compie il per-
+corso segnato nella Fig. XIV.6.2. Particolare da tenere in considerazione è che durante la 
+lettura, la CPU non legge all’inverso. Per meglio cogliere il significato di tale asserzione 
+si tenga conto dell’esempio che segue.
+Un programma come quello di Fig. XIV.6.3 non può essere editato, poiché il diagramma 
+a contatti non accetta collegamenti in senso verticale di alcun simbolo grafico, se non quello 
+del semplice tratto verticale; si deve quindi ricorrere a forme grafiche alternative.
+La lettura da parte del microprocessore, si è detto, segue le direttrici alto-basso e sini-
+stra-destra, per cui nell’esempio di Fig. XIV.6.4 non viene letto correttamente il collega-
+mento di %I0.1 in AND con %I0.2 che attiva l’uscita %Q0.0.
+Infatti il funzionamento di un programma siffatto è il seguente:
+–  lo stato alto dei contatti %I0.0 e %I0.2 determina la rispettiva messa ad 1 delle bobine 
+%Q0.0 e %Q0.1;
+Segno
+Descrizione
+***             
+--( )--
+Bobina. Lo stato del collegamento a sinistra è copiato nella variabile booleana 
+associata, verso il collegamento a destra.
+***             
+--(/)--
+Bobina negata. Lo stato del collegamento a sinistra è copiato verso il collegamento 
+a destra. L’inverso dello stato del collegamento a sinistra è copiato nella variabile 
+booleana associata (se lo stato è ON la variabile è OFF).
+***             
+--(S)--
+Bobina SET (ritenuta). La variabile booleana associata viene messa allo stato ON e 
+rimane in questo stato se il collegamento a sinistra è ON (cambia di stato se viene 
+azionata la bobina di RESET).
+***             
+--(R)--
+Bobina RESET (non ritenuta). La variabile booleana associata viene rimessa allo 
+stato OFF e rimane in questo stato se il collegamento a sinistra è ON (cambia di 
+stato se viene azionata la bobina di SET).
+***             
+--(M)--
+Bobina di memorizzazione.
+***             
+--(SM)--
+Bobina di memorizzazione SET.
+***             
+--(RM)--
+Bobina di memorizzazione RESET.
+***             
+--(P)--
+Bobina rilevatrice di transizione positiva. Lo stato della variabile è ON tra una 
+valutazione e la successiva, quando viene rilevato un cambiamento di stato da OFF 
+a ON del collegamento sinistro.
+***             
+--(N)--
+Bobina rilevatrice di transizione negativa. Lo stato della variabile è ON tra una 
+valutazione e la successiva, quando viene rilevato un cambiamento di stato da ON a 
+OFF del collegamento sinistro.
+ *** sostituisce la variabile booleana associata al contatto.
+
+[PAG 1384]
+XIV-72
+AUTOMAZIONE
+Fig. XIV.6.1   Struttura di una rete (rung).
+Fig. XIV.6.2   Tipica scansione di una rete da parte di PLC.
+Fig. XIV.6.3
+
+[PAG 1385]
+AUTOMAZIONE
+XIV-73
+ 
+Fig. XIV.6.4  
+–  la messa a 1 dei contatti %I0.0 e %I0.1 causa l’eccitazione delle uscite %Q0.0 e 
+%Q0.1;
+–  la messa ad 1 dei contatti %I0.1 e %I0.2 determina la sola eccitazione dell’uscita 
+%Q0.1, poiché la CPU non ha memorizzato che il contatto %I0.1 è in AND con %I0.2 
+poiché non ha retroattività nella lettura e quindi l’uscita %Q0.0 rimane diseccitata.
+Una seconda possibilità di programmazione è quella raffigurata nella Fig. XIV.6.5, 
+con il seguente funzionamento:
+Fig. XIV.6.5  
+–  la messa ad 1 dei contatti %I0.0 e %I0.2 determina l’eccitazione delle uscite corri-
+spondenti %Q0.0 e %Q0.1 come nel caso del programma precedente;
+–  la messa allo stato high dei contatti %I0.0 e %I0.1 determina la messa ad 1 della sola 
+uscita %Q0.0 in quanto non c’è retroattività nella lettura da parte della CPU;
+–  la messa ad 1 degli ingressi %I0.1 e %I0.2 determina l’eccitazione delle due uscite 
+%Q0.0 e %Q0.1, contrariamente a quanto accadeva nella precedente programmazione.
+ L’unica soluzione possibile è quella del circuito di Fig. XIV.6.6, dove però, ripetendo 
+in parte il circuito, si occupa uno spazio più lungo di memoria.
+Fig. XIV.6.6
+
+[PAG 1386]
+XIV-74
+AUTOMAZIONE
+Nella editazione di reti con il diagramma a contatti occorre tenere presente:
+–  Se vi sono dei bit in alternativa viene tenuto conto dello stato logico dell’ultimo bit 
+letto. L’esplicazione di tale postulato si vede nel programma rappresentato in Fig. XIV.6.7, 
+dove due bobine (%Q0.2 e %Q0.3) sono interbloccate tra loro. Con una logica cablata 
+quando si chiude il contatto %I0.3, l’attivazione di uno o dell’altro relè è casuale: può 
+essere che nessuno dei due magneti dei relè venga attirato; che ci siano dei rimbalzi su 
+entrambi, ma che nessuno dei due venga comunque eccitato; che si ecciti l’uno o l’altro a 
+seconda del diverso tempo di salita. In una logica programmabile ciò non può accadere poi-
+ché, per la tipica modalità di scrutamento degli I/O che caratterizza il PLC, il registro imma-
+gine terrà conto, nell’attivazione delle uscite, dell’ultimo stato logico letto nel momento in 
+cui vi siano delle incongruenze. Nel nostro caso sarà sempre attivata l’uscita %Q0.2.
+Fig. XIV.6.7  
+–  Nella zona riservata ai test non si possono editare delle bobine, come pure nella zona 
+riservata alle azioni non si possono programmare dei contatti. Inoltre una bobina può 
+anche essere collegata direttamente alla barra potenziale di sinistra per una attivazione 
+incondizionata oltre che condizionata da un test (Fig. XIV.6.8).
+Fig. XIV.6.8  
+–  Contrariamente a quanto accade in un sistema a logica cablata, dove ogni contatto uti-
+lizzato deve essere presente fisicamente, nella logica programmabile ogni bit non esistendo 
+se non virtualmente, nel programma che viene sviluppato, un contatto di I/O, di una memo-
+ria interna, di un timer, di un counter, può essere ripetuto all’infinito (Fig. XIV.6.9).
+
+[PAG 1387]
+AUTOMAZIONE
+XIV-75
+Fig. XIV.6.9  
+–  Non vi è limitazione al numero di contatti da collegare in serie ed in parallelo tra loro. 
+Generalmente la limitazione è costituita dalle dimensioni dello schermo di editazione (10 
+colonne + 1 per 7 righe), per cui si usa appoggiare eventualmente il risultato di una riga di 
+contatti in serie o di più contatti in parallelo su un bit interno (memoria), che viene poi 
+ripreso nella rete successiva (Fig. XIV.6.10).
+Fig. XIV.6.10
+
+[PAG 1388]
+XIV-76
+AUTOMAZIONE
+–  Una bobina (tranne la bobina di Set/Reset) un counter o un timer non possono essere 
+programmati più di una volta con lo stesso indirizzo.
+Il ladder (chiamato anche schema a contatti o diagramma a relè) è tuttora il linguaggio 
+più diffuso, poiché permette l’avvicinamento al PLC in modo immediato a tutta quella 
+schiera di operatori che eseguono manutenzione e assistenza alle macchine in fabbrica (in 
+genere operatori elettromeccanici); risulta infatti molto semplice il passaggio da una rap-
+presentazione grafica di tipo elettrico (schema funzionale) alla rete ladder.
+6.3.2.  Function Block Diagram (FBD)
+Il Diagramma a Blocchi Funzionale (Function Block Diagram) è caratterizzato dagli 
+elementi comuni ai linguaggi grafici elencati precedentemente, le varie parti di cui è com-
+posto devono essere collegate tra loro con delle linee di circolazione del segnale.
+Il flusso del segnale segue la direzione: uscita destra di una funzione o di un blocco 
+funzionale, entrata sinistra di una funzione o di un blocco funzionale successivo.
+Diversamente dal diagramma a contatti, nel FBD non è permesso il collegamento tra 
+loro delle uscite di un parallelo. Di conseguenza è necessario utilizzare una funzione defi-
+nita blocco OR che risulterà essere uguale a quella riportata nella Fig. XIV.6.11.
+Fig. XIV.6.11  
+L’ordine di valutazione delle reti seguirà la seguente regola: è obbligatorio completare 
+la valutazione di una rete prima di effettuare la valutazione di un’altra rete, utilizzante una 
+o più uscite delle reti precedentemente valutate. 
+6.3.3.  Sequential Function Chart (SFC)
+Gli elementi che rientrano nel Diagramma Funzionale in Sequenza (Sequential Func-
+tion Chart) permettono di dividere un’unità di organizzazione di programma (in questo 
+caso solamente blocchi funzione e programmi) in singoli segmenti; quest’ultimi forme-
+ranno un insieme di passi e transizioni collegati con dei collegamenti diretti. Ad ogni 
+passo vengono associate delle azioni, mentre ad ogni transizione vengono legate delle 
+condizioni di transizione.
+La relazione che lega dei blocchi funzione e dei programmi ai propri ingressi e uscite 
+osserva delle regole definite azioni associate al passo. Un passo può essere attivo o inat-
+tivo e lo stato di un blocco funzione, in ogni momento, viene definito dall’insieme dei 
+passi attivi e dai valori delle sue variabili interne e delle sue uscite. La Fig. XIV.6.12 rias-
+sume le caratteristiche dei passi.
+Se un passo viene rappresentato graficamente, esso deve avere il nome sotto forma di 
+identificatore; se viene rappresentato letteralmente, deve essere una costruzione 
+STEP...END_STEP. Graficamente i suoi collegamenti sono rappresentati da linee verti-
+cali; in formato testo sono dati da costruzioni TRANSITION...END_TRANSITION.
+Si assume che il passo possa essere un comportamento invariabile della parte di 
+comando. Se si considera il primo passo di un diagramma funzionale sequenziale, esso è 
+attivo e rimarrà tale finché delle situazioni (condizioni) non ne determineranno il supera-
+mento, passando al passo successivo. L’azione associata al passo specifica cosa deve suc-
+
+[PAG 1389]
+AUTOMAZIONE
+XIV-77
+cedere perché il passo sia attivo (Fig. XIV.6.13).
+Fig. XIV.6.12  
+Fig. XIV.6.13  
+Ad ogni transizione viene sempre legata una condizione di transizione che permette di 
+passare da uno o più passi a uno o più passi successivi. Essa è rappresentata da una linea 
+orizzontale, trasversale alla linea di collegamento (Fig. XIV.6.14).
+Una condizione sempre vera deve riportare il simbolo “1” o la parola chiave TRUE. I 
+modi con i quali è possibile legare una condizione ad una transizione sono i seguenti:
+–  espressione booleana, espressa in linguaggio testuale strutturato, situata sulla destra 
+della linea di collegamento (Fig. XIV.6.15);
+
+[PAG 1390]
+XIV-78
+AUTOMAZIONE
+Fig. XIV.6.14  
+Fig. XIV.6.15  
+–  con rete, espressa in diagramma a contatti, senza barra destra e con l’uscita che inter-
+seca la linea di collegamento (Fig. XIV.6.16);
+Fig. XIV.6.16  
+–  con rete, in diagramma a blocchi funzionali, con l’uscita che interseca la linea di col-
+legamento verticale (Fig. XIV.6.17);
+–  con uscite, espresse in diagramma a contatti o a blocchi funzionali, che intersecano 
+con un connettore la linea di collegamento verticale (Fig. XIV.6.18);
+–  con costruzione TRANSITION...END_TRANSITION in linguaggio testuale struttu-
+rato, contenente la parola chiave TRANSITION FROM seguita dal nome del passo o dei 
+passi precedenti, dalla parola chiave TO seguita dal nome del passo o dei passi susse-
+guenti, un operatore di assegnazione (:=) seguito da un’espressione booleana che deter-
+mina la condizione e dalla parola chiave finale END_TRANSITION (Fig. XIV.6.19);
+
+[PAG 1391]
+AUTOMAZIONE
+XIV-79
+Fig. XIV.6.17  
+Fig. XIV.6.18  
+Fig. XIV.6.19  
+–  con costruzione TRANSITION...END_TRANSITION in linguaggio lista di istruzioni, 
+contenente la parola chiave TRANSITION FROM seguita dal nome del passo o dei passi 
+precedenti e da due punti (:), dalla parola chiave TO seguita dal nome del passo o dei 
+passi susseguenti, su una linea separata da una lista di istruzioni il cui risultato determina 
+la condizione e dalla parola chiave finale END_TRANSITION su un’altra linea separata 
+(Fig. XIV.6.20);
+
+[PAG 1392]
+XIV-80
+AUTOMAZIONE
+Fig. XIV.6.20  
+–  adoperando il nome di transizione come identificatore, messo a destra del collega-
+mento diretto (Fig. XIV.6.21).
+Fig. XIV.6.21  
+Ogni passo può avere associate una o più azioni; se ne fosse sprovvisto invece esso si 
+troverebbe nella condizione di attendere (WAIT) che diventi vera la condizione della tran-
