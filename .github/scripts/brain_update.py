@@ -8,7 +8,6 @@ import os, json, base64, urllib.request, urllib.error, datetime, re, time
 
 GITHUB_TOKEN = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
 MISTRAL_KEY  = os.environ.get('MISTRAL_KEY', '')
-print(f'MISTRAL_KEY presente: {"SI" if MISTRAL_KEY else "NO"} ({len(MISTRAL_KEY)} chars)')
 REPO = 'francescocaruso487-tech/bioserra'
 LAT  = 41.09696262016739
 LON  = 14.388065360906802
@@ -89,6 +88,8 @@ def mistral_chat(prompt, max_tokens=2000, temperatura=0.2):
     return content
 
 def parse_json(testo):
+    if not testo: return None
+    testo = testo.replace('```json', '').replace('```', '').strip()
     s, e = testo.find('{'), testo.rfind('}')
     if s >= 0 and e > s:
         try: return json.loads(testo[s:e+1])
@@ -305,7 +306,6 @@ Rispondi SOLO JSON valido."""
 
     try:
         risposta = mistral_chat(prompt, max_tokens=1200, temperatura=0.2)
-        print(f'  KB risposta ({len(risposta)}c): {risposta[:200]}')
         result = parse_json(risposta)
         if not result:
             print(f'  KB parse_json fallito')
@@ -431,7 +431,6 @@ Rispondi SOLO JSON valido. Nessun testo fuori dal JSON."""
 
     try:
         risposta = mistral_chat(prompt, max_tokens=1500, temperatura=0.25)
-        print(f'  Briefing raw ({len(risposta)}c): {risposta[:400]}')
         result = parse_json(risposta)
         if not result:
             # Fallback: crea struttura minima dal testo
