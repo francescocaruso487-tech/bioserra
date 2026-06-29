@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-29T08:37:56.454217+00:00",
+  "lastUpdate": "2026-06-29T10:15:19.169421+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -1750,6 +1750,39 @@
       "fonte_a": "Come Innaffiare Le Piante Di Cannabis",
       "fonte_b": "Come Far Germinare I Semi Di Cannabis Con Il Kit Smart Start",
       "originalita": "L'esperimento combina due approcci normalmente trattati separatamente: l'uso di confezioni miste per la biodiversità genetica (Manuale A) e la germinazione ottimizzata con Kit Smart Start (Manuale B). Nessun manuale suggerisce di testare l'interazione tra questi due elementi in un sistema Living Soil outdoor, né di misurare l'impatto sulla resa finale. L'originalità sta nell'integrazione di germinazione controllata e selezione varietale in un contesto di agricoltura rigenerativa.",
+      "id": "esp_conn_2026-06-29_001",
+      "data_proposta": "2026-06-29",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto del pH controllato su produzione di CBD in varietà low-THC in Living Soil outdoor",
+      "ipotesi": "Varietà di cannabis a basso THC (<1%) coltivate in Living Soil outdoor con pH controllato a 6.0–7.0 mostreranno una produzione di CBD significativamente superiore rispetto a piante con pH non controllato (5.0–8.0), a parità di nutrienti. Questo perché, come riportato nel Manuale A, lo squilibrio di pH inibisce l'assorbimento dei nutrienti essenziali per la sintesi di CBD, mentre il Manuale B evidenzia la sensibilità di queste varietà a crescita lenta senza sintomi evidenti. Un pH ottimale in Living Soil favorisce l'attività microbica e la disponibilità di nutrienti, massimizzando la produzione di cannabinoidi.",
+      "protocollo": [
+        "Preparare 20 piante di una stessa varietà CBD (es. 'Carmagnola') da seme femminizzato, suddivise in 2 gruppi di 10: Gruppo A (pH controllato) e Gruppo B (pH non controllato).",
+        "Coltivare tutte le piante in Living Soil outdoor (BioSerra Caserta), con substrato identico (compost maturo + biochar + micorrize) e stessa esposizione solare. Utilizzare contenitori da 20L con drenaggio.",
+        "Per il Gruppo A, misurare e regolare settimanalmente il pH del suolo (profondità 10cm) a 6.5 ± 0.2 usando un pH-metro digitale e soluzioni di acidificazione (acido citrico diluito) o alcalinizzazione (bicarbonato di potassio). Per il Gruppo B, non intervenire sul pH, lasciando il naturale equilibrio del Living Soil (pH variabile 5.0–8.0).",
+        "Dopo 30 giorni, raccogliere le foglie apicali di ogni pianta (stesso stadio fenologico), essiccare a 22°C per 7 giorni, e analizzare il contenuto di CBD tramite test HPLC (o kit colorimetrico quantitativo) su campioni omogenei."
+      ],
+      "materiali": [
+        "20 piante di cannabis CBD femminizzate (es. 'Carmagnola')",
+        "pH-metro digitale (precisione ±0.1), strisce reattive di controllo",
+        "acido citrico (1%), bicarbonato di potassio (1%), acqua distillata",
+        "Living Soil pre-preparato (compost, biochar, micorrize)",
+        "contenitori da 20L con fori di drenaggio",
+        "essiccatore a temperatura controllata, bilancia analitica, kit HPLC o colorimetrico per CBD"
+      ],
+      "durata_giorni": 37,
+      "misure": [
+        "Contenuto di CBD (%) nelle foglie essiccate: confrontare la media del Gruppo A vs Gruppo B con test t di Student (p<0.05).",
+        "Verifica: se il Gruppo A mostra +20% CBD rispetto al Gruppo B, l'ipotesi è confermata."
+      ],
+      "variabili_controllo": "Varietà di cannabis, substrato, esposizione solare, irrigazione (solo acqua, no nutrienti aggiunti), temperatura, umidità, stadio fenologico al raccolto.",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "Manuale A: pH per la cannabis: come misurarlo e regolarlo",
+      "fonte_b": "Manuale B: Tutto Quello Che Devi Sapere Sulla Coltivazione Della Cannabis",
+      "originalita": "L'esperimento unisce due concetti apparentemente scollegati: la sensibilità al pH delle varietà low-THC (Manuale B) e l'importanza del pH in Living Soil per l'assorbimento nutrizionale (Manuale A). Nessun manuale suggerisce di testare l'effetto del pH su varietà CBD in condizioni outdoor con Living Soil, né propone un protocollo pratico per misurare la produzione di CBD in risposta al pH.",
       "id": "esp_conn_2026-06-29_001",
       "data_proposta": "2026-06-29",
       "attivo": false,
