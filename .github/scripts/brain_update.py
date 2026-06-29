@@ -426,7 +426,9 @@ Rispondi SOLO JSON valido. Nessun testo fuori dal JSON."""
         risposta = mistral_chat(prompt, max_tokens=2500, temperatura=0.25)
         return parse_json(risposta)
     except Exception as ex:
-        print(f'  genera_briefing ERR: {ex}')
+        import traceback
+        print(f'  genera_briefing ERR: {type(ex).__name__}: {ex}')
+        print(traceback.format_exc()[:500])
         return None
 
 # ── Memoria conversazioni ────────────────────────────────────────
