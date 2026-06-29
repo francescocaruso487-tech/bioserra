@@ -1,0 +1,1823 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 31/116 ===
+Chars: 43,923 | Offset: 1,326,185
+
+
+
+[PAG 678]
+VII-174
+ELETTROTECNICA GENERALE
+Per determinare univocamente le tre suscettanze deve essere scritta una terza equa-
+zione: si può ricavarla imponendo ad esempio che le tre suscettanze B1, B2, B3 assorbano
+una potenza reattiva uguale e contraria a quella assorbita dal carico. Si ottiene perciò:
+e quindi:
+da cui:
+Risolvendo il sistema si ottiene:
+Equilibratura e rifasamento totale del carico (cos = 1) si ottengono contemporanea-
+mente inserendo fra le fasi 1-2 una reattanza capacitiva X1 = 8,33 , fra le fasi 2-3 una
+reattanza capacitiva X2  10,86  e fra le fasi 3-1 una reattanza induttiva X3  10,86 .
+Per determinare il valore delle correnti di linea è sufficiente ricordare che essendo ora
+il carico equilibrato la potenza reale assorbita vale P = 
+UI e che la stessa è interamente
+a carico dalla resistenza; ciò permette di scrivere l’uguaglianza:
+che risolta rispetto a I fornisce:
+Le tre correnti di linea, che sono il risultato della sovrapposizione fra le correnti di
+linea assorbite dall’impedenza del carico e dalle suscettanze del triangolo equilibrante,
+formano una terna simmetrica diretta di correnti di valore efficace 35,15 A, esattamente in
+fase con la terna simmetrica delle tensioni stellate del sistema.
+Esempio 2
+Una linea trifase a 380 V (Fig. VII.9.22) alimenta un carico collegato a stella compo-
+sto da tre impedenze diverse: Z1 (puramente ohmica) di valore 20 , Z2 (ohmico-indut-
+tiva) con resistenza 10  e reattanza 20  e Z3 (puramente capacitiva) con reattanza 50 .
+Determinare le tensioni ai capi delle impedenze e le correnti assorbite.
+Risoluzione
+Le tensioni stellate, rispetto al centro ideale del sistema, hanno valore efficace
+380/
+; queste tensioni, disposte sul piano di Gauss come in Fig. VII.9.23, sono espresse
+dalle relazioni:
+B1
+B2
+–
+G
+3
+------
+–
+B
+–
+0,028
+=
+=
+B
+– U12
+2
+B1U12
+2
+B2U23
+2
+B3U31
+2
++
++
+=
+B
+– Ud
+2
+B1
+B2
+B3
++
++
+
+Ud
+2
+=
+B
+–
+B1
+B2
+B3
++
++
+0,12
+=
+=
+B1
+0,12 ;
+
+B2
+0,092 ;
+
+B3
+0,092
+–
+
+3
+3UI
+GU2
+=
+I
+GU
+3
+--------
+0,16
+380
+
+3
+---------------------------
+35,15 A
+
+=
+=
+3
+E1
+220 ;
+=
+E2
+220
+1
+2--
+–
+j
+3
+2
+-------
+–
+
+
+
+;
+=
+E3
+220
+1
+2--
+–
+j
+3
+2
+-------
++
+
+
+
+
+=
+
+[PAG 679]
+ELETTROTECNICA GENERALE
+VII-175
+Le impedenze sono esprimibili con:
+a cui corrispondono le ammettenze:
+Il vettore U00, che definisce il potenziale del centro stella reale rispetto a quello
+ideale, si calcola con la relazione:
+sostituendo nella precedente relazione i dati numerici e risolvendola si ottiene:
+Le tensioni reali sulle fasi sono perciò date da:
+a cui corrispondono i valori efficaci:
+Fig. VII.9.22   
+Fig. VII.9.23   
+U31
+1
+2
+3
+I1
+I2
+I3
+U12
+U23
+Z1
+Z2
+Z3
+E1
+E2
+E3
+I1
+I2
+I3
+U10
+U20
+U30
+0
+0’
+Z1
+20 ;
+=
+Z2
+10
+j20 ;
++
+=
+Z3
+j50
+–
+=
+Y1
+1
+Z1
+-----
+0,05 ;
+=
+=
+Y2
+1
+Z2
+-----
+0,02
+j0,04 ;
+–
+=
+=
+Y3
+1
+Z3
+-----
++j0,02
+=
+=
+U00
+Y1E1
+Y2E2
+Y3E3
++
++
+Y1
+Y2
+Y3
++
++
+---------------------------------------------------------
+=
+U00
+28,7
+–
+j31,2
+–
+=
+U10
+E1
+U00
+–
+220
+28,7
+–
+j31,2
+–
+
+
+–
+248,7
+j31,2
++
+=
+=
+=
+U20
+E2
+U00
+–
+220
+1
+2--
+–
+j
+3
+2
+-------
+–
+
+
+
+
+28,7
+–
+j31,2
+–
+
+
+–
+81,3
+j159,3
+–
+–
+=
+=
+=
+U30
+E3
+U00
+–
+220
+1
+2--
+–
+j
+3
+2
+-------
++
+
+
+
+
+28,7
+–
+j31,2
+–
+
+
+–
+81,3
+–
+j221,7
++
+=
+=
+=
+
+[PAG 680]
+VII-176
+ELETTROTECNICA GENERALE
+I valori efficaci delle correnti risultano:
+La corrente I1 è in fase con la tensione U10, la corrente I2 è in ritardo sulla tensione
+U20 di un angolo ricavabile dalla relazione tg2 = X2R2 = 2 a cui corrisponde un angolo
+2  63° 45 mentre la corrente I3 è in anticipo di 90° sulla tensione U30. La somma vetto-
+riale delle correnti è nulla perché manca il filo neutro.
+Esempio 3
+Una linea trifase a 380 V (Fig. VII.9.24) alimenta carichi equilibrati aventi le seguenti
+caratteristiche:
+–  carico 1: puramente ohmico con potenza assorbita uguale a 10 kW;
+–  carico 2: ohmico-induttivo con potenza assorbita 20 kW e fattore di potenza 0,8;
+–  carico 3: ohmico-induttivo con potenza assorbita 15 kW e fattore di potenza 0,5.
+Determinare la corrente, il fattore di potenza totale e la potenza della batteria di con-
+densatori necessaria a portare il fattore di potenza totale a 0,92.
+Fig. VII.9.24   
+Risoluzione
+Calcolo delle potenze totali assorbite dai carichi
+–  potenza attiva:
+–  potenza reattiva:
+–  potenza apparente
+U 
+10
+250,6 V;
+
+U 
+20
+178,8 V;
+
+U 
+30
+236,1 V
+
+I1
+U 
+10
+Z1
+----------
+12,5 A ;
+
+=
+I2
+U 
+20
+Z2
+----------
+8 A ;
+
+=
+I3
+U 
+30
+Z3
+----------
+4,7 A
+
+=
+Condens.
+Carico 1
+Carico 2
+Carico 3
+P
+P1
+P2
+P3
++
++
+10
+20
+15
++
++
+45 kW
+=
+=
+=
+Q
+Q2
+Q3
++
+P2tg2
+P3tg3 =
++
+=
+=
+20
+0,75
+
+
+
+15
+1,73
+
+
+
++
+15
+25,95
++
+40,95 kVAR
+=
+=
+=
+S
+P2
+Q2
++
+452
+40,952
++
+60,8 kVA
+=
+=
+=
+
+[PAG 681]
+ELETTROTECNICA GENERALE
+VII-177
+La corrente totale assorbita dai carichi risulta:
+e il fattore di potenza totale corrispondente:
+Per rifasare la linea a cos = 0,92 è necessario che la potenza reattiva assorbita dal
+carico dopo il rifasamento risulti pari a:
+per cui la potenza reattiva capacitiva della batteria di rifasamento sarà:
+BIBLIOGRAFIA
+AA. VV., Manuale del Perito Industriale, Cremonese, Firenze, 1980
+BIONDO G., SACCHI E., Manuale di Elettronica e Telecomunicazioni, IV edizione,
+Hoepli, Milano, 1996.
+CONTE G., Elettrotecnica Generale, I edizione, Hoepli, Milano, 2000.
+CONTE G., DONINI E., Tecnologia, Disegno e Progettazione, I edizione, Hoepli,
+Milano, 1994.
+CORREGGIARI F., Costruzione di Macchine Elettriche, VI edizione, La Goliardica,
+Milano, 1967.
+CREPAZ S., Macchine Elettriche, I edizione, Clup, Milano, 1976.
+OLIVIERI L., RAVELLI E., Elettrotecnica, volume I, XVII edizione, Cedam, Padova,
+1972.
+PEZZI M., Elettrotecnica generale, Zanichelli, Bologna, 1977.
+I
+S
+3U
+-----------
+60 800
+3
+380
+
+------------------------
+92,5 A
+=
+=
+=
+cos
+P
+S---
+45 000
+60 800
+---------------
+0,74
+=
+=
+=
+Qr
+Ptgr
+45
+0,426
+
+19,2 kVAR
+=
+=
+=
+Qc
+Q
+Qr
+–
+40,95
+19,2
+–
+21,75 kVAR
+=
+=
+=
+
+[PAG 683]
+Sezione VIII
+Macchine elettriche
+INDICE
+pag.
+1    ELEMENTI GENERALI SULLE MACCHINE ELETTRICHE . . . . . . . . . . . . .
+ 4
+1.1    Materiali conduttori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.1.1   Effetto pellicolare e di prossimità  . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+1.2    Materiali magnetici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+1.2.1   Perdite nel ferro . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+1.3    Materiali isolanti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+1.4    Perdite meccaniche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 7
+1.5    Potenze e rendimento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+2    TRASFORMATORE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+2.1    Principio di funzionamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+2.2    Funzionamento a vuoto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+2.2.1   Forza elettromotrice indotta  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+2.2.2   Corrente a vuoto  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+2.3    Funzionamento a carico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+2.3.1   Correnti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+2.3.2   Impedenze serie Z1 e Z2  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+2.3.3   Circuito equivalente  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+2.3.4   Schemi equivalenti semplificati  . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+2.4    Funzionamento in cortocircuito . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+2.5    Caratteristiche di funzionamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+2.5.1   Potenze e rendimento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+2.5.2   Variazione di tensione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+2.6    Trasformatore trifase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+2.6.1   Funzionamento a vuoto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+2.6.2   Funzionamento a carico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+2.6.3   Funzionamento in cortocircuito . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+2.6.4   Caratteristiche di funzionamento . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+2.7    Elementi costruttivi dei trasformatori  . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+2.7.1   Circuiti magnetici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+2.7.2   Avvolgimenti  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+2.7.3   Raffreddamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+2.8    Parallelo dei trasformatori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+2.9    Trasformatori speciali . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+2.9.1   Trasformatore a due secondari  . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+2.9.2   Trasformatore a doppio rapporto . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+2.9.3   Trasformatore trifase a V  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+
+[PAG 684]
+VIII-2
+MACCHINE ELETTRICHE
+2.9.4   Trasformatore tri-esafase  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+28
+2.9.5   Autotrasformatori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+28
+2.9.6   Trasformatori variatori di tensione . . . . . . . . . . . . . . . . . . . . . . . . . 
+29
+3    CAMPO MAGNETICO ROTANTE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+30
+3.1    Vettori rotanti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+30
+3.1.1   Generazione di un campo magnetico rotante  . . . . . . . . . . . . . . . . . 
+31
+3.2    Campo rotante trifase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+31
+3.2.1   Velocità sincrona  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+33
+3.2.2   Distribuzione degli avvolgimenti  . . . . . . . . . . . . . . . . . . . . . . . . . . 
+33
+3.3    Fem indotta  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+33
+3.3.1   Fattore di forma  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+34
+3.3.2   Fattore di distribuzione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+34
+3.3.3   Fattore di passo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+35
+3.4    Macchine statiche a campo rotante . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+36
+3.4.1   Trasformatore a campo rotante . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+36
+3.4.2   Variatore di fase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+36
+3.4.3   Variatore di tensione trifase  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+37
+4    MOTORE ASINCRONO  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+37
+4.1    Principio di funzionamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+37
+4.2    Funzionamento a vuoto  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+38
+4.2.1   Corrente a vuoto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+38
+4.2.2   Potenza a vuoto  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+38
+4.3    Funzionamento a carico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+39
+4.3.1   Grandezze rotoriche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+39
+4.3.2   Schema elettrico equivalente  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+39
+4.4    Caratteristiche di funzionamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+40
+4.4.1   Potenze e rendimento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+40
+4.4.2   Caratteristica meccanica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+41
+4.5    Diagramma circolare  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+43
+4.5.1   Schema equivalente statorico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+43
+4.5.2   Analisi del diagramma circolare . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+44
+4.5.3   Generatore asincrono  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+45
+4.6    Avviamento del motore asincrono  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+45
+4.6.1   Avviamento senza carico applicato  . . . . . . . . . . . . . . . . . . . . . . . . 
+46
+4.6.2   Avviamento con carico applicato . . . . . . . . . . . . . . . . . . . . . . . . . . 
+47
+4.7    Regolazione della velocità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+48
+4.7.1   Metodo del reostato rotorico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+48
+4.7.2   Commutazione dei poli . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+49
+4.7.3   Variazione della frequenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+49
+4.8    Motore asincrono monofase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+49
+4.8.1   Principio di funzionamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+49
+4.8.2   Avviamento a condensatore  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+50
+4.8.3   Motore a poli schermati  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+50
+4.9    Elementi costruttivi dei motori asincroni  . . . . . . . . . . . . . . . . . . . . . . . . . 
+51
+
+[PAG 685]
+MACCHINE ELETTRICHE
+VIII-3
+4.9.1   Statore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+51
+4.9.2   Rotore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+52
+4.9.3   Raffreddamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+52
+5    GENERATORE SINCRONO  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+52
+5.1    Principio di funzionamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+53
+5.2    Funzionamento a vuoto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+53
+5.2.1   Fem indotta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+53
+5.3    Funzionamento a carico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+54
+5.3.1   Circuito elettrico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+54
+5.3.2   Reazione d’armatura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+54
+5.4    Studio dell’alternatore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+55
+5.4.1   Metodo di Behn Eschenburg . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+55
+5.4.2   Metodo di Potier  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+57
+5.5    Caratteristiche di funzionamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+57
+5.5.1   Potenze e rendimento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+57
+5.5.2   Variazione di tensione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+58
+5.6    Macchina sincrona collegata alla rete  . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+59
+5.6.1   Parallelo degli alternatori  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+59
+5.6.2   Motore sincrono  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+61
+5.6.3   Macchina sincrona come reattore  . . . . . . . . . . . . . . . . . . . . . . . . . .
+62
+5.6.4   Diagramma circolare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+63
+5.6.5   Curva a V  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+63
+5.7    Principi costruttivi delle macchine sincrone  . . . . . . . . . . . . . . . . . . . . . . .
+64
+5.7.1   Rotore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+64
+5.7.2   Statore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+65
+5.7.3   Raffreddamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+66
+6    GENERATORE A CORRENTE CONTINUA . . . . . . . . . . . . . . . . . . . . . . . . . .
+66
+6.1    Principio di funzionamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+66
+6.2    Funzionamento a vuoto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+67
+6.2.1   Forza elettromotrice indotta  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+67
+6.2.2   Potenza a vuoto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+69
+6.3    Funzionamento a carico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+69
+6.3.1   Circuito elettrico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+69
+6.3.2   Reazione di armatura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+69
+6.4    Caratteristiche di funzionamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+71
+6.4.1   Potenze e rendimento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+71
+6.4.2   Caratteristica esterna . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+72
+6.5    Elementi costruttivi delle macchine a corrente continua . . . . . . . . . . . . . .
+72
+6.5.1   Statore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+72
+6.5.2   Rotore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+73
+6.6    Dinamo ad eccitazione parallelo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+74
+6.6.1   Funzionamento a vuoto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+74
+6.6.2   Funzionamento a carico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+74
+6.7    Dinamo ad eccitazione serie  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+76
+
+[PAG 686]
+VIII-4
+MACCHINE ELETTRICHE
+6.8    Dinamo ad eccitazione composta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+77
+7    MOTORE A CORRENTE CONTINUA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+77
+7.1    Principio di funzionamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+77
+7.2    Funzionamento a vuoto  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+78
+7.3    Funzionamento a carico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+79
+7.3.1   Potenze e rendimento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+79
+7.3.2   Caratteristica meccanica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+79
+7.4    Avviamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+80
+7.5    Regolazione della velocità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+80
+7.6    Motore ad eccitazione parallelo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+81
+7.7    Motore ad eccitazione serie  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+82
+7.8    Motori ad eccitazione composta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+84
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+85 
+1  ELEMENTI GENERALI SULLE MACCHINE ELETTRICHE
+1.1  Materiali conduttori
+I circuiti delle macchine elettriche sono realizzati per la quasi totalità in rame elettro-
+litico; solo in alcuni casi si impiega l’alluminio. La resistività  dei conduttori è indicata 
+nella tabella seguente.
+Poiché in esercizio le macchine si riscaldano, occorre calcolare le perdite per effetto 
+Joule tenendo conto che la resistività elettrica, e con essa la resistenza del conduttore, 
+variano con la temperatura (si veda la Sez. VII Elettrotecnica generale) secondo la legge:
+(VIII.1.1)
+in cui  è il coefficiente termico (si veda la Tab. VIII.1.1) mentre T1 e T2 sono le due tem-
+perature, iniziale e finale.
+Nel caso delle prove di collaudo, la resistenza deve essere sempre riferita al caso più 
+sfavorevole, cioè alla massima temperatura di funzionamento, o convenzionale di 75 °C.
+Il dimensionamento della sezione dei conduttori viene fatto considerando una densità 
+di corrente J = 2  4 A/mm2.
+I conduttori percorsi da corrente sono sede di perdite nel rame, valutate con la formula:
+(VIII.1.2)
+Tab. VIII.1.1    Resistività e coefficiente termico di materiali conduttori
+ ( mm2/m) a 20 °C
+1/ (°C)
+rame
+0,018
+234,5
+alluminio
+0,028
+232
+2
+1
+T2
+1
+---
++
+T1
+1
+---
++
+------------------
+=
+Pcu
+RI2
+=
+
+[PAG 687]
+MACCHINE ELETTRICHE
+VIII-5
+1.1.1  Effetto pellicolare e di prossimità
+In corrente alternata la densità di corrente non è costante all’interno del conduttore, 
+ma la corrente tende ad addensarsi negli strati periferici. Ciò dipende dal fatto che i filetti 
+di corrente centrali sono concatenati con un flusso maggiore di quello che si concatena coi 
+filetti periferici; essi quindi sono sede di una maggiore reattanza. In conseguenza a ciò, la 
+corrente totale scorre, tendendo ad occupare una sezione anulare periferica, minore della 
+sezione effettiva, determinando con ciò un aumento della resistenza.
+Alla frequenza industriale questo fatto diviene rilevante soltanto per macchine di 
+potenza elevata ed in conduttori di sezione molto grande. Quando ciò avviene, per unifor-
+mare la distribuzione della corrente si può ricorrere a conduttori formati da rami elemen-
+tari isolati fra loro e connessi in parallelo, conformati a spirale in modo che tutte le sezioni 
+elementari si avvicendino ed occupino mediamente la stessa posizione.
+Oltre a questo fenomeno, in corrente alternata avviene anche che nelle spire contigue 
+di un avvolgimento si manifesti uno spostamento dei filetti di corrente nel conduttore 
+detto effetto di prossimità.
+1.2  Materiali magnetici
+I circuiti magnetici a flusso costante (induttori di macchine sincrone e a corrente con-
+tinua) sono realizzati in ferro fucinato. Per i circuiti soggetti a corrente alternata si 
+impiega lamierino ferromagnetico ad alta permeabilità (r = 103  104); in particolare per 
+i trasformatori si impiega il lamierino a cristalli orientati, ottenuto privilegiando la perme-
+abilità nella direzione del flusso e ciò per ridurre al minimo la corrente magnetizzante 
+necessaria. La curva di magnetizzazione di questi materiali denuncia la tendenza alla satu-
+razione (si veda la Sez. VII Elettrotecnica generale). In sede di progetto si deve tener 
+conto di una induzione massima accettabile, orientativamente BM = 1,2  1,6 T.
+1.2.1  Perdite nel ferro
+Sono di due origini: per isteresi e per correnti parassite (si veda la Sez. VII Elettrotec-
+nica generale).
+Le perdite per isteresi sono dovute al ciclo di isteresi del materiale (Fig. VIII.1.1) e 
+sono proporzionali alla frequenza e all’induzione massima secondo la relazione:
+(VIII.1.3)
+in cui , esponente di Steinmetz, si assimila a 2, mentre Ki dipende dalla natura del mate-
+riale.
+Fig. VIII.1.1  Ciclo di isteresi di un materiale ferromagnetico: Br = induzione residua; 
+Hc = campo coercitivo.
+Pi
+KifBM
+
+=
+B
+Br
+Hc
+H
+
+[PAG 688]
+VIII-6
+MACCHINE ELETTRICHE
+Le perdite per correnti parassite derivano dal fatto che l’effetto di induzione elettro-
+magnetica ha luogo anche nel materiale magnetico, che è conduttore, determinando 
+l’insorgenza di correnti concatenate col flusso, le quali permeano l’intero materiale scor-
+rendo ad inviluppo su piani normali alle linee di forza (Fig. VIII.1.2).
+Fig. VIII.1.2  Correnti parassite in un nucleo ferromagnetico.
+In sostanza il nucleo del circuito magnetico si comporta come l’insieme di tante spire 
+chiuse in cortocircuito e dissipanti una potenza: P = E2 / R, essendo E la fem indotta ed R
+la resistenza della spira equivalente.
+Con riferimento al lamierino della Fig. VIII.1.3, indichiamo con: Af = a la sezione 
+del flusso e Acu = b/ 2 la sezione della spira.
+Fig. VIII.1.3  Lamierino soggetto a correnti parassite.
+Essendo la fem indotta: E = kfBMa e la resistenza R = 2a / (b/2), la potenza per 
+unità di volume (ab) risulta
+(VIII.1.4)
+Essa è proporzionale al quadrato della frequenza, dell’induzione e dello spessore dei 
+lamierini.
+Per contenere queste perdite si opera aumentando la resistività del materiale con 
+l’impiego del ferro-silicio (Si 2 3%), come nel caso dei trasformatori, ma soprattutto 
+riducendo lo spessore dei lamierini. I lamierini comunemente impiegati hanno spessore di 
+0,35 mm o, per macchine di piccola potenza 0,5 mm; essi sono isolati fra loro mediante 
+carta incollata, vernici isolanti o, più semplicemente, con processi di fosfatazione.
+Complessivamente le macchine elettriche sono sedi di perdite nel ferro date da:
+(VIII.1.5)
+La bontà del materiale magnetico viene giudicata in base alla cifra di perdita che rap-
+presenta la perdita per kg di materiale sollecitato ad un’induzione magnetica alternata 
+a
+b
+
+
+
+Pcp
+Kcp
+f2BM
+22
+
+---------------------
+=
+Pf
+Pi
+Pcp
++
+=
+
+[PAG 689]
+MACCHINE ELETTRICHE
+VIII-7
+sinusoidale di valore massimo BM = 1 T alla frequenza di 50 Hz. I materiali in commercio 
+hanno cifre di perdita comprese fra 1 e 3 W/kg.
+1.3  Materiali isolanti
+Sono impiegati per isolare i conduttori fra loro e rispetto alle parti metalliche della 
+macchina. Sono di diversa natura in base alle necessità di lavorabilità ed alle caratteristi-
+che elettriche richieste che sono: la resistenza di isolamento, la rigidità dielettrica e 
+l’angolo di perdita (si veda la Sez. VII Elettrotecnica generale). Questo è dato da:
+(VIII.1.6)
+in cui è: C la capacità, Rp la resistenza di isolamento,  la frequenza di lavoro. Alle fre-
+quenze industriali le perdite nel dielettrico non sono apprezzabili e, di norma, vengono 
+incluse nelle perdite addizionali.
+Il grado di isolamento dei materiali in funzione della massima temperatura ammissi-
+bile è stabilito da una suddivisione in classi; nella Tab. VIII.1.2 sono indicate le caratteri-
+stiche di alcuni materiali di impiego comune.
+1.4  Perdite meccaniche
+Le perdite meccaniche delle macchine rotanti sono per attrito e per ventilazione. Le 
+prime sono dovute all’attrito presentato dai cuscinetti di sospensione che reggono l’albero 
+motore, attraverso il quale si esercita l’azione meccanica. Questi cuscinetti possono essere 
+a rotolamento oppure a velo d’olio; i primi sono impiegati molto largamente mentre quelli 
+a velo d’olio sono limitati ormai a macchine di potenza molto elevata. La presenza dei 
+cuscinetti determina una coppia di attrito che sottrae potenza all’albero, potenza propor-
+zionale, entro larghi limiti, alla velocità. Le perdite per ventilazione derivano dal trascina-
+mento dell’aria da parte del rotore e dall’azione ventilante di ventole appositamente 
+calettate sull’albero motore, che indirizzano un flusso d’aria in senso assiale alla mac-
+china. Anche queste perdite dipendono dalla velocità.
+1.5  Potenze e rendimento
+L’impiego delle macchine è definito dai dati indicati in targa, detti nominali, che sono 
+tipici per ogni macchina; in particolare è indicata la potenza nominale, la quale rappre-
+senta la potenza di dimensionamento e cioè la potenza che la macchina può erogare al 
+carico in servizio continuativo rimanendo entro i limiti di temperatura ammessi. Questa 
+potenza è indicata in:
+–  VA per i generatori in corrente alternata e per i trasformatori;
+–  W per i generatori in corrente continua ed i motori.
+La potenza nominale può essere superata nel caso di servizio intermittente o per brevi 
+periodi di tempo.
+Tab. VIII.1.2  Caratteristiche di alcuni materiali isolanti
+Classe
+Materiali
+Tmax (°C)
+Y
+A
+E
+B
+F
+carta, legno, tessuti
+gli stessi impregnati con vernice isolante
+smalti per conduttori
+tessuti in vetro
+gli stessi impregnati con resine
+90
+100
+120
+130
+150
+
+
+tan
+1
+CRp
+---------------
+=
+
+
+[PAG 690]
+VIII-8
+MACCHINE ELETTRICHE
+Tutte le macchine sono soggette a perdite di potenza di varia natura, riassunte come 
+segue:
+–  perdite nel ferro Pf, per isteresi e correnti parassite;
+–  perdite nel rame Pcu, per effetto Joule;
+–  perdite meccaniche Pm, per attrito e ventilazione (assenti nelle macchine statiche);
+–  perdite di eccitazione Pecc, limitate agli alternatori e alle macchine a corrente conti-
+nua;
+–  perdite addizionali Pad, non misurabili direttamente e comprendenti fra l’altro le per-
+dite nei materiali isolanti e quelle determinate dai flussi dispersi; queste perdite sono 
+valutate convenzionalmente nello 0,5% della potenza resa: Pad = 0,5% Pr.
+Il rendimento di una macchina è il rapporto fra la potenza resa al carico Pr e la potenza 
+assorbita Pa:
+(VIII.1.7)
+Il rendimento si può valutare anche indirettamente attraverso il computo delle perdite 
+della macchina, mediante la formula:
+(VIII.1.8)
+2  TRASFORMATORE
+Il trasformatore è una macchina elettrica statica che ha il compito di modificare i fat-
+tori della potenza elettrica: tensione e corrente. Trova utilizzo diffuso nella maggioranza 
+degli impianti elettrici, in cui è impiegato:
+–  come elevatore di tensione nelle centrali, per elevare la tensione prodotta dagli alterna-
+tori, (10  15) kV al valore di trasporto: (220  380) kV;
+–  come abbassatore di tensione nelle sottostazioni e nelle cabine di distribuzione;
+–  in tutti i casi in cui occorra modificare una tensione per adattarla al valore del carico.
+Il trasformatore è anche impiegato:
+–  come adattatore di impedenza;
+–  come elemento separatore fra la tensione di rete e quella del circuito da alimentare.
+Tutti questi compiti sono favoriti dal fatto che la macchina funziona con rendimento 
+molto elevato, non avendo organi in movimento, e può essere dimensionata per potenze 
+che coprono un’ampia gamma di valori.
+Il percorso espositivo tratta diffusamente del trasformatore monofase; le caratteristi-
+che e le formule del trasformatore trifase sono sviluppate per analogia nel Par. 2.6.
+2.1  Principio di funzionamento
+Il trasformatore funziona secondo il principio di mutua induzione (si veda la Sez. VII 
+Elettrotecnica generale), che si esercita fra due circuiti elettrici concatenati ad un mede-
+simo nucleo magnetico, uno dei quali (1) funziona da primario e l’altro (2) da secondario 
+(Fig. VIII.2.1).
+L’avvolgimento primario, con N1 spire, è alimentato da una sorgente esterna di ten-
+sione U1 e funziona da utilizzatore; l’avvolgimento secondario, con N2 spire, sviluppa una 
+tensione U2 e funziona da generatore verso il carico. Uno dei morsetti di ogni coppia è 
+munito di contrassegno (); ciò significa che, rispetto ad esso, le tensioni di ingresso e di 
+uscita hanno lo stesso orientamento.
+Le correnti sono indicate convenzionalmente: I1 in entrata, giustificando la funzione 
+di utilizzatore del bipolo 1 e la potenza entrante; I2 in uscita, in concordanza con la fun-
+zione di generatore del bipolo 2 con la potenza in uscita.
+
+Pr
+Pa
+-----
+=
+
+Pr
+Pr
+Pp
++
+--------------------
+=
+
+[PAG 691]
+MACCHINE ELETTRICHE
+VIII-9
+Per una macchina ideale la potenza assorbita al primario U1I1 è uguale alla potenza 
+resa al secondario U2I2 e risulta:
+(VIII.2.1)
+cioè la macchina agisce sui valori di tensione e di corrente in modo inversamente propor-
+zionale.
+Fig. VIII.2.1.  Schema indicativo di un trasformatore monofase.
+2.2  Funzionamento a vuoto
+2.2.1  Forza elettromotrice indotta
+Ammesso un flusso alternato sinusoidale di valore istantaneo:
+(VIII.2.2)
+per la legge di induzione elettromagnetica e = d/dt (si veda la Sez. VII Elettrotecnica 
+generale) risulta una fem indotta per spira di valore istantaneo:
+(VIII.2.3)
+alternata sinusoidale, sincrona e sfasata sul flusso di /2 in ritardo, di valore massimo:
+(VIII.2.4)
+Indicata con A la sezione del nucleo e passando al valore efficace si ottengono, per i 
+due avvolgimenti, le relazioni:
+(VIII.2.5)
+dalle quali si ricava il rapporto di trasformazione K, coincidente col rapporto spire:
+(VIII.2.6)
+Per la macchina ideale, l’equazione di maglia è U + E = 0 da cui deriva:
+(VIII.2.7)
+2.2.2  Corrente a vuoto
+La corrente a vuoto I0 è la risultante di due componenti: una reattiva, magnetizzante I
+dominante; l’altra attiva Ia, che tiene conto delle perdite per isteresi e correnti parassite:
+(VIII.2.8)
+U1
+U2
+------
+I2
+I1
+----
+=
+U1
+U2
+N1
+N2
+
+Msent
+=
+es
+
+–
+Mcost
+=
+EsM
+M
+=
+E1
+4,44fN1BMA
+=
+E2
+4,44fN2BMA
+=
+K
+E1
+E2
+-----
+N1
+N2
+------
+=
+=
+U1
+E
+–
+1
+=
+U2
+E
+–
+2
+=
+I0
+I
+Ia
++
+=
+
+[PAG 692]
+VIII-10
+MACCHINE ELETTRICHE
+La corrente magnetizzante è la componente necessaria a generare la forza magneto-
+motrice (fmm) occorrente a produrre il flusso (si veda la Sez. VII Elettrotecnica gene-
+rale). Per un circuito magnetico di riluttanza = l/(A), il valore efficace della corrente 
+magnetizzante è:
+(VIII.2.9)
+Per minimizzare tale corrente occorre scegliere un materiale magnetico ad alta perme-
+abilità e soprattutto ridurre i traferri, realizzando la struttura a lamierini incrociati.
+Lo schema elettrico rappresentativo del trasformatore a vuoto, relativo al nucleo 
+magnetico, si configura come un’ammettenza (Fig. VIII.2.2):
+(VIII.2.10)
+G0 assorbe la corrente Ia = G0U1, B0 assorbe la corrente I  B0U1. Le potenze assorbite a 
+vuoto dal trasformatore, trascurando le perdite nel rame, non rilevanti, sono:
+(VIII.2.11)
+(VIII.2.12)
+Fig. VIII.2.2  Trasformatore a vuoto: a) schema elettrico; b) diagramma vettoriale.
+La corrente a vuoto di un trasformatore è esigua rispetto alla corrente nominale e 
+Tab. VIII.2.1   Componenti armoniche della corrente a vuoto (valori indicativi 
+percentuali rispetto al valore efficace totale)
+Lamierini laminati a caldo
+Lamierini laminati a freddo
+BM
+fond
+3a
+5a
+7a
+fond
+3a
+5a
+7a
+(T)
+(%)
+(%)
+(%)
+(%)
+(%)
+(%)
+(%)
+(%)
+1,2
+90
+40
+10
+5
+95
+16
+4
+4
+1,4
+80
+50
+25
+10
+95
+25
+10
+5
+1,6
+80
+55
+20
+10
+88
+40
+20
+10
+I
+M
+2N1
+--------------
+BMl
+2N1
+------------------
+=
+=
+Y0
+G0 j
+– B0
+=
+la potenza attiva
+P0
+Pf
+G0U1
+2
+=
+=
+la potenza reattiva
+Q0
+Q
+B0U1
+2
+=
+=
+U1
+U2
+N1
+N2
+B0
+G0
+Ia
+I
+I0
+a)
+U1=E1
+U2=E2
+E2
+E1
+Ia
+I0
+I
+
+0
+b)
+
+[PAG 693]
+MACCHINE ELETTRICHE
+VIII-11
+dipende dalla potenza della macchina. Essa è data, in valore percentuale, nella Tab. 
+VIII.2.2. Per effetto della dominanza di I essa segue la caratteristica di magnetizzazione 
+e, per tensione sinusoidale, si presenta deformata con una certa incidenza di componenti 
+armoniche di ordine dispari (Tab. VIII.2.1).
+Data l’esiguità della corrente a vuoto, l’effetto di distorsione viene considerato sol-
+tanto per trasformatori di grande potenza.
+2.3  Funzionamento a carico
+2.3.1  Correnti 
+Il trasformatore, chiuso su un carico di impedenza ZL, eroga una corrente I2=U2/ZL. 
+Per mantenere l’equilibrio magnetico, ovvero la costanza del flusso, turbato dalla fmm 
+secondaria N2I2, la macchina assorbe dal primario una corrente I’ tale da neutralizzarla, 
+ovvero tale che sia N1I’ = N2I2, da cui deriva:
+(VIII.2.13)
+La corrente complessiva primaria risulta (Fig. VIII.2.3):
+(VIII.2.14)
+Fig. VIII.2.3  Trasformatore a carico: diagramma delle correnti.
+2.3.2  Impedenze serie Z1 e Z2
+Gli avvolgimenti, primario e secondario, presentano rispettivamente una resistenza R1
+e R2 che dipendono dalle dimensioni del conduttore e dalla natura del materiale. 
+Inoltre sono sede di flusso disperso, per quella parte che non si concatena con 
+entrambi gli avvolgimenti; se ne tiene conto attribuendo loro un’induttanza di dispersione 
+L1d e L2d e, corrispondentemente, una reattanza di dispersione X1d e X2d. Per ridurre questi 
+parametri passivi, gli avvolgimenti sono realizzati con accoppiamento il più stretto possi-
+bile. Complessivamente gli avvolgimenti determinano sul circuito elettrico della mac-
+china due impedenze passive:
+(VIII.2.15)
+e dissipano, una potenza attiva, per effetto Joule:
+(VIII.2.16)
+una potenza reattiva, per flusso disperso:
+(VIII.2.17)
+I '
+I
+– 2
+K
+-------
+=
+I1
+I '
+I0
++
+=
+E1
+I’
+I1
+I0
+
+I2
+Z1
+R1
+jX1d
++
+=
+Z2
+R2
+jX2d
++
+=
+Pcu1
+R1I1
+2
+=
+Pcu2
+R2I2
+2
+=
+Qd1
+X1dI1
+2
+=
+Qd2
+X2dI2
+2
+=
+
+[PAG 694]
+VIII-12
+MACCHINE ELETTRICHE
+2.3.3  Circuito equivalente
+Lo schema elettrico equivalente di un trasformatore è tracciato in Fig. VIII.2.4.
+Fig. VIII.2.4  Schema elettrico di un trasformatore
+Le equazioni di funzionamento, relative alle due maglie, sono:
+(VIII.2.18)
+e ad esse corrisponde il diagramma vettoriale di Fig. VIII.2.5.
+Le potenze attive e reattive impegnate sono:
+–  assorbite dalla rete:
+(VIII.2.19)
+Fig. VIII.2.5  Diagramma vettoriale di un trasformatore.
+–  perse:
+(VIII.2.20)
+–  rese al carico:
+(VIII.2.21)
+Il rendimento risulta:
+(VIII.2.22)
+U1
+Y0
+E1
+E2
+U2
+ZL
+I1
+R1
+X1d
+I’
+I2
+R2
+X2d
+I0
+U1
+E
+–
+1
+Z1I1
++
+=
+U2
+E
+–
+2
+Z2I2
+–
+=
+Pa
+U1I1cos1
+=
+Qa
+U1I1sen1
+=
+U1
+E1
+Z1I1
+E2
+Z2I2
+U2
+I2
+I1
+I’
+2
+1
+
+Pp
+Pf
+Pcu1
+Pcu2
++
++
+G0U1
+2
+R1I1
+2
+R2I2
+2
++
++
+=
+=
+Qp
+Q
+Qd1
+Qd2
++
++
+B0U1
+2
+X1dI1
+2
+X2dI2
+2
++
++
+=
+=
+Pr
+U2I2cos2
+=
+Qr
+U2I2sen2
+=
+
+U2I2cos2
+U1I1cos1
+---------------------------
+=
+
+[PAG 695]
+MACCHINE ELETTRICHE
+VIII-13
+2.3.4  Schemi equivalenti semplificati
+Lo studio del trasformatore è eseguito, molto efficacemente e sinteticamente, trasfe-
+rendo i parametri passivi serie sullo stesso lato. Il trasferimento può essere fatto verso il 
+primario oppure verso il secondario, dando luogo a due possibili schemi semplificati.
+Schema semplificato primario
+L’impedenza Z2 dà luogo ad una potenza apparente Z2I2
+2 = Z2 K2I’2. Il fattore:
+(VIII.2.23)
+rappresenta l’impedenza che, collocata al primario, determina gli stessi effetti di Z2. Le 
+componenti sono:
+(VIII.2.24)
+Data l’esiguità di I0, la collocazione di Z’
+2 può essere fatta a monte di Y0 risultando 
+così in serie a Z1 e componibile con essa. Ne risulta un’impedenza equivalente passiva 
+Zeq1 che tiene conto di entrambi gli avvolgimenti:
+(VIII.2.25)
+di componenti:
+(VIII.2.26)
+Lo schema elettrico corrispondente ed il diagramma vettoriale sono tracciati in Fig. 
+VIII.2.6.
+     
+Fig. VIII.2.6  Schema semplificato primario di un trasformatore: a) circuito elettrico; 
+b) diagramma vettoriale.
+Lo studio del trasformatore si può fare quindi in modo sintetico sulla base delle equa-
+zioni di funzionamento:
+(VIII.2.27)
+Le perdite negli avvolgimenti sono date complessivamente da:
+(VIII.2.28)
+Z2'
+Z2K2
+=
+R2'
+R2K2
+=
+X2d
+'
+X2dK2
+=
+Zeq1
+Req1
+jXeq1
++
+=
+Req1
+R1
+K2R2
++
+=
+Xeq1
+X1d
+K2X2d
++
+=
+U1
+Y0
+E1
+U2=E2
+ZL
+I1
+Req1
+Xeq1
+I2
+I’
+I0
+a)
+Zeq1I1
+U1
+E1
+E2=U2
+I2
+I1
+I’
+2
+1
+
+b)
+U1
+E
+–
+1
+Zeq1I1
++
+=
+U2
+E
+–
+2
+=
+Pcu
+Req1I1
+2
+=
+Qd
+Xeq1I1
+2
+=
+
+[PAG 696]
+VIII-14
+MACCHINE ELETTRICHE
+Schema semplificato secondario
+Il trasferimento di un’impedenza dal primario al secondario avviene con l’operazione 
+inversa della precedente e si ottiene:
+(VIII.2.29)
+di componenti:
+(VIII.2.30)
+Effettuata la composizione, risulta al secondario un’impedenza equivalente passiva:
+(VIII.2.31)
+di componenti:
+(VIII.2.32)
+Lo schema elettrico corrispondente ed il diagramma vettoriale sono tracciati in Fig. 
+VIII.2.7.
+   
+Fig. VIII.2.7  Schema semplificato secondario di un trasformatore: a) circuito elettrico; 
+b) diagramma vettoriale.
+Lo studio del trasformatore si può fare in modo sintetico sulla base delle equazioni di 
+funzionamento:
+(VIII.2.33)
+Le perdite negli avvolgimenti sono date complessivamente da:
+(VIII.2.34)
+2.4  Funzionamento in cortocircuito
+I parametri equivalenti, primari o secondari, si ricavano connettendo il trasformatore 
+in cortocircuito ed alimentandolo ad una tensione U1k convenientemente ridotta in modo 
+che scorra la corrente nominale (Fig. VIII.2.8). 
+Z''1
+Z1
+K2
+------
+=
+R''1
+R1
+K2
+------
+=
+X''1d
+X1d
+K2
+--------
+=
+Zeq2
+Req2
+jXeq2
++
+=
+Req2
+R2
+R1
+K2
+------
++
+=
+Xeq2
+X2d
+X1d
+K2
+--------
++
+=
+I1
+I’
+I2
+Req2
+Xeq2
+I0
+Y0
+E1
+E2
+U1
+U2
+ZL
+a)
+U1=E1
+Zeq2I2
+E2
+U2
+I2
+I1
+I’
+2
+1
+
+b)
+U1
+E
+–
+1
+=
+U2
+E
+–
+2
+Zeq2I2
+–
+=
+Pcu
+Req2I2
+2
+=
+Qd
+Xeq2I2
+2
+=
+
+[PAG 697]
+MACCHINE ELETTRICHE
+VIII-15
+ 
+Fig. VIII.2.8  Trasformatore monofase in cortocircuito: a) schema elettrico; b) dia-
+gramma vettoriale.
+In tal caso, essendo trascurabile la corrente I0 e con U2 = 0, il trasformatore si riduce 
+all’impedenza equivalente che risulta:
+(VIII.2.35)
+di componenti:
+(VIII.2.36)
+Le grandezze equivalenti secondarie si possono dedurre dalle primarie dividendo que-
+ste per K2 oppure direttamente:
+(VIII.2.37)
+di componenti:
+(VIII.2.38)
+I valori della tensione di cortocircuito percentuale, riferita alla tensione nominale, 
+sono forniti nella Tab. VIII.2.3.
+In cortocircuito il trasformatore assorbe una potenza attiva e una potenza reattiva che 
+equivalgono a quelle perse negli avvolgimenti:
+(VIII.2.39)
+(VIII.2.40)
+2.5  Caratteristiche di funzionamento
+2.5.1  Potenze e rendimento
+Con riferimento allo schema semplificato secondario, le potenze attive e reattive 
+impegnate dal trasformatore sono le seguenti,
+–  assorbite:
+(VIII.2.41)
+–  rese:
+(VIII.2.42)
+Req1
+Xeq1
+U1k
+U2=0
+a)
+Xeq1I1
+U1k=Zeq1I1
+I1
+Req1I1
+k
+
+b)
+Zeq1
+U1k
+I1
+---------
+=
+Req1
+Zeq1cosk
+=
+Xeq1
+Zeq1senk
+=
+Zeq2
+U1k
+KI2
+---------
+=
+Req2
+Zeq2cosk
+=
+Xeq2
+Zeq2senk
+=
+Pk
+Pcu
+U1kI1cosk
+Req1I1
+2
+=
+=
+=
+Qk
+Qd
+U1kI1senk
+Xeq1I1
+2
+=
+=
+=
+Pa
+U1I1cos1
+=
+Qa
+U1I1sen1
+=
+Pr
+U2I2cos2
+=
+Qr
+U2I2sen2
+=
+
+[PAG 698]
+VIII-16
+MACCHINE ELETTRICHE
+–  perse:
+(VIII.2.43)
+Il rendimento del trasformatore è:
+(VIII.2.44)
+In particolare il rendimento è nullo a vuoto per I2 = 0, e in cortocircuito per U2 = 0.
+Il rendimento massimo si ottiene derivando la VIII.2.44 e risulta:
+–  in funzione del fattore di potenza, per cos = 1, cioè per carico resistivo;
+–  in funzione della corrente, per Pcu = Pf, cioè quando al variare della corrente le perdite 
+nel rame sono uguali a quelle nel ferro; ciò accade approssimativamente a 3/4 del carico 
+nominale.
+2.5.2  Variazione di tensione
+Si definisce variazione di tensione U la differenza numerica fra la tensione a vuoto e 
+la tensione a carico:
+(VIII.2.45)
+Per il trasformatore monofase, che lavora su un carico ohmico-induttivo di fase , la 
+variazione di tensione si può determinare tracciando il diagramma vettoriale equivalente 
+secondario (Fig. VIII.2.9) ed assumendo U20 = OC e U2 = OA.
+Fig. VIII.2.9  Diagramma vettoriale equivalente secondario di un trasformatore.
+Data l’esiguità della variazione di tensione, al ribaltamento di OC su OD si può sosti-
+tuire la proiezione in OE. In tal modo risulta:  U2 = U20  U2 = AE = AF + FE e quindi,
+(VIII.2.46)
+Operando sul circuito equivalente primario si ottiene analogamente:
+(VIII.2.47)
+La variazione di tensione relativa percentuale, riferita al valore nominale, fornisce un 
+elemento di valutazione della macchina. Essa è legata alla tensione di cortocircuito per-
+centuale dalla relazione:
+(VIII.2.48)
+La variazione di tensione dipende dal valore della corrente e del fattore di potenza del 
+carico. Per carichi resistivi si riduce al solo primo termine. Per carichi di tipo capacitivo 
+Pp
+Pf
+Req2I2
+2
++
+=
+Qp
+Q
+Xeq2I2
+2
++
+=
+
+U2I2cos2
+U2I2cos2
+Pf
+Req2I2
+2
+Pad
++
++
++
+---------------------------------------------------------------------------------------
+=
+U
+U20
+U2
+–
+=
+O
+A
+F
+E D
+C
+Xeq2I2
+Req2I2
+U20
+U2
+I2
+
+U2
+I2 Req2cos
+Xeq2sen
++
+
+
+=
+U1
+I1 Req1cos
+Xeq1sen
++
+
+
+=
+U%
+uk% coskcos
+senksen
++
+
+
+=
