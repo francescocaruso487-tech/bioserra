@@ -1,0 +1,1393 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 6/23 ===
+Chars: 44,979 | Offset: 224,721
+
+
+
+resistenza di carico normalizzata rn, ‘adattamento a stub semplice
+reattanza di carico normalizzata x risposta in transitorio
+
+WIG e WIL. diagramma a rimbalzo
+PROBLEMI
+
+Nota: Le risposte ai problemi contrassegnati da un asterisco si
+trovano nell’Appendice D, .
+
+Paragrafi da 2.1 a 2.4 Modello della linea di
+trasmissione
+
+*2.1 Una linea di trasmissione di lunghezza / collega un carico
+con un generatore di tensione sinusoidale di frequenza f.
+Supponendo che la velocità di propagazione dell’onda
+nella linea sia c, si dica in quali delle seguenti situazioni è
+ragionevole trascurare la presenza della linea di
+trasmissione nel risolvere il problema:
+
+(a) /=200m,f = 10 KHz;
+®) / = 50 km,f = 60 Hz;
+(©) 1= 20 cm,f = 300 MHz;
+@ l= 1mm,f = 100 GHz.
+
+2.2. Si calcolino i parametri della fina R’, Z’, G' e C’ di una
+linea coassiale in cui il conduttore interno ha diametro pari
+a 0.5 cm, il conduttore esterno ha diametro pari a È em ed
+è riempita da un materiale isolante con parametri 4 = po,
+€= 2.25 è 0 = 107? S/m, I conduttori sono realizzati in
+rame, caratterizzato da pp = jug © oe = 5.8 x 107 Sim. La
+frequenza di funzionamento è pari a 1 GHz.
+
+*2.3. Una linea a conduttori piani paralleli funzionante alla
+frequenza di 1 GHz è formata da strisce di rame larghe 1.5
+cm, separate da uno strato di polistirene spesso 0.2 cm.
+Dali’ Appendice B si ricavano i parametri
+He = fo = 4it x 1077 (Him) eg, = 5.8 x 10? (Sim) per
+il rame e ¢, = 2.6 per il polistirene. Si utilizzi la Tabella
+2.1 per determinare i parametri della linea di trasmissione,
+supponendo che il polistirene abbia 4 = pp eo: & 0.
+
+2.4 Si dimostri che dal modello della linea di trasmissione
+descritto in Figura 2.37 si ricavano le stesse equazioni del
+telegrafo date dalla (2.14) e dalla (2.16).
+
+Roz Lae . Ri LA
+2 2. i(z+dz, 1)
+de
+
+|
+
+v(z, t) Gaz u(z+Az, t)
+
+Figura 2.37 Modello della linea di trasmissione per il
+Problema 2.4.
+
+*2.5 Si ricavino a, f, up e Zp della linea coassiale descritta nel
+Problema 2.2.
+
+Paragrafo 2.5 Linea senza perdite
+
+2.6 Oltre a non dissipare potenza, una linea senza perdite ha
+due importanti proprietà: (1) è priva di dispersione, cioè wy
+è indipendente dalla frequenza e (2) la sua impedenza di
+ingresso Zo è puramente reale. Non è sempre possibile
+progettare la linea di trasmissione in modo che R' « wl’
+eG’ < wC", ma è possibile scegliere le dimensioni della
+linea e i parametri costitutivi dei materiali in modo da
+soddisfare la condizione
+
+R'C'=L'G' (Linea non distorcente}
+
+Una linea di questo tipo è detta linea non distorcente
+perché, nonostante presenti delle perdite, possiede tuttavia
+te due proprietà menzionate in precedenza tipiche delle
+linee senza perdite. Si dimostri che per una linea non
+distorcente si ha
+
+VR'IG'
+
+7]
+4= Vo
+*2.7 Per una linea non distorcente definita dal Problema 2.6, si
+ha che Z = 50 Q, a = 40 (mNp/m) e up = 2.5 x 10®
+(18). Si ricavino i parametri della linea e la lunghezza
+d'onda nella linea A a 250 MHz.
+
+2.8 Sitieavino a e Zp di una linea non distorcente che abbia
+R'=40me G'=4 x 1074 Sim.
+
+*2.9 Una linea di trasmissione funzionante a 125 MHz ha
+Z = 40 Q, a = 0.02 (Np/m)e 8 = 0.75 (rad/m). Si
+ricavino i parametri della linea R’, L’, Ge C’.
+
+2.10 Facendo uso di una linea fessurata, si riscontra che il
+modulo della tensione su una linea senza perdite ha
+massimo pari a 1.5 V e minimo pari a 0.8 V. Si ricavi il
+modulo del coefficiente di riflessione del carico.
+
+*2.11 Il polietilene ha er = 2.25 ed è usato come materiale
+isolante in una linea di trasmissione senza perdite con
+impedenza caratteristica di 50 2. Il raggio del conduttore
+intemo è di 1 mm.
+
+(a) Qual è il raggio del conduttore ésterno?
+(b) Qual è ia velocità di fase nella linea?
+
+2.12 Una linea di trasmissione a 50 Q senza perdite è terminata
+‘su un carico di impedenza pari a Z,:= (30 — j60) 2. La
+lunghezza d’onda è 5 cm. Si ricavino:
+
+(a) Il coefficiente di riflessione del carico;
+
+(©) Il rapporto d’onda stazionaria sulla linea;
+
+(€) La posizione del massimo di tensione più vicino al
+carico;
+
+(d) La posizione del massimo di corrente più vicino al
+carico.
+
+*2.13 In una linea di trasmissione a 150 @ senza perdite si
+osserva che la distanza del primo minimo di tensione dal
+carico è 3 cra, la distanza del primo massimo di tensione
+dal carico è 9 cme S = 3. Si ricavi Zi.
+
+2.14 Da misure eseguite con una linea fessurata si ottengono i
+seguenti risultati: distanza dei primo minimo dal carico = 4
+‘cm, distanza del secondo minimo dal carico = 14 cm,
+rapporto d'onda stazionaria in tensione = 2.5. Sapendo che
+ja linea è senza perdite e che Zp = 50 Q, si ricavi
+l’impedenza del carico.
+
+*2.15 Un carico di impedenza Z, = (25 — j50) 2 deve essere
+collegato a una linea di trasmissione senza perdite con
+impedenza caratteristica Zp, scegliendo Z in modo che il
+rapporto d’onda stazionaria sia il più basso possibile.
+Quale deve essere il valore di Zp?
+
+2.16. Una linea di trasmissione a 50 {2 senza perdite terminata
+sa un carico puramente resistivo ha rapporto d'onda
+stazionaria in tensione pari a 4. Si ricavino tutti i possibili
+valori di Z, associati.
+
+Problemi 97
+
+Paragrafo 2.6 Impedenza di ingresso
+2.17 Alla frequenza di funzionamento di 300 MHz, una linea di
+
+trasmissione in aria a 50 © senza perdite lunga 2.5 mè
+terminata su un’impedenza Zi = (60 + j20) 9. Si ricavi
+l’impedenza di ingresso.
+
+2.18 Una linea di trasmissione senza perdite di lunghezza
+elettrica / = 0.35A è terminata su un’impedenza di carico
+descritta in Figura 2.38. Si ricavino T’, Se Za.
+
+[ |a-«o+p0)0
+
+Figura 2.38 Circuito per il Problema 2.18.
+
+2.19 Si dimostri che una linea di trasmissione senza perdite
+lunga un quarto d’onda e terminata su un cortocircuito
+presenta un’impedenza di ingresso uguale a quella di un
+circuito aperto.
+
+2.20 Si dimostri che nelle posizioni in cui il modulo della
+tensione sulla linea è massimo, l’impedenza di ingresso è
+puramente reale.
+
+*2.21 Un generatore di tensione descritto da
+g(t) = 5 cos (27 x 10%) V
+
+ed impedenza interna Z, = 50 9 è collegato a una linea di
+trasmissione in aria a 50 £2 senza perdite. La linea è lunga
+5 cm ed è terminata su un carico con impedenza pari a
+
+Z, = (100 — j100) Q. Si ricavi quanto segue:
+
+(a) Tal carico;
+
+(b) Zn all'ingresso della linea di trasmissione;
+
+(c) La tensione in ingresso V; e la corrente in ingresso Î..
+
+2.22 Un tratto di linea di trasmissione a 150 Q senza perdite
+lungo 6 m è alimentato da un generatore descritto da
+
+ug(t) = Scos (8 x 10%:— 30°) (V)
+
+e con Z; = 150 Q. Se la linea, che ha permittività relativa
+€ = 2.25, è terminata su un carico Z, = (150 — j50) 2,
+si ricavi quanto segue:
+
+(a) A sulla linea;
+
+(©) Il coefficiente di riflessione del carico;
+
+(©) L’impedenza di ingresso; i
+
+(d) La tensione in ingresso Vi;
+
+(©) La tensione in ingresso nel dominio del tempo wi(?).
+
+#2.23 Due antenne a dipolo, ciascuna di impedenza pari a 759,
+sono collegate in parallelo tramite una coppia di linee di
+trasmissione, la cui giunzione è alimentata da una linea di
+trasmissione come descritto in Figura 2.39. Tutte le lince
+sono a 50 02 e senza perdite.
+
+@) Si calcoli Zi, impedenza di ingresso della linea
+terminata sull’antenna nel punto di giunzione in parallelo;
+
+[PAG 57]
+98 Capitolo 2 ~ Linee di trasmissione
+
+(b) Si combinino in parallelo Zin, € Zip, per ottenere Zi,
+l’impedenza di carico effettiva su cui è terminata la linea di
+alimentazione;
+
+(©) Si calcoli Z della linea di alimentazione.
+
+159
+(Antenna)
+
+752
+(Antenna)
+
+Figura 2.39 Circuito per il Problema 2.23.
+
+Paragrafo 2.7 Casi particolari
+
+2.24 Alla frequenza di funzionamento di 200 MHz, si desidera
+utilizzare un tratto di linea di trasmissione a 50 Q senza
+perdite terminato su un cortocircuito per costruire un
+carico equivalente con reattanza X = 25 Q, Se la velocità
+di fase nella linea è 0.75c, qual è la più breve lunghezza di
+linea che consente di ottenere in ingresso la reattanza
+voluta?
+
+*2.25 Una linea di trasmissione senza perdite è terminata su un
+cortocircuito. Quanto deve essere lunga la linea in unità di
+lunghezza d'onda affinché presenti un’impedenza di
+ingresso uguale a quella di un circuito aperto?
+
+2.26 Alla frequenza di 1 MHz si è misurata l’impedenza di
+ingresso di una linea di trasmissione senza perdite lunga
+31 cm e di impedenza caratteristica sconosciuta. Con la
+linea terminata su un cortocircuito si è riscontrata
+‘un’impedenza di ingresso equivalente a quella di
+un’induttanza da 0.128 4H, mentre con la linea terminata
+su un circuito aperto si è misurata un’impedenza di
+ingresso uguale a quella di un condensatore da 20 pF. Per
+tale linea si ricavi Zp, la velocità di fase e la permittività
+relativa del materiale isolante.
+
+*2.27 Un carico resistivo da 60 © è preceduto da un tratto lungo
+A/4 di linea a 50 © senza perdite, che è a sua volta
+preceduto da un altro tratto lungo A/4 di linea a 1002.
+Qual è l’impedenza di ingresso?
+
+2.28 Una stazione di radiodiffusione FM utilizza una linea di
+trasmissione a 300 © tra il trasmettitore e un'antenna a
+dipolo, la cui impedenza è pari a 73 , montata in cima a
+un traliccio. Si richiede di progettare un trasformatore a
+quarto d’onda per adattare antenna alla linea:
+
+*2.31 Un generatore con h =
+
+(@) Si determini la lunghezza elettrica e l’impedenza
+caratteristica del trasformatore a quarto d’onda;
+
+(b) Se il trasformatore è costituito da un tratto di linea
+bifilare con d = 2.5 cme il materiale che tiene separati i
+fili è polistirene con e; = 2.6, si determini la lunghezza
+fisica del trasformatore e il raggio dei due fili conduttori.
+
+*2,29 Un generatore a 50 MHz con Z, = 50 92 è collegato a un
+
+carico Zi, = (50 — j25) 2. La potenza media trasferita dal
+generatore al carico è massima quando Z, = Z7, dove Z7
+è il complesso coniugato di Zi. Per soddisfare questa
+condizione senza modificare Z,, si può modificare
+Pimpedenza di carico effettiva aggiungendo in serie a Zi
+un tratto di linea in circuito aperto, come descritto in
+Figura 2.40. Se la linea ha Zp = 100 Q, si determini, in
+unità di lunghezza d’onda, la lunghezza del più breve
+tratto di linea necessario per soddisfare la condizione di
+massimo trasferimento di potenza.
+
+seme i
+
+Figura 2.40 Configurazione della linea di trasmissione per
+il Problema 2.29.
+
+2.30 Una linea a 50 2 senza perdite di lunghezza / = 0.375A
+collega un generatore a 200 MHz con V, = 150 Ve
+Z, = 50 Q a un carico Zi. Si determini la corrente
+istantanea che attraversa il carico nei casi:
+(a) Z, = (50 — 50) Q;
+®) Z = 509;
+(©) ZL = 0 (cortocircuito).
+
+Paragrafo 2.8 Trasferimento di potenza in una
+linea senza perdite
+
+100 V e Z, = 50 Q è collegato a
+un carico Zi = 75 & tramite una linea a 50 Q senza
+perdite di lunghezza / = 0.154.
+
+(a) Si calcoli Zip, l’impedenza di ingresso della linea sulla
+porta del generatore; _
+
+®) Si calcolino 4 e Vi;
+
+(©) Si calcoli la potenza media trasferita alia linea
+
+Pig = ERK EI],
+
+@ Si éalcolino Vu: J, ela potenza media trasferita al
+carico P = 4 ARM, confrontando Pi, con Py €
+spiegando il fisultato;
+
+sirene citi Liz ieri Prince
+
+|
+|
+|
+|
+|
+I
+|
+{
+|
+
+Linea 1
+
+Zin >
+
+Generatore
+
+Figura 2.41 Configurazione delle antenne per il Problema 2.32.
+
+(e) Si calcolino la potenza media trasferita dal generatore
+P, e la potenza media dissipata in Z,. Il risultato soddisfa
+la conservazione della potenza?
+
+2.32 Se la configurazione di due antenne descritta in Figura
+2.41 è collegata a un generatore con 7, = 250 Ve
+2, = 50 ©, quanta potenza media è trasferita a ciascuna
+antenna?
+
+*2.33 Per il circuito descritto in Figura 2.42 si calcolino Ja
+potenza media incidente, la potenza media riflessa e la
+potenza media trasmessa nella linea infinita a 100 2. Il
+tratto di linea lungo A/2 è senza perdite, mentre la linea di
+lunghezza infinita presenta lievi perdite. (Suggerimento:
+Pimpedenza di ingresso di una linea di lunghezza infinita
+è uguale alla sua impedenza caratteristica purché sia
+a#0)
+
+* 2.34 Un’antenna con impedenza di carico
+
+Z = (75 +j25) 2
+
+è collegata a un trasmettitore tramite una linea di
+
+Me k— 2+
+i —---
+
+x 1
+airy) Zo=502 | Z:=1009—
+
+n
+
+Pi >> Pry
+Pi
+Figura 2.42 Circuito per il Problema 2.33.
+
+trasmissione a 50 £ senza perdite. Se il trasmettitore è in
+grado di erogare 10 W al carico in condizioni di
+
+Problemi 9
+
+Z,= 759
+(Antenna 1)
+
+> Z1,= 752
+(Antenna 2)
+
+adattamento, vale a dire a un carico di 50 ©, quanta
+potenza può trasferire all’antenna? Si supponga che
+Z=%.
+
+Paragrafo 2.9 Carta di Smith
+
+*2.35 Si utilizzi la carta di Smith per ricavare il coefficiente di
+riflessione corrispondente a un'impedenza di carico pari a
+
+(a) Z = 329;
+(b) Z = (2 ~2/)Zo;
+(©) Z, = -2jZo;
+
+(d) Z, = 0 (cortocircuito).
+
+2.36 Si utilizzi la carta di Smith per ricavare l’impedenza di
+carico normalizzata corrispondente a un coefficiente di
+riflessione pari a
+
+*2.37 In una linea di trasmissione senza perdite terminata su un
+carico Z, = 100 2 si è misurato un rapporto d’onda
+stazionaria pari a 2.5. Si usi la carta di Smith per ricavare i
+due valori possibili di Zo.
+
+2.38 Una linea di trasmissione a 50 92 è terminata su un carico
+2, = (50 +/25) 2. Si usi la carta di Smith per ricavare
+quanto segue:
+
+(a) Il coefficiente di riflessione I’;
+
+(©) Il rapporto d'onda stazionaria;
+
+(€) L'impedenza di ingresso a 0.35 dal carico;
+
+(d) L'ammettenza di ingresso a 0.354 dal carico;
+
+(e) La più breve lunghezza di linea per cui Pimpedenza di
+ingresso è puramente resistiva;
+
+(Î) La posizione rispetto al carico del primo massimo di
+tensione.
+
+[PAG 58]
+100 Capitolo 2 ~ Linee di trasmissione
+
+#2.39 Una linea di trasmissione a 50 02 senza perdite è terminata
+su un cortocircuito. Siutilizzi la. carta di Smith per _._..._ .. -
+determinare quanto segue:
+{a) L’impedenza di ingresso a una distanza di 2.3 dal
+carico;
+(b) La distanza dal carico per cui l'ammettenza di ingresso
+è Yin = —0.04 S.
+
+2.40 Si utilizzi la carta di Smith per ricavare yr se Zin
+ay = 1.50.7.
+
+*2,41 Una linea di trasmissione a 100 Q senza perdite lunga
+34/8 è terminata su un’impedenza incognita. Se
+l’impedenza di ingresso è Zin = —j2.5 Q
+(a) Siusi la carta di Smith per ricavare Zi;
+
+(©) Quale lunghezza dovrebbe avere una linea chiusa su
+un circuito aperto per poter sostituire Z.?
+
+2.42, Una linea a 75 {2 senza perdite è lunga 0.6A. Sapendo che
+S=18e0;= —60°, si usi la carta di Smith per
+determinare JT], ZL e Zin.
+
+*2.43 Utilizzando una linea fessurata su una linea in aria a 500 42,49
+senza perdite si sono ottenute le seguenti misure: S = 1.6
+€ |V Imax SÌ verifica solo a 10 cm e a 24 cm dai carico. Si
+utilizzi la carta di Smith per determinare Z;.
+
+2.44 Alla frequenza di funzionamento di 5 GHz, una linea
+coassiale a 50 2 senza perdite il cui materiale isolante ha
+‘una permittività relativa e, = 2.25 è terminata su
+‘un'antenna di impedenza Z, = 75 ©, Si utilizzi la carta di
+Smith per ricavare Zin sapendo che la linea è lunga 30 cm.
+
+2.50
+
+Paragrafo 2.10 Adattamento di impedenza
+
+*2.45 Una linea a 50 © senza perdite lunga 0.64 è terminata su
+un carico Z.= (50 +25) 2. Una resistenza R = 30 26
+coliegata a 0.3A dal carico, come descritto in Figura 2.43.
+Si usi la carta di Smith per ricavare Zin. 251
+
+2.52
+
+ZE E,
+-#—— 0.3,» + 03 AI
+
+Zs 50 +j25)Q
+Figura 2.43 Circuito per il Problema 2.45.
+
+2.46 Una linea a 50 O senza perdite deve essere adattata a
+un'antenna che ha Z, = (75 — /20) A usando uno stub in
+cortocircuito. Si usi la carta di Smith per determinare la
+lunghezza dello stub e la distanza tra P antenna è lo stub.
+
+*2.47 Si risolva il Problema 2:46 per un carico
+Z = (100 +750) 2.
+
+2.48 Si utilizzi la carta di Smith per ricavare Zi, delia linea di
+alimentazione descritta in Figura 2.44. Tutte fe linee sono
+
+2, = (50 + j50) 2
+
+2)
+
+è
+
+Z, = (50 -j50) Q
+
+Figura 2.44 Rete di adattamento per il Problema 2.48.
+
+Si risolva il Problema 2.48 per il caso in cui tutte le tre
+linee di trasmissione sono lunghe A/4.
+
+Paragrafo 2.11 Transitori sulle linee di
+
+trasmissione
+
+Si tracci il diagramma a rimbaizo della tensione V(z, 1) per
+una linea senza perdite lunga | m caratterizzata da
+
+Za = 50 Ne up = 20/3, dove c è la velocità della luce, se
+la linea è alimentata da un gradino di tensione applicato
+all’istante ¢ = 0 da parte di un circuito generatore con
+
+V, = 60 V e Ry = 100 ©, La linea è terminata su un
+carico Zi, = 25 9. Si utilizzi il diagramma a rimbalzo per
+graficare V(¢) in un punto a metà della lunghezza della
+linea dat=0at=25ns.
+
+Si risolva il Problema 2.50 per la corrente / sulla linea.
+
+In risposta a un gradino di tensione si è osservato
+l’andamento della tensione indicato in Figura 2.45 alla
+porta di trasmissione di una linea senza perdite con
+
+Ry = 50 Q, Zy= 50 Ne e = 2.25. Si determini quanto
+segue:
+
+(a) La tensione del generatore;
+
+(b) La lunghezza della linea;
+
+(c). L’impedenza di carico.
+
+V(O, f)
+
+SV
+=3V
+
+0 6 us
+
+Figura 2.45 Andamento della tensione per i Problemi 2.52
+
+senza perdite e hanno Zo = 50 Q. e2.54.
+
+*2.53 In risposta a un gradino di tensione si è osservato
+l’andamento della tensione indicato in Figura 2.46 alla
+porta di trasmissione di una finea cortocircuitata con
+Zy = 50 Nee, = 4. Si determinino Vy, R, e la lunghezza
+
+della linea.
+VO, 2)
+12V
+3V
+0.75 V
+0 Tus 14 gs
+
+Figura 2.46 Andamento della tensione per il Problema 2.53.
+
+2.54 Si supponga che l'andamento della tensione indicato in
+Figura 2.45 sia osservato alla porta di trasmissione di una
+linea di trasmissione a 50 2 in risposta a un gradino di
+tensione applicato da un generatore con V, = 15 Ve
+resistenza serie Ry incognita. La linea è lunga 1 km, la sua
+
+Problemi (ot
+
+velocità di propagazione è 1 x 10° m/s ed è terminata su
+un carico Zi = 100 2:
+
+(a) Si determini Rg;
+
+(b) Si spieghi perché la caduta del livello di ¥(0, 1) che si
+riscontra at = 6 ys non può essere attribuita alla
+riflessione da parte del carico;
+
+(c) Si determini ia resistenza parallelo Ry e fa posizione
+del guasto responsabile della forma d’onda osservata.
+
+2.55 Un circuito generatore con 7, = 200 Ve Ry =25 26
+usato per eccitare una linea a 75 Q senza perdite con un
+impulso rettangolare di durata r = 0.4 ys. La linea è
+lunga 200 m, ha up = 2 x 10% m/s ed è terminata su un
+carico Z, = 125 0:
+
+{&) Si sintetizzi l’irapulso di tensione che eccita la linea
+come somma di due funzioni a gradino V,, (1) € Va. (1);
+(b) Per ciascuna funzione a gradino di tensione, si tracci i
+diagramma a rimbalzo della tensione sulla linea;
+
+(c) Si usino i diagrammi a rimbalzo per graficare la
+tensione complessiva alla porta di trasmissione della linea.
+
+2.56 Per il circuito del Problema 2.55, si tracci il diagramma a
+
+rimbalzo della corrente e si grafichi la sua evoluzione
+temporale a metà della linea.
+
+[PAG 59]
+|
+i
+|
+i
+i
+i
+i
+È
+
+— CAPITOLO. 3
+
+Analisi vettoriale |
+
+Generalita
+
+Esaminando la propagazione delle onde su una linea di trasmissione nel Capitolo 2,
+le grandezze con cui si è lavorato principalmente erano la tensione, la corrente, l’im-
+pedenza e la potenza. Esse sono tutte grandezze scalari, vale a dire che sono compie-
+tamente definite dal proprio modulo, se esso è un numero reale positivo, oppure dal
+proprio modulo e dal proprio angolo di fase se si tratta di un numero negativo o com-
+plesso; infatti un numero negativo ha modulo positivo e angolo di fase pari a wr (rad).
+Un vettore specifica sia il modulo che la direzione di una grandezza: la rapidità con
+cui un oggetto si muove è espressa da uno scalare, la sua velocità da un vettore.
+
+Dal prossimo capitolo in poi, le grandezze elettromagnetiche maggiormente consi-
+derate saranno il campo elettrico E e il campo magnetico H che, come diverse altre
+grandezze a loro legate, sono vettori. L’analisi vettoriale fornisce gli strumenti mate-
+matici necessari a esprimere e manipolare le grandezze vettoriali in modo efficiente e
+comodo. Per definire un vettore nello spazio tridimensionale è necessario specificare
+i suoi componenti lungo ciascuna delle tre dimensioni. Nello studio delle grandezze
+vettoriali si usano diversi sistemi di riferimento, di cui i più comuni sono i sistemi di
+riferimento in coordinate cartesiane (anche dette rettangolari), cilindriche e sferiche.
+Di solito si sceglie il sistema di riferimento che meglio si adatta alla particolare geo-
+metria del problema in esame.
+
+L’algebra vettoriale esprime le leggi che governano la somma, sottrazione e molti»
+plicazione tra vettori in qualsiasi sistema di riferimento. Le regole dell'algebra vetto-
+riale e le specifiche rappresentazioni dei vettori in ciascuno dei sistemi di riferimento
+prima menzionati, comprese le regole di trasformazione da un sistema all’altro, costi-
+tuiranno due dei tre argomenti principali di questo capitolo. Il terzo argomento è il
+calcolo vettoriale, che comprende le leggi di derivazione e integrazione per i vettori,
+l’uso di specifici operatori vettoriali come gradiente, divergenza e rotore, e l’appiica-
+zione di alcuni teoremi di particolare utilità, segnatamente il teorema della divergen-
+za il teorema di Stokes.
+
+3.1 Leggi fondamentali dell'algebra vettoriale
+
+Un vettore A ha modulo A = |A| e direzione definita da un versore 4:
+A=AlAl = 4d. 3.1)
+Il versore è ha modulo unitario, cioè |a} = 1, e la sua direzione è data da
+A A
+à=—=—, 3.2.
+a= ITA (3.2)
+
+La Figura 3.1 mostra una rappresentazione grafica del vettore A nella forma di un
+segmento di lunghezza A, la cui freccia punta in direzione di à.
+
+[PAG 60]
+104 Capitolo 3 - Analisi vettoriale
+
+Figura 3.1
+Il vettore A = 44 ha za e ri
+
+modulo = [Al e versore A A
+
+Nel sistema in coordinate cartesiane (0 rettangolari), mostrato in Figura 3.2(a), le di-
+rezioni associate alle coordinate x, y e z sono definite dai tre versori mutuamente per-
+pendicolari î, $ e 2, detti vettori di base del sistema di riferimento. Ii vettore A in
+Figura 3.2(b) si può rappresentare come
+
+A=î4, +34, +34, (3.3)
+
+dove Ax, Ay € A; sono i componenti di A, rispettivamente lungo la direzione x, y ez.
+Ti componente 4, è uguale alla proiezione perpendicolare di A sull’asse z e in modo
+analogo si definiscono 4, e Ay. Applicando il teorema di Pitagora, prima al triangolo
+rettangolo nel piano x-y per esprimere l’ipotenusa 4, in funzione di A, e di A, e quin-
+di al triangolo rettangolo verticale i cui cateti sono 4, e 4, e la cui ipotenusa éA, si
+ottiene la seguente espressione del modulo di A:
+
+= {Al = 4/42 +42 + 42. (3.4)
+
+Dato che A è uno scalare non negativo, si considera ia radice quadrata solo con il se-
+gno positivo. Dalla (3.2), il versore à è dato da
+
+A S4,+9Ay +74,
+
+A e+ ae
+
+In seguito si potrà usare la notazione abbreviata A = (4,, Ay, Az) per indicare un vet-
+tore i cui componenti nel sistema in coordinate cartesiane sono Ax, Ay © A.
+
+Figura 3.2 È
+Sistema di riferimento in
+
+coordinate cartesiane: (a) Az
+base formata dai versori x,
+ye Ze (b) componenti del
+vettore A.
+
+i= (3.5)
+
+(a) Versori di base
+
+(b) Componenti di A
+
+3.1.1 Uguaglianza tra vettori
+: Due vettori A e B si dicono uguali se hanno moduli uguali e versori coincidenti.
+
+Pertanto, se
+A= ad = 5A, + JA, + 7A, (3.6a)
+B = bB = £8, + 9B, + 2B, (3.6b)
+
+3.1 Leggi fondamentali dell'algebra vettoriale
+
+allora A = B se e solo se A = Be à =D, il che necessita che sia Ar = By, Ay = Bye
+
+"A, = B,. Si noti che l'uguaglianza tra due vettori non comporta ‘necessariamente che
+
+siano coincidenti: in coordinate cartesiane, due vettori paralleli di modulo uguale €
+che puntano nella stessa direzione sono uguali, ma sono coincidenti solo se giaccio-
+no esattamente Puno sull’altro.
+
+3.1.2. Addizione e sottrazione tra vettori
+La somma di due vettori A e B è un vettore C dato da
+C=A+B=B+A. (3.7)
+
+L’addizione tra vettori si può ottenere graficamente o con la regola del parallelogram-
+ma o la regola testa-coda, come descritto in Figura 3.3. Se si disegnano A e B a parti
+re dallo stesso punto senza modificarne modulo e direzione, il vettore C è la diagona-
+le del paralielogramma descritto da A e B. Con la regola testa-coda, si può decidere
+di sommare A a B 0 B ad A: quando A viene sommato a B, lo si posiziona in modo
+che la sua coda coincida con Ja testa di B, sempre mantenendone invariati modulo e
+direzione. Il vettore somma C parte dalia coda di B e termina alla testa di A.
+
+Se A e B sono dati in coordinate cartesiane secondo la (3.62) e la (3.6b), dalla som-
+ma vettoriale risulta
+
+C=A+B
+= (fA, +94, + Z4,) + (KB, + YB, + 28.) (3.8)
+= (Ay + By) + H(Ay + By) + H(A, + Bz).
+c A
+B
+(a) Regola del (b) Regola testa-coda
+
+parallelogramma
+
+Sottrarre il vettore B dal vettore A equivale a sommare A al vettore B cambiato di se-
+gno. Pertanto
+D=A-B
+=A-+(~B) (3.9)
+= (A, ~ Br) + (Ay — By) + (4s — By).
+Dal punto di vista grafico, alla sottrazione tra vettori si possono applicare le stesse re-
+gole dell’addizione: l’unica differenza consiste nel fatto che, rispetto alla rappresenta-
+
+zione di B, la freccia di (--B) viene'disegnata all'estremità opposta del segmento, va-
+Je a dire che testa e coda vengono scambiate.
+
+3.1.3 Vettore posizione e distanza
+
+In un dato sistema di riferimento, il vettore posizione di un punto P nello spazio è it
+vettore che va dall’origine a P. I punti P; e P, in Figura 3.4 sono posizionati rispetti-
+vamente in (x1, yi, 21) e in (x2, y2, 22). I foro vettori posizione sono
+
+R, = OP, = ny + Hy +241, (3.10a)
+Ra = OP; = in + yn + 222, (3.100)
+
+105
+
+Figura 3.3
+
+Somma di vettori svolta
+usando (a) a regola del
+parallelogramma e (b) la
+regola testa-coda.
+
+[PAG 61]
+106
+
+Figura 3.4
+
+Vettore posizione
+
+Ry = PP; = R3- Ri.
+
+Capitolo 3 - Analisi vettoriale
+
+dove il punto O corrisponde aif’origine. Il vettore distanza da P, a P2 è definito co-
+me _ _- anna Li an
+
+PP,
+=R-R (3.11)
+= (m2 ~ 11) + 902-1) +22 21),
+e la distanza d tra P, e P, è uguale al modulo di Ry:
+d= {Rial
+= [C2 x)? +02-%) y+ (2-21) yy’.
+
+Si noti che il primo pedice di Ry2 indica la posizione della coda del vettore R;2, men-
+tre il secondo pedice indica la posizione della testa, come descritto in Figura 3.4.
+
+Ri
+
+(3.12)
+
+ar PAx2, Yas 22)
+
+i
+’
+1
+t
+'
+'
+
+3.1.4 Moltiplicazione tra vettori
+
+Nel calcolo vettoriale esistono tre tipi di prodotto: il prodotto semplice, il prodotto
+scalare e il prodotto vettoriale.
+
+Prodotto semplice
+
+La moltiplicazione di un vettore per uno scalare è detta prodotto semplice. Il prodotto
+del vettore A = 44 per uno scalare k è un vettore B il cui modulo è KA e la cui dire-
+zione è la stessa di A. Vale a dire
+
+B= KA = akd = (kA,) + (Ay) + 2(KAL). (3.13)
+
+Prodotto scalare
+
+È Il prodotto scalare tra due vettori A e B, indicato con A - B, si definisce dal punto di
+vista geometrico come il prodotto tra il modulo di uno dei due vettori e la proiezione
+
+ortogonale dell’altro vettore sul primo, o viceversa. Pertanto
+
+A-B=ABcos 642, (3.14)
+
+3.1 Leggi fondamentali dell'algebra vettoriale
+
+dove 4,3 è l’angolo compreso tra A e B, come descritto in Figura 3.5. Il prodotto sca-
+lare di due vettori è uno scalare, il cui modulo è minore 0 uguale al prodotto dei mo-
+duli dei due vettori (l'uguaglianza si ha quando 845 = 0) e il cui segno è positivo se
+0 < Big < 90° e negativo se 90° < A4g < 180°. Quando 045 = 90° i vettori sono or-
+togonali e in quel caso il loro prodotto scalare è nullo. La quantità A cos 945 rappre-
+senta il componente di A lungo B ed è uguale alla proiezione ortogonale del vettore
+A lungo la direzione del vettore B, e analogamente 8 cos 9,5 rappresenta il compo-
+nente di B lungo A.
+
+A B
+È Pas
+É
+(b)
+A = (Ay, Ay, 4;)eB = (B,, B,, B.), si ha
+A-B = (84, + fA, +24) - (RB, + 9B, + 3B). (3.15)
+
+Dato che i versori di base È, $ e Z sono ortogonali l’uno all’altro, segue che
+
+Inserendo la (3.16a) e la (3.16b) nella (3.15), si ottiene
+A-B = A,B, + A,B, + AB; (3.17)
+
+Per il prodotto scalare valgono la proprietà commutativa e la distributiva della molti-
+plicazione, cioè
+
+A-B=B-A (proprietà commutativa), (3.18a)
+A-(B+C)=A-B+A-C (proprietà distributiva). (3.18b)
+
+Il prodotto scalare di un vettore con se stesso vale
+A=|AP =4. (3.19)
+
+Se il vettore A è definito in un dato sistema di riferimento, il suo modulo A si può de-
+
+terminare applicando
+= |A|= VA-A. (3.20)
+
+Inoître, se i vettori A e B sono definiti in un dato sistema di riferimento, allora l’an-
+golo più piccolo tra essi 0,43 si può determinare applicando
+
+043-005" | AB
+
+VERVEBÌ 6821)
+
+Prodotto vettoriale
+
+Il prodotto vettoriale tra due vettori A e B, indicato con A x B, è un vettore definito
+come
+
+AxB=fì ABsindus, (3.22)
+
+07
+
+Figura 3.5
+
+L’angolo 845 è Vangolo
+compreso tra A e B,
+misurato da A verso B fra
+le code dei due vettori. Il
+prodotto scalare è positivo
+se0 < Bag < 90° in(a),
+mentre è negativo se
+
+90° < O45 < 180° in (b).
+
+[PAG 62]
+108
+
+Figura 3.6
+
+Il prodotto vettoriale
+
+A x B punta nella
+direzione di fi, che è
+perpendicolare al piano
+che contiene Ae Be
+definito dalla regola della
+mano destra.
+
+Capitolo 3 - Analisi vettoriale
+
+dove 04g è l'angolo compreso tra A e B, misurato partendo dalla coda di A verso la
+
+coda di B, mentre it è il versore normale al piano che contiene A e B. Il modulo del’ ©
+
+prodotto vettoriale è uguale all’area del paralielogramma descritto dai due vettori, co-
+me illustrato il Figura 3.62, e la sua direzione è descritta da fi secondo la seguente re-
+gola della mano destra [Figura 3.6b]: fi è diretto lungo il pollice della mano destra
+quando le dita ruotano da A verso B attraverso l’angolo 64g. Si noti che, dal momen-
+to che fà è perpendicolare al piano che contiene A e B, è anche perpendicolare sia ad
+AcheaB.
+
+AxB=fi AB sin ag
+
+(a) Prodotto vettoriale
+
+(b) Regoia delta mano destra
+
+Il prodotto vettoriale è anticommutativo, vale a dire che
+AxB=-BxA  (anticommutativo). (3.23)
+
+Questa proprietà si può verificare ruotando le dita da A verso B attraverso l’angolo
+44g. Ul prodotto vettoriale gode anche delle seguenti proprietà:
+
+Ax(B+C)=AxB+AxC. (distributiva), (3.24a)
+
+AxA=0. (3.240)
+
+Dalla definizione di prodotto vettoriale data dalla (3.22), è facile verificare che i ver-
+
+sori di base x, $ e Z del sistema in coordinate cartesiane obbediscono alle seguenti re-
+lazioni cicliche:
+
+txj=à Jx2=î, 2xî=Î. (3.25)
+
+Si noti l'ordine periodico (x7297.. .). Inoltre
+
+ix&=Px$=Zx2=0. (3.26)
+
+Se A = (Ax, Ay, 4,) eB = (B,, B,, Br), usando la (3.25) e la (3.26) si ottiene
+AX B= (RA + YA, +24) x (RB, + 98, +28.)
+= $(4,B; — A;By) + §(A:By — A,Br) (3.27)
++ (A,B, — A,B,).
+
+La forma ciclica del risultato della (3.27) consente di esprimere il prodotto vettoriale
+nella forma di determinante di una matrice:
+
+zy è
+A: Ay Az
+B, By Be
+
+AxB . (3.28)
+
+7
+I
+|
+
+Esempio 3.1 Vettorie angoli_ -
+
+3.1 Leggi fondamentali dell'algebra vettoriale
+
+In coordinate cartesiane, il vettore A è diretto dall’origine verso il punto P,(2, 3, 3),
+mentre il vettore B è diretto da P verso il punto P2(1, — 2, 2). Si ricavino
+
+(a) il vettore A, il suo modulo A e il versore 4;
+
+() Pangolo di A rispetto all’asse y;
+
+(e) il vettore B;
+
+(d) Pangolo compreso tra A e B;
+
+(©) ia distanza tra l’origine e il vettore B.
+
+Soluzione (a) Il vettore A è dato dai vettore distanza da O(0, 0, 0) a P;(2, 3, 3) co-
+me indicato in Figura 3.7. Pertanto
+A=i2+93 +23,
+A=|Al= V2 43243 = V2,
+i= $= (2+ H+0)/VD.
+(©) L’angolo 8 compreso tra A e l’asse y si ottiene dalla
+A-¥ = |A| cos 8,
+
+oppure
+B= cos! (43) = cos!
+©
+B=i(1—2)+9(-2-3) +(2-3) = 8-5-2
+@
+
+= “al - E = as.
+8= cos Later cos Vaia, = 145.1%.
+
+(e) La distanza tra l’origine e il vettore B è la distanza [OP}] indicata in Figura 3.7. Dal
+triangolo rettangolo OPP; si ottiene
+|OP}| = JAI sin (180° — @)
+= V22 sin (180° — 145.1°) = 2.68.
+
+Figura 3.7 Geometria dell’Esempio 3.1.
+
+[PAG 63]
+to
+
+Capitolo 3 - Analisi vettoriale
+
+Eseacizio 3.1 Si ricavi il vettore distanza tra P;(1,2,3) e P2(-1, 2,3) in coordinate
+cartesiane.
+
+SoLuzione PP, = —î2— ¥4.
+Esercizio 3.2 Si ricavi l’angolo 8 compreso tra i vettori A e B dell’Esempio 3.1 parten-
+do dal loro prodotto vettoriale.
+
+SoLuzione 9 = 145.1°.
+
+Esercizio 3,3 Si ricavi l’angolo tra il vettore B dell’Esempio 3.1 e l’asse z.
+
+SoLuzione 101.1°.
+
+tt Ttt(eg<. +...
+
+3.1.5 Triplo prodotto scalare e vettoriale
+
+Quando si moltiplicano tre vettori, non tutte le combinazioni possibili di prodotto
+scalare e vettoriale hanno significato. Per esempio, il prodotto
+
+Ax(B-C)
+non ha significato in quanto B - C è uno scalare, e il prodotto vettoriale del vettore A
+con uno scalare non è definito dalle regole dell’algebra vettoriale. Oltre al prodotto
+nella forma A(B - C), gli unici altri prodotti di tre vettori che hanno significato sono
+il triplo prodotto scalare e il triplo prodotto vettoriale.
+Triplo prodotto scalare
+
+Il prodotto scalare di un vettore con il prodotto vettoriale di altri due vettori è detto
+triplo prodotto scalare, in quanto il risultato è uno scalare. Il triplo prodotto scalare
+obbedisce alla seguente legge ciclica:
+
+(Cx A)=C-(AxB). (3.29)
+
+Le uguaglianze valgono finché è rispettato l’ordine ciclico (ABCABC....). Il triplo
+prodotto scalare dei vettori A = (Ax, dy, 4:), B= (Bx, By, B:)e C=(G, Cy, Ce) si
+può scrivere nella forma di determinante di una matrice 3 x 3:
+
+Ar Ay Az
+
+A-(BxC)=j|B, By, B:|. (3.30)
+
+Qa Gg G
+Si può verificare la validità della (3.29) e della (3.30) esplicitando i componenti di A,
+Be Ce svolgendo le moltiplicazioni.
+
+Triplo prodotto vettoriale
+Il triplo prodotto vettoriale è dato dal prodotto vettoriale di un vettore con il prodotto
+
+; vettoriale di altri due vettori, per esempio
+
+Ax (Bx C). (3.31)
+
+Dato che ciascuno dei due prodotti vettoriali ha come risultato un vettore, anche il ri-
+sultato del triplo prodotto vettoriale è un vettore. in generale il triplo prodotto vetto-
+riale non gode della proprietà associativa, cioè
+
+3.2 Sistemi di riferimento ortogonali
+
+Ax(BxC)#(AxB)xC, (3.32)
+
+il che significa che è importante specificare quale prodotto vettoriale deve essere ese-
+guito per primo. Esplicitando i componenti dei vettori A, Be €, si può dimostrare che
+
+| Ax(BxC)=B(A-C)-C(A-B), (3.33)
+
+a volte chiamata ‘‘regola bac-cab’’.
+
+Esempio 3.2 Triplo prodotto vettoriale
+
+Dati A=î-$ +22, B=$+Ze C= -—22+33, si ricavi (Ax B)x Ce lo si con-
+fronti con A x (B x C).
+
+Soluzione
+ty zt
+AxB=jl —1 2|=-î3-9+2
+o 1I
+e
+tI È
+(AxB)xC=/-3 -1 1j=-î3+97-22.
+-2 0 3
+
+Con un procedimento analogo si ricava A x (B x C) = £2 +94 + Z. Il fatto che i risul-
+tati dei due tripli prodotti vettoriali siano diversi è una dimostrazione della disugua-
+glianza espressa dalla (3.32). .
+
+Domande di verifica
+
+3.1 In quali condizioni due vettori sono uguali e in quali sono coincidenti?
+
+3.2 In quali condizioni si ha che il vettore posizione di un punto coincide con il vet-
+tore distanza tra due punti?
+
+3.3 SeA-B=0, qual è il valore di 045?
+
+3.4 Se A x B = 0, qual è il valore di 043?
+
+3.5 A(B- C) è untriplo prodotto vettoriale?
+
+3.6 Se A-B=A-C, ne consegue che B = C?
+
+3.2 Sistemi di riferimento ortogonali
+
+Le grandezze che si considerano nell’elettromagnetismo sono in generale funzioni
+dello spazio e del tempo. Un sistema di riferimento tridimensionale consente di defi-
+nire univocamente la posizione di un punto nello spazio o la direzione di una gran-
+dezza vettoriale. I sistemi di riferimento possono essere ortogonali o non ortogonali.
+In un sistema di riferimento ortogonale le coordinate sono perpendicolari l’una all’al-
+tra, inentre in un sistema di riferimento non ortogonale non tutte le tre coordinate so-
+no perpendicolari l’una all’altra. I sistemi di riferimento non ortogonali sono molto
+specializzati e poco utilizzati per la soluzione dei problemi concreti. Sono stati ideati
+molti sistemi di riferimento ortogonali, ma quelli più usati sono
+
+¢ il sistema in coordinate cartesiane, anche dette rettangolari,
+¢ ii sistema in coordinate cilindriche e
+e il sistema in coordinate sferiche.
+
+Wi
+
+[PAG 64]
+112 Capitolo 3 ~ Analisi vettoriale i 3.2 Sistemi di riferimento ortogonali 13
+
+Per quale motivo si ha bisogno di più di un sistema di riferimento? Per quanto un 2 _ : Figura 38° CE
+putifo fiello spazio rimanga nella stessa posizione e un oggetto mantenga la stessa ~~ TT TTT 7 7 ~ Lunghezza, area e vote
+forma a prescindere dal sistema di riferimento usato per descriverli, la soluzione di differenziale in coordinare
+
+determinati problemi concreti può essere molto facilitata scegliendo correttamente il
+sistema di riferimento più adatto alla geometria del problema. Pertanto, nei paragrafi
+seguenti si esamineranno le proprietà dei sistemi di riferimento elencati prima, men-
+tre nel Paragrafo 3.3 verranno descritte le trasformazioni applicate ai punti e ai vetto-
+ri per passare da un sistema di riferimento all’altro.
+
+A
+ds, =X dy dz
+
+3.2.1 Coordinate cartesiane
+
+Il sistema in coordinate cartesiane è stato definito nel Paragrafo 3.1, dove è stato usa-
+to per illustrare molte leggi dell’algebra vettoriale. Invece di ripetere in questa sede le
+leggi riguardanti il sistema in coordinate cartesiane, esse sono state riassunte per sem-
+plicità d'uso nella Tabella 3.1. Nel calcolo differenziale si usano comunemente le i
+grandezze differenziali: la lunghezza differenziale in coordinate cartesiane è un vetto- I
+Te, mostrato in Figura 3.8, definito come
+
+dove il pedice di ds indica la sua direzione. Analogamente
+
+d=&dl,+$dl,+îdl=%dx+$dy+%d, (3.34) | ds, = ¥dxdz (piano y-z), (3.35b)
+dove di, = dx è una lunghezza differenziale lungo & e definizioni analoghe si appli- | ds, = tdxdy (piano yz). (3.350)
+cano a di, = dye dl, = dz. oo Il volume differenziale è uguale al prodotto di tutte e tre le lunghezze differenziali:
+
+L’area differenziale ds è una grandezza vettoriale di modulo ds uguale ai prodotto .
+di due lunghezze differenziali, come dl, = dy e dl, = de, e la sua direzione è indicata dv = dx dy dz. (3.36)
+da un versore diretto lungo la terza direzione, in questo caso È. Perciò, per un’area
+differenziale nel piano y — z si ha 3.2.2 Coordinate cilindriche
+ds, = idlydl, =Xdydz (piano yz), (3.35a) Il sistema in coordinate cilindriche è utile per risolvere problemi dotati di simmetria
+
+cilindrica, per esempio calcolare la capacità per unità di lunghezza di una linea di tra-
+smissione coassiale. La posizione di un punto nello spazio è definita univocamente
+
+Tabella 3.1 _ Riassunto delle relazioni vettoriali. da tre variabili, r, $ e z, come descritto in Figura 3.9. La coordinata r è la distanza ra-
+. Coordinate cartesiane Coordinate cilindriche Coordinate sferiche diale nel piano x — y, ¢ è l’angolo azimutale misurato a partire dall’asse x positivo,
+Coordinate xyz raz R86 mentre z è definita come nel sistema in coordinate cartesiane. I loro intervalli di defi-
+
+nizione sono 0 <r < 00, O< 6 < 27 e ~co <z< 00. Il punto P(r, di, 21) in
+
+Rappresentazione vettoriale, A = BA, + 9A, + 2A, FA + bAy + 3Az Pan + OAs + OAs Figura 3.9 si trova all’intersezione di tre superfici, vale a dire la superficie cilindrica
+È ae nn " ; " xi :
+Modulo di A, [Al = [ae +02 + AB [AZ + Ae + A? [AR +A + AR definita da r= n, il semipiano verticale definito da $ = $i che si estende all’infuori
+= II ana _ ‘ partendo dall’asse z, e il piano orizzontale definito da z = 2). I versori di base mutua-
+Vettore posizione OP; = RA +N +22, ty +22, RA, mente perpendicolari sono f, ¢ e Z, di cui f punta fuori dall'origine lungo r, $ punta
+per P(x1,Y1,21) per P(A1,91,$1) in direzione tangente alla superficie cilindrica, e 2 punta lungo la verticale.
+Proprietà delle basi vettoriali Kx 1 R R=6-6= bo=1 Diversamente dal sistema in coordinate cartesiane in cui i versori di base %, ¥ e È so-
+R bR= no indipendenti dalla posizione di P; nel sistema in coordinate cilindriche sia f che $
+sono funzioni di ¢.
+È ; I versori di base soddisfano le seguenti relazioni cicliche:
+@xt=
+Prodotto scalare, A.B = AB, + AB + ABs AnBa + AdBy + A5Bg îx$= 2 ¢xt=r, txr=4, (3.37)
+; t+ è 2 R è ¢ ~
+Prodotto vettoriale, A x B Ar As Az An As Ag e, come per tutti i versori, sihachet.î=$.d= 2-Z=lefxf=@Pxd=7xZ=0.
+B By & Ba Be Bs In coordinate cilindriche un vettore si esprime come ,
+Lunghezza differenziale, di = Ra +9 dy +e dz è dr +$r dp+2 dz Ri dR+6R de+$Rsinédé A=lA|=î4, + bg +24 (3.38)
+= = 14, a; 5
+Superficie differenziale ds, =X dy dz ds, = ir dé dz dSp = RR? sin é de dé - 2a te ek 2° È
+ds, =§ ck de ds, =d dra dsp = dA sIn6 dA dé dove Ar, Ag eA, sono i componenti di A lungo le direzioni di f, $ e 2. Il modulo di
+ds, = dx dy ds, = ar de dé ds, = $R aR do A si ricava applicando la (3.20), da cui si ottiene
+
+Volume differenziale, dv = ok dy oz rdr dg dz FP sind dA dé dé i |A|= VA-A= {/A2+A +4 . (3.39)
+
+[PAG 65]
+14
+
+Capitolo 3 — Analisi vettoriale
+
+z
+
+Figura 3.10
+
+Volume e aree
+differenziali in coordinate
+cilindriche,
+
+t= 91 piano
+on
+“M
+
+Figura 3.9 Il punto P(r), $i, z1) in coordindate cilindriche; r) è la distanza radiale
+dall'origine nel piano x — y, di è l'angolo nel piano x — y misurato dall’asse x verso l’asse y, e
+2) è la distanza verticale dal pianox — y.
+
+Il vettore posizione ‘OB descritto in Figura 3.9 ha solo i componenti lungo r e lungo
+2. Pertanto
+REA
+R, = OP = ir, +22. (3.40)
+
+La dipendenza di R, da $ è definita implicitamente tramite la dipendenza di f da
+di. Perciò, quando si sfrutta la (3.40) per indicare il vettore posizione del punto
+P(r;, $1, 21), bisogna specificare che f è orientato sull’angolo di.
+
+La Figura 3.10 mostra un elemento differenziale di volume in coordinate cilindri-
+che. Le lunghezze differenziali tungo f,  e è sono
+
+dl,=dr,  diy=rdò, dl, = dz. (3.41)
+
+A
+a dss = $ dr di
+
+dv = r dr dé dz
+
+ds, = fr dé dz
+
+3.2 Sistemi di riferimento ortogonali
+
+Si noti che la lunghezza differenziale lungo ¢ è rdò, non d$. La lunghezza differen-
+ziale dI in coordinate cilindriche è data da
+
+dl = Fadl, + $dly + 2dl, = fdr + brd + ide. (3.42)
+
+Come detto in precedenza per ii sistema in coordinate cartesiane, il prodotto di una
+coppia di lunghezze differenziali è uguale al modulo di un vettore superficie differen-
+ziale, la cui normale alla superficie punta lungo la direzione della terza coordinata.
+Pertanto
+
+ds, = îdlydi, =trdodz (superficie cilindrica $-2), (3.43a)
+ds, = $dl,dl, = $drdz (piano r-z), i (3.43b)
+ds, = idl,dly = trdrdé (paino r-$). (3.430)
+
+Il volume differenziale è il prodotto delle tre lunghezze differenziali:
+dy = di, digdi, = rdrdédz. (3.44)
+Le proprietà del sistema in coordinate cilindriche sono riassunte in Tabella 3.1.
+Esempio 3.3 Vettore distanza in coordinate cilindriche
+
+Si ricavi l’espressione del versore associato al vettore A descritto in Figura 3.11 in coor-
+dinate cilindriche.
+
+Figura 3.11 Geometria dell’Esempio 3.3.
+
+Soluzione Nel triangolo OP; P> si ha
+
+OP; = OP} + A.
+Pertanto
+A=0P;- OP; = try ~ th,
+e
+
+A _ îro-#h
+
+a=4-
+
+HS
+
+[PAG 66]
+|
+|
+|
+
+né
+
+Capitolo 3 - Analisi vettoriale
+
+Si noti che l’espressione di A non dipende da ¢o, vale a dire che tutti i vettori che parto-
+no da P, verso qualsiasi punto della circonferenza definita da r = rp nel piano x ~yso=
+no uguali nel sistema in coordinate cilindriche. L’ambiguita si può risolvere specifican-
+
+do che A passa per il punto tale che $ = do.
+
+Esempio 3.4 Area in coordinate cilindriche
+Si ricavi l’area di una superficie cilindrica descritta da r=5, 30°<¢< 60° e
+0<2 <3 in Figura 3.12.
+
+Soluzione La superficie indicata è mostrata in Figura 3.12. Applicando la (3.44a) al-
+l'elemento di superficie a r costante, si ha
+
+60 3 "è 3 Sr
+S=r / d dz=5 2, =—.
+230° 6 ‘0 a È 2
+
+Si noti che si è dovuto convertire ¢ in radianti prima di valutare i limiti di integrazione.
+
+Figura 3.12 Superficie cilindrica dell’ Esempio 3.4.
+
+Esercizio 3.4 Un cilindro circolare retto di raggio r = 5 cm è concentrico con l’asse ze si
+estende daz = —3 cmaz = 3 cm. Si applichi la (3.44) per ricavare il volume del citindro.
+
+SOLUZIONE 471.2 cm’.
+
+3.2.3 Coordinate sferiche
+
+Nel sistema in coordinate sferiche la posizione di un punto nello spazio è univoca-
+mente determinata dalle variabili R,0'e $, come descritto in Figura 3.13. La coordi-
+nata R, che talvolta è chiamata coordinata distanza, descrive una sfera di raggio R
+centrata nell'origine, l’angolo zenitale @ si misura partendo dall’asse z positivo e de-
+scrive una superficie conica con vertice nell’origine e l’angolo azimutale ¢ è definito
+some nel sistema in coordinate cartesiane. Gli intervalli di definizione di R, 9 e ¢ so-
+n00<R<00,0<@<7e0<%$<27.1versoridi base È, é e é soddisfano le se-
+guenti relazioni cicliche;
+
+Rxé=¢, Gxd=R $xR=d (345)
+
+3.2 Sistemi di riferimento ortogonali 17
+
+Figura 3.13
+
+coordinate sferiche.
+
+x
+
+Un vettore con componenti Ax, Ag € Ay si rappresenta come
+
+A= alAl = Rap + 640 + d4g, (3.46)
+e il suo modulo é dato da
+|A|= VA-A= 742 4+45 +43. (3.47)
+
+Il vettore posizione relativo al punto P(R;, 81, $1) si definisce semplicemente come
+R, = OP =RR, (3.48)
+
+tenendo conto che È dipende implicitamente da 4; e di. ar
+Come descritto in Figura 3.14, le lunghezze differenziali lungo R, ? e ¢ sono
+
+dLr=dR, dlg=Rd0, digRsinOdd. (3.49)
+
+Pertanto, le espressioni del vettore lunghezza differenziale dl, del vettore superficie
+differenziale ds e del volume differenziale dv sono
+
+dl = Rdlr + 6dly + ddl
+
+= RaR + 6Rd9 + OR sin Odd, (3.50a)
+dsp = Rdlgdl, = RR’ sin @d0d@
+(superficie sferica 0-4), (3.50b)
+dsp = Odlgdly = 6R sin 8dRdé
+(superficie conica R-¢), (3.506)
+dsg = bdlgdlg = $RARd0 (piano R-0), (3.50d)
+dv = dIrdigdi; = R? sin 9ARd0d$. (3.50e)
+
+Queste relazioni sono riassunte in Tabella 3.1.
+
+Upunto P(Ri; 9, divini oo
+
+[PAG 67]
+18
+
+Capitolo 3 - Analisi vettoriale
+
+R sin bdo
+
+x
+
+Figura 3.14 Volume differenziale in coordinate sferiche.
