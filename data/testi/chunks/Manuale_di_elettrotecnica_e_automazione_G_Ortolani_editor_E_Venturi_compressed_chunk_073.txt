@@ -1,0 +1,2233 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 73/116 ===
+Chars: 44,337 | Offset: 3,181,488
+
+
+
+[PAG 1508]
+XV-24
+SISTEMI
+(XV.4.7)
+quindi i minori sono:
+(XV.4.8)
+(XV.4.9)
+(XV.4.10)
+e così via fino a n -1. Tutte le radici hanno parte reale positiva se e solo se i > 0 per i che 
+va da 1 a n.
+4.3  Metodi numerici
+I metodi precedenti sono metodi numerici limitati e inadeguati poiché in grado solamente 
+di appurare la stabilità assoluta del sistema, inoltre sono applicabili a sistemi la cui equazione 
+caratteristica è un polinomio finito in s. In particolare, se un sistema presenta nell’equazione 
+caratteristica termini esponenziali del tipo e-sT, cioè ritardi di tempo nella propagazione del 
+segnale, tali metodi forniscono un risultato approssimato. La stabilità assoluta e relativa, di 
+un sistema di controllo ad anello chiuso, può effettuarsi tramite lo studio del grafico della 
+risposta in frequenza ad anello aperto GH(j).
+Di seguito vengono riportati metodi di analisi della stabilità mediante grafici.
+4.4  Diagrammi Polari
+Una funzione di trasferimento nella quale alla variabile W(s) viene sostituita la variabile 
+j, rappresenta la funzione risposta in frequenza nel dominio delle frequenze. Può quindi 
+essere rappresentata in forma polare con W(j) = |W(j)|  (), cioè come modulo ed argo-
+mento. Può essere rappresentata anche nella forma di Eulero: W(j) = |W(j)|(cos() 
+jsen()) con |W(j)|cos() parte reale e |W(j)|sen() parte immaginaria. Queste con-
+sentono la rappresentazione rettangolare o complessa del tipo: ReW(j) + jImW(j). Il dia-
+gramma di W(j) per 
+ risulta lo stesso sia in coordinate polari che in coordinate 
+n
+a0 se n dispari
+an-1
+an-3
+...
+        
+         0
+...
+0
+a1 se n pari
+a1 se n dispari
+an   
+an-2
+...
+        
+         0
+...
+0
+a0 se n pari
+0  
+an-1
+an-3
+        ...    
+ 
+...
+0
+0
+an    
+an-2
+  
+...
+    
+ 
+...
+0
+... 
+...  
+...      
+    ...    
+ 
+...
+...
+0  
+...  
+...
+  
+      
+...
+      
+ 
+  ...
+a0
+=
+1
+an-1
+=
+2
+an-1
+an-3
+an
+an-2
+=
+2
+an-1
+an-3
+an-5
+an
+0
+an-2
+an-1
+an-4
+an-3
+=
+
+
+
+
+
+
+[PAG 1509]
+SISTEMI
+XV-25
+rettangolari.
+I diagrammi polari godono delle seguenti proprietà:
+–  La rappresentazione della funzione di trasferimento di un sistema lineare, a coeffi-
+cienti costanti e invariante nel tempo, presenta simmetria coniugata, cioè la sua rappre-
+sentazione per 
+ è l’immagine speculare rispetto l’asse orizzontale del grafico 
+per 
+.
+–  Ad incrementi delle frequenze di valore costante non corrispondono, solitamente, 
+intervalli uguali sul diagramma.
+–  Il diagramma polare di W(j) + a, con a costante complessa corrisponde al medesimo 
+diagramma di W(j) con l’origine delle coordinate spostate di -a.
+–  Se è disponibile il diagramma di Bode della funzione W(j) è facile costruire il dia-
+gramma polare associato; infatti i valori dell’ampiezza e della fase alle varie frequenze 
+sono i punti del diagramma polare.
+Date le proprietà, la tracciatura del diagramma avviene tramite un procedimento di cal-
+colo, quando si ha a disposizione l’elaboratore con programmi specifici, oppure, con suf-
+ficiente approssimazione, si determina il valore del modulo e della fase della funzione di 
+trasferimento in corrispondenza a valori di 
+ e 
+. Determinati questi valori, ed 
+il valore della fase per 
+, si è in grado di tracciare il diagramma qualitativo.
+4.5  Diagramma di Nyquist
+La curva descritta dall’estremità di un vettore rappresentante la funzione di trasferimento 
+di un sistema, al variare della pulsazione , rappresenta il diagramma di Nyquist: ad ogni 
+valore della pulsazione corrisponde un punto sul piano complesso.
+Fig. XV.4.1   Cammino di Nyquist.
+Congiungendo un generico punto del 
+diagramma con l’origine si ottiene un 
+vettore il cui modulo e argomento 
+sono rispettivamente il modulo e la 
+fase della funzione di trasferimento 
+corrispondente al punto in esame e 
+quindi alla frequenza considerata. Per 
+utilizzare questo diagramma ai fini 
+dello studio della stabilità si facciano 
+alcune brevi considerazioni: si chiami 
+cammino di Nyquist (c.d.N.) un con-
+torno chiuso che comprende al suo 
+interno l’intero semipiano destro del 
+piano s, cioè il semipiano con  posi-
+tivo. Il cammino di Nyquist appena 
+definito (Fig. XV.4.1) conterrà tutti gli 
+eventuali zeri e poli reali positivi e gli 
+eventuali zeri o poli complessi coniugati a parte reale positiva. 
+Sarà necessario, qualora la funzione di trasferimento presenti dei poli nell’origine o 
+sull’asse j, far sì che il cammino eviti questi ultimi, formando dei cerchi di raggio tendente 
+a zero. 
+Considerando un sistema retroazionato con f.d.t.: 
+(XV.4.11)
+
+
+0
+
+
+0
+
+
+
+
+
+0
+=
+
++
+=
+
+0+
+
+Poli della funzione
+di trasferimento
+j
+j
+j
+
+R
+W s
+
+G s
+1
+G sH s
++
+--------------------------------
+=
+
+[PAG 1510]
+XV-26
+SISTEMI
+si indichi col termine funzione caratteristica l’espressione 1 + G(s)H(s).
+Fig. XV.4.2  Trasformazione conforme del cammino di Nyquist.
+Orbene, il diagramma di Nyquist (d.d.N.), utile ai fini della stabilità, viene realizzato tra-
+mite le proprietà delle trasformazioni conformi (Fig. XV.4.2), ed è l’immagine del c.d.N. 
+applicato alla funzione caratteristica, evitando di attraversare i suoi poli e zeri: al variare della 
+posizione del punto rappresentante il c.d.N., corrisponde sul diagramma polare un punto, 
+estremo di un vettore, il quale descrive una curva chiusa sul diagramma polare stesso.
+Premesso che gli zeri della funzione caratteristica coincidono con i poli della f.d.t. ad 
+anello chiuso, e che i poli della funzione caratteristica coincidono coi poli della f.d.t. ad anello 
+aperto, dal teorema dell’argomento di Cauchy risulta che la differenza tra il numero dei poli 
+a parte reale positiva della f.d.t. ad anello chiuso ed il numero dei poli a parte reale positiva 
+della funzione di trasferimento ad anello aperto G(s)H(s) coincide col numero di rotazioni 
+effettuate dal vettore sul d.d.N. intorno all’origine:
+(XV.4.12)
+(XV.4.13)
+dove Z è il numero dei poli aventi parte reale positiva della funzione di trasferimento ad anello 
+chiuso, e P il numero dei poli a parte reale positiva della funzione di trasferimento ad anello 
+aperto.
+Pertanto determinando il numero dei poli P a parte reale positiva della funzione di tra-
+sferimento ad anello aperto ed il numero di rotazioni del vettore sul d.d.N., si è in grado di 
+individuare eventuali poli a parte reale positiva presenti nella funzione di trasferimento com-
+plessiva e quindi l’eventuale conseguente instabilità del sistema.
+Inoltre un sistema stabile ad anello aperto, cioè con P = 0, è stabile anche ad anello chiuso 
+se non avviene rotazione alcuna intorno all’origine, da parte del vettore rappresentante il 
+d.d.N. Ricordando le proprietà dei diagrammi polari, facendo riferimento alla f.d.t. ad anello 
+aperto, si può affermare che un sistema è stabile se P = 0 e se il vettore del d.d.N. non compie 
+alcuna rotazione al punto 1 + j0 per  che varia da 
+ a 
+.
+4.6  Analisi di Bode
+È un’analisi di tipo grafico che utilizza due grafici: l’ampiezza e la fase della funzione, 
+entrambi in funzione della pulsazione  della funzione di trasferimento ad anello aperto. 
+j
+j
+j
+
+R
+Im
+M
+Re
+N
+ZP
+=
+Z
+N
+P
++
+=
++
+
+
+[PAG 1511]
+SISTEMI
+XV-27
+Normalmente per l’asse delle pulsazioni e dell’ampiezza si utilizzano scale logaritmiche. 
+Anche con questo metodo è possibile l’analisi della stabilità relativa del sistema. Sull’asse 
+delle ascisse si riportano i valori di  in scala logaritmica perché consentono la rappresen-
+tazione di intervalli maggiori di pulsazione rispetto le scale lineari ed anche perché in questo 
+caso i grafici sono approssimabili con linee rette. L’ampiezza è riportata sulle ordinate i deci-
+bel (db) con:
+(XV.4.14)
+Nella costruzione del grafico è utile ricordare che, per la proprietà dei logaritmi, il dia-
+gramma dell’ampiezza di una funzione espressa come prodotto di più termini, risulta la 
+somma dei singoli diagrammi relativi a ciascun termine, tutti espressi in db. Il diagramma 
+relativo alle ampiezze prende il nome di diagramma di Bode delle ampiezze, mentre l’altro 
+diagramma di Bode delle fasi.
+Per tracciare il diagramma di Bode di una funzione è necessario esprimere la funzione 
+da esaminare nella cosiddetta forma di Bode; mettendo cioè in evidenza tutti gli zeri zi ed 
+i poli pi della funzione assegnata, la si può riscrivere nella forma:
+(XV.4.15)
+e riorganizzata nel modo seguente:
+(XV.4.16)
+dove Kb è chiamato guadagno statico ed è dato da:
+(XV.4.17)
+I diagrammi di Bode si ottengono sommando i contributi di ampiezza e fase di ciascun 
+polo e zero, e le loro rappresentazioni asintotiche sono sufficienti nella maggior parte dei 
+casi; a tal riguardo si riportano nella Tab. XV.4.1 i diagrammi delle ampiezze e delle fasi delle 
+funzioni di base, tramite le quali è possibile costruire i diagrammi di funzioni più complesse. 
+Una attenzione particolare va posta per le funzioni rappresentanti risposta in frequenza 
+del secondo ordine con poli complessi del tipo:
+(XV.4.18)
+in quanto in queste espressioni lo smorzamento  è un parametro e n la pulsazione naturale 
+del sistema. 
+db
+20log10 G j
+
+H j
+
+.
+=
+G j
+
+H j
+
+
+K j
+z1
++
+
+j
+z2
++
+
+... j
+zm
++
+
+
+j
+
+l j
+p1
++
+
+j
+p2
++
+
+... j
+pn
++
+
+
+--------------------------------------------------------------------------------------
+=
+G j
+
+H j
+
+
+Kb
+1
+j
+z1
+-----
++
+
+
+
+1
+j
+z2
+-----
++
+
+
+
+... 1
+j
+zm
+-----
++
+
+
+
+
+j
+
+l 1
+j
+p1
+-----
++
+
+
+
+1
+j
+p2
+-----
++
+
+
+
+... 1
+j
+pn
+-----
++
+
+
+
+
+---------------------------------------------------------------------------------
+=
+Kb
+z1z2...zm
+p1p2...pm
+----------------------.
+=
+1
+1
+j2
+n
+---------
+n
+------
+
+
+
+2
++
+----------------------------------------
+0
+
+1
+
+
+
+[PAG 1512]
+XV-28
+SISTEMI
+Tab. XV.4.1  Diagrammi asintotici di Bode
+Diagramma
+Fase
+Espressione
+Fase
+Diagramma
+Modulo
+Espressione
+Modulo
+Funzione di
+trasferimento
+G(s)
+Angolo
+|k|<0
+|k|<0
+
+90
+180
+-90
+-180
+1
+100 1000
+10
+k>0
+
+45
+90
+-45 1
+100 1000
+10
+0
+
+1
+Angolo
+
+45
+-45
+-90
+1
+100 1000
+10
+0
+
+1
+Angolo
+
+45
+90
+1
+100 1000
+10
+-90
+-45
+Angolo
+
+0
+=
+
+180
+
+=
+K
+0
+
+K
+0
+
+
+arctg
+1
+------
+=
+
+-arctg
+1
+------
+=
+
++90°
+=
+Ampiezza
+|k|>10
+|k|<10
+
+20
+40
+-20
+-40
+1
+100 1000
+10
+
+1
+100 1000
+10
+40
+60
+0
+-20
+20
+
+1
+Ampiezza
+Ampiezza
+
+1
+100 1000
+10
+
+1
+020
+-40
+-60
+-20
+Ampiezza
+
+.1
+10
+100
+1
+20
+40
+-20
+-40
+0
+G sdB
+20log K
+=
+G j
+
+dB
+ 
+=
+20log 1
+
+
+2
++
+G j
+
+dB
+ 
+=
+-20log 1
+
+
+2
++
+G j
+
+dB
+20log
+=
+G s
+K
+=
+G s
+1
+s
++
+=
+G s
+1
+1
+s
++
+--------------
+=
+G s
+Ks
+=
+
+[PAG 1513]
+SISTEMI
+XV-29
+Tab. XV.4.1   Segue
+Diagramma
+Fase
+Espressione
+Fase
+Diagramma
+Modulo
+Espressione
+Modulo
+Funzione di
+trasferimento G(s)
+45
+90
+-45
+-90
+0
+
+1
+100 1000
+10
+Angolo
+
+1
+100 1000
+10
+090
+-180
+-90
+.1n
+10n
+n
+Angolo
+
+1
+100 1000
+10
+90
+180
+-90
+0
+.1n
+10n
+n
+Angolo
+
+-90°
+=
+
+-arctg
+2
+n
+------
+1
+2
+n
+2
+--------
+–
+-----------------
+=
+
+arctg
+2
+n
+------
+1
+2
+n
+2
+--------
+–
+-----------------
+=
+20
+40
+-20
+-40
+0
+.1
+10
+100
+1
+
+Ampiezza
+020
+-40
+-60
+-20
+
+1
+100 1000
+10
+n
+Ampiezza
+
+1
+100 1000
+10
+40
+60
+0
+-20
+20
+n
+Ampiezza
+G sdB
+20log K
+=
+G j
+
+dB
+ 
+=
+-20log
+1- 2
+n
+2
+--------
+
+
+
+
+
+2
+2
+n
+------
+
+
+
+2
++
+G j
+
+dB
+ 
+=
+20log
+1- 2
+n
+2
+--------
+
+
+
+
+
+2
+2
+n
+------
+
+
+
+2
++
+G s
+1
+s--
+=
+G s
+n
+2
+s2
+2sn
+n
+2
++
++
+------------------------------------------
+=
+G s
+s2
+n
+2
+--------
+2s
+n
+------
+n
+2
++
++
+=
+
+[PAG 1514]
+XV-30
+SISTEMI
+Fig. XV.4.3  Diagramma di Bode delle ampiezze.
+Fig. XV.4.4  Diagramma di Bode delle fasi.
+Pulsazione normalizzata /n
+Ampiezza db
+ = 0,707
+ = 0,1
+ = 0,2
+ = 0,3
+ = 0,5
+0.1
+.2
+.3 .4 .5
+1
+10
+4
+2
+20
+10
+0
+-10
+-20
+-30
+0.1
+.2
+.3 .4 .5
+1
+10
+4
+2
+ = 0,707
+ = 0,1
+ = 0,2
+ = 0,5
+ = 0,3
+0°
+-80°
+-120°
+-160°
+Pulsazione normalizzata /n
+Fase
+-40°
+
+[PAG 1515]
+SISTEMI
+XV-31
+A tal riguardo si vedano le Figg. XV.4.3 e XV.4.4 nelle quali si può notare la pendenza 
+dell’asintoto che risulta doppia rispetto al caso di un solo polo. Inoltre si ricordi che in pre-
+senza di una coppia di zeri complessi i diagrammi di Bode (d.d.B.) sono le immagini speculari 
+rispetto la linea di 0 dB e di 0 gradi di quelli relativi ai poli complessi. 
+Tracciati i d.d.B. si è in grado di determinare la stabilità o l’instabilità di un sistema ricor-
+dando che la condizione necessaria e sufficiente affinché un sistema sia stabile è la seguente 
+(l’espressione G(j)H(j) viene modificata per comodità in GH(j)):
+–  La fase della funzione GH(j) alla pulsazione  che corrisponde a 0 dB del modulo di 
+GH(j) sia 
+.
+oppure:
+–  Il modulo di GH(j) che corrisponde alla pulsazione  alla quale la fase vale 180° 
+abbia valore minore di 0 dB.
+4.7  Diagramma di Nichols 
+Il diagramma di Nichols, detto anche carta di Nichols, è sostanzialmente una modifica 
+dei diagrammi a M ed N costanti: se si considera un sistema di controllo a retroazione uni-
+taria, avente ingresso X(j) ed uscita Y(j) la sua funzione di trasferimento è data da:
+(XV.4.19)
+ed è possibile, tramite il diagramma polare di G(j), determinare subito le caratteristiche di 
+fase e ampiezza della risposta in frequenza ad anello chiuso tracciando sul piano   G(j) linee 
+ad ampiezza costante dette cerchi M e linee a fase costante dette cerchi N. I cerchi  M ed 
+N sono dati da:
+(XV.4.20)
+(XV.4.21)
+Fig. XV.4.5  Cerchi M.
+L’intersezione dei cerchi M ed N 
+col diagramma polare della fun-
+zione consente di ottenere il valore 
+del modulo e della fase corrispon-
+dente al valore della pulsazione 
+in quel punto. Nella Fig. XV.4.5 è 
+riportato il diagramma polare di 
+G(j) con sovrapposti i cerchi M: 
+ogni cerchio M è caratterizzato da 
+un raggio di ampiezza
+, con 
+centro avente coordinate 
+.
+Si noti sulla figura il valore Mr che 
+corrisponde al più elevato valore di M relativo ai cerchi tangenti al diagramma polare e rap-
+presenta il picco di risonanza. 
+
+
+180
+Y j
+
+
+X j
+
+
+--------------
+G j
+
+
+1
+G j
+
+
++
+------------------------
+=
+M
+G j
+
+
+1
+G j
+
+
++
+------------------------
+=
+N
+Im Y j
+
+X j
+
+
+
+
+
+Re Y j
+
+X j
+
+
+
+
+
+-------------------------------------------- .
+=
+M > 1 
+ImG(j)
+M = Mr 
+M = 1 
+ReG(j)
+1
+ 1
+2
+M < 1
+M
+M21
+--------------
+M2
+M21
+--------------,0
+
+
+
+
+
+
+
+[PAG 1516]
+XV-32
+SISTEMI
+Riguardo ai cerchi N (Fig. XV.4.6), 
+questi hanno raggio 
+ e 
+centro di coordinate 
+ .
+La carta di Nichols è una applica-
+zione di quanto appena visto nel 
+senso che i cerchi   M ed N sul dia-
+gramma polare diventano contorni 
+M ed N non circolari, tramite coor-
+dinate rettangolari relative 
+all’ampiezza in dB ed alla fase. In 
+particolare si tratta di realizzare il 
+diagramma ampiezza-fase della fun-
+zione ad anello aperto con |GH(j)| 
+espresso in dB, e argGH(j) 
+espresso in gradi.
+Fig. XV.4.6  Cerchi N.
+La carta di Nichols è un diagramma ampiezza-fase con luoghi ad ampiezza costante 
+espressi in dB e luoghi a fase costante espressi in gradi; il diagramma di Nichols altro non 
+è che il tracciato ampiezza-fase di una funzione sovrascritto alla carta di Nichols. 
+Anche con questo metodo, dall’analisi della funzione ad anello aperto, si è in grado di 
+effettuare l’analisi della stabilità di un sistema ad anello chiuso.
+L’utilizzo del diagramma di Nichols presenta, rispetto al diagramma polare, il vantaggio 
+di poter rappresentare la funzione su un più ampio intervallo di frequenze, in quanto il modulo 
+della funzione viene riportato in scala logaritmica ed inoltre, come conseguenza dell’uso dei 
+logaritmi, è possibile costruire il diagramma come somma dei contributi in ampiezza e fase 
+dei singoli poli e zeri.
+Differisce dal diagramma di Bode in quanto è rappresentato (Fig. XV.4.7) con un solo 
+diagramma.
+Per agevolare le operazioni di traccia-
+tura del diagramma, qualora non sia 
+possibile ricorrere al calcolatore, con-
+verrà utilizzare il metodo visto per 
+l’analisi secondo Bode.
+Analogamente a quanto visto per il 
+diagramma di Bode, la stabilità del 
+sistema è legata al valore del guada-
+gno minore di 0 dB in corrispondenza 
+dello sfasamento di 180° o ad uno 
+sfasamento maggiore di 180° in cor-
+rispondenza di un guadagno di 0 dB.
+Fig. XV.4.7  Diagramma ampiezza-fase di GH(j).
+4.8  Luogo delle Radici
+È un metodo che consente l’analisi della risposta di un sistema dallo studio della col-
+locazione dei poli e degli zeri della funzione caratteristica GH(j), senza la necessità di fat-
+torizzare il polinomio caratteristico. 
+ImG(j)
+ReG(j)
+GH(j)
+(1,0)
+N
+(1/2,0)
++30°
++N
+30°
++90°
+-90°
+1
+4--
+1
+2N
+-------
+
+
+
+
++
+2
+1
+2--, 1
+2N
+-------
+
+
+
+
+margine di
+guadagno
+margine
+di fase
+fase
+ampiezza db
+20
+15
+10
+5
+0
+-5
+-10
+-15
+-20
+-30
+-60
+-90
+-120
+-150
+-180
+
+[PAG 1517]
+SISTEMI
+XV-33
+In un sistema ad anello chiuso con funzione di trasferimento 
+ considerata 
+la seguente espressione:
+(XV.4.22)
+con N(s) e D(s) polinomi di variabile complessa s rappresentanti rispettivamente il nume-
+ratore e il denominatore del prodotto GH, ed 
+. Date le premesse la f.d.t. diventa: 
+, quindi i poli della f.d.t. ad anello chiuso sono le radici dell’equazione: 
+(XV.4.23)
+Dall’analisi si evidenzia che la posizione delle radici varia in dipendenza del fattore di 
+guadagno K: prende il nome di luogo delle radici l’insieme delle linee descritte da queste 
+radici sul piano complesso al variare di K. Nell’equazione XV.4.23 si vede che se K è nullo 
+le radici dell’equazione corrispondono con le radici di D(s), cioè ai poli della f.d.t. ad anello 
+aperto GH. Mano a mano che K diventa grande, le soluzioni sono quelle del polinomio N(s), 
+cioè corrispondono agli zeri della f.d.t. ad anello aperto. Al variare di K da zero ad infinito 
+i poli della f.d.t. ad anello chiuso partono dai poli della f.d.t. ad anello aperto per arrivare 
+agli zeri della f.d.t. ad anello aperto. Il luogo completo è definito per valori di K sia positivi 
+che negativi: questo può servire per effettuare lo studio di sistemi con retroazione positiva, 
+cioè quando la funzione caratteristica è espressa da 1  GH = 0. Il tracciamento e la gra-
+duazione del luogo delle radici può essere effettuato considerando l’equazione caratteristica 
+come rapporto tra vettori che congiungono un generico punto P   del piano complesso con 
+i suoi zeri e vettori congiungenti il medesimo punto P ed i suoi poli. Il rapporto tra il prodotto 
+dei vettori associati agli zeri ed il prodotto dei vettori associati ai poli, moltiplicato per il 
+fattore K, deve avere valore 1; considerando l’equazione caratteristica 1 + GH, dopo alcuni 
+passaggi si ottiene:
+(XV.4.24)
+Posto che 
+, al variare di K' vi sono n punti che soddisfano la relazione precedente. 
+Quanto appena visto viene comunque interpretato come due condizioni: una sul modulo, 
+l’altra sulla fase. Precisamente: 
+(XV.4.25)
+come condizione di modulo, e:
+W
+G
+1
+GH
++
+-----------------
+=
+GH
+KN s
+D s
+-----------
+K sm+am-1sm-1+...+a0
+
+
+sn
+bn-1
++
+sn-1+...+b0
+----------------------------------------------------------
+=
+=
+m
+n
+
+W
+GD
+D
+KN
++
+------------------
+=
+D s
+KN s
++
+0.
+=
+K'
+szi
+
+
+i
+1
+=
+m
+
+spi
+
+
+l
+1
+=
+n
+
+-------------------------
+1.
+=
+n
+m
+
+K'
+szi
+i
+1
+=
+m
+
+spl
+l
+1
+=
+n
+
+-----------------------
+1
+=
+
+[PAG 1518]
+XV-34
+SISTEMI
+(XV.4.26)
+come condizione di fase, dove con i e l si intendono rispettivamente gli argomenti dei vet-
+tori associati agli zeri e quelli associati ai poli. L’importanza dello studio tramite il luogo 
+delle radici consiste nel fatto che la stabilità di un sistema può dipendere dal valore del suo 
+guadagno: sul diagramma rappresentante il luogo delle radici sono visualizzate le radici 
+dell’equazione caratteristica, quindi si riesce ad evidenziare la stabilità o meno del sistema 
+al variare di K. Per tracciare il luogo delle radici ci si affida, salvo l’utilizzo di calcolatori, 
+alle regole di seguito riportate: 
+–  Il maggiore tra i valori di n ed m definisce il numero dei rami del luogo
+–  Ogni ramo del luogo ha origine da un polo della f.d.t. ad anello aperto, e termina su 
+uno zero della medesima o in punti all’infinito. Da ogni polo multiplo parte un numero di 
+rami pari alla sua molteplicità, analogamente per gli zeri di molteplicità superiore ad uno. 
+Nel caso, comune, in cui i poli siano numericamente maggiori agli zeri, vi sarà un numero 
+di rami pari alla differenza tra poli e zeri che terminerà in un punto all’infinito. Il numero 
+degli zeri in difetto sono zeri all’infinito.
+–  Rispetto all’asse reale, il luogo delle radici è simmetrico.
+–  Se la f.d.t. ad anello aperto ha zeri all’infinito, i rami tendono ad asintoti che sono 
+inclinati rispetto l’asse reale con angoli dati da:
+(XV.4.27)
+con t che rappresenta il numero dei rami all’infinito.
+–  Gli asintoti all’infinito escono dall’asse reale nel punto di ascissa: 
+(XV.4.28)
+–  Al luogo delle radici fanno parte i punti dell’asse che lasciano alla loro destra un 
+numero di poli e zeri (tenendo conto della loro molteplicità) complessivamente dispari.
+–  Intendendo argGH' la fase di GH calcolata nel polo complesso, ignorando il contri-
+buto di quel particolare polo, l’angolo di partenza da quel polo è dato da:
+(XV.4.29)
+–  Intendendo argGH'' la fase di GH calcolata nello zero complesso, ignorando il contri-
+buto di quel particolare zero, l’angolo di arrivo a quello zero è dato da:
+(XV.4.30)
+–  I punti di biforcazione b sono punti dell’asse reale dove si dipartono o arrivano più 
+rami, la loro posizione è ricavabile dalla soluzione rispetto b della seguente equazione:
+(XV.4.31)
+Alfine di facilitare la tracciatura, tutt’altro che immediata, del luogo delle radici, Walter 
+Evans ha ideato e messo a punto uno strumento meccanico chiamato Spirule. 
+1
+i
+1
+=
+m
+
+
+l
+l
+1
+=
+n
+
+2t
+1
++
+
+,
+=
+t
+0 1 2 ...
+
+=
+
+180
+360 t
++
+nm
+--------------------------------,
+=
+t
+0 1 2 ...
+
+=
+
+pi
+l
+1
+=
+n
+
+
+zi
+i
+1
+=
+m
+
+nm
+-------------------------------.
+=
+p
+180
+argGH'.
++
+=
+p
+180
+GH''.
+arg
+=
+1
+b
+pl
++
+----------------
+l
+1
+=
+n
+
+1
+b
+zi
++
+--------------- .
+i
+1
+=
+m
+
+=
+
+[PAG 1519]
+SISTEMI
+XV-35
+4.9  Stabilità Relativa
+La stabilità relativa (s.r.) rappresenta la massima variazione accettabile per un parametro 
+del sistema senza che quest’ultimo diventi instabile. Secondo l’analisi che viene effettuata 
+si hanno parametri diversi per individuare la condizione di stabilità relativa e si fa comu-
+nemente riferimento al margine di guadagno e al margine di fase.
+Nell’analisi di Nyquist la s.r., per un sistema retroazionato, si individua dal d.d.N. per 
+la stabilità; indicata con  la pulsazione alla quale il diagramma interseca il semiasse nega-
+tivo, il margine di guadagno è espresso da:
+(XV.4.32)
+Indicata con 1 la pulsazione corrispondente a |GH(j1)| = 1, si definisce margine di fase
+l’angolo di cui deve essere ruotato il diagramma polare in modo che esso passi per il punto 
+(-1, 0), espresso in gradi, che è dato da:
+(XV.4.33)
+Per le grandezze appena viste si faccia riferimento alla Fig. XV.4.8.
+Fig. XV.4.8  Stabilità relativa tramite il diagramma polare.
+Nell’analisi tramite i diagrammi di Bode, i parametri margine di guadagno e margine di 
+fase, che definiscono la stabilità relativa, sono definiti con riferimento alla risposta in fre-
+quenza di un sistema ad anello aperto e quindi individuabili sui d.d.B. Ricordando che a 0 
+dB corrisponde un guadagno unitario, si definisce allora margine di guadagno l’ampiezza, 
+espressa in dB, del segmento compreso tra l’asse orizzontale (0 dB) ed il valore di GH(j) 
+indicato sul diagramma, in corrispondenza al valore della fase di 180°. Per il margine di 
+fase si fa riferimento all’intervallo, espresso in gradi, in corrispondenza della pulsazione per 
+la quale |GH(j)| = 0 db, per cui argGH(j) è superiore a 180°. Per quanto appena esposto 
+si faccia riferimento alla Fig. XV.4.9.
+Nell’analisi della stabilità, si raccomanda, alfine di limitare i possibili errori nella de-
+terminazione dei margini, nel caso in cui vengano utilizzate curve asintotiche, che queste 
+ultime siano corrette in un numero adeguatamente elevato di punti in corrispondenza delle 
+pulsazioni cui fanno riferimento i margini; inoltre, anche se nella maggior parte dei casi 
+valori positivi dei margini garantiscono la stabilità del sistema ad anello chiuso, per esser-
+MG
+1
+GH j
+
+
+-------------------------.
+=
+M
+180
+argGH j1
+
+
++
+
+.
+=
+ImGH(j)
+ReGH(j)
+(-1,0)
+GH(j)
+|GH(j)|
+ImGH(j)
+ReGH(j)
+GH(j)
+F
+
+[PAG 1520]
+XV-36
+SISTEMI
+ne certi si consiglia di utilizzare altri metodi (per esempio, il d.d.N. di Nyquist).
+Fig. XV.4.9  Margine di guadagno e margine di fase.
+Effettuando l’analisi della stabilità con i diagrammi di Nichols, i margini sono facilmente 
+individuabili: la pulsazione nella quale il grafico di GH(j) interseca la linea di       180° 
+è la pulsazione di attraversamento di fase , dove il margine di guadagno, espresso in dB, 
+vale:
+(XV.4.34)
+Indicata con 1 la pulsazione nella quale il diagramma GH(j) vale 0 dB, il margine di 
+fase si calcola con:
+(XV.4.35)
+In questo caso valori positivi per margine di guadagno e di fase non garantiscono la sta-
+bilità ad anello chiuso, pertanto, si raccomanda l’impiego di altre tecniche. 
+Il luogo delle radici è il tipico metodo utilizzato in fase di progetto per i sistemi ad anello 
+chiuso, di conseguenza il margine di guadagno è quel valore per il quale può essere molti-
+plicato il fattore progettuale K senza che il sistema ad anello chiuso diventi instabile. Tramite 
+il luogo delle radici si definisce la seguente formula:
+(XV.4.36)
+dove K' è il valore di K all’attraversamento dell’asse immaginario e K'' è il valore progettuale. 
+Il margine di guadagno è infinito se il luogo delle radici non interseca l’asse j.
+Pulsazione 
+Ampiezza db
+20
+0
+-20
+-40
+-80
+Fase°
+argGH(j
+20 log |GH(j|
+Margine di
+fase = 38°
+Margine di
+guadagno
+-60
+-50
+-150
+-250
+-200
+-100
+= 12db
+0.2
+.5
+1
+10
+20
+MG
+20log10 GH j
+
+.
+=
+M
+180
+argGH j1
+
+.
++
+=
+MG
+K'
+K''
+-----
+=
+
+[PAG 1521]
+SISTEMI
+XV-37
+4.10  Classificazione dei sistemi, coefficienti di errore e sensibilità
+Un sistema caratterizzato da una data f.d.t. può essere realizzato sia in catena aperta che 
+in catena chiusa; quest’ultima possiede però caratteristiche che non sono presenti nella 
+prima. Una classificazione della misura dell’efficacia di un sistema retroazionato in condi-
+zioni di regime viene espresso tramite il coefficiente di errore e il coefficiente di sensibilità. 
+L’espressione matematica canonica (forma di Bode) di un sistema retroazionato può pre-
+sentare termini sl al denominatore, cioè poli nell’origine. Un sistema retroazionato si dice 
+di tipo l se la f.d.t. della catena aperta ha nell’origine un polo di molteplicità l. L’eventuale 
+presenza di poli nell’origine stanno ad indicare l’eventuale presenza di elementi integratori: 
+generalmente i sistemi di tipo zero sono regolatori, quelli di tipo uno e due sono asservimenti. 
+Per ogni sistema è utile conoscere il suo errore a regime in funzione del segnale in ingresso 
+una volta esaurito il transitorio.
+In particolare si inviano in ingresso segnali quali il gradino, la rampa e la parabola ai 
+quali corrispondono rispettivamente gli errori detti di posizione, velocità ed accelerazione. 
+L’entità degli errori, cioè lo scostamento tra l’uscita ideale e quella reale sono legati al tipo 
+del sistema ed al segnale inviato. 
+La Tab. XV.4.2 riporta i valori degli errori a transitorio esaurito per un sistema retroa-
+zionato avente funzione della catena diretta del tipo:
+(XV.4.37)
+e funzione della catena di retroazione del tipo:
+(XV.4.38)
+sottoposto ad un segnale di ingresso avente ampiezza V; la Tab. XV.4.3 mostra il grafico 
+dell’andamento degli errori.
+Quando viene individuata una f.d.t. vengono fissati dei valori per alcuni suoi parametri 
+quali: sensibilità, velocità di risposta, errore transitorio. Con il termine sensibilità si vuole 
+individuare la variazione della f.d.t. del sistema rispetto al valore suo nominale, quando uno 
+dei parametri modifica il suo valore. Matematicamente, indicando con Sp la sensibilità di una 
+funzione Q(s) rispetto al parametro p, si ha:
+(XV.4.39)
+che con p tendente a zero diventa:
+(XV.4.40)
+ dove 
+è la derivata parziale di Q(s) rispetto al parametro considerato.
+Premesso che la velocità di risposta del sistema è direttamente proporzionale alla banda 
+passante, la velocità di risposta dell’anello è proporzionale alla frequenza di cross-over
+(detta anche frequenza di taglio). Quest’ultima è definita, per esempio, tramite il d.d.B. come 
+la frequenza di attraversamento, cioè la frequenza corrispondente al guadagno di 0 dB.
+G s
+k
+s
+z1
++
+
+s
+z2
++
+
+... s
+zm
++
+
+
+sl s
+p1
++
+
+s
+p2
++
+
+... s
+pn
++
+
+
+------------------------------------------------------------------
+=
+H s
+H0
+=
+Sp
+Q s
+Q s
+---------------
+p
+p
+------
+---------------
+=
+Sp
+Q s
+p
+---------------
+p
+0
+
+lim
+p
+Q s
+-----------
+Q s
+p
+--------------
+p
+Q s
+-----------
+=
+=
+Q s
+p
+--------------
+
+[PAG 1522]
+XV-38
+SISTEMI
+Tab. XV.4.2  Coefficienti di errore ed errore transitorio finito nei sistemi sollecitati da 
+segnali di ampiezza V
+Parabola
+Errore a
+transitorio
+esaurito
+
+
+ka
+0
+0
+Rampa
+Errore a
+transitorio
+esaurito
+
+0
+kv
+0
+
+Gradino
+Errore a
+transitorio
+esaurito
+0
+0
+kp
+
+
+Ingresso
+Tipo 
+di sistema
+Tipo 0
+Tipo 1
+Tipo 2
+V
+H0
+2ka
+--------------
+ s2 k H0
+
+
+s-0
+lim
+G s
+
+V
+H0
+2kv
+--------------
+ s k H0
+
+
+s
+0
+–
+lim
+G s
+
+V
+H0 1
+kp
++
+
+
+--------------------------
+k H0
+
+s-0
+lim
+G s
+
+
+[PAG 1523]
+SISTEMI
+XV-39
+Tab. XV.4.3  Errore tra segnale desiderato (linea continua) e risposta (linea tratteggiata)
+Per quanto concerne la valutazione del sistema nel comportamento transitorio, si ricorda 
+che il caso di errore transitorio nullo non rispecchia il caso ideale: nel caso dell’asservi-
+mento, per esempio, se l’errore transitorio è nullo, il sistema segue fedelmente i segnali appli-
+cati all’ingresso, quindi non solo quelli utili ma anche gli eventuali rumori presenti.
+È necessario quindi avere un sistema in grado di distinguere tra segnali utili e rumore 
+sovrapposto e ciò è possibile se le variazioni dei segnali nel tempo sono abbastanza lente 
+rispetto a quelle del rumore. In questo caso il sistema dovrà rispondere in modo che i tempi 
+che caratterizzano il decadimento dell’errore dinamico siano differenti per il segnale e per 
+il rumore.
+L’errore transitorio è legato alla risposta indiciale relativa all’ingresso e al disturbo, 
+quindi viene valutato tramite l’entità e la durata dalle seguenti grandezze:
+Errore infinito
+Errore costante
+Errore nullo
+Segnale in
+ingresso ed
+errore
+Gradino:
+errore di
+posizione
+Rampa:
+errore di
+velocità
+Parabola:
+errore di
+accelerazione
+y(t)
+t
+y(t)
+t
+y(t)
+t
+y(t)
+t
+K
+y(t)
+t
+K
+y(t)
+t
+K
+y(t)
+t
+y(t)
+t
+y(t)
+t
+
+[PAG 1524]
+XV-40
+SISTEMI
+–  Tempo all’emivalore, tempo di salita o di risposta e, nel caso di sistemi con oscilla-
+zioni, tempo al picco come indice della rapidità e prontezza del sistema nell’adeguarsi ai 
+segnali in ingresso e ridurre l’effetto dei disturbi.
+–  Valore dell’eventuale sovraelongazione indicante il massimo errore raggiunto dopo il 
+primo annullamento dell’errore stesso come indice di precisione.
+–  Tempo di assestamento come ulteriore indice di prontezza nell’ambito del tempo di 
+durata delle perturbazioni transitorie.
+In sostituzione alle grandezze appena viste si possono utilizzare dei cosiddetti indici di 
+qualità: tali indici sono valori indicanti l’entità dell’errore transitorio, cioè lo scostamento 
+tra la funzione desiderata e la funzione effettiva.
+In alternativa, per gli asservimenti, si individua la prontezza di risposta come la banda 
+passante a 3 dB, e l’ampiezza degli scostamenti associata all’ampiezza dell’eventuale riso-
+nanza.
+4.11  Reti di compensazione
+Le reti di compensazione o reti correttrici, sono dispositivi che consentono di rendere 
+stabili sistemi instabili o aumentare il margine di ampiezza o di fase di sistemi stabili e sono 
+inserite nel ramo diretto del controllo (Fig. XV.4.10).
+Fig. XV.4.10  Sistema closed loop con rete correttrice Prc(s).
+Le reti di compensazione sono fondamentalmente di tre specie:
+–  Rete anticipatrice. Ha una funzione di trasferimento del tipo:
+(XV.4.41)
+che presenta uno zero in s = -a ed un polo in s = -b, con b > a. 
+–  Rete ritardatrice con la seguente funzione di trasferimento:
+(XV.4.42)
+con b > a ma con lo zero in s = b ed il polo in s = a.
+–  Rete a sella (ritardatrice-anticipatrice) con f.d.t.:
+(XV.4.43)
+Quindi con due poli e b1 > a1, b2 > a2. Costruttivamente si impone che a1b2 = b1a2.
+4.12  Esempi di reti correttrici
+I seguenti esempi mostrano reti correttrici realizzate con elementi RC, e vengono messe 
+in risalto le associate f.d.t. determinate tramite l’applicazione dei principi di Kirchhoff e delle 
+trasformate di Laplace. 
+Rete anticipatrice
+È una rete di tipo passivo per la quale, supponendo l’uscita non caricata, la f.d.t. risulta:
+Prc(s)
+G(s)
+H(s)
+x +
+-
+e
+y
+PAnt s
+s
+a
++
+s
+b
++
+-----------
+=
+PRit s
+a s
+b
++
+
+
+b s
+a
++
+
+
+-------------------
+=
+PRA s
+s
+a1
++
+
+s
+b2
++
+
+
+s
+b1
++
+
+s
+a2
++
+
+
+--------------------------------------.
+=
+
+[PAG 1525]
+SISTEMI
+XV-41
+(XV.4.44)
+dove a = 1/CR1 e b = 1/CR1 + 1/CR2.
+Fig. XV.4.11  Rete anticipatrice RC.
+Effettuando l’analisi di questa rete (Fig. 
+XV.4.11) tramite uno dei metodi prece-
+dentemente esposti si può rilevare:
+–  Migliore risposta in alta frequenza.
+–  Aumento della pulsazione di cross-
+over nel sistema compensato e quindi 
+aumento della rapidità di risposta.
+–  Aumento del margine di stabilità.
+–  Riduzione del guadagno statico per l’introduzione di un’attenuazione.
+Rete ritardatrice
+È una rete di tipo passivo per la quale, supponendo l’uscita non caricata, la f.d.t. risulta:
+(XV.4.45)
+dove 
+ e 
+ .
+Fig. XV.4.12  Rete ritardatrice con RC.
+Nell’analisi di questa rete (Fig. 
+XV.4.12) tramite uno dei metodi 
+precedentemente esposti si può 
+evidenziare:
+–  Migliore risposta in bassa 
+frequenza.
+–  Diminuzione 
+della 
+pulsa-
+zione di cross-over nel sistema 
+compensato, quindi riduzione 
+della banda passante e conseguente aumento del tempo di risposta.
+–  Aumento del margine di stabilità.
+Rete a sella
+Anche in questa rete, di tipo passivo, supponiamo l’uscita non caricata. La f.d.t. risulta:
+(XV.4.46)
+dove 
+       
+.
+PAnt s
+U0 s
+Ui s
+-------------
+sC
+1 R1
+
++
+sC
+1 R1
+
+1 R2
+
++
++
+---------------------------------------------
+s
+a
++
+s
+b
++
+-----------
+=
+=
+=
+R1
+Ui
+U0
+R2
+C
+PRit s
+U0 s
+Ui s
+-------------
+R2
+1 sC
+
++
+R1
+R2
+1
+sC
+
+
+
++
++
+-------------------------------------------
+a s
+b
++
+
+
+b s
+a
++
+
+
+-------------------
+=
+=
+=
+a
+1
+R1
+R2
++
+
+C
+---------------------------
+=
+b
+1
+R2C
+---------
+=
+R1
+Ui
+U0
+R2
+C
+PRA s
+U0 s
+Ui s
+-------------
+s
+1
+R1C1
+------------
++
+
+
+
+s
+1
+R2C2
+-------------
++
+
+
+
+
+S2
+1
+R2C2
+------------
+1
+R2C1
+------------
+1
+R1C1
+------------
++
++
+
+
+
+s
+1
+R1C1R2C2
+--------------------------
++
++
+---------------------------------------------------------------------------------------------------------
+s
+a1
++
+
+s
+b2
++
+
+
+s
+b1
++
+
+s
+a2
++
+
+
+--------------------------------------
+=
+=
+=
+a1
+1
+R1C1
+------------,
+=
+b1a2
+a1b2,
+=
+b1
+a2
++
+a1
+b2
+1
+R2C1
+------------
++
++
+=
+b2
+1
+R2C2
+------------
+=
+
+[PAG 1526]
+XV-42
+SISTEMI
+Fig. XV.4.13  Rete a sella con RC.
+Dall’analisi della rete a sella (Fig. XV. 
+4.13) si può registrare quanto segue:
+–  Attenua quando p1 <    < p2.
+–  Effettua l’azione ritardatrice se 
+0,1p1 <    <1.
+–  Agisce come rete anticipatrice 
+quando 1 <    < 10p2.
+–  Aumenta il margine di stabilità. 
+Dove
+rappresenta la 
+pulsazione alla quale la rete presenta sfasamento nullo, p1 = b1 e p2 = a2 con 
+.  
+4.13  Strutture fondamentali dei regolatori
+La stabilizzazione di un sistema di controllo può avvenire tramite una rete di compen-
+sazione; se oltre la rete viene messo in cascata un amplificatore, si ottiene il regolatore. Si 
+è appena visto che la progettazione e l’analisi di un sistema impongono, ai fini della stabilità, 
+la conoscenza del comportamento dei vari elementi che compongono il sistema stesso, ma 
+questo non è sempre possibile o immediato. Il problema viene risolto con l’utilizzo di rego-
+latori standard: questi implementano vari modelli di algoritmi di controllo, spaziando dalle 
+tecniche di compensazione, ai controlli adattativi, passando per il più diffuso controllo PID.
+Le tecniche di compensazione comportano l’introduzione di poli e zeri da parte del con-
+trollore: con riferimento ad un controllore analogico, lo studio viene effettuato nel dominio 
+di s utilizzando i metodi precedentemente analizzati.
+Il controllo adattativo viene usato in sistemi dove vi sono informazioni insufficienti circa 
+i loro parametri o quando questi ultimi possono variare nel tempo e rendere pertanto instabile 
+il sistema. Un controllo adattativo verifica costantemente i parametri del sistema e li modifica 
+in modo da realizzare in tutte le condizioni il miglior controllo.
+Il controllore PID è probabilmente quello più usato, infatti quando è correttamente sin-
+tonizzato consente di ottimizzare il funzionamento del sistema, migliorando il comporta-
+mento a regime permanente, diminuendo il tempo di salita e di risposta e limitando la 
+sovraelongazione. La struttura fondamentale del PID è quella di Fig. XV.4.14 dove è visibile 
+un tipico sistema retroazionato, con i blocchi rappresentanti gli elementi tipici del sistema 
+nonché il flusso dei segnali.
+Fig. XV.4.14  Sistema closed loop con regolare PID.
+Il controllore rileva il valore attuale 
+dell’errore, calcola sia l’integrale 
+dell’errore in un determinato inter-
+vallo di tempo, che la derivata 
+dell’errore attuale. Ciò gli consente 
+di determinare, oltre all’ampiezza, 
+anche la durata del segnale corret-
+tivo da applicare.
+Le tre grandezze appena definite vengono moltiplicate per delle costanti dette “tunning 
+constant”, e quindi sommate tra loro per creare il segnale in uscita:
+(XV.4.47)
+R1
+Ui
+U0
+R2
+C2
+C1
+1
+1
+R1R2C12
+-------------------------
+=
+C12
+C1
+C2
+
+=
+G(s)
+x +
+-
+e
+y
+Regolatore
+PID
+Y t
+Pe t
+I e 
+d+D e t
+d
+dt
+----------- .
+0
+t
+
++
+=
+
+[PAG 1527]
+SISTEMI
+XV-43
+Nell’equazione XV.4.47 Y(t) rappresenta l’uscita del regolatore, e(t) è l’errore tra il 
+valore di setpoint ed il valore di retroazione, P è la costante di proporzionalità, I è la costante 
+di integrazione, infine D è la costante derivativa. 
+Fig. XV.4.15  Sistema digitale closed loop con controllore P.I.D.
+Nella progettazione dei con-
+trolli è evidente che la sola 
+conoscenza del valore propor-
+zionale all’errore risulta in-
+sufficiente, in quanto risulta 
+diverso da zero l’errore a 
+regime, talvolta indicato anche 
+come deviazione statica o offset. Per eliminare quest’ultimo è necessario aggiungere un ter-
+mine proporzionale all’integrale dell’errore. Se inoltre si vuole migliorare la velocità di 
+risposta, in modo da tenere in considerazione la variazione nel tempo dell’errore, vi si deve 
+sommare il termine differenziale.
+Va precisato che l’azione integrale e l’azione derivativa corrispondono, nel dominio di 
+s rispettivamente alla presenza di un polo e di uno zero.
+La Fig. XV.4.15 mostra il diagramma a blocchi di un sistema di controllo che implementa 
+un controllore PID.
+5  SISTEMI DI CONTROLLO A TEMPO DISCRETO
+Con l’avvento del microprocessore ed in particolare con la sua implementazione sui con-
+trollori a logica programmabile (PLC) e nei personal computer (PC), si è vista la necessità 
+di ricorrere a sistemi di controllo in grado di elaborare segnali a tempo discreto.
+La progettazione di un sistema di controllo discreto comporta che questo sia rappresen-
+tato in una forma discreta, in modo da poterlo gestire tramite il microprocessore. La tratta-
+zione seguente vuole essere uno studio teorico-pratico di un sistema di controllo realizzabile 
+con l’ausilio di tecniche digitali.
+ La rappresentazione discreta del sistema presuppone due caratteristiche peculiari:
+–  I segnali sono rappresentati tramite campioni ad intervalli di tempo regolari.
+–  L’ampiezza dei segnali ed i campioni di tempo sono pure essi rappresentati da gran-
+dezze discrete.
+5.1  Segnali campionati
+Nel dominio del tempo continuo si rappresenta il sistema tramite equazioni differenziali 
+e si può effettuarne l’analisi tramite l’impiego della trasformata di Laplace; analogamente, 
+in un sistema dove i segnali sono campionati, si può descriverne il funzionamento tramite 
+equazioni alle differenze finite, completandone lo studio tramite la trasformata Zeta.
+Anche in questo caso la trasformata Zeta consente di evitare il calcolo delle equazioni 
+alle differenze finite trasformando quest’ultime in equazioni algebriche.
+Fig. XV.5.1  Segnale campionato e trasformata Zeta.
+x(t)+
+-
+e(t)
+y
+D/A
+A/D
+PROCESSO
+P e(t)
+I   e(t)dt
+D de(t)/dt
+x0
+x1 x2
+x3
+xn
+T
+
+[PAG 1528]
+XV-44
+SISTEMI
+La trasformata Zeta è una serie di potenze di z-n con coefficienti pari al valore della fun-
+zione campionata in quell’istante:
+(XV.5.1)
+dove Z rappresenta la trasformata Zeta del segnale x(t), z-n rappresenta il campione di posi-
+zione n = 0,1,2,...,
+, ed i coefficienti x0, x1,..., xn l’ampiezza del segnale all’istante n (Fig. 
+XV.5.1).
+Un sistema di controllo digitale converte ed opera sui segnali trasformati da continui a 
+digitali, quest’ultimi ottenuti tramite convertitori digitali noti come ADC (Analog to Digital 
+Converter) preceduti da circuiti di campionamento e trattenimento del segnale noti come 
+S&H (Sample and Hold). Un segnale continuo può essere convertito in un segnale digitale 
+tramite i suddetti circuiti come mostrato nella Fig. XV.5.2.
+Fig. XV.5.2  Conversione di un segnale continuo in un segnale discreto.
+L’operazione di campionamento, dal punto 
+di vista matematico, altro non è che il pro-
+dotto del segnale di ingresso analogico per 
+la funzione impulsiva periodica, detta 
+impropriamente funzione delta. 
+Quest’ultima è rappresentabile nel dia-
+gramma temporale come un rettangolo di 
+durata nulla e ampiezza infinita la cui area 
+vale uno (Fig. XV.5.3):
+(XV.5.2)
+Fig. XV.5.3  Funzione impulsiva.
+In un sistema ideale la funzione del campionamento dovrà essere costituita da un treno 
+di impulsi equispaziati aventi periodo ts e descrivibile matematicamente come somma di fun-
+X z
+Z x t
+
+
+x0
+x1z-1
+x2z-2
+...
+xnz-n
++
++
++
++
+=
+=
+
+Ampiezza del segnale
+Tempo
+1T
+3T
+6T
+9T
+12T
+18T
+15T
+Tempo
+Ampiezza
+ttd
+-
+
+
+1.
+=
+
+[PAG 1529]
+SISTEMI
+XV-45
+zioni impulsive individuali del tipo:
+(XV.5.3)
+cioè:
+(XV.5.4)
+Se si moltiplica il segnale analogico f(t) in ingresso al sistema per s(t) si ottiene una serie 
+di impulsi le cui aree coincidono con l’ampiezza della funzione f(t) all’istante nts, cioè:
+(XV.5.5)
+Nei circuiti reali la funzione di “sample and hold” viene svolta da circuiti elettronici che 
+trattengono il valore acquisito fino al campione successivo. Di conseguenza il risultato otte-
+nuto è quello della Fig. XV.5.4.
+La fase successiva è 
+quella di quantificare e 
+rappresentare il segnale 
+ottenuto tramite un 
+numero: questa funzione 
+viene affidata ad un 
+dispositivo che opera una 
+conversione da analogico 
+a digitale della stringa di 
+bits. 
+Fig. XV.5.4  Esempio di segnale dopo il circuito sample and hold.
+Più elevata dovrà essere l’accuratezza con cui rappresentare la grandezza in ingresso e 
+maggiore dovrà essere il numero di bits del dispositivo ADC.
+Affinché i segnali in ingresso ad un sistema digitale siano gestiti nel migliore dei modi 
+è necessario che questi siano innanzi tutto filtrati da un dispositivo passa basso, che rimuova 
+tutte le frequenze superiori alla metà della frequenza di campionamento; tale segnale attra-
+verserà quindi un dispositivo sample and hold, per essere infine convertito tramite un ADC 
+in un segnale binario. Il segnale binario così ottenuto potrà essere quindi elaborato da dispo-
+sitivi digitali che possono implementare, similmente al caso analogico, funzioni di regola-
+zione.
+La necessità di filtrare il segnale di ingresso è conseguenza diretta del Teorema di Shan-
+non di seguito analizzato.
+5.2  Teorema di Shannon
+Se il segnale s(t) è un segnale reale a banda rigorosamente limitata B, del quale è possibile 
+calcolare la trasformata di Fourier, cioè: 
+       
+ per 
+,
+(XV.5.6)
+sia sn = s(nT) la serie temporale ottenuta da un campionamento discreto e periodico di peri-
+odo T. Da questa serie è possibile ricostruire il segnale di partenza s(t) purché per la frequenza 
+di campionamento F = 1/T valga la relazione 
+.
+s t
+t
+
++...+t-2ts
+
++tts
+
++t+t+ts
+
++t2ts
+
++...t+
+
+
+=
+s t
+tnts
+
+.
+n
+-
+=
+n
+
+=
+
+=
+y t
+f ttnts
+
+.
+n
+-
+=
+n
+
+=
+
+=
+18T
+Tempo
+Ampiezza
+del segnale
+S f
+0
+=
+f
+2B
+
+F
+2B
+
