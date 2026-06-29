@@ -1,0 +1,1103 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 68/116 ===
+Chars: 44,492 | Offset: 2,958,566
+
+
+
+[PAG 1393]
+AUTOMAZIONE
+XIV-81
+sizione seguente.
+Un’azione può essere programmata con un linguaggio qualsiasi tra quelli consentiti 
+dalla Norma IEC 1131.
+Un’azione inoltre può essere data da una qualsiasi variabile booleana dichiarata all’interno 
+di un blocco VAR oppure VAR_OUTPUT, da una dichiarazione grafica in linguaggio LD, 
+da una inclusione di elementi SFC, da una dichiarazione grafica in linguaggio FBD, da una 
+dichiarazione testuale in linguaggio ST, da una dichiarazione testuale in linguaggio IL.
+Le azioni devono essere associate a dei passi per mezzo di corpi di passi testuali o di 
+blocchi di azioni grafiche. Un blocco di azione può essere definito come un elemento gra-
+fico formato da una variabile booleana e da un qualificatore di azione, aventi lo scopo di 
+creare una condizione di validazione.
+Il qualificatore di azioni deve essere collegato ad ogni associazione passo/azione 
+oppure ad ogni presenza di un blocco di azione. Il suo valore è legato a dei codici specifici 
+(Tab. XIV.6.7).
+Tab. XIV.6.7   
+Le regole per il comando di azioni vengono riassunte in:
+1)  ad ogni azione si deve associare l’equivalente funzionale di una istanza di blocco 
+funzionale ACTION_CONTROL;
+2)  se il qualificatore corrispondente è equivalente ad un nome di ingresso (N, R, S, L, 
+D, P, SD, DS, SL), l’ingresso booleano al blocco ACTION_CONTROL viene associato 
+con un passo/azione oppure con un blocco di azione;
+3)  nel blocco ACTION_CONTROL il valore di ingresso T deve corrispondere a 
+quello della porzione di durata di un qualificatore temporale di un’associazione attiva;
+4)  viene considerato errore l’esistenza di un qualificatore temporale in più di un’asso-
+ciazione attiva, il valore booleano 1 dell’ingresso SD di un blocco ACTION_CONTROL 
+quando l’uscita Q1 del suo blocco SL_FF ha anch’essa valore 1, il valore booleano 1 
+dell’uscita SL da un blocco ACTION_CONTROL quando l’uscita Q1 del suo blocco 
+SD_FF ha anch’essa valore 1;
+5)  non è indispensabile che il blocco ACTION_CONTROL sia implementato; è suffi-
+ciente che il comando di azioni sia equivalente alle regole precedenti.
+Sigla
+Descrizione
+Nessuno
+(qualificatore nullo, non memorizzato)
+N
+(non memorizzato)
+R
+(rimesso a zero prioritario)
+S
+(posizionato, memorizzato)
+L
+(limitato nel tempo)
+D
+(ritardato nel tempo)
+P
+(impulso)
+SD
+(memorizzato e temporizzato)
+DS
+(temporizzato e memorizzato)
+SL
+(memorizzato e limitato nel tempo)
+
+[PAG 1394]
+XIV-82
+AUTOMAZIONE
+Le regole infine dell’evoluzione di sequenze nel diagramma funzionale sequenziale si 
+possono elencare come segue.
+1)  Sequenza singola: l’alternanza passo/transizione viene ripetuta in serie. Il passag-
+gio da un passo al successivo viene effettuato se, e solamente se, il passo che precede è 
+attivo e se la condizione di transizione è vera.
+2)  Divergenza di selezione in sequenza: da una riga orizzontale, successiva ad un passo, 
+partono più evoluzioni differenti. L’attivazione dei passi nei diversi rami è subordinata al 
+fatto che il passo principale sia attivo e alla soddisfazione della condizione di transizione 
+dello specifico ramo. Se nella connessione tra il ramo precedente e la linea orizzontale c’è 
+un asterisco, significa che la priorità di transizione va da sinistra verso destra. Se, oltre 
+all’asterisco, i singoli rami divergenti sono numerati, significa che la priorità di transizione 
+segue sequenzialmente la numerazione dal valore più basso a quello più alto.
+3)  Convergenza di selezione di sequenza: più evoluzioni diverse, con proprie condi-
+zioni di transizione, si riuniscono su una linea orizzontale che prosegue con una sola evo-
+luzione. In questo caso ci sono più percorsi (differente passo attivato e sua specifica 
+condizione di transizione soddisfatta) che possono convergere nel passo successivo.
+4)  Sequenza simultanea con divergenza o convergenza. Nel primo caso una sola con-
+dizione di transizione, posta sul ramo singolo prima della linea orizzontale permette se 
+soddisfatta più abilitazioni. Nel secondo caso più rami convergono su una linea orizzon-
+tale, è sul ramo che sta sotto e che riparte che si trova l’unica condizione di transizione.
+5)  Salto di sequenza. È un caso particolare di selezione di sequenza sul quale non esi-
+ste alcun passo.
+6)  Anello di sequenza. È un caso particolare di selezione di sequenza attraverso il 
+quale c’è un ritorno ad un passo precedente.
+7)  Frecce direzionali. Se la rappresentazione del flusso di energia può meglio spie-
+gare il funzionamento del programma, è possibile inserire sulle linee di collegamento il 
+carattere “inferiore a” (<) per un flusso di comando da destra verso sinistra e il carattere 
+“superiore a” (>) per un flusso di comando da sinistra verso destra. 
+6.4  Linguaggi letterali
+Gli elementi di strutturazione dei programmi, comuni ai due linguaggi testuali, si pos-
+sono elencare in: 
+–  TYPE...END_TYPE.
+–  VAR...END_VAR.
+–  VAR_INPUT...END_VAR.
+–  VAR_OUTPUT...END_VAR.
+–  VAR_EXTERNAL...END_VAR.
+–  FUNCTION...END_FUNCTION.
+–  FUNCTION_BLOCK...END_FUNCTION_BLOCK.
+–  PROGRAM...END_PROGRAM.
+–  STEP...END_STEP.
+–  TRANSITION...END_TRANSITION.
+–  ACTION...END_ACTION.
+6.4.1.  Instruction List (IL)
+Il linguaggio Lista Istruzioni (Instruction List) rientra nei cosiddetti linguaggi testuali 
+ed è il metodo di programmazione che più si avvicina alla logica con cui lavora il micro-
+processore.
+Le caratteristiche principali che la norma associa a questo sistema di programmazione 
+si possono riassumere in:
+–  È composto da una sequenza di istruzioni.
+
+[PAG 1395]
+AUTOMAZIONE
+XIV-83
+–  Ciascuna istruzione deve iniziare su una nuova linea.
+–  Ogni istruzione deve comprendere un operatore, seguito da un eventuale modificatore, 
+più uno o più operandi separati da virgole.
+–  Può esserci un’etichetta (facoltativa) e in questo caso essa deve precedere l’istruzione 
+e deve essere seguita da due punti (:).
+–  Può esserci un commento (facoltativo) e in questo caso deve essere l’ultimo elemento 
+della linea e deve essere delimitato, all’inizio e alla fine, con “(*” e “*)”.
+–  Delle linee vuote possono essere inserite tra le istruzioni.
+L’esempio di Fig. XIV.6.22 illustra i campi di istruzione generalmente utilizzati.
+Fig. XIV.6.22  
+Secondo la normativa gli operatori standard, i loro eventuali modificatori e gli operatori 
+autorizzati devono seguire delle regole ben definite; esse sono riassunte nella Tab. XIV.6.8.
+Se in essa non è specificato in altro modo, la semantica degli operatori deve essere 
+uguale a:
+risultato :=  risultato OP operando 
+cioè il valore dell’espressione considerata, oggetto della valutazione, viene sostituito dal 
+suo valore attuale e su esso interviene l’operatore in relazione al tipo di operando asso-
+ciato (:= significa assegnazione). Per esempio, l’istruzione OR %I0.4 deve essere inter-
+pretata come:
+risultato :=  risultato OR %I0.4 
+Se si considerano invece gli operatori della comparazione, l’interpretazione corretta 
+darà il risultato corrente a sinistra della comparazione; l’operando alla sua destra è il risul-
+tato che si ottiene con valore booleano. Per esempio nel caso si consideri l’istruzione GT 
+%IW20, si avrà il risultato 1 solamente se il risultato corrente è superiore al valore della 
+parola di ingresso 20, mentre negli altri casi esso sarà 0. 
+In riferimento alle funzioni (unità di organizzazione di programma che, se vengono 
+eseguite, forniscono esattamente un elemento dato), esse devono essere richiamate inse-
+rendo il nome della funzione nel campo dell’operatore (è possibile aggiungere eventuali 
+argomenti supplementari). Il primo argomento della funzione dovrà essere il risultato cor-
+rente che verrà aggiornato con il valore rinviato dalla funzione, una volta che quest’ultima 
+ha completato la sua esecuzione.
+A proposito dei blocchi funzionali (definibili come unità di organizzazione di pro-
+gramma che, una volta eseguiti, forniscono uno o più valori), essi devono essere richia-
+mati dall’operatore CAL (chiamata) sia in modo condizionato sia incondizionato.
+Esempi 
+1)  Operatore CAL seguito dalla lista degli ingressi. 
+CAL C10 (CU := %IX10, PV := 15)
+2)  Operatore CAL carico/memoria degli ingressi. 
+LD    15
+ST    C10.PV
+LD    %IX10
+
+[PAG 1396]
+XIV-84
+AUTOMAZIONE
+Tab. XIV.6.8   Operatori e modificatori impiegati nel linguaggio IL
+ST    C10.C
+CAL   C10
+  Operatore
+Modificatori
+Operando
+LD
+N
+Pone il risultato corrente uguale all’operando. (Gli operatori 
+devono essere sia sovraccaricati sia tipicizzati; l’operando e il 
+risultato corrente devono essere dello stesso tipo).
+ST
+N
+Memorizza il risultato corrente nella locazione dell’operando. (Gli 
+operatori devono essere sia sovraccaricati sia tipicizzati; 
+l’operando e il risultato corrente devono essere dello stesso tipo).
+S
+solo se il risultato 
+corrente  è = 1
+Posiziona l’operando a 1 (BOOL).
+R
+solo se il risultato 
+corrente  è = 1
+Riposiziona l’operando a 1 (BOOL).
+AND
+N, (
+AND booleano (BOOL).
+&
+N, (
+AND booleano (BOOL).
+OR
+N, (
+OR booleano (BOOL).
+XOR
+N, (
+OR esclusivo booleano (BOOL).
+ADD
+(
+Addizione (Gli operatori devono essere sia sovraccaricati sia 
+tipicizzati; l’operando e il risultato corrente devono essere dello 
+stesso tipo).
+SUB
+(
+Sottrazione (Gli operatori devono essere sia sovraccaricati sia 
+tipicizzati; l’operando e risultato corrente sono dello stesso tipo).
+MUL
+(
+Moltiplicazione (Gli operatori devono essere sia sovraccaricati sia 
+tipicizzati; l’operando e risultato corrente sono dello stesso tipo).
+DIV
+(
+Divisione (Gli operatori devono essere sia sovraccaricati sia 
+tipicizzati; l’operando e risultato corrente sono dello stesso tipo).
+GT
+(
+Comparazione > (Gli operatori devono essere sia sovraccaricati sia 
+tipicizzati; l’operando e risultato corrente sono dello stesso tipo).
+GE
+(
+Comparazione >= (Gli operatori devono essere sia sovraccaricati 
+sia tipicizzati; l’operando e risultato corrente sono dello stesso 
+tipo).
+EQ
+(
+Comparazione = (Gli operatori devono essere sia sovraccaricati sia 
+tipicizzati; l’operando e risultato corrente sono dello stesso tipo).
+NE
+(
+Comparazione <> (Gli operatori devono essere sia sovraccaricati 
+sia tipicizzati; l’operando e risultato corrente sono dello stesso 
+tipo).
+LE
+(
+Comparazione <= (Gli operatori devono essere sia sovraccaricati 
+sia tipicizzati; l’operando e risultato corrente sono dello stesso 
+tipo).
+LT
+(
+Comparazione < (Gli operatori devono essere sia sovraccaricati sia 
+tipicizzati; l’operando e risultato corrente sono dello stesso tipo).
+JMP
+C, N
+Salto verso l’etichetta (LABEL).
+CAL
+C, N
+Chiamata di un blocco funzionale, seguito da una lista di argomenti 
+tra parentesi(NAME).
+RET
+C, N
+Ritorno di una funzione o un  blocco funzionale chiamati.
+)
+Valutazione di una operazione differita.
+
+[PAG 1397]
+AUTOMAZIONE
+XIV-85
+3)  Uso di operatori di ingresso. 
+LD    15
+PV    C10
+LD    %IX10
+CU    C10
+Essi possono contenere tutti i tipi di operatori di ingresso standard (Tab. XIV.6.9).
+6.4.2.  Stuctured Text (ST)
+Il Testuale Strutturato (Structured Text) è un linguaggio che sviluppa la sua struttura 
+dalla base informatica. Le sue caratteristiche principali vengono riassunte in:
+–  Sintassi simile a quella del linguaggio di programmazione Pascal (descrizione degli 
+algoritmi complessi).
+–  Successione di frasi per il trasferimento di variabili, il comando di blocchi funzione e 
+funzioni ecc.
+–  Blocchi di istruzioni terminanti con ";". 
+Le espressioni utilizzate, composte di operatori e operandi, sono delle costruzioni sin-
+tattiche che, quando vengono valutate, forniscono dati con valori del tipo elementare 
+(booleano, intero, reale ecc.) o derivato (dichiarati dall’utilizzatore o dal costruttore).
+Un operando deve essere un letterale numerico (intero o reale), un letterale di stringa 
+di caratteri (sequenza di nessun o di più caratteri scritta tra due apostrofi), letterali di data, 
+una variabile o un’altra espressione.
+Gli operatori vengono riassunti nella Tab. XIV.6.10.
+Le istruzioni che vengono utilizzate in questo linguaggio devono terminare con un 
+punto e virgola (;) e si possono riassumere in:
+–  Assegnamento. Ha il compito di sostituire il valore attuale della variabile impiegata 
+(avente uno o più elementi) con il risultato della valutazione di una espressione. La sin-
+tassi è: 
+             riferimento variabile := espressione da valutare
+–  Invocazione di un blocco funzionale e utilizzazione di uscita FB. L’istruzione di invo-
+cazione deve essere costituita dal nome del blocco funzionale seguito, all’interno di 
+parentesi tonde, dalla lista delle assegnazioni. Per esempio l’invocazione di un blocco 
+funzionale temporizzato sarà: 
+Tab. XIV.6.9   Operatori di ingresso standard dei blocchi funzionali
+Operatore
+Tipo di blocco funzione
+S1, R
+SR (Blocco funzionale bistabile di set).
+S, R1
+RS (Blocco funzionale bistabile di reset).
+CLK
+R_TRIG (Rilevatore di fronte crescente).
+CU, R, PV
+F_TRIG (Rilevatore di fronte decrescente).
+CD, LD, PV
+CTU (Contatore conteggio - up)
+CU, CD, R, LD, PV
+CTD (Contatore conteggio/deconteggio).
+IN, PT
+TP (Temporizzatore ad impulso).
+IN, PT
+TON (Temporizzatore con ritardo all’attivazione).
+IN, PT
+TOF (Temporizzatore con ritardo alla disattivazione).
+
+[PAG 1398]
+XIV-86
+AUTOMAZIONE
+BLK_T1(IN := %I0.0, PT := T#300ms). 
+l’utilizzazione dell’uscita seguirà la regola di assegnamento, per esempio 
+A := BLK_T1.Q.
+–  RETURN. L’istruzione Return ha lo scopo di permettere un’uscita prematura da una 
+funzione o da un blocco funzionale.
+–  IF. È un’istruzione di selezione indicante che un gruppo di istruzioni deve essere ese-
+guito solamente se l’espressione booleana associata è 1. Per esempio:
+IF %I0.0 THEN %Q0.0 := 1.
+–  CASE. È un’istruzione di selezione composta da un’espressione data da una variabile 
+da valutare (selettore) e da una lista di gruppi di istruzioni, differenziati da un’etichetta 
+avente uno o più campi di valori interi. L’istruzione precisa che il gruppo di istruzioni che 
+deve essere eseguito è quello il cui campo contiene il valore calcolato dal selettore.
+–  FOR. Questa è un’istruzione di iterazione, indicante cioè che il gruppo di istruzioni 
+associate deve essere eseguito in maniera ripetitiva. Essa viene impiegata quando il 
+numero di iterazioni può essere determinato a priori.
+–  EXIT. L’istruzione di iterazione EXIT viene utilizzata per terminare le iterazioni 
+prima che la condizione finale venga soddisfatta.
+–  WHILE. Questa istruzione determina l’esecuzione ripetuta della sequenza di istruzioni 
+che si estende fino alla parola chiave END_WHILE, fino a che l’espressione booleana 
+associata è falsa.
+Tab. XIV.6.10   Operatori nel linguaggio testuale strutturato
+Operazione
+Simbolo
+Priorità
+Messa tra parentesi
+(Espressione)
+Massima
+Valutazione di funzione
+Identificatore con lista di argomenti
+Esponenziazione
+**
+Negazione
+-
+Complemento
+NOT
+Moltiplicazione
+*
+Divisione
+/
+Modulo
+MOD
+Addizione
++
+Sottrazione
+-
+Comparazione
+<, >, <=, >=
+Egualianza
+=
+Inegualianza
+<>
+AND booleano
+&
+AND booleano
+AND
+OR esclusivo booleano
+XOR
+OR booleano
+OR
+Minima
+
+[PAG 1399]
+AUTOMAZIONE
+XIV-87
+–  REPEAT. Questa istruzione determina l’esecuzione ripetuta (almeno una volta) della 
+sequenza di istruzioni che si estende fino alla parola chiave UNTIL, fino a che la condi-
+zione booleana associata è vera.
+Nella Tab. XIV.6.11 viene illustrata una semplice programmazione di tipo testuale.
+Il blocco funzionale presentato in Fig. XIV.6.23 permette di impilare fino a 128 interi 
+con le operazioni PUSH e POP, assicurate da ingressi booleani azionati da dei fronti. 
+Il comando predominante di riposizionamento di stato (reset) è dato da R1; IN rappre-
+senta l’ingresso e N indica il superamento massimo di impilaggio dopo il reset. EMPTY 
+rappresenta lo stack di vuoto, OFLO indica uno stato di overflow, mentre OUT è l’uscita 
+dei dati alla sommità della pila. 
+Fig. XIV.6.23  
+6.5  Scansione del PLC e tempi di esecuzione
+Il PLC ha un funzionamento di tipo sequenziale: esso esegue le funzioni programmate 
+con ripetitività, da quando viene alimentato e messo in stato di RUN fino a quando lo si 
+porta in stato di STOP e si toglie alimentazione. Il ciclo che esso compie viene denominato 
+ciclo di scansione, mentre il tempo che impiega a compierlo si chiama tempo di scansione.
+Nella Fig. XIV.6.24 il diagramma di flusso indica le operazioni sequenziali che la 
+CPU compie. Da notare che l’operazione di inizializzazione viene eseguita soltanto alla 
+messa in tensione del PLC, mentre le altre operazioni vengono eseguite ciclicamente in 
+modo ripetitivo.
+Generalmente i PLC hanno un timer di macchina denominato watchdog (cane da guar-
+dia) che viene regolato ad un certo valore (tipicamente 150 ms), il quale ha la funzione di 
+fermare il ciclo se la scansione supera tale tempo massimo.
+Tab. XIV.6.11  
+IF R1 THEN
+OFLO := 0 ; EMPTY := 1 ; PTR := -1 ;
+NI := LIMIT (MN := 1, IN := N, MX := 128) ; OUT := 0 ;
+ELSIF POP & NOT EMPTY THEN
+OFLO := 0 ; PTR := PTR-1 ; EMPTY := PTR<0 ;
+IF EMTY THEN OUT := 0 ;
+ELSE OUT := STK[PTR] ;
+END_IF ;
+ELSIF PUSH & NOT OFLO THEN
+EMPTY := 0 ; PTR := PTR+1 ; OFLO := (PTR = NI) ;
+IF NOT OFLO THEN OUT := IN ; STK[PTR] := IN ;
+ELSE OUT := 0 ;
+END_IF ;
+END_IF ,
+
+[PAG 1400]
+XIV-88
+AUTOMAZIONE
+Fig. XIV.6.24   Diagramma di flusso della scansione di un PLC.
+Questo lo si fa per evitare che si generino dei cicli di programma ripetitivi (loop) 
+dovuti a malfunzionamenti. Nelle specifiche delle prestazioni che un PLC offre, una 
+caratteristica saliente è il tempo di risposta del controllore.
+Il tempo di risposta (Fig. XIV.6.25)è il tempo che intercorre tra l’arrivo di un segnale 
+ad un punto di ingresso e il rinfresco dell’uscita corrispondente. 
+Questo intervallo di tempo (Tr) dipende dal tempo di immunità degli I/O (TiI/TiO) e 
+dal tempo di scansione (Ts) ed avrà un minimo ed un massimo:
+INIZIO
+(alimentazione ON)
+AZZERAMENTO AREE DATI
+TEST DI TUTTE LE UNITA' DI I/O
+RESET WATCHDOG TIMER
+TEST HARDWARE E MEMORIA DI PROGRAMMA
+TEST OK?
+RESET WATCHDOG TIMER E PROGRAMMA COUNTER
+ESECUZIONE PROGRAMMA
+FINE ESECUZIONE?
+CALCOLO TEMPO DI SCANSIONE E ATTESA
+RESET WATCHDOG TIMER
+RINFRESCO I/O
+GESTIONE INTERFACCIA RS 232C
+GESTIONE DISPOSITIVI PERIFERICI
+SET FLAG DI ERRORE
+ACCENSIONE LED SEGNALAZIONE
+ERRORE O ALLARME?
+ALLARME
+ERRORE
+NO
+SI
+NO
+INIZIALIZZAZIONE
+TEMPO DI SCANSIONE DEL PLC
+min Tr = TiI + TiO +Ts               MAX Tr = TiI + TiO + 2Ts
+
+[PAG 1401]
+AUTOMAZIONE
+XIV-89
+Fig. XIV.6.25   Tempo di risposta minimo di un PLC.
+Nella seconda equazione si calcola il tempo doppio di scansione: nel caso in cui un 
+segnale arrivi dopo che la scansione ha appena superato lo scrutamento di tale bit, esso 
+verrà preso in carico al ciclo successivo, con la conseguente perdita di tempo di un ciclo 
+completo. A questo punto diventa interessante calcolare anche il tempo di scansione.
+Nel ciclo vi sono delle operazioni precostituite sulle quali l’operatore non può interve-
+nire e altre che invece avranno una durata variabile (a seconda del numero di moduli di I/
+O da scrutare e della lunghezza del programma).
+È importante che il tempo di scansione sia il più breve possibile, per avere un tempo 
+di risposta del PLC ottimale e per evitare malfunzionamenti (per esempio alcuni timer 
+rapidi non funzionano al meglio con tempi di scansione superiori ai 10 ms).
+Si è fino ad ora parlato di scansione senza dare alcun aggettivo a tale ciclo che il PLC 
+compie.
+TEMPO RISPOSTA PUNTI DI I/O
+CPU legge segnale input
+a ON di ingresso
+ritardo di commutazione
+SEGNALE OUTPUT
+SEGNALE INPUT
+SCANSIONE
+processi comuni
+aggiornamento delle uscite
+aggiornamento ingressi
+TEMPO DI SCANSIONE
+CPU scrive segnale output
+ritardo di commutazione
+a ON di uscita
+processi comuni
+aggiornamento delle uscite
+aggiornamento ingressi
+aggiornamento ingressi
+aggiornamento delle uscite
+processi comuni
+TEMPO DI SCANSIONE
+min tempo risposta = ritardo commutazione a ON ingresso + tempo di scansione
++ tempo di aggiornamento I/O + tempo di sistema + ritardo commutazione a ON uscita
+
+[PAG 1402]
+XIV-90
+AUTOMAZIONE
+Il modo di operare della CPU è tipicamente sincrono cioè segue la sequenza che si è 
+illustrata; teoricamente sono però ammesse altre modalità: oltre alla scansione sincrona I/
+O, possiamo avere la scansione sincrona in ingresso asincrona in uscita oppure la scan-
+sione asincrona I/O.
+Scansione sincrona I/O
+È il ciclo che si configura in una acquisizione di tutti gli ingressi, della elaborazione 
+sequenziale delle istruzioni del programma precedentemente stabilito, e quindi dell’atti-
+vazione sequenziale delle uscite.
+Fig. XIV.6.26   Ciclo di scansione sincrona I/O.
+Nella Fig. XIV.6.26 viene raffigurato tale ciclo; in particolare il funzionamento sarà il 
+seguente:
+–  Alla messa in tensione della macchina, il PLC esegue un autotest delle funzioni interne 
+per poi verificare se lo stato della logica programmabile è di RUN o di STOP; in caso di 
+STOP ritorna al passo di gestione sistema, altrimenti prosegue al secondo passo del ciclo.
+–  Acquisisce tutte le informazioni riguardanti lo stato dei moduli di ingresso, una dopo 
+l’altra, con una certa gerarchia data dall’indirizzamento dei vari punti di input; lo stato 
+logico di questi input viene memorizzato nella parte di memoria dedicata (memoria dati) 
+formando quindi una sorta di immagine dello stato logico di tutti gli ingressi.
+–  Segue poi l’elaborazione del programma. La CPU andrà a prelevare in sequenza le 
+istruzioni memorizzate nei registri della memoria programma; verificando lo stato logico 
+degli ingressi interessati, elaborerà le varie pagine di programma scandendo le varie istru-
+zioni partendo dall’alto in basso e da sinistra a destra di ogni rung. Terminata l’elabora-
+zione di ogni riga, assegnerà al registro immagine di ogni uscita lo stato logico 
+corrispondente. Scorrerà tutto il programma in tale modo dalla prima all’ultima riga fino a 
+trovare l’istruzione di END_PROGRAM.
+–  L’ultimo passo del ciclo del PLC prevede il rinfresco di tutte le uscite, cioè l’invio di 
+un segnale corrispondente allo stato logico di 1 o di 0, cioè l’attivazione o meno 
+dell’uscita.
+Terminato il ciclo, la scansione riprende dal primo passo e si ripete in continuazione; 
+tutto ciò fintantoché la macchina è alimentata e non si presentino condizioni che generino 
+situazioni di guasto o di errore, che diano luogo a malfunzionamenti o fermate del ciclo.
+LETTURA DELLO STATO LOGICO DI INPUT
+MEMORIZZAZIONE IN REGISTRO IMMAGINE INGRESSI
+ELABORAZIONE SEQUENZIALE ISTRUZIONI
+ATTIVAZIONE SEQUENZIALE DI OUTPUT
+1
+2
+3
+MEMORIZZAZIONE RISULTATI IN REGISTRO IMMAGINE USCITE
+= 1
+
+[PAG 1403]
+AUTOMAZIONE
+XIV-91
+Scansione sincrona in ingresso e asincrona in uscita
+Il funzionamento con questo tipo di scansione è il seguente:
+–  Gli ingressi vengono acquisiti tutti all’inizio della scansione.
+–  L’elaborazione di un’istruzione è seguita dall’emissione del risultato e della conse-
+guente attivazione dell’uscita corrispondente.
+–  Ogni uscita viene quindi attivata nel momento in cui è stata elaborata la funzione 
+logica a essa assegnata.
+Fig. XIV.6.27   Ciclo di scansione sincrona in ingresso asincrona in uscita.
+Questo tipo di ciclo (Fig. XIV.6.27) aumenta la velocità di risposta, in quanto il rinfre-
+sco delle uscite avviene in modo più rapido. Si possono creare però dei disservizi, se non 
+si tiene conto degli eventuali bit di uscita utilizzati all’interno del programma; occorre 
+ricordare che l’eventuale uscita utilizzata come bit all’interno del programma nella zona 
+dei test, e quindi come input, cambia il suo stato logico nella scansione successiva.
+LETTURA DELLO STATO LOGICO DI INPUT
+MEMORIZZAZIONE IN REGISTRO IMMAGINE INGRESSI
+1
+2
+3
+MEMORIZZAZIONE RISULTATI IN REGISTRO IMMAGINE USCITE
+= 1
+ELABORAZIONE SEQUENZIALE ISTRUZIONI
+PRIMA RIGA CIRCUITALE
+ATTIVAZIONE DI OUTPUT CORRISPONDENTE
+ATTIVAZIONE DI OUTPUT CORRISPONDENTE
+ELABORAZIONE SEQUENZIALE ISTRUZIONI
+MEMORIZZAZIONE RISULTATI IN REGISTRO IMMAGINE USCITE
+SECONDA RIGA CIRCUITALE
+= 1
+= 1
+MEMORIZZAZIONE RISULTATI IN REGISTRO IMMAGINE USCITE
+ELABORAZIONE SEQUENZIALE ISTRUZIONI
+ATTIVAZIONE DI OUTPUT CORRISPONDENTE
+ULTIMA RIGA CIRCUITALE
+4
+5
+32
+33
+
+[PAG 1404]
+XIV-92
+AUTOMAZIONE
+Scansione asincrona I/O
+Il vantaggio che offre il ciclo asincrono in ingresso e in uscita è quello di gestire il 
+processo per blocchi sequenziali: nella programmazione non occorre tener conto di even-
+tuali blocchi o interferenze, tra contatti che non vengono presi in considerazione in quella 
+equazione logica. Si ha per contro il problema di avere una situazione di gestione dina-
+mica e non statica del processo: un ingresso può evolvere il suo valore o il suo stato logico 
+in equazioni logiche successive. Il funzionamento è il seguente (Fig. XIV.6.28):
+–  Per ogni equazione logica del programma il PLC si procura gli ingressi che gli interes-
+sano e ne acquisisce lo stato logico o il valore analogico.
+–  Elabora la riga di programma che gli viene proposta in sequenza ed emette il risultato 
+conseguente.
+–  Aggiorna l’uscita corrispondente attivandola o disattivandola a seconda dello stato 
+logico assegnato.
+Fig. XIV.6.28   Scansione asincrona I/O.
+Un funzionamento di questo tipo è molto simile a quello di un computer, con la diffe-
+renza che il PLC non avendo istruzioni di ingresso o di uscita bensì stati logici assegnati, 
+a parità di potenzialità della CPU, è comunque più veloce del PC.
+6.6  Cicli monotask, bitask, multitask
+Il PLC tipicamente è equipaggiato con un microprocessore che gestisce il ciclo di 
+scansione della macchina. In gergo questo tipo di logica programmabile viene denominata 
+monotask (Fig. XIV.6.29) poiché risulta essere uno solo il lavoro (programma) da ese-
+guire.
+Si sono sviluppate recentemente anche macchine bitask che possono quindi lavorare 
+su due programmi; si avranno quindi due programmi da far eseguire alla stessa CPU con-
+tenuti in due ipotetici contenitori: una task master e una task fast.
+La task master contiene il lavoro che il PLC deve eseguire correntemente; la task fast 
+(rapida) è invece destinata alle elaborazioni di breve durata con tempi di risposta brevi (< 
+2 ms), e viene attivata su eventi esterni oppure interni al PLC o ancora in modo periodico.
+La comparsa di una situazione particolare (per esempio input su ingressi rapidi, rag-
+giungimento valore di preselezione di contatore rapido o di temporizzatore rapido), inter-
+rompe la normale scansione in task master e attiva la task rapida; il PLC esegue il piccolo 
+programma custodito nella task fast, per poi tornare al punto in cui si era interrotto nella 
+= 1
+MEMORIZZAZIONE RISULTATI IN REGISTRO IMMAGINE USCITE
+3
+2
+1
+ELABORAZIONE SEQUENZIALE ISTRUZIONI
+MEMORIZZAZIONE IN REGISTRO IMMAGINE INGRESSI
+LETTURA DELLO STATO LOGICO DI INPUT
+DI UNA RIGA CIRCUITALE
+DI UNA RIGA CIRCUITALE
+ATTIVAZIONE DI OUTPUT CORRISPONDENTE
+
+[PAG 1405]
+AUTOMAZIONE
+XIV-93
+task master e proseguire il ciclo normale (Fig. XIV.6.30).
+Fig. XIV.6.31   Ciclo multitask.
+Questa architettura è dunque in grado di intervenire in modo diversificato rispetto a 
+problematiche diverse, però la gestione delle due task è affidata a un unico processore. 
+Perciò si può rilevare che il funzionamento può essere sufficientemente apprezzabile per 
+determinate situazioni, bensì risulta insufficiente per livelli di gestione più complessi.
+Se si devono gestire contemporaneamente più situazioni di carattere diverso, tale 
+struttura a interrupt non risolve i problemi. Rimane comunque validissima l’applicazione 
+dei sistemi a interrupt per la gestione di situazioni di allarme, dove la task master viene 
+interrotta momentaneamente per eseguire il programma (in task fast) che risolve o sempli-
+cemente segnala la situazione di allarme.
+Fig. XIV.6.29   Ciclo mono-
+task.
+Fig. XIV.6.30   Ciclo bitask.
+Acquisizione ingressi
+Elaborazione sequenziale
+Aggiornamento uscite
+Acquisizione ingressi
+Elaborazione sequenziale
+Aggiornamento uscite
+Aggiornamento uscite
+Elaborazione sequenziale
+Acquisizione ingressi
+EVENTO
+configurati in questa task
+configurate in questa task
+TASK MASTER
+TASK FAST
+SUPERVISORE
+TASK
+MASTER
+TASK
+AUXILIARIES
+PRIORITA
+TASK PERIODICHE
++
+-
+TASK
+INTERRUPT
+FAST
+TASK
+
+[PAG 1406]
+XIV-94
+AUTOMAZIONE
+A livelli di gestione di automazioni medio-alte, l’architettura monotask o bitask non è 
+più in grado di svolgere le operazioni complesse necessarie, ed ecco allora un’evoluzione 
+ulteriore dei PLC: la struttura multitask. Tale architettura è stata progettata per una 
+gestione dei sistemi automatici più integrata e completa.
+La sua configurazione vede da una parte la presenza di più task, ognuna dedicata a 
+funzioni diverse, che possono essere eseguite simultaneamente, grazie a un’architettura 
+hardware multiprocessore (Fig. XIV.6.31).
+La struttura multitask potrà prevedere una serie di task indipendenti, governate da una 
+task principale:
+–  task master,
+–  task di interrupt,
+–  task rapida,
+–  task ausiliaria,
+–  task sistema.
+Ogni task verrà configurata entro un intervallo di tempo utile per essere eseguita e, ciò 
+è molto importante, si potranno dichiarare in una task dei moduli di I/O non configurati in 
+altre task; in questo modo si potranno avere scansioni molto più veloci in quanto ogni task 
+scandirà solo gli I/O che gli interessano e non tutti quelli presenti con relativi tempi di 
+risposta molto brevi.
+7  PAROLE DI ISTRUZIONE
+7.1  Configurazione hardware
+L’offerta che il mercato dei PLC propone è piuttosto ampia e le differenze di dota-
+zione tra una casa costruttrice e l’altra sono pressoché trascurabili. Pur tuttavia nell’ana-
+lizzare il set di istruzioni occorre fare riferimento ad uno specifico PLC e la scelta fatta in 
+questo caso ricade sul PLC Modicon TSX 37 Micro della ditta Schneider (Fig. XIV.7.1). 
+Fig. XIV.7.1   PLC Modulare Modicon TSX 37 Micro Schneider.
+ Tale logica programmabile viene collocata dai venditori nel segmento intermedio di 
+applicazione industriale, cioè per il comando di macchine che abbisognano di un massimo 
+di alcune centinaia di I/O.
+Questo PLC può avere con la massima estensione una capacità di collegamento di 328 
+I/O; il rack può alloggiare moduli di ingresso a 4, 8, 16, 24, 32 vie indipendenti continue, 
+alternate o NAMUR; i moduli di uscita parimenti di taglie diverse come gli ingressi sono 
+disponibili con uscite a transistori, triac o relè.
+
+[PAG 1407]
+AUTOMAZIONE
+XIV-95
+Si possono configurare anche moduli analogici di I/O, di conteggio, di posiziona-
+mento, moduli asse e interfacce di comunicazione e di rete. In alcune versioni il PLC è 
+equipaggiato con analogica integrata, orodatario, conteggio veloce su ingressi ON/OFF 
+dedicati fino a 500 Hz e tramite porta dedicata fino a 10 kHz. È dotato di una memoria 
+RAM interna con protezione di 20 kparole e di una FLASH EPROM di 16 kparole. I vari 
+modelli si contraddistinguono per il tipo di CPU di cui sono dotati, che offrono diverse 
+potenzialità applicative.
+7.2  Elementi utilizzabili e loro indirizzamento
+Le funzioni logiche programmabili nei PLC commercializzati dalle varie ditte sono 
+pressoché uguali. Tra un PLC Omron ed uno Schneider, un CGE o un Siemens, le diffe-
+renze nel set di istruzioni utilizzabili sono trascurabili: è pur vero però che per poter pro-
+grammare in modo corretto è indispensabile conoscere bene il funzionamento operativo di 
+ogni istruzione, che costituisce la dotazione della macchina che si utilizza.
+Le istruzioni di base comuni a tutti i PLC riguardano gli elementi contatti e bobine, 
+quelle parole di istruzione denominate anche elementi bit, in quanto lo spazio che utiliz-
+zano nella memoria è appunto di un bit (unità elementare di informazione). 
+Ovviamente essendo l’indirizzamento (associazione di una particolare cella di memo-
+ria ad ogni istruzione) diverso per ogni tipo di PLC, si dovrà fare riferimento ad un PLC 
+ben definito a meno che non si utilizzi lo standard IEC 1131-3. 
+Nell’esplicazione delle istruzioni principali che seguono, si è utilizzato l’indirizza-
+mento e il software Schneider PL7 Micro, che è conforme allo standard IEC 1131-3, per 
+editare i vari esempi; il linguaggio di programmazione usato è il ladder diagram.
+Si è visto che il PLC TSX 37 Micro è un controllore modulare e che agli I/O del 
+modulo base possono essere aggiunte eventuali espansioni. L’indirizzamento sarà quindi 
+di tipo geografico (Fig. XIV.7.2). Per gli ingressi si utilizzerà la sigla %I e per le uscite la 
+sigla %Q seguite dal riferimento del numero di modulo, da un punto (.) di interposizione e 
+dal numero di via per completare l’indirizzo.
+Gli elementi che si possono indirizzare in un PLC TSX 37 Micro si dividono in due 
+categorie: elementi bit, elementi parola.
+Fig. XIV.7.2   Indirizzamento degli elementi bit I/O.
+- ... altri moduli collegati
+- 1 per il primo modulo collegato
+- 0 per il modulo CPU
+da 0 a 10
+da 00 a 31 per le uscite
+da 00 a 31 per gli ingressi
+%I
+x
+%Q
+o
+.
+i
+punto
+N° del rack
+N° della via
+X, W, D
+- 10 per l'ultimo modulo di
+estensione collegato
+Tipo oggetto
+Formato
+I (Input) per ingresso
+Q (Quit) per uscita
+D = doppia parola
+W = parola
+X = booleano
+
+[PAG 1408]
+XIV-96
+AUTOMAZIONE
+Elementi bit
+Bit ingressi/uscite ON/OFF. Sono riferiti ai punti di I/O e possono raggiungere con la 
+massima estensione della configurazione il numero di 328 punti di ingresso e uscita. Pos-
+sono essere considerati le “immagini logiche” degli stati elettrici degli I/O dei moduli; 
+sono definiti nella memoria dati e vengono aggiornati ad ogni ciclo di scansione.
+Bit interni. Sono quelle allocazioni di memoria su cui ci si appoggia nel programma 
+utente come fossero dei relè ausiliari; permettono di memorizzare degli stati intermedi 
+durante l’esecuzione di un programma. Sono presenti in numero di 256 con qualsiasi tipo 
+di configurazione.
+Bit sistema. Sono dei bit speciali che, a seconda del loro stato logico associato a deter-
+minate funzioni particolari prestabilite, sorvegliano il buon funzionamento del controllore 
+e il corretto svolgimento del programma applicativo.
+Bit di blocco funzione. Sono associati a determinate mansioni legate ai blocchi fun-
+zione e, a seconda del tipo di blocco, sono o non sono presenti.
+Bit estratti di parole. Ogni parola si compone di 16 bit e ciascuno di questi bit in 
+determinate situazioni viene manipolato singolarmente.
+–  Bit di parola interna. Si può estrarre un solo bit di una parola interna: un esempio è 
+quello rappresentato dall’utilizzo di un solo bit significativo in un registro a scorrimento 
+per azionare una determinata uscita quando tale bit viene messo ad 1.
+–  Bit di parola costante. Equivale a quanto precedentemente menzionato con la diffe-
+renza che trattasi di dato immodificabile poiché si manipolano bit di una constant-word.
+–  Bit di parola sistema. È necessario talvolta estrarre un solo bit dei 16 che compongono 
+una system-word.
+–  Bit di parola registro. Si estrae un bit da una parola registro che contiene per esempio 
+la configurazione per la comunicazione tra il modulo base e il modulo I/O analogico di 
+espansione di un PLC.
+Nella Tab. XIV.7.1 compare il numero e l’indirizzo di tali elementi.
+Elementi parola
+Si ricorda che una parola (word) è composta di 8, 16 o da 32 bit ed è presente nel TSX 
+37 Micro in natura diversa (Tab. XIV.7.2). Sono situate nella memoria dati o programma e 
+possono contenere un valore algebrico 0 ÷ 255 (il byte) 32768 ÷ +32767 (la parola) e 
+2147483648 ÷ +2147483647 (la parola doppia). 
+Parole interne. Contrassegnate con M sono presenti nella memoria dati in numero che 
+dipende dalla configurazione della memoria stessa; possono contenere dei valori manipo-
+labili attraverso il programma utente. 
+Parole costanti. Sono per numero e struttura uguale alle prime ma differenziano da 
+esse poiché vengono scritte o modificate solo in modo CONFIGURAZIONE. Saranno le 
+word che alloggeranno quindi dei dati che non devono modificarsi e risiedono nella 
+Tab. XIV.7.1  Elementi bit indirizzabili
+Tipo di bit
+Indirizzamento
+Numero max.
+Possibilità
+Bit di ingresso
+Bit di uscita
+%Ix.i
+%Qx.i
+328
+R / F
+R / W / F
+Bit interno
+%Mi
+256
+R / W
+Bit sistema
+%Si
+128
+R / W a seconda di i
+Bit di blocco funzione
+es: %TMi.Q
+R
+Bit estratti di parole
+es: %MW10:X5
+R / W a seconda di bit
+
+[PAG 1409]
+AUTOMAZIONE
+XIV-97
+memoria programma (salvaguardate dalla pila tampone).
+Parole sistema. Analogamente ai bit vi sono anche le word sistema: vengono adibite a 
+compito specifico e sono controllate direttamente dal firmware del sistema PLC.
+Parole di blocco funzione. Analogamente ai bit sono associate a determinati blocchi 
+funzione; contengono informazioni che riguardano lo stato di determinati parametri dei 
+blocchi funzione stessi.
+Parole I/O. Sono le parole utilizzate come registro che scambia le informazioni in 
+ingresso e uscita tra il controllore e i moduli intelligenti.
+Nella Tab. XIV.7.2 compaiono le caratteristiche degli elementi parola disponibili nel PLC 
+preso in esame, mentre nella Fig. XIV.7.3 è visualizzato l’indirizzamento delle word stesse.
+Fig. XIV.7.3   Indirizzamento delle word.
+Tab. XIV.7.2  Elementi parola indirizzabili
+Tipo di parola
+Formato
+Indirizzamento Numero max.
+Possibilità
+Parole interne
+semplice lunghezza
+doppia lunghezza
+flottante
+byte
+%MWi
+%MDi
+%MFi
+%MBi
+a seconda di 
+configurazione 
+memoria
+R / W
+R / W
+R / W
+R / W
+Parole costanti
+semplice lunghezza
+doppia lunghezza
+flottante
+byte
+%KWi
+%KDi
+%KFi
+%KBi
+a seconda di 
+configurazione 
+memoria
+R / W
+R / W
+R / W
+R / W
+Parole modulo di 
+I/O
+I semplice lunghezza
+I doppia lunghezza
+O semplice lunghezza
+O doppia lunghezza
+%IWxy.i
+%IDxy.i
+%QWxy.i
+%QDxy.i
+0 i 127
+0 i 126
+0 i 127
+0 i 126
+R / W
+R / W
+R / W
+R / W
+Parole comuni
+su rete 0
+%NW{j}k
+R / W
+Parole sistema
+semplice lunghezza
+doppia lunghezza
+%SWi
+%SDi
+0 i 127
+0 i 126
+R / W a seconda di i
+Bit estratti di 
+parola
+bit j parola interna
+bit j parola costante
+bit j parola d’ingresso
+bit j parola d’uscita
+bit j parola sistema
+bit j parola comune di 
+rete 0
+%MWi:Xj
+%KWi:Xj
+%IWi:Xj
+%QWi:Xj
+%SWi:Xj
+%NW{j}k:Xm
+0 J 15
+0 J 15
+0 J 15
+0 J 15
+0 J 15
+0 m 15
+R / W
+R / W
+R / W
+R / W
+R / W a seconda di i
+R / W
+a seconda del tipo di word
+%M o %K o %S
+i
+N° della parola
+B, W, D, F
+Formato
+D = parola doppia
+F = flottante
+W = parola
+B = byte
+Tipo oggetto
+M = Interno
+S = Sistema
+K = Costante
+
+[PAG 1410]
+XIV-98
+AUTOMAZIONE
+7.3  Struttura software
+Come già anticipato, per l’editazione dei programmi di esempio che seguono viene 
+impiegato il software PL7 Micro. I task di un programma PL7 si compongono di varie 
+parti dette sezioni e di sottoprogrammi. Ognuna di queste sezioni può essere programmata 
+nel linguaggio desiderato, scegliendo tra le modalità disponibili:
+–  Ladder Diagram (LD) o diagramma a contatti.
+–  Instruction List (IL) o lista di istruzioni.
+–  Structured Text (ST) o testuale strutturato.
+–  Sequential Function Chart (SFC) o diagramma funzionale in sequenza (denominato 
+comunemente anche grafcet).
+La suddivisione in sezioni permette di creare un programma strutturato e di generare o 
+incorporare facilmente moduli di programma. I sottoprogrammi possono essere chiamati 
+da qualsiasi sezione del task a cui appartengono o da altri sottoprogammi dello stesso.
+La struttura del software è impostata per default per l’esecuzione del solo task master 
+(Task MAST); questo task può avere due tipi di esecuzione:
+–  Ciclica (scelta di default). Il funzionamento ciclico prevede l’esecuzione del pro-
+gramma in modo consecutivo, con l’elaborazione delle varie sezioni l’una dopo l’altra, 
+senza tempo di attesa.
+–  Periodica. In funzionamento periodico le esecuzioni del task sono legate ad un peri-
+odo di tempo predefinito dall’utente. 
+Qualunque sia il modo di funzionamento, periodico o ciclico, il task viene controllato 
+da un watchdog che permette di rilevare una durata anomala del programma e nel caso in 
+cui venga superato il tempo stabilito, il bit di sistema %S11 viene impostato a 1 e viene di 
+conseguenza bloccato il PLC.
+È possibile anche la configurazione di una struttura multitask che consente un uso più 
+complesso dell’applicazione, in maniera che ogni programma specifico sia integrato in un 
+proprio task. Tali task sono indipendenti ed eseguiti dal processore master che ne gestisce 
+la priorità, nonché l’esecuzione (Fig. XIV.7.4).
+Fig. XIV.7.4   Priorità nell’esecuzione dei vari task.
+Il task master che ha la priorità più bassa, ma generalmente gestisce la maggior parte 
+del programma applicativo, è costituito da:
+–  Un’elaborazione principale (MAIN) suddivisa in sezioni. Ogni sezione si programma 
+come entità a se stante nel linguaggio appropriato (LD, IL, ST o Grafcet).
+–  Vari sottoprogrammi SRi (0 < i < 253). I sottoprogrammi costituiscono delle entità 
+separate e vengono svolti nell’elaborazione principale o in sotto programmi (8 sottolivelli 
+massimo).
+Il task veloce consente di effettuare delle elaborazioni brevi con una priorità più ele-
+vata del task master. Viene gestito automaticamente dal sistema: mediante bit sistema, 
+opportunamente editati nel programma, può essere lanciato, interrotto, ma successiva-
+Priorità
+
+
+Task
+master
+Task
+veloce
+Task
+evento
+MAST
+FAST
+EVT
+
+[PAG 1411]
+AUTOMAZIONE
+XIV-99
+mente riavviato a seconda dell’elaborazione dell’applicazione. Come il task master, si 
+compone di un’elaborazione principale e di sottoprogrammi.
+Il periodo del task veloce (FAST) è stabilito nella configurazione, da 1 a 255 ms. Que-
+sto tempo può essere fissato ad un valore superiore a quello del task master (MAST) nel 
+caso in cui si abbisogni di elaborazioni periodiche lente ma prioritarie.
+L’elaborazione del task evento permette di tenere conto degli eventi di comando e di 
+trattarli il più rapidamente possibile (ad esempio, gli ingressi evento del modulo 1, il 
+superamento della soglia di un modulo contatore, ecc.). Il verificarsi di un tale evento rin-
+via il programma applicativo verso un’elaborazione di tipo EVT, interrompendo l’elabora-
+zione degli altri task.
+Questi task sono quelli a priorità più alta. L’elaborazione assicurata da questi task è 
+necessariamente breve, in modo da non perturbare l’esecuzione degli altri task. Nel PLC 
+preso in considerazione sono disponibili un numero di 16 eventi configurabili.
+Le elaborazioni di evento possono essere attivate con:
+–  gli ingressi da 0 a 3 del modulo 1, sul fronte di salita (ascendente) o discendente,
+–  il o i canali di conteggio del modulo contatore,
+–  i due canali di conteggio sugli ingressi di evento,
+–  i canali di conteggio integrati alle basi TSX 37-22,
+–  il collegamento FIPWAY sul PLC TSX 37-21/22.
+Modalità operative
+Devono essere considerate le funzionalità del controllore in merito al funzionamento 
+in situazioni di mancanza dell’alimentazione (Fig. XIV.7.5). Quando si verifica un’inter-
+ruzione dell’alimentazione di rete, il sistema memorizza il contesto applicazione e l’ora 
+dell’interruzione, poi imposta tutte le uscite allo stato di posizionamento di sicurezza 
+(stato definito nella configurazione).
+Fig. XIV.7.5   Elaborazione su interruzione dell’alimentazione.
+RUN
+applicazione
+Mancanza alimentazione
+Ripristino alimentazione
+Salvataggio contesto OK
+Interruzione < 7 ms
+Scheda memoria identica
+Esecuzione normale
+del programma
+Riavvio   
+a freddo
+Riavvio   
+a caldo
+NO
+NO
+NO
+SI
+SI
+SI
+Attesa ripristino alimentazione
+
+[PAG 1412]
+XIV-100
+AUTOMAZIONE
+Fig. XIV.7.6   Elaborazione su riavvio a freddo.
+Al ritorno dell’alimentazione, il contesto salvato viene confrontato con quello in corso 
+e di conseguenza viene definito il tipo di riavvio da eseguire:
+Se il contesto applicazione è cambiato (perdita del contesto sistema o nuova applicazione), 
+il PLC esegue l’inizializzazione dell’applicazione, ossia un riavvio a freddo (Fig. XIV.7.6). 
+Condizioni di un avvio a freddo:
+a ) quando riprende l’alimentazione con perdita del contesto (esempio, la batte-
+ria di back-up del processore è fuori servizio);
+b ) quando si emette un comando di inizializzazione dal PC;
+c ) quando l’applicazione viene eseguita per la prima volta;
+d ) quando viene disinstallata la scheda memoria dal suo slot;
+e ) quando si imposta a 1 con il programma il bit %S0.
+–  Se il contesto applicazione è identico, il PLC esegue un riavvio senza inizializzare i 
+dati, ossia un riavvio a caldo (Fig. XIV.7.7).
+Lettura
+ingressi
+Esecuzione del programma
+SI   %S0 = 1
+elaborazione eventuale
+del riavvio a freddo
+Interruzione
+alimentazione
+> microinterruzioni
+BOTTOM
+TOP
+Arresto del processore
+Salvataggio contesto
+applicazione
+Ritorno alimentazione
+Autotest configurazione
+Impostazione a 1 del bit %S0
+Inizializzazione applicazione
+Impostazione a 0 del bit %S0
+Aggiornamento delle uscite
+NO
+SI
