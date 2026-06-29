@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-29T16:32:02.931870+00:00",
+  "lastUpdate": "2026-06-29T19:52:50.036Z",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -145,6 +145,24 @@
       "data_proposta": "2026-06-16",
       "attivo": true,
       "data_attivazione": "2026-06-23"
+    },
+    {
+      "id": "daily_1781640025709_2",
+      "nome": "Tecnica di prunning",
+      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della pianta",
+      "obiettivo": "Migliorare la crescita e la produzione di pianta",
+      "materiali": [
+        "forbici",
+        "guanti"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": true,
+      "data_attivazione": "2026-06-29",
+      "tipo": "coltivazione_generale"
     }
   ],
   "storico_cicli": [],
@@ -1048,24 +1066,6 @@
       "difficolta": "facile",
       "fonte": "Royal Queen Seeds",
       "durata_giorni": 7,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "coltivazione_generale"
-    },
-    {
-      "id": "daily_1781640025709_2",
-      "nome": "Tecnica di prunning",
-      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della pianta",
-      "obiettivo": "Migliorare la crescita e la produzione di pianta",
-      "materiali": [
-        "forbici",
-        "guanti"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 14,
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null,
