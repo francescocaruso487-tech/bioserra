@@ -20,5 +20,6 @@ jobs:
 
       - name: Run piante_stato_update
         env:
+          BIOSERRA_GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
         run: python .github/scripts/piante_stato_update.py
