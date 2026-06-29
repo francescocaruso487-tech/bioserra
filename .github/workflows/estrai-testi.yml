@@ -25,7 +25,13 @@ jobs:
           python-version: '3.11'
 
       - name: Installa dipendenze Python
-        run: pip install pymupdf pdfplumber pypdf --break-system-packages
+        run: |
+          pip install pymupdf --quiet || echo "pymupdf skip"
+          pip install pdfplumber --quiet
+          pip install pypdf --quiet
+          pip install pytesseract pillow pdf2image --quiet || echo "pytesseract skip"
+          python3 -c "import pdfplumber; print('pdfplumber OK')"
+          python3 -c "import fitz; print('fitz OK')" || echo "fitz non disponibile"
 
       - name: Estrai testi da PDF (OCR completo)
         env:
