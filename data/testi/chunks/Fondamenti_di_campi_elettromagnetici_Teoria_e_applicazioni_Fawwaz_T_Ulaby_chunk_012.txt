@@ -1,0 +1,1304 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 12/23 ===
+Chars: 44,804 | Offset: 493,902
+
+
+
+dove 4, detta permeabilità magnetica del materiale, è espressa in termini di x» dalla
+
+p= po(l+Xm) (H/m). (5.76)
+
+Spesso è conveniente definire le propriètà magnetiche di un materiale in termini della
+permeabilità relativa pry:
+
+bes 1+%m (5.77)
+
+DI
+
+Figura 5.20
+
+Un elettrone genera (a) un
+momento magnetico’ ©
+orbitale m, orbitando
+attorno al nucieo e (b) un
+momento magnetico di
+spin m; ruotando attorno
+al proprio asse.
+
+[PAG 119]
+ESTO
+
+nni freeze pri
+
+Capitolo 5 — Magnetostatica
+
+dove uo è la permeabilità dello spazio libero. I materiali sono di solito classificati co-
+me diamagnetici, paramagnetici o ferromagnetici in base al proprio valore di xm, co-
+me descritto nella Tabella 5.2. I materiali diamagnetici hanno suscettibilità negativa e
+i materiali paramagnetici hanno suscettibilità positiva, tittavia il valore assoluto di
+Xm è dell’ordine di 1075 per entrambe le classi di materiali, il che rende xm trascura»
+bile rispetto a 1 nella (5.77). Da cio si ha che jy ~ 1 0 i © po per le sostanze diama-
+gnetiche e paramagnetiche, che comprendono i materiali dielettrici e la maggior
+parte dei metalli. Al contrario, |u| > 1 per i materiali ferromagnetici: per esempio,
+per il ferro puro |yr| é dell'ordine di 2 x 10°. Nel seguito saranno discussi i materiali
+ferromagnetici.
+
+Tabella 5.2 Proprietà dei materiali magnetici.
+
+Diamagnetismo Paramagnetismo Ferromagnetismo
+Momento di dipolo No Si, debole Sì, forte
+magnetico permanente
+Meccanismo principale Momento magnetico Momento magnetico Domini
+di magnetizzazione orbitale elettronico di spin elettronico magnetici
+Direzione del campo Opposta Uguale Isteresi
+magnetico indotto [vedere Figura 5.22]
+Sostanze comuni Bismuto, rame, Alluminio, calcio, cromo, Ferro,
+diamante, oro, piombo, magnesio, niobio, nichel,
+mercurio, argento, silicio platino, tungsteno cobalto
+. Valori tipici di xm 2 -1078 1058 [xm] > 1 con isteresi
+Valori tipici di 4, i a |i] > 1 con isteresi
+
+Esercizio 5.11 Il vettore magnetizzazione M è la somma vettoriale dei momenti ma-
+gnetici di tutti gli atomi contenuti in un'unità di volume (1 m?). Se in un determinato tipo
+di ferro con 8.5 x 10° atomi/m? si ha che un elettrone per ogni atomo contribuisce alli-
+neando alla direzione dei campo applicato il proprio momento magnetico di spin, si rica-
+vi (a) il momento magnetico di spin di un elettrone singolo, sapendo che
+me = 9.1 x 107? (kg) e che fi = 1.06 x 10-4 (J. 5) e (b) il modulo di M.
+
+SOLUZIONE (a) m, = 9.3 x 10724 (A - m?), (0) M =7.9 x 10° (A/m).
+—— —r—r»r_r_w_——r—_—r—r—»—rrrrm6
+
+5.6.3 Isteresi magnetica nei materiali ferromagnetici
+
+I materiali ferromagnetici, che comprendono ferro, nichel e cobalto, manifestano for-
+ti proprietà magnetiche a causa del fatto che i loro momenti magnetici tendono ad al-
+linearsi rapidamente con la direzione del campo magnetico esterno. Inoltre, tali mate-
+riali rimangono parzialmente magnetizzati anche dopo la cessazione del campo ester-
+no. A causa di questa proprietà, i materiali ferromagnetici sono utilizzati nella fabbri-
+cazione dei magneti permanenti. .
+
+Una caratteristica peculiare comune a tutti i materiali ferromagnetici è la presenza
+dei domini magnetici di Weiss. Un dominio di Weiss in un materiale è una regione
+microscopica, con dimensioni dell’ordine di 10-!° m?, all’interno della quale i mo-
+menti magnetici di tutti gli atomi contenuti, tipicamente in una quantità deli’ordine di
+10!9 atomi, sono allineati paralielamente l'uno all’altro. Questo allineamento perma-
+nente è attribuito alle intense forze di accoppiamento tra i momenti di dipolo magne-
+tico che formano un singolo dominio. In assenza di un campo magnetico esterno, i
+domini assumono orientazioni casuali l’uno rispetto all’altro, come descritto in
+Figura 5.21(a), da cui risulta una magnetizzazione netta pari a zero. Le pareti di
+Bloch formano i confini tra domini adiacenti e sono costituite da sottili regioni di
+
+5.6 Proprietà magnetiche dei materiali
+
+transizione. Quando un campione non magnetizzato di un materiale ferromagnetico
+viene immerso in un campo magnetico esterno, i domini si allineano parzialmente
+con il campo esterno, come descritto in Figura 5.21(b). La comprensione quantitativa
+del processo di formazione di questi domini e del loro comportamento sotto Pinfluen-
+za di un campo magnetico esterno richiede un uso massiccio della meccanica quanti-
+stica, il che esula dalla presente trattazione. Pertanto la discussione sarà limitata a una
+descrizione qualitativa del processo di magnetizzazione e delle sue conseguenze.
+
+(a) Domini non magnetizzati
+
+(b) Domini magnetizzati
+
+Dal punto di vista della magnetizzazione, il comportamento di un materiale ferroma-
+gnetico è descritto dalla curva di magnetizzazione B-H, dove H è l'ampiezza del
+campo magnetico applicato dall'esterno H, mentre 8 è l'ampiezza dell’induzione ma-
+gnetica complessiva B presente all’interno del materiale. Secondo la (5.72), l’indu-
+zione B è formata da un contributo up dovuto al campo esterno e un contributo
+HoM dovuto al campo di magnetizzazione indotto nel materiale. Supponendo di par-
+tire da un campione di ferro non magnetizzato e ipotizzando di disporre di un appara»
+to sperimentale in grado di misurare B e H, si ha che lo stato non magnetizzato è rap-
+presentato dal punto O in Figura 5.22. Se si aumenta costantemente H, anche B au-
+menta e la risposta segue la curva dal punto O al punto A), nel quale quasi tutti i do-
+mini si sono allineati con H: il punto 4; rappresenta una condizione di saturazione.
+Se ora si inizia a diminuire H dal suo valore nel punto A; fino a zero, la curva di ma-
+gnetizzazione segue il percorso da A; fino ad Ag, in cui il campo estemo H è zero,
+ma l’induzione B nel materiale è diversa da zero. Questo valore di B è detto induzio-
+ne residua B,. Il ferro ora è magnetizzato e può servire da magnete permanente gra-
+zie al fatto che gran parte dei suoi domini di Weiss sono rimasti allineati. Invertendo
+la direzione di H e aumentando la sua intensità, B cala da B, nel punto Az fino a zero
+nel punto 43 e se si aumenta ulteriormente l'intensità di H{ mantenendo negativa la
+direzione, fa curva di magnetizzazione si sposta fino alla condizione di saturazione
+nel punto Aq. Infine, se si riporta H a zero e lo si aumenta di nuovo in direzione posi-
+tiva, la curva segue il percorso da 44 fino ad 4;. Questo processo è detto isteresi ma-
+gnetica; la parola isteresi significa ‘rimanere indietro”. Il ciclo di isteresi mostra che
+il processo di magnetizzazione nei materiali ferromagnetici non dipende solo dal
+campo magnetico estemo H, ma anche dalla ‘‘storia magnetica” del materiale. La
+particolare forma e l’estensione del ciclo di isteresi dipendono dalle proprietà del ma-
+teriale ferromagnetico e dall’intervallo picco-picco su cui si fa variare H. I materiali
+caratterizzati da cicli di isteresi ampi sono detti materiali ferromagnetici duri [Figura
+5.23(a)]. Questi materiali non possono essere facilmente smagnetizzati da parte di un
+campo magnetico estemo perché hanno una forte magnetizzazione residua B,. I mate-
+riali ferromagnetici duri sono usati per fabbricare magneti permanenti per motori e
+dinamo. I materiali ferromagnetici dolci hanno cicli di isteresi stretti [Figura 5.23(b)]
+e dunque sono più facili da magnetizzare e smagnetizzare, Per smagnetizzare un ma-
+teriale ferromagnetico, il materiale viene sottoposto a diversi cicli di isteresi, dimi-
+nuendo gradualmente l'intervallo picco-picco del campo applicato.
+
+Figura 5.21
+
+Confronto tra (a) domini
+non magnetizzati e (b)
+domini magnetizzati in un
+materiale ferromagnetico.
+
+[PAG 120]
+dae
+
+m4
+
+Figura 5.22
+
+Curva di isteresi tipica di
+‘un materiale -
+ferromagnetico.
+
+Figura 5.23
+
+Confronto tra le curve di
+isteresi di (a) un materiale
+ferromagnetico duro e (b)
+‘un materiale
+ferromagnetico dolce.
+
+Capitolo 5 — Magnetostatica
+
+(a) Materiale duro
+
+(b) Materiale dolce
+
+Domande di verifica
+
+5.12 Quali sono le tre classi dei materiali magnetici e quali sono i valori tipici delle
+loro permeabilità magnetiche relative?
+
+5.13. Da cosa è provocata l’isteresi magnetica nei materiali ferromagnetici?
+
+5.14 Cosa è descritto dalla curva di magnetizzazione? Qual è la differenza tra le cur-
+ve di magnetizzazione dei materiali ferromagnetici duri e di quelli dolci?
+
+9.7. Condizioni al contorno magnetiche
+
+Nel Paragrafo 4.9 si è ricavato un insieme di condizioni al contorno che descrivono
+come, al confine tra due mezzi diversi e adiacenti, le grandezze di campo elettrico D
+ed E nel primo mezzo sono legate a ‘quelle nel secondo mezzo. Si ricaverà ora un
+analogo insieme di condizioni al contomo per le grandezze di campo magnetico B e
+H. Applicando la legge di Gauss a un cilindro posto a cavallo del confine, si è deter-
+minato che la differenza tra i componenti normali degli spostamenti elettrici nei due
+mezzi è uguale alla densità superficiale di carica ps. Vale a dire
+
+fra =Q = | Din~ Din = py. (5.78)
+
+Applicando in maniera analoga la legge del magnetismo di Gauss nella forma espres-
+
+“sa dalla (5.44), si può concludere che
+
+fB-d=0 => | Bin = Brn. (5.79)
+
+rit
+
+5.7 Condizioni al contorno magnetiche
+
+Questo risultato afferma che il componente normale di B é continuo attraverso il confi-
+
+_ne fra.due mezzi adiacenti. Ricordando.le relazioni By.= ;H; ¢ Bo = 22 nel.caso
+
+di mezzi lineari isotropi, la condizione al contomo su H che corrisponde alla (5.79) è
+
+pil = paio. (5.80)
+
+Confrontando la (5.78) e la (5.79) si osserva che, mentre il componente normale di B
+é continuo attraverso il contorno, il componente normale di D puo non esserlo, a
+meno che non sia ps = 0. Una relazione simile, ma opposta, si applica ai componenti
+tangenti del campo elettrico E e del campo magnetico H: mentre il componente tan-
+gente di E é continuo attraverso il confine, il componente tangente di Hl puo non es-
+serlo, a meno che la densità superficiale di corrente non sia J = 0. Per ottenere la
+condizione al contorno sul componente tangente di H si segue lo stesso procedimen-
+to usato in precedenza nel Paragrafo 4.9 per ricavare la condizione al contorno sul
+componente tangente di E. Facendo riferimento alla Figura 5.24, se si applica la leg-
+ge di Ampère data dalla (5.47) a un contorno rettangolare chiuso con lati Ale Ah e
+si fa tendere Ah — 0, si ottiene il risultato
+
+6 d
+fwa=|w-a+ f HW -dl=J, (5.81)
+c a e
+
+dove H; e Hy sono rispettivamente i campi magnetici nei mezzi 1 e 2. Secondo la
+
+legge di Ampère, / è la corrente netta che attraversa la superficie della spira nella di-
+rezione specificata dalla regola della mano destra, infatti quando le dita della mano
+destra sono rivolte in direzione del verso di percorrenza della spira C, J è rivolta in
+direzione del pollice. A causa delle direzioni assunte da Hi, da H2 e dal contorno di
+integrazione C, come specificate in Figura 5.24, il componente di Hy parallelo al
+confine Hy, è parallelo e concorde in direzione con dl sul segmento ab, ma il compo-
+nente tangente di H; è antiparallelo a di sul segmento cd. Inoltre, se si fa tendere AA
+a zero, la superficie della spira tende a una linea sottile di lunghezza A/. Dunque, la
+corrente complessiva che scorre attraverso questa linea sottile è J = J;Al, dove J, è il
+modulo del componente normale della densità superficiale di corrente che attraversa
+la spira. Alla luce di queste considerazioni, la (5.81) diviene
+
+Hy, Al — Hy Al = J, Al (5.82)
+oppure
+Hy — Hy =J, (A/m). (5.83)
+
+Questo risultato si può generalizzare a una forma vettoriale che comprenda la relazio-
+ne tra le direzioni definita dalla regola della mano destra, ottenendo
+
+fig x (H1-H2)=J, (5.84)
+
+Figura 5.24 Confine tra il mezzo ! con permeabilità jz; e il mezzo 2 con permeabilità pz.
+
+25
+
+[PAG 121]
+226
+
+Figura 5.25
+
+Linee di campo magnetico
+(a) in un solenoide ad
+avvolgimento lasco e (b)
+in un solenoide ad
+avvolgimento fitto.
+
+Capitolo 5 — Magnetostatica
+
+dove fi, è il versore normale uscente dal mezzo 2, indicato in Figura 5.24. Le corren-
+ti superficiali possono esistere solo sulle superfici dei conduttori perfetti e dei super-
+conduttori, dunque all'interfaccia tra mezzi che abbiano conducibilità finite, si ha
+J=0e
+
+Hy = Hy. (5.85)
+
+Esercizio 5.12 Facendo riferimento alla Figura 5.24, si ricavi ’angolo compreso tra Hi
+e i, = % quando Hy = (83 + 22) (A/m), 41=2,u2=8eJ;=0.
+
+SOLUZIONE 6 = 20.6°.
+
+5.8 Induttanza
+
+L’induttanza è l’equivalente magnetico del condensatore elettrico: proprio come un
+condensatore è in grado di immagazzinare energia elettrica nel campo elettrico pre-
+sente all’interno del mezzo posto tra le sue superfici conduttive, un’induttanza può
+immagazzinare energia magnetica nel volume racchiuso dagli avvolgimenti. Un tipi-
+co esempio di induttanza è una bobina formata da più avvolgimenti di filo avvolti
+con geometria elicoidale attorno a un nucleo cilindrico, come descritto in Figura
+5.25(a): tale struttura è detta solenoide. Il nucleo può essere riempito d’aria o conte-
+nere un materiale magnetico di permeabilità magnetica jz. Se il filo è percorso da una
+corrente / e gli avvolgimenti sono fitti, il solenoide è in grado di produrre un campo
+magnetico relativamente uniforme nella propria regione interna, e l’andamento del
+suo campo magnetico assomiglia a quello di un magnete permanente, come descritto
+dalle linee di campo in Figura:5.25(b).
+
+(b) Solenoide ad
+avvolgimento fitto
+
+(a) Solenoide ad
+avvolgimento lasco
+
+5.84 Campo magnetico generato da un solenoide
+
+Come premessa alla trattazione dell’induttanza, verrà ora ricavata l’espressione del-
+l’induzione magnetica B nella regione interna di un solenoide ad avvolgimento fitto,
+con  avvolgimenti per unità di lunghezza. Anche se gli avvolgimenti hanno forma
+
+È
+ì
+
+Leiner ym verme
+
+5.8 Inductanza
+
+lievemente elicoidale, saranno trattati come anelli circolari, come mostrato in Figura
+5.26. Il solenoide ha lunghezza / e raggio a ed è percorso da una corrente /. Si consi-
+
+“deri l'induzione magnetica B nel punto P, situato sull’asse del solenoide.
+
+Nell’Esempio 5.4, si è ricavata la seguente espressione del campo magnetico H a una
+distanza z sull’asse di una spira circolare di raggio a:
+la
+H=i——_—__,, 5.86,
+
+2a +22)? (5.86)
+dove J’ è la corrente che percorre la spira. Se consideriamo che una lunghezza infini-
+tesima dz di solenoide sia equivalente a una spira formata da ndz avvolgimenti e per-
+corsa da una corrente J’ = Jndz, in tal caso ii campo indotto nel punto P è
+
+pnla?
+2(a? + 22)9?
+
+Il campo totale B in P si ottiene integrando i contributi su tutta la lunghezza del sole-
+noide. Ciò si può semplificare esprimendo la variabile z in termini dell’angolo 0.
+Vale a dire
+
+dB= pdB=? (5.87)
+
+z=atand, (5.88a)
+@+27 =a +a tan 6 = a? sec? 0, (5.88b)
+dz = a sec? 9d. (5.880)
+
+Sostituendo le ultime due espressioni all’intemno della (5.87) e integrando da 6; a 92,
+si ha
+
+. pula? ia a sec? 640
+
+Boi =>
+2 Jo, sed (5.89)
+
+= 3" (sin 6, ~ sin Oy).
+
+2
+
+Se la lunghezza / del solenoide è molto maggiore del suo raggio a, si ha 9, ~ —90° e
+8, = 90°, nel qual caso la (5.89) si riduce a
+
+[>= Zunl = HI
+
+(solenoide di lunghezza elevata con //a > 1) (5.90)
+
+DOOOOOOOOOOOOOOO)
+
+|
+
+Figura 5.26
+
+Sezione trasversa di un
+solenoide che mostra la
+geometria considerata per
+il calcolo di H nel punto P
+sull’asse del solenoide.
+
+[PAG 122]
+228
+
+Capitolo 5 ~ Magnetostatica
+
+dove N = nl è il numero complessivo di avvolgimenti sulla lunghezza /. Anche se
+
+Pespressione data dalla (5.90) è stata ricavata per.il campo B al centro del solenoide, _ .._
+
+è approssimativamente valida in tutti i punti all’interno del solenoide, ‘tranne quelli
+vicini alle estremità.
+
+Il concetto di induttanza comprende l’autoinduttanza, che rappresenta la concate-
+nazione del flusso magnetico di una bobina o di un circuito con se stessi, e
+Vinduttanza mutua, che riguarda la concatenazione del flusso magnetico in un circui-
+to a causa del campo magnetico generato da una corrente che scorre in un altro cir-
+cuito. Di solito, quando si usa il termine induttanza si intende fare riferimento all’au-
+toinduttanza.
+
+Esercizio 5.13 Si utilizzi la (5.89) per ottenere l’espressione di B in un punto posto sul-
+l’asse di un solenoide di lunghezza elevata, ma situato in corrispondenza dell’estremità.
+Qual è il valore di B alle estremità in rapporto al suo valore al centro del solenoide?
+
+SoLuzione B = #(uN//2/) alle estremità, che corrisponde alla metà del suo valore al
+centro.
+
+5.8.2 Autoinduttanza
+Dalla (5.66), il flusso magnetico ® concatenato a una superficie S è dato da
+
+0 [Ba (Wo). (591)
+
+In un solenoide caratterizzato da un campo magnetico approssimativamente unifor-
+me dato dalla (5.90), il flusso concatenato a un avvolgimento singolo è
+
+® fit) + ids ui, (5.92)
+Ss
+
+dove S è l’area della sezione trasversa dell’avvolgimento. Ii flusso magnetico conca-
+tenato A è definito come il flusso magnetico complessivo concatenato a un dato cir-
+cuito o struttura conduttiva. Se Ja struttura è costituita da un solo conduttore con più
+avvolgimenti, come nel caso del solenoide, A è uguale ai flusso concatenato con tutti
+gli avvolgimenti della struttura. Per un solenoide con N avvolgimenti si ha
+N°
+
+A=NO= TB (Wb). (5.93)
+Se d’altra parte la struttura è formata da due conduttori separati, come nel caso della
+linea di trasmissione bifilare e di quella coassiale, mostrate in Figura 5.27, il flusso
+concatenato A associato a una lunghezza / di una delle due linee è legato al flusso &
+attraverso la superficie chiusa compresa tra i due conduttori, come evidenziato dalle
+aree ombreggiate in Figura 5.27. In realtà, una parte del flusso attraversa i conduttori
+stessi, ma può essere trascurata se si ipotizza che le correnti fluiscano solo sulla su-
+perficie dei conduttori, nel qual caso il campo magnetico all’interno dei conduttori è
+zero. Questa ipotesi è giustificata dal fatto che il calcolo di A serve per misurare l’in-
+
+i duttanza di una data struttura e l’induttanza riveste interesse principalmente nel caso
+
+di corrente alternata, vale a dire di correnti, tensioni e campi tempo-varianti. Come si
+vedrà in seguito nel Paragrafo 7.5, la corrente che scorre in un conduttore in regime
+di corrente alternata si concentra in uno strato molto sottile adiacente alla superficie
+del conduttore. Nella linea di trasmissione bifilare le correnti scorrono sulle superfici
+
+CONT RE ST LIO IERI I ina
+
+5.8 Induttanza
+
+(b) Linea di trasmissione coassiale
+
+esterne dei fili, e per la linea coassiale la corrente scorre sulla superficie esterna del
+conduttore interno e sulla superficie interna del conduttore esterno: le superfici per-
+corse da corrente sono quelle adiacenti ai campi elettrici e magnetici presenti nella re-
+gione compresa tra i conduttori.
+
+L’autoinduttanza di un’arbitraria struttura conduttiva è definita dal rapporto tra il
+flusso magnetico concatenato A e la corrente J che fluisce attraverso la struttura:
+
+A
+
+(H). (594)
+
+Nel SI l’unità di misura dell’induttanza è Phenry (H), equivalente a weber fratto am-
+pere (Wb/A).
+Nel caso di un solenoide, applicando la (5.93) si ottiene
+
+N
+L=u--S {solenoide) (5.95)
+
+e per configurazioni a due conduttori simili a quelle descritte in Figura 5.27 si ha
+
+A co 1
+1-7=7-7/3-4 (5.96)
+
+Esempio 5.8 Induttanza di una linea di trasmissione coassiale
+
+Si ricavi l’espressione dell’induttanza per unità di lunghezza di una linea di trasmissio-
+ne coassiale. I conduttori hanno raggi a e b, come descritto in Figura 5.28, e il materiale
+isolante ha permeabilità lineare js.
+
+29
+
+Figura 5.27
+
+- Per calcolarel’induftanza
+
+per unità di lunghezza di
+una linea di trasmissione
+formata da due conduttori,
+bisogna calcolare il flusso
+magnetico attraverso
+Parea S compresa trai
+conduttori.
+
+[PAG 123]
+230
+
+Capitolo 5 — Magnetostatica
+
+Soluzione A causa della corrente J nel conduttore interno, il campo magnetico gene-
+rato nella regione con permeabilità u compresa tra i due conduttori è dato dalla (5.30):
+
+ag!
+B=@37”
+
+dove r è la distanza radiale dall’asse della linea coassiale. Si consideri il segmento di li-
+
+nea di trasmissione di lunghezza / descritto in Figura 5.28: su tutta la superficie piana S
+compresa tra i conduttori, B è sempre perpendicolare alla superficie, dunque il flusso at-
+
+traverso S è
+b d
+®=1] Bdr=! Lat n(È). (5.98)
+
+(5.97)
+
+Conduttore
+
+Conduttore È:
+E esterno
+
+esterno
+
+Figura 5.28 Sezione trasversa di una linea di trasmissione coassiale (Esempio 5.8).
+
+Applicando la (5.96), l’induttanza per unità di lunghezza della linea di trasmissione
+
+coassiale è data da
+b
+n(2). 99
+
+5.8.3 Induttanza mutua
+
+L’accoppiamento magnetico tra due diverse strutture conduttive è descritto in termini
+dell’induttanza mutua tra di esse. Per semplicità, si ipotizzi di prendere due spire
+chiuse con superfici 5; e S) e che una corrente / fluisca nella prima spira, come de-
+seritto in Figura 5.29. Il campo By generato da /, produce un flusso ©; attraverso la
+spira 2, dato da
+
+Oy = / By - ds, (5.100)
+Sì
+
+ese la spira 2 è formata da N) avvolgimenti, tutti accoppiati a Bj nello stesso modo,
+il flusso magnetico concatenato complessivo attraverso la spira 2 dovuto a By è
+
+Ann=N®=N | By -ds. (5.101)
+Sa
+
+eta
+
+i
+È
+i
+H
+H
+
+5.9 Energia magnetica
+
+N; avvolgimenti
+
+L’induttanza mutua associata a questo accoppiamento magnetico è data da
+
+ta = ea ® | B,-ds (H). (5.102)
+h h Sa
+
+L’induttanza mutua è fondamentale nei trasformatori, nei quali gli avvolgimenti con-
+nessi a due o più circuiti condividono uno stesso nucleo magnetico, come illustrato
+dal trasformatore toroidale descritto in Figura 5.30.
+
+Domande di verifica
+
+5.15 Com'è il campo magnetico all’interno di un solenoide lungo?
+5.16 Qual è la differenza tra autoinduttanza e induttanza mutua?
+5.17 Come è legata l’induttanza di un solenoide al numero di spire N?
+
+5.9 Energia magnetica
+
+Quando si è trattata l’energia elettrostatica nel Paragrafo 4.11, si è esaminato ciò che
+accade all’energia spesa per caricare un condensatore dalla tensione zero fino a una
+tensione finale V. Si sfrutterà ora una simile analogia considerando un’induttanza L
+collegata a un generatore di corrente. Supponendo che la corrente i che fluisce nell’in-
+duttore venga aumentata da zero a un valore finale /, dalla teoria dei circuiti è noto
+che la tensione v ai capi dell’induttanza è data da v = Ldi/dt. La potenza p è uguale ai
+prodotto di v peri e l’integrale nei tempo della potenza è il lavoro, o energia. Dunque,
+l'energia complessiva in joule (J) spesa per suscitare la corrente nell’induttore è
+
+of
+Wa= | vam fvar=z f idi= 31? (I). (5.103)
+0
+
+Bl
+
+Figura 5.29
+
+Linee di campo magnetico . _.
+generate da una corrente J
+nella spira 1, concatenate.
+
+alla superficie S> della
+
+spira 2.
+
+Figura 5.30
+
+Bobina toroidale con due
+avvolgimenti, usata come
+trasformatore,
+
+[PAG 124]
+232
+
+Capitolo 5 — Magnetostatica
+
+Per ragioni che saranno presto chiare, questa è detta l'energia magnetica immagazzi- >
+nata nell’induttanza.. .. wee coer
+Si consideri l’induttanza a solenoide: la sua induttanza è data dalla (5.95) come
+L = pN*S/le il modulo dell’induzione magnetica al suo interno è data dalla (5.90)
+come B = pNI/I, da cui J = BI/(uN). Se si sostituiscono queste espressioni di L e
+
+di J nella (5.103), si ottiene
+
+1 Lf N? BI Y?
+We = —LP == ( p——S | (—
+«7-3 (1797)
+
+1 B 1
+=— (IS) = pH?
+74 (9) 3 ui,
+
+(5.104)
+
+dove y= IS è il volume della regione interna al solenoide e H = B/y. La densità di
+energia magnetica wm è definita come l’energia magnetica Wm per unità di volume
+
+LT, (J/m?). (5.105)
+
+m
+
+Anche se questa espressione è stata ricavata nel caso di un solenoide, è comunque va-
+lida per qualsiasi mezzo immerso in un campo magnetico H. Inoltre, per qualsiasi vo-
+lume v che contenga un materiale con permeabilità 4, compreso lo spazio libero che
+ha permeabilità o, l’energia magnetica complessiva immagazzinata nei mezzo a cau-
+sa della presenza di un campo magnetico H è
+
+Ha=7 | uitay (). (5.106)
+
+Esempio 5.9 Energia magnetica immagazzinata in un cavo coassiale
+
+Si ricavi l’espressione dell’energia magnetica immagazzinata in un cavo coassiale di lun-
+ghezza /e con raggio intemo a e raggio estemo b. Il materiale isolante ha permeabilita js.
+Soluzione Dalla (5.97), il modulo del campo magnetico all’interno del materiale iso-
+lante è dato da
+
+43 L,
+42m
+
+dove r è la distanza radiale dal centro del conduttore interno, come descritto in Figura
+5.28. L'energia magnetica immagazzinata nel cavo coassiale è dunque data da
+
+1 Pop
+Wa=— dy Bf
+a= [ut dv Bat f, dv.
+
+Dal momento che H è funzione solo di r, si sceglie che dv abbia Ja forma di un guscio
+
+cilindrico di lunghezza /, raggio r e spessore dr lungo la direzione radiale. Pertanto,
+dy = 2arldre
+
+gf? by
+Wy = 5 [ sy 2arldr
+
+= ot In (3) O.
+
+|
+
+Concetti fondamentali
+
+Glossario
+
+® La forza magnetica che agisce su una particella carica g in moto con velocità u in
+una regione di spazio immersa in un’induzione magnetica B è Fn = qu x B.
+
+® La forza elettromagnetica complessiva, detta forza di Lorentz, che agisce su una ca-
+rica in movimento in presenza sia di un campo elettrico che di un campo magneti-
+coèF=g(E+ux B). .
+
+® Le forze magnetiche agenti su spire di corrente possono generare coppie magneti-
+che.
+
+e L'intensità del campo magnetico indotto da un elemento di corrente è definita dalla
+legge di Biot-Savart.
+
+e La legge del magnetismo di Gauss afferma che il flusso magnetico netto che fuorie-
+sce da una qualsiasi superficie chiusa è pari a zero.
+
+La legge di Ampère afferma che l’integrale di linea di H su un contomo chiuso è
+uguale alla corrente netta che attraversa la superficie delimitata dal contomo.
+
+e Il potenziale vettore magnetico A è legato a B dalla relazione B = V x A.
+
+e I materiali sono classificati in diamagnetici, paramagnetici e ferromagnetici, in fun-
+zione della loro struttura cristallina e del loro comportamento sotto l’influenza di
+un campo magnetico esterno.
+
+® I materiali diamagnetici e paramagnetici manifestano una relazione lineare tra B e
+Hed entrambi hanno ps © pu. .
+
+© I materiali ferromagnetici manifestano una relazione non lineare tra B e caratte-
+rizzata da isteresi e, in certi casi, il loro può avere valori fino a 10570.
+
+© AI confine tra due mezzi diversi, ii componente normale di B è continuo e i compo»
+nenti tangenti di H sono legati dalla relazione Hy, — Ax = Je, dove J; è la densità
+superficiale di corrente che fluisce in direzione ortogonale a Hu e Hx.
+
+e L’induttanza di un circuito è definita come il rapporto tra il flusso magnetico con-
+catenato al circuito e la corrente che lo percorre. :
+
+© La densità di energia magnetica è data da Wm = + pH.
+
+Glossario
+Si definiscano i seguenti termini, spiegandone il significato: equazione vettoriale di Poisson
+i flusso magnetico d
+induzione magnetica o densità di flusso magnetico B momento magnetico orbitale e di spin
+forza magnetica Fa vettore magnetizzazione M
+forza di Lorentz F suscettività magnetica Xm
+braccio d diamagnetismo, paramagnetismo, ferromagnetismo
+coppia T domini magnetici di Weiss
+momento magnetico n curva di magnetizzazione
+legge di Biot-Savart isteresi magnetica
+densità (volumetrica) di comente J materiali ferromagnetici duri e dolci
+densità superficiale di corrente J, autoinduttanza e induttanza mutua
+dipolo magnetico : solenoide
+legge del magnetismo di Gauss energia magnetica Wn
+legge di Ampère densità di energia magnetica wy,
+
+bobina toroidale
+
+23
+
+[PAG 125]
+234 Capitofo 5 - Magnetostatica
+
+PROBLEMI.
+
+Nota: Le risposte ai problemi contrassegnati da un asterisco si
+trovano nell’Appendice D.
+
+Paragrafo 5.1 Forze e coppie
+
+*5,1 Unelettrone che viaggia a una velocità di 4 x 106 m/s in
+direzione delle x positive viene proiettato in un mezzo
+immerso in un'induzione magnetica uniforme
+
+= (&2 — #3) T. Sapendo che e = 1.6 x 10719 Ce che
+fa massa di un elettrone è me = 9.1 x 107?! kg, si ricavi il
+vettore accelerazione iniziale dell’elettrone nel momento in
+cui viene proiettato nel mezzo.
+
+5.2. Quando una particella con carica g e massa m viene
+introdotta in un mezzo immerso în un campo ‘uniforme B
+perpendicolare a B, come descritto în Figura 5.31, la forza
+magnetica agente sulla particella le fa percorrere un
+cerchio di raggio a. Uguagliando Fm con la forza
+centripeta agente sulla particella, di ricavi a in funzione di
+g.m,ueB.
+
+® © ® © @
+
+® © ® ® ®
+
+Figura 5.31 Particella di carica g proiettata con velocità u in
+‘un mezzo immerso in un campo uniforme B perpendicolare a
+u (Problema 5.2).
+
+*5,3. Il circuito descritto in Figura 5.32 utilizza due molle
+identiche per sostenere un filo orizzontale lungo 10 cm
+che ha una massa di 5 g. In assenza di campo magnetico,
+il peso del filo allunga ciascuna molla di una distanza pari
+a 0.2 cm. Quando nella regione di spazio che contiene il
+filo orizzontale viene immesso un campo magnetico
+uniforme, si osserva che le molle si allungano di ulteriori
+0.5 cm, Qual è l'intensità dell’induzione magnetica B?
+
+5.4. La spira rettangolare descritta in Figura 5.33 è formata da
+20 avvolgimenti fitti ed è imperniata lungo l'asse 2. Il
+piano della spira forma un angolo di 30° con l’asse y e la
+corrente che scorre negli avvolgimenti è pari a 0.5 A. Qual
+è il valore del modulo della coppia che agisce sulla spira
+in presenza di un campo uniforme B = IL 2 T? In seguito
+a ciò la spira, se vista da sopra, motera in senso orario 0
+antiorario?
+
+®© © ®© OF ©
+10 cm
+
+Figura 5.32 Configurazione per il Problema 5.3.
+
+x
+
+Figura 5.33 Spira rettangolare impemiata per ii
+Problema 5.4.
+
+*5.5 Nel sistema in coordinate cilindriche, un filo rettilineo
+lungo 2 m percorso da una corrente di 5 A in direzione
+delle z positive è situato alle coordinate r = 4 cm,
+$=r/2e-1m<z<Sim
+(@) Se B = î0.2 cos ¢ (T), qual è il valore della forza
+‘magnetica agente sul filo?
+
+(b) Qual è il lavoro necessario per far compiere al filo una
+rotazione completa attorno all’asse z in direzione delle $
+negative, mantenendo r = 4 cm?
+
+(©) A quale angolo ¢ la forza è massima?
+
+5.6 Una bobina rettangolare formata da 20 avvolgimenti con
+lati/=1Scmew= 5 cm è situata nel piano y-z come
+descritto in Figura 5.34.
+
+(a) Se la bobina, che è percorsa da una corrente J = 10 A,
+è immersa in un’induzione magnetica
+
+I AI TRO ERI VETTA EI DINO
+
+B=2x 107(&+§2) (7)
+
+” si calcolila coppia che agisce sulla bobina.
+{b) A quale angolo ¢ ia coppia è zero?
+(©) A quale angolo ¢ la coppia è massima? Se ne calcoli il
+valore.
+
+te
+
+Bobina di 20
+avvolgimenti
+
+x
+LU
+'
+'
+'
+'
+i
+'
+1
+1
+1
+i
+7
+
+Figura 5.34 Spira rettangolare per il Problema 5.6.
+
+Paragrafo 5.2 Legge di Biot-Savart
+
+*5.7. Una spira rettangolare di filo di 8 cm x 12 cm è situata
+nel piano x-y, con il centro nell’origine e i lati lunghi
+paralleli all'asse x. Nella spira scorre una corrente di 25 A
+in senso orario, se vista dall’alto. Si ricavi il campo
+magnetico nel centro della spira.
+
+5.8 Si usi l’approccio presentato nell’Esempio 5.2 per ricavare
+l’espressione del campo magnetico H in un arbitrario
+punto P generato dal conduttore rettilineo descritto dalla
+geometria in Figura 5.35. Sapendo che il conduttore si
+estende daz, = 3 maz, =7medè percorso da una
+corrente / = 5 A, si ricavi Hin P(2,¢, 0).
+
+6
+Pepi. _
+
+»
+r P(r, }, 2)
+
+Figura 5.35 Conduttore rettilineo percorso da corrente per
+il Problema 5.8.
+
+Problemi BS
+
+#59 La spira descritta in Figura 5.36 è formata da segmenti
+radiali e segmenti circolari.centrati nel punto P. Si ricavi-il-
+campo magnetico H in P in funzione di a, b, fel
+
+Figura 5.36 Configurazione per il Problema 5.9.
+
+5.10 Una sottile superficie conduttiva di lunghezza infinita,
+definita dai limiti 0 < x < we -co < y £ 00, è percorsa
+da corrente con densità superficiale di corrente uniforme
+
+= 95 (A/m). Si ricavi l’espressione del campo
+magnetico nel punto P(0,0,2) in coordinate cartesiane.
+
+*5.11 Un filo di lunghezza infinita percorso da una corrente di
+50 A in direzione delle x positive è situato sull'asse x in
+prossimità di una spira circolare formata da 10
+avvolgimenti situata nel piano x-y, come descritto in
+Figura 5.37. Se ii campo magnetico nel centro della spira è
+zero, quali sono la direzione e il modulo della corrente che
+scorre nella spira?
+
+Figura 5.37 Spira circolare prossima a una corrente
+rettilinea (Problema 5.11).
+
+5.12 Due fili paralleli di lunghezza infinita sono percorsi da
+correnti di 6 A in direzioni opposte. Si ricavi l’induzione
+magnetica nel punto P indicato in Figura 5.38.
+
+L, =6A
+H
+
+n= 6A
+
+P
+Osm |
+
+e.
+
+Figura 5.38 Configurazione per il Problema 5.12.
+
+[PAG 126]
+236 Capitolo 5 — Magnetostatica
+
+*§,13° Un cavo elettrico di elevata lunghezza orientato in
+
+direzione est-ovest e percorso da una corrente incognita-/ - - -
+
+si trova a un’altezza di 8 m sulla superficie della Terra. Se
+l’induzione magnetica registrata da un magnetometro
+posto sulla superficie è pari 4 12 xT quando il cavo è
+percorso dalla corrente, mentre è pari a 20 pT quando la
+corrente è zero, qual è il modulo di /?
+
+5.14 Due spire circolari parallele, ciascuna delle quali è
+percorsa da una corrente di 20 A, sono disposte come
+descritto in Figura 5.39. La prima spira è situata nel piano
+x-y ed è centrata nell’origine, mentre il centro della
+
+seconda spira è in z = 2 m. Se le due spire hanno lo stesso
+
+raggio a = 3 m, si ricavi in campo magnetico in:
+
+(a) z=0
+(b) z=im
+@z=2m
+
+x
+Figura 5.39 Spire circolari parallele per il Problema 5.14.
+
+Paragrafo 53 Forze che agiscono tra correnti
+
+*5,15 Il lungo conduttore rettilineo descritto in Figura 5.40 giace
+nel piano della spira rettangolare a una distanza d = 0.1
+m. La spira ha dimensioni a = 0.2 me5=0.5m,ele
+correnti sono J; = 10 A e 4 = 15 A. Si ricavi la forza
+magnetica netta che agisce sulla spira.
+
+5.16 Nella configurazione descritta in Figura 5.41, ciscuno dei
+due conduttori paralleli di elevata lunghezza è percorso da
+una corrente /, è sostenuto ila corde lunghe 8 cm e ha una
+massa per uaita di lunghezza pari a 0.3 g/cm. A causa
+della forza repulsiva agente sui conduttori, l'angolo @
+compreso tra le corde di sostegno è pari a 10°. Si ricavino
+il modulo di / e le direzioni relative delle correnti che
+scorrono nei due conduttori.
+
+q
+
+Figura 5.40 Spira di corrente prossima a un filo conduttore
+(Problema 5.15).
+
+Figura 5.41 Conduttori paralleli sostenuti da corde
+(Problema 5.16).
+
+*5,17 Una superficie conduttiva sottile di lunghezza infinita e
+larghezza w lungo la direzione x giace nel piano x-y ed è
+percorsa da una corrente / rivolta in direzione delle y
+negative. Si ricavi quanto segue:
+
+(@) Il campo magnetico in un punto P a metà strada tra i
+bordi della superficie e a un'altezza sopra di essa (Figura
+542);
+
+(b) La forza per unità di lunghezza agente su un filo di
+lunghezza infinita che passa per il punto P ed è parallelo
+alla superficie, quando la corrente che percorte il filo è
+uguale in modulo ma opposta in direzione rispetto a quella
+che scorre nella superficie.
+
+T
+Î
+——
+
+Figura 5.42 Generatore di corrente lineare sopra una
+superficie di corrente (Problema 5.17).
+
+dieta te i ie Iii rire iii!
+
+diem nmennnstiwineceel agg
+
+2m
+
+'
+T ® 1,108
+i
+i
+'
+‘
+
+pP__2m——-@® 1, = 104
+
+i
+1
+2m è
+1
+i
+
+© h=10A
+]
+i
+
+Figura 5.43 Configurazione di tre fili paralleli per il
+Problema 5.18.
+
+5.18 Tre fili paralleli di elevata lunghezza sono disposti come
+descritto in Figura 5.43. Si ricavi la forza per unità di
+lunghezza agente sul filo percorso da /3.
+
+#5.19 Una spira quadrata disposta come descritto in Figura 5.44
+hai lati lunghi 2 m ed è percorsa da una corrente /; = 5
+A. Se un condattore rettilineo di elevata lunghezza e
+percorso da una corrente 4 = 10 A é posto adiacente ai
+punti medi di due lati della spira, si:ricavi ia forza netta
+agente sulla spira.
+
+z
+
+Figura 5.44 Filo di elevata lunghezza percorso da una
+corrente /) adiacente a una spira quadrata percorsa da una
+corrente J; (Problema 5.19).
+
+Paragrafo 5.4 Legge del magnetismo di Gauss
+e legge di Ampère
+
+5.20 La corrente / fluisce lungo la direzione delle z positive nel
+conduttore interno di un cavo coassiale di elevata
+lunghezza e ritorna attraverso il conduitore estero. Dl
+conduttore intemo ha raggio a e i raggi intemo ed estemo
+del conduttore esterno sono rispettivamente è e c.
+
+Problemi BI
+
+(2) Si calcoli il campo magnetico in ciascuna delle seguenti
+~~ yegioni: 0< rasa <r<b,b<r<cer>d
+
+(b) Si grafichi il modulo di H in funzione dir
+
+sull’intervallo dar = 0 ar = 10 cm, sapendo che I = 10
+
+A,a=2cmb=4cmec=Scm
+
+*5.21 Un conduttore cilindrico di lunghezza elevata, il cui asse
+coincide con l’asse z ha raggio. a ed è percorso da una
+corrente caratterizzata da una densità di corrente
+J = #/p/r, dove Jp è costante e r è la distanza radiale
+dall’asse del cilindro. Si ricavi l’espressione del campo
+magnetico H per
+(a) 0<r<a;
+®)r>a
+
+5.22 Si risolva nuovamente il Problema 5.21 per una densità di
+corrente J = Bye".
+
+#5,23 In una regione conduttiva si ha la presenza di un campo
+magnetico dato in coordinate cilindriche da
+
+n=d41-(1+20?)
+
+si ricavi la densità di corrente J.
+
+Paragrafo 5.5 Potenziale magnetico
+
+5,24 Facendo riferimento alla Figura 5.10:
+(a) Si ricavi l’espressione del potenziale vettore magnetico
+A in un punto P situato a una distanza r dal filo nel piano
+xy;
+(b) Si ricavi B da A. Si dimostri che il risultato è identico
+all'espressione data dalla (5.29), che era stata ricavata
+applicando la legge di Biot-Savart.
+
+¥*5,25 In una data regione di spazio, il potenziale vettore
+magnetico è dato da A = 5 cos my + 2(2 + sin xx)
+(W/m).
+(a) Si ricavi B;
+(b) Utilizzando la (5.66), si calcoli il flusso magnetico che
+attraversa una spira quadrata con i lati lunghi 0.25 m
+quando la spira giace nel piano x-y, è centrata nell’origine
+ei suoi lati sono paralleli agli assi x e y;
+(€) Si ricalcoli ® usando la (5.67).
+
+5.26 Una densità di corrente uniforme data da
+J=2% (A/m°)
+suscita un potenziale vettore magnetico
+Az at 4) (Wb/m)
+
+{a) Si applichi ’equazione vettoriale di Poisson per
+dimostrare questa affermazione;
+
+(b) Si sfrutti l’espressione di A per calcolare H;
+
+(©) Si sfratti l’espressione di J insieme alla legge di
+Ampère per ricavare H. Si confronti il risultato con quanto
+ottenuto al punto (b).
+
+*5,27. Un sottile elemento di corrente esteso da z = La a
+z = L/2 trasporta una corrente / rivolta in direzione +2
+
+[PAG 127]
+238 Capitolo 5 — Magnetostatica
+
+attraverso una sezione circolare di raggio a. 5.32 In Figura 5.46, il piano x — y = 1 separa un mezzo i con
+
+permeabilità 4; da un mezzo 2-con permeabilità-x. Se al - 4
+
+i
+
+j
+
+i ricavi A in un punto P situatoa grande distanza" -“—— ì n Ri
+
+@) Siricavi Arin un punto P situato a grand confine non esiste alcuna corrente superficiale e 4
+E
+
+dall’origine, ipotizzando che R sia tanto maggiore di L da
+poter considerare il punto P approssimativamente alla
+stessa distanza da ogni punto dell'elemento di corrente;
+(b) Si determini la corrispondente espressione di H.
+
+Bi=2+93 (1)
+
+si ricavi Bp e si valuti poi i risultato per sy = Sup. ~
+
+7 E
+
+Paragrafo 5.6 Proprietà magnetiche dei
+materiali
+
+5.28 Nel modello dell’atomo di idrogeno proposto da Bohr nei
+1913, l’elettrone si muove attorno al nucleo a una velocità
+di 2 x 10° m/s in un'orbita circolare di raggio 5 x 107!!
+m. Qual è il modulo del momento magnetico generato dal
+movimento dell’elettrone?
+
+#5.29 Il ferro contiene 8.5 x 10? atomi/m?. In condizioni di
+saturazione, l’allineamento dei momenti magnetici di spin
+degli elettroni del ferro è in grado di dare un contributo
+pari a 1.5 T all’induzione magnetica complessiva B. Se il
+momento magnetico di spin di un solo elettrone è pari a Ò
+9.27 x 10724 (A/m?), quanti elettroni per atomo = ves .
+contribuiscono al campo in saturazione? Figura 5.46 Mezzi magnetici separati dal pianox — y = 1
+
+(Problema 5.32).
+
+Paragrafo 5.7 Condizioni al contorno
+
+Suggerimento: Si inizi ricavando l'equazione relativa al
+magnetiche
+
+versore normale al piano dato.
+
+5.30 Il piano x-y separa due mezzi magnetici con permeabilità
+magnetiche 4, e 42, come descritto in Figura 5.45. Se non
+è presente alcuna corrente superficiale sull’interfaccia e il
+campo magnetico nel mezzo | è
+
+Hi = 8A. +94, + 2H
+
+5.33 Il confine definito dal piano z = 0 separa l’aria da un
+blocco di ferro, Se Bj = %4 — 6 +2 nell’aria perz > 0,
+si ricavi By nel ferro per z < 0, sapendo che il ferro ha
+B= 5000p.
+
+5.34 Si dimostri che se sulle interfacce parallele descritte in
+Figura 5.47 non esistono densità di corrente, la relazione
+tra 04 e 0) non dipende da p.
+
+si ricavino:
+
+(a) Ha;
+
+{b) 0 €02;
+
+(©) Si valutino Ha, 01 e 8, per Hi, = 3 (A/m), Hy=
+Hi: = 4 (Ahn), Li = po e pa = Apo.
+
+z
+a
+i
+i
+i
+
+Figura 5.47 Tre mezzi magnetici con interfacce parallele
+(Problema 5.34).
+
+Figura 5.45 Mezzi magnetici adiacenti (Problema 5.30).
+
+Paragrafi 5.8 e 5.9 Induttanza ed energia
+
+*5.31 Una superficie di corrente con densità superficiale di magnetica
+
+corrente J, = £4 (A/m) giace nel piano y = 0
+all’interfaccia tra due mezzi magnetici, con Hy = 28
+(A/m) nel mezzo | pery > 0. Si determini Hy nel mezzo
+2 pery <0.
+
+*5.35 Si ricavi un’espressione dell’autoinduttanza per unità di
+lunghezza delta linea di trasmissione bifilare descritta in
+Figura 5.27(a) in funzione di a, d e 4, dove a è jl raggio
+
+dei fili, d è la distanza tra gli assi dei fili e » è la
+permeabilità del mezzo in cui sonoimmersi. . .. _
+
+5.36 Un solenoide lungo 20 cm e con un raggio di Sem è
+formato da 400 avvolgimenti ed è percorso da una
+corrente di 12 A. Se z = 0 rappresenta il punto al centro
+del solenoide, si disegni il grafico di |H(z)| in funzione di
+z lungo l’asse del sotenoide nell’intervallo -20 em < z <
+20 cm a passi di 1 cm.
+
+*5,37 In funzione della corrente J, quanta energia magnetica è
+immagazzinata nel mezzo isolante di un tratto lungo 2 m
+di linea di trasmissione coassiale in aria, sapendo che il
+raggio del conduttore intemo è di 5 cm e il raggio intemo
+del conduttore esterno è di 10 cm?
+
+5.38 La spira rettangolare descritta in Figura 5.48 è coplanare a
+un filo rettilineo di lunghezza elevata percorso da una
+corrente / = 20 A. Si ricavi il flusso magnetico attraverso
+la spira.
+
+Problemi
+
+Figura 5.48 Configurazione della spira e del filo per il
+Problema 5.38.
+
+239
+
+[PAG 128]
+x
+
+x
+
+Equazioni di Maxwell
+per campi tempo-varianti
+
+Campi Dinamici
+
+Le cariche elettriche inducono campi elettrici, mentre le correnti elettriche inducono
+campi magnetici: questo è quanto si è appreso nei due capitoli precedenti. Se le distri-
+buzioni di carica e di corrente rimangono costanti nel tempo, lo sono anche i campi
+da esse indotti. Tuttavia, la conseguenza di cariche o correnti che variano nel tempo #
+non è soltanto la variazione corrispondente dei campi. Infatti i campi elettrici e ma-
+gnetici diventano interconnessi e il loro accoppiamento genera onde elettromagneti-
+che che sono in grado di propagarsi attraverso lo spazio libero e nei mezzi materiali.
+Le onde elettromagnetiche, che comprendono onde luminose, raggi X, radiazione in-
+frarossa, raggi gamma e onde radio, come descritto in Figura 1.15, rappresentano una
+parte importante del mondo fisico e trovano applicazione in molti campi della scien-
+za e della tecnologia.
+
+Per studiare fenomeni elettromagnetici tempo-varianti bisogna utilizzare le equa-
+zioni di Maxwell nel loro complesso. Queste equazioni, che sono state introdotte nel
+Capitolo 4, sono riassunte in forma differenziale e integrale in Tabella 6.1. Mentre
+nel caso statico (0/01 = 0) è possibile utilizzare la prima coppia delle equazioni di
+Maxwell per studiare i fenomeni elettrici, come descritto nel Capitolo 4, e ja seconda
+coppia di equazioni per studiare i fenomeni magnetici, come descritto nel Capitolo 5,
+nel caso dinamico è necessario considerare l'accoppiamento che esiste tra i campi
+elettrici e magnetici, come espresso dalla seconda e dalla quarta equazione in Tabella
+6.1. La prima equazione rappresenta la legge di Gauss ed è valida sia per campi stati-
+ci che dinamici, come pure la terza equazione, V - B = 0, la quale sostanzialmente
+stabilisce che non possono esistere cariche magnetiche. La seconda e la quarta equa-
+zione invece presentano significati differenti nel caso statico o dinamico: nel caso di-
+namico, un campo magnetico tempo-variante dà origine a un campo elettrico (legge
+di Faraday) e allo stesso modo un campo elettrico tempo-variante dà origine a un
+campo magmetico (legge di Ampère).
+
+Tabella 6.1 Equazioni di Maxwell.
+
+Riferimento Forma Differenziale Forma Integrale
+Legge di Gauss v-D=p ¢d-as=a 61)
+iS :
+
+Legge di Faraday vxEn fed [Fas 62
+at le ls Ot
+
+Assenza di cariche
+
+magnetiche (Legge del V-B=0 B-ds=0 (6.3)
+
+magnetismo di Gauss) s
+
+" x, Col ap
+
+Legge di Ampère VaH=s4 È H-d=f 44.08 64)
+
+E) A Ita
+
+* Per una superficie S stazionaria
+
+[PAG 129]
+242
+
+Capitolo 6 ~ Equazioni di Maxwell per campi tempo-varianti
+
+Alcuni dei risultati ottenuti in questo e nei prossimi capitoli sembrano contraddire
+quanto esposto nei Capitoli 4 e 5, ma ciò accade perché i concetti introdotti preceden-
+temente si riferiscono a situazioni di cariche statiche e correnti costanti. Infatti, quan-
+do 6/6t è nulla i risultati e le espressioni dei campi in condizioni dinamiche si ridu-
+cono a quelle viste nei casi statici.
