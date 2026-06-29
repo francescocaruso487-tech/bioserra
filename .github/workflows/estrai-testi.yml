@@ -33,6 +33,7 @@ jobs:
 
       - name: Verifica ambiente
         env:
+          BIOSERRA_GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
         run: |
           echo "GITHUB_TOKEN presente: $([ -n "$GITHUB_TOKEN" ] && echo SI || echo NO)"
@@ -42,5 +43,6 @@ jobs:
 
       - name: Estrai testi da PDF (OCR completo)
         env:
+          BIOSERRA_GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
         run: python3 .github/scripts/estrai_testi.py
