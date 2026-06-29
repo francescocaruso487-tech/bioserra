@@ -224,6 +224,14 @@ function getEffectiveFlorStart(p) {
   return { date: florDate, source: 'automatica' };
 }
 
+/* Giorni di fioritura femm corretti per ore di sole reali.
+   florStart resta data fissa (fotoperiodo); il poco sole allunga la durata. */
+function femmFlorDays(p, days) {
+  const base = (typeof days === 'number') ? days : p.harvestMin;
+  const m = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
+  return Math.round(base * m);
+}
+
 function getAutoHarvestDate(p) {
   // Autofiorenti: data germinazione + gg produttore (nessun moltiplicatore)
   if (!p.germDate) return null;
@@ -339,8 +347,8 @@ function renderTimelineInBox(id) {
       harvestMaxD = new Date(ovr.harvestDate);
       harvestManual = true;
     } else {
-      harvestMinD = addDays(florStartDate, p.harvestMin);
-      harvestMaxD = addDays(florStartDate, p.harvestMax);
+      harvestMinD = addDays(florStartDate, femmFlorDays(p, p.harvestMin));
+      harvestMaxD = addDays(florStartDate, femmFlorDays(p, p.harvestMax));
     }
 
     harvestDate = harvestMinD;
@@ -470,7 +478,7 @@ function openPhaseModal(id) {
   } else if (p.type === 'femm') {
     // Calcola da fioritura attuale
     const florInfo = getEffectiveFlorStart(p);
-    harvestStr = addDays(florInfo.date, p.harvestMin).toISOString().slice(0,10);
+    harvestStr = addDays(florInfo.date, femmFlorDays(p, p.harvestMin)).toISOString().slice(0,10);
   }
   if (harvestInput) harvestInput.value = harvestStr;
 
@@ -563,7 +571,7 @@ function checkHarvestAlerts() {
       harvestDate = addDays(germ, p.harvestMin);
     } else {
       const florInfo = getEffectiveFlorStart(p);
-      harvestDate = addDays(florInfo.date, p.harvestMin);
+      harvestDate = addDays(florInfo.date, femmFlorDays(p, p.harvestMin));
     }
 
     if (!harvestDate) continue;
@@ -685,7 +693,7 @@ function renderActivePlants() {
       harvestDate = addDays(germ, Math.round(p.harvestMin * sunMult));
     } else if (p.type === 'femm') {
       const fi = getEffectiveFlorStart(p);
-      harvestDate = addDays(fi.date, p.harvestMin);
+      harvestDate = addDays(fi.date, femmFlorDays(p, p.harvestMin));
     }
 
     // ── Giorni passati e totali ──
@@ -1200,7 +1208,7 @@ function _calcHarvestDate(plant) {
     return addDays(new Date(plant.germDate), plant.harvestMin).toISOString().slice(0,10);
   if (plant.type === 'femm') {
     const fi = getEffectiveFlorStart(plant);
-    return addDays(fi.date, plant.harvestMin).toISOString().slice(0,10);
+    return addDays(fi.date, femmFlorDays(plant, plant.harvestMin)).toISOString().slice(0,10);
   }
   return new Date().toISOString().slice(0,10);
 }
@@ -1735,18 +1743,18 @@ async function loadManualiJSON() {
   } catch(e) { renderJsonError(el, meta, e); }
 }
 
-/* Aggiunge una tecnica trovata dall'AI PDF a elTecnicheExtra */
+/* Aggiunge una tecnica trovata dall'AI PDF — salvata in localStorage */
 function manAggiungeTecnica(idx) {
   var techs = window._pdf_tecniche || [];
   var t = techs[idx];
-  if (!t) return;
-  var newTech = { id: 'ai_' + Date.now(), nome: t.nome || 'Tecnica AI', desc: t.desc || t.descrizione || '', istruzioni: t.istruzioni || '', badge: 'AI PDF', lunaConsigl: [] };
-  var exists = elTecnicheExtra.find(function(e){ return e.nome === newTech.nome; });
-  if (exists) { alert('Questa tecnica è già presente'); return; }
-  elTecnicheExtra.push(newTech);
-  renderElTecnicheExtra();
-  elUpdateStats();
-  alert('✅ Tecnica aggiunta! Vai alla tab Tecniche per attivarla.');
+  if (!t) { alert('Tecnica non trovata'); return; }
+  var newTech = { id: 'ai_' + Date.now(), nome: t.nome || 'Tecnica AI', desc: t.desc || t.descrizione || '', istruzioni: t.istruzioni || '', badge: 'AI PDF' };
+  var salvate = [];
+  try { salvate = JSON.parse(localStorage.getItem('bioserra_tecniche_extra') || '[]'); } catch(e) { salvate = []; }
+  if (salvate.find(function(e){ return e.nome === newTech.nome; })) { alert('Questa tecnica \u00e8 gi\u00e0 presente'); return; }
+  salvate.push(newTech);
+  localStorage.setItem('bioserra_tecniche_extra', JSON.stringify(salvate));
+  alert('\u2705 Tecnica salvata! La trovi nelle tecniche elettrocultura.');
 }
 
 /* ── Auto-load al cambio sezione ── */
@@ -1987,3 +1995,4 @@ async function archivioAutoSync() {
     }
   } catch(e) { /* silenzioso */ }
 }
+
