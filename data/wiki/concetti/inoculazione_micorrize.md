@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-06-28
+aggiornato: 2026-06-29
 pdf_count: 0
 ---
 
@@ -12,22 +12,34 @@ pdf_count: 0
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute e la produttività delle colture in un sistema **Living Soil**. Questo rapporto si basa su uno scambio reciproco: il fungo, attraverso le sue ife, estende la rete radicale della pianta, aumentando l’assorbimento di acqua e nutrienti (in particolare fosforo e azoto) anche in condizioni di stress idrico o carenza nutrizionale. In cambio, la pianta fornisce al fungo carboidrati derivati dalla fotosintesi, essenziali per la sua crescita e riproduzione. Questo meccanismo è particolarmente vantaggioso in serra outdoor, dove la densità colturale e la gestione intensiva del suolo possono impoverire la biodiversità microbica.
+Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** e la resilienza delle colture outdoor. Questo rapporto si basa su uno scambio reciproco: i funghi, attraverso le loro ife, estendono la rete radicale della pianta, aumentando la capacità di assorbimento di acqua e nutrienti (in particolare fosforo e azoto) fino al 300%. In cambio, la pianta fornisce ai funghi carboidrati prodotti tramite fotosintesi, essenziali per la loro crescita e propagazione. Questo meccanismo è particolarmente vantaggioso in condizioni di stress idrico o carenza nutrizionale, tipiche delle serre outdoor italiane come quella di Caserta, dove le temperature estive possono superare i 35°C e i terreni tendono a seccarsi rapidamente.
 
-Il successo dell’inoculazione dipende dalla compatibilità tra specie fungine e pianta ospite, nonché dalle condizioni del suolo (pH, struttura, umidità e presenza di materia organica). In ambienti come Caserta, caratterizzati da inverni miti e estati calde, le micorrize possono mitigare gli effetti dello stress termico e idrico, migliorando la resilienza delle colture. Inoltre, la loro presenza stimola la produzione di **glomalina**, una glicoproteina che aggrega le particelle del suolo, migliorando la struttura e la capacità di ritenzione idrica.
+La simbiosi micorrizica non si limita a migliorare l’efficienza nutrizionale: i funghi producono anche **glomaline**, una glicoproteina che stabilizza la struttura del suolo, aumentando la sua capacità di trattenere umidità e prevenendo l’erosione. Inoltre, le micorrize attivano meccanismi di difesa delle piante contro patogeni radicali, grazie alla produzione di sostanze antimicrobiche e alla competizione per lo spazio con organismi dannosi. Studi dimostrano che piante inoculate con micorrize sviluppano radici più robuste e una maggiore tolleranza a condizioni avverse, come salinità o siccità, fattori critici per la coltivazione outdoor in Italia meridionale.
+
+---
 
 ## Come si applica in serra
-1. **Preparazione dell’inoculo**: Scegliere un inoculo di micorrize **arbuscolari** (AMF) specifico per il tipo di pianta (es. *Rhizophagus irregularis* per orticole, *Glomus spp.* per aromatiche). Assicurarsi che il prodotto sia vivo e non trattato con fungicidi.
-2. **Momento dell’applicazione**: Applicare l’inoculo **al momento del trapianto**, direttamente sulle radici o nel substrato di impianto. Per piante in vaso, mescolare 5–10 g di inoculo per pianta con il terriccio o il substrato di coltivazione.
-3. **Tecnica di applicazione**:
-   - Per piante a radice nuda: immergere le radici nell’inoculo umido prima del trapianto.
-   - Per piante in vaso: distribuire l’inoculo a 2–3 cm di profondità, sotto il colletto, e coprire con uno strato sottile di substrato.
-4. **Condizioni post-applicazione**:
-   - Mantenere il suolo umido (ma non saturo) per 7–10 giorni dopo l’inoculazione, per favorire la colonizzazione radicale.
-   - Evitare l’uso di **fungicidi** (anche naturali come rame o zolfo) nei 30 giorni successivi, per non compromettere la simbiosi.
-   - Integrare con **materia organica** (compost, humus di lombrico) per fornire substrato ai funghi.
+Per una serra **Living Soil outdoor** a Caserta (41°N), l’inoculazione delle micorrize deve essere eseguita con attenzione alle condizioni climatiche e al ciclo della pianta. Segui questi passaggi:
 
+1. **Preparazione del substrato**:
+   - Assicurati che il terreno sia umido ma non zuppo (evita ristagni d’acqua, che possono soffocare le radici e compromettere la simbiosi [web_zamn_301-come-irrigare-le-piante-di-cannabis]).
+   - Lavora il suolo a una profondità di 10-15 cm per favorire la dispersione delle ife.
+
+2. **Scelta dell’inoculo**:
+   - Utilizza un inoculo a base di **funghi micorrizici arbuscolari (AMF)** specifici per piante erbacee, come *Rhizophagus irregularis* o *Glomus spp.*.
+   - Preferisci formulazioni in polvere o granuli, più facili da applicare rispetto a liquidi.
+
+3. **Applicazione al trapianto**:
+   - Al momento del trapianto, posiziona **5-10 g di inoculo per pianta** direttamente a contatto con le radici, coprendo con uno strato sottile di substrato per proteggerlo dalla luce diretta e dall’essiccamento.
+   - Se coltivi in vaso, mescola l’inoculo al terriccio prima di riempire il contenitore.
+
+4. **Post-inoculazione**:
+   - Evita l’uso di **fungicidi chimici** nei 30 giorni successivi all’applicazione, poiché possono uccidere i funghi benefici [web_zamn_335-conservare-cannabis].
+   - Mantieni il suolo umido (ma non bagnato) per 7-10 giorni dopo l’inoculazione, per favorire la colonizzazione radicale.
+
+5. **Monitoraggio**:
+   - Osserva lo sviluppo delle piante: un buon innesto micorrizico si traduce in radici più dense e una crescita più vigorosa entro 3-4 settimane.
+
+---
 ## Sinergie con altri elementi
-- **Lakhovsky (Onde Multifrequenza)**: L’elettrocultura può stimolare la crescita delle ife micorriziche attraverso campi elettromagnetici a bassa frequenza, potenziando la simbiosi. Applicare bobine di Lakhovsky a 5–10 cm dalle radici durante la fase vegetativa.
-- **Fe-Cu (Ferro e Rame)**: Questi micronutrienti, in dosi bilanciate, favoriscono la produzione di enzimi fungini e la sintesi di clorofilla nelle piante. Utilizzare soluzioni a 0.5–1 ppm di Fe e Cu in fertirrigazione, evitando eccessi che possano inibire i funghi.
-- **Acqua magnetizzata**: L’irrigazione con acqua sottoposta a campi magnetici (1000–3
+Le micorrize interagiscono positivamente con diverse tecniche agronomiche
