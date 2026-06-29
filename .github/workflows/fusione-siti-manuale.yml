@@ -18,5 +18,6 @@ jobs:
 
       - name: Fusione testi per categoria
         env:
+          BIOSERRA_GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
         run: python .github/scripts/fusione_siti.py
