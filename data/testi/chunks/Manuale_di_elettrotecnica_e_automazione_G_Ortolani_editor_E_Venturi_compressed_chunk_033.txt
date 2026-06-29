@@ -1,0 +1,1724 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 33/116 ===
+Chars: 43,027 | Offset: 1,413,366
+
+
+
+[PAG 724]
+VIII-42
+MACCHINE ELETTRICHE
+Pt = 3 R2 I2
+2 / s per cui, con la VIII.4.13 e rammentando che 0 = 2 f / p si ottiene:
+(VIII.4.26)
+Entro i limiti di funzionamento normale, trascurando la caduta di tensione primaria, si 
+può porre E2(1) = U/(
+ K) ottenendo:
+(VIII.4.27)
+avendo posto:
+(VIII.4.28)
+La funzione ha l’andamento tracciato in Fig.VIII.4.5.
+Fig. VIII.4.5  Caratteristica meccanica del motore asincrono.
+Il valore massimo si ottiene annullando la derivata rispetto allo scorrimento e risulta:
+–  lo scorrimento relativo alla coppia massima:
+(VIII.4.29)
+–  la coppia massima:
+(VIII.4.30)
+Dall’ultima formula risulta che il valore della coppia massima non dipende dalla resi-
+stenza. In particolare, dalla VIII.4.27 si deduce che:
+per s = 0, in funzionamento a vuoto ideale, è C0 = 0;
+per s = 1, in funzionamento in cortocircuito, a rotore bloccato, si ottiene la coppia di 
+avviamento:
+(VIII.4.31)
+In realtà la coppia di avviamento può risultare un po' inferiore nei motori a gabbia 
+semplice per effetto della caduta di tensione statorica non più trascurabile.
+Esempio 1. Funzionamento di un motore asincrono.
+Un motore asincrono trifase a 6 poli assorbe, in funzionamento su una rete a 380 V, 50 
+Hz, una potenza di 24 kW a cos = 0,88 e presenta uno scorrimento del 4,4%.
+Il motore possiede inoltre una resistenza statorica per fase stellata R1 = 0,3  e pre-
+senta perdite nel ferro Pf = 1 kW e perdite meccaniche Pm = 800 W. Si vuole determinare 
+C0
+3p
+2f
+-------- E2 1
+
+2
+R2
+R2
+2
+s
+sX2 1
+
+2
++
+
+--------------------------------------------
+=
+3
+C0
+KC
+R2
+R2
+2
+s
+sX2 1
+
+2
++
+
+--------------------------------------------
+=
+KC
+3p
+2f
+--------
+U
+3K
+
+
+
+2
+=
+C
+Cmax
+Cavv
+0
+1
+n0
+0
+n
+s
+s*
+R2
+X2 1
+
+
+=
+CM
+KC
+2X2 1
+
+
+
+
+=
+Cavv
+KCR2
+R2
+2
+X2 1
+
+2
++
+
+
+
+=
+
+[PAG 725]
+MACCHINE ELETTRICHE
+VIII-43
+la potenza resa, la coppia utile e il rendimento.
+Procedimento.
+–  La corrente è: I = Pa/(
+ U cos) = 24.000/(
+  380  0,88) = 41,3 A.
+–  Le perdite nel rame di statore sono: Pcu1 = 3 R1 I2 = 3  0,3  41,32 = 1,54 kW.
+–  La potenza trasmessa vale: Pt = Pa  Pf  Pcu1 = 24  2,54 = 21,46 kW.
+–  Le perdite nel rame di rotore sono: Pcu2 = s Pt = 0,044  21,46 = 0,944 kW.
+–  La potenza resa vale: Pr = Pt  Pcu2  Pm = 21,46  1,744 = 19,72 kW.
+–  Il rendimento risulta:  = Pr/Pa = 19,72/24 = 0,822
+–  La velocità del motore è: n = n0(1  s) = 1000(1  0,044) = 956 g/1’ pari a 
+ = 2  956/60 = 100 rad/s 
+–  per cui la coppia utile vale: C = Pr/ = 19720/100 = 197 Nm.
+4.5  Diagramma circolare
+4.5.1  Schema equivalente statorico
+Come per il trasformatore, partendo dallo schema elettrico della Fig. VIII.4.3, è possi-
+bile trasferire l’impedenza rotorica sul circuito di statore moltiplicandola per K2. 
+Fig. VIII.4.6  Schema semplificato statorico del motore sincrono.
+Si ottiene uno schema semplificato (Fig. VIII.4.6) avente impedenza Zeq1 di componenti:
+(VIII.4.32)
+Posto Uf = U/
+, la corrente di reazione vale:
+(VIII.4.33)
+sfasata sulla tensione di:
+(VIII.4.34)
+La corrente I’ dipende dallo scorrimento; ha valore massimo per Req1 = 0 ovvero per 
+uno scorrimento teorico:
+(VIII.4.35)
+e risulta:
+(VIII.4.36)
+Tenendo conto della VIII.4.33 si ha:
+(VIII.4.37)
+Questa relazione dimostra che la corrente di reazione, al variare dello scorrimento, 
+descrive un semicerchio di diametro I’M denominato diagramma circolare (Fig. VIII.4.7).
+3
+3
+I’
+X1d
+X2(1)K2
+R1
+(R2/s)K2
+I1
+Uf
+Y0
+Req1
+R1
+K2 R2
+s
+
+
+
++
+=
+e
+Xeq1
+X1d
+K2X2 1
+
++
+=
+3
+I '
+Uf
+Zeq1
+
+=
+
+arctg Xeq1
+Req1
+
+
+
+=
+sX
+-K2R2
+R1
+
+=
+IM
+'
+Uf
+Xeq1
+
+=
+I '
+IM
+'sen
+=
+
+[PAG 726]
+VIII-44
+MACCHINE ELETTRICHE
+Fig. VIII.4.7  Diagramma circolare del motore asincrono.
+I punti di rilievo sono:
+punto A, s = 0, funzionamento a vuoto, I’ = 0;
+punto K, s = 1, funzionamento in cortocircuito;
+punto C, s = , funzionamento ideale;
+punto B, s =  K2 R2/R1, funzionamento a corrente massima.
+In funzionamento a pieno carico, orientativamente indicato dal punto P, la corrente 
+statorica lavora in un tratto prossimo alla tangente al cerchio, attorno al valore massimo 
+del fattore di potenza.
+4.5.2  Analisi del diagramma circolare
+Il diagramma circolare offre una visione sintetica del comportamento del motore asin-
+crono per le varie condizioni di carico, che esaminiamo in dettaglio con riferimento alla 
+Fig. VIII.4.8.
+Il punto di funzionamento P ha ordinata: PP’ = I1 cos. Modificando la scala di lettura 
+delle correnti mediante il fattore 
+ U, la stessa ordinata può indicare la potenza assorbita:
+PP’ = Pa = 
+ U I1 cos. Nella stessa scala si legge,
+–  a vuoto: AA’ = 
+ U I0 cos0 = P0  Pm + Pf;
+–  in cortocircuito: KK’ = 
+ U Ik cosk = Pcuk + P0; e KL = Pcuk.
+Fig. VIII.4.8  Il diagramma circolare come grafico di lettura delle grandezze elettriche.
+Uf
+0
+I0
+
+0
+I1
+P
+I’
+A
+I’k
+K
+I’()
+C
+I’M
+
+B
+AK
+Ik
+'
+Uf
+R1
+K2R2
++
+
+
+2
+Xeq1
+2
++
+
+=
+=
+AC
+I 
+
+
+'
+Uf
+R1
+2
+Xeq1
+2
++
+
+=
+=
+3
+3
+3
+3
+Uf
+0
+
+0
+I1
+P
+I’
+A’
+Pr
+K
+Pcu
+C
+L
+
+B
+A
+P’
+E
+F
+I0
+k
+D
+Pcu
+K’
+base delle potenze rese
+base delle coppie
+base delle potenze assorbite
+Pm+Pf
+
+[PAG 727]
+MACCHINE ELETTRICHE
+VIII-45
+Il segmento PP’, rappresentante la potenza assorbita, è suddiviso dalle rette AK e AB in:
+PP’ = PD + DE + EP’. Ma EP’ = AA’ = Pm + Pf; DE = KL(AE/AL) = Pcuk(I’/I’k)2 = Pcu
+e quindi il segmento PD = PP’  EP’  DE = Pa  Pm  Pf  Pcu = Pr rappresenta la 
+potenza resa. Il segmento DE = Pcu è suddiviso dalla retta AC in DF = Pcu2 e FE = Pcu1.
+Il segmento PF = PD + DF = Pr + Pcu2 rappresenta, con sufficiente approssimazione, 
+la potenza trasmessa Pt = C0 0. Modificando la scala di lettura delle potenze e dividen-
+dola per 0 si ottiene la scala delle coppie così che il segmento PF può rappresentare la 
+coppia C0.
+Fig. VIII.4.9  Diagramma circolare e determinazione dello scorrimento.
+Lo scorrimento s = Pcu2/Pt = DF/PF. Per una lettura migliore dello scorrimento si può 
+tracciare una parallela ad AF intersecandola con la verticale da A e col prolungamento di 
+AK nei punti M e N (Fig. VIII.4.9). Dalla similitudine dei triangoli ADF con AMN e APF 
+con AMH lo scorrimento si può leggere anche dal rapporto s = MH/MN. In particolare, 
+dividendo MN in cento parti, si legge direttamente lo scorrimento in valore percentuale.
+4.5.3  Generatore asincrono
+Forzando l’albero mediante l’azione di un motore esterno, in modo che superi la velo-
+cità di sincronismo, si inverte il senso dello scorrimento e, con esso, la potenza meccanica 
+che risulta entrante. La macchina si predispone a funzionare come generatore asincrono, 
+trasferendo in rete una potenza elettrica corrispondente.
+In pratica il generatore asincrono ha poco interesse e il suo impiego riguarda casi del 
+tutto particolari. Infatti non è una macchina autonoma, ma può funzionare soltanto se col-
+legata ad una rete sotto tensione, che possa fornirle la potenza magnetizzante necessaria 
+per la creazione del campo rotante.
+4.6  Avviamento del motore asincrono
+L’avviamento del motore asincrono pone due ordini di problemi. Il primo problema è 
+di carattere elettrico. Allo spunto, per s = 1, l’impedenza equivalente diviene:
+(VIII.4.38)
+di componenti:
+(VIII.4.39)
+Uf
+M
+H
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100%
+N
+P
+0
+E
+A
+I0
+I1
+D F
+I’
+Cmax
+K
+Cavv
+C
+L
+B
+K’
+
+Zeqk
+Reqk
+2
+Xeqk
+2
++
+=
+Reqk
+R1
+K2R2,
++
+=
+Xeqk
+X1d
+K2X2 1
+
++
+=
+
+[PAG 728]
+VIII-46
+MACCHINE ELETTRICHE
+Trascurando Y0, la corrente assorbita all’avviamento, che è la corrente di cortocir-
+cuito, risulta:
+(VIII.4.40)
+ed è 5  6 volte maggiore della corrente nominale.
+Il secondo problema sorge dal fatto che la coppia di avviamento è sensibilmente 
+minore di quella di normale funzionamento.
+Distinguiamo allora l’avviamento senza o con carico applicato.
+4.6.1  Avviamento senza carico applicato
+In questo caso la sola coppia antagonista è dovuta agli attriti e, da un punto di vista 
+meccanico, l’avviamento può prodursi senza difficoltà. Per ridurre la corrente di spunto si 
+può procedere sostanzialmente in due modi: con reostato statorico o con commutazione 
+stella-triangolo.
+Metodo del reostato statorico. Si connette un reostato trifase, avente le tre resistenze 
+indipendenti Rr, in serie all’avvolgimento di statore e, ad avviamento avvenuto, si com-
+muta il motore direttamente sulla rete (Fig. VIII.4.10a). Più semplicemente si può far uso 
+di tre resistenze Rr fisse.
+Fig. VIII.4.10  Avviamento del motore asincrono: a) con reostato statorico; b) stella-
+triangolo.
+La corrente di avviamento risulta:
+(VIII.4.41)
+Avviamento stella-triangolo. Si realizza il motore in modo che, a regime, sia previsto 
+per funzionare con collegamento a triangolo ma che, all’avviamento, le fasi possano 
+essere connesse a stella (Fig. VIII.4.10b).
+Indicata con Zf l’impedenza all’avviamento di ciascuna fase, risulta,
+–  per avviamento a triangolo: Ik = 
+ U/Zf;
+–  per avviamento a stella: Iavv = U/(
+ Zf).
+Dal rapporto fra le due formule risulta che il motore avviato a stella assorbe una corrente:
+(VIII.4.42)
+Esempio 2. Avviamento di un motore asincrono.
+Un motore asincrono trifase della potenza di 5 kW e tensione 380 V, 50 Hz, sottoposto 
+alla prova in cortocircuito alla corrente nominale di 10 A, ha fornito i seguenti dati: 
+uk = 21%, pk = 8%. Si vogliono determinare: i parametri equivalenti, la corrente di corto-
+circuito ed il valore del reostato statorico per un avviamento con una corrente di 14 A.
+Ik
+U
+3Zeqk
+
+
+
+=
+a)
+M
+3
+b)
+M
+3
+Iavv
+Uf
+Reqk
+Rr
++
+
+2
+Xeqk
+2
++
+
+=
+3
+3
+Iavv
+Ik
+3
+
+=
+
+[PAG 729]
+MACCHINE ELETTRICHE
+VIII-47
+Procedimento.
+–  Uk = 0, 21  380 = 79,8 V; Pk = 0,08  5000 = 400 W.
+–  I parametri equivalenti risultano:
+–  La corrente di cortocircuito è: Ik = U/(
+ Zeqk) = 380/(
+  4,61) = 47,7 A.
+–  L’impedenza di avviamento per 14 A vale: Zavv = 380/(
+  14) = 15,7 e quindi è:
+per cui la resistenza di ogni fase del reostato è: Rr = Ravv  Reqk = 15,1  1,33   15 .
+4.6.2  Avviamento con carico applicato
+È possibile elevare la coppia di avviamento in due modi: mediante inserimento di un 
+reostato rotorico oppure dimensionando in modo particolare la gabbia rotorica.
+In entrambi i casi l’aumento dell’impedenza di cortocircuito ha come effetto anche 
+una diminuzione della corrente di spunto.
+  
+Fig. VIII.4.11  Motore asincrono con reostato rotorico: a) schema di collegamento; b) 
+caratteristiche meccaniche.
+Avviamento con reostato rotorico. In questo caso è necessario progettare il motore 
+con rotore avvolto le cui fasi, aperte, terminano su tre anelli con tre spazzole di connes-
+sione. La chiusura del circuito si attua su un reostato esterno Rr (Fig. VIII.4.11a).
+Dalle formule VIII.4.29 e VIII.4.30 si deduce che un aumento della resistenza rotorica 
+produce un aumento dello scorrimento s* senza alterare la coppia massima.
+Procedendo in tal modo si ottiene una famiglia di caratteristiche, aventi parametro R2, 
+che produce un aumento della coppia di avviamento. In particolare, per R2 = X2(1) il 
+motore esercita all’avviamento la coppia massima (Fig. VIII.4.11b).
+L’operazione di avviamento si compie col reostato tutto inserito che, durante la fase di 
+accelerazione, viene gradualmente escluso.
+Ad evitare un’inutile usura delle spazzole a regime, un dispositivo le solleva produ-
+cendo contemporaneamente la chiusura del circuito rotorico a monte degli anelli.
+Motore a doppia gabbia. L’alterazione della caratteristica meccanica, con effetti simili 
+ai precedenti, si ottiene anche sdoppiando il circuito rotorico su due gabbie coassiali, una 
+esterna a maggiore resistenza, l’altra più interna quindi maggiormente reattiva. (Fig. 
+VIII.4.12). Con un adatto dimensionamento, la caratteristica meccanica complessiva, risul-
+tante delle due, presenta una coppia di spunto sufficientemente elevata (Fig. VIII.4.13). Un 
+risultato simile si può ottenere realizzando una singola gabbia a sbarre profonde.
+Zeqk
+Uk
+3In
+
+
+
+79,8
+3
+10
+
+
+
+
+4,61
+=
+=
+=
+Reqk
+Pk
+3In
+2
+
+
+
+400
+3
+102
+
+
+
+
+1,33
+=
+=
+=
+Xeqk
+Zeqk
+2
+Reqk
+2
+–
+4,612
+1,332
+–
+4,41
+=
+=
+=
+3
+3
+3
+Ravv
+Zavv
+2
+Xeqk
+2
+–
+15,72
+4,412
+–
+15,1
+=
+=
+=
+a)
+C
+CM
+C
+0
+n0
+n
+b)
+
+[PAG 730]
+VIII-48
+MACCHINE ELETTRICHE
+    
+Fig. VIII.4.12  Sezione schematica delle cave di rotore: a) doppia gabbia; b) sbarre pro-
+fonde.
+Fig. VIII.4.13  Caratteristiche meccaniche di un motore a doppia gabbia: C1 esterna; C2
+interna; Ct totale.
+4.7  Regolazione della velocità
+La velocità di un motore asincrono è:
+(VIII.4.43)
+Per variare la velocità si può intervenire in tre modi diversi, modificando i fattori: s, p, f.
+4.7.1  Metodo del reostato rotorico
+Si sfrutta la proprietà del reostato rotorico, trattato nel paragrafo precedente, di modi-
+ficare la caratteristica meccanica.
+Aumentando la resistenza rotorica si ottiene una diminuzione della velocità (Fig. 
+VIII.4.14).
+ 
+Fig. VIII.4.14  Regolazione della velocità mediante reostato rotorico.
+Il metodo è sempre meno praticato perché oneroso e non economico.
+a)
+b)
+C
+Ct
+C2
+C1
+0
+s
+1
+n
+n0 1
+s
+–
+
+
+=
+con
+n0
+60f
+p
+
+=
+C
+C
+0
+n0
+n1
+n2
+n3
+n4
+n
+
+[PAG 731]
+MACCHINE ELETTRICHE
+VIII-49
+4.7.2  Commutazione dei poli
+È impiegato quando si vogliono ottenere velocità sincrone in rapporto 1 a 2. Si tratta 
+di effettuare l’avvolgimento statorico con le fasi suddivise in due sezioni uguali che pos-
+sono essere connesse in parallelo per collegamento a stella, in serie per collegamento a 
+triangolo. Passando da stella a triangolo si ottiene il raddoppio delle coppie polari e con 
+questo una velocità di sincronismo metà della precedente (Fig. VIII.4.15).
+Fig. VIII.4.15  Commutazione dei poli: schema delle connessioni di una fase e schema 
+elettrico; a) triangolo-serie, 8 poli; b) stella-parallelo, 4 poli.
+A parità di tensione di alimentazione accade tuttavia che nel collegamento a stella-
+parallelo ogni semifase sopporti una tensione del 16% superiore a quella del collegamento 
+triangolo-serie e di questo si deve tener conto in sede di progetto.
+4.7.3  Variazione della frequenza
+È il metodo attualmente preferito per semplicità e praticità operativa. Richiede un’ali-
+mentazione a frequenza variabile, ottenibile mediante apparecchi elettronici convertitori 
+CA/CA. Il progetto del motore deve tenere in considerazione il fatto che, al variare della 
+frequenza e a parità di tensione, varia anche il valore di induzione, che deve essere mante-
+nuto convenientemente sotto la saturazione.
+4.8  Motore asincrono monofase
+4.8.1  Principio di funzionamento
+Lo statore di un motore asincrono monofase, provvisto di un unico avvolgimento 
+induttore, produce un campo alternativo  = M cost che non può sviluppare un’azione 
+di trascinamento. Dalla formula VIII.3.3 risulta che un campo alternativo è equivalente a 
+due campi uguali, rotanti in senso inverso e di valore M/2.
+Il tracciamento delle caratteristiche meccaniche relative a ciascun campo componente 
+(Fig. VIII.4.16) mette in rilievo che la perfetta compensazione sussiste solo a rotore 
+fermo. Il motore monofase perciò, se avviato, è in grado di sviluppare una coppia motrice 
+e di funzionare ad una velocità prossima a quella sincrona.
+S
+N
+S
+N
+S
+N
+S
+N
+U
+X
+A
+U
+X
+A
+1
+2
+3
+a)
+S
+N
+S
+N
+U
+X
+A
+1
+2
+3
+U
+X
+A
+b)
+
+[PAG 732]
+VIII-50
+MACCHINE ELETTRICHE
+I modi di avviare questo motore sono due: a condensatore e a poli schermati.
+4.8.2  Avviamento a condensatore
+Il motore è provvisto, accanto all’avvolgimento principale, di un avvolgimento ausi-
+liario, collocato in cave situate a 90° elettrici dalle prime. Il circuito ausiliario è alimen-
+tato in parallelo a quello principale attraverso un condensatore (Fig. VIII.4.17).
+        
+Fig. VIII.4.17  Motore monofase a condensatore: a) schema elettrico; b) diagramma vet-
+toriale.
+Con un adatto dimensionamento si ottiene un campo rotante bifase che consente il 
+funzionamento. Effettuato l’avviamento il circuito ausiliario può essere disinserito con un 
+dispositivo a tempo oppure mediante un interruttore centrifugo; in questo caso il motore 
+prosegue a funzionare come monofase. In un altro tipo, di potenza più elevata, i due 
+avvolgimenti rimangono funzionanti anche a regime e il motore è da considerarsi propria-
+mente bifase.
+4.8.3  Motore a poli schermati
+È impiegato per piccole potenze e presenta una o più spire chiuse in cortocircuito e 
+collocate in modo da abbracciare parte del flusso induttore (Fig. VIII.4.18).
+   
+Fig. VIII.4.18  Motore monofase a poli schermati: a) schema realizzativo; b) diagramma 
+vettoriale.
+Fig. VIII.4.16  Caratteristica meccanica di 
+un motore asincrono monofase: Cd = coppia 
+oraria; Cs = coppia antioraria; C = coppia 
+totale
+C
+0
+Cd
+Cs
++n0
+n0
+n
+C
+U
+I2
+I1
+a)
+U
+I2
+I1
+b)
+
+/2
+/2
+Isp
+i
+a)
+/2
+a
+i
++i
+b
+Isp
+Esp
+b)
+
+[PAG 733]
+MACCHINE ELETTRICHE
+VIII-51
+La spira funziona come il secondario di un trasformatore e produce per reazione un 
+flusso indotto che, componendosi con parte del flusso induttore, dà origine a due flussi 
+risultanti, sfasati e spostati fra loro, componenti di un campo rotante.
+La limitazione della potenza di questo tipo di motore è dovuta al fatto che la spira, 
+chiusa costantemente in cortocircuito, è sede di elevata potenza dissipata.
+4.9  Elementi costruttivi dei motori asincroni
+4.9.1  Statore
+Lo statore è costituito da una struttura portante, la carcassa, nella quale alloggia il 
+pacco di lamierini. Essi hanno forma di corona circolare, sono provvisti di cave per l’inse-
+rimento dell’avvolgimento, e sono impaccati e trattenuti da appositi ancoraggi (Fig. 
+VIII.4.19).
+Nel montaggio del pacco, ove occorra e in relazione alla potenza, si può frazionare il 
+nucleo in senso assiale in pacchetti elementari, intervallati da canali di raffreddamento.
+Le cave di statore sono generalmente del tipo semichiuso, con una piccola apertura 
+per il passaggio dei lati delle spire. Per motori a corrente elevata le cave sono del tipo 
+aperto.
+      
+Fig. VIII.4.20  Cave statoriche di un motore asincrono: a) aperte; b) semichiuse.
+L’avvolgimento è separato dal ferro mediante un isolamento di cava e tenuto in sito da 
+una bietta di chiusura (Fig. VIII.4.20).
+Gli avvolgimenti statorici sono del tipo a teste embricate (Fig. VIII.4.21), nastrate e 
+isolate sulle due testate.
+Fig. VIII.4.19  Lamierino statorico di un 
+motore asincrono.
+Fig. VIII.4.21  Avvolgimento statorico a 
+teste embricate di un motore asincrono a 4 
+poli.
+a)
+b)
+U1
+V1
+W1
+U2
+V2
+W2
+
+[PAG 734]
+VIII-52
+MACCHINE ELETTRICHE
+4.9.2  Rotore
+Il pacco lamiere di rotore, a forma circolare, è provvisto di cave per l’alloggiamento 
+del circuito rotorico (Fig. VIII.4.22). L’isolamento fra i lamierini non è curato perché, per 
+la bassa frequenza di funzionamento, non si producono perdite apprezzabili. In asse al 
+lamierino è calettato o forzato l’albero motore.
+Nei motori con rotore avvolto gli avvolgimenti hanno una disposizione simile a quella 
+dello statore. Nei motori con rotore a gabbia, molto diffusi, le cave, a varie forme, ospi-
+tano sbarre di rame, chiodate o saldate alle estremità da due anelli di cortocircuito. Per 
+motori di piccola potenza la gabbia è ottenuta rapidamente ed economicamente mediante 
+pressofusione di alluminio (Fig. VIII.4.23).
+4.9.3  Raffreddamento
+Si ottiene soffiando aria in senso assiale lungo il traferro mediante una ventola mossa 
+dall’albero motore (Fig. VIII.4.24). Per motori chiusi il raffreddamento viene ottenuto 
+soffiando l’aria lungo la superficie esterna della carcassa, munita di alette per aumentare 
+la superficie lambita.
+5  GENERATORE SINCRONO
+Dato l’impiego fondamentale e generalizzato della macchina come generatrice di 
+energia elettrica nelle centrali di produzione, trattiamo in dettaglio la macchina trifase. Il 
+generatore monofase presenta le stesse caratteristiche del trifase e può essere facilmente 
+dedotto limitandosi ad una fase.
+Fig. VIII.4.22  Lamierino rotorico di un 
+motore asincrono.
+Fig. VIII.4.23  Rotore di un motore asin-
+crono a gabbia.
+Fig. VIII.4.24  Raffreddamento di un motore 
+asincrono.
+
+[PAG 735]
+MACCHINE ELETTRICHE
+VIII-53
+5.1  Principio di funzionamento
+Il funzionamento del generatore sincrono (alternatore) è riconducibile allo schema 
+elementare della spira rotante in un campo magnetico di induzione uniforme (si veda la 
+Sez. VII Elettrotecnica generale) nella quale, in condizioni ideali, si sviluppa una fem di 
+valore istantaneo:
+(VIII.5.1)
+Nel caso pratico, trattandosi di generare un sistema trifase, risulta più semplice e con-
+veniente invertire i ruoli assegnando al rotore il compito di produrre il campo magnetico e 
+allo statore quello di generare la fem, secondo lo schema indicativo di Fig. VIII.5.1.
+Lo statore reca un avvolgimento trifase analogo a quello del motore asincrono.
+Il rotore è una ruota polare recante sulla corona i poli magnetici, succedentisi a pola-
+rità alterna, magnetizzati mediante un avvolgimento percorso dalla corrente continua di 
+eccitazione (Iecc). Questa proviene da una sorgente esterna ed è addotta alla macchina tra-
+mite un sistema formato da due spazzole e due anelli solidali all’albero (Fig. VIII.5.2).
+Fig. VIII.5.2  Schema costruttivo di un alternatore.
+5.2  Funzionamento a vuoto
+5.2.1  Fem indotta
+Mettendo in movimento la ruota polare mediante un motore di trascinamento alla 
+velocità sincrona n0 ed eccitando la macchina, si produce una fem per fase data in valore 
+efficace da (si veda la VIII.3.13):
+(VIII.5.2)
+con: N = numero di conduttori per fase;  = flusso per polo; f = frequenza.
+Tenuto conto che gli avvolgimenti dell’alternatore sono a passo intero il coefficiente 
+diviene, KE = 2 kf kd, con: kf = fattore di forma ( 1,11); kd = fattore di distribuzione.
+Fig. VIII.5.1  Schema di principio di un 
+alternatore.
+e
+EMsent
+=
+U1
+V2
+W1
+U2
+W2
+V1
+N
+S
+0
+S
+N
+N
+S
+E
+KEfN
+=
+
+[PAG 736]
+VIII-54
+MACCHINE ELETTRICHE
+La funzione E = f(Iecc) è detta caratteristica di eccitazione (Fig. VIII.5.4) e ripete in 
+sostanza l’andamento della caratteristica di magnetizzazione del circuito magnetico.
+In funzionamento a vuoto la macchina è sede di:
+–  perdite meccaniche (Pm) per attrito e ventilazione;
+–  perdite nel ferro di statore (Pf) per isteresi e correnti parassite;
+–  perdite di eccitazione Pecc = Recc Iecc
+2, frequentemente ottenute tramite una dinamo 
+eccitatrice coassiale.
+5.3  Funzionamento a carico
+Chiudendo l’alternatore su un carico esterno, verrà erogata una corrente trifase ed una 
+potenza elettrica, con riflessi sul funzionamento di tipo elettrico, magnetico e meccanico.
+5.3.1  Circuito elettrico
+L’alternatore presenta un’impedenza interna per fase:
+(VIII.5.3)
+essendo: Ri la resistenza dell’avvolgimento e Xi la reattanza per flusso disperso. L’equa-
+zione di funzionamento relativa ad una fase stellata, con una tensione Uf = U/
+ è:
+(VIII.5.4)
+A carico si dissipano nello statore le perdite nel rame:
+(VIII.5.5)
+5.3.2  Reazione d’armatura
+La corrente trifase di statore produce un campo magnetico rotante, sincrono col 
+campo induttore ma spostato rispetto ad esso di un angolo elettrico dipendente dal tipo di 
+carico.
+Fig. VIII.5.3  Schema elettrico di un alter-
+natore a vuoto.
+Fig. VIII.5.4  Caratteristica di 
+eccitazione.
+Fig. VIII.5.5  Reazione d’armatura per cari-
+co resistivo.
++
+
+Iecc
+Iecc
+A
+V
+n0
+E
+Iecc
+Zi
+Ri
+jXi
++
+=
+3
+Uf
+E
+ZiI
+–
+=
+Pcu
+3RiI2
+=
+S
+N
+S
+S
+N
+n0
+
+[PAG 737]
+MACCHINE ELETTRICHE
+VIII-55
+Carico resistivo. I poli statorici appaiono intervallati rispetto a quelli di rotore e di 
+senso tale da esercitare un’azione frenante (Fig. VIII.5.5).
+Per mantenere la velocità sincrona occorre aumentare la coppia di trascinamento, ad 
+esempio aprendo le luci della turbina. Inoltre il flusso di statore altera il flusso originario 
+di rotore con effetto torcente. Per mantenere la tensione costante questo effetto deve 
+essere adeguatamente compensato agendo sull’eccitazione.
+Carico reattivo. Se la corrente erogata dall’alternatore è sfasata di 90° sulla tensione, 
+la corona polare statorica si posiziona coi rispettivi poli perfettamente allineati a quelli 
+della ruota polare (Fig. VIII.5.6).
+  
+Fig. VIII.5.6  Reazione d’armatura per carico reattivo: a) induttivo; b) capacitivo.
+L’azione meccanica è soltanto radiale e non esercita azione frenante.
+L’effetto magnetico invece è sensibile e si esplica in un’azione smagnetizzante per 
+carico induttivo, magnetizzante per carico capacitivo. A controbilanciare questi effetti si 
+deve intervenire sul circuito di eccitazione per ricuperare il valore corretto del flusso.
+5.4  Studio dell’alternatore
+Per tener conto della reazione di armatura, sono stati sviluppati alcuni metodi partico-
+lari. Esponiamo due fra i principali indicati come: metodo di Behn Eschenburg o della 
+reattanza sincrona e metodo di Potier. Entrambi i metodi sono necessariamente approssi-
+mati, soprattutto per il fatto che si riferiscono a macchine a traferro costante.
+5.4.1  Metodo di Behn Eschenburg
+La corrente di armatura I viene considerata magnetizzante, con l’effetto di indurre 
+negli avvolgimenti di statore una fem addizionale Ea che tende a modificare la tensione ai 
+morsetti della macchina. Per mantenerla costante si incrementa la fem E compensando Ea
+con una caduta di tensione induttiva, si pone cioè: Xa I =  Ea.
+Fig. VIII.5.7  Diagramma vettoriale di una fase dell’alternatore per Behn Eschenburg.
+S
+N
+S
+n0
+S
+N
+S
+a)
+S
+N
+S
+n0
+N
+S
+N
+b)
+Iecc
+Ea
+I
+
+
+
+Uf
+E0
+RiI
+XaI XiI
+XsI
+
+[PAG 738]
+VIII-56
+MACCHINE ELETTRICHE
+L’alternatore quindi viene studiato come avente una reattanza sincrona (Xs) somma di 
+quella interna propria e di quella addizionale (Fig. VIII.5.7):
+(VIII.5.6)
+L’equazione di funzionamento della macchina, relativa ad una fase stellata è (Fig. 
+VIII.5.8):
+(VIII.5.7)
+con:
+(VIII.5.8)
+I parametri interni dell’alternatore si ricavano dalla prova in cortocircuito, eseguita 
+con una corrente di eccitazione convenientemente ridotta in modo da generare una cor-
+rente di indotto non superiore al valore nominale. Dato il basso valore di induzione, la 
+caratteristica di cortocircuito Ik = f(Iecc) è una retta (Fig. VIII.5.9).
+L’impedenza sincrona si ricava dalla VIII.5.7 ponendo Uf = 0 e risulta:
+(VIII.5.9)
+Associando sullo stesso grafico le funzioni E0 = f(Iecc) e Ik = f(Iecc), dal rapporto fra le 
+ordinate (Fig. VIII.5.10) si ottiene l’impedenza sincrona Zs = f(Iecc). Essa non è costante 
+ma tende a diminuire col sopravvenire della saturazione. La reattanza sincrona si ottiene 
+dalla VIII.5.8.
+Fig. VIII.5.10  Diagramma cartesiano delle funzioni: E0 = f(Iecc), Ik = f(Iecc), Zs = f(Iecc).
+Fig. VIII.5.8  Schema elettrico di una fase 
+dell’alternatore.
+Fig. VIII.5.9  Caratteristica di cortocir-
+cuito di un alternatore.
+Xs
+Xi
+Xa
++
+=
+Uf
+E0
+ZsI
+–
+=
+Zs
+Ri
+2
+Xs
+2
++
+=
++
+Iecc
+Zs
+I
+ZL
+E0
+Uf
+Ik
+Iecc
+Zs
+E0
+Ik
+
+=
+E0
+E0
+E0, Ik
+Zs
+Ik
+Zs
+Iecc
+Iecc
+
+[PAG 739]
+MACCHINE ELETTRICHE
+VIII-57
+5.4.2  Metodo di Potier
+Anche con questo metodo la corrente di armatura viene considerata magnetizzante e 
+per questo si incrementa la corrente di eccitazione di un termine Iecc che produca una 
+forza magnetomotrice Necc Iecc tale da compensare esattamente quella di reazione. 
+Quest’ultima, dovuta alla corrente di carico di valore efficace I, opera sul campo rotante e 
+per questo produce un effetto che è 3/2 del valore massimo di una fase.
+Risulta perciò:
+(VIII.5.10)
+Si definisce coefficiente di Potier () il rapporto fra la corrente incrementale di eccita-
+zione e la corrente di linea:
+(VIII.5.11)
+Dalla VIII.5.10 risulta, in valore assoluto:
+(VIII.5.12)
+La corrente di eccitazione totale da applicare alla macchina è la somma vettoriale 
+(Fig. VIII.5.11):
+(VIII.5.13)
+Fig. VIII.5.11  Diagramma vettoriale di una fase dell’alternatore secondo Potier.
+La soluzione geometrica è:
+(VIII.5.14)
+con:
+(VIII.5.15)
+5.5  Caratteristiche di funzionamento
+5.5.1  Potenze e rendimento
+La potenza assorbita dall’alternatore è:
+NeccIecc
+3NI
+2
+2
+
+
+
+=
+
+Iecc
+I
+
+=
+
+1.06N
+Necc
+
+=
+Iecct
+Iecc
+Iecc
++
+Iecc
+I
+–
+=
+=
+E
+XiI
+RiI
+Uf
+I
+Iecct
+0
+
+
+I
+
+Iecct
+Iecc
+Isen
++
+
+2
+Icos
+
+2
++
+=
+
+arctg
+Ufsen
+XiI
++
+
+
+Ufcos
+RiI
++
+
+
+
+
+
+=
+
+[PAG 740]
+VIII-58
+MACCHINE ELETTRICHE
+(VIII.5.16)
+Nel passaggio attraverso il rotore la potenza subisce:
+–  perdite meccaniche (Pm) per attrito e ventilazione;
+–  perdite di eccitazione, per eccitatrice coassiale: Pecc = Recc Iecc
+2.
+La potenza trasmessa allo statore (Pt) è:
+(VIII.5.17)
+Essa viene trasferita per effetto meccanico attraverso il traferro con una coppia C0 e 
+vale:
+(VIII.5.18)
+Nel passaggio attraverso lo statore la potenza subisce:
+–  perdite nel ferro (Pf) per isteresi e correnti parassite;
+–  perdite nel rame: Pcu = 3 Ri I2.
+La potenza resa è:
+(VIII.5.19)
+Il rendimento è dato da (si veda la Tab. VIII.5.1):
+(VIII.5.20)
+5.5.2  Variazione di tensione
+La variazione di tensione si ottiene dalla formula VIII.2.64 e risulta
+(VIII.5.21)
+La caratteristica esterna U = f(I) dipende strettamente dal tipo di carico (Fig. 
+VIII.5.12). Per carichi fortemente capacitivi è possibile che la tensione aumenti col carico 
+per l’effetto magnetizzante della reazione d’armatura.
+Tab. VIII.5.1   Rendimento degli alternatori trifasi
+S (kVA)
+0,1
+0,25
+0,5
+1
+2,5
+5
+10
+25
+50
+100
+ (%) a cos 1
+93
+94
+95
+96
+96
+97
+97
+98
+98
+98,5
+ (%) a cos 0,8
+91
+92
+93
+94
+95
+96
+96
+97
+97
+98
+Fig. VIII.5.12  Caratteristiche esterne di un 
+alternatore: a) carico RL; b) carico R; c) cari-
+co RC.
+Pa
+C0
+=
+Pt
+Pa
+Pm
+Pecc
++
+
+
+–
+=
+Pt
+C00
+=
+Pr
+3UIcos
+=
+
+3UIcos
+3UIcos
+Pf
+Pcu
+Pm
+Pecc
+Pad
++
++
++
++
++
+----------------------------------------------------------------------------------------------------------------
+=
+U
+3I Ricos
+Xssen
++
+
+
+=
+U
+U0
+a
+b
+c
+a
+I
+
+[PAG 741]
+MACCHINE ELETTRICHE
+VIII-59
+Tenuto conto dell’impiego dei grandi alternatori, la variazione di tensione non viene 
+subita ma compensata con una conveniente regolazione della corrente di eccitazione, in 
+modo da assicurare la costanza della tensione all’utenza. Per questo è più significativo 
+tracciare la caratteristica di regolazione Iecc = f(I) per U costante (Fig. VIII.5.13).
+Esempio 1. Funzionamento di un alternatore.
+Un alternatore trifase della potenza di 800 kVA e tensione nominale U = 10 kV ha 
+richiesto alla prova di cortocircuito una corrente di eccitazione cui corrisponde una ten-
+sione a vuoto U0 = 2 kV. L’alternatore, con una resistenza per fase stellata Ri = 5 , fun-
+ziona alla tensione nominale erogando una corrente pari a 3/4 del valore nominale a cos
+= 0,9 ind. e manifestando una reattanza sincrona pari a 2/3 di quella di cortocircuito. 
+Tenuto conto che sono note le perdite: Pm + Pf = 10 kW, Pecc = 8 kW, si vuole calcolare il 
+rendimento, e la tensione che assume la macchina quando si stacca il carico.
+Procedimento.
+–  La corrente nominale è: In = S/(
+ U) = 800/(
+  10) = 46,2 A.
+In cortocircuito:
+–  
+–  
+In funzionamento:
+–  Xs = 2  24,5/3 = 16,3 ; I = 3  46,2/4 = 34,7 A;
+–  U = 
+ I(Ri cos + Xs sen) = 
+  34,7(5 0,9 + 16,3  0,436) = 696 V;
+–  U0 = U + U = 10.696 V.
+Le potenze impegnate sono:
+–  Pr = 
+ U I cos = 
+  10.000  34,7  0,9 = 540 kW;
+–  Pcu = 3 Ri I2 = 3  5  34,72 = 18 kW; Pad = 0,5  540/100 = 2,7 kW;
+–  Pp = Pm + Pf + Pcu + Pecc + Pad = 10 +18 + 8 + 2,7 = 38,7 kW;
+–  Pa = Pr + Pp = 540 + 38,7 = 579 kW.
+Il rendimento risulta:
+–   = Pr/Pa = 540/579 = 0,933.
+5.6  Macchina sincrona collegata alla rete
+5.6.1  Parallelo degli alternatori
+La macchina sincrona funziona generalmente collegata ad una rete di interconnes-
+sione, sostenuta da numerosi altri alternatori, per cui l’operazione di connessione alla rete 
+equivale ad effettuare il parallelo con una macchina ideale, di potenza infinita ed impe-
+denza sincrona nulla. L’operazione di parallelo richiede l’applicazione di un motore 
+primo che avvii la macchina e la porti a funzionare alla velocità sincrona. Per poter effet-
+tuare il parallelo occorre verificare il rispetto di determinate condizioni che sono:
+–  uguaglianza della tensione e della frequenza;
+Fig. VIII.5.13  Caratteristiche di regolazione 
+di un alternatore: a) carico RL; b) carico R; 
+c) carico RC.
+I
+Iecc
+b
+c
+a
+3
+3
+Zsk
+U0
+3In
+
+
+
+2000
+3
+46,2
+
+
+
+
+25,
+=
+=
+=
+Xsk
+Zsk
+2
+Ri
+2
+–
+252
+52
+–
+24,5
+=
+=
+=
+3
+3
+3
+3
+
+[PAG 742]
+VIII-60
+MACCHINE ELETTRICHE
+–  concordanza del senso ciclico e della fase.
+La verifica delle condizioni necessarie si ottiene mediante la strumentazione illustrata 
+in Fig. VIII.5.14. Un particolare strumento detto zerovoltmetro (zV), connesso su una 
+fase, a cavallo dell’interruttore, assicura il raggiungimento della concordanza di fase con 
+l’annullamento della sua indicazione.
+L’operazione di parallelo è agevolata disponendo di un dispositivo ausiliario a lam-
+pade detto sincronoscopio. Si tratta di tre coppie di lampade: una A connessa sulla ten-
+sione differenziale relativa ad una fase, in parallelo allo zerovoltmetro; le altre due B e C 
+su fasi incrociate. Il mancato raggiungimento dell’uguaglianza di frequenza si traduce in 
+una pulsazione luminosa ciclica, dovuta alla frequenza della tensione differenziale fra rete 
+e macchina sincrona. La condizione di parallelo corrisponde allo spegnimento della cop-
+pia A mentre le altre due coppie appaiono accese con la stessa intensità.
+Effettuato il parallelo, la fem della macchina è perfettamente in fase con la tensione di 
+rete, la corrente è nulla e la macchina non è operativa. Un aumento del flusso di energia 
+fornita dal motore primo spinge la ruota polare in anticipo di un angolo  e quindi la fem 
+rispetto alla tensione. 
+Fig. VIII.5.14  a) Schema elettrico per l’operazione di parallelo; b) diagramma vettoriale 
+a manovra in corso; c) condizione di parallelo.
+La tensione differenziale Ed = E0  Uf determina lo scorrimento di una corrente e la 
+macchina funziona da generatore (Fig. VIII.5.15).
+Fig. VIII.5.15  Diagramma vettoriale di fase della macchina sincrona funzionante da 
+generatore.
+Assumendo Xs  Zs, la corrente risulta:
+(VIII.5.22)
+1
+L1
+L2
+L3
+1’
+2 3
+2’ 3’
+zV
+f
+V
+A
+B
+C
+A
+Iecc
++
+
+G
+3
+n0
+a)
+1
+1’
+2
+2’
+3
+3’
+Uf
+A
+B
+C
+E0
+b)
+A
+1
+1’
+Uf
+E0
+3
+3’
+2
+2’
+C
+B
+c)
+E0
+Uf
+I
+Ed=XsI
+
+I
+E0
+Uf
+–
+
+
+Xs
+
+=
+
+[PAG 743]
+MACCHINE ELETTRICHE
+VIII-61
+sfasata in ritardo di 90° su XsI.
+5.6.2  Motore sincrono
+Effettuato il parallelo in rete e staccato il motore di avviamento, la macchina può 
+essere caricata all’albero. L’effetto del carico è di provocare un ritardo della posizione 
+della ruota polare, cioè della fem rispetto alla tensione, di un angolo  (Fig. VIII.5.16).
+Fig. VIII.5.16  Diagramma vettoriale di fase della macchina funzionante da motore.
+La macchina è costretta ad assorbire dalla rete una potenza attiva portandosi a funzio-
+nare come motore. La corrente che si origina:
+(VIII.5.23)
+sfasata di 90° in ritardo su XsI, produce un campo rotante sincrono, con effetto di trascina-
+mento sulla ruota polare (Fig. VIII.5.17).
+Fig. VIII.5.17  Azione trainante del motore sincrono.
+La potenza sincronizzante (Ps).
+È data dalla potenza al traferro (Fig. VIII.5.18):
+(VIII.5.24)
+Fig. VIII.5.18  Diagramma vettoriale di fase del motore sincrono.
+E0
+Uf
+I
+Ed=XsI
+
+I
+Uf
+E0
+–
+
+
+Xs
+
+=
+N
+N
+S
+S
+S
+N
+n0
+Ps
+3E0Icos 
+2
+
+
+
+=
+E0
+Uf
+I
+
+I
+A
+H
+B
+90°
+O
+
+[PAG 744]
+VIII-62
+MACCHINE ELETTRICHE
+Dalla Fig. VIII.5.22 risulta: I = AB/Xs = [2 E0 sen(/2)]/Xs e quindi la potenza sincro-
+nizzante è:
+(VIII.5.25)
+Questa potenza cresce con l’angolo di anticipo che, per sicurezza, viene mantenuto 
+inferiore a 20° elettrici.
+La caratteristica meccanica.
+La potenza trasmessa (Pt) dallo statore al rotore è:
+(VIII.5.26)
+Dalla loro uguaglianza, sostituendo le espressioni di E0 e 0 e raggruppando i termini 
+ritenuti costanti in KC risulta:
+(VIII.5.27)
+La caratteristica meccanica si risolve in una linea verticale delimitata superiormente 
+dal valore di coppia massima (Fig. VIII.5.19).
+5.6.3  Macchina sincrona come reattore
+Partendo dalla condizione ideale di parallelo, con E0 = Uf, un aumento della corrente 
+di eccitazione, cioè del flusso, comporta un aumento della fem che supera la tensione. La 
+tensione differenziale Ed = XsI determina una corrente assorbita dalla rete che è in quadra-
+tura in anticipo sulla tensione (Fig. VIII.5.20) e la macchina si comporta come un conden-
+satore. Essa viene indicata come compensatore sincrono; è utilizzata in qualche caso 
+come elemento rifasatore per potenze reattive rilevanti.
+   
+Fig. VIII.5.20  Diagramma vettoriale di fase della macchina sincrona funzionante da reat-
+tore: a) da condensatore; b) da induttore.
+La stessa macchina in regime di sottoeccitazione può funzionare da induttore, ma que-
+sto modo di operare per il motore non ha impiego pratico.
+Fig. VIII.5.19  Caratteristica meccanica del 
+motore sincrono.
+Ps
+3E0
+2
+Xs
+
+
+sen
+=
+Pt
+3E0Icos
+=
+ed anche
+Pt
+C00
+=
+C0
+KCIcos
+=
+C
+CM
+0
+n
+n0
+I
+Uf
+E0
+Ed=XsI
+a)
+Uf
+Ed=XsI
+E0
+I
+b)
+
+[PAG 745]
+MACCHINE ELETTRICHE
+VIII-63
+5.6.4  Diagramma circolare
+Tutti gli aspetti della macchina sincrona sono sintetizzati in un diagramma, detto dia-
+gramma circolare, nel quale vengono messe in risalto le potenze attive e reattive impe-
+gnate. Il diagramma si basa sulla condizione che Ri sia trascurabile rispetto a Xs e che 
+questa rimanga costante. Ciò dato, per tensione di rete U costante, nel diagramma vetto-
+riale (Fig. VIII.5.21), il segmento AC = XsI è rappresentativo della corrente e, in una scala 
+opportuna, della potenza apparente S = 
+ U I.
+Tracciati con centro A quattro cerchi rappresentativi dei quarti di carico, sui due assi 
+orizzontale e verticale si possono leggere le proiezioni di AC corrispondenti rispettiva-
+mente alle potenze: attiva AX e reattiva AY impegnate dalla macchina.
+La macchina può funzionare su quattro quadranti corrispondenti a:
+–  1° quadrante  motore sovraeccitato, rappresenta un carico in rete RC;
+–  2° quadrante  generatore sovraeccitato, lavora su carico RL;
+–  punto H  generatore, lavora su carico resistivo;
+–  3° quadrante  generatore sottoeccitato, lavora su carico RC;
+–  4° quadrante  motore sottoeccitato, rappresenta un carico in rete RL;
+–  punto K  motore, rappresenta un carico in rete resistivo;
+–  punto A  macchina inerte.
+Fig. VIII.5.21  Diagramma circolare della macchina sincrona: a = potenza nominale.
+In particolare la macchina può funzionare su quattro semiassi corrispondenti a:
+–  AH  generatore su carico resistivo;
+–  AK  motore a cos = 1;
+–  AM  condensatore;
+–  AN  induttore.
+5.6.5  Curva a V
+È rappresentativa della corrente di linea in funzione della corrente di eccitazione, a 
+carico costante. Riferendoci al diagramma del motore sincrono, per potenza attiva 
+costante, al variare della corrente di eccitazione varia la fem E0 e il punto di funziona-
+mento scorre lungo una verticale (Fig. VIII.5.22).
+3
+K
+M
+H
+N
+P
+Q
+1°
+2°
+3°
+4°
+Y
+C
+X
+A
+E0
+Uf
+a
+0
+
+[PAG 746]
+VIII-64
+MACCHINE ELETTRICHE
+Fig. VIII.5.22  Diagramma vettoriale di fase di un motore sincrono funzionante a P
+costante.
+La corrente assorbita tracciata in funzione della corrente di eccitazione si dispone 
+secondo una curva a V col punto minimo corrispondente al funzionamento a cos = 1 
+(Fig. VIII.5.23). La famiglia di caratteristiche a parametro P è delimitata superiormente 
+dalla corrente nominale.
+5.7  Principi costruttivi delle macchine sincrone
+5.7.1  Rotore
+Può essere a poli salienti o a poli lisci. Il rotore a poli salienti, o ruota polare, è una 
+struttura a corona circolare che espleta il duplice compito, meccanico come base di 
+appoggio dei poli magnetici, magnetico per convogliare il flusso fra i poli contigui. La 
+corona rotorica è realizzata in materiale ferromagnetico ad alta permeabilità (Fig. 
+VIII.5.24).
+Fig. VIII.5.24  Ruota polare di una macchina sincrona.
+Fig. VIII.5.23  Curve a V di un motore sin-
+crono.
+Uf
+E0
+I
+0
+A
+Q
+P
+I
+In
+P=0
+Iecc
+cos=1
+
+[PAG 747]
+MACCHINE ELETTRICHE
+VIII-65
+I poli sono formati da un corpo e una testa. Il corpo fa da nucleo all’avvolgimento di 
+eccitazione. La testa guida il flusso allo statore ed è sagomata a traferro variabile al fine di 
+ottenere una distribuzione delle linee di forza tale da consentire la generazione di una fem 
+sinusoidale (Fig. VIII.5.25). 
+     
+Fig. VIII.5.25  Poli magnetici di una macchina sincrona; a) con sbarre di smorzamento.
+La testa del polo può avere, in qualche caso, barre longitudinali chiuse in cortocir-
+cuito, per smorzare le pendolazioni della macchina che possono insorgere a seguito di 
+brusche variazioni di carico.
+Il rotore a poli lisci è usato nei turboalternatori, dotati di due o quattro poli e trascinati 
+da turbine a vapore. Per l’elevata velocità di funzionamento, questa disposizione è più 
+adatta per resistere alla notevole forza centrifuga (Fig. VIII.5.26).
+5.7.2  Statore
+Non differisce concettualmente da quello del motore asincrono, salvo che per le 
+dimensioni molto maggiori. Per questo motivo il nucleo viene eseguito con lamierino fer-
+romagnetico tranciato a settori e impaccato a formare la corona statorica. L’avvolgimento 
+è eseguito seguendo i criteri costruttivi esposti a proposito del campo rotante (si veda il 
+Sottopar. 3.2.2). 
+     
+Fig. VIII.5.27  Avvolgimento trifase a teste concentriche: su tre (a) e due (b) ordini.
+Fig. VIII.5.26  Alternatore bipolare con 
+rotore a poli lisci.
+a)
+N
+S
+U1
+V1
+W1
+W2
+U2
+V2
+a)
+U1
+V1
+W1
+W2
+U2
+V2
+b)
+
+[PAG 748]
+VIII-66
+MACCHINE ELETTRICHE
+Poiché la macchina sincrona lavora a tensioni elevate, fino a 15 kV, le testate delle 
+varie fasi devono essere debitamente distanziate, e così anche le bobine della stessa fase. 
+Per questo motivo le fasi dell’avvolgimento sono sviluppate a teste concentriche su due o 
+tre ordini (Fig. VIII.5.27). Nel caso di avvolgimento su due ordini quando le coppie polari 
+sono dispari si ha una matassa storta, coi due lati attivi appartenenti a due ordini diversi.
+5.7.3  Raffreddamento
+Date le potenze in gioco, le macchine sincrone sono quasi sempre a raffreddamento 
+forzato e il sistema può essere a ciclo aperto o a ciclo chiuso.
+Nel primo caso l’aria, prelevata dall’ambiente o, più comunemente dall’esterno, viene 
+spinta mediante una ventola assialmente lungo la macchina e convogliata nuovamente 
+all’esterno in zona adatta.
+Il raffreddamento a ciclo chiuso, impiegato in macchine di grande potenza, utilizza 
+sempre la stessa aria che, forzata assialmente attraverso la macchina, si riscalda per essere 
+successivamente raffreddata in uno scambiatore di calore da un fluido refrigerante. In 
+qualche caso, per il raffreddamento a ciclo chiuso, anziché aria si impiega idrogeno. Que-
+sto elemento ha il vantaggio di avere una capacità termica maggiore dell’aria e, più leg-
+gero, richiede minor potenza per la ventilazione. Inoltre non essendo comburènte non 
+permette il formarsi di fiamme dovute a possibili scariche interne.
+6  GENERATORE A CORRENTE CONTINUA
+6.1  Principio di funzionamento
+La macchina generatrice a corrente continua, detta dinamo, può essere ricondotta nelle 
+sue linee essenziali alla spira rotante in un campo magnetico a induzione uniforme. La 
+fem alternata che si genera viene prelevata in modo unidirezionale mediante una commu-
+tazione che inverte il collegamento in uscita ogni semionda (Fig. VIII.6.1).
+Fig. VIII.6.1  Principio della macchina a corrente continua.
+Ciò si ottiene con un sistema, detto collettore, costituito da due lamelle isolate fra loro 
+e collegate ai terminali della spira. Due spazzole fisse attuano la commutazione e permet-
+tono di ottenere in uscita una fem unidirezionale (Fig. VIII.6.2).
+Fig. VIII.6.2  Fem generata da una dinamo a 
+spira rotante.
++
+e
+e
+
+
+t
+e
