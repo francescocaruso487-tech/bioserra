@@ -1,6 +1,6 @@
 import os, json, base64, urllib.request, datetime
 
-GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
+GITHUB_TOKEN = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
 REPO = 'francescocaruso487-tech/bioserra'
 LAT  = 41.09696262016739
 LON  = 14.388065360906802
