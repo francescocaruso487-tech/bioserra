@@ -1,0 +1,902 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 49/116 ===
+Chars: 44,517 | Offset: 2,121,557
+
+
+
+[PAG 1081]
+IMPIANTI  ELETTRICI                                               X-231
+demolizione di edifici esistenti, alla costruzione di opere pubbliche, ai lavori di movimen-
+tazione terra e simili. Della materia si occupa anche la guida CEI 64-17.
+I fattori di maggior rischio in questi ambienti sono dovuti al fatto che l'impianto elet-
+trico è soggetto a sollecitazioni meccaniche, termiche e d'uso molto severe, è provvisorio
+e può essere continuamente variato per adeguarlo alle diverse esigenze; esso, inoltre, è
+utilizzato da molte persone con competenze diverse e appartenenti a varie ditte, per cui
+risulta difficile il coordinamento per la sicurezza.
+Le principali regole di installazione da rispettare sono di seguito elencate.
+–  I componenti degli impianti devono avere caratteristiche di robustezza adatte
+all'impiego nei cantieri edili, con grado di protezione non inferiore a IP43.
+–  I quadri elettrici devono essere del tipo adatto all'impiego nei cantieri (quadri ASC
+a norma CEI 17-13/4).
+–  Il sistema di distribuzione TN-C non è adatto per i cantieri, dato che le sollecita-
+zioni meccaniche aumentano il pericolo di interruzione del PEN.
+–  L'uso del sistema IT è ammesso solo in casi particolari; nel caso di impiego di
+gruppi elettrogeni trasportabili si può omettere il controllo dell'isolamento.
+–  La protezione contro i contatti diretti mediante ostacoli è ammessa solo per breve
+tempo e quando non è possibile utilizzare altre misure protettive; quella mediante allonta-
+namento non può essere utilizzata.
+–  Se la protezione contro i contatti indiretti è effettuata mediante l'interruzione auto-
+matica dell'alimentazione si deve considerare la tensione di contatto limite convenzionale
+UL = 25 V (sistema TT) e tempi d'interruzione ridotti rispetto agli ambienti ordinari
+(sistema TN, Par. 10.13, Tab. X.10.32).
+–  Si devono usare preferibilmente prese a spina per uso industriale, a norma CEI 23-12.
+–  Le prese a spina e gli apparecchi utilizzatori portatili permanentemente collegati,
+entrambi con In  32 A, devono essere protetti da dispositivi differenziali con Idn  0,03 A
+o mediante separazione elettrica individuale oppure devono essere alimentati da circuiti
+SELV.
+–  Le condutture elettriche devono essere disposte in modo che non vi siano sollecita-
+zioni sulle connessioni, a meno che esse non siano state progettate in modo da resistervi. I
+cavi non devono passare attraverso luoghi di transito per veicoli o pedoni; quando non è
+possibile evitarlo deve essere assicurata una protezione speciale contro i danni meccanici
+e contro il contatto con il macchinario di cantiere.
+–  Bisogna evitare il contatto con linee aeree nelle manovre delle autogru, dei camion
+ribaltabili ecc. Se la distanza della linea aerea è inferiore a 5 m dalla costruzione, dal pon-
+teggio o dai mezzi di lavoro, occorre attuare misure protettive come spostare o mettere
+fuori tensione o isolare (se in BT) la linea, delimitare la zona di lavoro, mettere in opera
+ostacoli o portali di segnalazione.
+12.4  Strutture adibite a uso agricolo e zootecnico
+Gli impianti elettrici in questi luoghi sono soggetti alle prescrizioni particolari della
+norma CEI 64-8/7, sezione 705, che si applicano a tutte le parti degli impianti elettrici
+fissi delle strutture agricole e zootecniche, sia all'interno che all'esterno degli edifici,
+esclusi gli impianti dei locali destinati a usi residenziali.
+Le principali prescrizioni previste sono riassunte nella Tab. X.12.3.
+
+[PAG 1082]
+X-232
+  IMPIANTI ELETTRICI 
+12.5  Locali a uso medico
+Gli impianti elettrici utilizzatori nei locali a uso medico sono soggetti alle prescrizioni
+particolari della norma CEI 64-8/7 sezione 710. Queste prescrizioni si riferiscono princi-
+palmente agli ospedali, alle cliniche private, agli studi medici e dentistici, ai locali a uso
+estetico e a quelli a uso medico nei luoghi di lavoro.
+Definizioni e classificazioni
+Viene definito locale a uso medico ogni locale destinato a scopi diagnostici, terapeu-
+tici, chirurgici, di sorveglianza o di riabilitazione dei pazienti, inclusi i trattamenti este-
+tici. Per paziente si intende la persona (o l'animale) sottoposta a esame o trattamento
+medico, incluso quello dentistico.
+La classificazione dei locali viene effettuata in base all'utilizzazione o meno di appa-
+recchi elettromedicali destinati alla diagnosi, al trattamento e alla sorveglianza del
+paziente sotto la supervisione di un medico e che entrano in contatto fisico o elettrico col
+paziente tramite una parte applicata, definita come una parte dell'apparecchio che nell'uso
+normale viene necessariamente in contatto fisico con il paziente oppure può essere portata
+a contatto oppure necessita di essere toccata dal paziente.
+I locali vengono suddivisi in tre gruppi, con livello di pericolosità crescente:
+–  gruppo 0: locale medico nel quale non si utilizzano apparecchi elettromedicali con
+parti applicate e al quale non si applicano le prescrizioni della sezione 710 (ambiente ordi-
+nario);
+–  gruppo 1: locale a uso medico nel quale le parti applicate sono destinate a essere
+utilizzate esternamente oppure invasivamente in una qualsiasi parte del corpo, a eccezione
+della zona cardiaca;
+Tab. X.12.3   Prescrizioni particolari per le strutture adibite a uso agricolo e zootecnico
+Tipo di protezione
+Prescrizione
+Contatti diretti
+Per i circuiti SELV la protezione deve essere effettuata qualunque sia la ten-
+sione nominale, a mezzo di barriere o involucri IPXXB (minimo) oppure con
+l'isolamento delle parti attive (tensione di prova 500 V c.a. per un minuto).
+I circuiti che alimentano prese a spina devono essere protetti con interruttori
+differenziali aventi Idn  30 mA
+Contatti indiretti
+L'interruzione automatica dell'alimentazione deve essere applicata con le
+modalità previste per i luoghi non ordinari, con UL = 25 V (sistemi TT e IT) e
+tempi di interruzione ridotti (sistema TN, Tab. X.10.32).
+Nei luoghi destinati alla custodia di animali si devono installare collegamenti
+equipotenziali per la connessione di tutte le masse e le masse estranee che
+possono essere toccate dagli animali al conduttore di protezione dell'impianto.
+Effetti termici
+Gli elementi scaldanti di tipo radiante devono essere posti ad almeno 0,5 m
+dagli animali o da materiali combustibili.
+Incendio
+Si deve installare un interruttore differenziale con Idn  0,5 A.
+Gli apparecchi di riscaldamento utilizzati nei locali di allevamento devono
+essere fissati in modo da mantenere una distanza appropriata dagli animali e
+dai materiali combustibili.
+Sezionamento e
+comando
+I dispositivi, compreso quello per l'arresto di emergenza, non devono essere
+installati in posizioni accessibili agli animali o tali che non possano essere
+raggiunti dagli operatori per la presenza di animali.
+
+[PAG 1083]
+IMPIANTI  ELETTRICI                                               X-233
+–  gruppo 2: locale a uso medico nel quale le parti applicate sono destinate a essere
+utilizzate in applicazioni quali interventi intracardiaci e operazioni chirurgiche oppure per
+trattamenti vitali in cui la mancanza dell'alimentazione può comportare pericolo per la
+vita.
+Nella Tab. X.12.4 sono riportati degli esempi di classificazione.
+Poiché un paziente con parti applicate può venire a contatto, in modo intenzionale o
+meno, con altri apparecchi o sistemi elettromedicali, con masse estranee o con altre per-
+sone in contatto con tali elementi, si definisce come zona paziente il volume nel quale tale
+contatto può avvenire.
+Fig. X.12.4   Esempio di estensione della zona paziente (norma CEI 64-8/7 V2, sezione 710).
+Tab. X.12.4   Classificazione dei locali a uso medico
+Gruppo
+Esempi di locali appartenenti al gruppo
+0
+Sala per massaggi senza l'utilizzazione di apparecchi elettromedicali con parti appli-
+cate (altrimenti è di gruppo 1).
+Ambulatori medici senza l'utilizzazione di apparecchi elettromedicali con parti appli-
+cate (altrimenti è di gruppo 1).
+1
+Camere di degenza.
+Sala parto.
+Sala per ECG, EEG, EHG, EMG.
+Sala per endoscopie (se non è sala per operazioni chirurgiche).
+Sala per urologia (se non è sala per operazioni chirurgiche).
+Sala per diagnostica radiologica e per radioterapie.
+Sale per idroterapia e per fisioterapia.
+Sala per ingessature chirurgiche (senza anestesia generale).
+Sala per emodialisi.
+Sala per risonanza magnetica (MRI).
+Sala per medicina nucleare.
+2
+Sala per anestesia.
+Sala per chirurgia.
+Sala per ingessature chirurgiche (con anestesia generale).
+Sala per applicazione di cateteri cardiaci.
+Sala per cure intensive.
+Sala per esami angiografici ed emodinamici.
+1,5 m
+2,5 m
+1,5 m
+1,5 m
+
+[PAG 1084]
+X-234
+  IMPIANTI ELETTRICI 
+Nel caso che la posizione del paziente sia predeterminata, il volume viene individuato
+come indicato nella Fig. X.12.4; in caso contrario bisogna prendere in considerazione
+tutte le possibili posizioni del paziente.
+Sistemi di alimentazione
+Nei locali a uso medico possono essere usati i sistemi TT e IT, mentre il sistema TN è
+soggetto a limitazioni, dato che non è ammesso l'uso del sistema TN-C nei locali dei
+gruppi 1 e 2 e negli edifici a uso medico (case di cura, ospedali ecc.) a valle del quadro di
+distribuzione principale.
+È stato inoltre introdotto il sistema IT-M (IT medicale) che deve essere alimentato con
+un trasformatore di isolamento a uso medicale e deve essere dotato di un dispositivo di
+controllo permanente dell'isolamento, non disinseribile, conforme alla norma CEI EN
+61557-8 e dotato dei requisiti seguenti:
+–  impedenza interna non inferiore a 100 k;
+–  tensione di prova non superiore a 25 V c.c.;
+–  corrente di prova non superiore a 1 mA c.c., anche in condizioni di guasto;
+–  attivazione dell'indicazione di ridotto isolamento quando la resistenza d'isolamento
+scende a 50 k, con la presenza di un dispositivo di prova per questa verifica.
+Il dispositivo di controllo dell'isolamento non è obbligatorio quando un apparecchio
+utilizzatore viene alimentato da un singolo trasformatore d'isolamento a esso dedicato.
+Inoltre, per ogni sistema con trasformatore d'isolamento a uso medicale, è prevista l'instal-
+lazione di un sistema di allarme ottico e acustico.
+Protezione combinata contro i contatti diretti e indiretti mediante sistemi SELV e PELV
+Nei locali dei gruppi 1 e 2 i sistemi SELV e PELV devono avere tensione nominale
+agli apparecchi utilizzatori non superiore a 25 V efficaci in c.a. e 60 V in c.c. non ondu-
+lata. Deve essere prevista la protezione dai contatti diretti mediante isolamento delle parti
+attive oppure barriere o involucri con grado minimo IP2X o IPXXB. Per i locali del
+gruppo 2 devono essere collegate al conduttore di protezione le masse dei componenti
+elettrici ubicati nella zona paziente.
+Protezione contro i contatti diretti
+Per i locali dei gruppi 1 e 2 non sono ammesse altre misure di protezione oltre all'iso-
+lamento delle parti attive e all'uso di involucri o barriere.
+Protezione contro i contatti indiretti
+Le misure di protezione previste dalla norma sono riassunte nella Tab. X.12.5.
+Tab. X.12.5   Protezione contro i contatti indiretti nei locali a uso medico
+Sistema di protezione
+Tipi di locale
+Interruzione automatica
+dell'alimentazione
+Locali dei gruppi 1 e 2
+Deve essere UL  25 V (sistema TT)
+I tempi di interruzione devono essere ridotti rispetto alle condizioni ordi-
+narie (sistemi TN e IT, Tab. X.10.32)
+Interruttori differenziali
+Locali del gruppo 1
+Locali del gruppo 2
+È richiesta la protezione addizio-
+nale mediante differenziale di tipo
+A o B con Idn  30 mA per i circuiti
+che alimentano prese a spina con In
+fino a 32 A
+È richiesta la protezione addizionale
+mediante differenziale di tipo A o B
+con Idn  30 mA per tutti i circuiti
+non alimentati col sistema IT-M
+
+[PAG 1085]
+IMPIANTI  ELETTRICI                                               X-235
+Tab. X.12.5 Segue
+Fig. X.12.5   Trasformatore d'isolamento e nodo equipotenziale.
+Scelta e installazione dei componenti elettrici
+Nella parte 710.5 della norma sono indicate diverse prescrizioni per gli impianti nei
+locali di gruppo 1 e 2, di cui si riportano quelle più significative.
+–  I trasformatori d'isolamento per uso medicale devono essere normalmente di tipo
+monofase, con tensione nominale secondaria non superiore a 250 V c.a. e potenza nomi-
+Sistema di protezione
+Tipi di locale
+Sistema IT-M
+Locali del gruppo 1
+Locali del gruppo 2
+Non richiesto
+Deve essere utilizzato per i circuiti
+che alimentano apparecchi elettro-
+medicali o altri apparecchi utilizza-
+tori situati nella zona paziente o che
+vi possano entrare, escluso i circuiti
+per unità a raggi X o quelli per gli
+apparecchi con potenza nominale
+maggiore di 5 kVA
+Collegamento 
+equipo-
+tenziale supplementare
+Locali dei gruppi 1 e 2
+All'interno o vicino al locale a uso medico deve essere installato un nodo
+equipotenziale (Fig. X.12.5) a cui vanno collegate le seguenti parti, situate
+o che possono entrare nella zona paziente: masse; masse estranee (1);
+eventuali schermi; eventuali griglie conduttrici poste nel pavimento;
+schermo metallico del trasformatore di isolamento, se esistente.
+Il nodo equipotenziale deve essere collegato al PE principale mediante un
+conduttore di sezione equivalente a quella del conduttore di sezione più
+elevata collegato al nodo stesso.
+Per gli EQP è prevista una sezione minima di 6 mm2 di rame.
+(1)  Per masse estranee si intendono le parti metalliche che presentano una resistenza verso terra
+minore di 0,5 M per i locali del gruppo 2 in cui vi sia pericolo di microshock (fulminazione per
+correnti immesse nella regione cardiaca) e di 200  per gli altri locali del gruppo 2 e per quelli del
+gruppo 1.
+230 V
+230 V
+alle masse
+estranee
+RE
+REN
+U = 0
+
+
+[PAG 1086]
+X-236
+  IMPIANTI ELETTRICI 
+nale d'uscita non inferiore a 0,5 kVA e non superiore a 10 kVA. Se è richiesta anche l'ali-
+mentazione trifase deve essere usato un trasformatore distinto, con tensione nominale
+secondaria non superiore a 250 V.
+–  Nei locali del gruppo 2 tutte le condutture elettriche installate all'interno devono
+essere destinate esclusivamente solo all'alimentazione degli apparecchi e dei loro acces-
+sori posti in quel locale.
+–  La protezione contro le sovracorrenti deve essere effettuata mediante interruttori
+automatici selettivi; l'uso dei fusibili è ammesso solo per la protezione contro i corto cir-
+cuiti. La protezione dei circuiti bipolari dei sistemi IT-M può essere unipolare.
+–  Nei locali dei gruppi 1 e 2 si devono prevedere almeno due differenti sorgenti di ali-
+mentazione per alcuni degli apparecchi d'illuminazione, di cui una collegata a un'alimen-
+tazione di sicurezza.
+–  In ciascun posto di trattamento dei pazienti dei locali del gruppo 2 le prese a spina
+delle unità di alimentazione a uso medico (per es. apparecchio testa-letto) devono essere
+suddivise almeno in due circuiti distinti oppure devono essere protette contro le sovracor-
+renti individualmente o a gruppi (almeno due).
+–  I circuiti delle prese a spina dei locali del gruppo 2 devono essere alimentate dal
+sistema IT-M, eccetto quelli delle unità a raggi X e i circuiti degli apparecchi utilizzatori
+con potenza nominale maggiore di 5 kVA.
+–  Le prese a spina alimentate col sistema IT-M non devono essere intercambiabili con
+prese poste nello stesso locale e alimentate con altri sistemi.
+Alimentazione dei servizi di sicurezza
+Per i locali a uso medico l'alimentazione dei servizi di sicurezza viene classificata, in
+funzione del tempo di commutazione, come riportata nella Tab. X.12.6.
+La scelta della classe della sorgente di sicurezza e della durata dell'alimentazione va
+fatta dal progettista secondo le indicazioni della norma e del responsabile medico della
+struttura, in funzione del gruppo di appartenenza del locale e delle caratteristiche degli
+apparecchi da alimentare (Tab. X.12.7).
+Tab. X.12.6   Classificazione dell'alimentazione di sicurezza nei locali a uso medico
+Classe 
+Tempo di commutazione
+Classe 0 
+(di continuità)
+Alimentazione automatica disponibile senza interruzioni
+Classe 0,15
+(a interruzione brevissima)
+Alimentazione automatica disponibile entro un tempo t  0,15 s
+Classe 0,5
+(a interruzione breve)
+Alimentazione automatica disponibile entro un tempo compreso
+tra 0,15 e 0,5 s (0,15 s < t  0,5 s)
+Classe 15
+(a interruzione media)
+Alimentazione automatica disponibile entro un tempo compreso
+tra 0,5 e 15 s (0,5 s < t  15 s)
+Classe > 15
+(a interruzione lunga)
+Alimentazione automatica disponibile in un tempo  t > 15 s
+
+[PAG 1087]
+IMPIANTI  ELETTRICI                                               X-237
+12.6  Ambienti a maggior rischio in caso d'incendio
+Sono quelli che presentano, in caso di incendio, un rischio maggiore rispetto agli
+ambienti ordinari, per la maggiore probabilità che esso si verifichi e per la rilevante entità
+del danno che può essere provocato dall'incendio, nei riguardi delle persone, degli animali
+e delle cose. Le prescrizioni particolari per gli impianti elettrici utilizzatori BT di questi
+luoghi sono contenute nella sezione 751 della norma CEI 64-8/7.
+Classificazione degli ambienti
+In relazione alla densità di affollamento, al tempo di sfollamento in caso di incendio,
+al danno arrecato a persone, animali e cose, al tipo di struttura degli edifici e alla presenza
+di materiale infiammabile o combustibile, gli ambienti a maggior rischio in vaso d'incen-
+dio vengono divisi in tre gruppi.
+Tab. X.12.7   Alimentazione dei servizi di sicurezza nei locali a uso medico (esempi e
+prescrizioni)
+Classe 
+Durata minima
+Servizi di sicurezza da alimentare
+ 0,5
+(a interruzione bre-
+vissima o breve)
+3 h (1)
+Apparecchi d'illuminazione dei tavoli operatori.
+Apparecchi d'illuminazione e apparecchi elettromedicali
+con funzioni di supporto vitale che richiedono una alimenta-
+zione entro 0,5 s o meno, della sala parto, delle sale per
+endoscopie e di tutti i locali del gruppo 2.
+15
+(a interruzione 
+media)
+24 h (2)
+Illuminazione delle vie di esodo e della relativa segnala-
+zione di sicurezza.
+Illuminazione dei locali destinati al servizio elettrico.
+Illuminazione dei locali con servizi essenziali.
+Illuminazione dei locali a uso medico del gruppo 1.
+Illuminazione dei locali a uso medico del gruppo 2 (almeno
+50% degli apparecchi)
+Ascensori destinati a funzionare in caso d'incendio.
+Sistemi di ventilazione per estrazione dei fumi.
+Sistemi di chiamata.
+Apparecchi elettrici di sistemi destinati alla fornitura e al
+monitoraggio di gas per uso medico (compresi aria com-
+pressa, vuoto e anestetici).
+Sistemi antincendio.
+Apparecchi elettromedicali che necessitano di un'alimenta-
+zione di sicurezza entro 15 s dei locali dei gruppi 1 e 2.
+> 15
+(a interruzione 
+lunga)
+Da stabilire 
+secondo le esi-
+genze
+Componenti elettrici necessari per mantenere in funzione i
+servizi ospedalieri come, per esempio, gli apparecchi di ste-
+rilizzazione, gli impianti tecnici dell'edificio, gli apparecchi
+frigoriferi e di cottura, le apparecchiature per la carica delle
+batterie degli accumulatori.
+Note
+(1) Può essere ridotta a 1 h nel caso che l'alimentazione di sicurezza (per es. UPS) possa essere com-
+mutata anche manualmente su un'altra alimentazione di sicurezza (per es. gruppo elettrogeno).
+(2) Può essere ridotta sino al minimo di 1 h se l'attività medica svolta e il tempo di esodo dal locale
+lo consentono.
+
+[PAG 1088]
+X-238
+  IMPIANTI ELETTRICI 
+A.  Ambienti a maggior rischio in caso di incendio per l'elevata densità di affollamento o
+per l'elevato tempo di sfollamento in caso di incendio o per l'elevato danno arrecato
+(Tab. X.12.8).
+B.  Ambienti a maggior rischio in caso di incendio in quanto aventi strutture combustibili
+(per es. edifici con strutture portanti in legno).
+C.  Ambienti a maggior rischio in caso di incendio per la presenza di materiale infiamma-
+bile o combustibile in lavorazione, convogliamento, manipolazione o deposito (se non
+sono compresi nel primo gruppo).
+Per gli ambienti appartenenti al gruppo C la classe C del compartimento antincendio
+deve essere uguale o superiore a 30; il valore di C si determina con la relazione C = k q,
+dove q è il carico d'incendio specifico e k è un coefficiente di riduzione, compreso tra 0,2
+e 1, che tiene conto delle reali condizioni d'incendio nel locale, considerando degli indici
+stabiliti dalla legislazione vigente in materia di prevenzione incendi.
+Il carico d'incendio specifico è il rapporto q = QS tra il carico d'incendio e la superfi-
+cie lorda del compartimento, dove per carico d’incendio si intende il potenziale termico
+(energia termica) della totalità dei materiali combustibili contenuti in uno spazio, com-
+presi i rivestimenti dei muri, delle pareti provvisorie, dei pavimenti e dei soffitti. Viene
+espresso convenzionalmente in kilogrammi di legna equivalente, considerando per la
+legna standard un potere calorifico di 18.422 kJ/kg (4400 kcal/kg). Di conseguenza q sarà
+espresso in kilogrammi di legna equivalente al metro quadrato.
+Il valore calcolato di C dovrà essere riportato per eccesso a una delle seguenti classi
+normalizzate: classe 15, classe 30, classe 45, classe 60, classe 90, classe 120, classe 180.
+Si tenga presente che normalmente i valori della classe dei compartimenti antincendio
+di un edificio costituiscono un dato di ingresso per il progettista elettrico e scaturiscono
+dal progetto di prevenzione incendi.
+Tab. X.12.8   Esempi di ambienti a maggior rischio in caso di incendio del gruppo A
+(allegato A della norma CEI 64-8/7, sezione 751)
+Fattori di rischio prevalenti
+Ambienti
+Affollamento, 
+tempo 
+di
+sfollamento, danno a per-
+sone
+Locali di pubblico spettacolo e di trattenimento in genere, con un mas-
+simo affollamento ipotizzabile superiore a 100 persone per ogni com-
+partimento antincendio.
+Strutture alberghiere, dormitori e simili con oltre 25 posti letto per ogni
+compartimento antincendio.
+Scuole di ogni ordine, grado e tipo, accademie e simili per oltre 100
+persone presenti.
+Ambienti adibiti a esposizione e/o vendita all'ingrosso o al dettaglio,
+con superficie lorda superiore a 400 m2.
+Stazioni sotterranee di ferrovie, metropolitane e simili.
+Ambienti destinati ai degenti negli ospedali e negli ospizi, ai detenuti
+nelle carceri e ai bambini negli asili e ambienti simili.
+Tempo 
+di 
+sfollamento,
+danno a persone
+Sistema delle vie di uscita, vani e condotti dei sistemi di ventilazione
+forzata negli edifici destinati a civile abitazione con altezza in gronda
+superiore a 24 m
+Danno a opere d'arte e beni
+pregevoli
+Edifici pregevoli per arte o storia oppure destinati a contenere bibliote-
+che, archivi, musei, gallerie, collezioni o comunque oggetti di interesse
+culturale sottoposti alla vigilanza statale
+
+[PAG 1089]
+IMPIANTI  ELETTRICI                                               X-239
+Prescrizioni comuni 
+Le principali prescrizioni da applicare in tutti gli ambienti a maggior rischio in caso di
+incendio sono riassunte nella Tab. X.12.9.
+Tab. X.12.9   Principali prescrizioni comuni per gli impianti nei luoghi a maggior rischio
+in caso di incendio
+Oggetto delle
+prescrizioni
+Prescrizioni
+Componenti
+elettrici
+I componenti devono essere limitati a quelli per l'uso negli
+ambienti, salvo le condutture elettriche che possono transitare.
+Nel sistema di vie di uscita non devono essere installati compo-
+nenti che contengano fluidi infiammabili.
+I dispositivi di manovra, controllo e protezione degli ambienti
+accessibili al pubblico devono essere posti in un luogo a disposi-
+zione del personale addetto o entro involucri apribili con chiave o
+attrezzo.
+I componenti elettrici non devono costituire pericolo di innesco o
+di propagazione di incendio per i materiali adiacenti (sezione 422
+della norma CEI 64-8/4).
+Apparecchi
+illuminanti
+Devono essere mantenuti ad adeguata distanza dagli oggetti illumi-
+nati, se combustibili.
+Per faretti e piccoli proiettori la distanza vale 0,5 m (fino a 100 W),
+0,8 m (oltre 100 fino a 300 W), 1 m (oltre 300 fino a 500 W).
+Le lampade e gli altri componenti devono essere protetti contro le
+sollecitazioni meccaniche.
+Condutture
+elettriche
+È vietato l'uso del conduttore PEN (schema TN-C) salvo che per
+quelle che transitano soltanto.
+Le condutture che attraversano le vie d'uscita di sicurezza non
+devono costituire ostacolo al deflusso delle persone.
+La disposizione dei conduttori dei circuiti in c.a. deve essere tale
+da evitare pericolosi riscaldamenti delle parti metalliche adiacenti
+per effetto induttivo.
+Le condutture devono essere realizzate secondo i modi indicati
+dalla norma (Tab. X.12.10).
+Le condutture che transitano nei luoghi a maggior rischio in caso
+d'incendio non devono avere connessioni lungo il percorso
+all'interno di questi luoghi, se non dentro involucri che soddisfino
+la prova contro il fuoco.
+I dispositivi di protezione contro le sovracorrenti devono essere
+poste all'origine dei relativi circuiti (se questi iniziano in un luogo
+a maggior rischio in caso d'incendio) o prima dell'ingresso nel
+luogo a maggior rischio.
+Devono essere previste barriere tagliafiamma in tutti gli attraversa-
+menti di solai o pareti che delimitano il compartimento
+
+[PAG 1090]
+X-240
+  IMPIANTI ELETTRICI 
+Prescrizioni aggiuntive specifiche per i vari tipi di ambiente
+Le principali prescrizioni aggiuntive previste dalla norma per i tre diversi tipi di
+ambiente a maggior rischio in caso di incendio, sono riassunte nella Tab. X.12.11.
+Tab. X.12.10   Modi di realizzazione delle condutture (i riferimenti sono corrispondenti
+alla suddivisione dell'articolo 751.04.1 della norma CEI 64-8/7)
+Rif.
+Modi di realizzazione delle 
+condutture
+Mezzi per evitare la 
+propagazione 
+dell'incendio
+Altre prescrizioni
+i1)
+Condutture di qualsiasi tipo
+incassate in strutture non
+combustibili
+Nessuno
+Si applicano le prescrizioni
+generali per la protezione con-
+tro le sovracorrenti della norma
+CEI 64-8/4
+Cavi in tubi protettivi e canali
+metallici almeno IP4X
+Cavi con isolamento minerale
+(CEI 20-39) e guaina metal-
+lica continua senza saldatura
+con funzione di PE, senza
+guaina esterna non metallica
+i2)
+Cavi multipolari con condut-
+tore di protezione concentrico
+Utilizzare cavi non pro-
+paganti la fiamma (CEI
+20-35) se sono instal-
+lati individualmente o
+separati 
+tra 
+loro 
+di
+almeno 250 mm o se
+sono installati indivi-
+dualmente in tubi pro-
+tettivi o canali almeno
+IP4X;
+oppure usare cavi non
+propaganti l'incendio;
+oppure adottare sbarra-
+menti, barriere e/o altri
+provvedimenti  
+Cavi con isolamento minerale
+(CEI 20-39) e guaina metal-
+lica continua senza saldatura
+con funzione di PE, con
+guaina esterna non metallica
+Cavi con schermi sulle sin-
+gole anime aventi funzione di
+PE
+i3)
+Condutture diverse da i1) e
+i2) realizzate con cavi multi-
+polari con PE
+I circuiti terminali, esclusi quelli
+di sicurezza, con grado IP
+minore di 4X devono essere pro-
+tetti dalle sovracorrenti, oltre
+che con le protezioni ordinarie,
+nei seguenti modi: per i sistemi
+TT e TN con differenziali aventi
+Idn  0,3 A (30 mA se i guasti
+resistivi 
+possono 
+innescare
+l'incendio); per il sistema IT con
+un 
+dispositivo 
+di 
+controllo
+dell'isolamento 
+che 
+provochi
+l'apertura del circuito o almeno
+un allarme ottico e acustico.
+Cavi unipolari o multipolari
+senza PE contenuti in involu-
+cri metallici senza particolare
+grado di protezione IP
+Cavi unipolari o multipolari
+senza PE contenuti in tubi o
+involucri non metallici di
+adeguata resistenza al fuoco,
+almeno IP4X, a vista
+Binari elettrificati e condotti
+sbarre
+
+[PAG 1091]
+IMPIANTI  ELETTRICI                                               X-241
+12.7  Luoghi di pubblico spettacolo e di trattenimento
+Gli impianti elettrici in questi luoghi (teatri, cinematografi, sale da ballo ecc, sia al
+chiuso che all'aperto) sono soggetti alle prescrizioni particolari della sezione 752 della
+norma CEI 64-8/7 che ha sostituito la norma CEI 64-10. Nel caso di affollamento ipotiz-
+zabile superiore a 100 persone questi luoghi sono anche ambienti a maggior rischio in
+caso d'incendio, soggetti anche alle prescrizioni della sezione 751 della stessa norma. Di
+seguito verranno indicate le prescrizioni principali previste dalla sez. 752.
+Alimentazione e quadro generale
+La tensione nominale di alimentazione non deve superare i 400 V. Tensioni maggiori
+sono ammesse solo nei locali di consegna dell'energia elettrica e per l'alimentazione di
+lampade a scarica a catodo freddo, il cui uso è tuttavia sottoposto alle prescrizioni partico-
+lari della sezione 753 della norma CEI 64-8/7.
+Nel caso di fornitura dell'energia a tensione superiore a 400 V (fornitura MT per un
+impianto con cabina propria), la cabina di trasformazione deve costituire un comparti-
+mento antincendio separato, non accessibile al pubblico. I componenti dell'impianto con
+tensione superiore a 400 V devono essere separati da quelli a tensione inferiore mediante
+pareti incombustibili.
+I gruppi elettrogeni per l'alimentazione di sicurezza e di riserva devono essere instal-
+lati in un ambiente a costruzione antincendio oppure in un fabbricato indipendente da
+quello che contiene il luogo di pubblico spettacolo.
+Il quadro elettrico generale deve essere disposto in un ambiente non accessibile al
+Tab. X.12.11   Prescrizioni aggiuntive per i diversi ambienti (gli ambienti sono stati
+indicati con le lettere A, B e C usate nella classificazione)
+ Ambiente
+Prescrizioni aggiuntive
+A
+Quando i cavi delle condutture i2) e i3) (Tab. X.12.10) sono raggruppati in quantità
+significative rispetto alle altre sostanze combustibili presenti, si devono adottare
+analoghi provvedimenti riguardo l'emissione di fumi e gas tossici. Si possono usare
+cavi con ridotta emissione di fumi e gas tossici e corrosivi.
+B
+I componenti dell'impianto montati sopra o dentro strutture combustibili e che, nel
+funzionamento ordinario, possono emettere archi e scintille devono essere posti in
+custodie almeno IP4X.
+I componenti dell'impianto, quali prese a spina e interruttori, non devono essere
+installate mediante fissaggio a griffe.
+I componenti dell'impianto installati in pareti a nido d'ape devono essere adatti, in
+base alle relative norme, a tale impiego; in caso contrario deve essere installato un
+isolamento termico avente determinate caratteristiche.
+C
+Tutti i componenti dell'impianto, escluse le condutture, devono avere grado di pro-
+tezione non inferiore a IP4X. Questo non si applica alle lampade, mentre per i
+motori IP4X è riferito alle custodie delle morsettiere e dei collettori; per le altre
+parti il grado minimo è IP2X.
+I componenti elettrici devono essere ubicati e protetti in modo da non essere sog-
+getti allo stillicidio di eventuali combustibili liquidi.
+Quando si prevede che sugli involucri dei componenti elettrici si possa depositare
+polvere sufficiente a causare un rischio d'incendio, si deve evitare che tali involucri
+possano raggiungere temperature eccessive. Analoghe precauzioni devono essere
+prese per gli apparecchi illuminanti.
+I motori che non funzionano sotto sorveglianza continua devono essere protetti con-
+tro le temperature eccessive mediante un dispositivo di protezione contro il sovrac-
+carico a ripristino manuale.
+
+[PAG 1092]
+X-242
+  IMPIANTI ELETTRICI 
+pubblico. Quelli secondari devono essere ubicati in ambienti possibilmente non accessi-
+bili al pubblico; va comunque impedito (per es. mediante chiusura a chiave) che possano
+essere manovrati da persone diverse da quelle autorizzate.
+L'impianto deve essere suddiviso in più circuiti, in modo che sia più facile l'esercizio
+e vengano limitati i disservizi causati da guasto o manutenzione. Per esempio, per l'illumi-
+nazione della sala sono previsti almeno due circuiti; lo stesso vale per l'illuminazione dei
+corridoi, delle scale, dell'atrio e dell'ingresso. Anche per gli altri ambienti accessibili al
+pubblico, di superficie superiore a 100 m2, occorre suddividere le lampade almeno su due
+circuiti.
+Servizi di sicurezza
+L'impianto di sicurezza si riferisce unicamente all'illuminazione di sicurezza e all'ali-
+mentazione di eventuali altri apparecchi installati a scopo di sicurezza (per es. il comando
+del sipario di sicurezza). Esso deve essere indipendente da qualsiasi altro impianto elet-
+trico del locale. Per gli ambienti dove il pubblico permane a lungo (sala, atrio e ingresso)
+si deve suddividere l'impianto di sicurezza almeno su due circuiti.
+L'illuminazione di sicurezza è prescritta per tutti gli ambienti ai quali può accedere il pub-
+blico, per le sale, per il palcoscenico e i locali annessi, per le cabine di proiezione e per i locali
+tecnici e può funzionare contemporaneamente o alternativamente col servizio di illumina-
+zione principale. In quest'ultimo caso deve essere a inserzione e disinserzione automatica,
+del tipo a interruzione breve (t  0,5 s). L'illuminamento minimo previsto, su un piano oriz-
+zontale a 1 m di altezza da quello di calpestio, non deve risultare inferiore a 5 lx in corri-
+spondenza delle scale e delle porte e a 2 lx per gli altri ambienti accessibili al pubblico.
+L'illuminazione di sicurezza può anche essere effettuata con apparecchi autonomi che
+assicurino il funzionamento per almeno 1 h.
+Per l'alimentazione dei servizi di sicurezza si possono usare batterie di accumulatori o
+altri tipi di generatori autonomi, da porre in un apposito ambiente di costruzione antincen-
+dio, accessibile direttamente o, almeno, senza attraversare gli ambienti accessibili al pub-
+blico. La batteria di accumulatori deve garantire l'alimentazione per almeno 1 h dell'intero
+impianto di sicurezza e il gruppo di ricarica deve essere in grado di effettuare la ricarica
+completa nell'intervallo giornaliero di chiusura del locale.
+Quando non si usano batterie di accumulatori, la potenza del generatore deve essere
+pari almeno a 1,25 volte quella dell'impianto di sicurezza e deve poter funzionare per tutto
+il tempo di permanenza del pubblico nel locale.
+L'intervento dell'impianto di sicurezza centralizzato deve essere segnalato automatica-
+mente, mediante segnalazione ottica e possibilmente acustica, sul quadro generale,
+nell'ambiente del personale di servizio e nel posto di guardia dei Vigili del Fuoco, se esi-
+stente.
+Controllo dell'impianto di sicurezza
+Deve essere effettuato almeno mezz'ora prima dell'ammissione del pubblico nel
+locale, da parte del personale autorizzato (persona addestrata).
+Comando di emergenza
+Deve essere previsto un comando di emergenza atto a porre fuori tensione l'intero
+impianto elettrico, eccetto i servizi di sicurezza, posto in un ambiente facilmente raggiun-
+gibile dall'esterno.
+Protezione contro i contatti diretti e indiretti
+Per i contatti diretti si deve attuare la protezione totale mediante isolamento delle parti
+attive e uso di involucri e barriere; quella parziale tramite ostacoli o distanziamento è
+ammessa solo nel locale di consegna dell'energia, a patto che non vi siano interruttori di emer-
+genza o altri dispositivi che possono essere manovrati anche da persone non addestrate.
+
+[PAG 1093]
+IMPIANTI  ELETTRICI                                               X-243
+Per i contatti indiretti non sono applicabili i metodi di protezione mediante locali non
+conduttori e collegamento equipotenziale non connesso a terra. Per il sistema TT si
+devono usare interruttori differenziali coordinati con l'impianto di terra per realizzare la
+protezione mediante interruzione automatica dell'alimentazione.
+Protezione contro le sovracorrenti
+Non vi sono prescrizioni particolari per i circuiti dell'impianto generale, se non quelle
+relative all'installazione dei dispositivi di protezione all'interno di quadri facilmente
+accessibili e protetti contro eventuali manomissioni da parte del pubblico e alla segnala-
+zione dei circuiti mediante cartellini.
+Per l'impianto di sicurezza è prescritta la protezione contro il corto circuito dei singoli
+circuiti, con segnalazione ottica e acustica dell'intervento del dispositivo.
+Condutture elettriche
+I cavi devono avere i conduttori di rame e tensioni nominali d'isolamento U0U  450
+750 V per i circuiti con tensione nominale non superiore a 230400 V; per i circuiti di
+segnalazione e comando si possono usare cavi con U0U  300/500 V.
+Le condutture devono essere realizzate in modo da ridurre al minimo la probabilità di
+innesco e di propagazione dell'incendio nelle condizioni di posa. Per soddisfare questi
+requisiti devono rispondere alle prescrizioni della sezione 751 della norma CEI 64-8
+(ambienti a maggior rischio in caso di incendio), anche se il locale di pubblico spettacolo
+non dovesse essere classificabile come tale.
+I cavi di collegamento con apparecchi mobili e trasportabili devono essere flessibili,
+del tipo non propagante la fiamma (CEI 20-35), con guaina antiabrasiva, con lunghezza
+minima possibile. Per il collegamento del cordone prolungatore alle prese a spina aventi
+In > 16 A si devono usare prese interbloccate; per quelle fino a 16 A ci deve essere un
+dispositivo di fissaggio che ne impedisca il distacco involontario.
+Prese a spina fisse
+Nei luoghi accessibili al pubblico le prese a portata di mano devono essere del tipo
+con coperchio o con alveoli protetti e devono essere protette singolarmente contro le
+sovracorrenti. Negli altri luoghi un singolo dispositivo di protezione può proteggere dalle
+sovracorrenti fino a un massimo di 5 prese.
+Le prese con corrente nominale superiore a 16 A devono essere del tipo con interblocco.
+Apparecchi d'illuminazione
+Gli apparecchi illuminanti devono essere resistenti alla fiamma e all'accensione (CEI
+34-21); quelli sospesi devono essere montati in modo che il loro movimento non possa
+danneggiare i cavi di alimentazione. Nel caso vi fossero pericoli derivanti da urti, gli
+apparecchi, compresi quelli di sicurezza, devono essere appositamente protetti.
+Le lampade non devono essere a portata di mano del pubblico. Negli ambienti di pas-
+saggio devono essere protette dagli urti o collocate in modo da non poter essere danneg-
+giate. Gli apparecchi per l'illuminazione generale del palcoscenico e degli ambienti di
+servizio annessi devono essere installati in modo fisso a un'altezza di almeno 2,5 m dal
+pavimento, devono essere protetti contro gli urti e avere grado di protezione non inferiore
+a IP4X.
+12.8  Luoghi con pericolo di esplosione
+Sono i luoghi in cui vi è pericolo di esplosione, determinato dalla coesistenza di una
+atmosfera pericolosa e di un fenomeno elettrico in grado di innescare l'esplosione. Tale
+pericolo può provenire dalla presenza di sostanze esplosive, gas o vapori infiammabili,
+polveri combustibili.
+Per atmosfera pericolosa si definisce quella formata (o che possa ragionevolmente
+
+[PAG 1094]
+X-244
+  IMPIANTI ELETTRICI 
+formarsi) dalla miscela di aria e di sostanze infiammabili, sotto forma di gas, vapori, neb-
+bie o polveri, in proporzioni tali che un fenomeno termico (temperatura eccessiva, arco
+elettrico o scintilla) possa provocarne l'esplosione.
+Data la vastità e la complessità della materia, ci si limiterà a esporre alcuni elementi di
+carattere generale.
+Quadro normativo
+Il quadro normativo per questi luoghi è profondamente cambiato negli ultimi anni.
+Fino al 1997 tutta la materia, sia per quanto riguardava la classificazione dei luoghi sia
+per i criteri di esecuzione degli impianti elettrici, era oggetto delle norme CEI 64-2 e 64-
+2/A, mentre erano di competenza del CT 31 le norme sulle costruzioni elettriche utilizza-
+bili. Dell'argomento si è poi interamente occupato il CT 31 del CEI e le norme sono state
+suddivise in funzione delle sostanze pericolose presenti.
+Nella Tab. X.12.12 vengono riportate le principali norme CEI applicabili ai luoghi con
+pericolo di esplosione.
+Notevole importanza hanno anche le guide CEI (31-35 e 31-35/A per i luoghi con pre-
+senza di gas o vapori e 31-56 per quelli con polveri esplosive), che forniscono dei criteri
+per l'applicazione delle prescrizioni contenute nelle norme.
+Classificazione dei luoghi
+In funzione delle sostanze presenti i luoghi pericolosi vengono distinti in varie classi.
+–  Luoghi dove esiste pericolo di esplosione per la presenza o lo sviluppo di sostanze
+esplosive (per es. polveriere). Sono classificati come luoghi di classe zero (C0) dalla
+norma CEI 64-2; per essi continuano a valere le prescrizioni di tale norma, salvo le parti
+abrogate dalle norme successive.
+–  Luoghi pericolosi per la presenza di polveri infiammabili che reagiscono con l'ossi-
+geno dell'aria e per le quali è prevedibile il pericolo di esplosione. Le polveri infiammabili
+sono quelle di sostanze combustibili, ma anche quelle delle sostanze non combustibili che
+possono originare atmosfere pericolose se polverizzate e miscelate all'aria. Vengono
+distinte in polveri elettroconduttrici (resistività minore di 100 k cm) e non elettrocon-
+duttrici in caso contrario. Tali luoghi sono classificati di classe 2 (C2) dalla norma CEI
+64-2 e per essi continuano a valere le prescrizioni di questa norma, salvo le parti abrogate
+dalle norme successive.
+Tab. X.12.12   Norme CEI per i luoghi con pericolo di esplosione
+Luoghi pericolosi 
+per la presenza di
+Principali norme CEI
+Sostanze esplosive
+Norma CEI 64-2, quarta edizione 2001: rimangono validi solo i capitoli rela-
+tivi ai luoghi pericolosi per la presenza di polveri infiammabili e sostanze
+esplosive; riguarda sia la classificazione degli ambienti sia la realizzazione
+degli impianti
+Gas o vapori
+infiammabili
+Norma CEI EN 60079-10 (CEI 31-30) che tratta la classificazione dei luoghi
+Norma CEI EN 60079-14 (CEI 31-33) relativa alla realizzazione degli im-
+pianti elettrici
+Norma CEI EN 60079-17 (CEI 31-34) inerente la verifica e la manutenzione
+degli impianti elettrici
+Polveri combustibili
+Norma CEI EN 61241-10 (CEI 31-66) che tratta la classificazione dei luoghi
+Norma CEI EN 61241-0 (CEI 31-73) e CEI EN 61241-14 (CEI 31-67) relative
+alle costruzioni elettriche utilizzabili per questi luoghi
+
+[PAG 1095]
+IMPIANTI  ELETTRICI                                               X-245
+–  Luoghi pericolosi per la presenza di sostanze, esclusi gli esplosivi e le polveri
+infiammabili, che sotto forma di vapori, gas o nebbie, possono determinare con l'aria
+un'atmosfera pericolosa. Per essi non è più valida la distinzione introdotta dalla norma
+CEI 64-2 tra luoghi di classe 1 e di classe 3, in funzione della quantità di sostanze perico-
+lose. Le nuove norme CEI EN non li classificano con un numero, ma semplicemente come
+luoghi pericolosi per la presenza di gas o vapori che possono formare una atmosfera peri-
+colosa.
+Classificazione delle zone
+Il procedimento di classificazione delle varie zone di pericolosità all'interno dei luo-
+ghi con pericolo di esplosione per la presenza di gas o vapori si basa sulla individuazione
+delle sorgenti di emissione (centri di pericolo per quelli ancora soggetti alla norma CEI
+64-2), ossia degli elementi, dei componenti o delle parti dell'impianto di processo che
+possono emettere un gas, un vapore o un liquido infiammabile con modalità tali da origi-
+nare un'atmosfera esplosiva. Le emissioni di sostanze pericolose vengono classificate, in
+base al grado di emissione, in emissioni di grado continuo, di primo grado e di secondo
+grado, in ordine decrescente di probabilità di formazione dell'atmosfera esplosiva.
+In funzione del grado di emissione e della efficacia della ventilazione nell'ambiente
+viene valutata la probabilità di presenza di un'atmosfera esplosiva e, quindi, il tipo di zona
+presente nell'intorno della sorgente. I tipi di zona previsti sono indicati con i numeri 0, 1 e
+2, con pericolosità decrescente (Tab. X.12.13).
+Tab. X.12.13   Determinazione del tipo di zona (luoghi pericolosi per la presenza di gas o
+vapori)
+Grado della
+emissione
+Grado della ventilazione
+Alto
+Medio
+Basso
+Disponibilità della ventilazione
+Buona
+Adeguata
+Scarsa
+Buona
+Adeguata
+Scarsa
+Buona
+Adeguata
+Scarsa
+Continuo
+(Zona 0 
+NE)
+Zona non 
+pericolosa1
+(Zona 0 
+NE)
+Zona 21
+(Zona 0 NE)
+Zona 11
+Zona 0
+Zona 0 
++
+Zona 2
+Zona 0 
++
+Zona 1
+Zona 0
+Primo
+(Zona 1 
+NE)
+Zona non 
+pericolosa1
+(Zona 1 
+NE)
+Zona 21
+(Zona 1 NE)
+Zona 21
+Zona 1
+Zona 1
++
+Zona 2
+Zona 1 
++
+Zona 2
+Zona 1
+o Zona 03
+Secondo2
+(Zona 2 
+NE)
+Zona non 
+pericolosa1
+(Zona 2 
+NE)
+Zona non 
+pericolosa1
+Zona 2
+Zona 2
+Zona 2
+Zona 2
+Zona 1
+o anche
+Zona 03
+"+" significa "circondata da".
+1 Zona 0 NE, 1 NE e 2 NE indicano una zona teorica dove, in condizioni normali, l'estensione è tra-
+scurabile.
+2 L'estensione della zona 2 creata da una emissione di secondo grado può superare quella imputabile
+a una emissione di primo grado o di grado continuo; in tal caso si considera la distanza maggiore.
+3 È zona 0 se la ventilazione è così debole e l'emissione è tale che una atmosfera esplosiva esista pra-
+ticamente in continuazione (si è vicini cioè a una situazione con assenza di ventilazione).
