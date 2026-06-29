@@ -1,0 +1,824 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 66/116 ===
+Chars: 45,000 | Offset: 2,870,336
+
+
+
+[PAG 1359]
+AUTOMAZIONE
+XIV-47
+bus. Permette inoltre il collegamento ad un modem esterno con protocollo PPP.
+Per tale ultima generazione di PLC i servizi di comunicazione da utilizzare nelle 
+applicazioni di controllo e automazione comprendono:
+–  Ethernet standard (HTTP, BOOTP/DHCP, FTP ecc.). Il protocollo HTTP (HyperText 
+Transfer Protocol) è un protocollo utilizzato dal 1990 per trasmettere pagine Web tra un 
+server ed un browser. I server Web installati nei prodotti Transparent Ready per l’automa-
+zione e il controllo consentono un accesso facilitato agli apparecchi in qualsiasi parte del 
+mondo con un browser standard quale ad esempio Internet Explorer o Netscape Naviga-
+tor. Lo standard BOOTP/DHCP è utilizzato per fornire automaticamente i parametri IP 
+agli apparecchi. In questo modo non è più necessario gestire individualmente gli indirizzi 
+di ogni apparecchio riportando questa gestione ad un server dedicato di indirizzo IP. Il 
+protocollo DHCP (Dynamic Host Configuration Protocol) consente di attribuire automati-
+camente i parametri di configurazione agli apparecchi. Il File Transfer Protocol (FTP) 
+fornisce gli elementi base di condivisione file. Il protocollo FTP viene utilizzato da nume-
+rosi sistemi per lo scambio di file tra apparecchi. Trivial File Transfer Protocol (TFTP) è 
+un protocollo di rete utilizzato per collegarsi ad un apparecchio per lo scaricamento di un 
+codice. Può essere ad esempio utilizzato per trasferire un codice boot ad una stazione di 
+lavoro o per collegarsi e scaricare aggiornamenti firmware. La comunità Internet ha inol-
+tre sviluppato lo standard SNMP per consentire la gestione dei diversi componenti di una 
+rete con un unico sistema. Questa funzione consente al gestore di visualizzare lo stato 
+della rete e degli apparecchi, di modificarne la configurazione e di risalire agli allarmi in 
+caso di guasto. Infine, COM/DCOM è il nome della tecnologia a base oggetto di Windows 
+che consente una comunicazione trasparente tra le applicazioni Windows. Tutte queste 
+modalità di comunicazione possono essere implementate nel PLC che supporta moduli di 
+comunicazione appropriati.
+–  Messaggeria Modbus TCP/IP. Modbus, lo standard di comunicazione industriale dal 
+1979, è stato portato su Ethernet TCP/IP, il supporto della rivoluzione Internet, per realiz-
+zare il protocollo Modbus TCP/IP, un protocollo di comunicazione totalmente aperto su 
+Ethernet. Lo sviluppo di un collegamento alla rete Modbus TCP/IP non richiede alcun 
+componente proprietario, né acquisto di licenza. Il protocollo Modbus TCP/IP può essere 
+facilmente utilizzato da qualsiasi apparecchio in grado di supportare uno stack di comuni-
+cazione TCP/IP standard. Lo standard Modbus è molto semplice ed universalmente cono-
+sciuto; molti costruttori implementano questo protocollo e attualmente sono disponibili 
+numerosi prodotti. La semplicità di Modbus TCP/IP consente a qualsiasi piccolo apparec-
+chio, quale ad esempio un’interfaccia d’I/O, di comunicare su Ethernet senza aver biso-
+gno di un microprocessore potente o di una memoria interna estesa, per smistare i 
+messaggi da una rete all’altra senza dover convertire il protocollo e senza preoccuparsi 
+della distanza che li separa.
+–  Servizio I/O Scanning. Il servizio I/O Scanning Service consente di gestire lo scambio 
+d’ingressi/uscite a distanza su rete Ethernet tramite semplice configurazione e senza biso-
+gno di una programmazione specifica. L’elaborazione degli I/O è effettuata in modo tra-
+sparente tramite richieste di lettura/scrittura con protocollo client/server Modbus sul 
+profilo TCP/IP. Questo principio di elaborazione con protocollo standard consente di 
+comunicare con qualsiasi apparecchio che supporta un server Modbus su TCP/IP.
+–  FDR (Faulty Device Replacement). Il servizio di sostituzione di stazioni guaste uti-
+lizza le tecnologie standard (BOOTP, DHCP) gestione file e TFTP (Trivial File Transfer 
+Protocol), allo scopo di facilitare la manutenzione degli apparecchi Ethernet. Questo ser-
+vizio consente di sostituire una stazione guasta con un prodotto nuovo garantendone il 
+rilevamento, la riconfigurazione e il riavviamento automatico mediante sistema, senza 
+intervento manuale. Le fasi principali sono:
+
+[PAG 1360]
+XIV-48
+AUTOMAZIONE
+1)  Guasto di una stazione che utilizza il servizio FDR.
+2)  Un’altra stazione simile, uscita dal parco manutenzione e preconfigurata con il 
+Device name della stazione guasta, viene reinstallata sulla rete.
+3)  Il server FDR rileva la nuova stazione, ne configura l’indirizzo IP e vi trasferisce 
+tutti i parametri di configurazione. La stazione sostituita verifica se i parametri sono com-
+patibili con le proprie caratteristiche, quindi passa in modo operativo.
+–  Protocollo SNMP (Simple Network Management Protocol) di gestione rete. Il proto-
+collo SNMP (Simple Network Management Protocol) consente di controllare, da una sta-
+zione gestore di rete, tutti i componenti dell’architettura Ethernet garantendo una 
+diagnostica rapida in caso di problemi. Consente di interrogare gli apparecchi quali le sta-
+zioni informatiche, i routers, gli switch, i bridge o gli apparecchi terminali per visualiz-
+zarne lo stato; si possono ottenere delle statistiche riguardanti la rete.
+–  Global Data. Il servizio Global Data consente scambi di dati in tempo reale tra sta-
+zioni appartenenti ad uno stesso gruppo di distribuzione. Consente di sincronizzare delle 
+applicazioni a distanza, o di condividere un database comune tra più applicazioni a 
+distanza. Gli scambi si basano su un protocollo standard di tipo produttore/consumatore, 
+che garantisce prestazioni ottimali con un minimo di carico sulla rete.
+–  Gestione banda passante. Di default la porta Ethernet è configurata con banda pas-
+sante in modalità “isolated”: è ad esempio il caso di una macchina isolata collegata su rete 
+Ethernet e che utilizza i servizi Modbus o I/O Scanning. In questo caso si ha la garanzia 
+che il carico della CPU dedicato a Ethernet non superi mai il 50%. Se l’ambiente è più 
+aperto, con la rete collegata ad un altro segmento Ethernet, impostando la banda passante 
+sulla modalità “mastered” si permetterà al processore di assorbire il traffico supplemen-
+tare fino ad un massimo di 1400 messaggi/s. In caso di traffico intenso possono essere uti-
+lizzate fino al 70% delle risorse processore, con conseguente impatto sul tempo di 
+esecuzione dell’applicazione. Infine se la rete macchina è collegata alla rete dell’ufficio o 
+a Internet è possibile che il traffico diventi periodicamente molto pesante. Se questo 
+risulta essere un rischio effettivo la banda passante deve essere impostata al massimo 
+livello, corrispondente alla modalità “open”. Questo permette di assorbire i picchi di traf-
+fico, fino a 2100 messaggi/s, anche se talvolta il carico processore può anche raggiungere 
+l’80%. Questa soluzione è tuttavia adatta alle applicazioni per le quali l’aspetto di elabo-
+razione in tempo reale non è fondamentale. 
+Al momento della scelta dell’architettura, si consiglia di tener conto delle prestazioni. 
+Per fare questo il progettista deve:
+–  Avere un’idea precisa delle necessità in ordine a quantità e tipo di apparecchi da colle-
+gare; volume e tipo degli scambi; tempi di risposta desiderati; caratteristiche generali.
+–  Confrontare le proprie esigenze con le caratteristiche dei prodotti disponibili, sapendo 
+che il livello di prestazioni reale tra 2 punti qualsiasi di un’architettura dipende dalla 
+maglia più debole della catena che può dipendere dall’hardware, ma anche dalle applica-
+zioni che spesso non sono ben definite a questo stadio del progetto.
+–  Decidere qual è l’architettura più adatta.
+Moduli I/O remoti
+Quando si hanno applicazioni dove viene gestita una serie di macchine, per esempio 
+un reparto di lavorazione, si hanno due opportunità operative: collegare ad ogni macchina 
+un PLC collegato in rete con gli altri, oppure collegare un solo PLC che gestisce l’intero 
+reparto a dei moduli I/O remoti dislocati nelle vicinanze delle varie macchine (fino a qual-
+che chilometro dal PLC che li governa).
+Attraverso linee di comunicazione seriale, il PLC (situato in una posizione decentrata 
+dall’ambiente industriale ove risiedono i moduli remoti) governa i vari moduli situati
+
+[PAG 1361]
+AUTOMAZIONE
+XIV-49
+all’interno di propri rack remoti, con il vantaggio di avere la CPU in un ambiente diverso 
+da quello del processo da controllare.
+Modulo comunicazione web 
+L’ultimo nato tra i moduli speciali che si possono configurare in una applicazione che 
+impiega il PLC è il modulo web che consente di connettere in rete (Internet) il PLC e 
+quindi di governarlo in modo remoto. Si tratta in sostanza di un dispositivo che supporta 
+una sorta di MODEM che opportunamente programmato consente di accedere alle fun-
+zioni di supervisione e diagnostica o di semplice controllo del PLC.
+Il modulo Ethernet integra i servizi web di base e tramite un semplice navigatore 
+Internet il server Web integrato autorizza le seguenti funzioni:
+–  Configurazione prodotto.
+–  Diagnostica e manutenzione dei prodotti a distanza.
+–  Visualizzazione e regolazione dei prodotti (variabili lettura/scrittura, stato).
+Con un modulo Ethernet dotato di scheda memoria, il server Web può inoltre offrire le 
+seguenti funzioni:
+–  Gestione allarmi sistema e applicazione controllore con tacitazione (reset) parziale o 
+globale.
+–  Hosting e visualizzazione di pagine Web create dall’utente.
+Il server Web integrato è un server di dati controllore in tempo reale. Tutti i dati pos-
+sono essere presentati sotto forma di pagine Web di base in formato HTML e sono quindi 
+accessibili da qualsiasi navigatore Internet, in grado di eseguire il codice Java. Le fun-
+zioni di base fornite dal server Web sono “pronte all’impiego” e non richiedono quindi 
+alcuna programmazione, né a livello del controllore, né a livello della stazione PC che 
+gestisce il navigatore Internet.
+Tra le ultime novità delle case produttrici sono disponibili inoltre moduli per il 
+comando di motori passo-passo e moduli per la pesatura di manufatti.
+4.2.9  Orodatario
+Nell’ultima produzione di PLC, viene inserito all’interno del modulo Unità Centrale, 
+un orologio calendario. Questo ulteriore accessorio consente di elaborare quei programmi 
+nei quali è necessario attivare dei processi in determinate ore del giorno, considerando 
+anche le variabili giorno della settimana/mese/anno.
+Generalmente le funzioni caratteristiche dell’orodatario sono:
+Programmazione temporale
+Questa funzione permette di programmare eventi a orari e date predefinite: per esem-
+pio, l’accensione del riscaldamento di un edificio scolastico dal 21 ottobre 2010 al 21 
+marzo 2011, dal lunedì al sabato, dalle ore 6:00 alle 16:30 e la domenica dalle ore 22 alle 
+ore 6:00 del lunedì, oltre alla sera di tutti i giorni dalle ore 18:00 alle ore 23:00, escluso la 
+domenica.
+Giornale
+È possibile attribuire una data e un’ora a eventi che accadono, servendosi di determi-
+nate system-word (parole sistema) che memorizzano la data e l’ora correnti. per esempio 
+si vuole che venga segnalato una eventuale arresto del sistema. Oltre alla stampa su stam-
+pante dello data/ora dell’evento, dato un segnale esterno o tramite un bit sistema, si ha 
+l’emissione di un messaggio (visualizzazione su display o stampa su stampante) che 
+annota l’ora e la data in cui un tale evento si è attivato.
+Misurazione di durata
+Sempre servendosi di parole sistema predefinite all’interno del PLC, si possono effet-
+
+[PAG 1362]
+XIV-50
+AUTOMAZIONE
+tuare misurazioni della durata tra due eventi: al verificarsi dell’evento, i valori correnti 
+delle word sistema possono essere trasferiti in determinate word e manipolati con opera-
+zioni aritmetiche, che forniscono informazioni circa la durata di un determinato processo.
+4.3   Periferiche
+I PLC, oltre ai vari moduli accessori, possono essere interfacciati con varie apparec-
+chiature esterne denominate periferiche. Nella Factory Automation, interi reparti di pro-
+duzione potranno essere gestiti a distanza tramite sistemi PLC-PC-MODEM-PC.
+Le configurazioni possibili considerano soluzioni sempre più integrate tra i vari livelli 
+della gestione della fabbrica, fino al governo automatico totale.
+4.3.1  Dialogo operatore
+Nel dialogo con la macchina si ingenerano vari tipi di rapporto, con operatori che 
+hanno diverse competenze:
+–  Tecnico programmatore. Il rapporto con personale che svolge mansioni di program-
+mazione passa attraverso l’utilizzo di linguaggi software, che verranno caricati sul PLC 
+tramite PC e terminali di programmazione dedicati.
+–  Operatore di produzione. Alla manodopera di questo tipo sono richieste mansioni di 
+sola sorveglianza del processo e di assistenza di basso livello, in ordine soprattutto al tipo 
+di manufatti e di prodotti assemblati dalla macchina. Le inferenze di tale operatore passe-
+ranno tramite console semplificate e visualizzatori di semplici messaggi.
+–  Assistente specializzato. È in grado di intervenire nella riparazione di eventuali guasti 
+o di modifiche di menu anche rilevanti dei processi produttivi. Si avvarrà di workstation 
+portatili in grado di supportarlo nell’individuazione dei guasti e delle correzioni da appor-
+tare al sistema.
+Se da un lato le competenze dei vari operatori sono diverse, uguale è invece la consa-
+pevolezza che il dialogo con l’operatore da parte della macchina non può essere svolto in 
+maniera tradizionale; non è più sufficiente dialogare esclusivamente tramite lampade, pul-
+santi, indicatori ecc.
+L’operatore di qualsiasi livello ha bisogno di metodologie che offrano la possibilità di 
+avere sotto controllo lo stato del processo, variabili comprese; occorre inoltre avere la 
+possibilità di intervenire on-line sui set-points delle varie applicazioni.
+Gli strumenti per ottenere questo dialogo tra operatore e macchina sono i seguenti.
+Console di programmazione
+La console di programmazione è l’apparecchiatura che consente di effettuare il carica-
+mento del programma sul PLC. Infatti, mentre un PC ha la possibilità di compilare e nello 
+stesso tempo di eseguire le istruzioni di programma, nel PLC queste funzioni sono 
+distinte: il PLC esegue un programma sulla scorta di istruzioni che gli vengono tradotte in 
+linguaggio macchina da una console di programmazione.
+Le funzioni di una console rispetto al PLC sono:
+–  Introduzione del programma. Mediante dei tasti codificati si inseriscono le istruzioni 
+del programma (indirizzo e codice operativo). A seconda del tipo di console, il pro-
+gramma sarà compilato in linguaggio mnemonico, con simboli grafici ladder o in simboli 
+grafici booleani. Sarà possibile verificare il corretto inserimento delle istruzioni, lo spo-
+stamento e la modifica delle stesse.
+–  Caricamento dei dati. Questa modalità operativa consente di modificare i dati (valori e 
+indirizzi) dei vari contatti e blocchi funzione del programma. In alcuni casi è possibile, 
+ma con le dovute precauzioni, eseguire tali modifiche anche nello stato di RUN del con-
+trollore programmabile.
+–  Controllo e monitoraggio del programma. È possibile passare in rassegna l’intero pro-
+gramma, scandendolo istruzione per istruzione, visualizzandolo su di un display (general-
+
+[PAG 1363]
+AUTOMAZIONE
+XIV-51
+mente a cristalli liquidi): sarà possibile verificare lo stato logico di ogni allocazione di 
+memoria occupata dal programma, precedentemente editato.
+–  Salvataggio e trasferimento programmi. Il programma generalmente scritto su disposi-
+tivi di tipo RAM necessita il salvataggio di back-up: vi è quindi la possibilità di archiviare 
+in modo definitivo la scrittura, scaricandola su dispositivi che mantengono le informa-
+zioni (dischi o nastri magnetici).
+La console permetterà quindi di scaricare o caricare dalla CPU del PLC all’esterno i 
+vari programmi editati. Vengono commercializzate console di programmazione molto 
+semplici ed economiche che consentono le operazioni sopra descritte e che possono essere 
+integrate o asportabili dal blocco PLC.
+La moderna gestione dei processi produttivi si avvale però di strumenti un po’ più sofi-
+sticati: la console di programmazione viene sostituita da workstation che consentono ope-
+razioni più complesse di editazione e manipolazione dati. Le valigette di programmazione 
+che vengono impiegate sono molto più simili a un PC piuttosto che a una semplice console.
+Personal computer
+Sempre più massiccio è l'impiego del PC per la programmazione e la gestione delle 
+logiche programmabili. Sono commercializzati software applicativi che consentono l’edi-
+tazione di programmi nei linguaggi più disparati (ladder, mnemonico, grafcet, letterale); 
+questi software consentono di scaricare e salvare su dischi o su carta i programmi prodotti 
+e inoltre di monitorare i processi, collegandosi on-line con il PLC. Si va sempre più affer-
+mando la consuetudine di utilizzare dei personal computer portatili o dei computer indu-
+striali, al posto delle semplici console di programmazione.
+Stampante
+Con l’impiego del personal computer interfacciato con il PLC, si è aperto lo spazio 
+per l’utilizzo di altre apparecchiature informatiche di supporto alle logiche programma-
+bili. Si prevedono dunque delle porte seriali o parallele a bordo del PLC o accessorie, che 
+consentono l’interfacciamento dello stesso con stampanti; tale procedura permette di 
+avere sotto controllo lo stato del processo, creando documentazioni storiche degli eventi, 
+per eventuali analisi di dati e menu delle variabili di produzione.
+Programmatore di PROM
+Questa apparecchiatura consente il salvataggio in modo definitivo del programma edi-
+tato, una volta che è stato verificato e collaudato. Il programmatore di PROM è in genere 
+un accessorio delle già citate valigette di programmazione. È una procedura che in alcuni 
+PLC è possibile effettuare tramite cartucce asportabili, o attraverso i software gestiti da 
+personal computer. Vi è quindi la possibilità di editare un programma con una console 
+dedicata o PC in un determinato luogo e, dopo aver salvato la scrittura su di un dispositivo 
+EPROM, installare la cartuccia in apposito vano predisposto nel PLC. Tale programma 
+potrà quindi essere caricato sul PLC per poi essere messo in funzione.
+4.3.2  Monitoraggio e supervisione
+Nella moderna industria manifatturiera sempre più considerevole è l’impiego di 
+sistemi di produzione automatizzati, che fungono da isole separate, siano essi macchine o 
+insieme di macchine o reparti. Per ogni una di queste applicazioni, vi è la necessità da 
+parte dell’operatore di interagire con la macchina, sulla scorta di un feedback (informa-
+zione di ritorno) da essa fornito.
+Terminali di gestione e dialogo
+A livello di unità o di gruppo di macchine comunicanti a basso livello, sono utili i ter-
+minali di gestione e dialogo: il loro impiego nell’automazione industriale spazia dai sem-
+
+[PAG 1364]
+XIV-52
+AUTOMAZIONE
+plici visualizzatori di messaggi ai terminali video. Questi terminali sono impiegati per la 
+loro versatilità nell’adattamento all’interno dei processi industriali; alcune caratteristiche 
+salienti sono:
+–  Visualizzazione dei messaggi in linguaggio interpretabile dall’operatore e leggibile a 
+distanza, poiché tali dispositivi utilizzano display fluorescenti.
+–  I comandi mediante tasti funzione personalizzabili e a effetto tattile (possono essere 
+maneggiati senza problemi anche da operatori che impiegano guanti da lavoro) consen-
+tono una buona manipolazione.
+–  La robustezza di schermi e tastiere e la loro protezione rispetto ai corpi solidi e liquidi 
+(tipicamente IP65) assicurano un buon funzionamento in ambiente industriale.
+Sistemi di supervisione
+Quando il monitoraggio è applicato a processi automatici medio-grandi, si ricorre a 
+sistemi videografici più complessi: i sistemi di supervisione sono in grado di offrire 
+immediatezza nella ricerca di eventuali anomalie e, attraverso animazioni grafiche com-
+puterizzate, danno lo stato del processo e la sua evoluzione in tempo reale. Vengono com-
+mercializzati pacchetti software multitask che, con l’ausilio di PC o personal computer 
+industriali, consentono una serie di operazioni:
+–  Comunicare con gli operatori (sinottici grafici animati, tastiere, mouse, report su 
+stampante, curve di trend, bargraph e istogrammi, tabelle, allarmi).
+–  Assistere gli operatori (aiuto alla diagnostica, alla manutenzione, pilotaggio interat-
+tivo a vista, funzioni help associate a messaggi di errore).
+–  Comunicare con il livello 1 di CIM (PLC, CNC, robots, sottoinsiemi intelligenti, auto-
+matismi decentralizzati).
+–  Comunicare con altri sistemi (sistemi di monitoraggio a più postazioni distribuite, 
+comunicazione verticale e orizzontale in ambito CIM).
+–  Compatibilità con altri software (foglio elettronico, database, ambiente DOS).
+–  Registrazione e archivio informazioni (database in realtime, dati storici, archivi locali, 
+archivi su server di rete).
+–  Analisi delle informazioni on-line (calcoli matematici, analisi statistiche, algoritmi 
+programmabili).
+–  Coordinamento isole d’automazione (algoritmi programmabili, diffusione variabili, 
+regolazione blocchi funzione).
+–  Telecaricamento programmi e ricette (archivio e carico ricette di fabbricazione, fun-
+zione server per programmi di PLC, archivi locali o su server di rete).
+È quindi possibile costruire, tramite questi software, delle pagine di animazione e di 
+monitoraggio dei sistemi, con una potenzialità tale da soppiantare completamente le strut-
+ture sinottiche tradizionali, molto più rigide, che non consentono assolutamente la mani-
+polazione e l’elaborazione dei dati.
+Simulatori
+In fase di progettazione e ancor più per applicazioni didattiche o in laboratori attrez-
+zati per gli educational, molto spesso non si hanno dotazioni di attrezzature e materiali 
+molto specifiche; in particolare non si dispone di tutta una serie di trasduttori e sensori 
+che si ritrovano poi alla fine sul campo.
+È utile in questo caso l’impiego di simulatori che appunto sostituiscono i vari sensori 
+nel collegamento con gli ingressi fisici del PLC. Tali simulatori generalmente si collegano 
+al controllore programmabile, in guisa delle morsettiere di I/O. Tipicamente le morsettiere 
+sono di tipo estraibile; questo consente il loro distacco, e la sostituzione del PLC in caso 
+di guasto, in maniera molto veloce, senza dover staccare il cablaggio ai sensori. Al posto 
+di tali morsettiere è possibile collegare i citati simulatori di ingressi.
+
+[PAG 1365]
+AUTOMAZIONE
+XIV-53
+5  LA MESSA IN SERVIZIO DEL PLC
+Per il controllore a logiche programmabili, al momento dell’installazione, vengono 
+osservati una serie di accorgimenti e di procedure che condizionano positivamente il fun-
+zionamento dell’apparecchiatura.
+Tali precauzioni riguardano il campo di operatività in ordine alle condizioni 
+dell’ambiente in cui si lavora, l’installazione e i collegamenti, e non da ultimo la sicurezza 
+dei sistemi che si andranno a controllare mediante il PLC.
+5.1  Conformità alle norme
+Come per tutte le apparecchiature elettriche ed elettroniche, anche i PLC sottostanno 
+alla normativa nazionale ed internazionale relative alle apparecchiature elettroniche dei 
+sistemi di automazione industriale, in ordine al loro confezionamento, installazione e 
+impiego. Norme specifiche dettano le caratteristiche che i PLC devono avere rispetto alla 
+funzionalità, immunità ai disturbi, robustezza, sicurezza.
+A livello internazionale opera la IEC (International Electrotechnical Commission) 
+che ha emanato nel 1993/94 la norma IEC 1131; tale norma si applica ai Controllori pro-
+grammabili (e alle periferiche associate) ed è stata tradotta dal Comitato Tecnico 65 del 
+CEI Controllo e misura nei processi industriali in Norma Italiana:
+–  65-23 (CEI EN 61131-1) Controllori programmabili, Parte 1: Informazioni generali. 
+I contenuti di questa prima parte della normativa sui PLC sono le generalità, le definizioni 
+e un glossario dei termini utilizzati negli impianti automatici, oltre alla presentazione 
+delle caratteristiche funzionali di un sistema a logica programmabile.
+–  65-39 (CEI EN 61131-2) Controllori programmabili, Parte 2: Specificazioni e prove 
+delle apparecchiature. Sono descritte in questa seconda parte della norma le condizioni di 
+servizio e le prescrizioni relative all’ambiente fisico di funzionamento; vengono inoltre 
+esposte le prescrizioni elettriche, meccaniche e le prove e verifiche da effettuarsi sulle 
+apparecchiature; infine si definiscono le informazioni e la documentazione che il costrut-
+tore deve fornire al cliente utilizzatore delle apparecchiature.
+–  65-40 (CEI EN 61131-3) Controllori programmabili, Parte 3: linguaggi di program-
+mazione. Questa norma specifica gli elementi generali e comuni che caratterizzano i vari 
+linguaggi di programmazione; si occupa inoltre delle regole sintattiche e semantiche dei 
+linguaggi di programmazione testuali e grafici che vengono standardizzati e unificati, i 
+quali soddisfano in genere le necessità di qualsiasi operatore che si avvicini a tale 
+ambiente.
+Altra Norma CEI da considerare nell’installazione e nella gestione dei PLC è la 64-8/
+4 Impianti elettrici utilizzatori a tensione nominale non superiore a 1000 V in corrente 
+alternata e a 1500 V in corrente continua - Parte 4: Prescrizioni per la sicurezza.
+5.2  Installazione, collegamenti
+L’installazione dei PLC, all’interno di armadi o quadri, deve avvenire tenendo in 
+debito conto un’adeguata distanza tra il controllore a logica programmabile ed eventuali 
+altre apparecchiature: si eviti l’installazione di apparecchiature che generano calore, quali 
+trasformatori, contattori, alimentatori, al di sotto del PLC e dei suoi moduli di espansione; 
+ovviamente le apparecchiature che generano calore lo inviano verso l’alto e quindi non 
+contribuiscono certamente al raffreddamento dei dispositivi che le sovrastano, nello spa-
+zio all’interno dell’armadio. Si preveda quindi attorno al PLC uno spazio libero che ne 
+consenta una corretta ventilazione e la possibilità di sfilare agevolmente i vari moduli per 
+eventuali manutenzioni (Fig. XIV.5.1).
+Si deve tenere conto di una serie di suggerimenti e precauzioni riguardanti il cablag-
+gio e il collegamento:
+–  Le canaline di scorrimento dei cavi vengono poste ad una distanza minima di 50 mm
+
+[PAG 1366]
+XIV-54
+AUTOMAZIONE
+Fig. XIV.5.1   Esempio di cablaggio di PLC entro armadi.
+dal PLC, mentre i cavi di cablaggio tra i dispositivi vengono lasciati allentati di 20-30 mm 
+per avere la possibilità di sfilare le morsettiere degli I/O in caso di sostituzione del PLC.
+–  I vari moduli che compongono il PLC vengono collegati tra loro mediante cavi stan-
+dardizzati con connettori SUB-DIN a vaschetta a 9, 15 o 25 pin. La lunghezza dei cavi 
+generalmente non supera la lunghezza massima di alcuni metri, pena il non corretto tra-
+sferimento delle informazioni tra i vari moduli; per lunghezze maggiori si ricorre a moduli 
+specialistici quali gli I/O remoti o le configurazioni di PLC collegati in rete.
+–  Il collegamento dei sensori e attuatori avviene tramite normale cavo unipolare, di 
+sezione opportunamente dimensionata a seconda dei carichi da collegare; nell’eventualità 
+di cavi multifilari, si abbia l’accortezza di comprendere anche il conduttore comune ai 
+vari sensori, tra i fili che compongono il cavo.
+–  Il cablaggio di eventuali ingressi rapidi, che non sono filtrati per poter permettere un 
+veloce tempo di risposta, viene eseguito con cavi schermati. Lo stesso vale per gli ingressi 
+e le uscite di tipo analogico, i cui segnali saranno trasmessi tramite cavi pari-ritorti-scher-
+mati, di lunghezza massima dell’ordine di alcune centinaia di metri.
+–  I cavi di cablaggio di apparecchiature di potenza devono essere posti in canalizzazioni 
+diverse da quelle degli ingressi/uscite e, se percorrono spazi paralleli, devono essere 
+disposti a non meno di 300 mm di distanza dagli altri; parimenti è utile dividere i condut-
+tori degli ingressi da quelli delle uscite, alloggiandoli in canaline separate.
+–  Il collegamento degli ingressi particolari, quali interruttori di prossimità o contatori 
+veloci, viene di solito precisato nei manuali delle varie case costruttrici. Se i carichi colle-
+gati alle uscite sono di tipo induttivo (contattori, relè, elettrovalvole), alla apertura del 
+contatto del relè di uscita si generano dei picchi di tensione dovuti alla forza controelettro-
+motrice indotta; tali sovratensioni determinano dei fenomeni di arco tra i contatti 
+dell’uscita stessa del PLC ed il loro conseguente deterioramento. Si rimedia collegando in 
+parallelo al carico un soppressore dell’arco formato da un circuito RC nel caso di sistema 
+in ca, oppure un diodo in caso di alimentazione in cc (Fig. XIV.5.2).
+–  Infine occorre sempre ricordare di non inserire o rimuovere moduli o cartucce memo-
+ria dei PLC quando il sistema è sotto tensione, onde evitare il loro eventuale danneggia-
+mento.
+(a) Canalina o supporto
+(a)
+(b)
+      cavi di collegamento
+(b) Apparecchio o cassetta
+(a)
+100 mm
+100 mm
+> 50 mm
+> 50 mm
+> 50 mm
+150 mm
+> 50 mm
+> 50 mm
+150 mm
+150 mm
+
+[PAG 1367]
+AUTOMAZIONE
+XIV-55
+Fig. XIV.5.2   Circuito antidisturbo per carichi induttivi collegati al PLC.
+5.3  Alimentazione, trasformatore di sicurezza
+L’alimentazione di un PLC può essere effettuata in corrente continua o in alternata: a 
+seconda delle condizioni di impiego si utilizzano controllori adeguati al il tipo di alimen-
+tazione disponibile.
+Tipicamente sono disponibili PLC con alimentazione a 24 V in cc o in alternata 110 ÷ 
+240 V, dove gli ingressi e le uscite possono essere alimentati anch’essi a diverse tensioni 
+di diversi sistemi. Generalmente l’alimentazione del modulo base avviene con la stessa 
+linea con cui si alimentano gli attuatori, mentre, per gli ingressi, l’alimentazione è sepa-
+rata.
+Fig. XIV.5.3   Schema di cablaggio I/O e alimentazione di PLC.
+KA
+K1
+K2
+KB
++
+-
+Carico in ca
+Carico in cc
+C
+R
+D
+K1 = Contatto uscita PLC
+K2 = Contatto uscita PLC
+KA = Carico alimentato in ca
+KB = Carico alimentato in cc
+R = Resistenza 50    1/2 W
+C = Condensatore 0,5   F 1500 V
+D = Diodo di valore commisurato
+alle caratteristiche del carico
+8,11
+COM
+4,7
+COM
+3
+COM
+2
+COM
+1
+COM
+0
+N
+L
+COM
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10 11 24
+25
+V C.C.
+21
+20
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+24
+0
+PLC TELEMECANIQUE TSX 17-20
+QP Interruttore di protezione
+1
+2
+KA
+3
+KA
+4
+5
+QG
+QL
+L1
+N
+QG Sezionatore generale automatico
+QL Sezionatore di linea automatico
+KA Contattore di asservimento all'uscita di sicurezza
+QU Interruttore di inibizione uscite comandato da KA
+QP
+1   Alimentazione dei moduli di estensione
+2   Circuito comando di sicurezza
+3   Alimentazione attuatori eventuali estensioni
+4   Morsetto di terra
+5   Barra DIN per fissaggio PLC e morsetto a plancia
+6   Massa da collegare a impianto di terra locale
+6
+QU
+
+[PAG 1368]
+XIV-56
+AUTOMAZIONE
+Nella Fig. XIV.5.3 è rappresentata la tipica alimentazione di un dispositivo a logica 
+programmabile (TSX17_20 Telemecanique). La tensione di alimentazione può variare da 
+110 a 240 V ed è derivata a valle di un interruttore generale (QG) e di un interruttore di 
+linea (QL). Interposto tra il PLC e l’interruttore QL vi è un trasformatore di isolamento 
+(con rapporto di trasformazione 1:1), il quale consente un disaccoppiamento galvanico tra 
+l’apparecchiatura e la linea di alimentazione, che preserva il PLC da eventuali disturbi 
+presenti in linea.
+L’alimentazione delle uscite viene sezionata tramite un interruttore (QU) equipaggiato 
+con una bobina di sgancio di minima tensione (KA) che viene asservita all’uscita di sicu-
+rezza O0,00: quando dovesse mancare tensione al PLC, o si presentasse una situazione di 
+emergenza, tramite la bobina di sgancio KA l’interruttore QU inibisce tutte le uscite colle-
+gate alla logica programmabile, mandandole a zero. È presente inoltre un interruttore 
+magnetotermico (QP) di protezione del circuito che alimenta le uscite del PLC.
+Come si può evincere dallo schema dei collegamenti, ogni massa meccanica (moduli 
+del PLC, trasformatore ecc.) deve essere collegata indipendentemente e direttamente, uti-
+lizzando il percorso più breve possibile, al morsetto di terra francamente connesso al 
+telaio di fondo dell’armadio, con conduttori di sezione 2,5 mm2 di colore giallo-verde; da 
+tale morsetto una treccia di rame di ottima qualità collegherà il sistema alla terra del 
+locale di installazione.
+Nell’esempio (Fig. XIV.5.3) gli ingressi sono 
+alimentati a 24 V cc direttamente da una presa 
+configurata sul modulo base del PLC. Nella Fig. 
+XIV.5.4 viene visualizzato il collegamento delle 
+apparecchiature connesse all’uscita di sicurezza 
+(SECU O0,00):
+–  il pulsante a fungo S1 è un arresto di emer-
+genza, che per eventuali situazioni di pericolosità 
+determina la fermata del sistema;
+–  il pulsante S2 è il comando di RUN, cioè per-
+mette l’avvio del sistema collegato alle uscite del 
+PLC;
+–  il selettore S3 commuta il funzionamento da 
+automatico in manuale; nella posizione manuale il 
+sistema SECU viene inibito per poter eventual-
+mente forzare via software i bit di uscita, in caso 
+di STOP del PLC dovuto alla messa a 1 di un bit 
+sistema che porta a zero tutte le uscite; nella posi-
+zione di automatico del selettore, il sistema può 
+funzionare solo asservito allo stato di RUN del 
+controllore (in caso contrario l’uscita O0,00 viene 
+messa a zero e determina lo sgancio di QU tramite 
+la diseccitazione della bobina di sgancio KA).
+Il circuito RC collegato in parallelo alla 
+bobina KA serve per la protezione dei dispositivi 
+di uscita del PLC quando, allo sgancio delle 
+bobine dei contattori collegati alle uscite stesse, si 
+determinano fenomeni di arco elettrico.
+Fig. XIV.5.4   Asservimento delle appa- 
+recchiature all’uscita SECU del PLC.
+USCITA
+SECU
+O0,00
+C0
+0
+S3
+Auto
+Manuale
+CIRCUITO RC
+KA
+KA
+Run
+Stop Emergenza
+S1
+S2
+
+[PAG 1369]
+AUTOMAZIONE
+XIV-57
+5.4  Condizioni ambientali e di servizio
+Ogni macchina o apparecchiatura di qualsiasi genere viene progettata per poter agire 
+in determinate condizioni ambientali e di servizio.
+Solo se si rientra nel range di tali condizioni progettuali, le case costruttrici garanti-
+scono il buon funzionamento dell’apparecchio.
+La norma CEI 65-39 stabilisce quali debbano essere le prove che i costruttori devono 
+effettuare sulle apparecchiature che producono.
+–  Prova di robustezza al freddo e al caldo secco;
+–  Prova di robustezza al caldo umido ciclico (12 + 12);
+–  Prova di immunità alle vibrazioni;
+–  Prova di immunità agli urti;
+–  Prova di robustezza/immunità alle cadute libere (apparecchiature portatili ed utilizza-
+bili in mano);
+–  Prova di robustezza/immunità alle cadute libere (unità nell’imballaggio originale for-
+nito dal costruttore);
+–  Prova di robustezza agli impatti;
+–  Prove di accessibilità con verifica delle distanze in aria, ai terminali di collegamento, 
+all’installazione;
+–  Prova di sovratemperatura;
+–  Prova di inserzione/disinserzione delle unità rimovibili;
+–  Prova di immunità alle scariche elettrostatiche;
+–  Prova di immunità ai campi elettromagnetici irradiati;
+–  Prova di immunità alle scariche di impulsi veloci;
+–  Prova di immunità alle onde oscillatorie smorzate;
+–  Prova di immunità di tensione e frequenza;
+–  Prova di immunità alla terza armonica;
+–  Prova di immunità alle interruzioni momentanee dell’alimentazione esterna;
+–  Prova di arresto/avviamento graduale;
+–  Prova di variazione graduale dell’alimentazione;
+–  Prove di variazione dell’alimentazione esterna;
+–  Prova di robustezza relativa alla durata del soccorso;
+–  Prova di cambiamento della sorgente d’energia;
+–  Prova di sovraccarico e di corto circuito per le uscite digitali;
+–  Prova standard normale di rigidità dielettrica in c.a. e in c.c.
+–  Prova opzionale normale di rigidità dielettrica in c.a. e in c.c.
+Condizioni ambientali
+Il campo di funzionamento di una logica programmabile, secondo la norma CEI 65-
+39, viene dato entro determinati parametri:
+–  la temperatura dell’ambiente varia generalmente tra 5 °C e i 55 °C (nel caso la tempe-
+ratura all’interno del quadro dove il PLC è situato fosse maggiore di 55 °C, si deve preve-
+dere la ventilazione forzata tramite un ventilatore);
+–  l’umidità relativa deve essere compresa in un intervallo tra il 30% e il 95%, senza 
+naturalmente presenza di condensa, altrimenti si deve prevedere un diverso grado di pro-
+tezione (IP);
+–  l’altitudine varia nell’intervallo da 0 a 2.000 m;
+–  sono previste vibrazioni a frequenza sinusoidale sui tre assi che generano ampiezze 
+minime di spostamento dell’apparecchiatura;
+–  gli shock meccanici previsti includono la caduta, il ribaltamento, gli urti;
+
+[PAG 1370]
+XIV-58
+AUTOMAZIONE
+–  non devono essere presenti gas corrosivi o infiammabili, spruzzi d’acqua, di olio o 
+sostanze chimiche; inoltre sono da evitare condizioni di operatività con presenza di molta 
+polvere o particelle di sale e ferro.
+Sicurezza
+Un sistema si definisce sicuro quando appare remota l’evenienza della comparsa di 
+guasti e tuttavia tali evenienze non producono effetti devastanti; si ha sicurezza totale
+quando un eventuale guasto non produce in ogni caso situazioni di pericolo.
+Si possono avere guasti di tipo passivo e di tipo attivo:
+–  Il guasto passivo si traduce in un circuito d’uscita aperto, cioè non determina alcuna 
+attivazione di attuatori esterni.
+–  Un guasto attivo si traduce in un circuito d’uscita chiuso e determina di conseguenza 
+l’attivazione di una uscita.
+La pericolosità di un guasto dipende chiaramente dal tipo di funzione associata al 
+dispositivo che va fuori uso: un difetto passivo è pericoloso se la funzione associata 
+all’apparecchiatura, in condizione di normale funzionamento, era quella di generare un 
+allarme (che in tal caso non viene dato); nel caso di un guasto attivo, esso assume carat-
+tere dirompente quando mantiene attivo un comando indesiderato, in una contingente 
+situazione di malfunzionamento.
+Ci si deve quindi premunire per eventuali guasti attivi all’interno del PLC con degli 
+impianti di sicurezza esterna, come quello per esempio di un finecorsa o di uno sgancio di 
+emergenza esterno all’apparecchiatura.
+Sono inoltre disponibili nella maggior parte dei PLC dei bit sistema e dei bit di difetto, 
+i quali opportunamente utilizzati all’interno del programma utente, salvaguardano il buon 
+funzionamento dell’automazione anche in caso di eventuali guasti, se appunto accorta-
+mente pronosticati.
+Per esempio nel PLC TSX17_20 Telemecanique è disponibile il bit sistema SY8 che, 
+se messo a 1 tramite il programma utente, interrompe l’elaborazione del PLC tramite la 
+messa a zero delle uscite; oppure è già stata menzionata la possibilità di configurare per 
+via software l’uscita O0,00 come uscita di sicurezza, per cui se manca tensione al PLC, 
+tutte le uscite vengono comunque inibite.
+Affidabilità
+Si definisce affidabile quel dispositivo che, utilizzato entro ben definiti campi di 
+impiego, compie determinate funzioni, rendendo il più basso possibile il tasso di guasto 
+dovuto a disfunzioni dell’apparecchiatura stessa. La riduzione di tale tasso di guasto va 
+ricercata soprattutto in funzione della sicurezza.
+Per quanto riguarda il campo dell’automazione industriale, la maggior parte dei guasti 
+è statisticamente dovuta ai trasduttori, agli attuatori e agli organi meccanici; diventa 
+importante quindi l’utilizzo delle caratteristiche autodiagnostiche del PLC, per poter 
+ricercare con tempestività questi guasti e difetti di funzionamento.
+In genere i PLC dispongono di dispositivi di autodiagnosi in ordine al corretto funzio-
+namento dei loro organi interni e delle periferiche:
+–  Per la CPU: controllo del microprogramma, delle memorie interne, gestione della 
+scansione tramite watchdog.
+–  Cartuccia o modulo memoria: verifica della presenza, del tipo e del contenuto delle 
+varie celle.
+–  Ingressi/Uscite: verifica della loro presenza, dell’assenza di corto circuiti nei punti di 
+uscita, controllo del flusso di informazioni sul bus I/O.
+Questi test vengono visualizzati tramite dei led situati sul frontale delle apparecchia-
+ture; generalmente vengono pure utilizzati nel programma utente dei bit sistema di dia-
+
+[PAG 1371]
+AUTOMAZIONE
+XIV-59
+gnosi di eventuali guasti.
+Alcuni PLC dispongono di due CPU che lavorano contemporaneamente in sincroni-
+smo; se una si guasta, il funzionamento del sistema non viene pregiudicato poiché 
+l’impianto continua a funzionare governato dalla seconda CPU. In questo caso si può par-
+lare di affidabilità totale da parte dell’apparecchiatura.
+Segnalazioni
+Un’immediata diagnostica sul funzionamento dell’apparecchiatura è offerta dai led 
+presenti sul frontale di ogni PLC. Tipicamente la segnalazione del led ha tre stati:
+–  led spento per stato di assenza di alimentazione o di funzionamento normale;
+–  led lampeggiante per stato di stand by (attesa) o di inizio di eventuali procedure;
+–  led acceso a luce fissa per segnalare lo stato di RUN o di eventuale guasto ad elementi 
+del controllore.
+La norma CEI 65-39 definisce tra l’altro le caratteristiche costruttive che devono 
+avere i PLC e tra queste i tipi di segnalazione che ogni controllore deve fornire.
+Nella Tab. XIV.5.1 si ha l’esempio di come la visualizzazione dello stato dei compo-
+nenti interni al PLC possa avvenire tramite i led alloggiati sul frontale del modulo CPU di 
+un PLC Telemecanique TSX17_20.
+Tab. XIV.5.1   Segnalazioni stato di servizio mediante LED posti sul frontale del PLC
+LED
+STATO
+SIGNIFICATO
+PROBABILI CAUSE E CORREZIONI
+RUN / STOP
+Spento
+Controllore non in 
+tensione.
+Lampeggio
+Controllore in 
+STOP
+Stato desiderato o dovuto a guasto.
+Acceso
+Controllore in 
+RUN.
+Stato normale.
+CPU/Program
+Spento
+Funzionamento 
+normale.
+Lampeggio
+Sgancio watchdog 
+(Stop PLC).
+Errore di programmazione. Per esempio Jump 
+all’indietro: correggere programma.
+Acceso
+Guasto 
+processore.
+Guasto cartuccia o controllore: sostituire 
+elemento.
+I/O Mem
+Spento
+Funzionamento 
+normale.
+Lampeggio
+Memoria non 
+inizializzata.
+Inizializzare la memoria;
+controllare lo stato di carica della pila.
+Acceso
+Guasto I/O.
+Non conforme configurazione software a configu-
+razione hardware; 
+assenza dispositivo di chiusura estensione; cavo di 
+collegamento interrotto;
+assenza di alimentazione agli ingressi; guasto sui 
+circuiti I/O o BUS: sostituire il controllore.
+Batteria
+Lampeggio
+Pila assente o difettosa. Cavo collegamento inter-
+rotto;
+assenza dispositivo di chiusura estensione.
+
+[PAG 1372]
+XIV-60
+AUTOMAZIONE
+5.5  Caratteristiche ergonomiche
+Il paragrafo riguardante le caratteristiche ergonomiche della Norma CEI 65-23 con-
+tiene raccomandazioni volte a promuovere un uso efficiente del sistema a logica program-
+mabile e delle sue periferiche e a ridurre al minimo le possibilità di errore umano, 
+affaticamento e rischi per l’operatore.
+Indicatori di stato
+ I dispositivi di alimentazione, l’unità di elaborazione principale, i moduli di I/O e le 
+stazioni di ingresso/uscita remota devono essere provvisti di indicatori di stato.
+Schermi
+Gli schermi devono essere chiaramente e facilmente leggibili fino a 1 m di distanza 
+con un’angolazione massima di 30° rispetto a quella normale.
+Devono essere presenti dispositivi di regolazione della luminosità e devono avere un 
+buon contrasto tra le aree chiare e quelle scure.
+Tastiere
+Le tastiere devono poter essere posizionate in modo tale che le mani dell’operatore 
+non ostruiscano la vista dello schermo.
+I tasti devono essere disposti in maniera logica e i gruppi di tasti che hanno la stessa 
+classificazione devono essere riuniti nella stessa area (per esempio, tutti i numeri in 
+un’area, tutte le lettere in un’altra, tutti i tasti cursore in un’altra ancora ecc.).
+La spaziatura dei tasti deve permettere di premere contemporaneamente due tasti adia-
+centi con due dita qualunque senza che queste dita tocchino i tasti vicini.
+È necessario predisporre un sistema di risposta alla battitura dei tasti (per esempio tat-
+tile, con segnali acustici ecc.). Per i segnali acustici deve essere previsto un dispositivo di 
+regolazione o disattivazione.
+Altre raccomandazioni
+ Se il sistema contiene ventole o dispositivi che producono vibrazioni, questi non 
+devono far vibrare la tastiera o lo schermo.
+Le superfici esterne del sistema PLC che sono visibili dalla normale posizione opera-
+tiva e che si trovano nel campo visivo durante il funzionamento, non devono essere riflet-
+tenti. 
+Non devono essere presenti spigoli vivi che possano provocare tagli o abrasioni 
+all’operatore. 
+Un dispositivo che viene definito portatile dal costruttore e pesa più di 3 kg deve 
+essere provvisto di maniglia. La sua struttura deve essere tale da permettere la protezione 
+di tastiere e schermi durante il trasporto.
+5.6  Manutenzione e ricerca guasti
+Una buona manutenzione ordinaria con cadenza semestrale o annuale elimina già una 
+gran parte delle disfunzioni, che possono ingenerarsi in un qualsiasi sistema industriale.
+Nel caso avvenga un guas
