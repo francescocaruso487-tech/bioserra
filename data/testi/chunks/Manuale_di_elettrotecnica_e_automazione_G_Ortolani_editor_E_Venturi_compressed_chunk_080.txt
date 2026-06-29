@@ -1,0 +1,1417 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 80/116 ===
+Chars: 44,380 | Offset: 3,488,662
+
+
+
+[PAG 1633]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-33
+La FdT dell'amplificatore reazionato è:
+(XVII.3.5)
+I valori della resistenza d'ingresso Rir e della resistenza d'uscita Rur, rispetto ai corri-
+spondenti valori di Ri e Ru dell'amplificatore base, sono: Rir   Ri e Rur   Ru.
+2)  Topologia paralleloserie (Fig. XVII.3.6b)
+–  L'amplificatore base è un amplificatore di corrente.
+–  Il comparatore è costituito da un circuito con topologia parallelo, e il confronto è
+fra IS e Ir.
+–  La rete di prelievo ha topologia serie, per applicare la corrente IU alla rete di rea-
+zione.
+–  La topologia dell'amplificatore reazionato risultante è detta paralleloserie.
+–  Se si applica all'ingresso il segnale iS = IS cos(t + ), si determinano le seguenti
+funzioni di trasferimento: per l'amplificatore di corrente, Ai(j = IU(jId(j; per la rete
+di reazione, (j = Ir(jIU(j.
+–  La FdT dell'amplificatore reazionato è:
+(XVII.3.6)
+–  I valori della resistenza d'ingresso Rir, e della resistenza d'uscita Rur, rispetto ai cor-
+rispondenti valori di Ri e Ru dell'amplificatore base, sono: Rir   Ri e Rur   Ru.
+3)  Topologia serieserie (Fig. XVII.3.6c)
+–  L'amplificatore base è un amplificatore di transconduttanza.
+–  Il comparatore è costituito da un circuito con topologia serie, e il confronto è fra US
+e Ur.
+–  La rete di prelievo ha topologia serie, per applicare la corrente IU alla rete di rea-
+zione.
+–  La topologia dell'amplificatore reazionato risultante è detta serieserie.
+–  Applicando all'ingresso il segnale uS = US cos(t + ), si determinano le seguenti
+funzioni di trasferimento: per l'amplificatore di corrente, Gm(j = IU(jUd(j; per la
+rete di reazione, (j = Ur(jIU(j.
+–  La FdT dell'amplificatore reazionato è:
+(XVII.3.7)
+–  I valori della resistenza d'ingresso Rir e della resistenza d'uscita Rur, rispetto ai cor-
+rispondenti valori di Ri e Ru dell'amplificatore base, sono: Rir   Ri e Rur   Ru.
+4)  Topologia paralleloparallelo (Fig. XVII.3.6d).
+–  L'amplificatore base è un amplificatore di transresistenza.
+–  Il comparatore è costituito da un circuito con topologia parallelo, e il confronto è
+fra IS e Ir.
+–  La rete di prelievo ha topologia parallelo, per applicare la tensione UU alla rete di
+reazione.
+–  La topologia dell'amplificatore reazionato risultante è detta paralleloparallelo.
+Avr j
+
+
+UU j
+
+
+US j
+
+
+-------------------
+Av j
+
+
+1
+Av j
+
+j
+
+
++
+--------------------------------------------
+=
+=
+Air j
+
+
+IU j
+
+
+IS j
+
+
+-----------------
+Ai j
+
+
+1
+Ai j
+
+j
+
+
++
+-------------------------------------------
+=
+=
+Gmr j
+
+
+IU j
+
+
+US j
+
+
+------------------
+Gm j
+
+
+1
+Gm j
+
+j
+
+
++
+----------------------------------------------
+=
+=
+
+[PAG 1634]
+XVII-34
+ELETTRONICA ANALOGICA E DIGITALE
+–  Se si applica all'ingresso il segnale iS = IS cos(t + ), si determinano le seguenti
+funzioni di trasferimento: per l'amplificatore di corrente, Rm(j = UU(jId(j; per la
+rete di reazione, (j = Ir(jUU(j.
+–  La FdT dell'amplificatore reazionato è:
+(XVII.3.8)
+–  I valori della resistenza d'ingresso Rir, e della resistenza d'uscita Rur, rispetto ai cor-
+rispondenti valori di Ri e Ru dell'amplificatore base, sono: Rir   Ri e Rur   Ru.
+B)  Guadagno di trasferimento reazionato
+In un generico amplificatore reazionato negativamente,Ar(j)è detto guadagno di
+trasferimento reazionato e dalla XVII.3.4 si ottiene:
+(XVII.3.9)
+C)  Guadagno d'anello in un amplificatore con reazione negativa
+Il guadagno d'anello (si veda la XVII.2.20) in un amplificatore con reazione negativa è
+Xr(j)Xd(j)A(j)(j).
+Per A(j)(j) » 1, l'amplificatore reazionato ha un elevato guadagno d'anello. Il
+guadagno di trasferimento reazionato vale Ar (j)1 (j) e dipendente dalle caratte-
+ristiche della sola rete di reazione; se quest'ultima è lineare, anche il sistema reazionato è
+lineare. Da A(j)(j)» 1 si ha A(j)» 1(j)e Ar (j)« A(j).
+La condizione Ar (j)1 (j) comporta che l'amplificatore reazionato sia indi-
+pendente dalle caratteristiche dell'amplificatore di base; la reazione negativa, quindi,
+minimizza gli inconvenienti degli amplificatori base: banda limitata, derive termiche,
+rumore, distorsione, caricamento fra blocchi nei collegamenti in cascata. Ad esempio, in
+un amplificatore di tensione con reazione negativa, se la resistenza d'uscita dell'amplifica-
+tore di base Ru è elevata, essa può essere diminuita reazionando l'amplificatore negativa-
+mente con guadagno d'anello elevato, e si ha: Rur  Ru A(j)(j)). In questo modo
+Rur « Ru, e si può collegare un altro blocco in cascata all'amplificatore, evitando l'effetto di
+caricamento.
+D)  Risposta in frequenza in un amplificatore con reazione negativa
+La risposta in frequenza di un amplificatore con reazione negativa dipende dalla FdT
+A(j) dell'amplificatore di base e dalla FdT della rete di reazione (j).
+Come esempio d'analisi della risposta in frequenza di un amplificatore con reazione
+negativa, si considera un amplificatore reazionato che soddisfa le seguenti condizioni.
+L'amplificatore base ha FdT con un solo polo, pulsazione di taglio inferiore L  0,
+amplificazione A0 = costante per 0   H, pulsazione di taglio superiore H. La FdT ha
+espressione:
+(XVII.3.10)
+La FdT della rete di reazione è (j) = , costante reale.
+Rmr j
+
+
+UU j
+
+
+IS j
+
+
+-------------------
+Rm j
+
+
+1
+Rm j
+
+j
+
+
++
+---------------------------------------------
+=
+=
+Ar j
+
+
+XU j
+
+
+XS j
+
+
+-----------------------
+A j
+
+
+1
+A j
+
+j
+
+
++
+----------------------------------------------
+=
+=
+A j
+
+
+A0
+1
+j 
+H
+-------
++
+--------------------
+=
+
+[PAG 1635]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-35
+Con queste ipotesi, e per sostituzione della XVII.3.10 nella XVII.3.4, si ottiene:
+Dividendo numeratore e denominatore per A0, si ottiene:
+(XVII.3.11)
+avendo posto:
+(XVII.3.12)
+con: A0r = amplificazione dell'amplificatore reazionato per  H; Hr = pulsazione di
+taglio alle frequenze alte dell'amplificatore reazionato.
+Dalla XVII.3.12 si deduce che la reazione negativa riduce l'amplificazione del fattore
+di reazione A0, ma ha il vantaggio di aumentare la frequenza di taglio alle frequenze
+alte dello stesso fattore.
+Moltiplicando fra loro i primi membri ed i secondi membri delle relazioni XVII.3.12,
+si ha:
+(XVII.3.13)
+I diagrammi d'ampiezza delle amplificazioni A(j) e Ar(j), rispettivamente
+dell'amplificatore non reazionato e reazionato, sono rappresentati nella Fig. XVII.3.7a. Si
+osserva come la diminuzione dell'amplificazione abbia come corrispettivo un allarga-
+mento della banda passante: la banda dell'amplificatore non reazionato è B = H 0 = H,
+la banda dell'amplificatore reazionato è Br = HA0HA0.
+Se la FdT dell'amplificatore di base ha pulsazione di taglio inferire L 0, ma con
+L« H, si può ritenere:
+(XVII.3.14)
+e quindi si può concludere che la banda passante risulta più ampia (Fig. XVII.3.7b).
+La pulsazione o la frequenza a cui l'amplificazione diviene Ar (j)dB  0 o Ar (j) 
+1, è detta frequenza di transizione o frequenza di guadagno unitario ed è indicata con T
+o anche con BW (Bandwidth). In un sistema a polo singolo, quando A0r  1, è Hr T, e
+dalla relazione XVII.3.13 si deduce che T HA0. Nel caso in esame, essendo B H la
+banda dell'amplificatore base, si ha:
+Ar j
+
+
+A0
+1
+j 
+H
+-------
++
+--------------------
+1
+A0
+1
+j 
+H
+-------
++
+-------------------- 
++
+-----------------------------------
+A0
+1
+j 
+H
+-------
+A0
++
++
+--------------------------------------
+A0
+1
+A0
+j 
+H
+-------
++
++
+--------------------------------------
+=
+=
+=
+Ar
+A0
+1
+A0
++
+--------------------
+1
+j
+
+H 1
+A0
++
+
+
+----------------------------------
++
+-----------------------------------------------
+A0r
+1
+j 
+Hr
+---------
++
+-----------------------
+=
+=
+A0r
+A0
+1
+A0
++
+--------------------
+=
+e
+Hr
+H 1
+A0
++
+
+
+=
+A0r
+Hr
+
+A0
+H
+
+=
+Hr
+A0
+A0r
+--------H
+1
+A0
++
+
+H
+=
+=
+Br
+1
+A0
++
+
+B
+
+
+[PAG 1636]
+XVII-36
+ELETTRONICA ANALOGICA E DIGITALE
+con GBW (Gain - Bandwidth, o prodotto guadagno - banda passante).
+   
+Fig. XVII.3.7   Amplificatori reazionati: a) dia-
+grammi di Bode di un primo amplificatore, con L
+0, senza reazione e con reazione; b) diagrammi lineari
+di un secondo amplificatore, con L 0 e L« H,
+senza reazione e con reazione; c) risposta al gradino
+del primo amplificatore, nella configurazione con rea-
+zione.
+E)  Risposta nel dominio del tempo di un amplificatore con reazione negativa
+La risposta nel dominio del tempo di un amplificatore con reazione negativa è deter-
+minata mediante un segnale a gradino. Utilizzando l'amplificatore dell'esempio prece-
+dente (punto D), l'andamento della risposta è disegnato nella Fig. XVII.3.7c, in cui si è
+indicato con X0u il valore finale del segnale di uscita, a fase transitoria esaurita.
+La risposta è caratterizzata dal tempo di salita tr  t2t1 2,2Hr (si veda la XVII.3.3), con
+Hr = 1/Hr e Hr dato dalla XVII.3.13. Essendo Hr H, il tempo di salita dell'amplifica-
+tore reazionato dell'esempio è minore del tempo di salita dell'amplificatore base.
+F)  Stabilizzazione di un amplificatore con reazione negativa
+Un amplificatore lineare (o più in generale una rete lineare) è stabile se il segnale
+d'uscita, esaurita la fase transitoria, è limitato ed ha valori dipendenti linearmente dal
+segnale d'ingresso; è, invece, instabile, se il segnale di uscita tende ad aumentare indefini-
+tamente, ed è limitato solo dalla non linearità dei componenti circuitali.
+Per determinare la stabilità di una rete si utilizza come segnale d'ingresso xS un
+impulso con energia elevatissima, in teoria infinita, ottenuto con un segnale di durata
+ridottissima (tS  0) e ampiezza elevatissima (xS  1/tS). L'energia infinita, perturbando
+la rete nell'intervallo tS  0, determina solo la risposta transitoria e non quella di regime.
+Dall'analisi della risposta transitoria si valuta la stabilità della rete.
+Quando si manifesta l'instabilità, l'amplificatore reazionato viene stabilizzato con
+opportune reti elettriche correttrici, come ad esempio dei filtri passivi, posti a monte o a
+valle dell'amplificatore di base.
+T
+BA0
+GBW
+=
+=
+A0r 3dB
+A(j)dB
+Ar(j)dB
+A0 3dB
+A0
+dB
+A0r
+0
+H
+Hr
+T
+
+20dBdec
+a)
+A(j)
+Ar(j)
+0
+H
+Hr
+Lr
+
+L
+0,707A0r
+0,707A0
+A0r
+A0
+Ar(j)A(j)
+b)
+t1
+Xu(t)
+t2
+tp
+Ts
+t
+tr
+0
+X0u
+0,9X0u
+0,1X0u
+c)
+
+[PAG 1637]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-37
+4  MATERIALI SEMICONDUTTORI
+I materiali usati in elettronica si possono dividere in conduttori, semiconduttori ed iso-
+lanti. I semiconduttori sono materiali cristallini caratterizzati da valori di resistività inter-
+medi fra i conduttori e gli isolanti. La resistività può essere variata e controllata con molta
+precisione. Il semiconduttore più usato è il silicio. Materiali semiconduttori, inoltre, for-
+mano con l'ossigeno un ottimo isolante (SiO2), che facilita la formazione di regioni di iso-
+lamento nella costruzione di dispositivi elettronici a semiconduttore. Altri materiali
+semiconduttori si ottengono dalla composizione di elementi semplici; ad esempio, l'arse-
+niuro di gallio (GaAs) è un semiconduttore molto usato per realizzare dispositivi optoelet-
+tronici.
+4.1  Legami covalenti, elettroni e lacune libere nei semiconduttori
+I semiconduttori hanno, in natura, una struttura cristallina, costituita da un insieme
+ordinato di celle elementari. Il silicio è un elemento tetravalente e ha quattro elettroni
+esterni. I legami di questi elettroni sono di tipo covalente, rappresentati in due dimensioni
+nella Fig. XVII.4.1a. Nella figura i cerchi, con al centro il segno + comprendono il nucleo
+e gli elettroni interni dell'atomo di silicio; i circolini neri indicano gli elettroni esterni,
+quattro per ogni atomo; le linee che uniscono i nuclei indicano i legami covalenti; i due
+elettroni, all'interno della coppia di linee, indicano che gli elettroni esterni sono comuni
+ad entrambi gli atomi. La situazione descritta si ha in prossimità dello zero assoluto; a
+temperature superiori, il movimento di agitazione termica fa sì che un certo numero di
+elettroni rompa il legame di covalenza e diventi libero; essi sono detti elettroni liberi.
+Fig. XVII.4.1   Rappresentazione bidimensionale della struttura del silicio: a) a tempera-
+tura prossima allo zero assoluto; b) a temperatura più elevata, quando si ha la formazione
+di elettroni e lacune libere.
+A causa dell'agitazione termica, l'elettrone libero si muove in modo casuale nel semi-
+conduttore. Un elettrone esterno che si allontana dall'atomo, determina una condizione
+detta lacuna o buco o hole. La lacuna ha carica positiva, uguale in valore assoluto ma di
+segno opposto della carica dell'elettrone. Anche la lacuna non rimane localizzata dove si è
+prodotta; sempre a causa dell'agitazione termica, un elettrone di un legame adiacente può
+colmare la lacuna, creando a sua volta una nuova lacuna, là dove ha spezzato il legame di
+covalenza. Lacune ed elettroni, pertanto, possono essere considerati come particelle con
+carica elettrica positiva che si possono muovere. Nella Fig. XVII.4.1b sono rappresentati i
+legami di covalenza e la coppia elettrone-lacuna generata dalla rottura di un legame di
+covalenza. Il numero di coppie elettroni-lacune presenti nel semiconduttore dipende dalla
+temperatura e dalle caratteristiche del materiale semiconduttore stesso; a temperatura
+ambiente (T = 300 K) i legami di covalenza spezzati, che danno origine alle coppie elet-
+troni-lacune, sono una percentuale estremamente bassa: si forma appena una coppia elet-
+trone-lacuna ogni 1013 atomi di silicio.
+Elettrone libero
+Lacuna
+a)
+b)
+
+[PAG 1638]
+XVII-38
+ELETTRONICA ANALOGICA E DIGITALE
+4.2  Corrente nei semiconduttori
+Si supponga di applicare una differenza di potenziale ad una sezione di semicondut-
+tore, con il polo positivo a sinistra ed il polo negativo a destra; all'interno del semicondut-
+tore si manifesta un campo elettrico E. Gli elettroni liberi, avendo carica negativa, si
+muovono verso il polo positivo. Le lacune, aventi carica positiva, si muovono da sinistra a
+destra, verso il polo negativo. I due contributi di corrente, dovuti agli elettroni liberi ed
+alle lacune, si sommano. Il movimento delle lacune ha caratteristiche diverse dal movi-
+mento degli elettroni liberi. Sotto l'azione del campo elettrico, gli elettroni liberi si muo-
+vono nella struttura cristallina del semiconduttore; il movimento delle lacune avviene,
+invece, attraverso successive rotture di legami covalenti, e la velocità con cui si spostano
+le lacune è inferiore alla velocità con cui si spostano gli elettroni liberi. Si definisce come
+mobilità di una carica il rapporto fra la velocità ed il campo elettrico che determina il
+movimento; la mobilità degli elettroni è maggiore della mobilità delle lacune.
+4.3  Semiconduttori drogati
+Le caratteristiche elettriche dei semiconduttori possono essere variate e controllate
+aggiungendo piccole quantità di impurità, dette sostanze droganti. Quest'operazione è
+detta di drogaggio (doping) ed i semiconduttori così ottenuti sono denominati semicon-
+duttori drogati o semiconduttori estrinseci. I semiconduttori drogati sono di due tipi: tipo
+n e tipo p. I semiconduttori non drogati sono detti semiconduttori intrinseci.
+A)  Semiconduttori di tipo n
+Dai semiconduttori intrinseci come il germanio o il silicio, si ottengono semicondut-
+tori di tipo n, aggiungendo al semiconduttore intrinseco impurità di elementi pentavalenti,
+come fosforo (P), arsenico (As) o antimonio (Sb), che hanno cinque elettroni esterni; gli
+atomi delle impurità sono detti atomi donatori. Un atomo donatore nel cristallo di silicio
+tende a formare legami covalenti con quattro atomi di silicio vicini, comportandosi come
+un atomo di silicio. L'atomo donatore è pentavalente, e quattro suoi elettroni esterni si
+legano ad altrettanti atomi di silicio, mentre il quinto elettrone diviene libero. L'atomo do-
+natore diviene così uno ione positivo, e al suo elettrone libero non corrisponde una lacuna.
+B)  Semiconduttori di tipo p
+Dai semiconduttori intrinseci come il germanio o il silicio, si ottengono semicondut-
+tori di tipo p aggiungendo al semiconduttore intrinseco impurità di elementi trivalenti,
+come alluminio (Al), indio (In), boro (B), gallio (Ga), che hanno tre elettroni esterni; gli
+atomi delle impurità sono detti atomi accettori. Un atomo accettore inserito nel cristallo di
+silicio tende a formare legami covalenti con quattro atomi di silicio vicini, comportandosi
+come un atomo di silicio. Essendo l'atomo donatore trivalente, si ha una lacuna fra i
+legami covalenti; un elettrone appartenente ad uno dei legami vicini può facilmente col-
+marla, lasciando a sua volta una lacuna nell'atomo di silicio che ha abbandonato, e l'atomo
+di impurità si trasforma in uno ione negativo, fisso, con otto elettroni esterni. Si è così cre-
+ata una lacuna mobile, libera, che può contribuire alla conduzione, senza la contempora-
+nea formazione di un elettrone libero, come avviene nei semiconduttori intrinseci. Il
+semiconduttore così drogato è detto di tipo p, poiché le cariche libere di muoversi sono in
+maggioranza lacune (cariche positive).
+4.4  Giunzione pn
+La giunzione pn si ottiene unendo un semiconduttore di tipo p con un semiconduttore
+di tipo n. In pratica, la giunzione è realizzata partendo, ad esempio, da un'unica barretta di
+silicio e drogandola in parte con accettori ed in parte con donatori.
+La giunzione non polarizzata, non collegata elettricamente con l'esterno, è rappresen-
+tata in modo semplificato nella Fig. XVII.4.2, con il semiconduttore di tipo p a sinistra ed
+
+[PAG 1639]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-39
+il semiconduttore di tipo n a destra. Nella giunzione pn, non vi sono elettroni e lacune
+liberi vicini alla giunzione (si sono ricombinati): nella parte di semiconduttore di tipo n si
+hanno ioni fissi positivi; nella parte di semiconduttore di tipo p si hanno ioni fissi nega-
+tivi, come si vede nella Fig. XVII.4.2. Questa duplice carica impedisce la diffusione di
+altre cariche attraverso la giunzione e si genera in corrispondenza della giunzione un
+campo elettrico
+, causato dagli ioni con cariche positive e negative fisse, contrapposte;
+questa regione è detta regione di carica spaziale. Il campo suddetto si oppone al passag-
+gio delle cariche libere, e la regione di carica spaziale è indicata anche come regione di
+svuotamento o depletion region, poiché è priva di cariche libere. La larghezza della
+regione di svuotamento dipende dalle caratteristiche della barretta di semiconduttore
+intrinseco di partenza e dalla concentrazione delle impurità; è, comunque di piccole
+dimensioni, dell'ordine di alcuni decimi di µm.
+Fig. XVII.4.2   Regione di svuotamento o di carica spaziale in una giunzione pn.
+5  DIODI A GIUNZIONE PN
+In questo paragrafo si esaminano i diodi a giunzione pn e i modelli per l'analisi delle
+loro caratteristiche. I tipi di diodi considerati sono: i diodi a giunzione, i diodi Zener, i
+diodi Schottky e i diodi LED.
+5.1  Diodi a giunzione pn
+A)  Struttura
+Il diodo a giunzione pn consiste in una giunzione pn cui sono aggiunti due contatti
+ohmici che costituiscono i terminali di collegamento esterno. Il semiconduttore di tipo p è
+detto anodo ed è indicato con A, mentre il semiconduttore di tipo n è detto catodo, ed è
+indicato con K. La struttura è riportata nella Fig. XVII.5.1a, in b) sono disegnati il simbolo
+e il corpo del diodo con la fascia che contraddistingue il catodo; in c) sono indicate le con-
+venzioni di segno di tensione e corrente.
+ 
+ 
+Fig. XVII.5.1   Diodo a giunzione pn: a) struttura; b) simbolo e corpo del diodo; c) con-
+venzioni di segno.
+Il diodo è polarizzato direttamente quando il terminale positivo dell'alimentazione è
+applicato all'anodo e il terminale negativo è applicato al catodo. Il diodo è polarizzato
+inversamente quando il terminale positivo dell'alimentazione è applicato al catodo e il ter-
+minale negativo è applicato all'anodo.
+
+E
+Regione di carica spaziale
+o di svuotamento
+E
+n
+p
+A
+p
+n
+K
+a)
+A
+p n
+K
+A
+K
+b)
+A
+K
+IA
+UAK
+c)
+
+[PAG 1640]
+XVII-40
+ELETTRONICA ANALOGICA E DIGITALE
+B)  Caratteristica tensione-corrente
+La caratteristica tensione-corrente o caratteristica u-i del diodo è la rappresentazione
+grafica dell'andamento della corrente anodica iA in funzione della tensione uAK applicata
+al diodo. La caratteristica si ottiene variando la tensione di alimentazione uAK ai capi del
+diodo.
+In relazione alla caratteristica completa u-i, riportata nella Fig. XVII.5.2a, si possono
+fare le seguenti considerazioni.
+–  Per tensioni 0 uAK  U, la giunzione è polarizzata direttamente; si ha una debole
+corrente positiva (Fig. XVII.5.2b), e si considera che il diodo non conduce. La tensione
+U, è chiamata tensione di soglia, dipende dalle proprietà fisiche del diodo: nel caso del
+diodo al silicio, è 0,5 V < U < 0,8 V; nel caso di diodo al germanio, i valori sono
+nell'intorno di 0,1 V.
+–  Per tensioni U  uAK, il diodo conduce e la corrente iA, detta corrente diretta, cre-
+sce esponenzialmente al crescere di uAK (nella Fig. XVII.5.2d è rappresentato il tratto ini-
+ziale che può essere considerato rettilineo).
+–  Per tensioni UZK < uAK < 0 (Fig. XVII.5.2c), si ha una debole corrente negativa,
+indicata con IS, corrente inversa di saturazione, e si considera che il diodo non conduce.
+ 
+ 
+Fig. XVII.5.2   Diodo a giunzione: a) esempio di caratteristica tensione-corrente del
+diodo a giunzione pn; b) particolare della caratteristica per 0 uAK  U; c) particolare
+della caratteristica dove è in evidenza la corrente inversa per UZK < uAK < 0; d) partico-
+lare della caratteristica dove è in evidenza la corrente diretta per uAK  U
+–  Quando la tensione di polarizzazione inversa scende al di sotto di un valore UZK
+(Fig. XVII.5.2a), si manifesta il fenomeno di breakdown, con un forte aumento di corrente
+inversa, mentre la tensione ai capi del diodo rimane sensibilmente costante. Il breakdown
+avviene generalmente per tensioni comprese fra alcuni volt ed alcune centinaia di volt,
+IA
+uAK
+UZK
+IS
+0
+U
+a)
+
+
+
+
+
+U
+IA (nA)
+uAK (V)
+b)
+IA
+IS
+UZK
+uAK (V)
+nA
+nA
+c)
+IA (mA)
+
+
+
+
+
+
+uAK (V)
+U
+d)
+
+[PAG 1641]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-41
+secondo i tipi di diodi. Esso è causato dall'effetto valanga o dall'effetto Zener. Il break-
+down per effetto valanga è dovuto al campo elettrico nella regione di svuotamento della
+giunzione; per tensioni relativamente elevate, si determina un'accelerazione degli elettroni
+e questi acquistano un'energia sufficiente a causare emissione di elettroni, quando urtano
+gli atomi fissi. Un elettrone accelerato, urtando un atomo, determina l'emissione di più
+elettroni, e se questi, a loro volta accelerati, producono lo stesso effetto su altri atomi con
+cui entrano in collisione, si ha una moltiplicazione a valanga degli elettroni. La corrente
+inversa pertanto cresce considerevolmente e può essere distruttiva. Il breakdown per
+effetto Zener si ha nei diodi molto drogati. Se la tensione di polarizzazione inversa di una
+giunzione cresce, la regione di svuotamento si allarga ed aumentano la carica spaziale e
+quindi il campo elettrico nelle vicinanze della giunzione. Tale campo può diventare così
+intenso da strappare gli elettroni dagli atomi. Si ha così un aumento di cariche libere e
+quindi la corrente inversa cresce notevolmente.
+5.2  Analisi grafica di un circuito resistivo con diodo
+Si consideri il circuito della Fig. XVII.5.3b, i valori della corrente IA e della tensione
+UAK devono soddisfare l'equazione:
+(XVII.5.1)
+ 
+Fig. XVII.5.3   Analisi grafica di un circuito resistivo con diodo: a) esempio di retta di
+carico e di determinazione di punti di funzionamento; b) circuito di polarizzazione del
+diodo.
+Con l'analisi grafica, si rappresentano nel piano iA, uAK la caratteristica del diodo e
+l'equazione della retta che corrisponde all'equazione XVII.5.1, detta retta di carico. Essa è
+costruita determinando le intersezioni con gli assi. Nella Fig. XVII.5.3a, per UAA =1,5 V e
+R = 150 , si ottengono il punto M(UAA; 0), dove la retta interseca l'asse delle ascisse, e il
+punto N(0; UAAR), dove la retta interseca l'asse delle ordinate. Il punto Q, intersezione fra
+curva caratteristica del diodo e retta di carico, soddisfa l'equazione della caratteristica del
+diodo e l'equazione XVII.5.1, e pertanto le sue coordinate rappresentano la tensione e la
+corrente relative al diodo. Esso è detto punto di funzionamento a riposo o punto di riposo
+o punto di lavoro del diodo.
+5.3  Modelli del diodo a giunzione
+La soluzione del problema della determinazione del punto di funzionamento del diodo
+può essere risolta utilizzando i modelli equivalenti di diodi. In questi modelli si sostitui-
+uAK
+UAA
+RiA
+–
+=
+iA (mA)
+uAK (V)
+N
+m
+Q
+M
+UAAR
+
+
+
+
+
+
+
+UAA
+I 5,5 mA
+U 0,65 V
+a)
+UAA
+IA
+UAK
+R
+D
+b)
+
+[PAG 1642]
+XVII-42
+ELETTRONICA ANALOGICA E DIGITALE
+scono i diodi con circuiti elettrici equivalenti, le cui caratteristiche esterne approssimano
+quelle dei diodi. 
+I modelli di diodi più usati si ottengono sostituendo la caratteristica i-u del diodo otte-
+nuta sperimentalmente con una caratteristica costituita da tratti lineari, il cui andamento
+approssima la caratteristica data.
+I modelli più comuni sono: il diodo ideale, il diodo a caduta di tensione costante ed il
+diodo con circuito resistivo, riportati nella Tab. XVII.5.1; in questi modelli la tensione di
+soglia U è indicata con UON.
+Il modello di diodo con circuito resistivo può essere considerato un'evoluzione del
+modello a caduta di tensione costante. La caratteristica u-i del diodo reale in conduzione è
+approssimata da una retta con una forte pendenza positiva, per tenere conto che la ten-
+Tab. XVII.5.1   Modelli del diodo a giunzione
+Tipo di 
+modello
+Caratteristica
+corrente-tensione
+Circuito equiva-
+lente del diodo
+Circuito equiva-
+lente del diodo ON
+Circuito equiva-
+lente del diodo 
+OFF
+Diodo ideale
+Diodo a caduta di 
+tensione costante
+Diodo con circuito resistivo
+iA
+uAK
+0 U
+A
+K
+UAK
+Diodo
+ideale
+IA
+UAK 0
+A
+K
+IA
+ON
+UAK 0
+A
+K
+OFF
+iA
+uAK
+0
+U
+A
+K
+UON
+IA
+Diodo
+ideale
+A
+K
+IA
+ON
+UON
+A
+K
+OFF
+UON
+iA
+uAK
+IA2
+IA1 U
+IA
+UAK
+UA1 UA2
+0
+A
+K
+UON
+IA
+Diodo
+ideale
+rd
+A
+K
+IA
+ON
+UON
+rd
+A
+K
+OFF
+UON
+rd
+
+[PAG 1643]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-43
+sione sul diodo aumenta leggermente al crescere della corrente. Nel circuito equivalente,
+al generatore ideale UON è inserita in serie la resistenza rd, detta resistenza differenziale
+del diodo; essa è in relazione con la pendenza della retta, che, come si vede nella Tab.
+XVII.5.1, è data da IA UAK = 1rd. La resistenza differenziale può assumere valori dai
+centesimi di ohm alle diverse decine di ohm, a seconda del tipo di diodo. La resistenza Rd,
+definita dal rapporto fra tensione e corrente ai capi del diodo è detta resistenza statica.
+Quando il diodo conduce, dalla caratteristica i-u si ha: uAK = UON + rd iA e iA  0. Quando
+il diodo è polarizzato inversamente, o direttamente, ma con tensione inferiore a UON, il
+diodo non conduce e la caratteristica si sovrappone all'asse delle ascisse.
+5.4  Diodi Zener
+I diodi Zener sono impiegati per fornire tensioni costanti indipendentemente dalla cor-
+rente che li attraversa. I diodi Zener sono a giunzione pn, e si sfrutta la loro regione di
+breakdown, in cui la tensione rimane sensibilmente costante, al variare della corrente da
+cui sono attraversati. Il simbolo del diodo Zener è riportato nella Fig. XVII.5.4a. In b) è
+disegnato lo schema di un circuito semplice di polarizzazione. In c) è riportato un esempio
+di caratteristica corrente-tensione di un diodo Zener.
+Fig. XVII.5.4   Diodo Zener: a) simbolo; b) circuito di polarizzazione; c) caratteristica
+corrente-tensione.
+Quando il diodo è polarizzato direttamente, l'andamento della caratteristica è di un
+diodo normale. Quando è polarizzato inversamente, non vi è apprezzabile passaggio di
+corrente fin al valore di tensione indicato con UZK, a cui incomincia a fluire corrente; al
+crescere in valore assoluto della polarizzazione inversa, la curva assume una forma a
+ginocchio, e successivamente la corrente aumenta apprezzabilmente, mentre la tensione ai
+capi del diodo rimane sensibilmente costante; è questa parte che è utilizzata nelle applica-
+zioni. Nei diodi Zener si considera come positiva la tensione fra catodo ed anodo, ed è
+indicata con UZ; si ha pertanto che UZ = UAK. Anche la corrente è considerata in senso
+opposto ai diodi a giunzione: si assume come positiva la corrente entrante nel catodo, la si
+indica con IZ e quindi IZ = IA; queste considerazioni facilitano l'analisi dei circuiti con
+diodi Zener. I parametri principali che caratterizzano i diodi Zener sono: la tensione di
+Zener e la potenza massima dissipabile. La tensione di Zener è la tensione stabilizzata ai
+capi del diodo polarizzato inversamente. Sono disponibili in commercio diodi con ten-
+sioni dall'ordine di alcuni volt all'ordine del centinaio di volt, e la potenza massima dissi-
+pabile è generalmente compresa fra i decimi di watt e diverse decine di watt.
+A
+K
+a)
+uZ (V)
+uAK (V)
+UZK
+0
+U
+iA (mA)
+iZ (mA)
+c)
+R
+UAA
+UAK
+IZ
+IA
+UZ
+b)
+
+[PAG 1644]
+XVII-44
+ELETTRONICA ANALOGICA E DIGITALE
+5.5  Altri tipi di diodi: diodi Schottky e diodi LED
+A)  Diodi Schottky
+I diodi Schottky sono costituiti dalla giunzione di un metallo e di un semiconduttore.
+Generalmente il metallo è alluminio o platino, il semiconduttore è silicio drogato con
+impurità di tipo n. La giunzione metallo-semiconduttore ha caratteristiche analoghe alla
+giunzione pn, quindi ha il comportamento di un diodo, in particolare ha le caratteristiche
+unidirezionali del passaggio della corrente; il metallo costituisce l'anodo, mentre il semi-
+conduttore costituisce il catodo. Il simbolo è riportato nella Fig. XVII.5.5a. Il diodo
+Schottky ha tempi di commutazione più rapidi fra la condizione di saturazione (ON) e la
+condizione di interdizione (OFF), per questo è impiegato in particolare nei circuiti digitali
+di commutazione.
+   
+ 
+Fig. XVII.5.5   Diodi Schottky e diodi LED: a) simbolo del diodo Schottky; b) simbolo e
+corpo del diodo LED.
+B)  Diodi LED
+L'indicazione deriva dalle iniziali di Light Emitting Diode (diodi emettitori di luce). I
+LED sono diodi realizzati generalmente con composti di gallio, che hanno la proprietà di
+emettere radiazioni o visibili o infrarosse. Nello spettro visibile la luce emessa è comune-
+mente rossa, gialla, verde, blu ed i diodi sono detti LED o VLED (Visible LED); nel
+campo dell'infrarosso i diodi sono denominati IRED da InfraRed Emitting Diode. I LED
+sono diodi caratterizzati dalla proprietà di emettere energia luminosa quando sono pola-
+rizzati direttamente con sufficiente tensione; la tensione VF ai capi del diodo in condu-
+zione è dell'ordine di 1,5 V  2 V, un valore comune è 1,6 V (il pedice F, iniziale di
+Forward, ricorda che la polarizzazione è diretta, Forward bias); lasciano passare cor-
+rente, indicata con IF, compresa fra valori dell'ordine di 5 mA e 50 mA, secondo i tipi. Il
+simbolo comune del diodo LED e il corpo sono riportati nella Fig. XVII.5.5b.
+6  CIRCUITI CON DIODI
+In questo paragrafo sono esaminati alcuni circuiti di applicazione di diodi a giunzione
+comune e di diodi Zener.
+6.1  Circuiti di raddrizzamento con diodi a giunzione
+I circuiti di raddrizzamento convertono una tensione alternata d'ingresso in una ten-
+sione d'uscita unidirezionale, che è o solo positiva o solo negativa, ma non costante. Per
+ottenere una tensione costante, s’inserisce un filtro all'uscita, che elimina le componenti
+variabili. Questi circuiti sono impiegati, in particolare, per realizzare alimentatori elettro-
+nici che erogano tensioni continue.
+A)  Circuito di raddrizzamento ad una semionda
+Nella Fig. XVII.6.1a è disegnato lo schema di un circuito di raddrizzamento ad una
+semionda, dove la tensione ui applicata al raddrizzatore ha l'andamento riportato nella
+Fig. XVII.6.1c. Il raddrizzatore è costituito dal diodo e dal carico resistivo R. 
+Preso come modello il diodo a caduta di tensione costante, il circuito equivalente del
+A
+K
+a)
+A
+K
+A
+K
+Lato per
+identificazione
+catodo
+b)
+
+[PAG 1645]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-45
+raddrizzatore è quello della Fig. XVII.6.1b. Nell'intervallo in cui 0  ui  UON, il diodo
+ideale non conduce, quindi uu = 0. Nell'intervallo in cui UON  ui  UM, il diodo conduce,
+c'è passaggio di corrente nel carico, e la tensione d'uscita vale: uu = ui  UON. Nella Fig.
+XVII.6.1d è riportato l'andamento della tensione d'uscita uu (la tensione d’uscita nel caso
+di modello di diodo ideale è segnata tratteggiata). 
+Fig. XVII.6.1   Circuito di raddrizzamento ad una semionda: a) schema del circuito;
+b) circuito equivalente nel caso di modello di diodo a caduta di tensione costante; c) anda-
+mento della tensione di ingresso; d) andamento della tensione di uscita nel caso di
+modello di diodo a caduta di tensione costante (linea continua) e nel caso di modello di
+diodo ideale, linea tratteggiata (linea tratteggiata); e) andamento della corrente nel diodo e
+suo valore medio.
+La corrente massima IAM che attraversa il diodo è IAM = (UM UON) R (è IAM = UMR,
+nel caso di diodo ideale). L'andamento della corrente nel diodo è pulsante (Fig.
+XVII.6.1e), e il valore medio in un periodo è:
+B)  Circuito di raddrizzamento ad una semionda con filtro capacitivo
+Lo schema di un circuito di raddrizzamento con filtro capacitivo è riportato nella Fig.
+XVII.6.2a; è caratterizzato dalla presenza di un condensatore in parallelo al carico R. A
+regime, il condensatore è carico e fornisce a R corrente anche quando il diodo è bloccato.
+Per ricavare le caratteristiche di funzionamento del circuito raddrizzatore qui riportate,
+per il diodo si considera il modello di diodo ideale, e all'ingresso si applica una tensione
+sinusoidale ui di ampiezza UM.
+Si suppone inoltre che inizialmente il condensatore sia scarico.
+–  La tensione uu d'uscita non è costante, come si vede nella Fig. XVII.6.2b, essendo
+compresa fra un valore massimo Uumax = UM ed un valore minimo Uumin. Questa varia-
+u
+ui
+uu
+R
+D
+T
+a)
+ui
+UM
+0
+t
+uu
+UM
+0
+t
+UM  UON 
+uu
+c)
+d)
+UON 
+uu
+ui
+R
+Diodo
+ideale
+b)
+ia
+IAM
+0
+t
+
+2
+IAm
+e)
+IAm
+2IAM
+2
+------------
+IAM
+
+---------
+=
+=
+
+[PAG 1646]
+XVII-46
+ELETTRONICA ANALOGICA E DIGITALE
+zione dipende dal valore massimo e dal periodo della tensione d'ingresso, dalla resistenza
+di carico e dalla capacità del condensatore, ed è detta ripple od ondulazione. Si definisce
+come tensione di ripple o tensione di ondulazione la tensione:
+Fig. XVII.6.2   Circuito di raddrizzamento con filtro capacitivo: a) schema; b) andamento
+della tensione di ingresso, della tensione di uscita e della corrente nel diodo in funzione
+del tempo.
+–  L'andamento della corrente iA nel diodo è disegnato nella Fig. XVII.6.2b, e la cor-
+rente media in un periodo è data da:
+La corrente massima nel diodo IAmax è:
+C)  Circuiti di raddrizzamento ad onda intera
+Nei circuiti di raddrizzamento ad onda intera sono utilizzate entrambe le semionde
+della tensione sinusoidale di ingresso. In questo modo si riesce a ridurre la tensione di rip-
+ple nei raddrizzatori con filtro capacitivo, la cui uscita diviene simile a quella dei genera-
+tori di tensione costante. In questo paragrafo si considera il raddrizzatore ad onda intera a
+ponte di Graetz, senza e con filtro capacitivo.
+1)  Circuito di raddrizzamento ad onda intera, a ponte di Graetz
+Lo schema di un circuito di raddrizzamento ad onda intera, a ponte di Graetz, è ripor-
+tato nella Fig. XVII.6.3a. Esso consiste di quattro diodi, disposti a ponte; su una diagonale
+è disposta l'alimentazione, mentre sull'altra è inserito il carico. Supponendo i diodi ideali,
+il funzionamento è il seguente. Durante la semionda positiva della tensione d'ingresso ui,
+Ur
+Uumax
+Uumin
+–
+UMT
+RC
+-----------
+=
+=
+ui
+u
+R
+a)
+D
+C
+uC  uu 
+ui
+UM
+0
+t
+uu uC 
+Uumax  UM 
+Ur 
+Uumin 0
+0
+T4
+T+T4
+t1 
+t 
+uC  uu 
+ui 
+IA 
+IA0 
+IAmax 
+t 
+IAm 
+T 
+t 
+b)
+IAm
+IAmax
+t
+
+2
+------------------------- 1
+T--
+=
+IAmax
+2UM
+R
+-----------
+T
+t
+-----
+
+=
+
+[PAG 1647]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-47
+la tensione ha la polarità indicata nella Fig. XVII.6.3b. I diodi D2 e D4 sono polarizzati
+direttamente, si ha passaggio della corrente i nel verso segnato con la linea tratteggiata. 
+Durante la semionda negativa della tensione d'ingresso ui, si ha la situazione opposta
+indicata nella Fig. XVII.6.3c. Si conclude pertanto che la corrente passa nel carico sempre
+nello stesso verso. L'andamento della tensione d'uscita uu = R  i è riportato nella Fig.
+XVII.6.3d. La tensione massima UuM e la corrente massima IM relative al carico valgono:
+Il valore medio Im della corrente nel carico ed il valore medio Uum della tensione sul
+carico hanno valore doppio che nel caso di raddrizzatore ad una semionda e valgono:
+La corrente massima IAM e la corrente media IAm nel diodo sono:
+Per la corrente media si è tenuto conto del fatto che in ogni diodo la corrente circola
+solo per un semiperiodo.
+2)  Circuito di raddrizzamento a ponte di Graetz, con filtro capacitivo
+Nei circuiti di raddrizzamento ad onda intera a ponte di Graetz, l'aggiunta di un con-
+Fig. XVII.6.3   Circuito di raddrizzamento ad
+onda intera, a ponte di Graetz: a) schema del
+circuito; b) circolazione della corrente duran-
+te la semionda positiva della tensione di in-
+gresso; c) circolazione della corrente durante
+la semionda negativa della tensione di in-
+gresso; d) andamento delle tensioni di ingres-
+so e di uscita nel tempo.
+ui
+D1
+D2
+D4
+D3
+R
+uu
+a)
+ui
+uu
+UM
+0
+t
+t
+Uum
+Uum  UM
+0
+d)
+D1
+D2
+D4
+D3
+ui
+uu
+R
+i
+i
+b)
+D1
+D2
+D4
+D3
+ui
+uu
+R
+i
+i
+c)
+UuM
+UM
+=
+;
+IM
+UM
+R
+-------
+=
+Im
+2IM
+
+---------
+=
+;
+Uum
+RIm
+2RIM
+
+-------------
+=
+=
+IAM
+UM
+R
+-------
+=
+;
+IAm
+IM
+-----
+=
+
+[PAG 1648]
+XVII-48
+ELETTRONICA ANALOGICA E DIGITALE
+densatore in parallelo al carico (Fig. XVII.6.4a) permette di avere una tensione sensibil-
+mente costante sul carico stesso. Si hanno le seguenti caratteristiche.
+–  La tensione di ripple Ur ha valore:
+–  A regime, la corrente massima nei diodi IAmax vale:
+ 
+Fig. XVII.6.4   Circuito di raddrizzamento a ponte di Graetz, con filtro capacitivo:
+a) schema del circuito; b) andamento, nel tempo, della tensione di ingresso, della tensione
+sul condensatore e della tensione di uscita.
+6.2  Circuiti con diodi Zener
+In questo paragrafo sono esaminati i circuiti di stabilizzazione e i circuiti limitatori
+che impiegano diodi Zener.
+A)  Circuiti stabilizzatori con diodi Zener
+I diodi Zener sono impiegati per realizzare circuiti stabilizzatori. Essi consentono di
+mantenere una tensione costante su un carico resistivo, al variare, entro determinati limiti,
+del carico stesso e della tensione di alimentazione. Un esempio è riportato in Fig.
+XVII.6.5. Il diodo, per lavorare nella regione di breakdown, deve essere polarizzato inver-
+samente e deve essere IZ > 0 (Fig. XVII.5.4); la tensione UZ ai capi del diodo, relativa a IZ,
+è sensibilmente costante ed è applicata al carico RL. Il generatore di tensione UAA fornisce
+la tensione di polarizzazione inversa; la resistenza R è inserita per proteggere il diodo,
+limitandone la corrente.
+Fig. XVII.6.5   Circuito stabilizzatore con diodo Zener.
+B)  Circuiti limitatori con diodi Zener
+I diodi Zener sono impiegati nei circuiti limitatori, perché limitano la tensione ai loro
+terminali fra due livelli, la tensione di soglia UON, quando sono polarizzati direttamente, e
+la tensione di breakdown UZK, quando sono polarizzati inversamente. In questa applica-
+Ur
+Uumax
+Uumin
+–
+UMT
+2RC
+-----------
+=
+=
+IAmax
+UM
+R
+-------
+T
+t
+-----
+
+=
+D1
+D2
+D4
+D3
+ui
+uu
+R
+C
+u
+a)
+uu uC 
+Ur 
+Uumin 
+0
+T4
+t1 
+t 
+uu  uC 
+ui 
+t 
+t2 
+Uumax 
+Uum 
+UM 
+b)
+UAA
+IZ
+UZ
+RL
+IL
+R
+D
+
+[PAG 1649]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-49
+zione è perciò utilizzata tutta la caratteristica tensione-corrente del diodo Zener, sia la
+regione di polarizzazione diretta sia la regione di polarizzazione inversa. Un esempio di
+circuito limitatore con un solo diodo Zener è riportato nella Fig. XVII.6.6a. Nella Fig.
+XVII.6.6b è rappresentato l'andamento nel tempo della tensione d'uscita, nel caso di ten-
+sione d'ingresso sinusoidale; si vede come la tensione d'uscita sia limitata fra UON e UZK.
+ 
+Fig. XVII.6.6   Circuito limitatore con diodo Zener: a) schema; b) tensione di uscita uu
+del circuito.
+7  TRANSISTOR BIPOLARI A GIUNZIONE E CIRCUITI DI POLARIZZAZIONE
+In questo paragrafo sono presi in considerazione i transistor bipolari a giunzione, indi-
+cati anche come BJT. Si esaminano: la struttura fisica ed il principio di funzionamento, la
+caratteristica tensione-corrente, l'analisi grafica dei circuiti a transistor e i circuiti di pola-
+rizzazione.
+7.1  Caratteristiche di funzionamento dei BJT
+I transistor bipolari a giunzione sono dispositivi a tre terminali, detti anche BJT dalle
+iniziali di Bipolar Junction Transistor. 
+ 
+Fig. XVII.7.1   Struttura e simbolo dei BJT: a) npn; b) pnp.
+A)  Struttura fisica dei BJT
+La struttura fisica dei BJT è rappresentata nella Fig. XVII.7.1, da cui risulta che il BJT
+è costituito da tre regioni di materiale semiconduttore drogato. La regione centrale è detta
+base (Base), ed è indicata con B; le altre due regioni sono chiamate emettitore (Emitter) e
+collettore (Collector) e sono indicate, rispettivamente, con E e con C. Nelle Fig.
+XVII.7.1a e b sono disegnati i simboli dei transistor npn e pnp; la freccia sul terminale
+emettitore indica il verso effettivo della corrente di emettitore.
+B)  Principio di funzionamento dei BJT
+Si considera il BJT npn nella Fig. XVII.7.2a. I tre semiconduttori danno origine a due
+ui
+uu
+R
+D
+a)
+ui uu 
+UON 
+t 
+uu 
+UZK 
+ui 
+b)
+p
+n
+n
+C
+B
+E
+Collettore
+Base
+Emettitore
+C
+B
+E
+a)
+n
+p
+p
+C
+B
+E
+Collettore
+Base
+Emettitore
+C
+B
+E
+b)
+
+[PAG 1650]
+XVII-50
+ELETTRONICA ANALOGICA E DIGITALE
+giunzioni: base-emettitore e base-collettore. La giunzione base-emettitore è polarizzata
+direttamente dal generatore UBE. La giunzione base-collettore è polarizzata inversamente
+dal generatore UCB. Le resistenze R1 e R2 hanno la funzione di limitare le correnti nel cir-
+cuito. Al morsetto del collettore si ha la corrente IC, al morsetto della base la corrente IB, e
+al morsetto dell'emettitore si ha la corrente IE = IC  IB; i versi sono indicati nella Fig.
+XVII.7.2a.
+ 
+ 
+Fig. XVII.7.2   Correnti e tensioni nei BJT: a) correnti in corrispondenza dei terminali di
+un BJT npn polarizzato; b) convenzioni di segno di tensioni e correnti nei BJT npn;
+c) convenzioni di segno di tensioni e correnti nei BJT pnp.
+Le tensioni e le correnti per l'utilizzo dei BJT, sono espresse convenzionalmente come
+riportato nelle Fig. XVII.7.2b e c; le tensioni considerate sono UBE, UCE e UCB.
+Considerazioni analoghe si possono fare per il transistor pnp.
+C)  Parametri  e 
+I parametri  e  esprimono la caratteristica essenziale del funzionamento del transi-
+stor. Si considera ancora il BJT npn; la corrente di collettore IC è inferiore alla corrente di
+emettitore IE e si può scrivere:
+(XVII.7.1)
+Il valore di  è comunemente compreso fra 0,9 e 0,998. Il segno meno nella XVII.7.1 è
+una conseguenza delle convenzioni di segno, e permette di conciliare una corrente di col-
+lettore positiva con una corrente di emettitore negativa.
+Tenendo conto che è IE = IB  IC, dalla XVII.7.1 si ottiene la relazione fra IC e IB:
+(XVII.7.2)
+I valori del parametro  sono compresi fra diverse decine e diverse centinaia, e dipen-
+dono dall'entità del drogaggio dei semiconduttori, dalla forma e dalle dimensioni del
+dispositivo e delle sue parti. La relazione IC =  IB esprime la proprietà di amplificazione
+dei BJT e  è detto guadagno di corrente del BJT.
+7.2  Tipi di connessione dei BJT e curve caratteristiche tensione-corrente 
+A)  Tipi di connessione dei BJT
+I transistori bipolari a giunzione hanno tre terminali, ma in condizioni opportune si
+comportano come quadripoli LTI (si veda Par. 2.4). Si hanno pertanto tre possibilità di
+configurare il quadripolo ed i corrispondenti circuiti sono detti connessioni: connessione
+ad emettitore comune, connessione a base comune, e connessione a collettore comune. I
+tre tipi di connessione sono riportati nella Fig. XVII.7.3, nel caso di transistor npn; analo-
+C
+B
+E
+p
+n
+n
+IC
+IE = IB + IC
+IB
+R1
+R2
+UCB
+UBE
+a)
+C
+B
+E
+IC
+UCE
+IE = IB + IC
+UBE
+IB
+b)
+C
+B
+E
+IC
+UCE = UEC
+IE
+UBE = UEB
+IB
+c)
+IC
+-IE
+=
+con 
+1
+
+IC
+
+1
+
+–
+------------- IB
+IB
+=
+=
+e
+IC
+IB
+----
+
+1
+
+–
+-------------
+
+=
+=
