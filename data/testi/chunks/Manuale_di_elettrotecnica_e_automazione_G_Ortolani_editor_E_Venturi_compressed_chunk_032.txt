@@ -1,0 +1,1919 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 32/116 ===
+Chars: 43,258 | Offset: 1,370,108
+
+
+
+[PAG 699]
+MACCHINE ELETTRICHE
+VIII-17
+sen cambia segno e l’operazione diviene una sottrazione. In particolare la variazione di 
+tensione si annulla per:
+(VIII.2.49)
+Per carichi fortemente capacitivi, con
+(VIII.2.50)
+la variazione di tensione è negativa e la tensione a carico è maggiore di quella a vuoto.
+Tenuto conto di quanto detto, la caratteristica esterna del trasformatore, U2 = f(I2), pre-
+senta un andamento diverso in funzione del fattore di potenza del carico (Fig. VIII.2.10).
+Fig. VIII.2.10  Caratteristiche esterne di un trasformatore.
+2.6  Trasformatore trifase 
+2.6.1  Funzionamento a vuoto
+Il trasformatore trifase è l’assieme di tre trasformatori monofasi in collegamento a 
+stella oppure a triangolo. Essi condividono un medesimo nucleo magnetico a tre colonne, 
+ciascuna delle quali ospita gli avvolgimenti di una fase (Fig. VIII.2.11).
+Fig. VIII.2.11  Schema costruttivo di un trasformatore trifase.
+Il nucleo magnetico è formato da tre elementi ferromagnetici connessi a stella e la fase 
+centrale è più corta e presenta minore riluttanza delle altre due. Le correnti a vuoto, preva-
+lentemente magnetizzanti, risultano diverse e si conviene di considerare come corrente a 
+vuoto la media delle correnti delle tre fasi:
+(VIII.2.51)
+Trascurando le perdite negli avvolgimenti primari, le potenze attiva e reattiva assor-
+bite a vuoto sono:
+(VIII.2.52)
+
+arctg
+Req2
+–
+Xeq2
+
+
+
+arctg
+1
+–
+tgk
+
+
+
+=
+=
+
+
+
+U2
+ < 0
+ = 0
+ > 0
+U20
+I2
+I0
+I01
+I02
+I03
++
++
+3
+-------------------------------------
+=
+P0
+Pf
+3U1I0cos0
+=
+=
+Q0
+Q
+3U1I0sen0
+=
+=
+
+[PAG 700]
+VIII-18
+MACCHINE ELETTRICHE
+La distorsione di 3a armonica
+Le tre correnti a vuoto sono alterate da componenti armoniche distorcenti; in particolare 
+quelle di terza armonica risultano in fase fra loro e producono deformazioni delle gran-
+dezze interessate e possibili disturbi in rete e sui circuiti vicini. La distorsione di terza 
+armonica si può neutralizzare attuando un particolare collegamento detto zig-zag (Fig. 
+VIII.2.12).
+     
+Fig. VIII.2.12  Collegamento stella/zig-zag: a) schema elettrico; b) diagramma vettoriale.
+Ogni colonna è concatenata con un avvolgimento suddiviso in due sezioni uguali; il 
+collegamento è effettuato connettendo una semifase di una colonna con un’altra di una 
+colonna adiacente, presa in senso inverso. Le terze armoniche, che sono in fase, vengono 
+soppresse mentre le componenti fondamentali danno luogo ad una tensione lievemente 
+ridotta. Detta U’ la tensione di una semifase è:
+(VIII.2.53)
+Il rapporto di questa tensione con quella del collegamento a stella è: 3/(2
+) = 0,866 e 
+quindi la macchina subisce una diminuzione di potenza di circa il 13%.
+Collegamenti degli avvolgimenti trifasi
+I collegamenti primario e secondario degli avvolgimenti dei trasformatori trifasi sono 
+indipendenti e danno luogo agli schemi seguenti:
+–  stella-stella, con U1/U2 = N1/N2, per carichi equilibrati e per tensioni elevate;
+–  stella-triangolo, con U1/U2 = 
+N1/N2, per carichi equilibrati e con correnti elevate;
+–  triangolo-stella, con U1/U2 = N1/(
+N2), anche per carichi squilibrati;
+–  triangolo-triangolo, con U1/U2 = N1/N2, per carichi squilibrati con correnti elevate;
+–  zigzag-stella, con U1/U2 = 
+N1/(2N2), per la neutralizzazione della 3a armonica; 
+–  zigzag-triangolo, con U1/U2 = 3N1/(2N2), per la neutralizzazione della 3a armonica.
+I trasformatori trifasi hanno le tre coppie di morsetti corrispondenti contrassegnati; 
+l’indicazione è varia, numerica o letterale; qui assumiamo i simboli U, V, W per il prima-
+rio u, v, w per il secondario.
+Il tipo di collegamento è convenzionalmente indicato:
+–  con lettera maiuscola per la tensione maggiore, minuscola per la tensione minore;
+–  con la lettera Y (y) per il collegamento a stella; D (d) per il collegamento a triangolo.
+In base al tipo di collegamento prescelto, la terna secondaria può risultare sfasata di 
+un certo angolo rispetto alla primaria. Gli sfasamenti sono considerati in senso orario e 
+valutati dalla terna primaria verso la secondaria (Fig. VIII.2.13). Essi sono riconducibili a 
+quattro gruppi fondamentali (Fig. VIII.2.14).
+U
+V
+W
+a’
+b’
+c’
+a’’
+b’’
+c’’
+u’
+v’
+w’
+0
+a)
+U
+V
+W
+u’
+w’
+v’
+U’
+b)
+U
+3U'
+=
+3
+3
+3
+3
+
+[PAG 701]
+MACCHINE ELETTRICHE
+VIII-19
+Fig. VIII.2.13  Sfasamento fra terna primaria e secondaria di un trasformatore triangolo-
+stella.
+     
+      
+Fig. VIII.2.14  Gruppi principali dei trasformatori trifasi.
+2.6.2  Funzionamento a carico
+Il trasformatore a carico si studia come quello monofase e valgono tutte le relazioni 
+già analizzate (si veda il Par. 2.3) con l’ipotesi che sia riferito ad un collegamento a stella. 
+Ciò premesso, lo studio può essere condotto vantaggiosamente tramite gli schemi sempli-
+ficati.
+Adottando lo schema semplificato primario, le potenze dissipate nel rame sono:
+(VIII.2.54)
+Adottando lo schema semplificato secondario, le potenze dissipate nel rame sono:
+(VIII.2.55)
+2.6.3  Funzionamento in cortocircuito
+I parametri equivalenti, primari e secondari, sono:
+(VIII.2.56)
+U
+V
+W
+U
+u
+v
+w
+330°
+GRUPPO 0
+Dd0
+Yy0
+U
+U
+u
+u
+GRUPPO 5
+Dy5
+Yd5
+U
+U
+u
+u
+GRUPPO 6
+Dd6
+Yy6
+U
+U
+u
+u
+GRUPPO 11
+Dd11
+Yy11
+U
+U
+u
+u
+Pcu
+3Req1I1
+2
+=
+Qd
+3Xeq1I1
+2
+=
+Pcu
+3Req2I2
+2
+=
+Qd
+3Xeq2I2
+2
+=
+Zeq1
+U1k
+3I1
+------------
+=
+
+[PAG 702]
+VIII-20
+MACCHINE ELETTRICHE
+di componenti:
+(VIII.2.57)
+(VIII.2.58)
+di componenti:
+(VIII.2.59)
+Le potenze assorbite in cortocircuito, dissipate negli avvolgimenti, sono:
+(VIII.2.60)
+(VIII.2.61)
+2.6.4  Caratteristiche di funzionamento
+Con riferimento allo schema semplificato secondario, le potenze attive e reattive 
+impegnate dal trasformatore sono:
+(VIII.2.62)
+(VIII.2.63)
+(VIII.2.64)
+Il rendimento del trasformatore è:
+(VIII.2.65)
+La variazione di tensione risulta:
+(VIII.2.66)
+Operando sul circuito equivalente primario si ottiene analogamente:
+Tab. VIII.2.2   Valori caratteristici percentuali di i0, p0, uk, pk, dei trasformatori trifasi
+potenza (kVA)
+5
+10
+50
+100
+500
+1000
+io (%)
+15
+12
+9
+7
+5
+4,5
+po (%)
+1,3
+1
+0,6
+0,5
+0,4
+0,3
+uk (%)
+4
+4
+4,5
+4,8
+5
+5,2
+pk (%)
+3,6
+3,2
+2,4
+2,1
+1,4
+1,2
+Req1
+Zeq1cosk
+=
+Xeq1
+Zeq1senk
+=
+Zeq2
+U1k
+3KI2
+----------------
+=
+Req2
+Zeq2cosk
+=
+Xeq2
+Zeq2senk
+=
+Pk
+Pcu
+3U1kI1cosk
+3Req1I1
+2
+=
+=
+=
+Qk
+Qd
+3U1kI1senk
+3Xeq1I1
+2
+=
+=
+=
+Pa
+3U1I1cos1
+=
+Qa
+3U1I1sen1
+=
+Pr
+3U2I2cos2
+=
+Qr
+3U2I2sen2
+=
+Pp
+Pf
+3Req2I2
+2
++
+=
+Qp
+Q
+3Xeq2I2
+2
++
+=
+
+3U2I2cos2
+3U2I2cos2
+Pf
+3Req2I2
+2
+Pad
++
++
++
+---------------------------------------------------------------------------------------------------
+=
+U2
+3I2 Req2cos
+Xeq2sen
++
+
+
+=
+
+[PAG 703]
+MACCHINE ELETTRICHE
+VIII-21
+(VIII.2.67)
+2.7  Elementi costruttivi dei trasformatori
+2.7.1  Circuiti magnetici
+I nuclei dei trasformatori monofasi possono essere a colonne oppure a mantello.
+I primi sono formati da due colonne a sezione prevalentemente quadrata e da due tra-
+verse, unite alle colonne a giunti intercalati (Fig. VIII.2.15).
+        
+Fig. VIII.2.15  Trasformatore monofase: a) nucleo magnetico a colonne; b) giunti interca-
+lati.
+I nuclei a mantello sono formati da una colonna centrale, su cui sono posti gli avvolgi-
+menti, e da due colonne laterali, di sezione metà. La sezione della colonna centrale è fre-
+quentemente quadrata o leggermente rettangolare. I lamierini sono suddivisi in modo da 
+poter essere inseriti sulla bobina preformata. Esistono anche nuclei preconfezionati a C, 
+formati da due parti separate che si montano direttamente sulla bobina (Fig. VIII.2.16).
+  
+ 
+Fig. VIII.2.16  Tipi di lamierini per trasformatore monofase con nucleo a mantello:
+a) E + I; b) M; c) C.
+I nuclei dei trasformatori trifasi sono per la quasi totalità formati con lamierini in 
+ferro-silicio e strutturati su tre colonne, una per ciascuna fase, unite fra loro da due tra-
+verse a giunti intercalati (Fig. VIII.2.11).
+In casi molto particolari, per potenze rilevanti, si realizza il nucleo magnetico su cin-
+que colonne disponendo gli avvolgimenti sulle tre centrali, con l’obiettivo di ridurre la 
+dimensione in altezza (Fig. VIII.2.17).
+Fig. VIII.2.17.  Trasformatore trifase a 5 colonne.
+U1
+3I1 Req1cos
+Xeq1sen
++
+
+
+=
+a)
+b)
+a)
+b)
+c)
+
+[PAG 704]
+VIII-22
+MACCHINE ELETTRICHE
+Per una migliore utilizzazione dello spazio, le colonne hanno sezione a gradini (Fig. 
+VIII.2.18). Il numero dei gradini è in relazione con la potenza della macchina e crescente 
+con essa; per piccole potenze la sezione è semplicemente quadrata. 
+Si definisce: coefficiente di utilizzazione geometrica (ku) il rapporto fra la sezione del 
+pacco lamiere (Af) e quella del cerchio circoscritto (Ag) (si veda la Tab. VIII.2.3).
+Fig. VIII.2.18  Sezione a gradini della colonna di un trasformatore.
+Si definisce coefficiente di stipamento (kst) il rapporto fra la sezione netta del ferro (Af) e 
+quella del pacco lamiere (A’f): kst = Af/A’f. Questo valore dipende dal tipo di isolamento 
+del lamierino e vale mediamente 0,85.
+2.7.2  Avvolgimenti
+Possono essere concentrici oppure a bobine alternate.
+Gli avvolgimenti concentrici sono utilizzati più frequentemente; talvolta, per miglio-
+rare l’accoppiamento, si può realizzare l’avvolgimento doppio concentrico suddividendo 
+uno dei due avvolgimenti in due sezioni connesse in serie o in parallelo fra loro, e dispo-
+nendo l’altro in mezzo (Fig. VIII.2.19).
+ 
+   
+Fig. VIII.2.19  Avvolgimenti concentrici: a) semplice; b) doppio.
+Gli avvolgimenti a bobine alternate, utilizzati solo su trasformatori di potenza elevata, 
+hanno gli avvolgimenti suddivisi in molte sezioni disposte intervallate lungo la colonna. 
+Fig. VIII.2.20  Avvolgimento a bobine alternate.
+Tab. VIII.2.3   Coefficiente di utilizzazione geometrica ku = Af /Ag della sezione a gradini
+gradini
+1
+2
+3
+4
+5
+ku
+0,636
+0,787
+0,851
+0,886
+0,908
+a)
+b)
+AT
+BT
+
+[PAG 705]
+MACCHINE ELETTRICHE
+VIII-23
+Per l’equilibrio elettrico e meccanico occorre che le bobine estreme appartengano allo 
+stesso avvolgimento e comprendano metà delle spire delle altre bobine (Fig. VIII.2.20).
+2.7.3  Raffreddamento
+Le perdite della macchina si convertono in energia termica che deve essere dispersa 
+nell’ambiente. La sovratemperatura che si stabilisce, e che dipende dalle dimensioni della 
+macchina, deve essere mantenuta al disotto del valore consentito dai materiali isolanti 
+impiegati.
+Per trasformatori di piccola potenza, preventivamente impregnati con sostanze iso-
+lanti, è sufficiente il raffreddamento naturale in aria. 
+Fig. VIII.2.21  Raffreddamento di trasformatori in olio: a) con cassone ad alette; b) con 
+elementi radiatori.
+Per potenze più elevate si può migliorare la trasmissione del calore collocando il tra-
+sformatore in un cassone chiuso, pieno di olio adatto (apirolio) che svolge un duplice 
+compito: migliora il raffreddamento grazie alla sua elevata capacità termica; migliora 
+l’isolamento per la sua alta rigidità dielettrica.
+A sua volta l’olio può essere raffreddato spontaneamente dal moto convettivo che lo 
+porta a lambire la superficie esterna del cassone, alettata o munita di radiatori (Fig. 
+VIII.2.21). Per aumentare l’efficienza radiante la superficie può anche essere raffreddata 
+da elementi ventilatori.
+Esempio 1. Progetto di massima di un piccolo trasformatore monofase.
+Si vuole progettare un trasformatore monofase rispondente ai seguenti dati: S = 150 VA, 
+U1 = 220 V, U2 = 24 V, f = 50 Hz.
+Procedimento.
+–  Si utilizza un lamierino della serie E + I, di sezione lorda A’f = 16 cm2 e, con coeffi-
+ciente di stipamento 0,85, sezione netta: Af = 0,85  16 = 13,6 cm2.
+–  Ritenuta una variazione di tensione del 5%, si dimensionano le spire per le tensioni a 
+vuoto U1 = 220 V e U20 = 25 V, ammettendo BM = 1 T: 
+N1 = U1/(4,44 f BM Af) = 220/(4,44  50  1  13,6  104) = 728 sp.; 
+N2 = 25  728/220 = 83 sp.
+–  Le correnti nominali sono: I1 = S/U1 = 150/220 = 0,68 A; I2 = 150/24 = 6,25 A.
+–  Assumendo J = 2,5 A/mm2, le sezioni dei due avvolgimenti risultano: 
+A1 = I1/J = 0,68/2,5 = 0,272 mm2; 
+A2 = 6,25/2,5 = 2,5 mm2.
+Verifica dell’ingombro
+–  La sezione della finestra è: AF = 12 cm2.
+–  La sezione netta del rame è: A’ = A1N1 = 0,272728 = 198 mm2; A” = 2,583 = 
+208 mm2 e in totale: Acu = 4,06 cm2.
+a)
+b)
+
+[PAG 706]
+VIII-24
+MACCHINE ELETTRICHE
+–  Il rapporto: AF/Acu = 12/4,06  3 è accettabile. In caso contrario è necessario aumen-
+tare la sezione del pacco lamiere oppure passare al lamierino di dimensioni maggiori.
+Esempio 2. Calcolo del funzionamento di un trasformatore trifase.
+Un trasformatore trifase da 50 kVA, rapporto a vuoto 3000 V / 380 V, ha fornito alle 
+prove i risultati seguenti: prova a vuoto: p0 = 2%, cos0 = 0,2; prova in cortocircuito a 20 
+°C: pk = 3%, cosk = 0,5.
+Il trasformatore funziona a tensione secondaria di 380 V erogando una corrente pari a 3/4 
+del valore nominale a cos = 0,8 ind. Si vuole determinare U1, I1, cos1 e il rendimento.
+Procedimento:
+–  La corrente nominale è: I2n = Sn/(
+ U2n) = 50.000/(
+  380) = 76 A e la corrente ero-
+gata: I2 = 3 I2n/4 = 57 A.
+–  Dalla prova in cortocircuito risulta: 
+Pk = 0,03  50 = 1,5 kW; 
+Req2 = Pk/(3 I2
+n2) = 1500/(3  762) = 86,6 m; 
+Xeq2 = Req2 tgk = 86,6  1,73 = 150 m.
+A 75°C, con KT = 309,5/254,5 = 1,22 è: R’eq2 = 1,22 Req2 = 1,22  86,6 = 106 m.
+–  La variazione di tensione è 
+U2 = 
+ I2(R’eq2 cos + Xeq2 sen) = 
+  57(0,106  0,8 + 0,15  0,6) = 17,2 V
+e quindi: U20 = U2 + U2 = 380 + 17,2 = 397,2 V
+e con K = 3000/380 = 7,89 la tensione al primario in funzionamento risulta: 
+U1 = K U20 = 7,89  397,2 = 3134 V.
+–  Il computo delle potenze offre: 
+Pf = P0 = 0,02  50 = 1 kW; Q = P0 tg0 = 4,9 kVAR; 
+Pcu = 3 R’eq2 I2
+2 = 3  0,106  572 = 1,03 kW; Qd = 3 Xeq2 I2
+2 = 3  0,15  572 = 1,46 kVAR; 
+Pr = 
+ U2 I2 cos = 
+  380  57  0,8 = 30 kW; Qr = Pr tg = 30  0,75 = 22,5 kVAR; 
+Pad = 0,005 Pr = 0,005  30 = 0,15 kW; 
+Pp = Pf + Pcu + Pad = 1 + 1,03 + 0,15 = 2,18 kW; Qp = Q + Qd = 4,9 + 1,46 = 6,36 kVAR; 
+Pa = Pr + Pp = 30 + 2,18 = 32,18 kW; Qa = Qr + Qp = 22,5 + 6,36 = 28,86 kVAR.
+–  Il rendimento vale:  = Pr/Pa = 30/32,18 = 0,932.
+–  Da tg1 = Qa/Pa = 28,86/32,18 = 0,897 si ha: 
+cos1 = 0,744 e I1 = Pa/(
+ U1 cos1) = 32180/(
+  3134  0,744) = 7,98 A.
+2.8  Parallelo dei trasformatori
+Due trasformatori possono essere collegati in parallelo se hanno le stesse tensioni 
+nominali, quindi lo stesso rapporto di trasformazione e, per i trasformatori trifasi, se 
+appartengono allo stesso gruppo. La connessione deve essere fatta collegando assieme i 
+morsetti corrispondenti (Fig. VIII.2.22).
+Essi funzionano correttamente a carico se le impedenze interne equivalenti hanno la 
+stessa fase e sono in rapporto inverso rispetto alle potenze di targa. Infatti indicati con A e 
+B i due trasformatori, tenuto conto delle equazioni di funzionamento, in parallelo subi-
+scono la stessa caduta di tensione da cui:
+(VIII.2.68)
+Se le condizioni di valore e/o di fase delle impedenze interne non sono rispettate, la 
+distribuzione della corrente fra le due macchine non è corretta e deve essere valutata in 
+base ai valori effettivi.
+Se poi i trasformatori non hanno esattamente il medesimo rapporto di trasformazione, 
+oltre a non funzionare correttamente a carico, comportano una corrente di circolazione
+3
+3
+3
+3
+3
+3
+3
+3
+IB
+IA
+----
+ZeqA
+ZeqB
+-----------
+=
+
+[PAG 707]
+MACCHINE ELETTRICHE
+VIII-25
+anche a vuoto. Il calcolo di questa condizione di funzionamento si può eseguire impie-
+gando il teorema di Millman.
+Fig. VIII.2.22  Trasformatori monofasi in parallelo.
+Esempio 3. Trasformatori trifasi in parallelo.
+Due trasformatori trifasi A e B, della potenza di 100 kVA, appartenenti allo stesso gruppo 
+ed aventi lo stesso rapporto di trasformazione a vuoto 15.000 V/380 V, sono collegati in 
+parallelo e funzionano a tensione secondaria nominale alimentando un carico che assorbe 
+240 A a cos = 0,8 ind. 
+Alle prove hanno fornito i risultati seguenti:
+A)  p0 = 1,5%; cos0 = 0,2; pk = 2%; uk = 4%;
+B)  p0 = 1,8%; cos0 = 0,25; pk = 3%; uk = 3,5%.
+Calcolare: la variazione di tensione U2, le correnti erogate da ciascun trasformatore 
+I2A e I2B ed il rendimento totale.
+Procedimento.
+–  La corrente nominale è: I2n = Sn/(
+ U2) = 100.000/(
+  380) = 152 A.
+–  Le perdite e i parametri equivalenti secondari risultano:
+A)  Pf = 1,5 kW; Pk = 2 kW; Uk = 15,2 V; 
+B)  Pf = 1,8 kW; Pk = 3 kW; Uk = 13,3 V; 
+RB = 3000/(3  1522) = 43,3 m; 
+ZB = 13,3/(
+  152) = 50,6 m;
+–  Poiché i trasformatori hanno lo stesso rapporto, le impedenze interne possono essere 
+considerate in parallelo. Eseguendo si ha: 
+ZA = 28,9 + j 50 m; ZB = 43,3 + j 26,2 m; Zt = ZA  ZB/(ZA + ZB) = 19,8 + j 19,6 m
+–  La variazione di tensione è: 
+U2 = 
+ I2(Rt cos + Xt sen) = 
+  240 (19,8  0,8 + 19,6  0,6) 103 = 11,5 V
+–  Le correnti si distribuiscono fra i trasformatori secondo la formula del partitore di cor-
+rente: 
+I2A = I2  ZB/(ZA + ZB) = 240  (43,3 + j 26,2)/(72,2 + j 76,2) = 112  j 30,7 A; I2A = 116 A 
+I2B = I2  ZA/(ZA + ZB) = 240  (28,9 + j 50)/(72,2 + j 76,2) = 128,6 + j 30,7 A; I2B = 132 A
+–  Per verifica: I2A + I2B = I2 = 240 A.
+3
+3
+RA
+Pk
+3I2n
+2
+
+
+
+2000
+3
+1522
+
+
+
+
+28,9 m
+=
+=
+=
+ZA
+Uk
+3I2n
+
+
+
+15,2
+3
+152
+
+
+
+
+57,8 m
+=
+=
+=
+XA
+ZA
+2
+RA
+2
+–
+57 8
+
+2
+28 9
+
+2
+–
+50 m
+=
+=
+=
+3
+XB
+50,62
+43,32
+–
+26,2 m
+=
+=
+3
+3
+
+[PAG 708]
+VIII-26
+MACCHINE ELETTRICHE
+2.9  Trasformatori speciali
+2.9.1  Trasformatore a due secondari
+È un trasformatore che fornisce energia a due carichi distinti attraverso due avvolgi-
+menti secondari. 
+  
+Fig. VIII.2.23  Trasformatore a due secondari: a) schema elettrico; b) schema equiva-
+lente.
+I due secondari sono dimensionati e funzionano ciascuno in base alla propria tensione 
+e potenza. L’avvolgimento primario funziona su un’impedenza di carico Zt equivalente al 
+parallelo delle due impedenze parziali trasferite (Fig. VIII.2.23).
+Indicati con A e B i due trasformatori, le impedenze trasferite e quella totale primaria 
+sono:
+(VIII.2.69)
+Sulla stessa base si possono realizzare trasformatori con più di due secondari anche in 
+connessione trifase.
+2.9.2  Trasformatore a doppio rapporto
+È un trasformatore avente il secondario suddiviso in due sezioni uguali, che possono 
+essere connesse in serie oppure in parallelo, mantenendo costante la potenza (Fig. 
+VIII.2.24).
+ 
+Fig. VIII.2.24.  Trasformatore a due rapporti: a) sezioni in serie; b) sezioni in parallelo.
+Posta U la tensione di una sezione e IU la corrente si può ottenere, a parità di tensione 
+primaria,
+–  per connessione serie: U2 = 2U, I2 = IU
+–  per connessione parallelo: U2 = U, I2 = 2IU.
+Sulla stessa base si possono realizzare trasformatori a più di due rapporti, anche in 
+connessione trifase.
+2.9.3  Trasformatore trifase a V
+È detto anche a triangolo aperto perché è formato da due trasformatori monofasi col-
+U1
+KA
+KB
+ZA
+ZB
+a)
+U1
+Z’A
+Z’B
+b)
+Z'A
+KA
+2ZA
+=
+Z'B
+KB
+2ZB
+=
+Zt
+Z'A
+Z'B
+
+Z'A
+Z'B
++
+
+
+------------------------------
+=
+U1
+I2
+U2
+U
+U
+a)
+U1
+I2
+U2
+U
+U
+b)
+
+[PAG 709]
+MACCHINE ELETTRICHE
+VIII-27
+locati ai due lati di un triangolo (Fig. VIII.2.25).
+Fig. VIII.2.25  Trasformatore trifase a V.
+Si comporta come un trasformatore trifase, ma funziona con una potenza ridotta 
+rispetto a quella del trasformatore completo. Infatti, per l’assenza di un lato del triangolo, 
+la corrente di linea massima erogabile con quella di fase e la potenza si riduce a 1/
+ cioè 
+al 58% del trasformatore trifase completo.
+   
+Fig. VIII.2.26  Trasformatore tri-esafase a stella: a) collegamento; b) diagramma vetto-
+riale.
+    
+Fig. VIII.2.27  Trasformatore tri-esafase a poligono: a) collegamento; b) diagramma vet-
+toriale.
+1
+2
+3
+3
+2
+1
+3
+U
+V
+W
+u’
+v’
+w’
+u’’
+v’’
+w’’
+a)
+U
+V
+W
+u’
+v’
+w’
+u’’
+v’’
+w’’
+b)
+U
+V
+W
+u’
+v’
+w’
+u’’
+v’’
+w’’
+a)
+U
+V
+W
+u’
+v’
+w’
+u’’
+v’’
+w’’
+b)
+
+[PAG 710]
+VIII-28
+MACCHINE ELETTRICHE
+2.9.4  Trasformatore tri-esafase
+Questo trasformatore può avere due schemi realizzativi, per collegamento del secon-
+dario a stella oppure a poligono. 
+Esso comporta ciascuna fase del secondario suddivisa in due sezioni uguali collegate 
+in senso inverso in modo da ottenere sei tensioni sfasate di 60°. Con esse si possono effet-
+tuare due tipi di collegamento (Figg. VIII.2.26 e VIII.2.27):
+–  a stella, unendo assieme uno dei due terminali di ciascuna sezione in un punto 
+comune, il centro stella, ed ottenendo il sistema esafase dagli altri sei terminali;
+–  a poligono, realizzando una maglia chiusa esagonale mediante le tensioni parziali 
+delle sei sezioni ordinatamente sfasate di 60°.
+Su questa base e con più sezioni si possono ottenere anche trasformatori con secondario 
+dodecafase e multipli. Sono trasformatori che trovano impiego particolarmente nei cir-
+cuiti raddrizzatori.
+2.9.5  Autotrasformatori
+Funzionano come i trasformatori ma hanno gli avvolgimenti primario e secondario 
+vincolati con una parte in comune. Essi presentano un vantaggio nel dimensionamento e 
+risultano più economici rispetto ai trasformatori, ma mantengono un vincolo metallico fra 
+primario e secondario, e questo ne limita l’impiego a casi particolari.
+Autotrasformatore monofase
+È costituito da un avvolgimento primario di N1 spire, adatto alla tensione U1. Lungo di 
+esso, e a partire da un terminale comune, si rileva un tratto di N2 spire che presenta una 
+tensione U2 < U1 (Fig. VIII.2.28).
+ 
+Fig. VIII.2.28  Autotrasformatore monofase: a) trasformatore corrispondente.
+Il rapporto di trasformazione è quello del trasformatore:
+(VIII.2.70)
+L’avvolgimento della macchina risulta suddiviso in due parti,
+–  una parte di primario, di tensione U1  U2 e corrente I1;
+–  una parte comune, di tensione U2 e corrente I2  I1.
+Il peso di conduttore impiegato (p) è proporzionale alla potenza di dimensionamento 
+in voltampère e quindi risulta
+–  per il trasformatore: pt = k (U1I1 + U2I2) = 2 k U1I1,
+–  per l’autotrasformatore: pa = k (U1  U2) I1 + k U2 (I2  I1) = 2 k (U1  U2)I1.
+Il rapporto rappresenta il vantaggio, in peso di conduttore, dell’autotrasformatore 
+rispetto al trasformatore corrispondente, e vale:
+(VIII.2.71)
+U1
+N1
+I1
+I2I1
+I2
+N2
+U2
+a)
+U1
+I1
+N1
+N2
+I2
+U2
+K
+N1
+N2
+------
+U1
+U2
+------
+=
+=
+pa
+pt
+
+U1
+U2
+–
+
+
+U1
+
+K
+1
+–
+
+
+K
+
+=
+=
+
+[PAG 711]
+MACCHINE ELETTRICHE
+VIII-29
+Il vantaggio è tanto maggiore quanto più il rapporto di trasformazione si avvicina 
+all’unità.
+Autotrasformatore trifase
+È analogo all’autotrasformatore monofase e si realizza in collegamento a stella (Fig. 
+VIII.2.29).
+Fig. VIII.2.29  Autotrasformatore trifase a stella.
+2.9.6  Trasformatori variatori di tensione
+Sono trasformatori che consentono la regolazione della tensione di uscita. Possono 
+essere a rapporto variabile oppure ad accoppiamento variabile.
+I regolatori a rapporto variabile, quasi sempre autotrasformatori, hanno l’avvolgi-
+mento secondario distribuito lungo una colonna su un semplice strato a spire contigue, 
+prive di isolamento lungo una generatrice.
+Un dispositivo meccanico con albero a vite senza fine, ad azione manuale o automa-
+tica, permette ad una spazzola di strisciare lungo l’avvolgimento e costituisce il terminale 
+mobile del secondario. La tensione secondaria quindi può variare ampiamente da zero 
+sino ad un valore massimo, che può anche essere maggiore del primario (Fig. VIII.2.30). 
+La struttura ad autotrasformatore è più spesso conformata su nucleo toroidale con regola-
+zione a volantino; questa disposizione si chiama comunemente Variac.
+Il variatore è reso trifase connettendo assieme tre variatori monofasi a stella.
+Fig. VIII.2.30  Variatore di tensione ad autotrasformatore.
+I variatori ad accoppiamento variabile sono strutturati su un particolare circuito 
+magnetico formato da uno statore e da un rotore, analogo a quello di un motore asincrono 
+monofase. Lo statore è a forma cilindrica ed ospita in due gruppi di cave contrapposte 
+l’avvolgimento primario; il rotore coassiale, mobile mediante volantino a vite senza fine, 
+comprende l’avvolgimento secondario (Fig. VIII.2.31).
+1
+2
+3
+U
+V
+W
+u
+v
+w
+U1
+U2
+
+[PAG 712]
+VIII-30
+MACCHINE ELETTRICHE
+Fig. VIII.2.31  Variatore di tensione ad accoppiamento variabile.
+Ruotando il volantino varia il flusso concatenato col secondario dal massimo, per assi 
+delle spire coincidenti, a zero, quando dopo 90° il flusso concatenato è nullo.
+3  CAMPO MAGNETICO ROTANTE
+3.1  Vettori rotanti
+Un vettore m sul piano complesso ha due formulazioni equivalenti (si veda la Sez. I 
+Matematica) (Fig. VIII.3.1),
+–  cartesiana, o rettangolare: m = m (cos + j sen),
+–  esponenziale, o polare: m = m ej.
+Fig. VIII.3.1  Rappresentazione di un vettore sul piano complesso.
+Se il vettore è rotante, in senso antiorario, con velocità angolare , è  = t e quindi 
+può essere rappresentato da:
+(VIII.3.1)
+(VIII.3.2)
+Dalla formula di Eulero:
+(VIII.3.3)
+possiamo dedurre che un vettore alternativo di valore massimo m può essere considerato 
+la risultante di due vettori uguali di valore m/2, sincroni e rotanti in senso inverso (Fig. 
+VIII.3.2).
+U1
+U2
+j
+m
+r
+
+m
+m cost
+jsent
++
+
+
+=
+m
+mejt
+=
+cost
+ejt
+e j
+– t
++
+
+
+2
+
+=
+
+[PAG 713]
+MACCHINE ELETTRICHE
+VIII-31
+Fig. VIII.3.2  Scomposizione di un vettore alternativo in due vettori rotanti.
+3.1.1  Generazione di un campo magnetico rotante
+Dalle VIII.3.1 e VIII.3.3 si deduce che due campi magnetici alternati, sfasati nel tempo 
+e nello spazio di /2, producono un campo rotante.
+Il principio è generale e si dimostra che un campo magnetico rotante si forma compo-
+nendo l’azione di n campi magnetici alternativi sinusoidali sincroni, mutuamente sfasati 
+nel tempo e spostati nello spazio di un angolo  = 2/n con n > 2.
+Nel caso trifase è  = 2/3 = 120°.
+3.2  Campo rotante trifase
+Si abbiano tre spire rettangolari di lati attivi rispettivamente ux, vy, wz, collocati in 
+altrettante cave ricavate sulla superficie interna di uno statore toroidale, in materiale fer-
+romagnetico, e siano gli inizi (u, v, w) e le fini (x, y, z) distanziate di 120° (Fig. VIII.3.3). 
+Fig. VIII.3.3  Nucleo toroidale magnetizzato da un sistema trifase a stella.
+Connesse le spire a stella ed alimentate da un sistema trifase, esse assorbono tre cor-
+renti magnetizzanti sfasate di 120° (Fig. VIII.3.4). 
+Fig. VIII.3.4  Correnti magnetizzanti di un sistema trifase.
+Analizzata la situazione del verso delle correnti per istanti successivi si evidenzia la 
+
+
+m/2
+m/2
+t
+t
+y
+z
+x
+w
+u
+v
+i1
+i2
+i3
+a
+b
+c
+i
+t
+
+[PAG 714]
+VIII-32
+MACCHINE ELETTRICHE
+formazione di un campo magnetico risultante bipolare e rotante ad una velocità corrispon-
+dente alla frequenza di alimentazione (Fig. VIII.3.5). Per f = 50 Hz la velocità sincrona è 
+n0 = 50 giri/s.
+Fig. VIII.3.5  Campo magnetico rotante.
+La constatazione grafica può essere appoggiata da una dimostrazione analitica. Si 
+applichi la VIII.3.3 a tre funzioni cosinusoidali di un sistema trifase ( = 120°):
+(VIII.3.4)
+Imponiamo ora ai flussi di agire su assi formanti una terna spaziale simmetrica (Fig. 
+VIII.3.6): 1 sull’asse reale, 2 120° in ritardo, 3 120° in anticipo.
+Fig. VIII.3.6  Terna spaziale dei tre flussi di un sistema trifase.
+Risulta:
+(VIII.3.5)
+Il flusso complessivo risultante è:
+(VIII.3.6)
+a)
+w
+x
+v
+z
+u
+y
+b)
+w
+x
+v
+z
+u
+y
+c)
+w
+x
+v
+z
+u
+y
+1
+Mcost
+M ejt
+e j
+– t
++
+
+
+2
+
+=
+=
+2
+Mcos t
+
+–
+
+
+M ej t
+
+–
+
+
+e j
+–
+t
+
+–
+
+
++
+
+
+2
+
+=
+=
+3
+Mcos t
+
++
+
+
+M ej t
+
++
+
+
+e j
+–
+t
+
++
+
+
++
+
+
+2
+
+=
+=
+j
+3
+
+1
+
+2
+
+
+1
+1
+M ejt
+e j
+– t
++
+
+
+2
+
+=
+=
+2
+2e j
+– 
+M ej t
+2
+–
+
+
+e j
+– t
++
+
+
+2
+
+=
+=
+3
+2e+j
+M ej t
+2
++
+
+
+e j
+– t
++
+
+
+2
+
+=
+=
+t
+3Me j
+– t
+2
+
+=
+
+[PAG 715]
+MACCHINE ELETTRICHE
+VIII-33
+Esso rappresenta un campo magnetico, rotante alla velocità , avente valore:
+(VIII.3.7)
+3.2.1  Velocità sincrona
+La velocità di sincronismo di una macchina bipolare, strettamente dipendente dalla 
+frequenza, è: n0 = 60 f (giri/1’). Per ottenere velocità inferiori si riduce l’arco occupato 
+dalle sei cave, multiplando l’avvolgimento. Ad esempio, comprimendo le sei cave prece-
+denti su un arco di 180°, e praticando sull’altro arco di macchina un secondo avvolgi-
+mento con le fasi ordinatamente in serie al primo, si ottengono 4 poli che ruotano con 
+velocità angolare metà della precedente. E così per multipli di 6 cave. Più in generale, 
+indicando con p le coppie polari, le cave totali dell’avvolgimento sono 6p e la velocità di 
+sincronismo risulta (Tab. VIII.3.1):
+(VIII.3.8)
+3.2.2  Distribuzione degli avvolgimenti
+Per ottenere un dimensionamento più economico della macchina, con un maggiore 
+sfruttamento del circuito magnetico e con una migliore distribuzione del flusso nel tra-
+ferro, gli avvolgimenti di una fase vengono distribuiti su più cave entro l’angolo di perti-
+nenza di 60° elettrici.
+Si definiscono cave per polo fase (q) il numero di cave che, sotto un polo, appartiene ad 
+una fase. Una macchina con un avvolgimento trifase avrà quindi un numero totale di cave:
+(VIII.3.9)
+che sono sfasate fra loro di un angolo elettrico (Tab. VIII.3.2):
+(VIII.3.10)
+3.3  Fem indotta
+Il campo magnetico rotante taglia i conduttori dell’avvolgimento e vi induce una fem 
+di valore medio Em = /t. Considerato un tempo t = T/2 = 1/2f, il flusso si sposta di 
+180° pari a un passo polare  e viene tagliato interamente da un conduttore (Fig. VIII.3.7), 
+inducendovi una fem media:
+(VIII.3.11)
+Tab. VIII.3.1  Velocità di sincronismo alla frequenza di 50 Hz
+poli (2p)
+2
+4
+6
+8
+10
+12
+coppie polari (p)
+1
+2
+3
+4
+5
+6
+velocità n0 (g/1’)
+3000
+1500
+1000
+750
+600
+500
+Tab. VIII.3.2  Angolo elettrico in funzione delle cave per polo fase
+q
+1
+2
+3
+4
+5
+6
+
+60°
+30°
+20°
+15°
+12°
+10°
+
+3M
+2
+
+=
+n0
+60f
+p
+
+=
+C
+6pq
+=
+
+60
+q
+
+=
+Em
+2f
+=
+
+[PAG 716]
+VIII-34
+MACCHINE ELETTRICHE
+Fig. VIII.3.7  Induzione elettromagnetica fra campo rotante e conduttori.
+Detto N il numero di conduttori di una fase e tenuto conto che, per un’onda sinusoi-
+dale, il rapporto fra valore efficace e valore medio è 1,11, il valore efficace della fem 
+indotta in una fase risulta:
+(VIII.3.12)
+La formula rappresenta la fem indotta in condizioni ideali, cioè per flusso perfetta-
+mente sinusoidale e con l’avvolgimento distribuito in una cava per polo fase. Nella realtà 
+occorre introdurre nella VIII.3.12 alcuni fattori di correzione che tengano conto della 
+situazione effettiva in cui l’avvolgimento si trova ad operare e che sono: il fattore di 
+forma (kf), il fattore di distribuzione (kd), il fattore di passo (kp). Ciò posto, la fem indotta 
+per fase assume l’espressione:
+(VIII.3.13)
+3.3.1  Fattore di forma
+Il flusso al traferro non è esattamente sinusoidale (Fig. VIII.3.8) perché le fmm eserci-
+tate in ciascuna cava hanno carattere discontinuo, con passo angolare  (si veda la Tab. 
+VIII.3.2).
+Fig. VIII.3.8  Flusso al traferro del campo rotante.
+Si definisce fattore di forma (kf) il rapporto fra il valore efficace di una semionda e il 
+valore medio:
+(VIII.3.14)
+Nel caso di un’onda perfettamente sinusoidale, è:
+(VIII.3.15)
+3.3.2  Fattore di distribuzione
+La distribuzione delle cave per polo fase comporta fra le matasse di una stessa fase 
+uno sfasamento  = 60/q (si veda la VIII.3.10). Segue che la fem risultante, somma vetto-
+riale delle fem di cava, è inferiore alla somma aritmetica. 
+S
+N
+S
+campo
+rotante
+
+E
+2,22fN
+=
+E
+KEfN
+=
+con
+KE
+2kfkdkp
+=
+kf
+E
+Em
+
+=
+kf
+
+2
+2
+
+
+
+1,11
+=
+=
+
+[PAG 717]
+MACCHINE ELETTRICHE
+VIII-35
+Si definisce fattore di distribuzione (kd) il rapporto fra la somma vettoriale e la somma 
+aritmetica. Con riferimento alla Fig. VIII.3.9 è kd = AD/(3 AB) e quindi, con q = 3, 
+ = 20° deriva: AD = r, AB = 2 r sen(30/3), kd = 1/(6 sen 10°).
+Fig. VIII.3.9  Diagramma vettoriale di una fem indotta in un avvolgimento con q = 3.
+Generalizzando si ottiene:
+(VIII.3.16)
+I valori del fattore di distribuzione in funzione delle cave per polo fase sono indicati 
+nella Tab. VIII.3.3.
+ 
+3.3.3  Fattore di passo
+Per le macchine asincrone, in qualche caso particolare e segnatamente per comprimere 
+determinate armoniche, viene adottato un passo di matassa, cioè la distanza fra due lati 
+attivi opposti, inferiore a 180°. La risultante delle due fem è inferiore alla loro somma 
+aritmetica.
+Si definisce fattore di passo (kp) il rapporto fra la somma vettoriale e la somma arit-
+metica delle fem dei due lati attivi di una spira. Con riferimento alla Fig. VIII.3.10 è: 
+kp = AC/(2 AB).
+Detto  l’angolo di accorciamento è AC = 2 AB cos(/2) e quindi:
+(VIII.3.17)
+La Tab. VIII.3.4 riporta i valori del fattore di passo relativi all’angolo di accorciamento.
+Tab. VIII.3.3  Valori del fattore di distribuzione in funzione di q
+q
+1
+2
+3
+4
+
+kd
+1
+0,965
+0,959
+0,957
+1/(/3) = 0,955
+Tab. VIII.3.4  Valori del fattore di passo in funzione di 
+
+20°
+30°
+40°
+60°
+kp
+0,985
+0,966
+0,94
+0,866
+A
+H
+B
+C
+D
+O
+60°
+20°
+20°
+kd
+1
+2qsen 30
+q
+
+
+
+
+
+
+=
+kp
+
+2
+
+
+
+cos
+=
+
+[PAG 718]
+VIII-36
+MACCHINE ELETTRICHE
+Fig. VIII.3.10  Diagramma vettoriale di una fem indotta con accorciamento di passo . 
+3.4   Macchine statiche a campo rotante
+3.4.1  Trasformatore a campo rotante
+Sulla base del fenomeno di induzione, e sfruttando la generazione di un campo 
+rotante, si può ottenere un trasformatore. La struttura magnetica, realizzata in lamierini, è 
+costituita da uno statore e da un rotore coassiale, avente disposizione delle cave analoga a 
+quella di statore e mantenuto fermo. I due avvolgimenti trifasi sono del tutto simili. Il 
+primo, costituito da N1 spire per fase e con funzioni di induttore, è collocato in cave 
+disposte sulla superficie interna dello statore; il secondo, costituito da N2 spire per fase e 
+con funzioni di indotto, è collocato in altrettante cave ricavate lungo la superficie esterna 
+del corpo rotorico (Fig. VIII.3.11).
+Fig. VIII.3.11  Aspetto schematico di un trasformatore a campo rotante: primario 1, 2, 3; 
+secondario 1’, 2’, 3’.
+Alimentando lo statore viene a crearsi un campo rotante che, nel suo movimento lungo 
+il traferro, produce in ciascuno dei due avvolgimenti una fem indotta data da:
+(VIII.3.18)
+e un rapporto di trasformazione:
+(VIII.3.19)
+La macchina illustrata si comporta come un trasformatore. Essa tuttavia non è impie-
+gata per questo compito perché la realizzazione risulta più onerosa di quella del trasfor-
+matore tradizionale; inoltre la presenza del traferro richiede una sensibile corrente 
+magnetizzante e produce un peggioramento dell’accoppiamento fra i due circuiti.
+L’impiego come trasformatore è limitato, ove necessario, alla possibilità di ottenere 
+una sorgente polifase qualsiasi. In effetti il secondario può essere realizzato con un avvol-
+gimento polifase avente un numero di fasi qualsiasi.
+3.4.2  Variatore di fase
+È realizzato come il trasformatore a campo rotante illustrato sopra, ma ha il rotore 
+mobile e regolabile in posizione mediante l’azionamento di un volantino a vite senza fine. 
+A
+B
+C
+
+1
+2
+3
+1’
+2’
+3’
+E1
+KEfN1
+=
+E2
+KEfN2
+=
+K
+E1
+E2
+
+N1
+N2
+
+=
+=
+
+[PAG 719]
+MACCHINE ELETTRICHE
+VIII-37
+Lo spostamento del rotore produce uno sfasamento della terna secondaria di tensioni 
+rispetto alla terna primaria. Nel caso di macchina bipolare, l’angolo di rotazione coincide 
+con l’angolo di sfasamento (Fig. VIII.3.12). 
+Fig. VIII.3.12  Il variatore di fase: a) aspetto schematico; b) diagramma vettoriale.
+Il variatore di fase trova impiego, tra l’altro, nei laboratori di misura per ottenere 
+determinati angoli di sfasamento fra due grandezze elettriche.
+3.4.3  Variatore di tensione trifase
+Ha la stessa costituzione del precedente nel quale tuttavia, per comodità, sono spesso 
+scambiate le funzioni assegnando al rotore il compito di induttore e allo statore quello di 
+indotto. Collegando ogni fase secondaria in serie ad un filo di linea, la tensione a valle 
+risulta la somma vettoriale di quella di rete con quella indotta (Fig. VIII.3.13).
+  
+Fig. VIII.3.13  Il variatore di tensione: a) schema elettrico; b) diagramma vettoriale.
+Con riferimento alle tensioni di fase stellate risulta:
+(VIII.3.20)
+In particolare: Eumax = E1 + U2, Eumin = E1  U2
+Per U2 = E1 la tensione concatenata a valle Uu varia entro l’intervallo: 0  Uu  2 U1.
+4  MOTORE ASINCRONO
+4.1  Principio di funzionamento
+La macchina asincrona possiede la stessa struttura elettromagnetica del trasformatore 
+a campo rotante (si veda il Sottopar. 3.4.1) ma il rotore è privo di vincoli. Dalla formula 
+VIII.3.18 risulta che, in condizioni ideali, nel rotore si sviluppa una fem per fase, qui 
+distinta col pedice (1), data da:
+(VIII.4.1)
+Chiuso in cortocircuito l’avvolgimento rotorico di impedenza:
+1
+2
+3
+1’
+2’
+3’
+
+0
+a)
+1
+2
+3
+1’
+2’
+3’
+
+b)
+U1
+Uu
+U2
+a)
+U2
+E1
+Eu
+max
+
+b)
+Eu
+E1
+U2
++
+=
+E2 1
+
+2,22fN2
+=
+
+[PAG 720]
+VIII-38
+MACCHINE ELETTRICHE
+(VIII.4.2)
+la fem indotta agisce producendo nel rotore un sistema trifase di correnti, e con esse un 
+campo magnetico rotante rotorico. Esso determina una reazione sul campo statorico con 
+effetti magnetici e meccanici.
+Nei riguardi del campo magnetico, dovendo rimanere costante il flusso perché impo-
+sto dalla tensione di alimentazione, viene richiamata dallo statore una corrente I’ tale da 
+neutralizzare l’effetto magnetico di I2. È quindi:
+(VIII.4.3)
+Inoltre, come conseguenza dello sfasamento fra le correnti, i due campi rotanti presen-
+tano una componente meccanica tangenziale di trascinamento.
+Il rotore, lasciato libero, si mette in movimento nel senso del campo rotante ed acce-
+lera tendendo ad assumerne la velocità. Ma ciò non può accadere perché i conduttori di 
+rotore, ruotando alla stessa velocità del campo, non sarebbero più sede di fem indotta e, 
+svanendo i poli rotorici, cesserebbe l’azione di trascinamento. Il moto può mantenersi sol-
+tanto ad una velocità  < 0.
+Si definisce scorrimento (s) il valore relativo dello scarto di velocità fra campo 
+magnetico e rotore:
+(VIII.4.4)
+Per il motore, i termini a vuoto e in cortocircuito sono intesi in senso meccanico e rap-
+presentano le condizioni limite di funzionamento, ovvero,
+–  a vuoto ideale, cioè a velocità sincrona: n = n0, s = 0;
+–  in cortocircuito, cioè a rotore fermo: n = 0, s = 1.
+In funzionamento il valore dello scorrimento dipende dal carico meccanico della mac-
+china; a regime è del 3  5%.
+4.2  Funzionamento a vuoto
+4.2.1  Corrente a vuoto
+Il motore, privo di carico meccanico, assume una velocità molto prossima a quella di 
+sincronismo (s  0,5%) e il rotore non è sede di apprezzabile fem indotta. Trascurando la 
+corrente rotorica, non rilevante, la corrente a vuoto è la risultante di due componenti: una 
+reattiva I magnetizzante, l’altra attiva Ia, che tiene conto delle perdite per isteresi e cor-
+renti parassite del solo statore.
+La corrente magnetizzante è relativamente elevata perché le linee di forza del circuito 
+magnetico si sviluppano attraversando due volte il traferro, che per questo va mantenuto 
+minimo. La corrente a vuoto è 20  30% della corrente nominale.
+Lo schema elettrico relativo ad una fase del circuito statorico, a tensione Uf = U/
+, si 
+configura come un’ammettenza (Fig. VIII.4.1):
+(VIII.4.5)
+con G0 che assorbe la corrente Ia = G0Uf e B0 che assorbe la corrente I = B0Uf.
+4.2.2  Potenza a vuoto
+Il motore funzionante a vuoto assorbe dalla rete una potenza attiva:
+(VIII.4.6)
+che comprende tre tipi di perdite:
+Z2 1
+
+R2
+jX2 1
+
++
+=
+con
+X2 1
+
+2fL2d
+=
+I '
+-I2N2
+N1
+
+-I2
+K
+
+=
+=
+s
+0
+
+–
+
+
+0
+
+n0
+n
+–
+
+
+n0
+
+=
+=
+3
+Y0
+G0-jB0
+=
+P0
+3UI0
+0
+cos
+=
+
+[PAG 721]
+MACCHINE ELETTRICHE
+VIII-39
+–  le perdite nel ferro (Pf) per isteresi e correnti parassite, limitate allo statore;
+–  le perdite nel rame (Pcu0), piccole ma non trascurabili, limitate allo statore:
+(VIII.4.7)
+–  le perdite meccaniche (Pm), proprie del rotore e dovute all’attrito e alla ventilazione.
+Risulta:
+(VIII.4.8)
+Per la separazione di queste perdite si veda la Sez. IX Misure elettriche.
+        
+Fig. VIII.4.1  Motore asincrono ideale a vuoto: a) schema elettrico; b) diagramma vetto-
+riale.
+4.3  Funzionamento a carico
+4.3.1  Grandezze rotoriche
+Il motore asincrono a carico, funzionante alla velocità n < n0, trasferisce potenza dai 
+morsetti di alimentazione all’albero, dopo averne ceduto una parte per alimentare le pro-
+prie perdite. Per effetto dello scorrimento, i conduttori di rotore tagliano il flusso ad una 
+velocità n0  n per cui il fenomeno di induzione elettromagnetica nel rotore avviene con 
+una frequenza: f2 = p (n0  n)/60. Tenendo conto della VIII.4.4 è:
+(VIII.4.9)
+La variazione della frequenza rotorica al variare delle condizioni di funzionamento 
+modifica tutte le grandezze rotoriche dipendenti da essa che risultano:
+(VIII.4.10)
+(VIII.4.11)
+(VIII.4.12)
+(VIII.4.13)
+4.3.2  Schema elettrico equivalente
+È tracciato in Fig. VIII.4.2 in analogia con quello del trasformatore e vi appaiono gli 
+elementi variabili con lo scorrimento: E2 e X2.
+Pcu0
+3R1I0
+2
+=
+P0
+Pf
+Pm
+Pcu0
++
++
+=
+Uf
+I0
+Ia
+I
+G0
+B0
+a)
+Uf
+I
+I0
+Ia
+
+0
+b)
+f2
+sf
+=
+E2
+2,22f2N2
+=
+E2
+sE2 1
+
+=
+
+X2
+2f2L2d
+=
+X2
+sX2 1
+
+=
+
+Z2
+R2
+2
+sX2 1
+
+
+2
++
+=
+I2
+sE2 1
+
+R2
+2
+sX2 1
+
+
+2
++
+
+=
+
+[PAG 722]
+VIII-40
+MACCHINE ELETTRICHE
+Fig. VIII.4.2  Schema elettrico del motore asincrono.
+Con riferimento alla VIII.4.13 la corrente rotorica può scriversi come segue:
+(VIII.4.14)
+cui corrisponde lo schema di Fig. VIII.4.3a.
+Fig. VIII.4.3  Motore asincrono: schema elettrico equivalente (a) e trasformatorico (b).
+Togliendo al termine resistivo R2/s la parte R2 spettante all’avvolgimento, si ottiene:
+(VIII.4.15)
+che rappresenta la resistenza elettrica equivalente al carico meccanico e dà luogo allo 
+schema equivalente trasformatorico del motore (Fig. VIII.4.3b).
+4.4  Caratteristiche di funzionamento
+4.4.1  Potenze e rendimento
+La potenza attiva assorbita dal motore è:
+(VIII.4.16)
+Nel passaggio attraverso lo statore la potenza subisce perdite nel ferro (Pf) per isteresi 
+e correnti parassite e perdite nel rame per effetto Joule: Pcu1 = 3 R1 I1
+2. La potenza tra-
+smessa (Pt) dallo statore al rotore è:
+(VIII.4.17)
+Essa viene trasferita dal campo rotante per effetto meccanico con una coppia C0 ed 
+una velocità 0:
+(VIII.4.18)
+Attraverso il rotore la potenza subisce perdite nel rame Pcu2 = 3 R2 I2
+2 e perdite mec-
+caniche (Pm) per attrito e ventilazione.
+La potenza resa è:
+Uf
+I1
+R1
+X1d
+I’
+I0
+Y0
+E1
+I2
+R2
+X2
+E2
+I2
+E2 1
+
+R2
+s
+
+
+2
+X2 1
+
+2
++
+
+=
+Uf
+I1
+R1
+X1d
+I’
+I0
+Y0
+E1
+I2
+R2/s
+X2(1)
+E2(1)
+a)
+E1
+I2
+R2
+X2(1)
+E2(1)
+U2f
+RL
+b)
+RL
+R2 1
+s
+–
+
+
+s
+
+=
+Pa
+3UI
+
+cos
+=
+Pt
+Pa
+Pf
+Pcu1
++
+
+
+–
+=
+Pt
+C00
+=
+
+[PAG 723]
+MACCHINE ELETTRICHE
+VIII-41
+(VIII.4.19)
+e il rendimento:
+(VIII.4.20)
+Fig. VIII.4.4  Diagramma del flusso della potenza di un motore asincrono.
+Dal diagramma del flusso della potenza (Fig. VIII.4.4) si rileva quanto segue:
+–  la differenza fra la potenza trasmessa e le perdite nel rame rotoriche rappresenta la 
+potenza meccanica generata (PG):
+(VIII.4.21)
+Dalla (4.21) di deduce:
+(VIII.4.22)
+La differenza fra la potenza meccanica generata e le perdite meccaniche è la potenza resa:
+(VIII.4.23)
+Da questa si deduce
+(VIII.4.24)
+in cui
+(VIII.4.25)
+rappresenta la coppia necessaria per vincere le perdite meccaniche del motore.
+4.4.2  Caratteristica meccanica
+La caratteristica meccanica è C = f(n); risulta più agevole determinare analiticamente 
+la coppia al traferro in funzione dello scorrimento C0 = f(s).
+Con riferimento alla VIII.4.18 si ricava: C0 = Pt/0. Dalla VIII.4.22 è 
+Tab. VIII.4.1  Valori indicativi del fattore di potenza e del rendimento dei motori 
+asincroni
+Pn (kW))
+0,25
+1
+2,5
+10
+25
+100
+250
+cos
+0,75
+0,8
+0,85
+0,86
+0,88
+0,9
+0,91
+ (%)
+70
+75
+80
+85
+88
+91
+93
+Pr
+C
+=
+
+Pr
+Pr
+Pf
+Pcu1
+Pcu2
+Pm
+Pad
++
++
++
++
++
+---------------------------------------------------------------------------------------------
+=
+Pa
+Pf
+Pcu1
+Pr
+PG
+Pt
+Pcu2
+Pm
+PG
+Pt
+Pcu2
+–
+=
+ed anche
+PG
+C0
+=
+Pcu2
+sPt
+=
+Pr
+PG
+Pm
+–
+=
+Pm
+Cm
+=
+Cm
+C0
+C
+–
+=
