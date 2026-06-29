@@ -1,0 +1,810 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 21/116 ===
+Chars: 44,853 | Offset: 883,650
+
+
+
+[PAG 436]
+VI-62
+CAD
+7.9  Assi di simmetria
+Gli assi di simmetria, disegnati con una alternanza di tratti lunghi e corti, vanno in-
+seriti per indicare il centro dei cerchi o dei fori nelle varie viste, ed anche per indicare una 
+simmetria speculare dell’oggetto nel suo insieme.
+–  Rendere corrente il layer Assi, utilizzando la finestra delle proprietà dei layer, 
+mediante il pulsante posto nel pannello Layer della barra multifunzione.
+–  Attivare il comando Linea, dalla tavolozza degli strumenti disegna. Con lo Snap atti-
+vato, fare clic mezzo punto di griglia sopra il punto centrale della linea orizzontale più alta 
+della vista di fianco. Scendere verticalmente e fare clic, mezzo punto di griglia più in basso 
+del punto centrale della linea orizzontale più bassa. Premere Invio per concludere il 
+comando.
+–  Con il comando Pan, inquadrare la vista dall’alto.
+–  Attivare il comando Linea. Fare clic mezzo punto di griglia a sinistra dell’arco 
+esterno, e allineati con il centro dello stesso. Spostarsi a destra orizzontalmente e fare clic 
+mezzo punto di griglia oltre il perimetro esterno del supporto. Premere Invio per conclu-
+dere il comando.
+–  Premere Invio per ripetere il comando Linea. Allineati con il centro degli anelli, por-
+tarsi mezzo punto di griglia sopra il limite superiore della vista e fare clic. Spostarsi verti-
+calmente verso il basso e fare clic, mezzo punto di griglia sotto la linea inferiore. Premere 
+Invio per concludere il comando.
+–  Premere Invio per ripetere il comando Linea. Allinearsi con il centro dell’arco dell’aper-
+tura di destra e fare clic, mezzo punto di griglia sopra l’arco. Scendere verticalmente e fare 
+clic, mezzo punto di griglia sotto l’arco. Premere Invio per concludere il comando.
+–  Usare il comando Pan in modo da visualizzare contemporaneamente metà della vista 
+dall’alto e la parte inferiore della vista di fronte.
+–  Attivare il comando Linea. Portare il puntatore mezzo 
+punto di griglia sotto la linea più bassa della vista di fronte, 
+allineato con l’asse centrale dell’arco nella vista in pianta, e 
+fare clic. Salire verticalmente e fate clic, mezzo punto di gri-
+glia sopra la seconda linea orizzontale. Premere Invio per 
+concludere il comando.
+–  Usare il comando Pan, per visualizzare tutta la vista di 
+fronte. 
+–  Attivare il comando Linea. Portare il puntatore mezzo 
+punto di griglia sopra il punto medio del rialzo circolare, e 
+fare clic. 
+Fig. VI.7.20  Finestra di dialogo Proprietà.
+–  Scendere verticalmente e fare clic, mezzo punto di griglia sotto la terza linea orizzon-
+tale. Le linee d’asse possono apparire lunghe e in qualche caso viene disegnata una sola 
+linea, senza l'alternanza con il tratto corto. È un problema di scala.
+–  Fare clic su tutte le linee d’asse appena disegnate in modo da selezionarle. Fare clic 
+sul pulsante Proprietà dopo aver attivato il sottomenu con il pulsante destro del mouse. Si 
+apre la finestra di dialogo proprietà di Fig. VI.7.20 che fornisce le caratteristiche delle 
+linee selezionate. 
+–  Selezionare scala tipo linee e digitare 0.5 al posto di 1. Chiudere la finestra, con un 
+clic sul pulsante di chiusura. Premere il tasto Esc due volte, per deselezionare le linee.
+7.10  Stampa del disegno
+–  Fare clic su Stampa, nel menu a discesa File. Si aprirà la finestra di dialogo già incon-
+trata, nella quale è possibile impostare le preferenze di stampa.
+
+[PAG 437]
+CAD
+VI-63
+–  Controllare che il dispositivo di stampa e le dimensioni del foglio siano quelli effetti-
+vamente in uso. Nella sezione area di stampa selezionare Limiti, per indicare di stampare 
+tutto quanto contenuto nei limiti impostati del disegno. Scegliere orientamento orizzon-
+tale, per massimizzare l’area di stampa.
+–  Per la scala di stampa, scegliendo Adatta al foglio, si è sicuri che il disegno venga 
+sicuramente adattato alle dimensioni del foglio. In questo caso, avendo impostato i limiti 
+del disegno corrispondenti ad un formato standard A4, dovrebbe essere possibile stampare 
+in scala 1:1. In realtà non è detto che sia possibile; dipende dall’area effettivamente stam-
+pabile dal dispositivo impiegato.
+–  Fare clic sul pulsante Anteprima, per visualizzare l’anteprima di stampa.
+Se utilizzando una scala 1:1 il disegno risultasse un pò spostato e non fosse visualiz-
+zata ad esempio una linea della squadratura, è possibile effettuare degli spostamenti sia 
+lungo l’asse X, sia lungo l’asse Y nella sezione Offset della finestra di dialogo stampa.
+8  VISTE IN SEZIONE
+Quando un solido viene tagliato con un piano, immaginando di asportare la parte 
+tagliata, la superficie che rimane in vista dopo l’asportazione è detta sezione del solido 
+con il piano considerato. È allora possibile vedere la sua conformazione interna, rendendo 
+più semplice la comprensione dei disegni tecnici.
+Sul disegno va indicata la traccia dei piani di sezione, mediante una linea mista, simile 
+a quella usata per gli assi di simmetria, ma con le estremità ingrossate. Ai due estremi si 
+posizionano due frecce orientate nel senso di proiezione che devono essere contrassegnate 
+da una lettera maiuscola. La parte dell’oggetto rappresentato che risulta effettivamente ta-
+gliata, deve essere tratteggiata utilizzando linee sottili inclinate di 45°, oppure con un mo-
+dello di riempimento di tipo diverso quando si desidera dare informazioni sul materiale di 
+cui è costituito il pezzo sezionato.
+Secondo le norme UNI, nelle sezioni longitudinali, non vanno rappresentate in sezio-
+ne le nervature, le razze, i chiodi, i bulloni, le spine, i denti delle ruote dentate e in gene-
+rale tutti i pezzi di spessore piccolo rispetto alla dimensione maggiore.
+8.1  Disegno di una Flangia
+Fig. VI.8.1
+
+[PAG 438]
+VI-64
+CAD
+In questo capitolo si disegneranno, le viste in proiezione ortogonale di una flangia cir-
+colare. A causa della simmetria dell'oggetto, saranno sufficienti due sole viste, una delle 
+quali rappresentata in sezione.
+Il disegno finito sarà come quello di Fig. VI.8.1, alla quale si farà riferimento per le 
+misure. Si vedrà l’uso dei nuovi comandi Rigenera, Ptratt (tratteggia) e Cima, e si farà un 
+uso piuttosto intensivo del puntamento con Snap ad oggetto.
+8.2  Impostazioni preliminari
+Si inizia il disegno come al solito utilizzando il modello già realizzato. Dopo aver 
+avviato AutoCAD fare clic sul pulsante Apri. Con un clic su Sfoglia aprire il file mod-
+corso.dwt.
+–  Cambiare con Ddedit il titolo del disegno in Flangia, ed aggiornare la data; eseguire 
+quindi uno Zoom tutto.
+–  Fare clic su Strumenti nel menu a discesa, e quindi su Impostazioni disegno. Control-
+lare che le impostazione per Snap e Griglia siano di 5 e 10 unità. Nella cartella Snap ad 
+oggetto selezionare Fine, Centro, Quadrante, Intersezione. 
+–  Per il momento togliere, se c’è, il segno di spunta nella casella Puntamento snap ad 
+oggetto, e fare clic su OK.
+Si vogliono creare tre nuovi layer da usare per le linee degli spigoli non in vista, le 
+linee d’asse, le linee di tratteggio della sezione.
+Fare clic sull’icona Proprietà layer; si apre la solita finestra di dialogo. 
+Fare clic sul pulsante Nuovo, e assegnare il nome Assi. Ripetere l’operazione 
+per creare i layer di nome Nas, per le linee nascoste, e Tratt, per il tratteggio.
+–  Fare clic sulla colonna del colore, in corrispondenza dei tre nuovi layer, per 
+assegnare, i colori blu al layer Assi, verde al layer Nas, rosso al layer Tratt.
+Per il momento, nella colonna Tipo di linea, compare la parola Continuous. Bisogna 
+ora associare ai layer Assi e Nas il tipo di linea appropriato.
+–  Fare clic su Continuous nella riga corrispondente al layer Assi. Nella nuova finestra di 
+dialogo, fare clic sul pulsante Carica. Selezionare dall’elenco CENTRO2, scendere 
+nell’elenco usando la barra di scorrimento, e tenendo premuto il tasto Control, selezionare 
+anche NASCOSTA2, quindi fare clic su OK.
+Nella finestra del tipo di linea di Fig. VI.8.2, ci sono ora disponibili tre tipi di linea.
+–  Selezionare, con un clic, la linea CENTRO2 e fare clic su OK. 
+–  Fare clic su Contiuous in corrispondenza del layer Nas. 
+–  Selezionare la linea NASCOSTA2 e fare clic su OK. Selezionare il layer Assi, fare clic 
+sul pulsante Corrente e poi su OK.
+Fig. VI.8.2  Finestra di dialogo tipo di linea.
+
+[PAG 439]
+CAD
+VI-65
+8.3  Vista di fronte
+Si partirà dalla costruzione della parte superiore della vista frontale.
+–  Attivare il comando Cerchio, dalla tavolozza degli strumenti disegna e digitare:
+75,105 (e Invio, per specificarne il centro) 
+D (e Invio, perché si vuole assegnare il Diametro)
+104 (e Invio, per specificare il diametro del cerchio).
+–  Attivare il comando Linea, dalla sua icona negli strumenti di disegno. Posizionarsi nel 
+punto 15,105 sulla griglia di snap, allineati con il centro del cerchio, e fare clic per speci-
+ficare il primo punto della linea. Portare il puntatore a destra, al di fuori del cerchio nel 
+punto simmetricamente opposto (135,105) e fare clic, per indicare il punto successivo. 
+Premere Invio o Barra spazio per concludere il comando.
+–  Premere Invio per ripetere il comando Linea. Fare clic nel punto 75,40 per fissare 
+l’inizio della linea. Fare clic nel punto simmetrico (75,170) per indicare il punto succes-
+sivo. Premere Invio per concludere.
+–  Fare clic sulla finestra di controllo layer e rendere corrente il layer ogg.
+–  Fare clic sul pulsante Cerchio, nella tavolozza degli strumenti disegna. Portare il pun-
+tatore nella parte superiore del cerchio precedente e, quando compare l’etichetta Interse-
+zione (con l’asse verticale) fare clic. Digitare:
+8 (e Invio, per specificare il raggio).
+–  Attivare ancora il comando Cerchio. Portare il 
+puntatore sulla circonferenza disegnata con linea 
+d'asse, e fare clic quando compare il contrassegno 
+del centro. Spostare il puntatore e fare clic, 
+quando compare il contrassegno Quadrante, rife-
+rito al cerchio più piccolo, come in Fig. VI.8.3.
+Fig. VI.8.3   
+–  Eseguire uno Zoom finestra intorno al cerchio più piccolo. Probabilmente i cerchi 
+saranno visualizzati con delle spezzate. Fare clic sul menu a discesa Visualizza, e poi su 
+Rigenera. Le spezzate ritorneranno ad essere visualizzate come cerchi.
+–  Attivare, se non lo è già, il modo Orto, con F8 o dalla barra di stato.
+–  Fare clic sul pulsante Linea, nella tavolozza degli strumenti disegna. Portare il punta-
+tore sul lato destro della circonferenza piccola e fare clic quando compare il contrassegno 
+Quadrante, per specificare il primo punto. Scendere in basso e fare clic un pò prima di 
+raggiungere il cerchio grande. Premere Invio per concludere il comando.
+–  Ripetere l’operazione disegnando una linea simile, sul quadrante di sinistra. 
+–  Il risultato è visibile in Fig. VI.8.4. 
+–  Fare clic sul pulsante Raccordo nella 
+barra degli strumenti di modifica. Digitare:
+–  Ra (e Invio, per assegnare il raggio).
+–  10 (e Invio, per specificare il raggio).
+–  Premere Invio per ripetere il comando Rac-
+cordo. Fare clic, dopo aver portato il mirino di 
+selezione sul segmento verticale di destra, e suc-
+cessivamente sulla circonferenza, nella parte a 
+destra della linea. 
+Fig. VI.8.4  
+–  Ripetere l’operazione per raccordare la linea verticale di sinistra con la circonferenza.
+
+[PAG 440]
+VI-66
+CAD
+8.3.1  Taglio del cerchio
+–  Fare clic sul pulsante Taglia, nel pannello Edita della barra multifunzione. È necessa-
+rio selezionare come limiti di taglio, i due raccordi e i due corti segmenti, nei punti P e P' 
+di Fig. VI.8.5, che collegano i suddetti raccordi con il cerchio piccolo. Per poter selezio-
+nare questi piccoli segmenti sarà necessario eseguire uno zoom intorno al quadrante di 
+sinistra del cerchio piccolo, e poi spostarsi con il comando Pan, al quadrante di destra per 
+selezionare il segmento a destra.
+Una alternativa è quella di selezionare con una fine-
+stra che racchiuda il cerchio piccolo ed i raccordi e 
+rimuovere poi dalla selezione il cerchio.
+–  Premere Invio, per completare la selezione dei 
+limiti di taglio.
+–  Fare clic con il pulsante sinistro del mouse, sulla 
+parte inferiore del cerchio piccolo e sul cerchio gran-
+de, nella zona compresa tra i due raccordi.
+Fig. VI.8.5  
+–  Attivare il comando Linea, dalla tavolozza degli strumenti disegna. Per specificare il 
+primo punto, portate il puntatore su di un punto qualsiasi della circonferenza esterna dise-
+gnata con linea d’asse e, quando compare l’etichetta Centro, fare clic con il pulsante sini-
+stro del mouse.
+Poiché nelle impostazioni di snap ad 
+oggetto sono state attivate più moda-
+lità, Centro, Quadrante, Intersezione, è 
+possibile che posizionando il puntatore 
+sulla circonferenza, non compaia Cen-
+tro, ma ad esempio Quadrante. È pos-
+sibile passare da una opzione all’altra, 
+premendo il tasto Tab. In alternativa è 
+sempre possibile, alla richiesta del 
+punto, indicare esplicitamente il cen-
+tro, facendo clic sul pulsante Centro, 
+nella barra degli strumenti di osnap.
+Fig. VI.8.6  
+–   Alla richiesta del punto successivo, portate il puntatore sulla parte in basso del rac-
+cordo di destra, nel punto Q di Fig. VI.8.6, e fare clic quando compare il contrassegno del 
+Punto finale. Premere Invio, per concludere il comando Linea.
+–  Fare clic sul pulsante Ruota, nel pannello Edita della barra multifunzione. Digitare:
+U (per selezionare l’ultima linea disegnata e Invio).
+–  Portare il puntatore sulla circonferenza, e fare clic quando compare l’etichetta Centro
+(con le stesse avvertenze di prima). Digitare:
+60 (per specificare l’angolo di rotazione).
+–  Attivare il comando Taglia, dal pannello Edita della barra multifunzione. Fare clic 
+sulla linea appena ruotata e sul raccordo di destra per indicare i limiti. Fare clic con il pul-
+sante destro del mouse, per completare la selezione. Fare clic sulla parte della circonfe-
+renza esternamente ai limiti di taglio indicati, ad esempio nel punto R di Fig. VI.8.7, per 
+indicare l’oggetto da tagliare. Premere Invio per completare il comando.
+–  Cancellare la linea ruotata, che è servita solo per la costruzione.
+
+[PAG 441]
+CAD
+VI-67
+Fig. VI.8.7  
+Fig. VI.8.8  
+–  Digitare:
+Editpl (seguito da Invio).
+Selezionare l’arco di cerchio rimasto a sinistra. Premere Invio, per accettare di trasfor-
+marlo in polilinea.
+–  Digitare:
+U (che sta per Unisci, seguito da Invio).
+Selezionare con una finestra i raccordi, i segmenti verticali e il semicerchio rimasto, 
+come in Fig. VI.8.8, per indicare gli elementi da unire. Premere Invio, per completare il 
+comando.
+8.3.2  Completamento del perimetro
+–  Nel menu a discesa Disegna, fare clic su Anello. Digitare:
+4.6 (e Invio, per specificare il diametro interno).
+4.6 (e Invio, per specificare il diametro esterno).
+Portare il puntatore all’intersezione tra il cerchio tratteggiato e la linea d’asse verti-
+cale, e fare clic quando compare il contrassegno INTersezione. Premere Invio, per conclu-
+dere il comando. È stato usato il comando Anello, e non Cerchio, perché non è possibile 
+ingrossare il cerchio.
+–  Fare clic su Disegna, nel menù a discesa, e quindi su Polilinea. 
+–  Selezionare l’anello appena disegnato. Digitare:
+L (e Invio, perché si desidera assegnare una Larghezza).
+0.5 (seguito da Invio).
+Premere Invio per concludere il comando.
+–  Fare clic sul pulsante Serie, nel pannello Edita. Fare clic sull’anello e su un 
+punto qualsiasi del profilo rimasto dopo il taglio, che risulterà tutto selezionato 
+essendo diventato un unico oggetto. Premere il pulsante destro del mouse per 
+completare la selezione. Digitare:
+P (per specificare una serie Polare o Invio).
+Portare il puntatore all’intersezione delle due linee d’asse, e fare clic quando compare 
+in contrassegno INTersezione, per indicare il centro della serie. Digitare:
+6 (per indicare il numero totale di elementi e Invio).
+Premere Invio, per accettare di occupare un angolo di 360°; ancora Invio per accettare 
+di ruotare gli oggetti. Il disegno si presenterà come in Fig. VI.8.9.
+È conveniente trasformare tutto il perimetro esterno, che per ora è costituito da sei 
+parti distinte, in un oggetto unico.
+
+[PAG 442]
+VI-68
+CAD
+–  Fare clic sul pulsante Polilinea del pannello 
+Edita, della scheda Inizio. Selezionare uno dei 
+sei elementi che costituiscono il perimetro. 
+Digitare:
+U (per Unisci, seguito da Invio).
+Fare clic sugli altri cinque elementi del peri-
+metro. 
+–  Premere Invio per concludere il comando. 
+Apparentemente non è successo nulla, ma in 
+realtà ora il perimetro è un unico oggetto.
+Fig. VI.8.9  
+8.3.3  Completamento della vista frontale
+La flangia presenta uno smusso a 45° di 3.5 mm; nella vista frontale si vedrà un secon-
+do contorno, parallelo a quello esterno, distanziato di 3.5 unità.
+–  Attivare il comando Offset, dalla barra degli strumenti di modifica. Digitare:
+3.5 (e Invio, per indicare la distanza di sfalsamento)
+selezionare il contorno, che diventerà tratteggiato, per indicare l’oggetto da sfal-
+sare. Fare clic nella parte interna del perimetro, per indicare da quale parte sfalsare. Pre-
+mere Invio per concludere il comando.
+–  Fare clic su Disegna, nel menu a discesa, e quindi su Anello. Digitare:
+65 (e Invio, per indicare il diametro interno)
+65 (e Invio, per indicare il diametro esterno)
+portare il puntatore all’intersezione dei due assi di simmetria, nel centro della flangia, e 
+fare clic quando compare il contrassegno INTersezione, per specificare il centro 
+dell’anello. Premere Invio per concludere il comando.
+–  Premere Invio o Barra spazio per ripetere il comando Anello. Digitare:
+34 (e Invio, per indicare il diametro interno)
+34 (e Invio, per indicare il diametro esterno)
+portare il puntatore all’intersezione dei due assi di simmetria, nel centro della flangia, e 
+fare clic, per specificare il centro dell’anello. Premere Invio per concludere il comando.
+–  Rendere corrente il layer Nas, usando la finestra di controllo dei layer.
+–  Attivare il comando Cerchio, dalla tavolozza degli strumenti disegna. Portare il punta-
+tore all’intersezione dei due assi di simmetria, nel centro della flangia, e fare clic quando 
+compare il contrassegno INTersezione, per specificare il centro del cerchio. Digitare:
+D (e Invio, per indicare che si desidera indicare il Diametro)
+76 (seguito da Invio, per assegnare il diametro).
+8.4  Traccia del piano di sezione
+La flangia è sezionata da di un piano perpendicolare al piano di disegno, e posizionato 
+sull’asse di simmetria verticale. Va disegnata la traccia di questo piano, e specificata la 
+direzione della vista in sezione, mediante due frecce che puntano verso la traccia. Si dise-
+gnano queste componenti nel layer Assi.
+–  Rendere corrente il layer Assi, usando la finestra di controllo dei layer, 
+–  Attivare il comando Polilinea, dalla tavolozza degli strumenti disegna. Portare 
+il puntatore all’estremità superiore della linea d’asse verticale, e fare clic quando 
+compare il contrassegno Punto Finale. Digitare:
+La (e Invio, per indicare che si vuole assegnare una Larghezza)
+0.5 (e Invio, per assegnare la larghezza iniziale)
+0.5 (e Invio, per assegnare la larghezza finale)
+@8<90 (e Invio, per specificate il punto successivo).
+
+[PAG 443]
+CAD
+VI-69
+Premere Invio o Barra spazio per concludere il comando.
+–  Ripetere il procedimento, aggiungendo una polilinea uguale, collegata all’estremità 
+inferiore della linea d’asse verticale.
+–  Premere Invio, per ripetere il comando Polilinea. Fare clic sul pulsante Medio, nella 
+barra degli strumenti di osnap. Questo passaggio si rende necessario, non essendo stato 
+selezionato il punto medio nelle impostazioni di snap ad oggetto attive. Portare il punta-
+tore sulla polilinea superiore prima disegnata, e fare clic quando appare il contrassegno 
+Punto medio. Digitare:
+La (e Invio, per indicare che si vuole assegnare la Larghezza)
+0 (seguito da Invio, per assegnare la larghezza iniziale)
+3 (seguito da Invio, per assegnare la larghezza finale)
+@6<180 (e Invio, per specificare il punto successivo)
+La (seguito da Invio, per indicare che si vuole specificare la nuova Larghezza)
+0 (e Invio, per assegnare la larghezza iniziale. Premere Invio, per accettare la
+larghezza finale proposta 0)
+@12<180 (e Invio, per specificare il punto successivo).
+Premere Invio per concludere il comando.
+–  Fare clic su Disegna, nel menu a discesa, quindi su 
+Testo, e Riga singola di testo. Digitare:
+S (seguito da Invio, per assegnare lo Stile)
+? (seguito da Invio due volte per visionare 
+gli stili di testo definiti).
+–  Premere F2 per chiudere la finestra che mostra le 
+caratteristiche degli stili. Digitare:
+S (seguito da Invio)
+Nome (seguito da Invio).
+–  Premere F3 per disattivare lo Snap ad oggetti.
+–  Fare clic appena sopra la polilinea orizzontale a 
+freccia appena disegnata. Digitare:
+A (e Invio due volte per concludere).
+Fig. VI.8.10  
+Invece di rifare tutto il lavoro nella parte inferiore del disegno, è possibile copiare la 
+freccia con il testo. Fare clic sul pulsante Copia, nella barra degli strumenti di modifica. 
+Selezionare la freccia e la lettera A; premere Invio per concludere la selezione. Fare clic 
+sul pulsante Medio, nella barra degli strumenti di osnap. Fare clic sulla polilinea ingros-
+sata superiore della traccia del piano di sezione, per indicare il punto base. Fare clic sul 
+pulsante Medio, nella barra degli strumenti di osnap. Fare clic sulla polilinea ingrossata 
+inferiore della traccia del piano di sezione, per indicare il punto dove copiare. Il disegno si 
+presenterà come in Fig. VI.8.10.
+8.5  Vista di fianco in sezione
+Si disegnerà ora la vista di fianco della flangia, immaginando di tagliarla con il piano 
+di traccia A-A e di rimuovere la parte sinistra. Spesso nei disegni di pezzi sezionati, non 
+vengono riportati tutti gli spigoli non in vista per non appesantire il disegno, a meno che 
+non sia indispensabile per la comprensione del disegno stesso.
+Per l’allineamento degli spigoli nelle due viste, si farà ampio uso del puntamento su 
+punti notevoli di un oggetto, con l’attivazione di AutoTrack.
+8.5.1  Disegno del contorno della vista di fianco in sezione
+–  Rendere corrente il layer Ogg, usando la finestra di controllo del layer. 
+A
+A
+
+[PAG 444]
+VI-70
+CAD
+–  Fare clic sul pulsante Opuntamento nella barra di stato, 
+sotto la riga di comando, per attivare il puntamento con snap 
+ad oggetto.
+–  Effettuare uno zoom tale da visualizzare completamente solo la parte destra della vista 
+di fronte, arrivando fino alla parte destra della squadratura.
+–  Fare clic sul pulsante Polilinea, nella tavolozza degli strumenti disegna. Portare il 
+puntatore all’estremità superiore del semicerchio della vista frontale, nel punto A di Fig. 
+VI.8.11 e quando compare l’etichetta INTersezione (con la linea d’asse) si trattenga il 
+puntatore in questa posizione per qualche istante per acquisire il punto. Spostando il pun-
+tatore a destra, si vedrà la traiettoria di allineamento. Inserire lo Snap, se non lo è già, por-
+tarsi a due punti e mezzo di griglia a sinistra della squadratura, rimanendo sempre lungo la 
+traiettoria di allineamento, e fare clic con il pulsante sinistro.
+Fig. VI.8.11  
+In questo modo il punto di partenza della polilinea sarà perfettamente allineato con 
+l’estremità superiore della flangia. 
+Fig. VI.8.12
+
+[PAG 445]
+CAD
+VI-71
+Digitare:
+La (e Invio, per indicare che si vuole assegnare una Larghezza)
+0.5 (e Invio, per specificare la larghezza iniziale).
+Premere Invio per accettare una larghezza finale di 0.5. Viene chiesto il punto succes-
+sivo: portare il puntatore all'estremità inferiore del semicerchio della vista frontale, sul 
+punto B, e quando compare l’etichetta Intersezione trattenerlo qualche istante per acqui-
+sire il punto. Ritornare verso destra sotto il punto di partenza e fare clic. Digitare
+@11<180 (seguito da Invio).
+Portare il puntatore sul quadrante inferiore del cerchio tratteggiato, punto C di Fig. 
+VI.8.12 e trattenerlo il questa posizione per acquisire il punto. Portare il puntatore sul 
+punto precedente della polilinea, punto E, e trattenerlo, per acquisire anche questo punto. 
+Spostare il puntatore in alto fino a vedere incrociarsi le due traiettorie di allineamento e 
+fare clic. Digitare:
+@70<180 (seguito da Invio).
+Fig. VI.8.13  
+Portare il puntatore all’estremità superiore del cerchio tratteggiato, punto F di Fig. 
+VI.8.13 e quando compare l’etichetta INTersezione o Quadrante trattenerlo qualche 
+istante per acquisire il punto. Ritornare verso destra seguendo la traiettoria di allineamen-
+to, premere F8 per attivare il modo Orto e fare clic con il pulsante sinistro. Digitare:
+@70<0 (seguito da Invio).
+Portare il puntatore sul punto G della polilinea, per acquisirlo, spostarsi verso sinistra 
+lungo la traiettoria di allineamento, e fare clic con il modo Orto attivato. Digitare:
+Ch (per Chiudi, per completare il contorno).
+8.5.2  Altre linee della vista di fianco
+–  Premere Invio, per ripetere il comando Polilinea.
+–  Portare il puntatore sul quadrante superiore dell'anello di diametro 65, nel punto H di 
+Fig. VI.8.14 e trattenerlo qualche istante per acquisire il punto. Spostarsi verso destra 
+lungo la traiettoria di allineamento, fino ad incontrare con il puntatore la linea verticale 
+del contorno già disegnato, e fare clic quando compare INTersezione. Digitare:
+Per (che sta per Perpendicolare, seguito da Invio).
+
+[PAG 446]
+VI-72
+CAD
+Fig. VI.8.14  
+Fare clic sulla linea verticale più a destra. Premere Invio, per concludere il comando.
+Fig. VI.8.15  
+Per disegnare la linea simmetrica in basso, invece di usare la stessa procedura, si uti-
+lizzerà il comando Specchio.
+–  Fare clic su Specchio, nel pannello Edita della barra multifunzione.
+–  Digitare:
+U (e Invio, per specificare l’Ultima polilinea disegnata).
+A
+A
+A
+F
+H
+C
+B
+G
+L
+K
+E
+
+[PAG 447]
+CAD
+VI-73
+Premere Invio per concludere la selezione. Portare il puntatore all’estremità sinistra 
+della linea d’asse orizzontale, nella vista di fronte e fare clic. Portare il puntatore all’inter-
+sezione delle linee d’asse, nella vista frontale e fare clic. Premere Invio per accettare di 
+non cancellare l’oggetto originale.
+–  Attivare il comando Polilinea. Fare clic sul pulsante snap Da, nella barra degli 
+strumenti di osnap. Portare il puntatore all’estremità sinistra dell’ultima polilinea 
+disegnata e fare clic quando compare il contrassegno Punto finale.
+–  Digitare:
+@5.5<0 (seguito da Invio, per specificare lo spostamento rispetto al punto 
+preso come riferimento). 
+Per (seguito da Invio).
+Fare clic sulla polilinea orizzontale immediatamente sopra. 
+Bisogna ora eliminare i due tratti delle polilinee orizzontali, contrassegnati in Fig. 
+VI.8.15 con K ed L, compresi tra le linee verticali a sinistra.
+–  Attivare il comando Taglia, dalla barra degli strumenti di modifica.
+–  Digitare:
+U (e Invio per indicare come limite di taglio l’ultima linea disegnata).
+Premere Invio per completare la selezione dei limiti di taglio. Fare clic sui due tratti K 
+ed L di polilinea da tagliare. Premere Invio per completare il comando.
+8.5.3  Spigoli dei fori
+Si devono disegnare gli spigoli dei due fori piccoli sulle orecchie della flangia e del 
+foro centrale. Poiché la flangia è stata sezionata, gli spigoli dei fori sono visibili e vanno 
+disegnati usando una polilinea con spessore.
+Fig. VI.8.16  
+–  Attivare il comando Polilinea, usando la tavolozza degli strumenti disegna. Portare il 
+puntatore in corrispondenza del quadrante superiore del piccolo foro in alto, nel punto M 
+della Fig. VI.8.16 e attendere qualche istante la comparsa dell’etichetta INTntersezione, 
+per acquisire il punto. Spostarsi orizzontalmente verso destra seguendo la traiettoria di 
+allineamento, fino ad incontrare la linea verticale della vista di fianco e fare clic quando 
+compare l’etichetta INTersezione, per fissare il primo punto. Digitare:
+Per (seguito da Invio).
+Portare il puntatore a destra e fare clic sulla linea verticale, per specificare il punto
+
+[PAG 448]
+VI-74
+CAD
+successivo. Premere Invio per concludere il comando.
+–  Attivare ancora il comando Polilinea e, usando la medesima procedura, tracciare il seg-
+mento che rappresenta lo spigolo corrispondente al quadrante inferiore N dello stesso foro. 
+–  Allo stesso modo, tracciare il segmento che rappresenta lo spigolo relativo al qua-
+drante superiore, punto O, del foro centrale.
+Considerata la simmetria della figura, per disegnare gli 
+altri tre segmenti non conviene seguire lo stesso procedi-
+mento, bensì usare il comando Specchio.
+–  Attivare Specchio, dalla sua icona nel pannello Edita
+della barra multifunzione. Selezionare i tre piccoli seg-
+menti orizzontali appena disegnati. Premere Invio per 
+concludere la selezione. Portare il puntatore all'estremità 
+destra della linea d’asse orizzontale nella vista di fronte, e 
+fare clic per specificare un punto della linea intorno alla 
+quale eseguire la riflessione speculare. Portare il punta-
+tore verso sinistra all’intersezione delle due linee d’asse e 
+fare clic, quando compare il contrassegno INTersezione, 
+per indicare il secondo punto della linea. 
+–  Premere Invio per accettare di non cancellare gli 
+oggetti originali.
+La vista di fianco sarà come in Fig. VI.8.17.
+Fig. VI.8.17  
+8.5.4  Cimatura degli spigoli
+Il lato destro della flangia è stato disegnato diritto per semplicità costruttiva, in realtà 
+presenta una smussatura di 3.5 mm con angolo di 45°, riscontrabile anche nella vista di 
+fronte dal contorno più interno.
+–  Eseguire uno zoom in modo da visualizzare ingrandita la parte superiore della vista di 
+fianco.
+–  Fare clic sul pulsante Cima, nella barra degli strumenti di modifica. Digitare:
+D (seguito da Invio, per assegnare la Distanza di cimatura)
+3.5 (e Invio per assegnare la distanza di cimatura del primo segmento).
+Premere Invio per accettare il valore 3.5 anche per la seconda distanza di cimatura.
+–  Premere Invio, per ripetere il comando Cima. Fare clic 
+sul piccolo segmento orizzontale più in alto del contorno. 
+Fare clic sul lato verticale alla sua destra. Usando il 
+comando Pan, spostare la visualizzazione sulla parte infe-
+riore della vista di fianco.
+–  Attivare ancora il comando Cima. Non occorre impostare 
+nuovamente le distanze di cimatura, poiché sono rimaste 
+memorizzate quelle date precedentemente. Fare clic sul seg-
+mento orizzontale più in basso. Fare clic sul lato verticale 
+alla sua destra.
+8.5.5  Linea nascosta
+Si disegnerà ora la linea nascosta che rappresenta lo spigolo 
+non in vista della base della flangia, cioè il suo spessore.
+Fig. VI.8.18  
+–  Eseguire uno Zoom in tempo reale per visualizzare tutta la vista di fianco. Rendere 
+corrente il layer Nas, usando la finestra di controllo del layer. 
+–  Fare clic sul pulsante Linea, nella tavolozza degli strumenti disegna. 
+P
+Q
+
+[PAG 449]
+CAD
+VI-75
+–  Portare il puntatore sul punto P di Fig. VI.8.18, nella parte superiore della vista di 
+fianco, e fare clic quando compare il contrassegno del punto finale. 
+–  Scendere verticalmente e fare clic quando si raggiunge il punto simmetrico Q.
+8.6  Linee di sezione
+Occorre ora disegnare le linee di sezione, usando un motivo di riempimento appropriato, 
+nelle parti dell’oggetto che sono state effettivamente tagliate dal piano di traccia A-A.
+–  Usando la finestra layer, nella barra delle proprietà, congelare il layer Nas e rendere 
+corrente il layer Tratt. Rendere corrente il layer tratt.
+–  In alcuni casi è conveniente non visualizzare alcuni oggetti, per avere una maggior 
+pulizia del disegno, oppure come in questo caso, affinché la linea tratteggiata non venga 
+presa in considerazione nella definizione dei contorni di tratteggio. Per ottenere questo, è 
+sufficiente congelare il layer sul quale sono disegnati gli oggetti in questione.
+–  Desiderando congelare il layer nas: fare clic sul triangolino 
+a destra della finestra proprietà layer e fare clic su simbolo del 
+sole, in corrispondenza del layer nas, che assumerà l’aspetto 
+di un cristallo di neve.
+Gli oggetti disegnati sul layer nas non saranno più visibili.
+Allo stesso modo, con un clic sul fiocco di neve, il layer sarà 
+scongelato, diventando ancora visibile.
+Si noti che non è possibile congelare il layer corrente; è neces-
+sario prima rendere corrente un layer diverso.
+–  Fare clic sul pulsante Tratteggio nella tavolozza 
+degli strumenti disegna.
+È possibile anche scegliere 
+Tratteggio, nel menu a discesa Dise-
+gna. Si aprirà la finestra di dialogo 
+di Fig. VI.8.19, nella quale è possi-
+bile scegliere il tipo di tratteggio.
+–  Nella scheda Rapida, controllare 
+che alla voce Tipo compaia Predefi-
+nito. Nella finestra Modello, è pos-
+sibile digitare il nome del modello 
+di riempimento desiderato. Se non 
+si conosce il nome, facendo clic sul 
+pulsante a destra di questa finestra, 
+quello contrassegnato dai puntini, si 
+apre la nuova finestra di dialogo di 
+Fig. VI.8.20 che permette di visio-
+nare i modelli disponibili e sce-
+gliere quello desiderato.
+–  Usando la barra di scorrimento, 
+scendere fino a trovare il modello 
+STEEL, fare clic per selezionarlo e 
+quindi fare clic su OK. 
+Fig. VI.8.19   Finestra di dialogo Tratteggia.
+–  Nelle finestre Angolo e Scala, si possono impostare rispettivamente un angolo diverso 
+da quello predefinito e una spaziatura tra le linee diversa.
+
+[PAG 450]
+VI-76
+CAD
+–  Fare clic sul pulsante Scegli punti. La finestra di dialogo scompare per permettere di 
+scegliere, nel disegno, dei punti interni al contorno per individuare le regioni da tratteg-
+giare. Fare clic all’interno dei due piccoli trapezi all’estremità superiore ed inferiore del 
+disegno, e nelle due zone strette a forma di S. Nella Fig. VI.8.21 sono individuate da R, S, 
+T, U. Si noti che i contorni delle aree appaiono evidenziati. Premere Invio per concludere 
+la selezione dei punti.
+Fig. VI.8.20  Finestra di dialogo scelta tipi di tratteggio.
+–  Fare clic sul pulsante di espansione della finestra per vedere il risultato del tratteggio ed 
+eventualmente assegnare altre opzioni. Se il risultato è soddisfacente, fare clic su OK per 
+applicare il tratteggio. Se apparisse troppo stretto, è possibile applicare una scala più alta, 
+1.5 o 2, visualizzare l’anteprima e poi confermare con un clic su OK.
+8.7  Completare il disegno
+Si devono ancora inserire le linee d’asse nella vista in sezione, riportare la scritta che 
+identifica la sezione, ed ingrossare i contorni della vista di fronte. Si inizierà con le linee 
+d’asse. Scongelare il layer Nas e rendere corrente il layer Assi. Usando il comando Zoom
+tempo reale, si visualizzi, con il massimo ingrandimento possibile, la vista di fianco e la 
+metà destra della vista di fronte.
+–  Attivare il comando Linea, dalla tavolozza degli strumenti disegna. Portare il punta-
+tore all'estremità destra della linea d'asse orizzontale della vista di fronte e rimanere in 
+questa posizione qualche istante per acquisire il punto. Spostarsi e verso destra, seguendo 
+la traiettoria di allineamento, e fare clic un pò prima della linea verticale del perimetro 
+della vista di fianco. 
+Spostarsi verso destra, con il modo Orto inserito, e fare clic un pò oltre lo spigolo che 
+delimita il lato destro della vista, per indicare il punto successivo. Premere Invio per con-
+cludere il comando Linea.
+Si desidera tracciare la linea d’asse del foro piccolo in basso, nella vista di fianco.
+–  Premere Invio, per ripetere il comando Linea. Portare il puntatore nel centro 
+dell’anello piccolo in basso nella vista di fronte, comparirà l’etichetta INTersezione (delle 
+linee d’asse) o Centro (dell’anello). Attendere qualche attimo per acquisire il punto. Spo-
+starsi verso destra, seguendo la traiettoria di allineamento, e fare clic un pò prima della
+
+[PAG 451]
+CAD
+VI-77
+linea verticale del perimetro della vista di fianco come in Fig. VI.8.21, per fissare il primo 
+punto. Spostarsi verso destra, e fare clic un pò oltre lo spigolo che delimita il lato destro 
+della vista, per specificare il punto successivo. Premere Invio per concludere il comando.
+Fig. VI.8.21  
+–  Per disegnare la linea d’asse del foro superiore attivare il comando Specchio, dalla 
+barra multifunzione, nel pannello Edita. Digitare:
+U (per Ultimo, seguito da Invio, per selezionare l’ultima linea disegnata).
+Premere Invio per concludere la selezione. Fare clic sull'estremità sinistra della linea 
+d’asse centrale, della vista di fianco; fare clic sull’estremità destra della stessa linea 
+d’asse. Premere Invio per accettare di non cancellare l’oggetto originale. 
+Probabilmente le linee d’asse dei fori piccoli, appena disegnate, appariranno continue 
+e non con una sequenza di tratti lunghi e corti. È un problema di scala.
+È possibile cambiare la scala del tipo di linea con il comando Scalatl, ma in questo 
+modo si cambia la scala di tutte le linee. Se le altre vanno bene, conviene procedere nel 
+modo seguente.
+–  Selezionare con un clic le due linee d’asse. Fare clic sul pulsante destro del mouse e 
+nel sottomenu che compare attivare il menu Proprietà. Nella finestra di dialogo che si 
+apre, fare clic su Scala tipo di linea e digitare 0.5 al posto di 1. Chiudere la finestra pro-
+prietà con un clic sul pulsante di chiusura. Premere il tasto Esc due volte per deselezionare 
+le linee.
+–  Si aggiunga ora la scritta di identificazione della sezione facendo clic su Disegna, nel 
+menu a discesa, quindi su Testo, e ancora su Riga singola di testo.
+Attivare, se no lo è già, il modo Snap con F9 e fare clic nel punto di coordinate 
+180,190. Premere Invio per accettare un angolo di rotazione 0. Digitare:
+Sez. A-A (premere Invio due volte per concludere il comando).
+Non resta che ingrossare le linee della vista frontale.
+–  Rendere corrente il layer Ogg. Digitare:
+Editpl (seguito da Invio).
+Selezionare con un clic il perimetro esterno della vista di fronte. Digitare:
+L (seguito da Invio, per indicare che si vuole assegnare la Larghezza)
+0.5 (seguito da due Invio per concludere il comando).
+
+[PAG 452]
+VI-78
+CAD
+–  Seguire la stessa procedura di prima, per tre volte, per ingrossare i tre spigoli in vista 
+rimasti. Il disegno si presenterà come in Fig. VI.8.22.
+Fig. VI.8.22  
+9  QUOTATURA DEI DISEGNI
+I disegni tecnici sono normalmente eseguiti in scala, ma questo non significa che le 
+dimensioni debbano essere rilevate da misure eseguite sul disegno.
+Ogni disegno tecnico deve contenere l’indicazione, effettuata mediante la quotatura, 
+di tutte le dimensioni necessarie alla costruzione o alla verifica dell’oggetto.
+Affinché le quote siano di facile lettura e non ambigue, è necessario far riferimento ad 
+una serie di norme internazionali (Fig. VI.9.1).
+Fig. VI.9.1  
+Ogni quota è costituita da:
+1)  Una linea di misura, che individua una dimensione dell’oggetto, con una freccia 
+terminale ai due estremi.
+A
+A
+Sez. A - A
+Freccia terminale
+Linea di riferimento
+Testo di quota
+Linea di misura
+
+[PAG 453]
+CAD
+VI-79
+2)  Due linee di riferimento, che riportano le dimensioni dell’oggetto agli estremi 
+della linea di misura.
+3)  Il testo di quota.
+–  Il testo della quota va scritto sopra la linea di misura ed allineato con questa.
+–  Le linee di riferimento vanno leggermente prolungate oltre la linea di misura.
+–  Le dimensioni delle frecce devono essere proporzionate a quelle del disegno. 
+–  Quando vi sono molte linee di misura, devono essere distanziate regolarmente tra loro 
+e si deve evitare di incrociare linee di riferimento con linee di misura. 
+–  Devono essere quotate tutte le dimensioni necessarie alla caratterizzazione dell’oggetto, 
+senza doverle ottenere per somma o differenza da altre. 
+–  Ogni dimensione deve essere quotata una sola volta e su una sola proiezione.
+AutoCAD è in grado di costruire la quotatura in modo quasi automatico, semplice-
+mente indicando l’oggetto da quotare, o specificando i punti tra i quali disegnare la quota. 
+Le quote sono associative, costituiscono un oggetto unico, che viene automaticamente 
+aggiornato se l’oggetto viene modificato. L’aspetto delle quote generate, dipende dall’impo-
+stazione di un numero piuttosto elevato di variabili di sistema.
+È possibile impostare queste variabili e salvarle in uno stile di quota, in modo simile alla 
+creazione di uno stile di testo. 
+Per impostare le variabili di quotatura è possibile usare il comando ddim da tastiera, 
+oppure scegliere Stile di quota, sotto la voce Formato, nel menu a discesa; sempre nel 
+menu a discesa, sotto la voce Quotatura scegliere Stile, o ancora fare clic sul pulsante 
+Stile di quota, nella barra degli strumenti di quotatura.
+9.1  Creazione di uno stile di quota (quotatura del supporto)
+Sarebbe opportuno avere lo stile di quota già impostato nel modello che si usa quando 
+si inizia un nuovo disegno, in modo da non dover ogni volta creare lo stile.
+Fig. VI.9.2  Finestra gestione stili di quota.
+Non avendo finora mai usato le quote, si creerà lo stile all’interno di un disegno prece-
+dente che poi si procederà a quotare.
+–  Dopo aver avviato AutoCAD aprire il file Supporto.dwg. Fare clic sul menu a discesa 
+Formato, e quindi su Stile di quota. Si apre la finestra di Fig. VI.9.2.
+
+[PAG 454]
+VI-80
+CAD
+Fig. VI.9.3   Finestra Crea nuovo stile di quota.
+–  Fare clic sul pulsante Nuovo. Nella finestra 
+di Fig. VI.9.3 digitare il nome da assegnare, ad 
+esempio A4. Controllare che nella finestrella 
+più in basso compaia Tutte le quote, in modo 
+che questo stile sia utilizzato per tutte le quote 
+del disegno. Fare clic sul pulsante Continua.
+Si apre la finestra di dialogo di Fig. VI.9.4a.
+Fig. VI.9.4a   Finestra Linee di Nuovo stile di quota.
+La prima scheda, Linee, permette di 
+impostare l’aspetto delle linee di 
+misura. Si impostino le varie voci 
+presenti sulla scheda come in Fig. 
+VI.9.4a.
+–  Per il colore, il tipo linea e lo spes-
+sore scegliere Da layer. 
+–  Digitare 8 nella casella Spaziatura 
+linea di base: questo per impostare a 
+otto unità la distanza tra le varie linee 
+di quota, quando si esegue una quota-
+tura in parallelo.
+–  Il valore 2 relativo a Estendi oltre 
+linee di quota, impone alle linee di 
+riferimento di prolungarsi di due 
+unità, mentre il valore 1 relativo a 
+Offset dall’origine, fa si che le linee 
+di riferimento risultino staccate di 
+una unità dall’oggetto da quotare.
+Fig. VI.9.4b   Finestra Simboli e frecce di Nuovo stile di quota.
+Si passi quindi alla cartella Simboli e 
+frecce.
+–  Per tutte le frecce si è scelto il tipo 
+Chiusa piena, di dimensione 3.5, ma 
+sarebbe possibile usare una grande 
+quantità di stili diversi.
+–  Per Centri dei cerchi si è scelto di 
+non usare alcun tipo di contrassegno, 
+essendo già individuati mediante gli 
+assi di simmetria.
+–  L’angolo di riduzione viene impo-
+stato a 45°.
+Completare come in Fig. VI.9.4b. e 
+poi fare clic sulla cartella Testo. 
+Anche in questa cartella la Fig. VI.9.5
+mostra come impostare le varie voci.
+–  Per lo Stile di testo scegliere Stan-
+dard, con un’altezza di 3.5 unità.
+
+[PAG 455]
+CAD
+VI-81
+Ovviamente è possibile scegliere un qualsiasi altro stile di testo riportato nella casella, 
+ricordando però che, se per questo stile era impostata un’altezza del testo diversa da zero, 
+il testo della quota assumerà l’altezza specificata nell’impostazione dello stile di testo e 
+non quella immessa nello stile di quotatura. Con un clic sul pulsante con i puntini, a destra 
+della casella Stili di testo, è inoltre possibile definire un nuovo stile.
+–  Nella casella Colore testo, scegliere Da layer.
+–  Nella sezione Posizionamento del testo, scegliere Sopra, per il posizionamento Verti-
+cale e Centrato per quello Orizzontale. In questo modo il testo della quota sarà sempre 
+posto sopra la linea di misura e centrato rispetto alla stessa.
+–  Impostare a 1 Offset dalla linea di quota. Questo valore indica la distanza che viene 
+mantenuta tra il testo e la linea di misura.
+–  Scegliere testo Allineato con la linea di quota.
+Fig. VI.9.5   Finestra Testo di Nuovo stile di quota.
+Fare clic sulla cartella Adatta. Se possibile, il programma posiziona frecce e testo 
+all’interno delle linee di misura.
+In questa scheda vengono assegnate le regole che AutoCAD dovrà seguire, se lo spa-
+zio non è sufficiente, o quando il testo viene spostato manualmente.
+Impostare le varie voci come in Fig. VI.9.6.
+–  La scelta di Il testo o le frecce (adattati), fa si che, se lo spazio disponibile tra le linee 
+di misura non è sufficiente, venga spostato dalla posizione di default l’elemento che meglio 
+si adatta.
+–  Scegliere Accanto alla linea di quota, per il Posizionamento del testo. Nella sezione 
+relativa alla scala, scegliere Utilizza scala generale di: 1. Le dimensioni assegnate alle 
+frecce, al testo ecc. manterranno effettivamente questo valore nello spazio del modello. Se 
+la stampa non viene eseguita in scala 1:1, anche le dimensioni degli elementi di quota 
+saranno scalate. È possibile modificare lo stile di quota per adattarlo allo spazio carta.
+–  Scegliere infine di disegnare sempre la linea di misura, anche se il testo e le frecce 
+vengono spostati all’esterno delle linee di riferimento.
