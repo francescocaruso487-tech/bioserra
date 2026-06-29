@@ -1,0 +1,1408 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 65/116 ===
+Chars: 43,440 | Offset: 2,826,896
+
+
+
+[PAG 1342]
+XIV-30
+AUTOMAZIONE
+UC (Unit Control)
+È il dispositivo in grado di interpretare i codici operativi delle istruzioni, di generare 
+tutta una serie di segnali di controllo atti a smistare le informazioni ai vari componenti del 
+microprocessore; determina l’accesso ordinato al bus di comunicazione che collega i vari 
+elementi del microprocessore e l’ambiente esterno (I/O). È questo il dispositivo che gesti-
+sce il set di istruzioni interpretabili dal microprocessore, inviando all’ALU i codici 
+dell’operazione da svolgere; gestisce inoltre tutti quei segnali di controllo che danno 
+accesso ai vari dispositivi interni ed esterni. Le varie fasi operative vengono sincronizzate 
+tramite un clock generato da un Temporizzatore (Timing).
+Logica di gestione dei bus
+È la sezione del microprocessore che consente di gestire il flusso delle informazioni. 
+Infatti è costituita da un insieme di Registri Puntatori che permettono il corretto indirizza-
+mento dei dati.
+Tipicamente è formata dal Registro MAR (Memory Address Register), dal PC (Pro-
+gram Counter) e dal DC (Data Counter) per quanto riguarda il contenimento dell’indi-
+rizzo in cui risiedono, nelle varie memorie, i dati da scambiare; inoltre da menzionare in 
+questa sezione è lo SP (Stack Pointer) la cui funzione è quella di memorizzare una pila di 
+dati sullo stato della macchina in determinate situazioni, per poterle successivamente 
+recuperare con un certo ordine logico anziché in modo randomizzato. Il flusso delle infor-
+mazioni viaggia attraverso un bus, che non è altro che un canale standardizzato collegato 
+alle varie unità che compongono il microprocessore.
+Logica di Interrupt e DMA
+Questo dispositivo ha il compito di interfacciare gli I/O con la CPU. Le tecniche di 
+interfacciamento prevedono procedure di polling e di interrupt.
+Nel primo caso il microprocessore legge in modo sequenziale lo stato logico delle 
+varie porte di ingresso, eseguendo appunto il polling degli ingressi.
+Quando vengono a crearsi condizioni esterne eccezionali, che appunto abbisognano di 
+interventi tempestivi, in ordine all’esecuzione di determinate istruzioni, tramite la tecnica 
+dell’interrupt si interrompe il normale ciclo e si accede a determinate subroutine.
+Con questa tecnica quindi si hanno dei tempi di intervento più rapidi, in quanto il 
+segnale esterno accede alla CPU direttamente tramite l’apposito ingresso di interrupt e, 
+senza dover scandire tutta la sequenza di lettura degli ingressi, si attiva la corrispondente 
+uscita in modo asincrono, senza dover attendere la fine della scansione per il rinfresco 
+dell’uscita.
+Si hanno diverse modalità di interruzione: interrupt a vettore, con polling, a daisy 
+chain, congruentemente con la funzionalità di intervento richiesta.
+Nella tecnica DMA (Direct Memory Access) gli apparati esterni possono dialogare 
+direttamente con le memorie senza passare dalla CPU, con conseguente scambio di infor-
+mazioni molto più veloce; ciò avviene mediante l’invio di particolari segnali di controllo 
+della CPU, la quale lascia la gestione del bus di controllo; conseguentemente l’accesso al 
+bus dati e al bus indirizzi avviene direttamente e non più tramite il microprocessore. 
+Bus di comunicazione
+Costruiti in forma integrata e alloggiati all’interno della CPU, per consentire il flusso 
+delle informazioni tra i vari elementi che la costituiscono, sono presenti dei canali stan-
+dardizzati chiamati Bus (Data Bus, Address Bus, Control Bus).
+Data Bus: ha la funzione di trasferire i dati tra le varie unità che compongono il micro-
+processore; è bidirezionale ed è costituito da più linee parallele.
+Address Bus: porta l’indirizzo della cella di memoria o della porta di ingresso che si
+
+[PAG 1343]
+AUTOMAZIONE
+XIV-31
+vuole attivare; il flusso di informazioni si propaga in modo unidirezionale, tramite più 
+linee parallele.
+Control Bus: è il canale che porta i segnali di controllo per poter attivare le varie ope-
+razioni di abilitazione dei circuiti della CPU.
+Anche nel PLC vi è un BUS che consente il propagarsi del flusso delle informazioni 
+tra i vari elementi costituenti la macchina. Il BUS è alloggiato sul fondo del rack che con-
+tiene le varie schede costituenti il PLC. Tale canale su cui viaggiano le informazioni è 
+indispensabile, affinché il flusso informativo sia tradotto in modo ordinato e veloce alle 
+varie parti che compongono il PLC.
+4.2.3  Unità di memoria
+La memoria di un PLC è costituita tipicamente da dispositivi a semiconduttore di tipo 
+RAM, ROM, PROM, EPROM, EEPROM, FLASH EPROM. Da notare ancora che la 
+memoria di una logica programmabile è suddivisa in due parti (Fig. XIV.4.7): memoria 
+dati e memoria programma.
+Fig. XIV.4.7  Struttura della memoria di un PLC.
+Come meglio verrà specificato nel capitolo riguardante l’indirizzamento degli I/O, nel 
+PLC le informazioni non vengono allocate nelle memorie in modo dinamico (randomiz-
+zato), cioè occupando gli spazi liberi a caso, bensì vi è una rigorosa corrispondenza tra gli 
+ingressi e le uscite e le celle di memoria in cui lo stato logico degli I/O viene memoriz-
+zato.
+La capacità di memoria, cioè il numero di byte che il PLC consente di memorizzare, è 
+una delle caratteristiche salienti della macchina: una memoria programma di 24 kb sta a 
+significare che si può sviluppare un programma che, tolta la parte di memoria che serve 
+per il firmware (sistema operativo di macchina), potrà comprendere un numero di istru-
+zioni che occupano un massimo di 12 000 word (dove 1 word = 2 byte = 16 bit).
+I dispositivi a lettura-scrittura di tipo RAM sono generalmente utilizzati per la memo-
+ria dati, dove appunto le informazioni cambiano in continuazione (dati degli I/O), oppure 
+per la memoria programma, quando abbisogna ancora di messe a punto e non è ancora il 
+programma definitivo.
+Le memorie di sola lettura (ROM) vengono impiegate per i dispositivi in cui alloggia 
+il firmware (definito dal costruttore del PLC) che serve alla macchina per partire, e gene-
+rare tutta una serie di autotest iniziali. Le memorie a lettura e scrittura vengono utilizzate 
+tipicamente per la memoria programma in veste definitiva, a cui non verranno più appor-
+tate modifiche.
+PLC senza scheda PCMCIA
+PLC con scheda PCMCIA
+RAM
+interna
+RAM
+interna
+FLASH EPROM
+interna
+FLASH EPROM
+interna
+Dati
+Programma
+Costanti
+Dati
+Copia di
+salvataggio
+Programma
+e Costanti
+Programma
+Costanti
+
+[PAG 1344]
+XIV-32
+AUTOMAZIONE
+Generalmente la memoria dei PLC è modulare, con una dotazione di base che è allog-
+giata nello stesso modulo che ospita la CPU. Per i PLC in esecuzione compatta, la capa-
+cità di memoria è fissa; in alcuni casi è possibile inserire delle cartucce di memoria 
+ausiliarie denominate schede PCMCIA (RAM o FLASH EPROM) che svolgono funzione 
+di back-up. La scelta tra i vari dispositivi a semiconduttore viene eseguita in ordine alle 
+caratteristiche di funzionalità ed economicità.
+–  RAM: a fronte di una velocità elevata e di un costo relativamente basso, un disposi-
+tivo RAM, utilizzato per la memoria programma, avrà bisogno di essere sempre suppor-
+tato da una pila tampone, pena la perdita dei dati nell’evenienza che manchi tensione al 
+controllore.
+–  EPROM: se viene utilizzato un dispositivo di tipo EPROM non sarà necessaria la pila 
+tampone, ma occorrerà uno scrittore di PROM per poter scrivere sulla cartuccia il pro-
+gramma ed eventualmente modificarlo.
+–  EEPROM: la cartuccia EEPROM è di certo la più funzionale, poiché può essere scritta 
+e cancellata a piacere; il programma può essere su di essa memorizzato ed eventualmente 
+modificato, senza bisogno di nessun’altra particolare apparecchiatura; l’unico handicap è 
+senza dubbio il costo e la velocità relativamente bassa nello scambiare i dati.
+–  FLASH EPROM: viene impiegata per la copia di back-up del programma applicativo 
+e delle costanti. In caso di perdita del programma da parte della memoria RAM interna di 
+lavoro dovuto, per esempio, allo scaricamento della pila tampone, il programma conte-
+nuto nella FLASH EPROM viene ricaricato nella memoria di lavoro.
+In definitiva si preferiscono le memorie di tipo RAM, supportate da una pila tampone, 
+da utilizzarsi per la memoria programma; esse soddisfano l’esigenza di velocità elevate e 
+di costo relativamente basso. Quando il programma è stato messo a punto e testato, lo si 
+travasa in una cartuccia EEPROM o FLASH EPROM di back-up. Per ogni evenienza il 
+programma applicativo è quindi disponibile in copia, e potrà essere in ogni momento rein-
+stallato nel PLC.
+4.2.4  Moduli di I/O (Input/Output)
+I moduli di I/O collegano il PLC agli organi di rilevazione e agli attuatori del processo 
+automatico da controllare. La loro funzione è quella di trasformare i segnali elettrici dai/ai 
+dispositivi esterni alla logica programmabile in segnali interpretabili dalla CPU. Ogni 
+punto di I/O ha un unico indirizzo che può essere utilizzato dalla CPU; i vari canali di I/O 
+sono provvisti di una separazione galvanica e generano un segnale condizionato, cosicché 
+sensori e attuatori possono essere direttamente connessi a questi senza il bisogno di altri 
+dispositivi.L’isolamento elettrico dal mondo esterno si ottiene mediante un optoisolatore
+(Fig. XIV.4.8).
+Quando un impulso digitale passa attraverso un 
+LED (Light-Emitting Diode), viene generato un 
+impulso ad infrarossi; questo impulso viene catturato 
+da un fototransistor che produce un aumento del 
+livello di tensione in questo secondo circuito, discri-
+minando se il segnale è da considerarsi alto o basso. 
+La separazione galvanica tra il LED e il fototransi-
+stor consente l’isolamento elettrico tra i due disposi-
+tivi, ma nel contempo il disaccoppiatore ottico 
+permette il trasferimento dell’impulso digitale ad un 
+altro circuito.
+Fig. XIV.4.8   Disegno schematico 
+di un optoisolatore.
+LED
+Photo-
+transistor
+Circuito interno
+
+[PAG 1345]
+AUTOMAZIONE
+XIV-33
+Fig. XIV.4.9   Livelli di tensione dei punti di ingresso e di uscita delle interfaccie I/O.
+Il segnale digitale che è generalmente compatibile con il microprocessore nel PLC è 
+tipicamente di 5 V d.c. Tuttavia l’unità I/O permette un largo range di segnali di input: 5, 
+24, 110, 240 V; mentre per quanto riguarda gli output, mediante relè, transistor o triac, si 
+possono avere uscite che controllano sistemi a corrente continua o alternata a diverse ten-
+sioni (24, 110, 240 V). La Fig. XIV.4.9 evidenzia i vari livelli di segnali configurabili a 
+seconda dei vari dispositivi.
+Con le uscite a relè il segnale digitale di 5 V che viene generato dalla CPU viene usato 
+per azionare un relè capace di gestire correnti di alcuni ampere. Il relè non solo permette 
+di gestire, con un assorbimento di pochi ampere, dei dispositivi di potenza ma produce 
+inoltre un isolamento galvanico del PLC dal mondo esterno. I relè sono tuttavia relativa-
+mente lenti nelle operazioni: il tempo di salita del contatto di un relè è dell’ordine dei mil-
+lisecondi. Gli output a relè sono solitamente impiegati sia per circuiti in corrente alternata 
+che in corrente continua.
+Il dispositivo di uscita a transistor utilizza appunto un transistor per controllare il cir-
+cuito esterno. Rispetto al relè ha una considerevole maggiore velocità di gestione. È tuttavia 
+impiegato solamente per circuiti d.c. È tipicamente equipaggiato con un optoisolatore e un 
+fusibile di protezione.
+Il dispositivo di output a Triac è supportato anch’esso da un optoisolatore e viene usato 
+per controllare dei carichi esterni connessi solamente ad alimentazioni in c.a.
+I termini sourcing e sinking sono usati per descrivere il modo in cui i dispositivi ali-
+mentati in corrente continua, sono connessi al PLC. Con il termine sourcing viene desi-
+gnata la modalità per cui un dispositivo di input o di output riceve la corrente 
+dall’interfaccia di I/O. Se il flusso di corrente fluisce dal dispositivo di input o di output 
+verso il PLC allora la modalità di collegamento viene definita sinking. Nelle Figg. 
+XIV.4.10 a e b viene evidenziata graficamente tale modalità di cablaggio degli ingressi e 
+delle uscite all’interfaccia di I/O del PLC. Livelli di tensione dei punti di ingresso e di 
+uscita delle interfacce I/O.
+Fig. XIV.4.10   Modalità di connessione a moduli I/O soursing e sinking.
+Input digital signal level
+Output switching
+Input
+channel
+Output
+channel
+5V
+24V
+110V
+240V
+24V 100mA
+110V 1A d.c.
+240V 1A a.c.
+240V 2A a.c.
+I/O module sourcing
+I/O module sinking
++
+-
++
+-
+Input
+device
+Input
+device
+Output
+load
+Output
+load
+-
++
+a)
+b)
+
+[PAG 1346]
+XIV-34
+AUTOMAZIONE
+Fig. XIV.4.11  Stati logici di un ingresso binario 24 V d.c.
+Ingressi binari
+I dispositivi di ingresso binario (ON/OFF) trasducono una tensione tutto o niente in 
+uno stato logico interpretabile dalla CPU del PLC. Il costruttore definisce un range di ten-
+sione per il quale l’ingresso deve considerarsi allo stato logico 1 o 0: si avrà quindi per 
+esempio che, alla chiusura di un interruttore, l’ingresso corrispondente sul PLC sarà allo 
+stato 1, mentre quando lo stesso interruttore sarà aperto lo stato logico dell’ingresso sarà 0.
+Nella Fig. XIV.4.11 si possono verificare le corrispondenze tra i valori di tensione ai 
+capi dell’ingresso e i relativi stati logici di un dispositivo di ingresso ON/OFF, ai cui 
+ingressi saranno collegati dei rilevatori alimentati alla tensione di 24 V in cc:
+–  se la tensione sarà compresa tra 0 e 5 V lo stato logico dell’ingresso sarà 0, cioè si 
+considera che il circuito a esso collegato sia aperto;
+–  se la tensione sarà compresa tra 11 e 24 V lo stato logico dell’ingresso sarà 1, cioè si 
+considera che il contatto a esso connesso sia chiuso;
+–  per evitare errori nell’interpretazione, si prevede un range di tensione ibrido, che non 
+dia luogo a cambiamenti di stato logico; nel caso preso in esame la tensione compresa tra 
+6 e 10 V non cambia lo stato logico assunto dall’ingresso.
+La CPU quindi interrogherà periodicamente i vari ingressi traducendo il loro stato 
+logico nella memoria dei dati.
+Per evitare danneggiamenti irreparabili dovuti a sovratensioni o ad altre interferenze, 
+il modulo di ingresso viene costruito con disaccoppiatori ottici, che interrompono la con-
+tinuità galvanica con il campo.
+Vengono allo scopo utilizzati dei circuiti formati da una coppia diodo a emissione 
+luminosa (LED) e fototransistore. Il led emette una luminosità che viene modulata dal 
+segnale d’ingresso; a sua volta il fototransistor trasforma le variazioni di luce che riceve, 
+in variazioni del segnale elettrico sui terminali di uscita.
+Fanno parte integrante del modulo:
+–  un circuito comprendente un trigger di Schmitt che opera una quadratura dell’onda, in 
+modo da ottenere due soli livelli (alto e basso) corrispondenti agli stati logici 1 e 0;
+–  un secondo circuito, costituito da un filtro passa-basso che elimina le componenti 
+parassite ad alta frequenza; da notare che tanto più elevata è l’immunità ai disturbi dovuta 
+a un filtraggio più raffinato, tanto più alto risulta essere il tempo di commutazione (tempo 
+necessario affinché il segnale che ha raggiunto l’ingresso sia memorizzato nel registro 
+immagine della memoria dati del PLC).
+Il numero degli ingressi per ogni modulo generalmente varia a seconda dei modelli in 
+numero di 4, 8, 12, 16, 24, 32 entrate.
+Si può infine contare sull’utilizzo, in condizioni particolari, di ingressi veloci, i quali, 
+non essendo filtrati, hanno un tempo di commutazione molto più breve degli altri; tipica-
+mente vengono impiegati per collegamenti a dispositivi quali gli encoder ottici o in situa-
+INGRESSO ON/OFF 24 V CC
+TENSIONE
+    in Volt
+STATO
+LOGICO
+0 ÷ 5
+11 ÷ 24
+6 ÷ 10
+0 (Low)
+1 (High)
+Nessuno stato
+24
+11
+5
+0
+   (High)
+   (Low)
+U
+t
+
+[PAG 1347]
+AUTOMAZIONE
+XIV-35
+zioni in cui bisogna attivare delle task rapide, cioè quei sottoprogrammi che vanno attivati 
+in condizioni di massima velocità disponibile.
+Uscite binarie
+I moduli di uscita binari (ON/OFF) trasducono gli stati logici, assegnati al registro 
+immagine delle uscite, in segnali elettrici che commutano fisicamente il punto di uscita.
+I dispositivi di commutazione delle uscite possono essere di tipo elettronico o elet-
+tromeccanico. Si avranno quindi uscite a triac, transistore, tiristore o relè, a seconda del 
+tipo di carico che si dovrà comandare: in corrente continua o alternata, alimentate ad una 
+determinata tensione (a seconda del valore a cui l’attuatore funziona) in ordine alla 
+potenza da esso assorbita. Anche per i moduli di uscita sono previsti circuiti di protezione 
+per i disturbi e circuiti optoisolatori; inoltre è affidato a dei fusibili il compito di operare 
+una protezione contro i sovraccarichi e i corto circuiti.
+Il tempo di commutazione di una uscita, cioè l’intervallo che intercorre tra la presenza 
+di un determinato stato logico nella memoria del PLC riservata alle uscite e la commuta-
+zione fisica del punto di uscita, varia a seconda dei dispositivi. Per gli organi elettromec-
+canici, il tempo varia da alcuni millisecondi fino a una decina di millisecondi e dipende 
+essenzialmente dal tempo di salita dei relè, mentre per le uscite di tipo elettronico, tale 
+tempo è molto inferiore (qualche decina di microsecondi). 
+Ingressi analogici
+Nei moduli ON/OFF il segnale viene determinato da uno stato logico di 0 o di 1. Nel 
+caso di una funzione che varia nel tempo e assume valori diversi che devono essere deco-
+dificati, si parla di grandezza analogica. La gestione di questo tipo di segnale può avve-
+nire in due modi: digitalizzazione del segnale oppure rilevazione di soglia.
+Digitalizzazione del segnale. Si utilizza un dispositivo denominato convertitore analo-
+gico/digitale che opera una trasformazione della grandezza misurata in una parola digitale 
+di n bit. La risoluzione, cioè il grado di precisione con cui la grandezza viene controllata, 
+dipende dal numero di bit disponibili nel dispositivo (tipicamente 8, 10, 12, 16 bit).
+Per esempio, se il dispositivo è a 8 bit e si vuole controllare una variazione di tempe-
+ratura 0 ÷ 10 °C circa, si avranno 28 (256) combinazioni possibili di temperatura misu-
+rata, con una precisione data dalla relazione:
+cioè il dispositivo sarà in grado di sentire una variazione di 0,039 °C, al di sotto della 
+quale non si genera alcun cambiamento del codice di uscita digitalizzato.
+Rilevazione di soglia. Con questa tecnica viene confrontato un determinato livello 
+fisso di riferimento con la reale variazione della grandezza: quando la grandezza ha valore 
+inferiore al livello di riferimento si avrà livello logico 0, mentre quando sarà maggiore si 
+avrà livello logico 1.
+In ogni caso i moduli di ingresso analogici possono ricevere un segnale in tensione 
+(tipicamente -10 ÷ +10 V) o in corrente (4 ÷ 20 mA); sono equipaggiati con i dovuti appa-
+recchi che ne permettono la regolazione e l’adattabilità ai vari trasduttori, con compensa-
+zione dell’errore di guadagno, linearizzazione del segnale, compensazione dell’errore di 
+offset e la compensazione della temperatura del giunto freddo per l’interfacciamento con 
+termocoppie.
+Uscite analogiche
+Parallelamente a quanto succede per gli ingressi di tipo analogico, nelle uscite il con-
+vertitore (A/D) sarà invertito nella sua funzione (D/A); esso svolgerà la funzione di tra-
+variazione
+10
+0
+–
+256
+--------------
+0 039C
+,
+=
+=
+
+[PAG 1348]
+XIV-36
+AUTOMAZIONE
+sformare un valore analogico, contenuto in una stringa di bit che occupa una certa 
+locazione di memoria nel PLC, in un valore di tensione -10 ÷ +10 V oppure in corrente 
+0 ÷ 20 mA o 4 ÷ 20 mA.
+Anche in questo caso viene operata una quantizzazione, cioè il segnale analogico sarà 
+suddiviso in tante piccole parti e a ogni porzione si assegnerà un valore binario corrispon-
+dente. La sensibilità sarà data dal più piccolo valore convertito della grandezza misurata. 
+In ogni caso in tutti i dispositivi di conversione (A/D oppure D/A) l’operazione di trasfor-
+mazione comporta un ritardo denominato tempo di conversione del segnale.
+La tipica applicazione di tali moduli è quella della regolazione della velocità di motori 
+elettrici, del comando di valvole proporzionali, del controllo di processi continui.
+4.2.5  Parametri da considerare per l’interfacciamento degli I/O al PLC
+Nella installazione dei PLC occorre tenere presente alcuni accorgimenti che riguar-
+dano la sicurezza e il buon funzionamento del sistema. In particolare bisogna considerare 
+una serie di fattori che riguardano l’interfacciamento degli I/O, che se non vengono 
+opportunamente valutati comportano l’attivazione di azioni indesiderate o la rottura del 
+dispositivo.
+Corrente di picco
+Nelle uscite a transistor o a triac occorre considerare che tali componenti possono sop-
+portare una corrente di picco di valore 10 volte maggiore alla corrente di regime. Spesso i 
+carichi all’atto dell’avviamento o della connessione assorbono tale corrente anomala, 
+molto superiore rispetto al valore di regime; si risolve questo problema collegando in 
+uscita un resistore che limiti tale corrente di spunto. Nella Figura XIV.4.12a viene propo-
+sto un circuito di limitazione con resistore in serie che ha lo svantaggio di ridurre in modo 
+proporzionale la tensione ai capi del carico; nella Fig. XIV.4.12b il resistore è connesso in 
+parallelo all’uscita.
+Fig. XIV.4.12   Inserzione di circuito limitatore della corrente di picco sulle uscite.
+24
+0
+3
+2
+1
+0
+8
+7
+6
+4
+5
+N
+3
+3
+2
+1
+2
+1
+0
+0
+L
+COM
+COM
+COM
+COM
+24
+0
+3
+2
+1
+0
+COM
+1
+0
+0
+N
+L
+COM
+COM
+8
+7
+6
+4
+5
+3
+3
+2
+1
+2
+COM
+COM
+COM
+a)
+b)
+NL
+NL
+-
++
+-
++
+M
+M
+R1
+R1
+V c.c.
+V c.c.
+PLC TELEMECANIQUE
+PLC TELEMECANIQUE
+Q1
+Q2
+Q1
+Q2
+
+[PAG 1349]
+AUTOMAZIONE
+XIV-37
+Fig. XIV.4.13   Inserzione di circuito soppressore dell’arco elettrico.
+Formazione dell’arco elettrico nei carichi induttivi
+Nelle uscite del PLC che pilotano carichi induttivi, quando viene aperto il contatto, si 
+genera una sovratensione causata dalla forza controelettromotrice indotta. Si ha quindi la 
+formazione di un arco elettrico, che tende a mantenere la continuità elettrica del circuito 
+che si sta aprendo, il quale danneggia i contatti del relè di uscita. È utile allo scopo colle-
+gare in parallelo al carico che viene pilotato un soppressore dell’arco, costituito da un cir-
+cuito RC nel caso di alimentazione in corrente alternata (Fig. XIV.4.13a) e da un diodo nel 
+caso di alimentazione in corrente continua (Fig. XIV.4.13b).
+Corrente di fuga negli ingressi
+Nel caso siano previsti interfacciamenti con sen-
+sori a due fili, come interruttori di prossimità, foto-
+cellule o finecorsa con LED, è prevedibile che in 
+determinate occasioni venga erroneamente attivato 
+l’ingresso dalla corrente di fuga. Tale malfunziona-
+mento può essere evitato installando ai capi dei mor-
+setti dell’ingresso una resistenza di dispersione. Un 
+esempio per un modulo a logica positiva PNP è 
+visualizzato in Fig. XIV.4.14.
+Per una corrente di fuga del sensore inferiore a 
+1,5 mA non dovrebbero esserci complicazioni; se la 
+corrente è invece maggiore di tale valore è oppor-
+tuna l’installazione della resistenza calcolata con la 
+seguente formula empirica:
+Fig. XIV.4.14   Inserzione di circui- 
+to contro l’attivazione del sensore di 
+ingresso da parte di corrente di fuga. 
+24
+0
+3
+2
+1
+0
+8
+7
+6
+4
+5
+N
+3
+3
+2
+1
+2
+1
+0
+0
+L
+COM
+COM
+COM
+COM
+24
+0
+3
+2
+1
+0
+COM
+1
+0
+0
+N
+L
+COM
+COM
+8
+7
+6
+4
+5
+3
+3
+2
+1
+2
+COM
+COM
+COM
+a)
+b)
+NL
+NL
++
+-
+L1
+L2
+M
+M
+R-C
+D1
+V c.c.
+V c.c.
+PLC TELEMECANIQUE
+PLC TELEMECANIQUE
+Q1
+Q2
+1
+Q1
+Q2
+-
++
+COM
+COM
+COM
+COM
+COM
+L
+0
+0
+1
+2
+1
+2
+3
+3
+N
+5
+4
+6
+7
+8
+0
+1
+2
+3
+0
+24
+PLC TELEMECANIQUE
+V c.c.
+R1
+S1
+R
+17 15
+
+3 45 I
+5
+–
+
+-------------------------- k
+
+
+=
+
+[PAG 1350]
+XIV-38
+AUTOMAZIONE
+la cui potenza risulterà essere di valore:
+Corrente di fuga nelle uscite
+Parimenti agli ingressi, se si impiegano uscite a triac o a transistor, una erronea com-
+mutazione sul carico dovuta alla corrente di fuga viene inibita con l’installazione di una 
+apposita resistenza di dispersione ai capi del carico. Il valore di tale resistenza sarà dato da:
+dove UON è la tensione minima di ON del carico e I la corrente di fuga dell’uscita.
+Massima corrente di carico
+Tipicamente i contatti delle uscite hanno dei morsetti comuni che raggruppano 2 o 4 
+uscite. La massima corrente di carico è quella definita dalle specifiche del modulo o 
+scheda di uscita, che variano al variare della temperatura ambiente. Le specifiche tecniche 
+indicheranno quindi la massima corrente che può essere erogata dal dispositivo senza 
+compromettere il buon funzionamento del punto di uscita.
+4.2.6  Collegamenti degli ingressi
+I circuiti di ingresso in corrente continua dei PLC consentono una connessione sia di 
+tipo NPN che di tipo PNP. 
+Onde evitare lo scambio di polarità dell’alimentazione è opportuno verificare la com-
+patibilità tra interfaccia e dispositivo di ingresso. Generalmente i moduli o schede di 
+ingresso sono provvisti di alimentazione per i dispositivi di ingresso (sensori o trasduttori 
+ON/OFF o analogici). Per evitare danneggiamenti irreparabili dovuti a sovratensioni o ad 
+altre interferenze, il modulo di ingresso viene equipaggiato di un disaccoppiatore ottico, 
+che interrompe la continuità galvanica con il campo. 
+Moduli ingresso 24 VDC NPN
+Il modulo di ingresso a 24 V in corrente continua NPN (Fig. XIV.4.15) prevede il 
+cablaggio seguente:
+–  Il cavo proveniente da un capo del sensore connesso ad un punto di ingresso del PLC.
+–  Il cavo proveniente dall’altro capo del sensore collegato al morsetto negativo di ali-
+mentazione.
+–  Il morsetto comune dei punti di ingresso del PLC connesso al polo positivo dell’ali-
+mentazione.
+Moduli ingresso 24 VDC PNP
+Il modulo di ingresso a 24 V in corrente continua PNP (Fig. XIV.4.16) prevede il 
+cablaggio seguente:
+–  Il cavo proveniente da un capo del sensore connesso ad un punto di ingresso del PLC.
+–  Il cavo proveniente dall’altro capo del sensore collegato al morsetto positivo di ali-
+mentazione.
+–  Il morsetto comune dei punti di ingresso del PLC connesso al polo negativo dell’ali-
+mentazione.
+Moduli ingresso 120 VAC
+Il modulo di ingresso a 120 V in corrente alternata (Fig. XIV.4.17) non prevede pola-
+rità nell’alimentazione e quindi si possono connettere indifferentemente i vari capi dei 
+sensori ai morsetti dell’interfaccia di ingresso del PLC.
+P
+2 3
+
+R
+-------- W
+
+
+=
+R
+UON
+I
+---------- 
+
+
+
+
+[PAG 1351]
+AUTOMAZIONE
+XIV-39
+Fig. XIV.4.15   Interfaccia di ingresso a logica negativa.
+Fig. XIV.4.16   Interfaccia di ingresso a logica positiva.
+Fig. XIV.4.17   Interfaccia di ingresso in corrente alternata 120 V.
+Nella Tav. XIV.4.1 sono visualizzati i collegamenti tra diversi tipi di ingresso ON/OFF 
+e la morsettiera d’interfaccia di I/O del PLC.
+-
++
+Input campo
+S1
+Input 0
+Com 0
+Circuito
+interno
+Opto
+R1
+R2
+R3
+D2
+D1
++
+-
+Input campo
+S1
+Input 0
+Com 0
+Circuito
+interno
+Opto
+R1
+R2
+R3
+D2
+D1
+L2
+L1
+Input campo
+S1
+Input 0
+Com 0
+Circuito
+interno
+Opto
+R1
+C1
+R2
+R3
+D1
+D2
+
+[PAG 1352]
+XIV-40
+AUTOMAZIONE
+Tav. XIV.4.1   Interfacciamento di apparecchiature di ingresso al PLC.
+N L
+Q1
+24V
+0V
+100/240V
+0V
+Out DC
+Input AC
+Modicon
+TSX Micro
+TER
+AUX
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+2
+4
+6
+8
+10
+12
+14
+16
+18
+I
+N
+P
+U
+T
+21 22
+23 24
+25 26
+27 28
+29 30
+31 32
+33 34
+35
+O
+U
+T
+P
+U
+T
+Battery
+20
+14
+15
+7
+N
+3
+1
+I
+5
+4
+2
+6
+U 11
+P
+9
+T 13
+10
+8
+12
+28
+P
+T 27
+20
+19
+17 18
+16
+O 23
+21
+U 25 24
+22
+26
+35
+U
+T
+31
+29
+33
+30
+32
+34
+15 14
+N
+7
+I
+4
+3
+2
+1
+6
+5
+13
+11
+U
+P
+T
+10
+8
+9
+12
+27
+T
+P
+28
+20
+17
+19 18
+16
+25
+21
+23
+O
+U
+24
+22
+26
+35
+33
+29
+31
+T
+U
+30
+34
+32
+S22
+S21
+S19
+S18
+S20
+S15 S16
+S14
+S13
+S11
+S10
+S7
+S8
+S9
+S12
+S17
+S6
+S4
+S5
+S3
+S2
+S1
+M
+%I5.2
+%I5.3
+%I5.0
+%I3.7
+%I3.8
+%I5.1
+%I3.5
+%I3.3
+%I3.4
+%I3.1
+%I3.2
+%I3.0
+%I1.8
+%I3.6
+S22 Comando a rullino
+S20 Comando per effetto di una temperatura
+S9 Comando da una portata fluida
+S10 Comando meccanico manuale
+S15 Comando di sicurezza o di emergenza (pulsante a fungo)
+S16 Comando per effetto di prossimità
+S18 Comando con volantino
+S21 Comando a chiave
+S19 Comando di fine corsa
+S17 Comando a sfioramento
+S11 Comando a pedale
+S12 Comando con tirante
+S13 Comando rotativo
+S14 Comando a pulsante
+%I1.7
+%I1.6
+%I1.5
+%I1.3
+%I1.1
+%I1.2
+%I1.4
+BIT
+%I1.0
+INGRESSI
+S8 Comando dal numero di eventi
+S4 Comando da protezione termicadi sovracorrente
+S6 Comando ad orologio elettrico
+S5 Comando a motore elettrico
+S7 Comando dal livello di un fluido
+S3 Comando da protezione elettromagnetica di sovracorrente
+S2 Comando elettromagnetico
+S1 Comando a camma
+ASSEGNAZIONE I/O
+
+[PAG 1353]
+AUTOMAZIONE
+XIV-41
+Tav. XIV.4.2   Interfacciamento di apparecchiature di uscita al PLC.
+24V
+0V
+100/240V
+0V
+Out DC
+Input AC
+Modicon
+TSX Micro
+TER
+AUX
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+2
+4
+6
+8
+10
+12
+14
+16
+18
+I
+N
+P
+U
+T
+21 22
+23 24
+25 26
+27 28
+29 30
+31 32
+33 34
+35
+O
+U
+T
+P
+U
+T
+Battery
+20
+14
+15
+7
+N
+3
+1
+I
+5
+4
+2
+6
+U 11
+P
+9
+T 13
+10
+8
+12
+28
+P
+T 27
+20
+19
+17 18
+16
+O 23
+21
+U 25 24
+22
+26
+35
+U
+T
+31
+29
+33
+30
+32
+34
+15 14
+N
+7
+I
+4
+3
+2
+1
+6
+5
+13
+11
+U
+P
+T
+10
+8
+9
+12
+27
+T
+P
+28
+20
+17
+19 18
+16
+25
+21
+23
+O
+U
+24
+22
+26
+35
+33
+29
+31
+T
+U
+30
+34
+32
+Q2
+L2
+L1
+H3
+H5
+H4
+H6
+H1
+K2
+K1
+H2
+H7
+M
+M
+%Q2.9
+%Q2.8
+%Q2.7
+%Q2.6
+%Q2.5
+%Q2.4
+%Q2.2
+%Q2.1
+%Q2.0
+BIT
+%Q2.3
+H7 Lampada di segnalazione lampeggiante
+H6 Lampada di segnalazione
+H2 Fischio con comando elettrico
+H1 Tromba elettrica, clacson
+K2 Contattore o relè
+ASSEGNAZIONE I/O
+M Motore
+H5Suoneria
+H4 Ronzatore
+H3 Sirena
+K1 Elettrovalvola
+USCITE
+N L
+Q1
+
+[PAG 1354]
+XIV-42
+AUTOMAZIONE
+4.2.7  Collegamenti delle uscite
+Nel collegamento delle uscite, di cui si può vedere un esempio di cablaggio nella Tav. 
+XIV.4.2, si devono rispettare i seguenti accorgimenti:
+–   Inserire un fusibile di protezione sul comune del dispositivo di uscita in modo da pro-
+teggere opportunamente i circuiti stampati da erogazioni troppo elevate di potenza ed evi-
+tare quindi il loro danneggiamento.
+–   Evitare di disporre i cavi di uscita in prossimità di linee ad alta tensione; la loro vici-
+nanza potrebbe provocare disturbi, malfunzionamenti o danni irreparabili sia ai moduli 
+che agli stessi dispositivi di uscita.
+–  Considerare il tempo di salita dei relè, e, nel momento in cui tale valore fosse incom-
+patibile con l’attivazione di un’uscita controllata dal contatore veloce, sostituirla con 
+un’uscita statica a transistor o triac.
+–  Tipicamente la vita di un relè viene dimezzata quando il suo azionamento è attivato 
+senza tenere presente la temperatura di funzionamento e la potenza di commutazione sta-
+bilite dalle specifiche del dispositivo.
+–  I relè sono zoccolati sia per ragioni di manutenzione che per eventuali sostituzioni, si 
+eviti quindi la loro sostituzione con altri tipi di dispositivi non congruenti con lo zoccolo 
+di collegamento.
+Moduli uscita 24 VDC a transistor
+La Fig. XIV.4.18 visualizza il cablaggio di un’uscita con dispositivo a transistor.
+Fig. XIV.4.18   Interfaccia di uscita a transistor.
+Moduli uscita 24 VDC a triac
+La Fig. XIV.4.19 visualizza il cablaggio di un’uscita con dispositivo a triac.
+Fig. XIV.4.19   Interfaccia di uscita a triac.
+Output campo
++
+-
+K1
+Output 0
+Com 0
+Circuito
+interno
+Circuito
+interno
+Opto
+D1
+T1
++
+-
+Output campo
+L1
+L2
+K1
+Output 0
+Com 0
+Circuito
+interno
+Circuito
+interno
+Opto
+R1
+T1
++
+-
+C1
+
+[PAG 1355]
+AUTOMAZIONE
+XIV-43
+Moduli uscita 24 VAC 240 VAC a relè
+La Fig. XIV.4.20 visualizza il cablaggio di un’uscita con dispositivo a relè.
+Fig. XIV.4.20   Interfaccia di uscita a relè.
+4.2.8  Regolazione e conteggio con i moduli intelligenti
+Oltre ai collaudati moduli di ingresso e di uscita di tipo digitale e analogico, viene pro-
+dotta anche un’ampia schiera di moduli per applicazioni particolari, che soddisfano le esi-
+genze della fabbrica automatica. La strada imboccata dai produttori di PLC è quindi quella 
+di asservire a funzioni speciali dei moduli speciali; i benefici che se ne traggono sono:
+–  liberare la CPU dall’onere di gestione di tali funzioni speciali, demandando a essa la 
+sola gestione delle operazioni fondamentali di controllo;
+–  la possibilità di offrire all’applicazione (controllo assi, posizionamento, comunica-
+zione, conteggio veloce ecc.) una velocità di risposta molto elevata.
+Questi moduli si prefigurano come dei dispositivi di preelaborazione del segnale, in 
+quanto sono dotati di un proprio microprocessore. Sono costruiti per soddisfare le esi-
+genze di funzioni particolari (sentire tensioni estremamente deboli come quelle delle ter-
+mocoppie o per applicazioni con frequenze di commutazione elevate) e per ridurre il 
+carico di lavoro della CPU del PLC; ma soprattutto consentono di ampliare notevolmente 
+l’utilizzo del PLC in ambito industriale.
+Sono denominati intelligenti quei moduli aggiuntivi alla dotazione normale del PLC 
+che sono provvisti di un proprio processore. Ad esempio, vengono prodotti dei moduli in 
+grado di trasformare direttamente un valore analogico in digitale senza utilizzare la CPU 
+del controllore programmabile per l’operazione di conversione. Hanno un campo di appli-
+cazione variabile e le caratteristiche seguenti:
+–  a seconda della configurazione è possibile collegare ingressi in corrente, in tensione, 
+per termocoppie;
+–  possibilità di scegliere il numero di vie da scrutare in base al programma che si è 
+costruito, inibendo in tal modo le vie non utilizzate e riducendo conseguentemente il 
+tempo di campionamento;
+–  si possono elaborare direttamente i valori convertiti, in quanto la conversione delle 
+misure avviene in unità direttamente utilizzabili dall’utente nel programma (unità fisiche, 
+unità normalizzate). Per esempio, se un sensore 0 ÷ 100 °C fornisce un segnale in corrente 
+4 ÷ 20 mA, dichiarando i limiti di 4 mA per 0 °C e di 20 mA per 100 °C, le misure dispo-
+nibili nella parola registro saranno comprese tra 0 e 100 °C e verranno espresse diretta-
+mente nell’unità di misura della grandezza fisica controllata.
+Moduli PID (Proportional Integrative Derivative)
+I moduli PID (Proporzionale Integrativo Derivativo) vengono impiegati nelle appli-
++
+-
+Output campo
+L1
+L2
+K2
+Output 0
+Com 0
+K1
+K1
+Circuito
+interno
+Circuito
+interno
+Opto
+D1
+D2
+R1
+T1
++
+-
+
+[PAG 1356]
+XIV-44
+AUTOMAZIONE
+cazioni ad anello chiuso, dove determinate caratteristiche funzionali debbono rimanere 
+invariate. Nell’ambito di lavoro, cambiando le situazioni ambientali, in genere cambiano 
+anche i valori prefissati, i set point del processo; questi ultimi sono per altro variabili 
+anche rispetto al feedback con altri processi della stessa applicazione.
+I moduli PID consentono il confronto del settaggio dei parametri del processo con i 
+valori del set point (valori di riferimento fissi); quando i valori si discostano da quelli di 
+regolazione, il modulo è in grado autonomamente di generare dei messaggi di errore e dei 
+segnali in grado di attivare le soluzioni atte a riportare il processo al normale funziona-
+mento, sulla scorta del programma precedentemente memorizzato.
+Tipicamente i controllori programmabili dispongono, di base, delle funzioni di regola-
+zione accessibili dall’utente mediante il normale software di programmazione del PLC. 
+Queste funzioni sono particolarmente adatte per il controllo di processi sequenziali che 
+richiedono funzioni ausiliarie di regolazione come ad esempio le macchine da imballag-
+gio, le macchine di trattamento superfici, le presse, oppure per processi semplici come ad 
+esempio i forni di trattamento dei metalli, i forni per ceramica, i piccoli gruppi frigoriferi, 
+o ancora per gli asservimenti o le regolazioni meccaniche con tempi di campionatura cri-
+tici come ad esempio la regolazione di coppia e la regolazione di velocità.
+Le funzioni generalmente integrate sono:
+–  Funzione PID. La funzione PID offre un algoritmo tipo PID seriale/parallelo. Elabora 
+il segnale di comando a partire da una misura campionata da un’interfaccia d’ingressi, dal 
+valore del riferimento fissato sia dall’operatore che dal programma o a partire dai valori 
+dei diversi parametri del correttore (KP, TI, TD). Il comando analogico proveniente dal 
+correttore può essere elaborato direttamente da un’interfaccia analogica di uscita dei con-
+trollori programmabili collegata all’azionatore o tramite gli adattamenti PWM o SERVO 
+a seconda del tipo di azionatore da comandare in “ON/OFF”.
+–  Funzione PWM. La funzione PWM consente di realizzare l’adattamento necessario a 
+comandare un azionatore in modulazione di durata attraverso un’uscita “ON/OFF”.
+–  Funzione SERVO. La funzione SERVO consente di realizzare l’adattamento necessa-
+rio a comandare un azionatore motorizzato con comandi “UP/DOWN” attraverso 
+un’uscita “ON/OFF”. Dispone di un ingresso copia posizione per perfezionare l’asservi-
+mento.
+Le due funzioni sono installate in cascata sul connettore della funzione PID. Nella 
+Fig. XIV.4.21 sono schematizzate le tre funzioni di controllo esaminate.
+Fig. XIV.4.21   Interfaccia di uscita a relè.
+Ingressi
+4÷20 mA
+Termocoppia
+Sonda
+PID
+Correttore
+Misure
+Riferimento
+KP
+TI
+TD
+SERVO
+PWM
+PWM
+Uscita
+Uscita UP
+Uscita DOWN
+Uscita
+Ingresso copia posizione
+Comando
+analogico
+Comando
+ON/OFF
+asservito
+Comando
+ON/OFF
+
+[PAG 1357]
+AUTOMAZIONE
+XIV-45
+Moduli di conteggio veloce
+Quando la frequenza dei segnali di ingresso assume valori rilevanti, gli ingressi nor-
+mali non riescono a soddisfare le esigenze del caso, poiché la scansione del PLC è troppo 
+“lenta” (massimo qualche decina di Hz) rispetto alla commutazione dei segnali d’ingresso. 
+In questo caso si utilizzano particolari moduli di ingresso veloce, che sono equipaggiati 
+con un proprio processore in grado di rilevare segnali che arrivano anche a 80 kHz.
+Il conteggio dei pezzi o degli eventi, la disposizione degli oggetti, il controllo del 
+flusso in ingresso e in uscita, la misura della lunghezza o del posizionamento degli ele-
+menti, la misura della velocità, della frequenza o della durata, sono tutte operazioni che 
+richiedono funzioni di conteggio. I controllori programmabili consentono tipicamente di 
+effettuare le funzioni di deconteggio, conteggio o conteggio bidirezionale in 3 modi 
+diversi:
+–  Mediante gli ingressi veloci che equipaggiano l’interfaccia I/O digitale del primo 
+alloggiamento del PLC.
+–  Con particolari vie di conteggio integrate ai controllori programmabili.
+–  Con moduli di conteggio dedicati da installare negli alloggiamenti disponibili del rack 
+dei PLC modulari.
+Una particolare funzione svolta da questi moduli è la camma elettronica: si può cioè 
+fissare un certo numero di soglie, che vengono confrontate con il valore corrente misurato 
+e determinano l’attivazione di un certo numero di uscite, secondo una matrice predefinita.
+Il modulo generalmente è completamente autonomo rispetto al programma principale, 
+gestito dalla CPU del controllore programmabile, e il tipo di funzione da effettuare da 
+parte del modulo (conteggio semplice o bidirezionale, misura di lunghezza, di velocità, 
+camma elettronica ecc.) viene determinato con configurazione software.
+Una variante al modulo precedente è in grado di gestire segnali in codice Gray inviati 
+da un encoder assoluto. Questo tipo di modulo permette il controllo e il posizionamento 
+permanenti di un oggetto, anche in seguito ad un’interruzione dell’alimentazione sempli-
+ficando la messa in opera delle applicazioni di posizionamento. La Fig. XIV.4.22 eviden-
+zia il collegamento tra sensori encoder assoluto e modulo di gestione.
+Fig. XIV.4.22   Schematizzazione collegamento modulo di posizionamento ed encoder.
+1
+1
+2
+3
+3
+3
+4
+5
+6
+7
+9
+8
+ABE 7CPA011
+ABE 7CPA01
+Alimentazione
+sensori 24V d.c.
+PNP
+NPN
+Ingresso
+Ingresso
+d.c. 10/30V
+d.c. 5V
+Collegamento interruttori 2 fili
+Collegamento interruttori 3 fili
+1 Encoder assoluto seriale SSI
+2 Encoder assoluto a uscite parallele
+3 Connettore tipo SUB-D9 contatti TSX CAP H15
+4 Connettore tipo SUB-D15 contatti alta densità TSX CAP H15
+5 Cavo precablato TSX CCP H15
+6 Interruttore PNP 3 fili
+7 Interruttore NPN 3 fili
+8 Interruttore 2 fili
+9 Interruttore meccanico
+
+[PAG 1358]
+XIV-46
+AUTOMAZIONE
+Moduli di posizionamento assi
+Il modulo di comando assi costituisce una valida soluzione per il controllo di più assi 
+sincronizzato: il processore esegue infatti il programma stabilito e controlla in tempo 
+reale la retroazione del motore asservito. La funzione è molto simile a quella dei CN
+(Controlli Numerici).
+Il segnale di retroazione può essere fornito da trasduttori resolver o da encoder calet-
+tati sullo stesso asse del movimento. Il funzionamento è dovuto ad un treno di impulsi a 
+frequenza variabile, che comanda tipicamente dei motori passo passo: la frequenza sarà 
+crescente all’avviamento, costante a regime, decrescente alla decelerazione del motore. 
+Lo spostamento dell’attuatore è controllato tramite un programma interno al modulo, 
+costituito da una serie di passi che descrivono i movimenti da effettuare; questo pro-
+gramma può comprendere fino a un certo numero di passi (per esempio 50) con istruzioni 
+che possono realizzare le traiettorie più complesse.
+Il modulo possiede una propria memoria interna di dati, nella quale vengono memo-
+rizzate le quote in base alla procedura di apprendimento e dispone inoltre di contatori che 
+consentono di effettuare sequenze ripetitive del programma funzione. Il modulo dialoga 
+con la CPU del PLC tramite interfacce (ON-OFF, registro e messaggio), riceve dal pro-
+cessore i comandi e restituisce a esso le informazioni di controllo. È possibile memoriz-
+zare sul modulo le varie funzioni di movimentazione, regolandone le rampe di 
+accelerazione e decelerazione; mediante software si effettueranno successivamente le 
+varie movimentazioni a seconda delle necessità dell’applicazione.
+Moduli per l’interfacciamento di termocoppie
+I moduli di interfacciamento termocoppie sono confezionati in modo da poter ricevere 
+segnali direttamente da termocoppie. È noto che il segnale offerto da un rilevatore di tem-
+peratura a termocoppia è un segnale ad un livello bassissimo di tensione (0,20; 0,50; 
+0,100 mV). Il modulo compirà operazioni di filtraggio, linearizzazione, amplificazione 
+del segnale e conversione in valore digitale. Uno speciale circuito compensa la tempera-
+tura del giunto freddo, che altrimenti falserebbe la misura effettuata.
+Moduli di comunicazione 
+Lo scambio di dati, messaggi, informazioni in genere tra un insieme di PLC è possi-
+bile tramite i moduli di comunicazione.
+Lo scambio avviene attraverso una tavola di trasmissione formata da più parole regi-
+stro, che viene opportunamente codificata servendosi di un appropriato protocollo di comu-
+nicazione. Generalmente ogni casa produttrice di PLC ha un suo protocollo di 
+comunicazione e, anche se oggi esiste una regolamentazione che normalizza tali protocolli, 
+la comunicazione è possibile generalmente solo tramite apparecchiature della stessa ditta. 
+Ovviamente vi saranno vari livelli di comunicazione, a seconda dell’ambiente in cui si 
+opera. L’ultima generazione di controllori programmabili TSX Micro Modicon offre le 
+seguenti possibilità di comunicazione:
+–  Comunicazione integrata con funzioni di dialogo economiche realizzate dalla presa 
+terminale. I collegamenti di tipo RS485 non isolati, dispongono del protocollo Uni-
+Telway master/slave, Modbus RTU slave o modo caratteri. Alcuni PLC integrano inoltre 
+il protocollo Modbus RTU master.
+–  Scheda di comunicazione per i controllori programmabili modulari che sono dotati nel 
+rack di un alloggiamento dedicato per l’installazione di una scheda di comunicazione in 
+formato PCMCIA (collegamento seriale asincrono “Full-duplex”, bus CANopen, Fipio, 
+Uni-Telway o Modbus, e rete Modbus Plus o Fipway.
+–  Modulo esterno Ethernet TCP/IP 10/100 MHz. Questo modulo esterno si collega alla 
+presa terminale dei controllori programmabili e dispone della messaggeria Uni-TE e Mod-
