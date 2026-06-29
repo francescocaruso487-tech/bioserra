@@ -1,0 +1,918 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 98/116 ===
+Chars: 44,992 | Offset: 4,286,808
+
+
+
+[PAG 1932]
+XIX-60
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+completato sull’ultimo connettore con un apposito terminatore per la chiusura della rete.
+2.9.4  Prese e spine ad uso industriale
+Le prese e spine ad uso industriale, comunemente chiamate CEE 17 (perché derivanti 
+dalla pubblicazione CEEél n. 17), sono regolamentate dalle norme CEI 23-12 e dalle norme 
+IEC 309-1 e IEC 309-2. Vengono utilizzate per tensioni non superiori a 750 V e per cor-
+renti non superiori a 200 A. Nella Tab. XIX.2.13 sono evidenziate le corrispondenze tra il 
+colore della presa e la tensione di esercizio. 
+La Tab. XIX.2.14 riporta le caratteristiche delle prese e delle spine per uso industriale 
+per bassissima tensione, secondo la norma IEC 309-2.
+Nella Tab. XIX.2.15 sono invece riportate le caratteristiche delle prese e delle spine 
+per uso industriale per bassa tensione, secondo la norma IEC 309-2.
+Esse trovano impiego in tutti quegli usi particolarmente gravosi quali garages o sala 
+macchine ascensore e caldaia; oppure al di fuori degli ambienti domestici, quali ambienti 
+industriali in genere, ambienti agricoli e similari, sia all’interno che all’esterno, cantieri 
+edili, campeggi, caravanning ecc. 
+La temperatura ambiente non deve essere superiore ai 40 °C.
+ I dati di targa che caratterizzano le prese di questo tipo sono:
+–  corrente nominale,
+–  tensione nominale,
+–  natura della corrente,
+–  grado di protezione,
+–  posizione del contatto di terra,
+–  marchio di fabbrica, 
+–  marchio di qualità IMQ ed altri enti equivalenti esistenti,
+–  tensione di isolamento,
+–  polarità.
+Per le dimensioni le prese e spine ad uso industriale fanno riferimento a tabelle di uni-
+ficazione CEEél e CEI-UNEL; sono concepite in modo da garantire una completa inter-
+cambiabilità tra prese e spine di uguale natura, una sicura non intercambiabilità tra prese e 
+spine con caratteristiche diverse e da rendere impossibile l’inserzione di una spina in una 
+presa con differenti posizioni del contatto di terra e del contatto unipolare.
+La posizione del contatto di terra è determinato con un sistema di riferimento che con-
+sidera la posizione oraria.
+La posizione oraria h è definita:
+Tab. XIX.2.13  Codice colori per prese CEE 17
+Tensione nominale di 
+esercizio [V]
+Colore
+20  ÷  25
+Viola
+40  ÷  50
+Bianco
+100  ÷  130
+Giallo
+200  ÷  250
+Blu
+380  ÷  480
+Rosso
+500  ÷  690
+Nero
+
+[PAG 1933]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-61
+Tab. XIX.2.14  Caratteristiche delle prese e spine CEE a bassissima tensione
+–  per le prese e spine a bassissima tensione (< 50 V) con la presa vista di fronte, osser-
+vando la posizione del punto di riferimento ausiliario rispetto al principale posizionato 
+sempre a ore 6;
+–  per le prese e spine a bassa tensione (> 50 V) con la presa vista di fronte, osservando 
+la posizione del contatto di terra rispetto al punto di riferimento principale posizionato 
+sempre a ore 6.
+Le diverse tensioni nominali si distinguono inoltre tramite i diversi colori convenzio-
+nali codificati che assumono i contenitori delle prese e spine CEE 17; si ricorda che per 
+frequenze da 60 Hz a 500 Hz inclusa si può usare, se necessario, il colore verde in combi-
+nazione con il colore della tensione nominale di esercizio.
+Per la protezione contro i contatti con parti in tensione le norme prescrivono che, 
+quando la spina è equipaggiata con i relativi cavi, come nell’uso ordinario, tutte le parti in 
+tensione non devono essere accessibili. Inoltre, non deve essere possibile stabilire il con-
+tatto tra spinotto e alveolo quando gli altri spinotti sono accessibili. Nel cablare il cavo con 
+la spina occorre fare attenzione di chiudere molto bene tutte le custodie e che nessun con-
+duttore venga schiacciato o fuoriesca se non dall’apposito passacavo. 
+Le prese e spine di tipo comune (con grado di protezione IP 44) sono munite di coper-
+chio per le prese e nasello di ritenuta per le spine, mentre quelle di tipo protetto contro gli 
+spruzzi o stagne all’immersione (con grado di protezione IP 67) sono munite di coperchio 
+e sistema a piani inclinati con innesto a baionetta per le prese e nasello di ritenuta ed anello 
+a baionetta per le spine.
+Se la tensione di impiego è superiore a 500 V in corrente alternata, o 250 V in corrente 
+continua per le prese 16 A o se è superiore a 42 V sempre in corrente continua per le prese 
+senza riferimento
+10 h
+11 h
+ 3 h
+ 2 h
+ 4 h
+12 h
+16 e 32 A
+ausiliario
+punto di rifer.
+Posizione del
+corrente
+continua
+e
+40 ÷ 50
+2P e 3P
+20 ÷ 25
+400
+300
+Numero
+dei poli
+40 ÷ 50
+nominale
+Tensione
+20 ÷ 25
+[V]
+50 e 60
+[Hz]
+Frequenza
+Bianco
+Verde
+Verde
+Verde
+Verde
+Bianco
+di identificazione
+Viola
+2P
+Colore
+3P
+da 100 a 200
+incluso
+50 e 60
+da 401 a 500
+incluso
+
+[PAG 1934]
+XIX-62
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+32 A, all’interno di esse deve essere incorporato un dispositivo di blocco che agisce su un 
+interruttore in modo da realizzare le seguenti condizioni:
+–  non è possibile dare tensione alla presa fino a che la spina non è completamente inserita;
+–  non è possibile estrarre la spina dalla presa fintantoché l’interruttore non viene aperto 
+e gli alveoli sono in tensione;
+–  non è possibile aprire il contenitore fino a che non è stato aperto l’interruttore e quindi 
+sezionata la presa.
+2.10  Apparecchi di segnalazione
+2.10.1  Suoneria, ronzatore
+L’apparecchio che effettua la chiamata negli impianti si segnalazione acustica è la 
+suoneria. 
+Tab. XIX.2.15a  Caratteristiche delle prese e spine bipolari CEE a bassa tensione
+terra
+contatto di
+Posizione del
+oltre 250
+8 h
+3 h
+oltre 50
+oltre 50
+2 h
+-
+12 h
+7 h
+60
+277
+9 h
+5 h
+6 h
+4 h
+Frequenza
+dei poli
+Numero
+[Hz]
+nominale
+[V]
+Tensione
+Verde
+8 h
+3 h
+Verde
+-
+-
+12 h
+7 h
+Colore
+tensione
+secondo
+Nero
+Giallo
+Rosso
+9 h
+5 h
+6 h
+4 h
+Nero
+Blu
+di identificazione
+Colore
+100 ÷ 130
+200 ÷ 250
+380 ÷ 415
+480 ÷ 500
+50 ÷ 250
+incluso
+Alimentazione
+da trasformatore
+di isolamento
+100 ÷ 300
+incluso
+301÷ 500
+incluso
+50 e 60
+50 e 60
+2P + T
+corrente
+continua
+tensione
+secondo
+Colore
+tensione
+secondo
+Colore
+63 ÷ 125 A
+16 ÷ 32 A
+
+[PAG 1935]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-63
+Essa normalmente viene alimentata con una bassissima tensione mediante un trasfor-
+matore monofase, ma è possibile installare anche suonerie con una tensione di alimenta-
+zione di 125 o 220 V; inoltre si trovano suonerie funzionanti in corrente alternata e in 
+corrente continua. 
+A seconda del principio di funzionamento o della specifica parte che entra in vibra-
+zione, le suonerie di diversificano in a scintilla, a reazione magnetica, polarizzata, ronza-
+tore, cicalino ed elettronica. 
+In base alle esigenze di installazione, le suonerie possono essere in versione da parete, 
+da incasso su scatola tonda e a moduli componibili; si possono differenziare anche per 
+emettere suoni monotonali e bitonali.      
+Le suonerie di uso più comune sono quelle a scintilla e il loro funzionamento può 
+essere riassunto nel modo seguente:
+Tab. XIX.2.15b   Caratteristiche delle prese e spine tripolari CEE a bassa tensione
+terra
+contatto di
+Posizione del
+3P + T
+incluso
+incluso
+oltre 50
+oltre 50
+2 h
+50 e 60
+50 e 60
+3 h
+5 h
+7 h
+Numero
+60
+50 e 60
+6 h
+9 h
+4 h
+Frequenza
+dei poli
+[Hz]
+nominale
+[V]
+Tensione
+Rosso
+Verde
+Verde
+-
+-
+-
+Nero
+Nero
+Giallo
+Rosso
+Rosso
+Blu
+di identificazione
+Colore
+16 ÷ 32 A 63 ÷ 125 A
+100 ÷ 130
+200 ÷ 250
+380 ÷ 415
+440 ÷ 460
+480 ÷ 500
+600 ÷ 690
+380 ÷ 440
+100 ÷ 300
+301 ÷ 500
+Alimentazione
+da trasformatore
+di isolamento
+tensione
+secondo
+Colore
+11 h
+12 h
+4 h
+9 h
+6 h
+7 h
+5 h
+11 h
+12 h
+10 h
+
+[PAG 1936]
+XIX-64
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+–  premendo il pulsante di chiamata, si determina la chiusura del circuito sull’elettroma-
+gnete che attrae un’ancorina terminante con un martelletto;
+–  mentre il martelletto batte sul coperchio della suoneria (timpano), determinando il suono, 
+l’ancorina nello spostamento interrompe l’alimentazione dell’elettromagnete (nell’interru-
+zione si verifica una piccola scintilla e da questo fenomeno prende il nome la suoneria);
+–  diseccitandosi, l’elettromagnete rilascia l’ancorina, la quale, tornando nella sua posi-
+zione iniziale, richiude il circuito sull’elettromagnete;
+–  il ciclo si ripete fintantoché non si rilascia il pulsante per cui il suono emesso in questa 
+situazione è del tipo ad intermittenza.
+I timpani, a seconda del timbro sonoro e dell’intensità desiderati, possono essere in 
+acciaio, bronzo, alluminio e in resina.
+Qualora un suono con alta intensità possa disturbare, vengono impiegati i ronzatori, che
+Tab. XIX.2.15c  Caratteristiche delle prese e spine quadripolari CEE a bassa tensione
+terra
+contatto di
+Posizione del
+3P + N + T
+tipi
+Tutti
+i
+coperte da altre configurazioni
+d'impiego e/o le frequenze non
+Tutte le tensioni nominali
+oltre 50
+incluso
+1 h
+2 h
+oltre 50
+incluso
+50 e 60
+60
+-
+3 h
+5 h
+dei poli
+Numero
+50 e 60
+6 h
+7 h
+9 h
+nominale
+Tensione
+[Hz]
+Frequenza
+[V]
+4 h
+1 h
+-
+Verde
+-
+-
+5 h
+Verde
+Rosso
+Rosso
+Nero
+6 h
+7 h
+9 h
+Nero
+Rosso
+Blu
+Giallo
+di identificazione
+Colore
+4 h
+16 ÷ 32 A 63 ÷ 125 A
+100 ÷ 300
+301 ÷ 500
+57/100 ÷ 75/130
+120/208 ÷ 144/250
+200/346 ÷ 240/415
+277/480 ÷ 288/500
+347/600 ÷ 400/690
+250/440 ÷ 265/460
+220/380 ÷ 250/440
+11 h
+11 h
+
+[PAG 1937]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-65
+sono particolari suonerie senza timpano e martelletto che sfruttano la vibrazione dell’anco-
+rina (normalmente la vibrazione viene amplificata dal coperchio) per emettere un ronzio.
+Le caratteristiche delle suonerie elettroniche consistono essenzialmente: nella modu-
+larità (occupano 2 moduli); nella possibilità di emettere tre diversi suoni, differenziati in 
+continui ed intermittenti e pilotati da tre punti diversi di chiamata; nella possibilità di 
+regolare il volume del suono desiderato; da un’alimentazione a 12 V indifferentemente in 
+corrente continua o in corrente alternata.
+2.10.2  Quadro indicatore a cartellini
+In tutti quegli ambienti nei quali più persone hanno la necessità di chiamare il perso-
+nale di servizio, per esempio in scuole, uffici ecc., trovano applicazione apparecchi di 
+segnalazione denominati quadri indicatori; sono apparecchi da incasso o da parete e ven-
+gono alimentati a bassissima tensione (per esempio 12 V).
+I quadri indicatori sono collegati con un certo numero di pulsanti di chiamata, corri-
+spondente in quantità ai punti dai quali è necessario effettuare una segnalazione, e con 
+uno o più pulsanti di annullamento. Mentre un tempo era frequente trovare un quadro 
+indicatore a cartellini con annullamento meccanico (con una manovella di metallo che 
+provocava meccanicamente la caduta dei cartellini), attualmente la quasi totalità utilizza 
+per lo meno un pulsante per l’annullamento elettrico.
+Il tipo di segnalatore più semplice è il quadro indicatore a cartellini, nel quale ven-
+gono azionate delle piastrine, recanti un numero, che indicano così il punto di chiamata. 
+All’interno del quadro indicatore a cartellini si trova un numero di bobine corrispon-
+dente a quello dei cartellini eccitate dalla chiusura del circuito operata dal relativo pulsan-
+te, attraggono l’ancorina, determinando l’apparizione del numero del cartellino.
+A ciascun numero corrisponde un ben specifico ufficio od aula scolastica, cosicché la 
+persona di servizio può identificare facilmente chi ha effettuato la chiamata. Normal-
+mente, i quadri indicatori a cartellino, sono dotati anche di una suoneria o un ronzatore.
+La suoneria è collegata in serie con gli elettromagneti e rimane in funzione solo 
+durante l’azionamento del pulsante. Il personale di servizio, dopo aver recepito la segna-
+lazione, può riportare il quadro indicatore in stato di riposo, premendo il pulsante di 
+annullamento. Quest’ultimo eccita un ulteriore elettromagnete, il quale, attraendo 
+un’ancorina collegata ad un perno metallico, provoca la caduta del cartellino.     
+2.10.3  Quadro indicatore luminoso
+Nei quadri indicatori luminosi la chiamata determina l’accensione di lampade interne, 
+illuminando in tal modo i numeri sovraimpressi alle diverse caselle del quadrante. 
+L’interno del quadro indicatore luminoso è più complesso di quello a cartellini e com-
+prende normalmente dei relè bistabili, dei contatti multipli, delle lampadine e un ronzatore. 
+Il contatto multiplo, in quantità uguale ai relè bistabili, dà la possibilità di ripetere la segna-
+lazione su apparecchi secondari (altri quadri luminosi o singole lampade di segnalazione). 
+Il funzionamento di un quadro indicatore luminoso è riassumibile nel seguente modo:
+–  premendo un pulsante di chiamata in un posto qualsiasi, si alimenta la bobina di attrazione;
+–  il contatto multiplo si chiude e, determinando l’alimentazione della lampadina, rende 
+visibile il numero di chiamata;
+–  il ronzatore rimane in funzione lungo tutto il periodo nel quale il pulsante viene premuto;
+–  a comunicazione recepita, premendo il pulsante di annullamento, si alimenta la 
+seconda bobina (di rilascio) che provoca lo spegnimento della lampadina.
+2.11  Apparecchi per controlli
+2.11.1  Variatore di luminosità
+Il variatore di luminosità è un apparecchio elettronico che consente di regolare in
+
+[PAG 1938]
+XIX-66
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+modo continuo il flusso luminoso emesso da una lampada ad incandescenza, da una lam-
+pada alogena o da una lampada fluorescente. Esso si basa sull’utilizzo di elementi semi-
+conduttori, che effettuano una parzializzazione (tolgono una parte) dell’onda sinusoidale: 
+in pratica, a seconda dell’inserzione, si determina una variazione di fase più o meno ele-
+vata e conseguentemente si stabilisce il punto di inizio della corrente.
+Le grandezze elettriche che caratterizzano un variatore di luce sono:
+–  la tensione nominale (220 V);
+–  la frequenza (50 Hz);
+–  la potenza che può controllare (60 ÷ 500 W);
+–  il campo di regolazione, espresso come la percentuale della potenza del carico (0 ÷ 95%).
+I vari modelli di variatore si differenziano sia per il modulo che per il meccanismo di 
+manovra: possono essere di tipo monoblocco o modulare e inoltre possono essere azionati 
+da manopola (potenziometro) ruotabile o da un pulsante. 
+Nel tipo a manopola l’uso che se ne può fare è duplice: premendo la manopola, oppure 
+ruotandola sino alla fine della corsa (generalmente si provoca un click), si determina 
+l’apertura del circuito e quindi lo spegnimento della lampada; ruotando invece solamente 
+la manopola, si effettua la variazione di luminosità; possono essere anche del tipo ad 
+interruzione o a deviazione.
+Nella versione con pulsante il variatore di luminosità effettua anche tutte le funzioni 
+di comando (interruzione, deviazione, inversione, telecomando a relè). Il funzionamento 
+avviene nel seguente modo: se si tiene premuto in modo prolungato il pulsante, si agisce 
+sulla regolazione della luminosità, aumentandola oppure diminuendola; se si preme in 
+modo rapido il pulsante, si determina l’accensione o lo spegnimento della lampada. Que-
+sto tipo di variatore presenta inoltre una memorizzazione elettronica della variazione 
+scelta, che rimane tale fintantoché non si effettua un’altra regolazione.
+Infine è possibile collegare in parallelo con il pulsante dell’apparecchio altri pulsanti 
+ed estendere la regolazione ed il comando ad altri punti. Tutti i variatori di luminosità 
+devono essere equipaggiati con un filtro, per sopprimere i radiodisturbi.
+2.11.2  Temporizzatore luci scale
+Il temporizzatore luci scale è un particolare tipo di relè che, utilizzato generalmente 
+per il comando dell’illuminazione delle scale e dei pianerottoli di uno stabile, provoca lo 
+spegnimento automatico delle lampade dopo un tempo stabilito. Esso è anche utilizzato 
+per impianti di illuminazione di cantine, accessi ad uffici e per impianti di aspirazione 
+centralizzata per cucine e bagni. Sono disponibili in varie esecuzioni: da quadro o da 
+incasso in scatola per frutti.
+A seconda della versione si possono trovare temporizzatori a orologeria, ad ampolla di 
+mercurio, a motorino sincrono ed elettronici. Si diversificano innanzitutto per il tipo di 
+meccanismo che determina la temporizzazione, per esempio:
+–  il tipo ad orologeria sfrutta il movimento di tutta una serie di ingranaggi azionati da un 
+bilanciere;
+–  quello a mercurio sfrutta la velocità di fuoriuscita dell’aria contenuta all’interno di 
+una cilindretto cavo (l’aria è pressata da uno stantuffo di ferro dolce di forma cilindrica 
+che ricade, dopo essere stato attratto dall’elettromagnete).
+I temporizzatori si diversificano anche per il tipo di contatti elettrici di cui sono dotati, 
+per esempio tutti hanno contatti elettrici formati da laminette di rame (o un relè come nel 
+caso del temporizzatore elettronico), mentre il temporizzatore a mercurio sostituisce i 
+contatti tradizionali con una determinata quantità di mercurio contenuto in un’ampolla.
+Infine, ciò che contraddistingue dagli altri i temporizzatori in versione elettronica è 
+che essi sono costituiti da componenti elettronici a stato solido, eccetto il relè in uscita, e
+
+[PAG 1939]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-67
+si caratterizzano per la loro silenziosità, dovuta essenzialmente al loro funzionamento, 
+basato sulla carica e scarica di un condensatore.
+Altre particolarità, riscontrabili su tutti i temporizzatori, sono una regolazione del 
+tempo di funzionamento e un commutatore per selezionare il funzionamento su lampade 
+(temporizzate, lampade sempre accese e, in alcuni modelli, temporizzatore disinserito).
+2.11.3  Orologio programmatore
+L’orologio programmatore o interruttore orario è un apparecchio utilizzato per il 
+comando automatico di impianti di illuminazione pubblica, di vani scale, insegne pubbli-
+citarie e vetrine; esso è ampiamente usato inoltre negli impianti di riscaldamento per com-
+mutare la temperatura all’interno di fascie orarie programmate. In linea generale quindi esso 
+trova una adeguata applicazione in tutte quelle situazioni nelle quali comandi operativi o 
+funzionali di apparecchi debbano essere programmati durante la giornata o la settimana. 
+La predisposizione dei comandi si determina mediante l’inserimento sul quadrante, 
+messo in movimento dal sistema ad orologeria interno, o lo spostamento se ne fanno già 
+parte, di particolari piolini chiamati cavalieri. Durante la rotazione del quadrante, i cava-
+lieri con la loro forma diversificata provocano lo spostamento in avanti o indietro di una 
+levetta a beccuccio, al cui spostamento corrisponde la chiusura o l’apertura del contatto 
+elettrico interno.
+Il meccanismo ad orologeria può essere del tipo senza riserva di carica o del tipo con 
+riserva di carica. Nel primo caso esso impiega un piccolo motore sincrono autoavviante che 
+risulta sincronizzato sulla frequenza di rete. Nel secondo caso invece il movimento è elet-
+tronico e risulta sincronizzato per mezzo di un oscillatore al quarzo. La riserva di carica è 
+stabilita in genere in 40 ore. La programmazione può essere di tipo (ciclo) giornaliero, per 
+esempio 48 operazioni massime con intervallo minimo di 30 minuti, oppure di tipo (ciclo) 
+settimanale, per esempio 42 operazioni massime con intervallo minimo di 4 ore.
+Vengono inoltre commercializzati programmatori di tipo elettronico, sempre a ciclo 
+giornaliero/settimanale, che sopportano una potenza massima pari a 2 kW.
+Le caratteristiche generali che contraddistinguono un programmatore elettronico sono:
+–  ciclo giornaliero/settimanale con 4 inserzioni e disinserzioni giornaliere;
+–  tensione di impiego pari a 220 V in corrente alternata e a 50 Hz;
+–  contatto in commutazione libero da tensione con 10 A a cos uguale a 1 oppure con 5 
+A con cos pari a 0,5;
+–  tempo minimo tra un intervento ed il successivo di un minuto;
+–  precisione di intervento pari a 1 s;
+–  temperatura di esercizio da 10 °C a +55 °C;
+–  classe di isolamento II;
+–  una riserva di carica per 30 giorni;
+–  indicazione permanente sul quadrante a cristalli liquidi dell’ora, del giorno della setti-
+mana e del carico inserito/disinserito;
+–  visione a richiesta del programma impostato;
+–  comando manuale.
+2.12  Apparecchi per il controllo della temperatura
+2.12.1  Termostato ambiente
+Il termostato ambiente è un apparecchio che controlla la temperatura ambiente per 
+mezzo di un sensore elettronico che comanda un relè di uscita. Viene alimentato dalla ten-
+sione di rete e presenta generalmente sulla parte anteriore delle manopole graduate per la 
+regolazione (questo per mantenere la semplicità operativa dei tradizionali termostati mec-
+canici), e dei led di segnalazione (termostato alimentato o non e stato ON-OFF dei con-
+
+[PAG 1940]
+XIX-68
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+tatti di uscita). In commercio è possibile trovare una versione di tipo semplice che 
+consente, mediante lo spostamento del commutatore nelle posizioni “giorno/notte”, di 
+inserire o meno la riduzione di temperatura fissa 4 °C. Una seconda versione, più sofisti-
+cata, prevede un commutatore in grado di predisporre il termostato al controllo del riscal-
+damento invernale o del condizionamento estivo, mentre la riduzione di temperatura, che 
+è regolabile in valore e durata, si ottiene agendo su due altre piccole manopole graduate; 
+un pulsante permette l’inserimento/disinserzione o l’avvio del ciclo automatico. I contatti 
+del relè incorporato, con portata 5 A, consentono di comandare caldaie, pompe di circola-
+zione e similari senza dover ricorrere a contattori o circuiti ausiliari.
+I termostati ambiente per funzionare correttamente non devono trovarsi vicini ad ele-
+menti che irradiano calore durante il normale funzionamento, come per esempio variatori 
+di luminosità, relè passo-passo statici, spie di segnalazione ecc.
+Per una corretta installazione e per ottenere quindi una estrema precisione d’inter-
+vento, è opportuno evitare posizionamenti in situazioni che possano influire sulla lettura 
+della temperatura ambiente. È consigliabile pertanto:
+–  installare il termostato su pareti interne, piuttosto che su quelle perimetrali, meno 
+influenzate dalla temperatura esterna;
+–  evitare l’installazione in corrispondenza di porte o finestre o in luoghi soggetti a cor-
+renti d’aria, o a irraggiamento solare;
+–  evitare l’installazione in nicchie o luoghi chiusi quali ripostigli;
+–  non ostacolare la libera circolazione dell’aria verso la sonda termica (coprendola con 
+mobili o tappezzeria, normalmente collocata nella zona anteriore dell’apparecchio;
+–  installare il termostato ad un’altezza di circa 1,5 m dal filo del pavimento.
+2.12.2  Cronotermostati elettronici
+I cronotermostati sono una evoluzione tecnologica dei termostati elettronici; nell’ese-
+cuzione da incasso fanno parte della nuova generazione degli apparecchi modulari (occu-
+pano normalmente tre moduli), in grado di sostituire senza alcun problema i termostati e i 
+cronotermostati esistenti e consentono, garantendo un comfort maggiore, di soddisfare 
+anche le esigenze di risparmio energetico. Si possono trovare, in riferimento al sistema di 
+alimentazione, in due versioni:
+–  con alimentazione mediante batterie,
+–  con alimentazione mediante tensione di rete.
+Nella parte anteriore un display a cristalli liquidi visualizza in modo chiaro tutte le 
+informazioni che durante il normale funzionamento il cronotermostato elabora (ora, 
+giorno della settimana, temperatura e programma attuato) e altre informazioni si possono 
+avere su richiesta (data, sequenza programmi, ecc.). Il funzionamento si basa su tre tem-
+perature impostabili, definite temperatura antigelo (per esempio 7 °C, fissa), temperatura 
+comfort (per esempio 20 °C, regolabile) e temperatura economy (per esempio 17 °C, 
+regolabile). La programmazione e il controllo della stessa vengono gestiti mediante 
+un’azione diretta sui pulsantini e sui commutatori frontali di cui è dotato l’apparecchio.
+Alcuni tipi di cronotermostati permettono anche di visualizzare i consumi attraverso il 
+numero di ore di funzionamento della caldaia o condizionatore durante le ultime 24 ore e/
+o dall’inizio della stagione (ore totali di funzionamento). Da tale dato infatti si può rica-
+vare il consumo energetico dell’impianto, semplicemente moltiplicandolo per il consumo/
+ora (dato, quest’ultimo, di solito riportato in targa sul motore delle caldaie) per ottenere il 
+totale dei consumi in litri (gasolio) o metricubi (metano) dell’impianto.
+Altri tipi di cronotermostati, ancora più sofisticati (il loro funzionamento è completa-
+mente controllato da un microprocessore), hanno la possibilità di essere comandati a 
+distanza tramite un combinatore telefonico. In questo caso l’insieme combinatore telefo-
+
+[PAG 1941]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-69
+nico e cronotermostato consente, mediante la normale linea telefonica, di gestire tutte le 
+funzioni con la semplice tastiera del telefono.
+Il cronotermostato elettronico può trovare applicazione:
+–  nell’impianto di riscaldamento dove comanda il bruciatore,
+–  nell’impianto di riscaldamento dove comanda la pompa di circolazione,
+–  nell’impianto di riscaldamento e di condizionamento dove comanda il ventilatore,
+–  negli impianti con ventilconvettori per riscaldamento/raffreddamento,
+–  nell’impianto di riscaldamento dove comanda la valvola di zona.
+Questi apparecchi non devono essere collocati in prossimità di fonti di calore, di aera-
+zione o vicino a finestre. Inoltre è opportuno installarli ad un’altezza di 1,5 m dal pavimento. 
+2.13  Relè e rivelatori vari
+2.13.1  Relè
+Nell’accezione tradizionale del termine si può definire il relè come un apparecchio 
+elettromagnetico composto di tre parti: elettrica, magnetica e meccanica (Fig. XIX.2.12). 
+La parte elettrica è costituita da uno o più contatti deputati a chiudere il circuito, determi-
+nando l’alimentazione del carico.
+La parte magnetica è costituita da una bobina che, percorsa da corrente, crea un campo 
+magnetico che attrae una piastrina di ferro dolce (componente della parte meccanica). 
+La parte meccanica è invece un insieme di piccoli congegni di materiale metallico e 
+plastico che determina il collegamento tra la bobina e i contatti; essa ha la funzione, una 
+volta che la bobina riceve un impulso, di cambiare la posizione dei contatti. 
+Le principali caratteristiche di un relè si possono così riassumere:
+–  La tensione nominale della bobina rappresenta il valore nominale della tensione di ali-
+mentazione per il quale il relè è stato costruito.
+–  La tensione di alimentazione della bobina si può dif-
+ferenziare, con bobina a regime termico e con la tem-
+peratura ambiente a 20 °C, in tensione minima di 
+funzionamento (valore mediante il quale il relè fun-
+ziona con sicurezza), tensione massima di funziona-
+mento (valore estremo al quale il relè può essere 
+sottoposto con il rispetto delle prescrizioni sul suo 
+riscaldamento), tensione di mantenimento (valore di 
+tensione che permette alla bobina, una volta eccitata, 
+di mantenere il carico), tensione di rilascio (valore di 
+tensione mediante la quale la bobina sicuramente si 
+diseccita), tensione di non funzionamento (valore di 
+tensione che non permette alla bobina di eccitarsi) e 
+campo di funzionamento (valori di tensione compresi 
+tra quelli della tensione minima e massima). 
+Fig. XIX.2.12  Parti costituenti un relè.
+–  La potenza nominale della bobina indica il valore della potenza apparente (con ali-
+mentazione in corrente alternata) assorbita alla tensione nominale.
+–  La corrente nominale dei contatti rappresenta la corrente che viene utilizzata in servi-
+zio continuo e indica il massimo valore di corrente che il contatto può sopportare nel 
+rispetto delle prescrizioni sul suo riscaldamento. Essa può inoltre essere definita come 
+quel valore di corrente che il contatto può stabilire, mantenere e interrompere per un ele-
+vato numero di volte.
+Ancora di movimentazione
+Contatto comune
+Contatto NC
+Contatto NA
+Bobina
+Bobina
+Morsetti
+Molla antagonista
+
+[PAG 1942]
+XIX-70
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+–  La portata nominale è definita come la massima potenza che il contatto può commu-
+tare, oppure come il valore massimo di potenza (espressa in VA) che il contatto è capace 
+di mantenere e interrompere per un elevato numero di volte.
+–  La tensione nominale di un contatto viene espressa come il rapporto tra la portata 
+nominale e la corrente nominale.  
+Se vengono classificati per la modalità di eccitazione, i relè vengono distinti in bista-
+bili e monostabili. I relè bistabili sono del tipo a ritenuta magnetica e presentano pertanto 
+due avvolgimenti distinti denominati: di attrazione (o ritenuta) e di rilascio. I relè mono-
+stabili si suddividono in ausiliari, serie e speciali per controlli elettronici.
+2.13.2  Relè passo-passo
+Negli impianti di illuminazione il tipo normalmente utilizzato è il relè passo-passo; 
+esso viene comandato da uno o più pulsanti. In relazione al tipo di contatto di cui sono 
+dotati e al tipo di sequenza dello stesso (Tab. XIX.2.16), i relè passo-passo possono svol-
+gere funzioni di:
+–  interruttore bipolare,
+–  interruttore unipolare,
+–  deviatore,
+–  commutatore a 4 sequenze,
+–  deviatore a 4 sequenze.
+Negli impianti civili si usano prevalentemente relè interruttori unipolari e relè com-
+mutatori: i primi permettono di sostituire gli apparecchi tradizionali per il comando di tipo 
+interrotto, deviato e invertito; i secondi svolgono invece essenzialmente un comando di 
+commutazione. 
+Tab. XIX.2.16  Sequenza dei vari tipi di relè passo-passo
+Tipo di
+relè
+N° di
+1°
+Sequenza
+2°
+3°
+4°
+Interruttore
+unipolare
+Interruttore
+bipolare
+Deviatore
+unipolare
+Commutatore
+a 4 sequenze
+2
+2
+2
+4
+4
+Deviatore
+a 4 sequenze
+
+[PAG 1943]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-71
+I relè interruttori sono contraddistinti dalla presenza di un solo contatto, di una sola 
+camma e da due posizioni di lavoro (contatto aperto e contatto chiuso). 
+I relè commutatori sono invece caratterizzati da due contatti, due camme e quattro 
+posizioni di lavoro (tutti e due i contatti aperti, tutti e due i contatti chiusi, solamente il 
+primo contatto chiuso e solamente il secondo contatto chiuso).
+I relè si possono differenziare anche in base al valore di tensione di alimentazione 
+della bobina, intendendo implicitamente che la tensione del circuito sul quale viene inse-
+rito il contatto è sempre di 220 V: se la bobina viene alimentata con una tensione uguale a 
+quella del contatto o dei contatti, il relè viene denominato ad eccitazione comune; se la 
+bobina deve essere alimentata con una tensione minore di quella del contatto (per esempio 
+12 V), il relè viene denominato ad eccitazione separata.
+Nel comparare questo sistema di comando (denominato indiretto per la necessità di ecci-
+tare la bobina per far chiudere o aprire il contatto) con quello tradizionale o diretto (composto 
+da interruttore, deviatori o invertitori) si deve porre attenzione alle seguenti considerazioni:
+–  i relè sono vantaggiosi economicamente solo quando i punti di comando sono nume-
+rosi; determinano una semplificazione dell’impianto, in quanto tutti i pulsanti utilizzati 
+vengono collegati in parallelo tra di loro;
+–  se si utilizza un relè ad eccitazione separata, il circuito di comando (bobina e pulsanti) 
+è sottoposto ad una tensione molto bassa, determinando maggiori condizioni di sicurezza 
+per l’utente; i conduttori, che si usano per il collegamento dei componenti del circuito di 
+comando, vengono dimensionati con un valore di sezione molto più basso, riducendo sen-
+sibilmente il costo dell’impianto.
+2.13.3  Interruttore crepuscolare
+Il funzionamento dell’interruttore crepuscolare è basato su un elemento fotosensibile 
+il quale, per mezzo di un circuito amplificatore, determina la chiusura dei contatti di un 
+relè in uscita, ogni volta che la luminosità dell’ambiente nel quale è installato scende al di 
+sotto del valore del limite di soglia, prestabilito nella fase di regolazione. 
+L’interruttore crepuscolare viene impiegato per comandare, in modo automatico in 
+relazione all’illuminazione naturale del luogo, impianti di illuminazione di giardini, 
+strade, vetrine, insegne pubblicitarie ecc.
+È caratterizzato da una soglia di intervento regolabile (per esempio da 1 a 50 lux) e 
+dalla possibilità di ritardare tale intervento (per esempio da 0 a 20 secondi). Lo scopo 
+dell’eventuale ritardo di intervento è di rendere l’apparecchio insensibile a fonti di luce 
+transitorie e brevi (lampi di temporale, luci di macchine in transito ecc.) per evitare spe-
+gnimenti inopportuni dell’impianto di illuminazione.
+L’interruttore crepuscolare può avere un tensione di alimentazione di 220 V o di 24 V 
+e può avere un grado di protezione contro gli spruzzi di acqua e contro la pioggia (IP 54) 
+tale da renderlo idoneo per una installazione direttamente su muro o su palina, mediante 
+un’apposita staffa. A seconda della necessità è possibile scegliere tra un interruttore cre-
+puscolare con un solo programma (le lampade si accendono al calare della sera e si spen-
+gono all’alba) e un interruttore crepuscolare con più programmi (per esempio quattro). In 
+questo secondo caso il funzionamento si può diversificare come segue:
+–  le lampade vengono accese al calare della sera e vengono spente all’alba;
+–  in caso di sole debole le lampade vengono spente, in caso di sole intenso le lampade 
+vengono accese (per esempio all’entrata di tunnel stradali, vetrine, acquari, cicli giorna-
+lieri negli allevamenti);
+–  le lampade si riaccendono automaticamente al calar della sera dopo uno spegnimento 
+volontario determinato da un pulsante o da un orologio programmatore (per esempio in 
+impianti di illuminazione per vetrine o per il comando di insegne luminose);
+
+[PAG 1944]
+XIX-72
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+–  le lampade si spengono automaticamente quando sopraggiunge l’alba, dopo una 
+accensione volontaria determinata da pulsanti o da orologio programmatore (per esempio 
+negli impianti di uffici, laboratori, cortili ecc.). 
+2.13.4  Rivelatore di fumo
+Il rivelatore di fumo viene alimentato generalmente con una tensione di 12 V in cor-
+rente continua o alternata ed è un apparecchio modulare (ingombro di tre moduli) inter-
+cambiabile con innesto a scatto. È in grado di rilevare la presenza di fumo all’interno di 
+ambienti per mezzo di un sensore ottico ad infrarossi, inserito in una opportuna camera a 
+labirinto. La presenza di fumi bianchi all’interno della camera determina la variazione 
+delle normali condizioni di riflessione della luce infrarossa (effetto Tyndall) che viene 
+rilevata ed elaborata da parte di un dispositivo contenuto nell’apparecchio. Individuata la 
+presenza di fumo, l’apparecchio attiva i segnalatori ottico (led) ed acustico (ronzatore), di 
+cui è dotato e chiude il contatto di un relè in uscita, senza potenziale, che consente di 
+comandare attuatori esterni (ulteriori avvisatori ottici o acustici, aspiratori, porte e finestre 
+motorizzate, centrali di allarme, elettrovalvole ecc.).
+Il rivelatore di fumo, installato su pareti verticali, presenta un grado di protezione IP 
+41, ma va comunque utilizzato in ambienti asciutti, non polverosi e con temperatura com-
+presa tra 0 °C e +40 °C. È ammessa nell’ambiente una umidità relativa massima dell’80 
+%. Il rivelatore deve essere ubicato in una posizione interessata dalla circolazione naturale 
+dell’aria in prossimità del soffitto, evitando la vicinanza con i luoghi di cottura dei cibi.
+È possibile sintetizzare le fasi di funzionamento nel modo seguente:
+–  collegata l’alimentazione ai morsetti di entrata, il led verde si illumina immediatamente;
+–  a piena luce, mentre il led rosso emette brevi guizzi di luce a cadenza di circa 25 s 
+(questo comunica che il rivelatore è operativo);
+–  in caso di presenza di fumo nel locale (la prova può essere fatta avvicinando alla gri-
+glia frontale del rivelatore una sigaretta accesa) il led rosso passa dalla condizione di 
+intermittenza allo stato di piena luce, il ronzatore interno emette un ronzio persistente e il 
+contatto del relè di uscita si chiude;
+–  lo stato di allarme viene mantenuto dal rivelatore per circa 3 s, trascorsi i quali il rive-
+latore ritorna nella condizione di funzionamento normale per passare, immediatamente 
+dopo, ancora nella condizione di allarme, per ulteriori 30 s e così di seguito fintantoché 
+nell’ambiente persisterà la presenza del fumo.
+2.13.5  Rivelatore di gas e ossido di carbonio
+In ambito domestico è possibile aver due situazioni particolarmente pericolose conse-
+guenti alla utilizzazione di gas: il pericolo di esplosione, derivante da una concentrazione 
+anomala dei gas combustibili rispetto alla quantità di aria presente nel locale, e il pericolo 
+di intossicazione, derivante dalla formazione di monossido di carbonio data dalla combu-
+stione dei gas e l’insufficiente aerazione del locale. 
+Per il pericolo di esplosione, i limiti massimi dei valori pericolosi, che non devono mai 
+essere superati e considerano il rapporto tra percentuale di gas e quantità di aria presente, 
+vengono fissati dai cosiddetti Limiti Inferiori di Esplosività (LIE) in 5 % per il metano e 
+2,1 % per il GPL.
+Considerando che in un locale non sempre la concentrazione di gas è uniforme in tutte 
+le zone, un buon rivelatore di gas deve intervenire prima che si raggiunga la concentra-
+zione limite. Inoltre è buona norma impiegare il rivelatore in un ambiente con temperatura 
+tra i 5 °C e i 35 °C.
+In riferimento al pericolo di intossicazione, occorre considerare che a bassissime con-
+centrazioni il monossido di carbonio produce dei comuni fastidi (mal di testa, nausea, stan-
+chezza), difficilmente collegabili con esso. Ma se i primi sintomi possono essere confusi
+
+[PAG 1945]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-73
+con stati di indisposizione molto comuni e quindi sottovalutati, quando la concentrazione 
+aumenta, essa provoca un innalzamento del livello di monossido di carbonio nell’emoglo-
+bina del sangue e conseguentemente determina una incapacità del sistema ematico di tra-
+sportare ossigeno alle fibre muscolari e al sistema nervoso.
+I danni che possono derivare da una situazione del genere sono molto pericolosi e, pas-
+sando da possibili danni irreversibili al cervello, possono provocare la morte. In genere la 
+pericolosità dell’avvelenamento dipende dalla concentrazione di monossido e dal tempo di 
+esposizione ad essa.
+I sistemi di rilevamento delle fughe di gas si basano sull’impiego di specifici sensori i 
+quali sono parte di un sistema elettronico ad alta tecnologia, collegati in certi casi a cir-
+cuiti di autodiagnostica a microprocessore.
+I rivelatori di fughe di gas normalmente impiegati sono essenzialmente di due tipi:
+–  catalitico,
+–  a semiconduttore.
+Il rivelatore con sensore catalitico sfrutta il fenomeno fisico di catalisi del gas da rile-
+vare e viene anche chiamato a “filo caldo”.
+Il rivelatore con sensore a semiconduttore sfrutta la variazione di stato fisico e di con-
+seguenza elettrico della giunzione a semiconduttore; per il controllo e la regolazione delle 
+variazioni dei parametri degli elementi sensibili c’è una particolare sezione di taratura e 
+misura che permette di selezionare la sensibilità dello strumento di base in relazione allo 
+specifico gas da rilevare.
+All’atto dell’installazione del rivelatore occorre considerare il tipo di gas, cosicché:
+–  se il gas utilizzato è metano (più leggero dell’aria) il rivelatore di gas metano deve 
+essere installato in alto a circa 30 ÷ 40 cm dal soffitto,
+–  se il gas utilizzato è GPL o propano (più pesante dell’aria) il rivelatore di GPL deve 
+essere installato in basso a 30 ÷ 40 cm dal livello di pavimento,
+–  per il rivelatore di monossido di carbonio il posizionamento deve essere compreso tra 
+140 ÷ 180 cm di altezza dal livello del pavimento, evitando di posizionarlo vicino a fonti 
+di calore o altre sorgenti che possano alterare repentinamente lo stato dell’ambiente.
+Per i rilevatori di fuga di gas è buona norma osservare le seguenti indicazioni:
+–  la distanza tra l’apparecchio rivelatore e le caldaie o i fornelli non deve essere supe-
+riore a 4 m;
+–  non devono esserci ostacoli o barriere (mobili, colonne ecc) tra il sensore e la sorgente 
+di gas;
+–  non deve essere utilizzato in ambienti nei quali vengano utilizzate con frequenza bom-
+bolette spray, sorgenti di vapore, solventi o alcool;
+–  non si deve danneggiare l’apparecchio durante le normali operazioni di pulizia con 
+urti o con sostanze solventi.
+L’utilizzo di una elettrovalvola conferisce inoltre una maggiore sicurezza contro le 
+fughe di gas che normalmente provengono dagli apparecchi utilizzatori (rubinetti, con-
+dotte interne). L’arresto rapido del flusso di gas deve avvenire sulla condotta principale, 
+all’esterno del locale controllato.
+Non va infine dimenticato che la normativa prescrive che nei locali dove sono instal-
+lati gli apparecchi a gas (con l’esclusione di quelli stagni a tiraggio naturale o forzato) 
+deve affluire una quantità di aria pari a quella che serve alla regolare combustione del gas 
+e alla ventilazione del locale. Al riguardo devono essere presenti delle aperture sulle 
+pareti esterne del locale da ventilare rispondenti ai seguenti requisiti:
+–  sezione libera totale netta di passaggio pari ad almeno 6 cm2 per ogni kW di portata 
+termica installata, con un minimo di 100 cm2;
+–  bocche di apertura sia all’interno che all’esterno della parete non ostruibili;
+
+[PAG 1946]
+XIX-74
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+–  le bocche di aerazione devono essere situate ad una quota prossima al livello del pavi-
+mento ed essere protette con griglie o reti metalliche.
+Infine può rendersi necessario in questi locali anche l’evacuazione dell’aria viziata e 
+la conseguente immissione di una pari quantità di aria pulita; ciò può essere ottenuto con 
+un dispositivo elettromeccanico (elettroventilatore) o naturalmente con apposite bocche di 
+apertura, entrambi nel rispetto delle prescrizioni vigenti.
+2.13.6  Rivelatore di fughe di acqua
+I rivelatori di fughe di acqua sono generalmente prodotti in due versioni: con alimen-
+tazione a 12 V in corrente continua e a 230 V in corrente alternata.
+L’apparecchio a tensione 12 V c.c. è costituito normalmente da tre elementi, connessi 
+tra loro per realizzare un unico sistema complesso con capacità di sorveglianza e gestione 
+dell’allarme antiallagamento; tali elementi sono:
+–  dispositivo di controllo sensore ed attuazione elettrovalvola,
+–  sensore acqua,
+–  elettrovalvola bistabile.
+Il sensore, installato a pavimento, rileva la presenza di acqua (superiore al millimetro) 
+e trasmette l’allarme al dispositivo di controllo, che a sua volta trasmette l’impulso di 
+chiusura all’elettrovalvola. Sul frontale del dispositivo di controllo è normalmente pre-
+sente un led che rimane acceso per la durata della fuga dell’acqua (allarme); inoltre lo 
+stesso dispositivo di comando mette a disposizione un contatto in scambio che può essere 
+impiegato per il comando di un allarme locale (suoneria) e/o per un trasferimento del 
+segnale. Il contatto lavora solamente ed esclusivamente quando il sensore rileva la pre-
+senza dell’acqua e si porta in posizione di riposo al cessare di questa situazione.
+All’atto dell’installazione è opportuno considerare quanto segue:
+–  il dispositivo di comando da incasso non necessariamente deve essere ubicato in corri-
+spondenza del sensore;
+–  il sensore, installato a parete e verticalmente, deve trovarsi a filo del pavimento, 
+appoggiato con la parte inferiore direttamente sul piastrellato (esso può essere ruotato in 
+modo che non trasmetta falsi allarmi durante i lavaggi del pavimento);
+–  il collegamento tra sensore e attuatore deve essere realizzato esclusivamente tramite 
+un cavo schermato;
+–  l’elettrovalvola deve essere inserita sul percorso compiuto dalla tubazione che si 
+vuole interrompere;
+–  nel caso in cui venga utilizzata una sola elettrovalvola, questa deve essere inserita nel 
+punto più vicino al contatore, oppure subito prima della diramazione dell'impianto;
+–  nel caso di più elettrovalvole, si può progettare un controllo selettivo sulle singole 
+zone, eliminando il più possibile il disservizio;
+–  nel caso di più elettrovalvole installate, il numero degli attuatori deve essere uguale a 
+quello delle elettrovalvole;
+–  il numero di sensori è strettamente legato alla quantità di superficie da proteggere.
+Questa apparecchiatura denominata altrimenti acquastop correda l’ultima generazione 
+di elettrodomestici per la casa; infatti nelle lavastoviglie e nelle lavabiancheria viene inse-
+rito tale dispositivo che determina la chiusura della valvola di mandata dell’acqua, quando 
+il sensore rileva delle disfunzioni che potrebbero causare degli allagamenti.
+2.14  Aspiratori
+Nel corso delle normali attività quotidiane l’aria contenuta all’interno di appartamenti 
+e uffici si inquina in diversi modi: per l’attività stessa delle persone che vi abitano, per i 
+vapori della cucina, per il fumo, le esalazioni di materiali vari, concentrazioni di polveri 
+ecc. Da tutto questo scaturisce la necessità di ventilare, cioè controllare la qualità dell’aria
