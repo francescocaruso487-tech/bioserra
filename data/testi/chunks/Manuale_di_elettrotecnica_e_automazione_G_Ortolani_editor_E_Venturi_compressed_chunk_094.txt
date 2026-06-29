@@ -1,0 +1,1011 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 94/116 ===
+Chars: 45,000 | Offset: 4,108,487
+
+ . . . . . . . 
+ 71
+2.13.4    Rivelatore di fumo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+72
+2.13.5    Rivelatore di gas e ossido di carbonio . . . . . . . . . . . . . . . . . . . . . 
+72
+2.13.6    Rivelatore di fughe di acqua. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 74
+2.14    Aspiratori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+74
+2.15    Trasformatore monofase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 75
+2.16    Elettroserratura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 77
+3    APPARECCHIATURE DI COMANDO, SEGNALAZIONE, PROTEZIONE PER 
+AZIONAMENTI INDUSTRIALI. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 78
+3.1    Apparecchi di potenza  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+78
+3.1.1    Contattore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+79
+3.1.2     Relè statico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+82
+3.2    Apparecchi ausiliari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 84
+3.2.1    Relè . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+85
+3.2.2    Temporizzatori  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+86
+3.2.3    Contaimpulsi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+87
+3.2.4    Pulsanti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 87
+3.2.5    Lampade di segnalazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 89
+3.2.6    Interruttori di finecorsa . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+90
+3.2.7    Regolatori di livello . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 90
+3.2.8    Interruttori di prossimità . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 91
+3.2.9    Fotocellule . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ 92
+3.3    Apparecchi di protezione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+82
+
+[PAG 1875]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-3
+3.3.1    Interruttore magnetotermico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+93
+3.3.2    Interruttore differenziale  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+96
+3.3.3    Coordinamento delle protezioni: selettività differenziale . . . . . . . .
+101
+3.3.4    Relè termici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+103
+3.3.5    Protettore termico a contatti bimetallici miniaturizzati  . . . . . . . . .
+104
+3.3.6    Termorilevatori per protezione termica a termistori . . . . . . . . . . . .
+105
+3.3.7    Fusibili . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+105
+3.3.8    Relè magnetotermici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+107
+4    COMPONENTI PASSIVI IMPIEGATI NEI CIRCUITI ELETTRONICI . . . . .
+107
+4.1    Resistori  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+107
+4.1.1    Tecnologie di fabbricazione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 113
+4.1.2    Resistori a impasto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+114
+4.1.3    Resistori a strato . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 114
+4.1.4    Resistenze a filo (wide-wound resistors) . . . . . . . . . . . . . . . . . . . .
+ 115
+4.2    Potenziometri . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 115
+4.2.1    Tipi di potenziometri . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+119
+4.2.2    Trimmer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 120
+4.3    Reti resistive . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+120
+4.4    Termoresistenze . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 120
+4.5    Termistori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 122
+4.6    Resistori variabili  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+124
+4.6.1    Fotoresistenze (LDR) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+124
+4.6.2    Magnetoresistenze . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 125
+4.6.3    Varistori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 126
+4.7    Condensatori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+127
+4.7.1    Tecnologie costruttive. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 131
+4.7.2    Codificazione dei condensatori  . . . . . . . . . . . . . . . . . . . . . . . . . . .
+134
+4.7.3    Condensatori variabili (variable capacitors) . . . . . . . . . . . . . . . . . .
+136
+4.8    Induttori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 137
+4.8.1    Realizzazione tecnologica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+140
+4.8.2    Induttori con nucleo ferromagnetico  . . . . . . . . . . . . . . . . . . . . . . .
+142
+4.8.3    Schermatura degli induttori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+144
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+144
+1  MATERIALI CONDUTTORI, ISOLANTI E MAGNETICI
+1.1  Generalità 
+I materiali possono essere classificati in tre grandi categorie: metallici, isolanti (pla-
+stici, ceramici) e semiconduttori.
+I metalli, grazie alla loro particolare struttura atomica e molecolare, dispongono di
+
+[PAG 1876]
+XIX-4
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+molti elettroni liberi che gli conferiscono un’elevata conducibilità elettrica e termica e la 
+tipica lucentezza.
+Le materie plastiche possiedono una struttura atomica e molecolare che tende a man-
+tenere ogni elettrone legato al proprio atomo o, se il legame chimico è di tipo covalente, 
+con gli atomi adiacenti. Il materiale presenta caratteristiche elettriche e termiche isolanti.
+I materiali ceramici sono costituiti da elementi metallici e da elementi non metallici. 
+Nel reticolo cristallino i metalli tendono a mettere a disposizione i loro elettroni più 
+esterni mentre gli atomi non metallici tendono a catturare gli elettroni. Gli elettroni dispo-
+nibili alla conduzione sono pochi, per cui il materiale manifesta caratteristiche isolanti sia 
+termiche sia elettriche. Il tipo di legame chimico di tipo ionico che si attua fra gli ioni 
+metallici positivi e quelli negativi non metallici conferisce al materiale ceramico eccezio-
+nali doti di durezza, fragilità e bassa reattività chimica.
+I semiconduttori manifestano sia proprietà conduttrici sia isolanti. Gli elettroni di 
+valenza non si rendono disponibili alla conduzione con la stessa facilità di quelli presenti 
+nei metalli. Il legame covalente che vincola gli elettroni è meno forte di quello dei mate-
+riali isolanti e il legame ionico formato è meno completo di quello che caratterizza i mate-
+riali ceramici.
+1.1.1  Materiali metallici
+I metalli possono essere costituiti da un solo elemento chimico (metalli puri) o da più 
+elementi chimici (metalli impuri e leghe).
+I metalli puri allo stato solido si aggregano in strutture cristalline che si sviluppano in 
+svariate direzioni originando un reticolo policristallino.
+Fig. XIX.1.2   Reticolo 
+cristallino cubico.
+ 
+Fig. XIX.1.1  Reticolo cristallino tridimensionale.
+Un metallo allo stato solido è formato da molti cristalli disposti 
+secondo l’assetto spaziale ordinato di una cella elementare (che si 
+ripete secondo le tre dimensioni dello spazio) e dagli elettroni di 
+valenza che si muovono liberamente entro il reticolo ionico. 
+Ai vertici di ogni cella elementare si trovano, gli ioni positivi del 
+metallo, privi degli elettroni di valenza. Le caratteristiche di ogni 
+cella elementare possono essere completamente definite dai tre vet-
+tori a, b e c e dagli angoli ,  e  da essi formati (Fig. XIX.1.1).
+Tutti i cristalli che si trovano in natura sono descrivibili 
+mediante 14 strutture reticolari spaziali. I reticoli cristallini fonda-
+mentali sono:
+–  Reticolo cubico a facce centrate (fcc – face centered cubic). 
+Ogni atomo è legato con i 4 atomi adiacenti del piano cristallino sovrastante e con 4 atomi 
+di quello sottostante; in totale ciascun atomo è legato con 12 atomi (Fig. XIX.1.2a). Pos-
+siedono questa struttura il piombo, l’argento, l’oro, l’alluminio, il rame, il platino;
+a
+b
+c
+
+
+
+a)
+b)
+c)
+
+[PAG 1877]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-5
+–  Reticolo cubico a corpo centrato (bcc – body centered cubic). Ogni atomo si trova al 
+centro di un cubo con 8 atomi posti ciascuno su ogni vertice (Fig. XIX.1.2b). Possiedono 
+questa struttura il litio, il potassio, il sodio, il molibdeno, il cromo, il vanadio;
+–  Reticolo esagonale compatto (hcp – hexagonal close packed). Ogni atomo è legato 
+con 6 atomi adiacenti del piano cristallino su cui si trova, con 3 atomi del piano sovra-
+stante e con 3 di quello sottostante; in totale è legato con 12 atomi (Fig. XIX.1.2c). Possie-
+dono questa struttura il cadmio, lo zinco, il cobalto, il magnesio;
+–  Struttura policristallina. I metalli sono raramente costituiti da una struttura cristallina 
+formata da una cella unitaria che si ripete molte volte in un’unica direzione; di solito sono 
+formate da strutture cristalline (grani) di uguale cella unitaria ma orientate nello spazio in 
+varie direzioni.
+Un metallo in genere possiede una struttura policristallina nella quale i vari grani sono 
+strettamente uniti fra loro. Il punto di unione fra i vari grani costituisce una discontinuità 
+per la struttura (bordo del grano). In questo punto del cristallo la densità degli atomi è 
+minore per cui anche le forze di legame sono più deboli; gli agenti corrosivi riescono a 
+reagire ed ad alterare le caratteristiche fisico-chimiche del metallo agendo proprio in que-
+sti punti della struttura. Le proprietà plastiche del materiale (a temperatura ambiente) sono 
+migliori per i materiali policristallini a grani piccoli rispetto a quelli a grani grossi.
+I metalli impuri sono metalli in cui sono presenti in piccola percentuale, compresa fra 
+lo 0,01% e l’1%, atomi differenti dall’elemento chimico del metallo. Gli atomi estranei si 
+sostituiscono agli atomi originali nel reticolo.
+Le leghe (dette anche soluzioni solide) si formano aggiungendo intenzionalmente ad 
+un metallo puro elementi chimici differenti. La lega è detta monofase se gli elementi 
+dispersi nel reticolo cristallino dell’elemento principale generano un unico tipo di reti-
+colo; la lega è detta invece polifase se è possibile determinare fra i vari elementi superfici 
+di separazione.
+Nel reticolo di un metallo puro sono presenti atomi della stessa specie, mentre nel reti-
+colo di una lega sono presenti atomi di specie diverse; per questo motivo i reticoli delle 
+leghe differiscono da quelli di un metallo puro. Si possono avere due tipi di leghe e quindi 
+due tipi di reticoli: di sostituzione e di inclusione.
+Nelle leghe di sostituzione alcuni nuclei del reticolo del metallo vengono sostituiti da 
+nuclei di un altro tipo secondo un certo rapporto (Fig. XIX.1.3). Affinché si possa formare 
+una lega di questo tipo è necessario che i raggi atomici la struttura atomica dei due o più 
+atomi che formano la lega siano pressoché identici. 
+Nelle leghe di inclusione fra i nuclei di un cristallo puro si includono i nuclei di atomi 
+di una specie diversa. Il nucleo dell’atomo da includere deve avere dimensioni ioniche 
+Fig. XIX.1.3  Lega metallica ottenuta per 
+sostituzione.
+Fig. XIX.1.4  Lega metallica ottenuta 
+per inclusione.
+Ione A
+Ione B
+Ione A
+Ione B
+
+[PAG 1878]
+XIX-6
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+molto minori rispetto a quelle dei nuclei del cristallo. In un cristallo, comunque, non si 
+possono includere un numero di nuclei superiore al 10% di quello che forma il cristallo 
+(Fig. XIX.1.4).
+Nel legame metallico, gli elettroni di legame sono delocalizzati in tutto il volume del 
+cristallo quindi non danno quindi luogo a legami direzionali e ciò fa sì che i metalli pos-
+sano subire deformazioni senza sensibili alterazioni della loro struttura cristallina; i piani 
+del cristallo possono perciò scorrere uno rispetto all’altro pur restando costantemente 
+legati dal gas di elettroni conferendo quindi ai metalli le loro caratteristiche di duttilità e 
+malleabilità.
+La lucentezza dei metalli è conseguenza del fatto che il metalli possiedono molti elettroni 
+disposti in orbitali che hanno livelli di energia di poco differenti, per cui essi sono in grado 
+di assorbire ed emettere i fotoni corrispondenti a tutte le frequenze dello spettro visibile. 
+1.1.2  Materiali plastici
+Con il nome di materie plastiche si designano numerose sostanza organiche, ottenute 
+artificialmente, la cui caratteristica comune è quella di essere costituite da molecole di 
+grandi dimensioni (macromolecole o polimeri) formate da migliaia di atomi legati da 
+legami covalenti e che presentano la proprietà di poter essere foggiate in qualsiasi forma 
+mediante riscaldamento.
+Le molecole dei polimeri si sviluppano praticamente in una sola direzione; sono carat-
+terizzati da deboli legami molecolari e da un’eccezionale lunghezza delle molecole; la 
+loro cristallizzazione non è perfetta.
+1.1.3  Materiali ceramici
+I materiali ceramici sono composti costituiti da elementi metallici e non metallici, 
+caratterizzati da legami di tipo ionico o covalente. I composti ceramici più semplici pre-
+sentano una struttura cristallina.
+Alcuni materiali ceramici manifestano ottime qualità di isolamento elettrico in quanto 
+gli elettroni esterni degli atomi del metallo sono trasferiti all’ossigeno formando ioni posi-
+tivi e negativi, eliminando gli elettroni liberi e quindi la possibilità del materiale di contri-
+buire alla conduzione elettrica.
+Nelle applicazioni microelettroniche rivestono una particolare importanza per le 
+ottime caratteristiche di isolamento i materiali ceramici a base di silice o di silicati. Nella 
+silice pura (SiO2) gli atomi di silicio sono legati a quattro atomi di ossigeno formando una 
+struttura tetraedrica che si sviluppa in tre direzioni.
+1.2   Proprietà fisico-chimiche dei materiali
+La capacità di valutare le caratteristiche fisico-chimiche dei materiali è di fondamen-
+tale importanza per lo studio delle tecnologie di fabbricazione dei componenti e degli 
+apparati elettronici.
+Le caratteristiche fisiche statiche e dinamiche di un materiale ne definiscono, insieme 
+a quelle chimiche, le caratteristiche di lavorabilità e quindi di impiego.
+Il tecnico deve conoscere le principali caratteristiche dei materiali che vengono impie-
+gati in quanto deve saper valutare – in funzione dell’ambiente in cui un’apparecchiatura 
+deve lavorare – quali siano le proprietà tecniche che gli stessi devono possedere per 
+garantire un funzionamento di alta affidabilità delle apparecchiature che le impiegano.
+I materiali utilizzati nella produzione dei componenti elettrici ed elettronici sono 
+molto vari e soggetti ad un costante aggiornamento. La nascita di un nuovo componente, 
+capace di modificare sostanzialmente la progettazione e le realizzazioni elettriche ed elet-
+troniche è determinata dalla realizzazione di un nuovo materiale con nuove proprietà 
+oppure dall’utilizzo di un nuovo materiale con nuove proprietà oppure dall’utilizzo di un 
+materiale già noto di cui si scoprono nuove proprietà.
+
+[PAG 1879]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-7
+Per esempio, la scoperta della possibilità di polarizzare permanentemente le cerami-
+che usate per produrre i condensatori ha determinato lo sviluppo di componenti che sfrut-
+tano tale proprietà (ceramiche piezoelettriche).
+I materiali possono essere classificati in funzione delle caratteristiche fisiche, mecca-
+niche, elettriche, termiche e magnetiche che manifestano.
+Dal punto di vista tecnologico le proprietà di un materiale vengono analizzate e quan-
+tificate attraverso prove e parametri macroscopici senza agire sulla struttura atomica e 
+molecolare del materiale.
+I parametri caratteristici delle varie proprietà di un materiale vengono rilevate mediante 
+prove tecniche normalizzate da vari enti in funzione del parametro che si intende valutare. 
+Le suddette norme prescrivono le dimensioni geometriche del provino campione del mate-
+riale da analizzare e le modalità tecniche da utilizzare per la misura di ciascun parametro.
+1.2.1  Proprietà fisiche
+La massa volumetrica m di un corpo è data dal rapporto fra la sua massa M e il suo 
+volume V:
+(XIX.1.1)
+ed è misurata in kg/dm3, g/cm3, g/dm3.
+A parità di volume, la massa volumetrica aumenta con la massa del corpo e a parità di 
+massa diminuisce all’aumentare del volume; è quindi un parametro che viene fortemente 
+influenzato dalla struttura interna del corpo. 
+Il valore della massa volumetrica di un corpo dipende da vari fattori quali:
+–  lo stato fisico: i metalli occupano allo stato liquido un volume maggiore rispetto a 
+quello occupato allo stato solido;
+–  la temperatura: all’aumentare della temperatura i metalli, a parità di massa, aumen-
+tano di volume;
+–  la pressione: all’aumentare della pressione il volume di un gas diminuisce;
+–  il tipo di processo tecnologico a cui il materiale viene sottoposto.
+La valutazione della massa volumetrica è importante in quanto consente a parità di 
+volume di scegliere differenti materiali quello che ha una minore massa e quindi un peso 
+ridotto. Valutando i dati elencati nella Tab. XIX.1.1 si evidenzia che l’alluminio (2,7 kg/
+dm3) è un materiale più leggero del rame (8,89 kg/dm3).
+La densità  è data dal rapporto fra la massa volumetrica di un corpo e quella di un 
+altro utilizzato come riferimento (di solito acqua distillata a 4 °C a 1000 kg/m3):
+(XIX.1.2)
+La densità è adimensionale.
+Il peso specifico (volumico) assoluto  di un corpo omogeneo è dato dal rapporto fra 
+peso P e volume V:
+(XIX.1.3)
+si misura in Newton al m3 (N/m3) o anche in N/dm3.
+(XIX.1.4)
+ove g è l’accelerazione di gravità.
+Esiste una stretta relazione fra peso volumico e massa volumica come è evidenziato 
+dalla relazione XIX.1.4. 
+m
+M
+V----
+=
+
+m
+mo
+------
+=
+
+P
+V---
+=
+
+P
+V---
+g M
+
+V
+-----------
+g m
+
+=
+=
+=
+
+[PAG 1880]
+XIX-8
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Oltre al peso specifico assoluto viene definito anche il peso specifico relativo dato dal 
+rapporto tra il peso del corpo e il peso di riferimento di uno stesso volume di acqua distil-
+lata alla temperatura di 4 °C.
+(XIX.1.5)
+Il peso specifico relativo è adimensionale e come si vede dalla  XIX.1.5 è pari alla densità.
+1.2.2  Proprietà meccaniche
+Le proprietà meccaniche di un materiale vengono accertate sottoponendo il provino a 
+sollecitazioni di tipo meccanico che, in funzione delle modalità di applicazione, permet-
+tano di valutare la deformabilità, fragilità e tenacità del materiale.
+Le prove sperimentali sono rigidamente codificate da norme internazionali (UNI) in 
+modo da garantirne la ripetitività e l’attendibilità. Un provino sottoposto a una sollecita-
+zione può deformarsi in modo elastico o in modo plastico.
+Una deformazione è di tipo elastico quando al cessare dell’azione delle forze esterne 
+che l’hanno provocata il provino riprende la forma e le dimensioni precedenti; è di tipo 
+plastico quando il provino, cessata l’azione deformante delle forze esterne, non ritorna 
+nelle condizioni iniziali. 
+L’attitudine elastica di un materiale viene valutata sottoponendo il provino a fles-
+sione, trazione, compressione, taglio, torsione e scorrimento (Fig. XIX.1.5).
+Fig. XIX.1.5  Forze di: a) trazione; b) compressione; c) flessione; d) torsione; e) taglio o 
+scorrimento.
+Le caratteristiche elastiche del materiale, oltre che dall’intensità della forza applicata, 
+dipendono anche dal tempo di applicazione della stessa.
+Le prove possono essere statiche e dinamiche; nel primo caso le sollecitazioni sono 
+costanti nel tempo o subiscono variazioni minime nell’intervallo di tempo in cui vengono 
+applicate: questo tipo di prova permette di valutare i parametri che definiscono il compor-
+tamento statico del materiale.
+
+g M
+
+g Mr
+
+-------------
+M
+Mr
+------
+m V
+
+mr V
+
+-------------
+m
+mr
+-----
+=
+=
+=
+=
+M
+G
+T
+e)
+d)
+c)
+b)
+a)
+G
+T
+G
+G
+G
+G
+G
+I
+F
+N
+N
+N
+N
+N
+N
+N
+N
+M
+M
+T
+S
+A
+
+[PAG 1881]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-9
+Nel caso delle prove dinamiche il provino viene sottoposto a sollecitazioni che 
+variano bruscamente nel tempo (prove impulsive) o ciclicamente nel tempo. Queste prove 
+rendono possibile la valutazione dei parametri che descrivono il comportamento dinamico 
+del materiale.
+Le caratteristiche di tenacità o di fragilità vengono accertate sottoponendo il provino 
+all’azione di una forza tale che ne provochi la rottura.
+Le caratteristiche meccaniche vengono stimate misurando i seguenti parametri, tutti 
+quantitativamente espressi da numeri:
+–  modulo di elasticità E: esprime la deformazione elastica di un provino soggetto a tra-
+zione o compressione;
+–  modulo di Poisson : esprime la variazione di sezione di un provino soggetto a fles-
+sione;
+–  modulo di elasticità tangenziale G: esprime il rapporto fra il carico specifico tangen-
+ziale e la deformazione provocata;
+–  coefficiente di compressibilità : esprime la contrazione del volume di un provino per 
+effetto dell’applicazione di una pressione.
+Le caratteristiche statiche di allungamento vengono valutate sottoponendo il provino 
+ad una trazione. Il diagramma di cui alla Fig. XIX.1.6 mostra l’andamento dell’allunga-
+mento (in funzione del carico applicato) di un provino costituito da un metallo duro 
+(acciaio); mentre il diagramma della Fig. XIX.1.7 è riferito ad un metallo molle.
+Il primo tratto della caratteristica (Fig. XIX.1.6) è rettilineo e quindi il provino si allunga 
+in modo proporzionale alla forza applicata (condizione di elasticità). Aumentando lo sforzo 
+applicato ad un certo punto il diagramma mostra un comportamento non lineare, ma il provino 
+presenta ancora caratteristiche elastiche. 
+Oltre un valore critico s il materiale non ha più un comportamento elastico ma le 
+deformazioni diventano permanenti.
+A volte il materiale manifesta a questo punto, il fenomeno dello snervamento, cioè 
+perde resistenza alle sollecitazioni esterne per cui si ha un allungamento del materiale 
+anche se viene diminuita la sollecitazione esterna. 
+Aumentando ulteriormente la sollecitazione il materiale continua a deformarsi fino 
+alla rottura del provino. Lo sforzo che determina la rottura viene definito come carico uni-
+tario di rottura e rappresenta il massimo sforzo applicabile.
+Convenzionalmente viene assunto come sforzo limite fra comportamento elastico e 
+non elastico del materiale lo sforzo che provoca un allungamento percentuale del provino 
+Fig. XIX.1.6  Curve caratteristiche carico-
+allungamento di un materiale duro.
+Fig. XIX.1.7  Curve caratteristiche carico-
+allungamento di un materiale molle.
+
+t
+s
+p
+e
+
+
+
+
+
+e(0,002)
+s(0,2)
+
+[PAG 1882]
+XIX-10
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+pari allo 0,002% (per i materiali che presentano il fenomeno dello snervamento) e dello 
+0,2% per i materiali che ne sono privi.
+La durezza del materiale è la capacità di resistere alla penetrazione di una punta o, più 
+semplicemente, di non farsi scalfire da altri corpi. Viene valutata mediante un numero di 
+durezza misurato secondo tre scale differenti: Brinnell (HB), Vickers (HV) e Rockwell
+(HRB, HRC).
+Tutte le prove si basano su un penetratore di diamante di dimensioni geometriche note 
+che viene spinto (con una forza nota) con un’apposita apparecchiatura sulla superficie del 
+provino per un tempo prefissato. Si misura la deformazione provocata e, ricorrendo a for-
+mule che legano tutti i parametri che caratterizzano la prova, viene espresso un numero, 
+che fornisce un indice di durezza.
+Le caratteristiche dinamiche dei materiali vengono valutate misurando la tenacità e la 
+fragilità dei materiali.
+La tenacità di un materiale viene valutata misurandone la resilienza. Essa valuta la 
+capacità del materiale di sopportare sforzi applicati bruscamente senza rompersi e senza 
+che si propaghino fessure al suo interno (il suo contrario è la fragilità). 
+Viene misurata valutando l’energia per unità di volume che deve essere fornita al pro-
+vino per provocare la rottura del materiale. Un materiale tenace, prima di rompersi, subi-
+sce una deformazione plastica, mentre uno fragile si rompe all’improvviso senza mostrare 
+apprezzabili deformazioni plastiche.
+I metalli sottoposti a sollecitazioni dinamiche, sono soggetti a rotture per fatica anche 
+se le forze esterne non hanno raggiunto valori tali da superare i limiti di elasticità. 
+La resilienza riveste particolare importanza in tutte quelle applicazioni elettroniche 
+nelle quali l’apparato nel suo insieme è sottoposto a vibrazioni o urti, per esempio nelle 
+applicazioni militari o avioniche.
+Il fenomeno della rottura dipende dai difetti inevitabilmente presenti nel materiale (sof-
+fiature, cavità, impurezze) che – in particolari condizioni operative – possono innescare il 
+processo della rottura, lungo le linee di minima resistenza, riducendo la sezione del mate-
+riale e provocandone la frattura senza che esternamente sia rilevabile alcuna anomalia.
+Le prove dinamiche che tendono a valutare queste caratteristiche del materiale ven-
+gono dette prove di fatica e sono finalizzate a determinare il valore massimo del carico 
+che può essere applicato indefinitamente senza provocare rotture del materiale.
+Le prove di fatica vengono effettuate sottoponendo il provino alternativamente a tra-
+zioni e a compressioni di uguale o differente intensità oppure a sole trazioni o compres-
+sioni applicate impulsivamente per brevi periodi di tempo.
+Le caratteristiche plastiche di un provino vengono stabilite utilizzando i metodi impie-
+gati per valutare la durezza di un materiale. Il provino, seguendo metodi di misura norma-
+lizzati, viene dapprima sottoposto a forze di penetrazione, stimando in seguito le 
+deformazioni causate dall’utensile sulla superficie.
+1.2.3  Proprietà tecnologiche
+Le proprietà tecnologiche si riferiscono alla lavorabilità di un materiale, cioè alla sua 
+capacità di adattarsi  alle diverse lavorazioni.
+Tali proprietà sono espresse dalla fusibilità, la malleabilità, la duttilità, la temprabi-
+lità, la saldabilità e la piegabilità.
+La fusibilità è la capacità di passare dallo stato solido a quello liquido quando si rag-
+giunge una certa temperatura. Sono fusibili il vetro, molte materie plastiche e tutti i 
+metalli. Nella pratica industriale si definiscono “fusibili” solo i metalli che diventano 
+molto fluidi e che in fonderia danno “getti” uniformi e privi di difetti.
+La malleabilità è l’attitudine del materiale ad essere modellato a caldo o a freddo,
+
+[PAG 1883]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-11
+sotto l’azione di urti o pressioni. Un materiale malleabile si presta a essere foggiato 
+(modellato) nelle forme più diverse mediante stampi: si modellano così il vetro allo stato 
+pastoso, molte materie plastiche riscaldate, il ferro arroventato sulla forgia.
+La duttilità è la sua attitudine ad essere ridotto in lamine e fili sottili. Sono molto dut-
+tili le materie plastiche e alcuni metalli come l’oro, il rame e l’alluminio.
+La temprabilità è la proprietà di alcuni materiali di diventare più duri se vengono raf-
+freddati bruscamente dopo essere stati riscaldati ad una temperatura appropriata.
+La saldabilità è l’attitudine di un materiale a unirsi ad un altro materiale uguale o 
+diverso. L’unione delle due parti può avvenire per fusione delle due parti o mediante 
+l’apporto di un altro materiale fuso.
+La piegabilità è l’attitudine di un materiale a resistere  a sollecitazioni di rottura senza 
+rompersi o alterare le proprie caratteristiche meccaniche.
+1.2.4  Caratteristiche termiche
+Le caratteristiche termiche dei materiali vengono descritte dai seguenti parametri: 
+calore specifico,  dilatazione termica, conducibilità termica, calore di fusione, ritiro di 
+fusione e punto di ebollizione.
+Il calore specifico rappresenta la quantità di calore (dQ) necessaria per elevare la tem-
+peratura dell’unità di massa di un corpo. L’unità di misura della quantità di calore è la 
+grande caloria (kcal). Il rapporto dQ/ dT viene detto capacità termica.
+Tutti i corpi subiscono variazioni delle loro dimensioni in funzione delle variazioni di 
+temperatura. I corpi allo stato solido subiscono una dilatazione in volume (cubica) o pre-
+valentemente in una sola direzione (lineare).
+Il coefficiente di dilatazione lineare esprime la variazione dell’unità di lunghezza ini-
+ziale, misurata a 0 °C, per un aumento di 1 °C della temperatura.
+Il coefficiente di dilatazione lineare  è dato da:
+(XIX.1.6)
+ove: l1 è la lunghezza del provino alla temperatura T1; l0 è la lunghezza del provino alla 
+temperatura T0.
+Il coefficiente di dilatazione cubico di norma viene approssimato ad un valore triplo di 
+quello lineare della sostanza. I manufatti tecnologici sono quasi sempre ottenuti unendo 
+materiali differenti; i differenti coefficienti di dilatazione creano tensioni e sforzi che pos-
+sono rendere il materiale fragile o alterarne le caratteristiche meccaniche.
+Il coefficiente di conducibilità termica interna i è un indice dell’attitudine del mate-
+riale a trasmettere calore per conduzione; rappresenta la quantità di calore che attraversa 
+nell’unità di tempo l’unità di superficie di una parete di spessore unitario fra le cui facce 
+si abbia la differenza di temperatura di 1 °C; si misura in J/(s · m ·°C). 
+Questo parametro è importante nella scelta dei contenitori dei componenti elettronici 
+e dei dissipatori di calore.
+Il calore di fusione è la quantità di calore assorbita, alla temperatura di fusione, 
+dall’unità di massa di una sostanza che passa dallo stato solido a quello liquido.
+Per i metalli puri la fusione avviene ad una temperatura ben determinata, che si man-
+tiene costante fino a che tutto il materiale non è fuso. I non metalli (il vetro, le plastiche) 
+passano dallo stato solido allo stato liquido in un intervallo di temperatura nel quale ram-
+molliscono sempre di più fino alla fusione.
+Nella Tab. XIX.1.1 sono elencati i valori caratteristici dei principali parametri tecnolo-
+gici di alcune sostanze di uso comune nelle applicazioni elettromeccaniche.
+In qualche processo tecnologico assume importanza anche il ritiro di fusione che è un 
+coefficiente, espresso in percentuale, che valuta la contrazione di volume che si verifica 
+nei materiali metallici nel passaggio dallo stato liquido a quello solido.
+l1
+l0
+1
+
++
+T1 – T0
+
+
+
+
+
+
+=
+
+[PAG 1884]
+XIX-12
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Tab. XIX.1.1  Valori caratteristici dei principali parametri tecnologici di alcune sostanze 
+di uso comune nelle applicazioni elettriche ed elettroniche
+Materiale
+Massa  volumetrica
+[kg/dm3]
+Coefficiente di  dilatazione
+  lineare medio
+[m/m·°C]
+Modulo di  elasticità
+longitudinale
+[kg/mm2]
+Calore specifico
+[kcal/kgm·°C]
+Coefficiente di  
+conducibilità  termica
+[W/m·°C]
+Calore di  fusione
+[kcal/kgm]
+Ritiro di  fusione
+%
+Acciaio
+1,2 1,7
+0,000012
+21000
+0,120
+  50
+50
+1,7
+Acqua
+         0,54
+Alluminio
+2,70
+0,000024
+  7000
+0,222
+178
+90
+1,7
+Argento
+10,50
+0,000019
+0,057
+360
+25
+Bronzo fosf.
+8,70
+0,000018
+   9000
+0,090
+  55
+1,5
+Carta
+0,7 1,15
+0,320
+Costantana
+8,88
+0,000015
+0,098
+Ferro
+7,87
+0,000012
+20000
+0,118
+  75
+Germanio
+5,32
+Nichel
+8,66
+0,000013
+0,110
+  52
+Oro 
+19,3
+0,000015
+270
+Ottone
+8,5
+  8000
+  80
+33
+Piombo
+11,35
+0,000028
+  30
+     6,3
+1,1
+Platino
+21,40
+0,000009
+  61
+Rame
+8,70
+0,000017
+12000
+0,095
+330
+42
+Silicio
+2,35
+Stagno
+7,30
+0,000023
+0,057
+160
+14
+0,7
+Vetro
+2,4 2,8
+0,000009
+0,4 0,8
+Zinco
+7,00
+0,000029
+0,094
+  95
+27
+1,6
+
+[PAG 1885]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-13
+L’ebollizione  è la vaporizzazione di un liquido che si manifesta con la violenta for-
+mazione di bolle gassose che si producono  all'interno della massa del liquido e che sal-
+gono in superficie. Per una data sostanza il fenomeno si manifesta a una certa temperatura 
+che cresce al crescere della pressione. A pressione costante l'ebollizione per uno stesso 
+liquido avviene sempre alla stessa temperatura, detta punto di ebollizione.
+Un liquido entra in ebollizione quando la tensione del suo vapore è pari alla pressione 
+cui il liquido stesso è soggetto.
+1.2.5  Proprietà chimiche
+Il modo con cui un materiale reagisce all’attacco chimico operato dall’ambiente circo-
+stante in cui si trova e dalle sostanze con cui viene a contatto dipende essenzialmente 
+dalle sue proprietà chimiche.
+I materiali utilizzati in campo elettrico ed elettronico devono operare in ambienti 
+molto eterogenei in cui la temperatura e la pressione variano entro un campo molto vasto 
+di valori; sono esposti all’azione continua degli agenti atmosferici (dall’atmosfera ossi-
+dante all’acqua marina) e biologici e degli acidi inorganici e organici, nonché a tassi di 
+umidità variabili (da secco a umido). È estremamente importante che un materiale non 
+modifichi la propria composizione chimica nelle varie condizioni di lavoro.
+Uno dei fenomeni chimici più importanti, sia per gli aspetti tecnici che per quelli eco-
+nomici, è quello della corrosione. Il fenomeno della corrosione si manifesta nei materiali 
+metallici sotto forma di un progressivo deterioramento, non desiderato, di un manufatto, e 
+comporta quasi sempre la distruzione del materiale.
+I materiali vengono protetti dalla corrosione effettuando opportuni trattamenti termici 
+o rivestendo le superfici metalliche con apposite vernici di protezione.
+Un altro fenomeno chimico importante è l’ossidazione.
+L’ossigeno è un elemento chimicamente molto attivo, presente nell’atmosfera che 
+tende a reagire con le superfici metalliche originando il fenomeno chimico dell’ossida-
+zione. I processi tecnologici utilizzati per la produzione dei dispositivi a semiconduttore 
+sfruttano questa proprietà dell’ossigeno per la creazione di strati di ossido di silicio neces-
+sari per il processo di fabbricazione.
+Se invece l’azione ossidante dell’ossigeno è indesiderata è possibile proteggere le super-
+fici metalliche utilizzando materiali speciali (acciaio inossidabile, al cromo, al nichel) o rico-
+prendo le parti esposte all’atmosfera con vernici o altri mezzi protettivi (plastificazione). 
+1.2.6  Proprietà elettriche
+Resistività
+L’attitudine di un materiale a trasportare la corrente elettrica viene valutata misuran-
+done la resistività, una proprietà dei materiali indipendente dalla forma e dalle dimensioni 
+del campione su cui si effettua la misura.
+La resistività viene in genere espressa riferendosi al volume, allo spessore o alla super-
+ficie del materiale. L’unità di misura è l’ohm per metro (·m).
+Per esempio, per un conduttore a forma lamellare si preferisce valutare il valore della 
+resistività riferita allo spessore.
+La corrente in un conduttore che opera in alta frequenza si addensa sulla superficie 
+(effetto pelle), riducendone l’estensione e determinando un aumento della resistività del 
+conduttore stesso. In questo caso è significativa la resistività superficiale del materiale, 
+misurata in ohm ().
+La resistività  varia al variare della temperatura; nei metalli la resistività cresce al 
+crescere della temperatura seguendo una legge approssimativamente lineare.
+(XIX.1.7)
+t
+0
+1
+To
++
+T
+T0
+–
+
+
+
+
+
+
+=
+
+[PAG 1886]
+XIX-14
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+Il coefficiente di temperatura (°C-1) To, misurato alla temperatura T0, è positivo e la 
+resistività cresce al crescere della temperatura.
+L’aumento della resistività con la temperatura è sostanzialmente dovuto ad un incre-
+mento dell’agitazione termica del reticolo, che fa aumentare la probabilità che un elettrone 
+di conduzione venga deviato dal suo cammino e non contribuisca alla corrente elettrica.
+Nei semiconduttori, come il silicio o il germanio, il coefficiente di temperatura  è nega-
+tivo. La resistenza cresce al diminuire della temperatura e diventa enormemente grande alle 
+basse temperature; vicino allo zero assoluto il semiconduttore si comporta come un isolante.
+Nel caso dei cristalli di semiconduttore un aumento di temperatura agisce sulla condu-
+cibilità con due meccanismi opposti: essa tende a diminuire a causa dell’aumento dell’agi-
+tazione termica degli atomi del cristallo, ma contemporaneamente alcuni elettroni 
+acquistano sufficiente energia per rompere il legame covalente e rendersi disponibili alla 
+conduzione (si ha cioè un aumento del numero dei portatori di carica e quindi un aumento 
+della conducibilità).
+Nei semiconduttori questo effetto è prevalente rispetto a quello dell’agitazione ter-
+mica per cui l’effetto globale di un aumento della temperatura in un cristallo di semicon-
+duttore è l’aumento della conducibilità.
+Tab. XIX.1.2  Caratteristiche elettriche di alcuni materiali conduttori
+La variabilità della resistività con la temperatura può essere un fattore negativo (la 
+deriva termica del valore resistivo dei resistori provoca una variazione dei parametri del 
+circuito in cui è inserito) o positivo (se la relazione tra la variazione di temperatura e 
+quella di un parametro elettrico, resistenza o tensione, è nota può essere usata per misu-
+rare la temperatura; a tale scopo, per esempio, sono utilizzati NTC e le termoresistenze).
+La resistività dipende  dalla pressione e può, in funzione del tipo di materiale, crescere 
+o diminuire con questa. 
+Le variazioni sono apprezzabili solo per pressioni che superino le 100 atm.
+Le variazioni di resistività sono dovute alla diminuzione dell'ampiezza delle vibra-
+zioni degli ioni del reticolo cristallino, oppure alla compressione del materiale che fa 
+aumentare il numero degli elettroni di conduzione per unità di volume.
+Nei materiali isolanti è importante valutare sia la resistività di volume sia quella 
+superficiale in quanto le caratteristiche isolanti, cioè la loro capacità  di non condurre cor-
+rente elettrica, sono determinate essenzialmente da questa grandezza.
+Nella Tab. XIX.1.2 sono mostrati i valori tipici di due caratteristiche elettriche di 
+alcuni materiali comunemente utilizzati nelle applicazioni elettroniche ed elettriche.
+Materiale
+Resistività
+[·mm²/m]
+Coefficiente di
+temperatura a 20 °C
+Argento (99,9%)
+0,164
+0,0038
+Rame elettrolitico
+0,176
+0,0039
+Alluminio crudo
+0,078
+0,0040
+Nichel
+0,072
+0,0060
+Nichel-Cromo
+0,9 1,03
+ 0,00011
+Ferro (99%)
+0,1 0,15
+0,0045
+Platino
+0,100
+0,0036
+Costantana
+0,50 0,51
+    0,000008
+
+[PAG 1887]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-15
+Caratteristiche di conduzione dei dielettrici
+I dielettrici sono sostanze utilizzate per impedire la conduzione elettrica fra superfici 
+conduttive e devono perciò devono presentare una elevata resistività alle normali tempera-
+ture d’esercizio. All’aumentare della temperatura la resistività diminuisce e, se il campo elet-
+trico è sufficientemente intenso, diventa quasi nulla generando il fenomeno della scarica.
+Tab. XIX.1.3  Caratteristiche elettriche di alcuni  materiali isolanti
+Il parametro che permette di valutare la capacità che il materiale ha di sopportare sol-
+lecitazione elettriche senza manifestare il fenomeno della scarica è la rigidità dielettrica.
+Il fenomeno della scarica può verificarsi attraverso la massa del materiale e anche 
+superficialmente, per cui vengono valutate sia la rigidità elettrica di massa sia quella di 
+superficie. 
+La rigidità dielettrica di massa è data dal rapporto fra la tensione che genera la scarica 
+nel dielettrico e lo spessore del dielettrico ed è misurata in Volt al metro. Il valore attribu-
+ito a questo parametro è influenzato dalla temperatura, dall’umidità, dallo spessore del 
+provino e dal tempo di applicazione della tensione di prova.
+La rigidità dielettrica di superficie è data dal rapporto fra la tensione che provoca la 
+scarica e la distanza fra gli elettrodi utilizzati per applicare la tensione. Si misura in Volt 
+al metro ed è influenzata dallo stato della superficie.
+Nella Tab. XIX.1.3 sono elencati i valori della rigidità e della costante dielettrica dei 
+Denominazione
+Rigidità dielettrica
+[kV/mm]
+Costante dielettrica 
+relativa
+Temperatura  massima di 
+esercizio [°C]
+Acqua distillata
+  5,0  10,0
+80,0
+Aria
+  2,1  3,0
+1,0
+Amianto
+  2,5  3,5
+200
+Bachelite
+10,0  20,0
+5,5 9,0
+120
+Carta
+  6,0  11,0
+1,6 4,5
+80
+Carta bachelizzata
+  5,0  15,0
+5,0
+95
+Carta oleata
+40,0  50,0
+2,5  4,0
+85
+Fibra di vetro
+46,0  50,0
+4,5
+150
+Gomma lacca
+10,0 30,0
+1,0
+90
+Gomma vulcanizzata
+  8,0  20,0
+2,5  3,0
+60
+Legno impregnato
+  8,0  30,0
+3,0  3,5
+90
+Mica
+60,0  160,0
+5,2  5,5
+800
+Olio minerale
+10,0  16,0
+2,0  2,5
+100
+Pirex
+30,0  150,0
+5,0
+400
+Porcellana
+20,0  42,0
+4,6  6,0
+220
+Seta naturale
+1,6
+30
+Steatite
+14,0 16,0
+5,7  6,0
+600
+Tela bachelizzata
+10,0  20,0
+4,5  6,0
+95
+Tela Sterling
+25,0  30,0
+3,5  5,6
+95
+
+[PAG 1888]
+XIX-16
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+materiali isolanti più comuni.
+I dielettrici commerciali vengono realizzati amalgamando sostanze diverse. Il pro-
+cesso di lavorazione, anche se attentamente controllato, non può impedire che nella loro 
+massa si creino discontinuità o vi si mescolino impurezze (per esempio, ossigeno).
+Piezoelettricità
+La piezoelettricità si manifesta nei cristalli che presentano una struttura asimmetrica. 
+La dislocazione degli ioni è tale che in ogni cella unitaria è localizzato un dipolo elettrico.
+Un’azione meccanica sul cristallo che lo comprima lungo un preciso asse di simmetria 
+provoca una riduzione del momento di dipolo per cui la distribuzione delle cariche esterne 
+sulle superfici si modifica e, di conseguenza, si rivela una variazione della differenza di 
+potenziale (effetto piezoelettrico diretto).
+L’effetto piezoelettrico inverso si ottiene, invece applicando una differenza di poten-
+ziale tra due superfici del cristallo lungo un preciso asse di simmetria. 
+Questa differenza di potenziale provoca un accumulo di carica superficiale che agisce 
+sui dipoli elettrici delle celle unitarie, allontanandoli, e provocando così uno stiramento 
+del materiale.
+Invertendo la differenza di potenziale applicata sul cristallo si ottiene una compres-
+sione; applicando una tensione alternata il cristallo si mette in vibrazione.
+Il fenomeno della piezoelettricità è sfruttato per la realizzazione di risonatori a quarzo, 
+capsule a ultrasuoni, microfoni; compare invece come fenomeno indesiderato nei conden-
+satori ceramici.
+1.2.7  Proprietà magnetiche
+Tutte le sostanze qualunque sia il loro stato di aggregazione, possiedono proprietà 
+magnetiche che possono essere raggruppate in tre tipi principali di comportamento 
+magnetico: ferromagnetico, paramagnetico e diamagnetico.
+Una sostanza è ferromagnetica quando sottoposta in un campo magnetico (anche 
+debole) acquista un momento magnetico risultante che permane anche quando il campo 
+magnetico esterno viene rimosso. Tipici materiali magnetici sono il ferro, il nichel, il 
+cobalto, la magnetite naturale (Fe2O3) e molte leghe metalliche. Il momento magnetico 
+delle sostanze ferromagnetiche aumenta all’aumentare dell’intensità del campo magnetico 
+fino ad un valore massimo, detto di saturazione. I magneti permanenti manifestano la pro-
+prietà di attirare oggetti di ferro non magnetizzati; le zone del magnete ove queste si rive-
+lano più intense sono dette poli. Una sostanza ferromagnetica perde le sue proprietà 
+ferromagnetiche quando la temperatura supera un valore detto temperatura di Curie.
+Le sostanze paramagnetiche non hanno un momento magnetico risultante in assenza 
+di un campo magnetico esterno. 
+Applicando invece un campo magnetico esterno la sostanza viene attratta nella zona del 
+campo magnetico di maggiore intensità con una forza che è proporzionale all’intensità e al 
+gradiente del campo. Il diamagnetismo è una proprietà indotta in tutte le sostanze 
+dall’azione di un campo magnetico esterno, e quindi non esiste in assenza di esso. Si mani-
+festa come una forza che agisce sulla sostanza in direzione opposta a quella del campo 
+magnetico esterno e con un’intensità proporzionale all’intensità e al gradiente del campo. 
+Il fenomeno del diamagnetismo è molto più debole di quelli del para - e del ferromagneti-
+smo per cui nelle sostanze para - e ferromagnetiche questo fenomeno non si evidenzia.
+La maggior parte delle sostanze in natura (organiche e inorganiche) manifestano pro-
+prie
