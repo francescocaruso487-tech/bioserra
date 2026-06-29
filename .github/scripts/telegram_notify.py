@@ -1,6 +1,6 @@
 import os, json, base64, urllib.request, urllib.error, datetime, sys
 
-GITHUB_TOKEN  = os.environ['GITHUB_TOKEN']
+GITHUB_TOKEN  = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
 BOT_TOKEN     = os.environ.get('TELEGRAM_BOT_TOKEN', '')
 CHAT_ID       = os.environ.get('TELEGRAM_CHAT_ID', '')
 REPO = 'francescocaruso487-tech/bioserra'
