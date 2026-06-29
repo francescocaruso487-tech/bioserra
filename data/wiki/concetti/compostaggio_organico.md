@@ -12,33 +12,34 @@ pdf_count: 2
 # Compostaggio Organico
 
 ## Descrizione
-Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il compost. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macroinvertebrati (lombrichi, collemboli) che, in presenza di ossigeno, scompongono la materia organica in humus, CO₂, acqua e minerali assimilabili dalle piante. Il compost maturo è un **Living Soil** in miniatura: migliora la struttura del suolo, aumenta la capacità di ritenzione idrica, favorisce la biodiversità microbica e fornisce nutrienti a lento rilascio, riducendo la necessità di fertilizzanti sintetici.
+Il compostaggio organico è un processo biologico di decomposizione controllata di materiali vegetali e animali che trasforma la materia organica in un ammendante stabile e ricco di nutrienti, noto come compost. Questo processo avviene grazie all’azione di microrganismi (batteri, funghi, attinomiceti) e macrofauna (lombrichi, acari, collemboli) che, in condizioni ottimali di umidità, ossigenazione e temperatura, scompongono la materia organica in humus. L’humus risultante è un substrato scuro, poroso e ricco di sostanza organica umificata, che migliora la struttura del suolo, la capacità di scambio cationico (CSC) e la disponibilità di nutrienti per le piante.
 
-Il meccanismo chiave del compostaggio si basa su **quattro pilastri**:
-1. **Bilancio dei materiali**: Un rapporto ottimale tra **materiali verdi** (ricchi di azoto, come scarti di frutta/verdura, erba fresca) e **materiali marroni** (ricchi di carbonio, come paglia, foglie secche, cartone) evita squilibri (es. odori di ammoniaca o decomposizione anaerobica).
-2. **Aerazione**: L’ossigeno è essenziale per i microrganismi aerobi; senza di esso, il processo diventa putrefattivo (anaerobico), producendo metano e composti tossici.
-3. **Umidità**: Il substrato deve mantenersi umido (come una spugna strizzata), ma non zuppo, per facilitare l’attività microbica.
-4. **Temperatura**: Una fase termofila (55–65°C) uccide patogeni, semi di erbacce e stabilizza la materia organica, accelerando la maturazione.
-
-In serra outdoor a Caserta (41°N), il compostaggio è fondamentale per **rigenerare il suolo** tra una coltivazione e l’altra, soprattutto in sistemi **Living Soil** dove la materia organica è il motore della fertilità. Un compost di qualità riduce lo stress idrico, migliora la resilienza delle piante durante la **fase vegetativa** e supporta la simbiosi micorrizica, essenziale per l’assorbimento dei nutrienti.
+In un sistema **Living Soil** outdoor, il compost non è solo un fertilizzante, ma un vero e proprio "ecosistema vivente" che favorisce la biodiversità microbica e la resilienza del suolo. La sua applicazione regolare reintegra la materia organica persa per mineralizzazione, stimola l’attività enzimatica del suolo e riduce la necessità di input esterni. Inoltre, in combinazione con tecniche di elettrocultura, il compost può essere ulteriormente potenziato per armonizzare i campi elettromagnetici del terreno, favorendo una crescita più equilibrata delle piante.
 
 ---
 
 ## Come si applica in serra
+Per produrre compost di qualità in una serra **Living Soil** outdoor a Caserta (41°N), segui questi passaggi:
 
-### **Preparazione del cumulo (passo-passo)**
-1. **Scelta della location**:
-   - Posizionare il cumulo in un’area ombreggiata della serra (evitare sole diretto che asciuga troppo il materiale).
-   - Preferire un terreno nudo (non cementato) per favorire l’ingresso di lombrichi e microrganismi dal suolo sottostante.
+1. **Selezione dei materiali**:
+   - **Materiali verdi** (ricchi di azoto): scarti di frutta/verdura, erba fresca, fondi di caffè, letame fresco (es. cavallo o pollo).
+   - **Materiali marroni** (ricchi di carbonio): foglie secche, paglia, cartone non stampato, rametti triturati.
+   - **Bilancia**: rapporto ideale **2:1** (marroni:verdi) per evitare eccessi di umidità o carenze di azoto.
 
-2. **Bilanciamento dei materiali**:
-   - **Materiali verdi** (60%): scarti di cucina (buccia di banana, caffè), erba fresca tagliata, residui di potatura verde.
-   - **Materiali marroni** (40%): foglie secche, paglia, cartone non stampato, trucioli di legno non trattato.
-   - *Regola pratica*: Se il cumulo puzza di ammoniaca, aggiungere marroni; se non si scalda, aggiungere verdi.
+2. **Preparazione del cumulo**:
+   - Crea un cumulo di **1-1.5 m di altezza** e **1.5-2 m di larghezza** per garantire un buon isolamento termico.
+   - Posiziona il cumulo su un terreno nudo o su un telo traspirante per evitare perdite di nutrienti.
 
-3. **Stratificazione**:
-   - Alternare strati di 10–15 cm di verdi e marroni, bagnando leggermente ogni strato (umidità simile a una spugna strizzata).
-   - Aggiungere uno strato di **terriccio o compost maturo** (1–2 cm) ogni 30 cm per inoculare microrganismi benefici.
+3. **Controllo delle condizioni**:
+   - **Umidità**: deve essere simile a una spugna strizzata (60-70%).
+   - **Temperatura**: monitora con un termometro da compost. Mantieni tra **55-65°C** per 3-5 giorni (fase termofila), poi lascia scendere a **40-50°C** per 2-3 settimane.
+   - **Aerazione**: rivolta il cumulo ogni **2-3 giorni** con una forca o un aeratore per evitare anaerobiosi e accelerare la decomposizione.
 
-4. **Controllo della temperatura**:
-   - Inserire un **termometro da
+4. **Maturazione**:
+   - Dopo 4-6 settimane, il compost dovrebbe avere un odore di terra umida e una struttura simile a terriccio scuro.
+   - **Test di maturità**: prendi un campione e mettilo in un sacchetto di plastica per 24 ore. Se non emana odori sgradevoli (ammoniaca, acido butirrico), è pronto.
+
+5. **Applicazione in serra**:
+   - **Ammendamento**: distribuisci **2-3 cm di compost maturo** sulla superficie del suolo prima della semina o del trapianto, incorporandolo leggermente con una zappa.
+   - **Pacciamatura**: applica uno strato di **1-2 cm** intorno alle piante per mantenere l’umidità e proteggere i microrganismi.
+   -
