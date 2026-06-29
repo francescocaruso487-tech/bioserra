@@ -1,0 +1,2920 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 30/116 ===
+Chars: 43,007 | Offset: 1,283,178
+
+
+
+[PAG 651]
+ELETTROTECNICA GENERALE
+VII-147
+Punto 4
+f = 50 Hz
+f = fr
+8  RISOLUZIONE DELLE RETI LINEARI IN CORRENTE ALTERNATA MONO-
+FASE
+Le giustificazioni teoriche dei metodi di risoluzione delle reti elettriche lineari, fun-
+zionanti in corrente alternata monofase, sono le stesse delle reti in corrente continua. È
+necessario però ricordare che cambia il metodo di calcolo perché in corrente continua le
+grandezze sono espresse mediante numeri reali, mentre in corrente alternata le stesse sono
+espresse con i numeri complessi, per i quali si usa il calcolo simbolico.
+Fig. VII.7.62  
+I
+1000
+0
+10
+20
+30
+40
+I1
+I
+I2
+500
+1500
+= 2f
+P1
+R1I1
+2
+2
+9,252
+
+171 W;
+=
+=
+=
+Q1
+X1I1
+2
+10,62
+9,252
+
+908 VAR
+=
+=
+=
+P2
+UI2cos2
+100
+23
+
+0,69
+
+1588 W
+=
+=
+=
+Q2
+UI2sen2
+100
+23
+
+0,724
+
+1665 VAR
+=
+=
+=
+S
+UI
+100
+19,16
+
+1916 VA
+=
+=
+=
+P1
+G1U2
+0,045
+1002
+
+450 W;
+=
+=
+=
+Q1
+B1U2
+0,143
+1002
+
+1430 VAR
+=
+=
+=
+P2
+G2U2
+0,082
+1002
+
+820 W;
+=
+=
+=
+Q2
+B2U2
+0,143
+1002
+
+1430 VAR
+=
+=
+=
+S
+P
+UI
+100
+12,7
+
+1270 VA
+=
+=
+=
+=
+
+[PAG 652]
+VII-148
+ELETTROTECNICA GENERALE
+8.1  Bipoli passivi collegati in serie e parallelo
+Collegamento serie
+L’impedenza equivalente di n bipoli collegati in serie è data dalla somma delle sin-
+gole impedenze, espresse con numeri complessi, secondo la relazione:
+(VII.8.1)
+È importante sottolineare che la somma è fra numeri complessi; per cui non si possono
+sommare i moduli delle singole impedenze.
+La conoscenza di Zeq come numero complesso permette di ricavare modulo e argo-
+mento dell’impedenza risultante.
+Partitore di tensione
+La tensione ai capi di uno dei bipoli della serie si determina, in funzione della tensione
+totale, con la relazione:
+(VII.8.2)
+Collegamento in parallelo
+In questo caso conviene utilizzare il circuito equivalente parallelo dei vari bipoli e
+perciò considerare le ammettenze.
+L’ammettenza equivalente nel collegamento parallelo è la somma delle singole
+ammettenze, espresse come numeri complessi, e corrisponde alla relazione:
+(VII.8.3)
+La conoscenza di Yeq come numero complesso permette di ricavare modulo e argo-
+mento dell’ammettenza risultante.
+L’uso delle impedenze, per determinare l’impedenza equivalente, risulta comodo nel
+caso di due bipoli in parallelo per i quali si ha:
+(VII.8.4)
+Partitore di corrente
+La corrente che circola in uno dei bipoli del parallelo si determina, in funzione della
+corrente totale, con la relazione:
+(VII.8.5)
+Nel caso semplice di due bipoli in parallelo si può anche scrivere:
+(VII.8.6)
+8.2  Trasformazione stella-triangolo
+Nel caso di collegamento fra impedenze, con riferimento alla Fig. VII.8.1, si ha:
+Zeq
+Z1
+Z2
+
+Zi
+
+Zn
++
++
++
++
++
+Zi
+i
+1
+=
+n
+
+=
+=
+Ui
+U
+Zi
+Zeq
+--------
+=
+Yeq
+Y1
+Y2
+
+Yi
+
+Yn
++
++
++
++
++
+Yi
+i
+1
+=
+n
+
+=
+=
+Zeq
+Z1
+Z2
+
+Z1
+Z2
++
+--------------------
+=
+Ii
+I
+Yi
+Yeq
+--------
+=
+I1
+I
+Z2
+Z1
+Z2
++
+--------------------
+=
+I2
+I
+Z1
+Z1
+Z2
++
+--------------------
+=
+
+[PAG 653]
+ELETTROTECNICA GENERALE
+VII-149
+trasformazione stella-triangolo
+(VII.8.7)
+trasformazione triangolo-stella
+(VII.8.8)
+Nel caso di collegamento fra ammettenze, con riferimento alla Fig. VII.8.2, si ha:
+trasformazione stella-triangolo
+(VII.8.9)
+trasformazione triangolo-stella
+(VII.8.10)
+Fig. VII.8.1   Equivalenza
+stella-triangolo.
+Fig. VII.8.2   Equivalenza
+stella-triangolo.
+ZAB
+ZAZB
+ZBZC
+ZCZA
++
++
+ZC
+------------------------------------------------------------ ;
+=
+ZBC
+ZAZB
+ZBZC
+ZCZA
++
++
+ZA
+------------------------------------------------------------ ;
+=
+ZCA
+ZAZB
+ZBZC
+ZCZA
++
++
+ZB
+------------------------------------------------------------
+=
+ZA
+ZCAZAB
+ZAB
+ZBC
+ZCA
++
++
+------------------------------------------------ ;
+=
+ZB
+ZABZBC
+ZAB
+ZBC
+ZCA
++
++
+------------------------------------------------ ;
+=
+ZC
+ZCAZBC
+ZAB
+ZBC
+ZCA
++
++
+-----------------------------------------------
+=
+A
+B
+C
+0
+ZCA
+ZAB
+ZBC
+ZA
+ZB
+ZC
+A
+B
+C
+0
+YAC
+YAB
+YBC
+YA
+YB
+YC
+YAB
+YAYB
+YA
+YB
+YC
++
++
+-------------------------------------;
+=
+YBC
+YBYC
+YA
+YB
+YC
++
++
+-------------------------------------;
+=
+YAC
+YAYC
+YA
+YB
+YC
++
++
+-------------------------------------
+=
+YA
+YABYBC
+YACYBC
+YABYAC
++
++
+YBC
+--------------------------------------------------------------------------------- ;
+=
+YB
+YABYBC
+YACYBC
+YABYAC
++
++
+YAC
+--------------------------------------------------------------------------------- ;
+=
+YC
+YABYBC
+YACYBC
+YABYAC
++
++
+YAB
+---------------------------------------------------------------------------------
+=
+
+[PAG 654]
+VII-150
+ELETTROTECNICA GENERALE
+8.3  Metodi di risoluzione
+I metodi utilizzati nella risoluzione delle reti in corrente continua sono validi anche in
+corrente alternata, con l’avvertenza di considerare l’impedenza al posto della resistenza,
+l’ammettenza in luogo della conduttanza e di esprimere le tensioni e le correnti con i
+numeri complessi.
+Sovrapposizione degli effetti
+Si scompone il circuito generale in tanti circuiti parziali contenenti ciascuno tutti i
+bipoli passivi e un solo bipolo attivo (gli altri sono disattivati). La risoluzione è fornita
+dalla somma vettoriale dei contributi dei vari circuiti parziali.
+Teorema del generatore equivalente di Thevenin
+Una parte della rete può essere sostituita con il suo generatore equivalente. Esso è
+costituito da un generatore ideale di tensione con f.e.m. Eth uguale alla tensione a vuoto
+fra i punti di taglio con in serie l’impedenza ZTh corrispondente all’impedenza propria
+della rete sostituita, calcolata tra i punti di taglio con i generatori di tensione in corto cir-
+cuito e i generatori di corrente aperti.
+Teorema del generatore equivalente di Norton
+Una parte della rete può essere sostituita con il suo generatore equivalente. Esso è
+costituito da un generatore ideale di corrente IN di valore uguale alla corrente di corto cir-
+cuito fra i punti di taglio, con in parallelo un bipolo passivo di impedenza ZN (o ammet-
+tenza YN) calcolata come per il teorema di Thevenin.
+Teorema di Millmann
+Si applica solo alle reti a due nodi e consente di calcolare la tensione fra i nodi con la
+seguente relazione:
+dove:
+–  l è il numero totale dei lati le cui ammettenze Yq comprendono anche le Yi;
+–  m è il numero totale dei lati che contengono generatori di corrente con correnti
+impresse I0j;
+–  n è il numero dei lati che contengono generatori di tensione di f.e.m. Ei e ammet-
+tenze Yi.
+Fig. VII.8.3   Teorema di Boucherot: diagramma delle potenze.
+UAB
+YiEi
+i
+1
+=
+n
+
+I0j
+j
+1
+=
+m
+
++
+Yq
+q
+1
+=
+l
+
+---------------------------------------------------
+=
+S
+S1
+S2
+P1
+P2
+Pt
+Qt
+Q2
+Q1
+j
+r
+Pt = P1  P2
+Qt = Q1  Q2
+S = S1  S2
+S = Pt  jQt
+
+[PAG 655]
+ELETTROTECNICA GENERALE
+VII-151
+8.4  Teorema di Boucherot
+Il teorema di Boucherot (Fig. VII.8.3) permette di calcolare le potenze totali di una
+rete di bipoli passivi, adottando le seguenti regole:
+–  la potenza attiva totale è la somma aritmetica delle potenze attive dei vari bipoli;
+–  la potenza reattiva totale è la somma algebrica delle potenze reattive dei vari
+bipoli; si considerano positive le potenze reattive induttive e negative le potenze reattive
+capacitive;
+–  la potenza apparente totale è la somma vettoriale delle potenze apparenti dei vari
+bipoli, considerate come numeri complessi.
+8.5  Generatore di corrente alternata monofase
+La Fig. VII.8.4 rappresenta lo schema del circuito generatore-utilizzatore. Con riferi-
+mento ai morsetti A e B dello schema, si distinguono:
+–  La tensione a vuoto U0: si ha quando il generatore è scollegato dal carico. Poiché
+non circola corrente nel circuito, essa coincide con la f.e.m. E sviluppata all’interno del
+generatore per cui U0 = E.
+–  La tensione a carico U: si ha quando il generatore eroga la corrente I. La tensione
+U, sfasata rispetto alla corrente di un angolo che dipende dalle caratteristiche dell’impe-
+denza di carico, è legata alla f.e.m. E dalla relazione che segue.
+(VII.8.11)
+Il diagramma vettoriale del circuito è illustrato in Fig. VII.8.5.
+La variazione della tensione da vuoto a carico, pari alla differenza fra la tensione che
+si ha ai morsetti nel funzionamento a vuoto e a carico, rappresenta la caduta di tensione
+interna del generatore che in forma simbolica è espressa da:
+Fig. VII.8.4   Circuito generatore-utilizzatore.
+Fig. VII.8.5   Diagramma vettoriale del
+circuito generatore-carico R-L.
+U
+E
+ZiI
+–
+=
+U
+Ri
+E
+I
+Xi
+Zi
+Zc
+A
+B
+I
+U
+RiI
+jXiI
+ZiI
+E = U0
+
+
+
+
+[PAG 656]
+VII-152
+ELETTROTECNICA GENERALE
+(VII.8.12)
+La conoscenza dei valori efficaci U0 e U consente di determinare la caduta di tensione
+assoluta del generatore che è pari a:
+(VII.8.13)
+e la più significativa caduta di tensione relativa percentuale:
+(VII.8.14)
+dove Un è la tensione nominale del generatore.
+Il generatore eroga al carico le potenze utili:
+(VII.8.15)
+All’interno del generatore si verificano delle perdite di potenza sia attiva che reattiva
+che comunque il generatore deve produrre. Queste perdite che non interessano il carico
+esterno sono potenze perse e si calcolano con le relazioni:
+(VII.8.16)
+L’insieme delle potenze utili e perse rappresentano le potenze generate, determinabili
+con le relazioni:
+(VII.8.17)
+oppure, facendo riferimento al diagramma vettoriale di Fig. VII.8.5, con le formule:
+(VII.8.18)
+Il rapporto fra la potenza attiva utile erogata e la potenza attiva generata esprime il
+rendimento del generatore, che può essere determinato con una delle seguenti relazioni:
+(VII.8.19)
+oppure, facendo riferimento al diagramma vettoriale di Fig. VII.8.5, con la formula:
+8.6  Quadripoli
+Il quadripolo (Fig. VII.8.6) è una rete elettrica accessibile all’esterno mediante due
+coppie di morsetti; almeno tre dei quattro morsetti devono essere distinti, cioè devono far
+U
+U0
+U
+–
+E
+U
+–
+U
+ZiI
+U
+–
++
+ZiI
+=
+=
+=
+=
+U
+U0
+U
+–
+=
+U%
+U
+Un
+------- 100
+=
+Pu
+UIcos;
+=
+Qu
+UIsen;
+=
+Su
+UI
+Pu
+2
+Qu
+2
++
+=
+=
+Pp
+RiI2 ;
+=
+Qp
+XiI2 ;
+=
+Sp
+ZiI2
+Pp
+2
+Qp
+2
++
+=
+=
+Pg
+Pu
+Pp ;
++
+=
+Qg
+Qu
+Qp ;
++
+=
+Sg
+Su
+Sp
++
+=
+Pg
+EIcos;
+=
+Qg
+EIsen;
+=
+Sg
+EI
+Pg
+2
+Qg
+2
++
+=
+=
+
+Pu
+Pg
+-----
+Pu
+Pu
+Pp
++
+--------------------
+Pg
+Pp
+–
+Pg
+--------------------
+1
+Pp
+Pg
+-----
+–
+=
+=
+=
+=
+
+Pu
+Pg
+-----
+UIcos
+EIcos
+-------------------
+=
+=
+
+[PAG 657]
+ELETTROTECNICA GENERALE
+VII-153
+capo a punti differenti della rete.
+Nel caso di un quadripolo attivo, le relazioni che legano le tensioni e le correnti di
+entrata e di uscita sono:
+(VII.8.20)
+dove A, B, C, D, sono costanti che dipendono dagli elementi passivi della rete, mentre H e
+K sono costanti dipendenti dagli elementi attivi. Ne consegue che se il quadripolo è sola-
+mente passivo, le precedenti relazioni si semplificano divenendo:
+(VII.8.21)
+con le costanti legate dalla condizione:
+Le relazioni VII.8.21 possono essere formulate anche nei seguenti modi:
+Il legame esistente fra le costanti consente di rappresentare qualsiasi quadripolo pas-
+sivo con una struttura equivalente a triangolo (detto anche ) o a stella (detto anche a T).
+Nel caso di quadripolo a triangolo (Fig. VII.8.7), le costanti assumono i seguenti valori:
+mentre nel caso di quadripolo a stella (Fig. VII.8.8), le costanti sono definite da:
+Fig. VII.8.6   Struttura di un quadripolo.
+U1
+I1
+U2
+I2
+U1
+AU2
+BI2
+H;
++
++
+=
+I1
+CU2
+DI2
+K
++
++
+=
+U1
+AU2
+BI2 ;
++
+=
+I1
+CU2
+DI2
++
+=
+AD
+BC
+–
+1
+=
+U2
+DU1
+BI1 ;
+–
+=
+I2
+CU1
+AI1
++
+–
+=
+U1
+A
+C---I1
+1
+C---I2 ;
+–
+=
+U2
+1
+C---I1
+D
+C--- I2
+–
+=
+I1
+D
+B--- U1
+1
+B---U2 ;
+–
+=
+I2
+1
+B---U1
+A
+B---U2
+–
+=
+A
+1
+Z12
+Z22
+-------- ;
++
+=
+B
+Z12 ;
+=
+C
+1
+Z11
+--------
+1
+Z22
+--------
+Z12
+Z11
+Z22
++
+------------------------- ;
++
++
+=
+D
+1
+Z12
+Z11
+--------
++
+=
+
+[PAG 658]
+VII-154
+ELETTROTECNICA GENERALE
+I rapporti:
+definiscono rispettivamente l’impedenza di ingresso (Zi), l’impedenza di uscita (Zu) e
+l’impedenza di trasferimento (Ztr).
+8.7  Esempi
+Esempio 1
+Un circuito è formato da due impedenze induttive collegate in parallelo, che assor-
+bono la stessa potenza apparente S = 3000 VA ma con fattori di potenza di valore rispetti-
+vamente cos1 = 0,4 e cos2 = 0,9.
+Determinare mediante l’applicazione del teorema di Boucherot il fattore di potenza
+totale del circuito.
+Risoluzione
+I due carichi assorbono complessivamente una potenza attiva pari a:
+e la potenza reattiva totale:
+La tangente trigonometrica totale del circuito risulta:
+a cui corrispondono un angolo  = 46° 12 e un cos = 0,693.
+Fig. VII.8.7   Quadripolo collegato a
+triangolo.
+Fig. VII.8.8   Quadripolo collegato a
+stella.
+A
+1
+Z1
+Z3
+----- ;
++
+=
+B
+Z1
+Z2
+Z1Z2
+Z3
+------------
++
++
+;
+=
+C
+1
+Z3
+----- ;
+=
+D
+1
+Z2
+Z3
+-----
++
+=
+U1
+I1
+U2
+I2
+Z11
+Z22
+Z12
+U1
+I1
+U2
+I2
+Z1
+Z2
+Z3
+Zi
+U1
+I1
+------ ;
+=
+Zu
+U2
+I2
+------ ;
+=
+Ztr
+U1
+I2
+------
+=
+P
+P1
+P2
++
+S1cos1
+S2cos2
++
+3000
+0,4
+
+3000
+0,9
+
++
+3900 W
+=
+=
+=
+=
+Q
+Q1
+Q2
++
+S1sen1
+S2sen2
++
+3000
+0,916
+
+3000
+0,436
+
++
+4056 VAR
+=
+=
+=
+=
+tg
+Q
+P---
+4056
+3900
+-----------
+1,04
+=
+=
+=
+
+[PAG 659]
+ELETTROTECNICA GENERALE
+VII-155
+Esempio 2
+Calcolare le costanti A, B, C, D, del quadripolo riportato in Fig. VII.8.9, nel caso Z1 =
+R1 = 3 ; Z2 = R2 = 3 ; Z3 = R3 = 1 ; Z4 = R4 = 5 .
+Risoluzione
+Calcolo della costante A
+Se nella relazione U1 = AU2 + BI2 si pone I2 = 0 (quadripolo senza carico), si ottiene:
+con riferimento alla Fig. VII.8.10 la tensione a vuoto U2 è uguale a:
+e quindi:
+per cui, introducendo i valori:
+Fig. VII.8.9   Quadripolo dell’esempio 2.
+Fig. VII.8.10   Circuito per il calcolo
+della costante A.
+U1
+I1
+U2
+I2
+Z1
+Z2
+Z3
+Z4
+A
+B
+C
+D
+A
+U1
+U2
+------
+=
+U1
+I1
+U2
+I2 = 0
+Z1
+Z2
+Z3
+Z4
+A
+B
+C
+D
+U2
+UBD
+UAB
+UAD
++
+–
+Z1
+–
+Z1
+Z2
++
+-------------------- U1
+Z3
+Z3
+Z4
++
+-------------------- U1
++
+=
+=
+=
+A
+1
+Z1
+–
+Z1
+Z2
++
+--------------------
+Z3
+Z3
+Z4
++
+--------------------
++
+---------------------------------------------------
+=
+A
+1
+3
+–
+3
+3
++
+-------------
+1
+1
+5
++
+-------------
++
+-------------------------------------
+3
+–
+=
+=
+
+[PAG 660]
+VII-156
+ELETTROTECNICA GENERALE
+Calcolo della costante B
+Se nella relazione U1 = AU2 + BI2 si pone U2 = 0 (uscita cortocircuitata) si ottiene:
+con riferimento alla Fig. VII.8.11, la corrente di corto circuito I2 si può calcolare ad esem-
+pio col principio del generatore equivalente di Thevenin, per il quale si può scrivere:
+e quindi, dopo le opportune semplificazioni:
+per cui, introducendo i valori:
+Calcolo della costante C
+Se nella relazione I1 = CU2 + DI2 si pone I2 = 0 (quadripolo senza carico), si ottiene:
+Fig. VII.8.11   Circuito per il calcolo
+della costante B.
+Fig. VII.8.12   Circuito per il calcolo
+della costante C.
+B
+U1
+I2
+------
+=
+U1
+I1
+I2
+Z1
+Z2
+Z3
+Z4
+A
+B
+C
+D
+I2
+UBD
+Zin
+----------
+Z1
+–
+Z1
+Z2
++
+--------------------
+Z3
+Z3
+Z4
++
+--------------------
++
+Z1Z2
+Z1
+Z2
++
+--------------------
+Z3Z4
+Z3
+Z4
++
+--------------------
++
+--------------------------------------------------- U1
+=
+=
+B
+Z1Z2 Z3
+Z4
++
+
+
+Z3Z4 Z1
+Z2
++
+
+
++
+Z2Z3
+Z1Z4
+–
+-----------------------------------------------------------------------------------------
+=
+B
+3
+3
+
+
+1
+5
++
+
+
+5
+1
+
+
+3
+3
++
+
+
++
+3
+1
+
+
+
+3
+5
+
+
+
++
+----------------------------------------------------------------------------------------
+7
+–
+=
+=
+C
+I1
+U2
+------
+=
+U1
+I1
+Ia
+Z1
+Z2
+Z3
+Z4
+A
+B
+C
+D
+Ib
+U2
+
+[PAG 661]
+ELETTROTECNICA GENERALE
+VII-157
+Con riferimento alla Fig. VII.8.12, si può determinare la tensione U2 mediante l’applica-
+zione del secondo principio di Kirchhoff; si ha perciò:
+e poiché:
+e quindi, dopo le opportune semplificazioni:
+per cui, introducendo i valori:
+Calcolo della costante D
+Se nella relazione I1 = CU2 + DI2 si pone U2 = 0 (uscita cortocircuitata), si ottiene:
+Con riferimento alla Fig. VII.8.13, si possono scrivere le equazioni:
+da cui ricavando dalla prima equazione la corrente Ia, e sostituendola nella seconda equa-
+zione si ottiene:
+Fig. VII.8.13   Circuito per il calcolo
+della costante D.
+U2
+UBD
+Z1
+–
+Ia
+Z3Ib
++
+=
+=
+Ia
+Z3
+Z4
++
+Z1
+Z2
+Z3
+Z4
++
++
++
+--------------------------------------------------I1 ;
+=
+Ib
+Z1
+Z2
++
+Z1
+Z2
+Z3
+Z4
++
++
++
+--------------------------------------------------I1
+=
+U2
+Z1
+Z3
+Z4
++
+Z1
+Z2
+Z3
+Z4
++
++
++
+--------------------------------------------------
+–
+Z3
+Z1
+Z2
++
+Z1
+Z2
+Z3
+Z4
++
++
++
+--------------------------------------------------
++
+
+
+
+I1
+=
+C
+Z1
+Z2
+Z3
+Z4
++
++
++
+Z2Z3
+Z1Z4
+–
+--------------------------------------------------
+=
+C
+3
+3
+1
+5
++
++
++
+3
+1
+
+
+
+3
+5
+
+
+
+–
+-----------------------------------------------
+1
+–
+=
+=
+D
+I1
+I2
+----
+=
+U1
+I1
+I2
+Z1
+Z2
+Z3
+Z4
+A
+B
+C
+D
+Ia
+Ib
+Id
+Ic
+a) I  I1  Ia
+b) I  Ia
+c) I  I1  I2 Ia
+d) I  Ia  I2
+Z1Ia
+Z3 I1
+Ia
+–
+
+
+=
+;
+Z4 I1
+I2
+Ia
+–
++
+
+
+Z2 Ia
+I2
+–
+
+
+=
+
+[PAG 662]
+VII-158
+ELETTROTECNICA GENERALE
+e quindi, dopo le opportune semplificazioni:
+per cui, introducendo i valori:
+9  SISTEMI TRIFASI
+Un sistema polifase è costituito da due o più circuiti elettrici nei quali agiscono altret-
+tante f.e.m. di uguale frequenza ma aventi una rispetto all’altra sfasamenti prestabiliti;
+ciascun circuito costituisce una fase del sistema.
+Se le singole fasi sono distinte si ha un sistema polifase a circuiti indipendenti; se
+invece le stesse sono opportunamente collegate fra loro, si ha un sistema polifase composto.
+Un sistema composto da n fasi si dice simmetrico se le n f.e.m. che agiscono sulle fasi
+sono uguali in valore e sfasate ordinatamente l’una rispetto all’altra di una frazione di
+periodo pari a 1n; le f.e.m. sono perciò rappresentabili mediante n vettori di uguale
+ampiezza sfasati fra loro di un angolo pari a 360°n.
+I sistemi elettrici trifasi hanno fondamentale importanza nella produzione, trasmis-
+sione e trasformazione dell’energia elettrica, dato che i generatori elettrici presenti nelle
+centrali di produzione (alternatori), le linee di trasmissione, i trasformatori che elevano o
+abbassano la tensione sono di tipo trifase.
+In alcune applicazioni si utilizza il sistema esafase simmetrico, caratterizzato da sei
+f.e.m. di uguale valore sfasate fra loro di 60° o il sistema bifase, che è composto da due
+f.e.m. uguali e sfasate fra loro di 90°.
+9.1  Collegamento generatori a stella o triangolo; tensioni di fase e concatenate
+Un sistema trifase di tensioni e correnti è di norma generato da un alternatore trifase;
+questa macchina elettrica può essere considerata formata dall’unione di tre generatori
+monofasi, ciascuno dei quali produce una f.e.m. alternata sinusoidale, con la particolarità
+che le tre f.e.m. formano un sistema di tensioni di tipo simmetrico per cui: ogni f.e.m. ha
+lo stesso valore efficace e la stessa frequenza, ma ciascuna è sfasata rispetto all’altra di
+un angolo pari a 120° (Fig. VII.9.1).
+Fig. VII.9.1   Terna simmetrica
+di tensioni.
+Z2
+Z3
+
+Z1
+Z3
++
+--------------------
+Z3
+Z4
+
+Z1
+Z3
++
+--------------------
+Z4
+–
++
+
+
+
+I1
+Z2
+Z4
++
+
+I2
+=
+D
+Z1
+Z3
++
+
+
+Z2
+Z4
++
+
+
+
+Z2Z3
+Z1Z4
+–
+-------------------------------------------------------------
+=
+D
+3
+1
++
+
+
+3
+5
++
+
+
+
+3
+1
+
+
+
+3
+5
+
+
+
+–
+-----------------------------------------------
+2,666
+–
+=
+=
+e1
+0
+t
+T
+e2
+e3
+e1, e2, e3
+
+[PAG 663]
+ELETTROTECNICA GENERALE
+VII-159
+Nella rappresentazione dei circuiti il generatore trifase è considerato come l’insieme
+di tre generatori monofasi ideali, ciascuno corrispondente a una fase della macchina reale,
+collegati fra loro secondo lo schema a stella o a triangolo. Ricordato che per ogni fase si
+distinguono un principio (P) e una fine (F), per ottenere il collegamento a stella si devono
+unire fra loro la fine di ogni fase in modo da individuare un punto comune 0 detto centro
+stella (Fig. VII.9.2) mentre per ottenere un collegamento a triangolo si devono unire fra
+loro il principio e la fine di due fasi diverse (Fig. VII.9.3).
+Collegamento a stella
+Con riferimento alla Fig. VII.9.2 si possono individuare due sistemi di tensione.
+–  Una terna di tensioni E1, E2, E3, corrispondenti alle f.e.m. delle tre fasi del genera-
+tore, uguali alla differenza di potenziale elettrico fra i morsetti 1, 2, 3, e il centro stella del
+sistema. Quando al centro stella si collega un conduttore, questo prende il nome di neutro
+e le tre tensioni precedentemente considerate corrispondono alle tensioni delle tre fasi
+rispetto al neutro. La terna in esame è simmetrica e le tensioni che la compongono sono
+indicate col nome di tensioni di fase o tensioni stellate.
+Le tensioni di fase sono rappresentabili sul piano di Gauss con i tre vettori di Fig.
+VII.9.4; in questa rappresentazione è stato posto il vettore E1 sull’asse immaginario posi-
+tivo. Con questa scelta, del tutto arbitraria nel senso che la terna può essere ruotata su
+tutto il piano rispettando lo sfasamento tra le tensioni di 120° e la sequenza in senso orario
+Fig. VII.9.2   Collegamento a stella:
+tensioni di fase e concatenate.
+Fig. VII.9.3   Collegamento a trian-
+golo: tensioni concatenate.
+Fig. VII.9.4   Diagramma vettoriale delle
+tensioni di fase.
+E1
+1
+E2
+E3
+U23
+U12
+U31
+2
+3
+P1
+P2
+P3
+F1
+F2
+F3
+N
+0
+1
+U23
+U12
+U31
+2
+3
+P1
+P2
+F1
+F2
+P3
+F3
+E12
+E23
+E31
+E1
+E2
+E3
+r
+120°
+j
+120°
+120°
+150°
+30°
+
+[PAG 664]
+VII-160
+ELETTROTECNICA GENERALE
+delle fasi (1, 2, 3), i valori complessi delle tensioni risultano:
+Nelle relazioni si è indicato con E il valore efficace comune delle tre tensioni di fase.
+–  Una terna di tensioni corrispondenti alla differenza di potenziale elettrico fra le
+coppie di morsetti 1-2, 2-3, 3-1. Queste tensioni, che formano a loro volta una terna sim-
+metrica, sono dette tensioni concatenate o tensioni di linea e sono legate alle tensioni stel-
+late dalle relazioni:
+(VII.9.1)
+Sostituendo nelle precedenti relazioni i valori complessi delle tensioni stellate, si
+ottiene:
+che in forma polare corrispondono a:
+Le relazioni mostrano che fra il valore efficace U delle tensioni concatenate e il valore
+efficace E delle tensioni di fase vale l’importante relazione:
+(VII.9.2)
+che giustifica i valori delle tensioni di alimentazione degli impianti di bassa tensione di
+400 V e 230 V, fra i quali vale la relazione indicata in VII.9.2.
+La Fig. VII.9.5 rappresenta le tensioni concatenate sul piano di Gauss.
+Altre significative rappresentazioni delle tensioni di fase e concatenate sono riportate
+nelle Figg. VII.9.6 e VII.9.7; si deve segnalare che il baricentro del triangolo rappresenta
+il centro stella del sistema (Fig. VII.9.6) e che le tre tensioni concatenate sono ordinata-
+E1
+E
+90
+
+E cos90
+jsen90
++
+
+
+jE
+=
+=
+=
+E2
+E
+30
+–
+
+E cos
+30
+–
+
+
+
+jsen
+30
+–
+
+
+
++
+
+
+3
+2
+-------E
+j 1
+2-- E
+–
+=
+=
+=
+E3
+E
+150
+–
+
+E cos
+150
+–
+
+
+
+jsen
+150
+–
+
+
+
++
+
+
+3
+2
+------
+–
+E
+j 1
+2-- E
+–
+=
+=
+=
+U12
+E1
+E2 ;
+–
+=
+U23
+E2
+E3 ;
+–
+=
+U31
+E3
+E1
+–
+=
+U12
+jE
+3
+2
+-------E
+j1
+2--E
++
+–
+3
+2
+-------
+–
+E
+j3
+2--E
++
+=
+=
+U23
+3
+2
+-------E
+j1
+2--E
+3
+2
+-------E
+j1
+2--E
++
++
+–
+3E
+=
+=
+U31
+3
+2
+-------
+–
+E
+j1
+2--E
+–
+jE
+–
+3
+2
+-------
+–
+E
+j3
+2--E
+–
+=
+=
+U12
+3E
+120;
+
+=
+U23
+3E
+0;
+
+=
+U31
+3E
+120
+–
+
+
+=
+U
+3E
+=
+
+[PAG 665]
+ELETTROTECNICA GENERALE
+VII-161
+mente in anticipo di 30° rispetto alla tensione di fase contraddistinta dal primo numero
+del pedice (Fig. VII.9.7).
+Collegamento a triangolo
+In questo caso (Fig. VII.9.3) si ha solo la terna delle tensioni concatenate che coinci-
+dono con le f.e.m. prodotte dalle tre fasi del generatore; si ha perciò:
+Le tre fasi costituiscono una maglia interna chiusa, che percorsa in senso orario, per-
+mette di ottenere la somma vettoriale:
+(VII.9.3)
+Questa relazione determina una regola di carattere generale: la somma vettoriale delle
+tensioni di una terna simmetrica è sempre nulla. Ciò significa che istante per istante i
+valori delle tre sinusoidi si equilibrano fra loro e la somma dei valori istantanei è zero.
+9.2  Carico equilibrato a stella e triangolo; correnti di fase e di linea
+Un carico trifase è equilibrato quando è formato da tre impedenze uguali nel modulo
+e nell’argomento; queste, se espresse sotto forma di numeri complessi, avranno uguali sia
+Fig. VII.9.5   Diagramma vettoriale
+delle tensioni concatenate.
+Fig. VII.9.6   Tensioni stellate e conca-
+tenate: diagramma vettoriale.
+Fig. VII.9.7   Sfasamento tra tensioni
+stellate e concatenate.
+r
+120°
+j
+120°
+120°
+U23
+U12
+U31
+U12
+U31
+U23
+1
+2
+3
+E1
+E2
+E3
+U12
+U23
+U31
+E1
+E2
+E3
+30°
+30°
+30°
+0
+U12
+E12 ;
+=
+U23
+E23 ;
+=
+U31
+E31
+=
+E12
+E23
+E31
++
++
+0
+=
+
+[PAG 666]
+VII-162
+ELETTROTECNICA GENERALE
+la parte reale che la parte immaginaria. Le impedenze, ciascuna delle quali costituisce una
+fase del carico, possono essere collegate a stella (Fig. VII.9.8) o a triangolo (Fig. VII.9.9).
+Collegamento a triangolo
+Con riferimento alla Fig. VII.9.9, si distinguono:
+–  Una terna simmetrica di correnti di fase I12, I23, I31, circolanti nelle fasi del carico
+e legate alle corrispondenti tensioni concatenate dalle relazioni:
+Poiché tutte le tensioni sono uguali nel valore efficace e le impedenze hanno modulo
+uguale, i valori efficaci delle correnti di fase saranno tutti uguali fra loro e pari a:
+(VII.9.4)
+Naturalmente le correnti di fase sono sfasate, rispetto alle corrispondenti tensioni con-
+catenate, dell’angolo  caratteristico dell’impedenza e risulteranno in ritardo nel caso di
+impedenza ohmico-induttiva (Fig. VII.9.10) o in anticipo nel caso di impedenza ohmico-
+capacitiva.
+–  Una terna simmetrica di correnti di linea legate alle correnti di fase dalle relazioni:
+Queste relazioni, possono essere interpretate graficamente come somme vettoriali,
+ottenendo il grafico di Fig. VII.9.11, dove si è considerato per semplicità il caso di carico
+puramente ohmico  = 0; dal grafico si evince che ogni corrente di linea è sfasata di 30°
+in ritardo rispetto alla corrente di fase uscente dal nodo in cui entra la corrente di linea.
+Le correnti di linea sono legate alle correnti di fase dalla relazione facilmente dimo-
+strabile:
+(VII.9.5)
+Fig. VII.9.8   Carico trifase equili-
+brato: collegamento a stella.
+Fig. VII.9.9   Carico trifase equilibrato:
+collegamento a triangolo.
+U12
+U23
+U31
+I1
+I3
+0
+U10E1
+U20E2
+U30E3
+I2
+1
+2
+3
+Z
+Z
+Z
+U12
+U23
+U31
+I1
+I3
+I2
+1
+2
+3
+Z
+Z
+Z
+I12
+I23
+I31
+I12
+U12
+Z
+-------- ;
+=
+I23
+U23
+Z
+-------- ;
+=
+I31
+U31
+Z
+--------
+=
+If
+I12
+I23
+I31
+U
+Z---
+=
+=
+=
+=
+I1
+I12
+I31
+–
+=
+I2
+I23
+I12
+–
+=
+I3
+I31
+I23
+–
+=
+IL
+3 If
+=
+
+[PAG 667]
+ELETTROTECNICA GENERALE
+VII-163
+Collegamento a stella
+In questo tipo di collegamento non esiste differenza fra correnti di fase e correnti di
+linea e il loro modulo comune vale:
+(VII.9.6)
+Nel caso di collegamento a stella con neutro (Fig. VII.9.12), la corrente nel conduttore
+di neutro IN è pari alla somma vettoriale delle tre correnti (primo principio di Kirchhoff al
+nodo 0):
+(VII.9.7)
+Nel caso in esame di sistema simmetrico ed equilibrato, IN ha valore nullo perché è la
+somma di tre vettori uguali in modulo e sfasati di 120°.
+9.3  Sistemi trifasi simmetrici e squilibrati
+Un sistema trifase simmetrico e squilibrato è caratterizzato da una terna di tensioni di
+alimentazione simmetrica e da un carico costituito da impedenze fra loro diverse; la
+diversità può riguardare sia i moduli che gli argomenti.
+Fig. VII.9.10   Diagramma vettoriale
+delle correnti di fase nel collegamento
+a triangolo.
+Fig. VII.9.11   Correnti di fase e di
+linea nel collegamento a triangolo.
+Fig. VII.9.12   Sistema trifase simmetrico
+ed equilibrato: collegamento a stella con
+neutro.
+r
+120°
+j
+120°
+120°
+U23
+U12
+I31
+U31
+I12
+I23
+
+
+
+r
+120°
+j
+120°
+120°
+I31
+I12
+I3
+I31
+I12
+I23
+30°
+30°
+30°
+I1
+I23
+I2
+I
+E
+Z---
+U
+3Z
+----------
+=
+=
+U12
+U23
+U31
+I1
+I3
+0
+I2
+1
+2
+3
+Z
+Z
+Z
+IN
+N
+IN
+I1
+I2
+I3
++
++
+=
+
+[PAG 668]
+VII-164
+ELETTROTECNICA GENERALE
+Collegamento a stella con neutro
+Il filo di neutro è di norma collegato fra il centro stella (0) di un generatore o di un tra-
+sformatore collegati a stella e il centro stella del carico (0). Se si considerano i conduttori
+ideali, cioè privi di resistenza, si evince che la differenza di potenziale U00 è uguale a
+zero e quindi le tensioni sulle fasi del carico coincidono con quelle del generatore.
+Le correnti delle fasi del carico, coincidenti con quelle di linea, sono determinabili
+con le relazioni:
+Poiché le impedenze delle fasi non sono uguali, le correnti hanno valori efficaci e
+argomenti diversi e non costituiscono più una terna equilibrata; ciò determina una circo-
+lazione di corrente nel conduttore di neutro data dalla somma vettoriale:
+È utile ricordare che se il conduttore di neutro presenta un’impedenza non trascura-
+bile, la corrente IN produce una caduta di tensione U00 diversa da zero e quindi non è più
+valida l’uguaglianza fra le tensioni di fase del generatore e quelle del carico.
+Collegamento a stella senza neutro
+In questo caso si ha lo spostamento del centro stella 0 del carico rispetto al centro
+stella 0 del sistema di generazione; in questa condizione il centro stella assume un poten-
+ziale valutabile con la relazione:
+(VII.9.8)
+Di conseguenza le tensioni di fase sul carico sono determinabili come:
+(VII.9.9)
+Le relazioni sono riportate graficamente nel diagramma vettoriale di Fig. VII.9.13 e le
+correnti nelle tre fasi si ricavano, considerando le tensioni e le impedenze delle varie fasi,
+con:
+Fig. VII.9.13   Diagramma vettoriale delle ten-
+sioni nel collegamento a stella senza neutro.
+I1
+E1
+Z1
+------ ;
+=
+I2
+E2
+Z2
+------ ;
+=
+I3
+E3
+Z3
+------
+=
+IN
+I1
+I2
+I3
++
++
+=
+U00
+E1
+Z1
+------
+E2
+Z2
+------
+E3
+Z3
+------
++
++
+1
+Z1
+-----
+1
+Z2
+-----
+1
+Z3
+-----
++
++
+-------------------------------------
+=
+U10
+E1
+U00;
+–
+=
+U20
+E2
+U00;
+–
+=
+U30
+E3
+U00
+–
+=
+E1
+E3
+E2
+U
+
+10
+U
+
+20
+U
+
+30
+U 00
+0
+0
+
+[PAG 669]
+ELETTROTECNICA GENERALE
+VII-165
+(VII.9.10)
+Collegamento a triangolo
+Con questo tipo di collegamento le tensioni sono imposte dalla rete di alimentazione e
+formano perciò una terna simmetrica. Le correnti di fase sono date da:
+(VII.9.11)
+Le correnti sono diverse fra loro, sono sfasate sulle rispettive tensioni dell’angolo 
+caratteristico dell’impedenza della fase considerata (Fig. VII.9.14), e non costituiscono
+perciò una terna simmetrica.
+Le correnti di linea sono legate a quelle di fase dalle relazioni:
+(VII.9.12)
+Nonostante le correnti di fase siano diverse fra loro, il collegamento a triangolo è carat-
+terizzato dal fatto che la somma istantanea delle correnti di linea fornisce un valore nullo.
+Considerazioni
+Vale sempre l’equivalenza fra le impedenze collegate a stella e a triangolo, purché sia
+verificata la condizione che la misura dell’impedenza risultante condotta fra coppie di
+morsetti coincidenti fornisca lo stesso risultato sia nel collegamento a stella che a trian-
+golo. Nel caso in cui le tre impedenze del triangolo sono uguali fra di loro, anche le impe-
+denze collegate a stella risultano uguali fra loro e assumono un valore pari a:
+(VII.9.13)
+e il rapporto va esteso anche alle resistenze e alle reattanze che costituiscono l’impedenza.
+9.4  Sistemi trifasi dissimmetrici
+La risoluzione analitica dei sistemi trifasi dissimmetrici può presentare notevoli diffi-
+coltà; per questo motivo si ricorre sovente all’applicazione della teoria delle terne simme-
+triche.
+Fig. VII.9.14   Diagramma vettoriale di un
+sistema trifase collegato a triangolo.
+I1
+U10
+Z1
+---------- ;
+=
+I2
+U20
+Z2
+---------- ;
+=
+I3
+U30
+Z3
+----------
+=
+I12
+U12
+Z12
+-------- ;
+=
+I23
+U23
+Z23
+-------- ;
+=
+I31
+U31
+Z31
+--------
+=
+U12
+U31
+U23
+23
+31
+12
+I12
+I23
+I31
+I1
+I12
+I31 ;
+–
+=
+I2
+I23
+I12 ;
+–
+=
+I3
+I31
+I23
+–
+=
+ZY
+Z
+3-----
+=
+
+[PAG 670]
+VII-166
+ELETTROTECNICA GENERALE
+Definizione dell’operatore complesso 
+L’operatore complesso , preso con l’esponente opportuno, determina la rotazione di
+120°, in senso antiorario () o in senso orario (2), di un vettore senza variarne il modulo.
+Esso corrisponde a:
+Definizione delle terne simmetriche
+–  Terna simmetrica diretta (Fig. VII.9.15a): è costituita da tre vettori di uguale
+ampiezza, ciascuno sfasato in ritardo sul precedente di un angolo di 120°.
+Fig. VII.9.15   Terne simmetriche.
+Essa è perciò costituita da tre vettori legati fra loro dalle relazioni:
+–  Terna simmetrica inversa (Fig. VII.9.15b): è costituita da tre vettori di uguale
+ampiezza, ciascuno sfasato in anticipo sul precedente di un angolo di 120°.
+Essa è perciò costituita da tre vettori legati fra loro dalle relazioni:
+–  Terna simmetrica omopolare (Fig. VII.9.15c): è costituita da tre vettori di uguale
+ampiezza in fase fra loro.
+Essa è perciò costituita da tre vettori legati fra loro dalle relazioni:
+Il principio di scomposizione, sul quale è fondata la teoria delle terne simmetriche,
+afferma che: una terna di vettori U1, U2, U3, è sempre scomponibile nella somma di una
+terna simmetrica omopolare (U0, U0, U0), di una terna simmetrica diretta (Ud, 2 Ud,
+Ud) e di una terna simmetrica inversa (Ui,  Ui, 2 Ui).
+Il problema della scomposizione di una terna qualunque di vettori (come ad esempio
+U1, U2, U3) nelle sue componenti simmetriche, si riconduce alla determinazione di tre vet-
+tori (U0, Ud, Ui) in modo che siano verificate contemporaneamente le relazioni:
+
+1
+2--
+–
+j
+3
+2
+-------
++
+=
+2
+1
+2--
+j
+3
+2
+-------
+–
+–
+=
+3
+1
+=
+120°
+120°
+120°
+U2
+U1
+U3
+120°
+120°
+120°
+U1
+U2
+U3
+U3
+U1 U2
+a) diretta
+b) inversa
+c) omopolare
+U1 ;
+U2
+2U1 ;
+=
+U3
+U1
+=
+U1 ;
+U2
+U1 ;
+=
+U3
+2U1
+=
+U1
+U2
+U3
+=
+=
+
+[PAG 671]
+ELETTROTECNICA GENERALE
+VII-167
+(VII.9.14)
+Le relazioni VII.9.14 possono essere interpretate come un sistema di equazioni nelle
+incognite U0, Ud, Ui, che risolto fornisce:
+(VII.9.15)
+I vettori U0, Ud, Ui, sono le componenti simmetriche rispettivamente omopolare,
+diretta e inversa, della terna assegnata U1 + U2 + U3.
+Si definisce pura una terna di vettori la cui somma è nulla; questa condizione si ha
+quando la componente omopolare assume valore nullo.
+9.5  Potenze nei sistemi trifasi
+Sistemi simmetrici ed equilibrati
+–  Carico collegato a stella
+In questo collegamento le tre impedenze del carico sono uguali, le tensioni di fase e le
+correnti assorbite costituiscono terne simmetriche. La potenza attiva totale assorbita dalle
+tre fasi è uguale, per il teorema di Boucherot, alla somma aritmetica delle potenze di ogni
+singola fase:
+che con l’introduzione dei valori efficaci E per le tensioni e I per le correnti, diventa:
+(VII.9.16)
+o, per la relazione tra tensione di fase e concatenata:
+(VII.9.17)
+Con analogo procedimento si ricava la potenza reattiva totale:
+(VII.9.18)
+Per la potenza apparente totale, vale la relazione generale:
+(VII.9.19)
+che con le opportune sostituzioni diventa:
+(VII.9.20)
+U1
+U0
+Ud
+Ui;
++
++
+=
+U2
+U0
+2Ud
+Ui;
++
++
+=
+U3
+U0
+Ud
+2Ui
++
++
+=
+
+
+
+
+
+
+U0
+1
+3-- U1
+U2
+U3
++
++
+
+
+=
+Ui
+1
+3-- U1
+2U2
+U3
++
++
+
+
+=
+Ud
+1
+3-- U1
+U2
+2U3
++
++
+
+
+=
+
+
+
+
+
+
+P
+E1I1cos
+E2I2cos
+E3I3cos
++
++
+=
+P
+3EIcos
+=
+P
+3UIcos
+=
+Q
+3EIsen;
+=
+Q
+3UIsen
+=
+S
+P2
+Q2
++
+=
+S
+3EI ;
+=
+S
+3UI
+=
+
+[PAG 672]
+VII-168
+ELETTROTECNICA GENERALE
+Le potenze possono essere espresse anche in funzione dei parametri dell’impedenza;
+ricordando che nel caso in esame i triangoli delle potenze di ogni fase sono uguali, si ha:
+(VII.9.21)
+L’eventuale presenza del filo di neutro non influisce, in questo caso, sul sistema.
+–  Carico collegato a triangolo
+In questo collegamento le tre impedenze del carico sono uguali, le tensioni concate-
+nate e le correnti di fase assorbite costituiscono terne simmetriche. La potenza attiva
+totale assorbita dalle tre fasi è uguale, per il teorema di Boucherot, alla somma aritmetica
+delle potenze di ogni singola fase:
+che con l’introduzione dei valori efficaci U per le tensioni e If per le correnti, diventa:
+(VII.9.22)
+o, per la relazione tra corrente di fase e di linea:
+(VII.9.23)
+Con analogo procedimento si ricava la potenza reattiva totale:
+(VII.9.24)
+Per la potenza apparente totale, vale la relazione generale:
+che con le opportune sostituzioni diventa:
+(VII.9.25)
+Confrontando le relazioni valide per il collegamento a stella e a triangolo, si nota che
+le espressioni delle potenze attiva, reattiva, apparente, scritte in funzione della tensione
+concatenata e della corrente di linea, non cambiano al variare del collegamento interno
+del carico.
+Le potenze possono essere espresse anche in funzione dei parametri dell’impedenza;
+ricordando che nel caso in esame i triangoli delle potenze di ogni fase sono uguali, si ha:
+(VII.9.26)
+Per entrambe i collegamenti il fattore di potenza totale è dato dal rapporto
+e coincide con quello di una generica fase.
+P
+3RI2
+=
+Q
+3XI2
+=
+S
+3ZI2
+=
+P
+U12I12cos
+U23I23cos
+U31I31cos
++
++
+=
+P
+3UIf
+=
+cos
+P
+3UI
+=
+cos
+Q
+3UIf
+=
+sen;
+Q
+3UI
+=
+sen
+S
+P2
+Q2
++
+=
+S
+3UIf
+=
+;
+S
+3UI
+=
+P
+3RIf
+2
+=
+Q
+3XIf
+2
+=
+S
+3ZIf
+2
+=
+cost
+P
+S---
+=
+
+[PAG 673]
+ELETTROTECNICA GENERALE
+VII-169
+Sistemi simmetrici e squilibrati
+Le tre fasi, essendo formate da impedenze diverse, forniscono contributi diversi alla
+potenza totale. È ancora possibile applicare il teorema di Boucherot, ma la somma delle
+potenze apparenti deve essere rigorosamente di tipo vettoriale.
+–  Carico collegato a stella con neutro
+Le tensioni sulle fasi del carico formano una terna simmetrica. Le potenze delle varie
+fasi sono determinate da tensioni di valore efficace comune E e da correnti diverse sia in
+modulo che in fase. Si ha perciò:
+(VII.9.27)
+(VII.9.28)
+Per quanto riguarda la relazione di VII.9.28, è necessario ricordare che le fasi possono
+avere natura diversa e che quindi possono dare alla potenza contributi positivi (reattanza
+di fase induttiva) o negativi (reattanza di fase capacitiva).
+Per il calcolo della potenza apparente, conviene utilizzare la relazione:
+Utilizzando i parametri delle impedenze, le potenze attiva e reattiva sono date da:
+(VII.9.29)
+(VII.9.30)
+dove la somma delle potenze reattive è naturalmente di tipo algebrico.
+–  Carico collegato a stella senza neutro
+Le tensioni sulle fasi del carico sono dissimmetriche a causa dello spostamento del
+centro stella. Le potenze delle varie fasi sono determinate da tensioni di valore diverso e
+da correnti diverse sia in modulo che in fase. Si ha perciò:
+(VII.9.31)
+(VII.9.32)
+Rimangono sempre valide la formula
+, la somma algebrica delle
+potenze reattive e le formule di VII.9.29 e VII.9.30.
+–  Carico collegato a triangolo
+Con questo collegamento si ha l’azione di una terna simmetrica di tensioni di valore
+efficace comune U, che determina la circolazione di correnti diverse nelle varie fasi sia
+per modulo che per argomento. Le potenze sono fornite dalle relazioni:
+(VII.9.33)
+P
+EI1cos1
+EI2cos2
+EI3cos3
++
++
+=
+Q
+EI1sen1
+EI2sen2
+EI3sen3
++
++
+=
+S
+P2
+Q2
++
+=
+P
+R1I1
+2
+R2I2
+2
+R3I3
+2
++
++
+=
+Q
+X1I1
+2
+X2I2
+2
+X3I3
+2
++
++
+=
+P
+U10I1cos1
+U20I2cos2
+U30I3cos3
++
++
+=
+Q
+U10I1sen1
+U20I2sen2
+U30I3sen3
++
++
+=
+S
+P2
+Q2
++
+=
+P
+UI12cos12
+UI23cos23
+UI31cos31
++
++
+=
+
+[PAG 674]
+VII-170
+ELETTROTECNICA GENERALE
+(VII.9.34)
+Utilizzando i parametri delle impedenze, le potenze attiva e reattiva sono date da:
+(VII.9.35)
+(VII.9.36)
+naturalmente la somma delle potenze reattive è di tipo algebrico.
+Anche per i carichi squilibrati si può considerare un fattore di potenza totale, dato dal
+rapporto:
+che però in questo caso tuttavia non ha alcuna relazione con gli angoli caratteristici delle
+tre fasi.
+9.6  Rifasamento dei carichi
+Col termine rifasamento si intende la riduzione dell’angolo di sfasamento fra tensione
+e corrente; se la tensione e la corrente sono in fase, il rifasamento è completo.
+Poiché di norma i carichi sono di natura ohmico-induttiva, l’operazione di rifasamento
+consiste nel collegare in parallelo al carico (Figura VII.9.16) un condensatore elettrico
+che, se dimensionato opportunamente, può determinare un rifasamento parziale o totale
+(Fig. VII.9.17a, b).
+–  Carico monofase
+Per dimensionare il condensatore, si deve far riferimento al triangolo delle potenze di
+Fig. VII.9.18 dal quale si ricava:
+Fig. VII.9.16   Rifasamento di un carico
+ohmico-induttivo.
+Fig. VII.9.17   Rifasamento di un carico:
+diagramma vettoriale.
+Q
+UI12sen12
+UI23sen23
+UI31sen31
++
++
+=
+S
+P2
+Q2
++
+=
+P
+R12I12
+2
+R23I23
+2
+R31I31
+2
++
++
+=
+Q
+X12I12
+2
+X23I23
+2
+X31I31
+2
++
++
+=
+cost
+P
+S---
+=
+IT
+I
+IC
+U
+C
+Carico
+R-L
+U
+U
+IT
+IC
+IC
+I
+IC
+I
+IC
+IT
+0
+0
+r
+a) Rifasamento totale
+b) Rifasamento parziale
+
+[PAG 675]
+ELETTROTECNICA GENERALE
+VII-171
+e quindi:
+(VII.9.37)
+che nel caso di rifasamento totale (r = 0) diventa:
+(VII.9.38)
+Si può calcolare il valore della capacità del condensatore con la relazione:
+(VII.9.39)
+e della corrente assorbita:
+(VII.9.40)
+–  Carico trifase
+Nel caso di un sistema trifase simmetrico ed equilibrato, il rifasamento si effettua col-
+legando in parallelo al carico una batteria trifase di condensatori collegati a stella (Fig.
+VII.9.19a) o a triangolo (Fig. VII.9.19b).
+Fig. VII.9.18   Triangolo delle potenze.
+Fig. VII.9.19   Collegamento: a) a stella; b) a triangolo.
+Qc
+Q
+Qr
+–
+P tg0
+tgr
+–
+
+
+=
+=
+Qc
+P tg0
+tgr
+–
+
+
+=
+Qc
+P tg0
+=
+Qc
+0
+Qr
+Q
+r
+S
+Sr
+P
+C
+Qc
+2fU2
+----------------
+=
+Ic
+Qc
+U
+------
+=
+P
+Qc
+E
+a)
+QL
+Carico
+R-L
+U
+1
+2
+3
+CY
+P
+Qc
+b)
+QL
+Carico
+R-L
+U
+1
+2
+3
+CD
+U
+
+[PAG 676]
+VII-172
+ELETTROTECNICA GENERALE
+Per il calcolo della potenza reattiva, si utilizza la relazione usata per i carichi monofasi:
+dove P è la potenza attiva totale, Qc è la potenza reattiva totale della batteria di condensa-
+tori mentre gli angoli 0 e r si riferiscono ad una fase.
+La capacità dei condensatori nel caso di collegamento a stella vale:
+(VII.9.41)
+e nel caso di collegamento a triangolo:
+(VII.9.42)
+Le relazioni mostrano che:
+Per il rifasamento degli impianti utilizzatori a 400 V, si utilizza il collegamento a
+triangolo, perché si impiegano condensatori di minor capacità e quindi meno costosi. Il
+collegamento a stella delle batterie di rifasamento assume interesse nel caso di alta ten-
+sione perché in questo caso i condensatori devono essere isolati per tensioni minori.
+9.7  Esempi
+Esempio 1
+Il circuito squilibrato di Fig. VII.9.20 è alimentato con una tensione concatenata di
+380 V e il carico è costituito da una impedenza ohmico-induttiva con R  4  e XL  3 .
+Dimensionare un circuito puramente reattivo che provveda contemporaneamente ad equi-
+librare e a rifasare il carico; si calcolino inoltre le correnti di linea assorbite dal carico
+reso equilibrato.
+Risoluzione
+Poiché le tensioni concatenate formano una terna simmetrica diretta, si può scrivere:
+Fig. VII.9.20  
+Qc
+P tg0
+tgr
+–
+
+
+=
+CY
+Qc
+2fU2
+----------------
+=
+CD
+Qc
+3
+2fU2
+
+---------------------------
+=
+CD
+CY
+3
+
+=
+Z  R  jX
+U31
+1
+2
+3
+I1
+I2
+I3
+U12
+U23
+I
+U12
+Ud
+=
+;
+U23
+2Ud ;
+=
+U31
+Ud
+=
+
+[PAG 677]
+ELETTROTECNICA GENERALE
+VII-173
+La corrente assorbita dal carico vale:
+Nella linea circoleranno perciò correnti esprimibili con le seguenti relazioni:
+La terna di correnti sopra scritta ammette una componente simmetrica inversa pari a:
+Per equilibrare il carico si sceglie di inserire con collegamento a triangolo dissimme-
+trico, tre suscettanze B1, B2, B3 disposte come in Fig. VII.9.21; le tre suscettanze devono
+assorbire una corrente terna di correnti con una componente simmetrica uguale e opposta
+alla corrente inversa assorbita dal carico.
+L’affermazione corrisponde alla regola che equilibrare un carico (Z) significa far si che il
+carico risultante (Z e le suscettanze) assorba solo una terna simmetrica diretta di corrente di
+linea.
+La condizione, ricavata ricordando le espressioni di  e 2, è rappresentabile con la
+relazione:
+dove il primo termine moltiplicato per Ud corrisponde alla corrente inversa assorbita dalle
+suscettanze aggiunte.
+Sostituendo nella precedente relazione l’espressione di Ii si ottiene:
+Ricordando l’espressione di 2 e di Y ed eguagliando le parti reali e le parti immagi-
+narie della precedente relazione, si ottengono le equazioni
+Fig. VII.9.21   
+I
+U12
+Z
+--------
+YUd
+=
+=
+con:
+Y
+G
+jB
++
+1
+Z---
+1
+4
+j3
++
+----------------
+0,16
+j0,12
+–
+=
+=
+=
+=
+I1
+I
+YUd
+=
+=
+;
+I2
+I
+–
+Y
+– Ud ;
+=
+=
+I3
+0
+=
+Ii
+1
+3-- I1
+2I2
+I3
++
++
+
+
+1
+3-- 1
+2
+–
+
+YUd
+=
+=
+U31
+1
+2
+3
+I1
+I2
+I3
+U12
+U23
+Z
+B1
+B2
+B3
+B3
+1
+2-- B1
+B2
++
+
+
+j
+3
+2
+------- B1
+B2
+–
+
+
++
+–
+3Ii
+Ud
+-----------
+–
+=
+B3
+1
+2-- B1
+B2
++
+
+
+j
+3
+2
+------- B1
+B2
+–
+
+
++
+–
+1
+3
+------- 2
+1
+–
+
+Y
+=
+B2
+2B3
+B1
++
+–
+3G
+B
+–
+0,397
+=
+=
