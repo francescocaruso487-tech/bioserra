@@ -1,0 +1,887 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 19/116 ===
+Chars: 43,354 | Offset: 795,742
+
+
+
+[PAG 395]
+CAD
+VI-21
+3   NUOVO DISEGNO
+In questo capitolo si apprenderà l’uso di altri comandi, realizzando un nuovo disegno, 
+utilizzando come modello di partenza il disegno della squadratura eseguito nel capitolo 
+precedente, con tutte le impostazioni già predefinite. Proprio in previsione di questo 
+utilizzo, era stato salvato come file di modello. In particolare si vedrà l’uso dei seguenti 
+nuovi comandi: Ddedit, Proprietà, Cerchio, Annulla, Rifare, Savetime.
+–  Fare clic sull’icona Apri e Seleziona modello nella schermata di apertura, dopo aver 
+avviato AutoCAD. Poiché il modello desiderato non si trova nella cartella predefinita fare 
+clic su Sfoglia e spostarsi nella directory utenti\corsocad, usando il pulsante a destra della 
+casella Cerca in:. Selezionare il file mod-corso.dwt e fare clic su Apri. Apparirà il disegno 
+della squadratura così come era stato salvato. Questo è il modello di partenza del nuovo 
+disegno. Verrà assegnato subito un nuovo nome.
+–  Aprire il menu a discesa File e fare clic su Salva con nome. La finestra di dialogo sug-
+gerisce di salvare nella directory predefinita. Spostarsi nella directory utenti\corsocad 
+usando il pulsante a destra della casella Cerca in:, cancellare nella casella Nome file il 
+nome proposto disegno1.dwg, digitando al suo posto stella; controllare che nella casella 
+sottostante sia indicato disegno di AutoCAD (*.dwg) e fare clic su Salva. A questo punto 
+anche se il disegno appare immutato è diventato un nuovo disegno con il nome di stella. 
+–  È possibile verificare il nome con il comando: 
+Stato (seguito da Invio)
+compare una finestra che fornisce informazioni sul disegno corrente compreso il nome. 
+Per ritornare alla finestra di disegno basta premere il tasto F2 e Invio per proseguire.
+3.1  Modifica del testo
+Iniziando un nuovo disegno, partendo dal modello uti-
+lizzato, sarà necessario cambiare il titolo e la data. Sarebbe 
+possibile cancellare il testo precedente e digitare quello 
+nuovo, ma occorrerebbe eseguire di nuovo tutta la proce-
+dura di giustificazione. È possibile invece utilizzare un 
+comando specifico che permette di cambiare solo i caratteri 
+di testo, mantenendo la formattazione. Il disegno dovrebbe 
+apparire con uno zoom sul blocco del titolo. 
+–   Per modificare titolo e data digitare: 
+Ddedit (seguito da Invio)
+verrà richiesto di selezionare un oggetto di testo. Selezio-
+nare con il puntatore un carattere qualsiasi della parola 
+BORDO. Si apre una finestra di dialogo con evidenziata la 
+parola BORDO. Digitare al suo posto STELLA e fare clic su 
+OK. Viene ancora chiesto di selezionare oggetti di testo. 
+Fare clic su di un carattere della data. Si apre ancora la fine-
+stra con evidenziata la data originale. Supponendo di voler 
+cambiare solo il giorno evidenziare con il mouse il giorno 
+ed al suo posto digitate la nuova data. Fare clic su OK e 
+quindi Invio o Barra spazio per concludere il comando. 
+Fig. VI.3.1.   Menu Proprietà standard.
+In alternativa si sarebbe potuto utilizzare un comando che permette di modificare 
+molte altre proprietà, non solo del testo ma anche di altri oggetti.
+Il comando immesso da tastiera è Proprietà, oppure tasto destro del mouse sul testo da 
+modificare, dopo averlo selezionato col sinistro, e quindi menu Proprietà.
+
+[PAG 396]
+VI-22
+CAD
+Si apre la finestra di Fig. VI.3.1 che mostra tutte le caratteristiche correnti e permette 
+di modificarle.
+Digitando appunto STELLA al posto di BORDO cambierà il nome, ma sarebbe 
+possibile cambiare la giustificazione, lo stile, le dimensioni del carattere ecc.
+Per iniziare a disegnare, si desidera visualizzare l’intera area di disegno. Digitare:
+ Zoom (seguito da Invio).
+ T (per Tutto, seguito da Barra spazio).
+3.2  Disegnare delle linee
+Osservando nella barra degli strumenti proprietà degli oggetti, in alto a sinistra, si può 
+notare che il layer attivo attualmente è il layer testo. Si vuole rendere corrente il layer ogg, 
+dove si andrà ad eseguire il disegno. Il modo più semplice è quello di utilizzare questa 
+barra degli strumenti.
+–  Fare clic sul triangolino a sinistra della finestra proprietà 
+del layer, selezionare il layer ogg con un clic. La scritta ogg 
+nella finestra informa che il layer corrente è ogg. Attivare la 
+Griglia se non lo è già, disattivare il modo Snap ed il modo 
+Orto. 
+–  Digitare:
+ L (che sta per Linea, seguito da Invio)
+alla richiesta Specificare primo punto: digitare: 
+60,70 (seguito da Invio). 
+Muovendo il mouse si vede una linea elastica collegata con il punto iniziale che si 
+sposta sullo schermo e in basso a sinistra si notano le coordinate del punto finale che va-
+riano ad ogni movimento del puntatore. Se la visualizzazione delle coordinate fosse disat-
+tivata, premere F6. Sempre con il tasto commutatore F6, è possibile visualizzare le coor-
+dinate in forma polare. Alla richiesta Specificare punto successivo: digitare: 
+@98<0 (seguito da Invio).
+Si è usata la notazione polare per indicare una linea lunga 98 unità inclinata di un 
+angolo zero rispetto all’asse X.
+Fig. VI.3.2  
+–  Si noti che fino a che non è concluso il comando appare sempre scritto Specificare 
+punto successivo:, cioè il programma si aspetta di continuare la linea verso un nuovo punto.
+
+[PAG 397]
+CAD
+VI-23
+–   Digitare:
+ @110<90 (seguito da Barra spazio)
+per disegnare una linea perfettamente verticale lunga 110 unità. Digitare:
+@95<230 (seguito da Invio) 
+per disegnare una linea lunga 95 unità con un angolo di 230 gradi rispetto al verso 
+positivo dell’asse X.
+–  Muovere ora il puntatore fino ad arrivare circa al punto di coordinate 75<155 e fare 
+clic con il pulsante sinistro.
+Il disegno dovrebbe presentarsi come in Fig. VI.3.2.
+3.3  Uso del comando Annulla
+I comandi impartiti vengono memorizzati, per cui è possibile annullare le operazioni 
+eseguite. Si può utilizzare il comando Annulla, abbreviabile con A. Il comando Annulla
+può funzionare in due modi diversi. Se un comando è stato completato, annulla tutte le 
+modifiche apportate da quel comando. Se si è ancora dentro il comando, annulla solo 
+l’ultima parte di quel comando. Usando Annulla più volte si possono annullare a ritroso 
+tutte le modifiche.
+–  Controllare che la linea elastica unisca il puntatore all'ultima linea disegnata. Digitare:
+A (seguito da Invio) 
+l’ultima linea scompare ed il puntatore è collegato alla penultima. Digitare:
+A (seguito da Invio)
+scompare anche questa linea e la linea elastica si sposta indietro di una posizione. Al 
+prompt dei comandi appare sempre scritto al punto, perché si è sempre all’interno del co-
+mando Linea.
+–  Ripristinare l’ultima delle due linee cancellate usando le coordinate di prima.
+–  Fare clic, con il puntatore nel punto di coordinate 60<160. Premere Invio o Barra spa-
+zio per concludere il comando Linea. Nella riga di comando non comparirà più specificare 
+punto successivo:, ma comando:, questo perché il comando Linea è concluso ed il pro-
+gramma sta aspettando un altro comando. Ora che il comando Linea è concluso, Annulla
+cancellerà tutte le linee disegnate. Digitare:
+A (seguito da Invio o Barra spazio)
+tutte le linee disegnate scompaiono. Digitare:
+Rifare (seguito da Invio)
+e ricompaiono tutte le linee eliminate dal comando precedente.
+Rifare può essere utilizzato solo immediatamente dopo il comando Annulla e 
+non può essere usato all’interno di un altro comando. È possibile richiamare 
+Annulla dall’icona nella barra degli strumenti standard. Occorre però notare che il 
+pulsante Annulla, non può essere usato all’interno di un altro comando; usando questo 
+pulsante, si interrompe il comando in uso, ad esempio Linea e si annulla tutto quanto 
+disegnato con questo comando.
+Nella barra degli strumenti standard Rifare corrisponde al pulsante.
+3.4  Realizzazione di un cerchio
+Si disegnerà ora un cerchio usando il metodo più intuitivo, di 
+default, che consiste nel fissarne il centro ed il raggio, anche se esistono altri modi.
+Con i modi Orto e Snap disattivati, al prompt comando digitare:
+Cerchio (seguito da Invio)
+verrà richiesto di indicare il centro. Digitare: 
+190,120 (seguito da Invio)
+viene ora chiesto il raggio. Digitare: 
+37 (seguito da Invio).
+
+[PAG 398]
+VI-24
+CAD
+Il disegno avrà l’aspetto di Fig. VI.3.3.
+Fig. VI.3.3      
+Il comando Cerchio può essere facilmente richiamato usando l’apposita icona 
+nel menu degli strumenti di disegno. Tutti gli altri passaggi rimangono invariati.
+Salvare il lavoro eseguito con un clic su Salva nel menu a discesa File.
+3.5  Salvataggio automatico
+È possibile impostare il sistema in modo che possa eseguire il salvataggio automatico.
+Fig. VI.3.4  Menu Opzioni.
+Il disegno viene salvato ad intervalli di tempo prestabiliti, in modo da non perdere 
+tutto il lavoro eseguito, in caso di blocco del sistema o di mancanza di alimentazione.
+Fare clic sul menu a discesa Strumenti e quindi sulla voce Opzioni.
+
+[PAG 399]
+CAD
+VI-25
+Si aprirà la finestra di dialogo opzioni di Fig. VI.3.4.
+–  Aprire con un clic la cartella Apri e Salva. Controllare che sia selezionata la casella di 
+salvataggio automatico e digitare 15 nella finestra dei minuti tra due salvataggi. In questo 
+modo ogni 15 minuti il programma effettuerà un salvataggio automatico del lavoro. Con-
+trollare che sia selezionata la casella Crea copia di backup ad ogni salvataggio. In questo 
+modo sarà sempre disponibile la versione precedente del disegno con estensione .bak. 
+Fare clic su OK per salvare le impostazioni e chiudere la finestra di dialogo.
+È possibile impostare il tempo tra i salvataggi automatici del disegno, senza entrare 
+nella finestra Opzioni, ma richiamando alla riga di comando la variabile di sistema che 
+controlla questa impostazione.
+–  Digitare Savetime seguito da Invio. Apparirà il tempo impostato tra due salvataggi. 
+Premere Invio, per accettare il valore proposto senza cambiamenti. Desiderando cambiare 
+il valore basta digitarlo e quindi premere Invio.
+4  SELEZIONE DEGLI OGGETTI
+Molti comandi di AutoCAD, in particolare quelli di modifica, richiedono di seleziona-
+re gli oggetti sui quali si vuole operare. Si sono già incontrati alcuni di questi comandi e si 
+è visto che alla riga di comando appare selezionare oggetti: ed il puntatore diventa un 
+mirino di selezione. Il metodo più intuitivo è quello di fare clic, dopo aver posizionato il 
+mirino di selezione sull’oggetto desiderato. Attenzione, bisogna toccare l’oggetto, per 
+esempio la circonferenza, e non lo spazio contenuto per esempio nel cerchio.
+Questo metodo di selezione diretta non è sempre conveniente; specialmente quando si 
+vogliono selezionare molti oggetti, è vantaggioso utilizzare altri metodi come la finestra o 
+l’intersezione.
+4.1  Aggiungere una linea al disegno precedente
+Si vuole tracciare una linea che congiunga esattamente l’estremità dell’ultima linea 
+disegnata con l’estremo libero della linea orizzontale. Questa operazione può essere diffi-
+cile se le estremità delle linee non si trovano sulla griglia di Snap.
+–  Se il modo Osnap è attivo, premere F3 per disattivarlo.
+Provando a disegnare la linea in questione con griglia e snap disattivati ci si accorgerà 
+che, anche se ad un primo esame il disegno potrà apparire corretto, effettuando uno zoom 
+molto stretto alla congiunzione delle due linee, quasi sicuramente queste non si tocche-
+ranno esattamente. L’operazione risulta semplice utilizzando una opzione di Osnap o 
+Snap ad oggetto. Lo Snap ad oggetto permette di posizionarsi in punti notevoli degli 
+oggetti (inizio, fine, punto centrale, ecc.) in modo estremamente preciso.
+–  Si controlli che Griglia, Snap, Osnap e Orto siano disattivati.
+–  Attivare il comando Linea dalla sua icona. Alla richiesta specificare primo punto:
+digitare:
+Fin (opzione di Osnap Fine, seguito da Invio).
+Ci si avvicini con il puntatore all’estremità sinistra della linea e si faccia clic. Si vedrà 
+la linea elastica collegata esattamente nel punto voluto. 
+Ovviamente una linea ha due estremità; per collegarsi dalla parte giusta non serve 
+selezionare accuratamente il punto, ma "inquadrare" la linea in un punto qualsiasi com-
+preso tra la metà e l’estremo desiderato. Alla richiesta specificare punto successivo: digi-
+tare:
+Fin (seguito da Invio).
+Ci si avvicini alla linea orizzontale in basso e si faccia clic nella parte sinistra. Pre-
+mere la Barra spazio per concludere il comando.
+
+[PAG 400]
+VI-26
+CAD
+Al posto di digitare Fin alla riga di comando è possibile usare l’apposito pul-
+sante nella barra degli strumenti di Osnap.
+4.2  Selezione a puntamento
+La selezione a puntamento è il metodo più intuitivo. 
+–  Digitare:
+Lista (seguito da Invio).
+Alla richiesta selezionare oggetti: fare clic dopo aver posizionato il mirino di sele-
+zione sulla linea verticale. La linea selezionata è diventata tratteggiata e, sulla riga di 
+comando, si legge trovato 1 per indicare che è stato individuato un oggetto. Sempre sulla 
+riga di comando compare ancora selezionare oggetti:; fare clic sulla circonferenza che 
+diventerà a sua volta tratteggiata. Alla riga di comando si legge trovato 1 e ancora selezio-
+nare oggetti:. Premere il tasto Invio, per comunicare al programma che il processo di sele-
+zione è terminato e dare esecuzione al comando. Compare quindi la finestra di testo di 
+Fig. VI.4.1 che riporta le caratteristiche degli oggetti selezionati.
+Fig. VI.4.1  Finestra di testo.
+Per ritornare alla finestra grafica premere il tasto F2.
+4.3  Selezione di oggetti già selezionati in precedenza
+Se si desidera effettuare più operazioni sugli stessi oggetti, è possibile indicare al pro-
+gramma che si tratta degli stessi elementi di prima, senza doverli selezionare nuovamente.
+Si supponga di voler spostare il cerchio e la linea selezionati prima.
+–  Fare clic sul pulsante Sposta, nel pannello Edita. Verrà richiesto di selezionare 
+gli oggetti. Digitare:
+P (che sta per Precedente, seguito da Invio).
+Si osservi che il cerchio e la linea verticale diventano tratteggiati per indicare che 
+sono stati individuati. Alla riga di comando compare scritto ancora selezionare oggetti: 
+perché è possibile aggiungerne degli altri. 
+–  Supponendo di voler aggiungere al gruppo di selezione la linea inclinata a sinistra in 
+basso, è possibile servirsi di una scorciatoia ricordando che si tratta dell’ultimo elemento 
+disegnato. Digitare:
+U (che sta per Ultimo, seguito da Invio).
+
+[PAG 401]
+CAD
+VI-27
+Verranno selezionati gli oggetti di Fig. VI.4.2.
+Premere Invio o Barra spazio per completare la selezione e dare avvio al comando. 
+Premere il tasto Esc per annullare l’operazione se non si vuole spostare nulla.
+Fig. VI.4.2  
+4.4  Selezione con finestra
+Quando si vogliono selezionare molti oggetti, risulta scomodo eseguire il puntamento 
+uno per uno. È possibile selezionare un gruppo di oggetti circondandoli con una finestra. 
+Quando si usa la finestra occorre ricordare che verranno selezionati tutti gli oggetti com-
+pletamente contenuti all’interno della finestra, ma non quelli contenuti solo parzialmente. 
+Fig. VI.4.3  
+–  Digitare:
+Lista (seguito da Invio).
+Alla richiesta selezionare oggetti: digitare:
+F (seguito da Invio).
+
+[PAG 402]
+VI-28
+CAD
+Verrà richiesto di indicare il primo angolo della finestra; portare il puntatore alle coor-
+dinate 50,190 circa e fare clic. Verrà richiesto l’angolo opposto; portare il puntatore alle 
+coordinate 240,50 circa e fare clic.
+Si noti che le due linee inclinate più a sinistra non sono selezionate perché non conte-
+nute completamente nella finestra (Fig. VI. 4.3).
+In realtà, quando si vuole eseguire una selezione con finestra, non è necessario digi-
+tare F alla riga di comando. È sufficiente fare clic con il pulsante sinistro del mouse in un 
+punto dell’area grafica libero da oggetti, trascinare il puntatore verso destra, e fare clic 
+nell’angolo opposto.
+4.5  Rimozione di oggetti dall’insieme di selezione
+Può succedere di dover togliere degli oggetti dal gruppo di selezione. Questo è utile 
+quando è necessario selezionare tutti gli oggetti tranne alcuni. 
+Il modo più semplice è quello di selezionare con finestra tutte le entità e rimuovere 
+quelle non necessarie. La stessa necessità si presenta se per errore si è selezionata una 
+entità in più. Si utilizza in questo caso l’opzione Rimuovi, abbreviabile con Rim, che si 
+può utilizzare all’interno del processo di selezione.
+Attualmente nel disegno sono selezionate tre linee ed il cerchio, evidenziati 
+dall’aspetto tratteggiato. Si desidera togliere dal gruppo di selezione la linea inclinata.
+–   Alla riga di comando appare ancora selezionare oggetti:, digitare:
+Rim (per Rimuovi, seguito da Invio).
+Apparirà cancellare oggetti:; fare clic con il mirino di selezione sulla linea inclinata. 
+Si noti il messaggio trovato 1, cancellato 1 e la linea in questione non è più tratteggiata. 
+Inoltre si legge Cancellare oggetti:, perché il programma aspetta che venga indicata qual-
+che altra entità da togliere dal gruppo di selezione.
+4.6  Aggiunta di oggetti all’insieme di selezione
+Durante il processo di selezione l’opzione Aggiungi, abbreviabile con Ag si comporta 
+al contrario di Rimuovi.
+–  Si supponga di voler aggiungere all’insieme di selezione la linea inclinata a sinistra 
+collegata con quella orizzontale. Si digiti:
+Ag (per Aggiungi, seguito da Invio)
+Si noti che alla riga di comando ritorna scritto selezionare oggetti:, quindi fare clic, 
+con il mirino di selezione sulla linea inclinata in basso a sinistra. La linea indicata diventa 
+tratteggiata e si leggerà ancora selezionare oggetti:. Premere Invio o Barra spazio per 
+concludere la selezione. 
+–  Si aprirà la finestra di testo con le informazioni sugli oggetti selezionati. Premere F2
+per ritornare alla finestra grafica.
+4.7  Selezione ad intersezione
+La selezione ad intersezione è simile alla selezione con finestra; anche in modo inter-
+sezione si racchiudono gli oggetti in un riquadro. La differenza sta nel fatto che con inter-
+sezione vengono selezionati non solo tutti gli oggetti completamente contenuti nella 
+finestra, ma anche quelli solo parzialmente contenuti.
+Durante l’operazione di selezione si distingue visivamente la finestra dalla intersezio-
+ne perché quest’ultima mostra i contorni non continui, ma tratteggiati.
+–  Digitare:
+Sposta (seguito da Invio).
+–  Alla richiesta selezionare oggetti digitare:
+I (per Intersezione, seguito da Invio).
+Alla richiesta primo angolo: fare clic nel punto di coordinate 60,150 circa. Alla richie-
+
+[PAG 403]
+CAD
+VI-29
+sta specificare secondo angolo: fare clic nel punto di coordinate 190,80 circa.
+Nella Fig. VI.4.4 si nota che pur non essendo completamente compreso nella finestra 
+nessun elemento, vengono selezionati i quattro oggetti toccati dalla finestra intersezione.
+–  Premere il tasto ESC per annullare il comando. 
+–  Come nel caso della selezione a finestra, alla richiesta di selezione degli oggetti, è 
+possibile indicare al programma che si intende eseguire una selezione ad intersezione con 
+un clic del pulsante sinistro del mouse in un punto che non contiene oggetti, ma è necessa-
+rio in questo caso trascinare il puntatore da destra verso sinistra.
+Fig. VI.4.4  
+4.8  Selezione con intercetta
+Questa opzione permette di selezionare tutti gli oggetti che vengono intersecati da una 
+serie di segmenti collegati tra loro.
+Fig. VI.4.5
+
+[PAG 404]
+VI-30
+CAD
+–  Fare clic sul pulsante Cancella del pannello Edita. Alla richiesta selezionare 
+oggetti digitare:
+Nt (per iNtercetta, seguito da Invio).
+Fare clic nel punto di coordinate 170,70 circa; si vedrà una linea elastica tratteggiata 
+che parte dal punto indicato e si sposta con il puntatore. Fare clic nel punto di coordinate 
+110,150 circa; la linea elastica è ora collegata a questo punto e viene richiesto di indicare 
+un nuovo punto. Fare clic nel punto di coordinate 30,60 circa. Premere Invio per uscire 
+dall’opzione iNtercetta. Viene ancora richiesto selezionare oggetti:, perché sarebbe in 
+ogni caso possibile aggiungerne altri o toglierli dal gruppo di selezione. Premere ancora 
+Invio per dare esecuzione al comando Cancella.
+Il disegno si presenterà come in Fig. VI.4.5.
+4.9  Annullare il comando precedente
+Il comando Annulla o semplicemente a, ha la funzione di annullare il comando prece-
+dente, quindi in questo caso, utilizzando annulla, si annullerà il comando Cancella, quindi 
+si ripristineranno le linee cancellate.
+–  Digitare:
+A (seguito da Invio)
+ricompariranno le linee cancellate. Digitare:
+Rifare (seguito da Invio)
+le linee verranno nuovamente cancellate. Si osservi che utilizzando Annulla e Rifare si 
+passa da una versione all’altra del disegno.
+5  DISEGNO DELLA STELLA
+In questo capitolo si impareranno ad usare molti nuovi comandi di modifica come Co-
+pia, Sposta, Cancella, Ruota, Taglia, Spezza, Estendi, Stampa e ad utilizzare altre opzioni 
+di Snap ad oggetto, come Centro, Quadrante, Intersezione. Inoltre verrà impiegato il fil-
+tro .X. 
+Riavviare il programma richiamando il file “Stella.dwg”.
+5.1  Costruzione del triangolo
+Si vuole costruire un triangolo equilatero che abbia per base il segmento orizzontale 
+rimasto nel disegno precedente. In un triangolo equilatero tutti i lati sono uguali e gli 
+angoli interni valgono 60°. Si dovranno disegnare allora due lati di lunghezza pari a 
+quello di base già presente. Per essere certi di non sbagliare la lunghezza si utilizzerà il 
+comando Copia.
+–  Fare clic sul pulsante Copia, nel pannello Edita. Viene chiesto selezionare 
+oggetti e il puntatore diventa un mirino di selezione. Fare clic sulla linea orizzon-
+tale. Premere Invio per indicare di aver completato la selezione. Viene chiesto il 
+punto base, cioè il punto da dove prendere la linea da copiare. Digitare:
+Fin (opzione di Osnap punto finale, seguito da Invio).
+Viene chiesto di:, quindi fare clic sulla linea orizzontale, nella parte sinistra. Viene 
+chiesto il secondo punto, cioè dove sarà posizionata la copia. Digitare:
+Fin (seguito da Invio). 
+Alla richiesta di: fare clic sulla linea orizzontale, nella parte destra. La linea viene 
+copiata sul lato destro di quella originale collegata esattamente al punto finale. Non si 
+tratta di una linea unica più lunga ma di due oggetti distinti.
+Ruotando la linea copiata di 120° si otterrà il primo lato inclinato del triangolo.
+–  Fare clic sul pulsante Ruota, nel pannello Edita. Alla richiesta selezionare 
+oggetti: digitare:
+
+[PAG 405]
+CAD
+VI-31
+U (che sta per Ultimo, seguito da Invio).
+Si vedrà la linea a destra appena copiata diventare tratteggiata. Premere Invio per 
+completare la selezione. Verrà richiesto il punto base, cioè il punto intorno al quale far 
+ruotare la linea. Digitare:
+Fin (seguito da Invio).
+Viene chiesto di:, fare clic sul lato sinistro della linea ancora tratteggiata. Viene chie-
+sto l’angolo di rotazione. Digitare:
+120 (seguito da Invio).
+Per disegnare il lato sinistro del triangolo risulta molto più semplice collegare esatta-
+mente tra loro i punti finali delle due linee presenti.
+–  Fare clic sul pulsante Linea, nella tavolozza degli strumenti disegna. Alla 
+richiesta specificare primo punto: fare clic sul pulsante Punto finale, nella barra 
+degli strumenti di Osnap. Fare clic sulla linea inclinata nella parte superiore. Si 
+vedrà una linea elastica collegata all’estremità superiore della linea inclinata e viene 
+richiesto il punto successivo. Selezionare il pulsante Punto finale, nella barra degli stru-
+menti di Osnap (si ricorda che si attiva con shift e tasto destro del mouse), fare clic sulla 
+parte sinistra della linea orizzontale e premere Invio per concludere il comando Linea.
+5.2  Centratura del triangolo sul cerchio
+Si vuole posizionare il triangolo esattamente centrato sul cerchio. Saranno necessarie 
+due linee di costruzione per individuare il baricentro del triangolo.
+–  Attivare il comando Linea, dalla tavolozza degli strumenti di disegna. Alla richiesta 
+specificare primo punto: fare clic sul pulsante Punto finale, nella barra degli strumenti di 
+Osnap e quindi fare clic sul lato destro della linea orizzontale. Alla richiesta specificare 
+punto successivo: digitare:
+Per (per Perpendicolare, seguito da Invio).
+Fare clic sul lato inclinato di sinistra e premere Invio per concludere il comando.
+–  Premere ancora Invio per ripetere il comando Linea. Fare clic sul pulsante Punto 
+finale, nella barra degli strumenti di Osnap. Fare clic sul lato sinistro della linea orizzon-
+tale. Digitare:
+Per (seguito da Invio).
+Fare clic sul lato inclinato di destra e premere Invio per concludere il comando linea.
+Il disegno dovrebbe risultare come quello di Fig. VI.5.1.
+Fig. VI.5.1
+
+[PAG 406]
+VI-32
+CAD
+L’intersezione delle due linee di costruzione individua il baricentro del triangolo.
+Occorrerà copiare il triangolo, posizionandolo in modo tale che l’intersezione delle 
+due linee di costruzione vada a coincidere con il centro del cerchio.
+–  Fare clic sul pulsante Copia nel pannello Edita. Alla richiesta di selezionare 
+oggetti: si racchiuda tutto il triangolo con una finestra. Non importa se viene toc-
+cato in parte anche il cerchio, basta non racchiuderlo tutto. Le linee del triangolo e 
+quelle di costruzione dovranno essere tratteggiate. Premere Invio per terminare la sele-
+zione. Verrà richiesto di indicare il punto base. Digitare:
+Int (che sta per Intersezione, seguito da Invio).
+Fare clic posizionando il mirino all’intersezione delle due linee di costru-
+zione. Viene richiesto il secondo punto:, cioè il punto di arrivo. Si vuole far coin-
+cidere il centro del triangolo con il centro del cerchio; si userà l’opzione di Osnap
+Centro. Fare clic sul pulsante Centro, nella barra degli strumenti di Osnap. Fare clic su di 
+un punto qualsiasi della circonferenza. Una copia del triangolo equilatero verrà sovrappo-
+sta al cerchio in modo che i due centri coincidano.
+5.3  Creazione delle altre tre punte della stella
+Si vuole ora capovolgere il triangolo originale, e spostarlo poi sopra il cerchio. 
+Essendo il centro del cerchio già definito non sono più necessarie le linee che individuano 
+il centro del triangolo di destra che si possono quindi eliminare.
+–  Fare clic sul pulsante Cancella, nel pannello Edita. Selezionare le due linee 
+che individuano il centro del triangolo di destra e premere Invio.
+–  Fare clic sul pulsante Ruota, nel pannello Edita. Selezionare con una finestra 
+tutto il triangolo di sinistra comprese le linee interne di costruzione e premere il 
+tasto Invio per terminare la selezione. Verrà richiesto il punto base, cioè il centro 
+di rotazione.
+–  Fare clic sul pulsante Intersezione, nella barra degli strumenti di Osnap. Portare 
+il mirino di selezione all’intersezione delle due linee di costruzione all’interno del 
+triangolo di sinistra e fare clic. Alla richiesta angolo di rotazione: digitare:
+180 (seguito da Invio).
+5.4  Spostamento del secondo triangolo
+Fig. VI.5.2
+
+[PAG 407]
+CAD
+VI-33
+Il triangolo così ruotato deve essere spostato in modo che il suo centro coincida con il 
+centro del cerchio.
+–  Fare clic sul pulsante Sposta, nel pannello Edita. Alla richiesta di selezionare 
+gli oggetti: digitare:
+P (per Precedente seguito da due Invio).
+Viene richiesto il punto base dello spostamento:; digitare:
+Int (seguito da Invio).
+Fare clic, con il puntatore all’intersezione delle due linee di costruzione. Viene ora 
+chiesto il secondo punto:, cioè il punto di arrivo; digitare:
+Cen (seguito da Invio).
+Portare il mirino di selezione su un punto della circonferenza e fare clic; cancellare le 
+due linee interne di costruzione.
+Il disegno si presenterà come in Fig. VI.5.2.
+5.5  Centratura del disegno
+Si desidera centrare il disegno rispetto alla squadratura. Sarebbe possibile individuare 
+il centro della squadratura con due linee di costruzione, spostare il cerchio e i due trian-
+goli in modo da far coincidere il centro con l’intersezione delle due linee di costruzione e 
+quindi cancellare le linee di costruzione.
+Si useranno invece dei cosiddetti filtri di puntamento, molto utili quando non è agevo-
+le tracciare linee di costruzione.
+–  Fare clic sul pulsante Sposta, nel pannello Edita. Selezionare con una finestra 
+tutti gli oggetti e premere Invio per completare la selezione. Alla richiesta del 
+punto base: fare clic sul pulsante Centro, nella barra degli strumenti di Osnap. 
+Fare clic su un punto qualsiasi della circonferenza. Viene richiesto il secondo punto dello 
+spostamento:, cioè il punto di arrivo.
+–  Poiché non esiste nessun oggetto che possa servire da riferimento già posizionato nel 
+centro della squadratura, si usa il filtro .X che sta a significare che per il momento si vuole 
+considerare solo la coordinata lungo l’asse X dell’oggetto che verrà indicato, mentre si 
+penserà alla coordinata Y in un secondo tempo. Digitare:
+.X (seguito da Invio, non si dimentichi il punto davanti alla X)
+alla riga di comando compare scritto di:; il programma sollecita l’indicazione della coor-
+dinata X di qualche oggetto. Il punto da indicare avrà una coordinata lungo l’asse X, 
+uguale a quella del punto medio della linea orizzontale della squadratura. Digitare:
+Med (seguito da Invio).
+Fare clic sulla linea orizzontale in basso della squadratura.
+–  AutoCAD informa che manca la coordinata lungo l’asse Y. La coordinata lungo l’asse 
+Y è quella del punto medio della linea verticale della squadratura. Digitare:
+Med (seguito da Invio).
+Selezionare la linea verticale di sinistra; il disegno risulterà perfettamente centrato.
+5.6  Snap ad oggetto
+Mediante lo snap ad oggetto è possibile allineare esattamente oggetti in via di costru-
+zione con altri già disegnati. Gli strumenti di Osnap si possono richiamare digitando il 
+nome alla riga di comando, o selezionandoli dalla barra degli strumenti di Fig. VI.5.3.
+L’uso dello snap ad oggetto è quasi indispensabile per ottenere un disegno preciso, ma 
+può essere piuttosto noioso digitare o selezionare ogni volta l’opzione appropriata.
+È possibile avere sempre attive le opzioni desiderate, o quelle che si usano più spesso 
+senza richiamarle ogni volta (Autosnap). 
+In questo modo quando, ad esempio disegnando una linea, ci si avvicina ad un’altra, il 
+punto finale si congiungerà esattamente con un estremo, o con il punto medio della prima.
+
+[PAG 408]
+VI-34
+CAD
+Fig. VI.5.3  Menu funzioni di Osnap.
+Per rendere attivi gli snap ad oggetto desiderati è 
+possibile fare clic sull’icona della Calamita nella 
+barra degli strumenti di osnap. Nella finestra di Fig. 
+VI.5.4 si selezionino le impostazioni di Osnap indicate con il 
+segno di spunta.
+A volte, è scomodo avere lo snap ad oggetto attivo. Non 
+sarebbe possibile ad esempio tracciare una linea che arrivi 
+vicino all’estremità di un’altra, perché verrebbe sempre col-
+legata al punto finale. 
+Per questo è possibile attivare e disattivare l’autosnap 
+con il tasto F3 o con un clic sul pulsante OSNAP nella barra 
+di stato.
+Il pulsante Impostazioni osnap della finestra di dialogo 
+ne apre un’altra che permette di impostare delle preferenze: 
+visualizzazione del contrassegno, dei punti di ancoraggio, 
+descrizione dell’oggetto sul quale si esegue lo snap, attiva-
+zione della calamita che blocca il puntatore sul punto di snap 
+più vicino, ecc.
+Fig. VI.5.4   Finestra di dialogo impostazioni disegno.
+5.7  Taglio di entità
+Si desidera eliminare tutte le linee costituenti l’esagono nella parte interna del cerchio, 
+in modo da ottenere il risultato di Fig. VI.5.5.
+
+[PAG 409]
+CAD
+VI-35
+Ovviamente non è possibile utilizzare il comando Cancella, poiché verrebbero elimi-
+nate tutte le linee e non solo la parte interessata.
+I comandi utili per questa operazione sono Spezza e 
+Taglia, che agiscono però in modo diverso. Il comando 
+Spezza, permette di togliere una parte dell’oggetto, com-
+presa tra due punti specificati. Richiede perciò di indicare 
+in modo preciso un punto e quindi è spesso indispensabile 
+usare punti di snap.
+Si userà il comando Spezza per togliere una parte della 
+linea orizzontale in basso.
+–  Fare clic sul pulsante Spezza 
+nel pannello Edita. 
+Il puntatore si trasforma in mirino di selezione e viene 
+richiesto di selezionare l’oggetto. Selezionare la linea oriz-
+zontale in basso lontano altri oggetti. 
+Fig. VI.5.5  
+–  Viene chiesto il secondo punto o P: (per specificare il primo). In questo caso bisogna 
+scegliere l’opzione P. In caso contrario il programma spezzerebbe la linea incominciando 
+dal punto su cui si è fatto clic per selezionarla, e questo punto non è stato indicato con pre-
+cisione.
+Si potrebbe pensare di selezionare la linea, indicando il punto in modo preciso con 
+l’opzione di Osnap Intersezione. Questo non è possibile poiché quando si seleziona 
+l’oggetto da spezzare, bisogna indicare senza ambiguità solo la linea orizzontale; in caso 
+contrario il programma non saprebbe quale delle due scegliere. 
+–  Digitare:
+P (seguito da Invio).
+Fare clic all’intersezione della linea orizzontale con quella inclinata di sinistra 
+all’interno del cerchio, accertandosi di aver attivato il modo autosnap con F3. Alla richie-
+sta del secondo punto: fare clic all’intersezione della linea orizzontale con quella inclinata 
+di destra. 
+Per le altre linee si potrebbe procedere allo stesso modo, ma si vedrà che utilizzando il 
+comando Taglia le cose risultano più semplici.
+–  Fare clic sul pulsante Taglia nel pannello Edita. Viene chiesto di selezionare i 
+limiti di taglio:. Con questo comando non è più necessario indicare dei punti, ma 
+degli oggetti che fanno da delimitazione al taglio rendendo più semplice l’indivi-
+duazione. 
+–  Fare clic sulle tre linee che 
+risulteranno tratteggiate come 
+in Fig. VI.5.6. Premere Invio
+per completare la selezione. 
+Verrà richiesto di selezionare 
+gli oggetti da tagliare:. Fare 
+clic sulle due linee inclinate, 
+nella parte interna del trian-
+golo tratteggiato. Premendo 
+Invio i due segmenti selezio-
+nati vengono rimossi.
+Fig. VI.5.6  
+Fig. VI.5.7
+
+[PAG 410]
+VI-36
+CAD
+–  Premere Invio per ripetere il comando Taglia. Alla richiesta di selezionare i limiti di 
+taglio: selezionare tutti i segmenti rimasti del triangolo appena tagliato (Fig. VI.5.7). Pre-
+mere Invio per completare la selezione. Alla richiesta di selezionare gli oggetti da tagliare: 
+fare clic sui tre segmenti del triangolo capovolto, compresi tra le linee tratteggiate. 
+–  Premere Invio per dare esecuzione al comando.
+Si desidera ora eliminare quelle parti della circonferenza interne alla stella a sei punte. 
+Si userà ancora il comando Taglia, molto più comodo di Spezza, poiché consente di effet-
+tuare tutta l’operazione in una sola volta.
+–  Fare clic sul pulsante Taglia, nel pannello Edita della scheda Inizio. Alla richiesta di 
+selezionare i limiti di taglio: selezionare con una finestra tutti gli oggetti che diventeranno 
+tratteggiati. Digitare:
+Rim (seguito da Invio).
+Viene chiesto di selezionare l’oggetto da cancellare: dall’insieme di selezione.
+–  Fare clic sulla circonferenza. Premere Invio per completare la selezione.
+Viene chiesto di selezionare gli oggetti da tagliare:. Fare clic sui sei archi di cerchio 
+interni alla stella. Premere Invio per concludere il comando.
+Fig. VI.5.8  
+Il disegno dovrebbe risultare come quello di Fig. VI.5.8. Si aggiungerà ora un cerchio 
+concentrico.
+–  Fare clic sul pulsante Cerchio nella tavolozza degli strumenti disegna. Alla richiesta 
+del punto centrale del cerchio: fare clic sul pulsante Centro, nella barra degli strumenti di 
+Osnap. Fare clic su uno dei piccoli archi rimasti. Viene richiesto il valore del raggio. 
+Digitare:
+68 (seguito da Invio).
+Si desidera aggiungere delle linee radiali, che congiungano le punte della stella con la 
+circonferenza esterna. In questo caso si utilizzerà il comando Estendi che, come modo di 
+operare, è simile al comando Taglia, anche se sarebbe più comodo disegnare un solo seg-
+mento e poi eseguire una serie polare.
+–  Fare clic sul pulsante Linea, nella tavolozza degli strumenti disegna. Con l’autosnap 
+attivo avvicinarsi alla punta superiore della stella e fare clic quando compare il contrasse-
+gno Intersezione; avvicinarsi alla punta inferiore e fare clic quando compare il contrasse-
+gno Intersezione. Premere Invio per completare il comando Linea.
+
+[PAG 411]
+CAD
+VI-37
+Ripetere lo stesso procedimento per le altre due coppie diametralmente opposte delle 
+punte della stella.
+–  Fare clic sul pulsante Estendi nel pannello Edita. Viene richiesto di selezio-
+nare il limite dell’estensione:. Fare clic, con il mirino di selezione sulla circonfe-
+renza e premere Invio. Viene chiesto di selezionare gli oggetti da estendere:. Fare 
+clic su ciascuna delle sei linee che partono dal centro e poi Invio per concludere il 
+comando.
+È ora necessario tagliare i tratti di linea interni alla stella.
+–  Fare clic sul pulsante Taglia. Viene chiesto di selezionare i limiti di taglio:. Per fare 
+più velocemente conviene selezionare tutto e poi rimuovere dal gruppo di selezione le tre 
+linee che passano per il centro. Digitare:
+T (che sta per Tutto, seguito da Invio).
+Rim (seguito da Invio)
+selezionare le tre linee che passano per il centro e premere Invio per completare la selezio-
+ne. Viene chiesto di selezionare gli oggetti da tagliare:. Fare clic sulle tre linee radiali 
+nella parte interna alla stella. Premere Invio per completare il comando.
+Si vuole inserire una lettera S di grandi dimensioni, esattamente nel centro della stella. 
+Sarà necessario definire lo stile di testo desiderato e le sue dimensioni.
+–  Fare clic alla voce Stile di testo, nel menu a discesa sotto la voce Formato.
+–  Fare clic sul pulsante Nuovo, per assegnare il nome Centro allo stile. Chiudere questa 
+finestra con un clic su OK. Impostare Romant.shx, come nome del font e 45 come altezza. 
+Fare clic sul pulsante Chiudi.
+–  Nel menu a discesa Disegna selezionare Testo e quindi Riga singola di testo. Verrà ri-
+chiesto il punto iniziale o giustificato:. Poiché si desidera ottenere un testo perfettamente 
+centrato digitare:
+G (per Giustificato, seguito da Invio).
+M (per Mezzo, seguito da Invio).
+Verrà chiesto il punto medio del testo. Con lo Snap attivo fare clic su un arco di cir-
+conferenza. Premere Invio per confermare l’angolo di rotazione 0. Digitare:
+S (premere Invio due volte).
+La lettera digitata si sposterà esattamente nel centro della figura. Il disegno dovrebbe 
+risultare come quello di Fig. VI.5.9.
+Fig. VI.5.9
+
+[PAG 412]
+VI-38
+CAD
+5.8  Stampa del disegno
+Eseguire una stampa di precisione con AutoCAD 2009 è una operazione che richiede 
+molte impostazioni e viene eseguita di solito dallo Spazio carta. Si adotterà invece una 
+impostazione rapida che riproduce sostanzialmente su carta quello che è visualizzato sullo 
+schermo.
+–  Nel menu a discesa File fare clic su Stampa. Si apre la finestra di dialogo di Fig. 
+VI.5.10.
+–  Si controlli che il dispositivo di stampa e le dimensioni del foglio siano quelli effetti-
+vamente in uso.
+Nella sezione Area di stampa selezionare Limiti, per indicare di stampare tutto entro i 
+limiti definiti nel disegno. Nel caso si volesse stampare un particolare è possibile fare clic 
+su Finestra ed indicare la finestra desiderata.
+Si scelga Orientamento Orizzontale del menu Proprietà del sottomenu Personalizza 
+proprietà, per massimizzare l’area di stampa.
+Per la Scala di 
+Stampa in questo 
+caso è possibile indi-
+care 1:1, poiché i 
+limiti corrispondono 
+alle dimensioni del 
+foglio. Altrimenti 
+conviene scegliere 
+Adatta, dal menu a 
+discesa che compare 
+con un clic sul trian-
+golino a destra della 
+finestra Scala. In que-
+sto modo i limiti del 
+disegno vengono in 
+ogni caso adattati alle 
+dimensioni del foglio.
+Fare clic sul pulsante 
+Tutto per visualiz-
+zare una anteprima di 
+stampa. Se l’ante-
+prima visualizza il 
+disegno nel formato 
+desiderato fare clic su 
+OK e verrà avviata la 
+stampa.
+Fig. VI.5.10   Fine-
+stra di dialogo menu di stampa.
+6  SOLUZIONE DI UNA RETE TRIFASE
+In questo capitolo si utilizzeranno le potenzialità del programma per risolvere per via 
+grafica vettoriale un problema di elettrotecnica che, tipicamente, richiede l’uso del cal-
+colo con i numeri complessi. Si approfitterà dell’occasione per introdurre nuovi comandi 
+ed utilità, come Esplodi, Serie polare, Specchio, Arco, Scala, Osnap parallelo, l’interro-
+gazione per conoscere le caratteristiche degli oggetti di disegno.
+
+[PAG 413]
+CAD
+VI-39
+Fig. VI.6.1  Schema elettrico e dati di targa del circuito da dimensionare.
+6.1  Presentazione del problema
+Un sistema trifase simmetrico con tensioni 230/400 alimenta un carico equilibrato 
+costituito da un motore, con le caratteristiche riportate, ed un circuito monofase R-L serie 
+collegato tra le fasi 2 e 3, come da schema di Fig. VI.6.1.
+Si chiede di calcolare le correnti di linea I1, I2, I3.
+Essendo il motore un carico equilibrato, è possibile calcolare il valore delle tre cor-
+renti Im =I1m = I2m = I3m, ed il loro sfasamento come segue:
+Si calcola ora il modulo dell’impedenza del carico monofase, e quindi la corrente Ic
+assorbita, ricordando che è collegato tra le fasi L2 e L3.
+Ic
+L2
+L3
+Ic
+I1
+I2
+I3
+I1m
+I2m
+I3m
+R
+XL
+M
+L1
+M
+Pum
+5Hp
+=
+
+80%
+=
+cos
+0 85
+
+=
+
+
+
+
+
+R
+36
+=
+XL
+30
+=
+Pem
+Pum
+
+---------
+5 736
+
+0 8
+
+---------------
+3680W
+=
+=
+=
+Im
+Pem
+3 U
+
+cos
+
+
+--------------------------------
+3680
+3 400 0 85
+
+
+
+------------------------------------
+6 26A
+,
+=
+=
+=
+m
+0 85
+31 79
+,
+=
+,
+acos
+=
+Zc
+R2
+XL
+2
++
+302
+36
++
+2
+46 86
+,
+=
+=
+=
+Ic
+U
+Zc
+-----
+400
+46 86
+,
+-------------
+8 54A
+,
+=
+=
+=
+
+[PAG 414]
+VI-40
+CAD
+A questo punto sarebbe necessario calcolare le varie correnti vettorialmente, per arri-
+vare a determinare le correnti di linea
+(VI.6.1)
+Utilizzando gli strumenti di AutoCAD, si potranno determinare tali correnti in modo 
+grafico, con la stessa precisione ottenibile mediante il calcolo.
+6.2  Preparazione del foglio
+Dopo aver aperto il programma, impostare sia per le lunghezze che per gli angoli il 
+sistema decimale con due cifre dopo la virgola, mantenere le impostazioni originali per la 
+direzione dell’angolo zero e per il verso di rotazione, impostare le dimensioni del disegno 
+a 150 e 105, metà di quelle del foglio di formato A4.
+–  Eseguire uno Zoom tutto, impostare Griglia e Snap a 5 ed attivarli.
+Invece di disegnare una nuova squadratura, è possibile inserire quella già realizzata, 
+tenendo però presente che le dimensioni dovranno essere dimezzate.
+–  Fare clic su Inserisci, nella barra degli strumenti a discesa, e quindi su Blocco.
+Si apre la finestra di dialogo di Fig. VI.6.2.
+–  Fare clic sul pulsante Sfoglia, selezionare il file squadratura.dwg nella solita directory 
+di lavoro e fare clic su Apri.
+–  Nel riquadro Scala, impostare 0.5 per ambedue gli assi X e Y e fare clic su OK. Tra-
+scinare la squadratura fino a centrarla sul foglio e fare clic.
+–   Il blocco inserito costituisce un oggetto unico e le sue parti non possono essere modi-
+ficate singolarmente.
+–  Poiché si desidera modificare il titolo, la data e i commenti è necessario scomporlo nei 
+suoi elementi costituenti.
+Fig. VI.6.2  Finestra di dialogo menu Inserisci.
+–  Fare clic sul pulsante Esplodi, nella barra multifunzione, scheda Inizio, pan-
+nello Edita. Portare il mirino di selezione su un punto della squadratura e fare 
+clic. Si nota la differenza perché le polilinee sono ritornate linee normali.
+–  Con il comando Ddedit modificare il titolo in “TRIFASE”, aggiornare la data, scrivere 
+nell’ultima riga “diagramma vettoriale tensioni e correnti”.
+c
+XL
+R
+-----
+0 833
+39 8
+,
+=
+,
+atan
+=
+atan
+=
+I1
+I1m
+=
+I2
+I2m
+Ic
++
+=
+I3
+I3m-Ic
+=
