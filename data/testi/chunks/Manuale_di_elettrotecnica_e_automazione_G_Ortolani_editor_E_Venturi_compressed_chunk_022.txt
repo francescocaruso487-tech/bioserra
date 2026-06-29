@@ -1,0 +1,910 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 22/116 ===
+Chars: 43,719 | Offset: 928,503
+
+
+
+[PAG 456]
+VI-82
+CAD
+Fig. VI.9.6  Finestra Adatta di Nuovo stile di quota.
+Fare clic sulla scheda Unità primarie. Eseguire le impostazioni come in Fig. VI.9.7.
+Fig. VI.9.7  Finestra Unità primarie di Nuovo stile di quota.
+Le impostazioni si spiegano da sole. Si osservi solo che è possibile digitare un pre-
+fisso, o un suffisso che verrà disegnato assieme al testo della quota, ad esempio km o anni
+
+[PAG 457]
+CAD
+VI-83
+luce. Tralasciare le altre due schede, di utilità specialistica e fare clic su OK. Fare clic su 
+Chiudi, per terminare l’impostazione e tornare al disegno.
+9.2  Visualizzare la barra degli strumenti di quotatura
+È possibile disegnare le quote utilizzando il menu a discesa Quotatura.
+In questa fase del disegno può essere utile, specialmente se le quote da inserire sono 
+molte, avere a portata di mano la barra degli strumenti di quotatura.
+–  Fare clic sul menu a discesa Visualizza, e quindi su Barre degli strumenti. Nella fine-
+stra di dialogo che compare, usando la barra di scorrimento, individuare Quotature e fare 
+clic nella casella adiacente. Posizionare il puntatore sulla nuova barra degli strumenti, 
+nella zona del titolo, e tenendo premuto il tasto sinistro del mouse, trascinarla fino ad 
+ancorarla sul margine destro dello schermo, rilasciando quindi il pulsante del mouse. Fare 
+clic sul pulsante Chiudi della finestra Barre degli strumenti. In alternativa usare le icone 
+del pannello Quote, della scheda Annota della barra multifunzione.
+9.3  Quotatura della vista di fronte
+–  Aprire la finestra Stile di testo, nel 
+menu a discesa Formato. Selezionare lo 
+stile Standard per renderlo corrente e 
+uscire.
+–  Fare clic sul pulsante Proprietà
+Layer, nel pannello Layer. Fare clic sul 
+pulsante Nuovo, dare il nome quote al 
+nuovo layer, assegnare il colore blu, ren-
+derlo corrente e fare clic su OK. Ese-
+guire uno Zoom finestra, in modo da 
+visualizzare ingrandita, solo la vista 
+frontale. Per la selezione dei punti fare 
+riferimento alla Fig. VI.9.8.
+Fig. VI.9.8  
+9.3.1  Quote lineari
+Per Quote lineari si intendono quelle lungo gli assi X e Y del disegno.
+–  Per quotare gli spessori della flangia verificare che sia attivo il modo Osnap e 
+fare clic sul pulsante Lineare, nel pannello Quote della scheda Annota. Portare il 
+puntatore all’estremità A del segmento verticale, e fare clic quando compare il 
+contrassegno del punto finale, per indicare l’origine della prima linea di estensione. Por-
+tare il puntatore all’estremità B del segmento e fare clic, quando compare il contrassegno 
+del punto finale, per indicare l’origine della seconda linea. Viene chiesta la posizione 
+della linea di quota e si nota che, spostando il puntatore, è possibile posizionarla a piacere. 
+Volendo metterla ad una distanza precisa dalla linea quotata digitare:
+@8<0 (e Invio, per fissarla a otto unità a destra della linea suddetta).
+–  Premere Invio per ripetere il comando Quota lineare. Fare clic sul pulsante 
+Vicino, nella barra degli strumenti di osnap. Portare il puntatore sul punto C, nella 
+parte centrale del segmento verticale, e fare clic quando compare Vicino. 
+–  Fare clic sul pulsante Perpendicolare, nella barra degli strumenti di osnap. 
+Portare il puntatore sul punto D del segmento verticale a sinistra, e fare clic. Fare 
+clic nuovamente per fissare la posizione della linea di quota.
+–  Premere Invio per ripetere il comando Quota lineare. Portare il puntatore sul punto E 
+della vista, e fare clic, quando compare il contrassegno del punto finale, per indicare l’ori-
+gine della prima linea. Portare il puntatore all’estremità superiore F dello stesso segmento 
+verticale e fare clic, quando compare il contrassegno del punto finale, per indicare l’ori-
+G
+E
+I
+L
+H
+C
+M
+B
+A
+D
+F
+
+[PAG 458]
+VI-84
+CAD
+gine della seconda linea di estensione.
+Digitare:
+@8<180 (per porre la quota otto unità a sinistra).
+9.3.2  Quota continua
+La Quota continua serve per effettuare quella che viene chiamata quotatura in serie, 
+dove le varie linee di quota sono tutte disposte una di seguito all’altra.
+–  Fare clic sul pulsante Quota continua, nel pannello Quote della scheda 
+Annota. Si noti che viene disegnata una linea di quota che parte dalla fine della 
+precedente, e viene richiesto l’origine della seconda linea di estensione. 
+–  Portare il puntatore in alto e verso 
+destra, sul punto G, e fare clic, 
+quando compare il contrassegno del 
+punto finale. Premere Invio due 
+volte, per concludere il comando. 
+L’aspetto delle quote è quello di 
+Fig. VI.9.9.
+–  Fare clic sul pulsante Quota line-
+are, nel pannello Quote della scheda 
+Annota.
+Fig. VI.9.9  
+–  Portare il puntatore sul punto A, per indicare l’origine della prima linea di riferimento, 
+e fare clic quando compare il contrassegno del punto finale. Portare il puntatore sul lato 
+sinistro della stessa linea, punto H, per indicare l’origine della seconda linea di riferi-
+mento, e fare clic quando compare il contrassegno del punto finale. Digitare: 
+@8<-90 (e Invio per posizionare la linea di misura otto unità sotto il lato da 
+quotare).
+–  Fare clic sul pulsante Quota continua, nel pannello Quote della scheda Annota. Viene 
+subito tracciata una linea di quota che parte dalla fine della linea di quota precedente e 
+viene richiesto l’origine della seconda linea di estensione. Portare il puntatore verso 
+l’estremità superiore della linea inclinata, sul punto I e fare clic quando compare il con-
+trassegno del punto finale.
+9.3.3  Quota lineare del diametro del rilievo circolare
+Quando si quota il diametro di un cerchio, in una vista dove il cerchio non compare, è 
+obbligatorio anteporre al testo della quota il simbolo del diametro, a meno che non 
+risulti evidente, da altre viste, che si tratta di un cerchio. In questo caso non sarebbe 
+necessario poiché nella vista dall’alto si vede chiaramente che si tratta di un cerchio.
+Si utilizzerà ugualmente questa convenzione per vedere la procedura.Fare clic sul pul-
+sante Quota lineare, nel pannello Quote della scheda Annota. Portare il puntatore sul 
+punto L, del segmento che rappresenta il rilievo circolare, e fare clic per indicare l’origine 
+della prima linea di riferimento. Portare il puntatore sulla parte sinistra dello stesso seg-
+mento, punto G, e fare clic per indicare l’origine della seconda linea di riferimento. Digi-
+tare:
+M (seguito da Invio per modificare il testo).
+Si apre la finestra Modifica testom di Fig. VI.9.10. Controllare che il carattere sia 
+quello definito con le corrette dimensioni, fare clic sul pulsante Simbolo e scegliere con 
+un clic Diametro %%C, che comparirà nella finestra del testo prima delle parentesi. Fare 
+clic su OK. Si noti che davanti al testo di quota compare il simbolo del diametro.
+Digitare:
+
+[PAG 459]
+CAD
+VI-85
+@8<90 (seguito da Invio, per posizionare la quota otto unità sopra il seg-
+mento).
+Fig. VI.9.10  Finestra di dialogo Modifica testom.
+9.3.4  Quotatura dei raggi dei raccordi
+–  Fare clic sul pulsante Quota raggio dal pulsante lineare nel pannello Quote
+della scheda Annota. Il puntatore diventa un mirino di selezione. Portare il mirino 
+sul raccordo in basso a destra, sul punto M, e fare clic. Spostando il puntatore, por-
+tare la lunghezza della linea al valore desiderato e con un angolo di circa 45° e fare clic.
+–  Ripetere il procedimento per gli altri 
+due raccordi.
+Il disegno sarà come quello di Fig. 
+VI.9.11.
+9.4  Quotatura della vista dall’alto
+Usare il comando Pan, per spostare la 
+visualizzazione sulla vista dall’alto.
+Fare riferimento alla seguente Fig. 
+VI.9.12 per individuare i punti indicati.
+Fig. VI.9.11  
+9.4.1  Quote continue
+–  Fare clic sul pulsante Quota line-
+are, nel pannello Quote. Portare il 
+puntatore sul punto N, e fare clic 
+quando compare il contrassegno del 
+punto finale, per indicare l’origine 
+della prima linea di estensione.
+Fig. VI.9.12  
+–  Spostarsi verso destra, sul punto O, e fare clic quando compare il contrassegno di 
+INTersezione. Digitare:
+@8<-90 (seguito da Invio, per posizionare la quota otto unità in basso).
+–  Fare clic sul pulsante Quota continua, nel pannello Quote. Una nuova linea di quota 
+viene collegata alla precedente, e viene chiesto di indicare l’origine della seconda linea di 
+estensione. Portare il puntatore sul punto P, e fare clic. Premere Invio due volte, per con-
+cludere il comando.
+–  Fare clic sul pulsante Quota lineare, nel pannello Quote. Portare il puntatore allo spi-
+golo inferiore destro della vista, ancora il punto P, e fare clic, quando compare il contras-
+U
+V
+N
+O
+P
+Q
+R
+S
+T
+
+[PAG 460]
+VI-86
+CAD
+segno del punto finale. Salire al punto Q, e fare clic quando compare il contrassegno del 
+punto finale. Digitare:
+@8<0 (seguito da Invio, per posizionare la quota otto unità a destra).
+–  Fare clic sul pulsante Quota continua, nel pannello Quote. Posizionarsi sul punto R, e 
+fare clic. Per proseguire ancora con la quotatura continua, portarsi al punto S, e fare clic 
+quando compare il contrassegno del punto finale. Premere Invio due volte per concludere 
+il comando.
+9.4.2  Quote lineari
+–  Fare clic sul pulsante Quota lineare, nel pannello Quote. Portare il puntatore allo spi-
+golo inferiore destro della vista, punto P, e fare clic, quando compare il contrassegno del 
+punto finale. Salire al punto S, e fare clic quando compare il contrassegno del punto 
+finale. Digitare:
+@16<0 (seguito da Invio, per posizionare la quota sedici unità a destra).
+Si vuole ora quotare la posizione del centro del semicerchio, che costituisce il fondo 
+dell’apertura sulla destra della vista dall’alto.
+–  Premere Invio, per ripetere il comando Quota lineare. Portare il puntatore all’estre-
+mità T della linea d’asse, e fare clic quando compare il contrassegno del punto finale. Por-
+tare il puntatore verso destra, sul punto S, e fare clic quando compare il contrassegno del 
+punto finale. Digitare:
+@8<90 (seguito da Invio, per posizionare la quota otto unità sopra il disegno).
+9.4.3  Quote dei cerchi
+Si vogliono quotare il raggio del semicerchio esterno di sinistra ed i diametri dei cer-
+chi interni concentrici.
+–  Fare clic sul pulsante Quota raggio, nel pannello Quote. Fare clic, con il 
+mirino di selezione sull’arco esterno, nel punto U. Posizionare la linea di quota 
+spostando il puntatore e fare clic. 
+–  Fare clic sul pulsante Quota diametro, nel pannello Quote. Fare clic sul cer-
+chio più interno nel punto V, per selezionarlo. Spostare il puntatore verso destra 
+per scegliere la posizione del testo di quota e fare clic. 
+Fig. VI.9.13  
+È da notare che spostandosi invece verso sinistra sarebbe cambiata la geometria della 
+quotatura, mostrando solamente una freccia.
+Il disegno risultante sarà come quello di Fig. VI.9.13.
+9.5  Quotatura della vista di fianco
+Si faccia riferimento alla Fig. VI.9.14 per individuare i punti indicati.
+–  Usando il comando Pan, spostare la visualizzazione sulla vista di fianco.
+–  Attivare il comando Quota lineare, nel pannello Quote, della scheda Annota.
+
+[PAG 461]
+CAD
+VI-87
+–  Posizionare il puntatore nel punto Z, e fare clic per indi-
+care l’origine della prima linea di estensione. Spostarsi a 
+destra sul punto K, e fare clic, quando compare il contrasse-
+gno del punto finale, per indicare l’origine della seconda 
+linea di estensione. Digitare:
+@8<90 (seguito da Invio, per una quota otto 
+unità sotto la nervatura).
+9.5.1  Quota da linea di base
+Questo metodo di quotatura è quello chiamato in paral-
+lelo, dove ogni quota è stabilita rispetto allo stesso punto, 
+preso come riferimento.
+Fig. VI.9.14  
+–  Attivare il comando Quota lineare, nel pannello Quote. Portare il puntatore nel punto 
+X, e fare clic quando compare il contrassegno del punto finale, per indicare l’origine della 
+prima linea di estensione. Salire fino al punto Y, e fare clic, per indicare l’origine della 
+seconda linea. Digitare:
+@8<0 (seguito da Invio, per una quota otto unità a destra del lato da quotare).
+–  Fare clic sul pulsante Quota da linea di base, nel pannello Quote. Compare 
+automaticamente una linea di quota che parte dal punto X, e viene chiesto di speci-
+ficare l’origine della seconda linea di estensione. Salire verticalmente fino al 
+punto W, e fare clic quando compare il contrassegno del punto finale. Verrà posizionata la 
+nuova quota e ci sarà una nuova richiesta di specificare l’origine della seconda linea di 
+estensione. Salire ancora e fare clic sul punto J della vista di fianco. Premere Invio due 
+volte per concludere il comando.
+9.5.2  Quotare i raccordi della nervatura
+Poiché i raccordi sono piuttosto piccoli conviene fare uno zoom, in modo da visualiz-
+zarli agevolmente.
+Fig. VI.9.15  
+–  Attivare il comando Quota raggio, nel pannello Quote. Portare il mirino di selezione 
+sul raccordo di sinistra e fare clic. Spostare il puntatore per posizionare la linea di quota e 
+Z
+K
+X
+Y
+W
+J
+
+[PAG 462]
+VI-88
+CAD
+fare clic. Ripetere il procedimento per quotare il raccordo di destra. Eseguire uno Zoom
+tutto. Il disegno dovrebbe risultare come in Fig. VI.9.15.
+–  Effettuare una stampa del disegno, dallo spazio del modello, scegliendo Stampa dal 
+menu a discesa File. Controllare di avere impostato limiti come area di stampa, scegliere 
+una scala 1:1 e visualizzare l’anteprima.
+9.6  Importare lo stile di quota A4
+Se si desidera riportare le quote sul disegno della flangia, sarà necessario creare uno 
+stile di quota. È possibile ripetere tutte le operazioni fatte per impostare lo stile di quota 
+nel disegno del supporto. È però possibile utilizzare lo stile di quota già creato ed impor-
+tarlo nel disegno della flangia.
+Fig. VI.9.16 
+–  Avviare il programma e aprire il file 
+flangia.dwg. Fare clic alla voce Apri del 
+menu a discesa File. Selezionare il file sup-
+porto.dwg, e fare clic sul pulsante Apri.
+Una delle novità di AutoCAD 2009 è 
+quella di poter aprire più file di disegno 
+contemporaneamente. Selezionando Docu-
+menti aperti nel menu a discesa del browser 
+(Fig. VI.9.16) è possibile scegliere quale 
+dei file visualizzare, o anche averli a 
+schermo allo stesso tempo in due finestre 
+distinte affiancate orizzontalmente o verti-
+calmente.
+–  Attivare il menu AutoCAD Design Cen-
+ter (tasti ctrl+2). Si apre la finestra di Fig. 
+VI.9.17, nella quale sono indicati i due file 
+di disegno aperti, con un segno + a sinistra.
+–  Fare clic sul segno + alla sinistra del 
+nome dei due file. Verrà visualizzato un 
+elenco di elementi contenuti nei disegni, 
+come layer, tipi di linea, stili di testo ecc. 
+come si vede in Fig. VI.9.18.
+Fig. VI.9.18
+Fig. VI.9.17  
+Con un clic sulla voce Stili di quota, 
+nella finestra di sinistra, relativa al 
+file flangia .dwg, in quella di destra 
+vengono mostrati gli stili presenti, in 
+questo caso solo quello di default 
+ISO-25. Fare clic sulla voce Stili di 
+quota, nella finestra di sinistra, rela-
+tiva al file supporto.dwg. Nella fine-
+stra di destra compare ancora lo stile 
+di default, ma anche lo stile A4. 
+Nell’area disegno di AutoCAD è aperto il file flangia.dwg.; 
+fare clic sullo Stile di quota A4, nella finestra destra di 
+AutoCAD Design Center e, tenendo premuto il pulsante 
+sinistro del mouse trascinare l’icona nella finestra del dise-
+gno della flangia.dwg. Se ora si seleziona Stili di quota
+
+[PAG 463]
+CAD
+VI-89
+nella finestra a sinistra, relativo al file flangia.dwg, sarà presente anche lo stile A4, come 
+in Fig. VI.9.19.
+Fig. VI.9.19  
+–  Chiudere la finestra AutoCAD Design Center, con un clic sul pulsante di chiusura.
+–  Fare clic sul pulsante Finestra nel menu a discesa e quindi su supporto.dwg per ren-
+derlo corrente.
+–  Fare clic su File, nel menu a discesa, e quindi su Chiudi, per chiudere il disegno del 
+supporto che non viene più impiegato.
+Rimarrà solo il disegno della flangia con lo stile di quota A4 già impostato. Non verrà 
+descritta la quotatura della flangia, ma lasciata come esercizio.
+–  È importante notare che con l’impiego di AutoCAD Design Center, è possibile impor-
+tare in un disegno, non solo gli stili di quota, ma anche stili di testo, tipi di linea, defini-
+zioni di blocco ecc.
+10  PROIEZIONI ASSONOMETRICHE
+Le proiezioni ortogonali descrivono la geometria dell’oggetto rappresentato e le sue 
+dimensioni in modo preciso, ma richiedono un notevole sforzo mentale per ricostruire la 
+vera forma tridimensionale.
+L’assonometria, pur essendo una simulazione e non un vero disegno tridimensionale, 
+fornisce una rappresentazione più intuitiva della forma reale.
+Nella rappresentazione assonometrica, l’oggetto viene proiettato per mezzo di un fa-
+scio di raggi paralleli tra loro, come nel caso delle proiezioni ortogonali, ma questi raggi 
+formano un angolo diverso da 90° rispetto al piano di proiezione.
+Si immagini di far coincidere tre piani, ,,, con le tre facce di un cubo con un ver-
+tice nel punto O. Il piano di proiezione taglia i tre piani staccando dagli assi i segmenti 
+OA, OB, OC, e su di esso viene proiettato il cubo con raggi paralleli (Fig. VI.10.1). Si 
+possono avere vari tipi di proiezioni assonometriche a seconda che i segmenti OA, OB, 
+OC siano uguali o diversi tra loro.
+AutoCAD fornisce particolari facilitazioni per il disegno in assonometria isometrica, 
+dove i tre segmenti hanno dimensioni uguali. Poiché nessun lato viene visto di fronte, le
+
+[PAG 464]
+VI-90
+CAD
+dimensioni saranno ridotte, ma il rapporto di riduzione è uguale per tutte le direzioni. Gli 
+assi saranno disposti a 120° tra loro.
+Fig. VI.10.1  Esempio di proiezione assonometrica.
+Come si può notare nella 
+Fig. VI.10.2, la griglia assono-
+metrica che viene visualizzata a 
+schermo ha tre assi principali: 
+uno verticale, uno a 30°, uno a 
+150°. Poiché al piano alto, di 
+destra e di sinistra, sono associa-
+te coppie di assi diverse, e consi-
+derato che il programma in que-
+sta modalità gestisce solo due 
+assi alla volta, sarà necessario 
+specificare su quale piano si sta 
+lavorando, per poter trarre van-
+taggio dal modo Orto e visualiz-
+zare correttamente i cerchi sotto 
+forma di ellissi.
+Fig. VI.10.2  
+10.1  Disegno del dado
+Per apprendere gli aiuti di AutoCad per il disegno assonometrico, si realizzerà l’asso-
+X
+Y
+Z
+O
+A
+B
+C
+
+
+
+X
+Destra
+Sinistra
+Alto
+150°
+30°
+90°
+
+[PAG 465]
+CAD
+VI-91
+nometria isometrica di un dado da gioco. Verranno impiegati nuovi comandi quali: Snap 
+assonometrico, Ellisse, Tratteggia, oltre a nuove funzioni di Osnap ad oggetto come per 
+esempio Tangente. Il disegno finale sarà come quello di Fig. VI.10.3.
+Fig. VI.10.3  
+10.2  Impostazioni preliminari
+Avviato il programma, iniziare dal modello corso.dwt. Usare il comando Ddedit, o 
+cliccare due volte sul tasto sinistro del mouse, per cambiare il titolo del disegno in DADO
+ed aggiornare la data. Eseguire uno Zoom tutto.
+–  Fare clic sul pulsante Proprietà layer, nel pannello Layer. Usando il pulsante Nuovo
+layer, creare due layer, uno di nome Cost, per tracciare linee di costruzione, al quale si 
+assegnerà il colore blu, l’altro di nome Tratt per il tratteggio, assegnando il colore rosso. 
+Rendere corrente il layer Ogg e uscire con un clic su OK. Selezionare Salva con nome dal 
+menu a discesa File, e salvare nella directory di lavoro con il nome Dado.
+10.3  Snap assonometrico
+Fig. VI.10.4  
+–  Nel menu a discesa 
+Strumenti, fare clic su 
+Impostazioni disegno.
+–  Scegliere la cartella 
+Snap e Griglia. Impostare la 
+spaziatura della griglia 10, 
+l’intervallo di snap a 5 e 
+selezionare le caselle Snap
+e Griglia. Nella sezione 
+Tipo e stile snap selezio-
+nare la voce Snap assono-
+metrico e fare clic su OK. 
+–  Nell’area grafica (Fig. 
+VI.10.4) si nota che la gri-
+glia non ha più una spazia-
+tura uniforme di dieci 
+unità, riferite ai due assi X
+
+[PAG 466]
+VI-92
+CAD
+e Y normali, e anche il puntatore non ha la forma consueta a croce, ma mostra due linee 
+inclinate tra loro. Le direzioni mostrate sono quelle dei due nuovi assi, che individuano il 
+piano di sinistra, e quindi permettono di disegnare, per il momento, su questo piano.
+–  Si prema più volte il tasto F5. Ad ogni pressione la direzione degli assi cambia, indivi-
+duando alternativamente il piano alto, quello di destra, poi ancora quello di sinistra, e così 
+via. Per disegnare comodamente sui tre piani, utilizzando in modo efficace la griglia di 
+snap e il modo Orto, sarà allora sufficiente premere F5 fino a commutare gli assi sul piano 
+desiderato.
+10.4  Disegno del cubo
+–  Premere F5 in modo da posizionarsi sul piano alto. Gli assi avranno inclinazioni di 
+30° e 150°. Attivare il modo Orto, se non lo è già, premendo F8. 
+–  Fare clic sul pulsante Linea, nella barra del pannello Disegno. Con il modo Snap
+attivo, portare il puntatore sul punto di griglia di coordinate 51.96,80 (visualizzate nella 
+barra di stato) e fare clic per fissare il primo punto. Spostando il puntatore si noti che, 
+essendo attivato il modo Orto, la linea è costretta a restare allineata con i due assi e può 
+assumere solo direzioni di 30°, 150°, 210°, 330° rispetto all’orizzontale, come si rileva 
+osservando il valore delle coordinate indicato nella barra di stato. Portare il puntatore a 
+destra e in basso di sei punti di griglia e fare clic quando compaiono le coordinate relative 
+60<330, per indicare il punto successivo. Portare il puntatore in alto e a destra e fare clic 
+alle coordinate 60<30. Salire in alto a sinistra e fare clic quando si raggiungono le coordi-
+nate 60<150. Spostarsi in basso e a sinistra, fino al punto iniziale della linea e fare clic. 
+Premere Invio per concludere il comando Linea.
+È necessario notare che fino a che i punti vengono specificati spostando il puntatore 
+con il mouse, il modo Orto è efficace e le linee inclinate degli assi vengono appunto con-
+siderate ortogonali tra loro, ma dovendo assegnare le coordinate da tastiera, perché ad 
+esempio il punto non si trova sulla griglia di snap, occorre specificare la distanza relativa 
+e l’angolo vero riferito all’orizzontale, come evidenziato dalle coordinate sulla barra di 
+stato.
+Per disegnare la faccia superiore del cubo la modalità più veloce è copiare quella infe-
+riore, già editata.
+–  Fare clic sul pulsante Copia, nel pannello Edita della scheda Inizio. Selezionare con 
+una finestra ad intersezione le quattro linee disegnate. Premere Invio, per completare la 
+selezione. Premere F5, per commutare il piano assonometrico in modo da avere un asse 
+verticale. Portare il puntatore sul vertice in basso e fare clic, per indicare il punto base. 
+Portare il puntatore sul vertice in alto e fare clic, per specificare il secondo punto dello 
+spostamento.
+Bisogna ora disegnare i lati verticali del cubo. Assicurarsi di avere uno dei due assi in 
+posizione verticale.
+–  Attivare il comando Linea dalla tavolozza degli strumenti disegna. Portare il puntatore 
+sul vertice di sinistra della faccia superiore e fare clic. Scendere verticalmente e fare clic 
+sul vertice sinistro della faccia inferiore, per indicare il punto successivo. Premere Invio
+per concludere il comando.
+–  Premere Invio per ripetere il comando Linea. Portare il puntatore nel vertice più in 
+alto della faccia superiore e fare clic. Scendere e fare clic sul vertice più in basso della 
+faccia inferiore. Premere Invio o Barra spazio per concludere il comando.
+–  Premere Invio per ripetere il comando Linea. Portare il puntatore sul vertice di destra 
+della faccia superiore e fare clic. Scendere verticalmente e fare clic sul vertice destro della 
+faccia inferiore. Premere Invio per concludere il comando.
+Il disegno del cubo è stato portato a termine in modo piuttosto semplice (Fig. VI.10.5),
+
+[PAG 467]
+CAD
+VI-93
+anche se non sarebbe stato molto più complicato eseguirlo senza l’aiuto dello Snap asso-
+nometrico. Si vedrà che invece questo aiuto è molto importante per il disegno di cerchi ed 
+archi.
+Fig. VI.10.5  
+10.4.1  Arrotondare i vertici del cubo
+Nei dadi da gioco, tutti i vertici sono arrotondati; nel caso specifico si desidera asse-
+gnare agli arrotondamenti un raggio di 20 unità. Si potrebbe pensare di utilizzare il 
+comando Raccorda, ma il risultato non sarebbe soddisfacente, perché le varie facce non 
+sono viste di fronte e quindi gli archi devono essere rappresentati come archi di ellisse. Si 
+inizierà dallo spigolo posto proprio nel centro della figura.
+–  Eseguire uno Zoom finestra intorno a questo punto indicando i vertici opposti nei 
+punti di coordinate 70,140 e 140,80 circa.
+–  Premere il tasto F5, per posizionarsi nel piano assonometrico alto.
+–  Fare clic sul pulsante Ellisse, nella tavolozza degli strumenti disegna. Digitare:
+As (per Cerchio Assonometrico, e Invio).
+Viene chiesto di indicare il centro del cerchio assonometrico. Salire di due punti di 
+griglia rispetto al vertice centrale del cubo, e fare clic. Digitare:
+20 (seguito da Invio, per assegnare il raggio).
+Viene disegnata un’ellisse tangente ai due lati della faccia superiore del cubo. 
+–  Premere il tasto F5. Gli assi si posizioneranno in modo da poter disegnare nel piano di 
+destra. Disattivare il modo Osnap premendo F3.
+–  Premere Invio per ripetere il comando Ellisse. Digitare:
+As (per Cerchio Assonometrico, e Invio).
+Posizionare il puntatore due punti di griglia in basso e due a destra del vertice del 
+cubo e fare clic, per indicare il centro del cerchio assonometrico. Portare il puntatore 
+verso l’alto fino al punto di tangenza con l’altra ellisse disegnata (Fig. VI.10.6) e fare clic 
+per indicare il raggio. Ovviamente sarebbe stato possibile indicare il raggio digitando 20.
+–  Premere il tasto F5. Gli assi si posizioneranno in modo da poter disegnare nel piano di 
+sinistra.
+–  Premere Invio per ripetere il comando Ellisse. Digitare:
+
+[PAG 468]
+VI-94
+CAD
+As (e Invio).
+Posizionare il puntatore 
+due punti di griglia in 
+basso e due a sinistra 
+rispetto al vertice del 
+cubo e fare clic, per indi-
+care il centro del cerchio 
+assonometrico. Portare il 
+puntatore verso l’alto 
+fino al punto di tangenza 
+con la prima ellisse dise-
+gnata, e fare clic, per in-
+dicare il raggio.
+Fig. VI.10.6  
+10.4.2  Taglio delle ellissi e delle linee
+È ora necessario tagliare parte delle 
+ellissi, fino a far rimanere solo i tre 
+archi interni tangenti gli spigoli del 
+cubo, e le linee che si trovano 
+all’interno dell’area delimitata da 
+questi archi.
+–  Fare clic sul pulsante Taglia, 
+nella tavolozza degli strumenti 
+Edita. Selezionare le tre linee (Fig. 
+VI.10.7), per indicare i limiti di 
+taglio. Premere Invio per conclude-
+re la selezione dei limiti.
+Fig. VI.10.7  
+–  Selezionare le tre ellissi, nella parte più lontana dal vertice del cubo, per indicare le 
+parti da tagliare. Premere Invio o Barra spazio per concludere il comando.
+–  Premere Invio per ripetere il 
+comando Taglia. Selezionare i tre 
+archi di ellisse rimasti, per indi-
+care i limiti di taglio, come in Fig. 
+VI.10.8. Premere Invio, per con-
+cludere la selezione dei limiti.
+–  Fare clic sulle linee all’interno 
+dell’area delimitata dai tre archi, 
+per specificare gli oggetti da ta-
+gliare. Premere Invio per conclu-
+dere il comando. Eseguire uno 
+Zoom tutto, per avere una visione 
+d’insieme del risultato.
+Fig. VI.10.8  
+Si desidera procedere arrotondando il vertice più in basso del cubo. Gli assi assono-
+metrici dovrebbero essere disposti secondo il piano di sinistra; si portino altrimenti con 
+F5 in questa posizione. Eseguire uno Zoom finestra intorno al vertice inferiore.
+
+[PAG 469]
+CAD
+VI-95
+–  Fare clic sul pulsante Ellisse, nella tavolozza degli strumenti Disegna. Digi-
+tare:
+As (per Cerchio Assonometrico, e Invio).
+Viene chiesto di indicare il centro del cerchio assonometrico. Salire di due punti di 
+griglia rispetto al vertice inferiore del cubo, e verso sinistra di altri due punti, quindi fare 
+clic, per indicare il centro dell’ellisse. Digitare:
+20 (seguito da Invio, per assegnare il raggio).
+Viene disegnata un’ellisse tangente i due lati della faccia sinistra del cubo.
+–  Premere F5 per commutare nel piano assonometrico alto.
+–  Attivare il comando Ellisse. Digitare:
+As (seguito da Invio).
+Posizionare il puntatore due punti di griglia in alto, sopra il vertice inferiore del cubo 
+e fare clic, per indicare il centro dell’ellisse. Digitare:
+20 (seguito da Invio, per assegnare il raggio).
+Viene disegnata un’ellisse tangente i due lati della faccia inferiore del cubo. 
+–  Premere F5 per commutare nel piano assonometrico di destra.
+–  Premere Invio per ripetere il comando Ellisse. Digitare:
+As (seguito da Invio).
+Posizionare il puntatore due 
+punti di griglia in alto, sopra il 
+vertice inferiore del cubo e due 
+verso destra e fare clic, per indi-
+care il centro dell’ellisse. Porta-
+re il puntatore due punti di gri-
+glia in basso, fino a portare 
+l’ellisse ad essere tangente la 
+linea verticale e a quella inclina-
+ta di destra, come in Fig. VI.10.9
+e fare clic.
+Si procede ora al taglio delle 
+ellissi e delle linee.
+Fig. VI.10.9  
+–  Attivare il comando Taglia, dalla tavolozza degli strumenti Edita. Selezionare la linea 
+verticale e le due inclinate, per indicare i limiti di taglio. Premere Invio per completare la 
+selezione. Fare clic sulle parti di ellisse che si vogliono eliminare. Premere Invio, per con-
+cludere il comando Taglia.
+–  Premere Invio, per ripetere il comando Taglia. Selezionare i due archi di ellisse sini-
+stro e destro, per indicare i limiti di taglio. Premere Invio per concludere la selezione. Fare 
+clic sui tre segmenti vicino al vertice che si vogliono eliminare. Premere Invio, per con-
+cludere il comando.
+–  Con il comando Pan portare la visualizzazione al vertice inferiore sinistro. Premere 
+F5 per lavorare nel piano assonometrico di sinistra.
+–  Fare clic sul pulsante Ellisse, nella tavolozza degli strumenti Disegna. 
+–  Digitare:
+As (seguito da Invio).
+Viene chiesto di indicare il centro del cerchio assonometrico. Salire di due punti di 
+griglia rispetto al vertice inferiore sinistro, e verso destra di altri due punti, quindi fare 
+clic, per indicare il centro dell’ellisse. 
+Digitare:
+
+[PAG 470]
+VI-96
+CAD
+20 (seguito da Invio, per assegnare il raggio).
+Poiché nel dado finito non 
+sono visibili gli altri arrotonda-
+menti, non sarà necessario dise-
+gnare le altre ellissi, ma si proce-
+derà subito al taglio delle parti non 
+visibili.
+–  Attivare il comando Taglia
+dalla tavolozza degli strumenti 
+Edita. Selezionare l’ellisse appena 
+disegnata e le due linee di Fig. 
+VI.10.10 per indicare i limiti di 
+taglio. Premere Invio per comple-
+tare la selezione dei limiti. Fare clic 
+sull’ellisse nella parete lontana dal 
+vertice e sui due segmenti vicino al 
+vertice. 
+Fig. VI.10.10  
+–  Premere Invio per concludere il comando Taglia.
+•  
+•  
+•  
+•  
+•  
+•  
+•  
+•  
+•  
+•  
+•  
+•  
+•  
+•  
+•  
+•  
+Fig. VI.10.11  
+Fig. VI.10.12  
+–  Usando il comando Cancella, eliminare la linea inclinata che fuoriesce dall’ellisse. 
+Eseguire uno Zoom tutto, per vedere il disegno nel suo insieme. Il disegno dovrebbe appa-
+rire come in Fig. VI.10.11.
+Si usi lo stesso procedimento seguito fino ad ora per smussare gli altri quattro vertici 
+visibili rimasti. Cancellare quindi tutti gli elementi non visibili perché nascosti. 
+Il risultato sarà quello di Fig. VI.10.12.
+10.5  Cerchi interni
+Si disegnino ora i cerchi che rappresentano il punteggio nei dadi da gioco. Trovandosi 
+su piani assonometrici, dovranno essere disegnati come ellissi. Inoltre, per evidenziarli in
+
+[PAG 471]
+CAD
+VI-97
+colore, verrà utilizzato un motivo di tratteggio.
+–  Effettuare uno Zoom finestra intorno alla faccia superiore del dado. Rendere corrente 
+il layer cost, dalla finestra di Controllo layer. Premere F5 fino a rendere attivo il piano 
+assonometrico alto.
+–  Usando il comando Linea, 
+disegnare un quadrato assonome-
+trico centrato sulla faccia supe-
+riore con lato 30. Disegnare la 
+linea verticale diagonale del qua-
+drato. Il risultato è mostrato in 
+Fig. VI.10.13.
+–  Rendere corrente il layer tratt. 
+–  Fare clic sul pulsante Ellisse, 
+nella tavolozza degli strumenti 
+Disegna. Digitare:
+Fig. VI.10.13  
+As (seguito da Invio).
+Con il modo Snap attivo, fare clic sul vertice più in basso del quadrato assonometrico 
+appena disegnato, per specificare il centro dell’ellisse. Digitare:
+5 (e Invio, per specificare il raggio).
+–  Fare clic sul pulsante Copia, nella tavolozza degli strumenti Edita. Selezionare 
+l’ellisse appena disegnata. Premere Invio, per concludere la selezione. Digitare:
+M (che sta per Multiplo, seguito da Invio).
+In questo modo si comunica al programma che si vogliono posizionare più copie 
+dell’oggetto. Portare il puntatore nel centro dell’ellisse, sul punto di snap e fare clic per 
+indicare il punto base. Portare il puntatore successivamente sugli altri tre vertici del qua-
+drato assonometrico e fare clic ogni volta, per posizionare una copia dell’ellisse. 
+–  Fare clic sul pulsante Snap medio, nella barra degli strumenti di osnap. Portare il pun-
+tatore sulla linea verticale, diagonale del quadrato assonometrico, e fare clic per posizio-
+nare la quinta ellisse. Premere Invio, per concludere il comando Copia.
+10.5.1  Motivo di tratteggio
+Fig. VI.10.14  Tavolozza modelli di tratteggio.
+Occorre che i cinque cerchi assonometrici 
+disegnati risultino completamente colorati. In 
+genere per ottenere questo risultato per i cerchi 
+si usa il comando Anello, impostando il dia-
+metro interno a 0. In questo caso non è possi-
+bile perché l’anello è di forma circolare e non 
+ellittica. Per il riempimento verrà usato un mo-
+tivo di tratteggio. Congelare il layer cost, dalla 
+finestra di Controllo layer.
+–  Fare clic sul pulsante Tratteggio, nel pan-
+nello Disegna della scheda Inizio. Nella fine-
+stra che si apre scegliere la cartella Tratteggio
+e controllare che alla voce Tipo sia indicato 
+Predefinito. Fare clic sul pulsante con i puntini 
+a destra della casella Modello. Si apre la fine-
+stra di dialogo di Fig. VI.10.14 che permette di 
+scegliere tra vari motivi di tratteggio.
+
+[PAG 472]
+VI-98
+CAD
+–  Nella cartella Altri predefiniti, fare 
+clic sul modello SOLID e quindi su OK. 
+Si ritorni alla finestra precedente e si 
+clicchi sul pulsante Seleziona oggetti. La 
+finestra si chiude per permettere di sele-
+zionare nel disegno gli oggetti ai quali 
+applicare il tratteggio. Selezionare i cin-
+que cerchi assonometrici, che divente-
+ranno tratteggiati e premere Invio per 
+completare la selezione. Fare clic sul 
+pulsante Anteprima, per visualizzare il 
+risultato dell’operazione. Premere il pul-
+sante destro del mouse per ritornare alla 
+finestra di dialogo e fare clic su OK per 
+applicare il motivo, se il risultato è 
+quello desiderato (Fig. VI.10.15).
+Fig. VI.10.15  
+10.5.2  Altre linee di costruzione
+–  Scongelare e rendere corrente il layer cost. Usando il comando Pan visualizzare al 
+meglio le facce di sinistra e di destra. Premere F5 fino ad attivare il piano assonometrico 
+di sinistra. Se fosse attivo, disattivare il modo Orto e, se necessario, attivare il modo Snap.
+Fig. VI.10.16  
+–  Fare clic sul pulsante Linea, nella 
+tavolozza degli strumenti Disegna. Por-
+tare il puntatore in alto a sinistra a un 
+punto e mezzo di griglia sotto lo spigolo 
+superiore ed a un punto e mezzo di gri-
+glia a destra dello spigolo sinistro del 
+dado (coordinate 65,117.5 circa) e fare 
+clic. Scendere verso il basso e a destra, 
+nel punto simmetricamente opposto 
+rispetto al centro della faccia sinistra del 
+dado e fare clic per indicare il punto 
+finale. Premere Invio, per concludere il 
+comando. Premere F5 per attivare il 
+piano assonometrico di destra.
+–  Premere 
+Invio, 
+per 
+ripetere 
+il 
+comando Linea. Portare il puntatore in 
+alto a destra a un punto e mezzo di griglia sotto il vertice superiore ed a un punto e mezzo 
+a sinistra dello spigolo destro del dado (coordinate 142.9,117.5 circa) e fare clic. Attivare 
+il modo Orto con F8 e spostarsi parallelamente al lato superiore della faccia di destra fino 
+ad un punto e mezzo di griglia dal lato verticale in centro e fare clic, per indicare il punto 
+finale. Premere Invio, per concludere il comando.
+–  Premere Invio, per ripetere il comando Linea. Disegnare una linea uguale alla prece-
+dente, simmetrica rispetto alla mezzeria della faccia destra. Queste linee di costruzione 
+serviranno per posizionare correttamente i cerchi assonometrici (Fig. VI.10.16). 
+10.5.3  Cerchi assonometrici
+–  Rendere corrente il layer Tratt, usando la casella di Controllo layer.
+
+[PAG 473]
+CAD
+VI-99
+–  Fare clic sul pulsante Ellisse, nella tavolozza degli strumenti Disegna. Digitare:
+As (seguito da Invio).
+Portare il puntatore all’estremità destra della linea superiore della faccia destra del 
+dado, e fare clic, per indicare il centro del cerchio assonometrico. Digitare:
+5 (seguito da Invio, per specificare il raggio). 
+Attivare il comando Copia, dalla tavolozza degli strumenti Edita. Digitare:
+–  U (che sta per ultimo, seguito da Invio, per selezionare l’ultimo oggetto disegnato, cioè 
+l’ellisse).
+Premere Invio per completare la selezione. Digitare:
+M (che sta per Multiplo).
+Fig. VI.10.17  
+Portare il puntatore nel centro dell’ellisse 
+selezionata, che corrisponde al punto finale 
+della linea, e fare clic, per indicare il punto 
+base. Portare il puntatore successivamente sui 
+tre punti finali rimanenti delle due linee, 
+facendo un clic su ciascuno. Fare clic sul pul-
+sante Snap medio, nella barra degli strumenti 
+di osnap. Portare il mirino sulla linea superiore 
+e fare clic, per inserire una copia dell’ellisse 
+nel punto medio della linea. Fare clic ancora 
+sul pulsante Snap medio, nella barra degli stru-
+menti di osnap. Portare il mirino sulla linea 
+inferiore e fare clic, per inserire una copia 
+dell’ellisse nel punto medio della linea inferio-
+re. Premere Invio per concludere il comando.
+–  Premere F5 per attivare il piano assonome-
+trico di sinistra. Fare clic sul pulsante Ellisse
+nella tavolozza degli strumenti Disegna. Digitare:
+As (seguito da Invio).
+Portare il puntatore all’estremità superiore della linea di costruzione della faccia sini-
+stra del dado e fare clic, per specificare il centro. Digitare:
+5 (seguito da Invio, per assegnare il raggio).
+–  Attivare il comando Copia, dalla tavolozza degli strumenti Edita. Digitare:
+U (seguito da Invio, per selezionare l’ellisse appena disegnata).
+Premere Invio, per completare la selezione. Digitare:
+M (che sta per Multiplo, per indicare che si vogliono effettuare più copie 
+dell’oggetto).
+Portare il puntatore nel centro dell’ellisse selezionata, e fare clic, per indicare il punto 
+base. Portare il puntatore all’altra estremità della linea di costruzione e fare clic, per posi-
+zionare la prima copia. Fare clic sul pulsante Snap medio, nella barra degli strumenti di 
+osnap. Portare il puntatore sulla linea di costruzione e fare clic, per inserire una copia 
+dell’ellisse nel punto medio della linea. Premere Invio, per completare il comando.
+Il disegno sarà come quello visualizzato in Fig. VI.10.17.
+10.5.4  Riempimento dei cerchi
+–  Congelare il layer cost, usando la casella di Controllo layer.
+–  Fare clic sul pulsante Tratteggia, nel pannello Disegna. 
+Nella finestra di dialogo scegliere la cartella Tratteggio e fare clic sul pulsante con i 
+puntini a destra della casella con il nome del modello di riempimento. Selezionare il
+
+[PAG 474]
+VI-100
+CAD
+modello SOLID e fare clic sul pulsante OK. Nuovamente nella finestra Tratteggia, fare 
+clic sul pulsante Seleziona oggetti. Fare clic su tutti i cerchi assonometrici disegnati per 
+selezionarli. Premere Invio per concludere la selezione. Fare clic sul pulsante Anteprima, 
+per controllare se il risultato è quello desiderato. Premere Invio per ritornare alla finestra 
+di dialogo. Fare clic sul pulsante OK, per applicare il tratteggio e tornare al disegno. Il 
+risultato dovrebbe essere quello della Fig. VI.10.3 di Pag. VI.91.
+10.6  Ingrossare le linee
+Nei disegni precedenti, si sono ingrossati gli spigoli in vista trasformando gli oggetti 
+in polilinee con il comando Editpl, ed assegnando a queste una larghezza.
+Se si tentasse di utilizzare questa procedura per il disegno corrente, il programma ci 
+informerebbe che i tratti ellittici non sono polilinee (e non è possibile renderli tali). Non è 
+quindi possibile assegnare la larghezza.
+In AutoCAD esiste la possibilità di assegnare uno spessore agli oggetti, utile per la 
+visualizzazione e la stampa, anche se il manuale stesso ne sconsiglia l’uso quando si vuole 
+rappresentare lo spessore preciso di un oggetto specifico.
+Anche la rappresentazione su schermo degli oggetti con spessore non è accurata come 
+quella ottenuta con le polilinee, ma il risultato è buono per quanto riguarda la stampa.
+–  Fare clic sul pulsante Proprietà layer, nel pannello Layer. Si apre la finestra di dia-
+logo per l’impostazione delle caratteristiche dei layer. Si noti che nella colonna Spessore 
+di linea è indicato Default ovunque. Il valore di default è controllato dalla variabile di 
+sistema LWDEFAULT e se non è stato espressamente modificato vale 25, che corri-
+sponde ad uno spessore di linea in fase di stampa di 0.25 millimetri.
+–  Fare clic su default, 
+nella colonna dello spes-
+sore della linea relativa al 
+layer ogg. Si apre la fi-
+nestra di Fig. VI.10.18
+che permette di impostare 
+uno spessore diverso. Se-
+lezionare la riga corri-
+spondente allo spessore 
+di 0.5 millimetri e fare 
+clic su OK.
+Si osservi che, nella fine-
+stra di gestione dei layer, 
+al layer ogg. è ora asso-
+ciato lo spessore di linea 
+0.5 mm. Fare clic su OK
+per concludere e tornare 
+al disegno.
+Fig. VI.10.18  Gestione proprietà layer.
+Nell’area grafica il disegno avrà le stesse caratteristiche di prima.
+–  Fare clic sul pulsante SLN, Mostra/nascondi spessore di linea, nella barra di stato.
+Si osserverà che tutte le linee del layer ogg sono ingrossate, anche se lo spessore 
+mostrato a video non è corrispondente a quello impostato.
+
+[PAG 475]
+CAD
+VI-101
+10.7  Stampa del disegno
+–  Fare clic su Stampa, nel menu a discesa File. Controllare che per le dimensioni del 
+foglio sia impostato il formato A4. Selezionare Limiti come area di stampa. Impostare una 
+scala di stampa 1:1 e stampa centrata. Fare clic su Anteprima per vedere un’anteprima 
+della stampa. Se il disegno non risultasse completamente contenuto nell’area di stampa, è 
+possibile spostarlo immettendo dei valori opportuni in X e Y nella sezione Offset.
+–  Fare clic su OK per avviare la stampa.
+10.8  Precisazione sul comando Ellisse
+Con AutoCAD si possono disegnare due tipi di ellisse. Il tipo di default, quello impie-
+gato in questo capitolo, è riferito ad una definizione matematica di ellisse ed è quindi 
+molto precisa, ma come si è visto presenta il problema di non essere convertibile in polili-
+nea. 
+Un secondo problema si presenta se si desidera tracciare una linea tangente all’ellisse. 
+La tangente non viene accettata.
+È possibile utilizzare un tipo di ellisse un pò meno preciso, costituito da una serie di 
+archi di polilinea, che permette, con alcune precauzioni, di assegnare una larghezza e di 
+tracciare linee tangenti.
+Il tipo di ellisse generata è controllato dalla variabile di sistema PELLIPSE.
+–  Se PELLIPSE è impostata a 0 come di default, viene disegnata l’ellisse esatta.
+–  Se PELLIPSE è impostata a 1, l’ellisse viene disegnata usando archi di polilinea.
+10.9  Esercizio proposto
+Si realizzi la proiezione assonometrica quotata del pezzo meccanico di Fig. VI.10.19, 
+dalla quale si ricaveranno le dimensioni.
+Fig. VI.10.19  
+–  Iniziare il nuovo disegno dal modello salvato nella directory di lavoro.
+–  Cambiare titolo e data e salvarlo come file di disegno assegnando il nome di assonometria.
+–  Impostare lo snap con stile assonometrico.
+–  Creare nuovi layer per gli assi di simmetria, per le quote, per le linee di costruzione.
+–  Iniziare disegnando il perimetro di base, ricordando che, quando i punti finali delle 
+linee coincidono con i punti di snap è sufficiente usare il mouse con il modo Orto attivato;
