@@ -1,0 +1,836 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 109/116 ===
+Chars: 44,766 | Offset: 4,776,988
+
+di ottica parabolica in alluminio 
+semispeculare antiriflesso, che comporta minori interventi di pulizia dovuta a depositi di 
+polvere. L’apparecchio si contraddistingue per una luminanza < 200 cd/m2 per angoli 
+superiori a 60° trasversali e longitudinali, per un rendimento R > 62% e la conformità alle 
+normative europee; è provvisto inoltre di alette frangiluce trasversali paraboliche chiuse 
+superiormente ed elementi longitudinali a doppia parabolicità.
+Come risulta dalla Tav. XX.2.29 le dimensioni del locale da illuminare sono corrispon-
+denti a 10  20 m.
+La disposizione degli apparecchi è visualizzata nella Tav. XX.2.30, dove si nota che le 
+plafoniere sono installate in modo da avere il massimo confort visivo per i lettori che sie-
+dono ai vari tavoli della sala di lettura.
+
+[PAG 2125]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-107
+2.5.3  Calcolo illuminotecnico col metodo del flusso totale
+I dati di progetto sono stati designati come segue:
+–  dimensioni del locale 10  20 m;
+–  altezza del soffitto 4 m;
+–  altezza piano di lavoro 0,80 m;
+–  pareti e soffitto in intonaco a gesso di colore chiaro;
+–  fattore di manutenzione 0,8;
+Tav. XX.2.29   Planimetria del locale.
+
+[PAG 2126]
+XX-108
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+–  lampade installate in controsoffitto;
+–  illuminamento richiesto 500 lux.
+La formula generale per il calcolo del numero dei corpi illuminanti (fase di progetta-
+zione) viene espressa da:
+Tav. XX.2.30   Planimetria del locale con distribuzione degli apparecchi.
+N
+E
+A
+
+
+U
+
+-----------
+=
+Corpi illuminanti art. L 452 58 2S 3F Filippi
+n. 27 apparecchi 158 W, 230 V, 50 Hz, classe I, IP20, 5200 lm
+1,11 m
+2,22 m
+2,22 m
+2,22 m
+2,22 m
+2,22 m
+2,22 m
+2,22 m
+2,22 m
+1,67 m
+1,67 m
+3,33 m
+3,33 m
+
+[PAG 2127]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-109
+mentre quella per il calcolo dell’illuminamento medio (fase di verifica):
+dove N è il numero dei corpi illuminanti, E l’illuminamento medio del locale espresso 
+in lux, A la superficie del locale espressa in m2,  è il flusso luminoso delle lampade (o 
+lampada) di un apparecchio illuminante espresso in lumen e U il fattore di utilizzazione 
+(sempre inferiore all’unità). Il fattore o coefficiente di utilizzazione (utilanza) di una 
+superficie è il rapporto fra il flusso totale diretto e riflesso ricevuto dalla superficie e il 
+flusso totale emesso dagli apparecchi installati.
+Il coefficiente di utilizzazione viene determinato sperimentalmente in base alle carat-
+teristiche fotometriche e fisiche dell’apparecchio, ai coefficienti di riflessione delle super-
+fici ambientali e all’indice del locale K. Le ditte costruttrici degli apparecchi forniscono le 
+tabelle per una facile valutazione del fattore di utilizzazione U; partendo dall’utilizzo di 
+queste tabelle, i passaggi per il dimensionamento si possono riassumere nel modo 
+seguente:
+a)  si determina l’indice K del locale;
+b)  si sceglie il fattore di utilizzazione U;
+c)  si calcola, considerando il flusso degli apparecchi scelti, la quantità necessaria di 
+apparecchi illuminanti da installare,
+d)  si accerta, volendo verificare se l’illuminamento richiesto ha effettivamente un tale 
+valore, l’illuminamento medio del locale.
+a)  Determinazione dell’indice del locale
+L’indice del locale viene determinato in base ai dati strutturali della stanza nella quale 
+sono da installare gli apparecchi illuminanti:
+–  larghezza x = 10 m;
+–  lunghezza y = 20 m,
+–  altezza dal piano di lavoro h = 4  0,80 = 3,2 m,
+e si calcola applicando la seguente formula:
+b)  Determinazione del fattore di utilizzazione
+Dalla tabella fotometrica dell’apparecchio (Tab. XX.2.35), noto l’indice K del locale, 
+in base al fattore di riflessione del soffitto, delle pareti e del pavimento (assunti come 80% 
+Tab. XX.2.35  Fattore di utilizzazione U in %
+Soffitto
+Pareti
+Pavimento
+80  70  70  70  50  50  30  30  10
+70  50  50  30  50  30  30  10  10
+30  30  10  10  10  10  10  10  10
+Indice del locale K
+0,6
+0,8
+1,0
+1,25
+1,5
+2,0
+2,5
+3,0
+4,0
+5,0
+44  34  32  27  32  27  27  24  23
+55  45  42  38  41  37  37  34  34
+61  51  47  43  46  43  42  39  39
+67  57  53  49  52  49  48  45  45
+71  62  57  54  56  53  52  50  50
+75  67  61  58  60  57  56  54  54
+79  71  64  62  63  61  60  58  57
+81  74  66  64  65  63  62  61  60
+83  77  68  66  67  65  64  63  62
+85  79  69  68  68  67  66  65  64
+E
+N
+
+U
+
+
+A
+---------------------
+=
+K
+x
+y
+
+h
+x
+y
++
+
+
+
+------------------------
+10
+20
+
+3 2
+
+10
+20
++
+
+
+
+-------------------------------------
+2 08
+
+=
+=
+=
+
+[PAG 2128]
+XX-110
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+per il soffitto e la cornice, 70% per le pareti e 30% per il pavimento), si può scegliere il 
+fattore di utilizzazione, che risulta essere uguale a 75%.
+c)  Determinazione del numero di apparecchi necessari
+Il calcolo del numero di apparecchi necessari deriva dal calcolo seguente:
+da cui si evince che gli apparecchi che si devono installare nel locale in esame sono 26. Si 
+sceglie quindi di installare 3 file di 9 apparecchi illuminanti ciascuna.
+d)  Verifica dell’illuminamento medio
+Il calcolo dell’impianto di illuminazione potrebbe essere terminato, considerato che è 
+ora noto il numero degli apparecchi da installare, ma, per avere la sicurezza che essi deter-
+minino un illuminamento pari a quello delle specifiche di partenza (500 lx), è consiglia-
+bile verificare l’illuminamento medio dell’impianto. La formula da applicare è dunque:
+L’illuminamento medio ottenuto è di 526,5 lx, molto vicino a quello consigliato, e 
+quindi l’impianto può ritenersi soddisfacente. 
+Un’ultima considerazione conclusiva per assicurarsi che vi sia una sufficiente unifor-
+mità di illuminamento è quella di verificare che il numero dei centri luminosi sia tale per 
+cui la loro interdistanza non superi il valore dell’altezza degli apparecchi rispetto il piano 
+di lavoro. Le indicazioni fornite dalla ditta costruttrice (Fig. XX.2.9) consigliano di rispet-
+tare i seguenti parametri:
+Dt = 1,7  h = 1,7  3,2 = 5,44 m
+Dl = 1,2  h = 1,2  3,2 = 3,84 m
+Fig. XX.2.9  Interasse tra lampade.
+2.5.4  Preventivo sommario delle spese
+L’analisi dei costi prevedere la stesura di vari capitoli di spesa.
+1)  Analisi dei costi del sistema di illuminazione
+Comprende:
+–  Costo apparecchi: cioè il risultato ottenuto dal prodotto del numero di apparecchi 
+installati per il costo unitario dell’apparecchio.
+–  Costo lampade: è il prodotto del numero di apparecchi installati per il numero di lam-
+pade per apparecchio, per il costo unitario della lampada.
+–  Costo potenza totale apparecchi: è il risultato ottenuto dal prodotto del numero di 
+apparecchi installati per la potenza di ogni apparecchio (comprese le perdite degli appa-
+recchi).
+N
+E
+A
+
+
+U
+
+-----------
+500
+200
+
+5200
+0 75
+
+
+----------------------------
+25 64
+
+=
+=
+=
+E
+N
+
+U
+
+
+A
+---------------------
+27
+5200
+0 75
+
+
+
+200
+---------------------------------------
+526 5 lx
+
+=
+=
+=
+Dt
+Dl
+
+[PAG 2129]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-111
+–  Consumo totale annuo: è il risultato ottenuto dal prodotto delle ore di funzionamento 
+annue per la potenza totale degli apparecchi installati, diviso 1000 (per ottenere un valore 
+in kWh).
+–  Energia elettrica: è il risultato ottenuto dal prodotto del consumo totale annuo di ener-
+gia per il costo medio del kWh.
+2)  Analisi dei costi dell’investimento
+Comprende:
+–  Costo apparecchio: è il costo totale degli apparecchi senza le lampade (come sopra al 
+punto 1).
+–  Costo lampade: è il costo totale delle lampade (come sopra al punto 2).
+–  Costo installazione: è il risultato ottenuto dal prodotto del numero di apparecchi 
+installati per il costo del punto luce.
+–  Costo totale: è la somma dei singoli costi relativi alle voci sopra descritte.
+3)  Analisi dei costi della gestione nel primo anno
+Comprende:
+–  Costo energia elettrica: è il costo annuo dell’energia consumata, ottenuto moltipli-
+cando il consumo totale annuo di energia per il costo medio del kWh.
+–  Costo lampade: è il risultato ottenuto dalla seguente operazione
+ N  (Cul  nla + Csl)  (Ofai / Ovl) + (nai  Capa)
+dove, N è il numero di apparecchi installati; Cul è ilcosto unitario della lampada; nla è il 
+numero di lampade di ogni apparecchio; Csl è il costo per la sostituzione lampada; Ofai sono 
+le ore di funzionamento annuo dell’impianto; Ovl sono le ore di vita media delle lampade; 
+nai  è il numero degli apparecchi installati; Capa è il costo annuo per la pulizia apparecchio.
+–   Costo totale: è la somma dei singoli costi relativi alle voci sopra descritte.
+4)  Tempo di ammortamento dell’investimento
+È il periodo di ammortamento, riferito in mesi, in cui la soluzione progettuale 
+ammortizza l’eventuale sovracosto di investimento iniziale in base ai minori costi di 
+gestione per spese di energia e manutenzione, rispetto ad installazione di lampade ad 
+incandescenza.
+Tale periodo di ammortamento è ottenuto dalla differenza tra il totale del costo di 
+investimento delle due soluzioni diviso la differenza tra il totale del costo di gestione nel 
+primo anno delle due soluzione e diviso i 12 mesi dell’anno.
+3  PROGETTO DEGLI IMPIANTI ELETTRONICI
+Lo sviluppo di un progetto per la realizzazione di una apparecchiatura elettronica 
+richiede l’applicazione del seguente metodo:
+1)  Definizione delle specifiche tecniche e operative tratte dalla descrizione del pro-
+getto da realizzare (per esempio, si devono definire le caratteristiche del pannello di 
+comando dell’apparecchiatura, delle modalità di utilizzo della stessa, del grado di prote-
+zione richiesto ecc.).
+2)  Individuazione delle grandezze di ingresso e di uscita;
+3)  Definizione delle relazioni che intercorrono fra le grandezze di uscita e di 
+ingresso, suddivisione delle varie operazioni richieste in unità funzionali distinte e stesura 
+di uno schema a blocchi funzionale.
+4)  Reperimento della documentazione tecnica e normativa necessaria per poter sce-
+gliere la configurazione circuitale adatta.
+
+[PAG 2130]
+XX-112
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+5)  Scelta tecnico/economica dei dispositivi più idonei (cioè quelli che soddisfano le 
+specifiche di progetto al costo minore con uguale affidabilità) ed effettuazione dei calcoli 
+di dimensionamento.
+6)  Preparazione della documentazione per la successiva fase di ingegnerizzazione, 
+cioè la realizzazione dei disegni di fabbricazione sia del circuito stampato e dei disegni di 
+cablaggio dell’apparecchiatura. In questa fase è quasi sempre necessario rielaborare gli 
+schemi elettrici disegnati in precedenza in quanto questi ultimi sono, in genere, schemi di 
+principio generali che includono tutte le parti dell’apparecchiatura elettronica, invece per 
+poter realizzare il circuito stampato è richiesto uno schema elettrico che contenga solo gli 
+elementi che vanno montati sullo stesso, quindi uno schema apposito.
+7)  Disegni di fabbricazione del circuito stampato: disegno della disposizione dei 
+componenti sulla scheda (layout), tanti disegni delle piste quanti sono i lati del circuito 
+stampato (in genere due) e altri disegni per eventuali lavorazioni aggiuntive (serigrafia, 
+maschera del layout), piano di foratura della scheda.
+8)  Disegni per il cablaggio della scheda e l’assemblaggio dell’apparecchiatura elet-
+tronica.
+9)  Stesura della scheda tecnica per il collaudo della scheda e la verifica.
+10)  Elenco dei componenti elettronici ed elettromeccanici e di tutti i materiali impiegati.
+11)  Preventivo di spesa per i materiali impiegati per costruire l’apparecchiatura elet-
+tronica e per i tempi di lavorazione richiesti per completare le varie fasi del progetto 
+(tempo di progettazione, tempo di realizzazione dei disegni e della documentazione, 
+tempi di produzione dell’apparecchiatura, tempi di collaudo e messa a punto, tempi di 
+imballaggio e di spedizione ecc.).
+12)  Libretto di istruzioni dell’apparecchiatura, che deve contenere:
+–  una descrizione breve ma esauriente delle principali caratteristiche della stessa;
+–  indicazioni sull’uso corretto, sulle modalità di installazione (orientamento, lontananza 
+da fonti di calore o da campi magnetici ecc.) e sui limiti di impiego;
+–  indicazione di operazioni vietate per la sicurezza dell’utente e per il mantenimento 
+funzionalità dell’apparecchiatura;
+–  indicazione delle operazioni di manutenzione;
+–  individuazione dei problemi e delle anomalie più caratteristiche dell’apparecchiatura in 
+esame. La descrizione viene fatta creando una tabella: nella prima colonna viene descritto 
+il sintomo (per esempio, i display del pannello sono spenti), nella seconda vengono formu-
+late ipotesi sulla possibile causa (l’apparecchiatura non è alimentata); nella terza viene sug-
+gerito una verifica tecnica (per esempio, misura della tensione di alimentazione); nella 
+quarta un elenco di possibili soluzioni al problema (spina dell’apparecchiatura non con-
+nessa alla rete elettrica, fusibile di protezione interrotto, display montato in modo errato, 
+stabilizzatore di tensione rotto, cortocircuito fra alimentazione e massa ecc.);
+–  elenco dei centri di assistenza per le riparazioni dell’apparecchiatura.
+Il metodo è iterativo, cioè quando una scelta operata, per esempio, nel passo 4, implica 
+una modifica dell’operatività di un blocco funzionale o l’utilizzo di ulteriori segnali di 
+ingresso o d’uscita, è necessario ripercorrere alcuni passi del progetto.
+In genere la parte non modificabile del progetto sono quelle che si riferiscono alle spe-
+cifiche iniziali, che sono legate al fenomeno fisico che si intende controllare o alle moda-
+lità di impiego previsto per la stessa apparecchiatura.
+3.1  Metodi per la progettazione di apparecchiature elettroniche
+Un’apparecchiatura elettronica è un assemblaggio di più dispositivi elettronici, elet-
+tromeccanici e meccanici che – in presenza di un certo stimolo in ingresso, di tipo mecca-
+nico od elettrico – producono in uscita una reazione desiderata, sempre di tipo meccanico 
+od elettrico.
+
+[PAG 2131]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-113
+Il progettista, basandosi su una perfetta conoscenza e comprensione delle variabili 
+fisiche o elettriche presenti in ingresso e in uscita, deve scegliere i componenti e la confi-
+gurazione circuitale che permettono di ottenere le prestazioni desiderate. Ma il suo com-
+pito non si esaurisce con il dimensionamento dei vari componenti che compaiono nel 
+circuito: egli deve tener conto anche di altri fattori che possono condizionare il funziona-
+mento dell’apparecchiatura. 
+Un aspetto importante della progettazione elettronica deve coinvolgere l’analisi pre-
+ventiva dei fattori di rischio al fine di evitare che l’insorgere di errori di progetto che pro-
+vocano costosi interventi di modifica.
+Nella Fig. XX.3.1, tratta dalle norme UNI EN 292-1 (1992), è mostrato uno schema a 
+blocchi che evidenzia le interazioni fra le varie parti di una generica macchina e l’uomo.
+L’individuazione del grado di protezione IP minimo che il contenitore dell’apparec-
+chiatura deve possedere per garantire l’adeguata protezione contro la penetrazione della 
+polvere e l’infiltrazione dell’acqua è di fondamentale importanza per cui la scelta deve 
+essere operata tenendo conto delle condizioni ambientali in cui la stessa deve operare.
+Un insufficiente grado di protezione può generare incertezza del contatto elettrico nei 
+commutatori elettromeccanici (connettori, interruttori ecc.), formare contatti accidentali 
+fra circuiti di norma separati, formare cortocircuiti (by-pass) fra contatti del circuito di 
+sicurezza impedendogli quindi di espletare la sua funzione di protezione. 
+Fig. XX.3.1  Diagramma a blocchi delle interazioni fra le varie parti di una generica mac-
+china e l’uomo (Fonte: Norma UNI EN 292-1).
+
+[PAG 2132]
+XX-114
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+3.1.1  Limiti meccanici e termici di funzionamento delle apparecchiature
+Quando vengono definite le specifiche di progetto non ci si deve limitare a fissare i 
+parametri elettrici delle grandezze di ingresso e di uscita, ma è necessario precisare anche 
+i limiti di impiego di tipo meccanico e termico.
+I limiti termici condizionano in modo determinante la scelta del dispositivo elettronico. 
+Un progetto che richieda all’apparecchiatura un corretto funzionamento in presenza di 
+forti escursioni termiche necessita di accorgimenti costruttivi e di materiali (sia elet-
+tromeccanici che elettronici) molto costosi, per cui occorre fissare questa specifica di pro-
+getto con molta attenzione.
+I limiti meccanici coinvolgono il metodo costruttivo utilizzato per realizzare l’appa-
+recchiatura elettronica. In alcuni campi applicativi, quali l’avionica, le apparecchiature 
+elettroniche sono sottoposte, come l’intera struttura dell’aviogetto, a brusche accelera-
+zioni per cui il contenitore, i metodi di montaggio, l’intero cablaggio dell’apparecchiatura 
+dovranno essere realizzati con cura, affinché il funzionamento dell’apparecchiatura sia, 
+comunque, sempre garantito.
+La presenza di vibrazioni è accettabile solo se se ne è tenuto conto in sede di progetto, 
+dotando l’apparecchiatura di morsetti antiallentamento, di componenti di massa modesta 
+e, se necessario, dotati di fili di guardia che li vincolino strettamente alla piastra del cir-
+cuito stampato. Le saldature dei componenti alle piazzole di un circuito stampato possono 
+essere danneggiate dalle vibrazioni causando o il non funzionamento oppure un funziona-
+mento anomalo dell’apparecchiatura.
+Le specifiche dell’apparecchiatura relative al funzionamento, al modo di impiego e 
+all’ambiente (umidità, pressione) in cui verrà utilizzata devono essere chiaramente indivi-
+duate durante l’analisi preliminare delle specifiche di progetto. Occorre quindi che le 
+scelte progettuali siano compiute attribuendo a tutte le fasi di progetto la stessa attenzione 
+e importanza; se dunque è importante la scelta dei componenti o della configurazione cir-
+cuitale da utilizzare, lo sono anche la scelta della tecnica di costruzione dell’apparecchia-
+tura, il tipo e la forma del contenitore e il metodo di cablaggio da utilizzare per 
+l’interconnessione dei vari componenti.
+Molto spesso nella definizione delle specifiche di progetto si fa riferimento a “condi-
+zioni normali di impiego per apparecchiature elettriche ed elettroniche”; con questa frase 
+si intende stabilire che l’apparecchiatura sarà progettata conformemente a quanto pre-
+scritto dalla norma IEC 947-1 (equivalente alla norma europea EN 60947-1) che fissa le 
+regole generali per le apparecchiature elettriche ed elettroniche.
+3.1.2  Affidabilità di un progetto
+Un’apparecchiatura elettronica, una volta realizzata, deve garantire un corretto funzio-
+namento nel campo di variazione dei parametri fisici ed elettrici previsti dalle specifiche 
+del progetto. 
+Un eventuale disservizio di un componente a basso costo non deve comportare il 
+blocco o un degrado delle funzioni dell’apparecchiatura tale da danneggiare i dispositivi 
+comandati in uscita o bloccare il funzionamento di un’apparecchiatura molto costosa o di 
+particolare importanza per l’impianto in cui è inserita.
+L’affidabilità di un’apparecchiatura dipende da quella di ogni singolo componente uti-
+lizzato nella sua realizzazione e dalle tecniche di cablaggio adoperate. Per esempio, fra i 
+vari sistemi di montaggio e di connessione, è sempre consigliabile utilizzare quelli che 
+offrono garanzie di ripetitività e precisione.
+Ogni componente elettronico è caratterizzato da valori massimi di alcuni parametri 
+elettrici (tensioni, correnti, potenza) che non devono essere superati per evitare che il 
+componente si danneggi. Si ricorda che la potenza massima dissipabile rappresenta il
+
+[PAG 2133]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-115
+valore di potenza che il dispositivo è in grado di dissipare sotto forma di calore senza dan-
+neggiarsi.
+Talvolta il dispositivo richiede che vengano adottate particolari metodi di montaggio o 
+l’utilizzo di appositi dispersori di calore che eliminino il calore per conduzione, conven-
+zione o irraggiamento.
+Per la scelta del dispositivo è utile adottare un criterio di scelta basato su un coeffi-
+ciente di sicurezza abbastanza ampio; in tal modo si evita che il componente venga utiliz-
+zato in condizioni di funzionamento al limite delle sue possibilità. Si ricorda che molti 
+parametri indicati dai costruttori nei fogli tecnici di documentazione dei dispositivi elet-
+tronici sono solo valori statistici per cui, durante la fase di progettazione, occorre effet-
+tuare il dimensionamento dei componenti adottando nei calcoli dei coefficienti di 
+sicurezza molto ampi. Per esempio, per le resistenze è utile impiegare resistori che siano 
+in grado di dissipare una potenza pari a una volta e mezza quella calcolata.
+Il valore del coefficiente di sicurezza adottato influenza ovviamente in modo sensibile 
+il costo globale dell’apparecchiatura.
+Un progetto di qualità deve sempre tener conto anche delle esigenze di manutebilità 
+dell’apparecchiatura elettronica. Eventuali segnalazioni importanti sullo stato degli 
+ingressi o delle uscite devono prevedere messaggi ridondanti; per esempio la segnalazione 
+della condizioni in cui si trova un’uscita che pilota il motore di un ventilatore dovrebbe 
+impiegare due segnalazioni: una che segnala lo stato di “ventilatore in marcia” e una per 
+quello di “ventilatore fermo”. In questo modo, nel caso che entrambe le segnalazioni fos-
+sero spente significherebbe che una delle due è senz’altro inefficiente e va sostituita.
+Le caratteristiche di alimentazione (tensione, corrente, potenza assorbita) di un’appa-
+recchiatura elettronica, alimentata con tensione di rete, devono essere conformi a quella 
+fornita dall’ente erogatore.
+Quando la tensione di rete, che per una qualsiasi causa sia venuta a mancare, viene 
+riapplicata ad un’apparecchiatura elettronica di controllo di una macchinario elettrico 
+(motori, elettrovalvole, organi di attuazione pneumatici ecc.) questi non devono mettersi 
+in moto ma devono assumere lo stato di non operatività (messa in sicurezza dell’apparec-
+chiatura).
+3.1.3  Stabilità
+Se si desidera che le caratteristiche di un circuito non cambino nel tempo si devono 
+utilizzare componenti elettronici che abbiano proprietà elettriche stabili. Per apparecchia-
+ture ove questa caratteristica è irrinunciabile (per esempio in applicazioni per avionica) 
+occorre sottoporre i componenti elettronici prima del montaggio ad un processo di invec-
+chiamento controllato.
+3.1.4  Collegamento a massa delle apparecchiature elettroniche
+In quasi tutti i progetti occorre creare un percorso a bassa impedenza fra il potenziale 
+di riferimento interno del circuito elettronico (massa) e il telaio del contenitore dell’appa-
+recchiatura; quando l’apparecchiatura viene installata, il telaio, per soddisfare le norme di 
+sicurezza, deve sempre essere collegato a terra.
+Tutti i conduttori e i componenti elettronici, il telaio, presentano una capacità verso 
+terra che si carica con una tensione che dipende dai campi elettrici di rumore generati dal 
+campo elettrico terrestre o dalla presenza nelle vicinanze di altre apparecchiature o con-
+duttori metallici. Il valore di queste capacità dipendono dalle dimensioni e dalla disposi-
+zione del circuito elettronico rispetto ai conduttori, alle pareti del contenitore e 
+all’ambiente in genere, che circonda l’apparecchiatura.
+Un modo per ridurre l’effetto di queste capacità è quello di racchiudere o l’intera 
+apparecchiatura o parte di essa in una gabbia metallica (schermo) che deve poi essere con-
+
+[PAG 2134]
+XX-116
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+nessa in modo efficiente, cioè con un percorso a bassa resistenza, con la massa dell’appa-
+recchiatura.
+Impedenza dei collegamenti di massa
+L’impedenza dei collegamenti di massa deve essere sempre molto bassa. Per ottenere 
+questo risultato è necessario utilizzare cavi o piste di grande sezione; è inoltre utile far cir-
+colare le correnti di basso valore su percorsi separati da quelli utilizzati per le alte cor-
+renti. Queste ultime infatti, anche in presenza di un basso valore resistivo generano cadute 
+di tensione significative.
+Nei circuiti digitali la separazione delle linee di segnale da quelle di potenza è indi-
+spensabile in quanto una caduta di tensione significativa sulla linea di alimentazione o 
+sulla linea del riferimento di massa provoca un’alterazione dei livelli logici da cui deriva 
+un malfunzionamento del circuito digitale e, di conseguenza, di tutta l’apparecchiatura 
+elettronica.
+3.1.5  Collaudo e messa a punto di un’apparecchiatura elettronica
+Il progettista di un’apparecchiatura elettronica deve costruire una serie di circuiti che 
+gli permettano di compiere una attenta valutazione e verifica del funzionamento statico e 
+dinamico di tutte le parti che compongono l’apparecchiatura. 
+Le prove di collaudo e di messa a punto di un’apparecchiatura coinvolgono in genere 
+un modello, un prototipo e il prodotto finito.
+Prove sul modello
+Terminata la fase di analisi delle specifiche di progetto e dopo aver scelto i compo-
+nenti e la configurazione circuitale più adatti, si realizza un modello dell’apparecchiatura 
+utilizzando una delle tecniche di laboratorio che permettono una rapida realizzazione 
+dello stesso.
+In questa fase si opera una prima valutazione delle prestazioni offerte dai vari compo-
+nenti per cui la tecnica di realizzazione prescelta deve essere tale da permettere la sostitu-
+zione dei componenti in modo semplice e rapido.
+Prove sul prototipo
+Una volta che le prove sul modello hanno dimostrato che il circuito adottato è in grado 
+di soddisfare le specifiche del progetto, si realizza un’apparecchiatura completa seguendo 
+nella costruzione i criteri che saranno poi utilizzati nella fabbricazione del prodotto finale.
+Il prototipo viene quindi fatto funzionare nelle condizioni di impiego normale e nelle 
+condizioni limite previste dalle specifiche di progetto. Le prove devono coinvolgere 
+l’apparecchiatura sia nel suo insieme sia nelle sue parti.
+Prove sul prodotto finito
+Le prove sul prodotto finito sono delle prove di qualità effettuate con metodi statistici 
+tendenti in genere a verificare che il comportamento dell’apparecchiatura sia conforme 
+alle specifiche del progetto. Talvolta la prova può essere effettuata installando l’apparec-
+chiatura nell’ambiente e sulle macchine con le quali deve operare.
+Non sempre questa operazione può essere effettuata inserendo l’apparecchiatura nel 
+suo ambiente operativo. Per esempio, un’apparecchiatura realizzata per essere utilizzata in 
+applicazioni spaziali o che deve controllare macchine operatrici di costo e di ingombro 
+elevato non può sicuramente essere provate nelle loro condizioni reali di impiego. In que-
+sti casi si devono, progettare e costruire apposite apparecchiature di simulazione o, sfrut-
+tando sofisticati algoritmi matematici, si deve elaborare un modello matematico 
+dell’apparecchiatura in prova e - utilizzando un elaboratore elettronico - eseguire una 
+completa simulazione delle varie condizioni operative.
+
+[PAG 2135]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-117
+Fig. XX.3.2  Reazione al fuoco dei materiali e dei prodotti finiti. 
+Tipo
+di prova
+Filo
+incandescente
+(Glow-Wire test)
+UL
+(Underwriters’
+Laboratories)
+ASTM
+(American Society
+for Testing and
+Materials)
+Apparecchiatura
+di prova
+Rispondenza
+normativa
+IEC 695-2-1
+CEI 50-11
+UL 94
+ASTM-D635
+Scopo
+della prova
+Verifica che riscaldamenti 
+anomali, prodotti da sovracorrenti 
+e cattivi contatti con relativi 
+surriscaldamenti, non 
+compromettano la sicurezza del 
+materiale isolante. La prova è 
+d’accensione. Il filo viene 
+premuto contro il provino con una 
+certa forza e penetra all’interno 
+per 7 mm.
+Misurazione del tempo in cui può 
+continuare a bruciare un provino 
+campione, quando viene rimossa 
+la fiamma diretta.
+Misurazione del tempo e della 
+velocità con cui il provino 
+campione brucia, dopo la 
+rimozione della fiamma diretta.
+Risultato
+della prova
+L’eventuale manifestazione della 
+fiamma deve cessare entro 30 s 
+dalla rimozione del filo 
+incandescente.
+Temperature di prova:
+–  
+650° per materiali che non 
+sostengono parti in tensione.
+–  
+750° 
+per 
+materiali 
+che 
+sostengono parti in tensione di 
+prese mobili e spine.
+–  
+850° 
+per 
+materiali 
+che 
+sostengono parti in tensione di 
+prese fisse e interruttori.
+–  
+V0 se il provino brucia < 5 
+s, prima di autoestinguersi.
+–  
+V1 se brucia < 25 s. 
+–  
+V2 se brucia < 25 s con 
+gocciolature incandescenti. 
+–  
+HB se brucia > 25 s (pro-
+vino orizzontale e velocità di 
+bruciatura < 38 mm al minuto) 
+Assimilabile a ASTM D-635. 
+–  
+Ininfiammabile se il pro-
+vino non brucia.
+–  
+Autoestinguente se brucia 
+per un a lunghezza < 100 mm.
+Condizioni di prova
+Sorgente 
+di calore
+Filo incandescente di 4 mm di 
+diametro.
+Fiamma Becco Bunsen.
+Fiamma Becco Bunsen.
+Durata 
+della prova
+Filo applicato per 30 s.
+Fiamma applicata per 10 s e per 
+due volte consecutive.
+Fiamma applicata per 30 s e per 
+due volte consecutive.
+Elementi
+caratteristici
+Tempo di spegnimento della 
+fiamma.
+Durata della combustione.
+Lunghezza bruciata del 
+provino.
+
+[PAG 2136]
+XX-118
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Prove per apparecchiature militari
+Le apparecchiature elettroniche per applicazioni militari richiedono l’esecuzione di 
+prove accurate da parte dell’ente committente sia in fase di accettazione sia in quella di 
+installazione. Queste prove, che coinvolgono sia l’apparecchiatura nel suo insieme sia le 
+sue varie parti (componenti elettronici e elettromeccanici, involucro) sono molto onerose 
+e costituiscono una parte significativa del costo complessivo dell’apparato. 
+Le apparecchiature per usi militari richiedono l’utilizzo di componenti che soddisfano 
+a normative molto rigide che qualificano sia i componenti sia le modalità di collaudo; 
+inoltre le caratteristiche di sicurezza e di affidabilità devono essere tali da garantire un 
+tempo medio di vita dell’apparecchiatura molto elevato.
+Prove per valutare la reazione al fuoco dei prodotti finiti e dei materiali
+L’apparecchiatura elettrica ed elettronica deve possedere caratteristiche che oltre a 
+garantire il funzionamento in condizioni normali, le impediranno di trasformarsi, in caso 
+di incendio o di surriscaldamento, in un fattore di propagazione delle fiamme e di emis-
+sione di fumi tossici. 
+Le norme prevedono una serie di prove che coinvolgono sia l’apparecchiatura che i 
+materiali che permettono di valutare la loro reazione e quindi di assegnare opportune cer-
+tificazioni che ne consentono l’impiego in sicurezza.
+Le condizioni di prova a cui vari enti nazionali e internazionali sottopongono i mate-
+riali e le apparecchiature elettriche sono indicati nella Fig. XX.3.2.
+Ricerca dei guasti
+In fase di progetto occorre scegliere un metodo di cablaggio dei componenti e una loro 
+disposizione sulle schede tali che sia possibile effettuare le necessarie operazioni di cali-
+brazione e di misura nel modo più semplice e rapido possibile.
+Nelle applicazioni industriali l’apparecchiatura viene in genere realizzata suddivi-
+dendo il circuito elettronico in più unità funzionali cablate su moduli separati, intercon-
+nessi per mezzo di un’apposita scheda di connessione o con un cablaggio eseguito con 
+cavi elettrici.
+Questa tecnica permette di sostituire l’unità funzionale difettosa minimizzando il 
+tempo di fermata della macchina o dell’apparecchiatura controllata. La riparazione della 
+scheda difettosa viene successivamente effettuata in un laboratorio appositamente attrez-
+zato. Ogni scheda deve essere progettata in modo tale che i componenti siano facilmente 
+rimovibili e sostituibili e che tutte le connessioni significative del circuito siano provviste 
+di adeguati punti di misura.
+Se è possibile, nelle apparecchiature elettroniche è opportuno utilizzare microcircuiti 
+elettronici a media e larga scala di integrazione; ciò in quanto il progetto, il collaudo e la 
+ricerca dei guasti in apparecchiature a microcircuiti sono in genere, più semplici ed affida-
+bili rispetto alle apparecchiature contenenti molti componenti discreti.
+Si tenga comunque presente che non sempre la ricerca dei guasti e la relativa ripara-
+zione sono convenienti: talvolta il basso costo dell’apparecchiatura, confrontato con 
+l’investimento (in attrezzature e in personale) richiesto dalla riparazione rende 
+quest’ultima svantaggiosa in termini economici.
+3.1.6  Metodi per la realizzazione delle apparecchiature elettroniche
+I cavi che devono essere utilizzati nella realizzazione delle apparecchiature elettroni-
+che devono utilizzare rivestimenti plastici del tipo ignifugo (autoestinguente). Questa spe-
+cifica viene imposta da vari enti di normazione perché un funzionamento anomalo di una 
+parte dell’apparecchiatura può comportare localmente lo sviluppo di una forte dissipa-
+zione di potenza e, quindi, di calore: è dunque necessario prevenire la possibilità che (in
+
+[PAG 2137]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-119
+presenza di un ambiente favorevole) si inneschi un danno permanente all’apparecchiatura 
+o alle attrezzature che la circondano. I cavi con caratteristica ignifuga, se soggetti a ecces-
+siva temperatura o al fuoco, generano una quantità minima di fumi tossici e sostanze cor-
+rosive.
+Il cablaggio dei cavi in un’apparecchiatura deve essere ordinato, privo di morsetti o 
+giunzioni volanti, e tale (nel caso di tensioni superiori ai 50 V) da escludere la possibilità 
+che l'utente o il manutentore vengano a contatto con parti in tensione; i cavi devono essere 
+colorati nel modo indicato dalle norme.
+Gli organi di interfaccia uomo macchina (comandi e segnalazioni) devono essere fun-
+zionali, funzionanti ed interpretabili senza possibilità di errore.
+Un pulsante di avviamento o inserzione deve essere provvisto di una ghiera che ne 
+impedisce l’azionamento accidentale; mentre quelli di arresto o di disinserzione non 
+devono averla ma devono presentare il massimo di affidabilità in quanto il suo tempestivo 
+azionamento dipende la messa in sicurezza della macchina controllata. Un pulsante di 
+arresto non deve mai essere escludibile dal circuito di controllo.
+Ogni macchina deve aver un modo di arresto in categoria zero che sospenda l’eroga-
+zione della tensione di alimentazione immediatamente a tutti gli attuatori presenti sulla 
+macchina.
+I commutatori devono essere posizionati ne troppo in alto ( 1,7 m) ne troppo basso (
+0,6 m) per non far assumere all’operatore posizioni scomode ed instabili.
+I pulsanti di arresto e disinserzione possono essere a fungo (palmare), a pedale, a fune, 
+a maniglia o a leva. L’efficienza di una lampada di segnalazione deve essere verificabile 
+mediante pulsanti di prova e il suo colore deve esser conforme alla codificazione croma-
+tica internazionale 
+Dissipazione del calore
+Il problema della dissipazione di calore in un’apparecchiatura elettronica riveste una 
+particolare importanza; infatti la scelta o il dimensionamento del contenitore devono 
+quindi essere compiuti valutando il volume d’aria che esso racchiuderà e il modo in cui il 
+calore prodotto dall’apparecchiatura verrà eliminato. Tale analisi ha lo scopo di evitare 
+che gli apparati elettronici racchiusi in un contenitore offrano prestazioni inferiori a quelle 
+richieste o addirittura non funzionino affatto a causa di un aumento della temperatura 
+dovuto al calore sviluppato durante il normale funzionamento o provocato da fattori 
+ambientali esterni.
+Tale problema può essere affrontato in vari modi in funzione della gravità del pro-
+blema. Il modo più semplice è quello di scegliere per i componenti che dissipano potenza 
+una posizione e un orientamento sulla scheda e nel contenitore che favoriscano il rapido 
+smaltimento del calore prodotto. Un secondo modo consiste nell’impiegare contenitori 
+provvisti di fori di aerazione disposti in modo tale che l’aria, per convezione, possa essere 
+scambiata con l’ambiente circostante il più rapidamente possibile.
+Un terzo metodo è quello che prevede l’installazione nell’apparecchiatura di ventila-
+tori aspiranti o soffianti. Questi componenti elettromeccanici sono costosi e richiedono 
+interventi di manutenzione e, soprattutto, richiedono che l’installazione dell’apparecchia-
+tura elettronica che li impiega sia eseguita in modo accurato. Per evitare che l’efficienza 
+del ventilatore sia compromessa è necessario che il posto in cui l’apparecchiatura viene 
+installata sia sgombro di ostacoli e che nell’ambiente che la circonda non vi siano né resi-
+dui di lavorazioni né polvere.
+L’economicità di una realizzazione elettronica viene salvaguardato mediante 
+un’attenta valutazione delle varie soluzioni tecniche che possono essere adottate per risol-
+vere uno specifico problema tecnico utilizzando un criterio di scelta basato sul rapporto
+
+[PAG 2138]
+XX-120
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+prestazione-costo. La scelta cadrà quasi sempre sulla soluzione che offre maggiori garan-
+zie di affidabilità a parità di costi.
+Sicuramente importante per l’economicità del progetto è l’aspetto estetico della 
+scheda elettronica, del cablaggio e dell’intera apparecchiatura; l’aspetto estetico deve 
+essere gradevole e riflettere il gusto e lo stile del progettista. Le scelte stilistiche non 
+devono comunque sacrificare gli aspetti che riguardano la funzionalità e il modo di 
+impiego dell’apparecchiatura, cioè l’accessibilità dei comandi e la visibilità delle segnala-
+zioni.
+Metodi per il cablaggio di un’apparecchiatura elettronica
+L’assemblaggio di un qualsivoglia sistema elettronico può essere suddiviso in sei 
+livelli di interconnessione (packaging) di cui al seguente elenco:
+–  Livello 1. Connessione fra l’elemento base di un dispositivo elettronico (lamina di un 
+quarzo, chip di un circuito integrato) e i terminali che lo connettono con l’esterno 
+–  Livello 2. Connessione fra terminale di un componente e il circuito stampato. Per esem-
+pio, gli zoccoli per circuiti integrati del tipo DIP o Chip Carrier e per microinterruttori.
+–  Livello 3. Connessione fra due o più circuiti stampati. Per esempio la connessione fra 
+una scheda madre (mother board) di un computer e una scheda figlia.
+–  Livello 4. Connessioni fra due sottoassiemi. Per esempio fra l’unità di alimentazione e 
+un sottoassieme da essa alimentato.
+–  Livello 5. Connessioni da un sottoassieme principale ai connettori di ingresso/uscita 
+(I/O) del sistema completo.
+–  Livello 6. Connessioni fra sistemi fisicamente separati. Per esempio il collegamento 
+fra un computer e una stampante o un’altra apparecchiatura periferica.
+Il livello 1 di interconnessione rappresenta il primo stadio della interconnessione; 
+all’interno di tutti i componenti vi sono gli elementi circuitali in cui avvengono le fun-
+zioni elettroniche basilari (chip dei circuiti integrati). La connessione di questi elementi a 
+un filo o ai terminali di uscita viene ottenuta, in molti casi, per compressione diretta o per 
+saldatura e sono effettuate direttamente dal costruttore. I dispositivi complessi a livello 
+primario, incorporano comunemente una struttura di uscita a cui sono saldati i collega-
+menti al chip.
+Su un circuito stampato la connessione del piedino del componente ad una pista viene 
+effettuata per mezzo di uno zoccolo oppure per saldatura.
+La connessione da scheda a scheda viene effettuata con connettori del tipo card-edge
+(in cui il connettore maschio viene ricavato direttamente sul circuito stampato) o con con-
+nettori per circuito stampato in due pezzi che vengono utilizzati per interconnettere due 
+schede all’interno di uno stesso sottoassieme. 
+Quando un apparecchio richiede al suo interno più di un sottoassieme, l’interconnes-
+sione viene realizzata collegando fra loro dei connettori a saldare posti sul circuito stam-
+pato. I collegamenti sono poi costruiti con cavo ribbon, cavi piatti su film plastico o 
+cordoni di conduttori singoli. Anche i cablaggi per radio frequenza (cavo coassiale) o 
+quelli effettuati con fibre ottiche rientrano fra quelli che si possono utilizzare a questo 
+livello di interconnessione.
+Una volta cablati e interconnessi, i sottoassiemi devono essere collegati con l’esterno 
+attraverso connettori di ingresso/uscita montati sul telaio o sul retro dell’apparecchio.
+Per i collegamenti fra i connettori si utilizza lo stesso tipo di cavetterie impiegate 
+nell’interconnessione dei sottoassiemi: occorre però prestare maggiore attenzione alla 
+protezione dagli agenti ambientali, alla schermatura, alla facilità di connessione, alla com-
+patibilità con le interfacce normalizzate e anche all'aspetto estetico.
+La connessione da sistema a sistema ha lo scopo di creare fra gli stessi un collega-
+
+[PAG 2139]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-121
+mento fisico, viene generalmente realizzata mediante cavi e connettori. La connessione 
+più comune è costituita da un cavo rotondo, schermato e ricoperto da una guaina; altre 
+realizzazioni utilizzano cavi per radiofrequenza, cavi ribbon coassiali, i collegamenti in 
+fibra ottica e vari tipi di connettori maschio e femmina in grado di soddisfare alle richieste 
+di tipo elettrico, meccanico ed estetico.
+I metodi più utilizzati per realizzare un circuito elettronico sono:
+–  il montaggio dei componenti su un supporto isolante e collegamenti elettrici realizzati 
+con cavi connessi da punto a punto;
+–  il montaggio dei componenti su un supporto isolante ma connessioni realizzate tramite 
+un processo che, mediante un particolare processo di fabbricazione, ricava i collegamenti 
+da una superficie conduttiva che riveste il supporto stesso (circuito stampato).
+La documentazione necessaria per realizzare un cablaggio con il primo metodo è 
+costituita dallo schema elettrico e dalla lista dei componenti; successivamente viene pre-
+parato un disegno che mostra come i componenti elettronici devono essere posizionati 
+sulla scheda di supporto.
+I collegamenti vengono ricavati durante l’esecuzione del cablaggio direttamente dallo 
+schema elettrico oppure da una lista di connessione (netlist).
+La lista di connessione è l’elenco di tutti i terminali di ogni componente che compare 
+nel circuito elettronico. Accanto a ogni terminale vengono indicati le sigle o il numero di 
+identificazione dei vari componenti con cui deve essere connesso.
+Quando, in fase di studio, si devono realizzare dei circuiti di prova (prototipi) si 
+ricorre al cablaggio manuale, che può essere eseguito abbastanza velocemente e, se neces-
+sario, modificato.
+Se il cablaggio che si deve eseguire è provvisorio e deve essere impiegato per prove di 
+laboratorio al fine di valutare la funzionalità di alcune parti di un apparato elettronico o le 
+caratteristiche di qualche componente o di una particolare configurazione circuitale, si 
+utilizza un tipo particolare di supporto, la basetta per bread-boarding. Si tratta di una 
+basetta provvista di un reticolo di fori disposti con un passo di un decimo di pollice; ogni 
+foro contiene una pinzetta interconnessa con altre pinzette in modo da formare segmenti 
+di cavo. Inserendo in modo opportuno i componenti elettronici e utilizzando spezzoni di 
+cavo di lunghezza opportuna è possibile realizzare il circuito elettronico in modo rapido e 
+affidabile senza dover procedere a saldature. Al termine della prova i componenti sono 
+riutilizzabili.
+Le connessioni si possono eseguire per mezzo di apposite schede commerciali che, per 
+la saldatura dei componenti, presentano le piazzole già forate e disposte sulla scheda 
+distanziate di un decimo di pollice, per permettere l’utilizzo della scheda con i circuiti 
+integrati.
+I componenti vengono fissati meccanicamente alla scheda per mezzo di saldature e il 
+collegamento elettrico viene realizzato con cavi che vengono saldati sulle piazzole. 
+Recentemente sono state introdotte nuove tecniche di cablaggio che non richiedono l’ese-
+cuzione di alcuna saldatura.
+La più diffusa tecnica di cablaggio senza saldature è quella wrap che utilizza un tipo 
+di cavo elettrico cablato mediante un particolare attrezzo: le connessioni elettriche ven-
+gono realizzate semplicemente avvolgendo il cavo elettrico sul terminale del componente 
+da connettere. L’attrezzo di cui sopra funziona a batteria e permette di velocizzare la rea-
+lizzazione delle connessioni. I componenti elettronici cablati con questa tecnica sono riu-
+tilizzabili quando la scheda viene smontata.
+Tuttavia, poiché è molto difficile costruire due schede o apparecchiature identiche e 
+che abbiano esattamente le stesse caratteristiche di affidabilità, la tecnica di realizzazione 
+di un'apparecchiatura cablata è consigliabile solo qualora si debbano produrre solo
