@@ -20,11 +20,13 @@ jobs:
 
       - name: Run scraping Zamnesia + RQS
         env:
+          BIOSERRA_GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           MISTRAL_KEY: ${{ secrets.MISTRAL_KEY }}
         run: python .github/scripts/scraping_siti.py
 
       - name: Fusione testi per categoria
         env:
+          BIOSERRA_GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
         run: python .github/scripts/fusione_siti.py
