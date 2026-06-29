@@ -1,0 +1,830 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 62/116 ===
+Chars: 43,044 | Offset: 2,695,194
+
+
+
+[PAG 1294]
+XIII-64
+SENSORI E TRASDUTTORI
+La Fig. XIII.7.9 illustra lo schema di collegamento di un trasduttore, o più generica-
+mente regolatore, di livello con un contattore, il quale a sua volta comanda il funziona-
+mento di un motore e di una pompa. Il tipo rappresentato può svolgere le funzioni di 
+mantenimento del liquido tra due punti prefissati (ovviamente massimo e minimo), inse-
+rire un allarme al raggiungimento del massimo livello oppure inserire l'allarme al raggiun-
+gimento del minimo livello. I tre elettrodi utilizzati e rappresentati in figura svolgono le 
+funzioni rispettivamente di OFF (E1), ON (E2) e massa (E3). Nel caso in cui il serbatoio 
+impiegato sia metallico, è possibile omettere l'elettrodo di massa (E3) e collegare il suo 
+morsetto alla superficie metallica del serbatoio.
+In linea di massima nel controllo del livello di pozzi o serbatoi è possibile incontrare 
+trasduttori a due oppure a tre sonde. Quando il trasduttore a conduttività viene accoppiato 
+a due sonde (minimo e comune) l'intenzione principale è quella di proteggere il funziona-
+mento contro la marcia a secco.
+Quando viene alimentato il relè, contenuto nel sistema di questo trasduttore, si eccita e 
+il sistema di pompaggio si avvia automaticamente.
+Quando la sonda di minimo livello viene scoperta, e cioè si verifica una interruzione 
+del collegamento elettrico tra la sonda di minimo e la sonda comune, il relè si diseccita.
+Normalmente il ripristino si effettua manualmente per mezzo di un pulsante esterno 
+(Fig. XIII.7.10).
+Fig. XIII.7.10  Schema di collegamento di un trasduttore a conduttività a due sonde, per il 
+controllo del livello in un pozzo contro la marcia a secco. La ripartenza della pompa è 
+manuale ed effettuata mediante un pulsante di ripristino.
+Le sonde, a seconda della specifica applicazione, si differenziano nel materiale utiliz-
+zato per la loro costruzione, così a titolo di esempio si trova che una sonda unipolare, 
+impiegata nel controllo di livello nei pozzi profondi o nei serbatoi di accumulo, consta di 
+un elettrodo in acciaio AISI 303, di un portaelettrodo in policarbonato e di un pressacavo; 
+un anello di tenuta, situato nel lato inferiore, e la chiusura del pressacavo impediscono 
+l'ingresso dell'acqua al morsetto di attacco del cavo e la conseguente ossidazione.
+Per contro una sonda unipolare, impiegata nel controllo del livello su caldaie, serbatoi 
+in pressione, autoclavi e in genere dove vi sono condizioni di alta pressione e alta tempe-
+P
+M
+3
+U V W
+RT
+K
+Regolatore
+Serbatoio
+F1
+F2
+L1
+L2
+L3
+Pozzo
+Pulsante di
+ripristino
+
+[PAG 1295]
+SENSORI E TRASDUTTORI
+XIII-65
+ratura, è formata da un elettrodo in acciaio AISI 316 annegato in un corpo di ossido di 
+allumina.
+I trasduttori di livello a conduttività vengono proficuamente applicati sia nell'industria 
+sia nei servizi; essi vengono utilizzati in situazioni molto diverse che si possono indivi-
+duare e riassumere nel comando di elementi di riscaldamento, nel comando dei dispositivi 
+di allarme per il rilevamento di straripamenti, inondazioni, per la segnalazione della pre-
+senza o assenza dell'acqua in un qualsiasi luogo, per il controllo del livello nei serbatoi 
+nell'industria alimentare, nel controllo del livello di pozzi o serbatoi collettori e nel con-
+trollo della quantità di acqua o altra miscela liquida nei distributori automatici.
+7.6  Trasduttori a tasteggio elettromeccanico
+I sistemi che impiegano i trasduttori di livello a tasteggio elettromeccanico hanno 
+conosciuto una enorme diffusione nella misurazione continua di prodotti liquidi e solidi, 
+contenuti in silos o in serbatoi di processo produttivo e caratterizzati da un massimo 
+livello di misura sia di tipo fisso sia fluttuante. Il motivo principale di questo successo è 
+visto nella loro semplicità di funzionamento e nel medesimo istante nell'accuratezza della 
+misura effettuata.
+Un trasduttore a tasteggio elettromeccanico si compone di tre parti fondamentali:
+–  un corpo principale,
+–  un filo,
+–  un peso (tastatore).
+Nel corpo principale è situata tutta la parte elettronica, elettrica e meccanica che, 
+nell'interpretazione dei segnali, genera i comandi di salita o di discesa del peso, trasducen-
+doli inoltre in valori di livello.
+Il filo, che parte dal corpo principale e si collega al peso, ha una lunghezza che varia a 
+seconda dell'altezza del contenitore e del campo di rilevamento. Il filo viene controllato 
+da un apposito dispositivo che, rilevando l'allentamento della sua forza di tensione, 
+comanda la sua risalita oppure la sua discesa.
+Il tastatore possiede caratteristiche molto diverse, a seconda che sia a contatto con del 
+liquido o con del materiale solido. Nel primo caso esso sarà essenzialmente un galleg-
+giante, che fluttua sulla superficie del liquido; nel secondo caso invece sarà un oggetto 
+metallico, avente un peso appropriato, di forma sferica, piatta o cilindrica.
+Un primo tipo di trasduttore di livello a tasteggio elettromeccanico incorpora uno o 
+più sensori magnetici con contatti reed. Costruttivamente i sensori magnetici sono realiz-
+zati in acciaio inossidabile oppure in polipropilene atossico. Il galleggiante porta 
+all'interno un magnete permanente che aziona uno o più contatti reed annegati in resina 
+poliuretanica all'interno del sensore.
+Il galleggiante generalmente scorre lungo un'asta e capovolgendola si ottiene l'inver-
+sione della funzione di uscita.
+Un altro interessante trasduttore che misura il livello di un liquido per via indiretta, 
+cioè tramite la forza della sua massa, è il tipo a dislocatore. Esso combina il principio di 
+Archimede con i moderni sensori e con la tecnologia dei microprocessori.
+In accordo con il principio di Archimede, un corpo (dislocatore) immerso in un 
+liquido viene sottoposto a una forza (idrostatica) Fa che agisce su esso dal basso verso 
+l'alto (forza di galleggiamento) e che è in stretta relazione con la densità del liquido (o 
+gas) e con il volume del corpo (Fig. XIII.7.11).
+Quindi, se il peso del corpo Fg è inferiore della forza di galleggiamento, il corpo flut-
+tua sulla superficie del liquido galleggiando. Se invece esso è superiore, il dislocatore 
+affonda verso il fondo del serbatoio.
+Prendendo spunto dalla figura si può spiegare il funzionamento dicendo che struttural-
+
+[PAG 1296]
+XIII-66
+SENSORI E TRASDUTTORI
+mente il dislocatore, in questo caso una sfera, viene tenuto in sospensione da un filo di 
+misura che può essere avvolto oppure srotolato sulla superficie di una struttura cilindrica, 
+anche con piccolissimi incrementi.
+Il convertitore di segnale, presente nel corpo principale, è capace di posizionare nel 
+serbatoio il dislocatore ad altezze diverse, utilizzando per questo un motore passo passo.
+Fig. XIII.7.11  Parti principali di un trasduttore a tastatore elettromeccanico per la misura 
+del livello di un liquido.
+Il filo, mediante le guide A e B, viene fatto vibrare ritmicamente con intervalli di con-
+trollo da una bobina di eccitazione attraverso un braccio a leva.
+La risultante frequenza di oscillazione del filo f, tra i punti A e B, dipende dalla forza 
+di tensione F esercitata sul filo di misura e data dalla differenza tra la forza del peso e 
+quella idrostatica.
+La frequenza f infine viene raccolta da un sensore magnetico attraverso il braccio a 
+leva e viene trasmessa al convertitore di segnale.
+Con il dislocatore inserito in un contenitore per la misura del livello del liquido conte-
+nuto, la forza di tensione sul filo misuratore decrementa in relazione alla maggiore densità 
+del liquido e in questo modo diminuisce anche la forza idrostatica (di galleggiamento).
+La Figura XIII.7.12 illustra valori diversi di forza di tensione sul filo di misura, 
+espressi in newton, e valori di peso apparente, espressi in grammi, del dislocatore.
+Le relazioni tra forza di tensione e il peso apparente del dislocatore vengono rilevate 
+in assenza di liquido, con immersione in un liquido avente un campo di densità compreso 
+tra 0,4 e 1,4 chilogrammi su litro, con immersione in un liquido avente un campo di den-
+sità compreso tra 0,8 e 2,0 chilogrammi su litro, sulla linea di divisione tra i liquidi a den-
+sità diversa (chiamata interfaccia) e sulla superficie del liquido a densità minore 
+(galleggiamento).
+In base alle diverse situazioni, e ovviamente sottolineando le varie potenzialità di 
+misura di un sistema di questo tipo, si può rilevare che:
+–  la forza di tensione diminuisce con progressione, passando dall'aria (assenza di 
+liquido) alla condizione di immersione in liquido molto denso;
+–  anche il peso apparente del dislocatore diminuisce in modo analogo con il passag-
+gio alle differenti condizioni.
+Le caratteristiche salienti di un sistema di trasduzione di livello con dislocatore si pos-
+A
+B
+F
+Fa
+Fg
+Convertitore
+di segnale
+Motore passo passo
+Tamburo
+avvolgitore
+srotolatore
+Braccio oscillante
+a leva
+Bobina di eccitazione
+e sensore magnetico
+
+[PAG 1297]
+SENSORI E TRASDUTTORI
+XIII-67
+sono individuare essenzialmente in:
+–  elevata flessibilità nelle operazioni che esso può eseguire (infatti un sistema elettro-
+nico di questo tipo può effettuare misure intercambiabili sul volume, livello, interfaccia, 
+densità e massa in un serbatoio);
+–  in relazione a questa intercambiabilità, minimizzazione dei costi dell'investimento e 
+dell'installazione;
+–  adattabilità alle diverse forme di serbatoi per effettuare misure di livello su liquidi 
+con superficie sia fissa che fluttuante.
+Fig. XIII.7.12  Rapporto tra forza di tensione e peso apparente di un dislocatore a sfera, in 
+un trasduttore di livello a tastatore elettromeccanico.
+I trasduttori di questo tipo vengono applicati principalmente nelle industrie petrolchi-
+miche, nella produzione di olii minerali, nel controllo di quantità di acqua, negli impianti 
+di trattamento, in campo navale e nel settore energetico.
+8  SENSORI PER IL CONTROLLO DI PORTATA
+Per capire alcuni concetti e misure riportate in questo contesto si crede sia opportuno 
+introdurre brevemente le regole che si riscontrano quando si opera con fluidi in movi-
+mento in una tubazione.
+Per prima cosa è importante sapere che la velocità di flusso di un fluido all'interno di 
+una tubazione si presenta con profili di tipo parabolico (Fig. XIII.8.1) con valori 0 nelle 
+vicinanze della parete e con valori massimi al centro del tubo.
+Fig. XIII.8.1  Movimento dei fluidi all’interno delle tubazioni.
+Due sono le forze che si contrastano e che danno luogo a questo fenomeno di confor-
+mazione parabolica:
+Fuori
+In liquido
+In liquido
+In
+In
+0,6 N
+0,4 N
+0,3 N
+0,35 N
+0,5 N
+60 g
+40 g
+30 g
+35 g
+50 g
+da liquido
+a minor densità
+a maggior densità
+interfaccia
+superficie
+v
+v
+Profilo
+di
+velocità
+Profilo
+di
+velocità
+Tubazione
+Tubazione
+
+[PAG 1298]
+XIII-68
+SENSORI E TRASDUTTORI
+–  la quantità di moto del flusso,
+–  lo scorrimento viscoso.
+Se queste due forze si mettono in rapporto si ottengono dei valori, chiamati Numeri di 
+Reynolds, che vengono solitamente utilizzati per determinare il comportamento di base 
+dei fluidi in movimento. Il Numero di Reynolds viene cioè calcolato moltiplicando tra 
+loro la velocità media del flusso (espressa in metri al secondo) e il diametro del tubo 
+(espresso in metri) e dividendo il risultato per la viscosità cinematica.
+(XIII.8.1)
+sapendo che la viscosità cinematica è data dal rapporto tra il coefficiente di viscosità asso-
+luta  e la densità .
+(XIII.8.2)
+Più i numeri hanno valori alti e più il profilo della velocità si presenta piatto, mentre 
+per valori bassi il profilo si presenta parabolico. In questo contesto è opportuno sapere 
+inoltre che il profilo della velocità è in relazione al tipo di fluido considerato, per cui per 
+fluidi di diversa natura si otterranno profili parabolici di diversa fisionomia (Fig. 
+XIII.8.2).
+Fig. XIII.8.2  Movimento dei fluidi all’interno delle tubazioni.
+I trasduttori per la misura della portata si possono suddividere in due principali cate-
+gorie:
+–  trasduttori di portata volumetrici,
+–  trasduttori di massa.
+I trasduttori di portata volumetrici si suddividono in:
+–  A spostamento positivo; la loro principale caratteristica è dividere il flusso continuo 
+in quantità discrete, aventi tutte uguale volume, e quindi contando il loro numero risalire 
+al volume totale della portata.
+–  Lineari a quantità di moto; questi tipi di trasduttori di portata possono essere a tur-
+bina oppure a vortici e, oltre ad essere caratterizzati da perdite molto ridotte, producono 
+segnali direttamente proporzionali alla portata misurata.
+–  A quantità di moto con perdita di carico; questa serie di trasduttori si basa sul prin-
+cipio della quantità di moto. Essi, provocando una caduta di pressione e restringendo la 
+sezione del flusso, misurano la perdita di portata.
+–  Ad effetto Doppler; operanti sulle proprietà fisiche dei fluidi, misurano la velocità 
+del fluido. Provocano una irrilevante perdita di pressione, in quanto non possiedono parti 
+mobili o intrusive.
+I trasduttori di portata di massa a loro volta invece si suddividono in:
+–  Per deduzione; essi misurano il flusso di una massa, misurando dei segnali a essa 
+associati. Combinano cioè le misure di portata volumetrica con quelle di un densimetro.
+N.R.
+vm
+D
+
+vc
+-----------------
+=
+vc
+
+--
+=
+Profilo
+di
+velocità
+v
+Vapore
+Profilo
+di
+velocità
+v
+Acqua
+v
+Olii pesanti
+Profilo
+di
+velocità
+
+[PAG 1299]
+SENSORI E TRASDUTTORI
+XIII-69
+–  A massa reale; si tratta di misuratori di portata che funzionano sul principio di 
+Coriolis. Sono misuratori di massa reale che utilizzano le quantità di moto lineare e ango-
+lare per calcolare la velocità dei fluidi.
+8.1  Trasduttore magneto-induttivo
+Questo tipo di trasduttori rientra in quelli che eseguono la misura della portata in 
+modo indiretto, derivandola da formule che considerano la velocità media del liquido e la 
+sezione del tubo utilizzato. In modo specifico i trasduttori flussometrici di tipo magneto-
+induttivo misurano il volume del flusso di un mezzo elettricamente conduttivo, applicando 
+la legge di Faraday (la forza elettromotrice indotta è direttamente proporzionale alla 
+variazione del flusso e inversamente proporzionale alla variazione del tempo). Un condut-
+tore elettrico, in questo caso impersonato dal mezzo elettricamente conduttivo, passa 
+attraverso un campo magnetico (Fig. XIII.8.3) e genera una tensione.
+Fig. XIII.8.3  Principio di funzionamento di un trasduttore di portata magneto-induttivo.
+La tensione U, che viene indotta in questo mezzo, risulta direttamente proporzionale 
+al valore della velocità media del flusso vm, considerando che l'induzione magnetica B
+(cioè la forza del campo magnetico) e la distanza D tra gli elettrodi (cioè il diametro 
+nominale del tubo) risultano delle costanti. Volendo trascrivere questo principio di misura 
+in formula matematica, si può rappresentarlo nel seguente modo:
+(XIII.8.3)
+nella quale la tensione, risultante nella misura, è data dal prodotto della costante dello 
+strumento per la forza del campo magnetico per la velocità media del flusso e per la 
+distanza tra gli elettrodi.
+Sapendo che il volume del flusso può essere calcolato con la formula
+(XIII.8.4)
+e sapendo, mediante la formula inversa, che la velocità media del flusso è
+(XIII.8.5)
+è possibile trovare che il volume del flusso, a condotta piena, è dato da
+(XIII.8.6)
+U
+B
+N
+S
+Magnete
+v
+D
+
+/ #
+4-20 mA
+U
+k
+B
+
+vm
+
+D
+
+=
+qv
+vm D2
+
+4--
+
+=
+vm
+U
+k
+B
+
+D
+
+----------------------
+=
+qv
+U
+k
+B
+
+------------
+D
+
+4--
+
+
+=
+
+[PAG 1300]
+XIII-70
+SENSORI E TRASDUTTORI
+In questi sistemi di misura i valori dei segnali della tensione indotta vengono normal-
+mente raccolti da due elettrodi di misura, posti a contatto diretto con il mezzo, oppure ven-
+gono derivati in modo indiretto mediante la misura dei valori della capacità accoppiata.
+Dopo essere stati raccolti un convertitore di segnali li amplifica e li trasforma sia in 
+segnali standardizzati (per esempio a corrente impressa con valori da 0 a 20 mA) sia in 
+segnali di frequenza (per esempio per ogni metro cubo di flusso che passa nel tubo di 
+misura viene generato un impulso).
+Risulta inoltre che in questi sistemi non sussistono pericoli di corto circuiti per la 
+superficie del tubo, in quanto il tubo di misura è fatto di un materiale elettricamente iso-
+lato oppure viene rivestito in parte da materiale isolante.
+I flussometri di tipo magneto-induttivo sono di solito formati da una parte principale 
+(chiamata trasmettitore di portata), che viene collegata al tubo, e da un convertitore di 
+segnali. Nei sistemi attuali è frequente trovare le due parti unite in un corpo unico.
+Inoltre sono disponibili due diversi sistemi per la misura del flusso magneto-induttivo: 
+sistemi con campo pulsante in corrente continua e sistemi con campo pulsante in corrente 
+alternata.
+Nei sistemi in corrente continua l'avvolgimento primario, che genera il campo magne-
+tico, viene alimentato direttamente dal convertitore di segnale. I segnali che derivano 
+dalla misura sono dati da valori di tensione a onda quadra con frequenza molto bassa (per 
+esempio avente valori tra 1/6 e 1/32 della frequenza nominale di alimentazione). Questi 
+sistemi sono caratterizzati da errori di misura molto piccoli.
+Nei sistemi in corrente alternata invece l'avvolgimento primario viene alimentato 
+dalla tensione principale (di linea) e i segnali di misura sono di tipo sinusoidale.
+8.2  Trasduttori volumetrici a vortice
+Questo tipo di trasduttore volumetrico lineare a quantità di moto basa la propria capa-
+cità di misurare la portata di gas, liquidi o vapore sulla generazione di vortici sulla linea di 
+flusso e sulla rilevazione della frequenza con la quale questi ultimi si distaccano 
+dall'ostruzione generatrice. La parte trasduttrice dei segnali è composta da un sensore pie-
+zoelettrico, esterno al flusso, che trasforma le variazioni di pressione, strettamente legate 
+alla frequenza di distacco dei vortici, in segnali elettrici. La parte di elettronica associata, 
+normalmente permette di avere a disposizione in uscita segnali diversificati che possono 
+essere di tipo analogico, un segnale in corrente continua 4  20 mA, oppure di frequenza, 
+con impulsi di tensione a onda quadra da 0 a 3000 Hz, oppure a impulsi graduati, in modo 
+cioè che ciascun impulso indichi una specifica e ben precisa quantità di fluido.
+Questi trasduttori di portata sono caratterizzati da un'ottima precisione, circa 1-1,5% 
+della portata a seconda del mezzo, anche a basse velocità; inoltre essi possono operare 
+sino a temperature di 400 °C e il loro valore di campo operativo può essere tra i 5000 e i 
+7 000 000 Numeri di Reynolds.
+Questi trasduttori infine possono essere installati con una qualsiasi inclinazione e, 
+quando operano con liquidi, la sezione di flusso deve essere sempre piena.
+8.3  Trasduttori di portata ad area variabile
+La misura della portata secondo il principio dell'area variabile è particolarmente 
+applicata a liquidi e a gas. Gli apparecchi sono costituiti da un tubo di vetro, di metallo o 
+con rivestimento antiacido (a seconda dello specifico utilizzo), avente una forma tronco-
+conica con la base più grande posta nella parte superiore. All'interno del tubo è situato un 
+galleggiante che viene messo in movimento dal fluido che entra dalla parte inferiore. Il 
+galleggiante si ferma nel punto in cui subentra una situazione di contro bilanciamento tra 
+la sua massa e le forze prodotte dal fluido che transita tra il galleggiante stesso e le pareti 
+del tubo. Il sistema di indicazione della portata, cioè la posizione del galleggiante in que-
+
+[PAG 1301]
+SENSORI E TRASDUTTORI
+XIII-71
+sto caso, può essere diretto, se esiste una scala calibrata, oppure può essere di tipo magne-
+tico o con rilevamento elettronico a microprocessore.
+La costruzione generalmente prevede un telaio realizzato in ferro dolce mentre il tubo 
+di misura è collegato per mezzo di raccordi a sgancio rapido, permettendo una rapida 
+sostituzione del tubo stesso e del galleggiante, e le tenute sono garantite da anelli in 
+gomma nitrilica.
+I tubi di misura possono avere scale diverse, permettendo altrettanti campi di portata 
+e, se sono fatti di vetro, sono costituiti di vetro borosilicato con trattamento di ricottura.
+I sistemi che adottano questo tipo di trasduttori di portata presentano le seguenti prin-
+cipali caratteristiche:
+–  la costruzione è particolarmente semplice e robusta;
+–  risultano particolarmente affidabili e sicuri operativamente;
+–  presentano una massima precisione di misura anche a basse portate;
+–  le perdite sono molto contenute;
+–  possono addizionare la trasmissione elettrica o pneumatica dei valori misurati e 
+contatti di allarme regolabili sull'intero campo di misura;
+–  presentano componenti facilmente intercambiabili;
+–  non necessitano di alcun tratto rettilineo a monte e a valle del trasduttore di misura.
+I misuratori di portata ad area variabile sono particolarmente adatti per le applicazioni 
+nell'industria chimica, petrolchimica, farmaceutica, nell'ingegneria meccanica, negli 
+impianti di trattamento delle acque e nell'industria alimentare.
+8.4  Trasduttori a ultrasuoni
+I trasduttori a ultrasuoni funzionano sul principio di misura basato sul tempo di tran-
+sito ultrasonico (già analizzato per i trasduttori di livello). Questo tipo di trasduttori pre-
+senta apparecchi compatti a canale singolo o canale doppio, e sistemi con elettronica 
+separata nei quali le sonde ultrasoniche possono essere applicate esternamente alla tuba-
+zione o saldate sulla stessa.
+Il sensore è fatto di acciaio al carbonio, rivestito con vernice bituminosa e adatta per 
+impiego anche su acqua potabile, oppure di acciaio inox non verniciato o di PVC.
+Presenta inoltre un'uscita analogica 0/4  20 mA, isolata galvanicamente, oppure 
+un'uscita totalizzante a collettore aperto di 24 V in corrente continua e con un massimo di 
+250 mA.
+Per assicurare un preciso funzionamento del misuratore questo deve essere installato 
+in un tratto rettilineo di tubazione con una lunghezza minima pari a 10 diametri a monte e 
+2 a valle.
+I principali vantaggi di questa famiglia di trasduttori di portata possono essere così 
+riassunti:
+–  elevata precisione di misura, normalmente pari a 1% del valore misurato, non 
+influenzata dalla viscosità, temperatura, pressione e conducibilità elettrica;
+–  nessuna perdita di carico;
+–  nessuna parte in movimento;
+–  misura bidirezionale;
+–  costi operativi di manutenzione trascurabili.
+I misuratori di portata ultrasonici si possono utilizzare in modo universale per la 
+misura di portata di liquidi e gas, senza contatto con il fluido di misura (misura non inva-
+siva). Il campo di applicazione spazia dalla misura delle acque di scarico, all'ammoniaca, 
+all'azoto, al gas naturale, all'aria, agli olii pesanti e alle miscele di acqua e olio.
+8.5  Strozzamenti a pressione differenziale
+I trasduttori, che derivano la misura della portata di una tubazione dal principio della
+
+[PAG 1302]
+XIII-72
+SENSORI E TRASDUTTORI
+pressione differenziale, si presentano come strumenti precisi, semplici, affidabili e di un 
+costo abbastanza limitato, in confronto ai dispositivi tradizionali (tubo di Venturi, bocca-
+gli oppure flange tarate) che vedono principalmente nel loro elevato costo l'ostacolo più 
+elevato per una diffusa applicazione.
+Funzionante in base al teorema di Bernoulli, un trasduttore a pressione differenziale 
+(Fig. XIII.8.4) produce una differenza di pressione che è proporzionale al quadrato della 
+portata. Il segnale prodotto da un simile trasduttore si compone di due parti: l'alta pres-
+sione e la bassa pressione.
+Fig. XIII.8.4  Principio di funzionamento di un trasduttore di portata con dispositivi di 
+strozzamento.
+La parte del segnale prodotta dall'alta pressione è causata dall'impatto del profilo di 
+velocità sul sensore. In questa situazione le prese multiple di pressione, poste sul fronte 
+del sensore, misurano il profilo della pressione di impatto. I valori della media della velo-
+cità/pressione sono in relazione al rapporto tra il diametro dei fori della presa e l'area della 
+sezione della camera interessata.
+Fig. XIII.8.5  Profilo di alta e bassa pressione di impatto in trasduttori di pressione con 
+dispositivi a strozzamento.
+Il profilo della pressione di impatto prosegue poi intorno al sensore, generando un 
+secondo profilo, definito di bassa pressione. Esso viene rilevato dalle prese situate a valle 
+Attacco di
+alta pressione
+Attacco di
+bassa pressione
+Profilo di
+velocità
+Sensore
+Bassa pressione mediata
+Profilo
+Profilo
+Profilo
+Velocità
+Media
+Differenza di
+Media
+Alta pressione mediata
+di velocità
+alta pressione
+bassa pressione
+media
+dell’alta
+pressione
+pressione
+della bassa
+pressione
+
+[PAG 1303]
+SENSORI E TRASDUTTORI
+XIII-73
+del sensore, cioè situate nella direzione opposta di quelle di alta pressione (Fig. XIII.8.5). 
+La pressione misurata dai due tipi di prese è sempre la media della pressione stessa.
+Il sensore di un classico dispositivo a strozzamenti è costituito da un tubo multiplo, 
+diviso internamente in due parti (camere), sensibili al flusso bidirezionale, le quali pos-
+sono avere una forma a diamante oppure una sezione circolare. La Fig. XIII.8.6 mostra la 
+suddivisione interna di un sensore, visto dall'alto, con le camere a forma di diamante.
+Mentre la forma a diamante permette di avere un punto fisso di separazione del fluido 
+del sensore, quella a sezione circolare dispone di una separazione variabile. Questo vuol 
+dire che, a seconda del tipo di fluido, velocità, rugosità della superficie del sensore e tur-
+bolenza, si può variare il rapporto di portata delle due camere. Nel sensore con le camere 
+a forma di diamante la forma fissa elimina qualsiasi accidentale cambiamento del segnale 
+a bassa pressione e permette di ottenere una costante stabilità della precisione della 
+misura. Nel tipo invece a sezione circolare, le variazioni di dimensione tra le due camere 
+causano una elevazione del valore del segnale di bassa pressione e conseguentemente un 
+decadimento della precisione della misura che può raggiungere anche un 10%.
+8.6  Trasduttori a massa reale mediante l'effetto Coriolis
+Sempre con maggiore frequenza le industrie chiedono strumenti atti a misurare la por-
+tata utilizzando la massa dei prodotti anziché il loro volume o la loro velocità. La richiesta 
+viene giustificata dal fatto che le misure convenzionali, cioè basate sulla velocità e sul 
+volume, sono più esposte a errori dovuti alla variazione dei parametri fisici dei prodotti 
+(temperatura, pressione, viscosità, densità).
+Inoltre è da tener presente che la precisione dei sistemi convenzionali volumetrici è 
+legata a tutti quei fenomeni che possono modificare la velocità a monte, a valle o il profilo 
+stesso della velocità nella tubazione.
+I trasduttori basati sulla misura della massa reale, denominati ad effetto Coriolis, evi-
+tano tutto questo in quanto eseguono una misura diretta sulla massa. Quindi il vantaggio 
+essenziale di questi trasduttori è che la massa di un fluido è la sola variabile fisica che non 
+viene influenzata da altri parametri fisici.Questo in quanto variazioni nella densità, pres-
+sione, temperatura, viscosità e profilo del flusso, oppure nella conducibilità elettrica o la 
+presenza di bolle di gas omogeneamente distribuite e particelle solide in sospensione, 
+esercitano una influenza trascurabile sulla precisione della misura.
+Inoltre, poiché il sensore è sensibile alla sola massa in movimento, la sua precisione 
+non è influenzata da eventuali depositi o incrostazioni all'interno dei tubi.
+La spiegazione del principio base prende in considerazione la seconda legge di 
+Newton
+(XIII.8.7)
+che descrive la relazione fra la forza totale prodotta da un corpo, avente una certa massa e 
+una certa accelerazione.
+Fig. XIII.8.6  Trasduttore di portata a strozzamenti.
+F
+m
+a
+
+=
+F
+forza totale
+=
+m
+massa del corpo
+=
+a
+accelerazione
+=
+
+[PAG 1304]
+XIII-74
+SENSORI E TRASDUTTORI
+Prendendo spunto da questa legge, si afferma che, se la struttura nella quale si muove 
+l'oggetto è caratterizzata da una velocità angolare, l'oggetto manifesta la forza di Coriolis
+(XIII.8.8)
+ottenuta sostituendo all'accelerazione nella seconda legge di Newton, l'accelerazione di 
+Coriolis pari a
+(XIII.8.9)
+L'accelerazione di Coriolis, o accelerazione complementare, è data dal doppio del pro-
+dotto tra la velocità angolare e la velocità del corpo.
+La dimostrazione più evidente dell'esistenza della forza di Coriolis la si può verificare 
+sulla terra, che costituisce un sistema coordinato in rotazione. Se si lascia cadere un corpo 
+da una certa altezza questo toccherà il suolo leggermente spostato ad est della verticale. 
+La spiegazione la si riscontra nella sua posizione, quando è in alto, che risulta legger-
+mente spostata rispetto all'asse della terra e nella sua superiore velocità lineare verso est 
+(dovuta alla rotazione della terra) rispetto a quella che avrebbe a livello del suolo. Nel 
+cadere il corpo manifesta questa sua maggiore velocità lineare e deflette verso est.
+Se ora si ipotizza di lasciare cadere il corpo all'interno di un tubo, rigidamente fissato 
+in verticale e con un diametro interno tale da lasciar cadere il corpo verso il basso, si 
+riscontra che il corpo esprime ancora la maggior componente della sua velocità verso est, 
+ma, essendo costretto a rimanere all'interno del tubo, manifesterà questa sua maggiore 
+velocità mediante una forza sulla parete interna del tubo rivolta a est.
+Se anziché un corpo rigido si fa cadere nel tubo un fluido (per esempio acqua), si 
+riscontrerà lo stesso fenomeno e, di conseguenza, si troverà che la vena fluida eserciterà 
+una forza sulle pareti del tubo.
+La forza di Coriolis viene prodotta ogni qual volta un fluido con una certa massa 
+scorre in un tubo inserito in un sistema rotante.
+A livello applicativo si utilizza un tubo, particolarmente sagomato (un doppio loop 
+ovoidale/elicoidale), messo in continua vibrazione periodica in modo che l'ampiezza e la 
+direzione della velocità angolare siano in continua variazione, nel quale si fa passare il 
+fluido. In accordo con l'equazione precedentemente vista, questa situazione produce una 
+forza di Coriolis alternata.
+Se si costruisce la struttura del loop con sufficiente elasticità, le forze di Coriolis 
+determinano una deformazione elastica della struttura stessa e la misura della portata di 
+massa viene determinata dalla misura delle stesse deformazioni (spostamenti). Sono 
+quindi degli elettromagneti, costituiti da magneti permanenti e da bobine, a rilevare la 
+forza elettromotrice indotta che è proporzionale allo scostamento dovuto alle forze di 
+Coriolis.
+Il tubo di misura viene normalmente realizzato in acciaio inossidabile senza alcuna 
+restrizione e con una totale assenza di zone morte; le caratteristiche peculiari si possono 
+riassumere in: costruzione compatta e particolarmente robusta, perdita di carico partico-
+larmente ridotta, massima affidabilità.
+9  TRASDUTTORI PER IL CONTROLLO DI PRESSIONE
+Gli ultimi anni hanno visto una diffusione sempre più massiccia dei trasduttori di 
+pressione, tale che le aziende produttrici di questi trasduttori si sono sempre più perfezio-
+nate e hanno raggiunto tecnologie adatte a soddisfare le esigenze applicative nei vari 
+campi di impiego.
+Fc
+2m
+V
+
+
+
+=
+a
+2
+V
+
+=
+
+[PAG 1305]
+SENSORI E TRASDUTTORI
+XIII-75
+La modalità tradizionale per misurare la pressione di un gas o di un liquido si basa 
+sulla trasformazione dello sforzo impresso per mezzo di un piccolo foro a una sottile 
+membrana di materiale, facendola deformare. Misurando la variazione della resistenza 
+elettrica, indotta sugli speciali resistori sparsi sulla superficie della membrana, si deter-
+mina il valore di pressione. La Figura XIII.9.1 riporta un tipico strumento commerciale 
+per la misurazione del flusso con trasduttori di pressione differenziali
+Fig. XIII.9.1  Impianto standard per la misurazione del flusso con trasduttori di pressione 
+differenziali.
+I trasduttori per la misura della pressione sono considerati una sottoclasse dei sensori 
+misuranti la variazione di forza e in molti di questi trasduttori un sistema di forze tra-
+sforma la pressione in spostamento fisico. Essi si differenziano a seconda del principio 
+adottato nella trasduzione sistema di forze/sistema elettrico e si possono distinguere in:
+–  trasduttori di tipo estensimetrico,
+–  ottico,
+–  capacitivo,
+–  induttivo,
+–  piezoresistivo.
+In seguito verranno presi in esame alcuni tipi dei vari trasduttori ritrovabili sul mer-
+cato ma, prima di esaminarli, è bene fare il punto su alcuni concetti essenziali per capire 
+meglio i trasduttori di pressione e le loro caratteristiche riportate sui vari cataloghi com-
+merciali.
+Innanzi tutto si ricorda che una misura può essere correlata a tre diversi riferimenti di 
+pressione.
+Se il riferimento è la pressione assoluta sarà il vuoto assoluto, creato all'interno del 
+sensore di pressione, a essere considerato.
+Se il riferimento è la pressione relativa (gage pressure) sarà la pressione esterna al 
+trasduttore a essere considerata, cioè di fatto la pressione barometrica.
+Se il riferimento è la pressione relativa sigillata (sealed gage pressure) sarà una pre-
+cisa pressione di riferimento, creata e sigillata all'interno del sensore di pressione, a essere 
+considerata.
+Un secondo parametro importante riguarda la sensibilità, che si può definire come il 
+rapporto tra la variazione del segnale in uscita e la corrispondente variazione nella gran-
+dezza da misurare. I valori della sensibilità devono essere adeguatamente elevati, tali da 
+garantire una risoluzione soddisfacente del sistema di misura.
+Infine si ricorda che anche la linearità ha una importanza particolare. Essa esprime il 
+massimo scostamento tra la curva reale del trasduttore, ricavata dalla sua calibrazione, e 
+Lettura valore
+Flusso
+Trasduttori di pressione
+Disco con orifizi
+Flangia
+
+[PAG 1306]
+XIII-76
+SENSORI E TRASDUTTORI
+una linea retta di riferimento, costruita partendo dai valori limite superiore e inferiore, 
+oppure dagli stessi valori estremi ottenuti durante un ciclo di misure.
+9.1  Trasduttori capacitivi
+I trasduttori di pressione capacitivi utilizzano un diaframma posizionato tra le due 
+armature di un condensatore il quale, muovendosi, determina una variazione della capa-
+cità del condensatore. La variazione della capacità viene utilizzata per cambiare la fre-
+quenza di un oscillatore.
+In questo tipo di trasduttori è sufficiente un piccolo spostamento per causare varia-
+zioni del segnale.
+I trasduttori capacitivi risultano strumenti ideali per effettuare misure all'interno del 
+vuoto e presentano una eccellente precisione e un'ottima risoluzione.
+Sono caratterizzati da un'alta impedenza di uscita, sono sensibili alle variazioni di 
+temperatura e richiedono un'elettronica dedicata.
+9.2  Trasduttori estensimetrici
+In questo tipo di trasduttori una pressione idraulica o pneumatica, agendo su un 
+sistema di forze, provoca una deflessione meccanica che viene trasmessa a un estensime-
+tro. La sua variazione di resistenza elettrica risulta dipendere dalla sua lunghezza e dalla 
+pressione applicata. Se si inserisce l'estensimetro in un ramo di un ponte di Wheastone, è 
+possibile convertire lo stress meccanico subito dall'estensimetro in segnale elettrico. 
+L'uscita del ponte produrrà un valore di tensione che varierà a seconda della sua resistenza 
+risultante.
+I tipi di tecnologia a estensimetro che si possono riscontrare nelle varie applicazioni 
+sono:
+–  a film sottile,
+–  con estensimetro a filo,
+–  a semiconduttore incollato,
+–  a semiconduttore diffuso.
+Di questi tipi vengono analizzati i primi due.
+La tecnologia a film sottile è attualmente la tecnologia leader nel campo della costru-
+zione dei trasduttori di pressione. Essa utilizza la tecnica denominata sputtering (spruzza-
+mento) per la deposizione del film sottile sul supporto. Il processo avviene, sotto vuoto e 
+in presenza di argon, in una camera di deposizione nella quale preventivamente sono stati 
+preparati il silicio da depositare sotto forma di film sottile e i substrati.
+Gli ioni di argon, adeguatamente accelerati per effetto di una elevata differenza di 
+potenziale elettrico, colpiscono il preparato di silicio e provocano il distacco di atomi 
+dallo stesso. Sono gli stessi atomi che, cadendo, andranno a depositarsi sul substrato sotto 
+forma di pellicola continua.
+Una seconda tecnica utilizzata per la realizzazione del film sottile è quella per deposi-
+zione di vapori chimici. Essa viene comunemente impiegata per ottenere trasduttori a 
+basso costo e le loro prestazioni si avvicinano abbastanza a quelle riscontrabili nei pro-
+dotti con la tecnica di sputtering.
+Costruiti con la tecnica della deposizione di vapore chimico, sono prodotti in grandi 
+lotti, su wafer, per deposizione di polisilicio su di un substrato di acciaio inossidabile.
+Successivamente il wafer viene diviso per produrre i singoli supporti del sensore. Cia-
+scun supporto viene poi saldato al laser all'attacco ed alla membrana di acciaio inossida-
+bile, precedentemente brasati sotto vuoto.
+Quindi viene collegato, mediante capillari d'oro, a una piastrina indipendente, la quale 
+è a sua volta collegata a una piastrina di compensazione che controlla il condizionamento 
+e l'amplificazione del segnale.
+
+[PAG 1307]
+SENSORI E TRASDUTTORI
+XIII-77
+È interessante rilevare inoltre la presenza sul mercato di trasduttori di pressione a film 
+sottile equipaggiati con microprocessore, il quale svolge la funzione di correggere gli 
+errori dovuti alle variazioni di temperatura e di razionalizzare l'uscita. Questi strumenti 
+vengono forniti con uscita in tensione oppure digitale, il che li rende immuni dai disturbi 
+elettromagnetici anche con acquisitori posti a distanze molto elevate.
+I trasduttori estensimetrici a filo consistono in un filo sensibile di platino-tungsteno 
+del diametro di 0,0075 mm, avvolto attorno a dei supporti non conduttivi collegati a un 
+sistema a molla. La pressione indotta sulla membrana viene trasmessa, per mezzo di 
+un'asta di spinta, al centro del sistema (configurato come un ponte di Wheastone) causan-
+done la deflessione.
+Questi tipi di trasduttori presentano una buona precisione, stabilità a lungo termine e 
+una buona compensazione termica, ma sono piuttosto sensibili agli shock e consentono un 
+basso livello d'uscita.
+9.3  Trasduttori potenziometrici
+La pressione, esercitata su un soffietto o su un tubo di Bourdon, è tradotta in segnale 
+elettrico mediante il movimento di un cursore attorno a un avvolgimento o a un resistore 
+(Fig. XIII.9.2).
+Il segnale, prodotto dallo spostamento del cursore, viene normalmente amplificato per 
+incrementare la risoluzione. Inoltre è spesso necessario impiegare una massa bilanciata 
+per ridurre gli errori di accelerazione.
+Fig. XIII.9.2  Trasduttore di pressione potenziometrico.
+Nelle misure di breve durata, nelle quali sia richiesta una modesta precisione, questi 
+trasduttori permettono di ottenere dei segnali lineari in uscita.
+Lo sfregamento però fra il cursore e l'elemento resistivo provoca una elevata isteresi e 
+inoltre il trasduttore risulta molto sensibile alle sollecitazioni meccaniche. La vita di que-
+sti trasduttori è molto limitata.
+9.4  Trasduttori piezoelettrici
+La forza applicata sulla membrana di questo tipo di trasduttori di pressione viene tra-
+sferita su un asse di un cristallo asimmetrico. Sul cristallo quindi viene applicata una forza 
+di tensione che lo induce a generare una carica elettrica.
+I più comuni cristalli utilizzati sono:
+–  il quarzo,
+–  il bario,
+Stantuffo
+Testina in movimento
+Potenziometro lineare
+Taratura
+Soffietto
+Testina di entrata
+Alimentazione
+R1
+Voltmetro
+Ingresso P1
+Ingresso P2
+
+[PAG 1308]
+XIII-78
+SENSORI E TRASDUTTORI
+–  il titanio,
+–  il tormaline.
+L'alta impedenza di uscita richiede un amplificatore di carica prima che il segnale 
+venga trasmesso allo strumento acquisitore.
+I trasduttori di pressione piezoelettrici si presentano di costruzione compatta, permet-
+tono solo misure di pressione dinamica e richiedono speciali cavi di collegamento.
+10  SENSORI PER IL CONTROLLO DI TEMPERATURA
+Da sempre la misurazione e il rilevamento delle variazioni termiche sono stati le prin-
+cipali applicazioni dei sensori. Tempo addietro si misurava la temperatura con metodi 
+meccanici sfruttando la dilatazione dei metalli o dei liquidi.
+Attualmente si impiegano sensori più sofisticati, quali termistori, termocoppie, termo-
+resistenze con sensori al silicio discreti o integrati.
+Si può definire trasduttore di temperatura quel dispositivo che è capace di trasfor-
+mare una temperatura in una grandezza elettrica.
+A seconda dei differenti campi di temperatura, del tipo di trasduzione utilizzata (ana-
+logica o digitale), delle condizioni specifiche di impiego, del tipo di grandezza elettrica 
+voluta in uscita e dell'affidabilità della caratteristica di trasferimento, si opererà la scelta 
+dello specifico trasduttore da utilizzare.
+I sensori per il controllo della temperatura trovano impiego in tutti quei processi che 
+implichino cambiamenti di temperatura. Si riscontrano per esempio nei settori chimici, 
+nei settori per la produzione di resine sintetiche, nelle apparecchiature per i trattamenti 
+termici, nei sistemi di distillazione, nei controlli industriali in genere.
+10.1  Termistori
+I termistori vengono utilizzati come sensori di temperatura, elementi di protezione e 
+compensatori di variazioni di temperatura nei circuiti.
+I termistori, a livello funzionale, si differenziano per il riscaldamento che può essere 
+del tipo diretto oppure indiretto.
+I termistori con riscaldamento di tipo diretto ricavano la variazione di temperatura 
+direttamente dal passaggio della corrente nell'impasto.
+I termistori a riscaldamento indiretto invece sono dotati di una piccola spirale che 
+avvolge l'elemento resistivo ed è il passaggio della corrente in questa piccola spirale che 
+provoca la variazione di temperatura.
+La loro forma può essere di tipo a disco o cilindrica (forme caratteristiche dei termi-
+stori a riscaldamento diretto e che sono dotate di due terminali di collegamento) oppure a 
+goccia (questa forma invece denota sia termistori a riscaldamento diretto sia indiretto e 
+presenta strutturalmente quattro terminali di collegamento).
+I termistori si dividono in due categorie:
+–  resistori di tipo NTC,
+–  resistori di tipo PTC.
+I resistori NTC (Negative Temperature Coefficient) sono un particolare tipo di semi-
+conduttori nei quali la resistenza diminuisce all'aumentare della temperatura. Essi sono 
+caratterizzati da un coefficiente termico elevato e negativo.
+Quando sono inseriti in un circuito, essi trasformano la variazione di temperatura in 
+variazione di tensione.
+Sono composti da particolari ossidi metallici come quelli del nichel, del manganese, 
+del rame, del ferro o del cobalto, opportunamente trattati.
+Da tenere in considerazione è il fatto che i resistori NTC introducono un errore dovuto 
+all'autoriscaldamento e che spesso la loro risposta deve essere linearizzata.
