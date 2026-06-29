@@ -1,0 +1,719 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 110/116 ===
+Chars: 44,580 | Offset: 4,821,754
+
+
+
+[PAG 2140]
+XX-122
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+pochissime schede o apparecchiature e se il circuito da eseguire è semplice, utilizza pochi 
+componenti, è facile da collaudare e non verrà in seguito modificato.
+Qualsiasi intervento successivo risulterà quasi sicuramente di difficile esecuzione in 
+quanto i vari circuiti realizzati non saranno perfettamente identici e la documentazione e 
+la tecnica utilizzata per effettuare le connessioni dipenderanno essenzialmente dall’abilità 
+del tecnico che ha effettuato il cablaggio.
+Il montaggio effettuato con il metodo del circuito stampato richiede una documenta-
+zione più accurata e completa di quella richiesta dalla tecnica cablata. Oltre allo schema 
+elettrico e alla lista dei componenti devono essere fornite precise indicazioni circa tutte le 
+particolarità costruttive e di montaggio richieste dai vari componenti elettronici ed elet-
+tromeccanici utilizzati; i materiali da impiegare devono essere scelti con cura e devono 
+essere ricercate tutte le informazioni riguardanti le dimensioni fisiche dei componenti e le 
+loro caratteristiche di impiego.
+Questo metodo costruttivo richiede che il tecnico presti grande attenzione all’analisi 
+preventiva della documentazione necessaria all’esecuzione dei disegni di fabbricazione 
+del circuito stampato, perché una volta che i disegni sono stati riprodotti e utilizzati nel 
+processo di fabbricazione non sono più consentiti ripensamenti e correzioni.
+L’importanza di questa tecnica di montaggio delle apparecchiature elettroniche è data 
+dalle caratteristiche di alta omogeneità delle prestazioni offerte dal prodotto finito. Infatti, 
+una volta ricavato dal disegno di fabbricazione, il tracciato dei conduttori, lo stesso può 
+essere riprodotto in un gran numero di esemplari. I circuiti stampati così ottenuti possie-
+dono caratteristiche dimensionali e qualitative omogenee e quindi possono essere montati 
+impiegando macchine a funzionamento automatico oppure impiegando personale con 
+bassa qualificazione.
+Anche la fase di collaudo è avvantaggiata delle caratteristiche di ripetitività del 
+cablaggio: la regolare e costante disposizione dei componenti sulla scheda a circuito stam-
+pato fa sì che le procedure di prova e di controllo delle schede siano eseguibili con appo-
+site apparecchiature in modo automatico (ATE - Automatic Test Equipment).
+Tecnica di progetto modulare a schede 
+La tecnica di progetto modulare si basa sulla realizzazione di un’apparecchiatura elet-
+tronica suddivisa su più schede, ognuna delle quali contiene una parte del circuito gene-
+rale; queste parti sono unità funzionali ben definite dell’apparecchiatura.
+Il collegamento fra le varie schede può essere realizzato con tecniche cablate o con 
+circuiti stampati sui quali vengono montati connettori del tipo femmina in grado di accet-
+tare i connettori corrispondenti del tipo maschio montati sulle schede.
+Questa filosofia di progetto offre molti vantaggi; il principale dei quali è quello di ren-
+dere facili e agevoli le riparazioni. La singola scheda infatti è un’unità funzionale in tutto 
+simile ad un circuito integrato, per cui a un suo eventuale malfunzionamento si può porre 
+rimedio con la semplice sostituzione. In caso di guasto, mentre il circuito integrato non è 
+ricuperabile, la scheda può invece essere riparata.
+L’intervento di riparazione effettuato con le modalità soprascritte si limita all’indivi-
+duazione dell’unità funzionale che presenta un funzionamento anomalo e può perciò 
+essere eseguita anche da personale non particolarmente qualificato, in tempi ridotti e 
+quindi con costi non elevati.
+Sono inoltre possibili interventi di manutenzione che minimizzano i tempi di fermata 
+delle apparecchiature controllate dall’apparato elettronico. 
+Le apparecchiature elettroniche basate sui microprocessori utilizzate per controllare 
+apparecchiature industriali utilizzano largamente questa tecnica costruttiva e di progetto.
+Moltissime aziende producono propri sistemi a microprocessore realizzati su schede a
+
+[PAG 2141]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-123
+formato unificato (Eurocard 100160 mm o Doppio Eurocard 160233,4 mm) che pos-
+sono essere acquistate come semplici unità funzionali. Per usarle l’utente deve solo pro-
+grammarle nel modo richiesto dall'applicazione, in caso di guasto, può sostituirle come se 
+fossero componenti. Questi sistemi sono in genere formati da una scheda centrale conte-
+nente il microprocessore, le memorie, i dispositivi di I/O, e da altre schede in grado di 
+effettuare tutte le principali elaborazioni richieste ad un microcalcolatore.
+Le schede industriali più comuni sono le seguenti: schede per il controllo del video e 
+di unità a dischi, schede di conversione analogico/digitale e digitale/analogico, schede con 
+alimentatori, schede di I/O provviste di optoisolatori. Queste schede sono tutte facilmente 
+collegabili fra loro per mezzo di schede di interconnessione a circuito stampato.
+3.1.7  Documentazione di un’apparecchiatura elettronica
+La documentazione di un progetto di un’apparecchiatura elettronica è un insieme di 
+documenti che interessano aspetti normativi, tecnici, commerciali, fiscali molto complessi 
+che richiedono al tecnico conoscenze molto estese che escono dal puro limite della com-
+petenza tecnica settoriale.
+Un qualsiasi progetto elettronico, ma più in generale qualsiasi progetto tecnico, inizia 
+con una prima fase in cui il lavoro viene commissionato da un ipotetico “cliente” o dalla 
+dirigenza dell’azienda che avverte dopo attente ricerche di mercato l’opportunità econo-
+mica di produrle (con profitto).
+Il “cliente” o la “direzione commerciale” espone il suo problema con il linguaggio 
+proprio del processo fisico in esame, per cui parla di pressioni, forze, carrelli che si muo-
+vono, pacchi, bottiglie con o senza etichetta ecc.; è il tecnico che deve comprendere il pro-
+blema e proporre l’uso dei trasduttori opportuni per ricondurre il problema pratico in 
+segnali trattabili (in modo economico) in forma elettronica.
+Il tecnico deve quindi avere conoscenze generali di fisica, chimica ed economia tali da 
+poter dialogare in modo costruttivo con il suo interlocutore in modo da evidenziare tutti gli 
+aspetti del problema, dall’ambiente di utilizzo ai modi di impiego dell’apparecchiatura.
+Da questi pochi cenni si capisce che la fasi iniziale del processo di acquisizione di una 
+commessa di lavoro è fondamentale: se non gestita correttamente si rischia di non riuscire 
+a comprendere a fondo il problema da risolvere e quindi di fissare specifiche di progetto 
+non coerenti con il risultato desiderato e di realizzare apparecchiature inidonee che gene-
+rano contenziosi legali e notevoli danni economici e di reputazione per l’azienda.
+Per poter affrontare proficuamente questa fase bisogna possedere grande capacità di 
+formulare analisi e di sintesi con la necessaria rapidità, nonché di rapportarsi con le altre 
+persone in modo da non creare antagonismi e di instaurare con il cliente un rapporto fidu-
+ciario che favorisca il buon esito del progetto in corso. Mentre per taluni queste doti sono 
+innate, per altri, per timidezza o per eccessivo individualismo, risulta molto difficile da 
+acquisire. Comunque, poiché la moderna organizzazione del lavoro non lascia molto spa-
+zio agli individualisti per cui è necessario acquisire seppure per abitudine una buona capa-
+cità di comunicazione interpersonale.
+Questa fase della commessa si concretizza con una serie di contatti personali ed epi-
+stolari in cui ciascuna parte fa richieste e pone problemi e/o fornisce risposte. Il tutto 
+genera un contratto che definisce in modo chiaro e univoco le caratteristiche tecniche 
+dell’apparecchiatura, i tempi di consegna, il prezzo (con l’eventuale margine di oscilla-
+zione dello stesso e le condizioni che possono modificarlo), i tempi di accettazione 
+dell’apparecchiatura, le spese accessorie di imballaggio e consegna (se dovute), le certifi-
+cazioni e le garanzie offerte con le relative condizioni di validità.
+Ottenuta la commessa si definiscono in modo chiaro e univoco le specifiche del pro-
+blema, si individuano i segnali di ingresso e di uscita dell’apparato elettronico, le sue
+
+[PAG 2142]
+XX-124
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+caratteristiche elettriche (statiche e dinamiche), le implicazioni tecnico - economiche di 
+ogni possibile scelta coerente con le specifiche assegnate, e si realizza l’apparecchiatura.
+La documentazione tecnica completa di un’apparecchiatura elettronica è formata da 
+un insieme di testi e disegni idonei per documentare il progetto, rendere possibile la rea-
+lizzazione e guidare il montaggio del circuito stampato, eseguire il cablaggio ed effettuare 
+infine il collaudo dell’apparecchiatura.
+Una documentazione tecnica completa dovrebbe dunque comprendere:
+1)  Lo schema elettrico del circuito.
+2)  L’elenco dei componenti e caratteristiche tecnologiche dei materiali.
+3)  Il preventivo di spesa riguardo i componenti elettronici e i tempi di lavorazione, di 
+cablaggio e di collaudo.
+4)  I disegni di fabbricazione del circuito stampato, ossia:
+–  lo schema della disposizione dei componenti sulla scheda;
+–  le pellicole ottenute dai disegni delle connessioni del circuito stampato (master);
+–  il disegno del piano di foratura;
+–  il disegno per la maschera si saldatura per la deposizione della vernice protettiva sulla 
+superficie della scheda (solder-resist);
+–  il disegno per la riproduzione serigrafica della disposizione e dei riferimenti di identi-
+ficazione dei componenti.
+5)  La relazione tecnica del progetto con descrizione del principio di funzionamento 
+dell’apparecchiatura e delle sue parti.
+6)  Le norme e le specifiche per il montaggio del circuito stampato e per il cablaggio 
+dell’apparato elettronico.
+7)  Le norme e le specifiche per il collaudo della scheda e dell’apparecchiatura.
+8)  Le norme d’uso dell’apparecchiatura (libretto d’istruzioni).
+L’apparecchiatura elettronica deve inoltre essere corredata da un’idonea certificazione 
+di conformità alle prescrizioni imposte dalla normativa in merito alla sicurezza e da certi-
+ficazioni di garanzia.
+La certificazione di garanzia viene rilasciata dall’Ente Elettrotecnico Italiano (CEI) 
+dopo aver sottoposto in laboratori autorizzati l’apparecchiatura ad una serie di controlli 
+previsti dalla normativa. Un’altra certificazione importante è quella rilasciata dall’Istituto 
+Marchio di Qualità (IMQ). 
+La certificazione di garanzia precisa entro quali limiti l’azienda produttrice si assume 
+l’onere di garantire il corretto funzionamento dell’apparecchiatura e di provvedere  alla 
+sua riparazione o sostituzione. Il limite di tempo per legge non può essere inferiore ai 12 
+mesi ma per esigenze commerciali talvolta le aziende a loro rischio estendono tale limite a 
+periodi di tempo superiori.
+Certe apparecchiature poi non possono essere prodotte se non sono state richieste e 
+ottenute particolari licenze e autorizzazioni a enti pubblici autorizzati dalla legge a rila-
+sciarle; è compito del tecnico preparare la documentazione e le dichiarazioni di confor-
+mità che permettono all’azienda di avviare la procedura necessaria per ottenerle. 
+3.1.8  Categorie di rischio per il progetto di un impianto
+La Comunità europea ha emesso una serie di norme che riguardano la sicurezza dei 
+macchinari. Si tratta di norme polivalenti applicabili a tutti i tipi di macchine non regola-
+mentate da norme o leggi specifiche: tutti i macchinari motorizzati e che hanno parti in 
+movimento, macchinari composti da diversi apparati, parti che modificano le funzioni o le 
+strutture di una macchina e componenti che operano sulla macchina stessa.
+La conformità dei prodotti alle normative di sicurezza viene certificata dal produttore 
+mediante l’apposizione sui prodotti del marchio CE (principio dell’autocertificazione);
+
+[PAG 2143]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-125
+rientra quindi nella responsabilità del costruttore stabilire obiettivamente il livello di 
+rischio di una macchina, e nella scelta dei sistemi di sicurezza si deve tenere in considera-
+zione tale livello.
+Gli standard possono essere raccolti in tre gruppi:
+1)  Standard A: quelli che descrivono i principi generali di progettazione applicabili a 
+tutte le macchine.
+2)  Standard B: norme più dettagliate suddivisibili in due sottocategorie: la B1 che 
+riguarda gli aspetti ergonomici di progettazione e la B2 relativa ai dispositivi di prote-
+zione, agli interruttori interbloccati di sicurezza ecc.
+3)  Standard C: norme in continua evoluzione che riguardano specifici macchinari.
+Lo standard europeo armonizzato (PRE 954-1), relativo alla progettazione di circuiti 
+di controllo a prova di guasto, definisce cinque livelli di rischio.
+Nella Fig. XX.3.3 viene proposta una tabella che aiuta a stabilire il livello di rischio di 
+un’apparecchiatura; tale lista è però solo indicativa in quanto i costruttori restano comun-
+que responsabili dei loro prodotti.
+Fig. XX.3.3  Categorie di rischio per il progetto di un impianto.
+Categoria B
+I componenti di controllo e di sicurezza di un sistema devono essere progettati, scelti, 
+assemblati per soddisfare le esigenze operative entro i limiti di progetto. La maggior parte 
+delle apparecchiature domestiche rientra in questa categoria, nessuna altra particolare spe-
+cifica è richiesta a patto che i componenti siano dimensionati correttamente. I requisiti 
+della categoria B devono essere soddisfatti da tutte le altre categorie.
+Categoria 1
+Sistemi relativi alla sicurezza devono impiegare componenti e criteri di progetto ben 
+sperimentati; la logica elettronica cablata, i microcontrollori, i PLC (guidati da un pro-
+gramma software) non sono considerati adeguati per questo livello di sicurezza.
+Categoria 2
+Si deve impedire l’avvio della macchina nel caso un guasto venga rilevato durante la 
+NOTE
+S gravità di possibili infortuni: S1 ferita superficiale (contusione); S2 ferita 
+grave (amputazione).
+F  frequenza dell’esposizione al pericolo: F1  rara; F2  da frequente a continua.
+P  possibilità di evitare il pericolo: P1  buona; P2 scarsa.
+L  probabilità di rischio : L1  molto bassa; L2  bassa; L3  molto alta
+S1
+S2
+F1
+F2
+P2
+P1
+P2
+P1
+L1
+L2
+L3
+B
+B
+B
+1
+B
+B/1
+B/1
+1
+2
+3
+2/3
+4
+2
+3/4
+1/2
+
+[PAG 2144]
+XX-126
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+fase di accensione. I circuiti di sicurezza devono pertanto garantire una ridondanza 
+mediante l’interazione di relè ausiliari e l’autocontrollo in fase di accensione. I segnali di 
+ingresso come pulsanti di emergenza o bloccaporta devono essere ispezionati regolar-
+mente.
+Categoria 3
+L’impianto deve essere progettato in modo tale che qualsiasi guasto venga evidenziato 
+e non conduca alla perdita delle funzioni di sicurezza. Il circuito ridondante, in questo 
+caso, deve essere applicato sia ai dispositivi di uscita che a quelli di ingresso prevedendo 
+circuiti a due canali separati (i cavi non debbono seguire lo stesso percorso).
+Categoria 4
+Ogni singolo guasto del sistema deve essere assolutamente segnalato e si richiede non 
+solo la ridondanza dei segnali di ingresso e d’uscita realizzati con circuiti a canali separati 
+ma anche funzioni di autocontrollo e verifiche incrociate. 
+Nella Tab. XX.3.1 sono elencate le principali norme europee vigenti che si occupano 
+dell’equipaggiamento elettrico delle macchine e dei dispositivi di sicurezza.
+3.1.9  Valutazione dei costi per la determinazione del prezzo di vendita
+La valutazione del prezzo di vendita di un prodotto è un processo alquanto difficile e 
+complesso. A un certo livello di conoscenze tecnologiche, quasi ogni prodotto è realizza-
+bile: il fattore discriminante fra la possibilità di realizzarlo e la sua effettiva realizzabilità 
+è costituito dai costi, nonché dall’ampiezza e dalle caratteristiche del mercato disponibile 
+per quel prodotto; in altre parole, dal differenziale prezzo-costo che deve garantire un pro-
+Tab. XX.3.1   Norme europee armonizzate riguardanti l’equipaggiamento elettrico delle 
+macchine e i componenti di sicurezza
+Norma europea
+Descrizione
+EN 60204-1
+Equipaggiamento elettrico delle macchine; regole generali
+EN 60204-1/A1
+Equipaggiamento elettrico delle macchine; disegni, schemi, 
+tabelle e istruzioni
+EN 60204-11
+Equipaggiamento elettrico delle macchine con presenza di 
+circuiti a media tensione
+EN 292-1 e EN 292-2
+Concetti fondamentali e principi generali di progettazione
+EN 414
+Regole per la presentazione e progettazione delle norme di 
+sicurezza
+EN 418
+Comandi d’arresto di emergenza
+EN 574
+Comandi a due mani
+EN 953
+Progettazione e costruzione dei ripari
+EN 954-1
+Sistemi di controllo correlati alla sicurezza
+EN 1088
+Dispositivi di interblocco
+EN 50110-1
+Dispositivi elettrosensibili; requisiti generali
+EN 5011-2
+Dispositivi elettrosensibili; fotocellule
+EN 5011-3
+Dispositivi elettrosensibili; interruttori di prossimità
+
+[PAG 2145]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-127
+fitto a chi lo produce.
+Il compito del progettista, ottenute le specifiche del prodotto da un cliente o da 
+un’analisi delle esigenze espresse dal mercato, è quello di soddisfarle completamente, 
+scegliendo configurazioni circuitali e tecniche di connessione, di assemblaggio, di tara-
+tura, di collaudo, di gestione degli acquisti, di imballaggio e di spedizione che minimiz-
+zino i singoli costi e il costo globale dell’apparecchiatura. 
+La minimizzazione dei costi può essere effettuata:
+–  riducendo la quantità di materiali utilizzati (aumentando, quindi, l’affidabilità globale 
+dell’apparecchiatura), scegliendo configurazioni circuitali basate su circuiti integrati a 
+larga integrazione;
+–  riducendo i tempi di lavorazione ricorrendo ad assemblaggi automatici, eliminando le 
+operazioni di taratura, automatizzando le operazioni di saldatura e di collaudo;
+–  acquistando semilavorati: i cavi di connessione, per esempio, possono essere tagliati a 
+misura intestati e connessi ai connettori da una ditta appaltatrice; 
+–  appaltando alcune lavorazioni a ditte specializzate in modo da avere costi e tempi di 
+consegna certi.
+Fondamentale, poi, per la valutazione dei costi e per scegliere quali lavorazioni e tecniche 
+costruttive adottare, sono il volume di produzione globale e i tempi di consegna previsti.
+Il prezzo dei dispositivi elettronici, ma in generale di tutte le merci, diminuisce 
+all’aumentare della quantità acquistata, per cui è diverso prevedere un volume di produ-
+zione di alcune decine o di migliaia di pezzi.
+Il tempo di consegna influenza invece le modalità di approvvigionamento i costi di 
+immagazzinaggio, i flussi di cassa dell’azienda (gli intervalli fra quando paga le merci 
+acquistate e quando riceve i pagamenti per quelle vendute). Per grossi volumi di produ-
+zione occorre bilanciare gli acquisti in base alle previsioni di vendita, in modo da non ren-
+dere oneroso il costo di immagazzinaggio dei dispositivi in attesa di essere utilizzati per la 
+produzione. 
+In questo caso la responsabilità del progettista è grande: se infatti il progetto prevede 
+configurazioni circuitali, magari anche brillanti dal punto di vista della scelta tecnica e 
+tecnologica, che utilizzano dispositivi prodotti da una sola ditta (che così può imporre le 
+sue politiche di prezzo) oppure di scarsa reperibilità, non è remota la possibilità che nel 
+momento in cui il dispositivo deve essere acquistato non sia disponibile, o diventi così 
+caro da rendere inaccettabili i costi dell’apparecchiatura.
+Certamente una soluzione possibile sarebbe quella di acquistare subito le quantità di 
+dispositivi necessarie per l’intera produzione, ma, come già detto, questa soluzione ha 
+anch’essa dei costi (oneri finanziari, occupazione e manutenzione del magazzino) che, posti 
+in relazione con i volumi di prodotto da realizzare, possono dimostrarsi inaccettabili.
+Ai costi di produzione bisogna poi aggiungere una frazione dei costi gestionali 
+dell’azienda, le spese sociali (tasse, assistenza sociale ecc.), le spese fisse (attrezzature e 
+macchinari), le spese varie (trasporti, gestione commerciale ecc.) per ottenere il costo totale.
+Il prezzo finale viene ottenuto aggiungendo al costo totale il profitto normale, che è 
+data dalla rendita finanziaria ottenibile da un qualsiasi altro impiego del capitale investito 
+nella produzione.
+Il prezzo così ottenuto deve essere tale da trovare sul mercato un numero di compra-
+tori tale da assorbire la quantità di apparecchiature prodotte.
+Al raggiungimento di questo scopo concorrono molte figure professionali, oltre al tec-
+nico di produzione, ciascuna delle quali tende a minimizzare i propri costi.
+All’origine del processo di produzione, individuata un’esigenza da soddisfare e un 
+mercato in grado di darle un valore economico (ossia di pagarla), c’è una chiara defini-
+zione delle caratteristiche di ciò che si vuole produrre, definizione alla quale contribui-
+
+[PAG 2146]
+XX-128
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+scono, ciascuno con la propria competenza professionale, ricercatori di mercato, tecnici 
+pubblicitari, tecnici utilizzatori e tecnici progettisti dell’apparecchiatura. Da tutto ciò che 
+è stato detto finora emerge che la figura del progettista è centrale per le scelte tecniche-
+economiche che determinano la realizzabilità del prodotto.
+Ancora più complessa e difficile è la fase preliminare alla messa in produzione di 
+un’apparecchiatura è la fase in cui occorre preparare un preventivo di spesa. In questo 
+caso l’esperienza e la preparazione del tecnico emergono in tutta la loro rilevanza:
+–  una sottostima dei costi renderebbe impossibile in seguito la produzione: volendo 
+mantenere il margine di profitto previsto, diventerebbe necessario rinegoziare il prezzo di 
+vendita a fronte di un impegno contrattuale che potrebbe non prevedere, e quindi non rico-
+noscere, la validità di una tale variazione; il profitto potrebbe scendere al di sotto di quello 
+normale rendendo la produzione non conveniente; il prezzo di vendita potrebbe addirittura 
+non compensare neppure i costi di produzione, che così avverrebbe in perdita;
+–  una sovrastima dei costi farebbe invece aumentare in maniera eccessiva il prezzo 
+finale del prodotto, inducendo quindi ad abbandonare il progetto a tutto vantaggio di un 
+concorrente in grado di valutare meglio i propri costi. 
+Dalle considerazioni espresse finora risulta evidente che il tecnico progettista non è 
+chiuso in una sua torre d’avorio in cui può scegliere la migliore soluzioni tecnica del pro-
+blema propostogli alla luce delle proprie preferenze ma deve integrarsi, con grandi 
+responsabilità, in una struttura organizzativa complessa e articolata.
+3.2  Metodi per l’assemblaggio delle apparecchiature elettroniche
+3.2.1  Montaggio di una scheda elettronica a circuito stampato
+Il montaggio di una scheda elettronica richiede quattro lavorazioni:
+1)  Piegatura dei terminali dei componenti elettronici assiali;
+2)  Ribaditura e taglio dei terminali;
+3)  Inserzione dei componenti elettronici nella scheda a circuito stampato;
+4)  Saldatura dei componenti elettronici.
+Ciascuna delle operazioni sopraelencate può essere effettuata sia con apparecchiature 
+automatiche che con una procedura manuale.
+In un ciclo di lavorazione solo alcune operazioni possono essere automatizzate (per 
+esempio, la piegatura dei componenti, le operazioni di saldatura) mentre altre vengono 
+eseguite manualmente (per esempio, l’inserzione dei componenti).
+La realizzazione completamente manuale di un montaggio elettronico serve solo:
+–  per costruire circuiti di prova e apparecchiature elettroniche prodotte in piccolissima serie;
+–  per effettuare modifiche o riparazioni.
+Il montaggio manuale di una scheda richiede che sul circuito stampato sia stata realiz-
+zata la maschera serigrafica che illustra la posizione di ciascun componente; richiede inol-
+tre l’utilizzo di una serie di accessori che facilitano la manipolazione della scheda durante 
+le operazioni di inserzione e di saldatura.
+L’attrezzatura standard che permette di realizzare produzioni di piccola serie è costi-
+tuita da un supporto meccanico rettangolare incernierato su due lati opposti.
+Su questo rettangolo possono scorrere due aste fra le quali viene fissata la scheda da mon-
+tare. Dopo l’inserimento sulla scheda dei componenti, sulla scheda si applica al supporto un 
+coperchio al cui interno è posta un imbottitura in gommapiuma che, pressando leggermente 
+i componenti elettronici, li mantiene in posizione. A questo punto la scheda viene ribaltata 
+facendo ruotare la struttura meccanica attorno ai perni; con un saldatore a mano vengono ese-
+guite tutte le saldature, e, con un tronchese, si tagliano tutti i reofori sporgenti. A questo punto 
+si ribalta nuovamente la struttura, si toglie il coperchio e si prosegue con la lavorazione 
+oppure si toglie la scheda montata e la si sostituisce con un nuovo circuito stampato.
+
+[PAG 2147]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-129
+Piegatura dei terminali dei componenti elettronici
+Questa operazione preliminare è indispensabile per tutti i dispositivi che hanno i ter-
+minali di uscita disposti assialmente.
+La distanza minima (misurata dal bordo esterno del contenitore) alla quale il terminale 
+può essere piegato deve essere ricercata sui fogli tecnici del singolo dispositivo. Il pro-
+blema tecnico dovrebbe già essere stato studiato e risolto in fase di studio e di progetto del 
+disegno di fabbricazione del circuito stampato. In ogni caso l’angolo di piegatura deve 
+essere sempre scelto in modo tale che l’operazione meccanica non danneggi il collega-
+mento del reoforo con il dispositivo elettronico.
+L’operazione di piegatura dei terminali dei componenti elettronici viene di norma 
+effettuata con macchine piegatrici o a mano.
+La piegatura a mano viene eseguita con una normale pinza oppure con attrezzi speciali 
+che permettono di piegare tutti i componenti con lo stesso passo.
+La piegatura automatica dei componenti offre due vantaggi, rapidità di esecuzione e, 
+per volumi di lavorazione consistenti, costi modesti. Inoltre, la piegatura risulta molto uni-
+forme, e ciò rende l’operazione di inserzione più rapida.
+I componenti elettronici utilizzati per alimentare le macchine piegatrici vengono 
+assemblati su nastri contenuti in scatole o in rulli.
+Ripiegatura e taglio dei terminali
+La ripiegatura dei componenti viene effettuata per mante-
+nerli nella corretta posizione di montaggio o per aumentare la 
+superficie di dissipazione del calore generato durante il nor-
+male funzionamento o per favorire lo smaltimento del calore 
+prodotto dall’operazione di saldatura del componente al cir-
+cuito stampato.
+Fig. XX.3.4  Forme di piegatura dei 
+ terminali dei componenti elettronici.
+Nella Fig. XX.3.4 sono mostrate due tipiche sagome dei terminali dei componenti elet-
+tronici; i componenti che necessitano di questa tecnica di montaggio sono di solito i diodi, 
+i transistors, alcuni tipi di condensatori.
+Nel montaggio manuale dei componenti elettronici solo raramente il taglio dei reofori 
+di collegamento dei componenti elettronici viene effettuato prima di effettuare la salda-
+tura; ciò in quanto l’operazione, da fare ovviamente sul lato saldature, presenta dei pro-
+blemi pratici. I terminali, quando vengono tagliati, possono ricadere sul circuito stampato, 
+per cui prima di poter procedere all’effettuazione delle saldature è necessario rimuovere 
+tutti gli spezzoni; inoltre, se i terminali, vengono tagliati troppo corti, è necessario proce-
+dere alla sostituzione del componente difettoso, allungando i tempi di lavorazione. 
+L’operazione è invece utile se i terminali sono stati ripiegati in quanto l’orientamento 
+non perpendicolare dei reofori ostacola le operazioni di saldatura manuale.
+Si procede sempre al taglio dei reofori quando l’operazione di saldatura viene effet-
+tuata in modo automatico. 
+Come ogni lavorazione l’operazione di taglio viene talvolta eseguita da macchine 
+automatiche che tagliano i reofori nella corretta misura prima che questi vengano inseriti 
+nel circuito stampato.
+Inserzione dei componenti nel circuito stampato
+L’inserzione dei componenti in una scheda a circuito stampato può avvenire sia 
+manualmente sia in modo automatico. 
+Nel secondo caso l’inserzione dei componenti viene gestita completamente da un cal-
+
+[PAG 2148]
+XX-130
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+colatore che provvede a raccogliere da uno o più magazzini i componenti già opportuna-
+mente sagomati e orientati.
+La lavorazione manuale invece richiede che un operatore prelevi i componenti da un 
+magazzino e li inserisca nel circuito stampato.
+Le successive fasi del ciclo di produzione dipendono dal metodo di lavorazione utilizzato.
+Il ciclo più semplice prevede che lo stesso operatore inserisca i componenti nella 
+scheda ed effettui poi manualmente l’operazione di saldatura e di taglio dei terminali 
+sporgenti dalla piastra; tale situazione può essere economicamente conveniente solo in 
+fase di sviluppo di un circuito di prova, in quanto il tempo necessario per ogni operazione 
+non viene ottimizzato e tutto il ciclo è in genere oneroso.
+Il ciclo di lavorazione per lotti suddivide le varie fasi fra più operatori, ognuno dei 
+quali inserisce solo alcuni tipi di componenti ma su molte schede contemporaneamente. 
+Una volta completato il cablaggio il circuito viene inviato alle stazioni di saldatura 
+automatiche o manuali.
+Se la saldatura viene effettuata manualmente è quasi sempre necessario effettuare le ope-
+razioni di saldatura per lotti; infatti - una volta inseriti sulla scheda - non tutti i componenti 
+hanno la stessa altezza per cui, quando la scheda con i componenti inseriti viene ribaltata 
+per eseguire le operazioni di saldatura è difficile mantenerli tutti nella corretta posizione.
+Il ciclo di lavorazione della scheda deve quindi prevedere che vengano montati prima 
+tutti i componenti più bassi e poi quelli più alti. Una sequenza di montaggio potrebbe 
+coinvolgere nell’ordine i seguenti componenti: i diodi di segnale, le resistenze da ¼ W e i 
+condensatori assiali di bassa capacità, gli zoccoli per circuiti integrati, i circuiti integrati, i 
+transistors, i condensatori voluminosi, i connettori e gli accessori meccanici.
+Poiché l’operazione di inserzione dei componenti viene in genere affidata a personale 
+non qualificato che - in caso di necessità - non è normalmente in grado di prendere delle 
+decisioni in modo autonomo, il montaggio dei componenti elettronici viene guidato pro-
+iettando una serie di diapositive o microfilm che evidenziano qual è il componente inte-
+ressato all’operazione di inserzione e la sua la posizione nella scheda.
+Terminata l’inserzione del componente l’operatore fa avanzare il proiettore visualiz-
+zando una nuova diapositiva con una nuova informazione.
+Se il magazzino che alimenta il posto di lavoro è automatizzato si possono sincroniz-
+zare le due operazioni e fornire all’operatore contemporaneamente il componente da inse-
+rire e la diapositiva informativa.
+Un’attenta valutazione della sequenza di inserzione dei componenti può rendere que-
+sta operazione più veloce e quindi meno onerosa dal punto di vista economico.
+3.2.2  Saldatura
+Come è noto, la saldatura è un processo mediante i quale due oggetti metallici ven-
+gono resi solidali; l’operazione viene eseguita riscaldando entrambi gli oggetti e aggiun-
+gendo un materiale di apporto, a basso punto di fusione, che fondendosi si infiltra fra i 
+metalli da collegare (brasatura dolce).
+Nelle applicazioni elettroniche la saldatura ha due scopi: 
+a)  stabilire il contatto meccanico rigido e stabile nel tempo fra i percorsi elettrici 
+(cavi elettrici, piste di un circuito stampato) e i terminali dei componenti elettronici; 
+b)   stabilire la continuità elettrica fra le varie parti del circuito.
+Il materiale di apporto utilizzato nelle applicazioni elettroniche attualmente è in 
+genere una lega di stagno-piombo che fonde a bassa temperatura. Il punto di fusione della 
+lega dipende dal rapporto esistente fra i due elementi che formano la lega, per esempio 
+una lega con il 63% di stagno e il 37% di piombo fonde a 183 °C. 
+La normativa CEE impone che entro breve tempo il piombo utilizzato nella lega venga
+
+[PAG 2149]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-131
+sostituito da materiali meno inquinanti come lo zinco.
+L’esigenza di utilizzare una lega metallica con un basso punto di fusione è imposta dal 
+fatto che il collante utilizzato per far aderire la lamina di rame al supporto dei circuito 
+stampato si danneggia se viene riscaldato in modo eccessivo. La lega stagno piombo più 
+utilizzata nelle applicazioni elettroniche è una lega formata dal 60% di stagno e dal 40% 
+di piombo. A questi componenti poi vengono aggiunti, in piccole quantità, altri elementi, 
+quali l’antimonio, per conferire alla lega una migliore resistenza meccanica.
+I terminali dei componenti e le piazzole del circuito stampato sono ricoperte da uno 
+strato di ossido che di norma impedisce alla lega di formare con i metalli da unire il 
+legame molecolare che conferisce alla saldatura le sue caratteristiche meccaniche ed elet-
+triche. Per questo nella lega saldante nella lega saldante viene inglobata una resina orga-
+nica che ne incrementa le caratteristiche di bagnabilità e un attivatore che dissolve gli 
+ossidi. L’attitudine di una superficie solida ad essere saldata con la tecnica della brasatura 
+dolce viene detta bagnabilità.
+Il materiale di apporto viene realizzato in forma di filo a sezione circolare. Il flussante 
+viene inglobato all’interno della lega sotto forma anime cilindriche disposte attorno al suo asse.
+Durante la saldatura i due metalli da unire vengono riscaldati contemporaneamente ad 
+una temperatura superiore al punto di fusione della lega saldante. Il flussante inglobato 
+nel filo di saldatura diventa attivo ad una temperatura inferiore a quella di fusione della 
+lega, per cui la sua azione detergente viene esercitata sulle due superfici metalliche da 
+unire prima che la lega saldante sia fusa. A fusione avvenuta, la lega sposta il fondente e 
+bagna le superfici metalliche formando la lega molecolare.
+Quando il filo di saldatura si è fuso, si toglie l’elemento riscaldante e si lascia raffred-
+dare la giunzione. In questa fase dell’operazione le due superfici metalliche non si devono 
+muovere. In caso contrario la lega, solidificandosi cristallizza rendendo di conseguenza la 
+giunzione più fragile e con un’elevata resistenza elettrica.
+Nella Fig. XX.3.5 è presentata la forma caratteristica di una buona saldatura. In una 
+saldatura ben eseguita, la superficie che deve essere liscia e brillante (a forma concava) e 
+il materiale di apporto equamente distribuito sulle due superfici metalliche unite dalla 
+giunzione. Troppo materiale di apporto, la presenza di grumi, la forma convessa, l’opacità 
+della saldatura sono chiari indici di una pessima saldatura.
+Fig. XX.3.5  Saldatura: a) substrato iso-
+lante; b) piazzola, pista; c) materiale di 
+apporto; d) terminale del componente da 
+saldare.
+Fig. XX.3.6  Forme caratteristiche delle 
+saldature: a) corretta; b) povera di materiale 
+di apporto; c) con eccesso di materiale di 
+apporto; d) vuota; e) cavità, soffiatura; f) 
+saldatura non realizzata.
+a)
+a)
+b)
+b)
+c)
+c)
+d)
+a)
+b)
+c)
+d)
+e)
+f)
+
+[PAG 2150]
+XX-132
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+Nella Fig. XX.3.6 vengono mostrate alcune delle forme e dei difetti più comuni delle 
+saldature.
+Saldatore
+L’attrezzo usato per eseguire una saldatura nelle applicazioni elettroniche è il salda-
+tore, che è costituito dalle seguenti parti (Fig. XX.3.7):
+–  un’impugnatura in materiale termoplastico isolata elettricamente e termicamente;
+–  un corpo in acciaio inossidabile, che sporge dall’impugnatura;
+–  un elemento riscaldante elettrico incapsulato in un involucro di ceramica isolante;
+–  l’estremità attiva del saldatore, la “punta”, è costituita da un cilindro di rame cavo che 
+entra nel corpo di acciaio inossidabile. Il fissaggio può essere ottenuto o con una vite o ad 
+innesto;
+–  un cavo di alimentazione.
+Fig. XX.3.7  Forma costruttiva del saldatore.
+La punta del saldatore può avere varie forme (Fig. XX.3.8). La scelta del tipo di punta 
+dipende dal tipo di saldatura che si deve effettuare. In genere le punte grosse vengono 
+usate per effettuare saldature di cavi di grosse dimensioni o, nei circuiti stampati, gabbie 
+metalliche di schermo elettromagnetico. Quelle di piccole dimensioni sono invece impie-
+gate per effettuare lavori di precisione.
+Le punte dei saldatori sono costruite in rame, rivestito da metalli più resistenti quali il 
+nichel o l’acciaio.
+ 
+Fig. XX.3.8  Forme costruttive delle punte per saldatore.
+13
+1
+13
+14
+16
+15
+9
+17
+8
+7
+13
+11
+6
+5
+3
+4
+2
+10
+1. Punta saldante “Longlife” in rame
+rivestita in Fe, Ni e Cr
+2. Alloggiamento punta
+3. Foglio esterno di mica naturale
+4. Foglio interno di mica naturale
+5. Conduttore con rivestimento
+in amianto
+6. 3 viti autofilettanti DIN 7981
+7. Flangia marchiata in acciaio
+rivestita di Ni
+8. Impugnatura in plastica rinforzata
+con fibra di vetro
+9. Connettore in plastica tripolare
+10. Vite in plastica per passacavo
+11. Passacavo
+12.Cavo alimentazione
+13. Vite fermapunta
+14. Avvolgimento resistenza tra
+fogli naturali di mica, contenuti
+in involucro di ceramica
+15. Ceramica
+16. Tubo in acciaio inox esterno
+17. Connessione protettiva
+Piatta
+Lunga
+Piatta
+Rotonda smussata
+Lunga conica
+
+[PAG 2151]
+PROGETTAZIONE ELETTRICA ED ELETTRONICA                   XX-133
+Esistono due tipi di saldatori quelli a riscaldamento continuo e quelli a temperatura 
+controllata.
+Il tipo a riscaldamento continuo è sempre collegato alla tensione di rete e la tempera-
+tura sulla punta del saldatore non viene mai controllata. Durante l'uso si raffredda in 
+quanto deve cedere parte del suo calore alle due parti da unire e deve portare al punto di 
+fusione il filo di saldatura, mentre durante il periodo di non utilizzo si surriscalda; per 
+contrastare questa tendenza - negli intervalli di inattività - si può appoggiare il saldatore a 
+dei supporti in grado di dissipare il calore eccedente.
+I saldatori a riscaldamento continuo vengono classificati in base al valore di potenza 
+che sono in grado di sviluppare.
+Per le applicazioni elettroniche i valori di potenza più utilizzati sono:
+–  10÷15 W per lavorazioni di precisione;
+–  20÷25 W per usi generici;
+–  60 W per usi particolari, e soprattutto per il fissaggio di particolari meccanici.
+La tensione di alimentazione dei saldatori è in genere quella di rete, 220 V a.c. I saldatori 
+di bassa potenza vengono realizzati per funzionare in corrente continua a bassa tensione, tro-
+vano impiego nel campo della manutenzione, in quanto non sempre, dove c’è la necessità 
+di fare una riparazione, è possibile disporre della tensione di alimentazione di rete.
+Nei saldatori a temperatura controllata la temperatura della punta viene controllata 
+sia durante l'uso sia durante le fasi di non utilizzo. Le saldature risultano più omogenee e 
+la temperatura della punta può essere adattata alle differenti caratteristiche dei vari com-
+ponenti elettronici da collegare. Al controllo della temperatura della punta provvede un 
+circuito elettronico che commuta la tensione di alimentazione fornita all’elemento riscal-
+dante. La temperatura viene rilevata con un termistore NTC; il valore di soglia di accen-
+sione e spegnimento viene fissato tramite un potenziometro di regolazione che consente di 
+regolare in modo continuo la temperatura d'intervento del circuito di comando.
+3.2.3  Tecniche di saldatura manuale
+La saldatura manuale di un componente elettronico viene eseguita utilizzando un sal-
+datore e un filo di saldatura. In base al tipo di saldatura che si vuole effettuare deve essere 
+scelto il saldatore di potenza adeguata e con la punta di forma adatta per eseguire la salda-
+tura in modo rapido ed efficiente.
+L’uso di un filo saldante di sezione sottile obbliga a lavorare più lentamente; se poi 
+non si dispone di un alimentatore a rocchetto automatico per il rifornimento del filo di sal-
+datura, ma si lavora con spezzoni di filo, l'operazione di saldatura deve essere continua-
+mente interrotta per rifornirsi di filo saldante.
+Per ottenere una buona saldatura occorre far in modo che la punta del saldatore 
+riscaldi contemporaneamente sia la piazzola posta sul circuito stampato sia il reoforo del 
+componente. Dopo un breve riscaldamento (quindi non contemporaneamente) si aggiunge 
+il filo saldante nella quantità adeguata. Una volta che la goccia di materiale di apporto si è 
+depositata sul terminale e sulla piazzola si toglie la punta del saldatore. La giunzione va 
+lasciata raffreddare per irraggiamento e convezione senza forzarne il raffreddamento sof-
+fiando aria sulla saldatura.
+3.2.4  Tecniche di saldatura automatica
+La saldatura automatica viene eseguita dopo aver inserito tutti i componenti nella pia-
+stra del circuito stampato.
+La creazione della giunzione fra le due superfici metalliche (terminale del compo-
+nente e piazzola del circuito stampato) viene effettuata attraverso il riscaldamento delle 
+stesse e trasferendo la lega saldante sul punto di giunzione; quindi praticamente con lo 
+stesso procedimento di una saldatura manuale.
+
+[PAG 2152]
+XX-134
+  PROGETTAZIONE ELETTRICA ED ELETTRONICA
+L’unica differenza è data dal fatto che l’operazione viene completamente controllata 
+da una macchina che automaticamente provvede ad effettuare la saldatura di tutte le giun-
+zioni senza richiedere l’intervento dell’operatore.
+La saldatura ad onda 
+Tra i processi di saldatura automatica, il più diffuso è quello di saldatura ad onda che 
+consiste nel pompare attraverso un ugello la lega saldante fusa in modo tale che formi 
+un’onda. La piastra da saldare scorre sopra l’onda su un convogliatore rettilineo e viene 
+bagnata dalla lega fusa.
+Il tempo di contatto della superficie della piastra con l’onda dipende dalla velocità di 
+scorrimento della piastra: in genere il contatto dura pochi secondi che sono però suffi-
+cienti a realizzare una buona saldatura. La parte della lega che non viene utilizzata per 
+effettuare la giunzione ricade nel pozzetto.
+La qualità di una saldatura ad onda è data essenzialmente dalla forma dell’onda, dalla 
+durata del contatto fra l’onda e la piastra e dalla superficie della stessa interessata alla sal-
+datura in ogni istante.
+La tecnica di saldatura ad onda viene largamente utilizzata nell’industria in quanto 
+consente di effettuare un numero elevatissimo di saldature in breve tempo e impiegando 
+pochissimo personale. Il prodotto risultante è uniforme e di qualità costante. 
+La saldatura dei componenti elettronici su una piastra a circuito stampato è una lavo-
+razione che, come quella di fabbricazione dei circuiti stampati in genere viene effettuata 
+da ditte specializzate che lavorano con le migliori attrezzature e con costi molto ridotti. 
+Escludendo i circuiti di prova e i circuiti di piccolissima serie (10÷20 pezzi) tutti i mon-
+taggi industriali vengono realizzati con questa tecnica, la cui larga diffusione è dovuta al 
+costo non molto elevato delle attrezzature necessarie, che  possono essere acquistate 
+anche da aziende di dimensioni medio-piccole.
+3.2.5  Tecnica di montaggio superficiale
+Attualmente viene sempre più utilizzata un’altra tecnologia di assemblaggio, la tecno-
+logia a montaggio superficiale (SMT - Surface Mounted Tecnology).
+I componenti elettronici ed elettromeccanici utilizzati in questo tipo di assemblaggio 
+sono, dal punto di vista elettrico e funzionale, perfettamente identici a quelli utilizzati 
+nella tecnologia ad inserzione; cambia soltanto il tipo di contenitore utilizzato per incap-
+sulare i dispositivo (Fig. XX.3.9). 
+Fig. XX.3.9  Dispositivi a montaggio superficiale (SMD - Surface Mounted Device).
+Il contenitore dei dispositivi SMD è più piccolo rispetto all’analogo dispositivo con il 
+contenitore ad inserzione diretta. Paragonando dispositivi analoghi la tecnologia a mon-
+taggio superficiale consente di ridurre del 30÷50% (per una stessa applicazione circuitale) 
+la superficie di circuito stampato occupata.
+La Fig. XX.3.10 mostra le differenti tecniche di montaggio richieste dalle due tecnolo-
+gie per lo stesso tipo di componenti.
+Con i dispositivi a montaggio superficiale è, quindi, possibile realizzare circuiti stam-
+pati più densi, e perciò più complessi; le connessioni realizzabili per unità di area sono 
+quindi maggiori rispetto a quelli ottenibili con la tecnologia tradizionale.
