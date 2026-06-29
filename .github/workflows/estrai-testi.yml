@@ -30,8 +30,15 @@ jobs:
           pip install pdfplumber --quiet
           pip install pypdf --quiet
           pip install pytesseract pillow pdf2image --quiet || echo "pytesseract skip"
+
+      - name: Verifica ambiente
+        env:
+          GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+        run: |
+          echo "GITHUB_TOKEN presente: $([ -n "$GITHUB_TOKEN" ] && echo SI || echo NO)"
           python3 -c "import pdfplumber; print('pdfplumber OK')"
           python3 -c "import fitz; print('fitz OK')" || echo "fitz non disponibile"
+          python3 -c "import os; print('TOKEN len:', len(os.environ.get('GITHUB_TOKEN','')))"
 
       - name: Estrai testi da PDF (OCR completo)
         env:
