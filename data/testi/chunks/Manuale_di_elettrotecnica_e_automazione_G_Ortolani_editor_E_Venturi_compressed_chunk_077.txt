@@ -1,0 +1,860 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 77/116 ===
+Chars: 44,503 | Offset: 3,356,901
+
+
+
+[PAG 1581]
+TECNOLOGIE BUS
+XVI-23
+La configurazione minima di un sistema EIB prevede:
+–  alimentatore (per un massimo di 64 componenti);
+–  terminale di uscita (per il controllo dell’utenza);
+–  terminale di ingresso (per l’acquisizione dei comandi).
+La connessione tra i vari apparecchi terminali di ingresso e di uscita e la linea avviene 
+tramite un accoppiatore di bus. Una particolare interfaccia utente serve a collegare l’accop-
+piatore al dispositivo terminale che può essere un pulsante, un dimmer, un termostato 
+ambiente, un rilevatore di movimento, un attuatore per tapparelle, un display (Fig. 
+XVI.4.1).
+Fig. XVI.4.1   Struttura degli apparecchi instabus EIB.
+L’accoppiatore avrà peraltro la funzione di smistare i telegrammi; tramite delle tavole 
+di filtro saranno istruiti (mediante il software ETS) a trasmettere le informazioni ai vari 
+rami dell’impianto. Soltanto le informazioni indirizzate alla linea o all’area interessati ver-
+ranno trasmessi, evitando l’invio di messaggi inutili non diretti ai componenti di quelle 
+zone. Diventa quindi indispensabile definire in fase di progettazione degli indirizzi di 
+gruppo cioè un codice che fa capo a tutte le apparecchiature che devono dialogare insieme. 
+Fig. XVI.4.2   Architettura dell’accoppiatore EIB.
+Programma
+applicativo
+Accoppiatore
+BUS
+Interfaccia
+utente
+Dispositivo
+terminale
+Linea BUS
+DISPOSITIVO ACCOPPIATORE
+MEMORIA
+RAM
+P
+CONTROLLER
+TRASMETTITORE
+MODULO
+ROM
+DISPOSITIVO
+I / O
+EEPROM
+LINEA BUS
+
+[PAG 1582]
+XVI-24
+TECNOLOGIE BUS
+L’accoppiatore (Fig. XVI.4.2) provvede alla ricezione, trasmissione ed elaborazione 
+dei dati, essendo provvisto di una unità intelligente (microcontroller) che viene istruita 
+mediante un programma applicativo, scaricato con un software, gestito da un PC collegato 
+con il bus. Il PC può addirittura essere remotato mediante MODEM per il controllo o la 
+supervisione a distanza del processo.
+4.2.2  Software di gestione
+Per la messa in servizio di un impianto EIB, terminata l’installazione, ci si avvale di 
+un PC e del software ETS. Questo è un software che non dipende dai singoli produttori, 
+bensì è in grado di progettare, parametrizzare i singoli componenti e realizzare il coordi-
+namento tra sensori e attuatori del sistema, a prescindere dalla tipologia dei materiali 
+impiegati. Naturalmente i vari componenti devono soddisfare le specifiche del protocollo 
+di comunicazione definito per lo standard EIB e debitamente validati dall’associazione 
+EIBA.
+La procedura di programmazione prevede inizialmente l’assegnazione ad ogni compo-
+nente di un indirizzo fisico in modo da poterlo riconoscere inequivocabilmente.
+Ogni apparecchiatura viene dotata dal costruttore di un programma applicativo che ne 
+determina il funzionamento e la funzione; tale programma viene caricato sul dispositivo 
+insieme all’assegnazione dell’indirizzo fisico, sempre tramite il software ETS. La banca 
+dati degli apparecchi di ogni costruttore viene messa a disposizione degli utenti anche per 
+via telematica tramite Internet.
+4.2.3  Visualizzazione
+La visualizzazione di un sistema EIB dipende ovviamente dall’applicazione. La più 
+semplice potrà essere quella di visualizzare alcuni parametri o stati logici tramite un 
+display. Nei sistemi più complessi come le applicazioni del terziario (attività commer-
+ciali, musei, case di cura, hotels ecc.), si potranno avere su di un PC delle animazioni che 
+emulano lo stato di tutte le variabili implementate nel sistema stesso: dei sinottici 
+potranno avvisare dello stato di allarmi dei vari impianti tecnologici, o dello stato ON/
+OFF di sensori e attuatori situati nei vari ambienti. Si potranno inoltre archiviare storici 
+dei vari processi o fare analisi e calcoli sui consumi.
+4.2.4  Instabus tp (twisted pair)
+La tecnologia di trasmissione che impiega questo sistema è quella filare, mediante un 
+doppino ritorto schermato.
+Topologia
+Si tratta di un sistema gerarchico la cui unità minima è la linea.
+Ad ogni linea possono connettersi fino a un massimo di 64 apparecchiature. Tramite 
+degli accoppiatori di linea si possono interconnettere fino ad un massimo di 12 linee che 
+formano un campo. Mediante degli ulteriori accoppiatori (accoppiatore di campo) si pos-
+sono collegare fino a 15 campi, per un totale di oltre 10 000 dispositivi (Fig. XVI.4.3).
+Come già accennato gli accoppiatori di linea e di campo, oltre a fornire una separa-
+zione galvanica tra i vari rami del sistema a bus, svolgono anche funzioni di gestione del 
+traffico delle informazioni:
+–  Funzione di routing-counter. Ogni telegramma contiene un codice denominato rou-
+ting-counter; questo campo numerico viene impostato a 6 dal dispositivo trasmettitore e 
+poi decrementato ogni volta che il messaggio attraversa un accoppiatore di linea. Quando 
+un telegramma raggiunge il valore 0 per quanto riguarda questa informazione, il sistema 
+(accoppiatore di linea) non gli permette di proseguire. In questo modo si evita che un tele-
+gramma possa circolare liberamente sul bus ed essere trasmesso all’infinito.
+–  Funzione di filtro. I telegrammi indirizzati a determinati componenti possono passare
+
+[PAG 1583]
+TECNOLOGIE BUS
+XVI-25
+Fig. XVI.4.3   Architettura dell’instabus EIB.
+ lo sbarramento dell’accoppiatore solo se diretti a destinatari residenti fuori dalla sezione 
+a cui l’accoppiatore fa capo.
+Tale topologia permette peraltro il funzionamento in parallelo di più linee. Per ogni 
+linea vi è un alimentatore, ma è anche possibile fare fino a 4 derivazioni all’interno della 
+linea stessa. Nell’installazione si devono rispettare i seguenti accorgimenti: la lunghezza 
+massima di ogni linea è al massimo di 1000 m, mentre per quanto concerne la distanza tra 
+le apparecchiature:
+–  tra due alimentatori non deve superare 200 m,
+–  tra alimentatore e l’ultimo apparecchio è di 350 m,
+–  tra due apparecchi è al massimo di 700 m.
+Queste limitazioni sono date dal fatto che il telegramma viene trasmesso mediante il 
+cavo come una variazione di tensione; quindi la capacità del cavo, l’induttanza della 
+bobina dell’alimentatore e i carichi rappresentati dai vari dispositivi connessi, svolgono 
+un ruolo fondamentale. Pur tuttavia il cavo non abbisogna di essere messo a terra e nem-
+meno di essere equipaggiato con resistenze o impedenze di chiusura del bus.
+Il bus può assumere geometrie diverse a seconda dell’occorrenza, determinando topo-
+logie del tipo:
+–  a bus,
+–  ad anello,
+–  a stella,
+–  ad albero,
+–  con tipologia mista.
+Tecnica trasmissiva e indirizzamento
+L’informazione viene trasmessa su una coppia di conduttori in modo simmetrico, cioè 
+un conduttore trasmette il segnale e l’altro pure, però sfasato di 180 °. Eventuali disturbi 
+provenienti dalla rete sono presenti in modo identico sui due cavi e quindi vengono annul-
+lati. L’isolamento del cavo bus EIB è di 4 kV tra il conduttore e la guaina esterna. Per-
+tanto la particolarità di questo cavo è quella che, pur essendo un conduttore che trasporta 
+segnali, può essere posato nelle stesse canalizzazioni dei cavi per la distribuzione di rete.
+La velocità con cui vengono trasferiti i messaggi è di 9600 bit per secondo. La modalità 
+di accesso al bus avviene secondo la modalità CSMA/CA: tutti gli utenti del bus sono per-
+manentemente “in ascolto”; se un dispositivo vuole inviare un telegramma lo può fare in 
+DISPOSITIVO
+1
+2
+DISPOSITIVO
+64
+LINEA
+LINEA
+1
+2
+CAMPO
+LINEA
+12
+CAMPO
+1
+2
+SISTEMA
+CAMPO
+15
+BUS
+ACCOPPIATORE
+BUS
+ACCOPPIATORE
+LINEA
+ACCOPPIATORE
+CAMPO
+
+[PAG 1584]
+XVI-26
+TECNOLOGIE BUS
+qualsiasi momento, a condizione che non vi sia traffico sul bus, per poi cedere ad altri utenti 
+l’occupazione del mezzo trasmissivo, una volta terminato il trasferimento del messaggio.
+Il formato del telegramma è una serie di blocchi formati ciascuno da una stringa di 11 
+bit (uno di start, otto di dati, uno di parità, uno di stop) che contiene varie informazioni. 
+La sequenza di trasmissione dei blocchi è la seguente:
+1) Campo controllo (1 byte). Contiene informazioni di sistema quali la priorità del tele-
+gramma e se è la prima volta che viene spedito o meno.
+2) Campo indirizzo (4 byte). Vengono memorizzati gli indirizzi (fisici) sorgente e desti-
+nazione.
+3) Campo dati (2 byte). Contiene i dati riguardanti la funzione da svolgere.
+4) Campo sicurezza (1 byte). Verifica l’integrità della spedizione (odd parity).
+5) Campo pausa (1 byte). Stato di pausa della sequenza di trasmissione.
+6) Campo conferma (1 byte). Ogni destinatario conferma la ricezione senza errori del 
+telegramma.
+7) Campo pausa (2 byte). Stato di pausa della sequenza di trasmissione.
+Nel momento in cui un telegramma non è stato correttamente ricevuto dal destinata-
+rio, esso stesso invia nel campo conferma un segnale NAK (Not AcKnoledge); se nessun 
+destinatario conferma la ricezione del telegramma, il trasmettitore rinvia il messaggio (al 
+massimo per tre volte).
+L’indirizzamento che viene effettuato su un sistema bus è di tipo fisico e di gruppo.
+–  L’indirizzo fisico riguarda il nome (univoco) da affidare ad ogni componente del bus.
+–  L’indirizzo di gruppo riguarda il nome attribuito ad una serie di apparecchiature 
+facenti parte di un’unica funzione. Pertanto il comando che si riferisce ad un indirizzo di 
+gruppo quale destinatario del telegramma, potrà per esempio comandare contemporanea-
+mente varie uscite che fanno parte dello stesso gruppo (un interruttore che comanda più 
+lampade, dislocate in ambienti diversi, che hanno lo stesso indirizzo di gruppo, provve-
+derà all’accensione simultanea delle stesse).
+4.2.5  Instabus pl (power line)
+Oltre al doppino twistato è prevista la trasmissione dei telegrammi mediante la tecnica 
+powerline cioè utilizzando la stessa linea di alimentazione 230 V dell’impianto elettrico 
+esistente. Ovviamente la porzione di rete che viene utilizzata dovrà essere opportuna-
+mente filtrata per evitare disturbi o effetti di sovrapposizioni provenienti dai rami attigui, 
+non utilizzati per l’impianto bus.
+Topologia
+La topologia del sistema ad onde convogliate prevede un massimo di 215 indirizzi 
+fisici. La suddivisione avviene in 8 campi di 16 linee ogni una comprendente un massimo 
+di 256 apparecchiature. Tale suddivisione è solo virtuale in quanto la rete è aperta e quindi 
+non vi sono né accoppiatori di linea né accoppiatori di campo. Il traffico quindi non avrà 
+come per il sistema twisted pair una gestione ordinata del traffico; tutti gli utenti potranno 
+parlare con tutti, e quindi solo un dispositivo alla volta potrà effettuare la trasmissione del 
+telegramma tramite il bus.
+I filtri, oltre a delimitare il perimetro di azione del bus servono ad accoppiare even-
+tuali sezioni di powerline con sezioni di twisted pair, per far confluire le diverse apparec-
+chiature nello stesso bus.
+Tecnica trasmissiva
+La velocità di trasmissione dei dati è di 1200 bps; si impiega la stessa rete di alimenta-
+zione 230/400 V come mezzo trasmissivo, con un particolare protocollo (SFSK Spread 
+Frequency Shift Keying) di comunicazione che garantisce un alto livello di immunità ai
+
+[PAG 1585]
+TECNOLOGIE BUS
+XVI-27
+disturbi provenienti dalla rete stessa.
+Il sistema è conforme alla normativa europea DIN EN 50065 ed italiana CEI EN 
+50090, riguardante la trasmissione dei segnali nella banda riguardante l’impiego dei 
+sistemi home e building automation.
+La programmazione del sistema si ha sempre mediante il software ETS EIB.
+4.2.6  Instabus rf (radio frequency)
+La caratteristica saliente di un impianto che impiega la radio frequenza come mezzo 
+trasmissivo dei telegrammi tra i vari dispositivi è quella che non necessita di cablaggio. 
+Viene quindi utilizzato nelle situazioni in cui non è possibile, per ragioni dovute a vincoli 
+architettonici, effettuare cablaggi di conduttori su pareti e soffitti dell’edificio. La flessi-
+bilità nella dislocazione di sensori e attuatori è massima; la sola limitazione è data dalla 
+distanza di trasmissione che è garantita fino a 300 m. Sono disponibili peraltro dei ripeti-
+tori di segnale per aumentare la portata e quindi ottimizzare la trasmissione dei dati. 
+L’alimentazione dei dispositivi avviene con batterie dislocate a bordo degli stessi appa-
+recchi, mentre per la programmazione del sistema ci si avvale del solito software ETS.
+4.3  Il sistema HES
+4.3.1  Apparecchi
+Le caratteristiche salienti degli apparecchi HES sono la modularità e il plug and play. 
+La modularità dei prodotti di vari costruttori e la loro compatibilità è un valore di questo stan-
+dard ma il plus è caratterizzato appunto dalla modalità plug and play; tutti i prodotti, infatti, 
+possono essere semplicemente inseriti o collegati alla rete senza alcuna configurazione.
+Le varie unità che compongono il sistema si suddividono in Device Coordination (coor-
+dinatore dell’apparecchio), Medium Controller (regolatore del mezzo) e Router (instradatore).
+4.3.2  Topologia
+Lo standard EHS costituisce una rete composta da più sezioni legate insieme da dispo-
+sitivi di instradamento detti routers e si può arrivare a distanze di qualche centinaio di 
+metri.
+4.3.3  Tecnica trasmissiva
+Il trasferimento dei dati viene effettuato tramite mezzi trasmissivi di impianti già esi-
+stenti, quali il doppino telefonico, la rete di alimentazione a 230 V, il cavo coassiale TV, ad 
+una velocità di 2,4 kbps 9,6 kbps.
+EHS copre anche il controllo a distanza con infrarossi e radio frequenze.
+Il modello di riferimento usato per l’EHS è lo standard OSI.
+4.3.4  Indirizzamento
+Viene impiegato per il bus EHS un unico codice identificativo per i dispositivi. Ogni 
+sezione permette di indirizzare fino a 256 unità; le varie sezioni della rete possono essere 
+interconnesse tramite un router e gestire complessivamente milioni di indirizzi.
+4.4  Sistemi bus proprietari (My Home BTicino)
+Tra i tanti sistemi bus di tipo proprietario cioè con un protocollo e una topologia svi-
+luppate dal costruttore dei prodotti (in questo caso BTicino), il sistema My Home sembra 
+essere il più potente, per la sua versatilità e per la varietà di prodotti e soluzioni che offre.
+Per la linea di segnale (bus), dedicata sia allo scambio delle informazioni che al tra-
+sporto della tensione di alimentazione, ci si avvale di un supporto fisico costituito da un 
+cavo a coppie ritorte e non schermato, al quale sono connessi in parallelo tutti i disposi-
+tivi del sistema a bus. In funzione dei sistemi My Home che si desidera installare, è possi-
+bile scegliere tra due diverse tipologie di cablaggio:
+
+[PAG 1586]
+XVI-28
+TECNOLOGIE BUS
+–  A struttura libera. Il cablaggio con struttura libera si applica quando si devono instal-
+lare gli impianti automazione, antifurto, risparmio energia e termoregolazione. 
+–  Con struttura a stella. Il cablaggio con struttura a stella è indicato per l'integrazione in 
+un’unica conduttura degli impianti videocitofonia, diffusione sonora, telefonia, TV/SAT e 
+trasmissione dati.
+Ogni dispositivo connesso al sistema è dotato di circuito di interfaccia e di una propria 
+intelligenza, costituita da un microprocessore programmato, per mezzo del quale il dispo-
+sitivo è in grado di riconoscere l’informazione a lui destinata ed elaborarla per realizzare 
+la funzione desiderata.
+Affinché ciascun dispositivo in un sistema a bus svolga correttamente la funzione pre-
+posta, esso deve essere opportunamente programmato assegnando il rispettivo identifica-
+tivo e la modalità di funzionamento; questa procedura, denominata configurazione può 
+essere effettuata scegliendo tra le due modalità:
+–  configurazione fisica, inserendo, in apposite sedi dei dispositivi ad innesto denominati 
+configuratori.
+–  configurazione virtuale, grazie un particolare software installato in un PC palmare, 
+che permette inoltre la diagnostica dei dispositivi.
+Un’altra novità è costituita dal software iMyHome, tramite il quale è possibile utiliz-
+zare un cellulare iPhone per richiamare localmente molte funzioni domotiche della pro-
+pria casa, tramite una connessione Wi-Fi: sarà sufficiente toccare la relativa icona del 
+touch screen del telefono mobile, per controllare in modo semplice ed immediato le luci, 
+le automazioni, gli scenari, la termoregolazione, le telecamere presenti nell’abitazione, 
+come una sorta di telecomando portatile.
+Il controllo del sistema integrato avviene quindi tramite telefono, personal computer 
+con web browser, palmare, cellulare, web TV; l’interfaccia tra controllo e applicazione 
+viene effettuato mediante web server, comunicatore telefonico, attuatore telefonico, cen-
+tralini Pabx.
+Le applicazioni sono rivolte a vari settori dell’automazione domestica:
+–  la sicurezza: videocontrollo, illuminazione d’emergenza, antifurto, allarmi tecnici, 
+antipanico e telesoccorso, controllo accessi;
+–  il risparmio energetico: gestione energia filare e a onde convogliate;
+–  il comfort ambientale: diffusione sonora, automazione luci e scenari, automazione tap-
+parelle, termoregolazione, programmazione, riarmo automatico centralino, display segna-
+lazione luminosa, controllo carichi, controllo remoto;
+–  la comunicazione: citofonia e videocitofonia digitale, centralini Pabx, Btnet e connet-
+tori EDP, controllo.
+4.4.1  Sicurezza
+Col termine sicurezza si intendono tutti gli impianti volti a preservare condizioni di 
+non pericolo per persone e cose: dal videocontrollo, all’illuminazione d’emergenza, ai 
+sistemi antifurto, e agli allarmi tecnici.
+Videocontrollo
+Gli impianti di videocontrollo vengono impiegati per la sorveglianza di edifici del ter-
+ziario quali banche, uffici pubblici, caserme, attività commerciali.
+La soluzione proposta da BTicino è volta all’impiego della videosorveglianza anche 
+nell’ambito domestico, consentendo la visualizzazione delle immagini utilizzando le tele-
+camere dell’impianto videocitofonico, o altre interne supplementari, con l’aggiunta di 
+pochi apparecchi supplementari (Fig. XVI.4.4).
+La commercializzazione di piccolissime telecamere che occupano lo spazio di due o 
+anche un solo modulo delle normali serie standard di apparecchiature elettriche civili,
+
+[PAG 1587]
+TECNOLOGIE BUS
+XVI-29
+consentono il controllo di ambienti domestici, in una configurazione che ben si accorda 
+con il sistema di protezione antintrusione e si integra perfettamente anche con l’impianto 
+video-citofonico. Nel caso di applicazioni del terziario (uffici, negozi, banche), il segnale 
+rilevato potrà infine essere trasmesso anche tramite modem a delle centrali remote di 
+videosorveglianza, per poter prendere le opportune decisioni del caso.Sarà possibile allar-
+mare delle singole telecamere, associando ad ogni una di esse un rilevatore di presenza 
+che potrà inoltre attivare la registrazione delle immagini stesse.
+Fig. XVI.4.4   Collegamento di videocamera da interno sul circuito videocitofonico.
+L’impianto deve avere le seguenti caratteristiche funzionali:
+–  Possono essere collegati al massimo 100 apparecchi (moduli fonici + derivatori di 
+piano + attuatori).
+–  La distanza tra posto esterno e ultimo derivatore di piano deve essere al max di 1000 m.
+–  La distanza massima tra l’uscita del derivatore di piano e il posto interno è di 50 m.
+–  Lo sviluppo totale del cavo deve essere al massimo di 3000 m.
+–  La distanza massima tra telecamera a colori e videocitofoni a colori è di 200 m. Utiliz-
+zando il miscelatore la distanza massima è di 150 m.
+–  Il cablaggio delle varie apparecchiature avviene tramite un cavo a 8 fili (3 coppie di 
+conduttori singolarmente twistate per i segnali e 2 conduttori per l’alimentazione).
+Illuminazione di emergenza
+L’installazione di lampade d’emergenza non è obbligatoria negli ambienti residen-
+ziali, ma è sicuramente un valore aggiunto che consente di superare i disagi dei black-out 
+improvvisi. Nel terziario, dove si svolgono attività di lavoro o può esservi presenza di 
+pubblico, leggi e norme specifiche impongono l’installazione di apparecchi per l’illumi-
+nazione di emergenza, che intervengano automaticamente in caso di mancanza di alimen-
+tazione per l’illuminazione ordinaria.
+Per questi ambienti è la norma CEI EN 60598-2-22 a definire le caratteristiche 
+Posto
+esterno
+Modulo
+telecamera
+Modulo
+fonico
+Modulo
+pulsanti
+Interfaccia per
+Alimentatore
+telecamera
+Telecamera
+da interno
+230 V
+8
+8
+5
+
+[PAG 1588]
+XVI-30
+TECNOLOGIE BUS
+dell’illuminazione di emergenza che viene suddivisa in illuminazione di riserva e illumi-
+nazione di sicurezza.
+–  Illuminazione di riserva: consente di continuare l’attività ordinaria, senza sostanziali 
+cambiamenti e senza particolare riferimento alla sicurezza delle persone.
+–  Illuminazione di sicurezza: destinata a provvedere alla sicurezza delle persone durante 
+l’evacuazione di una zona o di coloro che tentano di completare un’operazione potenzial-
+mente pericolosa prima di lasciare la zona stessa.
+Il DM 10/03/1998 prescrive peraltro:
+–  le vie di uscita e le uscite di piano devono essere chiaramente indicate tramite segnale-
+tica conforme alla vigente normativa;
+–  tutte le vie d’uscita, inclusi i percorsi esterni, devono essere adeguatamente illuminati 
+per consentire la loro percorribilità in sicurezza fino all’uscita su luogo sicuro;
+–  nelle aree prive di illuminazione naturale, deve essere previsto un sistema di illumina-
+zione di sicurezza con inserimento automatico in caso di black-out.
+Antifurto filare
+Con la tecnologia bus è possibile realizzare impianti di allarme antintrusione dove, 
+mediante una centrale di gestione, permettono di effettuare tutte le operazioni di program-
+mazione, configurazione e diagnostica e invio messaggi, tramite un comunicatore telefo-
+nico. Il sistema è facilmente comandabile attraverso chiavi e card a transponder, smart 
+card e telecomandi a radiofrequenza, che inseriscono, disinseriscono o parzializzano 
+l’allarme. Si possono personalizzare le funzioni del tempo di intervento dei rivelatori e dei 
+sensori perimetrali, la soglia di rilevamento, e la sensibilità.
+Una soluzione innovativa è quella che impiega per la gestione un pannello touch-
+screen che funziona come una sorta di interfaccia utente verso le funzioni del sistema.
+Il corredo antintrusione comprende ovviamente sensori ad infrarosso e perimetrali, 
+che possono essere connessi al bus mediante un’opportuna interfaccia, mentre per quanto 
+concerne la segnalazione ci si può avvalere di comunicatori su rete fissa o GSM.
+Il sistema antifurto ha le seguenti potenzialità funzionali:
+–  attivare e disattivare il sistema mediante il telecomando o il lettore trasponder,
+–  suddividere fino a 8 zone indipendenti l’impianto,
+–  impiegare l’allarme come antirapina, attivandolo volontariamente con o senza sirene,
+–  possibilità di modificare o ampliare l’impianto anche con componenti senza fili,
+–  segnalare manomissioni e attivare l’allarme in caso di sabotaggio dell’impianto anche 
+se non inserito,
+–  con il collegamento dei rilevatori di presenza alle telecamere, in caso di allarme regi-
+strazione automatica da parte di telecamera delle immagini di zona in allarme,
+–  pur con antifurto disinserito, l’apertura di una finestra determina automaticamente lo 
+spegnimento del riscaldamento per il locale interessato,
+–  attivazione automatica di luci e tapparelle in caso di allarme inserito o disinserito,
+–  chiusura centralizzata con l’inserimento dell’antifurto (chiusura tapparelle, spegni-
+mento o inserimento di luci, gas, riscaldamento, segreteria videocitofonica),
+–  in caso di allarme il servizio My Home Web avvisa l’utente con una e-mail, una tele-
+fonata e un SMS.
+Per il collegamento dei dispositivi si impiega il doppino ritorto inguainato non scher-
+mato oppure l’apposito doppino twistato SCS BTicino. Sul doppino viaggiano i segnali 
+dati, di allarme e l’alimentazione delle apparecchiature. Grazie ai morsetti di derivazione 
+protetti e all’isolamento 300/500 V del doppino, il cavo bus e le apparecchiature modulari 
+del sistema di allarme possono essere posizionate nelle stesse scatole e cavidotti degli altri 
+impianti elettrici a tensione di rete, senza utilizzare detti separatori.
+
+[PAG 1589]
+TECNOLOGIE BUS
+XVI-31
+Il cablaggio dei dispositivi è facilitato dall’impiego di morsetti estraibili che corre-
+dano le apparecchiature. 
+Tutti gli apparecchi sono muniti o possono essere accessoriati con dispositivi che ne 
+impediscono la manomissione (protezione tamper), anche quando l’impianto è disinserito, 
+in modo che a seguito di una qualsiasi manomissione si attiva il segnale di allarme. 
+La configurazione dei dispositivi avviene semplicemente tramite dei dispositivi chia-
+mati configuratori (ve ne sono di 9 tipi diversi), inseribili in apposite cavità ricavate sul 
+dorso degli apparecchi. Configurare i dispositivi significa assegnare loro un numero di 
+zona e un numero progressivo, in modo da rendere inequivocabile la loro identificazione 
+da parte della centrale; operativamente ci si avvale di una speciale tabella di configura-
+zione per la progettazione e la verifica del dimensionamento dell’impianto.
+Antifurto radio
+Le caratteristiche tecniche sono le stesse del sistema filare con la possibilità di confe-
+zionare dei sistemi misti filare-radiofrequenza (Fig. XVI.4.5).
+Fig. XVI.4.5   Impianto d’allarme misto filare-radiofrequenza.
+La centrale è il cervello del sistema in quanto gestisce l’inserimento o la parzializza-
+zione dell’impianto oltre a segnalare lo stato dei vari apparecchi e inviare l’eventuale 
+allarme alle sirene. Comunica con tutti i dispositivi (massimo 30 apparecchi periferici) 
+per mezzo di segnali radio in Modulazione di Frequenza (FM) con una portata radio in 
+campo libero di 150 metri.
+Il comando si effettua con telecomandi o con chiavi codificate a tastiera che consen-
+tono di inserire, disinserire e parzializzare l’impianto; in particolare la tastiera è dotata di 
+un codice a 4 cifre, modificabile dall’utente, mentre il telecomando ha una codificazione 
+con 16 milioni di combinazioni possibili. Le apparecchiature a corredo del sistema 
+coprono tutte le funzioni specifiche di un normale impianto d’allarme: vengono commer-
+cializzati tastiere, sirene, comunicatori telefonici, sensori volumetrici ad infrarosso e peri-
+metrali (magnetici, per vetri e tapparelle).
+Allarmi tecnici
+Una perdita di gas, l’allagamento di un locale, il malfunzionamento del congelatore o 
+l’apertura accidentale dell’interruttore differenziale possono essere rilevati e gestiti da un 
+sistema antifurto che ingloba anche le funzioni degli allarmi tecnici; si potranno a questo 
+Telecomando
+Centrale
+Sensore
+radio
+Ricevitore
+Ricevitore
+perimetrale
+radio
+Sirena
+volumetrico
+radio
+Interfaccia
+contatti
+Contatti
+     IR
+Sensore
+     IR
+Combinatore
+telefonica
+Doppino twistato
+230 V
+Linea
+Ricevitore
+telefonico
+
+[PAG 1590]
+XVI-32
+TECNOLOGIE BUS
+punto prevedere solo delle comunicazioni all’utente, tramite il comunicatore telefonico o 
+delle azioni che pongano rimedio al guasto.
+A titolo di esempio si veda il circuito di Fig. XVI.4.6, nel quale la fuga di gas in un 
+ambiente domestico viene rilevata dal sensore, che provvede a sua volta ad attivare l’elet-
+trovalvola che chiude la mandata della linea di distribuzione del gas metano dell’abita-
+zione. Le applicazioni sono le più disparate, si pensi solo al controllo di questi allarmi in 
+ambienti occupati da persone anziane o disabili.
+Fig. XVI.4.6   Allarme tecnico.
+Non solo è possibile attivare un telesoccorso, cioè la segnalazione a vari indirizzi tele-
+fonici del guasto, ma è altresì possibile programmare delle azioni che autonomamente 
+mettano in sicurezza l’ambiente domestico.
+Antipanico e telesoccorso
+Per gli usi domestici, le due applicazioni si possono principalmente legare alla sicu-
+rezza delle persone sole e non del tutto autosufficienti. Ecco allora che la possibilità di 
+trasmettere a distanza dei segnali o dei messaggi per la richiesta di aiuto, a delle persone 
+care, rassicura questa categoria di individui. Si può scegliere quindi se attivare una sirena 
+interna dedicata o inviare anche una segnalazione telefonica di aiuto mediante il comuni-
+catore telefonico della centrale.
+Tali applicazioni sono volte anche a proteggere da eventuali rapine le attività com-
+merciali: mediante un pulsante o un telecomando, l’operatore può attivare l’allarme o 
+inviare una segnalazione remota alle Forze dell’ordine o agli Istituti di sorveglianza.
+Controllo accessi
+È possibile realizzare, in ambito residenziale, terziario e alberghiero dei sistemi di 
+controllo accessi per la gestione flessibile di utenze. In un laboratorio, in una stanza 
+d’albergo, in un ufficio, potranno accedere, per esempio, soltanto le persone abilitate 
+mediante l’utilizzo di particolari smart card o di appositi dispositivi di telecomando.
+Le card potranno essere sempre attive, a scadenza, attive soltanto in determinate fasce 
+orarie o per un certo numero di accessi; la loro programmazione verrà effettuata tramite 
+un dispositivo connesso ad un PC.
+Il sistema consente varie applicazioni:
+–  Card a scadenza. Si possono utilizzare come chiave della camera nel settore alber-
+ghiero, nei camping e residence; l’ospite potrà utilizzarle solo per il tempo di permanenza 
+concordato, dopo di che diventeranno inutilizzabili.
+–  Card a fascia oraria. Vengono impiegate per gestire l’accesso a centri benessere, 
+palestre, piscine, ecc.; i clienti potranno accedere soltanto nelle ore loro dedicate prefigu-
+rate nella smart card in loro possesso.
+–  Card a scalare. Il loro utilizzo come carte prepagate, ricaricabili, è previsto per appli-
+Ripetitore
+di segnale
+Rivelatore
+di gas
+Trasformatore
+Elettrovalvola
+230 V
+12 V
+
+[PAG 1591]
+TECNOLOGIE BUS
+XVI-33
+cazioni che prevedono l’accesso per un numero limitato, predeterminato di volte, quali 
+per esempio i parcheggi, o le palestre.
+Il badge, tramite un particolare lettore, servirà dunque a comandare l’apertura 
+dell’elettroserratura che gestisce l’accesso al locale da controllare. Il lettore potrà servire 
+anche da sensore di controllo accesso se coordinato con un sistema antintrusione.
+Al posto della smart card di tipo magnetico è possibile utilizzare dei dispositivi a tran-
+sponder che trasmettono il codice al dispositivo inseritore, che, una volta riconosciuto il 
+codice e verificata la possibilità di accedere al locale, attiva l’attuatore che comanda 
+l’elettroserratura.
+Con opportuno software di gestione, si possono effettuare analisi dei dati sull’accesso 
+degli individui alle strutture controllate.
+Sempre più spesso le strutture ricettive, richiedono per la gestione ottimizzata ed effi-
+cace dei propri servizi, sistemi che semplifichino l’operatività quotidiana e che riducano 
+le spese gestionali: si richiedono soluzioni che ottimizzino le prestazioni, contemplino il 
+risparmio energetico, garantendo un elevato livello di comfort per il cliente.
+Una applicazione che viene sempre più utilizzata in ambito alberghiero è quella di uti-
+lizzare la card per attivare l’alimentazione di tutti i carichi all’interno della stanza 
+d’albergo.
+Quando il cliente entra nella stanza, con la stessa card che ha utilizzato per aprire la 
+porta, comanda l’attivazione dell’interruttore generale; quando esce dalla stanza, se 
+dovesse aver dimenticato delle luci accese, le stesse si disinseriranno automaticamente in 
+modo temporizzato nel momento in cui si preleva la card dal lettore.
+Dalla console della portineria sarà possibile, mediante software gestiti tramite perso-
+nal computer, verificare la presenza o meno dei clienti all’interno delle stanze e una cor-
+retta gestione delle stesse.
+In Fig. XVI.4.7 viene proposto un sistema di gestione di camere d’albergo con una 
+configurazione che permette di implementare il comando di prese, luci di cortesia, chia-
+mata cameriera e allarme bagno; si possono inoltre aggiungere funzioni di risparmio ener-
+getico quale per esempio la disattivazione del riscaldamento-condizionamento a seguito 
+del rilevamento di una finestra aperta.
+Il tutto è supervisionato dalla reception, mediante software di supervisione e gestione 
+che consente il controllo di tutti gli eventi e lo “storico” del cliente per tutto il periodo 
+della sua permanenza.
+Fig. XVI.4.7   Esempio di sistema a bus per la gestione di camere d’albergo.
+Lettore a
+tranponder
+Lettore a
+tranponder
+con tasca
+Termostato
+elettronico
+Dispositivo
+ingressi/uscite
+Luce
+principale
+luce
+principale
+Pulsante
+non
+disturbare
+Pulsante
+reset
+chiamata
+Pulsante
+cameriera
+bagno
+Tirante
+carichi
+Stacco
+Luce
+cortesia
+Contatto
+finestra
+Segnalazione
+frigo-bar
+Segnalazione
+porta aperta
+Pulsante
+chiamata cameriera
+BUS
+
+[PAG 1592]
+XVI-34
+TECNOLOGIE BUS
+4.4.2  Gestione energia
+My Home consente di risparmiare energia mediante i due sistemi di gestione con tec-
+nologia SCS o ad onde convogliate. Il risparmio è possibile grazie alla possibilità di azio-
+nare gli elettrodomestici in fasce orarie dove il consumo di elettricità ha un minor costo, 
+evitando picchi di consumo e ottimizzando quindi l’impiego degli elettrodomestici. Inol-
+tre il sistema consente di prevenire l’intervento dell’interruttore generale dovuto al supe-
+ramento della potenza contrattuale disponibile.
+Gestione energia filare
+Il sistema a tecnologia SCS utilizza il tipico doppino twistato degli impianti BUS. Il 
+collegamento, la configurazione e l’indirizzamento dei dispositivi è di facile attuazione. È 
+possibile definire delle priorità di intervento rispetto all’attivazione degli elettrodome-
+stici, evitando la contemporaneità (per esempio lavatrice, lavastoviglie) e la conseguente 
+disattivazione dell’interruttore generale per sovraccarico (Fig. XVI.4.8).
+Fig. XVI.4.8   Sistema bus gestione energia filato.
+Gestione energia ad onde convogliate
+Nel sistema Gestione Energia ad onde convogliate i segnali di gestione tra la centrale 
+e gli attuatori sono trasferiti tramite onde convogliate sulla stessa rete di alimentazione 
+230 V a.c. dei carichi da controllare (Fig. XVI.4.9).
+È possibile determinare una priorità di funzionamento tra gli utilizzatori per impedire 
+che la loro contemporanea attività possa far intervenire il limitatore ENEL.
+In previsione di possibili future tariffazioni orarie differenziate, è possibile corredare 
+il sistema di programmatori orari, che potranno inserire gli elettrodomestici negli orari in 
+cui l’energia elettrica è più conveniente.
+Il sistema è composto di una centralina che gestisce fino ad 8 priorità, controllando 
+mediante attuatori a spina/presa (tipo UNEL) i vari carichi. Al verificarsi di un prelievo di 
+energia superiore al limite contrattuale gli apparecchi verranno sconnessi secondo un 
+ordine di priorità stabilito. Mediante un toroide esterno TA e una centrale di controllo, il 
+sistema è in grado di rilevare il valore della potenza assorbita dall’impianto, individuando 
+i sovraccarichi e procedendo alla disattivazione dei carichi meno prioritari.
+I limiti dimensionali sono di 150 m di lunghezza massima della linea e di un numero 
+massimo di 16 attuatori.
+Contatore ENEL
+Centrale di
+controllo
+opzionale
+Temporizzatore
+Attuatore
+Attuatore
+Attuatore
+Carico non
+Priorità 2
+Priorità 3
+Toroide
+230 V
+controllato
+Linea BUS
+Priorità 1
+
+[PAG 1593]
+TECNOLOGIE BUS
+XVI-35
+Fig. XVI.4.9   Sistema bus gestione energia ad onde convogliate.
+4.4.3  Comfort
+Con le soluzioni comfort di My Home la casa diventa più accogliente e piacevole da 
+abitare. Il clima, la luce, il suono e l’automazione sono gli elementi che possono essere 
+controllati mediante il sistema bus SCS BTicino.
+Con il cellulare è possibile entrare in My Home e attivare “azionamenti” preventiva-
+mente personalizzati dall’utente stesso: attivare il riscaldamento o il condizionatore, 
+accendere la lavatrice, aprire le tapparelle. All’apertura della porta d’ingresso un solo 
+tasto consente l’accensione simultanea di alcuni punti luce e l’apertura di un determinato 
+numero di tapparelle motorizzate.
+Automazione domestica
+Il sistema automazione permette di gestire contemporaneamente ed in modo integrato, 
+funzioni fino ad oggi realizzate da impianti distinti quali:
+–  illuminazione;
+–  azionamento serrande, ventilatori e aspiratori;
+–  condizionamento e riscaldamento.
+Il sistema è costituito da dispositivi di comando (interruttori, deviatori, pulsanti) e da 
+attuatori che vengono attivati per il comando dei carichi, in seguito ad un comando impar-
+tito dal sistema bus; un alimentatore (230 V a.c./27 V d.c.), connesso al doppino ritorto 
+inguainato serve a fornire il segnale portante su cui viaggiano i telegrammi (Fig. 
+XVI.4.10).
+I dispositivi (sensori e attuatori) sono equipaggiati con una “intelligenza” propria che 
+gli consente di rilevare e inviare messaggi sul bus.
+Una particolare centralina permette il comando di più attuatori preventivamente indi-
+viduati, che vanno a formare uno scenario (per esempio l’accensione di alcune lampade, 
+un determinato livello di apertura delle serrande e una temperatura ambiente particolare, 
+che consentano la visione della TV in modo ottimale).
+I comandi e gli attuatori devono essere opportunamente configurati affinché possano 
+svolgere la funzione desiderata:
+–  Per i comandi: indicare quali sono gli attuatori da comandare e con quale modalità 
+operativa comandarli.
+–  Per gli attuatori: definire l’indirizzo, l’eventuale indirizzo di gruppo e la modalità di 
+funzionamento.
+La configurazione si ottiene, come per tutti i sistemi SCS BTicino inserendo nelle 
+apposite cavità situate sul retro delle apparecchiature i configuratori, differenziati per 
+numero, grafismo e colore.
+Contatore ENEL
+Centrale di
+controllo
+opzionale
+Temporizzatore
+Attuatore
+Attuatore
+Attuatore
+priorità 1
+priorità 2
+priorità 3
+Toroide
+230 V
+
+[PAG 1594]
+XVI-36
+TECNOLOGIE BUS
+Fig. XVI.4.10   Sistema comfort SCS BTicino.
+I configuratori identificano tre diverse codificazioni:
+–  Ambiente (A). Insieme dei dispositivi appartenenti ad una zona logica (locale).
+–  Punto Luce (PL). Identificativo numerico del singolo attuatore.
+–  Gruppo (G). Insieme dei dispositivi appartenenti anche ad ambienti diversi, ma che 
+devono essere comandati contemporaneamente.
+Gli attuatori potranno essere equipaggiati con i tre configuratori (A, PL, G), mentre 
+per i comandi si avranno i soli primi due (A, PL).
+Si possono effettuare 4 diversi tipi di comando:
+–  Comando punto-punto. Ogni comando è assegnato ad un attuatore (Fig. XVI.4.11).
+–  Comando ambiente. Comando indirizzato a tutte le apparecchiature che hanno lo 
+stesso identificativo di ambiente (Fig. XVI.4.12).
+–  Comando di gruppo. Gli attuatori dislocati in ambienti diversi che vengono però 
+comandati simultaneamente da un solo comando. Un attuatore può essere configurato per 
+appartenere a più gruppi (Fig. XVI.4.13).
+–  Comando generale. Si possono comandare tutte le apparecchiature (Fig. XVI.4.14).
+I dispositivi di comando possono svolgere funzioni diverse; “cosa deve fare” il dispo-
+sitivo si determina inserendo dei configuratori nelle sedi contrassegnate con M dei dispo-
+sitivi di comando.
+–  Comando ON-OFF ciclico. Premendo ripetutamente sul copritasto, il dispositivo uti-
+lizzato con attuatori a relé invia alternativamente il comando di ON e OFF. Con attuatori 
+dimmer mantenendo la pressione sul pulsante, si effettua la regolazione della potenza sul 
+carico.
+–  Comando ON. Alla pressione del rispettivo copritasto il dispositivo invia il comando 
+di ON.
+–  Comando OFF. Alla pressione del rispettivo copritasto il dispositivo invia il comando 
+di OFF.
+–  Comando ON-OFF monostabile (pulsante). Questa modalità permette di effettuare un 
+comando ON/OFF assimilabile al comando di un pulsante tradizionale di tipo punto-punto 
+destinato quindi a un solo indirizzo.
+–  Comando bistabile con ritenuta (SU-GIÙ per tapparelle). Con una breve pressione sul 
+copritasto (superiore o inferiore) si invia il comando SU-GIÙ per un motore di tapparelle.
+Apparecchi
+Ventilazione
+di comando
+Alimentatore
+Linea BUS
+Attuatori
+Alimentazione 230 V
+Serrande
+Illuminazione
+
+[PAG 1595]
+TECNOLOGIE BUS
+XVI-37
+ 
+Fig. XVI.4.11   Comando punto-punto.
+Fig. XVI.4.12   Comando ambiente.
+–  Dopo l’attivazione del comando, la successiva pressione del copritasto superiore o 
+inferiore permette di fermare la tapparella nella posizione desiderata.
+–  Comando monostabile (SU-GIÙ per tapparelle). Il dispositivo invia un comando di 
+SU-GIÙ per motore di tapparelle per tutto il tempo in cui si agisce sul copritasto superiore 
+o inferiore. Al rilascio del copritasto si effettua lo STOP del motore.
+Comandi
+punto-punto
+Carichi
+Attuatori
+(tapparelle motorizzate)
+Ambiente 1
+Ambiente 2
+Comandi
+punto-punto
+Carichi
+Attuatori
+(tapparelle motorizzate)
+Ambiente 1
+Ambiente 2
+Comando
+Ambiente 1
+Comando
+Ambiente 2
+
+[PAG 1596]
+XVI-38
+TECNOLOGIE BUS
+Fig. XVI.4.13   Comando di gruppo.
+Fig. XVI.4.14   Comando generale.
+Comandi
+di gruppo
+Carichi
+Attuatori
+(tapparelle motorizzate)
+Ambiente 1
+Ambiente 2
+Comando
+Ambiente 1
+Comando
+Ambiente 2
+Comandi
+Comandi
+di gruppo
+Carichi
+Attuatori
+(tapparelle motorizzate)
+Ambiente 1
+Ambiente 2
+Comando
+Ambiente 1
+Comando
+Ambiente 2
+Comando
+generale
+punto-punto
+Comandi
+
+[PAG 1597]
+TECNOLOGIE BUS
+XVI-39
+–  Comando ON/OFF. Utilizzato con attuatori a relé, quando si agisce sul copritasto 
+superiore il dispositivo invia un comando di ON; quando si agisce sul copritasto inferiore 
+si invia un comando di OFF. Con attuatori dimmer agendo sul copritasto superiore e infe-
+riore si effettua la regolazione della potenza sul carico.
+Per quanto riguarda gli attuatori la configurazione rispetto alle modalità operative è la 
+seguente:
+–  Funzioni speciali. Questa modalità permette di effettuare delle funzioni speciali (OFF 
+ritardato, STOP temporizzati) in base al tipo di attuatore e configuratore impiegati.
+–  Slave. Questa modalità permette di far eseguire un comando a due attuatori. In pratica 
+l’attuatore con il configuratore SLA (Slave) ripete la funzione svolta da un altro attuatore 
+che funziona da Master. Entrambi gli attuatori devono avere gli stessi indirizzi e devono 
+essere uguali (stesso codice articolo).
+–  ON-OFF monostabile (pulsante). Questa modalità permette di effettuare un comando 
+ON/OFF di tipo punto-punto e di gruppo. Il dispositivo pertanto non si attiva con i 
+comandi di Ambiente e Generale.
+La configurazione massima è di 9 attuatori per 9 diversi ambienti. La distanza mas-
+sima fra alimentatore e l’ultimo dispositivo non deve superare i 250 m; mentre la lun-
+ghezza massima del bus non deve superare i 500 m.
+La massima corrente disponibile all’estremità di un cavo bus lungo 250 m è di 600 
+mA se viene impiegato un cavo SCS e di 400 mA per un cavo telefonico generico. Per una 
+ripartizione ottimale delle correnti sulla linea bus è consigliabile dislocare l’alimentatore 
+in posizione intermedia.
+Diffusione sonora
+Le applicazioni per la diffusione sonora sono molteplici:
+–  Diffusione sonora in ambiente domestico proveniente da impianto Hi-Fi o da sintoniz-
+zatore radio, con i punti di ascolto costituiti da diffusori da incasso connessi ad amplifica-
+tori locali.
+–  Nel terziario integrando ai componenti per la diffusione sonora i moduli dotati di 
+microfono è possibile implementare nel sistema la funzione di ricerca persone e la fun-
+zione di sorveglianza acustica ambientale.
+–  Negli alberghi i sistemi di diffusione sonora sono indubbiamente riconosciuti per il 
+prestigio e il comfort apportato. In ogni camera un sintonizzatore radio può effettuare la 
+funzione sveglia oltre alla normale diffusione sonora.
+Il sistema prevede l’impiego di un modulo preamplificato al quale viene connessa la 
+fonte di riproduzione sonora e di moduli amplificatori situati nei vari locali, connessi ai 
+diffusori. È presente un alimentatore per il bus e un modulo relè che serve per attivare 
+remotamente (tramite l’attivazione di un qualsiasi modulo amplificatore) il sistema.
+La Fig. XVI.4.15 visualizza un esempio di comfort ambientale in un centro commer-
+ciale dove, da un locale di controllo, si effettua la gestione, il controllo e la supervisione 
+degli spazi comuni: dall’illuminazione degli ambienti, l’apertura-chiusura delle serrande, 
+l’accensione-spegnimento della diffusione musicale e l’erogazione della fontana nella 
+piazzetta del parcheggio nelle diverse fasce orarie.
+Dal locale di controllo inoltre, è possibile monitorare la presenza di persone nei vari 
+locali, tramite rivelatori ad infrarossi e comandare di conseguenza le varie luci.
+L’esempio proposto attiva due scenari: il primo che attiva la diffusione sonora, l’ero-
+gazione della fontana e apre le serrande degli ingressi; il secondo che chiude le serrande 
+degli ingressi e spegne l’illuminazione interna del centro commerciale.
