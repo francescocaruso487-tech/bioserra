@@ -1460,7 +1460,7 @@ function manRenderNote() {}
 function manCountChars() {}
 function manSalvaNota() {}
 function manEliminaNota() {}
-function manAggiungeTecnica() {}
+/* manAggiungeTecnica: definita in piante.js (versione funzionante) */
 function guideEspandi() {}
 
 async function espAttiva(idx) { await labEspAttiva(idx); }
@@ -2150,4 +2150,5 @@ function labSbCosine(a, b) {
   var denom = Math.sqrt(normA) * Math.sqrt(normB);
   return denom === 0 ? 0 : dot / denom;
 }
+
 
