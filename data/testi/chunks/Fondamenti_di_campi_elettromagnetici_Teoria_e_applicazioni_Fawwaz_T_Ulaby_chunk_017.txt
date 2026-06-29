@@ -1,0 +1,1222 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 17/23 ===
+Chars: 44,994 | Offset: 717,791
+
+
+
+I piano dî incidenza è il
+piano che contiene la
+direzione di propagazione
+dell’onda k e la superficie
+normale all’interfaccia,
+che in questo caso è il
+piano del foglio. L'onda è
+(a) polarizzata
+perpendicolarmente
+quando È è
+perpendicolare al piano di
+incidenza e (b) polarizzata
+paraltelamente quando E
+giace nel piano di
+incidenza.
+
+Capitolo 8 — Riflessione e trasmissione delle onde e ottica geometrica
+
+ne dell’onda incidente, in quanto i campi elettrico e magnetico di un’onda piana nor-
+
+-malmente incidente sono-entrambi-sempre-tangenti-all’interfaccia a prescindere dalla —
+
+polarizzazione dell'onda. Ciò non accade nel caso di incidenza obliqua a un angolo
+9; # 0. Un’onda con polarizzazione qualsiasi si può descrivere come sovrapposizio- .
+ne di due onde polarizzate ortogonalmente l’una rispetto all’altra, una delle quali ha
+il campo elettrico parallelo al piano di incidenza, per cui si parla di polarizzazione
+parallela, e un’altra con il campo elettrico perpendicolare ai piano di incidenza, per
+la quale si parla di polarizzazione perpendicolare. Il piano di incidenza è definito co-
+me il piano che contiene la normale all’interfaccia e la direzione di propagazione del-
+l’onda incidente. Queste due configurazioni di polarizzazione sono descritte in
+Figura 8.14, nella quale il piano di incidenza coincide col piano x — z. La polarizza-
+zione che ha E perpendicolare al piano di incidenza è anche detta polarizzazione tra-
+sverso elettrica (TE), in quanto E è trasverso rispetto al piano di incidenza, mentre
+quella che ha E parallelo al piano di incidenza è detta frasverso magnetica (TM), in
+quanto in tal caso è il campo magnetico a essere perpendicolare al piano di inciden-
+za. Invece di risolvere i problemi di riflessione e di trasmissione nel caso generale di
+onda con polarizzazione arbitraria, è più comodo nella pratica scomporre dapprima
+l’onda incidente (E', H') in una componente a polarizzazione perpendicolare
+(E',, HÎ ) e in-una componente a polarizzazione parallela (Ej, Hi), in modo che do-
+po aver ricavato le onde riflesse (E',, H’,) e (Ej, Hj) dovute alle due componenti in-
+cidenti, le onde riflesse si possano sommare per ottenere l’onda riflessa complessiva
+corrispondente all’onda incidente originaria. Un procedimento simile si applica per
+Ticavare l’onda trasmessa.
+
+Mezzo 1
+
+1
+Mezzo (cn a1)
+
+(GI)
+ze
+
+(a) Polarizzazione perpendicolare (b) Polarizzazione parallela
+
+8.4.1 Polarizzazione perpendicolare
+
+In Figura 8.15 è descritta un’onda piana incidente 2 polarizzazione perpendicolare
+che si propaga lungo la direzione x; nel mezzo dielettrico 1. Il fasore campo elettrico
+E°, punta in direzione y e il fasore campo magnetico associato Hi, è rivolto lungo
+l’asse yi. Le direzioni di E', e H', soddisfano la condizione-per cui Ei, x Bi, punta
+fungo !a direzione di propagazione $;. Un’onda piana di questo tipo è descritta dalle
+
+i espressioni
+È = grip Ra, (8.462)
+ni Fi Li
+Bi=i ta ete, (8.46b)
+
+8.4 Riflessione e trasmissione delle onde con incidenza obliqua
+
+dove Fi, è l'ampiezza del fasore campo elettrico in x; = 0, Xi = wie è il nume-
+
+~ ro-d’onda edi = /ui/ei è l’impedenza intrinseca; entrambe calcolate per il mezzo
+
+1. Dalia Figura 8.15, la distanza x;-e il versore 9; si possono esprimere in termini del
+sistema di coordinate globali (x, y, z) come segue:
+
+x, =x sin 8; +z cos &, (8.47a)
+J;= -£ cos? + Zsin 6. {8.47b)
+Sostituendo la (8.47a) e la (8.476) nella (8.46a) e nella (8.46b) si ottiene:
+Onda incidente
+i = gi ge Ue sind4z 008 8), (8.482)
+Hi =(-icos8+îsin0;)
+x Elo gpl Ge sin Beta cos 6) (8.48b)
+
+mM
+
+Con l’ausilio delle relazioni direzionali date in Figura 8.15 per le onde riflessa e tra-
+smessa, i campi sono:
+
+Onda riflessa
+
+EL = IE ye
+
+= PE ge Fatesnde-zom8) (8.49a)
+~ Elo î
+DI - 3 0 chs
+at ni
+= (£cos9+Zsin0,) x Poca (sin, -ze0s6) (8.49b)
+
+4, =x sin 6, -—z cos &
+
+Mezzo I (e 11)
+z=0
+
+Figura 8.15 Onda piana polarizzata perpendicolarmente che incide con un angolo 4; su di
+‘un’interfaccia piana.
+
+328
+
+[PAG 173]
+330
+
+Capitolo 8 — Riflessione e trasmissione delle onde e ottica geometrica
+
+Onda trasmessa
+
+È ort gia
+El = $E ge?"
+
+= IE 0 eFr(esin8+20080), (8.496)
+Ri =}, Elo gar
+7)
+= (~Reos 6 + sin &) x — gala) (8.494)
+
+dove 8; e sono gli angoli di riflessione e di trasmissione descritti in Figura 8.15 ¢ ky
+ed m sono il numero d’onda e l’impedenza intrinseca nel mezzo 2. Lo scopo è di carat-
+terizzare i campi riflesso e trasmesso in termini dei parametri dell’onda incidente, com-
+presi l’angolo di incidenza 0} e l'ampiezza ZÎ ;. Le quattro espressioni dalla (8.49a) al-
+la (8.49d) contengono quattro grandezze incognite: ET), E, Ar e &. Gli angoli 9, e 8
+si possono mettere in relazione con 6; mediante le leggi di Snell descritte dalla (8.28a)
+e dalla (8.28b), ma al momento si sceglie di mantenerli come incognite, in quanto si
+vuole dimostrare che le leggi di Snell si possono ricavare anche mediante l’applicazio-
+ne delle condizioni al contorno sui campi in z = 0. Il campo elettrico complessivo nel
+mezzo 1 è la somma dei campi incidente e riflesso: E| = E', + È. Ciò è anche vero
+per il campo magnetico complessivo nel mezzo 1: H! = Hi, + Hi. Le condizioni al
+contorno affermano che i componenti tangenti di E e H devono essere continui attra-
+verso l’interfaccia tra i due mezzi. I componenti di campo tangenti all’interfaccia sono
+quelli rivolti lungo $ e Y. Dal momento che i campi elettrici nei mezzi | e 2 presentano
+solo componenti lungo $, la condizione al contorno per E è
+
+(È, +È,) LE È, Lar (8.50)
+Inserendo la (8.48a), la (8.49a) e la (8.49c) nella (8.50) e ponendo z = 0, si ha
+Ei ge ieesinds 4 pr o-Strrsino, — Eh getting, (8.51)
+
+La condizione al contorno sul componente tangente del campo elettrico (cioè il com-
+ponente lungo x) è
+
+(8.52)
+oppure
+
+E dadi E, esi
+~ 210 cos 6; eribssindi 4 210. cos 6, e hasin8,
+
+m È (8.53)
+= — 19. 099, e arsino,,
+ur
+
+Per soddisfare la (8.51) e la (8.53) per tutti i possibili valori di x, cioè su tutta l’inter-
+faccia, tutti i tre argomenti degli esponenziali devono essere uguali. Vale a dire
+
+ka sin 6; = ky sin 8, = ky sin %, (8.54)
+
+“che è nota come condizione di Phase-matching. Dalla prima uguaglianza nella (8.54)
+
+si ottiene
+
+6, = (legge della riflessione di Snell) (8.55)
+
+84 Riflessione e trasmissione delle onde con incidenza obliqua
+
+mentre dalla seconda si ha
+
+sin _k _& er om
+sini ky w/m
+(legge della rifrazione di Snell) (8.56)
+
+I risultati espressi dalla (8.55) e dalla (8.56) sono identici a quelli ricavati in prece-
+denza nel Paragrafo 8.2 mediante considerazioni sui cammini percorsi dai fronti
+d’onda incidente, riflesso e trasmesso.
+
+In virtù della (8.54), le condizioni al contorno date dalla (8.51) e dalla (8.53) si ri-
+ducono a
+
+Eig + Fig = Fio (8.572)
+
+cos 6; cos 8;
+
+(Zio + Eo) = - Elo (8.570)
+
+Queste due equazioni si possono risolvere per ottenere le seguenti espressioni dei
+coefficienti di riflessione e trasmissione nel caso di polarizzazione perpendicolare:
+
+_ Elo _ mcos@ — m così
+Elo  mcosd+m così
+Eig _ 2m cos 9
+Eig ™m cos 8; +7) cos
+
+(8.58a)
+
+(8.58b)
+
+Questi due coefficienti, formalmente detti coefficienti di riflessione e trasmissione di
+Fresnel per la polarizzazione perpendicolare, sono legati dalla
+
+r1=1+T1. (8.59)
+Se il mezzo 2 è un conduttore perfetto, cioè = 0, la (8.582) e la (8.58b) si riduco-
+no rispettivamente a, = ~1 e 7, = 0, il che significa che l’onda incidente viene
+
+totalmente riflessa dal mezzo conduttore. Per dielettrici non magnetici con
+Bt = 42 = po e con l’aiuto della (8.56), l’espressione di I’, si può scrivere come
+
+_ cos; ~ Y(e2/e:) — sin 20;
+
+cos 9; + /{€2/e1) — sin?20;
+
+(per jy = uo). (8.60)
+
+Dal momento che (€2/e1) = (v2/m1)’, questa espressione si può anche scrivere in
+termini degli indici di rifrazione n; e 12.
+Esempio 8.6 Incidenza obliqua di un’onda su una superficie di terriccio
+
+Utilizzando il sistema di riferimento descritto in Figura 8.15, si consideri un’onda piana
+irradiata nell’aria da un’antenna a grande distanza che incide su una superficie piana di
+terriccio situata in z = 0. Il campo elettrico dell’onda incidente è dato da
+
+E' = $100 cos (wt ~ mx — 1.737) (Vim), (8.61)
+
+e il mezzo costituito dal terriccio si può considerare come un dielettrico senza perdite
+con pemnittivita relativa pari a 4.
+
+(a) Si ricavino 4, & e l’angolo di incidenza 6.
+
+31
+
+[PAG 174]
+SARTI”
+
+332
+
+Capitolo 8 — Riflessione e trasmissione delle onde e ottica geometrica
+
+(b) Si determinino le espressioni dei campo elettrico complessivo nelParia e nel terric-
+cio.
+(c) Si ricavi la densità di potenza media trasportata dall’onda che si propaga nel terric-
+cio.
+
+Soluzione (a) Per prima cosa si trasforma la (8.61) in forma fasoriale, ottenendo
+un’espressione simile alla (8.462):
+
+È = p100e 7B
+
+= 9100778" (Vim), (6.62)
+dove x; è l’asse lungo il quale l’onda si propaga e
+kyxj = me + 1.7372. (8.63)
+Sfruttando la (8.47a) si ha
+Ayxj = kx sin 8; + kiz cos 6;. (8.64)
+
+Pertanto
+
+ki sin 8;-= x,
+ky cos @; = 1.737,
+
+risolvendo le quali si ottengono
+
+ky = 4/02 + (1.730)? = 2m (rad/m),
+
+ane (rig)
+
+La lunghezza d’onda nel mezzo 1 (aria) è
+
+irs)
+
+A = =-—»=0.Sm
+va V4
+Il corrispondente numero d’onda nel mezzo 2 è
+27
+ky= = 47 (rad/m).
+da
+
+Dal momento che È' è rivolto lungo 7, la polarizzazione è perpendicolare; infatti $ è
+perpendicolare al piano di incidenza che contiene la normale 2 alla superficie e Ja dire-
+zione di propagazione Xj.
+
+(b) L'angolo di trasmissione 6, corrispondente a 9;
+
+(8.56):
+
+= 30° si ottiene con Pausilio della
+
+Qn
+sin 6, =“ sin 6, = 27. sin 30° = 0.25
+ky 4n
+
+oppure
+O = 14.5°.
+
+Con e) = e) € €2 = &2€ = 4€q, i coefficienti di riflessione e di trasmissione per la po-
+larizzazione perpendicolare si ricavano con l'ausilio della (8.59) e della (8.60):
+
+84 Riflessione e trasmissione delle onde con incidenza obliqua 333
+
+Tis cos 8 — V/{€2/€1) = sin” di = -0,38,
+cos & + \/(e2/e1) — sin? 9;
+t.=1+01=0.62.
+Applicando la (8.48a) e ia (8.49a) con Ei, = 100 V/m e 6; = 6,, il fasore campo elettri-
+co totale nel mezzo 1 è
+EL = FL +E,
+= El ge AGsintitacos8)
+i)
+
+= fl00e AH 7322) _ gaggilnoi Tm),
+e il corrispondente campo elettrico istantaneo nel mezzo 1 è
+El (@, 2,1) = Re le]
+
+= $[100 cos (wt — mx — 1.737z)
+— 38 cos (wt — mx +1.7372)] (Vim).
+
+Nel mezzo 2, applicando la (8.49c) con Et, = 71 Ei si ottiene
+È =preig eHalesinG-+20086)
+= J62e 10343870)
+
+il cui corrispondente nel tempo è
+E' (x, 2, f) = Re Re
+=962 cos (wt = mx — 3.872) (Vim).
+
+(©) Nel mezzo 2 si ha m = m/y/E2 = 1207/V4 = 600 (Q) e la densità di potenza
+media trasportata dall’onda è
+
+Big? _ (60° _ |
+om = Froo 7102 (W/m2).
+
+Shs
+
+8.4.2 Polarizzazione parallela
+
+Se nella situazione di polarizzazione perpendicolare si scambiano tra loro E e H, te-
+nendo presenti le relazioni che legano le direzioni di E e H alle direzioni di propaga-
+zione delle onde incidente, riflessa e trasmessa, si ottiene la geometria descritta in
+Figura 8.16 per ia polarizzazione parallela. Ora i campi elettrici giacciono nel piano
+di incidenza e i campi magnetici associati sono a esso perpendicolari. Con riferimen-
+to alle direzioni indicate in Figura 8.16, i campi delle onde incidente, riflessa e tra-
+smessa sono dati da
+
+Onda incidente
+i = ioe"
+
+= (Roos 9; — Zsin 9;)Ejpe Hes Ateces) (8.65a)
+
+=} Fe even — je Fig eFilesindtec0s6i) | (8.65b)
+Mm
+
+[PAG 175]
+334
+
+Figura 8.16
+
+Onda piana polarizzata
+parallelamente che incide
+conun angolo 8; su
+un'interfaccia piana.
+
+Capitolo 8 - Riflessione e trasmissione delle onde e ottica geometrica
+
+Mezzo | (61, 41)
+
+Onda riflessa
+Ej = Bie
+= (Xcos 6, + Zsin 9) oe Ai sinti 20008), (8.65)
+Ei
+fr — —9 IO gun
+=-fS e
+= 7
+= glo eniti(asin0r 20058) (8.654)
+mM
+Onda trasmessa
+È = dee
+= (£così — è sin A) Bjge Mesa 430088), {8.65e)
+fit =¢ Elo ja — s Ele Sta (xsindtzcost) 650
+HY =f ® e jy in € (8.65f)
+
+Uguagliando i componenti tangenti di E e H nei due mezzi in z = 0, come si è fatto
+in precedenza nel caso di polarizzazione perpendicolare, si ottengono di nuovo le re-
+lazioni che definiscono le leggi di Snell, come pure le seguenti espressioni dei coeffi-
+cienti di riflessione e trasmissione di Fresnel per la polarizzazione parallela:
+
+E, _
+Ty = lo = posa EMA (8,660)
+Elo Th cos 8; + m cos 8
+Ei 2 6,
+y= le = MST (86
+© Ela Tp cos 8; +m così; ° ( )
+
+8.4 Riflessione e trasmissione delle onde con incidenza obliqua
+
+Si può dimostrare che dalle espressioni precedenti si ottiene la relazione
+
+cos 6;
+cos”
+
+m= (+04) (8.67)
+
+Si è notato in precedenza nell’ambito del caso di polarizzazione perpendicolare che,
+
+quando il secondo mezzo è un conduttore perfetto con 7 = 0, l'onda incidente viene
+
+completamente riflessa dall’interfaccia. Ciò è vero anche nel caso di polarizzazione
+
+parallela: ponendo 7 = 0 nella (8.66a) e nella (8.66b) si ottiene Ty=-1eq=0.
+Per i materiali non magnetici, la (8.662) diviene
+
+ne —(€2/€1) cos 0; + \/(€2/e1) — sin? 8;
+' (2/1) cos 0; + / (€2/e1) — sin’ 8;
+
+(per wi = pe) (8.68)
+
+Per illustrare le variazioni angolari dei moduli di’, e I’, in Figura 8.17 sono trac-
+ciati i grafici per onde incidenti in aria su tre tipi diversi di superfici dielettriche: ter-
+riccio asciutto (e, = 3), terriccio bagnato (e, = 25) e acqua (e, = 81).
+
+Per ciascuna superficie, (1) | = T nel caso di incidenza normale (9; = 0), come
+ci si aspetta, (2) [F] = {Py] = 1 nel caso di incidenza radente (6, = 90°) e (3) I’
+tende a zero per l’angolo indicato come angolo di Brewster in Figura 8.17. Per i ma-
+teriali non magnetici l'angolo di Brewster esiste solo per la polarizzazione parallela
+e, come si vedrà in breve, il suo valore dipende dal rapporto (€2/e1). In corrispon-
+denza dell’angolo di Brewster, la componente a polarizzazione parallela viene inte-
+ramente trasmessa nel mezzo 2.
+
+(er=25)
+
+44Terriccio la
+asciutto Le”
+(€r=3)_ =”
+
+02
+
+a a
+10 26 30 40 30 60 70 80] 90
+
+(@, terriccio (0, terriccio (83 acqua)
+asciutto) bagnato)
+
+Angolo di incidenza 6; (gradi)
+
+8.4.3 Angolo di Brewster
+
+L'angolo di Brewster @g è definito come l’angolo di incidenza 4; per il quale il coeffi-
+ciente di riflessione di Fresnel è I'= 0.
+
+Figura 8.17
+
+Grafici di |f,] e [Ly] in
+funzione di 0; per una
+superficie di terriccio
+asciutto, una di terriccio
+bagnato e una d’acqua.
+Per ciascuna superficie,
+[Py] = din
+corrispondenza
+dell’angolo di Brewster.
+
+335
+
+[PAG 176]
+336
+
+Capitolo:8 - Riflessione e trasmissione delle onde e ottica geometrica
+
+Polarizzazione perpendicolare
+
+Per la polarizzazione perpendicolare, l’arigolo di Brewster #51 si può ottenere ponen-
+do uguale a zero il numeratore dell’espressione di I°, data dalla (8.582) oppure, equi-
+valentemente, quando
+
+m cos 8; = m così. (8.69)
+
+Dopo aver (1) elevato al quadrato entrambi i membri della (8.69), (2) applicato la
+(8.56), (3) ricavato 6; e indicato 6; con 9p1, si ha
+
+. _ [d= (@e2/1201)
+sin gi = TFT lo = Ga /iny? . (8.70)
+
+Dal momento che il denominatore della (8.70) tende a zero quando 41: = #2, Op,
+non esiste per i materiali non magnetici.
+
+Polarizzazione parallela
+
+Il valore di 6; per cui 'y = 0, indicato con 9g, si può ricavare ponendo uguale a zero
+il numeratore della (8.662). Il risultato è identico alla (8.70), ma con yp e € scambiati
+di posto. Vale a dire
+
+«ni [L= (Ew2/e)
+sini È N (8.71)
+
+Per i materiali non magnetici
+
+i 1
+= sin7!, /———___
+do = sin \ 1+ (€1/62)
+
+un fE come) (73
+
+L’angolo di Brewster è anche detto angolo di polarizzazione, in quanto, se un’onda
+
+* composta da componenti a polarizzazione perpendicolare e parallela incide su una
+
+bi
+
+superficie non magnetica con angolo pari all'angolo di Brewster 93), la componente
+polarizzata parallelamente viene completamente trasmessa nel secondo mezzo, e solo
+la componente polarizzata perpendicolarmente viene riflessa dalla superficie. La luce
+naturale, compresa la luce solare e la luce generata dalla maggior parte delle sorgenti
+costruite dall'uomo, è considerata non polarizzata, in quanto la direzione del campo
+elettrico delle onde luminose varia il proprio angolo in modo casuale nel piano per-
+pendicolare alla direzione di propagazione. Pertanto, in media metà dell'intensità del-
+la luce naturale è polarizzata perpendicolarmente e l’altra metà è polarizzata paralle-
+lamente. Quando la luce non polarizzata incide su una superficie con angolo pari al-
+l’angolo di Brewster, .l’onda riflessa è interamente a polarizzazione perpendicolare.
+Dunque il fenomeno della riflessione agisce da polarizzatore.
+
+Domande di verifica
+
+8.4 La riflessione totale interna può avere luogo nel caso di un’onda incidente da un
+mezzo | con indice di rifrazione n su un mezzo 2 con indice nz quando nz > #1?
+
+8.5 Qual è la differeriza tra le condizioni al contorno applicate nei Paragrafo 8.1.1
+nel caso di incidenza normale e quelle applicate nel Paragrafo 8.4.1 nel caso di
+incidenza obliqua con polarizzazione perpendicolare?
+
+8.6 Perché l'angolo di Brewster è anche detto angolo di polarizzazione?
+
+8.5 Riflettivita e trasmincività
+
+8.7 Sull’interfaccia, la somma vettoriale dei componenti tangenti dei campi elettrici
+incidente e riflesso deve essere:uguale al componente tangente del campo elettri-
+co trasmesso. Per eri = le en = 16, si ricavi l’angolo di Brewster e quindi si ve-
+rifichi la validità dell’affermazione precedente graficando in scala i componenti
+tangenti dei tre campi elettrici quando l’angolo è uguale all’angolo di Brewster.
+
+Esercizio 8.7 Un’onda in aria incide su una superficie piana di terriccio con e, = 4 e
+Hy = 1 con angolo 6 = 50°. Si ricavino T'1, 71, Ten
+
+SoLuzioNE Py = —0.48, 7, = 0.52, Ty = ~0.16, n = 0.58.
+
+Esercizio 8.8 Si ricavi l'angolo di Brewster per l’interfaccia dell’Esercizio 8.7.
+
+SOLUZIONE 63 = 63.4°.
+
+ESERCIZIO 8.9 Si dimostri che i campi elettrici e magnetici incidenti, riflessi e trasmessi
+dati dalle equazioni da (8.65a) a (8.657) hanno tutti la stessa dipendenza funzionale dalla
+fase di tipo esponenziale lungo la direzione dell’asse x.
+
+SoLuzioNE Con l’ausilio della (8.55) e della (8.56) si dimostra che tutti i sei campi varia-
+no secondo e~*xsiag |
+
+iL  __ ____ _
+8.5  Riflettività e trasmittività
+
+I coefficienti di riflessione e trasmissione rappresentano i rapporti tra le ampiezze dei
+campi elettrici riflesso e trasmesso e l’ampiezza dell’onda incidente. Si esamineranno
+ora i rapporti tra le potenze, iniziando l’analisi dal caso di polarizzazione perpendico-
+lare. La Figura 8.18 mostra un fascio circolare di energia elettromagnetica che incide
+sull’interfaccia tra due mezzi senza perdite adiacenti. L’area della regione illuminata
+dal fascio è pari ad A e le ampiezze dei campi elettrici dei fasci incidente, riflesso e
+
+trasmesso sono rispettivamente Fo, Ei, e E).
+
+337
+
+Figura 8.18
+
+Riflessione e trasmissione
+di un fascio incidente a
+sezione circolare che
+ilfumina una regione di
+area A dell’interfaccia.
+
+[PAG 177]
+338
+
+Capitolo 8 — Riflessione e trasmissione delle onde e ottica geometrica
+
+Le densità di potenza media trasportate dai fasci incidente, riflesso e trasmesso sono
+
+8.5 Riflettivitd e trasmittività 339
+
+Le onde incidente, riflessa e trasmessa non devono soddisfare leggi di conservazione
+
+: WE È i del campo elettrico, del campo magnetico o della densità di potenza, ma devono tut-
+si= di (8.732) tavia obbedire alla legge di conservazione della potenza. Infatti, in molti casi il cam-
+Ti ) . po elettrico trasmesso è maggiore del campo elettrico incidente. La conservazione
+ee sa |Eiol (8.735) della potenza richiede che la potenza incidente sia uguale alla somma della potenza
+= mo > ° riflessa e della potenza trasmessa. Cioè per esempio, nel caso di polarizzazione per
+pendicolare,
+Etat? x
+s= on , (8.730) PL=PL +P, (8.80)
+oppure
+dove n; ed m sono rispettivamente le impedenze intrinseche dei mezzi I e 2. Le aree PP ia 2 2
+delle sezioni trasverse dei fasci incidente, riflesso e trasmesso sono Evol Acos 6; = |Elol Acosì, + |Eol A così. (8.81)
+Aj = Acos 6}, (8.74a) 2m 2m 2m
+A, = Acs &, (8.74b) Applicando la (8.76), la (8.79a) e la (8.79b) si ottiene
+A, = 40088, (8.740) Ri+T,=1, (8.822)
+e le corrispondenti potenze medie trasportate dai fasci sono Ry+T=1, (8.82b)
+. oppure
+; (Fi ol}
+Pi =S4= on Acos 6j, (8.75a) 3 ra + ln P(2 cos +) i (8.832)
+È È 4 m cos 6; , °
+= = id
+= SA = Om Acos &, (8.75b) ry?+ iq? ( m cos +) uri (8.330)
+FP i IV cosà . °
+P= SA = mm A cos 6. (8.750) _
+
+La Figura 8.19 mostra i grafici di Ry e Ty in funzione di 6; per un'interfaccia aria-ve-
+tro. Si noti che la somma di Ry e 7; è sempre uguale a 1, come richiesto dalla
+
+La riflettività R, che in ottica è anche chiamata riflettanza, è definita come il rapporto . Ml che
+(8.82b). Si noti pure che, in corrispondenza dell’angolo di Brewster 03, Rp=0e
+
+tra potenza riflessa e potenza incidente. La riflettività nel caso di polarizzazione per-
+
+pendicolare è dunque Fil T=1
+Pi IE, 2 0050 BOP È La Tabella 8.2 riassume le espressioni generali di I, 7, R e 7 sia nel caso di inci-
+Ri= = ant La |—10) | (8.76) = denza normale che obliqua.
+Pi (Eel cos = | Eig i
+
+Tabella 8.2 Espressioni di I, r, R e 7 nel caso di onda incidente da un mezzo con impedenza
+intrinseca m, su un mezzo con impedenza intrinseca 72. Gli angoli 4 e @ sono rispettivamente gli
+‘angoli di incidenza e di trasmissione.
+
+dove si è applicata la relazione 0, = 0;, in accordo con la legge della riflessione di
+Snell. Il rapporto tra le ampiezze dei campi riflesso e incidente, |Ety/E'o|: è sempli-
+cemente uguale al modulo del coefficiente di riflessione Cy. Dunque
+
+Proprietà Incidenza normale Polarizzazione Polarizzazione
+9 =%=0 idicolare tel:
+Ri=|Paf, (877) o =— —
+Coefficiente pe Rom = T0088 = m COS A y= cosi n COSA,
+e analogamente nel caso di polarizzazione parallela si ha mim me cosGi+m cost "1.608 & +7: C086
+Coefficiente = PR rie Em cosi ne 2rp 00s 6
+Pi 2 di trasmissione mt+m a COS 8; + mi COS O Tz COS & + m così
+R= E? Ty. (8.78) Relazi 4
+_ palazione 7=14F m=1+0 ysl) ESA
+La trasmittività T, che in ottica è anche chiamata trasmittanza, è definita come il rap- È A R=IDÈ Ri =D Ay = E
+porto tra la potenza trasmessa e la potenza incidente: Riflettivita an ue
+a, 0088;
+crises T= m(2) T= [n Pesi hele
+Trasmittivita & sell Tose
+3 ri = Pi - Hol m Acosh | “(2 si) (8.798) = Teese macost
+Lesa = > 3 .
+PLEA? im Acos 6; Te cos 6; Relazione T=1-R T.=1-R T=1-R
+Pp m.c0s 8 traReT
+T= sb = Iq ( SE). (8.796) 0 a ; (mesi ai
+Pi ™ cos 8; Note: (1) sin & = V/zse1/ yee sin 6; (2) 1m = Ver: (8) ne = Vn2/e2: (4) per i mezzi non magnetici si
+
+ha che mo/m = n/a.
+
+[PAG 178]
+i 340
+
+Figura 8.19
+Grafici di Ry e T per
+
+un'interfaccia aria-vetro.
+
+Capitolo 8 — Riflessione e trasmissione delle onde e ottita geometrica
+
+t
+
+Riflettività Ry e
+trasmittività 7),
+
+Esempio 8.7. Fascio di luce
+
+Un fascio di luce di potenza pari a 5 W con.sezione trasversa circolare in aria incide sul-
+l’interfaccia piana di un mezzo dielettrico con indice di rifrazione pari a 5. Se l’angolo
+di incidenza è 60° e l'onda incidente ha polarizzazione parallela, si ricavino l'angolo di
+trasmissione e le potenze trasportate dai fasci riflesso e trasmesso.
+
+Soluzione Dalla (8.56) si ha
+sino, = 2 sind, = 4. sin 60° = 0.17
+na
+oppure
+Or = 10°.
+
+Con e2/8; = n/n? = (5)’ = 25, il coefficiente di riflessione per la polarizzazione pa-
+rallela si può calcolare applicando la (8.68) come segue:
+
+_ —(€2/e1) cos 8; + 4/(52/61) — sin? 8;
+
+n (€2/61) cos 8; + 4/ (€2/e1) — sin’ 6;
+_ 225 008 60° + V25 — sin” 60°
+
+"2560s 60° + V25 — sin’ 60°
+
+Pertanto la potenza riflessa e la potenza trasmessa sono
+Pi = PijFyl? = 5(0.435) = 0.95 .W,
+Pi = PL - Pj = 5-—0.95 = 4.05 W.
+
+= -0.435.
+
+8.6 Ottica geometrica
+
+Nelia discussione precedente, si è esaminato il comportamento in riflessione e in ri-
++ frazione di onde elettromagnetiche piane e uniformi che incidono su interfacce piane
+tra mezzi diversi. Nella pratica, l’interazione della radiazione con la materia può ri-
+guardare onde che non sono né piane né uniformi. Inoltre, gli oggetti con cui ie onde
+interagiscono possono avere qualsiasi forma e dimensione. Come si possono dunque
+sfruttare i risultati ottenuti nei paragrafi precedenti quando si ha a che fare con situa-
+zioni pratiche? La risposta dipende principalmente dalla dimensione dell’oggetto e
+
+5 <
+
+8.6 Ottica geometrica
+
+dal grado di curvatura della sua superficie, considerati in rapporto alia lunghezza
+d’onda della radiazione incidente. Per descrivere l’interazione della radiazione con la
+materia sono disponibili due approcci fondamentali: il metodo dell'ottica fisica e il
+metodo dell’ottica geometrica. Nell’ ottica fisica, anche nota come ottica ondulatoria,
+l’onda viene caratterizzata dal punto di vista matematico mediante tutti i propri attri-
+buti: ampiezza, fattore di fase e vettore di polarizzazione. Al contrario nell’ottica
+geometrica, anche nota come ottica a raggi, l’onda è rappresentata mediante un rag-
+gio che indica la direzione in cui siipropaga l’energia dell'onda. Nell’ottica geometri-
+ca non si tiene conto esplicitamente né delia fase né della polarizzazione dell’onda,
+pertanto l’ottica geometrica è un’approssimazione a raggi dell’ottica fisica. Pur essen-
+do superiore dal punto di vista matematico e avendo.una formulazione che discende
+direttamente dalle equazioni di Maxwell, il metodo dell’ottica fisica è più complicato
+da applicare rispetto al metodo dell’ottica geometrica, pertanto l’ottica fisica si usa
+quando l’ottica geometrica non è applicabile o quando si desidera un grado di accura-
+tezza superiore. Jn generale, il metodo dell'ottica geometrica produce risultati abba-
+stanza accurati quando la dimensione dell'oggetto illuminato dall’onda elettroma-
+gnetica è molto maggiore della lunghezza d'onda A. Inoltre, è richiesto che le curva-
+ture delle superfici dell’oggetto siano relativamente liscie in rapporto a A.
+Considerando le onde come raggi di energia, l’ottica geometrica non tiene conto
+delle differenze di fase tra onde diverse che giungono insieme in un dato punto nello
+spazio. Di conseguenza, gli effetti di interferenza dovuti alla somma e differenza tra
+le fasi non possono essere previsti dall’ottica geometrica. Un altro fenomeno ondula-
+torio trascurato dall’ottica geometrica è la diffrazione, cioè la deviazione della dire-
+zione di propagazione dell’onda dalla rappresentazione a segmenti usata nell’ottica
+geometrica. La diffrazione rende conto della “‘deviazione”’ subita dalle onde attomo
+ai bordi degli oggetti. Per spiegare il significato della diffrazione, si considerino le tre
+situazioni descritte in Figura 8.20. Nella situazione (a) un’onda piana incide su una
+barriera opaca con un'apertura circolare il cui diametro d è molto grande rispetto alla
+lunghezza d’onda A. A parte alcuni piccoli effetti di bordo, l’onda che emerge dall’a-
+pertura continua a muoversi in linea retta. Questa situazione rispetta le condizioni
+dell’ ottica geometrica, per le quali le dimensioni di un’interfaccia riflettente all’inter-
+no di un mezzo trasparente o, al contrario, le dimensioni di un’apertura in un’inter-
+faccia opaca, devono essere molto maggiori di A. Le situazioni in Figura 8.20(b) e (c)
+sono relative ad aperture con diametri rispettivamente confrontabili e inferiori a A.
+
+opaco
+
+EHI
+
+d>AI
+
+(a) (b)
+
+©
+
+3I
+
+Figura 8.20 Un’onda piana di lunghezza d'onda A incide su uno schermo opaco con un’apertura di diametro 4. L'onda che
+emerge dall’apertura (a) mantiene la sua direzione originaria se d > A, (b) viene diffratta dall’apertura quando d = Ae (c) si
+
+comporta come un'onda sferica che emana da una sorgente puntiforme quando d < A.
+
+[PAG 179]
+342
+
+Figura 8.21
+
+Il fenomeno di formazione
+dell’immagine a causa
+della riflessione da parte
+di uno specchio piano si
+può rappresentare (a) in
+termini di fronti d’onda
+sferici oppure (b) in
+termini di raggi di luce che
+emanano dalla sorgente
+nel punto 0.
+
+Capitolo 8 — Riflessione e trasmissione delle ande e ottica geometrica
+
+In entrambi i casi si dice che l’onda incidente viene diffratta dall'apertura: di conse-
+guenza l’onda che emerge non è più un’onda piana. Per tenere conto dell’interferen=
+za e della diffrazione è necessario utilizzare la rappresentazione delle onde elettroma-
+gnetiche data dall’ottica fisica. Si noti che il termine “‘ottica’’ compare nelle diciture
+“ottica geometrica” e ‘‘ottica fisica” per ragioni storiche e non implica che questi
+metodi siano limitati ai sistemi ottici: i metodi sono applicabili su tutta l'estensione
+dello spettro elettromagnetico.
+
+I due paragrafi che seguono riguardano i fondamenti dell'ottica geometrica, con
+particolare interesse per l’uso di specchi e lenti come strumenti ottici.
+
+8.7 Immagini formate da specchi
+
+Gli specchi si usano in tutto lo spettro elettromagnetico, comprese le bande dei raggi
+X, dell’ultravioletto, del visibile, dell’infrarosso e delle radiocomunicazioni. Uno
+specchio viene di solito costruito ricoprendo un substrato dielettrico; per esempio il
+vetro, con un sottile strato di argento o di alluminio. Uno specchio perfetto è una su-
+perficie perfettamente conduttiva con riflettività pari a 1, ed è analogo a un cortocir-
+cuito all’estremità di una linea di trasmissione. In questo paragrafo si studierà la for-
+mazione delle immagini da parte sia di specchi piani che di specchi sferici.
+
+8.7.1 Immagini formate da specchi piani
+
+La sorgente puntuale situata nel punto O in Figura 8.21 si trova a una distanza s, det-
+ta distanza oggetto; dal lato frontale di uno specchio. La sorgente irradia onde sferi-
+che, che si possono rappresentare mediante fronti d’onda, come descritto in Figura
+8.21(a), o in maniera equivalente mediante raggi di luce, come in Figura 8.21(b). Per
+un osservatore che si trovi nella posizione indicata in figura, i raggi riflessi sembrano
+provenire dal punto J posto a distanza s’, detta distanza immagine, dal lato posteriore
+dello specchio. L'immagine è detta immagine reale se i raggi di luce riflessa passano
+effettivamente per il purito immagine, mentre viene chiamata immagine virtuale se i
+raggi non attraversano il punto immagine ma sembrano divergere da esso. In questo
+caso, l’immagine formata dallo specchio piano è un’ immagine virtuale.
+
+Specchio
+(a) (b)
+
+Considerando un oggetto autoilluminato o illuminato dall’estemo come se fosse .
+
+composto da un grande numero di sorgenti puntuali, si può estendere il processo di
+formazione dell’immagine di una sorgente puntiforme in modo da generare l’imma-
+
+1 gine dell’oggetto illustrato in Figura 8.22. Per determinare dove si forma l’immagine
+è necessario seguire almeno due raggi di luce nel loro percorso di riflessione da parte
+dello specchio. Il punto P’, che è l’immagine del punto P, si trova all’intersezione del
+raggio orizzontale diretto verso lo specchio, che si riflette su se stesso, e del raggio
+obliquo che si riflette nel punto B sulia superficie dello specchio. Dal momento che i
+triangoli PAB e P'4B sono congmenti,s = > eh =f.
+
+8.7 Immagini formate da specchi
+
+Specchio
+
+8.7.2 Immagini formate da specchi sferici
+
+Uno specchio sferico è un segmento di sfera dipinto 0 ricoperto con un materiale alta-
+mente riflettente: è detto concavo quando i raggi di luce vengono riflessi dalla sua su-
+perficie interna, come in Figura 8.23(a), mentre è detto convesso quando la riflessio-
+ne ha luogo sulla sua superficie esterna, come in Figura 8.23(b). Il centro della sfera
+che contiene lo specchio sferico è chiamato centro di curvatura e viene indicato dal
+punto C, e il raggio R è detto raggio di curvatura. L'asse principale dello specchio è
+il segmento che collega il punto C ai punto V, che è il centro, o vertice, del segmento
+sferico. In Figura 8.23(a), all’oggetto di altezza h e situato alla distanza oggetto s cor-
+
+{b) Specchio convesso
+
+343
+
+Figura 8.22
+
+La posizione e
+l’orientazione
+dell'immagine sono
+definite dall’ottica a raggi
+e dalla legge della
+riflessione di Snell,
+
+Figura 8.23
+Formazione
+dell'immagine da parte di
+(a) uno specchio concavo
+€ (b) uno specchio
+convesso.
+
+[PAG 180]
+344
+
+IA
+
+Capitolo 8 — Riflessione e trasmissione delle onde e ottica geometrica
+
+risponde un’immagine reale capovolta di altezza #' alla distanza immagine s’. Dal
+
+triangolo maggiore che comprende l’angolo @ si ottiene la relazione tan @ = h/s, ~
+
+mentre dal triangolo minore che comprende l’angolo @ si ottiene tan @ = —#/S, in
+cui il segno negativo significa che l’immagine è capovolta, in quanto 4’ è negativa.
+L’ingrandimento trasversale dello specchio è definito come il rapporto tra ft e h:
+
+Hs
+-=. (8.84)
+
+run
+
+Dai due triangoli simili che comprendono l’angolo # si ottiene
+
+h hi
+=— = —- .85)
+tan Sok Rd (8.85)
+Combinando la (8.84) e la (8.85) si ottiene l’eguazione dello specchio
+1 1 2
+—+==. (8.86
+s + gy oR (8.86)
+
+Quando l’oggetto ha una distanza dallo specchio molto grande rispetto a R, lo si può
+considerare all’infinito, nel qual caso 1/s ~ 0-¢ s' ~ R/2. Pertanto il punto immagi-
+ne si trova a metà strada tra il centro di curvatura C e il centro dello specchio V, co-
+me descritto in Figura 8.24. In tal caso, il punto immagine F è chiamato fuoco e la di-
+stanza immagine f è detta distanza focale dello specchio. Perciò
+
+rod, (8.87)
+
+e l’equazione dello specchio si può riscrivere in funzione di f come
+
+A un oggetto all’infinito corrisponde un’immagine nel fuoco e, allo stesso modo, a
+un oggetto nel fuoco corrisponde un’immagine all’infinito.
+
+Tabella 8.3 Convenzioni sui segni per gli specchi sferici.
+Grandezza Segno Condizione
+
+se l'oggetto è dal lato frontale delto.specchio (oggetto reale)
+
+se l'oggetto è dal lato posteriore dello specchio (oggetto virtuale)
+
+se l'immagine è dal lato frontale dello specchio (immagine reale)
+
+se l'immagine è dal lato posteriore dello specchio (immagine virtuale}
+se C è dal lato frontale dello specchio (concavo)
+
+se C è dal lato posteriore dello specchio (convesso)
+
+s
+s
+s
+S
+
+feR
+
+fer
+
+ttt tit
+
+Note: (1) li fato frontale di uno specchio è definito come il lato dal quale la luce si avvicina allo spec-
+chio, a prescindere dalla sua forma. (2) Un oggetto non può essere virtuale nella riftessione da parte di
+uno specchio singolo, ma la sua immagine, se è virtuale, può diventare un oggetto virtuale per riflessio-
+ni da parte di specchi aggiuntivi.
+
+La (8.84) e la (8.88) si applicano sia agli specchi concavi che a quelli convessi, pur-
+ché si rispettino le convenzioni sui segni elencate in Tabella 8.3. Le convenzioni sui
+segni fanno riferimento a due regioni di spazio: (1) il Jato frontale dello specchio,
+che è la regione in cui esistono effettivamente i raggi di luce e (2) il lato posteriore,
+
+8.7 Immagini formate da specchi 345
+
+Figura 8.24
+
+A una sorgente
+puntiforme all’infinito
+corrisponde un’immagine
+nel fuoco F dello
+specchio. La distanza
+focale èf = R/2.
+
+che è ia regione in cui si formano le immagini virtuali degli oggetti reali. Per entram-
+bi gli specchi in Figura 8.23(a) e (b), i lati frontali sono quelli a sinistra degli specchi.
+Si noti che f è positiva per gli specchi concavi e negativa per quelli convessi.
+
+Tabella 8.4 immagini di oggetti reali formate da specchi sferici.®
+
+Specchio concavo
+
+Oggetto Immagine
+Posizione Tipo Posizione Orientazione —Dimensione relativa
+2f<s<oo Reale aos >t Capovolta Rimpicciolita
+s=2f Reale $=2f Capovolta Uguale
+f<s<2f Reale co > s! > 2f Capovolta Ingrandita
+sef S=0
+s<f Virtuale |s|>s Diritta Ingrandita
+Specchio convesso
+Oggetto Immagine
+Posizione Tipo Posizione Orientazione —Dimensione relativa
+Ovunque Virtuale |s'| < |fl,s > Is] Diritta Rimpicciolita
+
+* Adattata da E. Hecht, Optics, seconda edizione, Addison-Wesley Publishing Co., 1990,
+
+L’ingrandimento o rimpicciolimento e l’orientazione diritta o capovolta dell’immagi-
+ne dipendono dal tipo di specchio, concavo 0 convesso, e dalla posizione dell’ogget-
+to relativamente ai centro dello specchio. Queste proprietà sono riassunte in Tabella
+8.4 per varie posizioni dell'oggetto.
+
+Esempio 8.8 immagine formata da uno specchio concavo
+Un fiore è posto di fronte a uno specchio concavo con distanza focale di 15 cm, a 20
+em di distanza da esso. Si localizzi e si descriva l'immagine.
+
+Soluzione Sostituendo s = 20 cme f = 15 cm nella (8.88) si ha
+
+ERE
+20" 8 15°
+da cui si ottiene s’ = 60 cm. Secondo la (8.84), l'ingrandimento trasversale è
+Me 2
+s 15
+
+Il modulo di Mf significa che l’immagine viene ingrandita di un fattore 4 e il segno ne-
+gativo indica che l’immagine è capovolta.
+
+[PAG 181]
+TETTI
+
+Figura 8.25
+
+Lenti convesse e concave
+di varie forme. I raggi di
+curvatura sono indicati nel
+caso di illuminazione dal
+lato sinistro della lente. Le
+lenti convesse hanno
+distanza focale positiva,
+mentre le lenti concave
+‘hanno distanza focale
+negativa.
+
+Capitolo 8 ~ Riflessione e trasmissione delle onde e ottica geometrica
+
+8.8 Immagini formate da lenti sferiche
+
+Le lenti si usano comunemente per formare le immagini negli strumenti ottici, come
+macchine fotografiche, telescopi e microscopi, ma il loro uso si estende anche ad ap-
+plicazioni non legate alla visione e a molte parti dello spettro elettromagnetico. Una
+lente è caratterizzata da tre proprietà: la dimensione, la forma e l’indice di rifrazione.
+Questa trattazione sarà limitata all’esame delle lenti sottili con superfici piane o sferi-
+che, come quelle descritte in Figura 8.25. Per ciascuna lente, i segni dei raggi di cur-
+vatura R, e Rp delle due superfici sono conformi alle convenzioni che saranno discus-
+se in seguito e sono riassunte in Tabella 8.5. Le lenti convesse, dette anche /enti con-
+vergenti 0 positive, sono più spesse al centro che alle estremità. Al contrario, le lenti
+concave, altrimenti dette lenti divergenti 0 negative, sono più strette al centro che alle
+estremità.
+
+Tabella 8.5 Convenzioni sui segni per le superfici rifrangenti sferiche e te lenti sottili.
+
+Grandezza Segno Condizione
+s + se l'oggetto è dal lato frontale della superficie (oggetto reale)
+s - se l'oggetto è dal lato posteriore della superficie (oggetto virtuale)
+gv + se l'immagine è dal lato posteriore della superficie (immagine reale)
+s - se l'immagine è dal lato frontale della superficie (immagine virtuale)
+R + se C è dal lato posteriore della superficie
+R - se C è dal lato frontale della superficie
+f + lente convessa
+f - lente concava
+
+Note: (1) Il lato frontale di una superficie è definito come il fato dal quale la luce si avvicina alla superfi-
+cie. (2) Un oggetto non può essere virtuale nella rifrazione da parte di una superficie singola, ma la sua
+immagine, se è virtuale, può diventare un oggetto virtuale per la rifrazione da parte di un’altra superfi-
+sie,
+
+Il processo di formazione dell’immagine da parte di una lente comporta la rifrazione
+su entrambe le sue superfici. Per fare un primo passo verso la comprensione del pro-
+cesso, si consideri la rifrazione sull’interfaccia sferica tra un mezzo con indice di ri-
+frazione ny e un secondo mezzo con indice di rifrazione n2, come descritto in Figura
+8.26. Le onde sferiche irradiate dalla sorgente puntuale posta in O si rappresentano
+mediante raggi che emanano radialmente dalla sorgente nella direzione del flusso di
+energia. Quando un raggio incontra un punto sull’interfaccia sferica, si riflette e si ri-
+frange secondo le leggi di Snell come se la superficie facesse parte di un piano infini-
+to tangente all'interfaccia in quel punto. Dell’energia complessiva che giunge nel
+punto J, la maggior parte è dovuta a raggi incidenti sulla regione centrale delia lente.
+
+|. Ri>0
+2 RI>O R= N R3>0
+— Rr<
+R2<0 2 Ry < Ry
+. , E ANO-CONVI Concave-
+Biconvessa |Piano-convessa convessa
+
+Ri>0
+R, <0 Ri=o !
+R3>0 R3>0 R>0
+2 2 Ri>Ra
+Convesso-
+
+PIUENZO) pPuWT<ZO0
+
+Bicencava |Piano-concava
+concava
+
+8.8 Immagini formate da lenti sferiche
+
+I raggi che partono dalla sorgente e si rifrangono in punti all’intemo della regione
+centrale della superficie sferica sono detti raggi parassiali. Questi raggi formano
+un immagine della sorgente in un singolo punto, chiamato punto immagine. Il pro-
+cesso di formazione dell?immagine si può dimostrare considerando uno qualsiasi di
+questi raggi parassiali. Un tale raggio è quello che forma un angolo ¢ rispetto alla di-
+rezione orizzontale in Figura 8.27. Nel punto A, dalla legge della rifrazione di Snell
+Si ottiene .
+
+m sin 8; = mn sin 62, (8.89)
+
+dove @; è Pangolo compreso tra OA e la normale alla superficie sferica nel punto 4,
+che ha origine nel centro di curvatura C della superficie sferica. Sulla regione centra-
+le della superficie sferica, gli angoli 0, e 8, sono sufficientemente piccoli da consenti-
+re l’uso delle approssimazioni sin @, = 6; e sin@, ~ 4. Dunque la (8.89) si può ri-
+serivere come
+
+70, & 1289. (8.90)
+
+Dalla geometria dei triangoli OAC e AIC si nota che l’angolo esterno 6, è uguale alla
+somma degli angoli ¢ e @, e analogamente l’angolo a è uguale alla somma degli an-
+goli @, e #8. Pertanto
+=¢+4, (8.91a)
+a=0+8. (8.91b)
+
+Applicando queste relazioni in sostituzione di 91 e 42 nella (8.90), si ha
+mo + mB = (mm ~ m)a. (8.92)
+L’approssimazione parassiale considerata in precedenza si può applicare nuovamente
+per consentire di approssimare tan @ ~ @ per gli angoli ¢, @ e #. Dunque
+oxtng=2, (8.93a)
+
+awtma=2, (8.93b)
+
+~
+
+Artang=t, (8.930)
+
+HI
+
+Fronte d'onda Figura 8.26
+
+Le onde sferiche irradiate
+da una sorgente in O
+vengono rifratte
+dall’interfaccia sferica del
+mezzo 2, comma > Mi.
+
+[PAG 182]
+348
+
+Figura 8.27
+Rifrazione dei raggi su-
+un'interfaccia sferica.
+
+Figura 8.28
+Formazione
+dell'immagine da parte di
+una lente sottile.
+
+Capitolo 8 - Riflessione e trasmissione delle onde e ottica geometrica
+
+dove s es’ sono Îa distanza della sorgente (o distanza oggetto) e la distanza immagi-
+ne e R è il raggio di curvatura della superficie sferica. Sostituendo queste relazioni
+nella (8.92) e dividendo tutti i termini per y si ha
+
+mono n_n
+
+sty (interfaccia sferica singola) (8.94)
+
+Dal momento che, per una distanza fissa s dalla sorgente, l’immagine s’ è indipen-
+dente dall'angolo ¢ che il raggio forma con l’asse, tutti i raggi parassiali si focalizza-
+no nel punto immagine /. °
+
+AI contrario degli specchi, nel cui caso le immagini reali si formano sullo stesso la-
+to dell'oggetto, con una superficie rifrangente le immagini reali si formano sul lato
+opposto a quello in cui è situata la sorgente di energia. Le convenzioni dei segni per
+le superfici rifrangenti sferiche sono date in Tabella 8.5; esse saranno applicate in se-
+guito anche alle lenti sottili. .
+
+Si estenderanno ora i risultati al caso di una lente con due superfici sferiche i cui
+raggi di curvatura sono Ri è R2, come descritto in Figura 8.28. La lente ha indice di
+rifrazione n; ed è circondata da un mezzo con indice di rifrazione nm. Il processo di
+formazione dell’immagine si può analizzare in due modi diversi, che saranno detti
+processo effettivo e processo equivalente. Se si pone un oggetto o una sorgente nel
+punto O.in Figura 8.28, i raggi emanati si rifrangeranno sulla prima superficie della
+lente, si propagheranno fino alla seconda superficie e h si rifrangeranno nuovamente.
+Tutti i raggi parassiali finiscono per intersecarsi nel punto immagine J; per quanto
+ciò sia quello che effettivamente si verifica, il perché ciò avvenga o il modo di mette-
+re in relazione facilmente la distanza immagine s) con la distanza oggetto s1 non so-
+no concetti immediatamente ovvi.
+
+Superficie S, con raggio R:
+Superficie 5, con raggio Ry Di pas n > meget
+
+8.8 immagini formate da fenti sferiche
+
+Le risposte a queste domande si possono ricavare mediante un processo equivalente
+di formazione dell’immagine, che divide gli effetti di rifrazione sulle due superfici
+della lente in due passi distinti. Considerando solo la prima superficie e trattandola
+come-se fosse l’interfaccia tra il mezzo che contiene l’oggetto e-un mezzo largamente
+esteso con indice di rifrazione r, cioè lo stesso modo in cui si è trattata in preceden-
+za l’interfaccia in Figura 8.27, l’oggetto situato nel punto O in Figura 8.29 produce
+un’immagine /1, situata a una distanza 5’ dalla superficie S,. A causa della scelta fat-
+ta riguardo alla posizione dell’oggetto in Figura 8.29, l’immagine J, è virtuale.
+
+La relazione che lega le distanze sy e sj si ottiene dalla (8.94) sostituendo m con
+Pim € Nz CONN}?
+
+fim Ri MN
+
+sos Ri
+
+dove Ri è il raggio di curvatura della superficie S;. Il procedimento si ripete per la su-
+perficie Ss considerando l’immagine / come un oggetto virtuale alla distanza s7 dal-
+la superficie Sy. In tal caso si considera S; come l'interfaccia tra un mezzo con indice
+di rifrazione n; a sinistra, che contiene l’oggetto J, e un mezzo con indice di rifrazio-
+ne nn @ destra, dunque bisogna invertire tra loro n; € 1m all’interno della (8.94). Di
+conseguenza, nel caso della superficie S l’immagine finale £ alla distanza s) è lega-
+taaso da
+
+(8.95)
+
+Di Im Pin =
+
+so Sì © R,
+Dal punto di vista della superficie S2, l'oggetto J; si trova sul lato frontale, cioè il lato
+da cui provengono i raggi emanati da‘). Dunque, per le convenzioni sui segrii la di-
+stanza s2 deve essere positiva, cioè 57 = |s2|. Quando si applicano le convenzioni sui
+segni as, la distanza immagine dovuta alla superficie Sì, si ricava che sj deve essere
+negativa in quanto l’immagine si forma sullo stesso lato dell’oggetto O, perciò
+sj = —|s1|. Dalla Figura 8.29 si ha
+
+jo] = [144
+
+(8.96)
+
+(8.97)
+
+dove f è lo spessore della lente. In virtù del fatto che sj è negativa e sz è positiva, ne
+consegue che :
