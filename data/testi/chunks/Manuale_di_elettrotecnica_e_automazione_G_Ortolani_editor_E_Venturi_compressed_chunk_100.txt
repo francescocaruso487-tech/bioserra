@@ -1,0 +1,968 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 100/116 ===
+Chars: 44,096 | Offset: 4,376,800
+
+ggiunge il valore impostato.
+3.2.4  Pulsanti
+I pulsanti sono apparecchiature elettriche, caratterizzate da una sola posizione nella 
+quale rimangono in assenza di forze esterne, utilizzate in genere per il comando a distanza; 
+hanno la funzione di cambiare, quando sono azionati, lo stato di un circuito, determinando 
+il funzionamento o meno di altre apparecchiature elettriche. Possono essere di vari tipi e, 
+a seconda della funzione svolta in un circuito, sono corredati da targhette con diciture 
+diverse, come per esempio marcia, arresto, salita, discesa, sinistra, destra ecc.
+I pulsanti sono in genere costituiti dalle seguenti parti:
+
+[PAG 1960]
+XIX-88
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+–  una parte meccanica, chiamata operatore, caratterizzata da forme ed esecuzioni 
+diverse, per esempio a chiave, a fungo, con attuattore protetto o sporgente (Fig. XIX.3.5); 
+–  una parte elettrica, chiamata blocchetto di contatti, con uno o più elementi di contatto, 
+montata sul corpo in posizione affiancata oppure sovrapposta; gli elementi di contatto 
+possono avere posizione aperta o chiusa;
+–  una targhetta che deve riportare in modo chiaro la descrizione della funzione espletata 
+dal pulsante.
+Fig. XIX.3.5  Pulsanti con vari tipi di attuatore.
+Secondo la normativa CEI 17 - 45 i pulsanti devono avere una tensione di isolamento 
+di 660 V e una corrente nominale di servizio continuo di 12 A; possono essere utilizzati 
+sia in corrente alternata che in corrente continua per il comando di elettromagneti (catego-
+rie di impiego AC11 e DC11). Esistono in commercio anche pulsanti luminosi costituiti, 
+oltre che dalle parti precedentemente elencate, anche da una lampadina a filamento o al 
+neon. In questo caso le norme prescrivono che non possano essere usati per comandare 
+l’arresto di emergenza. 
+In base alla tabella 2 della norma CEI 44 - 5 la scelta del colore dei pulsanti deve 
+essere effettuata secondo determinati  criteri (Tab. XIX.3.1).
+In particolare l’art. 10.2.1 della norma CEI 44 - 5 (EN 60204- 1) recita “I pulsanti 
+devono essere conformi al codice colori della Tab 2 (Tab. XIX.3.1). I colori per i pulsanti 
+di avviamento sono il bianco, grigio, o il nero con una preferenza per il bianco. È 
+ammesso anche il verde. Il rosso non deve essere usato. Il colore rosso deve essere usato 
+per i pulsanti di arresto di emergenza. I colori per i pulsanti di arresto sono il nero, il gri-
+gio, il bianco, con una preferenza per il nero. È ammesso anche il rosso. Il verde non deve 
+essere usato. Il bianco, il grigio, il nero sono i colori preferiti per i pulsanti che provocano 
+alternativamente l’avviamento e l’arresto. I colori rosso, giallo o verde non devono essere 
+usati. Il bianco, il grigio, il nero sono i colori preferiti per i pulsanti che provocano un fun-
+zionamento quando sono premuti e un arresto quando sono rilasciati (per esempio azione 
+mantenuta). I colori rosso, giallo o verde non devono essere usati. Il verde è riservato per 
+funzioni che indicano condizioni normali o di sicurezza. Il giallo è riservato per funzioni 
+che indicano attenzione o condizioni anormali. Il blu è riservato per funzioni di significato 
+obbligatorio. I pulsanti di ripristino devono essere blu, bianchi, grigi o neri. Quando ven-
+gono utilizzati anche come pulsanti d’arresto/disinserzione vengono preferiti il binco, gri-
+gio o nero con una netta preferenza per il nero. Non deve essere utilizzato il verde.”
+La normativa prevede inoltre che se due pulsanti fanno parte di una pulsantiera, deb-
+bono essere posti in vicinanza reciproca; in particolare il pulsante di arresto o disinserzione 
+deve trovarsi sulla sinistra del pulsante di marcia o di inserzione, se la pulsantiera è di tipo 
+orizzontale; deve invece trovarsi sotto, se la pulsantiera è di tipo verticale. Se i pulsanti 
+sono tre e due di essi sono di marcia o di inserzione, il pulsante di arresto deve trovarsi col-
+locato nel mezzo. Per le funzioni di emergenza, arresto e disinserzione si deve usare esclu-
+sivamente un pulsante con il colore rosso; per le funzioni di inserzione e avviamento si usa 
+di preferenza un pulsante di colore verde, ma si consente anche l’utilizzo di pulsanti di 
+colore nero, grigio e bianco. Se si utilizzano pulsanti per funzioni secondarie, che svolgono 
+in alternanza comandi di avviamento e di arresto, questi devono avere un colore indicativo 
+grigio, nero o bianco (mai rosso o verde). Infine per funzioni di emergenza, con l’arresto sia
+
+[PAG 1961]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-89
+manuale sia automatico,  si devono utilizzare pulsanti con attuatore a forma di fungo e di 
+colore rosso.
+3.2.5  Lampade di segnalazione
+Le lampade di segnalazione vengono montate all’esterno delle apparecchiature, in 
+posizione tale da essere ben visibili a distanza; hanno la funzione di evidenziare lo stato di 
+funzionamento (presenza di tensione, macchina pronta, marcia, ecc.) o lo stato anomalo di 
+un’apparecchiatura o di un impianto (pressione o temperatura anomala, intervento dei 
+fusibili o delle protezioni termiche, ecc.).
+In base alla tabella 3 (Tab. XIX.3.2) della norma CEI 44-5 i colori delle gemme delle 
+lampade di segnalazione assumono determinati significati.
+Le lampade di segnalazione hanno la funzione di attirare l’attenzione dell’operatore 
+per avvisarlo di operazioni in svolgimento o di stati che necessitano un comando. In que-
+ste situazioni si assolve lo scopo utilizzando i colori verde, rosso, giallo e blu. Le lampade 
+di segnalazione che assolvono lo scopo di conferma o di cambio di situazione avranno 
+invece colore bianco, blu e, in certi casi, verde. 
+Quando sia ritenuto necessario è possibile impiegare delle luci intermittenti per 
+meglio evidenziare l’allarme, in particolare:
+–  per attirare l’attenzione;
+Tab. XIX.3.1  Codice colori per i pulsanti
+Colore
+Significato
+Spiegazione
+Esempi di applicazione
+Rosso
+Emergenza
+Azionare in caso di 
+condizione pericolosa o di 
+emergenza
+Arresto di emergenza
+Inizio della funzione di 
+emergenza
+Vedi articolo 10.2.1
+Giallo
+Anormale
+Azionare in caso di 
+condizione anormale
+Intervento per sopprimere una 
+condizione anormale
+Intervento per riavviare un 
+ciclo automatico interrotto
+Verde
+Sicurezza
+Azionare in caso di 
+condizione di sicurezza o per 
+preparare una condizione 
+normale
+Vedi art. 10.2.1
+Blu
+Obbligatorio
+Azionare in caso di 
+condizione che richiede 
+un’azione obbligatoria
+Funzione di ripristino
+Bianco
+Non viene 
+attribuito alcun 
+significato 
+specifico
+Per l’avvio generale delle 
+funzioni ad eccezione 
+dell’arresto di emergenza 
+(vedi nota)
+Avvio (preferenziale)
+Arresto
+Grigio
+Avvio
+Arresto
+Nero
+Avvio
+Arresto (preferenziale)
+Nota - Quando viene utilizzato un mezzo supplementare di codifica (per esempio, struttura, forma o 
+posizione) per l’identificazione degli attuatori a pulsante, lo stesso colore bianco grigio o nero può 
+essere utilizzato per varie funzioni (per esempio bianco per attuatori di avvio e arresto).
+
+[PAG 1962]
+XIX-90
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+–  per richiedere un’azione immediata;
+–  per indicare una discordanza tra il comando dato e lo stato reale dell’apparecchiatura; 
+per indicare un cambiamento in corso (intermittenza durante il periodo di transizione).
+É buona norma utilizzare lampade con innesto a baionetta e non a vite nelle applica-
+zioni dove sono presenti notevoli vibrazioni che determinerebbero lo svitamento della 
+lampada e la conseguente non segnalazione.
+3.2.6  Interruttori di finecorsa
+Gli interruttori di finecorsa, chiamati anche interruttori di posizione, coordinano, 
+insieme ad altri componenti di tipo elettrico, elettronico o meccanico, i limiti di sposta-
+mento di macchine o di parti mobili di macchine e il controllo di sequenze operative. Di 
+queste apparecchiature se ne occupano le norme CEI 17-31 e CEI 17-33.
+L’interruttore di finecorsa, sostanzialmente costituito da una testina operatrice com-
+pleta di contatti a scatto rapido o a scatto lento, può essere inserito in una scatola di prote-
+zione. Le testine operatrici inoltre possono essere ad azionamento rettilineo, angolare 
+oppure multidirezionale e, a seconda del particolare elemento che viene montato, possono 
+essere a pistoncino, a rotella, a fungo, a stelo flessibile ecc.
+3.2.7  Regolatori di livello
+I regolatori di livello svolgono la funzione di controllare e di regolare il livello di un 
+liquido in serbatoi, caldaie, pozzi o riempitrici.
+Esistono tre tipi di regolatori di livello: con interruttore a galleggiante, ad elettrodi e 
+Tab. XIX.3.2  Codice colori degli indicatori luminosi  
+Colore
+Significato
+Spiegazione
+Azione dell’operatore
+Esempi di applicazione
+Rosso
+Emergenza
+Condizioni pericolose
+Azione immediata per 
+trattare una condizione 
+pericolosa (per es. 
+azionando l’arresto 
+d’emergenza)
+Pressione/temperatura 
+fuori dai limiti di 
+sicurezza. 
+Caduta di tensione 
+Interruzione
+Oltrecorsa oltre la 
+posizione di arresto
+Giallo
+Anormale
+Condizione anormale;
+Condizione critica 
+imminente
+Controllo e/o intervento 
+(per es. ristabilendo la 
+funzione desiderata)
+Pressione/temperatura 
+superiore ai limiti 
+normali
+Sganciamento del 
+dispositivo di protezione
+Verde
+Normale
+Condizione normale
+Facoltativa
+Pressione/temperatura 
+entro i limiti normali
+Autorizzazione a 
+procedere
+Blu
+Obbligatorio
+Indicazione della 
+condizione che 
+richiede un’azione 
+dell’operatore
+Azione obbligatoria
+Istruzione per inserire 
+valori preselezionati
+Bianco Neutro
+Altre condizioni: può 
+essere usato ogni volta 
+che si ha un dubbio 
+sull’impiego dei colori 
+rosso, giallo, verde, blu
+Controllo
+Informazione generale
+
+[PAG 1963]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-91
+ultrasonico.
+L’interruttore a galleggiante rappresenta la soluzione meccanica del controllo di un 
+livello; il funzionamento si basa sugli spostamenti di un galleggiante posto nel liquido da 
+controllare. Il movimento del galleggiante, tra due punti di minimo e di massimo riempi-
+mento, aziona, mediante una corda o un’asta, uno o più contatti elettrici, determinando 
+una variazione di stato dell’impianto elettrico cui è collegato.
+Il regolatore di livello ad elettrodi non richiede galleggiante, ma funziona in base alla 
+resistività dei liquidi, rilevando il livello per mezzo di elettrodi. Il funzionamento del cir-
+cuito elettronico e del relè in uscita vengono determinati dalla presenza o assenza di 
+liquido tra l’elettrodo (o elettrodi) e la superficie metallica del serbatoio, funzionante da 
+elettrodo di massa.
+Il regolatore di livello ad  ultrasuoni funziona secondo il principio di emissione di un 
+fascio di ultrasuoni, per rilevare il livello di un liquido, di materiali solidi o in polvere; 
+non necessita, quindi, di contatto fisico con il materiale da controllare e può visualizzare il 
+livello misurato in metri o in percentuale.
+3.2.8  Interruttori di prossimità
+Gli interruttori di prossimità sono apparecchiature elettroniche utilizzate per rilevare 
+il transito di oggetti e, in base a questo controllo, per cambiare lo stato elettrico di un cir-
+cuito o di un ciclo di lavorazione.
+La corrispondenza normativa si ha nella CEI 17-53, mentre la CEI 17-75 ne caratte-
+rizza l’identificazione delle connessioni come da Tab. XIX.3.3.
+A differenza di altre apparecchiature, come ad esempio gli interruttori di finecorsa, gli 
+interruttori di prossimità non necessitano di alcun contatto fisico con gli oggetti da rilevare, 
+Tab. XIX.3.3  Identificazione delle connessioni degli interruttori di prossimità  
+Tipo
+Numero 
+ conduttori 
+o terminali
+Collegamento
+Tipo di corrente
+Colore conduttori o 
+numero terminale
+Non 
+polarizzato
+2
+In serie al carico
+Corrente continua o 
+corrente alternata
+qualsiasi colore tranne il 
+giallo/verde
+Polarizzato
+2
+In serie al carico
+Corrente continua
++ Marrone
+Blu
+Polarizzato
+3
+Alimentazione:
++ Marrone
+Blu
+Corrente continua
+Al carico:
+Nero
+Polarizzato
+4
+Alimentazione:
++ Marrone
+Blu
+Corrente continua
+Al carico:
+Nero per la chiusura
+Bianco per l’apertura
+Non 
+polarizzato
+2
+In serie al carico
+Corrente continua o 
+corrente alternata
+3 e 4 per la chiusura
+1 e 2 per l’apertura
+Polarizzato
+2
+In serie al carico
+Corrente continua
+Per il polo + terminale 1
+Per il polo 
+4 per la chiusura 
+2 per l’apertura
+Polarizzato
+4
+Alimentazione:
++ Terminale 1
+Terminale 3
+Corrente continua
+Al carico:
+4 per la chiusura 
+2 per l’apertura
+
+[PAG 1964]
+XIX-92
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+non hanno parti in movimento e possono effettuare un numero di manovre praticamente infi-
+nito. Queste caratteristiche li rendono i mezzi più idonei da impiegare quando la cadenza 
+di rilevamento è elevata, quando l’ambiente esterno è particolare (presenza di agenti chimici, 
+umidità, polveri ecc.), oppure quando è necessario rilevare oggetti appena verniciati.
+Esistono vari tipi di interruttori di prossimità (induttivo, capacitivo, a ultrasuoni, foto-
+elettrico) che si diversificano ulteriormente in base all’alimentazione (in corrente conti-
+nua o in alternata) e in base alla forma (cilindrici, piatti, in miniatura).
+Gli interruttori di prossimità vengono utilizzati nei reparti di confezionamento, imbal-
+laggio, nastri trasportatori, oppure sono installati su macchine utensili, macchine per 
+l’assemblaggio e sulla maggior parte dei sistemi automatizzati.
+3.2.9  Fotocellule
+Le fotocellule sono apparecchiature elettroniche che, mediante un emettitore e un 
+ricevitore, controllano, rilevano, confermano e misurano un ciclo di lavorazione. Si diver-
+sificano a seconda dell’alimentazione (in corrente continua o in corrente alternata), del 
+valore di detta tensione, della loro forma costruttiva (fotocellule in miniatura, compatte, a 
+forcella, cilindriche ecc.), del tipo di funzionamento (fotocellule a riflessione con catari-
+frangente, reflex, di sbarramento) e del tipo di tecnologia impiegata (fotocellule laser, let-
+tura e discriminazione colore, a luce modulata, a fibre ottiche). Si differenziano inoltre in 
+funzione della distanza di rilevamento.
+Caratterizzano normalmente una fotocellula i seguenti parametri:
+–  Angolo direzionale: Definisce il campo angolare all’interno del quale la fotocellula 
+può funzionare. Questa caratteristica, prerogativa delle fotocellule a riflessione e a sbarra-
+mento, pregiudica il buon allineamento dell’asse ottico, se l’angolo è troppo ristretto, 
+mentre se l’angolo è troppo ampio, la fotocellula può subire delle interferenze da parte di 
+altre fotocellule ubicate nelle adiacenze. Occorre trovare quindi un giusto equilibrio per 
+una buona taratura.
+–  Tipo di impulso: Le fotocellule che funzionano secondo il meccanismo impulso-buio 
+emettono il segnale quando il fascio luminoso viene interrotto oppure oscurato; quelle 
+invece che funzionano secondo il meccanismo impulso-luce emettono il segnale quando il 
+fascio sensibilizza il ricevitore.
+–  Distanza di rilevamento: È la distanza all’interno della quale la fotocellula rileva un 
+determinato oggetto e definisce la massima distanza tra emettitore e ricevitore, tra fotocel-
+lula e catarifrangente e tra fotocellula e oggetto da rilevare rispettivamente per fotocellule 
+a sbarramento, a riflessione e reflex.
+Concorrono infine a caratterizzare la scelta di una fotocellula la distanza differenziale, 
+il grado di protezione, la sua resistenza alle vibrazioni e agli urti, la temperatura ambiente ecc.
+3.3  Apparecchi di protezione
+Gli apparecchi di protezione sono dispositivi che servono per proteggere le apparec-
+chiature e il carico dai cortocircuiti e dai sovraccarichi. Si definiscono quindi apparecchi 
+di protezione quegli elementi atti ad evitare che si producano danni irreparabili negli 
+impianti elettrici, dovuti a correnti di sovraccarico e di cortocircuito. Le norme da consul-
+tare al riguardo sono le CEI:
+–  CEI 23-3/1 del 2004 - Interruttori automatici per la protezione dalle sovracorrenti 
+per impianti domestici e similari. Parte 1: Interruttori automatici per funzionamento in 
+corrente alternata. CEI 23-3/1;V1 del 2006 CEI 23-3/1;V2 del 2008.
+–  CEI 23-3/2 del 2007 - Interruttori automatici per la protezione dalle sovracorrenti 
+per impianti domestici e similari. Parte 2: Interruttori per funzionamento in corrente alter-
+nata e in corrente continua.
+
+[PAG 1965]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-93
+–  CEI 32-1 del 2007 - Fusibili a tensione non superiore a 1.000 V per corrente alter-
+nata e a 1.500 V per corrente continua. Parte 1: Prescrizioni generali.
+–  CEI 32-3 del 2007 - Fusibili a tensione superiore a 1000 V. Parte 1: Fusibili limita-
+tori di corrente 
+–  CEI 32-6/1 del 2007 - Fusibili miniatura. Parte 1: Definizioni per fusibili miniatura 
+e prescrizioni generali per cartucce di fusibili miniatura.
+–  CEI 32-6/2 del 2004 - Fusibili miniatura. Parte 2: Cartucce.
+–  CEI 32-6/3 del 1997 - Fusibili miniatura. Parte 3: Cartucce per fusibili sub-minia-
+tura.
+–  CEI 32-6/3;V1 del 2004 - Fusibili miniatura. Parte 3: Cartucce per fusibili sub-
+miniatura.
+–  CEI 32-6/4 del 2006 - Fusibili miniatura. Parte 4: Cartucce modulari universali 
+(UMF). Tipi di montaggio in superficie e attraverso foro.
+–  CEI 32-6/5 del 1998 - Fusibili miniatura. Parte 5: Guida per la determinazione della 
+qualità delle cartucce per fusibili miniatura.
+–  CEI 32-6/6 del 1998 - Fusibili miniatura. Parte 6: Supporti per cartucce di fusibili 
+miniatura.
+–  CEI 32-6/6;V1 del 2004 - Fusibili miniatura. Parte 6: Supporti per cartucce di fusi-
+bili miniatura.
+–  CEI 32-7 del 2007 - Fusibili a tensione non superiore a 1.000 V per corrente alter-
+nata e a 1.500 V per corrente continua. Parte 4: Prescrizioni supplementari per le cartucce 
+per la protezione di dispositivi a semiconduttori.
+–  CEI 32-9 - del 2005 - Protettori termici - Prescrizioni e guida applicativa.
+–  CEI 32-9;V1 del 2007 - Protettori termici - Prescrizioni e guida applicativa.
+–  CEI 32-10 del 2001 - Guida per la specifica della temperatura e della sovratempera-
+tura ammissibile per parti di apparecchiature elettriche, in particolare per i morsetti.
+–  CEI 32-11 del 1998 - Specifica per i fusibili ad alta tensione utilizzati nei circuiti di 
+motori.
+–  CEI 32-12 del 2008 - Fusibili per bassa tensione. Parte 2: Prescrizioni supplemen-
+tari per fusibili utilizzati da persone qualificate (fusibili principalmente per applicazioni 
+industriali) - Esempi di fusibili normalizzati A-I.
+–  CEI 32-13 del 2008 - Fusibili per bassa tensione.. Parte 3: Prescrizioni supplemen-
+tari per fusibili utilizzati da persone non qualificate (fusibili principalmente per applica-
+zioni domestiche e similari) Esempi di fusibili normalizzati A-F.
+–  CEI 32-14 del 1998 - Fusibili a tensione superiore a 1000 V. Parte 2: fusibili ad 
+espulsione.
+–  CEI 32-15 del 2000 - Fusibili a tensione non superiore a 1000 V per corrente alter-
+nata e a 1500 V per corrente continua. Coordinamento tra fusibili e contattori/avviatori. 
+Guida di applicazione.
+–  CEI 32-17 del 2004 - Fusibili miniatura. Parte 10: Guida per l'utilizzatore dei fusi-
+bili miniatura.
+–  CEI 32-18 del 2005 - Guida applicativa per i fusibili a bassa tensione.
+3.3.1  Interruttore magnetotermico
+Il notevole sviluppo e la diffusione, che in questi anni hanno caratterizzato il campo 
+degli utilizzatori elettrici, hanno posto in modo diverso il problema della loro protezione. 
+Negli edifici civili privati e pubblici infatti da una filosofia impiantistica che voleva tutti 
+gli utilizzatori comandati da un unico interruttore, si è passati ad un tipo di dimensiona-
+mento che prevede il sezionamento in più rami dell’impianto elettrico. Questo comporta 
+un migliore funzionamento dell’impianto nel suo complesso, in quanto in caso di even-
+
+[PAG 1966]
+XIX-94
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+tuale guasto si interrompe il funzionamento solamente di quelle apparecchiature alle quali 
+fa capo l’interruttore del ramo interessato. Questa soluzione evita, in particolare in uffici e 
+in fabbriche, la sosta forzata dei macchinari di interi reparti.
+In tutti questi impianti, la protezione contro i sovraccarichi e i cortocircuiti viene 
+svolta dall’interruttore magnetotermico, apparecchio costituito da due dispositivi che 
+intervengono secondo due diversi principi di funzionamento.
+Il principio di funzionamento dello sganciatore termico si basa sulla deformazione di 
+un bimetallo che, attraversato da una corrente più elevata di quella di taratura, si dilata. 
+Questa dilatazione libera la leva di aggancio la quale, attraverso un cinematismo, sgancia 
+la leva di manovra dell’interruttore.
+Lo sganciatore termico quindi interviene quando sopraggiungono dei sovraccarichi, 
+cioè quando la linea e gli utilizzatori, collegati a valle dell’interruttore, assorbono una 
+potenza, e quindi una corrente, maggiore di quella per cui è tarato l’interruttore. La cor-
+rente di sovraccarico è una corrente che aumenta in modo graduale, proporzionalmente 
+alla corrente nominale del carico.
+Fig. XIX.3.6  Caratteristiche di intervento magnetotermiche.
+Per ottenere una protezione adeguata è opportuno che la curva di intervento tempo/cor-
+rente dell’interruttore scelto stia sotto a quella del cavo, come prevedono le norme CEI sta-
+bilendo che la corrente nominale dell’interruttore debba essere superiore o uguale alla 
+corrente di impiego del circuito e inferiore o uguale alla portata della conduttura; inoltre si 
+stabilisce che la corrente di funzionamento, entro un tempo convenzionale, debba essere 
+inferiore o uguale a 1,45 volte la portata della conduttura.
+Per soddisfare queste condizioni quindi è necessario scegliere interruttori con opportune 
+correnti nominali e di intervento. Sapendo che la corrente nominale è la più elevata corrente 
+che può circolare indefinitamente nell’interruttore (senza essere avvertita dal relè a bime-
+tallo interno), l’interruttore deve essere scelto con una corrente nominale tra quelle norma-
+lizzate che si trovano in commercio.
+Se la corrente di sovraccarico si presenta con caratteristiche di gradualità ed è dipen-
+dente dal carico, la corrente di cortocircuito ha invece caratteristiche opposte. Quando 
+succede un cortocircuito, la corrente che attraversa la linea e i carichi ad essa allacciati 
+assume dei valori molto elevati e la sovratemperatura che determina ha poteri devastanti. 
+Se l’impianto fosse protetto dal solo sganciatore termico, la linea non verrebbe protetta, 
+poiché la deformazione del bimetallo avviene solo dopo che tale corrente lo ha percorso e 
+Caratteristica “B”
+Caratteristica “C”
+Caratteristica “D”
+100
+10
+1
+0,1
+0,01
+0,001
+3
+5
+I/Ir
+t (s)
+100
+10
+1
+0,1
+0,01
+0,001
+10
+5
+I/Ir
+t (s)
+100
+10
+1
+0,1
+0,01
+0,001
+10  20
+I/Ir
+t (s)
+
+[PAG 1967]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-95
+quindi il tempo di intervento di tale dispositivo non è sufficientemente tempestivo. In caso 
+di cortocircuito, per la protezione degli impianti, si ricorre quindi ad uno sganciatore 
+magnetico.
+Il suo funzionamento è basato sulla presenza di una bobina collegata in serie alla linea 
+e che viene quindi percorsa dalla corrente di cortocircuito. Il cinematismo controllato da 
+questa bobina viene controbilanciato da molle antagoniste opportunamente calibrate. 
+Quando la corrente che attraversa la bobina supera un certo valore, essa, vincendo la forza 
+contromotrice prodotta dalle molle antagoniste, sgancia la leva di aggancio e provoca il 
+distacco dell’interruttore.
+Ecco allora che tanto più elevata è la corrente di cortocircuito, tanto più tempestivo 
+risulterà l’intervento dello sganciatore magnetico.
+Le norme CEI 23-3 indicano le curve di intervento magnetico istantaneo (Fig. 
+XIX.3.6) che individuano tre intervalli di sgancio: curva tipo “B” con sgancio tra le 3 e le 
+5 volte la corrente nominale, curva tipo “C” con sgancio tra le 5 e le 10 volte la corrente 
+nominale e curva tipo “D” con sgancio tra le 10 e le 20 volte la corrente nominale.
+Esse prendono il posto delle vecchie curve “L”, “U” e “K”, mantenendo gli stessi cri-
+teri qualitativi di scelta: curva bassa B per carichi puramente resistivi, curva media C per 
+carichi misti e curva alta D per alimentazione motori. La sovrapposizione dei due effetti 
+quindi, termico e magnetico, costituisce il principio di funzionamento dell’interruttore 
+automatico magnetotermico. 
+Fig. XIX.3.7  Parti costituenti un interruttore automatico magnetotermico. 
+ 1 Leva di manovra con l’indicazione della posizione dei contatti
+ 2 Base in resina termoindurente
+ 3 Morsetto di connessione a mantello per serraggio conduttori ed 
+accessori
+ 4 Contatto mobile
+ 5 Contatto fisso
+ 6 Molla di scatto
+ 7 Connessione in treccia di rame fra il contatto mobile ed il relè           
+termomagnetico
+ 8 Sganciatore termico a bimetallo
+ 9 Sganciatore elettromagnetico
+ 10 Cella spegniarco
+ 11 Dente di riarmo della leva a falce
+ 12 Leva a falce
+ 13 Leva di aggancio
+Fig. XIX.3.8  Manovra di chiusura
+ manuale.
+Fig. XIX.3.9  Apertura per intervento 
+elettromagnetico.
+5
+10
+12
+4
+6
+1
+7
+13
+8
+11
+9
+2
+3
+5
+1
+6
+4
+12
+1
+13
+9
+
+[PAG 1968]
+XIX-96
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+I due sganciatori sono infatti collegati in serie tra loro e allocati in una stessa apparec-
+chiatura. Nella Fig. XIX.3.7 viene rappresentato un interruttore magnetotermico con i vari 
+organi che lo compongono.
+Le sequenze cinematiche di funzionamento di un interruttore automatico magnetoter-
+mico sono le seguenti:
+Manovra di chiusura manuale (Fig. XIX.3.8). Per passare dalla posizione di aperto a 
+quella di chiuso, occorre agire sulla leva di manovra (1), vincendo la forza della molla (6), 
+in modo da determinare lo spostamento del contatto mobile (4). Superato il punto morto, 
+il contatto mobile viene sospinto sul contatto fisso (5) dalla stessa forza della molla.
+–  Apertura per intervento elettromagnetico (Fig. XIX.3.9). La leva a falce (12) è bloc-
+cata dalla leva di aggancio (13). In caso di cortocircuito, lo sganciatore elettromagnetico 
+(9) attira la leva di aggancio (13) liberando in tal modo la leva a falce (12), che determina 
+l’apertura dei contatti. La leva di manovra (1) si ferma in una posizione intermedia, indi-
+cando l’avvenuta apertura del circuito.
+–  Apertura per intervento termico (Fig. XIX.3.10). Nel caso di sovraccarico, lo sgancia-
+tore termico (8) sposta la leva di aggancio (13), si libera la leva a falce (12), i contatti si 
+aprono e la leva di manovra (1) si porta nella posizione centrale indicando l’intervento 
+automatico.
+–  Richiusura dei contatti (Fig. XIX.3.11). Dopo l’intervento magnetico o termico, la 
+leva di comando (1) si porta nella posizione centrale; per poter richiudere i contatti è 
+necessario riarmare il meccanismo, abbassando la leva di comando fino alla completa 
+apertura. Riagganciata la leva a falce (12) sulla leva (13), è possibile richiudere i contatti.
+I dati nominali principali di un interruttore automatico sono:
+–  la tensione nominale di impiego; 
+–  la tensione nominale di isolamento; 
+–  la corrente nominale; 
+–  il potere di interruzione; 
+–  la frequenza di esercizio; 
+–  il numero di poli.
+Ogni interruttore è corredato da una propria curva caratteristica, dove viene visualiz-
+zato il tempo di intervento dell’apparecchiatura in relazione ai multipli della corrente 
+nominale.
+3.3.2  Interruttore differenziale
+In ogni impianto, sia civile che industriale, occorre prendere in considerazione la 
+necessità di proteggere le persone contro le tensioni di contatto. La legge n. 46 del marzo 
+Fig. XIX.3.10  Apertura per intervento termico.
+Fig. XIX.3.11  Richiusura dei contatti.
+12
+1
+13
+8
+12
+1
+13
+
+[PAG 1969]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-97
+1990 stabilisce in forma definitiva la necessità di inserire negli impianti comuni l’interrut-
+tore differenziale quale protezione insostituibile contro le tensioni di contatto e il pericolo 
+di elettrocuzione, al pari dell’impianto di terra. Inoltre, si ritiene l’interruttore differen-
+ziale indispensabile come mezzo di protezione dei locali di uso medico, degli utenti e 
+manutentori di ascensori e montacarichi, degli apparecchi portatili non a doppio isola-
+mento e di apparecchi di giardinaggio, dei cantieri edili, dei locali di balneazione pubblici 
+e privati, degli utenti di campeggi e di impianti di alimentazione situati sulle banchine di 
+attracco delle imbarcazioni.
+L’interruttore differenziale è un’apparecchiatura di protezione che controlla la cor-
+rente (è cioè un dispositivo amperometrico) che interviene quando l’impianto presenta 
+una dispersione elevata di corrente verso terra.
+Questa apparecchiatura, sensibile alla corrente omopolare, esegue continuamente la 
+somma vettoriale delle correnti di linea del sistema di alimentazione e finché il risultato 
+della somma è zero permette il collegamento dell’utenza alla rete di alimentazione; al 
+contrario lo interrompe rapidamente se il valore del risultato risulta superiore a quello pre-
+fissato, secondo la sensibilità dell’apparecchio.
+L’interruttore differenziale svolge contemporaneamente tre funzioni: rilevamento 
+della corrente di guasto a terra (realizzato da un trasformatore differenziale), nella misura 
+del flusso risultante (realizzata da un elettromagnete denominato sganciatore) e interru-
+zione di tutti i conduttori di alimentazione (effettuata da un dispositivo meccanico molti-
+plicatore di energia). Si possono classificare gli interruttori differenziali in base:
+–  alle funzioni intrinseche;
+–  alla forma d’onda rilevabile;
+–  alla sensibilità di intervento.
+In relazione alle funzioni intrinseche, è possibile distinguere:
+–  differenziali magnetotermici;
+–  differenziali puri;
+–  differenziali ritardati (selettivi).
+Nei differenziali magnetotermici, come si può facilmente intuire, si trovano associate 
+assieme le funzioni differenziale e magnetotermica. Essi intervengono in tutte le situa-
+zioni di guasto (corrente a terra, sovraccarico e cortocircuito) e sono autoprotetti fino ai 
+valori massimi di corrente di cortocircuito indicati sulla loro targa.
+Formano molto spesso corpo unico con lo sganciatore magnetotermico in un’unica 
+apparecchiatura.
+I differenziali puri intervengono solamente per una corrente di guasto a terra e quindi 
+devono essere utilizzati in serie ad un interruttore automatico o a un fusibile perché non 
+risultano protetti dalle sovracorrenti.
+I differenziali ritardati o selettivi sono caratterizzati da un ritardo nell’intervento e 
+vengono generalmente installati a monte di altri differenziali rapidi per ottenere un inter-
+vento selettivo. Possono essere sia magnetotermici che puri.
+Se l’elemento discriminante è la forma d‘onda delle correnti di dispersione a cui sono 
+sensibili, si dividono in:
+–  differenziali tipo AC (per sola corrente alternata);
+–  differenziali tipo A (per corrente alternata e/o pulsante con componenti continue).
+Il differenziale tipo AC (conforme alle norme CEI 23-18, CEE 27, IEC Report 755 e 
+EN 61008) è adatto per tutti quegli impianti nei quali si prevedono correnti di terra di 
+forma sinusoidale. Rimane invece insensibile a correnti impulsive fino a 250 A di picco 
+(forma d’onda 8/20, 250 A), normalmente generate da sovratensioni atmosferiche o di 
+manovra.
+Il differenziale tipo A (conforme alle norme EN 61008, EN 61009, VDE 0664, CEI
+
+[PAG 1970]
+XIX-98
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+23-18 variante V3, NFC 61.420) viene utilizzato in quegli impianti nei quali sono presenti 
+apparecchi utilizzatori aventi dispositivi elettronici per raddrizzare la corrente o per rego-
+lare, mediante il taglio di fase, una grandezza fisica (per esempio la velocità). Questo tipo 
+di apparecchi utilizzatori è caratterizzato inoltre dal fatto di essere alimentati direttamente 
+dalla rete, senza interposizione di trasformatori, e isolati in classe I ed è insensibile alle 
+correnti impulsive fino a 250 A di picco.
+Se è la sensibilità la grandezza che varia, gli interruttori differenziali si possono clas-
+sificare in:
+–  differenziali a bassa sensibilità (0,3 A - 0,5 A - 1 A - 2 A); 
+–  differenziali ad alta sensibilità (0,01 A- 0,03 A).
+La sensibilità si basa sulla corrente differenziale che fa intervenire il rivelatore che 
+sgancia l’interruttore. Quando agli interruttori è affidata la protezione contro i soli contatti 
+indiretti, la loro sensibilità è comunemente di 0,3 A ed è inoltre necessario collegare a 
+terra le carcasse metalliche degli utilizzatori.
+Nel caso in cui non si abbia a disposizione un impianto di terra con valori relativa-
+mente bassi di resistenza, è preferibile utilizzare un interruttore differenziale con sensibi-
+lità 30 mA, che protegge sia dai contatti indiretti sia da quelli diretti.
+La normativa e la legislazione elettrica classificano come interruttori ad alta sensibi-
+lità solo quelli aventi una corrente differenziale nominale non superiore a 1 A e prescrive 
+che gli impianti elettrici siano dotati di interruttori differenziali con livello di sensibilità 
+idoneo all’ambiente di installazione.
+Nello specifico, per ambienti domestici e speciali la sensibilità differenziale deve 
+essere inferiore o uguale a 30 mA; per ambienti del terziario, piccolo industriale e labora-
+tori essa deve risultare superiore a 30 mA ma inferiore a 500 mA; per grandi complessi 
+terziari e industriali la sensibilità differenziale deve trovarsi tra un minimo di 500 mA fino 
+a un massimo di 1000 mA.
+Gli interruttori differenziali ad alta sensibilità, denominati anche a sensibilità fisiolo-
+gica, per la loro capacità di intervenire tempestivamente quando una parte in tensione viene 
+toccata da una persona, sono impiegati per la protezione contro i contatti diretti e le norme 
+li rendono obbligatori anche in locali da bagno, docce, piscine per uso pubblico e privato.
+Le problematiche che riguardano la protezione totale di un impianto sono però ben più 
+articolate e complesse perché, tra l’altro, occorre anche prendere in considerazione il tipo 
+di distribuzione e lo stato del conduttore neutro.
+Un ulteriore motivo di complicazione delle protezioni differenziali è rappresentato dal 
+fatto che in questi ultimi anni moltissimi apparecchi utilizzatori sono equipaggiati con com-
+ponenti elettronici.
+Il sistema di regolazione della temperatura delle lavatrici, i computer, i complessi HI-
+FI, i motori con il controllo elettronico dei giri, gli apparecchi a velocità variabile e tanti 
+altri funzionano con corrente raddrizzata, con forme d’onda più o meno variabili.Ora, 
+escludendo gli utilizzatori con doppio isolamento (nei quali un guasto a terra non è ipotiz-
+zabile), in tutti gli altri, con classe di isolamento I (funzionale), è possibile che avvenga un 
+guasto a terra con corrente non sinusoidale (unidirezionale o pulsante).
+In questi casi, per una modifica del ciclo di magnetizzazione del nucleo del trasforma-
+tore differenziale e una riduzione del valore della tensione motrice ai capi del secondario, 
+lo sganciatore non viene adeguatamente sollecitato e il normale differenziale non inter-
+viene, lasciando l’impianto privo di protezione.
+In sede internazionale, oltre ai già citati differenziali di tipo AC e A, è stato previsto il 
+differenziale tipo B che, impiegando un rilevatore diverso dal trasformatore di corrente 
+omopolare, dovrà essere sensibile a correnti di guasto praticamente continue o con debole 
+ondulazione (correnti raddrizzate e livellate).
+
+[PAG 1971]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-99
+.
+Fig. XIX.3.12  Funzionamento di un interruttore differenziale.
+Il principio di funzionamento, su cui si basa un interruttore differenziale è quello di un 
+rivelatore che controlla la dissipazione di una determinata corrente verso terra, in caso di 
+guasto. Se tale corrente supera il valore di sensibilità dell’apparecchiatura, lo sganciatore 
+apre il circuito.Nella Fig. XIX.3.12 sono schematizzate le situazioni di normalità e di fun-
+zionamento anomalo di un interruttore differenziale bipolare.
+In condizioni normali di funzionamento, le correnti I1 e I2 che percorrono i due con-
+duttori della linea di alimentazione si uguagliano.
+Anche i flussi 1 e 2 prodotti dai due avvolgimenti principali assumono uguale 
+valore e il flusso risultante R è nullo, quindi ai capi dell’avvolgimento differenziale non 
+si manifesta alcuna forza elettromotrice.
+Se si verifica un guasto all’isolamento dell’impianto, con una conseguente dissipa-
+zione di corrente (Ig), una parte della corrente I1 non ritorna più attraverso l’altro avvolgi-
+mento primario I1  I2 e quindi i due flussi prodotti non risultano più uguali 1  2.
+Il flusso risultante R che si determina si concatena con l’avvolgimento differenziale 
+e genera una forza elettromotrice.
+Se la differenza tra I1 e I2 supera il valore di sensibilità dell’apparecchiatura, sarà suf-
+ficiente a smagnetizzare il relè polarizzato che mantiene chiusi i contatti, provocando 
+l’apertura del circuito.
+Nella Fig. XIX.3.13 viene raffigurato un interruttore differenziale con i vari organi che 
+lo compongono. Anche di questo interruttore saranno illustrate le sequenze cinematiche di 
+funzionamento.
+Nel funzionamento normale (Fig. XIX.3.14), cioè senza dispersioni di corrente 
+nell’impianto collegato a valle dell’interruttore, il campo magnetico prodotto dal magnete 
+permanente (8) è sufficiente per trattenere il nucleo magnetico (2), vincendo la forza della 
+molla antagonista (M1).
+La leva di sgancio (5) trattiene la leva (6) tramite il dente di aggancio (P).
+Quando si verifica una dispersione che supera il valore di taratura dell’interruttore 
+(Fig. XIX.3.15), l’avvolgimento rivelatore del trasformatore differenziale invia un segnale 
+I1
+I2
+I1
+I2
+1
+2
+1
+2
+R
+R
+F
+N
+F
+N
+Ig
+I1 = I2
+1 = 2
+R = 
+I1  I2
+1  2
+R  
+Cabina
+Cabina
+Massa
+Massa
+Cabina
+
+[PAG 1972]
+XIX-100
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+(tensione U) alla bobina (9), che produce un campo magnetico tale da saturare il nucleo. 
+A questo punto la molla (Ml) determina il distacco del nucleo (2), il quale agendo sul 
+nottolino (3) determina lo spostamento della leva (5). La leva (5) a sua volta sgancia la 
+leva (6) che, sotto l’azione della molla (M2), libera di estendersi, tramite i due bracci (a-b)
+Fig. XIX.3.13  Spaccato di un interruttore differenziale.
+1) Relè polarizzato
+2) Nucleo magnetico
+3) Nottolino
+4) Leva di comando
+5)Leva di sgancio intermedia
+6)Leva
+9) Elemento di apertura contatti principali
+10) Bobina del relè polarizzato
+11) Avvolgimenti primari
+12) Avvolgimento secondario
+Fig. XIX.3.14  Funzionamento normale di
+un interruttore differenziale.
+Fig. XIX.3.15  Situazione di dispersione 
+di corrente maggiore del valore di taratura.
+Fig. XIX.3.16  Fase di apertura di un inter-
+ruttore differenziale.
+Fig. XIX.3.17  Fase di richiusura di 
+un interruttore differenziale.
+8
+9
+2
+6
+1
+4
+5
+7
+3
+10
+12
+11
+M1
+9
+2
+3
+5
+M1
+9
+2
+3
+5
+M2
+6
+b
+c
+2
+L
+3
+a
+5
+M3
+b
+c
+d
+6
+
+[PAG 1973]
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+XIX-101
+determina ancora un’altra serie di sequenze (Fig. XIX.3.16).
+Un primo braccio (a), agendo sul nottolino (3) riporta in chiusura il nucleo (2), mentre 
+l’altro braccio (b), spostando l’elemento (L), libera la leva a falce dell’interruttore deter-
+minando l’apertura dei contatti.
+Per richiudere l’interruttore (Fig. XIX.3.17) bisogna abbassare la leva di comando (c) 
+che ricarica il meccanismo; il dente (d), appoggiandosi al braccio (b), sposta la leva (6); la 
+molla (M3) consente quindi il ristabilirsi delle condizioni di equilibrio illustrate nella 
+prima sequenza.
+3.3.3  Coordinamento delle protezioni: selettività differenziale
+A questo punto è opportuno distinguere, se vengono impiegati interruttori differen-
+ziali magnetotermici, tra selettività in caso di cortocircuito e selettività in caso di corrente 
+di guasto verso terra. Mentre nel caso di un cortocircuito la selettività si ottiene come 
+negli interruttori automatici, nel caso di correnti di guasto verso terra è opportuno fare 
+altre considerazioni.
+Teoricamente è possibile proteggere tutti i circuiti dell’impianto utilizzatore dalla ten-
+sione di contatto con un unico interruttore differenziale inserito a monte.
+Questo sistema però, pur garantendo un buon livello di sicurezza, non risolve il pro-
+blema della continuità di servizio. Questo è dato sia dal fatto che il differenziale rileva la 
+somma di tutte le piccole dispersioni sempre presenti e quindi può intervenire intempesti-
+vamente, sia perché un guasto a terra in un punto qualsiasi del circuito provoca la messa 
+fuori servizio dell’intero impianto elettrico.
+Una prima soluzione è quella di limitare la zona protetta dall’interruttore entro limiti 
+ragionevoli, installando più di un apparecchio differenziale. Questa tecnica, definita selet-
+tività orizzontale, presenta tuttavia lo svantaggio di lasciare senza protezione attiva le 
+parti di circuito a monte dei differenziali.
+È possibile però estendere la protezione a tutto il circuito, installando a monte un ulte-
+riore interruttore differenziale opportunamente coordinato con quelli a valle in modo da 
+dare la precedenza d’intervento ad ogni derivato posto sulla singola linea colpita dal gua-
+sto a terra, determinando cioè una selettività verticale. Si possono installare interruttori 
+differenziali a valle con una sensibilità più elevata di quello a monte, ma questa soluzione 
+sarebbe insufficiente (selettività parziale). La selettività totale si ottiene solamente se lo 
+sganciatore dell’apparecchio generale inizia a muoversi dopo la completa apertura dei 
+contatti dell’apparecchio a valle; questo tempo viene prudentemente indicato in 30 ms.
+Fig. XIX.3.18  Selettività orizzontale a due livelli.
+Id
+Id
+Id
+Tipo
+rapido
+100 mA
+Differenziale
+Tipo
+rapido
+300 mA
+selettivo (1 A) 
+Differenziale
+rapido (300 mA) 
+Differenziale
+rapido (100 mA) 
+Tipo S (Selettivo) 
+( t 60) 1 A
+50
+100
+150
+200
+100 300 500
+1000
+t [ms]
+n [mA]
+
+[PAG 1974]
+XIX-102
+TECNOLOGIE ELETTRICHE ED ELETTRONICHE
+La Fig. XIX.3.18 mostra un esempio di selettività orizzontale a due livelli: a sinistra la 
+disposizione dei due livelli che utilizza apparecchi di tipo generale, con corrente differen-
+ziale nominale rispettivamente di 100 e 300 mA, e selettivo, con corrente differenziale 
+nominale di 1 A, nella parte destra della figura sono rappresentati il diagramma con le 
+curve dei tempi di intervento.
+La Fig. XIX.3.19 mostra invece un esempio di selettività verticale a tre livelli. In que-
+sto secondo esempio vengono utilizzati un apparecchio di tipo generale con corrente dif-
+ferenziale nominale di 30 mA, uno di tipo selettivo con corrente differenziale nominale di 
+100 mA e uno ritardato con ritardo definito con corrente differenziale nominale di 300 
+mA. La soluzione più idonea, adottata anche dalla normativa, si basa sulla combinazione 
+di differenziali rapidi, selettivi o ritardati e la curva di sicurezza contro i contatti indiretti 
+(Fig. XIX.3.20).
+Fig. XIX.3.19  Selettività verticale a tre livelli.
+ In definitiva i casi che normalmente si presentano possono essere riassunti in:
+–  Selettività cronometrica tra differenziali ad alta 
+sensibilità sia a monte che a valle (per esempio 30 
+mA); l’apparecchio selettivo deve avere una caratte-
+ristica di intervento situata tra quella dei differenziali 
+con sensibilità differenziale uguale a 30 mA e una 
+spostata in ritardo di almeno 50 ms. Con tale disposi-
+zione la corrente naturale di dispersione dell’impianto 
+non deve mai essere superiore a 10 mA.
+–  Selettività tra apparecchi a bassa sensibilità sia a 
+monte che a valle; anche in questo caso può essere 
+sufficiente uno sfasamento di 50 ms tra le curve di 
+intervento dei due differenziali.
+–  Selettività amperometrica tra un differenziale ad 
+alta sensibilità a valle e uno a bassa a monte; in que-
+sto caso i diversi valori delle correnti differenziali 
+nominali dei due apparecchi presentano già uno sfa-
+samento che può essere adeguato.
+Fig. XIX.3.20  Gerarchia di intervento.
+Tipo S (Selettivo) 
+( t 60) 100 mA
+Tipo 
+300 mA
+ritardato 
+100
+200
+300
+n [mA]
+50
+100
+150
+250
+t [ms]
+200
+Differenziale
+ritardato (300 mA) 
+Differenziale
+selettivo (100 mA) 
+Differenziale
+rapido (30 mA) 
+Tipo
+rapido
+30 mA
+Id
+Id
+Id
+Curva teorica
+di sicurezza
+Sensibilità differenziale
+Differenziale selettivo
+50
+250
+150
+200
+100
+t [ms]
+1 2 3 4 5  7    10     15    20
+Differenziale rapido
