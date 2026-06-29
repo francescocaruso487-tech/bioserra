@@ -1,0 +1,959 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 58/116 ===
+Chars: 43,078 | Offset: 2,519,257
+
+
+
+[PAG 1228]
+XII-38
+TRAZIONE ELETTRICA
+alimentazione e vale esattamente un terzo del valore della frequenza industriale. Questo 
+comporta la possibilità di alimentare una tratta ferroviaria da entrambi i lati solo se le due 
+sottostazioni risultano entrambe collegate alla stessa rete trifase.
+La conversione, che un tempo avveniva tramite l’impiego di gruppi rotanti, oggi-
+giorno avviene, anche per potenze superiori ai 15MW, per mezzo dei convertitori elettro-
+nici: il loro uso ha permesso di raggiungere valori più elevati di rendimento e una 
+migliore regolazione della tensione di linea.
+L’elettrificazione delle reti a corrente alternata monofase con frequenza industriale
+presenta il vantaggio di richiedere semplicemente sottostazioni con il solo compito di tra-
+sformazione della tensione, ma presenta l’inconveniente di rappresentare carichi mono-
+fase di potenza elevata, direttamente derivati dalle linee ad alta tensione della rete trifase, 
+con conseguenti squilibri delle correnti di linea e disimmetria delle tensioni. L’inconve-
+niente, peraltro non totalmente eliminabile, può essere contenuto mediante l’impiego di 
+due soluzioni progettuali:
+–  allacciare le sottostazioni di trasformazione a linee della rete industriale con elevato 
+valore della loro potenza di cortocircuito;
+–  effettuare una distribuzione dei carichi monofase della trazione sulle tre fasi della rete 
+industriale.
+La prima soluzione comporta un aumento dei costi nella realizzazione delle sottosta-
+zioni in quanto queste risultano collegate a linee aventi tensione di esercizio di 250 kV o 
+più, e, conseguentemente, costi più elevati per i trasformatori e per le apparecchiature 
+necessarie alla loro connessione.
+In alternativa, la distribuzione della potenza sulle tre fasi della rete industriale può 
+essere effettuata per mezzo di tre trasformatori monofase, ciascuno alimentante una tratta 
+ben distinta dalle altre, a condizione che, contemporaneamente, vi sia su ciascuna tratta 
+una uguale potenza assorbita. Una ulteriore soluzione che consente di prelevare dalla rete 
+trifase un carico perfettamente equilibrato con l’impiego di soli due trasformatori, a con-
+dizione che le potenze prelevate dai due trasformatori siano uguali, è quello indicato come 
+schema Scott.
+Fig. XII.9.2  Sottostazione con trasformatori collegati secondo lo schema Scott.
+L1
+L2
+L3
+T1
+T2
+Linee di contatto
+Tratto neutro
+
+[PAG 1229]
+TRAZIONE ELETTRICA
+XII-39
+Nello schema Scott i due trasformatori utilizzati hanno l’avvolgimento primario con 
+un numero di spire diverso, infatti (Fig. XII.9.2) denominato n il numero delle spire del 
+primario del trasformatore T2, il trasformatore T1 ha il primario costituito da 
+spire. Gli avvolgimenti secondari sono realizzati in modo tale che le due tensioni hanno 
+uguale valore, ma risultano sfasate tra loro di 90°.
+È una soluzione considerata dispendiosa per il fatto che i due trasformatori sono tra 
+loro diversi e devono essere realizzati per una potenza superiore di circa il 25% rispetto  a 
+quella reale di utilizzo.
+L’alternativa allo schema Scott è rappresentata dallo schema a V (Fig. XII.9.3): in 
+quest’ultimo i trasformatori risultano tra loro identici e vengono collegati alla rete in 
+modo da avvicendarsi secondo la sequenza di ordine tre.
+Tra una tratta e l’altra della linea vi sono i cosiddetti sezionamenti con tratto neutro, ai 
+capi dei quali la differenza di potenziale vale 
+ per lo schema Scott e 
+ per lo 
+schema a V, essendo U il valore nominale della tensione di linea.
+Fig. XII.9.3  Sottostazione con trasformastori collegati secondo lo schema a V.
+Nella Fig. XII.9.4 vengono evidenziati i collegamenti nelle sottostazioni di trazione 
+nel caso di trasformatori connessi in parallelo e per la connessione secondo lo schema a V; 
+si noti che nel primo schema, ogni linea di contatto, indicata con C, ha lunghezza pari ad 
+L e viene alimentata da una sottostazione munita di singolo trasformatore monofase; per 
+ogni linea sono evidenziate le fasi della rete industriale trifase sulle quali è collegato il 
+trasformatore monofase che consente il prelievo dell’energia.
+I collegamenti avvengono con la sequenza L1L2, L2L3 e L3L1. Ogni tratta della linea 
+di contatto risulta isolata dalla precedente e dalla successiva per la presenza del tratto neu-
+tro N.
+Nelle sottostazioni con trasformatori collegati  secondo lo schema a V ogni singolo 
+trasformatore alimenta una tratta avente lunghezza   separata dalle altre dal tratto neutro 
+N; anche in questo caso vengono evidenziate le fasi della rete industriale trifase dalle 
+quali viene prelevata l’energia.
+2
+3 n
+
+
+2U
+3U
+L1
+L2
+L3
+T1
+T2
+Linee di contatto
+Tratto neutro
+
+[PAG 1230]
+XII-40
+TRAZIONE ELETTRICA
+Fig. XII.9.4  Sottostazioni a corrente alternata monofase per trazione.
+BIBLIOGRAFIA
+APCE, 1° Convegno Nazionale su Corrosioni e protezione delle strutture metalliche 
+interrate,  Napoli, 1988.
+CARPIGNANO A., Meccanica dei trasporti ferroviari e tecnica delle locomotive, 
+Levrotto e Bella, Torino.
+CORVINO L., Costituzione, controllo e manutenzione delle lunghe rotaie saldate (Vol. 
+5°), Edizioni CIFI (Collegio Ingegneri Ferroviari Italiani), Roma. 1993.
+MAYER L., Impianti ferroviari: Tecnica ed esercizio, Edizioni Cifi, Roma, 1993.
+MORISI L., Le nuove locomotive policorrente E 412 delle FS, Ingegneria Ferroviaria, 
+Roma, 1995.
+OLIVIERI L.  RAVELLI E., Elettrotecnica: trazione elettrica, Cedam, Padova, 1980.
+PERTICAROLI F.,  Sistemi elettrici per i trasporti, C.E.A. Casa Editrice Ambrosiana, 
+2001, Milano.
+Pubblicazioni F.F.S.S.
+C
+l
+Ul
+Ul
+Ul
+SS1
+SS2
+SS3
+N
+N
+C
+C
+(L1L2)
+N
+(L2L3)
+N
+(L3L1)
+l
+l
+l
+l
+a) Sottostazione con trasformatori in parallelo
+b) Sottostazione con trasformatori collegati a V
+l
+Ul
+Ul
+Ul
+l
+SS1
+SS2
+SS3
+(L1L2)
+(L1L2)
+l/2
+l/2
+l/2
+l/2
+l/2
+l/2
+(L2L3)
+(L2L3)
+(L3L1)
+(L3L1) N
+N
+N
+N
+N
+C
+C
+C
+C
+C
+N
+N
+
+[PAG 1231]
+Sezione XIII
+Sensori e trasduttori
+INDICE
+pag.
+1    INTRODUZIONE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+1.1    Caratteristica statica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.2    Caratteristica dinamica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+2    SENSORI PER IL CONTROLLO DI POSIZIONE E DI SPOSTAMENTO  . . .
+7
+2.1    Potenziometri rettilinei e rotativi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+2.2    Trasduttori a riga ottica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+2.3    Trasduttori a risoluzione lineare (trasduttori lineari a trasformatore
+differenziale variabile)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+2.4    Trasduttori synchro . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+2.5    Trasduttori resolver . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+2.6    Trasduttori inductosyn  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+2.7    Encoder ottici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+3    SENSORI PER IL CONTROLLO DI PROSSIMITÀ . . . . . . . . . . . . . . . . . . . . .
+27
+3.1    Sensori a induzione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+30
+3.2    Sensori a effetto Hall . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+3.3    Sensori magnetici a contatto reed  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+3.4    Sensori capacitivi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+38
+3.5    Sensori pneumatici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+39
+3.6    Sensori a ultrasuoni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+40
+3.7    Sensori optoelettronici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+42
+4    SENSORI PER IL CONTROLLO DI VIBRAZIONI . . . . . . . . . . . . . . . . . . . . .
+45
+4.1    Accelerometri  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+45
+5    SENSORI PER IL CONTROLLO DI PESO E DI DEFORMAZIONE  . . . . . . .
+47
+5.1    Sensori estensimetrici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+47
+5.2    Celle di carico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+50
+6    SENSORI PER IL CONTROLLO DI VELOCITÀ  . . . . . . . . . . . . . . . . . . . . . .
+53
+6.1    Dinamo tachimetrica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+53
+6.2    Ruota dentata con sensore di prossimità  . . . . . . . . . . . . . . . . . . . . . . . . . .
+54
+7    SENSORI PER IL CONTROLLO DI LIVELLO . . . . . . . . . . . . . . . . . . . . . . . .
+56
+7.1    Trasduttori a ultrasuoni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+56
+7.2    Trasduttori a microonde  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+58
+7.3    Trasduttori a lamelle vibranti  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+59
+7.4    Trasduttori capacitivi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+61
+7.5    Trasduttori a conduttività  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+63
+7.6    Trasduttori a tasteggio elettromeccanico . . . . . . . . . . . . . . . . . . . . . . . . . .
+65
+
+[PAG 1232]
+XIII-2
+SENSORI E TRASDUTTORI
+8    SENSORI PER IL CONTROLLO DI PORTATA . . . . . . . . . . . . . . . . . . . . . . . 
+67
+8.1    Trasduttore magneto-induttivo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+69
+8.2    Trasduttori volumetrici a vortice  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+70
+8.3    Trasduttori di portata ad area variabile . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+70
+8.4    Trasduttori a ultrasuoni  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+71
+8.5    Strozzamenti a pressione differenziale . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+71
+8.6    Trasduttori a massa reale mediante l'effetto Coriolis  . . . . . . . . . . . . . . . . 
+73
+9    TRASDUTTORI PER IL CONTROLLO DI PRESSIONE . . . . . . . . . . . . . . . . 
+74
+9.1    Trasduttori capacitivi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+76
+9.2    Trasduttori estensimetrici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+76
+9.3    Trasduttori potenziometrici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+77
+9.4    Trasduttori piezoelettrici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+77
+10    SENSORI PER IL CONTROLLO DI TEMPERATURA  . . . . . . . . . . . . . . . . 
+78
+10.1    Termistori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+78
+10.2    Rivelatori RTD o termoresistenze  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+79
+10.3    Termocoppie  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+79
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+81
+1  INTRODUZIONE
+L’elemento di base per l’acquisizione di una grandezza per l’elaborazione digitale 
+consiste nel dispositivo che trasforma la grandezza fisica da misurare in un segnale di 
+natura elettrica. Questo dispositivo viene chiamato trasduttore.
+Un trasduttore si compone in generale di tre elementi (Fig. XIII.1.1):
+–  un’interfaccia di ingresso,
+–  un sensore,
+–  un’interfaccia di uscita.
+Fig. XIII.1.1  Schema generale di un trasduttore.
+Interfaccia
+Interfaccia
+Sensore
+Trasduttore
+di ingresso
+di uscita
+
+[PAG 1233]
+SENSORI E TRASDUTTORI
+XIII-3
+Il sensore si può definire come l’organo di ingresso degli impianti di automazione. 
+Esso è in grado di convertire una grandezza fisica in una grandezza elettrica, affinché la 
+prima possa essere riconosciuta e utilizzata dai circuiti di controllo dell'apparecchio di 
+gestione. Per definizione quindi il sensore controlla e trasforma delle grandezze fisiche, 
+chimiche, meccaniche ed elettriche generate dai processi tecnologici.
+Si possono trovare in commercio due famiglie di sensori:
+–  Sensori con semplici dispositivi di tipo ON/OFF oppure di livello 0 e 1. In essi 
+viene utilizzato un elemento a soglia, che attua una semplice commutazione quando viene 
+superato il valore impostato della grandezza da controllare.
+–  Sensori con dispositivi capaci di trasformare in modo continuo una specifica gran-
+dezza fisica in una grandezza elettrica, in grado di mantenere una relazione costante tra le 
+due, tale da poter essere matematicamente calcolata. In essi si utilizza un componente che 
+è in grado di fornire in uscita un valore continuo.
+Associate all'utilizzo dei valori in uscita, esistono poi delle tecniche di trattamento dei 
+segnali e di regolazione per riportare il valore o grandezza dal trasduttore al regolatore o 
+controllore del processo. In questo secondo caso la relazione di proporzionalità, chiamata 
+anche fattore di proporzionalità, non sempre deve essere necessariamente lineare o per-
+fettamente costante. Importante è che essa sia conosciuta e continua, in modo da poter 
+essere corretta con tecniche appropriate. Queste ultime, utilizzate particolarmente nelle 
+applicazioni dove è necessaria una elevata precisione, vengono definite linearizzazione 
+del componente.
+A seconda del tipo di segnale trattato si possono trovare sensori che mettono a dispo-
+sizione in uscita un segnale che varia in proporzione e in modo continuo al valore della 
+grandezza fisica che lo stesso sensore rileva: in questo caso si parla di trasduttori di tipo 
+analogico.
+Al contrario, ci sono sensori che emettono in uscita una serie di segnali numerici 
+direttamente legati al segnale rilevato: se fanno riferimento a un valore iniziale ed emet-
+tono segnali successivi relazionati solo a questo, essi si definiranno trasduttori digitali 
+assoluti; se invece i segnali emessi sono ciascuno in riferimento al valore del segnale pre-
+cedente, si definiranno questi trasduttori come digitali incrementali.
+I sensori sono contraddistinti da diversi parametri che ne descrivono il comporta-
+mento. È possibile effettuare solo una classificazione generale dei parametri perché essi 
+cambiano per ogni dispositivo. In relazione a questa classificazione, si individuano due 
+tipologie di parametri:
+–  dinamici,
+–  statici.
+I parametri dinamici considerano la dinamica del sensore per interpretare la misura in 
+uscita conseguente a veloci variazioni del segnale di ingresso. Il comportamento può 
+essere del tipo con risposta in frequenza e a gradino. Nel secondo caso, viene misurato il 
+tempo che impiega il trasduttore a rilevare il nuovo valore assunto dalla grandezza in 
+ingresso.
+I parametri statici riguardano un ventaglio molto più ampio di caratteristiche dei tra-
+sduttori; tra queste si possono citare: l’accuratezza, il campo di misura, il campo di sicu-
+rezza, il campo di taratura, l’isteresi, la linearità, l’offset di uscita, la precisione, la 
+ripetibilità, la risoluzione, la sensibilità, la stabilità e la vita.
+1.1.  Caratteristica statica
+La caratteristica statica di un trasduttore è definita da una funzione del tipo Y  f(X) 
+dove il segnale X rappresenta il segnale di ingresso e Y il segnale di uscita dal trasduttore 
+(Fig. XIII.1.2). La caratteristica è definita su di un intervallo finito chiamato campo di
+
+[PAG 1234]
+XIII-4
+SENSORI E TRASDUTTORI
+ingresso avente estremi Xm e XM ed ha valori sul campo di uscita (output range o span) 
+con estremi Ym e YM. La caratteristica ideale di un sensore deve avere un andamento di 
+tipo lineare. La costante di proporzionalità fra valori di ingresso e di uscita viene chiamata 
+guadagno (K) del trasduttore.
+Fig. XIII.1.2  Caratteristica ideale di un trasduttore.
+I trasduttori commerciali hanno però una caratteristica statica reale che si differenzia 
+da quella ideale a causa di inevitabili imperfezioni costruttive. La qualità di un sensore si 
+misura in base a quanto la caratteristica reale si scosta da quella ideale. I costruttori di tra-
+sduttori forniscono alcuni indici che misurano la qualità del sensore.
+La linearità (linearity) di un trasduttore può essere definita in diversi modi, in gene-
+rale non del tutto equivalenti. Secondo la definizione rigorosamente matematica, un 
+sistema è lineare se la sua caratteristica soddisfa le proprietà additiva e omogenea, vale a 
+dire se la sua caratteristica Y = f(X) soddisfa la seguente eguaglianza
+(XIII.1.1)
+Per un trasduttore lineare la relazione tra la grandezza fisica misurata e il segnale in 
+uscita è descrivibile attraverso una semplice relazione matematica
+(XIII.1.2)
+essendo K il guadagno del trasduttore.
+L’errore di linearità (linearity error) è la massima deviazione dell’uscita del trasdut-
+tore rispetto alla caratteristica lineare che approssima al meglio la caratteristica reale (Fig. 
+XIII.1.3).
+Tale linearizzazione viene normalmente ottenuta secondo il metodo dei minimi qua-
+drati, cioè si cerca quella retta r(X) che minimizzi la quantità
+(XIII.1.3)
+Se si indica con Y il massimo scostamento dalla caratteristica lineare, l’errore per-
+centuale di non linearità vale
+Grandezza di uscita
+Grandezza di ingresso
+Xm
+Ym
+YM
+XM
+K
+Caratteristica ideale
+Guadagno del trasduttore
+f c1X1
+c2X2
++
+(
+)
+c1f X1
+
+
+c2f X2
+
+,
++
+=
+c1 c2
+
+
+,
+Y
+KX
+=
+J
+r Xi
+
+
+Yi
+–
+
+2
+i
+0
+=
+N
+
+=
+
+[PAG 1235]
+SENSORI E TRASDUTTORI
+XIII-5
+(XIII.1.4)
+L’errore di fuori zero (offset error) è il valore che assume l’uscita del trasduttore (Yo) 
+quando la grandezza da misurare è nulla. 
+Fig. XIII.1.3  Errore di linearità.
+L’errore di guadagno (gain error) è la differenza tra il guadagno della caratteristica 
+ideale del trasduttore (K) e il guadagno della retta (K1) che approssima al meglio la carat-
+teristica reale del trasduttore. L’errore di guadagno è solitamente espresso in percentuale
+(XIII.1.5)
+L’errore di quantizzazione (resolution) è la massima variazione dell’ingresso che non 
+dà luogo a nessuna variazione dell’uscita.
+L’errore di isteresi (hysteresis, friction o backlash). Il fenomeno della isteresi si 
+manifesta nel caso in cui la caratteristica del trasduttore risulta differente nella situazione 
+in cui la grandezza da acquisire risulta crescente rispetto al caso in cui sia decrescente. 
+L’errore di isteresi è la massima differenza tra le uscite del trasduttore a parità di gran-
+dezza in ingresso, valutate in un primo caso per valori crescenti e in un secondo per valori 
+decrescenti.
+La sensibilità (sensitivity) di un trasduttore è definita normalmente come la massima 
+variazione dell’uscita rapportata alla massima variazione dell’ingresso.
+(XIII.1.6)
+La precisione (precision, repeatability) di un trasduttore è una misura di quanto la sua 
+uscita è ripetibile su ripetuti esperimenti. In sostanza può accadere che ripetendo lo stesso 
+esperimento più volte il sensore non fornisca l’identico risultato. La precisione di un sen-
+sore è in genere indicata fornendo un intervallo di errore massimo ( errore) oppure una 
+percentuale di errore rispetto al campo di uscita
+(XIII.1.7)
+eL%
+Y
+YM
+Ym
+–
+-------------------100
+=
+Caratteristica reale
+Retta che meglio
+Y
+approssima la
+caratteristica reale
+eG%
+K1
+K
+–
+K
+------------------ 100
+=
+S
+YM
+Ym
+–
+XM
+Xm
+–
+--------------------
+=
+ep%
+eMAX
+YM
+Ym
+–
+-------------------100
+=
+
+[PAG 1236]
+XIII-6
+SENSORI E TRASDUTTORI
+dove eMAX rappresenta la variazione massima di lettura del trasduttore in corrispondenza 
+dello stesso valore della grandezza misurata.
+L’accuratezza (accuracy) è una misura di quanto l’uscita del trasduttore si scosta da 
+quella che dovrebbe essere la sua uscita ideale, cioè quell’uscita che avrebbe un trasdut-
+tore ideale che misurasse la stessa grandezza di quello reale.
+L’accuratezza viene espressa solitamente in percentuale rispetto al valore ideale
+(XIII.1.8)
+L’accuratezza non va confusa con la precisione: l’accuratezza fornisce un indice di 
+quanto il trasduttore dia una indicazione fedele al valore vero della variabile che si vuole 
+misurare, la precisione fornisce una misura di quanto l’uscita del sensore sia ripetibile.
+1.2.  Caratteristica dinamica
+Il trasduttore è un sistema fisico avente necessariamente un comportamento dinamico 
+che si evidenzia quando la sua grandezza di ingresso varia rapidamente. Il comportamento 
+dinamico del trasduttore, come ogni altro sistema fisico, può essere descritto nel dominio 
+dei tempi oppure nel dominio delle frequenze.
+Risposta del trasduttore nel dominio dei tempi. Si suppone di fornire al trasduttore un 
+ingresso a gradino e quindi di registrare la sua uscita Y(t). Le specifiche dinamiche in que-
+sto caso possono essere fornite mediante:
+–  Massima sovraelongazione, nel caso in cui l’uscita superi durante il transitorio il 
+valore di regime.
+–  tdb: tempo morto (dead-band), è l’intervallo di tempo che va dall’inizio del gradino 
+in ingresso all’istante nel quale l’uscita è pari al 10% del valore di regime.
+–  ts: tempo di salita, corrisponde al tempo che impiega l’uscita a passare dal 10% al 
+90% del suo valore di regime y0 (rise time).
+–  ta: tempo di assestamento, vale a dire il tempo necessario all’uscita ad assestarsi in 
+un intervallo centrato nel valore di regime di ampiezza p% (2% oppure 5%) (settling 
+time).
+–  Slew-rate, valore limite della variazione dell’uscita nell’unità di tempo.
+Risposta del sensore nel dominio delle frequenze. La risposta frequenziale di un tra-
+sduttore si definisce attraverso i diagrammi di ampiezza e di fase della risposta del tra-
+sduttore quando l’ingresso ha un andamento sinusoidale.
+La caratteristica di un trasduttore ideale è quella descritta dalla Figura XIII.1.4.
+Quando la sinusoide di ingresso ha una pulsazione maggiore di un valore limite, allora 
+l’uscita incomincia a non essere più in grado di seguire l’ingresso. Tale valore prende il 
+nome di pulsazione di taglio del trasduttore.
+Solitamente si prende come soglia la pulsazione 3db in corrispondenza alla quale il 
+sistema risponde con una uscita che è inferiore di 3 db alla risposta a pulsazione nulla
+(XIII.1.9)
+Normalmente, anche la risposta nella banda passante non è ideale, essendo caratteriz-
+zata da ondulazioni in ampiezza (ripple). L’effetto di tali ondulazioni è quello di modifi-
+care anche la caratteristica statica del trasduttore, il cui guadagno, infatti, si trova a 
+dipendere dalla frequenza del segnale.
+eA%
+errore
+valore vero
+--------------------------100
+=
+Y 3db
+
+
+Y 0
+
+--------------------
+0.707
+=
+
+[PAG 1237]
+SENSORI E TRASDUTTORI
+XIII-7
+La non idealità della risposta in frequenza di un trasduttore può provocare non solo 
+l’attenuazione di un segnale, ma anche la sua distorsione.
+Fig. XIII.1.4  Diagramma di ampiezza e fase
+della risposta in frequenza di un trasduttore ideale.
+2  SENSORI PER IL CONTROLLO DI POSIZIONE E DI SPOSTAMENTO
+I sensori e i trasduttori utilizzati per il controllo della posizione e dello spostamento 
+trovano applicazione nell'automazione in genere e in molti servomeccanismi. Essi si pos-
+sono distinguere in vari tipi specifici:
+–  lineari e rotativi,
+–  con uscita analogica o digitale,
+–  funzionanti in base a principi magnetici, induttivi e ottici.
+A titolo di esempio, nelle applicazioni che includono degli spostamenti lineari pos-
+sono venire impiegati dei sensori di posizione a uscita digitale del tipo a riga ottica, 
+oppure gli inductosyn a uscita analogica, oppure i trasformatori differenziali LVDT.
+In quelle che controllano spostamenti rotativi invece si impiegano preferibilmente gli 
+encoder, funzionanti sul principio di Moirè, oppure i resolver, basati sull'induzione.
+2.1  Potenziometri rettilinei e rotativi
+Il principio di funzionamento del potenziometro rettilineo è lo stesso dei potenziome-
+tri lineari, comunemente impiegati nei circuiti di misure elettriche ed elettroniche. Il 
+segnale presente sul cursore del potenziometro è in relazione alla posizione fisica che esso 
+occupa, in riferimento continuo ai due estremi dello stesso potenziometro.
+In definitiva il concetto che sta alla base di questo trasduttore è la variazione della sua 
+resistenza in relazione allo spostamento impresso dal sistema sul quale è montato.
+Un potenziometro rettilineo è normalmente composto da una resistenza e da un sup-
+porto di ceramica (Fig. XIII.2.1), ma è sempre più facile trovarlo composto da una pista 
+conduttrice di plastica (Fig. XIII.2.2) sulla quale viene fatto scorrere un cursore con fun-
+zione di contatto.
+X0
+
+Caratteristica reale
+
+0
+|X (j| 
+arg (X (j
+
+[PAG 1238]
+XIII-8
+SENSORI E TRASDUTTORI
+In questa seconda versione, che elimina i possibili difetti di discontinuità che sono 
+caratteristici delle spire tradizionali, la striscia conduttrice è formata da un elemento resi-
+stivo in plastica (Thick Film Resistive Track, traccia resistiva a pellicola spessa) che viene 
+montato su un supporto di ceramica o vetro.
+Il cursore, cioè la parte del trasduttore che risulta mobile, è possibile trovarlo in due 
+versioni diverse:
+–  a pattino,
+–  ad asta di trascinamento.
+Fig. XIII.2.1  Potenziometro rettilineo con resistenza e supporto in ceramica.
+Fig. XIII.2.2  Potenziometro rettilineo con pista conduttrice in plastica.
+Le caratteristiche, che condizionano o che hanno un’elevata importanza per poter sce-
+gliere correttamente un trasduttore potenziometrico rettilineo, sono:
+–  la massima tensione che si può applicare, per esempio 60 V in corrente continua;
+–  la corsa elettrica, che determina la distanza massima di rilevamento e ovviamente 
+può avere spostamenti variabili, per esempio da 10 a 2000 mm;
+–  la velocità di spostamento, che esprime quanti metri il trasduttore è in grado di per-
+correre in un secondo;
+–  la precisione, che riporta in percentuale, riferendolo al fondo scala, quanto il valore 
+letto dal trasduttore si può discostare in più o in meno da quello vero;
+–  la caratteristica di uscita, che riporta in percentuale, riferendoli al fondo scala, 
+quanto i valori generati in uscita seguano una legge di linearità;
+–  la risoluzione, che indica la più piccola variazione di valori che il trasduttore è in 
+grado di rilevare;
+–  il rumore, cioè il generarsi di valori di resistenza non desiderati che possono 
+indurre valori più marcati di imprecisione nella misura;
+–  la durata, cioè la quantità di manovre (normalmente espressa in milioni di manovre 
+in funzione della corsa) che il trasduttore è in grado di svolgere, mantenendo inalterati i 
+valori sopra citati.
+La scelta della tensione di alimentazione e del potenziometro è importante.
+Un valore elevato di tensione produce un buon rapporto segnale/rumore, tuttavia pro-
+duce anche maggior riscaldamento (autoriscaldamento) a causa della dissipazione del 
+dispositivo. Questo comporta temperature di esercizio più elevate, che possono portare 
+alla variazione della resistenza nominale del potenziometro. Inoltre, il sensore ha una 
+spostamento
+filo resistivo
+elemento resistivo
+cursore
+
+[PAG 1239]
+SENSORI E TRASDUTTORI
+XIII-9
+impedenza di uscita rilevante che deve essere tenuta in conto in modo da evitare errori di 
+misura dovuti a problemi di interfaccia elettrica (Fig. XIII.2.2).
+Fig. XIII.2.3  Schema elettrico dell’interfacciamento
+tra un potenziometro e un amplificatore di segnale.
+Infatti, detta Ri l’impedenza di ingresso di un amplificatore messo in cascata al poten-
+ziometro, il partitore resistivo modulato dalla posizione del cursore si modifica a causa 
+del parallelo tra le resistenze xRt e Ri, producendo una tensione di uscita dal dispositivo 
+pari a
+(XIII.2.1)
+L’impedenza di uscita elevata del sensore produce anche un’estrema sensibilità ai 
+disturbi, in quanto il tratto di conduttore tra il sensore e il circuito di amplificazione fun-
+ziona da “antenna” per i disturbi elettromagnetici ambientali.
+Occorre anche considerare che la precisione e l’accuratezza del sensore dipendono 
+dalla tensione di alimentazione del potenziometro e quindi è necessario utilizzare un 
+generatore che garantisca caratteristiche migliori della precisione che si desidera ottenere 
+nella misura.
+Gli impieghi più comuni, che si possono riscontrare con i trasduttori potenziometrici 
+rettilinei, sono la misura, il controllo e la regolazione di corse meccaniche.
+I potenziometri rotanti invece sono costituiti essenzialmente da conduttore avvolto di 
+forma toroidale oppure da conduttori plastici di forma circolare e sono caratterizzati da 
+un’elevata precisione e risparmio di spazio (ingombro inferiore).
+Gli elementi di conduzione in tracciato plastico consistono in una pellicola sottile, 
+resistente all'usura (analogamente alla versione rettilinea), che viene combinata con una 
+serie multipla di contatti scorrevoli, garantendo al trasduttore le caratteristiche di risolu-
+zione molto elevata.
+In base a questa particolare configurazione e considerando che sono trasduttori analo-
+gici assoluti, questo tipo di potenziometri permette di mantenere elevate velocità di con-
+tatto scorrevole sui 360° di rotazione continua, presentando linearità fino a  0,02% e 
+risoluzione pressoché illimitata. La loro applicazione si riscontra laddove sussistono con-
+dizioni ambientali severe, quali per esempio vibrazioni, urti, temperatura.
+2.2.  Trasduttori a riga ottica
+I trasduttori definiti a riga ottica funzionano sul principio della lettura fotoelettrica di 
+particolari reticoli. Questo principio, chiamato anche principio ottico o di Moirè, può 
+essere spiegato come segue.
+e
+Rt
+xRt
+Ri
+(1  x)Rt
+Uo
+e
+xRtRi
+1
+x
+–
+
+RtRi
+1
+x
+–
+
+xRt
+2
+xRtRi
++
++
+---------------------------------------------------------------------------------
+ex
+=
+=
+limRi
+
+
+
+[PAG 1240]
+XIII-10
+SENSORI E TRASDUTTORI
+Se una riga di vetro, portante una griglia composta di linee opache e spazi trasparenti 
+di uguale larghezza (cioè avente un rapporto tra linea e spazio pari a 1:1), è messa di 
+fronte a una seconda riga con griglia identica, così che le linee sono quasi parallele, un 
+ipotetico osservatore può vedere i modelli di Moirè: cioè, se queste griglie vengono mosse 
+in relazione l'una all'altra, si formano e possono essere viste delle fluttuazioni periodiche 
+di chiarore, emissioni molto simili ai modelli di interferenza, che, giungendo contempora-
+neamente in un punto, si annullano o si alterano vicendevolmente.
+L'aspetto molto interessante è dato dal fatto che queste fluttuazioni possono essere 
+convertite in segnali elettrici, impiegando dei sensori fotoelettrici. Per mezzo di questo 
+metodo è possibile ottenere, e quindi osservare, scale graduate molto fini, le quali possono 
+produrre tolleranze molto ristrette.
+Inoltre, il segnale può essere generato dall'integrazione di un grande numero di linee, 
+così che è possibile eliminare le piccole imperfezioni delle griglie, accrescendo l'accura-
+tezza della misura.
+A seconda dello specifico sistema di misura adottato, i trasduttori a riga ottica si diffe-
+renziano in:
+–  sistemi di misura secondo il principio della luce trasmessa;
+–  sistemi di misura secondo il principio della luce riflessa;
+–  sistemi di misura secondo il principio interferenziale.
+In tutte e tre le soluzioni i trasduttori sono formati da due parti principali:
+–  una riga, che rappresenta la parte mobile,
+–  un'unità di misura, che rimane ferma.
+Nei sistemi che sfruttano il principio della luce trasmessa (Fig. XIII.2.4), la riga è 
+normalmente di vetro ed è composta da un reticolo, formato da sottili strati di cromo (il 
+passo della divisione può arrivare a 10 ÷ 20 m).
+Oltre al reticolo, che forma le graduazioni di precisione, sono presenti uno o più indici 
+di riferimento. L'unità di misura invece è composta da una sorgente luminosa, un conden-
+satore ottico con la funzione di creare un fascio di raggi paralleli, una piastra di reticoli di 
+lettura e un certo numero di cellule fotovoltaiche al silicio.
+Se si mette in moto la riga di vetro graduata, rispetto all'unità di misura, si riscontra 
+che le linee della riga graduata coincidono in modo alternativo con le linee o gli spazi 
+vuoti del reticolo di lettura. Questo intervallare linee a spazi vuoti determina una varia-
+zione periodica del fascio di luce il quale, ricevuto dalle cellule fotovoltaiche, viene tra-
+sformato in flusso di segnali elettrici.
+Fig. XIII.2.4  Principio fotoelettrico con misura a luce trasmessa.
+Nei sistemi che applicano il principio della luce riflessa, la riga graduata è in acciaio e 
+su essa il reticolo è formato da righe in oro a elevata riflessione, intervallate da spazi che 
+sorgente luminosa
+condensatore ottico
+piastra di scansione
+con reticolo di lettura
+periodo di divisione della riga
+riga graduata
+in vetro
+indice di
+riferimento
+celle fotovoltaiche
+movimento della riga
+
+[PAG 1241]
+SENSORI E TRASDUTTORI
+XIII-11
+riflettono o assorbono la luce (Fig. XIII.2.5). Nel momento in cui la riga si mette in movi-
+mento, le cellule fotovoltaiche di lettura generano una serie di segnali periodici molto 
+simili a quelli del sistema precedente.
+Fig. XIII.2.5  Principio fotoelettrico con misura a luce riflessa.
+Nei sistemi di misura che utilizzano la diffrazione e l'interferenza delle onde lumi-
+nose, il supporto di misura è dato da una riga graduata che contiene il reticolo di fase.
+Quest'ultimo ha la funzione di riflettere la luce ricevuta ed è caratterizzato da una par-
+ticolare superficie a rilievo.
+La distanza codificata dei rilievi definisce il periodo di divisione, mentre la loro 
+altezza stabilisce la classe di precisione.
+È presente inoltre una piastra di lettura, avente il reticolo di fase che viene attraversato 
+dalla luce. Le principali parti che compongono questo sistema sono illustrate nella Fig. 
+XIII.2.6.
+Fig. XIII.2.6  Principio fotoelettrico con misura inferenziale.
+Nei sistemi fotoelettrici sopra considerati, quando la riga si sposta rispetto alla testina 
+di lettura, vengono generati dalle cellule fotovoltaiche due segnali di forma sinusoidale, 
+aventi uno sfasamento di 90°, e un segnale a impulso, relazionato all'indice di riferimento 
+(Fig. XIII.2.7), che vengono convertiti dal sistema di misura in una serie di segnali (treni 
+sorgente luminosa
+condensatore ottico
+celle fotovoltaiche per la lettura
+reticolo di lettura
+riga graduata in acciaio
+reticolo di riferimento
+LED
+cellula 
+fotoelettrica 1
+cellula 
+fotoelettrica 2
+cellula 
+fotoelettrica 3
+periodo di divisione 
+piastra di lettura con
+reticolo di fase
+supporto di misura con
+reticolo di fase
+
+[PAG 1242]
+XIII-12
+SENSORI E TRASDUTTORI
+di segnali) e successivamente elaborati dalle opportune unità elettroniche.
+Fig. XIII.2.7  Segnali sinusoidali in uscita da un sistema di misurazione fotoelettrica e 
+segnale dell’indice di riferimento.
+I metodi di elaborazione dei segnali, disponibili nelle unità elettroniche, possono 
+essere di tre diversi tipi, come viene specificato di seguito.
+Nel primo metodo, a interpolazione mediante reti resistive, i segnali di scansione, 
+dopo essere stati amplificati, vengono trasformati in segnali sfasati addizionali mediante 
+somma vettoriale (Fig. XIII.2.8). 
+Fig. XIII.2.8  Diagramma di fase di una interpolazione con fattore 5.
+In questo modo si generano treni di impulsi a onda quadra i quali, combinati con delle 
+porte logiche OR esclusive (XOR), sono caratterizzati da una frequenza maggiore 
+(all'interno dello stesso periodo) e da un passo di misura molto più ridotto.
+La Fig. XIII.2.9 mostra come si presentano i segnali di scansione della figura prece-
+dente XIII.2.8 dopo che sono stati trasformati e digitalizzati dal sistema ad interpolazione 
+con reti resistive a fattore 5.
+Il secondo metodo, definito interpolazione digitale mediante tabella, tratta i segnali di 
+scansione con una procedura completamente diversa.
+Essa, in un primo momento, li amplifica e li trasforma in segnali analogici di tensione, 
+quindi li congela e li digitalizza a intervalli regolari in circuiti sample & hold (Fig. 
+XIII.2.10).
+360° elettrici
+primo segnale
+secondo segnale
+segnale dell’indice
+di riferimento
+sfasamento 90° elettrici
+segnale
+primo segnale
+negativo
+primo segnale
+18 °
+
+[PAG 1243]
+SENSORI E TRASDUTTORI
+XIII-13
+Fig. XIII.2.9  Segnali in uscita dopo una interpolazione, convertiti in onda quadra.
+ I valori risultanti da queste trasformazioni vengono utilizzati per creare gli indirizzi 
+delle file e delle colonne, all'interno di una tabella di interpolazione che viene usata per 
+ricercare, trovare e confrontare il valore di posizionamento istantaneo all'interno di un 
+periodo di segnale.
+Fig. XIII.2.10  Elaborazione dei segnali mediante il metodo digitale di interpolazione con 
+tabella e contatore di tracciamento.
+Il terzo metodo, denominato a interpolazione digitale mediante calcolatore dell'arco-
+tangente (Fig. XIII.2.10) utilizza un microprocessore per gestire i dati. Nel caso di questo 
+sistema, i dati della tensione digitalizzati vengono inseriti in un microprocessore che cal-
+cola i quozienti (tangente) dei valori dei segnali digitalizzati S1/S2 e ricava il valore degli 
+angoli corrispondenti (arco tangente) da una tabella memorizzata in una memoria 
+EPROM.
+I valori contenuti nella tabella indicano la posizione del segnale. Contemporanea-
+mente a quanto appena esposto, gli stessi segnali analogici di scansione vengono trasfor-
+mati in segnali a onda quadra e inoltre viene mantenuto il conteggio dei periodi dei 
+segnali.
+A questo punto viene trovato il valore dell'effettiva posizione interpolando il valore 
+conteggiato e quello dell'angolo calcolato.
+primo segnale
+secondo segnale
+impulso di riferimento
+passo di misura
+primo segnale
+contatore di
+tracciamento
+secondo segnale
+Sample
+&
+Hold
+A
+D
+secondo segnale
+digitalizzato
+primo segnale
+digitalizzato
+tabella di
+interpolazione
+segnali incrementali ad onda quadra
+
+[PAG 1244]
+XIII-14
+SENSORI E TRASDUTTORI
+Fig. XIII.2.11  Elaborazione dei segnali mediante il metodo digitale di interpolazione con 
+calcolatore dell’arco tangente.
+Oltre a quanto detto, è possibile includere nei calcoli del valore di posizione i valori di 
+una tabella, memorizzati in una memoria RAM, per correggere i risultati dagli errori siste-
+matici. I valori risultanti sono di natura digitale e possono venire trasmessi, mediante una 
+linea seriale, a un computer, a un controllo numerico oppure a un visualizzatore.
+I trasduttori a riga ottica possono essere impiegati sia su sistemi di misura lineari, il 
+cui campo di impiego spazia dalle macchine utensili ad alta precisione alle apparecchia-
+ture di produzione e misurazione per l'industria dei semiconduttori, sia su sistemi di 
+misura rotativi, interessando macchine utensili in genere, robot e sistemi di manipolazione 
+e plotter o strumenti simili.
+2.3  Trasduttori a risoluzione lineare (trasduttori lineari a trasformatore differen-
+ziale variabile)
+Il trasformatore differenziale è un sensore di tipo assoluto disponibile sia in versione 
+rotativa (chiamata Rotary Variable Differential Transformer RVDT) sia lineare (chiamata 
+Linear Variable Differential Transformer LVDT).
+Il trasformatore differenziale è un sensore “modulante” in quanto richiede un genera-
+tore ausiliario per generare una tensione sinusoidale di “eccitazione” per il funzionamento 
+del sensore.
+Fig. XIII.2.12  Schema costruttivo di un trasformatore differenziale lineare.
+Sample
+&
+Hold
+primo segnale
+secondo segnale
+A
+D
+EPROM
+RAM
+microprocessore
+secondo segnale
+digitalizzato
+primo segnale
+digitalizzato
+contatore
+linea
+ricevente
+linea
+azionatrice
+valore digitale
+Equipaggio mobile
+S1
+S2
+x
+U1
+U2
+Ue
+Uo
+
+[PAG 1245]
+SENSORI E TRASDUTTORI
+XIII-15
+Si basa sul principio dell’induzione elettromagnetica e il suo circuito si compone di un 
+cursore di materiale ferromagnetico mobile, un avvolgimento primario su cui viene 
+impressa una tensione sinusoidale Ue = Um sin(t) e due avvolgimenti secondari (Fig. 
+XIII.2.12) su cui si accoppia il circuito magnetico inducendo due tensioni sinusoidali U1 e 
+U2 di pulsazione  e ampiezza dipendente dalla geometria del circuito (in particolare la 
+posizione x dell’equipaggio mobile). La differenza di queste due tensioni costituisce il 
+segnale di uscita del sensore.
+Guardando la Figura XIII.2.13, si può riassumere il loro funzionamento nei seguenti 
+punti:
+–  un segnale sinusoidale, con valore di frequenza tra i 500 e i 5000 Hz e valore effi-
+cace di tensione compreso tra i 5 e i 24 V, viene applicato all'avvolgimento primario;
+–  i due avvolgimenti secondari sono messi in serie e in opposizione di fase, in modo 
+che siano generate su di essi due tensioni di segno opposto;
+–  quando il nucleo mobile si trova al centro degli avvolgimenti, le tensioni presenti 
+sugli avvolgimenti secondari sono uguali e contrarie e la loro risultante ha valore nullo;
+–  nei casi in cui il nucleo mobile non è più al centro degli avvolgimenti, risulterà una 
+tensione di uscita in relazione alla posizione del nucleo tra gli avvolgimenti.
+Fig. XIII.2.13  Trasduttore lineare a trasformatore differenziale variabile.
+Per poter essere compatibile con le interfacce usate in automazione, il segnale di 
+uscita viene demodulato e amplificato.
+La relazione di linearità tra spostamento e tensione in uscita è influenzata da molte-
+plici fattori, quali per esempio la non perfetta opposizione di fase tra i due avvolgimenti 
+secondari e i possibili errori indotti nelle fasi di demodulazione e amplificazione.
+Normalmente si ottengono valori di non linearità inferiori allo 0,5%, ciò vuol dire che 
+su uno spostamento di 2 mm e ipotizzando una non linearità dello 0,5%, si può incorrere 
+in un errore di misura dello 0,01 mm.
+I vantaggi che sono offerti da un trasduttore lineare a trasformatore differenziale 
+variabile sono dati dalla completa assenza di contatto tra il nucleo mobile e gli avvolgi-
+menti (questa caratteristica gli permette di essere utilizzato in tutti quei luoghi difficili, 
+nei quali cioè sono presenti condizioni corrosive o esplosive, oppure a contatto con 
+sostanze delicate), dal completo isolamento tra ingresso e uscita (cioè il circuito di eccita-
+zione dell'avvolgimento primario è completamente isolato da quello del secondario), dalla 
+risoluzione teorica infinita (limitata solamente dal tipo di elettronica associata) e da una 
+eccellente ripetibilità.
+Le applicazioni classiche dei trasduttori lineari a trasformatore differenziale variabile 
+spaziano dalle macchine utensili alle macchine rettificatrici, dalle apparecchiature elettro-
+medicali alle applicazioni in ambienti con pericolo di esplosioni, dalle applicazioni aero-
+nautiche al controllo della stabilità di ponti e strutture sospese.
+Commercialmente i vari tipi di LVDT si differenziano tra loro per la forma meccanica 
+e per la modalità di azionamento del nucleo mobile; per esempio è possibile trovare dei 
+oscillatore
+nucleo mobile
+demodulatore
+amplificatore
+uscita
