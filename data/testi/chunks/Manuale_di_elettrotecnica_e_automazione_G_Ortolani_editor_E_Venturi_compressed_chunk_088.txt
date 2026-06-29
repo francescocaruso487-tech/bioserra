@@ -1,0 +1,1289 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 88/116 ===
+Chars: 43,267 | Offset: 3,845,278
+
+= ta e
+
+[PAG 1773]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-173
+un angolo di circolazione o di conduzione c = tc, dove 0°  c  180° e  è la pulsazione
+della tensione ual applicata al circuito. Indicando con UM il valore massimo della tensione
+sinusoidale di alimentazione e con RL il carico, il valore medio della corrente nel carico è
+compreso fra zero e UM  RL e la potenza sul carico è compresa fra zero e U2
+M  4RL.
+L'angolo di circolazione è controllato anticipando o ritardando gli impulsi di corrente
+di gate: rispetto all'esempio della Fig. XVII.25.9b, se gli impulsi vengono ritardati,
+aumenta l'angolo di ritardo di accensione, l'inizio della conduzione ritarda, l'angolo di cir-
+colazione è inferiore e quindi la corrente media è più bassa e la potenza media fornita al
+carico è più bassa. Viceversa, anticipando l'applicazione degli impulsi, si ha un aumento
+della corrente media e della potenza fornita al carico.
+25.7.2  TRIAC
+I TRIAC (Triode Alternate Current) sono dispositivi bipolari al silicio, formati da più
+zone di semiconduttori, alternativamente di tipo p e di tipo n, come l'SCR. La loro strut-
+tura è illustrata nella Fig. XVII.25.10a; in b) è disegnato il simbolo; in c) è indicato il cir-
+cuito equivalente con SCR; in d) è rappresentata la caratteristica corrente-tensione. I
+TRIAC sono usati nei circuiti di potenza, in particolare per il controllo della potenza for-
+nita dall'alimentazione di rete ai sistemi di illuminazione e nel controllo di motori. Il
+TRIAC ha un terminale di controllo (gate) e due terminali indicati con MT1 (Main Termi-
+nal 1 o terminale principale 1) e MT2 (Main Terminal 2 o terminale principale 2); il com-
+portamento è bidirezionale, permettendo la circolazione della corrente da MT1 a MT2 o da
+MT2 a MT1, a seconda della polarizzazione della tensione applicata ai due terminali. Data
+l'analogia di questi dispositivi con gli SCR, si esaminano le caratteristiche principali del
+TRIAC nelle linee essenziali.
+A)  Principio di funzionamento
+Nel TRIAC quando la differenza di potenziale U fra MT2 e MT1 è positiva (U > 0
+quando 
+) e il dispositivo è attivato tramite un impulso di gate, si ha passag-
+gio di corrente da MT2 a MT1. La corrente I è entrante e considerata positiva; nella Fig.
+Fig. XVII.25.9   Controllo di fase della
+potenza su un carico resistivo: a) schema di
+principio; b) forme d'onda della tensione di
+alimentazione, degli impulsi di corrente di
+gate e della corrente nel carico.
+iL
+Carico
+RL
+uG
+SCR
+ual
+a)
+ual
+UM
+t
+0
+t
+0
+iG
+t1
+iL
+0
+t1
+t2
+t3
+t4
+t
+ta
+tc
+b)
+UMT2
+UMT1
+
+
+[PAG 1774]
+XVII-174
+ELETTRONICA ANALOGICA E DIGITALE
+XVII.25.10a, nella parte di destra, è disegnata con una freccia a tratto continuo. Invece,
+quando la differenza di potenziale U fra MT2 e MT1 è negativa (U < 0 quando
+) e il TRIAC è attivato tramite un impulso di gate, si ha passaggio di cor-
+rente da MT1 a MT2. La corrente è uscente da MT2 e I è negativa; nella Fig. XVII.25.10a,
+nella parte di sinistra, è disegnata con una freccia tratteggiata. Il TRIAC può essere per-
+tanto considerato costituito da due SCR in antiparallelo (l'anodo di uno è connesso al
+catodo dell'altro), come nella Fig. XVII.25.10c, con i due gate connessi, in modo da costi-
+tuire un unico terminale di comando. Quando U > 0, allora è attivo SCR1, la corrente va
+da MT2 a MT1 ed è I > 0; quando, invece, è U < 0, è attivo SCR2, la corrente va da MT1 a
+MT2 ed è I < 0. Le caratteristiche di funzionamento sono riportate nella Fig. XVII.25.10d. 
+B)  Circuito di controllo della potenza su un carico resistivo
+Si vuole controllare la potenza sinusoidale fornita ad un carico resistivo RL tramite un
+TRIAC. La tensione di alimentazione ual è sinusoidale ed è applicata alla serie di carico e
+TRIAC. Il circuito di controllo di principio è riportato nella Fig. XVII.25.11a; in b) sono
+rappresentate le forme d'onda per spiegarne il funzionamento. Nell'intervallo 0 < t < t1 la
+tensione sinusoidale è applicata al circuito, ma non vi è circolazione di corrente.
+All'istante t1 si ha un impulso di corrente di gate iG, il TRIAC passa da OFF a ON, quindi
+si ha circolazione di corrente sinusoidale nel TRIAC e nel carico fino a quando la corrente
+scende al disotto della corrente di mantenimento, approssimativamente all'istante t2, in cui
+la tensione ual diventa negativa. Si suppone che la tensione sul TRIAC nello stato ON sia
+trascurabile, ossia che il TRIAC possa essere considerato un interruttore chiuso; l'anda-
+mento della tensione sul carico segue quindi l'andamento della tensione di alimentazione
+ual. Quando ual diviene minore di zero, si ha disinnesco del TRIAC, come nell'SCR, e
+quindi la corrente e la tensione del carico sono uguali a zero. Il TRIAC rimane nello stato
+OFF fino a quando si presenta nuovamente un impulso di corrente di gate, all'istante t3. Il
+TRIAC riprende a condurre, passa allo stato ON, in cui può essere considerato un interrut-
+Fig. XVII.25.10   TRIAC: a) struttura; b) simbolo; c)
+circuito equivalente con SCR; d) caratteristica a cir-
+cuito di gate aperto.
+UMT2
+UMT1
+
+p
+n
+n
+n
+n
+p
+MT2
+MT1
+G
+a)
+MT2
+MT1
+G
+I
+U
+UG
+b)
+MT2
+MT1
+G
+G1
+G2
+SCR1
+SCR2
+c)
+I
+UB
+U
+UB
+OFF
+OFF
+ON
+ON
+d)
+
+[PAG 1775]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-175
+tore chiuso; come si vede nella Fig. XVII.25.11b, si ha sul carico una tensione negativa.
+Gli impulsi di gate sono applicati con un ritardo rispetto al passaggio per lo zero della
+tensione sinusoidale; anticipando o ritardando gli impulsi di corrente di gate, varia la
+potenza fornita al carico.
+Con riferimento alla Fig. XVII.25.11b, se gli impulsi vengono ritardati, aumenta
+l'angolo di ritardo di accensione, l'inizio della conduzione ritarda e la potenza media for-
+nita al carico è più bassa; viceversa, anticipando l'applicazione degli impulsi, si ha un
+aumento della corrente media e della potenza fornita al carico.
+25.7.3  DIAC
+I DIAC, da Diode Alternate Current, sono dispositivi bipolari al silicio, composti da
+più zone di semiconduttori, alternativamente di tipo p e di tipo n. La loro struttura interna
+è illustrata nella Fig. XVII.25.12a; in b) è rappresentata la caratteristica corrente-tensione
+ed in c) è disegnato il simbolo.
+Fig. XVII.25.12   Diodo DIAC: a) struttura; b) caratteristica; c) simbolo; d) circuito di
+controllo di potenza in un carico con un SCR comandato da un DIAC.
+Fig. XVII.25.11   Controllo di fase della
+potenza su un carico resistivo con un
+TRIAC: a) schema di principio; b) forme
+d'onda della tensione di alimentazione,
+degli impulsi di corrente di gate e della ten-
+sione sul carico.
+RL
+G
+ual
+a)
+iG
+ual
+UM
+t
+0
+t
+0
+iG
+t1
+uL
+0
+t1
+t2 t3
+T
+t
+T/2
+b)
+T/2
+A1
+A2
+n
+p
+p
+n
+n
+a)
+i
+u
+UBO
+UBO
+ON
+ON
+OFF
+OFF
+b)
+A1
+A2
+c)
+Carico
+ual
+C
+D
+DIAC
+SCR
+R
+uC
+d)
+
+[PAG 1776]
+XVII-176
+ELETTRONICA ANALOGICA E DIGITALE
+I DIAC sono usati nei circuiti di potenza per attivare gli SCR ed i TRIAC. I DIAC
+hanno due terminali, indicati come anodo 1 (A1) e anodo 2 (A2); sono bidirezionali, per-
+mettendo la circolazione da A1 a A2 o da A2 a A1, a seconda della polarità della tensione
+applicata.
+Con l'anodo A1 a potenziale maggiore dell'anodo A2, la struttura pnpn del DIAC è
+simile a quella dell'SCR con il terminale di gate aperto; pertanto, il DIAC conduce debol-
+mente e si ha passaggio solo della corrente inversa. Aumentando il valore della tensione u,
+la corrente inversa aumenta debolmente; incrementando ulteriormente u, si raggiunge la
+tensione diretta di breakover UBO, per la quale s'innesca un processo a valanga che neutra-
+lizza la barriera di potenziale. Il DIAC entra in conduzione, con una riduzione della ten-
+sione fra A1 e A2, come mostra la caratteristica nella Fig. XVII.25.12b nel primo
+quadrante. Polarizzando il DIAC nel verso opposto ed operando come nel caso prece-
+dente, si ottiene la caratteristica della Fig. XVII.25.12b nel terzo quadrante.
+Il circuito della Fig. XVII.25.12d è un esempio di impiego del DIAC nel controllo
+della potenza mediante SCR. La tensione di alimentazione ual è sinusoidale ed è applicata
+alla serie di carico e SCR; la stessa tensione si trova ai capi del circuito RC. Inizialmente
+l'SCR è OFF; la corrente nel carico è trascurabile, se si sceglie l'impedenza del gruppo RC
+molto maggiore dell'impedenza del carico. Al crescere della tensione il condensatore si
+carica; la tensione ai suoi capi è sinusoidale come la tensione di ingresso, ma sfasata in
+ritardo, a causa della costante di tempo RC. Quando la tensione uC raggiunge il valore
+della tensione di breakover UBO del DIAC, inizia la conduzione del DIAC, e si ha una
+diminuzione della tensione ai suoi capi; il condensatore allora si scarica attraverso il cir-
+cuito formato dal DIAC e dalla giunzione gate-catodo dell'SCR. La corrente di scarica è
+corrente di gate, che attiva l'SCR, facendolo passare da OFF a ON. L'entrata in condu-
+zione dell'SCR permette il passaggio della corrente nel carico, essendo chiuso il circuito
+formato da alimentazione, carico e SCR; la conduzione dura fino a quando la tensione di
+alimentazione diviene negativa, nella semionda successiva. 
+Nella fase di conduzione dell'SCR la tensione fra i suoi terminali si abbassa a valori
+dell'ordine del volt; il condensatore, pertanto, si scarica rapidamente attraverso la resi-
+stenza R e l'SCR. La diminuzione della tensione sul condensatore non permette il mante-
+nimento della conduzione del DIAC, che perciò passa allo stato OFF; l'SCR, però,
+continua a condurre, in quanto è caratterizzato dalla proprietà che il gate perde il controllo
+della conduzione dopo l'innesco. Il disinnesco dell'SCR, e quindi il blocco del passaggio
+di corrente nel carico, avviene quando la tensione di alimentazione cambia di verso, pola-
+rizzando inversamente l'SCR. 
+Il diodo D è stato inserito per evitare che il gate dell'SCR sia polarizzato inversa-
+mente, con il rischio di breakdown. Durante la semionda positiva della tensione di alimen-
+tazione, il diodo risulta polarizzato inversamente, quindi non influisce sul funzionamento
+del circuito che si è descritto. Durante la semionda negativa, il diodo conduce, limitando
+la tensione sul condensatore a circa 0,6 V; il condensatore così non raggiunge la tensione
+di breakover UBO, il DIAC non conduce e non risulta applicata una tensione negativa al
+gate.
+25.8  Comando degli attuatori
+Un attuatore è un dispositivo che trasforma un segnale elettrico in una grandezza mec-
+canica. I più comuni sono: i resistori di riscaldamento, che trasformano il segnale elettrico
+in energia termica; i dispositivi emettitori di luce, che trasformano il segnale elettrico in
+energia luminosa; gli elettromagneti e i motori in corrente continua, a magnete perma-
+nente e passo-passo, che trasformano il segnale elettrico in movimento. Gli attuatori sono
+comandati in due modi: linearmente, mediante amplificatori di potenza; con segnali di
+tipo impulsivo generati con transistor di potenza e tiristori.
+
+[PAG 1777]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-177
+Fig. XVII.25.13   Comando di motore passo-passo, con circuito a ponte (configurazione
+ad H): schema di principio.
+A)  Circuiti di comando a ponte: configurazione ad H
+Il circuito a ponte è impiegato quando occorre che l’avvolgimento del motore sia per-
+corso da corrente in entrambi i versi; la configurazione è detta anche ad H per la forma
+che assume lo schema del circuito. La configurazione ad H si basa sul circuito di principio
+della Fig. XVII.25.13, dove i dispositivi di alimentazione del motore passo-passo, i driver,
+sono schematizzati mediante commutatori e il motore passo-passo è schematizzato dal
+solenoide AB. Con i commutatori D1 e D2 nella posizione indicata in figura, la corrente
+percorre l'avvolgimento del motore passo-passo da B ad A; quando i commutatori si tro-
+vano nella posizione disegnata tratteggiata, la corrente percorre il motore passo-passo da
+A a B, in senso opposto al caso precedente. I driver erogano e assorbono la corrente richie-
+sta dal motore passo-passo; queste correnti, se uscenti dal driver, sono dette di source, e di
+sink, se entranti. Nella configurazione ad H, i driver D1 e D2 sono realizzati in un unico
+circuito integrato, detto full H driver; se invece i driver sono realizzati in circuiti integrati
+separati con caratteristiche complementari, sono detti half H driver.
+Fig. XVII.25.14   Comando di motore passo-passo, con circuito a ponte (configurazione
+ad H): driver di tipo half H.
+Due half H driver complementari sono gli integrati gli integrati SN75603 e SN75604;
+nella Fig. XVII.25.14 sono riportati i simboli e la tabella della verità che ne spiega il fun-
+INPUT
+OUTPUT
+EN
+DIR
+SN75603
+SN75604
+L
+L
+H
+H
+L
+H
+L
+H
+Z
+Z
+L
+H
+Z
+Z
+H
+L
+D1
+D2
+A
+B
+UCC
+EN
+UCC
+DIR
+OUT
+GND
+SN75603
+EN
+UCC
+DIR
+OUT
+GND
+SN75604
+
+[PAG 1778]
+XVII-178
+ELETTRONICA ANALOGICA E DIGITALE
+zionamento. Si tratta di driver con uscita three-state, provvisti di diodi di protezione, in
+grado di funzionare con carichi con correnti fino a 2 A e tensioni fino a 40 V. Come si
+vede dalla tabella, l'ingresso di Enable EN consente di abilitare il dispositivo al funziona-
+mento; quando non è abilitato, l'uscita si trova ad alta impedenza (Z). L'ingresso DIR
+(Direction) determina il livello dell'uscita, alto (H) o basso (L), quindi il verso della cor-
+rente relativa all'uscita del driver. Se l'uscita è alta, la corrente è di source ed è uscente dal
+terminale OUT del driver; se è bassa, la corrente è di sink ed è entrante. Si noti che i due
+dispositivi, quando sono abilitati e nelle stesse situazioni di ingresso, hanno uscite com-
+plementari; per questo i due driver sono detti complementari.
+Nella Fig. XVII.25.15a è riportato un esempio di comando di motore passo-passo a
+due fasi, con circuito a ponte. Ogni fase è attivata da due driver di tipo half H, i cui termi-
+nali fanno capo agli ingressi di abilitazione E e di direzione D. Ad esempio, considerando
+la fase AB, quando EAB è a livello basso, le uscite dei driver sono ad alta impedenza, la
+fase non è attivata in quanto non vi è passaggio di corrente. Quando EAB è a livello alto, i
+driver sono attivati e la corrente nella fase AB dipende dal valore dell'ingresso DAB; se DAB
+è a livello alto, l'uscita di D1 è alta, quella di D2 è bassa e quindi la corrente nella fase ha
+il verso da A a B; verso opposto si ha quando DAB è a livello basso. Analoghe considera-
+zioni si possono fare per la fase CD.
+Fig. XVII.25.15   Circuiti di comando di avvolgimenti: a) circuito a ponte per comando di
+motore passo-passo a due fasi; b) circuito di comando di avvolgimento di motore
+mediante interruttore a transistor: impiego del diodo di libera circolazione delle correnti
+reattive
+B)  Sovratensioni di apertura e tempo di risposta alla chiusura
+Gli avvolgimenti di un motore costituiscono un carico induttivo; si generano, per-
+tanto, sovratensioni di apertura all'atto dell'interruzione della corrente negli avvolgimenti
+e si ha, inoltre, un intervallo di tempo, che può essere sensibile, nel passaggio della cor-
+rente da zero al valore nominale. Nella Fig. XVII.25.15b è riportato un esempio di avvol-
+gimento comandato con un BJT utilizzato come interruttore; l'avvolgimento è
+schematizzato mediante un'induttanza L ed una resistenza in serie RsL. Applicando alla
+base del BJT un opportuno segnale, il transistor passa dalla conduzione all'interdizione, la
+corrente nell'avvolgimento si interrompe e si genera ai capi dell'avvolgimento una forza
+elettromotrice indotta e, che tende ad opporsi alla causa che l'ha generata. Si ha pertanto
+EAB
+UCC
+A
+DAB
+ECD
+DCD
+B
+D1
+D2
+C
+D
+D'1
+D'2
+a)
+UCC
+L
+D
+e
+Q
+UCE
+RsL
+b)
+
+[PAG 1779]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-179
+una sovratensione sul collettore del transistor, che può essere danneggiato. Per evitare
+questo inconveniente, è inserito il diodo D, detto di libera circolazione delle correnti
+reattive, che entra in conduzione quando vi è sovratensione e quindi la limita al valore
+UCC + UD, essendo UD la tensione sul diodo in conduzione. Si ha circolazione di corrente
+nella maglia costituita da avvolgimento e diodo, con rapida dissipazione dell'energia
+accumulata nell'induttore.
+Quando il BJT di comando passa dall'interdizione alla saturazione, la corrente
+impiega un sensibile intervallo a raggiungere il valore di regime, detto tempo di risposta,
+a causa dell'induttanza dell'avvolgimento; ciò comporta dei rallentamenti alla attivazione
+del motore. Per superare questo inconveniente si può usare uno dei seguenti criteri.
+–  Si inserisce una resistenza in serie all'avvolgimento, diminuendo la costante di
+tempo L/R del circuito e quindi il tempo di risposta. Questo metodo è semplice, però vi è
+l'inconveniente della potenza dissipata sulla resistenza aggiunta e quindi della riduzione
+del rendimento del circuito.
+–  Si impiega la tecnica della doppia alimentazione. All'avvio, si alimenta il motore
+con una tensione superiore alla tensione nominale, in modo che la corrente raggiunga
+rapidamente il valore nominale; appena lo raggiunge, si commuta l'alimentazione al
+valore nominale. Rispetto alla soluzione precedente, si ha il vantaggio di un minore con-
+sumo di energia, però il circuito di comando è più complesso.
+–  Si impiega la tecnica di funzionamento di tipo chopper o switching. Come nel caso
+precedente, si alimenta il motore ad una tensione più elevata di quella nominale, in modo
+che la corrente raggiunga il valore di regime rapidamente. Quando la corrente raggiunge
+un valore di soglia attorno alla corrente nominale, si blocca il passaggio della corrente
+stessa, facendo passare il transistor all'interdizione. La corrente nell'avvolgimento dimi-
+nuisce, essendo il circuito di alimentazione aperto, e percorre la maglia costituita da
+avvolgimento e diodo di circolazione. Quando raggiunge una valore di soglia prefissato,
+viene inserita nuovamente l'alimentazione, la corrente riprende a crescere e così via. La
+tecnica descritta è detta anche tecnica di comando a corrente costante, indipendente dalla
+velocità dei motore; la frequenza delle commutazioni comunemente varia da valori
+dell'ordine del kilohertz a valori dell'ordine delle decine di kilohertz.
+C)  Circuiti di comando con integrati specifici
+Il comando dei motori passo-passo può essere effettuato mediante circuiti integrati
+specifici, come la serie ULN-2800A. Gli integrati della serie contengono otto driver,
+come si vede nella Fig. XVII.25.16b; questi hanno una struttura di tipo Darlington, carat-
+terizzata da alte tensioni (UCEmax  50 V) e relativamente alte correnti.
+Fig. XVII.25.16   Comando di motore passo-passo con integrato della serie ULN-2800A:
+a) schema di principio; b) struttura dell'integrato.
+A
+Dati
+Indirizzi
+Controllo
+PIO
+Driver
+B
+C
+D
+ULN-2800A
+UCC
+Fasi motore
+a)
+ULN-2800A
+1
+18
+2
+17
+8
+11
+10
+9
+GND
+COM (UCC)
+b)
+
+[PAG 1780]
+XVII-180
+ELETTRONICA ANALOGICA E DIGITALE
+Le uscite sono del tipo open collector e nello stesso integrato sono contenuti i diodi di
+libera circolazione delle correnti reattive, ciò che permette una semplificazione del cir-
+cuito esterno.
+Un esempio di circuito di comando di motore passo-passo, realizzato con un driver
+della serie ULN-2800A, è riportato nella Fig. XVII.25.16a; nel comando è utilizzato un
+microprocessore. Tramite il circuito di interfaccia (PIO), vengono attivati i driver
+secondo la sequenza necessaria a determinare la rotazione del motore; nell'esempio,
+essendo quattro le fasi, sono utilizzati solo quattro driver dell'integrato. Le uscite dei dri-
+ver sono connesse agli avvolgimenti e determinano in essi le correnti richieste per il fun-
+zionamento del motore. Come si vede nella Fig. XVII.25.16b, il terminale 10 (COM),
+comune ai catodi dei diodi, è collegato all'alimentazione UCC; in questo modo i diodi si
+trovano in parallelo agli avvolgimenti, permettendo la libera circolazione delle correnti
+reattive.
+26  INTRODUZIONE ALLE CONVERSIONI A/D E D/A
+La conversione dei segnali da digitali ad analogici si realizza con i convertitori digi-
+tale-analogici, indicati anche come DAC (Digital to Analog Converter), mentre la conver-
+sione dei segnali da analogici a digitali si ottiene con i convertitori analogico-digitali,
+indicati anche come ADC (Analog to Digital Converter). Nella Fig. XVII.26.1 è riportato
+lo schema a blocchi di base che esemplifica il trattamento del segnale analogico, nel caso
+di elaborazione digitale.
+Fig. XVII.26.1   Schema a blocchi che illustra come avviene l'elaborazione di tipo digi-
+tale di un segnale analogico.
+La grandezza analogica è sottoposta al processo di conversione analogico-digitale,
+mediante un convertitore ADC; all'uscita di questo si ha un segnale digitale (parola) com-
+posta da più bit, il cui valore è in relazione all'ingresso analogico. Il sistema di elabora-
+zione digitale modifica il segnale digitale in base ad un algoritmo assegnato mediante
+programma (software); il segnale digitale ottenuto viene applicato ad un convertitore
+DAC e all'uscita di questo si ha il segnale analogico desiderato.
+26.1  Caratteristiche e tipi di convertitori D/A
+Nella Fig. XVII.26.2 è riportato il simbolo di un DAC a n bit; si hanno n ingressi, da
+B0 a Bn  1, ed un'uscita analogica UU.
+Fig. XVII.26.2   Simbolo di un DAC a n bit.
+Sistema di
+elaborazione
+Segnale
+analogico
+Segnale
+digitale
+Segnale
+digitale
+Segnale
+analogico
+Convertitore
+A/D
+Convertitore
+A/D
+digitale
+B0
+B1
+B2
+Bn1
+D/A
+UU
+
+[PAG 1781]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-181
+A)  Caratteristiche principali
+La tensione di uscita del DAC della Fig. XVII.26.2 deve essere proporzionale al valore
+digitale di ingresso. Dato il numero binario di n bit, N  Bn12n1  Bn22n2  ...  B121 
+B020, con Bi = 1 o Bi = 0 (i = 0, 1, …, n  1), Bn1 bit più significativo (MSB, Most Signi-
+ficant Bit), B0 bit meno significativo (LSB, Least Significant Bit), perché la tensione di
+uscita UU del DAC sia proporzionale ad N, si deve avere UU  KN  K(Bn12n1  Bn22n
+2  ...  B121  B020), con K fattore di proporzionalità (K ha le dimensioni di una tensione
+e dipende dalle caratteristiche del convertitore). Nei convertitori si esprimere la tensione
+di uscita nel modo seguente:
+UU  KN  K(Bn12n1  Bn22n2  ...  B121  B020) 
+ (Bn121  Bn222  ...  B121n  B02n) 2nK 
+Posto 2nK  UFS si ottiene:
+(XVII.26.1)
+con UFS tensione di fondo scala (alcuni costruttori la indicano con UFSR, o range della ten-
+sione di uscita del convertitore).
+Nella XVII.26.1, il bit più significativo, Bn  1, ha peso UFS /2, cioè metà della tensione
+di fondo scala; infatti, se Bn  1 = 1 e tutti gli altri bit sono uguali a zero, si ha che UU =
+UFS /2. La tensione di fondo scala può essere pertanto definita come la tensione uguale al
+doppio della tensione che si ha all'uscita quando, all'ingresso, solo il bit più significativo è
+uguale a uno. Il bit meno significativo, B0, ha peso UFS/2n; infatti, se B0 = 1 e tutti gli altri
+bit sono uguali a zero, si ha che UU = UFS /2n. Questo valore indica anche la risoluzione, o
+minima variazione rilevabile della tensione di uscita del convertitore; essa è detta anche
+quanto ed è indicata con:
+(XVII.26.2)
+La massima tensione di uscita del convertitore UUmax è inferiore alla tensione di fondo
+scala UFS, da cui differisce di un quanto Q. Infatti, ponendo tutti i bit uguali ad uno nella
+relazione XVII.26.1, si ha:
+(XVII.26.3)
+I pesi dei diversi bit costituiscono una progressione geometrica la cui somma è
+ e quindi la XVII.26.3 diviene:
+(XVII.26.4)
+Bn
+1
+–
+2
+-------------
+Bn
+2
+–
+22
+-------------
+
+B1
+2n
+1
+–
+-------------
+B0
+2n
+-----
++
++
++
++
+
+
+
+
+
+2nK
+=
+UU
+Bn
+1
+–
+2
+-------------
+Bn
+2
+–
+22
+-------------
+
+B1
+2n
+1
+–
+-------------
+B0
+2n
+-----
++
++
++
++
+
+
+
+
+
+UFS
+=
+Q
+UFS
+2n
+---------
+=
+UUmax
+1
+2--
+1
+4--
+
+1
+2n
+1
+–
+-------------
+1
+2n
+-----
++
++
++
++
+
+
+
+UFS
+=
+1
+2--
+1
+4--
+
+1
+2n
+1
+–
+-------------
+1
+2n
+-----
++
++
++
++
+
+
+
+
+1
+1
+2n
+-----
+–
+=
+UUmax
+1
+1
+2n
+-----
+–
+
+
+
+UFS
+UFS
+UFS
+2n
+---------
+–
+UFS
+Q
+–
+=
+=
+=
+
+[PAG 1782]
+XVII-182
+ELETTRONICA ANALOGICA E DIGITALE
+Nella Fig. XVII.26.3 è riportato un diagramma che illustra le caratteristiche della con-
+versione digitale-analogica, nel caso di conversione di parole digitali di tre bit. Le combi-
+nazioni possibili all'ingresso, con tre bit, sono 23 = 8 e sono riportate sull'asse delle
+ascisse, da 000 a 111; ad ognuna di esse si fa corrispondere un valore dell'uscita analo-
+gica. Indicando con UFS la tensione di fondo scala del convertitore, si divide l'intervallo 0
+ UFS in otto parti uguali, di ampiezza ciascuna UFS8; ai valori dell'ingresso digitale
+000, 001, 010, 111 vengono fatti corrispondere i valori dell'uscita analogica 0UFS  8,
+1UFS  8, 2UFS  8, …, 7UFS  8.
+La differenza fra due livelli contigui della tensione analogica di uscita vale UFS  8 ed
+è il quanto Q. Si noti come la tensione di fondo scala sia solamente un valore di riferi-
+mento, in quanto l'uscita analogica non può mai raggiungere il valore UFS; il valore mas-
+simo della tensione di uscita vale:
+UUmax  UFS  Q  7UFS  8
+Nel caso di convertitore a tre bit, la parola di ingresso è indicata con B2B1B0. La rela-
+zione fra tensione analogica di uscita ed ingresso digitale, sotto forma di diagramma, è
+riportata nella Fig. XVII.26.3, in cui UFS è la tensione di fondo scala del convertitore.
+Come si deduce dalla figura, il peso dei bit B0, B1, B2 è, rispettivamente, 1UFS  8,
+2UFS 8 e 4UFS 8. Si può pertanto scrivere, applicando il principio di sovrapposizione
+degli effetti:
+La stessa espressione della tensione di uscita può essere ricavata utilizzando la rela-
+zione XVII.26.1 con n = 3.
+Fig. XVII.26.3   Esempio di conversione digitale analogica, nel caso di una parola di tre bit.
+Esempio
+Un convertitore a 8 bit ha tensione di fondo scala UFS = 10 V. Determinare: la risolu-
+zione o quanto; la tensione massima di uscita; la tensione di uscita quando vale uno solo il
+bit più significativo; la tensione di uscita quando vale uno solo il bit meno significativo; la
+tensione di uscita quando il byte di ingresso vale B7B6B5B4B3B2B1B0 = 00100100, corri-
+spondente al decimale N = 36.
+–  La risoluzione, o quanto, per la XVII.26.2, vale:
+UU
+B2
+UFS
+2
+---------
+B1
+UFS
+4
+---------
++
+B0
+UFS
+8
+---------
++
+B2
+21
+-----
+B1
+22
+-----
+B0
+23
+-----
++
++
+
+
+
+
+
+UFS
+=
+=
+Q
+Uscita
+analogica
+Ingresso
+digitale
+UU (V)
+UFS
+000
+001
+010
+011
+100
+101
+110
+111
+UUmax=7UFS/8
+6UFS/8
+5UFS/8
+4UFS/8
+3UFS/8
+2UFS/8
+1UFS/8
+0UFS/8
+
+[PAG 1783]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-183
+–  La tensione massima all'uscita si determina con la XVII.26.4:
+UUmax  UFS  Q  10  0,03906  9,96094 V
+–  Il bit più significativo ha peso uguale alla metà della tensione di fondo scala:
+–  Il bit meno significativo ha peso uguale al quanto, quindi quando vale uno e tutti gli
+altri bit sono uguali a zero, si ha:
+UU  Q  39,06 mV
+–  La tensione di uscita quando il byte di ingresso vale 00100100 si determina con la
+relazione XVII.26.1:
+B)  Tipi di convertitori D/A
+La conversione D/A può essere realizzata con diversi tipi di convertitori. I più comuni
+sono: convertitori con resistori pesati; convertitori con rete a scala, a commutazione di
+corrente; convertitori con rete a scala, a commutazione di tensione; convertitori a struttura
+segmentata; convertitori a commutazione di capacità. Altri tipi di convertitori hanno
+applicazioni specifiche: convertitori moltiplicatori; convertitori multipli; convertitori
+logaritmici; convertitori audio; convertitori ad alta velocità.
+26.2  Conversione analogico-digitale
+A)  Quantizzazione e quanto
+Nella conversione analogico-digitale il segnale analogico, che può assumere infiniti
+valori fra due limiti prefissati, è convertito in un segnale digitale, caratterizzato da un
+numero finito di valori. Il segnale analogico pertanto subisce un'operazione di quantizza-
+zione, perché il segnale digitale risultante assume solo una serie discreta di valori (si veda
+il Par. 26.1). Nella Fig. XVII.26.4 è riportato un esempio di quantizzazione e codifica di
+una grandezza analogica, nel caso di un ADC a tre bit. L'ingresso analogico ha un inter-
+vallo di variabilità da 0 a UFS (valore di fondo scala) e viene convertito in una parola digi-
+tale a tre bit; sono possibili 23  8 valori discreti. L'intervallo 0  UFS viene pertanto
+suddiviso in 23 parti, ciascuna di ampiezza Q  UFS23, dove Q è detto quanto. Ai valori
+discreti 0UFS8, 1UFS8, 2UFS8, 3UFS8, …, 7UFS8 dell'ingresso analogico si fanno corri-
+spondere rispettivamente i valori 000, 001, 010, 011,…, 111 dell'uscita digitale. Si indivi-
+duano successivamente degli intervalli di larghezza Q, centrati attorno ai valori discreti
+suddetti (da 1UFS8 a 7UFS8); quando la grandezza analogica assume un valore all'interno
+di un determinato intervallo, ad essa viene attribuito il valore digitale che corrisponde al
+punto medio dell'intervallo stesso. Ad esempio, a tutti i valori dell'ingresso analogico
+compresi fra 3,5UFS8 e 4,5UFS8 si fa corrispondere il valore digitale 100, relativo al
+valore 4UFS8 dell'ingresso analogico.
+Si noti che i valori di ingresso compresi fra 0 e 0,5UFS8 sono codificati con 000;
+infatti, si deduce dalle considerazioni precedenti che il primo intervallo di quantizzazione
+è largo Q2. Infine, come si può osservare nella Fig. XVII.26.4, il valore massimo
+Q
+UFS
+2n
+---------
+10
+28
+-----
+0,03906
+39,06 mV
+=
+=
+=
+=
+UU
+UFS
+2
+---------
+5 V
+=
+=
+UU
+0
+21
+-----
+0
+22
+-----
+1
+23
+-----
+0
+24
+-----
+0
+25
+-----
+1
+26
+-----
+0
+27
+-----
+0
+28
+-----
++
++
++
++
++
++
++
+
+
+
+
+10
+
+1,40625 V
+=
+=
+
+[PAG 1784]
+XVII-184
+ELETTRONICA ANALOGICA E DIGITALE
+dell'ingresso analogico che viene codificato non vale UFS, tensione di fondo scala, ma
+UFS  Q2; infatti, l'ultimo intervallo di quantizzazione permette la conversione dei valori
+compresi fra 6,5UFS8 e 7,5UFS8, che vengono codificati con 111.
+Riassumendo, l'ingresso analogico è prima quantizzato, e gli infiniti valori della varia-
+bile analogica, compresi fra 0 e UFS, sono sostituiti da un numero discreto di valori (0UFS
+8, 1UFS8, ..., 7UFS8); ciò rende possibile la codifica, che, nell'esempio della Fig.
+XVII.26.4, è avvenuta utilizzando il codice binario. In generale, per un convertitore a n
+bit, sono possibili 2n valori discreti e l'intervallo di variabilità della grandezza analogica 0
+ UFS viene suddiviso in 2n parti; il quanto vale Q  UFS2n.
+Fig. XVII.26.4   Esempio di quantizzazione e codifica di una grandezza analogica.
+B)  Risoluzione
+La risoluzione di un convertitore è la minima variazione dell'ingresso analogico che
+comporta, per qualsiasi valore dell'ingresso stesso, una variazione dell'uscita digitale.
+Dalla Fig. XVII.26.4 si deduce che la risoluzione è uguale al quanto Q  UFS23; nel caso
+di convertitore a n bit, essa vale UFS2n. Talvolta la risoluzione viene indicata con 1/2n,
+per rendere il valore indipendente dal fondo scala del convertitore. In pratica, peraltro, si
+preferisce indicare la risoluzione dando il numero n di bit della parola digitale di uscita
+del convertitore.
+C)  Errore di quantizzazione
+Nel processo di quantizzazione è implicita l'introduzione di un errore, detto errore di
+quantizzazione (o anche rumore di quantizzazione); infatti, gli infiniti valori della gran-
+dezza analogica, compresi in un intervallo di quantizzazione Q, sono sostituiti dal valore
+centrale dell'intervallo stesso. La scelta fatta dei valori quantizzati e degli intervalli con-
+sente di ridurre l'errore massimo al valore Q2. Ad esempio, i valori dell'ingresso analo-
+gico compresi fra 3,5 UFS/8 e 4,5 UFS/8 sono sostituiti da 4 UFS/8, con un errore massimo
+di 0,5 UFS/8  Q2. Si ha quindi e  Q2, avendo indicato con e l'errore di quantizza-
+zione e con Q il quanto. L'errore rimane costante per tutti gli intervalli in cui è suddiviso il
+campo di variazione della grandezza analogica; l'errore relativo, cioè il rapporto fra
+l'errore di quantizzazione e il valore del segnale analogico, aumenta perciò al diminuire
+del segnale di ingresso. Considerando l'errore di quantizzazione come un rumore, si può
+dire che il rapporto segnale/rumore diminuisce al diminuire del segnale. Quando si vuole
+che il rapporto segnale/rumore non diminuisca in corrispondenza dei segnali piccoli, si
+ricorre alla quantizzazione non uniforme: il quanto non viene più preso di valore costante,
+Q
+Ingresso
+analogico
+Uscita
+digitale
+000
+001
+010
+011
+100
+101
+110
+111
+0UFS
+8
+1UFS
+8
+2UFS
+8
+3UFS
+8
+4UFS
+8
+5UFS
+8
+7UFS
+8
+6UFS
+8
+UFS
+Q=UFS
+8
+
+[PAG 1785]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-185
+ma viene progressivamente ridotto al diminuire del segnale analogico. Ciò si ottiene, ad
+esempio, applicando il segnale analogico ad un amplificatore logaritmico, prima della
+conversione; l'amplificazione risulta maggiore ai livelli più bassi del segnale, il che equi-
+vale a ridurre l'influenza dell'errore di quantizzazione in corrispondenza dei valori più
+bassi del segnale analogico (in pratica, un aumento del segnale rispetto al valore origina-
+rio equivale ad una diminuzione del quanto).
+D)  Esempi di quantizzazione di segnali analogici
+Nella Fig. XVII.26.5 sono riportati due esempi di grandezze analogiche variabili nel
+tempo.
+Si suppone che esse siano applicate ad un ADC a tre bit, con fondo scala UFS = 8 V; il
+quanto vale pertanto Q = 1 V. Prendendo come riferimento la Fig. XVII.26.4, i valori
+compresi nella fascia 0  0,5 V sono sostituiti dal valore 0 V; quelli nella fascia 0,5 V 
+1,5 V sono sostituiti da 1 V; quelli nella fascia 1,5 V  2,5 V sono sostituiti da 2 V e così
+via, fino alla fascia 6,5 V  7,5 V, i cui valori sono sostituiti dal valore 7 V. I valori
+discreti ottenuti sono codificati in binario.
+Nella Fig. XVII.26.5a, sono riportate una tensione ua, ad andamento lineare nel tempo,
+e la corrispondente tensione quantizzata uq, ottenuta con i criteri sopra esposti; nella Fig.
+XVII.26.5b, è disegnato l'andamento dell'errore di quantizzazione e  uq  ua (si noti come
+esso sia compreso fra 0,5 V e 0,5 V). Nella Fig. XVII.26.5c sono riportate una generica
+funzione ua e la relativa tensione quantizzata uq; l'andamento dell'errore è disegnato nella
+Fig. XVII.26.5d.
+Fig. XVII.26.5   Esempi di grandezze analogiche variabili nel tempo, loro quantizzazione
+e determinazione dell'errore di quantizzazione: a) tensione ua variabile linearmente nel
+tempo e tensione quantizzata uq; b) errore di quantizzazione nell'esempio precedente a);
+c) tensione ua, funzione generica del tempo e relativa tensione quantizzata uq; d) errore di
+quantizzazione nell'esempio precedente c).
+t
+0
+1
+2
+3
+4
+5
+6
+7
+ua
+(000)
+(001)
+(010)
+(011)
+(100)
+(101)
+(110)
+(111)
+ua, uq (V)
+uq
+a)
+t
+0
+1
+2
+3
+4
+5
+6
+7
+ua
+(000)
+(001)
+(010)
+(011)
+(100)
+(101)
+(110)
+(111)
+ua, uq (V)
+uq
+c)
+0,5
+0
+0,5
+e (V)
+t
+b)
+0,5
+0
+0,5
+e (V)
+t
+d)
+
+[PAG 1786]
+XVII-186
+ELETTRONICA ANALOGICA E DIGITALE
+E)  Tipi di ADC
+I convertitori analogico-digitali compiono essenzialmente due operazioni: la quantiz-
+zazione del segnale analogico e la codifica dei valori ottenuti. Nella Fig. XVII.26.6 è
+riportato un esempio di simbolo grafico di ADC. Sono indicati: il segnale analogico di
+ingresso da convertire UI; la parola digitale di uscita di n bit; il segnale di comando di ini-
+zio conversione SC (Start of Conversion); il segnale EOC (End Of Conversion), che rivela
+la fine della conversione. Qualora il tempo impiegato per la conversione non sia più tra-
+scurabile in relazione alla velocità di variazione del segnale di ingresso, è necessario
+impiegare, prima del convertitore, un circuito di Sample/Hold. Esso ha la funzione di
+campionare il segnale nell'istante in cui si desidera convertirlo e mantenerlo costante
+all'ingresso del convertitore fino alla fine della conversione.
+Fig. XVII.26.6   Un esempio di simbolo di ADC.
+I principali tipi di convertitori A/D sono: di tipo parallelo; ad approssimazioni succes-
+sive; a rampa semplice e a doppia rampa; a commutazione di capacità; a contatore; di tipo
+delta-sigma.
+26.3  Esempi di schemi di convertitori: il convertitore D/A a resistori pesati e il con-
+vertitore A/D ad approssimazioni successive
+A)  Convertitore D/A a resistori pesati
+I convertitori a resistori pesati sono i tipi più semplici di convertitori D/A; essi consi-
+stono essenzialmente di un circuito sommatore, in cui ad ogni bit è associata una resi-
+stenza di valore dipendente dal peso del bit stesso.
+Si considera un circuito a soli tre bit, per semplicità; lo schema è riportato nella Fig.
+XVII.26.7. È costituito da tre resistenze che possono essere connesse ad un generatore di
+tensione di riferimento URIF; la connessione avviene tramite commutatori, la cui commu-
+tazione è determinata dai valori dei bit della parola di ingresso. Nell’esempio, al valore
+uno del bit di ingresso corrisponde la connessione delle resistenze al generatore di riferi-
+mento. Le resistenze hanno valore pesato, in relazione al codice binario: ognuna ha valore
+metà della precedente, passando dal bit meno significativo a quello più significativo. Se R
+è la resistenza corrispondente al bit meno significativo B0, la resistenza corrispondente al
+bit B1 vale R2, la resistenza corrispondente al bit B2 vale R4; in generale, la resistenza Rk
+corrispondente a Bk, bit di ordine k, vale:
+(XVII.26.5)
+Per questo motivo il convertitore è detto a resistori pesati.
+L'amplificatore operazionale consente di: convertire le correnti nelle resistenze in ten-
+sione all'uscita; avere un'uscita a bassa impedenza; ottenere all'uscita livelli diversi di ten-
+B0
+B1
+B2
+Bn1
+SC
+UI
+A/D
+EOC
+Rk
+R
+2k
+----
+=
+
+[PAG 1787]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-187
+sione, scegliendo opportunamente il valore di R'.
+Fig. XVII.26.7   Schema di un convertitore D/A a resistori pesati, a tre bit.
+Per determinare la tensione di uscita, si osserva che l'ingresso invertente dell'amplifi-
+catore operazionale è a massa virtuale, dato che si suppone l'amplificatore operazionale
+ideale e dato che l'ingresso non invertente è a massa. Le cadute di tensione sulle tre resi-
+stenze sono, perciò, uguali e valgono tutte URIF; le correnti nelle resistenze di valore R4,
+R2 e R hanno espressione, rispettivamente, URIF(R4), URIF(R2), URIFR. Si ha pertanto:
+(XVII.26.6)
+Questa relazione, espressa in modo analogo alla XVII.26.1, si può scrivere:
+(XVII.26.7)
+Confrontando la XVII.26.7 con la XVII.26.1, si deduce che la XVII.26.7 è l'equazione
+di un convertitore con tensione di fondo scala UFS e quanto Q dati da:
+(XVII.26.8)
+La tensione di fondo scala e le tensioni all'uscita, corrispondenti alle diverse combina-
+zioni dei bit di ingresso, sono negative. Per ottenere tensioni di fondo scala positive si
+possono impiegare tensioni di riferimento negative.
+Si è fatto il caso di convertitore a tre bit; nel caso di n bit, si ha:
+(XVII.26.9)
+con tensione di fondo scala UFS e quanto Q dati da:
+(XVII.26.10)
+Rispetto agli altri tipi di convertitori D/A, il convertitore a resistori pesati ha il vantag-
+gio di richiedere un minor numero di resistenze e quindi di avere uno schema più sem-
+B0
+B1
+B2
+URIF
+0
+1
+0
+1
+0
+1
+R4
+R2
+R
+I
+UU
+R'
+
+
+UU
+RI
+–
+R
+B2URIF
+R
+4
+
+-------------------
+B1URIF
+R
+2
+
+-------------------
+B0URIF
+R
+-------------------
++
++
+
+
+
+
+–
+=
+=
+UU
+B2
+2
+-----
+B1
+22
+-----
+B0
+23
+-----
++
++
+
+
+
+
+
+
+23R
+R-----URIF
+–
+
+
+
+
+=
+UFS
+23 R
+R-----URIF ;
+–
+=
+Q
+R
+R-----URIF
+–
+=
+UU
+B n
+1
+–
+2
+-------------
+B n
+2
+–
+22
+-------------
+
+B1
+2 n
+1
+–
+-------------
+B0
+2 n
+-----
++
++
++
++
+
+
+
+
+
+
+2n R
+R-----URIF
+–
+
+
+
+
+=
+UFS
+2n R
+R-----URIF ;
+–
+=
+Q
+R
+R-----URIF
+–
+=
+
+[PAG 1788]
+XVII-188
+ELETTRONICA ANALOGICA E DIGITALE
+plice. Ha, però, alcuni inconvenienti, che ne limitano l'impiego al crescere del numero di
+bit. In particolare, il campo di valori di resistenze richieste è ampio. Ad esempio, si consi-
+deri il caso di un convertitore a 10 bit; se la resistenza associata al bit più significativo
+vale 1 M, quella associata al bit meno significativo vale 1,953 k e quindi è ampio
+l'intervallo in cui sono compresi i valori delle resistenze; è difficile trovare componenti
+che, in un intervallo così ampio di valori, abbiano le stesse caratteristiche al variare della
+temperatura e che perciò consentano di mantenere costanti i valori dei rapporti e quindi i
+pesi rispettivi dei bit; la precisione, pertanto, non è alta.
+B)  Convertitore A/D ad approssimazioni successive
+I convertitori analogico-digitali ad approssimazioni successive sono caratterizzati da
+elevata risoluzione e tempi di conversione bassi; per questo sono ampiamente diffusi, in
+particolare quando i convertitori devono essere interfacciati con i microprocessori.
+Lo schema di principio di un convertitore A/D ad approssimazioni successive è rap-
+presentato nella Fig. XVII.26.8; si considera, per semplicità, il caso di convertitore A/D a
+tre bit. Il convertitore risulta composto di: un comparatore C; un registro ad approssima-
+zioni successive, indicato con SAR (da Successive Approximation Register); un converti-
+tore D/A con offset uguale a Q2, essendo Q il valore del quanto; un generatore di clock.
+Il circuito funziona nel modo seguente. La tensione analogica da convertire UI è appli-
+cata al comparatore. Si invia un impulso all'ingresso SC (Start of Conversion) del SAR,
+determinando l'inizio della conversione.
+–  Al primo impulso di clock, nel registro ad approssimazioni successive SAR il bit più
+significativo, B2, viene portato al livello 1, mentre tutti gli altri bit rimangono a livello
+zero. La parola digitale di uscita del SAR, 100, viene convertita dal convertitore D/A e la
+tensione di uscita U è applicata al comparatore, in cui è confrontata con la tensione di
+ingresso UI. Se U  UI, l'uscita del comparatore è alta, il valore 1 della cifra è confermato
+e memorizzato; diversamente viene memorizzato il valore 0. Infatti U UI significa che
+l'uscita del SAR, convertita, fornisce una tensione superiore alla tensione di ingresso, e
+che quindi la parola digitale del SAR è superiore al valore digitale corretto; il valore del
+bit preso in considerazione deve perciò essere portato a livello basso.
+–  Al secondo impulso di clock viene provato il bit di peso immediatamente inferiore del
+SAR: esso viene portato a livello 1 e tale valore viene mantenuto o no, a seconda che sia o
+meno verificata la condizione U  UI.
+–  Il procedimento continua fino a che è stato preso in considerazione il bit meno signifi-
+cativo; è allora attivata la linea relativa al segnale EOC (End Of Conversion), per indicare
+che la conversione è terminata e che quindi il dato digitale presente all'uscita del registro
+ad approssimazioni successive è valido.
+–  I bit di uscita del SAR sono i bit che si portano all'uscita del convertitore A/D.
+Se il convertitore ha n bit (risoluzione n), il tempo necessario alla conversione è
+uguale a n periodi di clock.
+Vi è da osservare che il convertitore D/A deve aver un offset uguale a Q2; infatti,
+come si vede nella Fig. XVII.26.4, la soglia di tensione analogica a cui avviene la discri-
+minazione fra un valore quantizzato ed il precedente, o il successivo, si trova in corrispon-
+denza del valore quantizzato diminuito, o aumentato, di metà quanto. Ad esempio, se
+UFS = 8 V e il convertitore è a tre bit, il quanto vale UFS8 = 1 V; se la tensione di ingresso
+è UI = 2 V = 2UFS8, ad essa corrisponde il valore digitale B2B1B0 = 010 e con lo stesso
+valore digitale sono convertite le tensioni di ingresso da 1,5 V a 2,5 V (Fig. XVII.26.4). Se
+all'ingresso si applica una tensione UI = 1,7 V e se il convertitore D/A non ha tensione di
+offset, l'uscita 010 non è accettata, in quanto ad essa corrisponde U = 2 V  UI = 1,7 V; il
