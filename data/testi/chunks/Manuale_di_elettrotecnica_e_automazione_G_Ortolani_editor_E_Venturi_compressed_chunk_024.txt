@@ -1,0 +1,1287 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 24/116 ===
+Chars: 44,359 | Offset: 1,015,671
+
+
+
+[PAG 503]
+CAD
+VI-129
+Ora la visualizzazione è ingrandita di cinquanta volte rispetto alle unità dello spazio 
+carta, quindi la scala di stampa sarà 1:20.
+–  Usare il comando Pan per visualizzare la cucina della prima villetta a sinistra. Fare 
+clic sul pulsante Layer e congelare i layer Quote interne e Quote esterne.
+–  Tornare allo spazio carta. Il risultato sarà quello di Fig. VI.13.7.
+Fig. VI.13.7  
+Si vuole creare una finestra più piccola, nella quale visualizzare il lavello, ingrandito 
+in scala 1:10. 
+–  Fare clic su Visualizza, nel menu a discesa, e quindi su Finestre, e ancora 1 finestra.
+–  Fare clic nel punto di coordinate 194,190 circa, per indicare il primo punto. Trascinare 
+il puntatore e fare clic nel punto 270,60 circa, per il secondo punto. Si apre una nuova 
+finestra contenente l’intero disegno; fare doppio clic all’interno di quest’ultima finestra. 
+Si avrà il passaggio allo spazio modello affiancato e la finestra apparirà con i bordi 
+ingrossati. Digitare:
+Z (seguito da Invio).
+100XP (seguito da Invio).
+Ora la visualizzazione è ingrandita di cento volte rispetto alle unità dello spazio carta, 
+quindi la scala di stampa sarà 1:10.
+–  Usare il comando Pan per visualizzare il lavello della cucina. Fare clic sul pulsante 
+Layer e congelare nella finestra corrente i layer Quote interne e Quote esterne.
+–  Tornare allo spazio carta. Dalla finestra di controllo dei layer, rendere corrente il layer 
+testo e congelare il layer finestre. Il contorno delle finestre diventa invisibile e rimangono 
+solo i due disegni.
+13.7  Aggiunta di testo sullo spazio carta
+–  Fare clic sulla voce Stile di testo, nel menu a discesa Formato. 
+–  Fare clic sul pulsante Nuovo, digitare il nome dello stile, Carta, e fare clic su OK. Sce-
+gliere Romans.shx come nome del font, e impostare a 3 l’altezza del carattere.
+
+[PAG 504]
+VI-130
+CAD
+–  Chiudere la finestra di dialogo.
+–  Fare clic su Testo, nel menu a discesa Disegna, e poi su Riga singola di testo. Viene 
+chiesto di indicare il punto iniziale del testo. Attivare la Griglia e lo Snap con F7 e F9. 
+Fare clic con il pulsante sinistro sotto il lavello, nel punto di coordinate 210,55.
+–  Premere Invio per confermare l’angolo di rotazione 0. Digitare:
+Particolare lavello (premere Invio una volta ed il cursore andrà a capo)
+Scala 1:10 (premere Invio due volte per concludere il comando).
+Il risultato è visibile in Fig. VI.13.8.
+Fig. VI.13.8  
+–  Fare clic su Imposta pagina, nel menu a discesa File e quindi su Stampa.
+BIBLIOGRAFIA
+AUTODESK, Guida in linea di Autocad 2000, Autodesk, Inc.
+AUTODESK, AutoCAD 2009 Manuale dell’utente, Autodesk, Inc., 2008
+GRABOWSKI R., Autocad 14 guida completa, Apogeo, Milano, 1998.
+MIDDLEBROOK M. - SMITH B., Autocad 2000 for dummies, Apogeo, Milano, 1999.
+MILLER A.R., Autocad 12 Guida pratica, Tecniche Nuove, Milano, 1994.
+PERELLA G. - BERTI A., Disegno tecnico: Tecniche tradizionali ed uso del computer, 
+Atlas, Bergamo, 1991.
+YARWOOD A., Autocad 14 Guida pratica, Tecniche nuove, Milano, 1998.
+
+[PAG 505]
+Sezione VII
+Elettrotecnica generale
+INDICE 
+pag.
+1    GRANDEZZE ELETTRICHE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.1    Struttura della materia . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.2    Cariche elettriche, corrente elettrica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.3    Intensità della corrente elettrica e densità di corrente  . . . . . . . . . . . . . . . .
+5
+1.4    Differenza di potenziale, tensione elettrica . . . . . . . . . . . . . . . . . . . . . . . .
+6
+1.5    Legge di Ohm, resistenza, conduttanza . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+1.6    Resistività, conduttività, variazione della resistività con la temperatura . .
+8
+1.7    Energia, potenza elettrica, legge di Joule  . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+2    BIPOLI ELETTRICI E LORO COLLEGAMENTI  . . . . . . . . . . . . . . . . . . . . . .
+11
+2.1    Bipolo elettrico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+2.2    Generatore di tensione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+2.3    Generatore di corrente . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+2.4    Legge generale di Ohm . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+2.5    Punto di lavoro, rendimento di un generatore  . . . . . . . . . . . . . . . . . . . . . .
+16
+2.6    Andamento della potenza al variare del carico  . . . . . . . . . . . . . . . . . . . . .
+18
+2.7    Equivalenza fra i generatori reali di tensione e di corrente  . . . . . . . . . . . .
+19
+2.8    Leggi o principi di Kirchhoff  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+2.9    Collegamento in serie, in parallelo, in serie parallelo  . . . . . . . . . . . . . . . .
+21
+2.10    Resistori collegati a stella e a triangolo . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+2.11    Esempi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+3    METODI DI RISOLUZIONE DELLE RETI LINEARI . . . . . . . . . . . . . . . . . . .
+30
+3.1    Applicazione dei principi di Kirchhoff  . . . . . . . . . . . . . . . . . . . . . . . . . . .
+30
+3.2    Metodo di Maxwell . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+33
+3.3    Metodo del potenziale ai nodi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+3.4    Teorema di Millmann  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+3.5    Sovrapposizione degli effetti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+36
+3.6    Generatore equivalente (teorema) di Thevenin  . . . . . . . . . . . . . . . . . . . . .
+38
+3.7    Generatore equivalente (teorema) di Norton . . . . . . . . . . . . . . . . . . . . . . .
+40
+3.8    Teorema di Miller . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+41
+3.9    Principio di sostituzione e compensazione  . . . . . . . . . . . . . . . . . . . . . . . .
+43
+3.10    Principio di reciprocità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+45
+3.11    Trasformazione stella-poligono . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+46
+3.12    Reti con generatori dipendenti . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+47
+4    RETI ELETTRICHE CAPACITIVE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+49
+4.1    Richiami di elettrostatica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+49
+
+[PAG 506]
+VII-2
+ELETTROTECNICA GENERALE
+4.2    Condensatore  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+54
+4.3    Capacità di un condensatore piano con dielettrico omogeneo . . . . . . . . . . 
+55
+4.4    Collegamento dei condensatori . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+55
+4.5    Capacità di un condensatore piano con dielettrico non omogeneo  . . . . . . 
+59
+4.6    Capacità di condensatori sferici e di altro tipo  . . . . . . . . . . . . . . . . . . . . . 
+60
+4.7    Campi elettrici nei conduttori percorsi da corrente . . . . . . . . . . . . . . . . . . 
+60
+4.8    Energia immagazzinata da un condensatore carico . . . . . . . . . . . . . . . . . . 
+61
+4.9    Forze attrattive in un condensatore carico  . . . . . . . . . . . . . . . . . . . . . . . . 
+62
+4.10    Transitorio di carica e scarica di un condensatore  . . . . . . . . . . . . . . . . . 
+62
+4.11    Risoluzione di reti capacitive in regime costante  . . . . . . . . . . . . . . . . . . 
+66
+4.12    Risoluzione delle reti capacitive nel periodo transitorio . . . . . . . . . . . . . 
+71
+5    GRANDEZZE MAGNETICHE E LORO LEGAMI, CIRCUITI MAGNETICI  
+73
+5.1    Richiami di magnetismo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+73
+5.2    Campo magnetico prodotto da un conduttore rettilineo, vettore induzione
+magnetica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+74
+5.3    Configurazione di alcuni campi magnetici . . . . . . . . . . . . . . . . . . . . . . . . 
+75
+5.4    Forza magnetomotrice e forza magnetizzante . . . . . . . . . . . . . . . . . . . . . . 
+77
+5.5    Permeabilità magnetica relativa, classificazione dei materiali magnetici . 
+78
+5.6    Caratteristica di magnetizzazione, ciclo di isteresi . . . . . . . . . . . . . . . . . . 
+79
+5.7    Flusso magnetico  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+80
+5.8    Riluttanza e permeanza, legge di Hopkinson, legge della circuit. magnetica 
+81
+5.9    Energia del campo magnetico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+82
+5.10    Induttanza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+83
+5.11    Corpi ferromagnetici in campi magnetici, schermi . . . . . . . . . . . . . . . . . 
+84
+5.12    Risoluzione di semplici circuiti magnetici  . . . . . . . . . . . . . . . . . . . . . . . 
+86
+6    INTERAZIONI TRA CIRCUITI ELETTRICI E CAMPI MAGNETICI . . . . . . 
+92
+6.1    Forze di natura elettromagnetica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+92
+6.2    Forze agenti fra conduttori paralleli (forze elettrodinamiche)  . . . . . . . . . 
+93
+6.3    Forza portante di un elettromagnete . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+95
+6.4    Induzione elettromagnetica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+96
+6.5    Tensione indotta in un conduttore in moto relativo nel campo magnetico  
+97
+6.6    Tensione indotta in una spira rotante in un campo magnetico  . . . . . . . . . 
+100
+6.7    Autoinduzione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+102
+6.8    Mutua induzione . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+103
+6.9    Induttori mutuamente accoppiati collegati in serie . . . . . . . . . . . . . . . . . . 
+105
+6.10    Fenomeni transitori nei circuiti induttivi  . . . . . . . . . . . . . . . . . . . . . . . . 
+106
+6.11    Esempi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+109
+7    CIRCUITI IN CORRENTE ALTERNATA MONOFASE  . . . . . . . . . . . . . . . . 
+113
+7.1    Concetti introduttivi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+113
+7.2    Circuito puramente resistivo (ohmico) . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+119
+7.3    Circuito puramente induttivo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+121
+7.4    Circuito puramente capacitivo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+123
+7.5    Circuito ohmico-induttivo (R-L) serie e parallelo  . . . . . . . . . . . . . . . . . . 
+125
+7.6    Circuito ohmico-capacitivo (R-C) serie e parallelo  . . . . . . . . . . . . . . . . . 
+128
+
+[PAG 507]
+ELETTROTECNICA GENERALE
+VII-3
+7.7    Circuito R-L-C serie e parallelo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+130
+7.8    Potenza elettrica  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+134
+7.9    Comportamento dei circuiti al variare della frequenza  . . . . . . . . . . . . . . .
+137
+7.10    Equivalenza serie-parallelo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+142
+7.11    Circuiti equivalenti dei bipoli induttivi reali . . . . . . . . . . . . . . . . . . . . . .
+142
+7.12    Esempi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+144
+8    RISOLUZIONE DELLE RETI LINEARI IN CORRENTE ALTERNATA
+MONOFASE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+147
+8.1    Bipoli passivi collegati in serie e parallelo  . . . . . . . . . . . . . . . . . . . . . . . .
+148
+8.2    Trasformazione stella-triangolo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+148
+8.3    Metodi di risoluzione  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+150
+8.4    Teorema di Boucherot . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+151
+8.5    Generatore di corrente alternata monofase  . . . . . . . . . . . . . . . . . . . . . . . .
+151
+8.6    Quadripoli . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+152
+8.7    Esempi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+154
+9    SISTEMI TRIFASI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+158
+9.1    Collegamento generatori a stella o triangolo; tensioni di fase e concatenate 158
+9.2    Carico equilibrato a stella e triangolo; correnti di fase e di linea . . . . . . . .
+161
+9.3    Sistemi trifasi simmetrici e squilibrati . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+163
+9.4    Sistemi trifasi dissimmetrici  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+165
+9.5    Potenze nei sistemi trifasi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+167
+9.6    Rifasamento dei carichi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+170
+9.7    Esempi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+172
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+177
+1  GRANDEZZE ELETTRICHE
+1.1  Struttura della materia
+L’atomo è la più piccola parte della materia che conserva le caratteristiche di un ele-
+mento. Risulta in modo molto semplificato costituito da un nucleo centrale formato da
+protoni e neutroni attorno al quale ruotano, su orbite stabilite, gli elettroni.
+I protoni sono particelle dotate di carica elettrica positiva pari a 1,602 x 1019 Cou-
+lomb e massa 1,6726  1024 g. Il loro numero, indicato con Z, rappresenta il numero ato-
+mico dell'elemento mentre il prodotto Z  e la carica elettrica positiva del nucleo.
+I neutroni sono particelle senza carica elettrica e massa praticamente uguale a quella
+dei protoni; essi agiscono come stabilizzatori del nucleo impedendo che la forza elettro-
+statica di repulsione che si manifesta fra i protoni ne determini il loro allontanamento. Il
+numero dei neutroni, comunque legato a quello dei protoni, non è costante, il rapporto
+neutroni/protoni varia infatti tra 1 e 1,6; la somma del numero dei protoni e di quello dei
+neutroni costituisce il numero di massa, essendo trascurabile la massa degli altri elementi
+
+[PAG 508]
+VII-4
+ELETTROTECNICA GENERALE
+presenti. Uno stesso elemento, a parità di numero di protoni, può avere un diverso numero
+di neutroni; si hanno in tal modo gli isotopi dell’elemento che presentano, rispetto a
+quello di origine, differenti caratteristiche fisiche e chimiche a causa del diverso numero
+di massa.
+Gli elettroni sono particelle dotate di carica elettrica negativa uguale a quella dei pro-
+toni e massa molto più piccola, pari a 9,1 x 1028 g; il loro numero è uguale a quello dei
+protoni per cui la carica totale dell’atomo è nulla.
+Quando un atomo perde o acquista elettroni diventa uno ione, positivo nel caso di per-
+dita di elettroni, negativo nel caso di acquisizione di elettroni; la carica positiva o negativa
+è pari rispettivamente a quella dei protoni o degli elettroni eccedenti.
+Gli elettroni ruotano attorno al nucleo descrivendo orbite, poste a varie distanze dallo
+stesso, ciascuna caratterizzata da un determinato valore di energia; i valori di energia
+(livelli) variano in modo discreto determinando zone di energia permessa e zone di ener-
+gia proibita, nelle quali è altamente improbabile la presenza di elettroni.
+Fig. VII.1.1   Rappresentazione dell’atomo di sodio.
+Le orbite elettroniche sono suddivise in gusci, livelli o strati elettronici, indicati con le
+lettere K, L, M, N, O, P, Q, a partire da quello più vicino al nucleo (Fig. VII.1.1); la mag-
+gior parte degli elementi non possiede tutti gli strati. Il numero degli elettroni che possono
+occupare uno strato è fisso ed è uguale per i primi quattro strati a 2n2, essendo n il numero
+quantico principale corrispondente al numero d’ordine dello strato.
+Le proprietà elettriche della materia, ma non solo queste, dipendono dal comporta-
+mento degli elettroni più periferici; infatti una semplice classificazione definisce
+–  conduttori i materiali caratterizzati da atomi con elettroni periferici non stabilmente
+vincolati al nucleo;
+–  isolanti i materiali con atomi che non possiedono elettroni liberi e perciò stabil-
+mente legati al nucleo;
+–  semiconduttori i materiali che presentano, rispetto alla conduzione, un comporta-
+mento intermedio fra conduttori e isolanti.
+1.2  Cariche elettriche, corrente elettrica
+Le cariche elettriche elementari sono costituite da elettroni, caratterizzati da massa
+assai piccola, e da ioni positivi o negativi la cui massa, molto più grande rispetto a quella
+di un elettrone, è invece praticamente quella dell’atomo o della molecola da cui essi deri-
+vano.
+Un corpo i cui atomi, per un motivo qualsiasi, hanno perso o acquistato elettroni,
+diventa sede di una carica elettrica composta dalla somma algebrica delle cariche elettri-
+che elementari, elettroni e ioni, da esso possedute. Dato che la materia in condizioni nor-
+mali è elettricamente neutra, se in un certo istante un corpo possiede una carica, ad
+esempio positiva, ciò significa che esisteranno in altra parte dello spazio le cariche nega-
+Nucleo, 11 protoni, 11 neutroni
+Strato K, n=1, 2 elettroni
+Strato L, n=2, 8 elettroni
+Strato M, n=3, 1 elettrone (possibili 18)
+
+[PAG 509]
+ELETTROTECNICA GENERALE
+VII-5
+tive che il corpo ha perduto; le cariche perciò non possono essere generate ma possono
+essere ottenute solamente strappando elettroni agli atomi; ovviamente queste cariche ten-
+deranno a ricombinarsi.
+Si definisce corrente elettrica un movimento di cariche elettriche sia negative che
+positive; dal tipo di movimento delle cariche elettriche dipendono le caratteristiche della
+corrente elettrica e quindi le sue manifestazioni esterne. Infatti, se le cariche fluiscono con
+velocità costante, la corrente sarà costante nel tempo; se invece le cariche si muovono con
+velocità variabile, la corrente sarà variabile nel tempo. La relazione i = f(t), rappresentata
+sul piano cartesiano (t, i), indica graficamente la forma d’onda e visualizza l’andamento
+della corrente nel tempo. Le Fig. VII.1.2, VII.1.3, VII.1.4, VII.1.5, rappresentano alcune
+delle forme d’onda della corrente elettrica più ricorrenti; si ricorda però che in linea teo-
+rica, i circuiti elettrici ed elettronici possono funzionare con grandezze elettriche aventi
+qualsiasi forma d’onda.
+Risulta infine dalla stessa definizione di corrente che una carica ferma, pur dando
+luogo a fenomeni elettrici interessanti, non può dar luogo a corrente.
+1.3  Intensità della corrente elettrica e densità di corrente
+La somma algebrica delle cariche elettriche in movimento definisce la quantità di
+elettricità Q la cui unità di misura è il coulomb [C].
+Un dispositivo idoneo a fornire alle cariche l’energia per un movimento ordinato e
+necessario affinché la corrente produca i suoi effetti, è denominato generatore elettrico; il
+verso di propagazione delle cariche dipende dalla loro natura e, benché la conduzione
+dovuta ad elettroni liberi sia di gran lunga più diffusa ed importante di quella imputabile
+agli ioni positivi, per convenzione si considera ancora la corrente formata da cariche posi-
+tive che si muovono all’interno di un circuito (Fig. VII.1.6) secondo un verso convenzio-
+nale così determinato:
+–  nel circuito esterno al generatore, dal polo positivo al polo negativo;
+–  nel circuito interno al generatore, dal polo negativo al polo positivo.
+Fig. VII.1.2   Corrente continua.
+Fig. VII.1.3   Corrente alternata sinusoidale.
+Fig. VII.1.4   Corrente raddrizzata sinusoi-
+dale.
+Fig. VII.1.5   Corrente rettangolare.
+i
+i
+t
+t
+0
+0
+I
+I
+I > 0
+I < 0
+i
+t
+0
+i
+i
+t
+t
+0
+0
+a doppia semionda
+a semplice semionda
+i
+i
+t
+t
+0
+0
+simmetrica
+a semplice semionda
+
+[PAG 510]
+VII-6
+ELETTROTECNICA GENERALE
+Fig. VII.1.6   Verso convenzionale della corrente.
+Si definisce intensità della corrente elettrica all’interno di un conduttore, il rapporto
+tra la carica elettrica q che transita lungo una sezione trasversale del conduttore in un
+dato intervallo di tempo t e la durata di tale intervallo.
+(VII.1.1)
+La relazione VII.1.1 definisce l’intensità della corrente media nel tempo.
+Se si considera un intervallo di tempo di valore infinitesimale t, si ottiene il valore
+istantaneo dell’intensità di corrente
+(VII.1.2)
+L’intensità di corrente è una grandezza fisica che si misura in Ampere (simbolo A) e
+lo strumento idoneo alla misura è l’amperometro. Esso viene inserito in un circuito in
+modo da essere attraversato da tutte le cariche elettriche in movimento che si intende
+misurare.
+Se in un conduttore di sezione trasversale S scorre in modo uniformemente distribuito
+una corrente di intensità I, si definisce densità di corrente J, misurata normalmente in
+A/mm2, il rapporto
+(VII.1.3)
+Qualora la corrente non fosse uniformemente distribuita nella sezione (come nel caso
+di correnti rapidamente variabili nel tempo), si avrà una densità di corrente variabile da
+punto a punto; il suo valore sarà in questo caso determinato dal rapporto fra la corrente di
+valore infinitesimo dI che transita attraverso la sezione infinitesima dS nel punto conside-
+rato e l’area dS
+(VII.1.4)
+1.4  Differenza di potenziale, tensione elettrica
+Affinché una carica Q possa fluire fra due punti di un circuito elettrico, è necessario
+l’impiego di una energia W; si definisce tensione elettrica fra due punti di un circuito il
+rapporto tra l’energia fornita alla carica elettrica durante il movimento e il valore della
+carica stessa
+(VII.1.5)
+G
+L
+L
+U
+
+
+G = generatore
+L = linea di collegamento
+U = utilizzatore
+I
+q
+t
+------
+=
+i
+dq
+dt
+------
+=
+J
+I
+S--
+=
+J
+dI
+dS
+-----
+=
+U
+W
+Q----
+=
+
+[PAG 511]
+ELETTROTECNICA GENERALE
+VII-7
+Nello studio dei circuiti (Fig. VII.1.7) elettrici la tensione è detta anche differenza di
+potenziale elettrico (d.d.p.) tra i due punti: per potenziale elettrico si intende la tensione
+di un punto rispetto a un riferimento rappresentato dalla massa del circuito (GND), che si
+suppone a potenziale zero.
+La tensione che si sviluppa all’interno dei generatori elettrici assume il nome di forza
+elettromotrice (f.e.m.); essa corrisponde all’energia che il generatore fornisce alla carica
+unitaria che fluisce nel circuito in cui esso è inserito.
+L’unità di misura della tensione è il Volt (V) e lo strumento elettrico idoneo alla sua
+misura è il voltmetro; esso viene inserito nei due punti del circuito tra i quali si intende
+misurare la differenza di potenziale.
+Fig. VII.1.7   Potenziale, differenza di potenziale, tensione.
+1.5  Legge di Ohm, resistenza, conduttanza
+La legge di Ohm assicura che a temperatura costante del conduttore esiste una propor-
+zionalità diretta fra il valore della tensione applicata fra due punti di un circuito e la cor-
+rente che fra essi fluisce, esprimibile con la relazione
+(VII.1.6)
+R, che costituisce il coefficiente di proporzionalità fra tensione applicata e corrente che
+transita, prende il nome di resistenza elettrica e sta ad indicare, col suo valore, il grado di
+difficoltà che gli elettroni di conduzione trovano nel muoversi all’interno del conduttore.
+Il valore di R dipende dalle caratteristiche del conduttore percorso da corrente; per-
+tanto, a parità di tensione applicata, la sostituzione di un conduttore con un altro di carat-
+teristiche differenti, determina un diverso valore dell’intensità di corrente I (Fig. VII.1.8).
+La resistenza elettrica si misura in Ohm ().
+Fig. VII.1.8   Rappresentazione gra-
+fica dell’equazione U = RI. Influenza
+del valore di R a parità di tensione
+applicata.
+A
+B
+UA = 8 V
+UB = 4 V
+UAB = 4 V
+U = 0
+GND
+UA = differenza di potenziale del punto A
+UB = differenza di potenziale del punto B
+UAB = differenza di potenziale (tensione)
+fra i punti A-B
+U
+RI
+=
+U
+R2 > R1
+I1
+U
+0
+I2
+R2
+R1
+I
+
+[PAG 512]
+VII-8
+ELETTROTECNICA GENERALE
+Per alcuni materiali, come ad esempio alcuni ossidi sinterizzati, la resistenza non è
+costante e quindi il legame tensione-corrente non è lineare. In questo caso si possono defi-
+nire diversi valori di resistenza e precisamente:
+–  per ogni punto Q di coordinate (U, I) appartenente alla curva, il rapporto R = UI
+rappresenta la resistenza totale e corrisponde al coefficiente angolare della retta passante
+per l’origine 0 e il punto Q;
+–  se si considerano due punti R e S della curva e i relativi incrementi I e U, il rap-
+porto ri = UI definisce la resistenza incrementale e corrisponde al coefficiente ango-
+lare della retta passante per i due punti considerati;
+–  se si riduce I ad un valore infinitamente piccolo dI anche U assumerà un valore infi-
+nitamente piccolo dU; il rapporto rd = dUdI, definisce la resistenza differenziale che rap-
+presenta il coefficiente angolare della retta tangente alla curva nel punto considerato.
+Spesso nelle applicazioni, per ragioni di comodità, si preferisce considerare il valore
+inverso della resistenza. Si definisce in tal modo una nuova grandezza fisica denominata
+conduttanza elettrica, identificata con il simbolo G, misurata in Siemens (S) ed espressa
+dalla relazione
+(VII.1.7)
+Ciò induce ad osservare che la legge di Ohm può essere formulata anche con la relazione
+(VII.1.8)
+1.6  Resistività, conduttività, variazione della resistività con la temperatura
+La resistività elettrica di un materiale, identificata con la lettera , rappresenta la resi-
+stenza offerta dall’unità di volume del materiale considerato, cioè la resistenza che si
+manifesta fra le facce piane e parallele di un cubo di lato unitario (in genere pari a 1 m). La
+definizione permette di esprimere la resistenza elettrica di un corpo mediante la relazione
+(VII.1.9)
+e quindi la resistività con la relazione
+(VII.1.10)
+L’unità di misura della resistività è mm2/m oppure m a seconda delle unità di
+misura adottate per la lunghezza e la sezione.
+Fig. VII.1.9   Significato grafico della resistenza.
+U
+0
+Q
+I
+Q1
+
+
+
+I
+U
+R
+S
+G
+1
+R---
+=
+I
+GU
+=
+R
+l
+S--
+=
+
+R S
+l--
+=
+
+[PAG 513]
+ELETTROTECNICA GENERALE
+VII-9
+La relazione VII.1.9 consente di formulare, mantenendo costante la tensione applicata
+al conduttore di resistività , le seguenti considerazioni:
+–  un aumento della sezione, a parità di lunghezza, determina una diminuzione della
+resistenza elettrica;
+–  un aumento di lunghezza, a parità di sezione, determina un aumento della resistenza
+elettrica.
+La grandezza inversa della resistività, esprimibile con
+(VII.1.11)
+è denominata conduttività elettrica del materiale conduttore; la sua definizione permette
+di esprimere anche la conduttanza in funzione delle caratteristiche del materiale con la
+relazione
+(VII.1.12)
+In base a quanto assunto per la resistività, la conduttività si misura in Sm/mm2 oppure
+in S/m.
+Nei materiali metallici, nei limiti del normale impiego, la resistività elettrica cresce
+all’aumentare della temperatura con una legge praticamente lineare, secondo il legame
+illustrato in Fig. VII.1.10.
+Fig. VII.1.10   Legame fra resistività (resistenza) e temperatura.
+Il punto definito dall’incontro della curva con l’asse delle ascisse individua la tempe-
+ratura critica; essa è definita come la temperatura alla quale la resistività assumerebbe un
+valore nullo, se il fenomeno si mantenesse lineare anche in regime di basse temperature.
+La relazione fra le resistività 2 e 1 a due diverse temperature 2 e 1 è
+(VII.1.13)
+dove c vale per il rame 234,5 °C e per l’alluminio 232,5 °C.
+Un’altra forma della relazione precedente, più comoda per i calcoli numerici, è
+(VII.1.14)
+dove  = 1(c + ) è il coefficiente di temperatura, assunto nella relazione precedente
+con riferimento alla temperatura 1.
+
+1
+--
+=
+G
+S
+l--
+=
+c
+; R
+R1; 1
+1 2
+ (°C)
+R2; 2
+
+2
+1
+-----
+R2
+R1
+-----
+c
+1
+
++
++
+c
+1
++
+------------------------------------
+1
+
+c
+1
++
+-------------------
++
+=
+=
+=
+2
+1 1
+1 2
+1
++
+
+
++
+
+
+=
+
+[PAG 514]
+VII-10
+ELETTROTECNICA GENERALE
+Il coefficiente di temperatura, misurato in K1, varia con la temperatura e può assu-
+mere valore positivo, negativo nullo (nel caso ideale).
+Considerando ora la variazione della resistività con la temperatura, si possono effet-
+tuare le seguenti considerazioni:
+–  se   0, la resistività aumenta con la temperatura, come avviene, anche se in
+misura minima, nella maggior parte dei materiali conduttori e, in misura più accentuata,
+per i materiali utilizzati nella costruzione dei termistori (PTC);
+–  se   0, la resistività diminuisce con la temperatura, come avviene, anche se in
+misura minima nel carbone e in modo più accentuato per i materiali utilizzati nella costru-
+zione dei termistori (NTC);
+–  se   0, la resistività non varia al variare della temperatura. Si cita anche il caso
+ideale perché il comportamento dei materiali utilizzati nella costruzione dei resistori da
+laboratorio si avvicina in modo sensibile a questa condizione.
+1.7  Energia, potenza elettrica, legge di Joule
+Un noto teorema afferma che l’energia non si crea né si distrugge ma si trasforma in
+un altro tipo di energia. L’energia elettrica si ottiene, ad esempio, dalla trasformazione di
+altri tipi di energia quali l’energia meccanica o l’energia chimica e affinché ciò avvenga è
+necessario attendere per un determinato tempo. L’energia che si trasforma e il tempo in
+cui avviene la trasformazione sono legati dalla relazione
+(VII.1.15)
+dove P rappresenta la potenza del sistema. L’unità di misura della potenza è il watt (W).
+Un’altra forma per determinare la potenza, molto utilizzata nei calcoli è
+(VII.1.16)
+L’espressione, che consente di calcolare la potenza elettrica di un qualsiasi elemento
+di circuito come prodotto tra la tensione e l’intensità di corrente, permette di formulare le
+seguenti considerazioni:
+–  se la tensione e la corrente sono entrambe costanti nel tempo, lo è anche la potenza;
+–  se la tensione e la corrente sono generalmente variabili nel tempo, la potenza è una
+funzione del tempo p(t) = u(t)i(t);
+–  se in un circuito circola corrente fra due punti allo stesso potenziale (U = 0), la
+potenza è nulla; l’elemento circuitale corrispondente è il corto circuito ideale;
+–  se tra due punti di un circuito a potenziale diverso non circola corrente (I = 0), la
+potenza è nulla; l’elemento circuitale corrispondente è il circuito aperto ideale.
+Si può constatare sperimentalmente che un conduttore percorso da corrente si riscalda.
+Il fenomeno, noto col nome di effetto Joule, spiegabile col fatto che le cariche elettriche che
+costituiscono la corrente, incontrando ostacoli nel loro movimento entro la materia, cedono
+energia cinetica che si trasforma in calore, è appunto esprimibile tramite la legge di Joule.
+Essa afferma che un qualsiasi corpo di resistenza R, attraversato per il tempo t da una cor-
+rente I, dissipa in calore una quantità di energia elettrica esprimibile con la relazione
+(VII.1.17)
+Riferendo l’energia al tempo t, si ha la potenza elettrica trasformata in calore dal
+sistema
+W
+Pt
+=
+P
+UI
+=
+W
+RI2t
+=
+
+[PAG 515]
+ELETTROTECNICA GENERALE
+VII-11
+(VII.1.18)
+La potenza può essere espressa anche mediante un’altra relazione, immediatamente
+ricavabile peraltro dalla precedente
+(VII.1.19)
+L’effetto Joule, generalmente considerato dannoso perché provoca perdita di potenza,
+riscaldamento delle apparecchiature e diminuzione del rendimento delle macchine, viene
+però utilizzato nelle apparecchiature per il riscaldamento elettrico (stufe elettriche, forni a
+resistenza, ecc), in alcuni dispositivi di protezione (fusibili) o ancora negli strumenti indi-
+catori termici (detti a filo caldo).
+2  BIPOLI ELETTRICI E LORO COLLEGAMENTI
+Gli argomenti di questo capitolo vengono trattati ritenendo verificate le seguenti ipo-
+tesi:
+–  i circuiti funzionano in regime stazionario; sono cioè esauriti i fenomeni transitori e
+le grandezze elettriche hanno assunto la loro forma definitiva;
+–  si considera la forma d’onda continua, anche se le leggi e i principi introdotti hanno
+validità generale.
+Tab. VII.1.1   Resistività e coefficiente di temperatura a 0 °C di alcuni materiali
+conduttori
+Materiale
+Resistività
+0  a 0 °C
+( mm2/m)
+Coefficiente di
+temperatura 0 (K1)
+Osservazioni
+Rame elettrolitico
+0,016
+0,00426
+Alluminio al 98%
+0,0265
+0,0043
+Acciaio (filo)
+0,1  0,16
+0,0039
+Ferro, ferro zincato (filo)
+0,13  0,14
+0,0046  0,005
+Aldrey
+0,03
+0,0036
+Argento
+0,015
+0,0038
+Bronzo fosforoso
+0,018
+0,004
+Ottone
+0,085
+0,0039
+Piombo
+0,198
+0,0043
+Nichel
+0,118
+0,006
+Platino
+0,103
+0,0036
+Argentana
+0,35  0,40
+0,00017
+Lega di Cu - Ni - Zn
+Manganina
+0,42  0,46
+0,00001
+84% Cu  4% Ni  12% Mn
+Costantana
+0,5
+0,00002
+55% Cu  45% Ni  
+Carbone
+67,3
+ 0,00045
+Mercurio
+0,94
+0,00089
+Tungsteno
+0,05
+0,0042
+Zinco
+0,056
+0,0037
+Stagno
+0,11
+0,0043
+P
+RI2
+=
+P
+U2
+R
+------
+GU2
+=
+=
+
+[PAG 516]
+VII-12
+ELETTROTECNICA GENERALE
+2.1  Bipolo elettrico
+Un circuito elettrico può essere considerato come un insieme di elementi predisposti e
+collegati fra loro in modo che fra essi possa scorrere una corrente elettrica. Gli elementi
+fondamentali che costituiscono un circuito elettrico sono i generatori, i conduttori di col-
+legamento e gli utilizzatori. Normalmente i collegamenti fra gli elementi avvengono
+mediante due punti, chiamati anche morsetti.
+Il bipolo elettrico (Fig. VII.2.1) è un componente, o un insieme di componenti riduci-
+bili a uno equivalente, che interagisce col resto del sistema elettrico in due punti soltanto,
+caratterizzato dalle grandezze:
+–  tensione U o differenza di potenziale d.d.p. fra i punti A e B (il segno  indica il
+morsetto a potenziale positivo);
+–  corrente I che circola fra i punti A e B (la freccia indica il segno positivo della cor-
+rente).
+Il legame fra la tensione e la corrente di un bipolo può essere espresso in forma anali-
+tica con relazioni del tipo U = f(I) o I = g(U) o in forma grafica mediante una curva detta
+caratteristica esterna o caratteristica volt-amperometrica (Fig. VII.2.2).
+Se la caratteristica esterna è una retta, il bipolo è lineare; se la caratteristica esterna
+non è una retta, il bipolo è non lineare.
+Per interpretare correttamente la caratteristica esterna di un bipolo, bisogna stabilire
+delle convenzioni di segno e considerare a quale di esse la caratteristica si riferisce. Ven-
+gono utilizzate le seguenti convenzioni di segno:
+–  convenzione di segno degli utilizzatori: si considera positivo il verso della corrente
+quando essa, all’interno del bipolo, va dal morsetto positivo a quello negativo della ten-
+sione, ovvero entra nel bipolo dal punto con tensione positiva (Fig. VII.2.3);
+–  convenzione di segno dei generatori: si considera positivo il verso della corrente
+quando essa esce dal bipolo dal morsetto positivo della tensione (Fig. VII.2.4).
+Fig. VII.2.1   Simbolo del bipolo elet-
+trico.
+Fig. VII.2.2   a) caratteristica esterna U =
+f(I) di un bipolo lineare; b) caratteristica
+esterna I = f(U) di un bipolo non lineare.
+Fig. VII.2.3   Convenzione di segno degli utilizzatori e caratteristica esterna.
+A
+B
+U
+I
+0
+I
+U
+a)
+b)
+I
+A
+B
+
+
+UAB
+UAB
+0
+I
+I
+A
+B
+
+
+UAB
+UAB
+0
+I
+
+[PAG 517]
+ELETTROTECNICA GENERALE
+VII-13
+L’esame della caratteristica esterna di un bipolo elettrico (Fig. VII.2.5) permette di definire
+le grandezze:
+–  tensione a vuoto U0: è la tensione che si ha ai morsetti del bipolo quando in esso
+circola una corrente nulla, ossia quando il bipolo funziona a vuoto; essa è rappresentata
+dal segmento intercettato dalla caratteristica sull’asse della tensione;
+–  corrente di corto circuito Icc: è la corrente che circola nel bipolo quando la tensione
+ai suoi morsetti è nulla, ossia quando gli stessi sono chiusi in corto circuito; essa è rappre-
+sentata dal segmento intercettato dalla caratteristica sull’asse della corrente.
+I valori assunti da U0 e Icc permettono di suddividere i bipoli in:
+–  passivi o inerti, quando la tensione a vuoto e la corrente di corto circuito sono nulle
+e, quindi, la caratteristica esterna passa per l’origine degli assi (per esempio resistori);
+–  attivi, quando la tensione a vuoto e la corrente di corto circuito sono entrambe
+diverse da zero e la caratteristica esterna non passa per l’origine degli assi.
+2.2  Generatore di tensione
+Generatore ideale di tensione
+È un bipolo attivo che mantiene ai suoi morsetti una tensione costante al variare della
+corrente erogata. La tensione, che prende il nome di tensione impressa o forza elettromo-
+trice (f.e.m.), si indica con E e la sua equazione caratteristica è
+(VII.2.1)
+Il simbolo del bipolo e la sua caratteristica esterna sono rappresentati nella Fig. VII.2.6.
+Generatore reale di tensione
+È un bipolo attivo che non mantiene costante la tensione ai suoi morsetti al variare della
+corrente erogata. La causa va ricercata nella caduta di tensione della resistenza interna del
+generatore, che è necessario introdurre nel circuito equivalente per tener conto della dissi-
+pazione di parte dell’energia generata, per motivi elettrici, magnetici e meccanici.
+L’equazione caratteristica è
+(VII.2.2)
+dove I è la corrente che il generatore eroga al carico a cui è collegato.
+Fig. VII.2.4   Convenzione di segno dei generatori e caratteristica esterna.
+Fig. VII.2.5   Tensione a vuoto e corrente di
+cortocircuito.
+I
+A
+B
+
+
+UAB
+UAB
+0
+I
+I
+A
+B
+
+
+UAB
+UAB
+0
+I
+U
+0
+I
+U0
+Icc
+U
+E
+=
+U
+E
+RiI
+–
+=
+
+[PAG 518]
+VII-14
+ELETTROTECNICA GENERALE
+La Fig. VII.2.7 illustra il simbolo del bipolo e il circuito equivalente.
+Sulla caratteristica esterna del generatore riportata in Fig. VII.2.8 si evidenziano:
+–  il punto di coordinate (0, U0): esso indica il funzionamento a vuoto del generatore
+che è caratterizzato da corrente erogata nulla e dall’equazione
+(VII.2.3)
+–  il punto di coordinate (Icc, 0): esso indica il funzionamento in corto circuito del
+generatore che è caratterizzato da tensione nulla ai morsetti nonostante il generatore ero-
+ghi corrente, dalla f.e.m. che coincide con la caduta interna del generatore e dall’equa-
+zione
+(VII.2.4)
+2.3  Generatore di corrente
+Generatore ideale di corrente
+È un bipolo attivo che fornisce una corrente costante in valore e segno qualunque sia
+la tensione ai suoi morsetti. La corrente, che prende il nome di corrente impressa, si
+indica con I0 e l’equazione caratteristica è
+(VII.2.5)
+Il simbolo del bipolo e la sua caratteristica esterna sono rappresentati nella Fig. VII.2.9.
+Generatore reale di corrente
+È un bipolo attivo che non riesce a mantenere nel circuito la corrente costante al
+valore caratteristico I0, poiché una parte della corrente circola nella resistenza interna del
+generatore. Il simbolo del bipolo e il circuito equivalente sono riportati nella Fig. VII.2.10
+Fig. VII.2.6   Generatore ideale di ten-
+sione: simbolo e caratteristica.
+Fig. VII.2.7   Generatore reale di ten-
+sione.
+Fig. VII.2.8   Caratteristica voltampero-
+metrica del generatore reale di tensione.
+U
+0
+I
+I
+U
+E
+
+
+
+U = E
+I
+U
+E
+
+
+
+Ri
+U
+0
+I
+punto di funzionamento a vuoto
+punto di funzionamento in
+corto circuito
+U0 = E
+Icc=E/Ri
+U0
+E
+=
+Icc
+E
+Ri
+----
+=
+I
+I0
+=
+
+[PAG 519]
+ELETTROTECNICA GENERALE
+VII-15
+e l’equazione caratteristica è
+(VII.2.6)
+Dall’esame della caratteristica esterna del bipolo (Fig. VII.2.11), si evidenziano il
+punto di coordinate (U0, 0) corrispondente al punto di funzionamento a vuoto e il punto di
+coordinate (0, Icc) corrispondente al funzionamento in corto circuito.
+2.4  Legge generale di Ohm
+In un circuito chiuso nel quale sono presenti più generatori aventi azione discorde, la
+corrente è unica e circola in un solo verso. Noto il verso, sono note le polarità delle cadute
+di tensione per gli elementi resistivi: precisamente, il punto dove entra la corrente avrà
+potenziale maggiore del punto da dove la corrente esce.
+Con riferimento alla Fig. VII.2.12 ed imposto un verso per la corrente, si nota che nel
+generatore E1 la corrente entra dal polo negativo per uscire dal polo positivo e quindi il
+verso della f.e.m. concorda con quello della corrente, mentre per il generatore E2 accade il
+Fig. VII.2.9   Generatore ideale di cor-
+rente: simbolo e caratteristica.
+Fig. VII.2.10   Generatore reale di cor-
+rente.
+Fig. VII.2.11   Caratteristica voltampero-
+metrica del generatore di corrente.
+Fig. VII.2.12   Legge di Ohm per un cir-
+cuito chiuso.
+Fig. VII.2.13   Legge di Ohm per un
+ramo di circuito.
+I
+I0
+GiU
+–
+=
+U
+0
+I
+I
+U
+I0
+
+
+I = I0
+I
+I0
+Ii
+Ri=
+U
+
+
+Gi
+1
+I
+0
+U
+punto di funzionamento
+punto di funzionamento in
+corto circuito
+Icc = I0
+U0=I0/Gi
+a vuoto
+I
+E1
+
+
+E2
+R1
+R2
+R3
+R1
+R2
+R3
+E1
+E2
+I
+
+
+A
+B
+
+[PAG 520]
+VII-16
+ELETTROTECNICA GENERALE
+contrario, cioè la corrente entra dal polo positivo per uscire da quello negativo e quindi il
+verso della f.e.m. non concorda con quello della corrente. Il generatore E1 eroga energia
+mentre il generatore E2 assorbe energia; si terrà conto di questo assegnando alla tensione
+del generatore E2, che prende il nome di forza contro elettromotrice (f.c.e.m.), il segno
+negativo ().
+La legge di Ohm per un circuito chiuso afferma che la somma delle forze elettromo-
+trici, diminuita della somma delle forze controelettromotrici, eguaglia la somma delle
+cadute di tensione sugli elementi resistivi secondo la relazione
+(VII.2.7)
+Nel caso di Fig. VII.2.13, che rappresenta un ramo di circuito, la relazione è ancora
+applicabile e risulta
+Se il risultato dell’operazione fornisse un valore di corrente negativo, ciò significhe-
+rebbe che il verso arbitrariamente imposto alla corrente non è corretto, e che essa in realtà
+fluisce in senso opposto.
+2.5  Punto di lavoro, rendimento di un generatore
+Generatore di tensione
+Il punto di incontro della caratteristica esterna del generatore con la caratteristica del
+carico (Fig. VII.2.14) determina il punto di lavoro del generatore, le cui coordinate sono
+(VII.2.8)
+Fig. VII.2.14   Punto di lavoro di un generatore reale di tensione.
+Moltiplicando tutti i termini dell’equazione VII.2.2 per I, si ottiene
+(VII.2.9)
+dove:
+–  UI = Pu è la potenza utile ossia la potenza che il generatore fornisce al carico;
+–  EI = Pg è la potenza generata dal bipolo;
+–  RI2= Pp è la potenza persa all’interno del generatore.
+E1
+E2
+–
+IR
+=
+UAB
+E1
+E2
+–
+
+
+RI
++
+=
+U
+E
+RiI
+–
+RuI
+=
+=
+;
+I
+E
+Ru
+Ri
++
+-------------------
+=
+U
+0
+I
+punto di lavoro
+U = ERiI
+U = RuI (Ru resistenza del carico)
+U = ERiI = RuI
+I = ERuRi
+UI
+EI
+RiI2
+–
+=
+
+[PAG 521]
+ELETTROTECNICA GENERALE
+VII-17
+Si definisce rendimento (simbolo ) il rapporto
+(VII.2.10)
+esprimibile anche con le relazioni
+(VII.2.11)
+e in forma percentuale con
+(VII.2.12)
+Il rendimento, espresso come rapporto tra grandezze omogenee, è un numero adimen-
+sionale variabile tra 0 e 1; si avrà il valore 0 quando Pu è nulla (caso del funzionamento in
+corto circuito) e il valore 1 quando Pu = Pg (caso del generatore ideale). Per il funziona-
+mento a vuoto, caso in cui tutte le potenze sono nulle, non ha senso parlare di rendimento.
+Generatore di corrente
+Il punto di coordinate U  I0GuGi e I  GuU, ovvero punto di intersezione fra la
+caratteristica del generatore e del carico (Fig. VII.2.15), identifica il punto di lavoro del
+generatore; Gu è la conduttanza del carico.
+Fig. VII.2.15   Punto di lavoro di un generatore reale di corrente.
+Moltiplicando tutti i termini dell’equazione VII.2.6 per U, si ottiene
+(VII.2.13)
+dove
+–  UI = RuI2 = GuU2 = Pu è la potenza utile;
+–  UI0 = Pg è la potenza generata;
+–  GiU2 = Pp è la potenza persa.
+Il rendimento del generatore è ancora definito dalle relazioni
+(VII.2.14)
+ed in forma percentuale da
+(VII.2.15)
+
+Pu
+Pg
+-----
+=
+
+U
+E--- ;
+=
+
+Ru
+Ru
+Ri
++
+------------------- ;
+=
+
+1
+Pp
+Pg
+-----
+–
+=
+%
+100
+Pu
+Pg
+----- ;
+=
+%
+100
+1
+Pp
+Pg
+-----
+–
+
+
+
+
+=
+I
+0
+U
+punto di lavoro
+I = I0GiU
+GuU = I (Gu conduttanza del carico)
+I = URu = GuU
+U = I0GuGi
+UI
+UI0
+GiU2
+–
+=
+
+Pu
+Pg
+----- ;
+=
+
+I
+I0
+---- ;
+=
+
+Gu
+Gu
+Gi
++
+-------------------- ;
+=
+
+1
+Pp
+Pg
+-----
+–
+=
+%
+100
+Pu
+Pg
+----- ;
+=
+%
+100
+1
+Pp
+Pg
+-----
+–
+
+
+
+
+=
