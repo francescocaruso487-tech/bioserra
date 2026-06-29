@@ -7,7 +7,7 @@ Da eseguire ogni domenica dopo scraping_siti.py
 import os, json, base64, urllib.request, urllib.error
 import datetime, re, time
 
-GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
+GITHUB_TOKEN = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
 REPO = 'francescocaruso487-tech/bioserra'
 RAW  = f'https://raw.githubusercontent.com/{REPO}/main/'
 HEADERS_GH = {
