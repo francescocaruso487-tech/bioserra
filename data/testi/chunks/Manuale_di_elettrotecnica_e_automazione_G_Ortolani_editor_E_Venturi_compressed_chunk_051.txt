@@ -1,0 +1,972 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 51/116 ===
+Chars: 44,010 | Offset: 2,209,254
+
+
+
+[PAG 1114]
+X-264
+  IMPIANTI ELETTRICI 
+mento. Inoltre l'acqua estratta dal condensatore viene preriscaldata mediante degli spilla-
+menti di vapore (S1  S5) che vengono inviati nei preriscaldatori. L'acqua di integrazione
+serve a sopperire alle inevitabili perdite che si hanno nel ciclo.
+Caldaia
+Le caldaie usate nelle centrali termoelettriche sono del tipo a tubi d'acqua, nelle quali
+l'acqua passa attraverso i tubi evaporatori riscaldati dal calore prodotto nel focolare e tra-
+smesso per convezione e irraggiamento. Nelle caldaie moderne ad attraversamento mec-
+canico (Fig. X.14.10), funzionanti a pressione e temperatura superiori a quelle critiche del
+vapor d'acqua, non vi è alcuna circolazione interna e non si forma la fase liquido-vapore,
+dato che tutta l'acqua vaporizza direttamente e in modo totale al primo passaggio attra-
+verso i tubi evaporatori TE. Il vapore viene poi inviato al surriscaldatore, formato da un
+insieme di tubi riscaldati dai fumi della combustione.
+Fig. X.14.10   Schema della caldaia ad attraversamento meccanico.
+Turbina
+Anche le turbine a vapore vengono classificate in turbine ad azione e a reazione.
+Nelle prime l'energia termica e di pressione del vapore viene trasformata interamente in
+cinetica all'interno del distributore, cosicché nella girante avviene solo la trasformazione
+dell'energia cinetica del fluido in cinetica meccanica. In quelle a reazione, invece, tale tra-
+sformazione avviene parte nel distributore e parte nella girante, in proporzioni dipendenti
+dal grado di reazione della macchina.
+Scambiatori di calore
+Servono, in generale, per consentire lo scambio termico tra due fluidi a diversa tempe-
+ratura, che vengono fatti circolare in controcorrente (Fig. X.14.11), in modo che il fluido
+più caldo incontri il refrigerante nella sezione dello scambiatore in cui tale refrigerante ha
+la temperatura maggiore e viceversa, per avere un salto termico pressoché costante nei
+vari punti.
+Fig. X.14.11   Schema di uno scambiatore di calore in controcorrente.
+TE
+PA
+A
+V
+A
+B
+
+[PAG 1115]
+IMPIANTI  ELETTRICI                                               X-265
+Nelle centrali termoelettriche sono scambiatori di calore il preriscaldatore dell'aria,
+quelli dell'acqua, il surriscaldatore, il risurriscaldatore, l'economizzatore e il condensatore.
+Quest'ultimo lavora con rilevati portate d'acqua di refrigerazione (per es. da 5 a 8 m3/s per
+gruppi da 200 MW).
+Altri tipi di impianti termoelettrici
+Sono le centrali con turbine a gas (impianti turbogas) e quelli che utilizzano motori a
+combustione interna, di solito Diesel (per esempio gruppi elettrogeni). I primi utilizzano
+un compressore e una camera di combustione: il compressore, mosso dalla turbina, com-
+prime l'aria precedentemente aspirata e filtrata e la manda nella camera di combustione
+dove si riscalda; la miscela di aria e gas combusti viene fatta espandere in una turbina a
+gas e poi scaricata nell'atmosfera. L'energia elettrica viene ottenuta dall'alternatore, mosso
+dalla turbina.
+Nell'altro caso un motore Diesel a gasolio produce l'energia meccanica necessaria per
+far ruotare il generatore elettrico.
+La Fig. X.14.12 riporta lo schema di funzionamento di una centrale a ciclo combinato:
+la produzione di energia elettrica e di calore avviene attraverso due cicli fisici, il primo
+ciclo compiuto dall’aria e dal gas naturale e il secondo dall’acqua e dal vapore.
+Fig. X.14.12   Schema di funzionamento di una centrale a ciclo combinato.
+L’impianto è costituito da quattro componenti principali:
+–  Turbina a gas per la produzione di energia a partire da gas naturale.
+–  Generatore di vapore a recupero per la produzione di vapore.
+–  Turbina a vapore per la produzione di energia a partire da vapore.
+–  Condensatore ad aria per il raffreddamento del vapore e delle condense.
+Nella prima fase del processo, l’aria, aspirata dall’ambiente esterno mediante un com-
+pressore, viene miscelata con gas metano. Questa miscela di aria e metano viene immessa
+nella camera di combustione. I gas caldi mettono in movimento le pale della turbina a gas,
+collegata ad un generatore elettrico, che trasforma l’energia meccanica delle pale in ener-
+gia elettrica.
+Aria
+Camino
+Vapore
+Aria
+Gas
+Gas
+Compressore
+Camera di combustione
+Turbina a gas
+Prelievo vapore
+Generatore elettrico
+Trasformatore
+Generatore di vapore
+a recupero
+Turbina a vapore
+Condensatore
+ad aria
+
+[PAG 1116]
+X-266
+  IMPIANTI ELETTRICI 
+Nella seconda fase del processo il calore contenuto nei gas in uscita dalla turbina è uti-
+lizzato all’interno di un generatore di vapore a recupero, per riscaldare l’acqua che scorre
+all’interno di appositi tubi. I fumi raffreddati escono quindi dal camino alto 60 metri, men-
+tre l’acqua riscaldata si trasforma in vapore.
+Una parte di vapore può essere prelevata da utenze esterne alla centrale, mentre la
+maggior parte del vapore mette in rotazione una turbina a vapore, collegata a un genera-
+tore che trasforma l’energia meccanica in energia elettrica.
+Il “vapore esausto” proveniente dalla seconda turbina viene incanalato in un condensa-
+tore ad aria per essere ritrasformato in acqua da immettere nuovamente in ciclo, minimiz-
+zando in questo modo il prelievo di acqua dall’ambiente.
+Un trasformatore modifica la tensione della corrente prodotta dal generatore elettrico,
+prima di immetterla nella rete elettrica nazionale.
+14.4  Centrali nucleotermoelettriche
+Principio di funzionamento e trasformazioni
+Per queste centrali l'energia primaria W (J) è costituita dall'energia termica sviluppata
+nella reazione nucleare di fissione del combustibile nucleare utilizzato, proporzionale alla
+massa m (kg) trasformata durante la reazione e alla velocità della luce c = 3  108 m/s:
+(X.14.8)
+Lo schema delle trasformazioni è rappresentato nella Fig. X.14.13.
+Fig. X.14.13   Schema delle trasformazioni energetiche in una centrale nucleotermoelettrica.
+Le trasformazioni sono analoghe a quelle di una centrale termoelettrica tradizionale:
+la differenza sostanziale consiste nel fatto che nelle centrali nucleari il calore necessario
+alla vaporizzazione dell'acqua è prodotto nel reattore nucleare.
+Per ottenere la reazione di fissione all'interno del reattore bisogna bombardare con
+neutroni i nuclei degli elementi fissili, aventi elevato peso atomico, in modo da scinderli
+in nuclei più leggeri; per ogni scissione la differenza di massa tra quella del nucleo fissile
+e quella totale dei prodotti di fissione si trasforma in energia termica (Fig. X.14.14).
+Nella reazione vengono prodotti altri neutroni che, a loro volta, provocano la scissione
+di altri nuclei (reazione a catena).
+La reazione viene regolata mediante le barre di controllo che, avvicinate o allontanate
+dal materiale fissile posto nel nocciolo del reattore, catturano più o meno neutroni, non
+consentendo loro di provocare ulteriori scissioni. In caso di pericolo lo spegnimento della
+reazione avviene mediante le barre di emergenza.
+Nei reattori lenti, data la bassa concentrazione di elementi fissili, i neutroni devono
+essere rallentati affinché possano innescare la scissione; questo avviene mediante una
+W
+mc2
+9
+1016 m
+
+=
+=
+reattore
+turbina
+alternatore
+A
+B
+C
+D
+A Energia atomica del combustibile nucleare
+B Energia termica e di pressione del vapore
+C Energia meccanica cinetica di rotazione
+D Energia elettrica
+
+[PAG 1117]
+IMPIANTI  ELETTRICI                                               X-267
+sostanza detta moderatore, che può essere acqua, acqua pesante, berillio o grafite.
+Fig. X.14.14   Schema esemplificativo della reazione di fissione.
+Combustibili nucleari
+Le principali sostanze atte a fornire energia per fissione sono l'uranio naturale, costi-
+tuito dalla miscela di tre isotopi, di cui solo l'uranio 235 (U235), contenuto in percentuale
+dello 0,71% è fissile; l'uranio arricchito, ottenuto dall'uranio naturale elevandone a qual-
+che percento il contenuto di U235; il plutonio 239 (Pu239) ottenuto artificialmente aggiun-
+gendo un neutrone all'atomo di uranio 238; l'uranio 233 (U233) ottenuto aggiungendo un
+neutrone all'atomo del torio 232.
+Con il termine fertilizzazione si indica il processo di ottenimento del plutonio 239 e
+dell'uranio 233; sono detti autofertilizzanti (breeder) i reattori in grado di sviluppare que-
+sto processo al loro interno.
+Energia prodotta
+L'energia termica sviluppata da un reattore dipende dal tipo di combustibile nucleare
+usato. Si indica con il termine burn up l'energia termica specifica Wsp sviluppata per ogni
+tonnellata di combustibile nucleare caricato nel reattore. Questa energia si misura in
+megawattdaytermici, equivalente a:
+(X.14.9)
+Per le centrali a uranio naturale si ha Wsp = (3000  4000) MWdtt; usando l'uranio arric-
+chito il burn up diventa circa quattro volte il valore precedente, data la maggiore percentuale
+di elemento fissile; per i reattori autofertilizzanti l'aumento arriva anche a 100 volte.
+L'energia specifica elettrica Wspe prodotta è molto inferiore a quella termica, dato che
+il rendimento effettivo di queste centrali, per il quale bisogna moltiplicare Wsp, è intorno
+al 33%. Con l'uranio naturale si ottiene Wspe = (990  1320) MWdet.
+Tipi di reattore
+I reattori vengono classificati, in funzione del combustibile nucleare utilizzato, in
+reattori lenti, intermedi e veloci; questi ultimi, data la elevata concentrazione di materiale
+fissile, non hanno bisogno del moderatore per rallentare i neutroni.
+Un'altra distinzione riguarda il tipo di fluido refrigerante usato, fluido che ha il com-
+pito di trasmettere all'esterno il calore sviluppato nel nocciolo (gas, acqua o altre
+sostanze).
+Una terza distinzione può essere fatta sulla specifica generazione storica.
+Per quanto riguarda i reattori di I generazione, si tratta di piccoli reattori sperimentali
+o proto-commerciali degli anni quaranta-cinquanta, evoluti poi nella II generazione.
+I reattori di II generazione, versioni commerciali derivate da quelli di prima genera-
+zione, sono quelli che in gran parte stanno attualmente funzionando. Si dividono in due
+categorie: reattori moderati a grafite, reattori raffreddati e moderati ad acqua.
+neutrone
+nucleo
+fissile
+nuclei
+leggeri
+energia
+termica
+neutroni veloci
+1MWdt
+1MW
+24h
+
+24
+106Wh
+
+864
+106 J
+
+=
+=
+=
+
+[PAG 1118]
+X-268
+  IMPIANTI ELETTRICI 
+Fanno parte della prima categoria:
+–  reattore Magnox, di origine britannica raffreddato a gas oggi obsoleto;
+–  reattore GCR (Gas Cooled Reactor), raffreddato a gas;
+–  reattore AGR (Advanced Gas-cooled Reactor), evoluzione dei Magnox e anch’esso
+raffreddato a gas;
+–  reattore RBMK, classe sovietica raffreddata ad acqua bollente ormai obsoleta cui
+appartiene la centrale di Chernobyl
+Appartengono alla seconda categoria:
+–  reattore BWR (Boiling Water Reactor), ad acqua leggera bollente in cui il fluido
+che muove la turbina è in contatto diretto con gli elementi di combustibile;
+–  reattore PWR (Pressurized Water Reactor), in cui un circuito primario di acqua in
+pressione preleva calore dal nocciolo e lo cede, in uno scambiatore di calore, a un circuito
+secondario percorso dall'acqua che compie il ciclo termico (Fig. X.14.15);
+–  reattore CANDU, ad acqua pesante pressurizzata di origine canadese (a detta dei
+progettisti, adatto all'uso del torio).
+Inoltre, un esempio di reattore veloce autofertilizzante sperimentale è dato dal:
+–  reattore Super-Phénix (Fig. X.14.16) in cui vi sono due circuiti percorsi da sodio
+liquido (refrigerante) oltre al circuito dell'acqua per produrre il vapore.
+Fig. X.14.15   Schema di principio di un reattore PWR.
+Fig. X.14.16   Schema di massima del reattore Super-Phénix.
+R
+N
+BC
+CP
+PR
+CS
+T
+C
+PA
+G
+3
+SC
+R 
+Reattore
+N 
+Nocciolo
+BC Barre di controllo
+CP Circuito primario
+PR Pompa dell'acqua refrigerante
+CS Circuito secondario
+T 
+Turbina
+C 
+Condensatore
+PA Pompa di alimentazione
+SC Scambiatore di calore
+BC
+N
+PS1
+SSS
+CS1
+PS2
+SSA
+CS2
+V
+T
+G
+3
+C
+PA
+A
+
+[PAG 1119]
+IMPIANTI  ELETTRICI                                               X-269
+Nello schema di Fig. X.14.16 si possono individuare i componenti che seguono.
+BC: barre di controllo; N: nocciolo; CS1: circuito sodio primario; PS1: pompa sodio
+primario; SSS: scambiatore di calore sodio-sodio; CS2: circuito sodio secondario; PS2:
+pompa sodio secondario; SSA: scambiatore di calore sodio-acqua; T: turbina; C: conden-
+satore; PA: pompa di alimentazione acqua.
+I reattori di III generazione e di III generazione introducono migliorie senza cambia-
+menti sostanziali nella fase di definizione-progettazione, presentando pochissimi esempi
+realizzati o in costruzione; si possono elencare i seguenti esempi:
+–  reattore EPR, di origine europea ad acqua pressurizzata; basato sul PWR, è un reat-
+tore nel quale il raffreddamento e la moderazione vengono ottenuti grazie all'acqua pres-
+surizzata;
+–  reattore ABWR, ad acqua bollente, si basa sul BWR;
+–  reattore ESBWR, di tipo economico semplificato ad acqua bollente, si basa sul
+BWR;
+–  reattore AP, è di tipo pressurizzato avanzato e si basa sul PWR;
+–  reattori di evoluzione CANDU.
+Infine, è possibile trovare reattori di IV generazione, anche se attualmente la dicitura
+si riferisce ufficialmente ad alcune proposte di un consorzio internazionale; essi introdu-
+cono cambiamenti sostanziali nel processo tecnologico, ancora in fase di studio.
+14.5  Metodi integrativi
+Si chiamano integrativi tutti quei metodi che, allo stato attuale della tecnologia, non si
+possono considerare sostituitivi della produzione di energia elettrica con mezzi tradizio-
+nali, vista la ridotta incidenza percentuale dell'energia prodotta.
+Centrali geotermoelettriche
+Sfruttano il calore endogeno, ossia l'energia termica racchiusa nel sottosuolo e posse-
+duta dal vapore, dall'acqua o anche dalle rocce. In Italia la produzione avviene tramite
+centrali che sfruttano il vapore endogeno (centrali a vapore dominante, per es. a Larde-
+rello), il cui schema è rappresentato nella Fig. X.14.17.
+Fig. X.14.17   Schema di una centrale geotermoelettrica a vapore dominante. RI: rocce
+impermeabili; RP: rocce permeabili (serbatoio geotermico); V: vapore; T: turbina;
+COM: compressore; AL: alternatore; C: condensatore; G: gas; P1-P2-P3: pompe;
+TR: torre di refrigerazione; AR: acqua di refrigerazione.
+AL
+G
+3
+G
+AR
+P3
+TR
+P2
+P1
+C
+COM
+T
+V
+RI
+RI
+RP
+
+[PAG 1120]
+X-270
+  IMPIANTI ELETTRICI 
+Il vapore viene immesso direttamente nella turbina, con afflusso regolato da una val-
+vola; all'uscita viene inviato in un condensatore a miscela, nel quale viene a contatto con
+acqua fredda.
+Il condensato, tramite la pompa P1, viene rinviato al serbatoio geotermico. L'acqua di
+refrigerazione viene fatta circolare dalle pompe P2 e P3 in un circuito chiuso e il raffred-
+damento è ottenuto con una torre di refrigerazione, usando il ciclo frigorifero dei gas
+incondensabili compressi dal compressore coassiale alla turbina.
+Conversione dell'energia solare
+L'energia solare può essere trasformata in elettrica sia in modo indiretto (conversione
+solare termoelettrica) che direttamente (conversione fotovoltaica).
+Nel primo caso si opera una doppia trasformazione, da energia solare a termica e poi
+in energia elettrica mediante un gruppo turbina-generatore elettrico. In Italia questo
+metodo non è stato ancora sfruttato su scala industriale, ma è soltanto oggetto di studio e
+sperimentazione.
+La conversione diretta viene attuata mediante celle fotovoltaiche che sfruttano la pro-
+prietà di alcuni materiali semiconduttori di generare correnti elettriche quando vengono
+colpite dalle radiazioni luminose, con un rendimento di circa il 12%. L'uso più promet-
+tente di questo metodo è quello dell'alimentazione di case e di comunità isolate, aventi
+basso carico elettrico.
+Centrali eoliche
+Consentono di trasformare in elettrica l'energia cinetica delle masse d'aria in movi-
+mento, mediante generatori mossi da aeromotori con eliche di grande diametro (fino a
+60  70 m), montate su alti sostegni metallici.
+Lo sfruttamento dell'energia eolica è uno dei più promettenti nel campo delle fonti rin-
+novabili e in Italia, come in molti altri Paesi (Germania, Usa, Danimarca, Spagna), la
+potenza installata è notevolmente aumentata negli ultimi quindici anni, arrivando a circa
+400 MW nel 2000.
+Uso di combustibili poveri, rifiuti urbani, biogas
+Rientrano in questo settore i metodi di produzione dell'energia mediante la combu-
+stione di combustibili non tradizionali e dei rifiuti urbani e lo sfruttamento del biogas pro-
+dotto per fermentazione anaerobica del materiale organico (letame) e delle biomasse
+(materiali di origine biologica non fossile, come i residui agricoli e forestali, gli scarti
+dell'industria agro-alimentare, le parti organiche dei rifiuti urbani). In Italia si è avuto un
+certo incremento di questa produzione nell'ultimo decennio.
+Energia dal mare
+La produzione di energia elettrica mediante l'uso, come mezzo vettore, dell'acqua
+marina si sviluppa essenzialmente in tre direzioni, sia come studio delle tecnologie adatte
+sia come realizzazioni pratiche:
+–  sistemi che utilizzano l'energia delle maree, in modo da formare un dislivello tra
+due bacini idrici per far ruotare dei gruppi turbina-alternatore;
+–  sistemi che utilizzano l'energia del moto ondoso, per trasformarla in meccanica e
+poi in energia elettrica;
+–  sistemi che utilizzano la differenza di temperatura tra gli strati superficiali e quelli
+profondi degli oceani (gradienti termici), in modo da costituire un impianto termoelettrico
+particolare, in cui gli strati superficiali forniscono calore e quelli profondi l'acqua fredda
+di refrigerazione.
+Centrali del primo tipo sono, per esempio, quella francese sul fiume Rance (240 MW,
+
+[PAG 1121]
+IMPIANTI  ELETTRICI                                               X-271
+in funzione dal 1967) e quella cinese di Sam Sa (100 MW, 1987).
+I sistemi che utilizzano il moto ondoso sono ancora in fase di studio o di sperimenta-
+zione, con qualche impianto realizzato a scopo dimostrativo.
+I sistemi di conversione dell'energia termica degli oceani sono denominati OTEC
+(Ocean Thermal Energy Conversion); pur se le prime applicazioni sono iniziate già nel
+1932 (impianto di Matazas Bay, Cuba, 22 kW), le realizzazioni effettive sono state molto
+limitate e di piccola potenza, non superiori a 100 kW.
+In Italia, a causa dello scarso dislivello delle maree, della insufficienza del moto
+ondoso e del ridotto gradiente termico marino, non è possibile sfruttare questo tipo di
+energia.
+14.6  Alternatore
+Gli alternatori sono le macchine elettriche più importanti presenti in una centrale di
+produzione, dato che i trasformatori, anche se a volte vengono installati nello stesso sito
+della centrale, fanno parte del macchinario della stazione elettrica annessa alla centrale.
+L'alternatore è una macchina sincrona trifase funzionante da generatore, collegata
+meccanicamente al motore primo (turbina) e ruotante con esso a una velocità costante n0
+dipendente dalla frequenza f (50 Hz per l'Italia) e dal numero p delle coppie polari,
+secondo la relazione:
+(X.14.10)
+Per l'accoppiamento con turbine a gas o a vapore si usano turboalternatori a 2 poli
+(3000 giri/min) o a 4 poli (1500 giri/min). Per le turbine idrauliche la velocità varia da
+75 giri/min (80 poli) a 1000 giri/min (6 poli).
+Per il raffreddamento degli alternatori si usano vari metodi. Per le macchine di piccola
+potenza si usa il raffreddamento in aria a circuito aperto; per quelle maggiori si ricorre al
+ciclo chiuso, raffreddando il fluido refrigerante (aria o idrogeno) in uno scambiatore di
+calore ad acqua. Per le potenze più elevate (superiori a 100 MW) si ricorre anche al raf-
+freddamento diretto dei conduttori, aventi forma cava, con idrogeno, olio, acqua demine-
+ralizzata.
+La tensione di uscita degli alternatori ha valori da 15 a 20 kV; si preferisce non ricor-
+rere a tensioni maggiori per problemi di isolamento. L'elevamento della tensione ai valori
+di trasmissione (132-220-380 kV) viene effettuato con i trasformatori.
+L'eccitazione degli alternatori avviene in corrente continua, con tensioni da 100 a
+500 V; la corrente assume valori elevati, fino a 3000 A. Attualmente si usa l'eccitazione
+statica tramite convertitori c.a.-c.c. con tensione regolabile in uscita, impiegando disposi-
+tivi quali SCR, GTO e, più recentemente, transistor IGBT.
+Sugli alternatori viene effettuata anche la regolazione della frequenza, il cui valore,
+legato alla velocità di rotazione, deve rimanere costante. Per ottenere questo obiettivo
+bisogna regolare l'afflusso del fluido motore (vapore nelle centrali termoelettriche e acqua
+in quelle idroelettriche) in modo che a un aumento della potenza richiesta dal carico (che
+tenderebbe a rallentare il gruppo) corrisponda un aumento della portata di fluido nella tur-
+bina e viceversa.
+Le protezioni previste per l'alternatore sono numerose. In sintesi si adottano:
+–  protezione di massima tensione che interviene nei casi di mancato funzionamento
+del regolatore e provoca il distacco della macchina;
+–  protezione di massima corrente, con sganciatore ritardato o istantaneo a seconda
+dell'entità della sovracorrente;
+n0
+60f
+p
+-------
+=
+
+[PAG 1122]
+X-272
+  IMPIANTI ELETTRICI 
+–  protezione differenziale sulle fasi statoriche (Fig. X.14.18) che interviene quando si
+manifesta uno squilibrio di corrente per guasto tra fase e fase o tra fase e massa (per
+avvolgimenti con neutro a terra);
+–  protezione di massa statorica (Fig. X.14.19), per proteggere la macchina dai guasti
+verso massa dell'avvolgimento statorico, nei casi in cui la protezione differenziale è ina-
+bile a tale funzione;
+–  protezione di massa rotorica avente il compito di segnalare un primo guasto a
+massa nell'avvolgimento di eccitazione; poiché questo avvolgimento è isolato si arriva al
+corto circuito solo in occasione del secondo guasto a massa;
+–  protezione dalle sovratemperature, realizzata con sensori termici installati nei vari
+punti della macchina.
+14.7  Stazioni elettriche
+Le stazioni elettriche sono definite come officine elettriche connesse a sistemi di cui
+almeno uno di categoria III, ossia a tensione superiore a 30 kV, e destinate a una o più
+delle seguenti funzioni: trasformazione, smistamento, conversione, regolazione dell'ener-
+gia elettrica.
+In base alle caratteristiche dei sistemi elettrici a cui sono connesse, le stazioni si
+distinguono in:
+–  stazioni annesse alle centrali di produzione;
+–  stazioni ricevitrici primarie, collegate solo a sistemi di categoria III (per es. una
+stazione di trasformazione 380 kV132 kV);
+–  stazioni ricevitrici secondarie, collegate anche a sistemi di categoria II (per es. una
+stazione di trasformazione 132 kV/20 kV).
+La stazioni sono di solito inserite nel sistema di trasmissione nazionale dell'energia
+elettrica; vi sono però anche stazioni private per l'alimentazione di rilevanti utenze, a cui
+l'energia elettrica viene fornita in alta tensione.
+Schemi tipici per i circuiti di potenza
+I vari schemi adottabili per una stazione dipendono da come vengono costituite le
+derivazioni di linea o di macchina. Con il termine modulo (o stallo) si indica l'insieme
+delle apparecchiature, dei circuiti e delle opere strutturali relativi a una derivazione di
+Fig. X.14.18   Schema di principio della
+protezione differenziale, relativa a una
+fase statorica.
+Fig. X.14.19   Schema di principio della
+protezione di massa statorica.
+Id
+RA
+IF
+Z
+RA
+
+[PAG 1123]
+IMPIANTI  ELETTRICI                                               X-273
+linea o di macchina. Ogni stazione risulterà costituita da un certo numero di stalli che si
+ripetono.
+Fig. X.14.20   Schema unifilare dei circuiti di potenza di una stazione annessa a una cen-
+trale di produzione; soluzione a semplice sbarra (i = 1, s = 2).
+La complessità e il costo di ogni soluzione possono essere messe in relazione con due
+indici caratteristici, indicati con i (numero degli interruttori per stallo) ed s (numero dei
+sezionatori per stallo).
+In relazione al numero di sbarre collettrici usate per ogni sezione, si distinguono i
+seguenti schemi principali: sistema a semplice sbarra e sistema a doppia sbarra con con-
+giuntore di sbarra formato da un interruttore e due sezionatori.
+La seconda soluzione consente di ottenere una maggiore continuità di servizio in
+quanto è possibile, in caso di guasto, collegare i montanti di linea o di macchina sull'una o
+sull'altra sbarra.
+Nelle Figg. X.14.20, X.14.21, X.14.22 e X.14.23 sono rappresentati alcuni schemi
+tipici.
+Trasformatore
+Le caratteristiche peculiari dei trasformatori usati nelle stazioni elettriche sono:
+–  l'elevata potenza apparente nominale, che può arrivare alle centinaia di MVA;
+–  il sistema di raffreddamento, che deve essere particolarmente efficace data l'elevata
+potenza; si usano di solito il raffreddamento OFAF, con scambiatori di calore olio-aria, e
+OFWF, con scambiatori termici olio-acqua;
+GS
+GS
+3
+3
+220 kV
+15 kV
+220 kV
+15 kV
+SC
+L1
+L2
+
+[PAG 1124]
+X-274
+  IMPIANTI ELETTRICI 
+–  le elevate tensioni di isolamento, commisurate a quelle nominali degli avvolgimenti;
+–  la tensione di cortocircuito percentuale, più elevata rispetto ai trasformatori da
+cabina (per es. 12%) per contenere le correnti di corto circuito;
+–  il collegamento degli avvolgimenti, del tipo a stella per le tensioni più elevate (380,
+220, 132 kV) per problemi d'isolamento e a triangolo per l'eventuale lato MT, in modo da
+limitare l'ampiezza delle armoniche.
+Fig. X.14.21   Schema unifilare dei circuiti di potenza di una stazione primaria di trasfor-
+mazione e smistamento; soluzione a semplice sbarra con congiuntore (i = 1 + 1/n, s = 3 +
+2/n; n è il numero delle derivazioni).
+14.8  Servizi ausiliari delle centrali e delle stazioni
+I servizi ausiliari (SA) comprendono tutte le utenze elettriche necessarie per il funzio-
+namento della stazione e/o della centrale.
+380 kV
+380 kV
+380 kV
+132 kV
+132 kV
+132 kV
+
+[PAG 1125]
+X-275
+  IMPIANTI ELETTRICI 
+Vengono alimentati sia in c.a. BT (230/400 V) ed MT (per es. 6 kV, per le utenze di
+maggiore potenza, oltre 100 kW) sia in c.c. (generalmente 110 V). Per i servizi ausiliari
+essenziali (SAE), per i quali non sono ammesse interruzioni (per es. l'illuminazione di
+sicurezza), vengono usati gruppi di continuità separati.
+Le utenze fondamentali alimentate in c.a. sono i carica batterie, i sistemi di raffredda-
+mento delle macchine, i motori dei compressori locali o centralizzati degli interruttori, i
+motori dei sezionatori, i sistemi di riscaldamento e di illuminazione, i sistemi di tratta-
+mento dell'olio dei trasformatori, l'impianto antincendio.
+Per le stazioni annesse alle centrali vi sono, inoltre, i motori delle pompe di alimenta-
+zione della caldaia e di estrazione del condensato, i ventilatori dell'aria comburente, i cir-
+cuiti di comando delle saracinesche, delle valvole e delle paratoie.
+Fig. X.14.22   Schema unifilare dei circuiti di potenza di una stazione ricevitrice seconda-
+ria di trasformazione e smistamento; soluzione a semplice sbarra con entra-esci di stabili-
+mento (schema tipico per le stazioni di alimentazione di grandi complessi industriali).
+132 kV
+132 kV
+132 kV
+20 kV
+20 kV
+20 kV
+25 MVA
+Ucc% = 12%
+
+[PAG 1126]
+X-276
+  IMPIANTI ELETTRICI 
+Fig. X.14.23   Schema unifilare dei circuiti di potenza di una stazione di trasformazione e
+smistamento a tre sistemi; soluzione a semplice sbarra con trasformatore a tre avvolgimenti.
+Le utenze alimentate in c.c. sono i circuiti di comando, i circuiti di protezione delle
+linee, dei trasformatori e degli alternatori, i circuiti di segnalazione.
+La potenza totalmente assorbita dai SA di una centrale varia dall'1% al 10% di quella
+installata, a seconda del tipo di centrale e della potenza (la percentuale minore si riferisce
+alle potenze maggiori).
+La potenza dei soli servizi essenziali è alquanto ridotta, da 5 a    20 kW, in funzione
+della complessità dell'impianto.
+Uno schema tipico per l'alimentazione dei SA di una stazione annessa a una centrale
+di produzione è riportato nella Fig. X.14.24. L'alimentazione delle sbarre a 6 KV avviene
+mediante un trasformatore collegato all'alternatore.
+Nel caso di fermo della centrale è possibile alimentare tutte le sbarre (6 kV e 400 V)
+dalla rete elettrica connessa alla centrale, mediante il trasformatore collegato alla linea a
+132 kV.
+220 kV
+20 kV
+132 kV
+
+[PAG 1127]
+X-277
+  IMPIANTI ELETTRICI 
+Fig. X.14.24   Schema unifilare indicativo dell'alimentazione dei servizi ausiliari per una
+stazione annessa a una centrale di produzione.
+15 kV
+linea
+GS
+3
+15 kV
+6 kV
+132 kV
+6 kV
+6 kV
+6 kV
+400 V
+6 kV
+400 V
+400 V
+110 V
+R
+B
+
+[PAG 1128]
+X-278
+  IMPIANTI ELETTRICI 
+BIBLIOGRAFIA
+BELLATO G., Cavi elettrici negli impianti b.t., Edizioni CONSTED, Vigevano, 1993.
+BRAGALINI G., Manuale di impianti elettrici utilizzatori, civili e industriali, Hoepli,
+Milano, 1996.
+CARRESCIA V., Fondamenti di sicurezza elettrica, nuova edizione, Edizioni TNE,
+Torino, 1999.
+CONTE G., Manuale di impianti elettrici, seconda edizione, Hoepli, Milano, 2009.
+FIGINI G., TORELLI U., Impianti elettrici civili. Manuale di applicazione delle Norme
+CEI, seconda edizione, Hoepli, Milano, 2000.
+FIGINI G., TORELLI U., Impianti elettrici per l'industria e le macchine operatrici.
+Manuale di applicazione delle Norme CEI, seconda edizione, Hoepli, Milano, 2001.
+GRASSANI E., Le Norme CEI: come utilizzarle, Edizioni CEI, Milano, 1997.
+HYERACI G.P.P., Impianti elettrici in ambienti particolari, Hoepli, Milano, 1998.
+HYERACI G.P.P., LIBERATORE A., REATTI A., Elettricità e sicurezza, seconda edi-
+zione, Hoepli, Milano, 2001.
+OLIVIERI L., RAVELLI E., Impianti di distribuzione e di utilizzazione dell'energia elet-
+trica, seconda edizione, Cedam, Padova, 1982.
+OLIVIERI L., RAVELLI E., Impianti di generazione e trasporto dell'energia elettrica,
+dodicesima edizione, Cedam, Padova, 1980.
+ORTOLANI G., VENTURI E., Impianti elettrici civili, Hoepli, Milano, 2007.
+ORTOLANI G., VENTURI E., Impianti elettrici industriali, Hoepli, Milano, 2008.
+OVA, Energia e luce di emergenza. Guida tecnico-normativa, G. Bargellini & C.
+S.p.A., Pieve di Cento (BO), 2001.
+VEZZANI P., Elementi di progettazione elettrica, Edizioni TNE, Torino, 2001.
+Riviste e pubblicazioni
+NORME CEI, Edizioni CEI Comitato Elettrotecnico Italiano, Milano.
+PANORAMA ELETTRICO, Edizioni CONSTED, Vigevano.
+TUTTONORMEL, Edizioni TNE, Torino
+WATT, VNU Business Publications Italia, Cinisello B. (MI).
+
+[PAG 1129]
+Sezione XI
+Illuminotecnica
+INDICE
+pag.
+1   INTRODUZIONE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+2   GRANDEZZE FOTOMETRICHE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+2.1   Flusso luminoso  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+2.2   Intensità luminosa . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+2.3   Illuminamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+2.4   Luminanza  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+2.5   Radianza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+3   MISURE FOTOMETRICHE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+3.1   Misura del flusso luminoso . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+3.2   Misura dell’intensità luminosa  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+3.3   Misura dell’illuminamento  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+3.4   Misura della luminanza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+4   COLORIMETRIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+4.1   Sistema CIE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+4.2   Valori tristimolo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+4.3   Sistema Munsell  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+4.4   Temperatura di colore e indice di resa cromatica  . . . . . . . . . . . . . . . . . . . .
+16
+4.5   Efficienza luminosa  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+5   SORGENTI LUMINOSE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+5.1   Lampade ad incandescenza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+5.1.1   Lampade ad incandescenza con filamento nel vuoto . . . . . . . . . . . .
+18
+5.1.2   Lampade ad incandescenza in gas inerti  . . . . . . . . . . . . . . . . . . . . .
+18
+5.1.3   Lampade ad incandescenza con alogeni  . . . . . . . . . . . . . . . . . . . . .
+24
+5.2   Lampade a scarica nei gas e nei vapori . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+27
+5.2.1   Lampade fluorescenti  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+29
+5.2.2   Lampade a vapori di mercurio ad alta pressione  . . . . . . . . . . . . . . .
+36
+5.2.3   Lampade a vapori di mercurio con alogenuri (ioduri metallici) . . . .
+37
+5.2.4   Lampade a vapori di sodio a bassa pressione  . . . . . . . . . . . . . . . . .
+39
+5.2.5   Lampade a vapori di sodio ad alta pressione . . . . . . . . . . . . . . . . . .
+40
+5.2.6   Lampade a vapori di mercurio a luce miscelata . . . . . . . . . . . . . . . .
+40
+5.2.7   Lampade per applicazioni speciali  . . . . . . . . . . . . . . . . . . . . . . . . .
+41
+5.3   Regole da osservare negli impianti con lampade a scarica nei gas  . . . . . . .
+44
+5.4   Lampade LED . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+45
+6   APPARECCHI ILLUMINANTI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+47
+7   ILLUMINAZIONE DI INTERNI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+51
+
+[PAG 1130]
+XI-2
+ILLUMINOTECNICA
+7.1   Dimensionamento illuminotecnico con procedura manuale  . . . . . . . . . . . . 
+60
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+62
+1  INTRODUZIONE
+L’Illuminotecnica è quella parte di Fisica che tratta i problemi legati all’illuminazione 
+naturale e artificiale e collegati alla possibilità di creare condizioni di benessere ambien-
+tale e di comfort visivo per le persone. Parte integrante dell’illuminotecnica è la fotome-
+tria che rappresenta la capacità di misurare e quindi quantificare l’energia raggiante 
+emessa da una sorgente luminosa, primaria o secondaria, in stretta relazione con le sensa-
+zioni prodotte sull’uomo.
+Quando si tratta di studi legati alla luce è d’obbligo considerare che l’organo interes-
+sato quale sensore dell’illuminazione è l’occhio. Esso, con la sua complessa struttura e 
+con i suoi recettori, può essere definito un “sistema analogico” che reagisce alla sensibi-
+lizzazione dei recettori provocata dalla luce scomponendo le sostanze fotosensibili. Suc-
+cessivamente, a livello delle cellule gangliari, si comporta da convertitore di segnali da 
+analogici a digitali prima di spedirli al cervello. Di fatto l’occhio svolge sia la funzione di 
+ricezione del messaggio luminoso, sia quella di processarlo perché possa essere trasmesso 
+al cervello.
+Occorre considerare inoltre la sua capacità di accomodamento per la messa a fuoco 
+degli oggetti, funzione che rende il concetto di visione ancora più complesso. La perce-
+zione visiva è sensibile sia alla lunghezza d’onda sia alla frequenza determinando sensibi-
+lità differenti e l'intensità della risposta dell'occhio alla radiazione stimolatrice dipende in 
+generale dalla potenza della radiazione stessa e non dalla durata. Se però tale durata è 
+inferiore a circa 0,1 s, allora la sensazione percepita dipende dall'energia della radiazione. 
+Nel cercare di definire la sensibilità media dell’occhio umano a differenti radiazioni 
+aventi però uguale energia, si è giunti a definire il fattore di visibilità V() dell’occhio 
+umano medio come il rapporto tra due flussi energetici relativi a luci monocromatiche di 
+diversa lunghezza d’onda, ma regolate per generare sensazioni di visibilità di uguale 
+intensità luminosa. Questo rapporto è uguale a 1 per = 0 (555 nm), minore di 1 alle 
+altre lunghezze d'onda e uguale a zero alle lunghezze d'onda esterne all'intervallo com-
+preso tra 380 e 780 nm.
+I principali tipi di radiazione elettromagnetica si possono riscontrare nel cosiddetto 
+spettro elettromagnetico (Tab. XI.1.1), ma solo alcune lunghezze d'onda sono in grado di 
+stimolare i recettori retinici dell'occhio umano, e in particolare solamente la radiazione 
+prodotta nella banda di lunghezze d'onda compresa tra i 380 nm e i 780 nm è visibile ed è 
+considerata luce: in questo spettro ciascuna lunghezza d'onda viene percepita sotto forma 
+di un ben preciso colore.
+
+[PAG 1131]
+ILLUMINOTECNICA
+XI-3
+Tab. XI.1.1   Lo spettro elettromagnetico
+Le sorgenti artificiali di luce costituiscono, ormai, parte integrante dello stile di vita e 
+delle esigenze estetiche di ognuno di noi. Lampade ed apparecchi illuminanti creano 
+comfort visivo, valorizzano l'ambiente-spazio, forniscono livelli ottimali di illuminazione 
+per ogni esigenza specifica. La scelta ragionata degli apparecchi di illuminazione per-
+mette di personalizzare e modellare lo spazio (mediante la manipolazione della concentra-
+zione, della forma e intensità del flusso luminoso, dell'orientamento dell'asse ottico) per 
+adeguarlo alla propria personalità o per valorizzarlo e renderlo più gradevole alla vista.
+Anche per questo settore esistono degli Organismi normativi competenti che, analoga-
+mente agli organismi di normativa elettrotecnica ed elettronica, si strutturano a livello 
+internazionale, europeo e nazionale. Sinteticamente, a livello internazionale si trovano il 
+CIE (Commission Internationale de l’Eclairage) e l’ISO (International Standard Organi-
+zation) per gli aspetti puramente illuminotecnici, l’IEC (International Electrotechnical 
+Commission) per gli aspetti elettrici. A livello europeo operano il CENELEC (Comité 
+Européen de Normalisation Electrotecnique), per il settore elettrotecnico, e il CEN
+(Comité Européen de Normalisation), per il settore meccanico e prestazionale. In ambito 
+nazionale italiano troviamo il CEI (Comitato Elettrotecnico Italiano), l'UNI (Ente Nazio-
+nale Italiano di Unificazione) e l’AIDI (Associazione Italiana di Illuminazione).
+Per quanto riguarda l'illuminazione in particolare, il CEN opera attraverso il Techni-
+cal Committee 169 "Lighting Application" che si articola in sette Gruppi di Lavoro, cia-
+scuno dei quali si occupa di un particolare campo di applicazione. L'Italia partecipa 
+all'attività di tale Comitato con la Commissione "Applicazione dell'Illuminotecnica" 
+dell'UNI. Occorre evidenziare che le norme CEN, così come quelle UNI, hanno carattere 
+impositivo e che, accanto a queste, esistono le Raccomandazioni della CIE le quali, pur 
+non avendo valore di norme, hanno da sempre costituito un punto di riferimento in tutti i 
+Paesi aderenti alla CIE per la loro validità tecnica.
+Le norme CEI che regolamentano questo settore sono quelle del Comitato Tecnico 34 
+“Lampade e relative apparecchiature”.
+Denominazione
+Sigla
+Frequenza
+Lunghezza
+Radiazioni non ionizzanti
+Frequenze estremamente basse
+ELF
+0 - 3 kHz
+> 100 km
+Frequenze bassissime
+VLF
+3 - 30 kHz
+100 - 10 km
+Radio frequenze 
+(RF)
+Frequenze basse 
+(onde lunghe)
+LF
+30 - 300 kHz
+10 - 1 km
+Medie frequenze 
+(onde medie)
+MF
+300 kHz - 3 MHz
+1 km - 100 m
+Alte frequenze
+HF
+3 - 30 MHz
+100 - 10 m
+Frequenze altissime
+VHF
+30 - 300 MHz
+10 - 1 m
+Microonde (MO)
+Onde decimetriche
+UHF
+300 MHz - 3 GHz
+1 m - 10 cm
+Onde centimetriche
+SHF
+3 - 30 GHz
+10 - 1 cm
+Onde millimetriche
+EHF
+30 - 300 GHz
+1 cm - 1 mm
+Infrarosso
+IR
+0,3 - 385 THz
+1000 - 780 nm
+Luce visibile
+385 - 750 THz
+780 - 400 nm
+Ultravioletto
+UV
+750 - 3000 THz
+400 - 100 nm
+Radiazioni 
+ionizzanti
+X, Gamma
+> 3000 THz
+< 100 nm
+
+[PAG 1132]
+XI-4
+ILLUMINOTECNICA
+2  GRANDEZZE FOTOMETRICHE
+Se si considera che un impianto di illuminazione deve soddisfare le più svariate esi-
+genze degli utenti  per esempio, permettere un facile riconoscimento degli oggetti in 
+ambito lavorativo limitando l'affaticamento e rendendo chiaramente percepibili le situa-
+zioni di pericolo; facilitare l'esame delle merci e valorizzare la loro esposizione; facilitare 
+l'attenzione e la concentrazione nei luoghi di insegnamento; permettere lo svolgimento 
+delle normali attività domestiche e creare una atmosfera confortevole  si intuisce imme-
+diatamente come l'illuminotecnica svolga un ruolo di primaria importanza negli impianti 
+elettrici. Essa si basa sullo studio di cinque grandezze fotometriche: il flusso luminoso, 
+l’intensità luminosa, l’illuminamento, la luminanza e la radianza.
+2.1  Flusso luminoso
+Il flusso luminoso (V) è la grandezza che definisce la potenza totale irraggiata da una 
+sorgente luminosa sotto forma di radiazione visibile (Fig. XI.2.1), cioè la quantità totale di 
+luce emessa da una lampada nell'unità di tempo. Da un punto di vista ricettivo, il flusso 
+luminoso lega l’intensità della sensazione luminosa alla potenza dello stimolo, che per 
+radiazioni monocromatiche segue la relazione
+(XI.2.1)
+dove V rappresenta il flusso luminoso,  il fattore di visibilità e P( la potenza rag-
+giante.
+Nel caso di flusso luminoso policromatico, la relazione si trasforma in
+(XI.2.2)
+Il flusso luminoso si misura in lumen (lm) che si può definire come il flusso irradiato 
+nell'angolo solido unitario da una sorgente puntiforme con intensità luminosa costante di 
+1 candela (cd).
+2.2  Intensità luminosa
+L’intensità luminosa (I) è definita come quella parte di flusso luminoso  emesso da 
+una lampada in una specifica direzione n nell’angolo solido elementare  (Fig. XI.2.2) e 
+segue la relazione
+(XI.2.3)
+ L'intensità luminosa si misura in candele (cd); la candela viene definita come l'inten-
+sità luminosa emessa in una certa direzione da una sorgente avente una radiazione mono-
+cromatica con frequenza pari a 540 THz e intensità energetica in quella direzione di 
+1/683 W/sr.
+Fig. XI.2.1   Flusso luminoso.
+v
+K 
+P 
+
+=
+v
+P 
+
+d
+
+d
+--------------K 
+
+d
+380nm
+780nm
+
+=
+I
+d
+d
+-------
+=
+
+[PAG 1133]
+ILLUMINOTECNICA
+XI-5
+È stato scelto questo specifico valore di frequenza perché esso corrisponde al massimo 
+della sensazione di visibilità =Kmax, quindi
+(XI.2.4)
+da cui deriva
+(XI.2.5)
+Considerando che l’intensità luminosa (I) è 1 cd sr = 1 lm, si conclude che
+(XI.2.6)
+Si immagini una sfera al cui centro sia posi-
+zionata una sorgente luminosa puntiforme. Se 
+un angolo solido unitario pari a un steradiante 
+(sr)  equivalente all’angolo tridimensionale 
+che racchiude lo spazio definito dai raggi r i 
+quali congiungono il centro della sfera con il 
+perimetro di un’area pari a r2  contiene un 
+flusso pari a 1 lumen, si dirà che nella direzione 
+indicata la luce ha un’intensità di 1 candela (cd). 
+Se si aumenta il raggio della sfera non cambia 
+né l’angolo solido, né il flusso, né l’intensità 
+luminosa, però la luce si distribuisce su una 
+superficie più ampia che incrementa secondo il 
+quadrato del raggio: se il raggio raddoppia 
+l’estensione della superficie cresce di quattro volte, se r triplica l’area aumenta di nove 
+volte e così via.
+2.3  Illuminamento
+L'illuminamento (E) in un punto di una superficie è il rapporto tra il flusso luminoso 
+ricevuto da un elemento della superficie che contiene il punto e l'area di tale elemento 
+(Fig. XI.2.3).
+(XI.2.7) 
+L'illuminamento si misura in lux (lx): definito come il valore di illuminamento di una 
+superficie di 1 m2 investita uniformemente dal flusso luminoso di 1 lumen.
+Mediante questa relazione si riscontra che l'illuminamento è inversamente proporzio-
+Fig. XI.2.2   Intensità luminosa.
+1cd
+Kmax
+1
+683
+--------W
+sr
+----
+=
+Kmax
+683cdsrW 1
+–
+=
+Kmax
+683lmW 1
+–
+=
+P
+
+n
+r = 1
+r 2
+1 lux
+1 lm
+1 cd
+E
+
+d
+A
+d------
+=
