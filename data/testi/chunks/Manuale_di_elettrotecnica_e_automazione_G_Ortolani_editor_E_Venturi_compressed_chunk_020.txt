@@ -1,0 +1,915 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 20/116 ===
+Chars: 44,554 | Offset: 839,096
+
+
+
+[PAG 415]
+CAD
+VI-41
+–  Usare il comando Editpl per ripristinare le polilinee assegnando una lar-
+ghezza di 0.4 alla squadratura e 0.2 alle polilinee del blocco del titolo.
+–  Fare clic sul pulsante Proprietà Layer, nel pannello Layer.
+Si apre la finestra di dialogo di Fig. VI.6.3, nella quale, usando il pulsante 
+Nuovo, si creeranno i layer indicati, assegnando anche colori diversi.
+Fig. VI.6.3  Finestra di dialogo proprietà layer.
+–  Rendere corrente il layer Tensioni stellate e fare clic sul pulsante OK.
+6.3  Grafico delle tensioni
+Le tensioni saranno disegnate scalate di un valore 10, per una maggior leggibilità del 
+disegno; questo non modificherà le relazioni angolari.
+–  Attivare il comando Linea e fare clic nel punto di coordinate 60,50; digitare:
+ @23<90 (per specificare il punto successivo e quindi premere Invio).
+–  Per disegnare una freccia all’estremità del vettore che rappresenta la E1 attivare il 
+comando Polilinea dalla sua icona. Con Autosnap attivo fare clic, con puntatore sulla 
+parte superiore della linea; digitare:
+La (seguito da Invio, per assegnare la Larghezza),
+0 (seguito da Invio, per assegnare la larghezza iniziale),
+1 (seguito da Invio, per assegnare la larghezza finale),
+@2.5<-90 (seguito da Invio per indicare il punto finale).
+Premere Invio per concludere il comando Polilinea.
+–  Attivare il comando Serie, dal corrispondente pulsante nel pannello Edita.
+Selezionare linea e freccia e premere Invio per concludere la selezione. Digitare:
+P (seguito da Invio, per scegliere una serie polare).
+Fare clic all’estremo inferiore della linea, per indicare il centro della serie. Digitare:
+3 (per indicare il numero di elementi della serie). 
+Premere due volte Invio per accettare di occupare 360° come proposto e di ruotare gli 
+oggetti nella formazione della serie. Il risultato sarà quello di Fig. VI.6.4.
+
+[PAG 416]
+VI-42
+CAD
+Fig. VI.6.4  
+Fig. VI.6.5  
+–  Rendere corrente il layer Tensioni concatenate, selezionandolo dal pulsante Proprietà 
+layer del pannello Layer.
+–  Per tracciare la tensione concatenata U12 usare il comando Linea per disegnare un 
+segmento che congiunga l’estremità di E1 con l’estremità di E2, con l’aiuto dell’Autosnap
+come in Fig. VI.6.5.
+–  Attivare il comando Sposta, dalla barra degli strumenti di modifica, e selezionare 
+l’ultimo segmento disegnato. 
+–  Fare clic vicino all’estremità in basso a destra per specificare il punto base. Fare clic 
+all’intersezione delle tre linee verdi per indicare dove spostare.
+–  Usare il comando Polilinea per disegnare una freccia all’estremità superiore del seg-
+mento appena spostato. 
+Si ricordi: larghezza iniziale 0, finale 1, punto finale @ 2.5<300.
+–  Attivare il comando Serie (polare) per disegnare le altre tensioni concatenate.
+–  Rendere corrente 
+il layer testo. Fare 
+clic su Disegna, nella 
+barra dei menu a 
+discesa poi su Testo e 
+riga singola di testo.
+–   Usando lo stile 
+standard, con altezza 
+2.5 per le lettere e 1.5 
+per i pedici, scrivere i 
+nomi delle tensioni 
+concatenate e stellate 
+come in Fig. VI.6.6.
+Fig. VI.6.6   Grafico delle tensioni.
+
+[PAG 417]
+CAD
+VI-43
+6.4  Correnti note
+Si disegneranno ora le tre correnti del motore che, come calcolato, sono sfasate di 
+31.79° in ritardo rispetto alle tensioni stellate. La corrente Ic del carico monofase è invece 
+sfasata di 39.8° in ritardo rispetto alla tensione concatenata U23. Per semplicità non verrà 
+indicato come disegnare le frecce di questi vettori.
+–  Rendere corrente il layer Correnti motore, dalla finestra di controllo del layer. Per 
+semplificare la costruzione, in questo caso può essere conveniente disegnare per prima la 
+I2m in ritardo di 31.79° rispetto a E2, quindi in ritardo di 61.79° rispetto a U23, che è pro-
+prio nella direzione del riferimento zero per gli angoli.
+–  Attivare il comando Linea dalla sua icona. Fare clic nel centro stella per fissare il 
+primo punto. Digitare:
+@6.26<-61.79 (seguito da due Invio).
+–  Con il comando Serie (polare) disegnare le altre due correnti del motore. Rendere cor-
+rente il layer Corrente monofase. Attivare il comando Linea dalla propria icona. Fare clic 
+nel centro stella per fissare il primo punto. 
+–  Digitare:
+@8.54<-39.8 (seguito da due Invio).
+–  Rendere corrente il layer Testo e scrivere i nomi delle varie correnti. Il risultato è 
+quello di Fig. VI.6.7.
+Fig. VI.6.7   Grafico delle tensioni e delle correnti note.
+6.5  Costruzioni
+Per quanto già detto, la corrente di linea I1 è uguale alla I1m, non occorre perciò nessun 
+calcolo; la corrente I2 è la somma vettoriale tra I2m e Ic; la I3 è la differenza vettoriale tra 
+I3m e Ic. Per eseguire la differenza vettoriale, è conveniente disegnare il vettore Ic e poi 
+eseguire la somma tra questo e I3m. La somma tra i vettori sarà eseguita utilizzando la regola 
+del parallelogramma. Si disegnerà per prima cosa il vettore Ic, che è il simmetrico di Ic
+rispetto all’origine. Per ottenere questo risultato si costruirà l’immagine speculare di Ic, 
+prima rispetto l’asse orizzontale, poi rispetto l’asse verticale.
+
+[PAG 418]
+VI-44
+CAD
+–  Fare clic sull’icona del comando Specchio, degli strumenti di modifica. Sele-
+zionare il vettore Ic e premere Invio per concludere la selezione. Alla richiesta del 
+primo punto della linea speculare: fare clic, con Autosnap attivo, verso l'inizio
+della linea del vettore U23. Viene richiesto il secondo punto della linea speculare:; fare 
+clic, con Autosnap attivo, verso la fine della linea del vettore U23. Premere Invio, per con-
+cludere accettando di non cancellare l’originale.
+–  Attivare ancora il comando Specchio. Selezionare il vettore speculare appena dise-
+gnato e premere Invio. Alla richiesta del primo punto della linea speculare: fare clic, con 
+Autosnap attivo, verso l’inizio della linea del vettore E1. Viene richiesto il secondo punto
+della linea speculare:. Fare clic, con Autosnap attivo, verso la fine della linea del vettore 
+E1. Digitare:
+S (per eliminare l’oggetto originale seguito da Invio).
+–  Nel layer Testo, scrivere Ic in corrispondenza del nuovo vettore.
+–  Si devono disegnare i parallelogrammi per ottenere le somme vettoriali richieste. Ren-
+dere attivo il layer costruzioni.
+–  Attivare il comando Linea. Fare clic, con Autosnap attivo, verso la fine della 
+linea del vettore Ic. Alla richiesta del punto successivo: fare clic sul pulsante 
+Parallelo nella barra degli strumenti di osnap. 
+–  Portare il puntatore sul 
+vettore I2m trattenendolo 
+qualche istante, fino a che 
+non compare l’etichetta 
+Parallelo. Spostare il pun-
+tatore fino a visualizzare 
+la traiettoria di allinea-
+mento punteggiata, come 
+nella Fig. VI.6.8 e fare 
+clic. Premere Invio, per 
+concludere 
+il 
+comando 
+Linea. 
+Riattivare 
+il 
+comando Linea e fare clic, 
+con Autosnap attivo, verso 
+la fine della linea del vet-
+tore I2m. 
+Fig. VI.6.8  
+–  Alla richiesta del punto suc-
+cessivo: fare clic sul pulsante 
+Parallelo nella barra degli stru-
+menti di osnap. 
+–  Portare il puntatore sul vet-
+tore Ic trattenendolo qualche 
+istante, fino a che non compare 
+l’etichetta Parallelo.
+–  Spostare il puntatore fino a 
+visualizzare la traiettoria di alli-
+neamento punteggiata, come 
+nella Fig. VI.6.9 e fare clic.
+Fig. VI.6.9
+
+[PAG 419]
+CAD
+VI-45
+Fig. VI.6.10  
+–  Ripetere il procedimento sui vettori I3m e IC. Usare Taglia, per eliminare i segmenti
+sporgenti dei parallelogrammi. Il risultato è quello di Fig. VI.6.10.
+6.6  Correnti di linea
+La corrente di linea I2 è individuata dalla diagonale del parallelogramma in basso a 
+destra, la I3 della diagonale del parallelogramma disegnato nel secondo quadrante.
+–  Rendere corrente il layer Correnti linea e attivare il comando Linea. Con l’Autosnap
+attivo, usare il centro stella come primo punto. Fare clic all’intersezione delle due linee di 
+costruzione in basso a destra, per indicare il punto finale. Premere Invio, per concludere il 
+comando.
+–  Premere Invio, per riavviare il comando Linea e con lo stesso procedimento tracciare 
+la diagonale del parallelogramma in alto a sinistra.
+Scrivere, con il comando Testodin, I2 e I3 vicino all’estremità dei due vettori.
+6.7  Lettura dei risultati
+Il disegno è completato ed è possibile, visualizzando le proprietà degli oggetti, otte-
+nere le lunghezze dei vettori e gli angoli. Poiché in genere si vuole conoscere l’angolo tra 
+la corrente e la relativa tensione di fase, si eseguirà prima un’altra costruzione.
+–  Rendere corrente il Layer costruzioni. 
+–  Fare clic sul pulsante Arco, nella tavolozza degli strumenti disegnA. Digitare:
+C (seguito da Invio per indicare che si vuole specificare il Centro).
+Fare clic, con l’Autosnap attivo, nel centro stella. Fare clic sul punto finale di I2, per 
+indicare il punto iniziale dell’arco.
+–  Trascinare il puntatore verso destra fino a superare il vettore E2, come in Fig. VI.6.11
+e fare clic.
+Si noti che l’arco viene disegnato in senso antiorario ed il risultato sarebbe diverso se 
+l’arco fosse indicato in senso orario.
+–  Attivare il comando Taglia ed eliminare la parte di arco esterna a E2. Con lo stesso 
+procedimento, disegnare un arco tra l’estremità di I3 ed E3.
+
+[PAG 420]
+VI-46
+CAD
+Fig. VI.6.11  
+–  Per conoscere il modulo di I2
+selezionare il segmento che la rap-
+presenta.
+Fare clic sul pulsante destro del 
+mouse e quindi attivare il menu Pro-
+prietà.
+Si apre la finestra di Fig. 
+VI.6.12, nella quale sono indicate le 
+caratteristiche dell’oggetto selezio-
+nato.
+In particolare nelle ultime due 
+righe si legge:
+Lunghezza 14.53                 Angolo 310.93
+La corrente di linea I2 vale perciò 14,53 A. L’angolo è come sempre riferito alla dire-
+zione di riferimento, quindi per sapere l’angolo formato con E2 sarebbe necessario ese-
+guire dei calcoli.
+Fig. VI.6.12   
+–  Utilizzando invece gli archi di costruzione disegnati premere il tasto Esc due volte per 
+deselezionare I2. Fare clic sull’arco compreso tra I2 ed E2, per selezionarlo.
+Nella finestra proprietà di Fig. VI.6.13 si troveranno le caratteristiche dell’arco.
+In particolare si può vedere che l’angolo totale vale 19,07 gradi.
+Con lo stesso procedimento, applicato alla corrente di linea I3 e al relativo arco tra I3
+ed E3 si trova:
+I3 = 14 A                               Angolo tra I3 e E3 = 53.85°
+
+[PAG 421]
+CAD
+VI-47
+Fig. VI.6.13  
+7  PROIEZIONI ORTOGONALI
+Nel disegno tecnico è necessario 
+rappresentare degli oggetti solidi a tre 
+dimensioni, su di un foglio o su uno 
+schermo, aventi due dimensioni. Il 
+metodo più usato è quello delle proie-
+zioni ortogonali, che consiste nel pro-
+iettare l’oggetto per mezzo di un 
+fascio di rette parallele tra loro e per-
+pendicolari al piano di proiezione, 
+secondo direzioni perpendicolari tra 
+loro.
+Si supponga di inserire l’oggetto in 
+una scatola di forma parallelepipeda. Su 
+ognuna delle sei facce interne del paral-
+lelepipedo, sarà possibile effettuare la 
+proiezione ortogonale. L’oggetto sarà 
+pertanto rappresentato da sei viste 
+diverse. In realtà per dare tutte le infor-
+mazioni, sono necessarie nella maggior 
+parte dei casi, solo tre di queste proie-
+zioni, come in Fig. VI.7.1.
+Fig. VI.7.1  
+–  La proiezione frontale, lungo la direzione Q è detta vista anteriore o prospetto.
+–  La proiezione dal fianco sinistro, lungo la direzione P è detta profilo.
+–  La proiezione dall’alto, lungo la direzione R è detta pianta.
+O
+A
+B
+Q
+R
+P
+
+[PAG 422]
+VI-48
+CAD
+Se si immagina di tagliare la scatola secondo lo spigolo AB e poi aprirla in un piano, 
+si ottengono le tre proiezioni di Fig. VI.7.2.
+Fig. VI.7.2  Tipico esempio di proiezioni ortogonali.
+La posizione relativa delle viste deve essere rigorosamente quella rappresentata, dove 
+la vista dall’alto è posta sotto la vista frontale, e la vista da sinistra (profilo), sul lato 
+destro. Inoltre la disposizione deve essere tale che le linee di proiezione degli spigoli dei 
+vari elementi rappresentati, coincidano. 
+Nel caso di oggetti particolarmente semplici possono essere sufficienti due sole proie-
+zioni o addirittura una sola.
+Gli spigoli effettivamente visibili dalla direzione di osservazione, vanno rappresentati 
+con una linea continua, generalmente dotata di un certo spessore. Gli spigoli interni, o 
+comunque invisibili da quella direzione, perché nascosti dall’oggetto stesso, vanno rap-
+presentati con una linea tratteggiata sottile. Vanno inoltre inseriti gli eventuali assi di sim-
+metria.
+7.1  Disegno in proiezione ortogonale di un supporto
+In questo capitolo si realizzeranno le tre viste di una staffa di supporto, introducendo 
+nuovi strumento di disegno, come Anello e Raccordo, tipi di linea diversi, e si utilizzerà il 
+puntamento con snap ad oggetto Opuntamento.
+Alla fine il disegno sarà come in Fig. VI.7.3.
+7.2  Iniziare il nuovo disegno
+Dopo aver lanciato AutoCAD
+–  Fare clic sull’icona Apri; fare clic su Sfoglia per selezionare nella directory utenti il 
+file Mod-corso.dwt e fare clic su OK. Si apre la solita squadratura.
+–  Fare clic nel riquadro del titolo, sul testo BORDO, per selezionarlo.
+–  Fare clic sul pulsante destro del mouse e quindi attivare il menu Proprietà; si apre la 
+finestra di dialogo proprietà del testo selezionato. Alla voce contenuto, sotto Testo sele-
+zionare BORDO e digitare al suo posto SUPPORTO. Fare clic sul pulsante di chiusura 
+della finestra.
+O
+A
+B
+Prospetto
+Pianta
+Profilo
+
+[PAG 423]
+CAD
+VI-49
+Fig. VI.7.3  
+–  Premere due volte il tasto Esc per deselezionare il testo. Fare clic sulla data per sele-
+zionarla.
+–  Premere Invio per riprendere il comando precedente Proprietà. Seguendo la stessa 
+procedura, aggiornare la data.
+–  Eseguire uno Zoom tutto; nel menu a discesa File, scegliere Salva con nome e, dare il 
+nome Supporto.
+7.3  Aggiornamento delle impostazioni del foglio di lavoro
+Sarà conveniente avere uno snap impostato a cinque unità, metà della spaziatura di 
+griglia; serviranno inoltre nuovi layer e nuovi tipi di linea.
+–  Aprire il menu a discesa Strumenti e fare clic su Impostazioni disegno. Nella cartella 
+Snap e Griglia, digitare 5 nella casella intervallo X di snap. Nella cartella Snap ad oggetto
+selezionare solo le impostazioni Fine, Medio, Centro e Quadrante; quindi selezionare la 
+casella Puntamento snap ad oggetto, e fare clic su OK.
+–  Aprire la finestra di gestione dei layer con un clic sull’icona Proprietà
+Layer nel pannello Layer della scheda Inizio. Fare clic sul pulsante Nuovo e, 
+dove compare layer1 digitare Piani. Con il pulsante Nuovo, creare altri due 
+layer assegnando i nomi, Nas e Assi.
+Si noti che per tutti i layer, nella colonna tipo di linea appare scritto Continuous, per 
+indicare che il tipo di linea che sarà adottato in quel layer è la linea continua. Nel layer 
+Nas verranno disegnati gli spigoli non in vista, quindi risulta conveniente adottare una 
+linea tratteggiata. Nel layer Assi si disegneranno gli assi di simmetria, costituiti da una 
+alternanza di tratti lunghi e corti. Se l’ultimo layer creato è Assi esso sarà selezionato.
+–  Fare clic su Continuous, nella colonna del tipo di linea. Si apre una finestra che per-
+mette di selezionare il tipo di linea. Compare solo Continuous. Per avere a disposizione 
+altri tipi di linea bisogna prima caricarli.
+–  Fare clic sul pulsante Carica. Si apre la finestra di Fig. VI.7.4 nella quale compaiono i 
+tipi di linea disponibili. Ci si sposti nell’elenco con la barra di scorrimento e si clicchi su 
+CENTRO2. Scendere e fare clic su NASCOSTA2 tenendo premuto il tasto Control.
+–   Fare clic su OK per concludere il caricamento dei tipi di linea.
+
+[PAG 424]
+VI-50
+CAD
+Fig. VI.7.4  Maschera di dialogo Carica o ricarica tipi di linea.
+–  Selezionare per il layer Assi il tipo di linea CENTRO2. Fare clic sul pulsante OK. Si 
+osservi che, nella finestra delle proprietà dei layer, al layer Assi è associata la linea desi-
+derata.
+–  Fare clic su Continuous, nel layer Nas. Si riapre la finestra di selezione del tipo di 
+linea. Selezionare con un clic, NASCOSTA2, e confermare con un clic su OK. Fare clic sul 
+quadratino nero, nella colonna Colore, relativo al layer Nas. Si apre la finestra di dialogo 
+per l’impostazione del colore associato al layer. Fare clic sul colore verde e poi sul pul-
+sante OK.
+–  Ripetere il procedimento per il layer Assi scegliendo il colore blu.
+–  Selezionare il layer Piani, fare clic su Corrente e quindi su OK per confermare.
+–  Si disegneranno ora le due linee che delimitano i piani delle tre viste, di fronte, 
+dall’alto e di fianco.
+–  Controllare che il pulsante Opuntamento, nella barra di stato, sia attivato. Il punta-
+mento mediante snap ad oggetto può essere attivato anche con il tasto F11.
+–  Fare clic sul pulsante Linea, nella tavolozza degli strumenti disegna.
+–  Portare il mirino di selezione vicino al cen-
+tro della linea verticale sinistra della squadra-
+tura, Fig. VI.7.5, senza fare clic.
+–  Compare il contrassegno del punto centrale. 
+Posizionandosi su questo punto per qualche 
+attimo il punto viene acquisito e, se si sposta il 
+cursore verso destra, viene visualizzata una 
+traiettoria di allineamento orizzontale.
+Fig. VI.7.5  
+–  Alla riga di comando si legge specificare primo punto:. Fino a che compare la traietto-
+ria di allineamento con un clic del pulsante sinistro del mouse, il punto di partenza della 
+linea rimarrà allineato con il punto medio della linea verticale della squadratura. È anche 
+possibile digitare la distanza dal punto acquisito. 
+–  Digitare:
+10 (seguito da Invio).
+
+[PAG 425]
+CAD
+VI-51
+–  Il punto iniziale della linea sarà allineato con il punto medio del lato verticale della 
+squadratura ad una distanza di dieci unità. Digitare:
+@240<0 (per specificare il punto finale, seguito da due Invio,).
+–  Attivare il modo Snap con il tasto F9. Premere Invio per riprendere il comando Linea. 
+Spostare il puntatore e fare clic quando si arriva alle coordinate 165,20.
+–  Digitare:
+@170<90 (seguito da due Invio).
+7.4  Disegno della vista dall’alto
+Si inizierà il disegno con la vista dall'alto o pianta, che andrà posizionata nel quadran-
+te in basso a sinistra. Si traccerà prima il cerchio esterno, poi il contorno perimetrale, 
+quindi si taglierà metà del cerchio.
+–  Aprire la finestra di controllo dei layer e rendere corrente 
+il layer ogg.
+–  Fare clic sul pulsante Cerchio, nella tavolozza degli stru-
+menti disegna. Digitare:
+55,60 (e Invio, per le coordinate del centro).
+25 (e Invio, per assegnare il raggio del cerchio).
+Il perimetro del cerchio si trova sulla griglia di snap, 
+quindi non ci sarebbe nessuna difficoltà nel disegnarlo; in 
+alternativa si eseguirà la costruzione ricorrendo all’aiuto di 
+AutoTrack.
+–  Disattivare la Griglia con F7 e lo Snap con F9. Control-
+lare che sia attivo l’Osnap e il puntamento con snap ad oggetto (Opuntamento).
+–  Fare clic sull’icona del comando Linea, nella tavolozza degli strumenti disegna. Posi-
+zionare il puntatore nella parte bassa della circonferenza e, quando compare il contrasse-
+gno Quadrante, fare clic con il pulsante sinistro. Digitare:
+@90<0 (e Invio, per indicare il punto successivo).
+–  Viene richiesto il punto successivo.
+Si dovrà disegnare una linea verticale il cui punto di arrivo sia perfettamente allineato 
+con il quadrante superiore della circonferenza. Sarà necessario acquisire temporanea-
+mente questo punto.
+–  Portare il mirino di sele-
+zione sulla parte superiore 
+della circonferenza e quando 
+compare 
+il 
+contrassegno 
+Quadrante, 
+trattenersi 
+in 
+questa posizione per qualche 
+istante, 
+per 
+acquisire 
+il 
+punto. 
+–  Spostando il puntatore 
+verso destra si vede una tra-
+iettoria di allineamento trat-
+teggiata che assicura che il 
+punto è stato acquisito. 
+Fig. VI.7.6  
+–  Spostandosi ancora a destra lungo questa traiettoria, quando si arriverà all’incirca 
+sopra il punto finale della linea precedentemente disegnata, comparirà anche la traiettoria 
+di allineamento punteggiata relativa a questo punto, come in Fig. VI.7.6.
+–  Fare clic, con il pulsante sinistro del mouse, per disegnare il tratto verticale.
+
+[PAG 426]
+VI-52
+CAD
+–  Portare il puntatore sulla parte superiore della circonferenza e fare clic quando com-
+pare il contrassegno Quadrante.
+–  Riattivare Griglia e Snap dalla barra di stato oppure con i tasti F7 e F9.
+–  Attivare il comando Cerchio, 
+dalla tavolozza degli strumenti 
+disegna.
+–  Posizionare il puntatore a due 
+punti di griglia a sinistra della 
+linea verticale ed allineato con il 
+centro del cerchio, nel punto A 
+di Fig. VI.7.7 e fare clic con il 
+tasto sinistro del mouse. 
+Fig. VI.7.7  
+–  Digitare:
+–  10 (e Invio, per specificare il raggio del cerchio).
+–  Attivare il comando Linea, dalla tavolozza degli strumenti disegna. Portare il punta-
+tore nella parte superiore del cerchio appena disegnato, punto B, e fare clic quando com-
+pare l’etichetta Quadrante. Ci si sposti a destra fino alla linea verticale, sulla griglia di 
+snap, e fare clic per collegarsi esattamente.
+Si faccia attenzione al fatto che, con l’Autosnap attivato, potrebbe essere difficoltoso 
+disegnare la linea tra i punti B e C. Può essere opportuno disattivare momentaneamente lo 
+snap ad oggetti, oppure specificare esplicitamente l’opzione Perpendicolare.
+Ripetere il procedimento per disegnare un segmento tra il punto E sul quadrante infe-
+riore, al punto D sulla verticale a destra.
+7.4.1  Taglio dei due cerchi
+–  Fare clic sul pulsante Taglia, nel pannello Edita della scheda Inzio.
+–  Selezionare le quattro linee orizzontali come limiti di taglio e fare clic con il tasto 
+destro del mouse, per concludere la selezione.
+–  Selezionare la parte destra dei due cerchi ed il tratto di linea verticale compreso tra i 
+punti C e D, per indicare gli oggetti da tagliare. Premere Invio per completare il comando.
+7.4.2  Altri spigoli in vista
+Si devono disegnare gli altri due cerchi concentrici con diametri 29 e 42. Non è conve-
+niente utilizzare il comando Cerchio, perché non è possibile convertirlo in polilinea ed 
+assegnare una larghezza. Si userà allora il comando Anello, specificando il diametro 
+interno uguale a quello esterno, per farlo apparire come un cerchio. In seguito sarà possi-
+bile assegnare una larghezza.
+–  Digitare:
+Anello (seguito da Invio).
+–  Alla richiesta del diametro interno digitare:
+29 (seguito da Invio, per assegnare il diametro interno).
+29 (seguito da Invio, per assegnare il diametro esterno).
+–  Viene chiesto il centro dell’anello, digitare:
+Cen (seguito da Invio).
+–  Portare il puntatore sull’arco di sinistra e, quando compare il contrassegno Centro, 
+fare clic.
+–  Ripetere il procedimento per disegnare un anello concentrico di diametro 42.
+Si disegna ora la linea verticale, che parte dal punto G della Fig. VI.7.8 che si trova 38 
+unità a sinistra rispetto allo spigolo inferiore destro, punto F, del supporto. L’esecuzione 
+A
+B
+C
+D
+E
+
+[PAG 427]
+CAD
+VI-53
+non è immediata in quanto il punto G non giace sulla griglia di snap.
+–  Fare 
+clic 
+sull’icona 
+del 
+comando Linea, nella tavolozza 
+degli strumenti disegna. Alla 
+richiesta del primo punto fare clic 
+sul pulsante snap Da, nella barra 
+degli strumenti di osnap.
+–  Portare il puntatore sul punto 
+F, all’angolo inferiore destro del 
+disegno della pianta, e fare clic 
+quando compare l’etichetta Punto 
+finale. 
+Fig. VI.7.8  
+–  Digitare:
+–  @38<180 (seguito da Invio, per specificare lo spostamento).
+–  Fare clic sul pulsante Perpendicolare, nella barra degli strumenti di osnap. Portare il 
+puntatore sulla linea orizzontale superiore e fare clic. 
+–  Il disegno della pianta sarà quello di Fig. VI.7.8.
+7.5  Vista frontale
+Questa vista va realizzata nel quadrante in alto a sinistra, sopra la vista dall’alto. Si 
+inizierà disegnando il perimetro senza arrotondamenti, ad una distanza rispetto alla linea 
+di terra uguale a quella tra la linea di terra stessa e la vista dall’alto.
+–  Attivare il comando Linea, dalla tavo-
+lozza degli strumenti disegna. Con Griglia
+e Snap attivi, fare clic sulla verticale dello 
+spigolo destro della pianta, venti unità 
+sopra la linea di terra. È il punto di coor-
+dinate 145,125. Digitare:
+@12<90 (seguito da  Invio).
+@38<180 (seguito da Invio).
+@40<90 (seguito da Invio).
+–  Portare 
+il 
+puntatore 
+nel 
+centro 
+dell’arco esterno di sinistra della vista 
+dall’alto per fare acquisire il punto. Spo-
+starsi in alto lungo la traiettoria di allinea-
+mento tratteggiata (Fig. VI.7.9), fino a 
+visualizzare l’altra traiettoria di allinea-
+mento che parte dalla sommità dell’ultima 
+linea disegnata e fare clic. Digitare:
+@12<-90 (seguito da Invio).
+@65<0 (seguito da Invio).
+Fig. VI.7.9  
+–  Portare il puntatore all’inizio della prima linea verticale disegnata e trattenerlo qualche 
+secondo per acquisire il punto. Ritornare verso sinistra lungo la traiettoria di allineamento 
+e, quando compare l’altra traiettoria di allineamento verticale (Fig. VI.7.10) fare clic. 
+–  Digitare:
+C (seguito da Invio, per chiudere al punto di partenza).
+G
+F
+
+[PAG 428]
+VI-54
+CAD
+7.5.1  Rilievo circolare
+Si disegnerà ora la vista di fronte del 
+rilievo circolare, rappresentato in pianta 
+dall'anello di diametro 42.
+Si userà una polilinea assegnando subito 
+una larghezza di 0.6 unità.
+–  Attivare il comando Polilinea, dalla 
+tavolozza degli strumenti disegna. Viene 
+richiesto il punto iniziale. Si useranno 
+questa volta i filtri di coordinata. 
+Fig. VI.7.10  
+–  Digitare:
+.X (seguito da Invio).
+–  Viene chiesto .x di; posizionare il pun-
+tatore sul quadrante sinistro dell'anello di 
+diametro 42, sul punto K di Fig. VI.7.11 e 
+fare clic. Il programma comunica che 
+manca la coordinata YZ.
+–  Portare il puntatore sulla linea oriz-
+zontale più alta della vista di fronte e 
+fare clic, quando compare il contrasse-
+gno punto finale. 
+–  Digitare:
+La (seguito da Invio, per assegnare la 
+Larghezza).
+0.6 (seguito da Invio).
+0.6 (seguito da Invio).
+–  Viene chiesto il punto successivo. 
+Digitare:
+@8<90 (seguito da Invio).
+@42<0 (seguito da Invio).
+Per (che sta per Perpendicolare, seguito 
+da Invio).
+Fig. VI.7.11  
+–  Portare il puntatore sulla linea orizzontale appena sotto e fare clic. Premere Invio o 
+Barra spazio, per concludere il comando Polilinea.
+7.5.2  Nervatura di rinforzo
+–  Premere Invio per riprendere il comando Polilinea. Portare il puntatore sul punto I, 
+(Fig. VI.7.11) e fare clic quando compare il contrassegno punto finale. Viene richiesto il 
+punto successivo. Fare clic sul pulsante snap Da, nella barra degli strumenti di osnap. 
+Portare il puntatore all’altra estremità della linea verticale, sul punto H e fare clic quando 
+compare il contrassegno Punto finale. 
+–  Digitare:
+@20<180 (seguito da due Invio).
+7.5.3  Raccordo delle linee
+Quando si vuole disegnare con precisione è conveniente visualizzare la parte interes-
+sata con l’ingrandimento più alto disponibile. È possibile utilizzare il comando Zoom, con 
+l’opzione tempo reale; per ingrandire al meglio la vista di fronte:
+
+[PAG 429]
+CAD
+VI-55
+–  Si attivi lo Zoom tempo reale, dalla sua icona nella barra degli strumenti stan-
+dard. 
+–   Il puntatore si trasforma in una lente: portando il puntatore verso il basso dimi-
+nuisce la percentuale di zoom, portandolo verso l’alto aumenta l’ingrandimento. 
+Variando l’ingrandimento la parte di disegno interessata, se non si trova nel centro dell’area 
+grafica, si sposta. È possibile centrarla nello schermo utilizzando il comando Pan.
+–  Fare clic sull’icona del comando Pan, nel pannello Utilità della scheda Inizio.
+ Il puntatore prende la forma di una mano che, se viene spostata tenendo pre-
+muto il pulsante sinistro del mouse, permette di spostare la vista di fronte ingran-
+dita all’interno della finestra visualizzata.
+–  Fare clic sul pulsante Raccordo, nel pannello Edita della scheda Inizio. Digitare:
+Ra (e Invio, per indicare che si vuole assegnare il valore del Raggio).
+5 (seguito da Invio, per indicare il raggio di raccordo).
+–  Premere Invio per ripetere il 
+comando Raccordo. Selezionare la 
+linea orizzontale superiore e poi la 
+linea verticale alla sua destra come in 
+Fig. VI.7.12 per indicare gli oggetti 
+da raccordare. 
+–  Premere Invio per ripetere il 
+comando Raccordo. Selezionare la 
+linea orizzontale subito sotto quella 
+precedente e la linea verticale alla sua 
+destra. Anche queste linee verranno 
+raccordate.
+Fig. VI.7.12  
+–  Premere Invio per ripetere il comando precedente. Digitare:
+Ra (seguito da Invio).
+3 (seguito da Invio, per indicare un raggio di tre unità)..
+Fig. VI.7.13  
+Premere Invio per ripetere il comando Raccordo. Fare clic portando il mirino di sele-
+
+[PAG 430]
+VI-56
+CAD
+zione sulla seconda linea orizzontale dal basso e poi sulla linea verticale alla sua sinistra. 
+Il disegno sarà come in Fig. VI.7.13.
+7.6.  Vista dal lato sinistro
+La vista di fianco va realizzata nel quadrante in alto a destra, e potrebbe essere rica-
+vata dalle altre due mediante delle linee di trasporto parallele, fatte ruotare intorno al 
+punto di origine nel quarto quadrante in basso a destra.
+Anche in questo caso si inizierà disegnando il contorno della vista.
+–  Attivare, se non lo sono già, Griglia e Snap.
+–  Attivare il comando Polilinea, dalla tavolozza degli strumenti disegna. Fare clic nel 
+punto 185,125 allineati con la linea inferiore della vista frontale, ad una distanza di venti 
+unità dalla linea verticale di separazione dei piani. Digitare:
+@50<0 (seguito da Invio).
+@52<90 (seguito da Invio).
+@50<180 (seguito da Invio).
+Ch (seguito da Invio, per chiudere al punto iniziale).
+–  Fare clic sul pulsante Linea, nella tavolozza degli strumenti disegna. Per fissare il 
+punto iniziale, fare clic sulla linea verticale di sinistra, 40 unità sopra la base. Si tratta del 
+punto di coordinate 185,165. Ci si sposti verso destra e fare clic quando il puntatore ade-
+rirà al lato verticale di destra in modo ortogonale. 
+Anche in questo caso è importante fare attenzione alle impostazioni di Autosnap, che 
+potrebbero impedire il disegno corretto. 
+–  Premere Invio, per concludere il comando.
+7.6.1  Disegno della nervatura
+Non risultando sulla griglia di snap, conviene aiutarsi con una costruzione.
+–  Premere Invio per riprendere il comando Linea. Portare il puntatore in mezzo alla linea 
+orizzontale in basso della vista di fianco e fare clic quando compare il contrassegno, Punto 
+centrale. Portare il puntatore sull’ultima linea orizzontale disegnata e fare clic, quando 
+compare il contrassegno Punto centrale. Premere Invio per concludere il comando Linea.
+–  Fare clic sul pulsante Offset, nel pannello Edita. Digitare:
+–  6 (seguito da Invio, ad indicare la distanza di sfalsamento).
+–  Fare clic, portando il mirino di selezione sulla linea verticale appena dise-
+gnata, per selezionare l’oggetto da sfalsare. Fare clic alla sinistra di questa linea, per indi-
+care da quale parte sfalsare. Fare clic ancora sulla linea centrale, per riselezionare 
+l’oggetto da sfalsare. Fare clic a destra di questa linea, per indicare da quale parte sfalsare. 
+Premere Invio per concludere il comando Offset.
+–  Attivare il comando Cancella, dal pannello Edita della scheda Inizio. Fare clic, con il 
+mirino di selezione sulla linea centrale, usata per costruzione. Fare clic con il tasto destro 
+del mouse per concludere il comando.
+–  Fare clic sul pulsante Raccordo, nel pannello Edita della scheda Inizio. Digitare:
+Ra (e Invio per indicare che si vuole assegnare il Raggio).
+1.5 (e Invio per specificare il raggio del raccordo).
+–  Premere Invio per ripetere il comando Raccordo. Portare il mirino di selezione sulla 
+linea verticale sfalsata di destra e fare clic. Fare clic sulla linea orizzontale immediatamente 
+sopra a destra. Le due linee verranno raccordate, ma verrà cancellata la parte sinistra.
+–  Attivare il comando Linea, dalla tavolozza degli strumenti disegna. Fare clic con il 
+puntatore sulla parte superiore della linea verticale di sinistra. Digitare:
+Per (seguito da Invio).
+–  Spostarsi a sinistra e fare clic sulla linea verticale di contorno. Fare clic sul pulsante 
+Raccordo, nel pannello Edita della barra multifunzione.
+
+[PAG 431]
+CAD
+VI-57
+–  Portare il mirino di selezione sull’ultima linea disegnata e fare clic. Fare clic sulla 
+linea verticale alla sua destra.
+–  Attivare il comando Linea, dalla tavolozza degli strumenti disegna. Portare il mirino 
+di selezione sulla linea orizzontale vicino al raccordo di sinistra, e fare clic quando com-
+pare il contrassegno Punto finale. Portare il puntatore sulla linea orizzontale vicino al rac-
+cordo di destra, e fare clic quando compare il contrassegno Punto finale. Premere Invio, 
+per concludere il comando Linea.
+7.6.2  Variabile Trimmode
+Quando si attiva il comando Raccordo, alla riga di comando compare, oltre al raggio 
+di raccordo impostato la volta precedente, anche la voce Modalità = Trim. Questa è 
+l’impostazione di default, attiva se non sono stati operati dei cambiamenti. In questa 
+modalità, quando vengono raccordate due linee, gli altri elementi vengono cancellati 
+come è accaduto nell’esempio appena visto.
+È possibile impostare la modalità di 
+raccordo in modo tale da non eliminare 
+gli oggetti estranei al raccordo.
+L’impostazione della modalità è 
+controllata dalla variabile di sistema 
+Trimmode, richiamabile dalla riga di 
+comando. Se Trimmode è impostato a 1 
+vengono tagliati gli elementi non rac-
+cordati, se impostata a 0 vengono man-
+tenuti.Lo stesso risultato si può 
+ottenere, dopo aver attivato il comando 
+Raccordo, digitando l’opzione T e sce-
+gliendo quindi Taglia o Nontaglia. Con 
+Trimmode impostato a 0, il risultato 
+sarebbe quello di Fig. VI.7.14.
+Fig. VI.7.14  
+In questo caso occorrerebbe poi tagliare i due piccoli segmenti verticali che si esten-
+dono oltre il raccordo.
+7.6.3  Rilievo circolare nella vista di fianco
+Poiché l’oggetto presenta una simmetria circolare, sarà uguale a quello della vista 
+frontale. Invece di disegnarlo nuovamente sarà sufficiente copiarlo.
+–  Fare clic sul pulsante Copia nel pannello Edita della scheda Inizio. Portare il mirino di 
+selezione sul rilievo circolare nella vista frontale e fare clic. Verrà selezionato tutto per-
+ché è stato disegnato come unica polilinea. Premere il pulsante destro del mouse, per ter-
+minare la selezione. Viene chiesto il punto base dello spostamento. Posizionare il 
+puntatore in mezzo al tratto orizzontale dell’oggetto selezionato e fare clic quando com-
+pare il contrassegno Punto centrale.
+–  Viene chiesto il secondo punto dello spostamento. Digitare:
+.X (seguito da Invio)
+apparirà .x di. Portare il puntatore in mezzo alla linea orizzontale superiore della vista di 
+fianco, e fare clic quando compare il contrassegno Punto centrale. 
+–  Viene comunicato che manca la coordinata YZ. 
+Si osservi che, muovendo il cursore, si sposta anche l’oggetto, ma è ora costretto a 
+rimanere su una linea passante per il centro della vista da sinistra.
+–  Attivare il modo Orto con F8, e fare clic con il pulsante sinistro del mouse.
+
+[PAG 432]
+VI-58
+CAD
+–  Il disegno si presenterà come in Fig. VI.7.15 e dovrà essere completato disegnando gli 
+spigoli non in vista. 
+Fig. VI.7.15  
+7.7  Disegno delle linee nascoste
+7.7.1  Vista di fronte
+Si inizierà disegnando le linee nascoste sulla vista frontale, che rappresentano il foro 
+passante, corrispondente in pianta all’anello di diametro più piccolo, e la linea corrispon-
+dente ad fondo dell’incavo semicircolare nella parte destra del supporto.
+–  Si renda corrente il layer Nas, con il pulsante Proprietà layer e la relativa finestra.
+–  Controllare che siano attivi i modi Osnap e Opuntamento.
+Fare clic sul comando Linea, nella tavolozza degli strumenti disegna. Portare il punta-
+tore sul quadrante sinistro dell’anello più piccolo nella vista in pianta (punto A di Fig. 
+VI.7.16), e trattenerlo in questa posizione, per acquisire il punto.
+–  Spostarsi verso l’alto seguendo la traiettoria di allinea-
+mento fino ad incontrare la linea orizzontale della vista di 
+fronte, come in Fig. VI.7.16. Quando appare il contrasse-
+gno Intersezione, fare clic con il pulsante sinistro del 
+mouse. Digitare:
+Per (seguito da Invio)
+spostare il puntatore sulla polilinea orizzontale più alta e 
+fare clic, quando compare il contrassegno Perpendicolare.
+–  Premere Invio o Barra spazio per ripetere il comando 
+Linea. 
+–  Usando lo stesso procedimento, disegnare la linea 
+nascosta corrispondente al quadrante destro del mede-
+simo anello.
+–  Sempre con identico procedimento, disegnare la linea 
+nascosta nella vista frontale, corrispondente al quadrante 
+sinistro dell’arco di cerchio, punto L della Fig. VI.7.16.
+Fig. VI.7.16  
+L
+A
+
+[PAG 433]
+CAD
+VI-59
+7.7.2  Vista dall’alto
+Si disegnano ora le linee nascoste nella vista in pianta.
+–  Disattivare lo Snap ad oggetti con il tasto F3. Attivare griglia e snap.
+–  Fare clic sul pulsante Linea, nella tavolozza degli strumenti disegna. Portare il punta-
+tore sul punto M della linea orizzontale superiore nella vista dall’alto, sotto il punto I della 
+vista di fronte e fare clic, con il pulsante sinistro del mouse. Scendere verticalmente e fare 
+clic quando si è posizionati sulla linea orizzontale inferiore, (Fig. VI.7.17). Premere Invio
+per concludere il comando Linea.
+Bisogna disegnare le linee nascoste che rappresentano la nervatura in pianta. Non 
+essendo sulla griglia di snap sarà conveniente eseguire una costruzione. 
+–  Eseguire uno Zoom attorno alla vista dall’alto.
+–  Attivare il comando Linea, dalla tavolozza degli stru-
+menti disegna. Portare il puntatore nel centro della linea 
+nascosta verticale appena disegnata e fare clic, quando 
+compare il contrassegno Punto centrale. Digitare:
+@20<180 (e poi Invio)
+premere Invio, per concludere il comando Linea.
+–  Fare clic sul pulsante Offset, nel pannello Edita della 
+scheda Inizio. Digitare:
+6 (seguito da Invio, per dare la distanza di 
+sfalsamento).
+Fare clic sulla linea nascosta orizzontale appena 
+disegnata, per indicare l’oggetto da sfalsare. 
+Fig. VI.7.17  
+–  Fare clic al di sopra di questa linea nascosta, di costruzione. Fare clic sulla linea 
+nascosta di prima, per indicare l’oggetto da sfalsare. Fare clic sotto questa linea nascosta, 
+per indicare da quale lato sfalsare. Premere Invio per concludere il comando Offset.
+–  Usando il pulsante Cancella, eliminare la linea di costruzione orizzontale. Disinserire 
+il modo Snap e riattivare l'Osnap.
+–  Attivare il comando Linea. Posizionarsi sul lato sinistro della linea nascosta superiore 
+e fare clic quando compare il contrassegno Punto finale. Scendere sulla linea nascosta 
+inferiore, e fare clic quando compare il contrassegno Punto finale.
+La nervatura è unita alla piastra con un raccordo di raggio 1.5.
+–  Fare clic sul pulsante Raccordo, nel pannello Edita, della scheda Inizio, della barra 
+multifunzione. Digitare:
+Ra (e Invio per assegnare il Raggio del raccordo)
+1.5 (per specificare il valore del raggio).
+–  Premere Invio per ripetere il comando Raccordo. Fare clic, con il mirino di selezione 
+sulla linea nascosta orizzontale più in alto. 
+–  Fare clic sulla linea nascosta verticale, nella parte superiore. 
+Come visto precedentemente, quando si raccordano due linee, la parte non interessata 
+viene eliminata e si dovrà ripristinare.
+–  Attivare il comando Linea. Posizionarsi sulla parte destra della linea nascosta orizzon-
+tale più bassa, e fare clic quando compare il contrassegno Punto finale. Digitare:
+Per (seguito da Invio).
+portare il puntatore sulla linea inferiore del perimetro del supporto e fare clic.
+–  Attivare il comando Raccordo. Il raggio è rimasto l’ultimo impostato. Fare clic sul seg-
+mento verticale appena disegnato e su quello orizzontale tratteggiato, ad esso collegato.
+
+[PAG 434]
+VI-60
+CAD
+–   Fare clic sul comando Linea, 
+nella tavolozza degli strumenti 
+disegna. Posizionarsi sul punto P 
+del segmento verticale nascosto 
+superiore, e fare clic quando com-
+pare il contrassegno Punto finale. 
+–  Posizionarsi sul punto Q del 
+segmento verticale nascosto infe-
+riore, e fare clic quando compare 
+il contrassegno Punto finale.
+Il risultato sarà quello di Fig. 
+VI.7.18.
+Fig. VI.7.18  
+7.7.3  Vista da sinistra
+–  Eseguire uno zoom fino a visualizzare bene la vista da sinistra e di fronte. Attivare 
+Osnap e Opuntamento.
+Fig. VI.7.19  
+–  Attivare il comando Linea. Portare il puntatore sul punto X nella vista di fronte, e trat-
+tenersi per acquisire il punto. Spostarsi a destra, portare il puntatore all’angolo sinistro in 
+basso e trattenersi qualche istante per acquisire il punto. Spostarsi verso l’alto e fare clic, 
+quando compaiono le due traiettorie di allineamento che si intersecano (Fig. VI.7.19).
+–   Digitare:
+Per (per Perpendicolare, seguito da Invio).
+portare il puntatore sulla linea perimetrale verticale di destra e fare clic. Premere 
+Invio, per concludere il comando Linea.
+–  Attivare il modo Snap con F9 e disattivare il modo Osnap.
+–  Ripetere il comando Linea. Portare il puntatore sulla linea di base della vista da sini-
+stra, ad una distanza di 15 unità dal lato sinistro e fate clic. Digitare:
+Per (seguito da Invio o Barra spazio)
+fare clic sulla linea nascosta superiore.
+–  Ripetere il procedimento per disegnare una linea uguale, distante 15 unità dal lato 
+destro. Riattivare il modo Osnap.
+–  Fare clic sul pulsante Copia, nel pannello Edita della scheda Inizio della barra 
+multifunzione. Selezionare le due linee nascoste, nella parte superiore della vista 
+di fronte. Premere il tasto destro del mouse per completare la selezione. Portare il 
+puntatore sulla parte centrale della polilinea che rappresenta il rilievo circolare nella vista 
+frontale e, per specificare il punto base, fare clic, quando compare il contrassegno Punto 
+centrale. Portare il puntatore sulla parte centrale della polilinea che rappresenta il rilievo 
+Q
+P
+
+[PAG 435]
+CAD
+VI-61
+circolare nella vista di fianco e, per specificare il secondo punto, fare clic quando compare 
+il contrassegno Punto centrale.
+7.8.  Ingrossare gli spigoli in vista
+Alcune linee sono state disegnate con una determinata larghezza utilizzando il 
+comando Polilinea. Si dovrà ora assegnare una larghezza anche agli altri spigoli in vista. 
+Per fare questo in modo preciso si trasformeranno le linee in polilinee.
+–  Rendere corrente il layer ogg. Eseguire uno Zoom sulla vista frontale. Digitare:
+Editpl (seguito da Invio o Barra spazio)
+fare clic, con il mirino di selezione sulla linea orizzontale in basso a destra. La linea diver-
+rà tratteggiata e il programma chiede se si desidera trasformarla in polilinea. Premere 
+Invio per accettare il Si di default. Viene visualizzata una serie di opzioni. Digitare:
+L (che sta per Larghezza, seguito da Invio).
+0.6 (seguito da Invio, per dare la larghezza della polilinea)
+U (che sta per Unire, seguito da Invio)
+fare clic, ad uno ad uno, su tutti gli elementi che compongono il contorno, compresi gli ar-
+chi di raccordo, che diverranno tratteggiati. Premere Invio due volte per completare il 
+comando.
+–  Attivare il comando Pan, e spostate la visualizzazione sulla vista dall’alto. Digitare:
+Editpl (seguito da Invio)
+selezionare la linea orizzontale in basso, che diventerà tratteggiata. Premere Invio, per 
+confermare la trasformazione in polilinea. Digitare:
+L (seguito da Invio).
+0.6 (seguito da Invio, per dare la larghezza della polilinea).
+U (per Unire, seguito da Invio)
+fare clic su tutti gli elementi del il perimetro esterno compresi gli archi. Premere Invio 
+due volte per concludere il comando.
+–  Premere Invio per ripetere il comando Editpl. Fare clic sulla linea verticale sottile 
+rimasta. Premere Invio per trasformarla in polilinea. Digitare:
+L (seguito da Invio)
+0.6 (seguito da Invio, per dare la larghezza)
+premere Invio due volte per completare il comando.
+–  Premere Barra spazio per ripetere il comando Editpl. Selezionare l’anello più grande. 
+Non viene richiesto di trasformarlo in polilinea poiché lo è già. Digitare:
+L (seguito da Invio)
+0.6 (seguito da Invio, per dare la larghezza)
+premere Invio due volte per completare il comando.
+–  Usando un identico procedimento, ingrossare l’anello più piccolo.
+–  Ci si sposti sulla vista di fianco usando il comando Pan e si ingrandisca la visualizza-
+zione, essendo i raccordi piuttosto piccoli. Digitare:
+Editpl (seguito da Invio).
+–  Selezionare la linea verticale di sinistra. Premere Invio per confermare la trasforma-
+zione in polilinea. Digitare:
+L (seguito da Invio)
+0.6 (seguito da Invio, per dare la larghezza)
+U (per Unire, seguito da Invio).
+fare clic sull’arco di raccordo e sulla linea orizzontale collegata a sinistra. Premere 
+Invio due volte per completare il comando.
+–  Con lo stesso procedimento, ingrossare la parte simmetrica a destra.
+–  Sempre con Editpl ingrossare il segmento compreso tra i due archi di raccordo.
