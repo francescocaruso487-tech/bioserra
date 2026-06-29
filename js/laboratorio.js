@@ -159,9 +159,26 @@ function labRenderDigest() {
   var el = document.getElementById('lab-digest-content');
   if (!el) return;
   var d = labDigestData;
-  if (!d) {
+  // Fallback: usa brain.json se digest è vecchio o vuoto
+  if (!d || !d.consiglio_integrato) {
+    var brain = labBrainData;
+    if (brain && brain.cervello && brain.cervello.briefing_mattutino) {
+      var briefing = brain.cervello.briefing_mattutino;
+      el.innerHTML = '<div style="display:flex;align-items:flex-start;gap:10px">'+
+        '<span style="font-size:20px;flex-shrink:0">⚡</span>'+
+        '<div><div style="font-size:9px;color:rgba(0,180,255,0.5);font-weight:700;letter-spacing:1px;margin-bottom:4px">BRIEFING MATTUTINO</div>'+
+        '<div class="lab-digest-compact" style="margin:0">' + labEsc(briefing.substring(0,200)) + '...</div></div></div>';
+      return;
+    }
     el.innerHTML = '<div class="lab-digest-compact" style="opacity:0.4">Digest in preparazione…</div>';
     return;
+  }
+  // Mostra data aggiornamento
+  var dataStr = d.data || d.lastUpdate || '';
+  if (dataStr) {
+    var oggi = new Date().toISOString().substring(0,10);
+    var isOld = dataStr < oggi;
+    if (isOld) el.setAttribute('title', 'Digest del '+dataStr+' - aggiornamento stanotte');
   }
   var ora = new Date().getHours();
   var campi = [];
@@ -328,6 +345,14 @@ function labBuildPratiche() {
     });
   }
 
+  // Deduplica per nome (case-insensitive)
+  var seen = new Set();
+  pratiche = pratiche.filter(function(p) {
+    var key = (p.nome||'').toLowerCase().trim();
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
   // Ordina per rilevanza decrescente
   pratiche.sort(function(a,b){ return b.rilevanza - a.rilevanza; });
   return pratiche;
@@ -776,7 +801,11 @@ function labRenderGuide() {
   }
   var FASE_ICON = { germinazione:'🌱', vegetazione:'🌱', fioritura:'🌸', harvest:'🌿', essiccazione:'🌡', curing:'🫙', living_soil:'🌍', nutrizione:'🧪', irrigazione:'💧', difesa_biologica:'🛡' };
   var h = '';
-  labGuideData.slice(0, 3).forEach(function(g, idx) {
+  // Ruota le guide mostrate in base al giorno (non sempre le stesse 3)
+  var dayOffset = (new Date().getDate()) % Math.max(1, labGuideData.length);
+  var guideOrdinate = labGuideData.slice(dayOffset).concat(labGuideData.slice(0, dayOffset));
+  guideOrdinate.slice(0, 3).forEach(function(g, idx) {
+    idx = labGuideData.indexOf(g); // mantieni idx corretto per popup
     var ico = FASE_ICON[g.fase] || '📖';
     var tcN = g.tecniche_pdf ? g.tecniche_pdf.length : 0;
     h += '<div class="lab-arch-mini" onclick="labPopupGuida(' + idx + ')">';
@@ -788,6 +817,8 @@ function labRenderGuide() {
     h += '</div><span class="lab-arch-arrow">›</span></div>';
   });
   if (labGuideData.length > 3) h += '<div style="text-align:center;font-size:11px;color:var(--el-violet);padding:4px 0;cursor:pointer;opacity:0.7" onclick="labPopupAllGuide()">▼ altre ' + (labGuideData.length - 3) + '…</div>';
+  // chiusura forEach guideOrdinate (patch rotazione)
+  void 0;
   el.innerHTML = h;
 }
 
@@ -1988,16 +2019,30 @@ async function labAnalizzaPdf(pdfId, domanda) {
   if (!src) { resEl.innerHTML='<div style="color:rgba(255,100,100,0.7);padding:10px">PDF non trovato.</div>'; return; }
   var titolo = src.titolo || pdfId;
   resEl.innerHTML = '<div style="color:rgba(0,180,255,0.5);font-size:12px;padding:10px;text-align:center">⏳ Carico testo: ' + labEsc(titolo.substring(0,50)) + '...</div>';
-  var safeId = titolo.replace(/[^\w\-]/g,'_').replace(/_+/g,'_').replace(/^_|_$/g,'').substring(0,80);
+  var safeId = src.testo_id || titolo.replace(/[^\w\-]/g,'_').replace(/_+/g,'_').replace(/^_|_$/g,'').substring(0,80);
+  var fonteSito = src.fonte_sito || '';
   var testoCompleto = '';
-  try {
-    var tr = await fetch('https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/testi/'+safeId+'.txt?v='+Date.now());
-    if (tr.ok) {
-      testoCompleto = await tr.text();
-      if (testoCompleto.startsWith('===')) { var ei=testoCompleto.indexOf('\n\n'); if(ei>0) testoCompleto=testoCompleto.slice(ei+2); }
-      testoCompleto = testoCompleto.trim().substring(0,8000);
-    }
-  } catch(e) {}
+  // Cerca testo in ordine: fusi > web/sito > testi/
+  var pathsProva = [];
+  if (fonteSito === 'fuso') {
+    pathsProva.push('data/testi/fusi/'+safeId+'.txt');
+  } else if (fonteSito) {
+    pathsProva.push('data/testi/web/'+fonteSito+'/'+safeId+'.txt');
+  } else {
+    pathsProva.push('data/testi/'+safeId+'.txt');
+    pathsProva.push('data/testi/fusi/'+safeId+'.txt');
+  }
+  var RAW_BASE = 'https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/';
+  for (var pi=0; pi<pathsProva.length && !testoCompleto; pi++) {
+    try {
+      var tr = await fetch(RAW_BASE+pathsProva[pi]+'?v='+Date.now());
+      if (tr.ok) {
+        var raw = await tr.text();
+        if (raw.startsWith('===')) { var ei=raw.indexOf('\n\n'); if(ei>0) raw=raw.slice(ei+2); }
+        testoCompleto = raw.trim().substring(0,8000);
+      }
+    } catch(e) {}
+  }
   var ctx = testoCompleto.length>100 ? testoCompleto : (src.sommario||'')+'\n'+(src.estratto_chiave||'')+'\n'+(src.consiglio_coltivazione||'');
   if (ctx.length<30) {
     resEl.innerHTML='<div style="color:rgba(255,180,0,0.7);padding:10px">⚠ Testo non ancora estratto. Riprova domani.</div>'; return;
@@ -2044,3 +2089,4 @@ function labSbCosine(a, b) {
   var denom = Math.sqrt(normA) * Math.sqrt(normB);
   return denom === 0 ? 0 : dot / denom;
 }
+
