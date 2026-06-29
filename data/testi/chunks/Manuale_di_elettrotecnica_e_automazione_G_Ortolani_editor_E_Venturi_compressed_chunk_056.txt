@@ -1,0 +1,1085 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 56/116 ===
+Chars: 44,632 | Offset: 2,429,730
+
+
+
+[PAG 1198]
+XII-8
+TRAZIONE ELETTRICA
+–  Per i locomotori di recente costruzione dove i motori sono alimentati ciascuno da un 
+azionamento, è l’azionamento stesso in grado di rilevare lo stato di asse in fuga o quello 
+di asse bloccato. Infatti i circuiti demandati al comando e alla alimentazione rilevano 
+costantemente la corrente assorbita dai motori, in relazione alla tensione applicata durante 
+le varie fasi di movimentazione. In presenza di anomalia l’azionamento stesso, controllato 
+da un sistema a microprocessore, è in grado di intervenire limitando adeguatamente 
+l’ampiezza e la frequenza della tensione applicata, in modo tale da eliminare l’anomalia, 
+comandando contemporaneamente le sabbiere.
+La resistenza al moto del convoglio è espressa da:
+(XII.3.6)
+dove:
+–  ro è la resistenza unitaria al movimento in rettifilo orizzontale, legata alla resistenza al 
+movimento dovuta alle coppie perno-cuscinetto e ruota-terreno, ed alla resistenza offerta 
+dall’aria, quest’ultima dipendente dalla sezione trasversale e dalla forma del mezzo con 
+coefficienti che dipendono dal quadrato della velocità.
+–  ri è la resistenza unitaria (è espressa in millesimi e sui nostri percorsi ferroviari rag-
+giunge valori pari al 27%) dovuta alla pendenza i del percorso, con i = h l dove h è 
+espresso in metri ed l in km.
+–  rc è la resistenza unitaria in kg/t che tiene conto della curvatura di raggio del percorso 
+R calcolata con l’espressione:
+(XII.3.7)
+dove, espresso il raggio in metri, i coefficienti assumono i valori indicati nella tabella 
+seguente:
+–  ra è il coefficiente che considera l’accelerazione. Assume il valore di 1kg/t per accele-
+razioni di 10 m/s2.
+3.3  Cabraggio
+Durante la fase di accelerazione e traino, la locomotiva, nel punto di contatto tra i cer-
+chioni e le rotaie, sviluppa uno sforzo di trazione che viene trasmesso, tramite il gancio di 
+traino, al materiale rimorchiato. Il punto di applicazione della forza sviluppata dal gancio 
+di traino e quella del contatto dei cerchioni con le rotaie distano tra loro, e danno origine 
+ad una coppia meccanica che tende a far ruotare la cassa della locomotiva in modo tale da 
+provocare un aumento del peso gravante sugli assi posteriori al senso di marcia, ed una 
+conseguente diminuzione del peso gravante sugli assi anteriori. Questo effetto, diretta-
+mente proporzionale allo sforzo di trazione sviluppato dalla locomotiva, prende il nome di 
+momento di cabraggio e si esercita sia sui carrelli che sulla cassa del veicolo.
+La conseguenza immediata di questo effetto consiste nel fatto che gli assi del carrello 
+anteriore, rispetto al senso di marcia, risultano scaricati rispetto i posteriori, pertanto i 
+motori di tali assi sviluppano uno sforzo di trazione minore rispetto quelli degli assi poste-
+riori, ed è evidente che l’aderenza degli assi in questione risulta diminuita.
+ I metodi per limitare il cabraggio sono principalmente due:
+R
+a
+b
+150 ÷ 250
+650
+30
+250 ÷ 350
+650
+65
+350
+650
+55
+rt
+ro
+ri
+rc
+ra
++
++
++
+=
+rc
+a
+R
+b
+–
+------------
+=
+
+[PAG 1199]
+TRAZIONE ELETTRICA
+XII-9
+1)  Meccanicamente: adottando la trazione bassa, cioè diminuendo la distanza tra le 
+rette di applicazione degli sforzi di trazione tra ruota e rotaia e tra cassa e carrelli; si pre-
+cisa che questo metodo provoca a sua volta un aumento del cabraggio della cassa a causa 
+dell’incremento della distanza tra rette di applicazione degli sforzi sviluppati tra cassa e 
+carrello.
+2)  Elettricamente: con un dispositivo indicato come anticabraggio elettrico consi-
+stente nel far funzionare i motori del carrello anteriore rispetto al verso di percorrenza in 
+condizioni diverse da quelli del carrello posteriore (per esempio con eccitazione diversa 
+nel caso di motori c.c.) in modo da far esercitare uno sforzo minore, adeguando conse-
+guentemente lo sforzo al cerchione di ciascun asse al rispettivo peso aderente.
+4  CONDIZIONI DI ARRESTO E SICUREZZA
+4.1  Tecniche di frenatura
+I metodi per la frenatura dei mezzi si suddividono principalmente tra elettrici e mecca-
+nici: in particolare viene utilizzata la frenatura elettrica quando le velocità sono elevate, 
+mentre si attua successivamente la frenatura meccanica, sfruttando l’attrito sviluppato tra 
+i ceppi ed i cerchioni o tra i ceppi e dei dischi solidali con le sale.
+La frenatura elettrica utilizza i motori stessi come organi frenanti, viene utilizzata per 
+la decelerazione di convogli in movimento a velocità maggiori di 155 km/h e mantenuta 
+attiva fino a quando il veicolo raggiunge la velocità di 70 km/h. Questo consente di limitare 
+le sollecitazioni meccaniche e termiche altresì prodotte dalla frenatura meccanica.
+Il principio di funzionamento è quello per il quale l’energia cinetica viene trasformata 
+in energia elettrica, quest’ultima può essere dissipata sotto forma di energia termica tra-
+mite un reostato, oppure essere recuperata in rete.
+Per quanto riguarda la frenatura con recupero di energia in rete si precisa che la sua 
+fattibilità è ristretta ai mezzi di trazione muniti di motori alimentati tramite convertitori 
+elettronici di tipo reversibile oppure a commutazione.
+Nei mezzi che impiegano motori a corrente continua la trasformazione da energia cine-
+tica in energia elettrica avviene utilizzando i motori destinati alla trazione come generatori 
+ad eccitazione indipendente, separando il circuito delle armature da quello dei campi. I cir-
+cuiti di armatura vengono collegati tra loro in modo da formare due rami ciascuno dei quali 
+composto di due armature; i due rami vengono, a loro volta, collegati in parallelo tra loro. 
+I campi vengono collegati in serie tra loro ed alimentati ad una tensione, del valore di 24 V 
+per i treni, dalla batteria di frenatura (quest’ultima mantenuta nello stato di carica durante 
+il movimento dalla tensione raddrizzata prodotta da generatori trifase presenti a bordo). La 
+corrente circolante negli avvolgimenti di campo ed il senso di rotazione di quelli di arma-
+tura rimangono immutati, pertanto la f.e.m. che si origina ha lo stesso segno della f.c.e.m. 
+generata durante la fase di trazione, quindi se il circuito degli avvolgimenti di armatura 
+viene chiuso su un reostato si crea una circolazione di corrente di verso opposto a quella di 
+trazione. Si genera in questo modo la coppia frenante Cf in grado di produrre l’azione fre-
+nante richiesta.
+Se, per semplicità si considera un solo motore, trascurando le variazioni di resistenza 
+dei circuiti, nonché gli effetti della reazione di armatura si ha:
+(XII.4.1)
+La corrente I dipende a sua volta dalla f.e.m. E generata e dal valore della resistenza 
+inserita, pertanto:
+(XII.4.2)
+Cf
+k I
+
+
+=
+E
+kn
+
+
+=
+
+[PAG 1200]
+XII-10
+TRAZIONE ELETTRICA
+ed essendo:
+(XII.4.3)
+si andrà quindi a sostituire nella XII.4.1 con il seguente risultato:
+(XII.4.4)
+dove r, R, n rappresentano rispettivamente i valori della resistenza dell’avvolgimento di 
+campo, il valore della resistenza del reostato e il numero di giri del motore.
+La formula XII.4.4 evidenzia che una diminu-
+zione della velocità, quindi del numero di giri n, 
+comporta una conseguente diminuzione 
+dell’effetto frenante. Pertanto, onde mantenere 
+costante lo sforzo frenante, durante il movimento 
+sarà necessario intervenire o sul valore della resi-
+stenza R del reostato, oppure sul valore della ten-
+sione di eccitazione e cioè sul valore della 
+corrente di eccitazione (Fig. XII.4.1). 
+Fig. XII.4.1  Frenatura reostatica con 
+motore ad eccitazione separata.
+La tecnica di frenatura con eccitazione in serie ha il pregio di utilizzare il magnetismo 
+residuo per la generazione della tensione di eccitazione e, quindi, non abbisogna di gene-
+ratori esterni. Infatti risulta sufficiente invertire i collegamenti degli avvolgimenti di 
+campo rispetto a quelli di armatura, collegare il circuito così ottenuto sul reostato di frena-
+tura che, dopo un breve periodo di tempo dovuto alla costante di tempo magnetica del 
+motore (salvo l’applicazione di una tensione continua che crei istantaneamente il flusso 
+magnetico al momento dell’intervento del freno), nel reostato circola la corrente dovuta 
+alla f.e.m. E data da:
+(XII.4.5)
+dove la formula XII.4.5 fa riferimento alla Fig. XII.4.2.
+La condizione di frenatura risulta soddisfatta se, 
+nell’istante in cui si effettua il collegamento per la frena-
+tura, la funzione che esprime la tensione generata per 
+effetto della velocità in quell’istante i, cioè:
+(XII.4.6)
+ha, nel suo primo tratto, una pendenza maggiore di quella 
+della funzione E espressa nella XII.4.5, condizione indi-
+cata anche col termine di condizione di stabilità. 
+Fig. XII.4.2  Frenatura reostatica
+con eccitazione serie.
+Anche in questo caso il valore della resistenza R e della velocità n interagiscono sul 
+valore di coppia frenante tant’è che per avere una frenatura il più possibile costante è 
+necessario che man mano che diminuisce la velocità si intervenga anche sul valore di resi-
+stenza offerto dal reostato. Le Figg. XII.4.3 e XII.4.4 illustrano le manovre necessarie per 
+il passaggio dalla condizione di trazione a quella di frenatura, mediante l’inversione di 
+campo o con il sistema a ponte per motori con eccitazione serie.
+I
+E
+r
+R
++
+-----------
+=
+Cf
+k k2
+
+
+r
+R
++
+----------------------
+n
+
+=
+M
+E
+I
+R
+Ie
+Ue
++
+
++
+
+E
+I
+r
+R
++
+
+
+
+=
+M
+E
+U
+R
++
+
+Ei
+k ni
+
+
+=
+
+[PAG 1201]
+TRAZIONE ELETTRICA
+XII-11
+Nel caso di mezzi di trazione destinati al trasporto urbano, onde consentire che la fre-
+natura elettrica agisca anche a basse velocità, si arriva alla condizione limite di resistenza 
+R di valore nullo, si effettua cioè la frenatura in corto circuito.
+ 
+Fig. XII.4.3  Frenatura reostatica di motori con eccitazione serie mediante l’inversione 
+dei collegamenti di campo.
+Fig. XII.4.4  Frenatura reostatica di motori con eccitazione serie con sistema a ponte.
+Vi è anche un ulteriore tipo di 
+freno elettrico realizzato con pattini 
+elettromagnetici che vengono mon-
+tati in coppia su ogni carrello; 
+quando azionati sono in grado di 
+applicare una forza verticale sul 
+binario di circa 2000 kg (Fig. 
+XII.4.5). Per il materiale rotabile 
+italiano questo tipo di freno ha tro-
+vato impiego unicamente nel treno 
+mod. ETR.401, il Pendolino, come 
+freno di emergenza. 
+Fig. XII.4.5  Freno con pattini magnetici.
+Filo di contatto
++
+
++
+
++
++
++
++
+
+
+
+
+M2
+G1
+G2
+E1
+E2
+E1
+E2
+I1+I2
+I1+I2
+I1
+R
+I2
+I1
+R
+I2
+M1
+Rotaie
+Trazione
+Frenatura
+Filo di contatto
++
+
++
+
+I1+I2
+I1+I2
+E1
+E1
+E2
+E2
+M1
+M2
+R
+I1
+I2
++
+
++
+
+G1
+G2
+R
+I2
+I1
++
+
++
+
+Rotaie
+Trazione
+Frenatura
+Solenoide
+Nucleo ferromagnetico
+Espansione polare
+Rotaia
+
+[PAG 1202]
+XII-12
+TRAZIONE ELETTRICA
+La frenatura a recupero di energia fonda il suo principio di funzionamento nella pos-
+sibilità di trasformare l’energia cinetica in energia elettrica e di trasferire quest’ultima 
+verso il generatore, rappresentato in questo caso dalle sottostazioni. Come anticipato il 
+sistema di alimentazione dei motori deve essere costituito in questi casi da convertitori 
+elettronici di tipo reversibile, in modo da risultare trasparenti all’energia elettrica nei due 
+sensi: dalla sottostazione verso il motore e viceversa. Un’altra condizione da soddisfare 
+per effettuare questo tipo di frenatura consiste nel disporre, sulla linea alla quale viene 
+inviata l’energia prodotta dalla frenatura, di un utilizzatore in grado di assorbirla 
+(potrebbe essere un altro mezzo di trazione), o, quanto meno, la possibilità che le sottosta-
+zioni possano convertire tale energia (nel caso italiano, ma non solo) dalla forma di ten-
+sione continua a quella alternata trifase.
+È bene precisare che non vi è la certezza matematica che un altro convoglio sia in 
+grado, in quel preciso momento, di assorbire l’energia riversata in linea. Inoltre, si noti, a 
+tal riguardo, che tale energia viene messa in linea necessariamente ad una tensione mag-
+giore di quella presente sulla linea in quel momento. Peraltro, le sottostazioni sono generi-
+camente realizzate con dispositivi costituiti da semplici raddrizzatori e non con dispositivi 
+quali invertitori. In definitiva il recupero permesso ed attuabile riguarda linee dedicate al 
+trasporto urbano, quindi ad elevata presenza di convogli, anche se gran parte dell’energia 
+risulta dissipata sotto forma di effetto Joule sulle linee stesse.
+Un ulteriore tipo di frenatura elettrica è la frenatura in controcorrente che, a diffe-
+renza delle tecniche precedenti, viene utilizzata solo nei casi di emergenza e si attua nel 
+caso di motori a c.c. con le seguente procedura:
+1)  distacco dei motori dalla linea di alimentazione,
+2) inversione dei collegamenti di indotto e ripristino del collegamento di eccitazione serie,
+3)  inserzione tramite il reostato di un adeguato valore di resistenza serie,
+4)  ripristino del collegamento alla linea di alimentazione.
+Lo schema circuitale semplificato e relativo ad un solo motore nelle condizioni di tra-
+zione e di frenatura in controcorrente è quello riportato nella Fig. XII.4.6, dove il verso di 
+rotazione dell’indotto rimane invariato durante le due fasi. Nella figura sono inoltre indi-
+cati i versi di rotazione del motore, quello della coppia motrice CM e quello della coppia 
+resistente (di frenatura) Cr. 
+Fig. XII.4.6  Frenatura in controcorrente di motori con eccitazione serie.
+Durante la movimentazione il verso di rotazione e quello del campo induttore rimangono 
+invariati, mentre si inverte la corrente nel circuito di indotto, pertanto si genera una f.e.m. 
+Filo di contatto
+M
+G
+Rotaie
++
++
+n
+Rs
+I
+Ri
+I
+Rx
+E
+CM
+
+n
+Rs
+I
+Ri
+I
+Rx
+E
+Cr
+
+I =
+U  E
+Ri  Rs
+I =
+U  E
+Rx  Ri + Rs 
+Trazione
+Frenatura
+
+[PAG 1203]
+TRAZIONE ELETTRICA
+XII-13
+avente lo stesso verso, anziché in opposizione, della tensione applicata U. Per questo motivo 
+la corrente assorbita deve essere limitata tramite la resistenza del reostato al valore:
+(XII.4.7)
+In queste condizioni il motore funziona da generatore e trasforma l’energia cinetica in 
+energia elettrica sotto forma di potenza frenante Pf espressa da:
+(XII.4.8)
+inoltre l’intero sistema assorbe dalla linea la potenza elettrica P pari a:
+(XII.4.9)
+La somma delle due potenze elettriche viene dissipata sotto forma di calore per effetto 
+Joule dalla resistenza del reostato inserito Rx e dalle resistenze dell’avvolgimento di campo 
+Rs e di indotto Ri del motore:
+(XII.4.10)
+La frenatura in controcorrente converte l’energia cinetica in calore; quando il convo-
+glio si arresta la corrente diventa:
+(XII.4.11)
+pari cioè al valore di un normale avviamento, ma, in questo caso, il movimento si effettua 
+nel verso opposto. È necessario pertanto che, in prossimità dell’arresto del convoglio, 
+venga disinserito il motore.
+Naturalmente, come anticipato, la frenatura elettrica viene impiegata principalmente 
+quando il veicolo è in movimento e ad alte velocità, e viene utilizzata in contemporanea o 
+da sola, specie nelle basse velocità, la frenatura meccanica, cioè un connubio tra pneuma-
+tica, comando elettrico, e freno a ceppi.
+Nata per le metropolitane, la frenatura elettro-pneumatica è stata introdotta pratica-
+mente ovunque in quanto si avvantaggia della velocità di risposta, consentendo il totale 
+controllo istantaneo del convoglio tramite elettrovalvole per il controllo della pressione 
+dell’aria nelle condotte dei freni. La pressione dell’aria che consente di disinserire i freni 
+meccanici assume valori tra 7 e 9 bar; il freno agisce per effetto della diminuzione della 
+pressione dell’aria nelle condotte tramite il comando di elettrovalvole, il tutto con una 
+velocità di propagazione minima pari a 250 m/s. Nei treni ad alta velocità un sistema di 
+elettrovalvole è comandato da un commutatore elettrico in cabina di guida, azionato dal 
+comando di frenatura, ed opera in modo che tutti i cilindri presenti sui vagoni interven-
+gano contemporaneamente, e non in successione come negli altri treni, allo svuotarsi della 
+condotta generale.
+4.2  Impianti di blocco
+Hanno la funzione di garantire che in un determinato tratto di linea, indicata come 
+sezione di blocco, non possa accedere un treno se ne è già presente un altro. Per realizzare 
+questo la linea viene suddivisa in un certo numero di sezioni di blocco, coincidenti, tal-
+volta, con le stazioni, oppure con dei posti di blocco intermedi. In ingresso a ciascuna 
+sezione di blocco si trova un segnale di blocco, mentre al termine è presente un segnale di 
+uscita. Questi ultimi due segnali possono coincidere rispettivamente con i segnali di par-
+tenza dalla stazione o di protezione della stessa o, per i posti di blocco intermedi, con i 
+segnali di protezione della sezione successiva. Questi dispositivi garantiscono che un 
+I
+U
+E
++
+Rx
+Ri
+Rs
++
++
+-----------------------------
+=
+Pf
+E I
+
+=
+P
+U I
+
+=
+P
+P
++
+f
+U
+E
++
+
+I
+
+Rx
+Ri
+Rs
++
++
+
+I2
+
+=
+=
+I
+U
+Rx
+Ri
+Rs
++
++
+-----------------------------
+=
+
+[PAG 1204]
+XII-14
+TRAZIONE ELETTRICA
+treno che entra in una sezione di blocco attivi immediatamente il segnale di protezione di 
+quella sezione segnalando la sua presenza e, conseguentemente, appena uscito da tale 
+sezione consenta l’immissione di un altro treno nella medesima tratta.
+Vari sono i metodi ed i dispositivi che consentono di accertare la presenza di un treno 
+all’interno di una tratta, possono essere di tipo automatico o semiautomatico.
+Uno dei metodi più semplici per realizzare un impianto automatico di blocco della 
+tratta è quello che utilizza il circuito di binario, un semplice circuito elettrico realizzato in 
+corrente continua tramite il relè di binario. Si consideri la Fig. XII.4.7 dove le rotaie fun-
+gono da conduttori: il generatore a c.c. tramite loro alimenta il relè di binario, mentre se è 
+presente un veicolo ferroviario, tramite le sale ferroviarie le due rotaie vengono cortocir-
+cuitate quindi si diseccita il relè di binario. 
+Fig. XII.4.7  Schema di principio del circuito di binario in corrente continua.
+La tecnica appena esaminata consente in modo semplice di rilevare la presenza di vei-
+coli su tratte ferroviarie, però rende indispensabile l’isolamento elettrico tra rotaie conti-
+gue, tramite l’impiego di giunti isolanti.
+Il problema si pone in presenza di linee elet-
+trificate in corrente continua, dove è neces-
+sario assicurare che le rotaie siano collegate 
+alla sottostazione, onde consentire il ricir-
+colo della corrente. La soluzione consiste 
+nell’impiego di circuiti di binario alimentati 
+in corrente alternata con accorgimenti, le 
+cosiddette connessioni induttive, che con-
+sentono il ritorno alla sottostazione della 
+corrente di trazione. 
+Fig. XII.4.8  Circuito di binario
+con connessioni induttive.
+Le connessioni induttive sono realizzate con un avvolgimento di spire di alluminio di 
+grossa sezione avvolte su un nucleo magnetico, in modo tale da costituire una induttanza 
+di adeguato valore, il tutto riposto in un contenitore stagno. Il risultato è quello di avere 
+una connessione che presenta bassa resistenza ohmica per quanto concerne il passaggio 
+della corrente continua ma, al contempo, un elevato valore di impedenza per la corrente 
+alternata grazie all’elevato valore dell’induttanza realizzata. Questo permette di conside-
+rare due tratti di linea consecutiva tra di loro isolati in maniera sufficiente per quanto 
+compete il funzionamento del sistema dell’impianto di blocco. Nella Fig. XII.4.8 si riporta 
+lo schema elettrico di principio relativo al funzionamento di tale dispositivo dove viene 
+evidenziata la corrente di ritorno relativa alla trazione. Dall’esame di tale figura si evince 
+che la corrente di trazione si suddivide in parti uguali tra le due rotaie, percorre gli avvol-
+Giunti isolanti
+Giunti isolanti
+Relè di
+binario
+eccitato
+Relè di
+binario
+diseccitato
+U
+R
+I
+U
+R
+I
+I
+Asse del rotabile
+Giunti isolanti
+I/2
+I/2
+I/2
+I/2
+I
+
+[PAG 1205]
+TRAZIONE ELETTRICA
+XII-15
+gimenti comuni delle impedenze, e prosegue lungo il tratto seguente di binario fino alla 
+richiusura in sottostazione del circuito relativo alla corrente di trazione.
+4.3  Ripetizione dei segnali
+La quasi totalità dei mezzi di trazione in dotazione alle ferrovie italiane dispone di una 
+apparecchiatura di sicurezza che effettua la ripetizione dei segnali, cioè anticipa al perso-
+nale di macchina l’indicazione del successivo segnale che verrà incontrato. Questa fun-
+zione si rivela particolarmente utile in caso di scarsa visibilità, magari per avverse 
+condizioni atmosferiche, o a causa di segnali posizionati lungo le curve. Il funzionamento 
+del sistema si avvale di una centralina elettronica in grado di decodificare segnali raccolti 
+da due captatori posizionati sulla prima sala del mezzo.
+La codifica dei segnali inviati a bordo del veicolo può essere a quattro oppure a nove 
+codici, in funzione della massima velocità ammessa. Nel caso dei quattro codici è consen-
+tita una velocità massima di 180 km/h, con i nove codici è possibile viaggiare, veicolo 
+permettendo, a 250 km/h. Precisamente il binario viene utilizzato per l’emissione di un 
+segnale alternato modulato con frequenze che dipendono dal codice che deve essere 
+inviato. Ad ogni segnale presente sulla linea (semaforo rosso, verde, ecc.) corrisponde una 
+diversa frequenza che, tramite il captatore e la successiva elaborazione, attiva sul banco 
+di manovra del mezzo di trazione la corrispondente spia di segnalazione.
+L’importanza della ripetizione dei segnali risiede nella sicurezza, infatti la centralina 
+elettronica provvede alla frenatura di emergenza del mezzo, qualora il macchinista non 
+risponda entro un tempo di tre secondi alla segnalazione di un successivo segnale con 
+obbligo di rallentamento o di fermata. Viene in questo caso applicato quello che viene 
+chiamato codice restrittivo, infatti la centralina elettronica interviene solo in caso di neces-
+sità di rallentamento ma non in caso contrario, cioè la possibilità di aumento della velocità.
+5  CORROSIONE ELETTROLITICA
+Il fenomeno della corrosione elettrolitica è presente nella trazione elettrica ogni qual 
+volta la tensione di alimentazione è continua, ed uno dei conduttori di corrente è costituito 
+dalle rotaie. Infatti queste ultime, non essendo perfettamente isolate dal terreno, consen-
+tono ad una parte della corrente, talvolta non trascurabile, di fluire verso la sottostazione 
+di alimentazione attraverso il medesimo (in particolare quando la distanza tra le sottosta-
+zioni risulta elevata). 
+I fattori che caratterizzano la corro-
+sione sono molteplici, anche se il trino-
+mio che la quantifica risulta dato dalle 
+condizioni della massicciata, dalla 
+natura del terreno e dall’assorbimento 
+del mezzo di trazione. Le correnti che 
+percorrono la via alternativa del terreno 
+vengono usualmente indicate come cor-
+renti vaganti o correnti disperse.
+L’analisi elettrica del fenomeno si 
+effettua considerando la Fig. XII.5.1
+nella quale si presume, per semplicità, 
+che il punto di prelievo del carico coin-
+cida col punto mediano tra due sotto-
+stazioni. 
+Fig. XII.5.1  Tensione di linea e di binario riferite a terra.
+Con riferimento ad una delle due sottostazioni di alimentazione che alimentano in 
+Sottostazioni
+U0
+U
+ub
+ib
+Punto di
+prelievo
+
+[PAG 1206]
+XII-16
+TRAZIONE ELETTRICA
+parallelo la linea di contatto, si può scrivere:
+(XII.5.1)
+dove U è il valore di tensione presente sul 
+carico, U0 è il valore di tensione a vuoto misu-
+rato in uscita dalla sottostazione, Rg è il valore 
+della resistenza interna della sottostazione, ri è 
+il valore della resistenza della linea di contatto 
+del tratto compreso tra la sottostazione ed il 
+punto di prelievo dell’energia, rb è il valore 
+della resistenza del tratto di binario individuato 
+come in precedenza.Inoltre il binario, essendo 
+in contatto col terreno, presenta una resistenza 
+distribuita verso quest’ultimo che viene indi-
+cata nella Fig. XII.5.2 con rbt e che rappresenta 
+una resistenza trasversale. 
+Fig. XII.5.2  Resistenza longitudinale
+e trasversale del binario.
+Indicando con ub il valore della tensione del binario misurata tra il punto in cui viene 
+prelevata l’energia e la terra, assumendo che tale punto coincida con il punto medio tra le 
+due sottostazioni, indicata con iv la corrente dispersa nel terreno origine dei fenomeni di 
+corrosione, si ha:
+(XII.5.2)
+dove l è la distanza tra sottostazione e il punto di prelievo dell’energia. Per limitare i feno-
+meni corrosivi è possibile agire in due direzioni:
+a)  Diminuire il valore della tensione ub.
+b)  Aumentare il valore della resistenza trasversale del binario.
+La prima soluzione può essere adottata diminuendo il valore della resistenza longitu-
+dinale del binario, cioè rb, nel secondo caso si tratta di intervenire sulla massicciata in 
+modo tale da aumentarne la resistenza trasversale rbt, cioè l’isolamento.
+Gli impianti di trazione a 3k V c.c. funzionano con il polo negativo dell’alimentazione 
+collegato al binario, l’altro alla linea di contatto. È di particolare importanza il potenziale 
+che viene a crearsi tra la resistenza trasversale complessiva del binario ed il negativo della 
+sottostazione. La sottostazione ha un impianto di messa a terra tipicamente costituito da 
+conduttori di rame che formano quadrati di 5 metri di lato, interrati a 80 cm di profondità 
+e, a tale messa a terra, fanno capo le strutture metalliche di tutte le apparecchiature della 
+sottostazione stessa. Il polo negativo della sottostazione e la messa a terra sono tra loro 
+isolati; ad evitare la presenza di tensioni elevate tra i due, magari a causa di fulmini, vi 
+sono scaricatori di tensione che intervengono per valori superiori a 200 V.
+La resistenza longitudinale del binario viene diminuita utilizzando rotaie con elevata 
+massa lineica e limitando il numero dei giunti, ricorrendo ove possibile alla saldatura. 
+Talvolta si ricorre anche alla saldatura dei binari costituenti linee doppie.
+In generale è necessario che la conduttanza di dispersione abbia valori contenuti entro 
+0,1 S/km, in modo da limitare al massimo la corrosione delle rotaie, in particolar modo in 
+ambienti particolarmente umidi quali possono essere le gallerie. Questo si ottiene utiliz-
+U
+U0
+Rg
+ri
+rb
++
++
+
+
+–
+i
+=
+Punto di
+ Sottostazione
+prelievo
+del carico
+rb
+rbt
+iv
+ub
+rbt
+0
+l
+
+-------------
+=
+
+[PAG 1207]
+TRAZIONE ELETTRICA
+XII-17
+zando traverse in calcestruzzo armato, appoggiate su ghiaia e pietrisco onde evitare che 
+l’umidità del terreno interferisca con le rotaie. Inoltre le rotaie vengono attualmente fis-
+sate alle traverse tramite dispositivi che risultano parzialmente isolanti.
+La protezione delle rotaie tramite l’isolamento dal terreno risulta comunque oneroso, 
+non può essere totale per ragioni di sicurezza delle persone dal rischio di folgorazione, ed 
+inoltre non garantisce il risultato; un difetto di isolamento a livello locale compromette, in 
+maniera concentrata e quindi più gravosa, la struttura da salvaguardare. Si ricorre quindi 
+alla cosiddetta protezione catodica: in questo caso viene creato un campo elettrico tra la 
+struttura da proteggere ed una ausiliaria, quest’ultima costituita da conduttore o piastre 
+metalliche interrate, in modo da creare un flusso di corrente verso la prima. Le rotaie 
+devono essere a potenziale negativo rispetto alla struttura ausiliaria con tensione tra anodo 
+(la struttura ausiliaria) e catodo (le rotaie) del valore massimo di 1 V; tale tensione può 
+essere tipicamente prodotta da un sistema trasformatore-raddrizzatore.
+6  ALIMENTAZIONE DEI MEZZI DI TRAZIONE
+L’alimentazione dei mezzi di trazione avviene tramite le linee di contatto, che permet-
+tono di inviare l’energia elettrica dalle stazioni di alimentazione agli organi di presa a con-
+tatto mobile presenti sui mezzi mobili.
+Generalmente queste linee aeree sono realizzate tramite conduttori in rame nudo situati 
+sopra i binari o lateralmente ai binari di corsa, realizzando in quest’ultimo caso una vera e 
+propria rotaia destinata alla sola alimentazione.
+Negli impianti di alimentazione delle filovie la linea di contatto è bifilare: vengono uti-
+lizzate due aste dedicate rispettivamente al polo positivo e a quello negativo, ciascuna prov-
+vista di un pattino di strisciamento realizzato in ghisa o carbone, con una gola all’interno 
+della quale scorre il filo della linea di alimentazione.
+Le aste, incernierate sul tetto del veicolo sono munite di molle che annullano l’effetto 
+peso delle medesime e, inoltre, agiscono in modo che il pattino eserciti una forza sul filo di 
+alcuni chilogrammi. La velocità massima di movimentazione dei veicoli muniti di aste si 
+aggira intorno ai 60 km/h.
+Nel caso di alcune metropolitane, quale per esempio a Milano la linea 1 a 750 V, il 
+conduttore di ritorno è costituito da una quarta rotaia, escludendo così il binario di corsa 
+dal compito di conduttore di corrente.
+Per i treni, qualunque sia la linea di contatto, l’altro conduttore è sempre costituito dalle 
+rotaie vere e proprie; questo è il motivo per il quale le rotaie risultano collegate tra loro oltre 
+che con giunti meccanici, anche tramite treccia di rame flessibile saldata alle estremità 
+delle rotaie stesse. Onde evitare danneggiamenti dei cuscinetti delle sale dovuti al passag-
+gio di corrente, il telaio del carrello viene collegato elettricamente alla sala tramite un 
+sistema di spazzole elettriche fisse agenti, usualmente, sulla superficie frontale del fusello.
+La resistenza kilometrica delle rotaie, intesa come resistenza elettrica misurata in con-
+tinua per la coppia di rotaie si aggira su 0,018 /km. Nelle linee ferroviarie in c.c. la linea 
+di contatto è realizzata tramite due conduttori in rame, ciascuno di sezione pari a 100 mm2, 
+sostenuti da dispositivi chiamati pendini, ad una corda portante (due nel caso di linee ad 
+elevato movimento). Anche quest’ultima è in rame e presenta una sezione nominale di 120 
+mm2. I tre (o quattro) conduttori appena menzionati sono tra loro elettricamente collegati 
+cosicché costituiscono nell’insieme un conduttore di sezione massima pari a 440 mm2 rea-
+lizzando così una resistenza kilometrica di circa 0,0040 /km misurata a 20 °C.
+Le corde portanti sono a loro volta sostenute, tramite isolatori, da mensole in ferro, 
+mentre la linea di contatto forma un andamento poligonale tra un palo tubolare ed il suc-
+cessivo e viene tenuta in posizione tramite i tiranti di poligonazione; i tiranti sono a loro 
+volta trattenuti per mezzo di isolatori al palo, mediante i bracci di poligonazione.
+
+[PAG 1208]
+XII-18
+TRAZIONE ELETTRICA
+La Fig. XII.6.1 rappresenta la caratteristica forma del conduttore di linea aerea e la Fig. 
+XII.6.2 la sagoma di un pendino. 
+ L’andamento poligonale della fune, di ampiezza trasversale di circa 40 cm, viene rea-
+lizzato per evitare che vi sia logorazione localizzata del pattino strisciante del pantografo.
+ Nella Fig. XII.6.3 viene riportata la realizzazione tipica di una linea aerea.
+I pali distano tra loro mediamente 30 m 
+o 60 m in maniera che la freccia dovuta 
+al peso dei conduttori e di tutti gli 
+accessori sia compresa tra 0,30 m e 
+1,20 m per temperature limiti di –15 
++45 °C. I pendini, distanti tra loro di 
+circa 8 m, hanno lunghezza variabile in 
+modo tale da consentire alla linea di 
+contatto una freccia limitata a qualche 
+centimetro; inoltre per compensare 
+variazioni di lunghezza legate alla tem-
+peratura, i conduttori di contatto sono 
+suddivisi in tratte di lunghezza com-
+prese tra 1200 e 1400 m, tenuti in tra-
+zione da contrappesi di circa 1000 kg e 
+collegati tra loro da collegamenti elet-
+trici flessibili realizzati in rame.
+Fig. XII.6.3  Linea aerea con corda
+ portante e due conduttori di contatto.
+Gli impianti più recenti sono del tipo a doppia regolazione, cioè anche la fune portante 
+è munita di un sistema di tesatura gestito da contrappesi (Fig. XII.6.4). 
+Il sistema elettrico di alimentazione dei mezzi di trazione può essere uno dei seguenti:
+1)  a corrente continua,
+2)  a corrente alternata monofase,
+3)  a corrente alternata trifase.
+Le rotaie costituiscono sempre uno dei due o tre conduttori necessari per l’alimenta-
+Fig. XII.6.1  Filo di contatto da 100 mm2.
+Fig. XII.6.2  Pendino per sospen-
+sione del filo di contatto.
+8,3
+5,5
+11,8
+2,2
+ 
+78°
+51°
+Pendino
+in rame
+Fune portante
+Morsetto
+in bronzo
+Filo di
+contatto
+5
+25
+Tirante di
+poligonazione
+Corde
+Pendino
+portanti
+Conduttore
+di contatto
+Braccio di
+poligonazione
+100
+200
+900
+
+[PAG 1209]
+TRAZIONE ELETTRICA
+XII-19
+zione. Nel caso del sistema di alimentazione trifase si fa ricorso ad una linea di contatto 
+bifilare, con i due conduttori aerei tra loro isolati.
+Si precisa che in Italia il 
+sistema normalmente utiliz-
+zato per i treni è quello a cor-
+rente continua con tensione di 
+3 kV anche se si stanno speri-
+mentando linee in corrente 
+alternata con tensioni di 25 kV 
+destinate alle locomotive per 
+convogli che viaggiano a velo-
+cità oltre i 250 km/h con assor-
+bimenti che superano i 10 MW. 
+Fig. XII.6.4  Sistema di contrappesatura 
+in una linea a doppio conduttore. 
+Per quanto riguarda il sistema trifase il primo esperimento effettuato in Italia risale al 
+1890 quando venne attivata la tranvia Firenze-Fiesole, e viene definitivamente accanto-
+nato il 25 maggio 1976. Per le tranvie si hanno normalmente tensioni di 600 V, anche se è 
+prevista l’unificazione europea a tensioni di 750 V.
+6.1  Cadute di tensione in linea
+La distanza tra le sottostazioni di alimentazione delle linee deve essere tale da consen-
+tire, alla massima caduta di tensione in linea, di rientrare entro determinati limiti. A tal 
+fine, usualmente, la distanza tra le sottostazioni alimentanti linee a 3 kV c.c. risulta di 40 
+km per i percorsi in pianura e di 20 km nel caso di linee di valico. 
+È da precisare che i motori a corrente continua con eccitazione serie consentono di 
+tollerare le variazioni di tensione entro ampi limiti, infatti, queste ultime, intervengono 
+diminuendo la loro velocità di rotazione ma non la coppia motrice da essi sviluppata.
+La normativa CEI EN 50163 prevede, inoltre, che, per i sistemi a corrente continua, si 
+possano avere variazioni di tensioni in linea rispetto i valori nominali comprese tra –33% 
+e +20%, con variazioni maggiori, fino al 30% per le linee con tensione di esercizio di 1,5 
+kV e 3 kV e fino al 33% nelle reti con tensione nominale di 750 V, se presenti per un periodo 
+di tempo inferiore a 5 minuti, dovute a frenatura a recupero da parte di qualche veicolo.
+Le singole sottostazioni sono realiz-
+zate e predisposte in modo tale che la 
+tensione da loro prodotta sia pari al 
+valore nominale, cioè per le ferrovie di 3 
+kV. La caduta di tensione massima in 
+linea corrisponde al punto mediano della 
+linea compresa tra due sottostazioni nel 
+momento in cui in tale punto transita una 
+o più motrici. La Fig. XII.6.5 illustra il 
+diagramma della tensione presente in 
+linea dovuta all’assorbimento del 
+mezzo.
+Fig. XII.6.5  Cadute di tensione in linea.
+Per una linea in c.c., indicata con R la resistenza chilometrica complessiva (di andata e 
+ritorno) della linea, con IM la corrente prelevata nel punto mediano, e con d la distanza tra 
+le due sottostazioni, la caduta di tensione in linea al punto mediano risulta:
+Fili di contatto
+Collegamento
+elettrico
+flessibile
+Contrappesi
+Isolatori
+sostegno
+Isolatore di
+portante
+Corda
+d
+IM
+1/2 Im
+1/2 Im
+Um
+UM
+UM
+UM
+UM
+Um
+UM
+d
+
+[PAG 1210]
+XII-20
+TRAZIONE ELETTRICA
+(XII.6.1)
+È fondamentale contenere la densità di corrente a valori accettabili (al massimo 5 A/mm2) 
+nelle linee di contatto, onde evitare surriscaldamenti e conseguenti danni. 
+Per durate limitate nel tempo, quali le fasi di avviamento, si consentono assorbimenti 
+corrispondenti a densità fino a 9 A/mm2. Nelle linee di valico, dove le potenze richieste 
+valgono circa il doppio con velocità tipica del 60% rispetto alla massima, la movimenta-
+zione del convoglio si effettua col sistema della doppia trazione, cioè utilizzando una 
+locomotiva in testa ed una in coda al convoglio, le sottostazioni sono ravvicinate, inoltre 
+la sezione complessiva dei conduttori della linea viene maggiorata e, nelle linee con dop-
+pio binario, viene effettuato il parallelo dei conduttori di linea utilizzati per la salita con 
+quelli per la discesa.
+Per le linee di alimentazione monofase le cadute di tensione dipendono oltre che dalla 
+resistenza ohmica del conduttore anche dalla reattanza induttiva che, in questo caso, 
+diventa preponderante nel valore dell’impedenza di linea rispetto alla resistenza.
+Nel calcolo delle cadute di tensione interviene quindi in maniera preponderante il fat-
+tore di potenza dei mezzi. È necessario che questi ultimi assorbano energia con sfasamenti 
+tra tensione e corrente più piccoli possibile.
+Le linee funzionanti a 50 Hz presentano impedenze di valore circa triplo rispetto a 
+quelle funzionanti a 50/3 Hz; per limitare le cadute di tensione è necessario che all’aumen-
+tare della frequenza corrisponda anche un aumento della tensione di esercizio, in modo da 
+ridurre conseguentemente la corrente assorbita. Per questo motivo in caso di frequenza 
+industriale a 50 Hz la tensione di esercizio utilizzata è di 25 kV.
+6.2  Pantografo
+Il pantografo costituisce il contatto strisciante che permette al treno di prelevare ener-
+gia dalla linea di contatto (captazione della corrente). 
+Posto sul tetto del mezzo rota-
+bile, e fissato tramite isolatori 
+portanti, è composto da un 
+sistema articolato, il quadro, e da 
+un archetto completo di morse 
+porta striscianti (Fig. XII.6.6).
+Il sistema è in grado muoversi 
+verticalmente raggiungendo fino 
+ad un massimo di 1,5 m di 
+altezza. 
+Fig. XII.6.6  Esempio di pantografo.
+Viene alzato tramite un cilindro ad aria compressa che, contrapponendosi alla forza 
+peso e a quella esercitata dalle molle di abbassamento opportunamente tarate, garantisce 
+una adeguata pressione di appoggio degli striscianti sulla linea aerea di contatto. 
+Nei pantografi di recente costruzione il movimento di alzata del pantografo avviene a 
+spinta impressa, cioè tramite un azionamento pneumatico che, in funzione della velocità 
+di marcia del mezzo, adatta la pressione degli striscianti sulla linea di contatto in modo da 
+garantire sempre una buona captazione anche ad elevate velocità.
+Gli striscianti possono essere facilmente sostituiti, sono composti da barre di mate-
+riale conduttore quali rame, acciaio, alluminio e carbone, e, al contempo, presentano la 
+caratteristica di usurarsi maggiormente rispetto la linea.
+La massima intensità di corrente prelevabile dalla linea di contatto aerea tramite il 
+U
+R d
+2-- IM
+2-----
+
+
+=
+Morse
+Portastriscianti
+Base del
+pantografo
+Isolatore di
+ancoraggio
+Molla per
+l’abbassamento
+Cilindro per il
+sollevamento
+
+[PAG 1211]
+TRAZIONE ELETTRICA
+XII-21
+pantografo è di 2500 A con veicolo fermo e di 1500 A con veicolo in movimento. Su ogni 
+mezzo di locomotore ferroviario sono previsti due pantografi; le norme prevedono che, 
+durante la normale marcia, venga alzato solo quello posteriore rispetto al senso di marcia.
+6.3  Alimentazione a corrente continua
+Nelle linee alimentate in c.c., tranne per le applicazioni dove sono presenti gli aziona-
+menti, vengono tuttora utilizzati i motori a corrente continua con eccitazione serie in 
+quanto questi ultimi presentano doti e caratteristiche ideali per l’applicazione nel campo 
+della trazione; infatti tali motori presentano le seguenti caratteristiche:
+–  sono in grado di sviluppare grandi valori di coppia sia in fase di partenza che di frena-
+tura con conseguenti elevate accelerazioni e decelerazioni, il tutto in modo graduale e ben 
+regolabile;
+–  è possibile la regolazione della velocità entro ampi intervalli quasi in maniera continua;
+–  consentono un buon adattamento della velocità di regime all’aumentare della coppia 
+di carico, con variazioni contenute della potenza prelevata in linea anche, col massimo 
+sovraccarico;
+–  dal punto di vista costruttivo, essendo realizzati con avvolgimenti costituiti da un 
+numero limitato di spire con sezione elevata, ben si prestano a sopportare le numerose ed 
+elevate sollecitazioni meccaniche dovute al movimento.
+Durante la fase di avviamento è 
+necessario limitare la corrente di 
+spunto dei motori in modo da non 
+superare determinati valori e quindi 
+conseguire uno sforzo di trazione pra-
+ticamente costante e nel rispetto dei 
+limiti di aderenza. Con riferimento ad 
+un solo motore di trazione, quanto 
+appena affermato si ottiene tramite il 
+collegamento in serie al motore di un 
+reostato di avviamento avente la pos-
+sibilità di esclusione graduale dello 
+stesso fino al collegamento diretto del 
+motore alla linea. 
+Fig. XII.6.7  Assorbimento di corrente in base alla velocità.
+Nelle realizzazioni pratiche il reostato si compone di un complesso di resistenze colle-
+gate tra loro in serie che vengono via via cortocircuitate tramite la chiusura di contattori 
+dedicati. La Fig. XII.6.7 evidenzia l’andamento della corrente assorbita durante la fase reo-
+statica di avviamento. Come rilevabile dalla figura la corrente assorbita dal motore oscilla 
+tra due valori che possono essere tra loro avvicinabili limitando il valore del reostato cor-
+tocircuitato, ovvero avendo a disposizione un numero elevato di posizioni reostatiche.
+Nella realtà vi sono più motori che, durante la fase di avviamento, vengono collegati in 
+serie tra loro tramite il reostato di avviamento. Quest’ultimo viene progressivamente 
+escluso fino ad ottenere la cosiddetta prima velocità economica, condizione durante la 
+quale tutti i motori sono in serie con pieno valore del campo. Il termine velocità economica 
+deriva dal funzionamento con reostato escluso, cioè con funzionamento privo di perdite di 
+energia nel reostato di avviamento. La variazione di resistenza del reostato può avvenire sia 
+manualmente, cioè azionata dall’operatore, che in modo automatico, tramite circuiti di 
+comando dedicati.
+Per un motore a c.c. la regolazione della velocità viene effettuata nei seguenti modi:
+–  modificando la tensione di alimentazione ai morsetti del motore;
+IA
+IB
+I
+v
+
+[PAG 1212]
+XII-22
+TRAZIONE ELETTRICA
+–  modificando il valore del campo.
+Nel caso della trazione ferroviaria il metodo di 
+variazione della tensione di alimentazione si effettua 
+attuando collegamenti serie-parallelo dei motori di 
+trazione, in modo da intervenire sulla loro tensione 
+di alimentazione, fino a raggiungere il valore nomi-
+nale.
+L’altra tecnica, ovvero l’indebolimento del campo, 
+si effettua tramite la variazione del numero di spire 
+attive di ciascun polo principale o, in alternativa, 
+tramite l’impiego di un induttore collegato in paral-
+lelo all’avvolgimento di campo di ogni motore di 
+trazione.
+Nella Fig. XII.6.8, riferentesi a locomotive apparte-
+nenti al gruppo E.626, fornite di 6 motori per la tra-
+zione, ciascuno con 4 poli, con tensione nominale 
+di 1500 V con collegamento ad eccitazione serie, si 
+evidenziano le tre configurazioni possibili:
+1)  Serie S (tutti i motori collegati in serie),
+2)  Serie-Parallelo SP1 (due gruppi, ognuno di tre 
+motori in serie, collegati in parallelo)
+3)  Serie-Parallelo SP2 (tre gruppi, ognuno di due 
+motori in serie, collegati in parallelo).
+Si precisa inoltre che per la locomotiva E.626 si 
+possono avere tre ulteriori combinazioni di velocità, 
+modificando il campo induttore (con una azione di 
+indebolimento) tramite shunt induttivi. Nei mezzi di 
+trazione l’inversione di marcia si attua mediante un 
+dispositivo chiamato invertitore di marcia. 
+Quest’ultimo è costituito da sezionatori ed il suo 
+comando può essere di tipo diretto oppure indiretto
+a seconda se, rispettivamente, il comando è di tipo 
+manuale oppure elettropneumatico. In ambedue i 
+casi la manovra risulta comunque impedita da un 
+dispositivo di blocco meccanico attivo quando il 
+circuito di trazione è interessato dalla corrente.
+Fig. XII.6.8  Schema base del circuito 
+di trazione del locomotore E.626.
+A partire dagli anni settanta, con la disponibilità di semi-
+conduttori di potenza quali tiristori e GTO in grado di con-
+trollare potenze notevoli, sono stati adottati i convertitori di 
+potenza.
+Fig. XII.6.9  Simbolo del frazionatore.
+ Denominati azionamenti elettronici, tali dispositivi sono capaci di regolare con conti-
+nuità la tensione ai morsetti dei motori di trazione, permettendo quindi un rendimento più 
+elevato ed una velocità progressiva migliore; indicati anche col termine di frazionatori o 
+chopper, eseguono la conversione diretta c.c./c.c. senza la necessità di circuiti intermedi.
+Il frazionatore può essere impiegato sia nella configurazione di abbassatore (step 
+M1
+3) Configurazione Serie Parallelo SP2
+2) Configurazione Serie Parallelo SP1
+1) Configurazione Serie S
+M2
+M3
+M4
+M5
+M6
+M1
+M2
+M3
+M4
+M5
+M6
+M1
+M2
+M3
+M4
+M5
+M6
+Ii
+Io
+Uo
+
+
+
+
+
+
+Ui
