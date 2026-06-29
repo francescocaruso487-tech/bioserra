@@ -159,6 +159,7 @@ Estrai da questo testo TUTTI i concetti, principi, tecniche, esperimenti,
 sostanze, frequenze, materiali, processi menzionati.
 Sii specifico: non "elettrocultura" ma "spirale rame 1.5mm avvolta in senso orario attorno fusto".
 Non "biodinamica" ma "preparato 500 (letame bovino fermentato in corno)".
+IMPORTANTE: rispondi SEMPRE in italiano anche se il testo e in inglese, francese o altra lingua.
 
 Rispondi con JSON:
 {{"concetti": ["concetto specifico 1", "concetto specifico 2", ...]}}
@@ -188,7 +189,7 @@ def trova_connessioni_trasversali(pdf_a, concetti_a, pdf_b, concetti_b):
     if not MISTRAL_KEY: return []
     if not concetti_a or not concetti_b: return []
 
-    prompt = f"""Sei un agronomo ricercatore Living Soil ed elettrocultura.
+    prompt = f"""Sei un agronomo ricercatore Living Soil ed elettrocultura. Rispondi SEMPRE in italiano anche se i testi sono in altre lingue.
 Hai letto due manuali diversi e hai estratto questi concetti:
 
 MANUALE A: {pdf_a['titolo'][:60]}
