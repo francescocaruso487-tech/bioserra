@@ -1,0 +1,1191 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 50/116 ===
+Chars: 43,180 | Offset: 2,166,074
+
+
+
+[PAG 1096]
+X-246
+  IMPIANTI ELETTRICI 
+Componenti elettrici
+Il tipo di impianto elettrico va scelto in base alla classificazione dei luoghi pericolosi;
+i componenti impiegabili per questi luoghi, sottoposti alle norme CEI del CT 31 (materiali
+antideflagranti) vengono classificati con la sigla Ex, seguita da una lettera che indica in
+che modo la protezione è effettuata. Alcuni esempi sono riportati nella Tab. X.12.15.
+Tab. X.12.14   Grado di emissione di un'apertura
+Tipo di zona a monte 
+dell'apertura
+Tipo di apertura
+Grado di emissione dell'apertura(1)
+Zona 0
+A
+B
+C
+D
+Continuo
+Continuo/primo
+Secondo
+Nessuna emissione
+Zona 1
+A
+B
+C
+D
+Primo
+Primo/secondo
+Secondo/nessuna emissione
+Nessuna emissione
+Zona 2
+A
+B
+C
+D
+Secondo
+Secondo/nessuna emissione
+Nessuna emissione
+Nessuna emissione
+(1) Quando sono previsti due gradi di emissione la scelta va effettuata in base alla frequenza di aper-
+tura.
+Tab. X.12.15   Componenti elettrici adatti per i luoghi con pericolo di esplosione
+Sigla
+Denominazione 
+Descrizione
+Ex-d
+A prova di esplosione
+Il componente è racchiuso in una custodia che impedisce
+l'innesco dell'esplosione esterna, anche in presenza di una
+esplosione interna alla custodia
+Ex-p
+A sovrappressione interna Dentro la custodia vi è un gas inerte in sovrappressione che
+impedisce all'atmosfera esplosiva di penetrare
+Ex-i
+A sicurezza intrinseca
+Il componente non può sviluppare un'energia tale da innescare
+l'atmosfera esplosiva 
+Ex-o
+A immersione in olio
+Un battente d'olio separa il componente dall'atmosfera esplo-
+siva esterna
+Ex-q
+Sotto sabbia
+Il componente non può innescare l'esplosione perché protetto
+da sabbia di quarzo
+Ex-e
+A sicurezza aumentata
+Al componente, che in condizioni normali non può innescare
+l'esplosione, vengono applicati accorgimenti che riducono la
+probabilità di guasto
+Ex-m
+Per incapsulamento
+Il componente è inglobato in un blocco di resina
+Ex-n
+Tale sigla indica i componenti che, quando funzionano entro i limiti delle loro caratteristi-
+che nominali, non sono in grado di provocare l'accensione di una atmosfera esplosiva cir-
+costante
+
+[PAG 1097]
+IMPIANTI  ELETTRICI                                               X-247
+13  VERIFICHE DEGLI IMPIANTI ELETTRICI UTILIZZATORI
+13.1  Generalità e definizioni
+Per gli impianti elettrici utilizzatori a tensione nominale non superiore a 1000 V c.a. e
+1500 V c.c. alle verifiche è dedicata tutta la parte 6a della norma CEI 64-8; inoltre la
+materia è trattata anche dalla guida CEI 64-14 (guida alle verifiche degli impianti elettrici
+utilizzatori).
+Differenza tra verifica e collaudo
+Con il termine verifica si intende, in generale, il complesso di operazioni materiali
+aventi lo scopo di accertare se l'opera è stata eseguita in conformità a determinati requisiti
+tecnici e contrattuali. Il collaudo ha, invece, lo scopo di dichiarare formalmente la confor-
+mità dell'opera e di giudicarne l'esito tecnico finale, positivo o negativo che sia. Spesso,
+ma non necessariamente, il collaudo segue la verifica, ma è pur sempre possibile scindere
+i due atti.
+Definizioni in base alle norme CEI
+La norma CEI 64-8/6 definisce come verifica "l'insieme delle operazioni mediante le
+quali si accerta la rispondenza alle prescrizioni della presente Norma dell'intero impianto
+elettrico. La verifica comprende un esame a vista e prove".
+Per esame a vista si intende "l'esame dell'impianto elettrico per accertare che le sue
+condizioni di realizzazione siano corrette, senza l'effettuazione di prove". La guida CEI
+64-14 distingue due tipi di esame a vista, ordinario e approfondito. Il primo va sempre
+eseguito e serve a identificare, senza l'uso di utensili o di mezzi di accesso, i difetti dei
+componenti e quelli d'installazione evidenti allo sguardo (per es. connessioni interrotte,
+involucri danneggiati ecc.). L'esame approfondito non è sempre richiesto e, comunque,
+viene eseguito in aggiunta a quello ordinario; serve a identificare tutti quei difetti riscon-
+trabili solo con l'uso di attrezzi, in modo da poter aprire quadri elettrici, cassette e involu-
+cri vari.
+La prova è "l'effettuazione di misure o di altre operazioni sull'impianto elettrico
+mediante le quali si accerti l'efficienza dello stesso impianto elettrico. La misura com-
+porta l'accertamento di valori mediante appropriati strumenti".
+La guida CEI 64-14 ha introdotto i seguenti tipi di verifica: iniziale, periodica e straor-
+dinaria.
+Per verifica iniziale si intende "l'insieme delle procedure con le quali si accerta la
+rispondenza dell'impianto alle norme CEI e alla documentazione di progetto prima della
+messa in servizio dell'impianto". Poichè la guida è precedente all’entrata in vigore del DM
+22/1/08 n. 37, in essa si fa riferimento alla precedente legge 46/90, per cui il verificatore
+dovrà avere a disposizione la documentazione finale di progetto per gli impianti soggetti
+alla legge 46/90 e aventi l'obbligo del progetto oppure i soli allegati obbligatori alla
+dichiarazione di conformità per gli impianti soggetti alla legge 46/90 ma senza obbligo di
+progetto. Per gli impianti preesistenti alla legge 46/90 la documentazione non viene preci-
+sata, ma si richiama l'opportunità che essa contenga dati e informazioni utili per una cor-
+retta identificazione e valutazione dell'impianto stesso.
+La verifica periodica è "l'insieme delle procedure con le quali si accerta il permanere
+dei requisiti tecnici riscontrati all'atto della verifica iniziale". Gli intervalli di periodicità
+sono soggetti a diverse prescrizioni legislative e normative. La conduzione delle verifiche
+periodiche non è sostanzialmente diversa da quella della verifica iniziale; è tuttavia con-
+sentito non ripetere determinate prove quando certe condizioni dell'impianto non siano
+cambiante oppure le variazioni siano tali da soddisfare, nel complesso, le condizioni
+imposte dalla normativa.
+Per verifica straordinaria si intende "l'insieme delle procedure con le quali si accerta
+
+[PAG 1098]
+X-248
+  IMPIANTI ELETTRICI 
+la rispondenza dell'impianto alle norme CEI e alla documentazione di progetto aggiornato
+in caso di sostanziali modifiche o ampliamento dell'impianto esistente". Poiché si parla
+dell'impianto la verifica riguarderà l'impianto elettrico nel suo insieme, non solo le parti
+soggette a modifica o ampliamento.
+La guida CEI distingue tra il controllo totale e il controllo a campione; quest'ultimo è
+consigliato quando sono installate costruzioni elettriche simili tra loro in grande quantità
+(per es. apparecchi illuminanti, prese a spina ecc.) oppure quando si è notata una corretta
+conduzione dell'impianto, caratterizzata da documentazione aggiornata, componenti
+nuovi o in buono stato di conservazione, manutenzione appropriata.
+13.2  Obbligatorietà e periodicità delle verifiche
+L'obbligatorietà e la periodicità delle verifiche discendono da prescrizioni di legge e da
+norme tecniche.
+Prescrizioni previste dal DM 22/1/2008 n. 37
+Questo decreto, che ha sostituito la legge 46/90, si applica agli impianti elettrici al ser-
+vizio degli edifici, indipendentemente dalla loro destinazione d’uso, posti all’interno degli
+stessi o delle relative pertinenze. Esso tratta solo indirettamente il tema delle verifiche e dei
+collaudi degli impianti, richiamandolo all’interno degli alcuni articoli.
+In particolare l’articolo 7, comma 1, prescrive che l’installatore debba rilasciare al com-
+mittente, a fine lavori, la dichiarazione di conformità degli impianti realizzati, “previa effet-
+tuazione delle verifiche previste dalla normativa vigente, comprese quelle di funzionalità
+dell’impianto”. Questo significa che l’impianto va verificato a fine lavori a cura dell’impresa
+installatrice e si rimanda alle norme tecniche per quanto riguarda l’esecuzione delle verifiche
+da effettuare.
+Del certificato di collaudo si parla invece negli articoli 9 e 11, in relazione al rilascio
+del certificato di agibilità e del deposito della documentazione presso lo sportello unico per
+l’edilizia. Il certificato di agibilità viene rilasciato da parte delle autorità competenti previa
+acquisizione della dichiarazione di conformità e del certificato di collaudo, richiesto però
+solo quando previsto dalle norme vigenti, rimandando alla legislazione specifica per l’edi-
+ficio in esame.
+Lo stesso vale per il deposito della documentazione mentre il progetto e la dichiarazione
+di conformità sono richiesti nella generalità dei casi, il certificato di collaudo va depositato
+solo nei casi previsti dalle norme vigenti.
+Prescrizioni previste dal D.Lgs. 9/4/2008 n. 81 e dal DPR 462/2001
+Entrambi questi decreti (di cui il primo è il Testo unico sulla sicurezza) si riferiscono
+esclusivamente agli impianti realizzati nei luoghi di lavoro in cui sono presenti lavoratori
+subordinati.
+Per le verifiche degli impianti di terra, dei dispositivi di protezione contro le scariche
+atmosferiche e degli impianti elettrici nei luoghi con pericolo di esplosione, il Testo unico
+ha confermato le verifiche previste dal DPR 462/2001.
+Inoltre, l’articolo 86 del decreto n. 81 ha esplicitato l’obbligo per il datore di lavoro di
+verificare gli impianti elettrici e i dispositivi di protezione contro le scariche atmosferiche
+secondo le modalità e la periodicità che saranno stabilite con successivo decreto del Mini-
+stero del lavoro.
+Per gli impianti di terra, a norma del DPR 462/2001, è prevista una verifica iniziale da
+parte dell’installatore con il rilascio della dichiarazione di conformità, delle verifiche perio-
+diche che il datore di lavoro è tenuto a far eseguire da parte di appositi organismi abilitati
+ed eventuali verifiche straordinarie nei casi di esito negativo della verifica periodica, di
+modifica sostanziale dell’impianto o su richiesta del datore di lavoro.
+La cadenza delle verifiche periodiche è biennale per gli impianti installati nei cantieri,
+
+[PAG 1099]
+IMPIANTI  ELETTRICI                                               X-249
+nei locali a uso medico, negli ambienti a maggior rischio in caso d’incendio e nei luoghi con
+pericolo di esplosione e quinquennale peer gli altri ambienti.
+Nel caso degli impianti di terra delle cabine e delle centrali elettriche di aziende pro-
+duttrici o distributrici di energia elettrica (sono esclusi, quindi, gli impianti utilizzatori degli
+utenti), le verifiche periodiche vanno effettuate a intervalli non superiori a cinque anni, affi-
+date ai datori di lavoro.
+Prescrizioni particolari per i locali a uso medico e luoghi di pubblico spettacolo
+Per gli impianti elettrici nei locali a uso medico di gruppo 1 e 2 la sezione 710 della
+norma CEI 64-8/7 ha aggiunto delle prescrizioni particolari in merito alle verifiche da
+effettuare.
+In particolare la verifica iniziale dell'impianto deve comprendere, oltre a tutte le veri-
+fiche indicate al capitolo 61 della norma CEI 64-8/6, anche le seguenti:
+–  prova funzionale dei dispositivi di controllo dell'isolamento dei sistemi IT-M e di
+quelli di allarme ottico e acustico;
+–  misure per la verifica del collegamento equipotenziale supplementare;
+–  misura delle correnti di dispersione dell'avvolgimento secondario a vuoto e
+sull'involucro dei trasformatori per uso medicale; non è necessaria se è già stata eseguita
+dal costruttore del trasformatore;
+–  esame a vista per il controllo del rispetto delle prescrizioni previste dalla sezione
+710 della norma CEI 64-8/7.
+Per questi impianti vanno inoltre effettuate le verifiche periodiche indicate nella Tab.
+X.13.1. Le verifiche devono essere eseguite da un tecnico qualificato; le date e i risultati
+delle prove e delle misure di ciascuna verifica vanno riportati su un apposito registro.
+Per gli impianti nei luoghi di pubblico spettacolo e di trattenimento la sezione 752
+della norma CEI 64-8/7 non aggiunge altre prescrizioni in merito alle verifiche rispetto ai
+luoghi ordinari, però prevede delle ispezioni e dei controlli periodici, precisamente:
+–  almeno ogni sei mesi devono essere controllate l'efficienza e l'autonomia degli
+impianti di sicurezza;
+Tab. X.13.1   Verifiche periodiche per i locali a uso medico dei gruppi 1 e 2 (norma CEI
+64-8/7 sezione 710)
+Frequenza 
+Verifiche previste
+Ogni mese
+Prova funzionale a vuoto dell'alimentazione dei servizi di sicurezza con motori
+a combustione (gruppi elettrogeni)
+Ogni quattro mesi
+Prova funzionale a carico per almeno 30 min dell'alimentazione dei servizi di
+sicurezza con motori a combustione
+Ogni sei mesi
+Prova funzionale dei dispositivi di controllo dell'isolamento.
+Prova funzionale dell'alimentazione dei servizi di sicurezza a batteria secondo
+le istruzioni del costruttore
+Ogni anno
+Controllo, mediante esame a vista, delle tarature dei dispositivi di protezione
+regolabili.
+Prova d'intervento degli interruttori differenziali alla corrente nominale d'inter-
+vento
+Ogni tre anni
+Misure per la verifica del collegamento equipotenziale supplementare
+
+[PAG 1100]
+X-250
+  IMPIANTI ELETTRICI 
+–  prima dell'inizio giornaliero degli spettacoli il personale autorizzato deve control-
+lare il regolare funzionamento delle apparecchiature elettriche;
+–  il funzionamento degli apparecchi utilizzatori deve essere controllato quando gli
+stessi vengono rimessi in funzione dopo un lungo periodo di inattività;
+–  prima dell'inizio della stagione degli spettacoli, e in ogni caso almeno una volta
+all'anno, tutto l'impianto elettrico deve essere attentamente ispezionato;
+–  il personale autorizzato deve annotare, in un apposito registro, i controlli fatti, i risul-
+tati delle ispezioni periodiche e di ogni modifica o incidente inerente l'impianto elettrico.
+13.3  Esami a vista
+L'esame a vista va eseguito prima delle prove, con l'impianto, di regola, fuori ten-
+sione. Per gli impianti utilizzatori BT soggetti alla norma CEI 64-8 questo esame ha lo
+scopo di accertare che i componenti elettrici installati siano conformi alle prescrizioni di
+sicurezza delle relative norme, che siano stati scelti correttamente e messi in opera in
+accordo con le prescrizioni della norma CEI 64-8 e che non siano visibilmente danneg-
+giati in modo da comprometterne la sicurezza.
+L'esame a vista, condotto con le modalità stabilite dalla guida CEI 64-14, deve riguar-
+dare i seguenti punti, nell'ambito di applicabilità degli stessi all'installazione oggetto della
+verifica:
+–  metodi di protezione contro i contatti diretti e indiretti;
+–  metodi di protezione contro la propagazione del fuoco e contro gli effetti termici;
+–  scelta dei conduttori in riferimento alla portata e alla caduta di tensione;
+–  scelta e taratura dei dispositivi di protezione e di segnalazione;
+–  presenza e corretta messa in opera dei dispositivi di sezionamento e di comando;
+–  scelta dei componenti elettrici e delle misure di protezione in relazione alle
+influenze esterne;
+–  identificazione dei conduttori di neutro e di protezione (colori delle anime);
+–  presenza di schemi, di cartelli monitori e di informazioni analoghe;
+–  identificazione dei circuiti, dei fusibili, degli interruttori, dei morsetti ecc.;
+–  idoneità delle connessioni dei conduttori;
+–  agevole accessibilità dell'impianto per interventi operativi e di manutenzione.
+13.4  Prove
+Per gli impianti elettrici utilizzatori BT soggetti alla norma CEI 64-8 vanno eseguite
+le prove indicate nella sezione 612 della norma CEI 64-8/6, da effettuare in funzione della
+loro applicabilità all'impianto oggetto della verifica e, preferibilmente, nell'ordine indi-
+cato dalla norma (Tab. X.13.2).
+Fig. X.13.1   Schema generale per la prova di continuità di un conduttore di protezione
+e/o equipotenziale. La prova ha esito positivo se l'amperometro rileva la corrente, segno
+che il conduttore non è interrotto.
+A
+G
+U = 4  24 V
+(c.a. o c.c.)
+conduttore in prova
+I = 0,2 A
+
+[PAG 1101]
+IMPIANTI  ELETTRICI                                               X-251
+Tab. X.13.2  Prove da effettuare su impianti elettrici utilizzatori BT (norma CEI 64-8/6)
+Prova
+Caratteristiche
+Continuità dei conduttori di prote-
+zione, equipotenziali principali e sup-
+plementari
+Serve per valutare la continuità del conduttore, del quale
+non deve essere misurata la resistenza. Si effettua con cor-
+rente di prova  0,2 A, in c.a. o c.c. con tensione compresa
+tra 4 V e 24 V a vuoto (Fig. X.13.1)
+Resistenza d'isolamento dell'impianto
+elettrico
+Va eseguita tra ogni conduttore attivo e la terra, in c.c., con
+gli utilizzatori disinseriti. I valori della tensione di prova e
+quelli minimi della resistenza d'isolamento sono riportati
+nella Tab. X.13.3 
+Separazione 
+dei 
+circuiti 
+(SELV,
+PELV, separazione elettrica)
+Va effettuata misurando la resistenza di isolamento tra le
+parti separate, in accordo con i valori della Tab. X.13.3
+Resistenza d'isolamento di pavimenti
+e pareti
+Va effettuata solo quando viene usata la protezione contro i
+contatti indiretti mediante luoghi non conduttori.  
+Interruzione automatica dell'alimenta-
+zione
+Sono le prove che servono a verificare l'efficacia della pro-
+tezione contro i contatti indiretti ottenuta con questo metodo
+(Tab. X.13.4)
+Di polarità
+Consiste nel verificare la giusta polarità dei conduttori attivi
+(fase e neutro). Serve, nei casi in cui è vietato installare
+dispositivi di protezione sul neutro, a verificare che tali
+dispositivi siano installati solo sulle fasi
+Di tensione applicata
+Va effettuata in casi molto particolari, quando si installano
+componenti non costruiti in fabbrica e che non siano stati
+sottoposti a prove di tipo
+Di funzionamento
+Si applica alle unità costituite da diversi componenti (per es.
+un motore con il relativo avviatore), per verificarne il fun-
+zionamento, il corretto montaggio e installazione e la rego-
+lazione dei dispositivi di protezione
+Protezione contro gli effetti termici
+I metodi di prova normalizzati sono allo studio
+Caduta di tensione
+I metodi di prova normalizzati sono allo studio
+Tab. X.13.3   Tensioni di prova e valori minimi della resistenza di isolamento (norma CEI
+64-8/6)
+Tensione nominale del circuito
+Tensione di prova c.c. (1) 
+(V)
+Resistenza di isola-
+mento (M)
+Sistemi SELV e PELV
+250
+ 0,25
+Fino a 500 V compresi (eccetto SELV e PELV)
+500
+ 0,5
+Oltre 500 V
+1000
+ 1,0
+(1) L'apparecchio di prova deve fornire la tensione di prova quando eroga la corrente di 1 mA.
+
+[PAG 1102]
+X-252
+  IMPIANTI ELETTRICI 
+Fig. X.13.2   Schema voltamperometrico per la misura della resistenza di terra e curva di
+distribuzione del potenziale.
+13.5  Misura della resistenza di terra
+Il metodo generale di misura è quello voltamperometrico, riportato nella Fig. X.13.2,
+che impiega un dispersore ausiliario (DA) e una sonda di tensione (SV). Se si utilizzano
+apparecchiature appositamente dedicate, nelle quali è già incorporato il generatore, lo
+schema può differire parzialmente da quello di figura.
+Il dispersore in prova e quello ausiliario devono essere sufficientemente lontani tra
+loro da risultare indipendenti, in modo che le due curve di distribuzione del potenziale di
+terra, di segno opposto a causa del diverso senso di circolazione della corrente, abbiano
+una zona intermedia a potenziale zero.
+Tab. X.13.4   Verifica della protezione contro i contatti indiretti
+Sistema 
+Prove da effettuare
+TN
+Misura dell'impedenza dell'anello di guasto.
+Verifica delle caratteristiche del dispositivo di protezione associato, mediante:
+- esame a vista per gli interruttori automatici e i fusibili;
+- esame a vista e prove di funzionamento per i differenziali.
+TT
+Misura della resistenza di terra per le masse dell'impianto.
+Verifica delle caratteristiche del dispositivo di protezione associato, mediante:
+- esame a vista e analisi delle caratteristiche d'intervento per i dispositivi di protezione
+contro le sovracorrenti (fusibili, interruttori automatici);
+- esame a vista e prove di funzionamento per i differenziali.
+Verifica della continuità dei conduttori di protezione.
+IT
+Calcolo o misura della corrente di primo guasto.
+Prove previste per il sistema TT quando, in occasione di un secondo guasto, si presen-
+tino le condizioni proprie di questo sistema.
+Prove previste per il sistema TN quando, in occasione di un secondo guasto, si presen-
+tino le condizioni proprie di questo sistema.
+A
+V
+IE
+d
+SV
+DA
+IE
+UE
+Iv = 0
+
+
+[PAG 1103]
+IMPIANTI  ELETTRICI                                               X-253
+In questa zona va posizionata la sonda SV; operativamente ci si accorge che la sonda è
+nella giusta posizione se la tensione misurata risulta pressoché costante per piccoli sposta-
+menti della stessa.
+In genere si può considerare la sonda di tensione in posizione idonea quando è situata
+a una distanza dal dispersore pari a circa 2,5 volte la dimensione dello stesso. Per impianti
+di terra complessi, costituiti da più dispersori, la distanza va commisurata alla dimensione
+massima della rete disperdente.
+La resistenza di terra è data dal rapporto
+(X.13.1)
+tra la tensione e la corrente misurate. Alcuni strumenti costruiti appositamente per questa
+prova danno direttamente il valore della resistenza.
+Per le misure su dispersori associati a sistemi di II e III categoria (per es. impianti con
+cabina propria), la corrente di prova deve avere un valore significativo, possibilmente non
+inferiore all'1% di quella di terra, con un minimo di 5 A per sistemi a neutro isolato (II
+categoria) e 50 A per sistemi con neutro a terra (III categoria).
+Quando non è possibile disporre dello spazio sufficiente e del terreno adatto per posi-
+zionare il dispersore ausiliario e la sonda di tensione, si può usare il circuito di prova di
+Fig. X.13.3, in cui è presente un resistore di resistenza nota R collegato all'ingresso
+dell'impianto utilizzatore, tra una fase e il collettore di terra CT, e un voltmetro ad alta
+impedenza.
+Fig. X.13.3   Misura della resistenza globale di terra.
+Con questo metodo si misura, in realtà, la resistenza globale di terra (resistenza
+dell'anello di guasto Rs), comprendente, oltre alla RE, anche la resistenza dei cavi, del tra-
+sformatore e quella di terra del neutro.
+Nei sistemi TT essa è circa pari a RE, essendo di solito trascurabili gli altri termini.
+Misurando con il voltmetro, immediatamente una dopo l'altra per evitare variazioni di
+alimentazione, le tensioni U0 (tensione verso terra a vuoto, con l'interruttore aperto) e UR
+(c.d.t. su R, con interruttore chiuso), la resistenza globale di terra è data da:
+(X.13.2)
+RE
+UE
+IE
+------
+=
+L1
+L2
+L3
+N
+R
+V
+CT
+Iv = 0
+
+RE
+REN
+U0
+Rs
+RE
+
+R
+U0
+UR
+------
+1
+–
+
+
+
+
+=
+
+[PAG 1104]
+X-254
+  IMPIANTI ELETTRICI 
+13.6  Misura dell'impedenza dell'anello di guasto
+Nei sistemi TN la misura dell'impedenza Zs può essere effettuata mediante due
+metodi.
+a) Metodo dell'alimentazione separata (Fig. X.13.4)
+Fig. X.13.4   Misura dell'impedenza dell'anello di guasto mediante alimentazione sepa-
+rata.
+La prova si effettua con l'alimentazione ordinaria interrotta e col primario del trasfor-
+matore cortocircuito, alimentando il circuito di prova con un generatore separato in c.a.
+L'impedenza dell'anello di guasto si calcola eseguendo il rapporto
+(X.13.3)
+tra la tensione U e la corrente I di prova misurate.
+b) Metodo della caduta di tensione
+È un metodo accettabile quando la reattanza del circuito di guasto è trascurabile
+rispetto alla sua resistenza. In questo caso si ricade nella misura della resistenza
+dell'anello di guasto Rs già trattato (Par. 13.5, Fig. X.13.3). Pur con una certa approssima-
+zione si può ritenere:
+(X.13.4)
+13.7  Verifica dell'impianto di terra per impianti utilizzatori con cabina propria
+Per questi impianti valgono le prescrizioni della norma CEI 11-1 (impianti elettrici
+con tensione superiore a 1 kV in c.a.). Le prove previste per la verifica dell'efficienza
+dell'impianto di terra  sono:
+–  verifica della continuità dei conduttori di terra;
+–  misura della resistenza di terra;
+–  misura, se necessaria, delle tensioni di contatto ed, eventualmente, di passo.
+Le misure devono essere fatte, per quanto possibile, nelle ordinarie condizioni di fun-
+zionamento.
+L1
+L2
+L3
+N
+V
+PE
+G
+A
+Zs
+U
+I---
+=
+Zs
+Rs
+
+R
+U0
+UR
+------
+1
+–
+
+
+
+
+=
+
+[PAG 1105]
+IMPIANTI  ELETTRICI                                               X-255
+Sulla periodicità delle verifiche e sulla misura della resistenza di terra vale quanto già
+detto (Par. X.13.2 e Par. X.13.5).
+La misura delle tensioni di contatto e di passo non deve essere eseguita quando è
+rispettata la condizione RE  (UTPIFC) (Par. X.10.8), da verificare dopo aver misurato la
+resistenza di terra. Se tale condizioni non è verificata vanno misurate le tensioni di con-
+tatto e di passo, da confrontare con i valori ammessi dalla norma.
+Il generico circuito di misura è riportato nella Fig. X.13.5. Per la conduzione della
+prova devono essere rispettate varie prescrizioni, di cui si riportano le principali:
+–  i voltmetri devono avere resistenza interna di 1 k, in modo da simulare la pre-
+senza del corpo umano;
+–  la superficie di ogni elettrodo deve essere di 200 cm2 (prescritti 400 cm2 totali), per
+simulare la superficie dei piedi;
+–  gli elettrodi devono essere premuti contro il suolo con una forza di almeno 250 N
+ciascuno (è prescritta la forza minima di 500 N, corrispondente a un peso minimo conven-
+zionale del corpo umano);
+–  la corrente da immettere nel terreno deve essere non inferiore all'1% di quella di
+dimensionamento dell'impianto (IFC), con un minimo di 50 A per sistemi con neutro a
+terra e 5 A per sistemi con neutro isolato;
+–  il riporto delle indicazioni del voltmetro al valore effettivo della corrente di terra va
+fatto mediante proporzionalità lineare.
+Fig. X.13.5   Misura delle tensioni di contatto e di passo.
+14  CENTRALI ELETTRICHE DI PRODUZIONE E STAZIONI ELETTRICHE
+14.1  Produzione dell'energia elettrica
+Produrre energia elettrica significa trasformare in elettrica dell'energia già esistente
+sotto altra forma, ossia attuare una conversione energetica.
+La forma iniziale di energia dalla quale, dopo una o più trasformazioni, si ottiene
+A
+O
+V
+tensione di contatto
+tensione di passo
+V
+M
+1 m
+E
+E
+E
+E
+1 m
+DA
+DT
+DT
+D
+ 5D
+M
+Massa in prova 
+DT Dispersori dell'impianto di terra
+E 
+Elettrodi 
+DA Dispersore ausiliario
+D 
+Dimensione massima dell'impianto di 
+terra
+
+[PAG 1106]
+X-256
+  IMPIANTI ELETTRICI 
+energia elettrica è detta energia primaria. Si parla di conversione diretta quando il pro-
+cesso di produzione non prevede forme intermedie di energia (per es. una pila che produce
+energia direttamente sotto forma elettrica) e di conversione indiretta quando, invece, il
+processo prevede una o più forme intermedie di energia (per es. l'energia meccanica
+all'uscita di una turbina idraulica).
+Le fonti di energia sono dette rinnovabili periodicamente quando la loro disponibilità
+viene ripristinata da eventi naturali (per es. i deflussi idrici) e non rinnovabili se si esauri-
+scono con l'utilizzo (per es. il carbone o il gas naturale).
+Le principali fonti primarie e le trasformazioni che subiscono nel processo di produ-
+zione dell'energia elettrica sono indicate nello schema di Fig. X.14.1.
+Fig. X.14.1   Schema della produzione di energia elettrica dalle principali fonti primarie.
+A seconda dell'energia primaria sfruttata, le principali centrali elettriche di produ-
+zione si dividono in:
+–  centrali idroelettriche che utilizzano l'energia idraulica delle masse d'acqua rac-
+chiuse in bacini di accumulo o fluenti nei corsi d'acqua;
+–  centrali termoelettriche che utilizzano l'energia chimica dei combustibili di origine
+fossile (olio combustibile, carbone, gas naturale);
+–  centrali nucleotermoelettriche che sfruttano l'energia dei combustibili nucleari
+mediante la reazione di fissione.
+Vi sono poi delle fonti primarie la cui utilizzazione è ancora alquanto limitata; il loro
+sfruttamento è da considerare come integrativo e non sostitutivo di quelli tradizionali, come
+le centrali geotermoelettiche che utilizzano il calore endogeno dei fluidi sotterranei, le cen-
+trali solari che effettuano sia la conversione diretta (celle fotovoltaiche) che indiretta
+dell'energia solare, le centrali eoliche che utilizzano l'energia delle masse d'aria, le centrali
+che utilizzano l'energia del mare, prevalentemente sotto forma di maree (centrali mareo-
+motrici) e quelle che sfruttano i combustibili non tradizionali, i rifiuti urbani, il biogas.
+fonti primarie di energia
+combustibili
+tradizionali
+vapori
+endogeni
+combustibili
+nucleari
+deflussi
+idrici
+energia
+termica
+energia di
+posizione
+energia
+meccanica
+energia
+elettrica
+
+[PAG 1107]
+IMPIANTI  ELETTRICI                                               X-257
+In Italia la quasi totalità della potenza di generazione installata riguarda le centrali ter-
+moelettiche (68% circa) e idroelettriche (31% circa). Per quanto riguarda la produzione,
+nella Tab. X.14.1 è riportato il bilancio energetico per l'anno 2000, da cui si vede che la
+maggior parte della produzione viene effettuata da centrali termoelettriche. Non è trascu-
+rabile (15% circa) il saldo estero, ossia la quota di energia importata.
+Servizio di base e di punta
+L'intera rete di produzione nazionale viene gestita in funzione dei diagrammi di carico
+giornalieri, che indicano la potenza richiesta nelle varie ore e di cui sono riportati due
+esempi nelle Figg. X.14.2 e X.14.3.
+Le centrali che, funzionando continuamente e con potenza pressoché costante, assicu-
+rano la potenza di base PB espletano il servizio di base; quelle che invece vengono inserite
+Tab. X.14.1   Bilancio dell'energia elettrica in Italia nel 2000 (fonte: Grtn spa)
+Descrizione voci
+Energia elettrica (TWh)
+%
+Produzione idroelettrica
+Produzione termoelettrica
+Produzione eolica, fotovoltaica e geotermoelettrica
+Totale produzione lorda
+Detratto energia destinata ai servizi della produzione
+Detratto energia destinata ai pompaggi
+Produzione netta nazionale destinata al consumo
+Saldo estero importazioni  esportazioni
+Fabbisogno anno 2000
+50,277
+219,016
+5,136
+274,429
+12,087
+8,983
+253,359
+44,347
+297,706
+16,9
+73,6
+1,7
+92,2
+4,1
+3,0
+85,1
+14,9
+100,0
+Fig. X.14.2   Esempio di diagramma di
+carico in un giorno di punta massima. A:
+punte di carico; B: carico base; C: ecce-
+denza.
+Fig. X.14.3   Esempio di diagramma di
+carico in un giorno di punta minima.
+P (GW)
+50
+40
+30
+20
+10
+0
+6
+12
+18
+24
+t (h)
+PB
+A
+B
+C
+P (GW)
+30
+20
+10
+0
+6
+12
+18
+24
+t (h)
+
+[PAG 1108]
+X-258
+  IMPIANTI ELETTRICI 
+nella produzione solo nelle ore e nei periodi in cui si verificano le punte di carico, sono
+adibite al servizio di punta. Il requisito principale che devono avere è un piccolo valore
+del tempo di messa in servizio, dell'ordine dei minuti; tipiche centrali per il servizio di
+punta sono quelle idroelettriche.
+14.2  Centrali idroelettriche
+Energia e potenza
+L'energia posseduta da una massa d'acqua di peso unitario (1 N), peso specifico
+ = 9,81 N/m3, posta a una quota z (m) rispetto al piano di riferimento, avente una pres-
+sione p (N/m2) e una velocità v (m/s) è detta prevalenza, si misura in metri ed è rappresen-
+tata dal trinomio di Bernoulli:
+(X.14.1)
+nel quale i vari termini rappresentano le energie unitarie di posizione (z, altezza geode-
+tica), di pressione (p, altezza piezometrica) e cinetica (v2/2g, altezza cinetica).
+La potenza elettrica netta Pe erogata dal generatore di una centrale funzionante con
+prevalenza H, portata volumetrica Qv (m3/s) e rendimento  è data da:
+(X.14.2)
+A seconda dei valori assunti da H e da Qv si distinguono gli impianti a bassa, media e
+alta caduta (H < 20 m, H < 250 m e H > 250 m) e quelli di piccola, media e grande portata
+(Qv < 10 m3/s, Qv < 100 m3/s, Qv > 100 m3/s).
+Esempio 1
+La potenza ottenibile da un impianto avente H = 250 m, Qv = 25 m3/s e funzionante
+con rendimento 0,84 è pari a:
+Trasformazioni energetiche
+Le parti principali che concorrono alla trasformazione dell'energia idraulica in elet-
+trica sono (Fig. X.14.4) sono:
+–  le condotte forzate che convogliano l'acqua alla turbina e nelle quali l'energia idrau-
+lica prevalentemente di posizione presente nella sezione di imbocco si trasforma in ener-
+gia idraulica prevalentemente di pressione all'uscita;
+–  la turbina idraulica che trasforma l'energia idraulica in energia meccanica di rotazione;
+–  il generatore elettrico che trasforma l'energia meccanica in elettrica.
+Fig. X.14.4   Trasformazioni energetiche in una centrale idroelettrica.
+H
+z
+p
+--
+v2
+2g
+-----
++
++
+=
+Pe
+QvH
+=
+Pe
+QvH
+9,81
+103
+
+0,84
+
+25
+
+250
+
+51,5 MW
+=
+=
+=
+condotte
+forzate
+turbina
+alternatore
+A
+B
+C
+D
+A Energia potenziale idraulica
+prevalentemente di posizione
+B Energia potenziale idraulica
+prevalentemente di pressione
+C Energia cinetica meccanica
+di rotazione
+D Energia elettrica
+
+[PAG 1109]
+IMPIANTI  ELETTRICI                                               X-259
+Tipi di centrale
+Le centrali idroelettriche possono essere di due tipi fondamentali:
+–  centrali ad acqua fluente (Fig. X.14.5) che sfruttano la portata di un corso d'acqua
+tra due punti fra i quali esiste un naturale dislivello, senza creare opere di sbarramento se
+non quelle per la derivazione dell'acqua;
+–  centrali a serbatoio (Fig. X.14.6) che si basano sulla creazione di un invaso otte-
+nuto mediante una diga e dal quale l'acqua viene portata alla centrale mediante un sistema
+formato dalle opere di presa, dal canale derivatore e dalle condotte forzate; spesso è pre-
+sente anche un pozzo piezometrico avente il compito di permettere le oscillazioni di
+livello dell'acqua in occasione di brusche chiusure dell'impianto, limitando le sollecita-
+zioni dovute al colpo d'ariete.
+Fig. X.14.5   Schema di una centrale ad acqua fluente.
+Fig. X.14.6   Centrale a serbatoio ad alta caduta.
+Turbine idrauliche
+Le turbine idrauliche sono composte da due parti principali, dette distributore e
+girante, e si dividono in due categorie:
+–  turbine ad azione (Pelton) nel cui distributore avviene la trasformazione completa
+dell'energia potenziale di pressione in cinetica;
+–  turbine a reazione (Francis, a elica, Kaplan) in cui la trasformazione dell'energia
+potenziale di pressione in cinetica avviene parte nel distributore e parte nella girante.
+OP
+CD
+BC
+CF
+CI
+CS
+pendenza del
+corso d’acqua
+OP Opere di presa
+BC Bacino di carico
+CI Centrale idroelettrica
+CD Canale derivatore
+CF Condotte forzate
+CS Canale di scarico
+S
+OP
+D
+CD
+PP
+CF
+C
+SC
+H
+S 
+Serbatoio
+D 
+Diga
+PP Pozzo piezometrico
+C 
+Centrale
+OP Opera di presa
+CD Canale derivatore
+CF Condotte forzate
+SC Scarico
+H 
+Salto naturale
+
+[PAG 1110]
+X-260
+  IMPIANTI ELETTRICI 
+La turbina Pelton è adatta per alte cadute (H  200  300 m) e portate modeste; può
+essere montata con l'asse orizzontale o verticale. La regolazione della portata avviene
+mediante lo spostamento della spina all'interno dell'ugello del distributore.
+La turbina Francis è adatta per salti medi o bassi (H da 10 a 600 m) e portate elevate;
+può essere montata sia con l'asse orizzontale che verticale. La regolazione della portata
+avviene variando l'inclinazione delle pale del distributore.
+Le turbine a elica e Kaplan sono sempre ad asse verticale e sono adatte per basse
+cadute (H da 1 a 30 m) ed elevate portate. Nella turbina Kaplan, a differenza di quella a
+elica, le pale sono orientabili per adeguare la geometria della girante a quella del distribu-
+tore quando viene variata la portata.
+Le principali grandezze caratteristiche di una turbina sono il grado di reazione, il
+numero di giri caratteristico e il rendimento.
+Il grado di reazione rappresenta il rapporto tra l'energia potenziale di pressione
+all'uscita del distributore e quella all'ingresso; il suo valore varia da 0 (Pelton) a 1 per una
+turbina totalmente a reazione (valore limite teorico, in realtà arriva a 0,8).
+Il numero di giri caratteristico è dato, in funzione della velocità di rotazione n (giri/
+minuto), della potenza P della turbina (kilowatt) e della prevalenza H (metri), dalla relazione:
+(X.14.3)
+Esso rappresenta il numero di giri che deve avere una turbina, che sia  geometrica-
+mente simile a quella considerata, per sviluppare la potenza unitaria con un salto unitario
+(Tab. X.14.2).
+Il rendimento è il rapporto tra la potenza in uscita e quella in ingresso e dipende dalle
+perdite che si hanno nella turbina. Esso varia in funzione del grado di apertura  del
+distributore, pari al rapporto tra la sezione di efflusso effettiva e quella massima possibile,
+con il distributore tutto aperto. Il suo andamento dipende dal tipo di turbina (Fig. X.14.7).
+Le turbine che hanno un rendimento elevato per un'ampia gamma di valori di  (Pelton,
+Kaplan) hanno una buona elasticità di funzionamento e sono adatte per le applicazioni che
+richiedono frequenti variazioni della portata. I valori del rendimento a carico nominale
+vanno da 0,83 a 0,94.
+Centrali di generazione e pompaggio
+Sono centrali idroelettriche che sfruttano serbatoi superiori di limitata capacità, insuf-
+ficienti ad assicurare la produzione di energia elettrica per lungo tempo. Esse funzionano
+secondo due fasi distinte:
+–  nella fase di generazione producono energia elettrica che viene immessa nella rete
+elettrica nei periodi di maggiore richiesta;
+Tab. X.14.2   Grandezze caratteristiche dei vari tipi di turbina
+Tipo
+Numero di giri caratteristico
+Salto (m)
+Grado di reazione
+Pelton
+Francis lenta
+Francis normale
+Francis veloce
+Elica
+Kaplan
+20  60
+50  60
+85  130
+130  350
+350  600
+350  1000
+300  2000
+100  600
+50  200
+10  100 
+1  30
+1  30
+0
+0,3  0,4
+0,4  0,5
+0,5  0,6
+0,7  0,8 
+0,7  0,8
+nc
+n
+P
+H
+H
+4
+-------------
+=
+
+[PAG 1111]
+IMPIANTI  ELETTRICI                                               X-261
+–  quando vi è minore richiesta di energia elettrica (ore notturne, giorni festivi) effet-
+tuano il pompaggio dell'acqua dal serbatoio inferiore a quello superiore, per ripristinare
+l'invaso; durante questa fase assorbono energia elettrica dalla rete.
+Fig. X.14.7   Grafico comparativo delle curve del rendimento delle varie turbine idrauliche.
+Si possono usare diverse disposizioni delle macchine, precisamente:
+–  gruppi quaternari (poco usati) composti da una turbina e da un alternatore per la
+generazione e da una pompa e da un motore elettrico per il pompaggio;
+–  gruppi ternari (per es. nella centrale di Roncovalgrande) composti da  alternatore
+(che funziona da motore durante il pompaggio), turbina e pompa;
+–  gruppi binari (per es. nella centrale di Edolo) composti da una turbo-pompa rever-
+sibile e da un alternatore che può funzionare anche da motore.
+14.3  Centrali termoelettriche
+Energia e potenza
+Per queste centrali l'energia primaria è quella potenziale chimica del combustibile,
+che si trasforma in calore durante la combustione. Per la valutazione dell'energia termica
+prodotta si fa riferimento al potere calorifico inferiore Pci del combustibile (Tab. X.14.3),
+pari all'energia termica netta prodotta nella combustione completa dell'unità di massa o di
+volume.
+Indicando con Pe la potenza elettrica prodotta dalla centrale e con e il rendimento
+effettivo di tutto il processo di trasformazione, la potenza termica Pt che deve essere svi-
+luppata nella combustione per produrre Pe è data da:
+(X.14.4)
+Tab. X.14.3   Valori indicativi medi del p.c.i. di alcuni combustibili
+Solidi
+Liquidi
+Aeriformi
+Tipo
+p.c.i. (MJ/kg)
+Tipo
+p.c.i. (MJ/kg)
+Tipo
+p.c.i. (MJ/m3)
+Legna secca
+Carbone di legna
+Lignite picea
+Carbone coke
+15
+30
+23
+30
+Nafta
+Olio combustibile
+Gasolio
+41
+41
+43
+Metano
+Etano
+Propano
+36
+64
+93
+0
+0,5
+1
+0,2
+0,4
+0,6
+0,8
+
+
+1
+2
+3
+4
+1 Pelton
+2 Kaplan
+3 Francis
+4 Elica
+Pt
+Pe
+e
+-----
+=
+
+[PAG 1112]
+X-262
+  IMPIANTI ELETTRICI 
+Essa è chiamata anche carico termico orario in quanto, moltiplicata per il tempo di
+1 h, rappresenta l'energia termica occorrente per ogni ora di funzionamento della centrale.
+A causa delle elevate perdite di potenza che si hanno nel processo di conversione
+dell'energia termica in elettrica, di cui le più rilevanti avvengono nel gruppo turbina-con-
+densatore, il rendimento effettivo delle centrali termoelettriche è sempre piuttosto basso,
+pari a e  0,30  0,44.
+Si definisce carico termico specifico (o energia termica specifica) l'energia termica
+necessaria per produrre il valore unitario di energia elettrica. È dato da:
+(X.14.5)
+Il consumo orario di combustibile della centrale dipende dal potere calorifico del
+combustibile impiegato ed è dato dal rapporto:
+(X.14.6)
+Il consumo specifico di combustibile Qs rappresenta la massa (o il volume) di combu-
+stibile che occorre bruciare per produrre 1 kWh di energia elettrica:
+(X.14.7)
+Esempio 2
+Per un gruppo termoelettrico avente Pe = 320 MW, e = 0,4 e funzionante con olio
+combustibile (Pci = 41 MJ/kg), si ha:
+L'esempio mostra i rilevanti valori del consumo di combustibile.
+Trasformazioni energetiche
+Le trasformazioni necessarie per ottenere energia elettrica in una centrale termoelet-
+trica a vapore sono (schema di Fig. X.14.8):
+–  trasformazione dell'energia del combustibile in energia termica e di pressione con-
+ferita al vapore; si ottiene dall'ebollizione dell'acqua nella caldaia;
+–  ottenimento di energia meccanica cinetica di rotazione mediante l'espansione del
+vapore nella turbina; all'uscita della turbina il vapore viene condensato per raffredda-
+mento nel condensatore e l'acqua viene rimandata in circolazione;
+Cs
+Pt
+Pe
+-----
+1
+e
+-----
+=
+=
+Qc
+kg
+h-----
+
+
+
+
+3600 Pt
+Pci
+-----------------
+=
+Qs
+kg
+kWh
+-----------
+
+
+
+
+Qc kg
+h
+
+
+
+Pe kW
+
+
+--------------------------
+=
+Pt
+Pe
+e
+-----
+320
+0,4
+--------
+800 MW
+=
+=
+=
+Cs
+1
+e
+-----
+1
+0,4
+------
+2,5
+=
+=
+=
+Qc
+3600 Pt
+Pci
+-----------------
+3600
+800
+
+106
+
+41
+106
+
+--------------------------------------------
+70 224 kg
+h-----
+=
+=
+=
+Qs
+Qc
+Pe
+------
+70 224
+320
+106
+
+------------------------
+0,22 kg
+kWh
+
+
+=
+=
+
+[PAG 1113]
+IMPIANTI  ELETTRICI                                               X-263
+–  trasformazione dell'energia meccanica in elettrica per mezzo di un generatore tri-
+fase (alternatore).
+Fig. X.14.8   Schema delle trasformazioni energetiche in un centrale termoelettrica a vapore.
+Per l'attuazione del ciclo termico sono necessari, oltre alla caldaia, alla turbina e al
+condensatore, altri scambiatori termici per il preriscaldamento dell'aria comburente, per il
+risurriscaldamento del vapore e per il preriscaldamento dell'acqua. Lo schema completo è
+riportato nella Fig. X.14.9.
+Fig. X.14.9   Schema del ciclo acqua-vapore con surriscaldamento e spillamenti. Compo-
+nenti: CAL: caldaia; GV: generatore di vapore; P: preriscaldatore dell'aria; S: surriscalda-
+tore del vapore; RS: risurriscaldatore del vapore; T: turbina (divisa negli stadi di alta,
+media e bassa pressione); A: alternatore; C: condensatore; PE: pompa di estrazione del
+condensato; PBP: preriscaldatori bassa pressione; PMP: preriscaldatori media pressione;
+DEG: degasatore; PAP: preriscaldatori alta pressione; PA: pompa di alimentazione;
+E: economizzatore. Sostanze: C: combustibile; AC: aria comburente; F: fumi; AR: acqua
+di refrigerazione; AI: acqua di integrazione; V: vapore.
+Per aumentare il rendimento la turbina viene divisa in più stadi e il vapore, dopo
+l'espansione nello stadio di alta pressione, viene rimandato in caldaia per il risurriscalda-
+caldaia e
+accessori
+turbina
+alternatore
+A
+B
+C
+D
+A Energia del combustibile
+B Energia termica e di pressione del vapore
+C Energia meccanica cinetica di rotazione
+D Energia elettrica
+F
+F
+P
+AC
+C
+GV
+E
+CAL
+S
+RS
+T
+AP
+MP
+B P
+S1
+S2 S3 S4 S5
+A
+C
+AR
+S1 ÷ 5
+AI
+PE
+S1
+S2
+S3
+S4
+S5
+PAP
+PA
+PMP
+DEG
+PBP
+14,5 MPa
+3 MPa
+5 kPa
+33 °C
+12,7 MPa / 540 °C
+3,2 MPa / 400 °C
+3 MPa / 540 °C
+G
+3
+V
