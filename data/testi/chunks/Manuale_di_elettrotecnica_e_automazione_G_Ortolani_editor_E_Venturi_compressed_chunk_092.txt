@@ -1,0 +1,1580 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 92/116 ===
+Chars: 44,041 | Offset: 4,019,446
+
+
+
+[PAG 1838]
+XVIII-20
+ELETTRONICA DI POTENZA
+consente una soluzione economica e facile per limitare i problemi (Fig. XVIII.1.24).
+Fig. XVIII.1.24  Connessione inverter-motore tramite filtri LCR.
+Il filtro passa basso viene dimensionato in modo tale che la frazione della tensione 
+continua generata dall’inverter arrivi al motore senza ostacoli, cioè con una caduta di ten-
+sione trascurabile ai capi del filtro, e, contemporaneamente, diminuisca lo slew rate del 
+fronte di salita e discesa della tensione applicata. Tipicamente un filtro diminuisce fino a 
+20 volte il fattore 
+. 
+1.10  Considerazioni termiche
+Il valore massimo della potenza dissipabile da un semiconduttore dipende dalle carat-
+teristiche costruttive del dispositivo ed è limitata dal valore massimo della temperatura che 
+può sopportare la giunzione: tipicamente una temperatura compresa tra 150 ºC e 225 ºC. 
+La temperatura di giunzione può aumentare o perché aumenta la temperatura ambiente, 
+oppure per autoriscaldamento durante il normale funzionamento.
+L’equilibrio termico o regime termico viene raggiunto quando la potenza dissipata nel 
+semiconduttore eguaglia quella trasmessa all’ambiente. Per ogni dispositivo a semicondut-
+tore il costruttore stabilisce il valore massimo di temperatura di funzionamento; sperimen-
+talmente, si dimostra che, a regime, l’aumento della temperatura del dispositivo rispetto 
+alla temperatura ambiente è legato alla potenza dissipabile tramite la seguente relazione:
+(XVIII.1.6)
+dove:
+TJ è la temperatura della giunzione;
+Tamb è la temperatura ambiente;
+Rth è la resistenza termica solitamente espressa in ºC/W;
+PD è la potenza totale dissipata dal dispositivo a semiconduttore.
+Per ridurre il valore della resistenza termica, e quindi migliorare la trasmissione del 
+calore dal dispositivo all’ambiente, si utilizzano delle piastre di raffreddamento, chiamate 
+anche dissipatori. Questi vengono fissati agli elementi attivi tramite mezzi meccanici ed 
+uno strato di materiale siliconico che consente di trascurare il valore di resistenza termica 
+tra il dispositivo attivo ed il dissipatore. 
+Si riportano nella Fig. XVIII.1.25 le caratteristiche di alcuni dissipatori per semicon-
+duttori di potenza, con indicato il valore della loro resistenza termica.
+È risaputo che la densità dell’aria, e quindi la sua capacità di raffreddamento, diminu-
+isce con l’altezza. Ne consegue che la resistenza termica di ogni dissipatore del calore in 
+aria aumenta con l’altitudine. Fino ad una altezza di 1000 m tale aumento risulta trascura-
+bile, ma per altitudini superiori non lo è più. 
+INVERTER
+C
+L
+R
+C
+C
+R
+R
+L
+L
+M
+dU dt
+
+TJ-Tamb
+Rth PD
+
+=
+
+[PAG 1839]
+ELETTRONICA DI POTENZA
+XVIII-21
+Fig. XVIII.1.25   Dissipatore per semiconduttore di potenza prodotto da Semikron.
+
+[PAG 1840]
+XVIII-22
+ELETTRONICA DI POTENZA
+La Fig. XVIII.1.26 mostra il rapporto tra la resistenza termica ad una determinata alti-
+tudine e quella di riferimento al livello del mare.
+Fig. XVIII.1.26  Rapporto tra RthA e Rth0.
+2  CONVERSIONE DELLA CORRENTE ELETTRICA
+Vengono di seguito illustrati i metodi che consentono di effettuare la conversione 
+dell’energia elettrica presente come tensione alternata in tensione continua e viceversa. 
+Oggigiorno entrambe le conversioni vengono effettuate tramite convertitori statici; la 
+conversione da tensione alternata in tensione continua avviene tramite i raddrizzatori rea-
+lizzati a loro volta con dispositivi a semiconduttore quali i diodi, mentre la conversione 
+della tensione da continua ad alternata avviene tramite apparecchiature elettroniche deno-
+minate inverter. La conversione statica, in contrapposizione all’obsoleta conversione 
+dinamica tramite macchine rotanti, presenta vantaggi notevoli in termini di facilità di 
+installazione, compattezza, rendimento.
+Il rendimento riveste un ruolo particolare viste le considerevoli potenze che questi 
+dispositivi sono in grado di alimentare: un valore basso di rendimento comporta, oltre ad 
+una perdita economica in termini di energia, anche la difficoltà legata allo smaltimento 
+della stessa sotto forma di calore.
+2.1  Utilizzo dei raddrizzatori normali e controllati per la conversione c.a. - c.c.
+I circuiti che impiegano diodi normali o controllati per la conversione sono molteplici 
+e si possono realizzare con alimentazione sia monofase che polifase; l’impiego di circuiti 
+monofase trova applicazione nel caso di potenze contenute (massimo del valore di 2 kW), 
+per potenze superiori si ricorre all’alimentazione trifase o tramite sistemi polifase. Si 
+ricorda che tramite l’utilizzo di trasformatori trifase opportunamente collegati, è possibile 
+realizzare un sistema esafase e superiore. A tal riguardo si precisa che la tensione in uscita 
+dal raddrizzatore risulta una tensione continua con sovrapposta un’ondulazione, il ripple, 
+tanto più accentuata quanto minore è il numero delle fasi di alimentazione. Sempre il 
+numero delle fasi determina il valore medio della tensione continua; questo aumenta 
+all’aumentare del numero delle fasi di alimentazione. Di seguito vengono esaminati dei 
+circuiti di conversione per l’alimentazione monofase ed altri circuiti nel caso di alimenta-
+zione trifase.
+2.2  Utilizzatori ohmico-induttivi
+La stragrande maggioranza dei carichi elettrici sono di tipo ohmico-induttivo (si pensi 
+ai motori). Tale tipo di carico comporta sempre l’accumulo di energia elettromagnetica 
+che crea fenomeni di conduzione da parte dei diodi controllati anche durante una piccola 
+parte del periodo negativo: si rammenti che quando il circuito utilizzatore è induttivo la 
+RthA
+Rth0
+A
+[km]
+1,0
+1,5
+2,0
+2,5
+3,0
+2
+4
+6
+8
+10
+
+[PAG 1841]
+ELETTRONICA DI POTENZA
+XVIII-23
+variazione della corrente intesa come aumento e diminuzione viene rallentata dalla forza 
+elettromotrice indotta:
+(XVIII.2.1)
+che si somma alla tensione imposta. La corrente si annulla al momento in cui la tensione 
+applicata, ora di valore negativo, eguaglia la f.e.m. di autoinduzione (Fig. XVIII.2.1).
+Con i circuiti monofase se le 
+potenze in gioco risultano limitate, 
+il problema appena evidenziato 
+viene contenuto e risolto tramite 
+l’impiego di diodi di libera circo-
+lazione collegati in parallelo 
+all’utilizzatore i quali consentono 
+alla corrente che percorre il diodo 
+controllato di interrompersi bru-
+scamente al termine della semionda 
+positiva applicata, in quanto la cor-
+rente sostenuta dall’autoinduzione 
+si richiude sul carico. 
+Fig. XVIII.2.1  Impiego del diodo DR di libera circolazione.
+3  ALIMENTAZIONE MONOFASE
+3.1  Circuito monofase a semionda
+Fig. XVIII.3.1  Circuito monofase
+a semionda.
+Fig. XVIII.3.2  Forma dell’onda della cor-
+rente in un carico resistivo.
+IL circuito monofase a semionda è il circuito più semplice in quanto impiega un solo 
+diodo (Fig. XVIII.3.1). La corrente percorre l’utilizzatore solamente per metà periodo (T/2) 
+in corrispondenza del semiperiodo positivo, cioè quando il semiconduttore risulta polariz-
+zato direttamente. Durante il semiperiodo negativo il diodo risulta polarizzato inversa-
+mente e quindi interdice il passaggio della corrente. 
+La Fig. XVIII.3.2 illustra l’andamento della corrente IC nel circuito: il valore medio 
+della tensione raddrizzata Um ai capi dell’utilizzatore, nonostante la caduta di tensione sul 
+semiconduttore sia trascurabile, risulta particolarmente basso rispetto al valore di picco 
+e
+Ldi
+dt
+----
+=
+G
+K
+A
+SCR
+DR
+R
+ui
+D
+Ui
+Uo
+R
+
+
+IC
+EM
+Um = 0,318 EM
+t
+
+[PAG 1842]
+XVIII-24
+ELETTRONICA DI POTENZA
+EM della tensione in ingresso. Nel circuito vi è la presenza di un elevata quantità di armo-
+niche, inoltre l’avvolgimento secondario del trasformatore risulta percorso da corrente 
+con componente continua.
+3.2  Circuito monofase ad onda intera con presa centrale
+È un circuito che può essere realizzato solamente tramite l’impiego di un trasformatore 
+con secondario munito di presa centrale.
+Fig. XVIII.3.3  Circuito monofase
+ad onda intera.
+Fig. XVIII.3.4  Corrente su un carico resistivo.
+L’impiego di due diodi (Fig. XVIII.3.3) consente alla corrente di circolare nell’utiliz-
+zatore anche durante la semionda negativa della tensione di alimentazione. Il funziona-
+mento del circuito risulta chiaro se si nota che è composto dalla somma di due circuiti 
+monofase a semionda dove, naturalmente, si deve osservare che la tensione sui due avvol-
+gimenti secondari risulta in opposizione di fase: durante un semiperiodo la corrente attra-
+versa uno dei diodi, l’altro viene interessato dalla corrente nel semiperiodo successivo. Con 
+questo circuito il valore medio della tensione raddrizzata risulta il doppio del caso prece-
+dente. Inoltre le armoniche presenti risultano essere più che dimezzate.
+ Si noti che in questo circuito il valore della tensione inversa ai capi di ciascun diodo 
+risulta di valore doppio rispetto il caso precedente. La Fig. XVIII.3.4 evidenzia l’anda-
+mento della corrente che percorre l’utilizzatore.
+3.3  Circuito monofase a ponte
+Anche senza l’impiego di trasformatori con secondario avente presa centrale è possi-
+bile realizzare il raddrizzamento ad onda intera; il circuito monofase a ponte prevede 
+l’impiego di quattro diodi collegati secondo il circuito di Fig. XVIII.3.5, denominato 
+ponte di Graetz, dove la loro conduzione avviene alternativamente a coppie. In partico-
+lare, durante il semiperiodo in cui l’onda è positiva, cioè con il potenziale di A positivo 
+rispetto B, conducono i diodi D2 e D3, mentre i diodi D1 e D4 risultano interdetti. Nel 
+semiperiodo successivo, quando il potenziale di A è negativo rispetto B, conducono i diodi 
+D1 e D4, sono interdetti i diodi D2 e D3. In ogni modo l’utilizzatore risulta percorso dalla 
+D1
+D2
+E
+E
+Uo
+
+R
+
+ID1
+IC
+ID1
+EM
+EM
+EM
+Um = 0,637 EM 
+t
+t
+t
+0
+0
+0
+
+[PAG 1843]
+ELETTRONICA DI POTENZA
+XVIII-25
+corrente sempre nello stesso verso. La forma d’onda della corrente che percorre il carico è 
+la stessa del caso precedente; qui non necessitano trasformatori con presa centrale e la 
+tensione inversa alla quale vengono sottoposti i diodi è di valore pari al valore della ten-
+sione monofase applicata. Un altro vantaggio di questa configurazione è quello che la 
+linea non risulta percorsa da correnti con componente continua, per contro il circuito pre-
+senta lo svantaggio di necessitare di quattro diodi.
+Fig. XVIII.3.5  Percorso della corrente in un circuito a ponte di Graetz.
+4  ALIMENTAZIONE TRIFASE
+4.1  Circuito trifase a semionda
+In questo tipo di circuito è necessario disporre di una alimentazione trifase di tipo a 
+stella con neutro accessibile: vengono impiegati tre diodi il cui anodo è collegato con i 
+morsetti di linea, il catodo è collegato in comune e costituisce il polo positivo che ali-
+menta l’utilizzatore (Fig. XVIII.4.1). Il morsetto negativo è rappresentato dal neutro. 
+Fig. XVIII.4.1  Circuito trifase a semionda.
+Dall’esame dell’andamento delle tensioni (Fig. XVIII.4.2) risulta evidente che i tre 
+diodi conducono uno per volta, man mano che la tensione sul loro anodo risulta positiva e 
+di valore maggiore. L’andamento della tensione ai capi del carico è quello di Fig. XVIII.4.3, 
+il suo valore medio è pari a 0,828 il valore massimo della tensione applicata, con una per-
+centuale di armoniche del 18,2%. La tensione inversa presente ai capi di ciascun diodo 
+assume il valore 
+. Inoltre, ogni diodo conduce per un intervallo di tempo pari ad un 
+terzo del periodo e, quindi, il valore medio della corrente raddrizzata vale 0,587 il valore 
+efficace della sua corrente diretta.
+A
+B
+E
+
+
+R
+Uo
+D1
+D2
+D4
+D3
+A
+B
+E
+
+
+Uo
+D1
+D2
+D4
+D3
+R
+E1
+E2
+E3
+D1
+D2
+D3
+I
+R
+Uo
+
+
+3EM
+
+[PAG 1844]
+XVIII-26
+ELETTRONICA DI POTENZA
+Fig. XVIII.4.2  Conduzione dei diodi nei 
+sistemi trifase.
+Fig. XVIII.4.3  Tensione in uscita
+da un circuito trifase a semionda.
+4.2  Circuito a ponte trifase
+Il circuito a ponte trifase è quello riportato nella Fig. XVIII.4.4; in questo caso la ten-
+sione raddrizzata è quella concatenata, non quella di fase. In ogni istante sono sempre due 
+i diodi che conducono: sono quelli interessati dalla tensione concatenata che, rispetto alle 
+altre tensioni, raggiunge, in valore assoluto, il valore istantaneo massimo. Con un utilizza-
+tore di tipo ohmico, il valore medio della tensione raddrizzata vale 0,995 il valore mas-
+simo della tensione concatenata, la percentuale di armoniche si riduce al 4,2% e la 
+tensione inversa alla quale sono sottoposti i diodi risulta pari al valore massimo della ten-
+sione concatenata. Si noti che, con questa configurazione, non necessita avere a disposi-
+zione il neutro.
+Fig. XVIII.4.4  Circuito a ponte trifase.
+La Fig. XVIII.4.5 illustra l’intervallo di conduzione dei diodi (i numeri indicano i diodi 
+in conduzione), la forma d’onda e il valore medio della tensione in uscita dal circuito.
+Tensione concatenata
+E
+E1
+E2
+E3
+EM
+t1
+t2
+t1
+t3
+t4
+t
+U
+EM
+t
+O
+Uo = 0,828 EM
+D1
+D2
+D3
+Uo
+UAC
+A
+R
+B
+C
+UAB
+UBC
+D4
+D5
+D6
+I
+
+
+
+[PAG 1845]
+ELETTRONICA DI POTENZA
+XVIII-27
+Fig. XVIII.4.5  Caratteristiche di conduzione e forma d’onda di un circuito a ponte trifase.
+4.3  Circuito a ponte trifase a doppia stella
+Il circuito è quello di Fig. XVIII.4.6 dove si evidenzia la necessità di un trasformatore 
+con primario a triangolo e secondario con doppia stella trifase; il funzionamento può 
+essere esaminato considerando che le due stelle sono tra loro sfasate di 180° ed i loro cen-
+tro stella risultano collegati tra loro mediante una induttanza L, a presa centrale (con 
+nucleo in ferro), chiamata bobina d’assorbimento. Quest’ultima ha lo scopo di far con-
+durre due diodi, uno per ciascun avvolgimento secondario, per volta, in maniera che que-
+sti, siano percorsi da corrente di pari intensità. Il circuito ha lo stesso comportamento di 
+due sistemi trifase collegati tra loro in parallelo, pertanto, paragonato ad un sistema sin-
+golo, risulta che, a parità di corrente raddrizzata, ciascun diodo è interessato da una cor-
+rente di valore pari a metà del valore totale; questa è la prerogativa per la quale questo 
+tipo di configurazione è particolarmente adatta alla conversione di potenze elettriche 
+caratterizzate da elevate intensità di corrente.
+Fig. XVIII.4.6  Circuito trifase a doppia stella con bobina di assorbimento.
+La Tab.XVIII.4.1 riporta i valori significativi delle tensioni raddrizzate disponibili, 
+nonché la percentuale di armoniche ed il fattore di forma per i circuiti più diffusi. 
+La Tab. XVIII.4.2 riporta i valori delle tensioni raddrizzate e delle correnti per circuiti 
+raddrizzatori con carichi di tipo ohmico-induttivo.
+U
+U
+UM
+UM
+Um = 0,955 UM
+t
+t
+t1 t2
+t3
+t4
+t1 t2
+t3
+t4
+1-5
+2-5
+3-4
+3-5
+1-5
+2-4
+3-5
+O
+Tensione concatenata
+L
+R
+Uo
+
+
+D1
+D2
+D3
+D4
+D5
+D6
+
+[PAG 1846]
+XVIII-28
+ELETTRONICA DI POTENZA
+Tab. XVIII.4.1  Tensioni e correnti nei circuiti raddrizzatori con carico R
+2
+D1
+C
+U
+U
+AB
+BC
+B
+A
+D4
+D5
+UAC
+1
+D
+D2
+E3
+2
+E
+1
+E
+E
+6
+D
+3
+D
+R
+1
+D3
+D2
+R
+Im
+m
+I
+D
+U
+R
+3
+D
+D4
+Im
+E
+2
+D
+E
+D1
+E
+D
+R
+D
+R
+m
+I
+I m
+Uo
+Uo
+o
+Uo
+o
+U
+Circuito raddrizzatore
+con carico R
+Tensione in uscita
+Parametri diodi
+Potenza
+apparente
+second.
+trasform.
+Tensione
+inversa
+massima
+Val. Eff.
+corrente
+diretta
+Fattore
+di forma
+f.d.f.
+Valore
+medio
+Um
+%
+Armon.
+A%
+0,450 E
+0,316 EM
+0,900 E
+0,637 EM
+0,900 E
+0,637 EM
+1,77 E
+0,677 U
+0,828 EM
+0,479 UM
+1,35 U
+0,955 UM
+121%
+48%
+48%
+18,2%
+4,2%
+1,0009
+1,02
+1,11
+1,11
+1,57
+1,41 U
+1,01 UM
+0,578 Im 1,05 Um Im
+0,587 Im 1,50 Um Im
+0,786 Im 1,24 Um Im
+0,786 Im 1,75 Um Im
+1,57 Im
+3,49 Um Im
+2,45 E
+UM
+1,73 EM
+2,09 UM
+1,41 E
+1,57 UM
+ EM
+2,62 E
+3,14 UM
+  2 EM
+1,41 E
+3,14 UM
+ EM
+
+[PAG 1847]
+ELETTRONICA DI POTENZA
+XVIII-29
+Tab. XVIII.4.2  Tensioni e correnti nei circuiti raddrizzatori con carico RL
+4
+D
+6
+D
+5
+D
+D
+3
+2
+D
+1
+D
+UBC
+C
+U
+A
+ABB
+D4
+5
+D
+D1
+AC
+U
+2
+D
+E2
+3
+E
+E1
+U
+R
+L
+L
+I
+6
+D
+3
+D
+R
+m
+L
+D3
+D2
+D1
+R
+L
+Im
+E
+D1
+E
+2
+D
+E
+D1
+D
+R
+L
+3
+D
+D4
+Im
+2
+R
+L
+m
+I
+o
+U
+Uo
+o
+o
+U
+Uo
+Circuito raddrizzatore
+con carico L-R
+Tensione in uscita
+Parametri diodi
+Potenza
+apparente
+second.
+trasform.
+Tensione
+inversa
+massima
+Val. Eff.
+corrente
+diretta
+Frequen.
+armon.
+Valore
+medio
+Um
+Ondulaz.
+0,900 E
+0,637 EM
+0,900 E
+0,637 EM
+1,35 U
+0,955 UM
+1,77 E
+0,677 U
+0,828 EM
+0,479 UM
+0,667
+0,667
+0,057
+0,250
+3 f
+6 f
+2 f
+2 f
+0,578 Im 1,48 Um Im
+0,578 Im 1,05 Um Im
+0,707 Im 1,11 Um Im
+0,707 Im 1,57 Um Im
+2,45 E
+UM
+1,73 EM
+2,09 UM
+1,41 U
+1,05 UM
+1,41 E
+1,57 UM
+  EM
+2,82 E
+3,14 UM
+  2 EM
+1,77 E
+0,677 U
+0,828 EM
+0,479 UM
+0,057
+6 f
+0,289 Im 1,48 Um Im
+2,45 E
+UM
+1,73 EM
+2,09 UM
+
+[PAG 1848]
+XVIII-30
+ELETTRONICA DI POTENZA
+Talvolta l’induttanza non è propriamente quella dell’utilizzatore bensì quella di un 
+induttore volutamente collegato in serie al carico.
+Quest’ultima viene sovente indicata come induttanza di livellamento e la sua funzione 
+è quella di mantenere la corrente nel carico con valore pressoché costante. I valori ripor-
+tati nella tabella precedente sono veritieri a condizione che la commutazione dei diodi 
+avvenga praticamente in modo istantaneo, cioè con tempo di ritardo nullo, e che l’indut-
+tanza complessiva del circuito alimentato abbia elevato valore. Si fa notare che, per 
+l’effetto inerziale introdotto dall’induttanza, esiste la condizione durante la quale un 
+diodo entra in conduzione prima che passi all’interdizione il diodo in conduzione nella 
+fase precedente. Durante questo breve intervallo di tempo i due diodi in conduzione cre-
+ano una condizione di cortocircuito sulle relative fasi del trasformatore con una ulteriore 
+generazione di corrente (di corto circuito) oltre quella di alimentazione del carico.
+5  CONTROLLO DELLA POTENZA NELLA CONVERSIONE C.A.-C.C.
+Il controllo della potenza nell’ambito della conversione da corrente alternata a conti-
+nua è realizzato tramite l’impiego dei tiristori, con schemi applicativi praticamente uguali 
+a quelli impieganti i diodi raddrizzatori normali.
+5.1  Circuiti monofase
+ Talvolta i diodi normali vengono sostituiti integralmente dai diodi controllati, altre 
+volte la sostituzione risulta parziale; in quest’ultimo caso i circuiti vengono indicati come 
+circuiti di tipo misto.
+5.1.1  Circuito monofase a semionda
+Ancora una volta il circuito più semplice è 
+quello a semionda; il comando di Gate del 
+tiristore determina l’inizio di conduzione 
+del diodo controllato. La tensione continua 
+media risultante sull’utilizzatore è in 
+stretto legame con l’intervallo di tempo tra 
+il passaggio per lo zero della semionda (di 
+polarità adeguata) della tensione e l’istante 
+al quale viene applicato l’impulso sul Gate. 
+Il suo valore varia da zero (con un ritardo 
+nell’applicazione del comando di Gate pari 
+a ) al valore massimo di:
+(XVIII.5.1)
+nel caso di applicazione del comando di 
+Gate nell’istante del passaggio per lo zero 
+della semionda. La Fig. XVIII.5.1 illustra la 
+tensione ai capi di un carico resistivo per il 
+circuito considerato. Il circuito generatore 
+di impulsi indicato nella figura è  un dispo-
+sitivo in grado di rilevare il passaggio dello 
+zero della tensione di alimentazione non-
+ché la sua pendenza (zero crossing).
+Fig. XVIII.5.1  Circuito monofase controllato da SCR.
+O
+O
+O
+e
+Ig
+Uo
+R
+Uo
+SCR
+e
+A
+K
+G
+Ig
+Generatore
+di impulsi
+t
+t
+t
+TOFF
+T
+2
+3T
+2
+T
+2T
+Um
+UiM
+
+---------
+=
+
+[PAG 1849]
+ELETTRONICA DI POTENZA
+XVIII-31
+Tale apparecchiatura è in grado di generare un impulso di comando per il Gate, in fun-
+zione di un valore di riferimento, dopo un intervallo di tempo proporzionale al valore di 
+riferimento stesso, avente inizio con il rilevamento dello zero crossing.
+5.1.2  Circuito monofase ad onda intera
+Il controllo nel caso di circuiti ad onda intera può essere realizzato sia con circuiti che 
+prevedano la presa centrale che con quelli a ponte; in quest’ultimo caso il circuito viene 
+indicato come circuito misto, qualora vengano impiegati solo due diodi controllati. 
+La Fig. XVIII.5.2 evidenzia i vari tipi di circuito impiegabili per il raddrizzamento ad 
+onda intera. Si noti la totale assenza di condensatori di filtraggio a monte dei tiristori, 
+anche dove a prima vista sembra possibile, in quanto la tensione risulta continua; si 
+ricordi che il diodo controllato interrompe la conduzione solo se, una volta attivato, la 
+corrente che lo percorre scende sotto il valore di automantenimento Ih.
+Fig. XVIII.5.2  Tecniche di controllo mediante SCR per circuiti monofase a onda intera.
+I circuiti ad onda intera nei quali il tiristore è unico, in serie con il carico, a fronte della 
+presenza nel circuito di un numero superiore di semiconduttori, presenta il beneficio di un 
+circuito di comando più semplice in quanto unico, nonché l’utilizzo di SCR dove la tensione 
+inversa applicata risulta di valore nullo. Il valore della tensione media continua applicata su 
+un utilizzatore resistivo varia in questo caso da un valore nullo fino al valore massimo di:
+(XVIII.5.2)
+dove UiM è il valore massimo della tensione in uscita dal raddrizzatore.
+5.2  Circuiti trifase
+Ogniqualvolta la potenza da controllare risulta superiore ai 3kW si ricorre a circuiti 
+trifase muniti di tiristori; variando l’istante di applicazione dell’impulso di comando del 
+SCR1
+SCR2
+SCR1
+SCR1
+SCR1
+SCR2
+D1
+D2
+D1
+D2
+D1
+D3
+D2
+D4
+e
+e
+e
+e
+e
+R
+R
+Generatore
+ impulsi di
+  comando
+Generatore
+ impulsi di
+  comando
+Generatore
+ impulsi di
+  comando
+Generatore
+ impulsi di
+  comando
+A
+K
+G
+A
+K
+G
+A
+K
+G
+A
+K
+G
+A
+K
+G
+Uo
+Uo
+Uo
+Uo
+A
+K
+G
+Um
+2 U
+
+iM
+
+-----------------
+=
+
+[PAG 1850]
+XVIII-32
+ELETTRONICA DI POTENZA
+Gate, e quindi l’istante di inizio della conduzione, si è in grado di controllare l’entità della 
+corrente media che percorre l’utilizzatore. In questo caso, onde evitare che il trasforma-
+tore di alimentazione risulti percorso da una corrente continua in grado di magnetizzare il 
+suo nucleo, si collegano a zig-zag gli avvolgimenti secondari del medesimo.
+5.2.1  Ponte trifase semicontrollato
+Un ponte trifase semicontrollato deriva immediatamente da un ponte trifase, dove tre 
+dei sei diodi raddrizzatori normali vengono sostituiti da tre SCR e viene impiegato un 
+opportuno generatore di impulsi per il comando dei tre Gate (Fig. XVIII.5.3a).
+Fig. XVIII.5.3  Ponte trifase semicontrollato.
+Nella figura si evidenzia l’andamento della tensione ai capi del carico in relazione agli 
+impulsi applicati ai tre tiristori con due tipi di ritardo: nel primo caso (Fig. XVIII.5.3b) il 
+ritardo dell’innesco è di 30°, nel secondo caso (Fig. XVIII.5.3c) è invece di 150°; anche in 
+questo circuito il valore medio della tensione continua applicata al carico è in stretta relazione 
+con il ritardo di tempo degli impulsi. Esaminando l’andamento della tensione in funzione 
+dell’angolo di sfasamento si rileva che, per angoli superiori a 60°, si hanno intervalli di tempo 
+con tensione nulla applicata al carico; si ha, in questo caso, conduzione discontinua.
+L’analisi del funzionamento dei diodi controllati può essere condotta a partire dalla 
+Fig. XVIII.4.5 del Par. XVIII.4.2 dove si evidenzia la sequenza di conduzione in un cir-
+cuito analogo realizzato con soli diodi raddrizzatori normali.
+Si ricorda che, in questo caso, la tensione raddrizzata risulta quella concatenata, e che 
+i diodi entrano in conduzione quando la tensione ai loro capi assume, rispetto alle altre 
+a)
+c)
+b)
+D1 D2 D3
+A
+K
+G
+A
+K
+G
+A
+K
+G
+I
+Uo
+R
+a
+bc
+Generatore
+impulsi di
+comando
+IG3
+IG2
+IG1
+Uo
+Uab
+Ubc
+Uca
+Um
+O
+t1
+t2
+t3
+t4
+t5
+t1
+T
+t
+t
+t
+t
+O
+O
+O
+T
+t
+t
+t
+O
+O
+O
+5T
+12
+Uo
+Uab
+Ubc
+Uca
+Um
+O
+t2
+t3 t4
+t5
+t1
+T
+t
+IG1
+IG2
+IG3
+IG1
+IG2
+IG3
+12
+
+[PAG 1851]
+ELETTRONICA DI POTENZA
+XVIII-33
+due tensioni concatenate, il massimo valore istantaneo (in valore assoluto).
+Nel caso in esame il diodo D5 può essere innescato in un istante dell’intervallo 0 ÷ t3, 
+quest’ultimo coincidente con T/2, perché solo in quell’intervallo vi sono le condizioni 
+perché possa condurre. Nel medesimo intervallo entra in conduzione il diodo D3 per il 
+tempo compreso fra 0 e t1, nell’intervallo t1 ÷ t2 conduce il diodo D1, nel rimanente inter-
+vallo di tempo t2 ÷ t3 possono condurre ancora i diodi D1 e D5 a meno che, nel frattempo 
+non venga innescato tramite apposito comando di Gate il diodo controllato D6 e che que-
+sto, quindi, sostituisca nella conduzione il diodo D5.
+Questo circuito si presta eccellentemente per l’alimentazione e la regolazione della 
+velocità dei motori a corrente continua qualora costituisca l’alimentazione dell’armatura 
+dei medesimi; se la corrente di eccitazione viene mantenuta costante si ottiene, in questo 
+modo, una regolazione detta a coppia costante. Il medesimo circuito non consente però di 
+effettuare l’inversione di marcia e nemmeno la frenatura con recupero di energia.
+5.2.2  Ponte trifase totalmente controllato
+Durante i transitori legati alla diminuzione della corrente in un carico ohmico-indut-
+tivo l’energia elettromagnetica accumulata può essere recuperata e inviata alla rete di ali-
+mentazione tramite circuiti invertitori. Questi ultimi sono realizzati mediante l’impiego di 
+sei diodi controllati (Fig. XVIII.5.4).
+Fig. XVIII.5.4  Ponte trifase totalmente controllato.
+Ritardando l’innesco dei diodi di oltre un quarto di periodo, l’energia del carico a cor-
+rente continua viene trasformata in corrente alternata adatta ad essere inviata alla rete di 
+alimentazione. In particolare, la corrente imposta dal carico deve essere distribuita tramite 
+una opportuna coppia di diodi, attivati al momento opportuno, verso due dei tre conduttori 
+di linea. L’effettivo trasferimento di energia dal carico alla linea di alimentazione avviene 
+a condizione che gli inneschi delle coppie di diodi siano imposti quando la loro tensione 
+anodica è positiva e la tensione di alimentazione a corrente alternata per quella coppia di 
+diodi risulti negativa. È necessario che la tensione presente sul carico, generata per effetto 
+dell’autoinduzione, risulti superiore alla tensione concatenata presente sulla coppia di 
+diodi messi in conduzione, affinché questi entrino in conduzione e trasferiscano parte 
+dell’energia del carico induttivo. Durante questo periodo è necessario che risultino inter-
+detti tutti gli altri diodi; da ciò la necessità di utilizzare sei diodi controllati. 
+La Fig. XVIII.5.5 illustra il funzionamento del circuito per ritardi nei comandi di Gate 
+SCR1
+SCR2
+SCR3
+SCR4
+SCR5
+SCR6
+IG2
+IG3
+IG1
+IG5
+IG6
+IG4
+K
+A
+G
+K
+A
+G
+K
+A
+G
+G
+A
+G
+K
+A
+K
+A
+G
+Generatore
+impulsi di
+comando
+K
+Uo
+R
+L
+I
+
+[PAG 1852]
+XVIII-34
+ELETTRONICA DI POTENZA
+tali da consentire il funzionamento come raddrizzatore e come invertitore.
+Fig. XVIII.5.5  Funzionamento di un ponte trifase totalmente controllato in relazione 
+all’angolo di innesco dei tiristori.
+4
+5
+6
+3
+2
+1
+3
+2
+1
+6
+5
+4
+4
+5
+6
+3
+2
+1
+Uo
+Uab Uac Ubc
+Um
+t
+t
+t
+t
+t
+t
+t
+t
+t
+t
+t
+t
+t
+t
+Um
+t
+t
+t
+t
+t
+t
+t
+Ucb
+Uca Ucb
+Uba
+O
+130°
+Uo
+Uab Uac Ubc
+Ucb
+Uca Ucb
+Uba
+O
+90°
+Riferimento SCR1
+Uo
+Uab Uac Ubc
+Ucb
+Uca Ucb
+Uba
+O
+50°
+Riferimento SCR1
+Innesco con
+ritardo di 50°:
+funzionamnento
+da raddrizzatore
+Innesco con
+ritardo di 90°:
+Um = 0
+ Innesco con
+ ritardo di 130°:
+ funzionamnento
+ da invertitore
+SCR in conduzione  
+SCR in conduzione  
+SCR in conduzione
+
+[PAG 1853]
+ELETTRONICA DI POTENZA
+XVIII-35
+Con comandi inferiori ai 90° il circuito risulta essere un raddrizzatore: la corrente porta 
+energia verso l’utilizzatore; per ritardi di 130° il funzionamento è quello di invertitore.
+Se per un motore a corrente continua si desidera controllare, oltre alla sua velocità, 
+anche la frenatura con recupero di energia in rete, ed effettuare la sua inversione di mar-
+cia, poiché per quest’ultima esigenza è necessario invertire il verso di circolazione della 
+corrente, si fa ricorso ad un circuito costituito da due ponti trifase totalmente controllati in 
+connessione antiparallelo (Fig. XVIII.5.6).
+Fig. XVIII.5.6  Schema per il controllo di velocità, frenatura con recupero di energia e 
+inversione di marcia per un motore a c.c.
+6  ALIMENTATORI A COMMUTAZIONE
+Fino a qualche tempo fa gli alimentatori, cioè i dispositivi destinati alla conversione 
+della tensione da alternata in continua erano realizzati con convertitori di tipo lineare; il 
+rendimento percentuale ottenibile standard risultava essere del 30%. Attualmente con la 
+tecnica degli alimentatori a commutazione si arriva a rendimenti che possono raggiungere 
+un valore pari a 80%. Inoltre, la possibilità di utilizzare frequenze di commutazione di 20 
+kHz, o superiori (fino a 200 kHz), ha consentito di ridurre in modo determinante i sistemi 
+di filtraggio e, conseguentemente, i componenti necessari alla loro realizzazione, con la 
+realizzazione di apparecchiature estremamente compatte; oltre tutto permettono di evitare 
+l’impiego di trasformatori, in quanto vengono collegati direttamente alla rete di alimenta-
+zione. L’isolamento dell’uscita rispetto all’ingresso viene realizzato, se necessario, 
+all’interno del blocco definito inverter o convertitore tramite un trasformatore. Il nome 
+deriva dal fatto che questo blocco provvede a trasformare la tensione continua disponibile 
+in una tensione alternata.
+La base di un alimentatore a commutazione risiede nella sua sezione ad alta frequenza 
+denominata convertitore: qui la tensione presente al suo ingresso (tensione continua) 
+viene convertita in una tensione ad onda quadra tramite un processo di parzializzazione. 
+Questi circuiti di potenza sono costituiti da dispositivi attivi, tipicamente Mosfet, fatti 
+lavorare in commutazione (ON/OFF) a frequenze elevate per assicurare limitate potenze 
+dissipate dal dispositivo a semiconduttore. La presenza di un induttore, o un trasforma-
+tore, permette di convertire l’onda quadra così ottenuta in un’altra che, raddrizzata e fil-
+trata, costituirà la tensione continua presente in uscita.
+SCR1 SCR2
+SCR3
+SCR1SCR2
+SCR3
+SCR4SCR5
+SCR6
+SCR4 SCR5
+SCR6
+IG5
+IG6
+IG4
+IG2
+IG3
+IG1
+IG2
+IG3
+IG1
+IG5
+IG6
+IG4
+M
+K
+A
+G
+K
+A
+G
+K
+A
+G
+K
+A
+G
+K
+A
+G
+K
+A
+G
+K
+A
+G K
+A
+G K
+A
+G
+K
+A
+GK
+A
+GK
+A
+G
+Generatore
+impulsi
+gruppo 2
+Generatore
+impulsi
+gruppo 1
+Circuito di
+controllo e comando
+
+[PAG 1854]
+XVIII-36
+ELETTRONICA DI POTENZA
+Premesso che il duty cycle D è 
+espresso dal rapporto tra la durata 
+dell’impulso attivo (stato di ON 
+del semiconduttore) e il periodo 
+complessivo, con riferimento alla 
+Fig. XVIII.6.1 si ottiene la se-
+guente espressione:
+(XVIII.6.1)
+dove:
+(XVIII.6.2)
+Fig. XVIII.6.1  Duty cycle D.
+L’ampiezza della tensione in uscita viene controllata agendo sul valore del duty cycle 
+dell’inverter tramite un apposito circuito di controllo di tipo PWM (Pulse Width Modula-
+tion), che interviene sulla durata di tON, quest’ultimo proporzionale all’errore tra la ten-
+sione in uscita e una tensione di riferimento. Pertanto, ferma restando la frequenza di 
+commutazione, la tensione d’uscita viene mantenuta stabile al variare del carico applicato 
+e della tensione in ingresso agendo sul valore del duty cycle dell’onda quadra generata.
+ La figura seguente evidenzia lo schema a blocchi con tutte le funzioni base di un ali-
+mentatore di questo tipo.
+Fig. XVIII.6.2  Circuito base per alimentatori a commutazione (switched mode).
+Dall’analisi della Fig. XVIII.6.2 si evince che la tensione in ingresso, alternata, viene 
+inizialmente convertita in tensione continua tramite un raddrizzatore tipicamente ad onda 
+intera seguito da un opportuno filtro in modo da avere un valore di ripple il più basso pos-
+sibile; in ogni caso, la tensione così ottenuta può subire notevoli variazioni in relazione al 
+valore della tensione in ingresso. Il condensatore presente nel filtro deve essere in grado, 
+con la sua capacità, di garantire un adeguato valore di tensione anche se l’alimentazione 
+principale diminuisce per un tempo considerevole (qualche decina di millisecondi).
+In questo caso si è fatto l’esempio di una alimentazione da tensione di rete, quindi 
+alternata, ma ciò che segue vale anche nel caso di alimentazione con tensione continua; in 
+quest’ultima evenienza si parla di convertitori c.c.-c.c.
+tON
+tOFF
+T
+D= tON
+T
+U
+t
+D
+tON
+T
+--------
+=
+T
+tON+tOFF
+=
+Circuito di
+commutazione ad
+alta frequenza
+Circuito di
+raddrizzamento
+e filtraggio
+Tensione
+di ingresso
+(alternata)
+Trasformatore
+di potenza
+Rettificatore di
+uscita e filtro
+Tensione
+ di uscita
+(continua)
+Controllo del
+duty cycle
+T
+tON
+PWM
+Urif.
+Oscillat.
+
+[PAG 1855]
+ELETTRONICA DI POTENZA
+XVIII-37
+La tensione continua viene inviata al convertitore vero e proprio; quest’ultimo è tipi-
+camente realizzato tramite semiconduttori di potenza adatti a funzionare come interruttori 
+(switch) ad elevata frequenza (da 20 kHz a 200 kHz), che vengono comandati da uno stato 
+di OFF a quello di ON con un duty cycle variabile. La variazione del duty cycle consente, 
+come già anticipato, di effettuare la regolazione della tensione in uscita tramite un sistema 
+retroazionato dove il segnale errore, inteso come differenza tra la tensione in uscita ed una 
+di riferimento, interviene direttamente sul valore del duty cycle stesso.
+La possibile realizzazione di questi convertitori si suddivide tra convertitori non iso-
+lati ed isolati; quest’ultimi presentano un trasformatore che consente di isolare la tensione 
+d’ingresso da quella di uscita e, inoltre, di avere in uscita più di un valore di tensione.
+7  CONVERTITORI NON ISOLATI
+Le topologie circuitali denominate buck o step down, boost o step up, e buck-boost
+detto anche convertitore flyback, sono quelle dalle quali derivano la maggior parte dei cir-
+cuiti di conversione, compresi quelli isolati. Questi alimentatori rappresentano le configu-
+razioni circuitali più semplici, richiedono pochi elementi quali un induttore, un transistor 
+di commutazione un diodo e poco altro, ma, se è necessario l’isolamento tra la tensione 
+d’ingresso e quella d’uscita, impongono l’uso di un trasformatore di tensione che li deve 
+precedere.
+7.1  Convertitore Buck
+La famiglia dei convertitori forward, che 
+include i convertitori push-pull ed i bri-
+dge converter, derivano tutti dal converti-
+tore Buck mostrato nella Fig. XVIII.7.1.
+Il suo funzionamento è il seguente: ogni-
+qualvolta il transistor T1 è in conduzione, 
+la tensione in ingresso viene applicata 
+all’induttore L1 che consente di inviare 
+energia verso l’uscita. Contemporanea-
+mente, ai capi dell’induttore, per effetto 
+del passaggio di corrente, viene a for-
+marsi una tensione pari a:
+(XVIII.7.1)
+con accumulo di energia nell’induttore 
+stesso.
+Successivamente, quando il transistor 
+passa allo stato di OFF, la tensione ai capi 
+dell’induttore risulta di segno tale che il 
+diodo D1 risulta polarizzato in maniera 
+diretta e, quindi, consente il trasferimento 
+dell’energia immagazzinata dall’induttore 
+verso l’utilizzatore.
+Fig. XVIII.7.1  Convertitore Buck.
+La presenza del condensatore C1 realizza con l’induttore un filtro LC che smussa i picchi 
+di tensione altrimenti presenti in uscita, con l’effetto complessivo di un contenuto valore di 
+ripple. Il convertitore Buck è un convertitore di tipo step down: il valore della tensione in 
+Ui
+C1
+Iin
+D1
+L1
+C2
+Uo
+segnale di
+controllo
+IL
+UT
+t
+t
+t
+tON
+tOFF
+IL
+T1
+Uo
+UL-Uo
+Iin
+t
+UL
+UL
+LdI
+dt
+----
+=
+
+[PAG 1856]
+XVIII-38
+ELETTRONICA DI POTENZA
+uscita risulta essere sempre inferiore al valore in ingresso. Precisamente, se si trascurano le 
+perdite del circuito, indicando con D il duty cycle di funzionamento (di valore sempre infe-
+riore all’unità), con Ui la tensione in ingresso e con Uo quella di uscita, nell’intervallo di 
+tempo in cui la tensione ai capi dell’induttore è nulla risulta:
+(XVIII.7.2)
+È evidente che il valore della tensione in uscita può essere modificato variando il 
+valore del duty cycle D. La prerogativa essenziale di questo tipo di regolatori è quella di 
+avere un basso valore di ripple; normalmente il loro tipico funzionamento è quello nel 
+quale la corrente nell’induttore non si annulla mai, consentendo così di avere picchi della 
+corrente erogata dal transistor di valore contenuto e necessitare di condensatore in uscita 
+di limitata capacità.
+7.2  Convertitore Boost
+Il convertitore Boost è un convertitore step 
+up in quanto la sua tensione di uscita risulta 
+sempre maggiore della sua tensione in 
+ingresso. Il suo funzionamento, peraltro, 
+risulta più complesso del convertitore 
+Buck; per capirlo è necessario fare riferi-
+mento alla configurazione e alle forme 
+d’onda di Fig. XVIII.7.2.
+Quando il transistor si trova in conduzione, 
+stato di ON, il potenziale dell’anodo del 
+diodo D1 risulta a massa, per cui la even-
+tuale tensione presente sul condensatore di 
+uscita C1 polarizza il diodo D1 in maniera 
+inversa. La tensione di ingresso risulta per-
+tanto completamente applicata ai capi 
+dell’induttore L1, e quindi all’anodo di D1. 
+Tale tensione presenta una progressione 
+che dipende dalla corrente che scorre in L1, 
+fino a raggiungere un valore prossimo alla 
+tensione di ingresso.
+La corrente nell’induttore può risultare di 
+modo discontinuo qualora il suo valore ini-
+ziale sia nullo oppure in modo continuo nel 
+caso in cui non raggiunga mai valori nulli.
+Fig. XVIII.7.2  Convertitore Boost.
+Quando il transistor passa allo stato di interdizione (stato di OFF), la tensione ai capi 
+dell’induttore cambia di segno, presentando quindi all’anodo di D1 una tensione superiore 
+a quella in ingresso; il diodo, polarizzato direttamente, trasferisce l’energia immagazzi-
+nata dall’induttore, sommata a quella fornita in ingresso, verso il condensatore C2 e 
+quindi anche verso l’utilizzatore. Nel caso di funzionamento in modo continuo la tensione 
+in uscita dal convertitore Uo, in funzione del duty cycle D, e della tensione in ingresso Ui, 
+risulta espressa da:
+(XVIII.7.3)
+Anche in questo caso risulta evidente la possibilità di controllare la tensione di uscita 
+Uo
+Ui D
+
+=
+Ui
+C1
+IL
+T1
+D1
+C2
+Uo
+segnale di
+controllo
+c
+e
+ID
+UT
+t
+t
+t
+tON
+tOFF
+IL
+IT1
+L1
+Uo
+ID
+IT1
+t
+UT
+Uo
+Ui
+1
+1D
+----------
+=
+
+[PAG 1857]
+ELETTRONICA DI POTENZA
+XVIII-39
+agendo sul duty cycle D, tensione che, si rammenta, risulta essere sempre di valore superiore 
+alla tensione di ingresso. Dall’analisi del circuito e delle sua forme d’onda (Fig. XVIII.7.2), 
+risulta evidente che la corrente che interessa il condensatore C1 è la corrente che attraversa 
+il diodo D1, pertanto una corrente con andamento discontinuo; conseguentemente il valore 
+della capacità del condensatore C1 dovrà essere piuttosto elevata affinché il ripple risulti con-
+tenuto. Poiché, di fatto, il funzionamento di questo convertitore è tale per cui la corrente 
+assorbita dalla linea di alimentazione non si annulla mai, è preferito ogniqualvolta sia neces-
+sario un alimentatore che presenti elevato fattore di potenza.
+Ogniqualvolta il convertitore venga utilizzato con funzionamento in modo disconti-
+nuo, il picco della corrente che percorre il transistor e il diodo risultano di intensità mag-
+giore, pertanto il condensatore in uscita deve avere capacità decisamente più elevata.
+Dal punto di vista della regolazione della tensione di uscita si precisa che, con questo 
+tipo di regolatore, il filtro in uscita, di tipo LC, presenta problematiche complesse nel con-
+trollo e regolazione dei piccoli segnali, tipiche dei sistemi del secondo ordine, qualora il 
+suo funzionamento sia in modo continuo, mentre il controllo è decisamente più semplice 
+se funzionante in modo discontinuo.
+7.3  Convertitore Buck-Boost (Flyback)
+È un convertitore che permette di ottenere in uscita una tensione che può risultare 
+minore o maggiore di quella in ingresso. Infatti detta Uo la tensione di uscita del regola-
+tore, Ui la tensione di ingresso e D il valore del duty cycle, si avrà:
+(XVIII.7.4)
+Il suo funzionamento risulta il connubio di un convertitore Buck con un convertitore 
+Boost, e il suo schema funzionale è quello di Fig. XVIII.7.3. In tale figura si noti la dispo-
+sizione del diodo D1; quando il transistor T1 è nello stato di conduzione, il diodo D1 è pola-
+rizzato inversamente e l’induttore immagazzina energia per effetto della corrente che lo 
+percorre. Quando il transistor T1 passa all’interdizione, la tensione ai capi dell’induttore 
+cambia di polarità, consentendo all’energia immagazzinata nell’induttore di trasferirsi al 
+condensatore C1 e quindi all’utilizzatore tramite il diodo D1 polarizzato, ora, direttamente. 
+Le forme d’onda del funzionamento sono 
+simili al convertitore Boost, con la diffe-
+renza che il transistor T1 deve essere in 
+grado di sopportare una tensione data dalla 
+somma della tensione di ingresso e di 
+uscita.
+È da notare, inoltre, che la tensione di 
+uscita risulta, in questa occasione, di pola-
+rità opposta a quella in ingresso. 
+Fig. XVIII.7.3  Convertitore Buck - Boost (Flyback).
+Anche in questo caso, per quanto riguarda la facilità di regolazione della tensione di 
+uscita, è preferibile un funzionamento in modo discontinuo rispetto al funzionamento in 
+modo continuo, e, dal punto di vista della riduzione del ripple, questo tipo di convertitore 
+necessita di condensatore in uscita di capacità elevata.
+8  CONVERTITORI CON TRASFORMATORI
+I convertitori in versione non isolata trovano limitato impiego soprattutto perché, nel 
+loro tipico funzionamento di convertitori c.c.-c.c., sono in grado di produrre solo un 
+valore di tensione e quest’ultimo risulta legato al valore della tensione in ingresso e al 
+Uo
+Ui
+D
+1D
+----------
+=
+Ui
+C1
+T1
+D1
+C2
+Uo
+segnale di
+controllo
+L1
+c
+e
+
+[PAG 1858]
+XVIII-40
+ELETTRONICA DI POTENZA
+valore del duty cycle. L’utilizzo di un trasformatore nel convertitore consente, oltre che 
+l’isolamento galvanico tra ingresso e uscita, di ottenere valori di tensione in uscita note-
+volmente differenti dal valore in ingresso; nel caso di convertitori non isolati la tensione 
+di uscita può assumere, al massimo, 5 volte il valore della tensione in ingresso.
+Inoltre l’utilizzo del trasformatore con più avvolgimenti secondari consente di ottenere 
+più uscite ciascuna avente un proprio valore di tensione indipendente dalle altre. Per contro, 
+l’utilizzo del trasformatore comporta maggiori ingombri e maggiori perdite di potenza.
+Il modo in cui opera il trasformatore consente di suddividere i convertitori isolati, 
+muniti cioè di trasformatore, in due principali categorie, cioè quella dei convertitori asim-
+metrici e quella dei convertitori simmetrici. Nei convertitori asimmetrici, come nel caso 
+dei convertitori Flyback e Forward, il nucleo magnetico del trasformatore opera sempre 
+in un quadrante; il flusso ed il campo magnetico hanno sempre lo stesso segno.
+I convertitori simmetrici fanno variare il flusso nel nucleo del trasformatore in modo da 
+utilizzare tutti i quattro quadranti, quindi utilizzano in maniera più efficiente il nucleo 
+stesso.
+Ne consegue che con convertitori di tipo asimmetrico le potenze massime ottenibili 
+possono raggiungere il valore di 500 W, mentre con convertitori di tipo simmetrico si 
+supera comodamente la potenza di 1 kW.
+8.1  Convertitore Flyback
+Questo convertitore rappresenta la 
+versione isolata del convertitore
+Buck-Boost, dove, al posto 
+dell’induttore, troviamo non un ve-
+ro e proprio trasformatore, quanto 
+un induttore costituito da due av-
+volgimenti mutuamente accoppiati 
+(indicato comunemente come tra-
+sformatore) avvolti su un nucleo 
+funzionante in modo asimmetrico 
+perché comandato da un solo tran-
+sistor (Fig. XVIII.8.1).
+Quando il transistor è in condu-
+zione, la corrente scorre nell’av-
+volgimento primario e, conseguen-
+temente, l’energia viene immagaz-
+zinata nel nucleo del trasformatore; 
+energia che viene inviata verso 
+l’utilizzatore quando il transistor 
+passa all’interdizione. La polarità 
+del diodo D1 è tale per cui risulta 
+interdetto quando il transistor è 
+nella condizione di ON. 
+Fig. XVIII.8.1  Convertitore Flyback.
+Nel momento in cui il transistor passa allo stato di OFF, la tensione ai capi del secon-
+dario si inverte, il diodo risulta polarizzato direttamente e quindi la corrente scorre verso 
+il carico. Il picco di corrente del secondario dipende dal picco di corrente al primario in 
+ragione del rapporto spire del trasformatore. Il nucleo del trasformatore risulta, in questa 
+configurazione, di dimensioni piuttosto elevate, infatti tutta la potenza da trasferire al 
+carico viene accumulata sotto forma di energia nel nucleo in termini di 
+; inoltre, 
+Ui
+C1
+IP
+T1
+D1
+C2 Uo
+segnale di
+controllo
+c
+e
+ID1
+IP
+t
+t
+t
+tOFF
+Uce
+ID1
+Ui
+Sovratensione induttiva
+Ui+Uon1/n2
+tON
+1
+2--
+L
+
+I
+2
