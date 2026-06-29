@@ -1,0 +1,1699 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 115/116 ===
+Chars: 43,952 | Offset: 5,042,828
+
+
+
+[PAG 2252]
+20
+INDICE ANALITICO PER SEZIONI
+Livelli (gusci, strati elettronici), VII-4
+Maglia, VII-19
+Magnete di prova, VII-73
+Massa, VII-7
+Materiali, diamagnetici, VII-78, 84
+, duri, VII-80
+, ferromagnetici, VII-78, 84
+, paramagnetici, VII-78, 84
+, teneri, VII-80
+Maxwell, metodo di, VII-33
+Miller, teorema delle correnti, VII-42
+, teorema delle tensioni, VII-41
+Millmann, teorema di, VII-35, 150
+Motore elettrico, comportamento da, VII-
+99
+Neutroni, VII-3
+Newton, VII-96
+Nodo, VII-19
+Norton, teorema del generatore equiva-
+lente, VII-40, 150
+Numero, atomico, VII-3
+, complesso, VII-119
+, di massa, VII-3
+NTC, VII-10
+Ohm, legge di, VII-7
+, legge generale di, VII-15
+Operatore complesso, VII-166
+Partitore, di carica, VII-57
+, di tensione, VII-22, 148
+, di tensione capacitivo, VII-56
+Perdite per isteresi magnetica, VII-83
+Permeabilità, magnetica, VII-74
+, assoluta, VII-74
+, relativa, VII-78
+Permeanza magnetica, VII-81
+Periodo (di una grandezza periodica), VII-
+113
+Polarità di un magnete, VII-73
+Polarizzazione, VII-53
+Potenza, attiva o reale, VII-135
+, apparente, VII-136 
+, elettrica, VII-10
+, fluttuante, VII-135
+, generata, VII-16, 17, 152
+, istantanea, VII-134
+, persa, VII-16, 17, 152
+, reattiva, VII-136
+, utile, VII-16, 17, 152
+, utile erogata, VII-152
+Potenziale, ai nodi (metodo del), VII-34 
+, elettrico, VII-7
+Principio, di reciprocità, VII-45
+, di scomposizione, VII-166
+, di sostituzione e compensazione, VII-
+43
+Protoni, VII-3
+PTC, VII-10
+Pulsazione propria del circuito, VII-140
+Punto di lavoro di un generatore, VII-16, 
+17
+Quadripolo, VII-152
+Quantità di elettricità, VII-5
+Reattanza, capacitiva, VII-124
+, induttiva, VII-122
+Rendimento, definizione, VII-17
+, del generatore, VII-152
+Resistenza, differenziale, VII-8
+, elettrica, VII-7, 119
+, incrementale, VII-8
+, interna di un generatore, VII-13
+, totale, VII-8
+Resistività elettrica, VII-8
+Resistori, collegati a stella, VII-24
+, collegati a triangolo, VII-24
+, trasformazione da stella a triangolo, 
+VII-25
+, trasformazione triangolo-stella, VII-24
+, trasformazione stella-poligono, VII-46
+Rete elettrica, VII-19
+Rifasamento, di un carico monofase, VII-
+170
+, di un carico trifase, VII-171
+Rifrazione delle linee di forza magnetica, 
+VII-85
+Riluttanza magnetica, VII-81
+Risonanza, VII-139
+Risposta in frequenza, VII-138
+Schermi elettrostatici, VII-51
+Semiconduttori, VII-4
+Siemens, VII-8
+Sistema elettrico, a circuiti indipendenti, 
+VII-158
+, bifase, VII-158
+
+[PAG 2253]
+SEZIONE VII ELETTROTECNICA GENERALE
+21
+, composto, VII-158
+, esafase, VII-158
+, polifase, VII-158
+, simmetrico, VII-158
+Sistema elettrico trifase, VII-158
+Solenoide, corto, VII-75
+, lungo, VII-75
+, toroidale, VII-76 
+Sovrapposizione degli effetti, metodo 
+della, VII-36, 150
+Spostamento elettrico (vettore), VII-53
+Superficie equipotenziale, VII-51
+Suscettanza capacitiva, VII-124, 129
+Temperatura critica, VII-9
+Tempo di assestamento, VII-63
+Tensione, elettrica, VII-6
+, a carico, VII-151
+, a vuoto, VII-13, 151
+, caduta di tensione assoluta, VII-152
+, caduta di tensione interna del genera-
+tore, VII-151
+, caduta di tensione relativa percentuale, 
+VII-152
+, concatenata (di linea), VII-160
+, di fase (stellata), VII-159
+, impulso di, VII-97
+, impressa, VII-13
+, indotta, VII-96
+, sinusoidale (valore max della), VII-101
+, variazione della tensione da vuoto a 
+carico, VII-151
+Terna simmetrica, diretta, VII-166
+, inversa, VII-166
+, omopolare, VII-166
+Terne simmetriche, teoria delle, VII-165
+Thevenin, teorema del generatore equiva-
+lente, VII-38, 150
+Transitorio, di magnetizzazione, VII-106
+, di smagnetizzazione, VII-108
+Triangolo, delle ammettenze, VII-127, 
+130, 133
+, delle impedenza, VII-126, 128, 131
+, delle correnti, VII-127, 130, 133
+, delle tensioni, VII-126, 129, 132
+Utilizzatori, convenzione di segno degli, 
+VII-12
+Valore, massimo (di una grandezza alter-
+nata), VII-114
+, efficace (di una grandezza alternata), 
+VII-114
+, picco-picco (di una grandezza alter-
+nata), VII-114
+, medio nel periodo (di una grandezza 
+alternata), VII-114
+, medio nel semiperiodo (di una gran-
+dezza alternata), VII-14
+Velocità angolare, VII-100
+Vettore, associato a una sinusoide, VII-
+118
+, spostamento elettrico, VII-51
+Vettori, terna pura di, VII-167
+Volt, VII-7
+Voltmetro, VII-7
+Watt, VII-10
+Weber, VII-80
+
+[PAG 2254]
+22
+INDICE ANALITICO PER SEZIONI
+Sezione VIII
+Macchine elettriche
+Alternatore, VIII-52
+–, a carico, VIII-54
+–, a vuoto, VIII-53
+–, in corto circuito, VIII-56
+–, parallelo, VIII-59
+–, studio secondo Behn Eschenburg, VIII-
+55
+–, studio secondo Potier, VIII-57
+Armoniche di un trasformatore, VIII-10
+Autotrasformatore, VIII-28
+–, monofase, VIII-28
+–, trifase, VIII-29
+Avvolgimenti compensatori, VIII-71
+–, per corrente alternata, VIII-51
+–, per corrente continua, VIII-73, 74
+–, per trasformatori, VIII-22
+Avviamento, di un motore asincrono mono-
+fase, VIII-50
+–, di un motore asincrono trifase, VIII-45
+–, di un motore a corrente continua, VIII-80
+Behn Eschenburg, VIII-55
+Campo magnetico rotante trifase, VIII-31
+Caratteristica, di eccitazione di un alterna-
+tore, VIII-54
+–, di eccitazione di una dinamo, VIII-68
+–, di regolazione di un alternatore, VIII-59
+–, esterna di un alternatore, VIII-58
+–, esterna di una dinamo, VIII-72
+–, meccanica di un motore a corrente con-
+tinua, VIII-79, 83, 84, 85
+–, meccanica di un motore asincrono, 
+VIII-41
+Circuiti equivalenti di un trasformatore, 
+VIII-12, 13
+Coefficiente, di Potier, VIII-57
+–, di stipamento, VIII-22
+–, di utilizzazione geometrica, VIII-22
+Collegamento dei trasformatori trifasi, a 
+V, VIII-26
+–, a zig-zag, VIII-18
+–, in parallelo, VIII-24
+–, tri-esafase, VIII-28
+Collettore, VIII-73
+Commutazione dei poli di un motore asin-
+crono, VIII-49
+Composto/a di,
+–, dinamo ad eccitazione, VIII-77
+–, motore ad eccitazione, VIII-84
+Coppia, motrice di un motore asincrono, 
+VIII-42
+–, motrice di un motore a corrente conti-
+nua, VIII-79
+Corrente magnetizzante di un trasforma-
+tore, VIII-10
+Correnti parassite, VIII-6
+Corto circuito,
+–, funzionamento in, di un alternatore, 
+VIII-56
+–, funzionamento in, di un motore asin-
+crono, VIII-44
+–, funzionamento in, di un trasformatore, 
+VIII-19
+Diagramma circolare di un alternatore, 
+VIII-63
+Diagramma circolare di un motore asin-
+crono, VIII-43
+Dinamo, a carico, VIII-69
+–, a vuoto, VIII-67
+–, ad eccitazione composta, VIII-77
+–, ad eccitazione indipendente, VIII-66
+–, ad eccitazione parallelo, VIII-74
+–, ad eccitazione serie, VIII-76
+–, fem indotta, VIII-67
+–, principio di funzionamento, VIII-66
+Distorsione della corrente magnetizzante, 
+VIII-10
+Eccitazione, di un alternatore, VIII-54
+–, di una dinamo, VIII-68
+Effetto pellicolare, VIII-5
+Equivalente,
+–, impedenza, di un motore asincrono, VIII-
+43
+–,  impedenza, di un trasformatore, VIII-13, 
+14, 15
+
+[PAG 2255]
+SEZIONE VIII MACCHINE ELETTRICHE
+23
+Fattore, di distribuzione, VIII-34
+–, di forma, VIII-34
+–, di passo, VIII-35
+Fem indotta, in una dinamo, VIII-67
+–, in un alternatore, VIII-53
+–, in un avvolgimento trifase, VIII-33
+–, in un trasformatore, VIII-9
+Generatore, a corrente continua, VIII-66
+–, asincrono, VIII-45
+–, sincrono, VIII-52
+Gruppi dei trasformatori, VIII-19
+Impedenza, equivalente di un motore asin-
+crono, VIII-43
+–, equivalente di un trasformatore, VIII-
+13, 14
+–, sincrona, VIII-56
+Isolanti, VIII-7
+Isteresi, VIII-5
+Macchina a corrente continua, VIII-66
+–, elementi costruttivi, VIII-72
+Macchina sincrona, VIII-52
+–, come generatore, VIII-52, 60
+–, come motore, VIII-61
+–, curva a V, VIII-64
+–, principi costruttivi, VIII-64
+–, raffreddamento, VIII-66
+Motore asincrono, a carico, VIII-39
+–, a vuoto, VIII-38
+–, elementi costruttivi, VIII-51
+–, in corto circuito, VIII-45
+–, monofase, VIII-49
+Motore sincrono, VIII-61
+Motori a corrente continua, ad eccitazione 
+composta, VIII-84
+–, ad eccitazione parallelo, VIII-81
+–, ad eccitazione serie, VIII-82
+–, a carico, VIII-79
+–, a vuoto, VIII-78
+–, avviamento, VIII-80
+Parallelo, degli alternatori, VIII-59
+–, dei trasformatori, VIII-24
+–, dinamo ad eccitazione, VIII-74
+–, motore a corrente continua ad eccita-
+zione, VIII-81
+Perdite, addizionali, VIII-8
+–, nel dielettrico, VIII-7
+–, nel ferro, VIII-5
+–, per correnti parassite, VIII-6
+–, per isteresi, VIII-5
+Poli ausiliari, VIII-71
+Potenza, meccanica di un asincrono, VIII-
+41
+–, meccanica di un sincrono, VIII-61
+–, reattiva di una macchina sincrona, VIII-
+62
+–, sincronizzante, VIII-61
+–, trasmessa di un asincrono, VIII-40
+Raffreddamento, dei trasformatori, VIII-23
+–, di una macchina sincrona, VIII-66
+–, di un motore asincrono, VIII-52
+Reazione, di armatura di un alternatore, 
+VIII-54
+–, di una dinamo, VIII-69
+Regolazione della tensione, VIII-29, 37
+–, della velocità di un asincrono, VIII-48
+–, della velocità di un motore a corrente 
+continua, VIII-80
+Rendimento, di un alternatore, VIII-57
+–, di un motore asincrono, VIII-40
+–, di un trasformatore, VIII-16
+–, di una dinamo, VIII-72
+–, delle macchine, VIII-7
+Rotore, di un motore asincrono, VIII-52
+–, di una macchina a corrente continua, 
+VIII-73
+–, di una macchina sincrona, VIII-64
+Scorrimento, VIII-38
+Serie, dinamo ad eccitazione, VIII-76
+–, motore ad eccitazione, VIII-82
+Sincronismo, velocità di, VIII-33
+Statore, di una macchina a corrente conti-
+nua, VIII-72
+–, di una macchina sincrona, VIII-65
+–, di un motore asincrono, VIII-51
+Trasformatore, a campo rotante, VIII-36
+–, a doppio rapporto, VIII-26
+–, a due secondari, VIII-26
+–, a V, VIII-26
+–, elementi costruttivi, VIII-21
+Trasformatore monofase, VIII-8
+–, fem indotta, VIII-9
+–, a carico, VIII-11
+–, a vuoto, VIII-9
+
+[PAG 2256]
+24
+INDICE ANALITICO PER SEZIONI
+–, in corto circuito, VIII-14
+Trasformatore trifase, VIII-17
+–, a carico, VIII-19
+–, a vuoto, VIII-17
+–, in corto circuito, VIII-19
+Variatore di fase, VIII-36
+Variatore di tensione, a trasformatore, 
+VIII-29
+–, trifase a induzione, VIII-37
+Variazione di tensione, di un alternatore, 
+VIII-58
+–, di un trasformatore, VIII-16
+Vuoto, corrente a, di un motore asincrono 
+VIII-38
+–, corrente a, di un trasformatore, VIII-9
+–, funzionamento a, di un alternatore, 
+VIII-53
+–, funzionamento a, di un motore asin-
+crono, VIII-38
+–, funzionamento a, di un motore a cor-
+rente continua, VIII-78
+–, funzionamento a, di un trasformatore, 
+VIII-9, 17
+–, funzionamento a, di una dinamo, VIII-
+67
+Zig-zag, collegamento a, VIII-18
+
+[PAG 2257]
+SEZIONE IX MISURE ELETTRICHE
+25
+Sezione IX
+Misure elettriche
+Alternatore, IX-75
+–, caratteristica dell’impedenza sincrona 
+di un, IX-78
+–, caratteristica di eccitazione di un, IX-77
+–, caratteristica di regolazione di un, IX-76
+–, caratteristica esterna di un, IX-76
+–, curva a V di un, IX-79
+–, prova a vuoto di un, IX-77
+–, prova diretta di un, IX-76
+–, prova in corto circuito di un, IX-77
+–, rendimento convenzionale di un, IX-78
+–, variazione di tensione di un, IX-78
+Amperometro, IX-31
+–, a coppia termoelettrica, IX-17
+–, a filo caldo, IX-17
+–, a induzione, IX-24
+–, elettrodinamico, IX-22
+–, elettromagnetico, IX-16
+–, elettrostatico, IX-18
+–, magnetoelettrico, IX-14
+–, portata di un, IX-31
+–, verifica di taratura di un, IX-32
+Aron (inserzione), IX-48
+Asincrono (motore), IX-71
+–, diagramma circolare di un, IX-74
+–, prova a vuoto di un, IX-72
+–, prova diretta di un, IX-71
+–, prova in corto circuito di un, IX-73
+Balistico (galvanometro), IX-54
+Barbagelata (inserzione), IX-50
+Capacità, misura mediante galvanometro 
+balistico, IX-55
+–, misura con metodo industriale, IX-43
+–, misura con ponte di De Sauty, IX-44
+–, misura con ponte di Schering, IX-45
+–, misura con ponte di Wien, IX-44
+Caratteristica, di corto circuito di un alter-
+natore, IX-77
+–, di eccitazione di un alternatore, IX-77
+–, di eccitazione di una dinamo, IX-80
+–, di regolazione di un alternatore, IX-76
+–, esterna di un alternatore, IX-76 
+–, esterna di un trasformatore, IX-68
+–, esterna di una dinamo, IX-80
+Cifra di perdita di un lamierino, IX-63
+–, rilievo della, mediante apparecchio di 
+Epstein, IX-62
+Circolare (diagramma di un motore asin-
+crono), IX-74
+Classi di precisione, degli strumenti indi-
+catori, IX-12
+–, dei trasformatori di corrente, IX-61
+–, dei trasformatori di tensione, IX-59
+Confronto, metodo di, per la misura di una 
+resistenza, IX-33
+–, metodo di, per la taratura di un ampero-
+metro, IX-32
+–, metodo di, per la taratura di un voltme-
+tro, IX-31
+Contatore monofase a induzione, IX-25
+Contatori (inserzione in sistemi trifasi), 
+IX-53
+Coppia, motrice dei motori, IX-66
+–, di smorzamento, IX-11
+–, frenante elettromagnetica, IX-66
+–, motrice in strumenti ad induzione, IX-
+23
+–, motrice in strumenti elettrodinamici, 
+IX-20
+–, motrice in strumenti elettromagnetici, 
+IX-16
+–, motrice in strumenti magnetoelettrici, 
+IX-13
+Corrente (misura della), IX-31
+Corto circuito, prova di, di un alternatore, 
+IX-77
+–, prova di, di un motore asincrono, IX-73
+–, prova di, di un trasformatore, IX-69
+–, ricerca del, in una linea, IX-36
+Costante, di un contatore, IX-26
+–, di uno strumento, IX-10
+Curva a V di una macchina sincrona, IX-79
+De Sauty (ponte di), IX-44
+Diagramma circolare di un motore asin-
+crono, IX-74
+
+[PAG 2258]
+26
+INDICE ANALITICO PER SEZIONI
+Dinamo, caratteristica di eccitazione di 
+una, IX-80
+–, caratteristica esterna di una, IX-80
+–, prova a vuoto di una, IX-80
+–, prova diretta di una, IX-79
+Dinamo-freno, IX-66
+Diretta, prova, di un alternatore, IX-76
+–, prova, di un motore asincrono, IX-71
+–, prova, di un trasformatore, IX-67
+–, prova, di una dinamo, IX-79
+Elettrodinamico, amperometro, IX-22
+–, strumento, IX-20
+–, voltmetro, IX-21
+–, wattmetro, IX-22
+Elettrostatico, amperometro, IX-18
+–, strumento, IX-17
+–, voltmetro, IX-18
+Energia, misura di, con contatore, IX-25
+–, misura di, su linee trifasi, IX-53
+Epstein (apparecchio di), IX-62
+Errore, assoluto, IX-5
+–, di apprezzamento, IX-10
+–, di fase di un wattmetro, IX-42
+–, di inserzione, IX-32, 41
+–, di parallasse, IX-10
+–, di un trasformatore di corrente, IX-61
+–, di un trasformatore di tensione, IX-59
+–, di una operazione, IX-6
+–, occasionale, IX-5
+–, relativo, IX-5
+–, sistematico, IX-5
+Esterna, caratteristica, di un alternatore, 
+IX-76
+–, caratteristica, di un trasformatore, IX-68
+–, caratteristica esterna di una dinamo, IX-
+80
+Fasometro, IX-57
+Fattore di potenza su sistemi trifasi, IX-
+49, 50, 51
+Flusso magnetico, misura di, con genera-
+tore di Hall, IX-56
+–, misura di, con galvanometro balistico, 
+IX-55
+Forza elettromotrice (misura di), IX-39
+Freno elettromagnetico, IX-65, 66
+Frequenzimetro, IX-57
+Galvanometro, IX-13
+–, balistico, IX-54
+Hall (generatore di), IX-56
+Impedenza, misura di, con metodo indu-
+striale, IX-43
+–, misura di, mediante ponti, IX-43, 44, 45
+–, misura di, sincrona di un alternatore, 
+IX-78
+Indicatori di senso ciclico, IX-58
+Induttanza (misura di, mediante ponti), 
+IX-44, 45, 46
+Isolamento (misura di,), IX-64
+Kohlrausch (ponte di), IX-44
+Logometrico, fasometro, IX-57
+–, ohmmetro, IX-37
+Maxwell (ponte di), IX-45
+Motore a corrente continua (prova 
+diretta), IX-81
+Motore asincrono, prova a vuoto, IX-72
+–, prova diretta, IX-71
+–, prova in corto circuito, IX-73
+Motore sincrono (curva a V), IX-79
+Motori (prove sui), IX-65
+Ohmmetro, a bobine incrociate (logome-
+trico), IX-37
+–, in serie, IX-36
+Parallasse (errore di), IX-10
+Pasqualini (freno), IX-65
+Perdite, di un lamierino magnetico, IX-62
+–, per correnti parassite, IX-63
+–, per isteresi, IX-63
+Ponte, a filo, IX-35
+–, di De Sauty, IX-44
+–, di Kohlrausch, IX-44
+–, di Maxwell, IX-45
+–, di Schering, IX-45
+–, di Wheatstone, IX-34
+–, di Wien, IX-44
+Ponte, doppio di Thomson, IX-35
+–, in corrente alternata, IX-43
+Portata, di un amperometro, IX-31
+–, di un voltmetro, IX-30
+–, di uno strumento, IX-9
+Potenza, attiva monofase, IX-42
+
+[PAG 2259]
+SEZIONE IX MISURE ELETTRICHE
+27
+–, attiva trifase su carico accessibile, IX-
+46
+–, attiva trifase, inserzione Aron, IX-48
+–, reattiva trifase, IX-49, 51, 52
+–, resa di un motore, IX-66
+Potenziometrico, circuito, IX-28
+–, metodo, IX-39
+Prestazione di un trasformatore, di cor-
+rente, IX-60
+–, di tensione, IX-59
+Prova, diretta di una macchina, IX-65
+–, indiretta di una macchina, IX-67
+Prova a vuoto, di un alternatore, IX-77
+–, di un motore asincrono, IX-72
+–, di un trasformatore, IX-68
+–, di una dinamo, IX-80
+Prova diretta, dei motori, IX-65
+–, di un alternatore, IX-76
+–, di un motore asincrono, IX-71
+–, di un trasformatore, IX-67
+–, di una dinamo, IX-79
+Prova in corto circuito, di un alternatore, 
+IX-77
+–, di un motore asincrono, IX-73
+–, di un trasformatore, IX-69
+Rapporto di trasformazione, IX-69
+Regolazione, potenziometrica, IX-28
+–, reostatica, IX-27
+Rendimento convenzionale, di un alterna-
+tore, IX-78
+–, di un motore asincrono, IX-72, 75
+–, di un trasformatore, IX-71
+–, di una dinamo, IX-79
+–, di una macchina, IX-67
+Reostati, IX-27
+Resistenza, addizionale di un voltmetro, 
+IX-30
+–, di isolamento, IX-64
+–, di terra, IX-37
+–, equivalente di un motore asincrono, IX-
+74
+–, equivalente di un trasformatore, IX-70
+–, in derivazione di un amperometro, IX-
+31
+–, interna di un amperometro, IX-31
+–, interna di un voltmetro, IX-29
+–, interna di una dinamo, IX-80
+Resistenza (misura di mediante), 
+–, doppio ponte di Thomson, IX-35
+–, metodo di confronto, IX-33
+–, metodo di sostituzione, IX-34
+–, metodo voltamperometrico, IX-32
+–, con ohmmetro a bobine incrociate, IX-37
+–, con ohmmetro in serie, IX-36
+–, con ponte a filo, IX-35
+–, con ponte di Kohlrausch, IX-44
+–, con ponte di Wheatstone, IX-34
+Righi (inserzione), IX-52
+Riscaldamento (prove sulle macchine), IX-
+64
+Scala, antiparallasse, IX-11
+–, ticonica, IX-10
+Schering (ponte di), IX-45
+Sensibilità di uno strumento, IX-10
+Senso ciclico (indicatori di), IX-58
+Smorzatori, IX-11
+Sostituzione (metodo di, per la misura di 
+una resistenza), IX-34
+Sovratemperatura di una macchina, IX-64
+Spinterometri, IX-19
+Strumenti, a induzione, IX-22
+–, elettrodinamici, IX-20
+–, elettromagnetici, IX-15
+–, elettrostatici, IX-17
+–, indicatori, IX-9
+–, magnetoelettrici, IX-13
+–, termici, IX-16
+Taratura, degli strumenti, IX-12
+–, di un amperometro, IX-32
+–, di un voltmetro, IX-31
+–, di un wattmetro, IX-41
+Tensione, misura della, IX-29
+Thomson (doppio ponte di), IX-35
+Ticonica (scala), IX-10
+Trasformatori, di corrente, IX-60
+–, di tensione, IX-59
+–, prova a vuoto, IX-68
+–, prova diretta, IX-67
+–, prova in corto circuito, IX-69
+–, rendimento convenzionale, IX-71
+–, variazione di tensione, IX-71
+Trasformatori trifasi, misure di potenza 
+attiva, IX-48
+–, misure di potenza reattiva, IX-49÷52
+–, misure su carico accessibile, IX-46
+Variazione di tensione, di un alternatore,
+
+[PAG 2260]
+28
+INDICE ANALITICO PER SEZIONI
+IX-78
+–, di un trasformatore, IX-71
+Voltamperometrico (metodo per la misura 
+di), impedenza, IX-43
+–, potenza, IX-40
+–, resistenza, IX-32
+Voltmetro, a coppia termoelettrica, IX-17
+–, a induzione, IX-25
+–, elettrodinamico, IX-21
+–, elettromagnetico, IX-15
+–, elettrostatico, IX-18
+–, magnetoelettrico, IX-14
+–, portata di un, IX-30
+–, taratura di un, IX-31
+Vuoto (prova a, di), un alternatore, IX-77
+–, di un motore asincrono, IX-72
+–, di un trasformatore, IX-68
+Wattmetro, a basso fattore di potenza, IX-
+43
+–, a induzione, IX-25
+–, elettrodinamico, IX-40
+–, errore di fase del, IX-42
+–, taratura di un, IX-41
+Wheatstone (ponte di), IX-34
+Wien (ponte di,), IX-44
+
+[PAG 2261]
+SEZIONE X IMPIANTI ELETTRICI
+29
+Sezione X
+Impianti elettrici
+ACSR (Alluminium Conductor Steel 
+Reinforced), X-32
+Alimentazione, dei servizi di sicurezza, X-
+222, 236, 242
+, di emergenza, X-222
+, di riserva, X-222
+Alternatore, X-271
+, eccitazione dell’, X-271
+, raffreddamento dell’, X-271
+Altezza, cinetica, X-258
+, geodetica, X-258
+, piezometrica, X-258
+Ambienti, a maggior rischio in caso di 
+incendio, X-237
+Apertura, X-246
+, di tipo A, X-246
+, di tipo B, X-246
+, di tipo C, X-246
+, di tipo D, X-246
+Apparecchio, di manovra, X-100
+, elettromedicale, X-232
+Arresto di emergenza, X-213
+Atmosfera pericolosa, X-243
+Avviatore, X-101
+, diretto, X-102
+, invertitore, X-102
+, stella-triangolo, X-102
+Baricentro elettrico, X-206
+Barre, di controllo, X-266
+, di emergenza, X-266
+Bernoulli (trinomio di), X-258
+Blindosbarre, X-38
+Burn up, X-267
+Cabine, di smistamento, X-192
+, di trasformazione, X-192
+, di utente, X-193
+, elettriche, X-6, 193
+, pubbliche, X-193
+Caduta di tensione, ammissibile, X-76
+, industriale, X-28
+, unitaria, X-77
+Calcolo, di progetto, X-73
+, di verifica, X-73
+Caldaia, X-262, 264
+, ad attraversamento meccanico, X-264
+, a tubi d’acqua, X-264
+Campo d’interruzione, X-126
+, pieno, X-126
+, ridotto, X-126
+Cantieri (di costruzione e di demolizione), 
+X-230
+Capacità di servizio, X-22
+Caratteristica, di limitazione, X-127, 128
+, d’intervento, X-114, 116, 125, 176
+Carico d’incendio, X-238
+, specifico, X-238
+Carico termico, orario, X-262
+, specifico, X-262
+Categoria, d’impiego (dei contattori), X-
+121
+, d’uso (dei fusibili), X-126
+Cavi, a basso sviluppo di fumi e gas tos-
+sici e corrosivi, X-43
+, armonizzati, X-44
+, elettrici, X-39
+, non armonizzati, X-45
+, non propaganti la fiamma, X-43
+, non propaganti l’incendio, X-43
+, resistenti al fuoco, X-43
+Centrali, ad acqua fluente, X-259
+, a ciclo combinato, X-265
+, a serbatoio, X-259
+, a vapore dominante, X-269
+, di generazione e pompaggio, X-260
+, elettriche, X-6, 256
+, eoliche, X-256, 270
+, geotermoelettriche, X-256, 269
+, idroelettriche, X-256, 258
+, mareomotrici, X-256, 270
+, nucelotermoelettriche, X-256, 266
+, solari, X-256, 270
+, termoelettriche, X-256, 261
+Circuito, di distribuzione, X-5
+, di sicurezza, X-225
+, elettrico, X-4
+Circuito terminale, X-5
+
+[PAG 2262]
+30
+INDICE ANALITICO PER SEZIONI
+Classe, del compartimento antincendio, 
+X-238
+Collaudo, X-247
+Collegamento equipotenziale, principale, 
+X-170
+, supplementare, X-170
+Collettore di terra, X-169
+Comando, a lancio di corrente, X-214
+, a mancanza di tensione, X-214
+, di emergenza, X-213, 242
+, funzionale, X-214
+Combustibili, X-262
+, nucleari, X-267
+Componenti, di classe 0, X-181
+, di classe I, X-181
+, di classe II, X-182
+, di classe III, X-182
+, Ex, X-246
+Condotte forzate, X-258
+Conduttore, di protezione, X-167
+, di terra, X-167
+, equipotenziale, X-170
+, PEN, X-170
+Consumo, orario di combustibile, X-262
+, specifico di combustibile, X-262
+Contatto, diretto, X-182
+, indiretto, X-182
+Contattore, X-101, 120
+, compatto, X-120
+, su barra, X-120
+Controllo, a campione, X-248
+, totale, X-248
+Conversione, dell’energia solare, X-270
+, fotovoltaica, X-270
+, solare termoelettrica, X-270
+Corde, di alluminio-acciaio, X-35
+, di alluminio crudo, X-34
+, di lega di alluminio, X-34
+, di rame crudo, X-33
+Corrente, convenzionale d’intervento, X-
+117, 126, 131
+, convenzionale di non intervento, X-
+117, 126
+, di corto circuito, X-84
+, di corto circuito minima convenzionale, 
+X-99
+, di corto circuito presunta, X-104
+, di corto circuito totale, X-85
+, di cresta di breve durata, X-108
+, di esercizio (di un SPD), X-149
+, differenziale nominale d’intervento, X-
+175
+, differenziale nominale di non inter-
+vento, X-175
+, di guasto a terra, X-173
+, di impiego, X-4, 10, 18, 131
+, di interruzione nominale in corto cir-
+cuito, X-104
+, di terra, X-173
+, ininterrotta nominale, X-103
+, massima di scarica, X-149
+, nominale, X-14, 103, 131, 175
+, nominale di breve durata ammissibile, 
+X-105, 108
+, nominale di corto circuito, X-104
+, nominale di impiego, X-123
+, nominale di scarica, X-149
+, termica nominale, X-103, 108, 122
+, termica nominale in involucro, X-103, 
+122
+Costante di tempo, X-83
+Costi, fissi, X-221
+, proporzionali, X-221
+Curva di sicurezza, X-159, 160
+Dispersori, X-164
+, elettricamente indipendenti, X-173
+, in parallelo, X-173
+, naturali (o di fatto), X-164
+, propri (o intenzionali), X-164
+Distribuzione, a centri di carico con rete 
+MT ad anello, X-208
+, a centri di carico con rete MT radiale, 
+X-208
+, centralizzata, X-208
+, dorsale, X-211
+, mista, X-211
+, radiale, X-211
+Effetto corona, X-24
+Efficienza (di un LPS), X-151
+Emissione, grado di, X-245
+, sorgente di, X-245
+Energia specifica passante, X-117, 127
+Esame a vista, X-247, 249
+, approfondito, X-247
+, ordinario, X-247
+Fattore, di contemporaneità, X-12
+, di cresta, X-88
+, di frequenza, X-153
+
+[PAG 2263]
+SEZIONE X IMPIANTI ELETTRICI
+31
+, di limitazione, X-125
+, di percorso, X-155
+, di utilizzazione, X-11
+Fertilizzazione, X-267
+Frequenza di fulminazione, diretta, X-151
+, tollerabile, X-151
+Grado, di apertura, X-260
+, di reazione, X-260
+Illuminazione, di emergenza, X-225
+, di riserva, X-225
+, di sicurezza, X-225, 242
+Impedenza, dell’anello di guasto, X-187, 
+254
+, di rete, X-92
+Impianto, di sicurezza, X-242
+, di terra globale, X-164
+, elettrico, X-4
+, utilizzatore, X-4
+Induttanza di servizio, X-21
+Integrale di Joule, X-88
+Interruttore, X-101
+, ad aria compressa, X-105
+, a deionizzazione magnetica, X-105
+, a esafluoruro di zolfo, X-105
+, aperto, X-109
+, automatico, X-101
+, automatico limitatore, X-129
+, automatico magnetotermico, X-110
+, a volume d’olio ridotto, X-105
+, con fusibili incorporati, X-101
+, differenziale, X-174
+, differenziale di tipo A, X-175
+, differenziale di tipo AC, X-175
+, differenziale di tipo generale, X-175
+, differenziale di tipo selettivo, X-175
+, differenziale magnetotermico, X-175
+, differenziale puro, X-175
+, differenziale regolabile, X-175
+, di manovra, X-101
+, di manovra con fusibili, X-101
+, di manovra-sezionatore, X-101
+, estraibile, X-101
+, modulare, X-110
+, scatolato, X-110
+, sotto vuoto, X-106
+Interruzione, per manutenzione non elet-
+trica, X-213
+IP (International Protection), X-178
+Isolamento, X-181
+, doppio, X-181
+, funzionale, X-181
+, principale, X-181
+, rinforzato, X-181
+, supplementare, X-181
+Isolatori, a cappa e perno, X-37
+, a sospensione, X-37
+, rigidi, X-37
+Linea elettrica, X-19
+Locali, a uso medico, X-232
+, contenenti bagni o docce, X-227
+, di gruppo 0, X-232
+, di gruppo 1, X-232
+, di gruppo 2, X-233
+, isolanti, X-189
+, resi equipotenziali e non connessi a 
+terra, X-189
+LPS (Lightning Protection System), X-
+151
+Luoghi, con pericolo di esplosione, X-243
+, di classe 0, X-244
+, di classe 2, X-244
+, di pubblico spettacolo e di tratteni-
+mento, X-241, 249
+, pericolosi per la presenza di gas o 
+vapori, X-244
+, pericolosi per la presenza di polveri 
+infiammabili, X-245
+Massa, X-182
+, estranea, X-182
+Megawattdaytermico, X-267
+Moderatore, X-267
+Momenti amperometrici, X-78÷83
+MOV (Metal Oxide Varistor), X-148
+Numero di giri caratteristico, X-260
+Officina elettrica, X-6
+Origine (di un impianto utilizzatore), X-4
+Parametri, longitudinali, X-19
+, trasversali, X-20
+Parte, applicata, X-232
+, attiva, X-182
+Polveri, elettroconduttrici, X-244
+, non elettroconduttrici, X-244
+Portata (di un cavo), X-42, 58, 67
+
+[PAG 2264]
+32
+INDICE ANALITICO PER SEZIONI
+Potenza, apparente di progetto, X-202
+, apparente specifica, X-17
+, assorbita nominale, X-14
+, attiva contrattuale, X-203
+, convenzionale, X-10
+, di margine, X-203
+, nominale, X-14
+, persa in linea, X-27
+Potere, calorifico inferiore, X-261
+, di chiusura nominale, X-104, 109, 122
+, di corto circuito nominale, X-104
+, di interruzione differenziale, X-177
+, di interruzione nominale, X-103, 108, 
+122
+, di interruzione nominale di servizio, X-
+104
+, di interruzione nominale estremo, X-
+104
+, di interruzione nominale su corto cir-
+cuito, X-104
+Pozzo piezometrico, X-259
+Prevalenza, X-258
+Protezione, contro le fulminazioni indi-
+rette, X-149
+, dai guasti interni del trasformatore, X-
+204
+, dei conduttori di fase e di neutro, X-138
+, differenziale, X-272
+, di massa rotorica, X-272
+, di massa statorica, X-272
+, di massima corrente, X-271
+, di massima tensione, X-271
+, di sostegno (back-up), X-135
+, distinta per sovraccarico e corto cir-
+cuito, X-138
+, parziale, X-189
+, totale, X-189
+, unica per sovraccarico e corto circuito, 
+X-138
+Prove, X-247, 250
+Quadro, ad armadio, X-206
+, a leggio, X-206
+, a parete, X-205
+, elettrico, X-205
+Reattanza di servizio, X-21
+Reattore, AGR, X-268
+, autofertilizzante, X-267
+, ABWR, X-269
+, AP, X-269
+, BWR, X-268
+, CANDU, X-268
+, EPR, X-269
+, ESBWR, X-269
+, GCR, X-268
+, lento, X-266
+, Magnox, X-268
+, nucleare, X-266
+, PWR, X-268
+, RBMK, X-268
+, Super-Phénix, X-268
+Rendimento, di linea, X-27
+, di una turbina, X-260
+, effettivo (di una centrale termoelet-
+trica), X-261
+Resistenza, dell’anello di guasto, X-253
+, di terra, X-159, 163, 253
+, elettrica di linea, X-20
+, verso terra della persona, X-159
+Rifasamento, X-215
+, centralizzato a potenza costante, X-218
+, centralizzato a potenza modulabile, X-
+219
+, distribuito, X-217
+, misto, X-219
+, per gruppi, X-218
+Scaricatori, a espulsione, X-147
+, a resistenza non lineare, X-147
+, di sovratensione, X-146
+, spinterometrici, X-147
+Schermo (dei cavi elettrici), X-40
+Selettività, amperometrica, X-139
+, cronometrica, X-139
+, di zona, X-140
+, energetica, X-139
+, parziale, X-139
+, totale, X-139
+Separazione elettrica, X-189
+Servizi ausiliari, X-274
+, essenziali, X-275
+Servizio, di base, X-257
+, di punta, X-257
+Sezionamento, X-212
+Sezionatore, X-101, 108
+, con fusibili, X-101
+, di terra, X-169
+Sistema, a bassa tensione, X-6
+, ad alta tensione, X-6
+
+[PAG 2265]
+SEZIONE X IMPIANTI ELETTRICI
+33
+, a media tensione, X-6
+, di categoria 0, X-6
+, di categoria I, X-6
+, di categoria II, X-6
+, di categoria III, X-6
+, di Categoria A, X-40
+, di Categoria B, X-40
+, elettrico, X-5
+, FELV, X-190
+, IT, X-8
+, IT-M, X-234
+, PELV, X-190
+, SELV, X-190
+, TN-C, X-8
+, TN-C-S, X-8
+, TN-S, X-8
+, TT, X-8
+Soccorritore, X-224
+Soglia, di fibrillazione, X-154
+, di percezione, X-153
+, di rilascio, X-153
+Sorgente, di alimentazione, X-190
+, di sicurezza, X-190
+Sovraccarico, X-83
+Sovracorrente, X-83
+, di avviamento, X-140
+Sovratensione, X-143
+, a formazione lenta, X-145
+, a impulso, X-145
+, di origine esterna, X-144
+, di origine interna, X-143
+, temporanea, X-149
+SPD, X-148
+, a commutazione, X-148
+, a limitazione di tensione, X-148
+, combinati, X-148
+Stallo, X-272
+Stazione, annessa alla centrale, X-272
+, elettrica, X-6, 272
+, ricevitrice primaria, X-272
+, ricevitrice secondaria, X-272
+Struttura adibita a uso agricolo e zootec-
+nico, X-231
+Suscettanza di servizio, X-23
+Tariffa, a forfait, X-222
+, binomia, X-221
+, multioraria, X-222
+, trinomia, X-221
+Teleruttore, X-101, 120
+Temperatura, di servizio, X-42
+, massima ammissibile, X-42
+, massima di corto circuito, X-42
+Tempo, d’interruzione, X-187
+, d’intervento, X-176
+, di permanenza del guasto, X-160
+, tempo limite di non risposta, X-186
+, minimo di non intervento, X-176
+Tensione, di contatto, X-159, 164
+, di contatto ammissibile, X-161, 164
+, di contatto a vuoto, X-160, 164
+, di contatto a vuoto ammissibile, X-160
+, di contatto limite convenzionale, X-160
+, di esercizio (di un SPD), X-148
+, d’intervento, X-149
+, di passo, X-164
+, di passo ammissibile, X-164
+, di passo a vuoto, X-164
+, massima per il componente, X-103, 145
+, nominale, X-5, 102, 175
+, nominale d’impiego, X-102, 122
+, nominale d’isolamento, X-40, 102, 122
+, nominale di tenuta a frequenza indu-
+striale, X-103
+, nominale di tenuta a impulso atmosfe-
+rico, X-103
+, nominale verso terra, X-9
+, residua, X-149
+, totale di terra, X-163
+Tipi di reattore, X-267
+Trasformatore, X-198, 273
+, a secco inglobato in resina, X-198
+, in liquido isolante, X-198
+, MT/BT, X-198
+, sigillato, X-198
+Turbina, ad azione, X-259, 264
+, a elica, X-260
+, a reazione, X-259, 264
+, a vapore, X-264
+, Francis, X-260
+, idraulica, X-258, 259
+, Kaplan, X-260
+, Pelton, X-260
+UPS (Uninterruptible Power System), X-
+224
+Varistore, a ossido metallico, X-148
+Verifica, X-247
+, iniziale, X-247
+
+[PAG 2266]
+34
+INDICE ANALITICO PER SEZIONI
+, periodica, X-247
+, straordinaria, X-247
+, prescrizioni D.M. 22/1/2008 n. 37, X-
+248
+, prescrizioni D.Lgs. 9/4/2008 n. 81, X-
+248
+, prescrizioni D.P.R. 462/2001, X-248
+Zona paziente, X-233
+Zone, convenzionali di pericolosità, X-
+227, 228
+- dei luoghi pericolosi per la presenza di 
+gas o vapori, X-245
+
+[PAG 2267]
+SEZIONE XI ILLUMINOTECNICA
+35
+Sezione XI
+Illuminotecnica
+Alimentatore tachistart, XI-33
+Apparecchi, diffusori, XI-47
+, illuminanti, XI-47
+, riflettori, XI-47
+, rifrattori, XI-48
+Attacco, XI-19
+, a baionetta, XI-19
+, Edison, XI-19
+, a vite, XI-19
+, filettato, XI-19
+Ballast, XI-27
+Banco fotometrico, XI-10
+Bulbo, XI-21
+Candela, XI-5
+Chiocciola, XI-20
+Ciclo rigenerativo dell’alogeno, XI-25
+Codice di designazione degli attacchi, XI-20
+Coefficiente, di riflessione, XI-7
+, di utilizzazione, XI-50, 61
+Colore percepito, XI-13
+Colorimetria, XI-13
+Colorimetro, XI-14
+Curve fotometriche, XI-48
+Diagrammi, isocandela, XI-51
+, isolux, XI-51
+Efficienza luminosa, XI-17
+Elettrodo ausiliario, XI-36
+Emittanza luminosa, XI-7
+Fattore, di distribuzione, XI-50
+, di utilizzazione, XI-61
+, di visibilità, XI-2
+Filamento, XI-19
+Flusso luminoso, XI-4
+Fotometria, XI-2
+Fotomoltiplicatori, XI-11
+Goniofotometro, XI-8
+Illuminamento, XI-5
+, di esercizio, XI-6
+, medio, XI-6
+Illuminotecnica, XI-2
+Indice di resa cromatica, XI-16
+Intensità luminosa, XI-5
+Irradiazione, per luminescenza, XI-18, 27
+ termica, XI-18
+Lampade, XI-18
+, a bulbo ellissoidale, XI-40
+, a bulbo fluorescente, XI-36
+, a catodo freddo, XI-35
+, a elettrodo ausiliario, XI-34
+, a incandescenza con alogeni, XI-24
+, a incandescenza con filamento nel vuoto, 
+XI-18
+, a ioduri metallici, XI-37
+, a luce di Wood, XI-44
+, a raggi infrarossi, XI-42
+, a scarica nei gas e nei vapori, XI-27
+, a vapori di mercurio a luce miscelata, XI-
+40
+, a vapori di mercurio ad alta pressione, 
+XI-36
+, a vapori di mercurio con alogenuri, XI-37
+, a vapori di sodio a bassa pressione, XI-39
+, a vapori di sodio ad alta pressione, XI-40
+, ad arco, XI-41
+, ad incandescenza, XI-18
+, ad incandescenza GLS, XI-22
+, ad incandescenza in gas inerti, XI-18
+, allo xeno, XI-41
+, con alogeni, XI-24
+, fluorescenti, XI-29
+, fluorescenti ad accensione istantanea a 
+freddo, XI-34
+, fluorescenti a catodo caldo preriscaldato 
+con reattore normale e starter, XI-31
+, fluorescenti a catodo caldo preriscaldato 
+con reattore tachistart e rapidstart, XI-33
+, fluorescenti compatte, XI-32
+, germicide, XI-43
+, LED, XI-45
+, lineari, XI-40
+
+[PAG 2268]
+36
+INDICE ANALITICO PER SEZIONI
+, PAR, XI-23
+, per applicazioni speciali, XI-41
+, rapidstart, XI-33
+, Reflector, XI-23
+, slimline, XI-34
+, tachistart, XI-33
+, tubolari, XI-40
+, UV, XI-37
+Leggi di Grassmann, XI-14
+Lumen, XI-4
+Luminanza, XI-6, 53
+Luminanzometro, XI-12
+Luminosità, XI-13
+Lux, XI-5
+, su bianco, XI-7
+Luxmetro, XI-10
+Metodo, del flusso totale, XI-61
+, punto a punto, XI-60
+Misura, del flusso luminoso, XI-8
+, dell’illuminamento, XI-11
+, dell’intensità luminosa, XI-10
+, della luminanza, XI-12
+Modello RVB, XI-14
+Nit, XI-7
+Norme CEI per lampade ad incandescenza 
+con alogeni, XI-25
+Potere riflettente, XI-7
+Proiettori, XI-48
+Radianza, XI-7
+Radiometro, XI-11
+Reattore, XI-27
+Rendimento, XI-50
+, di funzionamento, XI-50
+, di una lampada, XI-17
+, ottico, XI-50
+Rivelatori, fotometrici a fotodiodi ad accu-
+mulazione di carica, XI-11
+, fotovoltaici, XI-11
+Saturazione, XI-14
+Sfera integratrice di Ulbricht, XI-9
+Sistema, CIE, XI-14
+, CIE Lab, XI-14
+, di colore XYZ, XI-14
+, Munsell, XI-15
+Sorgenti luminose, XI-18
+Spettrofotometro, XI-14
+Starter, XI-28
+Superficie fotometrica, XI-10
+Temperatura di colore, XI-16
+Teoria di Max Planck, XI-16
+Tonalità del colore, XI-13, 15
+Tungsteno, XI-19
+Utilanza, XI-61
+Valore, XI-15
+Valore-tristimolo, XI-15
+Virola, XI-20
+
+[PAG 2269]
+SEZIONE XII TRAZIONE ELETTRICA
+37
+Sezione XII
+Trazione elettrica
+Aderenza, XII-6
+Andamento poligonale, XII-17
+Anticabraggio elettrico, XII-9
+Alimentazione dei mezzi di trazione, XII-
+17
+, a corrente alternata monofase, XII-26
+, a corrente alternata trifase, XII-25
+, a corrente continua, XII-21
+Alimentazione delle linee di contatto, XII-
+34
+Alta velocità, XII-33, 37
+, linee, XII-34
+Archetto, XII-20
+Assi, motori, XII-2
+, portanti, XII-2
+, rigidi, XII-4
+Assile, XII-4
+Autosincrono, XII-32
+Azionamenti elettronici, XII-22, 29
+Batteria di frenatura, XII-9
+Bifilare, XII-17
+Binario, XII-3
+, tranviario, XII-4
+Boccole, XII-2
+Bordino, XII-4
+Bracci di poligonazione, XII-17
+Cabraggio, XII-8
+, momento di, XII-8
+Cadute di tensione in linea, XII-19
+Captatore, XII-15
+Captazione, XII-20, 35
+Caratteristica meccanica ideale, XII-30
+Carrelli, XII-4
+, articolati, XII-2
+Cassa, XII-2
+Ceppi, XII-9
+Cerchione, XII-2, 4
+Chopper, XII-22, 33
+, frequenza di, XII-23
+, controllo di fase, XII-29
+Circuito, di binario, XII-14
+, di trazione, XII-2
+Circuito di potenza, frazionamento, XII-28
+Codice restrittivo, XII-15
+Coefficiente di aderenza, XII-7
+Condizioni di marcia, XII-5
+Comando, a distanza, XII-2
+, multiplo, XII-2
+Completa aderenza, locomotive a, XII-6
+Commutatore statico, XII-31
+Condizione di stabilità, XII-10
+Conduttanza di dispersione, XII-16
+Condotte dei freni, XII-13
+Connessioni induttive, XII-14
+Continuità di esercizio, XII-37
+Controllo di fase, XII-29
+Conversione, diretta c.c./c.c., XII-22
+, distribuita, XII-37
+, gruppi, XII-37
+Convertitore, a doppio stadio, XII-30
+, a corrente impressa, XII-31
+, a tensione impressa, XII-30, 34
+, di ingresso, XII-30
+, elettronico, XII-38
+, rotante, XII-35
+Convertitore trifase, per motori asincroni, 
+XII-30
+, per motori sincroni, XII-32
+Coppia frenante, XII-9
+Corda portante, XII-17
+Corpo di ruota, XII-2
+Corrente impressa, XII-32
+Correnti, disperse, XII-15
+, vaganti, XII-15
+Corrosione elettrolitica, XII-15
+Cuscinetti, XII-2
+Dispositivo antislittante, XII-7
+Distribuzione centralizzata, XII-37
+Doppia trazione, XII-20
+Duty cycle, XII-23
+Eccitazione in serie, XII-10
+Elasticità di funzionamento, XII-30, 34
+Elettromotrici, XII-2
+Elettrotreni, XII-2
+
+[PAG 2270]
+38
+INDICE ANALITICO PER SEZIONI
+, TGV Atlantique, XII-33
+Fase di avviamento, XII-21
+Fattore di potenza, XII-20
+Fiancate longitudinali, XII-2
+Filobus, XII-2
+Frazionamento dei circuiti di potenza, XII-
+28
+Frazionatore, XII-22
+, elementare, XII-24
+, in derivazione, XII-24
+, step down, XII-23
+, step up XII,-23
+Frenatura, a recupero di energia, XII-12
+, batteria di, XII-9
+, con eccitazione in serie, XII-10
+, elettro-pneumatica, XII-13
+, in controcorrente, XII-12
+, in corto circuito, XII-11
+, elettrica, XII-9, 13
+, meccanica, XII-13
+, tecniche di, XII-9
+Frequenza, di chopper, XII-23
+, ferroviaria, XII-35, 37
+, industriale, XII-38
+Fungo, XII-4
+Fusello, XII-2
+Ganci, XII-3
+Generatori, ad eccitazione indipendente, 
+XII-9
+Giunti meccanici, XII-17
+Graduatore, XII-27
+, a tiristori, XII-28
+Gruppi, di conversione, XII-37
+, rotanti, XII-38
+Impianti di blocco, XII-13
+Impronta, XII-6
+Intermittenza, XII-23
+Interperno, XII-4
+Interruttori tripolari di linea, XII-36
+Inversione di marcia, XII-22
+Invertitore, di marcia, XII-22
+, elettronico, XII-29
+Isolatori portanti, XII-20
+Limite di aderenza, XII-7
+Linee, ad alta velocità, XII-34
+, aeree, XII-17
+, di contatto, XII-17, 34
+, di contatto bifilare, XII-19
+, elettrificate a corrente continua, XII-35
+, primarie, XII-36
+Locomotive, XII-2
+, SYBIC BB 26000, XII-32
+Locomotori XII-2
+, E 402 B, XII-33
+Longheroni, XII-2
+Macchine a campo rotante, XII-29
+Martellamento, XII-3
+Massa, aderente, XII-6
+, lineica, XII-4
+, per asse, XII-4
+Molle di abbassamento, XII-20
+Morse porta striscianti, XII-20
+Motore, asincrono, XII-25, 29, 34
+, monofase a collettore con eccitazione 
+serie, XII-26
+, sincrono, XII-29, 33
+, sincrono a doppia stella, XII-33
+Mutatori, XII-35
+Organi di presa a contatto mobile, XII-17
+Pantografo, XII-20
+Parasale, XII-3
+Parzializzazione, XII-23
+Passo rigido, XII-4
+Pattino, XII-18
+, di strisciamento, XII-17
+, elettromagnetico, XII-11
+Pendini, XII-17, 18
+Pendolino, XII-11
+Peso, aderente, XII-3
+, appoggiato, XII-3
+, reale, XII-3
+, sospeso, XII-3
+, sostenibile, XII-4
+Piastre di guardia, XII-3
+Politensione, XII-34
+Potenza, continua, XII-3
+, nominale, XII-3
+, oraria, XII-3
+, specifica, XII-37
+, unioraria, XII-3
+Prima velocità economica, XII-21
+Protezione catodica, XII-17
+Quadro, XII-20
+
+[PAG 2271]
+SEZIONE XII TRAZIONE ELETTRICA
+39
+Raddrizzatore, al silicio, XII-35
+, a vapore di mercurio XII-35
+Rapporto, di aderenza, XII-6
+, di conduzione, XII-23
+Regolazione della velocità, XII-21
+Regolazione, di fase, XII-23
+, di frequenza, XII-23
+, reostatica continua, XII-24
+Relè di binario, XII-14
+Reostato di avviamento, XII-21
+Resistenza, kilometrica delle rotaie, XII-17
+, valor medio equivalente, XII-25
+Respingenti, XII-3
+Rete, a corrente alternata monofase con fre-
+quenza ferroviaria, XII-37
+, a corrente alternata monofase con fre-
+quenza industriale, XII-38
+, industriale trifase, XII-36
+Reversibilità, XII-32
+Ripetizione dei segnali, XII-15
+Rodiggio, XII-2, 4
+Sala ferroviaria, XII-2
+, motrice, XII-4
+, portante, XII-4
+Scartamento, largo, XII-4
+, ridotto, XII-4
+Schema, a V, XII-39
+, Scott, XII-38
+Scott, schema, XII-38
+Segnale, di blocco, XII-13
+, di uscita, XII-13
+Semiconduttori di potenza, XII-29
+Sequenza di ordine tre, XII-39
+Sezione, di alta tensione, XII-36
+, di blocco, XII-13
+Sforzo di trazione, XII-21
+Shunt chopper, XII-24
+, valor medio equivalente, XII-25
+Sistema, di comando indiretto, XII-2
+, di controllo, XII-29
+Sospensioni elastiche, XII-3
+Sottostazioni, alimentate direttamente, 
+XII-36
+, alimentate in gruppo, XII-36
+, alimentazione mista, XII-36
+, ambulanti, XII-37
+, collegate in serie, XII-36
+, di conversione, XII-35
+, reversibili, XII-35
+Tartaruga, XII-5
+Telaio, XII-2
+, rigido, XII-2
+Tenditori, XII-3
+Tensione impressa, XII-30
+Tiranti di poligonazione, XII-17
+Tram, XII-2
+Tranvie, XII-2
+Traverse, XII-3
+Trazione, bassa, XII-9
+, elettrica, XII-1
+, mezzi di, XII-2
+Treccia di rame flessibile, XII-17
+V, schema a, XII-39
+Variazioni di tensioni in linea, XII-19
+Velocità, commerciale, XII-6
+, economica, XII-21
+, media, XII-5
+, regolazione della, XII-21
+
+[PAG 2272]
+40
+INDICE ANALITICO PER SEZIONI
+Sezione XIII
+Sensori e trasduttori
+Accelerazione di Coriolis, XIII-74
+Accelerometro, XIII-45
+, piezoelettrico, XIII-46
+Accuratezza, XIII-6
+Barriere pneumatiche, XIII-40
+Campo, di ingresso di un trasduttore, XIII-3
+, di uscita di un trasduttore, XIII-4
+Cella di Hall, XIII-34
+Celle di carico, XIII-47, 50
+, a compressione, XIII-52
+, a flessione, XIII-52
+, a taglio, XIII-52
+, a trazione, XIII-52
+, bidirezionali, XIII-52
+Codice, BCD, XIII-25
+, binario, XIII-26
+, Eccesso Gray, XIII-26
+, Gray, XIII-26
+Collegamento elettrico di un encoder, XIII-
+22
+Conversione di un resolver in sistema digi-
+tale, XIII-19
+Coppie, bimetalliche, XIII-79
+, termoelettriche, XIII-79
+Dinamo tachimetrica, XIII-53
+Effetto Seeback, XIII-79
+Elaborazione dei segnali a interpolazione, 
+digitale mediante calcolatore dell’arco-
+tangente, XIII-13
+, digitale mediante tabella, XIII-12
+, reti resistive, XIII-12
+Encoder, ottici, XIII-20
+, assoluti, XIII-25
+, incrementali, XIII-23
+, monogiro, XIII-25
+, multigiro, XIII-25
+, configurazione monodirezionale, XIII-
+23
+, configurazione bidirezionale, XIII-24
+, configurazione monodirezionale o bidi-
+rezionale con lo zero, XIII-24
+Errore, di fuori centro, XIII-5
+, di guadagno, XIII-5
+, di isteresi, XIII-5
+, di linearità, XIII-4
+, di quantizzazione, XIII-5
+Estensimetri collegati a ponte di Whea-
+stone, XIII-51
+Estensimetro, a resistenza, XIII-47
+, a semiconduttore, XIII-47
+Forza di Coriolis, XIII-74
+Funzionamento di un trasduttore synchro, 
+XIII-16
+Giunto, caldo, XIII-80
+, freddo, XIII-80
+Guadagno, XIII-4
+Legge, di Hoock, XIII-51
+, di Faraday, XIII-69
+Lettura push-pull, XIII-23
+Linearità, XIII-4
+LVDT, XIII-14
+Massima sovraelongazione, XIII-6
+Metodi di comando dei sensori magnetici a 
+contatto reed, XIII-36
+Misura della massa reale, XIII-73
+Movimento dei fluidi all’interno delle tuba-
+zioni, XIII-67
+Numeri di Reynolds, XIII-68
+Parametri, dinamici, XIII-3
+, statici, XIII-3
+Potenziometri, rettilinei, XIII-7
+, rotativi, XIII-7, 9
+Precisione, XIII-5
+Principio, della luce riflessa, XIII-10
+, della luce trasmessa, XIII-10
+, di Moirè, XIII-9
+, fotoelettrico con misura inferenziale, 
+XIII-11
