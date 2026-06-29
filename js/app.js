@@ -31,6 +31,35 @@ function switchLabTab(tab) {
 
 
 /* ══════════════════════════════════════════════════════════════
+   HEADER ACTIONS
+══════════════════════════════════════════════════════════════ */
+/* Pulsante 🔄 header — aggiorna tutti i dati */
+function refreshAll() {
+  if (typeof cfgAggiornaTutto === 'function') { cfgAggiornaTutto(); return; }
+  // Fallback: ricarica i loader principali singolarmente
+  try { if (typeof renderActivePlants === 'function') renderActivePlants(); } catch(e) {}
+  try { if (typeof loadWeather === 'function') loadWeather(); } catch(e) {}
+  try { if (typeof renderLunarSection === 'function') renderLunarSection(); } catch(e) {}
+  try { if (typeof loadLunaConsigli === 'function') loadLunaConsigli(); } catch(e) {}
+  try { if (typeof labLoadAll === 'function') labLoadAll(); } catch(e) {}
+}
+
+/* Pulsante 🔔 header — apre le notifiche (sezione Impostazioni) */
+function showNotifPanel() {
+  var navBtn = document.querySelector('.nav-item[onclick*="impostazioni"]');
+  showSection('impostazioni', navBtn || null);
+  try { if (typeof initImpostazioni === 'function') setTimeout(initImpostazioni, 50); } catch(e) {}
+  // Scrolla al gruppo notifiche Telegram se presente
+  setTimeout(function() {
+    var lbl = Array.prototype.find.call(
+      document.querySelectorAll('.setting-group-label'),
+      function(el){ return /Notifiche/i.test(el.textContent || ''); }
+    );
+    if (lbl && lbl.scrollIntoView) lbl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 120);
+}
+
+/* ══════════════════════════════════════════════════════════════
    INIT APP
 ══════════════════════════════════════════════════════════════ */
 window._appInitialized = false;
@@ -51,4 +80,5 @@ window.initApp = function() {
   // 6. Notifiche panel
   try { if (typeof applyNotificheAtBoot === 'function') setTimeout(applyNotificheAtBoot, 100); } catch(e) {}
 };
+
 
