@@ -44,6 +44,13 @@ def gh_get(path):
         f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
     with urllib.request.urlopen(req) as r:
         d = json.load(r)
+    # File >1MB: GitHub API content:'' — usa raw URL
+    if not d.get('content','').strip():
+        raw_url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
+        req2 = urllib.request.Request(raw_url, headers={
+            'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
+        with urllib.request.urlopen(req2) as r2:
+            return r2.read().decode('utf-8'), d['sha']
     return base64.b64decode(d['content'].replace('\n','')).decode('utf-8'), d['sha']
 
 def gh_get_sha(path):
