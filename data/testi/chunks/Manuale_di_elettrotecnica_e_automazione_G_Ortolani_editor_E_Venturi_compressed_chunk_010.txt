@@ -1,0 +1,1893 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 10/116 ===
+Chars: 44,063 | Offset: 397,922
+
+ . .
+65
+20.4.   Legge di Ohm e resistività elettrica dei materiali  . . . . . . . . . . . . . . . . . .
+66
+20.5.   Effetto Joule. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 67
+20.6.   Circuiti elettrici . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+67
+20.7.   Forza elettromotrice  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+67
+20.8.   Principio di Kirchhoff . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+67
+20.9.   Elementi in serie e in parallelo  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+68
+20.10.   Strumenti di misura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 68
+21.   CAMPO MAGNETICO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+68
+21.1.   Campo magnetico e correnti elettriche  . . . . . . . . . . . . . . . . . . . . . . . . . .
+70
+BIBLIOGRAFIA. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+70
+1.  ERRORI DI MISURA
+Per quanto possa essere accurata, la misura diretta di una grandezza fisica, non
+esprime il suo esatto valore, bensì, il valore della grandezza considerata con un certo mar-
+gine di errore. Tale indeterminatezza può essere ridotta con l’utilizzo di sofisticati sistemi
+di misura, tuttavia essa non può essere eliminata completamente.
+
+[PAG 222]
+III-4
+FISICA
+La determinazione di tale errore diventa in molti casi indispensabile per la conoscenza
+e la gestione dei dati che si hanno a disposizione.
+Errori di sensibilità
+Gli errori di sensibilità dipendono dalla sensibilità degli strumenti utilizzati.
+Ad esempio, l’errore nella misura di una lunghezza, che si può ottenere con un deci-
+metro avente la sensibilità di un intervallo ogni centimetro, è di  0,5 cm, pertanto
+l’altezza di un tavolo potrà essere espressa come:
+L = (78,5  0,5) cm
+dove la prima cifra rappresenta il valore della misura e la seconda l’errore di misura.
+Allo stesso modo utilizzando un decimetro con la sensibilità di un intervallo ogni mil-
+limetro la stessa misura potrà esprimersi come:
+L = (787  0,5) mm
+Errori sistematici
+Gli errori sistematici dipendono in genere dal non corretto funzionamento dalla stru-
+mentazione utilizzata, o più in generale dipendono dal metodo utilizzato per il rilievo
+delle misure.
+Tali errori influenzano allo stesso modo tutte le misure rilevate e sono molto spesso
+determinabili a priori.
+Errori casuali o statistici
+Gli errori casuali o statistici dipendono da una molteplicità di fattori, non sempre
+determinabili, ma che condizionano il valore di una misura, a volte in eccesso, a volte in
+difetto. Siano x1, x2, ..., xn,  i valori delle misure di una grandezza, compiute da un opera-
+tore nelle stesse condizioni e siano diversi fra loro, allora il valore più probabile della
+misura è il valore medio o media aritmetica dei valori rilevati:
+(III.1.1)
+L’errore che si commette considerando il valore medio quale valore della misura può
+essere valutato in diversi modi. Nel caso in cui si eseguano poche misure, l’errore può
+essere stimato con la semidispersione:
+(III.1.2)
+e quindi la misura della grandezza considerata può essere stimata con la seguente:
+(III.1.3)
+Avendo a disposizione una serie più ampia di misure, è più significativo valutare
+l’errore medio. L’errore medio  di una serie di misure x1, x2, ..., xn è rappresentato dalla
+media aritmetica dei valori assoluti degli scarti:
+(III.1.4)
+dove per scarto si intende la differenza fra i singoli valori misurati e la loro media aritmetica.
+In questo caso la stima della misura diventa:
+(III.1.5)
+Analogamente, si definisce varianza la media aritmetica dei quadrati degli scarti delle
+singole misure e si indica con:
+
+xi
+i
+n
+-------------
+=
+d
+xMAX - xmin
+
+
+2
+---------------------------------------
+=
+x
+
+d
+
+=
+
+xi - 
+i
+n
+----------------------
+=
+x
+
+
+
+=
+
+[PAG 223]
+FISICA
+III-5
+(III.1.6)
+La varianza indica in modo efficace la dispersione dei risultati rispetto al valore
+medio. Dalla varianza si ricava la deviazione standard, che è omogenea alle dimensioni
+del valore medio:
+(III.1.7)
+La stima di una misura diventa in questo caso:
+(III.1.8)
+Per confrontare la precisione fra diverse misure si considera il coefficiente di varia-
+zione, rappresentato dal rapporto /, il quale indica la deviazione standard espressa per-
+centualmente rispetto al valore medio.
+Disuguaglianza di Chebyshev
+La disuguaglianza di Chebyshev fornisce alcune considerazioni importanti circa la
+distribuzione casuale dei valori attorno al valore medio. Siano x1, x2, ..., xn i valori delle
+misure di una grandezza,  e 2 siano rispettivamente il valore medio e la varianza, allora
+la probabilità che una misura sia compresa nell’intervallo k è maggiore o uguale a
+(III.1.9)
+che equivale a:
+(III.1.10)
+Ad esempio la probabilità che ha una misura di appartenere all’intervallo  2
+  è maggiore o al massimo uguale al 75%.
+2.  VETTORI
+2.1.  Grandezze fisiche scalari e vettoriali
+Si definiscono grandezze scalari quelle grandezze che sono completamente definite
+da un numero (quantità) e da una unità di misura; ne sono esempio la lunghezza, il tempo,
+la massa e il lavoro di una forza. Le grandezze fisiche che non possono essere compiuta-
+mente definite da un numero e da una unità di misura, si definiscono vettoriali; per queste
+è necessario infatti definire, oltre al loro modulo (intensità), anche una direzione, un verso
+e un punto di applicazione. Le grandezze vettoriali possono essere rappresentate con un
+vettore, del quale infatti vengono definiti:
+–  il modulo, che è proporzionale alla sua lunghezza in una scala arbitraria presa come
+riferimento;
+–  la direzione, che coincide con la retta su cui agisce il vettore, detta anche retta
+d’azione;
+2
+xi - 
+
+2
+i
+n
+---------------------------
+=
+
+xi - 
+
+2
+i
+n
+---------------------------
+=
+x
+
+
+
+=
+1 - 1
+k2
+----
+P x - 
+k
+
+
+
+1 - 1
+k2
+----
+
+k  reale
+1
+
+P  - k
+x
+
+
+k
++
+
+
+
+1 - 1
+k2
+----
+
+
+[PAG 224]
+III-6
+FISICA
+–  il verso, rappresentato dalla freccia.
+Ne sono esempio lo spostamento, le forze, la quantità di moto, il campo magnetico.
+Un vettore viene indicato con una lettera soprasegnata a o sottosegnata a o indicato
+mediante una freccia 
+ oppure in alcuni casi con una lettera in grassetto a; il modulo del
+vettore 
+ si indica con a oppure con 
+.
+Sia a un vettore, l’opposto di a è il vettore che ha modulo e direzione uguali e verso
+opposto e si indica con -a. Si dice vettore nullo un vettore avente modulo uguale a zero.
+Somma e differenza di vettori 
+Siano a e b due vettori agenti rispettivamente sulle rette d’azione s e t, si indica con r
+il vettore risultante dalla somma dei primi due. Il vettore somma si ottiene congiungendo
+il punto O, di intersezione fra le rette s e t, con il vertice P, ottenuto traslando le rette s e t
+parallelamente a se stesse, rispettivamente fino ai vertici A e B dei vettori a e b.
+Si scrive allora:
+(III.2.1)
+Il vettore r è dunque il vettore risultante dalla somma dei vettori componenti a e b e
+ne sostituisce pertanto gli effetti.
+La somma così definita e descritta in Fig. III. 2.1a, è detta regola del parallelo-
+grammo. La sottrazione fra due vettori a e b coincide come illustrato in Fig. III.2.1b, con
+la somma fra i vettori a e -b.Somma e differenza fra due vettori.
+Fig. III.2.1  Somma e differenza fra due vettori.
+Sistemi di vettori concorrenti e paralleli
+Un sistema di vettori è un insieme di due o più vettori i quali possono essere concor-
+renti, in quanto agenti su rette d’azione non parallele, oppure paralleli se agenti su rette
+d’azione parallele (Fig. III.2.2).
+Fig. III.2.2  Sistemi di vettori a) concorrenti, b) paralleli, c) coppia di due vettori.
+a
+a
+a
+r
+a
+b
++
+=
+a)
+b)
+O
+A
+B
+P
+t
+s
+a
+b
+r = a + b
+s
+t
+O
+a
+-b
+B
+A
+P
+r = a + -(b)
+a
+b
+c
+c
+b
+a
+a
+b
+d
+a)
+b)
+c)
+
+[PAG 225]
+FISICA
+III-7
+Il vettore risultante della somma di più vettori concorrenti omogenei, ad esempio a, b
+e c è individuato dalla somma del vettore r1, risultante dei vettori a e b così come definita
+al paragrafo precedente, con il vettore c. 
+La risultante r così determinata sarà pertanto
+la risultante del sistema dei vettori a, b e c. Ana-
+logamente si procederà per sistemi di più vettori
+(Fig. III.2.3). La risultante del sistema di vettori è
+graficamente individuata dal vettore che collega il
+punto di applicazione del primo vettore con il ver-
+tice dell’ultimo vettore, tale metodo viene detto
+anche poligono delle forze. 
+Fig. III.2.3  Determinazione del vettore 
+risultante della somma dei vettori a, b e c.
+Il vettore risultante della somma di un sistema di vettori omogenei paralleli è determi-
+nato dal vettore che ha direzione parallela ai vettori componenti, modulo e verso pari alla
+somma algebrica dei moduli.
+La posizione della retta d’azione della risultante è determinabile mediante il teorema
+di Varignon, il quale afferma che il momento della risultante rispetto ad un punto scelto
+arbitrariamente come centro delle rotazioni è uguale alla somma dei momenti dei vettori
+componenti rispetto allo stesso.
+Prodotto e rapporto di un vettore con uno scalare 
+Siano s uno scalare ed a un vettore, si definisce il prodotto sa il vettore che ha la dire-
+zione di a, intensità pari ad s|a|  e verso concorde od opposto a quello di a, a seconda che
+s sia positivo o negativo.
+Si definisce il rapporto di un vettore a con lo scalare s il vettore 
+  prodotto del vet-
+tore a per lo scalare .
+Prodotto scalare
+Siano a e b due vettori e  l’angolo compreso fra le rispet-
+tive rette d’azione, si definisce prodotto scalare fra i due vet-
+tori e si indica con a b (Fig. III.2.4), lo scalare ottenuto dal
+prodotto della proiezione ortogonale del |a| sulla direzione
+della retta d’azione di b per |b| :
+(III.2.2)
+Fig. III.2.4  Prodotto 
+scalare fra due vettori
+Il prodotto scalare di due vettori perpendicolari è nullo. Il prodotto scalare verifica la
+proprietà commutativa, ovvero:
+(III.2.3)
+e la proprietà distributiva:
+(III.2.4)
+Prodotto vettoriale
+Siano a e b due vettori e  l’angolo compreso fra le rispettive rette d’azione, si defini-
+sce il prodotto vettoriale fra i due vettori e si scrive: 
+ab = c
+(III.2.5)
+a
+b
+c
+r
+r1
+a
+s--
+1
+s--
+a
+b
+a
+
+a b
+
+ab
+a b
+cos
+
+=
+=
+a b
+
+b a
+
+=
+a
+b
+c
++
+
+
+
+a b
+a c
+
++
+
+=
+
+[PAG 226]
+III-8
+FISICA
+dove c è il vettore che ha modulo pari a:
+(III.2.6)
+e direzione perpendicolare al piano che con-
+tiene i vettori a e b, e verso tale che ruotando
+a in senso orario fino a sovrapporsi a b il
+verso è quello dell’avanzamento di una vite
+destrosa.
+Il prodotto vettoriale fra due vettori paralleli
+è nullo.
+Invertendo l’ordine dei vettori il prodotto
+cambia segno (Fig. III.2.5):
+(III.2.7)
+Fig. III.2.5  Prodotto vettoriale fra
+vettori, proprietà anticommutativa.
+Anche il prodotto vettoriale gode della proprietà distributiva:
+(III.2.8)
+(III.2.9)
+2.2.  Componenti cartesiane di un vettore
+Siano i, j e k i versori (vettori di modulo unita-
+rio aventi direzione e verso coincidenti rispetti-
+vamente con la terna ortogonale di assi
+cartesiani x, y e z), e siano OPx, OPy e OPz le
+tre componenti del generico vettore lungo le
+omonime direzioni, si scrive pertanto:
+(III.2.10)
+Il modulo del generico vettore (Fig. III.2.6) sarà
+pertanto, utilizzando il teorema di Pitagora:
+(III.2.11)
+Fig. III.2.6  Componenti 
+cartesiane di un vettore.
+Somma e differenza fra vettori
+Siano a = ax i + ay j + az k e b = bx i + by j + bz k due vettori definiti in un sistema car-
+tesiano ortogonale Oxyz, allora il vettore somma c = a + b avrà componenti:
+(III.2.12)
+Analogamente il vettore differenza fra i vettori a e b avrà componenti pari alla diffe-
+renza delle componenti omonime di a e b.
+Prodotto scalare
+Dati due vettori a e b, definiti in un sistema cartesiano ortogonale Oxyz, si verifica
+che:
+(III.2.13)
+c
+a b
+sen
+
+=
+c
+b
+a
+a
+b
+
+
+c
+a
+b
+
+c
+=
+b
+a
+
+-c
+=
+a
+b
+c
++
+
+
+
+a
+b
+a
+c
+
++
+
+=
+a
+b
++
+
+
+c
+
+a
+c
+b
+c
+
++
+
+=
+k
+j
+i
+x
+y
+z
+OPx
+OPy
+OPz
+P
+OPx i OPy j
+OPz k
++
++
+=
+P
+OP2
+x
+OP2
+y
+OP2
+z
++
++
+=
+c
+ax
+bx
++
+
+i
+ay
+by
++
+
+j
+az
+bz
++
+
+k
++
++
+=
+i i
+j j
+k k
+
+1
+=
+=
+
+=
+
+[PAG 227]
+FISICA
+III-9
+e
+(III.2.14)
+pertanto il prodotto scalare fra a e b si scrive:
+(III.2.15)
+Prodotto vettoriale
+Dati due vettori a e b, definiti in un sistema cartesiano ortogonale Oxyz, si verifica
+che:
+(III.2.16)
+e
+(III.2.17)
+(III.2.18)
+(III.2.19)
+pertanto il prodotto vettoriale nella rappresentazione cartesiana si scrive:
+(III.2.20)
+e quindi:
+a  b = (ay bz -az by)i + (az bx -ax bz)j + (ax by -ay bx)k
+(III.2.21)
+Doppio prodotto vettoriale
+Il doppio prodotto vettoriale è tale che:
+(a  b) c = b(a  c) -a(b  c) a (b  c) 
+(III.2.22)
+Doppio prodotto misto
+Il doppio prodotto misto soddisfa la proprietà commutativa:
+(a  b) c = c (a  b)
+(III.2.23)
+valgono inoltre le seguenti:
+(a  b) c = (b  c) a = (c  a) b
+(III.2.24)
+Il modulo del doppio prodotto misto rappresenta geometricamente, il volume del
+parallelepipedo avente per spigoli i vettori a, b e c, pertanto tale prodotto è nullo quando i
+tre vettori sono complanari.
+Secondo le componenti delle coordinate cartesiane si scrive:
+(III.2.25)
+quindi:
+(a  b) c= ax(by cz -bz cy) + ay(bz cx -bx cz) + az(bx cy -by cx)
+(III.2.26)
+i j
+j k
+k i
+0
+=
+=
+
+=
+a b
+
+axbx
+ayby
+azbz
++
++
+=
+i
+i
+
+j
+j
+
+k
+k
+
+0
+=
+=
+=
+i
+j
+
+k;
+=
+j
+i
+
+-k
+=
+j
+k
+
+i;
+=
+k
+j
+
+-i
+=
+k
+i
+
+j;
+=
+i
+k
+
+-j
+=
+a
+b
+
+i
+j
+k
+ax
+ay
+az
+bx
+by
+bz
+=
+a
+b
+
+
+c
+
+ax
+ay
+az
+bx
+by
+bz
+cx
+cy
+cz
+=
+
+[PAG 228]
+III-10
+FISICA
+3.  CINEMATICA, IL MOTO DEI CORPI
+La cinematica studia il moto dei corpi indipendentemente dalle cause che lo provo-
+cano e quindi il problema fondamentale per la cinematica è la determinazione della posi-
+zione assunta da un oggetto in un dato istante.
+Per studiare il movimento di un corpo è necessa-
+rio stabilire un sistema di riferimento cui appog-
+giarsi e non potendo riferirsi ad un sistema
+assoluto, si farà riferimento ad una terna di assi
+cartesiani ortogonali Oxyz. La variazione della
+posizione di un oggetto, al trascorrere del tempo,
+rispetto ad un sistema di riferimento prestabilito,
+sarà valutata analizzando un punto o punto mate-
+riale, considerando in tal modo le dimensioni
+dell’oggetto trascurabili rispetto al contesto nel
+quale si studia il suo movimento. 
+Fig. III.3.1   Componenti cartesiane 
+del vettore spostamento.
+La posizione assunta dal punto in movimento rispetto un determinato sistema di riferi-
+mento, al trascorrere del tempo, viene detta legge oraria, e la traiettoria percorsa è l’in-
+sieme delle posizioni assunte dal punto nel tempo (Fig. III.3.1). Pertanto se è noto il vet-
+tore spostamento OP = OP(t) ad ogni istante, è nota la legge oraria che descrive il moto
+del punto e determina le coordinate cartesiane x(t),  y(t) e z(t) del vettore OP.
+x(t) = OPx(t);  y(t) = OPy(t);  z(t) = OPz(t);  
+(III.3.1)
+3.1.  Moto uniforme
+La velocità media scalare di un punto P
+nell’intervallo di tempo (t0  t1) è definita
+dal rapporto fra lo spazio percorso dal punto
+sulla sua traiettoria e l’intervallo di tempo
+impiegato (Fig. III.3.2) e quindi
+(III.3.2)
+Fig. III.3.2  Sistema di riferimento
+costituito da ascissa curvilinea.
+dove s0 ed s1 sono le posizioni assunte dal punto P rispettivamente agli istanti (t0 
+t1), sopra una ascissa curvilinea coincidente con la traiettoria. L’unità di misura nel
+sistema MKS è 1m/s.
+Fig. III.3.3  Grafico spazio - tempo.
+Se il moto è uniforme la velocità media scalare è
+costante nel tempo, pertanto se è nota la posizione
+iniziale del punto s0 = s(t0), in ogni istante succes-
+sivo a t0 la sua posizione è determinata dalla:
+(III.3.3)
+che rappresenta la legge oraria del moto uniforme
+ed è rappresentata da una retta nel grafico spazio-
+tempo (Fig. III.3.3), dove v ed s0 rappresentano
+O
+y
+z
+i
+j
+k
+OPy
+OPx
+OPz
+P
+O
+P
+s(t)
+vm
+s1 - s2
+t1 - t2
+--------------
+s
+t
+-----
+=
+=
+s(t) = s0 + vt
+s0
+O
+t
+s
+s t
+s0
+vt
++
+=
+
+[PAG 229]
+FISICA
+III-11
+rispettivamente il coefficiente angolare e l’intercetta.
+3.2.  Moto vario
+In un moto vario la velocità scalare lungo una traiettoria può variare, e così come defi-
+nita dalla III.3.2, ha valore solo se l’intervallo considerato è infinitesimo, pertanto in un
+moto vario la velocità scalare ad un certo istante è data dalla derivata rispetto al tempo
+dello spazio percorso sulla traiettoria:
+(III.3.4)
+e quindi, nota la traiettoria del punto in movimento e la sua velocità scalare in funzione
+del tempo, si può determinate la posizione del punto sulla sua traiettoria in un qualsiasi
+istante t, a partire dalla posizione iniziale s0:
+(III.3.5)
+Velocità vettoriale
+In generale la conoscenza della sola velocità scalare non è sufficiente a determinare la
+posizione di un punto durante un qualsiasi movimento poiché è necessario conoscere anche
+la direzione nella quale avviene il moto, occorre quindi definire la velocità vettoriale.
+Sia OP il vettore posizione che individua la posizione del punto P nel tempo rispetto
+al sistema di riferimento Oxyz, la velocità vettoriale è data dalla derivata rispetto al tempo
+del vettore posizione OP:
+(III.3.6)
+di componenti cartesiane:
+(III.3.7)
+e modulo pari a:
+(III.3.8)
+pertanto la velocità di un punto in movi-
+mento in un dato istante ha modulo pari al
+valore assoluto della velocità scalare e dire-
+zione tangente alla traiettoria del punto
+all’istante considerato.
+La posizione del punto P in movimento
+di cui si conosce la velocità in funzione del
+tempo v(t) e la posizione iniziale P0 occupata
+da P all’istante t = 0, rispetto ad un sistema
+di riferimento, può essere determinata in
+ogni momento, infatti per ogni istante t > 0
+vale:
+Fig. III.3.4  Vettore posizione OP0 
+e  vettore spostamento P0P.
+(III.3.9)
+che espressa secondo le componenti cartesiane diventa:
+v
+ds
+dt
+-----
+=
+s t
+s0
+v ttd
+0
+t
+
++
+=
+v t
+d
+dt
+----OP t
+=
+vx
+dOPx
+dt
+-------------;
+=
+vy
+dOPy
+dt
+-------------;
+=
+vz
+dOPz
+dt
+-------------;
+=
+v
+vx
+2
+vy
+2
+vz
+2
++
++
+=
+x
+y
+z
+O
+P0
+P
+OP t
+O
+=
+P0
+P0P
++
+OP0
+v ttd
+0
+t
+
++
+=
+
+[PAG 230]
+III-12
+FISICA
+(III.3.10)
+(III.3.11)
+(III.3.12)
+Accelerazione
+Poiché in un moto qualsiasi la velocità vettoriale può variare in modulo e/o in dire-
+zione, l’accelerazione, e quindi la variazione della velocità di un punto in movimento in
+un determinato intervallo di tempo, può essere considerata nulla solo se il moto è rettili-
+neo uniforme. 
+Si definisce accelerazione media in un dato intervallo di tempo il rapporto:
+(III.3.13)
+dove v(t1) e v(t0) sono le velocità in funzione del tempo rispettivamente agli istanti t1 e t0.
+L’unità di misura del modulo dell’accelerazione media è 1m/s2.
+Per lo studio di un moto vario qualsiasi si definisce accelerazione istantanea la deri-
+vata rispetto al tempo della velocità vettoriale o la derivata seconda rispetto al tempo del
+vettore posizione:
+(III.3.14)
+di componenti cartesiane:
+(III.3.15)
+(III.3.16)
+(III.3.17)
+3.3.  Moto rettilineo
+Moto rettilineo uniforme
+Nel moto rettilineo uniforme la velocità scalare è costante e il vettore v è costante poi-
+ché anche la direzione non varia nel tempo; allineando quindi la direzione del moto con
+l’asse delle ascisse si ottiene la legge oraria del moto rettilineo uniforme:
+(III.3.18)
+dove v(t) è costante nel tempo.
+Moto rettilineo uniformemente accelerato
+Nel moto rettilineo uniformemente accelerato l’accelerazione media è costante nel
+tempo e quindi:
+(III.3.19)
+x t
+x0
+vx ttd
+0
+t
+
++
+=
+y t
+y0
+vy ttd
+0
+t
+
++
+=
+z t
+z0
+vz ttd
+0
+t
+
++
+=
+am
+v t1
+
+ - v t0
+
+
+t1 - t0
+-----------------------------
+=
+a t
+dv t
+dt
+------------
+d2
+dt2
+------ OP t
+=
+=
+ax t
+dvx
+dt
+-------
+d2
+dt2
+------ OPx t
+=
+=
+ay t
+dvy
+dt
+-------
+d2
+dt2
+------ OPy t
+=
+=
+az t
+dvz
+dt
+-------
+d2
+dt2
+------ OPz t
+=
+=
+x t
+x0
+vt
++
+=
+am
+v t - v t0
+
+
+t - t0
+--------------------------
+=
+
+[PAG 231]
+FISICA
+III-13
+indipendentemente dall’intervallo di tempo considerato e la velocità v(t) diventa:
+(III.3.20)
+come visualizzato in Fig. III.3.5a e lo spazio percorso sulla traiettoria in un dato inter-
+vallo di tempo come in Fig. III.3.5b vale:
+(III.3.21)
+Fig. III.3.5  Diagrammi spazio-tempo e velocità-tempo.
+Esempio
+Un corpo di dimensioni trascurabili viene lanciato in
+aria in direzione verticale con velocità iniziale v0 da una
+quota h0 (Fig. III.3.6). Si voglia determinare quanto
+tempo resta in aria prima di cadere a terra e la velocità di
+impatto al suolo sotto l’effetto della gravità.
+Tempo di salita:
+(III.3.22)
+Quota raggiunta rispetto dalla quota di lancio:
+(III.3.23)
+Il tempo di permanenza in aria si ottiene conside-
+rando il tempo di caduta t e h = h + h0, da cui:
+Fig. III.3.6   Esempio di 
+moto di caduta libera.
+(III.3.24)
+Velocità di caduta al momento dell’impatto:
+(III.3.25)
+3.4.  Moto armonico semplice
+La lagge oraria di un punto che si muove con moto armonico semplice e direzione
+coincidente con l’ascissa x (Fig. III.3.7), vale:
+v t
+v0
+at
++
+=
+s t
+s0
+v tt
+s0
+v0t
+1
+2--at2
++
++
+=
+d
+0
+t
+
++
+=
+s(t) = s0 + vt + 1/2at2
+s0
+t
+O
+s
+v0t
+1/2at2
+v(t) = v0 + at
+v0
+t
+O
+v
+a)
+b)
+h
+h
+v0
+h0
+v0 - gt
+0
+t
+v0
+g----
+=
+
+=
+h
+v
+=
+0t - gt2
+2---
+v0
+2
+2g
+-----
+=
+
+t
+t;
++
+=
+t
+2h
+g----
+
+2h
+g----
+v0
+g----
++
+=
+
+=
+v
+gt;
+=
+t
+2h
+g
+-------
+        v
+2gh
+=
+
+=
+
+[PAG 232]
+III-14
+FISICA
+(III.3.26)
+pertanto x(t) può assumere i valori com-
+presi fra +A e -A, dove |A| è l’ampiezza delle
+oscillazioni,  è la velocità angolare e
+determina la velocità con cui varia l’angolo
+=t +0 che è detta fase. Il valore che
+assume l’ascissa del punto in movimento è
+detta elongazione.
+La velocità scalare è:
+(III.3.27)
+e pertanto l’accelerazione vale:
+(III.3.28)
+e quindi:
+(III.3.29)
+Fig. III.3.7  Diagramma spazio-tempo e 
+velocità-tempo di un moto armonico semplice.
+Nel moto armonico semplice infatti l’accelerazione è opposta e proporzionale all’elon-
+gazione, inoltre la velocità è nulla in corrispondenza della massima elongazione ed acce-
+lerazione, viceversa la velocità è massima quando elongazione ed accelerazione sono nulle.
+Il moto armonico semplice è un moto periodico di periodo T e frequenza v; rispettivamente:
+(III.3.30)
+dove T è il tempo necessario a compiere un’oscillazione completa, si misura in secondi e v
+rappresenta il numero di oscillazioni compiute in un secondo, si misura in Hz = s-1.
+3.5.  Moto circolare
+Moto circolare uniforme
+Il moto circolare uniforme descrive il movimento di un punto sopra una traiettoria cir-
+colare con velocità scalare costante nel tempo.
+Sia s l’ascissa coincidente con la traiettoria circolare, allora:
+(III.3.31)
+dove s0 è la posizione iniziale del punto all’istante t = 0.
+Il moto circolare uniforme è un moto periodico di periodo T e frequenza v, rispettiva-
+mente:
+(III.3.32)
+dove R è il raggio della circonferenza descritta dalla traiettoria.
+Da un punto di vista angolare, la variazione dell’angolo  formato dal vettore OP con
+l’asse di riferimento rappresenta la velocità angolare  che è costante nel tempo e vale:
+(III.3.33)
+x t
+Asen t
+0
++
+
+
+=
+v
+x
+t
+t
+T
+A
+A
+v t
+dx
+dt
+-----
+=
+Acos t
+0
++
+
+
+=
+a t
+dv
+dt
+-----
+=
+-A2sen t
+0
++
+
+
+=
+a t
+-2x
+=
+T
+2
+
+------
+=
+e
+v
+1
+T--
+=
+s t
+s0
+vt
++
+=
+T
+2R
+v
+----------
+=
+e
+v
+1
+T--
+=
+
+1
+R--- s
+t
+-----
+
+
+t
+-------
+v
+R---
+=
+=
+=
+
+[PAG 233]
+FISICA
+III-15
+mentre la velocità angolare vettoriale è un vettore avente modulo pari a 
+ e direzione
+perpendicolare al piano che contiene la traiettoria e verso concorde all’avanzamento di
+una vite destrosa, pertanto la III.3.31 diventa:
+(III.3.34)
+dove 0 è l’anomalia iniziale.
+Nel moto circolare uniforme la
+velocità vettoriale varia nel tempo la
+sua direzione in modo uniforme mante-
+nendo modulo costante; infatti il vet-
+tore velocità ha direzione sempre
+tangente alla traiettoria (Fig. III.3.8). 
+Pertanto l’accelerazione è costante
+e centripeta in quanto è diretta verso il
+centro della traiettoria (circonferenza)
+lungo il raggio che collega il centro al
+punto in movimento ed ha modulo pari
+a:
+(III.3.35)
+Fig. III.3.8  Velocità di un punto in moto 
+circolare uniforme.
+Il moto circolare uniforme rispetto ad un sistema di riferimento cartesiano ortogonale
+Oxy con origine coincidente col centro della traiettoria è rappresentato dalle seguenti:
+(III.3.36)
+(III.3.37)
+da cui:
+(III.3.38)
+(III.3.39)
+e:
+(III.3.40)
+(III.3.41)
+vettorialmente diventa:
+(III.3.42)
+Moto circolare vario
+Il moto circolare vario descrive il movimento di un punto sopra una traiettoria circo-
+lare con velocità scalare variabile nel tempo pertanto le due velocità: 
+(III.3.43)
+
+t
+-------
+t
+0
+t
++
+=
+x
+y
+O
+v(t)
+P
+P
+
+v(t+dt)
+a
+v2
+R----
+2
+R
+------
+=
+=
+x t
+Rcos t
+0
++
+
+
+=
+y t
+Rsen t
+0
++
+
+
+=
+vx t
+-Rsen t
+0
++
+
+
+=
+vy t
+Rcos t
+0
++
+
+
+=
+ax t
+-R2cos t
+0
++
+
+
+-2x t
+=
+=
+ay t
+-R2sen t
+0
++
+
+
+-2y t
+=
+=
+a
+-2OP t
+=
+t
+v t
+R
+--------
+=
+
+[PAG 234]
+III-16
+FISICA
+sono variabili nel tempo.
+Le componenti del moto secondo un sistema di coordinate cartesiane ortogonali Oxy
+con origine coincidente col centro della traiettoria circolare sono:
+(III.3.44)
+(III.3.45)
+da cui la velocità diventa:
+(III.3.46)
+(III.3.47)
+da cui l’accelerazione:
+(III.3.48)
+(III.3.49)
+Fig. III.3.9  Versori tangente e normale
+alla traiettoria circolare del punto P.    
+considerando il sistema di riferimento costituito dai versori T ed N, rispettivamente tan-
+gente e perpendicolare alla traiettoria nella posizione occupata da P all’istante considerato
+(Fig. III.3.9), si ottiene la:
+(III.3.50)
+quindi l’accelerazione nel moto vario è composta dalla somma dell’accelerazione centri-
+peta v2/R, diretta verso il centro della traiettoria, con l’accelerazione tangenziale dv/dt, ed
+ha modulo pari a:
+(III.3.51)
+4.  MOTI RELATIVI, MOVIMENTI COMPOSTI
+Il moto di un corpo si può studiare solo dopo aver definito un sistema di riferimento,
+poiché rispetto ad esso sarà possibile definire la posizione, la velocità e l’accelerazione
+del corpo stesso.
+Un problema che spesso si deve affrontare è la determinazione del movimento di un
+corpo rispetto ad un sistema di riferimento, denominato sistema assoluto, conoscendone il
+moto rispetto ad un altro sistema di riferimento, chiamato sistema relativo di cui si cono-
+sce il moto rispetto al sistema assoluto, quest’ultimo definito moto di trascinamento.
+Ad esempio un albero è in quiete se osservato da una persona seduta su di una pan-
+china, mentre risulta in movimento per una persona che sta procedendo in bicicletta; in
+questo caso se il primo è il moto assoluto e il secondo è quello relativo, allora il moto
+della bicicletta rispetto alla panchina è quello do trascinamento.
+4.1.  Cinematica dei moti relativi
+Siano S il sistema di riferimento assoluto con origine in O ed assi x, y, z ed S il
+sistema di riferimento relativo con origine in O ed assi x, y, z.
+x
+y
+O
+T
+
+N
+P
+x t
+Rcost
+=
+y t
+Rsent
+=
+vx t
+-Rtsent
+=
+vy t
+Rtcost
+=
+ax
+-2x R
+– d
+dt
+------ cos
+=
+ay
+-2y
+Rd
+dt
+------ sen
++
+=
+a
+-2OP
+d
+dt
+------ T
+v2
+R----N
+d2s
+dt2
+-------T
++
+=
++
+=
+a
+v2
+R----
+
+
+
+
+dv
+dt
+-----
+
+
+
+2
++
+=
+
+[PAG 235]
+FISICA
+III-17
+Se il moto di trascinamento cioè il moto di S rispetto ad S è un moto traslatorio, e gli
+assi x, y, z rimangono paralleli ai rispettivi assi del sistema assoluto, allora il moto di tra-
+scinamento sarà noto quando sarà nota la legge oraria dell’origine O del sistema relativo
+rispetto al sistema assoluto.
+Pertanto, se il moto di trascinamento è traslatorio (Fig. III.4.1), è evidente che il movi-
+mento di un punto P nel sistema assoluto è pari alla somma vettoriale degli spostamenti
+relativo e di trascinamento:
+OP(t) = OO(t) + OP(t)
+(III.4.1)
+Fig. III.4.1  Moto di un punto P rispetto ai sistemi di riferimento assoluto e relativo.
+Considerando gli spostamenti assoluto, relativo e di trascinamento, in un intervallo di
+tempo infinitesimo, l’equazione:
+dsa = dsr + dst
+(III.4.2)
+ha validità generale e vale, non solo se il moto di trascinamento è traslatorio, ma per qual-
+siasi moto di trascinamento.
+Un numero qualsiasi di componenti, di spostamenti, associati simultaneamente ad un
+corpo, in un intervallo di tempo infinitesimo, coincidono con lo spostamento che subi-
+rebbe il corpo stesso se tali componenti fossero considerate non contemporaneamente ma
+in successione e indipendenti fra loro. 
+La velocità rispetto ad un sistema assoluto è pari alla somma dei vettori delle velocità
+relativa e di trascinamento. Derivando rispetto al tempo la III.4.2 si ottiene infatti:
+va = vr + vt
+(III.4.3)
+dove:
+(III.4.4)
+rappresentano le rispettive componenti della velocità.
+Un numero qualsiasi di componenti di velo-
+cità associate simultaneamente ad un corpo pos-
+sono essere sommate, mediante la regola del
+parallelogrammo, o più in generale con il poli-
+gono delle velocità, per determinarne la risul-
+tante (Fig. III.4.2).
+Allo stesso modo si definiscono le accelera-
+zioni assoluta, relativa e di trascinamento:
+Fig. III.4.2  Somma vettoriale delle velocità.
+x
+y
+z
+z
+y
+O
+O
+P
+x
+va
+dsa
+dt
+-------;
+=
+vr
+dsr
+dt
+-------;
+=
+vt
+dst
+dt
+------;
+=
+v1
+v2
+v3
+v
+v = v1 + v2 + v3
+
+[PAG 236]
+III-18
+FISICA
+(III.4.5)
+Se il moto di trascinamento è traslatorio, l’accelerazione assoluta è pari alla somma
+dei vettori delle accelerazioni relativa e di trascinamento.
+In generale, se il moto relativo di S rispetto ad S è composto da un moto traslatorio e
+da uno rotatorio, con velocità angolare , attorno ad un asse qualsiasi, allora l’accelera-
+zione assoluta è composta dalla somma vettoriale dell’accelerazione relativa e di trascina-
+mento, alle quali si aggiunge una accelerazione complementare o accelerazione di
+Coriolis. L’accelerazione assoluto diventa:
+aa = ar + at + ac         
+(III.4.6)
+dove ac = 2 vr.
+L’accelerazione complementare si annulla quando  = 0 o vr = 0, oppure, caso in cui
+la velocità angolare e la velocità relativa di S rispetto ad S sono perpendicolari fra loro.
+Pertanto se il moto di trascinamento è puramente traslatorio  = 0 e ac = 0, mentre, se
+il moto di trascinamento consiste in una rotazione di S rispetto un asse fisso di S e vr = 0,
+allora aa = at = -2r, che rappresenta l’accelerazione centripeta del moto circolare uni-
+forme avente raggio r.
+4.2.  Movimenti composti
+Si consideri la caduta libera di un inerte lanciato con velocità iniziale e soggetto alla
+sola forza di gravità.
+In questo caso la traiettoria è individuata
+dalla composizione delle leggi orarie dei
+moti rettilinei uniforme e uniformemente
+accelerato, rispettivamente lungo l’ascissa e
+l’ordinata, come evidenziato in Fig. III.4.3.
+La traiettoria è individuata da una parabola
+avente coordinate:
+(III.4.7)
+Fig. III.4.3  Traiettoria del moto composto
+dai moti rettilinei ortogonali.
+5.  PRINCIPI DELLA DINAMICA, FORZE
+La dinamica è la disciplina che studia le relazioni tra il moto dei corpi e le forze che lo
+producono. Essa si basa su tre principi fondamentali: i tre principi di Newton.
+Primo principio (principio di inerzia)
+Un punto materiale non soggetto a forze è fermo o si muove con moto rettilineo uniforme.
+Sistemi di riferimento inerziali
+Il principio di inerzia afferma che la velocità di un corpo non soggetto a forze è costante.
+Ma per definire la velocità di un corpo è necessario definire un sistema di riferimento. Si
+chiamano inerziali quei sistemi di riferimento in cui vale il principio di inerzia. 
+Nei limiti di precisione delle esperienze realizzabili dall’uomo, un sistema che risulti
+inerziale è il sistema delle stelle fisse con origine nel baricentro del sistema solare e tre
+assi cartesiani rivolti verso stelle che mantengono invariate le loro posizioni reciproche.
+aa
+dva
+dt
+------- ;
+=
+ar
+dvr
+dt
+-------;
+=
+at
+dvt
+dt
+------ ;
+=
+x
+y
+v0y
+v0x
+v0
+x
+x0
+vxt
++
+=
+y
+y0
+vyt
+1
+2--ayt2
++
++
+=
+
+
+
+
+
+
+[PAG 237]
+FISICA
+III-19
+Un sistema di riferimento solidale con la superficie terrestre si può, in prima approssi-
+mazione, considerare inerziale.
+Per il principio di relatività di Galileo, tutte le leggi della meccanica valide in un
+sistema di riferimento sono le stesse anche in un sistema di riferimento che si muova con
+moto rettilineo uniforme rispetto al primo.
+Come caso particolare di questo principio, si può affermare che un sistema di riferi-
+mento che si muova con moto rettilineo uniforme rispetto a un sistema di riferimento iner-
+ziale è anch’esso un sistema di riferimento inerziale. 
+Ad esempio, un treno che viaggi su un binario rettilineo a velocità costante sarà dun-
+que un sistema inerziale, così come un aereo che voli a velocità costante. I viaggiatori
+possono tranquillamente fare attività come camminare o bere un bicchiere d’acqua come
+se il treno o l’aereo fossero fermi. Nel momento di una frenata o di una curva i bicchieri
+possono rovesciarsi e chi si trovi in piedi subirà una forza apparente che si oppone alla
+frenata o alla curva.
+Secondo principio di Newton
+Un punto materiale soggetto a una forza subisce un accelerazione nella direzione e nel
+verso della forza direttamente proporzionale alla forza stessa. La formula è la seguente:
+F = ma
+(III.5.1)
+dove la costante di proporzionalità m è una caratteristica del punto materiale detta
+massa inerziale. Dal secondo principio si deduce il primo come caso particolare in cui la
+forza sia nulla; in questo caso anche l’accelerazione sarà dunque nulla per cui il punto
+materiale avrà velocità costante.
+Esempio
+Un punto materiale di massa m soggetto alla forza peso P sulla terra a livello del mare
+subisce un’accelerazione verso il basso pari a:
+Quantità di moto
+Si chiama quantità di moto di un punto materiale il vettore 
+q = mv
+(III.5.2)
+questa definizione permette di riscrivere i primi due principi della dinamica in una forma
+equivalente:
+(III.5.3)
+e quindi il secondo principio diventa:
+(III.5.4)
+Il primo principio diventa il principio di conservazione della quantità di moto: 
+(III.5.5)
+cioè la quantità di moto di un punto materiale non soggetto a forze si conserva.
+Terzo principio (principio di azione e reazione)
+Quando due corpi interagiscono, se il primo esercita una forza sul secondo, allora il
+secondo esercita una forza uguale e contraria sul primo e il punto di applicazione delle
+due forze è lo stesso.
+a
+P
+m---
+mg
+m
+-------
+g
+9 81 m/s2
+
+=
+=
+=
+=
+F
+ma
+mdv
+dt
+-----
+d mv
+
+
+dt
+--------------
+dq
+dt
+-----
+=
+=
+=
+=
+F
+dq
+dt
+-----
+=
+dq
+dt
+-----
+0
+=
+
+[PAG 238]
+III-20
+FISICA
+5.1.  Massa inerziale e massa gravitazionale
+La massa inerziale è la caratteristica intrinseca di un punto materiale o più in generale
+di un corpo qualsiasi definita dalla seconda legge di Newton come costante di proporzio-
+nalità tra la forza e l’accelerazione. La massa gravitazionale è la caratteristica intrinseca
+di un punto materiale che compare nella legge di gravitazione universale. Pur essendo
+concettualmente diverse, si verifica sperimentalmente, nei limiti di precisione attualmente
+disponibili, che esse sono proporzionali e quindi, prendendo opportunamente la costante
+G, sono uguali. Per questo motivo si usa normalmente il termine massa senza ulteriori
+specificazioni. 
+La massa è una quantità additiva, come il volume, e la sua unità di misura è il chilo-
+grammo (kg). L’equivalenza tra i due concetti di massa si può anche esprimere in questo
+modo: un punto materiale di massa (inerziale) 1kg sottoposto a una forza di 9,81 N, subi-
+sce un’accelerazione di modulo g = 9,81 m/sec2. Poiché anche la forza peso accelera la
+stessa massa con la stessa intensità, è anch’essa 9,81 N.
+5.2.  Classificazione delle forze fondamentali della natura
+Si possono classificare le quattro forze fondamentali della natura rispetto alla loro
+sorgente:
+–  gravitazionale la cui sorgente è la massa;
+–  elettromagnetica la cui sorgente è la carica elettrica;
+–  nucleare debole la cui sorgente è ogni particella;
+–  nucleare forte la cui sorgente è ogni particella costituente nucleo.
+Sebbene tutte le forze presenti in natura si possano ricondurre ai quattro tipi sopra elen-
+cati, nello studio del moto di un punto materiale è talvolta conveniente non indagare all’ori-
+gine delle forze, ma classificare le forze in base agli effetti che esse hanno sui punti materiali.
+5.3.  Forza peso
+Si verifica sperimentalmente che ogni punto materiale in prossimità della superficie
+terrestre subisce un’accelerazione rivolta verso il basso e pari a circa 9,81 m/s2 detta gra-
+vitazionale e indicata con il simbolo g. Per il secondo principio della dinamica, si può
+affermare che esso è soggetto a una forza peso P pari a mg.
+5.4.  Forze di attrito
+Sono forze non conservative che si oppongono al moto di un punto materiale in qualsiasi
+direzione e verso. Hanno la caratteristica di produrre lavoro negativo o nullo.
+Attrito radente
+Quando un punto materiale è appoggiato a un piano, questo esercita sul punto mate-
+riale una forza che si oppone al suo scorrimento. Si distinguono i due casi in cui il punto
+sia fermo o in movimento.
+–  Attrito statico. Quando il punto materiale è fermo la forza massima di attrito che il
+piano può opporre è proporzionale alla componente della risultante delle forze applicate
+normale al piano:
+(III.5.6)
+dove il coefficiente di proporzionalità s è detto coefficiente di attrito statico.
+Il punto materiale è in equilibrio fintantoché la componente della risultante delle forze
+applicate parallela alla direzione di massima pendenza del piano non supera la forza mas-
+sima di attrito statico.
+–  Attrito dinamico. Analogamente, quando il corpo è in movimento la forza di attrito
+è proporzionale alla componente della risultante delle forze applicate normalmente al
+piano:
+Fs
+FMAX
+
+sN
+=
+
+[PAG 239]
+FISICA
+III-21
+(III.5.7)
+dove il coefficiente di proporzionalità d è detto coefficiente di attrito dinamico.
+Attrito volvente
+Una ruota, una pallina, un rullo, liberi di rotolare su un piano subiscono una forza che
+si oppone al moto, detta attrito volvente. Si ricava sperimentalmente la forza di attrito vol-
+vente di un cilindro di raggio r che rotola:
+(III.5.8)
+dove il coefficiente di proporzionalità v è detto coefficiente di attrito volvente.
+Attrito viscoso
+Un punto materiale che si muove in un fluido subisce un forza direttamente proporzio-
+nale alla velocità e verso contrario. Questo vale per velocità non troppo elevate.
+5.5.  Forze gravitazionali: legge di gravitazione universale
+La legge di gravitazione universale afferma che tra due punti materiali A e B di massa
+m1 e m2 posti a una distanza r tra loro si attraggono con una forza pari a:
+(III.5.9)
+dove G è detta costante di gravitazione universale e il suo valore più accurato ricavato
+sperimentalmente è:
+(III.5.10)
+r è il versore della retta congiungente i due punti e il segno meno indica che la forza è
+attrattiva. Naturalmente, per il principio di azione e reazione, la forza che A esercita su B
+e quella che B esercita su A sono uguali e contrarie, quindi A attrae B e B attrae A con la
+stessa intensità.
+5.6.  Tipi di forze
+Forze elastiche
+Sono forze dovute alla deformazione di un corpo che tende a ritornare nella sua posi-
+zione originaria, detta appunto deformazione elastica. Si verifica sperimentalmente che la
+forza esercitata da una molla vincolata ad un estremo su un punto materiale agganciato
+all’altro estremo è (per piccoli spostamenti) direttamente proporzionale alla distanza dalla
+posizione di equilibrio detta deformazione o elongazione.
+(III.5.11)
+dove x è la deformazione e k è una costante caratteristica della molla.
+Forze elettriche
+La forza che si esercita tra due particelle elettricamente cariche è data dalla legge di
+Coulomb:
+(III.5.12)
+q1 e q2 sono le cariche elettriche delle particelle e k è una costante che dipende dal mezzo
+che separa le particelle.
+Forze atomiche
+L’interazione forte è la forza attrattiva che si esercita tra i nucleoni (protoni e neu-
+troni) che permette al nucleo dell’atomo di restare unito, nonostante la repulsione elettrica
+Fd
+dN
+=
+F
+v
+N
+r---
+=
+F
+-G
+m1m2
+r2
+-------------r
+=
+G
+6 673 0 003
+
+
+
+
+10-11Nm2/kg2
+
+=
+F
+-kx
+=
+F
+k
+q1q2
+r2
+---------- r
+=
+
+[PAG 240]
+III-22
+FISICA
+dovuta alle cariche concordi dei protoni.
+L’interazione debole è responsabile della radioattività dei nuclei pesanti. Teorie ormai
+convalidate hanno permesso di far rientrare l’interazione debole nella stessa classe
+dell’interazione elettromagnetica, classe di interazione che viene chiamata elettrodebole. 
+5.7.  Densità, peso specifico
+La densità è il rapporto tra la massa e il volume di una parte infinitesima di un corpo.
+Il peso specifico è la densità moltiplicata per l’accelerazione gravitazionale.
+Un corpo si dice omogeneo quando la sua densità è costante.
+5.8.  Misurazione statica delle forze
+Il secondo principio di Newton suggerisce una modalità operativa per misurare la
+forza applicata a un corpo di massa nota. Essa consiste nel misurarne l’accelerazione.
+Una modalità più pratica, detta statica, consiste nel confrontare la forza con la forza
+elastica che ha una forma particolarmente semplice. Un dinamometro costituito da una
+molla tarata registra una deformazione della molla proporzionale alla forza subita, rag-
+giungendo così una nuova posizione di equilibrio. 
+5.9.  Dinamica del punto
+Momento di una forza
+Il momento della forza F applicata nel punto P (detto punto di applicazione) rispetto
+al punto O (detto polo) è: 
+(III.5.13)
+Momento angolare
+Il momento angolare di un punto materiale (di massa m e in movimento con velocità
+v) rispetto al punto O (detto polo) è:
+(III.5.14)
+Un caso particolare: il moto circolare. Il vettore L0 ha direzione ortogonale al piano
+del moto, verso dato dalla regola della vite e modulo L  =  mrv = mr2.
+Esempio
+Un punto materiale appoggiato su un piano inclinato senza attrito è soggetto alla forza
+peso e alla reazione vincolare esercitata dal piano. Si scomponga la forza peso nelle due
+componenti parallela alla direzione di massima pendenza del piano e perpendicolare al
+piano. Quest’ultima è compensa esattamente dalla reazione vincolare esercitata dal piano,
+per cui la risultante delle forze ha modulo P sen = mg sen. L’accelerazione è P/m = g
+senFig. III.5.1).
+Fig. III.5.1  Scomposizione della forza peso sul piano inclinato.
+Si consideri lo stesso esempio, ma con un piano comprendente un coefficiente di
+M0
+OP
+F
+
+=
+L0
+OP
+mv
+
+=
+Psen
+Pcos
+P =mg
+
+
+[PAG 241]
+FISICA
+III-23
+attrito ms = md = m. Il punto subisce un’ulteriore forza di modulo N = mg cos che si
+oppone al moto e quindi la sua accelerazione totale avrà modulo:
+agsen-g cosg(sen-cos) = gcostan-)
+(III.5.15)
+In particolare se il punto materiale viene appoggiato sul piano con velocità iniziale
+nulla, esso si muoverà se e solo se l’inclinazione a del piano è superiore all’arcotangente
+del coefficiente d’attrito statico s.
+6.  IMPULSO, LAVORO ED ENERGIA
+Le tre leggi di Newton sono alla base di tutta la meccanica classica e quindi tutte le
+altre leggi possono essere dedotte da esse. Non di meno è utile definire altre quantità e
+formulare dei teoremi che le legano. 
+6.1.  Impulso e quantità di moto
+Partendo dalla seconda legge della dinamica, nella forma:
+(III.6.1)
+e integrando questa equazione rispetto al tempo tra due istanti successivi si ottiene il teo-
+rema dell’impulso:
+(III.6.2)
+dove la quantità:
+(III.6.3)
+è detta impulso della forza F tra t1 e t2.
+Il teorema afferma in sostanza che se si conosce l’impulso subito da una particella, se
+ne conosce anche la variazione della quantità di moto, pur non essendo noti l’intensità e la
+durata della forza.
+6.2.  Lavoro di una forza
+Il lavoro elementare compiuto da una forza F che compia uno spostamento infinite-
+simo ds è per definizione:
+(III.6.4)
+dove  è l’angolo compreso tra i vettori F e ds.
+Il lavoro compiuto da una forza il cui punto di applicazione si sposti lungo una curva 
+di estremi A e B è:
+(III.6.5)
+Si dice che la forza F è conservativa se il valore dell’integrale non dipende dalla par-
+ticolare curva   percorsa, ma solo dalla posizione degli estremi A e B.
+Il lavoro di una forza conservativa il cui punto di applicazione si sposti da A e B è:
+(III.6.6)
+L’unità di misura del lavoro è il Joule (J). Un Joule è il lavoro compiuto da una forza
+di un newton il cui punto di applicazione si sposti di un metro.
+dq
+dt
+-----
+0
+=
+q
+F ttd
+t1
+t2
+It1 t2
+=
+=
+It1 t2
+F ttd
+t1
+t2
+=
+dL
+F ds
+
+Fxdx
+Fydy
+Fzdz
++
++
+Fds cos
+
+=
+=
+=
+L
+F s
+
+
+=
+LAB
+F s
+
+A
+B
+
+=
