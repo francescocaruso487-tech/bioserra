@@ -1,0 +1,2130 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 36/116 ===
+Chars: 44,559 | Offset: 1,545,025
+
+
+
+[PAG 796]
+IX-28
+MISURE ELETTRICHE
+Questa regolazione si può intendere sostanzialmente una regolazione in corrente, da 
+cui deriva necessariamente la regolazione della tensione al carico. Essa non consente la 
+riduzione a zero della tensione perché si dovrebbe impiegare un resistore variabile di resi-
+stenza infinita.
+Esempio 1.
+Determinare la resistenza di un reostato che debba ridurre la corrente fino al valore 
+minimo pari a Imax/10 in un circuito alimentato a 100 V ed avente una resistenza di carico 
+RL = 50 .
+Procedimento.
+Le correnti limiti sono: Imax = U/RL = 100/50 = 2 A; Imin = Imax/10 = 0,2 A.
+La resistenza totale massima è: Rmax = U/Imin = 100/0,2 = 500 .
+Il reostato dovrà avere una resistenza  450  ed essere adatto ad una corrente di 2 A.
+4.2.2  Regolazione potenziometrica
+Circuito potenziometrico a vuoto
+Questo collegamento presenta il resistore di regolazione alimentato direttamente fra i 
+terminali fissi dalla tensione di ingresso, mentre la tensione di uscita viene colta fra uno 
+dei terminali fissi e il cursore (Fig. IX.4.4). La corrente impegnata è I = Ui / R.
+Fig. IX.4.4  Regolazione potenziometrica a vuoto.
+Indicata con r la parte regolabile del resistore, il circuito è assimilabile ad un partitore 
+di tensione e quindi:
+(IX.4.3)
+Circuito potenziometrico a carico
+Collegando in uscita un carico RL, (Fig. IX.4.5), il circuito si può considerare come un 
+partitore di tensione fra le resistenze: R1 = R  r e R2 = r  RL / (r  RL).
+Fig. IX.4.5  Regolazione potenziometrica a carico: schema di collegamento.
+Ui
+Uu
+I
+R
+r
+Uu
+Uir
+R
+
+=
+con
+0
+Uu
+Ui
+
+
+Ui
+Uu
+I
+R
+r
+Iu
+RL
+
+[PAG 797]
+MISURE ELETTRICHE
+IX-29
+La tensione al carico è:
+(IX.4.4)
+e la corrente:
+(IX.4.5)
+Questa regolazione offre una regolazione più ampia di quella reostatica, ma è soggetta 
+a maggior dissipazione. Inoltre la regolazione a carico perde di linearità; risulta ancora 
+soddisfacente scegliendo R  RL / 5.
+Esempio 2.
+Si vuole determinare la resistenza di un circuito potenziometrico alimentato a Ui = 10 V e 
+adatto a regolare la tensione su un carico RL = 100 .
+Procedimento.
+Si stima sufficiente dimensionare la resistenza variabile R = RL/10 = 10  per una cor-
+rente I = 1 A.
+Come verifica si può determinare la tensione regolata quando il cursore è a metà. Risulta,
+–  a vuoto: Uu = Ui/2 = 10/2 = 5 V;
+–  a carico: R1 = 10  5 = 5 ; R2 = 5  10/15 = 3,33 ;
+Uu = Ui R2/(R1 + R2) = 10  3,33/8,33 = 4 V con una diminuzione del 20% rispetto alla pre-
+cedente. Per ridurre questa percentuale, se giudicata eccessiva, occorre ridurre la resi-
+stenza variabile.
+5  MISURA DI TENSIONE
+5.1  Voltmetro
+Lo strumento che misura la tensione prende il nome di voltmetro (V). Se adatto per la 
+corrente continua, ha i morsetti contrassegnati e deve essere inserito fra i due punti del 
+circuito fra i quali esiste la tensione da rilevare (Fig. IX.5.1).
+Fig. IX.5.1  Schema di inserzione di un voltmetro.
+Il voltmetro presenta una resistenza interna Rv e quindi, in funzionamento, sottrae al 
+circuito una corrente:
+(IX.5.1)
+È necessario che tale corrente sia irrilevante rispetto a quella presente nel circuito e 
+quindi lo strumento possiede una resistenza interna molto elevata, indicata di norma sul 
+quadrante. Nel caso di strumenti a più portate, il valore è dato in /V, cioè viene fornita la 
+resistenza interna corrispondente ad ogni volt di portata. Il reciproco di questa grandezza 
+dà la corrente di fondoscala dello strumento.
+Uu
+UiR2
+R1
+R2
++
+
+
+
+=
+con
+0
+Uu
+Ui
+
+
+Iu
+Uu
+RL
+
+=
+con
+0
+Iu
+Ui
+RL
+
+
+
+U
+V
+Iv
+I
+RL
++
++
+Iv
+U
+Rv
+
+=
+
+[PAG 798]
+IX-30
+MISURE ELETTRICHE
+Esempio 1.
+Un voltmetro di resistenza interna 500 /V possiede due portate, U1 = 150 V e U2 = 300 
+V. Si vuole determinare la corrente di fondoscala e la resistenza interna dello strumento.
+Procedimento.
+La corrente di fondoscala è: Ifs = 1/500 = 2 mA.
+Le resistenze interne risultano:
+–  per 150 V, Rv1 = 500  150 = 75 k;
+–  per 300 V, Rv2 = 500  300 = 150 k.
+5.2  Portata del voltmetro
+La portata del voltmetro è il valore di fondoscala. Per aumentare la portata si deve col-
+legare in serie allo strumento una resistenza addizionale Ra di valore tale che possa tratte-
+nere l’eccesso di tensione (Fig. IX.5.2).
+Fig. IX.5.2  Voltmetro con resistenza addizionale.
+Si definisce potere moltiplicatore (m) il rapporto fra la portata che si vuole ottenere U
+e quella dello strumento Uv:
+(IX.5.2)
+Applicando la formula del partitore di tensione si ottiene m = (Ra + Rv)/Rv da cui:
+(IX.5.3)
+Le resistenze addizionali vengono utilizzate per ottenere uno strumento a più portate.
+Esempio 2.
+Un voltmetro di portata 30 V e resistenza interna 20 k delle essere impiegato per otte-
+nere portate di 75 V, 150 V, 300 V. Si vogliono determinare le resistenze addizionali 
+occorrenti.
+Procedimento (Fig. IX.5.3).
+–  per 75 V: m1 = 75/30 = 2,5, R1 = 20 (2,5  1) = 30 k,
+–  per 150 V: m2 = 150/30 = 5, R2 = 20 (5  1) = 80 k, R’2 = R2  R1 = 80  30 = 50 k;
+–  per 300 V: m3 = 300/30 = 10, R3 = 20 (10  1) = 180 k, R’3 = R3  R2 = 180  80 = 
+100 k.
+Fig. IX.5.3  Voltmetro a più portate.
+U
+Uv
+V
+Iv
+Rv
+Ra
+m
+U
+Uv
+
+=
+Ra
+Rv m
+1
+–
+
+
+=
+V
+0
+30 V
+75 V
+150 V
+300 V
+R1
+R’2
+R’3
+
+[PAG 799]
+MISURE ELETTRICHE
+IX-31
+5.3  Verifica di taratura di un voltmetro
+Si compie col metodo di paragone, confrontando le indicazioni dello strumento Vv
+con quelle di un secondo strumento Vc ritenuto campione e connesso in parallelo (Fig. 
+IX.5.4).
+Fig. IX.5.4  Circuito per la verifica della taratura di un voltmetro.
+Si può impiegare un alimentatore a tensione variabile oppure un dispositivo regolatore 
+potenziometrico; consigliabile impiegare due resistenze, R1 e R2 = R1/10 per la regola-
+zione fine. Lo strumento sarà considerato idoneo se gli errori assoluti sono tutti contenuti 
+entro la fascia di tolleranza data dalla sua classe.
+6  MISURA DI CORRENTE
+6.1  Amperometro
+Lo strumento che misura la corrente prende il nome di amperometro (A). Se adatto per 
+la corrente continua ha i morsetti contrassegnati e deve essere inserito lungo il circuito, 
+dove esiste la corrente da rilevare (Fig. IX.6.1).
+Fig. IX.6.1  Schema di inserzione di un amperometro.
+L’amperometro presenta una resistenza interna Ra e quindi, in funzionamento, pro-
+duce una caduta di tensione data da:
+(IX.6.1)
+È necessario che tale caduta di tensione sia irrilevante rispetto alla tensione del cir-
+cuito e quindi lo strumento possiede una resistenza interna molto piccola, indicata, di 
+norma, sul quadrante.
+6.2  Portata dell’amperometro
+La portata dell’amperometro, ovvero il valore di fondoscala, si può aumentare colle-
+gando in parallelo ad esso una resistenza in derivazione (shunt) Rd di valore tale che possa 
+convogliare l’eccesso di corrente (Fig. IX.6.2).
+R1
+R2
+Vc
+Vv
+Ui
+Ua
+U
+RL
+A
+I
++
++
+Ua
+RaI
+=
+
+[PAG 800]
+IX-32
+MISURE ELETTRICHE
+Fig. IX.6.2  Amperometro con shunt.
+Si abbia un amperometro di portata Ia e si voglia aumentarne il valore a I. Il potere
+moltiplicatore (m) è:
+(IX.6.2)
+Applicando la formula del partitore di corrente si ottiene m = (Gd + Ga)/Ga da cui:
+(IX.6.3)
+Le resistenze in derivazione vengono utilizzate per ottenere uno strumento a più portate.
+Esempio 1.
+Un amperometro di portata 10 A e resistenza interna 10 m delle essere modificato per 
+ottenere una nuova portata di 50 A. Determinare la resistenza in derivazione occorrente.
+Procedimento.
+–  m = 50/10 = 5, Rd = 10/4 = 2,5 m.
+6.3  Verifica di taratura di un amperometro
+Si compie col metodo di paragone, confrontando le indicazioni dello strumento con 
+quelle di un secondo strumento ritenuto campione e connesso in serie (Fig. IX.6.3).
+Fig. IX.6.3  Circuito per la verifica della taratura di un amperometro.
+Si può impiegare una regolazione reostatica che agisce sui due amperometri in serie; 
+consigliabile impiegare due resistenze, R1 e R2 = R1/10 per la regolazione fine. Lo stru-
+mento sarà considerato idoneo se gli errori assoluti sono tutti contenuti entro la fascia di 
+tolleranza data dalla sua classe.
+7  MISURE DI RESISTENZA
+7.1  Metodi industriali
+Sono metodi che consentono la determinazione del valore di una resistenza indiretta-
+mente, attraverso misure di tensione e/o di corrente.
+7.1.1  Metodo voltamperometrico
+La misura di una resistenza si può ottenere indirettamente attraverso la misura della 
+tensione e della corrente, sulla base della legge di Ohm. In pratica, l’inserzione degli stru-
+A
+I
+Ia
+Id
+Rd
+Ua
+m
+I
+Ia
+
+=
+Rd
+Ra
+m
+1
+–
+
+
+
+=
+Ac
+Av
+R1
+R2
+
+[PAG 801]
+MISURE ELETTRICHE
+IX-33
+menti, i quali posseggono una resistenza interna propria, Rv e Ra, dà luogo ad un errore 
+dipendente dal tipo di connessione. Infatti l’inserzione degli strumenti può essere fatta 
+con voltmetro a monte oppure a valle dell’amperometro (Fig. IX.7.1).
+  
+Fig. IX.7.1  a) Voltmetro a monte dell’amperometro; b) voltmetro a valle dell’amperome-
+tro.
+La connessione con voltmetro a monte fornisce una resistenza: Rm  R + Ra e risulta 
+errata in eccesso, con un errore relativo:
+(IX.7.1)
+La connessione con voltmetro a valle fornisce una resistenza: Rm = R  Rv e risulta 
+errata in difetto, con un errore relativo:
+(IX.7.2)
+I due errori, in eccesso e in difetto, sono uguali per:
+(IX.7.3)
+Se gli strumenti vengono ritenuti ideali, i due schemi sono equivalenti. In caso contra-
+rio la prima inserzione è preferibile per misure di resistenze elevate (R  R*), la seconda 
+per resistenze basse (R  R*).
+7.1.2  Metodo di confronto
+Si collegano le due resistenze, Rx incognita e Rc nota, in serie e si misurano le due ten-
+sioni Ux e Uc (Fig. IX.7.2).
+Fig. IX.7.2  Misura di resistenza con metodo di confronto.
+Poiché la corrente è la stessa in entrambe, le tensioni sono proporzionali alle resi-
+stenze e risulta:
+Iv
+Ua
+V
+A
+R
++
+
+a)
+Iv
+Ua
+V
+A
+R
++
+
+b)
+r
+Ra
+R
+
+=
+r
+R
+Rv
+
+=
+R*
+RaRv
+=
+Vc
+Vx
+Rc
+Rx
+U
+I
+
+[PAG 802]
+IX-34
+MISURE ELETTRICHE
+(IX.7.4)
+7.1.3  Metodo di sostituzione
+Si collegano le due resistenze, Rx incognita e Rc nota, in modo che siano inseribili 
+separatamente in circuito mediante un deviatore o degli spinotti (Fig. IX.7.3).
+Fig. IX.7.3  Misura di resistenza con metodo di sostituzione.
+Mantenendo costante la tensione si misurano le due correnti Ix e Ic. Poiché la tensione 
+è la stessa in entrambe, le correnti sono inversamente proporzionali alle resistenze e 
+risulta:
+(IX.7.5)
+7.2  Ponti in corrente continua
+7.2.1  Ponte di Wheatstone
+È un apparecchio formato da quattro resistenze, una delle quali incognita, connesse a 
+quadrilatero (Fig. IX.7.4). Su una diagonale è collegato lo strumento indicatore, ad esem-
+pio un galvanometro, sull’altra l’alimentazione.
+Fig. IX.7.4  Il ponte di Wheatstone.
+Operando sulle resistenze variabili si azzera l’indicazione del galvanometro. In tal 
+caso è: I1 = I2, I3 = Ix, U1 = U3, U2 = Ux da cui deriva:
+(IX.7.6)
+Per migliorare la sensibilità della lettura e rendere la misura più precisa si deve opera-
+re con resistenze aventi lo stesso ordine di grandezza di quella incognita.
+Il ponte di Wheatstone si presta efficacemente per misure di resistenze di valore 
+medio, comprese fra 10  e 100 k; per valori minori o maggiori il metodo perde gra-
+dualmente in sensibilità ed offre risultati sempre meno precisi.
+Rx
+RcUx
+Uc
+
+=
+Rc
+Rx
+U
+I
+A
+Rx
+RcIc
+Ix
+
+=
+R1
+R2
+R3
+Rx
+G
+Rx
+I1
+I2
+I3
+Ix
+Q
+P
+M
+N
+I
+U
++
+Rx
+R3R2
+R1
+
+=
+
+[PAG 803]
+MISURE ELETTRICHE
+IX-35
+7.2.2  Ponte a filo
+È una variante realizzativa del ponte di Wheatstone e presenta i lati 1 e 2 costituenti 
+parti complementari di un filo conduttore calibrato; su di esso scorre un cursore che è un 
+terminale del ramo galvanometrico (Fig. IX.7.5).
+Fig. IX.7.5  Il ponte a filo.
+Poiché le resistenze R1 e R2 sono proporzionali alle rispettive lunghezze l1 e l2, l’equa-
+zione di equilibrio risulta:
+(IX.7.7)
+Il rapporto l2  l1 è indicato direttamente su una scala graduata, tracciata lungo il filo.
+7.2.3  Doppio ponte di Thomson
+Questo apparecchio è usato per misure di resistenze molto piccole. Consiste in un cir-
+cuito principale nel quale sono inserite in serie due resistenze, una incognita Rx e l’altra 
+nota Rc, dello stesso ordine di grandezza. La differenza di potenziale su Rc viene opposta 
+a quella su Rx tramite due coppie di reostati uguali, rispettivamente R1 = R2 e R3 = R4. Si 
+tratta di reostati doppi, manovrati ciascuno da un unico cursore in modo da mantenere 
+l’uguaglianza delle due resistenze anche durante la variazione. Un galvanometro chiude la 
+diagonale di misura (Fig. IX.7.6).
+Fig. IX.7.6  Il doppio ponte di Thomson.
+Alimentato il circuito, si manovrano i cursori dei doppi reostati sino ad ottenere la 
+condizione di equilibrio, a galvanometro azzerato. In questa condizione valgono le rela-
+zioni: I1 = I4; I2 = I3; Ix = Ic; RcIc = R1(I1  I2); RxIx = R3(I4  I3); da cui risulta:
+(IX.7.8)
+R3
+Rx
+G
+R1
+R2
+P
+M
+N
+I
+U
+Q
+Rx
+R3l2
+l1
+
+=
+G
+I1
+I2
+I3
+I4
+R1
+R3
+R4
+Rc
+Rx
+Ic
+Ix
+R2
+I
+U
++
+P
+Q
+A
+B
+C
+D
+Rx
+Rc
+R3
+
+R1
+
+=
+
+[PAG 804]
+IX-36
+MISURE ELETTRICHE
+7.2.4  Applicazioni del metodo a ponte
+Il metodo a ponte può essere utilizzato per la ricerca di un punto di cortocircuito fra 
+due fili di una linea bifilare. Si realizza lo schema di Fig. IX.7.7 e si eseguono due prove, 
+una verso la coppia di terminali ad una estremità PQ e l’altra ripetendo la prova sulla cop-
+pia all’altra estremità RS.
+Fig. IX.7.7  Circuito per la ricerca del punto di cortocircuito fra due fili di una linea bifi-
+lare.
+Indichiamo con l la lunghezza della linea, r la resistenza unitaria, x la lunghezza del 
+tratto fra un’estremità della linea e il punto di cortocircuito, Rk la resistenza del cortocir-
+cuito. La condizione di equilibrio offre, per le due misure, i valori:
+R’ = 2rx + Rk, R” = 2r(l  x) + Rk.
+Elaborando le due espressioni si ottiene:
+(IX.7.9)
+Con un metodo analogo si può determinare anche la presenza e la posizione di un cor-
+tocircuito di un filo di linea e la massa oppure la terra.
+7.3  Ohmmetri
+7.3.1  Ohmmetro in serie
+Lo strumento basa la sua misura indirettamente tramite il rilevamento dell’intensità di 
+corrente di un circuito comprendente la resistenza da misurare. Il circuito è formato dal 
+collegamento in serie della resistenza incognita Rx con una resistenza zavorra variabile Rz
+attraverso un amperometro (Fig. IX.7.8). La resistenza incognita è munita di un tasto di 
+cortocircuito.
+Fig. IX.7.8  Ohmmetro in serie.
+La misura si effettua in due tempi:
+–  taratura, a tasto chiuso; indicata con U la tensione di alimentazione, la corrente del 
+circuito è IM = U/Rz; questa corrente viene regolata tramite Rz in modo che l’indice dello 
+strumento si porti in fondoscala, cui corrisponde sulla scala degli ohm, sviluppata in senso 
+inverso, il valore 0;
+G
+A
+B
+C
+U
++
+P
+Q
+X
+R
+S
+N
+M
+Rk
+l
+x
+2rl
+R'
+R''
+–
++
+
+
+4r
+
+
+
+=
+A
+Rz
+Rx
+t
+U
++
+
+[PAG 805]
+MISURE ELETTRICHE
+IX-37
+–  misura, a tasto aperto; la corrente, inferiore alla precedente, vale:
+(IX.7.10)
+e sulla scala degli ohm si può leggere il valore della resistenza Rx. I valori significativi 
+sono:
+7.3.2  Ohmmetro a bobine incrociate (logometrico)
+Lo strumento è composto da un magnete fisso e da un equipaggio mobile. Il magnete 
+termina in due espansioni polari piane che comprendono un campo magnetico uniforme, a 
+linee di forza uguali e parallele. L’equipaggio mobile, collocato all’interno del campo in 
+posizione centrale, è lasco, cioè privo di molle di contrasto ed è formato da due bobine a 
+sagoma rettangolare, incrociate e solidali fra loro, poste sullo stesso asse.
+Il circuito elettrico è realizzato con due rami in parallelo, uno comprendente la bobina 
+(1) in serie alla resistenza incognita Rx, l’altro comprendente la bobina (2) in serie ad una 
+resistenza nota Rc (Fig. IX.7.9).
+Fig. IX.7.9  Ohmmetro a bobine incrociate.
+Alimentando il circuito con una tensione continua U e nell’ipotesi che le resistenze 
+delle due bobine siano trascurabili, in esse scorrono due correnti il cui rapporto è inversa-
+mente proporzionale alle resistenze: I2 / I1 = Rx / Rc. Le correnti producono due flussi 1 e 
+2 in asse alle rispettive bobine e quindi normali fra loro, che danno come risultante un 
+flusso  sfasato rispetto a 1 di un angolo  = arctg(2 / 1). Questo flusso è sollecitato 
+per effetto magnetico ad allinearsi al flusso del magnete, facendo assumere all’equipaggio 
+mobile una precisa posizione di equilibrio.
+Tenendo conto della propozionalità diretta fra flussi e correnti magnetizzanti si 
+ottiene:
+(IX.7.11)
+I valori significativi dell’angolo di elongazione sono:
+Un indice, solidale all’equipaggio mobile, indica il valore di resistenza direttamente 
+su una scala graduata.
+7.4  Misure di resistenze di terra
+Le connessioni di terra sono collegamenti di protezione che si effettuano fra le parti 
+metalliche delle apparecchiature elettriche e i dispersori di terra, di cui ogni impianto 
+deve essere munito. Il contatto fra i dispersori e la terra deve presentare una resistenza 
+I
+U
+Rz
+Rx
++
+
+
+
+=
+Rx
+0
+=
+I
+IM
+=
+;
+
+Rx
+Rz
+=
+I
+IM
+2
+
+=
+;
+
+Rx
+
+
+I
+0
+=
+.
+
+N
+S
+U
++
+Rc
+Rx
+I1
+I2
+
+arctg Rx
+Rc
+
+
+
+=
+Rx
+0
+=
+
+0
+=
+;
+
+Rx
+Rc
+=
+
+45;
+=
+
+Rx
+
+
+
+90
+=
+.
+
+
+[PAG 806]
+IX-38
+MISURE ELETTRICHE
+molto bassa, inferiore ad un preciso valore indicato dalle norme. La misura della resi-
+stenza di terra si può compiere con metodo voltamperometrico oppure potenziometrico.
+Metodo voltamperometrico. Si realizza un circuito come quello indicato in Fig. 
+IX.7.10 costituito dal dispersore in misura Dx e da due dispersori ausiliari D1 e D2 infissi 
+nel terreno con disposizione a triangolo possibilmente equilatero. La sorgente di alimenta-
+zione in corrente alternata è applicata tramite un trasformatore di isolamento, mentre il 
+circuito comprende gli strumenti col voltmetro direttamente connesso fra i dispersori.
+Fig. IX.7.10  Misura di resistenza di terra con metodo voltamperometrico.
+Si eseguono tre misurazioni sulle tre coppie di dispersori, ottenendo tre valori di resi-
+stenza: Rx1 = Rx + R1, Rx2 = Rx + R2, R12 = R1 + R2. Risolvendo il sistema si ottiene:
+(IX.7.12)
+Metodo potenziometrico. Il circuito principale, alimentato da una sorgente in corrente 
+alternata tramite un trasformatore di isolamento, è connesso a due dispersori Dx in misura 
+e Dh ausiliario e comprende un trasformatore di corrente (T.A.) di rapporto noto K = I2 / I1. 
+Il circuito secondario è in connessione potenziometrica fra Dx ed una sonda S interposta fra 
+i due dispersori (Fig. IX.7.11).
+Fig. IX.7.11  Misura di resistenza di terra con metodo potenziometrico.
+Quando lo strumento rivelatore si azzera è:
+(IX.7.13)
+Lo strumento che racchiude tutti gli elementi di questo circuito è detto tellurometro.
+V
+A
+D1
+D2
+Dx
+Rx
+Rx1
+R12
+–
+Rx2
++
+
+
+2
+
+=
+I2
+I1
+R
+r
+A
+T.A.
+Dx
+S
+Dh
+Rx
+Kr
+=
+
+[PAG 807]
+MISURE ELETTRICHE
+IX-39
+8  MISURE DI FORZA ELETTROMOTRICE
+La misura della fem di un generatore di tensione deve essere fatta sul componente 
+privo di corrente, cioè a vuoto. Lo strumento che si presta alla misura diretta è un voltme-
+tro a resistenza molto elevata; particolarmente indicato si presenta il voltmetro elettrosta-
+tico. La misura della forza elettromotrice si può compiere anche impiegando il metodo 
+potenziometrico.
+8.1  Metodo potenziometrico
+Si realizza un circuito in modo che alla fem incognita Ex venga opposta una tensione 
+nota Uc. Disponendo di un circuito regolatore potenziometrico munito di un amperometro 
+di precisione, si alimenta il generatore Ex tramite una resistenza di protezione Rs e un gal-
+vanometro rivelatore (Fig. IX.8.1).
+Fig. IX.8.1  Misura di fem con metodo potenziometrico.
+Si opera poi sulla resistenza potenziometrica Rp sino ad azzerare lo strumento. In tal 
+caso è:
+(IX.8.1)
+8.2  Potenziometro
+Il procedimento precedente presuppone la lettura di I e quindi la precisione dipende 
+dalla classe dell’amperometro impiegato. Esistono apparecchi di precisione, detti poten-
+ziometri, di esclusivo impiego in laboratorio, che consentono la misura di una fem con 
+estrema precisione. Anche essi comprendono il circuito principale potenziometrico e la 
+maglia di opposizione col galvanometro. Per evitare però la lettura della corrente, preve-
+dono una taratura preventiva usando un generatore campione Ec (ad esempio la pila 
+Weston che presenta Ec = 1,0186 V). Il ramo principale del circuito presenta, in serie alla 
+resistenza potenziometrica Rp, una seconda resistenza variabile Rr in connessione reosta-
+tica. Il ramo di misura è munito di un deviatore in modo da effettuare la prova in due 
+tempi (Fig. IX.8.2).
+Fig. IX.8.2  Schema elettrico di un potenziometro.
+t2
+t1
+Rp
+r
+I
+Ex
+A
+U
++
+G
+Rs
+Ex
+rI
+=
+t2
+t1
+Rp
+r
+Ex
+G
+U
++
+Rr
+Ec
+1
+2
+
+[PAG 808]
+IX-40
+MISURE ELETTRICHE
+In taratura (1), prefissata I, si predispone Rp in modo che sia rc = Ec  I e si procede 
+all’azzeramento del galvanometro manovrando Rr;
+in misura (2) si varia la resistenza Rp sino ad ottenere nuovamente l’azzeramento del 
+galvanometro, da cui deriva rx = Ex I.
+Poiché nelle due rilevazioni la corrente è rimasta costante, risulta:
+(IX.8.2)
+Il potenziometro consente anche la determinazione di una corrente, misurando la 
+caduta di tensione che essa produce su una resistenza nota.
+9  MISURE DI POTENZA
+9.1  Misure di potenza in corrente continua
+9.1.1.  Metodo voltamperometrico
+La misura della potenza in corrente continua si può ottenere indirettamente attraverso 
+la misura della tensione e della corrente, in base alla formula: P = U I. È lo stesso metodo 
+impiegato per la misura di una resistenza (si veda il Sottopar. 7.1.1) che prevede due 
+schemi di inserzione distinti in voltmetro a monte e voltmetro a valle dell’amperometro 
+(Fig. IX.9.1).
+    
+Fig. IX.9.1  Misura di potenza con metodo voltamperometrico: a) voltmetro a monte 
+dell’amperometro; b) voltmetro a valle.
+Occorre però distinguere due casi secondo che si voglia determinare la potenza al 
+carico Pu oppure la potenza in ingresso Pi. Se gli strumenti vengono ritenuti ideali, i due 
+schemi sono equivalenti e Pm = U I = Pu = Pi. In caso contrario, essendo Rv e Ra le resi-
+stenze interne degli strumenti, le potenze corrette e gli errori sono i seguenti,
+–  voltmetro a monte:
+(IX.9.1)
+–  voltmetro a valle:
+(IX.9.2)
+9.1.2  Wattmetro 
+La misura di potenza si può effettuare direttamente impiegando il wattmetro elettrodi-
+namico (si veda il Sottopar. 3.5.4). Le due bobine, voltmetrica e amperometrica, possie-
+dono uno dei due morsetti contrassegnati; l’inserzione corretta richiede che il morsetto 
+contrassegnato della voltmetrica sia connesso col filo su cui è posta l’amperometrica (Fig. 
+Ex
+rxEc
+rc
+
+=
+A
+V
+U=Ui
+Ii
++
+I=Iu
+Uu
+R
+Rv
+Ra
+a)
+
+A
+V
+R
+Ui
+Rv
+Ra
++
+I=Ii
+Iv
+U=Uu
+Iu
+b)
+
+Pu
+Pm
+RaI2,
+–
+=
+r
+Ra
+R
+
+;
+=
+Pi
+Pm
+GvV2,
++
+=
+r
+R
+Rv
+
+=
+Pu
+Pm
+GvV2,
+–
+=
+r
+R
+Rv
+
+;
+=
+Pi
+Pm
+RaI2,
++
+=
+r
+Ra
+R
+
+.
+=
+
+[PAG 809]
+MISURE ELETTRICHE
+IX-41
+IX.9.2). Anche in questo caso l’inserzione dello strumento può essere effettuata in due 
+modi, con la bobina voltmetrica a monte oppure a valle dell’amperometrica; per la scelta 
+dell’inserzione più opportuna si rimanda a quanto detto al paragrafo precedente.
+  
+Fig. IX.9.2  Misura di potenza con wattmetro; a) bobina voltmetrica a monte dell’ampero-
+metrica; b) a valle.
+La portata del wattmetro è il prodotto della portata amperometrica per quella voltme-
+trica; ad esempio scelta una portata voltmetrica di 300 V e una amperometrica di 5 A la 
+portata wattmetrica risulta di 1500 W. È importante verificare che entrambe le portate 
+siano separatamente rispettate, in relazione ai valori massimi di tensione e corrente previ-
+sti nel circuito.
+Per aumentare la portata dello strumento si può aumentare la portata voltmetrica e/o 
+quella amperometrica. L’aumento della portata voltmetrica si ottiene mediante resistenze 
+addizionali. La variazione della portata amperometrica si ottiene modificando il collega-
+mento delle due sezioni in cui è suddivisa la bobina. Si ottengono due portate nel rapporto 
+1:2 rispettivamente per collegamento serie o parallelo (Fig. IX.9.3).
+    
+Fig. IX.9.3  Variazione della portata amperometrica di un wattmetro: serie I, parallelo 2I.
+9.1.3  Verifica di taratura del wattmetro
+La verifica della taratura di un wattmetro si può compiere efficacemente col metodo 
+del carico fittizio. Si realizzano due circuiti distinti (Fig. IX.9.4):
+–  uno amperometrico con regolazione reostatica, che alimenta la bobina amperometrica 
+del wattmetro collegata in serie ad un amperometro campione;
+–  uno voltmetrico con regolazione potenziometrica, che alimenta la bobina voltmetrica 
+del wattmetro collegata in parallelo ad un voltmetro campione.
+La prova si esegue predisponendo un valore di tensione Uc e facendo variare la corrente Ic
+per valori discreti e successivi sino al massimo ammesso dallo strumento in misura.
+Effettuata per ogni valore la lettura della potenza P sul wattmetro in verifica, si può 
+calcolare la potenza campione Pc = Uc Ic e l’errore assoluto del wattmetro a = P  Pc.
+U
+I
+R
+Ra
+a)
+
+
+U
+I
+R
+Ra
+b)
+
+
+I
+2I
+
+[PAG 810]
+IX-42
+MISURE ELETTRICHE
+Fig. IX.9.4  Verifica di taratura di un wattmetro con carico fittizio.
+9.2  Misure di potenza in corrente alternata
+9.2.1  Wattmetro in corrente alternata
+Il wattmetro elettrodinamico consente la misura della potenza attiva: P = U I cos. 
+Oltre agli errori di inserzione, che possono essere ritenuti coincidenti con quelli rilevati in 
+corrente continua, in corrente alternata lo strumento è soggetto all’errore di fase. Deriva 
+dal fatto che la bobina voltmetrica non è esattamente una resistenza, ma un’impedenza Zv
+con una sia pur piccola componente induttiva. Ciò comporta che la corrente voltmetrica 
+Iv = U / Zv è sfasata in ritardo rispetto alla tensione di un angolo (Fig. IX.9.5):
+(IX.9.3)
+e l’angolo fra le due correnti, amperometrica e voltmetrica, risulta:  =   .
+Fig. IX.9.5  Diagramma vettoriale delle correnti in un wattmetro elettrodinamico.
+Dalla IX.3.15 si deduce che lo strumento indica la potenza:
+(IX.9.4)
+L’errore relativo che ne segue, considerando sen  =  e cos  = 1 vale:
+(IX.9.5)
+L’errore di fase risulta apprezzabile per misure su circuiti fortemente sfasati. Ad 
+esempio, con   = 1° e  = 80° l’errore risulta r = 9,9%.
+Per misure su circuiti con fattore di potenza molto basso la lettura del wattmetro, la 
+A
+Wv
+V
+I
+U
+U
++
++
+
+arc cos Rv
+Zv
+
+
+
+=
+U
+I
+Iv
+
+
+
+P
+UIcoscos 
+
+–
+
+
+=
+r
+tg
+=
+
+[PAG 811]
+MISURE ELETTRICHE
+IX-43
+cui indicazione appare nel tratto iniziale della scala, può risultare fortemente errata perché 
+all’errore di fase si aggiunge l’errore di lettura. In questi casi si può usare il wattmetro a 
+basso fattore di potenza, ottenuto indebolendo la molla antagonista. Ad esempio, con un 
+indebolimento di un fattore 5 si ottiene un valore di fondoscala che è 1/5 di quello nor-
+male, corrispondente a cos = 0,2.
+10  MISURE DI IMPEDENZA
+10.1  Metodo industriale
+Le misure di impedenza con metodo industriale si eseguono inserendo nel circuito i 
+tre strumenti fondamentali: voltmetro, amperometro, wattmetro (Fig. IX.10.1).
+Fig. IX.10.1  Misura di impedenza con metodo industriale.
+Si alimenta il circuito tramite un variatore di tensione e si rilevano i valori di U, I, P, 
+dai quali si desume,
+–  il fattore di potenza:
+(IX.10.1)
+–  la potenza reattiva:
+(IX.10.2)
+Segue il calcolo dell’impedenza, distinta nelle sue componenti serie:
+(IX.10.3)
+Se l’impedenza non è costante, la misura deve essere effettuata per diversi valori di 
+tensione tracciando su un diagramma cartesiano la caratteristica del componente U = f(I).
+Nel caso di impedenza fortemente reattiva è opportuno impiegare un wattmetro a 
+basso cos. Se poi il componente si può ritenere puramente reattivo, come spesso accade 
+nella misura di condensatori, il wattmetro è superfluo e ci si riduce al metodo voltampero-
+metrico, da cui deriva:
+(IX.10.4)
+10.2  Ponti in corrente alternata
+I ponti in corrente alternata sono derivati dal ponte di Wheatstone (si veda il Sottopar. 
+7.2.1); la frequenza della sorgente di alimentazione può essere varia; particolarmente 
+usate sono le frequenze di 50 Hz e di 1000 Hz; sulla diagonale di misura è posto uno stru-
+mento rivelatore che può essere di tipo acustico oppure ottico. Ad equilibrio raggiunto è:
+(IX.10.5)
+W
+A
+V
+Z
+f
+cos
+P
+UI
+
+
+
+=
+Q
+Ptg
+=
+Z
+U
+I
+
+=
+,
+R
+Zcos,
+=
+X
+Zsen.
+=
+XC
+U
+I
+
+=
+Zx
+Z3
+Z2
+Z1
+
+
+=
+
+[PAG 812]
+IX-44
+MISURE ELETTRICHE
+Molto spesso due dei quattro lati del ponte sono resistivi, e ciò comporta che gli altri 
+due, ad equilibrio raggiunto, devono comprendere impedenze con lo stesso angolo di fase.
+10.2.1  Ponte di Kohlrausch
+È derivato direttamente dal ponte di Wheatstone e permette la misura della resistenza 
+di liquidi o soluzioni elettrolitiche (Fig. IX.10.2)
+Fig. IX.10.2  Ponte di Kohlrausch.
+Ad equilibrio raggiunto è:
+(IX.10.6)
+10.2.2  Ponte di De Sauty
+È impiegato per la misura di capacità per le quali si possano trascurare le perdite 
+(angolo di perdita  = 0). Comprende due lati resistivi variabili e gli altri due costituiti 
+l’uno dalla capacità campione Cc e l’altro da quella incognita Cx (Fig. IX.10.3). A rivela-
+tore azzerato è:
+(IX.10.7)
+Fig. IX.10.3  Ponte di De Sauty.
+10.2.3  Ponte di Wien
+È un ponte che può essere impiegato per la misura di capacità o induttanze reali, con 
+componente resistiva non trascurabile.
+Misura di capacità. Il ponte impiega, sul lato di riferimento, un condensatore cam-
+pione, che riteniamo privo di perdite, al quale è connessa in serie una resistenza Rc nota, 
+di piccolo valore e variabile (Fig. IX.10.4). A ponte in equilibrio si ha:
+Rx
+Ix
+Q
+M
+N
+P
+I1
+I2
+I3
+R1
+R2
+R3
+Rx
+R3
+R2
+R1
+
+
+=
+Cx
+Cc
+R1
+R2
+
+
+=
+P
+N
+M
+Q
+R1
+R2
+Cc
+Cx
+
+[PAG 813]
+MISURE ELETTRICHE
+IX-45
+(IX.10.8)
+   
+Fig. IX.10.4  Ponte di Wien: a) per la misura di capacità; b) per la misura di induttanze.
+Misura di induttanza. Il ponte possiede: sul lato di riferimento una induttanza cam-
+pione, nota nelle sue due componenti Lc e Rc; sul lato di misura l’induttanza incognita di 
+componenti Lx e Rx. Per rendere possibile l’equilibrio delle componenti resistive è inserita 
+una resistenza variabile r, che può essere connessa in serie a Rc oppure a Rx andando a 
+compensare la componente ohmica in difetto. Ammettendo Rc in difetto, ad equilibrio rag-
+giunto le componenti ed il fattore di merito sono:
+(IX.10.9)
+10.2.4  Ponte di Schering
+Il ponte è adatto a misure di capacità con perdite molto piccole. Possiede sul lato di 
+riferimento un condensatore campione ritenuto privo di perdite e, in parallelo al ramo 
+resistivo R1, un condensatore variabile C1 (Fig. IX.10.5). Ad equilibrio raggiunto è:
+(IX.10.10)
+Fig. IX.10.5  Ponte di Schering.
+10.2.5  Ponte di Maxwell
+Questo ponte è adatto a misure di induttanze e consente anche la determinazione delle 
+Rx
+RcR2
+R1,
+
+=
+Cx
+CcR1
+R2,
+
+=
+
+RcCc
+=
+P
+N
+M
+Q
+R1
+R2
+Cc
+Cx
+Rc
+Rx
+I1
+I2
+Ic
+Ix
+a)
+P
+N
+M
+Q
+R1
+R2
+Lc
+Lx
+Rc
+Rx
+R1
+r
+b)
+Rx
+Rc
+r
++
+
+R2
+R1,
+
+=
+Lx
+LcR2
+R1,
+
+=
+Q
+Lc
+Rc
+r
++
+
+
+
+=
+Rx
+R2C1
+Cc,
+
+=
+Cx
+CcR1
+R2,
+
+=
+
+R1C1
+=
+P
+N
+M
+R2
+Cc
+R1
+Q
+Cx
+Rx
+C1
+
+[PAG 814]
+IX-46
+MISURE ELETTRICHE
+perdite e del fattore di merito. Possiede sul lato di riferimento una resistenza campione e, 
+in parallelo al ramo resistivo R1, un condensatore variabile C1 (Fig. IX.10.6). Ad equili-
+brio raggiunto è:
+(IX.10.11)
+Fig. IX.10.6  Ponte di Maxwell.
+11  MISURE SU LINEE TRIFASI
+I circuiti trifasi possono essere simmetrici oppure dissimmetrici rispetto alle tensioni, 
+equilibrati o squilibrati rispetto alle correnti. In pratica i sistemi industriali sono simme-
+trici perché così sono imposti dalle società fornitrici di energia elettrica. Il carico trifase 
+può essere accessibile oppure, come accade quasi sempre, non accessibile. (Si veda la Sez. 
+VII Elettrotecnica generale).
+11.1  Misure su carico accessibile
+Quando il carico è accessibile, poiché il sistema è l’assieme di tre sistemi monofasi, le 
+misure si possono effettuare indipendentemente su ciascuna fase.
+Per il collegamento a stella si utilizzano tre voltmetri, tre amperometri e tre wattmetri 
+(Fig. IX.11.1) e si rilevano i valori di: E1, E2, E3; I1, I2, I3; P1, P2, P3; da cui si ricava, per 
+ciascuna fase:
+(IX.11.1)
+Fig. IX.11.1  Misure su un carico trifase a stella: a) tensioni e correnti; b) potenze.
+Per il collegamento a triangolo si utilizzano un voltmetro, tre amperometri e tre watt-
+Rx
+RcR2
+R1,
+
+=
+Lx
+RcR2C1,
+=
+Q
+R1C1
+=
+P
+N
+M
+R2
+Rc
+R1
+Q
+Lx
+Rx
+C1
+cosi
+Pi
+EiIi,
+
+=
+Qi
+Pitgi,
+=
+i
+1,2,3
+=
+A
+A
+A
+V
+V
+V
+L1
+L2
+L3
+a)
+L1
+L2
+L3
+W
+W
+W
+P1
+P2
+P3
+b)
+
+[PAG 815]
+MISURE ELETTRICHE
+IX-47
+metri (Fig. IX.11.2) e si rilevano i valori di: U, JA, JB, JC; PA, PB, PC; da cui si ricava, per 
+ciascuna fase:
+(IX.11.2)
+Fig. IX.11.2  Misure su carico trifase a triangolo: a) tensione e correnti; b) potenze.
+In entrambi i casi i valori totali sono:
+(IX.11.3)
+11.2  Indipendenza della potenza attiva totale dal potenziale di riferimento
+Il diagramma vettoriale che si riferisce ad un carico trifase simmetrico squilibrato a 
+stella a tre fili è illustrato in Fig. IX.11.3, in cui appare lo spostamento U0 del centro stella 
+effettivo O rispetto al baricentro O’.
+Fig. IX.11.3  Diagramma vettoriale delle grandezze di un sistema squilibrato a stella.
+Le tensioni stellate istantanee baricentriche e’ sono legate a quelle effettive e dalla 
+relazione:
+(IX.11.4)
+La potenza istantanea complessiva è:
+(IX.11.5)
+Sostituendo la IX.11.4 nella IX.11.5 e tenendo conto che la somma delle correnti è 
+nulla, la potenza istantanea diviene:
+(IX.11.6)
+cosi
+Pi
+UiJi,
+
+=
+Qi
+Pitgi,
+=
+i
+A,B,C
+=
+L1
+L2
+L3
+A
+A
+A
+JA
+JC
+JB
+V
+a)
+L1
+L2
+L3
+W
+W
+W
+PA
+PC
+PB
+b)
+P
+Pi,
+=
+Q
+Qi,
+=
+
+arc tg Q
+P
+
+
+
+=
+0
+0’
+1
+2
+3
+I1
+I2
+I3
+E1
+1
+E2
+E3
+E’
+2
+E’
+3
+2
+0
+3
+U0
+E’
+1
+ei
+ei'
+v0
+–
+=
+i
+1, 2, 3
+=
+p
+eiii
+=
+i
+1, 2, 3
+=
+p
+ei'ii
+v0ii
+–
+ei'ii
+=
+=
+i
+1, 2, 3
+=
+
+[PAG 816]
+IX-48
+MISURE ELETTRICHE
+Rimane dimostrato che la potenza istantanea complessiva, e con essa la potenza attiva 
+di un sistema trifase simmetrico, è indipendente dal potenziale di riferimento. Si presenta 
+vantaggioso riferire le voltmetriche dei wattmetri ad uno dei tre fili e l’inserzione che ne 
+risulta è detta inserzione Aron (Fig. IX.11.4).
+Fig. IX.11.4  Inserzione Aron.
+È consuetudine indicare i due wattmetri coi simboli A e B, assegnando il simbolo A al 
+wattmetro che presenta l’indicazione maggiore. La potenza trifase quindi è data da:
+(IX.11.7)
+11.3  Circuito simmetrico equilibrato
+11.3.1  Potenza attiva
+Un circuito trifase simmetrico ed equilibrato è perfettamente definito con quattro 
+misurazioni ottenute con l’inserzione di un voltmetro, un amperometro e due wattmetri in 
+Aron (Fig. IX.11.5).
+Fig. IX.11.5  Misure su un circuito trifase simmetrico ed equilibrato.
+Ammesso un carico di carattere induttivo, dal diagramma vettoriale delle grandezze 
+che operano sui due wattmetri (Fig. IX.11.6) si deducono le indicazioni di ciascuno:
+(IX.11.8)
+Fig. IX.11.6  Diagrammi vettoriali di A e B.
+L1
+L2
+L3
+W
+W
+A
+B
+P
+A
+B
++
+=
+L1
+L2
+L3
+W
+W
+A
+B
+A
+V
+A
+UIcos 
+30°
+–
+
+,
+=
+B
+UIcos 
+30°
++
+
+
+=
+
+I1
+1
+E2
+2
+3
+U13
+E1
+30°
+  30°
+
+30°
+ + 30°
+I2
+U23
+0
+
+[PAG 817]
+MISURE ELETTRICHE
+IX-49
+Sviluppando le due relazioni si verifica che la potenza attiva è data da:
+(IX.11.9)
+Nel caso in cui l’indicazione di B, inserito correttamente, risulti negativa, occorre 
+invertirne l’amperometrica e considerare la lettura negativa.
+Quando il carico ha carattere capacitivo, le indicazioni di A e B si scambiano. Mante-
+nendo tuttavia la convenzione di assumere come A il wattmetro ad indicazione maggiore, 
+rimangono inalterate tutte le considerazioni che sono state fatte.
+11.3.2  Potenza reattiva e fattore di potenza
+Tenendo presenti le due relazioni (IX.11.8) si verifica che la potenza reattiva è data 
+da:
+(IX.11.10)
+Dalle formule IX.11.9 e IX.11.10 si ottiene, per la potenza apparente:
+(IX.11.11)
+Il fattore di potenza è dato dalla definizione:
+(IX.11.12)
+Esempio 1.
+Le misure su un circuito trifase a stella simmetrico ed equilibrato hanno fornito i 
+valori seguenti: U = 380 V; A = 800 W; B = 300 W. Si vuole determinare la corrente, il 
+fattore di potenza e i componenti serie dell’impedenza di una fase.
+Procedimento.
+Le potenze sono:
+–  P = A + B = 800 + 300 = 1100 W; Q = 
+ (A  B) = 
+ (800  300) = 866 VAR
+da cui risulta:
+–  tg = QP = 8661100 = 0,787 e quindi   cos = 0,786.
+La corrente vale:
+–  I = P/(
+ U cos) = 1100(
+  380  0,786) = 2,12 A.
+L’impedenza di una fase è:
+–  Z = U(
+ I) = 380(
+  2,12) = 104  di parametri serie:
+–  R = Z cos= 104  0,786 = 81,6 ;   X = Z sen = 104  0,618 = 64,3 .
+Per il carico equilibrato l’angolo di fase totale  coincide con l’angolo di ciascuna fase .
+Il fattore di potenza può essere ottenuto anche in funzione del rapporto fra le letture dei 
+due wattmetri:
+(IX.11.13)
+e risulta:
+(IX.11.14)
+La funzione IX.11.14 è tracciata in Fig. IX.11.7.
+P
+3UIcos
+A
+B
++
+=
+=
+Q
+3UIsen
+3 A
+B
+–
+
+
+=
+=
+S
+2
+A2
+AB
+B2
++
+–
+=
+cos
+cos arc tg Q
+P
+
+
+
+=
+3
+3
+3
+3
+3
+3
+x
+B
+A
+
+=
+cos
+1
+x
++
+
+
+2
+1
+x
+x2
++
+–
+
+=
+
+[PAG 818]
+IX-50
+MISURE ELETTRICHE
+Fig. IX.11.7  Diagramma cartesiano della funzione cos = f(x).
+Dalle relazioni precedenti si deducono i seguenti casi particolari:
+11.4  Circuito simmetrico squilibrato
+Il rilievo delle potenze di un circuito squilibrato può essere fatto in due modi che sono 
+indicati come: metodo delle quattro letture, o Barbagelata, metodo delle tre letture, o 
+Righi.
+In entrambi i casi la potenza attiva è data dalla formula IX.11.7: P = A + B.
+11.4.1  Metodo delle quattro letture (Barbagelata)
+Il metodo fa uso, per la misura della potenza reattiva di una linea trifase, delle tre pos-
+sibili inserzioni Aron, ciascuna ottenibile collegando le amperometriche su due fili e le 
+voltmetriche fra detti fili ed il terzo. Esse sono:
+(IX.11.15)
+Di esse solo quattro sono indipendenti, A, B, A’, B’, mentre le altre due possono essere 
+dedotte dalle prime: P32 = A + B  A’ e P31 = A + B  B’. La misurazione quindi si avvale 
+di quattro wattmetri collegati come indicato in Fig. IX.11.8.
+
+0°
+30°
+60°
+ 60°
+90°
+BA
+BA/2
+B0
+B 0
+BA
+x
+1
+0,5
+0
+
+
+cos
+1
+0,866
+0,5
+
+0
+0,9
+0,8
+0,7
+0,6
+0,5
+0,4
+0,3
+0,2
+0,1
+0
+1
+cos 
+0
+0,1
+0,2
+0,3
+0,4
+0,5
+0,6
+0,7
+0,8
+0,9
+1
+0,1
+0,2
+0,3
+0,4
+0,5
+0,6
+0,7
+0,8
+0,9
+1
+x
+0,064
+0,143
+0,240
+0,359
+0,5
+0,654
+0,803
+0,917
+0,984
+1
+P13
+A
+UI1cos 1
+30°
+–
+
+,
+=
+=
+P23
+B
+UI2cos 2
+30°
++
+
+
+=
+=
+P32
+UI3cos 3
+30°
+–
+
+,
+=
+P12
+A'
+UI1cos 1
+30°
++
+
+
+=
+=
+P21
+B'
+UI2cos 2
+30°
+–
+
+,
+=
+=
+P31
+UI3cos 3
+30°
++
+
+
+=
+
+[PAG 819]
+MISURE ELETTRICHE
+IX-51
+Fig. IX.11.8  Inserzione Barbagelata: a) con quattro wattmetri; b) con due wattmetri e 
+deviatore.
+Associando le indicazioni aventi la stessa corrente e sviluppando le formule 
+(IX.11.15) si ottengono i valori parziali:
+(IX.11.16)
+La potenza reattiva totale, somma delle precedenti, è:
+(IX.11.17)
+Fattore di potenza.
+Si può calcolare tramite la relazione generale IX.11.12. È anche possibile avvalersi 
+della funzione cos = f(x) data dalla IX.11.14. In questo caso il parametro x si calcola 
+effettuando il rapporto:
+(IX.11.18)
+Determinazione delle correnti
+Il metodo Barbagelata consente anche il calcolo delle tre correnti di linea. Tenendo 
+conto delle IX.11.13 e IX.11.14 possiamo determinare gli angoli relativi a ciascuna fase 
+attraverso il parametro x. Si calcola:
+L1
+L2
+L3
+W
+W
+A
+B
+W
+W
+A’
+B’
+a)
+L1
+L2
+L3
+W
+W
+A
+B
+a
+b
+a
+b
+b)
+Q1
+A
+A'
+–
+
+
+3,
+
+=
+Q2
+B'
+B
+–
+
+
+3,
+
+=
+Q3
+P32
+P31
+–
+
+
+3
+
+B'
+A'
+–
+
+
+3
+
+=
+=
+Q
+A
+B
+2 B'
+A'
+–
+
+
++
+–
+
+
+3
+
+=
+x
+UIi cosi
+30°
+–
+
+
+UIi cosi
+30°
++
+
+
+-------------------------------------------------
+P12
+P23
+P31
++
++
+P13
+P21
+P32
++
++
+------------------------------------------
+=
+=
+cioè
+x
+A
+2B
+A'
+B'
+–
++
++
+2A
+B
+A'
+–
+B'
++
++
+---------------------------------------------
+=
+x1
+A'
+A
+
+=
+1,
+
+x2
+B
+B'
+
+=
+2,
+
+x3
+P31
+P32
+
+A
+B
+B'
+–
++
+
+
+A
+B
+A'
+–
++
+
+
+
+=
+=
+3
+
+
+[PAG 820]
+IX-52
+MISURE ELETTRICHE
+e quindi, noti gli angoli e ricordando che P32 = A + B  A’ si ottiene:
+(IX.11.19)
+Esempio 2.
+Le misure effettuate su un circuito trifase simmetrico squilibrato hanno fornito i valori 
+seguenti: U = 380 V; A = 1000 W; B = 500 W; A’ = 400 W; B’ = 1100 W.
+Si vuole determinare: la potenza attiva e reattiva ed il fattore di potenza.
+Procedimento.
+Le potenze sono:
+–  P = A + B = 1000 + 500 = 1500 W;
+–  Q = [A  B + 2(B’  A’)]
+ = [1000  500 + 2 (1100  400)]
+ = 1098 VAR;
+e quindi:
+–  tg = QP = 10981500 = 0,732  cos = 0,807.
+11.4.2  Metodo delle tre letture (Righi)
+L’inserzione Righi fa uso di tre wattmetri, due dei quali, A e B, in connessione Aron 
+ed il terzo, indicato con C, è collocato con l’amperometrica sul filo 3 e la voltmetrica fra i 
+fili 1 e 2 (Fig. IX.11.9).
+Fig. IX.11.9  Inserzione Righi (con diagramma vettoriale di C).
+Con riferimento al diagramma vettoriale, l’indicazione del wattmetro C risulta iden-
+tica alla relazione B’  A’ di Barbagelata (IX.11.16).
+(IX.11.20)
+Ciò detto, tenendo conto della IX.11.17 la potenza reattiva è data da:
+(IX.11.21)
+Fattore di potenza
+Si può calcolare mediante la relazione generale IX.11.12 oppure tramite il parametro x
+ed utilizzando poi la formula IX.11.14. Poiché C = B’  A’, la IX.11.18 diviene:
+(IX.11.22)
+I1
+A
+Ucos 1
+30°
+–
+
+
+-----------------------------------------,
+=
+I2
+B'
+Ucos 2
+30°
+–
+
+
+-----------------------------------------,
+=
+I3
+A
+B
+A'
+–
++
+Ucos 3
+30°
+–
+
+
+-----------------------------------------
+=
+3
+3
+L1
+L2
+L3
+W
+W
+A
+B
+W
+C
+U12
+U12
+1
+2
+3
+90°
+90°3
+3
+C
+UI3cos 90°
+3
+–
+
+
+UI3sen3
+3Q3
+=
+=
+=
+Q
+A
+B
+2C
++
+–
+
+
+3
+
+=
+x
+A
+2B
+C
+–
++
+2A
+B
+C
++
++
+-------------------------------
+=
+
+[PAG 821]
+MISURE ELETTRICHE
+IX-53
+L’inserzione Righi non permette il calcolo delle tre correnti di linea.
+Esempio 3.
+Le misure su un circuito trifase simmetrico squilibrato hanno fornito i valori seguenti: 
+U = 380 V; A = 600 W; B = 400 W; C = 200 W. Si vuole determinare la potenza attiva e 
+reattiva ed il fattore di potenza.
+Procedimento.
+Le potenze sono:
+–  P = A + B = 600 + 400 = 1000 W;
+–  Q = (A  B + 2C)
+ = (600  400 + 2  200)
+ = 347 VAR
+e quindi:
+–  tg = QP = 3471000 = 0,347  cos = 0,945.
+11.5  Misure di energia su linee trifasi
+Per la misura dell’energia su linee trifasi si può far uso di contatori monofasi inseriti 
+in modo analogo ai corrispondenti wattmetri.
+Per circuiti che possano ritenersi simmetrici ed equilibrati occorrono due contatori 
+inseriti in connessione Aron (Fig. IX.11.10).
+L’energia attiva è:
+(IX.11.23)
+L’energia reattiva è:
+(IX.11.24)
+Il fattore di potenza medio si può ricavare dalla relazione generale
+cos = cos arc tg(Wq / Wa) oppure tramite il parametro: x = B A.
+Da notare che per circuito a basso fattore di potenza il contatore B può ruotare 
+all’indietro e l’energia così indicata deve essere considerata negativa.
+Fig. IX.11.11  Contatori in inserzione Righi.
+Esistono anche contatori trifasi nei quali i due equipaggi A e B vengono fatti agire sul 
+medesimo asse attuando l’operazione di somma oppure di sottrazione meccanicamente e 
+Fig. IX.11.10  Contatori in inserzione Aron.
+3
+3
+L1
+L2
+L3
+A
+B
+Wa
+A
+B
++
+=
+Wq
+3 A
+B
+–
+
+
+=
+L1
+L2
+L3
+A
+B
+C
+
+[PAG 822]
+IX-54
+MISURE ELETTRICHE
+consentendo la lettura diretta dell’energia rispettivamente attiva e reattiva totale. Per cir-
+cuiti simmetrici squilibrati si impiega comunemente il metodo Righi inserendo i tre conta-
+tori come indicato in Fig. IX.11.11. Anche in questo caso esistono contatori che attuano 
+meccanicamente l’operazione della formula IX.11.21 e danno direttamente il conteggio 
+dell’energia reattiva media.
+12  STRUMENTI PARTICOLARI
+12.1  Galvanometro balistico
+12.1.1  Principio di funzionamento
+È uno strumento che permette la misura della quantità di carica. Si tratta di un partico-
+lare galvanometro appesantito da masse disposte su un asse trasversale, solidale con 
+l’equipaggio mobile in modo da conferirgli un elevato momento di inerzia J (Fig. 
+IX.12.1).
+Fig. IX.12.1  Schema di principio di un galvanometro balistico.
+L’equazione di equilibrio di un galvanometro è:
+(IX.12.1)
+in cui:
+Cm = kmi è la coppia motrice, proporzionale alla corrente;
+Ca = ka è la coppia antagonista della molla, proporzionale all’angolo di deviazione;
+Cs = ks è la coppia antagonista elettromagnetica, proporzionale alla velocità;
+Ci = J ddt è la coppia d’inerzia, proporzionale all’accelerazione angolare.
+Se la corrente ha carattere impulsivo a costante di tempo breve, e in ogni caso molto 
+minore di quella meccanica, il fenomeno elettrico si può considerare esaurito prima che 
+l’equipaggio mobile si sia mosso apprezzabilmente. A questo punto Ca = 0 e l’equazione 
+IX.12.1 diviene:
+(IX.12.2)
+L’integrazione della IX.12.2 per il tempo dell’impulso, dato che il primo termine del 
+secondo membro si annulla, comporta:
+(IX.12.3)
+ovvero la velocità angolare acquisita è proporzionale alla carica.
+Nella seconda fase, esclusivamente meccanica, l’energia cinetica acquisita si tramuta 
+nell’energia di torsione della molla: J 22 = Ca 2 = ka 22. Tenendo conto della 
+IX.12.3 e passando all’elongazione dell’indice si ottiene:
+Cm
+Ca
+Cs
+Ci
++
++
+=
+kmdq
+ksd
+Jd
++
+=
+
+kmQ
+J
+
+=
