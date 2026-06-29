@@ -1,0 +1,1327 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 55/116 ===
+Chars: 44,409 | Offset: 2,385,321
+
+
+
+[PAG 1181]
+ILLUMINOTECNICA
+XI-53
+namento verticale indiretto al livello dell'occhio dell'osservatore; L è la luminanza, in cd 
+x-2, delle parti luminose di ogni apparecchio di illuminazione nella direzione dell'occhio 
+dell'osservatore;  è l'angolo solido, in steradianti, delle parti luminose di ogni apparec-
+chio di illuminazione nella direzione dell'occhio dell'osservatore; p è l'indice di posizione 
+di Guth, che è funzione dello scostamento angolare rispetto all'asse della visione, per ogni 
+singolo apparecchio di illuminazione.
+Come si affermava in precedenza, le sorgenti di elevata luminosità possono causare 
+abbagliamento ed alterare la visione degli oggetti. Questo fenomeno deve essere evitato, 
+per esempio, con un'adeguata schermatura delle lampade o la copertura delle finestre 
+mediante tende con schermi idonei. L'angolo minimo di schermatura indicato nella Tab. 
+XI.7.2 deve essere in funzione delle luminanze specifiche delle lampade. I valori riportati 
+nella Tab. XI.7.2 non si applicano ad apparecchi per l'illuminazione indiretta o montati al 
+di sotto del livello normale della visione.
+Tab. XI.7.2   Angoli di schermatura minimi per le specifiche luminanze delle lampade
+Anche le riflessioni velanti e l’abbagliamento riflesso sono oggetto di attenzione. Le 
+riflessioni di elevata luminosità nel compito visivo possono alterare le condizioni di visi-
+bilità del compito, in modo generalmente dannoso. Le riflessioni che velano l'immagine e 
+la luce abbagliante riflessa possono essere eliminate o ridotte sistemando adeguatamente 
+gli apparecchi d'illuminazione e i posti di lavoro, con una opportuna finitura della superfi-
+cie (superfici opache), con una riduzione della luminanza degli apparecchi d'illumina-
+zione, con un aumento dell'area luminosa dell'apparecchio d'illuminazione e con pareti e 
+soffitti chiari.
+Le qualità del colore di una lampada che si avvicina al bianco sono caratterizzate da 
+due attributi:
+–  l'apparenza del colore della lampada stessa;
+–  la sua capacità di resa dei colori che influenza l'apparenza del colore di oggetti e 
+persone illuminate dalla lampada.
+L'apparenza del colore di una lampada si riferisce al colore apparente (cronaticità) 
+della luce emessa. È definita dalla sua temperatura di colore correlata (TCP), come viene 
+riportato nella Tab. XI.7.3.
+Tab. XI.7.3   Gruppi di apparenza di colore delle lampade
+Luminanza della lampada
+kcd × m-2
+Angolo minimo di schermatura
+da 20 a 50
+15°
+da 50 a 500
+20°
+0
+30°
+Apparenza del colore
+Temperatura correlata del colore TCP
+K
+Calda
+minore di 3300 K
+Intermedia
+da 3300 K a 5300 K
+Fredda
+maggiore di 5 300 K
+
+[PAG 1182]
+XI-54
+ILLUMINOTECNICA
+Altri elementi da considerare sono lo sfarfallamento e gli effetti stroboscopici. Lo 
+sfarfallamento provoca distrazione e può dar luogo a effetti fisiologici, per esempio, cefa-
+lee. Gli effetti stroboscopici possono comportare situazioni di pericolo dovute alla modi-
+fica della percezione del movimento di macchinari dotati di moto rotatorio o alternativo.
+I sistemi d'illuminazione dovrebbero essere progettati in modo da evitare lo sfarfalla-
+mento e gli effetti stroboscopici e in alcuni casi è sufficiente alimentare le lampade ad 
+incandescenza in corrente continua o utilizzare lampade a scarica o ad incandescenza ali-
+mentate ad alta frequenza (attorno ai 30 kHz).
+A seconda del tipo di locale e di attività svolta, le norme prevedono differenti livelli di 
+valori dell'illuminamento medio Em mantenuto sul piano di riferimento, di indici unificati 
+di abbagliamento UGR (Unified Glare Rating) e di resa colore Ra.
+Tab. XI.7.4   Requisiti di illuminazione per interni (zone), compiti e attività
+Zone di circolazione
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Zone di circolazione e corridoi
+100
+28
+40
+A) Illuminazione a livello di pavimento
+2) Ra e UGR simili alle zone adiacenti.
+3) 150 lx se ci sono veicoli sulla strada.
+4) L'illuminazione di uscite o entrate 
+deve prevedere una zona di transizione 
+per tener conto delle differenze di illu-
+minamento tra dentro e fuori, durante il 
+giorno e la notte.
+5) Si dovrebbe fare attenzione all'abba-
+gliamento di mezzi e pedoni.
+Scale, ascensori, tappeti mobili
+150
+25
+40
+Rampe e binari di carico
+150
+25
+40
+Sale di riposo, infermeria e pronto soccorso
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Mense
+220
+22
+80
+Locali di riposo
+100
+22
+80
+Locali per l’esercizio fisico
+300
+22
+80
+Guardaroba, gabinetti, bagni, 
+toilette
+200
+25
+80
+Infermeria
+500
+19
+80
+Locali per visita medica
+500
+19
+80
+Sale di comando o di controllo
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Locali impianti, sala interruttori
+200
+25
+60
+Locali telex, posta, quadri di
+controllo
+500
+19
+80
+
+[PAG 1183]
+ILLUMINOTECNICA
+XI-55
+Tab. XI.7.4 Segue
+Magazzini/magazzini refrigerati
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Magazzini, zone di stoccaggio
+100
+25
+60
+200 lx se occupato in continuo.
+Zone di movimentazione, 
+imballaggio, spedizione
+300
+25
+60
+Magazzini con scaffali
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Corridoi: senza personale
+20
+
+40
+Illuminamento a livello pavimento.
+Corridoi: con presenza personale
+150
+22
+60
+Illuminamento a livello pavimento.
+Stazione di controllo
+150
+22
+60
+Agricoltura
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Carico e manovra delle merci, 
+uso di attrezzatura e macchinario 
+di movimentazione
+200
+25
+80
+Edifici per il bestiame
+50
+
+40
+Zone per animali malati, celle 
+parto
+200
+25
+80
+Preparazione mangime, caseifici, 
+lavaggio utensili
+200
+25
+80
+Forni, panifici, pasticcerie
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Preparazione, cottura al forno
+300
+22
+80
+Finitura, glassatura, decorazione
+500
+22
+80
+Uffici
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Archiviazione, copiatura ecc.
+300
+19
+80
+Scrittura, dattilografia, lettura, 
+elaborazione dati
+500
+19
+80
+Vedere lavoro con attrezzature munite 
+di videoterminale.
+Disegno tecnico
+750
+16
+80
+Postazioni CAD
+500
+19
+80
+Vedere lavoro con attrezzature munite 
+di videoterminale.
+Sale conferenze e riunioni
+500
+19
+80
+L'illuminazione dovrebbe essere 
+regolabile.
+Ricezione (reception)
+300
+22
+80
+
+[PAG 1184]
+XI-56
+ILLUMINOTECNICA
+Tab. XI.7.4 Segue
+Archivi
+200
+25
+80
+Vendita al dettaglio
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Zone di vendita
+300
+22
+80
+I requisiti di illuminamento Em e UGR 
+sono determinati dal tipo di negozio.
+Zona delle casse
+500
+19
+80
+Tavolo imballaggio
+500
+19
+80
+Spazi comuni in luoghi publici
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Ingressi
+100
+22
+80
+UGR solo se applicabile.
+Guardaroba
+200
+25
+80
+Sale d'attesa
+200
+22
+80
+Biglietteria
+300
+22
+80
+Ristoranti e hotel
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Accettazione (reception), cassa, 
+portineria
+300
+22
+80
+Cucina
+500
+22
+80
+Dovrebbe esserci una zona di 
+transizione tra la cucina e il ristorante.
+Ristorante, sala da pranzo, sala 
+ricevimenti
+
+
+80
+L'illuminazione dovrebbe essere 
+progettata per creare un'atmosfera 
+appropriata.
+Ristoranti self-service
+200
+22
+80
+Buffet
+300
+22
+80
+Sale conferenze
+500
+19
+80
+L'illuminazione dovrebbe essere 
+regolabile.
+Corridoi
+100
+25
+80
+Durante la notte sono accettabili livelli 
+più bassi.
+Teatri, sale di concerto, cinema
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Sale di prova, spogliatoi
+300
+22
+80
+L'illuminazione degli specchi per il 
+trucco deve essere priva di abbaglia-
+mento.
+Fiere, padiglioni espositivi
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Illuminazione generale
+300
+22
+80
+
+[PAG 1185]
+ILLUMINOTECNICA
+XI-57
+Tab. XI.7.4 Segue
+Biblioteche
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Scaffali
+200
+19
+80
+Zona di lettura
+500
+19
+80
+Posti di sevizio al pubblico
+500
+19
+80
+Parcheggi pubblici (coperti)
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Rampe di ingresso/uscita 
+(durante il giorno)
+300
+25
+20
+1) Illuminazione a livello suolo.
+2) I colori devono essere riconoscibili.
+Rampe di ingresso/uscita 
+(durante la notte)
+75
+25
+20
+1) Illuminazione a livello suolo.
+2) I colori di sicurezza devono essere 
+riconoscibili.
+Corsie di circolazione
+75
+25
+20
+1) Illuminazione a livello suolo.
+2) I colori di sicurezza devono essere 
+riconoscibili.
+Zone di parcheggio
+75
+
+20
+1) Illuminazione a livello suolo.
+2) I colori di sicurezza devono essere 
+riconoscibili.
+3) Un illuminamento verticale elevato 
+aumenta il riconoscimento dei volti 
+delle persone e quindi il senso di 
+sicurezza.
+Biglietteria
+300
+19
+80
+1) Evitare la riflessione nelle finestre.
+2) Evitare l'abbagliamento dall'esterno.
+Asili nido, scuole materne
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Aule giochi
+300
+19
+80
+Nido
+300
+19
+80
+Aule per lavoro manuale
+300
+19
+80
+Locali scolastici
+Tipo di interno, compito o attività
+Em (lx)
+UGRL
+Ra
+Note
+Aule scolastiche
+300
+19
+80
+L'illuminazione dovrebbe essere 
+regolabile.
+Aule per corsi serali e per adulti
+500
+19
+80
+L'illuminazione dovrebbe essere 
+regolabile.
+Sale lettura
+500
+19
+80
+L'illuminazione dovrebbe essere 
+regolabile.
+Lavagna
+500
+19
+80
+Evitare le riflessioni speculari.
+Tavolo per dimostrazioni
+500
+19
+80
+In sale lettura 750 lx.
+
+[PAG 1186]
+XI-58
+ILLUMINOTECNICA
+Tab. XI.7.4 Segue
+La Tab. XI.7.4 riporta i requisiti per l’illuminazione di interni di alcune zone, compiti 
+e attività.
+Il progetto d'illuminazione dovrebbe prevedere un fattore di manutenzione generale 
+determinato in base all'apparecchio d'illuminazione scelto, all'ambiente circostante ed al 
+programma di manutenzione specifico. Il livello d'illuminamento raccomandato per cia-
+scun compito è dato come illuminamento medio mantenuto. Il fattore di manutenzione 
+dipende dalle caratteristiche di manutenzione della lampada, dell'alimentatore, dell'appa-
+recchio di illuminazione, dell'ambiente circostante e del programma di manutenzione.
+Il progettista deve:
+–  stabilire il fattore di manutenzione ed elencare tutte le ipotesi richieste per la valu-
+tazione di questo valore;
+–  specificare gli apparecchi d'illuminazione idonei all'ambiente;
+–  preparare un programma di manutenzione completo che comprenda la frequenza 
+del ricambio delle lampade, gli intervalli di pulizia degli apparecchi d'illuminazione, del 
+locale ed il metodo di pulizia più adeguato.
+Nei casi di ordinaria amministrazione si impiega un fattore di deprezzamento pari a 
+1,25 (come indicato nella Tab. XI.7.5); in situazioni più gravose, nelle quali l'ambiente 
+non può essere pulito adeguatamente e con frequenza o sia particolarmente polveroso, si 
+adotta un fattore di deprezzamento più elevato. Si osservi nella tabella che il fattore di 
+manutenzione è l'inverso del fattore di deprezzamento.
+Aule educazione artistica
+500
+19
+80
+Aule educazione artistica in scuo-
+le d'arte
+750
+19
+90
+TCP 5000 K
+Aule per disegno tecnico
+750
+16
+80
+Aule per educazione tecnica e 
+laboratori
+500
+19
+80
+Laboratori di informatica
+300
+19
+80
+Vedere lavoro con attrezzature munite 
+di videoterminale.
+Laboratori linguistici
+300
+19
+80
+Aule di preparazione e officine
+500
+22
+80
+Ingressi
+200
+22
+80
+Zone di circolazione, corridoi
+100
+25
+80
+Sale professori
+300
+19
+80
+Biblioteca: zone di lettura
+500
+19
+80
+Mensa
+200
+22
+80
+Tab. XI.7.5   Fattore di manutenzione (M) e di deprezzamento (D)
+Riduzione dell’illuminamento a causa di sporcizia e invecchiamento 
+delle lampade, degli apparecchi di illuminazione e dei locali
+M
+D
+Ordinario
+Forte
+Molto elevato
+0,8
+0,7
+0,6
+1,25
+1,43
+1,67
+
+[PAG 1187]
+ILLUMINOTECNICA
+XI-59
+È possibile definire l’illuminazione direzionale come quel tipo di illuminazione usata 
+per mettere in evidenza oggetti, rivelare la trama dei tessuti e migliorare l'aspetto delle 
+persone nello spazio.
+Tutto questo è descritto con il termine "modellato". L'illuminazione direzionale di un 
+compito visivo può influenzare anche la sua visibilità.
+Il modellato è il risultato dell'equilibrio tra illuminazione diffusa e direzionale. Esso è 
+un valido criterio di qualità dell'illuminazione applicabile praticamente a tutti i tipi di 
+interni. L'aspetto generale di un ambiente interno è esaltato quando le sue caratteristiche 
+strutturali, le persone e gli oggetti al suo interno sono illuminati in modo tale che forme e 
+trame dei tessuti sono rivelati in modo chiaro e piacevole.
+Questo si verifica quando la luce proviene in modo predominante da una direzione, le 
+ombre, essenziali per ben modellare, si formano quindi senza confusione.
+L'illuminazione non dovrebbe essere né troppo direzionale, per non produrre ombre 
+troppo dure, né troppo diffusa per non perdere completamente l'effetto del modellato, ren-
+dendo l'ambiente luminoso monotono.
+È altrettanto vero che l'illuminazione che arriva da una direzione specifica può rile-
+vare i dettagli di un compito visivo, aumentandone la visibilità e rendendo più facile 
+l'espletamento del compito stesso.
+Strettamente collegata al livello di illuminamento è l'uniformità di illuminamento, che 
+risulta dipendere dalla ripartizione degli apparecchi illuminanti, piuttosto che dalla diffu-
+sione della luce da parte di pareti e soffitto. La ripartizione degli apparecchi di illumina-
+zione, a sua volta, è subordinata alla posizione dei posti di lavoro.
+Alcune modalità per ottenere un'appropriata uniformità possono essere indicate in:
+–  sul piano di lavoro è bene ci sia un rapporto tra illuminamento minimo e medio non 
+inferiore 0,8;
+–  l'illuminamento medio nelle zone in cui non si svolgono attività che richiedono 
+impegno visivo non deve essere inferiore ad un terzo di quello presente nelle zone dove 
+tali attività vengono svolte;
+–  nel caso di locali adiacenti, l'illuminamento medio del locale più illuminato non 
+deve essere maggiore di 5 volte quello del locale con l'illuminamento inferiore.
+L'impianto d'illuminazione dovrebbe soddisfare anche i requisiti di illuminazione 
+relativi ad uno spazio particolare senza comportare sprechi di energia. Tuttavia, è impor-
+tante non compromettere gli aspetti visivi di un impianto di illuminazione solo per ridurre 
+il consumo energetico, questo richiede un'attenta valutazione dei sistemi d'illuminazione, 
+apparecchiature, dispositivi di controllo, appropriati così come l'impiego della luce natu-
+rale disponibile.
+La luce diurna può fornire tutta o in parte l'illuminazione necessaria dei compiti visivi. 
+Tuttavia essa cambia in livello e composizione spettrale durante il giorno producendo per-
+cezioni diverse dell'ambiente. D'altra parte, a causa del flusso luminoso pressoché oriz-
+zontale proveniente dalle finestre laterali essa può essere utile per la creazione di una 
+particolare distribuzione delle luminanze nell'ambiente e di un modellato specifico.
+Fig. XI.7.1   Intensità luminosa e posizione di 
+lavoro.
+1
+1
+2
+2
+
+[PAG 1188]
+XI-60
+ILLUMINOTECNICA
+Le finestre possono fornire un contatto visivo con il mondo esterno che è preferito 
+dalla maggior parte delle persone.
+Negli interni con finestre laterali, la luce diurna disponibile decresce rapidamente con 
+l'aumentare della distanza dalla finestra. Diventa quindi necessario l'impiego dell'illumi-
+nazione artificiale, al fine di assicurare il valore dell'illuminamento richiesto sul posto di 
+lavoro ed il bilanciamento della distribuzione di luminanza nel locale.
+Un'accensione automatica o manuale e/o un dispositivo di regolazione della luce pos-
+sono essere utilizzati per assicurare un dosaggio appropriato tra l'illuminazione artificiale 
+e naturale. Per ridurre l'abbagliamento proveniente dalle finestre se necessario dovrebbero 
+essere previste delle schermature.
+7.1  Dimensionamento illuminotecnico con procedura manuale
+Come già affermato la scelta del corpo illuminante, secondo i criteri generali dell'illu-
+minotecnica deve essere effettuata su basi che tengano conto della distribuzione del flusso 
+luminoso, del rendimento degli apparecchi, del comfort visivo nella utilizzazione e del 
+contributo che si apporta all'estetica dell'arredamento.
+Il dimensionamento illuminotecnico si effettua mediante due differenti metodologie:
+–  metodo punto a punto;
+–  metodo del flusso totale.
+Il metodo punto a punto permette di misurare il valore dell'illuminamento in ogni 
+punto della superficie da illuminare: si serve principalmente delle tavole di indicazione 
+fotometrica, riferite a ciascun apparecchio illuminante e fornite dal costruttore. Nel caso 
+in cui all'illuminamento concorrano più lampade, viene valutato ogni singolo contributo e 
+poi vengono sommati i risultati.
+Il metodo punto a punto viene utilizzato principalmente per il calcolo dell'illumina-
+zione di superfici all'aperto, mentre risulta inadatto per lo studio dell'illuminazione degli 
+interni. Le ragioni per una tale scelta vengono motivate dal fatto che negli interni si deve 
+realizzare una distribuzione diffusa del flusso luminoso, per cui anche il soffitto, le pareti 
+e il pavimento diventano sorgenti secondarie che contribuiscono all'illuminazione richie-
+sta; inoltre, dati i bassi valori di illuminamento considerati e le brevi distanze da coprire, 
+nella pratica diventano rilevanti anche le dimensioni della sorgente luminosa che nel 
+metodo punto a punto dovrebbe risultare puntiforme.
+Il metodo, di matrice trigonometrica, si prefigge di misurare l'illuminamento in un 
+punto P, considerando la sorgente luminosa situata in un punto C (Fig. XI.7.2).
+I dati necessari per il calcolo dell'illuminamento sono l'altezza (h) della sorgente lumi-
+nosa dal piano di lavoro (solitamente dal pavimento), la distanza del punto illuminato (d) 
+Fig. XI.7.2   Metodo punto a punto.
+I
+C
+P
+h
+d
+
+
+[PAG 1189]
+ILLUMINOTECNICA
+XI-61
+dalla verticale condotta per la sorgente luminosa e l'intensità luminosa (I) della sorgente 
+nella direzione del punto (indicatrice fotometrica fornita dal costruttore). Dell'intensità 
+luminosa emessa dalla sorgente vengono considerati tre valori: l'illuminamento normale 
+nella direzione della componente sorgente-punto illuminato, l'illuminamento verticale e 
+quello orizzontale, che sono rispettivamente le componenti verticale e orizzontale 
+dell'illuminamento normale sul piano illuminato.
+In pratica si considera più conveniente l'illuminamento orizzontale, ottenuto con
+(XI.7.2)
+Se i punti luminosi sono più di uno, si ripete il calcolo per ciascun punto e si deduce 
+l'illuminamento medio sommando gli illuminamenti dei vari punti e dividendo il risultato 
+per il numero dei punti stessi.
+Il metodo del flusso totale (chiamato anche metodo del coefficiente di utilizzazione) è 
+di gran lunga il più usato per il calcolo illuminotecnico degli ambienti interni; si presenta 
+come un metodo pratico e semplice sia per i calcoli di progetto (definito l'illuminamento e 
+il tipo del corpo illuminante se ne ricava il numero), che per i calcoli di verifica (definito 
+il numero e il tipo di corpi illuminanti si ricava l'illuminamento medio).
+La formula generale per il calcolo del numero dei corpi illuminanti (fase di progetta-
+zione) viene espressa da
+(XI.7.3)
+mentre quella per il calcolo dell'illuminamento medio (fase di verifica) è
+(XI.7.4)
+dove N è il numero dei corpi illuminanti, E l'illuminamento medio del locale espresso in 
+lux, S la superficie del locale espressa in m2,  il flusso luminoso delle lampade (o lam-
+pada) di un apparecchio illuminante espresso in lumen e U il fattore di utilizzazione (sem-
+pre inferiore all'unità).
+Il fattore o coefficiente di utilizzazione (utilanza) di una superficie è il rapporto fra il 
+flusso totale diretto e riflesso ricevuto dalla superficie e il flusso totale emesso dagli appa-
+recchi installati.
+Il coefficiente di utilizzazione viene determinato sperimentalmente in base alle caratte-
+ristiche fotometriche e fisiche dell'apparecchio, ai coefficienti di riflessione delle super-
+fici ambientali e all'indice del locale (K).
+A titolo di esempio vengono riportati nella Tab. XI.7.6 i coefficienti di riflessione di 
+alcuni materiali e colori.
+Le ditte costruttrici degli apparecchi forniscono le tabelle per una facile valutazione 
+del fattore di utilizzazione (U); partendo da queste tabelle, i passaggi per il dimensiona-
+mento si possono riassumere nel modo seguente:
+–  si determina l'indice (K) del locale;
+–  si sceglie il fattore di utilizzazione (U);
+–  si calcola, considerando il flusso degli apparecchi scelti, la quantità necessaria di 
+apparecchi illuminanti da installare;
+–  si accerta, volendo verificare se l'illuminamento richiesto ha effettivamente un tale 
+valore, l'illuminamento medio del locale.
+L'indice del locale viene determinato in base ai dati strutturali della stanza, nella quale 
+sono da installare gli apparecchi illuminanti e si calcola applicando la seguente formula
+E
+I
+h2
+---- cos3
+=
+N
+E S
+
+U
+
+------------
+=
+E
+N U
+
+
+S
+---------------------
+=
+
+[PAG 1190]
+XI-62
+ILLUMINOTECNICA
+(XI.7.5)
+nella quale a e b sono le lunghezze dei lati dell'ambiente, in metri, e h l'altezza di installa-
+zione degli apparecchi dal pavimento o dal piano di lavoro, espressa in metri.
+BIBLIOGRAFIA
+FELLIN L., FORCOLINI G., PALLADINO P., Manuale di illuminotecnica, Tecniche 
+nuove, Milano, 1999.
+MONCADA LO GIUDICE G., DE LIETO VOLLARO A., Illuminotecnica, Casa Editrice 
+Ambrosiana, Milano, 1999.
+MANZONI L., La luce, Reggiani Editore. Milano, 1992
+ORTOLANI G., VENTURI E., Impianti elettrici civili, Hoepli, Milano, 2007.
+Tab. XI.7.6   Coefficienti di riflessione di alcuni materiali e colori
+Materiali diffondenti
+Coefficiente di 
+riflessione
+(%)
+Pareti 
+diffondenti 
+colorate
+Coefficiente di riflessione
+(%)
+Intonaco bianco
+Cemento grezzo
+Mattoni
+Quercia chiara
+Mogano e noce
+Tende gialle
+Tende rosse
+Tende blu
+Reflectal lucidato
+Reflectal ossidato
+Specchio argentato
+Argento lucidato
+Lamiera smaltata in bianco
+Lamiera verniciata in bianco
+Nichel lucidato
+Cromo lucidato
+Rame lucido
+Alluminio 99,5 lucido
+Alluminio 99,5 satinato
+Stagno
+70-80
+40-50
+10-30
+40-50
+15-40
+30-45
+10-20
+10-20
+86-90
+80-85
+80-88
+88-92
+70-75
+65-70
+53-63
+60-70
+48-50
+65-75
+55-60
+68-70
+colore 
+chiaro
+colore 
+medio
+colore 
+scuro
+Bianco
+Nero
+Grigio
+Beige
+Giallo
+Rosso
+Verde
+Blu
+80
+
+60
+65
+70
+35
+50
+50
+70
+4
+35
+45
+50
+20
+30
+20
+
+
+20
+25
+30
+10
+12
+5
+K
+a b
+
+h
+a
+b
++
+
+
+
+------------------------
+=
+
+[PAG 1191]
+Sezione XII
+Trazione elettrica
+INDICE
+pag.
+1    GENERALITÀ E CONCETTI FONDAMENTALI . . . . . . . . . . . . . . . . . . . . . .
+ 1
+2    BINARIO, SALA FERROVIARIA E CARRELLI . . . . . . . . . . . . . . . . . . . . . . .
+ 3
+3    CONDIZIONI DI MARCIA  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+3.1    Velocità . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+3.2    Aderenza e resistenza al moto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 6
+3.3    Cabraggio  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+4    CONDIZIONI DI ARRESTO E SICUREZZA . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+4.1    Tecniche di frenatura . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 9
+4.2    Impianti di blocco . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ 13
+4.3    Ripetizione dei segnali  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+5    CORROSIONE ELETTROLITICA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+6    ALIMENTAZIONE DEI MEZZI DI TRAZIONE . . . . . . . . . . . . . . . . . . . . . . .
+17
+6.1    Cadute di tensione in linea  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+6.2    Pantografo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+6.3    Alimentazione a corrente continua  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+6.4    Alimentazione a corrente alternata trifase . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+6.5    Alimentazione a corrente alternata monofase  . . . . . . . . . . . . . . . . . . . . . .
+26
+7    AZIONAMENTI PER TRAZIONE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+28
+7.1    Generalità  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+28
+7.2    Convertitore trifase per motori asincroni . . . . . . . . . . . . . . . . . . . . . . . . . .
+30
+7.3    Convertitore trifase per motori sincroni  . . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+8    MEZZI DI TRAZIONE CON AZIONAMENTI  . . . . . . . . . . . . . . . . . . . . . . . .
+32
+8.1    Locomotiva BB 26000  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+8.2    Elettrotreno TGV Atlantique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+33
+8.3    Locomotore E 402 B . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+33
+9    ALIMENTAZIONE DELLE LINEE DI CONTATTO . . . . . . . . . . . . . . . . . . . .
+34
+9.1    Linee elettrificate a corrente continua . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+9.2    Linee elettrificate a corrente alternata . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+37
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+40
+1  GENERALITÀ E CONCETTI FONDAMENTALI
+Col termine trazione elettrica si deve intendere l’impiego dell’energia elettrica nei 
+mezzi di trasporto destinati a movimentare persone o merci su rotaia o strada. Lo sviluppo 
+di questi mezzi è diretta conseguenza di motivazioni funzionali e tecniche quali:
+–  limitazione dell’inquinamento atmosferico per l’assenza di fumi e gas di scarico,
+
+[PAG 1192]
+XII-2
+TRAZIONE ELETTRICA
+–  elevata potenzialità di trasporto,
+–  libertà nella gestione e controllo delle velocità e accelerazioni di movimentazione,
+–  contenuta rumorosità con conseguente minor inquinamento acustico,
+–  contenimento del costo dei trasporti nel caso di movimentazione su rotaia.
+Per contro, un elemento limitativo dello sviluppo della trazione elettrica su strada è 
+rappresentato dalla difficoltà di approvvigionamento di energia elettrica necessaria ai 
+motori montati a bordo di auto elettriche, tant’è che lo sviluppo della trazione elettrica si è 
+avuto prevalentemente in ambito ferroviario. Le tranvie godono di prerogative del tutto 
+equiparabili a quelle dei treni, si differenziano per la potenza dei motori impiegati, in 
+quanto le prime sono destinate esclusivamente al trasporto delle persone.
+Col termine circuito di trazione si indica l’insieme delle apparecchiature elettromec-
+caniche e, recentemente anche elettroniche con l’impiego dei convertitori di potenza, 
+necessarie a garantire il corretto funzionamento di un mezzo di locomozione. L’insieme di 
+tali apparecchiature svolge le seguenti incombenze:
+–  captazione della corrente,
+–  avviamento, controllo e regolazione della velocità, nonché inversione di marcia,
+–  protezione dei motori da eventuali sovraccarichi,
+–  frenatura elettrica.
+In particolare, nel caso delle locomotive sono sempre presenti dispositivi elettromec-
+canici; nei mezzi di recente costruzione, sono presenti inoltre, dei convertitori elettronici 
+di potenza.
+Vi sono poi ulteriori dispositivi che permettono il comando a distanza e il comando 
+multiplo; queste due funzioni, appartenenti al sistema di comando indiretto, consentono 
+rispettivamente il controllo della trazione da due o più posti guida ed il comando dalla 
+stessa cabina di comando di più motrici accoppiate. I circuiti di comando sono in questo 
+caso collegati tra loro tramite accoppiatori.
+I mezzi di trazione, ovvero l’insieme dei veicoli rotabili azionati da motori elettrici, si 
+possono suddividere in:
+–  Locomotori e locomotive elettriche: mezzi di trazione destinati al traino di altri veicoli 
+privi di motore quali carrozze (utilizzate per il trasporto delle persone) e vagoni (impie-
+gati per la movimentazione delle merci);
+–  Elettromotrici: mezzi di trazione completi di motore in grado essi stessi di trasportare 
+persone e merci;
+–  Elettrotreni: mezzi composti da almeno due elettromotrici tra loro funzionalmente 
+indivisibili e interdipendenti;
+–  Tram e filobus: mezzi di trasporto destinati a trasportare fino a 3000 passeggeri/ora 
+nelle città medio-grandi.
+In tutti i mezzi di trazione si individuano tre parti fondamentali: il rodiggio, cioè 
+l’insieme degli assi e delle ruote del veicolo; il telaio, ovvero la struttura portante del vei-
+colo; la cassa, cioè la carrozzeria esterna ed interna del mezzo.
+Il rodiggio è l’insieme degli assi e delle ruote tramite i quali il telaio portante e la 
+cassa appoggiano sulle rotaie; a sua volta può essere realizzato con telaio rigido o con 
+carrelli articolati. Gli assi costituenti il rodiggio generalmente si suddividono in assi 
+motori, per la trasmissione del moto, e assi portanti. Talvolta sono presenti solo assi 
+motori. Le ruote, composte dal corpo di ruota, e dal cerchione, sono rigidamente fissate 
+tra loro in quanto montate su un assale e costituiscono una struttura chiamata sala ferro-
+viaria (Fig. XII.1.1). L’assale sporgente oltre le ruote, che viene rettificato, prende il 
+nome di fusello, sostiene il peso del telaio, e, tramite boccole e cuscinetti, consente 
+l’assemblaggio della sala ferroviaria al carrello.
+Il telaio è realizzato tramite longheroni, indicati anche col termine di fiancate longitu-
+
+[PAG 1193]
+TRAZIONE ELETTRICA
+XII-3
+dinali, vincolati tra loro tramite adeguate traverse. Alle traverse di estremità vengono fis-
+sati i respingenti, i dispositivi per il traino, cioè i ganci ed i tenditori; inoltre, in 
+corrispondenza degli assi, si dipartono verso il basso gli organi di protezione delle sale, 
+quest’ultimi indicati col nome di parasale o piastre di guardia.
+ Telaio e cassa gravano col loro peso sui carrelli, pertanto una particolare attenzione 
+viene riposta nella distribuzione dei pesi sugli assi: è da tener presente che lo sforzo svi-
+luppabile da ciascun asse motore per il movimento, è in stretta relazione col peso gravante 
+sul medesimo. Si indica infatti col termine di peso aderente il peso che consente all’asse 
+di sviluppare lo sforzo di traino. 
+I pesi, a loro volta, si suddividono 
+in pesi sospesi e pesi appoggiati; la 
+differenza risiede nel fatto che i 
+primi, in opposizione ai secondi, gra-
+vano sulle ruote tramite organi ela-
+stici quali balestre e molle che 
+vengono indicati col termine di 
+sospensioni elastiche. Il peso appog-
+giato è la causa prima del martella-
+mento delle ruote sui binari, e 
+provoca sollecitazioni dinamiche a 
+tutto il complesso (veicoli e binari).
+Fig. XII.1.1  Sala ferroviaria con fuselli esterni.
+Per un qualsiasi mezzo rotabile vengono indicate tre diverse tipologie di peso:
+–  Peso reale, cioè il vero peso in assetto di servizio.
+–  Peso aderente, indicato anche come peso per asse nel caso di soli assi motori, cioè il 
+peso incidente sulle rotaie da parte delle ruote motrici.
+–  Peso frenato, che esprime il grado di frenatura rispetto al peso del veicolo. Nel pas-
+saggio dalla condizione di accelerazione a quella di frenatura è necessario che, in ogni 
+condizione, i ganci che uniscono i veicoli del convoglio rimangano sempre in trazione, 
+onde evitare possibili strappi. Per questo motivo la forza frenante deve essere ripartita 
+quanto più possibile in modo omogeneo tra i vari rotabili. Conseguentemente il locomo-
+tore possiede un peso frenato sempre minore del suo peso reale, al contrario, le carrozze 
+ed i carri merci hanno, sovente, un peso frenato superiore al loro peso reale.
+Per le motrici vengono indicate tre tipi di potenza: quella nominale, quella continua e 
+quella oraria.
+Per potenza nominale si intende la potenza massima teorica, di progetto, che il mezzo 
+di traino deve essere in grado di fornire. Nel caso dei locomotori è la potenza totale for-
+nita dai motori che corredano la macchina.
+La potenza continua è quella massima che il mezzo di trazione è in grado di fornire 
+per un tempo illimitato.
+La potenza oraria, talvolta indicata anche come potenza unioraria, è la potenza mas-
+sima che il veicolo può fornire costantemente per un’ora; tiene conto del surriscaldamento 
+dei motori e dei dispositivi in modo che non si danneggino.
+2  BINARIO, SALA FERROVIARIA E CARRELLI
+Il binario rappresenta la via obbligata per i mezzi di trazione su rotaia, è costituito 
+infatti da due rotaie appoggiate e adeguatamente vincolate su traverse in calcestruzzo 
+armato (un tempo in legno trattato). Le rotaie, della lunghezza massima di 48 m, collegate 
+tra loro da giunti che consentono l’allungamento dovuto alla dilatazione termica, si con-
+Scartamento
+Corpo di ruota
+Sala
+Cerchione
+Fusello
+
+[PAG 1194]
+XII-4
+TRAZIONE ELETTRICA
+traddistinguono per la massa lineica, cioè la massa per unità di lunghezza. 
+Quest’ultima assume valori fino a 36 kg/m per rotaie leg-
+gere, cioè destinate a linee secondarie non interessate da 
+treni veloci o particolarmente pesanti, e valori di massa 
+lineica di 60 kg/m per utilizzo nelle metropolitane e nelle 
+linee più importanti (Fig. XII.2.1). La distanza tra le 
+rotaie, misurata sulle facce interne del fungo delle rotaie, 
+prende il nome di scartamento, in Italia e per la maggior 
+parte delle ferrovie mondiali vale 1435 mm; nelle altre 
+nazioni assume valori superiori o inferiori, assumendo la 
+denominazione di binari a scartamento largo e a scarta-
+mento ridotto. Per i binari tranviari il valore nominale 
+dello scartamento è pari a 1445 mm. La sala ferroviaria, 
+costituita dalle ruote e dall’assile, può essere motrice o 
+portante, è destinata a sopportare il peso della cassa e del 
+telaio e viene contraddistinta da un parametro indicato col 
+termine massa per asse, cioè il peso sostenibile. 
+Fig. XII.2.1  Sezione di rotaia 
+con massa lineica di 60 kg/m.
+Il peso sostenibile assume valori diversi a seconda del mezzo di trazione, infatti può 
+valere fino a 22,5 t/asse per i mezzi destinati a linee principali, fino a 18 t/asse per le elet-
+tromotrici ferroviarie, fino a 12 t/asse nel caso di metropolitane e, infine, fino a 9 t/asse 
+per le tranvie. Qualora le sale siano montate direttamente sul telaio come, ad esempio, nei 
+carri merci o comunque veicoli utilizzati con basse velocità di spostamento e non per tra-
+sporto viaggiatori, il veicolo risulta del tipo ad assi rigidi, in questo caso la distanza tra le 
+sale terminali fissate al telaio prende il nome di passo rigido.
+La ruota ha un diametro che va da 0,74 m nel caso di elettromotrici per metropolitane, 
+a 1,25 m per locomotive di notevole potenza; è costituita dal cerchione, la parte appoggiata 
+sul fungo della rotaia, realizzato in acciaio, che risulta provvisto del bordino di guida. 
+Durante l’utilizzo, sia per motivi di frenatura che per rotolamento, il cerchione si usura 
+modificando il bordino di guida; per questo motivo, dopo un determinato numero di kilo-
+metri percorsi, si deve provvedere a ricostruire la sagoma del cerchione. Viene effettuata 
+una operazione di tornitura che si ripete fino a raggiungere il minimo del valore consentito, 
+dopodiché viene sostituito il solo cerchione mantenendo pertanto integra la sala ferroviaria.
+Le ruote degli assi possono essere sia vincolate tra loro che indipendenti, è quest’ultimo 
+il caso dei veicoli su pneumatici, dove le ruote sono solitamente in gomma piena e, nel caso 
+di ruote motrici, risultano collegate meccanicamente tra loro mediante un differenziale 
+meccanico, oppure vengono comandate ciascuna da un diverso motore.
+I carrelli, costituenti il rodiggio delle ferrovie, sono composti da due o tre sale; il 
+passo rigido del carrello, inteso come distanza tra le sale, assume il valore di 1,80 m per i 
+veicoli tranviari, per arrivare fino a 3 m per le locomotive e le elettromotrici. Ogni car-
+rello è libero di effettuare limitate rotazioni intorno ad un asse verticale per agevolare le 
+curve; la distanza tra gli assi verticali di due carrelli attigui prende il nome di interperno.
+Il rodiggio è indicato tramite un valore di tre cifre che indica numero e disposizione degli 
+assi portanti e dei motori: iniziando dalla parte anteriore della locomotiva, la prima cifra 
+indica il numero degli assi portanti non motorizzati anteriori, la seconda indica il numero 
+di assi motori, la terza il numero di assi portanti posteriori. Qualora vi siano assi accoppiati 
+da bielle, la seconda cifra può essere sostituita da una lettera secondo la numerazione alfa-
+betica, seguita dal simbolo “o” nel caso in cui gli assi motori siano indipendenti.
+Fungo
+Anima
+Suola
+54,04
+80,95
+37,5
+70,6
+74,3
+x
+y
+
+[PAG 1195]
+TRAZIONE ELETTRICA
+XII-5
+Per esempio per un locomotore del gruppo E.646, con sei assi motori indipendenti su tre 
+carrelli, il suo rodiggio sarà indicato dalla sigla Bo+Bo+Bo; il locomotore E.428 ha rodiggio 
+2Bo+Bo2; la serie E.444, denominata “Tartaruga”, ha rodiggio Bo+Bo; i locomotori 
+svizzeri, a sei assi motori su due carrelli da tre assi ciascuno, hanno rodiggio Co+Co.
+I simboli “+” e “” evidenziano rispettivamente quando si susseguono due carrelli 
+motore (segno +), e la sequenza tra carrello portante e un carrello motore, come nel caso 
+dell’E.428 (segno ).
+La Tab. XII.2.1 riporta le caratteristiche tecniche principali di alcune locomotive uti-
+lizzate dalle Ferrovie italiane, mentre nella Fig. XII.2.2 ne è raffigurata la forma tipica.
+Tab. XII.2.1  Caratteristiche tecniche di alcune locomotive
+Fig. XII.2.2  Forma tipica e dimensioni della locomotiva elettrica E.444.
+3  CONDIZIONI DI MARCIA
+3.1  Velocità
+Nei mezzi di trazione si distinguono due velocità:
+–  la velocità media,
+–  la velocità commerciale.
+La velocità media vm di un mezzo di trasporto viene definita tramite la fisica classica 
+come il rapporto tra la distanza percorsa ed il tempo impiegato a percorrerla; precisamente 
+indicando con S la distanza tra due fermate consecutive e con t il tempo trascorso durante 
+Caratteristica
+E.444
+E.632
+E.656
+Lunghezza totale tra i respingenti 16840 mm 17800 mm 18290 mm
+Rodiggio
+Bo + Bo
+BBB
+Bo + Bo + Bo
+Passo dei carrelli
+2.600 mm 2.150 mm
+2.850 mm
+Interperno
+9.000 mm 5.250 mm
+5.200 mm
+Peso reale
+80 t
+103 t
+120 t
+Peso frenato
+72 t
+77 t
+100 t
+Peso per asse
+20 t
+17,16 t
+20 t
+Potenza continua complessiva
+3.780 kW 4.329 kW
+4.200 kW
+Potenza oraria totale
+4.200 kW 4.905 kW
+4.800 kW
+Velocità massima
+200 km/h
+106 km/h
+150 km/h
+2600
+2600
+6400
+16840
+2600
+4280
+3800
+
+[PAG 1196]
+XII-6
+TRAZIONE ELETTRICA
+tale percorso, si ha:
+(XII.3.1)
+La velocità commerciale vc tiene conto del tempo di sosta ts che il convoglio trascorre 
+ad ogni fermata, pertanto considerando un percorso costituito da un certo numero n di fer-
+mate e quindi un numero n  1 di tratte percorse, considerando nulli i tempi relativi alla 
+fermata in partenza e quella dell’arrivo (i due capolinea), si ha:
+(XII.3.2)
+Nel caso di trasporti di tipo urbano, poiché le tratte hanno normalmente lunghezza 
+uguale, e quindi i tempi per la loro percorrenza ed i tempi di sosta possono essere ritenuti 
+costanti, si tiene conto della media dei valori.
+Per conseguire elevate velocità commerciali è necessario intervenire sui tempi di per-
+correnza e sui tempi di sosta. Per raggiungere lo scopo si impongono elevati valori di 
+accelerazione e decelerazione dei mezzi, tenendo presente, comunque, che il valore di 1,5 
+m/s2 viene considerato il valore limite dell’accelerazione accettabile dai passeggeri, ed 
+inoltre, che valori elevati di accelerazione impongono valori elevati del coefficiente di 
+aderenza, quest’ultimo facilmente ottenibile solo nel caso di pneumatici su strada. La 
+diminuzione dei tempi di sosta può effettuarsi tramite l’agevolazione della salita e discesa 
+dei passeggeri, magari con l’eliminazione di gradini per salire e scendere, la presenza di 
+porte più ampie, e con dispositivi di apertura e chiusura di quest’ultime particolarmente 
+veloci ed efficienti nel segnalare in partenza l’eventuale mancata chiusura di una di esse.
+3.2  Aderenza e resistenza al moto
+Il movimento dei veicoli avviene per merito dell’aderenza; i cerchioni, o le ruote, 
+appoggiano, rispettivamente, sulle rotaie, o sulla strada, con una superficie che dipende 
+dal diametro della ruota o dalla pressione di gonfiaggio per i pneumatici.
+La pressione media, dovuta al carico che gli grava sopra, ha valori compresi tra i 500 
+e i 1000 N/mm2 nel caso dei cerchioni, mentre assume valori compresi tra i 20 ed i 60 N/
+cm2 per i pneumatici.
+Indicato con G il peso gravante sulla ruota, la superficie di appoggio A delle ruote 
+prende il nome di impronta; la distribuzione della pressione p di appoggio sarà:
+(XII.3.3)
+nell’ambito dell’impronta, varia, come evidenziato dalla XII.3.3, da punto a punto, assu-
+mendo, nel caso di ruota ferma, l’andamento di un cerchio o di una ellisse.
+Viene indicata con il termine massa aderente mad quella parte della massa totale m che 
+insiste sulle sale motrici. Nelle recenti realizzazioni le locomotive sono prodotte con sale 
+tutte motrici, quindi la massa totale risulta ripartita su assi motorizzati: è questo il caso delle 
+locomotive a completa aderenza. Il coefficiente  fornisce il valore del rapporto di ade-
+renza:
+(XII.3.4)
+vm
+S
+t--
+=
+vc
+S
+1
+n
+1
++
+
+ts
+t
+1
+n
+1
++
+
++
+1
+n
+
+----------------------------
+=
+p
+dG
+dA
+-------
+=
+
+mad
+m
+--------
+=
+
+[PAG 1197]
+TRAZIONE ELETTRICA
+XII-7
+esso vale 1 nel caso di veicoli 
+aventi tutti assi motori quali le 
+elettromotrici impiegate nelle 
+tranvie urbane, oppure nel caso 
+della frenatura, dove tutte le 
+ruote vengono frenate, scende a 
+valori talvolta minori di 0,1 per 
+i convogli costituiti da una 
+locomotiva trainante i vagoni.
+La Fig. XII.3.1 evidenzia 
+le modifiche subite dalla 
+distribuzione delle pressioni 
+per effetto del movimento del 
+mezzo, a causa delle deforma-
+zioni elastiche subite dalla 
+ruota in fase di rotazione. 
+Fig. XII.3.1  Pressione p nell’area di impronta.
+In quest’ultimo caso la forza di reazione del G punto di appoggio (rotaia o terreno) al 
+peso risulta anticipare la ruota di una piccola distanza  nel senso di traslazione.
+I veicoli vengono movimentati per effetto della forza tangenziale F sviluppata da cia-
+scuna ruota motrice. Considerando il peso gravante su ciascuna di esse, si ha la condi-
+zione di aderenza quando F < Fad con:
+(XII.3.5)
+dove f è il coefficiente di aderenza ed Fad è il valore limite di aderenza.
+Il coefficiente di aderenza ha valori notevolmente diversi a seconda della superficie di 
+appoggio, della velocità e del tipo di ruota. Assume valori compresi tra 1/4 e 1/6 in dipen-
+denza del tipo di trazione, ma può diminuire fino al 50% nel caso di superfici di appoggio 
+umide o con presenza di sporco, ghiaccio o grasso. È da evitare in ogni caso lo slittamento 
+degli assi, sia in fase di accelerazione che in quella di frenatura; per tale motivo trova impiego 
+sulle locomotive il dispositivo antislittante. Questo congegno è costituito da un sistema elet-
+tronico di sorveglianza e da delle sabbiere. Quindi in caso di accelerazione o di frenata ven-
+gono comandate le sabbiere situate sugli assi anteriori rispetto al senso di marcia.
+I dispositivi antislittamento si distinguono in relazione al tipo di motore a alla loro ali-
+mentazione:
+–  Nel caso di motori a corrente continua con eccitazione serie, il sistema di controllo 
+dello slittamento avviene per confronto tra le tensioni generate dai generatori applicati sui 
+coperchi delle boccole delle sale motrici, dalle quali ricevono il movimento. Durante la 
+fase di trazione, se un asse slitta, il generatore ad esso meccanicamente collegato, genera 
+una tensione superiore a quella prodotta dagli altri generatori. Il dispositivo elettronico 
+effettua costantemente il confronto di tutte le tensioni e, quando rileva questa discrepanza, 
+segnala il problema sia acusticamente tramite una sirena, che visivamente con lampade di 
+segnalazione. Viene effettuata quindi automaticamente la reinclusione di parte del reo-
+stato associato al motore con l’asse in fuga e vengono azionate le sabbiere; la sabbia, con-
+tenuta in appositi depositi, spinta dall’aria compressa, scende a cospargere la superficie di 
+appoggio cerchione-rotaia. Analogamente, nel caso di frenatura, se un asse si blocca la 
+tensione prodotta dal generatore associato si annulla e, anche in questo caso, l’anomalia fa 
+intervenire automaticamente il dispositivo di sorveglianza come appena riportato.
+v
+G
+G
+R
+
+x
+Pressione
+per v > 0
+Pressione
+per v = 0
+p
+Fad
+f G
+
+=
