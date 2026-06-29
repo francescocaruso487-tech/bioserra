@@ -1,0 +1,1898 @@
+=== Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 87/116 ===
+Chars: 45,000 | Offset: 3,800,278
+
+
+
+[PAG 1756]
+XVII-156
+ELETTRONICA ANALOGICA E DIGITALE
+esempio, la FdT di un LPF del secondo ordine diviene:
+(XVII.24.20)
+24.3  Filtri attivi
+I filtri attivi sono realizzati con resistenze, capacità e un dispositivo attivo, che gene-
+ralmente è un amplificatore operazionale (AO). I filtri con questa configurazione hanno i
+seguenti vantaggi: non richiedono l'impiego di induttanze; permettono l'amplificazione
+dei segnali nella banda passante; hanno alta resistenza d’ingresso e bassa resistenza di
+uscita, ciò che facilita la connessione di filtri in cascata e li rende indipendenti dal carico.
+Questi filtri presentano, però, alcuni inconvenienti: richiedono tensione di alimentazione;
+si possono usare fino a frequenze dell'ordine di alcune centinaia di kilohertz; sono più
+influenzati dei filtri passivi dalle variazioni dei componenti del circuito. Nell'analisi che
+segue, l'amplificatore operazionale è considerato ideale.
+A)  Filtri attivi del primo ordine
+I filtri attivi del primo ordine sono i filtri LPF e HPF; entrambi i tipi sono realizzati
+con un AO, in configurazione o invertente o non invertente, e con rete esterna costituita
+da impedenze. Nella Fig. XVII.24.5 sono disegnate le strutture dei due tipi di filtro. Le
+FdT delle due configurazioni, in regime sinusoidale, sono riportate nella relazione
+XVII.24.21a, per la configurazione invertente, e nella relazione XVII.24.21b, per quella
+non invertente.
+(XVII.24.21a)
+(XVII.24.21b)
+Fig. XVII.24.5   Struttura generale dei filtri del primo ordine: a) configurazione inver-
+tente; b) configurazione non invertente.
+1)  Filtro passa basso del primo ordine nella configurazione invertente
+Il circuito del filtro, rappresentato nella Fig. XVII.24.6a, è ottenuto considerando le
+impedenze del circuito nella Fig. XVII.24.5a costituite: Z1 da R1, Zf da RfCf. Sostituendo
+Z1 = R1 e Zf = Rf jCfRf) nella XVII.24.21a, la FdT del filtro LPF diviene:
+F j
+
+
+A0p
+2
+j
+
+2
+j2p
+p
+2
++
++
+-----------------------------------------------------------
+A0p
+2
+j
+
+2
+j
+p
+Q
+------
+p
+2
++
++
+----------------------------------------------------
+=
+=
+F j
+
+
+Zf
+Z1
+-----
+–
+=
+F j
+
+
+Z2
+Z1
+Z2
++
+------------------- 1
+Rb
+Ra
+-----
++
+
+
+
+
+=
+Zf
+Z1
+
+
+a)
+Z1
+Z2
+Rb
+Ra
+
+
+b)
+
+[PAG 1757]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-157
+con A0 = RfR1, guadagno statico, e p pulsazione di taglio.
+Fig. XVII.24.6   Filtri attivi dei primo ordine: a) circuito LPF in configurazione inver-
+tente; b) circuito LPF in configurazione non invertente; c) circuito HPF in configurazione
+invertente; d) circuito HPF in configurazione non invertente.
+2)  Filtro passa basso del primo ordine nella configurazione non invertente
+Il circuito del filtro, rappresentato nella Fig. XVII.24.6b, è ottenuto considerando le
+impedenze del circuito nella Fig. XVII.24.5b costituite: Z1 da R, Z2 da C.
+Sostituendo Z1 = R e Z2 = jC) nella XVII.24.21b, la FdT del filtro LPF diviene:
+F j
+
+
+Rf
+R1
+-----
+–
+1
+1
+jCfRf
++
+----------------------------
+
+A0p
+j
+
+
+p
++
+------------------------- ,
+=
+=
+con CfRf
+p
+1
+p
+------
+=
+=
+A0
+Rf
+R1
+-----
+–
+=
+e
+F j
+
+
+Rf
+R1
+-----
+1
+1
+CfRf
+
+2
++
+--------------------------------------
+
+A0
+p
+2
+p
+2
++
+-------------------------
+=
+=
+arg F j
+
+
+
+
+180
+arctan CfRf
+
+
+–
+180
+arctan
+
+p
+------
+
+
+
+
+–
+=
+=
+Cf
+R1
+
+
+a)
+Rf
+C
+R
+
+
+b)
+Rb
+Ra
+R1
+
+
+c)
+Rf
+C1
+C
+R
+
+
+d)
+Rb
+Ra
+F j
+
+
+1
+Rb
+Ra
+-----
++
+
+
+
+
+1
+1
+jCR
++
+-------------------------
+
+A0p
+j
+
+
+p
++
+------------------------- ,
+=
+=
+con CR
+p
+1
+p
+------
+=
+=
+A0
+1
+Rb
+Ra
+-----
++
+=
+e
+F j
+
+
+1
+Rb
+Ra
+-----
++
+
+
+
+
+1
+1
+CR
+
+2
++
+-----------------------------------
+
+A0
+p
+2
+p
+2
++
+-------------------------
+=
+=
+
+[PAG 1758]
+XVII-158
+ELETTRONICA ANALOGICA E DIGITALE
+con A0 = 1 RbRa, guadagno statico, e p pulsazione di taglio.
+3)  Filtro passa alto del primo ordine nella configurazione invertente
+Il circuito del filtro, rappresentato nella Fig. XVII.24.6c, è ottenuto considerando le
+impedenze del circuito nella Fig. XVII.24.5a costituite: Z1 dalla serie di R1 e C1, Zf da Rf.
+Sostituendo Z1 = R1 jC1) e Zf = Rf nella XVII.24.21a, la FdT del filtro HPF diviene:
+con A = RfR1, guadagno per   +, e p pulsazione di taglio.
+4)  Filtro passa alto del primo ordine nella configurazione non invertente
+Il circuito del filtro, rappresentato nella Fig. XVII.24.6d, è ottenuto considerando le
+impedenze del circuito nella Fig. XVII.24.5b, costituite: Z1 da C, Z2 da R. Sostituendo
+Z1 jC) e Z2 = R nella XVII.24.21b, la FdT del filtro HPF diviene:
+con A = 1 RbRa, guadagno per   +, e p pulsazione di taglio.
+B)  Filtri attivi del secondo ordine
+I filtri attivi del secondo ordine possono essere realizzati in diversi modi; qui sono
+considerati solo i filtri a reazione multipla negativa, che presentano buona stabilità, impe-
+denza d'uscita bassa e sono poco sensibili alle variazioni dei valori dei componenti. La
+loro struttura circuitale è riportata nella Fig. XVII.24.7; sono costituiti da cinque ammet-
+tenze Yi, implementate con resistori o condensatori, e da un AO. Dal circuito della Fig.
+XVII.24.7, applicando le equazioni di Kirchhoff al nodo P riferito alla massa virtuale
+dell'ingresso invertente, si ottiene la FdT:
+(XVII.24.22)
+arg F j
+
+
+
+
+arctan CR
+
+
+–
+arctan
+
+p
+------
+
+
+
+
+–
+=
+=
+F j
+
+
+Rf
+R1
+-----
+–
+jC1R1
+1
+jC1R1
++
+------------------------------
+
+j
+
+A
+j
+
+
+p
++
+------------------------- ,
+=
+=
+con C1R1
+p
+1
+p
+------
+=
+=
+A
+Rf
+R1
+-----
+–
+=
+e
+F j
+
+
+Rf
+R1
+-----
+C1R1
+1
+C1R1
+
+2
++
+----------------------------------------
+
+A
+
+2
+p
+2
++
+-------------------------
+=
+=
+arg F j
+
+
+
+
+90
+–
+
+arctan C1R1
+
+
+–
+90
+–
+
+arctan
+
+p
+------
+
+
+
+
+–
+=
+=
+F j
+
+
+1
+Rb
+Ra
+-----
++
+
+
+
+
+jCR
+1
+jCR
++
+-------------------------
+
+j
+
+A
+j
+
+
+p
++
+------------------------- ,
+=
+=
+con CR
+p
+1
+p
+------
+=
+=
+A
+1
+Rb
+Ra
+-----
++
+=
+e
+F j
+
+
+1
+Rb
+Ra
+-----
++
+
+
+
+
+CR
+1
+CR
+
+2
++
+-----------------------------------
+
+A
+
+2
+p
+2
++
+-------------------------
+=
+=
+arg F j
+
+
+
+
+90
+arctan CR
+
+
+–
+90
+arctan
+
+p
+------
+
+
+
+
+–
+=
+=
+Up
+Ui
+–
+
+Y1
+UpY2
+UpY3
+Up
+Uu
+–
+
+Y4
++
++
++
+0
+=
+Up
+–
+Y3
+UuY5
+–
+0
+=
+
+
+
+F j
+
+
+Uu
+Ui
+------
+Y1Y3
+Y1
+Y2
+Y3
+Y4
++
++
++
+
+Y5
+Y3Y4
++
+-------------------------------------------------------------------------------
+–
+=
+=
+
+[PAG 1759]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-159
+Fig. XVII.24.7   Struttura dei filtri a reazione multipla.
+Dalla XVII.24.22, si determinano le FdT dei filtri del secondo ordine LPF, HPF, BPF
+simmetrico.
+1)  Filtro passa basso del secondo ordine
+Il circuito del filtro, rappresentato nella Fig. XVII.24.8, è ottenuto considerando le
+ammettenze del circuito nella Fig. XVII.24.7 costituite: Y1 da R1, Y2 da C2, Y3 da R3, Y4 da
+R4, Y5 da C5. Sostituendo Y1 R1, Y2 jC2, Y3 R3, Y4 R4 e Y5 jC5 nella
+XVII.24.22, la FdT del LPF diviene:
+con A0 guadagno statico, p pulsazione di taglio,  fattore di smorzamento, Q fattore di
+qualità, o fattore di merito, del filtro.
+Fig. XVII.24.8   Filtro LPF a reazione multipla del secondo ordine.
+2)  Filtro passa alto del secondo ordine
+Il circuito del filtro, rappresentato nella Fig. XVII.24.9, è ottenuto considerando le
+
+
+Ui
+Y1
+Uu
+Y2
+Y3
+Y4
+Y5
+P
+F j
+
+
+R4
+R1
+-----
+1
+R3R4C2C5
+---------------------------
+
+j
+
+2
+j
+
+1
+C2
+------
+1
+R1
+-----
+1
+R3
+-----
+1
+R4
+-----
++
++
+
+
+
+
+1
+R3R4C2C5
+---------------------------
++
++
+----------------------------------------------------------------------------------------------------------------------
+–
+=
+F j
+
+
+A0p
+2
+j
+
+2
+j
+
+2p
+p
+2
++
++
+--------------------------------------------------------------
+A0p
+2
+j
+
+2
+j
+
+
+p
+Q
+------
+p
+2
++
++
+-------------------------------------------------------
+=
+=
+F j0
+
+
+A0
+R4
+R1
+----- ;
+–
+=
+=
+p
+2
+1
+R3R4C2C5
+---------------------------;
+=
+2p
+p
+Q
+------
+1
+C2
+------
+1
+R1
+-----
+1
+R3
+-----
+1
+R4
+-----
++
++
+
+
+
+
+=
+=
+2
+1
+Q---
+C5
+C2
+------
+R3R4
+R1
+-----------------
+R3
+R4
+-----
+R4
+R3
+-----
++
++
+
+
+
+
+
+
+=
+=
+
+
+Ui
+R1
+Uu
+C2
+R3
+R4
+C5
+
+[PAG 1760]
+XVII-160
+ELETTRONICA ANALOGICA E DIGITALE
+ammettenze del circuito nella Fig. XVII.24.7 costituite: Y1 da C1, Y2 da R2, Y3 da C3, Y4 da
+C4, Y5 da R5. Sostituendo Y1 jC1, Y2 R2, Y3 jC3, Y4 jC4 e Y5 R5 nella
+XVII.24.22, la FdT del filtro HPF diviene:
+con A guadagno del filtro per   , p pulsazione di taglio,  fattore di smorzamento,
+Q fattore di qualità, o di merito, del filtro.
+Fig. XVII.24.9   Filtro HPF a reazione multipla del secondo ordine.
+3)  Filtro passa banda simmetrico del secondo ordine
+Il circuito del filtro, rappresentato nella Fig. XVII.24.10, è ottenuto considerando le
+ammettenze del circuito nella Fig. XVII.24.7 costituite: Y1 da R1, Y2 da R2, Y3 da C3, Y4 da
+C4, Y5 da R5. Sostituendo Y1 R1, Y2 R2, Y3 jC3, Y4 jC4 e Y5 R5 nella
+XVII.24.22, la FdT del filtro BPF simmetrico diviene:
+(XVII.24.23)
+F j
+
+
+C1
+C4
+------ j
+
+2
+j
+
+2
+j
+
+1
+R5
+-----
+C1
+C3C4
+-------------
+1
+C3
+------
+1
+C4
+------
++
++
+
+
+
+
+1
+R2R5C3C4
+---------------------------
++
++
+--------------------------------------------------------------------------------------------------------------------------------
+–
+=
+F j
+
+
+Aj
+
+2
+j
+
+2
+j
+
+2p
+p
+2
++
++
+--------------------------------------------------------------
+Aj
+
+2
+j
+
+2
+j
+
+
+p
+Q
+------
+p
+2
++
++
+-------------------------------------------------------
+=
+=
+F j
+
+
+A
+C1
+C4
+------;
+–
+=
+=
+p
+2
+1
+R2R5C3C4
+---------------------------;
+=
+2p
+p
+Q
+------
+1
+R5
+-----
+C1
+C3C4
+-------------
+1
+C3
+------
+1
+C4
+------
++
++
+
+
+
+
+=
+=
+2
+1
+Q---
+R2
+R5
+-----
+C1
+C3C4
+-----------------
+C4
+C3
+------
+C3
+C4
+------
++
++
+
+
+
+
+
+
+=
+=
+
+
+Ui
+C1
+Uu
+R2
+C3
+C4
+R5
+F j
+
+
+1
+R1C4
+------------ j
+
+
+j
+
+2
+j
+
+1
+R5
+-----
+1
+C3
+------
+1
+C4
+------
++
+
+
+
+
+R1
+R2
++
+R1R2R5C3C4
+---------------------------------
++
++
+---------------------------------------------------------------------------------------------------------------
+–
+=
+F j
+
+
+A02p j
+
+
+j
+
+2
+j
+
+2p
+p
+2
++
++
+--------------------------------------------------------------
+A0
+p
+Q
+------ j
+
+
+j
+
+2
+j
+
+
+p
+Q
+------
+p
+2
++
++
+-------------------------------------------------------
+=
+=
+
+[PAG 1761]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-161
+Dal confronto delle due espressioni della FdT, si ha:
+(XVII.24.24)
+(XVII.24.25)
+(XVII.24.26)
+con: A0 guadagno del filtro per  = 0, pulsazione di risonanza; 0 pulsazione centrale
+della banda o pulsazione di risonanza; p = 0 pulsazione di taglio;  fattore di smorza-
+mento; Q fattore di qualità, o fattore di merito, del filtro.
+Fig. XVII.24.10   Filtro BPF a reazione multipla del secondo ordine.
+In base alle relazioni XVII.24.23, XVII.24.24, XVII.24.25 e XVII.24.26, si può scrivere
+la FdT nella forma XVII.2.24, con F(j) = A0.
+La banda passante BW del filtro è data dalla differenza delle pulsazioni L e H, in
+corrispondenza delle quali F(j) subisce una riduzione di 3 dB rispetto a F(j);
+dalla XVII.2.24 si ha pertanto:
+C)  Filtri di ordine superiore al secondo
+I filtri di ordine superiore a due possono essere realizzati utilizzando filtri del primo e
+del secondo ordine, collegandoli in cascata, data la proprietà dei filtri attivi di non
+influenzarsi reciprocamente. Ad esempio, i filtri LPF a reazione multipla di ordine supe-
+riore al secondo sono realizzati ponendo in cascata blocchi di filtri a reazione multipla del
+secondo ordine, per i filtri di ordine pari, e filtri a reazione multipla del secondo ordine
+con un filtro del primo ordine, per i filtri di ordine dispari.
+p
+2
+0
+2
+R1
+R2
++
+R1R2R5C3C4
+--------------------------------- ;
+=
+=
+20
+0
+Q
+------
+1
+R5
+-----
+1
+C3
+------
+1
+C4
+------
++
+
+
+
+
+=
+=
+2
+1
+Q---
+R1R2
+R1R5
+R2R5
++
+---------------------------------
+C4
+C3
+------
+C3
+C4
+------
++
+
+
+
+
+
+
+=
+=
+F j0
+
+
+A0
+R5
+R1
+-----
+C3
+C3
+C4
++
+--------------------
+–
+Q
+R1C40
+--------------------
+–
+=
+=
+=
+
+
+Ui
+R1
+Uu
+R2
+C3
+C4
+R5
+L
+0
+2Q
+-------
+0
+2Q
+-------
+1
+4Q2
++
++
+–
+0
+2
+1
++
+
+–
+
+
+=
+=
+H
+0
+2Q
+-------
+0
+2Q
+-------
+1
+4Q2
++
++
+0
+2
+1
++
+
++
+
+
+=
+=
+BW
+H
+L
+–
+0
+Q
+------
+20
+=
+=
+=
+
+[PAG 1762]
+XVII-162
+ELETTRONICA ANALOGICA E DIGITALE
+25  AMPLIFICATORI DI POTENZA, TIRISTORI, COMANDO DI ATTUATORI
+In questo capitolo si considerano gli amplificatori in bassa frequenza, nelle classi A e
+B, i principi di funzionamento dei tiristori (SCR, DIAC, TRIAC) e i principi di comando
+degli attuatori.
+25.1  Generalità sull'amplificazione di potenza in bassa frequenza
+Gli amplificatori di potenza, pilotati da un segnale di tensione con ampiezza non tra-
+scurabile, erogano ad un carico un segnale con potenza specifica. Questo comporta due
+tipi di problemi: la distorsione e la potenza dissipata. La distorsione del segnale d'uscita
+generalmente è dovuta all'ampiezza del segnale d'ingresso che porta il dispositivo attivo
+impiegato a lavorare nella regione non lineare. La potenza del segnale d'uscita, quando è
+elevata, comporta problemi di dissipazione di potenza da parte del dispositivo attivo; si
+possono avere temperature elevate che causano il malfunzionamento del dispositivo attivo
+e anche la sua distruzione. In un amplificatore di potenza, con applicata una tensione sinu-
+soidale, il segnale d'uscita ha distorsione di non linearità causata dalla mancanza di linea-
+rità delle caratteristiche del dispositivo d'uscita. La distorsione di non linearità comporta
+nel segnale d'uscita la presenza di armoniche non desiderate ed è chiamata anche distor-
+sione armonica. Le armoniche sono le componenti sinusoidali aventi frequenza multipla
+della frequenza della tensione d'ingresso, detta fondamentale. Per la presenza di queste
+armoniche si definiscono come distorsione di seconda armonica D2, di terza armonica D3,
+…, di ennesima armonica Dn, rispettivamente, i rapporti fra il valore efficace della singola
+armonica ed il valore efficace della fondamentale La distorsione totale Dt, indicata anche
+con THD (Total Harmonic Distortion), è definita dalla relazione:
+(XVII.25.1)
+Gli amplificatori di potenza si possono classificare in classi di amplificazione,
+facendo riferimento alla circolazione di corrente nel dispositivo attivo. Il parametro che si
+utilizza è l'angolo di circolazione o angolo di conduzione, definito con c = t, dove t è
+l'intervallo nel periodo T in cui si ha circolazione di corrente e  la pulsazione. In base
+all'angolo di circolazione si hanno amplificatori: in classe A, con c = 360°; in classe B,
+con c = 180°; in classe AB, con 180°  c  360°; in classe C, con c  180°. Conside-
+rando applicato all'ingresso degli amplificatori un segnale sinusoidale, nella Fig.
+XVII.25.1 sono riportate le forme d'onda della corrente nel dispositivo attivo in funzione
+dell'angolo di conduzione: in a) per gli amplificatori in classe A; in b) per gli amplificatori
+in classe B; in c) per gli amplificatori in classe AB (essa ha caratteristiche intermedie fra le
+classi A e B); in d), per gli amplificatori in classe C. Gli amplificatori in classe A hanno un
+solo dispositivo attivo di potenza, piccola distorsione e basso rendimento. Gli amplifica-
+tori in classe B hanno due dispositivi attivi, con distorsioni maggiori, ma con un migliora-
+mento del rendimento rispetto gli amplificatori in classe A. I dispositivi attivi conducono
+per mezzo periodo ciascuno, e il segnale d'uscita è l'unione di due semionde. Se i disposi-
+tivi attivi sono BJT, a causa della tensione di soglia, la conduzione è inferiore al mezzo
+periodo; si ha la distorsione di cross-over e il segnale d'uscita ha la forma riportata nella
+Fig. XVII.25.1e. Gli amplificatori in classe AB hanno anch'essi due dispositivi attivi, come
+gli amplificatori in classe B, ma l'angolo di conduzione di ogni dispositivo attivo è supe-
+riore a mezzo periodo. Gli amplificatori in classe C hanno un solo dispositivo attivo di
+potenza e sono caratterizzati da rendimento elevato; generalmente il carico è costituito da
+un circuito risonante e quindi si usano per amplificare segnali con bande strette.
+I dispositivi attivi non integrati più usati per la costruzione degli amplificatori di
+potenza sono i BJT ed i MOSFET di potenza.
+THD
+Dt
+D2
+2
+D3
+2
+
+Dn
+2
++
++
++
+=
+=
+
+[PAG 1763]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-163
+Fig. XVII.25.1   Andamento della corrente nel dispositivo attivo degli amplificatori: a)
+per la classe A; b) per la classe B; c) per la classe AB; d) per la classe C; e) distorsione di
+cross-over in classe B.
+25.2  BJT di potenza
+Per non danneggiare i dispositivi attivi, occorre non superare determinati valori dei
+parametri; nel caso del BJT, i limiti sono posti dai massimi valori permessi di tempera-
+tura, di potenza dissipabile, di tensione e corrente.
+–  Limiti di temperatura. Temperature eccessive possono causare: fusione dei mate-
+riali, dissociazioni o formazione di prodotti di reazione che alterano le caratteristiche del
+transistor; aumento delle correnti superficiali; deterioramento delle caratteristiche termi-
+che dei materiali, con conseguente aumento della resistenza termica fra giunzione e conte-
+nitore e quindi della temperatura della giunzione. La resistenza termica fra giunzione,
+mezzo 1, e contenitore, mezzo 2, è dovuta alle loro diverse caratteristiche termiche.
+Essendo i due mezzi a contatto, la potenza P che, in condizioni di regime, passa per con-
+duzione dal mezzo 1 al mezzo 2, è proporzionale alla differenza T1  T2 delle temperature
+dei mezzi stessi. Si definisce come resistenza termica fra i mezzi 1 e 2 il rapporto Rth1-2 
+(T1  T2)P [°C/W] e si misura in gradi al watt (°C/W).
+–  Limiti di potenza dissipabile. Il limite della potenza massima dissipabile, PDmax, è
+legato alla temperatura massima consentita alla giunzione. Nel caso del BJT si ha la rela-
+zione:
+(XVII.25.2)
+con: Tjmax, temperatura massima ammissibile della giunzione; PDmax, potenza massima
+dissipabile; Rthjc, resistenza termica fra giunzione e contenitore; Tc, temperatura del con-
+tenitore (case). Dalla XVII.25.2, si deduce che, per aumentare la potenza massima dissipa-
+bile, a parità di Rthjc, occorre fare in modo che la temperatura del contenitore sia bassa.
+Ciò si ottiene con l'impiego di piastre di raffreddamento, come quella riportata nella Fig.
+XVII.25.2; con il loro impiego ci si propone di mantenere la temperatura del contenitore
+vicino a quella dell'ambiente.
+   
+i
+0
+
+2
+3
+t
+a)
+i
+0
+
+2
+3
+t
+b)
+i
+0
+
+t
+2
+3
+c)
+i
+0
+
+2
+3t
+d)
+i
+0
+t
+2
+
+e)
+Tjmax
+PDmaxRthj
+c
+–
+Tc
++
+=
+
+[PAG 1764]
+XVII-164
+ELETTRONICA ANALOGICA E DIGITALE
+–  Limiti di corrente. Il valore limite di corrente ICmax è determinato dalle dimensioni
+della piastrina di semiconduttore e dalle connessioni interne fra transistor e terminali di
+collegamento esterno.
+–  Limiti di tensione. Il valore limite di tensione è dovuto alle tensioni di breakdown
+del transistor.
+Fig. XVII.25.2   Piastra di raffreddamento.
+25.3  MOSFET di potenza
+I MOSFET di potenza hanno correnti e tensioni di lavoro elevate e dissipano grandi
+potenze. Per avere una corrente di drain elevata è necessario che il canale sia di lunghezza
+ridotta; ciò comporta basse tensioni di breakdown e quindi non permette elevate tensioni.
+Per aumentare la possibilità di dissipare potenza, inoltre, sono necessarie ampie superfici
+del terminale di drain. Queste esigenze sono difficilmente realizzabili con i tradizionali
+MOSFET, per cui si è ricorso a nuove tipologie, note come VMOS, HEXMOS, DMOS. I
+MOSFET di potenza hanno le seguenti caratteristiche: alta impedenza di ingresso;
+ingresso pilotato in tensione; assenza di deriva termica; tempi di commutazione rapidi.
+Altre caratteristiche, meno positive, sono: alta capacità di ingresso; necessità di una prote-
+zione di gate per evitare l'effetto di breakdown; sensibilità alle cariche statiche.
+Quest'ultima caratteristica è dovuta allo strato di ossido, molto sottile, interno al MOS, fra
+terminale di gate e canale; quando il gate non è collegato ad un circuito, si ha accumulo di
+cariche al terminale di gate, e la differenza di potenziale fra gate e canale può essere tale
+da causare la perforazione dell'ossido. Analogo problema si può presentare quando si
+tocca il gate con le mani o si effettua una saldatura; l'elettricità statica sui polpastrelli
+delle dita può essere sufficiente a danneggiarlo. Per evitare questo inconveniente, i
+MOSFET sono generalmente protetti con resistenze e diodi.
+25.4  Bilancio energetico degli amplificatori
+Il bilancio energetico di un amplificatore consiste nella valutazione delle potenze
+nelle condizioni di funzionamento a riposo ed in presenza di segnale all'ingresso. In que-
+sto paragrafo si considera il bilancio energetico di un amplificatore ad emettitore comune
+con segnale d'ingresso sinusoidale.
+A)  Bilancio energetico a riposo
+Si considera l'amplificatore ad emettitore comune della Fig. XVII.25.3a. A riposo
+(uS 0) le potenze relative al circuito considerato sono le seguenti.
+–  Potenza PC dissipata sul collettore. È la potenza espressa dalla relazione: PC 
+UCEIC, con UCE tensione fra collettore ed emettitore e IC corrente di collettore.
+–  Potenza PB dissipata sulla base. È la potenza espressa dalla relazione PB  UBEIB,
+con UBE tensione fra base ed emettitore, ed è molto minore della potenza dissipata sul col-
+lettore.
+–  Potenza PD dissipata dal transistor. È la potenza espressa dalla relazione: PD  PC
+ PB  PC.
+–  Potenza PRC sul carico RC. È la potenza espressa dalla relazione: PRC  RCI 2
+C.
+–  Potenza PRB dissipata sulla resistenza RB. È la potenza espressa dalla relazione:
+PRB  RBI 2
+B, ed è molto minore della potenza dissipata sul collettore.
+
+[PAG 1765]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-165
+–  Potenza PCC fornita dall'alimentazione. Si ricava dalla relazione: PCC  PD PRC.
+Nella Fig. XVII.25.3b sono riportati la retta di carico, con il punto di riposo Q, e le
+potenze rappresentate da aree di rettangoli. Trascurando la potenza dissipata su RB, l'area
+del rettangolo di lati UCC e IC rappresenta la potenza fornita dall'alimentazione: PCC  PD
+ PRc. La potenza dissipata dal transistor, PD, è rappresentata dall'area del rettangolo di
+lati UCE e IC; la potenza sul carico RC, PRc, è rappresentata dall'area del rettangolo di lati
+(UCC  UCE) e IC.
+B)  Bilancio energetico in presenza del segnale
+In presenza del segnale sinusoidale uS, le potenze più significative (dissipate, utile ed
+erogata), nel periodo T della tensione di ingresso, sono: la potenza media fornita dall'ali-
+mentazione PCC; la potenza media sul carico RC, PRc; la potenza media dissipata dal tran-
+sistor, PD; la potenza media utile Pu. La potenza media utile è quella associata al segnale.
+Nella Fig. XVII.25.3c sono riportati: la rappresentazione grafica delle potenze dell'ampli-
+ficatore, quando ad esso è applicato il segnale uS; la retta di carico; l'andamento, dise-
+gnato tratteggiato, della corrente di collettore ic e della tensione fra collettore ed
+emettitore uce. Il punto di funzionamento si sposta sulla retta di carico in funzione della
+corrente di base, muovendosi fra i punti Q' e Q". Dalla Fig. XVII.25.3c risulta che la
+potenza PCC, rappresentata dall'area del rettangolo di base UCC e altezza IC, rimane inva-
+riata in assenza ed in presenza del segnale uS. La potenza media utile, Pu  UceMIcM2, è
+rappresentata nella Fig. XVII.25.3c con il triangolo indicato con Pu. La potenza dissipata
+sul transistor, PD, è indicata dalla figura tratteggiata ed è uguale alla potenza dissipata a
+riposo, rappresentata dal rettangolo di base UCE e altezza IC, diminuita della potenza utile
+Pu; pertanto, la presenza del segnale uS causa la diminuzione del valore di PD, rispetto alle
+condizioni di riposo con uS = 0. La potenza sul carico RC è la somma della potenza di
+polarizzazione, determinata dalla corrente di polarizzazione e rappresentata dall'area del
+rettangolo di lati (UCC  UCE) e IC, e della potenza utile Pu, dovuta al segnale.
+Fig. XVII.25.3   Amplificatore ad emetti-
+tore comune: a) circuito; b) bilancio ener-
+getico a riposo; c) bilancio energetico in
+presenza di segnale.
+UCC
+RC
+RB
+iB
+iC
+C
+RS
+uCE
+uS
+a)
+iC
+uCE
+UCE
+UCC
+IC
+Q
+PD
+PRC
+b)
+IcM
+IcM
+UCC
+UCC/RC
+iC
+0
+Q’
+Q
+Q’’
+PRc
+UCE
+uCE
+Pu
+UceM
+UceM
+c)
+
+[PAG 1766]
+XVII-166
+ELETTRONICA ANALOGICA E DIGITALE
+Si definisce rendimento di conversione, o semplicemente rendimento, il rapporto fra
+la potenza utile e la potenza fornita dall'alimentazione:
+Il rendimento di conversione indica pertanto la percentuale di potenza effettivamente
+utilizzata e, di conseguenza, quanta potenza, invece, viene dissipata in calore.
+Fig. XVII.25.4   Amplificatore in classe A: a) schema del circuito; b) diagramma della
+potenza.
+25.5  Amplificatori di potenza in bassa frequenza in classe A
+A)  Amplificatore con carico percorso dalla corrente di riposo
+Nella Fig. XVII.25.4a è riportato lo schema di un amplificatore ad emettitore comune,
+con il BJT ideale e con ui segnale di ingresso sinusoidale. Nella Fig. XVII.25.4b sono
+riportati: i rettangoli delle potenze, la retta di carico, i valori IC e UCE relativi al punto di
+funzionamento Q, scelto nel punto medio del segmento della retta di carico nel primo qua-
+drante, per avere la massima ampiezza del segnale di uscita ic e uce. Il segnale sinusoidale
+di ingresso ha ampiezza tale che il punto di funzionamento interessi tutto il segmento di
+retta di carico; nell'ipotesi di BJT ideale, le caratteristiche d'uscita sono orizzontali ed
+ugualmente spaziate e permettono di operare fra interdizione (uCE  UCC; iC  0) e satura-
+zione (uCE  0; iC  UCC  RC).
+Le principali grandezze che interessano il bilancio energetico hanno i valori seguenti.
+–  Potenza media fornita dalla batteria: PCC  VCCIC.
+–  Potenza utile massima: Pumax  UceMIcM2  U2
+ceM2RC. Essendo IcM  IC  (UCC
+RC)2 e UceM  UCE  UCC2, si ha anche: Pumax  U2
+ceM8RC.
+–  Potenza sulla resistenza di carico: PRC  (UCCUCE) IC  Pumax.
+–  Potenza massima dissipata dal transistor: PDmax  UCEICE  2Pumax.
+–  Potenza PC dissipata sul collettore e potenza PD dissipata dal transistor: PD  PC
+PCCPRc.
+–  Rendimento di conversione massimo max:
+
+Pu
+PCC
+----------
+=
+oppure
+%
+Pu
+PCC
+----------
+100
+
+=
+IcM
+IcM
+iC
+0
+t
+UCC/RC
+iC
+Q
+IC
+0
+PD
+UCE
+UCC
+uCE
+Pumax
+RC
+UCC
+RB
+ui
+a)
+UceM
+uCE
+0
+UceM
+t
+b)
+
+[PAG 1767]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-167
+(XVII.25.3)
+Il rendimento del 25% rappresenta il valore massimo teorico quando il BJT è considerato
+ideale; con un transistor reale, si ha forte distorsione quando il punto di funzionamento si
+avvicina alle regioni di interdizione e di saturazione. Per avere minima distorsione, l'escur-
+sione del punto di funzionamento deve essere limitata e quindi il rendimento si riduce.
+B)  Amplificatore con carico non percorso dalla corrente di riposo
+Per ridurre la potenza dissipata sul carico dovuta alla corrente di collettore a riposo, si
+collega il carico al circuito del transistor tramite un trasformatore; il circuito è riportato
+nella Fig. XVII.25.5a e in b) è rappresentato graficamente il bilancio energetico.
+Fig. XVII.25.5   Amplificatore con accoppiamento a trasformatore: a) schema del cir-
+cuito; b) bilancio energetico.
+Le principali grandezze che interessano il bilancio energetico hanno i valori seguenti.
+–  Potenza media fornita dalla batteria: PCC  UCCIC.
+–  Potenza utile massima: Pumax  UceMIcM2  U2
+ceM2R'L. Essendo IcM = IC e UceM =
+UCE = UCC, si ha anche: Pumax  U2
+CC2R'L. La resistenza R'L è la resistenza equivalente
+vista ai terminali di ingresso del trasformatore; essa vale (n1n2)2RL, avendo indicato con
+n1 il numero di spire del primario del trasformatore, con n2 il numero di spire del seconda-
+rio e con RL la resistenza di carico.
+–  Potenza massima PDmax dissipata dal transistor: PDmax  UCEIC  UCEIcM  2Pumax.
+–  Potenza PC dissipata sul collettore e potenza PD dissipata dal transistor: PD  PC
+PCCPumax.
+–  Rendimento di conversione massimo max:
+max
+Pumax
+PCC
+--------------
+UcemaxIcmax
+2
+------------------------------
+UCCIC
+-------------------------------
+UCC
+2
+---------- IC
+2
+-----------------
+UCCIC
+-----------------
+1
+4--
+0,25
+25%
+=
+=
+=
+=
+=
+=
+IcM
+IcM
+iC
+0
+t
+
+iC
+Q
+IC
+0
+PD
+UCE = UCC
+uCE
+Pumax
+2UCC
+UCC
+RB
+RL
+ui
+u1
+u2
+a)
+UceM
+uCE
+0
+UceM
+t
+b)
+max
+Pumax
+PCC
+--------------
+UceMIcM
+2
+----------------------
+UCCIC
+----------------------
+UCC
+2
+---------- IC
+UCCIC
+-----------------
+1
+2--
+0,5
+50%
+=
+=
+=
+=
+=
+=
+
+[PAG 1768]
+XVII-168
+ELETTRONICA ANALOGICA E DIGITALE
+Oltre al valore di rendimento doppio rispetto all'amplificatore senza trasformatore,
+l'assenza della corrente di riposo nel carico fa sì che, per un carico costituiti da un altopar-
+lante o da un servomotore, non si abbia saturazione del circuito magnetico che fa parte del
+carico stesso.
+25.6  Amplificatori di potenza in bassa frequenza in classe B
+A)  Principio di funzionamento
+Lo schema di principio di un amplificatore in classe B è rappresentato nella Fig.
+XVII.25.6a. I due transistori Q1, di tipo NPN, e Q2, di tipo PNP, sono polarizzati all'inter-
+dizione, quindi a riposo (ui  0) non conducono. Considerando l'andamento della tensione
+di ingresso sinusoidale, durante la semionda positiva del segnale di ingresso, Q2 è bloc-
+cato, mentre Q1 conduce; la corrente di collettore iC1 fluisce nel carico nella direzione
+indicata dalla freccia a tratto continuo. Durante la semionda negativa, Q1 è bloccato, men-
+tre Q2 conduce; la corrente circola nel carico nella direzione indicata dalla freccia dise-
+gnata tratteggiata. Durante la conduzione del transistor Q1, nel carico si ha la semionda
+positiva della corrente, dovuta alla corrente di collettore iC1; nel semiperiodo successivo,
+conduce il transistor Q2, nel carico si ha la semionda negativa della corrente, dovuta alla
+corrente di collettore iC2; pertanto, sul carico, in un periodo del segnale d'ingresso, si ha la
+stessa forma d'onda dell'ingresso, ma con livello di potenza maggiore rispetto al livello di
+potenza all'ingresso. L'incremento di potenza all'uscita è ottenuto dalla conversione della
+potenza continua dell'alimentazione in potenza alternata. Il circuito è detto push-pull a
+simmetria complementare. Il termine “simmetria” è dovuto al fatto che i transistor, pur
+essendo uno PNP e l'altro NPN, devono essere simmetrici, cioè avere lo stesso tipo di
+caratteristiche, perché le due semionde siano specularmente uguali e non si abbia distor-
+sione. Il termine “complementare” indica che un transistor è NPN e l'altro PNP, ciò che
+comporta la conduzione dei transistor in modo alternato, anche se comandati dallo stesso
+segnale. Il termine push-pull deriva dalle modalità del passaggio della corrente nel carico;
+è come se durante una semionda la corrente venisse spinta in avanti (push) nel carico dal
+transistor Q1 e venisse tirata indietro (pull) dal transistor Q2 durante l'altra semionda.
+Gli amplificatori in classe B, del tipo push-pull a simmetria complementare, hanno il
+vantaggio di un elevato rendimento, che ha un valore massimo teorico del 78%. Un incon-
+veniente è la presenza dei due transistor che richiedono un'alimentazione duale (due batte-
+rie con tensioni uguali in valore assoluto e di segno opposto); come si vede nello schema
+della Fig. XVII.25.6a, sono necessarie due batterie, una di tensione UCC, per alimentare
+il transistor Q1 di tipo NPN, ed una di tensione UCC, per alimentare il transistor Q2 di tipo
+PNP. Un secondo inconveniente è causato dalla distorsione di cross-over o distorsione di
+incrocio; essa è dovuta alla tensione di soglia del transistor, dell'ordine di 0,5 V, che la
+tensione base-emettitore deve superare perché inizi la conduzione. I transistor dell'ampli-
+ficatore in classe B sono polarizzati all'interdizione, con UBE  0; dato che la conduzione
+inizia quando la tensione base-emettitore supera la tensione di soglia, si ha corrente nel
+carico non quando la tensione di ingresso diventa maggiore di zero, ma quando questa
+supera la tensione di soglia. 
+L'andamento della corrente nel carico è perciò del tipo indicato nella Fig. XVII.25.1e,
+dove si vede che la corrente d'uscita non è sinusoidale, ma vi sono degli intervalli in cui
+rimane uguale a zero. Per evitare la distorsione di cross-over, si fanno lavorare i transi-
+stori in classe AB, polarizzandoli alla tensione di soglia o poco oltre; spesso i transistor
+sono polarizzati in corrispondenza della tensione di soglia, con una corrente di riposo che
+può valere IC  IM100, con IM valore massimo della corrente di collettore. In questo modo
+si elimina la distorsione di incrocio, però a riposo la batteria fornisce potenza e perciò il
+rendimento si abbassa.
+
+[PAG 1769]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-169
+B)  Tipi di amplificatori di potenza in classe B
+I tipi più comuni di amplificatori in classe B sono: a simmetria complementare e dop-
+pia alimentazione, esaminato nel punto A) precedente, a simmetria complementare e sin-
+gola alimentazione, e a simmetria quasi complementare.
+1)  Amplificatore push-pull a simmetria complementare con alimentazione singola
+Nella Fig. XVII.25.6b è riportato lo schema di principio dell'amplificatore push-pull a
+simmetria complementare con alimentazione singola; il condensatore di grande capacità C
+(migliaia di microfarad) si comporta come una batteria di valore UCC2, essendo il poten-
+ziale del punto di collegamento dei due emettitori M, approssimativamente, al potenziale
+UCC2. Con il segnale d'ingresso ui sinusoidale, a regime, nel semiperiodo in cui ui è posi-
+tivo, Q2 conduce, e la corrente iC2, attraversa sia il carico R sia il condensatore C (Fig.
+XVII.25.6b), caricandolo alla tensione UCC2. Nel semiperiodo in cui ui è negativo, Q1
+conduce, Q2 è interdetto, l'alimentazione UCC non è connessa a Q1, e la corrente iC1 è
+generata dalla scarica del condensatore C attraverso il carico R; il condensatore si com-
+porta, perciò, come una batteria fittizia.
+Fig. XVII.25.6   Schemi di principio degli amplificatori push-pull: a) a simmetria com-
+plementare con doppia alimentazione; b) a simmetria complementare con alimentazione
+singola; c) a simmetria quasi complementare.
+2)  Amplificatore push-pull a simmetria quasi complementare
+Questo tipo di amplificatore è usato soprattutto quando la potenza richiesta dal carico
+è rilevante. Infatti, è difficile trovare transistor di grande potenza complementari, perciò si
+preferisce usare una coppia di transistor complementari di potenza più bassa, che pilotano
+una coppia di transistor dello stesso tipo nello stadio finale; lo schema di principio è rap-
+presentato nella Fig. XVII.25.6c. I transistor Q1 e Q3, entrambi del tipo NPN, sono coman-
+dati rispettivamente da Q2 e Q4 in controfase, con le tensioni di uscita di Q2 e Q4 in
+opposizione di fase; Q1 e Q3, quindi, conducono alternativamente, dato che alla base di Q1
+è applicato il segnale sull'emettitore di Q2, che è in fase con il segnale di ingresso, mentre
+alla base di Q3 è applicato il segnale sul collettore di Q4, che è in opposizione di fase con
+il segnale di ingresso; ne segue che, essendo entrambi i transistor Q1 e Q3 del tipo NPN,
+conducono alternativamente e nel carico R la corrente circola come nel push-pull a sim-
+metria complementare.
+25.7  Tiristori
+I tiristori sono dispositivi semiconduttori bipolari con una o più giunzioni pn; colle-
+gati a un carico e ad un alimentatore ne controllano le tensioni e le correnti, anche se ele-
+UCC
+R
+ui
+Q1
+Q2
+a)
+
+
+iC2
+t
+UCC
+
+
+iR
+t
+iC1
+t
+ui
+t
+Q1
+Q2
+UCC
+M
+C
+R
+b)
+ui
+iC2
+iC1
+UCC2
+c)
+UCC
+
+
+UCC
+
+
+R
+Q1
+Q2
+Q3
+Q4
+ui
+
+[PAG 1770]
+XVII-170
+ELETTRONICA ANALOGICA E DIGITALE
+vate. I tipi di tiristori più utilizzati sono: gli SCR, o raddrizzatori controllati al silicio; i
+TRIAC, dispositivi bidirezionali di controllo, usati con correnti alternate; i DIAC, utiliz-
+zati per l'innesco dei TRIAC e il controllo degli SCR.
+25.7.1  SCR
+A)  Caratteristiche d'uscita
+Gli SCR, da Silicon-Controlled Rectifier, sono dispositivi bipolari al silicio unidire-
+zionali (la corrente fluisce nell'SCR come in un diodo pn). La loro struttura interna è sche-
+matizzata nella Fig. XVII.25.7a; vi sono quattro zone di semiconduttori, alternativamente
+di tipo p e di tipo n, di diverso spessore e con concentrazioni diverse di drogaggio; si ven-
+gono pertanto a formare tre giunzioni. Due terminali esterni sono chiamati Anodo (A) e
+Catodo (K); il terzo, il terminale di controllo, è detto Gate (G). Il simbolo è riportato nella
+Fig. XVII.25.7b.
+Fig. XVII.25.7   SCR: a) struttura; b) simbolo; c) circuito equivalente.
+Nella Fig. XVII.25.8a sono disegnate le caratteristiche d'uscita dell'SCR, con la cor-
+rente anodica iA in funzione della tensione uAK e della corrente di gate iG. Per l'analisi
+delle caratteristiche dell'SCR si considerano le tre giunzioni, fra i terminali di anodo,
+catodo e gate, equivalenti al circuito con diodi della Fig. XVII.25.7c. In questo circuito il
+diodo corrispondente alla giunzione J2, nella posizione centrale, è in opposizione ai diodi
+alle estremità, corrispondenti alle giunzioni J1 e J3. Con questo modello le caratteristiche
+d'uscita dell'SCR, iA  f(uAK), con la corrente di gate iG come parametro, sono ottenute nel
+seguente modo.
+1)  Caratteristica con corrente di gate iG = 0
+Applicando una tensione positiva uAK fra anodo e catodo di opportuno valore, le giun-
+zioni J1 e J3 sono polarizzate direttamente e conducono; la giunzione J2, polarizzata inver-
+samente, si comporta come un interruttore aperto (la corrente di polarizzazione inversa è
+di valore trascurabile). L'SCR, in queste condizioni di interdizione, può essere conside-
+rato, in prima approssimazione, un interruttore aperto (OFF). Aumentando il valore di uAK
+la corrente inversa aumenta debolmente, come mostra la caratteristica iG1 nella Fig.
+XVII.25.8a; incrementando uAK fino a raggiungere la tensione UBO, detta tensione diretta
+di breakover (forward-breakover), dell'ordine delle diverse centinaia di volt, s'innesca un
+processo a valanga che in pochi istanti neutralizza la barriera di potenziale ai capi di J2 e
+la tensione uAK passa, dalla tensione di breakover, ad una tensione di conduzione diretta,
+dell'ordine del volt; la corrente anodica corrispondente è detta corrente di aggancio, ed
+indicata con IL (latching current). In queste condizioni, l'SCR entra in conduzione diretta
+e può essere considerato, in prima approssimazione, un interruttore chiuso (ON). Aumen-
+tando ulteriormente la tensione fra anodo e catodo, a partire dalla tensione di conduzione
+p
+n
+p
+n
+G
+A
+K
+a)
+A
+G
+K
+b)
+j1
+p
+n
+p
+n
+G
+A
+K
+c)
+G
+A
+K
+j2
+j3
+j1
+j2
+j3
+
+[PAG 1771]
+ELETTRONICA ANALOGICA E DIGITALE
+XVII-171
+diretta, la corrente iA aumenta fortemente per piccoli aumenti di uAK e l'SCR si comporta
+come un normale diodo.
+Fig. XVII.25.8   SCR: a) caratteristiche anodiche di un SCR; b) caratteristiche di gate di
+un SCR: b1) area di innesco; b2) area che individua la corrente di gate di innesco al
+variare della temperatura; b3) area che individua la tensione di gate di innesco al variare
+della temperatura; b4) area di innesco incerto (area non tratteggiata).
+2)  Caratteristiche con corrente di gate iG > 0
+Si supponga ora di applicare al gate un impulso positivo di corrente. L'aumento di
+potenziale di gate causa una diminuzione della barriera di potenziale della giunzione J2
+polarizzata inversamente, la tensione di breakover UBO è più bassa, e quindi, aumentando
+la tensione uAK, si ha l'innesco del processo a valanga per valori inferiori. Il processo a
+valanga in pochi istanti neutralizza la barriera di potenziale ai capi di J2, la tensione uAK
+passa dalla tensione di breakover alla tensione di conduzione diretta, la corrente anodica
+corrispondente è la corrente di aggancio IL e l'SCR entra in conduzione (ON). Dalle carat-
+teristiche nella Fig. XVII.25.8a, si nota che la tensione di breakover è più bassa, quanto
+più la corrente di gate è alta: iG3  iG2  iG1  0.
+3)  Regione di interdizione inversa
+Applicando un tensione uAK negativa fra anodo e catodo, la giunzione J2 è polarizzata
+direttamente, mentre J1 e J3 sono polarizzate inversamente. L'SCR è OFF, con una debo-
+lissima corrente dovuta ai portatori di minoranza. Diminuendo ulteriormente uAK, si rag-
+giunge una tensione UBR, detta tensione di breakdown inversa UBR (reverse-breakdown
+voltage), a cui si ha un aumento a valanga della corrente inversa, come nei diodi a giun-
+zione, con il danneggiamento dell'SCR (si veda la Fig. XVII.25.8a).
+B)  Mantenimento della condizione di ON al termine dell'impulso di gate
+La corrente di gate iG, abbassando la barriera di potenziale della giunzione J2, agisce
+localmente; pertanto, aumentando ulteriormente la tensione fra anodo e catodo, a partire
+dalla tensione di conduzione diretta, la corrente iA dell'SCR diviene iA  IL e provvede ad
+eliminare del tutto la barriera di potenziale della giunzione J2, innescando un meccanismo
+di reazione positiva tipico delle strutture pnpn.
+0
+iG1=0
+iA
+iG2
+iG3
+iT
+IL
+IH
+UBR
+uT
+UBO
+uAK
+a)
+b1)
+UG
+UGmax
+PGmax
+IGmax
+max
+min
+IG
+b2)
+IGT
+T (°C)
+b3)
+UGT
+T (°C)
+b4)
+UG
+IG
+min
+max
+
+[PAG 1772]
+XVII-172
+ELETTRONICA ANALOGICA E DIGITALE
+C)  Disinnesco dell'SCR
+Per avere il disinnesco, occorre fare scendere la corrente iA dell'SCR al di sotto di un
+valore di corrente, detto valore di corrente di mantenimento IH (holding current), con IH 
+IL (Fig. XVII.25.8a). Il disinnesco è ottenuto con la commutazione automatica o quella
+forzata; se l'SCR lavora con tensioni alternate, il disinnesco è automatico quando la ten-
+sione, diminuendo, passa per lo zero. Si ha commutazione forzata quando un circuito
+esterno polarizza inversamente l'SCR e riduce la corrente a valori attorno allo zero.
+D)  Caratteristiche d'ingresso
+La caratteristica di gate uG  f(iG), è sostanzialmente quella di un diodo, dato che i ter-
+minali di gate e catodo sono i terminali di una giunzione pn. A causa della dispersione dei
+parametri e della loro dipendenza dalla temperatura, sono fornite due caratteristiche, la
+minima e la massima, utilizzate con altre curve caratteristiche per individuare aree di
+sicuro innesco. Con riferimento alla Fig. XVII.25.8b, in b1 è riportata l'area corrispon-
+dente ai valori della tensione di gate UG e della corrente di gate IG a cui si ha innesco.
+L'area d'innesco (tratteggiata) è individuata dalle caratteristiche minima e massima (min,
+max), dall'iperbole di massima potenza di gate (PGmax), dalle rette parallele agli assi pas-
+santi rispettivamente per i punti corrispondenti ai valori massimi della tensione di gate
+(UGmax) e della corrente di gate (IGmax). Dato che le condizioni di innesco dipendono dalla
+temperatura, alla Fig. XVII.25.8b1 sono affiancate le Fig. XVII.25.8b2, b3, in cui sono
+disegnate tratteggiate le aree di innesco, in funzione della temperatura. In esse sono indi-
+cati con IGT e UGT, rispettivamente, i valori minimi della corrente di gate e di tensione di
+gate per avere l'innesco. Spesso viene fornito un solo diagramma, come quello dato in b1,
+in cui viene indicata, per le piccole tensioni e correnti, una regione detta di innesco
+incerto, funzione della temperatura. Un esempio è riportato in b4, in cui è evidenziata solo
+la parte relativa alle piccole tensioni e correnti di gate. L'area non tratteggiata è l'area di
+incertezza; essa comprende i valori minimi di tensione e corrente di trigger che determi-
+nano la commutazione dell'SCR alle diverse temperature, non indicate in figura. I valori
+di tensione e corrente di gate per un innesco sicuro dell'SCR devono essere scelti al di
+fuori di questa area di incertezza, entro l'area definita precedentemente nella Fig.
+XVII.25.8b1 e qui indicata con il tratteggio.
+E)  Circuito di controllo con SCR della potenza su un carico resistivo 
+Per controllare la potenza sinusoidale fornita ad un carico resistivo RL tramite un
+SCR, si utilizza il circuito di controllo riportato nella Fig. XVII.25.9a, dove la tensione di
+alimentazione ual è sinusoidale ed è applicata alla serie di carico e SCR. Nella Fig.
+XVII.25.9b sono rappresentate le forme d'onda per spiegarne il funzionamento. Nell'inter-
+vallo 0 < t < t1 la tensione sinusoidale è applicata al circuito, ma non vi è circolazione di
+corrente, in quanto si suppone che la tensione anodica non sia sufficiente ad attivare
+l'SCR. All'istante t1 si ha un impulso di corrente di gate iG, l'SCR passa da OFF a ON,
+quindi si ha circolazione di corrente sinusoidale nel diodo e nel carico fino a quando la
+corrente scende al di sotto della corrente di mantenimento, approssimativamente
+all'istante t2, in cui la tensione ual diventa negativa. L'SCR è ora polarizzato inversamente
+e quindi passa dallo stato ON a quello OFF; la corrente nel carico diviene uguale a zero
+fino a quando la tensione ual diviene positiva e si presenta nuovamente un impulso di cor-
+rente di gate.
+Gli impulsi sono applicati con un ritardo ta rispetto al passaggio per lo zero della ten-
+sione sinusoidale, nell'intervallo in cui è crescente; ta è detto ritardo di accensione o
+ritardo di innesco. La conduzione dura dall'istante ta all'istante t2; l'intervallo tc  t2  ta è
+detto intervallo di conduzione o di circolazione. Generalmente si fa riferimento agli
+angoli; si definiscono un angolo di ritardo di accensione o di ritardo di innesco a 
