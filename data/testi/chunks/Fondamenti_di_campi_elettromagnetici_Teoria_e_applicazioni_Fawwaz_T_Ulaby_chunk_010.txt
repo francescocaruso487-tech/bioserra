@@ -1,0 +1,1262 @@
+=== Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 10/23 ===
+Chars: 44,593 | Offset: 404,380
+
+
+
+4.25 Com’é legata la capacita di una struttura con due conduttori alla resistenza del
+materiale isolante posto tra i conduttori stessi?
+4.26 Cosa sono gli effetti (campi) di bordo e quando possono essere ignorati?
+
+4.11 Energia Potenziale Elettrostatica
+
+Quando un generatore è collegato ai capi di una capacità, spende una certa energia
+per caricarla. Se le piastre del condensatore sono fatte di un buon materiale condutto-
+Te con resistenza prossima a zero e se il dielettrico che separa i due conduttori ha con-
+ducibilità trascurabile, allora non esiste alcuna corrente che possa scorrere attraverso
+il dielettrico e non si ha nessuna dissipazione ohmica nel condensatore. Quindi dove
+finisce l’energia di carica? L'energia viene immagazzinata nel mezzo dielettrico sotto
+
+Conduttore interno
+
+Materiale dielettrico
+
+Conduttore esterno
+
+18
+
+[PAG 100]
+184
+
+Capitolo 4 — Elettrostatica
+
+forma di energia potenziale elettrostatica. La quantità di energia immagazzinata We
+
+‘èlegataa 0, CeV. |
+
+Sotto l’influenza del campo elettrico nel mezzo dielettrico, una carica q viene accu-
+mulata su uno dei due conduttori e una carica uguale e opposta sull’altro conduttore.
+Effettivamente la carica q è stata trasferita da un conduttore all’altro. La tensione v ai
+capi del condensatore è legata a q da
+
+Ve (4.118)
+
+4
+
+Cc:
+Dalla definizione del potenziale elettrico V, il lavoro infinitesimo dW, necessario per
+trasferire una quantità addizionale di carica dg è
+
+dW = vdg =< da. (4.119)
+
+Se si considera la situazione di un condensatore scarico e lo si carica da zero fino a
+una carica finale Q, allora il lavoro totale compiuto è
+
+Q 1 (04
+2
+= | tdg=— => (9). 4.120
+We J CUTE Q) (4.120)
+Utilizzando la relazione C = Q/V, dove V è la tensione finale, W può anche essere
+scritto come
+
+W.= jo (J). (4.121)
+
+Per la capacità a piastre piane parallele discussa nell’Esempio 4.11, la capacità è data
+dalla (4.113) come C = e4/d, dove A è l’area delle piastre e d la separazione tra es-
+se. Inoltre la tensione V ai capi del condensatore è legata all’ampiezza del campo
+elettrico, E, nel materiale isolante, V = Ed. Utilizzando queste due espressioni nella
+(4.121) si ottiene
+led
+2 d
+dove y = Ad è il volume della capacità.
+
+La densità di energia elettrostatica w.è definita come l'energia potenziale elettro-
+statica W, per unità di volume:
+
+WH, = 156 (aay? = I dd) = pet, (4:12)
+
+Wed
+2
+
+eB? (Sm). (4.123)
+
+We =
+
+Anche se questa espressione é stata ricavata per un condensatore a piastre piane e pa-
+rallele, è ugualmente valida per un qualsiasi dielettrico in presenza di un campo elet-
+trico E. Inoltre per un qualsiasi volume v contenente un dielettrico con permittività e,
+l’energia potenziale elettrostatica totale, immagazzinata nel volume y è
+
+has [ ed (1). (4.124)
+
+Riprendendo il condensatore a piastre piane e parallele, le piastre, essendo cariche
+con polarità opposta, si attraggono reciprocamente con una forza elettrica F. La forza
+che agisce in un generico sistema può anche essere ottenuta da considerazioni ener-
+getiche. Nel seguito verrà dimostrato come la forza F possa essere calcolata a partire
+dall'energia elettrostatica 7, immagazzinata nel sistema e generata dalla distribuzio-
+ne di carica. La trattazione sarà di validità generale, benché verrà fatto uso dell’esem-
+pio dei condensatore come strumento di dimostrazione.
+
+4.15 Energia Potenziale Elettrostatica
+
+Se le due piastre del condensatore potessero avvicinarsi una all’altra, sotto l’influen-
+
+za della forza eletirica FY di una quantita inifinitesima di mentite la carica da esse im- ©
+
+magazzinata rimanesse invariata, allora il lavoro meccanico fatto dal sistema
+{condensatore carico) risulterebbe
+
+dW =F - dl. (4.125)
+Per un sistema isolato, questo lavoro meccanico è ottenuto spendendo energia elettro-
+
+statica. Quindi dW è uguale alla perdita di energia immagazzinata nel materiale die-
+lettrico che agisce da isolante nel condensatore, ovvero
+
+dW =-dW.. (4.126)
+Dalla (3.73), dW può essere scritto in termini del gradiente di W, come
+dW, = VW, di. (4.127)
+
+In base alla (4.126), dal confronto della (4.125) e della (4.127) si ottiene
+
+-VW, (N). (4.128)
+
+È importante osservare che la (4.128) è valida sotto l’ipotesi di cariche che rimango-
+no costanti nel sistema.
+
+Per applicare la (4.128) al caso del condensatore a piastre piane e parallele, si riscri-
+va la (4.120) nella seguente forma:
+
+(4.129)
+
+dove d è stato sostituito dalla variabile z che rappresenta la spaziatura verticale tra le
+piastre conduttrici. Utilizzando la (4.129) nella (4.128) sì ottiene
+
+0 (Gz 2
+F=-VW.=-i-{—|=-î|4,
+cote (È) (Zi). (4.130)
+e poiché Q = AE, F può anche essere espressa come
+, AE? .
+F=-2z > (condensatore a piastre parallele). (4.131)
+
+Domande di verifica
+
+4.27 Per portare una carica dall’infinito.a un dato punto dello spazio viene spesa un
+certa quantita di lavoro W. Dove finisce l’energia che corrisponde a W?
+
+4.28 Quando un generatore di tensione è collegato ai capi di un condensatore, qual è
+la direzione della forza che agisce sui due conduttori?
+
+Esercizio 4.18 Il conduttore interno e quello esterno di un cavo coassiale hanno raggio
+2 cme 5 cm rispettivamente. Il materiale isolante tra questi ha permittivita relativa pari a
+4 La densità di carica sul conduttore estemo è p; = 10-* (C/m). Si utilizzi l’espressione
+di E ottenuta nell’Esempio 4.12 per calcolare l'energia totale immagazzinata in un cavo
+lungo 20 cm.
+
+SoLuzione W, = 4.1].
+
+185
+
+[PAG 101]
+186
+
+Capitolo 4 - Elettrostatica
+
+4.12 Metodo delle Immagini
+
+Si consideri una carica puntuale Q posta a distanza d sopra un piano conduttore per-
+fetto, come mostrato nella parte sinistra di Figura 4.26. Si vogliono determinare V,
+E, D in ogni punto dello spazio e la distribuzione di carica sul piano conduttore. In
+questo capitolo sono stati introdotti tre metodi distinti per calcolare il campo E. Il pri-
+mo, basato sulla legge di Coulomb, richiede la conoscenza dell’ampiezza e della po-
+sizione di tutte le cariche che contribuiscono a E in un dato punto dello spazio. Nel
+caso presente, la carica Q induce una distribuzione di carica non nota e non uniforme
+sulla superficie del conduttore. Quindi non possiamo utilizzare il metodo di
+Coulomb. Il secondo metodo si basa sull’applicazione della legge di Gauss e in que-
+sto caso è ugualmente difficoltoso perché non è chiaro come costruire la superficie
+Gaussiana in modo tale che E sia sempre completamente tangente o normale in ogni
+punto della superficie. Nel terzo metodo, il campo elettrico è calcolato dalla relazione
+E = — VV dopo aver risolto l'equazione di Poisson o di Laplace per il potenziale V,
+soggetto a opportune condizioni al contorno; cioè V = 0 in ogni punto della superfi-
+cie del conduttore messo a terra e all'infinito. Sebbene questo metodo sia in linea di
+principo attuabile, la soluzione è assai complicata in termini matematici.
+
+Tuttavia esiste un metodo alternativo, basato sulla teoria delle immagini, che con-
+sente di risovere il problema rapidamente e senza difficoltà. Secondo la teoria delle
+immagini una qualsiasi distribuzione di carica che si trova sopra un conduttore per-
+fetto, piano e infinito, é elettricamente equivalente alla data configurazione di carica
+e alla sua immagine dove il piano è stato rimosso. La distribuzione equivalente, se-
+condo il metodo delle immagini, corrispondente alla carica Q è illustrata nella parte
+destra di Figura 4.26. Questa distribuzione consiste nella stessa carica Q e nella cari-
+ca immagine —Q posta a distanza —2d, con niente interposto tra le due cariche. Il
+campo elettrico dovuto alle due cariche isolate può essere a questo punto facilmente
+determinato in ogni punto (x, y, z) applicando la legge di Coulomb come dimostrato
+nell’Esempio 4.13. La combinazione delle due cariche produce sempre potenziale
+nullo Y = 0 in ogni punto dello spazio dove precedentemente si trovava il piano cari-
+co. Se la carica si trova in presenza di più di un piano carico posto a terra è necessa-
+rio individuare le immagini della carica relative ai diversi piani e successivamente fa-
+re la stessa cosa per le immagini rispetto ai piani restanti. Questo procedimento viene
+ripetuto finché la condizione V = 0 è soddisfatta in tutti i punti dei piani posti a terra.
+Il metodo delle immagini è applicabile non solo a cariche puntuali, ma anche a distri-
+buzioni qualsiasi di carica, come per esempio le distribuzioni di linea e di volume il-
+lustrate in Figura 4.27.
+
+Linee di campo
+
+Carica O su un piano posto a terra
+
+Configurazione equivalente
+
+Figura 4.26 Dalla teoria delle immagini, una carica Q su un piano conduttore perfetto posto a
+terra è equivalente a una carica Q e alla sua immagine —Q dove il piano è stato rimosso.
+
+4.12 Metodo delle Immagini 187
+
+Distribuzioni di carica su un piano posto a terra
+
+Distribuzioni equivalenti
+
+Figura 4.27 Distribuzioni di carica sopra un piano conduttore e distribuzioni equivalenti
+secondo il metodo delie immagini.
+
+Esempio 4.13 Metodo delle immagini per una carica sopra un piano condut-
+tore
+
+Utilizzando la teoria delle immagini si determini V e E in un punto arbitrario P(x, y, z)
+nella regione z > 0 dovuto a una carica Q nello spazio libero e che si trova a una distan-
+za d da un piano conduttore posto a terra.
+
+P(x, Ys 2)
+
+~Q(0, 0, -d) #
+
+Figura 4.28 Applicazione del metodo delle immagini per calcolare il E
+(Esempio 4.13). gini per il campo E nel punto P
+
+Soluzione in Figura 4.28 la carica Q si trova nel punto (0, 0, d) e la sua immagine
+-Q nel punto (0, 0, — d) del sistema di coordinate Cartesiane. Dalla (4.19) il campo
+elettrico nel punto P(x, y, z) dovuto alle due cariche è dato da
+
+__! QR, OR
+
+4reg R R
+__2 îx+9y+8(2-d) __f+9y+3(2+d)
+reo [++ +44
+
+perz> 0.
+
+ESERCIZIO 4.19 Si utilizzi i risultato dell’Esempio 4.13 per calcolare la densità di carica
+superficiale ps sulla superficie del piano conduttore.
+
+SOLUZIONE ps = —Qd/[2r(2 +3? + d°)?].
+
+[PAG 102]
+was
+
+188
+
+Glossario
+
+Si definiscano i seguenti termini, spiegandone il significato:
+
+condizioni statiche
+elettrostatica
+
+densità di carica volumetrica, superficiale e lineare
+
+densità di corrente J
+corrente di conduzione
+corrente di convezione
+intensità di campo elettrico E
+spostamento elettrico D
+legge di Coulomb
+legge di Gauss
+superficie Gaussiana
+campo conservativo
+potenziale elettrico
+dipolo elettrico
+momento di dipolo p
+parametri costitutivi
+conducibilità o
+
+Capitolo 4 — Elettrostatica
+
+Domande di verifica
+
+4.29 Qual è la premessa fondamentale del metodo delle immagini? .
+
+4.30 Data una certa distribuzione di carica quali sono i diversi metodi descritti in
+questo capitolo per calcolare il campo elettrico-E in un dato punto dello spa-
+zio?
+
+Concetti fondamentali
+
+e Le equazioni di Maxwell costituiscono i principi fondamentali della teoria dell’elet-
+tromagnetismo.
+
++ In condizioni statiche le equazioni di Maxwell si separano in due coppie di equa-
+zioni disaccoppiate, una delle quali riguarda i fenomeni elettrostatici mentre l’altra
+quelli magnetostatici.
+
+¢ La legge di Coulomb fornisce un’espressione esplicita del campo elettrico generato
+da una data distribuzione di carica.
+
+e La legge di Gauss afferma che il flusso del campo elettrico attraverso una superfi-
+cie chiusa è pari alla carica netta racchiusa all’interno della superficie.
+
+¢ Il campo elettrostatico E in un punto dello spazio è legato al potenziale elettrico V
+nello stesso punto secondo la relazione E = — VV, dove V è definito in modo rela-
+tivo ai potenziale all’infinito che è nullo.
+
+© Poiché la maggior parte dei metalli hanno conducibilità dell’ordine di 10% (S/m),
+sono trattati in pratica come conduttori perfetti. Per lo stesso motivo gli isolanti, la
+cui conduttività è inferiore a 107!° (S/m), sono trattati come dielettrici perfetti.
+
+« Le condizioni al contorno all’interfaccia tra due materiali indicano le relazioni tra
+le componenti norinali e tangenziali di E, D e J rispettivamente nei due materiali.
+
+e La capacità di un sistema formato da due conduttori e la resistenza del mezzo che
+si trova interposto tra i due possono essere calcolate dalla conoscenza del campo
+elettrico in quel mezzo.
+
+oLa densità di energia elettrostatica immagazzinata in un dielettrico è we = tee
+(Im).
+
+e Quando una distribuzione di carica è posta sopra un conduttore piano perfetto, il
+campo E indotto può essere calcolato come se fosse generato dalla distribuzione di
+carica e dalla sua immagine, avendo rimosso il piano conduttore.
+
+conduttore
+
+‘materiale dielettrico
+semiconduttore
+
+superconduttore
+
+velocità di deriva degli elettroni ws
+velocità di deriva delle lacune u,
+conduttore perfetto
+
+dielettrico perfetto
+
+mobilità degli elettroni 5
+mobilità delle lacune 44
+
+legge di Ohm
+
+conduttanza G
+
+legge di Joule
+
+condizioni al contorno
+
+vettore polarizzazione P
+materiale lineare
+
+materiale isotropo
+
+materiale omogeneo
+suscettibilità elettrica xe
+
+Problemi 189
+
+Nota: Le risposte ai problemi contrassegnati da un asterisco si
+trovano nell'Appendice D.
+
+Paragrafo 4.2 Distribuzioni di carica
+e di corrente
+
+*4.1 Un cubo di lato 2 m è posizionato nel primo ottante di un
+
+sistema di coordinate cartesiane. Si trovi la carica totale
+contenuta nel cubo sapendo che la densità di carica è data
+da py = 926 (mC/m?).
+
+4.2. Si calcoli la carica totale contenuta in un volume cilindrico
+definito dar <2me0<z<3msep, = 10rz
+(mC/m*).
+
+*4.3 Si calcoli la carica totale contenuta in un cono definito da
+
+R<2me0 <8 < 7/4 dato che py = 20R* cost@
+(Cin).
+
+44 Si determini la carica totale distribuita lungo l’asse y tra
+
+y= —Sey= 5 sapendo che la derisità di carica lineare è
+pi = 12% (mCin).
+
+*4.5 Si calcoli la carica totale presente sv un disco circolare
+
+definito dar <aez=0se:
+(@) ps = pso sin ¢ (C/Im)
+(©) ps = pso sin’ $ (Ci?)
+© ps = psoe”” (Ci?)
+
+(@) ps = psoe” sin? (C/m?)
+dove pso è costante.
+
+4.6 Se J = $2xz (A/m?), si calcoli la corrente / che scome
+
+attraverso un quadrato con vertici (0, 0, 0), (2, 0, 0),
+(2,0, 2) e (0, 0, 2).
+
+*4.7 Se J = R25/R (A/m?) si calcoli la corrente / attraverso la
+
+superficie circolare con R = 5 cm.
+
+4.8 Un fascio elettronico avente forma circolare. cilindrica di
+
+raggio rp trasporta una densità di carica:
+
+{P02 2
+
+w= (Br) (CÒ
+
+dove go è una costante positiva e l’asse del fascio coincide
+con l’asse z.
+
+(@) Si determini la carica totaie-contenuta in una lunghezza
+L del fascio.
+
+(b) Se gii elettroni si muovono lungo la direzione positiva
+dell’asse z con velocità uniforme wu, si determini il modulo
+e la direzione della corrente attraverso il piano z.
+
+capacità C
+“pemittività relativac, energia potenziale elettrostatica 7’, -
+forza dielettrica densità di energia elettrostatica w.
+rottura dielettrica ‘metodo delle immagini
+PROBLEMI
+
+Paragrafo 4.3 Legge di Coulomb
+
+*4.9 Un quadrato di lato 2 m ha una carica di 20 uC in ognuno
+
+dei quattro vertici. Si calcoli il campo elettrico nel punto
+che giace 5 m sopra il centro del quadrato.
+
+4,10 Tre cariche puntuali, ognuna di 3 nC, sono poste ai vertici
+di un triangolo nel piano x — y. Uno dei vertici coincide
+con l'origine, mentre gli altri sono (2 cm, 0, 0) e (0, 2 cm,
+0). Si calcoli la forza che agisce sulla carica che giace
+nell'origine.
+
+*4.14 Una carica g1 = 4 pC si trova nel punto (1 cm, 1 cm, 0) e
+
+una carica g2 nel punto (0, 0, 4 cm). Quanto deve essere la
+carica g2 affinché E nel punto (0, 2 cm, 0) non abbia
+componente y?
+
+4.12. Una linea carica con densità di carica uniforme p; = 4
+
+(&C/m) si trova sull'asse z tra z = 0 ez = 5 cm. Si calcoli
+il campo E nel punto (0, 10 cm, 0).
+
+*4.13 Della carica elettrica è distribuita lungo un arco posto nel
+
+piano x — y, definito dar = 2 cme 0 < ¢ < 7/4. Se
+pi = 5 (4C/im) si calcoli il campo E in (0, 0,2) e poi lo si
+valuti:
+
+(a) Nell’origine.
+(b) z=5cm
+(€) z=-5cm
+
+4.14 Una linea carica con densità uniforme p; si estende tra
+
+z3==—L/2 ez= L/2 sull'assez. Si applichi la legge di
+Coulomb per ottenere un'espressione del campo elettrico
+nel punto P(r, ¢, 0) del piano x — y. Si mostri che if
+risultato si riduce all'espressione data dalia (4.33) se la
+lunghezza Z della linea si estende all’infinito.
+
+*4.15 Si ripeta l’Esempio 4.5 per un disco carico di raggio r, ma
+
+nel caso presente si assuma che la densità di carica
+superficiale dipenda da r secondo
+
+Ps = pot? (Cim’)
+dove p.o è un parametro costante.
+
+4.16 Delle cariche poste in diversi punti dello spazio sono dette
+
+in equilibrio se la forza che agisce su ognuna di esse è
+identica in modulo e direzione alla forza che agisce su
+ognuna delie altre. Si supponga di considerare due cariche
+negative, una posta nell'origine e avente carica ~9¢ e
+l’altra posta sull’asse positivo delie x a distanza 4 dalla
+‘prima e con carica —36e. Si determini la posizione, la
+polarità e la carica di una terza carica il cui
+posizionamento pone l’intero sistema in equilibrio.
+
+[PAG 103]
+190 Capitolo 4 — Elettrostatica
+
+#4.17 Tre fili carichi aventi lunghezza infinita e paralleli all’asse
+
+‘ 2, sono posti nei tre angoli del rombo mostrato in Figura _
+4.29. Si verifichi che, se i due triangoli che risultano dalla
+disposizione delle cariche sono simmetrici e hanno i lati
+corrispondenti uguali, il campo elettrico nell'origine è
+nullo,
+
+4.18 Tre fili carichi infiniti, p,, = 5 (aC/m), p), = —5 (nC/m) e
+pt, = 5 (nC/m), sono paralleli all'asse z. Se i tre fili
+passano rispettivamente nei punti (0,4), (0,0) e (0,5)
+del piano x — y, si calcoli il campo elettrico nel punto
+(a, 0,0). Si valuti il risultato quando a=2cmeb=1
+cm.
+
+2201
+
+Pi Pi
+
+Figura 4.29 Disposizione dei tre fili carichi del Problema
+4.17. i
+
+4.19 Una striscia orizzontale che giace nel piano x — y ha
+‘ampiezza d in direzione y ed è infinitamente lunga nella
+direzione x, Se Ia striscia si trova in aria e possiede una
+ditribuzione di carica uniforme ps, si utilizzi la legge di
+Coulomb per ottenere un’espressione esplicita del campo
+elettrico nei punto P posto a distanza A sopra la linea
+mediana della striscia. Si estenda il risultato al caso
+particolare in cui d è infinito e lo si confronti con la
+(4.25).
+
+Paragrafo 4.4 Legge di Gauss
+
+4.20 Dato lo spostamento elettrico
+D = £2(x +y) +9(3x — 27) (Cm?)
+
+si determini
+(a) p, applicando la (4.26):
+(b) La carica totale Q in un cubo di lato 2 m, posto nel
+primo ottante con tre dei suoi lati che coincidono con gli
+assi x, y ez e uno dei suoi vertici coincidente con Porigine.
+(€) La carica totale Q nel cubo, ottenuta utilizzando la
+(4.29).
+
+#421 Si ripeta il Problema 4.20 per D = ix? (Cim?).
+
+4.22, Una carica Q, è uniformemente distribuita su un
+conduttore sferico cavo sottile di raggio a, e una carica O2
+su un secondo conduttore cavo di raggio b, dove b > a. Si
+applichi la legge di Gauss per determinare E nelle regioni
+R<aa<R<beR>b.
+
+*4.23 Lo spostamento elettrico dentro una sfera dielettrica di
+raggio a, centrata nell’origine è dato da
+
+D = RoR (Cim?)
+dove py è costante. Si calcoli ta carica totale dentro la
+sfera.
+
+4.24 In una certa regione dello spazio la densità di carica è data
+in coordinate cilindriche dalla funzione
+
+py = 20re” (Cin?)
+Si applichi la legge di Gauss per determinare D in tutte le
+regioni.
+
+*4,25 Un conduttore cilindrico cavo infinitamente lungo con
+raggio intemo ed esterno pai ar= 1 mer=3m
+rispettivamente, contiene una densità di carica uniforme
+pro. Applicando la legge di Gauss si determini il campo D
+in tutte le regioni.
+
+4.26 Se la densità di carica cresce linearmente con la distanza
+dall'origine in modo tale che p, = 0 nell’origine e
+ps = 10 (C/m) per R = 2 m, si calcoli la corrispondente
+variazione di D.
+
+Paragrafo 4.5 Potenziale elettrico
+
+4.27 Un quadrato posto nel piano x — y dello spazio libero ha
+cariche puntuali pari a + nel vertice (a/2,a/2) e
+(a/2, ~a/2) e cariche pari a —Q in ognuno degli altri due
+. vertici.
+(a) Si calcoli il potenziale elettrico in ogni punto P
+dell'asse x.
+(b) Si valuti V nel punto x = a/2.
+
+4.28 Il disco circolare di raggio a mostrato in Figura 4.7 ha una
+densità di carica uniforme ps sulla superficie.
+{a) Si ottenga un'espressione per il potenziale elettrico V
+nel generico punto P(0,0, 2) dell’asse z.
+(b) Si utilizzi il risultato per calcolare E e successivamente
+lo si valuti per z = A. Si confronti l’espressione finale
+ottenuta con la (4.24) che è stata ottenuta attraverso la
+legge di Coulomb.
+
+*4,29 Un anello circolare carico ha raggio a e si trova nel piano
+x — y con centro coincidente con l'origine. Si assuma
+inoitre che l'anello sia in aria e porti una densità di carica
+‘uniforme pi.
+
+{a) Si mostri che il potenziale elettrico nel punto {0, 0,2) è
+V= palle +2)"
+(b) Si calcoli il campo elettrico E corrispondente.
+
+4.30 Si mostri che la differenza di potenziale elettrico V2 tra
+due punti in aria a distanza radiale r; e r; da un filo carico
+infinito con densità di carica p; lungo z è paria
+Via = (p)/2n€0)in(r2/r1).
+
+*4.31 Si calcoli il potenziale elettrico V in un punto a distanza è
+dall'origine nel piano x — y, generato da un filo carico con
+densità di carica 9, e avente lunghezza /. Il filo è
+coincidente con l’asse ze si estende traz = —1/2 e
+2= 1/2.
+
+4.32 II dipolo elettrico mostrato in Figura 4.13 he d = 1 cme
+|E| = 2 (mV/m) per R= 1me@=0°. Si calcoli E per
+R=2me@=90°,
+
+@ 7
+
+30
+
+Figura 4.30 Distribuzione del potenziale elettrico per il
+Problema 4.33.
+
+4.33 Per ognuna delle distribuzioni di potenziale elettrico ¥
+mostrate in Figura 4.30, si disegni la corrispondente
+distribuzione di E {in tutti i casi Passe verticale è in volts e
+quello orizzontale in metri).
+
+Problemi 191
+
+4.34 Dato il campo elettrico
+E=R2 (Vim)
+
+si calcoli il potenziale elettrico del punto 4 rispetto al
+punto B, dove A è +2 me B —4 m, entrambi sull'asse z,
+
+*4.35 Un filo carico infinito con densità p; = 6 (nC/m) si trova
+nel piano x — y parallelo all'asse y in x = 2 ra. Si calcoli il
+potenziale Yz nei punto A(3 m, 0, 4 m) in coordinate
+Cartesiane rispetto al punto B(0, 0, 0) applicando il
+risultato del Problema 4.30,
+
+4.36 I piano x — y contiene una lastra carica uniforme con
+densità ps, = 0.2 (nC/m?). Una seconda lastra con
+ps, = —0.2 (nC/m?) giace nel piano z = 6 m. Si
+deteminino 745, Vac e Vac per A(0, 0, 6 m), B(O, 0, Oe
+CO, -2 m, -2 m).
+
+Paragrafo 4.7 Conduttori
+
+*4.37 Una barra cilindrica di silicio ha raggio 2 mm e lunghezza
+5 cm. Se una tensione di 5 V è applicata tra i capi della
+barra e fe = 0.13 (m?/V - 8), up = 0.05 (m2/V - 5),
+Ne = 1.5 x 10! elettroni/m? e N, = N, si determini:
+(a) La conducibilità del silicio.
+(b) La corrente / che scorre nella barra,
+(c) Le velocità di deriva u, e up.
+(d) La resistenza della barra.
+{€) La potenza dissipata nella barra.
+
+4.38 Si ripeta il Problema 4.37 per una barra di germanio con
+He = 0.4 (m/V - s), pa = 0.2 (m2/V + s)e
+Ne = Ny = 2.4 x 10° elettroni o lacune/m}.
+
+4.39 Un conduttore lungo 100 m e con sezione uniforme ha
+una caduta di tensione di 2 V tra le sue estremità. Se la
+densità di corrente che scorre è pari a 7 x 105 (A/m?), si
+identifichi il materiale del conduttore.
+
+4.40 Un resistore coassiale di lunghezza / è costituito da due
+cilindri concentrici. Il cilindro intemo ha raggio a ed è
+formato da un materiale con conducibilità 01, mentre il
+cilindro estemo che si estende tra r = a er = b è formato
+da un materiale con conducibilità 02. Se i capi del
+resistore sono ricoperti con piastre conduttrici, si mostri
+che la resistenza tra le due estremità è
+R=l/{r(010°+0,(0 — &))].
+
+‘ #4.41 Si applichi il risultato del Probiema 4.40 per determinare
+
+la resistenza di un cilindro cavo lungo 10 cm (Figura 4.31)
+fatto di carbone con conducibilità o = 3 x 10* (S/m).
+
+Figura 4.31 Sezione del cilindro cavo del Problema 4.41.
+
+[PAG 104]
+#
+
+fst
+
+192 Capitolo 4 - Elettrostatica
+
+_ 4.42 Una lastra quadrata spessa 2 x 107? mm di alluminio ha si 49
+superfici di 10 cin ‘x 10/cma. Si calcolî seni si
+(a) La resistenza tra lati opposti su una delle due superfici
+quadrate.
+(b) La resistenza tra le due superfici quadrate. (Si veda
+l'Appendice B per le costanti elettriche dei materiali.)
+
+Paragrafo 4.9 Condizioni al contorno 4.50
+
+*4.43 Con riferimento alla Figura 4.19, si calcoli E; se
+Ey = 83 ~ 92 + 24 (Vim), e = 2e0, €, = 1$e0 € il
+contorno ha una densità superficiale di carica
+ps = 7.08 x 107"! (C/m?). Quale angolo forma E, con
+l’asse 2?
+
+4,44 Un cilindro dielettrico infinitamente lungo cone, = 4
+definito dalla condizione r < 10 cm è circondato da un
+materiale con €, = 8. Se
+
+= fr sin $ + $37 cos ¢ + #3 (V/m) nella regione
+vrai si determinino E, e Dz nella regione che
+circonda il cilindro, Si assuma l’assenza di cariche libere
+lungo il contorno del cilindro.
+
+#4.45 Una sfera dielettrica con €y, = 3 è immersa in un mezzo
+con e, = 9, Se Ez = R3 cos @ — 93 sin (V/m) nella
+regione circostante, si calcoli E e D, nella sfera.
+
+446 Se B= R50 (V/m) sulla superficie di un conduttore sferico
+di 5 cm centrato nell'origine, qual è la carica totale Q sulla
+superficie della sfera? .
+
+*4.47 La Figura 4.32 mostra tre lastre piane dielettriche di
+‘uguale spessore ma con differenti costanti dielettriche. Se
+Ep in aria forma un angolo di 45° rispetto all’asse z, si
+determini l'angolo di E in ognuno degli altri strati.
+
+*4.51
+
+Figura 4.32 Lastre dielettriche del Problema 4.47.
+
+Paragrafi 4.10 e 4.11 Capacità ed energia
+elettrica
+
+4.48 Si determini la forza di attrazione in un-condensatore a
+piastre piane e parallele con A = 10 cm*, d = Lome
+€, = 4 se la tensione applicata è 50 V.
+
+La rottura dielettrica in un materiale avviene ogni volta
+
+«che il modulo del campo elettrico E; supera la forza
+
+dielettrica in un punto qualsiasi del materiale. Nel
+condensatore coassiale dell’Esempio 4.12,
+
+(a) Per quale valore di r |Z] è massimo?
+
+(b) Qual è la tensione di rottura sea = i cm, b=2cme
+il materiale dielettrico è mica cone, = 6?
+
+Un elettrone con carica O. = —1.6 x 107!9 C e massa
+me = 9.1 x 107! kg è iniettato in un punto prossimo alla
+piastra carica negativamente della regione interna di un
+condensatore a piastre piane e parallele (Figura 4.33). Le
+piastre sono separate di ] cm e hanno forma rettangolare
+con area 10 cm?. Il materiale dielettrico interposto è aria.
+Se la tensione applicata ai capi della capacità è 10 V, si
+determini:
+
+(a) La forza che agisce sull’elettrone.
+
+(b) L’accelerazione dell'elettrone.
+
+(©) Il tempo che impiega l’elettrone per raggiungere la
+piastra caricata positivamente, assumendo che parta dalla
+posizione di riposo.
+
+em
+na
+= Te:
+
+Vo=10V
+
+Figura 4.33 Elettrone tra le piastre cariche del Problema
+4.50.
+
+In un mezzo dielettrico con e,
+campo elettrico è
+
+E = (x? + 22) + fx? - î+2) (Vim)
+
+Si calcoli l'energia elettrostatica immagazzinata nella
+regione —l m<x <1 m,0<y <2m,0<x <3m
+
+= 4 l’espressione del
+
+La Figura 4.34(a) illustra un condensatore formato da due
+piastre conduttrici parallele separate da una distanza d. Lo
+spazio tra le due piastre contiene due dielettrici adiacenti,
+uno con permittività e, e superficie A; e l’altro con €2 €
+Az. Lo scopo di questo problema è dimostrare che la
+capacità C del sistema mostrato in Figura 4.34(a) è
+equivalente a due condensatori posti in parallelo, come
+illustrato in Figura 4.34(b), con
+
+C=C+G (4.132)
+dove
+ei
+= (4.133.
+(Gi 7 (4.133)
+= sla (4.134)
+
+|
+|
+
+A tal fine si proceda come segue:
+
+‘7 @) Si determinino i campi elettrici E; è Ey nei due strati
+dielettrici.
+(b) Si calcoli l'energia immagazzinata in ogni sezione e si
+utilizzi il risultato per calcolare Ci e C2.
+(©) Si utilizzi l’energia totale immagazzinata nel
+‘condensatore per ottenere un'espressione per C. Si mostri,
+quindi, che la (4.132) è un risultato valido.
+
+(a)
+|
+
+ci ron =v
+
+: (b)
+
+Figura 4.34 (a) Condensatore con due sezioni dielettriche
+parallele e (b) circuito equivalente.
+
+*4.53 Si sfrutti il risultato del Problema 4.52 per determinare la
+capacità per ciascuna delle seguenti configurazioni:
+(a) Le piastre conduttrici sono le superfici superiori e
+inferiori della struttura rettangolare in Figura 35(a).
+(b) Le piastre conduttrici sono le superfici anteriori e
+posteriori della struttura in Figura 4.352).
+(€) Le piastre conduttrici sono le superfici superiori e
+inferiori della struttura cilindrica in Figura 4.35(b).
+
+4.54 Il condensatore mostrato in Figura 4.36 consiste di due
+strati dielettrici paralleli. Si utilizzino considerazioni
+energetiche per mostrare che la capacità equivalente del
+‘condensatore complessivo, C, è equivalente alla serie delle
+capacità degli strati individuali, C e C2, cioè
+
+CG
+
+c=
+C+
+
+(4.135)
+dove
+
+A A
+G=am 3927 (4.182)
+
+Problemi 193
+
+&; = 8895 €23
+
+(b)
+
+460; &3 = 269
+
+Figura 4.35 Sezioni dielettriche per i Problemi 4.53 e 4.55.
+
+(a) Si assuma che 71 e V2 siano i potenziali elettrici ai
+capi del dielettrico superiore e inferiore, rispettivamente.
+Quali sono i campi elettrici corrispondenti? Applicando
+un’opportuna condizione al contorno all'interfaccia tra i
+due dielettrici, si ottengano espressioni esplicite per E1 €
+Ex in termini di €;, €2, V e le dimensioni del condensatore
+indicate in figura.
+
+(b) Si caicoli l'energia immagazzinata in ognuno degli
+strati. dielettrici e poi si utilizzi la.somma per ottenere
+un'espressione di C.
+
+(©) Si mostri che C è dato dalla ().
+
+[PAG 105]
+194 Capitolo 4 ~ Elettrostatica
+
+4.57 Due fili conduttori sopra un piano conduttore trasportano E C A Pp | T O L
+- Je correnti J, ¢ nelle direzioni mostrate in Figura 4.38. (°° ci . ì AT . .
+
+Ricordando che la direzione di una corrente è definita in >
+termini di movimento di cariche positive, quali sono le
+
+dizioni delle correnti immagini che corrispondono a fi € _ M a g n e tos ta tica |
+
+(a)
+Generalità
+7777] 4
+Ci + (a) (b) Il presente capitolo, relativo alla magnetostatica, ha una struttura che rispecchia quel-
+Il È, . la del precedente capitolo sull’elettrostatica: cariche stazionarie generano campi elet-
+dA 7 Figura 4.38 Corrente sopra un piano conduttore (Problema trici statici, e analogamente correnti continue, cioè non tempo-varianti, generano
++97). . campi magnetici statici. Per 0/t = 0 i campi magnetici esistenti in un mezzo con
+permeabilità magnetica j soddisfano la seconda coppia di equazioni di Maxwell, da-
+te dalla (4.3a) e dalla (4.3b):
+© 4.58 Si utilizzi il metodo delle immagini per calcolare la
+Figura 4.36 (a) Condensatore con strati dielettrici paralleli capacità per unità di lunghezza di un cilindro conduttore V.B=0, (5.la)
+e(b) circuito equivalente (Problema 4.54). infinitamente lungo di raggio a e situato a distanza d da ‘ _
+un piano conduttore, parallelo al cilindro, come mostrato VxH=J, (5.1b)
+in Figura 4.39.
+
+dove J è la densità di corrente. L’induzione magnetica, anche detta densità di flusso
+' magnetico, B e l’intensità di campo magnetico H sono legate dalla
+
+B= pH. (5.2)
+
+Quando nel Capitolo 4 si sono studiati i campi elettrici in un mezzo dielettrico, si è
+visto che la relazione B = eK è valida solo per mezzi lineari e isotropi. Queste pro-
+prietà, verificate per la maggior parte dei materiali, consentono di trattare la permitti-
+vità e come una grandezza scalare costante, indipendente sia dal modulo che dalla di-
+rezione di E. Ciò è vero in una certa misura anche per la relazione data dalla (5.2):
+
+4.55 Si utilizzi l’espressione data nel Problema 4.54 per
+determinare la capacità per le configurazioni mostrate in
+Figura 4.35(a) quando le piastre conduttrici sono poste
+» sulle superfici destra e sinistra della struttura.
+
+si
+
+Paragrafi 4.12 Metodo delle immagini
+
+4.56 Con riferimento alla Figura 4.37, la carica Q è posta a una
+distanza d sopra a un semipiano posto a terra, che si trova
+nel piano x — y a una distanza d da un altro semipiano
+
+n
+
+pa
+
+posto a terra nel piano x — 2. Si utilizzi il metodo delle Figura 4.39 Cilindro conduttore sopra un piano conduttore eccettuati i materiali fercomagnetici, per i quali la relazione tra B e H è non lineare, la
+immagini per (Problema 4.58). i maggior parte dei materiali è caratterizzata da permeabilità magnetica costante.
+(a) Determinare le ampiezze, le polarità e le posizioni
+
+delle immagini della carica Q rispetto a ognuno dei due Tabella 5.1 Caratteristiche dell'elettrostatica e della magnetostatica.
+
+piani a terra (come se ognuno fosse infinito). Caratteristica Elettrostatica Magnetostatica
+
+(©) Calcolare il potenziale elettrico e il campo elettrico in
+
+un punto arbitrario P(0,y,2). i possi Cariche stazionerio Comenti azionare
+z Parametri costitutivi ceo #
+5 Equazioni caratteristiche
+“ ® Forma differenziale V.B=0
+*P0.y, 2) : VxH=d
++ Forma integrale B-ds=0
+Si
+H-dt=/
+. iC
+t Potenziale Vettore A, con
+B=VxA
+Densità di energia Wm = dub?
+. . Lu co. Forza agente sulla carica q Fn= B
+Figura 4.37 Carica Q in prossimità di due semipiani Elementi circuîtali associati " a ì
+
+conduttori, perpendicolari e posti a terra.
+
+[PAG 106]
+196
+
+Figura 5.1
+
+La direzione della forza
+magnetica che agisce su
+una particella carica in
+movimento attraverso un
+campo magnetico (a) è
+perpendicolare sia a B che
+aue(b) dipende dalla
+polarità positiva o
+negativa della carica.
+
+Capitolo 5 ~ Magnetostatica
+
+Inoltre, u = o per la maggior parte dei dielettrici e dei metalli, esclusi i materiali
+
+— ferromagnetici. Lo scopo di questo capitolo é-di sviluppare la comprensione delle re-. - -
+
+lazioni tra le correnti stazionarie e i campi magnetici B e H per diversi tipi di distribu-
+zioni di corrente e in diversi tipi di mezzi, introducendo alcune grandezze collegate,
+come il potenziale vettore magnetico A, la densità di energia magnetica wn € Vindut-
+tanza di un conduttore L. Il parallelo tra queste grandezze magnetostatiche e le corri-
+spondenti elettrostatiche è riassunto.in Tabella 5.1.
+
+5.1 Forze e coppie magnetiche
+
+Il campo elettrico E in un punto dello spazio è stato definito come la forza elettrica
+F. per unità di carica che agisce su una carica di prova posizionata in quel punto. In
+maniera analoga si definisce l’induzione magnetica B in un punto delio spazio in fun-
+zione della forza magnetica Fn che una particella carica in movimento con velocità u
+subirebbe se transitasse in quel punto. Basaridosi su esperimenti compiuti per deter-
+minare gli spostamenti delle particelle cariche in moto attraverso un campo magneti-
+co, si è stabilito che la forza magnetica F,, che agisce su una particella di carica g si
+può scrivere nella forma
+
+Fn=quxB (N). (5.3)
+
+Di conseguenza, B si misura in N/(C-m/s), corrispondenti all’unità di misura tesla
+(7) det SL Per una particella caricata positivamente, la direzione di Fn è quella del
+prodotto vettoriale u x B, che è perpendicolare al piano che contiene u e B e soddi-
+sfa la regola della mano destra. Se g è negativa, la direzione di Fm è invertita, come
+descritto in Figura 5.1, Il modulo di Fm è dato da
+
+Fm = quB sin 6, (5.4)
+
+dove 9 è l’angolo tra u e B. Si noti che Fn è massimo quando u è perpendicolare a B
+(6 = 90°), mentre è zero quando u è parallelo a B (9=00 180°). .
+
+Se una particella carica subisce l’azione sia di un campo elettrico E che di un cam-
+po magnetico H, la forza elettromagnetica complessiva che agisce su di essa è
+
+F=F.+Fn=gE+quxB=g(E+uxB). (5.5) |
+
+5.1 Forze e coppie magnetiche
+
+La forza espressa dalla (5.5) è nota come Forza di Lorentz. Le forze elettriche e le
+
+forze magnetiche manifestario-alcune-impertanti-differenze: ---- - -
+
+1. Mentre la forza elettrica è sempre diretta parallelamente al campo elettrico, la for-
+za magnetica è sempre perpendicolare al campo magnetico; .
+
+2. Mentre la forza elettrica agisce su particelle cariche sia stazionarie che in moto, la
+forza magnetica agisce solo se sono in moto;
+
+3. Mentre la forza eletirica dissipa energia nello spostare una particella carica, la for-
+za magnetica non compie alcun lavoro quando la particella viene spostata.
+
+L’ultimo punto richiede un approfondimento: dal momento che la forza magnetica
+Fn è sempre perpendicolare a u, si ha che Fn-u= 0. Dunque il lavoro compiuto
+quando la particella viene spostata di una distanza differenziale di = ud? è pari a
+
+dW =Fn:d= (Fn 'wWde=0. (5.6)
+Dal momento che non viene compiuto alcun lavoro, il campo magnetico non può mo-
+dificare l’energia cinetica di una patticella carica: i! campo magnetico può cambiare
+la direzione lungo cui si muove una particella carica, ma non puo cambiare la sua
+velocità.
+
+Esercizio 5.1 Un elettrone in moto in direzione delle x positive, perpendicolarmente a
+un campo magnetico, subisce una deflessione in direzione delle z negative. In che dire-
+zione è rivolto ii campo magnetico?
+
+SoLuzione In direzione delle y positive.
+
+Esercizio 5.2 Un protone in moto con velocità pari a 2 x 10° m/s attraverso un campo
+magnetico con induzione magnetica pari a 2.5 T subisce una forza magnetica di modulo
+pari a 4 x 107! N. Qual è l’angolo tra il campo magnetico e il vettore velocità del proto-
+ne?
+
+Sotuzione @ = 30° oppure 150°.
+
+£sercizio 5,3 Una particella carica si muove con velocità u attraverso un mezzo in cui
+
+esistono dei campi uniformi E = £E e B = #2. Quali caratteristiche deve avere u affin-”
+
+ché la particella non subisca alcuna forza netta?
+
+SOLUZIONE u = 2£/8, inoltre u può avere un componente arbitrario uy rivolto lungo y.
+
+5.1.1. Forza magnetica agente su un conduttore percorso
+da corrente
+
+La corrente che fluisce attraverso un filo conduttore è formata da particelle cariche che
+scorrono attraverso il materiale che costituisce il filo. Di conseguenza, quando un filo
+percorso da corrente è immerso in un campo magnetico, subirà una forza pari alla som-
+ma di tutte le forze magnetiche che agiscono sulle particelle cariche che si muovono
+all’interno di esso. Si consideri per esempio l’esperimento descritto in Figura 5.2, nel
+quale un filo verticale orientato in direzione z è immerso in un’induzione magnetica B
+prodotta da un magnete e orientata in direzione — x, cioè a entrare nella pagina. Se nel
+filo non passa corrente, F,, = 0 e il filo mantiene la sua orientazione verticale, come
+mostrato in Figura 5.2(a), ma quando si introduce una corrente nel filo, esso si flette
+verso sinistra in direzione —¥ se la corrente è rivolta verso l’alto in direzione +%, men-
+tre si flette verso destra in direzione +$ se 1a corrente è rivoltaverso il basso in direzio-
+ne — È. La direzione di flessione soddisfa il prodotto vettoriale dato dalla (5.3).
+
+197
+
+[PAG 107]
+198
+
+Figura 5.2
+
+Un filo verticale
+leggermente flessibile
+immerso in un campo
+magnetico rivolto a
+entrare nella pagina
+(condizione indicata dalle
+crocette), (a) non flette
+quando la corrente che lo
+attraversa è zero, (b) flette
+a sinistra quando / è
+rivolta verso l’alto e (c)
+flette a destra quando J è
+rivolta verso il basso.
+
+Capitolo 5 ~ Magnetostatica
+
+(a) ) ©
+
+Per quantificare la relazione tra Fn e la corrente / che scorre nel filo, si consideri un
+breve segmento di filo con sezione trasversa di area 4, lunghezza differenziale dl e
+con la direzione di dì rivolta nella direzione di scorrimento della corrente. Senza per-
+dita di generalità si può ipotizzare che i portatori di carica che formano la corrente I
+siano solo elettroni, il che è sempre un’ipotesi valida per un buon conduttore. Se il fi-
+lo contiene elettroni liberi con densità di carica pari a pv = —Nee, dove N è il nume-
+ro di elettroni in moto per unità di volume, allora la quantità complessiva di carica in
+movimento contenuta in un elemento infinitesimo di volume del filo è
+
+dQ = p,-Adl = —N,eAdl, (5.7)
+
+ela corrispondente forza magnetica agente su dQ in presenza di un’induzione B è
+dE, = dQu, x B= —N,eAdlue x B, (5.8a)
+dove u, è la velocità di scorrimento degli elettroni. Dal momento che la direzione
+della corrente è definita dalla direzione di scorrimento delle cariche positive, la velo-
+
+cità di scorrimento degli elettroni u, è parallela a dl, ma rivolta in direzione opposta.
+Pertanto dlu, = —dlu e la (5.8a) diviene
+
+dE, = NeeAuedl x B. (5.8b)
+
+Applicando la (4.11) e la (4.12), la corrente J che fluisce attraverso la sezione di area
+
+A, dovuta a elettroni presenti con densità py = —Nee e in movimento con velocità
+
+—ue, è pari al = pye(—ue)A = (-Me)(-u)A= NeeAue. Dunque la (5.8b) si può ri-
+scrivere in forma compatta come
+
+dFn=IMAxB N. (5.9)
+
+Per un contorno chiuso C in cui fluisce una corrente /, la forza magnetica complessi
+vaù
+
+Fn=/f Ax N. (5.10)
+Cc
+
+La (5.10) sarà ora applicata a due casi particolari.
+
+Circuito chiuso in un campo uniforme B
+Si consideri un filo chiuso che porta una corrente J ed è immerso in un campo ester-
+
+* no uniforme B, come descritto in Figura 5.3(a). Dato che B è costante, si può portare
+
+fuori dall’integrale nella (5.10), nel qual caso si ha
+
+r=1(fa) xB=0. (5.41)
+
+5.1 Forze e coppie magnetiche
+
+(0)
+
+Questo risultato, dovuto al fatto che la somma dei vettori spostamento di su un per-
+corso chiuso è uguale a zero, dimostra che /a forza magnetica complessiva su una
+qualsiasi spira di corrente chiusa immersa in un campo magnetico uniforme é zero.
+
+Filo curvo in un campo uniforme B
+
+Se si è interessati alla forza magnetica agente su un segmento di filo come quello mo-
+
+strato in Figura 5.3(b) quando è immerso in un campo uniforme B, applicando la
+(5.10) si ottiene
+
+6
+Fa =1([ a) xB=/£xB, (5.12)
+a
+dove £ è il vettore diretto da a a b, come descritto in Figura 5.3(b). L’integrale da aa
+è di dl ha lo stesso valore a prescindere dal cammino percorso per andare da a a 5. In
+
+una spira chiusa i punti a e è coincidono, nel qual caso f = 0e Fy = 0.
+
+Esempio 5.1 Forza agente su un conduttore semicircolare
+
+Il conduttore semicircolare descritto in Figura 5.4 giace nel piano x-y ed è percorso da
+una corrente /. Il circuito chiuso è immerso in un campo uniforme B = 785. Si determi-
+ni @ la forza magnetica F; agente sulla sezione rettilinea del filo e (b) la forza Fo sulla
+sezione curva.
+
+199
+
+Figura 5.3
+
+In un campo magnetico ©
+‘uniforme, (a) la forza netta
+agente su una spira chiusa
+percorsa da corrente è zero
+in quanto l’integrale del
+vettore spostamento dl su
+un contorno chiuso è zero
+e (b) la forza agente su un
+segmento linearé è
+proporzionale al vettore
+che congiunge gli estremi
+(En=/0x B).
+
+[PAG 108]
+200 Capitolo 5 — Magnetostatica
+
+Figura 5.4 Conduttore semicircolare in un campo uniforme (Esempio 5.1).
+
+Soluzione (a) La sezione rettilinea del circuito ha lunghezza 2r e la corrente che
+scorre su di essa è rivolta in direzione delle x positive. Applicando la (5.12) con
+L = X2r si ottiene
+
+Fi = $(2/r) x $Bo = &2IrBo (N).
+
+(b) Si consideri un segmento di lunghezza differenziale dl appartenente alla parte curva
+del circuito: la direzione di dl è scelta in modo da coincidere con la direzione di scorri-
+mento della corrente. Dal momento che sia di che B giacciono sul piano x-y, il loro pro-
+dotto vettoriale dl x B punta in direzione delle z negative e il modulo di dl x B è pro-
+porzionale a sin $, dove ¢ è l’angolo compreso tra d1 e B. Inoltre, il modulo di dl è
+di = rdò. Dunque
+*
+Fn =] ax B
+$20"
+
+7
+= [ rBy sin odd = -22lrBy . (N).
+'$=0
+
+Si noti che F, = —-F1 e di conseguenza la forza netta sulla spira chiusa è pari a zero.
+
+Esercizio 5.4 Un filo orizzontale la cui massa per unità di lunghezza è 0.2 kg/m è per-
+corso da una corrente di 4 A rivolta in direzione delle x positive. Se il filo è immerso in
+un’induzione magnetica uniforme B, quali devono essere la direzione e il minimo modu-
+lo di B necessari per sollevare magneticamente il filo verticalmente verso l’alto?
+(Suggerimento: l'accelerazione di gravità è g = —29.8 m/s?)
+
+SoLuzione B = 90.49 T.
+
+Domande di verifica
+
+5.1 Quali sono le differenze principali tra il comportamento della forza elettrica F. e
+il comportamento della forza magnetica Fx?
+
+5, 2 Le estremità di un filo lungo 10 cm che trasporta una corrente costante J sono fis-
+sate a due punti sull’asse x, x = 0 ex = 6 cm. Se il filo giace sul piano x-y ed è
+immerso in un campo B = $8p, si dica quale delle seguenti forme produce sul fi-
+lo la-forza magnetica maggiore: (a) il filo è a forma di V con gli angoli in (0, 0),
+(3, 4) e (6, 0), (b) il filo ha la forma di un rettangolo aperto con gli angoli in (0,
+0), (0, 2), (6, 2) e (6, 0).
+
+i
+i
+4
+—— ZZ::;:;ZI. ii.‘ u_r_r_’_rr rr 1———— __  __ _ _ uo —e»—_>»» om_eeeeeoeoedmd_oeo_oeoeeemtnk1nnhhi
+
+5. Forze e coppie magnetiche
+
+5.1.2 Coppia? magnetica agente su una spira percorsa ( da corrente
+
+reagisce ruotando attorno a quell’asse. L’intensità della reazione dipende dal prodot-
+to vettoriale tra il vettore forza applicata F e il vettore distanza d, che è misurata par-
+tendo da un punto sull’asse di rotazione, in modo che d sia perpendicolare all’asse,
+verso il punto di applicazione di F, come descritto in Figura 5.5. La lunghezza d è
+detta braccio e il prodotto vettoriale è detto coppia:
+
+T=dxF (N-m). (5.13)
+
+L’unità di misura del vettore T è la.stessa del lavoro e dell’energia, ma la coppia non
+rappresenta lavoro o energia. La forza F applicata al disco mostrato in Figura 5.5 gia-
+ce sul piano x-y e forma un angolo @ con d. Dunque
+
+T= èF sin0, (5.14)
