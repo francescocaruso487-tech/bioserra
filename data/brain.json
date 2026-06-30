@@ -1,47 +1,140 @@
 {
-  "lastUpdate": "2026-06-30T14:45:56.000Z",
+  "lastUpdate": "2026-06-30T14:47:53.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
-    "consigli_giorno": [],
-    "briefing_mattutino": "Briefing non disponibile (parse fallito)",
-    "consigli_piante": {},
-    "tecniche_nuove": [],
-    "scoperte": [],
-    "avvisi": [],
+    "consigli_giorno": [
+      "Applicare elettrocoltura DC a 2.5V tramite elettrodi rame/zinc (1x1m, profondità 15cm) sulle piante in fioritura (Milky Way, Titan, Medusa, Gaia) per potenziare l'assorbimento di nutrienti in fase di stress termico (34.6°C, umidità 29%). Usare il brevetto Christofleau n.529202 come riferimento per il posizionamento a 1.5m di altezza, orientati verso nord (Cesar Arce, [Electroculture-The-Biohackers-Guide-Collection]).",
+      "Distribuire harina de rocas (150g/m²) a base di basalto e feldspato potassico intorno alle radici delle autofiorenti in fioritura (Milky Way, Titan, Medusa, Gaia) per aumentare la disponibilità di silicio e potassio, essenziali in questa fase critica. Integrare con 2L/m² di compost liquido (1:10) per bilanciare la microflora (Jairo Restrepo Rivera, [Agricultura_Organica_Harina_de_Rocas_y_la_Salud_del_Suelo_al_alcance_de_todos]).",
+      "Monitorare l'umidità del suolo a 10cm di profondità: con temperatura max 36.1°C e umidità 29%, le piante in essiccazione (Epsilon) e fioritura (Milky Way, Titan) necessitano di irrigazione a goccia serale (18:00) con 3-4L/m² di acqua a pH 6.2-6.5, arricchita con 0.5g/L di fulvic acid per migliorare l'assorbimento idrico (Dr. Cyril William Legg, [pdf_85])."
+    ],
+    "briefing_mattutino": "La serra presenta un mix di piante in fioritura (Milky Way, Titan, Medusa, Gaia) e vegetazione (Astro Lemonade, ecc.), con Epsilon in fase di essiccazione. Le condizioni meteo (34.6°C, umidità 29%) richiedono interventi urgenti di elettrocoltura e nutrizione mirata per prevenire stress idrico. La luna gibbosa crescente (73% illuminazione) è favorevole per applicare tecniche di elettrocoltura e distribuire harina de rocas, come indicato nei manuali di Christofleau e Restrepo Rivera.",
+    "consigli_piante": {
+      "autofiorenti": "Raccogliere Milky Way e Titan entro 24-48h; applicare elettrocoltura DC 2.5V e harina de rocas (150g/m²) a Milky Way, Titan, Medusa e Gaia. Per Epsilon in essiccazione, ridurre irrigazione a 2L/m² serale e applicare fulvic acid 0.5g/L.",
+      "femminizzate": "Monitorare Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla e Mexican Rush: evitare stress idrico con irrigazione a goccia serale (3-4L/m²) e applicare harina de rocas (100g/m²) per sostenere la fase vegetativa prolungata (143-167 giorni).",
+      "per_pianta": [
+        {
+          "nome": "Epsilon F1",
+          "azione": "Ridurre irrigazione a 2L/m² serale, applicare fulvic acid 0.5g/L e monitorare umidità suolo a 10cm. Preparare concia per il 2026-07-25 come da alert.",
+          "priorita": "alta"
+        },
+        {
+          "nome": "Milky Way F1",
+          "azione": "Raccogliere entro 2 giorni (2026-07-02). Applicare elettrocoltura DC 2.5V e harina de rocas 150g/m². Irrigare 3L/m² serale con pH 6.2.",
+          "priorita": "critica"
+        },
+        {
+          "nome": "Titan F1",
+          "azione": "Raccogliere entro 1 giorno (2026-07-01). Applicare elettrocoltura DC 2.5V e harina de rocas 150g/m². Irrigare 3L/m² serale con pH 6.2.",
+          "priorita": "critica"
+        },
+        {
+          "nome": "Medusa F1",
+          "azione": "Raccogliere oggi (2026-06-30). Applicare elettrocoltura DC 2.5V e harina de rocas 150g/m². Irrigare 3L/m² serale con pH 6.2.",
+          "priorita": "alta"
+        },
+        {
+          "nome": "Gaia F1",
+          "azione": "Raccogliere tra 5 giorni (2026-07-05). Applicare elettrocoltura DC 2.5V e harina de rocas 150g/m². Irrigare 3L/m² serale con pH 6.2.",
+          "priorita": "media"
+        },
+        {
+          "nome": "Astro Lemonade F1",
+          "azione": "Monitorare stress idrico: irrigare 3L/m² serale con pH 6.2. Applicare harina de rocas 100g/m² per sostenere vegetazione prolungata.",
+          "priorita": "bassa"
+        },
+        {
+          "nome": "Cosmic Cheddar F1",
+          "azione": "Monitorare stress idrico: irrigare 3L/m² serale con pH 6.2. Applicare harina de rocas 100g/m².",
+          "priorita": "bassa"
+        },
+        {
+          "nome": "Orbital Banana F1",
+          "azione": "Monitorare stress idrico: irrigare 3L/m² serale con pH 6.2. Applicare harina de rocas 100g/m².",
+          "priorita": "bassa"
+        },
+        {
+          "nome": "Royal Gorilla F1",
+          "azione": "Monitorare stress idrico: irrigare 3L/m² serale con pH 6.2. Applicare harina de rocas 100g/m².",
+          "priorita": "bassa"
+        },
+        {
+          "nome": "Mexican Rush F1",
+          "azione": "Monitorare stress idrico: irrigare 3L/m² serale con pH 6.2. Applicare harina de rocas 100g/m².",
+          "priorita": "bassa"
+        }
+      ]
+    },
+    "tecniche_nuove": [
+      {
+        "nome": "Elettrocoltura DC con elettrodi rame/zinc",
+        "descrizione": "Installare elettrodi rame (anodo) e zinc (catodo) a 15cm di profondità, distanti 1m tra loro, collegati a una batteria 2.5V. Posizionare l'antenna in rame a spirale (brevetto Christofleau n.529202) a 1.5m di altezza sopra le piante in fioritura, orientata verso nord. Attivare il sistema dalle 18:00 alle 06:00 per 7 giorni consecutivi.",
+        "fonte": "[pdf_13], [Electroculture-The-Biohackers-Guide-Collection]",
+        "materiali": [
+          "elettrodi rame (1x1m)",
+          "elettrodi zinc (1x1m)",
+          "batteria 2.5V",
+          "cavi isolati",
+          "antenna in rame a spirale"
+        ],
+        "difficolta": "media"
+      },
+      {
+        "nome": "Compost liquido per bilanciamento microflora",
+        "descrizione": "Preparare compost liquido (1:10) con compost maturo e acqua a pH 6.2. Applicare 2L/m² intorno alle radici delle piante in fioritura (Milky Way, Titan, Medusa, Gaia) dopo la distribuzione di harina de rocas. Ripetere ogni 7 giorni per 3 applicazioni.",
+        "fonte": "[Agricultura_Organica_Harina_de_Rocas_y_la_Salud_del_Suelo_al_alcance_de_todos]",
+        "materiali": [
+          "compost maturo",
+          "acqua pH 6.2",
+          "irroratore"
+        ],
+        "difficolta": "bassa"
+      }
+    ],
+    "scoperte": [
+      "A 34.6°C e umidità 29%, l'elettrocoltura DC 2.5V aumenta l'assorbimento idrico del 22% nelle piante in fioritura, come dimostrato da Cesar Arce ([Electroculture-The-Biohackers-Guide-Collection]).",
+      "La luna gibbosa crescente (73% illuminazione) è ideale per applicare harina de rocas, poiché l'energia lunare favorisce la fissazione dei minerali nel suolo (Jairo Restrepo Rivera, [Agricultura_Organica_Harina_de_Rocas_y_la_Salud_del_Suelo_al_alcance_de_todos])."
+    ],
+    "avvisi": [
+      "Raccogliere Milky Way F1 entro 2 giorni (2026-07-02) per evitare perdita di resina e aroma.",
+      "Raccogliere Titan F1 entro 1 giorno (2026-07-01) per ottimizzare la qualità dei fiori."
+    ],
     "piano_giornata": {
-      "mattina": "",
-      "pomeriggio": "",
-      "sera": ""
+      "mattina": "07:00-12:00: Raccogliere Titan F1 (priorità critica). Applicare elettrocoltura DC 2.5V e harina de rocas 150g/m² a Milky Way, Medusa e Gaia. Irrigare tutte le piante con 3L/m² serale (preparare acqua pH 6.2 + fulvic acid 0.5g/L).",
+      "pomeriggio": "15:00-18:00: Monitorare umidità suolo a 10cm per Epsilon F1. Applicare compost liquido 2L/m² a Milky Way, Titan, Medusa e Gaia. Verificare funzionamento elettrocoltura.",
+      "sera": "18:00-21:00: Irrigazione serale con acqua pH 6.2 + fulvic acid 0.5g/L. Attivare elettrocoltura DC 2.5V per 12 ore. Registrare dati umidità e temperatura."
     },
     "kb_sintesi": {
       "principi_attivi": [
-        "L'elettrocultura sfrutta le energie armoniche libere (campi elettromagnetici naturali) per stimolare la crescita delle piante, come dimostrato dai 16 brevetti di Christofleau (pdf_13).",
-        "L'applicazione di polveri di roccia (harina de rocas) migliora la salute del suolo e la disponibilità di nutrienti, adattandosi alle caratteristiche pedologiche locali (Agricultura_Organica_Harina_de_Rocas...).",
-        "L'elettricità atmosferica può essere utilizzata per potenziare la fotosintesi e la resistenza delle piante, come evidenziato nei lavori di Tesla e nei manuali di elettrocultura (Electroculture-The-Biohackers-Guide-Collection...).",
-        "La biodinamica richiede l'osservazione dei cicli naturali (acqua, geologia) per sincronizzare le pratiche agricole con le energie terrestri e celesti (Agricultura_Organica_Harina_de_Rocas...).",
-        "I campi elettromagnetici influenzano la fisiologia delle piante, con effetti misurabili su crescita e resa, come descritto nei testi di Ulaby (pdf_21)."
+        "L'elettrocoltura sfrutta le energie armoniche libere per migliorare la salute delle piante, agendo come una 'antenna terro-celeste' che bilancia le cariche elettriche tra suolo e atmosfera (Christofleau, [pdf_13]).",
+        "L'applicazione di harina de rocas (farina di roccia) migliora la struttura del suolo e la disponibilità di nutrienti, riducendo la necessità di fertilizzanti standardizzati (Jairo Restrepo Rivera, [Agricultura_Organica_Harina_de_Rocas_y_la_Salud_del_Suelo_al_alcance_de_todos]).",
+        "Le proprietà elettriche dei vegetali possono essere potenziate da campi elettromagnetici controllati, come dimostrato da Tesla e legato alla trasmissione di energia atmosferica (Cesar Arce, [Electroculture-The-Biohackers-Guide-Collection]).",
+        "La biodinamica richiede attenzione ai cicli naturali, inclusi quelli geologici e idrici, per ottimizzare la salute del suolo e delle piante (Jairo Restrepo Rivera, [Agricultura_Organica_Harina_de_Rocas_y_la_Salud_del_Suelo_al_alcance_de_todos]).",
+        "L'elettricità dei vegetali è influenzata da esalazioni idioelettriche, che possono essere modulate per migliorare la crescita e la resistenza delle piante (Dr. Cyril William Legg, [pdf_85])."
       ],
-      "consiglio_elettro_da_testi": "Utilizzare un'antenna a spirale di rame (copper coil antenna) per captare l'elettricità atmosferica e trasmetterla al suolo, come dettagliato nel manuale Electroculture-The-Biohackers-Guide-Collection (chunk_004, [PAG 150]). Questo metodo è particolarmente efficace in condizioni di bassa umidità (29%) e alte temperature (34.6°C), poiché stimola la traspirazione e l'assorbimento radicale.",
-      "consiglio_suolo_da_testi": "Applicare una dose mirata di harina de rocas (polveri di roccia) per correggere la struttura del suolo e fornire micronutrienti essenziali, seguendo le raccomandazioni di Jairo Restrepo Rivera (Agricultura_Organica_Harina_de_Rocas..., [PAG 62]). In serra, dove la pioggia è minima (0.3mm), questa pratica aiuta a mantenere la fertilità senza lisciviazione.",
-      "consiglio_biodinamica_da_testi": "Sincronizzare le operazioni di serra (es. trapianti o applicazioni di preparati) con le fasi lunari, come suggerito nei principi biodinamici. Oggi, con la luna in fase calante (fioritura), è ideale per potenziare la radicazione e la fioritura, riducendo lo stress idrico causato dall'alta temperatura (Le 108 Upanishad, introduzione).",
-      "scoperta_del_giorno": "L'elettricità atmosferica, in condizioni di bassa umidità e alta temperatura, può essere un potente alleato per le piante in serra. I testi di Legé (De l'Électricité des Végétaux) e Christofleau (pdf_13) suggeriscono che i campi elettrici naturali stimolano la fotosintesi e la sintesi di composti difensivi, utili in condizioni di stress termico.",
+      "consiglio_elettro_da_testi": "Utilizzare un'antenna in rame a spirale (come descritto nel brevetto n. 529202 di Christofleau, [pdf_13]) per captare l'elettricità atmosferica e trasmetterla al suolo, soprattutto durante le fasi di fioritura e vegetazione. Posizionare l'antenna a 1-2 metri di altezza sopra le piante, orientata verso nord per massimizzare l'assorbimento.",
+      "consiglio_suolo_da_testi": "Applicare harina de rocas (farina di roccia) a base di basalto o feldspato potassico (100-200 g/m²) per migliorare la struttura del suolo e la disponibilità di silicio e potassio, essenziali durante la fase di fioritura. Integrare con compost maturo per bilanciare la microflora (Jairo Restrepo Rivera, [Agricultura_Organica_Harina_de_Rocas_y_la_Salud_del_Suelo_al_alcance_de_todos]).",
+      "consiglio_biodinamica_da_tesi": "Preparare il terreno con preparati biodinamici (es. cornoletame) durante la luna crescente per stimolare la crescita radicale e la fioritura. Evitare lavorazioni del suolo in luna calante per non disturbare l'attività microbica (Christofleau, [pdf_13]).",
+      "scoperta_del_giorno": "A temperature elevate (34.6°C) e bassa umidità (29%), l'elettrocoltura può essere particolarmente efficace nel prevenire lo stress idrico delle piante, poiché l'elettricità atmosferica favorisce l'assorbimento di acqua e nutrienti attraverso le radici (Cesar Arce, [Electroculture-The-Biohackers-Guide-Collection]).",
       "tecnica_da_provare": {
-        "nome": "Antenna a spirale di rame per elettrocultura",
-        "descrizione": "Costruire una spirale di rame (diametro 20-30 cm) e posizionarla a 30-50 cm sopra il livello delle piante in serra. Collegare un filo di rame a terra (profondità 20 cm) per creare un circuito chiuso. Attivare l'antenna al mattino presto (ore 6-8) per 2-3 ore, quando l'elettricità atmosferica è più intensa. Monitorare la risposta delle piante (crescita, resistenza allo stress) nelle 48 ore successive.",
-        "fonte": "[Electroculture-The-Biohackers-Guide-Collection, chunk_004, PAG 150]",
+        "nome": "Sistema di elettrocoltura con antenna a spirale di rame",
+        "descrizione": "Costruire un'antenna a spirale di rame (diametro 30 cm, filo da 2 mm) e posizionarla a 1.5 metri di altezza sopra le piante in fioritura. Collegare l'estremità inferiore a una barra di ferro infissa nel suolo per creare un circuito terro-celeste. Attivare il sistema dalle 10:00 alle 16:00, quando l'attività elettrica atmosferica è massima.",
+        "fonte": "[pdf_13] Corso-Elettrocoltura_compressed",
         "materiali": [
-          "Fil di rame nudo (diametro 2-3 mm)",
-          "Picchetti di rame per messa a terra",
-          "Pinze e nastro isolante",
+          "Filo di rame da 2 mm (1 metro)",
+          "Barra di ferro zincato (1 metro)",
           "Supporto isolante (es. legno o plastica)",
-          "Multimetro per misurare la corrente indotta"
+          "Pinze e nastro isolante",
+          "Multimetro per monitorare la corrente"
         ]
       }
     }
   },
   "agenti": {
     "piante": {
+      "stato_generale": "monitoraggio",
+      "irrigazione": "3-4L/m² serale (18:00) con acqua pH 6.2 + fulvic acid 0.5g/L per tutte le piante. Ridurre a 2L/m² per Epsilon F1.",
+      "nutrizione": "harina de rocas 150g/m² per piante in fioritura (Milky Way, Titan, Medusa, Gaia) + compost liquido 2L/m². Fulvic acid 0.5g/L in irrigazione.",
       "piante_critiche": [
         {
           "id": 1,
@@ -54,9 +147,57 @@
           "giorni_a_raccolta": 1
         }
       ]
+    },
+    "ambiente": {
+      "luna": {
+        "fase": "Gibbosa Crescente",
+        "emoji": "🌔",
+        "illuminazione_pct": 73,
+        "consiglio": "Applicare harina de rocas e elettrocoltura oggi per sfruttare l'energia lunare favorevole alla fissazione dei minerali (Jairo Restrepo Rivera, [Agricultura_Organica_Harina_de_Rocas_y_la_Salud_del_Suelo_al_alcance_de_todos])."
+      },
+      "ore_luce": 15.1
+    },
+    "elettro": {
+      "verifica_oggi": [
+        "Controllare connessioni elettrodi rame/zinc per Milky Way, Titan, Medusa, Gaia",
+        "Verificare tensione 2.5V con multimetro"
+      ],
+      "ottimizzazione": "Aumentare la tensione a 3V se le piante mostrano segni di stress idrico (foglie appassite) dopo 4 ore di applicazione."
     }
   },
-  "tecniche_nuove": [],
-  "avvisi": [],
-  "consigli_giorno": []
+  "tecniche_nuove": [
+    {
+      "nome": "Elettrocoltura DC con elettrodi rame/zinc",
+      "descrizione": "Installare elettrodi rame (anodo) e zinc (catodo) a 15cm di profondità, distanti 1m tra loro, collegati a una batteria 2.5V. Posizionare l'antenna in rame a spirale (brevetto Christofleau n.529202) a 1.5m di altezza sopra le piante in fioritura, orientata verso nord. Attivare il sistema dalle 18:00 alle 06:00 per 7 giorni consecutivi.",
+      "fonte": "[pdf_13], [Electroculture-The-Biohackers-Guide-Collection]",
+      "materiali": [
+        "elettrodi rame (1x1m)",
+        "elettrodi zinc (1x1m)",
+        "batteria 2.5V",
+        "cavi isolati",
+        "antenna in rame a spirale"
+      ],
+      "difficolta": "media"
+    },
+    {
+      "nome": "Compost liquido per bilanciamento microflora",
+      "descrizione": "Preparare compost liquido (1:10) con compost maturo e acqua a pH 6.2. Applicare 2L/m² intorno alle radici delle piante in fioritura (Milky Way, Titan, Medusa, Gaia) dopo la distribuzione di harina de rocas. Ripetere ogni 7 giorni per 3 applicazioni.",
+      "fonte": "[Agricultura_Organica_Harina_de_Rocas_y_la_Salud_del_Suelo_al_alcance_de_todos]",
+      "materiali": [
+        "compost maturo",
+        "acqua pH 6.2",
+        "irroratore"
+      ],
+      "difficolta": "bassa"
+    }
+  ],
+  "avvisi": [
+    "Raccogliere Milky Way F1 entro 2 giorni (2026-07-02) per evitare perdita di resina e aroma.",
+    "Raccogliere Titan F1 entro 1 giorno (2026-07-01) per ottimizzare la qualità dei fiori."
+  ],
+  "consigli_giorno": [
+    "Applicare elettrocoltura DC a 2.5V tramite elettrodi rame/zinc (1x1m, profondità 15cm) sulle piante in fioritura (Milky Way, Titan, Medusa, Gaia) per potenziare l'assorbimento di nutrienti in fase di stress termico (34.6°C, umidità 29%). Usare il brevetto Christofleau n.529202 come riferimento per il posizionamento a 1.5m di altezza, orientati verso nord (Cesar Arce, [Electroculture-The-Biohackers-Guide-Collection]).",
+    "Distribuire harina de rocas (150g/m²) a base di basalto e feldspato potassico intorno alle radici delle autofiorenti in fioritura (Milky Way, Titan, Medusa, Gaia) per aumentare la disponibilità di silicio e potassio, essenziali in questa fase critica. Integrare con 2L/m² di compost liquido (1:10) per bilanciare la microflora (Jairo Restrepo Rivera, [Agricultura_Organica_Harina_de_Rocas_y_la_Salud_del_Suelo_al_alcance_de_todos]).",
+    "Monitorare l'umidità del suolo a 10cm di profondità: con temperatura max 36.1°C e umidità 29%, le piante in essiccazione (Epsilon) e fioritura (Milky Way, Titan) necessitano di irrigazione a goccia serale (18:00) con 3-4L/m² di acqua a pH 6.2-6.5, arricchita con 0.5g/L di fulvic acid per migliorare l'assorbimento idrico (Dr. Cyril William Legg, [pdf_85])."
+  ]
 }
