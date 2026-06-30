@@ -16,6 +16,8 @@
 <link rel="apple-touch-icon" sizes="512x512" href="/bioserra/assets/icon-512.png">
 <title>BioSerra</title>
 <link rel="stylesheet" href="/bioserra/css/style.css?v=1782295403">
+<!-- (17) jsPDF per export report PDF fine ciclo, caricato on-demand a basso impatto -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
 </head>
 <body>
 
@@ -26,8 +28,22 @@
     <h1>BioSerra</h1>
   </div>
   <div class="topbar-actions">
+    <button class="icon-btn" onclick="openRicercaGlobale()" title="Cerca">🔍</button>
     <button class="icon-btn" onclick="showNotifPanel()" title="Notifiche">🔔</button>
     <button class="icon-btn" onclick="refreshAll()" title="Aggiorna">🔄</button>
+  </div>
+</div>
+
+<!-- (19) Modal Ricerca Globale -->
+<div class="modal-overlay" id="modal-ricerca-globale" onclick="closeRicercaGlobale(event)">
+  <div class="modal-sheet" style="max-height:88vh;">
+    <div class="modal-handle"></div>
+    <div class="modal-title">🔍 Ricerca Globale</div>
+    <input id="ricerca-globale-input" type="text" placeholder="Cerca piante, PDF, tecniche, esperimenti, diario…"
+      class="form-input" style="margin-bottom:12px;"
+      oninput="ricercaGlobaleEsegui()" />
+    <div id="ricerca-globale-results"></div>
+    <button class="btn-secondary" onclick="closeRicercaGlobale()">Chiudi</button>
   </div>
 </div>
 
@@ -37,6 +53,9 @@
 <section id="sec-piante" class="section active">
   <div class="section-title">Piante 🌿</div>
   <div class="section-sub" id="piante-sub">Caricamento…</div>
+
+  <!-- (18) VISTA DI OGGI UNIFICATA -->
+  <div id="vista-oggi-unificata" style="display:none;background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:12px;"></div>
 
   <!-- ALERT OGGI -->
   <div id="alerts-oggi-card">
