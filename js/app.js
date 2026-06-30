@@ -262,6 +262,64 @@ function showNotifPanel() {
 }
 
 /* ══════════════════════════════════════════════════════════════
+   NAV BACK STACK (Rev.16b) — il tasto Indietro Android (gesture o
+   hardware) prima usciva sempre dall'app perché nessuna sezione/
+   popup veniva mai registrata nella cronologia del browser. Ora:
+   ogni apertura di un .modal-overlay o del popup Laboratorio viene
+   intercettata via MutationObserver (nessuna modifica necessaria
+   alle decine di funzioni "open" e "close" già esistenti) e
+   registrata in _navStack con un history.pushState. Al tasto Indietro si fa
+   pop dello stack e si chiude solo l'ultimo overlay aperto; se non
+   c'è nulla di aperto si torna alla sezione "Piante" (se non già
+   attiva); solo se sia stack che sezione sono già allo stato base
+   il back esce dall'app, comportamento corretto.
+══════════════════════════════════════════════════════════════ */
+var _navStack = [];
+var _navBackInProgress = false;
+function _navIsOverlayOpen(el) {
+  if (!el) return false;
+  return window.getComputedStyle(el).display !== 'none';
+}
+function navInit() {
+  try {
+    var overlays = Array.prototype.slice.call(document.querySelectorAll('.modal-overlay'));
+    var labOv = document.getElementById('lab-popup-overlay');
+    if (labOv) overlays.push(labOv);
+    overlays.forEach(function(el) {
+      var wasOpen = _navIsOverlayOpen(el);
+      var obs = new MutationObserver(function() {
+        var isOpen = _navIsOverlayOpen(el);
+        if (isOpen && !wasOpen && !_navBackInProgress) {
+          _navStack.push(el.id);
+          try { history.pushState({ bsNav: _navStack.length }, '', location.href); } catch(e) {}
+        } else if (!isOpen && wasOpen) {
+          var idx = _navStack.lastIndexOf(el.id);
+          if (idx !== -1) _navStack.splice(idx, 1);
+        }
+        wasOpen = isOpen;
+      });
+      obs.observe(el, { attributes: true, attributeFilter: ['style', 'class'] });
+    });
+    try { history.replaceState({ bsNav: 0 }, '', location.href); } catch(e) {}
+    window.addEventListener('popstate', function() {
+      _navBackInProgress = true;
+      if (_navStack.length > 0) {
+        var id = _navStack.pop();
+        var el = document.getElementById(id);
+        if (el) el.style.display = 'none';
+        document.body.style.overflow = '';
+      } else {
+        var navPiante = document.getElementById('nav-piante');
+        if (navPiante && !navPiante.classList.contains('active')) {
+          showSection('piante', navPiante);
+        }
+      }
+      setTimeout(function() { _navBackInProgress = false; }, 80);
+    });
+  } catch(e) { console.error('[BioSerra] navInit:', e); }
+}
+
+/* ══════════════════════════════════════════════════════════════
    INIT APP
 ══════════════════════════════════════════════════════════════ */
 window._appInitialized = false;
@@ -283,6 +341,8 @@ window.initApp = function() {
   try { if (typeof applyNotificheAtBoot === 'function') setTimeout(applyNotificheAtBoot, 100); } catch(e) {}
   // 7. Vista di oggi unificata (18) — ritardata per dare tempo ai fetch async (meteo, brain, ecc.)
   try { setTimeout(renderVistaOggiUnificata, 2200); } catch(e) {}
+  // 8. Nav back stack (Rev.16b) — tasto Indietro Android
+  try { navInit(); } catch(e) { console.error('[BioSerra] navInit boot:', e); }
 };
 
 
