@@ -48,11 +48,6 @@ function initImpostazioni() {
   // Tema
   const tema = localStorage.getItem('bioserra_tema') || 'verde-scuro';
   cfgApplyThemeUI(tema);
-
-  // AI — seleziona motore e mostra stato chiavi
-  const ai = localStorage.getItem('bioserra_ai_attiva') || 'gemini';
-  cfgApplyAIUI(ai);
-  cfgUpdateAIKeyBox(ai);
 }
 
 /* Applica i panel delle notifiche all'avvio dell'app (non solo quando si apre Impostazioni) */
@@ -240,95 +235,14 @@ function cfgApplyThemeCSS(id) {
   });
 }
 
-/* ── AI Attiva ── */
-const CFG_AI_LABELS = {claude:'Claude (Anthropic)',gemini:'Gemini (Google)',grok:'Grok (xAI)',chatgpt:'ChatGPT (OpenAI)'};
-
-function cfgSetAI(id) {
-  localStorage.setItem('bioserra_ai_attiva', id);
-  cfgApplyAIUI(id);
-  cfgUpdateAIKeyBox(id);
-  // Aggiorna anche il motore nella sezione AI
-  if (typeof aiInitUI === 'function') {
-    const chat = document.getElementById('ai-chat');
-    if (chat) chat.innerHTML = '';
-    if (typeof aiHistory !== 'undefined') aiHistory = [];
-    aiInitUI();
-  }
-  cfgToast('🤖 ' + (CFG_AI_LABELS[id]||id) + ' selezionata');
-}
-
-function cfgApplyAIUI(id) {
-  ['claude','gemini','grok','chatgpt'].forEach(eng => {
-    const btn = document.getElementById('cfg-ai-' + eng);
-    const st  = document.getElementById('cfg-ai-st-' + eng);
-    if (btn) btn.style.border = eng===id ? '2px solid var(--green)' : '2px solid transparent';
-    if (st) {
-      const k = localStorage.getItem('bioserra_ai_key_' + eng);
-      st.textContent = k ? '✅ Chiave ok' : '— Non configurata';
-      st.style.color = k ? 'var(--green3)' : 'var(--text3)';
-    }
-  });
-}
-
-function cfgUpdateAIKeyBox(id) {
-  const labels = {claude:'Claude (Anthropic)',gemini:'Gemini (Google)',grok:'Grok (xAI)',chatgpt:'ChatGPT (OpenAI)'};
-  const title = document.getElementById('cfg-ai-key-title');
-  if (title) title.textContent = '🔑 Chiave API — ' + (labels[id]||id);
-  const inp = document.getElementById('cfg-ai-key-input');
-  if (inp) { inp.value = ''; inp.placeholder = 'Incolla chiave API per ' + (id) + '…'; }
-  cfgRefreshAIKeyStatus(id);
-}
-
-function cfgRefreshAIKeyStatus(id) {
-  const k = localStorage.getItem('bioserra_ai_key_' + id);
-  const st = document.getElementById('cfg-ai-key-status');
-  const clrBtn = document.getElementById('cfg-ai-clear-btn');
-  if (st) {
-    if (k) {
-      st.textContent = '✅ Chiave salvata: ' + k.substring(0,12) + '…';
-      st.style.color = 'var(--green3)';
-    } else {
-      st.textContent = '⚠️ Nessuna chiave configurata';
-      st.style.color = 'var(--text3)';
-    }
-  }
-  if (clrBtn) clrBtn.style.display = k ? 'inline' : 'none';
-  cfgApplyAIUI(id);
-}
-
-function aiGetEngine() {
-  return localStorage.getItem('bioserra_ai_attiva') || 'claude';
-}
-
-function cfgSaveAIKey() {
-  const id = aiGetEngine();
-  const inp = document.getElementById('cfg-ai-key-input');
-  const val = (inp ? inp.value : '').trim();
-  if (!val || val.length < 10) {
-    cfgToast('⚠️ Chiave troppo corta o vuota');
-    if (inp) inp.style.borderColor = 'var(--red)';
-    return;
-  }
-  localStorage.setItem('bioserra_ai_key_' + id, val);
-  if (inp) { inp.value = ''; inp.style.borderColor = ''; }
-  cfgRefreshAIKeyStatus(id);
-  // Aggiorna anche sezione AI
-  if (typeof aiInitUI === 'function') {
-    const chat = document.getElementById('ai-chat');
-    if (chat) chat.innerHTML = '';
-    if (typeof aiHistory !== 'undefined') aiHistory = [];
-    aiInitUI();
-  }
-  cfgToast('✅ Chiave salvata');
-}
-
-function cfgClearAIKey() {
-  const id = aiGetEngine();
-  localStorage.removeItem('bioserra_ai_key_' + id);
-  cfgRefreshAIKeyStatus(id);
-  if (typeof aiInitUI === 'function') { aiHistory=[]; aiInitUI(); }
-  cfgToast('🗑️ Chiave rimossa');
-}
+/* ── AI Attiva ──
+   FIX Rev.17: rimosso il selettore Claude/Gemini/Grok/ChatGPT + box chiave
+   API personale. Era completamente scollegato dal resto dell'app: nessun
+   punto del codice leggeva mai bioserra_ai_attiva o bioserra_ai_key_*,
+   selezionare un motore o salvare una chiave non aveva alcun effetto.
+   Il vero motore del Cervello AI (Llama 3.3 70B via OpenRouter, gratuito)
+   è centralizzato in laboratorio.js (labLlamaKey/labLlamaChat) e non è
+   configurabile da qui per design — vedi card di stato in Impostazioni. */
 
 /* ── Dati ── */
 function cfgEsportaDati() {
