@@ -1,0 +1,22 @@
+name: BioSerra - Digest Update
+
+on:
+  schedule:
+    # 04:30 UTC — dopo brain-update (04:00) e guide-update, prima di telegram (05:30)
+    - cron: '30 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Genera knowledge digest
+        env:
+          BIOSERRA_GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+        run: python3 .github/scripts/digest_update.py
