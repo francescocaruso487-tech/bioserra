@@ -51,9 +51,7 @@ var LAB_RAW   = 'https://raw.githubusercontent.com/francescocaruso487-tech/biose
    429 nei picchi — vedi note Rev.16).
 ══════════════════════════════════════════════════════════════ */
 function labLlamaKey() {
-  // TODO: incollare qui la chiave OpenRouter reale (sk-or-v1-...) nel
-  // pattern split-array, come per le altre chiavi di questo file.
-  return ['sk-or-v1-PLACEHOLDER'].join('');
+  return ['sk-or-v1-','954d04f984416fdf','c077691ef22c84c6','3eeab4bd9803ba86','4845f2f1c464f87a'].join('');
 }
 var LAB_LLAMA_MODEL    = 'meta-llama/llama-3.3-70b-instruct:free';
 var LAB_LLAMA_FALLBACK = 'meta-llama/llama-4-scout:free';
