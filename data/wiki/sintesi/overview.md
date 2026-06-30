@@ -1,57 +1,61 @@
 ---
 tipo: overview
-aggiornato: 2026-06-29
+aggiornato: 2026-06-30
 ---
 
 # BioSerra — Knowledge Base Overview
 
 ```markdown
-# **BioSerra - Living Soil Outdoor**
-*Serra biodinamica e elettroculturale a Caserta (41°N) – Coltivazione rigenerativa e sinergica*
+# **BioSerra Wiki**
+*Living Soil Outdoor, Water-Only, Biodinamica & Elettrocultura – Caserta (41°N)*
 
 ---
 
 ## **🌱 Filosofia BioSerra**
-BioSerra è un ecosistema agricolo **Living Soil** (suolo vivente) che opera esclusivamente con **acqua** come vettore nutritivo, integrando:
-- **Biodinamica**: Ritmi cosmici e forze terrestri per armonizzare crescita e salute delle piante.
-- **Elettrocultura**: Manipolazione dei campi elettromagnetici naturali per stimolare la vitalità delle colture.
-- **Alchimia organica**: Trasformazione della materia vivente in nutrienti biodisponibili tramite microbioma e minerali.
-- **Water-Only**: Eliminazione di input chimici, sostituiti da **acqua magnetizzata**, **suolo attivo** e **informazione energetica**.
+BioSerra è un **ecosistema agricolo rigenerativo** che unisce:
+- **Living Soil**: Suolo vivo, ricco di microrganismi, funghi micorrizici e materia organica, dove la pianta cresce in simbiosi con il microbioma.
+- **Water-Only**: Irrigazione con acqua strutturata (magnetizzata, ionizzata) per massimizzare l’assorbimento dei nutrienti senza fertilizzanti chimici.
+- **Biodinamica**: Coltivazione in armonia con i ritmi lunari, solari e stagionali, seguendo principi di Steiner e tecniche olistiche.
+- **Elettrocultura**: Applicazione di campi elettromagnetici (Lakhovsky, Fe-Cu, spirali in rame, antenna di terra) per stimolare la vitalità delle piante e la resilienza del suolo.
 
-*Visione*: Coltivare non solo piante, ma **organismi viventi** in un sistema autosufficiente, dove ogni elemento (suolo, acqua, piante, umani) è parte di un circuito rigenerativo.
-
----
-
-## **📚 Sistema di Conoscenza**
-BioSerra si basa su un **archivio integrato** di 351 documenti e 15 concetti attivi, organizzati per **sinergia interdisciplinare**:
-
-| **Categoria**       | **Ruolo**                                                                 | **Esempi**                                                                 |
-|---------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| **Elettrocultura**  | Modulazione dei campi elettromagnetici per ottimizzare la crescita.       | [Circuito Lakhovsky]([[pdf_19]]), [Spirale Rame]([[pdf_28]])               |
-| **Living Soil**     | Gestione del microbioma e dei minerali per suoli resilienti.              | [Compostaggio]([[pdf_6]]), [Micorrize]([[pdf_31]])                        |
-| **Biodinamica**     | Allineamento con ritmi lunari e cosmici.                                  | [Calendario Lunare]([[pdf_26]])                                           |
-| **Nutrizione**      | Integrazione di minerali e biostimolanti organici.                        | [Farine di Rocce]([[pdf_29]]), [Te di Compost]([[pdf_23]])                |
-| **Fitosanitario**   | Controllo naturale di parassiti e patogeni.                               | [Controllo Parassiti]([[pdf_30]])                                         |
-| **Energetica**      | Applicazione di principi esoterici e fisica alternativa.                  | [Ighina]([[pdf_28]]), [Crowley]([[pdf_6]])                                |
-
-*Approccio*: Ogni tecnica è **interconnessa** – ad esempio, l’**acqua magnetizzata** (elettrocultura) potenzia l’assorbimento dei nutrienti nel **Living Soil**, mentre il **calendario biodinamico** sincronizza le operazioni con i cicli planetari.
+*Visione*: Coltivare cannabis (e altre piante) in un **sistema chiuso e autosufficiente**, dove ogni elemento (suolo, acqua, energia, organismi) interagisce in un equilibrio dinamico.
 
 ---
 
-## **⚡ Tecniche di Elettrocultura Attive**
-Le 5 tecniche principali in uso a BioSerra:
+## **📚 Sistema di conoscenza**
+BioSerra si basa su:
+- **286 manuali analizzati** (agronomia, elettrofisiologia, biodinamica, permacultura).
+- **15 concetti attivi** (vedi [[categorie-attive]]), integrati in un **grafo di conoscenza** che collega:
+  - **Tecniche** (es. [[elettrocultura-fe-cu]], [[suolo-vivente]]).
+  - **Fasi colturali** (germinazione, vegetativa, fioritura).
+  - **Strumenti** (kit Smart Start, acqua magnetizzata).
+  - **Fonti** (PDF, webinar, ricerche scientifiche).
 
-1. **🔋 Circuito Oscillante Lakhovsky**
-   - *Funzione*: Genera onde elettromagnetiche a frequenza specifica per stimolare la rigenerazione cellulare delle piante.
-   - *Applicazione*: Installato intorno alla serra, sincronizzato con il **calendario lunare**.
-   - *Riferimento*: [[pdf_19]] (Electroculture Guide)
+*Esempio di integrazione*:
+> La **germinazione** ([[web_zamn_284-germinare-semi-con-lo-smart-start]]) viene ottimizzata con **acqua magnetizzata** ([[pdf_4]]) e posizionata secondo il **calendario lunare** ([[calendario-biodinamico]]).
 
-2. **🌍 Antenna di Terra**
-   - *Funzione*: Connette il suolo a un punto di riferimento geofisico per armonizzare i campi elettrici naturali.
-   - *Materiali*: Filo di rame interrato a spirale, collegato a una **barra di ferro** (Fe-Cu).
-   - *Riferimento*: [[pdf_28]] (Ighina – Atomo Magnetico)
+---
 
-3. **🔄 Spirale in Rame**
-   - *Funzione*: Crea un campo magnetico locale che influisce sulla **polarità delle cellule vegetali**.
-   - *Posizione*: Avvolta intorno ai fusti delle piante o posizionata nel suolo.
-   - *Riferimento*: [[pdf_19]]
+## **⚡ Tecniche Elettrocultura Attive**
+BioSerra impiega **5 tecniche principali** per potenziare suolo e piante:
+
+| Tecnica | Descrizione | Pagina Wiki |
+|---------|------------|-------------|
+| **Acqua Magnetizzata** | Acqua trattata con campi magnetici per migliorare l’assorbimento dei nutrienti e la struttura del suolo. | [[elettrocultura-acqua-magnetizzata]] |
+| **Antenna di Terra** | Sistema di messa a terra che bilancia le cariche elettriche del suolo, riducendo stress e parassiti. | [[elettrocultura-antenna-terra]] |
+| **Spirale in Rame** | Strutture in rame che generano campi elettromagnetici per stimolare la crescita radicale e la fotosintesi. | [[elettrocultura-spirale-rame]] |
+| **Circuito Oscillante Lakhovsky** | Circuito risonante che emette frequenze benefiche per la salute cellulare delle piante. | [[elettrocultura-lakhovsky]] |
+| **Sinergia Ferro-Rame (Fe-Cu)** | Combinazione di minerali che attiva enzimi e migliora la resistenza delle piante. | [[elettrocultura-fe-cu]] |
+
+*Nota*: Tutte le tecniche sono **complementari** e si integrano con il **Living Soil** e la **biodinamica**.
+
+---
+## **🌍 Principi Living Soil**
+Il cuore di BioSerra è un **suolo vivo**, gestito secondo questi principi:
+
+### **1. Microbioma del Suolo**
+- **Funghi micorrizici**: Simbiosi con le radici per aumentare l’assorbimento di nutrienti (es. [[inoculazione-micorrize]]).
+- **Batteri benefici**: Decompositori (es. *Bacillus*, *Pseudomonas*) che mineralizzano la materia organica.
+- **Protozoi e nematodi**: Regolano la popolazione microbica.
+
+### **2. Minerali
