@@ -2150,8 +2150,10 @@ function navigateTo(sectionId) {
 /* ── Carica i JSON delle sezioni attive all'avvio ── */
 function initJsonLoaders() {
   loadAIJSON();
-  // loadPianteJSON viene chiamata solo dal bottone "Aggiorna" nel panel JSON
-  // NON all'avvio: gli alert piante sono gestiti localmente da checkHarvestAlerts()
+  // FIX Rev.16: prima restava bloccata su "Caricamento..." finché l'utente
+  // non premeva manualmente "Aggiorna". Il motivo originale (evitare alert
+  // duplicati) non si applica più: renderAlertsOggi() è già un no-op.
+  loadPianteJSON();
   loadManualiJSON();
 }
 
