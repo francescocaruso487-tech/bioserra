@@ -469,12 +469,19 @@ def aggiorna_memoria_giornaliera(memoria, brain_oggi, oggi_data):
     Aggiunge entry giornaliera alla memoria con riassunto del contesto.
     La memoria accumula gli stati giornalieri — il Cervello AI la legge all'avvio.
     """
+    # FIX Rev.16: .get('consigli_giorno',[''])[0] crashava con IndexError
+    # quando consigli_giorno e' presente ma VUOTO ([] non None) — caso
+    # sistematico quando genera_briefing() va in fallback (vedi sopra).
+    # Il default [''] protegge solo dalla CHIAVE assente, non dalla lista
+    # vuota: .get() ritorna il valore reale se la chiave esiste, anche [].
+    _cg_mem = brain_oggi.get('consigli_giorno') or []
+    _consiglio_riassunto = _cg_mem[0][:100] if _cg_mem else '(nessuno)'
     nuova_entry = {
         'data': oggi_data,
         'tipo': 'brain_giornaliero',
         'riassunto': (
             f"Avvisi: {'; '.join(brain_oggi.get('avvisi',[])[:2])}. "
-            f"Consigli: {brain_oggi.get('consigli_giorno',[''])[0][:100]}. "
+            f"Consigli: {_consiglio_riassunto}. "
             f"Piano: {brain_oggi.get('piano_giornata',{}).get('mattina','')[:80]}"
         ),
         'tecniche_suggerite': [t.get('nome','') for t in brain_oggi.get('tecniche_nuove',[])]
