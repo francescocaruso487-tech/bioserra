@@ -30,6 +30,7 @@ function labEsc(s) {
 var labElTecniche = [];
 var labEspData    = null;
 var labPdfData    = null;
+var labPraticheAttiveData = null; // pratiche_stato.json — toggle ON/OFF tecniche, persistito su GitHub
 var labGuideData  = [];
 var labDigestData = null;
 var labBrainData  = null;
@@ -121,14 +122,15 @@ async function labLoadAll() {
   labSetStatus('lab-load-status', '\u23F3 SYNC…');
   var ts = '?v=' + Date.now();
   try {
-    var [rCon, rEsp, rPdf, rGuide, rDigest, rBrain, rMem] = await Promise.allSettled([
+    var [rCon, rEsp, rPdf, rGuide, rDigest, rBrain, rMem, rPratiche] = await Promise.allSettled([
       fetch(LAB_RAW + 'concetti_index.json'   + ts).then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'esperimenti.json'       + ts).then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'pdf_knowledge.json'     + ts).then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'guide_complete.json'    + ts).then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'knowledge_digest.json'  + ts).then(function(r){ return r.json(); }),
       fetch(LAB_RAW + 'brain.json'             + ts).then(function(r){ return r.json(); }),
-      fetch(LAB_RAW + 'memoria_chat.json'      + ts).then(function(r){ return r.json(); }).catch(function(){ return null; })
+      fetch(LAB_RAW + 'memoria_chat.json'      + ts).then(function(r){ return r.json(); }).catch(function(){ return null; }),
+      fetch(LAB_RAW + 'pratiche_stato.json'    + ts).then(function(r){ return r.json(); }).catch(function(){ return null; })
     ]);
 
     if (rCon.status === 'fulfilled') {
@@ -179,6 +181,17 @@ async function labLoadAll() {
     if (rDigest.status === 'fulfilled') labDigestData = rDigest.value;
     if (rBrain.status  === 'fulfilled') labBrainData  = rBrain.value;
     if (rMem && rMem.status === 'fulfilled' && rMem.value) labMemoriaData = rMem.value;
+
+    if (rPratiche && rPratiche.status === 'fulfilled' && rPratiche.value && rPratiche.value.attive) {
+      labPraticheAttiveData = rPratiche.value;
+      // tiene anche una cache locale per uso offline immediato
+      try { localStorage.setItem('bioserra_pratiche_attive', JSON.stringify(labPraticheAttiveData.attive)); } catch(e) {}
+    } else {
+      // GitHub non disponibile o file non ancora creato: fallback a cache locale
+      var cache = {};
+      try { cache = JSON.parse(localStorage.getItem('bioserra_pratiche_attive') || '{}'); } catch(e) {}
+      labPraticheAttiveData = { attive: cache };
+    }
 
     labSetStatus('lab-load-status', '');
   } catch(e) {
@@ -423,29 +436,53 @@ function praticaFeedbackBoost(nome) {
   var score = (v.up || 0) - (v.down || 0);
   return Math.max(-15, Math.min(score * 5, 20));
 }
-// (Rev.16b) Attiva/disattiva pratica — globale per tutta la serra (10 piante),
-// non per singola pianta: la tecnica/elettrocultura non ha scope per-pianta.
+// (Rev.17) Attiva/disattiva pratica — globale per tutta la serra (10 piante),
+// persistito su GitHub in data/pratiche_stato.json (pattern identico a
+// labEspSalva: SHA fresco prima di ogni PUT). Cache in localStorage solo
+// come fallback offline, non come fonte di verità.
 function praticaLoadAttive() {
+  if (labPraticheAttiveData && labPraticheAttiveData.attive) return labPraticheAttiveData.attive;
   try { return JSON.parse(localStorage.getItem('bioserra_pratiche_attive') || '{}'); }
   catch(e) { return {}; }
-}
-function praticaSaveAttive(map) {
-  localStorage.setItem('bioserra_pratiche_attive', JSON.stringify(map));
 }
 function praticaIsAttiva(nome) {
   var map = praticaLoadAttive();
   var v = map[praticaFeedbackKey(nome)];
   return v !== false; // default: attiva
 }
-function praticaToggleAttiva() {
+async function praticaToggleAttiva() {
   if (!_labPraticaFeedbackNome) return;
-  var map = praticaLoadAttive();
   var k = praticaFeedbackKey(_labPraticaFeedbackNome);
-  map[k] = !praticaIsAttiva(_labPraticaFeedbackNome);
-  praticaSaveAttive(map);
+  if (!labPraticheAttiveData || !labPraticheAttiveData.attive) labPraticheAttiveData = { attive: {} };
+  var nuovo = !praticaIsAttiva(_labPraticaFeedbackNome);
+  labPraticheAttiveData.attive[k] = nuovo;
+  try { localStorage.setItem('bioserra_pratiche_attive', JSON.stringify(labPraticheAttiveData.attive)); } catch(e) {}
+  // Aggiorna subito la UI (ottimistico), poi salva su GitHub in background
   var area = document.getElementById('lab-pratica-toggle-area');
   if (area) area.innerHTML = praticaToggleHTML(_labPraticaFeedbackNome);
   if (typeof labRenderPratiche === 'function') labRenderPratiche();
+  await praticaSalvaGitHub();
+}
+async function praticaSalvaGitHub() {
+  try {
+    var rSha = await fetch(LAB_API + 'pratiche_stato.json', {
+      headers: { 'Authorization': 'token ' + LAB_TOKEN }
+    });
+    var shaData = await rSha.json().catch(function(){ return {}; });
+    var sha = shaData && shaData.sha;
+    labPraticheAttiveData.lastUpdate = new Date().toISOString();
+    var body = {
+      message: '[BioSerra] Aggiorna pratiche attive',
+      content: btoa(unescape(encodeURIComponent(JSON.stringify(labPraticheAttiveData, null, 2))))
+    };
+    if (sha) body.sha = sha; // assente al primo salvataggio: il file non esiste ancora -> viene creato
+    var put = await fetch(LAB_API + 'pratiche_stato.json', {
+      method: 'PUT',
+      headers: { 'Authorization': 'token ' + LAB_TOKEN, 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+    if (!put.ok) console.error('[BioSerra] praticaSalvaGitHub PUT fallita:', put.status);
+  } catch(e) { console.error('[BioSerra] praticaSalvaGitHub:', e); }
 }
 function praticaToggleHTML(nome) {
   var on = praticaIsAttiva(nome);
