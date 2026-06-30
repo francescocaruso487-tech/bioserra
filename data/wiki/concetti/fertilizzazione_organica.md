@@ -12,26 +12,22 @@ pdf_count: 1
 # Fertilizzazione Organica
 
 ## Descrizione
-La **fertilizzazione organica** rappresenta un approccio sostenibile e rigenerativo alla nutrizione delle piante, basato sull’utilizzo di ammendanti naturali derivati da fonti animali, vegetali o microbiche. A differenza dei fertilizzanti sintetici, questi materiali si decompongono lentamente nel suolo, rilasciando nutrienti in modo graduale e favorendo lo sviluppo di una **microbiologia attiva** (funghi micorrizici, batteri decompositori, attinomiceti). Il meccanismo d’azione si fonda sulla **mineralizzazione** operata dai microrganismi, che trasformano composti organici complessi (proteine, chitina, cellulosa) in forme assimilabili dalle radici, come nitrati, fosfati e cationi. Inoltre, la fertilizzazione organica migliora la **struttura del suolo** (aggregazione, porosità) e la sua capacità di trattenere acqua e nutrienti, riducendo il rischio di lisciviazione.
+La **fertilizzazione organica** rappresenta un approccio sostenibile e rigenerativo alla nutrizione delle piante, basato sull’utilizzo di ammendanti naturali di origine animale, vegetale o microbica. A differenza dei fertilizzanti sintetici, questi materiali si decompongono gradualmente nel suolo, rilasciando nutrienti in forme assimilabili dalle piante e stimolando al contempo l’attività biologica del terreno. Il meccanismo d’azione si fonda sulla mineralizzazione operata da batteri e funghi (come *Trichoderma* o *Mycorrhizae*), che trasformano composti complessi (proteine, chitina, cellulosa) in sostanze semplici (amminoacidi, fosfati, nitrati) accessibili alle radici. Questo processo non solo nutre la pianta, ma arricchisce anche il **Living Soil** con sostanza organica stabile (humus), migliorando struttura, capacità di scambio cationico (CEC) e resilienza agli stress idrici.
 
-Questo metodo è particolarmente efficace in sistemi **Living Soil**, dove l’equilibrio tra flora e fauna del suolo è prioritario. La scelta degli ammendanti deve essere calibrata in base alle esigenze della coltura e alla fase fenologica: durante la **vegetazione**, si prediligono fonti ricche di azoto (es. farina di sangue), mentre in **fioritura** si privilegiano apporti di fosforo e potassio (es. farina d’osso, cenere di legna). L’obiettivo non è solo nutrire la pianta, ma **alimentare il suolo**, creando un ecosistema autosufficiente e resiliente.
-
----
+In serra outdoor a Caserta (41°N), dove le temperature estive possono superare i 35°C e l’umidità relativa fluttua tra il 60-80%, la fertilizzazione organica assume un ruolo chiave per mitigare la perdita di nutrienti per lisciviazione o volatilizzazione. I materiali organici, infatti, agiscono come "spugne" che trattengono acqua e nutrienti, riducendo la necessità di interventi frequenti. Inoltre, la loro decomposizione genera calore metabolico, contribuendo a mantenere una temperatura del suolo più stabile, fondamentale per l’assorbimento radicale in condizioni di stress termico.
 
 ## Come si applica in serra
 
-1. **Preparazione del substrato**:
-   - Mescolare **5–10% in volume** di ammendanti organici (es. 500g/m² di farina di sangue + 300g/m² di farina d’osso) con il substrato base (terreno locale + compost maturo + perlite/vermiculite).
-   - Aggiungere **micorrize** (es. *Glomus intraradices*) e batteri benefici (es. *Bacillus subtilis*) per accelerare la decomposizione.
+1. **Scelta dei materiali**:
+   - **Fase di vegetazione**: Utilizzare farine a rapido rilascio azotato (es. **farina di sangue** 12-14% N) o miscele bilanciate (es. **farina di pesce** 5-7% N, 2-3% P₂O₅, 1% K₂O).
+   - **Fase di fioritura**: Preferire fonti ricche in fosforo e potassio (es. **farina d’osso** 20-30% P₂O₅, **cenere di legna** 0-0-5% K₂O) o alghe (es. **guano di pipistrello** 10-12% N, 12-15% P₂O₅).
 
-2. **Applicazione durante la coltivazione**:
-   - **Vegetazione (0–6 settimane)**: Applicare **farina di sangue** (10–15% N) ogni **10–14 giorni** in dose ridotta (20–30g/m²), diluita in acqua e distribuita a **5 cm di profondità** con una forchetta o un trapiantatoio.
-   - **Fioritura (6–12 settimane)**: Sostituire con **farina d’osso** (10–15% P₂O₅) o **farina di pesce** (5–7% N, 2–3% P₂O₅), riducendo la frequenza a **ogni 2–3 settimane** (30–50g/m²).
-   - **Monitoraggio**: Controllare il **colore delle foglie** (verde scuro = eccesso di azoto; giallo = carenza di ferro/magnesio) e l’umidità del suolo (evitare ristagni).
+2. **Dosaggio e frequenza**:
+   - Applicare **1-2 cucchiai (10-20 g/m²)** di farina organica per pianta, distribuiti in un cerchio di 10 cm dal fusto.
+   - **Intervallo**: Ogni **10-14 giorni**, evitando periodi di siccità estrema o piogge intense (che dilaverebbero i nutrienti).
+   - **Metodo**: Mescolare superficialmente (1-2 cm di profondità) con una zappetta o un forcone, poi irrigare con **acqua magnetizzata** (vedi sinergie) per accelerare la mineralizzazione.
 
-3. **Tecniche avanzate**:
-   - **Tè di compost aerato (ACT)**: Utilizzare il tè di compost (1:10 con acqua) per applicazioni fogliari ogni 7–10 giorni, arricchito con **melassa** (1g/L) per stimolare i microrganismi.
-   - **Pacciamatura**: Coprire il suolo con **paglia o foglie secche** (2–3 cm) per mantenere umidità e temperatura, riducendo la necessità di irrigazione.
-
----
-## Sinergie con altri
+3. **Monitoraggio e adattamento**:
+   - **Colore delle foglie**: Foglie gialle (clorosi) indicano carenza di azoto; foglie scure e arricciate suggeriscono eccesso di fosforo o stress idrico.
+   - **pH del suolo**: Mantenere tra **6.2-6.8** (ideale per l’assorbimento dei nutrienti organici). Se necessario, correggere con **calcare dolomitico** (per alcalinizzare) o **zolfo** (per acidificare).
+   - **Attività biologica**: Verificare la presenza di lombrichi e micorrize dopo 3
