@@ -182,7 +182,22 @@ async function labLoadAll() {
     if (rBrain.status  === 'fulfilled') labBrainData  = rBrain.value;
     if (rMem && rMem.status === 'fulfilled' && rMem.value) labMemoriaData = rMem.value;
 
-    if (rPratiche && rPratiche.status === 'fulfilled' && rPratiche.value && rPratiche.value.attive) {
+    // FIX Rev.18: se l'ultimo toggle fatto offline non è mai arrivato su GitHub
+    // (bioserra_pratiche_pending='1'), NON sovrascrivere la cache locale con la
+    // versione remota (sarebbe stale e perderebbe il toggle). Prima si ritenta
+    // il push del dato locale; solo a push riuscito il remoto torna fonte di verità.
+    var praticaPending = false;
+    try { praticaPending = localStorage.getItem('bioserra_pratiche_pending') === '1'; } catch(e) {}
+
+    if (praticaPending) {
+      var cachePend = {};
+      try { cachePend = JSON.parse(localStorage.getItem('bioserra_pratiche_attive') || '{}'); } catch(e) {}
+      labPraticheAttiveData = { attive: cachePend };
+      var pushOk = await praticaSalvaGitHub(); // ritenta ora che labLoadAll ha (forse) connessione
+      if (!pushOk) {
+        console.warn('[BioSerra] Toggle pratiche offline ancora in attesa di sync — riprovo al prossimo refresh');
+      }
+    } else if (rPratiche && rPratiche.status === 'fulfilled' && rPratiche.value && rPratiche.value.attive) {
       labPraticheAttiveData = rPratiche.value;
       // tiene anche una cache locale per uso offline immediato
       try { localStorage.setItem('bioserra_pratiche_attive', JSON.stringify(labPraticheAttiveData.attive)); } catch(e) {}
@@ -481,8 +496,18 @@ async function praticaSalvaGitHub() {
       headers: { 'Authorization': 'token ' + LAB_TOKEN, 'Content-Type': 'application/json' },
       body: JSON.stringify(body)
     });
-    if (!put.ok) console.error('[BioSerra] praticaSalvaGitHub PUT fallita:', put.status);
-  } catch(e) { console.error('[BioSerra] praticaSalvaGitHub:', e); }
+    if (!put.ok) {
+      console.error('[BioSerra] praticaSalvaGitHub PUT fallita:', put.status);
+      try { localStorage.setItem('bioserra_pratiche_pending', '1'); } catch(e) {}
+      return false;
+    }
+    try { localStorage.removeItem('bioserra_pratiche_pending'); } catch(e) {}
+    return true;
+  } catch(e) {
+    console.error('[BioSerra] praticaSalvaGitHub:', e);
+    try { localStorage.setItem('bioserra_pratiche_pending', '1'); } catch(e2) {}
+    return false;
+  }
 }
 function praticaToggleHTML(nome) {
   var on = praticaIsAttiva(nome);
