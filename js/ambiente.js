@@ -7,6 +7,105 @@ const WMO = {0:'Sereno ☀️',1:'Prevalentemente sereno 🌤️',2:'Parzialment
 const WMO_ICONS = {0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌦️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',71:'❄️',73:'❄️',75:'❄️',80:'🌦️',81:'🌧️',82:'⛈️',95:'⛈️',96:'⛈️',99:'⛈️'};
 const DAYS_IT = ['Dom','Lun','Mar','Mer','Gio','Ven','Sab'];
 
+// (5) Alert proattivi su soglie meteo critiche nei prossimi 7gg: gelate tardive,
+// ondate di calore, piogge prolungate vicine al raccolto (rischio muffa).
+// Si appoggia ai dati daily già scaricati da loadWeather (nessuna chiamata extra).
+function renderAlertMeteoCritici(d) {
+  const box = document.getElementById('w-alert-critici');
+  if (!box || !d || !d.daily) return;
+  const alerts = [];
+  const oggi = new Date(); oggi.setHours(0, 0, 0, 0);
+
+  // Gelata tardiva: temperatura minima sotto soglia nei prossimi 7gg
+  d.daily.time.forEach((t, i) => {
+    const tmin = d.daily.temperature_2m_min[i];
+    if (tmin != null && tmin < 3) {
+      const dt = new Date(t + 'T12:00');
+      const label = i === 0 ? 'oggi' : (DAYS_IT[dt.getDay()] + ' ' + dt.getDate() + '/' + (dt.getMonth() + 1));
+      alerts.push({ tipo: 'gelata', msg: '🧊 Rischio gelata ' + label + ' (min ' + Math.round(tmin) + '°C) — proteggi le piante più giovani' });
+    }
+  });
+
+  // Ondata di calore: 2+ giorni consecutivi >=36°C
+  for (let i = 0; i < d.daily.time.length - 1; i++) {
+    const t1 = d.daily.temperature_2m_max[i], t2 = d.daily.temperature_2m_max[i + 1];
+    if (t1 != null && t2 != null && t1 >= 36 && t2 >= 36) {
+      alerts.push({ tipo: 'calore', msg: '🔥 Ondata di calore in arrivo (' + Math.round(t1) + '°/' + Math.round(t2) + '°C) — prepara ombreggiatura e aumenta irrigazione' });
+      break;
+    }
+  }
+
+  // Piogge prolungate: se c'è una pianta vicina al raccolto, rischio muffa specifico
+  let pioggiaConsecutiva = 0, pioggiaTot = 0;
+  for (let i = 0; i < Math.min(4, d.daily.time.length); i++) {
+    const r = d.daily.rain_sum[i] || 0;
+    if (r > 2) pioggiaConsecutiva++;
+    pioggiaTot += r;
+  }
+  if (pioggiaConsecutiva >= 3 || pioggiaTot >= 20) {
+    let piantaARischio = null;
+    if (typeof loadActivePlants === 'function') {
+      const plants = loadActivePlants();
+      for (const p of plants) {
+        const ovr = (typeof loadPlantPhaseOverride === 'function') ? loadPlantPhaseOverride(p.id) : null;
+        let harvestDate = null;
+        if (ovr && ovr.harvestDate) harvestDate = new Date(ovr.harvestDate);
+        else if (p.type === 'auto' && p.germDate) harvestDate = addDays(new Date(p.germDate), p.harvestMin);
+        else if (p.type === 'femm' && typeof getEffectiveFlorStart === 'function') {
+          const fi = getEffectiveFlorStart(p);
+          harvestDate = addDays(fi.date, femmFlorDays(p, p.harvestMin));
+        }
+        if (harvestDate) {
+          const dl = daysDiff(oggi, harvestDate);
+          if (dl >= -2 && dl <= 10) { piantaARischio = p; break; }
+        }
+      }
+    }
+    if (piantaARischio) {
+      alerts.push({ tipo: 'pioggia', msg: '🍄 Piogge prolungate previste + ' + (piantaARischio.icon || '🌿') + ' ' + piantaARischio.name + ' vicina al raccolto — rischio muffa, valuta copertura o anticipo taglio' });
+    } else {
+      alerts.push({ tipo: 'pioggia', msg: '🌧️ Piogge prolungate previste (' + Math.round(pioggiaTot) + 'mm in 4gg) — controlla il drenaggio dei vasi' });
+    }
+  }
+
+  if (!alerts.length) { box.style.display = 'none'; box.innerHTML = ''; return; }
+  const colorMap = { gelata: '#90caf9', calore: '#ffab91', pioggia: '#80cbc4' };
+  box.innerHTML = alerts.map(a =>
+    '<div style="border-radius:10px;padding:8px 12px;margin-bottom:6px;background:' + colorMap[a.tipo] + '1f;border:1px solid ' + colorMap[a.tipo] + '55;color:' + colorMap[a.tipo] + ';font-size:12px;">' + a.msg + '</div>'
+  ).join('');
+  box.style.display = 'block';
+}
+
+// (7) Storico microclima: snapshot giornaliero (1/giorno, deduplica per data) salvato in
+// localStorage. La serra è unica (stesso microclima per tutte le piante), quindi lo storico
+// è condiviso e il grafico per pianta (12) lo filtra dal germDate della pianta a oggi.
+const MICROCLIMA_KEY = 'bioserra_microclima_storico';
+const MICROCLIMA_MAX_GIORNI = 200;
+
+function _microclimaSalvaSnapshot(d) {
+  if (!d || !d.daily || !d.current) return;
+  const oggi = new Date().toISOString().slice(0, 10);
+  let storico = microclimaLoadStorico();
+  const idx = storico.findIndex(s => s.data === oggi);
+  const entry = {
+    data: oggi,
+    tempMin: d.daily.temperature_2m_min[0],
+    tempMax: d.daily.temperature_2m_max[0],
+    tempAttuale: d.current.temperature_2m,
+    umidita: d.current.relative_humidity_2m,
+    pioggia: d.daily.rain_sum[0] || 0
+  };
+  if (idx >= 0) storico[idx] = entry; else storico.push(entry);
+  storico.sort((a, b) => a.data.localeCompare(b.data));
+  if (storico.length > MICROCLIMA_MAX_GIORNI) storico = storico.slice(storico.length - MICROCLIMA_MAX_GIORNI);
+  localStorage.setItem(MICROCLIMA_KEY, JSON.stringify(storico));
+}
+
+function microclimaLoadStorico() {
+  try { return JSON.parse(localStorage.getItem(MICROCLIMA_KEY) || '[]'); }
+  catch (e) { return []; }
+}
+
 async function loadWeather() {
   const loading = document.getElementById('weather-loading');
   const error = document.getElementById('weather-error');
@@ -72,6 +171,8 @@ async function loadWeather() {
     if (uv != null && uv > 8) alerts.push('☀️ UV molto alto (' + uv + ') — considera un pannello ombreggiante sulle piante delicate');
     if (alerts.length > 0) { alertText.innerHTML = '⚠️ <strong>Alert Serra:</strong><br>' + alerts.join('<br>'); alert.style.display='block'; }
     else alert.style.display = 'none';
+    // (5) Alert proattivi su soglie meteo critiche nei prossimi giorni (gelate, ondate calore, piogge pre-raccolto)
+    try { renderAlertMeteoCritici(d); } catch (e5) { /* silenzioso, non blocca il resto */ }
     // Previsioni 7 giorni
     const fc = document.getElementById('w-forecast');
     fc.innerHTML = d.daily.time.map((t,i) => {
@@ -86,6 +187,8 @@ async function loadWeather() {
       </div>`;
     }).join('');
     loading.style.display = 'none'; content.style.display = 'block';
+    // (7) Salva snapshot giornaliero per lo storico microclima (usato dal grafico vigore)
+    try { _microclimaSalvaSnapshot(d); } catch (e7) { /* silenzioso */ }
     // Aggiorna card OGGI con dati meteo appena caricati
     try { renderOggiMaster(); } catch(e2) {}
   } catch(e) {
