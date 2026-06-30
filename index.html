@@ -1074,43 +1074,23 @@
     </div>
   </div>
 
-  <!-- 5) AI ATTIVA -->
+  <!-- 5) AI ATTIVA — FIX Rev.17: rimosso il selettore Claude/Gemini/Grok/ChatGPT
+       (era completamente scollegato dal resto dell'app, nessun effetto reale).
+       Il vero motore è centralizzato in laboratorio.js e non configurabile da qui. -->
   <div class="setting-group">
-    <div class="setting-group-label">🤖 AI Attiva</div>
-    <div style="font-size:11px;color:var(--text3);padding:0 4px 10px;">Seleziona il modello, configura la chiave API. La chiave è salvata solo sul tuo dispositivo.</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;">
-      <div class="cfg-ai-btn" id="cfg-ai-claude" onclick="cfgSetAI('claude')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
-        <div style="font-size:20px;">✨</div>
-        <div style="font-size:12px;color:var(--text);margin-top:4px;font-weight:700;">Claude</div>
-        <div style="font-size:10px;" id="cfg-ai-st-claude">—</div>
+    <div class="setting-group-label">🤖 Cervello AI</div>
+    <div style="background:var(--bg3);border-radius:12px;padding:14px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="font-size:24px;">🦙</div>
+        <div style="flex:1;">
+          <div style="font-size:14px;font-weight:700;color:var(--text);">Llama 3.3 70B</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px;">via OpenRouter · gratuito</div>
+        </div>
+        <div style="font-size:10px;background:rgba(76,175,118,0.15);color:var(--green3);border-radius:20px;padding:4px 10px;font-weight:700;white-space:nowrap;">✅ ATTIVO</div>
       </div>
-      <div class="cfg-ai-btn" id="cfg-ai-gemini" onclick="cfgSetAI('gemini')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
-        <div style="font-size:20px;">💎</div>
-        <div style="font-size:12px;color:var(--text);margin-top:4px;font-weight:700;">Gemini</div>
-        <div style="font-size:10px;" id="cfg-ai-st-gemini">—</div>
-      </div>
-      <div class="cfg-ai-btn" id="cfg-ai-grok" onclick="cfgSetAI('grok')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
-        <div style="font-size:20px;">⚡</div>
-        <div style="font-size:12px;color:var(--text);margin-top:4px;font-weight:700;">Grok</div>
-        <div style="font-size:10px;" id="cfg-ai-st-grok">—</div>
-      </div>
-      <div class="cfg-ai-btn" id="cfg-ai-chatgpt" onclick="cfgSetAI('chatgpt')" style="background:var(--card2);border:2px solid transparent;border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;">
-        <div style="font-size:20px;">🧠</div>
-        <div style="font-size:12px;color:var(--text);margin-top:4px;font-weight:700;">ChatGPT</div>
-        <div style="font-size:10px;" id="cfg-ai-st-chatgpt">—</div>
-      </div>
-    </div>
-    <!-- Box chiave per il motore selezionato -->
-    <div id="cfg-ai-key-box" style="background:var(--bg3);border-radius:12px;padding:14px;margin-top:4px;">
-      <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px;" id="cfg-ai-key-title">🔑 Chiave API</div>
-      <div style="display:flex;gap:8px;align-items:center;">
-        <input type="password" id="cfg-ai-key-input" placeholder="Incolla chiave API…"
-          style="flex:1;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:9px 12px;color:var(--text);font-size:13px;outline:none;font-family:var(--font);">
-        <button onclick="cfgSaveAIKey()" style="background:var(--green2);border:none;border-radius:8px;padding:9px 14px;color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;">Salva</button>
-      </div>
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
-        <div id="cfg-ai-key-status" style="font-size:11px;color:var(--text3);">—</div>
-        <button onclick="cfgClearAIKey()" id="cfg-ai-clear-btn" style="display:none;background:none;border:none;color:var(--red);font-size:11px;cursor:pointer;padding:0;">✕ Rimuovi chiave</button>
+      <div style="font-size:11px;color:var(--text3);margin-top:10px;line-height:1.5;">
+        Alimenta la chat Cervello AI, la ricerca Second Brain e "Analizza PDF completo con AI" nel Laboratorio.
+        Fallback automatico su un secondo modello gratuito se il primo è sovraccarico.
       </div>
     </div>
   </div>
