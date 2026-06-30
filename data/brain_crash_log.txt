@@ -1,28 +1,12 @@
-BRAIN CRASH: HTTPError: HTTP Error 409: Conflict
+BRAIN CRASH: IndexError: list index out of range
 
 Traceback (most recent call last):
-  File "/home/runner/work/bioserra/bioserra/.github/scripts/brain_update.py", line 653, in <module>
+  File "/home/runner/work/bioserra/bioserra/.github/scripts/brain_update.py", line 658, in <module>
     main()
-  File "/home/runner/work/bioserra/bioserra/.github/scripts/brain_update.py", line 635, in main
-    gh_put('data/brain.json', content_b64, sha, f'brain v6 {oggi_data} [{len(testi)} testi PDF]')
-  File "/home/runner/work/bioserra/bioserra/.github/scripts/brain_update.py", line 52, in gh_put
-    with urllib.request.urlopen(req) as r:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 525, in open
-    response = meth(req, response)
-               ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-               ^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 409: Conflict
+  File "/home/runner/work/bioserra/bioserra/.github/scripts/brain_update.py", line 644, in main
+    memoria = aggiorna_memoria_giornaliera(memoria, cervello_data, oggi_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/bioserra/bioserra/.github/scripts/brain_update.py", line 477, in aggiorna_memoria_giornaliera
+    f"Consigli: {brain_oggi.get('consigli_giorno',[''])[0][:100]}. "
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
