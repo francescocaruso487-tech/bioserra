@@ -50,14 +50,28 @@ def gh_get_sha(path):
             return json.load(r)['sha']
     except: return None
 
-def gh_put(path, content_b64, sha, message):
-    body = json.dumps({'message': message, 'content': content_b64,
-                       'sha': sha, 'branch': 'main'}).encode()
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}',
-        data=body, headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)
+def gh_put(path, content, sha, message):
+    """Resiliente: 3 tentativi, SHA sempre fresco, mai solleva eccezioni (None se fallisce)."""
+    if isinstance(content, str):
+        content = content.encode('utf-8')
+    encoded = base64.b64encode(content).decode('ascii')
+    for attempt in range(3):
+        try:
+            sha_fresco = gh_get_sha(path)
+            body = {'message': message, 'content': encoded, 'branch': 'main'}
+            if sha_fresco:
+                body['sha'] = sha_fresco
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}',
+                data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'},
+                method='PUT')
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)
+        except Exception as ex:
+            print(f'  gh_put tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    return None
 
 def gh_list(path):
     req = urllib.request.Request(
@@ -297,11 +311,12 @@ def main():
         'guide': guide_nuove
     }
 
-    content_b64 = base64.b64encode(
-        json.dumps(guide_data_new, indent=2, ensure_ascii=False).encode()).decode()
+    content_json = json.dumps(guide_data_new, indent=2, ensure_ascii=False)
     sha_fresh = gh_get_sha('data/guide_complete.json') or sha_g
-    gh_put('data/guide_complete.json', content_b64, sha_fresh,
+    res = gh_put('data/guide_complete.json', content_json, sha_fresh,
            f'guide v2 {oggi} [{aggiornate}/{len(FASI)} Mistral, {len(testi_disp)} testi]')
+    if res is None:
+        print('  ERRORE CRITICO: salvataggio guide_complete.json fallito dopo 3 tentativi')
 
     print(f'\n=== COMPLETATO: {aggiornate}/{len(FASI)} guide Mistral, {len(testi_disp)} testi usati ===')
 
