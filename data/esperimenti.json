@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-29T19:52:50.036Z",
+  "lastUpdate": "2026-06-30T10:36:40.485Z",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -162,6 +162,24 @@
       "data_proposta": "2026-06-16",
       "attivo": true,
       "data_attivazione": "2026-06-29",
+      "tipo": "coltivazione_generale"
+    },
+    {
+      "id": "daily_1781640025709_1",
+      "nome": "Monitoraggio del pH",
+      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della pianta",
+      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della pianta",
+      "materiali": [
+        "pHmetro",
+        "soluzione di calibrazione"
+      ],
+      "categoria": "Controllo ambientale",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": true,
+      "data_attivazione": "2026-06-30",
       "tipo": "coltivazione_generale"
     }
   ],
@@ -1054,24 +1072,6 @@
       "tipo": "coltivazione_generale"
     },
     {
-      "id": "daily_1781640025709_1",
-      "nome": "Monitoraggio del pH",
-      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della pianta",
-      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della pianta",
-      "materiali": [
-        "pHmetro",
-        "soluzione di calibrazione"
-      ],
-      "categoria": "Controllo ambientale",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-16",
-      "attivo": false,
-      "data_attivazione": null,
-      "tipo": "coltivazione_generale"
-    },
-    {
       "id": "daily_1781640025709_4",
       "nome": "Controllo della temperatura",
       "descrizione": "Regolazione della temperatura per assicurare un ambiente ottimale per la crescita della pianta",
@@ -1858,6 +1858,23 @@
       "data_proposta": "2026-06-29",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "id": "daily_1781640025709_2",
+      "nome": "Tecnica di prunning",
+      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della pianta",
+      "obiettivo": "Migliorare la crescita e la produzione di pianta",
+      "materiali": [
+        "forbici",
+        "guanti"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
     }
   ],
   "attivi": [],
