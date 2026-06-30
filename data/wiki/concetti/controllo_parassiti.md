@@ -12,41 +12,34 @@ pdf_count: 0
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** è una strategia fitosanitaria basata sull’uso di metodi biologici per gestire infestazioni senza ricorrere a pesticidi chimici. Questo approccio sfrutta i meccanismi di equilibrio dell’ecosistema serra, dove predatori naturali, repellenti botanici e pratiche colturali riducono la proliferazione di parassiti come afidi, acari o tripidi. Il principio chiave è la **prevenzione attiva**: mantenere un ambiente ostile ai patogeni attraverso la biodiversità funzionale e l’uso di sostanze a basso impatto ambientale.
+Il **Controllo Parassiti Naturale** rappresenta una strategia fitosanitaria basata sull’uso di metodi biologici per gestire infestazioni in serra outdoor, senza ricorrere a pesticidi chimici. Questo approccio sfrutta i principi dell’ecologia del suolo e della biodiversità per mantenere l’equilibrio degli ecosistemi colturali. Il meccanismo d’azione si fonda sulla **prevenzione** (riduzione delle condizioni favorevoli ai parassiti) e sulla **regolazione naturale** (introduzione di predatori o sostanze repellenti). Ad esempio, l’olio di neem agisce come insetticida sistemico e repellente grazie alla presenza di azadiractina, che interferisce con lo sviluppo degli insetti, mentre gli acari predatori (*Phytoseiulus persimilis*) controllano le infestazioni di acari dannosi (*Tetranychus urticae*) attraverso la predazione diretta.
 
-Il meccanismo d’azione si basa su tre pilastri:
-1. **Repellenza**: sostanze come l’olio di neem o l’aglio alterano il comportamento dei parassiti, rendendo la pianta meno attraente.
-2. **Predazione**: introduzione di insetti utili (es. *Phytoseiulus persimilis* per gli acari) che si nutrono dei parassiti.
-3. **Induzione di resistenza**: stimolazione delle difese naturali della pianta tramite elicitori biologici (es. estratti di alghe).
-
-Questo metodo è particolarmente efficace in **Living Soil**, dove la complessità microbica del suolo e la salute delle piante riducono la suscettibilità agli attacchi. Inoltre, in serra outdoor a Caserta (41°N), il clima mediterraneo favorisce la proliferazione di predatori naturali, rendendo il controllo biologico un’alternativa sostenibile e scalabile.
-
----
+Questa tecnica è particolarmente efficace in ambienti come la serra outdoor di Caserta (41°N), dove il clima mediterraneo favorisce la proliferazione di parassiti come afidi, tripidi e cocciniglie. La sua applicazione richiede una **gestione attiva del suolo vivente** (Living Soil), poiché un terreno ricco di microrganismi benefici e funghi micorrizici riduce la suscettibilità delle piante agli attacchi. Inoltre, il controllo naturale si integra con i cicli lunari e le tecniche di elettrocultura, ottimizzando i tempi di intervento in base alle fasi fenologiche delle piante (vegetazione e fioritura).
 
 ## Come si applica in serra
 
-### **Protocollo base per serra outdoor Living Soil (Caserta)**
-1. **Ispezione quotidiana**
-   - Controlla **foglie giovani, steli e pagina inferiore delle foglie** con una lente d’ingrandimento (10x).
-   - Segna le piante infestate con un nastro colorato per monitorare la progressione.
-   - *Obiettivo*: intervenire entro 48 ore dal primo segno di infestazione.
+1. **Ispezione quotidiana**:
+   - Controlla regolarmente foglie (soprattutto pagina inferiore), steli e germogli per rilevare segni di infestazione (es. melata, decolorazioni, ragnatele).
+   - Utilizza una lente di ingrandimento per identificare parassiti come afidi o acari.
 
-2. **Prevenzione con olio di neem**
-   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o 1 goccia di detergente neutro) in 1 litro d’acqua.
-   - **Applicazione**: nebulizza sulle piante **ogni 7 giorni** al tramonto (evita l’esposizione solare diretta per prevenire ustioni).
-   - *Effetto*: repellente per afidi, cocciniglie e tripidi; interferisce con la crescita delle larve.
+2. **Prevenzione con olio di neem**:
+   - **Diluizione**: 5–10 ml di olio di neem puro in 1 litro di acqua + 1 ml di sapone di potassio (adesivo).
+   - **Applicazione**: Spruzza sulle piante ogni 7 giorni, preferibilmente al mattino presto o al tramonto per evitare ustioni fogliari.
+   - **Frequenza**: Aumenta a 3–4 giorni in caso di infestazione acuta.
 
-3. **Introduzione di insetti utili**
-   - **Acari predatori** (*Phytoseiulus persimilis* o *Amblyseius andersoni*):
-     - Rilascia **2–5 individui per pianta infestata** in fase di vegetazione.
-     - *Condizioni ideali*: umidità >60% e temperatura tra 20–28°C.
-   - **Coccinelle** (*Coccinella septempunctata*):
-     - Rilascia **5–10 adulti per 10 m²** in caso di afidi.
-     - *Consiglio*: posiziona piante trappola (es. *Calendula officinalis*) per attrarle.
+3. **Introduzione di insetti utili**:
+   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2–5 individui per m² in caso di attacco di *Tetranychus urticae* (ragnetto rosso).
+   - **Crisopidi** (*Chrysoperla carnea*): Larve predatrici di afidi e cocciniglie; distribuisci 10–20 uova per pianta.
+   - **Coccinelle** (*Coccinella septempunctata*): Efficaci contro afidi; rilascia adulti o larve in gruppi di 5–10 per pianta.
 
-4. **Barriere fisiche**
-   - **Reti anti-insetto** (maglia 0.6 mm) su aperture della serra per bloccare tripidi e moscerini.
-   - **Pacciamatura con paglia o fibra di cocco** per ridurre l’umidità a livello del suolo e limitare funghi vettori di parassiti.
+4. **Barriere fisiche**:
+   - Copri le aperture della serra con reti anti-insetto (maglia < 0,6 mm) per impedire l’ingresso di tripidi e moscerini.
+   - Applica collari in cartone o lana di roccia intorno al colletto delle piante per ostacolare lumache e formiche.
 
-5. **Rinforzo del suolo**
-   - Applica **compost attivato** o **micorrize** (es. *Glomus intraradices*) per
+5. **Piante trappola**:
+   - Coltiva piante come **tagete** (*Tagetes patula*) o **calendula** (*Calendula officinalis*) ai margini della serra per attirare parassiti lontano dalle colture principali.
+
+## Sinergie con altri elementi
+
+- **Lakhovsky (Onde di forma)**:
+  - L’ap
