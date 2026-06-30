@@ -39,16 +39,26 @@ def gh_get_sha(path):
     except: return None
 
 def gh_put(path, content, sha, msg):
-    if isinstance(content, str): content = content.encode('utf-8')
+    """Resiliente: 3 tentativi, SHA sempre fresco, mai solleva eccezioni (None se fallisce)."""
+    if isinstance(content, str):
+        content = content.encode('utf-8')
     encoded = base64.b64encode(content).decode('ascii')
-    body = {'message': msg, 'content': encoded, 'branch': 'main'}
-    if sha: body['sha'] = sha
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}',
-        data=json.dumps(body).encode(),
-        headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)['commit']['sha']
+    for attempt in range(3):
+        try:
+            sha_fresco = gh_get_sha(path)
+            body = {'message': msg, 'content': encoded, 'branch': 'main'}
+            if sha_fresco:
+                body['sha'] = sha_fresco
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}',
+                data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)['commit']['sha']
+        except Exception as ex:
+            print(f'  gh_put tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    return None
 
 def mistral_chat(prompt, max_tokens=1200):
     if not MISTRAL_KEY: return None
@@ -281,10 +291,12 @@ def main():
     }
 
     sha_fresh = gh_get_sha('data/esperimenti.json')
-    gh_put('data/esperimenti.json',
+    res = gh_put('data/esperimenti.json',
            json.dumps(esperimenti, indent=2, ensure_ascii=False),
            sha_fresh,
            f'esperimenti: +{len(nuove_proposte)} nuove proposte [{oggi}]')
+    if res is None:
+        print('  ERRORE CRITICO: salvataggio esperimenti.json fallito dopo 3 tentativi')
 
     print(f'\n=== COMPLETATO ===')
     print(f'Nuove proposte: {len(nuove_proposte)}')
