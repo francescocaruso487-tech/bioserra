@@ -88,7 +88,11 @@
   <!-- TAB ARCHIVIO -->
   <div class="piante-panel" id="panel-archivio">
     <div id="archivio-stats-card" style="display:none;"></div>
-    <div style="display:flex;justify-content:flex-end;margin-bottom:8px;">
+    <div style="display:flex;justify-content:flex-end;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+      <button onclick="openCorrelazioniInterventi()" id="btn-correlazioni"
+        style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:6px 14px;color:var(--green3);font-size:12px;font-weight:600;cursor:pointer;">
+        📊 Correlazioni interventi
+      </button>
       <button onclick="archivioSync()" id="btn-archivio-sync"
         style="background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:6px 14px;color:var(--blue);font-size:12px;font-weight:600;cursor:pointer;">
         ☁️ Sincronizza da GitHub
@@ -98,6 +102,20 @@
   </div>
 
 </section>
+
+<!-- (2) Modal Correlazioni Interventi -> Esiti -->
+<div class="modal-overlay" id="modal-correlazioni" onclick="closeCorrelazioniInterventi(event)">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title">📊 Correlazioni Interventi → Esiti</div>
+    <div style="font-size:11px;color:var(--text2);margin-bottom:14px;line-height:1.5;">
+      Confronto tra cicli archiviati che hanno ricevuto un certo intervento e quelli che non l'hanno ricevuto.
+      ⚠️ Correlazione, non causalità — campioni piccoli con poche piante archiviate.
+    </div>
+    <div id="correlazioni-list"></div>
+    <button class="btn-secondary" onclick="closeCorrelazioniInterventi()">Chiudi</button>
+  </div>
+</div>
 
 <!-- MODAL AGGIUNGI PIANTA -->
 <div class="modal-overlay" id="modal-add-plant" onclick="closeAddPlantModal(event)">
