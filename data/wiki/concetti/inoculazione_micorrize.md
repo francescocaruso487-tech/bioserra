@@ -12,30 +12,28 @@ pdf_count: 0
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** sono simbiosi mutualistiche tra funghi del suolo e radici delle piante, fondamentali per un **Living Soil** outdoor come quello di Caserta (41°N). Questi funghi, appartenenti principalmente ai phyla *Glomeromycota* e *Ascomycota*, colonizzano le radici estendendo la rete ipale (micelio) nel substrato. In cambio di zuccheri prodotti dalla fotosintesi (fino al 20% della fotosintesi totale), i funghi forniscono alla pianta acqua, fosforo, azoto e micronutrienti, migliorando l’assorbimento anche in condizioni di stress idrico o carenza nutrizionale. Questo meccanismo è particolarmente vantaggioso in serra outdoor, dove le fluttuazioni termiche e l’irraggiamento solare possono stressare le radici.
+Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute e la produttività delle colture in **Living Soil**. Questo rapporto si basa su uno scambio reciproco: i funghi, penetrando nelle radici o avvolgendole esternamente, estendono il sistema radicale della pianta di centinaia di volte, migliorando l’assorbimento di acqua e nutrienti (in particolare fosforo e azoto). In cambio, la pianta fornisce ai funghi carboidrati prodotti tramite fotosintesi, essenziali per la loro crescita e riproduzione. Questo meccanismo è particolarmente vantaggioso in condizioni di stress idrico o nutrizionale, tipiche delle serre outdoor italiane, dove la variabilità climatica può compromettere la stabilità del suolo.
 
-La simbiosi micorrizica **aumenta la resilienza delle piante** contro patogeni radicali (es. *Phytophthora*), migliora la struttura del suolo tramite la produzione di glomalina (una glicoproteina che aggrega le particelle terrose) e ottimizza l’uso dei nutrienti, riducendo la necessità di fertilizzanti chimici. Studi dimostrano che piante inoculate con micorrize sviluppano radici più estese e ramificate, con un’efficienza fotosintetica superiore del 30-50% rispetto a piante non colonizzate. Inoltre, in coltivazioni outdoor come quelle campane, dove il suolo può essere povero di materia organica, le micorrize rappresentano un **booster naturale** per la crescita e la qualità del raccolto.
+La simbiosi micorrizica non è universale: alcuni funghi (ad esempio *Glomus intraradices*) sono generalisti e colonizzano molte specie vegetali, mentre altri sono specifici. In ambiente outdoor a Caserta (41°N), con temperature estive elevate e suoli spesso compatti, l’inoculazione mirata accelera la formazione di questa rete simbiotica, riducendo la necessità di fertilizzanti chimici e aumentando la resilienza delle piante. Studi dimostrano che le piante micorrizate sviluppano radici più robuste, fioriture più abbondanti e una maggiore tolleranza a patogeni come *Phytophthora* o *Fusarium*.
 
 ---
 
 ## Come si applica in serra
-Per una serra **Living Soil outdoor** a Caserta (clima mediterraneo con estati calde e inverni miti), l’inoculazione delle micorrize deve seguire un protocollo mirato alle fasi di **germinazione** e **vegetazione**:
+Per una serra **Living Soil outdoor** a Caserta, l’inoculazione delle micorrize va eseguita al **trapianto** (o entro 7 giorni dalla semina diretta), quando le radici sono ancora giovani e ricettive. Segui questi passaggi:
 
-1. **Preparazione del substrato**:
-   - Assicurarsi che il suolo sia **ben drenato** (evitare ristagni) e ricco di materia organica (compost maturo, humus di lombrico).
-   - Il pH ideale per la colonizzazione micorrizica è **6.0–7.5**; correggere con calcare o zolfo se necessario.
+1. **Preparazione dell’inoculo**:
+   - Usa un prodotto commerciale a base di **spore di funghi micorrizici arbuscolari (AMF)** o **funghi ectomicorrizici** (adatti a piante come cannabis, pomodoro o basilico). Esempi validi includono *Mycorrhizal Inoculant* di **MycoApply** o **Plant Success**.
+   - Diluiscilo in acqua non clorata (lascia riposare l’acqua 24h in un contenitore aperto) per facilitare l’applicazione.
 
-2. **Scelta dell’inoculo**:
-   - Utilizzare un **mix di funghi micorrizici** (es. *Rhizophagus irregularis*, *Glomus mosseae*) in forma di **polvere o granuli** (5–10g per pianta).
-   - Preferire inoculi **specifici per cannabis** o piante a radice fitta, con certificazione di vitalità (germinazione >80%).
+2. **Applicazione**:
+   - **Metodo radicale**: Mescola 5–10g di inoculo per pianta direttamente nel substrato di trapianto, a contatto con le radici. Per piante in vaso, spargi l’inoculo sul fondo del buco prima di posizionare la piantina.
+   - **Metodo fogliare** (opzionale): Spruzza una soluzione diluita (1g/L) sulle foglie giovani per stimolare la colonizzazione precoce, soprattutto in condizioni di siccità.
+   - **Irrigazione post-applicazione**: Innaffia leggermente per attivare le spore, evitando ristagni. Usa acqua a **pH 6.0–6.5** per non alterare l’attività microbica.
 
-3. **Applicazione al trapianto**:
-   - **Momento**: Effettuare l’inoculazione al momento del trapianto (o entro 48 ore dalla semina diretta), quando le radici sono giovani e ricettive.
-   - **Metodo**:
-     - Mescolare l’inoculo con un po’ di substrato umido e applicarlo **direttamente sulle radici** (o nel foro di trapianto).
-     - Alternativa: Spruzzare una **sospensione di micorrize** (1g/litro d’acqua) sulle radici prima del trapianto.
-   - **Quantità**: 5–10g per pianta (dose standard per cannabis in serra outdoor).
+3. **Condizioni ottimali**:
+   - **Temperatura del suolo**: Tra 15°C e 30°C (evita applicazioni sotto i 10°C o sopra i 35°C).
+   - **Umidità**: Mantieni il suolo umido ma non saturo per 2–3 settimane dopo l’inoculazione.
+   - **Fertilizzazione**: Evita fungicidi (anche biologici come *Bacillus subtilis*) e fertilizzanti ad alto contenuto di fosforo nei **30 giorni successivi**, poiché il fosforo in eccesso inibisce la colonizzazione micorrizica.
 
-4. **Post-applicazione**:
-   - **Irrigazione**: Mantenere il substrato **leggermente umido** (non bagnato) per 7–10 giorni post-inoculo, evitando stress idrico.
-   - **Protezione**: Non utilizzare **fungicidi** (anche naturali come rame o zolfo) nei **30 giorni successivi
+4. **Rinnovo**:
+   -
