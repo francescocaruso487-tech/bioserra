@@ -224,23 +224,38 @@ function getEffectiveFlorStart(p) {
   return { date: florDate, source: 'automatica' };
 }
 
-/* Giorni di fioritura femm corretti per ore di sole reali.
-   florStart resta data fissa (fotoperiodo); il poco sole allunga la durata. */
+/* Moltiplicatore ore-sole per femminizzate: florStart resta data fissa (fotoperiodo),
+   il poco sole allunga la durata della SOLA fioritura. Cap 1.4x (Rev.17). */
+function femmSunMult(p) {
+  let m = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
+  if (m > 1.4) m = 1.4;   // cap: evita stime irrealistiche con sole molto basso
+  if (m < 1)   m = 1;     // il sole non accorcia mai la fioritura
+  return m;
+}
 function femmFlorDays(p, days) {
   const base = (typeof days === 'number') ? days : p.harvestMin;
+  return Math.round(base * femmSunMult(p));
+}
+
+/* Moltiplicatore ore-sole per autofiorenti: ciclo geneticamente fisso, meno sensibile
+   al fotoperiodo delle femminizzate ma comunque rallentato da poco sole. Cap 1.3x (Rev.17). */
+function autoSunMult(p) {
   let m = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
-  if (m > 1.6) m = 1.6;   // cap: evita stime irrealistiche con sole molto basso
-  if (m < 1)   m = 1;     // il sole non accorcia mai la fioritura
-  return Math.round(base * m);
+  if (m > 1.3) m = 1.3;   // cap più basso delle femminizzate: meno sensibili
+  if (m < 1)   m = 1;     // il sole non accorcia mai il ciclo
+  return m;
+}
+function autoSunDays(p, days) {
+  const base = (typeof days === 'number') ? days : p.harvestMin;
+  return Math.round(base * autoSunMult(p));
 }
 
 function getAutoHarvestDate(p) {
-  // Autofiorenti: data germinazione + gg produttore (nessun moltiplicatore)
+  // Autofiorenti: data germinazione + gg produttore corretti per ore di sole (cap 1.3x)
   if (!p.germDate) return null;
   const germ = new Date(p.germDate);
-  const _sunM = (p.type === 'auto' && p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
-  const harvestMin = addDays(germ, Math.round(p.harvestMin * _sunM));
-  const harvestMax = addDays(germ, Math.round(p.harvestMax * _sunM));
+  const harvestMin = addDays(germ, autoSunDays(p, p.harvestMin));
+  const harvestMax = addDays(germ, autoSunDays(p, p.harvestMax));
   // Override manuale se impostato
   const ovr = loadPlantPhaseOverride(p.id);
   if (ovr && ovr.harvestDate) {
@@ -276,11 +291,12 @@ function renderTimelineInBox(id) {
   let harvestDate = null;
 
   if (p.type === 'auto') {
-    // DATE FISSE: germ + giorni produttore (NO moltiplicatore)
+    // Giorni produttore corretti per ore di sole reali (cap 1.3x, vedi autoSunDays)
     const ovr = loadPlantPhaseOverride(p.id);
     const vegRatio = 0.40; // ~40% del ciclo in vegetazione
     const florRatio = 0.45; // ~45% in fioritura
-    const totalDays = p.harvestMin;
+    const sunM = autoSunMult(p);
+    const totalDays = autoSunDays(p, p.harvestMin);
     const vegDays  = Math.round(totalDays * vegRatio);
     const florStart = Math.round(totalDays * vegRatio);
     const endVeg   = addDays(germ, vegDays);
@@ -292,16 +308,17 @@ function renderTimelineInBox(id) {
       harvestMax = new Date(ovr.harvestDate);
       manualTag = ' · ✏️ modificata';
     } else {
-      harvest    = addDays(germ, p.harvestMin);
-      harvestMax = addDays(germ, p.harvestMax);
+      harvest    = addDays(germ, autoSunDays(p, p.harvestMin));
+      harvestMax = addDays(germ, autoSunDays(p, p.harvestMax));
     }
     harvestDate = harvest;
     const essEnd  = addDays(harvest, essDays);
     const concEnd = addDays(essEnd, concDays);
 
+    const sunNote = sunM > 1 ? ` · ☀️ +${Math.round((sunM-1)*100)}% per poco sole` : '';
     const extraHarvest = (p.harvestMin !== p.harvestMax && !ovr)
-      ? `${fmtDate(harvest)} → ${fmtDate(harvestMax)} (${p.harvestMin}–${p.harvestMax} gg produttore)` + manualTag
-      : `${p.harvestMin} gg dalla germinazione` + manualTag;
+      ? `${fmtDate(harvest)} → ${fmtDate(harvestMax)} (${p.harvestMin}–${p.harvestMax} gg produttore)` + sunNote + manualTag
+      : `${p.harvestMin} gg dalla germinazione` + sunNote + manualTag;
 
     const essStart = harvest;
     const fineDate = addDays(concEnd, 0);
@@ -317,7 +334,7 @@ function renderTimelineInBox(id) {
     ];
 
     const elapsed = daysDiff(germ, today);
-    const pct = Math.min(100, Math.max(0, Math.round((elapsed / p.harvestMin) * 100)));
+    const pct = Math.min(100, Math.max(0, Math.round((elapsed / totalDays) * 100)));
     const daysToHarvest = daysDiff(today, harvest);
 
     const modBtnHTML = `
@@ -328,12 +345,13 @@ function renderTimelineInBox(id) {
 
     box.innerHTML = `
       <div class="tl-progress-wrap">
-        <div class="tl-progress-label">Avanzamento: ${Math.max(0,elapsed)} gg / ${p.harvestMin} gg (${pct}%)${daysToHarvest > 0 ? ' · 🗓️ Taglio tra '+daysToHarvest+' gg' : daysToHarvest === 0 ? ' · ✂️ GIORNO DEL TAGLIO!' : ' · ✅ Taglio passato'}</div>
+        <div class="tl-progress-label">Avanzamento: ${Math.max(0,elapsed)} gg / ${totalDays} gg (${pct}%)${daysToHarvest > 0 ? ' · 🗓️ Taglio tra '+daysToHarvest+' gg' : daysToHarvest === 0 ? ' · ✂️ GIORNO DEL TAGLIO!' : ' · ✅ Taglio passato'}</div>
         <div class="tl-progress-track"><div class="tl-progress-fill" style="width:${pct}%"></div></div>
       </div>
       <div style="margin:6px 0 8px;padding:6px 10px;background:rgba(255,152,0,0.08);border-radius:8px;font-size:11px;color:var(--orange);">${rendaNote}</div>
       ${renderSteps(steps, today)}
       ${modBtnHTML}`;
+
 
   } else {
     // FEMMINIZZATE: fioritura da dati pianta o confermata/override dall'utente
@@ -610,9 +628,8 @@ function openCalendarioRaccolti() {
       dateMin = dateMax = new Date(ovr.harvestDate);
     } else if (p.type === 'auto' && p.germDate) {
       const germ = new Date(p.germDate);
-      const sunMult = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
-      dateMin = addDays(germ, Math.round(p.harvestMin * sunMult));
-      dateMax = addDays(germ, Math.round(p.harvestMax * sunMult));
+      dateMin = addDays(germ, autoSunDays(p, p.harvestMin));
+      dateMax = addDays(germ, autoSunDays(p, p.harvestMax));
     } else if (p.type === 'femm') {
       const fi = getEffectiveFlorStart(p);
       dateMin = addDays(fi.date, femmFlorDays(p, p.harvestMin));
@@ -825,7 +842,7 @@ function checkHarvestAlerts() {
       // Override manuale ha sempre la priorità (vale per auto E femm)
       harvestDate = new Date(ovr.harvestDate);
     } else if (p.type === 'auto') {
-      harvestDate = addDays(germ, p.harvestMin);
+      harvestDate = addDays(germ, autoSunDays(p, p.harvestMin));
     } else {
       const florInfo = getEffectiveFlorStart(p);
       harvestDate = addDays(florInfo.date, femmFlorDays(p, p.harvestMin));
@@ -850,8 +867,8 @@ function checkHarvestAlerts() {
       });
     }
 
-    // Alert (16): femminizzate in fioritura attiva con sole sotto la soglia ideale.
-    // Il fotoperiodo resta fisso, ma poco sole allunga la durata (cap 1.6x, vedi femmFlorDays).
+    // Alert SOLE — femminizzate in fioritura attiva con sole sotto la soglia ideale.
+    // Il fotoperiodo resta fisso, ma poco sole allunga la durata (cap 1.4x, vedi femmSunMult).
     if (p.type === 'femm' && p.idealH && currentSunHours > 0) {
       const fiSole = getEffectiveFlorStart(p);
       const florStarted = today >= fiSole.date;
@@ -859,12 +876,28 @@ function checkHarvestAlerts() {
         ? ['fioritura', 'pre-fioritura', 'maturazione'].includes(ovr.currentPhase)
         : florStarted;
       if (inFioritura) {
-        const m = Math.min(1.6, Math.max(1, p.idealH / currentSunHours));
+        const m = femmSunMult(p);
         if (m >= 1.15) {
           const extraDays = Math.round(p.harvestMin * (m - 1));
           alerts.push({
             pianta: `${p.icon || '🌿'} ${p.name}`,
             msg: `☀️ Poco sole (${currentSunHours}h vs ${p.idealH}h ideali): fioritura allungata di circa +${extraDays}gg`,
+            tipo: 'SOLE'
+          });
+        }
+      }
+    }
+
+    // Alert SOLE — autofiorenti: ciclo intero (non solo fioritura) rallentato da poco sole (cap 1.3x).
+    if (p.type === 'auto' && !(ovr && ovr.harvestDate) && p.idealH && currentSunHours > 0) {
+      const elapsedAuto = daysDiff(germ, today);
+      if (elapsedAuto >= 5) {
+        const m = autoSunMult(p);
+        if (m >= 1.15) {
+          const extraDays = Math.round(p.harvestMin * (m - 1));
+          alerts.push({
+            pianta: `${p.icon || '🌿'} ${p.name}`,
+            msg: `☀️ Poco sole (${currentSunHours}h vs ${p.idealH}h ideali): ciclo allungato di circa +${extraDays}gg`,
             tipo: 'SOLE'
           });
         }
@@ -938,7 +971,7 @@ function renderActivePlants() {
     <div class="card" style="margin-bottom:12px;">
       <div class="card-title">☀️ Ore di sole oggi</div>
       <div style="font-size:12px;color:var(--text3);margin-bottom:8px;">
-        Indica quante ore di sole ricevono le piante. <strong>Modifica le date di raccolta</strong> in base al rapporto con le ore ottimali (14h).
+        Indica quante ore di sole ricevono le piante. <strong>Modifica le date di raccolta</strong> in base al rapporto con le ore ottimali (14h) — autofiorenti max +30%, femminizzate max +40%.
       </div>
       <div style="display:flex;align-items:center;gap:10px;">
         <input type="range" id="sun-hours-slider" min="1" max="14" step="0.5" value="${currentSunHours}"
@@ -966,9 +999,8 @@ function renderActivePlants() {
     if (ovr && ovr.harvestDate) {
       harvestDate = new Date(ovr.harvestDate);
     } else if (p.type === 'auto' && germ) {
-      // Autofiorenti: moltiplica giorni per rapporto ore sole reali vs ottimali
-      const sunMult = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
-      harvestDate = addDays(germ, Math.round(p.harvestMin * sunMult));
+      // Autofiorenti: giorni produttore corretti per ore di sole (cap 1.3x)
+      harvestDate = addDays(germ, autoSunDays(p, p.harvestMin));
     } else if (p.type === 'femm') {
       const fi = getEffectiveFlorStart(p);
       harvestDate = addDays(fi.date, femmFlorDays(p, p.harvestMin));
@@ -976,8 +1008,7 @@ function renderActivePlants() {
 
     // ── Giorni passati e totali ──
     const elapsed   = germ ? daysDiff(germ, today) : 0;
-    const _sunMult2 = (p.type === 'auto' && p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
-    const totalDays = p.type === 'auto' ? Math.round(p.harvestMin * _sunMult2)
+    const totalDays = p.type === 'auto' ? autoSunDays(p, p.harvestMin)
                     : (harvestDate && germ ? daysDiff(germ, harvestDate) : p.harvestMin);
     const pct       = totalDays > 0 ? Math.min(100, Math.max(0, Math.round((elapsed / totalDays) * 100))) : 0;
     const daysLeft  = harvestDate ? daysDiff(today, harvestDate) : null;
@@ -985,8 +1016,7 @@ function renderActivePlants() {
     // ── Fase corrente calcolata ──
     let currentPhase = 'vegetazione', currentPhaseLabel = '🌿 Vegetazione', phaseColor = '#4caf76';
     if (p.type === 'auto' && germ) {
-      const _smPhase = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
-      const _hMin = Math.round(p.harvestMin * _smPhase);
+      const _hMin = autoSunDays(p, p.harvestMin);
       const vegEnd  = Math.round(_hMin * 0.40);
       const florEnd = Math.round(_hMin * 0.85);
       if      (elapsed < 5)       { currentPhase = 'germinazione'; currentPhaseLabel = '🌱 Germinazione'; phaseColor = '#8bc34a'; }
