@@ -159,8 +159,12 @@ function labRenderDigest() {
   var el = document.getElementById('lab-digest-content');
   if (!el) return;
   var d = labDigestData;
-  // Fallback: usa brain.json se digest è vecchio o vuoto
-  if (!d || !d.consiglio_integrato) {
+  // Digest vecchio (non di oggi) o N8N dismesso -> tratta come assente, usa brain.json
+  var oggiStr = new Date().toISOString().slice(0,10);
+  var digestData = d && (d.data || (d.lastUpdate ? d.lastUpdate.slice(0,10) : ''));
+  var digestVecchio = !digestData || digestData < oggiStr;
+  // Fallback: usa brain.json se digest è vecchio, vuoto o senza consiglio
+  if (!d || !d.consiglio_integrato || digestVecchio) {
     var brain = labBrainData;
     if (brain && brain.cervello && brain.cervello.briefing_mattutino) {
       var briefing = brain.cervello.briefing_mattutino || '';
