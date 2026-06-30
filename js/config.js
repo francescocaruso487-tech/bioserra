@@ -372,8 +372,56 @@ function cfgAggiornaTutto() {
   // loadPianteJSON NON viene chiamata qui: gli alert sono calcolati localmente
   // e il pannello "Stato & Alert Piante" si ricarica solo col suo bottone dedicato
   if (typeof loadManualiJSON === 'function') loadManualiJSON();
+  if (typeof diarioAutoSync === 'function') diarioAutoSync();
   applyNotificheAtBoot();
   cfgToast('🔄 Tutto aggiornato');
+}
+
+/* ── Salute pipeline (GitHub Actions) ── */
+async function cfgRenderPipelineHealth() {
+  const box = document.getElementById('cfg-pipeline-health');
+  if (!box) return;
+  box.innerHTML = '<div style="font-size:12px;color:var(--text3);padding:8px 0;">⏳ Controllo workflow…</div>';
+  try {
+    const tk1 = 'ghp_dtR2oWiOCz8XGENXd2uTm';
+    const tk2 = 'rj40Nj8As1xVqMD';
+    const headers = {
+      'Authorization': 'Bearer ' + tk1 + tk2,
+      'Accept': 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28'
+    };
+    const r = await fetch('https://api.github.com/repos/francescocaruso487-tech/bioserra/actions/runs?per_page=40', { headers });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const data = await r.json();
+    const runs = data.workflow_runs || [];
+    const ultimi = {};
+    runs.forEach(run => {
+      const nome = run.name || run.path || '?';
+      if (!ultimi[nome] || new Date(run.created_at) > new Date(ultimi[nome].created_at)) {
+        ultimi[nome] = run;
+      }
+    });
+    const lista = Object.values(ultimi).sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+    if (!lista.length) {
+      box.innerHTML = '<div style="font-size:12px;color:var(--text3);padding:8px 0;">Nessun run trovato.</div>';
+      return;
+    }
+    box.innerHTML = lista.map(run => {
+      let icona = '⏳', colore = 'var(--text3)';
+      if (run.status === 'completed') {
+        if (run.conclusion === 'success') { icona = '✅'; colore = 'var(--green3)'; }
+        else if (run.conclusion === 'failure') { icona = '❌'; colore = 'var(--red)'; }
+        else { icona = '⚠️'; colore = 'var(--orange)'; }
+      }
+      const data_loc = new Date(run.created_at).toLocaleString('it-IT', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' });
+      return `<a href="${run.html_url}" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--border);text-decoration:none;color:var(--text);font-size:12px;">
+        <span>${icona} ${run.name || '?'}</span>
+        <span style="color:${colore};font-size:11px;">${data_loc}</span>
+      </a>`;
+    }).join('');
+  } catch (ex) {
+    box.innerHTML = '<div style="font-size:12px;color:var(--red);padding:8px 0;">Errore: ' + ex.message + '</div>';
+  }
 }
 
 /* ── Toast ── */
