@@ -16,19 +16,36 @@ def gh_get_raw(path):
         return r.read().decode('utf-8')
 
 def gh_get_sha(path):
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)['sha']
+    try:
+        req = urllib.request.Request(
+            f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
+        with urllib.request.urlopen(req) as r:
+            return json.load(r)['sha']
+    except Exception:
+        return None
 
-def gh_put(path, content_b64, sha, message):
-    body = json.dumps({'message': message, 'content': content_b64, 'sha': sha}).encode()
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}',
-        data=body, headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT'
-    )
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)
+def gh_put(path, content, sha, message):
+    """Resiliente: 3 tentativi, SHA sempre fresco, mai solleva eccezioni (None se fallisce)."""
+    if isinstance(content, str):
+        content = content.encode('utf-8')
+    encoded = base64.b64encode(content).decode('ascii')
+    for attempt in range(3):
+        try:
+            sha_fresco = gh_get_sha(path)
+            body = {'message': message, 'content': encoded, 'branch': 'main'}
+            if sha_fresco:
+                body['sha'] = sha_fresco
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}',
+                data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'},
+                method='PUT')
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)
+        except Exception as ex:
+            print(f'  gh_put tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    return None
 
 def mistral_embed(testo):
     body = json.dumps({'model': 'mistral-embed', 'input': [testo[:2000]]}).encode()
@@ -112,10 +129,13 @@ def main():
     
     # Salva vettori
     vectors_json = {'lastUpdate': oggi, 'total': len(tutti_vettori), 'vettori': tutti_vettori}
-    v_b64 = base64.b64encode(json.dumps(vectors_json, ensure_ascii=False).encode()).decode()
+    v_json = json.dumps(vectors_json, ensure_ascii=False)
     sha_v = gh_get_sha('data/pdf_vectors.json')
-    gh_put('data/pdf_vectors.json', v_b64, sha_v, f'BioSerra vettori {oggi} (tot:{len(tutti_vettori)})')
-    print(f'pdf_vectors.json salvato ({len(tutti_vettori)} vettori)')
+    res_v = gh_put('data/pdf_vectors.json', v_json, sha_v, f'BioSerra vettori {oggi} (tot:{len(tutti_vettori)})')
+    if res_v is None:
+        print('  ERRORE CRITICO: salvataggio pdf_vectors.json fallito dopo 3 tentativi')
+    else:
+        print(f'pdf_vectors.json salvato ({len(tutti_vettori)} vettori)')
     
     # Preserva edge semantici (semantico_reale) scritti da connessioni_update.py:
     # senza questo, embedding_pdf sovrascriverebbe il grafo semantico ogni notte.
@@ -139,10 +159,13 @@ def main():
     # Salva grafo
     nodi = [{'id': v['id'], 'titolo': v['titolo'], 'rilevanza': v['rilevanza']} for v in tutti_vettori]
     grafo = {'lastUpdate': oggi, 'nodi': nodi, 'edges': edges_finali}
-    g_b64 = base64.b64encode(json.dumps(grafo, ensure_ascii=False).encode()).decode()
+    g_json = json.dumps(grafo, ensure_ascii=False)
     sha_g = gh_get_sha('data/pdf_graph.json')
-    gh_put('data/pdf_graph.json', g_b64, sha_g, f'BioSerra grafo {oggi} ({len(edges_finali)} edges, {len(edges_semantici)} semantici preservati)')
-    print(f'pdf_graph.json salvato ({len(edges_finali)} edges)')
+    res_g = gh_put('data/pdf_graph.json', g_json, sha_g, f'BioSerra grafo {oggi} ({len(edges_finali)} edges, {len(edges_semantici)} semantici preservati)')
+    if res_g is None:
+        print('  ERRORE CRITICO: salvataggio pdf_graph.json fallito dopo 3 tentativi')
+    else:
+        print(f'pdf_graph.json salvato ({len(edges_finali)} edges)')
 
 if __name__ == '__main__':
     main()
