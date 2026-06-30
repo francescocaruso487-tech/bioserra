@@ -1742,142 +1742,14 @@ async function _syncStoricoGitHub(plant, raccoltaStr, durata) {
 }
 
 /* ══════════════════════════════════════════════════════════════
-   AI CHAT — Groq Llama3 (sempre attivo, zero config)
+   FIX Rev.17: rimosso blocco "AI CHAT — Groq Llama3" legacy.
+   Era codice morto: tutti gli elementi DOM target (#ai-chat, #ai-input,
+   #ai-daily-content, ecc.) non esistono più nell'HTML da quando il
+   Laboratorio è passato alla icon-grid + Cervello AI dedicato
+   (cervSend/cervHistory in laboratorio.js, ora su Llama via OpenRouter).
+   Esponeva inutilmente una chiave Groq hardcoded senza alcun beneficio
+   funzionale (mai più raggiungibile da nessuna UI).
 ══════════════════════════════════════════════════════════════ */
-
-const PIANTE_CTX = 'Autofiorenti: Epsilon F1(ID:7,germ 21/04,taglio 20/06), Milky Way(ID:1,germ 23/04,taglio 22/07), Titan(ID:2,germ 22/04,taglio 21/07), Medusa(ID:3,germ 21/04,taglio 20/07), Gaia(ID:8,germ 21/04,taglio 15/07). Femminizzate: Astro Lemonade(ID:4,taglio 30/10), Cosmic Cheddar(ID:11,taglio 30/10), Orbital Banana(ID:6,taglio 30/10), Royal Gorilla(ID:10,taglio 09/11), Mexican Rush(ID:9,taglio 09/11).';
-const MANUALE_CTX = 'Serra Living Soil: 10 vasi 10L, substrato BioBizz+cocco+SuperSoil+Humus+micorrize. Additivi: Melassa 1ml/L ogni 15gg; Miscela organica 1 cucchiaio/vaso/mese; Infuso ortiche 1:10 ogni mese; Te banana+cenere ogni 2 sett da mese 5; Etilene mesi 7-8. Esperimenti: elettrocultura, Lakhovsky, pila galvanica Fe-Cu, acqua magnetizzata, Pantacle rame.';
-
-const _GK = ['gsk_4WWWCiu82jj6fg9','gsYCNWGdyb3FYyb8Ndg1','gHyT6a7BwK8dFofZ8'].join('');
-const GROQ_MODEL = 'llama-3.3-70b-versatile';
-const GROQ_FALLBACK = 'llama3-8b-8192';
-
-let aiHistory = [];
-let aiDailyCache = { date: '', text: '' };
-
-function buildSystem() {
-  const oggi = new Date().toLocaleDateString('it-IT', {weekday:'long', day:'numeric', month:'long', year:'numeric'});
-  return 'Sei BioSerra AI, assistente esperto di coltivazione Living Soil biologica.' +
-    ' Oggi: ' + oggi + '.' +
-    ' Piante: ' + PIANTE_CTX +
-    ' Manuale: ' + MANUALE_CTX +
-    ' Rispondi SEMPRE in italiano, conciso e pratico. Usa emoji per i punti chiave.';
-}
-
-/* ─── Chiamata Groq con fallback automatico ─── */
-async function callGroq(messages, model) {
-  model = model || GROQ_MODEL;
-  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer ' + _GK
-    },
-    body: JSON.stringify({ model: model, max_tokens: 800, messages: messages, temperature: 0.7 })
-  });
-  const data = await res.json();
-  // Se il modello è dismesso, riprova con il fallback
-  if (data.error) {
-    const msg = data.error.message || '';
-    if ((msg.includes('decommissioned') || msg.includes('deprecated')) && model !== GROQ_FALLBACK) {
-      return callGroq(messages, GROQ_FALLBACK);
-    }
-    throw new Error(msg || 'Errore Groq');
-  }
-  return data.choices?.[0]?.message?.content || 'Nessuna risposta.';
-}
-
-/* ─── Consigli giornalieri dinamici ─── */
-async function aiGenerateDaily() {
-  const dc  = document.getElementById('ai-daily-content');
-  const dm  = document.getElementById('ai-daily-meta');
-  const btn = document.getElementById('ai-daily-refresh');
-  if (!dc) return;
-  if (btn) { btn.textContent = '⏳'; btn.disabled = true; }
-  dc.textContent = '⏳ Analisi in corso…';
-
-  const oggi = new Date().toLocaleDateString('it-IT', {weekday:'long', day:'numeric', month:'long'});
-  const msgs = [
-    { role: 'system', content: buildSystem() },
-    { role: 'user', content:
-      'Analizza la mia serra oggi (' + oggi + ') e dammi:\n' +
-      '1) Le 2-3 azioni PIÙ URGENTI da fare oggi\n' +
-      '2) Una cosa da controllare questa settimana\n' +
-      '3) La pianta che merita più attenzione in questo momento\n' +
-      'Max 120 parole. Sii diretto e usa emoji.'
-    }
-  ];
-
-  try {
-    const reply = await callGroq(msgs);
-    dc.textContent = reply;
-    const today = new Date().toISOString().slice(0, 10);
-    aiDailyCache = { date: today, text: reply };
-    if (dm) dm.textContent = 'Aggiornato alle ' + new Date().toLocaleTimeString('it-IT', {hour:'2-digit', minute:'2-digit'});
-  } catch(e) {
-    dc.textContent = '⚠️ ' + (e.message || 'Errore di connessione. Riprova.');
-  }
-  if (btn) { btn.textContent = '🔄 Aggiorna'; btn.disabled = false; }
-}
-
-/* ─── Chat principale ─── */
-async function aiSend() {
-  const input = document.getElementById('ai-input');
-  const msg = (input.value || '').trim();
-  if (!msg) return;
-  input.value = '';
-  appendMsg(msg, 'user');
-  aiHistory.push({ role: 'user', content: msg });
-  const loading = appendMsg('⚡ Groq elabora…', 'bot loading');
-  try {
-    const msgs = [
-      { role: 'system', content: buildSystem() },
-      ...aiHistory.slice(0, -1),
-      { role: 'user', content: msg }
-    ];
-    const reply = await callGroq(msgs);
-    loading.className = 'ai-msg bot';
-    loading.textContent = reply;
-    aiHistory.push({ role: 'assistant', content: reply });
-  } catch(e) {
-    loading.className = 'ai-msg bot';
-    loading.textContent = '⚠️ ' + (e.message || 'Errore. Riprova tra un momento.');
-  }
-  document.getElementById('ai-chat').scrollTop = 99999;
-}
-
-function aiQuick(msg) {
-  document.getElementById('ai-input').value = msg;
-  aiSend();
-}
-
-/* ─── Init sezione AI ─── */
-function aiInitUI() {
-  const chat = document.getElementById('ai-chat');
-  if (chat && chat.children.length === 0) {
-    appendMsg('⚡ BioSerra AI pronto — Groq Llama3 attivo!\n\nChiedimi qualsiasi cosa sulle tue 10 piante, oppure premi uno dei bottoni rapidi!', 'bot');
-  }
-  // Genera analisi giornaliera se non già fatto oggi
-  const today = new Date().toISOString().slice(0, 10);
-  const dc = document.getElementById('ai-daily-content');
-  if (aiDailyCache.date === today && aiDailyCache.text) {
-    if (dc) dc.textContent = aiDailyCache.text;
-  } else {
-    aiGenerateDaily();
-  }
-}
-
-function appendMsg(text, cls) {
-  const chat = document.getElementById('ai-chat');
-  const div = document.createElement('div');
-  div.className = 'ai-msg ' + cls;
-  div.textContent = text;
-  chat.appendChild(div);
-  chat.scrollTop = 99999;
-  return div;
-}
-
-function updateCfgKeyStatus() {}
 
 /* ══════════════════════════════════════════════════════════════
    JSON DATA LOADER — Legge file JSON dalla repository GitHub
