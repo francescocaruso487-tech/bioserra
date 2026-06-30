@@ -333,6 +333,47 @@ function labCatColor(cat) {
 }
 
 // Costruisce lista pratiche unificata ordinata per rilevanza contestuale
+// (4) Feedback pratiche 👍/👎: persistito in localStorage, alimenta il ranking
+// nei giorni successivi tramite un boost sommato alla rilevanza in labBuildPratiche.
+function praticaLoadFeedback() {
+  try { return JSON.parse(localStorage.getItem('bioserra_pratiche_feedback') || '{}'); }
+  catch(e) { return {}; }
+}
+function praticaSaveFeedback(map) {
+  localStorage.setItem('bioserra_pratiche_feedback', JSON.stringify(map));
+}
+function praticaFeedbackKey(nome) {
+  return (nome || '').toLowerCase().trim();
+}
+function praticaFeedbackBoost(nome) {
+  var map = praticaLoadFeedback();
+  var v = map[praticaFeedbackKey(nome)];
+  if (!v) return 0;
+  var score = (v.up || 0) - (v.down || 0);
+  return Math.max(-15, Math.min(score * 5, 20));
+}
+var _labPraticaFeedbackNome = null;
+function praticaVota(voto) {
+  if (!_labPraticaFeedbackNome) return;
+  var map = praticaLoadFeedback();
+  var k = praticaFeedbackKey(_labPraticaFeedbackNome);
+  if (!map[k]) map[k] = { up: 0, down: 0 };
+  if (voto > 0) map[k].up++; else map[k].down++;
+  praticaSaveFeedback(map);
+  var area = document.getElementById('lab-pratica-feedback-area');
+  if (area) area.innerHTML = praticaFeedbackHTML(_labPraticaFeedbackNome);
+  if (typeof labRenderPratiche === 'function') labRenderPratiche();
+}
+function praticaFeedbackHTML(nome) {
+  var map = praticaLoadFeedback();
+  var v = map[praticaFeedbackKey(nome)] || { up: 0, down: 0 };
+  return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">'
+    + '<div style="font-size:11px;color:var(--text3);margin-right:2px">Utile?</div>'
+    + '<button onclick="praticaVota(1)" style="background:rgba(76,175,118,0.12);border:1px solid rgba(76,175,118,0.3);border-radius:8px;padding:6px 12px;color:var(--green3);font-size:13px;cursor:pointer">\uD83D\uDC4D ' + v.up + '</button>'
+    + '<button onclick="praticaVota(-1)" style="background:rgba(224,82,82,0.1);border:1px solid rgba(224,82,82,0.3);border-radius:8px;padding:6px 12px;color:#e05252;font-size:13px;cursor:pointer">\uD83D\uDC4E ' + v.down + '</button>'
+    + '</div>';
+}
+
 function labBuildPratiche() {
   var oggi = new Date();
   var dayIndex = Math.floor(oggi.getTime() / 86400000); // cambia ogni giorno
@@ -386,7 +427,7 @@ function labBuildPratiche() {
         descrizione: e.obiettivo || e.descrizione || '',
         badge: 'ATTIVA',
         badgeColor: 'var(--green3)',
-        rilevanza: 95 + boost,
+        rilevanza: 95 + boost + praticaFeedbackBoost(e.nome),
         tipo: 'esp_attivo',
         data: e,
         idx: i
@@ -400,6 +441,7 @@ function labBuildPratiche() {
     var ril = t.rilevanza || 5;
     if (t.fasi_guida && t.fasi_guida.some(function(f){ return f===fasePiante; })) ril += 3;
     ril += brainBoost((t.nome||t.label||'') + ' ' + (t.descrizione||t.desc||'') + ' ' + (t.categoria||''));
+    ril += praticaFeedbackBoost(t.nome || t.label || '');
     pratiche.push({
       id: 'tec_' + i,
       nome: t.nome || t.label || '',
@@ -422,6 +464,7 @@ function labBuildPratiche() {
     var ruotate = tutte.slice(offset).concat(tutte.slice(0, offset));
     ruotate.slice(0, 12).forEach(function(e, i) {
       var boost = brainBoost((e.nome||'') + ' ' + (e.descrizione||'') + ' ' + (e.obiettivo||'') + ' ' + (e.categoria||''));
+      var fbBoost = praticaFeedbackBoost(e.nome);
       pratiche.push({
         id: 'esp_prop_' + i,
         nome: e.nome || '',
@@ -429,7 +472,7 @@ function labBuildPratiche() {
         descrizione: e.obiettivo || e.descrizione || '',
         badge: boost > 0 ? '⚡ CONSIGLIATA' : 'SUGGERITA',
         badgeColor: boost > 0 ? 'var(--green3)' : 'rgba(0,180,255,0.5)',
-        rilevanza: 40 + boost,
+        rilevanza: 40 + boost + fbBoost,
         tipo: 'esp_proposta',
         data: e,
         idx: i
@@ -520,6 +563,10 @@ function labPopupPratica(pid) {
     h += '<span style="font-size:10px;background:rgba(155,109,255,0.12);color:var(--el-violet);border-radius:8px;padding:4px 10px;flex-shrink:0">\uD83D\uDCC4 ' + labEsc(p.badge) + '</span>';
   }
   h += '</div>';
+
+  // (4) Area feedback 👍/👎
+  _labPraticaFeedbackNome = p.nome;
+  h += '<div id="lab-pratica-feedback-area">' + praticaFeedbackHTML(p.nome) + '</div>';
 
   // Toggle attiva/disattiva
   if (p.tipo === 'esp_attivo') {
@@ -1627,6 +1674,17 @@ function labPopupSecondBrain() {
   + 'style="background:rgba(0,180,255,0.2);border:1px solid rgba(0,180,255,0.4);border-radius:10px;'
   + 'padding:10px 16px;color:#00b4ff;font-size:16px;cursor:pointer;flex-shrink:0">\u25B6</button>'
   + '</div>'
+  // (3) Filtro ricerca per fase coltura (valori reali presenti in concetti_index.json: fasi_guida[])
+  + '<div style="display:flex;gap:8px;margin-top:8px">'
+  + '<select id="sb-filter-fase" style="flex:1;background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.2);'
+  + 'border-radius:8px;padding:6px 8px;color:#b8e0ff;font-size:11px">'
+  +   '<option value="">Tutte le fasi</option>'
+  +   '<option value="germinazione">\uD83C\uDF31 Germinazione</option>'
+  +   '<option value="vegetazione">\uD83C\uDF3F Vegetazione</option>'
+  +   '<option value="fioritura">\uD83C\uDF38 Fioritura</option>'
+  +   '<option value="essiccazione">\uD83C\uDF42 Essiccazione</option>'
+  + '</select>'
+  + '</div>'
   + '<div style="font-size:10px;color:var(--text3);margin-top:6px">Usa linguaggio naturale — la risposta sintetizza i PDF e usa l\u2019AI</div>'
   + '</div>'
 
@@ -1882,12 +1940,37 @@ function labSbNodeClick(d) {
    SECOND BRAIN — ricerca semantica → sintesi AI
 ══════════════════════════════════════════════════════════════ */
 
+// (3) Mappa pdf_id -> Set(fasi) costruita da concetti_index.json (campo fasi_guida + pdf_ids per concetto).
+// Cache: ricalcolata solo se labConcettiData cambia (controllo via riferimento oggetto).
+var _labSbPdfFaseMapCache = null;
+var _labSbPdfFaseMapSrc = null;
+function labSbBuildPdfFaseMap() {
+  if (_labSbPdfFaseMapCache && _labSbPdfFaseMapSrc === labConcettiData) return _labSbPdfFaseMapCache;
+  var map = {};
+  if (labConcettiData && Array.isArray(labConcettiData.concetti)) {
+    labConcettiData.concetti.forEach(function(c) {
+      var fasi = c.fasi_guida || [];
+      var pdfIds = c.pdf_ids || [];
+      if (!fasi.length || !pdfIds.length) return;
+      pdfIds.forEach(function(pid) {
+        if (!map[pid]) map[pid] = new Set();
+        fasi.forEach(function(f) { map[pid].add(f); });
+      });
+    });
+  }
+  _labSbPdfFaseMapCache = map;
+  _labSbPdfFaseMapSrc = labConcettiData;
+  return map;
+}
+
 async function labSbSearch() {
   var input = document.getElementById('sb-search-input');
   var resEl = document.getElementById('sb-search-results');
   if (!input || !resEl) return;
   var query = input.value.trim();
   if (!query) return;
+
+  var faseFilter = (document.getElementById('sb-filter-fase') || {}).value || '';
 
   resEl.innerHTML = '<div style="color:rgba(0,180,255,0.5);font-size:12px;padding:10px;text-align:center">\u23F3 Cerco nel knowledge base\u2026</div>';
 
@@ -1940,6 +2023,17 @@ async function labSbSearch() {
     }).slice(0,5).map(function(a){
       return { titolo:a.titolo||'', sommario:a.sommario||'', tecniche:a.tecniche_chiave||[], consiglio:a.consiglio_coltivazione||a.consiglio_elettrocultura||'', estratto:a.estratto_chiave||'', score:0.8, id:a.id };
     });
+  }
+
+  // (3) Applica filtro fase, se impostato: usa la mappa pdf_id -> fasi_guida da concetti_index.json.
+  // Se il filtro azzera tutti i risultati, lo ignoriamo (meglio mostrare qualcosa che niente).
+  if (faseFilter && topPdf.length) {
+    var pdfFasiMap = labSbBuildPdfFaseMap();
+    var filtrati = topPdf.filter(function(s) {
+      var fasi = pdfFasiMap[s.id];
+      return fasi && fasi.has(faseFilter);
+    });
+    if (filtrati.length) topPdf = filtrati;
   }
 
   if (!topPdf.length) {
