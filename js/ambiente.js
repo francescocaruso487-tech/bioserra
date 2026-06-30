@@ -2111,7 +2111,10 @@ function _renderCalBioGrid() {
     const ct = getDayType(date); const bioT = DAY_TYPES[ct.type];
     const ds = date.toISOString().slice(0,10);
     const isToday = ds === todayStr;
-    cells += `<div class="bio-cell ${bioT.color}${isToday?' bio-today':''}" onclick="openCalBioDayPopup(${_calBioY},${_calBioM},${d})" title="${bioT.label}">${d}</div>`;
+    // FIX Rev.16: il CSS definisce .bio-cell.day-frutto/.day-fiore/.day-radice/.day-foglia
+    // e .bio-cell.today — qui si generavano classi senza prefisso ("frutto", "bio-today")
+    // che non combaciavano con nessuna regola CSS: griglia sempre monocolore, oggi non evidenziato.
+    cells += `<div class="bio-cell day-${ct.type}${isToday?' today':''}" onclick="openCalBioDayPopup(${_calBioY},${_calBioM},${d})" title="${bioT.label}">${d}</div>`;
   }
   grid.innerHTML = cells;
 }
