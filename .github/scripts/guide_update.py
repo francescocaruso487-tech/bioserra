@@ -15,6 +15,30 @@ HEADERS_GH = {
     'X-GitHub-Api-Version': '2022-11-28'
 }
 
+# Campi testo GENERATO (no tecniche_pdf/pdf_fonti: riferimenti/ID ai PDF sorgente, mai toccare)
+SANITIZE_FIELDS_STR  = ['titolo', 'contenuto_completo', 'timeline_caserta']
+SANITIZE_FIELDS_LIST = ['punti_chiave', 'errori_comuni', 'tecniche_elettrocultura', 'tecniche_biodinamica', 'indicatori_visivi']
+
+def sanitize_testo(t):
+    """Regola progetto: niente 'cannabis' nel testo generato/mostrato — sostituisce con 'pianta'."""
+    if not t or not isinstance(t, str):
+        return t
+    t = re.sub(r'\s*\(\s*[Cc]annabis\s+sativa\s+L\.?\s*\)', '', t)
+    t = re.sub(r'\bpianta\s+di\s+[Cc]annabis\b', 'pianta', t, flags=re.IGNORECASE)
+    t = t.replace('CANNABIS', 'PIANTA')
+    t = t.replace('Cannabis', 'Pianta')
+    t = t.replace('cannabis', 'pianta')
+    return t
+
+def sanitizza_guida(g):
+    for campo in SANITIZE_FIELDS_STR:
+        if campo in g and isinstance(g[campo], str):
+            g[campo] = sanitize_testo(g[campo])
+    for campo in SANITIZE_FIELDS_LIST:
+        if campo in g and isinstance(g[campo], list):
+            g[campo] = [sanitize_testo(x) if isinstance(x, str) else x for x in g[campo]]
+    return g
+
 FASI = [
     {'fase': 'germinazione',  'keywords': ['germinazione','seme','radichetta','substrato','umidita iniziale']},
     {'fase': 'vegetazione',   'keywords': ['vegetazione','crescita','foglie','azoto','radici','luce']},
@@ -301,6 +325,7 @@ def main():
             guida = guide_esistenti.get(fase) or guida_fallback(fase_info)
 
         guida['data_aggiornamento'] = oggi
+        sanitizza_guida(guida)
         guide_nuove.append(guida)
         time.sleep(2)
 
