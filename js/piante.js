@@ -749,6 +749,63 @@ function labEscSafe(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
+// (12) Grafico vigore/crescita: combina lo storico microclima (7, da ambiente.js) filtrato
+// dalla germinazione della pianta, con le osservazioni manuali registrate nel diario
+// (tipo 'osservazione', già esistente — nessun nuovo storage dedicato).
+function openGraficoVigore(id) {
+  const modal   = document.getElementById('modal-grafico-vigore');
+  const title   = document.getElementById('vigore-modal-title');
+  const chart   = document.getElementById('vigore-chart-temp');
+  const obsList = document.getElementById('vigore-osservazioni-list');
+  if (!modal || !chart || !obsList) return;
+
+  const plants = loadActivePlants();
+  const p = plants.find(x => x.id === id);
+  if (!p) return;
+  title.textContent = '📈 Vigore — ' + (p.icon || '') + ' ' + labEscSafe(p.name);
+
+  const storico = (typeof microclimaLoadStorico === 'function') ? microclimaLoadStorico() : [];
+  const filtrato = p.germDate ? storico.filter(s => s.data >= p.germDate) : storico;
+
+  if (!filtrato.length) {
+    chart.innerHTML = '<div style="text-align:center;padding:16px 0;color:var(--text3);font-size:12px;">Nessun dato microclima ancora raccolto. Lo storico si costruisce automaticamente ogni volta che apri Ambiente.</div>';
+  } else {
+    const ultimi = filtrato.slice(-30); // ultimi 30 giorni per leggibilità
+    const maxT = Math.max.apply(null, ultimi.map(s => s.tempMax != null ? s.tempMax : 0).concat([1]));
+    chart.innerHTML = '<div style="display:flex;align-items:flex-end;gap:2px;height:90px;overflow-x:auto;padding:4px 0;">'
+      + ultimi.map(s => {
+          const hMax = Math.max(4, Math.round((s.tempMax / maxT) * 80));
+          return '<div title="' + s.data + ': ' + Math.round(s.tempMin) + '°/' + Math.round(s.tempMax) + '°C" '
+            + 'style="display:flex;flex-direction:column;justify-content:flex-end;align-items:center;width:8px;flex-shrink:0;">'
+            + '<div style="width:5px;height:' + hMax + 'px;background:#ef9a9a;border-radius:2px 2px 0 0;"></div>'
+            + '</div>';
+        }).join('')
+      + '</div>'
+      + '<div style="font-size:10px;color:var(--text3);margin-top:4px;">Ultimi ' + ultimi.length + ' giorni · barre = temperatura massima giornaliera</div>';
+  }
+
+  const diario = loadDiario();
+  const osservazioni = diario.filter(iv => iv.tipo === 'osservazione' && iv.piante && iv.piante.indexOf(id) !== -1).slice().reverse();
+  if (!osservazioni.length) {
+    obsList.innerHTML = '<div style="text-align:center;padding:14px 0;color:var(--text3);font-size:12px;">Nessuna osservazione registrata. Usa il Diario (tipo "Osservazione") per annotare altezza, colore foglie, ecc.</div>';
+  } else {
+    obsList.innerHTML = osservazioni.map(iv => {
+      const dataFmt = iv.data ? new Date(iv.data + 'T12:00:00').toLocaleDateString('it-IT', { day: '2-digit', month: 'short' }) : '';
+      return '<div style="border-bottom:1px solid var(--border);padding:6px 0;font-size:12px;">'
+        + '<span style="color:var(--text3);">' + dataFmt + '</span> '
+        + '<span style="color:var(--text2);">' + labEscSafe(iv.note || '(nessuna nota)') + '</span>'
+        + '</div>';
+    }).join('');
+  }
+
+  modal.classList.add('open');
+}
+
+function closeGraficoVigore(e) {
+  const m = document.getElementById('modal-grafico-vigore');
+  if (!e || e.target === m) { if (m) m.classList.remove('open'); }
+}
+
 function checkHarvestAlerts() {
   const card = document.getElementById('alerts-oggi-card');
   const list = document.getElementById('alerts-oggi-list');
@@ -1039,6 +1096,7 @@ function renderActivePlants() {
         <button onclick="openDiarioModal(${p.id})" style="background:rgba(100,181,246,0.1);border:1px solid rgba(100,181,246,0.3);border-radius:10px;padding:8px 4px;color:#64b5f6;font-size:12px;cursor:pointer;text-align:center;font-weight:600;">Diario</button>
         ${ovr ? `<button onclick="resetPhaseOverride(${p.id})" style="background:rgba(239,83,80,0.1);border:1px solid rgba(239,83,80,0.25);border-radius:10px;padding:8px 4px;color:#ef9a9a;font-size:12px;cursor:pointer;text-align:center;">↩ Ripristina</button>` : `<button onclick="saveGermDate(${p.id}, document.querySelector('[data-id=\\'${p.id}\\']').value)" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:8px 4px;color:var(--text2);font-size:12px;cursor:pointer;text-align:center;">🌱 Aggior. germ.</button>`}
         ${p.type === 'femm' && !loadFlorConfirm(p.id) ? `<button onclick="confirmFlorStart(${p.id})" style="background:rgba(171,71,188,0.15);border:1px solid rgba(171,71,188,0.3);border-radius:10px;padding:8px 4px;color:#ce93d8;font-size:12px;cursor:pointer;text-align:center;">🌸 Conf. fior.</button>` : `<button onclick="renderTimelineInBox(${p.id})" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:8px 4px;color:var(--text2);font-size:12px;cursor:pointer;text-align:center;">🔄 Aggiorna</button>`}
+        <button onclick="openGraficoVigore(${p.id})" style="background:rgba(76,175,118,0.1);border:1px solid rgba(76,175,118,0.3);border-radius:10px;padding:8px 4px;color:var(--green3);font-size:12px;cursor:pointer;text-align:center;">📈 Vigore</button>
       </div>`;
 
     // ── Card header ──
