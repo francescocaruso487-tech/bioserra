@@ -1858,6 +1858,7 @@ function openDiarioModal(id) {
 
   diarioSwitchTab('aggiungi');
   document.getElementById('modal-diario-pianta').classList.add('open');
+  diarioAutoSync();
 }
 
 function closeDiarioModal(e) {
@@ -1997,4 +1998,25 @@ async function archivioAutoSync() {
     }
   } catch(e) { /* silenzioso */ }
 }
+
+// Reverse-sync diario: GitHub -> localStorage. Le voci salvate da un'altra sessione/telefono
+// (o ripristinate dopo reinstallo PWA) vengono importate senza duplicare quelle già locali.
+async function diarioAutoSync() {
+  try {
+    const data = await fetchGHJson(_DIARIO_PATH);
+    if (!data || !Array.isArray(data.interventi) || !data.interventi.length) return;
+    const local = loadDiario();
+    const lIds = new Set(local.map(iv => iv.id));
+    const nuovi = data.interventi.filter(iv => iv && iv.id != null && !lIds.has(iv.id));
+    if (nuovi.length) {
+      const merged = local.concat(nuovi).sort((a,b) => (a.id||0) - (b.id||0));
+      saveDiario(merged);
+      if (_diarioPiantaId != null && typeof diarioRenderStorico === 'function') {
+        diarioRenderStorico(_diarioPiantaId);
+      }
+      console.log('[BioSerra] diarioAutoSync: importate ' + nuovi.length + ' voci da GitHub');
+    }
+  } catch(e) { /* silenzioso */ }
+}
+
 
