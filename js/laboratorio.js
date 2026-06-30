@@ -45,21 +45,34 @@ var LAB_RAW   = 'https://raw.githubusercontent.com/francescocaruso487-tech/biose
 /* ══════════════════════════════════════════════════════════════
    CERVELLO AI — OpenRouter / Llama (gratuito, sostituisce Anthropic
    a pagamento). UNICO punto da aggiornare quando la chiave ruota.
-   Modello primario: Llama 3.3 70B free. Fallback automatico su un
-   secondo modello gratuito se il primo è sovraccarico/non disponibile
-   (i modelli :free di OpenRouter condividono capacità e possono dare
-   429 nei picchi — vedi note Rev.16).
+   FIX Rev.16b: i singoli slug :free di OpenRouter vengono ritirati
+   o spostati a pagamento senza preavviso (causa del banner "this
+   model is unavailable for free... use this slug instead"). Per
+   evitare di dover aggiornare uno slug morto ogni volta, il primo
+   tentativo usa "openrouter/free", il router automatico ufficiale
+   di OpenRouter che sceglie da solo un modello gratuito disponibile
+   in quel momento. Se anche quello fallisce, si prova in sequenza
+   una lista di slug noti, scartando quelli morti senza bloccare
+   l'utente con un errore tecnico in chat.
 ══════════════════════════════════════════════════════════════ */
 function labLlamaKey() {
   return ['sk-or-v1-','954d04f984416fdf','c077691ef22c84c6','3eeab4bd9803ba86','4845f2f1c464f87a'].join('');
 }
-var LAB_LLAMA_MODEL    = 'meta-llama/llama-3.3-70b-instruct:free';
-var LAB_LLAMA_FALLBACK = 'meta-llama/llama-4-scout:free';
+var LAB_LLAMA_MODELS = [
+  'openrouter/free',
+  'meta-llama/llama-3.3-70b-instruct:free',
+  'meta-llama/llama-4-scout:free',
+  'deepseek/deepseek-chat:free'
+];
+// Alias retro-compatibili (alcune chiamate più sotto nel file li referenziano)
+var LAB_LLAMA_MODEL    = LAB_LLAMA_MODELS[0];
+var LAB_LLAMA_FALLBACK = LAB_LLAMA_MODELS[1];
 
 /* Chiamata unificata: stesso schema OpenAI-compatibile per tutti e 3 i
-   punti d'uso (cervSend, sintesi Second Brain, labAnalizzaPdf). Ritorna
+   punti d'uso (cervSend, sintesi Second Brain, labAnalizzaPdf). Prova
+   gli slug di LAB_LLAMA_MODELS in ordine finché uno risponde. Ritorna
    il testo della risposta, o lancia un errore leggibile (mai un
-   "Errore." generico) se entrambi i modelli falliscono. */
+   "Errore." generico) se TUTTI i modelli falliscono. */
 async function labLlamaChat(systemPrompt, messages, maxTokens) {
   async function tryModel(model) {
     var resp = await fetch('https://openrouter.ai/api/v1/chat/completions', {
@@ -81,19 +94,17 @@ async function labLlamaChat(systemPrompt, messages, maxTokens) {
     return data;
   }
 
-  var data = await tryModel(LAB_LLAMA_MODEL);
-  var testo = (data && data.choices && data.choices[0] && data.choices[0].message) ? data.choices[0].message.content : null;
-
-  if (!testo) {
-    console.warn('[BioSerra] Llama primario non disponibile, provo fallback:', data && data.error);
-    var data2 = await tryModel(LAB_LLAMA_FALLBACK);
-    testo = (data2 && data2.choices && data2.choices[0] && data2.choices[0].message) ? data2.choices[0].message.content : null;
-    if (!testo) data = data2 || data;
+  var data = null, testo = null;
+  for (var mi = 0; mi < LAB_LLAMA_MODELS.length; mi++) {
+    data = await tryModel(LAB_LLAMA_MODELS[mi]);
+    testo = (data && data.choices && data.choices[0] && data.choices[0].message) ? data.choices[0].message.content : null;
+    if (testo) break;
+    console.warn('[BioSerra] Modello free non disponibile (' + LAB_LLAMA_MODELS[mi] + '), provo il successivo:', data && data.error);
   }
 
   if (!testo) {
     var err = data && data.error;
-    var msg = err ? (err.message || err.code || JSON.stringify(err)) : 'risposta vuota da entrambi i modelli free';
+    var msg = err ? (err.message || err.code || JSON.stringify(err)) : 'nessuno dei modelli free OpenRouter ha risposto';
     if (err && (err.code === 401 || /api.?key/i.test(msg))) msg = 'Chiave OpenRouter non valida/mancante — generala su openrouter.ai/keys.';
     if (err && (err.code === 429 || /rate.?limit/i.test(msg))) msg = 'Limite richieste OpenRouter raggiunto (free tier), riprova tra poco.';
     throw new Error(msg);
@@ -412,6 +423,37 @@ function praticaFeedbackBoost(nome) {
   var score = (v.up || 0) - (v.down || 0);
   return Math.max(-15, Math.min(score * 5, 20));
 }
+// (Rev.16b) Attiva/disattiva pratica — globale per tutta la serra (10 piante),
+// non per singola pianta: la tecnica/elettrocultura non ha scope per-pianta.
+function praticaLoadAttive() {
+  try { return JSON.parse(localStorage.getItem('bioserra_pratiche_attive') || '{}'); }
+  catch(e) { return {}; }
+}
+function praticaSaveAttive(map) {
+  localStorage.setItem('bioserra_pratiche_attive', JSON.stringify(map));
+}
+function praticaIsAttiva(nome) {
+  var map = praticaLoadAttive();
+  var v = map[praticaFeedbackKey(nome)];
+  return v !== false; // default: attiva
+}
+function praticaToggleAttiva() {
+  if (!_labPraticaFeedbackNome) return;
+  var map = praticaLoadAttive();
+  var k = praticaFeedbackKey(_labPraticaFeedbackNome);
+  map[k] = !praticaIsAttiva(_labPraticaFeedbackNome);
+  praticaSaveAttive(map);
+  var area = document.getElementById('lab-pratica-toggle-area');
+  if (area) area.innerHTML = praticaToggleHTML(_labPraticaFeedbackNome);
+  if (typeof labRenderPratiche === 'function') labRenderPratiche();
+}
+function praticaToggleHTML(nome) {
+  var on = praticaIsAttiva(nome);
+  return '<button onclick="praticaToggleAttiva()" style="width:100%;padding:9px;margin-bottom:10px;border-radius:10px;font-size:12px;font-weight:700;cursor:pointer;'
+    + (on ? 'background:rgba(76,175,118,0.12);border:1px solid rgba(76,175,118,0.3);color:var(--green3)'
+          : 'background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);color:var(--text3)')
+    + '">' + (on ? '✅ Attiva per tutte e 10 le piante — tocca per disattivare' : '⏸️ Disattivata — tocca per riattivare') + '</button>';
+}
 var _labPraticaFeedbackNome = null;
 function praticaVota(voto) {
   if (!_labPraticaFeedbackNome) return;
@@ -493,21 +535,28 @@ function labBuildPratiche() {
     });
   }
 
-  // 2. Tecniche da concetti_index (con rilevanza + contesto fase piante + brain boost)
-  var fasePiante = labGetFaseAttuale();
+  // 2. Tecniche da concetti_index (rilevanza + brain boost + feedback,
+  // FIX Rev.16b: rimosso il boost/peso per fase piante — le tecniche
+  // elettrocultura/biodinamiche si applicano a tutta la serra, non a
+  // una fase di una singola pianta: ora sono SEMPRE tutte presenti,
+  // ordinate solo per rilevanza. Una pratica disattivata dall'utente
+  // (praticaIsAttiva) resta visibile ma scende in fondo alla lista.
   labElTecniche.forEach(function(t, i) {
+    var nomeT = t.nome || t.label || '';
+    var attiva = praticaIsAttiva(nomeT);
     var ril = t.rilevanza || 5;
-    if (t.fasi_guida && t.fasi_guida.some(function(f){ return f===fasePiante; })) ril += 3;
-    ril += brainBoost((t.nome||t.label||'') + ' ' + (t.descrizione||t.desc||'') + ' ' + (t.categoria||''));
-    ril += praticaFeedbackBoost(t.nome || t.label || '');
+    ril += brainBoost((nomeT) + ' ' + (t.descrizione || t.desc || '') + ' ' + (t.categoria || ''));
+    ril += praticaFeedbackBoost(nomeT);
+    if (!attiva) ril -= 1000; // resta in lista ma in fondo
     pratiche.push({
       id: 'tec_' + i,
-      nome: t.nome || t.label || '',
+      nome: nomeT,
       categoria: t.categoria || 'elettrocultura',
       descrizione: t.descrizione || t.desc || '',
       badge: (t.pdf_count||t.occorrenze||0) > 0 ? (t.pdf_count||t.occorrenze) + ' PDF' : null,
       badgeColor: 'var(--el-violet)',
       rilevanza: ril,
+      attiva: attiva,
       tipo: 'tecnica',
       data: t,
       idx: i
@@ -573,12 +622,12 @@ function labRenderPratiche() {
     el.innerHTML = '<div style="color:rgba(0,180,255,0.35);font-size:12px;padding:6px">Nessuna pratica disponibile.</div>';
     return;
   }
-  var fase = labGetFaseAttuale();
-  var h = '<div style="font-size:9px;color:var(--text3);margin-bottom:8px;letter-spacing:0.5px">FASE ATTUALE: <span style="color:var(--green3)">' + fase.toUpperCase() + '</span></div>';
+  var h = '';
   pratiche.slice(0, 5).forEach(function(p, i) {
     var catColor = labCatColor(p.categoria);
     var isAttiva = p.tipo === 'esp_attivo';
-    h += '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-left:2px solid ' + catColor + ';border-radius:0 10px 10px 0;padding:10px 12px;margin-bottom:7px;cursor:pointer;transition:background 0.2s" onclick="labPopupPratica(\'' + p.id + '\')">';
+    var isOff = p.tipo === 'tecnica' && p.attiva === false;
+    h += '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-left:2px solid ' + catColor + ';border-radius:0 10px 10px 0;padding:10px 12px;margin-bottom:7px;cursor:pointer;transition:background 0.2s;' + (isOff ? 'opacity:0.5' : '') + '" onclick="labPopupPratica(\'' + p.id + '\')">';
     h += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">';
     h += '<div style="flex:1">';
     h += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:3px">' + labEsc(p.nome) + '</div>';
@@ -586,6 +635,7 @@ function labRenderPratiche() {
     h += '</div>';
     h += '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0">';
     if (isAttiva) h += '<span style="font-size:9px;background:rgba(76,175,118,0.2);color:var(--green3);border-radius:4px;padding:2px 6px;font-weight:700">\u2705 ATTIVA</span>';
+    if (isOff) h += '<span style="font-size:9px;background:rgba(255,255,255,0.08);color:var(--text3);border-radius:4px;padding:2px 6px">\u23F8\uFE0F disattivata</span>';
     if (p.badge && !isAttiva) h += '<span style="font-size:9px;background:rgba(155,109,255,0.15);color:var(--el-violet);border-radius:4px;padding:2px 6px">' + labEsc(p.badge) + '</span>';
     h += '<span style="font-size:9px;color:' + catColor + ';opacity:0.8">' + labEsc(p.categoria) + '</span>';
     h += '</div></div></div>';
@@ -631,6 +681,8 @@ function labPopupPratica(pid) {
     h += '<button onclick="labEspDisattiva(' + p.idx + ');labPopupClose()" style="width:100%;padding:8px;margin-bottom:14px;background:rgba(224,82,82,0.1);border:1px solid rgba(224,82,82,0.3);border-radius:10px;color:#e05252;font-size:12px;font-weight:700;cursor:pointer">\u23F9 Disattiva questa pratica</button>';
   } else if (p.tipo === 'esp_proposta') {
     h += '<button onclick="labEspAttiva(' + p.idx + ');labPopupClose()" style="width:100%;padding:8px;margin-bottom:14px;background:rgba(76,175,118,0.12);border:1px solid rgba(76,175,118,0.3);border-radius:10px;color:var(--green3);font-size:12px;font-weight:700;cursor:pointer">\u25B6 Attiva questa pratica</button>';
+  } else if (p.tipo === 'tecnica') {
+    h += '<div id="lab-pratica-toggle-area">' + praticaToggleHTML(p.nome) + '</div>';
   }
 
   // Sezione descrizione
@@ -753,9 +805,8 @@ function labPopupPratica(pid) {
 // Popup tutte le pratiche — lista intelligente completa
 function labPopupAllPratiche() {
   var pratiche = labBuildPratiche();
-  var fase = labGetFaseAttuale();
   var h = '<div style="font-size:9px;color:var(--el-blue);font-weight:700;letter-spacing:1px;margin-bottom:4px">\u26A1 PRATICHE (' + pratiche.length + ')</div>';
-  h += '<div style="font-size:9px;color:var(--text3);margin-bottom:12px">Ordinate per rilevanza \u00B7 Fase attuale: <span style="color:var(--green3)">' + fase + '</span></div>';
+  h += '<div style="font-size:9px;color:var(--text3);margin-bottom:12px">Tutte le pratiche estratte da PDF e siti \u00B7 ordinate per rilevanza</div>';
 
   // Filtri rapidi
   h += '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px" id="pratiche-filtri">';
