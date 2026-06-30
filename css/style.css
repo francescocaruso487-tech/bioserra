@@ -633,6 +633,7 @@
   .aoc-item.tipo-raccolta  { background: rgba(239,83,80,0.13);  color: #ef9a9a; }
   .aoc-item.tipo-fioritura { background: rgba(171,71,188,0.13); color: #ce93d8; }
   .aoc-item.tipo-essiccazione { background: rgba(255,160,0,0.13); color: #ffcc80; }
+  .aoc-item.tipo-sole { background: rgba(255,213,79,0.13); color: #ffe082; }
   .json-item-title { font-weight: 700; color: var(--text); margin-bottom: 3px; font-size: 13px; }
   .json-item-body  { font-size: 12px; color: var(--text3); line-height: 1.5; margin-top: 3px; }
   .json-tag {
