@@ -155,6 +155,33 @@ function labUpdateBadges() {
    RENDER — KNOWLEDGE DIGEST (compatto in card campo)
 ══════════════════════════════════════════════════════════════ */
 
+// (20) Modalità briefing vocale: legge ad alta voce il contenuto della card
+// Consiglio del Giorno tramite Web Speech API (nessun costo, nessuna dipendenza esterna).
+let _labSpeakUtterance = null;
+function labSpeakBriefing() {
+  const btn = document.getElementById('lab-tc-speak-btn');
+  if (!('speechSynthesis' in window)) {
+    if (btn) btn.title = 'Lettura vocale non supportata su questo browser';
+    return;
+  }
+  // Toggle: se sta già parlando, ferma
+  if (window.speechSynthesis.speaking) {
+    window.speechSynthesis.cancel();
+    if (btn) btn.textContent = '🔊';
+    return;
+  }
+  const el = document.getElementById('lab-digest-content');
+  const testo = el ? el.innerText.trim() : '';
+  if (!testo) return;
+  _labSpeakUtterance = new SpeechSynthesisUtterance(testo);
+  _labSpeakUtterance.lang = 'it-IT';
+  _labSpeakUtterance.rate = 1.0;
+  _labSpeakUtterance.onend = function () { if (btn) btn.textContent = '🔊'; };
+  _labSpeakUtterance.onerror = function () { if (btn) btn.textContent = '🔊'; };
+  if (btn) btn.textContent = '⏹️';
+  window.speechSynthesis.speak(_labSpeakUtterance);
+}
+
 function labRenderDigest() {
   var el = document.getElementById('lab-digest-content');
   if (!el) return;
