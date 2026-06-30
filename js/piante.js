@@ -485,6 +485,46 @@ function openPhaseModal(id) {
   if (harvestInput) harvestInput.value = harvestStr;
 
   modal.classList.add('open');
+  phaseRenderChecklist();
+}
+
+// (14) Checklist contestuale di fase: pesca punti_chiave dalla guida corrispondente
+// alla fase selezionata in guide_complete.json (campo `fase`). Sola lettura, niente persistenza.
+let _guideCompleteCache = null;
+const PHASE_TO_GUIDA = {
+  germinazione: 'germinazione',
+  vegetazione: 'vegetazione',
+  'pre-fioritura': 'fioritura',
+  fioritura: 'fioritura',
+  maturazione: 'pre_raccolta',
+  pronto: 'pre_raccolta'
+};
+
+async function phaseRenderChecklist() {
+  const wrap = document.getElementById('phase-checklist-wrap');
+  const list = document.getElementById('phase-checklist-list');
+  const sel  = document.getElementById('phase-select');
+  if (!wrap || !list || !sel) return;
+  const guidaFase = PHASE_TO_GUIDA[sel.value];
+  if (!guidaFase) { wrap.style.display = 'none'; return; }
+  try {
+    if (!_guideCompleteCache) {
+      _guideCompleteCache = await fetchGHJson('data/guide_complete.json');
+    }
+    const guide = (_guideCompleteCache && Array.isArray(_guideCompleteCache.guide)) ? _guideCompleteCache.guide : [];
+    const g = guide.find(x => x.fase === guidaFase);
+    const punti = (g && Array.isArray(g.punti_chiave)) ? g.punti_chiave : [];
+    if (!punti.length) { wrap.style.display = 'none'; return; }
+    list.innerHTML = punti.map(p =>
+      `<label style="display:flex;align-items:flex-start;gap:6px;margin-bottom:6px;cursor:pointer;">
+        <input type="checkbox" style="margin-top:2px;accent-color:var(--green3);">
+        <span>${p}</span>
+      </label>`
+    ).join('');
+    wrap.style.display = 'block';
+  } catch (e) {
+    wrap.style.display = 'none';
+  }
 }
 
 function closePhaseModal(e) {
@@ -551,6 +591,69 @@ function resetPhaseOverride(id) {
 }
 
 /* ── Alert raccolta (max 7 giorni) — stabile, no intermittenza ── */
+// (15) Calendario raccolti aggregato: vista unica di tutte le piante attive
+// ordinate per data di taglio stimata, con intervallo min-max e giorni residui.
+function openCalendarioRaccolti() {
+  const modal = document.getElementById('modal-calendario-raccolti');
+  const list  = document.getElementById('calendario-raccolti-list');
+  if (!modal || !list) return;
+
+  const plants = loadActivePlants();
+  const today = new Date(); today.setHours(0,0,0,0);
+  const righe = [];
+
+  for (const p of plants) {
+    const ovr = loadPlantPhaseOverride(p.id);
+    let dateMin = null, dateMax = null;
+
+    if (ovr && ovr.harvestDate) {
+      dateMin = dateMax = new Date(ovr.harvestDate);
+    } else if (p.type === 'auto' && p.germDate) {
+      const germ = new Date(p.germDate);
+      const sunMult = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
+      dateMin = addDays(germ, Math.round(p.harvestMin * sunMult));
+      dateMax = addDays(germ, Math.round(p.harvestMax * sunMult));
+    } else if (p.type === 'femm') {
+      const fi = getEffectiveFlorStart(p);
+      dateMin = addDays(fi.date, femmFlorDays(p, p.harvestMin));
+      dateMax = addDays(fi.date, femmFlorDays(p, p.harvestMax));
+    }
+    if (!dateMin) continue;
+
+    const daysLeft = daysDiff(today, dateMin);
+    righe.push({ p, dateMin, dateMax, daysLeft });
+  }
+
+  righe.sort((a, b) => a.dateMin - b.dateMin);
+
+  if (!righe.length) {
+    list.innerHTML = '<div style="text-align:center;padding:20px 0;color:var(--text3);font-size:13px;">Nessuna pianta con data taglio calcolabile.</div>';
+  } else {
+    list.innerHTML = righe.map(r => {
+      const isUguale = r.dateMin.getTime() === r.dateMax.getTime();
+      const rangeStr = isUguale ? fmtDate(r.dateMin) : (fmtDate(r.dateMin) + ' – ' + fmtDate(r.dateMax));
+      let badge = '', badgeColor = 'var(--text3)';
+      if (r.daysLeft <= 0)      { badge = '🔴 ora';                badgeColor = '#ef9a9a'; }
+      else if (r.daysLeft <= 7) { badge = '⏳ ' + r.daysLeft + 'gg'; badgeColor = '#ffcc80'; }
+      else                      { badge = r.daysLeft + 'gg';        badgeColor = 'var(--text3)'; }
+      return `<div style="display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--border);">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:var(--text);">${r.p.icon || '🌿'} ${r.p.name}</div>
+          <div style="font-size:11px;color:var(--text3);">${rangeStr}</div>
+        </div>
+        <div style="font-size:12px;font-weight:700;color:${badgeColor};white-space:nowrap;">${badge}</div>
+      </div>`;
+    }).join('');
+  }
+
+  modal.classList.add('open');
+}
+
+function closeCalendarioRaccolti(e) {
+  const m = document.getElementById('modal-calendario-raccolti');
+  if (!e || e.target === m) { if (m) m.classList.remove('open'); }
+}
+
 function checkHarvestAlerts() {
   const card = document.getElementById('alerts-oggi-card');
   const list = document.getElementById('alerts-oggi-list');
@@ -594,12 +697,33 @@ function checkHarvestAlerts() {
         tipo: 'RACCOLTA'
       });
     }
+
+    // Alert (16): femminizzate in fioritura attiva con sole sotto la soglia ideale.
+    // Il fotoperiodo resta fisso, ma poco sole allunga la durata (cap 1.6x, vedi femmFlorDays).
+    if (p.type === 'femm' && p.idealH && currentSunHours > 0) {
+      const fiSole = getEffectiveFlorStart(p);
+      const florStarted = today >= fiSole.date;
+      const inFioritura = (ovr && ovr.currentPhase)
+        ? ['fioritura', 'pre-fioritura', 'maturazione'].includes(ovr.currentPhase)
+        : florStarted;
+      if (inFioritura) {
+        const m = Math.min(1.6, Math.max(1, p.idealH / currentSunHours));
+        if (m >= 1.15) {
+          const extraDays = Math.round(p.harvestMin * (m - 1));
+          alerts.push({
+            pianta: `${p.icon || '🌿'} ${p.name}`,
+            msg: `☀️ Poco sole (${currentSunHours}h vs ${p.idealH}h ideali): fioritura allungata di circa +${extraDays}gg`,
+            tipo: 'SOLE'
+          });
+        }
+      }
+    }
   }
 
   if (!alerts.length) { card.style.display = 'none'; return; }
 
-  const iconMap = { RACCOLTA:'🌾', FIORITURA:'🌸', ESSICCAZIONE:'🍂' };
-  const cssMap  = { RACCOLTA:'tipo-raccolta', FIORITURA:'tipo-fioritura', ESSICCAZIONE:'tipo-essiccazione' };
+  const iconMap = { RACCOLTA:'🌾', FIORITURA:'🌸', ESSICCAZIONE:'🍂', SOLE:'☀️' };
+  const cssMap  = { RACCOLTA:'tipo-raccolta', FIORITURA:'tipo-fioritura', ESSICCAZIONE:'tipo-essiccazione', SOLE:'tipo-sole' };
   list.innerHTML = alerts.map(a => `
     <div class="aoc-item ${cssMap[a.tipo] || ''}">
       <div class="aoc-icon">${iconMap[a.tipo] || '🔔'}</div>
@@ -1859,6 +1983,32 @@ function openDiarioModal(id) {
   diarioSwitchTab('aggiungi');
   document.getElementById('modal-diario-pianta').classList.add('open');
   diarioAutoSync();
+  diarioRenderBioBadge();
+}
+
+// (6) Badge giorno biodinamico nel modal diario: usa getDayType/DAY_TYPES definite in ambiente.js.
+// Guardia con typeof per non rompere se ambiente.js non fosse ancora caricato.
+function diarioRenderBioBadge() {
+  const badge = document.getElementById('diario-bio-badge');
+  if (!badge) return;
+  if (typeof getDayType !== 'function' || typeof DAY_TYPES === 'undefined') {
+    badge.style.display = 'none';
+    return;
+  }
+  try {
+    const ct = getDayType(new Date());
+    const bioT = DAY_TYPES[ct.type];
+    if (!bioT) { badge.style.display = 'none'; return; }
+    const colorMap = { frutto:'#ffb74d', fiore:'#ce93d8', radice:'#a1887f', foglia:'#80cbc4' };
+    const col = colorMap[ct.type] || 'var(--text2)';
+    badge.style.background = col + '22';
+    badge.style.color = col;
+    badge.innerHTML = bioT.icon + ' Oggi è ' + bioT.label + ' — favorisce interventi su ' +
+      (ct.type === 'frutto' ? 'fioritura/raccolta' :
+       ct.type === 'fiore'  ? 'fioritura' :
+       ct.type === 'radice' ? 'radici/substrato' : 'parte vegetativa/fogliare');
+    badge.style.display = 'block';
+  } catch (e) { badge.style.display = 'none'; }
 }
 
 function closeDiarioModal(e) {
