@@ -438,6 +438,24 @@ Rispondi SOLO JSON valido. Nessun testo fuori dal JSON."""
         risposta = mistral_chat(prompt, max_tokens=3000, temperatura=0.25)
         result = parse_json(risposta)
         if not result:
+            # DEBUG temporaneo Rev.16: salva la risposta grezza per capire
+            # perché parse_json fallisce anche con piu' token. Da rimuovere
+            # una volta diagnosticato e risolto definitivamente.
+            try:
+                dbg = f'LEN={len(risposta or "")}\n\n--- RISPOSTA GREZZA ---\n{risposta}'
+                _shadbg = gh_get_sha('data/_debug_briefing_raw.txt')
+                _bodydbg = json.dumps({
+                    'message': 'debug: risposta grezza briefing',
+                    'content': base64.b64encode(dbg.encode()).decode('ascii'),
+                    'branch': 'main',
+                    **({'sha': _shadbg} if _shadbg else {})
+                }).encode()
+                _reqdbg = urllib.request.Request(
+                    f'https://api.github.com/repos/{REPO}/contents/data/_debug_briefing_raw.txt',
+                    data=_bodydbg, headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
+                with urllib.request.urlopen(_reqdbg): pass
+            except Exception as _dbgex:
+                print(f'  debug log fallito: {_dbgex}')
             # Fallback: crea struttura minima dal testo
             print(f'  parse_json fallito, uso testo diretto')
             result = {
