@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-30T11:59:08.467340+00:00",
+  "lastUpdate": "2026-06-30T22:06:57.096Z",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -181,6 +181,26 @@
       "attivo": true,
       "data_attivazione": "2026-06-30",
       "tipo": "coltivazione_generale"
+    },
+    {
+      "id": "exp_001",
+      "nome": "Legnetto con treccia di rame e punta di rame",
+      "descrizione": "Legnetto naturale avvolto con treccia di rame terminante con punta di rame. Conduce e amplifica le energie bioelettriche dalla terra verso la pianta.",
+      "materiali": [
+        "Legnetto naturale",
+        "Treccia di rame",
+        "Punta di rame"
+      ],
+      "obiettivo": "Amplificare energia bioelettrica e conduzione terrestre",
+      "funzione": "Conduzione e amplificazione energie naturali",
+      "come_applicare": "Inserire nel terreno vicino alla base di ogni pianta. Si applica a tutte le piante contemporaneamente.",
+      "applicato_a": "tutte_le_piante",
+      "attivo": true,
+      "data_attivazione": "2026-06-30",
+      "fonte": "Guida personale",
+      "categoria": "elettrocultura",
+      "note": "",
+      "tipo": "elettrocultura"
     }
   ],
   "storico_cicli": [],
@@ -1645,26 +1665,6 @@
       "tipo": "irrigazione"
     },
     {
-      "id": "exp_001",
-      "nome": "Legnetto con treccia di rame e punta di rame",
-      "descrizione": "Legnetto naturale avvolto con treccia di rame terminante con punta di rame. Conduce e amplifica le energie bioelettriche dalla terra verso la pianta.",
-      "materiali": [
-        "Legnetto naturale",
-        "Treccia di rame",
-        "Punta di rame"
-      ],
-      "obiettivo": "Amplificare energia bioelettrica e conduzione terrestre",
-      "funzione": "Conduzione e amplificazione energie naturali",
-      "come_applicare": "Inserire nel terreno vicino alla base di ogni pianta. Si applica a tutte le piante contemporaneamente.",
-      "applicato_a": "tutte_le_piante",
-      "attivo": false,
-      "data_attivazione": null,
-      "fonte": "Guida personale",
-      "categoria": "elettrocultura",
-      "note": "",
-      "tipo": "elettrocultura"
-    },
-    {
       "id": "exp_002",
       "nome": "Magnete per ogni irrigatore",
       "descrizione": "Magnete posizionato su ogni irrigatore/gocciolatore per magnetizzare l acqua prima che raggiunga le radici.",
@@ -1872,6 +1872,23 @@
       "difficolta": "medio",
       "fonte": "Zamnesia",
       "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": null
+    },
+    {
+      "id": "daily_1781640025709_1",
+      "nome": "Monitoraggio del pH",
+      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della pianta",
+      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della pianta",
+      "materiali": [
+        "pHmetro",
+        "soluzione di calibrazione"
+      ],
+      "categoria": "Controllo ambientale",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
