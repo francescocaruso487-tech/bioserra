@@ -13,7 +13,15 @@ function showSection(id, btn) {
   try { if (id === 'laboratorio') { setTimeout(aiInitUI, 50); initElettrocultura(); } } catch(e) {}
   try { if (id === 'impostazioni') setTimeout(initImpostazioni, 50); } catch(e) {}
   try { if (id === 'ambiente') initAmbiente(); } catch(e) {}
-  // piante: renderActivePlants è gestita da navigateTo, non richiamarla di nuovo qui
+  // FIX Rev.16: in precedenza il refresh di Piante era delegato a navigateTo(),
+  // funzione mai collegata ad alcun bottone -> alert/stato piante non si
+  // aggiornavano mai tornando sulla tab dopo la prima apertura dell'app.
+  try {
+    if (id === 'piante') {
+      if (typeof renderActivePlants === 'function') renderActivePlants();
+      if (typeof checkHarvestAlerts === 'function') checkHarvestAlerts();
+    }
+  } catch(e) { console.error('[BioSerra] refresh piante on showSection:', e); }
 }
 
 /* ── Tab Laboratorio ── */
