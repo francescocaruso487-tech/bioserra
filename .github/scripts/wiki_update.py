@@ -31,17 +31,25 @@ def gh_get_sha(path):
         return None
 
 def gh_put(path, text, sha, message):
+    """Resiliente: 3 tentativi, SHA sempre fresco, mai solleva eccezioni (None se fallisce)."""
     encoded = base64.b64encode(text.encode('utf-8')).decode('ascii')
-    body = {'message': message, 'content': encoded, 'branch': 'main'}
-    if sha:
-        body['sha'] = sha
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}',
-        data=json.dumps(body).encode(),
-        headers={**HEADERS_GH, 'Content-Type': 'application/json'},
-        method='PUT')
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)
+    for attempt in range(3):
+        try:
+            sha_fresco = gh_get_sha(path)
+            body = {'message': message, 'content': encoded, 'branch': 'main'}
+            if sha_fresco:
+                body['sha'] = sha_fresco
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}',
+                data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'},
+                method='PUT')
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)
+        except Exception as ex:
+            print(f'  gh_put tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    return None
 
 def gh_raw(path):
     url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
@@ -325,7 +333,9 @@ def main():
             header = f'---\nid: {cid}\nlabel: {concetto.get("label","")}\ncategoria: {concetto.get("categoria","")}\naggiornato: {oggi}\npdf_count: {concetto.get("pdf_count",0)}\n---\n\n# {concetto.get("label", cid)}\n\n'
             pagina = header + testo
             sha = gh_get_sha(path)
-            gh_put(path, pagina, sha, f'wiki: aggiorna {cid} [{oggi}]')
+            res = gh_put(path, pagina, sha, f'wiki: aggiorna {cid} [{oggi}]')
+            if res is None:
+                raise RuntimeError('gh_put fallito dopo 3 tentativi')
             aggiornati.append(cid)
             print(f'  OK ({len(pagina)} chars)')
         except Exception as ex:
@@ -339,7 +349,9 @@ def main():
         testo_ov = genera_overview(dati)
         header_ov = f'---\ntipo: overview\naggiornato: {oggi}\n---\n\n# BioSerra — Knowledge Base Overview\n\n'
         sha_ov = gh_get_sha('data/wiki/sintesi/overview.md')
-        gh_put('data/wiki/sintesi/overview.md', header_ov + testo_ov, sha_ov, f'wiki: overview [{oggi}]')
+        res_ov = gh_put('data/wiki/sintesi/overview.md', header_ov + testo_ov, sha_ov, f'wiki: overview [{oggi}]')
+        if res_ov is None:
+            raise RuntimeError('gh_put fallito dopo 3 tentativi')
         aggiornati.append('overview')
         print('  OK')
     except Exception as ex:
@@ -351,7 +363,9 @@ def main():
     try:
         index_md = genera_index(concetti, oggi)
         sha_idx = gh_get_sha('data/wiki/index.md')
-        gh_put('data/wiki/index.md', index_md, sha_idx, f'wiki: index [{oggi}]')
+        res_idx = gh_put('data/wiki/index.md', index_md, sha_idx, f'wiki: index [{oggi}]')
+        if res_idx is None:
+            raise RuntimeError('gh_put fallito dopo 3 tentativi')
         print('  OK')
     except Exception as ex:
         print(f'  ERR index: {ex}')
@@ -377,7 +391,9 @@ def main():
             log_esistente = righe[0] + '\n## [' + '\n## ['.join(righe[1:])
         log_nuovo = log_esistente.rstrip() + '\n\n' + nuova_entry
         sha_log = gh_get_sha('data/wiki/log.md')
-        gh_put('data/wiki/log.md', log_nuovo, sha_log, f'wiki: log [{oggi}]')
+        res_log = gh_put('data/wiki/log.md', log_nuovo, sha_log, f'wiki: log [{oggi}]')
+        if res_log is None:
+            raise RuntimeError('gh_put fallito dopo 3 tentativi')
         print('  OK')
     except Exception as ex:
         print(f'  ERR log: {ex}')
