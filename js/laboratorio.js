@@ -42,24 +42,67 @@ var LAB_TOKEN = _tk1 + _tk2;
 var LAB_API   = 'https://api.github.com/repos/francescocaruso487-tech/bioserra/contents/data/';
 var LAB_RAW   = 'https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/';
 
-/* Chiave Anthropic centralizzata — UNICO punto da aggiornare quando ruota.
-   Prima era duplicata in 3 punti diversi (cervSend, sintesi SB, labAnalizzaPdf):
-   rischio concreto di disallineamento, come successo qui. */
-function labAntKey() {
-  return ['sk-ant-api03-','IpveWMEEMfS3py7K','X6S7pAkPWG9T9E6L','2bvDlGH9oGFHj43Y','hZOaBDYjf6cVJiEh','KXJqFaAAA'].join('');
+/* ══════════════════════════════════════════════════════════════
+   CERVELLO AI — OpenRouter / Llama (gratuito, sostituisce Anthropic
+   a pagamento). UNICO punto da aggiornare quando la chiave ruota.
+   Modello primario: Llama 3.3 70B free. Fallback automatico su un
+   secondo modello gratuito se il primo è sovraccarico/non disponibile
+   (i modelli :free di OpenRouter condividono capacità e possono dare
+   429 nei picchi — vedi note Rev.16).
+══════════════════════════════════════════════════════════════ */
+function labLlamaKey() {
+  // TODO: incollare qui la chiave OpenRouter reale (sk-or-v1-...) nel
+  // pattern split-array, come per le altre chiavi di questo file.
+  return ['sk-or-v1-PLACEHOLDER'].join('');
 }
-/* Helper: interpreta una risposta dell'API Anthropic e restituisce un messaggio
-   leggibile invece del generico "Errore." — distingue chiave non valida/scaduta
-   da altri errori, per diagnosticare subito problemi come quello di oggi. */
-function labAntErr(data) {
-  if (data && data.error) {
-    if (data.error.type === 'authentication_error') return '🔑 Chiave API Anthropic non valida o scaduta. Serve rigenerarla su console.anthropic.com.';
-    if (data.error.type === 'overloaded_error') return '⏳ Servizio Anthropic sovraccarico, riprova tra poco.';
-    if (data.error.type === 'rate_limit_error') return '⏳ Limite di richieste raggiunto, riprova tra poco.';
-    return '⚠ Errore Anthropic: ' + (data.error.message || data.error.type || 'sconosciuto');
+var LAB_LLAMA_MODEL    = 'meta-llama/llama-3.3-70b-instruct:free';
+var LAB_LLAMA_FALLBACK = 'meta-llama/llama-4-scout:free';
+
+/* Chiamata unificata: stesso schema OpenAI-compatibile per tutti e 3 i
+   punti d'uso (cervSend, sintesi Second Brain, labAnalizzaPdf). Ritorna
+   il testo della risposta, o lancia un errore leggibile (mai un
+   "Errore." generico) se entrambi i modelli falliscono. */
+async function labLlamaChat(systemPrompt, messages, maxTokens) {
+  async function tryModel(model) {
+    var resp = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + labLlamaKey(),
+        'HTTP-Referer': 'https://francescocaruso487-tech.github.io/bioserra/',
+        'X-Title': 'BioSerra Cervello AI'
+      },
+      body: JSON.stringify({
+        model: model,
+        max_tokens: maxTokens || 1200,
+        messages: [{ role: 'system', content: systemPrompt }].concat(messages)
+      })
+    });
+    var data = null;
+    try { data = await resp.json(); } catch(e) { data = null; }
+    return data;
   }
-  return null;
+
+  var data = await tryModel(LAB_LLAMA_MODEL);
+  var testo = (data && data.choices && data.choices[0] && data.choices[0].message) ? data.choices[0].message.content : null;
+
+  if (!testo) {
+    console.warn('[BioSerra] Llama primario non disponibile, provo fallback:', data && data.error);
+    var data2 = await tryModel(LAB_LLAMA_FALLBACK);
+    testo = (data2 && data2.choices && data2.choices[0] && data2.choices[0].message) ? data2.choices[0].message.content : null;
+    if (!testo) data = data2 || data;
+  }
+
+  if (!testo) {
+    var err = data && data.error;
+    var msg = err ? (err.message || err.code || JSON.stringify(err)) : 'risposta vuota da entrambi i modelli free';
+    if (err && (err.code === 401 || /api.?key/i.test(msg))) msg = 'Chiave OpenRouter non valida/mancante — generala su openrouter.ai/keys.';
+    if (err && (err.code === 429 || /rate.?limit/i.test(msg))) msg = 'Limite richieste OpenRouter raggiunto (free tier), riprova tra poco.';
+    throw new Error(msg);
+  }
+  return testo;
 }
+
 
 /* ══════════════════════════════════════════════════════════════
    CARICAMENTO DATI
@@ -1419,24 +1462,12 @@ async function cervSend(msgOverride) {
     var msgs = cervHistory.slice(-7, -1).map(function(h){ return { role: h.role, content: h.content }; });
     msgs.push({ role: 'user', content: userMsg });
 
-    var resp = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': labAntKey(),
-        'anthropic-version': '2023-06-01',
-        'anthropic-dangerous-direct-browser-access': 'true'
-      },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-6',
-        max_tokens: 1200,
-        system: finalSystem,
-        messages: msgs
-      })
-    });
-    var data = await resp.json();
-    var antErr = labAntErr(data);
-    var botText = antErr || ((data.content && data.content[0] && data.content[0].text) ? data.content[0].text : 'Errore risposta AI (formato inatteso).');
+    var botText;
+    try {
+      botText = await labLlamaChat(finalSystem, msgs, 1200);
+    } catch (llamaErr) {
+      botText = '⚠ ' + llamaErr.message;
+    }
     if (loadingEl) { loadingEl.classList.remove('loading'); loadingEl.textContent = botText; }
     cervHistory.push({ role: 'assistant', content: botText });
   } catch(e) {
@@ -2092,31 +2123,17 @@ async function labSbSearch() {
       +(p.estratto?'Estratto: '+p.estratto.substring(0,150):'');
   }).join('\n\n---\n\n');
 
-  var antKey = labAntKey();
-
   try {
-    var aiResp = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': antKey,
-        'anthropic-version': '2023-06-01',
-        'anthropic-dangerous-direct-browser-access': 'true'
-      },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-6',
-        max_tokens: 600,
-        system: 'Sei il Cervello AI di BioSerra. Rispondi in italiano, conciso e pratico. Sintetizza le informazioni dai PDF per rispondere alla domanda del coltivatore. Evidenzia consigli pratici applicabili in serra a Caserta.',
-        messages: [{
-          role: 'user',
-          content: 'Domanda: ' + query + '\n\nDocumenti trovati nel knowledge base:\n\n' + contesto + '\n\nRispondi in modo sintetico e pratico (max 5 frasi), poi elenca 2-3 punti chiave.'
-        }]
-      })
-    });
-
-    var aiData = await aiResp.json();
-    var antErrSb = labAntErr(aiData);
-    var sintesi = antErrSb || ((aiData.content && aiData.content[0] && aiData.content[0].text) ? aiData.content[0].text : null);
+    var sintesi;
+    try {
+      sintesi = await labLlamaChat(
+        'Sei il Cervello AI di BioSerra. Rispondi in italiano, conciso e pratico. Sintetizza le informazioni dai PDF per rispondere alla domanda del coltivatore. Evidenzia consigli pratici applicabili in serra a Caserta.',
+        [{ role: 'user', content: 'Domanda: ' + query + '\n\nDocumenti trovati nel knowledge base:\n\n' + contesto + '\n\nRispondi in modo sintetico e pratico (max 5 frasi), poi elenca 2-3 punti chiave.' }],
+        600
+      );
+    } catch (llamaErr) {
+      sintesi = '⚠ ' + llamaErr.message;
+    }
 
     var html = '';
 
@@ -2259,31 +2276,28 @@ async function labAnalizzaPdf(pdfId, domanda) {
     resEl.innerHTML='<div style="color:rgba(255,180,0,0.7);padding:10px">⚠ Testo non ancora estratto. Riprova domani.</div>'; return;
   }
   resEl.innerHTML='<div style="color:rgba(0,180,255,0.5);font-size:12px;padding:10px;text-align:center">🧠 Analizzo '+ctx.length+' chars con AI...</div>';
-  var antKey=labAntKey();
   var dom = domanda || 'Riassumi i punti chiave applicabili alla serra BioSerra Caserta (Living Soil, elettrocultura, biodinamica).';
+  var rispo;
   try {
-    var resp = await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
-      headers:{'Content-Type':'application/json','x-api-key':antKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1200,
-        system:'Sei un agronomo esperto Living Soil, biodinamica ed elettrocultura per serra outdoor Caserta (41N). Hai letto questo manuale. Rispondi in italiano, specifico e pratico. Cita il testo.',
-        messages:[{role:'user',content:'MANUALE "'+titolo+'":\n\n'+ctx+'\n\n---\nDOMANDA: '+dom}]})
-    });
-    var data=await resp.json();
-    var antErrPdf=labAntErr(data);
-    var rispo=antErrPdf||(data.content&&data.content[0]&&data.content[0].text)||'Errore risposta AI (formato inatteso).';
-    resEl.innerHTML='<div style="background:rgba(76,175,118,0.06);border:1px solid rgba(76,175,118,0.2);border-radius:12px;padding:14px;margin-bottom:12px">'
-      +'<div style="font-size:9px;color:var(--green3);font-weight:700;margin-bottom:4px">📄 '+labEsc(titolo.substring(0,60))+' · '+ctx.length+' chars</div>'
-      +'<div style="font-size:12px;color:var(--text2);line-height:1.8;white-space:pre-wrap">'+labEsc(rispo)+'</div>'
-      +'<div style="margin-top:10px;display:flex;gap:8px">'
-      +'<input id="sb-od-inp" type="text" placeholder="Altra domanda su questo PDF..." '
-      +'style="flex:1;background:rgba(0,180,255,0.08);border:1px solid rgba(0,180,255,0.2);border-radius:8px;padding:8px 12px;color:#e0f0ff;font-size:12px;outline:none" '
-      +'onkeydown="if(event.key===\'Enter\')labAnalizzaPdf(\'' + labEsc(pdfId) + '\',this.value)" />'
-      +'<button onclick="labAnalizzaPdf(\'' + labEsc(pdfId) + '\',document.getElementById(\'sb-od-inp\').value)" '
-      +'style="background:rgba(76,175,118,0.15);border:1px solid rgba(76,175,118,0.3);border-radius:8px;padding:8px 14px;color:var(--green3);cursor:pointer">🔍</button>'
-      +'</div></div>';
-    resEl.scrollIntoView({behavior:'smooth',block:'start'});
-  } catch(e) { resEl.innerHTML='<div style="color:rgba(255,100,100,0.7);padding:10px">Errore: '+labEsc(e.message)+'</div>'; }
+    rispo = await labLlamaChat(
+      'Sei un agronomo esperto Living Soil, biodinamica ed elettrocultura per serra outdoor Caserta (41N). Hai letto questo manuale. Rispondi in italiano, specifico e pratico. Cita il testo.',
+      [{ role: 'user', content: 'MANUALE "'+titolo+'":\n\n'+ctx+'\n\n---\nDOMANDA: '+dom }],
+      1200
+    );
+  } catch (llamaErr) {
+    rispo = '⚠ ' + llamaErr.message;
+  }
+  resEl.innerHTML='<div style="background:rgba(76,175,118,0.06);border:1px solid rgba(76,175,118,0.2);border-radius:12px;padding:14px;margin-bottom:12px">'
+    +'<div style="font-size:9px;color:var(--green3);font-weight:700;margin-bottom:4px">📄 '+labEsc(titolo.substring(0,60))+' · '+ctx.length+' chars</div>'
+    +'<div style="font-size:12px;color:var(--text2);line-height:1.8;white-space:pre-wrap">'+labEsc(rispo)+'</div>'
+    +'<div style="margin-top:10px;display:flex;gap:8px">'
+    +'<input id="sb-od-inp" type="text" placeholder="Altra domanda su questo PDF..." '
+    +'style="flex:1;background:rgba(0,180,255,0.08);border:1px solid rgba(0,180,255,0.2);border-radius:8px;padding:8px 12px;color:#e0f0ff;font-size:12px;outline:none" '
+    +'onkeydown="if(event.key===\'Enter\')labAnalizzaPdf(\'' + labEsc(pdfId) + '\',this.value)" />'
+    +'<button onclick="labAnalizzaPdf(\'' + labEsc(pdfId) + '\',document.getElementById(\'sb-od-inp\').value)" '
+    +'style="background:rgba(76,175,118,0.15);border:1px solid rgba(76,175,118,0.3);border-radius:8px;padding:8px 14px;color:var(--green3);cursor:pointer">🔍</button>'
+    +'</div></div>';
+  resEl.scrollIntoView({behavior:'smooth',block:'start'});
 }
 
 /* ══════════════════════════════════════════════════════════════
