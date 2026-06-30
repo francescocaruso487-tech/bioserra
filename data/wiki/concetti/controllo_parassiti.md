@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-06-29
+aggiornato: 2026-06-30
 pdf_count: 0
 ---
 
@@ -12,20 +12,41 @@ pdf_count: 0
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** è una strategia fitosanitaria basata sull’uso di metodi biologici per gestire infestazioni senza ricorrere a pesticidi chimici sintetici. Questo approccio sfrutta i principi dell’ecosistema vivente, promuovendo l’equilibrio tra organismi dannosi e utili. In un contesto di **Living Soil** (suolo vivo), la difesa biologica si avvale di meccanismi naturali come la competizione, la predazione e la repellenza chimica. Ad esempio, insetti utili come gli acari predatori (*Phytoseiulus persimilis*) o batteri come *Bacillus thuringiensis* agiscono come agenti di controllo biologico, riducendo la popolazione di parassiti senza alterare la biodiversità del suolo.
+Il **Controllo Parassiti Naturale** è una strategia fitosanitaria basata sull’uso di metodi biologici per gestire infestazioni senza ricorrere a pesticidi chimici. Questo approccio sfrutta i meccanismi di equilibrio dell’ecosistema serra, dove predatori naturali, repellenti botanici e pratiche colturali riducono la proliferazione di parassiti come afidi, acari o tripidi. Il principio chiave è la **prevenzione attiva**: mantenere un ambiente ostile ai patogeni attraverso la biodiversità funzionale e l’uso di sostanze a basso impatto ambientale.
 
-Il meccanismo d’azione si basa su tre pilastri: **prevenzione**, **intervento mirato** e **mantenimento dell’equilibrio**. La prevenzione include pratiche come l’uso di oli essenziali (es. neem) o l’applicazione di trappole a feromoni, che disturbano il ciclo riproduttivo dei parassiti. L’intervento mirato prevede l’introduzione di organismi utili o l’uso di estratti vegetali ad azione repellente. Infine, il mantenimento dell’equilibrio si ottiene attraverso la promozione di un suolo ricco di microrganismi benefici, che competono con i patogeni per risorse e spazio. Questo metodo è particolarmente efficace in serra outdoor, dove le condizioni ambientali possono essere controllate per favorire la proliferazione di specie utili.
+Il meccanismo d’azione si basa su tre pilastri:
+1. **Repellenza**: sostanze come l’olio di neem o l’aglio alterano il comportamento dei parassiti, rendendo la pianta meno attraente.
+2. **Predazione**: introduzione di insetti utili (es. *Phytoseiulus persimilis* per gli acari) che si nutrono dei parassiti.
+3. **Induzione di resistenza**: stimolazione delle difese naturali della pianta tramite elicitori biologici (es. estratti di alghe).
+
+Questo metodo è particolarmente efficace in **Living Soil**, dove la complessità microbica del suolo e la salute delle piante riducono la suscettibilità agli attacchi. Inoltre, in serra outdoor a Caserta (41°N), il clima mediterraneo favorisce la proliferazione di predatori naturali, rendendo il controllo biologico un’alternativa sostenibile e scalabile.
+
+---
 
 ## Come si applica in serra
-1. **Ispezione quotidiana**: Controlla foglie, steli e substrato al mattino, prestando attenzione a segni di infestazione (es. ragnatele, macchie, insetti). Usa una lente di ingrandimento per identificare parassiti come afidi, acari o cocciniglie.
-2. **Prevenzione con olio di neem**: Applica una soluzione di **olio di neem (1-2%)** ogni 7 giorni, preferibilmente al tramonto per evitare ustioni fogliari. Diluisci in acqua con un tensioattivo (es. sapone di potassio) per migliorare l’adesione. Questo trattamento agisce come repellente e interferisce con la crescita dei parassiti.
-3. **Introduzione di insetti utili**:
-   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2-5 individui per pianta ogni 2 settimane in caso di infestazione da acari rossi (*Tetranychus urticae*).
-   - **Crisopidi** (*Chrysoperla carnea*): Deposita uova o larve per combattere afidi e cocciniglie.
-   - **Nematodi benefici** (*Steinernema feltiae*): Utilizza per larve di moscerini (es. *Sciaridae*) nel substrato.
-4. **Trappole cromotropiche**: Posiziona trappole gialle o blu adesive per monitorare e ridurre la popolazione di moscerini e afidi.
-5. **Piante trappola**: Coltiva piante come **tagete** o **basilico** ai bordi della serra per attirare parassiti lontano dalle colture principali.
-6. **Rinforzo del suolo**: Applica **compost attivato** o **micorrize** per migliorare la salute delle piante e la loro resistenza agli stress biotici.
 
-## Sinergie con altri elementi
-- **Lakhovsky (Onde Multifrequenza)**: L’applicazione di dispositivi a onde multifrequenza (es. *Lakhovsky Coil*) può stimolare la risposta immunitaria delle piante, rend
+### **Protocollo base per serra outdoor Living Soil (Caserta)**
+1. **Ispezione quotidiana**
+   - Controlla **foglie giovani, steli e pagina inferiore delle foglie** con una lente d’ingrandimento (10x).
+   - Segna le piante infestate con un nastro colorato per monitorare la progressione.
+   - *Obiettivo*: intervenire entro 48 ore dal primo segno di infestazione.
+
+2. **Prevenzione con olio di neem**
+   - **Diluizione**: 5 ml di olio di neem puro + 1 ml di sapone di potassio (o 1 goccia di detergente neutro) in 1 litro d’acqua.
+   - **Applicazione**: nebulizza sulle piante **ogni 7 giorni** al tramonto (evita l’esposizione solare diretta per prevenire ustioni).
+   - *Effetto*: repellente per afidi, cocciniglie e tripidi; interferisce con la crescita delle larve.
+
+3. **Introduzione di insetti utili**
+   - **Acari predatori** (*Phytoseiulus persimilis* o *Amblyseius andersoni*):
+     - Rilascia **2–5 individui per pianta infestata** in fase di vegetazione.
+     - *Condizioni ideali*: umidità >60% e temperatura tra 20–28°C.
+   - **Coccinelle** (*Coccinella septempunctata*):
+     - Rilascia **5–10 adulti per 10 m²** in caso di afidi.
+     - *Consiglio*: posiziona piante trappola (es. *Calendula officinalis*) per attrarle.
+
+4. **Barriere fisiche**
+   - **Reti anti-insetto** (maglia 0.6 mm) su aperture della serra per bloccare tripidi e moscerini.
+   - **Pacciamatura con paglia o fibra di cocco** per ridurre l’umidità a livello del suolo e limitare funghi vettori di parassiti.
+
+5. **Rinforzo del suolo**
+   - Applica **compost attivato** o **micorrize** (es. *Glomus intraradices*) per
