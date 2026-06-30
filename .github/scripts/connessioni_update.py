@@ -42,14 +42,23 @@ def gh_put(path, content, sha, msg):
     if isinstance(content, str):
         content = content.encode('utf-8')
     encoded = base64.b64encode(content).decode('ascii')
-    body = {'message': msg, 'content': encoded, 'branch': 'main'}
-    if sha: body['sha'] = sha
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}',
-        data=json.dumps(body).encode(),
-        headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)['commit']['sha']
+    # Resiliente: 3 tentativi con SHA sempre fresco (un errore di rete non deve uccidere il job)
+    for attempt in range(3):
+        try:
+            fresh = gh_get_sha(path) or sha
+            body = {'message': msg, 'content': encoded, 'branch': 'main'}
+            if fresh: body['sha'] = fresh
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}',
+                data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)['commit']['sha']
+        except Exception as ex:
+            print(f'  gh_put {path} tentativo {attempt+1} fallito: {ex}')
+            time.sleep(3)
+    print(f'  ERRORE: gh_put {path} fallito dopo 3 tentativi')
+    return None
 
 def gh_list(path):
     try:
@@ -143,11 +152,12 @@ def estrai_concetti_pdf(pdf_id, titolo, testo_completo):
     # Divide testo in finestre da 4000 chars con overlap
     FINESTRA = 4000
     OVERLAP = 500
+    MAX_FINESTRE = 25   # cap: evita centinaia di chiamate su PDF giganti (es. testi esoterici 500k+ chars)
     pos = 0
     tutti_concetti = []
     n_finestre = 0
 
-    while pos < len(testo_completo):
+    while pos < len(testo_completo) and n_finestre < MAX_FINESTRE:
         finestra = testo_completo[pos:pos+FINESTRA]
         n_finestre += 1
 
