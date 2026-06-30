@@ -104,9 +104,31 @@ def main():
     brain = load_json('data/brain.json', {})
     guide = load_json('data/guide_complete.json', {})
     esper = load_json('data/esperimenti.json', {})
+    piante_stato = load_json('data/piante_stato.json', {})
 
     cerv = brain.get('cervello', {}) if isinstance(brain, dict) else {}
     kb = cerv.get('kb_sintesi', {}) if isinstance(cerv.get('kb_sintesi'), dict) else {}
+
+    # --- mappa fase guida -> piante attive in quella fase (per piante_coinvolte) ---
+    stato_piante = ((piante_stato.get('data', {}) or {}).get('stato_piante', [])
+                     if isinstance(piante_stato, dict) else [])
+    FASE_DIRETTA = {'germinazione', 'vegetazione', 'fioritura', 'essiccazione', 'concia'}
+    FASE_TRASVERSALE = {'suolo', 'elettrocultura', 'biodinamica', 'irrigazione'}  # tutta la serra
+    tutte_le_piante = [p.get('nome', '') for p in stato_piante if p.get('nome')]
+
+    def piante_per_fase(fase_guida):
+        fase_guida = (fase_guida or '').lower()
+        if fase_guida in FASE_TRASVERSALE:
+            return tutte_le_piante  # elettrocultura/biodinamica si applicano a tutta la serra
+        if fase_guida == 'pre_raccolta':
+            vicine = [p.get('nome', '') for p in stato_piante
+                      if str(p.get('fase', '')).lower() == 'fioritura'
+                      and isinstance(p.get('giorni_a_raccolta'), (int, float))
+                      and 0 <= p['giorni_a_raccolta'] <= 14]
+            if vicine:
+                return vicine
+            fase_guida = 'fioritura'  # fallback se nessuna è ancora vicina al taglio
+        return [p.get('nome', '') for p in stato_piante if str(p.get('fase', '')).lower() == fase_guida]
 
     # --- guide_potenziate: dalle guide reali con tecniche elettrocultura/pdf ---
     guide_list = guide.get('guide', []) if isinstance(guide, dict) else []
@@ -122,7 +144,7 @@ def main():
             'potenziamento_pdf': s(tec_el[0] if tec_el else (punti[1] if len(punti) > 1 else ''), 150),
             'esperimento_suggerito': s(g.get('timeline_caserta', ''), 150),
             'applicabile_oggi': True,
-            'piante_coinvolte': []
+            'piante_coinvolte': piante_per_fase(g.get('fase'))
         })
         if len(guide_pot) >= 2:
             break
