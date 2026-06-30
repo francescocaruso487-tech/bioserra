@@ -10,7 +10,7 @@ function showSection(id, btn) {
   if (sec) sec.classList.add('active');
   if (btn) btn.classList.add('active');
   window.scrollTo(0, 0);
-  try { if (id === 'laboratorio') { setTimeout(aiInitUI, 50); initElettrocultura(); } } catch(e) {}
+  try { if (id === 'laboratorio') { initElettrocultura(); } } catch(e) {}
   try { if (id === 'impostazioni') setTimeout(initImpostazioni, 50); } catch(e) {}
   try { if (id === 'ambiente') initAmbiente(); } catch(e) {}
   // FIX Rev.16: in precedenza il refresh di Piante era delegato a navigateTo(),
@@ -32,7 +32,7 @@ function switchLabTab(tab) {
     if (panel) panel.classList.toggle('active', t === tab);
     if (btn)   btn.classList.toggle('active',   t === tab);
   });
-  if (tab === 'cervello') { brainLoad(); setTimeout(aiInitUI, 50); }
+  if (tab === 'cervello') { brainLoad(); }
   if (tab === 'manuali')  { manRenderNote(); loadManualiJSON(); }
   if (tab === 'elettro')  { elTecRicarica(); espLoad(); }
 }
