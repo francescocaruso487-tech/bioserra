@@ -65,6 +65,11 @@
       <span style="font-size:20px;">＋</span> Aggiungi Nuova Pianta
     </button>
 
+    <!-- PULSANTE CALENDARIO RACCOLTI (15) -->
+    <button class="btn-add-plant" style="background:var(--card2);color:var(--text);margin-top:8px;" onclick="openCalendarioRaccolti()">
+      <span style="font-size:18px;">📅</span> Calendario Raccolti
+    </button>
+
     <!-- LISTA PIANTE ATTIVE (generata da JS) -->
     <div id="lista-piante-attive"></div>
 
@@ -250,7 +255,7 @@
     <!-- Fase corrente (tutte le piante) -->
     <div class="form-field">
       <label class="form-label">Fase attuale osservata</label>
-      <select class="form-select" id="phase-select">
+      <select class="form-select" id="phase-select" onchange="phaseRenderChecklist()">
         <option value="germinazione">🌱 Germinazione / Semenzaio</option>
         <option value="vegetazione">🌿 Vegetazione</option>
         <option value="pre-fioritura">🌼 Pre-fioritura (prime punte)</option>
@@ -259,6 +264,12 @@
         <option value="pronto">✂️ Pronto per il taglio</option>
       </select>
       <div class="form-hint">Solo descrittiva — non blocca il calcolo. Serve come memo visivo.</div>
+    </div>
+
+    <!-- Checklist contestuale di fase (da guide_complete.json) -->
+    <div class="form-field" id="phase-checklist-wrap" style="display:none;">
+      <label class="form-label">📋 Checklist fase</label>
+      <div id="phase-checklist-list" style="font-size:12px;color:var(--text2);line-height:1.6;"></div>
     </div>
 
     <!-- Data inizio fioritura — solo femminizzate -->
@@ -281,6 +292,17 @@
 
     <button class="btn-primary" onclick="savePhaseEdit()">✅ Salva modifiche</button>
     <button class="btn-secondary" onclick="closePhaseModal()">Annulla</button>
+  </div>
+</div>
+
+<!-- (15) Modal Calendario Raccolti aggregato -->
+<div class="modal-overlay" id="modal-calendario-raccolti" onclick="closeCalendarioRaccolti(event)">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title">📅 Calendario Raccolti</div>
+    <div style="font-size:12px;color:var(--text2);margin-bottom:14px;">Tutte le piante ordinate per data di taglio stimata (intervallo min-max).</div>
+    <div id="calendario-raccolti-list"></div>
+    <button class="btn-secondary" onclick="closeCalendarioRaccolti()">Chiudi</button>
   </div>
 </div>
 
@@ -665,6 +687,7 @@
   <div class="lab-tech-card">
     <div class="lab-tc-header">
       <div class="lab-tc-title">🌟 Consiglio del Giorno</div>
+      <button class="lab-tc-reload" id="lab-tc-speak-btn" onclick="labSpeakBriefing()" title="Leggi ad alta voce">🔊</button>
       <button class="lab-tc-reload" onclick="labLoadAll()">⟳ Aggiorna</button>
     </div>
     <div id="lab-digest-content">
@@ -1257,6 +1280,9 @@ if ('serviceWorker' in navigator) {
 
     <!-- Tab Aggiungi -->
     <div id="diario-panel-aggiungi">
+      <!-- Badge giorno biodinamico (6) -->
+      <div id="diario-bio-badge" style="display:none;margin-bottom:10px;padding:8px 12px;border-radius:8px;font-size:12px;font-weight:600;"></div>
+
       <!-- Tipo intervento -->
       <div class="form-field" style="margin-bottom:10px;">
         <label class="form-label">🔧 Tipo intervento</label>
