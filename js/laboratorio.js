@@ -394,8 +394,6 @@ function praticaFeedbackHTML(nome) {
 }
 
 function labBuildPratiche() {
-  var oggi = new Date();
-  var dayIndex = Math.floor(oggi.getTime() / 86400000); // cambia ogni giorno
   var pratiche = [];
 
   // Estrai parole chiave da brain (consigli_giorno + piano_giornata)
@@ -475,13 +473,13 @@ function labBuildPratiche() {
     });
   });
 
-  // 3. Proposte — rotazione giornaliera + brain boost
+  // 3. Proposte — FIX Rev.16: prima limitate a 12/giorno con rotazione,
+  // ora mostrate TUTTE sempre (la rotazione nascondeva la maggior parte
+  // delle proposte disponibili). L'ordinamento finale per rilevanza
+  // (brainBoost + feedback) le organizza comunque in modo sensato.
   if (labEspData) {
     var tutte = labEspData.proposte || labEspData.esperimenti_disponibili || [];
-    // Ruota: ogni giorno parte da un offset diverso, prende 12
-    var offset = dayIndex % Math.max(tutte.length, 1);
-    var ruotate = tutte.slice(offset).concat(tutte.slice(0, offset));
-    ruotate.slice(0, 12).forEach(function(e, i) {
+    tutte.forEach(function(e, i) {
       var boost = brainBoost((e.nome||'') + ' ' + (e.descrizione||'') + ' ' + (e.obiettivo||'') + ' ' + (e.categoria||''));
       var fbBoost = praticaFeedbackBoost(e.nome);
       pratiche.push({
@@ -2045,15 +2043,18 @@ async function labSbSearch() {
     });
   }
 
-  // (3) Applica filtro fase, se impostato: usa la mappa pdf_id -> fasi_guida da concetti_index.json.
-  // Se il filtro azzera tutti i risultati, lo ignoriamo (meglio mostrare qualcosa che niente).
+  // (3) FIX Rev.16: il filtro fase prima ESCLUDEVA i risultati non corrispondenti
+  // (con un fallback solo se azzerava tutto). Ora non nasconde mai nulla: i
+  // risultati della fase selezionata vengono solo portati in cima (sort),
+  // coerente con "le pratiche/risultati devono essere sempre completi".
   if (faseFilter && topPdf.length) {
     var pdfFasiMap = labSbBuildPdfFaseMap();
-    var filtrati = topPdf.filter(function(s) {
-      var fasi = pdfFasiMap[s.id];
-      return fasi && fasi.has(faseFilter);
+    topPdf.sort(function(a, b) {
+      var aMatch = (pdfFasiMap[a.id] && pdfFasiMap[a.id].has(faseFilter)) ? 1 : 0;
+      var bMatch = (pdfFasiMap[b.id] && pdfFasiMap[b.id].has(faseFilter)) ? 1 : 0;
+      if (aMatch !== bMatch) return bMatch - aMatch;
+      return (b.score||0) - (a.score||0);
     });
-    if (filtrati.length) topPdf = filtrati;
   }
 
   if (!topPdf.length) {
