@@ -1064,6 +1064,21 @@
     </div>
   </div>
 
+  <!-- 7) SALUTE PIPELINE -->
+  <div class="setting-group">
+    <div class="setting-group-label">🩺 Salute pipeline</div>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <button onclick="cfgRenderPipelineHealth()" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:12px 16px;color:var(--text);font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:10px;width:100%;">
+        <span style="font-size:18px;">🩺</span>
+        <div style="text-align:left;">
+          <div>Controlla stato workflow GitHub Actions</div>
+          <div style="font-size:11px;color:var(--text3);font-weight:400;">Ultimo run di ogni workflow notturno</div>
+        </div>
+      </button>
+      <div id="cfg-pipeline-health" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 14px;"></div>
+    </div>
+  </div>
+
   <!-- 7) APP INFO -->
   <div class="setting-group">
     <div class="setting-group-label">ℹ️ App</div>
