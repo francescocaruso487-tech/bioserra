@@ -43,14 +43,37 @@ def gh_api_get(path):
             return r2.read().decode('utf-8'), data['sha']
     return base64.b64decode(data['content'].replace('\n','')).decode('utf-8'), data['sha']
 
-def gh_put(path, content_b64, sha, message):
-    body = json.dumps({'message': message, 'content': content_b64, 'sha': sha}).encode()
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}',
-        data=body, headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT'
-    )
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)
+def gh_get_sha(path):
+    try:
+        req = urllib.request.Request(
+            f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
+        with urllib.request.urlopen(req) as r:
+            return json.load(r)['sha']
+    except Exception:
+        return None
+
+def gh_put(path, content, sha, message):
+    """Resiliente: 3 tentativi, SHA sempre fresco, mai solleva eccezioni (None se fallisce)."""
+    if isinstance(content, str):
+        content = content.encode('utf-8')
+    encoded = base64.b64encode(content).decode('ascii')
+    for attempt in range(3):
+        try:
+            sha_fresco = gh_get_sha(path)
+            body = {'message': message, 'content': encoded, 'branch': 'main'}
+            if sha_fresco:
+                body['sha'] = sha_fresco
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}',
+                data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'},
+                method='PUT')
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)
+        except Exception as ex:
+            print(f'  gh_put tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    return None
 
 def mistral_chat(prompt, max_tokens=3000):
     if not MISTRAL_KEY:
@@ -293,10 +316,13 @@ def main():
         'grafo': {'nodi': nodi, 'edges': edges}
     }
 
-    content_b64 = base64.b64encode(json.dumps(out, indent=2, ensure_ascii=False).encode()).decode()
-    _, sha = gh_api_get('data/concetti_index.json')
-    gh_put('data/concetti_index.json', content_b64, sha,
+    content_json = json.dumps(out, indent=2, ensure_ascii=False)
+    sha = gh_get_sha('data/concetti_index.json')
+    res = gh_put('data/concetti_index.json', content_json, sha,
            f'BioSerra concetti {oggi} ({len(concetti_finali)} concetti) [Mistral v9 2-step]')
+    if res is None:
+        print('  ERRORE CRITICO: salvataggio concetti_index.json fallito dopo 3 tentativi')
+        sys.exit(1)
 
     print(f'\n=== COMPLETATO: {len(concetti_finali)} concetti, {len(edges)} edges ===')
     cat_count = {}
