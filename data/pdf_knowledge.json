@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-30T11:32:50.282730+00:00",
+  "lastUpdate": "2026-06-30T11:38:13.833509+00:00",
   "total_pdf": 351,
   "analisi": [
     {
@@ -56,11 +56,6 @@
       "id": "pdf_6",
       "connessioni": [
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 12
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 12
@@ -103,6 +98,11 @@
         {
           "id": "pdf_88",
           "titolo": "ySanedrin",
+          "peso": 12
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
           "peso": 12
         }
       ]
@@ -225,11 +225,6 @@
           "peso": 4
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 3
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 3
@@ -258,83 +253,11 @@
           "id": "pdf_46",
           "titolo": "Le_sette_valli_e_le_quattro_valli",
           "peso": 3
-        }
-      ]
-    },
-    {
-      "sommario": "Il documento analizza l'applicazione di principi spirituali e tecniche agricole avanzate per la serra BioSerra Caserta, integrando scienza e tradizione. Si concentra su metodi di coltivazione olistica e innovazione elettromagnetica per ottimizzare la salute delle piante.",
-      "tecniche_chiave": [
-        "Lakhovsky",
-        "Fe-Cu",
-        "acqua magnetizzata",
-        "spirale rame",
-        "antenna terra"
-      ],
-      "consiglio_coltivazione": "Applicare la spirale di rame intorno alle piante per proteggerle da patogeni elettromagnetici e integrare acqua magnetizzata per migliorare l'assorbimento dei nutrienti.",
-      "consiglio_elettrocultura": "Collegare l'antenna di terra a un sistema di messa a terra profonda per stabilizzare il campo elettromagnetico della serra e ridurre lo stress delle piante.",
-      "tag": [
-        "Living Soil",
-        "biodinamica",
-        "elettrocultura",
-        "serra outdoor",
-        "agricoltura olistica"
-      ],
-      "estratto_chiave": "L'unione tra principi spirituali e tecniche agricole avanzate trasforma la serra in un ecosistema rigenerativo, dove scienza e tradizione si fondono per coltivare piante in armonia con la natura.",
-      "titolo": "IL+CORANO",
-      "data_analisi": "2026-06-27",
-      "rilevanza": "alta",
-      "mistral_analizzato": true,
-      "id": "pdf_26",
-      "connessioni": [
-        {
-          "id": "pdf_32",
-          "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
-          "peso": 14
-        },
-        {
-          "id": "pdf_57",
-          "titolo": "Ricerca agro-alimentare, giugno 2019",
-          "peso": 14
-        },
-        {
-          "id": "pdf_73",
-          "titolo": "clavicola",
-          "peso": 14
-        },
-        {
-          "id": "pdf_88",
-          "titolo": "ySanedrin",
-          "peso": 14
-        },
-        {
-          "id": "pdf_42",
-          "titolo": "La-Strega-Verde-Una-guida-pratica-per-scoprire-la-magia-delle-piante_-delle-erbe_-dei-cristalli-e-al",
-          "peso": 13
         },
         {
           "id": "pdf_50",
           "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
-          "peso": 13
-        },
-        {
-          "id": "pdf_58",
-          "titolo": "Rol Il grande veggente (Renzo Allegri)",
-          "peso": 13
-        },
-        {
-          "id": "pdf_71",
-          "titolo": "Wicca",
-          "peso": 13
-        },
-        {
-          "id": "pdf_86",
-          "titolo": "torashadal",
-          "peso": 13
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 12
+          "peso": 3
         }
       ]
     },
@@ -491,6 +414,11 @@
           "peso": 2
         },
         {
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 2
+        },
+        {
           "id": "pdf_40",
           "titolo": "La filosofia occulta o la magia (1972) (Cornelio Agrippa Von Nettesheim)",
           "peso": 1
@@ -498,11 +426,6 @@
         {
           "id": "pdf_48",
           "titolo": "Magick-_Fanucci-Editore_-_Italian-Edition_-_Aleister-Crowley",
-          "peso": 1
-        },
-        {
-          "id": "pdf_52",
-          "titolo": "Mutus liber. Lalchimia e il suo libro muto (Eugène Canseliet)_compressed",
           "peso": 1
         }
       ]
@@ -532,6 +455,11 @@
       "id": "pdf_30",
       "connessioni": [
         {
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 10
+        },
+        {
           "id": "pdf_6",
           "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
           "peso": 9
@@ -540,11 +468,6 @@
           "id": "pdf_74",
           "titolo": "confucius_i_dialoghi",
           "peso": 8
-        },
-        {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 7
         },
         {
           "id": "pdf_32",
@@ -686,11 +609,6 @@
       "id": "pdf_32",
       "connessioni": [
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 14
-        },
-        {
           "id": "pdf_57",
           "titolo": "Ricerca agro-alimentare, giugno 2019",
           "peso": 14
@@ -728,6 +646,11 @@
         {
           "id": "pdf_86",
           "titolo": "torashadal",
+          "peso": 13
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
           "peso": 13
         },
         {
@@ -1050,11 +973,6 @@
           "peso": 1
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 1
-        },
-        {
           "id": "pdf_28",
           "titolo": "Ighina_El_Atomo_Magnetico_text",
           "peso": 1
@@ -1082,6 +1000,11 @@
         {
           "id": "pdf_42",
           "titolo": "La-Strega-Verde-Una-guida-pratica-per-scoprire-la-magia-delle-piante_-delle-erbe_-dei-cristalli-e-al",
+          "peso": 1
+        },
+        {
+          "id": "pdf_44",
+          "titolo": "La-vita-segreta-delle-piante-_Peter-Tompkins_-Christopher-Bird",
           "peso": 1
         }
       ],
@@ -1195,6 +1118,11 @@
           "id": "pdf_29",
           "titolo": "Il Cuore del Maestro (Aleister Crowley)",
           "peso": 1
+        },
+        {
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 1
         }
       ]
     },
@@ -1239,11 +1167,6 @@
           "peso": 3
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 3
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 3
@@ -1272,6 +1195,11 @@
           "id": "pdf_46",
           "titolo": "Le_sette_valli_e_le_quattro_valli",
           "peso": 3
+        },
+        {
+          "id": "pdf_47",
+          "titolo": "Liber333 - Libro delle Menzogne falsamente chiamate tali",
+          "peso": 3
         }
       ]
     },
@@ -1299,11 +1227,6 @@
       "mistral_analizzato": true,
       "id": "pdf_42",
       "connessioni": [
-        {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 13
-        },
         {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
@@ -1337,6 +1260,11 @@
         {
           "id": "pdf_88",
           "titolo": "ySanedrin",
+          "peso": 13
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
           "peso": 13
         },
         {
@@ -1499,8 +1427,8 @@
           "peso": 3
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
+          "id": "pdf_28",
+          "titolo": "Ighina_El_Atomo_Magnetico_text",
           "peso": 3
         }
       ]
@@ -1530,11 +1458,6 @@
       "mistral_analizzato": true,
       "id": "pdf_45",
       "connessioni": [
-        {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 4
-        },
         {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
@@ -1579,6 +1502,11 @@
           "id": "pdf_66",
           "titolo": "TOTALE 5",
           "peso": 4
+        },
+        {
+          "id": "pdf_73",
+          "titolo": "clavicola",
+          "peso": 4
         }
       ]
     },
@@ -1618,11 +1546,6 @@
           "peso": 10
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 8
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 8
@@ -1655,6 +1578,11 @@
         {
           "id": "pdf_50",
           "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 7
+        },
+        {
+          "id": "pdf_58",
+          "titolo": "Rol Il grande veggente (Renzo Allegri)",
           "peso": 7
         }
       ]
@@ -1840,11 +1768,6 @@
       "id": "pdf_50",
       "connessioni": [
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 13
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 13
@@ -1877,6 +1800,11 @@
         {
           "id": "pdf_88",
           "titolo": "ySanedrin",
+          "peso": 13
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
           "peso": 13
         },
         {
@@ -1921,11 +1849,6 @@
           "peso": 8
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 8
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 8
@@ -1963,6 +1886,11 @@
         {
           "id": "pdf_86",
           "titolo": "torashadal",
+          "peso": 8
+        },
+        {
+          "id": "pdf_88",
+          "titolo": "ySanedrin",
           "peso": 8
         }
       ],
@@ -2029,6 +1957,11 @@
         {
           "id": "pdf_29",
           "titolo": "Il Cuore del Maestro (Aleister Crowley)",
+          "peso": 1
+        },
+        {
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
           "peso": 1
         }
       ]
@@ -2248,9 +2181,9 @@
           "peso": 5
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 4
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 5
         },
         {
           "id": "pdf_30",
@@ -2297,11 +2230,6 @@
           "peso": 1
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 1
-        },
-        {
           "id": "pdf_28",
           "titolo": "Ighina_El_Atomo_Magnetico_text",
           "peso": 1
@@ -2330,6 +2258,11 @@
           "id": "pdf_41",
           "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
           "peso": 1
+        },
+        {
+          "id": "pdf_42",
+          "titolo": "La-Strega-Verde-Una-guida-pratica-per-scoprire-la-magia-delle-piante_-delle-erbe_-dei-cristalli-e-al",
+          "peso": 1
         }
       ]
     },
@@ -2357,11 +2290,6 @@
       "mistral_analizzato": true,
       "id": "pdf_57",
       "connessioni": [
-        {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 14
-        },
         {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
@@ -2400,6 +2328,11 @@
         {
           "id": "pdf_86",
           "titolo": "torashadal",
+          "peso": 13
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
           "peso": 13
         },
         {
@@ -2513,11 +2446,6 @@
       "id": "pdf_58",
       "connessioni": [
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 13
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 13
@@ -2550,6 +2478,11 @@
         {
           "id": "pdf_88",
           "titolo": "ySanedrin",
+          "peso": 13
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
           "peso": 13
         },
         {
@@ -2668,11 +2601,6 @@
           "peso": 8
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 8
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 8
@@ -2710,6 +2638,11 @@
         {
           "id": "pdf_86",
           "titolo": "torashadal",
+          "peso": 8
+        },
+        {
+          "id": "pdf_88",
+          "titolo": "ySanedrin",
           "peso": 8
         }
       ]
@@ -3161,11 +3094,6 @@
           "peso": 2
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 2
-        },
-        {
           "id": "pdf_28",
           "titolo": "Ighina_El_Atomo_Magnetico_text",
           "peso": 2
@@ -3188,6 +3116,11 @@
         {
           "id": "pdf_41",
           "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
+          "peso": 2
+        },
+        {
+          "id": "pdf_42",
+          "titolo": "La-Strega-Verde-Una-guida-pratica-per-scoprire-la-magia-delle-piante_-delle-erbe_-dei-cristalli-e-al",
           "peso": 2
         }
       ]
@@ -3314,11 +3247,6 @@
           "peso": 6
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 5
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 5
@@ -3341,6 +3269,11 @@
         {
           "id": "pdf_57",
           "titolo": "Ricerca agro-alimentare, giugno 2019",
+          "peso": 5
+        },
+        {
+          "id": "pdf_58",
+          "titolo": "Rol Il grande veggente (Renzo Allegri)",
           "peso": 5
         }
       ],
@@ -3449,11 +3382,6 @@
       "id": "pdf_71",
       "connessioni": [
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 13
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 13
@@ -3496,6 +3424,11 @@
         {
           "id": "pdf_86",
           "titolo": "torashadal",
+          "peso": 12
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
           "peso": 12
         }
       ]
@@ -3543,11 +3476,6 @@
       "id": "pdf_73",
       "connessioni": [
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 14
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 14
@@ -3588,6 +3516,11 @@
           "peso": 13
         },
         {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
+          "peso": 13
+        },
+        {
           "id": "pdf_6",
           "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
           "peso": 12
@@ -3618,11 +3551,6 @@
       "mistral_analizzato": true,
       "id": "pdf_74",
       "connessioni": [
-        {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 12
-        },
         {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
@@ -3666,6 +3594,11 @@
         {
           "id": "pdf_88",
           "titolo": "ySanedrin",
+          "peso": 12
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
           "peso": 12
         }
       ]
@@ -3711,11 +3644,6 @@
           "peso": 4
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 4
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 4
@@ -3743,6 +3671,11 @@
         {
           "id": "pdf_57",
           "titolo": "La Forza del Cervello Quantico - Dawson Church",
+          "peso": 4
+        },
+        {
+          "id": "pdf_62",
+          "titolo": "TOTALE 1",
           "peso": 4
         }
       ]
@@ -4310,11 +4243,6 @@
       "id": "pdf_85",
       "connessioni": [
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 12
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 12
@@ -4358,6 +4286,11 @@
           "id": "pdf_71",
           "titolo": "Wicca",
           "peso": 11
+        },
+        {
+          "id": "pdf_86",
+          "titolo": "torashadal",
+          "peso": 11
         }
       ]
     },
@@ -4385,11 +4318,6 @@
       "mistral_analizzato": true,
       "id": "pdf_86",
       "connessioni": [
-        {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 13
-        },
         {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
@@ -4423,6 +4351,11 @@
         {
           "id": "pdf_88",
           "titolo": "ySanedrin",
+          "peso": 13
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
           "peso": 13
         },
         {
@@ -4462,11 +4395,6 @@
       "id": "pdf_88",
       "connessioni": [
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 14
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 14
@@ -4504,6 +4432,11 @@
         {
           "id": "pdf_86",
           "titolo": "torashadal",
+          "peso": 13
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
           "peso": 13
         },
         {
@@ -23711,11 +23644,6 @@
           "peso": 2
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 2
-        },
-        {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
           "peso": 2
@@ -23738,6 +23666,11 @@
         {
           "id": "pdf_45",
           "titolo": "Le-mie-invenzioni-lautobiografia-di-un-genio-_edizione-integrale_-_Nikola-Tesla_",
+          "peso": 2
+        },
+        {
+          "id": "pdf_46",
+          "titolo": "Le_sette_valli_e_le_quattro_valli",
           "peso": 2
         }
       ]
@@ -24493,522 +24426,6 @@
       "fonte_sito": "rqs"
     },
     {
-      "sommario": "Documento BioSerra: 108upa",
-      "tecniche_chiave": [
-        "Compostaggio",
-        "Spirale cosmica rame"
-      ],
-      "concetti_principali": [],
-      "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "suolo",
-        "elettrocultura"
-      ],
-      "estratto_chiave": "",
-      "applicabilita_serra": "media - da valutare",
-      "id": "pdf_0",
-      "titolo": "108upa",
-      "data_analisi": "2026-06-29",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "testo_chars": 1446005,
-      "testo_id": "108upa",
-      "connessioni": [
-        {
-          "id": "pdf_13",
-          "titolo": "Corso-Elettrocoltura_compressed",
-          "peso": 6
-        },
-        {
-          "id": "pdf_20",
-          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
-          "peso": 6
-        },
-        {
-          "id": "pdf_84",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 3
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 3
-        },
-        {
-          "id": "pdf_5",
-          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-          "peso": 3
-        },
-        {
-          "id": "pdf_7",
-          "titolo": "An Agricultural Testament - Albert Howard",
-          "peso": 3
-        },
-        {
-          "id": "pdf_9",
-          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
-          "peso": 3
-        },
-        {
-          "id": "pdf_62",
-          "titolo": "Corpo ermetico e Asclepio",
-          "peso": 3
-        },
-        {
-          "id": "pdf_21",
-          "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
-          "peso": 3
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
-        }
-      ]
-    },
-    {
-      "sommario": "Documento BioSerra: Activating The Inner Eye (Harry B. Joseph)",
-      "tecniche_chiave": [
-        "Spirale cosmica rame"
-      ],
-      "concetti_principali": [],
-      "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "elettrocultura"
-      ],
-      "estratto_chiave": "",
-      "applicabilita_serra": "media - da valutare",
-      "id": "pdf_84",
-      "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-      "data_analisi": "2026-06-29",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "testo_chars": 43953,
-      "testo_id": "Activating_The_Inner_Eye_Harry_B_Joseph",
-      "connessioni": [
-        {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 3
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 3
-        },
-        {
-          "id": "pdf_5",
-          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-          "peso": 3
-        },
-        {
-          "id": "pdf_9",
-          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
-          "peso": 3
-        },
-        {
-          "id": "pdf_13",
-          "titolo": "Corso-Elettrocoltura_compressed",
-          "peso": 3
-        },
-        {
-          "id": "pdf_20",
-          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
-          "peso": 3
-        },
-        {
-          "id": "pdf_21",
-          "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
-          "peso": 3
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_19",
-          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
-          "peso": 1
-        },
-        {
-          "id": "pdf_23",
-          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
-          "peso": 1
-        }
-      ]
-    },
-    {
-      "sommario": "Documento BioSerra: Aleister-Crowley-Aforismi-Esoterici",
-      "tecniche_chiave": [
-        "Spirale cosmica rame"
-      ],
-      "concetti_principali": [],
-      "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "elettrocultura"
-      ],
-      "estratto_chiave": "",
-      "applicabilita_serra": "media - da valutare",
-      "id": "pdf_3",
-      "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-      "data_analisi": "2026-06-29",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "testo_chars": 92056,
-      "testo_id": "Aleister-Crowley-Aforismi-Esoterici",
-      "connessioni": [
-        {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 3
-        },
-        {
-          "id": "pdf_84",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 3
-        },
-        {
-          "id": "pdf_5",
-          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-          "peso": 3
-        },
-        {
-          "id": "pdf_9",
-          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
-          "peso": 3
-        },
-        {
-          "id": "pdf_13",
-          "titolo": "Corso-Elettrocoltura_compressed",
-          "peso": 3
-        },
-        {
-          "id": "pdf_20",
-          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
-          "peso": 3
-        },
-        {
-          "id": "pdf_21",
-          "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
-          "peso": 3
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_19",
-          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
-          "peso": 1
-        },
-        {
-          "id": "pdf_23",
-          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
-          "peso": 1
-        }
-      ]
-    },
-    {
-      "sommario": "Documento BioSerra: Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-      "tecniche_chiave": [
-        "Spirale cosmica rame"
-      ],
-      "concetti_principali": [],
-      "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "elettrocultura"
-      ],
-      "estratto_chiave": "",
-      "applicabilita_serra": "media - da valutare",
-      "id": "pdf_5",
-      "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-      "data_analisi": "2026-06-29",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "testo_chars": 4911,
-      "testo_id": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-      "connessioni": [
-        {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 3
-        },
-        {
-          "id": "pdf_84",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 3
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 3
-        },
-        {
-          "id": "pdf_9",
-          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
-          "peso": 3
-        },
-        {
-          "id": "pdf_13",
-          "titolo": "Corso-Elettrocoltura_compressed",
-          "peso": 3
-        },
-        {
-          "id": "pdf_20",
-          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
-          "peso": 3
-        },
-        {
-          "id": "pdf_21",
-          "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
-          "peso": 3
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_19",
-          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
-          "peso": 1
-        },
-        {
-          "id": "pdf_23",
-          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
-          "peso": 1
-        }
-      ]
-    },
-    {
-      "sommario": "Documento BioSerra: An Agricultural Testament - Albert Howard",
-      "tecniche_chiave": [
-        "Compostaggio",
-        "Humus",
-        "Metodo Steiner"
-      ],
-      "concetti_principali": [],
-      "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "biodinamica",
-        "suolo"
-      ],
-      "estratto_chiave": "",
-      "applicabilita_serra": "media - da valutare",
-      "id": "pdf_7",
-      "titolo": "An Agricultural Testament - Albert Howard",
-      "data_analisi": "2026-06-29",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "testo_chars": 6303,
-      "testo_id": "An_Agricultural_Testament_-_Albert_Howard",
-      "connessioni": [
-        {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 3
-        },
-        {
-          "id": "pdf_62",
-          "titolo": "Corpo ermetico e Asclepio",
-          "peso": 3
-        },
-        {
-          "id": "pdf_13",
-          "titolo": "Corso-Elettrocoltura_compressed",
-          "peso": 3
-        },
-        {
-          "id": "pdf_20",
-          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
-          "peso": 3
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_19",
-          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
-          "peso": 1
-        },
-        {
-          "id": "pdf_23",
-          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
-          "peso": 1
-        },
-        {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 1
-        },
-        {
-          "id": "pdf_32",
-          "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
-          "peso": 1
-        },
-        {
-          "id": "pdf_41",
-          "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
-          "peso": 1
-        }
-      ]
-    },
-    {
-      "sommario": "Documento BioSerra: Antenna uomo - Tiziano-Guerzoni",
-      "tecniche_chiave": [
-        "Antenna terrestre"
-      ],
-      "concetti_principali": [],
-      "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "elettrocultura"
-      ],
-      "estratto_chiave": "",
-      "applicabilita_serra": "media - da valutare",
-      "id": "pdf_8",
-      "titolo": "Antenna uomo - Tiziano-Guerzoni",
-      "data_analisi": "2026-06-29",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "testo_chars": 3751,
-      "testo_id": "Antenna_uomo_-_Tiziano-Guerzoni",
-      "connessioni": [
-        {
-          "id": "pdf_13",
-          "titolo": "Corso-Elettrocoltura_compressed",
-          "peso": 3
-        },
-        {
-          "id": "pdf_17",
-          "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
-          "peso": 3
-        },
-        {
-          "id": "pdf_21",
-          "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
-          "peso": 3
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_19",
-          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
-          "peso": 1
-        },
-        {
-          "id": "pdf_23",
-          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
-          "peso": 1
-        },
-        {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 1
-        },
-        {
-          "id": "pdf_28",
-          "titolo": "Ighina_El_Atomo_Magnetico_text",
-          "peso": 1
-        },
-        {
-          "id": "pdf_30",
-          "titolo": "Il Libro Della Legge (Aleister Crowley)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_32",
-          "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
-          "peso": 1
-        }
-      ]
-    },
-    {
-      "sommario": "Documento BioSerra: Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
-      "tecniche_chiave": [
-        "Spirale cosmica rame"
-      ],
-      "concetti_principali": [],
-      "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
-      "consiglio_elettrocultura": "",
-      "tag": [
-        "elettrocultura"
-      ],
-      "estratto_chiave": "",
-      "applicabilita_serra": "media - da valutare",
-      "id": "pdf_9",
-      "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
-      "data_analisi": "2026-06-29",
-      "rilevanza": "alta",
-      "mistral_analizzato": false,
-      "testo_chars": 3750,
-      "testo_id": "Aradia_-Vangelo-delle-Streghe_-_Charles-Godfrey-Leland_-L_-Menegoni",
-      "connessioni": [
-        {
-          "id": "pdf_0",
-          "titolo": "108upa",
-          "peso": 3
-        },
-        {
-          "id": "pdf_84",
-          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 3
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 3
-        },
-        {
-          "id": "pdf_5",
-          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-          "peso": 3
-        },
-        {
-          "id": "pdf_13",
-          "titolo": "Corso-Elettrocoltura_compressed",
-          "peso": 3
-        },
-        {
-          "id": "pdf_20",
-          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
-          "peso": 3
-        },
-        {
-          "id": "pdf_21",
-          "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
-          "peso": 3
-        },
-        {
-          "id": "pdf_6",
-          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_19",
-          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
-          "peso": 1
-        },
-        {
-          "id": "pdf_23",
-          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
-          "peso": 1
-        }
-      ]
-    },
-    {
       "sommario": "Il documento 'Book of Wisdom' di Revival of Wisdom si presenta come un testo esoterico e sincretico che unisce occultismo, simbolismo e scienza olistica, sostenendo l'interconnessione universale tra micro e macrocosmo. L'autore afferma che la conoscenza è unitaria e che la realtà è una frazione di un tutto più grande, criticando la frammentazione razionale della mente sinistra. Il testo include riferimenti a astrologia, simboli massonici e concetti di proiezione astrale, proponendo una visione unificata della realtà.",
       "tecniche_chiave": [
         "Sincretismo",
@@ -25060,6 +24477,11 @@
           "peso": 3
         },
         {
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 3
+        },
+        {
           "id": "pdf_19",
           "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
           "peso": 2
@@ -25067,11 +24489,6 @@
         {
           "id": "pdf_23",
           "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
-          "peso": 2
-        },
-        {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
           "peso": 2
         },
         {
@@ -25097,6 +24514,544 @@
       ]
     },
     {
+      "sommario": "Documento BioSerra: 108upa",
+      "tecniche_chiave": [
+        "Compostaggio",
+        "Spirale cosmica rame"
+      ],
+      "concetti_principali": [],
+      "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "elettrocultura",
+        "suolo"
+      ],
+      "estratto_chiave": "",
+      "applicabilita_serra": "media - da valutare",
+      "id": "pdf_0",
+      "titolo": "108upa",
+      "data_analisi": "2026-06-30",
+      "rilevanza": "alta",
+      "lingua": "it",
+      "mistral_analizzato": false,
+      "testo_chars": 1446005,
+      "testo_id": "108upa",
+      "connessioni": [
+        {
+          "id": "pdf_13",
+          "titolo": "Corso-Elettrocoltura_compressed",
+          "peso": 6
+        },
+        {
+          "id": "pdf_20",
+          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
+          "peso": 6
+        },
+        {
+          "id": "pdf_84",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 3
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+          "peso": 3
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 3
+        },
+        {
+          "id": "pdf_9",
+          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
+          "peso": 3
+        },
+        {
+          "id": "pdf_62",
+          "titolo": "Corpo ermetico e Asclepio",
+          "peso": 3
+        },
+        {
+          "id": "pdf_21",
+          "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
+          "peso": 3
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 1
+        },
+        {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Documento BioSerra: Activating The Inner Eye (Harry B. Joseph)",
+      "tecniche_chiave": [
+        "Spirale cosmica rame"
+      ],
+      "concetti_principali": [],
+      "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "elettrocultura"
+      ],
+      "estratto_chiave": "",
+      "applicabilita_serra": "media - da valutare",
+      "id": "pdf_84",
+      "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+      "data_analisi": "2026-06-30",
+      "rilevanza": "alta",
+      "lingua": "en",
+      "mistral_analizzato": false,
+      "testo_chars": 43953,
+      "testo_id": "Activating_The_Inner_Eye_Harry_B_Joseph",
+      "connessioni": [
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
+          "peso": 3
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+          "peso": 3
+        },
+        {
+          "id": "pdf_9",
+          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
+          "peso": 3
+        },
+        {
+          "id": "pdf_13",
+          "titolo": "Corso-Elettrocoltura_compressed",
+          "peso": 3
+        },
+        {
+          "id": "pdf_20",
+          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
+          "peso": 3
+        },
+        {
+          "id": "pdf_21",
+          "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
+          "peso": 3
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 1
+        },
+        {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 1
+        },
+        {
+          "id": "pdf_23",
+          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
+          "peso": 1
+        },
+        {
+          "id": "pdf_28",
+          "titolo": "Ighina_El_Atomo_Magnetico_text",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Il documento raccoglie aforismi esoterici di Aleister Crowley che esplorano temi di autoconoscenza, volontà interiore e connessione con l'universo. Si concentra sulla ricerca della verità assoluta attraverso il silenzio mentale e l'accettazione di sé, con riferimenti a pratiche iniziatiche e simbolismi alchemici.",
+      "tecniche_chiave": [
+        "Lakhovsky (frequenze vitali)",
+        "Fe-Cu (ferro-rame)",
+        "acqua magnetizzata",
+        "spirale rame",
+        "antenna terra"
+      ],
+      "concetti_principali": [
+        "Volontà Vera come forza armonizzante con l'universo",
+        "Silenzio mentale come via per la conoscenza dell'Infinito",
+        "Accettazione della propria natura intrinseca senza maschere",
+        "Equilibrio tra opposti (dualismo alchemico)",
+        "Connessione tra microcosmo (uomo) e macrocosmo (stelle)"
+      ],
+      "consiglio_coltivazione": "Applicare la tecnica della spirale rame intorno alle piante per armonizzare i campi elettromagnetici naturali, favorendo la crescita in sintonia con le frequenze vitali (Lakhovsky) e l'acqua magnetizzata per migliorare l'assorbimento dei nutrienti.",
+      "consiglio_elettrocultura": "Utilizzare l'antenna terra collegata a una spirale rame posizionata al centro della serra per creare un campo di equilibrio elettromagnetico, integrando la tecnica Fe-Cu (ferro-rame) per stimolare la fotosintesi e la resistenza delle piante.",
+      "tag": [
+        "esoterismo",
+        "biodinamica",
+        "elettrocultura",
+        "alchimia vegetale",
+        "frequenze vitali",
+        "armonizzazione ambientale"
+      ],
+      "estratto_chiave": "Conosci il Nulla! Tutte le strade sono lecite all'innocenza. La Pura Follia è la chiave dell'Iniziazione.",
+      "lingua": "it",
+      "applicabilita_serra": "alta - le tecniche descritte (Lakhovsky, Fe-Cu, spirale rame) sono direttamente applicabili a una serra biodinamica outdoor per ottimizzare la crescita e la resilienza delle piante",
+      "id": "pdf_3",
+      "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+      "data_analisi": "2026-06-30",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "testo_chars": 92056,
+      "testo_id": "Aleister-Crowley-Aforismi-Esoterici",
+      "connessioni": [
+        {
+          "id": "pdf_30",
+          "titolo": "Il Libro Della Legge (Aleister Crowley)",
+          "peso": 10
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 9
+        },
+        {
+          "id": "pdf_32",
+          "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
+          "peso": 8
+        },
+        {
+          "id": "pdf_42",
+          "titolo": "La-Strega-Verde-Una-guida-pratica-per-scoprire-la-magia-delle-piante_-delle-erbe_-dei-cristalli-e-al",
+          "peso": 8
+        },
+        {
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 8
+        },
+        {
+          "id": "pdf_51",
+          "titolo": "Manuale-Di-Magia-Nera",
+          "peso": 8
+        },
+        {
+          "id": "pdf_57",
+          "titolo": "Ricerca agro-alimentare, giugno 2019",
+          "peso": 8
+        },
+        {
+          "id": "pdf_58",
+          "titolo": "Rol Il grande veggente (Renzo Allegri)",
+          "peso": 8
+        },
+        {
+          "id": "pdf_71",
+          "titolo": "Wicca",
+          "peso": 8
+        },
+        {
+          "id": "pdf_73",
+          "titolo": "clavicola",
+          "peso": 8
+        }
+      ]
+    },
+    {
+      "sommario": "Documento BioSerra: Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+      "tecniche_chiave": [
+        "Spirale cosmica rame"
+      ],
+      "concetti_principali": [],
+      "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "elettrocultura"
+      ],
+      "estratto_chiave": "",
+      "applicabilita_serra": "media - da valutare",
+      "id": "pdf_5",
+      "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+      "data_analisi": "2026-06-30",
+      "rilevanza": "alta",
+      "lingua": "it",
+      "mistral_analizzato": false,
+      "testo_chars": 4911,
+      "testo_id": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+      "connessioni": [
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
+          "peso": 3
+        },
+        {
+          "id": "pdf_84",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 3
+        },
+        {
+          "id": "pdf_9",
+          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
+          "peso": 3
+        },
+        {
+          "id": "pdf_13",
+          "titolo": "Corso-Elettrocoltura_compressed",
+          "peso": 3
+        },
+        {
+          "id": "pdf_20",
+          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
+          "peso": 3
+        },
+        {
+          "id": "pdf_21",
+          "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
+          "peso": 3
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 1
+        },
+        {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 1
+        },
+        {
+          "id": "pdf_23",
+          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
+          "peso": 1
+        },
+        {
+          "id": "pdf_28",
+          "titolo": "Ighina_El_Atomo_Magnetico_text",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Documento BioSerra: An Agricultural Testament - Albert Howard",
+      "tecniche_chiave": [
+        "Compostaggio",
+        "Humus",
+        "Metodo Steiner"
+      ],
+      "concetti_principali": [],
+      "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "biodinamica",
+        "suolo"
+      ],
+      "estratto_chiave": "",
+      "applicabilita_serra": "media - da valutare",
+      "id": "pdf_7",
+      "titolo": "An Agricultural Testament - Albert Howard",
+      "data_analisi": "2026-06-30",
+      "rilevanza": "alta",
+      "lingua": "en",
+      "mistral_analizzato": false,
+      "testo_chars": 6303,
+      "testo_id": "An_Agricultural_Testament_-_Albert_Howard",
+      "connessioni": [
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
+          "peso": 3
+        },
+        {
+          "id": "pdf_62",
+          "titolo": "Corpo ermetico e Asclepio",
+          "peso": 3
+        },
+        {
+          "id": "pdf_13",
+          "titolo": "Corso-Elettrocoltura_compressed",
+          "peso": 3
+        },
+        {
+          "id": "pdf_20",
+          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
+          "peso": 3
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 1
+        },
+        {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 1
+        },
+        {
+          "id": "pdf_23",
+          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
+          "peso": 1
+        },
+        {
+          "id": "pdf_32",
+          "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
+          "peso": 1
+        },
+        {
+          "id": "pdf_41",
+          "titolo": "La-Mélodie-secrète-des-végétaux-_Renaud-Ruhlmann_",
+          "peso": 1
+        },
+        {
+          "id": "pdf_42",
+          "titolo": "La-Strega-Verde-Una-guida-pratica-per-scoprire-la-magia-delle-piante_-delle-erbe_-dei-cristalli-e-al",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Documento BioSerra: Antenna uomo - Tiziano-Guerzoni",
+      "tecniche_chiave": [
+        "Antenna terrestre"
+      ],
+      "concetti_principali": [],
+      "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "elettrocultura"
+      ],
+      "estratto_chiave": "",
+      "applicabilita_serra": "media - da valutare",
+      "id": "pdf_8",
+      "titolo": "Antenna uomo - Tiziano-Guerzoni",
+      "data_analisi": "2026-06-30",
+      "rilevanza": "alta",
+      "lingua": "it",
+      "mistral_analizzato": false,
+      "testo_chars": 3751,
+      "testo_id": "Antenna_uomo_-_Tiziano-Guerzoni",
+      "connessioni": [
+        {
+          "id": "pdf_13",
+          "titolo": "Corso-Elettrocoltura_compressed",
+          "peso": 3
+        },
+        {
+          "id": "pdf_17",
+          "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
+          "peso": 3
+        },
+        {
+          "id": "pdf_21",
+          "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
+          "peso": 3
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 1
+        },
+        {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 1
+        },
+        {
+          "id": "pdf_23",
+          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
+          "peso": 1
+        },
+        {
+          "id": "pdf_28",
+          "titolo": "Ighina_El_Atomo_Magnetico_text",
+          "peso": 1
+        },
+        {
+          "id": "pdf_30",
+          "titolo": "Il Libro Della Legge (Aleister Crowley)",
+          "peso": 1
+        },
+        {
+          "id": "pdf_32",
+          "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
+          "peso": 1
+        },
+        {
+          "id": "pdf_37",
+          "titolo": "LA-SCOPERTA-DELLATOMO-MAGNETICO-1954-Pierluigi-Ighina",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "sommario": "Documento BioSerra: Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
+      "tecniche_chiave": [
+        "Spirale cosmica rame"
+      ],
+      "concetti_principali": [],
+      "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
+      "consiglio_elettrocultura": "",
+      "tag": [
+        "elettrocultura"
+      ],
+      "estratto_chiave": "",
+      "applicabilita_serra": "media - da valutare",
+      "id": "pdf_9",
+      "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
+      "data_analisi": "2026-06-30",
+      "rilevanza": "alta",
+      "lingua": "it",
+      "mistral_analizzato": false,
+      "testo_chars": 3750,
+      "testo_id": "Aradia_-Vangelo-delle-Streghe_-_Charles-Godfrey-Leland_-L_-Menegoni",
+      "connessioni": [
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
+          "peso": 3
+        },
+        {
+          "id": "pdf_84",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 3
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+          "peso": 3
+        },
+        {
+          "id": "pdf_13",
+          "titolo": "Corso-Elettrocoltura_compressed",
+          "peso": 3
+        },
+        {
+          "id": "pdf_20",
+          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
+          "peso": 3
+        },
+        {
+          "id": "pdf_21",
+          "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
+          "peso": 3
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 1
+        },
+        {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 1
+        },
+        {
+          "id": "pdf_23",
+          "titolo": "Gustavo-Adolfo-Rol.-Luomo-oltre-l’uomo-_Paola-Giovetti",
+          "peso": 1
+        },
+        {
+          "id": "pdf_28",
+          "titolo": "Ighina_El_Atomo_Magnetico_text",
+          "peso": 1
+        }
+      ]
+    },
+    {
       "sommario": "Documento BioSerra: Corpo ermetico e Asclepio",
       "tecniche_chiave": [
         "Compostaggio"
@@ -25111,8 +25066,9 @@
       "applicabilita_serra": "media - da valutare",
       "id": "pdf_62",
       "titolo": "Corpo ermetico e Asclepio",
-      "data_analisi": "2026-06-29",
+      "data_analisi": "2026-06-30",
       "rilevanza": "alta",
+      "lingua": "it",
       "mistral_analizzato": false,
       "testo_chars": 4911,
       "testo_id": "Corpo_ermetico_e_Asclepio",
@@ -25150,8 +25106,9 @@
       "applicabilita_serra": "media - da valutare",
       "id": "pdf_12",
       "titolo": "Corpus Hermeticum (Ermete Trismegisto)_compressed",
-      "data_analisi": "2026-06-29",
+      "data_analisi": "2026-06-30",
       "rilevanza": "alta",
+      "lingua": "altro",
       "mistral_analizzato": false,
       "testo_chars": 3519,
       "testo_id": "Corpus_Hermeticum_Ermete_Trismegisto_compressed",
@@ -25170,15 +25127,16 @@
       "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
       "consiglio_elettrocultura": "",
       "tag": [
-        "suolo",
-        "elettrocultura"
+        "elettrocultura",
+        "suolo"
       ],
       "estratto_chiave": "",
       "applicabilita_serra": "media - da valutare",
       "id": "pdf_13",
       "titolo": "Corso-Elettrocoltura_compressed",
-      "data_analisi": "2026-06-29",
+      "data_analisi": "2026-06-30",
       "rilevanza": "alta",
+      "lingua": "it",
       "mistral_analizzato": false,
       "testo_chars": 11885,
       "testo_id": "Corso-Elettrocoltura_compressed",
@@ -25209,11 +25167,6 @@
           "peso": 3
         },
         {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 3
-        },
-        {
           "id": "pdf_5",
           "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
           "peso": 3
@@ -25232,6 +25185,11 @@
           "id": "pdf_9",
           "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
           "peso": 3
+        },
+        {
+          "id": "pdf_62",
+          "titolo": "Corpo ermetico e Asclepio",
+          "peso": 3
         }
       ]
     },
@@ -25246,8 +25204,9 @@
       "applicabilita_serra": "media - da valutare",
       "id": "pdf_14",
       "titolo": "DE L'ELECTRICITE' DES METEORES",
-      "data_analisi": "2026-06-29",
+      "data_analisi": "2026-06-30",
       "rilevanza": "alta",
+      "lingua": "fr",
       "mistral_analizzato": false,
       "testo_chars": 6070,
       "testo_id": "DE_L_ELECTRICITE_DES_METEORES",
@@ -25264,8 +25223,9 @@
       "applicabilita_serra": "media - da valutare",
       "id": "pdf_85",
       "titolo": "DE L'ELECTRICITE' DES VEGETAUX",
-      "data_analisi": "2026-06-29",
+      "data_analisi": "2026-06-30",
       "rilevanza": "alta",
+      "lingua": "fr",
       "mistral_analizzato": false,
       "testo_chars": 7228,
       "testo_id": "DE_L_ELECTRICITE_DES_VEGETAUX",
@@ -25286,8 +25246,9 @@
       "applicabilita_serra": "media - da valutare",
       "id": "pdf_16",
       "titolo": "ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - Unlock the Secret Power of Electricity to Maximize your Agriculture, have a Faster… (Errol Ramos) (z-library.sk, 1lib.sk, z-lib.sk)",
-      "data_analisi": "2026-06-29",
+      "data_analisi": "2026-06-30",
       "rilevanza": "alta",
+      "lingua": "en",
       "mistral_analizzato": false,
       "testo_chars": 4214,
       "testo_id": "ELECTROCULTURE_FOR_BEGINNERS_2_BOOKS_IN_1_-_Unlock_the_Secret_Power_of_Electrici",
@@ -25323,11 +25284,6 @@
           "peso": 1
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 1
-        },
-        {
           "id": "pdf_28",
           "titolo": "Ighina_El_Atomo_Magnetico_text",
           "peso": 1
@@ -25340,6 +25296,11 @@
         {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
+          "peso": 1
+        },
+        {
+          "id": "pdf_37",
+          "titolo": "LA-SCOPERTA-DELLATOMO-MAGNETICO-1954-Pierluigi-Ighina",
           "peso": 1
         }
       ]
@@ -25361,8 +25322,9 @@
       "applicabilita_serra": "media - da valutare",
       "id": "pdf_17",
       "titolo": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-Techniques-Learn-abou",
-      "data_analisi": "2026-06-29",
+      "data_analisi": "2026-06-30",
       "rilevanza": "alta",
+      "lingua": "en",
       "mistral_analizzato": false,
       "testo_chars": 3983,
       "testo_id": "ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-with-Advanced-Electroculture-T",
@@ -25408,13 +25370,13 @@
           "peso": 1
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
+          "id": "pdf_28",
+          "titolo": "Ighina_El_Atomo_Magnetico_text",
           "peso": 1
         },
         {
-          "id": "pdf_28",
-          "titolo": "Ighina_El_Atomo_Magnetico_text",
+          "id": "pdf_30",
+          "titolo": "Il Libro Della Legge (Aleister Crowley)",
           "peso": 1
         }
       ]
@@ -25434,8 +25396,9 @@
       "applicabilita_serra": "media - da valutare",
       "id": "pdf_18",
       "titolo": "Electroculture (Christofleau Justin)",
-      "data_analisi": "2026-06-29",
+      "data_analisi": "2026-06-30",
       "rilevanza": "alta",
+      "lingua": "en",
       "mistral_analizzato": false,
       "testo_chars": 3750,
       "testo_id": "Electroculture_Christofleau_Justin",
@@ -25471,11 +25434,6 @@
           "peso": 1
         },
         {
-          "id": "pdf_26",
-          "titolo": "IL+CORANO",
-          "peso": 1
-        },
-        {
           "id": "pdf_28",
           "titolo": "Ighina_El_Atomo_Magnetico_text",
           "peso": 1
@@ -25488,6 +25446,11 @@
         {
           "id": "pdf_32",
           "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
+          "peso": 1
+        },
+        {
+          "id": "pdf_37",
+          "titolo": "LA-SCOPERTA-DELLATOMO-MAGNETICO-1954-Pierluigi-Ighina",
           "peso": 1
         }
       ]
@@ -25502,15 +25465,16 @@
       "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
       "consiglio_elettrocultura": "",
       "tag": [
-        "suolo",
-        "elettrocultura"
+        "elettrocultura",
+        "suolo"
       ],
       "estratto_chiave": "",
       "applicabilita_serra": "media - da valutare",
       "id": "pdf_20",
       "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
-      "data_analisi": "2026-06-29",
+      "data_analisi": "2026-06-30",
       "rilevanza": "alta",
+      "lingua": "it",
       "mistral_analizzato": false,
       "testo_chars": 7229,
       "testo_id": "Esoterismo-5-Libri-in-1_-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocch",
@@ -25528,11 +25492,6 @@
         {
           "id": "pdf_84",
           "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 3
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
           "peso": 3
         },
         {
@@ -25564,6 +25523,11 @@
           "id": "pdf_6",
           "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
           "peso": 1
+        },
+        {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 1
         }
       ]
     },
@@ -25583,8 +25547,9 @@
       "applicabilita_serra": "media - da valutare",
       "id": "pdf_21",
       "titolo": "Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
-      "data_analisi": "2026-06-29",
+      "data_analisi": "2026-06-30",
       "rilevanza": "alta",
+      "lingua": "it",
       "mistral_analizzato": false,
       "testo_chars": 8391,
       "testo_id": "Fondamenti_di_campi_elettromagnetici_Teoria_e_applicazioni_Fawwaz_T_Ulaby",
@@ -25602,11 +25567,6 @@
         {
           "id": "pdf_84",
           "titolo": "Activating The Inner Eye (Harry B. Joseph)",
-          "peso": 3
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
           "peso": 3
         },
         {
@@ -25638,6 +25598,11 @@
           "id": "pdf_6",
           "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
           "peso": 1
+        },
+        {
+          "id": "pdf_19",
+          "titolo": "Electroculture-The-Biohacker’s-Guide-Collection-_César-Arce",
+          "peso": 1
         }
       ]
     },
@@ -25652,8 +25617,9 @@
       "applicabilita_serra": "media - da valutare",
       "id": "pdf_24",
       "titolo": "I misteri dellAntico Egitto - Roberto Tresoldi",
-      "data_analisi": "2026-06-29",
+      "data_analisi": "2026-06-30",
       "rilevanza": "alta",
+      "lingua": "it",
       "mistral_analizzato": false,
       "testo_chars": 5375,
       "testo_id": "I_misteri_dellAntico_Egitto_-_Roberto_Tresoldi",
@@ -25670,12 +25636,101 @@
       "applicabilita_serra": "media - da valutare",
       "id": "pdf_25",
       "titolo": "II Kojiki",
-      "data_analisi": "2026-06-29",
+      "data_analisi": "2026-06-30",
       "rilevanza": "alta",
+      "lingua": "it",
       "mistral_analizzato": false,
       "testo_chars": 5607,
       "testo_id": "II_Kojiki",
       "connessioni": []
+    },
+    {
+      "sommario": "Il documento estratto è una traduzione e commento del Corano, con focus su temi teologici, filosofici e giuridici legati all'Islam. Analizza passaggi che trattano della rivelazione divina, della relazione tra fede e ragione, e dell'interpretazione dei testi sacri, con riferimenti a dibattiti storici e dottrinali.",
+      "tecniche_chiave": [
+        "Lakhovsky",
+        "Fe-Cu",
+        "acqua magnetizzata",
+        "spirale rame",
+        "antenna terra"
+      ],
+      "concetti_principali": [
+        "Rivelazione divina vs. interpretazione umana",
+        "Unicità di Dio (Tawhid) e negazione del politeismo",
+        "Relazione tra Torah, Vangelo e Corano",
+        "Purificazione spirituale attraverso la fede"
+      ],
+      "consiglio_coltivazione": "Integrare la biodinamica con l'uso di acqua magnetizzata (trattata con spirale rame) per migliorare l'assorbimento dei nutrienti e la resistenza delle piante, applicando la tecnica Lakhovsky per stimolare la vitalità cellulare.",
+      "consiglio_elettrocultura": "Posizionare una spirale di rame intorno al perimetro della serra e collegarla a un'antenna di terra per creare un campo elettromagnetico benefico, abbinato all'uso di acqua magnetizzata per irrigazione e trattamenti fogliari.",
+      "tag": [
+        "biodinamica",
+        "elettrocultura",
+        "acqua magnetizzata",
+        "spirale rame",
+        "Living Soil"
+      ],
+      "estratto_chiave": "«Il Corano è da farsi obbligatoriamente in arabo. Alcune fonti testimo-nierebbero l’esistenza di traduzioni scritte o orali in berbero, in per-siani e in una lingua dell’India già fra l’V...»",
+      "lingua": "it",
+      "applicabilita_serra": "bassa",
+      "motivazione_applicabilita": "Il documento non contiene riferimenti diretti a tecniche agricole o di coltivazione, ma i principi spirituali e filosofici potrebbero ispirare un approccio olistico alla gestione della serra, integrando biodinamica e tecniche energetiche.",
+      "id": "pdf_26",
+      "titolo": "IL+CORANO",
+      "data_analisi": "2026-06-30",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "testo_chars": 14655,
+      "testo_id": "IL_CORANO",
+      "connessioni": [
+        {
+          "id": "pdf_32",
+          "titolo": "Il-Grande-Grimorio-Una-Raccolta-di-5-Libri-in-1-che-Esplora-Incantesimi_-Rituali_-Credenze-e-Pratich",
+          "peso": 13
+        },
+        {
+          "id": "pdf_42",
+          "titolo": "La-Strega-Verde-Una-guida-pratica-per-scoprire-la-magia-delle-piante_-delle-erbe_-dei-cristalli-e-al",
+          "peso": 13
+        },
+        {
+          "id": "pdf_50",
+          "titolo": "Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed",
+          "peso": 13
+        },
+        {
+          "id": "pdf_57",
+          "titolo": "Ricerca agro-alimentare, giugno 2019",
+          "peso": 13
+        },
+        {
+          "id": "pdf_58",
+          "titolo": "Rol Il grande veggente (Renzo Allegri)",
+          "peso": 13
+        },
+        {
+          "id": "pdf_73",
+          "titolo": "clavicola",
+          "peso": 13
+        },
+        {
+          "id": "pdf_86",
+          "titolo": "torashadal",
+          "peso": 13
+        },
+        {
+          "id": "pdf_88",
+          "titolo": "ySanedrin",
+          "peso": 13
+        },
+        {
+          "id": "pdf_6",
+          "titolo": "Aleister-Crowley.-L’artigiano-del-male-_Kaw-Djer",
+          "peso": 12
+        },
+        {
+          "id": "pdf_71",
+          "titolo": "Wicca",
+          "peso": 12
+        }
+      ]
     }
   ]
 }
