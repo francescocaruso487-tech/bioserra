@@ -43,14 +43,29 @@ def gh_get_sha(path):
             return json.load(r)['sha']
     except: return None
 
-def gh_put(path, content_b64, sha, message):
-    body = json.dumps({'message': message, 'content': content_b64,
-                       'sha': sha, 'branch': 'main'}).encode()
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}',
-        data=body, headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)
+def gh_put(path, content, sha, message):
+    """Resiliente: 3 tentativi, SHA sempre fresco, mai solleva eccezioni (None se fallisce)."""
+    if isinstance(content, str):
+        content = content.encode('utf-8')
+    encoded = base64.b64encode(content).decode('ascii')
+    for attempt in range(3):
+        try:
+            sha_fresco = gh_get_sha(path)
+            body = {'message': message, 'content': encoded,
+                    'sha': sha_fresco, 'branch': 'main'}
+            if not sha_fresco:
+                body.pop('sha')
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}',
+                data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'},
+                method='PUT')
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)
+        except Exception as ex:
+            print(f'  gh_put tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    return None
 
 def gh_raw(path):
     req = urllib.request.Request(RAW + path, headers={
@@ -496,11 +511,11 @@ def aggiorna_memoria_giornaliera(memoria, brain_oggi, oggi_data):
     return memoria
 
 def salva_memoria(memoria, sha):
-    content_b64 = base64.b64encode(
-        json.dumps(memoria, indent=2, ensure_ascii=False).encode()).decode()
-    sha_fresh = gh_get_sha('data/memoria_chat.json') or sha
-    gh_put('data/memoria_chat.json', content_b64, sha_fresh or 'new',
+    content_json = json.dumps(memoria, indent=2, ensure_ascii=False)
+    res = gh_put('data/memoria_chat.json', content_json, sha,
            f'memoria: {datetime.date.today().isoformat()}')
+    if res is None:
+        print('  ERRORE: salvataggio memoria_chat.json fallito dopo 3 tentativi')
 
 # ── Fallback ─────────────────────────────────────────────────────
 
@@ -640,11 +655,13 @@ def main():
         'consigli_giorno': cervello_data.get('consigli_giorno', [])
     }
 
-    content_b64 = base64.b64encode(
-        json.dumps(brain_out, indent=2, ensure_ascii=False).encode()).decode()
-    _, sha = gh_get('data/brain.json')
-    gh_put('data/brain.json', content_b64, sha, f'brain v6 {oggi_data} [{len(testi)} testi PDF]')
-    print(f'  Salvato. Testi letti: {len(testi)}, Consigli: {len(brain_out["consigli_giorno"])}')
+    content_json = json.dumps(brain_out, indent=2, ensure_ascii=False)
+    sha = gh_get_sha('data/brain.json')
+    res = gh_put('data/brain.json', content_json, sha, f'brain v6 {oggi_data} [{len(testi)} testi PDF]')
+    if res is None:
+        print('  ERRORE CRITICO: salvataggio brain.json fallito dopo 3 tentativi')
+    else:
+        print(f'  Salvato. Testi letti: {len(testi)}, Consigli: {len(brain_out["consigli_giorno"])}')
 
     # Aggiorna e salva memoria
     memoria = aggiorna_memoria_giornaliera(memoria, cervello_data, oggi_data)
