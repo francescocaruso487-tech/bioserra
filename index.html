@@ -313,6 +313,22 @@
   </div>
 </div>
 
+<!-- (12) Modal Grafico Vigore/Crescita pianta -->
+<div class="modal-overlay" id="modal-grafico-vigore" onclick="closeGraficoVigore(event)">
+  <div class="modal-sheet" style="max-height:85vh;">
+    <div class="modal-handle"></div>
+    <div class="modal-title" id="vigore-modal-title">📈 Vigore</div>
+    <div style="font-size:11px;color:var(--text2);margin-bottom:12px;line-height:1.5;">
+      Andamento microclima dalla germinazione (snapshot giornaliero locale) e osservazioni registrate nel diario.
+    </div>
+    <div id="vigore-chart-temp"></div>
+    <div style="height:1px;background:var(--border);margin:14px 0;"></div>
+    <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:8px;">👁️ Osservazioni diario</div>
+    <div id="vigore-osservazioni-list"></div>
+    <button class="btn-secondary" onclick="closeGraficoVigore()">Chiudi</button>
+  </div>
+</div>
+
 <!-- (15) Modal Calendario Raccolti aggregato -->
 <div class="modal-overlay" id="modal-calendario-raccolti" onclick="closeCalendarioRaccolti(event)">
   <div class="modal-sheet">
@@ -344,6 +360,9 @@
   <!-- DIVISORE -->
   <div style="height:1px;background:var(--border);margin:16px 0 12px;"></div>
   <div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;">⛅ Meteo & Clima</div>
+
+  <!-- (5) Alert meteo critici 7gg (gelate, ondate calore, piogge pre-raccolto) -->
+  <div id="w-alert-critici" style="display:none;margin-bottom:8px;"></div>
 
   <!-- Alert -->
   <div id="w-serra-alert" style="display:none;border-radius:10px;padding:8px 12px;margin-bottom:8px;background:rgba(239,83,80,0.12);border:1px solid rgba(239,83,80,0.3);color:#ef9a9a;font-size:12px;"><span id="w-serra-alert-text"></span></div>
