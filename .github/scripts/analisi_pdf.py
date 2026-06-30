@@ -29,13 +29,28 @@ def gh_get(path):
         return {'content': base64.b64encode(raw.encode()).decode(), 'sha': d.get('sha','')}
     return d
 
-def gh_put(path, content_b64, sha, message):
-    body = json.dumps({'message': message, 'content': content_b64, 'sha': sha}).encode()
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}',
-        data=body, headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)
+def gh_put(path, content, sha, message):
+    """Resiliente: 3 tentativi, SHA sempre fresco, mai solleva eccezioni (None se fallisce)."""
+    if isinstance(content, str):
+        content = content.encode('utf-8')
+    encoded = base64.b64encode(content).decode('ascii')
+    for attempt in range(3):
+        try:
+            sha_fresco = gh_get_sha(path)
+            body = {'message': message, 'content': encoded, 'branch': 'main'}
+            if sha_fresco:
+                body['sha'] = sha_fresco
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}',
+                data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'},
+                method='PUT')
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)
+        except Exception as ex:
+            print(f'  gh_put tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    return None
 
 def gh_get_sha(path):
     try: return gh_get(path)['sha']
@@ -314,9 +329,11 @@ def main():
         print('Tutto aggiornato — ricalcolo connessioni')
         knowledge['analisi'] = ricalcola_connessioni(analisi_esistenti)
         knowledge['lastUpdate'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
-        content_b64 = base64.b64encode(json.dumps(knowledge, indent=2, ensure_ascii=False).encode()).decode()
-        sha = gh_get('data/pdf_knowledge.json')['sha']
-        gh_put('data/pdf_knowledge.json', content_b64, sha, f'PDF v13 {oggi} connessioni')
+        content_json = json.dumps(knowledge, indent=2, ensure_ascii=False)
+        sha = gh_get_sha('data/pdf_knowledge.json')
+        res = gh_put('data/pdf_knowledge.json', content_json, sha, f'PDF v13 {oggi} connessioni')
+        if res is None:
+            print('  ERRORE CRITICO: salvataggio pdf_knowledge.json fallito dopo 3 tentativi')
         return
 
     # Batch: 10 per notte (veloce perché il testo è già estratto)
@@ -384,10 +401,12 @@ def main():
         'analisi': tutte
     }
 
-    content_b64 = base64.b64encode(json.dumps(knowledge_new, indent=2, ensure_ascii=False).encode()).decode()
-    sha_fresco = gh_get('data/pdf_knowledge.json')['sha']
-    gh_put('data/pdf_knowledge.json', content_b64, sha_fresco,
+    content_json = json.dumps(knowledge_new, indent=2, ensure_ascii=False)
+    sha_fresco = gh_get_sha('data/pdf_knowledge.json')
+    res = gh_put('data/pdf_knowledge.json', content_json, sha_fresco,
            f'PDF v13 {oggi} (+{len(nuove)} mistral:{mistral_count} tot:{len(tutte)}/89)')
+    if res is None:
+        print('  ERRORE CRITICO: salvataggio pdf_knowledge.json fallito dopo 3 tentativi')
 
     print(f'\n=== +{len(nuove)} | tot:{len(tutte)}/89 | Mistral:{mistral_count} ===')
 
