@@ -28,18 +28,29 @@ def gh_get_sha(path):
     except: return None
 
 def gh_put(path, content_bytes, sha, message):
+    """
+    Resiliente: 3 tentativi, SHA sempre fresco (rifetchato ad ogni retry per evitare 409),
+    non solleva eccezioni — un fallimento qui non deve mai crashare l'intero batch notturno.
+    """
     encoded = base64.b64encode(content_bytes).decode('ascii')
-    body = {'message': message, 'content': encoded, 'branch': 'main'}
-    if sha: body['sha'] = sha
-    # Encode path per gestire caratteri non-ASCII nei nomi file
     import urllib.parse
     path_encoded = '/'.join(urllib.parse.quote(p, safe='') for p in path.split('/'))
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path_encoded}',
-        data=json.dumps(body).encode(),
-        headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)
+    url = f'https://api.github.com/repos/{REPO}/contents/{path_encoded}'
+    for attempt in range(3):
+        try:
+            current_sha = sha if attempt == 0 else gh_get_sha(path)
+            body = {'message': message, 'content': encoded, 'branch': 'main'}
+            if current_sha: body['sha'] = current_sha
+            req = urllib.request.Request(
+                url, data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)
+        except Exception as ex:
+            print(f'  gh_put tentativo {attempt+1}/3 fallito ({path}): {ex}')
+            time.sleep(3)
+    print(f'  gh_put FALLITO definitivamente dopo 3 tentativi: {path}')
+    return None
 
 def gh_list(path):
     try:
@@ -267,24 +278,32 @@ def main():
             print(f'  Download ERR: {ex}')
             continue
 
-        testo, metodo, n_pagine = estrai_testo_totale(pdf_bytes, nome)
+        testo, metodo, n_pagine = None, None, None
+        try:
+            testo, metodo, n_pagine = estrai_testo_totale(pdf_bytes, nome)
 
-        if not testo or len(testo) < 50:
-            # Salva placeholder vuoto per non ritentare
-            placeholder = f'=== {nome} ===\nMetodo: vuoto | Pagine: {n_pagine} | Data: {oggi}\n\n[VUOTO] OCR non ha prodotto testo leggibile.\n'
-            path = f'data/testi/{titolo_safe(nome)}.txt'
-            sha = gh_get_sha(path)
-            gh_put(path, placeholder.encode('utf-8'), sha, f'testi: {titolo_safe(nome)} [VUOTO]')
+            if not testo or len(testo) < 50:
+                # Salva placeholder vuoto per non ritentare
+                placeholder = f'=== {nome} ===\nMetodo: vuoto | Pagine: {n_pagine} | Data: {oggi}\n\n[VUOTO] OCR non ha prodotto testo leggibile.\n'
+                path = f'data/testi/{titolo_safe(nome)}.txt'
+                sha = gh_get_sha(path)
+                gh_put(path, placeholder.encode('utf-8'), sha, f'testi: {titolo_safe(nome)} [VUOTO]')
+                stats['vuoti'] += 1
+                print(f'  Salvato placeholder VUOTO')
+                time.sleep(2)
+                continue
+
+            n_chunks = salva_testo_chunked(nome, testo, metodo, n_pagine, oggi)
+            stats['ok'] += 1
+            stats['chunks_totali'] += n_chunks
+            if 'ocr' in metodo: stats['ocr'] += 1
+            else: stats['digitale'] += 1
+        except Exception as ex:
+            # Non crashare l'intero batch per un singolo PDF problematico (es. file molto grandi
+            # o con caratteri particolari nel nome) — logga e prosegui con i successivi.
+            print(f'  ERRORE imprevisto su {nome}: {type(ex).__name__}: {ex}')
             stats['vuoti'] += 1
-            print(f'  Salvato placeholder VUOTO')
-            time.sleep(2)
             continue
-
-        n_chunks = salva_testo_chunked(nome, testo, metodo, n_pagine, oggi)
-        stats['ok'] += 1
-        stats['chunks_totali'] += n_chunks
-        if 'ocr' in metodo: stats['ocr'] += 1
-        else: stats['digitale'] += 1
 
         time.sleep(3)
 
