@@ -2179,7 +2179,7 @@ async function labSbSearch() {
     return;
   }
 
-  // Step 2: sintesi via Cervello AI (Anthropic)
+  // Step 2: sintesi via Cervello AI (Llama/OpenRouter)
   resEl.innerHTML = '<div style="color:rgba(0,180,255,0.5);font-size:12px;padding:10px;text-align:center">\uD83E\uDDE0 Sintetizzo con AI\u2026</div>';
 
   // Grafo: hop1+hop2 arricchisce contesto
