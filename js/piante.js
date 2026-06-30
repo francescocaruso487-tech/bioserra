@@ -654,6 +654,101 @@ function closeCalendarioRaccolti(e) {
   if (!e || e.target === m) { if (m) m.classList.remove('open'); }
 }
 
+// (2) Correlazione interventi <-> esiti: confronta cicli archiviati che hanno ricevuto
+// un certo tipo di intervento (qualunque data, durante l'intero ciclo) con quelli che non
+// l'hanno ricevuto, sulle metriche stelle e resa_grammi. Solo correlazione descrittiva,
+// nessuna inferenza statistica formale (campioni piccoli per natura del progetto).
+function buildCorrelazioniInterventi() {
+  const diario = loadDiario();
+  const archiviate = loadArchivedPlants().filter(p => p.stelle != null || p.resa_grammi != null);
+  if (!archiviate.length) return [];
+
+  const tipiPerPianta = {};
+  diario.forEach(iv => {
+    (iv.piante || []).forEach(pid => {
+      if (!tipiPerPianta[pid]) tipiPerPianta[pid] = new Set();
+      tipiPerPianta[pid].add(iv.tipo);
+    });
+  });
+
+  const tuttiTipi = Object.keys(DIARIO_TIPI).filter(t => t !== 'osservazione' && t !== 'altro');
+  const media = arr => arr.length ? (arr.reduce((a, b) => a + b, 0) / arr.length) : null;
+
+  const risultati = [];
+  tuttiTipi.forEach(tipo => {
+    const conTipo = [], senzaTipo = [];
+    archiviate.forEach(p => {
+      const tipiP = tipiPerPianta[p.id] || new Set();
+      (tipiP.has(tipo) ? conTipo : senzaTipo).push(p);
+    });
+    if (conTipo.length < 2 || senzaTipo.length < 1) return; // dati insufficienti
+    const sCon   = media(conTipo.map(p => p.stelle).filter(v => v != null));
+    const sSenza = media(senzaTipo.map(p => p.stelle).filter(v => v != null));
+    const rCon   = media(conTipo.map(p => p.resa_grammi).filter(v => v != null));
+    const rSenza = media(senzaTipo.map(p => p.resa_grammi).filter(v => v != null));
+    if (sCon == null && rCon == null) return;
+    risultati.push({ tipo, label: DIARIO_TIPI[tipo], nCon: conTipo.length, nSenza: senzaTipo.length, sCon, sSenza, rCon, rSenza });
+  });
+
+  // Ordina per differenza stelle (impatto percepito più forte prima)
+  risultati.sort((a, b) => {
+    const diffA = (a.sCon != null && a.sSenza != null) ? (a.sCon - a.sSenza) : 0;
+    const diffB = (b.sCon != null && b.sSenza != null) ? (b.sCon - b.sSenza) : 0;
+    return diffB - diffA;
+  });
+  return risultati;
+}
+
+function openCorrelazioniInterventi() {
+  const modal = document.getElementById('modal-correlazioni');
+  const list  = document.getElementById('correlazioni-list');
+  if (!modal || !list) return;
+
+  const archiviate = loadArchivedPlants();
+  if (archiviate.length < 3) {
+    list.innerHTML = '<div style="text-align:center;padding:20px 0;color:var(--text3);font-size:13px;">'
+      + 'Servono almeno 3 cicli archiviati per costruire correlazioni utili (al momento: ' + archiviate.length + ').'
+      + '</div>';
+    modal.classList.add('open');
+    return;
+  }
+
+  const ris = buildCorrelazioniInterventi();
+  if (!ris.length) {
+    list.innerHTML = '<div style="text-align:center;padding:20px 0;color:var(--text3);font-size:13px;">'
+      + 'Non ci sono ancora abbastanza dati incrociati diario+archivio per mostrare correlazioni.'
+      + '</div>';
+    modal.classList.add('open');
+    return;
+  }
+
+  list.innerHTML = ris.map(r => {
+    const diffStelle = (r.sCon != null && r.sSenza != null) ? (r.sCon - r.sSenza) : null;
+    const diffResa    = (r.rCon != null && r.rSenza != null) ? (r.rCon - r.rSenza) : null;
+    const colStelle = diffStelle == null ? 'var(--text3)' : (diffStelle > 0 ? 'var(--green3)' : (diffStelle < 0 ? '#ef9a9a' : 'var(--text3)'));
+    const colResa   = diffResa == null ? 'var(--text3)' : (diffResa > 0 ? 'var(--green3)' : (diffResa < 0 ? '#ef9a9a' : 'var(--text3)'));
+    return `<div style="border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:8px;background:var(--bg3);">
+      <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px;">${labEscSafe(r.label)}</div>
+      <div style="font-size:11px;color:var(--text3);margin-bottom:4px;">Con: ${r.nCon} piante · Senza: ${r.nSenza} piante</div>
+      ${diffStelle != null ? `<div style="font-size:12px;color:${colStelle};">⭐ Voto medio: ${r.sCon.toFixed(1)} vs ${r.sSenza.toFixed(1)} (${diffStelle >= 0 ? '+' : ''}${diffStelle.toFixed(1)})</div>` : ''}
+      ${diffResa != null ? `<div style="font-size:12px;color:${colResa};">⚖️ Resa media: ${Math.round(r.rCon)}g vs ${Math.round(r.rSenza)}g (${diffResa >= 0 ? '+' : ''}${Math.round(diffResa)}g)</div>` : ''}
+    </div>`;
+  }).join('');
+
+  modal.classList.add('open');
+}
+
+function closeCorrelazioniInterventi(e) {
+  const m = document.getElementById('modal-correlazioni');
+  if (!e || e.target === m) { if (m) m.classList.remove('open'); }
+}
+
+// Piccolo escape HTML locale (piante.js non importa labEsc di laboratorio.js)
+function labEscSafe(s) {
+  if (s == null) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
 function checkHarvestAlerts() {
   const card = document.getElementById('alerts-oggi-card');
   const list = document.getElementById('alerts-oggi-list');
@@ -1424,8 +1519,26 @@ function confirmArchive() {
   document.getElementById('modal-archive-plant').classList.remove('open');
   renderActivePlants();
   _archivioToast('📦 Archiviata! Ciclo salvato.');
+  _mostraConfrontoCicliSimili(plant);
 
   _syncStoricoGitHub(plant, raccoltaStr, durata);
+}
+
+// (13) Confronto automatico con cicli passati della stessa genetica (stesso `name`).
+// Mostrato come toast secondario, non bloccante, qualche istante dopo l'archiviazione.
+function _mostraConfrontoCicliSimili(plant) {
+  if (plant.resa_grammi == null || !plant.resa_grammi) return;
+  const archived = loadArchivedPlants();
+  const stessaGenetica = archived.filter(p =>
+    p.name === plant.name && p.archivedAt !== plant.archivedAt && p.resa_grammi != null && p.resa_grammi > 0
+  );
+  if (!stessaGenetica.length) return;
+  const avgResa = stessaGenetica.reduce((a, b) => a + b.resa_grammi, 0) / stessaGenetica.length;
+  if (!avgResa) return;
+  const diffPct = Math.round(((plant.resa_grammi - avgResa) / avgResa) * 100);
+  const segno = diffPct >= 0 ? '+' : '';
+  const msg = `📊 ${plant.name}: resa ${segno}${diffPct}% vs media (${Math.round(avgResa)}g, ${stessaGenetica.length} cicli precedenti)`;
+  setTimeout(() => { _archivioToast(msg); }, 2400);
 }
 
 /* ── Sync GitHub ── */
