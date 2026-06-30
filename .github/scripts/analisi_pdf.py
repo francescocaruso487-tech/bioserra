@@ -14,6 +14,26 @@ HEADERS_GH = {
 }
 RAW_BASE = f'https://raw.githubusercontent.com/{REPO}/main/'
 
+# Campi testo GENERATO (no id/testo_id/fonte_web: chiavi tecniche e URL, mai toccare)
+SANITIZE_FIELDS = ['titolo', 'sommario', 'consiglio_coltivazione', 'consiglio_elettrocultura', 'estratto_chiave']
+
+def sanitize_testo(t):
+    """Regola progetto: niente 'cannabis' nel testo generato/mostrato — sostituisce con 'pianta'."""
+    if not t or not isinstance(t, str):
+        return t
+    t = re.sub(r'\s*\(\s*[Cc]annabis\s+sativa\s+L\.?\s*\)', '', t)
+    t = re.sub(r'\bpianta\s+di\s+[Cc]annabis\b', 'pianta', t, flags=re.IGNORECASE)
+    t = t.replace('CANNABIS', 'PIANTA')
+    t = t.replace('Cannabis', 'Pianta')
+    t = t.replace('cannabis', 'pianta')
+    return t
+
+def sanitizza_entry(a):
+    for campo in SANITIZE_FIELDS:
+        if campo in a and isinstance(a[campo], str):
+            a[campo] = sanitize_testo(a[campo])
+    return a
+
 def gh_get(path):
     req = urllib.request.Request(
         f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
@@ -327,6 +347,7 @@ def main():
 
     if not da_rianalizzare:
         print('Tutto aggiornato — ricalcolo connessioni')
+        analisi_esistenti = [sanitizza_entry(a) for a in analisi_esistenti]
         knowledge['analisi'] = ricalcola_connessioni(analisi_esistenti)
         knowledge['lastUpdate'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
         content_json = json.dumps(knowledge, indent=2, ensure_ascii=False)
@@ -380,6 +401,7 @@ def main():
         result['mistral_analizzato'] = mistral_ok
         result['testo_chars'] = len(testo)
         result['testo_id'] = safe_id
+        sanitizza_entry(result)
         nuove.append(result)
 
         time.sleep(1)
@@ -394,6 +416,7 @@ def main():
         a['rilevanza'] = 'alta'
 
     tutte = ricalcola_connessioni(tutte)
+    tutte = [sanitizza_entry(a) for a in tutte]
 
     knowledge_new = {
         'lastUpdate': datetime.datetime.now(datetime.timezone.utc).isoformat(),
