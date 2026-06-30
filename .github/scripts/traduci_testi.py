@@ -30,17 +30,36 @@ def gh_get(path):
             return r2.read().decode('utf-8'), d['sha']
     return base64.b64decode(d['content'].replace('\n','')).decode('utf-8'), d['sha']
 
+def gh_get_sha(path):
+    try:
+        req = urllib.request.Request(
+            f'https://api.github.com/repos/{REPO}/contents/{urllib.parse.quote(path)}',
+            headers=HEADERS_GH)
+        with urllib.request.urlopen(req) as r:
+            return json.load(r)['sha']
+    except Exception:
+        return None
+
 def gh_put(path, content_str, sha, message):
+    """Resiliente: 3 tentativi, SHA sempre fresco, mai solleva eccezioni (None se fallisce)."""
     content_b64 = base64.b64encode(content_str.encode('utf-8')).decode()
-    body = json.dumps({'message': message, 'content': content_b64,
-                       'sha': sha, 'branch': 'main'}).encode()
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{urllib.parse.quote(path)}',
-        data=body,
-        headers={**HEADERS_GH, 'Content-Type': 'application/json'},
-        method='PUT')
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)
+    for attempt in range(3):
+        try:
+            sha_fresco = gh_get_sha(path)
+            body = {'message': message, 'content': content_b64, 'branch': 'main'}
+            if sha_fresco:
+                body['sha'] = sha_fresco
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{urllib.parse.quote(path)}',
+                data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'},
+                method='PUT')
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)
+        except Exception as ex:
+            print(f'  gh_put tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    return None
 
 def gh_list(path):
     req = urllib.request.Request(
@@ -271,7 +290,10 @@ def main():
 
         # Salva testo tradotto
         try:
-            gh_put(f['path'], testo_it, sha_txt, f'translate: {f["name"]} ({lingua}→it)')
+            res = gh_put(f['path'], testo_it, sha_txt, f'translate: {f["name"]} ({lingua}→it)')
+            if res is None:
+                print('  PUT ERR: gh_put fallito dopo 3 tentativi')
+                continue
             print(f'  Salvato ({len(testo_it)} chars)')
             tradotti_ok += 1
         except Exception as ex:
@@ -288,15 +310,13 @@ def main():
         print(f'\n[3] Aggiorno pdf_knowledge.json (campo lingua)...')
         pdf_knowledge['analisi'] = list(analisi_map.values())
         try:
-            sha_pk2 = None
-            req=urllib.request.Request(
-                f'https://api.github.com/repos/{REPO}/contents/data/pdf_knowledge.json',
-                headers=HEADERS_GH)
-            with urllib.request.urlopen(req) as r:
-                sha_pk2 = json.load(r).get('sha')
+            sha_pk2 = gh_get_sha('data/pdf_knowledge.json')
             out = json.dumps(pdf_knowledge, ensure_ascii=False, indent=2)
-            gh_put('data/pdf_knowledge.json', out, sha_pk2, f'update: lingua field in pdf_knowledge ({tradotti_ok} tradotti)')
-            print('  pdf_knowledge aggiornato')
+            res = gh_put('data/pdf_knowledge.json', out, sha_pk2, f'update: lingua field in pdf_knowledge ({tradotti_ok} tradotti)')
+            if res is None:
+                print('  pdf_knowledge update ERR: gh_put fallito dopo 3 tentativi')
+            else:
+                print('  pdf_knowledge aggiornato')
         except Exception as ex:
             print(f'  pdf_knowledge update ERR: {ex}')
 
