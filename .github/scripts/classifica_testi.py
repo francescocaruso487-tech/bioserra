@@ -47,15 +47,24 @@ def gh_list(path):
     except: return []
 
 def gh_put(path, text, sha, msg):
+    """Resiliente: 3 tentativi, SHA sempre fresco, mai solleva eccezioni (None se fallisce)."""
     encoded = base64.b64encode(text.encode('utf-8')).decode('ascii')
-    body = {'message': msg, 'content': encoded, 'branch': 'main'}
-    if sha: body['sha'] = sha
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}',
-        data=json.dumps(body).encode(),
-        headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)['commit']['sha']
+    for attempt in range(3):
+        try:
+            sha_fresco = gh_get_sha(path)
+            body = {'message': msg, 'content': encoded, 'branch': 'main'}
+            if sha_fresco:
+                body['sha'] = sha_fresco
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}',
+                data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)['commit']['sha']
+        except Exception as ex:
+            print(f'  gh_put tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    return None
 
 def gh_raw(path):
     req = urllib.request.Request(RAW + path, headers={
@@ -223,8 +232,12 @@ def main():
         contenuto = header + testo
 
         try:
-            gh_put(path_dest, contenuto, sha_dest,
+            res = gh_put(path_dest, contenuto, sha_dest,
                    f'classifica: {nome} -> {categoria}')
+            if res is None:
+                print(f'  ERR salvataggio: gh_put fallito dopo 3 tentativi')
+                stats['errori'] += 1
+                continue
             stats[categoria] = stats.get(categoria, 0) + 1
             print(f'  Salvato in data/testi/{categoria}/')
         except Exception as ex:
