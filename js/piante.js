@@ -1345,10 +1345,90 @@ function renderArchive() {
         </div>
         ${postrH}
         ${noteH}
-        <div style="margin-top:6px;font-size:10px;color:var(--text3);">📦 Archiviata ${archFmt}</div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:8px;">
+          <div style="font-size:10px;color:var(--text3);">📦 Archiviata ${archFmt}</div>
+          <button onclick="exportReportPDF(${p.id}, '${p.archivedAt}')" style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:4px 10px;font-size:11px;color:var(--text2);cursor:pointer;">📄 Report PDF</button>
+        </div>
       </div>`;
   }
   container.innerHTML = html;
+}
+
+// (17) Export PDF report di fine ciclo: rendimento, metodo, voto, note, eventi diario,
+// generato lato client con jsPDF (CDN, caricato in index.html). Nessun nuovo storage:
+// riusa i dati già presenti in archivio e diario.
+function exportReportPDF(id, archivedAt) {
+  if (typeof window.jspdf === 'undefined' || !window.jspdf.jsPDF) {
+    alert('Libreria PDF non ancora caricata, riprova tra qualche secondo.');
+    return;
+  }
+  const archived = loadArchivedPlants();
+  const p = archived.find(x => x.id === id && x.archivedAt === archivedAt);
+  if (!p) return;
+
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF();
+  let y = 20;
+  const left = 15;
+  const lineH = 7;
+
+  doc.setFontSize(18);
+  doc.text('BioSerra — Report Ciclo', left, y); y += 10;
+  doc.setFontSize(13);
+  doc.text((p.icon ? p.icon + ' ' : '') + p.name, left, y); y += 8;
+  doc.setFontSize(10);
+  doc.setTextColor(100);
+  doc.text(p.type === 'auto' ? 'Autofiorente' : 'Femminizzata', left, y); y += 10;
+  doc.setTextColor(0);
+
+  doc.setFontSize(11);
+  const campi = [
+    ['Germinazione', p.germDate || '—'],
+    ['Data raccolta', p.data_raccolta || '—'],
+    ['Durata ciclo', (p.durata_giorni || '—') + ' giorni'],
+    ['Resa', (p.resa_grammi || '—') + ' g'],
+    ['Metodo', p.metodo || '—'],
+    ['Voto', (p.stelle || 0) + '/5 stelle'],
+    ['Archiviata il', (p.archivedAt || '').slice(0, 10)]
+  ];
+  campi.forEach(([label, val]) => {
+    doc.setFont(undefined, 'bold');
+    doc.text(label + ':', left, y);
+    doc.setFont(undefined, 'normal');
+    doc.text(String(val), left + 45, y);
+    y += lineH;
+  });
+
+  if (p.notes) {
+    y += 4;
+    doc.setFont(undefined, 'bold');
+    doc.text('Note:', left, y); y += lineH;
+    doc.setFont(undefined, 'normal');
+    const noteLines = doc.splitTextToSize(p.notes, 180);
+    doc.text(noteLines, left, y);
+    y += noteLines.length * 6 + 4;
+  }
+
+  // Eventi diario per questa pianta
+  const diario = loadDiario().filter(iv => iv.piante && iv.piante.indexOf(id) !== -1).slice().reverse();
+  if (diario.length) {
+    if (y > 250) { doc.addPage(); y = 20; }
+    y += 4;
+    doc.setFont(undefined, 'bold');
+    doc.text('Eventi diario (' + diario.length + '):', left, y); y += lineH;
+    doc.setFont(undefined, 'normal');
+    doc.setFontSize(9);
+    diario.forEach(iv => {
+      if (y > 280) { doc.addPage(); y = 20; }
+      const tipoLabel = DIARIO_TIPI[iv.tipo] || iv.tipo;
+      const riga = (iv.data || '') + ' — ' + tipoLabel + (iv.note ? ': ' + iv.note.substring(0, 60) : '');
+      doc.text(riga, left, y);
+      y += 5;
+    });
+  }
+
+  const filename = 'bioserra_report_' + (p.name || 'pianta').replace(/[^a-z0-9]/gi, '_') + '_' + (p.archivedAt || '').slice(0, 10) + '.pdf';
+  doc.save(filename);
 }
 
 /* ── Sync da GitHub → locale (bottone tab Archivio) ── */
