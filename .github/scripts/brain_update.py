@@ -430,7 +430,12 @@ Genera JSON completo:
 Rispondi SOLO JSON valido. Nessun testo fuori dal JSON."""
 
     try:
-        risposta = mistral_chat(prompt, max_tokens=1500, temperatura=0.25)
+        # FIX Rev.16: max_tokens=1500 era insufficiente per lo schema JSON
+        # richiesto (consigli_giorno, briefing, consigli_piante.per_pianta,
+        # tecniche_nuove, scoperte, avvisi, piano_giornata, agenti annidati)
+        # -> risposta troncata a meta', parse_json() falliva sempre,
+        # con fallback sistematico "Briefing non disponibile (parse fallito)".
+        risposta = mistral_chat(prompt, max_tokens=3000, temperatura=0.25)
         result = parse_json(risposta)
         if not result:
             # Fallback: crea struttura minima dal testo
@@ -440,7 +445,7 @@ Rispondi SOLO JSON valido. Nessun testo fuori dal JSON."""
                 'consigli_giorno': [],
                 'consigli_piante': {},
                 'piano_giornata': {'mattina': '', 'pomeriggio': '', 'sera': ''},
-                'avvisi_urgenti': []
+                'avvisi': []
             }
         return result
     except Exception as ex:
