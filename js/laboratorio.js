@@ -42,6 +42,25 @@ var LAB_TOKEN = _tk1 + _tk2;
 var LAB_API   = 'https://api.github.com/repos/francescocaruso487-tech/bioserra/contents/data/';
 var LAB_RAW   = 'https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/';
 
+/* Chiave Anthropic centralizzata — UNICO punto da aggiornare quando ruota.
+   Prima era duplicata in 3 punti diversi (cervSend, sintesi SB, labAnalizzaPdf):
+   rischio concreto di disallineamento, come successo qui. */
+function labAntKey() {
+  return ['sk-ant-api03-','IpveWMEEMfS3py7K','X6S7pAkPWG9T9E6L','2bvDlGH9oGFHj43Y','hZOaBDYjf6cVJiEh','KXJqFaAAA'].join('');
+}
+/* Helper: interpreta una risposta dell'API Anthropic e restituisce un messaggio
+   leggibile invece del generico "Errore." — distingue chiave non valida/scaduta
+   da altri errori, per diagnosticare subito problemi come quello di oggi. */
+function labAntErr(data) {
+  if (data && data.error) {
+    if (data.error.type === 'authentication_error') return '🔑 Chiave API Anthropic non valida o scaduta. Serve rigenerarla su console.anthropic.com.';
+    if (data.error.type === 'overloaded_error') return '⏳ Servizio Anthropic sovraccarico, riprova tra poco.';
+    if (data.error.type === 'rate_limit_error') return '⏳ Limite di richieste raggiunto, riprova tra poco.';
+    return '⚠ Errore Anthropic: ' + (data.error.message || data.error.type || 'sconosciuto');
+  }
+  return null;
+}
+
 /* ══════════════════════════════════════════════════════════════
    CARICAMENTO DATI
 ══════════════════════════════════════════════════════════════ */
@@ -1406,7 +1425,7 @@ async function cervSend(msgOverride) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'x-api-key': ['sk-ant-api03-','IpveWMEEMfS3py7K','X6S7pAkPWG9T9E6L','2bvDlGH9oGFHj43Y','hZOaBDYjf6cVJiEh','KXJqFaAAA'].join(''),
+        'x-api-key': labAntKey(),
         'anthropic-version': '2023-06-01',
         'anthropic-dangerous-direct-browser-access': 'true'
       },
@@ -1418,7 +1437,8 @@ async function cervSend(msgOverride) {
       })
     });
     var data = await resp.json();
-    var botText = (data.content && data.content[0] && data.content[0].text) ? data.content[0].text : 'Errore risposta AI.';
+    var antErr = labAntErr(data);
+    var botText = antErr || ((data.content && data.content[0] && data.content[0].text) ? data.content[0].text : 'Errore risposta AI (formato inatteso).');
     if (loadingEl) { loadingEl.classList.remove('loading'); loadingEl.textContent = botText; }
     cervHistory.push({ role: 'assistant', content: botText });
   } catch(e) {
@@ -2071,7 +2091,7 @@ async function labSbSearch() {
       +(p.estratto?'Estratto: '+p.estratto.substring(0,150):'');
   }).join('\n\n---\n\n');
 
-  var antKey = ['sk-ant-api03-','IpveWMEEMfS3py7K','X6S7pAkPWG9T9E6L','2bvDlGH9oGFHj43Y','hZOaBDYjf6cVJiEh','KXJqFaAAA'].join('');
+  var antKey = labAntKey();
 
   try {
     var aiResp = await fetch('https://api.anthropic.com/v1/messages', {
@@ -2094,7 +2114,8 @@ async function labSbSearch() {
     });
 
     var aiData = await aiResp.json();
-    var sintesi = (aiData.content && aiData.content[0] && aiData.content[0].text) ? aiData.content[0].text : null;
+    var antErrSb = labAntErr(aiData);
+    var sintesi = antErrSb || ((aiData.content && aiData.content[0] && aiData.content[0].text) ? aiData.content[0].text : null);
 
     var html = '';
 
@@ -2237,7 +2258,7 @@ async function labAnalizzaPdf(pdfId, domanda) {
     resEl.innerHTML='<div style="color:rgba(255,180,0,0.7);padding:10px">⚠ Testo non ancora estratto. Riprova domani.</div>'; return;
   }
   resEl.innerHTML='<div style="color:rgba(0,180,255,0.5);font-size:12px;padding:10px;text-align:center">🧠 Analizzo '+ctx.length+' chars con AI...</div>';
-  var antKey=['sk-ant-api03-','IpveWMEEMfS3py7K','X6S7pAkPWG9T9E6L','2bvDlGH9oGFHj43Y','hZOaBDYjf6cVJiEh','KXJqFaAAA'].join('');
+  var antKey=labAntKey();
   var dom = domanda || 'Riassumi i punti chiave applicabili alla serra BioSerra Caserta (Living Soil, elettrocultura, biodinamica).';
   try {
     var resp = await fetch('https://api.anthropic.com/v1/messages',{
@@ -2248,7 +2269,8 @@ async function labAnalizzaPdf(pdfId, domanda) {
         messages:[{role:'user',content:'MANUALE "'+titolo+'":\n\n'+ctx+'\n\n---\nDOMANDA: '+dom}]})
     });
     var data=await resp.json();
-    var rispo=(data.content&&data.content[0]&&data.content[0].text)||'Errore.';
+    var antErrPdf=labAntErr(data);
+    var rispo=antErrPdf||(data.content&&data.content[0]&&data.content[0].text)||'Errore risposta AI (formato inatteso).';
     resEl.innerHTML='<div style="background:rgba(76,175,118,0.06);border:1px solid rgba(76,175,118,0.2);border-radius:12px;padding:14px;margin-bottom:12px">'
       +'<div style="font-size:9px;color:var(--green3);font-weight:700;margin-bottom:4px">📄 '+labEsc(titolo.substring(0,60))+' · '+ctx.length+' chars</div>'
       +'<div style="font-size:12px;color:var(--text2);line-height:1.8;white-space:pre-wrap">'+labEsc(rispo)+'</div>'
