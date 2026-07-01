@@ -1343,6 +1343,17 @@ async function cervBuildSystem(queryKeywords) {
     labMemoriaData.sessioni.slice(-5).forEach(function(s){ sys += s.data + ': ' + (s.riassunto||'').substring(0,150) + '\n'; });
     sys += '\n';
   }
+  if (labMemoriaData && labMemoriaData.temi_ricorrenti && labMemoriaData.temi_ricorrenti.length) {
+    sys += '=== MEMORIA PERMANENTE (pattern imparati nel tempo su questa serra) ===\n';
+    labMemoriaData.temi_ricorrenti.forEach(function(t){
+      var txt = (typeof t === 'string') ? t : (t.testo || '');
+      if (!txt) return;
+      sys += '- ' + txt;
+      if (t.evidenza) sys += ' (' + t.evidenza + ')';
+      sys += '\n';
+    });
+    sys += '\n';
+  }
 
   try {
     // === DATI REAL-TIME (meteo + luna + piante) ===
