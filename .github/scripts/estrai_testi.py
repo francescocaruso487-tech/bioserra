@@ -16,12 +16,21 @@ RAW_BASE = f'https://raw.githubusercontent.com/{REPO}/main/'
 CHUNK_SIZE = 45000  # chars per chunk — sotto il limite GitHub 50MB per file
 
 def gh_get(path):
+    """Resiliente: 3 tentativi, timeout, rilancia l'ultima eccezione se falliscono tutti."""
     import urllib.parse
-    path_encoded = '/'.join(urllib.parse.quote(p, safe='') for p in path.split('/'))
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path_encoded}', headers=HEADERS_GH)
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)
+    last_ex = None
+    for attempt in range(3):
+        try:
+            path_encoded = '/'.join(urllib.parse.quote(p, safe='') for p in path.split('/'))
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path_encoded}', headers=HEADERS_GH)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.load(r)
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_get tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 def gh_get_sha(path):
     try: return gh_get(path)['sha']
@@ -53,12 +62,17 @@ def gh_put(path, content_bytes, sha, message):
     return None
 
 def gh_list(path):
-    try:
-        req = urllib.request.Request(
-            f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
-        with urllib.request.urlopen(req) as r:
-            return json.load(r)
-    except: return []
+    """3 tentativi; se falliscono tutti mantiene il comportamento storico (lista vuota)."""
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.load(r)
+        except Exception as ex:
+            print(f'  gh_list tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    return []
 
 def scarica_pdf(nome_file):
     url = RAW_BASE + 'MANUALI/' + urllib.request.quote(nome_file)
@@ -245,7 +259,11 @@ def main():
     os.system('pip install pymupdf pdfplumber pytesseract pdf2image Pillow -q 2>/dev/null')
 
     # Lista PDF
-    manuali = gh_get('MANUALI')
+    try:
+        manuali = gh_get('MANUALI')
+    except Exception as ex:
+        print(f'ERRORE CRITICO: lettura MANUALI fallita dopo 3 tentativi: {ex}')
+        import sys; sys.exit(1)
     pdf_files = sorted([f for f in manuali if f['name'].endswith('.pdf')], key=lambda x: x['name'])
     print(f'PDF totali: {len(pdf_files)}')
 
