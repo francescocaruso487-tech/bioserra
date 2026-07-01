@@ -189,13 +189,27 @@ async function labLoadAll() {
     var praticaPending = false;
     try { praticaPending = localStorage.getItem('bioserra_pratiche_pending') === '1'; } catch(e) {}
 
-    if (praticaPending) {
+    // FIX: anche a push RIUSCITO, raw.githubusercontent.com può servire per alcuni
+    // minuti la versione precedente (CDN/propagazione, non è un problema di cache
+    // del browser: il ?v=timestamp non basta). Senza questa protezione, rientrando
+    // in Laboratorio subito dopo un toggle il fetch qui sotto poteva sovrascrivere
+    // lo stato appena salvato con quello vecchio -> il toggle "spariva" alla vista
+    // pur essendo già su GitHub. Finestra di grazia: 5 minuti dall'ultimo push riuscito.
+    var recentLocalSync = false;
+    try {
+      var lastSync = parseInt(localStorage.getItem('bioserra_pratiche_synced_at') || '0', 10);
+      recentLocalSync = (Date.now() - lastSync) < 5 * 60 * 1000;
+    } catch(e) {}
+
+    if (praticaPending || recentLocalSync) {
       var cachePend = {};
       try { cachePend = JSON.parse(localStorage.getItem('bioserra_pratiche_attive') || '{}'); } catch(e) {}
       labPraticheAttiveData = { attive: cachePend };
-      var pushOk = await praticaSalvaGitHub(); // ritenta ora che labLoadAll ha (forse) connessione
-      if (!pushOk) {
-        console.warn('[BioSerra] Toggle pratiche offline ancora in attesa di sync — riprovo al prossimo refresh');
+      if (praticaPending) {
+        var pushOk = await praticaSalvaGitHub(); // ritenta ora che labLoadAll ha (forse) connessione
+        if (!pushOk) {
+          console.warn('[BioSerra] Toggle pratiche offline ancora in attesa di sync — riprovo al prossimo refresh');
+        }
       }
     } else if (rPratiche && rPratiche.status === 'fulfilled' && rPratiche.value && rPratiche.value.attive) {
       labPraticheAttiveData = rPratiche.value;
@@ -234,9 +248,15 @@ function labUpdateBadges() {
   var bPdf  = document.getElementById('badge-pdf');
   var bBrain= document.getElementById('badge-brain');
   if (bTec) {
-    var nTec = labElTecniche.length;
-    var nEspA = labEspData && labEspData.esperimenti_attivi ? labEspData.esperimenti_attivi.length : 0;
-    var totPratiche = nTec + nEspA;
+    // Rev.18: conteggio pratiche ATTIVE (coerente col sistema unificato ON/OFF),
+    // non piu' un semplice totale tecniche+esperimenti_attivi che non rifletteva
+    // lo stato reale (contava anche quelle disattivate, ignorava le proposte attivate).
+    var totPratiche = 0;
+    if (typeof labBuildPratiche === 'function') {
+      totPratiche = labBuildPratiche().filter(function(p){ return p.attiva === true; }).length;
+    } else {
+      totPratiche = labElTecniche.length + (labEspData && labEspData.esperimenti_attivi ? labEspData.esperimenti_attivi.length : 0);
+    }
     if (totPratiche) { bTec.textContent = totPratiche; bTec.classList.add('show'); }
   }
   // badge-esp non piu usato (unificato in badge-tec)
@@ -510,6 +530,9 @@ async function praticaSalvaGitHub() {
       return false;
     }
     try { localStorage.removeItem('bioserra_pratiche_pending'); } catch(e) {}
+    // Timestamp dell'ultimo push riuscito: protegge da un re-fetch di pratiche_stato.json
+    // da raw.githubusercontent.com ancora stale per propagazione CDN (vedi labLoadAll).
+    try { localStorage.setItem('bioserra_pratiche_synced_at', String(Date.now())); } catch(e) {}
     return true;
   } catch(e) {
     console.error('[BioSerra] praticaSalvaGitHub:', e);
