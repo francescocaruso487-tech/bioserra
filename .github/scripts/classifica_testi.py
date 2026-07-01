@@ -67,10 +67,19 @@ def gh_put(path, text, sha, msg):
     return None
 
 def gh_raw(path):
-    req = urllib.request.Request(RAW + path, headers={
-        'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read().decode('utf-8', errors='replace')
+    """Resiliente: 3 tentativi, rilancia l'ultima eccezione se falliscono tutti."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(RAW + path, headers={
+                'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read().decode('utf-8', errors='replace')
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_raw tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 def mistral_classifica(nome_file, testo_preview):
     """Chiede a Mistral di classificare il documento leggendo il testo reale."""
