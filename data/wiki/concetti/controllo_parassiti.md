@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-06-30
+aggiornato: 2026-07-01
 pdf_count: 0
 ---
 
@@ -12,34 +12,24 @@ pdf_count: 0
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta una strategia fitosanitaria basata sull’uso di metodi biologici per gestire infestazioni in serra outdoor, senza ricorrere a pesticidi chimici. Questo approccio sfrutta i principi dell’ecologia del suolo e della biodiversità per mantenere l’equilibrio degli ecosistemi colturali. Il meccanismo d’azione si fonda sulla **prevenzione** (riduzione delle condizioni favorevoli ai parassiti) e sulla **regolazione naturale** (introduzione di predatori o sostanze repellenti). Ad esempio, l’olio di neem agisce come insetticida sistemico e repellente grazie alla presenza di azadiractina, che interferisce con lo sviluppo degli insetti, mentre gli acari predatori (*Phytoseiulus persimilis*) controllano le infestazioni di acari dannosi (*Tetranychus urticae*) attraverso la predazione diretta.
+Il **Controllo Parassiti Naturale** rappresenta una strategia fitosanitaria basata sull’uso di metodi biologici per gestire infestazioni senza ricorrere a sostanze chimiche sintetiche. Questo approccio sfrutta i meccanismi di equilibrio dell’ecosistema serra, dove predatori naturali, repellenti vegetali e sostanze bioattive agiscono in sinergia per limitare la proliferazione di parassiti come afidi, acari o tripidi. Il principio fondamentale si basa sulla **prevenzione attiva**: monitorare costantemente le piante, intervenire con trattamenti a basso impatto e favorire la biodiversità funzionale del suolo e dell’aria. Ad esempio, l’olio di neem agisce come insetticida sistemico e repellente grazie alla presenza di azadiractina, che interferisce con lo sviluppo degli insetti e ne altera il comportamento alimentare. Allo stesso modo, l’introduzione di **acari predatori** (come *Phytoseiulus persimilis* per gli acari rossi) crea un controllo biologico permanente, riducendo la necessità di interventi chimici.
 
-Questa tecnica è particolarmente efficace in ambienti come la serra outdoor di Caserta (41°N), dove il clima mediterraneo favorisce la proliferazione di parassiti come afidi, tripidi e cocciniglie. La sua applicazione richiede una **gestione attiva del suolo vivente** (Living Soil), poiché un terreno ricco di microrganismi benefici e funghi micorrizici riduce la suscettibilità delle piante agli attacchi. Inoltre, il controllo naturale si integra con i cicli lunari e le tecniche di elettrocultura, ottimizzando i tempi di intervento in base alle fasi fenologiche delle piante (vegetazione e fioritura).
+In un contesto di **Living Soil** outdoor a Caserta (41°N), dove il clima mediterraneo favorisce la proliferazione di parassiti, questa tecnica diventa ancora più cruciale. La serra, infatti, amplifica i fattori di stress ambientale (umidità, temperatura, densità colturale), rendendo le piante più suscettibili agli attacchi. Tuttavia, un suolo ricco di microrganismi benefici e materia organica attiva (humus, funghi micorrizici) sviluppa una **resilienza intrinseca**, dove le piante producono composti di difesa naturali (es. terpeni, fenoli) in risposta a stimoli esterni. Il controllo parassiti naturale si integra quindi con la **salute del suolo**, creando un circolo virtuoso: suolo vivo → piante vigorose → minore suscettibilità ai parassiti → equilibrio biologico.
+
+---
 
 ## Come si applica in serra
 
-1. **Ispezione quotidiana**:
-   - Controlla regolarmente foglie (soprattutto pagina inferiore), steli e germogli per rilevare segni di infestazione (es. melata, decolorazioni, ragnatele).
-   - Utilizza una lente di ingrandimento per identificare parassiti come afidi o acari.
+1. **Monitoraggio quotidiano**
+   - Ispeziona **foglie (soprattutto sottofaccie), steli e germogli** al mattino, quando gli insetti sono meno attivi.
+   - Usa una **lente d’ingrandimento** per identificare uova, larve o adulti di parassiti (es. afidi neri, ragnetto rosso).
+   - Segna le piante infestate con un nastro colorato per monitorare la progressione.
 
-2. **Prevenzione con olio di neem**:
-   - **Diluizione**: 5–10 ml di olio di neem puro in 1 litro di acqua + 1 ml di sapone di potassio (adesivo).
-   - **Applicazione**: Spruzza sulle piante ogni 7 giorni, preferibilmente al mattino presto o al tramonto per evitare ustioni fogliari.
-   - **Frequenza**: Aumenta a 3–4 giorni in caso di infestazione acuta.
+2. **Trattamenti preventivi**
+   - **Olio di neem**: Diluire **5–10 ml/L d’acqua** (aggiungere un tensioattivo come sapone di potassio per migliorare l’adesione). Applicare con nebulizzatore **ogni 7 giorni** durante la vegetazione e **ogni 10 giorni in fioritura**, evitando ore calde (10:00–16:00).
+   - **Sapone potassico**: Usare **20–30 g/L d’acqua** per insetti a corpo molle (afidi, cocciniglie). Applicare solo su piante non stressate (evitare in fioritura).
+   - **Bacillus thuringiensis (var. kurstaki)**: Spruzzare **1–2 g/L d’acqua** contro lepidotteri (es. nottue) in vegetazione, preferibilmente al tramonto.
 
-3. **Introduzione di insetti utili**:
-   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2–5 individui per m² in caso di attacco di *Tetranychus urticae* (ragnetto rosso).
-   - **Crisopidi** (*Chrysoperla carnea*): Larve predatrici di afidi e cocciniglie; distribuisci 10–20 uova per pianta.
-   - **Coccinelle** (*Coccinella septempunctata*): Efficaci contro afidi; rilascia adulti o larve in gruppi di 5–10 per pianta.
-
-4. **Barriere fisiche**:
-   - Copri le aperture della serra con reti anti-insetto (maglia < 0,6 mm) per impedire l’ingresso di tripidi e moscerini.
-   - Applica collari in cartone o lana di roccia intorno al colletto delle piante per ostacolare lumache e formiche.
-
-5. **Piante trappola**:
-   - Coltiva piante come **tagete** (*Tagetes patula*) o **calendula** (*Calendula officinalis*) ai margini della serra per attirare parassiti lontano dalle colture principali.
-
-## Sinergie con altri elementi
-
-- **Lakhovsky (Onde di forma)**:
-  - L’ap
+3. **Controllo biologico**
+   - **Acari predatori** (*Phytoseiulus persimilis* per ragnetto rosso, *Amblyseius andersoni* per trips): Introduci **2–5 individui/mq** alla prima segnalazione di infestazione. Ripeti ogni 2 settimane se necessario.
+   - **Coccinelle** (*Coccinella septempunctata*): Rilas
