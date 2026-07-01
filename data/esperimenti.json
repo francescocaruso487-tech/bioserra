@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-30T22:06:57.096Z",
+  "lastUpdate": "2026-07-01T08:46:16.056Z",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -111,23 +111,6 @@
       "data_proposta": "2026-06-16",
       "attivo": true,
       "data_attivazione": "2026-06-22"
-    },
-    {
-      "id": "daily_1781640025709_3",
-      "nome": "Introduzione di micorrize",
-      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della pianta",
-      "obiettivo": "Migliorare la crescita e la produzione di pianta",
-      "materiali": [
-        "micorrize",
-        "substrato"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-16",
-      "attivo": true,
-      "data_attivazione": "2026-06-23"
     },
     {
       "id": "daily_1781640155746_1",
@@ -948,6 +931,24 @@
     }
   ],
   "proposte": [
+    {
+      "id": "daily_1781640025709_3",
+      "nome": "Introduzione di micorrize",
+      "descrizione": "Introduzione di micorrize nel substrato per migliorare la salute e la crescita della pianta",
+      "obiettivo": "Migliorare la crescita e la produzione di pianta",
+      "materiali": [
+        "micorrize",
+        "substrato"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": "2026-06-23",
+      "data_disattivazione": "2026-07-01"
+    },
     {
       "id": "daily_1781640224648_2",
       "nome": "Sistema di irrigazione a goccia con fertilizzanti",
@@ -1892,6 +1893,25 @@
       "data_proposta": "2026-06-16",
       "attivo": false,
       "data_attivazione": null
+    },
+    {
+      "id": "exp_001",
+      "nome": "Legnetto con treccia di rame e punta di rame",
+      "descrizione": "Legnetto naturale avvolto con treccia di rame terminante con punta di rame. Conduce e amplifica le energie bioelettriche dalla terra verso la pianta.",
+      "materiali": [
+        "Legnetto naturale",
+        "Treccia di rame",
+        "Punta di rame"
+      ],
+      "obiettivo": "Amplificare energia bioelettrica e conduzione terrestre",
+      "funzione": "Conduzione e amplificazione energie naturali",
+      "come_applicare": "Inserire nel terreno vicino alla base di ogni pianta. Si applica a tutte le piante contemporaneamente.",
+      "applicato_a": "tutte_le_piante",
+      "attivo": false,
+      "data_attivazione": null,
+      "fonte": "Guida personale",
+      "categoria": "elettrocultura",
+      "note": ""
     }
   ],
   "attivi": [],
