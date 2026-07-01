@@ -10,10 +10,19 @@ HEADERS_GH = {
 }
 
 def gh_get_raw(path):
-    url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
-    req = urllib.request.Request(url, headers={'Authorization': f'Bearer {GITHUB_TOKEN}'})
-    with urllib.request.urlopen(req) as r:
-        return r.read().decode('utf-8')
+    """Resiliente: 3 tentativi, rilancia l'ultima eccezione se falliscono tutti."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
+            req = urllib.request.Request(url, headers={'Authorization': f'Bearer {GITHUB_TOKEN}'})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read().decode('utf-8')
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_get_raw tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 def gh_get_sha(path):
     try:
@@ -69,7 +78,11 @@ def main():
     oggi = __import__('datetime').date.today().isoformat()
     print('Leggo pdf_knowledge.json...')
     
-    raw = gh_get_raw('data/pdf_knowledge.json')
+    try:
+        raw = gh_get_raw('data/pdf_knowledge.json')
+    except Exception as ex:
+        print(f'ERRORE CRITICO: lettura pdf_knowledge.json fallita dopo 3 tentativi: {ex}')
+        import sys; sys.exit(1)
     knowledge = json.loads(raw)
     analisi = knowledge.get('analisi', [])
     print(f'PDF in knowledge: {len(analisi)}')
