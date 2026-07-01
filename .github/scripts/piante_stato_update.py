@@ -1,4 +1,4 @@
-import os, json, base64, urllib.request, datetime
+import os, json, base64, urllib.request, datetime, time
 
 GITHUB_TOKEN = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
 REPO = 'francescocaruso487-tech/bioserra'
@@ -29,20 +29,46 @@ ESSICCAZIONE_GG = 15
 CONCIA_GG = 20
 
 def gh_get(path):
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
-    with urllib.request.urlopen(req) as r:
-        data = json.load(r)
-    return base64.b64decode(data['content'].replace('\n', '')).decode('utf-8'), data['sha']
+    """Resiliente: 3 tentativi, timeout, rilancia l'ultima eccezione se falliscono tutti."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                data = json.load(r)
+            return base64.b64decode(data['content'].replace('\n', '')).decode('utf-8'), data['sha']
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_get tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 def gh_put(path, content_b64, sha, message):
-    body = json.dumps({'message': message, 'content': content_b64, 'sha': sha}).encode()
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}',
-        data=body, headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT'
-    )
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)
+    """Resiliente: 3 tentativi, SHA sempre fresco, mai solleva eccezioni (None se fallisce)."""
+    for attempt in range(3):
+        try:
+            sha_fresco = None
+            try:
+                _, sha_fresco = gh_get(path)
+            except Exception:
+                pass
+            body = {'message': message, 'content': content_b64}
+            if sha_fresco:
+                body['sha'] = sha_fresco
+            elif sha:
+                body['sha'] = sha
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}',
+                data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT'
+            )
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.load(r)
+        except Exception as ex:
+            print(f'  gh_put tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    return None
 
 def fetch_ore_luce_astronomiche():
     """Open-Meteo: ore luce astronomiche (per info, non usate nei calcoli)"""
@@ -72,7 +98,11 @@ def main():
 
     # Leggi stato attuale — la fase E le ore luce effettive vengono PRESERVATE da qui
     print('Leggo piante_stato.json attuale...')
-    raw, sha = gh_get('data/piante_stato.json')
+    try:
+        raw, sha = gh_get('data/piante_stato.json')
+    except Exception as ex:
+        print(f'ERRORE CRITICO: lettura piante_stato.json fallita dopo 3 tentativi: {ex}')
+        import sys; sys.exit(1)
     stato_attuale = json.loads(raw)
 
     # Ore luce effettive: impostate dall'utente via slider nell'app
@@ -200,13 +230,16 @@ def main():
     for a in alerts_oggi:
         print(f'  [{a["tipo"]}] {a["msg"]}')
 
-    # SHA fresco prima del PUT
-    _, sha_fresco = gh_get('data/piante_stato.json')
+    # SHA fresco: gh_put() la rifetcha internamente ad ogni tentativo,
+    # ma passiamo comunque quella nota come fallback se il refetch interno fallisse
     content_b64 = base64.b64encode(
         json.dumps(output, indent=2, ensure_ascii=False).encode()
     ).decode()
-    result = gh_put('data/piante_stato.json', content_b64, sha_fresco,
+    result = gh_put('data/piante_stato.json', content_b64, sha,
                     f'BioSerra piante stato {oggi.isoformat()} [auto]')
+    if result is None:
+        print('  ERRORE CRITICO: salvataggio piante_stato.json fallito dopo 3 tentativi')
+        import sys; sys.exit(1)
 
     print(f'\n=== COMPLETATO ===')
     print(f'Commit: {result["commit"]["sha"][:8]}')
