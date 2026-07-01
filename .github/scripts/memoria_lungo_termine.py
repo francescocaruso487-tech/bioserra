@@ -184,6 +184,13 @@ def build_correlazioni(storico, diario):
 def main():
     print('=== memoria_lungo_termine.py avviato', datetime.now(timezone.utc).isoformat(), '===')
 
+    _dbg = gh_put('data/_debug_memoria.json',
+                   json.dumps({'step': 'main_start', 'ts': datetime.now(timezone.utc).isoformat(),
+                                'token_present': bool(GITHUB_TOKEN), 'mistral_key_present': bool(MISTRAL_KEY)},
+                               ensure_ascii=False, indent=2),
+                   'debug temporaneo: main_start')
+    print('debug main_start gh_put risultato:', 'OK' if _dbg else 'FALLITO (None)')
+
     try:
         raw_mem, _ = gh_get('data/memoria_chat.json')
         memoria = json.loads(raw_mem)
