@@ -615,7 +615,7 @@ function labBuildPratiche() {
       nome: nomeT,
       categoria: t.categoria || 'elettrocultura',
       descrizione: t.descrizione || t.desc || '',
-      badge: (t.pdf_count||t.occorrenze||0) > 0 ? (t.pdf_count||t.occorrenze) + ' PDF' : null,
+      badge: null, // Rev.18: rimosso badge "N PDF" (poco utile) — sostituito da badge stato ON/OFF nel render
       badgeColor: 'var(--el-violet)',
       rilevanza: ril,
       attiva: attiva,
@@ -687,7 +687,7 @@ function labRenderPratiche() {
   var h = '';
   pratiche.slice(0, 5).forEach(function(p, i) {
     var catColor = labCatColor(p.categoria);
-    var isAttiva = p.tipo === 'esp_attivo';
+    var isAttiva = p.tipo === 'esp_attivo' || (p.tipo === 'tecnica' && p.attiva === true);
     var isOff = p.tipo === 'tecnica' && p.attiva === false;
     h += '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-left:2px solid ' + catColor + ';border-radius:0 10px 10px 0;padding:10px 12px;margin-bottom:7px;cursor:pointer;transition:background 0.2s;' + (isOff ? 'opacity:0.5' : '') + '" onclick="labPopupPratica(\'' + p.id + '\')">';
     h += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">';
@@ -881,12 +881,14 @@ function labPopupAllPratiche() {
   h += '<div id="pratiche-lista">';
   pratiche.forEach(function(p) {
     var catColor = labCatColor(p.categoria);
-    var isAttiva = p.tipo === 'esp_attivo';
-    h += '<div class="prat-item" data-tipo="' + p.tipo + '" style="border-left:2px solid ' + catColor + ';border-radius:0 10px 10px 0;padding:10px 12px;margin-bottom:8px;cursor:pointer;background:rgba(255,255,255,0.02)" onclick="labPopupClose();setTimeout(function(){labPopupPratica(\'' + p.id + '\');},60)">';
+    var isAttiva = p.tipo === 'esp_attivo' || (p.tipo === 'tecnica' && p.attiva === true);
+    var isOff = p.tipo === 'tecnica' && p.attiva === false;
+    h += '<div class="prat-item" data-tipo="' + p.tipo + '" data-attiva="' + (isAttiva ? '1' : '0') + '" style="border-left:2px solid ' + catColor + ';border-radius:0 10px 10px 0;padding:10px 12px;margin-bottom:8px;cursor:pointer;background:rgba(255,255,255,0.02);' + (isOff ? 'opacity:0.5' : '') + '" onclick="labPopupClose();setTimeout(function(){labPopupPratica(\'' + p.id + '\');},60)">';
     h += '<div style="display:flex;justify-content:space-between;align-items:center">';
     h += '<div><div style="font-size:13px;font-weight:700;color:var(--text)">' + labEsc(p.nome) + '</div>';
     h += '<div style="font-size:10px;color:' + catColor + ';margin-top:2px">' + labEsc(p.categoria) + '</div></div>';
-    if (isAttiva) h += '<span style="font-size:9px;color:var(--green3);font-weight:700">\u2705</span>';
+    if (isAttiva) h += '<span style="font-size:9px;background:rgba(76,175,118,0.2);color:var(--green3);border-radius:4px;padding:2px 6px;font-weight:700">\u2705 ATTIVA</span>';
+    else if (isOff) h += '<span style="font-size:9px;background:rgba(255,255,255,0.08);color:var(--text3);border-radius:4px;padding:2px 6px">\u23F8\uFE0F disattivata</span>';
     else if (p.badge) h += '<span style="font-size:9px;color:var(--text3)">' + labEsc(p.badge) + '</span>';
     h += '</div>';
     if (p.descrizione) h += '<div style="font-size:11px;color:var(--text3);margin-top:4px;line-height:1.4">' + labEsc(p.descrizione.substring(0,80)) + '\u2026</div>';
@@ -902,8 +904,11 @@ function labFiltriPratiche(tipo, btn) {
   var items = document.querySelectorAll('.prat-item');
   items.forEach(function(el) {
     var t = el.getAttribute('data-tipo');
+    var attiva = el.getAttribute('data-attiva') === '1';
+    // FIX: prima "Attive" mostrava solo esperimenti attivati (tipo esp_attivo),
+    // ignorando le tecniche accese col toggle -> sparivano dal filtro pur essendo ON.
     var show = tipo === 'tutti' 
-      || (tipo === 'attive' && t === 'esp_attivo')
+      || (tipo === 'attive' && attiva)
       || (tipo === 'tecniche' && t === 'tecnica')
       || (tipo === 'suggerite' && t === 'esp_proposta');
     el.style.display = show ? 'block' : 'none';
