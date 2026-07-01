@@ -2,7 +2,7 @@
 analisi_pdf.py v13 — Legge testi da data/testi/ (pre-estratti con OCR)
 Passa testo completo a Mistral in chunk, produce analisi ricca
 """
-import os, json, base64, urllib.request, urllib.error, time, datetime, io, re
+import os, json, base64, urllib.request, urllib.error, time, datetime, io, re, sys
 
 GITHUB_TOKEN = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
 MISTRAL_KEY  = os.environ.get('MISTRAL_KEY', '')
@@ -35,19 +35,28 @@ def sanitizza_entry(a):
     return a
 
 def gh_get(path):
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
-    with urllib.request.urlopen(req) as r:
-        d = json.load(r)
-    # File >1MB: GitHub API restituisce content:'' — usa raw URL
-    if isinstance(d, dict) and d.get('content','') == '' and d.get('size',0) > 0:
-        raw_url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
-        req2 = urllib.request.Request(raw_url,
-            headers={'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
-        with urllib.request.urlopen(req2) as r2:
-            raw = r2.read().decode('utf-8')
-        return {'content': base64.b64encode(raw.encode()).decode(), 'sha': d.get('sha','')}
-    return d
+    """Resiliente: 3 tentativi, timeout, rilancia l'ultima eccezione se falliscono tutti."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = json.load(r)
+            # File >1MB: GitHub API restituisce content:'' — usa raw URL
+            if isinstance(d, dict) and d.get('content','') == '' and d.get('size',0) > 0:
+                raw_url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
+                req2 = urllib.request.Request(raw_url,
+                    headers={'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
+                with urllib.request.urlopen(req2, timeout=30) as r2:
+                    raw = r2.read().decode('utf-8')
+                return {'content': base64.b64encode(raw.encode()).decode(), 'sha': d.get('sha','')}
+            return d
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_get tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 def gh_put(path, content, sha, message):
     """Resiliente: 3 tentativi, SHA sempre fresco, mai solleva eccezioni (None se fallisce)."""
@@ -306,7 +315,11 @@ def main():
     print(f'MISTRAL_KEY: {"OK " + MISTRAL_KEY[:8] + "..." if MISTRAL_KEY else "ASSENTE"}')
 
     # Carica pdf_knowledge esistente
-    kdata = gh_get('data/pdf_knowledge.json')
+    try:
+        kdata = gh_get('data/pdf_knowledge.json')
+    except Exception as ex:
+        print(f'ERRORE CRITICO: lettura pdf_knowledge.json fallita dopo 3 tentativi: {ex}')
+        sys.exit(1)
     knowledge = json.loads(base64.b64decode(kdata['content'].replace('\n','')).decode('utf-8'))
     analisi_esistenti = knowledge.get('analisi', [])
 
@@ -320,7 +333,11 @@ def main():
     print(f'Testi disponibili in data/testi/: {len(testi_disponibili)}')
 
     # Carica lista PDF in MANUALI
-    manuali = gh_get('MANUALI')
+    try:
+        manuali = gh_get('MANUALI')
+    except Exception as ex:
+        print(f'ERRORE CRITICO: lettura MANUALI fallita dopo 3 tentativi: {ex}')
+        sys.exit(1)
     pdf_files = sorted([f for f in manuali if f['name'].endswith('.pdf')], key=lambda x: x['name'])
 
     # Costruisci mappa titolo -> analisi esistente
