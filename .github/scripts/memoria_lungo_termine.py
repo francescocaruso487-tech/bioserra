@@ -255,12 +255,18 @@ def main():
         risposta = mistral_call(prompt)
     except Exception as ex:
         print(f'ATTENZIONE: chiamata Mistral fallita, nessun aggiornamento in questa run: {ex}')
+        gh_put('data/_debug_memoria.json',
+               json.dumps({'errore': 'mistral_call', 'dettaglio': str(ex)}, ensure_ascii=False, indent=2),
+               'debug temporaneo memoria_lungo_termine')
         return
 
     nuovi = parse_json_list(risposta)
     if nuovi is None:
         print("ATTENZIONE: risposta Mistral non e' una lista JSON valida, nessun aggiornamento.")
         print('Risposta grezza (troncata):', risposta[:300])
+        gh_put('data/_debug_memoria.json',
+               json.dumps({'errore': 'parse_json_list', 'risposta_grezza': risposta[:1000]}, ensure_ascii=False, indent=2),
+               'debug temporaneo memoria_lungo_termine')
         return
 
     oggi = datetime.now(timezone.utc).strftime('%Y-%m-%d')
