@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-01T08:52:11.257Z",
+  "lastUpdate": "2026-07-01T08:52:14.906Z",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -59,23 +59,6 @@
     }
   ],
   "esperimenti_attivi": [
-    {
-      "id": "daily_1781640155746_1",
-      "nome": "Irrigazione intelligente",
-      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
-      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
-      "materiali": [
-        "Sensori di umidità",
-        "Sistema di irrigazione automatico"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Facile",
-      "fonte": " Tecnologia agricola",
-      "durata_giorni": 14,
-      "data_proposta": "2026-06-16",
-      "attivo": true,
-      "data_attivazione": "2026-06-23"
-    },
     {
       "id": "daily_1781640025709_2",
       "nome": "Tecnica di prunning",
@@ -878,6 +861,24 @@
     }
   ],
   "proposte": [
+    {
+      "id": "daily_1781640155746_1",
+      "nome": "Irrigazione intelligente",
+      "descrizione": "Utilizzare sensori per monitorare l'umidità del suolo e regolare l'irrigazione",
+      "obiettivo": "Ridurre lo spreco d'acqua e prevenire la malattia delle piante",
+      "materiali": [
+        "Sensori di umidità",
+        "Sistema di irrigazione automatico"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Facile",
+      "fonte": " Tecnologia agricola",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": "2026-06-23",
+      "data_disattivazione": "2026-07-01"
+    },
     {
       "id": "daily_1781640436681_0",
       "nome": "Tecnica di irrigazione a goccia",
