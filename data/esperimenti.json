@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-01T08:52:07.535Z",
+  "lastUpdate": "2026-07-01T08:52:11.257Z",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -59,24 +59,6 @@
     }
   ],
   "esperimenti_attivi": [
-    {
-      "id": "daily_1781640436681_0",
-      "nome": "Tecnica di irrigazione a goccia",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
-      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di pianta",
-      "materiali": [
-        "tubazioni",
-        "gocciolatori",
-        "valvole"
-      ],
-      "categoria": "irrigazione",
-      "difficolta": "medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-16",
-      "attivo": true,
-      "data_attivazione": "2026-06-22"
-    },
     {
       "id": "daily_1781640155746_1",
       "nome": "Irrigazione intelligente",
@@ -896,6 +878,25 @@
     }
   ],
   "proposte": [
+    {
+      "id": "daily_1781640436681_0",
+      "nome": "Tecnica di irrigazione a goccia",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia per ridurre lo spreco di acqua e aumentare l'efficienza della serra",
+      "obiettivo": "Ridurre lo spreco di acqua e aumentare la produzione di pianta",
+      "materiali": [
+        "tubazioni",
+        "gocciolatori",
+        "valvole"
+      ],
+      "categoria": "irrigazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": "2026-06-22",
+      "data_disattivazione": "2026-07-01"
+    },
     {
       "id": "daily_1781640224648_2",
       "nome": "Sistema di irrigazione a goccia con fertilizzanti",
