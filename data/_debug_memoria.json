@@ -2,8 +2,9 @@
   "ts": "2026-07-01T15:10:42.014719+00:00",
   "token_present": true,
   "mistral_key_present": true,
-  "step": "3_correlazioni_ok",
+  "step": "4_pre_mistral_call",
   "n_sessioni": 3,
   "n_interventi": 1,
-  "n_correlazioni": 0
+  "n_correlazioni": 0,
+  "prompt_len": 1654
 }
