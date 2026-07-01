@@ -258,6 +258,7 @@ function labUpdateBadges() {
       totPratiche = labElTecniche.length + (labEspData && labEspData.esperimenti_attivi ? labEspData.esperimenti_attivi.length : 0);
     }
     if (totPratiche) { bTec.textContent = totPratiche; bTec.classList.add('show'); }
+    else { bTec.textContent = ''; bTec.classList.remove('show'); }
   }
   // badge-esp non piu usato (unificato in badge-tec)
   if (bPdf && labPdfData && labPdfData.analisi) {
@@ -504,6 +505,7 @@ async function praticaToggleAttiva() {
   var area = document.getElementById('lab-pratica-toggle-area');
   if (area) area.innerHTML = praticaToggleHTML(_labPraticaFeedbackNome, _labPraticaFeedbackTipo);
   if (typeof labRenderPratiche === 'function') labRenderPratiche();
+  if (typeof labUpdateBadges === 'function') labUpdateBadges(); // FIX: il badge \u26a1 Pratiche restava col conteggio vecchio finche' non si ricaricava tutto
   await praticaSalvaGitHub();
 }
 async function praticaSalvaGitHub() {
