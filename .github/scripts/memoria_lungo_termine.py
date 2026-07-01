@@ -181,26 +181,8 @@ def build_correlazioni(storico, diario):
     return risultati
 
 
-_TRACE = {}
-
-
-def _salva_trace(extra=None):
-    if extra:
-        _TRACE.update(extra)
-    try:
-        gh_put('data/_debug_memoria.json',
-               json.dumps(_TRACE, ensure_ascii=False, indent=2, default=str),
-               'debug temporaneo memoria_lungo_termine')
-    except Exception as ex:
-        print('impossibile salvare trace:', ex)
-
-
 def main():
     print('=== memoria_lungo_termine.py avviato', datetime.now(timezone.utc).isoformat(), '===')
-    _TRACE['ts'] = datetime.now(timezone.utc).isoformat()
-    _TRACE['token_present'] = bool(GITHUB_TOKEN)
-    _TRACE['mistral_key_present'] = bool(MISTRAL_KEY)
-    _salva_trace({'step': '1_start'})
 
     try:
         raw_mem, _ = gh_get('data/memoria_chat.json')
@@ -223,7 +205,6 @@ def main():
         print(f'ATTENZIONE: lettura storico_cicli.json fallita, procedo senza correlazioni: {ex}')
         storico = {'storico_cicli': []}
 
-    _salva_trace({'step': '2_letture_ok'})
     sessioni = memoria.get('sessioni', []) or []
     interventi = diario.get('interventi', []) or []
     temi_esistenti = memoria.get('temi_ricorrenti', []) or []
@@ -233,8 +214,6 @@ def main():
         return
 
     correlazioni = build_correlazioni(storico, diario)
-    _salva_trace({'step': '3_correlazioni_ok', 'n_sessioni': len(sessioni),
-                  'n_interventi': len(interventi), 'n_correlazioni': len(correlazioni)})
 
     ctx = '=== SESSIONI RECENTI CERVELLO AI (ultime 10) ===\n'
     for s in sessioni[-10:]:
@@ -273,25 +252,15 @@ def main():
     )
 
     try:
-        _salva_trace({'step': '4_pre_mistral_call', 'prompt_len': len(prompt)})
         risposta = mistral_call(prompt)
-        _salva_trace({'step': '5_mistral_ok', 'risposta_grezza': risposta[:500]})
     except Exception as ex:
         print(f'ATTENZIONE: chiamata Mistral fallita, nessun aggiornamento in questa run: {ex}')
-        gh_put('data/_debug_memoria.json',
-               json.dumps({'errore': 'mistral_call', 'dettaglio': str(ex)}, ensure_ascii=False, indent=2),
-               'debug temporaneo memoria_lungo_termine')
         return
 
     nuovi = parse_json_list(risposta)
-    _salva_trace({'step': '5b_parse_ok', 'nuovi_tipo': type(nuovi).__name__,
-                  'nuovi_len': (len(nuovi) if isinstance(nuovi, list) else None)})
     if nuovi is None:
         print("ATTENZIONE: risposta Mistral non e' una lista JSON valida, nessun aggiornamento.")
         print('Risposta grezza (troncata):', risposta[:300])
-        gh_put('data/_debug_memoria.json',
-               json.dumps({'errore': 'parse_json_list', 'risposta_grezza': risposta[:1000]}, ensure_ascii=False, indent=2),
-               'debug temporaneo memoria_lungo_termine')
         return
 
     oggi = datetime.now(timezone.utc).strftime('%Y-%m-%d')
@@ -336,7 +305,6 @@ def main():
         print('Nessun nuovo pattern distillato in questa run (lista vuota o solo doppioni).')
 
     memoria['temi_ricorrenti'] = combinati
-    _salva_trace({'step': '6_pre_gh_put_finale', 'n_nuovi': len(nuovi_puliti), 'n_combinati': len(combinati)})
 
     ok = gh_put(
         'data/memoria_chat.json',
