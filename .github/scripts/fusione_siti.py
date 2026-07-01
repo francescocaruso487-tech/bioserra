@@ -249,12 +249,21 @@ CATEGORIE_FUSE = {
 # ── GitHub helpers ────────────────────────────────────────────────────────────
 
 def gh_raw(path):
-    req = urllib.request.Request(
-        f'{RAW}{path}',
-        headers={'Authorization': f'Bearer {GITHUB_TOKEN}',
-                 'Cache-Control': 'no-cache'})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        return r.read().decode('utf-8', errors='replace')
+    """Resiliente: 3 tentativi, rilancia l'ultima eccezione se falliscono tutti."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                f'{RAW}{path}',
+                headers={'Authorization': f'Bearer {GITHUB_TOKEN}',
+                         'Cache-Control': 'no-cache'})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                return r.read().decode('utf-8', errors='replace')
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_raw tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 def gh_get_sha(path):
     try:
@@ -267,33 +276,50 @@ def gh_get_sha(path):
         return None
 
 def gh_put(path, content, sha, msg):
+    """Resiliente: 3 tentativi, SHA sempre fresco, mai solleva eccezioni (None se fallisce)."""
     if isinstance(content, str):
         content = content.encode('utf-8')
-    body = json.dumps({
-        'message': msg,
-        'content': base64.b64encode(content).decode('ascii'),
-        'branch':  'main',
-        **({'sha': sha} if sha else {})
-    }).encode()
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}',
-        data=body,
-        headers={**HEADERS_GH, 'Content-Type': 'application/json'},
-        method='PUT')
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)['commit']['sha']
+    encoded = base64.b64encode(content).decode('ascii')
+    for attempt in range(3):
+        try:
+            sha_fresco = gh_get_sha(path)
+            body = {
+                'message': msg,
+                'content': encoded,
+                'branch':  'main',
+            }
+            if sha_fresco:
+                body['sha'] = sha_fresco
+            elif sha:
+                body['sha'] = sha
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}',
+                data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'},
+                method='PUT')
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.load(r)['commit']['sha']
+        except Exception as ex:
+            print(f'  gh_put tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    print(f'  ERRORE: gh_put {path} fallito dopo 3 tentativi')
+    return None
 
 def gh_get_json(path):
-    try:
-        req = urllib.request.Request(
-            f'https://api.github.com/repos/{REPO}/contents/{path}',
-            headers=HEADERS_GH)
-        with urllib.request.urlopen(req) as r:
-            d = json.load(r)
-        return json.loads(base64.b64decode(
-            d['content'].replace('\n', '')).decode('utf-8')), d['sha']
-    except:
-        return None, None
+    """3 tentativi; se falliscono tutti mantiene il comportamento storico (None, None)."""
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}',
+                headers=HEADERS_GH)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = json.load(r)
+            return json.loads(base64.b64decode(
+                d['content'].replace('\n', '')).decode('utf-8')), d['sha']
+        except Exception as ex:
+            print(f'  gh_get_json tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    return None, None
 
 # ── Leggi testo di un articolo web ───────────────────────────────────────────
 
@@ -389,8 +415,11 @@ def main():
         # Salva in data/testi/fusi/{categoria}.txt
         path_fuso = f'data/testi/fusi/{categoria}.txt'
         sha_fuso = gh_get_sha(path_fuso)
-        gh_put(path_fuso, testo_fuso, sha_fuso,
+        res_fuso = gh_put(path_fuso, testo_fuso, sha_fuso,
                f'fusi: {categoria} [{oggi}]')
+        if res_fuso is None:
+            print(f'  ERRORE: salvataggio {path_fuso} fallito dopo 3 tentativi, salto categoria')
+            continue
         file_salvati += 1
         print(f'  Salvato: {path_fuso}')
 
@@ -444,11 +473,14 @@ def main():
             datetime.timezone.utc).isoformat()
 
         sha_pk_fresh = gh_get_sha('data/pdf_knowledge.json')
-        gh_put('data/pdf_knowledge.json',
+        res_pk = gh_put('data/pdf_knowledge.json',
                json.dumps(pdf_knowledge, indent=2, ensure_ascii=False),
                sha_pk_fresh,
                f'fusione: {file_salvati} categorie [{oggi}]')
-        print(f'\nSalvato pdf_knowledge.json: +{len(nuove_voci)} voci fuse')
+        if res_pk is None:
+            print('  ERRORE CRITICO: salvataggio pdf_knowledge.json fallito dopo 3 tentativi')
+        else:
+            print(f'\nSalvato pdf_knowledge.json: +{len(nuove_voci)} voci fuse')
 
     print(f'\n=== COMPLETATO ===')
     print(f'File fusi salvati: {file_salvati}')
