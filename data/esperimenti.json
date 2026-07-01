@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-01T08:46:36.797Z",
+  "lastUpdate": "2026-07-01T08:52:07.535Z",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -59,24 +59,6 @@
     }
   ],
   "esperimenti_attivi": [
-    {
-      "id": "daily_1781640224648_2",
-      "nome": "Sistema di irrigazione a goccia con fertilizzanti",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della pianta",
-      "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
-      "materiali": [
-        "Sistema di irrigazione a goccia",
-        "Fertilizzanti specifici per la pianta",
-        "Tubi e connettori"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Guide di coltivazione della pianta",
-      "durata_giorni": 21,
-      "data_proposta": "2026-06-16",
-      "attivo": true,
-      "data_attivazione": "2026-06-22"
-    },
     {
       "id": "daily_1781640436681_0",
       "nome": "Tecnica di irrigazione a goccia",
@@ -914,6 +896,25 @@
     }
   ],
   "proposte": [
+    {
+      "id": "daily_1781640224648_2",
+      "nome": "Sistema di irrigazione a goccia con fertilizzanti",
+      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della pianta",
+      "obiettivo": "Ottimizzare l'irrigazione e la nutrizione delle piante",
+      "materiali": [
+        "Sistema di irrigazione a goccia",
+        "Fertilizzanti specifici per la pianta",
+        "Tubi e connettori"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Guide di coltivazione della pianta",
+      "durata_giorni": 21,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": "2026-06-22",
+      "data_disattivazione": "2026-07-01"
+    },
     {
       "id": "daily_1781667046478_0",
       "nome": "Elettrocultura",
