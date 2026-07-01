@@ -1,41 +1,47 @@
 {
-  "lastUpdate": "2026-06-30T07:33:55.175420+00:00",
-  "data": "2026-06-30",
+  "lastUpdate": "2026-07-01T13:42:19.926038+00:00",
+  "data": "2026-07-01",
   "guide_potenziate": [
     {
-      "titolo": "Germinazione in Living Soil Outdoor a Caserta: Guida Pratica per Semi",
-      "guida_base": "Utilizzare un substrato Living Soil ben strutturato con almeno 30% di materia organica decomposta e micorrize per favori",
-      "potenziamento_pdf": "Collegare due elettrodi in rame (distanza 10 cm) a una batteria da 9V tramite un resistore da 1kΩ per applicare un campo elettrico debole (1-3V) per 2",
-      "esperimento_suggerito": "Prima finestra: fine febbraio a metà marzo (per coltivazioni primaverili). Seconda finestra: settembre-ottobre (per coltivazioni autunnali a ciclo bre",
+      "titolo": "Germinazione dei semi di pianta in Living Soil outdoor a Caserta: guida pratica per una pa",
+      "guida_base": "Utilizzare semi di alta qualità (freschi, non trattati con fungicidi) e testare la germinazione con il metodo del piatti",
+      "potenziamento_pdf": "Applicare un campo elettrico debole (1-3 V/m) tramite elettrodi in rame o acciaio inox posizionati a 5 cm di profondità nel substrato, collegati a una",
+      "esperimento_suggerito": "A Caserta, la germinazione può essere avviata già a fine febbraio-inizio marzo, sfruttando le prime giornate miti (15-20°C diurne), ma è fondamentale ",
       "applicabile_oggi": true,
       "piante_coinvolte": []
     },
     {
-      "titolo": "Guida Pratica alla Fase Vegetativa della pianta in Living Soil Outdoor a Caserta: Tecniche",
+      "titolo": "Guida Pratica alla Fase Vegetativa della Pianta in Living Soil Outdoor a Caserta: Tecniche",
       "guida_base": "Mantenere il suolo in Living Soil umido ma non saturo (50-70% capacità di campo) per favorire lo sviluppo radicale e l'a",
       "potenziamento_pdf": "Applicare una corrente continua a bassa tensione (1-5 V) tramite elettrodi in rame o acciaio inox interrati a 10-15 cm di profondità, distanziati di 3",
       "esperimento_suggerito": "La fase vegetativa outdoor a Caserta inizia tipicamente tra metà aprile e inizio maggio, quando le temperature notturne superano i 10°C e le giornate ",
       "applicabile_oggi": true,
-      "piante_coinvolte": []
+      "piante_coinvolte": [
+        "Astro Lemonade F1",
+        "Cosmic Cheddar F1",
+        "Orbital Banana F1",
+        "Royal Gorilla",
+        "Mexican Rush"
+      ]
     }
   ],
   "esperimenti_attivi_suggeriti": [
     {
-      "nome": "Elettrocultura",
-      "descrizione": "Applica elettrocultura alle 10 piante di pianta per migliorare la crescita e la resa",
+      "nome": "Legnetto con treccia di rame e punta di rame",
+      "descrizione": "Legnetto naturale avvolto con treccia di rame terminante con punta di rame. Conduce e amplifica le energie bioelettriche dalla terra verso la pianta.",
       "urgenza": "media",
       "piante": []
     },
     {
-      "nome": "Sistema di irrigazione a goccia con fertilizzanti",
-      "descrizione": "Implementazione di un sistema di irrigazione a goccia con fertilizzanti specifici per la coltivazione della pianta",
+      "nome": "Tecnica di prunning",
+      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della pianta",
       "urgenza": "media",
       "piante": []
     }
   ],
-  "scoperta_del_giorno": "In condizioni di caldo intenso (32.5°C) e bassa umidità (37%), l'applicazione di campi magnetici controllati tramite dispositivi come quelli descritti da Ighina può aiutare a ridurre lo stress termico delle piante, migliorando la loro resilienza e la",
-  "consiglio_integrato": "Applicare una corrente continua (DC) a basso voltaggio (5-12V) direttamente al suolo tramite elettrodi di rame o zinco posizionati vicino alle radici delle piante in fase di vegetazione. Questo metodo, descritto in [pdf_17] ELECTROCULTURE-FOR-BEGINNE",
-  "connessione_inaspettata": "Posizionare un'antenna parafulmine (asta in metallo) vicino alle piante in fase di vegetazione, collegandola a una spirale di filo di tungsteno avvolta intorno a un nucleo di ferro a due polarità. Questo dispositivo, ispirato al brevetto di Christofl",
+  "scoperta_del_giorno": "La combinazione di **alta temperatura (32°C) e umidità moderata (44%)** crea condizioni ideali per la conduzione elettrica nel suolo e nelle piante. Studi storici (Dudgeon, 1900) dimostrano che in queste condizioni, l'elettrocoltura risulta più effic",
+  "consiglio_integrato": "Applicare una **antenna a spirale di rame** (come descritta nel manuale [pdf_13]) posizionata a 30-50 cm sopra le piante in fioritura, collegata a un picchetto di terra per captare l'energia tellurica. Questo sistema, ispirato ai brevetti di Christof",
+  "connessione_inaspettata": "Costruire due antenne: una in rame (per captare energia atmosferica) e una in zinco (per captare energia tellurica), collegate tra loro con un filo di rame isolato. Posizionare il sistema a 1m di altezza sopra le piante in fioritura, con la base dell",
   "stats": {
     "guide": 2,
     "esperimenti": 2
