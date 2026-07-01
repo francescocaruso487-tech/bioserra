@@ -17,18 +17,27 @@ CHARS_CHUNK  = 3500   # chars per chunk da tradurre (Mistral ~4k token safe)
 # ── Utilità GitHub ───────────────────────────────────────────────
 
 def gh_get(path):
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{urllib.parse.quote(path)}',
-        headers=HEADERS_GH)
-    with urllib.request.urlopen(req) as r:
-        d = json.load(r)
-    if not d.get('content','').strip():
-        raw_url = RAW + path
-        req2 = urllib.request.Request(raw_url,
-            headers={'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
-        with urllib.request.urlopen(req2) as r2:
-            return r2.read().decode('utf-8'), d['sha']
-    return base64.b64decode(d['content'].replace('\n','')).decode('utf-8'), d['sha']
+    """Resiliente: 3 tentativi, timeout, rilancia l'ultima eccezione se falliscono tutti."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{urllib.parse.quote(path)}',
+                headers=HEADERS_GH)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = json.load(r)
+            if not d.get('content','').strip():
+                raw_url = RAW + path
+                req2 = urllib.request.Request(raw_url,
+                    headers={'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
+                with urllib.request.urlopen(req2, timeout=30) as r2:
+                    return r2.read().decode('utf-8'), d['sha']
+            return base64.b64decode(d['content'].replace('\n','')).decode('utf-8'), d['sha']
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_get tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 def gh_get_sha(path):
     try:
@@ -69,10 +78,19 @@ def gh_list(path):
         return json.load(r)
 
 def gh_raw(path):
-    req = urllib.request.Request(RAW + path,
-        headers={'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read().decode('utf-8', errors='replace')
+    """Resiliente: 3 tentativi, rilancia l'ultima eccezione se falliscono tutti."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(RAW + path,
+                headers={'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read().decode('utf-8', errors='replace')
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_raw tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 # ── Rilevamento lingua ───────────────────────────────────────────
 
