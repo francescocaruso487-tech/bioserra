@@ -1733,7 +1733,7 @@
         "4 vasi in terracotta (10L e 20L)",
         "Living Soil (compost, micorrize, lombrichi)",
         "Kit Smart Start per germinazione",
-        "Confezioni miste di semi di cannabis (es. Zamnesia 'Mix Outdoor')",
+        "Confezioni miste di semi di pianta (es. Zamnesia 'Mix Outdoor')",
         "pHmetro, acqua piovana filtrata, bilancia di precisione",
         "Cronometro, righello, quaderno di campo"
       ],
@@ -1747,8 +1747,8 @@
       "variabili_controllo": "Stesso Living Soil, stessa esposizione solare, stessa irrigazione (solo acqua piovana), stesso numero di piante per vaso (2), stessa temperatura e umidità ambientale (serra outdoor controllata).",
       "categoria": "sinergia",
       "difficolta": "media",
-      "fonte_a": "Come Innaffiare Le Piante Di Cannabis",
-      "fonte_b": "Come Far Germinare I Semi Di Cannabis Con Il Kit Smart Start",
+      "fonte_a": "Come Innaffiare Le Piante Di Pianta",
+      "fonte_b": "Come Far Germinare I Semi Di Pianta Con Il Kit Smart Start",
       "originalita": "L'esperimento combina due approcci normalmente trattati separatamente: l'uso di confezioni miste per la biodiversità genetica (Manuale A) e la germinazione ottimizzata con Kit Smart Start (Manuale B). Nessun manuale suggerisce di testare l'interazione tra questi due elementi in un sistema Living Soil outdoor, né di misurare l'impatto sulla resa finale. L'originalità sta nell'integrazione di germinazione controllata e selezione varietale in un contesto di agricoltura rigenerativa.",
       "id": "esp_conn_2026-06-29_001",
       "data_proposta": "2026-06-29",
@@ -1757,7 +1757,7 @@
     },
     {
       "nome": "Effetto del pH controllato su produzione di CBD in varietà low-THC in Living Soil outdoor",
-      "ipotesi": "Varietà di cannabis a basso THC (<1%) coltivate in Living Soil outdoor con pH controllato a 6.0–7.0 mostreranno una produzione di CBD significativamente superiore rispetto a piante con pH non controllato (5.0–8.0), a parità di nutrienti. Questo perché, come riportato nel Manuale A, lo squilibrio di pH inibisce l'assorbimento dei nutrienti essenziali per la sintesi di CBD, mentre il Manuale B evidenzia la sensibilità di queste varietà a crescita lenta senza sintomi evidenti. Un pH ottimale in Living Soil favorisce l'attività microbica e la disponibilità di nutrienti, massimizzando la produzione di cannabinoidi.",
+      "ipotesi": "Varietà di pianta a basso THC (<1%) coltivate in Living Soil outdoor con pH controllato a 6.0–7.0 mostreranno una produzione di CBD significativamente superiore rispetto a piante con pH non controllato (5.0–8.0), a parità di nutrienti. Questo perché, come riportato nel Manuale A, lo squilibrio di pH inibisce l'assorbimento dei nutrienti essenziali per la sintesi di CBD, mentre il Manuale B evidenzia la sensibilità di queste varietà a crescita lenta senza sintomi evidenti. Un pH ottimale in Living Soil favorisce l'attività microbica e la disponibilità di nutrienti, massimizzando la produzione di cannabinoidi.",
       "protocollo": [
         "Preparare 20 piante di una stessa varietà CBD (es. 'Carmagnola') da seme femminizzato, suddivise in 2 gruppi di 10: Gruppo A (pH controllato) e Gruppo B (pH non controllato).",
         "Coltivare tutte le piante in Living Soil outdoor (BioSerra Caserta), con substrato identico (compost maturo + biochar + micorrize) e stessa esposizione solare. Utilizzare contenitori da 20L con drenaggio.",
@@ -1765,7 +1765,7 @@
         "Dopo 30 giorni, raccogliere le foglie apicali di ogni pianta (stesso stadio fenologico), essiccare a 22°C per 7 giorni, e analizzare il contenuto di CBD tramite test HPLC (o kit colorimetrico quantitativo) su campioni omogenei."
       ],
       "materiali": [
-        "20 piante di cannabis CBD femminizzate (es. 'Carmagnola')",
+        "20 piante di pianta CBD femminizzate (es. 'Carmagnola')",
         "pH-metro digitale (precisione ±0.1), strisce reattive di controllo",
         "acido citrico (1%), bicarbonato di potassio (1%), acqua distillata",
         "Living Soil pre-preparato (compost, biochar, micorrize)",
@@ -1777,11 +1777,11 @@
         "Contenuto di CBD (%) nelle foglie essiccate: confrontare la media del Gruppo A vs Gruppo B con test t di Student (p<0.05).",
         "Verifica: se il Gruppo A mostra +20% CBD rispetto al Gruppo B, l'ipotesi è confermata."
       ],
-      "variabili_controllo": "Varietà di cannabis, substrato, esposizione solare, irrigazione (solo acqua, no nutrienti aggiunti), temperatura, umidità, stadio fenologico al raccolto.",
+      "variabili_controllo": "Varietà di pianta, substrato, esposizione solare, irrigazione (solo acqua, no nutrienti aggiunti), temperatura, umidità, stadio fenologico al raccolto.",
       "categoria": "living_soil",
       "difficolta": "media",
-      "fonte_a": "Manuale A: pH per la cannabis: come misurarlo e regolarlo",
-      "fonte_b": "Manuale B: Tutto Quello Che Devi Sapere Sulla Coltivazione Della Cannabis",
+      "fonte_a": "Manuale A: pH per la pianta: come misurarlo e regolarlo",
+      "fonte_b": "Manuale B: Tutto Quello Che Devi Sapere Sulla Coltivazione Della Pianta",
       "originalita": "L'esperimento unisce due concetti apparentemente scollegati: la sensibilità al pH delle varietà low-THC (Manuale B) e l'importanza del pH in Living Soil per l'assorbimento nutrizionale (Manuale A). Nessun manuale suggerisce di testare l'effetto del pH su varietà CBD in condizioni outdoor con Living Soil, né propone un protocollo pratico per misurare la produzione di CBD in risposta al pH.",
       "id": "esp_conn_2026-06-29_001",
       "data_proposta": "2026-06-29",
@@ -1790,11 +1790,11 @@
     },
     {
       "nome": "Compost Umano Integrato con Micorrize e Leguminose per Living Soil in Serra Outdoor",
-      "ipotesi": "L'uso di compost derivato da deiezioni umane (come descritto da Howard nel 'An Agricultural Testament') arricchito con micorrize e piante companion (leguminose) in un sistema Living Soil outdoor (come suggerito da 'La Fase Di Fioritura Nelle Coltivazioni Di Cannabis') aumenterà la biomassa radicale e la resa in fiori di cannabis CBD (varietà Amnesia) rispetto a un controllo con solo compost vegetale, grazie alla maggiore disponibilità di azoto fissato biologicamente e alla stimolazione dei funghi micorrizici.",
+      "ipotesi": "L'uso di compost derivato da deiezioni umane (come descritto da Howard nel 'An Agricultural Testament') arricchito con micorrize e piante companion (leguminose) in un sistema Living Soil outdoor (come suggerito da 'La Fase Di Fioritura Nelle Coltivazioni Di Pianta') aumenterà la biomassa radicale e la resa in fiori di pianta CBD (varietà Amnesia) rispetto a un controllo con solo compost vegetale, grazie alla maggiore disponibilità di azoto fissato biologicamente e alla stimolazione dei funghi micorrizici.",
       "protocollo": [
         "Passo 1: Raccolta e preparazione del compost umano - Seguire il metodo Indore Process di Howard (miscela di deiezioni umane, scarti vegetali e letame bovino in rapporto 1:1:1, con umidità al 60% e aerazione ogni 15 giorni per 60 giorni).",
         "Passo 2: Inoculazione con micorrize - Aggiungere 50g di inoculo micorrizico (es. MycoApply) al compost maturo prima dell'applicazione al suolo della serra.",
-        "Passo 3: Semina delle piante companion - Piantare semi di leguminose (es. Trifolium repens) in file alternate alle piante di cannabis CBD (varietà Amnesia) per fissare azoto atmosferico.",
+        "Passo 3: Semina delle piante companion - Piantare semi di leguminose (es. Trifolium repens) in file alternate alle piante di pianta CBD (varietà Amnesia) per fissare azoto atmosferico.",
         "Passo 4: Monitoraggio e raccolta dati - Misurare settimanalmente la crescita radicale (tramite trivella da suolo), biomassa aerea (peso fresco) e resa in fiori (peso secco) a 30 giorni dalla fioritura."
       ],
       "materiali": [
@@ -1802,7 +1802,7 @@
         "Scarti vegetali (erba tagliata, foglie secche)",
         "Letame bovino fresco",
         "Inoculo micorrizico commerciale (es. MycoApply)",
-        "Semi di cannabis CBD (varietà Amnesia, femminizzati)",
+        "Semi di pianta CBD (varietà Amnesia, femminizzati)",
         "Semi di Trifolium repens (leguminosa)",
         "Strumenti per misurazione: bilancia di precisione, trivella da suolo, metro a nastro"
       ],
@@ -1817,24 +1817,24 @@
       "categoria": "sinergia",
       "difficolta": "media",
       "fonte_a": "An Agricultural Testament - Albert Howard",
-      "fonte_b": "La Fase Di Fioritura Nelle Coltivazioni Di Cannabis",
-      "originalita": "Questo esperimento combina per la prima volta il metodo di compostaggio umano di Howard con l'approccio Living Soil e piante companion per cannabis, creando un ciclo chiuso di nutrienti specifico per la coltivazione outdoor di cannabis CBD. Nessuno dei due manuali propone un'applicazione diretta di questi concetti insieme, soprattutto in un contesto di serra outdoor con misurazioni quantitative.",
+      "fonte_b": "La Fase Di Fioritura Nelle Coltivazioni Di Pianta",
+      "originalita": "Questo esperimento combina per la prima volta il metodo di compostaggio umano di Howard con l'approccio Living Soil e piante companion per pianta, creando un ciclo chiuso di nutrienti specifico per la coltivazione outdoor di pianta CBD. Nessuno dei due manuali propone un'applicazione diretta di questi concetti insieme, soprattutto in un contesto di serra outdoor con misurazioni quantitative.",
       "id": "esp_conn_2026-06-29_001",
       "data_proposta": "2026-06-29",
       "attivo": false,
       "tipo": "connessione_pairwise"
     },
     {
-      "nome": "Effetto della 'Settima Lettura' su piante di cannabis in Living Soil: studio comparativo tra irrigazione con acqua strutturata e acqua non strutturata",
-      "ipotesi": "L'irrigazione con acqua strutturata secondo i principi delle 'sette letture' del Corano (variazioni testuali come metafora di differenze di assorbimento e risposta fisiologica) aumenterà la biomassa radicale e la resa in fiori delle piante di cannabis (rif. Manuale A: coltivazione di funghi allucinogeni come sistema di controllo delle sostanze psicoattive; Manuale B: sette letture coraniche come sistema di canalizzazione dell'esperienza trascendentale). L'acqua strutturata, analogamente alle letture coraniche, potrebbe indurre una risposta adattativa nelle piante, mimando un 'controllo' delle dinamiche di crescita.",
+      "nome": "Effetto della 'Settima Lettura' su piante di pianta in Living Soil: studio comparativo tra irrigazione con acqua strutturata e acqua non strutturata",
+      "ipotesi": "L'irrigazione con acqua strutturata secondo i principi delle 'sette letture' del Corano (variazioni testuali come metafora di differenze di assorbimento e risposta fisiologica) aumenterà la biomassa radicale e la resa in fiori delle piante di pianta (rif. Manuale A: coltivazione di funghi allucinogeni come sistema di controllo delle sostanze psicoattive; Manuale B: sette letture coraniche come sistema di canalizzazione dell'esperienza trascendentale). L'acqua strutturata, analogamente alle letture coraniche, potrebbe indurre una risposta adattativa nelle piante, mimando un 'controllo' delle dinamiche di crescita.",
       "protocollo": [
-        "Preparare 14 piante di cannabis femminizzate (varietà CBD-dominante, stessa genetica) in Living Soil identico (stesso substrato, stesso inoculo micorrizico). Dividere in due gruppi: Gruppo A (7 piante) e Gruppo B (7 piante).",
+        "Preparare 14 piante di pianta femminizzate (varietà CBD-dominante, stessa genetica) in Living Soil identico (stesso substrato, stesso inoculo micorrizico). Dividere in due gruppi: Gruppo A (7 piante) e Gruppo B (7 piante).",
         "Per il Gruppo A, preparare acqua strutturata secondo il principio delle 'sette letture': utilizzare un metodo di elettrocultura a bassa frequenza (es. 7 Hz per 7 minuti) per 'imprimere' l'acqua con una sequenza di impulsi variabili (simulando le sette letture). Per il Gruppo B, utilizzare acqua non trattata (controllo).",
         "Irrigare entrambi i gruppi con la stessa quantità di acqua (water-only) ogni 48 ore, mantenendo condizioni ambientali identiche (umidità, temperatura, luce).",
         "Dopo 30 giorni, raccogliere dati: peso fresco e secco delle radici, peso fresco e secco dei fiori, numero di nodi, lunghezza delle radici. Confrontare le medie tra i due gruppi."
       ],
       "materiali": [
-        "14 piante di cannabis femminizzate CBD-dominante",
+        "14 piante di pianta femminizzate CBD-dominante",
         "Living Soil identico (stesso substrato e inoculo micorrizico)",
         "Sistema di elettrocultura a bassa frequenza (es. generatore di onde sinusoidali 7 Hz)",
         "Bilancia di precisione",
@@ -1851,7 +1851,7 @@
       "variabili_controllo": "Genetica delle piante, substrato, inoculo micorrizico, quantità di acqua, frequenza di irrigazione, condizioni ambientali (luce, umidità, temperatura), metodo di strutturazione dell'acqua (solo frequenza e tempo, non intensità).",
       "categoria": "elettrocultura|living_soil",
       "difficoltà": "media",
-      "fonte_a": "Come Innaffiare Le Piante Di Cannabis",
+      "fonte_a": "Come Innaffiare Le Piante Di Pianta",
       "fonte_b": "IL+CORANO",
       "originalità": "L'esperimento unisce il concetto di 'controllo' delle sostanze psicoattive (funghi allucinogeni nel Manuale A) con quello di 'canalizzazione' delle esperienze trascendentali (sette letture coraniche nel Manuale B), applicando un metodo di elettrocultura ispirato alle variazioni testuali coraniche per strutturare l'acqua di irrigazione. Nessun manuale singolo suggerisce un approccio del genere, né esiste una letteratura che colleghi direttamente la strutturazione dell'acqua a principi testuali religiosi o a sistemi di controllo delle sostanze.",
       "id": "esp_conn_2026-06-29_002",
