@@ -1975,52 +1975,10 @@ function manEliminaNota(id) {
 }
 
 
-/* ── Analisi PDF — carica pdf_knowledge.json e propone tecniche ── */
-async function loadManualiJSON() {
-  var el   = document.getElementById('manuali-json-content');
-  var meta = document.getElementById('manuali-json-meta');
-  if (!el) return;
-  el.innerHTML = '<div class="json-loading">⏳ Caricamento analisi AI…</div>';
-  try {
-    var data = await fetchGHJson('pdf_knowledge.json');
-    if (!data) { renderPending(el, meta); return; }
-    if (meta) meta.textContent = 'Aggiornato: ' + fmtJsonDate(data.aggiornato || data.updated_at || data.data);
-    var items = data.analisi || data.items || data.documenti || [];
-    var tecniche_nuove = data.tecniche_nuove || data.nuove_tecniche || [];
-    var html = '';
-    // Nuove tecniche proposte dall'AI
-    if (tecniche_nuove.length > 0) {
-      html += '<div style="background:rgba(0,200,100,.08);border:1px solid rgba(0,200,100,.2);border-radius:10px;padding:12px;margin-bottom:12px">';
-      html += '<div style="font-size:12px;font-weight:700;color:var(--green2);margin-bottom:8px">🔬 Nuove tecniche trovate nei PDF</div>';
-      tecniche_nuove.forEach(function(t, idx) {
-        html += '<div style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06)">';
-        html += '<div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:3px">' + (t.nome||'Tecnica') + '</div>';
-        html += '<div style="font-size:12px;color:var(--text2);margin-bottom:6px">' + (t.desc||t.descrizione||'') + '</div>';
-        html += '<button onclick="manAggiungeTecnica(' + idx + ')" style="background:var(--green2);border:none;border-radius:8px;padding:5px 14px;color:var(--text);font-size:12px;font-weight:700;cursor:pointer">⚡ Aggiungi a Tecniche</button>';
-        html += '</div>';
-      });
-      html += '</div>';
-    }
-    // Analisi generali
-    if (items.length > 0) {
-      items.forEach(function(item) {
-        if (typeof item === 'string') { html += '<div class="json-item info-item">' + item + '</div>'; return; }
-        html += '<div class="json-item info-item">';
-        if (item.titolo || item.documento) html += '<div class="json-item-title">📄 ' + (item.titolo || item.documento) + '</div>';
-        html += '<div class="json-item-body">' + (item.sommario || item.analisi || item.testo || item.body || '') + '</div>';
-        var tags = item.tag || [];
-        if (tags.length) html += tags.map(function(t){ return '<span class="json-tag">' + t + '</span>'; }).join('');
-        html += '</div>';
-      });
-    }
-    if (!items.length && !tecniche_nuove.length) {
-      html = '<div class="json-pending">Il bot AI non ha ancora analizzato i PDF.<br>Verrà aggiornato automaticamente ogni mattina.</div>';
-    }
-    el.innerHTML = html;
-    // Salva tecniche nuove in memoria per aggiungerle
-    if (tecniche_nuove.length) window._pdf_tecniche = tecniche_nuove;
-  } catch(e) { renderJsonError(el, meta, e); }
-}
+/* FIX Rev.19: rimossa loadManualiJSON() duplicata e sempre no-op qui
+   (puntava a #manuali-json-content, mai esistito in index.html). La versione
+   reale resta in laboratorio.js (loadManualiJSON(){ labLoadAll(); }), usata
+   da switchLabTab('manuali') e cfgAggiornaTutto() — invariata. */
 
 /* Aggiunge una tecnica trovata dall'AI PDF — salvata in localStorage */
 function manAggiungeTecnica(idx) {
@@ -2056,7 +2014,11 @@ function initJsonLoaders() {
   // non premeva manualmente "Aggiorna". Il motivo originale (evitare alert
   // duplicati) non si applica più: renderAlertsOggi() è già un no-op.
   loadPianteJSON();
-  loadManualiJSON();
+  // FIX Rev.19: rimossa loadManualiJSON() qui — causava un secondo labLoadAll()
+  // completo (8 fetch JSON) ad ogni avvio app, duplicato rispetto a quello già
+  // eseguito da initElettrocultura() (step 2 di initApp, chiamato prima di
+  // initJsonLoaders/step 4). switchLabTab('manuali') e cfgAggiornaTutto()
+  // continuano a chiamarla on-demand, invariate.
 }
 
 
