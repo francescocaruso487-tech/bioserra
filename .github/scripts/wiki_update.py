@@ -10,19 +10,28 @@ HEADERS_GH = {
 }
 
 def gh_get(path):
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
-    with urllib.request.urlopen(req) as r:
-        d = json.load(r)
-    # File >1MB: GitHub API restituisce content:'' — usa raw URL
-    if isinstance(d, dict) and d.get('content','') == '' and d.get('size',0) > 0:
-        raw_url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
-        req2 = urllib.request.Request(raw_url,
-            headers={'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
-        with urllib.request.urlopen(req2) as r2:
-            raw = r2.read().decode('utf-8')
-        return {'content': base64.b64encode(raw.encode()).decode(), 'sha': d.get('sha','')}
-    return d
+    """Resiliente: 3 tentativi, timeout, rilancia l'ultima eccezione se falliscono tutti."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = json.load(r)
+            # File >1MB: GitHub API restituisce content:'' — usa raw URL
+            if isinstance(d, dict) and d.get('content','') == '' and d.get('size',0) > 0:
+                raw_url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
+                req2 = urllib.request.Request(raw_url,
+                    headers={'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
+                with urllib.request.urlopen(req2, timeout=30) as r2:
+                    raw = r2.read().decode('utf-8')
+                return {'content': base64.b64encode(raw.encode()).decode(), 'sha': d.get('sha','')}
+            return d
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_get tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 def gh_get_sha(path):
     try:
@@ -52,10 +61,19 @@ def gh_put(path, text, sha, message):
     return None
 
 def gh_raw(path):
-    url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
-    req = urllib.request.Request(url, headers={'Cache-Control': 'no-cache'})
-    with urllib.request.urlopen(req) as r:
-        return r.read().decode('utf-8')
+    """Resiliente: 3 tentativi, rilancia l'ultima eccezione se falliscono tutti."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
+            req = urllib.request.Request(url, headers={'Cache-Control': 'no-cache'})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read().decode('utf-8')
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_raw tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 def mistral_chat(prompt, max_tokens=800):
     if not MISTRAL_KEY:
