@@ -181,15 +181,26 @@ def build_correlazioni(storico, diario):
     return risultati
 
 
+_TRACE = {}
+
+
+def _salva_trace(extra=None):
+    if extra:
+        _TRACE.update(extra)
+    try:
+        gh_put('data/_debug_memoria.json',
+               json.dumps(_TRACE, ensure_ascii=False, indent=2, default=str),
+               'debug temporaneo memoria_lungo_termine')
+    except Exception as ex:
+        print('impossibile salvare trace:', ex)
+
+
 def main():
     print('=== memoria_lungo_termine.py avviato', datetime.now(timezone.utc).isoformat(), '===')
-
-    _dbg = gh_put('data/_debug_memoria.json',
-                   json.dumps({'step': 'main_start', 'ts': datetime.now(timezone.utc).isoformat(),
-                                'token_present': bool(GITHUB_TOKEN), 'mistral_key_present': bool(MISTRAL_KEY)},
-                               ensure_ascii=False, indent=2),
-                   'debug temporaneo: main_start')
-    print('debug main_start gh_put risultato:', 'OK' if _dbg else 'FALLITO (None)')
+    _TRACE['ts'] = datetime.now(timezone.utc).isoformat()
+    _TRACE['token_present'] = bool(GITHUB_TOKEN)
+    _TRACE['mistral_key_present'] = bool(MISTRAL_KEY)
+    _salva_trace({'step': '1_start'})
 
     try:
         raw_mem, _ = gh_get('data/memoria_chat.json')
@@ -212,6 +223,7 @@ def main():
         print(f'ATTENZIONE: lettura storico_cicli.json fallita, procedo senza correlazioni: {ex}')
         storico = {'storico_cicli': []}
 
+    _salva_trace({'step': '2_letture_ok'})
     sessioni = memoria.get('sessioni', []) or []
     interventi = diario.get('interventi', []) or []
     temi_esistenti = memoria.get('temi_ricorrenti', []) or []
@@ -221,6 +233,8 @@ def main():
         return
 
     correlazioni = build_correlazioni(storico, diario)
+    _salva_trace({'step': '3_correlazioni_ok', 'n_sessioni': len(sessioni),
+                  'n_interventi': len(interventi), 'n_correlazioni': len(correlazioni)})
 
     ctx = '=== SESSIONI RECENTI CERVELLO AI (ultime 10) ===\n'
     for s in sessioni[-10:]:
@@ -259,7 +273,9 @@ def main():
     )
 
     try:
+        _salva_trace({'step': '4_pre_mistral_call', 'prompt_len': len(prompt)})
         risposta = mistral_call(prompt)
+        _salva_trace({'step': '5_mistral_ok', 'risposta_grezza': risposta[:500]})
     except Exception as ex:
         print(f'ATTENZIONE: chiamata Mistral fallita, nessun aggiornamento in questa run: {ex}')
         gh_put('data/_debug_memoria.json',
@@ -268,6 +284,8 @@ def main():
         return
 
     nuovi = parse_json_list(risposta)
+    _salva_trace({'step': '5b_parse_ok', 'nuovi_tipo': type(nuovi).__name__,
+                  'nuovi_len': (len(nuovi) if isinstance(nuovi, list) else None)})
     if nuovi is None:
         print("ATTENZIONE: risposta Mistral non e' una lista JSON valida, nessun aggiornamento.")
         print('Risposta grezza (troncata):', risposta[:300])
@@ -318,6 +336,7 @@ def main():
         print('Nessun nuovo pattern distillato in questa run (lista vuota o solo doppioni).')
 
     memoria['temi_ricorrenti'] = combinati
+    _salva_trace({'step': '6_pre_gh_put_finale', 'n_nuovi': len(nuovi_puliti), 'n_combinati': len(combinati)})
 
     ok = gh_put(
         'data/memoria_chat.json',
@@ -332,4 +351,18 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except SystemExit:
+        raise
+    except Exception:
+        import traceback
+        tb = traceback.format_exc()
+        print('ECCEZIONE NON GESTITA:', tb)
+        try:
+            gh_put('data/_debug_memoria.json',
+                   json.dumps({'errore': 'eccezione_non_gestita', 'traceback': tb}, ensure_ascii=False, indent=2),
+                   'debug: eccezione non gestita')
+        except Exception:
+            pass
+        sys.exit(1)
