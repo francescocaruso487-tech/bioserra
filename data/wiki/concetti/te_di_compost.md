@@ -2,8 +2,8 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-06-30
-pdf_count: 2
+aggiornato: 2026-07-01
+pdf_count: 5
 ---
 
 # Te di Compost
@@ -12,24 +12,34 @@ pdf_count: 2
 # Tè di Compost
 
 ## Descrizione
-Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei microrganismi benefici presenti in un compost maturo, trasformandoli in un biostimolante liquido pronto per l’applicazione fogliare o radicale. Questo processo, noto come **estrazione microbica**, sfrutta la capacità dei batteri, funghi e protozoi di colonizzare rapidamente il substrato e le piante, migliorando la salute del suolo e la resilienza delle colture. In un contesto di **Living Soil** come quello della provincia di Caserta (41°N), dove il clima mediterraneo favorisce l’attività microbica ma può anche stressare le piante con caldo e umidità, il tè di compost agisce come un **probiotico vegetale**, potenziando la biodiversità del suolo e stimolando la produzione di metaboliti secondari nelle piante di cannabis.
+Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ricco di microrganismi benefici, enzimi, acidi umici e nutrienti solubili, ottenuto dalla lisciviazione di compost maturo in acqua ossigenata. Questo preparato funziona come un **bioattivatore del suolo** e delle piante, poiché introduce una comunità microbica diversificata (batteri, funghi, attinomiceti) che stimola la salute del *Living Soil* e la resilienza delle colture. In particolare, favorisce la formazione di **micorrize**, aumenta la disponibilità di nutrienti e induce resistenza sistemica nelle piante (ISR), riducendo la necessità di input chimici.
 
-Il meccanismo d’azione si basa sulla **competizione biologica**: i microrganismi benefici (es. *Pseudomonas*, *Bacillus*, funghi micorrizici) colonizzano le radici e le foglie, sopprimendo patogeni come *Fusarium* o *Phytophthora* e migliorando l’assorbimento dei nutrienti tramite enzimi e ormoni (auxine, citochinine). Inoltre, il tè di compost arricchisce il suolo di **sostanza organica solubile** (acidi umici e fulvici), che chela i minerali e ne facilita l’assimilazione. Studi hanno dimostrato che applicazioni regolari possono aumentare la resa fino al 30% e ridurre la necessità di fertilizzanti sintetici, aspetto cruciale per coltivazioni outdoor in **Living Soil** dove la gestione dei nutrienti è dinamica e influenzata dalle condizioni climatiche [web_zamn_328-come-conciare-cannabis].
+Il meccanismo d'azione si basa sulla **competizione microbica**: i microrganismi benefici del tè colonizzano la rizosfera e la filosfera, sopprimendo patogeni e migliorando l'assorbimento di acqua e nutrienti. Inoltre, gli acidi umici e gli ormoni naturali presenti (come auxine e citochinine) promuovono la crescita radicale e la fotosintesi. Studi in agricoltura rigenerativa dimostrano che applicazioni regolari di tè di compost possono aumentare la biomassa microbica del suolo fino al 40% e ridurre l'incidenza di malattie fungine del 30-50%.
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor a Caserta (clima caldo-umido con estati afose e inverni miti), il tè di compost va preparato e applicato seguendo queste linee guida per massimizzare l’efficacia:
+Per una serra outdoor a **Caserta (41°N)**, con clima mediterraneo caratterizzato da estati calde e umide, il tè di compost va preparato e applicato seguendo queste fasi:
 
-1. **Preparazione del compost**:
-   - Utilizza compost **maturo** (6-12 mesi), privo di odori putridi e con rapporto C/N < 20. Compost di origine vegetale (es. letame di cavallo + paglia) o vermicompost sono ideali per la biodiversità microbica.
-   - *Filtra* il compost con una retina a maglia fine (1-2 mm) per evitare intasamenti dell’aeratore.
+### **Preparazione (24 ore prima dell'uso)**
+1. **Materiali necessari**:
+   - Compost maturo (preferibilmente vermicompost o compost da letame bovino/equino, maturo da almeno 6 mesi).
+   - Acqua non clorata (lasciare decantare l'acqua del rubinetto per 24h o usare acqua piovana filtrata).
+   - Aeratore per acquario (con pietra porosa per ossigenazione costante).
+   - Melassa biologica (1-2 cucchiai per 10L di acqua) come fonte di carbonio per i batteri.
+   - Opzionale: 1 cucchiaino di solfato di magnesio (Epsom) per ogni 10L per bilanciare i nutrienti.
 
-2. **Estrazione aerobica**:
-   - **Dosi**: 1 kg di compost ogni 10 litri d’acqua (per piante adulte; ridurre a 0.5 kg/L per applicazioni fogliari).
-   - **Acqua**: Usa acqua **non clorata** (lasciare decantare l’acqua del rubinetto 24h o usare acqua piovana filtrata).
-   - **Aerazione**: Immergi un **aeratore da acquario** (portata 2-4 L/min) per 24-48h a temperatura ambiente (18-25°C). Evita la putrefazione: se l’acqua diventa torbida o maleodorante, scartala.
-   - **Alimentazione microbica**: Aggiungi **1-2 cucchiai di melassa** (o zucchero di canna) ogni 10 L per nutrire i batteri. Opzionale: 1 cucchiaio di **humus di lombrico liquido** per stimolare i funghi micorrizici.
+2. **Procedura**:
+   - Riempire un secchio da 20L con acqua e posizionare l'aeratore sul fondo.
+   - Aggiungere **1-2 kg di compost** in un sacchetto di tela o una retina (evitare il contatto diretto con l'acqua per facilitare la filtrazione).
+   - Immergere il sacchetto nell'acqua e avviare l'aeratore (flusso medio, 1-2 bolle al secondo).
+   - Aggiungere la melassa e mescolare leggermente.
+   - Coprire con un coperchio (non ermetico) e lasciare aerare per **24 ore** a temperatura ambiente (20-25°C).
 
-3. **Applicazione**:
-   - **Radicale**: Irriga il suolo alla base delle piante con un rapporto 1:1 (tè:acqua
+### **Applicazione**
+- **Tempi**: Applicare entro **4 ore** dalla preparazione per massimizzare la vitalità microbica.
+- **Metodi**:
+  - **Radicale**: Irrigare il suolo alla base delle piante con un rapporto 1:10 (tè:acqua) per evitare stress osmotico. Frequenza: ogni 2 settimane durante la vegetazione e la fioritura.
+  - **Fogliare**: Filtrare il tè con una retina fine (50-100 micron) e applicare con uno spruzzatore a pressione (1-2 bar) al mattino presto o al tramonto. Frequenza: ogni 10-15 giorni.
+- **Dosaggio**:
+  - Vegetazione: 5-10L
