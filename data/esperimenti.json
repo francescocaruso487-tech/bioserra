@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-01T08:52:14.906Z",
+  "lastUpdate": "2026-07-01T08:52:20.710Z",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -75,24 +75,6 @@
       "data_proposta": "2026-06-16",
       "attivo": true,
       "data_attivazione": "2026-06-29",
-      "tipo": "coltivazione_generale"
-    },
-    {
-      "id": "daily_1781640025709_1",
-      "nome": "Monitoraggio del pH",
-      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della pianta",
-      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della pianta",
-      "materiali": [
-        "pHmetro",
-        "soluzione di calibrazione"
-      ],
-      "categoria": "Controllo ambientale",
-      "difficolta": "facile",
-      "fonte": "Royal Queen Seeds",
-      "durata_giorni": 7,
-      "data_proposta": "2026-06-16",
-      "attivo": true,
-      "data_attivazione": "2026-06-30",
       "tipo": "coltivazione_generale"
     },
     {
@@ -861,6 +843,25 @@
     }
   ],
   "proposte": [
+    {
+      "id": "daily_1781640025709_1",
+      "nome": "Monitoraggio del pH",
+      "descrizione": "Misurazione regolare del pH dell'acqua e del substrato per assicurare un ambiente ottimale per la crescita della pianta",
+      "obiettivo": "Mantenere un pH stabile e ottimale per la crescita della pianta",
+      "materiali": [
+        "pHmetro",
+        "soluzione di calibrazione"
+      ],
+      "categoria": "Controllo ambientale",
+      "difficolta": "facile",
+      "fonte": "Royal Queen Seeds",
+      "durata_giorni": 7,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": "2026-06-30",
+      "tipo": "coltivazione_generale",
+      "data_disattivazione": "2026-07-01"
+    },
     {
       "id": "daily_1781640155746_1",
       "nome": "Irrigazione intelligente",
