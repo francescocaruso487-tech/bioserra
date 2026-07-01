@@ -19,17 +19,25 @@ HEADERS_GH = {
 
 
 def gh_get(path):
-    """Lettura con fallback raw per file >1MB."""
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
-    with urllib.request.urlopen(req) as r:
-        d = json.load(r)
-    if not d.get('content', '').strip():
-        req2 = urllib.request.Request(RAW + path, headers={
-            'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
-        with urllib.request.urlopen(req2) as r2:
-            return r2.read().decode('utf-8'), d['sha']
-    return base64.b64decode(d['content'].replace('\n', '')).decode('utf-8'), d['sha']
+    """Lettura con fallback raw per file >1MB. Resiliente: 3 tentativi, rilancia l'ultima eccezione."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = json.load(r)
+            if not d.get('content', '').strip():
+                req2 = urllib.request.Request(RAW + path, headers={
+                    'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
+                with urllib.request.urlopen(req2, timeout=30) as r2:
+                    return r2.read().decode('utf-8'), d['sha']
+            return base64.b64decode(d['content'].replace('\n', '')).decode('utf-8'), d['sha']
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_get tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 
 def gh_get_sha(path):
