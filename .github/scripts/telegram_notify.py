@@ -1,4 +1,4 @@
-import os, json, base64, urllib.request, urllib.error, datetime, sys
+import os, json, base64, urllib.request, urllib.error, datetime, sys, time
 
 GITHUB_TOKEN  = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
 BOT_TOKEN     = os.environ.get('TELEGRAM_BOT_TOKEN', '')
@@ -12,11 +12,20 @@ HEADERS_GH = {
 }
 
 def gh_get(path):
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
-    with urllib.request.urlopen(req) as r:
-        data = json.load(r)
-    return json.loads(base64.b64decode(data['content'].replace('\n','')).decode('utf-8'))
+    """Resiliente: 3 tentativi, timeout, rilancia l'ultima eccezione se falliscono tutti."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                data = json.load(r)
+            return json.loads(base64.b64decode(data['content'].replace('\n','')).decode('utf-8'))
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_get tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 def tg_send(text):
     if not BOT_TOKEN or not CHAT_ID:
