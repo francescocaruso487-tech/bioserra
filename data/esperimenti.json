@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-01T08:46:16.056Z",
+  "lastUpdate": "2026-07-01T08:46:36.797Z",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -59,23 +59,6 @@
     }
   ],
   "esperimenti_attivi": [
-    {
-      "id": "daily_1781667046478_0",
-      "nome": "Elettrocultura",
-      "descrizione": "Applica elettrocultura alle 10 piante di pianta per migliorare la crescita e la resa",
-      "obiettivo": "Migliorare la crescita e la resa delle piante",
-      "materiali": [
-        "Generatore di elettricità",
-        "Elettrodi"
-      ],
-      "categoria": "Tecniche di coltivazione",
-      "difficolta": "Medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 30,
-      "data_proposta": "2026-06-17",
-      "attivo": true,
-      "data_attivazione": "2026-06-22"
-    },
     {
       "id": "daily_1781640224648_2",
       "nome": "Sistema di irrigazione a goccia con fertilizzanti",
@@ -931,6 +914,24 @@
     }
   ],
   "proposte": [
+    {
+      "id": "daily_1781667046478_0",
+      "nome": "Elettrocultura",
+      "descrizione": "Applica elettrocultura alle 10 piante di pianta per migliorare la crescita e la resa",
+      "obiettivo": "Migliorare la crescita e la resa delle piante",
+      "materiali": [
+        "Generatore di elettricità",
+        "Elettrodi"
+      ],
+      "categoria": "Tecniche di coltivazione",
+      "difficolta": "Medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 30,
+      "data_proposta": "2026-06-17",
+      "attivo": false,
+      "data_attivazione": "2026-06-22",
+      "data_disattivazione": "2026-07-01"
+    },
     {
       "id": "daily_1781640025709_3",
       "nome": "Introduzione di micorrize",
