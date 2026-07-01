@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-01T08:52:35.214Z",
+  "lastUpdate": "2026-07-01T12:26:41.601846+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -1918,14 +1918,49 @@
       "fonte": "Guida personale",
       "categoria": "elettrocultura",
       "note": ""
+    },
+    {
+      "nome": "Rito di Iside del Compost: Trasmutazione Alchemica del Suolo Tramite Rituale Simbolico e Processi Microbici",
+      "ipotesi": "Applicando un rituale simbolico ispirato ai 'Riti di Iside' (Manuale B) durante il compostaggio, si accelererà la disponibilità di nutrienti nell'erba (Manuale A) grazie all'aumento dell'attività microbica e all'equilibrio dei fattori del suolo (pH, ossigeno, temperatura). Questo perché il rituale, agendo sulla psiche umana e sulla percezione del processo, potrebbe influenzare indirettamente la gestione attenta del compost (umidità, aerazione, temperatura), portando a una maggiore efficienza nella decomposizione e mineralizzazione della materia organica.",
+      "protocollo": [
+        "Preparare due cumuli di compost identici (stessa composizione: scarti vegetali, letame, foglie secche) in contenitori separati ma vicini. Etichettare uno come 'Rito di Iside' (RI) e l'altro come 'Controllo' (C).",
+        "Per il cumulo RI, eseguire quotidianamente un rituale simbolico di 10 minuti al tramonto: recitare una formula ispirata ai Riti di Iside ('Come Iside rigenera Osiride, così questo suolo si trasformi in vita'), accompagnata da gesti rituali (movimenti circolari con le mani sul cumulo per 'attivare' l'energia, come nel gesto della V ma in senso orario). Per il cumulo C, non eseguire alcun rituale, ma osservare passivamente il compost.",
+        "Monitorare e regolare quotidianamente i fattori del suolo per entrambi i cumuli: temperatura (con termometro da suolo), umidità (peso del cumulo prima/ dopo irrigazione con acqua-only), e ossigenazione (mescolare manualmente per 2 minuti, stesso metodo per entrambi). Registrare i dati.",
+        "Dopo 30 giorni, prelevare campioni di compost da entrambi i cumuli e analizzare: pH (con kit da suolo), contenuto di materia organica (perdita al fuoco), e disponibilità di nutrienti (test kit per azoto, fosforo, potassio). Confrontare i risultati."
+      ],
+      "materiali": [
+        "Due contenitori per compost (es. bidoni in plastica forati, 50L ciascuno)",
+        "Termometro da suolo digitale",
+        "Bilancia da cucina (per umidità)",
+        "Kit per test pH e nutrienti del suolo",
+        "Acqua distillata (water-only)",
+        "Scarti vegetali e letame (stessa quantità per entrambi i cumuli)"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Temperatura del compost (misurata quotidianamente a 20 cm di profondità)",
+        "pH e nutrienti (N-P-K) del compost finale",
+        "Peso umido del compost prima/dopo irrigazione (per umidità)",
+        "Osservazioni qualitative: odore, struttura, presenza di lombrichi"
+      ],
+      "variabili_controllo": "Stessa composizione iniziale dei cumuli, stessa esposizione solare, stessa quantità di acqua aggiunta, stesso metodo di mescolamento manuale. Il solo fattore variabile è la presenza/assenza del rituale simbolico.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "5 Fattori Che Influenzano La Disponibilità Di Nutrienti Nell",
+      "fonte_b": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+      "originalita": "Questo esperimento unisce per la prima volta il simbolismo magico-rituale dei Riti di Iside (Manuale B) con i principi scientifici del compostaggio e della disponibilità di nutrienti (Manuale A), creando un protocollo che non esiste in nessuno dei due manuali singolarmente. L'ipotesi si basa sulla teoria che la gestione consapevole (anche tramite rituali) del processo alchemico del compost possa influenzare i fattori microbici e chimici del suolo in modo misurabile.",
+      "id": "esp_conn_2026-07-01_001",
+      "data_proposta": "2026-07-01",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-06-30",
-    "nuove_proposte": 0,
-    "pdf_analizzati": 35,
-    "connessioni_usate": 0
+    "data": "2026-07-01",
+    "nuove_proposte": 1,
+    "pdf_analizzati": 43,
+    "connessioni_usate": 20
   }
 }
