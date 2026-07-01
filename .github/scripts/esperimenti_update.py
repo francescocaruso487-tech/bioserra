@@ -69,6 +69,30 @@ def gh_put(path, content, sha, msg):
             time.sleep(3)
     return None
 
+def sanitize_testo(t):
+    """Regola progetto: niente 'cannabis' nel testo generato/mostrato — sostituisce con 'pianta'."""
+    if not t or not isinstance(t, str):
+        return t
+    t = re.sub(r'\s*(\s*[Cc]annabis\s+sativa\s+L\.?\s*)', '', t)
+    t = re.sub(r'\bpianta\s+di\s+[Cc]annabis\b', 'pianta', t, flags=re.IGNORECASE)
+    t = t.replace('CANNABIS', 'PIANTA')
+    t = t.replace('Cannabis', 'Pianta')
+    t = t.replace('cannabis', 'pianta')
+    return t
+
+TESTO_FIELDS_STR = ['nome', 'ipotesi', 'variabili_controllo', 'originalita', 'fonte_a', 'fonte_b']
+TESTO_FIELDS_LIST = ['protocollo', 'materiali', 'misure', 'fonti']
+
+def sanitizza_esperimento(esp):
+    """Sanitizza in-place i campi testo libero di un esperimento (mai id/categoria/difficolta)."""
+    for campo in TESTO_FIELDS_STR:
+        if campo in esp:
+            esp[campo] = sanitize_testo(esp[campo])
+    for campo in TESTO_FIELDS_LIST:
+        if campo in esp and isinstance(esp[campo], list):
+            esp[campo] = [sanitize_testo(v) if isinstance(v, str) else v for v in esp[campo]]
+    return esp
+
 def mistral_chat(prompt, max_tokens=1200):
     if not MISTRAL_KEY: return None
     body = json.dumps({
@@ -269,6 +293,7 @@ def main():
                 esp['data_proposta'] = oggi
                 esp['attivo'] = False
                 esp['tipo'] = 'connessione_pairwise'
+                sanitizza_esperimento(esp)
                 nuove_proposte.append(esp)
                 proposte_esistenti.add(esp['nome'])
                 print(f'  -> {esp["nome"][:60]}')
@@ -283,12 +308,22 @@ def main():
             esp['data_proposta'] = oggi
             esp['attivo'] = False
             esp['tipo'] = 'trasversale_multi_pdf'
+            sanitizza_esperimento(esp)
             nuove_proposte.append(esp)
             proposte_esistenti.add(esp['nome'])
             print(f'  -> {esp["nome"][:60]}')
 
     # Aggiorna esperimenti.json
     proposte_aggiornate = esperimenti.get('proposte', []) + nuove_proposte
+    # Rete di sicurezza: sanitizza anche le proposte storiche (pulizia dati esistenti)
+    _sanit_count = 0
+    for _p in proposte_aggiornate:
+        _prima = json.dumps(_p, ensure_ascii=False)
+        sanitizza_esperimento(_p)
+        if json.dumps(_p, ensure_ascii=False) != _prima:
+            _sanit_count += 1
+    if _sanit_count:
+        print(f'  Sanitizzate {_sanit_count} proposte esistenti (cannabis->pianta)')
     # Mantieni max 100 proposte (rimuovi le più vecchie)
     if len(proposte_aggiornate) > 100:
         proposte_aggiornate = proposte_aggiornate[-100:]
