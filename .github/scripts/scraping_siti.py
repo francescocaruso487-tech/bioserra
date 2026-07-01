@@ -40,18 +40,27 @@ HEADERS_WEB = {
 # ── GitHub helpers ─────────────────────────────────────────────────────────────
 
 def gh_get(path):
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
-    with urllib.request.urlopen(req) as r:
-        d = json.load(r)
-    # File >1MB: GitHub API content:'' — usa raw URL
-    if not d.get('content','').strip():
-        raw_url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
-        req2 = urllib.request.Request(raw_url, headers={
-            'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
-        with urllib.request.urlopen(req2) as r2:
-            return r2.read().decode('utf-8'), d['sha']
-    return base64.b64decode(d['content'].replace('\n','')).decode('utf-8'), d['sha']
+    """Resiliente: 3 tentativi, timeout, rilancia l'ultima eccezione se falliscono tutti."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = json.load(r)
+            # File >1MB: GitHub API content:'' — usa raw URL
+            if not d.get('content','').strip():
+                raw_url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
+                req2 = urllib.request.Request(raw_url, headers={
+                    'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
+                with urllib.request.urlopen(req2, timeout=30) as r2:
+                    return r2.read().decode('utf-8'), d['sha']
+            return base64.b64decode(d['content'].replace('\n','')).decode('utf-8'), d['sha']
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_get tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 def gh_get_sha(path):
     try:
@@ -63,18 +72,29 @@ def gh_get_sha(path):
         return None
 
 def gh_put(path, content, sha, msg):
+    """Resiliente: 3 tentativi, SHA sempre fresco, mai solleva eccezioni (None se fallisce)."""
     if isinstance(content, str):
         content = content.encode('utf-8')
     encoded = base64.b64encode(content).decode('ascii')
-    body = {'message': msg, 'content': encoded, 'branch': 'main'}
-    if sha:
-        body['sha'] = sha
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}',
-        data=json.dumps(body).encode(),
-        headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)['commit']['sha']
+    for attempt in range(3):
+        try:
+            sha_fresco = gh_get_sha(path)
+            body = {'message': msg, 'content': encoded, 'branch': 'main'}
+            if sha_fresco:
+                body['sha'] = sha_fresco
+            elif sha:
+                body['sha'] = sha
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}',
+                data=json.dumps(body).encode(),
+                headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.load(r)['commit']['sha']
+        except Exception as ex:
+            print(f'  gh_put tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    print(f'  ERRORE: gh_put {path} fallito dopo 3 tentativi')
+    return None
 
 def gh_list(path):
     try:
@@ -207,7 +227,11 @@ def main():
     print(f'=== BioSerra Scraping Siti ({oggi}) ===')
 
     # Carica pdf_knowledge.json esistente
-    raw_pk, sha_pk = gh_get('data/pdf_knowledge.json')
+    try:
+        raw_pk, sha_pk = gh_get('data/pdf_knowledge.json')
+    except Exception as ex:
+        print(f'ERRORE CRITICO: lettura pdf_knowledge.json fallita dopo 3 tentativi: {ex}')
+        import sys; sys.exit(1)
     pdf_knowledge = json.loads(raw_pk)
     analisi = pdf_knowledge.get('analisi', [])
     ids_esistenti = {a['id'] for a in analisi}
@@ -291,8 +315,11 @@ def main():
             # 5. Salva testo in data/testi/web/nome/slug.txt
             contenuto_file = f'=== {titolo} ===\nFONTE: {url}\nDATA: {oggi}\n\n{testo}'
             sha_testo = gh_get_sha(path_testo)
-            gh_put(path_testo, contenuto_file, sha_testo,
+            res_testo = gh_put(path_testo, contenuto_file, sha_testo,
                    f'web/{nome}: {slug[:40]} [{oggi}]')
+            if res_testo is None:
+                print(f'    ERRORE: salvataggio {path_testo} fallito dopo 3 tentativi, salto')
+                continue
             testi_salvati += 1
 
             # 6. Genera sommario con Mistral
@@ -335,11 +362,14 @@ def main():
 
         # SHA fresco prima del PUT
         sha_pk_fresh = gh_get_sha('data/pdf_knowledge.json')
-        gh_put('data/pdf_knowledge.json',
+        res_pk = gh_put('data/pdf_knowledge.json',
                json.dumps(pdf_knowledge, indent=2, ensure_ascii=False),
                sha_pk_fresh,
                f'scraping web: +{len(nuove_voci)} articoli [{oggi}]')
-        print(f'\nSalvato pdf_knowledge.json: +{len(nuove_voci)} voci web')
+        if res_pk is None:
+            print('  ERRORE CRITICO: salvataggio pdf_knowledge.json fallito dopo 3 tentativi')
+        else:
+            print(f'\nSalvato pdf_knowledge.json: +{len(nuove_voci)} voci web')
     else:
         print('\nNessuna nuova voce da aggiungere')
 
