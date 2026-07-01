@@ -17,18 +17,27 @@ HEADERS_GH = {
 }
 
 def gh_get(path):
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
-    with urllib.request.urlopen(req) as r:
-        d = json.load(r)
-    # File >1MB: GitHub API content:'' — usa raw URL
-    if not d.get('content','').strip():
-        raw_url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
-        req2 = urllib.request.Request(raw_url, headers={
-            'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
-        with urllib.request.urlopen(req2) as r2:
-            return r2.read().decode('utf-8'), d['sha']
-    return base64.b64decode(d['content'].replace('\n','')).decode('utf-8'), d['sha']
+    """Resiliente: 3 tentativi, timeout, rilancia l'ultima eccezione se falliscono tutti."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = json.load(r)
+            # File >1MB: GitHub API content:'' — usa raw URL
+            if not d.get('content','').strip():
+                raw_url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
+                req2 = urllib.request.Request(raw_url, headers={
+                    'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
+                with urllib.request.urlopen(req2, timeout=30) as r2:
+                    return r2.read().decode('utf-8'), d['sha']
+            return base64.b64decode(d['content'].replace('\n','')).decode('utf-8'), d['sha']
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_get tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 def gh_get_sha(path):
     try:
@@ -207,7 +216,11 @@ def main():
     print(f'MISTRAL_KEY: {"OK" if MISTRAL_KEY else "ASSENTE"}')
 
     # Carica dati
-    raw_esp, sha_esp = gh_get('data/esperimenti.json')
+    try:
+        raw_esp, sha_esp = gh_get('data/esperimenti.json')
+    except Exception as ex:
+        print(f'ERRORE CRITICO: lettura esperimenti.json fallita dopo 3 tentativi: {ex}')
+        import sys; sys.exit(1)
     esperimenti = json.loads(raw_esp)
     proposte_esistenti = {p.get('nome','') for p in esperimenti.get('proposte', [])}
     print(f'Proposte esistenti: {len(proposte_esistenti)}')
