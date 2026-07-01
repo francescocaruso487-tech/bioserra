@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-01T08:52:20.710Z",
+  "lastUpdate": "2026-07-01T08:52:29.977Z",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -59,24 +59,6 @@
     }
   ],
   "esperimenti_attivi": [
-    {
-      "id": "daily_1781640025709_2",
-      "nome": "Tecnica di prunning",
-      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della pianta",
-      "obiettivo": "Migliorare la crescita e la produzione di pianta",
-      "materiali": [
-        "forbici",
-        "guanti"
-      ],
-      "categoria": "Tecnica di coltivazione",
-      "difficolta": "medio",
-      "fonte": "Zamnesia",
-      "durata_giorni": 14,
-      "data_proposta": "2026-06-16",
-      "attivo": true,
-      "data_attivazione": "2026-06-29",
-      "tipo": "coltivazione_generale"
-    },
     {
       "id": "exp_001",
       "nome": "Legnetto con treccia di rame e punta di rame",
@@ -843,6 +825,25 @@
     }
   ],
   "proposte": [
+    {
+      "id": "daily_1781640025709_2",
+      "nome": "Tecnica di prunning",
+      "descrizione": "Applicazione della tecnica di prunning per aumentare la resa e la qualità della pianta",
+      "obiettivo": "Migliorare la crescita e la produzione di pianta",
+      "materiali": [
+        "forbici",
+        "guanti"
+      ],
+      "categoria": "Tecnica di coltivazione",
+      "difficolta": "medio",
+      "fonte": "Zamnesia",
+      "durata_giorni": 14,
+      "data_proposta": "2026-06-16",
+      "attivo": false,
+      "data_attivazione": "2026-06-29",
+      "tipo": "coltivazione_generale",
+      "data_disattivazione": "2026-07-01"
+    },
     {
       "id": "daily_1781640025709_1",
       "nome": "Monitoraggio del pH",
