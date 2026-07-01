@@ -1,4 +1,4 @@
-import os, json, base64, urllib.request, time, math
+import os, json, base64, urllib.request, time, math, re
 
 GITHUB_TOKEN = os.environ.get('BIOSERRA_GITHUB_TOKEN') or os.environ.get('GITHUB_TOKEN','')
 MISTRAL_KEY = os.environ['MISTRAL_KEY']
@@ -68,6 +68,17 @@ def mistral_embed(testo):
         resp = json.load(r)
     return resp['data'][0]['embedding']
 
+def sanitize_testo(t):
+    """Regola progetto: niente 'cannabis' nel testo generato/mostrato — sostituisce con 'pianta'."""
+    if not t or not isinstance(t, str):
+        return t
+    t = re.sub(r'\s*(\s*[Cc]annabis\s+sativa\s+L\.?\s*)', '', t)
+    t = re.sub(r'\bpianta\s+di\s+[Cc]annabis\b', 'pianta', t, flags=re.IGNORECASE)
+    t = t.replace('CANNABIS', 'PIANTA')
+    t = t.replace('Cannabis', 'Pianta')
+    t = t.replace('cannabis', 'pianta')
+    return t
+
 def cosine(a, b):
     dot = sum(x*y for x,y in zip(a,b))
     na = math.sqrt(sum(x*x for x in a))
@@ -95,15 +106,26 @@ def main():
     except:
         vettori_esistenti = []
         print('Nessun vettore esistente')
-    
+
+    # Rete di sicurezza: sanitizza titoli gia' esistenti (pulizia dati storici)
+    _sanit_count = 0
+    for _v in vettori_esistenti:
+        _prima = _v.get('titolo', '')
+        _dopo = sanitize_testo(_prima)
+        if _dopo != _prima:
+            _v['titolo'] = _dopo
+            _sanit_count += 1
+    if _sanit_count:
+        print(f'  Sanitizzati {_sanit_count} titoli vettori esistenti (cannabis->pianta)')
+
     id_vettorizzati = {v['id'] for v in vettori_esistenti}
     
     # Filtra non vettorizzati (max 20)
     da_vettorizzare = [a for a in analisi if a.get('id') not in id_vettorizzati][:20]
     print(f'Da vettorizzare: {len(da_vettorizzare)}')
     
-    if not da_vettorizzare:
-        print('Tutti già vettorizzati.')
+    if not da_vettorizzare and not _sanit_count:
+        print('Tutti già vettorizzati e nulla da sanitizzare.')
         return
     
     nuovi_vettori = []
