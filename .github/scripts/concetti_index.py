@@ -30,18 +30,27 @@ def categorizza_auto(label, cat_orig):
     return cat_orig if cat_orig in CATEGORIE_VALIDE else 'altro'
 
 def gh_api_get(path):
-    req = urllib.request.Request(
-        f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
-    with urllib.request.urlopen(req) as r:
-        data = json.load(r)
-    # File >1MB: l'API restituisce content vuoto -> fallback raw URL (no-cache)
-    if not data.get('content','').strip():
-        raw_url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
-        req2 = urllib.request.Request(raw_url, headers={
-            'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
-        with urllib.request.urlopen(req2) as r2:
-            return r2.read().decode('utf-8'), data['sha']
-    return base64.b64decode(data['content'].replace('\n','')).decode('utf-8'), data['sha']
+    """Resiliente: 3 tentativi, timeout, rilancia l'ultima eccezione se falliscono tutti."""
+    last_ex = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                f'https://api.github.com/repos/{REPO}/contents/{path}', headers=HEADERS_GH)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                data = json.load(r)
+            # File >1MB: l'API restituisce content vuoto -> fallback raw URL (no-cache)
+            if not data.get('content','').strip():
+                raw_url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
+                req2 = urllib.request.Request(raw_url, headers={
+                    'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
+                with urllib.request.urlopen(req2, timeout=30) as r2:
+                    return r2.read().decode('utf-8'), data['sha']
+            return base64.b64decode(data['content'].replace('\n','')).decode('utf-8'), data['sha']
+        except Exception as ex:
+            last_ex = ex
+            print(f'  gh_api_get tentativo {attempt+1} fallito ({path}): {ex}')
+            time.sleep(3)
+    raise last_ex
 
 def gh_get_sha(path):
     try:
@@ -177,7 +186,11 @@ def main():
     print(f'MISTRAL_KEY: {"presente" if MISTRAL_KEY else "ASSENTE"}')
 
     print('\nLeggo pdf_knowledge.json...')
-    raw, _ = gh_api_get('data/pdf_knowledge.json')
+    try:
+        raw, _ = gh_api_get('data/pdf_knowledge.json')
+    except Exception as ex:
+        print(f'ERRORE CRITICO: lettura pdf_knowledge.json fallita dopo 3 tentativi: {ex}')
+        sys.exit(1)
     knowledge = json.loads(raw)
     analisi = knowledge.get('analisi', [])
     print(f'PDF: {len(analisi)}')
