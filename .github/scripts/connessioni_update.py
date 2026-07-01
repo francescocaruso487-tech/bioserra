@@ -101,6 +101,17 @@ def titolo_safe(titolo):
     safe = re.sub(r'[^\w\-]', '_', titolo.strip())
     return re.sub(r'_+', '_', safe).strip('_')[:80]
 
+def sanitize_testo(t):
+    """Regola progetto: niente 'cannabis' nel testo generato/mostrato — sostituisce con 'pianta'."""
+    if not t or not isinstance(t, str):
+        return t
+    t = re.sub(r'\s*(\s*[Cc]annabis\s+sativa\s+L\.?\s*)', '', t)
+    t = re.sub(r'\bpianta\s+di\s+[Cc]annabis\b', 'pianta', t, flags=re.IGNORECASE)
+    t = t.replace('CANNABIS', 'PIANTA')
+    t = t.replace('Cannabis', 'Pianta')
+    t = t.replace('cannabis', 'pianta')
+    return t
+
 def mistral_chat(prompt, max_tokens=1000):
     if not MISTRAL_KEY: return None
     body = json.dumps({
@@ -302,6 +313,17 @@ def main():
         f'{e["source"]}|{e["target"]}': e
         for e in grafo.get('edges', [])
     }
+    # Rete di sicurezza: sanitizza le entry gia' esistenti (pulizia dati storici)
+    _sanit_edges = 0
+    for _e in edges_esistenti.values():
+        for _campo in ('concetto_a', 'concetto_b', 'descrizione'):
+            _prima = _e.get(_campo, '')
+            _dopo = sanitize_testo(_prima)
+            if _dopo != _prima:
+                _e[_campo] = _dopo
+                _sanit_edges += 1
+    if _sanit_edges:
+        print(f'  Sanitizzati {_sanit_edges} campi in edges esistenti (cannabis->pianta)')
     print(f'Edges esistenti: {len(edges_esistenti)}')
 
     # Carica concetti già estratti
@@ -310,6 +332,21 @@ def main():
         concetti_per_pdf = json.loads(raw_ce)
     except:
         concetti_per_pdf = {}
+    # Rete di sicurezza: sanitizza le entry gia' esistenti (pulizia dati storici)
+    _sanit_concetti = 0
+    for _v in concetti_per_pdf.values():
+        _t_prima = _v.get('titolo', '')
+        _t_dopo = sanitize_testo(_t_prima)
+        if _t_dopo != _t_prima:
+            _v['titolo'] = _t_dopo
+            _sanit_concetti += 1
+        _lista = _v.get('concetti', [])
+        _lista_dopo = [sanitize_testo(c) for c in _lista]
+        if _lista_dopo != _lista:
+            _v['concetti'] = _lista_dopo
+            _sanit_concetti += 1
+    if _sanit_concetti:
+        print(f'  Sanitizzati {_sanit_concetti} campi in concetti_completi esistenti (cannabis->pianta)')
     print(f'PDF con concetti estratti: {len(concetti_per_pdf)}')
 
     # Lista testi disponibili (PDF + web)
@@ -404,9 +441,9 @@ def main():
         print(f'  Concetti estratti: {len(concetti)}')
 
         concetti_per_pdf[a.get('id','')] = {
-            'titolo': titolo,
+            'titolo': sanitize_testo(titolo),
             'safe_id': safe_id,
-            'concetti': concetti,
+            'concetti': [sanitize_testo(c) for c in concetti],
             'n_chars': len(testo),
             'data': oggi
         }
@@ -414,7 +451,7 @@ def main():
         time.sleep(2)
 
     # Salva concetti_completi.json
-    if nuovi_concetti > 0 or not gh_get_sha('data/concetti_completi.json'):
+    if nuovi_concetti > 0 or _sanit_concetti > 0 or not gh_get_sha('data/concetti_completi.json'):
         sha_cc = gh_get_sha('data/concetti_completi.json')
         gh_put('data/concetti_completi.json',
                json.dumps(concetti_per_pdf, indent=2, ensure_ascii=False),
