@@ -2,8 +2,8 @@
 id: fertilizzazione_organica
 label: Fertilizzazione Organica
 categoria: nutrizione
-aggiornato: 2026-06-30
-pdf_count: 1
+aggiornato: 2026-07-01
+pdf_count: 0
 ---
 
 # Fertilizzazione Organica
@@ -12,22 +12,22 @@ pdf_count: 1
 # Fertilizzazione Organica
 
 ## Descrizione
-La **fertilizzazione organica** rappresenta un approccio sostenibile e rigenerativo alla nutrizione delle piante, basato sull’utilizzo di ammendanti naturali di origine animale, vegetale o microbica. A differenza dei fertilizzanti sintetici, questi materiali si decompongono gradualmente nel suolo, rilasciando nutrienti in forme assimilabili dalle piante e stimolando al contempo l’attività biologica del terreno. Il meccanismo d’azione si fonda sulla mineralizzazione operata da batteri e funghi (come *Trichoderma* o *Mycorrhizae*), che trasformano composti complessi (proteine, chitina, cellulosa) in sostanze semplici (amminoacidi, fosfati, nitrati) accessibili alle radici. Questo processo non solo nutre la pianta, ma arricchisce anche il **Living Soil** con sostanza organica stabile (humus), migliorando struttura, capacità di scambio cationico (CEC) e resilienza agli stress idrici.
+La **fertilizzazione organica** rappresenta un approccio sostenibile e rigenerativo alla nutrizione delle piante, basato sull’utilizzo di ammendanti naturali derivati da fonti animali, vegetali o microbiche. A differenza dei fertilizzanti sintetici, questi materiali si decompongono nel suolo attraverso processi biologici mediati da batteri, funghi e organismi del suolo (come i lombrichi), rilasciando nutrienti in modo graduale e bilanciato. Il meccanismo d’azione si fonda sulla **mineralizzazione** (trasformazione della materia organica in nutrienti assimilabili) e sulla **umificazione** (formazione di humus stabile che migliora struttura e capacità di scambio cationico del suolo). Questo processo non solo nutre le piante, ma **rigenera il suolo**, aumentando la biodiversità microbica e la resilienza agli stress ambientali.
 
-In serra outdoor a Caserta (41°N), dove le temperature estive possono superare i 35°C e l’umidità relativa fluttua tra il 60-80%, la fertilizzazione organica assume un ruolo chiave per mitigare la perdita di nutrienti per lisciviazione o volatilizzazione. I materiali organici, infatti, agiscono come "spugne" che trattengono acqua e nutrienti, riducendo la necessità di interventi frequenti. Inoltre, la loro decomposizione genera calore metabolico, contribuendo a mantenere una temperatura del suolo più stabile, fondamentale per l’assorbimento radicale in condizioni di stress termico.
+In un sistema **Living Soil** come quello della serra outdoor a Caserta (41°N), la fertilizzazione organica è essenziale per mantenere un equilibrio nutrizionale ottimale durante le fasi di **vegetazione** e **fioritura**. I nutrienti organici, infatti, vengono rilasciati in sincronia con i fabbisogni delle piante, evitando accumuli dannosi (come quelli di sali tipici dei fertilizzanti chimici). Inoltre, la presenza di microrganismi benefici (es. *Trichoderma*, *Mycorrhizae*) potenzia l’assorbimento dei nutrienti e protegge le radici da patogeni. Questo metodo è particolarmente adatto al clima mediterraneo della Campania, dove le alte temperature estive possono accelerare la decomposizione della materia organica, richiedendo apporti frequenti ma controllati.
 
 ## Come si applica in serra
+Per una serra outdoor a Caserta in regime **Living Soil**, la fertilizzazione organica segue un protocollo mirato a massimizzare l’efficienza dei nutrienti e la salute del suolo. Ecco i passaggi pratici:
 
-1. **Scelta dei materiali**:
-   - **Fase di vegetazione**: Utilizzare farine a rapido rilascio azotato (es. **farina di sangue** 12-14% N) o miscele bilanciate (es. **farina di pesce** 5-7% N, 2-3% P₂O₅, 1% K₂O).
-   - **Fase di fioritura**: Preferire fonti ricche in fosforo e potassio (es. **farina d’osso** 20-30% P₂O₅, **cenere di legna** 0-0-5% K₂O) o alghe (es. **guano di pipistrello** 10-12% N, 12-15% P₂O₅).
+1. **Scelta degli ammendanti**:
+   - **Fase di vegetazione (1-2 mesi post-germinazione)**: Utilizzare farine a rapido rilascio come **sangue secco** (13-0-0, ricco in azoto) o **farina di pesce** (5-1-1, con azoto organico e micronutrienti). Dose: **50-100 g/m²** ogni 2 settimane.
+   - **Fase di fioritura (dalla pre-fioritura in poi)**: Integrare con **farina d’osso** (3-15-0, fosforo e calcio) o **guano** (10-4-1, ricco in fosforo e potassio). Dose: **30-80 g/m²** ogni 10-15 giorni.
+   - *Opzione avanzata*: Aggiungere **compost maturo** (2-1-1) o **humus di lombrico** (1-0-0) come base per migliorare la struttura del suolo.
 
-2. **Dosaggio e frequenza**:
-   - Applicare **1-2 cucchiai (10-20 g/m²)** di farina organica per pianta, distribuiti in un cerchio di 10 cm dal fusto.
-   - **Intervallo**: Ogni **10-14 giorni**, evitando periodi di siccità estrema o piogge intense (che dilaverebbero i nutrienti).
-   - **Metodo**: Mescolare superficialmente (1-2 cm di profondità) con una zappetta o un forcone, poi irrigare con **acqua magnetizzata** (vedi sinergie) per accelerare la mineralizzazione.
+2. **Preparazione e applicazione**:
+   - **Miscelare** gli ammendanti con uno strato superficiale di **1-2 cm** di suolo, evitando il contatto diretto con le radici per prevenire ustioni.
+   - **Irrigare leggermente** dopo l’applicazione per attivare i microrganismi decompositori (evitare ristagni d’acqua).
+   - **Alternare le fonti** per evitare squilibri (es. una settimana farina di pesce, quella successiva farina d’osso).
 
-3. **Monitoraggio e adattamento**:
-   - **Colore delle foglie**: Foglie gialle (clorosi) indicano carenza di azoto; foglie scure e arricciate suggeriscono eccesso di fosforo o stress idrico.
-   - **pH del suolo**: Mantenere tra **6.2-6.8** (ideale per l’assorbimento dei nutrienti organici). Se necessario, correggere con **calcare dolomitico** (per alcalinizzare) o **zolfo** (per acidificare).
-   - **Attività biologica**: Verificare la presenza di lombrichi e micorrize dopo 3
+3. **Monitoraggio e aggiustamenti**:
+   - **Osservare il colore delle foglie**: Foglie gialle (clorosi) indicano carenza di azoto; foglie scure o arrossate possono segnalare eccesso di fosforo
