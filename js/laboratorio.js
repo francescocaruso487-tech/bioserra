@@ -460,21 +460,29 @@ function praticaLoadAttive() {
   try { return JSON.parse(localStorage.getItem('bioserra_pratiche_attive') || '{}'); }
   catch(e) { return {}; }
 }
-function praticaIsAttiva(nome) {
+// Rev.18: pratiche unificate (tecniche + esperimenti attivi + proposte) in un solo
+// sistema ON/OFF. Default per tipo se l'utente non ha mai toccato quella pratica:
+// tecnica ed esp_attivo partono ON (sono gia' "in uso"), esp_proposta parte OFF
+// (e' un suggerimento non ancora scelto dall'utente).
+function praticaDefaultPerTipo(tipo) {
+  return tipo === 'esp_proposta' ? false : true;
+}
+function praticaIsAttiva(nome, tipo) {
   var map = praticaLoadAttive();
-  var v = map[praticaFeedbackKey(nome)];
-  return v !== false; // default: attiva
+  var k = praticaFeedbackKey(nome);
+  if (Object.prototype.hasOwnProperty.call(map, k)) return map[k] !== false;
+  return praticaDefaultPerTipo(tipo);
 }
 async function praticaToggleAttiva() {
   if (!_labPraticaFeedbackNome) return;
   var k = praticaFeedbackKey(_labPraticaFeedbackNome);
   if (!labPraticheAttiveData || !labPraticheAttiveData.attive) labPraticheAttiveData = { attive: {} };
-  var nuovo = !praticaIsAttiva(_labPraticaFeedbackNome);
+  var nuovo = !praticaIsAttiva(_labPraticaFeedbackNome, _labPraticaFeedbackTipo);
   labPraticheAttiveData.attive[k] = nuovo;
   try { localStorage.setItem('bioserra_pratiche_attive', JSON.stringify(labPraticheAttiveData.attive)); } catch(e) {}
   // Aggiorna subito la UI (ottimistico), poi salva su GitHub in background
   var area = document.getElementById('lab-pratica-toggle-area');
-  if (area) area.innerHTML = praticaToggleHTML(_labPraticaFeedbackNome);
+  if (area) area.innerHTML = praticaToggleHTML(_labPraticaFeedbackNome, _labPraticaFeedbackTipo);
   if (typeof labRenderPratiche === 'function') labRenderPratiche();
   await praticaSalvaGitHub();
 }
@@ -509,14 +517,15 @@ async function praticaSalvaGitHub() {
     return false;
   }
 }
-function praticaToggleHTML(nome) {
-  var on = praticaIsAttiva(nome);
+function praticaToggleHTML(nome, tipo) {
+  var on = praticaIsAttiva(nome, tipo);
   return '<button onclick="praticaToggleAttiva()" style="width:100%;padding:9px;margin-bottom:10px;border-radius:10px;font-size:12px;font-weight:700;cursor:pointer;'
     + (on ? 'background:rgba(76,175,118,0.12);border:1px solid rgba(76,175,118,0.3);color:var(--green3)'
           : 'background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);color:var(--text3)')
-    + '">' + (on ? '✅ Attiva per tutte e 10 le piante — tocca per disattivare' : '⏸️ Disattivata — tocca per riattivare') + '</button>';
+    + '">' + (on ? '\u2705 Attiva per tutte e 10 le piante \u2014 tocca per disattivare' : '\u23F8\uFE0F Disattivata \u2014 tocca per riattivare') + '</button>';
 }
 var _labPraticaFeedbackNome = null;
+var _labPraticaFeedbackTipo = null;
 function praticaVota(voto) {
   if (!_labPraticaFeedbackNome) return;
   var map = praticaLoadFeedback();
@@ -577,19 +586,26 @@ function labBuildPratiche() {
     return Math.min(hits * 4, 20); // max +20 punti
   }
 
-  // 1. Esperimenti attivi (priorità massima)
+  // 1. Esperimenti attivi (priorità massima) — Rev.18: pratiche unificate,
+  // anche questi ora passano da praticaIsAttiva (default ON) invece di essere
+  // sempre considerati attivi a prescindere dal toggle utente.
   if (labEspData) {
     var attivi = labEspData.esperimenti_attivi || labEspData.attivi || [];
     attivi.forEach(function(e, i) {
-      var boost = brainBoost((e.nome||'') + ' ' + (e.descrizione||'') + ' ' + (e.obiettivo||''));
+      var nomeE = e.nome || '';
+      var boost = brainBoost((nomeE) + ' ' + (e.descrizione||'') + ' ' + (e.obiettivo||''));
+      var attivaE = praticaIsAttiva(nomeE, 'esp_attivo');
+      var rilE = 95 + boost + praticaFeedbackBoost(nomeE);
+      if (!attivaE) rilE -= 1000; // resta in lista ma in fondo
       pratiche.push({
         id: 'esp_att_' + i,
-        nome: e.nome || '',
+        nome: nomeE,
         categoria: e.categoria || 'tecnica di coltivazione',
         descrizione: e.obiettivo || e.descrizione || '',
-        badge: 'ATTIVA',
+        badge: null,
         badgeColor: 'var(--green3)',
-        rilevanza: 95 + boost + praticaFeedbackBoost(e.nome),
+        rilevanza: rilE,
+        attiva: attivaE,
         tipo: 'esp_attivo',
         data: e,
         idx: i
@@ -605,7 +621,7 @@ function labBuildPratiche() {
   // (praticaIsAttiva) resta visibile ma scende in fondo alla lista.
   labElTecniche.forEach(function(t, i) {
     var nomeT = t.nome || t.label || '';
-    var attiva = praticaIsAttiva(nomeT);
+    var attiva = praticaIsAttiva(nomeT, 'tecnica');
     var ril = t.rilevanza || 5;
     ril += brainBoost((nomeT) + ' ' + (t.descrizione || t.desc || '') + ' ' + (t.categoria || ''));
     ril += praticaFeedbackBoost(nomeT);
@@ -615,7 +631,7 @@ function labBuildPratiche() {
       nome: nomeT,
       categoria: t.categoria || 'elettrocultura',
       descrizione: t.descrizione || t.desc || '',
-      badge: null, // Rev.18: rimosso badge "N PDF" (poco utile) — sostituito da badge stato ON/OFF nel render
+      badge: null,
       badgeColor: 'var(--el-violet)',
       rilevanza: ril,
       attiva: attiva,
@@ -629,19 +645,28 @@ function labBuildPratiche() {
   // ora mostrate TUTTE sempre (la rotazione nascondeva la maggior parte
   // delle proposte disponibili). L'ordinamento finale per rilevanza
   // (brainBoost + feedback) le organizza comunque in modo sensato.
+  // Rev.18: pratiche unificate — anche le proposte ora sono un semplice
+  // toggle ON/OFF (default OFF finché l'utente non le attiva), niente
+  // più badge CONSIGLIATA/SUGGERITA: l'ordinamento per rilevanza (che
+  // include comunque il brainBoost) resta il criterio di priorità.
   if (labEspData) {
     var tutte = labEspData.proposte || labEspData.esperimenti_disponibili || [];
     tutte.forEach(function(e, i) {
-      var boost = brainBoost((e.nome||'') + ' ' + (e.descrizione||'') + ' ' + (e.obiettivo||'') + ' ' + (e.categoria||''));
-      var fbBoost = praticaFeedbackBoost(e.nome);
+      var nomeP = e.nome || '';
+      var boost = brainBoost((nomeP) + ' ' + (e.descrizione||'') + ' ' + (e.obiettivo||'') + ' ' + (e.categoria||''));
+      var fbBoost = praticaFeedbackBoost(nomeP);
+      var attivaP = praticaIsAttiva(nomeP, 'esp_proposta');
+      var rilP = 40 + boost + fbBoost;
+      if (!attivaP) rilP -= 1000; // resta in lista ma in fondo finché non viene attivata
       pratiche.push({
         id: 'esp_prop_' + i,
-        nome: e.nome || '',
+        nome: nomeP,
         categoria: e.categoria || 'tecnica di coltivazione',
         descrizione: e.obiettivo || e.descrizione || '',
-        badge: boost > 0 ? '⚡ CONSIGLIATA' : 'SUGGERITA',
-        badgeColor: boost > 0 ? 'var(--green3)' : 'rgba(0,180,255,0.5)',
-        rilevanza: 40 + boost + fbBoost,
+        badge: null,
+        badgeColor: 'var(--el-blue)',
+        rilevanza: rilP,
+        attiva: attivaP,
         tipo: 'esp_proposta',
         data: e,
         idx: i
@@ -687,8 +712,8 @@ function labRenderPratiche() {
   var h = '';
   pratiche.slice(0, 5).forEach(function(p, i) {
     var catColor = labCatColor(p.categoria);
-    var isAttiva = p.tipo === 'esp_attivo' || (p.tipo === 'tecnica' && p.attiva === true);
-    var isOff = p.tipo === 'tecnica' && p.attiva === false;
+    var isAttiva = p.attiva === true;
+    var isOff = p.attiva === false;
     h += '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-left:2px solid ' + catColor + ';border-radius:0 10px 10px 0;padding:10px 12px;margin-bottom:7px;cursor:pointer;transition:background 0.2s;' + (isOff ? 'opacity:0.5' : '') + '" onclick="labPopupPratica(\'' + p.id + '\')">';
     h += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">';
     h += '<div style="flex:1">';
@@ -698,7 +723,6 @@ function labRenderPratiche() {
     h += '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0">';
     if (isAttiva) h += '<span style="font-size:9px;background:rgba(76,175,118,0.2);color:var(--green3);border-radius:4px;padding:2px 6px;font-weight:700">\u2705 ATTIVA</span>';
     if (isOff) h += '<span style="font-size:9px;background:rgba(255,255,255,0.08);color:var(--text3);border-radius:4px;padding:2px 6px">\u23F8\uFE0F disattivata</span>';
-    if (p.badge && !isAttiva) h += '<span style="font-size:9px;background:rgba(155,109,255,0.15);color:var(--el-violet);border-radius:4px;padding:2px 6px">' + labEsc(p.badge) + '</span>';
     h += '<span style="font-size:9px;color:' + catColor + ';opacity:0.8">' + labEsc(p.categoria) + '</span>';
     h += '</div></div></div>';
   });
@@ -727,25 +751,18 @@ function labPopupPratica(pid) {
   h += '<div style="font-size:9px;color:' + catColor + ';font-weight:700;letter-spacing:1px;margin-bottom:4px">' + labEsc(p.categoria.toUpperCase()) + '</div>';
   h += '<div style="font-size:19px;font-weight:700;color:var(--text);line-height:1.3">' + labEsc(p.nome) + '</div>';
   h += '</div>';
-  if (p.tipo === 'esp_attivo') {
-    h += '<span style="font-size:10px;background:rgba(76,175,118,0.15);color:var(--green3);border-radius:8px;padding:4px 10px;font-weight:700;flex-shrink:0">\u2705 ATTIVA</span>';
-  } else if (p.tipo === 'tecnica' && p.badge) {
-    h += '<span style="font-size:10px;background:rgba(155,109,255,0.12);color:var(--el-violet);border-radius:8px;padding:4px 10px;flex-shrink:0">\uD83D\uDCC4 ' + labEsc(p.badge) + '</span>';
-  }
+  h += (p.attiva
+    ? '<span style="font-size:10px;background:rgba(76,175,118,0.15);color:var(--green3);border-radius:8px;padding:4px 10px;font-weight:700;flex-shrink:0">\u2705 ATTIVA</span>'
+    : '<span style="font-size:10px;background:rgba(255,255,255,0.06);color:var(--text3);border-radius:8px;padding:4px 10px;font-weight:700;flex-shrink:0">\u23F8\uFE0F DISATTIVATA</span>');
   h += '</div>';
 
   // (4) Area feedback 👍/👎
   _labPraticaFeedbackNome = p.nome;
+  _labPraticaFeedbackTipo = p.tipo;
   h += '<div id="lab-pratica-feedback-area">' + praticaFeedbackHTML(p.nome) + '</div>';
 
-  // Toggle attiva/disattiva
-  if (p.tipo === 'esp_attivo') {
-    h += '<button onclick="labEspDisattiva(' + p.idx + ');labPopupClose()" style="width:100%;padding:8px;margin-bottom:14px;background:rgba(224,82,82,0.1);border:1px solid rgba(224,82,82,0.3);border-radius:10px;color:#e05252;font-size:12px;font-weight:700;cursor:pointer">\u23F9 Disattiva questa pratica</button>';
-  } else if (p.tipo === 'esp_proposta') {
-    h += '<button onclick="labEspAttiva(' + p.idx + ');labPopupClose()" style="width:100%;padding:8px;margin-bottom:14px;background:rgba(76,175,118,0.12);border:1px solid rgba(76,175,118,0.3);border-radius:10px;color:var(--green3);font-size:12px;font-weight:700;cursor:pointer">\u25B6 Attiva questa pratica</button>';
-  } else if (p.tipo === 'tecnica') {
-    h += '<div id="lab-pratica-toggle-area">' + praticaToggleHTML(p.nome) + '</div>';
-  }
+  // Toggle attiva/disattiva — Rev.18: unico bottone ON/OFF per tutti i tipi di pratica
+  h += '<div id="lab-pratica-toggle-area">' + praticaToggleHTML(p.nome, p.tipo) + '</div>';
 
   // Sezione descrizione
   var desc = d.descrizione || d.desc || '';
@@ -871,25 +888,17 @@ function labPopupAllPratiche() {
   h += '<div style="font-size:9px;color:var(--text3);margin-bottom:12px">Tutte le pratiche estratte da PDF e siti \u00B7 ordinate per rilevanza</div>';
 
   // Filtri rapidi
-  h += '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px" id="pratiche-filtri">';
-  h += '<button onclick="labFiltriPratiche(\'tutti\',this)" style="font-size:10px;padding:4px 10px;border-radius:20px;border:1px solid var(--el-blue);color:var(--el-blue);background:rgba(0,180,255,0.1);cursor:pointer">Tutte</button>';
-  h += '<button onclick="labFiltriPratiche(\'attive\',this)" style="font-size:10px;padding:4px 10px;border-radius:20px;border:1px solid var(--green3);color:var(--green3);background:transparent;cursor:pointer">\u2705 Attive</button>';
-  h += '<button onclick="labFiltriPratiche(\'tecniche\',this)" style="font-size:10px;padding:4px 10px;border-radius:20px;border:1px solid var(--el-violet);color:var(--el-violet);background:transparent;cursor:pointer">\uD83D\uDCC4 Tecniche</button>';
-  h += '<button onclick="labFiltriPratiche(\'suggerite\',this)" style="font-size:10px;padding:4px 10px;border-radius:20px;border:1px solid var(--text3);color:var(--text3);background:transparent;cursor:pointer">\uD83D\uDCA1 Suggerite</button>';
-  h += '</div>';
-
   h += '<div id="pratiche-lista">';
   pratiche.forEach(function(p) {
     var catColor = labCatColor(p.categoria);
-    var isAttiva = p.tipo === 'esp_attivo' || (p.tipo === 'tecnica' && p.attiva === true);
-    var isOff = p.tipo === 'tecnica' && p.attiva === false;
-    h += '<div class="prat-item" data-tipo="' + p.tipo + '" data-attiva="' + (isAttiva ? '1' : '0') + '" style="border-left:2px solid ' + catColor + ';border-radius:0 10px 10px 0;padding:10px 12px;margin-bottom:8px;cursor:pointer;background:rgba(255,255,255,0.02);' + (isOff ? 'opacity:0.5' : '') + '" onclick="labPopupClose();setTimeout(function(){labPopupPratica(\'' + p.id + '\');},60)">';
+    var isAttiva = p.attiva === true;
+    var isOff = p.attiva === false;
+    h += '<div class="prat-item" style="border-left:2px solid ' + catColor + ';border-radius:0 10px 10px 0;padding:10px 12px;margin-bottom:8px;cursor:pointer;background:rgba(255,255,255,0.02);' + (isOff ? 'opacity:0.5' : '') + '" onclick="labPopupClose();setTimeout(function(){labPopupPratica(\'' + p.id + '\');},60)">';
     h += '<div style="display:flex;justify-content:space-between;align-items:center">';
     h += '<div><div style="font-size:13px;font-weight:700;color:var(--text)">' + labEsc(p.nome) + '</div>';
     h += '<div style="font-size:10px;color:' + catColor + ';margin-top:2px">' + labEsc(p.categoria) + '</div></div>';
     if (isAttiva) h += '<span style="font-size:9px;background:rgba(76,175,118,0.2);color:var(--green3);border-radius:4px;padding:2px 6px;font-weight:700">\u2705 ATTIVA</span>';
     else if (isOff) h += '<span style="font-size:9px;background:rgba(255,255,255,0.08);color:var(--text3);border-radius:4px;padding:2px 6px">\u23F8\uFE0F disattivata</span>';
-    else if (p.badge) h += '<span style="font-size:9px;color:var(--text3)">' + labEsc(p.badge) + '</span>';
     h += '</div>';
     if (p.descrizione) h += '<div style="font-size:11px;color:var(--text3);margin-top:4px;line-height:1.4">' + labEsc(p.descrizione.substring(0,80)) + '\u2026</div>';
     h += '</div>';
@@ -897,25 +906,6 @@ function labPopupAllPratiche() {
   h += '</div>';
 
   labPopupOpen(h);
-}
-
-// Filtro pratiche nel popup
-function labFiltriPratiche(tipo, btn) {
-  var items = document.querySelectorAll('.prat-item');
-  items.forEach(function(el) {
-    var t = el.getAttribute('data-tipo');
-    var attiva = el.getAttribute('data-attiva') === '1';
-    // FIX: prima "Attive" mostrava solo esperimenti attivati (tipo esp_attivo),
-    // ignorando le tecniche accese col toggle -> sparivano dal filtro pur essendo ON.
-    var show = tipo === 'tutti' 
-      || (tipo === 'attive' && attiva)
-      || (tipo === 'tecniche' && t === 'tecnica')
-      || (tipo === 'suggerite' && t === 'esp_proposta');
-    el.style.display = show ? 'block' : 'none';
-  });
-  // Reset stile bottoni
-  document.querySelectorAll('#pratiche-filtri button').forEach(function(b){ b.style.opacity='0.5'; });
-  if (btn) btn.style.opacity = '1';
 }
 
 // Alias funzioni legacy — NON rinominare
