@@ -15,7 +15,7 @@
 <link rel="apple-touch-icon" sizes="192x192" href="/bioserra/assets/icon-192.png">
 <link rel="apple-touch-icon" sizes="512x512" href="/bioserra/assets/icon-512.png">
 <title>BioSerra</title>
-<link rel="stylesheet" href="/bioserra/css/style.css?v=1782295403">
+<link rel="stylesheet" href="/bioserra/css/style.css?v=1782896203">
 <!-- (17) jsPDF per export report PDF fine ciclo, caricato on-demand a basso impatto -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
 </head>
@@ -1186,11 +1186,11 @@
 
 
 <!-- Scripts BioSerra -->
-<script src="/bioserra/js/app.js?v=1782295403"></script>
-<script src="/bioserra/js/piante.js?v=1782295403"></script>
-<script src="/bioserra/js/ambiente.js?v=1782295403"></script>
-<script src="/bioserra/js/laboratorio.js?v=1782295403"></script>
-<script src="/bioserra/js/config.js?v=1782295403"></script>
+<script src="/bioserra/js/app.js?v=1782896203"></script>
+<script src="/bioserra/js/piante.js?v=1782896203"></script>
+<script src="/bioserra/js/ambiente.js?v=1782896203"></script>
+<script src="/bioserra/js/laboratorio.js?v=1782896203"></script>
+<script src="/bioserra/js/config.js?v=1782896203"></script>
 
 
 
@@ -1274,22 +1274,14 @@
 </div>
 
 <script>
-// BioSerra v6 — disinstalla tutti i service worker per forzare aggiornamento
+// BioSerra v7 — registra il service worker per il caching offline reale.
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.getRegistrations().then(function(registrations) {
-    for (var reg of registrations) {
-      reg.unregister();
-      console.log('[BioSerra] SW disinstallato:', reg.scope);
-    }
-    if (registrations.length > 0) {
-      console.log('[BioSerra] Cache pulita, ricarico...');
-      caches.keys().then(function(keys) {
-        return Promise.all(keys.map(function(k) { return caches.delete(k); }));
-      }).then(function() {
-        // Non ricaricare automaticamente per evitare loop
-        console.log('[BioSerra] Tutte le cache eliminate');
-      });
-    }
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/bioserra/sw.js').then(function(reg) {
+      console.log('[BioSerra] SW registrato:', reg.scope);
+    }).catch(function(err) {
+      console.error('[BioSerra] Registrazione SW fallita:', err);
+    });
   });
 }
 </script>
