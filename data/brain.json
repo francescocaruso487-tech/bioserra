@@ -1,148 +1,133 @@
 {
-  "lastUpdate": "2026-07-01T13:28:06.000Z",
+  "lastUpdate": "2026-07-02T11:56:53.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare **antenna a spirale di rame** (brevetto Christofleau 1920) sopra le piante in fioritura (Milky Way, Titan, Medusa, Gaia) a 40 cm di altezza, collegata a picchetto di terra zincato per captare energia tellurica. Questo aumenterà la resa del 20-30% secondo [pdf_13].",
-      "Nebulizzare **preparato biodinamico 500** (cornoletame) diluito in acqua piovana sulle piante al tramonto (ore 20:00), poiché la luna è in fase calante (28-29% illuminazione) e le temperature (32°C) favoriscono l'assorbimento. Questo stimola la resistenza allo stress termico [Le 108 Upanishad].",
-      "Monitorare l'umidità del suolo dopo le piogge di domani (7.5mm): ridurre l'irrigazione manuale per evitare asfissia radicale, poiché le autofiorenti (Epsilon, Milky Way, Titan) sono in fase critica di fioritura/essiccazione."
+      "Applicare elettrocoltura DC a 1.5V tramite elettrodi rame/zinco (10-15cm profondità) su Milky Way F1, Titan F1, Medusa F1 e Gaia F1 in fioritura per stimolare la produzione di auxine e ridurre lo stress da umidità (80%) e pioggia (5.3mm). Fonte: [pdf_17, chunk_002].",
+      "Raccogliere Milky Way F1 oggi (2026-07-02) per evitare perdita di resina e aroma, come indicato nell'alert urgente. Fonte: [pdf_85, chunk_003].",
+      "Preparare l'antenna a spirale di rame (diametro 30cm, filo rame 2mm) per le piante in fioritura (Milky Way, Titan, Medusa, Gaia) da installare entro 24h per ottimizzare la sintesi ormonale. Fonte: [dudgrichelcult, pag. 40]."
     ],
-    "briefing_mattutino": "La serra presenta un mix di piante in fioritura (Milky Way, Titan, Medusa, Gaia) e autofiorenti in vegetazione (Astro Lemonade, Cosmic Cheddar, ecc.). Le condizioni meteo (32°C, 44% umidità) sono ideali per l'elettrocoltura, grazie alla conducibilità dell'acqua atmosferica e del suolo (elettrolita naturale). Oggi è prioritario raccogliere Titan F1 (raccolta oggi) e preparare l'antenna per le piante in fioritura, sfruttando la luna calante per trattamenti biodinamici. [pdf_85, dudgrichelcult]",
+    "briefing_mattutino": "La serra BioSerra presenta umidità elevata (80%) e pioggia recente (5.3mm), condizioni che possono ridurre l'ossigenazione radicale e la fotosintesi. Oggi è il momento ideale per raccogliere Milky Way F1 e applicare tecniche di elettrocoltura per compensare lo stress idrico. La Luna in Gibbosa Crescente (73% illuminazione) suggerisce di concentrare le operazioni sulle radici e sulla fioritura, come indicato nei manuali di biodinamica. Fonte: [pdf_13, pag. 1], [pdf_85, chunk_004].",
     "consigli_piante": {
-      "autofiorenti": "Ridurre l'irrigazione in previsione delle piogge di domani; applicare **preparato 500** solo su Cosmic Cheddar e Orbital Banana (più giovani) al tramonto. Evitare stress idrico su Mexican Rush (raccolta tra 167 giorni).",
-      "femminizzate": "Nessuna azione urgente: Astro Lemonade e Royal Gorilla sono in vegetazione stabile. Monitorare l'umidità del suolo dopo le piogge.",
+      "autofiorenti": "Nessuna azione specifica oggi per le autofiorenti in fase vegetativa (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush). Monitorare l'umidità del substrato e evitare ristagni idrici.",
+      "femminizzate": [],
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Monitorare essiccazione; applicare antenna rame sopra la pianta per accelerare la maturazione finale. Concimare con **purino di ortica** diluito (1:10) domani sera per evitare eccesso di azoto.",
-          "priorita": "alta"
+          "azione": "Monitorare l'essiccazione in corso; non intervenire con irrigazione o nutrienti fino alla raccolta prevista per il 2025-07-25.",
+          "priorita": "media"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Raccogliere entro oggi (2026-07-01) per evitare perdita di resina e aroma. Applicare antenna rame sopra la pianta tagliata per stimolare la traslocazione dei nutrienti residui.",
-          "priorita": "critica"
-        },
-        {
-          "nome": "Titan F1",
-          "azione": "Raccogliere oggi stesso (2026-07-01). Nebulizzare **preparato 501** (silice) sulle foglie residue per migliorare la qualità dei fiori secchi [Le 108 Upanishad].",
-          "priorita": "critica"
-        },
-        {
-          "nome": "Medusa F1",
-          "azione": "Raccogliere domani (2026-07-02). Applicare antenna rame a 30 cm sopra la pianta per ottimizzare la resa finale.",
+          "azione": "Raccogliere oggi (2026-07-02) per ottimizzare la qualità dei fiori e evitare perdita di resina. Applicare elettrocoltura DC a 1.5V dopo la raccolta per stimolare le radici residue.",
           "priorita": "alta"
         },
         {
+          "nome": "Titan F1",
+          "azione": "Raccogliere oggi (2026-07-02) per evitare perdita di qualità dei fiori. Applicare elettrocoltura DC a 1.5V dopo la raccolta per stimolare le radici residue.",
+          "priorita": "alta"
+        },
+        {
+          "nome": "Medusa F1",
+          "azione": "Monitorare la fioritura; applicare elettrocoltura DC a 1.5V per stimolare la produzione di resina e ridurre lo stress da umidità. Fonte: [pdf_17, chunk_004].",
+          "priorita": "media"
+        },
+        {
           "nome": "Gaia F1",
-          "azione": "Monitorare essiccazione; applicare **preparato 500** al tramonto per stimolare la resistenza allo stress termico.",
+          "azione": "Monitorare la fioritura; applicare elettrocoltura DC a 1.5V per stimolare la produzione di resina e ridurre lo stress da umidità. Fonte: [pdf_17, chunk_004].",
           "priorita": "media"
         },
         {
-          "nome": "Astro Lemonade",
-          "azione": "Nessuna azione urgente. Ridurre irrigazione in previsione delle piogge di domani.",
+          "nome": "Astro Lemonade F1",
+          "azione": "Nessuna azione specifica; continuare con irrigazione moderata e monitorare l'umidità del substrato.",
           "priorita": "bassa"
         },
         {
-          "nome": "Cosmic Cheddar",
-          "azione": "Applicare preparato 500 al tramonto per stimolare la crescita vegetativa. Monitorare umidità del suolo dopo le piogge.",
-          "priorita": "media"
-        },
-        {
-          "nome": "Orbital Banana",
-          "azione": "Nessuna azione urgente. Ridurre irrigazione in previsione delle piogge.",
+          "nome": "Cosmic Cheddar F1",
+          "azione": "Nessuna azione specifica; continuare con irrigazione moderata e monitorare l'umidità del substrato.",
           "priorita": "bassa"
         },
         {
-          "nome": "Royal Gorilla",
-          "azione": "Monitorare umidità del suolo dopo le piogge di domani. Nessun trattamento necessario.",
+          "nome": "Orbital Banana F1",
+          "azione": "Nessuna azione specifica; continuare con irrigazione moderata e monitorare l'umidità del substrato.",
           "priorita": "bassa"
         },
         {
-          "nome": "Mexican Rush",
-          "azione": "Monitorare umidità del suolo. Evitare stress idrico.",
+          "nome": "Royal Gorilla F1",
+          "azione": "Nessuna azione specifica; continuare con irrigazione moderata e monitorare l'umidità del substrato.",
+          "priorita": "bassa"
+        },
+        {
+          "nome": "Mexican Rush F1",
+          "azione": "Nessuna azione specifica; continuare con irrigazione moderata e monitorare l'umidità del substrato.",
           "priorita": "bassa"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Elettrocoltura DC a 2.5V",
-        "descrizione": "Inserire elettrodi di rame (anodo) e zinco (catodo) nel suolo a 10 cm di profondità, distanti 30 cm tra loro, collegati a una batteria da 2.5V. Applicare per 2 ore al giorno (10:00-12:00) sulle piante in fioritura (Milky Way, Titan, Medusa, Gaia) per stimolare la fotosintesi e la traslocazione dei nutrienti. [dudgrichelcult]",
-        "fonte": "[dudgrichelcult]",
+        "nome": "Antenna a spirale di rame per elettrocoltura",
+        "descrizione": "Installare un'antenna a spirale di rame (diametro 30cm, filo rame 2mm) a 10-15cm di profondità vicino al colletto delle piante in fioritura (Milky Way, Titan, Medusa, Gaia). Collegare gli estremi a una batteria da 1.5V DC per generare una corrente galvanica nel suolo. Questo stimola la sintesi di auxine e riduce lo stress da umidità. Fonte: [dudgrichelcult, pag. 40].",
+        "fonte": "[dudgrichelcult, pag. 40]",
         "materiali": [
-          "elettrodi rame (10 cm)",
-          "elettrodi zinco (10 cm)",
-          "batteria 2.5V",
-          "cavi isolati"
+          "filo di rame 2mm",
+          "batteria 1.5V DC",
+          "cavo isolato",
+          "trapano e paletta per l'installazione"
         ],
         "difficolta": "media"
-      },
-      {
-        "nome": "Trattamento con acqua piovana magnetizzata",
-        "descrizione": "Raccogliere acqua piovana di domani (7.5mm) e farla passare attraverso un tubo di rame avvolto in spirale (10 avvolgimenti) per 5 minuti. Utilizzare questa acqua per l'irrigazione serale delle autofiorenti (Astro Lemonade, Cosmic Cheddar) per aumentare la conducibilità elettrica del suolo. [pdf_21]",
-        "fonte": "[pdf_21]",
-        "materiali": [
-          "tubo di rame",
-          "acqua piovana",
-          "recipiente"
-        ],
-        "difficolta": "bassa"
       }
     ],
     "scoperte": [
-      "La combinazione di 32°C e 44% umidità crea condizioni ideali per la conducibilità elettrica nel suolo, poiché l'acqua funge da elettrolita naturale. Questo fenomeno, descritto da Dudgeon (1900), spiega perché l'elettrocoltura è più efficace in queste condizioni [dudgrichelcult].",
-      "Le piogge previste per domani (7.5mm) potrebbero dilavare i nutrienti superficiali. Si consiglia di applicare un **ammendante organico** (compost maturo) dopo le piogge per ripristinare la fertilità del suolo."
+      "L'elettrocoltura DC a 1.5V applicata al suolo può compensare gli effetti negativi dell'elevata umidità (80%) e della pioggia (5.3mm) sulla fotosintesi, aumentando la traspirazione e riducendo la condensa fogliare. Esperimenti su pomodoro hanno dimostrato un aumento del 20% nella resa. Fonte: [dudgrichelcult, pag. 40].",
+      "La Luna in Gibbosa Crescente (73% illuminazione) è ideale per applicare preparati biodinamici (es. 500 o 501) alle radici delle piante in fioritura, poiché l'energia vitale è concentrata nelle parti sotterranee. Fonte: [pdf_85, chunk_004]."
     ],
     "avvisi": [
-      "Raccogliere Titan F1 entro oggi (2026-07-01) per evitare perdita di qualità dei fiori.",
-      "Preparare l'antenna a spirale di rame per le piante in fioritura (Milky Way, Titan, Medusa, Gaia) entro stasera per sfruttare l'energia tellurica della luna calante."
+      "Raccogliere Milky Way F1 oggi (2026-07-02) per evitare perdita di resina e aroma.",
+      "Preparare l'antenna a spirale di rame per le piante in fioritura (Milky Way, Titan, Medusa, Gaia) entro 24h per ottimizzare la sintesi ormonale."
     ],
     "piano_giornata": {
-      "mattina": "07:00-12:00: Raccogliere Titan F1; applicare antenna rame sopra Milky Way, Medusa e Gaia; preparare elettrodi per elettrocoltura DC (2.5V) su Epsilon F1.",
-      "pomeriggio": "12:00-18:00: Evitare ore calde (>30°C). Monitorare umidità del suolo dopo le piogge di domani; applicare preparato 500 al tramonto su Cosmic Cheddar e Orbital Banana.",
-      "sera": "18:00-21:00: Nebulizzare preparato 500 su tutte le piante; applicare elettrocoltura DC per 2 ore su Epsilon F1; raccogliere Milky Way F1 domani mattina."
+      "mattina": "07:00-12:00: Raccogliere Milky Way F1 e Titan F1; applicare elettrocoltura DC a 1.5V tramite elettrodi rame/zinco su Medusa F1 e Gaia F1; installare l'antenna a spirale di rame per le piante in fioritura.",
+      "pomeriggio": "12:00-18:00: Evitare ore calde (>30C); monitorare l'umidità del substrato e l'ossigenazione radicale; applicare preparato biodinamico 500 alle radici delle piante in fioritura (Milky Way, Titan, Medusa, Gaia) come indicato dalla fase lunare. Fonte: [pdf_85, chunk_004].",
+      "sera": "18:00-21:00: Verificare il funzionamento degli elettrodi e dell'antenna a spirale; registrare dati di umidità, temperatura e conducibilità del suolo per ottimizzare le future applicazioni di elettrocoltura."
     },
     "kb_sintesi": {
       "principi_attivi": [
-        "L'elettrocoltura sfrutta le energie armoniche libere (come quelle atmosferiche o telluriche) per stimolare la crescita delle piante, migliorandone salute e produttività. [pdf_13]",
-        "L'uso di antenne parafulmine (come quella brevettata da Christofleau nel 1920) può fungere da sistema di raccolta e distribuzione di energia elettromagnetica naturale alle piante. [pdf_13]",
-        "La combinazione di corrente elettrica e magnetismo (scoperta da Oersted) è alla base di molti dispositivi di elettrocoltura, che sfruttano campi elettromagnetici per influenzare i processi biologici. [pdf_21]",
-        "Le piante rispondono positivamente a stimoli elettrici deboli, con effetti visibili su crescita, resa e qualità dei frutti (es. aumento del 300% nella produzione di piselli in esperimenti storici). [dudgrichelcult]",
-        "L'elettricità atmosferica (come quella presente durante temporali o con umidità elevata) può essere captata e utilizzata per accelerare la fotosintesi e la traslocazione dei nutrienti. [pdf_85]"
+        "L'elettrocultura applica correnti elettriche a basso voltaggio (DC) vicino alle radici per stimolare la crescita e l'assorbimento dei nutrienti, con effetti dimostrati su resa e qualità delle piante (pdf_17, chunk_002).",
+        "L'uso di elettrodi in rame/zinco (coppia galvanica) genera una corrente naturale nel suolo, mimando i campi elettromagnetici terrestri e favorendo la sintesi di ormoni vegetali (pdf_17, chunk_004).",
+        "La biodinamica suggerisce di sincronizzare le operazioni agricole con i cicli lunari per ottimizzare l'energia vitale delle piante, soprattutto in fase di fioritura (pdf_85, chunk_003).",
+        "Il suolo vivo (Living Soil) richiede un equilibrio tra umidità (80% oggi) e aerazione: l'eccesso di pioggia (5.3mm) può ridurre l'ossigenazione radicale, mitigabile con tecniche di elettrocoltura che migliorano la struttura del suolo (pdf_13, pag. 1).",
+        "Le piante rispondono a stimoli elettrici deboli (0.5-3V) con un aumento della fotosintesi e della resistenza agli stress idrici, come dimostrato in esperimenti con corrente diretta applicata al substrato (dudgrichelcult, pag. 40)."
       ],
-      "consiglio_elettro_da_testi": "Applicare una **antenna a spirale di rame** (come descritta nel manuale [pdf_13]) posizionata a 30-50 cm sopra le piante in fioritura, collegata a un picchetto di terra per captare l'energia tellurica. Questo sistema, ispirato ai brevetti di Christofleau, può aumentare la resa del 20-30% secondo studi storici. [pdf_13]",
-      "consiglio_suolo_da_tesi": "Integrare **biochar arricchito con micorrize** nel substrato durante la fase di fioritura per migliorare la conducibilità elettrica del suolo e la disponibilità di nutrienti. Il biochar, grazie alla sua struttura porosa, trattiene sia cariche elettriche che microrganismi benefici, creando un ambiente radicale ottimale. [pdf_85]",
-      "consiglio_biodinamica_da_testi": "Effettuare un **trattamento con preparato biodinamico 500** (cornoletame) durante la luna calante (oggi 28-29% illuminazione lunare), diluito in acqua piovana e nebulizzato sulle piante al tramonto. Questo stimola la vitalità del suolo e la resistenza delle piante allo stress termico (32°C attuali). [Le 108 Upanishad - correlazione tra energie telluriche e lunari]",
-      "scoperta_del_giorno": "La combinazione di **alta temperatura (32°C) e umidità moderata (44%)** crea condizioni ideali per la conduzione elettrica nel suolo e nelle piante. Studi storici (Dudgeon, 1900) dimostrano che in queste condizioni, l'elettrocoltura risulta più efficace perché l'acqua funge da elettrolita naturale, facilitando il flusso di corrente. [dudgrichelcult]",
+      "consiglio_elettro_da_testi": "Applicare una corrente continua a 1.5V tra due elettrodi in rame e zinco posizionati a 10-15cm di profondità nel substrato, vicino al colletto delle piante in fioritura. Questo stimola la produzione di auxine e riduce lo stress da umidità elevata (80%). Fonte: [pdf_17, chunk_002].",
+      "consiglio_suolo_da_testi": "Aggiungere micorrize e batteri benefici (es. *Pseudomonas* spp.) al substrato per migliorare la conducibilità elettrica naturale del suolo e facilitare l'assorbimento dei nutrienti in condizioni di alta umidità. Fonte: [pdf_13, pag. 2].",
+      "consiglio_biodinamica_da_testi": "Oggi, con la Luna in fase calante (secondo il calendario biodinamico), è il momento ideale per praticare la raccolta di piante aromatiche o per applicare preparati biodinamici (es. 500 o 501) alle radici, poiché l'energia della pianta è concentrata nelle parti sotterranee. Fonte: [pdf_85, chunk_004].",
+      "scoperta_del_giorno": "L'elettrocultura può compensare gli effetti negativi dell'elevata umidità (80%) e della pioggia (5.3mm) sulla fotosintesi, poiché la corrente applicata al suolo aumenta la traspirazione e riduce la condensa fogliare, come osservato in esperimenti con piante di pomodoro (dudgrichelcult, pag. 40).",
       "tecnica_da_provare": {
-        "nome": "Sistema a doppia antenna (Tesla-style)",
-        "descrizione": "Costruire due antenne: una in rame (per captare energia atmosferica) e una in zinco (per captare energia tellurica), collegate tra loro con un filo di rame isolato. Posizionare il sistema a 1m di altezza sopra le piante in fioritura, con la base della struttura in zinco interrata a 20 cm. Attivare il sistema al mattino presto (ore 6-8) per 2 ore, quando l'energia tellurica è più intensa. Monitorare la risposta delle piante dopo 7 giorni.",
-        "fonte": "[pdf_85] + [Electroculture-The-Biohackers-Guide-Collection]",
+        "nome": "Sistema a elettrodi gemelli per serra",
+        "descrizione": "Posizionare due elettrodi in rame (anodo) e zinco (catodo) a 20cm di distanza, collegati a una batteria da 1.5V. Interrare gli elettrodi a 15cm di profondità, vicino alle radici delle piante in fioritura. Mantenere il circuito acceso per 4-6 ore al giorno, preferibilmente nelle ore centrali (10:00-16:00). Monitorare la risposta delle piante (vigore, fioritura) dopo 7 giorni.",
+        "fonte": "[pdf_17, chunk_002] e [pdf_13, pag. 3]",
         "materiali": [
-          "2 antenne (1 in rame da 1m, 1 in zinco da 1m)",
-          "Filo di rame isolato (2mm di diametro, 3m di lunghezza)",
-          "Picchetto di terra in acciaio zincato (1m)",
-          "Supporto in legno o PVC per l'antenna superiore",
-          "Multimetro digitale per misurare la tensione generata"
+          "2 elettrodi in rame (lunghezza 30cm, diametro 5mm)",
+          "2 elettrodi in zinco (lunghezza 30cm, diametro 5mm)",
+          "Batteria da 1.5V (tipo AA o pila a bottone)",
+          "Cavi elettrici isolati (lunghezza 1m)",
+          "Nastro isolante o connettori a vite",
+          "Tester per verificare la corrente (opzionale)"
         ]
       }
     }
   },
   "agenti": {
     "piante": {
-      "stato_generale": "critico per Titan F1 (raccolta oggi); monitoraggio per Milky Way (raccolta domani); ottimale per autofiorenti in vegetazione.",
-      "irrigazione": "Ridurre irrigazione manuale oggi; domani ridurre ulteriormente in previsione delle piogge (7.5mm). Utilizzare acqua piovana magnetizzata per le autofiorenti.",
-      "nutrizione": "Nessuna integrazione oggi; domani applicare compost maturo dopo le piogge per ripristinare nutrienti dilavati.",
+      "stato_generale": "attenzione per umidità elevata e pioggia recente",
+      "irrigazione": "Nessuna irrigazione oggi; monitorare l'umidità del substrato e evitare ristagni idrici. La pioggia di 5.3mm è sufficiente per oggi. Fonte: [pdf_13, pag. 1].",
+      "nutrizione": "Nessuna integrazione oggi; evitare nutrienti aggiuntivi per non stressare le piante in fioritura.",
       "piante_critiche": [
         {
           "id": 1,
           "nome": "Milky Way F1",
-          "giorni_a_raccolta": 2
-        },
-        {
-          "id": 2,
-          "nome": "Titan F1",
           "giorni_a_raccolta": 1
         }
       ]
@@ -152,50 +137,39 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Applicare trattamenti biodinamici (preparato 500) al tramonto per sfruttare la luna calante e migliorare l'assorbimento delle piante."
+        "consiglio": "Applicare preparato biodinamico 500 alle radici delle piante in fioritura (Milky Way, Titan, Medusa, Gaia) per ottimizzare l'assorbimento dei nutrienti e ridurre lo stress da umidità. Fonte: [pdf_85, chunk_004]."
       },
       "ore_luce": 15.1
     },
     "elettro": {
       "verifica_oggi": [
-        "Controllare connessione antenna rame su Milky Way, Titan, Medusa e Gaia",
-        "Verificare polarità elettrodi rame/zinco per elettrocoltura DC su Epsilon F1"
+        "Verificare il corretto funzionamento degli elettrodi rame/zinco (1.5V DC) su Milky Way F1 e Titan F1 dopo la raccolta.",
+        "Installare l'antenna a spirale di rame per Medusa F1 e Gaia F1 e verificare la connessione alla batteria 1.5V DC."
       ],
-      "ottimizzazione": "Utilizzare la conducibilità atmosferica (32°C, 44% umidità) per massimizzare l'efficacia dell'antenna a spirale di rame. Secondo [pdf_85], l'elettricità atmosferica aumenta la fotosintesi del 15-20%."
+      "ottimizzazione": "Aumentare la conducibilità elettrica del suolo aggiungendo batteri benefici (es. Pseudomonas spp.) per migliorare l'efficacia dell'elettrocoltura in condizioni di alta umidità. Fonte: [pdf_13, pag. 2]."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Elettrocoltura DC a 2.5V",
-      "descrizione": "Inserire elettrodi di rame (anodo) e zinco (catodo) nel suolo a 10 cm di profondità, distanti 30 cm tra loro, collegati a una batteria da 2.5V. Applicare per 2 ore al giorno (10:00-12:00) sulle piante in fioritura (Milky Way, Titan, Medusa, Gaia) per stimolare la fotosintesi e la traslocazione dei nutrienti. [dudgrichelcult]",
-      "fonte": "[dudgrichelcult]",
+      "nome": "Antenna a spirale di rame per elettrocoltura",
+      "descrizione": "Installare un'antenna a spirale di rame (diametro 30cm, filo rame 2mm) a 10-15cm di profondità vicino al colletto delle piante in fioritura (Milky Way, Titan, Medusa, Gaia). Collegare gli estremi a una batteria da 1.5V DC per generare una corrente galvanica nel suolo. Questo stimola la sintesi di auxine e riduce lo stress da umidità. Fonte: [dudgrichelcult, pag. 40].",
+      "fonte": "[dudgrichelcult, pag. 40]",
       "materiali": [
-        "elettrodi rame (10 cm)",
-        "elettrodi zinco (10 cm)",
-        "batteria 2.5V",
-        "cavi isolati"
+        "filo di rame 2mm",
+        "batteria 1.5V DC",
+        "cavo isolato",
+        "trapano e paletta per l'installazione"
       ],
       "difficolta": "media"
-    },
-    {
-      "nome": "Trattamento con acqua piovana magnetizzata",
-      "descrizione": "Raccogliere acqua piovana di domani (7.5mm) e farla passare attraverso un tubo di rame avvolto in spirale (10 avvolgimenti) per 5 minuti. Utilizzare questa acqua per l'irrigazione serale delle autofiorenti (Astro Lemonade, Cosmic Cheddar) per aumentare la conducibilità elettrica del suolo. [pdf_21]",
-      "fonte": "[pdf_21]",
-      "materiali": [
-        "tubo di rame",
-        "acqua piovana",
-        "recipiente"
-      ],
-      "difficolta": "bassa"
     }
   ],
   "avvisi": [
-    "Raccogliere Titan F1 entro oggi (2026-07-01) per evitare perdita di qualità dei fiori.",
-    "Preparare l'antenna a spirale di rame per le piante in fioritura (Milky Way, Titan, Medusa, Gaia) entro stasera per sfruttare l'energia tellurica della luna calante."
+    "Raccogliere Milky Way F1 oggi (2026-07-02) per evitare perdita di resina e aroma.",
+    "Preparare l'antenna a spirale di rame per le piante in fioritura (Milky Way, Titan, Medusa, Gaia) entro 24h per ottimizzare la sintesi ormonale."
   ],
   "consigli_giorno": [
-    "Applicare **antenna a spirale di rame** (brevetto Christofleau 1920) sopra le piante in fioritura (Milky Way, Titan, Medusa, Gaia) a 40 cm di altezza, collegata a picchetto di terra zincato per captare energia tellurica. Questo aumenterà la resa del 20-30% secondo [pdf_13].",
-    "Nebulizzare **preparato biodinamico 500** (cornoletame) diluito in acqua piovana sulle piante al tramonto (ore 20:00), poiché la luna è in fase calante (28-29% illuminazione) e le temperature (32°C) favoriscono l'assorbimento. Questo stimola la resistenza allo stress termico [Le 108 Upanishad].",
-    "Monitorare l'umidità del suolo dopo le piogge di domani (7.5mm): ridurre l'irrigazione manuale per evitare asfissia radicale, poiché le autofiorenti (Epsilon, Milky Way, Titan) sono in fase critica di fioritura/essiccazione."
+    "Applicare elettrocoltura DC a 1.5V tramite elettrodi rame/zinco (10-15cm profondità) su Milky Way F1, Titan F1, Medusa F1 e Gaia F1 in fioritura per stimolare la produzione di auxine e ridurre lo stress da umidità (80%) e pioggia (5.3mm). Fonte: [pdf_17, chunk_002].",
+    "Raccogliere Milky Way F1 oggi (2026-07-02) per evitare perdita di resina e aroma, come indicato nell'alert urgente. Fonte: [pdf_85, chunk_003].",
+    "Preparare l'antenna a spirale di rame (diametro 30cm, filo rame 2mm) per le piante in fioritura (Milky Way, Titan, Medusa, Gaia) da installare entro 24h per ottimizzare la sintesi ormonale. Fonte: [dudgrichelcult, pag. 40]."
   ]
 }
