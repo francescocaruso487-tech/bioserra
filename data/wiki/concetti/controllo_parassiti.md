@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-07-01
+aggiornato: 2026-07-02
 pdf_count: 0
 ---
 
@@ -12,24 +12,35 @@ pdf_count: 0
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta una strategia fitosanitaria basata sull’uso di metodi biologici per gestire infestazioni senza ricorrere a sostanze chimiche sintetiche. Questo approccio sfrutta i meccanismi di equilibrio dell’ecosistema serra, dove predatori naturali, repellenti vegetali e sostanze bioattive agiscono in sinergia per limitare la proliferazione di parassiti come afidi, acari o tripidi. Il principio fondamentale si basa sulla **prevenzione attiva**: monitorare costantemente le piante, intervenire con trattamenti a basso impatto e favorire la biodiversità funzionale del suolo e dell’aria. Ad esempio, l’olio di neem agisce come insetticida sistemico e repellente grazie alla presenza di azadiractina, che interferisce con lo sviluppo degli insetti e ne altera il comportamento alimentare. Allo stesso modo, l’introduzione di **acari predatori** (come *Phytoseiulus persimilis* per gli acari rossi) crea un controllo biologico permanente, riducendo la necessità di interventi chimici.
+Il **Controllo Parassiti Naturale** è una strategia fitosanitaria basata sull’uso di metodi biologici per gestire infestazioni di insetti, acari e funghi patogeni senza ricorrere a pesticidi chimici. Questo approccio sfrutta i principi dell’**ecologia del suolo** e dell’**equilibrio degli ecosistemi**, promuovendo la biodiversità e la resilienza delle piante. In un sistema **Living Soil** come quello della serra outdoor a Caserta (41°N), il controllo naturale dei parassiti si avvale di meccanismi come la **competizione biologica**, la **predazione** e la **repellenza chimica**, che riducono la necessità di interventi esterni.
 
-In un contesto di **Living Soil** outdoor a Caserta (41°N), dove il clima mediterraneo favorisce la proliferazione di parassiti, questa tecnica diventa ancora più cruciale. La serra, infatti, amplifica i fattori di stress ambientale (umidità, temperatura, densità colturale), rendendo le piante più suscettibili agli attacchi. Tuttavia, un suolo ricco di microrganismi benefici e materia organica attiva (humus, funghi micorrizici) sviluppa una **resilienza intrinseca**, dove le piante producono composti di difesa naturali (es. terpeni, fenoli) in risposta a stimoli esterni. Il controllo parassiti naturale si integra quindi con la **salute del suolo**, creando un circolo virtuoso: suolo vivo → piante vigorose → minore suscettibilità ai parassiti → equilibrio biologico.
+Il meccanismo d’azione si basa su tre pilastri:
+1. **Prevenzione**: Mantenere un suolo sano e ricco di microrganismi antagonisti (es. *Trichoderma*, *Bacillus*) limita l’insorgenza di patogeni.
+2. **Equilibrio**: L’introduzione di **insetti utili** (es. *Phytoseiulus persimilis* per gli acari) o l’uso di **estratti vegetali** (olio di neem, piretro naturale) interrompe i cicli riproduttivi dei parassiti.
+3. **Rinforzo delle difese**: Piante nutrite con **acqua magnetizzata** o **soluzioni a base di Fe-Cu** sviluppano una maggiore resistenza agli attacchi, grazie a una sintesi accelerata di metaboliti secondari (es. terpeni, fenoli).
+
+Questo metodo è particolarmente efficace in serra outdoor perché l’ambiente controllato (umidità, temperatura, luce) permette di ottimizzare le condizioni per i predatori naturali e i trattamenti preventivi, riducendo al minimo i rischi di infestazioni critiche.
 
 ---
 
 ## Come si applica in serra
 
-1. **Monitoraggio quotidiano**
-   - Ispeziona **foglie (soprattutto sottofaccie), steli e germogli** al mattino, quando gli insetti sono meno attivi.
-   - Usa una **lente d’ingrandimento** per identificare uova, larve o adulti di parassiti (es. afidi neri, ragnetto rosso).
-   - Segna le piante infestate con un nastro colorato per monitorare la progressione.
+### **Fase di Vegetazione**
+1. **Ispezione quotidiana**:
+   - Controlla **foglie giovani** (soprattutto l’inferiore) e **steli** alla ricerca di uova, larve o danni (es. fori, melata).
+   - Usa una **lente d’ingrandimento** per identificare acari (*Tetranychus urticae*) o afidi (*Aphis gossypii*).
+   - *Strumento consigliato*: **Trappole cromotropiche gialle** per monitorare insetti volanti.
 
-2. **Trattamenti preventivi**
-   - **Olio di neem**: Diluire **5–10 ml/L d’acqua** (aggiungere un tensioattivo come sapone di potassio per migliorare l’adesione). Applicare con nebulizzatore **ogni 7 giorni** durante la vegetazione e **ogni 10 giorni in fioritura**, evitando ore calde (10:00–16:00).
-   - **Sapone potassico**: Usare **20–30 g/L d’acqua** per insetti a corpo molle (afidi, cocciniglie). Applicare solo su piante non stressate (evitare in fioritura).
-   - **Bacillus thuringiensis (var. kurstaki)**: Spruzzare **1–2 g/L d’acqua** contro lepidotteri (es. nottue) in vegetazione, preferibilmente al tramonto.
+2. **Trattamenti preventivi**:
+   - **Olio di neem**: Diluire **5 ml/L** di acqua (aggiungere **1 ml di sapone di potassio** come adesivante) e nebulizzare **ogni 7 giorni** al tramonto (evita l’esposizione solare diretta).
+   - **Bacillus thuringiensis** (per lepidotteri): Applicare **2 g/L** in caso di presenza di bruchi, preferibilmente al mattino.
+   - **Acqua magnetizzata**: Irrigare con acqua trattata con **campi magnetici statici** (es. 1000 Gauss) per stimolare le difese della pianta.
 
-3. **Controllo biologico**
-   - **Acari predatori** (*Phytoseiulus persimilis* per ragnetto rosso, *Amblyseius andersoni* per trips): Introduci **2–5 individui/mq** alla prima segnalazione di infestazione. Ripeti ogni 2 settimane se necessario.
-   - **Coccinelle** (*Coccinella septempunctata*): Rilas
+3. **Introduzione di insetti utili**:
+   - **Acari predatori** (*Phytoseiulus persimilis*): Rilasciare **2-5 individui/mq** in caso di infestazione da *Tetranychus*.
+   - **Coccinelle** (*Coccinella septempunctata*): Posizionare **5-10 adulti/pianta** per afidi, preferibilmente al crepuscolo.
+
+### **Fase di Fioritura**
+1. **Ridurre i trattamenti chimici**:
+   - Evitare oli essenziali (es. tea tree) che possono alterare il profumo dei fiori.
+   - Usare **estratti di ortica** (1:10
