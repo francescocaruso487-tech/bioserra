@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-02T11:45:43.481046+00:00",
+  "lastUpdate": "2026-07-03T11:43:52.539056+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -1953,14 +1953,86 @@
       "data_proposta": "2026-07-01",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto del Compost Maturo Arricchito con Terpeni sulla Disponibilità di Nutrienti e Crescita di Piante Aromatiche in Living Soil",
+      "ipotesi": "L'aggiunta di compost maturo arricchito con terpeni (estratti da peperoncini secchi) al terreno prima della semina (Manuale A) migliorerà la disponibilità di nutrienti, l'attività microbica e la crescita di piante aromatiche (es. basilico o menta) rispetto a compost non arricchito. Questo perché i terpeni stimolano l'attività microbica (Manuale B) e migliorano la struttura del suolo, favorendo la disponibilità di nutrienti (Manuale A).",
+      "protocollo": [
+        "Passo 1: Preparazione del compost arricchito. Mescolare 5 kg di compost maturo con 50 g di peperoncini secchi macinati (terpeni) in un contenitore. Lasciare riposare per 7 giorni in un luogo ombreggiato, mescolando quotidianamente per favorire l'integrazione dei terpeni.",
+        "Passo 2: Preparazione dei substrati. Riempire 4 vasi da 10 litri con lo stesso Living Soil di base (stessa tessitura, pH, umidità e contenuto di materia organica, come da Manuale A). Suddividere in due gruppi: Gruppo A (2 vasi) con compost non arricchito e Gruppo B (2 vasi) con compost arricchito (500 g per vaso).",
+        "Passo 3: Semina e coltivazione. Seminare 10 semi di basilico in ogni vaso, mantenendo condizioni identiche di temperatura, umidità e luce (variabili controllate). Innaffiare solo con acqua (water-only) per 30 giorni.",
+        "Passo 4: Monitoraggio e raccolta dati. Misurare settimanalmente l'altezza delle piantine, il pH del suolo, l'umidità e la temperatura. Al termine, raccogliere le piante, pesare la biomassa fresca e secca, e analizzare il contenuto di clorofilla (indicatore di salute delle piante)."
+      ],
+      "materiali": [
+        "5 kg di compost maturo",
+        "50 g di peperoncini secchi macinati",
+        "8 vasi da 10 litri",
+        "Semi di basilico (10 per vaso)",
+        "pHmetro, termometro, igrometro",
+        "Bilancia di precisione",
+        "Spettrofotometro per clorofilla (o kit colorimetrico)"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Altezza media delle piantine (cm) ogni 7 giorni",
+        "Peso fresco e secco delle piante (g) a fine esperimento",
+        "pH del suolo (inizio e fine)",
+        "Contenuto di clorofilla (unità SPAD o equivalente)",
+        "Osservazione visiva della salute delle piante (colore, vigore)"
+      ],
+      "variabili_controllo": "Stesso tipo di suolo (Living Soil), stessa quantità di compost (500 g/vaso), stessa quantità di semi (10), stessa esposizione alla luce, stessa temperatura e umidità ambientale, stessa quantità di acqua (water-only).",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "5 Fattori Che Influenzano La Disponibili",
+      "fonte_b": "Una Panoramica Sugli Elementi Mobili Ed ",
+      "originalità": "Questo esperimento combina specificamente la preparazione del terreno (Manuale A) con tecniche di compostaggio arricchito (Manuale B), utilizzando terpeni da peperoncini secchi per potenziare l'attività microbica e la disponibilità di nutrienti. Nessuno dei due manuali suggerisce di arricchire il compost con terpeni per migliorare la crescita delle piante in Living Soil.",
+      "id": "esp_conn_2026-07-03_001",
+      "data_proposta": "2026-07-03",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Coltivazione di piante di pianta in Living Soil con applicazione di energia elettromagnetica a bassa frequenza per armonizzare il Corpo di Luce vegetale",
+      "ipotesi": "Applicando un campo elettromagnetico a bassa frequenza (simile all'energia del Corpo di Luce descritto nel MANUALE B) su piante coltivate in Living Soil (MANUALE A), si osserverà una crescita più armoniosa e una maggiore resilienza agli stress ambientali. Questo perché il Living Soil, come ecosistema equilibrato, risponde positivamente all'armonizzazione delle energie vitali (Body of Light), analogamente a quanto avviene nel corpo umano secondo il MANUALE B. L'ipotesi si basa sulla sinergia tra l'equilibrio del terreno vivo e l'armonizzazione delle energie elettromagnetiche.",
+      "protocollo": [
+        "Preparare due aiuole identiche in Living Soil (MANUALE A) con le stesse varietà di pianta (ad esempio, una femmina CBD e una autofiorente THC). Utilizzare semi femminizzati per garantire uniformità.",
+        "Posizionare un generatore di onde elettromagnetiche a bassa frequenza (es. 7.83 Hz, frequenza di Schumann) vicino a una delle due aiuole. Il generatore deve essere alimentato a batteria e posizionato a 30 cm di distanza dalle piante, senza contatto diretto. L'altra aiuole servirà da controllo.",
+        "Irrigare entrambe le aiuole esclusivamente con acqua non trattata (water-only) secondo i principi del MANUALE A, mantenendo umidità e nutrienti identici.",
+        "Monitorare quotidianamente la crescita, il colore delle foglie, la resistenza a parassiti e la produzione di biomassa. Registrare dati visivi e quantitativi (altezza, numero di foglie, diametro del fusto)."
+      ],
+      "materiali": [
+        "Semi di pianta femminizzati (CBD e autofiorente THC)",
+        "Generatore di onde elettromagnetiche a bassa frequenza (7.83 Hz, alimentazione a batteria)",
+        "Living Soil pre-preparato (compost, micorrize, humus di lombrico)",
+        "Sistema di irrigazione a goccia per water-only",
+        "Strumenti di misurazione (metro a nastro, bilancia di precisione, app per registrazione dati)"
+      ],
+      "durata_giorni": 45,
+      "misure": [
+        "Crescita in altezza (misurata settimanalmente con metro a nastro)",
+        "Numero di foglie e loro salute (fotografie e conteggio)",
+        "Produzione di biomassa (peso fresco delle piante a fine esperimento)",
+        "Resistenza a stress idrici o parassiti (osservazione visiva e registrazione)",
+        "Analisi qualitativa dei tricomi (con lente di ingrandimento) per valutare la concentrazione di cannabinoidi"
+      ],
+      "variabili_controllo": "Stesso tipo di suolo, stessa varietà di semi, stessa quantità di acqua, stessa esposizione solare, stessa temperatura ambientale. Il generatore deve essere l'unica variabile aggiuntiva.",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "Come Innaffiare Le Piante Di Pianta",
+      "fonte_b": "Book of Wisdom (revival of wisdom, Harry B. Joseph)",
+      "originalità": "Questo esperimento non si trova in nessuno dei due manuali singolarmente perché combina principi di Living Soil (MANUALE A) con l'applicazione di energia elettromagnetica armonizzante (MANUALE B), creando un approccio olistico che integra fisico e spirituale nella coltivazione. Nessun manuale suggerisce di applicare direttamente energie elettromagnetiche a piante coltivate in Living Soil per armonizzare il loro 'Corpo di Luce' vegetale.",
+      "id": "esp_conn_2026-07-03_002",
+      "data_proposta": "2026-07-03",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-02",
-    "nuove_proposte": 0,
-    "pdf_analizzati": 51,
-    "connessioni_usate": 16
+    "data": "2026-07-03",
+    "nuove_proposte": 2,
+    "pdf_analizzati": 59,
+    "connessioni_usate": 23
   }
 }
