@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-07-02
+aggiornato: 2026-07-03
 pdf_count: 0
 ---
 
@@ -12,35 +12,28 @@ pdf_count: 0
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** è una strategia fitosanitaria basata sull’uso di metodi biologici per gestire infestazioni di insetti, acari e funghi patogeni senza ricorrere a pesticidi chimici. Questo approccio sfrutta i principi dell’**ecologia del suolo** e dell’**equilibrio degli ecosistemi**, promuovendo la biodiversità e la resilienza delle piante. In un sistema **Living Soil** come quello della serra outdoor a Caserta (41°N), il controllo naturale dei parassiti si avvale di meccanismi come la **competizione biologica**, la **predazione** e la **repellenza chimica**, che riducono la necessità di interventi esterni.
+Il **Controllo Parassiti Naturale** è una strategia fitosanitaria basata sull’uso di metodi biologici per gestire infestazioni senza ricorrere a pesticidi chimici. Questo approccio sfrutta i meccanismi di equilibrio dell’ecosistema serra, dove predatori naturali, repellenti vegetali e pratiche colturali riducono la proliferazione di parassiti come afidi, acari e tripidi. Il principio chiave è **prevenire** piuttosto che curare: un suolo vivo e ricco di microrganismi antagonisti (es. *Trichoderma*) ostacola lo sviluppo di patogeni, mentre insetti utili (come *Phytoseiulus persimilis* per gli acari) mantengono le popolazioni sotto soglia di danno. L’olio di neem, ad esempio, agisce come **regolatore della crescita** per gli insetti, interferendo con il loro sviluppo larvale e la capacità di nutrirsi, senza uccidere direttamente gli organismi benefici.
 
-Il meccanismo d’azione si basa su tre pilastri:
-1. **Prevenzione**: Mantenere un suolo sano e ricco di microrganismi antagonisti (es. *Trichoderma*, *Bacillus*) limita l’insorgenza di patogeni.
-2. **Equilibrio**: L’introduzione di **insetti utili** (es. *Phytoseiulus persimilis* per gli acari) o l’uso di **estratti vegetali** (olio di neem, piretro naturale) interrompe i cicli riproduttivi dei parassiti.
-3. **Rinforzo delle difese**: Piante nutrite con **acqua magnetizzata** o **soluzioni a base di Fe-Cu** sviluppano una maggiore resistenza agli attacchi, grazie a una sintesi accelerata di metaboliti secondari (es. terpeni, fenoli).
-
-Questo metodo è particolarmente efficace in serra outdoor perché l’ambiente controllato (umidità, temperatura, luce) permette di ottimizzare le condizioni per i predatori naturali e i trattamenti preventivi, riducendo al minimo i rischi di infestazioni critiche.
-
----
+In serra outdoor a Caserta (41°N), dove l’umidità e le temperature miti favoriscono la proliferazione di parassiti, il controllo naturale diventa ancora più cruciale. L’adozione di **piante trappola** (es. *Calendula officinalis*) o **barriere aromatiche** (basilico, menta) distrae gli insetti dannosi, mentre l’uso di **funghi entomopatogeni** (es. *Beauveria bassiana*) infetta e uccide specifici parassiti senza danneggiare l’ambiente. Questo metodo si allinea con i principi della **Living Soil**, dove la biodiversità del suolo e la salute delle piante riducono la suscettibilità agli attacchi esterni.
 
 ## Come si applica in serra
 
-### **Fase di Vegetazione**
-1. **Ispezione quotidiana**:
-   - Controlla **foglie giovani** (soprattutto l’inferiore) e **steli** alla ricerca di uova, larve o danni (es. fori, melata).
-   - Usa una **lente d’ingrandimento** per identificare acari (*Tetranychus urticae*) o afidi (*Aphis gossypii*).
-   - *Strumento consigliato*: **Trappole cromotropiche gialle** per monitorare insetti volanti.
+1. **Ispezione quotidiana**
+   - Controlla **foglie giovani, steli e pagina inferiore delle foglie** con una lente d’ingrandimento per rilevare uova, larve o adulti di parassiti (es. afidi neri, ragnetto rosso).
+   - Usa **trappole cromotropiche gialle/blu** per monitorare la presenza di tripidi e moscerini.
 
-2. **Trattamenti preventivi**:
-   - **Olio di neem**: Diluire **5 ml/L** di acqua (aggiungere **1 ml di sapone di potassio** come adesivante) e nebulizzare **ogni 7 giorni** al tramonto (evita l’esposizione solare diretta).
-   - **Bacillus thuringiensis** (per lepidotteri): Applicare **2 g/L** in caso di presenza di bruchi, preferibilmente al mattino.
-   - **Acqua magnetizzata**: Irrigare con acqua trattata con **campi magnetici statici** (es. 1000 Gauss) per stimolare le difese della pianta.
+2. **Prevenzione con olio di neem**
+   - **Diluizione**: 5–10 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) per litro d’acqua.
+   - **Applicazione**: Spruzza **ogni 7 giorni** al tramonto (evita l’esposizione diretta al sole per prevenire ustioni fogliari). Copri uniformemente, soprattutto le parti giovani.
+   - **Frequenza**: Aumenta a 3–4 giorni in caso di infestazione acuta.
 
-3. **Introduzione di insetti utili**:
-   - **Acari predatori** (*Phytoseiulus persimilis*): Rilasciare **2-5 individui/mq** in caso di infestazione da *Tetranychus*.
-   - **Coccinelle** (*Coccinella septempunctata*): Posizionare **5-10 adulti/pianta** per afidi, preferibilmente al crepuscolo.
+3. **Introduzione di insetti utili**
+   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2–5 individui/m² in caso di attacco di ragnetto rosso. Ripeti ogni 2 settimane fino a risoluzione.
+   - **Crisope** (*Chrysoperla carnea*): Deposita uova o larve in serra per combattere afidi e cocciniglie. Ideale durante la vegetazione.
+   - **Nematodi entomopatogeni** (es. *Steinernema feltiae*): Applica al suolo per tripidi e moscerini del terreno, soprattutto in fioritura.
 
-### **Fase di Fioritura**
-1. **Ridurre i trattamenti chimici**:
-   - Evitare oli essenziali (es. tea tree) che possono alterare il profumo dei fiori.
-   - Usare **estratti di ortica** (1:10
+4. **Piante repellenti e trappole**
+   - Pianta **basilico, lavanda o tagete** ai bordi della serra per allontanare afidi e mosche bianche.
+   - Usa **piante trappola** (es. *Fagopyrum esculentum* per tripidi) da rimuovere e bruciare in caso di infestazione.
+
+5. **Rinforzo del suolo**
