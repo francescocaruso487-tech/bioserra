@@ -2,48 +2,41 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-07-02
+aggiornato: 2026-07-03
 pdf_count: 4
 ---
 
 # Te di Compost
 
 ```markdown
-# Te di Compost
+# Tè di Compost
 
 ## Descrizione
-Il **Te di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dal compost maturo, ricco di microrganismi benefici (batteri, funghi, protozoi e nematodi), nutrienti solubili e sostanze umiche. Questo preparato funziona come un **biofertilizzante e biostimolante**, migliorando la salute del suolo e delle piante attraverso tre meccanismi principali:
-1. **Rifornimento microbico**: Introduce una comunità microbica diversificata che compete con patogeni, promuove la formazione di aggregati del suolo e aumenta la disponibilità di nutrienti (es. azoto, fosforo).
-2. **Induzione di resistenza sistemica**: Stimola le difese naturali delle piante tramite l’azione di elicitori microbici (es. lipopolisaccaridi, flagellina) e sostanze umiche.
-3. **Miglioramento della struttura del suolo**: Le sostanze umiche e i polisaccaridi microbici aumentano la capacità di scambio cationico (CEC) e la ritenzione idrica, fondamentali per i suoli sabbiosi tipici di Caserta.
+Il **Tè di Compost** (o *compost tea*) è un infuso aerobico ricco di microrganismi benefici, enzimi, nutrienti solubili e sostanze umiche, ottenuto dalla lisciviazione controllata di compost maturo in acqua ossigenata. Questo processo, se eseguito correttamente, trasforma il compost in un biostimolante liquido adatto sia per applicazioni fogliari che radicali, capace di **riattivare la vita microbica del suolo** e **potenziare la resistenza delle piante** agli stress biotici e abiotici. Il meccanismo d'azione si basa sulla **riproduzione accelerata** dei batteri, funghi benefici (come micorrize) e protozoi presenti nel compost, che colonizzano rapidamente la rizosfera o le superfici fogliari, migliorando l’assorbimento dei nutrienti e la sintesi di ormoni vegetali (es. auxine, citochinine).
 
-Il Te di Compost è particolarmente efficace in **Living Soil** perché sfrutta la sinergia tra microrganismi e piante, creando un ecosistema autosostenibile. Studi dimostrano che applicazioni regolari possono ridurre la necessità di fertilizzanti chimici fino al 30% e aumentare la resa delle colture del 20-40% [web_zamn_328-come-conciare-cannabis].
+In un contesto di **Living Soil outdoor** a Caserta (41°N), dove il clima mediterraneo può stressare le piante con caldo e siccità, il tè di compost agisce come un **immunostimolante naturale**, riducendo la necessità di input chimici e favorendo un equilibrio microbico stabile. Studi dimostrano che applicazioni regolari aumentano la biodiversità del suolo, la struttura aggregata e la capacità di ritenzione idrica, elementi critici per la coltivazione di *Cannabis* in serra, soprattutto durante le fasi di **vegetazione** (sviluppo radicale) e **fioritura** (mobilitazione dei nutrienti).
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor a **Caserta (41°N)**, segui queste istruzioni per preparare e applicare il Te di Compost in modo ottimale:
+Per una serra outdoor a Caserta, seguire questo protocollo per massimizzare l’efficacia del tè di compost:
 
-### **Preparazione (24 ore prima dell’applicazione)**
-1. **Materiali**:
-   - Compost maturo (preferibilmente vermicompost o compost da letame di cavallo/pecora, ricco di micorrize).
-   - Acqua non clorata (lasciare decantare l’acqua del rubinetto per 24h o usare acqua piovana).
-   - Aeratore per acquario (con pietra porosa per ossigenazione).
-   - Melassa biologica (1-2 cucchiai per 10L di acqua) o zucchero di canna come fonte di carbonio per i batteri.
-   - Contenitore in plastica o vetro (evitare metalli).
+1. **Preparazione del compost**
+   - Utilizzare **compost maturo** (6-12 mesi), privo di patogeni e con rapporto C/N equilibrato (ideale: 20:1–30:1).
+   - Evitare compost con residui di carne, latticini o piante malate.
 
-2. **Procedura**:
-   - Riempire il contenitore con acqua e avviare l’aeratore.
-   - Aggiungere **1 kg di compost per 10L di acqua** (rapporto 1:10).
-   - Immergere il compost in un sacchetto di tela o una retina per evitare sedimenti.
-   - Aggiungere la melassa e mescolare delicatamente.
-   - Mantenere l’aerazione costante per **24 ore** a temperatura ambiente (18-25°C).
+2. **Infusione aerobica**
+   - **Dose**: 1 kg di compost ogni 10 L di acqua (es. 5 kg in 50 L per una serra di 10 m²).
+   - **Acqua**: Usare acqua **non clorata** (lasciare riposare 24h in un secchio aperto o aggiungere 1 g di tiosolfato di sodio per neutralizzare il cloro).
+   - **Aerazione**: Immergere il compost in un **secchio con aeratore a pompa per acquario** (flusso continuo di 20–30 L/h) per 24–48h a temperatura ambiente (20–25°C). Evitare la putrefazione (odore di uova marce = fallimento).
 
-### **Applicazione**
-- **Filtraggio**: Rimuovere il sacchetto di compost e filtrare il liquido con una retina fine per eliminare residui solidi.
-- **Diluizione**: Usare il Te di Compost puro o diluito (1:1 con acqua) a seconda della fase colturale:
-  - **Vegetazione**: Applicare ogni 10-15 giorni (1-2L/m²).
-  - **Fioritura**: Ridurre la frequenza a ogni 20 giorni (1L/m²) per evitare eccesso di umidità.
-- **Metodi**:
-  - **Fogliare**: Spruzzare al mattino presto o al tramonto con uno spruzzino a pressione bassa (evitare ustioni fogliari).
-  - **Radicale**: Innaffiare direttamente il suolo, preferibilmente dopo una
+3. **Nutrizione microbica**
+   - Aggiungere **1–2 cucchiai di melassa** (o zucchero di canna) per litro d’acqua per alimentare i batteri.
+   - Opzionale: 1 cucchiaio di **humus di lombrico** o **micorrize** per potenziare la simbiosi radicale.
+
+4. **Filtraggio e applicazione**
+   - Filtrare il tè con una retina fine (100–200 micron) per rimuovere particelle grossolane.
+   - **Applicare entro 4 ore** dalla preparazione (i microrganismi muoiono rapidamente senza ossigeno).
+   - **Metodi**:
+     - **Radicale**: Irrigare con pompa a bassa pressione (evitare ristagni).
+     - **Fogliare**: Spruzzare al tramonto con nebulizzatore a pressione (pH 6.5–7.0
