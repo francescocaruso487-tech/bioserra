@@ -2,7 +2,7 @@
 id: gestione_ph_suolo
 label: Gestione pH Suolo
 categoria: suolo
-aggiornato: 2026-07-02
+aggiornato: 2026-07-03
 pdf_count: 0
 ---
 
@@ -12,26 +12,31 @@ pdf_count: 0
 # Gestione pH Suolo
 
 ## Descrizione
-Il pH del suolo rappresenta la misura dell'acidità o basicità del substrato, influenzando direttamente la biodisponibilità dei nutrienti essenziali per le piante. In un sistema **Living Soil**, un pH compreso tra **6.0 e 7.0** è considerato ottimale perché consente la solubilizzazione equilibrata di macro e micronutrienti (azoto, fosforo, potassio, calcio, magnesio, ferro, zinco, ecc.), favorendo l'assorbimento radicale e la salute microbica. Al di fuori di questo range, i nutrienti possono precipitare sotto forme non assimilabili (es. fosfati a pH basso o ferro a pH alto), generando carenze anche in presenza di suoli ricchi. Il meccanismo è legato alla chimica del suolo: a pH acido (<5.5), l'alluminio e il manganese diventano tossici, mentre a pH alcalino (>7.5), la disponibilità di fosforo e ferro diminuisce drasticamente. Inoltre, un pH stabile promuove la proliferazione di batteri e funghi benefici (es. *Pseudomonas*, *Trichoderma*), che mineralizzano la materia organica e competono con patogeni.
+Il pH del suolo rappresenta la misura dell'acidità o alcalinità del substrato, influenzando direttamente la biodisponibilità dei nutrienti essenziali per le piante. Un pH compreso tra **6.0 e 7.0** è considerato ottimale per la maggior parte delle colture in serra outdoor, poiché garantisce un equilibrio tra macro e micronutrienti. Al di sotto di 5.8, il suolo diventa troppo acido, portando a carenze di calcio, magnesio e fosforo, oltre a favorire la tossicità da alluminio e manganese. Al contrario, un pH superiore a 7.2 riduce l'assorbimento di ferro, zinco e fosforo, compromettendo la salute delle piante e la resa produttiva.
 
-La gestione del pH non è statica ma dinamica, poiché le attività metaboliche delle piante, la decomposizione della sostanza organica e l'acqua di irrigazione possono alterarlo nel tempo. In serra outdoor a Caserta, dove le temperature elevate accelerano i processi di ossidazione e lisciviazione, monitorare settimanalmente il pH diventa cruciale per prevenire squilibri. L'uso di **calce agricola** (carbonato di calcio) o **zolfo elementare** consente di correggere il pH in modo graduale, evitando shock chimici che danneggerebbero la vita microbica. È fondamentale ricordare che il pH ideale varia leggermente in base alla fase fenologica: durante la **vegetazione**, un pH leggermente più acido (6.0-6.5) favorisce l'assorbimento dell'azoto, mentre in **fioritura** (6.5-7.0) si ottiene una migliore disponibilità di fosforo e potassio.
-
----
+Il meccanismo di azione del pH si basa sulla **solubilità dei nutrienti**: a valori acidi, i metalli pesanti possono diventare tossici, mentre a valori alcalini, molti elementi diventano insolubili e inaccessibili alle radici. In un sistema **Living Soil**, la gestione del pH è cruciale perché la biodiversità microbica (funghi micorrizici, batteri decompositori) dipende da un ambiente stabile. Un pH ottimale favorisce la simbiosi radice-microrganismo, migliorando l'assorbimento dei nutrienti e la resilienza del suolo.
 
 ## Come si applica in serra
+1. **Misurazione regolare**:
+   - Utilizzare un **pHmetro digitale** (preferibilmente con sonda a penetrazione) o un kit a reagenti per analizzare il suolo ogni **1-2 settimane**, prelevando campioni a 10-15 cm di profondità.
+   - Effettuare le misurazioni **al mattino**, evitando periodi di pioggia o irrigazione recente.
 
-1. **Strumentazione necessaria**:
-   - **pH-metro digitale** (preferibilmente con sonda a penetrazione per suolo) o **kit a reagenti liquidi** (es. LaMotte).
-   - **Acqua distillata** per la calibrazione e il risciacquo.
-   - **Calce agricola** (CaCO₃, granulometria fine) o **zolfo elementare in polvere** (S).
-   - **Guanti e mascherina** per la manipolazione dei correttivi.
+2. **Correzione del pH**:
+   - **pH < 5.8 (acido)**:
+     - Aggiungere **calce agricola** (CaCO₃) o **calce dolomitica** (CaMg(CO₃)₂) in quantità di **50-100 g/m²**, distribuendola uniformemente e incorporandola leggermente con una zappa.
+     - Ripetere la misurazione dopo **7-10 giorni** e correggere ulteriormente se necessario.
+   - **pH > 7.2 (alcalino)**:
+     - Applicare **zolfo elementare** (S) in polvere o granulare, alla dose di **20-50 g/m²**, mescolandolo al substrato.
+     - In alternativa, utilizzare **torba acida** o **compost di foglie** per abbassare gradualmente il pH.
 
-2. **Procedura di misurazione**:
-   - Prelevare campioni di suolo a **10-15 cm di profondità** in 5 punti diversi della serra, mescolarli e setacciare per eliminare detriti.
-   - Sciogliere 1 parte di suolo in 2 parti di acqua distillata, agitare per 30 secondi e attendere 5 minuti.
-   - Immergere la sonda del pH-metro o utilizzare il kit a reagenti, registrando il valore. **Effettuare la misurazione ogni settimana**, soprattutto dopo piogge intense o irrigazioni con acqua dura.
+3. **Monitoraggio post-correzione**:
+   - Effettuare un **test di percolazione** dopo 2 settimane per verificare la stabilità del pH.
+   - Regolare l'irrigazione con **acqua a pH 6.0-6.5** (aggiungendo acido citrico o aceto diluito se necessario).
 
-3. **Correzione del pH**:
-   - **Se pH < 5.8**:
-     - Spargere **calce agricola** alla dose di **1-2 kg per 10 m²** (dose massima: 5 kg/10 m²/anno per evitare eccesso di calcio).
-     - Integrare con **cenere di legna** (pH ~12) in piccole quantità (100-2
+4. **Integrazione con pratiche Living Soil**:
+   - Aggiungere **micorrize** (es. *Glomus spp.*) e **batteri benefici** (es. *Pseudomonas*) per migliorare la resilienza del suolo.
+   - Utilizzare **cover crop** (es. facelia, trifoglio) per bilanciare naturalmente il pH tramite decomposizione.
+
+## Sinergie con altri elementi
+- **Lakhovsky (Onde di forma)**: Un pH ottimale amplifica l'efficacia delle **onde di forma** (es. spirali di Lakhovsky) nel promuovere la coerenza cellulare delle piante, poiché i nutrienti sono più biodisponibili.
+- **Fe-Cu (Ferro e Rame)**: In un suolo a pH
