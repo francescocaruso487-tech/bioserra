@@ -1,175 +1,190 @@
 {
-  "lastUpdate": "2026-07-02T11:56:53.000Z",
+  "lastUpdate": "2026-07-03T11:55:42.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare elettrocoltura DC a 1.5V tramite elettrodi rame/zinco (10-15cm profondità) su Milky Way F1, Titan F1, Medusa F1 e Gaia F1 in fioritura per stimolare la produzione di auxine e ridurre lo stress da umidità (80%) e pioggia (5.3mm). Fonte: [pdf_17, chunk_002].",
-      "Raccogliere Milky Way F1 oggi (2026-07-02) per evitare perdita di resina e aroma, come indicato nell'alert urgente. Fonte: [pdf_85, chunk_003].",
-      "Preparare l'antenna a spirale di rame (diametro 30cm, filo rame 2mm) per le piante in fioritura (Milky Way, Titan, Medusa, Gaia) da installare entro 24h per ottimizzare la sintesi ormonale. Fonte: [dudgrichelcult, pag. 40]."
+      "Applicare una corrente DC a basso voltaggio (3V) tra elettrodi di rame/zinco posizionati a 12 cm di profondità nel substrato vicino alle radici di Milky Way F1, Titan F1, Medusa F1 e Gaia F1 (fioritura attiva) per stimolare la sintesi di ormoni e accelerare la maturazione dei fiori, come da [pdf_17] (PAG 28).",
+      "Preparare e applicare un infuso di equiseto (Equisetum arvense) sulle foglie di tutte le piante al tramonto per aumentare la resistenza allo stress termico (31°C) e migliorare la fotosintesi, seguendo [pdf_13] (PAG 1).",
+      "Integrare nel substrato delle piante in fioritura una miscela di biochar attivato con micorrize e polvere di basalto (10g/m²) per migliorare la conducibilità elettrica e la struttura del suolo, come indicato in [pdf_85] (PAG 69)."
     ],
-    "briefing_mattutino": "La serra BioSerra presenta umidità elevata (80%) e pioggia recente (5.3mm), condizioni che possono ridurre l'ossigenazione radicale e la fotosintesi. Oggi è il momento ideale per raccogliere Milky Way F1 e applicare tecniche di elettrocoltura per compensare lo stress idrico. La Luna in Gibbosa Crescente (73% illuminazione) suggerisce di concentrare le operazioni sulle radici e sulla fioritura, come indicato nei manuali di biodinamica. Fonte: [pdf_13, pag. 1], [pdf_85, chunk_004].",
+    "briefing_mattutino": "La serra BioSerra si trova in una fase critica con 4 varietà in fioritura (Milky Way, Titan, Medusa, Gaia) e una in essiccazione (Epsilon). Oggi la temperatura è a 31.1°C con umidità al 40%, condizioni che richiedono interventi mirati per mitigare lo stress idrico e termico. Secondo Christofleau ([pdf_13], PAG 2), l'elettrocoltura può riequilibrare le piante in queste condizioni, mentre la biodinamica con equiseto potenzia la resistenza. È urgente agire sulle piante in fioritura per ottimizzare la qualità dei fiori prima della raccolta.",
     "consigli_piante": {
-      "autofiorenti": "Nessuna azione specifica oggi per le autofiorenti in fase vegetativa (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush). Monitorare l'umidità del substrato e evitare ristagni idrici.",
-      "femminizzate": [],
+      "autofiorenti": "Nessuna azione specifica oggi per le autofiorenti (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) in fase di vegetazione. Monitorare l'umidità del substrato e irrigare solo se necessario per evitare stress idrico.",
+      "femminizzate": "Nessuna azione specifica oggi per le femminizzate in vegetazione. Concentrare gli sforzi sulle piante in fioritura.",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Monitorare l'essiccazione in corso; non intervenire con irrigazione o nutrienti fino alla raccolta prevista per il 2025-07-25.",
+          "azione": "Monitorare l'essiccazione in corso. Evitare irrigazioni eccessive per non compromettere la qualità dei fiori. Applicare un leggero campo magnetico positivo (anodo nel suolo) per ridurre la traspirazione eccessiva, come da scoperta di Christofleau ([pdf_13], PAG 2).",
           "priorita": "media"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Raccogliere oggi (2026-07-02) per ottimizzare la qualità dei fiori e evitare perdita di resina. Applicare elettrocoltura DC a 1.5V dopo la raccolta per stimolare le radici residue.",
+          "azione": "Applicare corrente DC (3V) tra elettrodi di rame/zinco vicino alle radici per accelerare la maturazione dei fiori. Raccogliere entro 0 giorni per evitare perdita di resina e aroma, come da avvisi precedenti.",
           "priorita": "alta"
         },
         {
           "nome": "Titan F1",
-          "azione": "Raccogliere oggi (2026-07-02) per evitare perdita di qualità dei fiori. Applicare elettrocoltura DC a 1.5V dopo la raccolta per stimolare le radici residue.",
+          "azione": "Applicare corrente DC (3V) tra elettrodi di rame/zinco vicino alle radici per ottimizzare la qualità dei fiori. Raccogliere entro -1 giorno per evitare perdita di qualità, come da avvisi precedenti.",
           "priorita": "alta"
         },
         {
           "nome": "Medusa F1",
-          "azione": "Monitorare la fioritura; applicare elettrocoltura DC a 1.5V per stimolare la produzione di resina e ridurre lo stress da umidità. Fonte: [pdf_17, chunk_004].",
-          "priorita": "media"
+          "azione": "Applicare corrente DC (3V) tra elettrodi di rame/zinco vicino alle radici per stimolare la fioritura. Raccogliere tra -2 giorni per ottimizzare la qualità.",
+          "priorita": "alta"
         },
         {
           "nome": "Gaia F1",
-          "azione": "Monitorare la fioritura; applicare elettrocoltura DC a 1.5V per stimolare la produzione di resina e ridurre lo stress da umidità. Fonte: [pdf_17, chunk_004].",
+          "azione": "Applicare corrente DC (3V) tra elettrodi di rame/zinco vicino alle radici per accelerare la maturazione dei fiori. Raccogliere tra -7 giorni per evitare perdita di resina e aroma.",
           "priorita": "media"
         },
         {
           "nome": "Astro Lemonade F1",
-          "azione": "Nessuna azione specifica; continuare con irrigazione moderata e monitorare l'umidità del substrato.",
+          "azione": "Monitorare la fase di vegetazione. Irrigare solo se necessario per evitare stress idrico. Nessuna integrazione nutrizionale oggi.",
           "priorita": "bassa"
         },
         {
           "nome": "Cosmic Cheddar F1",
-          "azione": "Nessuna azione specifica; continuare con irrigazione moderata e monitorare l'umidità del substrato.",
+          "azione": "Monitorare la fase di vegetazione. Irrigare solo se necessario. Nessuna integrazione nutrizionale oggi.",
           "priorita": "bassa"
         },
         {
           "nome": "Orbital Banana F1",
-          "azione": "Nessuna azione specifica; continuare con irrigazione moderata e monitorare l'umidità del substrato.",
+          "azione": "Monitorare la fase di vegetazione. Irrigare solo se necessario. Nessuna integrazione nutrizionale oggi.",
           "priorita": "bassa"
         },
         {
           "nome": "Royal Gorilla F1",
-          "azione": "Nessuna azione specifica; continuare con irrigazione moderata e monitorare l'umidità del substrato.",
+          "azione": "Monitorare la fase di vegetazione. Irrigare solo se necessario. Nessuna integrazione nutrizionale oggi.",
           "priorita": "bassa"
         },
         {
           "nome": "Mexican Rush F1",
-          "azione": "Nessuna azione specifica; continuare con irrigazione moderata e monitorare l'umidità del substrato.",
+          "azione": "Monitorare la fase di vegetazione. Irrigare solo se necessario. Nessuna integrazione nutrizionale oggi.",
           "priorita": "bassa"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Antenna a spirale di rame per elettrocoltura",
-        "descrizione": "Installare un'antenna a spirale di rame (diametro 30cm, filo rame 2mm) a 10-15cm di profondità vicino al colletto delle piante in fioritura (Milky Way, Titan, Medusa, Gaia). Collegare gli estremi a una batteria da 1.5V DC per generare una corrente galvanica nel suolo. Questo stimola la sintesi di auxine e riduce lo stress da umidità. Fonte: [dudgrichelcult, pag. 40].",
-        "fonte": "[dudgrichelcult, pag. 40]",
+        "nome": "Campo Magnetico Tellurico (Brevetto Christofleau n. 529202)",
+        "descrizione": "Posizionare un elettrodo di rame (anodo) a 10 cm di profondità nel substrato vicino alle radici delle piante in fioritura e un elettrodo di zinco (catodo) a 5 cm sopra il suolo. Applicare una corrente DC di 2-3V per 4 ore al giorno (mattina presto o sera) per armonizzare le energie tra suolo e piante, riducendo lo stress termico e migliorando la fotosintesi.",
+        "fonte": "[pdf_13] (PAG 2)",
         "materiali": [
-          "filo di rame 2mm",
-          "batteria 1.5V DC",
-          "cavo isolato",
-          "trapano e paletta per l'installazione"
+          "Elettrodi di rame e zinco",
+          "Cavo elettrico isolato",
+          "Alimentatore DC 3V",
+          "Timer per gestione oraria"
         ],
         "difficolta": "media"
+      },
+      {
+        "nome": "Antenna a Spirale di Rame per Fioritura",
+        "descrizione": "Posizionare un'antenna a spirale di rame (diametro 20 cm, 3 spire) a 30 cm sopra le piante in fioritura (Milky Way, Titan, Medusa, Gaia). Questa tecnica, menzionata nei manuali di elettrocoltura, canalizza le energie telluriche e atmosferiche per potenziare la fioritura e la produzione di resina.",
+        "fonte": "[pdf_17] (PAG 31)",
+        "materiali": [
+          "Filo di rame spesso 2mm",
+          "Supporto isolante (es. legno)",
+          "Nastro isolante"
+        ],
+        "difficolta": "bassa"
       }
     ],
     "scoperte": [
-      "L'elettrocoltura DC a 1.5V applicata al suolo può compensare gli effetti negativi dell'elevata umidità (80%) e della pioggia (5.3mm) sulla fotosintesi, aumentando la traspirazione e riducendo la condensa fogliare. Esperimenti su pomodoro hanno dimostrato un aumento del 20% nella resa. Fonte: [dudgrichelcult, pag. 40].",
-      "La Luna in Gibbosa Crescente (73% illuminazione) è ideale per applicare preparati biodinamici (es. 500 o 501) alle radici delle piante in fioritura, poiché l'energia vitale è concentrata nelle parti sotterranee. Fonte: [pdf_85, chunk_004]."
+      "L'elettrocoltura con correnti DC a basso voltaggio (1-5V) può ridurre la traspirazione eccessiva in condizioni di caldo secco (31°C, 40% umidità) aumentando l'efficienza dell'assorbimento radicale, come evidenziato da Christofleau ([pdf_13], PAG 2).",
+      "L'uso di biochar attivato con micorrize e polvere di basalto nel substrato migliora la conducibilità elettrica del suolo, favorendo la formazione di un 'suolo vivente' capace di trasmettere segnali bioelettrici alle piante, come riportato in [pdf_85] (PAG 69)."
     ],
     "avvisi": [
-      "Raccogliere Milky Way F1 oggi (2026-07-02) per evitare perdita di resina e aroma.",
-      "Preparare l'antenna a spirale di rame per le piante in fioritura (Milky Way, Titan, Medusa, Gaia) entro 24h per ottimizzare la sintesi ormonale."
+      "Raccogliere Milky Way F1 entro 0 giorni (2026-07-03) per evitare perdita di resina e aroma.",
+      "Raccogliere Titan F1 entro -1 giorno (2026-07-02) per ottimizzare la qualità dei fiori."
     ],
     "piano_giornata": {
-      "mattina": "07:00-12:00: Raccogliere Milky Way F1 e Titan F1; applicare elettrocoltura DC a 1.5V tramite elettrodi rame/zinco su Medusa F1 e Gaia F1; installare l'antenna a spirale di rame per le piante in fioritura.",
-      "pomeriggio": "12:00-18:00: Evitare ore calde (>30C); monitorare l'umidità del substrato e l'ossigenazione radicale; applicare preparato biodinamico 500 alle radici delle piante in fioritura (Milky Way, Titan, Medusa, Gaia) come indicato dalla fase lunare. Fonte: [pdf_85, chunk_004].",
-      "sera": "18:00-21:00: Verificare il funzionamento degli elettrodi e dell'antenna a spirale; registrare dati di umidità, temperatura e conducibilità del suolo per ottimizzare le future applicazioni di elettrocoltura."
+      "mattina": "07:00-12:00: Applicare corrente DC (3V) tra elettrodi di rame/zinco vicino alle radici di Milky Way F1, Titan F1, Medusa F1 e Gaia F1. Posizionare l'antenna a spirale di rame sopra le piante in fioritura. Preparare e applicare l'infuso di equiseto sulle foglie di tutte le piante al tramonto.",
+      "pomeriggio": "16:00-18:00: Monitorare l'umidità del substrato e irrigare solo se necessario (evitare ore calde >30°C). Verificare il corretto funzionamento degli elettrodi e dell'alimentatore DC.",
+      "sera": "19:00-21:00: Applicare l'infuso di equiseto sulle foglie di tutte le piante. Verificare la stabilità delle antenne a spirale di rame e degli elettrodi."
     },
     "kb_sintesi": {
       "principi_attivi": [
-        "L'elettrocultura applica correnti elettriche a basso voltaggio (DC) vicino alle radici per stimolare la crescita e l'assorbimento dei nutrienti, con effetti dimostrati su resa e qualità delle piante (pdf_17, chunk_002).",
-        "L'uso di elettrodi in rame/zinco (coppia galvanica) genera una corrente naturale nel suolo, mimando i campi elettromagnetici terrestri e favorendo la sintesi di ormoni vegetali (pdf_17, chunk_004).",
-        "La biodinamica suggerisce di sincronizzare le operazioni agricole con i cicli lunari per ottimizzare l'energia vitale delle piante, soprattutto in fase di fioritura (pdf_85, chunk_003).",
-        "Il suolo vivo (Living Soil) richiede un equilibrio tra umidità (80% oggi) e aerazione: l'eccesso di pioggia (5.3mm) può ridurre l'ossigenazione radicale, mitigabile con tecniche di elettrocoltura che migliorano la struttura del suolo (pdf_13, pag. 1).",
-        "Le piante rispondono a stimoli elettrici deboli (0.5-3V) con un aumento della fotosintesi e della resistenza agli stress idrici, come dimostrato in esperimenti con corrente diretta applicata al substrato (dudgrichelcult, pag. 40)."
+        "L'elettrocoltura sfrutta correnti elettriche a basso voltaggio (DC) per stimolare la crescita delle piante e migliorare l'assorbimento dei nutrienti, agendo direttamente sulle radici tramite elettrodi posizionati nel suolo.",
+        "L'applicazione di campi magnetici terrestri (brevetto n. 529202 di Christofleau) può armonizzare le energie tra suolo e piante, potenziando la fotosintesi e la resistenza agli stress ambientali.",
+        "L'uso di materiali conduttivi come rame e zinco nelle installazioni di elettrocoltura favorisce la generazione di correnti bioelettriche naturali, simili a quelle presenti nei tessuti vegetali.",
+        "La biodinamica e l'elettrocoltura condividono il principio di connessione con le energie viventi della Terra, dove l'elettricità atmosferica e tellurica viene canalizzata per ottimizzare i processi fisiologici delle piante.",
+        "La gestione dell'umidità e della temperatura (31°C, 40% umidità) è cruciale: l'elettrocoltura può mitigare gli effetti dello stress idrico aumentando l'efficienza dell'assorbimento radicale."
       ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua a 1.5V tra due elettrodi in rame e zinco posizionati a 10-15cm di profondità nel substrato, vicino al colletto delle piante in fioritura. Questo stimola la produzione di auxine e riduce lo stress da umidità elevata (80%). Fonte: [pdf_17, chunk_002].",
-      "consiglio_suolo_da_testi": "Aggiungere micorrize e batteri benefici (es. *Pseudomonas* spp.) al substrato per migliorare la conducibilità elettrica naturale del suolo e facilitare l'assorbimento dei nutrienti in condizioni di alta umidità. Fonte: [pdf_13, pag. 2].",
-      "consiglio_biodinamica_da_testi": "Oggi, con la Luna in fase calante (secondo il calendario biodinamico), è il momento ideale per praticare la raccolta di piante aromatiche o per applicare preparati biodinamici (es. 500 o 501) alle radici, poiché l'energia della pianta è concentrata nelle parti sotterranee. Fonte: [pdf_85, chunk_004].",
-      "scoperta_del_giorno": "L'elettrocultura può compensare gli effetti negativi dell'elevata umidità (80%) e della pioggia (5.3mm) sulla fotosintesi, poiché la corrente applicata al suolo aumenta la traspirazione e riduce la condensa fogliare, come osservato in esperimenti con piante di pomodoro (dudgrichelcult, pag. 40).",
+      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (1-5V) tra due elettrodi di rame/zinco posizionati a 10-15 cm di profondità nel substrato, vicino alle radici delle piante in fioritura. Questo metodo, descritto nel manuale [pdf_17] (PAG 28), stimola l'attività enzimatica e la sintesi di ormoni vegetali, accelerando la maturazione dei fiori. Evitare sovraccarichi per non danneggiare i tessuti.",
+      "consiglio_suolo_da_testi": "Integrare nel substrato una miscela di biochar attivato con micorrize e polvere di roccia (es. basalto) per migliorare la conducibilità elettrica e la struttura del suolo. Il manuale [pdf_85] (PAG 69) sottolinea che i materiali porosi trattengono meglio le cariche elettriche, favorendo la formazione di un 'suolo vivente' capace di trasmettere segnali bioelettrici alle piante.",
+      "consiglio_biodinamica_da_testi": "Preparare un 'preparato biodinamico' a base di equiseto (Equisetum arvense) e applicarlo come infuso sulle foglie al tramonto, quando la pianta è più recettiva alle energie telluriche. Il manuale [pdf_13] (PAG 1) collega questa pratica all'aumento della resistenza alle malattie e alla stimolazione della fotosintesi, soprattutto in condizioni di caldo secco come quello attuale (31°C).",
+      "scoperta_del_giorno": "I testi di Christofleau ([pdf_13], PAG 2) evidenziano che l'elettrocoltura non solo accelera la crescita, ma può anche 'riequilibrare' le piante in condizioni di stress termico. Oggi, con 31°C e umidità al 40%, l'applicazione di una leggera corrente positiva (anodo nel suolo, catodo in aria) potrebbe ridurre la traspirazione eccessiva, mantenendo la turgescenza cellulare.",
       "tecnica_da_provare": {
-        "nome": "Sistema a elettrodi gemelli per serra",
-        "descrizione": "Posizionare due elettrodi in rame (anodo) e zinco (catodo) a 20cm di distanza, collegati a una batteria da 1.5V. Interrare gli elettrodi a 15cm di profondità, vicino alle radici delle piante in fioritura. Mantenere il circuito acceso per 4-6 ore al giorno, preferibilmente nelle ore centrali (10:00-16:00). Monitorare la risposta delle piante (vigore, fioritura) dopo 7 giorni.",
-        "fonte": "[pdf_17, chunk_002] e [pdf_13, pag. 3]",
+        "nome": "Sistema a Doppia Antenna Magnetica (Christofleau)",
+        "descrizione": "Installare due aste metalliche (rame e zinco) nel substrato, distanti 30-50 cm tra loro, collegate a un filo di rame avvolto a spirale intorno al fusto della pianta (senza contatto diretto). La corrente generata dal contatto tra i metalli e il suolo viene amplificata dalla spirale, creando un campo magnetico che stimola la crescita radicale e la fioritura. Da applicare oggi sulle piante in fase di fioritura, monitorando la risposta dopo 48 ore.",
+        "fonte": "[pdf_13] (PAG 3) e [pdf_17] (PAG 78)",
         "materiali": [
-          "2 elettrodi in rame (lunghezza 30cm, diametro 5mm)",
-          "2 elettrodi in zinco (lunghezza 30cm, diametro 5mm)",
-          "Batteria da 1.5V (tipo AA o pila a bottone)",
-          "Cavi elettrici isolati (lunghezza 1m)",
-          "Nastro isolante o connettori a vite",
-          "Tester per verificare la corrente (opzionale)"
+          "2 aste di rame (lunghezza 30 cm, diametro 5 mm)",
+          "1 asta di zinco (lunghezza 30 cm, diametro 5 mm)",
+          "Filo di rame isolato (1 mm di diametro, 2 metri)",
+          "Nastro isolante",
+          "Picchetti di legno per fissare le aste nel substrato"
         ]
       }
     }
   },
   "agenti": {
     "piante": {
-      "stato_generale": "attenzione per umidità elevata e pioggia recente",
-      "irrigazione": "Nessuna irrigazione oggi; monitorare l'umidità del substrato e evitare ristagni idrici. La pioggia di 5.3mm è sufficiente per oggi. Fonte: [pdf_13, pag. 1].",
-      "nutrizione": "Nessuna integrazione oggi; evitare nutrienti aggiuntivi per non stressare le piante in fioritura.",
-      "piante_critiche": [
-        {
-          "id": 1,
-          "nome": "Milky Way F1",
-          "giorni_a_raccolta": 1
-        }
-      ]
+      "stato_generale": "attenzione",
+      "irrigazione": "Irrigare solo se necessario, preferibilmente al mattino presto o alla sera, evitando stress idrico. Oggi con 31°C e umidità al 40%, le piante in fioritura sono più suscettibili allo stress termico.",
+      "nutrizione": "Nessuna integrazione nutrizionale oggi. Concentrarsi sull'elettrocoltura e sulla biodinamica per ottimizzare la qualità dei fiori.",
+      "piante_critiche": []
     },
     "ambiente": {
       "luna": {
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Applicare preparato biodinamico 500 alle radici delle piante in fioritura (Milky Way, Titan, Medusa, Gaia) per ottimizzare l'assorbimento dei nutrienti e ridurre lo stress da umidità. Fonte: [pdf_85, chunk_004]."
+        "consiglio": "Oggi è un giorno favorevole per applicare tecniche di elettrocoltura e biodinamica, poiché la fase di Gibbosa Crescente favorisce la crescita e la fioritura. Applicare l'infuso di equiseto al tramonto per massimizzare l'assorbimento delle energie telluriche."
       },
       "ore_luce": 15.1
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare il corretto funzionamento degli elettrodi rame/zinco (1.5V DC) su Milky Way F1 e Titan F1 dopo la raccolta.",
-        "Installare l'antenna a spirale di rame per Medusa F1 e Gaia F1 e verificare la connessione alla batteria 1.5V DC."
+        "Verificare il corretto posizionamento degli elettrodi di rame/zinco nel substrato vicino alle radici delle piante in fioritura.",
+        "Controllare il funzionamento dell'alimentatore DC e dei cavi elettrici per evitare sovraccarichi."
       ],
-      "ottimizzazione": "Aumentare la conducibilità elettrica del suolo aggiungendo batteri benefici (es. Pseudomonas spp.) per migliorare l'efficacia dell'elettrocoltura in condizioni di alta umidità. Fonte: [pdf_13, pag. 2]."
+      "ottimizzazione": "Applicare una corrente DC di 3V per 4 ore al giorno (mattina presto o sera) per armonizzare le energie tra suolo e piante, riducendo lo stress termico e migliorando la fotosintesi, come da brevetto Christofleau n. 529202."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Antenna a spirale di rame per elettrocoltura",
-      "descrizione": "Installare un'antenna a spirale di rame (diametro 30cm, filo rame 2mm) a 10-15cm di profondità vicino al colletto delle piante in fioritura (Milky Way, Titan, Medusa, Gaia). Collegare gli estremi a una batteria da 1.5V DC per generare una corrente galvanica nel suolo. Questo stimola la sintesi di auxine e riduce lo stress da umidità. Fonte: [dudgrichelcult, pag. 40].",
-      "fonte": "[dudgrichelcult, pag. 40]",
+      "nome": "Campo Magnetico Tellurico (Brevetto Christofleau n. 529202)",
+      "descrizione": "Posizionare un elettrodo di rame (anodo) a 10 cm di profondità nel substrato vicino alle radici delle piante in fioritura e un elettrodo di zinco (catodo) a 5 cm sopra il suolo. Applicare una corrente DC di 2-3V per 4 ore al giorno (mattina presto o sera) per armonizzare le energie tra suolo e piante, riducendo lo stress termico e migliorando la fotosintesi.",
+      "fonte": "[pdf_13] (PAG 2)",
       "materiali": [
-        "filo di rame 2mm",
-        "batteria 1.5V DC",
-        "cavo isolato",
-        "trapano e paletta per l'installazione"
+        "Elettrodi di rame e zinco",
+        "Cavo elettrico isolato",
+        "Alimentatore DC 3V",
+        "Timer per gestione oraria"
       ],
       "difficolta": "media"
+    },
+    {
+      "nome": "Antenna a Spirale di Rame per Fioritura",
+      "descrizione": "Posizionare un'antenna a spirale di rame (diametro 20 cm, 3 spire) a 30 cm sopra le piante in fioritura (Milky Way, Titan, Medusa, Gaia). Questa tecnica, menzionata nei manuali di elettrocoltura, canalizza le energie telluriche e atmosferiche per potenziare la fioritura e la produzione di resina.",
+      "fonte": "[pdf_17] (PAG 31)",
+      "materiali": [
+        "Filo di rame spesso 2mm",
+        "Supporto isolante (es. legno)",
+        "Nastro isolante"
+      ],
+      "difficolta": "bassa"
     }
   ],
   "avvisi": [
-    "Raccogliere Milky Way F1 oggi (2026-07-02) per evitare perdita di resina e aroma.",
-    "Preparare l'antenna a spirale di rame per le piante in fioritura (Milky Way, Titan, Medusa, Gaia) entro 24h per ottimizzare la sintesi ormonale."
+    "Raccogliere Milky Way F1 entro 0 giorni (2026-07-03) per evitare perdita di resina e aroma.",
+    "Raccogliere Titan F1 entro -1 giorno (2026-07-02) per ottimizzare la qualità dei fiori."
   ],
   "consigli_giorno": [
-    "Applicare elettrocoltura DC a 1.5V tramite elettrodi rame/zinco (10-15cm profondità) su Milky Way F1, Titan F1, Medusa F1 e Gaia F1 in fioritura per stimolare la produzione di auxine e ridurre lo stress da umidità (80%) e pioggia (5.3mm). Fonte: [pdf_17, chunk_002].",
-    "Raccogliere Milky Way F1 oggi (2026-07-02) per evitare perdita di resina e aroma, come indicato nell'alert urgente. Fonte: [pdf_85, chunk_003].",
-    "Preparare l'antenna a spirale di rame (diametro 30cm, filo rame 2mm) per le piante in fioritura (Milky Way, Titan, Medusa, Gaia) da installare entro 24h per ottimizzare la sintesi ormonale. Fonte: [dudgrichelcult, pag. 40]."
+    "Applicare una corrente DC a basso voltaggio (3V) tra elettrodi di rame/zinco posizionati a 12 cm di profondità nel substrato vicino alle radici di Milky Way F1, Titan F1, Medusa F1 e Gaia F1 (fioritura attiva) per stimolare la sintesi di ormoni e accelerare la maturazione dei fiori, come da [pdf_17] (PAG 28).",
+    "Preparare e applicare un infuso di equiseto (Equisetum arvense) sulle foglie di tutte le piante al tramonto per aumentare la resistenza allo stress termico (31°C) e migliorare la fotosintesi, seguendo [pdf_13] (PAG 1).",
+    "Integrare nel substrato delle piante in fioritura una miscela di biochar attivato con micorrize e polvere di basalto (10g/m²) per migliorare la conducibilità elettrica e la struttura del suolo, come indicato in [pdf_85] (PAG 69)."
   ]
 }
