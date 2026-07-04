@@ -2103,19 +2103,49 @@ function openDiarioModal(id) {
   diarioRenderBioBadge();
 }
 
+// (6) Calendario biodinamico integrato col diario: mappa giorno biodinamico -> tipi di
+// intervento consigliati (chiavi = option value di #diario-tipo). Tap su un chip seleziona
+// direttamente quel tipo nel form, completando il collegamento "giorno favorevole -> intervento".
+const BIO_TIPO_SUGGERITI = {
+  frutto: ['trattamento_fogliare', 'nutrizione'],
+  fiore:  ['trattamento_fogliare', 'lakhovsky'],
+  radice: ['irrigazione', 'fe_cu', 'acqua_magnetizzata'],
+  foglia: ['nutrizione', 'trattamento_fogliare', 'spirale_rame'],
+};
+const BIO_TIPO_LABELS = {
+  irrigazione: '\u{1F4A7} Irrigazione',
+  acqua_magnetizzata: '\u{1F9F2} Acqua Magnetizzata',
+  spirale_rame: '\u{1F300} Spirale in Rame',
+  fe_cu: '\u26A1 Fe-Cu',
+  lakhovsky: '\u3030\uFE0F Lakhovsky',
+  trattamento_fogliare: '\u{1F33F} Trattamento Fogliare',
+  nutrizione: '\u{1F331} Nutrizione',
+};
+
+function diarioSelezionaTipoSuggerito(tipo) {
+  const sel = document.getElementById('diario-tipo');
+  if (!sel) return;
+  sel.value = tipo;
+  sel.style.transition = 'background-color 0.3s';
+  sel.style.backgroundColor = 'var(--green3)';
+  setTimeout(function(){ sel.style.backgroundColor = ''; }, 350);
+}
+
 // (6) Badge giorno biodinamico nel modal diario: usa getDayType/DAY_TYPES definite in ambiente.js.
 // Guardia con typeof per non rompere se ambiente.js non fosse ancora caricato.
 function diarioRenderBioBadge() {
   const badge = document.getElementById('diario-bio-badge');
+  const sugg = document.getElementById('diario-bio-suggerimenti');
   if (!badge) return;
   if (typeof getDayType !== 'function' || typeof DAY_TYPES === 'undefined') {
     badge.style.display = 'none';
+    if (sugg) sugg.style.display = 'none';
     return;
   }
   try {
     const ct = getDayType(new Date());
     const bioT = DAY_TYPES[ct.type];
-    if (!bioT) { badge.style.display = 'none'; return; }
+    if (!bioT) { badge.style.display = 'none'; if (sugg) sugg.style.display = 'none'; return; }
     const colorMap = { frutto:'#ffb74d', fiore:'#ce93d8', radice:'#a1887f', foglia:'#80cbc4' };
     const col = colorMap[ct.type] || 'var(--text2)';
     badge.style.background = col + '22';
@@ -2125,7 +2155,25 @@ function diarioRenderBioBadge() {
        ct.type === 'fiore'  ? 'fioritura' :
        ct.type === 'radice' ? 'radici/substrato' : 'parte vegetativa/fogliare');
     badge.style.display = 'block';
-  } catch (e) { badge.style.display = 'none'; }
+
+    if (sugg) {
+      const tipi = BIO_TIPO_SUGGERITI[ct.type] || [];
+      if (tipi.length) {
+        sugg.innerHTML = '<div style="font-size:11px;color:var(--text3);margin-bottom:5px;">Consigliati oggi:</div>' +
+          '<div style="display:flex;flex-wrap:wrap;gap:6px;">' +
+          tipi.map(function(t){
+            const lbl = BIO_TIPO_LABELS[t] || t;
+            return '<button type="button" onclick="diarioSelezionaTipoSuggerito(\'' + t + '\')" ' +
+              'style="background:' + col + '22;color:' + col + ';border:1px solid ' + col + '55;' +
+              'border-radius:14px;padding:5px 10px;font-size:12px;font-weight:600;cursor:pointer;">' +
+              '\u2B50 ' + lbl + '</button>';
+          }).join('') + '</div>';
+        sugg.style.display = 'block';
+      } else {
+        sugg.style.display = 'none';
+      }
+    }
+  } catch (e) { badge.style.display = 'none'; if (sugg) sugg.style.display = 'none'; }
 }
 
 function closeDiarioModal(e) {
