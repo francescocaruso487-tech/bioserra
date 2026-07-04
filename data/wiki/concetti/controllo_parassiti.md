@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-07-03
+aggiornato: 2026-07-04
 pdf_count: 0
 ---
 
@@ -12,28 +12,38 @@ pdf_count: 0
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** è una strategia fitosanitaria basata sull’uso di metodi biologici per gestire infestazioni senza ricorrere a pesticidi chimici. Questo approccio sfrutta i meccanismi di equilibrio dell’ecosistema serra, dove predatori naturali, repellenti vegetali e pratiche colturali riducono la proliferazione di parassiti come afidi, acari e tripidi. Il principio chiave è **prevenire** piuttosto che curare: un suolo vivo e ricco di microrganismi antagonisti (es. *Trichoderma*) ostacola lo sviluppo di patogeni, mentre insetti utili (come *Phytoseiulus persimilis* per gli acari) mantengono le popolazioni sotto soglia di danno. L’olio di neem, ad esempio, agisce come **regolatore della crescita** per gli insetti, interferendo con il loro sviluppo larvale e la capacità di nutrirsi, senza uccidere direttamente gli organismi benefici.
-
-In serra outdoor a Caserta (41°N), dove l’umidità e le temperature miti favoriscono la proliferazione di parassiti, il controllo naturale diventa ancora più cruciale. L’adozione di **piante trappola** (es. *Calendula officinalis*) o **barriere aromatiche** (basilico, menta) distrae gli insetti dannosi, mentre l’uso di **funghi entomopatogeni** (es. *Beauveria bassiana*) infetta e uccide specifici parassiti senza danneggiare l’ambiente. Questo metodo si allinea con i principi della **Living Soil**, dove la biodiversità del suolo e la salute delle piante riducono la suscettibilità agli attacchi esterni.
+Il **Controllo Parassiti Naturale** è un approccio fitosanitario basato sull’equilibrio ecosistemico, che sfrutta meccanismi biologici, chimici e fisici per limitare le infestazioni senza ricorrere a pesticidi sintetici. In un sistema **Living Soil** come quello della serra outdoor a Caserta (41°N), questo metodo si avvale della biodiversità del suolo e della pianta per creare un ambiente ostile ai patogeni, favorendo invece organismi utili (predatori, antagonisti, microrganismi). Il meccanismo d’azione si basa su:
+- **Competizione**: piante sane e suolo vivo riducono lo spazio per patogeni e parassiti.
+- **Predazione/Parassitismo**: insetti utili (es. *Phytoseiulus persimilis* per gli acari) o microrganismi (es. *Bacillus thuringiensis*) controllano le popolazioni dannose.
+- **Induzione di resistenza**: trattamenti con elicitori naturali (es. olio di neem) attivano le difese della pianta.
+Questo approccio funziona perché replica i processi naturali, evitando lo sviluppo di resistenze e preservando la salute del suolo e delle colture a lungo termine.
 
 ## Come si applica in serra
+Per una serra outdoor **Living Soil** a Caserta (clima mediterraneo con estati calde e umide), segui queste istruzioni pratiche:
 
-1. **Ispezione quotidiana**
-   - Controlla **foglie giovani, steli e pagina inferiore delle foglie** con una lente d’ingrandimento per rilevare uova, larve o adulti di parassiti (es. afidi neri, ragnetto rosso).
-   - Usa **trappole cromotropiche gialle/blu** per monitorare la presenza di tripidi e moscerini.
+1. **Monitoraggio quotidiano**:
+   - Ispeziona foglie (soprattutto sottofusto) e steli con una lente d’ingrandimento, cercando uova, larve o danni (es. fori, melata).
+   - Usa trappole cromotropiche gialle/blu per insetti volanti (afidi, moscerini).
 
-2. **Prevenzione con olio di neem**
-   - **Diluizione**: 5–10 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) per litro d’acqua.
-   - **Applicazione**: Spruzza **ogni 7 giorni** al tramonto (evita l’esposizione diretta al sole per prevenire ustioni fogliari). Copri uniformemente, soprattutto le parti giovani.
-   - **Frequenza**: Aumenta a 3–4 giorni in caso di infestazione acuta.
+2. **Prevenzione con olio di neem**:
+   - Diluizione: 5–10 ml/L di acqua + 1 ml di sapone di potassio (adesivo).
+   - Applicazione: nebulizza sulle foglie e sul suolo ogni **7 giorni** (o dopo piogge intense), preferibilmente al tramonto per evitare ustioni.
+   - Effetto: repellente, fungicida e regolatore della crescita degli insetti.
 
-3. **Introduzione di insetti utili**
-   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2–5 individui/m² in caso di attacco di ragnetto rosso. Ripeti ogni 2 settimane fino a risoluzione.
-   - **Crisope** (*Chrysoperla carnea*): Deposita uova o larve in serra per combattere afidi e cocciniglie. Ideale durante la vegetazione.
-   - **Nematodi entomopatogeni** (es. *Steinernema feltiae*): Applica al suolo per tripidi e moscerini del terreno, soprattutto in fioritura.
+3. **Insetti utili**:
+   - **Acari predatori** (*Phytoseiulus persimilis*): introduci 2–5 individui/m² in caso di infestazione da *Tetranychus urticae* (ragnetto rosso).
+   - **Crisopidi** (*Chrysoperla carnea*): larve predatrici di afidi, da rilasciare in fase di vegetazione (10–20 individui/m²).
+   - **Nematodi entomopatogeni** (*Steinernema feltiae*): per tripidi e larve di lepidotteri, da applicare al suolo in condizioni umide (1–2 milioni/m²).
 
-4. **Piante repellenti e trappole**
-   - Pianta **basilico, lavanda o tagete** ai bordi della serra per allontanare afidi e mosche bianche.
-   - Usa **piante trappola** (es. *Fagopyrum esculentum* per tripidi) da rimuovere e bruciare in caso di infestazione.
+4. **Barriere fisiche**:
+   - Rete anti-insetto (maglia <0.6 mm) per escludere moscerini e farfalle notturne.
+   - Pacciamatura con paglia o fibra di cocco per ridurre l’umidità a livello del suolo (sfavorevole per funghi e larve).
 
-5. **Rinforzo del suolo**
+5. **Rimedi casalinghi**:
+   - **Decotto di ortica**: 1 kg di ortica fresca in 10 L d’acqua per 48h, filtrare e spruzzare (afidi, acari).
+   - **Sapone potassico**: 20 g/L d’acqua per afidi e cocciniglie (evitare su piante giovani).
+
+## Sinergie con altri elementi
+Il Controllo Parassiti Naturale si integra perfettamente con altre tecniche **Living Soil** ed elettrocultura:
+
+- **Lakhov
