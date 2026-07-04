@@ -2,7 +2,7 @@
 id: gestione_ph_suolo
 label: Gestione pH Suolo
 categoria: suolo
-aggiornato: 2026-07-03
+aggiornato: 2026-07-04
 pdf_count: 0
 ---
 
@@ -12,31 +12,30 @@ pdf_count: 0
 # Gestione pH Suolo
 
 ## Descrizione
-Il pH del suolo rappresenta la misura dell'acidità o alcalinità del substrato, influenzando direttamente la biodisponibilità dei nutrienti essenziali per le piante. Un pH compreso tra **6.0 e 7.0** è considerato ottimale per la maggior parte delle colture in serra outdoor, poiché garantisce un equilibrio tra macro e micronutrienti. Al di sotto di 5.8, il suolo diventa troppo acido, portando a carenze di calcio, magnesio e fosforo, oltre a favorire la tossicità da alluminio e manganese. Al contrario, un pH superiore a 7.2 riduce l'assorbimento di ferro, zinco e fosforo, compromettendo la salute delle piante e la resa produttiva.
+Il pH del suolo rappresenta la misura dell'acidità o basicità del substrato, influenzando direttamente la biodisponibilità dei nutrienti essenziali per le piante. In un sistema **Living Soil** outdoor a Caserta (41°N), il range ottimale si attesta tra **6.0 e 7.0**, dove la maggior parte dei macro e microelementi (azoto, fosforo, potassio, calcio, magnesio, ferro, zinco) risulta accessibile alle radici. Un pH fuori da questo intervallo compromette l'assorbimento: valori inferiori a 5.8 aumentano la solubilità di metalli pesanti (alluminio, manganese), tossici per le piante, mentre valori superiori a 7.2 riducono la disponibilità di fosforo, ferro e zinco, causando carenze anche in presenza di suoli ricchi. La gestione del pH non è statica: variazioni stagionali, piogge acide, decomposizione della materia organica e l'attività microbica (es. funghi micorrizici) possono alterarlo rapidamente. In serra, dove il substrato è spesso confinato e soggetto a stress idrici, monitoraggi frequenti diventano critici per prevenire squilibri nutrizionali.
 
-Il meccanismo di azione del pH si basa sulla **solubilità dei nutrienti**: a valori acidi, i metalli pesanti possono diventare tossici, mentre a valori alcalini, molti elementi diventano insolubili e inaccessibili alle radici. In un sistema **Living Soil**, la gestione del pH è cruciale perché la biodiversità microbica (funghi micorrizici, batteri decompositori) dipende da un ambiente stabile. Un pH ottimale favorisce la simbiosi radice-microrganismo, migliorando l'assorbimento dei nutrienti e la resilienza del suolo.
+Il meccanismo di regolazione si basa su reazioni chimiche reversibili tra il suolo e gli ioni H⁺/OH⁻. Ad esempio, l'aggiunta di **calce** (CaCO₃) neutralizza l'acidità tramite la reazione:
+**CaCO₃ + 2H⁺ → Ca²⁺ + CO₂ + H₂O**,
+mentre lo **zolfo** (S) abbassa il pH ossidandosi in presenza di batteri solfossidanti:
+**2S + 3O₂ + 2H₂O → 2H₂SO₄ → 2H⁺ + SO₄²⁻**.
+Questi processi sono influenzati dalla temperatura, umidità e attività microbica, rendendo la gestione del pH un equilibrio dinamico piuttosto che una correzione una tantum.
+
+---
 
 ## Come si applica in serra
-1. **Misurazione regolare**:
-   - Utilizzare un **pHmetro digitale** (preferibilmente con sonda a penetrazione) o un kit a reagenti per analizzare il suolo ogni **1-2 settimane**, prelevando campioni a 10-15 cm di profondità.
-   - Effettuare le misurazioni **al mattino**, evitando periodi di pioggia o irrigazione recente.
 
-2. **Correzione del pH**:
-   - **pH < 5.8 (acido)**:
-     - Aggiungere **calce agricola** (CaCO₃) o **calce dolomitica** (CaMg(CO₃)₂) in quantità di **50-100 g/m²**, distribuendola uniformemente e incorporandola leggermente con una zappa.
-     - Ripetere la misurazione dopo **7-10 giorni** e correggere ulteriormente se necessario.
-   - **pH > 7.2 (alcalino)**:
-     - Applicare **zolfo elementare** (S) in polvere o granulare, alla dose di **20-50 g/m²**, mescolandolo al substrato.
-     - In alternativa, utilizzare **torba acida** o **compost di foglie** per abbassare gradualmente il pH.
+1. **Strumentazione**:
+   - Utilizzare un **pH-metro digitale** (precisione ±0.1) o kit a reagenti (es. pH test kit per suolo) per misurazioni settimanali, preferibilmente alla stessa ora (mattina presto) per coerenza.
+   - Campionare il suolo a **10-15 cm di profondità**, evitando zone con residui di fertilizzanti o acqua stagnante.
 
-3. **Monitoraggio post-correzione**:
-   - Effettuare un **test di percolazione** dopo 2 settimane per verificare la stabilità del pH.
-   - Regolare l'irrigazione con **acqua a pH 6.0-6.5** (aggiungendo acido citrico o aceto diluito se necessario).
+2. **Frequenza di monitoraggio**:
+   - **Vegetazione**: ogni 7-10 giorni, poiché la crescita rapida e l'irrigazione frequente possono alterare il pH.
+   - **Fioritura**: ogni 10-14 giorni, riducendo la frequenza se il pH si stabilizza.
 
-4. **Integrazione con pratiche Living Soil**:
-   - Aggiungere **micorrize** (es. *Glomus spp.*) e **batteri benefici** (es. *Pseudomonas*) per migliorare la resilienza del suolo.
-   - Utilizzare **cover crop** (es. facelia, trifoglio) per bilanciare naturalmente il pH tramite decomposizione.
-
-## Sinergie con altri elementi
-- **Lakhovsky (Onde di forma)**: Un pH ottimale amplifica l'efficacia delle **onde di forma** (es. spirali di Lakhovsky) nel promuovere la coerenza cellulare delle piante, poiché i nutrienti sono più biodisponibili.
-- **Fe-Cu (Ferro e Rame)**: In un suolo a pH
+3. **Correzione rapida**:
+   - **pH < 5.8**:
+     - Applicare **calce dolomitica** (CaMg(CO₃)₂) a **1-2 kg/10 m²**, distribuendola uniformemente e incorporandola leggermente con una forca.
+     - Alternativa: **bicarbonato di calcio** (Ca(HCO₃)₂) a **0.5 kg/10 m²** in soluzione (10 g/L d'acqua), da irrorare sul substrato.
+     - *Attenzione*: evitare eccessi, che possono innalzare troppo il pH e bloccare il fosforo.
+   - **pH > 7.2**:
+     - Applicare **zolfo elementare** (S) a **0.3-0.5 kg/10 m²**, mescolato al substrato o in soluzione (5 g/L d'acqua) per applic
