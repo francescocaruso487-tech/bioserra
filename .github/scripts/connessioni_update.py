@@ -541,9 +541,9 @@ def main():
                 'target': id_b,
                 'peso': peso,
                 'tipo': 'semantico_reale',
-                'concetto_a': conn.get('concetto_a',''),
-                'concetto_b': conn.get('concetto_b',''),
-                'descrizione': conn.get('descrizione',''),
+                'concetto_a': sanitize_testo(conn.get('concetto_a','')),
+                'concetto_b': sanitize_testo(conn.get('concetto_b','')),
+                'descrizione': sanitize_testo(conn.get('descrizione','')),
                 'tipo_conn': tipo_conn,
                 'data': oggi
             }
