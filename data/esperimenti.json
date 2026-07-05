@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-04T10:30:24.657781+00:00",
+  "lastUpdate": "2026-07-05T10:37:47.059170+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2025,14 +2025,44 @@
       "data_proposta": "2026-07-03",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della Solarizzazione del Living Soil sulla Velocità di Emergenza e Salute dei Semi Fast Flowering (Indica Dominant)",
+      "ipotesi": "Una preparazione del terreno tramite solarizzazione (Manuale A: riduzione di patogeni, competitori radicali e aumento di ossigeno/materia organica) favorirà una emergenza più rapida e una riduzione delle macchie marroni sulle foglie (Manuale B: sintomo di stress nutrizionale o patogeni) nei semi fast flowering (Indica dominant), grazie a un substrato più sano e meno competitivo. L'assenza di competitori radicali e patogeni permetterà alle radici di assorbire nutrienti in modo efficiente, riducendo lo stress idrico/nutrizionale che causa le macchie marroni.",
+      "protocollo": [
+        "Preparare due aiuole gemelle (30x30 cm) nel Living Soil della BioSerra Caserta, con identica composizione iniziale (50% compost maturo, 30% fibra di cocco, 20% perlite).",
+        "Applicare la solarizzazione su una aiuola (copertura con teli trasparenti per 15 giorni, temperatura del suolo >40°C per 7 giorni consecutivi). Mantenere l'altra aiuola come controllo (nessuna solarizzazione).",
+        "Dopo la solarizzazione, seminare 20 semi fast flowering (varietà Indica dominant, es. 'Northern Lights Auto') in ciascuna aiuola, distribuiti uniformemente. Mantenere umidità costante (water-only) e stessa esposizione solare.",
+        "Monitorare giornalmente: (1) giorni all'emergenza, (2) numero di piantine con macchie marroni sulle foglie (fino a 30 giorni). Misurare anche l'altezza media delle piantine a 15 e 30 giorni."
+      ],
+      "materiali": [
+        "Teli di polietilene trasparente (spessore 0.15 mm), termometro da suolo, semi fast flowering Indica dominant (es. 'Northern Lights Auto'), Living Soil pre-miscelato, acqua distillata, righello, quaderno di campo, lente d'ingrandimento (per macchie marroni)"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Tempo medio di emergenza (giorni) per aiuola",
+        "Percentuale di piantine con macchie marroni a 15 e 30 giorni (con foto per documentazione)",
+        "Altezza media delle piantine a 15 e 30 giorni (cm)",
+        "Conteggio di patogeni visibili nel suolo (es. funghi) tramite osservazione diretta o test rapido (opzionale)"
+      ],
+      "variabili_controllo": "Stesso lotto di semi, stessa varietà, stessa esposizione solare, stessa irrigazione (water-only), stessa composizione iniziale del suolo, stessa densità di semina, stessa temperatura ambientale (serra outdoor).",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "5 Fattori Che Influenzano La Disponibilità Di Nutrienti Nell",
+      "fonte_b": "Guida per identificare le macchie marron",
+      "originalità": "L'esperimento combina la preparazione del suolo (Manuale A) con la risposta dei semi fast flowering (Manuale B) in un contesto Living Soil, testando una sinergia non esplorata nei manuali originali. La solarizzazione è un metodo biodinamico/elettrico (calore + luce UV) che non viene mai associato ai semi fast flowering in letteratura.",
+      "id": "esp_conn_2026-07-05_001",
+      "data_proposta": "2026-07-05",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-04",
-    "nuove_proposte": 0,
-    "pdf_analizzati": 72,
-    "connessioni_usate": 38
+    "data": "2026-07-05",
+    "nuove_proposte": 1,
+    "pdf_analizzati": 80,
+    "connessioni_usate": 31
   }
 }
