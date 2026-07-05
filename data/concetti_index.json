@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-07-04",
-  "total": 15,
+  "lastUpdate": "2026-07-05",
+  "total": 20,
   "fonte": "289 PDF analizzati",
   "concetti": [
     {
@@ -9,9 +9,9 @@
       "categoria": "elettrocultura",
       "descrizione": "Utilizza spirali di rame per stimolare la crescita delle piante attraverso campi elettromagnetici naturali.",
       "istruzioni_pratiche": [
-        "Posiziona una spirale di rame (diametro 10-15 cm) vicino alla base della pianta, a 10-20 cm di distanza.",
-        "Orientala verso nord per massimizzare l’effetto biofisico.",
-        "Sostituisci ogni 6-12 mesi per mantenere l’efficacia."
+        "Posiziona una spirale di rame (diametro 10-15 cm) vicino alla base della pianta, a 20-30 cm di distanza.",
+        "Orientala verso nord per massimizzare l'effetto biofisico.",
+        "Sostituiscila ogni 2-3 mesi per mantenere l'efficacia."
       ],
       "varianti": [
         "Spirale cosmica rame",
@@ -45,25 +45,24 @@
       "id": "elettrocultura",
       "label": "Elettrocultura",
       "categoria": "elettrocultura",
-      "descrizione": "Applica correnti elettriche deboli o campi elettromagnetici per accelerare lo sviluppo radicale e la fotosintesi.",
+      "descrizione": "Applica correnti elettriche deboli o campi elettromagnetici per migliorare la salute e la produttività delle piante.",
       "istruzioni_pratiche": [
-        "Collega un elettrodo positivo (anodo) a una barra di rame interrata vicino alle radici.",
-        "Usa una batteria da 9V o un generatore a bassa tensione (1-5V) per creare un circuito chiuso.",
+        "Collega un elettrodo positivo a una barra di rame interrata e uno negativo a una pianta.",
+        "Usa una batteria da 9V o un generatore a bassa tensione (1-12V).",
         "Applica per 2-4 ore al giorno durante la fase di vegetazione."
       ],
       "varianti": [
         "Elettrocultura"
       ],
       "fasi_guida": [
-        "germinazione",
         "vegetazione",
         "fioritura"
       ],
       "rilevanza": 90,
       "tag_correlati": [
         "correnti elettriche",
-        "radici",
-        "fotosintesi"
+        "biofisica",
+        "stimolazione"
       ],
       "pdf_ids": [
         "pdf_13",
@@ -77,11 +76,11 @@
       "id": "antenna_terrestre",
       "label": "Antenna Terrestre",
       "categoria": "elettrocultura",
-      "descrizione": "Collega le piante a terra tramite un conduttore per armonizzare il loro campo bioelettrico con quello terrestre.",
+      "descrizione": "Collega le piante a terra tramite un conduttore per sfruttare le energie telluriche e migliorare l'assorbimento dei nutrienti.",
       "istruzioni_pratiche": [
-        "Inserisci un paletto di rame o acciaio zincato nel terreno vicino alla pianta.",
-        "Collega il paletto a una spirale di rame posizionata sopra il suolo con un filo conduttore.",
-        "Assicurati che il circuito sia continuo e a contatto con il terreno umido."
+        "Inserisci un paletto di rame o acciaio nel terreno vicino alla pianta.",
+        "Collega il paletto alla pianta con un filo di rame isolato.",
+        "Assicurati che il terreno sia umido per ottimizzare la conduzione."
       ],
       "varianti": [
         "Antenna terrestre"
@@ -92,9 +91,9 @@
       ],
       "rilevanza": 85,
       "tag_correlati": [
-        "bioelettricità",
-        "connessione terra",
-        "armonizzazione"
+        "energia tellurica",
+        "conduttori",
+        "nutrienti"
       ],
       "pdf_ids": [
         "pdf_4",
@@ -110,11 +109,11 @@
       "id": "acqua_magnetizzata",
       "label": "Acqua Magnetizzata",
       "categoria": "elettrocultura",
-      "descrizione": "Tratta l’acqua di irrigazione con magneti per migliorare la solubilità dei nutrienti e l’assorbimento radicale.",
+      "descrizione": "Tratta l'acqua con magneti per migliorare la sua struttura molecolare e aumentare l'assorbimento delle piante.",
       "istruzioni_pratiche": [
-        "Fai passare l’acqua attraverso un tubo con magneti al neodimio (2-4 magneti) prima dell’irrigazione.",
-        "Mantieni il flusso lento (1-2 litri/minuto) per massimizzare l’effetto.",
-        "Usa acqua magnetizzata per annaffiature e nebulizzazioni fogliari."
+        "Fai passare l'acqua attraverso un dispositivo magnetico (2-4 magneti al neodimio da 1000-3000 Gauss).",
+        "Irriga le piante con l'acqua magnetizzata almeno 2 volte a settimana.",
+        "Evita di riscaldare l'acqua dopo la magnetizzazione per preservarne i benefici."
       ],
       "varianti": [
         "Acqua magnetizzata"
@@ -126,9 +125,9 @@
       ],
       "rilevanza": 80,
       "tag_correlati": [
-        "nutrienti",
+        "struttura dell'acqua",
         "assorbimento",
-        "idratazione"
+        "nutrizione"
       ],
       "pdf_ids": [
         "pdf_4",
@@ -138,27 +137,28 @@
       "pdf_count": 3
     },
     {
-      "id": "compostaggio_biofisico",
-      "label": "Compostaggio Biofisico",
+      "id": "compostaggio",
+      "label": "Compostaggio",
       "categoria": "suolo",
-      "descrizione": "Accelera la decomposizione della materia organica con tecniche elettromagnetiche o metalli per ottenere compost ricco di microrganismi benefici.",
+      "descrizione": "Trasforma materiali organici in compost per arricchire il suolo di nutrienti e microrganismi benefici.",
       "istruzioni_pratiche": [
-        "Aggiungi scaglie di rame o spirali di rame al cumulo di compost per stimolare l’attività microbica.",
-        "Irriga il compost con acqua magnetizzata per migliorare la solubilizzazione dei nutrienti.",
-        "Mescola settimanalmente e mantieni umidità al 60-70%."
+        "Mescola scarti vegetali, letame e materiali carboniosi (foglie secche, paglia) in un cumulo.",
+        "Mantieni umido (60-70% di umidità) e gira il cumulo ogni 2 settimane.",
+        "Usa il compost maturo dopo 3-6 mesi per migliorare la struttura del suolo."
       ],
       "varianti": [
         "Compostaggio"
       ],
       "fasi_guida": [
-        "essiccazione",
-        "concia"
+        "germinazione",
+        "vegetazione",
+        "fioritura"
       ],
-      "rilevanza": 75,
+      "rilevanza": 90,
       "tag_correlati": [
-        "microrganismi",
         "nutrienti organici",
-        "decomposizione"
+        "microrganismi",
+        "suolo vivo"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -167,6 +167,139 @@
         "pdf_20"
       ],
       "pdf_count": 4
+    },
+    {
+      "id": "biofisica_applicata",
+      "label": "Biofisica Applicata alle Piante",
+      "categoria": "elettrocultura",
+      "descrizione": "Utilizza principi di fisica e biofisica per ottimizzare la crescita delle piante attraverso stimoli elettromagnetici e vibrazionali.",
+      "istruzioni_pratiche": [
+        "Applica frequenze sonore specifiche (es. 528 Hz per la rigenerazione cellulare) tramite altoparlanti vicino alle piante.",
+        "Usa dispositivi a onde scalari per stimolare la crescita.",
+        "Monitora la risposta delle piante e adatta le frequenze."
+      ],
+      "varianti": [
+        "Biofisica applicata alle piante"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 85,
+      "tag_correlati": [
+        "frequenze",
+        "onde scalari",
+        "stimolazione vibrazionale"
+      ],
+      "pdf_ids": [],
+      "pdf_count": 0
+    },
+    {
+      "id": "suolo_vivo",
+      "label": "Suolo Vivo",
+      "categoria": "suolo",
+      "descrizione": "Promuovi la biodiversità microbica del suolo per migliorare la salute delle piante e la resilienza alle avversità.",
+      "istruzioni_pratiche": [
+        "Aggiungi micorrize e batteri benefici (es. Bacillus, Trichoderma) al terreno.",
+        "Evita l'uso di pesticidi chimici per preservare la vita microbica.",
+        "Usa pacciamatura organica per mantenere l'umidità e la temperatura del suolo."
+      ],
+      "varianti": [
+        "Living Soil"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 95,
+      "tag_correlati": [
+        "microrganismi",
+        "resilienza",
+        "nutrizione naturale"
+      ],
+      "pdf_ids": [],
+      "pdf_count": 0
+    },
+    {
+      "id": "stimolazione_elettrica",
+      "label": "Stimolazione Elettrica delle Piante",
+      "categoria": "elettrocultura",
+      "descrizione": "Applica impulsi elettrici deboli per accelerare la crescita, la fioritura e la produzione di biomassa.",
+      "istruzioni_pratiche": [
+        "Collega un generatore di impulsi (es. 1-5V, 1-100 Hz) a elettrodi piantati nel terreno vicino alle radici.",
+        "Applica gli impulsi per 1-2 ore al giorno durante la fase di vegetazione.",
+        "Monitora la risposta delle piante e regola la tensione e la frequenza."
+      ],
+      "varianti": [
+        "Elettrocultura"
+      ],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 88,
+      "tag_correlati": [
+        "impulsi elettrici",
+        "crescita accelerata",
+        "biomassa"
+      ],
+      "pdf_ids": [],
+      "pdf_count": 0
+    },
+    {
+      "id": "irrigazione_vibrazionale",
+      "label": "Irrigazione Vibrazionale",
+      "categoria": "irrigazione",
+      "descrizione": "Tratta l'acqua con vibrazioni sonore o frequenze specifiche per migliorare la sua capacità di idratare e nutrire le piante.",
+      "istruzioni_pratiche": [
+        "Fai passare l'acqua attraverso un dispositivo che emette frequenze (es. 432 Hz o 528 Hz) per 10-15 minuti.",
+        "Irriga le piante con l'acqua vibrazionale almeno 3 volte a settimana.",
+        "Combina con l'uso di acqua magnetizzata per effetti sinergici."
+      ],
+      "varianti": [
+        "Acqua vibrazionale"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 82,
+      "tag_correlati": [
+        "frequenze sonore",
+        "idratazione",
+        "nutrizione"
+      ],
+      "pdf_ids": [],
+      "pdf_count": 0
+    },
+    {
+      "id": "metalli_bioattivi",
+      "label": "Metalli Bioattivi",
+      "categoria": "elettrocultura",
+      "descrizione": "Utilizza metalli come rame, zinco o ferro per creare campi elettromagnetici che stimolano la crescita delle piante.",
+      "istruzioni_pratiche": [
+        "Inserisci barre di metallo (es. rame, zinco) nel terreno vicino alle radici.",
+        "Collega i metalli tra loro con un filo di rame per creare un circuito.",
+        "Sostituisci i metalli ogni 3-6 mesi per mantenere l'efficacia."
+      ],
+      "varianti": [
+        "Spirale cosmica rame"
+      ],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 87,
+      "tag_correlati": [
+        "campi elettromagnetici",
+        "metalli",
+        "stimolazione"
+      ],
+      "pdf_ids": [],
+      "pdf_count": 0
     },
     {
       "id": "gestione_suolo_vivente",
@@ -461,9 +594,34 @@
         "categoria": "elettrocultura"
       },
       {
-        "id": "compostaggio_biofisico",
-        "label": "Compostaggio Biofisico",
+        "id": "compostaggio",
+        "label": "Compostaggio",
         "categoria": "suolo"
+      },
+      {
+        "id": "biofisica_applicata",
+        "label": "Biofisica Applicata alle Piante",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "suolo_vivo",
+        "label": "Suolo Vivo",
+        "categoria": "suolo"
+      },
+      {
+        "id": "stimolazione_elettrica",
+        "label": "Stimolazione Elettrica delle Piante",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "irrigazione_vibrazionale",
+        "label": "Irrigazione Vibrazionale",
+        "categoria": "irrigazione"
+      },
+      {
+        "id": "metalli_bioattivi",
+        "label": "Metalli Bioattivi",
+        "categoria": "elettrocultura"
       },
       {
         "id": "gestione_suolo_vivente",
@@ -533,6 +691,21 @@
         "peso": 1
       },
       {
+        "source": "spirale_rame",
+        "target": "biofisica_applicata",
+        "peso": 1
+      },
+      {
+        "source": "spirale_rame",
+        "target": "stimolazione_elettrica",
+        "peso": 1
+      },
+      {
+        "source": "spirale_rame",
+        "target": "metalli_bioattivi",
+        "peso": 5
+      },
+      {
         "source": "elettrocultura",
         "target": "antenna_terrestre",
         "peso": 1
@@ -543,34 +716,179 @@
         "peso": 1
       },
       {
+        "source": "elettrocultura",
+        "target": "biofisica_applicata",
+        "peso": 1
+      },
+      {
+        "source": "elettrocultura",
+        "target": "stimolazione_elettrica",
+        "peso": 1
+      },
+      {
+        "source": "elettrocultura",
+        "target": "metalli_bioattivi",
+        "peso": 3
+      },
+      {
         "source": "antenna_terrestre",
         "target": "acqua_magnetizzata",
         "peso": 1
       },
       {
-        "source": "compostaggio_biofisico",
+        "source": "antenna_terrestre",
+        "target": "biofisica_applicata",
+        "peso": 1
+      },
+      {
+        "source": "antenna_terrestre",
+        "target": "stimolazione_elettrica",
+        "peso": 1
+      },
+      {
+        "source": "antenna_terrestre",
+        "target": "metalli_bioattivi",
+        "peso": 1
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "biofisica_applicata",
+        "peso": 1
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "stimolazione_elettrica",
+        "peso": 1
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "irrigazione_vibrazionale",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "metalli_bioattivi",
+        "peso": 1
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "compostaggio_organico",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "fertilizzazione_organica",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "te_di_compost",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "gestione_ph_suolo",
+        "peso": 2
+      },
+      {
+        "source": "compostaggio",
+        "target": "suolo_vivo",
+        "peso": 3
+      },
+      {
+        "source": "compostaggio",
         "target": "gestione_suolo_vivente",
         "peso": 1
       },
       {
-        "source": "compostaggio_biofisico",
+        "source": "compostaggio",
         "target": "compostaggio_organico",
         "peso": 1
       },
       {
-        "source": "compostaggio_biofisico",
+        "source": "compostaggio",
         "target": "inoculazione_micorrize",
         "peso": 1
       },
       {
-        "source": "compostaggio_biofisico",
+        "source": "compostaggio",
         "target": "te_di_compost",
         "peso": 1
       },
       {
-        "source": "compostaggio_biofisico",
+        "source": "compostaggio",
         "target": "gestione_ph_suolo",
         "peso": 1
+      },
+      {
+        "source": "biofisica_applicata",
+        "target": "stimolazione_elettrica",
+        "peso": 1
+      },
+      {
+        "source": "biofisica_applicata",
+        "target": "metalli_bioattivi",
+        "peso": 1
+      },
+      {
+        "source": "suolo_vivo",
+        "target": "gestione_suolo_vivente",
+        "peso": 1
+      },
+      {
+        "source": "suolo_vivo",
+        "target": "compostaggio_organico",
+        "peso": 1
+      },
+      {
+        "source": "suolo_vivo",
+        "target": "inoculazione_micorrize",
+        "peso": 1
+      },
+      {
+        "source": "suolo_vivo",
+        "target": "te_di_compost",
+        "peso": 1
+      },
+      {
+        "source": "suolo_vivo",
+        "target": "gestione_ph_suolo",
+        "peso": 1
+      },
+      {
+        "source": "stimolazione_elettrica",
+        "target": "metalli_bioattivi",
+        "peso": 1
+      },
+      {
+        "source": "irrigazione_vibrazionale",
+        "target": "compostaggio_organico",
+        "peso": 2
+      },
+      {
+        "source": "irrigazione_vibrazionale",
+        "target": "fertilizzazione_organica",
+        "peso": 2
+      },
+      {
+        "source": "irrigazione_vibrazionale",
+        "target": "te_di_compost",
+        "peso": 2
+      },
+      {
+        "source": "irrigazione_vibrazionale",
+        "target": "farine_di_rocce",
+        "peso": 2
+      },
+      {
+        "source": "irrigazione_vibrazionale",
+        "target": "gestione_ph_suolo",
+        "peso": 2
       },
       {
         "source": "gestione_suolo_vivente",
