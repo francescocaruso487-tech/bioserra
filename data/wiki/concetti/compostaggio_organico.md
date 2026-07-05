@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-07-04
+aggiornato: 2026-07-05
 pdf_count: 4
 ---
 
@@ -12,30 +12,28 @@ pdf_count: 4
 # Compostaggio Organico
 
 ## Descrizione
-Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che, attraverso l’azione di microrganismi aerobici, si trasforma in un ammendante stabile e ricco di nutrienti: il compost. Questo processo non è solo una tecnica di riciclo dei rifiuti organici, ma rappresenta un pilastro fondamentale per la creazione e il mantenimento di un **Living Soil** outdoor, soprattutto in contesti come quello di Caserta (41°N), dove le condizioni climatiche e pedologiche richiedono substrati ben strutturati e ricchi di materia organica.
+Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il compost. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macroorganismi (lombrichi, acari, collemboli) che, in condizioni ottimali di umidità, temperatura e aerazione, scompongono la materia organica in humus. L’humus risultante è un substrato vivo, dotato di una struttura porosa che migliora la ritenzione idrica e la capacità di scambio cationico (CSC), fondamentale per la salute delle piante in **Living Soil**.
 
-Il meccanismo d’azione si basa sulla decomposizione termofila (55-65°C), che permette di eliminare patogeni, semi di infestanti e agenti fitopatogeni, garantendo un prodotto finale igienizzato e pronto per essere utilizzato come ammendante. La presenza di una **comunità microbica equilibrata** (batteri, funghi, attinomiceti) è essenziale per accelerare la mineralizzazione della sostanza organica e la formazione di humus stabile, che migliora la struttura del suolo, la capacità di scambio cationico (CEC) e la disponibilità di nutrienti per le piante. Inoltre, il compost apporta microrganismi benefici che favoriscono la simbiosi radicale e la resilienza del suolo alle avversità.
+Il meccanismo si basa su fasi termofile (55–65°C) e mesofile, dove i microrganismi termofili dominano inizialmente, accelerando la decomposizione e uccidendo patogeni e semi di malerbe. Successivamente, i decompositori mesofili stabilizzano il materiale, arricchendo il compost di nutrienti assimilabili (azoto, fosforo, potassio) e sostanze umiche che stimolano la crescita radicale e la resistenza delle piante. Per coltivazioni outdoor in serra a Caserta (41°N), il compost di qualità è essenziale per mantenere un suolo vivo, soprattutto durante le fasi di **germinazione** e **vegetazione**, dove le piante richiedono un apporto costante di nutrienti naturali e una struttura del suolo ottimale per lo sviluppo radicale.
+
+---
 
 ## Come si applica in serra
-Per ottenere un compost di qualità in una serra **Living Soil outdoor** a Caserta, segui queste istruzioni pratiche:
 
-1. **Selezione dei materiali**:
-   - **Materiali verdi** (ricchi di azoto): scarti di frutta/verdura, erba fresca, letame fresco (es. stallatico), fondi di caffè.
-   - **Materiali marroni** (ricchi di carbonio): foglie secche, paglia, cartone non stampato, rametti triturati, gusci di frutta secca.
-   - **Bilanciamento**: rapporto ideale **C:N = 25:1 a 30:1** (es. 2 parti marroni per 1 parte verde). Evita materiali trattati con pesticidi o metalli pesanti.
+### **1. Selezione dei materiali**
+- **Materiali verdi (ricchi di azoto)**: scarti di frutta/verdura, erba fresca, letame fresco (es. stallatico), fondi di caffè.
+- **Materiali marroni (ricchi di carbonio)**: foglie secche, paglia, cartone non patinato, ramaglie triturate, trucioli di legno.
+- **Bilanciamento**: rapporto ideale **2:1** (verdi:marroni) per evitare acidificazione o putrefazione. A Caserta, in serra, si può aggiustare con scarti di potatura locale (marroni) e residui di ortaggi (verdi).
 
-2. **Preparazione del cumulo**:
-   - Crea un cumulo di dimensioni **1-1,5 m di altezza e larghezza** (per garantire un buon isolamento termico e aerazione).
-   - Posiziona il cumulo su terreno nudo o su una base di ramaglie per favorire il drenaggio e l’aerazione dal basso.
-   - Inumidisci i materiali man mano che li aggiungi (il compost deve essere umido come una spugna strizzata).
+### **2. Preparazione del cumulo**
+- **Dimensione**: cumulo di **1–1,5 m di altezza** e **1–1,5 m di larghezza** per garantire un buon isolamento termico.
+- **Base**: posizionare uno strato di materiali grossolani (ramaglie) per favorire l’aerazione dal basso.
+- **Umidità**: mantenere al **50–60%** (come una spugna strizzata). In serra, l’umidità può essere regolata con nebulizzatori o coperture traspiranti per evitare eccessi dovuti al clima mediterraneo.
 
-3. **Gestione della temperatura e umidità**:
-   - **Temperatura**: monitora con un termometro da compost. Se supera i **65°C**, rivolta il cumulo per evitare la morte dei microrganismi termofili. Se scende sotto i **55°C**, aggiungi materiali verdi per riattivare il processo.
-   - **Umidità**: mantieni il 50-60% di umidità. Se troppo secco, aggiungi acqua; se troppo bagnato, aggiungi materiali marroni e rivolta più spesso.
+### **3. Gestione della temperatura**
+- **Monitoraggio**: usare un termometro da compost o sonda digitale. La fase termofila (55–65°C) dura **2–4 settimane**.
+- **Controllo**: se la temperatura supera i 65°C, rivoltare il cumulo per ossigenare e abbassare la temperatura. Se scende sotto i 50°C, aggiungere materiali verdi o coprire con teli per trattenere il calore.
 
-4. **Rivoltamento e aerazione**:
-   - Rivolta il cumulo **ogni 2-3 giorni** con una forca o un aeratore per garantire ossigenazione e omogeneizzare la decomposizione.
-   - Dopo 2-3 settimane, il cumulo dovrebbe raggiungere la temperatura massima (55-65°C) e iniziare a raffreddarsi.
-
-5. **Maturazione**:
-   - Dopo 6-8 settimane, il compost dovrebbe essere scuro, friabile e con odore di terra umida. Se presenta ancora materiali riconosc
+### **4. Rivoltamenti e aerazione**
+- **Frequenza**: rivoltare ogni **2–3 giorni** durante la fase termofila, poi ogni **5–7 giorni** nella fase di maturazione.
+- **Tecnica**: usare un forcone o una pala per mescolare uniformemente, assicurandosi che tutti i materiali siano es
