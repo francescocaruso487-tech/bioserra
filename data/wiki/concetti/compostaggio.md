@@ -2,7 +2,7 @@
 id: compostaggio
 label: Compostaggio
 categoria: suolo
-aggiornato: 2026-07-02
+aggiornato: 2026-07-05
 pdf_count: 4
 ---
 
@@ -12,35 +12,34 @@ pdf_count: 4
 # Compostaggio
 
 ## Descrizione
-Il compostaggio è un processo biologico naturale che trasforma materiali organici in un substrato ricco di nutrienti, microrganismi benefici e sostanza organica stabile, noto come compost. Questo processo avviene grazie all'azione di batteri, funghi, attinomiceti e organismi del suolo che decompongono la materia organica in presenza di ossigeno (processo aerobico). Il compost maturo migliora la struttura del suolo, aumenta la capacità di ritenzione idrica, favorisce lo sviluppo delle radici e fornisce nutrienti in forma assimilabile dalle piante. Inoltre, stimola l'attività microbica del suolo, essenziale per la salute delle piante in un sistema **Living Soil**.
+Il compostaggio è un processo naturale di decomposizione aerobica dei materiali organici, che trasforma scarti vegetali, letame e altri residui in un ammendante ricco di nutrienti e microrganismi benefici. Questo processo avviene grazie all’azione di batteri, funghi, attinomiceti e altri organismi del suolo, che scompongono la materia organica in humus stabile. Il compost maturo migliora la struttura del terreno, aumenta la capacità di ritenzione idrica, favorisce la biodiversità microbica e fornisce nutrienti essenziali in forma lentamente disponibile, riducendo la necessità di fertilizzanti sintetici.
 
-In una serra outdoor a Caserta (41°N), il compostaggio assume un ruolo cruciale per mantenere l'equilibrio del suolo, soprattutto in condizioni di caldo estivo e umidità variabile. Un compost ben gestito riduce la necessità di fertilizzanti sintetici, promuove la resilienza delle piante e migliora la biodiversità del suolo. Il processo richiede un equilibrio tra materiali ricchi di carbonio (struttura) e azoto (energia), umidità controllata e aerazione per evitare fermentazioni anaerobiche dannose.
+In un sistema **Living Soil** come quello outdoor a Caserta (41°N), il compostaggio assume un ruolo chiave per mantenere l’equilibrio del suolo. La decomposizione controllata consente di riciclare nutrienti locali (ad esempio, residui di potatura, foglie secche o scarti di cucina) e di integrare microrganismi benefici che competono con patogeni e promuovono la salute delle piante. Inoltre, un compost ben gestito aiuta a tamponare il pH del suolo e a migliorare la resilienza delle colture, soprattutto in condizioni di stress idrico o termico tipiche del clima mediterraneo.
 
 ## Come si applica in serra
+Per un sistema **Living Soil outdoor** a Caserta, segui queste istruzioni pratiche per il compostaggio in serra:
 
 1. **Selezione dei materiali**:
-   - **Carbonio (3 parti)**: Ramaglie tritate, paglia, foglie secche, cartone non stampato, fondi di caffè.
-   - **Azoto (1 parte)**: Resti vegetali freschi (erba tagliata, scarti di cucina), letame maturo (equino, bovino o avicolo), residui di potatura.
-   - *Evita*: carne, latticini, piante malate o trattate con pesticidi.
+   - **Materiali azotati** (umidi): scarti di frutta/verdura, erba fresca, letame (es. equino o bovino ben maturo), fondi di caffè.
+   - **Materiali carboniosi** (secchi): foglie secche, paglia, trucioli di legno non trattato, cartone non inchiostrato.
+   - *Evita*: carne, latticini, oli, piante malate o infestate da parassiti.
 
-2. **Preparazione del cumulo**:
-   - Crea un cumulo di almeno 1 m³ per garantire un buon isolamento termico.
-   - Alterna strati di materiali carboniosi e azotati (es. 10 cm di ramaglie, 5 cm di erba, 2 cm di letame).
-   - Aggiungi un 5-10% di terra o compost maturo per inoculare microrganismi benefici.
+2. **Costruzione del cumulo**:
+   - Crea un cumulo di **1-1.5 m di altezza** e **1-2 m di larghezza** per garantire un buon rapporto superficie/volume e trattenere calore.
+   - Alterna strati di materiali azotati e carboniosi (rapporto ideale **2:1** in volume, es. 2 parti di foglie secche per 1 parte di letame).
+   - Interra occasionalmente scarti di potatura o ramaglie per favorire l’aerazione.
 
-3. **Gestione del processo**:
-   - **Umidità**: Mantieni il 60% (simile a una spugna strizzata). In estate, copri con un telo per evitare essiccazione; in inverno, proteggi dalla pioggia eccessiva.
-   - **Aerazione**: Rivolta il cumulo ogni 2 settimane con una forca o un aeratore per ossigenare i microrganismi e prevenire cattivi odori.
-   - **Temperatura**: Idealmente tra 40°C e 60°C (misurabile con termometro da compost). Se supera i 65°C, aggiungi materiali carboniosi e rivolta più frequentemente.
+3. **Gestione dell’umidità e temperatura**:
+   - Mantieni l’umidità al **60-70%** (il cumulo dovrebbe essere umido come una spugna strizzata).
+   - Copri il cumulo con un telo traspirante per proteggerlo dalla pioggia eccessiva o dal sole diretto.
+   - Gira il cumulo ogni **2 settimane** con una forca o un compost turner per ossigenare e accelerare la decomposizione.
 
-4. **Maturazione**:
-   - Il compost è pronto in 3-6 mesi quando assume un aspetto scuro, odore di terra umida e temperatura stabile.
-   - Setaccia con un setaccio a maglia fine per separare eventuali materiali non decomposti.
-
-5. **Utilizzo**:
-   - **Ammendante**: Spargi 2-5 cm di compost sulla superficie del suolo prima della semina o del trapianto, incorporandolo leggermente.
-   - **Tè di compost**: Immergi 1 parte di compost in 5 parti di acqua non clorata per 24-48 ore, filtra e nebulizza sulle foglie o sul suolo.
+4. **Maturazione e utilizzo**:
+   - Il compost è pronto dopo **3-6 mesi**, quando ha un aspetto scuro, odore di terra e struttura simile a terriccio.
+   - Distribuisci **1-3 cm di compost maturo** sulla superficie del suolo prima della semina o durante la vegetazione, evitando di interrarlo per non disturbare la vita microbica.
+   - In serra, puoi anche utilizzare il compost come **strato di pacciamatura** per ridurre l’evaporazione e mantenere la temperatura del suolo.
 
 ## Sinergie con altri elementi
+Il compostaggio si integra perfettamente con altre tecniche per un **Living Soil** avanzato a Caserta:
 
-- **Lakhovsky (Onde di forma)**: Il compost arricchisce il suolo di microrganismi benefici che possono essere potenziati dall'applicazione di onde di forma (es. piramidi) per stimolare la crescita microbica.
+- **Elettrocultura (Lakhovsky)**: Un suolo ricco di microrganismi benefici (come quelli del compost) amplifica gli effetti delle onde
