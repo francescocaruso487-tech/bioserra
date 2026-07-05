@@ -18,12 +18,21 @@ PIANTE = [
     {'id': 2,  'nome': 'Titan F1',         'tipo': 'autofiorente', 'germoglio': '2026-04-22', 'harvest_min': 70, 'harvest_max': 75},
     {'id': 3,  'nome': 'Medusa F1',        'tipo': 'autofiorente', 'germoglio': '2026-04-21', 'harvest_min': 70, 'harvest_max': 75},
     {'id': 8,  'nome': 'Gaia F1',          'tipo': 'autofiorente', 'germoglio': '2026-04-21', 'harvest_min': 65, 'harvest_max': 70},
-    {'id': 4,  'nome': 'Astro Lemonade F1','tipo': 'femminizzata', 'germoglio': '2026-04-21', 'flor_start': '2026-10-01', 'taglio': '2026-11-20'},
-    {'id': 11, 'nome': 'Cosmic Cheddar F1','tipo': 'femminizzata', 'germoglio': '2026-05-02', 'flor_start': '2026-10-01', 'taglio': '2026-11-20'},
-    {'id': 6,  'nome': 'Orbital Banana F1','tipo': 'femminizzata', 'germoglio': '2026-04-30', 'flor_start': '2026-10-01', 'taglio': '2026-11-25'},
-    {'id': 10, 'nome': 'Royal Gorilla',    'tipo': 'femminizzata', 'germoglio': '2026-04-22', 'flor_start': '2026-10-15', 'taglio': '2026-12-09'},
-    {'id': 9,  'nome': 'Mexican Rush',     'tipo': 'femminizzata', 'germoglio': '2026-04-21', 'flor_start': '2026-10-15', 'taglio': '2026-12-14'},
+    {'id': 4,  'nome': 'Astro Lemonade F1','tipo': 'femminizzata', 'germoglio': '2026-04-21', 'flor_start': '2026-10-01', 'harvest_min': 50},
+    {'id': 11, 'nome': 'Cosmic Cheddar F1','tipo': 'femminizzata', 'germoglio': '2026-05-02', 'flor_start': '2026-10-01', 'harvest_min': 50},
+    {'id': 6,  'nome': 'Orbital Banana F1','tipo': 'femminizzata', 'germoglio': '2026-04-30', 'flor_start': '2026-10-01', 'harvest_min': 55},
+    {'id': 10, 'nome': 'Royal Gorilla',    'tipo': 'femminizzata', 'germoglio': '2026-04-22', 'flor_start': '2026-10-15', 'harvest_min': 55},
+    {'id': 9,  'nome': 'Mexican Rush',     'tipo': 'femminizzata', 'germoglio': '2026-04-21', 'flor_start': '2026-10-15', 'harvest_min': 60},
 ]
+
+# FIX Rev.22: moltiplicatori ore-sole — stessa logica dei helper client in piante.js
+# (autoSunMult cap 1.8x da Rev.21, femmSunMult cap 1.4x invariato). Prima le date
+# server erano baseline pure (nessun moltiplicatore): generavano date_raccolta e
+# alert errati (es. Epsilon "in essiccazione" a inizio luglio, mentre la stima
+# reale di campo Rev.21 era taglio ~07/08). idealH=14 come nel client.
+IDEAL_H  = 14
+CAP_AUTO = 1.8   # ricalibrato Rev.21 su ancora reale (Epsilon F1)
+CAP_FEMM = 1.4   # invariato — ricalibrazione rimandata a inizio ottobre 2026
 
 ESSICCAZIONE_GG = 15
 CONCIA_GG = 20
@@ -122,6 +131,14 @@ def main():
         fase_map[p['id']] = p.get('fase', 'Vegetazione')
     print(f'  Fasi esistenti: {fase_map}')
 
+    # FIX Rev.22: moltiplicatori ore-sole (stessa formula dei helper client).
+    # Con fallback astronomico (~15h estate) il rapporto scende sotto 1 e il
+    # minimo 1x riporta alle date baseline — comportamento neutro e sicuro.
+    _rapp = (IDEAL_H / ore_luce) if ore_luce and ore_luce > 0 else 1.0
+    mult_auto = min(CAP_AUTO, max(1.0, _rapp))
+    mult_femm = min(CAP_FEMM, max(1.0, _rapp))
+    print(f'  Moltiplicatori ore-sole: auto x{mult_auto:.2f} (cap {CAP_AUTO}) | femm x{mult_femm:.2f} (cap {CAP_FEMM})')
+
     stato_piante = []
     alerts_oggi  = []
 
@@ -134,8 +151,11 @@ def main():
         fase = fase_map.get(p['id'], 'Vegetazione')
 
         if p['tipo'] == 'autofiorente':
-            # Date di riferimento basate su harvest_min fisso (no moltiplicatore)
-            data_taglio = germ + datetime.timedelta(days=p['harvest_min'])
+            # FIX Rev.22: date corrette col moltiplicatore ore-sole (come
+            # autoSunDays() client) — prima erano baseline pure, senza
+            # moltiplicatore, e generavano alert/Telegram errati.
+            giorni_taglio = round(p['harvest_min'] * mult_auto)
+            data_taglio = germ + datetime.timedelta(days=giorni_taglio)
             data_essic  = data_taglio + datetime.timedelta(days=ESSICCAZIONE_GG)
             data_concia = data_essic  + datetime.timedelta(days=CONCIA_GG)
 
@@ -180,8 +200,12 @@ def main():
                 })
 
         else:  # femminizzata
+            # FIX Rev.22: taglio calcolato = flor_start + durata fioritura
+            # x moltiplicatore (come femmFlorDays() client, cap 1.4x) —
+            # prima era una data hardcoded baseline.
             flor_d   = datetime.date.fromisoformat(p['flor_start'])
-            taglio_d = datetime.date.fromisoformat(p['taglio'])
+            giorni_fior = round(p['harvest_min'] * mult_femm)
+            taglio_d = flor_d + datetime.timedelta(days=giorni_fior)
             essic_d  = taglio_d + datetime.timedelta(days=ESSICCAZIONE_GG)
             concia_d = essic_d  + datetime.timedelta(days=CONCIA_GG)
 
@@ -202,7 +226,7 @@ def main():
                 'giorni_a_essiccazione': giorni_a_essiccazione,
                 'giorni_a_concia': giorni_a_concia,
                 'data_fioritura': p['flor_start'],
-                'data_raccolta': p['taglio'],
+                'data_raccolta': taglio_d.isoformat(),
                 'data_essiccazione': essic_d.isoformat(),
                 'data_concia': concia_d.isoformat()
             }
@@ -225,6 +249,14 @@ def main():
             'alerts_oggi': alerts_oggi
         }
     }
+    # FIX Rev.22: preserva le chiavi scritte dall'app (slider ore sole).
+    # Prima venivano PERSE ad ogni run notturno: il run successivo non trovava
+    # ore_luce_effettive e ricadeva sulle ore astronomiche (~15h estate) invece
+    # delle effettive (4-6.5h), azzerando di fatto il moltiplicatore.
+    if ore_luce_effettive:
+        output['ore_luce_effettive'] = float(ore_luce_effettive)
+    if stato_attuale.get('ore_luce_update'):
+        output['ore_luce_update'] = stato_attuale['ore_luce_update']
 
     print(f'\nAlerts generati: {len(alerts_oggi)}')
     for a in alerts_oggi:
