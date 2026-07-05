@@ -237,11 +237,16 @@ function femmFlorDays(p, days) {
   return Math.round(base * femmSunMult(p));
 }
 
-/* Moltiplicatore ore-sole per autofiorenti: ciclo geneticamente fisso, meno sensibile
-   al fotoperiodo delle femminizzate ma comunque rallentato da poco sole. Cap 1.3x (Rev.17). */
+/* Moltiplicatore ore-sole per autofiorenti: ciclo geneticamente fisso (flowering trigger
+   non dipende dal fotoperiodo), ma la VELOCITÀ di crescita/maturazione sì. Cap 1.8x (Rev.21),
+   ricalibrato da 1.3x sui dati reali di stagione: con ore-sole effettive 4-6.5h/giorno
+   (vs idealH=14h) il cap 1.3x sottostimava enormemente il ritardo reale osservato su tutte
+   le autofiorenti (nessuna pronta al taglio ai tempi previsti). Calibrazione: Epsilon F1
+   (germ 21/04/2026, harvestMin 60gg) con cap 1.8x cade il 07/08/2026, in linea con la stima
+   diretta di Fra ("prima metà agosto"). Vedi FIX REV.21. */
 function autoSunMult(p) {
   let m = (p.idealH && currentSunHours > 0) ? (p.idealH / currentSunHours) : 1;
-  if (m > 1.3) m = 1.3;   // cap più basso delle femminizzate: meno sensibili
+  if (m > 1.8) m = 1.8;   // cap ricalibrato Rev.21 (era 1.3x, sottostimava il ritardo reale)
   if (m < 1)   m = 1;     // il sole non accorcia mai il ciclo
   return m;
 }
@@ -251,7 +256,7 @@ function autoSunDays(p, days) {
 }
 
 function getAutoHarvestDate(p) {
-  // Autofiorenti: data germinazione + gg produttore corretti per ore di sole (cap 1.3x)
+  // Autofiorenti: data germinazione + gg produttore corretti per ore di sole (cap 1.8x)
   if (!p.germDate) return null;
   const germ = new Date(p.germDate);
   const harvestMin = addDays(germ, autoSunDays(p, p.harvestMin));
@@ -291,7 +296,7 @@ function renderTimelineInBox(id) {
   let harvestDate = null;
 
   if (p.type === 'auto') {
-    // Giorni produttore corretti per ore di sole reali (cap 1.3x, vedi autoSunDays)
+    // Giorni produttore corretti per ore di sole reali (cap 1.8x, vedi autoSunDays)
     const ovr = loadPlantPhaseOverride(p.id);
     const vegRatio = 0.40; // ~40% del ciclo in vegetazione
     const florRatio = 0.45; // ~45% in fioritura
@@ -888,7 +893,7 @@ function checkHarvestAlerts() {
       }
     }
 
-    // Alert SOLE — autofiorenti: ciclo intero (non solo fioritura) rallentato da poco sole (cap 1.3x).
+    // Alert SOLE — autofiorenti: ciclo intero (non solo fioritura) rallentato da poco sole (cap 1.8x).
     if (p.type === 'auto' && !(ovr && ovr.harvestDate) && p.idealH && currentSunHours > 0) {
       const elapsedAuto = daysDiff(germ, today);
       if (elapsedAuto >= 5) {
@@ -999,7 +1004,7 @@ function renderActivePlants() {
     if (ovr && ovr.harvestDate) {
       harvestDate = new Date(ovr.harvestDate);
     } else if (p.type === 'auto' && germ) {
-      // Autofiorenti: giorni produttore corretti per ore di sole (cap 1.3x)
+      // Autofiorenti: giorni produttore corretti per ore di sole (cap 1.8x)
       harvestDate = addDays(germ, autoSunDays(p, p.harvestMin));
     } else if (p.type === 'femm') {
       const fi = getEffectiveFlorStart(p);
