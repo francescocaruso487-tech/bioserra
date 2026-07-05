@@ -10,13 +10,13 @@
         "germoglio": "2026-04-21",
         "giorni_vita": 75,
         "ore_luce_oggi": 4.0,
-        "fase": "Essiccazione",
-        "giorni_a_raccolta": -15,
-        "giorni_a_essiccazione": 0,
-        "giorni_a_concia": 20,
-        "data_raccolta": "2026-06-20",
-        "data_essiccazione": "2026-07-05",
-        "data_concia": "2026-07-25"
+        "fase": "Fioritura",
+        "giorni_a_raccolta": 33,
+        "giorni_a_essiccazione": 48,
+        "giorni_a_concia": 68,
+        "data_raccolta": "2026-08-07",
+        "data_essiccazione": "2026-08-22",
+        "data_concia": "2026-09-11"
       },
       {
         "id": 1,
@@ -26,12 +26,12 @@
         "giorni_vita": 73,
         "ore_luce_oggi": 4.0,
         "fase": "Fioritura",
-        "giorni_a_raccolta": -3,
-        "giorni_a_essiccazione": 12,
-        "giorni_a_concia": 32,
-        "data_raccolta": "2026-07-02",
-        "data_essiccazione": "2026-07-17",
-        "data_concia": "2026-08-06"
+        "giorni_a_raccolta": 53,
+        "giorni_a_essiccazione": 68,
+        "giorni_a_concia": 88,
+        "data_raccolta": "2026-08-27",
+        "data_essiccazione": "2026-09-11",
+        "data_concia": "2026-10-01"
       },
       {
         "id": 2,
@@ -41,12 +41,12 @@
         "giorni_vita": 74,
         "ore_luce_oggi": 4.0,
         "fase": "Fioritura",
-        "giorni_a_raccolta": -4,
-        "giorni_a_essiccazione": 11,
-        "giorni_a_concia": 31,
-        "data_raccolta": "2026-07-01",
-        "data_essiccazione": "2026-07-16",
-        "data_concia": "2026-08-05"
+        "giorni_a_raccolta": 52,
+        "giorni_a_essiccazione": 67,
+        "giorni_a_concia": 87,
+        "data_raccolta": "2026-08-26",
+        "data_essiccazione": "2026-09-10",
+        "data_concia": "2026-09-30"
       },
       {
         "id": 3,
@@ -56,12 +56,12 @@
         "giorni_vita": 75,
         "ore_luce_oggi": 4.0,
         "fase": "Fioritura",
-        "giorni_a_raccolta": -5,
-        "giorni_a_essiccazione": 10,
-        "giorni_a_concia": 30,
-        "data_raccolta": "2026-06-30",
-        "data_essiccazione": "2026-07-15",
-        "data_concia": "2026-08-04"
+        "giorni_a_raccolta": 51,
+        "giorni_a_essiccazione": 66,
+        "giorni_a_concia": 86,
+        "data_raccolta": "2026-08-25",
+        "data_essiccazione": "2026-09-09",
+        "data_concia": "2026-09-29"
       },
       {
         "id": 8,
@@ -71,12 +71,12 @@
         "giorni_vita": 75,
         "ore_luce_oggi": 4.0,
         "fase": "Fioritura",
-        "giorni_a_raccolta": -10,
-        "giorni_a_essiccazione": 5,
-        "giorni_a_concia": 25,
-        "data_raccolta": "2026-06-25",
-        "data_essiccazione": "2026-07-10",
-        "data_concia": "2026-07-30"
+        "giorni_a_raccolta": 42,
+        "giorni_a_essiccazione": 57,
+        "giorni_a_concia": 77,
+        "data_raccolta": "2026-08-16",
+        "data_essiccazione": "2026-08-31",
+        "data_concia": "2026-09-20"
       },
       {
         "id": 4,
@@ -86,13 +86,14 @@
         "giorni_vita": 75,
         "fase": "Vegetazione",
         "giorni_a_fioritura": 88,
-        "giorni_a_raccolta": 138,
-        "giorni_a_essiccazione": 153,
-        "giorni_a_concia": 173,
+        "giorni_a_raccolta": 158,
+        "giorni_a_essiccazione": 173,
+        "giorni_a_concia": 193,
         "data_fioritura": "2026-10-01",
-        "data_raccolta": "2026-11-20",
-        "data_essiccazione": "2026-12-05",
-        "data_concia": "2026-12-25"
+        "data_raccolta": "2026-12-10",
+        "data_essiccazione": "2026-12-25",
+        "data_concia": "2027-01-14",
+        "ore_luce_oggi": 4.0
       },
       {
         "id": 11,
@@ -102,13 +103,14 @@
         "giorni_vita": 64,
         "fase": "Vegetazione",
         "giorni_a_fioritura": 88,
-        "giorni_a_raccolta": 138,
-        "giorni_a_essiccazione": 153,
-        "giorni_a_concia": 173,
+        "giorni_a_raccolta": 158,
+        "giorni_a_essiccazione": 173,
+        "giorni_a_concia": 193,
         "data_fioritura": "2026-10-01",
-        "data_raccolta": "2026-11-20",
-        "data_essiccazione": "2026-12-05",
-        "data_concia": "2026-12-25"
+        "data_raccolta": "2026-12-10",
+        "data_essiccazione": "2026-12-25",
+        "data_concia": "2027-01-14",
+        "ore_luce_oggi": 4.0
       },
       {
         "id": 6,
@@ -118,13 +120,14 @@
         "giorni_vita": 66,
         "fase": "Vegetazione",
         "giorni_a_fioritura": 88,
-        "giorni_a_raccolta": 143,
-        "giorni_a_essiccazione": 158,
-        "giorni_a_concia": 178,
+        "giorni_a_raccolta": 165,
+        "giorni_a_essiccazione": 180,
+        "giorni_a_concia": 200,
         "data_fioritura": "2026-10-01",
-        "data_raccolta": "2026-11-25",
-        "data_essiccazione": "2026-12-10",
-        "data_concia": "2026-12-30"
+        "data_raccolta": "2026-12-17",
+        "data_essiccazione": "2027-01-01",
+        "data_concia": "2027-01-21",
+        "ore_luce_oggi": 4.0
       },
       {
         "id": 10,
@@ -134,13 +137,14 @@
         "giorni_vita": 74,
         "fase": "Vegetazione",
         "giorni_a_fioritura": 102,
-        "giorni_a_raccolta": 157,
-        "giorni_a_essiccazione": 172,
-        "giorni_a_concia": 192,
+        "giorni_a_raccolta": 179,
+        "giorni_a_essiccazione": 194,
+        "giorni_a_concia": 214,
         "data_fioritura": "2026-10-15",
-        "data_raccolta": "2026-12-09",
-        "data_essiccazione": "2026-12-24",
-        "data_concia": "2027-01-13"
+        "data_raccolta": "2026-12-31",
+        "data_essiccazione": "2027-01-15",
+        "data_concia": "2027-02-04",
+        "ore_luce_oggi": 4.0
       },
       {
         "id": 9,
@@ -150,21 +154,17 @@
         "giorni_vita": 75,
         "fase": "Vegetazione",
         "giorni_a_fioritura": 102,
-        "giorni_a_raccolta": 162,
-        "giorni_a_essiccazione": 177,
-        "giorni_a_concia": 197,
+        "giorni_a_raccolta": 186,
+        "giorni_a_essiccazione": 201,
+        "giorni_a_concia": 221,
         "data_fioritura": "2026-10-15",
-        "data_raccolta": "2026-12-14",
-        "data_essiccazione": "2026-12-29",
-        "data_concia": "2027-01-18"
+        "data_raccolta": "2027-01-07",
+        "data_essiccazione": "2027-01-22",
+        "data_concia": "2027-02-11",
+        "ore_luce_oggi": 4.0
       }
     ],
-    "alerts_oggi": [
-      {
-        "tipo": "essiccazione",
-        "pianta_id": 7,
-        "msg": "Epsilon F1: essiccazione in corso, concia il 2026-07-25"
-      }
-    ]
-  }
+    "alerts_oggi": []
+  },
+  "ore_luce_effettive": 4.0
 }
