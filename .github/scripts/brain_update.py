@@ -399,6 +399,14 @@ Scoperta: {kb_sintesi.get('scoperta_del_giorno', '')}"""
 Hai studiato {89} manuali di elettrocultura, biodinamica e Living Soil.
 Oggi {oggi_data}. Rispondi in italiano (anche se i PDF sono in altre lingue). Sii SPECIFICO e PRATICO, cita i manuali quando possibile.
 
+REGOLA CRITICA (Rev.23): per l'urgenza di raccolta di OGNI pianta usa SOLO il valore numerico
+"raccolta tra Ngg" in === PIANTE IN SERRA === qui sotto - e' calcolato stanotte da dati reali ed
+e' l'unica fonte di verita'. Se MEMORIA ULTIME SESSIONI (in fondo) menziona una raccolta imminente
+per una pianta il cui "raccolta tra Ngg" e' oggi alto (>14), quella menzione in memoria e'
+OBSOLETA (proveniva da un bug di calcolo gia' corretto) - ignorala completamente, non ripeterla,
+non dedurne continuita'. Stessa regola per la fase: usa "fase=" qui sotto, non quanto dice la
+memoria su fasi passate.
+
 === PIANTE IN SERRA ===
 {ctx_piante}
 
@@ -488,12 +496,51 @@ Rispondi SOLO JSON valido. Nessun testo fuori dal JSON."""
                 'piano_giornata': {'mattina': '', 'pomeriggio': '', 'sera': ''},
                 'avvisi': []
             }
+        else:
+            result = _filtra_urgenze_false(result, stato_piante)
         return result
     except Exception as ex:
         import traceback
         print(f'  genera_briefing ERR: {type(ex).__name__}: {ex}')
         print(traceback.format_exc()[-400:])
         return None
+
+
+def _filtra_urgenze_false(result, stato_piante):
+    """
+    Difesa Rev.23 (secondo livello, oltre l'istruzione nel prompt): scarta le voci
+    di consigli_giorno/avvisi che nominano una pianta con urgenza di raccolta ("oggi",
+    "entro N giorni/ore", "imminente", "a breve") quando il giorni_a_raccolta REALE di
+    quella pianta e' > 14 - segno che il modello ha ripescato una narrazione stale dalla
+    memoria sessioni invece di usare il dato fresco (vedi bug Milky Way/Epsilon 06/07).
+    """
+    RE_URGENZA = re.compile(
+        r'\boggi\b|\bentro\s+\d+\s*(giorn|or[ae])|\btra\s+\d+\s*(giorn|or[ae])|\ba\s+breve\b|\bimminente\b',
+        re.IGNORECASE)
+    RE_RACCOLTA = re.compile(r'raccogli|raccolta|taglio|tagliare', re.IGNORECASE)
+
+    giorni_reali = {p['nome']: p.get('giorni_a_raccolta') for p in stato_piante}
+
+    def testo_e_falso(testo):
+        if not RE_URGENZA.search(testo) or not RE_RACCOLTA.search(testo):
+            return False
+        for nome, giorni in giorni_reali.items():
+            if nome in testo and isinstance(giorni, (int, float)) and giorni > 14:
+                return True
+        return False
+
+    for campo in ('consigli_giorno', 'avvisi'):
+        lista = result.get(campo)
+        if isinstance(lista, list):
+            puliti = []
+            for voce in lista:
+                if isinstance(voce, str) and testo_e_falso(voce):
+                    print(f"  Scartato da {campo} (urgenza raccolta falsa, vedi Rev.23): {voce[:100]}")
+                    continue
+                puliti.append(voce)
+            result[campo] = puliti
+
+    return result
 
 # ── Memoria conversazioni ────────────────────────────────────────
 
