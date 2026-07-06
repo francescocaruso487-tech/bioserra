@@ -1,6 +1,6 @@
 {
   "lastUpdate": "2026-07-06T14:47:15.000Z",
-  "ore_luce_oggi": 4.0,
+  "ore_luce_oggi": 4,
   "data": {
     "stato_piante": [
       {
@@ -9,7 +9,7 @@
         "tipo": "autofiorente",
         "germoglio": "2026-04-21",
         "giorni_vita": 76,
-        "ore_luce_oggi": 4.0,
+        "ore_luce_oggi": 4,
         "fase": "Fioritura",
         "giorni_a_raccolta": 32,
         "giorni_a_essiccazione": 47,
@@ -24,7 +24,7 @@
         "tipo": "autofiorente",
         "germoglio": "2026-04-23",
         "giorni_vita": 74,
-        "ore_luce_oggi": 4.0,
+        "ore_luce_oggi": 4,
         "fase": "Fioritura",
         "giorni_a_raccolta": 52,
         "giorni_a_essiccazione": 67,
@@ -39,7 +39,7 @@
         "tipo": "autofiorente",
         "germoglio": "2026-04-22",
         "giorni_vita": 75,
-        "ore_luce_oggi": 4.0,
+        "ore_luce_oggi": 4,
         "fase": "Fioritura",
         "giorni_a_raccolta": 51,
         "giorni_a_essiccazione": 66,
@@ -54,7 +54,7 @@
         "tipo": "autofiorente",
         "germoglio": "2026-04-21",
         "giorni_vita": 76,
-        "ore_luce_oggi": 4.0,
+        "ore_luce_oggi": 4,
         "fase": "Fioritura",
         "giorni_a_raccolta": 50,
         "giorni_a_essiccazione": 65,
@@ -69,7 +69,7 @@
         "tipo": "autofiorente",
         "germoglio": "2026-04-21",
         "giorni_vita": 76,
-        "ore_luce_oggi": 4.0,
+        "ore_luce_oggi": 4,
         "fase": "Fioritura",
         "giorni_a_raccolta": 41,
         "giorni_a_essiccazione": 56,
@@ -161,5 +161,6 @@
     ],
     "alerts_oggi": []
   },
-  "ore_luce_effettive": 4.0
+  "ore_luce_effettive": 4.5,
+  "ore_luce_update": "2026-07-06T20:56"
 }
