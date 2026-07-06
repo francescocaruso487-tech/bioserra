@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-07-05
+aggiornato: 2026-07-06
 pdf_count: 0
 ---
 
@@ -12,24 +12,24 @@ pdf_count: 0
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** sono una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** e l’efficienza nutrizionale delle colture outdoor in serra. I funghi micorrizici, appartenenti principalmente ai phyla *Glomeromycota* e *Basidiomycota*, colonizzano le radici estendendo la loro rete iphale nel substrato, aumentando la superficie di assorbimento idrico e minerale fino a **100 volte** rispetto alle radici non colonizzate. Questo processo non solo ottimizza l’assorbimento di fosforo (P), azoto (N) e microelementi come zinco (Zn) e rame (Cu), ma stimola anche la produzione di ormoni vegetali (es. auxine) che promuovono la crescita radicale e la resistenza a stress idrici o patogeni.
+Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute e la produttività delle colture in **Living Soil**. Questo rapporto si basa su uno scambio reciproco: i funghi, attraverso le loro ife (filamenti simili a radici), estendono il sistema radicale della pianta, aumentando la superficie di assorbimento di acqua e nutrienti (in particolare fosforo e azoto). In cambio, la pianta fornisce al fungo carboidrati prodotti tramite fotosintesi, essenziali per la sua crescita e riproduzione. Questo meccanismo è particolarmente vantaggioso in condizioni di stress idrico o nutrizionale, tipiche delle coltivazioni outdoor italiane, dove la variabilità climatica può compromettere l’efficienza radicale.
 
-In un contesto di **serra outdoor a Caserta (41°N)**, dove le condizioni climatiche possono variare da siccità estiva a piogge intense, l’inoculazione micorrizica diventa un alleato strategico per la resilienza delle piante. Studi dimostrano che le piante micorrizate presentano una maggiore tolleranza alla salinità del suolo e una ridotta necessità di fertilizzanti chimici, grazie alla capacità dei funghi di mobilitare nutrienti anche in forme poco disponibili. Inoltre, la simbiosi migliora la struttura del suolo attraverso l’aggregazione delle particelle argillose, favorendo la formazione di **aggregati stabili** e la ritenzione idrica, cruciale in terreni sabbiosi tipici dell’area campana.
+La simbiosi micorrizica non si limita a migliorare l’assorbimento dei nutrienti: i funghi producono anche **glomaline**, una glicoproteina che stabilizza la struttura del suolo, aumentandone la capacità di trattenere acqua e prevenendo l’erosione. Inoltre, le micorrize conferiscono alle piante una maggiore resistenza a patogeni radicali (come *Phytophthora* o *Fusarium*) grazie alla competizione per lo spazio e alla produzione di sostanze antimicrobiche. Studi dimostrano che piante inoculate con micorrize possono ridurre l’uso di fertilizzanti chimici fino al 30%, allineandosi perfettamente con i principi del **Living Soil** e dell’agricoltura rigenerativa.
 
 ---
 
 ## Come si applica in serra
-Per un **Living Soil outdoor** in serra a Caserta, l’inoculazione micorrizica va eseguita al **trapianto** o nelle prime fasi di vegetazione (3-4 settimane dopo la germinazione), quando le radici sono sufficientemente sviluppate ma ancora suscettibili alla colonizzazione. Segui questi passaggi:
+Per una serra outdoor a **Caserta (41°N)**, l’inoculazione delle micorrize deve essere eseguita con attenzione alle condizioni climatiche e al ciclo della pianta. Segui questi passaggi:
 
 1. **Preparazione dell’inoculo**:
-   - Usa un inoculo commerciale a base di *Glomus spp.* (es. *Glomus intraradices*) o miscele di funghi endomicorrizici, preferibilmente in forma di **polvere umida** o granuli idrosolubili.
-   - Quantità: **5-10 g per pianta** (dose standard per colture orticole o aromatiche; per piante di grandi dimensioni come cannabis, raddoppia la dose).
+   - Utilizza un inoculo commerciale a base di funghi micorrizici arbuscolari (AMF) come *Glomus spp.* o *Rhizophagus irregularis*, preferibilmente in forma di polvere o granuli umidificati.
+   - **Dose consigliata**: 5–10 g per pianta, distribuiti direttamente sulle radici al momento del trapianto. Per piante giovani (es. talee o semenzali), riduci la dose a 2–5 g per evitare stress da eccesso di micelio.
 
-2. **Applicazione**:
-   - **Metodo diretto**: Mescola l’inoculo al substrato di trapianto (es. 1-2 g/L di terriccio) o posizionalo in una buca al momento del trapianto, a contatto con le radici.
-   - **Metodo liquido**: Sciogli l’inoculo in acqua non clorata (usando un agente umettante come **humus liquido**) e irriga la base della pianta, assicurandoti che il liquido penetri nel suolo fino a 10-15 cm di profondità.
-   - **Copertura**: Dopo l’applicazione, copri con uno strato di **pacciamatura organica** (es. paglia o compost) per mantenere umidità e proteggere i funghi dalla luce diretta.
+2. **Tecnica di applicazione**:
+   - **Al trapianto**: Mescola l’inoculo con un po’ di substrato umido (es. compost maturo o fibra di cocco) e posizionalo nel foro di impianto, a diretto contatto con le radici. Evita di esporre l’inoculo alla luce solare diretta, che potrebbe uccidere i funghi.
+   - **Per piante già in crescita**: Applica l’inoculo intorno alla base dello stelo, interrandolo leggermente (1–2 cm di profondità) e annaffiando immediatamente con acqua a **pH 6.0–6.5** per favorire la colonizzazione.
 
-3. **Condizioni post-inoculo**:
-   - Evita l’uso di **fungicidi** (inclusi quelli a base di rame o zolfo) nei **30 giorni successivi**, poiché possono uccidere i funghi micorrizici.
-   - Mantieni il suolo **umido ma non saturo** (evita ristagni) per favorire la colonizzazione: l’irrigazione con acqua a **pH 6.0-6.5** e a temperatura ambiente (18-22°C) è
+3. **Condizioni post-applicazione**:
+   - Mantieni il suolo **umido ma non saturo** per 7–10 giorni dopo l’inoculazione, evitando ristagni che favorirebbero batteri anaerobi dannosi.
+   - **Evita fungicidi** (anche naturali come il rame) nei **30 giorni successivi**, poiché possono uccidere i funghi micorrizici. Se necessario, usa prodotti a base di **bacillus subtilis** o **Trichoderma**, che sono compatibili con la simbiosi.
+   - **Fertilizzazione**: Preferisci concimi organici a lenta cessione (es. humus di lombrico, guano) per non sovraccaricare il suolo di sali minerali, che ostacolerebbero
