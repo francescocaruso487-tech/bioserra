@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-07-06T13:07:39.452465+00:00",
-  "total_pdf": 289,
+  "lastUpdate": "2026-07-06T14:20:13.898992+00:00",
+  "total_pdf": 290,
   "analisi": [
     {
       "sommario": "Manuale biblioteca BioSerra: ufie003301_to0261_cor-26166_0000000",
@@ -55,6 +55,11 @@
       "testo_id": "Aleister-Crowley-_Kaw-Djer",
       "connessioni": [
         {
+          "id": "pdf_308",
+          "titolo": "Il Libro Della Legge (Aleister Crowley)",
+          "peso": 4
+        },
+        {
           "id": "pdf_10",
           "titolo": "Book of Wisdom (revival of wisdom, Harry B. Joseph)",
           "peso": 3
@@ -75,6 +80,11 @@
           "peso": 2
         },
         {
+          "id": "pdf_20",
+          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
+          "peso": 1
+        },
+        {
           "id": "pdf_0",
           "titolo": "108upa",
           "peso": 1
@@ -92,16 +102,6 @@
         {
           "id": "pdf_7",
           "titolo": "An Agricultural Testament - Albert Howard",
-          "peso": 1
-        },
-        {
-          "id": "pdf_8",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 1
-        },
-        {
-          "id": "pdf_9",
-          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
           "peso": 1
         }
       ],
@@ -18120,11 +18120,62 @@
       ],
       "tecniche_chiave": [],
       "sommario": "Contenuto fuso da Zamnesia (2 articoli) e Royal Queen Seeds (3 articoli) sulla fase germinazione.",
-      "connessioni": [],
+      "connessioni": [
+        {
+          "id": "fuso_plantula",
+          "titolo": "Guida Fusa: Plantula",
+          "peso": 5
+        },
+        {
+          "id": "fuso_vegetativa",
+          "titolo": "Guida Fusa: Vegetativa",
+          "peso": 5
+        },
+        {
+          "id": "fuso_fioritura",
+          "titolo": "Guida Fusa: Fioritura",
+          "peso": 5
+        },
+        {
+          "id": "fuso_raccolta",
+          "titolo": "Guida Fusa: Raccolta",
+          "peso": 5
+        },
+        {
+          "id": "fuso_essiccazione_concia",
+          "titolo": "Guida Fusa: Essiccazione Concia",
+          "peso": 5
+        },
+        {
+          "id": "fuso_substrati_vasi",
+          "titolo": "Guida Fusa: Substrati Vasi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_nutrizione_ph",
+          "titolo": "Guida Fusa: Nutrizione Ph",
+          "peso": 5
+        },
+        {
+          "id": "fuso_problemi",
+          "titolo": "Guida Fusa: Problemi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_training",
+          "titolo": "Guida Fusa: Training",
+          "peso": 5
+        },
+        {
+          "id": "fuso_autofiorenti",
+          "titolo": "Guida Fusa: Autofiorenti",
+          "peso": 5
+        }
+      ],
       "rilevanza": "alta",
       "consiglio_coltivazione": "Fonte unificata per germinazione: integra approcci Zamnesia e RQS.",
       "consiglio_elettrocultura": "",
-      "estratto_chiave": "=== GUIDA FUSA: GERMINAZIONE ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 2 Zamnesia + 3 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 284 Germinare Semi Con Lo Smart Start\n\nCome Far Germinare I Semi Di Cannabis Con Il Kit Smart Start \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n ",
+      "estratto_chiave": "=== GUIDA FUSA: GERMINAZIONE ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 2 Zamnesia + 3 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 284 Germinare Semi Con Lo Smart Start\n\nCome Far Germinare I Semi Di Pianta Con Il Kit Smart Start \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n ",
       "mistral_analizzato": false,
       "testo_chars": 233262,
       "testo_id": "germinazione",
@@ -18150,11 +18201,62 @@
       ],
       "tecniche_chiave": [],
       "sommario": "Contenuto fuso da Zamnesia (1 articoli) e Royal Queen Seeds (3 articoli) sulla fase plantula.",
-      "connessioni": [],
+      "connessioni": [
+        {
+          "id": "fuso_germinazione",
+          "titolo": "Guida Fusa: Germinazione",
+          "peso": 5
+        },
+        {
+          "id": "fuso_vegetativa",
+          "titolo": "Guida Fusa: Vegetativa",
+          "peso": 5
+        },
+        {
+          "id": "fuso_fioritura",
+          "titolo": "Guida Fusa: Fioritura",
+          "peso": 5
+        },
+        {
+          "id": "fuso_raccolta",
+          "titolo": "Guida Fusa: Raccolta",
+          "peso": 5
+        },
+        {
+          "id": "fuso_essiccazione_concia",
+          "titolo": "Guida Fusa: Essiccazione Concia",
+          "peso": 5
+        },
+        {
+          "id": "fuso_substrati_vasi",
+          "titolo": "Guida Fusa: Substrati Vasi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_nutrizione_ph",
+          "titolo": "Guida Fusa: Nutrizione Ph",
+          "peso": 5
+        },
+        {
+          "id": "fuso_problemi",
+          "titolo": "Guida Fusa: Problemi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_training",
+          "titolo": "Guida Fusa: Training",
+          "peso": 5
+        },
+        {
+          "id": "fuso_autofiorenti",
+          "titolo": "Guida Fusa: Autofiorenti",
+          "peso": 5
+        }
+      ],
       "rilevanza": "alta",
       "consiglio_coltivazione": "Fonte unificata per plantula: integra approcci Zamnesia e RQS.",
       "consiglio_elettrocultura": "",
-      "estratto_chiave": "=== GUIDA FUSA: PLANTULA ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 1 Zamnesia + 3 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 287 Fase Plantula Cannabis\n\nPiantina di cannabis: cure e parametri per partire bene \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n",
+      "estratto_chiave": "=== GUIDA FUSA: PLANTULA ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 1 Zamnesia + 3 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 287 Fase Plantula Pianta\n\nPiantina di pianta: cure e parametri per partire bene \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n",
       "mistral_analizzato": false,
       "testo_chars": 211739,
       "testo_id": "plantula",
@@ -18180,11 +18282,62 @@
       ],
       "tecniche_chiave": [],
       "sommario": "Contenuto fuso da Zamnesia (1 articoli) e Royal Queen Seeds (5 articoli) sulla fase vegetativa.",
-      "connessioni": [],
+      "connessioni": [
+        {
+          "id": "fuso_germinazione",
+          "titolo": "Guida Fusa: Germinazione",
+          "peso": 5
+        },
+        {
+          "id": "fuso_plantula",
+          "titolo": "Guida Fusa: Plantula",
+          "peso": 5
+        },
+        {
+          "id": "fuso_fioritura",
+          "titolo": "Guida Fusa: Fioritura",
+          "peso": 5
+        },
+        {
+          "id": "fuso_raccolta",
+          "titolo": "Guida Fusa: Raccolta",
+          "peso": 5
+        },
+        {
+          "id": "fuso_essiccazione_concia",
+          "titolo": "Guida Fusa: Essiccazione Concia",
+          "peso": 5
+        },
+        {
+          "id": "fuso_substrati_vasi",
+          "titolo": "Guida Fusa: Substrati Vasi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_nutrizione_ph",
+          "titolo": "Guida Fusa: Nutrizione Ph",
+          "peso": 5
+        },
+        {
+          "id": "fuso_problemi",
+          "titolo": "Guida Fusa: Problemi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_training",
+          "titolo": "Guida Fusa: Training",
+          "peso": 5
+        },
+        {
+          "id": "fuso_autofiorenti",
+          "titolo": "Guida Fusa: Autofiorenti",
+          "peso": 5
+        }
+      ],
       "rilevanza": "alta",
       "consiglio_coltivazione": "Fonte unificata per vegetativa: integra approcci Zamnesia e RQS.",
       "consiglio_elettrocultura": "",
-      "estratto_chiave": "=== GUIDA FUSA: VEGETATIVA ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 1 Zamnesia + 5 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 288 Fase Vegetativa Cannabis\n\nLa Fase Vegetativa Nelle Coltivazioni Di Cannabis \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n \n",
+      "estratto_chiave": "=== GUIDA FUSA: VEGETATIVA ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 1 Zamnesia + 5 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 288 Fase Vegetativa Pianta\n\nLa Fase Vegetativa Nelle Coltivazioni Di Pianta \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n \n",
       "mistral_analizzato": false,
       "testo_chars": 332337,
       "testo_id": "vegetativa",
@@ -18210,11 +18363,62 @@
       ],
       "tecniche_chiave": [],
       "sommario": "Contenuto fuso da Zamnesia (1 articoli) e Royal Queen Seeds (4 articoli) sulla fase fioritura.",
-      "connessioni": [],
+      "connessioni": [
+        {
+          "id": "fuso_germinazione",
+          "titolo": "Guida Fusa: Germinazione",
+          "peso": 5
+        },
+        {
+          "id": "fuso_plantula",
+          "titolo": "Guida Fusa: Plantula",
+          "peso": 5
+        },
+        {
+          "id": "fuso_vegetativa",
+          "titolo": "Guida Fusa: Vegetativa",
+          "peso": 5
+        },
+        {
+          "id": "fuso_raccolta",
+          "titolo": "Guida Fusa: Raccolta",
+          "peso": 5
+        },
+        {
+          "id": "fuso_essiccazione_concia",
+          "titolo": "Guida Fusa: Essiccazione Concia",
+          "peso": 5
+        },
+        {
+          "id": "fuso_substrati_vasi",
+          "titolo": "Guida Fusa: Substrati Vasi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_nutrizione_ph",
+          "titolo": "Guida Fusa: Nutrizione Ph",
+          "peso": 5
+        },
+        {
+          "id": "fuso_problemi",
+          "titolo": "Guida Fusa: Problemi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_training",
+          "titolo": "Guida Fusa: Training",
+          "peso": 5
+        },
+        {
+          "id": "fuso_autofiorenti",
+          "titolo": "Guida Fusa: Autofiorenti",
+          "peso": 5
+        }
+      ],
       "rilevanza": "alta",
       "consiglio_coltivazione": "Fonte unificata per fioritura: integra approcci Zamnesia e RQS.",
       "consiglio_elettrocultura": "",
-      "estratto_chiave": "=== GUIDA FUSA: FIORITURA ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 1 Zamnesia + 4 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 290 Fase Fioritura Cannabis\n\nLa Fase Di Fioritura Nelle Coltivazioni Di Cannabis \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n \n",
+      "estratto_chiave": "=== GUIDA FUSA: FIORITURA ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 1 Zamnesia + 4 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 290 Fase Fioritura Pianta\n\nLa Fase Di Fioritura Nelle Coltivazioni Di Pianta \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n \n",
       "mistral_analizzato": false,
       "testo_chars": 267446,
       "testo_id": "fioritura",
@@ -18240,11 +18444,62 @@
       ],
       "tecniche_chiave": [],
       "sommario": "Contenuto fuso da Zamnesia (2 articoli) e Royal Queen Seeds (4 articoli) sulla fase raccolta.",
-      "connessioni": [],
+      "connessioni": [
+        {
+          "id": "fuso_germinazione",
+          "titolo": "Guida Fusa: Germinazione",
+          "peso": 5
+        },
+        {
+          "id": "fuso_plantula",
+          "titolo": "Guida Fusa: Plantula",
+          "peso": 5
+        },
+        {
+          "id": "fuso_vegetativa",
+          "titolo": "Guida Fusa: Vegetativa",
+          "peso": 5
+        },
+        {
+          "id": "fuso_fioritura",
+          "titolo": "Guida Fusa: Fioritura",
+          "peso": 5
+        },
+        {
+          "id": "fuso_essiccazione_concia",
+          "titolo": "Guida Fusa: Essiccazione Concia",
+          "peso": 5
+        },
+        {
+          "id": "fuso_substrati_vasi",
+          "titolo": "Guida Fusa: Substrati Vasi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_nutrizione_ph",
+          "titolo": "Guida Fusa: Nutrizione Ph",
+          "peso": 5
+        },
+        {
+          "id": "fuso_problemi",
+          "titolo": "Guida Fusa: Problemi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_training",
+          "titolo": "Guida Fusa: Training",
+          "peso": 5
+        },
+        {
+          "id": "fuso_autofiorenti",
+          "titolo": "Guida Fusa: Autofiorenti",
+          "peso": 5
+        }
+      ],
       "rilevanza": "alta",
       "consiglio_coltivazione": "Fonte unificata per raccolta: integra approcci Zamnesia e RQS.",
       "consiglio_elettrocultura": "",
-      "estratto_chiave": "=== GUIDA FUSA: RACCOLTA ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 2 Zamnesia + 4 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 324 Come Raccogliere Cannabis\n\nCome raccogliere le piante di cannabis \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n",
+      "estratto_chiave": "=== GUIDA FUSA: RACCOLTA ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 2 Zamnesia + 4 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 324 Come Raccogliere Pianta\n\nCome raccogliere le piante di pianta \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n",
       "mistral_analizzato": false,
       "testo_chars": 274496,
       "testo_id": "raccolta",
@@ -18270,11 +18525,62 @@
       ],
       "tecniche_chiave": [],
       "sommario": "Contenuto fuso da Zamnesia (6 articoli) e Royal Queen Seeds (5 articoli) sulla fase essiccazione concia.",
-      "connessioni": [],
+      "connessioni": [
+        {
+          "id": "fuso_germinazione",
+          "titolo": "Guida Fusa: Germinazione",
+          "peso": 5
+        },
+        {
+          "id": "fuso_plantula",
+          "titolo": "Guida Fusa: Plantula",
+          "peso": 5
+        },
+        {
+          "id": "fuso_vegetativa",
+          "titolo": "Guida Fusa: Vegetativa",
+          "peso": 5
+        },
+        {
+          "id": "fuso_fioritura",
+          "titolo": "Guida Fusa: Fioritura",
+          "peso": 5
+        },
+        {
+          "id": "fuso_raccolta",
+          "titolo": "Guida Fusa: Raccolta",
+          "peso": 5
+        },
+        {
+          "id": "fuso_substrati_vasi",
+          "titolo": "Guida Fusa: Substrati Vasi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_nutrizione_ph",
+          "titolo": "Guida Fusa: Nutrizione Ph",
+          "peso": 5
+        },
+        {
+          "id": "fuso_problemi",
+          "titolo": "Guida Fusa: Problemi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_training",
+          "titolo": "Guida Fusa: Training",
+          "peso": 5
+        },
+        {
+          "id": "fuso_autofiorenti",
+          "titolo": "Guida Fusa: Autofiorenti",
+          "peso": 5
+        }
+      ],
       "rilevanza": "alta",
       "consiglio_coltivazione": "Fonte unificata per essiccazione concia: integra approcci Zamnesia e RQS.",
       "consiglio_elettrocultura": "",
-      "estratto_chiave": "=== GUIDA FUSA: ESSICCAZIONE CONCIA ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 6 Zamnesia + 5 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 328 Come Conciare Cannabis\n\nConcia della cannabis: Guida completa per i coltivatori domestici \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n",
+      "estratto_chiave": "=== GUIDA FUSA: ESSICCAZIONE CONCIA ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 6 Zamnesia + 5 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 328 Come Conciare Pianta\n\nConcia della pianta: Guida completa per i coltivatori domestici \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n",
       "mistral_analizzato": false,
       "testo_chars": 514436,
       "testo_id": "essiccazione_concia",
@@ -18300,11 +18606,62 @@
       ],
       "tecniche_chiave": [],
       "sommario": "Contenuto fuso da Zamnesia (4 articoli) e Royal Queen Seeds (4 articoli) sulla fase substrati vasi.",
-      "connessioni": [],
+      "connessioni": [
+        {
+          "id": "fuso_germinazione",
+          "titolo": "Guida Fusa: Germinazione",
+          "peso": 5
+        },
+        {
+          "id": "fuso_plantula",
+          "titolo": "Guida Fusa: Plantula",
+          "peso": 5
+        },
+        {
+          "id": "fuso_vegetativa",
+          "titolo": "Guida Fusa: Vegetativa",
+          "peso": 5
+        },
+        {
+          "id": "fuso_fioritura",
+          "titolo": "Guida Fusa: Fioritura",
+          "peso": 5
+        },
+        {
+          "id": "fuso_raccolta",
+          "titolo": "Guida Fusa: Raccolta",
+          "peso": 5
+        },
+        {
+          "id": "fuso_essiccazione_concia",
+          "titolo": "Guida Fusa: Essiccazione Concia",
+          "peso": 5
+        },
+        {
+          "id": "fuso_nutrizione_ph",
+          "titolo": "Guida Fusa: Nutrizione Ph",
+          "peso": 5
+        },
+        {
+          "id": "fuso_problemi",
+          "titolo": "Guida Fusa: Problemi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_training",
+          "titolo": "Guida Fusa: Training",
+          "peso": 5
+        },
+        {
+          "id": "fuso_autofiorenti",
+          "titolo": "Guida Fusa: Autofiorenti",
+          "peso": 5
+        }
+      ],
       "rilevanza": "alta",
       "consiglio_coltivazione": "Fonte unificata per substrati vasi: integra approcci Zamnesia e RQS.",
       "consiglio_elettrocultura": "",
-      "estratto_chiave": "=== GUIDA FUSA: SUBSTRATI VASI ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 4 Zamnesia + 4 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 293 Suolo Cannabis Terricci\n\nColtivare Cannabis In Suolo \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n",
+      "estratto_chiave": "=== GUIDA FUSA: SUBSTRATI VASI ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 4 Zamnesia + 4 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 293 Suolo Pianta Terricci\n\nColtivare Pianta In Suolo \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n",
       "mistral_analizzato": false,
       "testo_chars": 363229,
       "testo_id": "substrati_vasi",
@@ -18330,11 +18687,62 @@
       ],
       "tecniche_chiave": [],
       "sommario": "Contenuto fuso da Zamnesia (9 articoli) e Royal Queen Seeds (10 articoli) sulla fase nutrizione ph.",
-      "connessioni": [],
+      "connessioni": [
+        {
+          "id": "fuso_germinazione",
+          "titolo": "Guida Fusa: Germinazione",
+          "peso": 5
+        },
+        {
+          "id": "fuso_plantula",
+          "titolo": "Guida Fusa: Plantula",
+          "peso": 5
+        },
+        {
+          "id": "fuso_vegetativa",
+          "titolo": "Guida Fusa: Vegetativa",
+          "peso": 5
+        },
+        {
+          "id": "fuso_fioritura",
+          "titolo": "Guida Fusa: Fioritura",
+          "peso": 5
+        },
+        {
+          "id": "fuso_raccolta",
+          "titolo": "Guida Fusa: Raccolta",
+          "peso": 5
+        },
+        {
+          "id": "fuso_essiccazione_concia",
+          "titolo": "Guida Fusa: Essiccazione Concia",
+          "peso": 5
+        },
+        {
+          "id": "fuso_substrati_vasi",
+          "titolo": "Guida Fusa: Substrati Vasi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_problemi",
+          "titolo": "Guida Fusa: Problemi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_training",
+          "titolo": "Guida Fusa: Training",
+          "peso": 5
+        },
+        {
+          "id": "fuso_autofiorenti",
+          "titolo": "Guida Fusa: Autofiorenti",
+          "peso": 5
+        }
+      ],
       "rilevanza": "alta",
       "consiglio_coltivazione": "Fonte unificata per nutrizione ph: integra approcci Zamnesia e RQS.",
       "consiglio_elettrocultura": "",
-      "estratto_chiave": "=== GUIDA FUSA: NUTRIZIONE PH ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 9 Zamnesia + 10 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 301 Come Irrigare Le Piante Di Cannabis\n\nCome Innaffiare Le Piante Di Cannabis \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n ",
+      "estratto_chiave": "=== GUIDA FUSA: NUTRIZIONE PH ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 9 Zamnesia + 10 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 301 Come Irrigare Le Piante Di Pianta\n\nCome Innaffiare Le Piante Di Pianta \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n ",
       "mistral_analizzato": false,
       "testo_chars": 958054,
       "testo_id": "nutrizione_ph",
@@ -18360,11 +18768,62 @@
       ],
       "tecniche_chiave": [],
       "sommario": "Contenuto fuso da Zamnesia (26 articoli) e Royal Queen Seeds (7 articoli) sulla fase problemi.",
-      "connessioni": [],
+      "connessioni": [
+        {
+          "id": "fuso_germinazione",
+          "titolo": "Guida Fusa: Germinazione",
+          "peso": 5
+        },
+        {
+          "id": "fuso_plantula",
+          "titolo": "Guida Fusa: Plantula",
+          "peso": 5
+        },
+        {
+          "id": "fuso_vegetativa",
+          "titolo": "Guida Fusa: Vegetativa",
+          "peso": 5
+        },
+        {
+          "id": "fuso_fioritura",
+          "titolo": "Guida Fusa: Fioritura",
+          "peso": 5
+        },
+        {
+          "id": "fuso_raccolta",
+          "titolo": "Guida Fusa: Raccolta",
+          "peso": 5
+        },
+        {
+          "id": "fuso_essiccazione_concia",
+          "titolo": "Guida Fusa: Essiccazione Concia",
+          "peso": 5
+        },
+        {
+          "id": "fuso_substrati_vasi",
+          "titolo": "Guida Fusa: Substrati Vasi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_nutrizione_ph",
+          "titolo": "Guida Fusa: Nutrizione Ph",
+          "peso": 5
+        },
+        {
+          "id": "fuso_training",
+          "titolo": "Guida Fusa: Training",
+          "peso": 5
+        },
+        {
+          "id": "fuso_autofiorenti",
+          "titolo": "Guida Fusa: Autofiorenti",
+          "peso": 5
+        }
+      ],
       "rilevanza": "alta",
       "consiglio_coltivazione": "Fonte unificata per problemi: integra approcci Zamnesia e RQS.",
       "consiglio_elettrocultura": "",
-      "estratto_chiave": "=== GUIDA FUSA: PROBLEMI ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 26 Zamnesia + 7 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 344 Identificare Risolvere Marciume Radicale Cannabis\n\nSintomi e soluzioni in caso di marciume radicale \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n",
+      "estratto_chiave": "=== GUIDA FUSA: PROBLEMI ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 26 Zamnesia + 7 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 344 Identificare Risolvere Marciume Radicale Pianta\n\nSintomi e soluzioni in caso di marciume radicale \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n",
       "mistral_analizzato": false,
       "testo_chars": 1389907,
       "testo_id": "problemi",
@@ -18390,11 +18849,62 @@
       ],
       "tecniche_chiave": [],
       "sommario": "Contenuto fuso da Zamnesia (12 articoli) e Royal Queen Seeds (5 articoli) sulla fase training.",
-      "connessioni": [],
+      "connessioni": [
+        {
+          "id": "fuso_germinazione",
+          "titolo": "Guida Fusa: Germinazione",
+          "peso": 5
+        },
+        {
+          "id": "fuso_plantula",
+          "titolo": "Guida Fusa: Plantula",
+          "peso": 5
+        },
+        {
+          "id": "fuso_vegetativa",
+          "titolo": "Guida Fusa: Vegetativa",
+          "peso": 5
+        },
+        {
+          "id": "fuso_fioritura",
+          "titolo": "Guida Fusa: Fioritura",
+          "peso": 5
+        },
+        {
+          "id": "fuso_raccolta",
+          "titolo": "Guida Fusa: Raccolta",
+          "peso": 5
+        },
+        {
+          "id": "fuso_essiccazione_concia",
+          "titolo": "Guida Fusa: Essiccazione Concia",
+          "peso": 5
+        },
+        {
+          "id": "fuso_substrati_vasi",
+          "titolo": "Guida Fusa: Substrati Vasi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_nutrizione_ph",
+          "titolo": "Guida Fusa: Nutrizione Ph",
+          "peso": 5
+        },
+        {
+          "id": "fuso_problemi",
+          "titolo": "Guida Fusa: Problemi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_autofiorenti",
+          "titolo": "Guida Fusa: Autofiorenti",
+          "peso": 5
+        }
+      ],
       "rilevanza": "alta",
       "consiglio_coltivazione": "Fonte unificata per training: integra approcci Zamnesia e RQS.",
       "consiglio_elettrocultura": "",
-      "estratto_chiave": "=== GUIDA FUSA: TRAINING ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 12 Zamnesia + 5 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 413 Scrog Cannabis\n\nScrOG indoor: guida completa per massimizzare le rese \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n ",
+      "estratto_chiave": "=== GUIDA FUSA: TRAINING ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 12 Zamnesia + 5 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 413 Scrog Pianta\n\nScrOG indoor: guida completa per massimizzare le rese \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n ",
       "mistral_analizzato": false,
       "testo_chars": 703963,
       "testo_id": "training",
@@ -18420,11 +18930,62 @@
       ],
       "tecniche_chiave": [],
       "sommario": "Contenuto fuso da Zamnesia (7 articoli) e Royal Queen Seeds (5 articoli) sulla fase autofiorenti.",
-      "connessioni": [],
+      "connessioni": [
+        {
+          "id": "fuso_germinazione",
+          "titolo": "Guida Fusa: Germinazione",
+          "peso": 5
+        },
+        {
+          "id": "fuso_plantula",
+          "titolo": "Guida Fusa: Plantula",
+          "peso": 5
+        },
+        {
+          "id": "fuso_vegetativa",
+          "titolo": "Guida Fusa: Vegetativa",
+          "peso": 5
+        },
+        {
+          "id": "fuso_fioritura",
+          "titolo": "Guida Fusa: Fioritura",
+          "peso": 5
+        },
+        {
+          "id": "fuso_raccolta",
+          "titolo": "Guida Fusa: Raccolta",
+          "peso": 5
+        },
+        {
+          "id": "fuso_essiccazione_concia",
+          "titolo": "Guida Fusa: Essiccazione Concia",
+          "peso": 5
+        },
+        {
+          "id": "fuso_substrati_vasi",
+          "titolo": "Guida Fusa: Substrati Vasi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_nutrizione_ph",
+          "titolo": "Guida Fusa: Nutrizione Ph",
+          "peso": 5
+        },
+        {
+          "id": "fuso_problemi",
+          "titolo": "Guida Fusa: Problemi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_training",
+          "titolo": "Guida Fusa: Training",
+          "peso": 5
+        }
+      ],
       "rilevanza": "alta",
       "consiglio_coltivazione": "Fonte unificata per autofiorenti: integra approcci Zamnesia e RQS.",
       "consiglio_elettrocultura": "",
-      "estratto_chiave": "=== GUIDA FUSA: AUTOFIORENTI ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 7 Zamnesia + 5 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 369 Consigli Coltivare Cannabis Autofiorente Indoor E Outdoor\n\nCome Coltivare Le Autofiorenti: La Guida Completa \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n",
+      "estratto_chiave": "=== GUIDA FUSA: AUTOFIORENTI ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 7 Zamnesia + 5 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 369 Consigli Coltivare Pianta Autofiorente Indoor E Outdoor\n\nCome Coltivare Le Autofiorenti: La Guida Completa \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n",
       "mistral_analizzato": false,
       "testo_chars": 536733,
       "testo_id": "autofiorenti",
@@ -18450,11 +19011,62 @@
       ],
       "tecniche_chiave": [],
       "sommario": "Contenuto fuso da Zamnesia (7 articoli) e Royal Queen Seeds (7 articoli) sulla fase outdoor.",
-      "connessioni": [],
+      "connessioni": [
+        {
+          "id": "fuso_germinazione",
+          "titolo": "Guida Fusa: Germinazione",
+          "peso": 5
+        },
+        {
+          "id": "fuso_plantula",
+          "titolo": "Guida Fusa: Plantula",
+          "peso": 5
+        },
+        {
+          "id": "fuso_vegetativa",
+          "titolo": "Guida Fusa: Vegetativa",
+          "peso": 5
+        },
+        {
+          "id": "fuso_fioritura",
+          "titolo": "Guida Fusa: Fioritura",
+          "peso": 5
+        },
+        {
+          "id": "fuso_raccolta",
+          "titolo": "Guida Fusa: Raccolta",
+          "peso": 5
+        },
+        {
+          "id": "fuso_essiccazione_concia",
+          "titolo": "Guida Fusa: Essiccazione Concia",
+          "peso": 5
+        },
+        {
+          "id": "fuso_substrati_vasi",
+          "titolo": "Guida Fusa: Substrati Vasi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_nutrizione_ph",
+          "titolo": "Guida Fusa: Nutrizione Ph",
+          "peso": 5
+        },
+        {
+          "id": "fuso_problemi",
+          "titolo": "Guida Fusa: Problemi",
+          "peso": 5
+        },
+        {
+          "id": "fuso_training",
+          "titolo": "Guida Fusa: Training",
+          "peso": 5
+        }
+      ],
       "rilevanza": "alta",
       "consiglio_coltivazione": "Fonte unificata per outdoor: integra approcci Zamnesia e RQS.",
       "consiglio_elettrocultura": "",
-      "estratto_chiave": "=== GUIDA FUSA: OUTDOOR ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 7 Zamnesia + 7 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 374 Come Coltivare Cannabis Outdoor\n\nLa Coltivazione Di Cannabis Outdoor \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n",
+      "estratto_chiave": "=== GUIDA FUSA: OUTDOOR ===\nFONTI: Zamnesia + Royal Queen Seeds\nDATA: 2026-07-06\nARTICOLI: 7 Zamnesia + 7 RQS\n\n# ZAMNESIA\n\n## [Zamnesia] 374 Come Coltivare Pianta Outdoor\n\nLa Coltivazione Di Pianta Outdoor \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n\n \n\n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n",
       "mistral_analizzato": false,
       "testo_chars": 645028,
       "testo_id": "outdoor",
@@ -18524,6 +19136,11 @@
           "peso": 2
         },
         {
+          "id": "pdf_308",
+          "titolo": "Il Libro Della Legge (Aleister Crowley)",
+          "peso": 2
+        },
+        {
           "id": "pdf_0",
           "titolo": "108upa",
           "peso": 1
@@ -18546,11 +19163,6 @@
         {
           "id": "pdf_8",
           "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 1
-        },
-        {
-          "id": "pdf_9",
-          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
           "peso": 1
         }
       ],
@@ -19358,9 +19970,19 @@
           "peso": 3
         },
         {
+          "id": "pdf_308",
+          "titolo": "Il Libro Della Legge (Aleister Crowley)",
+          "peso": 3
+        },
+        {
           "id": "pdf_26",
           "titolo": "IL+CORANO",
           "peso": 2
+        },
+        {
+          "id": "pdf_20",
+          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
+          "peso": 1
         },
         {
           "id": "pdf_0",
@@ -19380,16 +20002,6 @@
         {
           "id": "pdf_7",
           "titolo": "An Agricultural Testament - Albert Howard",
-          "peso": 1
-        },
-        {
-          "id": "pdf_8",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 1
-        },
-        {
-          "id": "pdf_9",
-          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
           "peso": 1
         }
       ],
@@ -19438,6 +20050,11 @@
           "peso": 8
         },
         {
+          "id": "pdf_308",
+          "titolo": "Il Libro Della Legge (Aleister Crowley)",
+          "peso": 4
+        },
+        {
           "id": "pdf_4",
           "titolo": "Aleister-Crowley-_Kaw-Djer",
           "peso": 3
@@ -19451,6 +20068,11 @@
           "id": "pdf_22",
           "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
           "peso": 2
+        },
+        {
+          "id": "pdf_20",
+          "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
+          "peso": 1
         },
         {
           "id": "pdf_0",
@@ -19470,16 +20092,6 @@
         {
           "id": "pdf_7",
           "titolo": "An Agricultural Testament - Albert Howard",
-          "peso": 1
-        },
-        {
-          "id": "pdf_8",
-          "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 1
-        },
-        {
-          "id": "pdf_9",
-          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
           "peso": 1
         }
       ]
@@ -19541,6 +20153,11 @@
           "peso": 2
         },
         {
+          "id": "pdf_308",
+          "titolo": "Il Libro Della Legge (Aleister Crowley)",
+          "peso": 2
+        },
+        {
           "id": "pdf_0",
           "titolo": "108upa",
           "peso": 1
@@ -19563,11 +20180,6 @@
         {
           "id": "pdf_8",
           "titolo": "Antenna uomo - Tiziano-Guerzoni",
-          "peso": 1
-        },
-        {
-          "id": "pdf_9",
-          "titolo": "Aradia.-Vangelo-delle-Streghe.-_Charles-Godfrey-Leland_-L.-Menegoni",
           "peso": 1
         }
       ]
@@ -19603,6 +20215,62 @@
       "connessioni": []
     },
     {
+      "sommario": "Il documento è una raccolta di testi esoterici che trattano argomenti come Wicca, rune, magia delle candele, numerologia e tarocchi. Include rituali, incantesimi e pratiche magiche per plasmare il destino, con un focus su simbologie pagane, energie solari e connessioni spirituali con la natura.",
+      "tecniche_chiave": [
+        "Magia delle candele",
+        "Utilizzo delle rune",
+        "Rituali Wicca",
+        "Numerologia simbolica",
+        "Incantesimi basati su intenzioni"
+      ],
+      "concetti_principali": [
+        "Simbologia pagana e feste solari",
+        "Connessione con energie divine (Dio e Dea)",
+        "Divinazione tramite rune",
+        "Magia come strumento di manifestazione",
+        "Triade divina e numerologia sacra"
+      ],
+      "consiglio_coltivazione": "Integrare i cicli solari e lunari (feste stagionali) nella programmazione delle semine e dei raccolti, utilizzando le energie solari (simboleggiate dalla runa del sole) per potenziare la crescita delle piante in serra.",
+      "consiglio_elettrocultura": "Applicare la tecnica Lakhovsky (onde di forma) per armonizzare i campi elettromagnetici della serra, abbinandola all'acqua magnetizzata per stimolare la vitalità delle piante durante i periodi di massima attività solare (solstizi/equinozi).",
+      "tag": [
+        "esoterismo",
+        "wicca",
+        "rune",
+        "magia delle candele",
+        "numerologia",
+        "rituali stagionali",
+        "simbologia pagana"
+      ],
+      "estratto_chiave": "«Prometto la mia dedizione al Dio e alla Dea. Camminerò con loro accanto a me e chiederò loro di guidarmi in questo viaggio.» (PAG 86) Simboleggia l'alleanza con le forze naturali per la coltivazione.",
+      "lingua": "it",
+      "applicabilita_serra": "media",
+      "perche": "Il documento offre spunti simbolici e rituali che possono essere adattati a pratiche agricole biodinamiche (es. allineamento con cicli solari), ma manca di contenuti tecnici specifici per la coltivazione in serra outdoor italiana.",
+      "id": "pdf_20",
+      "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
+      "data_analisi": "2026-07-06",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "testo_chars": 7229,
+      "testo_id": "Esoterismo-5-Libri-in-1_-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocch",
+      "connessioni": [
+        {
+          "id": "pdf_4",
+          "titolo": "Aleister-Crowley-_Kaw-Djer",
+          "peso": 1
+        },
+        {
+          "id": "pdf_10",
+          "titolo": "Book of Wisdom (revival of wisdom, Harry B. Joseph)",
+          "peso": 1
+        },
+        {
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 1
+        }
+      ]
+    },
+    {
       "sommario": "Documento BioSerra: 108upa",
       "tecniche_chiave": [
         "Compostaggio",
@@ -19612,8 +20280,8 @@
       "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
       "consiglio_elettrocultura": "",
       "tag": [
-        "suolo",
-        "elettrocultura"
+        "elettrocultura",
+        "suolo"
       ],
       "estratto_chiave": "",
       "applicabilita_serra": "media - da valutare",
@@ -19837,8 +20505,8 @@
       "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
       "consiglio_elettrocultura": "",
       "tag": [
-        "suolo",
-        "biodinamica"
+        "biodinamica",
+        "suolo"
       ],
       "estratto_chiave": "",
       "applicabilita_serra": "media - da valutare",
@@ -19889,6 +20557,11 @@
         {
           "id": "pdf_13",
           "titolo": "Corso-Elettrocoltura_compressed",
+          "peso": 1
+        },
+        {
+          "id": "pdf_308",
+          "titolo": "Il Libro Della Legge (Aleister Crowley)",
           "peso": 1
         }
       ]
@@ -20112,8 +20785,8 @@
       "consiglio_coltivazione": "Consulta il documento per tecniche specifiche",
       "consiglio_elettrocultura": "",
       "tag": [
-        "suolo",
-        "elettrocultura"
+        "elettrocultura",
+        "suolo"
       ],
       "estratto_chiave": "",
       "applicabilita_serra": "media - da valutare",
@@ -20441,62 +21114,6 @@
       ]
     },
     {
-      "sommario": "Il documento è una raccolta di testi esoterici che trattano argomenti come Wicca, rune, magia delle candele, numerologia e tarocchi. Include rituali, incantesimi e pratiche magiche per plasmare il destino, con un focus su simbologie pagane, energie solari e connessioni spirituali con la natura.",
-      "tecniche_chiave": [
-        "Magia delle candele",
-        "Utilizzo delle rune",
-        "Rituali Wicca",
-        "Numerologia simbolica",
-        "Incantesimi basati su intenzioni"
-      ],
-      "concetti_principali": [
-        "Simbologia pagana e feste solari",
-        "Connessione con energie divine (Dio e Dea)",
-        "Divinazione tramite rune",
-        "Magia come strumento di manifestazione",
-        "Triade divina e numerologia sacra"
-      ],
-      "consiglio_coltivazione": "Integrare i cicli solari e lunari (feste stagionali) nella programmazione delle semine e dei raccolti, utilizzando le energie solari (simboleggiate dalla runa del sole) per potenziare la crescita delle piante in serra.",
-      "consiglio_elettrocultura": "Applicare la tecnica Lakhovsky (onde di forma) per armonizzare i campi elettromagnetici della serra, abbinandola all'acqua magnetizzata per stimolare la vitalità delle piante durante i periodi di massima attività solare (solstizi/equinozi).",
-      "tag": [
-        "esoterismo",
-        "wicca",
-        "rune",
-        "magia delle candele",
-        "numerologia",
-        "rituali stagionali",
-        "simbologia pagana"
-      ],
-      "estratto_chiave": "«Prometto la mia dedizione al Dio e alla Dea. Camminerò con loro accanto a me e chiederò loro di guidarmi in questo viaggio.» (PAG 86) Simboleggia l'alleanza con le forze naturali per la coltivazione.",
-      "lingua": "it",
-      "applicabilita_serra": "media",
-      "perche": "Il documento offre spunti simbolici e rituali che possono essere adattati a pratiche agricole biodinamiche (es. allineamento con cicli solari), ma manca di contenuti tecnici specifici per la coltivazione in serra outdoor italiana.",
-      "id": "pdf_20",
-      "titolo": "Esoterismo-5-Libri-in-1.-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocchi",
-      "data_analisi": "2026-07-06",
-      "rilevanza": "alta",
-      "mistral_analizzato": true,
-      "testo_chars": 7229,
-      "testo_id": "Esoterismo-5-Libri-in-1_-Wicca_-Rune_-Magia-delle-Candele_-Numerologia-e-Tarocch",
-      "connessioni": [
-        {
-          "id": "pdf_4",
-          "titolo": "Aleister-Crowley-_Kaw-Djer",
-          "peso": 1
-        },
-        {
-          "id": "pdf_10",
-          "titolo": "Book of Wisdom (revival of wisdom, Harry B. Joseph)",
-          "peso": 1
-        },
-        {
-          "id": "pdf_3",
-          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
-          "peso": 1
-        }
-      ]
-    },
-    {
       "sommario": "Documento BioSerra: Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby)",
       "tecniche_chiave": [
         "Spirale cosmica rame",
@@ -20701,6 +21318,96 @@
       "testo_chars": 3750,
       "testo_id": "Il_Cuore_del_Maestro_Aleister_Crowley",
       "connessioni": []
+    },
+    {
+      "sommario": "Il documento è una trascrizione del 'Liber AL vel Legis' di Aleister Crowley, un testo sacro della Thelema che descrive principi metafisici e spirituali. Il testo parla di divinità come Nuit (infinito spazio) e Hadit (centro segreto), enfatizzando l'unità cosmica, la libertà individuale e la manifestazione della volontà. È strutturato in versi con riferimenti a simboli alchemici e rituali.",
+      "tecniche_chiave": [
+        "Lakhovsky (frequenze energetiche)",
+        "Fe-Cu (ferro-rame)",
+        "Acqua magnetizzata",
+        "Spirale rame",
+        "Antenna terra"
+      ],
+      "concetti_principali": [
+        "Unità tra macrocosmo e microcosmo",
+        "Libertà assoluta e volontà individuale",
+        "Simbolismo alchemico e astrologico",
+        "Dualità Nuit-Hadit (spazio-centro)",
+        "Rituale come chiave di manifestazione"
+      ],
+      "consiglio_coltivazione": "Applicare la tecnica della spirale rame intorno alle piante per armonizzare i campi elettromagnetici del suolo, favorendo la crescita e la resilienza delle colture in serra.",
+      "consiglio_elettrocultura": "Utilizzare l'antenna terra collegata a una spirale rame per creare un campo di risonanza con l'acqua magnetizzata, stimolando la vitalità del suolo e la fotosintesi delle piante.",
+      "tag": [
+        "teosofia",
+        "alchimia",
+        "elettrocultura",
+        "biodinamica",
+        "simbolismo",
+        "serra attiva"
+      ],
+      "estratto_chiave": "«Ogni uomo ed ogni donna è una stella. Ogni numero è infinito, non c’è nessuna differenza.»",
+      "lingua": "it",
+      "applicabilita_serra": "media",
+      "perche": "Il testo è di natura metafisica e simbolica, ma le tecniche menzionate (Lakhovsky, Fe-Cu, ecc.) possono essere integrate in un sistema di coltivazione avanzato come la serra BioSerra Caserta, purché adattate al contesto agricolo.",
+      "id": "pdf_308",
+      "titolo": "Il Libro Della Legge (Aleister Crowley)",
+      "data_analisi": "2026-07-06",
+      "rilevanza": "alta",
+      "mistral_analizzato": true,
+      "testo_chars": 37433,
+      "testo_id": "Il_Libro_Della_Legge_Aleister_Crowley",
+      "connessioni": [
+        {
+          "id": "pdf_4",
+          "titolo": "Aleister-Crowley-_Kaw-Djer",
+          "peso": 4
+        },
+        {
+          "id": "pdf_3",
+          "titolo": "Aleister-Crowley-Aforismi-Esoterici",
+          "peso": 4
+        },
+        {
+          "id": "pdf_10",
+          "titolo": "Book of Wisdom (revival of wisdom, Harry B. Joseph)",
+          "peso": 3
+        },
+        {
+          "id": "pdf_22",
+          "titolo": "Gustavo Rol una vita di prodigi (Remo Lugli)",
+          "peso": 2
+        },
+        {
+          "id": "pdf_26",
+          "titolo": "IL+CORANO",
+          "peso": 2
+        },
+        {
+          "id": "pdf_0",
+          "titolo": "108upa",
+          "peso": 1
+        },
+        {
+          "id": "pdf_84",
+          "titolo": "Activating The Inner Eye (Harry B. Joseph)",
+          "peso": 1
+        },
+        {
+          "id": "pdf_5",
+          "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+          "peso": 1
+        },
+        {
+          "id": "pdf_7",
+          "titolo": "An Agricultural Testament - Albert Howard",
+          "peso": 1
+        },
+        {
+          "id": "pdf_8",
+          "titolo": "Antenna uomo - Tiziano-Guerzoni",
+          "peso": 1
+        }
+      ]
     }
   ]
 }
