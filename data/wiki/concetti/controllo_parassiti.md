@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-07-05
+aggiornato: 2026-07-06
 pdf_count: 0
 ---
 
@@ -12,28 +12,33 @@ pdf_count: 0
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** è un approccio olistico alla gestione delle infestazioni in serra outdoor, basato sull’equilibrio ecologico del Living Soil e sulla promozione di antagonismi naturali. Questo metodo sfrutta la biodiversità del suolo e dell’ambiente circostante per ridurre la pressione dei patogeni senza ricorrere a sintetiche chimiche, preservando così la salute delle piante e la qualità del raccolto. Il meccanismo d’azione si fonda su tre pilastri: **prevenzione** (creazione di un ambiente sfavorevole ai parassiti), **intervento diretto** (uso di agenti biologici o sostanze naturali) e **monitoraggio costante** (osservazione delle dinamiche trofiche). Funziona perché si basa su principi ecologici: ogni organismo ha un predatore naturale, e la chiave è potenziare questi equilibri preesistenti.
+Il **Controllo Parassiti Naturale** rappresenta una strategia fitosanitaria basata sull’uso di metodi biologici per gestire infestazioni in serra outdoor, senza ricorrere a sintetiche. Questo approccio sfrutta principi ecologici come la **regolazione naturale delle popolazioni**, la **diversità funzionale** e la **resilienza del suolo vivente** per mantenere gli equilibri tra organismi dannosi e utili. In un contesto di **Living Soil** (suolo vivo), il controllo biologico diventa ancora più efficace grazie alla presenza di microrganismi simbionti, funghi micorrizici e batteri antagonisti che competono con i patogeni per risorse e spazio, riducendo così la loro capacità di proliferare.
 
-In particolare, in una serra outdoor a Caserta (41°N), dove il clima mediterraneo favorisce la proliferazione di afidi, acari e funghi, il controllo naturale si avvale di strategie adattate alle condizioni locali. Ad esempio, l’uso di **olio di neem** (azadiractina) agisce come repellente e regolatore della crescita degli insetti, interferendo con il loro ciclo vitale senza uccidere gli insetti utili. Allo stesso modo, l’introduzione di **acari predatori** (come *Phytoseiulus persimilis* per gli acari rossi) crea un rapporto preda-predatore che si autoregola, riducendo la necessità di interventi manuali. Questo approccio è sostenibile perché si integra con la **vitalità del suolo**: un terreno ricco di micorrize e batteri benefici (es. *Bacillus thuringiensis*) produce piante più resistenti agli stress biotici.
-
----
+Il meccanismo d’azione si basa su tre pilastri:
+1. **Prevenzione attiva**: attraverso l’uso di repellenti naturali (es. olio di neem) e la promozione di habitat favorevoli agli insetti utili.
+2. **Intervento mirato**: introduzione di predatori naturali (es. acari *Phytoseiulus persimilis* contro gli acari rossi) o l’uso di trappole a feromoni.
+3. **Monitoraggio costante**: ispezioni regolari per identificare precocemente focolai e agire tempestivamente. Questo metodo funziona perché si integra con i cicli naturali, evitando squilibri che favorirebbero invece le infestazioni.
 
 ## Come si applica in serra
+Per una serra outdoor a **Caserta (41°N)**, in regime di **Living Soil**, il protocollo di controllo parassiti naturale prevede i seguenti passaggi:
 
-1. **Ispezione quotidiana**
-   - Controlla **foglie giovani, steli e pagina inferiore delle foglie** (dove si annidano afidi e acari) al mattino, quando gli insetti sono meno attivi.
-   - Usa una **lente d’ingrandimento** per identificare uova, larve o adulti di parassiti (es. *Tetranychus urticae*).
-   - Segna le piante infestate con un nastro colorato per monitorare la progressione.
+1. **Ispezione quotidiana**:
+   - Controlla **foglie giovani, steli e fiori** alla ricerca di segni di infestazione (es. ragnatele, puntini gialli, melata).
+   - Usa una **lente d’ingrandimento** per identificare uova o insetti piccoli (es. afidi, tripidi).
+   - *Strumenti*: quaderno di campo per registrare osservazioni e foto per monitorare l’evoluzione.
 
-2. **Prevenzione con olio di neem**
-   - **Diluizione**: 5–10 ml di olio di neem puro + 1 ml di sapone di potassio (o 1 cucchiaino di bicarbonato) per litro d’acqua.
-   - **Applicazione**: Spruzza sulle foglie **ogni 7 giorni** (o dopo pioggia), preferibilmente al tramonto per evitare ustioni solari.
-   - **Effetto**: Riveste le piante con una barriera che respinge afidi, cocciniglie e funghi come l’oidio.
+2. **Prevenzione con olio di neem**:
+   - **Diluizione**: 5–10 ml di olio di neem puro in 1 litro d’acqua + 1 cucchiaino di sapone di Marsiglia (adesivante).
+   - **Applicazione**: nebulizza sulle foglie (soprattutto sul lato inferiore) ogni **7 giorni** in fase di vegetazione, riducendo a **10–14 giorni** in fioritura per evitare stress.
+   - *Momento ideale*: al tramonto per evitare ustioni fogliari.
 
-3. **Introduzione di insetti utili**
-   - **Acari predatori** (*Phytoseiulus persimilis*): Rilascia 2–5 individui per pianta infestata da acari rossi, ripetendo dopo 3–5 giorni se necessario.
-   - **Coccinelle** (*Coccinella septempunctata*): Posiziona **5–10 adulti** per 10 m² di serra, preferibilmente al mattino presto.
-   - **Nematodi benefici** (*Steinernema feltiae*): Applica in soluzione acquosa al suolo per combattere larve di moscerini (es. *Sciaridae*).
+3. **Introduzione di insetti utili**:
+   - **Acari predatori** (*Phytoseiulus persimilis*): da rilasciare quando si notano **acari rossi** (*Tetranychus urticae*). Dosaggio: 2–5 individui per pianta infestata.
+   - **Crisopidi** (*Chrysoperla carnea*): larve predatrici di afidi e tripidi. Rilasciare 10–20 uova per pianta ogni 2 settimane.
+   - *Consiglio*: acquista insetti utili da fornitori specializzati (es. **Biobest**, **Koppert**) e rilasciali in **zone ombreggiate** per favorirne l’acclimatamento.
 
-4. **Barriere fisiche**
-   - Copri le aperture della serra con **reti a maglia fine** (0.6 mm) per esclud
+4. **Trappole e barriere fisiche**:
+   - **Trappole gialle/blu** (adesive) per tripidi e moscerini del fungo. Posizionarle a **10–15 cm dalle piante**.
+   - **Reti anti-insetto** (maglia 0.6 mm) per prevenire l’ingresso di aleurodidi o farfalle notturne.
+
+5. **Supporto al
