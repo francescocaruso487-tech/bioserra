@@ -243,7 +243,15 @@ def main():
         "Sei il modulo di memoria a lungo termine del Cervello AI di BioSerra (serra Living Soil "
         "outdoor a Caserta, elettrocultura + biodinamica). Analizza il contesto sotto e distilla "
         "SOLO pattern concreti, specifici, ripetuti almeno 2 volte o statisticamente supportati - "
-        "MAI consigli generici da manuale, MAI ripetizioni di appunti gia' memorizzati. "
+        "MAI consigli generici da manuale, MAI ripetizioni di appunti gia' memorizzati.\n"
+        "REGOLA CRITICA (Rev.23): NON distillare MAI urgenze di raccolta/taglio legate a un "
+        "conto alla rovescia relativo (es. 'entro N giorni/ore', 'a breve', 'imminente'). Queste "
+        "dipendono da date ricalcolate ogni notte da piante_stato_update.py (moltiplicatori "
+        "ore-sole ricalibrabili) e diventano stale o sbagliate in poche ore - il conto alla rovescia "
+        "corretto e sempre disponibile in tempo reale altrove (alerts_oggi, data_raccolta), non va "
+        "congelato qui come appunto permanente. Qui distilla SOLO pattern durevoli: tecniche "
+        "efficaci/inefficaci, correlazioni intervento-esito, problemi ricorrenti non legati a una "
+        "data specifica (es. stress idrico, parassiti, carenze).\n"
         "Se non ci sono pattern reali nuovi, ritorna una lista vuota: [].\n"
         "Rispondi SOLO con un array JSON valido, nessun testo fuori dal JSON, max 8 elementi, "
         "ogni elemento: {\"testo\": \"frase breve max 25 parole in italiano, con pianta/tecnica/esito "
@@ -265,6 +273,13 @@ def main():
 
     oggi = datetime.now(timezone.utc).strftime('%Y-%m-%d')
 
+    # Filtro difensivo (Rev.23): scarta urgenze a conto alla rovescia relativo anche se
+    # il modello ignora l'istruzione nel prompt - queste dipendono da date ricalcolate
+    # ogni notte e diventano stale/sbagliate in poche ore (vedi bug temi_ricorrenti 06/07).
+    RE_URGENZA_RELATIVA = re.compile(
+        r'\bentro\s+\d+\s*(giorn|or[ae])|\btra\s+\d+\s*(giorn|or[ae])|\ba\s+breve\b|\bimminente\b',
+        re.IGNORECASE)
+
     nuovi_puliti = []
     for n in nuovi:
         if not isinstance(n, dict):
@@ -272,6 +287,9 @@ def main():
         testo = sanitize_testo(str(n.get('testo', '')).strip())
         evid = sanitize_testo(str(n.get('evidenza', '')).strip())
         if not testo:
+            continue
+        if RE_URGENZA_RELATIVA.search(testo):
+            print(f"  Scartato (urgenza temporale relativa, vedi regola Rev.23): {testo}")
             continue
         nuovi_puliti.append({'testo': testo, 'evidenza': evid, 'data': oggi})
 
