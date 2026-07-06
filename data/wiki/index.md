@@ -1,30 +1,24 @@
 # BioSerra Wiki — Indice
 
-> Aggiornato: 2026-07-05 | 20 concetti | Knowledge base Living Soil + Elettrocultura
+> Aggiornato: 2026-07-06 | 16 concetti | Knowledge base Living Soil + Elettrocultura
 
 ## Panoramica
 - [Overview generale](sintesi/overview.md)
 
 ## Elettrocultura
 - [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Utilizza spirali di rame per stimolare la crescita delle piante attraverso campi
-- [Elettrocultura](concetti/elettrocultura.md) *(in 4 PDF)* — Applica correnti elettriche deboli o campi elettromagnetici per migliorare la sa
-- [Antenna Terrestre](concetti/antenna_terrestre.md) *(in 6 PDF)* — Collega le piante a terra tramite un conduttore per sfruttare le energie telluri
-- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 3 PDF)* — Tratta l'acqua con magneti per migliorare la sua struttura molecolare e aumentar
-- [Biofisica Applicata alle Piante](concetti/biofisica_applicata.md) — Utilizza principi di fisica e biofisica per ottimizzare la crescita delle piante
-- [Stimolazione Elettrica delle Piante](concetti/stimolazione_elettrica.md) — Applica impulsi elettrici deboli per accelerare la crescita, la fioritura e la p
-- [Metalli Bioattivi](concetti/metalli_bioattivi.md) — Utilizza metalli come rame, zinco o ferro per creare campi elettromagnetici che 
+- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 4 PDF)* — Tratta l'acqua con campi magnetici per migliorare l'assorbimento dei nutrienti e
+- [Elettrocultura](concetti/elettrocultura.md) *(in 4 PDF)* — Applica correnti elettriche deboli per stimolare la fotosintesi e la resistenza 
+- [Antenna di Terra](concetti/antenna_terra.md) *(in 7 PDF)* — Utilizza strutture metalliche interrate per armonizzare i campi bioelettrici del
+- [Lega Ferro-Rame (Fe-Cu)](concetti/lega_ferro_rame.md) *(in 2 PDF)* — Utilizza una combinazione di ferro e rame per bilanciare i campi elettromagnetic
 
 ## Suolo
-- [Compostaggio](concetti/compostaggio.md) *(in 4 PDF)* — Trasforma materiali organici in compost per arricchire il suolo di nutrienti e m
-- [Suolo Vivo](concetti/suolo_vivo.md) — Promuovi la biodiversità microbica del suolo per migliorare la salute delle pian
+- [Compostaggio](concetti/compostaggio.md) *(in 3 PDF)* — Trasforma materiali organici in compost per migliorare la struttura del suolo e 
 - [Suolo Vivente](concetti/gestione_suolo_vivente.md) — Mantenimento microbioma del suolo attivo.
-- [Compostaggio Organico](concetti/compostaggio_organico.md) *(in 4 PDF)* — Produzione compost di qualita per ammendare il substrato.
+- [Compostaggio Organico](concetti/compostaggio_organico.md) *(in 3 PDF)* — Produzione compost di qualita per ammendare il substrato.
 - [Inoculazione Micorrize](concetti/inoculazione_micorrize.md) — Introduzione funghi micorrizici per simbiosi radicale.
-- [Te di Compost](concetti/te_di_compost.md) *(in 4 PDF)* — Infuso aerobico di compost per applicazione fogliare o radicale.
+- [Te di Compost](concetti/te_di_compost.md) *(in 3 PDF)* — Infuso aerobico di compost per applicazione fogliare o radicale.
 - [Gestione pH Suolo](concetti/gestione_ph_suolo.md) — Mantenimento pH ottimale 6.0-7.0 per biodisponibilita nutrienti.
-
-## Irrigazione
-- [Irrigazione Vibrazionale](concetti/irrigazione_vibrazionale.md) — Tratta l'acqua con vibrazioni sonore o frequenze specifiche per migliorare la su
 
 ## Nutrizione
 - [Fertilizzazione Organica](concetti/fertilizzazione_organica.md) — Apporto nutrienti tramite ammendanti organici naturali.
