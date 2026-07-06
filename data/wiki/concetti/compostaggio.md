@@ -2,8 +2,8 @@
 id: compostaggio
 label: Compostaggio
 categoria: suolo
-aggiornato: 2026-07-05
-pdf_count: 4
+aggiornato: 2026-07-06
+pdf_count: 3
 ---
 
 # Compostaggio
@@ -12,34 +12,26 @@ pdf_count: 4
 # Compostaggio
 
 ## Descrizione
-Il compostaggio è un processo naturale di decomposizione aerobica dei materiali organici, che trasforma scarti vegetali, letame e altri residui in un ammendante ricco di nutrienti e microrganismi benefici. Questo processo avviene grazie all’azione di batteri, funghi, attinomiceti e altri organismi del suolo, che scompongono la materia organica in humus stabile. Il compost maturo migliora la struttura del terreno, aumenta la capacità di ritenzione idrica, favorisce la biodiversità microbica e fornisce nutrienti essenziali in forma lentamente disponibile, riducendo la necessità di fertilizzanti sintetici.
+Il compostaggio è un processo biologico di decomposizione aerobica della materia organica, fondamentale per la rigenerazione del suolo in agricoltura Living Soil. Attraverso l’azione di microrganismi (batteri, funghi, attinomiceti) e macroinvertebrati (lombrichi, collemboli), i materiali organici vengono trasformati in humus stabile, ricco di nutrienti assimilabili e sostanze umiche che migliorano la struttura del terreno. Questo processo non solo riduce gli scarti agricoli, ma crea un ammendante naturale che potenzia la fertilità biologica, la capacità di scambio cationico (CEC) e la resilienza del suolo alle malattie. In serra outdoor a Caserta (41°N), dove il clima mediterraneo favorisce l’attività microbica per gran parte dell’anno, il compostaggio accelerato consente di ottenere compost maturo in 3-6 mesi, ottimizzando i cicli colturali.
 
-In un sistema **Living Soil** come quello outdoor a Caserta (41°N), il compostaggio assume un ruolo chiave per mantenere l’equilibrio del suolo. La decomposizione controllata consente di riciclare nutrienti locali (ad esempio, residui di potatura, foglie secche o scarti di cucina) e di integrare microrganismi benefici che competono con patogeni e promuovono la salute delle piante. Inoltre, un compost ben gestito aiuta a tamponare il pH del suolo e a migliorare la resilienza delle colture, soprattutto in condizioni di stress idrico o termico tipiche del clima mediterraneo.
+Il meccanismo si basa su un equilibrio tra carbonio (C) e azoto (N), con un rapporto ideale di 25-30:1. Materiali ricchi di azoto (letame fresco, scarti di cucina) si degradano rapidamente, mentre quelli carboniosi (paglia, foglie secche, segatura) forniscono energia strutturale ai microrganismi. La temperatura del cumulo (che può raggiungere 50-70°C nella fase termofila) uccide patogeni e semi di malerbe, garantendo un prodotto sicuro. L’umidità (50-60%) e l’aerazione sono critiche: un compost troppo umido diventa anaerobico, producendo odori sgradevoli e metano, mentre uno troppo secco rallenta la decomposizione.
 
 ## Come si applica in serra
-Per un sistema **Living Soil outdoor** a Caserta, segui queste istruzioni pratiche per il compostaggio in serra:
 
-1. **Selezione dei materiali**:
-   - **Materiali azotati** (umidi): scarti di frutta/verdura, erba fresca, letame (es. equino o bovino ben maturo), fondi di caffè.
-   - **Materiali carboniosi** (secchi): foglie secche, paglia, trucioli di legno non trattato, cartone non inchiostrato.
-   - *Evita*: carne, latticini, oli, piante malate o infestate da parassiti.
+1. **Selezione dei materiali**
+   - **Verde (azoto)**: scarti di potatura, erba fresca, letame (equino, bovino o avicolo ben decomposto), fondi di caffè.
+   - **Marrone (carbonio)**: paglia, foglie secche, segatura non trattata, cartone non inchiostrato, trucioli di legno.
+   - *Evita*: carne, latticini, piante malate, erbacce con semi, legno trattato.
 
-2. **Costruzione del cumulo**:
-   - Crea un cumulo di **1-1.5 m di altezza** e **1-2 m di larghezza** per garantire un buon rapporto superficie/volume e trattenere calore.
-   - Alterna strati di materiali azotati e carboniosi (rapporto ideale **2:1** in volume, es. 2 parti di foglie secche per 1 parte di letame).
-   - Interra occasionalmente scarti di potatura o ramaglie per favorire l’aerazione.
+2. **Costruzione del cumulo**
+   - Disponi i materiali in strati alternati (1 parte verde : 2-3 parti marrone), tritando grossolanamente gli scarti per accelerare la decomposizione.
+   - Posiziona il cumulo in un’area ombreggiata della serra, su terreno nudo per favorire l’accesso di lombrichi e microrganismi del suolo.
+   - *Dimensione consigliata*: 1-1.5 m di larghezza e altezza per ottimizzare la termoregolazione.
 
-3. **Gestione dell’umidità e temperatura**:
-   - Mantieni l’umidità al **60-70%** (il cumulo dovrebbe essere umido come una spugna strizzata).
-   - Copri il cumulo con un telo traspirante per proteggerlo dalla pioggia eccessiva o dal sole diretto.
-   - Gira il cumulo ogni **2 settimane** con una forca o un compost turner per ossigenare e accelerare la decomposizione.
+3. **Gestione quotidiana**
+   - **Umidità**: Controlla con il "test della spugna" (stringendo un pugno di compost, dovrebbe gocciolare 2-3 gocce). In estate, nebulizza acqua 2-3 volte a settimana; in inverno, riduci la frequenza.
+   - **Aerazione**: Rimescola il cumulo ogni 2 settimane con una forca o un aeratore per ossigenare i microrganismi e prevenire la formazione di zone anaerobiche. In serra, usa un telo traspirante per proteggere dalle piogge eccessive.
 
-4. **Maturazione e utilizzo**:
-   - Il compost è pronto dopo **3-6 mesi**, quando ha un aspetto scuro, odore di terra e struttura simile a terriccio.
-   - Distribuisci **1-3 cm di compost maturo** sulla superficie del suolo prima della semina o durante la vegetazione, evitando di interrarlo per non disturbare la vita microbica.
-   - In serra, puoi anche utilizzare il compost come **strato di pacciamatura** per ridurre l’evaporazione e mantenere la temperatura del suolo.
-
-## Sinergie con altri elementi
-Il compostaggio si integra perfettamente con altre tecniche per un **Living Soil** avanzato a Caserta:
-
-- **Elettrocultura (Lakhovsky)**: Un suolo ricco di microrganismi benefici (come quelli del compost) amplifica gli effetti delle onde
+4. **Maturazione**
+   - Dopo 4-6 settimane, il cumulo si raffredda (fase mesofila). A questo punto, riduci la frequenza dei rivoltamenti a 1 volta al mese.
+   - Il compost è pronto quando ha un aspetto scuro, odore di terra umida e temperatura ambiente. Setaccia con un setaccio a maglia fine (5
