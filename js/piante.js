@@ -1112,7 +1112,15 @@ function renderActivePlants() {
         fine:            { label:'✅ Fine',               color:'#4caf76' }
       };
       const mapped = phaseMap[ovr.currentPhase];
-      if (mapped) { currentPhaseLabel = mapped.label; phaseColor = mapped.color; }
+      if (mapped) {
+        currentPhaseLabel = mapped.label;
+        phaseColor = mapped.color;
+        // FIX: prima solo label/colore venivano allineati all'override, il
+        // pallino attivo nella timeline orizzontale (phaseIndexMap sotto)
+        // restava sulla fase calcolata automaticamente — disallineamento
+        // visivo scoperto durante la revisione Rev.23 (sync fase→GitHub).
+        currentPhase = ovr.currentPhase;
+      }
     }
 
     // ── Countdown / stato raccolta ──
