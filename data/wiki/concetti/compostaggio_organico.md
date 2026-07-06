@@ -2,8 +2,8 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-07-05
-pdf_count: 4
+aggiornato: 2026-07-06
+pdf_count: 3
 ---
 
 # Compostaggio Organico
@@ -12,28 +12,40 @@ pdf_count: 4
 # Compostaggio Organico
 
 ## Descrizione
-Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il compost. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macroorganismi (lombrichi, acari, collemboli) che, in condizioni ottimali di umidità, temperatura e aerazione, scompongono la materia organica in humus. L’humus risultante è un substrato vivo, dotato di una struttura porosa che migliora la ritenzione idrica e la capacità di scambio cationico (CSC), fondamentale per la salute delle piante in **Living Soil**.
+Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (scarti vegetali, letame, residui agricoli) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti, noto come **compost**. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macrofauna (lombrichi, artropodi) che, in condizioni ottimali di umidità, temperatura e ossigenazione, scompongono la materia organica in humus. Il compost maturo è un **Living Soil** in miniatura: migliora la struttura del suolo, aumenta la capacità di ritenzione idrica, favorisce lo sviluppo della rizosfera e fornisce nutrienti a lento rilascio, essenziali per le piante in fase vegetativa.
 
-Il meccanismo si basa su fasi termofile (55–65°C) e mesofile, dove i microrganismi termofili dominano inizialmente, accelerando la decomposizione e uccidendo patogeni e semi di malerbe. Successivamente, i decompositori mesofili stabilizzano il materiale, arricchendo il compost di nutrienti assimilabili (azoto, fosforo, potassio) e sostanze umiche che stimolano la crescita radicale e la resistenza delle piante. Per coltivazioni outdoor in serra a Caserta (41°N), il compost di qualità è essenziale per mantenere un suolo vivo, soprattutto durante le fasi di **germinazione** e **vegetazione**, dove le piante richiedono un apporto costante di nutrienti naturali e una struttura del suolo ottimale per lo sviluppo radicale.
+Il meccanismo chiave del compostaggio si basa su **due fasi termofile**:
+1. **Fase di degradazione attiva** (55–65°C): i microrganismi termofili (come *Thermus* e *Bacillus*) degradano rapidamente i composti azotati e carboniosi, generando calore e CO₂.
+2. **Fase di maturazione** (20–40°C): i composti più resistenti (lignina, cellulosa) vengono scomposti da funghi e actinomiceti, portando alla formazione di **acidi umici e fulvici**, che migliorano la fertilità del suolo e la disponibilità di nutrienti per le piante.
+
+In un contesto di **Living Soil outdoor** a Caserta (41°N), il compostaggio è fondamentale per:
+- **Ridurre i rifiuti agricoli** (sfalci, potature, residui di coltivazione).
+- **Creare un substrato autosufficiente** ricco di microrganismi benefici (funghi micorrizici, batteri solubilizatori di fosforo).
+- **Bilanciare il rapporto C/N** del suolo, evitando carenze o eccessi di nutrienti durante la fase vegetativa.
 
 ---
 
 ## Come si applica in serra
 
-### **1. Selezione dei materiali**
-- **Materiali verdi (ricchi di azoto)**: scarti di frutta/verdura, erba fresca, letame fresco (es. stallatico), fondi di caffè.
-- **Materiali marroni (ricchi di carbonio)**: foglie secche, paglia, cartone non patinato, ramaglie triturate, trucioli di legno.
-- **Bilanciamento**: rapporto ideale **2:1** (verdi:marroni) per evitare acidificazione o putrefazione. A Caserta, in serra, si può aggiustare con scarti di potatura locale (marroni) e residui di ortaggi (verdi).
+### **Materiali necessari**
+- **Materiali verdi** (alto contenuto di azoto, rapporto C/N ~20:1):
+  - Scarti di ortaggi, erba fresca, residui di potatura verde, letame fresco (es. cavallo, pollo).
+- **Materiali marroni** (alto contenuto di carbonio, rapporto C/N ~40:1):
+  - Paglia, foglie secche, cartone non stampato, segatura, trucioli di legno non trattato.
+- **Struttura di compostaggio**:
+  - Pila all’aperto (in serra o zona ombreggiata) o composter in legno/reti metalliche.
+  - Strumenti: termometro da compost, forca da giardino, annaffiatoio, guanti.
 
-### **2. Preparazione del cumulo**
-- **Dimensione**: cumulo di **1–1,5 m di altezza** e **1–1,5 m di larghezza** per garantire un buon isolamento termico.
-- **Base**: posizionare uno strato di materiali grossolani (ramaglie) per favorire l’aerazione dal basso.
-- **Umidità**: mantenere al **50–60%** (come una spugna strizzata). In serra, l’umidità può essere regolata con nebulizzatori o coperture traspiranti per evitare eccessi dovuti al clima mediterraneo.
+### **Procedura passo-passo per serra outdoor a Caserta**
+1. **Preparazione della base**:
+   - Stendere uno strato di **materiali marroni** (10–15 cm) sul fondo per favorire l’aerazione e prevenire ristagni.
+   - Posizionare la pila in un’area **parzialmente ombreggiata** (evitare il sole diretto che asciuga troppo il compost).
 
-### **3. Gestione della temperatura**
-- **Monitoraggio**: usare un termometro da compost o sonda digitale. La fase termofila (55–65°C) dura **2–4 settimane**.
-- **Controllo**: se la temperatura supera i 65°C, rivoltare il cumulo per ossigenare e abbassare la temperatura. Se scende sotto i 50°C, aggiungere materiali verdi o coprire con teli per trattenere il calore.
+2. **Bilanciamento dei materiali**:
+   - **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume).
+   - Esempio pratico:
+     - 10 kg di erba fresca (verde) + 20 kg di foglie secche (marrone) + 5 kg di letame (verde).
+   - **Tagliare i materiali** in pezzi piccoli (5–10 cm) per accelerare la decomposizione.
 
-### **4. Rivoltamenti e aerazione**
-- **Frequenza**: rivoltare ogni **2–3 giorni** durante la fase termofila, poi ogni **5–7 giorni** nella fase di maturazione.
-- **Tecnica**: usare un forcone o una pala per mescolare uniformemente, assicurandosi che tutti i materiali siano es
+3. **Costruzione della pila**:
+   - Alternare strati di
