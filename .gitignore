@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Python (script pipeline)
+__pycache__/
+*.pyc
+
+# Node (se mai introdotto tooling frontend)
+node_modules/
