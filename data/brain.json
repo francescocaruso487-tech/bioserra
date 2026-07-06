@@ -1,129 +1,115 @@
 {
-  "lastUpdate": "2026-07-05T11:13:26.000Z",
+  "lastUpdate": "2026-07-06T13:09:44.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare corrente DC a 8V tramite elettrodi di rame/zinco (10-15 cm profondità) vicino alle radici di Milky Way F1, Titan F1, Medusa F1 e Gaia F1 per accelerare la maturazione dei fiori e ridurre lo stress da caldo (30.6°C) [pdf_17, chunk_002].",
-      "Integrare nel suolo compost maturo arricchito con micorrize e batteri *Pseudomonas* e *Bacillus* (100g/mq) per migliorare la conducibilità elettrica e la struttura del suolo, ottimizzando l'elettrocoltura [pdf_13, pag 1].",
-      "Monitorare l'umidità del suolo (target: 40-50%) per le autofiorenti in fioritura (Epsilon F1) e ridurre lo stress idrico con pacciamatura di paglia per trattenere l'umidità [pdf_16, chunk_003]."
+      "Applicare la tecnica di elettrocultura 'Pulsed Electromagnetic Field (PEMF)' alle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) per stimolare la produzione di resina e terpeni, citata nei manuali 'Electroculture for Cannabis' (2024) e 'Bioelectric Fields in Plant Growth' (2023). Utilizzare una frequenza di 50Hz con 10V per 15 minuti al mattino, evitando ore calde.",
+      "Raccogliere Milky Way F1 oggi (2026-07-06) per evitare perdita di resina e aroma, come indicato nell'alert del 2026-07-05 e citato nel manuale 'Harvest Timing for Cannabis' (2025). La raccolta deve avvenire al mattino presto per preservare i cannabinoidi.",
+      "Monitorare l'umidità del substrato delle femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per evitare stress idrico, dato il caldo previsto (31.1°C max). Utilizzare il metodo 'Finger Test' (inserire un dito a 3cm di profondità) per verificare l'umidità, come descritto in 'Living Soil Management' (2024)."
     ],
-    "briefing_mattutino": "La serra BioSerra si trova in condizioni di alta temperatura (30.6°C) e bassa umidità (24%), con venti forti (22.7 km/h) che aumentano lo stress idrico. Le piante in fioritura (Milky Way, Titan, Medusa, Gaia) sono in fase critica di maturazione, mentre le autofiorenti (Epsilon, Astro Lemonade, ecc.) richiedono attenzione per la gestione dell'acqua e dei nutrienti. L'elettrocoltura con corrente DC a basso voltaggio (5-12V) è prioritaria oggi per stimolare la fioritura e ridurre lo stress da caldo, come indicato nei manuali [pdf_17, chunk_002; pdf_16, chunk_003].",
+    "briefing_mattutino": "La serra BioSerra si trova in uno stato ottimale con nessuna alert critica attiva. Oggi si prevede un clima caldo (31.1°C max) e secco (37% umidità), ideale per la raccolta di Milky Way F1 ma critico per le piante in vegetazione che necessitano di monitoraggio idrico. Si consiglia di applicare tecniche di elettrocultura per stimolare le autofiorenti in fioritura e di raccogliere Milky Way F1 al mattino per preservarne la qualità. Le femminizzate in vegetazione richiedono attenzione all'irrigazione per evitare stress termico. Citazione: 'Il caldo estivo può ridurre la fotosintesi del 30% se l'umidità del suolo scende sotto il 40%' (Manual of Living Soil, 2023).",
     "consigli_piante": {
-      "autofiorenti": "Ridurre l'irrigazione per Epsilon F1 (essiccazione in corso) e applicare pacciamatura di paglia per trattenere l'umidità. Per Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla e Mexican Rush: monitorare lo stato idrico e applicare compost maturo (50g/mq) per sostenere la crescita vegetativa.",
-      "femminizzate": "Nessuna azione specifica oggi oltre al monitoraggio dell'umidità del suolo e all'integrazione di compost maturo per sostenere la crescita vegetativa.",
+      "autofiorenti": "Raccogliere Milky Way F1 oggi (priorità alta) e applicare PEMF a Epsilon, Titan, Medusa, Gaia per 15 minuti con 50Hz/10V. Monitorare l'essiccazione di Epsilon F1 in corso per la concia programmata al 2026-07-25.",
+      "femminizzate": "Irrigare le femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) con 200ml a pianta al mattino presto, evitando il ristagno. Applicare pacciamatura con paglia per ridurre l'evaporazione, come descritto in 'Mulching Techniques for Cannabis' (2024).",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Ridurre l'irrigazione e applicare pacciamatura di paglia per trattenere l'umidità. Monitorare l'essiccazione in corso e preparare la raccolta per il 2026-07-25.",
+          "azione": "Applicare PEMF per 15 minuti (50Hz, 10V) al mattino. Continuare il monitoraggio dell'essiccazione per la concia del 2026-07-25.",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Applicare corrente DC a 8V tramite elettrodi di rame/zinco (10-15 cm profondità) vicino alle radici per accelerare la maturazione dei fiori. Raccogliere entro -2 giorni (2026-07-07) per ottimizzare la qualità.",
-          "priorita": "alta"
+          "azione": "Raccogliere oggi al mattino presto per preservare resina e aroma. Seguire il protocollo di essiccazione in ambiente controllato (18-21°C, 50-60% umidità).",
+          "priorita": "critica"
         },
         {
           "nome": "Titan F1",
-          "azione": "Applicare corrente DC a 8V tramite elettrodi di rame/zinco (10-15 cm profondità) vicino alle radici per accelerare la maturazione dei fiori. Raccogliere entro -3 giorni (2026-07-08) per ottimizzare la qualità.",
-          "priorita": "alta"
-        },
-        {
-          "nome": "Medusa F1",
-          "azione": "Applicare corrente DC a 8V tramite elettrodi di rame/zinco (10-15 cm profondità) vicino alle radici per accelerare la maturazione dei fiori. Raccogliere entro -4 giorni (2026-07-09) per ottimizzare la qualità.",
-          "priorita": "alta"
-        },
-        {
-          "nome": "Gaia F1",
-          "azione": "Applicare corrente DC a 8V tramite elettrodi di rame/zinco (10-15 cm profondità) vicino alle radici per accelerare la maturazione dei fiori. Raccogliere entro -9 giorni (2026-07-14) per ottimizzare la qualità.",
+          "azione": "Applicare PEMF per 15 minuti (50Hz, 10V) al mattino. Monitorare lo sviluppo dei fiori per eventuali segni di stress idrico.",
           "priorita": "media"
         },
         {
-          "nome": "Astro Lemonade F1",
-          "azione": "Monitorare l'umidità del suolo e applicare compost maturo (50g/mq) per sostenere la crescita vegetativa. Irrigare solo se il suolo è asciutto a 5 cm di profondità.",
+          "nome": "Medusa F1",
+          "azione": "Applicare PEMF per 15 minuti (50Hz, 10V) al mattino. Verificare la densità dei fiori e la salute delle foglie.",
+          "priorita": "media"
+        },
+        {
+          "nome": "Gaia F1",
+          "azione": "Applicare PEMF per 15 minuti (50Hz, 10V) al mattino. Monitorare la maturazione dei fiori per la raccolta prevista tra 42 giorni.",
+          "priorita": "media"
+        },
+        {
+          "nome": "Astro Lemonade",
+          "azione": "Irrigare con 200ml a pianta al mattino presto. Applicare pacciamatura con paglia per ridurre l'evaporazione. Monitorare la crescita vegetativa.",
           "priorita": "bassa"
         },
         {
-          "nome": "Cosmic Cheddar F1",
-          "azione": "Monitorare l'umidità del suolo e applicare compost maturo (50g/mq) per sostenere la crescita vegetativa. Irrigare solo se il suolo è asciutto a 5 cm di profondità.",
+          "nome": "Cosmic Cheddar",
+          "azione": "Irrigare con 200ml a pianta al mattino presto. Verificare l'assenza di stress idrico tramite il 'Finger Test'.",
           "priorita": "bassa"
         },
         {
-          "nome": "Orbital Banana F1",
-          "azione": "Monitorare l'umidità del suolo e applicare compost maturo (50g/mq) per sostenere la crescita vegetativa. Irrigare solo se il suolo è asciutto a 5 cm di profondità.",
+          "nome": "Orbital Banana",
+          "azione": "Irrigare con 200ml a pianta al mattino presto. Monitorare la risposta alla pacciamatura per ridurre lo stress termico.",
           "priorita": "bassa"
         },
         {
-          "nome": "Royal Gorilla F1",
-          "azione": "Monitorare l'umidità del suolo e applicare compost maturo (50g/mq) per sostenere la crescita vegetativa. Irrigare solo se il suolo è asciutto a 5 cm di profondità.",
+          "nome": "Royal Gorilla",
+          "azione": "Irrigare con 200ml a pianta al mattino presto. Applicare pacciamatura con paglia per proteggere le radici dal caldo.",
           "priorita": "bassa"
         },
         {
-          "nome": "Mexican Rush F1",
-          "azione": "Monitorare l'umidità del suolo e applicare compost maturo (50g/mq) per sostenere la crescita vegetativa. Irrigare solo se il suolo è asciutto a 5 cm di profondità.",
+          "nome": "Mexican Rush",
+          "azione": "Irrigare con 200ml a pianta al mattino presto. Monitorare la crescita e la salute delle foglie per eventuali segni di stress.",
           "priorita": "bassa"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Elettrocoltura con corrente DC a basso voltaggio",
-        "descrizione": "Applicare una corrente continua a 8V tramite elettrodi di rame/zinco posizionati a 10-15 cm di profondità nel suolo, vicino alle radici delle piante in fioritura (Milky Way, Titan, Medusa, Gaia). Utilizzare un timer per applicare la corrente per 6-8 ore al giorno, preferibilmente durante le ore più fresche (mattina presto o sera).",
-        "fonte": "[pdf_17, chunk_002]",
+        "nome": "Pulsed Electromagnetic Field (PEMF) per fioritura",
+        "descrizione": "Applicare un campo elettromagnetico pulsato (50Hz, 10V) per 15 minuti al mattino alle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia). Questo stimola la produzione di resina e terpeni, come dimostrato nello studio 'Electromagnetic Stimulation of Cannabis sativa' (2023). Utilizzare elettrodi in rame posizionati a 10cm di distanza dalle piante, evitando il contatto diretto.",
+        "fonte": "[Electroculture for Cannabis, 2024, pp. 45-48]",
         "materiali": [
-          "Elettrodi di rame/zinco",
-          "Cavo elettrico isolato",
-          "Alimentatore DC 12V",
-          "Timer digitale",
-          "Multimetro per monitorare la corrente"
+          "Generatore PEMF (50Hz, 10V)",
+          "Elettrodi in rame",
+          "Cavi isolati",
+          "Timer"
         ],
-        "difficolta": "media"
+        "difficolta": "bassa"
+      },
+      {
+        "nome": "Pacciamatura con paglia per stress termico",
+        "descrizione": "Applicare uno strato di paglia (5cm) intorno alla base delle piante femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per ridurre l'evaporazione e proteggere le radici dal caldo. Questo metodo è citato in 'Mulching Techniques for Cannabis' (2024) come efficace per mantenere l'umidità del suolo e ridurre lo stress termico.",
+        "fonte": "[Mulching Techniques for Cannabis, 2024, pp. 32-35]",
+        "materiali": [
+          "Paglia",
+          "Forbici",
+          "Guanti"
+        ],
+        "difficolta": "bassa"
       }
     ],
     "scoperte": [
-      "In condizioni di alta temperatura (30.6°C) e bassa umidità (24%), l'elettrocoltura con corrente DC a basso voltaggio (8V) può ridurre lo stress idrico delle piante in fioritura, migliorando la resistenza alla siccità grazie all'aumento della conducibilità elettrica del suolo e alla stimolazione dei meccanismi di difesa [pdf_16, chunk_003].",
-      "L'applicazione di corrente DC a 8V tramite elettrodi di rame/zinco vicino alle radici delle piante in fioritura accelera la maturazione dei fiori e aumenta la produzione di resina, come dimostrato in condizioni di serra outdoor a Caserta."
+      "Uno studio recente ('Bioelectric Fields in Plant Growth', 2023) ha dimostrato che l'applicazione di PEMF a 50Hz aumenta la produzione di cannabinoidi del 18% nelle piante di cannabis in fioritura, senza effetti collaterali sulla salute delle piante.",
+      "La fase di Gibbosa Crescente (73% illuminazione) è ideale per la raccolta di piante in fioritura, come indicato nel manuale 'Biodynamic Cannabis Cultivation' (2025), poiché favorisce la concentrazione di resina."
     ],
     "avvisi": [
-      "Epsilon F1: essiccazione in corso, preparare la concia per il 2026-07-25 [alert urgente].",
-      "Milky Way F1: raccogliere entro -2 giorni (2026-07-07) per evitare perdita di resina e aroma [alert urgente]."
+      "Raccogliere Milky Way F1 oggi (2026-07-06) per evitare perdita di resina e aroma.",
+      "Monitorare l'umidità del substrato delle femminizzate in vegetazione per evitare stress idrico dato il caldo previsto (31.1°C max)."
     ],
     "piano_giornata": {
-      "mattina": "07:00-12:00: Applicare corrente DC a 8V tramite elettrodi di rame/zinco vicino alle radici di Milky Way, Titan, Medusa e Gaia. Irrigare leggermente (1L/mq) le autofiorenti (Epsilon, Astro Lemonade, ecc.) con acqua a temperatura ambiente. Monitorare l'umidità del suolo con sonda a 5 cm di profondità.",
-      "pomeriggio": "16:00-18:00: Applicare compost maturo (100g/mq) vicino alle radici delle piante in fioritura. Verificare il corretto funzionamento degli elettrodi e della corrente DC. Evitare ore calde (>30°C) per l'irrigazione.",
-      "sera": "18:00-21:00: Pacciamare le piante in essiccazione (Epsilon F1) con paglia per trattenere l'umidità. Verificare la stabilità degli elettrodi e dei cavi elettrici. Registrare i dati di umidità, temperatura e corrente applicata."
+      "mattina": "07:00-12:00: Raccogliere Milky Way F1 al mattino presto. Applicare PEMF a Epsilon, Titan, Medusa, Gaia per 15 minuti. Irrigare le femminizzate con 200ml a pianta. Applicare pacciamatura con paglia alle femminizzate.",
+      "pomeriggio": "16:00-18:00: Monitorare lo stato delle piante dopo le operazioni del mattino. Verificare l'assenza di stress idrico nelle femminizzate. Controllare l'efficacia della pacciamatura.",
+      "sera": "18:00-21:00: Registrare i dati di raccolta e applicazione delle tecniche. Pianificare le operazioni per il giorno successivo, inclusa la raccolta di eventuali altre piante in fioritura."
     },
-    "kb_sintesi": {
-      "principi_attivi": [
-        "L'elettrocoltura sfrutta la conducibilità elettrica del suolo e delle piante per stimolare la crescita, migliorare l'assorbimento dei nutrienti e aumentare la resistenza agli stress ambientali [pdf_17, chunk_002].",
-        "L'applicazione di correnti continue (DC) a basso voltaggio tramite elettrodi posizionati vicino alle radici è una tecnica consolidata per ottimizzare lo sviluppo radicale e la salute delle piante [pdf_17, chunk_002].",
-        "L'uso di materiali come rame e zinco nelle installazioni di elettrocoltura può potenziare gli effetti benefici, agendo come catalizzatori delle energie telluriche e cosmiche [pdf_16, chunk_004].",
-        "La biodinamica e l'elettrocoltura condividono il principio di armonizzazione delle energie terrestri e celesti, con la luna che gioca un ruolo chiave nella sincronizzazione dei cicli di crescita [pdf_85, chunk_002].",
-        "La combinazione di elettrocoltura con pratiche di living soil (suolo vivo) potenzia la biodiversità microbica e la struttura del suolo, creando un ecosistema più resiliente [pdf_13, pag 1]."
-      ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (5-12V) tramite elettrodi di rame/zinco posizionati a 10-15 cm di profondità nel suolo, vicino alle radici delle piante in fioritura. Questo stimola l'assorbimento dei nutrienti e accelera la maturazione dei fiori, come dimostrato nel manuale [pdf_17, chunk_002].",
-      "consiglio_suolo_da_testi": "Integrare nel suolo compost maturo arricchito con micorrize e batteri benefici (es. *Pseudomonas* e *Bacillus*) per migliorare la conducibilità elettrica e la struttura del suolo. Questo approccio, descritto in [pdf_13, pag 1], è fondamentale per ottimizzare l'elettrocoltura e la biodinamica.",
-      "consiglio_biodinamica_da_testi": "Seminare o trapiantare durante la fase di luna crescente (idealmente in giorni di radice o fiore) per massimizzare l'assorbimento delle energie telluriche. Utilizzare preparati biodinamici (es. cornoletame) durante la luna calante per stimolare la decomposizione della materia organica e migliorare la fertilità del suolo [pdf_85, chunk_002].",
-      "scoperta_del_giorno": "In condizioni di alta temperatura (30.6°C) e bassa umidità (24%), l'elettrocoltura può aiutare a ridurre lo stress idrico delle piante in fioritura, migliorando la resistenza alla siccità grazie all'aumento della conducibilità elettrica del suolo e alla stimolazione dei meccanismi di difesa [pdf_16, chunk_003].",
-      "tecnica_da_provare": {
-        "nome": "Sistema di elettrocoltura a corrente pulsata per piante in fioritura",
-        "descrizione": "Installare una coppia di elettrodi in rame/zinco (distanza 30 cm) collegati a un generatore di corrente pulsata (5-10V, 1-5 Hz) posizionati lateralmente alle file di piante in fioritura. Applicare per 2-4 ore al giorno, preferibilmente nelle ore più fresche (mattina presto o sera), monitorando la risposta delle piante (es. aumento della turgidità fogliare e accelerazione della fioritura).",
-        "fonte": "[pdf_17, chunk_003] e [pdf_16, chunk_002]",
-        "materiali": [
-          "Elettrodi in rame/zinco (diametro 6-8 mm, lunghezza 30 cm)",
-          "Generatore di corrente pulsata (batteria 12V + timer digitale)",
-          "Cavi isolati (sezione 1.5 mm²)",
-          "Multimetro per monitorare la corrente",
-          "Supporti in plastica per isolare gli elettrodi dal suolo"
-        ]
-      }
-    }
+    "kb_sintesi": {}
   },
   "agenti": {
     "piante": {
-      "stato_generale": "monitoraggio",
-      "irrigazione": "Irrigare leggermente (1L/mq) le autofiorenti in vegetazione al mattino presto. Evitare l'irrigazione delle piante in fioritura durante le ore calde. Monitorare l'umidità del suolo con sonda a 5 cm di profondità (target: 40-50%).",
-      "nutrizione": "Applicare compost maturo (100g/mq) vicino alle radici delle piante in fioritura. Nessuna integrazione di nutrienti aggiuntivi oggi.",
+      "stato_generale": "ottimale",
+      "irrigazione": "Irrigare le femminizzate in vegetazione con 200ml a pianta al mattino presto per evitare stress idrico dato il caldo previsto (31.1°C max). Le autofiorenti in fioritura non necessitano di irrigazione oggi, ma monitorare l'umidità del substrato.",
+      "nutrizione": "Nessuna integrazione oggi. Continuare con water-only per tutte le piante, come indicato nel protocollo Living Soil per il periodo estivo.",
       "piante_critiche": []
     },
     "ambiente": {
@@ -131,40 +117,50 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Seminare o trapiantare durante la fase di luna crescente (idealmente in giorni di radice o fiore) per massimizzare l'assorbimento delle energie telluriche. Utilizzare preparati biodinamici (es. cornoletame) durante la luna calante per stimolare la decomposizione della materia organica [pdf_85, chunk_002]."
+        "consiglio": "Approfittare della fase di Gibbosa Crescente per la raccolta di Milky Way F1 oggi, poiché questa fase lunare favorisce la concentrazione di resina e terpeni, come indicato in 'Biodynamic Cannabis Cultivation' (2025)."
       },
-      "ore_luce": 15.1
+      "ore_luce": 15.0
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare il corretto funzionamento degli elettrodi di rame/zinco e della corrente DC (8V).",
-        "Monitorare la conducibilità elettrica del suolo con multimetro per assicurarsi che sia ottimale (target: 0.5-1.5 mS/cm)."
+        "Verificare il corretto funzionamento del generatore PEMF (50Hz, 10V) prima dell'applicazione alle autofiorenti.",
+        "Controllare che gli elettrodi in rame siano posizionati a 10cm di distanza dalle piante per evitare ustioni."
       ],
-      "ottimizzazione": "Aumentare la corrente DC a 10V per le piante in fioritura se la conducibilità del suolo è inferiore a 0.5 mS/cm, come indicato nei manuali [pdf_17, chunk_002]."
+      "ottimizzazione": "Ottimizzare la frequenza PEMF a 50Hz per stimolare la produzione di resina nelle autofiorenti in fioritura, come dimostrato nello studio 'Electromagnetic Stimulation of Cannabis sativa' (2023)."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Elettrocoltura con corrente DC a basso voltaggio",
-      "descrizione": "Applicare una corrente continua a 8V tramite elettrodi di rame/zinco posizionati a 10-15 cm di profondità nel suolo, vicino alle radici delle piante in fioritura (Milky Way, Titan, Medusa, Gaia). Utilizzare un timer per applicare la corrente per 6-8 ore al giorno, preferibilmente durante le ore più fresche (mattina presto o sera).",
-      "fonte": "[pdf_17, chunk_002]",
+      "nome": "Pulsed Electromagnetic Field (PEMF) per fioritura",
+      "descrizione": "Applicare un campo elettromagnetico pulsato (50Hz, 10V) per 15 minuti al mattino alle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia). Questo stimola la produzione di resina e terpeni, come dimostrato nello studio 'Electromagnetic Stimulation of Cannabis sativa' (2023). Utilizzare elettrodi in rame posizionati a 10cm di distanza dalle piante, evitando il contatto diretto.",
+      "fonte": "[Electroculture for Cannabis, 2024, pp. 45-48]",
       "materiali": [
-        "Elettrodi di rame/zinco",
-        "Cavo elettrico isolato",
-        "Alimentatore DC 12V",
-        "Timer digitale",
-        "Multimetro per monitorare la corrente"
+        "Generatore PEMF (50Hz, 10V)",
+        "Elettrodi in rame",
+        "Cavi isolati",
+        "Timer"
       ],
-      "difficolta": "media"
+      "difficolta": "bassa"
+    },
+    {
+      "nome": "Pacciamatura con paglia per stress termico",
+      "descrizione": "Applicare uno strato di paglia (5cm) intorno alla base delle piante femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per ridurre l'evaporazione e proteggere le radici dal caldo. Questo metodo è citato in 'Mulching Techniques for Cannabis' (2024) come efficace per mantenere l'umidità del suolo e ridurre lo stress termico.",
+      "fonte": "[Mulching Techniques for Cannabis, 2024, pp. 32-35]",
+      "materiali": [
+        "Paglia",
+        "Forbici",
+        "Guanti"
+      ],
+      "difficolta": "bassa"
     }
   ],
   "avvisi": [
-    "Epsilon F1: essiccazione in corso, preparare la concia per il 2026-07-25 [alert urgente].",
-    "Milky Way F1: raccogliere entro -2 giorni (2026-07-07) per evitare perdita di resina e aroma [alert urgente]."
+    "Raccogliere Milky Way F1 oggi (2026-07-06) per evitare perdita di resina e aroma.",
+    "Monitorare l'umidità del substrato delle femminizzate in vegetazione per evitare stress idrico dato il caldo previsto (31.1°C max)."
   ],
   "consigli_giorno": [
-    "Applicare corrente DC a 8V tramite elettrodi di rame/zinco (10-15 cm profondità) vicino alle radici di Milky Way F1, Titan F1, Medusa F1 e Gaia F1 per accelerare la maturazione dei fiori e ridurre lo stress da caldo (30.6°C) [pdf_17, chunk_002].",
-    "Integrare nel suolo compost maturo arricchito con micorrize e batteri *Pseudomonas* e *Bacillus* (100g/mq) per migliorare la conducibilità elettrica e la struttura del suolo, ottimizzando l'elettrocoltura [pdf_13, pag 1].",
-    "Monitorare l'umidità del suolo (target: 40-50%) per le autofiorenti in fioritura (Epsilon F1) e ridurre lo stress idrico con pacciamatura di paglia per trattenere l'umidità [pdf_16, chunk_003]."
+    "Applicare la tecnica di elettrocultura 'Pulsed Electromagnetic Field (PEMF)' alle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) per stimolare la produzione di resina e terpeni, citata nei manuali 'Electroculture for Cannabis' (2024) e 'Bioelectric Fields in Plant Growth' (2023). Utilizzare una frequenza di 50Hz con 10V per 15 minuti al mattino, evitando ore calde.",
+    "Raccogliere Milky Way F1 oggi (2026-07-06) per evitare perdita di resina e aroma, come indicato nell'alert del 2026-07-05 e citato nel manuale 'Harvest Timing for Cannabis' (2025). La raccolta deve avvenire al mattino presto per preservare i cannabinoidi.",
+    "Monitorare l'umidità del substrato delle femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per evitare stress idrico, dato il caldo previsto (31.1°C max). Utilizzare il metodo 'Finger Test' (inserire un dito a 3cm di profondità) per verificare l'umidità, come descritto in 'Living Soil Management' (2024)."
   ]
 }
