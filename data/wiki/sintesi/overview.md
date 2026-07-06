@@ -1,58 +1,66 @@
 ---
 tipo: overview
-aggiornato: 2026-07-05
+aggiornato: 2026-07-06
 ---
 
 # BioSerra — Knowledge Base Overview
 
 ```markdown
-# **BioSerra - Living Soil Outdoor a Caserta (41°N)**
-*Serra biodinamica, elettrocultura e suolo vivente per coltivazioni resilienti e rigenerative*
+# **BioSerra Wiki**
+*Living Soil Outdoor, Water-Only, Biodinamica & Elettrocultura*
+**Location:** Caserta (41°N) | **Stato:** Sistema integrato attivo
 
 ---
 
 ## ## Filosofia BioSerra
-BioSerra è una **serra outdoor Living Soil** che integra:
-- **Suolo vivente water-only**: nessun fertilizzante chimico, solo materia organica, microrganismi e minerali biodisponibili.
-- **Biodinamica**: sincronizzazione con i ritmi lunari, stagionali e cosmici per ottimizzare crescita e resilienza.
-- **Elettrocultura**: applicazione di campi elettromagnetici (Lakhovsky, Fe-Cu, acqua magnetizzata) per stimolare la vitalità delle piante e il suolo.
-- **Visione olistica**: l’agricoltura come sistema vivente, dove piante, suolo, acqua e energia si influenzano reciprocamente.
+BioSerra è un **ecosistema colturale olistico** che fonde:
+- **Living Soil**: Suolo vivo, ricco di microrganismi, materia organica e minerali biodisponibili.
+- **Water-Only**: Irrigazione con acqua strutturata (magnetizzata, elettrizzata) per massimizzare l’assorbimento radicale.
+- **Biodinamica**: Ritmi cosmici (luna, stelle) e preparati naturali per armonizzare crescita e resilienza.
+- **Elettrocultura**: Campi elettromagnetici controllati (Lakhovsky, Fe-Cu, spirali di rame) per stimolare la fisiologia vegetale.
 
-*Obiettivo*: Coltivare piante (es. Milky Way F1, Titan F1, Medusa F1, Gaia F1, Epsilon F1) in **armonia con la natura**, massimizzando biodiversità, resa e qualità nutrizionale.
+*Visione*: Coltivare in **sinergia con la natura**, non contro di essa. Ogni tecnica è interconnessa per creare un **loop virtuoso** tra suolo, pianta e ambiente.
 
 ---
 
 ## ## Sistema di conoscenza
 BioSerra si basa su:
-- **289 manuali analizzati**: PDF, ricerche scientifiche e guide pratiche (es. [Aleister-Crowley-_Kaw-Djer] per la dimensione energetica delle piante).
-- **20 concetti attivi**: categorie tematiche che si interconnettono (es. [[elettrocultura]], [[suolo-vivo]], [[biodinamica]]).
-- **Guida integrata**: ogni tecnica o principio è collegato a risorse specifiche (es. [[irrigazione-vibrazionale]] → [web_zamn_287-fase-plantula-cannabis]).
+- **290+ PDF** analizzati (manuali tecnici, studi scientifici, esperienze pratiche).
+- **16 concetti attivi** (es. Compostaggio Organico, Elettrocultura, Calendario Lunare).
+- **Guide operative** (germinazione, fioritura, controllo parassiti).
 
-*Esempio di flusso di lavoro*:
-1. **Germinazione**: [web_zamn_284-germinare-semi-con-lo-smart-start] + [[suolo-vivo]] (substrato ricco di micorrize).
-2. **Vegetativa**: [[elettrocultura]] (8V DC) + [[calendario-lunare]] (fase crescente).
-3. **Fioritura**: [[fertilizzazione-organica]] (farine di roccia) + [[controllo-parassiti-naturale]] (Pseudomonas/Bacillus).
+**Struttura**:
+- **Concetti** → Pagine wiki dedicate (es. `[[suolo-vivente]]`, `[[elettrocultura-fe-cu]]`).
+- **PDF** → Citati con `[id]` (es. `[pdf_4]`, `[web_zamn_287]`).
+- **Tecniche** → Collegate a manuali specifici (es. "Acqua Magnetizzata" → `[pdf_13]`).
 
----
-## ## Tecniche elettrocultura attive
-| Tecnica | Descrizione | Pagina Wiki |
-|---------|------------|-------------|
-| **Spirale in Rame** | Campo elettromagnetico a spirale per armonizzare l’energia delle piante. | [[spirale-rame]] |
-| **Elettrocultura** | Applicazione di corrente DC (8V) tramite elettrodi (rame/zinco) per stimolare radici e fioritura. | [[elettrocultura]] |
-| **Antenna Terrestre** | Connessione al suolo per scaricare tensioni statiche e migliorare la conducibilità. | [[antenna-terrestre]] |
-| **Acqua Magnetizzata** | Acqua trattata con campi magnetici per aumentare la biodisponibilità dei nutrienti. | [[acqua-magnetizzata]] |
-| **Biofisica Applicata** | Studio delle frequenze naturali delle piante per ottimizzare la crescita. | [[biofisica-applicata]] |
-
-*Riferimenti pratici*:
-- [pdf_17, chunk_002]: Applicazione di 8V DC per ridurre lo stress da caldo (30.6°C).
-- [pdf_13, pag 1]: Integrazione di compost con micorrize e batteri per migliorare la conducibilità.
+*Esempio di integrazione*:
+> **Elettrocultura (Fe-Cu) + Biodinamica** → L’uso di leghe ferro-rame durante la luna crescente potenzia la conducibilità del suolo, mentre i preparati biodinamici (es. Equisetum 501) ne amplificano l’effetto rizosferico.
 
 ---
+
+## ## Tecniche Elettrocultura Attive
+| Tecnica               | Descrizione                                                                 | Riferimenti Wiki                     |
+|-----------------------|-----------------------------------------------------------------------------|--------------------------------------|
+| **Spirale in Rame**   | Spirali di rame posizionate intorno alle piante per generare campi elettromagnetici naturali. | `[[elettrocultura-spirale]]`         |
+| **Acqua Magnetizzata**| Acqua trattata con magneti per migliorare struttura molecolare e assorbimento. | `[[acqua-magnetizzata]]`             |
+| **Elettrocultura**    | Applicazione di corrente DC pulsata (PEMF) a 8V per 4h in fioritura.      | `[[elettrocultura-pemf]]`            |
+| **Antenna di Terra**  | Sistema di messa a terra per bilanciare cariche elettromagnetiche del suolo. | `[[antenna-terra]]`                  |
+| **Lega Fe-Cu**        | Integrazione di polveri di ferro e rame nel substrato per conducibilità e micorrize. | `[[lega-fe-cu]]`                     |
+
+*Dettagli operativi*:
+- **PEMF**: 8V, 4h/giorno, elettrodi a 10-15 cm di profondità.
+- **Fe-Cu**: 1% in volume nel substrato durante fioritura autofiorenti.
+- **Acqua magnetizzata**: Usata per irrigazione e preparati biodinamici.
+
+---
+
 ## ## Principi Living Soil
-### **Microbioma**
-- **Funghi micorrizici**: simbiosi con le radici per aumentare l’assorbimento di nutrienti.
-- **Batteri benefici**: *Pseudomonas* (antifungino), *Bacillus* (solubilizzatori di fosforo).
-- **Te di compost**: estratto liquido per inoculare suolo e piante con microrganismi.
+### **1. Microbioma del Suolo**
+- **Funghi micorrizici**: Simbiosi con le radici per scambio nutrienti/acqua.
+- **Batteri benefici**: Decompositori (es. *Pseudomonas*, *Bacillus*) e fissatori di azoto.
+- **Protozoi e nematodi**: Regolano la popolazione microbica.
 
-### **Minerali e Biostimolanti**
-- **Farine di roccia**: apporto lento di silicio, calcio, magnesio (es. basalto, dolomite).
+*Tecniche*:
+- **Inoculazione micorrize**: `[[inoculazione-micorrize]]`.
+- **Te di compost**: Estratti liquidi per stimolare la vita microbica
