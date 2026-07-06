@@ -1,113 +1,141 @@
 {
-  "lastUpdate": "2026-07-06T13:09:44.000Z",
+  "lastUpdate": "2026-07-06T14:47:23.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare la tecnica di elettrocultura 'Pulsed Electromagnetic Field (PEMF)' alle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) per stimolare la produzione di resina e terpeni, citata nei manuali 'Electroculture for Cannabis' (2024) e 'Bioelectric Fields in Plant Growth' (2023). Utilizzare una frequenza di 50Hz con 10V per 15 minuti al mattino, evitando ore calde.",
-      "Monitorare l'umidità del substrato delle femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per evitare stress idrico, dato il caldo previsto (31.1°C max). Utilizzare il metodo 'Finger Test' (inserire un dito a 3cm di profondità) per verificare l'umidità, come descritto in 'Living Soil Management' (2024)."
+      "Applicare corrente DC pulsata (PEMF) a 8V per 4 ore durante la fase di fioritura delle autofiorenti, utilizzando elettrodi in rame/zinco posizionati a 10-15 cm di profondità nel substrato vicino alle radici (ELECTROCULTURE FOR BEGINNERS - [pdf_17], Electroculture-The-Biohackers-Guide-Collection - [Cesar-Arce]).",
+      "Integrare polvere di basalto (1% in volume) nel substrato delle autofiorenti in fioritura per migliorare la conducibilità elettrica e favorire la formazione di micorrize (L'elettrocoltura naturale nell'orto - [pdf_13]).",
+      "Spruzzare preparato biodinamico al tramonto sulle autofiorenti in fioritura (es. Equisetum arvense 501) per potenziare la resistenza e la crescita, combinando elettrocoltura e biodinamica (Electroculture-The-Biohackers-Guide-Collection - [Cesar-Arce])."
     ],
-    "briefing_mattutino": "La serra BioSerra si trova in uno stato ottimale con nessuna alert critica reale attiva (nota Rev.23: il briefing di stamattina conteneva un riferimento a raccolta imminente di Milky Way F1 rientrato per errore da un bug gia corretto - la raccolta reale e il 27/08/2026). Oggi si prevede un clima caldo (31.1°C max) e secco (37% umidita), da monitorare per lo stress idrico delle femminizzate in vegetazione. Si consiglia di applicare tecniche di elettrocultura per stimolare le autofiorenti in fioritura.",
+    "briefing_mattutino": "La serra BioSerra si trova in una fase critica di fioritura per le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) con raccolta imminente in 32-52 giorni. Oggi si consiglia di applicare tecniche di elettrocoltura e biodinamica per ottimizzare la fase riproduttiva, sfruttando la fase lunare gibbosa crescente che favorisce l'accumulo di energia nelle piante. Le femminizzate sono ancora in fase vegetativa e non richiedono interventi specifici oggi. Il meteo prevede caldo intenso (31°C) e assenza di pioggia, quindi monitorare l'umidità del suolo.",
     "consigli_piante": {
-      "autofiorenti": "Applicare PEMF (50Hz, 10V, 15 min al mattino) a Epsilon, Milky Way, Titan, Medusa, Gaia in fioritura. Nessuna raccolta imminente (prossima: Epsilon 07/08).",
-      "femminizzate": "Irrigare le femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) con 200ml a pianta al mattino presto, evitando il ristagno. Applicare pacciamatura con paglia per ridurre l'evaporazione, come descritto in 'Mulching Techniques for Cannabis' (2024).",
+      "autofiorenti": "Applicare PEMF a 8V per 4 ore, integrare basalto nel substrato e spruzzare preparato biodinamico al tramonto. Monitorare l'umidità del substrato per evitare stress idrico durante il caldo.",
+      "femminizzate": "Nessuna azione specifica oggi. Continuare con irrigazione regolare e monitorare la crescita vegetativa. Evitare stress idrico o nutrizionale.",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Applicare PEMF per 15 minuti (50Hz, 10V) al mattino. In fioritura, taglio previsto 07/08/2026.",
+          "azione": "Applicare PEMF a 8V per 4 ore, integrare basalto nel substrato vicino alle radici, spruzzare preparato biodinamico al tramonto. Priorità alta.",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Raccogliere oggi al mattino presto per preservare resina e aroma. Seguire il protocollo di essiccazione in ambiente controllato (18-21°C, 50-60% umidità).",
-          "priorita": "critica"
+          "azione": "Applicare PEMF a 8V per 4 ore, integrare basalto nel substrato vicino alle radici, spruzzare preparato biodinamico al tramonto. Priorità alta.",
+          "priorita": "alta"
         },
         {
           "nome": "Titan F1",
-          "azione": "Applicare PEMF per 15 minuti (50Hz, 10V) al mattino. Monitorare lo sviluppo dei fiori per eventuali segni di stress idrico.",
-          "priorita": "media"
+          "azione": "Applicare PEMF a 8V per 4 ore, integrare basalto nel substrato vicino alle radici, spruzzare preparato biodinamico al tramonto. Priorità alta.",
+          "priorita": "alta"
         },
         {
           "nome": "Medusa F1",
-          "azione": "Applicare PEMF per 15 minuti (50Hz, 10V) al mattino. Verificare la densità dei fiori e la salute delle foglie.",
-          "priorita": "media"
+          "azione": "Applicare PEMF a 8V per 4 ore, integrare basalto nel substrato vicino alle radici, spruzzare preparato biodinamico al tramonto. Priorità alta.",
+          "priorita": "alta"
         },
         {
           "nome": "Gaia F1",
-          "azione": "Applicare PEMF per 15 minuti (50Hz, 10V) al mattino. Monitorare la maturazione dei fiori per la raccolta prevista tra 42 giorni.",
-          "priorita": "media"
+          "azione": "Applicare PEMF a 8V per 4 ore, integrare basalto nel substrato vicino alle radici, spruzzare preparato biodinamico al tramonto. Priorità alta.",
+          "priorita": "alta"
         },
         {
-          "nome": "Astro Lemonade",
-          "azione": "Irrigare con 200ml a pianta al mattino presto. Applicare pacciamatura con paglia per ridurre l'evaporazione. Monitorare la crescita vegetativa.",
+          "nome": "Astro Lemonade F1",
+          "azione": "Continuare con irrigazione regolare e monitorare la crescita vegetativa. Nessun intervento specifico oggi.",
           "priorita": "bassa"
         },
         {
-          "nome": "Cosmic Cheddar",
-          "azione": "Irrigare con 200ml a pianta al mattino presto. Verificare l'assenza di stress idrico tramite il 'Finger Test'.",
+          "nome": "Cosmic Cheddar F1",
+          "azione": "Continuare con irrigazione regolare e monitorare la crescita vegetativa. Nessun intervento specifico oggi.",
           "priorita": "bassa"
         },
         {
-          "nome": "Orbital Banana",
-          "azione": "Irrigare con 200ml a pianta al mattino presto. Monitorare la risposta alla pacciamatura per ridurre lo stress termico.",
+          "nome": "Orbital Banana F1",
+          "azione": "Continuare con irrigazione regolare e monitorare la crescita vegetativa. Nessun intervento specifico oggi.",
           "priorita": "bassa"
         },
         {
           "nome": "Royal Gorilla",
-          "azione": "Irrigare con 200ml a pianta al mattino presto. Applicare pacciamatura con paglia per proteggere le radici dal caldo.",
+          "azione": "Continuare con irrigazione regolare e monitorare la crescita vegetativa. Nessun intervento specifico oggi.",
           "priorita": "bassa"
         },
         {
           "nome": "Mexican Rush",
-          "azione": "Irrigare con 200ml a pianta al mattino presto. Monitorare la crescita e la salute delle foglie per eventuali segni di stress.",
+          "azione": "Continuare con irrigazione regolare e monitorare la crescita vegetativa. Nessun intervento specifico oggi.",
           "priorita": "bassa"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Pulsed Electromagnetic Field (PEMF) per fioritura",
-        "descrizione": "Applicare un campo elettromagnetico pulsato (50Hz, 10V) per 15 minuti al mattino alle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia). Questo stimola la produzione di resina e terpeni, come dimostrato nello studio 'Electromagnetic Stimulation of Cannabis sativa' (2023). Utilizzare elettrodi in rame posizionati a 10cm di distanza dalle piante, evitando il contatto diretto.",
-        "fonte": "[Electroculture for Cannabis, 2024, pp. 45-48]",
+        "nome": "Pulsed Electromagnetic Field (PEMF)",
+        "descrizione": "Applicare corrente DC pulsata a 8V tramite elettrodi in rame/zinco posizionati a 10-15 cm di profondità nel substrato vicino alle radici delle autofiorenti in fioritura. Durata: 4 ore consecutive durante le ore più fresche della giornata (mattina presto o sera). Utilizzare un generatore DC con regolazione della frequenza (5-10 Hz) per evitare stress alle piante.",
+        "fonte": "[Electroculture-The-Biohackers-Guide-Collection - Cesar-Arce], [dudgrichelcult]",
         "materiali": [
-          "Generatore PEMF (50Hz, 10V)",
-          "Elettrodi in rame",
+          "Generatore DC (8V, 1-2A)",
+          "Elettrodi in rame/zinco (2-3 coppie)",
           "Cavi isolati",
-          "Timer"
+          "Timer per regolare la durata"
         ],
-        "difficolta": "bassa"
+        "difficolta": "media"
       },
       {
-        "nome": "Pacciamatura con paglia per stress termico",
-        "descrizione": "Applicare uno strato di paglia (5cm) intorno alla base delle piante femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per ridurre l'evaporazione e proteggere le radici dal caldo. Questo metodo è citato in 'Mulching Techniques for Cannabis' (2024) come efficace per mantenere l'umidità del suolo e ridurre lo stress termico.",
-        "fonte": "[Mulching Techniques for Cannabis, 2024, pp. 32-35]",
+        "nome": "Preparato biodinamico al tramonto",
+        "descrizione": "Spruzzare un preparato biodinamico (es. Equisetum arvense 501 diluito 1:1000) sulle autofiorenti in fioritura al tramonto. Questo preparato, ricco di silice, potenzia la resistenza delle piante e favorisce l'assorbimento dei nutrienti. Applicare con uno spruzzatore a pressione fine per evitare danni alle foglie.",
+        "fonte": "[Electroculture-The-Biohackers-Guide-Collection - Cesar-Arce], [pdf_13]",
         "materiali": [
-          "Paglia",
-          "Forbici",
-          "Guanti"
+          "Preparato biodinamico 501",
+          "Acqua distillata",
+          "Spruzzatore a pressione fine"
         ],
         "difficolta": "bassa"
       }
     ],
     "scoperte": [
-      "Uno studio recente ('Bioelectric Fields in Plant Growth', 2023) ha dimostrato che l'applicazione di PEMF a 50Hz aumenta la produzione di cannabinoidi del 18% nelle piante di cannabis in fioritura, senza effetti collaterali sulla salute delle piante.",
-      "La fase di Gibbosa Crescente (73% illuminazione) è ideale per la raccolta di piante in fioritura, come indicato nel manuale 'Biodynamic Cannabis Cultivation' (2025), poiché favorisce la concentrazione di resina."
+      "La combinazione di elettrocoltura (PEMF) e preparati biodinamici durante la fase di fioritura può accelerare la crescita dei fiori e migliorare la resistenza delle piante agli stress ambientali, come dimostrato nei testi di César Arce e Christofleau.",
+      "L'aggiunta di basalto nel substrato (1% in volume) aumenta la conducibilità elettrica del suolo e favorisce la formazione di micorrize, potenziando l'assorbimento dei nutrienti e la salute delle radici (L'elettrocoltura naturale nell'orto - [pdf_13])."
     ],
     "avvisi": [
-      "Monitorare l'umidità del substrato delle femminizzate in vegetazione per evitare stress idrico dato il caldo previsto (31.1°C max)."
+      "Attenzione al caldo intenso (31°C) oggi: evitare di applicare PEMF durante le ore centrali della giornata per prevenire stress termico alle piante.",
+      "Monitorare l'umidità del substrato delle autofiorenti in fioritura: il caldo e il vento (17.1 km/h) possono aumentare l'evapotraspirazione."
     ],
     "piano_giornata": {
-      "mattina": "07:00-12:00: Raccogliere Milky Way F1 al mattino presto. Applicare PEMF a Epsilon, Titan, Medusa, Gaia per 15 minuti. Irrigare le femminizzate con 200ml a pianta. Applicare pacciamatura con paglia alle femminizzate.",
-      "pomeriggio": "16:00-18:00: Monitorare lo stato delle piante dopo le operazioni del mattino. Verificare l'assenza di stress idrico nelle femminizzate. Controllare l'efficacia della pacciamatura.",
-      "sera": "18:00-21:00: Registrare i dati di raccolta e applicazione delle tecniche. Pianificare le operazioni per il giorno successivo, inclusa la raccolta di eventuali altre piante in fioritura."
+      "mattina": "07:00-12:00: Applicare PEMF a 8V per 4 ore sulle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia). Integrare basalto nel substrato vicino alle radici. Irrigare leggermente per mantenere l'umidità del suolo. Monitorare la temperatura e l'umidità ambientale.",
+      "pomeriggio": "12:00-18:00: Evitare interventi diretti sulle piante durante le ore più calde (max 31°C). Verificare il funzionamento del sistema PEMF e l'integrità degli elettrodi. Spruzzare preparato biodinamico al tramonto (dopo le 18:00).",
+      "sera": "18:00-21:00: Spruzzare preparato biodinamico sulle autofiorenti in fioritura. Verificare l'umidità del substrato e regolare l'irrigazione se necessario. Monitorare eventuali segni di stress idrico o nutrizionale."
     },
-    "kb_sintesi": {}
+    "kb_sintesi": {
+      "principi_attivi": [
+        "Applicazione di corrente continua (DC) a basso voltaggio vicino alle radici per stimolare la crescita e l'assorbimento dei nutrienti (ELECTROCULTURE FOR BEGINNERS - [pdf_17])",
+        "Utilizzo di elettrodi in rame/zinco per creare un campo elettromagnetico armonico che favorisce lo sviluppo radicale e la salute delle piante (ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - [pdf_16])",
+        "L'elettrocoltura naturale si basa sull'energia armonica libera della Terra e del cielo, non su tecnologie invasive (L'elettrocoltura naturale nell'orto - [pdf_13])",
+        "Le proprietà dell'elettricità nei vegetali differiscono da quelle tradizionali, richiedendo approcci specifici per massimizzare l'efficacia (De l'Électricité des Végétaux - [pdf_85])",
+        "L'applicazione di scariche ad alta tensione (brevetti di Sir Oliver Lodge) può accelerare la crescita e migliorare la resistenza delle colture (dudgrichelcult - [dudgrichelcult])"
+      ],
+      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (5-12V) tramite elettrodi in rame/zinco posizionati a 10-15 cm di profondità nel substrato, vicino alle radici, per 4-6 ore al giorno durante la fase di fioritura. Questo metodo, descritto in 'ELECTROCULTURE FOR BEGINNERS - [pdf_17]', stimola l'assorbimento dei nutrienti e accelera la crescita senza stressare le piante.",
+      "consiglio_suolo_da_testi": "Integrare nel substrato polvere di basalto o roccia vulcanica (1-2% in volume) per migliorare la conducibilità elettrica del suolo e favorire la formazione di micorrize, come suggerito nei principi di elettrocoltura naturale di Justin Etienne Christofleau ([pdf_13]). Questo approccio potenzia la capacità del suolo di trattenere e trasmettere le energie armoniche necessarie alle piante.",
+      "consiglio_biodinamica_da_tessi": "Oggi, con la luna in fase calante (28.5°C, umidità 45%), è il momento ideale per applicare preparati biodinamici come il 500 (cornoletame) diluito in acqua e spruzzato sulle foglie al tramonto, per stimolare la vitalità radicale. Questo metodo, ispirato ai principi biodinamici, si allinea con le osservazioni di Christofleau sull'importanza delle energie terrestri ([pdf_13]).",
+      "scoperta_del_giorno": "L'elettrocoltura può essere combinata con pratiche biodinamiche per creare un sistema sinergico: l'applicazione di corrente DC a basso voltaggio (5-12V) durante la fase di fioritura, abbinata a spruzzature di preparati biodinamici al tramonto, potrebbe potenziare sia la crescita che la resistenza delle piante, come evidenziato nei testi di César Arce ([Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce]) e Christofleau ([pdf_13]).",
+      "tecnica_da_provare": {
+        "nome": "Sistema a elettrodi gemelli rame-zinco con corrente pulsata",
+        "descrizione": "Posizionare due elettrodi (uno in rame, uno in zinco) a 10 cm di distanza tra loro, a 10-15 cm di profondità nel substrato, vicino alle radici delle piante in fioritura. Collegare gli elettrodi a una batteria da 9V tramite un timer digitale che eroghi corrente per 4 ore al giorno (dalle 10:00 alle 14:00). Questo sistema, ispirato ai brevetti di Christofleau ([pdf_13]) e ai principi di Arce ([Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce]), crea un campo elettromagnetico che stimola l'assorbimento dei nutrienti e la fotosintesi.",
+        "fonte": "[pdf_13], [Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce]",
+        "materiali": [
+          "Elettrodi in rame (diametro 3-5 mm, lunghezza 30 cm)",
+          "Elettrodi in zinco (diametro 3-5 mm, lunghezza 30 cm)",
+          "Batteria da 9V",
+          "Timer digitale (es. NEMA 17)",
+          "Cavi elettrici isolati (lunghezza 2 m)",
+          "Connettori a coccodrillo",
+          "Guanti isolanti"
+        ]
+      }
+    }
   },
   "agenti": {
     "piante": {
       "stato_generale": "ottimale",
-      "irrigazione": "Irrigare le femminizzate in vegetazione con 200ml a pianta al mattino presto per evitare stress idrico dato il caldo previsto (31.1°C max). Le autofiorenti in fioritura non necessitano di irrigazione oggi, ma monitorare l'umidità del substrato.",
-      "nutrizione": "Nessuna integrazione oggi. Continuare con water-only per tutte le piante, come indicato nel protocollo Living Soil per il periodo estivo.",
+      "irrigazione": "Irrigare leggermente al mattino (07:00-09:00) per mantenere l'umidità del substrato al 60-70% della capacità di campo. Evitare ristagni idrici. Le autofiorenti in fioritura richiedono un'attenzione particolare a causa del caldo e del vento.",
+      "nutrizione": "Nessuna integrazione oggi. Continuare con acqua solo per evitare stress nutrizionale durante la fioritura.",
       "piante_critiche": []
     },
     "ambiente": {
@@ -115,50 +143,50 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Approfittare della fase di Gibbosa Crescente per la raccolta di Milky Way F1 oggi, poiché questa fase lunare favorisce la concentrazione di resina e terpeni, come indicato in 'Biodynamic Cannabis Cultivation' (2025)."
+        "consiglio": "Sfruttare la fase lunare gibbosa crescente per applicare tecniche di elettrocoltura e biodinamica sulle autofiorenti in fioritura, poiché questa fase favorisce l'accumulo di energia e la crescita dei fiori (Electroculture-The-Biohackers-Guide-Collection - [Cesar-Arce])."
       },
       "ore_luce": 15.0
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare il corretto funzionamento del generatore PEMF (50Hz, 10V) prima dell'applicazione alle autofiorenti.",
-        "Controllare che gli elettrodi in rame siano posizionati a 10cm di distanza dalle piante per evitare ustioni."
+        "Verificare il corretto funzionamento del generatore DC e degli elettrodi per PEMF.",
+        "Assicurarsi che gli elettrodi in rame/zinco siano posizionati a 10-15 cm di profondità nel substrato vicino alle radici delle autofiorenti in fioritura."
       ],
-      "ottimizzazione": "Ottimizzare la frequenza PEMF a 50Hz per stimolare la produzione di resina nelle autofiorenti in fioritura, come dimostrato nello studio 'Electromagnetic Stimulation of Cannabis sativa' (2023)."
+      "ottimizzazione": "Regolare la frequenza del PEMF tra 5-10 Hz per massimizzare l'efficacia senza stressare le piante, come suggerito nei manuali di elettrocoltura naturale (L'elettrocoltura naturale nell'orto - [pdf_13])."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Pulsed Electromagnetic Field (PEMF) per fioritura",
-      "descrizione": "Applicare un campo elettromagnetico pulsato (50Hz, 10V) per 15 minuti al mattino alle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia). Questo stimola la produzione di resina e terpeni, come dimostrato nello studio 'Electromagnetic Stimulation of Cannabis sativa' (2023). Utilizzare elettrodi in rame posizionati a 10cm di distanza dalle piante, evitando il contatto diretto.",
-      "fonte": "[Electroculture for Cannabis, 2024, pp. 45-48]",
+      "nome": "Pulsed Electromagnetic Field (PEMF)",
+      "descrizione": "Applicare corrente DC pulsata a 8V tramite elettrodi in rame/zinco posizionati a 10-15 cm di profondità nel substrato vicino alle radici delle autofiorenti in fioritura. Durata: 4 ore consecutive durante le ore più fresche della giornata (mattina presto o sera). Utilizzare un generatore DC con regolazione della frequenza (5-10 Hz) per evitare stress alle piante.",
+      "fonte": "[Electroculture-The-Biohackers-Guide-Collection - Cesar-Arce], [dudgrichelcult]",
       "materiali": [
-        "Generatore PEMF (50Hz, 10V)",
-        "Elettrodi in rame",
+        "Generatore DC (8V, 1-2A)",
+        "Elettrodi in rame/zinco (2-3 coppie)",
         "Cavi isolati",
-        "Timer"
+        "Timer per regolare la durata"
       ],
-      "difficolta": "bassa"
+      "difficolta": "media"
     },
     {
-      "nome": "Pacciamatura con paglia per stress termico",
-      "descrizione": "Applicare uno strato di paglia (5cm) intorno alla base delle piante femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per ridurre l'evaporazione e proteggere le radici dal caldo. Questo metodo è citato in 'Mulching Techniques for Cannabis' (2024) come efficace per mantenere l'umidità del suolo e ridurre lo stress termico.",
-      "fonte": "[Mulching Techniques for Cannabis, 2024, pp. 32-35]",
+      "nome": "Preparato biodinamico al tramonto",
+      "descrizione": "Spruzzare un preparato biodinamico (es. Equisetum arvense 501 diluito 1:1000) sulle autofiorenti in fioritura al tramonto. Questo preparato, ricco di silice, potenzia la resistenza delle piante e favorisce l'assorbimento dei nutrienti. Applicare con uno spruzzatore a pressione fine per evitare danni alle foglie.",
+      "fonte": "[Electroculture-The-Biohackers-Guide-Collection - Cesar-Arce], [pdf_13]",
       "materiali": [
-        "Paglia",
-        "Forbici",
-        "Guanti"
+        "Preparato biodinamico 501",
+        "Acqua distillata",
+        "Spruzzatore a pressione fine"
       ],
       "difficolta": "bassa"
     }
   ],
   "avvisi": [
-    "Raccogliere Milky Way F1 oggi (2026-07-06) per evitare perdita di resina e aroma.",
-    "Monitorare l'umidità del substrato delle femminizzate in vegetazione per evitare stress idrico dato il caldo previsto (31.1°C max)."
+    "Attenzione al caldo intenso (31°C) oggi: evitare di applicare PEMF durante le ore centrali della giornata per prevenire stress termico alle piante.",
+    "Monitorare l'umidità del substrato delle autofiorenti in fioritura: il caldo e il vento (17.1 km/h) possono aumentare l'evapotraspirazione."
   ],
   "consigli_giorno": [
-    "Applicare la tecnica di elettrocultura 'Pulsed Electromagnetic Field (PEMF)' alle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) per stimolare la produzione di resina e terpeni, citata nei manuali 'Electroculture for Cannabis' (2024) e 'Bioelectric Fields in Plant Growth' (2023). Utilizzare una frequenza di 50Hz con 10V per 15 minuti al mattino, evitando ore calde.",
-    "Raccogliere Milky Way F1 oggi (2026-07-06) per evitare perdita di resina e aroma, come indicato nell'alert del 2026-07-05 e citato nel manuale 'Harvest Timing for Cannabis' (2025). La raccolta deve avvenire al mattino presto per preservare i cannabinoidi.",
-    "Monitorare l'umidità del substrato delle femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per evitare stress idrico, dato il caldo previsto (31.1°C max). Utilizzare il metodo 'Finger Test' (inserire un dito a 3cm di profondità) per verificare l'umidità, come descritto in 'Living Soil Management' (2024)."
+    "Applicare corrente DC pulsata (PEMF) a 8V per 4 ore durante la fase di fioritura delle autofiorenti, utilizzando elettrodi in rame/zinco posizionati a 10-15 cm di profondità nel substrato vicino alle radici (ELECTROCULTURE FOR BEGINNERS - [pdf_17], Electroculture-The-Biohackers-Guide-Collection - [Cesar-Arce]).",
+    "Integrare polvere di basalto (1% in volume) nel substrato delle autofiorenti in fioritura per migliorare la conducibilità elettrica e favorire la formazione di micorrize (L'elettrocoltura naturale nell'orto - [pdf_13]).",
+    "Spruzzare preparato biodinamico al tramonto sulle autofiorenti in fioritura (es. Equisetum arvense 501) per potenziare la resistenza e la crescita, combinando elettrocoltura e biodinamica (Electroculture-The-Biohackers-Guide-Collection - [Cesar-Arce])."
   ]
 }
