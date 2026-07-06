@@ -18,7 +18,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy1.outputs.page_url || steps.deploy2.outputs.page_url || steps.deploy3.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,6 +29,46 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
+
+      # Rev.23: retry automatico (3 tentativi, pausa crescente) - deploy-pages@v4 e'
+      # una action JS, non un comando shell, quindi non e' avvolgibile da action di
+      # retry generiche (es. nick-fields/retry): pattern standard con step duplicati
+      # e continue-on-error sui primi 2 tentativi. Vedi Rev.22 (race condition burst)
+      # e Rev.23 (fallimenti residui anche con cancel-in-progress:false su push ravvicinati).
+      - name: Deploy to GitHub Pages (tentativo 1)
+        id: deploy1
+        continue-on-error: true
         uses: actions/deploy-pages@v4
+
+      - name: Attesa prima del tentativo 2
+        if: steps.deploy1.outcome == 'failure'
+        run: |
+          echo "Tentativo 1 fallito, attendo 30s prima di riprovare..."
+          sleep 30
+
+      - name: Deploy to GitHub Pages (tentativo 2)
+        id: deploy2
+        if: steps.deploy1.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Attesa prima del tentativo 3
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        run: |
+          echo "Tentativo 2 fallito, attendo 60s prima dell'ultimo tentativo..."
+          sleep 60
+
+      - name: Deploy to GitHub Pages (tentativo 3, finale)
+        id: deploy3
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+
+      - name: Verifica esito finale
+        if: always()
+        run: |
+          if [ "${{ steps.deploy1.outcome }}" == "success" ] || [ "${{ steps.deploy2.outcome }}" == "success" ] || [ "${{ steps.deploy3.outcome }}" == "success" ]; then
+            echo "Deploy riuscito."
+          else
+            echo "Deploy fallito dopo 3 tentativi."
+            exit 1
+          fi
