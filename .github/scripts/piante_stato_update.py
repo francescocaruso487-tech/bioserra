@@ -127,9 +127,14 @@ def main():
 
     # Mappa id -> fase attuale per recuperarla (fonte di verita = app)
     fase_map = {}
+    override_map = {}
     for p in stato_attuale.get('data', {}).get('stato_piante', []):
         fase_map[p['id']] = p.get('fase', 'Vegetazione')
+        if p.get('override'):
+            override_map[p['id']] = p['override']
     print(f'  Fasi esistenti: {fase_map}')
+    if override_map:
+        print(f'  Override presenti (Rev.23, da app): {list(override_map.keys())}')
 
     # FIX Rev.22: moltiplicatori ore-sole (stessa formula dei helper client).
     # Con fallback astronomico (~15h estate) il rapporto scende sotto 1 e il
@@ -149,13 +154,20 @@ def main():
         # Fase: SEMPRE dalla piante_stato.json esistente (fonte di verita = app)
         # Se la pianta non esiste ancora nel file, default Vegetazione
         fase = fase_map.get(p['id'], 'Vegetazione')
+        override = override_map.get(p['id'])
 
         if p['tipo'] == 'autofiorente':
             # FIX Rev.22: date corrette col moltiplicatore ore-sole (come
             # autoSunDays() client) — prima erano baseline pure, senza
             # moltiplicatore, e generavano alert/Telegram errati.
-            giorni_taglio = round(p['harvest_min'] * mult_auto)
-            data_taglio = germ + datetime.timedelta(days=giorni_taglio)
+            # FIX Rev.23: se l'app ha scritto un override.harvestDate (modal
+            # "Modifica fase"), quella data vince sul calcolo automatico —
+            # stessa priorità del client (getEffectiveFlorStart/harvestDate).
+            if override and override.get('harvestDate'):
+                data_taglio = datetime.date.fromisoformat(override['harvestDate'])
+            else:
+                giorni_taglio = round(p['harvest_min'] * mult_auto)
+                data_taglio = germ + datetime.timedelta(days=giorni_taglio)
             data_essic  = data_taglio + datetime.timedelta(days=ESSICCAZIONE_GG)
             data_concia = data_essic  + datetime.timedelta(days=CONCIA_GG)
 
@@ -178,8 +190,8 @@ def main():
                 'data_essiccazione': data_essic.isoformat(),
                 'data_concia': data_concia.isoformat()
             }
-
-            # Alert solo se fase attiva e raccolta imminente
+            if override:
+                entry['override'] = override
             if fase == 'Fioritura' and 0 < giorni_a_raccolta <= 7:
                 alerts_oggi.append({
                     'tipo': 'raccolta_imminente',
@@ -203,9 +215,18 @@ def main():
             # FIX Rev.22: taglio calcolato = flor_start + durata fioritura
             # x moltiplicatore (come femmFlorDays() client, cap 1.4x) —
             # prima era una data hardcoded baseline.
-            flor_d   = datetime.date.fromisoformat(p['flor_start'])
-            giorni_fior = round(p['harvest_min'] * mult_femm)
-            taglio_d = flor_d + datetime.timedelta(days=giorni_fior)
+            # FIX Rev.23: override.florStart (fioritura confermata manualmente
+            # nel modal) vince sulla data produttore; override.harvestDate
+            # (taglio manuale) vince sul calcolo automatico — stessa priorità
+            # del client (getEffectiveFlorStart / ovr.harvestDate).
+            flor_d = (datetime.date.fromisoformat(override['florStart'])
+                      if override and override.get('florStart')
+                      else datetime.date.fromisoformat(p['flor_start']))
+            if override and override.get('harvestDate'):
+                taglio_d = datetime.date.fromisoformat(override['harvestDate'])
+            else:
+                giorni_fior = round(p['harvest_min'] * mult_femm)
+                taglio_d = flor_d + datetime.timedelta(days=giorni_fior)
             essic_d  = taglio_d + datetime.timedelta(days=ESSICCAZIONE_GG)
             concia_d = essic_d  + datetime.timedelta(days=CONCIA_GG)
 
@@ -225,11 +246,13 @@ def main():
                 'giorni_a_raccolta': giorni_a_raccolta,
                 'giorni_a_essiccazione': giorni_a_essiccazione,
                 'giorni_a_concia': giorni_a_concia,
-                'data_fioritura': p['flor_start'],
+                'data_fioritura': flor_d.isoformat(),
                 'data_raccolta': taglio_d.isoformat(),
                 'data_essiccazione': essic_d.isoformat(),
                 'data_concia': concia_d.isoformat()
             }
+            if override:
+                entry['override'] = override
 
             if fase == 'Vegetazione' and 0 < giorni_a_fioritura <= 14:
                 alerts_oggi.append({
@@ -239,7 +262,8 @@ def main():
                 })
 
         stato_piante.append(entry)
-        print(f"  [{p['id']:2}] {p['nome']:<20} giorno {giorni_vita:3}d | fase={fase} (preservata)")
+        override_tag = ' [OVERRIDE app]' if override else ''
+        print(f"  [{p['id']:2}] {p['nome']:<20} giorno {giorni_vita:3}d | fase={fase} (preservata){override_tag}")
 
     output = {
         'lastUpdate': oggi_iso,
