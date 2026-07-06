@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-05T10:37:47.059170+00:00",
+  "lastUpdate": "2026-07-06T13:06:25.041735+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2055,14 +2055,114 @@
       "data_proposta": "2026-07-05",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto del Compost Biodinamico Arricchito con Terpeni sulla Disponibilità di Nutrienti e Crescita delle Piante in Living Soil",
+      "ipotesi": "L'aggiunta di compost biodinamico arricchito con terpeni (estratti da peperoncini secchi) al terreno Living Soil aumenterà la disponibilità di nutrienti (Manuale A: pH ottimale, materia organica, attività microbica) e la crescita delle piante, grazie all'azione sinergica dei microrganismi e dei composti aromatici. I terpeni, secondo il Manuale B, possono stimolare l'attività microbica e migliorare la struttura del suolo, potenziando l'effetto del compost.",
+      "protocollo": [
+        "Preparare due lotti di terreno Living Soil identici (stessa composizione, pH, umidità e temperatura) in due vassoi da serra. Ogni lotto deve avere almeno 10 piante della stessa specie (es. basilico o pomodoro nano).",
+        "Preparare un compost biodinamico standard (Manuale B) e dividerlo in due parti uguali. Aggiungere al primo lotto (Gruppo A) il compost biodinamico puro, mentre al secondo lotto (Gruppo B) aggiungere compost biodinamico arricchito con 5g di terpeni estratti da peperoncini secchi (Manuale B: terpeni come stimolatori microbici).",
+        "Monitorare quotidianamente temperatura, umidità e pH del suolo in entrambi i lotti. Applicare solo acqua (water-only) secondo necessità.",
+        "Dopo 30 giorni, misurare la crescita delle piante (altezza, biomassa fresca e secca), la disponibilità di nutrienti (test del suolo per NPK, materia organica e attività microbica tramite piastre di agar nutritivo) e il profumo delle piante (analisi sensoriale o strumentale dei terpeni fogliari)."
+      ],
+      "materiali": [
+        "Terreno Living Soil pre-preparato (Manuale A: stessa composizione per entrambi i lotti)",
+        "Compost biodinamico maturo (Manuale B), peperoncini secchi (Manuale B), estrattore di terpeni (o alcol per estrazione), vassoi da serra, piante della stessa specie e dimensione iniziale, termometro, igrometro, pH-metro, bilancia di precisione, piastre di agar nutritivo, kit per test NPK"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Crescita delle piante: altezza media, peso fresco e secco (Manuale A: biomassa come indicatore di disponibilità nutrizionale)",
+        "Disponibilità di nutrienti: test NPK, materia organica, conteggio colonie microbiche (Manuale A: attività microbica come fattore chiave)",
+        "Profumo e terpeni: analisi sensoriale (punteggio da 1 a 5 per intensità e complessità) o strumentale (GC-MS se disponibile, Manuale B: terpeni come marker di qualità del compost)"
+      ],
+      "variabili_controllo": "Stessa specie e dimensione delle piante, stessa quantità di compost aggiunto, stessa esposizione solare, stessa irrigazione (water-only), stessa temperatura e umidità ambientale.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "5 Fattori Che Influenzano La Disponibili",
+      "fonte_b": "Una Panoramica Sugli Elementi Mobili Ed ",
+      "originalita": "L'esperimento combina specificamente la preparazione del terreno (Manuale A) con tecniche di compostaggio arricchito (Manuale B), utilizzando terpeni come ponte tra i due concetti. Nessuno dei due manuali suggerisce di arricchire il compost con terpeni per potenziare la disponibilità di nutrienti in un sistema Living Soil. Inoltre, l'uso di terpeni come stimolatori microbici è una novità rispetto alle pratiche biodinamiche tradizionali.",
+      "id": "esp_conn_2026-07-06_001",
+      "data_proposta": "2026-07-06",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Rito di Iside del Compost: Trasformazione Alchemica con Rituale di Rigenerazione Energetica",
+      "ipotesi": "Applicando un rituale ispirato ai Riti di Iside (simboleggiante rigenerazione e equilibrio) durante il compostaggio, si potenzia l'attività microbica e la disponibilità di nutrienti nel Living Soil, misurabile attraverso un aumento del 20% di azoto assimilabile e un incremento del 15% della biomassa microbica rispetto al controllo. Questo perché, come descritto nel Manuale A, l'attività microbica è un fattore chiave per la disponibilità di nutrienti, mentre il Manuale B sottolinea l'importanza dell'equilibrio e della simbologia rigenerativa nei processi di trasformazione.",
+      "protocollo": [
+        "Preparare due cumuli di compost identici (50 kg ciascuno) con lo stesso mix di scarti vegetali (50% verdi, 30% marroni, 20% frutta/verdura) e stessa umidità (60%).",
+        "Posizionare i cumuli in due aree della serra con condizioni ambientali identiche (stessa esposizione solare, temperatura media 20°C, umidità controllata).",
+        "Per il cumulo 'Rito di Iside', eseguire un rituale quotidiano (al tramonto) di 10 minuti: tracciare un cerchio con una verga di legno intorno al cumulo, recitare una formula ispirata ai Riti di Iside ('Come Iside rigenera, così questo compost si trasformi'), e versare acqua piovana (o acqua demineralizzata) sul cumulo mentre si visualizza la luce che penetra nella materia. Per il cumulo 'Controllo', eseguire solo una breve annaffiatura senza rituale.",
+        "Dopo 30 giorni, prelevare campioni di compost da entrambi i cumuli (a 10 cm di profondità) e analizzare: contenuto di azoto assimilabile (metodo Kjeldahl), biomassa microbica (test respiratorio con CO2), e pH (metodo elettrodo)."
+      ],
+      "materiali": [
+        "2 cumuli di compost (50 kg ciascuno)",
+        "Verghetta di legno (per tracciare il cerchio rituale)",
+        "Acqua piovana/demineralizzata",
+        "Kit per analisi del suolo (pHmetro, kit azoto, test biomassa microbica)",
+        "Quaderno per annotazioni rituali e dati"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Contenuto di azoto assimilabile (mg/kg): confrontare i due cumuli con metodo Kjeldahl.",
+        "Biomassa microbica (µg CO2/g suolo/ora): misurare con test respiratorio (es. metodo Substrate-Induced Respiration).",
+        "pH del compost: verificare se il rituale influisce sull'equilibrio chimico (obiettivo pH 6.5-7.5).",
+        "Osservazioni qualitative: colore, odore, struttura del compost."
+      ],
+      "variabili_controllo": "Stesso mix di compost, stessa umidità, stessa esposizione ambientale, stesso operatore (per evitare bias rituali).",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "5 Fattori Che Influenzano La Disponibili",
+      "fonte_b": "Aleister-Crowley-e-Dion-Fortune-_Alan-Ri",
+      "originalita": "L'esperimento combina per la prima volta un rituale magico-biodinamico (Manuale B) con principi agronomici di compostaggio (Manuale A), creando un protocollo misurabile che non esiste in nessuno dei due manuali singolarmente. La simbologia di Iside (rigenerazione) viene applicata direttamente a un processo alchemico-terrestre, con metriche oggettive di successo.",
+      "id": "esp_conn_2026-07-06_002",
+      "data_proposta": "2026-07-06",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Coltivazione in Living Soil con stimolazione bioelettrica del Corpo di Luce vegetale",
+      "ipotesi": "Se il terreno vivo (Living Soil) è un ecosistema in equilibrio analogo al 'Corpo di Luce' (Body of Light), allora applicare una stimolazione bioelettrica a bassa intensità (simile alla dualità superiore/inferiore) al sistema radicale delle piante aumenterà la loro capacità di assorbire nutrienti e acqua, migliorando la crescita e la resilienza. Questo perché, come descritto nel Manuale A, il Living Soil richiede un ambiente privo di tossine per funzionare ottimamente, mentre il Manuale B sottolinea l'importanza dell'equilibrio interiore (heaven = even = equilibrio) per il Corpo di Luce. La stimolazione bioelettrica potrebbe agire come un 'sé superiore' che guida l'ecosistema verso una maggiore armonia.",
+      "protocollo": [
+        "Prepara due aiuole gemelle in Living Soil (stesso substrato, stesso compost, stessa esposizione solare) nella BioSerra Caserta. Assicurati che il terreno sia vivo con micorrize e batteri benefici (Manuale A).",
+        "Collega un elettrodo di rame (anodo) a una batteria da 9V e un secondo elettrodo (catodo) a un filo di acciaio inox. Interra gli elettrodi a 10 cm di profondità, distanziati di 30 cm, in una delle due aiuole (aiuola sperimentale). L'altra aiuola sarà il controllo (senza stimolazione).",
+        "Pianta semi femminizzati di Pianta ad alto THC (Manuale A) in entrambe le aiuole, con la stessa densità e profondità. Innaffia entrambe solo con acqua (water-only) per evitare interferenze nutrizionali.",
+        "Applica una corrente continua di 1.5V (bassa tensione) tra gli elettrodi per 2 ore al giorno (mattina), simulando una 'guida energetica' al sistema radicale (simile al concetto di dualità superiore/inferiore del Manuale B). Monitora quotidianamente l'umidità del suolo e la crescita delle piante."
+      ],
+      "materiali": [
+        "2 aiuole gemelle in Living Soil",
+        "Semi femminizzati di Pianta ad alto THC",
+        "Batteria da 9V",
+        "Elettrodi in rame e acciaio inox",
+        "Cavi elettrici isolati",
+        "Multimetro per misurare la corrente",
+        "Righello e bilancia per misurare crescita e peso"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Altezza delle piante (misurata settimanalmente con righello)",
+        "Peso fresco delle piante (misurato alla fine dell'esperimento con bilancia)",
+        "Umidità del suolo (misurata quotidianamente con igrometro per assicurare condizioni identiche)",
+        "Presenza di micorrize e batteri benefici (osservazione microscopica del terreno prelevato da entrambe le aiuole)"
+      ],
+      "variabili_controllo": "Stesso substrato, stesso tipo di semi, stessa esposizione solare, stessa quantità di acqua, stessa temperatura ambientale, stessa durata della stimolazione (solo l'applicazione della corrente differisce tra le aiuole).",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "Come Innaffiare Le Piante Di Pianta",
+      "fonte_b": "Book of Wisdom (revival of wisdom, Harry B. Joseph)",
+      "originalità": "Questo esperimento non si trova in nessuno dei due manuali singolarmente perché combina il concetto di Living Soil (Manuale A) con la stimolazione bioelettrica ispirata al Corpo di Luce (Manuale B), creando un approccio olistico che integra principi fisici e spirituali in un contesto agronomico misurabile.",
+      "id": "esp_conn_2026-07-06_003",
+      "data_proposta": "2026-07-06",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-05",
-    "nuove_proposte": 1,
-    "pdf_analizzati": 80,
-    "connessioni_usate": 31
+    "data": "2026-07-06",
+    "nuove_proposte": 3,
+    "pdf_analizzati": 88,
+    "connessioni_usate": 35
   }
 }
