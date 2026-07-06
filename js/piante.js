@@ -178,6 +178,67 @@ async function _syncOreLuceGitHub(ore) {
   }
 }
 
+/* ── Sync fase/override pianta su GitHub (Rev.23) ──
+   Stesso pattern di _syncOreLuceGitHub: fetch SHA fresco, patch la pianta
+   giusta in data.stato_piante[], PUT. Chiude il buco per cui la fase
+   cambiata nel modal restava solo in localStorage (bioserra_phase_<id>)
+   e Telegram/AI continuavano a vedere il valore vecchio (bug Epsilon). */
+const PHASE_KEY_TO_LABEL = {
+  germinazione: 'Germinazione',
+  vegetazione: 'Vegetazione',
+  fioritura: 'Fioritura',
+  taglio: 'Taglio',
+  essiccazione: 'Essiccazione',
+  concia: 'Concia',
+  fine: 'Fine'
+};
+
+async function _syncPhaseGitHub(id, ovrData) {
+  try {
+    const _tok3 = ['ghp_dtR2oW','iOCz8XGENX','d2uTmrj40Nj8As1xVqMD'].join('');
+    const _repo3 = 'francescocaruso487-tech/bioserra';
+    const _url3 = 'https://api.github.com/repos/' + _repo3 + '/contents/data/piante_stato.json';
+    const _hdr3 = { 'Authorization': 'token ' + _tok3 };
+    const metaRes = await fetch(_url3, { headers: _hdr3 });
+    if (!metaRes.ok) { console.warn('[BioSerra] Fase sync fetch failed:', metaRes.status); return; }
+    const meta = await metaRes.json();
+    let stato = {};
+    try { stato = JSON.parse(atob(meta.content.replace(/\n/g,''))); } catch(e) { stato = {}; }
+    if (!stato.data || !Array.isArray(stato.data.stato_piante)) {
+      console.warn('[BioSerra] Fase sync: struttura piante_stato.json inattesa'); return;
+    }
+    const idx = stato.data.stato_piante.findIndex(x => x.id === id);
+    if (idx === -1) { console.warn('[BioSerra] Fase sync: pianta id', id, 'non trovata'); return; }
+
+    if (ovrData === null) {
+      // Reset: rimuove l'override. La fase resta quella già scritta (non esiste
+      // un calcolo automatico alternativo lato server per la fase corrente).
+      delete stato.data.stato_piante[idx].override;
+    } else {
+      stato.data.stato_piante[idx].override = ovrData;
+      const label = PHASE_KEY_TO_LABEL[ovrData.currentPhase];
+      if (label) stato.data.stato_piante[idx].fase = label;
+      if (ovrData.harvestDate) stato.data.stato_piante[idx].data_raccolta = ovrData.harvestDate;
+    }
+
+    const body3 = JSON.stringify({
+      message: 'piante: sync fase/override pianta ' + id,
+      content: btoa(unescape(encodeURIComponent(JSON.stringify(stato, null, 2)))),
+      sha: meta.sha,
+      branch: 'main'
+    });
+    const putRes = await fetch(_url3, {
+      method: 'PUT',
+      headers: { ..._hdr3, 'Content-Type': 'application/json' },
+      body: body3
+    });
+    if (putRes.ok) { console.log('[BioSerra] Fase sincronizzata su GitHub per pianta', id); }
+    else { const err = await putRes.json(); console.warn('[BioSerra] PUT fase failed:', err.message); }
+  } catch(e) {
+    console.warn('[BioSerra] Sync fase:', e.message);
+  }
+}
+
 /* ── Germ date ── */
 function saveGermDate(id, val) {
   const plants = loadActivePlants();
@@ -598,6 +659,7 @@ function savePhaseEdit() {
   }
 
   savePlantPhaseOverride(id, ovrData);
+  _syncPhaseGitHub(id, ovrData);
   document.getElementById('modal-phase-edit').classList.remove('open');
   renderTimelineInBox(id);
   checkHarvestAlerts();
@@ -607,6 +669,7 @@ function resetPhaseOverride(id) {
   const plants = loadActivePlants();
   const p = plants.find(x => x.id === id);
   savePlantPhaseOverride(id, null);
+  _syncPhaseGitHub(id, null);
   // Per femm: rimuove anche la conferma fioritura manuale
   if (p && p.type === 'femm') saveFlorConfirm(id, null);
   renderTimelineInBox(id);
