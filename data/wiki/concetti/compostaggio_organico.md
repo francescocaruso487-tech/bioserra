@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-07-06
+aggiornato: 2026-07-07
 pdf_count: 3
 ---
 
@@ -12,40 +12,29 @@ pdf_count: 3
 # Compostaggio Organico
 
 ## Descrizione
-Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (scarti vegetali, letame, residui agricoli) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti, noto come **compost**. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macrofauna (lombrichi, artropodi) che, in condizioni ottimali di umidità, temperatura e ossigenazione, scompongono la materia organica in humus. Il compost maturo è un **Living Soil** in miniatura: migliora la struttura del suolo, aumenta la capacità di ritenzione idrica, favorisce lo sviluppo della rizosfera e fornisce nutrienti a lento rilascio, essenziali per le piante in fase vegetativa.
+Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (scarti vegetali, letame, residui agricoli) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti, noto come **compost**. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macroorganismi (lombrichi, artropodi) che, in presenza di ossigeno, scompongono la materia organica in humus. Il compost maturo è un **substrato vivente** che migliora la struttura del suolo, aumenta la capacità di ritenzione idrica, favorisce la biodiversità microbica e fornisce nutrienti a lento rilascio, essenziali per la crescita delle piante in **Living Soil**.
 
-Il meccanismo chiave del compostaggio si basa su **due fasi termofile**:
-1. **Fase di degradazione attiva** (55–65°C): i microrganismi termofili (come *Thermus* e *Bacillus*) degradano rapidamente i composti azotati e carboniosi, generando calore e CO₂.
-2. **Fase di maturazione** (20–40°C): i composti più resistenti (lignina, cellulosa) vengono scomposti da funghi e actinomiceti, portando alla formazione di **acidi umici e fulvici**, che migliorano la fertilità del suolo e la disponibilità di nutrienti per le piante.
-
-In un contesto di **Living Soil outdoor** a Caserta (41°N), il compostaggio è fondamentale per:
-- **Ridurre i rifiuti agricoli** (sfalci, potature, residui di coltivazione).
-- **Creare un substrato autosufficiente** ricco di microrganismi benefici (funghi micorrizici, batteri solubilizatori di fosforo).
-- **Bilanciare il rapporto C/N** del suolo, evitando carenze o eccessi di nutrienti durante la fase vegetativa.
+Il meccanismo chiave del compostaggio si basa su **tre fasi termofile**:
+1. **Fase mesofila iniziale** (20-40°C): decomposizione rapida da parte di batteri mesofili, con produzione di calore.
+2. **Fase termofila** (55-65°C): attivazione di microrganismi termofili che eliminano patogeni e semi di infestanti, accelerando la stabilizzazione della materia organica.
+3. **Fase di raffreddamento e maturazione** (20-40°C): colonizzazione da parte di funghi e attinomiceti, che trasformano i composti complessi in humus stabile. Un compost ben gestito garantisce un **rapporto C/N equilibrato** (25:1–30:1), fondamentale per evitare carenze o eccessi di azoto, e una **porosità ottimale** per l’aerazione delle radici.
 
 ---
 
 ## Come si applica in serra
+Per una serra **outdoor Living Soil** a Caserta (41°N), il compostaggio deve essere adattato al clima mediterraneo, caratterizzato da estati calde e umide e inverni miti. Segui questi passaggi per produrre compost di qualità:
 
-### **Materiali necessari**
-- **Materiali verdi** (alto contenuto di azoto, rapporto C/N ~20:1):
-  - Scarti di ortaggi, erba fresca, residui di potatura verde, letame fresco (es. cavallo, pollo).
-- **Materiali marroni** (alto contenuto di carbonio, rapporto C/N ~40:1):
-  - Paglia, foglie secche, cartone non stampato, segatura, trucioli di legno non trattato.
-- **Struttura di compostaggio**:
-  - Pila all’aperto (in serra o zona ombreggiata) o composter in legno/reti metalliche.
-  - Strumenti: termometro da compost, forca da giardino, annaffiatoio, guanti.
+1. **Selezione dei materiali**:
+   - **Materiali verdi** (ricchi di azoto, C/N < 30): scarti di ortaggi, erba fresca, letame (es. equino o bovino), fondi di caffè.
+   - **Materiali marroni** (ricchi di carbonio, C/N > 30): foglie secche, paglia, cartone non patinato, ramaglie triturate.
+   - *Bilancia*: rapporto ideale **2:1** (2 parti marroni per 1 parte verde). Evita materiali trattati con pesticidi o metalli pesanti.
 
-### **Procedura passo-passo per serra outdoor a Caserta**
-1. **Preparazione della base**:
-   - Stendere uno strato di **materiali marroni** (10–15 cm) sul fondo per favorire l’aerazione e prevenire ristagni.
-   - Posizionare la pila in un’area **parzialmente ombreggiata** (evitare il sole diretto che asciuga troppo il compost).
+2. **Preparazione del cumulo**:
+   - Crea un cumulo di **1–1.5 m di altezza** e **1.5–2 m di base** per garantire un buon isolamento termico.
+   - Posiziona il cumulo su terreno nudo (non su cemento) per permettere l’accesso a lombrichi e microrganismi.
+   - Copri con un telo traspirante per proteggere dalla pioggia eccessiva (evita ristagni) e dal sole diretto.
 
-2. **Bilanciamento dei materiali**:
-   - **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume).
-   - Esempio pratico:
-     - 10 kg di erba fresca (verde) + 20 kg di foglie secche (marrone) + 5 kg di letame (verde).
-   - **Tagliare i materiali** in pezzi piccoli (5–10 cm) per accelerare la decomposizione.
-
-3. **Costruzione della pila**:
-   - Alternare strati di
+3. **Gestione della temperatura e umidità**:
+   - **Temperatura**: monitora con un termometro da compost. Mantieni **55–65°C** per 3–5 giorni (fase termofila), poi lascia raffreddare a **40–50°C** per 2–3 settimane.
+   - **Umidità**: il cumulo deve essere umido come una spugna strizzata (60–70% di umidità). Se troppo secco, aggiungi acqua; se troppo bagnato, aggiungi materiali marroni.
+   - *Strumenti*: usa un forcone per rivoltare il cum
