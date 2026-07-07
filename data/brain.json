@@ -1,141 +1,126 @@
 {
-  "lastUpdate": "2026-07-06T14:47:23.000Z",
+  "lastUpdate": "2026-07-07T12:39:58.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare corrente DC pulsata (PEMF) a 8V per 4 ore durante la fase di fioritura delle autofiorenti, utilizzando elettrodi in rame/zinco posizionati a 10-15 cm di profondità nel substrato vicino alle radici (ELECTROCULTURE FOR BEGINNERS - [pdf_17], Electroculture-The-Biohackers-Guide-Collection - [Cesar-Arce]).",
-      "Integrare polvere di basalto (1% in volume) nel substrato delle autofiorenti in fioritura per migliorare la conducibilità elettrica e favorire la formazione di micorrize (L'elettrocoltura naturale nell'orto - [pdf_13]).",
-      "Spruzzare preparato biodinamico al tramonto sulle autofiorenti in fioritura (es. Equisetum arvense 501) per potenziare la resistenza e la crescita, combinando elettrocoltura e biodinamica (Electroculture-The-Biohackers-Guide-Collection - [Cesar-Arce])."
+      "Applicare corrente DC a 3-4V tra elettrodi rame/zinco (10-15 cm profondità, 30 cm distanza) sulle autofiorenti in fioritura (Epsilon/Milky Way/Titan/Medusa/Gaia) per stimolare produzione terpeni e fioritura, seguendo [pdf_17].",
+      "Effettuare trattamento biodinamico serale con preparato a base di equiseto (silice) e camomilla sulla zona radicale delle autofiorenti, sfruttando la luna gibbosa crescente per potenziare l'elettrocultura [pdf_13].",
+      "Monitorare umidità del substrato (49% attuale) e ridurre leggermente la conducibilità elettrica del suolo (da 8V a 6V) dopo la pioggia di 1.6mm odierna per evitare stress, come indicato nella scoperta su conducibilità post-pioggia [Scoperta]."
     ],
-    "briefing_mattutino": "La serra BioSerra si trova in una fase critica di fioritura per le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) con raccolta imminente in 32-52 giorni. Oggi si consiglia di applicare tecniche di elettrocoltura e biodinamica per ottimizzare la fase riproduttiva, sfruttando la fase lunare gibbosa crescente che favorisce l'accumulo di energia nelle piante. Le femminizzate sono ancora in fase vegetativa e non richiedono interventi specifici oggi. Il meteo prevede caldo intenso (31°C) e assenza di pioggia, quindi monitorare l'umidità del suolo.",
+    "briefing_mattutino": "La serra si trova in fase di fioritura avanzata per le autofiorenti (74-76 giorni) con raccolta imminente per Epsilon (32gg). Le condizioni meteo (30.1°C, umidità 49%, pioggia leggera) richiedono attenzione alla conducibilità del suolo. Le femminizzate sono in vegetazione con cicli ancora lunghi (>150gg). Oggi si applicano tecniche di elettrocultura a basso voltaggio e trattamenti biodinamici per ottimizzare la risposta delle piante, come da [pdf_17] e [pdf_13].",
     "consigli_piante": {
-      "autofiorenti": "Applicare PEMF a 8V per 4 ore, integrare basalto nel substrato e spruzzare preparato biodinamico al tramonto. Monitorare l'umidità del substrato per evitare stress idrico durante il caldo.",
-      "femminizzate": "Nessuna azione specifica oggi. Continuare con irrigazione regolare e monitorare la crescita vegetativa. Evitare stress idrico o nutrizionale.",
+      "autofiorenti": "Applicare corrente DC a 3-4V su tutte le autofiorenti in fioritura (Epsilon/Milky Way/Titan/Medusa/Gaia) per 6-8 ore durante le ore fresche (mattina o sera), con elettrodi a 10-15 cm di profondità. Priorità alta per Epsilon (raccolta tra 32gg).",
+      "femminizzate": "Nessuna azione elettrica oggi sulle femminizzate in vegetazione (Astro Lemonade/Cosmic Cheddar/Orbital Banana/Royal Gorilla/Mexican Rush). Monitorare umidità e temperatura del substrato per evitare stress termico (>30°C).",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Applicare PEMF a 8V per 4 ore, integrare basalto nel substrato vicino alle radici, spruzzare preparato biodinamico al tramonto. Priorità alta.",
+          "azione": "Applicare corrente DC a 3V per 6 ore (07-13) con elettrodi rame/zinco a 10 cm profondità. Ridurre voltaggio a 2.5V se umidità scende sotto 45%.",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Applicare PEMF a 8V per 4 ore, integrare basalto nel substrato vicino alle radici, spruzzare preparato biodinamico al tramonto. Priorità alta.",
-          "priorita": "alta"
+          "azione": "Applicare corrente DC a 4V per 8 ore (18-02) con elettrodi a 15 cm profondità. Monitorare risposta fioritura.",
+          "priorita": "media"
         },
         {
           "nome": "Titan F1",
-          "azione": "Applicare PEMF a 8V per 4 ore, integrare basalto nel substrato vicino alle radici, spruzzare preparato biodinamico al tramonto. Priorità alta.",
-          "priorita": "alta"
+          "azione": "Applicare corrente DC a 3.5V per 7 ore (08-15) con elettrodi a 12 cm profondità. Integrare micorrize (Bacillus spp.) nel substrato [pdf_85].",
+          "priorita": "media"
         },
         {
           "nome": "Medusa F1",
-          "azione": "Applicare PEMF a 8V per 4 ore, integrare basalto nel substrato vicino alle radici, spruzzare preparato biodinamico al tramonto. Priorità alta.",
-          "priorita": "alta"
+          "azione": "Applicare corrente DC a 3V per 6 ore (19-01) con elettrodi a 10 cm profondità. Evitare ore centrali (>30°C).",
+          "priorita": "media"
         },
         {
           "nome": "Gaia F1",
-          "azione": "Applicare PEMF a 8V per 4 ore, integrare basalto nel substrato vicino alle radici, spruzzare preparato biodinamico al tramonto. Priorità alta.",
-          "priorita": "alta"
+          "azione": "Applicare corrente DC a 4V per 8 ore (07-15) con elettrodi a 15 cm profondità. Trattamento biodinamico serale con equiseto [pdf_13].",
+          "priorita": "media"
         },
         {
           "nome": "Astro Lemonade F1",
-          "azione": "Continuare con irrigazione regolare e monitorare la crescita vegetativa. Nessun intervento specifico oggi.",
+          "azione": "Nessuna azione elettrica. Monitorare umidità (target 50-55%) e temperatura substrato. Irrigare al bisogno con acqua a pH 6.2.",
           "priorita": "bassa"
         },
         {
           "nome": "Cosmic Cheddar F1",
-          "azione": "Continuare con irrigazione regolare e monitorare la crescita vegetativa. Nessun intervento specifico oggi.",
+          "azione": "Nessuna azione elettrica. Verificare drenaggio substrato dopo pioggia (1.6mm).",
           "priorita": "bassa"
         },
         {
           "nome": "Orbital Banana F1",
-          "azione": "Continuare con irrigazione regolare e monitorare la crescita vegetativa. Nessun intervento specifico oggi.",
+          "azione": "Nessuna azione elettrica. Monitorare crescita vegetativa e integrare potassio se necessario.",
           "priorita": "bassa"
         },
         {
           "nome": "Royal Gorilla",
-          "azione": "Continuare con irrigazione regolare e monitorare la crescita vegetativa. Nessun intervento specifico oggi.",
+          "azione": "Nessuna azione elettrica. Controllare presenza di afidi (caldo + umidità 49% favoriscono infestazioni).",
           "priorita": "bassa"
         },
         {
           "nome": "Mexican Rush",
-          "azione": "Continuare con irrigazione regolare e monitorare la crescita vegetativa. Nessun intervento specifico oggi.",
+          "azione": "Nessuna azione elettrica. Verificare stabilità strutturale delle piante (vento 15.9 km/h).",
           "priorita": "bassa"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Pulsed Electromagnetic Field (PEMF)",
-        "descrizione": "Applicare corrente DC pulsata a 8V tramite elettrodi in rame/zinco posizionati a 10-15 cm di profondità nel substrato vicino alle radici delle autofiorenti in fioritura. Durata: 4 ore consecutive durante le ore più fresche della giornata (mattina presto o sera). Utilizzare un generatore DC con regolazione della frequenza (5-10 Hz) per evitare stress alle piante.",
-        "fonte": "[Electroculture-The-Biohackers-Guide-Collection - Cesar-Arce], [dudgrichelcult]",
+        "nome": "Regolazione dinamica della conducibilità post-pioggia",
+        "descrizione": "Dopo precipitazioni (1.6mm oggi), ridurre voltaggio della corrente DC da 8V a 6V per 24-48 ore per compensare la diminuzione di conducibilità del suolo. Ripristinare voltaggio originale una volta che l'umidità del substrato scende sotto il 50%.",
+        "fonte": "[Scoperta]",
         "materiali": [
-          "Generatore DC (8V, 1-2A)",
-          "Elettrodi in rame/zinco (2-3 coppie)",
-          "Cavi isolati",
-          "Timer per regolare la durata"
-        ],
-        "difficolta": "media"
-      },
-      {
-        "nome": "Preparato biodinamico al tramonto",
-        "descrizione": "Spruzzare un preparato biodinamico (es. Equisetum arvense 501 diluito 1:1000) sulle autofiorenti in fioritura al tramonto. Questo preparato, ricco di silice, potenzia la resistenza delle piante e favorisce l'assorbimento dei nutrienti. Applicare con uno spruzzatore a pressione fine per evitare danni alle foglie.",
-        "fonte": "[Electroculture-The-Biohackers-Guide-Collection - Cesar-Arce], [pdf_13]",
-        "materiali": [
-          "Preparato biodinamico 501",
-          "Acqua distillata",
-          "Spruzzatore a pressione fine"
+          "multimetro per misurare conducibilità",
+          "sistema di alimentazione DC regolabile"
         ],
         "difficolta": "bassa"
       }
     ],
     "scoperte": [
-      "La combinazione di elettrocoltura (PEMF) e preparati biodinamici durante la fase di fioritura può accelerare la crescita dei fiori e migliorare la resistenza delle piante agli stress ambientali, come dimostrato nei testi di César Arce e Christofleau.",
-      "L'aggiunta di basalto nel substrato (1% in volume) aumenta la conducibilità elettrica del suolo e favorisce la formazione di micorrize, potenziando l'assorbimento dei nutrienti e la salute delle radici (L'elettrocoltura naturale nell'orto - [pdf_13])."
+      "La pioggia leggera (1.6mm) riduce temporaneamente la conducibilità del suolo, rendendo necessario un aggiustamento dei parametri elettrici per mantenere l'efficacia dell'elettrocultura [Scoperta].",
+      "Le autofiorenti in fioritura (Epsilon/Milky Way/Titan/Medusa/Gaia) rispondono meglio a voltaggi inferiori (3-4V) rispetto alla fase vegetativa, come confermato da [pdf_17]."
     ],
     "avvisi": [
-      "Attenzione al caldo intenso (31°C) oggi: evitare di applicare PEMF durante le ore centrali della giornata per prevenire stress termico alle piante.",
-      "Monitorare l'umidità del substrato delle autofiorenti in fioritura: il caldo e il vento (17.1 km/h) possono aumentare l'evapotraspirazione."
+      "Attenzione al caldo intenso (30.5°C max oggi): evitare di applicare PEMF o corrente DC durante le ore centrali (12-16) per prevenire stress termico alle piante [2026-07-06].",
+      "Monitorare umidità del substrato delle autofiorenti: se scende sotto 45%, ridurre voltaggio della corrente DC a 2.5V per evitare danni alle radici."
     ],
     "piano_giornata": {
-      "mattina": "07:00-12:00: Applicare PEMF a 8V per 4 ore sulle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia). Integrare basalto nel substrato vicino alle radici. Irrigare leggermente per mantenere l'umidità del suolo. Monitorare la temperatura e l'umidità ambientale.",
-      "pomeriggio": "12:00-18:00: Evitare interventi diretti sulle piante durante le ore più calde (max 31°C). Verificare il funzionamento del sistema PEMF e l'integrità degli elettrodi. Spruzzare preparato biodinamico al tramonto (dopo le 18:00).",
-      "sera": "18:00-21:00: Spruzzare preparato biodinamico sulle autofiorenti in fioritura. Verificare l'umidità del substrato e regolare l'irrigazione se necessario. Monitorare eventuali segni di stress idrico o nutrizionale."
+      "mattina": "07-12: Applicare corrente DC (3-4V) su Epsilon, Titan e Gaia (6-8 ore). Irrigare leggermente le autofiorenti se umidità <48%. Verificare drenaggio dopo pioggia. Applicare trattamento biodinamico serale alle 19:00.",
+      "pomeriggio": "12-18: Monitoraggio visivo delle piante (segni di stress, infestazioni). Evitare interventi elettrici durante le ore più calde (max 30.5°C).",
+      "sera": "18-21: Applicare corrente DC su Milky Way e Medusa (7-8 ore). Applicare trattamento biodinamico con equiseto e camomilla sulle autofiorenti. Verificare umidità del substrato e regolare voltaggio se necessario."
     },
     "kb_sintesi": {
       "principi_attivi": [
-        "Applicazione di corrente continua (DC) a basso voltaggio vicino alle radici per stimolare la crescita e l'assorbimento dei nutrienti (ELECTROCULTURE FOR BEGINNERS - [pdf_17])",
-        "Utilizzo di elettrodi in rame/zinco per creare un campo elettromagnetico armonico che favorisce lo sviluppo radicale e la salute delle piante (ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - [pdf_16])",
-        "L'elettrocoltura naturale si basa sull'energia armonica libera della Terra e del cielo, non su tecnologie invasive (L'elettrocoltura naturale nell'orto - [pdf_13])",
-        "Le proprietà dell'elettricità nei vegetali differiscono da quelle tradizionali, richiedendo approcci specifici per massimizzare l'efficacia (De l'Électricité des Végétaux - [pdf_85])",
-        "L'applicazione di scariche ad alta tensione (brevetti di Sir Oliver Lodge) può accelerare la crescita e migliorare la resistenza delle colture (dudgrichelcult - [dudgrichelcult])"
+        "Applicazione di corrente continua (DC) a basso voltaggio vicino alle radici per stimolare l'assorbimento nutrizionale e la crescita vegetativa",
+        "Utilizzo di elettrodi in rame/zinco per generare campi elettrici armonici che favoriscono la salute delle piante",
+        "Sincronizzazione delle pratiche agricole con le fasi lunari per ottimizzare la risposta delle piante all'elettrocultura",
+        "Integrazione di sistemi parafulmine magnetici per armonizzare le energie telluriche e celesti",
+        "Monitoraggio dell'umidità e temperatura per adattare i parametri elettrici alle condizioni ambientali della serra"
       ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (5-12V) tramite elettrodi in rame/zinco posizionati a 10-15 cm di profondità nel substrato, vicino alle radici, per 4-6 ore al giorno durante la fase di fioritura. Questo metodo, descritto in 'ELECTROCULTURE FOR BEGINNERS - [pdf_17]', stimola l'assorbimento dei nutrienti e accelera la crescita senza stressare le piante.",
-      "consiglio_suolo_da_testi": "Integrare nel substrato polvere di basalto o roccia vulcanica (1-2% in volume) per migliorare la conducibilità elettrica del suolo e favorire la formazione di micorrize, come suggerito nei principi di elettrocoltura naturale di Justin Etienne Christofleau ([pdf_13]). Questo approccio potenzia la capacità del suolo di trattenere e trasmettere le energie armoniche necessarie alle piante.",
-      "consiglio_biodinamica_da_tessi": "Oggi, con la luna in fase calante (28.5°C, umidità 45%), è il momento ideale per applicare preparati biodinamici come il 500 (cornoletame) diluito in acqua e spruzzato sulle foglie al tramonto, per stimolare la vitalità radicale. Questo metodo, ispirato ai principi biodinamici, si allinea con le osservazioni di Christofleau sull'importanza delle energie terrestri ([pdf_13]).",
-      "scoperta_del_giorno": "L'elettrocoltura può essere combinata con pratiche biodinamiche per creare un sistema sinergico: l'applicazione di corrente DC a basso voltaggio (5-12V) durante la fase di fioritura, abbinata a spruzzature di preparati biodinamici al tramonto, potrebbe potenziare sia la crescita che la resistenza delle piante, come evidenziato nei testi di César Arce ([Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce]) e Christofleau ([pdf_13]).",
+      "consiglio_elettro_da_testi": "Applicare una corrente continua di 1-5V tra elettrodi in rame (positivo) e zinco (negativo) posizionati a 10-15cm di profondità nel substrato, con una distanza di 30cm tra loro, per stimolare la fioritura e la produzione di terpeni durante la fase attiva di fioritura. [pdf_17]",
+      "consiglio_suolo_da_testi": "Mantenere un rapporto ottimale tra umidità (49%) e temperatura (30°C) per favorire la conducibilità elettrica del suolo. Aggiungere micorrize e batteri benefici (es. Bacillus spp.) per migliorare la risposta delle piante agli stimoli elettrici. [pdf_85]",
+      "consiglio_biodinamica_da_testi": "Effettuare trattamenti biodinamici con preparati a base di equiseto (silice) e camomilla durante la luna crescente per potenziare l'effetto dell'elettrocultura sulla fioritura. [pdf_13]",
+      "scoperta_del_giorno": "La pioggia leggera (1.6mm) può ridurre temporaneamente la conducibilità del suolo, rendendo necessario un aggiustamento dei parametri elettrici per mantenere l'efficacia dell'elettrocultura.",
       "tecnica_da_provare": {
-        "nome": "Sistema a elettrodi gemelli rame-zinco con corrente pulsata",
-        "descrizione": "Posizionare due elettrodi (uno in rame, uno in zinco) a 10 cm di distanza tra loro, a 10-15 cm di profondità nel substrato, vicino alle radici delle piante in fioritura. Collegare gli elettrodi a una batteria da 9V tramite un timer digitale che eroghi corrente per 4 ore al giorno (dalle 10:00 alle 14:00). Questo sistema, ispirato ai brevetti di Christofleau ([pdf_13]) e ai principi di Arce ([Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce]), crea un campo elettromagnetico che stimola l'assorbimento dei nutrienti e la fotosintesi.",
-        "fonte": "[pdf_13], [Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce]",
+        "nome": "Sistema a Doppia Polarità Magnetica",
+        "descrizione": "Posizionare un elettrodo in rame (positivo) a 10cm di profondità sul lato nord della pianta e un elettrodo in zinco (negativo) a 15cm di profondità sul lato sud, collegati a una batteria da 3V. Mantenere il circuito attivo per 6 ore al giorno durante la fase di fioritura, monitorando la risposta delle piante.",
+        "fonte": "[pdf_13]",
         "materiali": [
-          "Elettrodi in rame (diametro 3-5 mm, lunghezza 30 cm)",
-          "Elettrodi in zinco (diametro 3-5 mm, lunghezza 30 cm)",
-          "Batteria da 9V",
-          "Timer digitale (es. NEMA 17)",
-          "Cavi elettrici isolati (lunghezza 2 m)",
-          "Connettori a coccodrillo",
-          "Guanti isolanti"
+          "Elettrodi in rame e zinco (10x1cm)",
+          "Batteria da 3V",
+          "Cavi elettrici isolati",
+          "Tubi in PVC per isolamento",
+          "Multimetro per monitoraggio"
         ]
       }
     }
   },
   "agenti": {
     "piante": {
-      "stato_generale": "ottimale",
-      "irrigazione": "Irrigare leggermente al mattino (07:00-09:00) per mantenere l'umidità del substrato al 60-70% della capacità di campo. Evitare ristagni idrici. Le autofiorenti in fioritura richiedono un'attenzione particolare a causa del caldo e del vento.",
-      "nutrizione": "Nessuna integrazione oggi. Continuare con acqua solo per evitare stress nutrizionale durante la fioritura.",
+      "stato_generale": "monitoraggio",
+      "irrigazione": "Irrigare leggermente le autofiorenti al mattino (07-09) se umidità <48%, con 200-300ml per pianta. Le femminizzate in vegetazione richiedono meno acqua (150-200ml).",
+      "nutrizione": "Nessuna integrazione nutrizionale oggi. Solo acqua a pH 6.2 per evitare squilibri in fase di fioritura avanzata.",
       "piante_critiche": []
     },
     "ambiente": {
@@ -143,50 +128,37 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Sfruttare la fase lunare gibbosa crescente per applicare tecniche di elettrocoltura e biodinamica sulle autofiorenti in fioritura, poiché questa fase favorisce l'accumulo di energia e la crescita dei fiori (Electroculture-The-Biohackers-Guide-Collection - [Cesar-Arce])."
+        "consiglio": "Effettuare trattamenti biodinamici serali (19-21) con preparati a base di silice (equiseto) e camomilla per potenziare l'effetto dell'elettrocultura sulle autofiorenti in fioritura [pdf_13]."
       },
       "ore_luce": 15.0
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare il corretto funzionamento del generatore DC e degli elettrodi per PEMF.",
-        "Assicurarsi che gli elettrodi in rame/zinco siano posizionati a 10-15 cm di profondità nel substrato vicino alle radici delle autofiorenti in fioritura."
+        "Verificare conducibilità del suolo con multimetro (target: 1.5-2.5 mS/cm).",
+        "Controllare stabilità degli elettrodi rame/zinco (nessun corto circuito o corrosione)."
       ],
-      "ottimizzazione": "Regolare la frequenza del PEMF tra 5-10 Hz per massimizzare l'efficacia senza stressare le piante, come suggerito nei manuali di elettrocoltura naturale (L'elettrocoltura naturale nell'orto - [pdf_13])."
+      "ottimizzazione": "Ridurre voltaggio della corrente DC da 8V a 6V per 24 ore dopo la pioggia di 1.6mm, come da [Scoperta]. Ripristinare a 8V domani se umidità del substrato scende sotto 50%."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Pulsed Electromagnetic Field (PEMF)",
-      "descrizione": "Applicare corrente DC pulsata a 8V tramite elettrodi in rame/zinco posizionati a 10-15 cm di profondità nel substrato vicino alle radici delle autofiorenti in fioritura. Durata: 4 ore consecutive durante le ore più fresche della giornata (mattina presto o sera). Utilizzare un generatore DC con regolazione della frequenza (5-10 Hz) per evitare stress alle piante.",
-      "fonte": "[Electroculture-The-Biohackers-Guide-Collection - Cesar-Arce], [dudgrichelcult]",
+      "nome": "Regolazione dinamica della conducibilità post-pioggia",
+      "descrizione": "Dopo precipitazioni (1.6mm oggi), ridurre voltaggio della corrente DC da 8V a 6V per 24-48 ore per compensare la diminuzione di conducibilità del suolo. Ripristinare voltaggio originale una volta che l'umidità del substrato scende sotto il 50%.",
+      "fonte": "[Scoperta]",
       "materiali": [
-        "Generatore DC (8V, 1-2A)",
-        "Elettrodi in rame/zinco (2-3 coppie)",
-        "Cavi isolati",
-        "Timer per regolare la durata"
-      ],
-      "difficolta": "media"
-    },
-    {
-      "nome": "Preparato biodinamico al tramonto",
-      "descrizione": "Spruzzare un preparato biodinamico (es. Equisetum arvense 501 diluito 1:1000) sulle autofiorenti in fioritura al tramonto. Questo preparato, ricco di silice, potenzia la resistenza delle piante e favorisce l'assorbimento dei nutrienti. Applicare con uno spruzzatore a pressione fine per evitare danni alle foglie.",
-      "fonte": "[Electroculture-The-Biohackers-Guide-Collection - Cesar-Arce], [pdf_13]",
-      "materiali": [
-        "Preparato biodinamico 501",
-        "Acqua distillata",
-        "Spruzzatore a pressione fine"
+        "multimetro per misurare conducibilità",
+        "sistema di alimentazione DC regolabile"
       ],
       "difficolta": "bassa"
     }
   ],
   "avvisi": [
-    "Attenzione al caldo intenso (31°C) oggi: evitare di applicare PEMF durante le ore centrali della giornata per prevenire stress termico alle piante.",
-    "Monitorare l'umidità del substrato delle autofiorenti in fioritura: il caldo e il vento (17.1 km/h) possono aumentare l'evapotraspirazione."
+    "Attenzione al caldo intenso (30.5°C max oggi): evitare di applicare PEMF o corrente DC durante le ore centrali (12-16) per prevenire stress termico alle piante [2026-07-06].",
+    "Monitorare umidità del substrato delle autofiorenti: se scende sotto 45%, ridurre voltaggio della corrente DC a 2.5V per evitare danni alle radici."
   ],
   "consigli_giorno": [
-    "Applicare corrente DC pulsata (PEMF) a 8V per 4 ore durante la fase di fioritura delle autofiorenti, utilizzando elettrodi in rame/zinco posizionati a 10-15 cm di profondità nel substrato vicino alle radici (ELECTROCULTURE FOR BEGINNERS - [pdf_17], Electroculture-The-Biohackers-Guide-Collection - [Cesar-Arce]).",
-    "Integrare polvere di basalto (1% in volume) nel substrato delle autofiorenti in fioritura per migliorare la conducibilità elettrica e favorire la formazione di micorrize (L'elettrocoltura naturale nell'orto - [pdf_13]).",
-    "Spruzzare preparato biodinamico al tramonto sulle autofiorenti in fioritura (es. Equisetum arvense 501) per potenziare la resistenza e la crescita, combinando elettrocoltura e biodinamica (Electroculture-The-Biohackers-Guide-Collection - [Cesar-Arce])."
+    "Applicare corrente DC a 3-4V tra elettrodi rame/zinco (10-15 cm profondità, 30 cm distanza) sulle autofiorenti in fioritura (Epsilon/Milky Way/Titan/Medusa/Gaia) per stimolare produzione terpeni e fioritura, seguendo [pdf_17].",
+    "Effettuare trattamento biodinamico serale con preparato a base di equiseto (silice) e camomilla sulla zona radicale delle autofiorenti, sfruttando la luna gibbosa crescente per potenziare l'elettrocultura [pdf_13].",
+    "Monitorare umidità del substrato (49% attuale) e ridurre leggermente la conducibilità elettrica del suolo (da 8V a 6V) dopo la pioggia di 1.6mm odierna per evitare stress, come indicato nella scoperta su conducibilità post-pioggia [Scoperta]."
   ]
 }
