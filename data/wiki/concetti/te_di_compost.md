@@ -2,40 +2,47 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-07-06
+aggiornato: 2026-07-07
 pdf_count: 3
 ---
 
 # Te di Compost
 
 ```markdown
-# Tè di Compost
+# Te di Compost
 
 ## Descrizione
-Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei microrganismi benefici presenti in un compost maturo, trasformando i nutrienti insolubili in forme assimilabili dalle piante. Questo processo, noto come **estrazione microbica**, sfrutta la capacità dei batteri, funghi e protozoi di moltiplicarsi in soluzione acquosa quando forniti di substrati organici (come melassa o acidi umici). L’applicazione fogliare o radicale del tè di compost introduce nel suolo una comunità microbica attiva che:
-- **Compete con patogeni** (es. *Fusarium*, *Pythium*) per spazio e risorse;
-- **Mineralizza la materia organica**, rendendo azoto, fosforo e potassio disponibili in forme organiche;
-- **Stimola la rizosfera**, migliorando l’assorbimento idrico e la resistenza a stress abiotici (es. siccità tipica del clima campano).
+Il **Te di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dal compost maturo, ricco di microrganismi benefici (batteri, funghi, protozoi e nematodi), nutrienti solubili e sostanze umiche. Questo preparato funziona come un **biofertilizzante e biostimolante**, migliorando la salute del suolo e delle piante attraverso tre meccanismi principali:
+1. **Aumento della biodiversità microbica**: I microrganismi presenti nel compost tea colonizzano la rizosfera, competono con patogeni e promuovono la solubilizzazione di nutrienti (es. fosforo, azoto).
+2. **Stimolazione della resistenza sistemica**: Composti come gli acidi umici e gli elicitori microbici attivano le difese naturali delle piante contro stress biotici (funghi, batteri) e abiotici (siccità, salinità).
+3. **Miglioramento della struttura del suolo**: Le sostanze polimeriche extracellulari (EPS) prodotte dai batteri migliorano l’aggregazione del suolo e la ritenzione idrica, fondamentale per i terreni sabbiosi tipici di Caserta.
 
-Il meccanismo d’azione si basa sulla **teoria del suolo vivente**: un ecosistema microbico equilibrato (batteri:funghi >1:1 in fase vegetativa) favorisce la salute delle piante, riducendo la necessità di concimi chimici. Studi dimostrano che il tè di compost applicato in serra outdoor a Caserta (41°N) può aumentare la resa fino al 20% grazie alla maggiore attività enzimatica del suolo e alla produzione di fitormoni come auxine e citochinine da parte dei microrganismi.
+L’efficacia dipende dalla **qualità del compost** (maturo, senza patogeni) e dalla **metodologia di preparazione**, che deve privilegiare condizioni aerobiche per evitare la proliferazione di anaerobi dannosi (es. *Fusarium*).
 
 ---
 
 ## Come si applica in serra
-**Preparazione (per 100L di tè):**
-1. **Materiali**: Compost maturo (1-2 kg), acqua non clorata (100L), aeratore da acquario, melassa biologica (100-200g), pHmetro.
-2. **Fase 1 – Estrazione (24h)**: Immergi il compost in un secchio con acqua, aggiungi la melassa e mantieni l’aerazione costante (bolle fini, 1-2L/min) per evitare anaerobiosi. La temperatura ideale è 18-25°C (evita il sole diretto).
-3. **Fase 2 – Filtraggio**: Dopo 24h, filtra il liquido con una retina a maglia fine (es. 50µm) per rimuovere particelle grossolane. Il pH dovrebbe essere 6.5-7.5 (aggiusta con acido citrico se >8).
-4. **Applicazione**: Usa entro 4 ore dalla preparazione per massimizzare la vitalità microbica. **Dosi**:
-   - **Radicale**: 5-10L/10m² ogni 15 giorni in vegetazione, ogni 10 giorni in fioritura.
-   - **Fogliare**: 3-5L/10m² diluito al 50% con acqua, nebulizzato al tramonto per evitare ustioni.
-5. **Frequenza**: Alternare con **acqua magnetizzata** (vedi sinergie) per migliorare la penetrazione radicale.
+Per una serra outdoor **Living Soil** a Caserta (41°N), segui questo protocollo ottimizzato per clima mediterraneo (estati calde e umide, inverni miti):
 
-**Consigli per Caserta**:
-- Applica il tè in **mattine nuvolose** (evita stress idrico) o dopo piogge leggere.
-- Integra con **micorrize** (es. *Glomus intraradices*) per potenziare la simbiosi fungina in terreni sabbiosi tipici della zona.
+### **Preparazione (24 ore prima dell’applicazione)**
+1. **Materiali**:
+   - Compost maturo (preferibilmente vermicompost o compost da letame bovino/equino, maturato almeno 6 mesi).
+   - Acqua non clorata (raccolta piovana o decantata 24h).
+   - Aeratore per acquario (con pietra porosa per ossigenazione).
+   - Melassa di canna da zucchero (1-2 g/L) o zucchero di barbabietola come fonte di carbonio per i batteri.
+   - Opzionale: **Elettroliti naturali** (es. acqua magnetizzata [vedi [[acqua_magnetizzata]]]) per migliorare l’assorbimento.
 
----
+2. **Procedura**:
+   - **Dose**: 1 kg di compost ogni 10 L di acqua (rapporto 1:10).
+   - Immergi il compost in un secchio o bidone capiente, aggiungi l’acqua e posiziona l’aeratore sul fondo.
+   - Aggiungi la melassa (1 g/L) e mescola delicatamente.
+   - Mantieni l’aerazione **continua** per 24 ore a temperatura ambiente (evita >30°C per prevenire la morte dei microrganismi).
 
-## Sinergie con altri elementi
-- **Lakhovsky (Onde di forma)**: L’applicazione del tè di compost in combinazione con dispositivi a onde scalari (es. *Pyramid Power*) può **amplificare la risposta immunitaria** delle piante, secondo studi empirici su coltivazioni outdoor. L’ipotesi è che
+### **Applicazione**
+- **Orario**: Applica al mattino presto o al tramonto per evitare stress termico.
+- **Metodo**:
+  - **Radicale**: Irriga il suolo alla base delle piante con un rapporto 1:5 (es. 2 L di tea per pianta adulta), evitando ristagni.
+  - **Fogliare**: Filtra il tea con una retina fine (50-100 micron) per rimuovere particelle grossolane, poi spruzza sulle foglie con uno spruzzino a pressione (meglio se con ugello a ventaglio). Applica in **fase di vegetazione** (ogni 2-3 settimane) e **fioritura** (ogni 3-4 settimane).
+- **Dosaggio**:
+  - Vegetazione: 5-10 L/10 m².
+  - Fioritura:
