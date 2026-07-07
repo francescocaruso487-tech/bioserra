@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-06T14:45:19.680907+00:00",
+  "lastUpdate": "2026-07-07T12:18:35.750562+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2155,14 +2155,84 @@
       "data_proposta": "2026-07-06",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto del Compost Maturo Arricchito con Terpeni sulla Mobilità dei Nutrienti nel Living Soil",
+      "ipotesi": "L'aggiunta di compost maturo arricchito con terpeni (da peperoncini secchi) al terreno prima della semina aumenterà la disponibilità di nutrienti mobili (azoto, fosforo, potassio) e l'attività microbica, migliorando la crescita delle piante. Questo perché il compost (Manuale B) arricchisce il suolo di microrganismi e nutrienti, mentre i terpeni stimolano l'attività microbica e la solubilizzazione dei nutrienti (Manuale A).",
+      "protocollo": [
+        "Preparare due lotti di terreno identici (1m x 1m x 30cm) in serra, con le stesse caratteristiche di pH, umidità e materia organica (controllo tramite test del suolo).",
+        "Produrre compost maturo mescolando scarti vegetali (Manuale B) e aggiungere 50g di peperoncini secchi macinati per ogni 10kg di compost per arricchire i terpeni. Lasciare maturare per 15 giorni.",
+        "Applicare il compost maturo arricchito su un lotto (trattato) con uno spessore di 5cm, mentre l'altro lotto (controllo) riceve solo compost non arricchito. Seminare in entrambi i lotti la stessa varietà di basilico (pianta aromatica sensibile ai terpeni).",
+        "Monitorare settimanalmente il pH, l'umidità, la temperatura del suolo, e la crescita delle piante. Dopo 30 giorni, raccogliere campioni di suolo per analizzare la disponibilità di nutrienti mobili (NPK) e l'attività microbica (test respirometrico)."
+      ],
+      "materiali": [
+        "Terreno per serra (Living Soil pre-preparato)",
+        "Compost maturo (scarti vegetali)",
+        "Peperoncini secchi (varietà piccante)",
+        "Basilico (semi o piantine)",
+        "Test del suolo per pH e NPK",
+        "Sonda per umidità e temperatura",
+        "Bilancia di precisione"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Disponibilità di NPK nel suolo (test chimico)",
+        "Attività microbica (test respirometrico o conteggio colonie)",
+        "Crescita delle piante (altezza, biomassa secca)",
+        "pH e umidità del suolo (sonda digitale)"
+      ],
+      "variabili_controllo": "Stesso tipo di terreno, stessa quantità di compost, stessa varietà di pianta, stessa esposizione solare e irrigazione (water-only).",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "5 Fattori Che Influenzano La Disponibili",
+      "fonte_b": "Una Panoramica Sugli Elementi Mobili Ed ",
+      "originalità": "L'esperimento combina specificamente il compostaggio con l'arricchimento in terpeni (da peperoncini) per testare un effetto sinergico sulla mobilità dei nutrienti nel Living Soil, una connessione non presente nei manuali originali. I terpeni sono solitamente associati a prodotti per il consumo umano (Manuale B), ma qui vengono utilizzati come stimolatori biologici del suolo.",
+      "id": "esp_conn_2026-07-07_001",
+      "data_proposta": "2026-07-07",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Rito di Iside nel Compost: Trasformazione Alchemica con Rituale di Rigenerazione Energetica",
+      "ipotesi": "Applicando un rituale di rigenerazione ispirato ai Riti di Iside (Manuale B) durante il compostaggio (Manuale A), si accelererà la decomposizione della materia organica e si aumenterà la biodisponibilità di nutrienti nel suolo, misurabile tramite analisi del pH, contenuto di materia organica e attività microbica. Il processo alchemico del compostaggio (simile alla rinascita di Osiride) sarà potenziato dall'intenzione rituale, che agisce come catalizzatore energetico, come suggerito dalla simbologia di Iside che ricompone il corpo smembrato del marito.",
+      "protocollo": [
+        "Preparare due cumuli di compost identici (1m³ ciascuno) con gli stessi materiali (scarti vegetali, letame, carta, cenere) e stessa umidità (60%).",
+        "Al cumulo 'Rito di Iside' (esperimentale), eseguire un rituale quotidiano al tramonto per 30 giorni: tracciare un cerchio con una verga di legno consacrata (imbevuta di infuso di camomilla), recitare una formula in latino ('Per Isidis gratiam, materia renascatur') mentre si mescola il compost in senso orario, e concludere con il gesto della V (simbolo di vittoria della luce sulle tenebre, Manuale B).",
+        "Al cumulo 'Controllo', eseguire solo le operazioni meccaniche di mescolamento senza rituale.",
+        "Dopo 30 giorni, prelevare campioni da entrambi i cumuli a 20 cm di profondità, misurando: pH (con sonda digitale), contenuto di materia organica (metodo Loss on Ignition), e attività microbica (test di respirazione del suolo con CO2 meter)."
+      ],
+      "materiali": [
+        "Due cumuli di compost (1m³ ciascuno)",
+        "Verghetta di legno (per rituale)",
+        "Infuso di camomilla (per consacrazione)",
+        "Sonda pH digitale",
+        "Test kit per materia organica",
+        "CO2 meter per attività microbica"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "pH: confrontare i valori tra i due cumuli (obiettivo: differenza ≥ 0.5 unità a favore del cumulo rituale).",
+        "Materia organica: differenza ≥ 5% in più nel cumulo rituale.",
+        "Attività microbica: differenza ≥ 20% in più nel cumulo rituale (misurata in ppm CO2/h)."
+      ],
+      "variabili_controllo": "Stesso materiale di partenza, stessa umidità, stessa esposizione solare, stessa temperatura ambientale, stesso metodo di mescolamento meccanico.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "5 Fattori Che Influenzano La Disponibilità Di Nutrienti Nell",
+      "fonte_b": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+      "originalita": "L'esperimento unisce per la prima volta il compostaggio (processo biochimico) con un rituale magico strutturato (Manuale B), applicando principi ermetici (come da 'Come in alto così in basso') a un processo agricolo. Nessuno dei due manuali suggerisce l'uso di rituali come variabile sperimentale nel compostaggio, né la misurazione oggettiva dei risultati energetici.",
+      "id": "esp_conn_2026-07-07_002",
+      "data_proposta": "2026-07-07",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-06",
-    "nuove_proposte": 0,
-    "pdf_analizzati": 88,
-    "connessioni_usate": 35
+    "data": "2026-07-07",
+    "nuove_proposte": 2,
+    "pdf_analizzati": 96,
+    "connessioni_usate": 29
   }
 }
