@@ -1,7 +1,7 @@
 {
-  "lastUpdate": "2026-07-06",
+  "lastUpdate": "2026-07-07",
   "total": 16,
-  "fonte": "290 PDF analizzati",
+  "fonte": "291 PDF analizzati",
   "concetti": [
     {
       "id": "spirale_rame",
@@ -9,9 +9,9 @@
       "categoria": "elettrocultura",
       "descrizione": "Utilizza spirali di rame per stimolare la crescita delle piante attraverso campi elettromagnetici naturali.",
       "istruzioni_pratiche": [
-        "Posiziona una spirale di rame (diametro 10-15 cm) a 20-30 cm sopra la chioma delle piante durante la fase di vegetazione.",
-        "Orientare la spirale verso nord per massimizzare l'effetto biofisico.",
-        "Rimuovere la spirale durante la fioritura per evitare interferenze con i processi riproduttivi."
+        "Posiziona una spirale di rame (diametro 10-15 cm) a 20-30 cm sopra la chioma delle piante durante la vegetazione.",
+        "Orientala verso nord per massimizzare l'effetto biofisico.",
+        "Sostituisci ogni 2-3 mesi per mantenere l'efficacia."
       ],
       "varianti": [
         "Spirale cosmica rame",
@@ -45,25 +45,24 @@
       "id": "acqua_magnetizzata",
       "label": "Acqua Magnetizzata",
       "categoria": "elettrocultura",
-      "descrizione": "Tratta l'acqua con campi magnetici per migliorare l'assorbimento dei nutrienti e la salute delle piante.",
+      "descrizione": "Irriga le piante con acqua sottoposta a campi magnetici per migliorare l'assorbimento dei nutrienti.",
       "istruzioni_pratiche": [
-        "Filtra l'acqua da irrigazione e passala attraverso un dispositivo magnetico (2-4 magneti al neodimio, 1000-3000 Gauss).",
-        "Irrigare le piante con acqua magnetizzata ogni 2-3 giorni durante le fasi di vegetazione e fioritura.",
-        "Monitorare il pH dell'acqua dopo la magnetizzazione per evitare squilibri (ideale pH 6.0-6.5)."
+        "Fai passare l'acqua attraverso un dispositivo magnetico (es. magneti al neodimio) prima dell'irrigazione.",
+        "Applica durante la fase di vegetazione per stimolare lo sviluppo radicale.",
+        "Evita l'uso in fase di fioritura per non alterare i processi naturali."
       ],
       "varianti": [
         "acqua magnetizzata"
       ],
       "fasi_guida": [
         "germinazione",
-        "vegetazione",
-        "fioritura"
+        "vegetazione"
       ],
       "rilevanza": 85,
       "tag_correlati": [
-        "nutrizione",
-        "idratazione",
-        "pH"
+        "irrigazione",
+        "nutrienti",
+        "campi magnetici"
       ],
       "pdf_ids": [
         "pdf_4",
@@ -77,11 +76,11 @@
       "id": "elettrocultura",
       "label": "Elettrocultura",
       "categoria": "elettrocultura",
-      "descrizione": "Applica correnti elettriche deboli per stimolare la fotosintesi e la resistenza delle piante.",
+      "descrizione": "Applica correnti elettriche deboli o campi elettromagnetici per stimolare la crescita e la resistenza delle piante.",
       "istruzioni_pratiche": [
-        "Collega elettrodi di rame o acciaio inox al terreno (profondità 10-15 cm) e applica una tensione di 1-5 V DC tramite pannello solare.",
-        "Effettuare trattamenti di 2-4 ore al giorno durante le ore diurne, evitando giorni di pioggia.",
-        "Regolare l'intensità della corrente in base alla specie vegetale (es. 1-2 V per ortaggi, 3-5 V per piante legnose)."
+        "Collega elettrodi al terreno e applica una tensione di 1-5 V durante la fase di vegetazione.",
+        "Usa un timer per erogare impulsi di 10-15 minuti ogni 2 ore.",
+        "Monitora la risposta delle piante e regola la tensione in base alla specie."
       ],
       "varianti": [
         "Elettrocultura"
@@ -93,8 +92,8 @@
       "rilevanza": 90,
       "tag_correlati": [
         "correnti elettriche",
-        "fotosintesi",
-        "resistenza"
+        "resistenza",
+        "crescita"
       ],
       "pdf_ids": [
         "pdf_13",
@@ -108,25 +107,24 @@
       "id": "antenna_terra",
       "label": "Antenna di Terra",
       "categoria": "elettrocultura",
-      "descrizione": "Utilizza strutture metalliche interrate per armonizzare i campi bioelettrici delle piante.",
+      "descrizione": "Installa un'antenna metallica nel terreno per armonizzare i campi biofisici delle piante.",
       "istruzioni_pratiche": [
-        "Inserire un'asta di rame o acciaio (lunghezza 50-100 cm) nel terreno vicino alle radici, collegandola a una spirale di rame in superficie.",
-        "Orientare l'antenna verso nord e assicurarsi che sia in contatto diretto con il suolo umido.",
-        "Lasciare in posizione per l'intero ciclo colturale, sostituendo solo in caso di corrosione."
+        "Inserisci un'asta di rame o acciaio (lunghezza 50-80 cm) nel terreno vicino alle radici.",
+        "Collega l'antenna a una spirale di rame posizionata sopra la chioma.",
+        "Mantieni l'antenna pulita e sostituiscila ogni 6 mesi."
       ],
       "varianti": [
         "antenna terra"
       ],
       "fasi_guida": [
-        "germinazione",
         "vegetazione",
         "fioritura"
       ],
       "rilevanza": 80,
       "tag_correlati": [
-        "campi bioelettrici",
-        "radici",
-        "armonizzazione"
+        "campi biofisici",
+        "armonizzazione",
+        "radici"
       ],
       "pdf_ids": [
         "pdf_4",
@@ -134,20 +132,19 @@
         "pdf_26",
         "pdf_308",
         "pdf_8",
-        "pdf_13",
-        "pdf_21"
+        "pdf_13"
       ],
-      "pdf_count": 7
+      "pdf_count": 6
     },
     {
       "id": "compostaggio",
       "label": "Compostaggio",
       "categoria": "suolo",
-      "descrizione": "Trasforma materiali organici in compost per migliorare la struttura del suolo e la disponibilità di nutrienti.",
+      "descrizione": "Trasforma materiali organici in compost per arricchire il suolo di nutrienti e microrganismi benefici.",
       "istruzioni_pratiche": [
-        "Mescolare scarti vegetali, letame e materiali carboniosi (es. paglia) in un cumulo aerato, mantenendo umidità al 50-60%.",
-        "Rimescolare il cumulo ogni 2 settimane per accelerare la decomposizione e evitare cattivi odori.",
-        "Utilizzare il compost maturo (dopo 3-6 mesi) come ammendante al trapianto o durante la concimazione di fondo."
+        "Mescola scarti vegetali, letame e materiali carboniosi (es. paglia) in un cumulo aerato.",
+        "Mantieni umidità al 50-60% e gira il cumulo ogni 2 settimane.",
+        "Usa il compost maturo (dopo 3-6 mesi) per migliorare la struttura del suolo."
       ],
       "varianti": [
         "Compostaggio"
@@ -159,8 +156,8 @@
       "rilevanza": 95,
       "tag_correlati": [
         "nutrienti",
-        "suolo",
-        "sostenibilità"
+        "microrganismi",
+        "suolo vivo"
       ],
       "pdf_ids": [
         "pdf_0",
@@ -173,11 +170,11 @@
       "id": "lega_ferro_rame",
       "label": "Lega Ferro-Rame (Fe-Cu)",
       "categoria": "elettrocultura",
-      "descrizione": "Utilizza una combinazione di ferro e rame per bilanciare i campi elettromagnetici nel suolo.",
+      "descrizione": "Utilizza una lega di ferro e rame per stimolare la risposta biofisica delle piante attraverso reazioni redox.",
       "istruzioni_pratiche": [
-        "Interrare limatura di ferro (10-20%) e rame (80-90%) in prossimità delle radici, a una profondità di 15-20 cm.",
-        "Dosare 50-100 g/m² di lega per applicazione, ripetendo ogni 2-3 mesi durante la vegetazione.",
-        "Monitorare il pH del suolo (ideale 6.2-6.8) per evitare tossicità da metalli pesanti."
+        "Inserisci barre o fili di Fe-Cu nel terreno vicino alle radici (distanza 10-15 cm).",
+        "Assicurati che la lega sia a contatto con il suolo umido per favorire la reazione.",
+        "Sostituisci ogni 4-6 mesi per mantenere l'efficacia."
       ],
       "varianti": [
         "Fe-Cu (ferro-rame)"
@@ -186,11 +183,11 @@
         "vegetazione",
         "fioritura"
       ],
-      "rilevanza": 75,
+      "rilevanza": 85,
       "tag_correlati": [
-        "metalli",
-        "equilibrio ionico",
-        "radici"
+        "reazioni redox",
+        "stimolazione radicale",
+        "metalli"
       ],
       "pdf_ids": [
         "pdf_3",
@@ -558,7 +555,7 @@
       {
         "source": "spirale_rame",
         "target": "elettrocultura",
-        "peso": 1
+        "peso": 3
       },
       {
         "source": "spirale_rame",
@@ -582,33 +579,13 @@
       },
       {
         "source": "acqua_magnetizzata",
+        "target": "compostaggio",
+        "peso": 2
+      },
+      {
+        "source": "acqua_magnetizzata",
         "target": "lega_ferro_rame",
         "peso": 1
-      },
-      {
-        "source": "acqua_magnetizzata",
-        "target": "compostaggio_organico",
-        "peso": 2
-      },
-      {
-        "source": "acqua_magnetizzata",
-        "target": "fertilizzazione_organica",
-        "peso": 2
-      },
-      {
-        "source": "acqua_magnetizzata",
-        "target": "te_di_compost",
-        "peso": 2
-      },
-      {
-        "source": "acqua_magnetizzata",
-        "target": "farine_di_rocce",
-        "peso": 2
-      },
-      {
-        "source": "acqua_magnetizzata",
-        "target": "gestione_ph_suolo",
-        "peso": 2
       },
       {
         "source": "elettrocultura",
@@ -623,22 +600,22 @@
       {
         "source": "antenna_terra",
         "target": "lega_ferro_rame",
-        "peso": 3
+        "peso": 1
       },
       {
         "source": "compostaggio",
         "target": "gestione_suolo_vivente",
-        "peso": 3
+        "peso": 1
       },
       {
         "source": "compostaggio",
         "target": "compostaggio_organico",
-        "peso": 3
+        "peso": 1
       },
       {
         "source": "compostaggio",
         "target": "inoculazione_micorrize",
-        "peso": 3
+        "peso": 1
       },
       {
         "source": "compostaggio",
@@ -648,7 +625,7 @@
       {
         "source": "compostaggio",
         "target": "gestione_ph_suolo",
-        "peso": 3
+        "peso": 1
       },
       {
         "source": "gestione_suolo_vivente",
