@@ -1,19 +1,19 @@
 # BioSerra Wiki — Indice
 
-> Aggiornato: 2026-07-06 | 16 concetti | Knowledge base Living Soil + Elettrocultura
+> Aggiornato: 2026-07-07 | 16 concetti | Knowledge base Living Soil + Elettrocultura
 
 ## Panoramica
 - [Overview generale](sintesi/overview.md)
 
 ## Elettrocultura
 - [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Utilizza spirali di rame per stimolare la crescita delle piante attraverso campi
-- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 4 PDF)* — Tratta l'acqua con campi magnetici per migliorare l'assorbimento dei nutrienti e
-- [Elettrocultura](concetti/elettrocultura.md) *(in 4 PDF)* — Applica correnti elettriche deboli per stimolare la fotosintesi e la resistenza 
-- [Antenna di Terra](concetti/antenna_terra.md) *(in 7 PDF)* — Utilizza strutture metalliche interrate per armonizzare i campi bioelettrici del
-- [Lega Ferro-Rame (Fe-Cu)](concetti/lega_ferro_rame.md) *(in 2 PDF)* — Utilizza una combinazione di ferro e rame per bilanciare i campi elettromagnetic
+- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 4 PDF)* — Irriga le piante con acqua sottoposta a campi magnetici per migliorare l'assorbi
+- [Elettrocultura](concetti/elettrocultura.md) *(in 4 PDF)* — Applica correnti elettriche deboli o campi elettromagnetici per stimolare la cre
+- [Antenna di Terra](concetti/antenna_terra.md) *(in 6 PDF)* — Installa un'antenna metallica nel terreno per armonizzare i campi biofisici dell
+- [Lega Ferro-Rame (Fe-Cu)](concetti/lega_ferro_rame.md) *(in 2 PDF)* — Utilizza una lega di ferro e rame per stimolare la risposta biofisica delle pian
 
 ## Suolo
-- [Compostaggio](concetti/compostaggio.md) *(in 3 PDF)* — Trasforma materiali organici in compost per migliorare la struttura del suolo e 
+- [Compostaggio](concetti/compostaggio.md) *(in 3 PDF)* — Trasforma materiali organici in compost per arricchire il suolo di nutrienti e m
 - [Suolo Vivente](concetti/gestione_suolo_vivente.md) — Mantenimento microbioma del suolo attivo.
 - [Compostaggio Organico](concetti/compostaggio_organico.md) *(in 3 PDF)* — Produzione compost di qualita per ammendare il substrato.
 - [Inoculazione Micorrize](concetti/inoculazione_micorrize.md) — Introduzione funghi micorrizici per simbiosi radicale.
