@@ -1,0 +1,15 @@
+{
+  "errori": [
+    {
+      "fn": "mistral_finestra",
+      "tipo": "JSONDecodeError",
+      "msg": "Expecting ',' delimiter: line 13 column 36 (char 552)"
+    },
+    {
+      "fn": "mistral_sintesi_finale",
+      "tipo": "no_json_in_response",
+      "raw": "```json\n{\n  \"sommario\": \"Il documento 'Il Cuore del Maestro' di Crowley esplora la ricerca interiore e l'equilibrio tra opposti (0=2) come chiave per l'illuminazione, integrando simbolismo cabalistico, chakra e principi alchemici. L'Eone di Thelema (1904-~4000) promuove Libertà, Volontà e Amore come pilastri di un nuovo ciclo evolutivo, con la ghiandola pineale (Terzo Occhio) come ponte tra micro e macrocosmo. Le tecniche di iniziazione (OTO/A.'.A.'.') e l'Ajna Chakra aperto permettono l'accesso"
+    }
+  ],
+  "timestamp": "2026-07-08"
+}
