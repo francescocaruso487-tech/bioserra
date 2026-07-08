@@ -180,7 +180,8 @@ def mistral_finestra(titolo, finestra, lingua_nota):
         '"tag":["1-3 tag brevi"]}'
     )
     body = json.dumps({
-        'model': 'mistral-small-latest', 'max_tokens': 600, 'temperature': 0.0,
+        'model': 'mistral-small-latest', 'max_tokens': 700, 'temperature': 0.0,
+        'response_format': {'type': 'json_object'},
         'messages': [{'role': 'user', 'content': prompt}]
     }).encode()
     try:
@@ -232,7 +233,8 @@ def mistral_sintesi_finale(titolo, punti_agg, tecniche_agg, tag_agg, lingua_det,
         '"applicabilita_serra":"alta/media/bassa - perche"}'
     )
     body = json.dumps({
-        'model': 'mistral-small-latest', 'max_tokens': 1000, 'temperature': 0.0,
+        'model': 'mistral-small-latest', 'max_tokens': 1400, 'temperature': 0.0,
+        'response_format': {'type': 'json_object'},
         'messages': [{'role': 'user', 'content': prompt}]
     }).encode()
     try:
@@ -429,8 +431,8 @@ def main():
 
     # Rev.25: batch alzato da 20 a 25/notte per completare la migrazione full-text prima possibile
     # (richiesto esplicitamente: "tutto insieme appena possibile, anche più notti")
-    da_rianalizzare.sort(key=lambda t: t[0].get('size', 0))  # TEMP diagnostico: piccoli prima
-    batch = da_rianalizzare[:3]  # TEMP diagnostico Rev.25e
+    da_rianalizzare.sort(key=lambda t: t[0].get('size', 0))  # Rev.25f: piccoli prima, più doc coperti per run
+    batch = da_rianalizzare[:10]  # Rev.25f: 10/notte
     nuove = []
     mistral_count = 0
 
@@ -506,14 +508,6 @@ def main():
 
     n_migrati = sum(1 for a in tutte if a.get('pipeline_ver') == 'v25_fulltext')
     print(f'\n=== +{len(nuove)} | tot:{len(tutte)}/89 | Mistral:{mistral_count} | migrati v25:{n_migrati}/{len(tutte)} ===')
-
-    # TEMP diagnostico Rev.25e: capiamo perché alcuni doc piccoli falliscono ancora
-    try:
-        debug_content = json.dumps({'errori': _DEBUG_ERRORS[:15], 'timestamp': oggi}, indent=2, ensure_ascii=False)
-        sha_dbg = gh_get_sha('data/_debug_mistral.json')
-        gh_put('data/_debug_mistral.json', debug_content, sha_dbg, f'debug temp {oggi}')
-    except Exception as ex:
-        print(f'  (debug file non scritto: {ex})')
 
     summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
     if summary_path:
