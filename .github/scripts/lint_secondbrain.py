@@ -112,6 +112,27 @@ def analizza_knowledge(analisi):
     for l in lingua_vals:
         lingua_breakdown[l] = lingua_breakdown.get(l, 0) + 1
 
+    # categoria_reale: popolato da classifica_testi.py, non presente su tutte le voci
+    categoria_breakdown = {}
+    senza_categoria = 0
+    for a in analisi:
+        cat = a.get('categoria_reale')
+        if cat:
+            categoria_breakdown[cat] = categoria_breakdown.get(cat, 0) + 1
+        else:
+            senza_categoria += 1
+
+    # copertura v25_fulltext e stub incrociati per categoria (dove una categoria è sistematicamente indietro)
+    per_categoria_stato = {}
+    for a in analisi:
+        cat = a.get('categoria_reale') or '(senza categoria)'
+        d = per_categoria_stato.setdefault(cat, {'totale': 0, 'v25_fulltext': 0, 'stub': 0})
+        d['totale'] += 1
+        if a.get('pipeline_ver') == 'v25_fulltext':
+            d['v25_fulltext'] += 1
+        if e_stub(a):
+            d['stub'] += 1
+
     chunk_prog = [a.get('chunk_progresso') for a in analisi if a.get('chunk_progresso')]
     chunk_anomali = []
     tot_tradotti = tot_chunk = 0
@@ -133,6 +154,9 @@ def analizza_knowledge(analisi):
         'stub_ids': [a.get('id') for a in stub][:30],
         'finestre_analizzate_stats': finestre_stats,
         'documenti_sottocoperti': sottocoperti[:20],
+        'categoria_breakdown': categoria_breakdown,
+        'categoria_senza_valore': senza_categoria,
+        'per_categoria_stato': per_categoria_stato,
         'lingua_popolata': len(lingua_vals),
         'lingua_breakdown': lingua_breakdown,
         'chunk_progresso_doc_con_dato': len(chunk_prog),
@@ -209,10 +233,6 @@ def analizza_grafo(grafo):
 
 def main():
     print('=== Lint Second Brain ===')
-    print('Nota: la ripartizione per categoria (elettrocultura/biodinamica/ecc.) NON è '
-          'disponibile: nessun campo "categoria" è presente in pdf_knowledge.json o '
-          'concetti_completi.json — è solo struttura di cartelle in MANUALI/, non ancora '
-          'tracciata per singola voce. Da valutare in futuro se serve davvero.')
 
     raw_knowledge, _ = gh_get('data/pdf_knowledge.json')
     knowledge = json.loads(raw_knowledge)
@@ -268,6 +288,13 @@ def main():
                 if report_analisi['documenti_sottocoperti']:
                     f.write(f"- Documenti sospetti sotto-coperti (>3x oltre le finestre): "
                             f"**{len(report_analisi['documenti_sottocoperti'])}**\n")
+                f.write('\n### Per categoria (categoria_reale)\n')
+                if report_analisi['categoria_senza_valore']:
+                    f.write(f"- Senza categoria assegnata: **{report_analisi['categoria_senza_valore']}**\n")
+                for cat, stato in sorted(report_analisi['per_categoria_stato'].items(),
+                                          key=lambda x: -x[1]['totale']):
+                    f.write(f"- `{cat}`: {stato['totale']} voci, "
+                            f"{stato['v25_fulltext']} v25_fulltext, {stato['stub']} stub\n")
                 f.write('\n### Traduzione\n')
                 f.write(f"- Lingua popolata: **{report_analisi['lingua_popolata']}/{report_analisi['totale_voci']}**\n")
                 if report_analisi['chunk_progresso_totale_chunk']:
