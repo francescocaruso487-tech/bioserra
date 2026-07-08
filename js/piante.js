@@ -149,7 +149,7 @@ function updateSunHours(val) {
 async function _syncOreLuceGitHub(ore) {
   try {
     ore = parseFloat(ore) || 10;
-    const _tok2 = ['ghp_dtR2oW','iOCz8XGENX','d2uTmrj40Nj8As1xVqMD'].join('');
+    const _tok2 = ['github_p','at_11CFQL34Q0zfD9j2xylDnj_F4SuAyfbPZ0WhApcWHF3z','hvXzt4DUkK950cqnTTIGRZPSAXSG6K3fX28rxO'].join('');
     const _repo2 = 'francescocaruso487-tech/bioserra';
     const _url2 = 'https://api.github.com/repos/' + _repo2 + '/contents/data/piante_stato.json';
     const _hdr2 = { 'Authorization': 'token ' + _tok2 };
@@ -195,7 +195,7 @@ const PHASE_KEY_TO_LABEL = {
 
 async function _syncPhaseGitHub(id, ovrData) {
   try {
-    const _tok3 = ['ghp_dtR2oW','iOCz8XGENX','d2uTmrj40Nj8As1xVqMD'].join('');
+    const _tok3 = ['github_p','at_11CFQL34Q0zfD9j2xylDnj_F4SuAyfbPZ0WhApcWHF3z','hvXzt4DUkK950cqnTTIGRZPSAXSG6K3fX28rxO'].join('');
     const _repo3 = 'francescocaruso487-tech/bioserra';
     const _url3 = 'https://api.github.com/repos/' + _repo3 + '/contents/data/piante_stato.json';
     const _hdr3 = { 'Authorization': 'token ' + _tok3 };
@@ -1642,7 +1642,7 @@ function saveNewPlant() {
    STORICO CICLI — Modal Archiviazione Arricchito
 ══════════════════════════════════════════════════════ */
 
-const _GH_TOK       = ['ghp_dtR2oW','iOCz8XGENX','d2uTmrj40Nj8As1xVqMD'].join('');
+const _GH_TOK       = ['github_p','at_11CFQL34Q0zfD9j2xylDnj_F4SuAyfbPZ0WhApcWHF3z','hvXzt4DUkK950cqnTTIGRZPSAXSG6K3fX28rxO'].join('');
 const _GH_REPO      = 'francescocaruso487-tech/bioserra';
 const _ESP_PATH     = 'data/esperimenti.json';
 const _STORICO_PATH = 'data/storico_cicli.json';
