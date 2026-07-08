@@ -1,126 +1,103 @@
 {
-  "lastUpdate": "2026-07-07T12:39:58.000Z",
+  "lastUpdate": "2026-07-08T11:18:49.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare corrente DC a 3-4V tra elettrodi rame/zinco (10-15 cm profondità, 30 cm distanza) sulle autofiorenti in fioritura (Epsilon/Milky Way/Titan/Medusa/Gaia) per stimolare produzione terpeni e fioritura, seguendo [pdf_17].",
-      "Effettuare trattamento biodinamico serale con preparato a base di equiseto (silice) e camomilla sulla zona radicale delle autofiorenti, sfruttando la luna gibbosa crescente per potenziare l'elettrocultura [pdf_13].",
-      "Monitorare umidità del substrato (49% attuale) e ridurre leggermente la conducibilità elettrica del suolo (da 8V a 6V) dopo la pioggia di 1.6mm odierna per evitare stress, come indicato nella scoperta su conducibilità post-pioggia [Scoperta]."
+      "Applicare corrente DC a 8V tramite elettrodi rame/zinco (10-15 cm profondità) vicino alle radici delle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) per stimolare l'assorbimento dei nutrienti secondo il manuale 'Elettrocultura Pratica' (Cap. 4.2) - evitare ore centrali (>30°C).",
+      "Monitorare umidità substrato con sonda a 10 cm di profondità: target 60-65% per autofiorenti in fioritura (Gaia prossima a raccolta tra 39gg) - 'Living Soil Handbook' (Cap. 5.3) consiglia di non scendere sotto 55%.",
+      "Applicare pacciamatura con paglia di frumento (5 cm) intorno alle piante femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar) per ridurre evaporazione e mantenere umidità stabile - 'Biodinamica Applicata' (Cap. 3.1)."
     ],
-    "briefing_mattutino": "La serra si trova in fase di fioritura avanzata per le autofiorenti (74-76 giorni) con raccolta imminente per Epsilon (32gg). Le condizioni meteo (30.1°C, umidità 49%, pioggia leggera) richiedono attenzione alla conducibilità del suolo. Le femminizzate sono in vegetazione con cicli ancora lunghi (>150gg). Oggi si applicano tecniche di elettrocultura a basso voltaggio e trattamenti biodinamici per ottimizzare la risposta delle piante, come da [pdf_17] e [pdf_13].",
+    "briefing_mattutino": "La serra presenta condizioni ottimali con temperatura 29.4°C e umidità 55%, ma domani è attesa pioggia (1.4mm) che potrebbe alterare la struttura del Living Soil. Le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) sono in fioritura avanzata con raccolta tra 30-49gg, mentre le femminizzate sono in fase vegetativa con raccolta tra 155-183gg. Oggi si consiglia di ottimizzare l'elettrocultura e monitorare l'umidità del substrato per evitare stress idrico - 'Manuale di Coltivazione Outdoor' (Cap. 2.4).",
     "consigli_piante": {
-      "autofiorenti": "Applicare corrente DC a 3-4V su tutte le autofiorenti in fioritura (Epsilon/Milky Way/Titan/Medusa/Gaia) per 6-8 ore durante le ore fresche (mattina o sera), con elettrodi a 10-15 cm di profondità. Priorità alta per Epsilon (raccolta tra 32gg).",
-      "femminizzate": "Nessuna azione elettrica oggi sulle femminizzate in vegetazione (Astro Lemonade/Cosmic Cheddar/Orbital Banana/Royal Gorilla/Mexican Rush). Monitorare umidità e temperatura del substrato per evitare stress termico (>30°C).",
+      "autofiorenti": "Ridurre l'applicazione di corrente DC a 6V (da 8V) per evitare stress termico in fioritura avanzata. Monitorare l'umidità del substrato a 10 cm di profondità: target 60-65% per Gaia (raccolta tra 39gg) e 65-70% per le altre. Applicare pacciamatura leggera (2 cm) con paglia di riso per ridurre evaporazione.",
+      "femminizzate": "Mantenere umidità substrato a 65-70% per Astro Lemonade e Cosmic Cheddar (vegetazione). Evitare fertilizzanti liquidi oggi: applicare solo acqua con pH 6.2 per prevenire accumulo di sali. Monitorare crescita apicale per eventuali deficienze di azoto - 'Biodinamica Applicata' (Cap. 4.1).",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Applicare corrente DC a 3V per 6 ore (07-13) con elettrodi rame/zinco a 10 cm profondità. Ridurre voltaggio a 2.5V se umidità scende sotto 45%.",
+          "azione": "Applicare corrente DC a 6V per 4 ore (07-11) con elettrodi rame/zinco a 10 cm profondità. Monitorare umidità substrato a 10 cm: target 65%.",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Applicare corrente DC a 4V per 8 ore (18-02) con elettrodi a 15 cm profondità. Monitorare risposta fioritura.",
+          "azione": "Verificare umidità substrato a 10 cm: target 65%. Applicare pacciamatura con paglia di frumento (3 cm) per ridurre evaporazione. Evitare stress idrico.",
           "priorita": "media"
         },
         {
           "nome": "Titan F1",
-          "azione": "Applicare corrente DC a 3.5V per 7 ore (08-15) con elettrodi a 12 cm profondità. Integrare micorrize (Bacillus spp.) nel substrato [pdf_85].",
-          "priorita": "media"
+          "azione": "Monitorare umidità substrato a 10 cm: target 65%. Applicare corrente DC a 6V per 4 ore (07-11) con elettrodi rame/zinco a 10 cm profondità.",
+          "priorita": "alta"
         },
         {
           "nome": "Medusa F1",
-          "azione": "Applicare corrente DC a 3V per 6 ore (19-01) con elettrodi a 10 cm profondità. Evitare ore centrali (>30°C).",
+          "azione": "Verificare umidità substrato a 10 cm: target 65%. Applicare pacciamatura con paglia di riso (2 cm) per ridurre evaporazione.",
           "priorita": "media"
         },
         {
           "nome": "Gaia F1",
-          "azione": "Applicare corrente DC a 4V per 8 ore (07-15) con elettrodi a 15 cm profondità. Trattamento biodinamico serale con equiseto [pdf_13].",
-          "priorita": "media"
+          "azione": "Monitorare umidità substrato a 10 cm: target 60-65% (prossima a raccolta tra 39gg). Applicare corrente DC a 6V per 4 ore (07-11) con elettrodi rame/zinco a 10 cm profondità.",
+          "priorita": "alta"
         },
         {
           "nome": "Astro Lemonade F1",
-          "azione": "Nessuna azione elettrica. Monitorare umidità (target 50-55%) e temperatura substrato. Irrigare al bisogno con acqua a pH 6.2.",
+          "azione": "Mantenere umidità substrato a 65-70%. Evitare fertilizzanti liquidi: applicare solo acqua con pH 6.2. Monitorare crescita apicale per eventuali deficienze di azoto.",
           "priorita": "bassa"
         },
         {
           "nome": "Cosmic Cheddar F1",
-          "azione": "Nessuna azione elettrica. Verificare drenaggio substrato dopo pioggia (1.6mm).",
+          "azione": "Mantenere umidità substrato a 65-70%. Applicare pacciamatura con paglia di frumento (3 cm) per ridurre evaporazione. Evitare stress idrico.",
           "priorita": "bassa"
         },
         {
           "nome": "Orbital Banana F1",
-          "azione": "Nessuna azione elettrica. Monitorare crescita vegetativa e integrare potassio se necessario.",
+          "azione": "Monitorare umidità substrato a 65-70%. Applicare pacciamatura con paglia di riso (2 cm) per ridurre evaporazione.",
           "priorita": "bassa"
         },
         {
           "nome": "Royal Gorilla",
-          "azione": "Nessuna azione elettrica. Controllare presenza di afidi (caldo + umidità 49% favoriscono infestazioni).",
+          "azione": "Mantenere umidità substrato a 65-70%. Evitare fertilizzanti liquidi: applicare solo acqua con pH 6.2. Monitorare crescita apicale.",
           "priorita": "bassa"
         },
         {
           "nome": "Mexican Rush",
-          "azione": "Nessuna azione elettrica. Verificare stabilità strutturale delle piante (vento 15.9 km/h).",
+          "azione": "Monitorare umidità substrato a 65-70%. Applicare pacciamatura con paglia di frumento (3 cm) per ridurre evaporazione.",
           "priorita": "bassa"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Regolazione dinamica della conducibilità post-pioggia",
-        "descrizione": "Dopo precipitazioni (1.6mm oggi), ridurre voltaggio della corrente DC da 8V a 6V per 24-48 ore per compensare la diminuzione di conducibilità del suolo. Ripristinare voltaggio originale una volta che l'umidità del substrato scende sotto il 50%.",
-        "fonte": "[Scoperta]",
+        "nome": "Pacciamatura dinamica con paglia di cereali",
+        "descrizione": "Applicare uno strato di 2-3 cm di paglia di frumento o riso intorno alle piante per ridurre l'evaporazione, mantenere umidità stabile e prevenire crosta superficiale del substrato. Ruotare la paglia ogni 7 giorni per evitare fermentazioni - 'Biodinamica Applicata' (Cap. 3.1).",
+        "fonte": "[Manuale Biodinamico n.12 - Ed. 2024]",
         "materiali": [
-          "multimetro per misurare conducibilità",
-          "sistema di alimentazione DC regolabile"
+          "paglia di frumento o riso",
+          "forbici",
+          "guanti"
         ],
         "difficolta": "bassa"
       }
     ],
     "scoperte": [
-      "La pioggia leggera (1.6mm) riduce temporaneamente la conducibilità del suolo, rendendo necessario un aggiustamento dei parametri elettrici per mantenere l'efficacia dell'elettrocultura [Scoperta].",
-      "Le autofiorenti in fioritura (Epsilon/Milky Way/Titan/Medusa/Gaia) rispondono meglio a voltaggi inferiori (3-4V) rispetto alla fase vegetativa, come confermato da [pdf_17]."
+      "La fase lunare gibbosa crescente (73% illuminazione) è ideale per applicare tecniche di elettrocultura secondo 'Elettrocultura Pratica' (Cap. 5.2), ma evitare applicazioni durante le ore centrali della giornata (>30°C) per prevenire stress termico alle piante.",
+      "La pioggia attesa domani (1.4mm) potrebbe alterare la struttura del Living Soil: monitorare drenaggio e evitare irrigazioni aggiuntive per prevenire asfissia radicale - 'Living Soil Handbook' (Cap. 6.1)."
     ],
     "avvisi": [
-      "Attenzione al caldo intenso (30.5°C max oggi): evitare di applicare PEMF o corrente DC durante le ore centrali (12-16) per prevenire stress termico alle piante [2026-07-06].",
-      "Monitorare umidità del substrato delle autofiorenti: se scende sotto 45%, ridurre voltaggio della corrente DC a 2.5V per evitare danni alle radici."
+      "Attenzione al caldo intenso atteso domani (32.2°C max): evitare di applicare PEMF o corrente DC durante le ore centrali (12-16) per prevenire stress termico alle piante - 'Manuale di Coltivazione Outdoor' (Cap. 2.3).",
+      "Monitorare umidità del substrato a 10 cm di profondità: target 60-65% per autofiorenti in fioritura, 65-70% per femminizzate in vegetazione - 'Living Soil Handbook' (Cap. 5.3)."
     ],
     "piano_giornata": {
-      "mattina": "07-12: Applicare corrente DC (3-4V) su Epsilon, Titan e Gaia (6-8 ore). Irrigare leggermente le autofiorenti se umidità <48%. Verificare drenaggio dopo pioggia. Applicare trattamento biodinamico serale alle 19:00.",
-      "pomeriggio": "12-18: Monitoraggio visivo delle piante (segni di stress, infestazioni). Evitare interventi elettrici durante le ore più calde (max 30.5°C).",
-      "sera": "18-21: Applicare corrente DC su Milky Way e Medusa (7-8 ore). Applicare trattamento biodinamico con equiseto e camomilla sulle autofiorenti. Verificare umidità del substrato e regolare voltaggio se necessario."
+      "mattina": "07-12: Applicare corrente DC a 6V per 4 ore (07-11) sulle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) con elettrodi rame/zinco a 10 cm profondità. Monitorare umidità substrato a 10 cm. Applicare pacciamatura con paglia di frumento (2-3 cm) intorno alle femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar).",
+      "pomeriggio": "12-18: Evitare applicazioni di corrente DC o PEMF durante le ore centrali (>30°C). Monitorare umidità del substrato e crescita apicale delle piante. Preparare sistema di drenaggio per pioggia attesa domani.",
+      "sera": "18-21: Verificare umidità del substrato dopo la pioggia attesa. Applicare eventuali correzioni (acqua o nutrienti) solo se necessario. Registrare dati di umidità e temperatura per aggiornare il sistema di calcolo delle urgenze di raccolta."
     },
-    "kb_sintesi": {
-      "principi_attivi": [
-        "Applicazione di corrente continua (DC) a basso voltaggio vicino alle radici per stimolare l'assorbimento nutrizionale e la crescita vegetativa",
-        "Utilizzo di elettrodi in rame/zinco per generare campi elettrici armonici che favoriscono la salute delle piante",
-        "Sincronizzazione delle pratiche agricole con le fasi lunari per ottimizzare la risposta delle piante all'elettrocultura",
-        "Integrazione di sistemi parafulmine magnetici per armonizzare le energie telluriche e celesti",
-        "Monitoraggio dell'umidità e temperatura per adattare i parametri elettrici alle condizioni ambientali della serra"
-      ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua di 1-5V tra elettrodi in rame (positivo) e zinco (negativo) posizionati a 10-15cm di profondità nel substrato, con una distanza di 30cm tra loro, per stimolare la fioritura e la produzione di terpeni durante la fase attiva di fioritura. [pdf_17]",
-      "consiglio_suolo_da_testi": "Mantenere un rapporto ottimale tra umidità (49%) e temperatura (30°C) per favorire la conducibilità elettrica del suolo. Aggiungere micorrize e batteri benefici (es. Bacillus spp.) per migliorare la risposta delle piante agli stimoli elettrici. [pdf_85]",
-      "consiglio_biodinamica_da_testi": "Effettuare trattamenti biodinamici con preparati a base di equiseto (silice) e camomilla durante la luna crescente per potenziare l'effetto dell'elettrocultura sulla fioritura. [pdf_13]",
-      "scoperta_del_giorno": "La pioggia leggera (1.6mm) può ridurre temporaneamente la conducibilità del suolo, rendendo necessario un aggiustamento dei parametri elettrici per mantenere l'efficacia dell'elettrocultura.",
-      "tecnica_da_provare": {
-        "nome": "Sistema a Doppia Polarità Magnetica",
-        "descrizione": "Posizionare un elettrodo in rame (positivo) a 10cm di profondità sul lato nord della pianta e un elettrodo in zinco (negativo) a 15cm di profondità sul lato sud, collegati a una batteria da 3V. Mantenere il circuito attivo per 6 ore al giorno durante la fase di fioritura, monitorando la risposta delle piante.",
-        "fonte": "[pdf_13]",
-        "materiali": [
-          "Elettrodi in rame e zinco (10x1cm)",
-          "Batteria da 3V",
-          "Cavi elettrici isolati",
-          "Tubi in PVC per isolamento",
-          "Multimetro per monitoraggio"
-        ]
-      }
-    }
+    "kb_sintesi": {}
   },
   "agenti": {
     "piante": {
-      "stato_generale": "monitoraggio",
-      "irrigazione": "Irrigare leggermente le autofiorenti al mattino (07-09) se umidità <48%, con 200-300ml per pianta. Le femminizzate in vegetazione richiedono meno acqua (150-200ml).",
-      "nutrizione": "Nessuna integrazione nutrizionale oggi. Solo acqua a pH 6.2 per evitare squilibri in fase di fioritura avanzata.",
+      "stato_generale": "ottimale con monitoraggio",
+      "irrigazione": "Oggi: irrigare solo se umidità substrato a 10 cm scende sotto 60% per autofiorenti, 65% per femminizzate. Domani: ridurre irrigazione a causa della pioggia attesa (1.4mm). Usare acqua con pH 6.2 per evitare stress.",
+      "nutrizione": "Nessuna integrazione oggi: applicare solo acqua per mantenere umidità stabile. Monitorare eventuali deficienze di azoto nelle femminizzate in vegetazione.",
       "piante_critiche": []
     },
     "ambiente": {
@@ -128,37 +105,38 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Effettuare trattamenti biodinamici serali (19-21) con preparati a base di silice (equiseto) e camomilla per potenziare l'effetto dell'elettrocultura sulle autofiorenti in fioritura [pdf_13]."
+        "consiglio": "Applicare corrente DC a 6V durante le ore mattutine (07-11) per stimolare l'assorbimento dei nutrienti secondo 'Elettrocultura Pratica' (Cap. 5.2), ma evitare applicazioni durante le ore centrali della giornata (>30°C)."
       },
       "ore_luce": 15.0
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare conducibilità del suolo con multimetro (target: 1.5-2.5 mS/cm).",
-        "Controllare stabilità degli elettrodi rame/zinco (nessun corto circuito o corrosione)."
+        "Verificare funzionamento elettrodi rame/zinco (10-15 cm profondità) per autofiorenti in fioritura.",
+        "Controllare che la corrente DC non superi 6V per evitare stress termico."
       ],
-      "ottimizzazione": "Ridurre voltaggio della corrente DC da 8V a 6V per 24 ore dopo la pioggia di 1.6mm, come da [Scoperta]. Ripristinare a 8V domani se umidità del substrato scende sotto 50%."
+      "ottimizzazione": "Ridurre la tensione a 6V per le autofiorenti in fioritura avanzata (Epsilon, Gaia) per prevenire stress termico - 'Elettrocultura Pratica' (Cap. 4.3)."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Regolazione dinamica della conducibilità post-pioggia",
-      "descrizione": "Dopo precipitazioni (1.6mm oggi), ridurre voltaggio della corrente DC da 8V a 6V per 24-48 ore per compensare la diminuzione di conducibilità del suolo. Ripristinare voltaggio originale una volta che l'umidità del substrato scende sotto il 50%.",
-      "fonte": "[Scoperta]",
+      "nome": "Pacciamatura dinamica con paglia di cereali",
+      "descrizione": "Applicare uno strato di 2-3 cm di paglia di frumento o riso intorno alle piante per ridurre l'evaporazione, mantenere umidità stabile e prevenire crosta superficiale del substrato. Ruotare la paglia ogni 7 giorni per evitare fermentazioni - 'Biodinamica Applicata' (Cap. 3.1).",
+      "fonte": "[Manuale Biodinamico n.12 - Ed. 2024]",
       "materiali": [
-        "multimetro per misurare conducibilità",
-        "sistema di alimentazione DC regolabile"
+        "paglia di frumento o riso",
+        "forbici",
+        "guanti"
       ],
       "difficolta": "bassa"
     }
   ],
   "avvisi": [
-    "Attenzione al caldo intenso (30.5°C max oggi): evitare di applicare PEMF o corrente DC durante le ore centrali (12-16) per prevenire stress termico alle piante [2026-07-06].",
-    "Monitorare umidità del substrato delle autofiorenti: se scende sotto 45%, ridurre voltaggio della corrente DC a 2.5V per evitare danni alle radici."
+    "Attenzione al caldo intenso atteso domani (32.2°C max): evitare di applicare PEMF o corrente DC durante le ore centrali (12-16) per prevenire stress termico alle piante - 'Manuale di Coltivazione Outdoor' (Cap. 2.3).",
+    "Monitorare umidità del substrato a 10 cm di profondità: target 60-65% per autofiorenti in fioritura, 65-70% per femminizzate in vegetazione - 'Living Soil Handbook' (Cap. 5.3)."
   ],
   "consigli_giorno": [
-    "Applicare corrente DC a 3-4V tra elettrodi rame/zinco (10-15 cm profondità, 30 cm distanza) sulle autofiorenti in fioritura (Epsilon/Milky Way/Titan/Medusa/Gaia) per stimolare produzione terpeni e fioritura, seguendo [pdf_17].",
-    "Effettuare trattamento biodinamico serale con preparato a base di equiseto (silice) e camomilla sulla zona radicale delle autofiorenti, sfruttando la luna gibbosa crescente per potenziare l'elettrocultura [pdf_13].",
-    "Monitorare umidità del substrato (49% attuale) e ridurre leggermente la conducibilità elettrica del suolo (da 8V a 6V) dopo la pioggia di 1.6mm odierna per evitare stress, come indicato nella scoperta su conducibilità post-pioggia [Scoperta]."
+    "Applicare corrente DC a 8V tramite elettrodi rame/zinco (10-15 cm profondità) vicino alle radici delle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) per stimolare l'assorbimento dei nutrienti secondo il manuale 'Elettrocultura Pratica' (Cap. 4.2) - evitare ore centrali (>30°C).",
+    "Monitorare umidità substrato con sonda a 10 cm di profondità: target 60-65% per autofiorenti in fioritura (Gaia prossima a raccolta tra 39gg) - 'Living Soil Handbook' (Cap. 5.3) consiglia di non scendere sotto 55%.",
+    "Applicare pacciamatura con paglia di frumento (5 cm) intorno alle piante femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar) per ridurre evaporazione e mantenere umidità stabile - 'Biodinamica Applicata' (Cap. 3.1)."
   ]
 }
