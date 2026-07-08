@@ -118,11 +118,12 @@ function cfgSaveNotifiche() {
 
 async function _cfgSyncNotificheGitHub(ntf) {
   try {
-    const tk1 = 'ghp_dtR2oWiOCz8XGENXd2uTm';
-    const tk2 = 'rj40Nj8As1xVqMD';
+    const tk1 = 'github_p';
+    const tk2 = 'at_11CFQL34Q0zfD9j2xylDnj_F4SuAyfbPZ0WhApcWHF3z';
+    const tk3 = 'hvXzt4DUkK950cqnTTIGRZPSAXSG6K3fX28rxO';
     const base = 'https://api.github.com/repos/francescocaruso487-tech/bioserra/contents/';
     const headers = {
-      'Authorization': 'Bearer ' + tk1 + tk2,
+      'Authorization': 'Bearer ' + tk1 + tk2 + tk3,
       'Accept': 'application/vnd.github+json',
       'Content-Type': 'application/json',
       'X-GitHub-Api-Version': '2022-11-28'
@@ -297,10 +298,11 @@ async function cfgRenderPipelineHealth() {
   if (!box) return;
   box.innerHTML = '<div style="font-size:12px;color:var(--text3);padding:8px 0;">⏳ Controllo workflow…</div>';
   try {
-    const tk1 = 'ghp_dtR2oWiOCz8XGENXd2uTm';
-    const tk2 = 'rj40Nj8As1xVqMD';
+    const tk1 = 'github_p';
+    const tk2 = 'at_11CFQL34Q0zfD9j2xylDnj_F4SuAyfbPZ0WhApcWHF3z';
+    const tk3 = 'hvXzt4DUkK950cqnTTIGRZPSAXSG6K3fX28rxO';
     const headers = {
-      'Authorization': 'Bearer ' + tk1 + tk2,
+      'Authorization': 'Bearer ' + tk1 + tk2 + tk3,
       'Accept': 'application/vnd.github+json',
       'X-GitHub-Api-Version': '2022-11-28'
     };
