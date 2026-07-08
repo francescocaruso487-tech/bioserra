@@ -226,6 +226,24 @@ Max 15 concetti per sezione. Solo JSON, nessun testo fuori."""
 
     return tutti_concetti
 
+def normalizza_tipo_conn(tipo_raw):
+    """Rev.26: Mistral a volte restituisce varianti libere (es. 'contraddizione interessante',
+    'contraddizione interessanti da investigare') invece del valore canonico richiesto nel
+    prompt. Normalizza tutte le varianti su 'contraddizione' per poterle contare/filtrare
+    in modo affidabile lato app, senza perdere il segnale in mezzo al testo libero."""
+    t = (tipo_raw or '').strip().lower()
+    if 'contraddiz' in t:
+        return 'contraddizione'
+    if t in ('sinergia', 'principio_condiviso', 'potenziamento'):
+        return t
+    if 'sinergia' in t:
+        return 'sinergia'
+    if 'potenzia' in t:
+        return 'potenziamento'
+    if 'principio' in t:
+        return 'principio_condiviso'
+    return tipo_raw or 'sinergia'
+
 def trova_connessioni_trasversali(pdf_a, concetti_a, pdf_b, concetti_b):
     """
     Mistral confronta i concetti di due PDF e trova connessioni non ovvie.
@@ -317,6 +335,7 @@ def main():
     }
     # Rete di sicurezza: sanitizza le entry gia' esistenti (pulizia dati storici)
     _sanit_edges = 0
+    _norm_tipo = 0
     for _e in edges_esistenti.values():
         for _campo in ('concetto_a', 'concetto_b', 'descrizione'):
             _prima = _e.get(_campo, '')
@@ -324,8 +343,16 @@ def main():
             if _dopo != _prima:
                 _e[_campo] = _dopo
                 _sanit_edges += 1
+        # Rev.26: normalizza tipo_conn storici (es. 'contraddizione interessante' -> 'contraddizione')
+        _tipo_prima = _e.get('tipo_conn', '')
+        _tipo_dopo = normalizza_tipo_conn(_tipo_prima)
+        if _tipo_dopo != _tipo_prima:
+            _e['tipo_conn'] = _tipo_dopo
+            _norm_tipo += 1
     if _sanit_edges:
         print(f'  Sanitizzati {_sanit_edges} campi in edges esistenti (cannabis->pianta)')
+    if _norm_tipo:
+        print(f'  Normalizzati {_norm_tipo} tipo_conn storici (varianti contraddizione/sinergia/ecc.)')
     print(f'Edges esistenti: {len(edges_esistenti)}')
 
     # Carica concetti già estratti
@@ -552,7 +579,7 @@ def main():
             peso = float(conn.get('peso', 0.5))
             if peso <= 0: continue  # accetta anche pesi bassi, esclude solo 0
             chiave = f'{id_a}|{id_b}'
-            tipo_conn = conn.get('tipo_conn', conn.get('tipo', 'sinergia'))
+            tipo_conn = normalizza_tipo_conn(conn.get('tipo_conn', conn.get('tipo', 'sinergia')))
             edges_esistenti[chiave] = {
                 'source': id_a,
                 'target': id_b,
