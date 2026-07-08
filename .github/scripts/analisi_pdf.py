@@ -413,9 +413,17 @@ def main():
                           analisi_curr.get('pipeline_ver') != PIPELINE_VER or
                           (analisi_curr.get('pipeline_ver') == PIPELINE_VER and not analisi_curr.get('finestre_analizzate')))
         if ha_testo and analisi_scarsa:
-            da_rianalizzare.append((pdf_file, safe_id, titolo))
+            # Rev.26: priorità "chi è più indietro" — non solo dimensione. Un documento MAI
+            # analizzato con Mistral (stub puro) è più indietro di uno che ha già un'analisi
+            # reale ma solo da migrare al full-text. A parità, priorità al meno recentemente
+            # toccato (data_analisi più vecchia/assente).
+            mai_processato = (not analisi_curr) or (not analisi_curr.get('mistral_analizzato'))
+            data_ultima = (analisi_curr.get('data_analisi') if analisi_curr else None) or '0000-00-00'
+            da_rianalizzare.append((pdf_file, safe_id, titolo, mai_processato, data_ultima))
 
     print(f'PDF con testo + analisi da rifare (incl. migrazione v25 full-text): {len(da_rianalizzare)}')
+    print(f'  di cui mai analizzati con Mistral (priorità massima): '
+          f'{sum(1 for t in da_rianalizzare if t[3])}/{len(da_rianalizzare)}')
 
     if not da_rianalizzare:
         print('Tutto aggiornato — ricalcolo connessioni')
@@ -431,8 +439,12 @@ def main():
 
     # Rev.25: batch alzato da 20 a 25/notte per completare la migrazione full-text prima possibile
     # (richiesto esplicitamente: "tutto insieme appena possibile, anche più notti")
-    da_rianalizzare.sort(key=lambda t: t[0].get('size', 0))  # Rev.25f: piccoli prima, più doc coperti per run
+    # Rev.26: priorità multi-livello — 1) mai processato prima di chi ha solo bisogno di
+    # migrazione, 2) tra pari, il meno recentemente toccato, 3) a parità, il più piccolo
+    # (Rev.25f: piccoli prima, più doc coperti per run, evita che un doc enorme monopolizzi il timeout)
+    da_rianalizzare.sort(key=lambda t: (0 if t[3] else 1, t[4], t[0].get('size', 0)))
     batch = da_rianalizzare[:10]  # Rev.25f: 10/notte
+    print(f'  Batch di oggi: {len(batch)} PDF, di cui {sum(1 for t in batch if t[3])} mai analizzati prima')
     nuove = []
     mistral_count = 0
 
@@ -449,7 +461,7 @@ def main():
     ]
     prossimo_id_num = (max(numeri_pdf_esistenti) + 1) if numeri_pdf_esistenti else 0
 
-    for i, (pdf_file, safe_id, titolo) in enumerate(batch):
+    for i, (pdf_file, safe_id, titolo, _mai_proc, _data_ultima) in enumerate(batch):
         print(f'\n[{i+1}/{len(batch)}] {titolo[:65]}')
 
         # Leggi testo pre-estratto
