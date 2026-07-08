@@ -343,12 +343,16 @@ def main():
             if _dopo != _prima:
                 _e[_campo] = _dopo
                 _sanit_edges += 1
-        # Rev.26: normalizza tipo_conn storici (es. 'contraddizione interessante' -> 'contraddizione')
-        _tipo_prima = _e.get('tipo_conn', '')
-        _tipo_dopo = normalizza_tipo_conn(_tipo_prima)
-        if _tipo_dopo != _tipo_prima:
-            _e['tipo_conn'] = _tipo_dopo
-            _norm_tipo += 1
+        # Rev.26: normalizza tipo_conn storici (es. 'contraddizione interessante' -> 'contraddizione').
+        # ATTENZIONE: solo se il campo esiste già — gli edge tipo='embedding' (cosine puro,
+        # ~28k) non hanno mai avuto tipo_conn ed è corretto così: non va aggiunto un valore
+        # finto solo perché assente (bug reale trovato e corretto qui prima del push).
+        _tipo_prima = _e.get('tipo_conn')
+        if _tipo_prima:
+            _tipo_dopo = normalizza_tipo_conn(_tipo_prima)
+            if _tipo_dopo != _tipo_prima:
+                _e['tipo_conn'] = _tipo_dopo
+                _norm_tipo += 1
     if _sanit_edges:
         print(f'  Sanitizzati {_sanit_edges} campi in edges esistenti (cannabis->pianta)')
     if _norm_tipo:
