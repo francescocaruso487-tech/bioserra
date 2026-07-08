@@ -1,6 +1,6 @@
 """
-analisi_pdf.py v13 — Legge testi da data/testi/ (pre-estratti con OCR)
-Passa testo completo a Mistral in chunk, produce analisi ricca
+analisi_pdf.py v25 — FULL-TEXT: legge indice+chunk, analizza a finestre scorrevoli su TUTTO il documento
+(fix Rev.25: prima leggeva solo l'anteprima per i documenti chunked, analisi limitata a poche migliaia di char)
 """
 import os, json, base64, urllib.request, urllib.error, time, datetime, io, re, sys
 
@@ -86,7 +86,12 @@ def gh_get_sha(path):
     except: return None
 
 def leggi_testo_estratto(safe_id):
-    """Legge file testo pre-estratto da data/testi/."""
+    """
+    Rev.25 FIX: legge il testo COMPLETO di un PDF, indice + TUTTI i chunk in data/testi/chunks/.
+    Prima leggeva solo il file indice (anteprima) per i documenti grandi — bug che limitava
+    l'analisi a poche migliaia di caratteri su documenti da centinaia di migliaia.
+    """
+    parti = []
     url = RAW_BASE + f'data/testi/{safe_id}.txt'
     try:
         req = urllib.request.Request(url, headers={
@@ -95,14 +100,50 @@ def leggi_testo_estratto(safe_id):
         })
         with urllib.request.urlopen(req, timeout=30) as r:
             content = r.read().decode('utf-8', errors='replace')
-        # Rimuovi header
-        if content.startswith('==='):
-            idx = content.find('\n\n')
-            if idx > 0:
-                content = content[idx+2:]
-        return content.strip()
     except:
         return ''
+
+    if '[VUOTO]' in content[:60]:
+        return ''
+
+    if content.startswith('==='):
+        idx = content.find('\n\n')
+        if idx > 0:
+            content = content[idx+2:]
+
+    # Se è un file indice (documento chunked), scarta le anteprime e tieni solo
+    # il pezzo di testo reale del chunk 1 incluso in fondo all'indice.
+    if 'INDICE CHUNKS:' in content:
+        marker = 'TESTO COMPLETO CHUNK 1'
+        idx_fine = content.find(marker)
+        if idx_fine > 0:
+            content = content[content.find('\n', idx_fine)+1:]
+        else:
+            content = ''
+
+    parti.append(content.strip())
+
+    # Carica eventuali chunk aggiuntivi (chunk 1 già incluso via file indice sopra,
+    # qui recuperiamo dal chunk 2 in poi se esistono)
+    chunk_idx = 2
+    while chunk_idx <= 60:  # cap 60 chunk (~2.6M chars) per sicurezza
+        path_chunk = f'data/testi/chunks/{safe_id}_chunk_{chunk_idx:03d}.txt'
+        url_chunk = RAW_BASE + path_chunk
+        try:
+            req2 = urllib.request.Request(url_chunk, headers={
+                'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
+            with urllib.request.urlopen(req2, timeout=30) as r2:
+                chunk_raw = r2.read().decode('utf-8', errors='replace')
+            if chunk_raw.startswith('==='):
+                idx = chunk_raw.find('\n\n')
+                if idx > 0:
+                    chunk_raw = chunk_raw[idx+2:]
+            parti.append(chunk_raw.strip())
+            chunk_idx += 1
+        except:
+            break  # nessun altro chunk
+
+    return '\n\n'.join(p for p in parti if p).strip()
 
 def titolo_safe(nome_file):
     base = nome_file.replace('.pdf', '').strip()
@@ -124,43 +165,91 @@ def rileva_lingua(testo):
     best = max(scores, key=lambda k: scores[k])
     return best if scores[best] > 2 else 'altro'
 
+def mistral_finestra(titolo, finestra, lingua_nota):
+    """Estrazione compatta di una finestra di testo (Rev.25): punti chiave, tecniche, tag."""
+    prompt = (
+        'Sei un agronomo esperto di Living Soil, biodinamica ed elettrocultura per serra outdoor italiana.\n'
+        f'Leggi questa sezione del documento "{titolo}" e rispondi SEMPRE in italiano.\n'
+        + lingua_nota +
+        f'Sezione:\n{finestra}\n\n'
+        'Rispondi SOLO con JSON valido:\n'
+        '{"punti":["1-3 informazioni concrete e specifiche di questa sezione"],'
+        '"tecniche":["tecniche/metodi specifici citati qui, max 4"],'
+        '"tag":["1-3 tag tematici"]}'
+    )
+    body = json.dumps({
+        'model': 'mistral-small-latest', 'max_tokens': 350, 'temperature': 0.0,
+        'messages': [{'role': 'user', 'content': prompt}]
+    }).encode()
+    try:
+        req = urllib.request.Request(
+            'https://api.mistral.ai/v1/chat/completions', data=body,
+            headers={'Authorization': f'Bearer {MISTRAL_KEY}', 'Content-Type': 'application/json'},
+            method='POST')
+        with urllib.request.urlopen(req, timeout=30) as r:
+            resp = json.loads(r.read())
+        raw = resp['choices'][0]['message']['content'].strip()
+        s, e = raw.find('{'), raw.rfind('}')
+        if s >= 0 and e > s:
+            return json.loads(raw[s:e+1])
+    except Exception as ex:
+        print(f'    mistral_finestra ERR: {ex}')
+    return None
+
+def mistral_sintesi_finale(titolo, punti_agg, tecniche_agg, tag_agg, lingua_det, n_finestre):
+    """Sintetizza i risultati di tutte le finestre nell'analisi finale strutturata (Rev.25)."""
+    prompt = (
+        'Sei un agronomo esperto di Living Soil, biodinamica ed elettrocultura per serra outdoor italiana.\n'
+        f'Hai letto integralmente il documento "{titolo}" ({n_finestre} sezioni). '
+        'Ecco i punti raccolti sezione per sezione:\n'
+        f'Punti: {"; ".join(punti_agg[:60])}\n'
+        f'Tecniche citate: {", ".join(sorted(set(tecniche_agg))[:20])}\n'
+        f'Tag emersi: {", ".join(sorted(set(tag_agg))[:15])}\n\n'
+        'Sintetizza in un\'analisi finale UNICA e coerente per la serra BioSerra Caserta (41N). '
+        'Tecniche attive in serra: Lakhovsky, Fe-Cu, acqua magnetizzata, spirale rame, antenna terra, biodinamica.\n'
+        'Rispondi SOLO con JSON valido (tutti i campi in italiano):\n'
+        '{"sommario":"4-6 frasi dettagliate sul contenuto reale, coprendo il documento intero",'
+        '"tecniche_chiave":["max 6 tecniche specifiche, le piu rilevanti"],'
+        '"concetti_principali":["concetti teorici chiave, max 8"],'
+        '"consiglio_coltivazione":"azione pratica concreta e specifica",'
+        '"consiglio_elettrocultura":"applicazione specifica delle tecniche elettrocultura",'
+        '"tag":["4-6 tag specifici"],'
+        '"estratto_chiave":"frase o passaggio piu significativo, max 200 char",'
+        f'"lingua":"{lingua_det}",'
+        '"applicabilita_serra":"alta/media/bassa - perche"}'
+    )
+    body = json.dumps({
+        'model': 'mistral-small-latest', 'max_tokens': 700, 'temperature': 0.0,
+        'messages': [{'role': 'user', 'content': prompt}]
+    }).encode()
+    try:
+        req = urllib.request.Request(
+            'https://api.mistral.ai/v1/chat/completions', data=body,
+            headers={'Authorization': f'Bearer {MISTRAL_KEY}', 'Content-Type': 'application/json'},
+            method='POST')
+        with urllib.request.urlopen(req, timeout=30) as r:
+            resp = json.loads(r.read())
+        raw = resp['choices'][0]['message']['content'].strip()
+        s, e = raw.find('{'), raw.rfind('}')
+        if s >= 0 and e > s:
+            return json.loads(raw[s:e+1])
+    except Exception as ex:
+        print(f'    mistral_sintesi_finale ERR: {ex}')
+    return None
+
 def mistral_analizza_completo(titolo, testo_completo):
-    """Analisi Mistral con testo completo suddiviso in chunk."""
+    """
+    Rev.25 FIX: analizza l'INTERO documento a finestre scorrevoli (non piu solo inizio+fine),
+    poi sintetizza tutte le finestre in un'unica analisi finale coerente.
+    """
     if not MISTRAL_KEY:
         return None
 
     titolo_safe_str = titolo.replace('"', "'")[:80]
 
-    # Se testo corto, una sola chiamata
-    if len(testo_completo) <= 4000:
-        return mistral_singola(titolo_safe_str, testo_completo, testo_completo)
-
-    # Testo lungo: prima chunk (inizio) + ultima chunk (fine) + sommario intermedio
-    inizio = testo_completo[:3000]
-    fine   = testo_completo[-2000:] if len(testo_completo) > 5000 else ''
-    medio  = testo_completo[3000:6000] if len(testo_completo) > 3000 else ''
-
-    # Chiamata 1: analisi inizio documento
-    risultato = mistral_singola(titolo_safe_str, inizio, testo_completo[:500])
-    if not risultato:
-        return None
-
-    # Chiamata 2: integra con fine documento (se significativa)
-    if fine and len(fine) > 200:
-        integrazione = mistral_integra(titolo_safe_str, risultato, medio + '\n...\n' + fine)
-        if integrazione:
-            risultato = integrazione
-
-    return risultato
-
-def mistral_singola(titolo, testo, estratto_raw):
-    """Singola chiamata Mistral per analisi documento."""
-    ha_testo = len(testo) > 100
-    contenuto = testo[:4000] if ha_testo else '(testo non disponibile, analizza dal titolo)'
-
-    # Rileva lingua del testo
+    # Rileva lingua dalle prime righe (una volta sola)
     def _score(t, words): return sum(t.count(w) for w in words)
-    t1k = contenuto[:1000].lower()
+    t1k = testo_completo[:1500].lower()
     lingua_scores = {
         'it': _score(t1k,[' il ',' lo ',' la ',' gli ',' della ',' del ',' per ',' con ',' che ',' sono ']),
         'en': _score(t1k,[' the ',' of ',' and ',' for ',' with ',' this ',' are ',' is ',' in ',' to ']),
@@ -169,95 +258,30 @@ def mistral_singola(titolo, testo, estratto_raw):
         'de': _score(t1k,[' der ',' die ',' das ',' und ',' fur ',' mit ',' ein ',' ist ']),
     }
     lingua_det = max(lingua_scores, key=lambda k: lingua_scores[k]) if max(lingua_scores.values())>2 else 'altro'
-    lingua_nota = '' if lingua_det=='it' else f'NOTA: Il testo e in {lingua_det.upper()}. Rispondi comunque in italiano.\n'
+    lingua_nota = '' if lingua_det=='it' else f'NOTA: la sezione e in {lingua_det.upper()}, rispondi comunque in italiano.\n'
 
-    prompt = (
-        'Sei un agronomo esperto di Living Soil, biodinamica ed elettrocultura per serra outdoor italiana.\n'
-        'Analizza questo documento per la serra BioSerra Caserta (41N).\n'
-        'Tecniche attive: Lakhovsky, Fe-Cu, acqua magnetizzata, spirale rame, antenna terra, biodinamica.\n'
-        + lingua_nota +
-        f'Titolo: {titolo}\n'
-        f'Testo estratto:\n{contenuto}\n\n'
-        'Rispondi SOLO con JSON valido (tutti i campi in italiano):\n'
-        '{"sommario":"3-4 frasi dettagliate sul contenuto reale",'
-        '"tecniche_chiave":["max 5 tecniche specifiche menzionate"],'
-        '"concetti_principali":["concetti teorici chiave del documento"],'
-        '"consiglio_coltivazione":"azione pratica concreta e specifica",'
-        '"consiglio_elettrocultura":"applicazione specifica delle tecniche elettrocultura",'
-        '"tag":["4-6 tag specifici"],'
-        '"estratto_chiave":"frase o passaggio significativo max 200 char",'
-        '"lingua":"codice lingua originale: it/en/fr/es/de/pt/altro",'
-        '"applicabilita_serra":"alta/media/bassa - perche"}'
-    )
+    # Finestre scorrevoli su TUTTO il testo (non solo inizio/fine)
+    FINESTRA, OVERLAP, MAX_FINESTRE = 4500, 300, 20  # cap 20 finestre ~ 84.000 char coperti
+    punti_agg, tecniche_agg, tag_agg = [], [], []
+    pos, n_finestre = 0, 0
+    while pos < len(testo_completo) and n_finestre < MAX_FINESTRE:
+        finestra = testo_completo[pos:pos+FINESTRA]
+        n_finestre += 1
+        r = mistral_finestra(titolo_safe_str, finestra, lingua_nota)
+        if r:
+            punti_agg.extend(r.get('punti', []))
+            tecniche_agg.extend(r.get('tecniche', []))
+            tag_agg.extend(r.get('tag', []))
+        pos += FINESTRA - OVERLAP
+        time.sleep(0.6)
 
-    body = json.dumps({
-        'model': 'mistral-small-latest',
-        'max_tokens': 600,
-        'temperature': 0.0,
-        'messages': [{'role': 'user', 'content': prompt}]
-    }).encode()
+    if not punti_agg and not tecniche_agg:
+        return None
 
-    try:
-        req = urllib.request.Request(
-            'https://api.mistral.ai/v1/chat/completions',
-            data=body,
-            headers={'Authorization': f'Bearer {MISTRAL_KEY}', 'Content-Type': 'application/json'},
-            method='POST')
-        with urllib.request.urlopen(req, timeout=30) as r:
-            resp = json.loads(r.read())
-        raw = resp['choices'][0]['message']['content'].strip()
-        s, e = raw.find('{'), raw.rfind('}')
-        if s >= 0 and e > s:
-            return json.loads(raw[s:e+1])
-    except Exception as ex:
-        print(f'  mistral_singola ERR: {ex}')
-    return None
-
-def mistral_integra(titolo, risultato_base, testo_aggiuntivo):
-    """Seconda chiamata: integra analisi con resto del documento."""
-    sommario_base = risultato_base.get('sommario', '')
-    tecniche_base = risultato_base.get('tecniche_chiave', [])
-
-    prompt = (
-        f'Documento: {titolo}\n'
-        f'Analisi parziale già fatta:\n'
-        f'Sommario: {sommario_base}\n'
-        f'Tecniche: {", ".join(tecniche_base)}\n\n'
-        f'Testo aggiuntivo del documento:\n{testo_aggiuntivo[:3000]}\n\n'
-        'Aggiorna e arricchisci l\'analisi integrando le nuove informazioni.\n'
-        'Rispondi SOLO con JSON:\n'
-        '{"sommario":"versione aggiornata e completa",'
-        '"tecniche_chiave":["lista aggiornata"],'
-        '"concetti_principali":["lista aggiornata"],'
-        '"consiglio_coltivazione":"consiglio aggiornato",'
-        '"consiglio_elettrocultura":"applicazione aggiornata",'
-        '"tag":["tag aggiornati"],'
-        '"estratto_chiave":"estratto piu significativo",'
-        '"applicabilita_serra":"alta/media/bassa - perche"}'
-    )
-
-    body = json.dumps({
-        'model': 'mistral-small-latest',
-        'max_tokens': 600,
-        'temperature': 0.0,
-        'messages': [{'role': 'user', 'content': prompt}]
-    }).encode()
-
-    try:
-        req = urllib.request.Request(
-            'https://api.mistral.ai/v1/chat/completions',
-            data=body,
-            headers={'Authorization': f'Bearer {MISTRAL_KEY}', 'Content-Type': 'application/json'},
-            method='POST')
-        with urllib.request.urlopen(req, timeout=30) as r:
-            resp = json.loads(r.read())
-        raw = resp['choices'][0]['message']['content'].strip()
-        s, e = raw.find('{'), raw.rfind('}')
-        if s >= 0 and e > s:
-            return json.loads(raw[s:e+1])
-    except Exception as ex:
-        print(f'  mistral_integra ERR: {ex}')
-    return None
+    risultato = mistral_sintesi_finale(titolo_safe_str, punti_agg, tecniche_agg, tag_agg, lingua_det, n_finestre)
+    if risultato:
+        risultato['finestre_analizzate'] = n_finestre
+    return risultato
 
 def analizza_locale(titolo, testo):
     KW = {
@@ -311,7 +335,7 @@ def ricalcola_connessioni(analisi):
 
 def main():
     oggi = datetime.date.today().isoformat()
-    print(f'=== BioSerra Analisi PDF v13 (da testi pre-estratti) — {oggi} ===')
+    print(f'=== BioSerra Analisi PDF v25 full-text — {oggi} ===')
     print(f'MISTRAL_KEY: {"OK " + MISTRAL_KEY[:8] + "..." if MISTRAL_KEY else "ASSENTE"}')
 
     # Carica pdf_knowledge esistente
@@ -345,8 +369,11 @@ def main():
     for a in analisi_esistenti:
         by_titolo[a.get('titolo','').strip().lower()] = a
 
-    # Identifica PDF con testo disponibile MA analisi scarsa (da rianalizzare)
-    # Criteri: ha testo estratto E (non mistral_analizzato O sommario <150c O no concetti_principali)
+    # Identifica PDF con testo disponibile MA analisi scarsa O da versione pipeline vecchia (da rianalizzare)
+    # Rev.25: aggiunto criterio pipeline_ver — forza un giro completo di re-analisi full-text
+    # su TUTTI i documenti già presenti, anche quelli che sembravano "ok" con il vecchio metodo
+    # inizio/fine (bug Rev.<25: leggeva solo l'anteprima per i documenti chunked).
+    PIPELINE_VER = 'v25_fulltext'
     da_rianalizzare = []
     for pdf_file in pdf_files:
         titolo = pdf_file['name'].replace('.pdf','').strip()
@@ -356,11 +383,12 @@ def main():
         analisi_scarsa = (not analisi_curr or
                           not analisi_curr.get('mistral_analizzato') or
                           len(analisi_curr.get('sommario','')) < 150 or
-                          not analisi_curr.get('concetti_principali'))
+                          not analisi_curr.get('concetti_principali') or
+                          analisi_curr.get('pipeline_ver') != PIPELINE_VER)
         if ha_testo and analisi_scarsa:
             da_rianalizzare.append((pdf_file, safe_id, titolo))
 
-    print(f'PDF con testo + analisi scarsa: {len(da_rianalizzare)}')
+    print(f'PDF con testo + analisi da rifare (incl. migrazione v25 full-text): {len(da_rianalizzare)}')
 
     if not da_rianalizzare:
         print('Tutto aggiornato — ricalcolo connessioni')
@@ -369,13 +397,14 @@ def main():
         knowledge['lastUpdate'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
         content_json = json.dumps(knowledge, indent=2, ensure_ascii=False)
         sha = gh_get_sha('data/pdf_knowledge.json')
-        res = gh_put('data/pdf_knowledge.json', content_json, sha, f'PDF v13 {oggi} connessioni')
+        res = gh_put('data/pdf_knowledge.json', content_json, sha, f'PDF v25 {oggi} connessioni')
         if res is None:
             print('  ERRORE CRITICO: salvataggio pdf_knowledge.json fallito dopo 3 tentativi')
         return
 
-    # Batch: 10 per notte (veloce perché il testo è già estratto)
-    batch = da_rianalizzare[:20]  # 20 per notte (testo gia estratto, veloce)
+    # Rev.25: batch alzato da 20 a 25/notte per completare la migrazione full-text prima possibile
+    # (richiesto esplicitamente: "tutto insieme appena possibile, anche più notti")
+    batch = da_rianalizzare[:25]
     nuove = []
     mistral_count = 0
 
@@ -418,6 +447,7 @@ def main():
         result['mistral_analizzato'] = mistral_ok
         result['testo_chars'] = len(testo)
         result['testo_id'] = safe_id
+        result['pipeline_ver'] = 'v25_fulltext'
         sanitizza_entry(result)
         nuove.append(result)
 
@@ -444,11 +474,27 @@ def main():
     content_json = json.dumps(knowledge_new, indent=2, ensure_ascii=False)
     sha_fresco = gh_get_sha('data/pdf_knowledge.json')
     res = gh_put('data/pdf_knowledge.json', content_json, sha_fresco,
-           f'PDF v13 {oggi} (+{len(nuove)} mistral:{mistral_count} tot:{len(tutte)}/89)')
+           f'PDF v25 fulltext {oggi} (+{len(nuove)} mistral:{mistral_count} tot:{len(tutte)}/89)')
     if res is None:
         print('  ERRORE CRITICO: salvataggio pdf_knowledge.json fallito dopo 3 tentativi')
 
-    print(f'\n=== +{len(nuove)} | tot:{len(tutte)}/89 | Mistral:{mistral_count} ===')
+    n_migrati = sum(1 for a in tutte if a.get('pipeline_ver') == 'v25_fulltext')
+    print(f'\n=== +{len(nuove)} | tot:{len(tutte)}/89 | Mistral:{mistral_count} | migrati v25:{n_migrati}/{len(tutte)} ===')
+
+    summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
+    if summary_path:
+        try:
+            with open(summary_path, 'a', encoding='utf-8') as f:
+                f.write(f'## Analisi PDF v25 (full-text) — {oggi}\n\n')
+                f.write(f'- Riprocessati questa notte: **{len(nuove)}** (di cui via Mistral: {mistral_count})\n')
+                f.write(f'- Migrati alla pipeline full-text finora: **{n_migrati}/{len(tutte)}**\n')
+                f.write(f'- Ancora da migrare: **{len(tutte)-n_migrati}**\n\n')
+                if nuove:
+                    f.write('| PDF | Chars letti | Finestre | Mistral |\n|---|---|---|---|\n')
+                    for a in nuove[:25]:
+                        f.write(f'| {a.get("titolo","")[:50]} | {a.get("testo_chars",0):,} | {a.get("finestre_analizzate","-")} | {"si" if a.get("mistral_analizzato") else "no"} |\n')
+        except Exception as ex:
+            print(f'  (step summary non scritto: {ex})')
 
 if __name__ == '__main__':
     main()
