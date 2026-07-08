@@ -335,6 +335,18 @@ def main():
     print(f'OK: temi_ricorrenti aggiornato, {len(combinati)} appunti permanenti totali '
           f'({len(nuovi_puliti)} nuovi in questa run).')
 
+    # Step Summary (Rev.23): riepilogo leggibile nella pagina del run.
+    summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
+    if summary_path:
+        try:
+            with open(summary_path, 'a', encoding='utf-8') as f:
+                f.write(f'## 📝 Memoria Lungo Termine - {oggi}\n\n')
+                f.write(f'**Temi permanenti totali:** {len(combinati)} ({len(nuovi_puliti)} nuovi oggi)\n\n')
+                for t in combinati:
+                    f.write(f"- {t.get('testo','')}\n")
+        except Exception as ex:
+            print(f'  (step summary non scritto: {ex})')
+
 
 if __name__ == '__main__':
     try:
