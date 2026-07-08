@@ -709,12 +709,8 @@
     <div id="lab-load-status" style="font-size:10px;color:rgba(0,180,255,0.5);text-align:center;padding:4px 0;min-height:14px;letter-spacing:0.5px"></div>
   </div>
 
-  <!-- GRID ICONE 2×3 -->
+  <!-- GRID ICONE -->
   <div class="lab-icon-grid">
-    <div class="lab-icon-btn blue" onclick="labPopupAllDigest()">
-      <span class="lab-icon-emoji">🌟</span>
-      <span class="lab-icon-label">Digest</span>
-    </div>
     <div class="lab-icon-btn cyan" onclick="labPopupAllPratiche()">
       <span class="lab-icon-emoji">⚡</span>
       <span class="lab-icon-label">Pratiche</span>
@@ -736,25 +732,14 @@
     </div>
   </div>
 
-  <!-- ══ MACRO-AREA: CAMPO ══ -->
-  <div class="lab-macro-label">🔬 campo</div>
-
-  <!-- Digest compatto -->
-  <div class="lab-tech-card">
-    <div class="lab-tc-header">
-      <div class="lab-tc-title">🌟 Consiglio del Giorno</div>
-      <button class="lab-tc-reload" id="lab-tc-speak-btn" onclick="labSpeakBriefing()" title="Leggi ad alta voce">🔊</button>
-      <button class="lab-tc-reload" onclick="labLoadAll()">⟳ Aggiorna</button>
-    </div>
-    <div id="lab-digest-content">
-      <div style="color:rgba(0,180,255,0.4);font-size:12px;padding:4px">Sincronizzazione…</div>
-    </div>
-  </div>
+  <!-- ══ MACRO-AREA: PRATICHE ══ -->
+  <div class="lab-macro-label">⚡ pratiche</div>
 
   <!-- Tecniche Elettrocultura (mini lista, max 4) -->
   <div class="lab-tech-card">
     <div class="lab-tc-header">
       <div class="lab-tc-title">⚡ Pratiche</div>
+      <button class="lab-tc-reload" onclick="labLoadAll()" title="Aggiorna dati">⟳</button>
       <button class="lab-tc-reload" onclick="labPopupAllPratiche()">Vedi tutte ›</button>
     </div>
     <div id="lab-tec-lista">
