@@ -741,6 +741,26 @@ def main():
     else:
         print(f'  Salvato. Testi letti: {len(testi)}, Consigli: {len(brain_out["consigli_giorno"])}')
 
+    # Step Summary (Rev.23): riepilogo leggibile nella pagina del run - utile
+    # per un controllo veloce da telefono se il briefing generato ha senso.
+    summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
+    if summary_path:
+        try:
+            with open(summary_path, 'a', encoding='utf-8') as f:
+                f.write(f'## 🧠 Brain Update - {oggi_data}\n\n')
+                briefing = brain_out['cervello'].get('briefing_mattutino', '')
+                f.write(f'**Briefing:** {briefing[:300]}\n\n')
+                f.write(f'**Consigli del giorno:** {len(brain_out["consigli_giorno"])}\n\n')
+                avvisi = brain_out['cervello'].get('avvisi', [])
+                if avvisi:
+                    f.write(f'**Avvisi ({len(avvisi)}):**\n')
+                    for a in avvisi:
+                        f.write(f'- {a}\n')
+                else:
+                    f.write('Nessun avviso.\n')
+        except Exception as ex:
+            print(f'  (step summary non scritto: {ex})')
+
     # Aggiorna e salva memoria
     memoria = aggiorna_memoria_giornaliera(memoria, cervello_data, oggi_data)
     sha_mem = gh_get_sha('data/memoria_chat.json')
