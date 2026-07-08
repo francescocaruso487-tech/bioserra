@@ -1838,24 +1838,17 @@ function labPopupSecondBrain() {
   var edges = (labGrafoData && labGrafoData.edges) ? labGrafoData.edges : [];
   var nPdf  = (labPdfData   && labPdfData.analisi) ? labPdfData.analisi.length : 0;
   var nVec  = (labVettoriData && labVettoriData.vettori) ? labVettoriData.vettori.length : 0;
-
   var nConcetti = (labConcettiData && labConcettiData.concetti) ? labConcettiData.concetti.length : 0;
 
   var html =
     '<div style="font-size:10px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;margin-bottom:2px">SECOND BRAIN</div>'
   + '<div style="font-size:15px;font-weight:700;color:#00b4ff;letter-spacing:1px;margin-bottom:4px">\uD83E\uDDE0 KNOWLEDGE BASE</div>'
-  + '<div style="font-size:11px;color:var(--text3);margin-bottom:10px">'
-  +   nVec + ' vettori \u00B7 ' + nPdf + ' PDF \u00B7 ' + edges.length + ' link \u00B7 ' + nConcetti + ' wiki'
+  + '<div style="font-size:11px;color:var(--text3);margin-bottom:12px">'
+  +   nVec + ' vettori \u00B7 ' + nPdf + ' PDF \u00B7 ' + edges.length + ' link \u00B7 ' + nConcetti + ' concetti'
   + '</div>'
-  + (nConcetti ? '<div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px">'
-      + (labConcettiData.concetti||[]).map(function(c){
-          return '<span onclick="labSbConcettoClick(\'' + labEsc(c.id) + '\',\'' + labEsc(c.label) + '\')" '
-            + 'style="background:rgba(76,175,118,0.08);border:1px solid rgba(76,175,118,0.2);border-radius:20px;'
-            + 'padding:3px 9px;font-size:10px;color:rgba(76,175,118,0.8);cursor:pointer">' + labEsc(c.label) + '</span>';
-        }).join('') + '</div>' : '')
 
-  // Box ricerca — centrale e prominente
-  + '<div style="margin-bottom:16px">'
+  // Box ricerca — condiviso tra tutte le viste
+  + '<div style="margin-bottom:14px">'
   + '<div style="font-size:10px;color:#00b4ff;font-weight:700;margin-bottom:8px;letter-spacing:0.5px">\uD83D\uDD0D CHIEDI AL KNOWLEDGE BASE</div>'
   + '<div style="display:flex;gap:8px">'
   + '<input id="sb-search-input" type="text" placeholder="Es: come usare il rame? quando annaffiare?" '
@@ -1866,7 +1859,6 @@ function labPopupSecondBrain() {
   + 'style="background:rgba(0,180,255,0.2);border:1px solid rgba(0,180,255,0.4);border-radius:10px;'
   + 'padding:10px 16px;color:#00b4ff;font-size:16px;cursor:pointer;flex-shrink:0">\u25B6</button>'
   + '</div>'
-  // (3) Filtro ricerca per fase coltura (valori reali presenti in concetti_index.json: fasi_guida[])
   + '<div style="display:flex;gap:8px;margin-top:8px">'
   + '<select id="sb-filter-fase" style="flex:1;background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.2);'
   + 'border-radius:8px;padding:6px 8px;color:#b8e0ff;font-size:11px">'
@@ -1880,20 +1872,36 @@ function labPopupSecondBrain() {
   + '<div style="font-size:10px;color:var(--text3);margin-top:6px">Usa linguaggio naturale — la risposta sintetizza i PDF e usa l\u2019AI</div>'
   + '</div>'
 
-  // Area risultati
   + '<div id="sb-search-results" style="margin-bottom:14px"></div>'
 
-  // [quick topics rimossi]
-
-  // Grafo
-  + '<div style="font-size:10px;color:rgba(0,180,255,0.4);letter-spacing:0.5px;margin-bottom:8px">'
-  + 'GRAFO CONNESSIONI PDF \u2014 ' + nodi.length + ' nodi'
+  // Rev.25: segmented control — Grafo / Per categoria / Connessioni
+  + '<div style="display:flex;background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.15);border-radius:12px;padding:3px;margin-bottom:14px">'
+  + '<div id="sb-seg-grafo" onclick="labSbSwitchView(\'grafo\')" style="flex:1;text-align:center;padding:8px 0;font-size:12.5px;font-weight:700;border-radius:9px;cursor:pointer;background:rgba(0,180,255,0.22);color:#00b4ff">Grafo</div>'
+  + '<div id="sb-seg-categoria" onclick="labSbSwitchView(\'categoria\')" style="flex:1;text-align:center;padding:8px 0;font-size:12.5px;font-weight:700;border-radius:9px;cursor:pointer;color:rgba(0,180,255,0.5)">Per categoria</div>'
+  + '<div id="sb-seg-connessioni" onclick="labSbSwitchView(\'connessioni\')" style="flex:1;text-align:center;padding:8px 0;font-size:12.5px;font-weight:700;border-radius:9px;cursor:pointer;color:rgba(0,180,255,0.5)">Connessioni</div>'
   + '</div>'
-  + '<div id="sb-graph-container" style="width:100%;height:320px;background:rgba(0,0,0,0.3);'
+
+  // VISTA GRAFO
+  + '<div id="sb-view-grafo">'
+  + '<div id="sb-graph-legend" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px"></div>'
+  + '<div id="sb-graph-container" style="width:100%;height:340px;background:rgba(0,0,0,0.3);'
   + 'border-radius:12px;position:relative;overflow:hidden;touch-action:none">'
   + '<div id="sb-graph-loading" style="position:absolute;inset:0;display:flex;align-items:center;'
   + 'justify-content:center;color:rgba(0,180,255,0.4);font-size:12px">\u23F3 Caricamento grafo\u2026</div>'
-  + '</div>';
+  + '<div style="position:absolute;right:8px;bottom:8px;display:flex;flex-direction:column;gap:6px;z-index:5">'
+  + '<button onclick="labSbGraphZoom(1.3)" style="width:30px;height:30px;border-radius:8px;background:rgba(0,0,0,0.6);border:1px solid rgba(0,180,255,0.3);color:#00b4ff;font-size:15px;font-weight:700;cursor:pointer">+</button>'
+  + '<button onclick="labSbGraphZoom(0.75)" style="width:30px;height:30px;border-radius:8px;background:rgba(0,0,0,0.6);border:1px solid rgba(0,180,255,0.3);color:#00b4ff;font-size:15px;font-weight:700;cursor:pointer">\u2212</button>'
+  + '<button onclick="labSbGraphReset()" style="width:30px;height:30px;border-radius:8px;background:rgba(0,0,0,0.6);border:1px solid rgba(0,180,255,0.3);color:#00b4ff;font-size:12px;cursor:pointer">\u27F2</button>'
+  + '</div>'
+  + '</div>'
+  + '<div style="font-size:9px;color:rgba(0,180,255,0.35);margin-top:6px;text-align:center">trascina per spostarti \u00B7 tocca un nodo per i dettagli \u00B7 tocca la legenda per filtrare</div>'
+  + '</div>'
+
+  // VISTA PER CATEGORIA
+  + '<div id="sb-view-categoria" style="display:none">' + labSbBuildCategorieHTML() + '</div>'
+
+  // VISTA CONNESSIONI
+  + '<div id="sb-view-connessioni" style="display:none">' + labSbBuildConnessioniHTML() + '</div>';
 
   labPopupOpen(html);
 
@@ -1908,9 +1916,153 @@ function labPopupSecondBrain() {
   }
 }
 
+/* Rev.25: switch tra le 3 viste del Second Brain (Grafo/Categoria/Connessioni) */
+function labSbSwitchView(view) {
+  ['grafo','categoria','connessioni'].forEach(function(v) {
+    var el = document.getElementById('sb-view-' + v);
+    if (el) el.style.display = (v === view) ? '' : 'none';
+    var btn = document.getElementById('sb-seg-' + v);
+    if (btn) {
+      btn.style.background = (v === view) ? 'rgba(0,180,255,0.22)' : 'transparent';
+      btn.style.color = (v === view) ? '#00b4ff' : 'rgba(0,180,255,0.5)';
+    }
+  });
+}
+
+/* Rev.25: vista "Per categoria" — accordion sfogliabile senza dover cercare */
+function labSbBuildCategorieHTML() {
+  if (!labConcettiData || !Array.isArray(labConcettiData.concetti) || !labConcettiData.concetti.length) {
+    return '<div style="color:rgba(0,180,255,0.35);font-size:12px;padding:10px 4px">Nessun concetto indicizzato ancora \u2014 arrivano con la pipeline notturna.</div>';
+  }
+  var gruppi = {};
+  labConcettiData.concetti.forEach(function(c) {
+    var cat = c.categoria || 'altro';
+    if (!gruppi[cat]) gruppi[cat] = [];
+    gruppi[cat].push(c);
+  });
+  var cats = Object.keys(gruppi).sort(function(a,b){ return gruppi[b].length - gruppi[a].length; });
+  return cats.map(function(cat, idx) {
+    var items = gruppi[cat];
+    var rows = items.map(function(c) {
+      return '<div onclick="labSbConcettoClick(\'' + labEsc(c.id) + '\',\'' + labEsc(c.label) + '\')" '
+        + 'style="display:flex;justify-content:space-between;align-items:center;padding:9px 12px;border-top:1px solid rgba(0,180,255,0.08);cursor:pointer">'
+        + '<span style="font-size:13px;color:#e0f0ff">' + labEsc(c.label) + '</span>'
+        + '<span style="font-size:10px;font-family:monospace;color:rgba(0,180,255,0.4)">' + (c.pdf_count||0) + ' PDF</span>'
+        + '</div>';
+    }).join('');
+    var openAttr = idx === 0 ? ' open' : '';
+    return '<details' + openAttr + ' style="background:rgba(0,180,255,0.04);border:1px solid rgba(0,180,255,0.15);border-radius:12px;margin-bottom:8px;overflow:hidden">'
+      + '<summary style="padding:11px 14px;cursor:pointer;font-size:13px;font-weight:700;color:#00b4ff;display:flex;justify-content:space-between">'
+      + '<span>' + labEsc(labSbCategoriaLabel(cat)) + '</span><span style="font-family:monospace;font-weight:400;color:rgba(0,180,255,0.4)">' + items.length + '</span>'
+      + '</summary>' + rows + '</details>';
+  }).join('');
+}
+
+function labSbCategoriaLabel(cat) {
+  var MAP = {
+    elettrocultura: '\u26A1 Elettrocultura', biodinamica: '\uD83C\uDF19 Biodinamica', living_soil: '\uD83C\uDF31 Living Soil',
+    fisica_energie: '\uD83C\uDF00 Fisica energie', fitoterapia: '\uD83C\uDF3F Fitoterapia', agricoltura: '\uD83D\uDE9C Agricoltura',
+    scienza: '\uD83D\uDD2C Scienza', esoterismo: '\u2728 Esoterismo', altro: '\uD83D\uDCE6 Altro'
+  };
+  return MAP[cat] || cat;
+}
+
+/* Rev.25: vista "Connessioni" — lista dei link semantici ordinati per peso */
+function labSbBuildConnessioniHTML() {
+  var edges = (labGrafoData && labGrafoData.edges) ? labGrafoData.edges.slice() : [];
+  if (!edges.length) {
+    return '<div style="color:rgba(0,180,255,0.35);font-size:12px;padding:10px 4px">Nessuna connessione ancora \u2014 cresce ogni notte.</div>';
+  }
+  var analisi = (labPdfData && labPdfData.analisi) ? labPdfData.analisi : [];
+  var byId = {};
+  analisi.forEach(function(a) { if (a.id) byId[a.id] = a; });
+  edges.sort(function(a,b){ return (b.peso||0) - (a.peso||0); });
+  var rows = edges.slice(0, 60).map(function(e) {
+    var ta = (byId[e.source]||{}).titolo || e.source;
+    var tb = (byId[e.target]||{}).titolo || e.target;
+    return '<div onclick="labSbEdgeClick(\'' + labEsc(e.source) + '\')" '
+      + 'style="display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-bottom:1px solid rgba(0,180,255,0.08);cursor:pointer">'
+      + '<span style="font-size:12px;color:#e0f0ff;line-height:1.4"><b>' + labEsc((ta||'').substring(0,32)) + '</b> \u2194 ' + labEsc((tb||'').substring(0,32)) + '</span>'
+      + '<span style="font-size:10px;font-family:monospace;color:rgba(0,180,255,0.5);flex-shrink:0;margin-left:8px">' + ((e.peso||0)*100).toFixed(0) + '%</span>'
+      + '</div>';
+  }).join('');
+  return '<div style="background:rgba(0,180,255,0.03);border:1px solid rgba(0,180,255,0.12);border-radius:12px;overflow:hidden">' + rows + '</div>';
+}
+
+function labSbEdgeClick(pdfId) {
+  labSbSwitchView('grafo');
+  var nodi = (labGrafoData && labGrafoData.nodi) ? labSbEnrichNodi(labGrafoData.nodi) : [];
+  var d = nodi.find(function(n){ return n.id === pdfId; });
+  if (d) { _sbFocusNode = d; labSbApplyFocus(); labSbNodeClick(d); }
+}
+
 /* ══════════════════════════════════════════════════════════════
    SECOND BRAIN — D3 grafo
 ══════════════════════════════════════════════════════════════ */
+
+var _sbSvg = null, _sbZoomBehavior = null, _sbActiveTags = null;
+var _sbNodeSel = null, _sbLinkSel = null, _sbFocusNode = null, _sbLegendData = null;
+var _SB_PALETTE = ['#00e5ff','#7b61ff','#4cd97b','#ffb84c','#ff6b6b','#4ce0d9','#c78cff','#f2d94e'];
+
+function labSbGraphZoom(factor) {
+  if (!_sbSvg || !_sbZoomBehavior) return;
+  _sbSvg.transition().duration(200).call(_sbZoomBehavior.scaleBy, factor);
+}
+function labSbGraphReset() {
+  if (!_sbSvg || !_sbZoomBehavior) return;
+  _sbSvg.transition().duration(200).call(_sbZoomBehavior.transform, d3.zoomIdentity);
+  _sbActiveTags = null;
+  _sbFocusNode = null;
+  labSbRenderLegend();
+  labSbApplyFocus();
+}
+
+/* Rev.25: legenda per tag — tocca un chip per isolare/nascondere quella categoria */
+function labSbRenderLegend() {
+  var el = document.getElementById('sb-graph-legend');
+  if (!el || !_sbLegendData) return;
+  el.innerHTML = _sbLegendData.map(function(l) {
+    var isOff = _sbActiveTags && _sbActiveTags.indexOf(l.tag) === -1;
+    return '<span onclick="labSbToggleTag(\'' + labEsc(l.tag) + '\')" style="display:inline-flex;align-items:center;gap:5px;'
+      + 'padding:4px 9px;border-radius:999px;background:rgba(0,180,255,0.06);border:1px solid rgba(0,180,255,0.15);'
+      + 'font-size:10px;color:rgba(224,240,255,' + (isOff ? '0.3' : '0.8') + ');cursor:pointer">'
+      + '<span style="width:7px;height:7px;border-radius:50%;background:' + l.color + '"></span>' + labEsc(l.tag) + '</span>';
+  }).join('');
+}
+function labSbToggleTag(tag) {
+  if (!_sbActiveTags) _sbActiveTags = _sbLegendData.map(function(l) { return l.tag; });
+  var idx = _sbActiveTags.indexOf(tag);
+  if (idx >= 0) _sbActiveTags.splice(idx, 1); else _sbActiveTags.push(tag);
+  labSbRenderLegend();
+  labSbApplyFocus();
+}
+
+/* Rev.25: applica lo stato visivo — nodo selezionato + connessi in evidenza, resto attenuato */
+function labSbApplyFocus() {
+  if (!_sbNodeSel || !_sbLinkSel) return;
+  if (!_sbFocusNode) {
+    _sbNodeSel.select('circle').attr('opacity', function(d) {
+      return (_sbActiveTags && _sbActiveTags.indexOf(d._tag) === -1) ? 0.12 : 0.9;
+    });
+    _sbNodeSel.select('text').attr('opacity', 0);
+    _sbLinkSel.attr('opacity', function(d) {
+      var dim = _sbActiveTags && (_sbActiveTags.indexOf(d.source._tag) === -1 || _sbActiveTags.indexOf(d.target._tag) === -1);
+      return dim ? 0.03 : 0.2;
+    });
+    return;
+  }
+  var connectedIds = {};
+  connectedIds[_sbFocusNode.id] = true;
+  _sbLinkSel.each(function(e) {
+    if (e.source.id === _sbFocusNode.id) connectedIds[e.target.id] = true;
+    if (e.target.id === _sbFocusNode.id) connectedIds[e.source.id] = true;
+  });
+  _sbNodeSel.select('circle').attr('opacity', function(d) { return connectedIds[d.id] ? 1 : 0.12; });
+  _sbNodeSel.select('text').attr('opacity', function(d) { return connectedIds[d.id] ? 1 : 0; });
+  _sbLinkSel.attr('opacity', function(e) {
+    return (e.source.id === _sbFocusNode.id || e.target.id === _sbFocusNode.id) ? 0.9 : 0.03;
+  });
+}
 
 function labSbInitGraph(nodi, edges) {
   var container = document.getElementById('sb-graph-container');
@@ -1919,19 +2071,21 @@ function labSbInitGraph(nodi, edges) {
   if (loading) loading.style.display = 'none';
 
   var W = container.clientWidth  || 340;
-  var H = container.clientHeight || 320;
+  var H = container.clientHeight || 340;
 
   d3.select(container).select('svg').remove();
   var svg = d3.select(container).append('svg')
     .attr('width', W).attr('height', H)
     .style('cursor','grab');
+  _sbSvg = svg;
 
   var g = svg.append('g');
 
-  svg.call(d3.zoom()
+  var zoomBehavior = d3.zoom()
     .scaleExtent([0.3, 3])
-    .on('zoom', function(ev){ g.attr('transform', ev.transform); })
-  );
+    .on('zoom', function(ev){ g.attr('transform', ev.transform); });
+  svg.call(zoomBehavior);
+  _sbZoomBehavior = zoomBehavior;
 
   var defs = svg.append('defs');
   var filter = defs.append('filter').attr('id','sb-glow2');
@@ -1941,6 +2095,23 @@ function labSbInitGraph(nodi, edges) {
   feMerge.append('feMergeNode').attr('in','SourceGraphic');
 
   var COLOR = { chiave:'#00e5ff', utile:'#7b61ff', generale:'#1a4a6e' };
+
+  // Rev.25: colore per tag principale (legenda filtrabile) invece del solo gruppo rilevanza fisso
+  var tagCount = {};
+  nodi.forEach(function(n) {
+    var t = (n.tag && n.tag[0]) ? n.tag[0] : 'altro';
+    tagCount[t] = (tagCount[t]||0) + 1;
+  });
+  var topTags = Object.keys(tagCount).sort(function(a,b){ return tagCount[b]-tagCount[a]; }).slice(0, _SB_PALETTE.length);
+  var tagColor = {};
+  topTags.forEach(function(t, i){ tagColor[t] = _SB_PALETTE[i]; });
+  nodi.forEach(function(n) {
+    var t = (n.tag && n.tag[0]) ? n.tag[0] : 'altro';
+    n._tag = topTags.indexOf(t) >= 0 ? t : 'altro';
+    n._color = tagColor[n._tag] || COLOR[n.gruppo] || COLOR.generale;
+  });
+  _sbLegendData = topTags.map(function(t){ return { tag: t, color: tagColor[t], count: tagCount[t] }; });
+  labSbRenderLegend();
 
   var linkData = edges.filter(function(e){
     var src = nodi.find(function(n){ return n.id === e.source; });
@@ -1954,7 +2125,7 @@ function labSbInitGraph(nodi, edges) {
     .force('center', d3.forceCenter(W/2, H/2))
     .force('collision', d3.forceCollide(14));
 
-  g.append('g').selectAll('line')
+  var link = g.append('g').selectAll('line')
     .data(linkData).enter().append('line')
     .attr('stroke', function(d){ return d.tipo === 'forte' ? 'rgba(0,229,255,0.4)' : 'rgba(0,180,255,0.12)'; })
     .attr('stroke-width', function(d){ return d.tipo === 'forte' ? 1.5 : 0.5; });
@@ -1962,7 +2133,7 @@ function labSbInitGraph(nodi, edges) {
   var node = g.append('g').selectAll('g')
     .data(nodi).enter().append('g')
     .style('cursor','pointer')
-    .on('click', function(ev, d){ ev.stopPropagation(); labSbNodeClick(d); })
+    .on('click', function(ev, d){ ev.stopPropagation(); _sbFocusNode = d; labSbApplyFocus(); labSbNodeClick(d); })
     .call(d3.drag()
       .on('start', function(ev,d){ if(!ev.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
       .on('drag',  function(ev,d){ d.fx=ev.x; d.fy=ev.y; })
@@ -1971,25 +2142,36 @@ function labSbInitGraph(nodi, edges) {
 
   node.append('circle')
     .attr('r', function(d){ return d.gruppo === 'chiave' ? 10 : d.gruppo === 'utile' ? 7 : 5; })
-    .attr('fill', function(d){ return COLOR[d.gruppo] || COLOR.generale; })
+    .attr('fill', function(d){ return d._color; })
     .attr('filter', function(d){ return d.gruppo === 'chiave' ? 'url(#sb-glow2)' : null; })
     .attr('opacity', 0.9);
 
+  // Rev.25 FIX: etichette nascoste di default (nodi sovrapposti/illeggibili prima) —
+  // compaiono solo per il nodo selezionato + i suoi collegati diretti (vedi labSbApplyFocus)
   node.append('text')
     .attr('dy', -13)
     .attr('text-anchor', 'middle')
-    .attr('font-size', '7px')
-    .attr('fill', 'rgba(0,180,255,0.6)')
-    .text(function(d){ return (d.titolo||'').substring(0,20); });
+    .attr('font-size', '8px')
+    .attr('fill', 'rgba(224,240,255,0.85)')
+    .attr('opacity', 0)
+    .text(function(d){ return (d.titolo||'').substring(0,22); });
+
+  _sbNodeSel = node;
+  _sbLinkSel = link;
+  _sbFocusNode = null;
+
+  svg.on('click', function(){ _sbFocusNode = null; labSbApplyFocus(); });
 
   sim.on('tick', function(){
-    g.selectAll('line')
+    link
       .attr('x1', function(d){ return d.source.x; })
       .attr('y1', function(d){ return d.source.y; })
       .attr('x2', function(d){ return d.target.x; })
       .attr('y2', function(d){ return d.target.y; });
     node.attr('transform', function(d){ return 'translate(' + d.x + ',' + d.y + ')'; });
   });
+
+  labSbApplyFocus();
 }
 
 /* ══════════════════════════════════════════════════════════════
