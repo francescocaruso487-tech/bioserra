@@ -11,7 +11,7 @@ MISTRAL_KEY  = os.environ.get('MISTRAL_KEY','')
 REPO         = 'francescocaruso487-tech/bioserra'
 HEADERS_GH   = {'Authorization': f'token {GITHUB_TOKEN}', 'Accept': 'application/vnd.github.v3+json'}
 RAW          = f'https://raw.githubusercontent.com/{REPO}/main/'
-BATCH_SIZE   = 10
+BATCH_SIZE   = 15   # Rev.25: alzato da 10 — ora include anche i chunk, backfill più veloce
 CHARS_CHUNK  = 3500   # chars per chunk da tradurre (Mistral ~4k token safe)
 
 # ── Utilità GitHub ───────────────────────────────────────────────
@@ -209,8 +209,10 @@ def raccogli_file_da_tradurre(pdf_knowledge):
         if a.get('lingua') == 'it':
             gia_it.add(a.get('testo_id',''))
 
-    # Scansiona data/testi/ (root + sottocartelle tematiche)
-    dirs_to_scan = ['data/testi']
+    # Scansiona data/testi/ (root + sottocartelle tematiche + chunks)
+    # Rev.25 FIX: prima 'data/testi/chunks' non veniva mai scansionato — per i documenti
+    # grandi (chunked), il grosso del testo restava per sempre non tradotto.
+    dirs_to_scan = ['data/testi', 'data/testi/chunks']
     cat_dirs = ['elettrocultura','biodinamica','living_soil','fisica_energie',
                 'agricoltura','fitoterapia','scienza','esoterismo','altro']
     for c in cat_dirs:
@@ -254,6 +256,27 @@ def main():
 
     analisi_map = {a.get('testo_id','').strip(): a for a in pdf_knowledge.get('analisi',[])}
 
+    # Rev.25: backfill leggero del campo 'lingua' per le voci storiche che non l'hanno mai avuto
+    # (versioni pre-v13 di analisi_pdf.py non scrivevano questo campo). Nessuna chiamata Mistral,
+    # solo rilevazione locale sul testo già estratto — serve solo a dare visibilità reale sullo
+    # stato delle traduzioni, il backfill di traduzione vero resta nel loop sotto.
+    senza_lingua = [a for a in pdf_knowledge.get('analisi', []) if not a.get('lingua')]
+    n_backfill = 0
+    if senza_lingua:
+        print(f'\n[0] Backfill campo lingua per {len(senza_lingua)} voci storiche senza il campo...')
+        for a in senza_lingua[:60]:  # cap per non appesantire troppo questo run
+            tid = a.get('testo_id','').strip()
+            if not tid:
+                continue
+            try:
+                testo_preview = gh_raw(f'data/testi/{tid}.txt')
+            except:
+                continue
+            corpo = '\n'.join(testo_preview.split('\n')[6:])
+            a['lingua'] = rileva_lingua(corpo) if corpo.strip() else 'altro'
+            n_backfill += 1
+        print(f'  Backfill completato su {n_backfill} voci (resto al prossimo run)')
+
     # 2. Trova file da tradurre
     print('\n[2] Scansiono testi estratti...')
     da_tradurre = raccogli_file_da_tradurre(pdf_knowledge)
@@ -283,11 +306,9 @@ def main():
             break
 
     print(f'  Da tradurre questo batch: {len(da_processare)}')
-    if not da_processare:
-        print('  Niente da tradurre.')
-        return
-
     tradotti_ok = 0
+    if not da_processare:
+        print('  Niente da tradurre in questo batch.')
 
     for f in da_processare:
         titolo = f['safe_id'].replace('_',' ')
@@ -324,13 +345,16 @@ def main():
         time.sleep(2)
 
     # 4. Salva pdf_knowledge aggiornato con campo lingua
-    if tradotti_ok > 0 and sha_pk:
+    # Rev.25: salva anche se sono state solo backfillate lingue storiche (n_backfill>0),
+    # non solo quando ci sono state traduzioni vere in questo run.
+    if (tradotti_ok > 0 or n_backfill > 0) and sha_pk:
         print(f'\n[3] Aggiorno pdf_knowledge.json (campo lingua)...')
         pdf_knowledge['analisi'] = list(analisi_map.values())
         try:
             sha_pk2 = gh_get_sha('data/pdf_knowledge.json')
             out = json.dumps(pdf_knowledge, ensure_ascii=False, indent=2)
-            res = gh_put('data/pdf_knowledge.json', out, sha_pk2, f'update: lingua field in pdf_knowledge ({tradotti_ok} tradotti)')
+            res = gh_put('data/pdf_knowledge.json', out, sha_pk2,
+                         f'update: lingua field in pdf_knowledge ({tradotti_ok} tradotti, {n_backfill} backfill)')
             if res is None:
                 print('  pdf_knowledge update ERR: gh_put fallito dopo 3 tentativi')
             else:
@@ -338,6 +362,18 @@ def main():
         except Exception as ex:
             print(f'  pdf_knowledge update ERR: {ex}')
 
-    print(f'\n=== Fine. Tradotti: {tradotti_ok}/{len(da_processare)} ===')
+    print(f'\n=== Fine. Tradotti: {tradotti_ok}/{len(da_processare)} | Backfill lingua: {n_backfill} ===')
+
+    summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
+    if summary_path:
+        try:
+            with open(summary_path, 'a', encoding='utf-8') as f:
+                f.write(f'## Traduzione testi — {time.strftime("%Y-%m-%d")}\n\n')
+                f.write(f'- Chunk/file tradotti in questo run: **{tradotti_ok}**\n')
+                f.write(f'- Voci lingua backfillate: **{n_backfill}**\n')
+                restanti_senza_lingua = sum(1 for a in analisi_map.values() if not a.get('lingua'))
+                f.write(f'- Voci ancora senza campo lingua: **{restanti_senza_lingua}**\n')
+        except Exception as ex:
+            print(f'  (step summary non scritto: {ex})')
 
 main()
