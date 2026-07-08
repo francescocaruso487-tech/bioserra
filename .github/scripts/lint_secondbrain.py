@@ -303,6 +303,8 @@ def main():
                 f.write('\n### Connessioni\n')
                 f.write(f"- Nodi: **{report_grafo['nodi_totali']}**, Edges: **{report_grafo['edges_totali']}**\n")
                 f.write(f"- Isolati: **{report_grafo['nodi_isolati']}**\n")
+                n_contraddizioni = report_grafo['tipo_conn_breakdown'].get('contraddizione', 0)
+                f.write(f"- \u26A0\uFE0F Contraddizioni rilevate tra manuali: **{n_contraddizioni}**\n")
                 f.write(f"- Copertura coppie stimata: **{report_grafo['copertura_coppie_pct_stimata']}%**\n")
                 f.write('\n### Coerenza dati\n')
                 if report_coerenza['id_duplicati']:
