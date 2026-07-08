@@ -1,0 +1,143 @@
+{
+  "lastUpdate": "2026-07-08T19:19:27.441122+00:00",
+  "analisi": {
+    "totale_voci": 300,
+    "pipeline_v25_fulltext": 35,
+    "non_ancora_riprocessate": 265,
+    "stub_count": 30,
+    "stub_ids": [
+      "pdf_88",
+      "fuso_germinazione",
+      "fuso_plantula",
+      "fuso_vegetativa",
+      "fuso_fioritura",
+      "fuso_raccolta",
+      "fuso_essiccazione_concia",
+      "fuso_substrati_vasi",
+      "fuso_nutrizione_ph",
+      "fuso_problemi",
+      "fuso_training",
+      "fuso_autofiorenti",
+      "fuso_outdoor",
+      "pdf_309",
+      "pdf_12",
+      "pdf_13",
+      "pdf_14",
+      "pdf_85",
+      "pdf_16",
+      "pdf_17",
+      "pdf_18",
+      "pdf_20",
+      "pdf_21",
+      "pdf_22",
+      "pdf_24",
+      "pdf_25",
+      "pdf_26",
+      "pdf_305",
+      "pdf_8",
+      "pdf_10"
+    ],
+    "finestre_analizzate_stats": {
+      "min": 7,
+      "max": 20,
+      "media": 16.7
+    },
+    "documenti_sottocoperti": [
+      {
+        "id": "pdf_0",
+        "titolo": "108upa",
+        "testo_chars": 1446005,
+        "finestre_analizzate": 20,
+        "pct_coperta": 6.2
+      },
+      {
+        "id": "pdf_7",
+        "titolo": "An Agricultural Testament - Albert Howard",
+        "testo_chars": 556392,
+        "finestre_analizzate": 20,
+        "pct_coperta": 16.2
+      },
+      {
+        "id": "pdf_298",
+        "titolo": "confucius_i_dialoghi",
+        "testo_chars": 487927,
+        "finestre_analizzate": 20,
+        "pct_coperta": 18.4
+      },
+      {
+        "id": "pdf_296",
+        "titolo": "ySanedrin",
+        "testo_chars": 417190,
+        "finestre_analizzate": 20,
+        "pct_coperta": 21.6
+      },
+      {
+        "id": "pdf_304",
+        "titolo": "IL-CODICE-TESLA-SECOLARIUM-SAGA-_Italian-Edition_-_Alessandr",
+        "testo_chars": 353185,
+        "finestre_analizzate": 20,
+        "pct_coperta": 25.5
+      },
+      {
+        "id": "pdf_5",
+        "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+        "testo_chars": 278913,
+        "finestre_analizzate": 20,
+        "pct_coperta": 32.3
+      },
+      {
+        "id": "pdf_62",
+        "titolo": "Corpo ermetico e Asclepio",
+        "testo_chars": 274212,
+        "finestre_analizzate": 20,
+        "pct_coperta": 32.8
+      }
+    ],
+    "lingua_popolata": 37,
+    "lingua_breakdown": {
+      "it": 37
+    },
+    "chunk_progresso_doc_con_dato": 0,
+    "chunk_progresso_totale_tradotti": 0,
+    "chunk_progresso_totale_chunk": 0,
+    "chunk_progresso_anomalie": []
+  },
+  "traduzione": {
+    "lingua_popolata": 37,
+    "lingua_breakdown": {
+      "it": 37
+    },
+    "chunk_progresso_doc_con_dato": 0,
+    "chunk_progresso_totale_tradotti": 0,
+    "chunk_progresso_totale_chunk": 0
+  },
+  "connessioni": {
+    "nodi_totali": 239,
+    "edges_totali": 28494,
+    "nodi_isolati": 0,
+    "nodi_isolati_ids": [],
+    "peso_stats": {
+      "min": 0.4,
+      "max": 0.9957,
+      "media": 0.848
+    },
+    "tipo_conn_breakdown": {
+      "principio_condiviso": 28,
+      "sinergia": 35,
+      "potenziamento": 7,
+      "contraddizione": 37,
+      "(nessuno)": 28381,
+      "contraddizione interessante": 4,
+      "sinergia applicabile": 1,
+      "contraddizione interessanti da investigare": 1
+    },
+    "edges_dangling": [],
+    "copertura_coppie_pct_stimata": 100.2
+  },
+  "coerenza": {
+    "id_duplicati": [
+      "pdf_294"
+    ],
+    "voci_con_id_o_titolo_mancante": []
+  }
+}
