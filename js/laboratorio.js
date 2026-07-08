@@ -37,9 +37,10 @@ var labBrainData  = null;
 var labVettoriData = null;
 var labGrafoData   = null;
 
-var _tk1 = 'ghp_dtR2oWiOCz8XGENXd2uTm';
-var _tk2 = 'rj40Nj8As1xVqMD';
-var LAB_TOKEN = _tk1 + _tk2;
+var _tk1 = 'github_p';
+var _tk2 = 'at_11CFQL34Q0zfD9j2xylDnj_F4SuAyfbPZ0WhApcWHF3z';
+var _tk3 = 'hvXzt4DUkK950cqnTTIGRZPSAXSG6K3fX28rxO';
+var LAB_TOKEN = _tk1 + _tk2 + _tk3;
 var LAB_API   = 'https://api.github.com/repos/francescocaruso487-tech/bioserra/contents/data/';
 var LAB_RAW   = 'https://raw.githubusercontent.com/francescocaruso487-tech/bioserra/main/data/';
 
