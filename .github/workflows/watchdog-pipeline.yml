@@ -1,0 +1,35 @@
+name: BioSerra - Watchdog Pipeline
+
+on:
+  schedule:
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verifica se piante-stato-update ha girato con successo oggi
+        env:
+          GH_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          OGGI=$(date -u +%Y-%m-%d)
+          RUNS=$(curl -s -H "Authorization: token ${GH_TOKEN}" "https://api.github.com/repos/${{ github.repository }}/actions/workflows/piante-stato-update.yml/runs?per_page=5")
+          TROVATI=$(echo "$RUNS" | jq --arg oggi "$OGGI" '[.workflow_runs[] | select(.created_at | startswith($oggi)) | select(.conclusion=="success")] | length')
+
+          if [ "$TROVATI" -eq 0 ]; then
+            echo "Pipeline non ancora eseguita con successo oggi ($OGGI) entro le 15:00 UTC - invio alert"
+            curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -d chat_id="${TELEGRAM_CHAT_ID}" -d text="⚠️ BioSerra: la pipeline notturna non risulta ancora eseguita con successo oggi (${OGGI}) entro le 15:00 UTC. Controlla GitHub Actions o valuta un trigger manuale."
+            echo "### ⚠️ Pipeline in ritardo" >> "$GITHUB_STEP_SUMMARY"
+            echo "Nessun run riuscito di piante-stato-update per oggi ($OGGI) entro le 15:00 UTC." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "OK: pipeline eseguita con successo oggi ($TROVATI run riusciti)."
+            echo "### ✅ Pipeline OK" >> "$GITHUB_STEP_SUMMARY"
+            echo "piante-stato-update ha girato con successo oggi ($OGGI)." >> "$GITHUB_STEP_SUMMARY"
+          fi
