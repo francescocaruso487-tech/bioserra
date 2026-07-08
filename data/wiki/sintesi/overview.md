@@ -1,52 +1,67 @@
 ---
 tipo: overview
-aggiornato: 2026-07-07
+aggiornato: 2026-07-08
 ---
 
 # BioSerra — Knowledge Base Overview
 
 ```markdown
 # **BioSerra Wiki**
-*Living Soil Outdoor, Water-Only, Biodinamica & Elettrocultura*
-**Ubicazione:** Caserta (41°N) | **Stato:** Attivo | **Conoscenza:** 291 PDF + 16 concetti integrati
+*Living Soil Outdoor a Caserta (41°N) – Integrazione di Suolo Vivente, Biodinamica ed Elettrocultura*
 
 ---
 
 ## **🌱 Filosofia BioSerra**
-BioSerra è un **ecosistema agricolo olistico** che fonde:
-- **Living Soil**: Suolo vivo, ricco di microrganismi, materia organica e minerali biodisponibili, coltivato *water-only* (senza fertilizzanti chimici).
-- **Biodinamica**: Approccio sinergico con i ritmi terrestri (luna, stagioni) e preparati naturali per potenziare la vitalità delle piante.
-- **Elettrocultura**: Tecniche di stimolazione elettromagnetica (Lakhovsky, Fe-Cu, acqua magnetizzata) per ottimizzare crescita, fioritura e resistenza.
-- **Water-Only**: Irrigazione con acqua strutturata (magnetizzata, ionizzata) e nutrienti esclusivamente organici (compost, farine di rocce, micorrize).
+BioSerra è una **serra outdoor Living Soil** che adotta un approccio olistico alla coltivazione, fondendo:
+- **Suolo Vivente (Water-Only)**: Terreno ricco di microbioma, materia organica e minerali biodisponibili, senza input chimici.
+- **Biodinamica**: Rispetto dei ritmi naturali (luna, stagioni) e uso di preparati dinamizzati per stimolare la vitalità del suolo.
+- **Elettrocultura**: Applicazione di campi elettromagnetici (Lakhovsky, Fe-Cu, acqua magnetizzata) per ottimizzare l’assorbimento dei nutrienti e la resistenza delle piante.
+- **Water-Only**: Irrigazione con acqua strutturata (magnetizzata, ionizzata) per massimizzare l’efficienza idrica e nutrizionale.
 
-**Visione:** Coltivare piante in **armonia con la natura**, massimizzando la biodiversità del suolo e la qualità dei raccolti, senza compromessi sulla sostenibilità.
+*Visione*: Coltivare piante in **armonia con la Terra**, dove ogni elemento (suolo, acqua, energia, organismi) è interconnesso e potenziato da tecniche sinergiche.
 
 ---
 
 ## **📚 Sistema di Conoscenza**
-BioSerra si basa su un **network di 291 risorse** (PDF, guide, studi) e **16 concetti attivi** che si integrano per formare un sistema coerente:
+BioSerra si basa su:
+- **292 manuali analizzati** (PDF, webinar, studi scientifici) selezionati per coerenza con i principi *Living Soil* e biodinamici.
+- **16 concetti attivi** (es. *Suolo Vivente*, *Elettrocultura*, *Calendario Lunare*) che fungono da ponte tra teoria e pratica.
+- **Guide operative** (es. germinazione, gestione pH, controllo parassiti) collegate a fasi colturali specifiche.
 
-| **Categoria**       | **Risorse Chiave**                                                                 | **Concetti Attivi**                                                                 |
-|---------------------|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| **Elettrocultura**  | [pdf_17], [web_zamn_287], [web_zamn_288], [web_zamn_290]                          | Spirale Rame, Acqua Magnetizzata, Fe-Cu, Antenna Terra, Elettrocultura             |
-| **Living Soil**     | [web_zamn_293], [web_zamn_286], [web_zamn_284]                                   | Compostaggio, Inoculazione Micorrize, Te di Compost, Gestione pH                   |
-| **Biodinamica**     | [pdf_13], Calendario Lunare                                                        | Preparati (equiseto, camomilla), Fasi lunari                                       |
-| **Nutrizione**      | [web_zamn_288], [web_zamn_290]                                                    | Fertilizzazione Organica, Farine di Rocce                                          |
-| **Fitosanitario**   | [web_zamn_286]                                                                    | Controllo Parassiti Naturale                                                        |
-| **Raccolta**        | [web_zamn_295]                                                                    | Essiccazione Corretta                                                              |
-
-**Flusso di lavoro:**
-1. **Dati** (PDF, guide) → **Analisi** (concetti attivi) → **Applicazione** (tecniche in serra).
-2. **Feedback loop**: Monitoraggio costante (umidità, conducibilità, fase lunare) per adattare le pratiche.
-3. **Integrazione**: Le tecniche si potenziano a vicenda (es. elettrocultura + biodinamica per fioritura).
+**Integrazione**:
+- I PDF più rilevanti (es. *Aleister Crowley – Kaw-Djer* per simbologia energetica, *Living Soil Handbook* per pratiche) sono citati nei consigli AI attuali.
+- I concetti attivi (es. *Spirale Rame*, *Te di Compost*) sono mappati a tecniche concrete tramite [[link]] interni.
+- Le guide web (es. *fase vegetativa cannabis*) forniscono dettagli operativi per applicare i principi in serra.
 
 ---
 
 ## **⚡ Tecniche Elettrocultura Attive**
-Le 5 tecniche principali applicate in BioSerra:
+Le 5 tecniche principali integrate in BioSerra:
 
-| **Tecnica**               | **Descrizione**                                                                                     | **Applicazione**                                                                 | **Riferimenti**                     |
-|---------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-------------------------------------|
-| **Spirale in Rame**       | Installazione di spirali di rame intorno alle piante per generare campi elettromagnetici benefici. | Tutte le fasi, massima efficacia in fioritura.                                 | [[spirale-rame]]                    |
-| **Acqua Magnetizzata**    | Acqua sottoposta a campi magnetici per migliorare assorbimento nutrienti e resistenza.              | Irrigazione costante, soprattutto in stress idrico.                            | [[acqua-magnetizzata]]              |
-| **Elettrocultura (DC)**   | Applicazione di corrente continua (3-4V) tra elettrodi rame/zinco
+1. **Spirale in Rame**
+   - *Uso*: Avvolgimento di rame intorno al fusto o posizionamento a spirale nel suolo per generare campi elettromagnetici.
+   - *Effetto*: Stimola la divisione cellulare e la resistenza delle piante (principio di Lakhovsky).
+   - [[elettrocultura/spirale-rame]]
+
+2. **Acqua Magnetizzata**
+   - *Uso*: Passaggio dell’acqua attraverso magneti o dispositivi a induzione per strutturarla.
+   - *Effetto*: Aumenta la solubilità dei minerali e l’assorbimento radicale.
+   - [[elettrocultura/acqua-magnetizzata]]
+
+3. **Elettrocultura (DC 8V)**
+   - *Uso*: Applicazione di corrente continua (8V) tramite elettrodi rame/zinco nel suolo (10–15 cm profondità).
+   - *Effetto*: Ottimizza l’assorbimento dei nutrienti, soprattutto in fioritura (es. autofiorenti *Epsilon*, *Gaia*).
+   - [[elettrocultura/corrente-continua]]
+
+4. **Antenna di Terra**
+   - *Uso*: Collegamento a terra con materiali conduttivi (rame, ferro) per scaricare tensioni statiche e armonizzare il suolo.
+   - *Effetto*: Riduce stress ossidativo e favorisce la comunicazione tra piante (teoria delle "onde di forma").
+   - [[elettrocultura/antenna-terra]]
+
+5. **Lega Ferro-Rame (Fe-Cu)**
+   - *Uso*: Inserimento di barre o polveri di Fe-Cu nel suolo o come preparato biodinamico.
+   - *Effetto*: Bilancia i campi magnetici e stimola l’attività microbica.
+   - [[elettrocultura/lega-fe-cu]]
+
+---
+## **
