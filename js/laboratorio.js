@@ -1976,17 +1976,43 @@ function labSbBuildConnessioniHTML() {
   var analisi = (labPdfData && labPdfData.analisi) ? labPdfData.analisi : [];
   var byId = {};
   analisi.forEach(function(a) { if (a.id) byId[a.id] = a; });
-  edges.sort(function(a,b){ return (b.peso||0) - (a.peso||0); });
-  var rows = edges.slice(0, 60).map(function(e) {
+
+  // Rev.26: le contraddizioni (tipo_conn normalizzato) meritano una sezione propria,
+  // altrimenti finiscono mescolate nella lista generale ordinata per peso e passano
+  // inosservate — sono il segnale più utile da controllare tra due manuali.
+  var contraddizioni = edges.filter(function(e){ return e.tipo_conn === 'contraddizione'; });
+  var altre = edges.filter(function(e){ return e.tipo_conn !== 'contraddizione'; });
+  altre.sort(function(a,b){ return (b.peso||0) - (a.peso||0); });
+  contraddizioni.sort(function(a,b){ return (b.peso||0) - (a.peso||0); });
+
+  function rigaEdge(e, isContraddizione) {
     var ta = (byId[e.source]||{}).titolo || e.source;
     var tb = (byId[e.target]||{}).titolo || e.target;
+    var bordo = isContraddizione ? 'rgba(255,107,107,0.18)' : 'rgba(0,180,255,0.08)';
+    var icona = isContraddizione ? '\u26A0\uFE0F ' : '';
+    var descr = isContraddizione && e.descrizione
+      ? '<div style="font-size:10.5px;color:rgba(255,180,180,0.75);margin-top:3px;line-height:1.35">' + labEsc((e.descrizione||'').substring(0,140)) + '</div>'
+      : '';
     return '<div onclick="labSbEdgeClick(\'' + labEsc(e.source) + '\')" '
-      + 'style="display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-bottom:1px solid rgba(0,180,255,0.08);cursor:pointer">'
-      + '<span style="font-size:12px;color:#e0f0ff;line-height:1.4"><b>' + labEsc((ta||'').substring(0,32)) + '</b> \u2194 ' + labEsc((tb||'').substring(0,32)) + '</span>'
+      + 'style="padding:10px 12px;border-bottom:1px solid ' + bordo + ';cursor:pointer">'
+      + '<div style="display:flex;justify-content:space-between;align-items:center">'
+      + '<span style="font-size:12px;color:#e0f0ff;line-height:1.4">' + icona + '<b>' + labEsc((ta||'').substring(0,32)) + '</b> \u2194 ' + labEsc((tb||'').substring(0,32)) + '</span>'
       + '<span style="font-size:10px;font-family:monospace;color:rgba(0,180,255,0.5);flex-shrink:0;margin-left:8px">' + ((e.peso||0)*100).toFixed(0) + '%</span>'
-      + '</div>';
-  }).join('');
-  return '<div style="background:rgba(0,180,255,0.03);border:1px solid rgba(0,180,255,0.12);border-radius:12px;overflow:hidden">' + rows + '</div>';
+      + '</div>' + descr + '</div>';
+  }
+
+  var html = '';
+  if (contraddizioni.length) {
+    html += '<div style="padding:8px 12px;font-size:11px;color:rgba(255,140,140,0.9);font-weight:600;'
+      + 'background:rgba(255,107,107,0.06);border-bottom:1px solid rgba(255,107,107,0.15)">'
+      + '\u26A0\uFE0F ' + contraddizioni.length + ' contraddizioni rilevate tra manuali</div>';
+    html += contraddizioni.slice(0, 30).map(function(e){ return rigaEdge(e, true); }).join('');
+    html += '<div style="padding:8px 12px;font-size:11px;color:rgba(0,180,255,0.5);font-weight:600;'
+      + 'background:rgba(0,180,255,0.03);border-bottom:1px solid rgba(0,180,255,0.1)">Tutte le connessioni</div>';
+  }
+  html += altre.slice(0, 60).map(function(e){ return rigaEdge(e, false); }).join('');
+
+  return '<div style="background:rgba(0,180,255,0.03);border:1px solid rgba(0,180,255,0.12);border-radius:12px;overflow:hidden">' + html + '</div>';
 }
 
 function labSbEdgeClick(pdfId) {
