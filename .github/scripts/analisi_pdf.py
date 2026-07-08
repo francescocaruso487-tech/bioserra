@@ -174,13 +174,13 @@ def mistral_finestra(titolo, finestra, lingua_nota):
         f'Leggi questa sezione del documento "{titolo}" e rispondi SEMPRE in italiano.\n'
         + lingua_nota +
         f'Sezione:\n{finestra}\n\n'
-        'Rispondi SOLO con JSON valido:\n'
-        '{"punti":["1-3 informazioni concrete e specifiche di questa sezione"],'
-        '"tecniche":["tecniche/metodi specifici citati qui, max 4"],'
-        '"tag":["1-3 tag tematici"]}'
+        'Rispondi SOLO con JSON valido, frasi brevi (max 15-20 parole ciascuna):\n'
+        '{"punti":["2-3 informazioni concrete, frasi brevi"],'
+        '"tecniche":["tecniche/metodi citati qui, max 4, nomi brevi"],'
+        '"tag":["1-3 tag brevi"]}'
     )
     body = json.dumps({
-        'model': 'mistral-small-latest', 'max_tokens': 350, 'temperature': 0.0,
+        'model': 'mistral-small-latest', 'max_tokens': 600, 'temperature': 0.0,
         'messages': [{'role': 'user', 'content': prompt}]
     }).encode()
     try:
@@ -232,7 +232,7 @@ def mistral_sintesi_finale(titolo, punti_agg, tecniche_agg, tag_agg, lingua_det,
         '"applicabilita_serra":"alta/media/bassa - perche"}'
     )
     body = json.dumps({
-        'model': 'mistral-small-latest', 'max_tokens': 700, 'temperature': 0.0,
+        'model': 'mistral-small-latest', 'max_tokens': 1000, 'temperature': 0.0,
         'messages': [{'role': 'user', 'content': prompt}]
     }).encode()
     try:
@@ -429,7 +429,7 @@ def main():
 
     # Rev.25: batch alzato da 20 a 25/notte per completare la migrazione full-text prima possibile
     # (richiesto esplicitamente: "tutto insieme appena possibile, anche più notti")
-    batch = da_rianalizzare[:2]  # TEMP diagnostico Rev.25b — torna a 25 una volta risolto il bug Mistral
+    batch = da_rianalizzare[:15]  # Rev.25b: 15/notte, margine sicuro con timeout 90min e finestre scorrevoli
     nuove = []
     mistral_count = 0
 
@@ -505,14 +505,6 @@ def main():
 
     n_migrati = sum(1 for a in tutte if a.get('pipeline_ver') == 'v25_fulltext')
     print(f'\n=== +{len(nuove)} | tot:{len(tutte)}/89 | Mistral:{mistral_count} | migrati v25:{n_migrati}/{len(tutte)} ===')
-
-    # TEMP diagnostico Rev.25b: file di debug con i primi errori Mistral catturati (da eliminare a fix confermato)
-    try:
-        debug_content = json.dumps({'errori': _DEBUG_ERRORS, 'timestamp': oggi}, indent=2, ensure_ascii=False)
-        sha_dbg = gh_get_sha('data/_debug_mistral.json')
-        gh_put('data/_debug_mistral.json', debug_content, sha_dbg, f'debug temporaneo {oggi}')
-    except Exception as ex:
-        print(f'  (debug file non scritto: {ex})')
 
     summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
     if summary_path:
