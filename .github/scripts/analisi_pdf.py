@@ -165,6 +165,8 @@ def rileva_lingua(testo):
     best = max(scores, key=lambda k: scores[k])
     return best if scores[best] > 2 else 'altro'
 
+_DEBUG_ERRORS = []
+
 def mistral_finestra(titolo, finestra, lingua_nota):
     """Estrazione compatta di una finestra di testo (Rev.25): punti chiave, tecniche, tag."""
     prompt = (
@@ -192,8 +194,19 @@ def mistral_finestra(titolo, finestra, lingua_nota):
         s, e = raw.find('{'), raw.rfind('}')
         if s >= 0 and e > s:
             return json.loads(raw[s:e+1])
+        if len(_DEBUG_ERRORS) < 5:
+            _DEBUG_ERRORS.append({'fn':'mistral_finestra','tipo':'no_json_in_response','raw':raw[:500]})
+    except urllib.error.HTTPError as ex:
+        body_err = ''
+        try: body_err = ex.read().decode('utf-8', errors='replace')[:500]
+        except: pass
+        print(f'    mistral_finestra HTTPError {ex.code}: {body_err}')
+        if len(_DEBUG_ERRORS) < 5:
+            _DEBUG_ERRORS.append({'fn':'mistral_finestra','tipo':'HTTPError','code':ex.code,'body':body_err})
     except Exception as ex:
         print(f'    mistral_finestra ERR: {ex}')
+        if len(_DEBUG_ERRORS) < 5:
+            _DEBUG_ERRORS.append({'fn':'mistral_finestra','tipo':type(ex).__name__,'msg':str(ex)})
     return None
 
 def mistral_sintesi_finale(titolo, punti_agg, tecniche_agg, tag_agg, lingua_det, n_finestre):
@@ -233,8 +246,19 @@ def mistral_sintesi_finale(titolo, punti_agg, tecniche_agg, tag_agg, lingua_det,
         s, e = raw.find('{'), raw.rfind('}')
         if s >= 0 and e > s:
             return json.loads(raw[s:e+1])
+        if len(_DEBUG_ERRORS) < 5:
+            _DEBUG_ERRORS.append({'fn':'mistral_sintesi_finale','tipo':'no_json_in_response','raw':raw[:500]})
+    except urllib.error.HTTPError as ex:
+        body_err = ''
+        try: body_err = ex.read().decode('utf-8', errors='replace')[:500]
+        except: pass
+        print(f'    mistral_sintesi_finale HTTPError {ex.code}: {body_err}')
+        if len(_DEBUG_ERRORS) < 5:
+            _DEBUG_ERRORS.append({'fn':'mistral_sintesi_finale','tipo':'HTTPError','code':ex.code,'body':body_err})
     except Exception as ex:
         print(f'    mistral_sintesi_finale ERR: {ex}')
+        if len(_DEBUG_ERRORS) < 5:
+            _DEBUG_ERRORS.append({'fn':'mistral_sintesi_finale','tipo':type(ex).__name__,'msg':str(ex)})
     return None
 
 def mistral_analizza_completo(titolo, testo_completo):
@@ -384,7 +408,8 @@ def main():
                           not analisi_curr.get('mistral_analizzato') or
                           len(analisi_curr.get('sommario','')) < 150 or
                           not analisi_curr.get('concetti_principali') or
-                          analisi_curr.get('pipeline_ver') != PIPELINE_VER)
+                          analisi_curr.get('pipeline_ver') != PIPELINE_VER or
+                          (analisi_curr.get('pipeline_ver') == PIPELINE_VER and not analisi_curr.get('finestre_analizzate')))
         if ha_testo and analisi_scarsa:
             da_rianalizzare.append((pdf_file, safe_id, titolo))
 
@@ -404,7 +429,7 @@ def main():
 
     # Rev.25: batch alzato da 20 a 25/notte per completare la migrazione full-text prima possibile
     # (richiesto esplicitamente: "tutto insieme appena possibile, anche più notti")
-    batch = da_rianalizzare[:25]
+    batch = da_rianalizzare[:2]  # TEMP diagnostico Rev.25b — torna a 25 una volta risolto il bug Mistral
     nuove = []
     mistral_count = 0
 
@@ -480,6 +505,14 @@ def main():
 
     n_migrati = sum(1 for a in tutte if a.get('pipeline_ver') == 'v25_fulltext')
     print(f'\n=== +{len(nuove)} | tot:{len(tutte)}/89 | Mistral:{mistral_count} | migrati v25:{n_migrati}/{len(tutte)} ===')
+
+    # TEMP diagnostico Rev.25b: file di debug con i primi errori Mistral catturati (da eliminare a fix confermato)
+    try:
+        debug_content = json.dumps({'errori': _DEBUG_ERRORS, 'timestamp': oggi}, indent=2, ensure_ascii=False)
+        sha_dbg = gh_get_sha('data/_debug_mistral.json')
+        gh_put('data/_debug_mistral.json', debug_content, sha_dbg, f'debug temporaneo {oggi}')
+    except Exception as ex:
+        print(f'  (debug file non scritto: {ex})')
 
     summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
     if summary_path:
