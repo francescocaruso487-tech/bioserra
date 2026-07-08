@@ -2337,6 +2337,82 @@ function labSbBuildPdfFaseMap() {
   return map;
 }
 
+// === BM25 sparso per il Second Brain (Rev.26) ===
+// Ricerca lessicale locale, zero costo/zero rete, usata sia come componente del ranking
+// ibrido (insieme al cosine semantico) sia come fallback ordinato quando l'embedding
+// non è disponibile (oggi il fallback dava un punteggio piatto 0.8 a tutti i match).
+var _sbBm25Cache = null;
+var _sbBm25Src = null;
+
+var SB_STOPWORDS = {
+  'di':1,'a':1,'da':1,'in':1,'con':1,'su':1,'per':1,'tra':1,'fra':1,
+  'il':1,'lo':1,'la':1,'gli':1,'le':1,'un':1,'uno':1,'una':1,
+  'e':1,'o':1,'ma':1,'che':1,'del':1,'della':1,'dello':1,'dei':1,'degli':1,'delle':1,
+  'al':1,'allo':1,'alla':1,'ai':1,'agli':1,'alle':1,'nel':1,'nello':1,'nella':1,'nei':1,
+  'negli':1,'nelle':1,'sul':1,'sullo':1,'sulla':1,'sui':1,'sugli':1,'sulle':1,
+  'come':1,'anche':1,'piu':1,'meno':1,'non':1,'si':1,'se':1
+};
+
+function labSbTokenize(str) {
+  if (!str) return [];
+  return str.toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .split(/\s+/)
+    .filter(function(t){ return t.length > 2 && !SB_STOPWORDS[t]; });
+}
+
+function labSbBuildBm25Corpus() {
+  if (_sbBm25Cache && _sbBm25Src === labPdfData) return _sbBm25Cache;
+  var pdfAnalisi = (labPdfData && labPdfData.analisi) ? labPdfData.analisi : [];
+  var docs = pdfAnalisi.map(function(a) {
+    // titolo ripetuto per pesarlo di più nel match (titolo conta triplo)
+    var testo = [
+      (a.titolo||''), (a.titolo||''), (a.titolo||''),
+      (a.sommario||''),
+      (a.tecniche_chiave||[]).join(' '),
+      (a.tag||[]).join(' '),
+      (a.estratto_chiave||'')
+    ].join(' ');
+    var tokens = labSbTokenize(testo);
+    return { id: a.id, tokens: tokens, len: tokens.length };
+  });
+  var avgLen = docs.length ? docs.reduce(function(s,d){ return s+d.len; },0) / docs.length : 0;
+  var df = {};
+  docs.forEach(function(d) {
+    var seen = {};
+    d.tokens.forEach(function(t) {
+      if (!seen[t]) { df[t] = (df[t]||0) + 1; seen[t] = true; }
+    });
+  });
+  _sbBm25Cache = { docs: docs, df: df, avgLen: avgLen, N: docs.length };
+  _sbBm25Src = labPdfData;
+  return _sbBm25Cache;
+}
+
+function labSbBm25Scores(query) {
+  var corpus = labSbBuildBm25Corpus();
+  var qTokens = labSbTokenize(query);
+  if (!qTokens.length || !corpus.N) return {};
+  var k1 = 1.5, b = 0.75;
+  var result = {};
+  corpus.docs.forEach(function(d) {
+    var termFreq = {};
+    d.tokens.forEach(function(t){ termFreq[t] = (termFreq[t]||0)+1; });
+    var score = 0;
+    qTokens.forEach(function(qt) {
+      var f = termFreq[qt] || 0;
+      if (!f) return;
+      var dfq = corpus.df[qt] || 0;
+      var idf = Math.log((corpus.N - dfq + 0.5) / (dfq + 0.5) + 1);
+      var denom = f + k1 * (1 - b + b * (d.len / (corpus.avgLen || 1)));
+      score += idf * (f * (k1 + 1)) / (denom || 1);
+    });
+    if (score > 0) result[d.id] = score;
+  });
+  return result;
+}
+
 async function labSbSearch() {
   var input = document.getElementById('sb-search-input');
   var resEl = document.getElementById('sb-search-results');
@@ -2350,9 +2426,20 @@ async function labSbSearch() {
 
   var pdfAnalisi = (labPdfData && labPdfData.analisi) ? labPdfData.analisi : [];
 
-  // Step 1: embedding query con Mistral (se disponibile)
+  // Step 1: BM25 sparso (sempre, gratis, sincrono) combinato con rerank semantico
+  // via embedding Mistral quando disponibile (Rev.26: prima era solo semantico-o-niente,
+  // col fallback keyword a punteggio piatto 0.8 per tutti i match — nessun vero ranking).
   var topPdf = [];
   var usedSemantic = false;
+
+  var bm25Raw = labSbBm25Scores(query);
+  var bm25Max = 0;
+  Object.keys(bm25Raw).forEach(function(k){ if (bm25Raw[k] > bm25Max) bm25Max = bm25Raw[k]; });
+  var bm25Norm = {};
+  Object.keys(bm25Raw).forEach(function(k){ bm25Norm[k] = bm25Max > 0 ? bm25Raw[k] / bm25Max : 0; });
+
+  var byId = {};
+  pdfAnalisi.forEach(function(a){ if(a.id) byId[a.id]=a; });
 
   if (labVettoriData && labVettoriData.vettori && labVettoriData.vettori.length) {
     try {
@@ -2365,13 +2452,19 @@ async function labSbSearch() {
       if (resp.ok) {
         var embData = await resp.json();
         var queryVec = embData.data[0].embedding;
-        var byId = {};
-        pdfAnalisi.forEach(function(a){ if(a.id) byId[a.id]=a; });
 
         var scores = labVettoriData.vettori.map(function(v) {
           var src = byId[v.id] || {};
+          var semScore = labSbCosine(queryVec, v.vettore);
+          var bm = bm25Norm[v.id] || 0;
+          // Ibrido: 60% semantico + 40% BM25 — il semantico resta il segnale principale
+          // (era quello già in uso), il BM25 recupera match lessicali esatti che
+          // l'embedding a volte manca (termini tecnici rari, nomi propri, acronimi).
+          var hybrid = semScore * 0.6 + bm * 0.4;
           return {
-            score: labSbCosine(queryVec, v.vettore),
+            score: hybrid,
+            semScore: semScore,
+            bm25Score: bm,
             titolo: src.titolo || v.titolo || v.id,
             sommario: src.sommario || '',
             tecniche: src.tecniche_chiave || [],
@@ -2381,22 +2474,42 @@ async function labSbSearch() {
           };
         });
         scores.sort(function(a,b){ return b.score-a.score; });
-        topPdf = scores.slice(0,6).filter(function(s){ return s.score > 0.25; });
+        topPdf = scores.slice(0,6).filter(function(s){ return s.score > 0.2 || s.semScore > 0.25; });
         usedSemantic = true;
       }
-    } catch(e) { /* fallback keyword */ }
+    } catch(e) { /* fallback keyword/BM25 */ }
   }
 
-  // Fallback: ricerca keyword nei PDF analizzati
+  // Fallback (embedding non disponibile): ranking BM25 puro invece di un punteggio
+  // piatto 0.8 uguale per tutti — così anche senza rete i risultati sono ordinati
+  // per rilevanza reale, non solo per ordine di apparizione nell'array.
   if (!topPdf.length) {
-    var ql = query.toLowerCase();
-    topPdf = pdfAnalisi.filter(function(a){
-      return (a.titolo||'').toLowerCase().indexOf(ql)!==-1
-        || (a.sommario||'').toLowerCase().indexOf(ql)!==-1
-        || (a.tecniche_chiave||[]).some(function(t){ return t.toLowerCase().indexOf(ql)!==-1; });
-    }).slice(0,5).map(function(a){
-      return { titolo:a.titolo||'', sommario:a.sommario||'', tecniche:a.tecniche_chiave||[], consiglio:a.consiglio_coltivazione||a.consiglio_elettrocultura||'', estratto:a.estratto_chiave||'', score:0.8, id:a.id };
-    });
+    var bm25Ranked = pdfAnalisi
+      .filter(function(a){ return a.id && bm25Raw[a.id] > 0; })
+      .map(function(a) {
+        return {
+          titolo: a.titolo||'', sommario: a.sommario||'', tecniche: a.tecniche_chiave||[],
+          consiglio: a.consiglio_coltivazione||a.consiglio_elettrocultura||'',
+          estratto: a.estratto_chiave||'', score: bm25Norm[a.id] || 0, id: a.id
+        };
+      })
+      .sort(function(a,b){ return b.score - a.score; })
+      .slice(0,6);
+
+    if (bm25Ranked.length) {
+      topPdf = bm25Ranked;
+    } else {
+      // Ultimo fallback: substring puro (query troppo corta/rara per il tokenizer BM25,
+      // es. 1-2 caratteri o un acronimo filtrato dagli stopword/lunghezza minima)
+      var ql = query.toLowerCase();
+      topPdf = pdfAnalisi.filter(function(a){
+        return (a.titolo||'').toLowerCase().indexOf(ql)!==-1
+          || (a.sommario||'').toLowerCase().indexOf(ql)!==-1
+          || (a.tecniche_chiave||[]).some(function(t){ return t.toLowerCase().indexOf(ql)!==-1; });
+      }).slice(0,5).map(function(a){
+        return { titolo:a.titolo||'', sommario:a.sommario||'', tecniche:a.tecniche_chiave||[], consiglio:a.consiglio_coltivazione||a.consiglio_elettrocultura||'', estratto:a.estratto_chiave||'', score:0.8, id:a.id };
+      });
+    }
   }
 
   // (3) FIX Rev.16: il filtro fase prima ESCLUDEVA i risultati non corrispondenti
