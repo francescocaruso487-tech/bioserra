@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-08T19:19:27.441122+00:00",
+  "lastUpdate": "2026-07-08T19:30:37.554216+00:00",
   "analisi": {
     "totale_voci": 300,
     "pipeline_v25_fulltext": 35,
@@ -93,6 +93,94 @@
         "pct_coperta": 32.8
       }
     ],
+    "categoria_breakdown": {
+      "web_coltivazione": 250,
+      "fusa_germinazione": 1,
+      "fusa_plantula": 1,
+      "fusa_vegetativa": 1,
+      "fusa_fioritura": 1,
+      "fusa_raccolta": 1,
+      "fusa_essiccazione_concia": 1,
+      "fusa_substrati_vasi": 1,
+      "fusa_nutrizione_ph": 1,
+      "fusa_problemi": 1,
+      "fusa_training": 1,
+      "fusa_autofiorenti": 1,
+      "fusa_outdoor": 1
+    },
+    "categoria_senza_valore": 38,
+    "per_categoria_stato": {
+      "(senza categoria)": {
+        "totale": 38,
+        "v25_fulltext": 35,
+        "stub": 18
+      },
+      "web_coltivazione": {
+        "totale": 250,
+        "v25_fulltext": 0,
+        "stub": 0
+      },
+      "fusa_germinazione": {
+        "totale": 1,
+        "v25_fulltext": 0,
+        "stub": 1
+      },
+      "fusa_plantula": {
+        "totale": 1,
+        "v25_fulltext": 0,
+        "stub": 1
+      },
+      "fusa_vegetativa": {
+        "totale": 1,
+        "v25_fulltext": 0,
+        "stub": 1
+      },
+      "fusa_fioritura": {
+        "totale": 1,
+        "v25_fulltext": 0,
+        "stub": 1
+      },
+      "fusa_raccolta": {
+        "totale": 1,
+        "v25_fulltext": 0,
+        "stub": 1
+      },
+      "fusa_essiccazione_concia": {
+        "totale": 1,
+        "v25_fulltext": 0,
+        "stub": 1
+      },
+      "fusa_substrati_vasi": {
+        "totale": 1,
+        "v25_fulltext": 0,
+        "stub": 1
+      },
+      "fusa_nutrizione_ph": {
+        "totale": 1,
+        "v25_fulltext": 0,
+        "stub": 1
+      },
+      "fusa_problemi": {
+        "totale": 1,
+        "v25_fulltext": 0,
+        "stub": 1
+      },
+      "fusa_training": {
+        "totale": 1,
+        "v25_fulltext": 0,
+        "stub": 1
+      },
+      "fusa_autofiorenti": {
+        "totale": 1,
+        "v25_fulltext": 0,
+        "stub": 1
+      },
+      "fusa_outdoor": {
+        "totale": 1,
+        "v25_fulltext": 0,
+        "stub": 1
+      }
+    },
     "lingua_popolata": 37,
     "lingua_breakdown": {
       "it": 37
@@ -135,9 +223,7 @@
     "copertura_coppie_pct_stimata": 100.2
   },
   "coerenza": {
-    "id_duplicati": [
-      "pdf_294"
-    ],
+    "id_duplicati": [],
     "voci_con_id_o_titolo_mancante": []
   }
 }
