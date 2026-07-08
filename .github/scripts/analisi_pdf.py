@@ -436,6 +436,19 @@ def main():
     nuove = []
     mistral_count = 0
 
+    # Rev.26 fix bug reale: l'id per le voci NUOVE non deve mai basarsi su len(analisi_esistenti)+i.
+    # analisi_esistenti mescola 3 namespace di id (pdf_N, web_*, fuso_*): il conteggio totale
+    # (es. 300) NON corrisponde al massimo numero pdf_N realmente in uso (es. 310, con gap),
+    # quindi la vecchia formula collideva con id pdf_N già assegnati (bug reale: id duplicato
+    # 'pdf_294' assegnato due volte a documenti diversi). Ora si usa max(pdf_N esistenti)+1,
+    # incrementato ad ogni nuovo id assegnato in questo batch — indipendente dal totale voci
+    # e dagli id non numerici.
+    numeri_pdf_esistenti = [
+        int(a['id'].split('_', 1)[1]) for a in analisi_esistenti
+        if a.get('id', '').startswith('pdf_') and a['id'].split('_', 1)[1].isdigit()
+    ]
+    prossimo_id_num = (max(numeri_pdf_esistenti) + 1) if numeri_pdf_esistenti else 0
+
     for i, (pdf_file, safe_id, titolo) in enumerate(batch):
         print(f'\n[{i+1}/{len(batch)}] {titolo[:65]}')
 
@@ -462,9 +475,13 @@ def main():
         else:
             print(f'  Locale: {len(result.get("sommario",""))}c')
 
-        # Mantieni id esistente se c'è
+        # Mantieni id esistente se c'è, altrimenti assegna il prossimo numero libero reale
         analisi_curr = by_titolo.get(titolo.lower(), {})
-        result['id']   = analisi_curr.get('id') or f'pdf_{len(analisi_esistenti)+i}'
+        if analisi_curr.get('id'):
+            result['id'] = analisi_curr['id']
+        else:
+            result['id'] = f'pdf_{prossimo_id_num}'
+            prossimo_id_num += 1
         result['titolo'] = titolo
         result['data_analisi'] = oggi
         result['rilevanza'] = 'alta'
@@ -485,9 +502,19 @@ def main():
     titoli_nuovi = {a['titolo'].strip().lower() for a in nuove}
     tutte = [a for a in analisi_esistenti if a.get('titolo','').strip().lower() not in titoli_nuovi]
     tutte += nuove
-    for idx, a in enumerate(tutte):
+    # Rev.26 fix: stesso bug della riga precedente — il fallback per voci senza id
+    # deve usare max(pdf_N esistenti in tutte)+1, mai la posizione nell'array (idx),
+    # perché tutte mescola namespace diversi (pdf_N, web_*, fuso_*) e idx non corrisponde
+    # al prossimo numero pdf_N realmente libero.
+    numeri_finali = [
+        int(a['id'].split('_', 1)[1]) for a in tutte
+        if a.get('id', '').startswith('pdf_') and a['id'].split('_', 1)[1].isdigit()
+    ]
+    prossimo_fallback = (max(numeri_finali) + 1) if numeri_finali else 0
+    for a in tutte:
         if not a.get('id'):
-            a['id'] = f'pdf_{idx}'
+            a['id'] = f'pdf_{prossimo_fallback}'
+            prossimo_fallback += 1
         a['rilevanza'] = 'alta'
 
     tutte = ricalcola_connessioni(tutte)
