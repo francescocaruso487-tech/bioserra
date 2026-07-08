@@ -77,6 +77,17 @@ def gh_list(path):
     with urllib.request.urlopen(req) as r:
         return json.load(r)
 
+_ALL_CHUNKS_LISTING = None
+def get_chunk_totale(parent_id):
+    """Rev.25: quanti chunk esistono per un documento padre (cache della listing, 1 sola chiamata)."""
+    global _ALL_CHUNKS_LISTING
+    if _ALL_CHUNKS_LISTING is None:
+        try:
+            _ALL_CHUNKS_LISTING = gh_list('data/testi/chunks')
+        except Exception:
+            _ALL_CHUNKS_LISTING = []
+    return sum(1 for it in _ALL_CHUNKS_LISTING if it['name'].startswith(parent_id + '_chunk_'))
+
 def gh_raw(path):
     """Resiliente: 3 tentativi, rilancia l'ultima eccezione se falliscono tutti."""
     last_ex = None
@@ -347,8 +358,22 @@ def main():
             print(f'  PUT ERR: {ex}')
             continue
 
-        # Aggiorna lingua in pdf_knowledge
-        if f['safe_id'] in analisi_map:
+        # Aggiorna lingua in pdf_knowledge — Rev.25: per i CHUNK, traccia il progresso
+        # a livello di documento padre invece di ignorarli (gap segnalato da Fra).
+        # Il padre passa a lingua='it' solo quando TUTTI i suoi chunk sono tradotti.
+        m = re.match(r'^(.*)_chunk_\d+$', f['safe_id'])
+        if m:
+            parent_id = m.group(1)
+            if parent_id in analisi_map:
+                entry = analisi_map[parent_id]
+                prog = entry.get('chunk_progresso', {'tradotti': 0, 'totale': 0})
+                prog['tradotti'] = prog.get('tradotti', 0) + 1
+                if not prog.get('totale'):
+                    prog['totale'] = get_chunk_totale(parent_id)
+                entry['chunk_progresso'] = prog
+                if prog['totale'] and prog['tradotti'] >= prog['totale']:
+                    entry['lingua'] = 'it'
+        elif f['safe_id'] in analisi_map:
             analisi_map[f['safe_id']]['lingua'] = 'it'
         time.sleep(2)
 
