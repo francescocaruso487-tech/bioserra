@@ -233,8 +233,16 @@ def raccogli_file_da_tradurre(pdf_knowledge):
             da_tradurre.append({
                 'path': f['path'],
                 'safe_id': safe_id,
-                'name': f['name']
+                'name': f['name'],
+                'size': f.get('size', 0)
             })
+
+    # Rev.25d FIX: prima i file più piccoli — un documento enorme (es. 200KB+ non chunked)
+    # tradotto pezzo per pezzo poteva monopolizzare da solo tutto il timeout di un run,
+    # bloccando l'intera coda. Ordinando per dimensione crescente il batch copre più
+    # documenti distinti per run; i file grandi vengono comunque tradotti, un po' alla volta,
+    # quando restano gli unici candidati.
+    da_tradurre.sort(key=lambda f: f.get('size', 0))
 
     return da_tradurre
 
