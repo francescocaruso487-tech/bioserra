@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-07T12:18:35.750562+00:00",
+  "lastUpdate": "2026-07-08T10:34:43.947394+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2225,14 +2225,81 @@
       "data_proposta": "2026-07-07",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto del Compostaggio Biodinamico su Varietà Premiate di Pianta in Living Soil: Impatto su Aroma, Resa e Contenuto di CBD",
+      "ipotesi": "L'arricchimento del suolo tramite compostaggio biodinamico (Manuale A) potenzia l'espressione genetica delle varietà premiate di Pianta (Manuale B), portando a un aumento della resa, della concentrazione di CBD e della complessità aromatica. Questo perché il compost biodinamico, ricco di microrganismi benefici e sostanze umiche, ottimizza la disponibilità di nutrienti e l'attività microbica, favorendo l'assorbimento di composti secondari come terpeni e cannabinoidi.",
+      "protocollo": [
+        "Preparare due parcelle identiche in Living Soil (1m x 1m) con substrato omogeneo (50% terra, 30% compost biodinamico, 20% perlite). Una parcella riceve compost biodinamico aggiuntivo (20% del volume), l'altra compost standard (controllo).",
+        "Piantare semi femminizzati di una varietà premiata per CBD (es. 'CBD Critical Mass' di Zamnesia) in entrambe le parcelle, con 4 piante per parcella, disposte a quadrato. Mantenere distanza di 50 cm tra le piante.",
+        "Irrigare solo con acqua (water-only) per 30 giorni, monitorando umidità (50-60%) e pH (6.0-6.5). Applicare una soluzione di micorrize (Rhizophagus intraradices) in entrambe le parcelle per standardizzare l'inoculo.",
+        "A fine ciclo, raccogliere i dati: peso fresco delle infiorescenze, analisi HPLC per CBD/THC, e valutazione sensoriale dell'aroma tramite panel di 3 esperti (scala 1-10 per intensità e complessità)."
+      ],
+      "materiali": [
+        "Semi femminizzati CBD Critical Mass (Zamnesia)",
+        "Compost biodinamico (preparato con metodo Steiner) e compost standard",
+        "Strumenti per analisi HPLC portatile (es. 420nm UV-VIS) o servizio di laboratorio esterno",
+        "Sensori di umidità/pH, acqua deionizzata, micorrize (Rhizophagus intraradices)"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Peso fresco delle infiorescenze (bilancia digitale 0.1g precisione)",
+        "Concentrazione di CBD/THC (HPLC o kit colorimetrico)",
+        "Valutazione aroma (panel esperti con scheda standardizzata)",
+        "Conteggio dei tricomi (microscopio 40x per densità)"
+      ],
+      "variabili_controllo": "Varietà di pianta, densità di semina, substrato base, irrigazione, esposizione solare, temperatura, umidità, pH, inoculo di micorrize, periodo di crescita",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "5 Fattori Che Influenzano La Disponibilità Di Nutrienti Nell",
+      "fonte_b": "Macchie bianche sulle foglie di pianta",
+      "originalita": "L'esperimento combina specificamente le tecniche di compostaggio biodinamico (Manuale A) con la selezione di varietà premiate (Manuale B), un approccio non presente nei manuali singolarmente. Inoltre, integra misure quantitative (HPLC, peso) con valutazioni qualitative (aroma), tipiche della biodinamica, in un contesto Living Soil outdoor.",
+      "id": "esp_conn_2026-07-08_001",
+      "data_proposta": "2026-07-08",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Rito di Iside nel Compost: Trasmutazione Alchemica per l'Attivazione Microbica del Living Soil",
+      "ipotesi": "Applicare un rituale ispirato ai principi di rigenerazione e trasformazione di Iside (Manuale B) durante il compostaggio accelererà la decomposizione della materia organica e aumenterà l'attività microbica nel Living Soil (Manuale A), misurabile tramite respirazione del suolo e contenuto di humus. Il rituale, agendo come stimolo simbolico-cosmico, potrebbe mimare l'equilibrio tra luce/tenebra (Guerra santa di Crowley/Fortune) necessario per la rinascita alchemica della materia.",
+      "protocollo": [
+        "Preparare due cumuli di compost identici (1m³ ciascuno) con lo stesso mix di scarti vegetali, letame e paglia. Misurare umidità (60%), temperatura (20-25°C) e pH (6.5-7.5) in entrambi (Manuale A).",
+        "Per il cumulo 'Rito di Iside', eseguire un rituale quotidiano al tramonto per 15 minuti: tracciare un cerchio con cenere di legna (simbolo di purificazione), posizionare al centro una ciotola con acqua (Iside come dea delle acque) e recitare una formula di 'invocazione alla rigenerazione' (es. 'Che la materia si dissolva per rinascere'). Per il cumulo 'Controllo', eseguire solo osservazione passiva.",
+        "Dopo 7 giorni, misurare la temperatura interna dei cumuli (Manuale A: attività microbica) e prelevare campioni per analisi della respirazione del suolo (CO₂ emesso in 24h). Ripetere settimanalmente.",
+        "A fine esperimento (30 giorni), analizzare il contenuto di humus (metodo Loss on Ignition) e la densità microbica (piastre di coltura) in entrambi i cumuli. Confrontare i dati con i parametri iniziali."
+      ],
+      "materiali": [
+        "2 cumuli di compost (1m³ ciascuno)",
+        "Cenere di legna, ciotola in terracotta, acqua distillata",
+        "Termometro a sonda, pHmetro, igrometro",
+        "Kit per respirazione del suolo (es. respirometro O₂/CO₂)",
+        "Forno a muffola per analisi humus"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Respirazione del suolo (mg CO₂/kg suolo/24h) - misurata con respirometro",
+        "Contenuto di humus (%) - tramite perdita per ignizione a 550°C",
+        "Temperatura interna del cumulo (°C) - sonda ogni 3 giorni",
+        "Densità microbica (UFC/g suolo) - piastre di coltura su agar nutritivo"
+      ],
+      "variabili_controllo": "Stesso substrato iniziale, stessa esposizione solare, stessa umidità mantenuta tramite irrigazione con acqua-only, stessa tecnica di rivoltamento manuale ogni 5 giorni.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "5 Fattori Che Influenzano La Disponibilità Di Nutrienti Nell",
+      "fonte_b": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
+      "originalita": "L'esperimento combina per la prima volta un rituale magico-biodinamico (Manuale B) con protocolli scientifici di compostaggio (Manuale A), creando un ponte tra simbologia alchemica e agronomia quantitativa. Nessun manuale singolo suggerisce di usare rituali come variabile attiva nel compostaggio, né di misurare l'impatto simbolico-cosmico su parametri microbiologici.",
+      "id": "esp_conn_2026-07-08_002",
+      "data_proposta": "2026-07-08",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-07",
+    "data": "2026-07-08",
     "nuove_proposte": 2,
-    "pdf_analizzati": 96,
-    "connessioni_usate": 29
+    "pdf_analizzati": 104,
+    "connessioni_usate": 39
   }
 }
