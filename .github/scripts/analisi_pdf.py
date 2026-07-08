@@ -429,7 +429,8 @@ def main():
 
     # Rev.25: batch alzato da 20 a 25/notte per completare la migrazione full-text prima possibile
     # (richiesto esplicitamente: "tutto insieme appena possibile, anche più notti")
-    batch = da_rianalizzare[:10]  # Rev.25c: 10/notte, margine sicuro nel timeout esistente (30min, non modificabile ora)
+    da_rianalizzare.sort(key=lambda t: t[0].get('size', 0))  # TEMP diagnostico: piccoli prima
+    batch = da_rianalizzare[:3]  # TEMP diagnostico Rev.25e
     nuove = []
     mistral_count = 0
 
@@ -505,6 +506,14 @@ def main():
 
     n_migrati = sum(1 for a in tutte if a.get('pipeline_ver') == 'v25_fulltext')
     print(f'\n=== +{len(nuove)} | tot:{len(tutte)}/89 | Mistral:{mistral_count} | migrati v25:{n_migrati}/{len(tutte)} ===')
+
+    # TEMP diagnostico Rev.25e: capiamo perché alcuni doc piccoli falliscono ancora
+    try:
+        debug_content = json.dumps({'errori': _DEBUG_ERRORS[:15], 'timestamp': oggi}, indent=2, ensure_ascii=False)
+        sha_dbg = gh_get_sha('data/_debug_mistral.json')
+        gh_put('data/_debug_mistral.json', debug_content, sha_dbg, f'debug temp {oggi}')
+    except Exception as ex:
+        print(f'  (debug file non scritto: {ex})')
 
     summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
     if summary_path:
