@@ -525,4 +525,15 @@ def main():
             print(f'  (step summary non scritto: {ex})')
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as ex:
+        import traceback
+        tb = traceback.format_exc()
+        print(tb)
+        try:
+            sha_dbg = gh_get_sha('data/_debug_crash.json')
+            gh_put('data/_debug_crash.json', json.dumps({'traceback': tb}, indent=2), sha_dbg, 'debug crash temp')
+        except Exception:
+            pass
+        raise
