@@ -301,5 +301,27 @@ def main():
     print(f'Commit: {result["commit"]["sha"][:8]}')
     print(f'Piante: {len(stato_piante)} | Ore luce: {ore_luce}h')
 
+    # Step Summary (Rev.23): riepilogo leggibile nella pagina del run, utile
+    # per un controllo veloce da telefono senza dover aprire i log completi.
+    summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
+    if summary_path:
+        try:
+            with open(summary_path, 'a', encoding='utf-8') as f:
+                f.write(f'## 🌿 Piante Stato Update - {oggi.isoformat()}\n\n')
+                f.write(f'Ore luce effettive: **{ore_luce}h**\n\n')
+                f.write('| Pianta | Fase | Data raccolta | Override |\n')
+                f.write('|---|---|---|---|\n')
+                for p in stato_piante:
+                    ovr = '✓' if p.get('override') else ''
+                    f.write(f"| {p['nome']} | {p['fase']} | {p.get('data_raccolta','-')} | {ovr} |\n")
+                if alerts_oggi:
+                    f.write(f'\n**Alert generati:** {len(alerts_oggi)}\n')
+                    for a in alerts_oggi:
+                        f.write(f"- [{a['tipo']}] {a['msg']}\n")
+                else:
+                    f.write('\nNessun alert generato.\n')
+        except Exception as ex:
+            print(f'  (step summary non scritto: {ex})')
+
 if __name__ == '__main__':
     main()
