@@ -285,8 +285,10 @@ def main():
         elif sys.argv[sys.argv.index(arg)-1] in ('--mode', '-m'):
             MODE = arg
 
-    MAX_PDF_CONCETTI = 3 if MODE == 'pomeriggio' else 5
-    MAX_COPPIE       = 20 if MODE == 'pomeriggio' else 10
+    # Rev.25: limiti alzati (~2x) per accelerare la copertura completa su 292 voci,
+    # mantenendo l'approccio a coppie Mistral (scelta esplicita: qualità prima della velocità)
+    MAX_PDF_CONCETTI = 6 if MODE == 'pomeriggio' else 10
+    MAX_COPPIE       = 40 if MODE == 'pomeriggio' else 20
 
     oggi = datetime.date.today().isoformat()
     print(f'=== BioSerra Connessioni Update [{MODE.upper()}] ({oggi}) ===')
@@ -497,24 +499,39 @@ def main():
 
     # Set di coppie già analizzate semanticamente (per non rifare)
     edges_semantici_set = set()
+    conteggio_edge = {}
     for e in grafo.get('edges', []):
         if e.get('tipo') == 'semantico_reale':
             edges_semantici_set.add(f'sem|{e["source"]}|{e["target"]}')
+            conteggio_edge[e['source']] = conteggio_edge.get(e['source'], 0) + 1
+            conteggio_edge[e['target']] = conteggio_edge.get(e['target'], 0) + 1
 
-    # Genera coppie prioritizzando i più rilevanti
+    # Rev.25 FIX: prima le coppie candidate erano scelte SOLO tra i primi 15 PDF per
+    # rilevanza (i in top10, j in top15) — tutti gli altri restavano esclusi dal grafo
+    # per sempre, indipendentemente da MAX_COPPIE. Ora si considera l'intero corpus,
+    # con priorità ai PDF con MENO connessioni esistenti: rotazione naturale che nel
+    # tempo copre tutti i documenti, non solo una clique fissa dei più rilevanti.
+    pdf_per_rotazione = sorted(
+        pdf_ordinati,
+        key=lambda pd: (conteggio_edge.get(pd[0], 0), -rilevanza_pdf(pd))
+    )
+
     coppie_da_fare = []
-    for i in range(min(10, len(pdf_ordinati))):
-        for j in range(i+1, min(15, len(pdf_ordinati))):
-            pdf_id_a = pdf_ordinati[i][0]
-            pdf_id_b = pdf_ordinati[j][0]
-            chiave = f'{pdf_id_a}|{pdf_id_b}'
-            chiave_inv = f'{pdf_id_b}|{pdf_id_a}'
-            # Salta solo se già esiste un edge semantico_reale tra questi due PDF
+    n_rot = len(pdf_per_rotazione)
+    pool_target = MAX_COPPIE * 4  # raccoglie un pool più ampio del necessario, poi tronca
+    for i in range(n_rot):
+        if len(coppie_da_fare) >= pool_target:
+            break
+        for j in range(i+1, n_rot):
+            pdf_id_a = pdf_per_rotazione[i][0]
+            pdf_id_b = pdf_per_rotazione[j][0]
             chiave_sem = f'sem|{pdf_id_a}|{pdf_id_b}'
             chiave_sem_inv = f'sem|{pdf_id_b}|{pdf_id_a}'
             if chiave_sem in edges_semantici_set or chiave_sem_inv in edges_semantici_set:
                 continue
-            coppie_da_fare.append((pdf_ordinati[i], pdf_ordinati[j]))
+            coppie_da_fare.append((pdf_per_rotazione[i], pdf_per_rotazione[j]))
+            if len(coppie_da_fare) >= pool_target:
+                break
 
     print(f'  Coppie da analizzare: {len(coppie_da_fare)} (max {MAX_COPPIE} [{MODE}])')
 
@@ -580,6 +597,25 @@ def main():
     print(f'Concetti estratti da {nuovi_concetti} nuovi PDF')
     print(f'Nuove connessioni semantiche: {len(nuove_connessioni)}')
     print(f'Grafo totale: {len(nodi)} nodi, {len(edges_list)} edges')
+
+    n_pdf_totali = len(pdf_ordinati)
+    n_pdf_isolati = sum(1 for pid, _ in pdf_ordinati if conteggio_edge.get(pid, 0) == 0)
+    coppie_possibili = n_pdf_totali * (n_pdf_totali - 1) // 2 if n_pdf_totali > 1 else 0
+    coppie_fatte = len(edges_semantici_set) // 2 if edges_semantici_set else len(edges_list)
+    copertura_pct = (coppie_fatte / coppie_possibili * 100) if coppie_possibili else 0
+    print(f'Copertura coppie: ~{coppie_fatte}/{coppie_possibili} ({copertura_pct:.1f}%) | PDF ancora isolati: {n_pdf_isolati}/{n_pdf_totali}')
+
+    summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
+    if summary_path:
+        try:
+            with open(summary_path, 'a', encoding='utf-8') as f:
+                f.write(f'## Connessioni [{MODE}] — {oggi}\n\n')
+                f.write(f'- Nuove connessioni semantiche questo run: **{len(nuove_connessioni)}**\n')
+                f.write(f'- Grafo totale: **{len(nodi)} nodi, {len(edges_list)} edges**\n')
+                f.write(f'- Copertura stimata coppie: **~{copertura_pct:.1f}%** ({coppie_fatte}/{coppie_possibili})\n')
+                f.write(f'- PDF ancora senza alcuna connessione: **{n_pdf_isolati}/{n_pdf_totali}**\n')
+        except Exception as ex:
+            print(f'  (step summary non scritto: {ex})')
 
 if __name__ == '__main__':
     main()
