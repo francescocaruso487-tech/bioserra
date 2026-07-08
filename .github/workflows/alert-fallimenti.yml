@@ -1,0 +1,46 @@
+name: BioSerra - Alert Fallimenti
+
+on:
+  workflow_run:
+    workflows:
+      - "BioSerra - Estrai Testi PDF"
+      - "BioSerra - Classifica Testi"
+      - "BioSerra - Analisi PDF"
+      - "traduci-testi"
+      - "BioSerra - Connessioni Semantiche"
+      - "BioSerra - Esperimenti Update"
+      - "BioSerra - Embedding PDF"
+      - "BioSerra - Concetti Index"
+      - "BioSerra - Brain Update"
+      - "Piante Stato Update"
+      - "BioSerra - Memoria Lungo Termine"
+      - "BioSerra - Guide Update"
+      - "BioSerra - Digest Update"
+      - "BioSerra - Telegram Notify"
+      - "BioSerra - Wiki Update"
+      - "Deploy GitHub Pages"
+      - "connessioni-pomeriggio"
+      - "fusione-siti-manuale"
+      - "scraping-siti"
+    types:
+      - completed
+
+permissions:
+  contents: read
+
+jobs:
+  alert:
+    if: github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invia alert Telegram sul fallimento
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          WF_NAME: ${{ github.event.workflow_run.name }}
+          WF_URL: ${{ github.event.workflow_run.html_url }}
+        run: |
+          MSG="🔴 BioSerra: il workflow '${WF_NAME}' e' FALLITO. ${WF_URL}"
+          curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -d chat_id="${TELEGRAM_CHAT_ID}" --data-urlencode text="${MSG}"
+          echo "### 🔴 Alert inviato" >> "$GITHUB_STEP_SUMMARY"
+          echo "Workflow fallito: ${WF_NAME}" >> "$GITHUB_STEP_SUMMARY"
