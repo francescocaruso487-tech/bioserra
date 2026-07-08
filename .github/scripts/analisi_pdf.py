@@ -429,7 +429,7 @@ def main():
 
     # Rev.25: batch alzato da 20 a 25/notte per completare la migrazione full-text prima possibile
     # (richiesto esplicitamente: "tutto insieme appena possibile, anche più notti")
-    batch = da_rianalizzare[:15]  # Rev.25b: 15/notte, margine sicuro con timeout 90min e finestre scorrevoli
+    batch = da_rianalizzare[:10]  # Rev.25c: 10/notte, margine sicuro nel timeout esistente (30min, non modificabile ora)
     nuove = []
     mistral_count = 0
 
