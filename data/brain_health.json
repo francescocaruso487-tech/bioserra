@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-09T20:09:03.187076+00:00",
+  "lastUpdate": "2026-07-09T20:11:44.569377+00:00",
   "analisi": {
     "totale_voci": 310,
     "pipeline_v25_fulltext": 45,
@@ -122,6 +122,7 @@
       }
     ],
     "categoria_breakdown": {
+      "scienza": 2,
       "web_coltivazione": 250,
       "fusa_germinazione": 1,
       "fusa_plantula": 1,
@@ -134,14 +135,19 @@
       "fusa_problemi": 1,
       "fusa_training": 1,
       "fusa_autofiorenti": 1,
-      "fusa_outdoor": 1
+      "fusa_outdoor": 1,
+      "esoterismo": 31,
+      "elettrocultura": 6,
+      "fisica_energie": 5,
+      "altro": 3,
+      "agricoltura": 1
     },
-    "categoria_senza_valore": 48,
+    "categoria_senza_valore": 0,
     "per_categoria_stato": {
-      "(senza categoria)": {
-        "totale": 48,
-        "v25_fulltext": 45,
-        "stub": 18
+      "scienza": {
+        "totale": 2,
+        "v25_fulltext": 1,
+        "stub": 2
       },
       "web_coltivazione": {
         "totale": 250,
@@ -207,6 +213,31 @@
         "totale": 1,
         "v25_fulltext": 0,
         "stub": 1
+      },
+      "esoterismo": {
+        "totale": 31,
+        "v25_fulltext": 29,
+        "stub": 8
+      },
+      "elettrocultura": {
+        "totale": 6,
+        "v25_fulltext": 6,
+        "stub": 5
+      },
+      "fisica_energie": {
+        "totale": 5,
+        "v25_fulltext": 5,
+        "stub": 2
+      },
+      "altro": {
+        "totale": 3,
+        "v25_fulltext": 3,
+        "stub": 1
+      },
+      "agricoltura": {
+        "totale": 1,
+        "v25_fulltext": 1,
+        "stub": 0
       }
     },
     "lingua_popolata": 47,
