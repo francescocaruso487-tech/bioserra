@@ -1,34 +1,33 @@
 # BioSerra Wiki — Indice
 
-> Aggiornato: 2026-07-08 | 16 concetti | Knowledge base Living Soil + Elettrocultura
+> Aggiornato: 2026-07-09 | 15 concetti | Knowledge base Living Soil + Elettrocultura
 
 ## Panoramica
 - [Overview generale](sintesi/overview.md)
 
 ## Elettrocultura
-- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Utilizza spirali di rame per stimolare la crescita delle piante attraverso campi
-- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 4 PDF)* — Tratta l’acqua di irrigazione con magneti per migliorare l’assorbimento dei nutr
-- [Elettrocultura](concetti/elettrocultura.md) *(in 4 PDF)* — Applica correnti elettriche deboli o campi elettromagnetici per stimolare la cre
-- [Antenna di Terra](concetti/antenna_terra.md) *(in 6 PDF)* — Installa un’antenna metallica nel terreno per armonizzare i campi biofisici e mi
-- [Lega Ferro-Rame (Fe-Cu)](concetti/lega_ferro_rame.md) *(in 2 PDF)* — Utilizza una lega di ferro e rame nel suolo per migliorare la disponibilità di n
+- [Acqua Magnetizzata](concetti/acqua_magnetizzata.md) *(in 10 PDF)* — Trattamento acqua con magneti per migliorare assorbimento radicale.
+- [Spirale in Rame](concetti/spirale_rame.md) *(in 10 PDF)* — Spirale in rame per armonizzazione campi elettromagnetici nella zona radice.
+- [Circuito di Lakhovsky](concetti/circuito_lakhovsky.md) *(in 10 PDF)* — Oscillatore multicellulare per stimolazione risonanza cellulare delle piante.
+- [Elettrodi Fe-Cu](concetti/elettrodi_fe_cu.md) *(in 10 PDF)* — Coppia ferro-rame nel suolo per stimolazione bioelettrochimica radicale.
+- [Antenna di Terra](concetti/antenna_terra.md) *(in 10 PDF)* — Connessione a terra per captare energie telluriche e migliorare il campo bioelet
 
 ## Suolo
-- [Compostaggio](concetti/compostaggio.md) *(in 3 PDF)* — Trasforma materiali organici in compost per arricchire il suolo di nutrienti e m
-- [Suolo Vivente](concetti/gestione_suolo_vivente.md) *(in 1 PDF)* — Mantenimento microbioma del suolo attivo.
-- [Compostaggio Organico](concetti/compostaggio_organico.md) *(in 3 PDF)* — Produzione compost di qualita per ammendare il substrato.
-- [Inoculazione Micorrize](concetti/inoculazione_micorrize.md) — Introduzione funghi micorrizici per simbiosi radicale.
-- [Te di Compost](concetti/te_di_compost.md) *(in 3 PDF)* — Infuso aerobico di compost per applicazione fogliare o radicale.
-- [Gestione pH Suolo](concetti/gestione_ph_suolo.md) *(in 1 PDF)* — Mantenimento pH ottimale 6.0-7.0 per biodisponibilita nutrienti.
+- [Suolo Vivente](concetti/gestione_suolo_vivente.md) *(in 8 PDF)* — Mantenimento microbioma del suolo attivo.
+- [Compostaggio Organico](concetti/compostaggio_organico.md) *(in 10 PDF)* — Produzione compost di qualita per ammendare il substrato.
+- [Inoculazione Micorrize](concetti/inoculazione_micorrize.md) *(in 1 PDF)* — Introduzione funghi micorrizici per simbiosi radicale.
+- [Te di Compost](concetti/te_di_compost.md) *(in 10 PDF)* — Infuso aerobico di compost per applicazione fogliare o radicale.
+- [Gestione pH Suolo](concetti/gestione_ph_suolo.md) *(in 9 PDF)* — Mantenimento pH ottimale 6.0-7.0 per biodisponibilita nutrienti.
 
 ## Nutrizione
-- [Fertilizzazione Organica](concetti/fertilizzazione_organica.md) — Apporto nutrienti tramite ammendanti organici naturali.
+- [Fertilizzazione Organica](concetti/fertilizzazione_organica.md) *(in 2 PDF)* — Apporto nutrienti tramite ammendanti organici naturali.
 - [Farine di Rocce](concetti/farine_di_rocce.md) — Minerali in polvere per rimineralizzazione lenta del substrato.
 
 ## Biodinamica
-- [Calendario Lunare](concetti/calendario_lunare.md) *(in 1 PDF)* — Pianificazione operazioni colturali secondo ciclo lunare.
+- [Calendario Lunare](concetti/calendario_lunare.md) *(in 4 PDF)* — Pianificazione operazioni colturali secondo ciclo lunare.
 
 ## Fitosanitario
-- [Controllo Parassiti Naturale](concetti/controllo_parassiti.md) *(in 1 PDF)* — Gestione biologica di infestazioni con metodi naturali.
+- [Controllo Parassiti Naturale](concetti/controllo_parassiti.md) *(in 5 PDF)* — Gestione biologica di infestazioni con metodi naturali.
 
 ## Raccolta
 - [Essiccazione Corretta](concetti/essiccazione_corretta.md) — Processo di asciugatura lenta per preservare qualita.
