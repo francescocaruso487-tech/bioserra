@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-07-08T20:03:50.610552+00:00",
+  "lastUpdate": "2026-07-09T19:42:17.222032+00:00",
   "analisi": {
-    "totale_voci": 300,
-    "pipeline_v25_fulltext": 35,
+    "totale_voci": 310,
+    "pipeline_v25_fulltext": 45,
     "non_ancora_riprocessate": 265,
     "stub_count": 30,
     "stub_ids": [
@@ -38,9 +38,9 @@
       "pdf_10"
     ],
     "finestre_analizzate_stats": {
-      "min": 7,
+      "min": 5,
       "max": 20,
-      "media": 16.7
+      "media": 17.3
     },
     "documenti_sottocoperti": [
       {
@@ -51,11 +51,25 @@
         "pct_coperta": 6.2
       },
       {
+        "id": "pdf_319",
+        "titolo": "LA CABALA MISTICA",
+        "testo_chars": 603851,
+        "finestre_analizzate": 20,
+        "pct_coperta": 14.9
+      },
+      {
         "id": "pdf_7",
         "titolo": "An Agricultural Testament - Albert Howard",
         "testo_chars": 556392,
         "finestre_analizzate": 20,
         "pct_coperta": 16.2
+      },
+      {
+        "id": "pdf_313",
+        "titolo": "LA FIGLIA DELLA LUNA (Aleister Crowley)",
+        "testo_chars": 549513,
+        "finestre_analizzate": 20,
+        "pct_coperta": 16.4
       },
       {
         "id": "pdf_298",
@@ -77,6 +91,20 @@
         "testo_chars": 353185,
         "finestre_analizzate": 20,
         "pct_coperta": 25.5
+      },
+      {
+        "id": "pdf_320",
+        "titolo": "Nikola Tesla, un genio volutamente dimenticato (Baccelli, Vi",
+        "testo_chars": 340094,
+        "finestre_analizzate": 20,
+        "pct_coperta": 26.5
+      },
+      {
+        "id": "pdf_317",
+        "titolo": "Wicca",
+        "testo_chars": 324071,
+        "finestre_analizzate": 20,
+        "pct_coperta": 27.8
       },
       {
         "id": "pdf_5",
@@ -108,11 +136,11 @@
       "fusa_autofiorenti": 1,
       "fusa_outdoor": 1
     },
-    "categoria_senza_valore": 38,
+    "categoria_senza_valore": 48,
     "per_categoria_stato": {
       "(senza categoria)": {
-        "totale": 38,
-        "v25_fulltext": 35,
+        "totale": 48,
+        "v25_fulltext": 45,
         "stub": 18
       },
       "web_coltivazione": {
@@ -181,43 +209,40 @@
         "stub": 1
       }
     },
-    "lingua_popolata": 37,
+    "lingua_popolata": 47,
     "lingua_breakdown": {
-      "it": 37
+      "it": 47
     },
-    "chunk_progresso_doc_con_dato": 0,
-    "chunk_progresso_totale_tradotti": 0,
-    "chunk_progresso_totale_chunk": 0,
+    "chunk_progresso_doc_con_dato": 4,
+    "chunk_progresso_totale_tradotti": 4,
+    "chunk_progresso_totale_chunk": 62,
     "chunk_progresso_anomalie": []
   },
   "traduzione": {
-    "lingua_popolata": 37,
+    "lingua_popolata": 47,
     "lingua_breakdown": {
-      "it": 37
+      "it": 47
     },
-    "chunk_progresso_doc_con_dato": 0,
-    "chunk_progresso_totale_tradotti": 0,
-    "chunk_progresso_totale_chunk": 0
+    "chunk_progresso_doc_con_dato": 4,
+    "chunk_progresso_totale_tradotti": 4,
+    "chunk_progresso_totale_chunk": 62
   },
   "connessioni": {
-    "nodi_totali": 239,
-    "edges_totali": 28494,
+    "nodi_totali": 299,
+    "edges_totali": 44632,
     "nodi_isolati": 0,
     "nodi_isolati_ids": [],
     "peso_stats": {
       "min": 0.4,
       "max": 0.9957,
-      "media": 0.848
+      "media": 0.854
     },
     "tipo_conn_breakdown": {
-      "principio_condiviso": 28,
-      "sinergia": 35,
-      "potenziamento": 7,
-      "contraddizione": 37,
-      "(nessuno)": 28381,
-      "contraddizione interessante": 4,
-      "sinergia applicabile": 1,
-      "contraddizione interessanti da investigare": 1
+      "principio_condiviso": 18,
+      "sinergia": 40,
+      "potenziamento": 3,
+      "contraddizione": 31,
+      "(nessuno)": 44540
     },
     "edges_dangling": [],
     "copertura_coppie_pct_stimata": 100.2
