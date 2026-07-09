@@ -2,8 +2,8 @@
 id: fertilizzazione_organica
 label: Fertilizzazione Organica
 categoria: nutrizione
-aggiornato: 2026-07-08
-pdf_count: 0
+aggiornato: 2026-07-09
+pdf_count: 2
 ---
 
 # Fertilizzazione Organica
@@ -12,26 +12,27 @@ pdf_count: 0
 # Fertilizzazione Organica
 
 ## Descrizione
-La **fertilizzazione organica** rappresenta un approccio fondamentale nella gestione del **Living Soil**, un ecosistema suolo vivo in cui la materia organica e i microrganismi svolgono un ruolo chiave nel rilascio graduale dei nutrienti. A differenza dei fertilizzanti sintetici, che forniscono nutrienti immediatamente disponibili ma con rischio di accumulo salino e squilibri microbici, gli ammendanti organici (come farine di sangue, osso o pesce) vengono decomposti da batteri e funghi del suolo, rilasciando azoto (N), fosforo (P) e potassio (K) in modo lento e costante. Questo processo, noto come **mineralizzazione**, è ottimizzato dalle condizioni climatiche della serra outdoor a Caserta (41°N), dove temperature miti e umidità favoriscono l’attività microbica per gran parte dell’anno. Inoltre, la fertilizzazione organica arricchisce il suolo di acidi umici e fulvici, migliorando la struttura del terreno, la capacità di scambio cationico (CEC) e la resilienza agli stress idrici.
+La **fertilizzazione organica** rappresenta l’apporto di nutrienti attraverso ammendanti naturali di origine vegetale, animale o microbica, in grado di nutrire le piante e al contempo rigenerare il suolo. A differenza dei fertilizzanti sintetici, questi materiali si decompongono gradualmente, rilasciando elementi essenziali (N, P, K, microelementi) in forme biodisponibili per la rizosfera. Il meccanismo d’azione si basa sulla **simbiosi tra microrganismi del suolo** (batteri, funghi micorrizici, attinomiceti) e radici, che trasformano la materia organica in humus stabile, migliorando struttura, capacità di scambio cationico (CEC) e resilienza del terreno. In un sistema **Living Soil** come quello di Caserta (41°N), dove il clima mediterraneo favorisce l’attività microbica, questa pratica è fondamentale per mantenere un equilibrio nutrizionale senza squilibri chimici.
 
-Il meccanismo d’azione si basa sulla **sinergia tra macro e micronutrienti**: ad esempio, il fosforo della farina d’osso viene reso disponibile dai funghi micorrizici, mentre l’azoto della farina di sangue è gradualmente idrolizzato dai batteri ammonificatori. Questo approccio è particolarmente efficace nelle fasi di **vegetazione** (dove serve N) e **fioritura** (dove P e K sono prioritari), poiché i nutrienti vengono rilasciati in risposta alle esigenze della pianta, riducendo gli sprechi e prevenendo carenze o eccessi. Studi in agricoltura biologica dimostrano che suoli trattati con fertilizzanti organici sviluppano una **biodiversità microbica superiore**, con un rapporto funghi/batteri ottimale per la salute delle piante.
+La fertilizzazione organica agisce anche come **regolatore ecologico**: i composti umici stimolano la produzione di fitormoni (auxine, citochinine) e aumentano la resistenza delle piante agli stress abiotici (siccità, salinità). Inoltre, i residui organici alimentano la **rete trofica del suolo**, promuovendo la biodiversità e la competizione naturale contro patogeni. Per le colture in serra outdoor, questa tecnica si integra perfettamente con i principi dell’**elettrocultura**, poiché i nutrienti organici migliorano la conducibilità elettrica del suolo, ottimizzando l’assorbimento delle emissioni telluriche captate da antenne in rame (come descritto nei PDF [294] e [307]).
 
 ---
 
 ## Come si applica in serra
+Per una serra **Living Soil** a Caserta (41°N), seguire questo protocollo stagionale:
 
-1. **Scelta degli ammendanti**:
-   - **Fase di vegetazione**: Utilizzare farina di sangue (10-12% N) o farina di pesce (5-7% N, 2-3% P) in dosi di **30-50 g/m²**, distribuiti uniformemente sulla superficie del suolo.
-   - **Fase di fioritura**: Preferire farina d’osso (15-20% P, 1-2% N) o guano (10-12% P, 1-2% N) a dosi di **20-40 g/m²**, evitando eccessi di azoto che potrebbero ritardare la maturazione.
+1. **Preparazione del substrato**:
+   - Miscelare **50% terriccio biologico** (privo di torba), **30% compost maturo** (2-3 mesi di decomposizione) e **20% ammendanti strutturanti** (fibra di cocco, perlite o biochar).
+   - Aggiungere **1-2 kg/m² di farina di sangue** (N 12-14%) e **0.5 kg/m² di farina d’osso** (P 20-25%) per stimolare la rizosfera. Mescolare con una motozappa o manualmente.
 
-2. **Frequenza e metodo di applicazione**:
-   - Applicare **ogni 10-14 giorni** in piccole quantità per evitare shock osmotici o accumuli di sali.
-   - Mescolare gli ammendanti con **1-2 cm di terriccio superficiale** o coprirli con uno strato sottile di compost maturo per accelerare la decomposizione.
-   - Innaffiare leggermente dopo l’applicazione per attivare i microrganismi.
+2. **Applicazione in vegetazione (marzo-giugno)**:
+   - **Dose**: 50-100 g/m² di farina di pesce (N 8%, P 4%, K 2%) o **sangue secco** (N 13%) ogni **15 giorni**.
+   - **Metodo**: Spargere uniformemente sulla superficie e interrare leggermente con una zappetta. Evitare il contatto diretto con le radici.
+   - **Monitoraggio**: Controllare il colore delle foglie (verde scuro = eccesso di N; giallo = carenza di Fe/Mg).
 
-3. **Monitoraggio e aggiustamenti**:
-   - **Colore delle foglie**: Foglie gialle possono indicare carenza di azoto (aggiungere farina di sangue), mentre foglie scure o arrossamenti possono segnalare eccesso di fosforo (ridurre farina d’osso).
-   - **pH del suolo**: Mantenere un pH tra **6.0 e 7.0** (ideale per l’assorbimento dei nutrienti organici). Se necessario, correggere con cenere di legno (pH alcalino) o torba (pH acido).
+3. **Transizione in fioritura (luglio-agosto)**:
+   - Ridurre le farine azotate (sangue/pesce) a favore di **farina d’osso** (P) e **potassio organico** (cenere di legna setacciata, K 5-10%).
+   - Aggiungere **humus di lombrico** (1 kg/m²) per apportare enzimi e microrganismi benefici.
 
-4. **Integrazione con altri input**:
-   - Abbinare a **com
+4. **Integrazione con elettrocultura**:
+   - Installare una **spirale di rame** (diametro 30 cm) sopra le piante più sensibili (es. pomodori) e collegarla a un **sistema
