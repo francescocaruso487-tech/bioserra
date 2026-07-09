@@ -17,7 +17,11 @@ HEADERS_GH = {
 FINESTRA_CHARS = 4500  # deve restare coerente con analisi_pdf.py
 
 def gh_get(path):
-    """Resiliente: 3 tentativi, fallback raw per file >1MB."""
+    """Resiliente: 3 tentativi. Per file >1MB (dove Contents API restituisce content
+    vuoto) legge via Git Blob API sul blob SHA fornito dalla Contents stessa — fonte di
+    verità certa, immune alla staleness della cache raw.githubusercontent.com (learning
+    Rev.26). Nessuna navigazione commit->tree necessaria: la Contents API dà già lo sha
+    del blob del file."""
     last_ex = None
     for attempt in range(3):
         try:
@@ -26,11 +30,12 @@ def gh_get(path):
             with urllib.request.urlopen(req, timeout=30) as r:
                 d = json.load(r)
             if not d.get('content', '').strip():
-                raw_url = f'https://raw.githubusercontent.com/{REPO}/main/{path}'
-                req2 = urllib.request.Request(raw_url, headers={
-                    'Authorization': f'token {GITHUB_TOKEN}', 'Cache-Control': 'no-cache'})
-                with urllib.request.urlopen(req2, timeout=30) as r2:
-                    return r2.read().decode('utf-8'), d['sha']
+                # File >1MB: content vuoto. Uso la Git Blob API sul blob SHA (no cache raw).
+                blob_req = urllib.request.Request(
+                    f'https://api.github.com/repos/{REPO}/git/blobs/{d["sha"]}', headers=HEADERS_GH)
+                with urllib.request.urlopen(blob_req, timeout=30) as rb:
+                    blob = json.load(rb)
+                return base64.b64decode(blob['content'].replace('\n', '')).decode('utf-8'), d['sha']
             return base64.b64decode(d['content'].replace('\n', '')).decode('utf-8'), d['sha']
         except Exception as ex:
             last_ex = ex
