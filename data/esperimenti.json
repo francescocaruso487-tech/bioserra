@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-08T10:34:43.947394+00:00",
+  "lastUpdate": "2026-07-09T06:26:23.227244+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2292,14 +2292,49 @@
       "data_proposta": "2026-07-08",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della genetica seedbank sulla risposta fogliare in Living Soil outdoor con stimolazione elettromagnetica debole",
+      "ipotesi": "Le piante coltivate in Living Soil outdoor con seedbank di genetica premium (es. Zamnesia Seeds, Royal Queen Seeds) mostreranno una minore incidenza di arricciamento fogliare verso il basso rispetto a varietà classiche o ibride F1, quando sottoposte a stimolazione elettromagnetica debole (elettrocultura). Questo perché le seedbank premium selezionano varietà con maggiore resilienza a stress ambientali (Manuale B) e le tecniche di coltivazione avanzate (Manuale A) riducono la necessità di adattamenti morfologici come l'arricciamento fogliare. L'elettrocultura potrebbe amplificare questo effetto migliorando l'assorbimento dei nutrienti nel Living Soil.",
+      "protocollo": [
+        "Preparare 3 gruppi di 10 piante ciascuno in Living Soil outdoor (Caserta, clima mediterraneo): Gruppo A (semi premium femminizzati, es. Royal Queen Seeds CBD), Gruppo B (semi ibridi F1 classici, es. FastBuds), Gruppo C (semi regolari, varietà a basso THC).",
+        "Applicare un campo elettromagnetico debole (50 Hz, 1 mT) per 2 ore al giorno (alba) tramite un elettrodo a spirale di rame interrato a 10 cm dalla base delle piante. Controllo senza elettrodo per Gruppo D (stesso delle seedbank di Gruppo A).",
+        "Monitorare giornalmente l'arricciamento fogliare verso il basso (scala 0-5: 0=nessun arricciamento, 5=arricciamento severo) e registrare dati su umidità del suolo, temperatura e pH del Living Soil.",
+        "Dopo 30 giorni, confrontare i dati tra gruppi e verificare se l'elettrocultura riduce l'arricciamento fogliare nelle piante con seedbank premium rispetto agli altri gruppi."
+      ],
+      "materiali": [
+        "Semi di pianta (3 varietà: premium CBD, ibrido F1, regolare a basso THC)",
+        "Living Soil pre-preparato (compost, micorrize, lombrichi)",
+        "Elettrodo a spirale di rame (1 m di filo, 1 mm diametro)",
+        "Generatore di corrente a 50 Hz (trasformatore da 12V)",
+        "Multimetro per misurare il campo magnetico",
+        "Termometro e igrometro per suolo",
+        "Scala di valutazione visiva dell'arricciamento fogliare"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Incidenza e gravità dell'arricciamento fogliare (scala 0-5) su 5 foglie per pianta, 3 volte a settimana",
+        "Confrontare la media dei gruppi con test statistico (ANOVA) per verificare differenze significative",
+        "Verifica finale: fotografie aeree delle piante per analisi morfometrica (es. software ImageJ)"
+      ],
+      "variabili_controllo": "Stesso substrato Living Soil, stessa esposizione solare, stessa irrigazione (water-only), stessa densità di piante per mq, stesso periodo di coltivazione.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "Perché le foglie della mia pianta si arricciano verso il basso",
+      "fonte_b": "La Coltivazione di Pianta All'Aperto",
+      "originalita": "L'esperimento combina per la prima volta: (1) l'analisi genetica delle seedbank (Manuale B) con (2) la risposta morfologica delle piante in Living Soil (Manuale A) e (3) l'elettrocultura come fattore di stress controllato. Nessun manuale singolo suggerisce di testare l'interazione tra questi tre elementi in un contesto outdoor con misure quantitative.",
+      "id": "esp_conn_2026-07-09_001",
+      "data_proposta": "2026-07-09",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-08",
-    "nuove_proposte": 2,
-    "pdf_analizzati": 104,
-    "connessioni_usate": 39
+    "data": "2026-07-09",
+    "nuove_proposte": 1,
+    "pdf_analizzati": 140,
+    "connessioni_usate": 91
   }
 }
