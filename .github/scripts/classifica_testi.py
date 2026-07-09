@@ -158,13 +158,63 @@ def classifica_locale(nome_file, testo):
             best_score, best_cat = score, cat
     return best_cat
 
-def aggiorna_categoria_pdf_knowledge(pdf_knowledge, titolo, categoria):
-    """Aggiorna il campo categoria_reale in pdf_knowledge.json."""
+def aggiorna_categoria_pdf_knowledge(pdf_knowledge, nome_file, categoria):
+    """Aggiorna categoria_reale in pdf_knowledge.json.
+    FIX Rev.27: match su testo_id (nome file esatto senza .txt) invece del titolo
+    normalizzato in modo lossy. Il vecchio match su titolo (con _->spazio ma senza
+    toccare trattini/apostrofi/troncamenti) falliva su 75/89 manuali reali, lasciando
+    categoria_reale vuota sui pdf_N. testo_id == nome file per 47/48 pdf_N; per l'unica
+    voce con testo_id vuoto (scan senza titolo) resta il fallback esatto sul titolo.
+    Ritorna True solo se ha effettivamente cambiato il valore."""
+    stem = nome_file[:-4] if nome_file.endswith('.txt') else nome_file
+    # 1. match primario: testo_id == nome file (deterministico, robusto)
     for a in pdf_knowledge.get('analisi', []):
-        if a.get('titolo', '').strip().lower() == titolo.strip().lower():
-            a['categoria_reale'] = categoria
-            return True
+        ti = (a.get('testo_id') or '').strip()
+        if ti and ti == stem:
+            if a.get('categoria_reale') != categoria:
+                a['categoria_reale'] = categoria
+                return True
+            return False
+    # 2. fallback: match esatto su titolo (voci con testo_id assente, es. pdf_88)
+    tl = stem.strip().lower()
+    for a in pdf_knowledge.get('analisi', []):
+        if (a.get('titolo') or '').strip().lower() == tl:
+            if a.get('categoria_reale') != categoria:
+                a['categoria_reale'] = categoria
+                return True
+            return False
     return False
+
+def backfill_categorie(pdf_knowledge):
+    """Backfill Rev.27: riempi categoria_reale sui file GIA' classificati nelle
+    sottocartelle. La categoria e' il nome della sottocartella in cui il file e' stato
+    copiato in run precedenti — nessuna chiamata Mistral, deterministico e gratuito.
+    Recupera i pdf_N congelati (gia' classificati ma mai scritti in pdf_knowledge per
+    via del vecchio bug di match). Ritorna il numero di voci aggiornate."""
+    mod = 0
+    for cat in CATEGORIE:
+        for f in gh_list(f'data/testi/{cat}'):
+            if f.get('type') == 'file' and f['name'].endswith('.txt'):
+                if aggiorna_categoria_pdf_knowledge(pdf_knowledge, f['name'], cat):
+                    mod += 1
+    return mod
+
+def salva_pdf_knowledge(pdf_knowledge, oggi):
+    """Salva pdf_knowledge.json su GitHub con SHA fresco. Estratto in funzione
+    (Rev.27) per poter salvare sia dal ramo backfill-only sia a fine classificazione."""
+    pdf_knowledge['lastUpdate'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    content_b64 = base64.b64encode(
+        json.dumps(pdf_knowledge, indent=2, ensure_ascii=False).encode()).decode()
+    sha_pk = gh_get_sha('data/pdf_knowledge.json')
+    body = json.dumps({
+        'message': f'classifica: aggiorna categoria_reale [{oggi}]',
+        'content': content_b64, 'sha': sha_pk, 'branch': 'main'
+    }).encode()
+    req2 = urllib.request.Request(
+        f'https://api.github.com/repos/{REPO}/contents/data/pdf_knowledge.json',
+        data=body, headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
+    with urllib.request.urlopen(req2) as r:
+        print(f'  Salvato pdf_knowledge: {json.load(r)["commit"]["sha"][:8]}')
 
 def main():
     oggi = datetime.date.today().isoformat()
@@ -197,15 +247,28 @@ def main():
     da_classificare = [f for f in testi_root if f['name'] not in gia_classificati]
     print(f'Da classificare ora: {len(da_classificare)}')
 
+    pk_modificato = False
+
+    # BACKFILL Rev.27: riempi categoria_reale sui file già classificati (deterministico,
+    # categoria = nome sottocartella, nessuna chiamata Mistral). Recupera i pdf_N che il
+    # vecchio bug di match aveva lasciato senza categoria_reale.
+    print('\nBackfill categoria_reale su file già classificati...')
+    n_bf = backfill_categorie(pdf_knowledge)
+    print(f'  Backfill: {n_bf} voci aggiornate')
+    if n_bf:
+        pk_modificato = True
+
     if not da_classificare:
         print('Tutti i testi già classificati.')
+        if pk_modificato:
+            print('\nAggiorno pdf_knowledge.json (solo backfill)...')
+            salva_pdf_knowledge(pdf_knowledge, oggi)
         return
 
     # Batch: 20 per notte (classificazione è veloce)
     batch = da_classificare[:20]
     stats = {cat: 0 for cat in CATEGORIE}
     stats['errori'] = 0
-    pk_modificato = False
 
     for i, f_info in enumerate(batch):
         nome = f_info['name']
@@ -254,28 +317,16 @@ def main():
             stats['errori'] += 1
             continue
 
-        # Aggiorna categoria_reale in pdf_knowledge
-        if aggiorna_categoria_pdf_knowledge(pdf_knowledge, titolo, categoria):
+        # Aggiorna categoria_reale in pdf_knowledge (match su nome file, Rev.27)
+        if aggiorna_categoria_pdf_knowledge(pdf_knowledge, nome, categoria):
             pk_modificato = True
 
         time.sleep(1.5)
 
-    # Salva pdf_knowledge aggiornato con categorie_reali
+    # Salva pdf_knowledge aggiornato con categorie_reali (backfill + nuove classificazioni)
     if pk_modificato:
         print('\nAggiorno pdf_knowledge.json con categorie_reali...')
-        pdf_knowledge['lastUpdate'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
-        content_b64 = base64.b64encode(
-            json.dumps(pdf_knowledge, indent=2, ensure_ascii=False).encode()).decode()
-        sha_pk = gh_get_sha('data/pdf_knowledge.json')
-        body = json.dumps({
-            'message': f'classifica: aggiorna categoria_reale [{oggi}]',
-            'content': content_b64, 'sha': sha_pk, 'branch': 'main'
-        }).encode()
-        req2 = urllib.request.Request(
-            f'https://api.github.com/repos/{REPO}/contents/data/pdf_knowledge.json',
-            data=body, headers={**HEADERS_GH, 'Content-Type': 'application/json'}, method='PUT')
-        with urllib.request.urlopen(req2) as r:
-            print(f'  Salvato: {json.load(r)["commit"]["sha"][:8]}')
+        salva_pdf_knowledge(pdf_knowledge, oggi)
 
     print(f'\n=== COMPLETATO ===')
     print(f'Classificati: {sum(v for k,v in stats.items() if k != "errori")} | Errori: {stats["errori"]}')
