@@ -96,19 +96,24 @@ def analizza_knowledge(analisi):
             'media': round(sum(finestre_vals) / len(finestre_vals), 1)
         }
 
-    # Documenti dove il testo estratto è molto più grande di quanto le finestre coprano
-    # (candidati a "16 stub" tipo IL CORANO — cap 20 finestre insufficiente)
+    # Documenti dove il testo estratto è molto più grande di quanto le finestre coprano.
+    # Rev.27: con il campionamento distribuito, un documento grande può avere pochi char
+    # letti ma essere comunque rappresentato su TUTTO il testo (copertura_span_pct ~100%).
+    # In quel caso NON è più "sottocoperto" — le finestre toccano inizio, centro e fine.
     sottocoperti = []
     for a in analisi:
         fin = a.get('finestre_analizzate')
         chars = a.get('testo_chars')
+        span = a.get('copertura_span_pct')  # Rev.27: presente sulle analisi nuove/rianalizzate
         if fin is not None and chars:
             copertura = fin * FINESTRA_CHARS
-            if chars > copertura * 3:
+            ben_distribuito = span is not None and span >= 90
+            if chars > copertura * 3 and not ben_distribuito:
                 sottocoperti.append({
                     'id': a.get('id'), 'titolo': (a.get('titolo') or '')[:60],
                     'testo_chars': chars, 'finestre_analizzate': fin,
-                    'pct_coperta': round(copertura / chars * 100, 1)
+                    'pct_coperta': round(copertura / chars * 100, 1),
+                    'copertura_span_pct': span
                 })
     sottocoperti.sort(key=lambda x: x['pct_coperta'])
 
