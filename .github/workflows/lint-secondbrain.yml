@@ -1,0 +1,26 @@
+name: BioSerra - Lint Second Brain
+
+on:
+  schedule:
+    - cron: '15 2 * * *'   # 02:15 UTC, dopo connessioni-update (02:00), prima di esperimenti (02:30)
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Lint Second Brain (health check, sola lettura)
+        env:
+          BIOSERRA_GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.BIOSERRA_GITHUB_TOKEN }}
+        run: python3 .github/scripts/lint_secondbrain.py
