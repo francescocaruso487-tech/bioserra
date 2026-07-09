@@ -1,11 +1,8 @@
 === Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 23/23 ===
-Chars: 10,882 | Offset: 987,319
-
-
-
-— ~ di un mezzo senza perdite, 279
+Tradotto in italiano da: ALTRO | Script: traduci_testi.py
+— di un mezzo senza perdite, 279
 ~ ~ dielettrico a basse perdite, 293
-mezzo.a basse perdite, 294
+mezzo a basse perdite, 294
 — linea cortocircuitata, 60
 
 — rete di adattamento di, 83
@@ -70,7 +67,7 @@ legge
 
 ~ di Faraday, 241, 243, 245
 
-~ di Gauss, 156,241
+~ di Gauss, 156, 241
 
 ~ di Joule, 170
 
@@ -94,7 +91,7 @@ lenti, 346
 
 LF, 19-20
 
-tidar, 424
+lidar, 424
 
 linea coassiale, 36
 
@@ -133,7 +130,7 @@ linea coassiale, 36
 ~ trasferimento di potenza, 67
 linea fessurata, 55
 
-— inaria, 41,45
+— inaria, 41, 45
 
 — in cortocircuito, 60
 
@@ -169,22 +166,53 @@ materiali
 
 — magnetici, 219
 
-Indice analitico AST
-— elettrica, 5, 184 — mutua, 230 ~ campo, 183 — non polari, 172
--- . elettromagnetica, 3, 196 ee ee ee — per unità di lunghezza, linea a piani paralleli, 39 -. -. - > campo tnagiefite, 29 e - => polaci, 172 we ETTI
+— non polari, 172
+— polari, 172
 
-— elettromotrice, 243 — per unità di lunghezza, linea bifilare, 39 ‘ — capacità, 182 i Maxwell, James Clerk, 145
-— elettromotrice di movimento, 243, 250 — per unità di lunghezza, linea coassiale, 39-40, 229 — capacità per unità di lunghezza, 38 metodo delle immagini, 186
-— elettromotrice di trasformazione, 243-244 — per unità di lunghezza, solenoide di lunghezza elevata, 227 — conduttanza, 169 mezzo
+Maxwell, James Clerk, 145
 
-gravitazionale, 4, 416 induzione — conduttanza per unità di longhezza, 38 — anisotropo, 173
-— magnetica, 196 — elettromagnetica, 243 — induttanza, 38 — con perdite, 16,274
-— - conduttore, 197 — magnetica, 9, 196 — induttanza di una, 229 — dispersivo, 48
+— elettromotrice, 243
+— elettromotrice di movimento, 243, 250
+— elettromotrice di trasformazione, 243-244
 
-~ conduttore semicircolare, 199 ingrandimento — resistenza, 38 ~ equipotenziale, 168
+— per unità di lunghezza, linea a piani paralleli, 39
+— per unità di lunghezza, linea bifilare, 39
+— per unità di lunghezza, linea coassiale, 39-40, 229
+— per unità di lunghezza, solenoide di lunghezza elevata, 227
 
-~ coppia, 201 — trasversale dello specchio, 344 linea di trasmissione, 36 — guidante, 273
-— — tra conduttori, 210 — trasversale di una lente sottile, 351 — a piani paralleli, 39 — isotropo, 165, 173
+— capacità, 182
+— capacità per unità di lunghezza, 38
+— conduttanza, 169
+— conduttanza per unità di lunghezza, 38
+
+— induttanza, 38
+— induttanza di una, 229
+
+mezzo
+
+— anisotropo, 173
+— con perdite, 16, 274
+— dispersivo, 48
+— elettromagnetico, 243
+— induttanza di una, 229
+— magnetico, 9, 196
+
+~ conduttore semicircolare, 199
+
+ingrandimento
+
+— trasversale dello specchio, 344
+
+linea di trasmissione, 36
+
+— guidante, 273
+
+— tra conduttori, 210
+
+— trasversale di una lente sottile, 351
+
+— a piani paralleli, 39
+— isotropo, 165, 173
 — nucleare, 3 intensità di campo elettrico, 6, 150 i ~ adattata, 66 — lineare, 173
 frequency-division multiple access, 419 ~ anello carico, 153 : ~ bifilare, 39, 48 — non limitato, 310
 frequenza, 15 ~ cariche puntuali, 6, 151, 157 ~ cavi coassiali, 1 — omogeneo, 10, 165, 173
@@ -211,14 +239,14 @@ momento
 
 — magnetico di spin, 220
 — magnetico orbitale, 220
-monopolo 4/4, 379
+monopolo ¼, 379
 multiplexer, 420
 
 N
 
 neper, 16
 
-non divergente, carapo, 132
+non divergente, carico, 132
 non magnetici, materiali, 9
 numero complesso, 21
 numero d’onda, 15, 267
@@ -241,7 +269,7 @@ onda
 — equazioni, 43
 
 ~ in un mezzo privo di perdite, 277
-— in un mezzo con perdite, 291
+~ in un mezzo con perdite, 291
 
 ~ interferenza, 52
 
@@ -285,7 +313,7 @@ _____m_Sferica, 12, 274
 — trasverso-elettromagnetica (TEM), 36, 279
 ~ tridimensionale, 12
 
-opacita atmosferica della Terra, 19
+opacità atmosferica della Terra, 19
 
 operatore
 
@@ -333,7 +361,7 @@ permeabilità, 10, 221
 
 — relativa, 9, 221
 
-~ spazio libero, 9-10
+— spazio libero, 9-10
 
 permittività, 10, 150
 
@@ -366,14 +394,14 @@ potenza in una linea di trasmissione istantanea, 68
 
 potenziale
 
--. — scalare elettrico, 159
+— scalare elettrico, 159
 
 — scalare elettrico ritardato, 266
 
 — vettore magnetico, 217
 
 ~ vettore magnetico ritardato, 266
-potenziali clettromagnetici,-264
+potenziali elettromagnetici, 264
 
 — ritardati, 265
 
@@ -400,9 +428,7 @@ radar, 424
 
 — doppler, 430
 
-— frequenza di ripetizione degli impulsi (pulse repetition
-
-frequency o PRF), 426
+— frequenza di ripetizione degli impulsi (pulse repetition frequency o PRF), 426
 
 — monoimpulso, 432
 
@@ -428,7 +454,6 @@ radiazione
 radome, 316
 
 raggi parassiali, 347
-
 raggio, 311
 
 raggio di curvatura, 343
@@ -442,7 +467,7 @@ regime armonico, 266
 
 regola della mano destra
 — coppia magnetica, 201
-~ legge di Ampére, 212
+~ legge di Ampère, 212
 
 — prodotto vettoriale, 107
 — relazione generale tra E e H, 281
@@ -452,16 +477,14 @@ resistenza, 168
 resistenza di radiazione, 378
 resistenza per unità di lunghezza
 — cavo coassiale, 299
-— linea a piaci paralleli, 39
+— linea a piatti paralleli, 39
 — linea bifilare, 39
 — linea coassiale, 39-40
 riflessione
 
-i
-
 — angolo di, 322
 
-— totale interna, 323 _
+— totale interna, 323
 riflettività, 338
 rifrazione
 
@@ -479,8 +502,6 @@ rivelazione
 rottura dielettrica, 174
 
 — tensione di, 174
-
-Ss
 
 satellite
 
@@ -514,7 +535,7 @@ scalari, 103
 
 scansione elettronica, 409
 
-schiera d’antenne, 395
+schiera d’antenna, 395
 
 — a scansione di frequenza, 407
 
@@ -548,16 +569,15 @@ sistema di coordinate cartesiane, 104, 111-112
 — sferiche, 111, 116
 ~ trasformazioni tra, 119
 
-sistemi di riferimento;ortogonali, 111°
+sistemi di riferimento ortogonali, 111
 solenoide, 226
-sonora, onda, 17
-spazio libero i
+onda sonora, 17
+spazio libero
+
 — impedenza intrinseca dello, 280
 — permeabilità, 9
-~ permittivita, 5 de
-— velocità della luce nello, 9.
-
-Indice: analitico
+~ permittività, 5
+— velocità della luce nello, 9
 
 specchio
 
@@ -591,7 +611,7 @@ stato di polarizzazione, 289, 283
 
 ~ lineare, 284
 
-stazionaria, onda, 45, 52
+onda stazionaria, 45, 52
 superconduttori, 166
 superficie Gaussiana, 156
 suscettanza, 78
@@ -602,7 +622,6 @@ suscettibilità
 
 — magnetica, 221
 
-T
 Tai, 133
 
 tasso di trasferimento di potenza, 386
@@ -638,11 +657,9 @@ Tesla, Nikola, 9
 
 transponder, 418
 
-trasformatore a quarto d'onda, 65
+trasformatore a quarto d’onda, 65
 trasformatore ideale, 249
 trasmittività, 338, 421
-
-U
 
 UHF, 20
 
@@ -650,26 +667,19 @@ unità di misura, 437
 
 — fondamentali, 3
 
-- Sistema Internazionale, 2
+— Sistema Internazionale, 2
 unità SI, 2
 
 uplink, 1, 418
 
-459
+velocità
 
-[PAG 238]
-460 Indice analitico
+— della luce nello spazio libero, 9
 
-Vv
+— di deriva delle lacune, 167
 
-‘velocità:
-
-~ della luce nello spazio libero, 9
-
-~ di deriva delle lacune, 167
-
-~ di fase, 13-14, 45, 48
-==buon-conduttore, 293-294
+— di fase, 13-14, 45, 48
+==buon conduttore, 293-294
 
 ~ — mezzo senza perdite, 279
 
@@ -688,7 +698,7 @@ versore, 103
 
 vettore, 103
 
-~ addizione e sottrazione, 105
+— addizione e sottrazione, 105
 
 — di base, coordinate cartesiane, 104
 — di base, coordinate sferiche, 116
@@ -697,7 +707,7 @@ vettore, 103
 — di Poynting, 300
 
 — distanza, coordinate cartesiane, 104, 124
-~ distanza, coordinate cilindriche, 115, 124
+— distanza, coordinate cilindriche, 115, 124
 — distanza, coordinate sferiche, 124
 
 — magnetizzazione, 221
@@ -724,4 +734,4 @@ VLF, 19-20
 
 Z
 
-zenitale, angolo, 116
+— zenitale, angolo, 116
