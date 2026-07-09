@@ -286,19 +286,33 @@ def mistral_analizza_completo(titolo, testo_completo):
     lingua_det = max(lingua_scores, key=lambda k: lingua_scores[k]) if max(lingua_scores.values())>2 else 'altro'
     lingua_nota = '' if lingua_det=='it' else f'NOTA: la sezione e in {lingua_det.upper()}, rispondi comunque in italiano.\n'
 
-    # Finestre scorrevoli su TUTTO il testo (non solo inizio/fine)
-    FINESTRA, OVERLAP, MAX_FINESTRE = 4500, 300, 20  # cap 20 finestre ~ 84.000 char coperti
+    # Finestre su TUTTO il testo. Rev.27: campionamento DISTRIBUITO per i documenti grandi.
+    # Prima (Rev.25) le 20 finestre erano contigue dall'inizio -> coprivano solo i primi
+    # ~84k char, ignorando il resto (per un libro di 1.4M char si vedeva solo il 6% iniziale).
+    # Ora: se il documento supera la copertura contigua, le finestre vengono distribuite
+    # uniformemente sull'intero testo (stesso numero di chiamate Mistral, costo invariato,
+    # ma si campiona inizio+centro+fine invece del solo inizio). I documenti piccoli
+    # (<= copertura contigua) restano a copertura contigua piena, nessuna regressione.
+    FINESTRA, OVERLAP, MAX_FINESTRE = 4500, 300, 20  # 20 finestre, ~84.000 char letti
+    step_contiguo = FINESTRA - OVERLAP               # 4200
+    copertura_contigua = MAX_FINESTRE * step_contiguo  # ~84.000
+    if len(testo_completo) <= copertura_contigua or MAX_FINESTRE <= 1:
+        stride = step_contiguo                        # documento piccolo: contiguo come prima
+    else:
+        # documento grande: spalma le MAX_FINESTRE finestre su tutto il range del testo
+        stride = max(step_contiguo, (len(testo_completo) - FINESTRA) // (MAX_FINESTRE - 1))
     punti_agg, tecniche_agg, tag_agg = [], [], []
-    pos, n_finestre = 0, 0
+    pos, n_finestre, ultima_fine = 0, 0, 0
     while pos < len(testo_completo) and n_finestre < MAX_FINESTRE:
         finestra = testo_completo[pos:pos+FINESTRA]
         n_finestre += 1
+        ultima_fine = min(len(testo_completo), pos + FINESTRA)
         r = mistral_finestra(titolo_safe_str, finestra, lingua_nota)
         if r:
             punti_agg.extend(r.get('punti', []))
             tecniche_agg.extend(r.get('tecniche', []))
             tag_agg.extend(r.get('tag', []))
-        pos += FINESTRA - OVERLAP
+        pos += stride
         time.sleep(0.6)
 
     if not punti_agg and not tecniche_agg:
@@ -307,6 +321,9 @@ def mistral_analizza_completo(titolo, testo_completo):
     risultato = mistral_sintesi_finale(titolo_safe_str, punti_agg, tecniche_agg, tag_agg, lingua_det, n_finestre)
     if risultato:
         risultato['finestre_analizzate'] = n_finestre
+        # span_pct: quanta parte del documento e' compresa tra prima e ultima finestra.
+        # Con campionamento distribuito e' ~100% anche per i libri enormi (Rev.27).
+        risultato['copertura_span_pct'] = round(ultima_fine / len(testo_completo) * 100, 1) if testo_completo else 0
     return risultato
 
 def analizza_locale(titolo, testo):
