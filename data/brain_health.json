@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-07-09T20:29:39.842193+00:00",
+  "lastUpdate": "2026-07-10T06:14:39.165653+00:00",
   "analisi": {
-    "totale_voci": 310,
-    "pipeline_v25_fulltext": 45,
+    "totale_voci": 320,
+    "pipeline_v25_fulltext": 55,
     "non_ancora_riprocessate": 265,
     "stub_count": 30,
     "stub_ids": [
@@ -40,7 +40,7 @@
     "finestre_analizzate_stats": {
       "min": 5,
       "max": 20,
-      "media": 17.3
+      "media": 17.6
     },
     "documenti_sottocoperti": [
       {
@@ -48,77 +48,88 @@
         "titolo": "108upa",
         "testo_chars": 1446005,
         "finestre_analizzate": 20,
-        "pct_coperta": 6.2
+        "pct_coperta": 6.2,
+        "copertura_span_pct": null
       },
       {
         "id": "pdf_319",
         "titolo": "LA CABALA MISTICA",
         "testo_chars": 603851,
         "finestre_analizzate": 20,
-        "pct_coperta": 14.9
+        "pct_coperta": 14.9,
+        "copertura_span_pct": null
       },
       {
         "id": "pdf_7",
         "titolo": "An Agricultural Testament - Albert Howard",
         "testo_chars": 556392,
         "finestre_analizzate": 20,
-        "pct_coperta": 16.2
+        "pct_coperta": 16.2,
+        "copertura_span_pct": null
       },
       {
         "id": "pdf_313",
         "titolo": "LA FIGLIA DELLA LUNA (Aleister Crowley)",
         "testo_chars": 549513,
         "finestre_analizzate": 20,
-        "pct_coperta": 16.4
+        "pct_coperta": 16.4,
+        "copertura_span_pct": null
       },
       {
         "id": "pdf_298",
         "titolo": "confucius_i_dialoghi",
         "testo_chars": 487927,
         "finestre_analizzate": 20,
-        "pct_coperta": 18.4
+        "pct_coperta": 18.4,
+        "copertura_span_pct": null
       },
       {
         "id": "pdf_296",
         "titolo": "ySanedrin",
         "testo_chars": 417190,
         "finestre_analizzate": 20,
-        "pct_coperta": 21.6
+        "pct_coperta": 21.6,
+        "copertura_span_pct": null
       },
       {
         "id": "pdf_304",
         "titolo": "IL-CODICE-TESLA-SECOLARIUM-SAGA-_Italian-Edition_-_Alessandr",
         "testo_chars": 353185,
         "finestre_analizzate": 20,
-        "pct_coperta": 25.5
+        "pct_coperta": 25.5,
+        "copertura_span_pct": null
       },
       {
         "id": "pdf_320",
         "titolo": "Nikola Tesla, un genio volutamente dimenticato (Baccelli, Vi",
         "testo_chars": 340094,
         "finestre_analizzate": 20,
-        "pct_coperta": 26.5
+        "pct_coperta": 26.5,
+        "copertura_span_pct": null
       },
       {
         "id": "pdf_317",
         "titolo": "Wicca",
         "testo_chars": 324071,
         "finestre_analizzate": 20,
-        "pct_coperta": 27.8
+        "pct_coperta": 27.8,
+        "copertura_span_pct": null
       },
       {
         "id": "pdf_5",
         "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
         "testo_chars": 278913,
         "finestre_analizzate": 20,
-        "pct_coperta": 32.3
+        "pct_coperta": 32.3,
+        "copertura_span_pct": null
       },
       {
         "id": "pdf_62",
         "titolo": "Corpo ermetico e Asclepio",
         "testo_chars": 274212,
         "finestre_analizzate": 20,
-        "pct_coperta": 32.8
+        "pct_coperta": 32.8,
+        "copertura_span_pct": null
       }
     ],
     "categoria_breakdown": {
@@ -142,7 +153,7 @@
       "altro": 3,
       "agricoltura": 1
     },
-    "categoria_senza_valore": 0,
+    "categoria_senza_valore": 10,
     "per_categoria_stato": {
       "scienza": {
         "totale": 2,
@@ -238,25 +249,30 @@
         "totale": 1,
         "v25_fulltext": 1,
         "stub": 0
+      },
+      "(senza categoria)": {
+        "totale": 10,
+        "v25_fulltext": 10,
+        "stub": 0
       }
     },
-    "lingua_popolata": 47,
+    "lingua_popolata": 57,
     "lingua_breakdown": {
-      "it": 47
+      "it": 57
     },
-    "chunk_progresso_doc_con_dato": 4,
-    "chunk_progresso_totale_tradotti": 4,
-    "chunk_progresso_totale_chunk": 62,
+    "chunk_progresso_doc_con_dato": 8,
+    "chunk_progresso_totale_tradotti": 12,
+    "chunk_progresso_totale_chunk": 100,
     "chunk_progresso_anomalie": []
   },
   "traduzione": {
-    "lingua_popolata": 47,
+    "lingua_popolata": 57,
     "lingua_breakdown": {
-      "it": 47
+      "it": 57
     },
-    "chunk_progresso_doc_con_dato": 4,
-    "chunk_progresso_totale_tradotti": 4,
-    "chunk_progresso_totale_chunk": 62
+    "chunk_progresso_doc_con_dato": 8,
+    "chunk_progresso_totale_tradotti": 12,
+    "chunk_progresso_totale_chunk": 100
   },
   "connessioni": {
     "nodi_totali": 299,
