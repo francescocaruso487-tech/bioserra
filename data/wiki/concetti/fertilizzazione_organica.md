@@ -2,7 +2,7 @@
 id: fertilizzazione_organica
 label: Fertilizzazione Organica
 categoria: nutrizione
-aggiornato: 2026-07-09
+aggiornato: 2026-07-10
 pdf_count: 2
 ---
 
@@ -12,27 +12,25 @@ pdf_count: 2
 # Fertilizzazione Organica
 
 ## Descrizione
-La **fertilizzazione organica** rappresenta l’apporto di nutrienti attraverso ammendanti naturali di origine vegetale, animale o microbica, in grado di nutrire le piante e al contempo rigenerare il suolo. A differenza dei fertilizzanti sintetici, questi materiali si decompongono gradualmente, rilasciando elementi essenziali (N, P, K, microelementi) in forme biodisponibili per la rizosfera. Il meccanismo d’azione si basa sulla **simbiosi tra microrganismi del suolo** (batteri, funghi micorrizici, attinomiceti) e radici, che trasformano la materia organica in humus stabile, migliorando struttura, capacità di scambio cationico (CEC) e resilienza del terreno. In un sistema **Living Soil** come quello di Caserta (41°N), dove il clima mediterraneo favorisce l’attività microbica, questa pratica è fondamentale per mantenere un equilibrio nutrizionale senza squilibri chimici.
+La **fertilizzazione organica** rappresenta un approccio rigenerativo alla nutrizione delle piante, basato sull'apporto di ammendanti naturali che stimolano la vita microbica del suolo e la biodisponibilità dei nutrienti. A differenza dei fertilizzanti sintetici, che forniscono nutrienti in forma immediatamente assimilabile ma spesso con effetti collaterali sulla struttura del suolo e sulla salute delle piante, gli ammendanti organici (come farine di sangue, osso, pesce o compost maturo) agiscono come "cibo" per i microrganismi, favorendo la decomposizione e la mineralizzazione graduale. Questo processo, noto come **nutrizione indiretta**, si allinea al principio del *Living Soil*, dove la salute della pianta è indissolubilmente legata all'equilibrio dell'ecosistema radicale. In particolare, in un clima mediterraneo come quello di Caserta (41°N), con estati calde e siccitose, la fertilizzazione organica aiuta a migliorare la ritenzione idrica del suolo e a prevenire la salinizzazione, tipica di pratiche intensive.
 
-La fertilizzazione organica agisce anche come **regolatore ecologico**: i composti umici stimolano la produzione di fitormoni (auxine, citochinine) e aumentano la resistenza delle piante agli stress abiotici (siccità, salinità). Inoltre, i residui organici alimentano la **rete trofica del suolo**, promuovendo la biodiversità e la competizione naturale contro patogeni. Per le colture in serra outdoor, questa tecnica si integra perfettamente con i principi dell’**elettrocultura**, poiché i nutrienti organici migliorano la conducibilità elettrica del suolo, ottimizzando l’assorbimento delle emissioni telluriche captate da antenne in rame (come descritto nei PDF [294] e [307]).
+Il meccanismo d'azione si basa sulla **scomposizione enzimatica** operata da batteri e funghi (ad esempio, *Aspergillus* e *Trichoderma*), che convertono le molecole organiche complesse in forme assimilabili dalle radici. Inoltre, l'uso di farine animali (sangue, osso) apporta azoto e fosforo in un rapporto bilanciato, mentre le farine di pesce aggiungono micronutrienti come zinco e ferro, essenziali per la fotosintesi e la sintesi di clorofilla. La fertilizzazione organica non è un intervento puntuale, ma un **processo ciclico** che si integra con i ritmi naturali del suolo, promuovendo una crescita armoniosa delle piante e riducendo la necessità di correzioni successive.
 
 ---
 
 ## Come si applica in serra
-Per una serra **Living Soil** a Caserta (41°N), seguire questo protocollo stagionale:
+Per una serra outdoor a Caserta in regime **Living Soil**, la fertilizzazione organica segue un protocollo stagionale adattato alle fasi di crescita, con attenzione alla temperatura e all'umidità del suolo. Ecco una guida pratica:
 
-1. **Preparazione del substrato**:
-   - Miscelare **50% terriccio biologico** (privo di torba), **30% compost maturo** (2-3 mesi di decomposizione) e **20% ammendanti strutturanti** (fibra di cocco, perlite o biochar).
-   - Aggiungere **1-2 kg/m² di farina di sangue** (N 12-14%) e **0.5 kg/m² di farina d’osso** (P 20-25%) per stimolare la rizosfera. Mescolare con una motozappa o manualmente.
+1. **Preparazione del suolo (pre-semina o trapianto)**
+   - Distribuire **2–3 kg/m²** di compost maturo (minimo 6 mesi di maturazione) o letame ben decomposto (es. stallatico pellettato).
+   - Aggiungere **100–150 g/m²** di farina di osso (per fosforo) e **50–80 g/m²** di farina di sangue (per azoto a lento rilascio).
+   - Incorporare con una leggera fresatura (5–10 cm di profondità) per evitare la formazione di crosta superficiale.
 
-2. **Applicazione in vegetazione (marzo-giugno)**:
-   - **Dose**: 50-100 g/m² di farina di pesce (N 8%, P 4%, K 2%) o **sangue secco** (N 13%) ogni **15 giorni**.
-   - **Metodo**: Spargere uniformemente sulla superficie e interrare leggermente con una zappetta. Evitare il contatto diretto con le radici.
-   - **Monitoraggio**: Controllare il colore delle foglie (verde scuro = eccesso di N; giallo = carenza di Fe/Mg).
+2. **Fase di vegetazione (germinazione → pre-fioritura)**
+   - Applicare **farina di pesce** (100 g/m²) ogni **15 giorni**, diluita in acqua o distribuita a secco sul letto di semina.
+   - Monitorare il **colore delle foglie**: un verde scuro e uniforme indica un buon apporto di azoto; se le foglie diventano gialle (clorosi), aumentare la frequenza delle applicazioni.
+   - Evitare eccessi di azoto: in serra, il rischio è l'allungamento dei internodi e la suscettibilità a patogeni (es. *Botrytis*).
 
-3. **Transizione in fioritura (luglio-agosto)**:
-   - Ridurre le farine azotate (sangue/pesce) a favore di **farina d’osso** (P) e **potassio organico** (cenere di legna setacciata, K 5-10%).
-   - Aggiungere **humus di lombrico** (1 kg/m²) per apportare enzimi e microrganismi benefici.
-
-4. **Integrazione con elettrocultura**:
-   - Installare una **spirale di rame** (diametro 30 cm) sopra le piante più sensibili (es. pomodori) e collegarla a un **sistema
+3. **Fase di fioritura**
+   - Ridurre la farina di sangue e aumentare la **farina di osso** (150 g/m²) o **guano di pipistrello** (ricco in fosforo e potassio) per stimolare la formazione dei fiori.
+   - Aggiungere **cen
