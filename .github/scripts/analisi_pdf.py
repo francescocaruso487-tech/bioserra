@@ -442,24 +442,13 @@ def main():
     print(f'  di cui mai analizzati con Mistral (priorità massima): '
           f'{sum(1 for t in da_rianalizzare if t[3])}/{len(da_rianalizzare)}')
 
-    if not da_rianalizzare:
-        print('Tutto aggiornato — ricalcolo connessioni')
-        analisi_esistenti = [sanitizza_entry(a) for a in analisi_esistenti]
-        knowledge['analisi'] = ricalcola_connessioni(analisi_esistenti)
-        knowledge['lastUpdate'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
-        content_json = json.dumps(knowledge, indent=2, ensure_ascii=False)
-        sha = gh_get_sha('data/pdf_knowledge.json')
-        res = gh_put('data/pdf_knowledge.json', content_json, sha, f'PDF v25 {oggi} connessioni')
-        if res is None:
-            print('  ERRORE CRITICO: salvataggio pdf_knowledge.json fallito dopo 3 tentativi')
-        return
-
-    # Rev.27: RIANALISI FORZATA one-shot. Se esiste data/_force_reanalysis.json con una lista
-    # di id, quei documenti vengono rianalizzati SUBITO (bypassando la priorità normale), utile
-    # per rigenerare i documenti già processati con la nuova logica (es. campionamento distribuito
-    # sui libri enormi) senza aspettare il loro turno. Salvataggio INCREMENTALE dopo ogni documento
-    # (la lista in memoria è la source-of-truth: nessuna rilettura stale di pdf_knowledge >1MB) e
-    # il file di controllo viene sfoltito man mano: robusto ai timeout e riprendibile.
+    # Rev.27: RIANALISI FORZATA one-shot. Se esiste data/_force_reanalysis.json con una lista di
+    # id, quei documenti vengono rianalizzati SUBITO — anche se già v25_fulltext — bypassando la
+    # priorità normale. Serve a rigenerare documenti già processati con la nuova logica (es. il
+    # campionamento distribuito sui libri enormi). Il batch è costruito direttamente dai PDF reali
+    # (NON da da_rianalizzare, che esclude i doc già completi). Salvataggio INCREMENTALE dopo ogni
+    # documento (lista in memoria = source-of-truth, nessuna rilettura stale di pdf_knowledge >1MB);
+    # il file di controllo è sfoltito man mano: robusto ai timeout e riprendibile.
     try:
         fc = gh_get('data/_force_reanalysis.json')
         force_ids = json.loads(base64.b64decode(fc['content']).decode()).get('ids', [])
@@ -470,12 +459,17 @@ def main():
         print(f'\n=== MODALITÀ FORCE: {len(force_ids)} id richiesti ===\n{force_ids}')
         id2safe = {a['id']: a.get('testo_id') for a in analisi_esistenti if a.get('id')}
         safe_forzati = {id2safe.get(i) for i in force_ids if id2safe.get(i)}
-        batch_force = [t for t in da_rianalizzare if t[1] in safe_forzati]
-        print(f'  Documenti forzati risolti: {len(batch_force)}/{len(force_ids)}')
+        batch_force = []
+        for pdf_file in pdf_files:
+            safe_id = titolo_safe(pdf_file['name'])
+            if safe_id in safe_forzati and safe_id in testi_disponibili:
+                titolo = pdf_file['name'].replace('.pdf', '').strip()
+                batch_force.append((pdf_file, safe_id, titolo))
+        print(f'  Documenti forzati risolti da MANUALI/: {len(batch_force)}/{len(force_ids)}')
         tutte = list(analisi_esistenti)
         id2idx = {a['id']: k for k, a in enumerate(tutte) if a.get('id')}
         rimasti = list(force_ids)
-        for i, (pdf_file, safe_id, titolo, _mp, _du) in enumerate(batch_force):
+        for i, (pdf_file, safe_id, titolo) in enumerate(batch_force):
             print(f'\n[FORCE {i+1}/{len(batch_force)}] {titolo[:60]}')
             testo = leggi_testo_estratto(safe_id)
             print(f'  Testo: {len(testo)} chars')
@@ -502,7 +496,6 @@ def main():
             if analisi_curr.get('connessioni'):
                 result['connessioni'] = analisi_curr['connessioni']          # le rigenera connessioni_update
             sanitizza_entry(result)
-            # merge in memoria (source-of-truth) e salvataggio incrementale
             if result['id'] in id2idx:
                 tutte[id2idx[result['id']]] = result
             else:
@@ -513,14 +506,25 @@ def main():
                         None, f'force rianalisi {result["id"]} (span distribuito) [Rev.27]')
             if ok is None:
                 print(f'  ERRORE salvataggio {result["id"]} — mi fermo per non perdere coerenza'); break
-            span = result.get('copertura_span_pct')
-            print(f'  ✓ salvato {result["id"]} | finestre={result.get("finestre_analizzate")} span={span}%')
-            # sfoltisci il file di controllo (riprendibile se interrotto)
+            print(f'  ✓ salvato {result["id"]} | finestre={result.get("finestre_analizzate")} '
+                  f'span={result.get("copertura_span_pct")}%')
             if result['id'] in rimasti: rimasti.remove(result['id'])
             gh_put('data/_force_reanalysis.json', json.dumps({'ids': rimasti}),
                    None, f'force: rimosso {result["id"]}, {len(rimasti)} rimasti')
             time.sleep(1)
-        print(f'\n=== FORCE completato: {len(batch_force)-len(rimasti)} processati, {len(rimasti)} rimasti ===')
+        print(f'\n=== FORCE completato: {len(batch_force)} tentati, {len(rimasti)} id rimasti ===')
+        return
+
+    if not da_rianalizzare:
+        print('Tutto aggiornato — ricalcolo connessioni')
+        analisi_esistenti = [sanitizza_entry(a) for a in analisi_esistenti]
+        knowledge['analisi'] = ricalcola_connessioni(analisi_esistenti)
+        knowledge['lastUpdate'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+        content_json = json.dumps(knowledge, indent=2, ensure_ascii=False)
+        sha = gh_get_sha('data/pdf_knowledge.json')
+        res = gh_put('data/pdf_knowledge.json', content_json, sha, f'PDF v25 {oggi} connessioni')
+        if res is None:
+            print('  ERRORE CRITICO: salvataggio pdf_knowledge.json fallito dopo 3 tentativi')
         return
 
     # Rev.25: batch alzato da 20 a 25/notte per completare la migrazione full-text prima possibile
