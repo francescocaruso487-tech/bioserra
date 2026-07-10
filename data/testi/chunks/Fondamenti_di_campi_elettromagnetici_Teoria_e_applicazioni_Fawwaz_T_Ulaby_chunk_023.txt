@@ -1,13 +1,13 @@
 === Fondamenti di campi elettromagnetici. Teoria e applicazioni (Fawwaz T. Ulaby).pdf — CHUNK 23/23 ===
 Tradotto in italiano da: ALTRO | Script: traduci_testi.py
 — di un mezzo senza perdite, 279
-~ ~ dielettrico a basse perdite, 293
-mezzo a basse perdite, 294
+— dielettrico a basse perdite, 293
+— mezzo a basse perdite, 294
 — linea cortocircuitata, 60
 
 — rete di adattamento di, 83
 
-~ superficiale, 298
+— superficiale, 298
 
 incidenza
 
@@ -19,9 +19,9 @@ incidenza
 
 induttanza, 226
 
-~ distribuzione di carica, 150, 152
+— distribuzione di carica, 150, 152
 
-~ filo carico infinito, 158
+— filo carico infinito, 158
 
 intensità di campo magnetico, 9, 195
 
@@ -31,7 +31,7 @@ intensità di campo magnetico, 9, 195
 
 — dipolo magnetico, 209
 
-~ distribuzioni di corrente, 205
+— distribuzioni di corrente, 205
 
 — elemento di corrente, 204
 
@@ -40,10 +40,11 @@ intensità di campo magnetico, 9, 195
 — solenoide, 226
 
 — spira a forma di settore circolare, 207
-- spira circolare, 207
+— spira circolare, 207
 
 — superficie di corrente di estensione infinita, 216
-irrotazionale, campo, 161, 137
+
+irrotazionale, campo, 137, 161
 
 isolanti, 166
 
@@ -58,25 +59,26 @@ L
 legge
 
 — dei magnetismo di Gauss, 211, 241
-~ della circuitazione di Ampère, 212
+— della circuitazione di Ampère, 212
 — di Ampère, 241
 
 — di Biot-Savart, 8, 204
 
 — di Coulomb, 5, 150
 
-~ di Faraday, 241, 243, 245
+— di Faraday, 241, 243, 245
 
-~ di Gauss, 156, 241
+— di Gauss, 156, 241
 
-~ di Joule, 170
+— di Joule, 170
 
-~ di Kirchoff sulle tensioni, 161
+— di Kirchoff sulle tensioni, 161
 
 — di Lenz, 245, 247
 
 — di Snell della riflessione, 322, 330
-~ di Snell della rifrazione, 322, 331
+— di Snell della rifrazione, 322, 331
+
 lente
 
 — convergente, 346
@@ -85,7 +87,7 @@ lente
 
 — negativa, 346
 
-~ positiva, 346
+— positiva, 346
 
 lenti, 346
 
@@ -102,15 +104,13 @@ linea coassiale, 36
 — fibre ottiche, |
 
 — impedenza caratteristica, 44, 47
-~ impedenza di ingresso, 57
+— impedenza di ingresso, 57
 
 — in circuito aperto, 63
 
-~ infinita, 97, (98, P.2.23)
+— infinita, 97, (98, P.2.23)
 
-~ linea bifilare, 36
-
-— linea coassiale, 36
+— linea bifilare, 36
 
 — linee microstrip, 36
 
@@ -119,15 +119,16 @@ linea coassiale, 36
 — mezza lunghezza d'onda, 65
 — minimo di tensione, 54
 
-- modello circuitale a costanti concentrate, 38
+— modello circuitale a costanti concentrate, 38
 — non distorcente, 96
 
 — piani conduttori paralleli, 36
 — piani paralleli, 48
 
-~ risposta in transitorio, 87
+— risposta in transitorio, 87
 
-~ trasferimento di potenza, 67
+— trasferimento di potenza, 67
+
 linea fessurata, 55
 
 — inaria, 41, 45
@@ -151,17 +152,21 @@ lobo principale, 370
 Lorentz, forza di, 197
 
 luce visibile, 18-19, 355
+
 lunghezza d’onda, 13
 
 M
 
 magnetico, intensità di campo, 195
+
 magnetiti, 8
 
 magnetostatica, 9-10, 146
+
 massimo di tensione, 54
 
 — trasferimento di potenza, 384
+
 materiali
 
 — magnetici, 219
@@ -197,7 +202,7 @@ mezzo
 — induttanza di una, 229
 — magnetico, 9, 196
 
-~ conduttore semicircolare, 199
+— conduttore semicircolare, 199
 
 ingrandimento
 
@@ -213,9 +218,7 @@ linea di trasmissione, 36
 
 — a piani paralleli, 39
 — isotropo, 165, 173
-— nucleare, 3 intensità di campo elettrico, 6, 150 i ~ adattata, 66 — lineare, 173
-frequency-division multiple access, 419 ~ anello carico, 153 : ~ bifilare, 39, 48 — non limitato, 310
-frequenza, 15 ~ cariche puntuali, 6, 151, 157 ~ cavi coassiali, 1 — omogeneo, 10, 165, 173
+— nucleare, 3
 — di ripetizione degli impulsi, 425 — dipolo elettrico, 163 — coassiale, 39, 48 — senza perdite, 12, 274
 fronte d'onda, 311 — disco carico, 155 ~ cortocircuito, 60 = spazio libero, 273
 
@@ -519,7 +522,7 @@ satellite
 
 — telemetria, inseguimento e comando, 418
 
-~ transponder, 418
+— transponder, 418
 
 scalare elettrico, potenziale, 159
 
@@ -529,7 +532,7 @@ scalare elettrico, potenziale, 159
 
 — triplo prodotto, 110
 
-—, prodotto, 106
+— prodotto, 106
 
 scalari, 103
 
@@ -567,7 +570,7 @@ sistema di coordinate cartesiane, 104, 111-112
 — cilindriche, 111, 113
 
 — sferiche, 111, 116
-~ trasformazioni tra, 119
+— trasformazioni tra, 119
 
 sistemi di riferimento ortogonali, 111
 solenoide, 226
@@ -576,7 +579,7 @@ spazio libero
 
 — impedenza intrinseca dello, 280
 — permeabilità, 9
-~ permittività, 5
+— permittività, 5
 — velocità della luce nello, 9
 
 specchio
@@ -591,7 +594,7 @@ specchio
 
 — piano, 342
 
-~ sferico, 343
+— sferico, 343
 
 spessore
 
@@ -607,9 +610,9 @@ stato di polarizzazione, 289, 283
 — circolare destrorsa, 285-286
 — circolare sinistrorsa, 285
 
-~ ellittica, 288
+— ellittica, 288
 
-~ lineare, 284
+— lineare, 284
 
 onda stazionaria, 45, 52
 superconduttori, 166
@@ -649,9 +652,9 @@ Terra
 
 — massa della, 416
 
-~~ periodo, 417
+— periodo, 417
 
-— — raggio, 417
+— raggio, 417
 
 Tesla, Nikola, 9
 
@@ -679,16 +682,16 @@ velocità
 — di deriva delle lacune, 167
 
 — di fase, 13-14, 45, 48
-==buon conduttore, 293-294
+— buon conduttore, 293-294
 
-~ — mezzo senza perdite, 279
+— mezzo senza perdite, 279
 
-~ ~ dielettrico a basse perdite, 293
-— ~ linea senza perdite, 47
+— dielettrico a basse perdite, 293
+— linea senza perdite, 47
 
-— — mezzo a basse perdite, 294
+— mezzo a basse perdite, 294
 
-— ~ senza perdite, 48
+— senza perdite, 48
 
 — di propagazione, 35
 
@@ -702,7 +705,7 @@ vettore, 103
 
 — di base, coordinate cartesiane, 104
 — di base, coordinate sferiche, 116
-~ di base, coordinate cilindriche, 113
+— di base, coordinate cilindriche, 113
 
 — di Poynting, 300
 
@@ -731,7 +734,4 @@ vettore, 103
 VHF, 19-20
 
 VLF, 19-20
-
-Z
-
 — zenitale, angolo, 116
