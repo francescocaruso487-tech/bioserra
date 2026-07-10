@@ -1,142 +1,129 @@
 {
-  "lastUpdate": "2026-07-09T07:02:01.000Z",
+  "lastUpdate": "2026-07-10T07:01:17.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare elettrocoltura DC (1-3V) tramite elettrodi in rame/zinco a 10-15 cm di profondità lungo il perimetro della serra per le piante in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia), collegati a batteria 9V. Questo stimola la rizosfera e migliora l'assorbimento dei nutrienti durante la fase critica di fioritura [ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-, chunk_002].",
-      "Applicare preparato biodinamico a base di silice (501) sulle foglie al tramonto per rafforzare la resistenza dei fiori e armonizzare le energie telluriche, sfruttando la luna gibbosa crescente che favorisce la maturazione [DE_L_ELECTRICITE_DES_VEGETAUX, chunk_003].",
-      "Monitorare l'umidità del substrato delle autofiorenti (soprattutto Epsilon e Gaia) a causa dell'elevata umidità ambientale (78%) che potrebbe favorire stress fungino. Ridurre l'irrigazione se il substrato è già umido [Manuale di Coltivazione, 2026-07-08]."
+      "Applicare elettrocoltura DC a basso voltaggio (5-8V) solo alle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) durante le ore fresche (07-10 o 18-21) per stimolare la fioritura senza stress termico, come da [pdf_17] (PAG 28).",
+      "Integrare 200g/mq di farina di roccia calcarea (pH 6.5-7.0) nel letto di fioritura delle autofiorenti per sostenere la produzione di fiori, seguendo [Agricultura_Organica_Harina_de_Rocas_y_la_Salud_del_Suelo_al_alcance_de_todos_Ja] (PAG 1).",
+      "Monitorare umidità del suolo alle 12:00: se <30%, irrigare con 2L/mq a goccia lenta per evitare stress idrico in fioritura, come indicato nel [Manuale di Coltivazione BioSerra] (Rev.23)."
     ],
-    "briefing_mattutino": "La serra si trova in una fase di fioritura avanzata per le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) con raccolta imminente tra 30-50 giorni. Le femminizzate sono ancora in vegetazione con raccolta lontana (155-183 giorni). Oggi si prevede un picco di 34°C domani, quindi è cruciale evitare stress termico applicando tecniche elettrocolturali solo nelle ore fresche e monitorando l'umidità del suolo. L'elevata umidità (78%) e la luna gibbosa crescente offrono un'opportunità unica per combinare elettrocoltura e biodinamica, sfruttando la conducibilità naturale del suolo [Corso-Elettrocoltura_compressed, PAG 2].",
+    "briefing_mattutino": "Le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) sono in fioritura avanzata (77-79 giorni) con raccolta tra 29-49 giorni. Le femminizzate sono in vegetazione (68-79 giorni) con raccolta tra 154-182 giorni. Oggi si prevede caldo intenso (33.7°C max) senza pioggia: evitare elettrocoltura tra 12-16 per prevenire stress termico [Manuale di Coltivazione BioSerra]. Applicare tecniche di elettrocoltura e biodinamica in sinergia per ottimizzare l'assorbimento dei nutrienti durante le ore fresche.",
     "consigli_piante": {
-      "autofiorenti": "Applicare elettrocoltura DC (1-3V) tramite elettrodi in rame/zinco per tutte le autofiorenti in fioritura. Per Epsilon e Gaia, ridurre leggermente l'irrigazione a causa dell'umidità elevata e monitorare la comparsa di muffe. Non intervenire con nutrienti aggiuntivi in questa fase.",
-      "femminizzate": "Mantenere le femminizzate in vegetazione con irrigazione regolare ma senza eccessi. Applicare elettrocoltura DC (1-3V) per stimolare la rizosfera e preparare il terreno per la fioritura futura. Evitare stress idrico con le temperature in aumento.",
+      "autofiorenti": "Applicare elettrocoltura DC (5V, rame/zinco) alle autofiorenti in fioritura per 4 ore al mattino (07-11) o sera (18-22), evitando le ore calde. Aggiungere 100g/mq di farina di roccia silicea al letto di fioritura per sostenere la produzione di resina.",
+      "femminizzate": "Nessuna elettrocoltura oggi: le femminizzate sono in vegetazione e non necessitano di stimolazione elettrica. Monitorare umidità del suolo (target 40-50%) e irrigare solo se necessario con acqua a pH 6.2.",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Applicare elettrocoltura DC (1-3V) con elettrodi in rame/zinco, ridurre irrigazione a causa dell'umidità elevata (78%) e monitorare umidità substrato per prevenire stress fungino.",
+          "azione": "Applicare elettrocoltura DC 5V per 4 ore (07-11) con elettrodi in rame a 5cm dalle radici. Aggiungere 100g/mq di farina di roccia calcarea al letto di fioritura.",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Applicare elettrocoltura DC (1-3V) con elettrodi in rame/zinco, mantenere umidità substrato costante ma non eccessiva.",
+          "azione": "Monitorare umidità del suolo: se <30%, irrigare con 2L/mq a goccia lenta. Nessuna elettrocoltura oggi (raccolta tra 49gg).",
           "priorita": "media"
         },
         {
           "nome": "Titan F1",
-          "azione": "Applicare elettrocoltura DC (1-3V) con elettrodi in rame/zinco, monitorare umidità substrato e temperatura radici.",
-          "priorita": "media"
+          "azione": "Applicare elettrocoltura DC 6V per 4 ore (18-22) con elettrodi in zinco a 5cm dalle radici. Aggiungere 100g/mq di farina di roccia silicea.",
+          "priorita": "alta"
         },
         {
           "nome": "Medusa F1",
-          "azione": "Applicare elettrocoltura DC (1-3V) con elettrodi in rame/zinco, ridurre leggermente irrigazione se substrato umido.",
-          "priorita": "media"
+          "azione": "Applicare elettrocoltura DC 5V per 4 ore (07-11) con elettrodi in rame a 5cm dalle radici. Aggiungere 100g/mq di farina di roccia calcarea.",
+          "priorita": "alta"
         },
         {
           "nome": "Gaia F1",
-          "azione": "Applicare elettrocoltura DC (1-3V) con elettrodi in rame/zinco, ridurre irrigazione a causa dell'umidità elevata e monitorare umidità substrato.",
+          "azione": "Applicare elettrocoltura DC 5V per 4 ore (18-22) con elettrodi in rame a 5cm dalle radici. Aggiungere 100g/mq di farina di roccia silicea.",
           "priorita": "alta"
         },
         {
           "nome": "Astro Lemonade F1",
-          "azione": "Mantenere in vegetazione con irrigazione regolare, applicare elettrocoltura DC (1-3V) per stimolare rizosfera, evitare stress idrico con temperature in aumento.",
+          "azione": "Nessuna elettrocoltura oggi. Monitorare umidità del suolo (target 40-50%) e irrigare solo se necessario con acqua a pH 6.2.",
           "priorita": "bassa"
         },
         {
           "nome": "Cosmic Cheddar F1",
-          "azione": "Mantenere in vegetazione con irrigazione regolare, applicare elettrocoltura DC (1-3V) per stimolare rizosfera.",
+          "azione": "Nessuna elettrocoltura oggi. Monitorare umidità del suolo (target 40-50%) e irrigare solo se necessario con acqua a pH 6.2.",
           "priorita": "bassa"
         },
         {
           "nome": "Orbital Banana F1",
-          "azione": "Mantenere in vegetazione con irrigazione regolare, applicare elettrocoltura DC (1-3V) per stimolare rizosfera.",
+          "azione": "Nessuna elettrocoltura oggi. Monitorare umidità del suolo (target 40-50%) e irrigare solo se necessario con acqua a pH 6.2.",
           "priorita": "bassa"
         },
         {
-          "nome": "Royal Gorilla",
-          "azione": "Mantenere in vegetazione con irrigazione regolare, applicare elettrocoltura DC (1-3V) per stimolare rizosfera.",
+          "nome": "Royal Gorilla F1",
+          "azione": "Nessuna elettrocoltura oggi. Monitorare umidità del suolo (target 40-50%) e irrigare solo se necessario con acqua a pH 6.2.",
           "priorita": "bassa"
         },
         {
-          "nome": "Mexican Rush",
-          "azione": "Mantenere in vegetazione con irrigazione regolare, applicare elettrocoltura DC (1-3V) per stimolare rizosfera.",
+          "nome": "Mexican Rush F1",
+          "azione": "Nessuna elettrocoltura oggi. Monitorare umidità del suolo (target 40-50%) e irrigare solo se necessario con acqua a pH 6.2.",
           "priorita": "bassa"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Elettrocoltura con elettrodi in rame/zinco e batteria 9V",
-        "descrizione": "Posizionare elettrodi in rame e zinco a 10-15 cm di profondità lungo il perimetro della serra, collegati a una batteria da 9V con corrente continua (DC) a 1-3V. Applicare per 4-6 ore nelle ore fresche (mattina presto o sera) per stimolare la rizosfera senza stressare le piante con il caldo.",
-        "fonte": "[ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-, chunk_002]",
+        "nome": "Elettrocoltura + Preparati Biodinamici",
+        "descrizione": "Applicare una corrente DC a basso voltaggio (5V) durante l'applicazione di preparati biodinamici (es. 501 Silice) alle autofiorenti in fioritura. Questo metodo, descritto in [pdf_13] e [Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce], accelera l'assorbimento dei nutrienti e migliora la risposta delle piante.",
+        "fonte": "[pdf_13], [Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce]",
         "materiali": [
-          "elettrodi in rame",
-          "elettrodi in zinco",
-          "batteria 9V",
-          "cavi isolati",
-          "tubi in PVC per isolamento"
+          "Corrente DC 5V",
+          "Elettrodi in rame/zinco",
+          "Preparato biodinamico 501 Silice",
+          "Timer per elettrocoltura"
         ],
-        "difficolta": "bassa"
-      },
-      {
-        "nome": "Applicazione di preparato biodinamico 501 (silice)",
-        "descrizione": "Spruzzare una soluzione diluita di preparato 501 (silice) sulle foglie al tramonto, utilizzando un nebulizzatore a pressione. Questo rafforza la resistenza dei fiori e armonizza le energie telluriche, sfruttando la luna gibbosa crescente che favorisce la maturazione.",
-        "fonte": "[DE_L_ELECTRICITE_DES_VEGETAUX, chunk_003]",
-        "materiali": [
-          "preparato 501 biodinamico",
-          "acqua distillata",
-          "nebulizzatore a pressione",
-          "orologio per timing tramonto"
-        ],
-        "difficolta": "bassa"
+        "difficolta": "media"
       }
     ],
     "scoperte": [
-      "L'elevata umidità ambientale (78%) e la luna gibbosa crescente (73% illuminazione) creano condizioni ideali per combinare elettrocoltura e biodinamica, poiché l'umidità aumenta la conducibilità elettrica del suolo e la luna favorisce la maturazione dei fiori [Justin Etienne Christofleau, principi di elettrocoltura].",
-      "L'elettrocoltura agisce come un 'sistema di comunicazione' tra piante e suolo, dove le correnti elettriche naturali fungono da ponte tra processi biologici e fisici, particolarmente rilevante in condizioni di alta umidità [Christofleau, brevetti storici]."
+      "L'elettrocoltura in combinazione con la biodinamica può aumentare la produzione di terpeni e resina nelle autofiorenti in fioritura, come osservato in studi su [Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce].",
+      "La fase di Gibbosa Crescente (73% illuminazione) è ideale per applicare elettrocoltura e preparati biodinamici, poiché la luna crescente favorisce la crescita e l'assorbimento dei nutrienti [Manuale Biodinamico]."
     ],
     "avvisi": [
-      "Evitare di applicare elettrocoltura o PEMF durante le ore centrali della giornata (12-16) a causa del picco termico previsto (34°C domani) per prevenire stress termico alle piante [Manuale di Coltivazione, 2026-07-08].",
-      "Monitorare l'umidità del substrato delle autofiorenti (soprattutto Epsilon e Gaia) a causa dell'elevata umidità ambientale (78%) che potrebbe favorire stress fungino."
+      "Evitare elettrocoltura tra 12-16 a causa del picco termico previsto (33.7°C max) per prevenire stress termico alle piante [Manuale di Coltivazione BioSerra].",
+      "Monitorare umidità del suolo alle 12:00: se <30%, irrigare immediatamente con 2L/mq a goccia lenta per evitare stress idrico in fioritura."
     ],
     "piano_giornata": {
-      "mattina": "07-12: Applicare elettrocoltura DC (1-3V) con elettrodi in rame/zinco per tutte le piante in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia). Ridurre leggermente l'irrigazione per Epsilon e Gaia a causa dell'umidità elevata. Monitorare umidità substrato.",
-      "pomeriggio": "12-18: Evitare interventi durante le ore più calde (12-16) a causa del picco termico previsto. Mantenere le femminizzate in vegetazione con irrigazione regolare. Applicare preparato biodinamico 501 al tramonto (ore 19:30-20:00) sulle autofiorenti in fioritura.",
-      "sera": "18-21: Applicare preparato biodinamico 501 al tramonto sulle autofiorenti in fioritura. Verificare il corretto funzionamento degli elettrodi e della batteria per l'elettrocoltura. Monitorare umidità e temperatura del substrato."
+      "mattina": "07-12: Applicare elettrocoltura DC (5-6V) alle autofiorenti in fioritura (Epsilon, Titan, Medusa, Gaia) per 4 ore. Aggiungere farina di roccia calcarea/silicea al letto di fioritura. Monitorare umidità del suolo.",
+      "pomeriggio": "12-18: Evitare elettrocoltura e attività fisiche sulla serra a causa del caldo intenso (33.7°C max). Monitorare umidità e temperatura del suolo.",
+      "sera": "18-21: Applicare elettrocoltura DC (5-6V) alle autofiorenti in fioritura (Milky Way, Gaia) per 3 ore. Irrigare se necessario con 2L/mq a goccia lenta."
     },
     "kb_sintesi": {
       "principi_attivi": [
-        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, agendo come catalizzatore biologico senza interferire con i processi naturali.",
-        "L'applicazione di correnti elettriche a basso voltaggio (DC) vicino alle radici stimola la crescita e la salute delle colture, migliorando l'assorbimento dei nutrienti e l'attività metabolica.",
-        "L'uso di elettrodi in rame/zinco (pile naturali) è una tecnica consolidata per generare campi elettrici benefici nel suolo, favorendo la rizosfera.",
-        "L'elettrocoltura si basa su principi fisici e biologici, dove l'elettricità agisce come vettore di informazioni per le piante, simile a un sistema di comunicazione sotterraneo.",
-        "Justin Etienne Christofleau, pioniere dell'elettrocoltura, brevettò dispositivi che sfruttano campi magnetici terrestri per ottimizzare la crescita vegetale, dimostrando l'interconnessione tra suolo e atmosfera."
+        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, agendo come catalizzatore dei processi biochimici naturali.",
+        "L'applicazione di correnti elettriche a basso voltaggio (DC) vicino alle radici stimola la crescita e la salute delle colture, migliorando l'assorbimento dei nutrienti.",
+        "L'uso di materiali conduttivi come rame e zinco nelle configurazioni di elettrocoltura può potenziare gli effetti benefici sulle piante.",
+        "La biodinamica e l'elettrocoltura condividono il principio di connessione con le energie viventi della Terra, agendo in sinergia per ottimizzare la vitalità del suolo e delle piante.",
+        "L'applicazione di farine di roccia (rocce macinate) migliora la struttura e la fertilità del suolo, fornendo minerali essenziali e favorendo l'attività microbica."
       ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (1-3V) tramite elettrodi in rame/zinco posizionati a 10-15 cm di profondità lungo il perimetro della serra, collegati a una batteria da 9V. Questo metodo, descritto in [ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-, chunk_002], stimola la rizosfera durante la fase di fioritura, migliorando la resa e la qualità dei fiori.",
-      "consiglio_suolo_da_testi": "Integrare nel suolo una miscela di carbone vegetale (biochar) e micorrize arbuscolari (AM) per potenziare la conducibilità elettrica naturale del terreno. Il biochar, citato in [Corso-Elettrocoltura_compressed, PAG 2], agisce come conduttore di ioni e riserva di nutrienti, mentre le micorrize migliorano la simbiosi radicale, essenziale durante la vegetazione e la fioritura.",
-      "consiglio_biodinamica_da_testi": "Oggi, con luna in fase calante (secondo i calendari biodinamici), è il momento ideale per applicare preparati a base di silice (es. 501) sulle foglie al tramonto, per favorire la maturazione dei fiori e rafforzare la resistenza delle piante. Questo metodo, ispirato ai principi di Steiner, è citato in [DE_L_ELECTRICITE_DES_VEGETAUX, chunk_003] come complementare all'elettrocoltura per armonizzare le energie telluriche.",
-      "scoperta_del_giorno": "I testi di Christofleau evidenziano che l'elettrocoltura non si limita a stimolare la crescita, ma agisce come un 'sistema di comunicazione' tra piante e suolo, dove le correnti elettriche naturali (misurabili con strumenti come l'elettrometro) fungono da ponte tra processi biologici e fisici. Questo è particolarmente rilevante oggi, con umidità elevata (78%) che favorisce la conducibilità del suolo.",
+      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (tra 1 e 12V) vicino alle radici delle piante in fase di vegetazione e fioritura, utilizzando elettrodi in rame o zinco. Questo metodo, descritto nel manuale [pdf_17] (PAG 28), stimola la crescita e la salute delle colture senza danneggiare l'ambiente. Assicurarsi che gli elettrodi siano ben isolati e posizionati a una distanza sicura dalle radici per evitare ustioni.",
+      "consiglio_suolo_da_testi": "Integrare farine di roccia nel suolo per migliorare la struttura e fornire minerali essenziali. Questo approccio, descritto nel manuale [Agricultura_Organica_Harina_de_Rocas_y_la_Salud_del_Suelo_al_alcance_de_todos_Ja] (PAG 1), è particolarmente utile in fase di fioritura per sostenere la produzione di fiori e frutti. Utilizzare una miscela di farine di roccia calcaree e silicee per bilanciare il pH e fornire calcio e silicio.",
+      "consiglio_biodinamica_da_tesi": "Preparare e applicare preparati biodinamici come il cornoletame (500) e il cornosilice (501) per stimolare la vitalità del suolo e delle piante. Questo metodo, basato sui principi della biodinamica, è particolarmente efficace in fase di fioritura per promuovere la formazione di fiori sani e resistenti. Applicare i preparati nelle ore mattutine, preferibilmente in giorni favorevoli secondo il calendario biodinamico.",
+      "scoperta_del_giorno": "L'elettrocoltura può essere utilizzata in combinazione con la biodinamica per potenziare gli effetti benefici sulle piante. Ad esempio, applicare una corrente DC a basso voltaggio durante l'applicazione dei preparati biodinamici può accelerare l'assorbimento dei nutrienti e migliorare la risposta delle piante. Questo approccio sinergico è supportato dai principi di connessione con le energie viventi della Terra, come descritto nei manuali [pdf_13] e [Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce].",
       "tecnica_da_provare": {
-        "nome": "Sistema a elettrodi incrociati con biochar",
-        "descrizione": "Posizionare 4 elettrodi in rame/zinco a croce intorno a ogni pianta, collegati a una batteria da 9V tramite un resistore da 1kΩ. Interrare gli elettrodi a 15 cm di profondità e aggiungere una manciata di biochar intorno alla base della pianta. Mantenere il sistema attivo per 8 ore al giorno (dalle 8:00 alle 16:00), monitorando la temperatura del suolo (non superare i 28°C).",
-        "fonte": "[ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-, chunk_004] e [Corso-Elettrocoltura_compressed, PAG 3]",
+        "nome": "Elettrocoltura con corrente DC e preparati biodinamici",
+        "descrizione": "Applicare una corrente continua (DC) a basso voltaggio (tra 1 e 6V) vicino alle radici delle piante utilizzando elettrodi in rame o zinco. Contemporaneamente, applicare un preparato biodinamico come il cornoletame (500) diluito in acqua. Mantenere la corrente per 2-4 ore al giorno, preferibilmente nelle ore mattutine. Questo metodo combina i benefici dell'elettrocoltura con quelli della biodinamica, promuovendo una crescita sana e vigorosa delle piante.",
+        "fonte": "[pdf_17] e [Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce]",
         "materiali": [
-          "Elettrodi in rame/zinco (diametro 6mm, lunghezza 30cm)",
-          "Batteria da 9V",
-          "Resistore da 1kΩ",
-          "Cavo elettrico isolato",
-          "Biochar (particelle da 2-5mm)",
-          "Tester di conducibilità del suolo (opzionale)"
+          "Elettrodi in rame o zinco",
+          "Fonte di corrente DC (batteria o pannello solare)",
+          "Cavi isolati",
+          "Preparato biodinamico (cornoletame 500 o cornosilice 501)",
+          "Acqua",
+          "Timer (opzionale)"
         ]
       }
     }
   },
   "agenti": {
     "piante": {
-      "stato_generale": "ottimale con monitoraggio necessario per umidità e temperatura",
-      "irrigazione": "Ridurre leggermente l'irrigazione per Epsilon e Gaia a causa dell'umidità ambientale elevata (78%). Mantenere irrigazione regolare per le femminizzate in vegetazione. Evitare eccessi per prevenire stress fungino.",
-      "nutrizione": "Nessuna integrazione nutrizionale oggi. Mantenere solo acqua per evitare squilibri in fioritura.",
+      "stato_generale": "ottimale",
+      "irrigazione": "Irrigare solo se umidità del suolo <30% alle 12:00, con 2L/mq a goccia lenta per evitare stress idrico in fioritura.",
+      "nutrizione": "Aggiungere 100g/mq di farina di roccia calcarea/silicea al letto di fioritura delle autofiorenti. Nessuna integrazione per le femminizzate oggi.",
       "piante_critiche": []
     },
     "ambiente": {
@@ -144,52 +131,39 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Applicare preparato biodinamico 501 al tramonto per armonizzare le energie telluriche e favorire la maturazione dei fiori [DE_L_ELECTRICITE_DES_VEGETAUX, chunk_003]."
+        "consiglio": "Applicare elettrocoltura e preparati biodinamici oggi per sfruttare l'energia crescente della luna e migliorare l'assorbimento dei nutrienti [Manuale Biodinamico]."
       },
-      "ore_luce": 15.0
+      "ore_luce": 14.9
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare il corretto posizionamento degli elettrodi in rame/zinco a 10-15 cm di profondità per l'elettrocoltura DC.",
-        "Controllare il funzionamento della batteria 9V e la connessione dei cavi per evitare cortocircuiti."
+        "Verificare che gli elettrodi in rame/zinco siano ben isolati e posizionati a 5cm dalle radici per evitare ustioni [pdf_17] (PAG 28).",
+        "Controllare che la corrente DC sia tra 5-8V e che il timer sia impostato correttamente per evitare sovraccarichi."
       ],
-      "ottimizzazione": "Applicare elettrocoltura DC (1-3V) nelle ore fresche (mattina presto) per massimizzare l'efficacia senza stressare le piante con il caldo [ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-, chunk_002]."
+      "ottimizzazione": "Utilizzare elettrodi in rame per le autofiorenti in fioritura per stimolare la produzione di resina, come indicato in [Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce]."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Elettrocoltura con elettrodi in rame/zinco e batteria 9V",
-      "descrizione": "Posizionare elettrodi in rame e zinco a 10-15 cm di profondità lungo il perimetro della serra, collegati a una batteria da 9V con corrente continua (DC) a 1-3V. Applicare per 4-6 ore nelle ore fresche (mattina presto o sera) per stimolare la rizosfera senza stressare le piante con il caldo.",
-      "fonte": "[ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-, chunk_002]",
+      "nome": "Elettrocoltura + Preparati Biodinamici",
+      "descrizione": "Applicare una corrente DC a basso voltaggio (5V) durante l'applicazione di preparati biodinamici (es. 501 Silice) alle autofiorenti in fioritura. Questo metodo, descritto in [pdf_13] e [Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce], accelera l'assorbimento dei nutrienti e migliora la risposta delle piante.",
+      "fonte": "[pdf_13], [Electroculture-The-Biohackers-Guide-Collection-_Cesar-Arce]",
       "materiali": [
-        "elettrodi in rame",
-        "elettrodi in zinco",
-        "batteria 9V",
-        "cavi isolati",
-        "tubi in PVC per isolamento"
+        "Corrente DC 5V",
+        "Elettrodi in rame/zinco",
+        "Preparato biodinamico 501 Silice",
+        "Timer per elettrocoltura"
       ],
-      "difficolta": "bassa"
-    },
-    {
-      "nome": "Applicazione di preparato biodinamico 501 (silice)",
-      "descrizione": "Spruzzare una soluzione diluita di preparato 501 (silice) sulle foglie al tramonto, utilizzando un nebulizzatore a pressione. Questo rafforza la resistenza dei fiori e armonizza le energie telluriche, sfruttando la luna gibbosa crescente che favorisce la maturazione.",
-      "fonte": "[DE_L_ELECTRICITE_DES_VEGETAUX, chunk_003]",
-      "materiali": [
-        "preparato 501 biodinamico",
-        "acqua distillata",
-        "nebulizzatore a pressione",
-        "orologio per timing tramonto"
-      ],
-      "difficolta": "bassa"
+      "difficolta": "media"
     }
   ],
   "avvisi": [
-    "Evitare di applicare elettrocoltura o PEMF durante le ore centrali della giornata (12-16) a causa del picco termico previsto (34°C domani) per prevenire stress termico alle piante [Manuale di Coltivazione, 2026-07-08].",
-    "Monitorare l'umidità del substrato delle autofiorenti (soprattutto Epsilon e Gaia) a causa dell'elevata umidità ambientale (78%) che potrebbe favorire stress fungino."
+    "Evitare elettrocoltura tra 12-16 a causa del picco termico previsto (33.7°C max) per prevenire stress termico alle piante [Manuale di Coltivazione BioSerra].",
+    "Monitorare umidità del suolo alle 12:00: se <30%, irrigare immediatamente con 2L/mq a goccia lenta per evitare stress idrico in fioritura."
   ],
   "consigli_giorno": [
-    "Applicare elettrocoltura DC (1-3V) tramite elettrodi in rame/zinco a 10-15 cm di profondità lungo il perimetro della serra per le piante in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia), collegati a batteria 9V. Questo stimola la rizosfera e migliora l'assorbimento dei nutrienti durante la fase critica di fioritura [ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-, chunk_002].",
-    "Applicare preparato biodinamico a base di silice (501) sulle foglie al tramonto per rafforzare la resistenza dei fiori e armonizzare le energie telluriche, sfruttando la luna gibbosa crescente che favorisce la maturazione [DE_L_ELECTRICITE_DES_VEGETAUX, chunk_003].",
-    "Monitorare l'umidità del substrato delle autofiorenti (soprattutto Epsilon e Gaia) a causa dell'elevata umidità ambientale (78%) che potrebbe favorire stress fungino. Ridurre l'irrigazione se il substrato è già umido [Manuale di Coltivazione, 2026-07-08]."
+    "Applicare elettrocoltura DC a basso voltaggio (5-8V) solo alle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) durante le ore fresche (07-10 o 18-21) per stimolare la fioritura senza stress termico, come da [pdf_17] (PAG 28).",
+    "Integrare 200g/mq di farina di roccia calcarea (pH 6.5-7.0) nel letto di fioritura delle autofiorenti per sostenere la produzione di fiori, seguendo [Agricultura_Organica_Harina_de_Rocas_y_la_Salud_del_Suelo_al_alcance_de_todos_Ja] (PAG 1).",
+    "Monitorare umidità del suolo alle 12:00: se <30%, irrigare con 2L/mq a goccia lenta per evitare stress idrico in fioritura, come indicato nel [Manuale di Coltivazione BioSerra] (Rev.23)."
   ]
 }
