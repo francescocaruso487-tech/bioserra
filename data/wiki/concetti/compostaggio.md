@@ -2,8 +2,8 @@
 id: compostaggio
 label: Compostaggio
 categoria: suolo
-aggiornato: 2026-07-08
-pdf_count: 3
+aggiornato: 2026-07-10
+pdf_count: 10
 ---
 
 # Compostaggio
@@ -12,31 +12,32 @@ pdf_count: 3
 # Compostaggio
 
 ## Descrizione
-Il compostaggio è un processo biologico naturale che trasforma materiali organici in un ammendante ricco di nutrienti e microrganismi benefici, noto come compost. Questo processo avviene grazie all'azione di batteri, funghi, attinomiceti e organismi del suolo che decompongono la materia organica in presenza di ossigeno (processo aerobico). Il risultato è un prodotto stabile, simile all'humus, che migliora la struttura del suolo, la capacità di ritenzione idrica e la disponibilità di nutrienti per le piante. In un sistema **Living Soil**, il compost è fondamentale per mantenere un ecosistema microbico equilibrato, essenziale per la salute delle piante e la resilienza alle avversità.
+Il compostaggio è un processo naturale di decomposizione aerobica degli scarti organici, che trasforma materiali biodegradabili in un ammendante ricco di nutrienti, microrganismi benefici e sostanza organica stabile. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e organismi del suolo (come lombrichi e artropodi), che scompongono la materia organica in composti umificati. Il compost maturo migliora la struttura del suolo, aumenta la capacità di scambio cationico (CSC), favorisce la ritenzione idrica e stimola la biodiversità microbica, elementi fondamentali per un **Living Soil** outdoor, soprattutto in climi mediterranei come quello di Caserta (41°N), dove la mineralizzazione della sostanza organica può essere accelerata dal calore estivo.
 
-Il meccanismo d'azione si basa su quattro fasi principali: la fase mesofila (decomposizione iniziale a temperature moderate), la fase termofila (aumento della temperatura fino a 50-70°C grazie all'attività microbica intensa), la fase di raffreddamento (riduzione dell'attività termofila) e la fase di maturazione (stabilizzazione del compost). Per ottimizzare il processo in serra outdoor a Caserta (41°N), è cruciale bilanciare il rapporto carbonio/azoto (C/N) tra 25:1 e 30:1, garantire un'adeguata aerazione e umidità, e monitorare il pH per evitare acidificazioni eccessive.
+Il meccanismo di azione si basa su un equilibrio tra **materiali azotati (verdi)** e **carboniosi (marroni)**, umidità controllata (60-70%) e aerazione, che evita la formazione di zone anaerobiche e la produzione di odori sgradevoli. Un compost ben gestito riduce la necessità di fertilizzanti sintetici, mitiga l’impatto ambientale e chiude il ciclo dei nutrienti, rendendolo una pratica chiave per l’agricoltura rigenerativa. Inoltre, il compost attiva processi biochimici come la produzione di **acidi umici e fulvici**, che migliorano l’assorbimento dei nutrienti da parte delle piante e proteggono le radici da patogeni.
 
 ## Come si applica in serra
+Per una serra outdoor **Living Soil** a Caserta, segui questi passaggi pratici:
+
 1. **Selezione dei materiali**:
-   - **Scarti vegetali** (erba tagliata, residui di potatura, bucce di frutta/verdura).
-   - **Letame** (preferibilmente di cavallo o mucca, ben maturo per evitare patogeni).
-   - **Materiali carboniosi** (foglie secche, paglia, cartone non trattato, segatura).
-   - *Evita*: carne, latticini, oli, piante malate o infestate da parassiti.
+   - **Verde (ricchi di azoto)**: erba tagliata, avanzi di frutta/verdura, fondi di caffè, scarti di ortaggi (escludere agrumi e carne).
+   - **Marroni (ricchi di carbonio)**: foglie secche, paglia, cartone non stampato, rametti triturati, segatura (usare con moderazione).
+   - *Rapporto ideale*: 2 parti marroni : 1 parte verde (in volume).
 
-2. **Costruzione del cumulo**:
-   - Disponi i materiali in strati alternati (es. 1 parte azotata + 2 parti carboniose).
-   - Altezza consigliata: 1-1.5 metri per garantire un buon isolamento termico.
-   - Posiziona il cumulo in un'area ombreggiata della serra per evitare surriscaldamenti estivi.
+2. **Stratificazione**:
+   - Disponi i materiali in strati alternati (5-10 cm per strato) in una compostiera o in una zona ombreggiata della serra.
+   - Aggiungi uno strato di **terriccio o compost maturo** (1-2 cm) tra i livelli per inoculare microrganismi benefici.
 
-3. **Gestione del processo**:
-   - **Umidità**: Mantieni il 50-60% (il cumulo deve essere umido come una spugna strizzata). In caso di siccità, innaffia leggermente; in caso di pioggia eccessiva, copri con un telo traspirante.
-   - **Aerazione**: Gira il cumulo ogni 2 settimane con una forca o un aeratore per ossigenare i microrganismi e accelerare la decomposizione. In serra, questo passaggio è facilitato da cumuli più piccoli (1x1m).
-   - **Temperatura**: Monitora con una sonda termica. Se supera i 60°C, gira più frequentemente per evitare la morte dei microrganismi utili.
+3. **Gestione dell’umidità e aerazione**:
+   - Mantieni il cumulo umido come una spugna strizzata (60-70% di umidità). In estate, copri con un telo per evitare l’essiccazione.
+   - Rivolta il compost ogni **1-2 settimane** con una forca o un aeratore per garantire ossigenazione e omogeneizzare la decomposizione.
+   - *Test pratico*: Se stringendo un pugno di compost ne esce qualche goccia d’acqua, l’umidità è corretta.
 
-4. **Maturazione e utilizzo**:
-   - Tempo di maturazione: 3-6 mesi (più lungo in inverno a Caserta).
-   - **Test di maturità**: Il compost è pronto quando ha un odore terroso, colore scuro e struttura simile al terriccio. Evita di usare compost non maturo, che può bruciare le radici delle piante.
-   - **Applicazione**: Distribuisci 2-5 cm di compost maturo sul suolo prima della semina o trapianto, incorporandolo leggermente con una zappa. In **Living Soil**, puoi anche usarlo come "top dressing" durante la vegetazione.
+4. **Tempi di maturazione**:
+   - **Compost fresco** (1-2 mesi): utile come pacciamatura o per preparare tè di compost.
+   - **Compost maturo** (3-6 mesi): pronto per essere incorporato nel suolo (2-5 cm di spessore) o usato come ammendante in pre-semina.
+   - *Segnali di maturità*: odore di terra, colore scuro, struttura simile a terriccio e assenza di materiali riconoscibili.
 
-## Sinergie con altri elementi
-- **Lakhovsky (O
+5. **Uso in serra**:
+   - **Prima della semina**: distribuisci 2-3 kg/mq di compost maturo e lavoralo superficialmente (5-10 cm).
+   - **Durante la crescita**:
