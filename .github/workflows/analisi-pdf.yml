@@ -5,10 +5,16 @@ on:
     - cron: '0 1 * * *'
   workflow_dispatch:
 
+# Rev.27: serializza i workflow che scrivono pdf_knowledge.json (analisi-pdf, traduci-testi,
+# connessioni-update) per evitare race condition se un batch sfora il proprio slot temporale.
+concurrency:
+  group: bioserra-pdf-knowledge
+  cancel-in-progress: false
+
 jobs:
   analisi:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 50
 
     steps:
       - name: Checkout repo
