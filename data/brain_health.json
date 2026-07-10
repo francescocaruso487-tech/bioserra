@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-10T06:14:39.165653+00:00",
+  "lastUpdate": "2026-07-10T12:39:00.453199+00:00",
   "analisi": {
     "totale_voci": 320,
     "pipeline_v25_fulltext": 55,
@@ -42,96 +42,7 @@
       "max": 20,
       "media": 17.6
     },
-    "documenti_sottocoperti": [
-      {
-        "id": "pdf_0",
-        "titolo": "108upa",
-        "testo_chars": 1446005,
-        "finestre_analizzate": 20,
-        "pct_coperta": 6.2,
-        "copertura_span_pct": null
-      },
-      {
-        "id": "pdf_319",
-        "titolo": "LA CABALA MISTICA",
-        "testo_chars": 603851,
-        "finestre_analizzate": 20,
-        "pct_coperta": 14.9,
-        "copertura_span_pct": null
-      },
-      {
-        "id": "pdf_7",
-        "titolo": "An Agricultural Testament - Albert Howard",
-        "testo_chars": 556392,
-        "finestre_analizzate": 20,
-        "pct_coperta": 16.2,
-        "copertura_span_pct": null
-      },
-      {
-        "id": "pdf_313",
-        "titolo": "LA FIGLIA DELLA LUNA (Aleister Crowley)",
-        "testo_chars": 549513,
-        "finestre_analizzate": 20,
-        "pct_coperta": 16.4,
-        "copertura_span_pct": null
-      },
-      {
-        "id": "pdf_298",
-        "titolo": "confucius_i_dialoghi",
-        "testo_chars": 487927,
-        "finestre_analizzate": 20,
-        "pct_coperta": 18.4,
-        "copertura_span_pct": null
-      },
-      {
-        "id": "pdf_296",
-        "titolo": "ySanedrin",
-        "testo_chars": 417190,
-        "finestre_analizzate": 20,
-        "pct_coperta": 21.6,
-        "copertura_span_pct": null
-      },
-      {
-        "id": "pdf_304",
-        "titolo": "IL-CODICE-TESLA-SECOLARIUM-SAGA-_Italian-Edition_-_Alessandr",
-        "testo_chars": 353185,
-        "finestre_analizzate": 20,
-        "pct_coperta": 25.5,
-        "copertura_span_pct": null
-      },
-      {
-        "id": "pdf_320",
-        "titolo": "Nikola Tesla, un genio volutamente dimenticato (Baccelli, Vi",
-        "testo_chars": 340094,
-        "finestre_analizzate": 20,
-        "pct_coperta": 26.5,
-        "copertura_span_pct": null
-      },
-      {
-        "id": "pdf_317",
-        "titolo": "Wicca",
-        "testo_chars": 324071,
-        "finestre_analizzate": 20,
-        "pct_coperta": 27.8,
-        "copertura_span_pct": null
-      },
-      {
-        "id": "pdf_5",
-        "titolo": "Aleister-Crowley-e-Dion-Fortune-_Alan-Richardson",
-        "testo_chars": 278913,
-        "finestre_analizzate": 20,
-        "pct_coperta": 32.3,
-        "copertura_span_pct": null
-      },
-      {
-        "id": "pdf_62",
-        "titolo": "Corpo ermetico e Asclepio",
-        "testo_chars": 274212,
-        "finestre_analizzate": 20,
-        "pct_coperta": 32.8,
-        "copertura_span_pct": null
-      }
-    ],
+    "documenti_sottocoperti": [],
     "categoria_breakdown": {
       "scienza": 2,
       "web_coltivazione": 250,
@@ -260,9 +171,9 @@
     "lingua_breakdown": {
       "it": 57
     },
-    "chunk_progresso_doc_con_dato": 8,
-    "chunk_progresso_totale_tradotti": 12,
-    "chunk_progresso_totale_chunk": 100,
+    "chunk_progresso_doc_con_dato": 5,
+    "chunk_progresso_totale_tradotti": 7,
+    "chunk_progresso_totale_chunk": 65,
     "chunk_progresso_anomalie": []
   },
   "traduzione": {
@@ -270,26 +181,26 @@
     "lingua_breakdown": {
       "it": 57
     },
-    "chunk_progresso_doc_con_dato": 8,
-    "chunk_progresso_totale_tradotti": 12,
-    "chunk_progresso_totale_chunk": 100
+    "chunk_progresso_doc_con_dato": 5,
+    "chunk_progresso_totale_tradotti": 7,
+    "chunk_progresso_totale_chunk": 65
   },
   "connessioni": {
-    "nodi_totali": 299,
-    "edges_totali": 44632,
+    "nodi_totali": 320,
+    "edges_totali": 51146,
     "nodi_isolati": 0,
     "nodi_isolati_ids": [],
     "peso_stats": {
       "min": 0.4,
       "max": 0.9957,
-      "media": 0.854
+      "media": 0.856
     },
     "tipo_conn_breakdown": {
-      "principio_condiviso": 18,
-      "sinergia": 40,
+      "principio_condiviso": 19,
+      "sinergia": 44,
       "potenziamento": 3,
-      "contraddizione": 31,
-      "(nessuno)": 44540
+      "contraddizione": 40,
+      "(nessuno)": 51040
     },
     "edges_dangling": [],
     "copertura_coppie_pct_stimata": 100.2
