@@ -1,21 +1,21 @@
 {
-  "lastUpdate": "2026-07-09",
-  "total": 15,
-  "fonte": "310 PDF analizzati",
+  "lastUpdate": "2026-07-10",
+  "total": 20,
+  "fonte": "320 PDF analizzati",
   "concetti": [
     {
-      "id": "acqua_magnetizzata",
-      "label": "Acqua Magnetizzata",
+      "id": "spirale_rame",
+      "label": "Spirale in Rame",
       "categoria": "elettrocultura",
-      "descrizione": "Trattamento acqua con magneti per migliorare assorbimento radicale.",
+      "descrizione": "Utilizza spirali di rame per modulare campi elettromagnetici e stimolare la crescita delle piante.",
       "istruzioni_pratiche": [
-        "Posiziona magneti sul tubo di alimentazione",
-        "Usa acqua trattata per irrigazioni",
-        "Monitora crescita radicale"
+        "Posiziona una spirale di rame (diametro 10-20 cm) vicino alle radici o al fusto della pianta.",
+        "Orientala verso nord magnetico per massimizzare l’effetto biofisico.",
+        "Sostituisci la spirale ogni 2-3 cicli di coltivazione per evitare ossidazione."
       ],
       "varianti": [
-        "acqua strutturata",
-        "acqua polarizzata"
+        "Spirale cosmica rame",
+        "Spirale rame"
       ],
       "fasi_guida": [
         "vegetazione",
@@ -23,45 +23,9 @@
       ],
       "rilevanza": 95,
       "tag_correlati": [
-        "elettrocultura",
-        "irrigazione"
-      ],
-      "pdf_ids": [
-        "pdf_21",
-        "pdf_8",
-        "pdf_4",
-        "pdf_0",
-        "pdf_311",
-        "pdf_3",
-        "pdf_5",
-        "pdf_9",
-        "pdf_62",
-        "pdf_308"
-      ],
-      "pdf_count": 10
-    },
-    {
-      "id": "spirale_rame",
-      "label": "Spirale in Rame",
-      "categoria": "elettrocultura",
-      "descrizione": "Spirale in rame per armonizzazione campi elettromagnetici nella zona radice.",
-      "istruzioni_pratiche": [
-        "Inserisci spirale nel substrato vicino alle radici",
-        "Orienta in senso antiorario",
-        "Pulisci periodicamente con acqua acidula"
-      ],
-      "varianti": [
-        "spirale di rame",
-        "spirale rame"
-      ],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 92,
-      "tag_correlati": [
-        "elettrocultura",
-        "rame"
+        "metallo",
+        "campo elettromagnetico",
+        "crescita"
       ],
       "pdf_ids": [
         "pdf_13",
@@ -78,92 +42,18 @@
       "pdf_count": 10
     },
     {
-      "id": "circuito_lakhovsky",
-      "label": "Circuito di Lakhovsky",
-      "categoria": "elettrocultura",
-      "descrizione": "Oscillatore multicellulare per stimolazione risonanza cellulare delle piante.",
-      "istruzioni_pratiche": [
-        "Installa l'anello Lakhovsky attorno alla pianta",
-        "Assicura buon contatto col suolo",
-        "Verifica assenza interferenze metalliche vicine"
-      ],
-      "varianti": [
-        "oscillatore Lakhovsky",
-        "MWO"
-      ],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 90,
-      "tag_correlati": [
-        "elettrocultura",
-        "risonanza"
-      ],
-      "pdf_ids": [
-        "pdf_13",
-        "pdf_24",
-        "pdf_3",
-        "pdf_5",
-        "pdf_9",
-        "pdf_62",
-        "pdf_308",
-        "pdf_294",
-        "pdf_299",
-        "pdf_297"
-      ],
-      "pdf_count": 10
-    },
-    {
-      "id": "elettrodi_fe_cu",
-      "label": "Elettrodi Fe-Cu",
-      "categoria": "elettrocultura",
-      "descrizione": "Coppia ferro-rame nel suolo per stimolazione bioelettrochimica radicale.",
-      "istruzioni_pratiche": [
-        "Inserisci elettrodi a 10-15cm dalla base",
-        "Mantieni distanza 20cm tra Fe e Cu",
-        "Rinnova ogni ciclo vegetativo"
-      ],
-      "varianti": [
-        "pila galvanica Fe-Cu",
-        "ferro-rame"
-      ],
-      "fasi_guida": [
-        "vegetazione",
-        "fioritura"
-      ],
-      "rilevanza": 88,
-      "tag_correlati": [
-        "elettrocultura",
-        "galvanica"
-      ],
-      "pdf_ids": [
-        "pdf_3",
-        "pdf_5",
-        "pdf_9",
-        "pdf_62",
-        "pdf_308",
-        "pdf_294",
-        "pdf_299",
-        "pdf_297",
-        "pdf_298",
-        "pdf_312"
-      ],
-      "pdf_count": 10
-    },
-    {
       "id": "antenna_terra",
       "label": "Antenna di Terra",
       "categoria": "elettrocultura",
-      "descrizione": "Connessione a terra per captare energie telluriche e migliorare il campo bioelettrico.",
+      "descrizione": "Collega le piante a un sistema di messa a terra per armonizzare il loro metabolismo con i campi tellurici.",
       "istruzioni_pratiche": [
-        "Inserisci antenna in rame a 30cm di profondita",
-        "Orienta verticalmente al nord",
-        "Collega a spirale rame se presente"
+        "Inserisci un picchetto di rame o acciaio zincato nel terreno vicino alle radici.",
+        "Collega il picchetto a una spirale di rame posta sopra il suolo con un filo conduttore.",
+        "Assicurati che il sistema sia ben isolato per evitare scariche elettriche."
       ],
       "varianti": [
-        "antenna terra",
-        "connessione geobiologica"
+        "Antenna terrestre",
+        "Antenna di terra (connessione geobiologica)"
       ],
       "fasi_guida": [
         "vegetazione",
@@ -171,8 +61,9 @@
       ],
       "rilevanza": 85,
       "tag_correlati": [
-        "elettrocultura",
-        "geobiologia"
+        "geobiologia",
+        "messa a terra",
+        "armonizzazione"
       ],
       "pdf_ids": [
         "pdf_13",
@@ -187,6 +78,299 @@
         "pdf_3"
       ],
       "pdf_count": 10
+    },
+    {
+      "id": "circuito_lakhovsky",
+      "label": "Circuito Lakhovsky",
+      "categoria": "elettrocultura",
+      "descrizione": "Applica un circuito oscillante a doppio anello per generare frequenze benefiche per le cellule vegetali.",
+      "istruzioni_pratiche": [
+        "Costruisci un circuito con due anelli di rame (diametri 10 e 20 cm) collegati da un filo conduttore.",
+        "Posiziona il circuito intorno alla pianta a 20-30 cm di distanza.",
+        "Attiva il circuito con una fonte di energia a bassa tensione (es. batteria 9V)."
+      ],
+      "varianti": [
+        "Circuito Lakhovsky"
+      ],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 80,
+      "tag_correlati": [
+        "frequenza",
+        "oscillazione cellulare",
+        "metallo"
+      ],
+      "pdf_ids": [
+        "pdf_13",
+        "pdf_24",
+        "pdf_3",
+        "pdf_5",
+        "pdf_9",
+        "pdf_62",
+        "pdf_308",
+        "pdf_294",
+        "pdf_299",
+        "pdf_325"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "acqua_magnetizzata",
+      "label": "Acqua Magnetizzata",
+      "categoria": "elettrocultura",
+      "descrizione": "Tratta l’acqua di irrigazione con campi magnetici per migliorare l’assorbimento dei nutrienti e la crescita.",
+      "istruzioni_pratiche": [
+        "Fai passare l’acqua attraverso un dispositivo magnetico (es. magneti al neodimio) prima dell’irrigazione.",
+        "Lascia riposare l’acqua magnetizzata per 12-24 ore prima dell’uso.",
+        "Utilizza acqua magnetizzata per innaffiature regolari o per preparare soluzioni nutritive."
+      ],
+      "varianti": [
+        "Acqua magnetizzata"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 88,
+      "tag_correlati": [
+        "idratazione",
+        "nutrienti",
+        "struttura dell'acqua"
+      ],
+      "pdf_ids": [
+        "pdf_21",
+        "pdf_8",
+        "pdf_4",
+        "pdf_0",
+        "pdf_311",
+        "pdf_3",
+        "pdf_5",
+        "pdf_9",
+        "pdf_62",
+        "pdf_308"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "biodinamica",
+      "label": "Biodinamica",
+      "categoria": "biodinamica",
+      "descrizione": "Applica preparati biodinamici e sincronizza le attività agricole con i ritmi cosmici per potenziare la vitalità del suolo e delle piante.",
+      "istruzioni_pratiche": [
+        "Prepara e applica i preparati biodinamici (es. cornoletame, cornosilice) secondo il calendario lunare.",
+        "Esegui le lavorazioni del terreno e le semine nei giorni favorevoli (es. radici, fiori).",
+        "Utilizza il preparato 500 (cornoletame) per migliorare la struttura del suolo e il 501 (cornosilice) per stimolare la fotosintesi."
+      ],
+      "varianti": [
+        "Biodinamica (preparati e ritmi cosmici)",
+        "Biodinamica (ritmi cosmici e preparati)"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione",
+        "fioritura",
+        "essiccazione"
+      ],
+      "rilevanza": 92,
+      "tag_correlati": [
+        "ritmi cosmici",
+        "preparati naturali",
+        "suolo vivo"
+      ],
+      "pdf_ids": [
+        "pdf_0",
+        "pdf_3",
+        "pdf_5",
+        "pdf_7",
+        "pdf_9",
+        "pdf_62",
+        "pdf_294",
+        "pdf_308",
+        "pdf_300",
+        "pdf_325"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "rame_coltivazione",
+      "label": "Rame in Coltivazione",
+      "categoria": "elettrocultura",
+      "descrizione": "Incorpora rame come micronutriente o come barriera antimicrobica per prevenire patologie fungine.",
+      "istruzioni_pratiche": [
+        "Aggiungi solfato di rame (0.5-1 g/L) all’acqua di irrigazione ogni 15-20 giorni.",
+        "Utilizza fili o reti di rame intorno alle piante per creare una barriera contro funghi e batteri.",
+        "Monitora i livelli di rame nel suolo per evitare tossicità (max 100 ppm)."
+      ],
+      "varianti": [
+        "Rame in coltivazione"
+      ],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 75,
+      "tag_correlati": [
+        "micronutriente",
+        "antifungino",
+        "metallo pesante"
+      ],
+      "pdf_ids": [
+        "pdf_13",
+        "pdf_14",
+        "pdf_85",
+        "pdf_16",
+        "pdf_17",
+        "pdf_20",
+        "pdf_21",
+        "pdf_22",
+        "pdf_24",
+        "pdf_25"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "elettrocultura_base",
+      "label": "Elettrocultura",
+      "categoria": "elettrocultura",
+      "descrizione": "Applica campi elettromagnetici a bassa intensità per stimolare la crescita, la resistenza e la produttività delle piante.",
+      "istruzioni_pratiche": [
+        "Posiziona elettrodi di rame o acciaio nel terreno e collegali a una fonte di corrente continua (es. batteria 12V).",
+        "Regola la tensione a 1-3V per evitare danni alle radici.",
+        "Applica l’elettrocultura durante le fasi di crescita attiva (vegetazione e fioritura)."
+      ],
+      "varianti": [
+        "Elettrocultura",
+        "Elettrocultura (antenna terra, spirale rame, acqua magnetizzata)",
+        "Elettrocultura (Lakhovsky, Fe-Cu, spirale rame)"
+      ],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 87,
+      "tag_correlati": [
+        "campi EM",
+        "stimolazione",
+        "corrente continua"
+      ],
+      "pdf_ids": [
+        "pdf_13",
+        "pdf_16",
+        "pdf_17",
+        "pdf_18",
+        "pdf_0",
+        "pdf_311",
+        "pdf_3",
+        "pdf_9",
+        "pdf_62",
+        "pdf_308"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "principi_tesla",
+      "label": "Principi Tesla",
+      "categoria": "elettrocultura",
+      "descrizione": "Utilizza bobine di Tesla o generatori di alta frequenza per creare campi elettromagnetici ad alta energia che influenzano la vitalità delle piante.",
+      "istruzioni_pratiche": [
+        "Costruisci una bobina di Tesla di piccole dimensioni (es. 10-20 cm di diametro) e posizionala a 1-2 metri dalle piante.",
+        "Attiva la bobina per 10-15 minuti al giorno, evitando esposizioni prolungate.",
+        "Monitora la risposta delle piante (es. crescita accelerata, maggiore resistenza) e regola la distanza."
+      ],
+      "varianti": [
+        "Principi Tesla",
+        "Bobina di Tesla per generazione di campi elettromagnetici ad alta frequenza"
+      ],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 70,
+      "tag_correlati": [
+        "alta frequenza",
+        "energia libera",
+        "campi pulsati"
+      ],
+      "pdf_ids": [
+        "pdf_21",
+        "pdf_10",
+        "pdf_304",
+        "pdf_312",
+        "pdf_315",
+        "pdf_316",
+        "pdf_320",
+        "pdf_321"
+      ],
+      "pdf_count": 8
+    },
+    {
+      "id": "compostaggio",
+      "label": "Compostaggio",
+      "categoria": "suolo",
+      "descrizione": "Trasforma scarti organici in compost ricco di nutrienti e microrganismi benefici per migliorare la fertilità del suolo.",
+      "istruzioni_pratiche": [
+        "Miscela scarti verdi (es. erba, avanzi di cucina) e marroni (es. foglie secche, cartone) in strati alternati.",
+        "Mantieni il compost umido (60-70%) e aerato, rivoltando ogni 1-2 settimane.",
+        "Utilizza il compost maturo (3-6 mesi) come ammendante o per preparare tè di compost."
+      ],
+      "varianti": [
+        "Compostaggio"
+      ],
+      "fasi_guida": [
+        "germinazione",
+        "vegetazione",
+        "concia"
+      ],
+      "rilevanza": 98,
+      "tag_correlati": [
+        "fertilità",
+        "microrganismi",
+        "sostanza organica"
+      ],
+      "pdf_ids": [
+        "pdf_13",
+        "pdf_16",
+        "pdf_17",
+        "pdf_20",
+        "pdf_21",
+        "pdf_22",
+        "pdf_24",
+        "pdf_25",
+        "pdf_26",
+        "pdf_305"
+      ],
+      "pdf_count": 10
+    },
+    {
+      "id": "nutrizione_biofisica",
+      "label": "Nutrizione Biofisica",
+      "categoria": "nutrizione",
+      "descrizione": "Integra metalli e minerali in forme bioattive per potenziare la salute delle piante e la qualità dei raccolti.",
+      "istruzioni_pratiche": [
+        "Utilizza soluzioni di ferro (Fe) e rame (Cu) a basse concentrazioni (0.1-0.5 g/L) per spruzzature fogliari.",
+        "Combina i metalli con acidi umici o fulvici per migliorare l’assorbimento.",
+        "Applica durante la fase di vegetazione per stimolare la sintesi clorofilliana."
+      ],
+      "varianti": [
+        "Elettrocultura (Lakhovsky, Fe-Cu, spirale rame)"
+      ],
+      "fasi_guida": [
+        "vegetazione",
+        "fioritura"
+      ],
+      "rilevanza": 82,
+      "tag_correlati": [
+        "micronutrienti",
+        "metalli pesanti",
+        "assorbimento"
+      ],
+      "pdf_ids": [
+        "pdf_327"
+      ],
+      "pdf_count": 1
     },
     {
       "id": "gestione_suolo_vivente",
@@ -219,9 +403,11 @@
         "pdf_304",
         "pdf_298",
         "pdf_301",
-        "pdf_316"
+        "pdf_316",
+        "pdf_325",
+        "pdf_327"
       ],
-      "pdf_count": 8
+      "pdf_count": 10
     },
     {
       "id": "compostaggio_organico",
@@ -407,9 +593,10 @@
         "pdf_310",
         "pdf_299",
         "pdf_313",
-        "pdf_318"
+        "pdf_318",
+        "pdf_329"
       ],
-      "pdf_count": 4
+      "pdf_count": 5
     },
     {
       "id": "controllo_parassiti",
@@ -439,9 +626,12 @@
         "pdf_301",
         "pdf_4",
         "pdf_312",
-        "pdf_313"
+        "pdf_313",
+        "pdf_322",
+        "pdf_323",
+        "pdf_326"
       ],
-      "pdf_count": 5
+      "pdf_count": 8
     },
     {
       "id": "essiccazione_corretta",
@@ -500,37 +690,63 @@
         "pdf_298",
         "pdf_301",
         "pdf_313",
-        "pdf_316"
+        "pdf_316",
+        "pdf_325"
       ],
-      "pdf_count": 9
+      "pdf_count": 10
     }
   ],
   "grafo": {
     "nodi": [
-      {
-        "id": "acqua_magnetizzata",
-        "label": "Acqua Magnetizzata",
-        "categoria": "elettrocultura"
-      },
       {
         "id": "spirale_rame",
         "label": "Spirale in Rame",
         "categoria": "elettrocultura"
       },
       {
-        "id": "circuito_lakhovsky",
-        "label": "Circuito di Lakhovsky",
-        "categoria": "elettrocultura"
-      },
-      {
-        "id": "elettrodi_fe_cu",
-        "label": "Elettrodi Fe-Cu",
-        "categoria": "elettrocultura"
-      },
-      {
         "id": "antenna_terra",
         "label": "Antenna di Terra",
         "categoria": "elettrocultura"
+      },
+      {
+        "id": "circuito_lakhovsky",
+        "label": "Circuito Lakhovsky",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "acqua_magnetizzata",
+        "label": "Acqua Magnetizzata",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "biodinamica",
+        "label": "Biodinamica",
+        "categoria": "biodinamica"
+      },
+      {
+        "id": "rame_coltivazione",
+        "label": "Rame in Coltivazione",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "elettrocultura_base",
+        "label": "Elettrocultura",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "principi_tesla",
+        "label": "Principi Tesla",
+        "categoria": "elettrocultura"
+      },
+      {
+        "id": "compostaggio",
+        "label": "Compostaggio",
+        "categoria": "suolo"
+      },
+      {
+        "id": "nutrizione_biofisica",
+        "label": "Nutrizione Biofisica",
+        "categoria": "nutrizione"
       },
       {
         "id": "gestione_suolo_vivente",
@@ -585,24 +801,9 @@
     ],
     "edges": [
       {
-        "source": "acqua_magnetizzata",
-        "target": "spirale_rame",
-        "peso": 3
-      },
-      {
-        "source": "acqua_magnetizzata",
-        "target": "circuito_lakhovsky",
-        "peso": 3
-      },
-      {
-        "source": "acqua_magnetizzata",
-        "target": "elettrodi_fe_cu",
-        "peso": 3
-      },
-      {
-        "source": "acqua_magnetizzata",
+        "source": "spirale_rame",
         "target": "antenna_terra",
-        "peso": 3
+        "peso": 1
       },
       {
         "source": "spirale_rame",
@@ -611,28 +812,138 @@
       },
       {
         "source": "spirale_rame",
-        "target": "elettrodi_fe_cu",
-        "peso": 3
+        "target": "acqua_magnetizzata",
+        "peso": 1
       },
       {
         "source": "spirale_rame",
-        "target": "antenna_terra",
-        "peso": 3
+        "target": "rame_coltivazione",
+        "peso": 1
+      },
+      {
+        "source": "spirale_rame",
+        "target": "elettrocultura_base",
+        "peso": 1
+      },
+      {
+        "source": "spirale_rame",
+        "target": "principi_tesla",
+        "peso": 1
+      },
+      {
+        "source": "antenna_terra",
+        "target": "circuito_lakhovsky",
+        "peso": 1
+      },
+      {
+        "source": "antenna_terra",
+        "target": "acqua_magnetizzata",
+        "peso": 1
+      },
+      {
+        "source": "antenna_terra",
+        "target": "rame_coltivazione",
+        "peso": 1
+      },
+      {
+        "source": "antenna_terra",
+        "target": "elettrocultura_base",
+        "peso": 1
+      },
+      {
+        "source": "antenna_terra",
+        "target": "principi_tesla",
+        "peso": 1
       },
       {
         "source": "circuito_lakhovsky",
-        "target": "elettrodi_fe_cu",
-        "peso": 3
+        "target": "acqua_magnetizzata",
+        "peso": 1
       },
       {
         "source": "circuito_lakhovsky",
-        "target": "antenna_terra",
-        "peso": 3
+        "target": "rame_coltivazione",
+        "peso": 1
       },
       {
-        "source": "elettrodi_fe_cu",
-        "target": "antenna_terra",
-        "peso": 3
+        "source": "circuito_lakhovsky",
+        "target": "elettrocultura_base",
+        "peso": 1
+      },
+      {
+        "source": "circuito_lakhovsky",
+        "target": "principi_tesla",
+        "peso": 1
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "rame_coltivazione",
+        "peso": 1
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "elettrocultura_base",
+        "peso": 1
+      },
+      {
+        "source": "acqua_magnetizzata",
+        "target": "principi_tesla",
+        "peso": 1
+      },
+      {
+        "source": "biodinamica",
+        "target": "calendario_lunare",
+        "peso": 1
+      },
+      {
+        "source": "rame_coltivazione",
+        "target": "elettrocultura_base",
+        "peso": 1
+      },
+      {
+        "source": "rame_coltivazione",
+        "target": "principi_tesla",
+        "peso": 1
+      },
+      {
+        "source": "elettrocultura_base",
+        "target": "principi_tesla",
+        "peso": 1
+      },
+      {
+        "source": "compostaggio",
+        "target": "gestione_suolo_vivente",
+        "peso": 1
+      },
+      {
+        "source": "compostaggio",
+        "target": "compostaggio_organico",
+        "peso": 1
+      },
+      {
+        "source": "compostaggio",
+        "target": "inoculazione_micorrize",
+        "peso": 1
+      },
+      {
+        "source": "compostaggio",
+        "target": "te_di_compost",
+        "peso": 1
+      },
+      {
+        "source": "compostaggio",
+        "target": "gestione_ph_suolo",
+        "peso": 1
+      },
+      {
+        "source": "nutrizione_biofisica",
+        "target": "fertilizzazione_organica",
+        "peso": 1
+      },
+      {
+        "source": "nutrizione_biofisica",
+        "target": "farine_di_rocce",
+        "peso": 1
       },
       {
         "source": "gestione_suolo_vivente",
