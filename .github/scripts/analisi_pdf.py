@@ -454,6 +454,75 @@ def main():
             print('  ERRORE CRITICO: salvataggio pdf_knowledge.json fallito dopo 3 tentativi')
         return
 
+    # Rev.27: RIANALISI FORZATA one-shot. Se esiste data/_force_reanalysis.json con una lista
+    # di id, quei documenti vengono rianalizzati SUBITO (bypassando la priorità normale), utile
+    # per rigenerare i documenti già processati con la nuova logica (es. campionamento distribuito
+    # sui libri enormi) senza aspettare il loro turno. Salvataggio INCREMENTALE dopo ogni documento
+    # (la lista in memoria è la source-of-truth: nessuna rilettura stale di pdf_knowledge >1MB) e
+    # il file di controllo viene sfoltito man mano: robusto ai timeout e riprendibile.
+    try:
+        fc = gh_get('data/_force_reanalysis.json')
+        force_ids = json.loads(base64.b64decode(fc['content']).decode()).get('ids', [])
+    except Exception:
+        force_ids = []
+
+    if force_ids:
+        print(f'\n=== MODALITÀ FORCE: {len(force_ids)} id richiesti ===\n{force_ids}')
+        id2safe = {a['id']: a.get('testo_id') for a in analisi_esistenti if a.get('id')}
+        safe_forzati = {id2safe.get(i) for i in force_ids if id2safe.get(i)}
+        batch_force = [t for t in da_rianalizzare if t[1] in safe_forzati]
+        print(f'  Documenti forzati risolti: {len(batch_force)}/{len(force_ids)}')
+        tutte = list(analisi_esistenti)
+        id2idx = {a['id']: k for k, a in enumerate(tutte) if a.get('id')}
+        rimasti = list(force_ids)
+        for i, (pdf_file, safe_id, titolo, _mp, _du) in enumerate(batch_force):
+            print(f'\n[FORCE {i+1}/{len(batch_force)}] {titolo[:60]}')
+            testo = leggi_testo_estratto(safe_id)
+            print(f'  Testo: {len(testo)} chars')
+            if len(testo) < 50:
+                print('  Testo troppo corto, skip'); continue
+            result = mistral_analizza_completo(titolo, testo) if MISTRAL_KEY else None
+            mistral_ok = result is not None
+            if not result:
+                print('  Fallback locale'); result = analizza_locale(titolo, testo)
+            analisi_curr = by_titolo.get(titolo.lower(), {})
+            result['id'] = analisi_curr.get('id') or safe_id
+            result['titolo'] = titolo
+            result['data_analisi'] = oggi
+            result['rilevanza'] = 'alta'
+            if not result.get('lingua') or result.get('lingua') not in ('it','en','fr','es','de','pt','altro'):
+                prev = analisi_curr.get('lingua')
+                result['lingua'] = prev if prev in ('it','en','fr','es','de','pt','altro') else rileva_lingua(testo)
+            result['mistral_analizzato'] = mistral_ok
+            result['testo_chars'] = len(testo)
+            result['testo_id'] = safe_id
+            result['pipeline_ver'] = 'v25_fulltext'
+            if analisi_curr.get('categoria_reale'):
+                result['categoria_reale'] = analisi_curr['categoria_reale']  # preserva (non ricalcolata qui)
+            if analisi_curr.get('connessioni'):
+                result['connessioni'] = analisi_curr['connessioni']          # le rigenera connessioni_update
+            sanitizza_entry(result)
+            # merge in memoria (source-of-truth) e salvataggio incrementale
+            if result['id'] in id2idx:
+                tutte[id2idx[result['id']]] = result
+            else:
+                tutte.append(result); id2idx[result['id']] = len(tutte) - 1
+            kb = {'lastUpdate': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                  'total_pdf': len(tutte), 'analisi': tutte}
+            ok = gh_put('data/pdf_knowledge.json', json.dumps(kb, indent=2, ensure_ascii=False),
+                        None, f'force rianalisi {result["id"]} (span distribuito) [Rev.27]')
+            if ok is None:
+                print(f'  ERRORE salvataggio {result["id"]} — mi fermo per non perdere coerenza'); break
+            span = result.get('copertura_span_pct')
+            print(f'  ✓ salvato {result["id"]} | finestre={result.get("finestre_analizzate")} span={span}%')
+            # sfoltisci il file di controllo (riprendibile se interrotto)
+            if result['id'] in rimasti: rimasti.remove(result['id'])
+            gh_put('data/_force_reanalysis.json', json.dumps({'ids': rimasti}),
+                   None, f'force: rimosso {result["id"]}, {len(rimasti)} rimasti')
+            time.sleep(1)
+        print(f'\n=== FORCE completato: {len(batch_force)-len(rimasti)} processati, {len(rimasti)} rimasti ===')
+        return
+
     # Rev.25: batch alzato da 20 a 25/notte per completare la migrazione full-text prima possibile
     # (richiesto esplicitamente: "tutto insieme appena possibile, anche più notti")
     # Rev.26: priorità multi-livello — 1) mai processato prima di chi ha solo bisogno di
