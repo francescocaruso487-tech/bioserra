@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-09T06:26:23.227244+00:00",
+  "lastUpdate": "2026-07-10T06:25:31.242160+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2327,14 +2327,77 @@
       "data_proposta": "2026-07-09",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto del Living Soil sulla concentrazione di CBD in varietà autofiorenti ad alto CBD in serra outdoor",
+      "ipotesi": "L'uso di terreno biologico (Living Soil) arricchito con micorrize e compost aumenta la concentrazione di CBD nelle piante autofiorenti ad alto CBD rispetto a un terreno standard. Questo perché il Living Soil, come descritto nel Manuale A (The RQS Blog), potenzia l'assorbimento dei cannabinoidi grazie alla ricchezza microbica, mentre il Manuale B sottolinea l'importanza delle varietà autofiorenti e ad alto CBD per la coltivazione in serra. L'ipotesi si basa sulla sinergia tra suolo biologico e genetica delle piante, che potrebbe massimizzare la produzione di cannabinoidi terapeutici.",
+      "protocollo": [
+        "Preparare due lotti identici di terreno: uno con Living Soil (compost maturo, micorrize, biochar, humus di lombrico) e uno con terreno standard (terreno da giardino + torba + perlite, senza aggiunte biologiche).",
+        "Seminare 10 semi di una varietà autofiorente ad alto CBD (es. 'CBD Auto Blueberry' o simile) in ciascun lotto, mantenendo la stessa profondità e distanza tra le piante. Utilizzare contenitori identici (es. vasi da 10L) per entrambi i lotti.",
+        "Coltivare le piante in serra outdoor con le stesse condizioni di luce, temperatura, irrigazione (solo acqua, senza fertilizzanti aggiuntivi) e protezione da parassiti. Mantenere le piante in condizioni di stress minimo per evitare interferenze.",
+        "A 30 giorni dalla germinazione, raccogliere campioni di foglie apicali da 5 piante per lotto (scelte casualmente) e inviarle a un laboratorio per analisi HPLC della concentrazione di CBD, CBG e THC. Confrontare i risultati tra i due lotti."
+      ],
+      "materiali": [
+        "Semi di una varietà autofiorente ad alto CBD (es. 'CBD Auto Blueberry')",
+        "Terreno standard (terreno da giardino + torba + perlite)",
+        "Materiali per Living Soil (compost maturo, micorrize, biochar, humus di lombrico)",
+        "Vasi da 10L (20 unità totali)",
+        "Sistema di irrigazione a goccia o manuale (acqua solo)",
+        "Laboratorio di analisi HPLC per cannabinoidi"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Concentrazione di CBD (mg/g) nelle foglie apicali, misurata tramite HPLC",
+        "Confrontare la media dei due lotti e calcolare la differenza percentuale. Verificare se il Living Soil aumenta significativamente la concentrazione di CBD rispetto al terreno standard."
+      ],
+      "variabili_controllo": "Genetica delle piante (stessa varietà autofiorente ad alto CBD), condizioni ambientali (luce, temperatura, umidità), metodo di irrigazione (solo acqua), dimensione dei vasi, quantità di semi per vaso, tempo di raccolta (30 giorni).",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Le migliori varietà di pianta da coltiva",
+      "originalita": "Questo esperimento combina specificamente i concetti chiave dei due manuali: il Living Soil (Manuale A) e le varietà autofiorenti ad alto CBD (Manuale B). Nessuno dei due manuali suggerisce un esperimento che misuri direttamente l'effetto del suolo biologico sulla concentrazione di CBD in varietà autofiorenti in serra outdoor, rendendo questo studio originale e mirato.",
+      "id": "esp_conn_2026-07-10_001",
+      "data_proposta": "2026-07-10",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Adattamento LST Outdoor in Living Soil per ottimizzazione resa e CBD in serra BioSerra Caserta",
+      "ipotesi": "Applicando la tecnica LST (Low Stress Training) tipica delle coltivazioni indoor (Manuale A) a piante outdoor in Living Soil (Manuale B), si ottiene un aumento della resa e del contenuto di CBD senza stress eccessivo, grazie a una migliore esposizione alla luce e a una distribuzione omogenea dei nutrienti nel suolo. La sinergia tra elettrocultura (esposizione ottimale) e biodinamica (Living Soil) potenzia l'effetto.",
+      "protocollo": [
+        "Preparare 20 piante di pianta (varietà CBD-dominante, semi femminizzati) in Living Soil, suddivise in 2 gruppi da 10: Gruppo A (LST outdoor) e Gruppo B (controllo senza LST).",
+        "Al raggiungimento di 30 cm di altezza (circa 30 giorni dopo la germinazione), applicare la tecnica LST al Gruppo A: piegare delicatamente i rami principali con fili di rame (materiale accessibile) per creare una struttura a ventaglio, mantenendo la pianta a un'altezza massima di 50 cm.",
+        "Mantenere entrambi i gruppi con irrigazione water-only (senza fertilizzanti aggiuntivi) e monitorare settimanalmente l'altezza, il numero di rami secondari e la salute delle piante.",
+        "A fine ciclo (30 giorni dopo l'inizio dell'esperimento), raccogliere i dati: peso secco delle infiorescenze, contenuto di CBD (tramite test rapido o laboratorio), e analizzare la distribuzione della biomassa tra Gruppo A e Gruppo B."
+      ],
+      "materiali": [
+        "20 piante di pianta (varietà CBD-dominante, semi femminizzati)",
+        "Fili di rame (per LST), Living Soil pre-preparato, acqua distillata per irrigazione water-only"
+      ],
+      "durata_giorni": 60,
+      "misure": [
+        "Peso secco delle infiorescenze (bilancia di precisione)",
+        "Contenuto di CBD (test rapido o analisi di laboratorio)",
+        "Numero di rami secondari e distribuzione della biomassa (foto e misurazioni manuali)"
+      ],
+      "variabili_controllo": "Stesso substrato (Living Soil), stessa varietà, stessa esposizione alla luce, stessa irrigazione (water-only), stessa temperatura e umidità nella serra.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Cimatura pianta: tutto quello che devi sapere",
+      "originalita": "L'esperimento combina la tecnica LST (tipica indoor) con coltivazione outdoor in Living Soil, un approccio non documentato nei due manuali. Inoltre, integra principi di elettrocultura (esposizione ottimale) e biodinamica (Living Soil) per valutare un effetto sinergico sulla resa e qualità delle piante.",
+      "id": "esp_conn_2026-07-10_002",
+      "data_proposta": "2026-07-10",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-09",
-    "nuove_proposte": 1,
-    "pdf_analizzati": 140,
-    "connessioni_usate": 91
+    "data": "2026-07-10",
+    "nuove_proposte": 2,
+    "pdf_analizzati": 156,
+    "connessioni_usate": 81
   }
 }
