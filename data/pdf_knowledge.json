@@ -19871,7 +19871,11 @@
       "testo_id": "Corpus_Hermeticum_Ermete_Trismegisto_compressed",
       "pipeline_ver": "v25_fulltext",
       "connessioni": [],
-      "categoria_reale": "esoterismo"
+      "categoria_reale": "esoterismo",
+      "chunk_progresso": {
+        "tradotti": 1,
+        "totale": 2
+      }
     },
     {
       "sommario": "Documento BioSerra: Corso-Elettrocoltura_compressed",
@@ -20105,7 +20109,7 @@
         }
       ],
       "chunk_progresso": {
-        "tradotti": 1,
+        "tradotti": 2,
         "totale": 18
       },
       "categoria_reale": "elettrocultura"
@@ -20506,7 +20510,7 @@
         }
       ],
       "chunk_progresso": {
-        "tradotti": 1,
+        "tradotti": 2,
         "totale": 23
       },
       "categoria_reale": "scienza"
@@ -21137,7 +21141,7 @@
         }
       ],
       "chunk_progresso": {
-        "tradotti": 1,
+        "tradotti": 2,
         "totale": 8
       },
       "categoria_reale": "esoterismo"
@@ -21221,7 +21225,11 @@
           "peso": 1
         }
       ],
-      "categoria_reale": "agricoltura"
+      "categoria_reale": "agricoltura",
+      "chunk_progresso": {
+        "tradotti": 1,
+        "totale": 14
+      }
     },
     {
       "sommario": "Documento BioSerra: Antenna uomo - Tiziano-Guerzoni",
@@ -22146,7 +22154,7 @@
         }
       ],
       "chunk_progresso": {
-        "tradotti": 1,
+        "tradotti": 2,
         "totale": 13
       },
       "categoria_reale": "esoterismo"
@@ -23435,7 +23443,11 @@
           "titolo": "elcult2",
           "peso": 2
         }
-      ]
+      ],
+      "chunk_progresso": {
+        "tradotti": 1,
+        "totale": 18
+      }
     },
     {
       "sommario": "Il documento cattolico offre una visione organica di rigenerazione spirituale e fisica, dove la terra (suolo vivo) è metafora e realtà di un ciclo vitale guidato dalla benedizione divina. La Pasqua, come morte e rinascita, si riflette nell'agricoltura rigenerativa e biodinamica, mentre l'acqua sacra (battesimale) e l'Eucaristia (trasformazione sacra) ispirano tecniche di elettrocultura e biodinamica per la serra. La Chiesa, prefigurata fin dall'origine, richiama la necessità di una comunione armoniosa tra suolo, piante e tecniche agricole, dove lo Spirito Santo (energia vitale) agisce come forza rigenerante. La biodinamica e l'elettrocultura diventano strumenti per risvegliare la vita latente del suolo, in linea con la visione di un'agricoltura sacra e morale.",
@@ -23921,7 +23933,7 @@
         "fertilità_del_suolo"
       ],
       "estratto_chiave": "L'elettrocultura con ioni d'aria aumenta del 50-75% l'altezza delle piante dopo 18 giorni e anticipa di 8 giorni la formazione di microgemme in serra idroponica.",
-      "lingua": "altro",
+      "lingua": "it",
       "applicabilita_serra": "alta - Le tecniche di elettrocultura descritte sono direttamente applicabili a BioSerra Caserta, con potenziale sinergia con le metodiche biodinamiche già in uso (Lakhovsky, Fe-Cu, spirale rame).",
       "finestre_analizzate": 20,
       "copertura_span_pct": 100.0,
@@ -23984,7 +23996,11 @@
           "titolo": "catechismo-della-chiesa-cattolica",
           "peso": 2
         }
-      ]
+      ],
+      "chunk_progresso": {
+        "tradotti": 1,
+        "totale": 4
+      }
     }
   ]
 }
