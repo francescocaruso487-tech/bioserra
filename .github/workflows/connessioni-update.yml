@@ -5,6 +5,11 @@ on:
     - cron: '0 2 * * *'   # 02:00 UTC dopo analisi (01:00) prima embedding (era 02:00, sposto a 02:30)
   workflow_dispatch:
 
+# Rev.27: stesso concurrency group dei writer di pdf_knowledge.json (vedi analisi-pdf).
+concurrency:
+  group: bioserra-pdf-knowledge
+  cancel-in-progress: false
+
 jobs:
   connessioni:
     runs-on: ubuntu-latest
