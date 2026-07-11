@@ -3,19 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="theme-color" content="#0d1a12">
+<meta name="theme-color" content="#0f1311">
 <meta name="description" content="Serra biotecnologica Living Soil">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="BioSerra">
 <meta name="application-name" content="BioSerra">
-<meta name="msapplication-TileColor" content="#0d1a12">
+<meta name="msapplication-TileColor" content="#0f1311">
 <link rel="manifest" href="/bioserra/manifest.json">
 <link rel="apple-touch-icon" sizes="192x192" href="/bioserra/assets/icon-192.png">
 <link rel="apple-touch-icon" sizes="512x512" href="/bioserra/assets/icon-512.png">
 <title>BioSerra</title>
-<link rel="stylesheet" href="/bioserra/css/style.css?v=1782896203">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/bioserra/css/style.css?v=1783100001">
 <!-- (17) jsPDF per export report PDF fine ciclo, caricato on-demand a basso impatto -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
 </head>
@@ -697,16 +700,22 @@
   <!-- POPUP OVERLAY UNIVERSALE -->
   <div id="lab-popup-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:9999;align-items:flex-end;justify-content:center" onclick="labPopupClose()">
     <div id="lab-popup-box" onclick="event.stopPropagation()"
-      style="background:#0d1a26;border:1px solid rgba(0,180,255,0.3);border-radius:20px 20px 0 0;padding:20px 18px 32px;width:100%;max-width:560px;max-height:88vh;overflow-y:auto;box-shadow:0 -8px 40px rgba(0,180,255,0.15)">
+      style="background:#151b17;border:1px solid rgba(143,212,168,0.3);border-radius:20px 20px 0 0;padding:20px 18px 32px;width:100%;max-width:560px;max-height:88vh;overflow-y:auto;box-shadow:0 -8px 40px rgba(143,212,168,0.15)">
     </div>
-    <button onclick="labPopupClose()" style="position:fixed;top:14px;right:14px;background:rgba(0,180,255,0.15);border:1px solid rgba(0,180,255,0.3);border-radius:50%;width:36px;height:36px;font-size:18px;color:#00b4ff;cursor:pointer;line-height:36px">✕</button>
+    <button onclick="labPopupClose()" style="position:fixed;top:14px;right:14px;background:rgba(143,212,168,0.15);border:1px solid rgba(143,212,168,0.3);border-radius:50%;width:36px;height:36px;font-size:18px;color:#8fd4a8;cursor:pointer;line-height:36px">✕</button>
   </div>
 
-  <!-- HEADER -->
-  <div class="lab-header">
-    <div class="lab-header-title">Laboratorio</div>
-    <div class="lab-header-sub">BIOSERRA // SISTEMA ANALISI AVANZATO</div>
-    <div id="lab-load-status" style="font-size:10px;color:rgba(0,180,255,0.5);text-align:center;padding:4px 0;min-height:14px;letter-spacing:0.5px"></div>
+  <!-- HEADER Rev.28 -->
+  <div class="labx-eyebrow">Sistema analisi</div>
+  <div class="labx-title">Laboratorio</div>
+  <div class="labx-sub">Ricerca, pratiche e knowledge base</div>
+  <div id="lab-load-status" style="font-size:10px;color:var(--text3);padding:0 2px 6px;min-height:14px;letter-spacing:0.5px;font-family:var(--font-mono)"></div>
+
+  <!-- RICERCA GLOBALE KNOWLEDGE BASE (search-first) -->
+  <div class="labx-search">
+    <input id="labx-home-search" type="text" placeholder="Chiedi al knowledge base…"
+      onkeydown="if(event.key==='Enter'){event.preventDefault();labxHomeSearch();}">
+    <button onclick="labxHomeSearch()">→</button>
   </div>
 
   <!-- GRID ICONE -->
@@ -714,20 +723,24 @@
     <div class="lab-icon-btn cyan" onclick="labPopupAllPratiche()">
       <span class="lab-icon-emoji">⚡</span>
       <span class="lab-icon-label">Pratiche</span>
+      <span class="lab-icon-meta" id="labx-meta-tec"></span>
       <span class="lab-icon-badge" id="badge-tec"></span>
     </div>
     <div class="lab-icon-btn violet" onclick="labPopupAllPdf()">
       <span class="lab-icon-emoji">📄</span>
-      <span class="lab-icon-label">PDF</span>
+      <span class="lab-icon-label">Archivio</span>
+      <span class="lab-icon-meta" id="labx-meta-pdf"></span>
       <span class="lab-icon-badge" id="badge-pdf"></span>
     </div>
     <div class="lab-icon-btn orange" onclick="labPopupAllGuide()">
       <span class="lab-icon-emoji">📖</span>
       <span class="lab-icon-label">Guide</span>
+      <span class="lab-icon-meta" id="labx-meta-guide"></span>
     </div>
     <div class="lab-icon-btn red" onclick="labPopupSecondBrain()">
       <span class="lab-icon-emoji">🧠</span>
       <span class="lab-icon-label">Second Brain</span>
+      <span class="lab-icon-meta" id="labx-meta-sb"></span>
       <span class="lab-icon-badge" id="badge-brain" style="background:var(--red);color:#fff"></span>
     </div>
   </div>
@@ -743,7 +756,7 @@
       <button class="lab-tc-reload" onclick="labPopupAllPratiche()">Vedi tutte ›</button>
     </div>
     <div id="lab-tec-lista">
-      <div style="color:rgba(0,180,255,0.4);font-size:12px;padding:4px">Caricamento…</div>
+      <div style="color:rgba(143,212,168,0.4);font-size:12px;padding:4px">Caricamento…</div>
     </div>
   </div>
 
@@ -762,7 +775,7 @@
       <button class="lab-tc-reload" onclick="labPopupAllPdf()">Vedi tutti ›</button>
     </div>
     <div id="lab-pdf-content">
-      <div style="color:rgba(155,109,255,0.4);font-size:12px;padding:4px">Caricamento…</div>
+      <div style="color:rgba(179,156,217,0.4);font-size:12px;padding:4px">Caricamento…</div>
     </div>
   </div>
 
@@ -772,20 +785,20 @@
       <button class="lab-tc-reload" onclick="labPopupAllGuide()">Vedi tutte ›</button>
     </div>
     <div id="lab-guide-content">
-      <div style="color:rgba(155,109,255,0.4);font-size:12px;padding:4px">Caricamento…</div>
+      <div style="color:rgba(179,156,217,0.4);font-size:12px;padding:4px">Caricamento…</div>
     </div>
   </div>
 
   <!-- ══ MACRO-AREA: SECOND BRAIN ══ -->
-  <div class="lab-macro-label" style="color:#00b4ff">🧠 second brain</div>
+  <div class="lab-macro-label" style="color:#8fd4a8">🧠 second brain</div>
 
-  <div class="lab-tech-card" style="border-color:rgba(0,180,255,0.2);background:rgba(0,180,255,0.03)">
+  <div class="lab-tech-card" style="border-color:rgba(143,212,168,0.2);background:rgba(143,212,168,0.03)">
     <div class="lab-tc-header">
-      <div class="lab-tc-title" style="color:#00b4ff">🧠 Grafo Conoscenza</div>
+      <div class="lab-tc-title" style="color:#8fd4a8">🧠 Grafo Conoscenza</div>
       <button class="lab-tc-reload" onclick="labPopupSecondBrain()">Apri ›</button>
     </div>
     <div id="lab-sb-mini" style="padding:4px 0">
-      <div style="color:rgba(0,180,255,0.4);font-size:12px;padding:4px">Caricamento…</div>
+      <div style="color:rgba(143,212,168,0.4);font-size:12px;padding:4px">Caricamento…</div>
     </div>
   </div>
 
@@ -1171,11 +1184,11 @@
 
 
 <!-- Scripts BioSerra -->
-<script src="/bioserra/js/app.js?v=1782896203"></script>
-<script src="/bioserra/js/piante.js?v=1782896203"></script>
-<script src="/bioserra/js/ambiente.js?v=1782896203"></script>
-<script src="/bioserra/js/laboratorio.js?v=1782896203"></script>
-<script src="/bioserra/js/config.js?v=1782896203"></script>
+<script src="/bioserra/js/app.js?v=1783100001"></script>
+<script src="/bioserra/js/piante.js?v=1783100001"></script>
+<script src="/bioserra/js/ambiente.js?v=1783100001"></script>
+<script src="/bioserra/js/laboratorio.js?v=1783100001"></script>
+<script src="/bioserra/js/config.js?v=1783100001"></script>
 
 
 
