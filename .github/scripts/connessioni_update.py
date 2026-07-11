@@ -291,6 +291,48 @@ Peso da 0 (debole) a 1 (fortissima). Max 5 connessioni. Solo JSON."""
         pass
     return []
 
+
+def costruisci_e_salva_grafo_lite(grafo):
+    """Rev.28: il grafo completo supera i 10MB e il client mobile non riesce
+    a scaricarlo/parsarlo (fetch in timeout -> Second Brain vuoto). Il client
+    legge data/pdf_graph_lite.json: TUTTI gli edge semantico_reale + top-10
+    embedding per nodo (~0.5MB). Va rigenerato da OGNI script che riscrive
+    pdf_graph.json, altrimenti il lite resta stale."""
+    edges = grafo.get('edges', [])
+    sem = [e for e in edges if e.get('tipo') == 'semantico_reale']
+    per_node = {}
+    for e in edges:
+        if e.get('tipo') == 'semantico_reale':
+            continue
+        for nid in (e.get('source'), e.get('target')):
+            per_node.setdefault(nid, []).append(e)
+    keep, lite_emb = set(), []
+    for nid, lst in per_node.items():
+        lst.sort(key=lambda x: -(x.get('peso') or 0))
+        for e in lst[:10]:
+            k = (e.get('source'), e.get('target'))
+            if k not in keep:
+                keep.add(k)
+                lite_emb.append(e)
+    lite = {
+        'lastUpdate': grafo.get('lastUpdate'),
+        'versione': str(grafo.get('versione', '')) + '_lite',
+        'nota': 'versione lite per il client: semantico_reale completi + top-10 embedding per nodo',
+        'edges_totali_completo': len(edges),
+        'nodi': grafo.get('nodi', []),
+        'edges': sem + lite_emb
+    }
+    sha_l = gh_get_sha('data/pdf_graph_lite.json')
+    res = gh_put('data/pdf_graph_lite.json',
+                 json.dumps(lite, ensure_ascii=False, separators=(',', ':')),
+                 sha_l,
+                 f'grafo lite per client ({len(lite["edges"])} edges)')
+    if res is None:
+        print('  ERRORE: salvataggio pdf_graph_lite.json fallito')
+    else:
+        print(f'pdf_graph_lite.json salvato ({len(lite["edges"])} edges)')
+
+
 def main():
     # Modalita: notte (default) = 5 PDF + 10 coppie
     #           pomeriggio      = 3 PDF + 20 coppie (piu connessioni)
@@ -623,6 +665,8 @@ def main():
            json.dumps(grafo_new, indent=2, ensure_ascii=False),
            sha_g_fresh,
            f'grafo: +{len(nuove_connessioni)} connessioni semantiche [{oggi}]')
+
+    costruisci_e_salva_grafo_lite(grafo_new)
 
     print(f'\n=== COMPLETATO ===')
     print(f'Concetti estratti da {nuovi_concetti} nuovi PDF')
