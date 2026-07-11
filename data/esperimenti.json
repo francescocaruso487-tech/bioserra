@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-10T06:25:31.242160+00:00",
+  "lastUpdate": "2026-07-11T05:25:58.737445+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2390,14 +2390,113 @@
       "data_proposta": "2026-07-10",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Sinergia CBDV: Effetto della concimazione organica Living Soil sulla produzione di cannabinoidi secondari in piante di pianta CBDV (Cannabidivarina) coltivate in serra outdoor",
+      "ipotesi": "La concimazione organica (Manuale A) arricchisce il suolo di microrganismi simbionti che, in sinergia con semi di piante CBDV (Manuale B), aumentano la produzione di cannabinoidi secondari (CBG, CBDV) grazie a un metabolismo radicale più efficiente. Questo effetto è misurabile in 30 giorni tramite analisi HPLC delle foglie e resa biomassa radicale, con un potenziale +20-30% di CBDV rispetto al controllo non concimato.",
+      "protocollo": [
+        "Preparare due lotti identici di terreno Living Soil (50% terra di campo, 30% compost maturo, 20% perlite) in vasi da 10L, sterilizzati con vapore. Inoculare entrambi con micorrize commerciali (Rhizophagus irregularis) per standardizzare la base microbica.",
+        "Seminare 10 semi di varietà CBDV (es. 'CBDV Auto White Widow' da seedbank certificata) in ogni lotto, mantenendo 5 piante per vaso dopo la germinazione. Mantenere condizioni identiche: 18h luce, 25°C, umidità 60%.",
+        "Applicare concimazione organica solo al lotto sperimentale (Manuale A): ogni 7 giorni, 500ml di tè di compost (1:10 diluizione) arricchito con 1g di alghe brune (Ascophyllum nodosum) per vaso. Il lotto controllo riceve solo acqua deionizzata.",
+        "Dopo 30 giorni, raccogliere le radici e le foglie apicali di 3 piante per lotto. Misurare biomassa radicale (peso secco) e analizzare il contenuto di cannabinoidi tramite HPLC (estrazione con etanolo 96%, colonna C18, detector UV a 220nm). Calcolare la resa di CBDV per grammo di biomassa."
+      ],
+      "materiali": [
+        "Semi di pianta CBDV (varietà autofiorente femminizzata, es. 'CBDV Auto White Widow')",
+        "Terriccio Living Soil (compost maturo, perlite, terra di campo), micorrize commerciali (Rhizophagus irregularis), tè di compost, alghe brune (Ascophyllum nodosum), vasi da 10L, sistema di irrigazione a goccia, HPLC con colonna C18, etanolo 96%, bilancia analitica"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Contenuto di CBDV, CBG e CBD nelle foglie (mg/g peso secco) tramite HPLC",
+        "Biomassa radicale (peso secco in grammi) per pianta",
+        "Conteggio dei nodi e altezza delle piante per valutare crescita vegetativa",
+        "Analisi statistica (test t di Student) per confrontare i due lotti"
+      ],
+      "variabili_controllo": "Genetica delle piante (stessa varietà CBDV), condizioni ambientali (luce, temperatura, umidità), volume di terreno, tipo di vaso, metodo di irrigazione, protocollo di analisi HPLC",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "L'esperimento combina specificamente la concimazione organica Living Soil (Manuale A) con l'uso di semi CBDV (Manuale B) per testare un effetto sinergico non documentato nei manuali individualmente. Mentre il Manuale A si focalizza su CBD/CBG e il Manuale B su semi CBD, questa ricerca indaga il CBDV come cannabinoide secondario target, misurando l'impatto della biodiversità microbica sulla sua produzione in condizioni outdoor Living Soil.",
+      "id": "esp_conn_2026-07-11_001",
+      "data_proposta": "2026-07-11",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra Living Soil e semi femminizzati su resa in CBD e THC in serra outdoor",
+      "ipotesi": "L'uso combinato di vasi con terreno biologico (Living Soil) e semi femminizzati (Manuale A e B) aumenterà la resa in CBD e THC del 30-40% rispetto a controlli con terreno non biologico e semi regolari. Il Living Soil favorisce l'assorbimento di nutrienti e la salute radicale (Manuale A), mentre i semi femminizzati garantiscono piante produttive al 100% e fioritura rapida (Manuale B), riducendo sprechi di risorse.",
+      "protocollo": [
+        "Preparare 20 vasi da 10L riempiti con Living Soil (compost biologico, micorrize, vermicompost) e 20 vasi con terreno standard (controllo). Suddividere ogni gruppo in 10 piante con semi femminizzati (varietà CBD alto, <1% THC) e 10 con semi regolari (stessa genetica di base).",
+        "Piantare 2 semi per vaso (dopo 7 giorni, diradare lasciando la pianta più vigorosa). Mantenere irrigazione con sola acqua (water-only) per entrambi i gruppi.",
+        "Monitorare settimanalmente: altezza delle piante, numero di nodi, sviluppo radicale (tramite trasparenza dei vasi), e fioritura. Registrare dati su umidità del suolo e temperatura ambientale.",
+        "A 60 giorni dalla semina (fase di fioritura avanzata), raccogliere i fiori dalle piante femminizzate di entrambi i gruppi. Misurare peso fresco e secco dei fiori, e inviare campioni per analisi HPLC per determinare i livelli di CBD, THC, CBG e THCV."
+      ],
+      "materiali": [
+        "20 vasi da 10L in terracotta",
+        "Living Soil (compost biologico, micorrize, vermicompost, biochar)",
+        "Terreno standard (argilla-sabbia, senza aggiunte organiche)",
+        "Semi femminizzati (varietà CBD alto, <1% THC) e semi regolari della stessa genetica",
+        "Sistema di irrigazione a goccia (water-only)",
+        "Bilancia di precisione (0.01g), HPLC per analisi cannabinoidi"
+      ],
+      "durata_giorni": 60,
+      "misure": [
+        "Peso fresco e secco dei fiori (g/pianta)",
+        "Contenuto di CBD, THC, CBG, THCV (% su peso secco) via HPLC",
+        "Rapporto CBD:THC per valutare la qualità del prodotto",
+        "Osservazioni qualitative: salute delle piante, resistenza a patogeni, sviluppo radicale"
+      ],
+      "variabili_controllo": "Genetica delle piante (stessa varietà), condizioni ambientali (luce, temperatura, umidità), metodo di irrigazione (water-only), dimensione dei vasi, e tempistiche di raccolta.",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "L'esperimento combina specificamente i principi di due manuali diversi (Living Soil + semi femminizzati) per testare una sinergia non esplorata nei singoli testi. Mentre il Manuale A si concentra sul terreno biologico e il Manuale B sui semi, questo studio valuta l'interazione diretta tra i due elementi in un contesto di coltivazione outdoor con water-only, un approccio innovativo rispetto alle pratiche standard dei manuali.",
+      "id": "esp_conn_2026-07-11_002",
+      "data_proposta": "2026-07-11",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra mainlining avanzato e semi pluripremiati in Living Soil: valutazione della biomassa e resina in condizioni water-only",
+      "ipotesi": "Applicando la tecnica di mainlining avanzato (Manuale A) a semi pluripremiati (Manuale B) coltivati in Living Soil con metodo water-only, si ottiene un aumento significativo della biomassa vegetativa e della produzione di resina rispetto a piante non potate e coltivate con substrato commerciale. Questo perché: 1) il mainlining ottimizza la distribuzione dei nutrienti e la fotosintesi (Manuale A), 2) i semi pluripremiati hanno un potenziale genetico elevato che necessita di condizioni di coltivazione ottimizzate per esprimersi (Manuale B).",
+      "protocollo": [
+        "Preparare due lotti identici di Living Soil (compost, biochar, micorrize, lombrichi) in vasi da 20L, sterilizzati e bilanciati in pH (6.2-6.8).",
+        "Seminare 10 semi femminizzati pluripremiati (es. Royal Gorilla) per lotto, selezionati da un unico batch per garantire uniformità genetica. Mantenere temperatura 22-26°C e umidità 60-70%.",
+        "Dopo 3 settimane (fase vegetativa), applicare il mainlining avanzato (manifolding) su un lotto: potare il fusto principale a 2 nodi, lasciando 4 rami laterali simmetrici. Il secondo lotto rimane come controllo (nessuna potatura).",
+        "Coltivare entrambe le piante in water-only (solo acqua piovana filtrata) con aggiunta di estratto di alghe e funghi micorrizici ogni 10 giorni. Monitorare settimanalmente altezza, numero di rami, e spessore dei fusti."
+      ],
+      "materiali": [
+        "Semi femminizzati pluripremiati (Royal Gorilla o Amnesia Haze)",
+        "Living Soil pre-preparato (compost di lombrico, biochar, micorrize, acqua piovana)",
+        "Vasi in terracotta da 20L, bilancia digitale (0.1g precisione), metro a nastro, pHmetro",
+        "Lampada LED full-spectrum (opzionale per controllo fotoperiodo), nebulizzatore per umidità"
+      ],
+      "durata_giorni": 60,
+      "misure": [
+        "Biomassa fresca totale (pesata al taglio, dopo 60 giorni)",
+        "Produzione di resina (estrazione con alcool isopropilico e pesata su bilancia analitica)",
+        "Numero di rami principali e secondari (conteggio manuale)",
+        "Altezza della pianta (misura dal colletto alla cima principale)"
+      ],
+      "variabili_controllo": "Genotipo dei semi, volume del suolo, quantità di acqua aggiunta, esposizione luminosa, temperatura, umidità, metodo di estrazione della resina.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "Come fare mainlining alla pianta: guida completa al manifold",
+      "fonte_b": "Semi di pianta bestseller",
+      "originalita": "Questo esperimento combina due tecniche avanzate (mainlining e semi pluripremiati) in un contesto Living Soil water-only, che non è trattato né nel Manuale A (che si concentra su grow box e fertilizzanti chimici) né nel Manuale B (che si limita alla selezione dei semi). L'approccio sinergico è originale perché sfrutta la genetica d'élite in un sistema di coltivazione sostenibile, misurando risultati quantificabili (biomassa e resina) che non sono tipicamente valutati nei manuali individuali.",
+      "id": "esp_conn_2026-07-11_003",
+      "data_proposta": "2026-07-11",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-10",
-    "nuove_proposte": 2,
-    "pdf_analizzati": 156,
-    "connessioni_usate": 81
+    "data": "2026-07-11",
+    "nuove_proposte": 3,
+    "pdf_analizzati": 162,
+    "connessioni_usate": 87
   }
 }
