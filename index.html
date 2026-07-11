@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/bioserra/css/style.css?v=1783100001">
+<link rel="stylesheet" href="/bioserra/css/style.css?v=1783100002">
 <!-- (17) jsPDF per export report PDF fine ciclo, caricato on-demand a basso impatto -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
 </head>
@@ -745,66 +745,27 @@
     </div>
   </div>
 
-  <!-- ══ MACRO-AREA: PRATICHE ══ -->
-  <div class="lab-macro-label">⚡ pratiche</div>
-
-  <!-- Tecniche Elettrocultura (mini lista, max 4) -->
-  <div class="lab-tech-card">
+  <!-- ══ PRATICHE (Rev.28: sezione unica, niente duplicati archivio) ══ -->
+  <div class="lab-tech-card" style="margin-top:18px">
     <div class="lab-tc-header">
-      <div class="lab-tc-title">⚡ Pratiche</div>
+      <div class="lab-tc-title">⚡ Pratiche attive</div>
       <button class="lab-tc-reload" onclick="labLoadAll()" title="Aggiorna dati">⟳</button>
       <button class="lab-tc-reload" onclick="labPopupAllPratiche()">Vedi tutte ›</button>
     </div>
     <div id="lab-tec-lista">
-      <div style="color:rgba(143,212,168,0.4);font-size:12px;padding:4px">Caricamento…</div>
+      <div style="color:var(--text3);font-size:12px;padding:4px">Caricamento…</div>
     </div>
   </div>
 
-  <!-- Esperimenti: div tecnici nascosti usati da labRenderPratiche -->
+  <!-- div tecnici nascosti (compatibilita' con le funzioni di render esistenti) -->
   <div id="lab-esp-attivi" style="display:none"></div>
   <div id="lab-esp-badge" style="display:none"></div>
   <div id="lab-esp-proposte" style="display:none"></div>
-
-  <!-- ══ MACRO-AREA: ARCHIVIO ══ -->
-  <div class="lab-macro-label violet">📚 archivio</div>
-
-  <!-- PDF + Guide compatti -->
-  <div class="lab-tech-card violet">
-    <div class="lab-tc-header">
-      <div class="lab-tc-title violet">📄 Estratti PDF</div>
-      <button class="lab-tc-reload" onclick="labPopupAllPdf()">Vedi tutti ›</button>
-    </div>
-    <div id="lab-pdf-content">
-      <div style="color:rgba(179,156,217,0.4);font-size:12px;padding:4px">Caricamento…</div>
-    </div>
-  </div>
-
-  <div class="lab-tech-card violet">
-    <div class="lab-tc-header">
-      <div class="lab-tc-title violet">📖 Guide Complete</div>
-      <button class="lab-tc-reload" onclick="labPopupAllGuide()">Vedi tutte ›</button>
-    </div>
-    <div id="lab-guide-content">
-      <div style="color:rgba(179,156,217,0.4);font-size:12px;padding:4px">Caricamento…</div>
-    </div>
-  </div>
-
-  <!-- ══ MACRO-AREA: SECOND BRAIN ══ -->
-  <div class="lab-macro-label" style="color:#8fd4a8">🧠 second brain</div>
-
-  <div class="lab-tech-card" style="border-color:rgba(143,212,168,0.2);background:rgba(143,212,168,0.03)">
-    <div class="lab-tc-header">
-      <div class="lab-tc-title" style="color:#8fd4a8">🧠 Grafo Conoscenza</div>
-      <button class="lab-tc-reload" onclick="labPopupSecondBrain()">Apri ›</button>
-    </div>
-    <div id="lab-sb-mini" style="padding:4px 0">
-      <div style="color:rgba(143,212,168,0.4);font-size:12px;padding:4px">Caricamento…</div>
-    </div>
-  </div>
+  <div id="lab-pdf-content" style="display:none"></div>
+  <div id="lab-guide-content" style="display:none"></div>
+  <div id="lab-sb-mini" style="display:none"></div>
 
   <!-- ══ CERVELLO AI — terminale ══ -->
-  <div id="lab-brain-section" class="lab-macro-label" style="margin-top:20px">🧠 cervello ai</div>
-
   <div class="lab-brain-terminal">
     <!-- Barra titolo terminale -->
     <div class="lab-brain-terminal-bar">
@@ -1184,11 +1145,11 @@
 
 
 <!-- Scripts BioSerra -->
-<script src="/bioserra/js/app.js?v=1783100001"></script>
-<script src="/bioserra/js/piante.js?v=1783100001"></script>
-<script src="/bioserra/js/ambiente.js?v=1783100001"></script>
-<script src="/bioserra/js/laboratorio.js?v=1783100001"></script>
-<script src="/bioserra/js/config.js?v=1783100001"></script>
+<script src="/bioserra/js/app.js?v=1783100002"></script>
+<script src="/bioserra/js/piante.js?v=1783100002"></script>
+<script src="/bioserra/js/ambiente.js?v=1783100002"></script>
+<script src="/bioserra/js/laboratorio.js?v=1783100002"></script>
+<script src="/bioserra/js/config.js?v=1783100002"></script>
 
 
 
