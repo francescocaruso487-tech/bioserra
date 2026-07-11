@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-07-10T12:39:00.453199+00:00",
+  "lastUpdate": "2026-07-11T05:21:53.507879+00:00",
   "analisi": {
-    "totale_voci": 320,
-    "pipeline_v25_fulltext": 55,
+    "totale_voci": 330,
+    "pipeline_v25_fulltext": 65,
     "non_ancora_riprocessate": 265,
     "stub_count": 30,
     "stub_ids": [
@@ -38,9 +38,9 @@
       "pdf_10"
     ],
     "finestre_analizzate_stats": {
-      "min": 5,
+      "min": 1,
       "max": 20,
-      "media": 17.6
+      "media": 16.9
     },
     "documenti_sottocoperti": [],
     "categoria_breakdown": {
@@ -58,10 +58,10 @@
       "fusa_training": 1,
       "fusa_autofiorenti": 1,
       "fusa_outdoor": 1,
-      "esoterismo": 31,
-      "elettrocultura": 6,
-      "fisica_energie": 5,
-      "altro": 3,
+      "esoterismo": 34,
+      "elettrocultura": 9,
+      "fisica_energie": 6,
+      "altro": 6,
       "agricoltura": 1
     },
     "categoria_senza_valore": 10,
@@ -137,23 +137,23 @@
         "stub": 1
       },
       "esoterismo": {
-        "totale": 31,
-        "v25_fulltext": 29,
+        "totale": 34,
+        "v25_fulltext": 32,
         "stub": 8
       },
       "elettrocultura": {
-        "totale": 6,
-        "v25_fulltext": 6,
+        "totale": 9,
+        "v25_fulltext": 9,
         "stub": 5
       },
       "fisica_energie": {
-        "totale": 5,
-        "v25_fulltext": 5,
+        "totale": 6,
+        "v25_fulltext": 6,
         "stub": 2
       },
       "altro": {
-        "totale": 3,
-        "v25_fulltext": 3,
+        "totale": 6,
+        "v25_fulltext": 6,
         "stub": 1
       },
       "agricoltura": {
@@ -167,27 +167,27 @@
         "stub": 0
       }
     },
-    "lingua_popolata": 57,
+    "lingua_popolata": 67,
     "lingua_breakdown": {
-      "it": 57
+      "it": 67
     },
-    "chunk_progresso_doc_con_dato": 5,
-    "chunk_progresso_totale_tradotti": 7,
-    "chunk_progresso_totale_chunk": 65,
+    "chunk_progresso_doc_con_dato": 13,
+    "chunk_progresso_totale_tradotti": 18,
+    "chunk_progresso_totale_chunk": 180,
     "chunk_progresso_anomalie": []
   },
   "traduzione": {
-    "lingua_popolata": 57,
+    "lingua_popolata": 67,
     "lingua_breakdown": {
-      "it": 57
+      "it": 67
     },
-    "chunk_progresso_doc_con_dato": 5,
-    "chunk_progresso_totale_tradotti": 7,
-    "chunk_progresso_totale_chunk": 65
+    "chunk_progresso_doc_con_dato": 13,
+    "chunk_progresso_totale_tradotti": 18,
+    "chunk_progresso_totale_chunk": 180
   },
   "connessioni": {
-    "nodi_totali": 320,
-    "edges_totali": 51146,
+    "nodi_totali": 319,
+    "edges_totali": 50819,
     "nodi_isolati": 0,
     "nodi_isolati_ids": [],
     "peso_stats": {
@@ -196,11 +196,11 @@
       "media": 0.856
     },
     "tipo_conn_breakdown": {
-      "principio_condiviso": 19,
-      "sinergia": 44,
-      "potenziamento": 3,
-      "contraddizione": 40,
-      "(nessuno)": 51040
+      "principio_condiviso": 21,
+      "sinergia": 40,
+      "potenziamento": 7,
+      "contraddizione": 39,
+      "(nessuno)": 50712
     },
     "edges_dangling": [],
     "copertura_coppie_pct_stimata": 100.2
