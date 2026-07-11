@@ -14,6 +14,7 @@ function labPopupOpen(html) {
 }
 
 function labPopupClose() {
+  _labxSbPopupOpen = false;
   var ov = document.getElementById('lab-popup-overlay');
   if (ov) ov.style.display = 'none';
   document.body.style.overflow = '';
@@ -1304,7 +1305,7 @@ function labRenderBrain() {
 
 /* Scroll verso cervello AI */
 function labScrollBrain() {
-  var el = document.getElementById('lab-brain-section');
+  var el = document.querySelector('.lab-brain-terminal'); // Rev.28: la label separata non esiste piu'
   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
@@ -1758,19 +1759,36 @@ var labSbInited    = false;  // D3 già inizializzato
    SECOND BRAIN — caricamento dati (chiamato da labLoadAll)
 ══════════════════════════════════════════════════════════════ */
 
+var _labxSbPopupOpen = false;
+
 async function labLoadSecondBrain() {
   var ts = '?v=' + Date.now();
   try {
-    var [rVet, rGraf] = await Promise.allSettled([
-      fetch(LAB_RAW + 'pdf_vectors.json' + ts).then(function(r){ return r.json(); }),
-      fetch(LAB_RAW + 'pdf_graph.json'   + ts).then(function(r){ return r.json(); })
-    ]);
-    if (rVet.status  === 'fulfilled') labVettoriData = rVet.value;
-    if (rGraf.status === 'fulfilled') labGrafoData   = rGraf.value;
+    // Rev.28: il client carica il grafo LITE (~0.5MB). Il grafo completo ha
+    // superato i 10MB: il fetch andava in timeout su mobile e il Second Brain
+    // restava a zero (niente connessioni, niente grafo). pdf_vectors.json
+    // (3.7MB) non viene piu' scaricato all'avvio: lazy alla prima ricerca.
+    var r = await fetch(LAB_RAW + 'pdf_graph_lite.json' + ts);
+    if (!r.ok) r = await fetch(LAB_RAW + 'pdf_graph.json' + ts);
+    labGrafoData = await r.json();
   } catch(e) {
     console.warn('Second Brain load error:', e);
   }
   labRenderSbMini();
+  // se il popup era stato aperto durante il caricamento (stats a zero), ricostruiscilo
+  if (_labxSbPopupOpen && labGrafoData) labPopupSecondBrain();
+}
+
+/* Rev.28: vettori embedding caricati solo alla prima ricerca (3.7MB risparmiati all'avvio) */
+async function labxEnsureVettori() {
+  if (labVettoriData && labVettoriData.vettori && labVettoriData.vettori.length) return true;
+  try {
+    var r = await fetch(LAB_RAW + 'pdf_vectors.json?v=' + Date.now());
+    if (!r.ok) return false;
+    labVettoriData = await r.json();
+    labRenderSbMini();
+    return !!(labVettoriData && labVettoriData.vettori && labVettoriData.vettori.length);
+  } catch(e) { return false; }
 }
 
 /* mini widget Second Brain nella pagina principale */
@@ -1786,17 +1804,23 @@ function labRenderSbMini() {
     el.innerHTML = '<div style="color:var(--text3);font-size:12px;padding:4px">Embedding in corso \u2014 workflow notturno.</div>';
     return;
   }
+  var totContra = 0;
+  if (labGrafoData && labGrafoData.edges) {
+    labGrafoData.edges.forEach(function(e){ if (e.tipo_conn === 'contraddizione') totContra++; });
+  }
+  var totEdgReali = (labGrafoData && labGrafoData.edges_totali_completo) ? labGrafoData.edges_totali_completo : totEdg;
   el.innerHTML = '<div class="sbx-stats" style="margin-bottom:0">'
     + '<div class="sbx-stat"><b>' + totPdf + '</b><span>PDF</span></div>'
     + '<div class="sbx-stat"><b>' + totConc + '</b><span>concetti</span></div>'
-    + '<div class="sbx-stat"><b>' + totVet + '</b><span>vettori</span></div>'
-    + '<div class="sbx-stat"><b>' + (totEdg > 999 ? (totEdg/1000).toFixed(0) + 'k' : totEdg) + '</b><span>link</span></div>'
+    + '<div class="sbx-stat"><b>' + totContra + '</b><span>contrasti</span></div>'
+    + '<div class="sbx-stat"><b>' + (totEdgReali > 999 ? (totEdgReali/1000).toFixed(0) + 'k' : totEdgReali) + '</b><span>link</span></div>'
     + '</div>';
 }
 
 /* Rev.28: contatori sotto le icone della grid Laboratorio */
 function labxFillMeta() {
   function setM(id, txt) { var e = document.getElementById(id); if (e) e.innerHTML = txt; }
+  try {
   if (typeof labBuildPratiche === 'function') {
     var tutte = labBuildPratiche();
     if (tutte.length) {
@@ -1808,8 +1832,9 @@ function labxFillMeta() {
   if (nPdf) setM('labx-meta-pdf', '<b>' + nPdf + '</b> documenti');
   var nGuide = labGuideData && labGuideData.length ? labGuideData.length : 0;
   if (nGuide) setM('labx-meta-guide', '<b>' + nGuide + '</b> complete');
-  var nEdg = labGrafoData && labGrafoData.edges ? labGrafoData.edges.length : 0;
+  var nEdg = labGrafoData ? (labGrafoData.edges_totali_completo || (labGrafoData.edges||[]).length) : 0;
   if (nEdg) setM('labx-meta-sb', '<b>' + (nEdg > 999 ? (nEdg/1000).toFixed(0) + 'k' : nEdg) + '</b> connessioni');
+  } catch(e) { /* dati non ancora pronti: i meta si riempiono alla prossima render */ }
 }
 
 /* Rev.28: ricerca dalla home Laboratorio - apre Second Brain e cerca */
@@ -1854,11 +1879,27 @@ function labSbEnrichNodi(nodi) {
 ══════════════════════════════════════════════════════════════ */
 
 function labPopupSecondBrain() {
+  _labxSbPopupOpen = true;
   var edges = (labGrafoData && labGrafoData.edges) ? labGrafoData.edges : [];
   var nPdf  = (labPdfData   && labPdfData.analisi) ? labPdfData.analisi.length : 0;
-  var nVec  = (labVettoriData && labVettoriData.vettori) ? labVettoriData.vettori.length : 0;
   var nConcetti = (labConcettiData && labConcettiData.concetti) ? labConcettiData.concetti.length : 0;
-  var nEdg = edges.length > 999 ? (edges.length/1000).toFixed(1) + 'k' : String(edges.length);
+  var nContra = 0;
+  edges.forEach(function(e){ if (e.tipo_conn === 'contraddizione') nContra++; });
+  var totEdgReali = (labGrafoData && labGrafoData.edges_totali_completo) ? labGrafoData.edges_totali_completo : edges.length;
+  var nEdg = totEdgReali > 999 ? (totEdgReali/1000).toFixed(1) + 'k' : String(totEdgReali);
+
+  // Rev.28: se i dati non sono ancora arrivati, stato di caricamento esplicito
+  // (il popup si ricostruisce da solo appena labLoadSecondBrain finisce)
+  if (!nPdf || !edges.length) {
+    labPopupOpen(
+      '<div class="labx-eyebrow" style="margin-top:0">Second Brain</div>'
+    + '<div class="labx-title" style="font-size:20px">Knowledge Base</div>'
+    + '<div class="sbx-card" style="padding:22px;text-align:center">'
+    + '<div style="font-size:13px;color:var(--text2)">\u23F3 Sto caricando il knowledge base\u2026</div>'
+    + '<div class="sbx-hint" style="margin-top:8px">si apre da solo appena pronto</div>'
+    + '</div>');
+    return;
+  }
 
   var html =
     '<div class="labx-eyebrow" style="margin-top:0">Second Brain</div>'
@@ -1868,7 +1909,7 @@ function labPopupSecondBrain() {
   + '<div class="sbx-stats">'
   +   '<div class="sbx-stat"><b>' + nPdf + '</b><span>PDF</span></div>'
   +   '<div class="sbx-stat"><b>' + nConcetti + '</b><span>concetti</span></div>'
-  +   '<div class="sbx-stat"><b>' + nVec + '</b><span>vettori</span></div>'
+  +   '<div class="sbx-stat"><b>' + nContra + '</b><span>contrasti</span></div>'
   +   '<div class="sbx-stat"><b>' + nEdg + '</b><span>link</span></div>'
   + '</div>'
 
@@ -2417,7 +2458,7 @@ async function labSbSearch() {
   var byId = {};
   pdfAnalisi.forEach(function(a){ if(a.id) byId[a.id]=a; });
 
-  if (labVettoriData && labVettoriData.vettori && labVettoriData.vettori.length) {
+  if (await labxEnsureVettori()) {
     try {
       var mistralKey = ['qadOXMnT','lOl282Mld9SR','wtWL9dTdGCA2'].join('');
       var resp = await fetch('https://api.mistral.ai/v1/embeddings', {
