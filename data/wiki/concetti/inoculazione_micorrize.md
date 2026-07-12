@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-07-11
+aggiornato: 2026-07-12
 pdf_count: 2
 ---
 
@@ -12,28 +12,32 @@ pdf_count: 2
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** sono associazioni simbiotiche tra funghi del suolo e radici delle piante, fondamentali per un **Living Soil** outdoor come quello di Caserta (41°N). Questo rapporto mutualistico si basa su uno scambio reciproco: i funghi, attraverso le loro ife (filamenti simili a radici), estendono la portata dell’apparato radicale della pianta fino a **100 volte**, migliorando l’assorbimento di acqua e nutrienti (in particolare fosforo e azoto). In cambio, la pianta fornisce ai funghi **carboidrati** (zuccheri prodotti tramite fotosintesi), essenziali per la loro crescita e attività metabolica.
+Le **micorrize** rappresentano una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** e l’efficienza nutrizionale. Questi funghi, appartenenti principalmente ai gruppi *Glomeromycota* e *Ascomycota*, colonizzano le radici estendendo la loro rete iphale nel substrato, creando un vero e proprio "internet delle piante". Attraverso questa simbiosi, le piante ricevono acqua e nutrienti minerali (come fosforo e azoto) in cambio di carboidrati prodotti tramite fotosintesi. In condizioni di **Living Soil outdoor** (come a Caserta, 41°N), dove la biodiversità microbica è spesso limitata da pratiche agricole intensive, l’inoculazione mirata di micorrize può **aumentare la resilienza delle piante** agli stress idrici, migliorare la struttura del suolo e ridurre la necessità di fertilizzanti sintetici.
 
-Questa simbiosi è particolarmente vantaggiosa in condizioni di stress idrico o nutrizionale, tipiche delle coltivazioni outdoor italiane, dove il suolo può essere povero o soggetto a siccità estiva. Studi dimostrano che le piante micorrizate sviluppano una maggiore **resilienza** a patogeni radicali (come *Phytophthora*) e producono biomassa più rapidamente, soprattutto in fasi di **vegetazione** e **germinazione**. Inoltre, le micorrize favoriscono la formazione di **aggregati nel suolo**, migliorando la struttura e la capacità di ritenzione idrica, elementi chiave per un ecosistema **Living Soil** equilibrato.
+Il meccanismo d’azione si basa sulla **estensione dell’apparato radicale**: i funghi micorrizici, infatti, agiscono come estensioni delle radici stesse, aumentando la superficie di assorbimento fino a 100 volte. Questo è particolarmente vantaggioso in terreni poveri o compattati, tipici di coltivazioni outdoor in Italia meridionale. Inoltre, le micorrize stimolano la produzione di **glomalina**, una glicoproteina che migliora l’aggregazione del suolo, favorendo la ritenzione idrica e la porosità. Studi dimostrano che piante inoculate con micorrize mostrano una crescita più vigorosa già dalla fase di vegetazione, con un impatto positivo anche sulla qualità del raccolto, soprattutto in termini di resina e profilo terpenico.
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor a Caserta (clima mediterraneo con estati calde e umidità variabile), l’inoculazione delle micorrize deve seguire un protocollo mirato per massimizzare la simbiosi:
+Per una serra **Living Soil outdoor** a Caserta (41°N), l’inoculazione delle micorrize deve essere eseguita con attenzione, seguendo questi passaggi:
 
 1. **Preparazione del substrato**:
-   - Assicurarsi che il **Living Soil** sia già ricco di materia organica (compost maturo, humus di lombrico) e privo di residui di fungicidi chimici (evitare trattamenti con rame o zolfo nelle 4-6 settimane precedenti).
-   - Il pH ideale per la simbiosi micorrizica è tra **6.0 e 7.0**; in caso di suoli acidi (tipici di alcune zone campane), correggere con **calcare dolomitico** o cenere di legna.
+   - Assicurarsi che il terreno sia **umido ma non zuppo** (evitare ristagni d’acqua, come indicato in [web_zamn_301-come-irrigare-le-piante-di-cannabis]).
+   - Mescolare l’inoculo micorrizico (5–10 g per pianta) con un substrato di supporto (es. compost maturo o perlite) per distribuirlo uniformemente.
 
-2. **Inoculazione al trapianto**:
-   - **Dosaggio**: 5–10 g di inoculo micorrizico (es. *Glomus intraradices* o *Rhizophagus irregularis*) per pianta, da distribuire direttamente sulle radici nude o nel foro di trapianto.
-   - **Metodo**: Mescolare l’inoculo con un po’ di **terriccio di trapianto** (o substrato di partenza) per garantire un contatto diretto con le radici. Evitare di esporre l’inoculo alla luce solare diretta (può uccidere i funghi).
+2. **Applicazione al trapianto**:
+   - Al momento del trapianto, creare una piccola buca nel substrato e posizionare l’inoculo **direttamente a contatto con le radici** (evitando il contatto con il fusto).
+   - Coprire leggermente con terra e irrigare **con acqua a pH 6.0–6.5** per favorire l’attivazione dei funghi.
 
-3. **Post-trapianto**:
-   - Mantenere il suolo **umido ma non saturo** (evitare ristagni) per i primi 7–10 giorni, usando acqua a **temperatura ambiente** (evitare shock termico).
-   - **Evitare fungicidi** per almeno **30 giorni** dopo l’inoculazione, inclusi quelli "biologici" a base di *Trichoderma* (possono competere con le micorrize).
-   - **Irrigazione**: Seguire il protocollo di [web_zamn_301-come-irrigare-le-piante-di-cannabis], bagnando solo quando il substrato è asciutto al tatto (1–2 cm di profondità).
+3. **Irrigazione post-inoculo**:
+   - Mantenere il suolo **leggermente umido** per 7–10 giorni, evitando eccessi d’acqua che potrebbero dilavare l’inoculo.
+   - Non utilizzare **fungicidi** nei 30 giorni successivi all’applicazione, come specificato nelle istruzioni pratiche.
 
-4. **Manutenzione**:
-   - Dopo 30 giorni, integrare con **tè di compost** o **biochar** per stimolare ulteriormente la rete micorrizica.
-   - Monitorare la crescita delle radici: se dopo 4–6 settimane non si osservano
+4. **Monitoraggio**:
+   - Osservare la crescita delle radici e la risposta della pianta (es. aumento della vigoria fogliare) entro 2–3 settimane.
+
+---
+## Sinergie con altri elementi
+Le micorrize interagiscono positivamente con diverse tecniche di **elettrocultura** e **suolo vivente**, potenziando i loro effetti:
+
+- **Lakhovsky (Onde di forma)**: Le micorrize beneficiano della **maggiore attività elettrica del suolo** indotta da circuiti Lakhovsky, che stimola la comunicazione tra
