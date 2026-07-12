@@ -1473,3 +1473,36 @@ h1, h2, h3, .topbar-logo h1, .lab-header-title, .modal-title, .card-title, .sect
   border: 1px solid var(--border); color: var(--green3);
   background: var(--card2); cursor: pointer; margin-top: 8px; font-family: var(--font);
 }
+
+
+/* ══════════ REDESIGN Rev.28 — icone SVG minimal ══════════ */
+.svgi { width: 20px; height: 20px; display: block; }
+.brand-dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--green3); display: inline-block;
+}
+.topbar-logo h1 {
+  font-family: var(--font-disp); color: var(--text);
+  font-weight: 600; font-size: 18px;
+}
+.icon-btn {
+  background: var(--card); border: 1px solid var(--border-soft, var(--border));
+  color: var(--text2); display: grid; place-items: center;
+}
+.icon-btn .svgi { width: 18px; height: 18px; }
+.icon-btn:active { background: var(--card2); color: var(--green3); }
+
+.nav-ico { display: block; }
+.nav-ico .svgi { width: 21px; height: 21px; margin: 0 auto; }
+.nav-item { color: var(--text3); text-shadow: none !important; }
+.nav-item span { filter: none !important; text-shadow: none !important; }
+.nav-item.active { color: var(--green3); }
+.nav-item.active span:first-child { filter: none; }
+
+.lab-icon-emoji { display: flex; justify-content: center; }
+.lab-icon-emoji .svgi { width: 26px; height: 26px; }
+.lab-icon-btn.cyan   .lab-icon-emoji, .lab-icon-btn.cyan   .lab-icon-label { color: var(--green3); }
+.lab-icon-btn.violet .lab-icon-emoji, .lab-icon-btn.violet .lab-icon-label { color: var(--purple); }
+.lab-icon-btn.orange .lab-icon-emoji, .lab-icon-btn.orange .lab-icon-label { color: var(--orange); }
+.lab-icon-btn.red    .lab-icon-emoji, .lab-icon-btn.red    .lab-icon-label { color: var(--red); }
+.lab-icon-label { color: inherit !important; }
