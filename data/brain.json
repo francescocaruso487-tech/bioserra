@@ -1,121 +1,121 @@
 {
-  "lastUpdate": "2026-07-11T05:57:47.000Z",
+  "lastUpdate": "2026-07-12T06:18:03.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare elettrocoltura DC a basso voltaggio (1-3V) al suolo per le autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) tra le 07-11 e 18-21, evitando le ore centrali (12-16) per prevenire stress termico, come indicato nei manuali [pdf_17] (pag. 28) e [pdf_16] (pag. 45).",
-      "Monitorare l'umidità del suolo per le femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) con irrigazione a goccia al mattino presto per evitare eccessi di umidità che riducono la conducibilità elettrica del terreno, come suggerito in [pdf_85] (pag. 39).",
-      "Verificare la conducibilità elettrica del suolo con sonda portatile (es. 1-5 mS/cm) per ottimizzare l'applicazione di elettrocoltura, poiché l'umidità attuale (73%) e la temperatura moderata (20.6°C) favoriscono la trasmissione degli stimoli alle radici, come descritto da Legé [pdf_85] (pag. 39)."
+      "Applicare elettrocoltura DC a basso voltaggio (5-8V) tramite elettrodi di rame/zinco a 10-15 cm di profondità per le piante in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) tra le 18-21, evitando le ore calde (12-16) per prevenire stress termico ([pdf_17] PAG 28, [pdf_85] PAG 69).",
+      "Aggiungere biochar al substrato delle autofiorenti in fioritura per migliorare la conducibilità elettrica e l'attività microbica, sfruttando l'umidità elevata (78%) che amplifica gli effetti dell'elettrocoltura ([pdf_16] PAG 45).",
+      "Monitorare l'umidità del suolo alle radici delle femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per evitare ristagni, dato il picco termico previsto (35.1°C) e l'assenza di pioggia ([Manuale di Coltivazione BioSerra])."
     ],
-    "briefing_mattutino": "La serra si presenta in condizioni stabili con temperatura moderata (20.6°C) e umidità elevata (73%), ideali per applicare tecniche di elettrocoltura senza stress termico. Oggi si consiglia di intervenire sulle autofiorenti in fioritura con corrente DC a basso voltaggio, mentre per le femminizzate in vegetazione si suggerisce di monitorare l'irrigazione e la conducibilità del suolo. Le condizioni meteo (massima 33.5°C) richiedono di evitare interventi nelle ore centrali, come indicato nei manuali di coltivazione BioSerra.",
+    "briefing_mattutino": "La serra si trova in condizioni stabili con umidità elevata (78%) e temperature moderate (22.3°C), ideali per applicare tecniche di elettrocoltura senza stress termico. Oggi si consiglia di ottimizzare l'assorbimento dei nutrienti tramite elettrocoltura DC per le autofiorenti in fioritura e monitorare le femminizzate in vegetazione per prevenire disidratazione. L'assenza di pioggia e il picco termico previsto (35.1°C) richiedono attenzione all'irrigazione e alla conducibilità del suolo ([pdf_17], [pdf_85]).",
     "consigli_piante": {
-      "autofiorenti": "Applicare elettrocoltura DC (1-3V) per 2-3 ore al mattino (07-11) e 2-3 ore alla sera (18-21) su Epsilon, Milky Way, Titan, Medusa e Gaia, utilizzando elettrodi di rame/zinco posizionati a 10-15 cm dalle radici, come descritto in [pdf_17] (pag. 28) e [pdf_16] (pag. 45).",
-      "femminizzate": "Irrigare le piante in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) al mattino presto con 0.5-1L per pianta, evitando ristagni che riducono la conducibilità elettrica del suolo, come suggerito in [pdf_85] (pag. 39).",
+      "autofiorenti": "Applicare elettrocoltura DC (5-8V) per 2-3 ore tra le 18-21 su Epsilon, Milky Way, Titan, Medusa e Gaia per stimolare la fioritura e l'assorbimento dei nutrienti, sfruttando l'umidità elevata. Aggiungere biochar al substrato per migliorare la conducibilità elettrica ([pdf_17] PAG 28, [pdf_16] PAG 45).",
+      "femminizzate": "Monitorare l'umidità del suolo alle radici di Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla e Mexican Rush per evitare ristagni, dato il picco termico previsto (35.1°C). Evitare irrigazioni eccessive e applicare pacciamatura per ridurre l'evaporazione ([Manuale di Coltivazione BioSerra]).",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Applicare elettrocoltura DC (1-3V) per 2 ore al mattino (07-09) e 2 ore alla sera (18-20), verificando la conducibilità del suolo con sonda portatile (1-3 mS/cm).",
+          "azione": "Applicare elettrocoltura DC (5-8V) per 2-3 ore tra le 18-21, aggiungere biochar al substrato per migliorare conducibilità elettrica.",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Applicare elettrocoltura DC (1-3V) per 2 ore al mattino (07-09) e 2 ore alla sera (18-20), verificando la conducibilità del suolo con sonda portatile (1-3 mS/cm).",
+          "azione": "Applicare elettrocoltura DC (5-8V) per 2-3 ore tra le 18-21, monitorare umidità del suolo per evitare ristagni.",
           "priorita": "alta"
         },
         {
           "nome": "Titan F1",
-          "azione": "Applicare elettrocoltura DC (1-3V) per 2 ore al mattino (07-09) e 2 ore alla sera (18-20), verificando la conducibilità del suolo con sonda portatile (1-3 mS/cm).",
+          "azione": "Applicare elettrocoltura DC (5-8V) per 2-3 ore tra le 18-21, aggiungere biochar al substrato.",
           "priorita": "alta"
         },
         {
           "nome": "Medusa F1",
-          "azione": "Applicare elettrocoltura DC (1-3V) per 2 ore al mattino (07-09) e 2 ore alla sera (18-20), verificando la conducibilità del suolo con sonda portatile (1-3 mS/cm).",
+          "azione": "Applicare elettrocoltura DC (5-8V) per 2-3 ore tra le 18-21, monitorare umidità del suolo.",
           "priorita": "alta"
         },
         {
           "nome": "Gaia F1",
-          "azione": "Applicare elettrocoltura DC (1-3V) per 2 ore al mattino (07-09) e 2 ore alla sera (18-20), verificando la conducibilità del suolo con sonda portatile (1-3 mS/cm).",
+          "azione": "Applicare elettrocoltura DC (5-8V) per 2-3 ore tra le 18-21, aggiungere biochar al substrato.",
           "priorita": "alta"
         },
         {
           "nome": "Astro Lemonade F1",
-          "azione": "Irrigare al mattino presto con 0.5L per pianta e verificare la conducibilità del suolo (1-3 mS/cm).",
+          "azione": "Monitorare umidità del suolo, evitare irrigazioni eccessive, applicare pacciamatura per ridurre evaporazione.",
           "priorita": "media"
         },
         {
           "nome": "Cosmic Cheddar F1",
-          "azione": "Irrigare al mattino presto con 0.5L per pianta e verificare la conducibilità del suolo (1-3 mS/cm).",
+          "azione": "Monitorare umidità del suolo, evitare irrigazioni eccessive, applicare pacciamatura.",
           "priorita": "media"
         },
         {
           "nome": "Orbital Banana F1",
-          "azione": "Irrigare al mattino presto con 0.5L per pianta e verificare la conducibilità del suolo (1-3 mS/cm).",
+          "azione": "Monitorare umidità del suolo, evitare irrigazioni eccessive, applicare pacciamatura.",
           "priorita": "media"
         },
         {
-          "nome": "Royal Gorilla",
-          "azione": "Irrigare al mattino presto con 1L per pianta e verificare la conducibilità del suolo (1-3 mS/cm).",
+          "nome": "Royal Gorilla F1",
+          "azione": "Monitorare umidità del suolo, evitare irrigazioni eccessive, applicare pacciamatura.",
           "priorita": "media"
         },
         {
-          "nome": "Mexican Rush",
-          "azione": "Irrigare al mattino presto con 1L per pianta e verificare la conducibilità del suolo (1-3 mS/cm).",
+          "nome": "Mexican Rush F1",
+          "azione": "Monitorare umidità del suolo, evitare irrigazioni eccessive, applicare pacciamatura.",
           "priorita": "media"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Elettrocoltura DC con elettrodi di rame/zinco",
-        "descrizione": "Applicare una corrente continua (DC) a basso voltaggio (1-3V) al suolo tramite elettrodi di rame/zinco posizionati a 10-15 cm dalle radici delle autofiorenti in fioritura, per stimolare l'assorbimento nutrizionale e la crescita radicale. Utilizzare un timer per limitare l'applicazione a 2-3 ore per sessione, evitando le ore centrali della giornata.",
-        "fonte": "[pdf_17] (pag. 28), [pdf_16] (pag. 45)",
+        "nome": "Elettrocoltura DC con elettrodi rame/zinco",
+        "descrizione": "Posizionare elettrodi di rame e zinco a 10-15 cm di profondità nel substrato vicino alle radici delle piante in fioritura. Applicare una corrente continua (DC) a 5-8V per 2-3 ore tra le 18-21, sfruttando l'umidità elevata (78%) per amplificare gli effetti. Utilizzare un timer per automatizzare l'applicazione e evitare stress termico ([pdf_17] PAG 28, [pdf_85] PAG 69).",
+        "fonte": "[pdf_17], [pdf_85]",
         "materiali": [
-          "elettrodi di rame/zinco",
+          "elettrodi rame/zinco",
           "cavo elettrico isolato",
-          "alimentatore DC 1-3V",
-          "timer",
-          "sonda di conducibilità"
+          "alimentatore DC 5-8V",
+          "timer"
         ],
         "difficolta": "bassa"
       }
     ],
     "scoperte": [
-      "La combinazione di umidità relativa elevata (73%) e temperatura moderata (20.6°C) in serra crea condizioni ideali per l'applicazione di tecniche di elettrocoltura, poiché l'acqua nel suolo aumenta la conducibilità elettrica e facilita la trasmissione degli stimoli alle radici, come descritto da Legé [pdf_85] (pag. 39).",
-      "La fase di Gibbosa Crescente (73% illuminazione) è favorevole per interventi di elettrocoltura sulle autofiorenti in fioritura, poiché sincronizza le energie telluriche con la fase fenologica, come suggerito nei principi biodinamici [pdf_85]."
+      "L'umidità elevata (78%) e le temperature moderate (22.3°C) attuali in serra creano condizioni ideali per l'applicazione di elettrocoltura DC, poiché l'umidità amplifica la conducibilità elettrica del suolo e l'efficacia della tecnica ([pdf_16] PAG 45).",
+      "La luna gibbosa crescente (73% illuminazione) favorisce l'attività radicale e l'assorbimento dei nutrienti, ideale per le operazioni di elettrocoltura sulle piante in fioritura."
     ],
     "avvisi": [
-      "Evitare di applicare elettrocoltura o PEMF tra le 12-16 a causa del picco termico previsto (34.3°C max domani), per prevenire stress termico alle piante, come indicato nei manuali di coltivazione BioSerra.",
-      "Monitorare l'umidità del suolo per le femminizzate in vegetazione per evitare ristagni che riducono la conducibilità elettrica del terreno."
+      "Evitare di applicare elettrocoltura o PEMF tra le 12-16 a causa del picco termico previsto (35.1°C) per prevenire stress termico alle piante ([Manuale di Coltivazione BioSerra]).",
+      "Monitorare l'umidità del suolo delle femminizzate in vegetazione per evitare ristagni, dato il picco termico e l'assenza di pioggia."
     ],
     "piano_giornata": {
-      "mattina": "07-12: Applicare elettrocoltura DC (1-3V) per 2 ore su autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia). Irrigare le femminizzate in vegetazione con 0.5-1L per pianta al mattino presto. Verificare la conducibilità del suolo con sonda portatile.",
-      "pomeriggio": "12-18: Evitare interventi nelle ore centrali (12-16) a causa del picco termico previsto. Monitorare lo stato delle piante e la conducibilità del suolo.",
-      "sera": "18-21: Applicare elettrocoltura DC (1-3V) per 2 ore su autofiorenti in fioritura. Verificare la conducibilità del suolo e lo stato generale delle piante."
+      "mattina": "07-12: Monitorare umidità del suolo e temperatura nelle serre. Applicare pacciamatura alle femminizzate per ridurre evaporazione. Verificare lo stato degli elettrodi di rame/zinco per le autofiorenti.",
+      "pomeriggio": "12-18: Evitare operazioni di elettrocoltura o irrigazione a causa del picco termico (35.1°C). Monitorare le piante per segni di stress termico o disidratazione.",
+      "sera": "18-21: Applicare elettrocoltura DC (5-8V) per 2-3 ore sulle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia). Aggiungere biochar al substrato se necessario."
     },
     "kb_sintesi": {
       "principi_attivi": [
-        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, con applicazioni basate su principi elettromagnetici (Justin Etienne Christofleau, [pdf_13]).",
-        "L'applicazione di corrente continua (DC) a basso voltaggio al suolo, tramite elettrodi posizionati vicino alle radici, stimola la crescita e la salute delle piante ([pdf_17], pag. 28).",
-        "L'uso di materiali come rame e zinco nelle installazioni di elettrocoltura può potenziare gli effetti benefici sulla pianta ([pdf_17], pag. 78).",
-        "L'elettrocoltura può essere applicata in diverse fasi fenologiche (vegetazione, fioritura) per ottimizzare rese e qualità del raccolto ([pdf_16], pag. 25).",
-        "La combinazione di tecniche di elettrocoltura con pratiche di suolo vivo (Living Soil) e biodinamica può amplificare i risultati produttivi e la resilienza delle colture."
+        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, con particolare attenzione all'equilibrio tra terra e cielo (Justin Etienne Christofleau, [pdf_13]).",
+        "L'applicazione di corrente continua (DC) a basso voltaggio tramite elettrodi posizionati vicino alle radici stimola la crescita e l'assorbimento dei nutrienti (ELECTROCULTURE-FOR-BEGINNERS-A-Step-by-Step-Guide-, [pdf_17]).",
+        "L'uso di materiali come rame e zinco nelle installazioni di elettrocoltura può potenziare gli effetti benefici sulla salute delle piante (ELECTROCULTURE FOR BEGINNERS 2 BOOKS IN 1 - Unlock, [pdf_16]).",
+        "L'elettrocoltura si basa sulla comprensione delle proprietà elettriche dei vegetali, che differiscono da quelle dell'elettricità convenzionale (DE L'ELECTRICITE' DES VEGETAUX, [pdf_85]).",
+        "La combinazione di tecniche elettromagnetiche e armoniche naturali può migliorare la resilienza delle piante e la qualità del suolo (Christofleau, [pdf_13])."
       ],
-      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (es. 1-5V) al suolo tramite elettrodi di rame/zinco posizionati a 10-15 cm dalle radici, per stimolare l'assorbimento nutrizionale e la crescita radicale durante le fasi di vegetazione e fioritura. Questo metodo è descritto come efficace in [pdf_17] (pag. 28) e [pdf_16] (pag. 45).",
-      "consiglio_suolo_da_testi": "Mantenere un suolo vivo e ben strutturato con alta attività microbica, utilizzando compost maturo e biochar per migliorare la conducibilità elettrica naturale del terreno. Questo favorisce la trasmissione degli stimoli elettromagnetici alle radici, come suggerito nei principi del Living Soil e nei manuali di elettrocoltura ([pdf_13], pag. 1; [pdf_17], pag. 51).",
-      "consiglio_biodinamica_da_testi": "Programmare eventuali interventi di elettrocoltura o preparati biodinamici (es. 500 o 501) nelle ore diurne, preferibilmente in giorni di radice o fiore secondo il calendario biodinamico, per sincronizzare le energie telluriche e cosmiche con le fasi fenologiche delle piante. Questo approccio è allineato con i principi di Christofleau ([pdf_13], pag. 3) e con le pratiche descritte in [pdf_85].",
-      "scoperta_del_giorno": "La combinazione di umidità relativa elevata (73%) e temperatura moderata (20.6°C) in serra crea condizioni ideali per l'applicazione di tecniche di elettrocoltura, poiché l'acqua nel suolo aumenta la conducibilità elettrica e facilita la trasmissione degli stimoli alle radici. Questo è supportato dai principi di Legé ([pdf_85], pag. 39) sull'elettricità dei vegetali.",
+      "consiglio_elettro_da_testi": "Applicare una corrente continua (DC) a basso voltaggio (tra 1 e 12V) tramite elettrodi di rame/zinco posizionati a 10-15 cm di profondità nel substrato, vicino alle radici delle piante in fase di vegetazione e fioritura. Questo metodo, descritto in [pdf_17] (PAG 28), stimola l'attività metabolica e l'assorbimento dei nutrienti, soprattutto in condizioni di umidità elevata (78%) come quella attuale.",
+      "consiglio_suolo_da_testi": "Mantenere un suolo vivo e ben strutturato con alta attività microbica, utilizzando compost maturo e biochar per migliorare la conducibilità elettrica naturale. Secondo [pdf_85] (PAG 69), un suolo ricco di esalazioni idioelettriche (ioni liberi) favorisce la trasmissione del fluido elettrico necessario alle piante, soprattutto in fase di fioritura.",
+      "consiglio_biodinamica_da_testi": "Programmare le operazioni di trapianto o semina in serra durante le fasi di luna crescente per massimizzare la crescita vegetativa, come suggerito nei principi biodinamici citati indirettamente in [pdf_13]. La luna crescente favorisce l'attività radicale e l'assorbimento dei nutrienti, ideale per le piante in fase di vegetazione.",
+      "scoperta_del_giorno": "L'osservazione che l'elettrocoltura può essere applicata con successo anche in condizioni di alta umidità (78%) e temperature moderate (22.3°C), come quelle attuali in serra. Secondo [pdf_16] (PAG 45), l'umidità elevata può amplificare gli effetti della corrente applicata, migliorando la conducibilità del suolo e l'efficacia della tecnica.",
       "tecnica_da_provare": {
-        "nome": "Sistema a elettrodi DC per serra",
-        "descrizione": "Installare una coppia di elettrodi (rame e zinco) a 10 cm di profondità nel letto di coltivazione, distanziati di 30-40 cm tra loro, collegati a una batteria da 3V (es. pila al litio) o a un piccolo pannello solare. Mantenere il circuito attivo per 6-8 ore al giorno durante le fasi di vegetazione e fioritura, monitorando la risposta delle piante (vigore, colore, resa).",
-        "fonte": "[pdf_17] (pag. 28) e [pdf_16] (pag. 45)",
+        "nome": "Sistema a elettrodi gemelli con corrente pulsata",
+        "descrizione": "Installare due elettrodi di rame e zinco (rapporto 1:1) a 10 cm di distanza l'uno dall'altro, posizionati a 15 cm di profondità nel substrato, vicino alle radici delle piante in fioritura. Applicare una corrente pulsata a 6V (DC) per 2 ore al giorno, preferibilmente al mattino, utilizzando una batteria da 9V con un timer meccanico per regolare la durata. Questo sistema, ispirato ai brevetti di Christofleau ([pdf_13], Brevetto n. 529202), stimola la sintesi di fitormoni e migliora la resistenza delle piante.",
+        "fonte": "[pdf_13], [pdf_17]",
         "materiali": [
-          "Elettrodi in rame (lunghezza 20 cm, diametro 5 mm)",
-          "Elettrodi in zinco (lunghezza 20 cm, diametro 5 mm)",
-          "Batteria da 3V (o pannello solare 5W)",
-          "Cavi elettrici isolati (2x1.5 mm²)",
-          "Connettori a vite o saldatura",
-          "Multimetro per monitorare la tensione"
+          "2 elettrodi in rame (lunghezza 30 cm, diametro 5 mm)",
+          "2 elettrodi in zinco (lunghezza 30 cm, diametro 5 mm)",
+          "Batteria da 9V",
+          "Timer meccanico (opzionale)",
+          "Cavi elettrici isolati (lunghezza 2 m)",
+          "Connettori a coccodrillo",
+          "Strumenti per l'installazione (vanga, metro)"
         ]
       }
     }
@@ -123,8 +123,8 @@
   "agenti": {
     "piante": {
       "stato_generale": "ottimale",
-      "irrigazione": "Irrigare le femminizzate in vegetazione al mattino presto con 0.5-1L per pianta, evitando eccessi che riducono la conducibilità elettrica del suolo.",
-      "nutrizione": "Nessuna integrazione oggi; mantenere water-only per evitare squilibri nutrizionali in fase di fioritura delle autofiorenti.",
+      "irrigazione": "Oggi non irrigare le autofiorenti in fioritura per evitare stress idrico. Monitorare umidità del suolo delle femminizzate e irrigare solo se necessario, preferibilmente al mattino presto o sera tardi.",
+      "nutrizione": "Nessuna integrazione oggi. Applicare elettrocoltura DC per stimolare l'assorbimento dei nutrienti esistenti nel substrato.",
       "piante_critiche": []
     },
     "ambiente": {
@@ -132,40 +132,39 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Programmare interventi di elettrocoltura sulle autofiorenti in fioritura nelle ore serali (18-21) per sincronizzare le energie telluriche con la fase fenologica, come suggerito nei principi biodinamici [pdf_85]."
+        "consiglio": "Sfruttare la fase lunare per applicare elettrocoltura DC sulle piante in fioritura, poiché la luna crescente favorisce l'attività radicale e l'assorbimento dei nutrienti ([pdf_13])."
       },
       "ore_luce": 14.9
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare la conducibilità del suolo con sonda portatile (1-3 mS/cm) prima e dopo l'applicazione di elettrocoltura.",
-        "Controllare il corretto funzionamento degli elettrodi di rame/zinco e dei cavi elettrici per evitare cortocircuiti."
+        "Verificare il corretto posizionamento degli elettrodi rame/zinco a 10-15 cm di profondità per le autofiorenti.",
+        "Controllare il funzionamento dell'alimentatore DC e del timer per l'applicazione serale."
       ],
-      "ottimizzazione": "Utilizzare un timer per limitare l'applicazione di elettrocoltura a 2-3 ore per sessione, evitando sovrastimolazione delle radici, come indicato in [pdf_16] (pag. 45)."
+      "ottimizzazione": "Utilizzare un voltaggio di 5-8V per l'elettrocoltura DC, sfruttando l'umidità elevata (78%) per migliorare la conducibilità del suolo e l'efficacia della tecnica ([pdf_16] PAG 45)."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Elettrocoltura DC con elettrodi di rame/zinco",
-      "descrizione": "Applicare una corrente continua (DC) a basso voltaggio (1-3V) al suolo tramite elettrodi di rame/zinco posizionati a 10-15 cm dalle radici delle autofiorenti in fioritura, per stimolare l'assorbimento nutrizionale e la crescita radicale. Utilizzare un timer per limitare l'applicazione a 2-3 ore per sessione, evitando le ore centrali della giornata.",
-      "fonte": "[pdf_17] (pag. 28), [pdf_16] (pag. 45)",
+      "nome": "Elettrocoltura DC con elettrodi rame/zinco",
+      "descrizione": "Posizionare elettrodi di rame e zinco a 10-15 cm di profondità nel substrato vicino alle radici delle piante in fioritura. Applicare una corrente continua (DC) a 5-8V per 2-3 ore tra le 18-21, sfruttando l'umidità elevata (78%) per amplificare gli effetti. Utilizzare un timer per automatizzare l'applicazione e evitare stress termico ([pdf_17] PAG 28, [pdf_85] PAG 69).",
+      "fonte": "[pdf_17], [pdf_85]",
       "materiali": [
-        "elettrodi di rame/zinco",
+        "elettrodi rame/zinco",
         "cavo elettrico isolato",
-        "alimentatore DC 1-3V",
-        "timer",
-        "sonda di conducibilità"
+        "alimentatore DC 5-8V",
+        "timer"
       ],
       "difficolta": "bassa"
     }
   ],
   "avvisi": [
-    "Evitare di applicare elettrocoltura o PEMF tra le 12-16 a causa del picco termico previsto (34.3°C max domani), per prevenire stress termico alle piante, come indicato nei manuali di coltivazione BioSerra.",
-    "Monitorare l'umidità del suolo per le femminizzate in vegetazione per evitare ristagni che riducono la conducibilità elettrica del terreno."
+    "Evitare di applicare elettrocoltura o PEMF tra le 12-16 a causa del picco termico previsto (35.1°C) per prevenire stress termico alle piante ([Manuale di Coltivazione BioSerra]).",
+    "Monitorare l'umidità del suolo delle femminizzate in vegetazione per evitare ristagni, dato il picco termico e l'assenza di pioggia."
   ],
   "consigli_giorno": [
-    "Applicare elettrocoltura DC a basso voltaggio (1-3V) al suolo per le autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) tra le 07-11 e 18-21, evitando le ore centrali (12-16) per prevenire stress termico, come indicato nei manuali [pdf_17] (pag. 28) e [pdf_16] (pag. 45).",
-    "Monitorare l'umidità del suolo per le femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) con irrigazione a goccia al mattino presto per evitare eccessi di umidità che riducono la conducibilità elettrica del terreno, come suggerito in [pdf_85] (pag. 39).",
-    "Verificare la conducibilità elettrica del suolo con sonda portatile (es. 1-5 mS/cm) per ottimizzare l'applicazione di elettrocoltura, poiché l'umidità attuale (73%) e la temperatura moderata (20.6°C) favoriscono la trasmissione degli stimoli alle radici, come descritto da Legé [pdf_85] (pag. 39)."
+    "Applicare elettrocoltura DC a basso voltaggio (5-8V) tramite elettrodi di rame/zinco a 10-15 cm di profondità per le piante in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) tra le 18-21, evitando le ore calde (12-16) per prevenire stress termico ([pdf_17] PAG 28, [pdf_85] PAG 69).",
+    "Aggiungere biochar al substrato delle autofiorenti in fioritura per migliorare la conducibilità elettrica e l'attività microbica, sfruttando l'umidità elevata (78%) che amplifica gli effetti dell'elettrocoltura ([pdf_16] PAG 45).",
+    "Monitorare l'umidità del suolo alle radici delle femminizzate in vegetazione (Astro Lemonade, Cosmic Cheddar, Orbital Banana, Royal Gorilla, Mexican Rush) per evitare ristagni, dato il picco termico previsto (35.1°C) e l'assenza di pioggia ([Manuale di Coltivazione BioSerra])."
   ]
 }
