@@ -1,5 +1,5 @@
 === Manuale di elettrotecnica e automazione (G. Ortolani (editor), E. Venturi_compressed.pdf — CHUNK 116/116 ===
-Tradotto in italiano da: ES | Script: traduci_testi.py
+Tradotto in italiano da: PT | Script: traduci_testi.py
 SEZIONE XIII SENSORI E TRASDUTTORI
 41
 −, ottico, XIII-9
@@ -155,7 +155,7 @@ alimentatore, XIV-26
 , moduli I/O, XIV-32
 , moduli I/O remoti, XIV-48
 , moduli per termocoppie, XIV-46
-, moduli PID, XIV-43
+, moduli PID, XIV-43
 , moduli speciali, XIV-18
 , moduli web, XIV-49
 , monotask, bitask, multitask, XIV-70
@@ -174,195 +174,138 @@ Scansione del PLC, XIV-87
 Trasmissione, XIV-17
 , CSMA/CD, XIV-13
 , seriale asincrona, XIV-18
-, seriale sincrona, XIV-19
-, reti di, XIV-12
-, Token passing, XIV-13
-
-[PAG 2276]
-44
-INDICE ANALITICO PER SEZIONI
-Sezione XV
-Sistemi
-ADC, XV-44
-Algoritmi di controllo, XV-49
-Analogie, XV-4
-, di Maxwell, XV-6
-, di Firestone, XV-6
-Antitrasformata di Laplace, XV-17, 21
-, metodo delle frazioni parziali, XV-21
-, sviluppo di Heaviside, XV-21
-Antitrasformata Zeta, XV-48
-Banda di proporzionalità, XV-51
-Blocco, di azione diretta, XV-9
-, di controreazione, XV-9
-, schema a blocchi, XV-7
-Bode, analisi di, XV-26
-, diagramma delle ampiezze, XV-27, 30
-, diagramma delle fasi, XV-27, 30
-, guadagno statico, XV-27
-, diagrammi asintotici, XV-28, 30
-, margine di fase, XV-35
-, margine di guadagno, XV-35
-Cammino di Nyquist, XV-25
-Cerchi M, XV-31
-Cerchi N, XV-32
-Classificazione dei Sistemi, XV-37
-Coefficiente, di errore, XV-37, 38
-, di sensibilità, XV-37
-, di smorzamento, XV-13
-Controllore di Posizione, XV-66
-, costante di proporzionalità, XV-68
-, generatore di profili, XV-70
-, guadagno del sistema, XV-68
-, risoluzione del sistema, XV-68
-, segnale di errore, XV-68
-Controllore Proporzionale a Rapporto di Tempo, XV-51
-, duty cycle, XV-52
-, set-point, XV-52
-Controllore Proporzionale a Sfasamento, XV-51
-Convertitore ADC, XV-44
-Coprocessore matematico, XV-64
-Costante di tempo, XV-12
-Diagramma/i, asintotici di Bode, XV-28
-, di Bode, XV-25, 26
-, di Nichols, XV-31
-, di Nyquist, XV-25
-, luogo delle radici, XV-32
-Digital Signal Processor DSP, XV-66
-Dominio di ω, XV-17, 22
-Dominio di s, XV-17
-Equazioni alle differenze finite, XV-43, 46
+, seriale sincrona,
 Errori di un sistema, XV-37
-, a regime, XV-37
-, deviazione statica, XV-43
-, di accelerazione, XV-37
-, offset, XV-43
-, di posizione, XV-37
-, transitorio, XV-39
-, di velocità, XV-37
+- a regime, XV-37
+- deviazione statica, XV-43
+- di accelerazione, XV-37
+- offset, XV-43
+- di posizione, XV-37
+- transitorio, XV-39
+- di velocità, XV-37
 Feedback, XV-3
 Feedforward, XV-3
 Frequenza, di crossover, XV-37
-, di taglio, XV-37
+- di taglio, XV-37
 Funzione/i, caratteristica nel cammino di Nyquist, XV-26
-, delta, XV-44
-, di trasferimento, XV-21
-, impulsiva, XV-44
-, impulso unitario, XV-14
-, per lo studio dei sistemi, XV-14
-, proprietà di screening, XV-15
-, rampa, XV-15
-, scalino unitario, XV-14
+- delta, XV-44
+- di trasferimento, XV-21
+- impulsiva, XV-44
+- impulso unitario, XV-14
+- per lo studio dei sistemi, XV-14
+- proprietà di screening, XV-15
+- rampa, XV-15
+- scalino unitario, XV-14
 Gradino, XV-37
 Guadagno statico, XV-27
 Indici di qualità, XV-40
 Linearità, XV-10
-, sovrapposizione degli effetti, XV-10
+- sovrapposizione degli effetti, XV-10
 Luogo delle radici, XV-32
-, condizione di modulo, XV-33
-, condizione di fase, XV-34
+- condizione di modulo, XV-33
+- condizione di fase, XV-34
 
 [PAG 2277]
 SEZIONE XV SISTEMI
 45
-, margine di fase, XV-36
-, margine di guadagno, XV-36
-, spirule, XV-34
+- margine di fase, XV-36
+- margine di guadagno, XV-36
+- spirule, XV-34
 Memoria, XV-53
-, dati, XV-53
-, programma, XV-53
+- dati, XV-53
+- programma, XV-53
 Microcontrollore, XV-64
-, codice binario, XV-71
-, codice oggetto, XV-71
-, compilatore, XV-71
-, controllore di posizione a microcontrollore, XV-66
-, controllore di temperatura a microcontrollore, XV-71
-, coprocessore matematico, XV-64
-, digital signal processor (DSP), XV-66
-, comando di motori a corrente continua, XV-66
-, comando di motori brushless, XV-66
-, linguaggio ad alto livello, XV-71
-, linguaggio assembly, XV-70
-, linguaggio C, XV-71, 72
+- codice binario, XV-71
+- codice oggetto, XV-71
+- compilatore, XV-71
+- controllore di posizione a microcontrollore, XV-66
+- controllore di temperatura a microcontrollore, XV-71
+- coprocessore matematico, XV-64
+- digital signal processor (DSP), XV-66
+- comando di motori a corrente continua, XV-66
+- comando di motori brushless, XV-66
+- linguaggio ad alto livello, XV-71
+- linguaggio assembly, XV-70
+- linguaggio C, XV-71, 72
 Modello, XV-4
-, matematico di un sistema, XV-4
+- matematico di un sistema, XV-4
 Modi aperiodici, XV-11
-, coefficiente di smorzamento, XV-13
-, pulsazione naturale, XV-13
+- coefficiente di smorzamento, XV-13
+- pulsazione naturale, XV-13
 Nichols, carta di, XV-31
-, cerchi M, XV-31
-, cerchi N, XV-32
-, diagramma ampiezza-fase, XV-31, 32
-, margine di fase, XV-36
-, margine di guadagno, XV-36
-, picco di risonanza, XV-31
+- cerchi M, XV-31
+- cerchi N, XV-32
+- diagramma ampiezza-fase, XV-31, 32
+- margine di fase, XV-36
+- margine di guadagno, XV-36
+- picco di risonanza, XV-31
 Nodi sommatori, XV-7
 Nyquist, cammino di, XV-25
-, diagramma di, XV-25
-, funzione caratteristica, XV-26
-, margine di fase, XV-35
-, margine di guadagno, XV-35
-, teorema dell’argomento di Cauchy, XV-26
+- diagramma di, XV-25
+- funzione caratteristica, XV-26
+- margine di fase, XV-35
+- margine di guadagno, XV-35
+- teorema dell’argomento di Cauchy, XV-26
 Omogenea associata, XV-11
 Parabola, XV-37
 P.I.D., XV-42
-, costante di proporzionalità, XV-43
-, costante di integrazione, XV-43
-, costante derivativa, XV-43
-, deviazione statica, XV-43
-, offset, XV-43
-, regolatori con i PLC, XV-55
+- costante di proporzionalità, XV-43
+- costante di integrazione, XV-43
+- costante derivativa, XV-43
+- deviazione statica, XV-43
+- offset, XV-43
+- regolatori con i PLC, XV-55
 Picco di risonanza, XV-31
 PLC, XV-53
-, blocco di scala, XV-58
-, ladder diagram, XV-53
-, memoria dei PLC, XV-53
-, passaggio dei parametri, XV-58
-, regolatori P.I.D. con i, XV-55
-, sintonizzazione del filtro, XV-58
-, subroutine, XV-54
-, tempo di ciclo, XV-54
+- blocco di scala, XV-58
+- ladder diagram, XV-53
+- memoria dei PLC, XV-53
+- passaggio dei parametri, XV-58
+- regolatori P.I.D. con i, XV-55
+- sintonizzazione del filtro, XV-58
+- subroutine, XV-54
+- tempo di ciclo, XV-54
 Pulsazione naturale, XV-13
 Proprietà di screening, XV-15
 Punto di diramazione, XV-8
 Rampa, XV-37
 Rappresentazione asintotica, XV-22
 Rappresentazione delle funzioni, di Bode, XV-22, 25, 26
-, diagrammi polari, XV-24
-, luogo delle radici, XV-32
-, Nichols, XV-22
-, Nyquist, XV-22, 25
+- diagrammi polari, XV-24
+- luogo delle radici, XV-32
+- Nichols, XV-22
+- Nyquist, XV-22, 25
 Regolatore ON-OFF, XV-50
-, banda, XV-50
-, isteresi, XV-50
-, set-point, XV-50
-, soglia inferiore, XV-50
-, soglia superiore, XV-50
+- banda, XV-50
+- isteresi, XV-50
+- set-point, XV-50
+- soglia inferiore, XV-50
+- soglia superiore, XV-50
 Regolatori, XV-3, 42, 49
-, controllo adattativo, XV-42
-, controllore P.I.D., XV-42, 55, 57
-, regolatore ON-OFF, XV-50
-, sintonizzazione del filtro, XV-58
-, tecniche di compensazione, XV-42
-, tuning costant, XV-42
+- controllo adattativo, XV-42
+- controllore P.I.D., XV-42, 55, 57
+- regolatore ON-OFF, XV-50
+- sintonizzazione del filtro, XV-58
+- tecniche di compensazione, XV-42
+- tuning costant, XV-42
 Reti correttrici, XV-40
 Reti di compensazione, XV-40
-, a sella, XV-40, 41
-, anticipatrice, XV-40
-, ritardatrice, XV-40, 41
+- a sella, XV-40, 41
+- anticipatrice, XV-40
+- ritardatrice, XV-40, 41
 Risposta, a regime, XV-14, 15
-, alla rampa, XV-15
-, canonica, XV-15
+- alla rampa, XV-15
+- canonica, XV-15
 
 [PAG 2278]
 46
 INDICE ANALITICO PER SEZIONI
-, forzata, XV-11
+- forzata, XV-11
 Risposta, impulsiva, XV-15
-, indiciale, XV-15, 39
-, libera, XV-10
-, sovraelongazione, XV-16
-, tempo di assestamento, XV-15
+- indiciale, XV-15, 39
+- libera, XV-10
+- sovraelongazione, XV-16
+- tempo di assestamento, XV-15
 - tempo di ritardo, XV-15
 - tempo di salita, XV-15
 - temporale dei sistemi, XV-15
@@ -504,6 +447,10 @@ Sistemi BUS proprietari (My Home BTicino), XVI-27
 - comunicazione, XVI-40
 - gestione energia, XVI-34
 - sicurezza, XVI-28
+Ecco la traduzione fedele del testo in italiano, mantenendo tutti i termini tecnici, numeri, misure e riferimenti:
+
+---
+
 - X-10, XVI-19
 
 [PAG 2280]
@@ -617,17 +564,16 @@ Componenti, attivi, XVII-6
 - passivi, XVII-6
 Contatori, XVII-121
 - asincroni binari avanti, XVII-121
-- asincroni binari avanti-indietro, XVII-
-122
-, asincroni binari indietro, XVII-122
-, asincroni decimali (BCD), XVII-123
-, espansione, XVII-123, 124
-, modulo, XVII-121
-, sincroni, XVII-124
+- asincroni binari avanti-indietro, XVII-122
+- asincroni binari indietro, XVII-122
+- asincroni decimali (BCD), XVII-123
+- espansione, XVII-123, 124
+- modulo, XVII-121
+- sincroni, XVII-124
 Conversione, A/D, XVII-183
-, D/A, XVII-180
+- D/A, XVII-180
 Convertitore, A/D ad approssimazioni successive, XVII-188
-, D/A a resistori pesati, XVII-186
+- D/A a resistori pesati, XVII-186
 De Morgan, teorema, XVII-89
 Decodifica, circuiti, XVII-107
 Demultiplexer, XVII-110
@@ -993,12 +939,12 @@ Ponte, di Graetz, XVIII-24
 - trifase totalmente controllato, XVIII-33
 Porta, XVIII-5
 P.R.M. (Pulse Rate Modulation), XVIII-46
-P.W.M. (Pulse Width Modulation), XVIII-36, 45
+P.W.M. (Modulazione di Larghezza d'Impulso), XVIII-36, 45
 Push-pull, convertitore, XVIII-37, 44
 Raddrizzatori, XVIII-22
 - a una semionda, XVIII-3
 - controllati, XVIII-22
-- Normali, XVIII-22
+- normali, XVIII-22
 Recupero di energia in rete, XVIII-35, 50
 Regime termico, XVIII-20
 Regolazione in corrente alternata, XVIII-47
@@ -1012,7 +958,7 @@ Rendimento, XVIII-22, 49
 Resistenza termica, XVIII-20
 Reti snubber, XVIII-18
 Ripple, XVIII-22, 36, 38, 39, 41, 42, 43
-SCR (Silicon Controlled Rectifier), XVIII-4
+SCR (Raddrizzatore Controllato al Silicio), XVIII-4
 Semionda, negativa, XVIII-3
 - positiva, XVIII-3
 Semiconduttori, per convertitori a commutazione, XVIII-15
@@ -1119,7 +1065,7 @@ Interruttore differenziale, XIX-50, 96
 - sensibilità, XIX-98
 - sequenze cinematiche di funzionamento, XIX-100
 Invertitore, XIX-53
-Isolanti, gassosi, XIX-18
+Isolanti gassosi, XIX-18
 
 [PAG 2288]
 56
@@ -1210,7 +1156,7 @@ Simboli grafici del, condensatore, XIX-131
 , potenziometro, XIX-116
 , resistore, XIX-111
 Sostanze, diamagnetiche, XIX-16
-, paramagnetiche, XIX-16
+, paramagnetiche, XIX-16
 Stabilità, XIX-111
 
 [PAG 2289]
