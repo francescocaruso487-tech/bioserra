@@ -21,7 +21,10 @@ function labPopupClose() {
 }
 
 function labEsc(s) {
-  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  // Rev.28: escape anche di apici e virgolette — i titoli con apostrofi
+  // dentro attributi onclick="...('TITOLO')" rompevano l'HTML generato
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -746,8 +749,8 @@ function labRenderPratiche() {
     if (p.descrizione) h += '<div style="font-size:11px;color:var(--text3);line-height:1.5">' + labEsc(p.descrizione.substring(0,70)) + (p.descrizione.length>70?'\u2026':'') + '</div>';
     h += '</div>';
     h += '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0">';
-    if (isAttiva) h += '<span style="font-size:9px;background:rgba(76,175,118,0.2);color:var(--green3);border-radius:4px;padding:2px 6px;font-weight:700">\u2705 ATTIVA</span>';
-    if (isOff) h += '<span style="font-size:9px;background:rgba(255,255,255,0.08);color:var(--text3);border-radius:4px;padding:2px 6px">\u23F8\uFE0F disattivata</span>';
+    if (isAttiva) h += '<span style="font-size:8.5px;font-family:var(--font-mono);letter-spacing:1px;color:var(--green3);border:1px solid rgba(143,212,168,0.35);border-radius:99px;padding:2px 8px">ATTIVA</span>';
+    if (isOff) h += '<span style="font-size:8.5px;font-family:var(--font-mono);letter-spacing:1px;color:var(--text3);border:1px solid var(--border);border-radius:99px;padding:2px 8px">OFF</span>';
     h += '<span style="font-size:9px;color:' + catColor + ';opacity:0.8">' + labEsc(p.categoria) + '</span>';
     h += '</div></div></div>';
   });
@@ -777,8 +780,8 @@ function labPopupPratica(pid) {
   h += '<div style="font-size:19px;font-weight:700;color:var(--text);line-height:1.3">' + labEsc(p.nome) + '</div>';
   h += '</div>';
   h += (p.attiva
-    ? '<span style="font-size:10px;background:rgba(76,175,118,0.15);color:var(--green3);border-radius:8px;padding:4px 10px;font-weight:700;flex-shrink:0">\u2705 ATTIVA</span>'
-    : '<span style="font-size:10px;background:rgba(255,255,255,0.06);color:var(--text3);border-radius:8px;padding:4px 10px;font-weight:700;flex-shrink:0">\u23F8\uFE0F DISATTIVATA</span>');
+    ? '<span style="font-size:9.5px;font-family:var(--font-mono);letter-spacing:1px;color:var(--green3);border:1px solid rgba(143,212,168,0.35);border-radius:99px;padding:4px 12px;flex-shrink:0">ATTIVA</span>'
+    : '<span style="font-size:9.5px;font-family:var(--font-mono);letter-spacing:1px;color:var(--text3);border:1px solid var(--border);border-radius:99px;padding:4px 12px;flex-shrink:0">DISATTIVATA</span>');
   h += '</div>';
 
   // (4) Area feedback 👍/👎
@@ -922,8 +925,8 @@ function labPopupAllPratiche() {
     h += '<div style="display:flex;justify-content:space-between;align-items:center">';
     h += '<div><div style="font-size:13px;font-weight:700;color:var(--text)">' + labEsc(p.nome) + '</div>';
     h += '<div style="font-size:10px;color:' + catColor + ';margin-top:2px">' + labEsc(p.categoria) + '</div></div>';
-    if (isAttiva) h += '<span style="font-size:9px;background:rgba(76,175,118,0.2);color:var(--green3);border-radius:4px;padding:2px 6px;font-weight:700">\u2705 ATTIVA</span>';
-    else if (isOff) h += '<span style="font-size:9px;background:rgba(255,255,255,0.08);color:var(--text3);border-radius:4px;padding:2px 6px">\u23F8\uFE0F disattivata</span>';
+    if (isAttiva) h += '<span style="font-size:8.5px;font-family:var(--font-mono);letter-spacing:1px;color:var(--green3);border:1px solid rgba(143,212,168,0.35);border-radius:99px;padding:2px 8px">ATTIVA</span>';
+    else if (isOff) h += '<span style="font-size:8.5px;font-family:var(--font-mono);letter-spacing:1px;color:var(--text3);border:1px solid var(--border);border-radius:99px;padding:2px 8px">OFF</span>';
     h += '</div>';
     if (p.descrizione) h += '<div style="font-size:11px;color:var(--text3);margin-top:4px;line-height:1.4">' + labEsc(p.descrizione.substring(0,80)) + '\u2026</div>';
     h += '</div>';
@@ -1933,13 +1936,14 @@ function labPopupSecondBrain() {
   + '<div id="sb-search-results" style="margin-bottom:12px"></div>'
 
   + '<div class="sbx-subtab">'
-  + '<div id="sb-seg-categoria" class="on" onclick="labSbSwitchView(\'categoria\')">Categorie</div>'
-  + '<div id="sb-seg-documenti" onclick="labSbSwitchView(\'documenti\')">Documenti</div>'
+  + '<div id="sb-seg-documenti" class="on" onclick="labSbSwitchView(\'documenti\')">Documenti</div>'
+  + '<div id="sb-seg-categoria" onclick="labSbSwitchView(\'categoria\')">Categorie</div>'
   + '<div id="sb-seg-connessioni" onclick="labSbSwitchView(\'connessioni\')">Connessioni</div>'
   + '</div>'
 
-  + '<div id="sb-view-categoria">' + labSbBuildCategorieHTML() + '</div>'
-  + '<div id="sb-view-documenti" style="display:none"></div>'
+  // Rev.28: Documenti è il tab di default — tocca un documento e vedi subito il suo grafo
+  + '<div id="sb-view-documenti">' + labSbBuildDocumentiHTML() + '</div>'
+  + '<div id="sb-view-categoria" style="display:none"></div>'
   + '<div id="sb-view-connessioni" style="display:none"></div>'
   + '<div class="sbx-hint">tocca un documento per vedere il suo grafo di collegamenti</div>';
 
@@ -1959,6 +1963,7 @@ function labSbSwitchView(view) {
   var target = document.getElementById('sb-view-' + view);
   if (target && !target.innerHTML.trim()) {
     if (view === 'documenti')   target.innerHTML = labSbBuildDocumentiHTML();
+    if (view === 'categoria')   target.innerHTML = labSbBuildCategorieHTML();
     if (view === 'connessioni') target.innerHTML = labSbBuildConnessioniHTML();
   }
 }
