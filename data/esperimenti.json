@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-11T05:25:58.737445+00:00",
+  "lastUpdate": "2026-07-12T05:42:03.380217+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2489,14 +2489,50 @@
       "data_proposta": "2026-07-11",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Sinergia Radicali Femminili: Effetto del Living Soil su Semi Femminizzati per Massimizzare CBD in Coltivazione Outdoor",
+      "ipotesi": "L'uso combinato di vasi con terreno biologico (Living Soil) e semi femminizzati (Manuale A + Manuale B) aumenterà la resa in CBD/THC del 20-30% rispetto a piante coltivate con substrati convenzionali e semi regolari. Il Living Soil favorisce lo sviluppo radicale (Manuale A), mentre i semi femminizzati garantiscono piante produttive al 100% (Manuale B). La sinergia riduce lo stress idrico e nutrizionale, ottimizzando la sintesi dei cannabinoidi.",
+      "protocollo": [
+        "Preparare 20 vasi da 10L in terracotta (10L per garantire spazio radicale) con miscela Living Soil (50% compost maturo, 30% fibra di cocco, 20% perlite, inoculato con micorrize e batteri benefici). Sterilizzare i vasi con acqua bollente per eliminare patogeni.",
+        "Seminare 10 semi femminizzati CBD-dominant (varietà USA con <1% THC, es. 'ACDC') in 10 vasi (gruppo A) e 10 semi regolari della stessa genetica in 10 vasi con substrato convenzionale (gruppo B). Mantenere umidità costante (60-70%) e temperatura tra 20-25°C.",
+        "Dopo 3 settimane (fase di radicazione), misurare settimanalmente: altezza delle piante, numero di nodi, diametro del fusto, e stato delle radici (tramite osservazione visiva con lavaggio delicato del substrato). Applicare solo acqua (water-only) per evitare interferenze nutrizionali.",
+        "Alla fine del ciclo (30 giorni), raccogliere i dati: peso fresco delle infiorescenze, analisi HPLC per CBD/THC/CBG, e rapporto radici/parte aerea. Confrontare i risultati tra gruppo A (Living Soil + semi femminizzati) e gruppo B (substrato convenzionale + semi regolari)."
+      ],
+      "materiali": [
+        "20 vasi in terracotta da 10L",
+        "Semi femminizzati CBD-dominant (es. 'ACDC') e semi regolari della stessa genetica",
+        "Living Soil pre-inoculato (compost, fibra di cocco, perlite, micorrize)",
+        "Substrato convenzionale (torba + perlite)",
+        "pHmetro, termometro, bilancia di precisione (0.01g)",
+        "HPLC portatile o servizio di analisi esterno per cannabinoidi",
+        "Sistema di irrigazione a goccia per mantenere umidità costante"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Peso fresco delle infiorescenze (g/piante)",
+        "Contenuto di CBD/THC/CBG (% secco) tramite HPLC",
+        "Rapporto radici/parte aerea (pesatura dopo lavaggio)",
+        "Indice di salute radicale (scala 1-5 basata su densità e lunghezza delle radici)"
+      ],
+      "variabili_controllo": "Genetica delle piante (stessa varietà), condizioni ambientali (luce, temperatura, umidità), volume d'acqua erogato, metodo di raccolta. Escludere fertilizzanti aggiuntivi per isolare l'effetto del Living Soil e della genetica.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "L'esperimento combina due concetti chiave (Living Soil + semi femminizzati) in un protocollo controllato per misurare l'effetto sinergico sulla produzione di cannabinoidi, una connessione non esplorata nei manuali originali. La misurazione del rapporto radici/parte aerea e l'uso di HPLC per dati quantitativi lo rendono innovativo rispetto a pratiche generiche di coltivazione biologica.",
+      "id": "esp_conn_2026-07-12_001",
+      "data_proposta": "2026-07-12",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-11",
-    "nuove_proposte": 3,
-    "pdf_analizzati": 162,
-    "connessioni_usate": 87
+    "data": "2026-07-12",
+    "nuove_proposte": 1,
+    "pdf_analizzati": 178,
+    "connessioni_usate": 108
   }
 }
