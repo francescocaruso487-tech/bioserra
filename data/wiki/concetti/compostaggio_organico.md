@@ -2,8 +2,8 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-07-12
-pdf_count: 10
+aggiornato: 2026-07-13
+pdf_count: 9
 ---
 
 # Compostaggio Organico
@@ -12,36 +12,29 @@ pdf_count: 10
 # Compostaggio Organico
 
 ## Descrizione
-Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, letame, scarti di cucina) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il **compost**. Questo processo, mediato da batteri, funghi e macroinvertebrati, avviene in due fasi principali: una **fase termofila** (55–65°C) in cui i microrganismi termofili degradano rapidamente la materia organica, seguita da una **fase di maturazione** (2–6 mesi) in cui si formano humus stabili e nutrienti assimilabili dalle piante. Il compost di qualità agisce come **spugna biologica**, migliorando la struttura del suolo (aerazione, ritenzione idrica), fornendo nutrienti a lento rilascio e stimolando la biodiversità microbica essenziale per il **Living Soil**.
+Il **compostaggio organico** è un processo biologico di decomposizione controllata di materiali organici (resti vegetali, scarti di cucina, letame, ecc.) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti: il **compost**. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macrofauna (lombrichi, acari, collemboli) che, in condizioni ottimali di umidità, temperatura e aerazione, scompongono la materia organica in humus. Il compost maturo è un **substrato vivente** che migliora la struttura del suolo, aumenta la capacità di ritenzione idrica, fornisce nutrienti a lento rilascio e stimola la biodiversità microbica, fondamentale per un **Living Soil** outdoor.
 
-In serra outdoor a Caserta (41°N), il compostaggio assume un ruolo chiave per contrastare la **deplezione dei nutrienti** tipica dei terreni mediterranei, spesso carenti di materia organica e soggetti a siccità estiva. Un compost ben maturato apporta **azoto organico**, **fosforo**, **potassio** e **micronutrienti** (Fe, Cu, Zn) in forme stabili, riducendo la necessità di fertilizzanti sintetici. Inoltre, la sua struttura porosa favorisce la **permeabilità all’aria** e l’**infiltrazione dell’acqua**, cruciale per le piante in fase vegetativa, quando l’apparato radicale è in rapida espansione e richiede un substrato ben ossigenato.
+Il meccanismo chiave del compostaggio si basa sulla **fermentazione aerobica**, dove i microrganismi ossidano la materia organica, generando calore (fino a 65°C) e anidride carbonica. Questo processo termofilo elimina patogeni, semi di malerbe e insetti dannosi, rendendo il compost sicuro per l’uso agricolo. Inoltre, la presenza di **micorrize** e batteri benefici (come *Pseudomonas* e *Bacillus*) nel compost maturo favorisce la simbiosi radicale e la resistenza delle piante a stress biotici e abiotici. Per coltivazioni in **Living Soil** a Caserta (41°N), il compost è essenziale per mantenere un equilibrio nutrizionale durante le fasi di **germinazione** e **vegetazione**, dove le piante richiedono un substrato ricco di azoto, fosforo e potassio in forme assimilabili ma non tossiche.
 
 ---
 
 ## Come si applica in serra
+Per produrre compost di qualità in una **serra outdoor Living Soil** a Caserta, segui questi passaggi pratici:
 
-### **1. Selezione dei materiali**
-- **Materiali verdi** (ricchi di azoto, umidità >70%):
-  - Scarti di frutta/verdura (non agrumi)
-  - Erba fresca (non trattata con pesticidi)
-  - Letame fresco (equino, bovino, avicolo)
-  - Fondi di caffè
-- **Materiali marroni** (ricchi di carbonio, umidità <30%):
-  - Foglie secche
-  - Paglia o fieno
-  - Cartone non stampato
-  - Segatura (in quantità moderate)
-- **Rapporto C:N ideale**: 25:1 a 30:1 (es. 3 parti marroni per 1 parte verde).
+1. **Selezione dei materiali**:
+   - **Materiali verdi** (ricchi di azoto): scarti di frutta/verdura, erba fresca, letame (es. cavallo o pollo), fondi di caffè.
+   - **Materiali marroni** (ricchi di carbonio): foglie secche, paglia, cartone non stampato, rametti triturati, trucioli di legno non trattato.
+   - **Bilanciamento**: rapporto ideale **2:1** (verdi:marroni) per evitare acidità o putrefazione. Esempio: 2 kg di erba fresca + 1 kg di foglie secche.
 
-### **2. Preparazione del cumulo**
-- **Ubicazione**: In serra, preferire un’area ombreggiata e protetta dal vento (es. sotto una tettoia).
-- **Struttura**: Costruire un cumulo a forma di cono (1–1.5 m di altezza) su un terreno nudo o su un telo permeabile per evitare perdite di nutrienti.
-- **Umidità iniziale**: Il cumulo deve essere umido come una spugna strizzata (60–70% di umidità). Aggiungere acqua se necessario.
+2. **Preparazione del cumulo**:
+   - Crea un cumulo di **1-1.5 m di altezza** e **1-1.5 m di larghezza** (dimensione ottimale per trattenere calore).
+   - Posiziona uno strato di **materiali grossolani** (rametti) alla base per garantire aerazione.
+   - Inumidisci ogni strato con acqua (deve risultare umido come una spugna strizzata).
 
-### **3. Gestione termica e aerazione**
-- **Monitoraggio temperatura**: Usare un termometro da compost per verificare che la temperatura si mantenga tra **55–65°C** (ottimale per la decomposizione termofila).
-- **Rivoltamenti**: Ogni **2–3 giorni** con una forca o pala, per ossigenare il cumulo e uniformare la decomposizione. Dopo 2–3 settimane, i rivoltamenti possono essere meno frequenti (1 volta a settimana).
-- **Controllo umidità**: Se il cumulo è troppo secco, aggiungere acqua; se troppo umido, aggiungere materiali marroni.
+3. **Gestione della temperatura e umidità**:
+   - Monitora la temperatura con un **termometro da compost** (obiettivo: **55-65°C** per 3-5 giorni).
+   - Se la temperatura supera i 65°C, aggiungi materiali marroni e rivolta; se scende sotto i 50°C, aggiungi materiali verdi.
+   - Mantieni l’umidità al **50-60%** (test del pugno: se sgocciola acqua, è troppo bagnato).
 
-### **4. Maturazione e utilizzo**
-- **Durata**: 3–6 mesi (a seconda delle condizioni climatic
+4. **Rivoltatura e maturazione**:
+   - Rivolta il cumulo **ogni 2-3 giorni** con una forca o un aeratore per ossigenare e
