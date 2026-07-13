@@ -135,7 +135,7 @@ Logica programmabile, XIV-5
 Operazioni con il PLC, XIV-131
 , calcolo e assegnazione, XIV-111, 138
 , comparazione, XIV-131
-, controllo del programma, XIV-153
+, controllo del programma, XIV-153
 , gestione del tempo, XIV-106
 , logiche, XIV-136
 , matematiche e trigonometriche, XIV-135
@@ -155,7 +155,7 @@ alimentatore, XIV-26
 , moduli I/O, XIV-32
 , moduli I/O remoti, XIV-48
 , moduli per termocoppie, XIV-46
-, moduli PID, XIV-43
+, moduli PID, XIV-43
 , moduli speciali, XIV-18
 , moduli web, XIV-49
 , monotask, bitask, multitask, XIV-70
@@ -296,10 +296,6 @@ Reti di compensazione, XV-40
 Risposta, a regime, XV-14, 15
 - alla rampa, XV-15
 - canonica, XV-15
-
-[PAG 2278]
-46
-INDICE ANALITICO PER SEZIONI
 - forzata, XV-11
 Risposta, impulsiva, XV-15
 - indiciale, XV-15, 39
@@ -369,6 +365,10 @@ Spirule, XV-34
 Stabilità e criteri di stabilità, XV-22
 - criterio di Hurwitz, XV-23
 - criterio di Routh, XV-23
+Ecco la traduzione fedele del testo in italiano, mantenendo tutti i termini tecnici, numeri, misure e riferimenti:
+
+---
+
 - limite di stabilità, XV-23
 - margine di fase, XV-35
 - margine di guadagno, XV-35
@@ -447,11 +447,6 @@ Sistemi BUS proprietari (My Home BTicino), XVI-27
 - comunicazione, XVI-40
 - gestione energia, XVI-34
 - sicurezza, XVI-28
-Ecco la traduzione fedele del testo in italiano, mantenendo tutti i termini tecnici, numeri, misure e riferimenti:
-
----
-
-- X-10, XVI-19
 
 [PAG 2280]
 48
@@ -500,8 +495,7 @@ Amplificatori operazionali, XVII-73
 - circuiti lineari, XVII-76
 - circuiti non lineari, XVII-79
 - circuito derivatore, XVII-78
-- circuito integratore, XVII-78
-- comparatori, XVII-79
+- circuito integratore,
 - ideali, XVII-76
 - modello, XVII-74
 - raddrizzatori di precisione, XVII-81
@@ -510,6 +504,7 @@ Amplificatori operazionali, XVII-73
 - slew rate, XVII-76
 - trigger di Schmitt, XVII-80
 - voltage follower, XVII-77
+
 Amplificatori, reazionati, XVII-31
 Analisi in frequenza, amplificatori, XVII-24
 Analisi nel dominio del tempo, amplificatori, XVII-30
@@ -537,10 +532,6 @@ BJT, XVII-49
 - polarizzazione, XVII-52
 - principio di funzionamento, XVII-49
 - stabilizzazione, XVII-52
-
-[PAG 2281]
-SEZIONE XVII ELETTRONICA ANALOGICA E DIGITALE
-49
 - struttura, XVII-49
 - di potenza, XVII-163
 Bode, diagrammi, XVII-28
@@ -551,7 +542,7 @@ Circuiti, lineari, XVII-6
 - combinatori, XVII-102
 - risonante, XVII-20
 Classi di amplificazione, XVII-162
-CMOS circuiti digitali, XVII-71
+CMOS, circuiti digitali, XVII-71
 Codice ASCII, XVII-88
 Codici, alfanumerici, XVII-88
 - numerici, XVII-87
@@ -580,18 +571,18 @@ Demultiplexer, XVII-110
 Derivatori, circuiti con AO, XVII-78
 DIAC, XVII-175
 Diodi, a giunzione, XVII-39
-, caratteristiche, XVII-40
-, circuiti, XVII-44
-, LED, XVII-44
-, modelli, XVII-41
-, Schottky, XVII-44
-, Zener, XVII-43
+- caratteristiche, XVII-40
+- circuiti, XVII-44
+- LED, XVII-44
+- modelli, XVII-41
+- Schottky, XVII-44
+- Zener, XVII-43
 DIP, XVII-5
 Display a LED, XVII-108
 Distorsione, XVII-56
-, armonica, XVII-162
-, di cross-over, XVII-168
-, di non linearità, XVII-162
+- armonica, XVII-162
+- di cross-over, XVII-168
+- di non linearità, XVII-162
 Divisori di frequenza, XVII-125
 ECL, XVII-70
 Elementi concentrati, XVII-6
@@ -599,36 +590,36 @@ Elettroni liberi, XVII-37
 Famiglie, integrati, XVII-6
 FdT, XVII-12
 Filtri, XVII-147
-, attivi, XVII-156
-, attivi a reazione multipla, XVII-158
-, attivi del primo ordine, XVII-156
-, attivi del secondo ordine, XVII-159
-, attivi passa alto, XVII-158, 159
-, attivi passa banda, XVII-159, 160
-, attivi passa basso, XVII-156, 157, 159
-, classificazioni, XVII-147
-, RLC, XVII-151
-, specifiche di trasmissione, XVII-148
+- attivi, XVII-156
+- attivi a reazione multipla, XVII-158
+- attivi del primo ordine, XVII-156
+- attivi del secondo ordine, XVII-159
+- attivi passa alto, XVII-158, 159
+- attivi passa banda, XVII-159, 160
+- attivi passa basso, XVII-156, 157, 159
+- classificazioni, XVII-147
+- RLC, XVII-151
+- specifiche di trasmissione, XVII-148
 Flip-flop, XVII-114
-, caratteristiche di commutazione, XVII-117
-, di tipo D edge-triggered, XVII-116
-, di tipo JK edge-triggered, XVII-116
-, di tipo SR edge-triggered, XVII-115
-, di tipo T edge-triggered, XVII-116
-, edge-triggered, XVII-114
+- caratteristiche di commutazione, XVII-117
+- di tipo D edge-triggered, XVII-116
+- di tipo JK edge-triggered, XVII-116
+- di tipo SR edge-triggered, XVII-115
+- di tipo T edge-triggered, XVII-116
+- edge-triggered, XVII-114
 Forma canonica, FdT, XVII-14
 Frequenza di transizione, XVII-35
 Funzioni, booleane, XVII-90
-, di trasferimento, XVII-12
+- di trasferimento, XVII-12
 GBW, XVII-36
 Generatori, di forme d'onda rettangolari, XVII-139, 140
-, di forme d'onda, XVII-139
-, di funzioni, XVII-141
-, dipendenti, XVII-7
-, indipendenti, XVII-7
+- di forme d'onda, XVII-139
+- di funzioni, XVII-141
+- dipendenti, XVII-7
+- indipendenti, XVII-7
 Giunzioni, XVII-38
 Guadagno, amplificatori, XVII-26
-Guadagno, d'anello, XVII-17
+Guadagno d'anello, XVII-17
 Impedenza, bipoli, XVII-9
 
 [PAG 2282]
@@ -1066,33 +1057,29 @@ Interruttore differenziale, XIX-50, 96
 - sequenze cinematiche di funzionamento, XIX-100
 Invertitore, XIX-53
 Isolanti gassosi, XIX-18
-
-[PAG 2288]
-56
-INDICE ANALITICO PER SEZIONI
 - liquidi, XIX-18
 Lacuna, XIX-26
 Lampade di segnalazione, XIX-89
-, codice colori, XIX-90
+- codice colori, XIX-90
 Leghe, XIX-5
 Magnetismo residuo, XIX-17
 Magnetoresistenze, XIX-125
 Malleabilità, XIX-10
 Massa volumetrica, XIX-7
 Materiali, XIX-3
-, ceramici, XIX-4, 6
-, conduttori, XIX-18
-, isolanti, XIX-18, 24
-, magnetici, XIX-24
-, metallici, XIX-4, 6, 25
-, piezoelettrici, XIX-24, 25
-, plastici, XIX-4, 6, 20, 22
-, semiconduttori, XIX-22, 23, 25, 28
+- ceramici, XIX-4, 6
+- conduttori, XIX-18
+- isolanti, XIX-18, 24
+- magnetici, XIX-24
+- metallici, XIX-4, 6, 25
+- piezoelettrici, XIX-24, 25
+- plastici, XIX-4, 6, 20, 22
+- semiconduttori, XIX-22, 23, 25, 28
 Metalli, XIX-3, 6, 25
 Modelli a legame di valenza, XIX-27
 Modulo di, compressibilità, XIX-9
-, elasticità, XIX-9
-, Poisson, XIX-9
+- elasticità, XIX-9
+- Poisson, XIX-9
 Montante, sezione del, XIX-31
 Orologio programmatore, XIX-67
 Ossidazione, XIX-13
@@ -1103,27 +1090,27 @@ Piezoelettricità, XIX-16
 Potenziometri, XIX-115, 120
 Potere risolutore, XIX-117
 Presa e spina di corrente, XIX-54
-, ad uso industriale (CEE), XIX-60
-, apparecchi speciali, XIX-59
-, a ricettività multipla del, XIX-58
-, tipi di, XIX-57, 58
+- ad uso industriale (CEE), XIX-60
+- apparecchi speciali, XIX-59
+- a ricettività multipla del, XIX-58
+- tipi di, XIX-57, 58
 Pressoresistori, XIX-126
 Proprietà, fisico-chimiche dei materiali, XIX-6, 17
-, chimiche, XIX-12
-, elettriche, XIX-12, 16
-, fisiche, XIX-7, 8
-, magnetiche, XIX-16, 18
-, meccaniche, XIX-8, 10
-, tecnologiche, XIX-10, 11
+- chimiche, XIX-12
+- elettriche, XIX-12, 16
+- fisiche, XIX-7, 8
+- magnetiche, XIX-16, 18
+- meccaniche, XIX-8, 10
+- tecnologiche, XIX-10, 11
 Protettore termico, XIX-104
 Prove di fatica, XIX-10
 Pulsante, XIX-54, 87
-, codice colori, XIX-89
+- codice colori, XIX-89
 Relè, XIX-69, 85
-, magnetotermico, XIX-102
-, passo-passo, XIX-70
-, statico, XIX-82
-, termico, XIX-103
+- magnetotermico, XIX-102
+- passo-passo, XIX-70
+- statico, XIX-82
+- termico, XIX-103
 Regolatore di livello, XIX-90
 Resilienza, XIX-10
 Resine, XIX-20
@@ -1206,8 +1193,7 @@ Capitolato speciale d’appalto, XX-8, 44
 72, 96
 Categorie di rischio, XX-124÷126
 Certificazione, conformità impianto alla regola dell’arte, XX-44
-, reazione impianto, XX-44
-, relazione materiali, XX-44
+, relazione materiali, XX-44
 , requisiti tecnico-professionali, XX-44
 Circuito, di autozero, XX-205
 , elettro-termico, XX-142, 147
