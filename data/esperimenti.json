@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-12T05:42:03.380217+00:00",
+  "lastUpdate": "2026-07-13T05:52:18.321508+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2525,14 +2525,116 @@
       "data_proposta": "2026-07-12",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico del Living Soil e dell'acqua filtrata sulla riduzione dei residui post-raccolta in serra outdoor",
+      "ipotesi": "Coltivando piante in Living Soil (Manuale A) e utilizzando acqua filtrata per l'irrigazione e il water curing post-raccolta (Manuale B), si otterranno cime con residui di sali e impurità significativamente inferiori rispetto a piante coltivate in terreno convenzionale e trattate con acqua non filtrata. L'ipotesi si basa sul fatto che il Living Soil riduce l'accumulo di sali e metalli pesanti nel substrato (Manuale A), mentre l'acqua filtrata evita contaminazioni aggiuntive durante le fasi di raccolta e trattamento (Manuale B).",
+      "protocollo": [
+        "Preparare due lotti identici di piante della stessa varietà (es. Pianta sativa a fioritura rapida) in serra outdoor, suddivise in due gruppi: Gruppo A (Living Soil + acqua filtrata) e Gruppo B (terreno convenzionale + acqua non filtrata).",
+        "Coltivare entrambe le piante con le stesse condizioni ambientali (luce, temperatura, umidità) e pratiche agronomiche (es. concimazione organica per entrambi i gruppi, ma solo il Gruppo A riceverà micorrize e batteri benefici del Living Soil).",
+        "Al momento della raccolta, dividere ogni gruppo in due sottogruppi: uno sottoposto a water curing con acqua filtrata (Gruppo A1 e B1) e uno non trattato (Gruppo A2 e B2). Il water curing prevede immersione delle cime in acqua a temperatura ambiente per 24 ore, seguito da risciacquo finale.",
+        "Dopo l'asciugatura (7 giorni), analizzare i residui di sali, metalli pesanti e clorofilla su campioni rappresentativi di ogni sottogruppo tramite test di laboratorio (es. spettrofotometria per clorofilla, ICP-MS per metalli pesanti)."
+      ],
+      "materiali": [
+        "Terreno biologico (Living Soil) per Gruppo A, terreno convenzionale per Gruppo B",
+        "Sistema di filtrazione dell'acqua (filtro a carbone attivo o osmosi inversa) per Gruppo A e Gruppo A1/B1",
+        "Piante di Pianta sativa a fioritura rapida (stessa genetica e età)",
+        "Kit per test di laboratorio (spettrofotometro, ICP-MS o test rapidi per residui)"
+      ],
+      "durata_giorni": 45,
+      "misure": [
+        "Residui di sali (misurati in ppm tramite conducibilità elettrica o test specifici)",
+        "Contenuto di metalli pesanti (piombo, cadmio, arsenico - ppm)",
+        "Livelli di clorofilla residua (unità di assorbanza a 663 nm)",
+        "Confronto tra i gruppi per valutare l'effetto combinato del Living Soil e dell'acqua filtrata."
+      ],
+      "variabili_controllo": "Genetica delle piante, condizioni ambientali della serra, pratiche di concimazione (solo differenziazione tra Living Soil e terreno convenzionale), durata del water curing, metodo di asciugatura.",
+      "categoria": "sinergia",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Trattamento Della Pianta Con L'Acqua: Cos'È E Come Si Fa",
+      "originalita": "L'esperimento combina due approcci distinti (Living Soil e acqua filtrata) in un protocollo integrato, non presente nei manuali originali. Il Living Soil riduce la necessità di trattamenti post-raccolta, mentre l'acqua filtrata preserva la qualità delle cime già coltivate in condizioni ottimali. La sinergia tra i due metodi non è mai stata testata in modo sistematico in letteratura.",
+      "id": "esp_conn_2026-07-13_001",
+      "data_proposta": "2026-07-13",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante di pianta femminizzate con semi CBDV ad alto contenuto",
+      "ipotesi": "La concimazione organica (Manuale A) arricchisce il suolo di microrganismi simbionti che, in sinergia con semi CBDV (Manuale B), aumentano la produzione di CBDV grazie a un metabolismo radicale più efficiente. Questo perché la biodiversità microbica del Living Soil favorisce l'assorbimento di nutrienti e la sintesi di cannabinoidi secondari, come dimostrato dalla letteratura su CBDV e coltivazione organica.",
+      "protocollo": [
+        "Preparare due parcelle identiche in serra outdoor (Living Soil) con substrato composto da 60% terra di campo, 20% compost maturo, 10% perlite e 10% biochar. Inoculare entrambe con micorrize e batteri benefici (es. *Trichoderma*, *Bacillus*).",
+        "Seminare in entrambe le parcelle semi femminizzati di una varietà ad alto CBDV (es. 'CBDV Auto White Widow') in modo uniforme, rispettando la stessa densità di semina (1 pianta/m²). Mantenere condizioni ambientali identiche (temperatura, umidità, luce).",
+        "Applicare concimazione organica solo a una delle due parcelle: ogni 7 giorni, distribuire 500 ml di tè di compost (preparato con compost maturo, acqua non clorata e melassa) per pianta, mentre l'altra parcella riceve solo acqua (controllo water-only).",
+        "Dopo 30 giorni, raccogliere campioni di foglie apicali da 5 piante per parcella, essiccarle a 20°C per 48 ore e analizzare il contenuto di CBDV tramite cromatografia su strato sottile (TLC) o kit di analisi rapida (es. *CBDV Test Strips*)."
+      ],
+      "materiali": [
+        "Semi femminizzati CBDV (es. 'CBDV Auto White Widow' da seedbank selezionata)",
+        "Substrato Living Soil (terra di campo, compost, perlite, biochar)",
+        "Micorrize e batteri benefici (es. *Trichoderma*, *Bacillus* in polvere)",
+        "Tè di compost (compost maturo, acqua non clorata, melassa)",
+        "Kit di analisi CBDV (TLC o strisce reattive)"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Contenuto di CBDV (% sul peso secco) nelle foglie apicali",
+        "Confronto tra parcella trattata con tè di compost e controllo (water-only) tramite analisi quantitativa o semi-quantitativa (es. densità delle bande TLC o intensità del colore nelle strisce reattive).",
+        "Osservazione visiva dello stato delle piante (altezza, salute fogliare, vigore radicale)."
+      ],
+      "variabili_controllo": "Genotipo delle piante (stessa varietà CBDV), condizioni ambientali (temperatura, umidità, luce), substrato base, densità di semina, metodo di analisi CBDV.",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "L'esperimento combina specificamente la concimazione organica Living Soil (Manuale A) con semi CBDV (Manuale B), creando un protocollo mirato per valutare l'effetto sinergico sulla produzione di un cannabinoide secondario specifico (CBDV). Nessuno dei due manuali propone un esperimento che leghi direttamente questi due elementi in un contesto di coltivazione outdoor Living Soil.",
+      "id": "esp_conn_2026-07-13_002",
+      "data_proposta": "2026-07-13",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra Living Soil e semi femminizzati su resa in CBD e sviluppo radicale in serra outdoor",
+      "ipotesi": "L'uso combinato di vasi biologici con Living Soil (Manuale A) e semi femminizzati (Manuale B) aumenterà la resa in CBD e THC del 30-50% rispetto a controlli con semi regolari o terreno non biologico. La sinergia è attesa perché il Living Soil ottimizza l'assorbimento radicale (favorito da terreno biologico e vasi porosi), mentre i semi femminizzati garantiscono piante produttive al 100% senza sprechi di risorse. Questo approccio massimizza l'efficienza fotosintetica e la produzione di terpeni/flavonoidi, come suggerito dai concetti chiave dei due manuali.",
+      "protocollo": [
+        "Preparare 4 vasi identici (diametro 30 cm, altezza 40 cm) con Living Soil fresco (compost biologico, micorrize, vermicompost) e drenaggio in argilla espansa. Due vasi saranno seminati con semi femminizzati CBD-dominant (es. varietà 'ACDC' o 'Charlotte's Angel'), gli altri due con semi regolari della stessa genetica.",
+        "Posizionare i vasi in serra outdoor BioSerra Caserta, con esposizione solare identica e irrigazione a goccia con sola acqua (water-only). Mantenere umidità al 60-70% e temperatura tra 20-28°C.",
+        "Dopo 15 giorni dal germogliamento, misurare settimanalmente: altezza delle piante, numero di nodi, diametro del fusto e sviluppo radicale (tramite estrazione non distruttiva con telaio di metallo). A 30 giorni, raccogliere i dati finali e prelevare campioni di foglie per analisi HPLC del contenuto di CBD, THC e terpeni.",
+        "Confrontare i risultati tra i due gruppi (femminizzati vs regolari) e tra vasi con Living Soil vs controllo (terreno standard). Calcolare la resa per pianta e la concentrazione di principi attivi."
+      ],
+      "materiali": [
+        "4 vasi in terracotta/argilla (30x40 cm)",
+        "Living Soil (compost biologico, micorrize, vermicompost)",
+        "Semi femminizzati CBD-dominant (es. ACDC) e semi regolari della stessa genetica",
+        "Sistema di irrigazione a goccia (water-only)",
+        "Kit per analisi HPLC portatile (o servizio di laboratorio esterno)",
+        "Strumenti di misura: metro a nastro, calibro, pHmetro, termometro/igrometro"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Resa in CBD/THC per pianta (mg/pianta) tramite HPLC",
+        "Sviluppo radicale (lunghezza radici principali, biomassa radicale)",
+        "Altezza pianta, numero di nodi, diametro fusto",
+        "Concentrazione di terpeni/flavonoidi (analisi qualitativa)",
+        "Efficienza d'uso dell'acqua (litri/kg di biomassa prodotta)"
+      ],
+      "variabili_controllo": "Genetica delle piante (stessa varietà), esposizione solare, volume di terreno, quantità di acqua, temperatura, umidità, metodo di irrigazione (water-only), periodo di coltivazione (30 giorni)",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalita": "Questo esperimento non è presente nei manuali originali perché combina in modo mirato due concetti chiave (Living Soil + semi femminizzati) per testare una sinergia specifica in serra outdoor, con focus sulla resa in principi attivi e sviluppo radicale. Nessuno dei due manuali suggerisce un protocollo sperimentale che integri entrambi gli elementi per ottimizzare la coltivazione in condizioni bio.",
+      "id": "esp_conn_2026-07-13_003",
+      "data_proposta": "2026-07-13",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-12",
-    "nuove_proposte": 1,
-    "pdf_analizzati": 178,
-    "connessioni_usate": 108
+    "data": "2026-07-13",
+    "nuove_proposte": 3,
+    "pdf_analizzati": 194,
+    "connessioni_usate": 142
   }
 }
