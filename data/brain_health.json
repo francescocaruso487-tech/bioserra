@@ -1,12 +1,11 @@
 {
-  "lastUpdate": "2026-07-12T05:37:38.572655+00:00",
+  "lastUpdate": "2026-07-13T05:48:21.089370+00:00",
   "analisi": {
-    "totale_voci": 340,
-    "pipeline_v25_fulltext": 75,
-    "non_ancora_riprocessate": 265,
-    "stub_count": 30,
+    "totale_voci": 341,
+    "pipeline_v25_fulltext": 78,
+    "non_ancora_riprocessate": 263,
+    "stub_count": 21,
     "stub_ids": [
-      "pdf_88",
       "fuso_germinazione",
       "fuso_plantula",
       "fuso_vegetativa",
@@ -19,32 +18,23 @@
       "fuso_training",
       "fuso_autofiorenti",
       "fuso_outdoor",
-      "pdf_309",
       "pdf_12",
       "pdf_13",
       "pdf_14",
       "pdf_85",
-      "pdf_16",
-      "pdf_17",
       "pdf_18",
-      "pdf_20",
       "pdf_21",
       "pdf_22",
-      "pdf_24",
-      "pdf_25",
-      "pdf_26",
       "pdf_305",
-      "pdf_8",
       "pdf_10"
     ],
     "finestre_analizzate_stats": {
       "min": 1,
       "max": 20,
-      "media": 16.8
+      "media": 17.2
     },
     "documenti_sottocoperti": [],
     "categoria_breakdown": {
-      "scienza": 3,
       "web_coltivazione": 250,
       "fusa_germinazione": 1,
       "fusa_plantula": 1,
@@ -58,20 +48,16 @@
       "fusa_training": 1,
       "fusa_autofiorenti": 1,
       "fusa_outdoor": 1,
-      "esoterismo": 37,
-      "elettrocultura": 11,
-      "fisica_energie": 7,
-      "altro": 8,
+      "esoterismo": 38,
+      "elettrocultura": 9,
+      "fisica_energie": 9,
+      "scienza": 3,
       "agricoltura": 1,
+      "altro": 8,
       "living_soil": 1
     },
     "categoria_senza_valore": 10,
     "per_categoria_stato": {
-      "scienza": {
-        "totale": 3,
-        "v25_fulltext": 2,
-        "stub": 2
-      },
       "web_coltivazione": {
         "totale": 250,
         "v25_fulltext": 0,
@@ -138,28 +124,33 @@
         "stub": 1
       },
       "esoterismo": {
-        "totale": 37,
-        "v25_fulltext": 35,
-        "stub": 8
+        "totale": 38,
+        "v25_fulltext": 37,
+        "stub": 3
       },
       "elettrocultura": {
-        "totale": 11,
-        "v25_fulltext": 11,
-        "stub": 5
+        "totale": 9,
+        "v25_fulltext": 9,
+        "stub": 3
       },
       "fisica_energie": {
-        "totale": 7,
-        "v25_fulltext": 7,
+        "totale": 9,
+        "v25_fulltext": 9,
         "stub": 2
       },
-      "altro": {
-        "totale": 8,
-        "v25_fulltext": 8,
+      "scienza": {
+        "totale": 3,
+        "v25_fulltext": 3,
         "stub": 1
       },
       "agricoltura": {
         "totale": 1,
         "v25_fulltext": 1,
+        "stub": 0
+      },
+      "altro": {
+        "totale": 8,
+        "v25_fulltext": 8,
         "stub": 0
       },
       "living_soil": {
@@ -173,43 +164,43 @@
         "stub": 0
       }
     },
-    "lingua_popolata": 77,
+    "lingua_popolata": 79,
     "lingua_breakdown": {
-      "it": 77
+      "it": 79
     },
-    "chunk_progresso_doc_con_dato": 14,
-    "chunk_progresso_totale_tradotti": 29,
-    "chunk_progresso_totale_chunk": 194,
+    "chunk_progresso_doc_con_dato": 15,
+    "chunk_progresso_totale_tradotti": 39,
+    "chunk_progresso_totale_chunk": 310,
     "chunk_progresso_anomalie": []
   },
   "traduzione": {
-    "lingua_popolata": 77,
+    "lingua_popolata": 79,
     "lingua_breakdown": {
-      "it": 77
+      "it": 79
     },
-    "chunk_progresso_doc_con_dato": 14,
-    "chunk_progresso_totale_tradotti": 29,
-    "chunk_progresso_totale_chunk": 194
+    "chunk_progresso_doc_con_dato": 15,
+    "chunk_progresso_totale_tradotti": 39,
+    "chunk_progresso_totale_chunk": 310
   },
   "connessioni": {
-    "nodi_totali": 339,
-    "edges_totali": 57433,
+    "nodi_totali": 359,
+    "edges_totali": 64445,
     "nodi_isolati": 0,
     "nodi_isolati_ids": [],
     "peso_stats": {
       "min": 0.4,
       "max": 0.9957,
-      "media": 0.854
+      "media": 0.849
     },
     "tipo_conn_breakdown": {
-      "principio_condiviso": 22,
-      "sinergia": 54,
-      "potenziamento": 13,
-      "contraddizione": 54,
-      "(nessuno)": 57290
+      "principio_condiviso": 27,
+      "sinergia": 71,
+      "potenziamento": 15,
+      "contraddizione": 71,
+      "(nessuno)": 64261
     },
     "edges_dangling": [],
-    "copertura_coppie_pct_stimata": 100.2
+    "copertura_coppie_pct_stimata": 100.3
   },
   "coerenza": {
     "id_duplicati": [],
