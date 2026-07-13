@@ -2,7 +2,7 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-07-12
+aggiornato: 2026-07-13
 pdf_count: 10
 ---
 
@@ -12,37 +12,41 @@ pdf_count: 10
 # Tè di Compost
 
 ## Descrizione
-Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo. Questo processo, se eseguito correttamente, trasforma il compost in un "elisir" ricco di batteri aerobi, funghi benefici, protozoi e nutrienti solubili, pronti per essere assorbiti sia per via radicale che fogliare. Il meccanismo d'azione si basa sulla **biostimolazione del suolo vivente**: i microrganismi del tè colonizzano la rizosfera e le foglie, migliorando la disponibilità di nutrienti, la struttura del suolo e la resistenza delle piante agli stress biotici e abiotici. Inoltre, la presenza di **sostanze umiche e acidi organici** (come gli acidi fulvici) favorisce la chelazione dei minerali, rendendoli più accessibili alle radici.
+Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti in un compost maturo. Questo processo trasforma i nutrienti insolubili in forme direttamente assimilabili dalle piante, mentre i batteri, funghi e protozoi benefici colonizzano rizosfera e foglie, migliorando la salute del suolo e la resistenza delle piante. A differenza di un semplice brodo di compost, il tè aerobico evita condizioni anaerobiche che favorirebbero patogeni, garantendo invece un ambiente ricco di biodiversità microbica.
 
-In un contesto di **Living Soil outdoor** a Caserta (41°N), dove il clima mediterraneo può stressare le piante con caldo e siccità, il tè di compost agisce come un **booster microbico** che:
-- **Accelera la decomposizione** della materia organica nel suolo, liberando nutrienti in modo graduale.
-- **Compete con patogeni** (come *Fusarium* o *Pythium*) grazie alla colonizzazione di microrganismi benefici.
-- **Migliora la struttura del suolo**, aumentando la capacità di ritenzione idrica e l’aerazione.
-- **Stimola la produzione di ormoni vegetali** (auxine, citochinine) tramite l’azione dei batteri, promuovendo una crescita più vigorosa e una fioritura più abbondante.
+Il meccanismo d'azione si basa sulla **biostimolazione**: i microrganismi del tè competono con agenti patogeni, producono ormoni di crescita (auxine, citochinine) e migliorano la struttura del suolo tramite la formazione di aggregati. Inoltre, i metaboliti secondari (come gli acidi umici) aumentano la capacità di scambio cationico (CEC) e la disponibilità di nutrienti. Studi dimostrano che applicazioni regolari possono ridurre fino al 50% l’uso di fertilizzanti chimici, grazie alla maggiore efficienza nutrizionale del suolo vivente [web_zamn_328-come-conciare-cannabis].
 
 ---
 
 ## Come si applica in serra
-Per una serra outdoor a **Caserta** (clima caldo e umido in estate, inverni miti), il tè di compost va preparato e applicato seguendo questi passaggi, ottimizzati per massimizzare l’efficacia in **Living Soil**:
 
-### **Preparazione (24 ore prima dell’applicazione)**
-1. **Materiali necessari**:
-   - Compost maturo (preferibilmente vermicompost o compost da foglie, con rapporto C/N < 20).
-   - Acqua non clorata (lasciare decantare l’acqua del rubinetto per 24h o usare acqua piovana).
-   - Aeratore per acquario (con pietra porosa per ossigenazione costante).
-   - Melassa biologica (1–2 cucchiai per 10L di tè, come fonte di carbonio per i batteri).
-   - Contenitore in plastica o vetro (evitare metalli).
-   - Filtro a maglia fine (per separare i solidi dopo l’infusione).
+### **Preparazione (per 10L di tè)**
+1. **Materiali**:
+   - Compost maturo (1-2 kg, preferibilmente ricco di micorrize e batteri benefici).
+   - Acqua non clorata (meglio se piovana o filtrata).
+   - Aeratore per acquario (con pietra porosa).
+   - Melassa biologica (10-20g, come fonte di carbonio per i batteri).
+   - Opzionale: estratti di alghe o humus di lombrico (per potenziare la carica microbica).
 
 2. **Procedura**:
-   - Riempire il contenitore con **10L di acqua** e avviare l’aeratore.
-   - Aggiungere **1–2kg di compost** (in un sacchetto di tela o direttamente nel liquido, se molto fine).
-   - Introdurre la **melassa** e mescolare delicatamente.
-   - Mantenere l’aerazione **continuamente per 24h** a temperatura ambiente (evitare >30°C).
-   - **Non coprire** il contenitore per permettere lo scambio gassoso.
+   - Riempire un contenitore con **10L di acqua** e avviare l’aeratore.
+   - Aggiungere il compost in un sacchetto di tela o una retina (per evitare sedimenti).
+   - Immergere il compost e aggiungere la melassa, mescolando delicatamente.
+   - Mantenere l’aerazione **24 ore** a temperatura ambiente (18-25°C), evitando luce diretta.
+   - Filtrare il tè con una retina fine e applicare **entro 4 ore** dalla preparazione.
 
-### **Applicazione (entro 4 ore dalla preparazione)**
-- **Diluizione**:
-  - Per applicazione **radicale**: diluire il tè al **50%** (1:1 con acqua).
-  - Per applicazione **fogliare**: diluire al **20%** (1:4 con acqua) e aggiungere un **adesivante naturale** (es. 1g di sapone di potassio per 10L).
-- **Momento ideale
+### **Applicazione**
+- **Radicale**: Irrigare il suolo alla base delle piante (1-2L/m²), evitando ristagni.
+- **Fogliare**: Spruzzare sulle foglie al mattino presto o al tramonto (con nebulizzatore a bassa pressione), diluendo eventualmente con acqua (1:1).
+- **Frequenza**:
+  - **Vegetazione**: Ogni 10-15 giorni.
+  - **Fioritura**: Ogni 20 giorni (ridurre la melassa per evitare eccesso di zuccheri).
+
+> **Nota climatica (Caserta)**: In estate, applicare nelle ore più fresche per evitare stress termico. In caso di pioggia, posticipare l’applicazione.
+
+---
+
+## Sinergie con altri elementi
+
+- **Lakhovsky (Onde di forma)**: Il tè di compost può essere applicato in combinazione con dispositivi a onde scalari (es. *Scalar Wave Generator*) per potenziare la risposta immunitaria delle piante, grazie alla maggiore attività microbica che stimola la produzione di difese naturali [web_zamn_379-coltivare-in-giardini-cortili].
+- **Fe-Cu (Ferro e Rame)**: Aggiungere solfato di ferro (0.5g/10L) e rame chelato (0.1g/10L)
