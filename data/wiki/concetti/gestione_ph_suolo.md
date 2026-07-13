@@ -2,7 +2,7 @@
 id: gestione_ph_suolo
 label: Gestione pH Suolo
 categoria: suolo
-aggiornato: 2026-07-12
+aggiornato: 2026-07-13
 pdf_count: 10
 ---
 
@@ -12,26 +12,21 @@ pdf_count: 10
 # Gestione pH Suolo
 
 ## Descrizione
-Il **pH del suolo** rappresenta la misura dell'acidità o basicità del substrato, determinando la biodisponibilità dei nutrienti essenziali per le piante. In un sistema **Living Soil** outdoor a Caserta (41°N), il range ottimale per la maggior parte delle colture si attesta tra **6.0 e 7.0**, poiché in questo intervallo la solubilità di macro e micronutrienti (azoto, fosforo, potassio, calcio, magnesio, ferro, manganese) è massima. Un pH troppo basso (<5.5) aumenta la solubilità di metalli pesanti (alluminio, manganese) che possono risultare tossici, mentre un pH troppo alto (>7.5) riduce l'assorbimento di fosforo, ferro e zinco, causando carenze anche in presenza di suoli ricchi. La gestione del pH non è statica: variazioni stagionali, apporti di materia organica, attività microbica e fenomeni meteorologici (piogge acide, evaporazione) richiedono monitoraggi costanti.
+Il pH del suolo rappresenta la concentrazione di ioni idrogeno (H⁺) e determina l’acidità o alcalinità del substrato, influenzando direttamente la biodisponibilità dei nutrienti essenziali per le piante. In un sistema **Living Soil** outdoor come quello di Caserta (41°N), un pH compreso tra **6.0 e 7.0** è considerato ottimale perché bilancia l’assorbimento di macro e micronutrienti: a valori inferiori (acido), elementi come fosforo (P), calcio (Ca) e magnesio (Mg) diventano meno disponibili, mentre a valori superiori (alcalino), ferro (Fe), manganese (Mn) e zinco (Zn) precipitano in forme non assimilabili. La gestione del pH non è statica ma dinamica, poiché fattori come l’irrigazione, la decomposizione della materia organica e l’attività microbica (es. funghi micorrizici) possono alterarlo rapidamente. Un suolo vivo, ricco di microrganismi e sostanza organica, tende a **tamponare** naturalmente le fluttuazioni di pH, ma in serra — dove i cicli sono accelerati — è necessario un monitoraggio costante per evitare squilibri nutrizionali.
 
-Il meccanismo di regolazione del pH si basa su **equilibri chimici e biologici**: i microrganismi del suolo (batteri, funghi micorrizici) e le radici delle piante rilasciano acidi organici (es. acido citrico, malico) che acidificano localmente il substrato, mentre la decomposizione di materiali calcarei (conchiglie, cenere) o l'apporto di zolfo elementare ne aumentano l'acidità. In serra, dove i cicli sono accelerati e gli apporti di nutrienti sono intensivi, la gestione del pH diventa cruciale per prevenire squilibri nutrizionali e stress fisiologici nelle piante.
+Il meccanismo d’azione del pH si basa sulla **legge di Liebig**, secondo cui la crescita delle piante è limitata dal nutriente meno disponibile, spesso determinato dal pH. Ad esempio, in un suolo con pH 5.5, il fosforo può essere bloccato dai composti di alluminio (Al³⁺), mentre a pH 8.0, il ferro diventa insolubile. Inoltre, la **struttura del suolo** (aggregazione, porosità) è strettamente legata al pH: suoli troppo acidi favoriscono la lisciviazione di cationi (Ca²⁺, K⁺), mentre quelli alcalini possono indurirsi, riducendo l’ossigenazione delle radici. In un approccio **elettroculturale**, il pH interagisce con i campi elettromagnetici generati da spirali di rame o antenne di terra, potenziando la mobilità degli ioni e la loro disponibilità alle piante. La **vibrazione naturale del suolo** (come descritto nei PDF [3], [5], [307]) può essere armonizzata tramite queste tecniche, accelerando i processi biochimici che regolano l’acidità.
 
 ---
 
 ## Come si applica in serra
-Per una serra **Living Soil** outdoor a Caserta, la gestione del pH segue un protocollo strutturato, adattato alle condizioni climatiche mediterranee (estati calde e secche, inverni miti e umidi):
 
 1. **Monitoraggio settimanale**:
-   - Utilizzare un **pH-metro digitale** (precisione ±0.1) o kit a reagenti (es. soluzione di bromotimolo) per misurare il pH a **10-15 cm di profondità**, in almeno 3 punti della serra (centro, bordi, vicino alle piante più sensibili).
-   - Registrare i dati in un **quaderno di coltivazione** per identificare tendenze (es. acidificazione dopo piogge intense).
+   - Utilizzare un **pH-metro digitale** (es. Hanna Instruments) o strisce reattive per misurare il pH del suolo a **10–15 cm di profondità**, prelevando campioni in 3 punti diversi della serra (evitando zone vicino alle radici o ai bordi).
+   - Registrare i valori in un **quaderno di coltivazione** per identificare tendenze (es. acidificazione dopo piogge o alcalinizzazione dopo irrigazione con acqua dura).
 
-2. **Correzione per pH <5.8**:
-   - **Calce agricola** (carbonato di calcio, CaCO₃): applicare **100-200 g/m²** in modo uniforme, interrandola leggermente con una forca o un motocoltivatore. Evitare eccessi, poiché possono causare alcalinizzazione rapida.
-   - **Cenere di legno** (pH ~10-12): usare con cautela (max **50 g/m²**), poiché apporta anche potassio e può alterare il rapporto Ca/Mg.
+2. **Correzione per pH < 5.8 (acido)**:
+   - **Calce agricola** (carbonato di calcio, CaCO₃): distribuire **1–2 kg per 10 m²** in modo uniforme, interrandola leggermente con una zappetta. Evitare eccessi, poiché possono innalzare troppo il pH.
+   - **Cenere di legno** (opzione rapida): spargere **0.5 kg per 10 m²**, ma usarla con cautela (può contenere metalli pesanti se bruciato legno trattato).
+   - **Dolomite** (carbonato di calcio e magnesio): ideale per suoli carenti di Mg, dosaggio **1.5 kg per 10 m²**.
 
-3. **Correzione per pH >7.2**:
-   - **Zolfo elementare** (S°): applicare **20-50 g/m²** in polvere fine, distribuendolo uniformemente e irrigando abbondantemente per favorire l'ossidazione batterica (S° → SO₄²⁻, che acidifica).
-   - **Torba acida** o **compost di foglie di quercia**: incorporare **1-2 kg/m²** nel substrato, soprattutto in fase di preparazione del letto di coltivazione.
-
-4. **Integrazione con elettrocultura**:
-   - Posizionare una **spirale di rame** (diametro
+3. **Cor
