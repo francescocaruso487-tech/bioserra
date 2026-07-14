@@ -306,18 +306,19 @@ async function cfgRenderPipelineHealth() {
       'Accept': 'application/vnd.github+json',
       'X-GitHub-Api-Version': '2022-11-28'
     };
-    const r = await fetch('https://api.github.com/repos/francescocaruso487-tech/bioserra/actions/runs?per_page=40', { headers });
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    const data = await r.json();
-    const runs = data.workflow_runs || [];
-    const ultimi = {};
-    runs.forEach(run => {
-      const nome = run.name || run.path || '?';
-      if (!ultimi[nome] || new Date(run.created_at) > new Date(ultimi[nome].created_at)) {
-        ultimi[nome] = run;
-      }
-    });
-    const lista = Object.values(ultimi).sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+    const rw = await fetch('https://api.github.com/repos/francescocaruso487-tech/bioserra/actions/workflows?per_page=100', { headers });
+    if (!rw.ok) throw new Error('HTTP ' + rw.status);
+    const dw = await rw.json();
+    const wfs = (dw.workflows || []).filter(w => w.state === 'active' && !w.path.startsWith('dynamic/'));
+    const risultati = await Promise.all(wfs.map(async w => {
+      try {
+        const rr = await fetch('https://api.github.com/repos/francescocaruso487-tech/bioserra/actions/workflows/' + w.id + '/runs?per_page=1', { headers });
+        if (!rr.ok) return null;
+        const dd = await rr.json();
+        return (dd.workflow_runs && dd.workflow_runs[0]) || null;
+      } catch (e) { return null; }
+    }));
+    const lista = risultati.filter(Boolean).sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
     if (!lista.length) {
       box.innerHTML = '<div style="font-size:12px;color:var(--text3);padding:8px 0;">Nessun run trovato.</div>';
       return;
