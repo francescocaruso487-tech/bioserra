@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-13T05:52:18.321508+00:00",
+  "lastUpdate": "2026-07-14T05:13:48.656741+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2627,14 +2627,47 @@
       "data_proposta": "2026-07-13",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante CBDV+ coltivate da semi femminizzati autofiorenti in serra outdoor",
+      "ipotesi": "La concimazione organica (Manuale A) arricchisce il suolo di microrganismi simbionti che, in sinergia con semi di piante CBDV+ (Manuale B), aumentano la produzione di CBDV e altri cannabinoidi secondari (CBG, CBD) grazie a un metabolismo radicale più efficiente. L'ipotesi si basa sulla sinergia tra la biodiversità microbica del Living Soil e le varietà selezionate per l'alto contenuto di CBDV, che potrebbero esprimere meglio il loro potenziale in condizioni di suolo vivo.",
+      "protocollo": [
+        "Preparare due lotti identici di terreno Living Soil in serra outdoor (10 mq ciascuno), con substrato composto da 60% terra di campo, 20% compost maturo, 10% perlite e 10% biochar. Sterilizzare entrambi i lotti con vapore per eliminare eventuali patogeni preesistenti.",
+        "Pianta 20 semi femminizzati autofiorenti CBDV+ (varietà 'CBDV Auto' da seedbank certificata) in ogni lotto, disposti in file alternate. Mantenere distanza di 50 cm tra le piante e irrigare con sola acqua osmotizzata (EC < 0.1) per i primi 7 giorni.",
+        "Applicare concimazione organica solo al lotto sperimentale: ogni 7 giorni, distribuire 2 L di tè di compost (preparato con 1 kg di compost + 10 L di acqua osmotizzata, aerato per 24h) arricchito con 50 g di micorrize (Glomus spp.) e 20 g di batteri del genere *Pseudomonas* promotori della crescita. Il lotto di controllo riceve solo acqua osmotizzata.",
+        "Monitorare quotidianamente umidità (50-60%), temperatura (20-28°C) e pH del suolo (6.0-7.0). A 30 giorni dal trapianto, raccogliere le infiorescenze apicali di 10 piante per lotto (5 piante per fila), essiccarle a 20°C per 7 giorni e sottoporle ad analisi HPLC per quantificare CBDV, CBG e CBD."
+      ],
+      "materiali": [
+        "Semi femminizzati autofiorenti CBDV+ (varietà 'CBDV Auto')",
+        "Terreno Living Soil (terra di campo, compost, perlite, biochar)",
+        "Tè di compost + micorrize + batteri PGPR",
+        "Sistema di irrigazione a goccia con acqua osmotizzata",
+        "Analizzatore HPLC portatile o servizio di laboratorio per cannabinoidi"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Quantità di CBDV, CBG e CBD per pianta (mg/g di infiorescenza secca) tramite HPLC",
+        "Conteggio delle colonie microbiche nel suolo (metodo delle piastre) prima e dopo l'esperimento",
+        "Peso fresco e secco delle piante (g) per valutare la biomassa"
+      ],
+      "variabili_controllo": "Stesso substrato base, stessa varietà di semi, stesso regime idrico, stessa esposizione solare, stessa temperatura e umidità. Il solo fattore variabile è la concimazione organica (tè di compost + microrganismi vs. sola acqua).",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "L'esperimento combina specificamente la concimazione organica Living Soil (Manuale A) con semi CBDV+ (Manuale B), un approccio non documentato nei due manuali singolarmente. Mentre il Manuale A si concentra su CBD/CBG e il Manuale B su semi CBD, questa sinergia mira a massimizzare la produzione di CBDV, un cannabinoide secondario spesso trascurato ma di crescente interesse commerciale.",
+      "id": "esp_conn_2026-07-14_001",
+      "data_proposta": "2026-07-14",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-13",
-    "nuove_proposte": 3,
-    "pdf_analizzati": 194,
-    "connessioni_usate": 142
+    "data": "2026-07-14",
+    "nuove_proposte": 1,
+    "pdf_analizzati": 210,
+    "connessioni_usate": 168
   }
 }
