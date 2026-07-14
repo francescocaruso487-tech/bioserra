@@ -2,7 +2,7 @@
 id: fertilizzazione_organica
 label: Fertilizzazione Organica
 categoria: nutrizione
-aggiornato: 2026-07-13
+aggiornato: 2026-07-14
 pdf_count: 3
 ---
 
@@ -12,26 +12,22 @@ pdf_count: 3
 # Fertilizzazione Organica
 
 ## Descrizione
-La **fertilizzazione organica** rappresenta un approccio olistico alla nutrizione delle piante, basato sull’apporto di ammendanti naturali derivati da processi biologici. A differenza dei fertilizzanti sintetici, questi materiali (come farine di sangue, osso o pesce) si decompongono lentamente nel suolo, rilasciando nutrienti in modo graduale e favorendo la proliferazione di microrganismi benefici. Il meccanismo d’azione si fonda sulla **simbiosi tra piante e microbiota**: i batteri e i funghi del *Living Soil* mineralizzano la materia organica, convertendola in forme assimilabili dalle radici (es. azoto in nitrati, fosforo in fosfati). Questo processo non solo nutre la pianta, ma **rigenera la struttura del suolo**, migliorando la ritenzione idrica, la porosità e la resilienza agli stress ambientali.
+La **fertilizzazione organica** rappresenta l'apporto di nutrienti alle piante attraverso ammendanti naturali di origine vegetale, animale o microbica, in contrapposizione ai fertilizzanti sintetici. Questo approccio si basa sulla decomposizione controllata di materiali organici (come farine di sangue, osso, pesce, compost, letame maturo o alghe) da parte della biocenosi del suolo, che trasforma i nutrienti in forme assimilabili dalle radici. Il meccanismo d'azione si fonda sulla **simbiosi tra piante e microrganismi**: batteri, funghi micorrizici e attinomiceti mineralizzano la materia organica, rilasciando azoto (N), fosforo (P), potassio (K) e micronutrienti in un processo graduale e sostenibile. A differenza dei fertilizzanti chimici, che possono causare accumuli tossici o squilibri nel suolo, la fertilizzazione organica promuove la **struttura del terreno**, la **capacità di scambio cationico** e la **resilienza ecologica**, elementi chiave del *Living Soil*.
 
-In serra outdoor a Caserta (41°N), dove le temperature estive possono stressare le colture, la fertilizzazione organica agisce come un **regolatore termico ed energetico**. I composti umici derivanti dalla decomposizione delle farine organiche assorbono calore diurno e lo rilasciano lentamente di notte, mitigando sbalzi termici. Inoltre, l’azoto organico (es. dalla farina di sangue) promuove una crescita vegetativa robusta, mentre il fosforo (da farina d’osso) sostiene lo sviluppo radicale e la fioritura. La chiave del successo risiede nella **frequenza di applicazione**: dosi ridotte ma regolari (ogni 2 settimane) evitano squilibri nutrizionali e sovraccarichi microbici, mantenendo un suolo in equilibrio dinamico.
+In serra outdoor a Caserta (41°N), dove il clima mediterraneo favorisce una decomposizione rapida ma con rischi di lisciviazione, la fertilizzazione organica assume un ruolo cruciale per mantenere la fertilità del suolo nel lungo periodo. L'uso di farine organiche (es. sangue secco 12-0-0, osso 3-15-0, pesce 5-1-1) consente di dosare nutrienti in modo preciso, evitando picchi di salinità e favorendo una crescita equilibrata. Inoltre, questi ammendanti stimolano la **diversità microbica**, essenziale per la soppressione di patogeni e la disponibilità di nutrienti in forme organiche complesse. La scelta di prodotti a lenta cessione (es. humus di lombrico, cornunghia) è particolarmente indicata per le fasi di fioritura, quando le piante richiedono un apporto costante di fosforo e potassio senza stress idrici.
 
 ---
 
 ## Come si applica in serra
 
-### **Preparazione del suolo**
-1. **Analisi preventiva**: Effettua un test del suolo (pH, NPK, materia organica) per identificare carenze. A Caserta, i terreni tendono a essere alcalini (pH > 7) e poveri di azoto: priorizza ammendanti acidificanti come **torba di sfagno** o **compost di alghe**.
-2. **Incorporazione**: Distribuisci gli ammendanti organici (es. 100–150 g/m² di farina di sangue + 50 g/m² di farina d’osso) sulla superficie del suolo e **incorporali con una forca a mano** fino a 10–15 cm di profondità. Evita di mescolare troppo per non disturbare la struttura del suolo.
+### **Preparazione del suolo (pre-semina)**
+1. **Analisi del terreno**: Effettua un test del suolo (pH, conducibilità, rapporto C/N) per identificare carenze o squilibri. A Caserta, i terreni spesso presentano pH alcalino (7.5-8.5) e carenza di azoto organico.
+2. **Ammendamento di base**:
+   - Distribuisci **2-3 kg/m² di compost maturo** (rapporto C/N 20:1) o **letame di cavallo/ovino ben decomposto** (evita suini per rischio parassiti).
+   - Aggiungi **100-150 g/m² di farina di osso** (per fosforo) e **50 g/m² di farina di sangue** (per azoto), mescolando al primo strato di terreno (15-20 cm).
+   - Opzionale: **50 g/m² di solfato di potassio organico** (es. vinacce) per terreni sabbiosi.
 
-### **Fasi di applicazione**
-- **Vegetazione (marzo–maggio)**:
-  - Usa **farina di sangue** (10–15% N) ogni 15 giorni per stimolare la crescita fogliare. Dose: 50–80 g/m².
-  - Aggiungi **guano di pipistrello** (ricco in fosforo e potassio) per rafforzare le radici.
-  - **Monitoraggio**: Le foglie devono essere di un verde intenso; se ingialliscono, riduci la dose di azoto.
-- **Fioritura (giugno–settembre)**:
-  - Passa a **farina d’osso** (10–15% P₂O₅) e **farina di pesce** (5–7% N, 2–3% P) per sostenere la produzione di fiori/frutti. Dose: 30–50 g/m² ogni 20 giorni.
-  - Integra con **compost di funghi micorrizici** (es. *Trichoderma*) per migliorare l’assorbimento dei nutrienti.
-
-### **Tecniche avanzate per serra Living Soil**
-- **Pacciamatura**: Copri il suolo con **
+### **Fertilizzazione di mantenimento (ciclo colturale)**
+- **Fase di vegetazione (germinazione → pre-fioritura)**:
+  - Applica **farina di pesce (5-1-1)** o **cornunghia (12-0-0)** a **30-50 g/m² ogni 10-14 giorni**, diluita in acqua o distribuita a secco e interrata superficialmente.
+  - Monitora il **colore delle foglie**: foglie gialle (clorosi) = carenza di azoto; foglie viola/rosse = carenza
