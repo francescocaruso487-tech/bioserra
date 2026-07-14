@@ -327,6 +327,8 @@ async function cfgRenderPipelineHealth() {
       if (run.status === 'completed') {
         if (run.conclusion === 'success') { icona = '✅'; colore = 'var(--green3)'; }
         else if (run.conclusion === 'failure') { icona = '❌'; colore = 'var(--red)'; }
+        else if (run.conclusion === 'skipped') { icona = '⏭️'; colore = 'var(--text3)'; }
+        else if (run.conclusion === 'cancelled') { icona = '⏹️'; colore = 'var(--text3)'; }
         else { icona = '⚠️'; colore = 'var(--orange)'; }
       }
       const data_loc = new Date(run.created_at).toLocaleString('it-IT', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' });
