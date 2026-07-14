@@ -1,68 +1,56 @@
 ---
 tipo: overview
-aggiornato: 2026-07-13
+aggiornato: 2026-07-14
 ---
 
 # BioSerra — Knowledge Base Overview
 
 ```markdown
-# **BioSerra Wiki**
-*Living Soil Outdoor, Biodinamica & Elettrocultura – Caserta (41°N)*
+# **BioSerra | Living Soil Outdoor a Caserta (41°N)**
+*Serra biodinamica, elettrocultura e suolo vivente per coltivazioni resilienti e produttive*
 
 ---
 
 ## **🌱 Filosofia BioSerra**
-BioSerra è un ecosistema agricolo **integrato** che unisce:
-- **Living Soil (suolo vivente)**: Terreno ricco di microbi, funghi micorrizici e materia organica, dove le piante crescono in simbiosi con il suolo.
-- **Water-Only**: Irrigazione con acqua strutturata (magnetizzata, biodinamica) senza fertilizzanti chimici.
-- **Biodinamica**: Coltivazione in armonia con i ritmi lunari, solari e stagionali.
-- **Elettrocultura**: Tecniche per potenziare la vitalità delle piante tramite campi elettromagnetici naturali (Lakhovsky, Fe-Cu, spirali di rame, antenna di terra).
+BioSerra è un **ecosistema agricolo outdoor** che fonde:
+- **Living Soil** (suolo vivente *water-only*): nessun fertilizzante sintetico, solo materia organica, microrganismi e minerali naturali.
+- **Biodinamica**: preparati, ritmi cosmici e calendario lunare per armonizzare la pianta con l’ambiente.
+- **Elettrocultura**: tecniche elettromagnetiche (Lakhovsky, Fe-Cu, acqua magnetizzata, spirali in rame, antenna di terra) per potenziare la fisiologia vegetale.
+- **Water-Only**: irrigazione con acqua strutturata (magnetizzata, ionizzata) per massimizzare l’assorbimento radicale.
 
-*Visione*: Coltivare piante **resilienti, nutrienti e in equilibrio con l’ambiente**, sfruttando le sinergie tra suolo, acqua, energia e organismi viventi.
+*Visione*: Coltivare piante **autosufficienti**, resilienti agli stress e in sintonia con i cicli naturali, senza compromessi sulla qualità.
 
 ---
 
-## **📚 Sistema di Conoscenza**
+## **📚 Sistema di conoscenza**
 BioSerra si basa su:
-- **341 PDF** (manuali, studi, guide pratiche) collegati a **15 concetti attivi**.
-- **Knowledge Graph** che mappa:
-  - **Tecniche** (es. elettrocultura, compostaggio) → [[id_concetto]]
-  - **Fonti** (es. [web_zamn_287]) → [[id_pdf]]
-  - **Fasi colturali** (germinazione, vegetativa, fioritura) → [[fase_plantula]], [[fase_vegetativa]], [[fase_fioritura]]
+- **341 manuali** (PDF) organizzati per fasi colturali, tecniche e problematiche.
+- **20 concetti attivi** (es. *Suolo Vivente*, *Elettrocultura Lakhovsky*, *Biodinamica Integrata*) che si interconnettono per creare un **sistema olistico**.
+- **Guida rapida** per navigare il wiki:
+  - **Concetti**: collegati con `[[nome-concetto]]` (es. `[[Suolo Vivente]]`).
+  - **PDF**: citati con `[id]` (es. `[web_zamn_287]` per la fase plantula).
 
 *Esempio di integrazione*:
-> Per la **germinazione** ([[fase_plantula]]), si combinano:
-> - **Smart Start** ([web_zamn_284]) per condizioni ottimali.
-> - **Spirale di rame** ([[spirale_rame]]) per stimolare la crescita.
-> - **Calendario lunare** ([[calendario_biodinamico]]) per scegliere la luna giusta.
+> Per le autofiorenti in fioritura, si applica **elettrocultura DC** (`[[Elettrocultura Lakhovsky]]`) + **preparato 501** (`[[Preparati Biodinamici]]`) + **biochar** (`[[Compostaggio Organico]]`), come da `[web_zamn_288]` e `[pdf_17]`.
 
 ---
 
-## **⚡ Tecniche di Elettrocultura Attive**
-| Tecnica | Descrizione | Pagina Wiki |
-|---------|------------|-------------|
-| **Acqua Magnetizzata** | Acqua esposta a campi magnetici per migliorare l’assorbimento dei nutrienti. | [[acqua_magnetizzata]] |
-| **Spirale in Rame** | Spirali di rame posizionate intorno alle piante per generare campi elettromagnetici. | [[spirale_rame]] |
-| **Circuito di Lakhovsky** | Circuito oscillante per armonizzare la frequenza cellulare delle piante. | [[circuito_lakhovsky]] |
-| **Elettrodi Fe-Cu** | Coppie di elettrodi in ferro e rame nel suolo per creare correnti galvaniche. | [[elettrodi_fe-cu]] |
-| **Antenna di Terra** | Sistema di messa a terra per bilanciare le cariche elettriche del suolo. | [[antenna_terra]] |
-
-*Applicazione attuale*:
-> **Autofiorenti in fioritura** (Epsilon, Milky Way, Titan):
-> - Elettrocoltura DC **6-12V** per **2-4 ore** (18-21) [[pdf_17]].
-> - **1 kg di biochar** vicino alle radici per migliorare la conducibilità [[pdf_16]].
+## **⚡ Tecniche Elettrocultura Attive**
+| Tecnica | Descrizione | Applicazione | Riferimenti |
+|---------|------------|--------------|-------------|
+| **Elettrocultura Lakhovsky** | Circuiti oscillanti (rame/zinco) per stimolare la risonanza cellulare. | Autofiorenti in fioritura (3V DC, 10-15 cm profondità). | `[[Elettrocultura Lakhovsky]]`, `[pdf_17]` |
+| **Elettrocultura Fe-Cu** | Coppie di elettrodi ferro/rame per bilanciare i nutrienti. | Fase vegetativa e fioritura. | `[[Elettrocultura Fe-Cu]]` |
+| **Spirale in Rame** | Spirali di rame intorno al fusto per potenziare la fotosintesi. | Tutte le fasi, soprattutto fioritura. | `[[Spirale in Rame]]` |
+| **Antenna di Terra** | Connessione a terra per scaricare tensioni statiche. | Costante, soprattutto in terreni argillosi. | `[[Antenna di Terra]]` |
+| **Acqua Magnetizzata** | Acqua esposta a campi magnetici per migliorare l’assorbimento. | Irrigazione e nebulizzazione. | `[[Acqua Magnetizzata]]` |
 
 ---
-
 ## **🌍 Principi Living Soil**
 ### **1. Microbioma del Suolo**
-- **Funghi micorrizici**: Simbiosi con le radici per assorbimento nutrienti.
-- **Batteri benefici**: Decompositori (es. *Pseudomonas*, *Bacillus*).
-- **Protozoi e nematodi**: Regolano la popolazione microbica.
+- **Funghi micorrizici** (`[[Inoculazione Micorrize]]`): simbiosi radicale per nutrienti e resistenza.
+- **Batteri benefici** (es. *Pseudomonas*, *Bacillus*): decomposizione e soppressione patogeni.
+- **Protozoi e nematodi utili**: regolazione della popolazione microbica.
 
-*Strumenti*:
-- **Inoculazione micorrize** ([[inoculazione_micorrize]]).
-- **Tè di compost** ([[te_compost]]) per nutrire il suolo.
-
-### **2. Minerali e Nutrienti**
-- **Fertilizzazione organica**: Letame, humus di lombrico, farine di rocce ([
+### **2. Minerali e Struttura**
+- **Farine di rocce** (`[[Farine di Rocce]]`): apporto lento di silicio, calcio, magnesio.
+- **Biochar** (`[[Compostaggio Organico]]`): aumenta la capacità di scambio cationico (CEC) e trattiene acqu
