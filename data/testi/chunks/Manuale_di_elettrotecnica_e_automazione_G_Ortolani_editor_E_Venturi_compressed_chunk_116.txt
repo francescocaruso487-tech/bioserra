@@ -175,6 +175,10 @@ Trasmissione, XIV-17
 , CSMA/CD, XIV-13
 , seriale asincrona, XIV-18
 , seriale sincrona,
+
+[PAG 2277]
+SEZIONE XV SISTEMI
+45
 Errori di un sistema, XV-37
 - a regime, XV-37
 - deviazione statica, XV-43
@@ -204,13 +208,10 @@ Linearità, XV-10
 Luogo delle radici, XV-32
 - condizione di modulo, XV-33
 - condizione di fase, XV-34
-
-[PAG 2277]
-SEZIONE XV SISTEMI
-45
 - margine di fase, XV-36
 - margine di guadagno, XV-36
 - spirule, XV-34
+
 Memoria, XV-53
 - dati, XV-53
 - programma, XV-53
@@ -365,10 +366,6 @@ Spirule, XV-34
 Stabilità e criteri di stabilità, XV-22
 - criterio di Hurwitz, XV-23
 - criterio di Routh, XV-23
-Ecco la traduzione fedele del testo in italiano, mantenendo tutti i termini tecnici, numeri, misure e riferimenti:
-
----
-
 - limite di stabilità, XV-23
 - margine di fase, XV-35
 - margine di guadagno, XV-35
@@ -621,21 +618,13 @@ Giunzioni, XVII-38
 Guadagno, amplificatori, XVII-26
 Guadagno d'anello, XVII-17
 Impedenza, bipoli, XVII-9
-
-[PAG 2282]
-50
-INDICE ANALITICO PER SEZIONI
-Integrati, circuiti, XVII-4
-Integrato 555, timer, XVII-143
-Integrato 8038, generatore di funzioni, XVII-141
-Integratori, circuiti con AO, XVII-78
 JFET, XVII-59
 , amplificatori, XVII-67
 , caratteristiche, XVII-61
 , funzionamento, XVII-60
 , modelli, XVII-66
 , polarizzazione, XVII-65
-Karnaugh, mappe, XVII-93
+Mappe di Karnaugh, XVII-93
 Lacune, XVII-37
 Latch, XVII-111
 , caratteristiche di commutazione, XVII-113
@@ -643,12 +632,12 @@ Latch, XVII-111
 , di tipo SR, XVII-111
 , di tipo SR con abilitazione, XVII-112
 Limitatori, con diodi, XVII-48
-Lissajous, figure, XVII-215
+Figure di Lissajous, XVII-215
 Livelli, circuiti digitali, XVII-68
 Logica, negativa, XVII-97
 , positiva, XVII-97
 LSI, XVII-5
-LTI, circuiti, XVII-6
+Circuiti LTI, XVII-6
 Margine di rumore, XVII-69
 Maxtermini, XVII-91
 Memorie, XVII-125
@@ -683,54 +672,54 @@ MSI, XVII-5
 Multiplexer, XVII-110
 Multivibratore monostabile, con 555, XVII-144
 Multivibratori astabili, XVII-139, 140, 146
-NAND, porte, XVII-98, 99
-NOR, porte, XVII-98, 100
-Norton, teorema, XVII-10
-NOT, porte, XVII-98
+Porte NAND, XVII-98, 99
+Porte NOR, XVII-98, 100
+Teorema di Norton, XVII-10
+Porte NOT, XVII-98
 Notazione, a virgola fissa, XVII-87
-- Numerazione a virgola mobile, XVII-87
+, a virgola mobile, XVII-87
 Numerazione binaria, XVII-83
-- Numerazione esadecimale, XVII-84
-- Numerazione ottale, XVII-84
+, esadecimale, XVII-84
+, ottale, XVII-84
 Numeri binari con segno, XVII-85
-- Operazioni aritmetiche su numeri binari, XVII-84, 85
+, operazioni aritmetiche su numeri binari, XVII-84, 85
 Porte OR, XVII-98
 Oscillatori, XVII-135
-- Oscillatori a cristallo, XVII-138
-- Oscillatori a tre punti, XVII-137
-- Oscillatori Colpitts, XVII-138
-- Criterio di Barkhausen per oscillatori, XVII-135
-- Oscillatori Hartley, XVII-138
-- Oscillatori LC, XVII-137
-- Oscillatori Pierce, XVII-139
+, a cristallo, XVII-138
+, a tre punti, XVII-137
+, Colpitts, XVII-138
+, criterio di Barkhausen per oscillatori, XVII-135
+, Hartley, XVII-138
+, LC, XVII-137
+, Pierce, XVII-139
 Oscilloscopio, XVII-190
-- Oscilloscopio a doppia traccia, XVII-206
-- Base dei tempi dell'oscilloscopio, XVII-203
-- Circuiti di sincronismo dell'oscilloscopio, XVII-200
-- Oscilloscopio con base dei tempi ritardata, XVII-208
-- Deflessione elettrostatica nell'oscilloscopio, XVII-193
-- Oscilloscopio digitale, XVII-209
-- Figure di Lissajous nell'oscilloscopio, XVII-216
+, a doppia traccia, XVII-206
+, base dei tempi, XVII-203
+, circuiti di sincronismo, XVII-200
+, con base dei tempi ritardata, XVII-208
+, deflessione elettrostatica, XVII-193
+, digitale, XVII-209
+, figure di Lissajous, XVII-216
 Oscilloscopio, generalità, XVII-191
-- Misure di corrente con oscilloscopio, XVII-214
-- Misure di fase con oscilloscopio, XVII-216
-- Misure di frequenza con oscilloscopio, XVII-214
-- Misure di tensione con oscilloscopio, XVII-213
-- Schema a blocchi dell'oscilloscopio, XVII-197
-- Sonde per oscilloscopio, XVII-211
-- Tubo a raggi catodici dell'oscilloscopio, XVII-192
+, misure di corrente, XVII-214
+, misure di fase, XVII-216
+, misure di frequenza, XVII-214
+, misure di tensione, XVII-213
+, schema a blocchi, XVII-197
+, sonde, XVII-211
+, tubo a raggi catodici, XVII-192
 PAL, XVII-130
 Parametri di ammettenza, XVII-21
-- Parametri ibridi g, XVII-23
-- Parametri ibridi h, XVII-22
-- Parametri di impedenza, XVII-20
+, ibridi g, XVII-23
+, ibridi h, XVII-22
+, di impedenza, XVII-20
 Piastre di raffreddamento, XVII-163
 PLD, XVII-129
 Poli, XVII-14
 Ponte di Graetz, XVII-46
 Porte logiche di base, XVII-97
-- Simboli delle porte logiche, XVII-99
-- Simboli normalizzati delle porte logiche, XVII-100
+, simboli delle porte logiche, XVII-99
+, simboli normalizzati delle porte logiche, XVII-100
 Porte universali, XVII-99
 Pulsazioni di taglio, XVII-29
 Q, fattore di qualità, XVII-19
@@ -742,8 +731,8 @@ Raddrizzatori di precisione con AO, XVII-81
 RAM, XVII-125, 129
 Reazione, XVII-17
 Registri, XVII-118
-- Registri a scorrimento, XVII-119
-- Tipi di registri a scorrimento, XVII-121
+, a scorrimento, XVII-119
+, tipi di registri a scorrimento, XVII-121
 Rendimento di conversione degli amplificatori, XVII-166
 Resistenza termica, XVII-163
 Ripple, XVII-46
@@ -851,26 +840,12 @@ Conversione diretta, XVIII-53
 Conversione frequenza-frequenza, XVIII-53
 Convertitori, asimmetrici, XVIII-40
 - boost, XVIII-37, 38
-- buck, XVIII-37
-- buck-boost, XVIII-39, 41
-- chopper, XVIII-45
-- con tiristori a spegnimento forzato, XVIII-50
-- con trasformatori, XVIII-39
-- c.c.-c.c., XVIII-36
-- flyback, XVIII-37, 39, 40, 41
-- forward, XVIII-37, 40, 42, 43
-- lineari, XVIII-35
-- non isolati, XVIII-37
-- push-pull, XVIII-37, 44
-- simmetrici, XVIII-40
-- statici, XVIII-22, 35
-- step down, XVIII-37, 38
-- step up, XVIII-37, 38
-Coppia costante, XVIII-33
 Corrente, da anodo a catodo, XVIII-5
 - di automantenimento, XVIII-5, 9, 31, 46
 - di fuga, XVIII-5
+
 Diac, XVIII-7
+
 Diodo, XVIII-2
 - ad una semionda, XVIII-3
 - controllato al silicio, XVIII-4
@@ -878,30 +853,47 @@ Diodo, XVIII-2
 - di ricircolo, XVIII-6, 23, 52
 - di tipo p-n, XVIII-2
 - raddrizzatore, XVIII-2
+
 Dissipatori di calore, XVIII-19, 20
+
 Duty cycle, XVIII-36, 37, 49
+
 Effetto, dU/dt, XVIII-7, 10
 - valanga, XVIII-7
 
 [PAG 2285]
 SEZIONE XVIII ELETTRONICA DI POTENZA
 53
+
 Equilibrio termico, XVIII-20
+
 Filtri, XVIII-19
 - passa basso, XVIII-20
+
 Flyback, convertitore, XVIII-37, 39, 40, 41
+
 Forward, convertitore, XVIII-37, 40, 41, 42, 43
+
 Frenatura con recupero di energia, XVIII-33
+
 Funzionamento, in modo continuo, XVIII-38, 39, 41, 42
 - in modo discontinuo, XVIII-38, 39, 41
+
 Gate, XVIII-5, 11
+
 Giunzione, p-n, XVIII-2
 - p-n-p-n, XVIII-4, 9
+
 Gradini di tensione, XVIII-49
+
 GTO (Gate Turn Off), XVIII-10
+
 IGBT (Insulated Gate Bipolar Transistor), XVIII-10, 14
+
 Induttanza di livellamento, XVIII-30
+
 Interruttori allo stato solido, XVIII-48
+
 Inverter, XVIII-19, 22, 35, 48, 53
 - a mezzo ponte, XVIII-52
 - a quattro quadranti, XVIII-50
@@ -913,83 +905,132 @@ Inverter, XVIII-19, 22, 35, 48, 53
 - serie, XVIII-50, 52
 - trifase, XVIII-52
 - unidirezionali, XVIII-50
+
 Invertitore, XVIII-33
 - parallelo, XVIII-50, 51
 - serie, XVIII-50, 52
+
 Isolamento galvanico, XVIII-40
+
 Lacune, XVIII-14
+
 Loop rigenerativo, XVIII-11
+
 Modulazione di conduttività, XVIII-14
+
 Mosfet, XVIII-14, 15, 35, 49, 50
+
 MosIgbt, XVIII-14
+
 Normativa, EMC, XVIII-19
 - VDE 0530, XVIII-19
+
 Piastre di raffreddamento, XVIII-20
+
 Ponte, di Graetz, XVIII-24
 - trifase semicontrollato, XVIII-32
 - trifase totalmente controllato, XVIII-33
+
 Porta, XVIII-5
+
 P.R.M. (Pulse Rate Modulation), XVIII-46
+
 P.W.M. (Modulazione di Larghezza d'Impulso), XVIII-36, 45
+
 Push-pull, convertitore, XVIII-37, 44
+
 Raddrizzatori, XVIII-22
 - a una semionda, XVIII-3
 - controllati, XVIII-22
 - normali, XVIII-22
+
 Recupero di energia in rete, XVIII-35, 50
+
 Regime termico, XVIII-20
+
 Regolazione in corrente alternata, XVIII-47
 - a controllo continuo, XVIII-47
 - a parzializzazione di fase, XVIII-47
 - a tempo proporzionale, XVIII-48
 - con numero intero di cicli, XVIII-47, 48
+
 Regolazione, P.R.M., XVIII-45
 - P.W.M., XVIII-45
+
 Rendimento, XVIII-22, 49
+
 Resistenza termica, XVIII-20
+
 Reti snubber, XVIII-18
+
 Ripple, XVIII-22, 36, 38, 39, 41, 42, 43
+
 SCR (Raddrizzatore Controllato al Silicio), XVIII-4
+
 Semionda, negativa, XVIII-3
 - positiva, XVIII-3
+
 Semiconduttori, per convertitori a commutazione, XVIII-15
+
 Slew rate, XVIII-10, 13, 20
+
 Snubber, XVIII-10, 18
+
 Snubberless Triac, XVIII-10
+
 Switch, XVIII-37
+
 Switching, alimentatori, XVIII-49
+
 Tensione, di breakdown, XVIII-4, 5, 14
 - di breakover, XVIII-7, 10
+
 Termico, equilibrio, XVIII-20
 - regime, XVIII-20
+
 Tiristori, XVIII-49
+
 Transistor, bipolari, XVIII-15, 50
 - di potenza, XVIII-10, 49, 50
 
 [PAG 2286]
 SEZIONE XVIII ELETTRONICA DI POTENZA
 54
+
 Transitorio di tensione, XVIII-18
+
 Triac, XVIII-9
 - snubberless, XVIII-10
+
 Utilizzatori, ohmico-induttivi, XVIII-22
+
 Valore di automantenimento, XVIII-31
+
 Vibratori elettromagnetici, XVIII-53
+
 Zero crossing, XVIII-30
 
 [PAG 2287]
 SEZIONE XIX TECNOLOGIE ELETTRICHE ED ELETTRONICHE
 55
+
 Sezione XIX
 Tecnologie elettriche ed elettroniche
+
 Angolo di perdita, XIX-129, 138
+
 Aspiratore, XIX-74
+
 Calore, di fusione, XIX-11
 - specifico, XIX-11
+
 Campo coercitivo, XIX-17
+
 Capacità, elettrica, XIX-127
 - termica, XIX-11
+
 Caratteristiche termiche, XIX-11
+
 Carico unitario di rottura, XIX-9
 Cassette, tubi attestabili nelle, XIX-48
 Cavi, classificazione, XIX-32
@@ -1115,14 +1156,14 @@ Regolatore di livello, XIX-90
 Resilienza, XIX-10
 Resine, XIX-20
 Resistenza, XIX-107
-, di isolamento, XIX-128
-, termica, XIX-111
+- di isolamento, XIX-128
+- termica, XIX-111
 Resistività, XIX-13, 14, 108
 Resistori, XIX-107
-, a filo, XIX-113, 115
-, a impasto, XIX-113, 114
-, a strato, XIX-113, 115
-, variabili, XIX-115
+- a filo, XIX-113, 115
+- a impasto, XIX-113, 114
+- a strato, XIX-113, 115
+- variabili, XIX-115
 Reticolo cristallino, XIX-4, 5
 Rigidità dielettrica, XIX-15, 19
 Ritiro di fusione, XIX-11
