@@ -1,10 +1,10 @@
 {
-  "lastUpdate": "2026-07-13T05:48:21.089370+00:00",
+  "lastUpdate": "2026-07-14T05:09:12.081616+00:00",
   "analisi": {
     "totale_voci": 341,
-    "pipeline_v25_fulltext": 78,
-    "non_ancora_riprocessate": 263,
-    "stub_count": 21,
+    "pipeline_v25_fulltext": 79,
+    "non_ancora_riprocessate": 262,
+    "stub_count": 12,
     "stub_ids": [
       "fuso_germinazione",
       "fuso_plantula",
@@ -17,21 +17,12 @@
       "fuso_problemi",
       "fuso_training",
       "fuso_autofiorenti",
-      "fuso_outdoor",
-      "pdf_12",
-      "pdf_13",
-      "pdf_14",
-      "pdf_85",
-      "pdf_18",
-      "pdf_21",
-      "pdf_22",
-      "pdf_305",
-      "pdf_10"
+      "fuso_outdoor"
     ],
     "finestre_analizzate_stats": {
       "min": 1,
       "max": 20,
-      "media": 17.2
+      "media": 17.0
     },
     "documenti_sottocoperti": [],
     "categoria_breakdown": {
@@ -48,12 +39,12 @@
       "fusa_training": 1,
       "fusa_autofiorenti": 1,
       "fusa_outdoor": 1,
-      "esoterismo": 38,
-      "elettrocultura": 9,
-      "fisica_energie": 9,
-      "scienza": 3,
+      "esoterismo": 39,
       "agricoltura": 1,
-      "altro": 8,
+      "altro": 9,
+      "elettrocultura": 8,
+      "fisica_energie": 7,
+      "scienza": 4,
       "living_soil": 1
     },
     "categoria_senza_valore": 10,
@@ -124,24 +115,9 @@
         "stub": 1
       },
       "esoterismo": {
-        "totale": 38,
-        "v25_fulltext": 37,
-        "stub": 3
-      },
-      "elettrocultura": {
-        "totale": 9,
-        "v25_fulltext": 9,
-        "stub": 3
-      },
-      "fisica_energie": {
-        "totale": 9,
-        "v25_fulltext": 9,
-        "stub": 2
-      },
-      "scienza": {
-        "totale": 3,
-        "v25_fulltext": 3,
-        "stub": 1
+        "totale": 39,
+        "v25_fulltext": 39,
+        "stub": 0
       },
       "agricoltura": {
         "totale": 1,
@@ -149,8 +125,23 @@
         "stub": 0
       },
       "altro": {
+        "totale": 9,
+        "v25_fulltext": 9,
+        "stub": 0
+      },
+      "elettrocultura": {
         "totale": 8,
         "v25_fulltext": 8,
+        "stub": 0
+      },
+      "fisica_energie": {
+        "totale": 7,
+        "v25_fulltext": 7,
+        "stub": 0
+      },
+      "scienza": {
+        "totale": 4,
+        "v25_fulltext": 4,
         "stub": 0
       },
       "living_soil": {
@@ -168,36 +159,44 @@
     "lingua_breakdown": {
       "it": 79
     },
-    "chunk_progresso_doc_con_dato": 15,
-    "chunk_progresso_totale_tradotti": 39,
-    "chunk_progresso_totale_chunk": 310,
-    "chunk_progresso_anomalie": []
+    "chunk_progresso_doc_con_dato": 14,
+    "chunk_progresso_totale_tradotti": 37,
+    "chunk_progresso_totale_chunk": 307,
+    "chunk_progresso_anomalie": [
+      {
+        "id": "pdf_331",
+        "chunk_progresso": {
+          "tradotti": 5,
+          "totale": 4
+        }
+      }
+    ]
   },
   "traduzione": {
     "lingua_popolata": 79,
     "lingua_breakdown": {
       "it": 79
     },
-    "chunk_progresso_doc_con_dato": 15,
-    "chunk_progresso_totale_tradotti": 39,
-    "chunk_progresso_totale_chunk": 310
+    "chunk_progresso_doc_con_dato": 14,
+    "chunk_progresso_totale_tradotti": 37,
+    "chunk_progresso_totale_chunk": 307
   },
   "connessioni": {
-    "nodi_totali": 359,
-    "edges_totali": 64445,
+    "nodi_totali": 379,
+    "edges_totali": 71846,
     "nodi_isolati": 0,
     "nodi_isolati_ids": [],
     "peso_stats": {
       "min": 0.4,
       "max": 0.9957,
-      "media": 0.849
+      "media": 0.846
     },
     "tipo_conn_breakdown": {
-      "principio_condiviso": 27,
-      "sinergia": 71,
-      "potenziamento": 15,
-      "contraddizione": 71,
-      "(nessuno)": 64261
+      "principio_condiviso": 32,
+      "sinergia": 83,
+      "potenziamento": 17,
+      "contraddizione": 83,
+      "(nessuno)": 71631
     },
     "edges_dangling": [],
     "copertura_coppie_pct_stimata": 100.3
