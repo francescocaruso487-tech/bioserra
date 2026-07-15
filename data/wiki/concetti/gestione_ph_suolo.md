@@ -2,7 +2,7 @@
 id: gestione_ph_suolo
 label: Gestione pH Suolo
 categoria: suolo
-aggiornato: 2026-07-14
+aggiornato: 2026-07-15
 pdf_count: 10
 ---
 
@@ -12,27 +12,19 @@ pdf_count: 10
 # Gestione pH Suolo
 
 ## Descrizione
-Il pH del suolo rappresenta la misura dell'acidità o basicità del substrato, determinando la biodisponibilità dei nutrienti essenziali per le piante. Un pH ottimale compreso tra **6.0 e 7.0** (neutro-lieve acidità) garantisce l'assorbimento equilibrato di macro e micronutrienti, favorendo la crescita radicale, la fotosintesi e la resistenza agli stress ambientali. Al di fuori di questo range, elementi come fosforo, azoto e potassio possono diventare insolubili, mentre metalli pesanti (es. alluminio) possono tossificarsi, compromettendo la salute delle piante e la vitalità del suolo vivente.
+Il **pH del suolo** rappresenta la misura dell’acidità o basicità del substrato, determinando la biodisponibilità dei nutrienti essenziali per le piante. In un sistema **Living Soil** outdoor come quello di Caserta (41°N), il range ottimale per la maggior parte delle colture si attesta tra **6.0 e 7.0**, dove macro e micronutrienti (azoto, fosforo, potassio, calcio, magnesio, ferro) sono accessibili alle radici senza competizione o blocco chimico. Un pH fuori da questo intervallo compromette l’assorbimento: sotto **5.8**, la solubilità di fosforo e calcio diminuisce, mentre sopra **7.2**, micronutrienti come ferro e manganese diventano insolubili, causando carenze anche in terreni ricchi. La gestione del pH non è statica: fattori come piogge acide, decomposizione della materia organica, fertilizzanti minerali e attività microbica (es. funghi micorrizici) possono alterarlo rapidamente. In serra, dove l’evapotraspirazione concentra sali e l’irrigazione con acqua dura (ricca di calcio) è comune, il monitoraggio costante è cruciale per prevenire squilibri.
 
-Il meccanismo di regolazione del pH è strettamente legato alla **dinamica della materia organica** e all'attività microbica. In un sistema *Living Soil*, batteri e funghi simbionti (es. micorrize) decompongono la sostanza organica, rilasciando acidi umici e fulvici che acidificano naturalmente il suolo. Viceversa, l'uso di ammendanti calcarei (es. calcite) o l'irrigazione con acqua dura possono innalzare il pH, riducendo la solubilità di ferro e manganese. La gestione del pH non è quindi un intervento statico, ma un **processo ciclico** che richiede monitoraggio costante e adattamento alle fasi fenologiche delle piante.
+Il meccanismo di regolazione si basa su **reazioni chimiche reversibili** tra il suolo e gli agenti correttivi. La **calce** (CaCO₃ o Ca(OH)₂) neutralizza l’acidità aumentando il pH, mentre lo **zolfo** (S) o solfati acidificanti (es. solfato di alluminio) lo abbassano, favorendo la formazione di acidi solforici che protonano i siti di scambio cationico. Tuttavia, in un **Living Soil**, la correzione deve essere **graduale e biologicamente mediata**: l’aggiunta di materia organica (compost, humus di lombrico) tampona il pH grazie ai gruppi funzionali (es. acidi umici) che legano ioni H⁺ o OH⁻, riducendo la necessità di interventi chimici. L’**elettrocultura**, poi, può accelerare questi processi: le spirali di rame (come antenna captante) e le antenne di terra (picchetti in acciaio zincato) generano campi elettromagnetici che influenzano la mobilità ionica nel suolo, favorendo l’assorbimento di nutrienti e la stabilizzazione del pH [pdf_3, pdf_5].
 
 ---
 
 ## Come si applica in serra
-Per una serra *Living Soil* outdoor a Caserta (41°N), la gestione del pH segue un protocollo strutturato, integrato con le condizioni climatiche locali (estati calde e umide, inverni miti). Ecco le fasi operative:
 
-1. **Monitoraggio settimanale**:
-   - Utilizzare un **pH-metro digitale** (precisione ±0.1) o kit a reagenti (es. Lamotte) su campioni di terreno prelevati a **10-15 cm di profondità** (zona rizosferica).
-   - Effettuare le misurazioni **al mattino**, prima dell'irrigazione, per evitare falsi valori dovuti a umidità residua.
+1. **Strumentazione e frequenza**:
+   - Utilizzare un **pH-metro digitale** (precisione ±0.1) o kit a reagenti (es. pH strips) per misurazioni **settimanali**, preferibilmente al mattino su campioni di terreno prelevati a 10–15 cm di profondità (zona radicale attiva).
+   - Registrare i dati in un **logbook** per identificare trend (es. acidificazione dopo piogge o alcalinizzazione dopo irrigazione con acqua dura).
 
-2. **Interventi correttivi**:
-   - **pH < 5.8 (acidità eccessiva)**:
-     - Applicare **calce agricola dolomitica** (CaCO₃ + MgCO₃) a **50-100 g/m²**, distribuendola uniformemente e incorporandola leggermente con una zappetta.
-     - *Nota*: Evitare la calce viva (CaO), troppo reattiva per i sistemi biologici.
-   - **pH > 7.2 (basicità eccessiva)**:
-     - Aggiungere **zolfo elementare in polvere** (S) a **30-50 g/m²**, mescolandolo al substrato umido per accelerare l'ossidazione batterica.
-     - *Alternativa*: Utilizzare **torba acida** (pH ~4.0) come ammendante, ma solo in piccole quantità per non impoverire la materia organica.
-
-3. **Integrazione con elettrocultura**:
-   - Posizionare una **spirale di rame** (diametro 30-50 cm) al centro del letto di coltivazione, collegata a un'**antenna di terra** (picchetto in acciaio zincato da 1m) tramite cavo di rame isolato.
-   - La spirale funge da **antenna captante** per le frequenze naturali del suolo, mentre l'antenna di terra scarica le cariche statiche, favorendo una **maggiore stabilità del pH** e riducendo la lisciviazione dei nutrienti [pdf_3, pdf_307].
+2. **Correzione dell’acidità (pH < 5.8)**:
+   - **Calce agricola** (CaCO₃, granulometria fine): distribuire **1–2 kg/10 m²** in modo uniforme, interrandola leggermente con una zappetta. Evitare l’uso di calce viva (CaO), troppo reattiva e rischiosa per la flora microbica.
+   - **Dolomite** (CaMg(CO₃)₂): alternativa per terreni carenti di magnesio, con effetto tamponante più lento ma duraturo.
+   - **Compost maturo**: aggiungere **2–3 kg/m²** per aumentare la capacità tampone del suolo e fornire nutrienti a lento rilascio
