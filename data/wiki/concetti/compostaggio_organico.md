@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-07-14
+aggiornato: 2026-07-15
 pdf_count: 6
 ---
 
@@ -12,28 +12,32 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (scarti vegetali, letame, residui agricoli) che trasforma la materia grezza in un ammendante stabile e ricco di nutrienti, noto come compost. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macrofauna (lombrichi, acari, collemboli) che, in condizioni ottimali di umidità, ossigenazione e temperatura (55-65°C), scompongono la materia organica in humus. Il compost maturo è un substrato vivo, ricco di acidi umici e fulvici, che migliora la struttura del suolo, la capacità di scambio cationico (CEC) e la biodiversità microbica, essenziale per un **Living Soil** outdoor.
+Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (scarti verdi e marroni) che trasforma la materia in un ammendante ricco di nutrienti, microrganismi benefici e sostanza organica stabile. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e organismi del suolo, che decompongono la materia in humus, un composto stabile e ricco di nutrienti assimilabili dalle piante. In un sistema **Living Soil**, il compost di qualità è fondamentale per mantenere la struttura del substrato, migliorare la capacità di scambio cationico (CEC) e fornire un apporto costante di nutrienti durante le fasi di germinazione e vegetazione.
 
-Il meccanismo si basa su una **fermentazione aerobica** (non putrefattiva), dove i materiali "verdi" (ricchi di azoto) e "marroni" (ricchi di carbonio) vengono bilanciati per evitare squilibri termici o anaerobiosi. Il calore generato (fino a 65°C) elimina patogeni e semi di infestanti, mentre la successiva fase di maturazione (a temperature <40°C) consente la colonizzazione da parte di microrganismi benefici. In serra outdoor a Caserta (41°N), il compostaggio è fondamentale per mantenere un suolo fertile senza ricorrere a fertilizzanti chimici, soprattutto durante la **fase vegetativa** delle piante, quando la domanda di nutrienti è massima.
-
----
+Il meccanismo d’azione si basa su una **fermentazione aerobica** (in presenza di ossigeno), che evita la formazione di odori sgradevoli e produce un compost maturo, privo di patogeni e semi di infestanti. La temperatura ideale (55-65°C) favorisce la proliferazione di microrganismi termofili, accelerando la decomposizione e garantendo un prodotto finale equilibrato. Un compost ben fatto apporta non solo macro e micronutrienti, ma anche **sostanze umiche** (acidi umici e fulvici), che migliorano l’assorbimento radicale e la resilienza delle piante agli stress ambientali.
 
 ## Come si applica in serra
+Per produrre compost di qualità in una **serra outdoor Living Soil a Caserta** (41°N), segui questi passaggi:
 
-### **1. Selezione e preparazione dei materiali**
-- **Materiali verdi (azoto)**: scarti di cucina (buccia di frutta, verdura), erba fresca, residui di potatura verde, letame fresco (es. cavallo, pollo).
-- **Materiali marroni (carbonio)**: foglie secche, paglia, cartone non stampato, trucioli di legno, ramaglie sminuzzate.
-- **Rapporto C:N**: mantenere **25-30:1** (es. 2 parti marroni per 1 parte verde). In caso di eccesso di azoto (odore di ammoniaca), aggiungere marroni; se troppo secco, aggiungere verdi.
+1. **Selezione dei materiali**:
+   - **Verde (azotati)**: scarti di cucina (resti di frutta/verdura), erba fresca, foglie verdi, fondi di caffè, letame fresco (es. equino o bovino).
+   - **Marroni (carboniosi)**: paglia, foglie secche, cartone non stampato, rametti triturati, gusci di noce.
+   - **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume). Regola in base all’umidità: il cumulo deve essere umido come una spugna strizzata.
 
-### **2. Costruzione del cumulo**
-- **Ubicazione**: in serra o in zona ombreggiata (evitare sole diretto a Caserta per prevenire essiccazione).
-- **Struttura**: cumulo a forma di tronco di cono (1-1.5 m di altezza, 1-1.5 m di base) per ottimizzare aerazione e trattenuta di umidità.
-- **Stratificazione**: alternare strati di 10-15 cm di verdi e marroni, bagnando leggermente ogni strato (umidità simile a una spugna strizzata).
+2. **Costruzione del cumulo**:
+   - Crea una pila di almeno **1 m³** (dimensione minima per mantenere la temperatura).
+   - Alterna strati di materiali verdi e marroni, aggiungendo uno strato di **terriccio o compost maturo** ogni 20 cm per inoculare microrganismi benefici.
+   - Posiziona il cumulo in un’area ombreggiata della serra, su terreno nudo (non su cemento) per favorire l’aerazione dal basso.
 
-### **3. Gestione della temperatura e umidità**
-- **Monitoraggio**: usare un termometro da compost o sonda per verificare che la temperatura si mantenga tra **55-65°C** (ideale per 3-5 giorni).
-- **Umidità**: mantenere al **50-60%** (se troppo secco, aggiungere acqua; se troppo umido, aggiungere marroni e rivoltare).
-- **Rivoltamenti**: ogni **2-3 giorni** con forca o pala, per ossigenare e uniformare la decomposizione. Dopo 2-3 settimane, ridurre la frequenza a 1 volta/settimana.
+3. **Gestione della temperatura e umidità**:
+   - **Temperatura**: Monitora con un termometro da compost. Se supera i 65°C, gira il cumulo per abbassarla; se scende sotto i 55°C, aggiungi materiali verdi o copri con un telo per trattenere il calore.
+   - **Umidità**: Mantieni il 50-60% (non deve gocciolare quando strizzato). In estate (Caserta), copri con un telo traspirante per evitare essiccazione.
 
-### **4. Maturazione e utilizzo**
-- **Fase di raffreddamento**: dopo 4-6 settimane, la temperatura scende sotto i 40°C. Il compost è pronto quando
+4. **Rivoltamento e maturazione**:
+   - **Rivolta ogni 2-3 giorni** con una forca o pala, mescolando bene gli strati per garantire aerazione e omogeneità.
+   - **Tempo di maturazione**: 2-4 mesi (a seconda della stagione). Il compost è pronto quando:
+     - Ha un odore di terra umida (non di ammoniaca o marcio).
+     - Ha un colore scuro e struttura simile a terriccio.
+     - Non si riscalda più dopo il rivoltamento.
+
+5. **Utilizzo in serra**:
