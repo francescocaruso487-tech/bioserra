@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-14T05:09:12.081616+00:00",
+  "lastUpdate": "2026-07-15T05:09:41.148559+00:00",
   "analisi": {
     "totale_voci": 341,
     "pipeline_v25_fulltext": 79,
@@ -39,15 +39,15 @@
       "fusa_training": 1,
       "fusa_autofiorenti": 1,
       "fusa_outdoor": 1,
-      "esoterismo": 39,
+      "esoterismo": 43,
       "agricoltura": 1,
       "altro": 9,
-      "elettrocultura": 8,
-      "fisica_energie": 7,
-      "scienza": 4,
+      "elettrocultura": 11,
+      "fisica_energie": 9,
+      "scienza": 5,
       "living_soil": 1
     },
-    "categoria_senza_valore": 10,
+    "categoria_senza_valore": 0,
     "per_categoria_stato": {
       "web_coltivazione": {
         "totale": 250,
@@ -115,8 +115,8 @@
         "stub": 1
       },
       "esoterismo": {
-        "totale": 39,
-        "v25_fulltext": 39,
+        "totale": 43,
+        "v25_fulltext": 43,
         "stub": 0
       },
       "agricoltura": {
@@ -130,28 +130,23 @@
         "stub": 0
       },
       "elettrocultura": {
-        "totale": 8,
-        "v25_fulltext": 8,
+        "totale": 11,
+        "v25_fulltext": 11,
         "stub": 0
       },
       "fisica_energie": {
-        "totale": 7,
-        "v25_fulltext": 7,
+        "totale": 9,
+        "v25_fulltext": 9,
         "stub": 0
       },
       "scienza": {
-        "totale": 4,
-        "v25_fulltext": 4,
+        "totale": 5,
+        "v25_fulltext": 5,
         "stub": 0
       },
       "living_soil": {
         "totale": 1,
         "v25_fulltext": 1,
-        "stub": 0
-      },
-      "(senza categoria)": {
-        "totale": 10,
-        "v25_fulltext": 10,
         "stub": 0
       }
     },
@@ -159,14 +154,14 @@
     "lingua_breakdown": {
       "it": 79
     },
-    "chunk_progresso_doc_con_dato": 14,
-    "chunk_progresso_totale_tradotti": 37,
-    "chunk_progresso_totale_chunk": 307,
+    "chunk_progresso_doc_con_dato": 15,
+    "chunk_progresso_totale_tradotti": 49,
+    "chunk_progresso_totale_chunk": 321,
     "chunk_progresso_anomalie": [
       {
         "id": "pdf_331",
         "chunk_progresso": {
-          "tradotti": 5,
+          "tradotti": 6,
           "totale": 4
         }
       }
@@ -177,26 +172,26 @@
     "lingua_breakdown": {
       "it": 79
     },
-    "chunk_progresso_doc_con_dato": 14,
-    "chunk_progresso_totale_tradotti": 37,
-    "chunk_progresso_totale_chunk": 307
+    "chunk_progresso_doc_con_dato": 15,
+    "chunk_progresso_totale_tradotti": 49,
+    "chunk_progresso_totale_chunk": 321
   },
   "connessioni": {
-    "nodi_totali": 379,
-    "edges_totali": 71846,
+    "nodi_totali": 399,
+    "edges_totali": 79634,
     "nodi_isolati": 0,
     "nodi_isolati_ids": [],
     "peso_stats": {
       "min": 0.4,
       "max": 0.9957,
-      "media": 0.846
+      "media": 0.844
     },
     "tipo_conn_breakdown": {
-      "principio_condiviso": 32,
-      "sinergia": 83,
-      "potenziamento": 17,
-      "contraddizione": 83,
-      "(nessuno)": 71631
+      "principio_condiviso": 33,
+      "sinergia": 89,
+      "potenziamento": 18,
+      "contraddizione": 94,
+      "(nessuno)": 79400
     },
     "edges_dangling": [],
     "copertura_coppie_pct_stimata": 100.3
