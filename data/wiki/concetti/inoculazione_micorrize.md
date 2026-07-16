@@ -2,7 +2,7 @@
 id: inoculazione_micorrize
 label: Inoculazione Micorrize
 categoria: suolo
-aggiornato: 2026-07-15
+aggiornato: 2026-07-16
 pdf_count: 1
 ---
 
@@ -12,32 +12,24 @@ pdf_count: 1
 # Inoculazione Micorrize
 
 ## Descrizione
-Le **micorrize** sono una simbiosi mutualistica tra funghi del suolo e radici delle piante, fondamentale per la salute del **Living Soil** e l’efficienza nutrizionale delle colture outdoor, soprattutto in condizioni climatiche come quelle di Caserta (41°N). I funghi micorrizici, appartenenti principalmente ai phyla *Glomeromycota* e *Ascomycota*, colonizzano le radici estendendo la rete **ifale** (ife) ben oltre l’area di assorbimento radicale. Questo ampliamento della superficie di contatto consente alle piante di accedere a nutrienti altrimenti indisponibili, come fosforo (P), azoto (N) e micronutrienti, in cambio di carboidrati prodotti tramite fotosintesi. La simbiosi migliora anche la resistenza a stress idrici, patogeni del suolo e tossicità da metalli pesanti, grazie a meccanismi di competizione e produzione di composti bioattivi.
+Le **micorrize** sono associazioni simbiotiche tra funghi del suolo e radici delle piante, fondamentali per un **Living Soil** outdoor come quello di Caserta (41°N). Questo rapporto mutualistico si basa su uno scambio reciproco: i funghi, attraverso le loro ife, estendono la rete radicale della pianta, aumentando l’assorbimento di acqua e nutrienti (in particolare fosforo e azoto), mentre ricevono in cambio zuccheri e carboidrati prodotti dalla fotosintesi. In ambienti outdoor italiani, dove la biodiversità microbica può essere limitata da pratiche agricole intensive o condizioni climatiche estreme, l’inoculazione mirata accelera la formazione di questa simbiosi, migliorando la resilienza delle piante a stress idrici, patogeni e carenze nutrizionali.
 
-In un ecosistema **Living Soil** outdoor, l’inoculazione con micorrize è una strategia chiave per accelerare la formazione di una rete trofica funzionale, soprattutto in terreni poveri di materia organica o sottoposti a lavorazioni intensive. Studi dimostrano che piante colonizzate da micorrize possono aumentare la biomassa radicale fino al 50% e migliorare l’assorbimento idrico del 30%, risultati particolarmente rilevanti in coltivazioni outdoor dove le risorse sono distribuite in modo eterogeneo. Inoltre, la simbiosi favorisce la stabilizzazione della struttura del suolo attraverso la produzione di **glomalina**, una glicoproteina che agisce da cementante naturale, riducendo l’erosione e migliorando la ritenzione idrica.
+Il meccanismo d’azione delle micorrize si articola in due fasi principali: **colonizzazione** e **funzionamento**. Durante la colonizzazione, le spore o propaguli del fungo (ad esempio *Glomus intraradices* o *Rhizophagus irregularis*) entrano in contatto con le radici, formando strutture specializzate come **vescicole** (riserve di nutrienti) e **arbuscoli** (siti di scambio metabolico). Una volta stabilita, la simbiosi potenzia la capacità della pianta di esplorare il suolo, riducendo la necessità di fertilizzanti chimici e migliorando la struttura del terreno grazie all’escrezione di **glomalina**, una glicoproteina che aggrega le particelle di suolo in macroaggregati stabili. Questo processo è particolarmente vantaggioso in serra outdoor, dove la gestione idrica e la salute del suolo sono critiche per la produttività.
 
 ---
 
 ## Come si applica in serra
-Per una serra **Living Soil** outdoor a Caserta, l’inoculazione con micorrize va eseguita al **trapianto** o durante la fase di germinazione, quando le radici sono più recettive. Segui questi passaggi:
+Per un **Living Soil outdoor** a Caserta, l’inoculazione delle micorrize deve essere eseguita con precisione per massimizzare l’efficacia. Segui questi passaggi:
 
-1. **Preparazione dell’inoculo**:
-   - Utilizza un inoculo commerciale a base di **spore di funghi micorrizici** (es. *Rhizophagus irregularis*, *Glomus spp.*) o micelio attivo, preferibilmente in forma di polvere o granuli umidificabili.
-   - Dose consigliata: **5–10 g per pianta** (adjusta in base alla dimensione del contenitore o del letto di coltivazione).
+1. **Preparazione del substrato**:
+   - Assicurati che il terreno sia umido ma non zuppo (evita ristagni d’acqua, come indicato in [web_zamn_301]). Le micorrize prosperano in suoli ben drenati con pH compreso tra **6.0 e 7.5**.
+   - Se usi substrati inerti (es. cocco o perlite), mescola l’inoculo direttamente al trapianto per compensare la mancanza di biodiversità naturale.
 
-2. **Applicazione al trapianto**:
-   - Mescola l’inoculo con il substrato di trapianto o applicalo direttamente sulle radici nude (evitando il contatto con il colletto).
-   - Per piante in vaso, distribuisci l’inoculo sul fondo del contenitore prima di aggiungere il substrato.
-   - In serra outdoor, assicurati che il terreno sia umido ma non saturo (evita ristagni, come indicato in [web_zamn_301]).
+2. **Scelta dell’inoculo**:
+   - Opta per inoculi a base di **funghi micorrizici arbuscolari (AMF)** come *Glomus spp.* o miscele specifiche per piante da frutto/orticole. Per la cannabis in serra outdoor, sono ideali prodotti con spore vive e propaguli (es. "Mycorrhizal Inoculant" di marca BioBizz o Plant Success).
+   - Quantità: **5–10 g per pianta**, distribuiti direttamente sulle radici al momento del trapianto o in prossimità di esse.
 
-3. **Condizioni post-inoculo**:
-   - Mantieni il suolo umido per **7–10 giorni** dopo l’applicazione per favorire la colonizzazione radicale.
-   - Evita l’uso di **fungicidi chimici** nei 30 giorni successivi, poiché possono uccidere i funghi benefici. Opta per trattamenti con **biossido di silicio** o **estratti di alghe** se necessario.
-   - Integra con **compost maturo** (come suggerito in [web_zamn_335]) per fornire nutrienti ai funghi e alle piante.
-
-4. **Monitoraggio**:
-   - Osserva la crescita delle radici e la risposta della pianta (es. aumento di vigore vegetativo) entro 2–3 settimane.
-
----
-## Sinergie con altri elementi
-Le micorrize interagiscono
+3. **Tecnica di applicazione**:
+   - **Metodo diretto**: Mescola l’inoculo con un po’ di substrato umido e posizionalo nel foro di trapianto, a contatto con le radici. Evita di esporre le spore alla luce solare diretta (riduce la vitalità).
+   - **Metodo indiretto**: Spargi l’inoculo sulla superficie del terreno dopo il trapianto e irriga leggermente per favorire la discesa verso le radici.
+   - **Integrazione con compost**: Mescola l’inoculo con compost maturo (come suggerito in [web_zamn_335]) per fornire un substrato ricco di nutrienti e microrganismi benefici che supportino la simbiosi
