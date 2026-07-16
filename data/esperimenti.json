@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-15T05:14:06.177252+00:00",
+  "lastUpdate": "2026-07-16T05:24:44.133602+00:00",
   "versione": "3.0",
   "esperimenti_disponibili": [
     {
@@ -2660,14 +2660,77 @@
       "data_proposta": "2026-07-14",
       "attivo": false,
       "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto della concimazione organica Living Soil sulla produzione di CBDV in piante CBDV+ coltivate in serra outdoor",
+      "ipotesi": "La concimazione organica (Manuale A) arricchisce il suolo di microrganismi simbionti che, in sinergia con semi di piante CBDV+ (Manuale B), aumentano la produzione di CBDV e altri cannabinoidi secondari (es. CBG) grazie a un metabolismo radicale più efficiente. L'ipotesi si basa sulla sinergia tra micorrize e batteri del suolo (favoriti dalla concimazione organica) e la genetica delle piante CBDV+ (semi selezionati per alto CBDV).",
+      "protocollo": [
+        "Preparare 2 vasche da 50L di Living Soil (compost maturo + biochar + micorrize commerciali) in serra outdoor, identiche per composizione e umidità. Una vasca sarà il controllo (solo acqua), l'altra sarà trattata con concimazione organica (Manuale A: compost tea + alghe + funghi micorrizici).",
+        "Seminare 10 semi di una varietà CBDV+ autofiorente (es. 'CBDV Dream' da seedbank) in ogni vasca, mantenendo le stesse condizioni di luce, temperatura e umidità. Marcare le piante per tracciabilità.",
+        "Dopo 14 giorni (fase vegetativa), misurare l'altezza delle piante e il numero di nodi in entrambe le vasche. Applicare il trattamento organico solo alla vasca sperimentale (compost tea ogni 3 giorni + micorrize aggiuntive).",
+        "A 30 giorni (inizio fioritura), raccogliere campioni di foglie apicali da 3 piante per vasca. Misurare i livelli di CBDV, CBG e CBD tramite test HPLC (o kit ELISA se accessibile). Confrontare i risultati tra le due vasche."
+      ],
+      "materiali": [
+        "2 vasche da 50L in plastica riciclata",
+        "Living Soil pre-miscelato (compost + biochar + micorrize commerciali)",
+        "Semi CBDV+ autofiorenti (es. 'CBDV Dream' da seedbank)",
+        "Compost tea (preparato con compost maturo e acqua non clorata)",
+        "Kit di analisi cannabinoidi (HPLC o ELISA) o laboratorio di analisi",
+        "Strumenti di misura: righello, bilancia di precisione, termometro/igrometro"
+      ],
+      "durata_giorni": 30,
+      "misure": [
+        "Livelli di CBDV, CBG e CBD nelle foglie apicali (mg/g di peso secco)",
+        "Altezza delle piante e numero di nodi a 14 e 30 giorni",
+        "Peso fresco delle piante a raccolta",
+        "Verifica: confronto statistico (t-test) tra i valori delle due vasche"
+      ],
+      "variabili_controllo": "Genetica delle piante (stessa varietà), condizioni ambientali (luce, temperatura, umidità), volume di suolo, metodo di raccolta dei campioni, metodo di analisi dei cannabinoidi",
+      "categoria": "living_soil",
+      "difficolta": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cos'è La CBDV?",
+      "originalita": "Questo esperimento non è descritto in nessuno dei due manuali singolarmente. Il Manuale A si concentra sulla concimazione organica senza specificare l'uso di semi CBDV+, mentre il Manuale B tratta la selezione dei semi CBDV senza approfondire l'interazione con il suolo. L'originalità sta nell'incrocio di questi due aspetti per valutare un effetto sinergico misurabile.",
+      "id": "esp_conn_2026-07-16_001",
+      "data_proposta": "2026-07-16",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
+    },
+    {
+      "nome": "Effetto sinergico tra substrato biologico in vaso e semi femminizzati su resa CBD in serra Living Soil",
+      "ipotesi": "L'utilizzo combinato di vasi con terreno biologico (Living Soil) e semi femminizzati aumenterà la resa in CBD/THC del 20-30% rispetto a controlli con substrato standard e semi regolari. Questo perché: 1) Il terreno biologico (Manuale A) favorisce lo sviluppo radicale e l'assorbimento di nutrienti, massimizzando la sintesi di cannabinoidi; 2) I semi femminizzati (Manuale B) garantiscono piante produttive al 100%, eliminando sprechi di risorse. La sinergia tra i due elementi ottimizza la fotosintesi e la produzione di flavonoidi (precursori dei cannabinoidi).",
+      "protocollo": [
+        "Preparare 20 vasi identici (10L) con miscela Living Soil (compost maturo, biochar, micorrize, zeolite) e 10 vasi con substrato standard (torba + perlite). Sterilizzare i vasi con acqua bollente.",
+        "Piantare 20 semi femminizzati di una varietà CBD-dominante (es. 'ACDC') in vasi Living Soil e 20 semi regolari della stessa varietà in vasi standard. Mantenere distanza di 30cm tra le piante.",
+        "Irrigare solo con acqua (water-only) per 30 giorni, monitorando umidità del suolo (40-60%) e pH (6.0-6.5). Applicare elettrocultura a bassa intensità (12V DC, 1 ora/giorno) su metà delle piante (5 Living Soil + 5 standard) per stimolare l'assorbimento radicale.",
+        "Al 30° giorno, raccogliere i fiori apicali di tutte le piante, essiccare a 18°C per 7 giorni. Misurare peso secco, % CBD/THC (tramite HPLC o kit rapido), e contenuto di flavonoidi (spettrofotometro portatile)."
+      ],
+      "materiali": [
+        "20 vasi in terracotta (10L), Living Soil pre-miscelato (compost, biochar, micorrize, zeolite), semi femminizzati 'ACDC', semi regolari 'ACDC', acqua demineralizzata, pHmetro, igrometro, sistema elettrocultura (batteria 12V, elettrodi in rame), essiccatore, bilancia di precisione, kit analisi CBD/THC, spettrofotometro per flavonoidi."
+      ],
+      "durata_giorni": 37,
+      "misure": [
+        "Peso secco dei fiori (g/piante), % CBD e THC (HPLC o kit), contenuto di flavonoidi (mg/g), resa totale CBD (g/m²). Verifica tramite ANOVA per confrontare gruppi (Living Soil vs standard, femminizzati vs regolari, elettrocultura vs controllo).",
+        "Documentazione fotografica dello sviluppo radicale (estrazione non distruttiva di 3 piante per gruppo)."
+      ],
+      "variabili_controllo": "Varietà di pianta, volume del vaso, quantità di acqua, esposizione solare, temperatura, umidità, durata della fioritura (30 giorni), metodo di essiccazione.",
+      "categoria": "sinergia",
+      "difficoltà": "media",
+      "fonte_a": "The RQS Blog",
+      "fonte_b": "Che Cosa Sono I Flavonoidi?",
+      "originalità": "L'esperimento combina due concetti chiave (vasi biologici + semi femminizzati) in un protocollo originale che integra elettrocultura e analisi dei flavonoidi, non presente nei manuali di origine. La misura della resa CBD in funzione della sinergia tra substrato e genetica è un approccio innovativo per la serra BioSerra Caserta.",
+      "id": "esp_conn_2026-07-16_002",
+      "data_proposta": "2026-07-16",
+      "attivo": false,
+      "tipo": "connessione_pairwise"
     }
   ],
   "attivi": [],
   "aggiornato": "2026-06-19 09:38",
   "ultima_generazione": {
-    "data": "2026-07-15",
-    "nuove_proposte": 0,
-    "pdf_analizzati": 226,
-    "connessioni_usate": 181
+    "data": "2026-07-16",
+    "nuove_proposte": 2,
+    "pdf_analizzati": 242,
+    "connessioni_usate": 213
   }
 }
