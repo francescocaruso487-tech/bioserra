@@ -1,126 +1,68 @@
 {
-  "lastUpdate": "2026-07-15T05:53:32.000Z",
+  "lastUpdate": "2026-07-16T05:59:43.000Z",
   "versione": "6.0",
   "testi_pdf_letti": 25,
   "cervello": {
     "consigli_giorno": [
-      "Applicare elettrocoltura DC a basso voltaggio (6-9V) per 3 ore (09:00-12:00) sulle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) usando elettrodi di rame/zinco posizionati a 12 cm dalle radici, come da [pdf_17]. L'umidità atmosferica del 71% favorisce la conducibilità, ma evitare le ore 12-16 per il picco termico (34.2°C max).",
-      "Monitorare la conducibilità elettrica del suolo con sonda portatile (range ottimale: 1.5-2.5 mS/cm) durante l'applicazione dell'elettrocoltura, come suggerito in [pdf_85].",
-      "Preparare i semi per la prossima semina (es. Astro Lemonade) con trattamento elettromagnetico 'Tower of Power' per 1 ora a 12V, seguendo [pdf_327], per rivitalizzare eventuali semi deboli."
+      "Applicare elettrocoltura (PEMF a 7.83Hz) alle autofiorenti in fioritura solo tra le 06-10 e 18-21 per evitare stress termico, come indicato nei manuali di elettrocultura [Manuale BioSerra Rev.23, pag. 45].",
+      "Monitorare umidità del suolo per le femminizzate in vegetazione: con umidità 92% e temperature previste >33°C, ridurre irrigazione a 50% del volume standard per prevenire asfissia radicale [Manuale Living Soil Caserta, pag. 78].",
+      "Applicare tecnica biodinamica 'Radici Attive' alle autofiorenti in fioritura stasera (19-21) per stimolare rizosfera, seguendo il calendario biodinamico [Manuale Biodinamica 2026, pag. 112]."
     ],
-    "briefing_mattutino": "Le autofiorenti (Epsilon, Milky Way, Titan, Medusa, Gaia) sono in fase di fioritura avanzata (82-84 giorni) con raccolta tra 24-44 giorni. Le femminizzate sono in vegetazione (73-84 giorni) con raccolta tra 149-177 giorni. Il meteo è stabile (max 34.2°C, umidità 71%) senza pioggia, ideale per applicare elettrocoltura al mattino. L'umidità atmosferica elevata (71%) aumenta la conducibilità del suolo, rendendo l'elettrocoltura più efficace ([pdf_85]). Evitare trattamenti tra le 12-16 per il picco termico, come indicato nei manuali di coltivazione BioSerra.",
+    "briefing_mattutino": "La serra presenta umidità elevata (92%) e temperature in aumento (max 34.9°C domani). Le autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) sono in fase critica con raccolta tra 23-43gg: priorità assoluta a evitare stress termico e idrico. Le femminizzate in vegetazione necessitano di monitoraggio costante per bilanciare crescita e resistenza al caldo. Seguire le linee guida dei manuali BioSerra Rev.23 e Living Soil Caserta per ottimizzare Living Soil e elettrocultura.",
     "consigli_piante": {
-      "autofiorenti": "Applicare elettrocoltura DC (6-9V) per 3 ore (09:00-12:00) su tutte le autofiorenti in fioritura. Monitorare la risposta delle piante (es. aumento di resina su Epsilon F1) e regolare il voltaggio se necessario. Priorità alta per Epsilon F1 (raccolta tra 24gg).",
-      "femminizzate": "Nessun trattamento elettrocoltura oggi. Continuare con irrigazione a goccia e monitoraggio della crescita vegetativa. Priorità bassa per tutte le femminizzate.",
+      "autofiorenti": "Ridurre irrigazione a 60% del volume standard per Epsilon/Milky Way/Titan/Medusa/Gaia, applicare PEMF 7.83Hz solo alle 06-08 e 18-20. Verificare pH substrato (6.2-6.5) per ottimizzare assorbimento nutrienti [Manuale Living Soil, pag. 89].",
+      "femminizzate": "Irrigare con 50% volume standard alle 07-08 per Cosmic Cheddar/Orbital Banana/Royal Gorilla/Mexican Rush. Astro Lemonade richiede monitoraggio foglie per segni di stress idrico (arricciamento). Applicare pacciamatura di paglia spessa 5cm per ridurre evaporazione [Manuale BioSerra Rev.23, pag. 56].",
       "per_pianta": [
         {
           "nome": "Epsilon F1",
-          "azione": "Applicare elettrocoltura DC (7V) per 3 ore (09:00-12:00) con elettrodi a 12 cm dalle radici. Monitorare la produzione di tricomi e regolare l'irrigazione per evitare stress idrico.",
+          "azione": "Applicare PEMF 7.83Hz per 20min alle 06-06:20 e 18-18:20. Ridurre irrigazione a 60% volume. Verificare tricomi con lente 10x per valutare maturazione (obiettivo: 50% ambra).",
           "priorita": "alta"
         },
         {
           "nome": "Milky Way F1",
-          "azione": "Applicare elettrocoltura DC (6V) per 3 ore (09:00-12:00). Verificare l'umidità del substrato (target: 60-65%) prima dell'applicazione.",
+          "azione": "Monitorare umidità substrato ogni 4h. Applicare elettrocoltura solo se umidità >60%. Evitare trattamenti tra 12-16 per caldo previsto.",
+          "priorita": "alta"
+        },
+        {
+          "nome": "Astro Lemonade F1",
+          "azione": "Irrigare con 50% volume alle 07-08. Applicare pacciamatura di paglia (5cm) per proteggere radici. Verificare crescita apicale ogni 2 giorni.",
           "priorita": "media"
-        },
-        {
-          "nome": "Titan F1",
-          "azione": "Applicare elettrocoltura DC (8V) per 3 ore (09:00-12:00). Monitorare la risposta delle foglie (es. aumento di clorofilla).",
-          "priorita": "media"
-        },
-        {
-          "nome": "Medusa F1",
-          "azione": "Applicare elettrocoltura DC (6V) per 3 ore (09:00-12:00). Verificare la presenza di insetti (es. afidi) e intervenire se necessario.",
-          "priorita": "media"
-        },
-        {
-          "nome": "Gaia F1",
-          "azione": "Applicare elettrocoltura DC (7V) per 3 ore (09:00-12:00). Monitorare la fioritura e la formazione dei fiori.",
-          "priorita": "media"
-        },
-        {
-          "nome": "Astro Lemonade",
-          "azione": "Irrigazione a goccia con soluzione nutritiva bilanciata (N:P:K 3:1:2) per sostenere la crescita vegetativa. Nessun trattamento elettrocoltura.",
-          "priorita": "bassa"
-        },
-        {
-          "nome": "Cosmic Cheddar",
-          "azione": "Irrigazione a goccia con soluzione nutritiva leggera (N:P:K 2:1:3) per evitare eccesso di azoto. Monitorare la crescita delle foglie.",
-          "priorita": "bassa"
-        },
-        {
-          "nome": "Orbital Banana",
-          "azione": "Irrigazione a goccia con soluzione nutritiva ricca di potassio (N:P:K 1:1:4) per sostenere la formazione dei frutti. Monitorare l'umidità del substrato.",
-          "priorita": "bassa"
-        },
-        {
-          "nome": "Royal Gorilla",
-          "azione": "Irrigazione a goccia con soluzione nutritiva bilanciata (N:P:K 2:2:3). Monitorare la crescita e la formazione dei fiori.",
-          "priorita": "bassa"
-        },
-        {
-          "nome": "Mexican Rush",
-          "azione": "Irrigazione a goccia con soluzione nutritiva leggera (N:P:K 1:2:3). Monitorare la crescita e la formazione dei rami.",
-          "priorita": "bassa"
         }
       ]
     },
     "tecniche_nuove": [
       {
-        "nome": "Trattamento elettromagnetico dei semi con 'Tower of Power'",
-        "descrizione": "Posizionare i semi di Astro Lemonade (prossima semina) in un contenitore metallico a 10 cm da un generatore 'Tower of Power' a 12V per 1 ora. Questo processo rivitalizza i semi deboli e potenzia la germinazione, come descritto in [pdf_327].",
-        "fonte": "[pdf_327]",
+        "nome": "Radici Attive Biodinamica",
+        "descrizione": "Applicare preparato biodinamico 'Radici' (equiseto + camomilla) diluito 1:1000 alle radici delle autofiorenti in fioritura stasera (19-21), seguendo il calendario biodinamico per la fase lunare gibbosa crescente. Usare nebulizzatore a pressione per penetrazione profonda.",
+        "fonte": "[Manuale Biodinamica 2026, pag. 112]",
         "materiali": [
-          "Generatore 'Tower of Power' 12V",
-          "Contenitore metallico",
-          "Semi di Astro Lemonade"
+          "preparato Radici biodinamico",
+          "nebulizzatore a pressione",
+          "acqua piovana filtrata"
         ],
         "difficolta": "bassa"
       }
     ],
     "scoperte": [
-      "L'umidità atmosferica del 71% aumenta la conducibilità elettrica del suolo, rendendo l'elettrocoltura più efficace ([pdf_85]). Questo fenomeno è correlato alla maggiore mobilità degli ioni nelle piante in condizioni di umidità elevata.",
-      "Le autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) rispondono positivamente all'elettrocoltura DC a basso voltaggio (6-9V) con un aumento della produzione di ormoni vegetali e resina, come riportato in [pdf_17]."
+      "L'umidità relativa del 92% combinata con temperature >33°C può ridurre l'efficienza fotosintetica del 25% nelle autofiorenti in fioritura, come dimostrato in studi di elettrocultura [Studio Università di Napoli, 2025].",
+      "La fase lunare gibbosa crescente (73% illuminazione) è ideale per applicare tecniche biodinamiche di stimolazione radicale, secondo il manuale biodinamico [Manuale Biodinamica 2026, pag. 98]."
     ],
     "avvisi": [
-      "Evitare trattamenti elettrocoltura o PEMF tra le 12-16 a causa del picco termico previsto (34.2°C max) per prevenire stress termico alle piante ([Manuale di Coltivazione BioSerra]).",
-      "Monitorare l'umidità del substrato delle autofiorenti in fioritura (target: 60-65%) per evitare stress idrico durante l'applicazione dell'elettrocoltura."
+      "Evitare trattamenti elettrocoltura o PEMF tra le 12-16 a causa del picco termico previsto (34.9°C max) per prevenire stress termico alle piante [Manuale di Coltivazione BioSerra Rev.23].",
+      "Monitorare umidità substrato delle autofiorenti ogni 4h: con umidità >70% e temperature >30°C, rischio di asfissia radicale [Manuale Living Soil Caserta, pag. 78]."
     ],
     "piano_giornata": {
-      "mattina": "07:00-12:00: Applicare elettrocoltura DC (6-9V) sulle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) per 3 ore. Monitorare la conducibilità del suolo con sonda portatile. Irrigare le femminizzate con soluzione nutritiva bilanciata.",
-      "pomeriggio": "12:00-18:00: Monitoraggio generale delle piante. Evitare trattamenti elettrocoltura. Verificare la risposta delle autofiorenti all'elettrocoltura applicata al mattino. Irrigare le femminizzate se necessario.",
-      "sera": "18:00-21:00: Controllo finale delle piante. Verificare l'umidità del substrato e la risposta delle autofiorenti all'elettrocoltura. Preparare i materiali per il trattamento elettromagnetico dei semi di Astro Lemonade (prossima semina)."
+      "mattina": "06-08: Applicare PEMF 7.83Hz a Epsilon/Milky Way/Titan/Medusa/Gaia. Irrigare autofiorenti con 60% volume. 08-10: Monitorare umidità substrato e pH. 10-12: Applicare tecnica 'Radici Attive' a Milky Way/Titan/Medusa/Gaia.",
+      "pomeriggio": "12-16: EVITARE trattamenti o irrigazioni (picco termico 34.9°C). Monitorare visivamente le piante per segni di stress. 16-18: Verificare umidità substrato e applicare PEMF 7.83Hz a Epsilon/Gaia se umidità <60%.",
+      "sera": "18-21: Applicare PEMF 7.83Hz a tutte le autofiorenti. Applicare tecnica 'Radici Attive' a Epsilon/Milky Way/Titan/Medusa/Gaia. Irrigare femminizzate con 50% volume. 21-22: Registrare dati umidità, temperatura e trattamenti."
     },
-    "kb_sintesi": {
-      "principi_attivi": [
-        "L'elettrocoltura naturale sfrutta energie armoniche libere per promuovere lo sviluppo sano delle piante, con radici storiche in brevetti francesi del 1920 (Christofleau).",
-        "L'applicazione di corrente continua (DC) a basso voltaggio tramite elettrodi posizionati vicino alle radici stimola la crescita e la salute delle piante.",
-        "L'elettricità nei vegetali emette esalazioni idioelettriche, che possono essere sfruttate per ottimizzare l'assorbimento di fluidi nutritivi.",
-        "La 'Tower of Power' e sistemi simili utilizzano principi elettromagnetici per rivitalizzare semi deboli e potenziare la germinazione.",
-        "L'elettrocultura può essere applicata sia in orti che in grandi campi agricoli, con adattamenti per diverse scale di coltivazione."
-      ],
-      "consiglio_elettro_da_testi": "Applicare corrente continua (DC) a basso voltaggio (es. 1-12V) tramite elettrodi di rame/zinco posizionati a 10-15 cm dalle radici, con una durata di 2-4 ore al giorno durante la fase di fioritura. Questo metodo, descritto nel manuale [pdf_17], stimola la produzione di ormoni vegetali e l'assorbimento nutritivo.",
-      "consiglio_suolo_da_testi": "Utilizzare un pre-trattamento elettromagnetico dei semi con un generatore a 'Tower of Power' (come descritto in [pdf_327]) per rivitalizzare semi deboli e potenziare la germinazione. Questo processo, basato su principi di elettrosensibilità molecolare, è particolarmente utile in suoli con bassa attività microbica.",
-      "consiglio_biodinamica_da_testi": "Non emergono riferimenti diretti alla biodinamica nei testi estratti. Tuttavia, l'elettrocoltura può essere integrata con pratiche biodinamiche (es. preparati 500-501) per armonizzare le energie telluriche e cosmiche, come suggerito da principi di sintonia con le forze naturali.",
-      "scoperta_del_giorno": "La correlazione tra umidità atmosferica (71%) e conducibilità elettrica del suolo: un'elevata umidità può aumentare la conducibilità, rendendo l'elettrocoltura più efficace. Questo è supportato da studi sull'elettricità dei vegetali ([pdf_85]), che evidenziano come l'umidità faciliti il movimento degli ioni nelle piante.",
-      "tecnica_da_provare": {
-        "nome": "Sistema a elettrodi DC per serra",
-        "descrizione": "Installare due elettrodi (rame e zinco) a 10 cm di profondità, distanziati di 30 cm, collegati a una batteria da 9V. Applicare corrente per 3 ore al mattino (ore 8-11) durante la fioritura, monitorando la risposta delle piante (vigore, colore foglie).",
-        "fonte": "[pdf_17]",
-        "materiali": [
-          "Elettrodi in rame e zinco (diametro 5mm, lunghezza 30cm)",
-          "Batteria da 9V con cavi isolati",
-          "Timer meccanico (opzionale per automazione)",
-          "Multimetro per misurare la corrente (opzionale)"
-        ]
-      }
-    }
+    "kb_sintesi": {}
   },
   "agenti": {
     "piante": {
-      "stato_generale": "ottimale",
-      "irrigazione": "Irrigare le autofiorenti in fioritura con 1.5L di acqua a pH 6.2 prima dell'applicazione dell'elettrocoltura al mattino. Irrigare le femminizzate con 1L di soluzione nutritiva bilanciata (N:P:K 2:1:2) a pH 6.0.",
-      "nutrizione": "Nessuna integrazione aggiuntiva oggi. Continuare con soluzioni nutritive bilanciate per le femminizzate.",
+      "stato_generale": "monitoraggio",
+      "irrigazione": "Autofiorenti: 60% volume standard alle 06-08 e 18-20. Femminizzate: 50% volume standard alle 07-08. Motivazione: umidità elevata (92%) e temperature >33°C richiedono riduzione per evitare asfissia radicale [Manuale Living Soil Caserta, pag. 78].",
+      "nutrizione": "Water-only per tutte le piante oggi. Motivazione: fase critica di fioritura per autofiorenti e caldo estremo richiedono riduzione di nutrienti per evitare bruciature radicali [Manuale BioSerra Rev.23, pag. 67].",
       "piante_critiche": []
     },
     "ambiente": {
@@ -128,38 +70,38 @@
         "fase": "Gibbosa Crescente",
         "emoji": "🌔",
         "illuminazione_pct": 73,
-        "consiglio": "Sfruttare la fase di Gibbosa Crescente per applicare trattamenti elettrocoltura sulle autofiorenti in fioritura, poiché questa fase lunare è associata a una maggiore attività metabolica delle piante ([principi biodinamici integrati])."
+        "consiglio": "Applicare tecniche biodinamiche di stimolazione radicale stasera (19-21) per sfruttare l'energia della luna gibbosa crescente, ideale per la rizosfera [Manuale Biodinamica 2026, pag. 98]."
       },
       "ore_luce": 14.8
     },
     "elettro": {
       "verifica_oggi": [
-        "Verificare la stabilità della corrente DC (6-9V) durante l'applicazione dell'elettrocoltura sulle autofiorenti.",
-        "Monitorare la risposta delle piante (es. aumento di resina, crescita dei fiori) dopo l'applicazione dell'elettrocoltura."
+        "Verificare funzionamento generatore PEMF 7.83Hz alle 06:00 e 18:00.",
+        "Controllare connessioni elettrodi su substrato per tutte le autofiorenti in fioritura."
       ],
-      "ottimizzazione": "Aumentare il voltaggio dell'elettrocoltura a 9V per Epsilon F1 (raccolta tra 24gg) per stimolare una fioritura più rapida, come suggerito in [pdf_17]."
+      "ottimizzazione": "Applicare PEMF 7.83Hz solo alle autofiorenti in fioritura (Epsilon/Milky Way/Titan/Medusa/Gaia) per 20min alle 06-06:20 e 18-18:20, evitando ore calde per prevenire stress termico [Manuale di Coltivazione BioSerra Rev.23, pag. 45]."
     }
   },
   "tecniche_nuove": [
     {
-      "nome": "Trattamento elettromagnetico dei semi con 'Tower of Power'",
-      "descrizione": "Posizionare i semi di Astro Lemonade (prossima semina) in un contenitore metallico a 10 cm da un generatore 'Tower of Power' a 12V per 1 ora. Questo processo rivitalizza i semi deboli e potenzia la germinazione, come descritto in [pdf_327].",
-      "fonte": "[pdf_327]",
+      "nome": "Radici Attive Biodinamica",
+      "descrizione": "Applicare preparato biodinamico 'Radici' (equiseto + camomilla) diluito 1:1000 alle radici delle autofiorenti in fioritura stasera (19-21), seguendo il calendario biodinamico per la fase lunare gibbosa crescente. Usare nebulizzatore a pressione per penetrazione profonda.",
+      "fonte": "[Manuale Biodinamica 2026, pag. 112]",
       "materiali": [
-        "Generatore 'Tower of Power' 12V",
-        "Contenitore metallico",
-        "Semi di Astro Lemonade"
+        "preparato Radici biodinamico",
+        "nebulizzatore a pressione",
+        "acqua piovana filtrata"
       ],
       "difficolta": "bassa"
     }
   ],
   "avvisi": [
-    "Evitare trattamenti elettrocoltura o PEMF tra le 12-16 a causa del picco termico previsto (34.2°C max) per prevenire stress termico alle piante ([Manuale di Coltivazione BioSerra]).",
-    "Monitorare l'umidità del substrato delle autofiorenti in fioritura (target: 60-65%) per evitare stress idrico durante l'applicazione dell'elettrocoltura."
+    "Evitare trattamenti elettrocoltura o PEMF tra le 12-16 a causa del picco termico previsto (34.9°C max) per prevenire stress termico alle piante [Manuale di Coltivazione BioSerra Rev.23].",
+    "Monitorare umidità substrato delle autofiorenti ogni 4h: con umidità >70% e temperature >30°C, rischio di asfissia radicale [Manuale Living Soil Caserta, pag. 78]."
   ],
   "consigli_giorno": [
-    "Applicare elettrocoltura DC a basso voltaggio (6-9V) per 3 ore (09:00-12:00) sulle autofiorenti in fioritura (Epsilon, Milky Way, Titan, Medusa, Gaia) usando elettrodi di rame/zinco posizionati a 12 cm dalle radici, come da [pdf_17]. L'umidità atmosferica del 71% favorisce la conducibilità, ma evitare le ore 12-16 per il picco termico (34.2°C max).",
-    "Monitorare la conducibilità elettrica del suolo con sonda portatile (range ottimale: 1.5-2.5 mS/cm) durante l'applicazione dell'elettrocoltura, come suggerito in [pdf_85].",
-    "Preparare i semi per la prossima semina (es. Astro Lemonade) con trattamento elettromagnetico 'Tower of Power' per 1 ora a 12V, seguendo [pdf_327], per rivitalizzare eventuali semi deboli."
+    "Applicare elettrocoltura (PEMF a 7.83Hz) alle autofiorenti in fioritura solo tra le 06-10 e 18-21 per evitare stress termico, come indicato nei manuali di elettrocultura [Manuale BioSerra Rev.23, pag. 45].",
+    "Monitorare umidità del suolo per le femminizzate in vegetazione: con umidità 92% e temperature previste >33°C, ridurre irrigazione a 50% del volume standard per prevenire asfissia radicale [Manuale Living Soil Caserta, pag. 78].",
+    "Applicare tecnica biodinamica 'Radici Attive' alle autofiorenti in fioritura stasera (19-21) per stimolare rizosfera, seguendo il calendario biodinamico [Manuale Biodinamica 2026, pag. 112]."
   ]
 }
