@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-07-15
+aggiornato: 2026-07-16
 pdf_count: 6
 ---
 
@@ -12,32 +12,33 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il compostaggio organico è un processo biologico di decomposizione controllata di materiali organici (scarti verdi e marroni) che trasforma la materia in un ammendante ricco di nutrienti, microrganismi benefici e sostanza organica stabile. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e organismi del suolo, che decompongono la materia in humus, un composto stabile e ricco di nutrienti assimilabili dalle piante. In un sistema **Living Soil**, il compost di qualità è fondamentale per mantenere la struttura del substrato, migliorare la capacità di scambio cationico (CEC) e fornire un apporto costante di nutrienti durante le fasi di germinazione e vegetazione.
+Il **compostaggio organico** è un processo biologico controllato che trasforma materiali organici di scarto (come residui vegetali, letame, scarti di cucina) in un ammendante stabile e ricco di nutrienti, noto come **compost**. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macroorganismi (lombrichi, acari, collemboli) che decompongono la materia organica in condizioni aerobiche. Il compost maturo è un **Living Soil** in miniatura: migliora la struttura del suolo, aumenta la capacità di ritenzione idrica, fornisce nutrienti a lento rilascio e stimola la biodiversità microbica, essenziale per piante sane e produttive.
 
-Il meccanismo d’azione si basa su una **fermentazione aerobica** (in presenza di ossigeno), che evita la formazione di odori sgradevoli e produce un compost maturo, privo di patogeni e semi di infestanti. La temperatura ideale (55-65°C) favorisce la proliferazione di microrganismi termofili, accelerando la decomposizione e garantendo un prodotto finale equilibrato. Un compost ben fatto apporta non solo macro e micronutrienti, ma anche **sostanze umiche** (acidi umici e fulvici), che migliorano l’assorbimento radicale e la resilienza delle piante agli stress ambientali.
+Il meccanismo si basa su **tre fasi principali**:
+1. **Fase mesofila** (15–45°C): decomposizione iniziale da parte di batteri e funghi, con produzione di calore e CO₂.
+2. **Fase termofila** (55–65°C): temperatura ottimale per eliminare patogeni, semi di malerbe e insetti, mentre i microrganismi termofili (come *Thermomyces*) accelerano la degradazione.
+3. **Fase di maturazione** (20–40°C): umificazione e stabilizzazione della sostanza organica, con formazione di humus stabile e nutrienti assimilabili dalle piante.
+
+In **Living Soil outdoor** (come a Caserta, 41°N), il compost è fondamentale per **ricreare un ecosistema suolo autosostenibile**, riducendo la necessità di fertilizzanti chimici e migliorando la resilienza delle piante durante le fasi di **germinazione** e **vegetazione**. Un compost ben fatto apporta **azoto (N), fosforo (P), potassio (K) e micronutrienti** in equilibrio, oltre a **sostanze umiche** che chelano i minerali e migliorano l’assorbimento radicale.
+
+---
 
 ## Come si applica in serra
-Per produrre compost di qualità in una **serra outdoor Living Soil a Caserta** (41°N), segui questi passaggi:
 
-1. **Selezione dei materiali**:
-   - **Verde (azotati)**: scarti di cucina (resti di frutta/verdura), erba fresca, foglie verdi, fondi di caffè, letame fresco (es. equino o bovino).
-   - **Marroni (carboniosi)**: paglia, foglie secche, cartone non stampato, rametti triturati, gusci di noce.
-   - **Rapporto ideale**: 2 parti marroni : 1 parte verde (in volume). Regola in base all’umidità: il cumulo deve essere umido come una spugna strizzata.
+### **1. Scelta dei materiali**
+- **Materiali verdi** (ricchi di azoto, rapporto C/N < 20:1):
+  - Scarti di frutta/verdura, erba fresca, letame (es. equino o bovino), fondi di caffè.
+  - *Quantità*: 30–50% del volume totale.
+- **Materiali marroni** (ricchi di carbonio, rapporto C/N > 30:1):
+  - Foglie secche, paglia, cartone non stampato, rametti triturati, segatura (usata con moderazione).
+  - *Quantità*: 50–70% del volume totale.
+- **Evita**: carne, latticini, oli, piante malate (pericolo di patogeni), cenere in eccesso (può aumentare il pH).
 
-2. **Costruzione del cumulo**:
-   - Crea una pila di almeno **1 m³** (dimensione minima per mantenere la temperatura).
-   - Alterna strati di materiali verdi e marroni, aggiungendo uno strato di **terriccio o compost maturo** ogni 20 cm per inoculare microrganismi benefici.
-   - Posiziona il cumulo in un’area ombreggiata della serra, su terreno nudo (non su cemento) per favorire l’aerazione dal basso.
+### **2. Preparazione del cumulo**
+- **Ubicazione**: In serra, scegli un’area ombreggiata e ben drenata (evita ristagni).
+- **Struttura**: Costruisci un cumulo a forma di tronco di cono (1–1,5 m di altezza, 1–2 m di diametro) per ottimizzare aerazione e ritenzione di calore.
+- **Inoculo**: Aggiungi un **starter microbico** (es. compost maturo, micorrize, o un preparato come *EM-1*) per accelerare la decomposizione.
 
-3. **Gestione della temperatura e umidità**:
-   - **Temperatura**: Monitora con un termometro da compost. Se supera i 65°C, gira il cumulo per abbassarla; se scende sotto i 55°C, aggiungi materiali verdi o copri con un telo per trattenere il calore.
-   - **Umidità**: Mantieni il 50-60% (non deve gocciolare quando strizzato). In estate (Caserta), copri con un telo traspirante per evitare essiccazione.
-
-4. **Rivoltamento e maturazione**:
-   - **Rivolta ogni 2-3 giorni** con una forca o pala, mescolando bene gli strati per garantire aerazione e omogeneità.
-   - **Tempo di maturazione**: 2-4 mesi (a seconda della stagione). Il compost è pronto quando:
-     - Ha un odore di terra umida (non di ammoniaca o marcio).
-     - Ha un colore scuro e struttura simile a terriccio.
-     - Non si riscalda più dopo il rivoltamento.
-
-5. **Utilizzo in serra**:
+### **3. Gestione del processo**
+- **Umidità**: Mantieni il cumulo umido come una spugna strizzata (60–70% di umidità). Se troppo secco, aggiungi acqua; se troppo bagnato, aggiungi materiali marroni.
+- **Temperatura
