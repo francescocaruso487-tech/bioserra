@@ -491,26 +491,18 @@ Amplificatori operazionali, XVII-73
 - caratteristica di trasferimento, XVII-74
 - circuiti lineari, XVII-76
 - circuiti non lineari, XVII-79
-- circuito derivatore, XVII-78
-- circuito integratore, XVII-79
-- ideali, XVII-76
-- modello, XVII-74
-- raddrizzatori di precisione, XVII-81
-- risposta al transitorio, XVII-75
-- risposta in frequenza,
-Amplificatori reazionati, XVII-31
-Analisi in frequenza, amplificatori, XVII-24
+- circuito derivatore,
 Analisi nel dominio del tempo, amplificatori, XVII-30
-AND, porte, XVII-98
+Porte AND, XVII-98
 Angolo di circolazione, XVII-162
-ASCII, codice, XVII-88
+Codice ASCII, XVII-88
 Attuatori, circuiti di comando a ponte, XVII-177
 - comando di motore passo-passo, XVII-179
 - sovratensioni, XVII-178
 - tempi di risposta, XVII-179
 Banda passante, XVII-29
-Barkhausen, criterio, XVII-135
-Base, sistemi numerici, XVII-82
+Criterio di Barkhausen, XVII-135
+Sistemi numerici in base, XVII-82
 Bilancio energetico, amplificatori, XVII-164
 Bipoli, XVII-9
 Bit, XVII-4
@@ -527,7 +519,7 @@ BJT, XVII-49
 - stabilizzazione, XVII-52
 - struttura, XVII-49
 - di potenza, XVII-163
-Bode, diagrammi, XVII-28
+Diagrammi di Bode, XVII-28
 Breakdown, diodi, XVII-41
 Circuiti, lineari, XVII-6
 - tempo invarianti, XVII-6
@@ -535,7 +527,7 @@ Circuiti, lineari, XVII-6
 - combinatori, XVII-102
 - risonante, XVII-20
 Classi di amplificazione, XVII-162
-CMOS, circuiti digitali, XVII-71
+Circuiti digitali CMOS, XVII-71
 Codice ASCII, XVII-88
 Codici, alfanumerici, XVII-88
 - numerici, XVII-87
@@ -558,7 +550,7 @@ Conversione, A/D, XVII-183
 - D/A, XVII-180
 Convertitore, A/D ad approssimazioni successive, XVII-188
 - D/A a resistori pesati, XVII-186
-De Morgan, teorema, XVII-89
+Teorema di De Morgan, XVII-89
 Decodifica, circuiti, XVII-107
 Demultiplexer, XVII-110
 Derivatori, circuiti con AO, XVII-78
@@ -580,7 +572,7 @@ Divisori di frequenza, XVII-125
 ECL, XVII-70
 Elementi concentrati, XVII-6
 Elettroni liberi, XVII-37
-Famiglie, integrati, XVII-6
+Famiglie di integrati, XVII-6
 FdT, XVII-12
 Filtri, XVII-147
 - attivi, XVII-156
@@ -893,6 +885,10 @@ Inverter, XVIII-19, 22, 35, 48, 53
 - a mezzo ponte, XVIII-52
 - a quattro quadranti, XVIII-50
 - a transistor, XVIII-50
+Ecco la traduzione fedele del testo, mantenendo tutti i termini tecnici, numeri, misure e riferimenti:
+
+---
+
 - a tiristori, XVIII-50
 - ad un quadrante, XVIII-50
 - parallelo, XVIII-50, 51
@@ -1313,21 +1309,20 @@ Relazione, descrittiva, XX-7
 , generale, XX-7, 54, 75
 , illustrativa, XX-5, 68, 86
 , specialistica, XX-7, 55, 75
-, tecnica, XX-6
 Resistenza termica, XX-141÷146, 173, 174
-, contenitore-ambiente, XX-144
-, contenitore-dissipatore, XX-144, 145
-, dissipatore-ambiente, XX-145
-, giunzione-ambiente, XX-142
-, giunzione-contenitore, XX-142
+Contenitore-ambiente, XX-144
+Contenitore-dissipatore, XX-144, 145
+Dissipatore-ambiente, XX-145
+Giunzione-ambiente, XX-142
+Giunzione-contenitore, XX-142
 Ricerca dei guasti, XX-118
 Ripple, XX-151, 152, 166
 Saldatura, XX-130÷134
-, a onda, XX-134
-Schede eurocard, XX-123
+– a onda, XX-134
+Schede Eurocard, XX-123
 Schema, dell’impianto elettrico, XX-8
-, di contratto, XX-8
-, elettrico generale, XX-7
+– di contratto, XX-8
+– elettrico generale, XX-7
 Serratura elettronica, XX-196÷211
 SMD, XX-134, 135
 SMT, XX-134, 135
@@ -1338,7 +1333,7 @@ Tabelle di coordinamento delle protezioni, XX-8, 72, 94
 Tecnica di montaggio superficiale, XX-134
 Tecniche di saldatura, automatica, XX-133, 134
 – manuale, XX-133
-Temporizzatore, 555 XX-185÷187
+Temporizzatore, 555, XX-185÷187
 Tensione di dropout, XX-161
 Trasformatore, XX-149
 Valutazione dei costi, XX-126÷128
