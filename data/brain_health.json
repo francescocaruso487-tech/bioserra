@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-15T05:09:41.148559+00:00",
+  "lastUpdate": "2026-07-16T05:19:30.142295+00:00",
   "analisi": {
     "totale_voci": 341,
     "pipeline_v25_fulltext": 79,
@@ -154,14 +154,14 @@
     "lingua_breakdown": {
       "it": 79
     },
-    "chunk_progresso_doc_con_dato": 15,
-    "chunk_progresso_totale_tradotti": 49,
-    "chunk_progresso_totale_chunk": 321,
+    "chunk_progresso_doc_con_dato": 17,
+    "chunk_progresso_totale_tradotti": 61,
+    "chunk_progresso_totale_chunk": 329,
     "chunk_progresso_anomalie": [
       {
         "id": "pdf_331",
         "chunk_progresso": {
-          "tradotti": 6,
+          "tradotti": 8,
           "totale": 4
         }
       }
@@ -172,26 +172,26 @@
     "lingua_breakdown": {
       "it": 79
     },
-    "chunk_progresso_doc_con_dato": 15,
-    "chunk_progresso_totale_tradotti": 49,
-    "chunk_progresso_totale_chunk": 321
+    "chunk_progresso_doc_con_dato": 17,
+    "chunk_progresso_totale_tradotti": 61,
+    "chunk_progresso_totale_chunk": 329
   },
   "connessioni": {
     "nodi_totali": 399,
-    "edges_totali": 79634,
+    "edges_totali": 79654,
     "nodi_isolati": 0,
     "nodi_isolati_ids": [],
     "peso_stats": {
       "min": 0.4,
-      "max": 0.9957,
+      "max": 1.0,
       "media": 0.844
     },
     "tipo_conn_breakdown": {
-      "principio_condiviso": 33,
-      "sinergia": 89,
-      "potenziamento": 18,
-      "contraddizione": 94,
-      "(nessuno)": 79400
+      "principio_condiviso": 36,
+      "sinergia": 105,
+      "potenziamento": 21,
+      "contraddizione": 109,
+      "(nessuno)": 79383
     },
     "edges_dangling": [],
     "copertura_coppie_pct_stimata": 100.3
