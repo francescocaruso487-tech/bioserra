@@ -2,41 +2,49 @@
 id: te_di_compost
 label: Te di Compost
 categoria: suolo
-aggiornato: 2026-07-16
+aggiornato: 2026-07-17
 pdf_count: 8
 ---
 
 # Te di Compost
 
 ```markdown
-# Tè di Compost
+# Te di Compost
 
 ## Descrizione
-Il **Tè di Compost** (o *Compost Tea*) è un infuso aerobico ottenuto dalla solubilizzazione dei nutrienti e dei microrganismi benefici presenti nel compost maturo. Questo processo, se eseguito correttamente, trasforma il compost in un "elisir" ricco di batteri benefici, funghi micorrizici, protozoi e sostanze umiche, in grado di migliorare la salute del suolo e delle piante sia per via radicale che fogliare. Il meccanismo d'azione si basa sulla **biostimolazione**: i microrganismi del tè colonizzano la rizosfera, competono con patogeni, mineralizzano la materia organica e producono fitormoni (auxine, citochinine) che stimolano la crescita radicale e la resistenza delle piante. Inoltre, le sostanze umiche migliorano la struttura del suolo e la capacità di scambio cationico, mentre gli enzimi e gli antibiotici naturali prodotti dai batteri (come *Pseudomonas* e *Bacillus*) proteggono dalle malattie.
+Il **Te di Compost** (o *compost tea*) è un infuso aerobico ottenuto dal compost maturo, progettato per arricchire il suolo o le piante con una popolazione microbica diversificata e nutrienti biodisponibili. Questo metodo si basa sulla **biostimolazione** del suolo, dove i microrganismi benefici (batteri, funghi, attinomiceti) vengono estratti e applicati direttamente sulle foglie o sul substrato, favorendo la salute della pianta e la resilienza del *Living Soil*. Il processo di infusione aerobica (con ossigenazione costante) evita la putrefazione anaerobica, preservando la vitalità dei microrganismi e prevenendo patogeni come *Phytophthora* o *Pythium*.
 
-In un contesto di **Living Soil outdoor** a Caserta (41°N), dove il clima mediterraneo può stressare le piante con caldo e umidità, il tè di compost diventa uno strumento chiave per **ripristinare l'equilibrio microbico** dopo periodi di siccità o piogge intense, che spesso alterano la comunità microbica del suolo. L'applicazione fogliare, in particolare, crea una "pellicola protettiva" sulla superficie delle foglie, riducendo l'insorgenza di funghi come *Botrytis* o *Oidium*, mentre l'applicazione radicale potenzia la simbiosi micorrizica e la disponibilità di nutrienti.
+Il meccanismo d'azione si articola in tre fasi:
+1. **Estrazione**: I nutrienti e i microrganismi del compost vengono solubilizzati in acqua.
+2. **Alimentazione**: La melassa (o altri zuccheri semplici) fornisce energia ai batteri, accelerando la loro replicazione.
+3. **Applicazione**: L'infuso viene distribuito entro 4 ore per massimizzare l'efficacia, poiché i microrganismi hanno una finestra di vitalità limitata fuori dal loro ambiente naturale.
+
+Questa tecnica è particolarmente efficace in **Living Soil** perché:
+- **Rigenera la biodiversità microbica** del suolo, spesso impoverita da pratiche convenzionali.
+- **Migliora l'assorbimento radicale** grazie alla produzione di enzimi e ormoni vegetali (es. auxine, citochinine).
+- **Protegge dalle malattie** attraverso la competizione microbica e l'induzione di resistenza sistemica (ISR).
 
 ---
 
 ## Come si applica in serra
 
-### **Preparazione del Tè di Compost (metodo aerobico)**
-1. **Materiali necessari**:
-   - Compost maturo (preferibilmente ricco di micorrize e batteri benefici, come vermicompost o compost da letame di cavallo).
+### **Preparazione (per 100L di infuso)**
+1. **Materiali**:
+   - Compost maturo (preferibilmente vermicompost o compost da letame di cavallo/ovino).
    - Acqua non clorata (lasciare decantare l'acqua del rubinetto per 24h o usare acqua piovana).
    - Aeratore per acquario (con pietra porosa per ossigenazione).
-   - Melassa biologica (1-2 cucchiai per 10L di tè) o zucchero di canna come alimento per i batteri.
-   - Termometro per monitorare la temperatura (ideale: 18-25°C).
-   - Filtro a maglia fine (per rimuovere particelle solide prima dell'applicazione).
+   - Melassa biologica (10-20g/L) o zucchero di canna.
+   - Termometro (per monitorare la temperatura, ideale: 18-25°C).
+   - Filtro a maglia fine (per rimuovere residui solidi).
 
-2. **Procedura passo-passo**:
-   - **Riempire un secchio** con 10L di acqua non clorata e posizionare l'aeratore sul fondo.
-   - **Aggiungere 1-2 kg di compost** in un sacchetto di tela o in una retina (evitare che si disgreghi nell'acqua).
-   - **Inserire la melassa** e mescolare leggermente.
-   - **Aerare continuamente** per 24h, mantenendo la temperatura tra 18-25°C (evitare surriscaldamento).
-   - **Filtrare** il tè attraverso un panno pulito per rimuovere i residui solidi.
-   - **Applicare entro 4 ore** dalla preparazione per massimizzare la vitalità dei microrganismi.
+2. **Procedura**:
+   - **Immersion**: Riempire un contenitore con 100L di acqua e immergere 10-15kg di compost in un sacco di tela o in un filtro a rete (evitare il contatto diretto con l'acqua per facilitare il lavaggio dei microrganismi).
+   - **Ossigenazione**: Avviare l'aeratore per 24h, mantenendo la temperatura sotto i 30°C (evitare surriscaldamento).
+   - **Alimentazione**: Aggiungere la melassa dopo 12h dall'inizio dell'infusione (dosaggio: 10g/L per infusi batterici, 20g/L per funghi).
+   - **Filtraggio**: Rimuovere il compost dopo 24h e filtrare l'infuso con una maglia da 50-100µm.
+   - **Applicazione**: Utilizzare entro 4h dalla preparazione, diluendo se necessario (1:1 con acqua per applicazione fogliare, puro per radicale).
 
-3. **Modalità di applicazione**:
-   - **Radicale**: Irrigare il suolo alla base delle piante (1-2L per pianta) ogni 7-14 giorni, soprattutto durante la **vegetazione** e all'inizio della **fioritura**.
-   - **Fogliare**: Spruzzare sulle foglie al mattino presto o al tramonto (con nebulizzatore a bassa pressione) per evitare ustioni. Util
+### **Modalità di applicazione in serra outdoor (Caserta, 41°N)**
+- **Frequenza**:
+  - **Vegetazione**: 1 applicazione ogni 10-15 giorni (diluizione 1:1 per evitare stress fogliare).
+  - **F
