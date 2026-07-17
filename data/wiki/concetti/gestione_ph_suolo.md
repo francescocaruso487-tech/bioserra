@@ -2,7 +2,7 @@
 id: gestione_ph_suolo
 label: Gestione pH Suolo
 categoria: suolo
-aggiornato: 2026-07-16
+aggiornato: 2026-07-17
 pdf_count: 10
 ---
 
@@ -12,22 +12,20 @@ pdf_count: 10
 # Gestione pH Suolo
 
 ## Descrizione
-Il pH del suolo rappresenta la misura dell'acidità o basicità del substrato, influenzando direttamente la biodisponibilità dei nutrienti essenziali per le piante. Un pH ottimale compreso tra **6.0 e 7.0** (leggermente acido o neutro) garantisce l'assorbimento equilibrato di macro e micronutrienti, come azoto (N), fosforo (P), potassio (K), calcio (Ca) e magnesio (Mg). Al di fuori di questo range, alcuni elementi diventano insolubili o tossici: in terreni troppo acidi (pH < 5.5), ad esempio, si verifica una carenza di calcio e magnesio, mentre in quelli alcalini (pH > 7.5) si riduce l'assorbibilità di ferro (Fe), manganese (Mn) e zinco (Zn). La gestione del pH non è statica: variazioni stagionali, apporti di fertilizzanti organici (come compost o humus di lombrico) e attività microbica possono alterarlo nel tempo. In serra outdoor a Caserta, dove il clima mediterraneo favorisce l'evaporazione rapida e la lisciviazione dei nutrienti, il monitoraggio costante è cruciale per prevenire squilibri nutrizionali e stress idrico nelle piante.
+Il **pH del suolo** rappresenta la misura dell'acidità o basicità del substrato, espressa su una scala da 0 a 14. Un pH ottimale (6.0–7.0) garantisce la **biodisponibilità degli elementi nutritivi**, poiché la maggior parte dei macro e micronutrienti (azoto, fosforo, potassio, calcio, magnesio, ferro, zinco) si solubilizzano in questo range. Al di fuori di questo intervallo, i nutrienti precipitano o diventano inaccessibili alle radici, anche se presenti nel suolo. Ad esempio, a pH < 5.5 (acido), l'alluminio tossico si solubilizza, mentre a pH > 7.5 (basico), il fosforo e il ferro diventano insolubili. La gestione del pH non è statica: variazioni stagionali, apporti di fertilizzanti organici (compost, letame) o inorganici (soluzioni idroponiche), e l'attività microbica possono alterarlo rapidamente. In una serra **Living Soil** come quella di Caserta (41°N), dove il clima mediterraneo favorisce l'evaporazione e la concentrazione di sali, il monitoraggio costante è cruciale per prevenire squilibri nutrizionali e stress idrico nelle piante.
 
-Il meccanismo di regolazione del pH si basa su reazioni chimiche e biologiche. Ad esempio, l'aggiunta di **calce agricola** (carbonato di calcio) neutralizza l'acidità aumentando il pH, mentre lo **zolfo elementare** abbassa il pH tramite ossidazione batterica (consumo di ioni H⁺). Tuttavia, la correzione deve essere graduale e contestualizzata: in un suolo vivo (Living Soil), la presenza di microrganismi simbionti (come funghi micorrizici) può tamponare naturalmente le fluttuazioni di pH, riducendo la necessità di interventi chimici. L'elettrocultura, poi, può modulare indirettamente il pH attraverso la stimolazione della vita microbica e la mobilitazione degli ioni nel suolo, come suggerito nei PDF BioSerra che collegano le spirali di rame alle "frequenze naturali" del terreno [[pdf_3], [pdf_5]].
+Il meccanismo di regolazione del pH si basa su **reazioni chimiche e biologiche**. I microrganismi del suolo (batteri, funghi micorrizici) e le radici delle piante producono acidi organici (es. acido citrico, malico) che acidificano localmente il substrato, mentre la decomposizione della materia organica libera ioni H⁺. Al contrario, la calce (CaCO₃) neutralizza l'acidità liberando ioni Ca²⁺ e OH⁻, mentre lo zolfo elementare (S) si ossida in presenza di batteri *Thiobacillus*, producendo acido solforico che abbassa il pH. In un sistema **Living Soil**, la gestione del pH deve essere **dinamica e olistica**: non si tratta solo di correggere valori estremi, ma di favorire un **equilibrio chimico-biologico** che supporti la vita del suolo e la salute delle piante.
 
 ---
 
 ## Come si applica in serra
 
 1. **Misurazione periodica**:
-   - Utilizzare un **pH-metro digitale** (preferibilmente con sonda a penetrazione per letture a 10-15 cm di profondità) o strisce reattive per suolo.
-   - **Frequenza**: Ogni settimana, soprattutto durante le fasi di vegetazione e fioritura, quando il fabbisogno nutrizionale è massimo.
-   - **Orario**: Effettuare la misurazione al mattino, prima dell'irrigazione, per evitare falsi valori dovuti a umidità residua.
+   - Utilizzare un **pH-metro digitale** (precisione ±0.1) o kit a reagenti (es. pH-test a strisce) per analizzare il substrato **ogni settimana**, prelevando campioni a 10–15 cm di profondità in 3–4 punti della serra.
+   - Effettuare la misurazione **al mattino**, prima dell'irrigazione, per evitare falsi valori dovuti a umidità residua.
 
-2. **Interpretazione dei risultati**:
-   - **pH < 5.8**: Il suolo è troppo acido. Correggere con **calce agricola** (CaCO₃) o **dolomite** (CaMg(CO₃)₂) a dosaggio di **50-100 g/m²**, distribuita uniformemente e interrata leggermente con una zappetta.
-   - **pH > 7.2**: Il suolo è alcalino. Correggere con **zolfo elementare** (S) a dosaggio di **20-50 g/m²**, oppure con **torba acida** o **compost di foglie** (pH ~4.5-5.5) in miscela al 20-30% con il substrato.
-   - **pH 6.0-7.0**: Mantenere lo stato attuale, monitorando eventuali tendenze verso gli estremi.
-
-3.
+2. **Interventi correttivi**:
+   - **pH < 5.8 (acido)**:
+     - Applicare **calce agricola** (CaCO₃ o dolomite) a dose di **50–100 g/m²**, distribuendola uniformemente e incorporandola leggermente con una zappetta.
+     - In alternativa, usare **cenere di legna** (pH ~12) a **20–30 g/m²**, ma con cautela: può aumentare il sodio (Na) e alterare la struttura del suolo.
+     - **Elettrocultura**: Installare una **spirale di rame** (diametro 30–50 cm) sopra le piante più sensibili (es. pomodori) e collegarla a un'**antenna di terra** (picchetto in acciaio zincato da 1 m) con cavo di rame isolato. Questo sistema, secondo [pdf_307], aiuta a "trasmut
