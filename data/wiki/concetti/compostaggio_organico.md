@@ -2,7 +2,7 @@
 id: compostaggio_organico
 label: Compostaggio Organico
 categoria: suolo
-aggiornato: 2026-07-16
+aggiornato: 2026-07-17
 pdf_count: 6
 ---
 
@@ -12,33 +12,44 @@ pdf_count: 6
 # Compostaggio Organico
 
 ## Descrizione
-Il **compostaggio organico** è un processo biologico controllato che trasforma materiali organici di scarto (come residui vegetali, letame, scarti di cucina) in un ammendante stabile e ricco di nutrienti, noto come **compost**. Questo processo avviene grazie all’azione sinergica di microrganismi (batteri, funghi, attinomiceti) e macroorganismi (lombrichi, acari, collemboli) che decompongono la materia organica in condizioni aerobiche. Il compost maturo è un **Living Soil** in miniatura: migliora la struttura del suolo, aumenta la capacità di ritenzione idrica, fornisce nutrienti a lento rilascio e stimola la biodiversità microbica, essenziale per piante sane e produttive.
+Il **compostaggio organico** è un processo biologico controllato che trasforma materiali organici di scarto (come scarti di cucina, foglie, erba tagliata, paglia) in un **ammendante stabile e ricco di nutrienti**, noto come compost. Questo processo avviene grazie all’azione sinergica di batteri, funghi, attinomiceti e macro/meso-organismi (come lombrichi e artropodi), che decompongono la materia organica in condizioni aerobiche. Il risultato è un substrato **umificato**, con un rapporto C/N (carbonio/azoto) equilibrato, che migliora la struttura del suolo, la capacità di ritenzione idrica e la biodiversità microbica.
 
-Il meccanismo si basa su **tre fasi principali**:
-1. **Fase mesofila** (15–45°C): decomposizione iniziale da parte di batteri e funghi, con produzione di calore e CO₂.
-2. **Fase termofila** (55–65°C): temperatura ottimale per eliminare patogeni, semi di malerbe e insetti, mentre i microrganismi termofili (come *Thermomyces*) accelerano la degradazione.
-3. **Fase di maturazione** (20–40°C): umificazione e stabilizzazione della sostanza organica, con formazione di humus stabile e nutrienti assimilabili dalle piante.
+In un sistema **Living Soil** outdoor, il compost è fondamentale perché:
+- **Alimenta la rete trofica del suolo**: fornisce energia ai microrganismi benefici, che a loro volta mineralizzano i nutrienti per le piante.
+- **Bufferizza il pH**: neutralizza acidità o alcalinità eccessive, creando un ambiente ottimale per la crescita radicale.
+- **Riduce la necessità di fertilizzanti sintetici**: sostituisce i nutrienti in forma organica, lenta e sostenibile, essenziale per la **fase vegetativa** delle piante (come descritto in [web_zamn_288-fase-vegetativa-cannabis]).
 
-In **Living Soil outdoor** (come a Caserta, 41°N), il compost è fondamentale per **ricreare un ecosistema suolo autosostenibile**, riducendo la necessità di fertilizzanti chimici e migliorando la resilienza delle piante durante le fasi di **germinazione** e **vegetazione**. Un compost ben fatto apporta **azoto (N), fosforo (P), potassio (K) e micronutrienti** in equilibrio, oltre a **sostanze umiche** che chelano i minerali e migliorano l’assorbimento radicale.
+Il compost di qualità si distingue per:
+- **Odore terroso e fresco** (assenza di puzza di ammoniaca o marcio).
+- **Struttura porosa e friabile**, che favorisce l’aerazione delle radici.
+- **Colore scuro e uniforme**, indice di umificazione completa.
 
 ---
 
 ## Come si applica in serra
+Per produrre compost di qualità in una **serra outdoor Living Soil a Caserta** (41°N), segui questi passaggi:
 
-### **1. Scelta dei materiali**
-- **Materiali verdi** (ricchi di azoto, rapporto C/N < 20:1):
-  - Scarti di frutta/verdura, erba fresca, letame (es. equino o bovino), fondi di caffè.
-  - *Quantità*: 30–50% del volume totale.
-- **Materiali marroni** (ricchi di carbonio, rapporto C/N > 30:1):
-  - Foglie secche, paglia, cartone non stampato, rametti triturati, segatura (usata con moderazione).
-  - *Quantità*: 50–70% del volume totale.
-- **Evita**: carne, latticini, oli, piante malate (pericolo di patogeni), cenere in eccesso (può aumentare il pH).
+### 1. **Selezione dei materiali**
+- **Materiali verdi (ricchi di azoto, C/N < 25)**:
+  - Scarti di frutta/verdura (non agrumi o avocado).
+  - Erba tagliata fresca (non trattata con pesticidi).
+  - Residui di potatura (foglie, steli giovani).
+  - Fondi di caffè o tè (non in eccesso).
+- **Materiali marroni (ricchi di carbonio, C/N > 30)**:
+  - Paglia, fieno, foglie secche.
+  - Cartone non stampato (sminuzzato).
+  - Segatura o trucioli di legno non trattato (usare con moderazione).
+- **Materiali di supporto**:
+  - Terriccio o compost maturo (per inoculare microrganismi).
+  - Calce agricola (se il pH è troppo basso, max 1% del volume).
 
-### **2. Preparazione del cumulo**
-- **Ubicazione**: In serra, scegli un’area ombreggiata e ben drenata (evita ristagni).
-- **Struttura**: Costruisci un cumulo a forma di tronco di cono (1–1,5 m di altezza, 1–2 m di diametro) per ottimizzare aerazione e ritenzione di calore.
-- **Inoculo**: Aggiungi un **starter microbico** (es. compost maturo, micorrize, o un preparato come *EM-1*) per accelerare la decomposizione.
+**Rapporto ideale**: 2 parti marroni : 1 parte verde (in peso). A Caserta, dove l’umidità è elevata, aumentare i marroni per evitare compattazione.
 
-### **3. Gestione del processo**
-- **Umidità**: Mantieni il cumulo umido come una spugna strizzata (60–70% di umidità). Se troppo secco, aggiungi acqua; se troppo bagnato, aggiungi materiali marroni.
-- **Temperatura
+### 2. **Preparazione del cumulo**
+- **Posizione**: In serra o in zona ombreggiata (evitare sole diretto che asciuga troppo).
+- **Struttura**: Strato di 10–15 cm di marroni sul fondo (per drenaggio), poi alternare strati di verdi e marroni (5–10 cm ciascuno).
+- **Umidità**: Il cumulo deve essere umido come una spugna strizzata (non gocciolante). In estate, coprire con tessuto traspirante per ridurre l’evaporazione.
+
+### 3. **Gestione della temperatura e aerazione**
+- **Monitoraggio**: Usa un termometro da compost per mantenere la temperatura tra **55–65°C** (ottimale per uccidere patogeni e semi di malerbe).
+- **Rivoltamenti**: Og
