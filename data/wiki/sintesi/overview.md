@@ -1,53 +1,57 @@
 ---
 tipo: overview
-aggiornato: 2026-07-16
+aggiornato: 2026-07-17
 ---
 
 # BioSerra — Knowledge Base Overview
 
 ```markdown
-# BioSerra Wiki
-*Living Soil Outdoor a Caserta (41°N) – Integrazione di Suolo Vivente, Biodinamica ed Elettrocultura*
+# **BioSerra Wiki**
+*Living Soil Outdoor, Biodinamica & Elettrocultura a Caserta (41°N)*
 
 ---
 
-## 🌱 **Filosofia BioSerra**
-BioSerra adotta un approccio **olistico e rigenerativo** alla coltivazione outdoor, fondato su:
-- **Living Soil (Suolo Vivente)**: Ecosistema microbico autosufficiente, senza input chimici, dove funghi, batteri e nematodi collaborano per mineralizzare nutrienti e proteggere le piante.
-- **Water-Only**: Irrigazione con acqua strutturata (magnetizzata, ionizzata) e nutrienti esclusivamente organici (compost, farine di roccia, tè di compost).
-- **Biodinamica**: Sincronizzazione con cicli lunari, cosmici e ritmi stagionali per ottimizzare crescita e resilienza.
-- **Elettrocultura**: Applicazione di campi elettromagnetici (PEMF, Lakhovsky, Fe-Cu) per stimolare la vitalità cellulare e la resistenza agli stress.
-
-*Visione*: Coltivare piante in armonia con la natura, potenziando i processi naturali attraverso tecnologie low-impact.
+## **🌱 Filosofia BioSerra**
+BioSerra è un ecosistema agricolo **autosostenibile** che unisce:
+- **Living Soil**: Suolo vivo ricco di microrganismi, materia organica e minerali biodisponibili, coltivato *water-only* (senza fertilizzanti chimici).
+- **Biodinamica**: Approccio olistico basato su ritmi naturali (luna, stagioni) e preparati biodinamici.
+- **Elettrocultura**: Tecniche di stimolazione elettromagnetica (Lakhovsky, Fe-Cu, acqua magnetizzata, spirali in rame) per ottimizzare crescita, resistenza e qualità delle piante.
+- **Visione integrata**: Ogni tecnica (suolo, acqua, energia, biodiversità) si rinforza reciprocamente per coltivare piante **sane, resilienti e ad alto valore nutrizionale/terapeutico**.
 
 ---
 
-## 📚 **Sistema di Conoscenza**
-Il wiki integra **341 fonti PDF**, **15 concetti attivi** e **guide pratiche** in un ecosistema interconnesso:
+## **📚 Sistema di Conoscenza**
+BioSerra si basa su:
+- **341 PDF** di riferimento (es. [web_zamn_287], [web_zamn_293]) che coprono fasi colturali, substrati, gestione parassiti e tecniche specifiche.
+- **15 concetti attivi** (es. [[suolo-vivente]], [[elettrocoltura-lakhovsky]]) che collegano le pratiche in un framework coerente.
+- **Integrazione continua**: Ogni azione (es. elettrocoltura + biochar) è supportata da dati empirici e manuali, con aggiornamenti basati su osservazioni in campo.
 
-| **Componente**       | **Ruolo**                                                                 | **Esempi**                                                                 |
-|----------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| **PDF Analizzati**   | Manuali tecnici, studi scientifici e guide operative.                     | [[web_zamn_287-fase-plantula-cannabis]], [[web_zamn_293-suolo-cannabis-terricci]] |
-| **Concetti Attivi**  | Modelli operativi e principi applicati.                                  | Elettrocoltura, Compostaggio Organico, Calendario Lunare.                  |
-| **Guide Pratiche**   | Passaggi step-by-step per fasi colturali.                                | Germinazione con Smart Start, Gestione pH Suolo.                          |
-| **AI Consigli**      | Raccomandazioni in tempo reale basate su dati e manuali.                 | Applicazione PEMF alle autofiorenti, monitoraggio umidità.                |
-
-*Flusso di lavoro*:
-1. **Input**: Dati ambientali (temperatura, umidità) + fase colturale.
-2. **Elaborazione**: Incrocio con manuali e concetti attivi.
-3. **Output**: Azioni consigliate (es. elettrocoltura, biodinamica).
+> **Esempio di flusso**:
+> *Germinazione → Smart Start ([web_zamn_284]) → Fase vegetativa (substrato Living Soil + micorrize [[inoculazione-micorrize]]) → Elettrocoltura DC ([pdf_17]) → Fioritura (fotoperiodo + biochar [[farine-di-roccia]]).*
 
 ---
 
-## ⚡ **Tecniche di Elettrocultura Attive**
-Le 5 tecniche principali applicate in BioSerra:
+## **⚡ Tecniche di Elettrocultura Attive**
+| Tecnica               | Descrizione                                                                 | Riferimenti                     |
+|-----------------------|-----------------------------------------------------------------------------|---------------------------------|
+| **Acqua Magnetizzata** | Acqua trattata con campi magnetici per migliorare assorbimento e struttura cellulare. | [[acqua-magnetizzata]]          |
+| **Spirale in Rame**    | Spirali di rame posizionate intorno alle piante per stimolare campi elettromagnetici naturali. | [[spirale-rame]]                |
+| **Circuito Lakhovsky** | Circuito oscillante a onde multiple per bilanciare l’energia cellulare delle piante. | [[circuito-lakhovsky]]          |
+| **Elettrodi Fe-Cu**    | Coppie di elettrodi in ferro/rame nel suolo per generare correnti galvaniche benefiche. | [[elettrodi-fe-cu]]             |
+| **Antenna di Terra**   | Sistema di messa a terra per scaricare e riequilibrare le cariche elettromagnetiche del suolo. | [[antenna-terra]]               |
 
-| **Tecnica**               | **Funzione**                                                                 | **Applicazione**                                                                 | **Riferimento**                     |
-|---------------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------|-------------------------------------|
-| **Acqua Magnetizzata**    | Struttura molecolare dell'acqua per migliorare assorbimento nutrienti.     | Irrigazione con acqua esposta a campi magnetici (7.83Hz per PEMF).             | [[elettrocultura-acqua-magnetizzata]] |
-| **Spirale in Rame**       | Generazione di campi elettromagnetici per stimolare la rizosfera.          | Posizionata intorno alle piante o nel suolo.                                   | [[elettrocultura-spirale-rame]]      |
-| **Circuito di Lakhovsky** | Risonanza cellulare per aumentare vitalità e resistenza.                   | Antenne a forma di otto intorno alle piante.                                   | [[elettrocultura-lakhovsky]]         |
-| **Elettrodi Fe-Cu**       | Stimolazione redox del suolo per mobilitare nutrienti.                     | Coppie di elettrodi in ferro e rame interrati.                                 | [[elettrocultura-fe-cu]]             |
-| **Antenna di Terra**      | Connessione con la terra per equilibrare cariche elettriche.              | Piantata nel suolo, collegata a strutture metalliche delle piante.             | [[elettrocultura-antenne-terra]]     |
+> **Note operative**:
+> - Applicare **DC 6-9V** tra le 07-11 e 18-21 (evitare ore calde).
+> - Monitorare umidità suolo (60-65%) per evitare ristagni che limitano l’efficacia.
 
-*Nota*: Le tecniche sono applicate in fasce orarie specifiche per evitare stress termico (es. PEM
+---
+## **🌍 Principi Living Soil**
+### **1. Microbioma del Suolo**
+- **Funghi micorrizici**: Simbiosi con le radici per aumentare l’assorbimento di nutrienti ([[inoculazione-micorrize]]).
+- **Batteri benefici**: Decompositori (es. *Pseudomonas*) e fissatori di azoto.
+- **Protozoi e nematodi**: Regolano la popolazione microbica.
+
+### **2. Minerali e Biostimolanti**
+- **Farine di rocce**: Forniscono macro/micronutrienti a lento rilascio ([[farine-di-roccia]]).
+- **Biochar**: Aumenta la conducibilità elettrica e la ritenzione idrica ([[biochar]]).
+- **Compost e tè di compost**:
