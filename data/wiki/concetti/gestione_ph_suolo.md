@@ -2,7 +2,7 @@
 id: gestione_ph_suolo
 label: Gestione pH Suolo
 categoria: suolo
-aggiornato: 2026-07-17
+aggiornato: 2026-07-18
 pdf_count: 10
 ---
 
@@ -12,20 +12,20 @@ pdf_count: 10
 # Gestione pH Suolo
 
 ## Descrizione
-Il **pH del suolo** rappresenta la misura dell'acidità o basicità del substrato, espressa su una scala da 0 a 14. Un pH ottimale (6.0–7.0) garantisce la **biodisponibilità degli elementi nutritivi**, poiché la maggior parte dei macro e micronutrienti (azoto, fosforo, potassio, calcio, magnesio, ferro, zinco) si solubilizzano in questo range. Al di fuori di questo intervallo, i nutrienti precipitano o diventano inaccessibili alle radici, anche se presenti nel suolo. Ad esempio, a pH < 5.5 (acido), l'alluminio tossico si solubilizza, mentre a pH > 7.5 (basico), il fosforo e il ferro diventano insolubili. La gestione del pH non è statica: variazioni stagionali, apporti di fertilizzanti organici (compost, letame) o inorganici (soluzioni idroponiche), e l'attività microbica possono alterarlo rapidamente. In una serra **Living Soil** come quella di Caserta (41°N), dove il clima mediterraneo favorisce l'evaporazione e la concentrazione di sali, il monitoraggio costante è cruciale per prevenire squilibri nutrizionali e stress idrico nelle piante.
+Il pH del suolo rappresenta la misura dell'acidità o basicità del substrato, influenzando direttamente la biodisponibilità dei nutrienti essenziali per le piante. Un pH ottimale compreso tra **6.0 e 7.0** (leggermente acido o neutro) garantisce l'assorbimento equilibrato di macro e micronutrienti, come azoto (N), fosforo (P), potassio (K), calcio (Ca), magnesio (Mg) e ferro (Fe). Al di fuori di questo range, alcuni elementi diventano insolubili o tossici: ad esempio, in terreni troppo acidi (pH < 5.5), il manganese (Mn) e l'alluminio (Al) possono raggiungere livelli tossici, mentre in quelli alcalini (pH > 7.5), il fosforo e il ferro diventano scarsamente disponibili. La gestione del pH non è un intervento statico, ma un processo dinamico che richiede monitoraggio costante, poiché le attività microbiche, l'irrigazione, l'uso di ammendanti e le condizioni climatiche (tipiche della serra outdoor di Caserta, con estati calde e umide) possono alterarlo rapidamente.
 
-Il meccanismo di regolazione del pH si basa su **reazioni chimiche e biologiche**. I microrganismi del suolo (batteri, funghi micorrizici) e le radici delle piante producono acidi organici (es. acido citrico, malico) che acidificano localmente il substrato, mentre la decomposizione della materia organica libera ioni H⁺. Al contrario, la calce (CaCO₃) neutralizza l'acidità liberando ioni Ca²⁺ e OH⁻, mentre lo zolfo elementare (S) si ossida in presenza di batteri *Thiobacillus*, producendo acido solforico che abbassa il pH. In un sistema **Living Soil**, la gestione del pH deve essere **dinamica e olistica**: non si tratta solo di correggere valori estremi, ma di favorire un **equilibrio chimico-biologico** che supporti la vita del suolo e la salute delle piante.
+Il meccanismo d'azione si basa sulla **chimica del suolo**: il pH influisce sulla carica superficiale delle particelle argillose e della materia organica, determinando la capacità di scambio cationico (CSC) e anionico. Un pH neutro favorisce la formazione di complessi organo-minerali stabili, essenziali per la nutrizione delle piante e la salute del suolo vivente. Inoltre, in un sistema **Living Soil**, i microrganismi benefici (batteri, funghi micorrizici, attinomiceti) prosperano in condizioni di pH equilibrato, accelerando la decomposizione della materia organica e la mineralizzazione dei nutrienti. La correzione del pH deve essere sempre accompagnata da una valutazione della **struttura del suolo** e della sua attività biologica, poiché un intervento troppo aggressivo (ad esempio, l'uso eccessivo di calce) può compromettere la vita microbica e la stabilità aggregata del terreno.
 
 ---
 
 ## Come si applica in serra
+Per una serra **outdoor Living Soil** a Caserta (41°N), la gestione del pH richiede un approccio **preventivo e reattivo**, con monitoraggi frequenti e interventi mirati. Segui questi passaggi:
 
-1. **Misurazione periodica**:
-   - Utilizzare un **pH-metro digitale** (precisione ±0.1) o kit a reagenti (es. pH-test a strisce) per analizzare il substrato **ogni settimana**, prelevando campioni a 10–15 cm di profondità in 3–4 punti della serra.
-   - Effettuare la misurazione **al mattino**, prima dell'irrigazione, per evitare falsi valori dovuti a umidità residua.
+1. **Misurazione del pH**:
+   - Utilizza un **pHmetro digitale** (preferibilmente con sonda a penetrazione per letture in profondità, 10-20 cm) o un kit a reagenti (es. metodo del bicchiere con acqua distillata).
+   - Effettua misurazioni **settimanali**, soprattutto durante le fasi di vegetazione e fioritura, quando il fabbisogno nutrizionale è massimo.
+   - Prendi campioni in **3 punti diversi** della serra (angoli e centro) per valutare l'omogeneità del substrato.
 
-2. **Interventi correttivi**:
-   - **pH < 5.8 (acido)**:
-     - Applicare **calce agricola** (CaCO₃ o dolomite) a dose di **50–100 g/m²**, distribuendola uniformemente e incorporandola leggermente con una zappetta.
-     - In alternativa, usare **cenere di legna** (pH ~12) a **20–30 g/m²**, ma con cautela: può aumentare il sodio (Na) e alterare la struttura del suolo.
-     - **Elettrocultura**: Installare una **spirale di rame** (diametro 30–50 cm) sopra le piante più sensibili (es. pomodori) e collegarla a un'**antenna di terra** (picchetto in acciaio zincato da 1 m) con cavo di rame isolato. Questo sistema, secondo [pdf_307], aiuta a "trasmut
+2. **Interpretazione dei risultati**:
+   - **pH < 5.8**: Il suolo è troppo acido. Correggi con **calce agricola** (carbonato di calcio, CaCO₃) o **calce dolomitica** (se serve anche magnesio), distribuendo **1-2 kg/10 m²** e mescolando superficialmente. Evita l'eccesso: un aumento di 0.5 unità di pH richiede circa **1 kg di calce/10 m²**.
+   - **pH > 7.2**: Il suolo è troppo alcalino. Correggi con **zolfo elementare** (S) o **torba acida** (per interventi leggeri). Lo zolfo si ossida lentamente in solfato (SO₄²⁻), abb
