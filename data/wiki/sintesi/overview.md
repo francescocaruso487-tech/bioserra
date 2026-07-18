@@ -1,57 +1,62 @@
 ---
 tipo: overview
-aggiornato: 2026-07-17
+aggiornato: 2026-07-18
 ---
 
 # BioSerra — Knowledge Base Overview
 
 ```markdown
 # **BioSerra Wiki**
-*Living Soil Outdoor, Biodinamica & Elettrocultura a Caserta (41°N)*
+*Living Soil Outdoor a Caserta (41°N) – Integrazione di Suolo Vivente, Biodinamica ed Elettrocultura*
 
 ---
 
 ## **🌱 Filosofia BioSerra**
-BioSerra è un ecosistema agricolo **autosostenibile** che unisce:
-- **Living Soil**: Suolo vivo ricco di microrganismi, materia organica e minerali biodisponibili, coltivato *water-only* (senza fertilizzanti chimici).
-- **Biodinamica**: Approccio olistico basato su ritmi naturali (luna, stagioni) e preparati biodinamici.
-- **Elettrocultura**: Tecniche di stimolazione elettromagnetica (Lakhovsky, Fe-Cu, acqua magnetizzata, spirali in rame) per ottimizzare crescita, resistenza e qualità delle piante.
-- **Visione integrata**: Ogni tecnica (suolo, acqua, energia, biodiversità) si rinforza reciprocamente per coltivare piante **sane, resilienti e ad alto valore nutrizionale/terapeutico**.
+BioSerra è un **ecosistema agricolo outdoor** che unisce:
+- **Living Soil (suolo vivente)**: Terreno ricco di microrganismi, materia organica e minerali biodisponibili, senza input chimici.
+- **Water-Only**: Irrigazione con acqua ionizzata, magnetizzata e strutturata per massimizzare l’assorbimento radicale.
+- **Biodinamica**: Preparati (500, 501, ecc.), ritmi cosmici e calendari lunari per armonizzare la crescita con i cicli terrestri.
+- **Elettrocultura**: Tecniche attive (Lakhovsky, Fe-Cu, spirali in rame, antenna di terra) per stimolare la vitalità delle piante e la conducibilità del suolo.
+
+*Visione*: Coltivare piante in **sinergia con la natura**, potenziando i processi naturali tramite tecnologie low-impact e conoscenza olistica.
 
 ---
 
 ## **📚 Sistema di Conoscenza**
 BioSerra si basa su:
-- **341 PDF** di riferimento (es. [web_zamn_287], [web_zamn_293]) che coprono fasi colturali, substrati, gestione parassiti e tecniche specifiche.
-- **15 concetti attivi** (es. [[suolo-vivente]], [[elettrocoltura-lakhovsky]]) che collegano le pratiche in un framework coerente.
-- **Integrazione continua**: Ogni azione (es. elettrocoltura + biochar) è supportata da dati empirici e manuali, con aggiornamenti basati su osservazioni in campo.
+- **341 manuali** (PDF) strutturati per fasi colturali, tecniche e troubleshooting.
+- **20 concetti attivi** (es. Elettrocultura Combinata, Preparati Biodinamici Avanzati) che si interconnettono per ottimizzare la coltivazione.
+- **Integrazione trasversale**: Ogni tecnica (es. elettrocultura) influenza suolo, nutrizione e fasi fenologiche.
 
-> **Esempio di flusso**:
-> *Germinazione → Smart Start ([web_zamn_284]) → Fase vegetativa (substrato Living Soil + micorrize [[inoculazione-micorrize]]) → Elettrocoltura DC ([pdf_17]) → Fioritura (fotoperiodo + biochar [[farine-di-roccia]]).*
+*Esempio di flusso*:
+`Preparato 500 (biodinamica) → Suolo vivente → Elettrocultura DC → Assorbimento minerale → Fioritura ottimale`
 
 ---
-
-## **⚡ Tecniche di Elettrocultura Attive**
-| Tecnica               | Descrizione                                                                 | Riferimenti                     |
-|-----------------------|-----------------------------------------------------------------------------|---------------------------------|
-| **Acqua Magnetizzata** | Acqua trattata con campi magnetici per migliorare assorbimento e struttura cellulare. | [[acqua-magnetizzata]]          |
-| **Spirale in Rame**    | Spirali di rame posizionate intorno alle piante per stimolare campi elettromagnetici naturali. | [[spirale-rame]]                |
-| **Circuito Lakhovsky** | Circuito oscillante a onde multiple per bilanciare l’energia cellulare delle piante. | [[circuito-lakhovsky]]          |
-| **Elettrodi Fe-Cu**    | Coppie di elettrodi in ferro/rame nel suolo per generare correnti galvaniche benefiche. | [[elettrodi-fe-cu]]             |
-| **Antenna di Terra**   | Sistema di messa a terra per scaricare e riequilibrare le cariche elettromagnetiche del suolo. | [[antenna-terra]]               |
-
-> **Note operative**:
-> - Applicare **DC 6-9V** tra le 07-11 e 18-21 (evitare ore calde).
-> - Monitorare umidità suolo (60-65%) per evitare ristagni che limitano l’efficacia.
+## **⚡ Tecniche Elettrocultura Attive**
+| Tecnica | Descrizione | Riferimento |
+|---------|------------|-------------|
+| **Elettrocultura Lakhovsky** | Circuiti oscillanti per stimolare la coerenza cellulare delle piante. | [[pdf_17]] |
+| **Elettrocultura Fe-Cu** | Elettrodi in ferro/rame per migliorare la conducibilità e la disponibilità di micronutrienti. | [[pdf_327]] |
+| **Spirale in Rame** | Struttura a spirale per armonizzare i campi elettromagnetici del suolo. | [[Manuale di Coltivazione BioSerra Rev.23]] |
+| **Antenna di Terra** | Connessione a terra per scaricare e riequilibrare le cariche statiche. | [[pdf_85]] |
+| **Acqua Magnetizzata** | Irrigazione con acqua esposta a campi magnetici per aumentare la biodisponibilità dei nutrienti. | [[web_zamn_293-suolo-cannabis-terricci]] |
 
 ---
 ## **🌍 Principi Living Soil**
-### **1. Microbioma del Suolo**
-- **Funghi micorrizici**: Simbiosi con le radici per aumentare l’assorbimento di nutrienti ([[inoculazione-micorrize]]).
-- **Batteri benefici**: Decompositori (es. *Pseudomonas*) e fissatori di azoto.
-- **Protozoi e nematodi**: Regolano la popolazione microbica.
+1. **Microbioma**: Batteri, funghi micorrizici e attinomiceti che mineralizzano la materia organica.
+2. **Minerali**: Farine di rocce (basalto, zeolite) per apporto lento di silicio, calcio e oligoelementi.
+3. **Biostimolanti**: Tè di compost, micorrize e preparati biodinamici per attivare il suolo.
+4. **Acqua**: Ionizzata, magnetizzata e strutturata per penetrare meglio e ridurre lo stress idrico.
 
-### **2. Minerali e Biostimolanti**
-- **Farine di rocce**: Forniscono macro/micronutrienti a lento rilascio ([[farine-di-roccia]]).
-- **Biochar**: Aumenta la conducibilità elettrica e la ritenzione idrica ([[biochar]]).
-- **Compost e tè di compost**:
+*Dati chiave*:
+- pH ottimale: **6.2–7.0** (suolo argilloso-calcareo di Caserta).
+- Umidità target: **60–80%** (regolata con pacciamatura e drenaggio).
+
+---
+## **📅 Calendario e Ritmi**
+### **🌑 Lunari**
+- **Luna crescente**: Semina, trapianto, applicazione di preparati biodinamici (es. 500).
+- **Luna piena**: Massima attività radicale (ideale per inoculazione micorrize).
+- **Luna calante**: Raccolta e potatura (evitare stress alle piante).
+
+### **🌞 Stagioni (Caserta
