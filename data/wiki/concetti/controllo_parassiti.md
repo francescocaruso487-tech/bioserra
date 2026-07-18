@@ -2,7 +2,7 @@
 id: controllo_parassiti
 label: Controllo Parassiti Naturale
 categoria: fitosanitario
-aggiornato: 2026-07-17
+aggiornato: 2026-07-18
 pdf_count: 10
 ---
 
@@ -12,26 +12,34 @@ pdf_count: 10
 # Controllo Parassiti Naturale
 
 ## Descrizione
-Il **Controllo Parassiti Naturale** rappresenta un approccio olistico alla gestione delle infestazioni in agricoltura, basato sull’equilibrio ecologico piuttosto che sulla soppressione chimica. Questo metodo sfrutta i principi della **Living Soil**, dove la biodiversità microbica e macrobiologica del suolo agisce come primo baluardo contro patogeni e insetti dannosi. Le piante in un ecosistema sano sviluppano meccanismi di resistenza naturali, mentre i predatori naturali (come acari, coccinelle o nematodi benefici) mantengono sotto controllo le popolazioni di parassiti senza alterare l’equilibrio dell’agroecosistema. L’uso di repellenti naturali, come l’olio di neem, agisce da deterrente chimico *soft*, interferendo con la fisiologia degli insetti (es. blocco della muta o della fecondazione) senza intaccare la salute del suolo o delle piante.
+Il **Controllo Parassiti Naturale** rappresenta una strategia olistica per la gestione delle infestazioni in agricoltura biologica, basata sull’equilibrio ecosistemico piuttosto che sulla soppressione chimica. Questo approccio sfrutta i principi della **Living Soil** (suolo vivo), dove la biodiversità microbica e faunistica agisce come primo baluardo contro patogeni e parassiti. Il meccanismo d’azione si fonda su tre pilastri:
+1. **Prevenzione**: Mantenere un suolo ricco di microrganismi benefici (funghi micorrizici, batteri antagonisti) che competono con i patogeni per risorse e spazio.
+2. **Difesa attiva**: Introduzione di **insetti utili** (es. *Phytoseiulus persimilis* per gli acari) o applicazione di **barriere fisiche** (es. oli essenziali) che disturbano il ciclo vitale dei parassiti.
+3. **Rinforzo immunitario**: Le piante coltivate in **Living Soil** sviluppano una maggiore resistenza grazie alla simbiosi con microrganismi e all’assorbimento di nutrienti equilibrati (es. silicio, azoto organico).
 
-Questo approccio si allinea ai principi dell’**elettrocultura**, dove campi elettromagnetici a bassa frequenza (es. circuiti Lakhovsky) possono stimolare la resistenza delle piante e la proliferazione di microrganismi benefici, rendendo l’ambiente meno ospitale per i parassiti. Inoltre, la **difesa biologica** si integra con la **rotazione colturale** e la **compostazione Indore** (Howard, [pdf_7]), poiché un suolo ricco di humus attivo favorisce la crescita di piante vigorose e meno suscettibili agli attacchi. La chiave è prevenire le infestazioni attraverso la **prevenzione attiva** (monitoraggio costante, barriere fisiche) e l’**intervento mirato** (insetti utili, trappole), piuttosto che reagire con soluzioni drastiche.
+Funziona perché replica i processi naturali di un ecosistema stabile, dove i parassiti non vengono eradicati ma **gestiti** entro soglie tollerabili. Ad esempio, l’uso di **olio di neem** (azadiractina) agisce come regolatore della crescita degli insetti, interferendo con la loro metamorfosi senza uccidere indiscriminatamente gli insetti utili. Questo metodo è particolarmente efficace in serra outdoor, dove l’ambiente controllato permette di monitorare costantemente le dinamiche predator-prede.
 
 ---
 
 ## Come si applica in serra
-Per una **serra outdoor Living Soil a Caserta** (41°N), il controllo parassiti naturale richiede un protocollo integrato, adattato al clima mediterraneo e alle stagioni locali. Segui questi passaggi:
 
-1. **Ispezione quotidiana**
-   - Controlla **foglie (soprattutto pagina inferiore), steli e fiori** al mattino, quando gli insetti sono meno attivi.
-   - Usa una **lente di ingrandimento** per identificare uova, larve o adulti di afidi, acari, tripidi o cocciniglie.
-   - Segna le piante infestate con un nastro colorato per monitorare la diffusione.
+### **Protocollo base per serra outdoor a Caserta (41°N)**
+1. **Ispezione quotidiana** (mattina presto):
+   - Controllare **foglie giovani, steli e pagina inferiore delle foglie** con una lente 10x. Segnare presenza di:
+     - Acari (*Tetranychus urticae*): ragnatele fini e puntini gialli.
+     - Afidi: colonie su germogli apicali.
+     - Tripidi: foglie argentate o deformate.
+   - *Strumento*: Quaderno di campo per tracciare infestazioni (es. app *GrowVeg*).
 
-2. **Prevenzione con olio di neem**
-   - **Diluizione**: 5–10 ml di olio di neem puro + 1 ml di sapone di potassio (o tensioattivo naturale) in 1 litro d’acqua.
-   - **Applicazione**: Spruzza **ogni 7 giorni** (o dopo piogge) sulle foglie, preferibilmente al tramonto per evitare ustioni solari.
-   - **Effetto**: L’azadiractina (principio attivo) blocca la crescita degli insetti e agisce come repellente per afidi e mosche bianche.
+2. **Prevenzione settimanale**:
+   - **Olio di neem** (10 ml/L d’acqua + 1 ml di sapone di potassio come adesivante):
+     - Spruzzare **tardo pomeriggio** (evitare ore calde) su tutta la pianta, con particolare attenzione alla pagina inferiore delle foglie.
+     - Frequenza: **ogni 7 giorni** in fase vegetativa; **ogni 10 giorni** in fioritura (evitare stress idrico).
+   - *Variante*: **Decotto di ortica** (1 kg di ortiche fresche in 10 L d’acqua per 48h, filtrare) come repellente per afidi.
 
-3. **Introduzione di insetti utili**
-   - **Acari predatori** (*Phytoseiulus persimilis* per gli acari rossi, *Amblyseius andersoni* per tripidi): rilascia 2–5 individui/m² ogni 2 settimane in caso di infestazione.
-   - **Coccinelle** (*Coccinella septempunctata*): 10–20 esemplari per 100 m², preferibilmente al crepuscolo.
-   - **Nematodi benefici** (*Steinernema feltiae*): applica in soluzione acquosa al suolo per combattere larve di moscerini (es. *
+3. **Introduzione di insetti utili**:
+   - **Acari predatori** (*Phytoseiulus persimilis* o *Amblyseius andersoni*):
+     - Dosaggio: **2–5 individui/m²** in caso di infestazione da *Tetranychus*.
+     - *Tecnica*: Distribuire su foglie infestate o in prossimità delle piante ospiti (es. fagioli come piante trappola).
+   - **Coccinelle** (*Coccinella septempunctata*): rilasciare **5–10 adulti/100 m²** in caso di afidi.
+   - *Periodo ideale*: Primavera (marzo–maggio) o inizio
